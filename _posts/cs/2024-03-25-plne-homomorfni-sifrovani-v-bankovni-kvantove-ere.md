@@ -1,178 +1,174 @@
 ---
-title: "El cifrado completamente homomórfico (FHE) en la era bancaria cuántica"
-subtitle: "Reforzar la seguridad de los datos, mejorar la confidencialidad de la IA y construir la confianza del cliente en la era de la computación cuántica con el FHE"
-description: "Cómo el cifrado completamente homomórfico revoluciona la seguridad de los datos en la banca y las finanzas, garantizando la confidencialidad frente a las amenazas de la computación cuántica."
+title: "Plně homomorfní šifrování (FHE) v bankovní kvantové éře"
+subtitle: "Posílení zabezpečení dat, zvýšení soukromí AI a budování důvěry zákazníků v éře kvantových výpočtů s FHE"
+description: "Jak plně homomorfní šifrování zásadně mění zabezpečení dat v bankovnictví a finančním sektoru a zajišťuje soukromí vůči hrozbám kvantových výpočtů."
 date: "March 25, 2024"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp"
-banner_alt: "Banner del cifrado completamente homomórfico"
-keywords: "cifrado completamente homomórfico, seguridad bancaria, computación cuántica, cifrado de datos financieros, FHE, RGPD, CCPA, cumplimiento, computación cloud, IA y confidencialidad, LLM cifrado, Zama, Gentry"
+banner_alt: "Banner pro plně homomorfní šifrování"
+keywords: "plně homomorfní šifrování, zabezpečení bankovnictví, kvantové výpočty, šifrování finančních dat, případové studie FHE, regulační rámce FHE, výpočetní režie FHE, výzkum FHE, hardware FHE, zákony o ochraně dat"
 ---
 
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+**Plně homomorfní šifrování (FHE, Fully Homomorphic Encryption)** slibuje nově vymezit zabezpečení dat v bankovnictví a finančním sektoru. Tím, že umožňuje provádět výpočty nad šifrovanými daty, chrání FHE soukromí před konvenčními i kvantovými výpočetními hrozbami.
 
-**Klíčové body**
+## Úvod
 
-El **cifrado completamente homomórfico (FHE — Fully Homomorphic Encryption)** promete redefinir la seguridad de los datos en la banca y las finanzas. Permitiendo cálculos sobre datos cifrados, el FHE protege la confidencialidad frente a las amenazas convencionales y cuánticas.
+Nasazení FHE ve finančním sektoru není jen teoretické; stává se praktickou realitou a proměňuje standardy zabezpečení a soukromí dat. Tento článek zkoumá praktická využití, regulatorní otázky, možné nevýhody a pokroky ve výzkumu plně homomorfního šifrování (FHE) ve financích i v aplikacích umělé inteligence (AI).
 
-## Introducción
+## Porozumění plně homomorfnímu šifrování
 
-La implementación del FHE en el sector financiero no es solo teórica; se está convirtiendo en una realidad práctica, transformando los estándares de seguridad y confidencialidad de los datos. Este artículo explora los usos prácticos, las consideraciones normativas, los posibles inconvenientes y los avances de investigación del cifrado completamente homomórfico en finanzas y en las aplicaciones de inteligencia artificial (IA).
+### Základy šifrování
 
-## Comprender el cifrado completamente homomórfico
+Šifrování je metoda převodu čitelných dat (otevřený text) do nečitelného formátu (šifrový text) pomocí algoritmu a šifrovacího klíče. Hlavním cílem je zajistit, aby k původním datům měly přístup pouze oprávněné strany, a to dešifrováním šifrového textu pomocí dešifrovacího klíče.
 
-### Las bases del cifrado
+### Tradiční metody šifrování
 
-El cifrado es un método de transformación de datos legibles (texto claro) en un formato ilegible (criptograma) por medio de un algoritmo y una clave de cifrado. El objetivo principal es asegurar que solo las partes autorizadas puedan acceder a los datos originales descifrando el criptograma con la ayuda de una clave de descifrado.
+Tradiční metody šifrování lze zhruba rozdělit do dvou typů: symetrické a asymetrické šifrování. Symetrické šifrování používá jediný klíč pro šifrování i dešifrování. Tato efektivita jde na úkor bezpečnosti, zejména když distribuce klíčů představuje problém. Asymetrické šifrování, označované také jako kryptografie s veřejným klíčem, používá dva klíče: jeden pro šifrování a druhý pro dešifrování. Tato metoda je bezpečnější, ale pomalejší než symetrické šifrování.
 
-### Métodos de cifrado tradicionales
+### Omezení konvenčního šifrování pro výpočty
 
-Los métodos de cifrado tradicionales pueden categorizarse ampliamente en dos tipos: simétrico y asimétrico. El cifrado simétrico utiliza una sola clave a la vez para el cifrado y el descifrado. Esta eficiencia tiene un coste en seguridad, en particular cuando la distribución de las claves plantea problemas. El cifrado asimétrico, también llamado criptografía de clave pública, utiliza dos claves: una para el cifrado y otra para el descifrado. Este método es más seguro pero más lento que el cifrado simétrico.
-
-### Los límites del cifrado convencional para el cálculo
-
-Aunque los métodos tradicionales aseguran eficazmente los datos en reposo o en tránsito, fracasan cuando se trata de efectuar cálculos sobre datos cifrados. Típicamente, para tratar o analizar datos cifrados, hay que descifrarlos primero, efectuar las operaciones necesarias y luego volver a cifrarlos. Esta etapa de descifrado plantea un riesgo significativo para la confidencialidad, en particular en entornos no confiables o de cloud computing.
+I když tradiční metody šifrování účinně zabezpečují data v klidu nebo při přenosu, selhávají, pokud jde o provádění výpočtů nad šifrovanými daty. Aby bylo možné šifrovaná data zpracovat nebo analyzovat, je obvykle nutné je nejprve dešifrovat, provést potřebné operace a poté je znovu zašifrovat. Tento krok dešifrování představuje významné riziko pro soukromí dat, zejména v nedůvěryhodných nebo cloudových výpočetních prostředích.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## El avance del cifrado homomórfico
+## Průlom homomorfního šifrování
 
-El **cifrado homomórfico (HE)** resuelve los límites del cifrado convencional. Permite efectuar ciertos cálculos directamente sobre los datos cifrados (criptogramas). El resultado descifrado es idéntico a los datos originales (texto claro) después de que se hayan efectuado las mismas operaciones. El HE se declina en tres grandes variedades: Partially Homomorphic Encryption (PHE), Somewhat Homomorphic Encryption (SHE) y Fully Homomorphic Encryption (FHE).
+**Homomorfní šifrování (HE)** řeší omezení konvenčního šifrování. Umožňuje provádět určité výpočty přímo nad šifrovanými daty (šifrovými texty). Dešifrovaný výsledek je stejný jako původní data (otevřený text) po provedení stejných operací. HE existuje ve třech hlavních variantách: částečně homomorfní šifrování (PHE), do jisté míry homomorfní šifrování (SHE) a plně homomorfní šifrování (FHE).
 
-- **Partially Homomorphic Encryption (PHE):** soporta operaciones ilimitadas de un solo tipo (adición o multiplicación) sobre los criptogramas.
-- **Somewhat Homomorphic Encryption (SHE):** soporta un número limitado de operaciones, combinando adición y multiplicación, pero solo hasta una cierta profundidad.
-- **Fully Homomorphic Encryption (FHE):** la forma más avanzada, autorizando operaciones ilimitadas de adición y multiplicación sobre los criptogramas.
+- **Partially Homomorphic Encryption (PHE):** Podporuje neomezený počet operací jediného typu (např. buď sčítání, nebo násobení) nad šifrovými texty.
+- **Somewhat Homomorphic Encryption (SHE):** Podporuje omezený počet operací kombinujících sčítání i násobení, ale pouze do určité hloubky.
+- **Fully Homomorphic Encryption (FHE):** Nejpokročilejší forma, umožňující neomezený počet operací sčítání i násobení nad šifrovými texty.
 
-### La ingeniosidad técnica del FHE
+### Technická důmyslnost FHE
 
-El FHE reposa sobre estructuras matemáticas complejas, como la criptografía sobre retículos. La criptografía sobre retículos es un tipo de cifrado que utiliza estructuras matemáticas llamadas retículos.
+FHE je založeno na složitých matematických strukturách, jako je kryptografie na mřížkách. Kryptografie na mřížkách je typ šifrování, který využívá matematické struktury zvané mřížky.
 
-Un retículo es una disposición regular de puntos en el espacio, y la criptografía sobre retículos se apoya en la dificultad de resolver ciertos problemas matemáticos vinculados a estas estructuras. Esto hace que la criptografía sobre retículos sea segura y resistente a los ataques, incluidos los procedentes de los ordenadores cuánticos.
+Mřížka je pravidelné uspořádání bodů v prostoru a kryptografie na mřížkách se opírá o obtížnost řešení určitých matematických problémů spojených s těmito strukturami. Díky tomu je kryptografie na mřížkách bezpečná a odolná vůči útokům, včetně útoků z kvantových počítačů.
 
-En 2009, Craig Gentry desarrolló un método, descrito en su artículo [**A Fully Homomorphic Encryption Scheme ⧉**][00], para crear un sistema capaz de efectuar una evaluación homomórfica de su propio circuito de descifrado. Este diseño autorreferencial permite a los esquemas FHE efectuar cálculos arbitrarios sobre datos cifrados.
+V roce 2009 Craig Gentry vyvinul metodu, popsanou v jeho článku [**A Fully Homomorphic Encryption Scheme ⧉**][00], pro vytvoření systému, který dokáže provádět homomorfní vyhodnocení svého vlastního dešifrovacího obvodu. Tento sebereferenční návrh umožňuje schématům FHE provádět libovolné výpočty nad šifrovanými daty.
 
-### El proceso del algoritmo FHE
+### Průběh algoritmu FHE
 
-![FHE Operational Flow][fhe].class=\"m-10 w-100\"
+![Operační tok FHE][fhe].class=\"m-10 w-100\"
 
-El diagrama anterior ilustra el flujo operativo de un algoritmo FHE.
+Výše uvedený diagram znázorňuje operační tok algoritmu plně homomorfního šifrování (FHE).
 
-- El proceso de cifrado comienza con los datos en texto claro, que se cifran con la ayuda de una clave de cifrado para generar un criptograma.
+- Proces šifrování začíná daty v otevřeném textu, která jsou zašifrována pomocí šifrovacího klíče, aby vznikl šifrový text.
 
-- Estos datos cifrados pueden entonces someterse a diversos cálculos directamente sobre el criptograma mediante un proceso conocido como bootstrapping.
+- Tato šifrovaná data pak mohou být podrobena různým výpočtům přímo nad šifrovým textem prostřednictvím procesu známého jako bootstrapping.
 
-- Esta capacidad única del FHE permite a los datos permanecer cifrados durante todo el proceso. Una vez efectuadas las operaciones necesarias, el proceso de descifrado puede reconvertir el criptograma modificado en texto claro gracias al esquema FHE.
+- Tato jedinečná schopnost FHE umožňuje, aby data zůstala šifrovaná po celou dobu procesu. Jakmile jsou provedeny potřebné operace, proces dešifrování může upravený šifrový text převést zpět na otevřený text pomocí schématu FHE.
 
-La ventaja principal del FHE reside en su capacidad para efectuar cálculos sobre el criptograma sin requerir descifrado, garantizando así el mantenimiento de la confidencialidad y la seguridad de los datos durante todo el cálculo.
+Hlavní výhoda FHE spočívá v jeho schopnosti provádět výpočty nad šifrovým textem bez nutnosti dešifrování, čímž je po celou dobu výpočtu zachováno soukromí a bezpečnost dat.
 
-### La resistencia cuántica del FHE
+### Kvantová odolnost FHE
 
-Los métodos de cifrado tradicionales son a menudo vulnerables a los algoritmos cuánticos. Estos algoritmos pueden resolver rápidamente problemas como la factorización de enteros y los logaritmos discretos, que constituyen los fundamentos de estos métodos. Por contraste, el FHE emplea problemas sobre retículos que se cree difíciles de resolver por ordenadores cuánticos. Esta resistencia cuántica hace del FHE un método de cifrado prometedor para la era postcuántica.
+Tradiční metody šifrování jsou často zranitelné vůči kvantovým algoritmům. Tyto algoritmy dokážou rychle řešit problémy, jako je faktorizace celých čísel a diskrétní logaritmy, které tvoří základ těchto metod šifrování. Naproti tomu plně homomorfní šifrování (FHE) využívá problémy na mřížkách, u nichž se předpokládá, že jsou pro kvantové počítače obtížně řešitelné. Tato kvantová odolnost činí z FHE slibnou metodu šifrování pro postkvantovou éru.
 
-El FHE sobre retículos es resistente a los ataques cuánticos porque los problemas matemáticos subyacentes, como el Shortest Vector Problem (SVP) y el Closest Vector Problem (CVP), se consideran difíciles de resolver incluso para los ordenadores cuánticos. Si bien algoritmos cuánticos como el de Shor pueden romper los métodos de cifrado tradicionales que reposan en la factorización de grandes números o los logaritmos discretos, no se sabe que ofrezcan ventajas significativas en la resolución de los problemas sobre retículos. Esta característica hace del FHE sobre retículos un candidato prometedor para la criptografía postcuántica.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## El impacto del FHE en la banca y las finanzas
-
-### Confidencialidad y seguridad de los datos reforzadas
-
-La aplicación del FHE en el sector financiero promete un refuerzo significativo de la confidencialidad. Los bancos pueden ahora emprender evaluaciones de riesgos, la detección de fraude y análisis de datos completos al tiempo que garantizan la confidencialidad absoluta de la información de los clientes. Este avance tecnológico mitiga el riesgo de brechas de datos, reforzando la integridad de las plataformas bancarias digitales y las transacciones financieras.
-
-### Cloud computing y externalización
-
-Un ámbito de aplicación principal del cifrado homomórfico es el tratamiento seguro de los datos en la nube. Los bancos pueden aprovechar los servicios de cloud computing para tratar datos cifrados sin comprometer su confidencialidad. Esto permite a las instituciones financieras aprovechar la escalabilidad y la rentabilidad del cloud al tiempo que mantienen la confidencialidad de información financiera sensible.
-
-El movimiento hacia el cloud computing y la externalización de tareas computacionales por parte de los bancos subraya la pertinencia del FHE. Con un cloud computing seguro, las instituciones financieras pueden acceder a recursos externos al tiempo que protegen los datos cifrados sensibles mediante el FHE. El FHE permite a los bancos aprovechar los servicios cloud de manera segura al tiempo que se garantiza que los datos cifrados sensibles permanezcan protegidos en todo momento.
+FHE založené na mřížkách je odolné vůči kvantovým útokům, protože základní matematické problémy, jako je problém nejkratšího vektoru (Shortest Vector Problem, SVP) a problém nejbližšího vektoru (Closest Vector Problem, CVP), jsou považovány za obtížně řešitelné i pro kvantové počítače. Zatímco kvantové algoritmy jako Shorův algoritmus dokážou prolomit tradiční metody šifrování, které se opírají o faktorizaci velkých čísel nebo výpočet diskrétních logaritmů, není známo, že by poskytovaly významnou výhodu při řešení problémů na mřížkách. Tato vlastnost činí z FHE založeného na mřížkách slibného kandidáta pro postkvantovou kryptografii.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Prepararse para el futuro cuántico
+## Dopad FHE na bankovnictví a finance
 
-El advenimiento inminente de la computación cuántica anuncia una potencial crisis para las metodologías de cifrado tradicionales. El FHE sobre retículos es intrínsecamente resistente a los ataques cuánticos, ofreciendo una defensa robusta contra la amenaza que la computación cuántica plantea a la seguridad de los datos.
+### Posílené soukromí a zabezpečení dat
 
-### Cifrado resistente a lo cuántico
+Uplatnění FHE ve finančním sektoru slibuje významné posílení soukromí dat. Banky nyní mohou provádět hodnocení rizik, detekci podvodů a komplexní datovou analytiku a přitom zajistit absolutní důvěrnost informací o zákaznících. Tento technologický pokrok zmírňuje riziko úniku dat a posiluje integritu digitálních bankovních platforem a finančních transakcí.
 
-El FHE proporciona una capa formidable de protección contra las amenazas de la computación cuántica. Empleando técnicas criptográficas sobre retículos, el FHE garantiza que los datos financieros y los activos permanezcan seguros incluso frente a adversarios cuánticos.
+### Cloud computing a outsourcing
 
-La resistencia cuántica del FHE se debe a problemas matemáticos subyacentes complejos como el Shortest Vector Problem (SVP) y el Closest Vector Problem (CVP). Se supone que estos problemas son intratables incluso para los ordenadores cuánticos, lo que hace del FHE sobre retículos un candidato ideal para la criptografía postcuántica.
+Jednou z hlavních oblastí použití homomorfního šifrování je bezpečné zpracování dat v cloudu. Banky mohou využívat služby cloud computingu ke zpracování šifrovaných dat, aniž by ohrozily jejich soukromí. To finančním institucím umožňuje využít škálovatelnost a nákladovou efektivitu cloud computingu při zachování důvěrnosti citlivých finančních informací.
 
-Utilizar un cifrado resistente a lo cuántico, como el FHE, es crucial no solo para proteger los activos financieros sino también para mantener la confianza de los clientes en la era digital. A medida que la computación cuántica progresa, las instituciones financieras que prioricen un cifrado robusto estarán mejor posicionadas para navegar los desafíos y oportunidades futuros.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## El futuro del FHE en la banca y las finanzas
-
-La trayectoria del FHE dentro del sector financiero es prometedora, pero todavía afronta desafíos. El sector bancario puede explotar el pleno potencial del FHE mejorando la tecnología, integrándola en las operaciones financieras cotidianas y cooperando con los reguladores.
-
-El FHE puede utilizarse en diversas aplicaciones bancarias y financieras, como:
-
-- **Análisis seguro de datos financieros**: el FHE permite a los bancos analizar datos financieros cifrados como transacciones, puntuaciones de crédito y carteras de inversión, sin comprometer la confidencialidad del cliente, garantizando un tratamiento seguro de la información sensible.
-
-- **Aprendizaje automático preservando la confidencialidad**: el FHE permite a los bancos entrenar y desplegar modelos de aprendizaje automático sobre datos cifrados, permitiéndoles aprovechar la IA para la detección de fraude, la evaluación de riesgos y la segmentación de clientes a la vez que mantienen la confidencialidad.
-
-- **Cálculo multipartícipe seguro**: el FHE permite una colaboración segura entre varias instituciones financieras, permitiéndoles efectuar cálculos conjuntos sobre datos cifrados sin compartir información sensible, facilitando las transacciones interbancarias seguras y el cumplimiento.
-
-- **Seguridad de las API**: el FHE puede asegurar las API cifrando los datos sensibles antes de la transmisión, garantizando que la información de los clientes permanezca confidencial durante los intercambios entre bancos y servicios terceros.
-
-- **Cloud computing seguro**: el FHE permite a los bancos externalizar de manera segura los cálculos y el almacenamiento de datos hacia plataformas cloud sin comprometer la confidencialidad, ya que los datos permanecen cifrados durante todo el proceso, ampliando el uso de servicios cloud rentables y escalables.
-
-- **Cumplimiento normativo preservando la confidencialidad**: el FHE permite a los bancos compartir datos cifrados con las autoridades reguladoras, permitiendo el cumplimiento de las exigencias de reporting sin exponer información sensible, simplificando el proceso de cumplimiento al tiempo que se mantiene la confidencialidad.
-
-Estas aplicaciones revelan el poder transformador del FHE en la banca y las finanzas y subrayan su potencial para revolucionar los estándares de seguridad y confidencialidad.
+Přechod bank ke cloud computingu a outsourcingu výpočetních úloh podtrhuje význam FHE. Díky bezpečnému cloud computingu mohou finanční instituce čerpat z externích zdrojů a přitom chránit citlivá šifrovaná data pomocí plně homomorfního šifrování (FHE). FHE umožňuje bankám bezpečně využívat služby cloud computingu a zároveň zajišťuje, že citlivá šifrovaná data zůstanou vždy chráněna.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Superar los desafíos de adopción del FHE
+## Příprava na kvantovou budoucnost
 
-### Desafíos de rendimiento y optimización
+Bezprostřední příchod kvantových výpočtů ohlašuje potenciální krizi pro tradiční metodiky šifrování. FHE založené na mřížkách je ze své podstaty odolné vůči kvantovým útokům a nabízí robustní obranu proti hrozbě, kterou kvantové výpočty představují pro zabezpečení dat.
 
-Abordar el sobrecoste computacional intrínseco al FHE sigue siendo un desafío pivote. Los recientes progresos en optimización de algoritmos y en desarrollo de aceleradores de hardware especializados reducen la brecha de rendimiento entre el cálculo tradicional y el FHE.
+### Kvantově odolné šifrování
 
-### Estandarización y colaboración
+FHE poskytuje mimořádnou vrstvu ochrany proti hrozbám kvantových výpočtů. Použitím kryptografických technik na mřížkách FHE zajišťuje, že finanční data a aktiva zůstanou v bezpečí i tváří v tvář kvantovým protivníkům.
 
-La vía hacia una adopción generalizada del FHE depende de la estandarización de los protocolos y de una colaboración reforzada entre las partes interesadas del ecosistema financiero. Un enfoque unificado para abrazar el FHE puede acelerar significativamente su integración con los servicios financieros generalistas.
+Kvantová odolnost FHE vyplývá ze složitých základních matematických problémů, jako je problém nejkratšího vektoru (Shortest Vector Problem, SVP) a problém nejbližšího vektoru (Closest Vector Problem, CVP). Předpokládá se, že tyto problémy jsou neřešitelné i pro kvantové počítače, což činí z FHE založeného na mřížkách ideálního kandidáta pro postkvantovou kryptografii.
 
-### Regulación y cumplimiento
-
-Los organismos reguladores desempeñan un papel crítico en la adopción del FHE, con leyes sobre la confidencialidad de los datos que imponen su uso. Un impulso normativo podría servir como catalizador para la adopción completa del FHE en toda la industria bancaria y financiera, a la vez que se garantiza el cumplimiento de las normativas de protección de datos.
-
-El panorama normativo en torno a la confidencialidad y la seguridad de los datos desempeña un papel significativo en la adopción del FHE en el sector bancario. Normativas estrictas como el RGPD (General Data Protection Regulation) y el CCPA (California Consumer Privacy Act) imponen medidas robustas de protección de datos y subrayan el derecho individual a la vida privada. El FHE, con su capacidad para tratar datos cifrados sin descifrado, se alinea bien con la orientación centrada en la confidencialidad de estas normativas. A medida que las leyes sobre la confidencialidad se vuelven más estrictas, el FHE ofrece una solución convincente que permite a los bancos efectuar los cálculos y análisis necesarios al tiempo que se respetan las exigencias de cumplimiento.
+Používání kvantově odolného šifrování, jako je FHE, je zásadní nejen pro ochranu finančních aktiv, ale také pro udržení důvěry zákazníků v digitální éře. S postupem kvantových výpočtů budou finanční instituce, které upřednostní robustní šifrování, lépe připraveny zvládat budoucí výzvy a příležitosti.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Asegurar los grandes modelos de lenguaje con el FHE
+## Budoucnost FHE v bankovnictví a financích
 
-Los grandes modelos de lenguaje (LLM) son potentes herramientas de IA. Pero su uso suscita preocupaciones de confidencialidad, en particular cuando tratan datos de usuario sensibles. El FHE ofrece una solución que protege la confidencialidad del usuario y preserva la propiedad intelectual de los propietarios de modelos permitiendo cálculos sobre datos cifrados.
+Vývoj FHE ve finančním sektoru je slibný, stále však čelí výzvám. Bankovní sektor může plný potenciál FHE využít zdokonalováním technologie, jejím začleněním do každodenních finančních operací a spoluprací s regulátory.
 
-### Desafíos de confidencialidad con los LLM
+FHE lze použít v různých bankovních a finančních aplikacích, jako jsou:
 
-Desplegar un LLM en local para mantener la confidencialidad de los datos plantea desafíos como costes elevados y la exposición potencial de una propiedad intelectual valiosa. El FHE aborda estos desafíos permitiendo a los LLM funcionar sobre datos de usuario cifrados, garantizando la confidencialidad y la seguridad del modelo simultáneamente.
+- **Bezpečná analýza finančních dat**: FHE umožňuje bankám analyzovat šifrovaná finanční data, jako jsou transakce, úvěrová skóre a investiční portfolia, bez ohrožení soukromí zákazníků, a zajišťuje tak bezpečné zpracování citlivých informací.
 
-### El enfoque LLM cifrado de Zama
+- **Strojové učení zachovávající soukromí**: FHE umožňuje bankám trénovat a nasazovat modely strojového učení nad šifrovanými daty, což jim umožňuje využívat AI k detekci podvodů, hodnocení rizik a segmentaci zákazníků při zachování důvěrnosti dat.
 
-[**Zama ⧉**][01], una empresa de tecnologías de confidencialidad, ha demostrado la viabilidad de construir un LLM cifrado con la ayuda del FHE. Su enfoque, que combina FHE y otras tecnologías que refuerzan la confidencialidad, alcanza rendimientos comparables a los modelos no cifrados con solo un aumento modesto del sobrecoste computacional.
+- **Bezpečný vícestranný výpočet**: FHE umožňuje bezpečnou spolupráci mezi více finančními institucemi, které mohou provádět společné výpočty nad šifrovanými daty bez sdílení citlivých informací, což usnadňuje bezpečné mezibankovní transakce a dodržování předpisů.
 
-### Mejorar la confidencialidad del usuario con LLM cifrados
+- **Zabezpečení API**: FHE dokáže zabezpečit API šifrováním citlivých dat před přenosem a zajišťuje, že informace o zákaznících zůstanou důvěrné během výměny dat mezi bankami a službami třetích stran.
 
-La integración del FHE con los LLM tiene el potencial de transformar la confidencialidad del usuario, en particular en las aplicaciones que tratan información personal o profesional sensible. A medida que la IA se concentra más en la confidencialidad, es importante que desarrolladores, usuarios y reguladores trabajen juntos. Esta colaboración es clave para construir un ecosistema de IA que ponga la seguridad y la confidencialidad en primer lugar.
+- **Bezpečný cloud computing**: FHE umožňuje bankám bezpečně přenést výpočty a ukládání dat na cloudové platformy bez ohrožení soukromí dat, protože data zůstávají po celý proces šifrovaná, což rozšiřuje využití nákladově efektivních a škálovatelných cloudových služeb.
+
+- **Dodržování předpisů zachovávající soukromí**: FHE umožňuje bankám bezpečně sdílet šifrovaná data s regulačními orgány, což umožňuje dodržování požadavků na výkaznictví bez vystavení citlivých informací o zákaznících, čímž se zjednodušuje proces dodržování předpisů při zachování soukromí.
+
+Tyto aplikace ukazují transformační sílu FHE v bankovnictví a finančním sektoru a podtrhují jeho potenciál zásadně změnit standardy zabezpečení a soukromí dat.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Conclusión
+## Překonání výzev při zavádění FHE
 
-El **cifrado completamente homomórfico (FHE)** es una tecnología de seguridad de los datos revolucionaria que ofrece una confidencialidad y una seguridad excepcionales a la banca y las finanzas.
+### Výkonnostní výzvy a optimalizace
 
-A medida que la computación cuántica avanza, el FHE se vuelve aún más crucial. Su adopción remodelará la ciberseguridad en los servicios financieros, haciendo la banca digital más digna de confianza y más segura en nuestro mundo cada vez más conectado.
+Řešení výpočetní režie, která je FHE vlastní, zůstává klíčovou výzvou. Nedávný pokrok v optimalizaci algoritmů a vývoji specializovaných hardwarových akcelerátorů zmenšuje výkonnostní rozdíl mezi tradičními výpočty a plně homomorfním šifrováním (FHE).
 
-El advenimiento del FHE también ha abierto nuevas posibilidades de uso seguro y privado de los grandes modelos de lenguaje. Permitiendo LLM cifrados, el FHE garantiza que los datos del usuario permanezcan confidenciales al tiempo que se benefician de las capacidades avanzadas de estos modelos.
+### Standardizace a spolupráce
 
-La era de la computación cuántica se aproxima. Los bancos deben evaluar proactivamente su infraestructura de cifrado, identificar las vulnerabilidades potenciales y desarrollar una hoja de ruta clara para la adopción del FHE con el fin de proteger los datos y mantener la confianza del cliente.
+Cesta k širokému rozšíření FHE závisí na standardizaci protokolů a posílené spolupráci mezi zainteresovanými stranami finančního ekosystému. Jednotný přístup k přijetí FHE může výrazně urychlit jeho integraci do běžných finančních služeb.
 
-[00]: https://crypto.stanford.edu/craig/ "The original paper by Craig Gentry on Fully Homomorphic Encryption"
-[01]: https://zama.ai/ "Zama - Fully Homomorphic Encryption"
+### Regulace a dodržování předpisů
 
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-[fhe]: https://cloudcdn.pro/stocks/diagrams/fhe_algorithm_diagram.webp "FHE Architecture"
+Regulační orgány hrají v přijetí FHE zásadní roli, přičemž vyvíjející se zákony o ochraně soukromí dat nařizují jeho použití. Regulační tlak by mohl posloužit jako katalyzátor komplexního přijetí FHE napříč bankovnictvím a finančním sektorem a zároveň zajistit soulad s předpisy na ochranu dat.
+
+Regulační rámec týkající se soukromí a zabezpečení dat hraje významnou roli v přijetí FHE v bankovním sektoru. Přísné předpisy, jako je obecné nařízení o ochraně osobních údajů (General Data Protection Regulation, GDPR) a kalifornský zákon o ochraně soukromí spotřebitelů (California Consumer Privacy Act, CCPA), nařizují robustní opatření na ochranu dat a zdůrazňují právo jednotlivce na soukromí. FHE se svou schopností zpracovávat šifrovaná data bez dešifrování dobře odpovídá orientaci těchto předpisů na soukromí. Jak se zákony o ochraně soukromí dat stávají stále přísnějšími, nabízí FHE přesvědčivé řešení, které bankám umožňuje provádět potřebné výpočty a analýzy při dodržení požadavků na soulad.
+
+![divider][divider].class=\"m-10 w-100\"
+
+## Zabezpečení velkých jazykových modelů pomocí plně homomorfního šifrování (FHE)
+
+Velké jazykové modely (LLM) jsou výkonné nástroje AI. Jejich používání však vyvolává obavy o soukromí, zejména při práci s citlivými uživatelskými daty. Plně homomorfní šifrování (FHE) poskytuje řešení, které chrání soukromí uživatelů a zachovává duševní vlastnictví vlastníků modelů tím, že umožňuje výpočty nad šifrovanými daty.
+
+### Výzvy soukromí u LLM
+
+Nasazení lokálního (on-premise) LLM za účelem zachování soukromí dat přináší výzvy, jako jsou vysoké náklady a možné vystavení cenného duševního vlastnictví. FHE tyto výzvy řeší tím, že umožňuje LLM pracovat nad šifrovanými uživatelskými daty a zajišťuje současně soukromí i bezpečnost modelu.
+
+### Přístup Zama k šifrovaným LLM
+
+[**Zama ⧉**][01], společnost zaměřená na technologie ochrany soukromí, prokázala proveditelnost vytvoření šifrovaného LLM pomocí FHE. Její přístup, který kombinuje FHE s dalšími technologiemi posilujícími soukromí, dosahuje výkonu srovnatelného s nešifrovanými modely pouze s mírným nárůstem výpočetní režie.
+
+### Zlepšení soukromí uživatelů pomocí šifrovaných LLM
+
+Integrace FHE do LLM má potenciál proměnit soukromí uživatelů, zejména v aplikacích pracujících s citlivými osobními nebo obchodními informacemi. Jak se AI stále více zaměřuje na soukromí, je důležité, aby vývojáři, uživatelé a regulátoři spolupracovali. Tato spolupráce je klíčová pro vybudování ekosystému AI, který klade bezpečnost a soukromí na první místo.
+
+![divider][divider].class=\"m-10 w-100\"
+
+## Závěr
+
+**Plně homomorfní šifrování (FHE)** je průlomová technologie zabezpečení dat, která nabízí výjimečné soukromí a zabezpečení pro bankovnictví a finanční sektor.
+
+Jak kvantové výpočty postupují, stává se FHE ještě zásadnějším. Jeho přijetí přetvoří kybernetickou bezpečnost ve finančních službách a učiní digitální bankovnictví důvěryhodnějším a bezpečnějším v našem stále propojenějším světě.
+
+Příchod FHE také otevřel nové možnosti bezpečného a soukromého využití velkých jazykových modelů. Umožněním šifrovaných LLM FHE zajišťuje, že uživatelská data zůstanou důvěrná a zároveň těží z pokročilých schopností těchto modelů.
+
+Éra kvantových výpočtů se blíží. Banky musí proaktivně vyhodnotit svou šifrovací infrastrukturu, identifikovat potenciální zranitelnosti a vypracovat jasný plán přijetí FHE, aby ochránily data a udržely důvěru zákazníků.
+
+[00]: https://crypto.stanford.edu/craig/ "Původní článek Craiga Gentryho o plně homomorfním šifrování"
+[01]: https://zama.ai/ "Zama - Plně homomorfní šifrování"
+
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Oddělovač"
+[fhe]: https://cloudcdn.pro/stocks/diagrams/fhe_algorithm_diagram.webp "Architektura FHE"

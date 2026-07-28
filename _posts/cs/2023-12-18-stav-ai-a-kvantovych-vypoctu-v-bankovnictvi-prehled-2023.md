@@ -1,145 +1,232 @@
 ---
-title: "Estado de la IA y la computación cuántica en la banca: revisión 2023"
-subtitle: "Configurar el futuro de la banca: IA, computación cuántica, modelos de código abierto y panorama regulatorio"
-description: "Explorar el panorama tecnológico 2023: IA y computación cuántica revolucionando la banca, auge de los modelos de código abierto, regulaciones y gobernanza en evolución."
-date: "December 18, 2023"
-language: "cs-CZ"
-locale: "cs_CZ"
+
+# Front Matter (YAML)
+
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+banner_alt: "Stav AI a kvantových výpočtů v bankovnictví: přehled roku 2023"
+banner_height: "100vh"
+banner_width: "100vw"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
-banner_alt: "Estado de la IA y la computación cuántica en la banca: revisión 2023"
-keywords: "IA en la banca, computación cuántica, tecnología financiera, IA de código abierto, gestión del riesgo, seguridad cuántica, regulación de la IA, ética de la IA, gobernanza de la IA, innovación bancaria"
+cdn: "https://cloudcdn.pro/clients"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: ""
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "Dec 18, 2023"
+description: "Pohled na technologie roku 2023: AI a kvantové výpočty proměňují bankovnictví, nástup modelů s otevřeným zdrojovým kódem a vývoj regulace a správy."
+format-detection: "telephone=no"
+hreflang: "cs"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html"
+image_alt: "Černobílý portrét Sebastiena Rousseaua"
+image_height: "161"
+image_width: "161"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
+keywords: "AI v bankovnictví, kvantové výpočty, finanční technologie, AI s otevřeným zdrojovým kódem, řízení rizik, kvantová bezpečnost, regulace AI, etika AI, správa AI, inovace v bankovnictví"
+language: "cs-CZ"
+layout: "report"
+locale: "cs_CZ"
+logo_alt: "Logo Sebastiena Rousseaua"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: "active"
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+short_name: "sebastienrousseau"
+subtitle: "Utváření budoucnosti bankovnictví: AI, kvantové výpočty, modely s otevřeným zdrojovým kódem a regulace"
+tags: "AI v bankovnictví, kvantové výpočty, LLM s otevřeným zdrojovým kódem, regulace AI, správa AI, postkvantová kryptografie, řízení rizik, přehled roku 2023, inovace v bankovnictví, finanční služby, ISO 20022, AI, otevřený zdrojový kód"
+theme-color: "0, 67, 165"
+title: "Stav AI a kvantových výpočtů v bankovnictví: přehled roku 2023"
+url: "https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+
+# RSS - The RSS feed front matter (YAML).
+atom_link: "https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/rss.xml"
+category: "Finance"
+docs: "https://validator.w3.org/feed/docs/rss2.html"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "Pohled na technologie roku 2023: AI a kvantové výpočty proměňují bankovnictví, nástup modelů s otevřeným zdrojovým kódem a vývoj regulace a správy."
+item_guid: "https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/rss.xml"
+item_link: "https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/rss.xml"
+item_pub_date: "Mon, 18 Dec 2023 05:06:06 +0000"
+item_title: "Stav AI a kvantových výpočtů v bankovnictví: přehled roku 2023"
+last_build_date: "Mon, 18 Dec 2023 05:06:06 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Mon, 18 Dec 2023 05:06:06 +0000"
+ttl: "60"
+type: "website"
+webmaster: "contact@sebastienrousseau.com"
+
+# Apple - The Apple front matter (YAML).
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "Sebastien Rousseau"
+apple-touch-fullscreen: "yes"
+
+# MS Application - The MS Application front matter (YAML).
+
+msapplication-navbutton-color: "0, 67, 165"
+
+# Twitter Card - The Twitter Card front matter (YAML).
+
+twitter_card: "summary_large_image"
+twitter_creator: "@wwdseb"
+twitter_description: "Pohled na technologie roku 2023: AI a kvantové výpočty proměňují bankovnictví, nástup modelů s otevřeným zdrojovým kódem a vývoj regulace a správy."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Logo Sebastiena Rousseaua"
+twitter_site: "@wwdseb"
+twitter_title: "Stav AI a kvantových výpočtů v bankovnictví: přehled roku 2023"
+twitter_url: "https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html"
+
+# Humans.txt - The Humans.txt front matter (YAML).
+author_website: "https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "Děkuji za přečtení!"
+site_last_updated: "2023-12-11"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+
+excerpt: "V roce 2023 průnik umělé inteligence (AI) a kvantových výpočtů (QC) zásadně ovlivnil bankovní a finanční sektor. Tyto technologie proměnily způsob, jakým…"
+last_reviewed: "2026-05-11"
 ---
 
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+## Poznatek
 
-**Klíčové body**
+V roce 2023 průnik **umělé inteligence (AI)** a **kvantových výpočtů (QC)** zásadně ovlivnil **bankovní a finanční sektor**. Tyto technologie proměnily způsob, jakým finanční instituce fungují, s výrazným dopadem na platby, řízení rizik a kybernetickou bezpečnost.
 
-## Perspectiva
-
-En 2023, la intersección de la **inteligencia artificial (IA)** y la **computación cuántica (QC)** ha impactado profundamente en la **industria bancaria y financiera**. Estas tecnologías han revolucionado la manera en que operan las instituciones financieras, impactando significativamente los pagos, la gestión del riesgo y la ciberseguridad.
-
-Este artículo discute el impacto de los **modelos de IA de código abierto**, la **computación cuántica en seguridad transaccional** y las **regulaciones y la gobernanza** sobre la banca y las finanzas.
+Tento článek se zabývá dopadem **modelů AI s otevřeným zdrojovým kódem**, **QC v transakční bezpečnosti** a **regulace a správy na bankovnictví a finance**.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## La importancia de la IA y la computación cuántica en la industria bancaria
+## Význam AI a kvantových výpočtů v bankovním sektoru
 
-La industria bancaria atraviesa una transformación profunda, impulsada por la convergencia de la IA y la computación cuántica. Estas tecnologías revolucionarias están remodelando el sector de los servicios financieros, introduciendo niveles sin precedentes de eficiencia, ahorros de coste y experiencias de cliente reforzadas.
+Bankovní sektor prochází hlubokou transformací, kterou pohání sbližování umělé inteligence (AI) a kvantových výpočtů (QC). Tyto technologie mění sektor finančních služeb a přinášejí dosud nevídanou úroveň efektivity, úspory nákladů a lepší zákaznickou zkušenost.
 
-### Crecimiento fulgurante del mercado del software de IA: una visualización
+### Prudký růst tržeb trhu softwaru pro AI: vizualizace růstu
 
 ![AI Software Market's Surging Revenue: A Visualization of Growth][21].class=\"img-fluid w-100 clearfix fade-in\"
 
-El mercado del software de IA conoce una trayectoria de crecimiento notable, con una facturación anual proyectada en unos **asombrosos 126.000 millones de dólares para 2025**.
+Trh softwaru pro AI zaznamenává pozoruhodný růst a jeho roční tržby mají do roku 2025 dosáhnout **126 miliard USD**.
 
-Esta visualización pone de manifiesto el crecimiento impresionante del mercado de 2018 a 2025, subrayando la demanda creciente de soluciones impulsadas por IA en diversas industrias.
+Tato vizualizace ukazuje růst trhu od roku 2018 do roku 2025 a zdůrazňuje rostoucí poptávku po řešeních využívajících AI v různých odvětvích.
 
-### El poder de la IA en la banca
+### Síla AI v bankovnictví
 
-Los **algoritmos de IA** han demostrado capacidades notables para analizar vastas cantidades de datos, identificar patrones y tomar decisiones informadas. Esta capacidad resulta inestimable para los bancos en diversos aspectos de sus operaciones.
+**Algoritmy AI** prokázaly pozoruhodnou schopnost analyzovat velké objemy dat, rozpoznávat vzorce a činit podložená rozhodnutí. Tato schopnost se pro banky ukazuje jako mimořádně cenná v řadě oblastí jejich provozu.
 
-- **Evaluación de riesgos**: los sistemas de gestión de riesgos impulsados por IA pueden analizar datos financieros complejos para evaluar la solvencia, identificar fraude potencial y mitigar riesgos financieros. Esto permite a los bancos tomar decisiones de préstamo mejor informadas y proteger su capital.
+- **Hodnocení rizik**: Systémy řízení rizik využívající AI dokážou analyzovat složitá finanční data, posoudit úvěruschopnost, odhalit potenciální podvod a zmírnit finanční rizika. To bankám umožňuje činit podloženější úvěrová rozhodnutí a chránit svůj kapitál.
 
-- **Procesos de aprobación de préstamos**: la IA puede racionalizar los procesos de aprobación, reduciendo los tiempos de respuesta y mejorando la satisfacción del cliente. Al automatizar tareas y aprovechar el análisis predictivo, los bancos pueden tramitar las solicitudes más eficientemente y con mayor rapidez.
+- **Schvalování úvěrů**: AI dokáže zefektivnit procesy schvalování úvěrů, zkrátit dobu vyřízení a zvýšit spokojenost zákazníků. Automatizací úkolů a využitím prediktivní analytiky mohou banky zpracovávat žádosti rychleji a efektivněji.
 
-- **Optimización de carteras de inversión**: la IA puede analizar las tendencias de mercado, los factores de riesgo y los objetivos de inversión individuales para optimizar las carteras. Esto puede ayudar a los clientes a alcanzar sus objetivos financieros al tiempo que gestionan eficazmente su apetito por el riesgo.
+- **Optimalizace investičního portfolia**: AI dokáže analyzovat tržní trendy, rizikové faktory a individuální investiční cíle a optimalizovat tak investiční portfolia. To klientům pomáhá dosahovat finančních cílů a přitom účinně řídit míru podstupovaného rizika.
 
-- **Detección de fraude**: los algoritmos de IA pueden detectar patrones en los datos transaccionales susceptibles de indicar una actividad fraudulenta. Esto permite a los bancos señalar las transacciones sospechosas y tomar las acciones apropiadas para prevenir pérdidas.
+- **Odhalování podvodů**: Algoritmy AI dokážou v transakčních datech rozpoznat vzorce, které mohou naznačovat podvodnou činnost. To bankám umožňuje označit podezřelé transakce a přijmout odpovídající opatření k prevenci finančních ztrát.
 
-- **Servicio al cliente**: la IA puede aumentar las interacciones humanas en servicio al cliente proporcionando soporte proactivo, resolviendo rápidamente las consultas y recomendando productos y servicios personalizados. Esto puede reforzar la satisfacción y la fidelidad del cliente.
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Computación cuántica: desbloquear un análisis de datos sin parangón
-
-[**HSBC** ⧉][01] ha estado a la vanguardia de la integración de la computación cuántica en el sector financiero. El banco ha colaborado con proveedores tecnológicos y laboratorios de investigación para explorar la aplicación de las tecnologías cuánticas a problemas concretos.
-
-HSBC fue el primer banco en [**proteger el trading FX impulsado por IA mediante lo cuántico en 2023** ⧉][01]. En un experimento inédito, HSBC utilizó la **[Distribución cuántica de claves](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)** para asegurar un escenario de trading de 30 millones de euros hacia el dólar estadounidense. Este experimento demostró que la tecnología cuántica protegerá las transacciones de cualquier valor cuando llegue a ser comercialmente accesible y escalable.
+- **Zákaznický servis**: AI může doplnit lidský zákaznický servis tím, že poskytuje proaktivní podporu, rychle řeší dotazy a doporučuje personalizované produkty a služby. To může zvýšit spokojenost a loajalitu zákazníků.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## El auge de la IA de código abierto: un cambio de paradigma
+### Kvantové výpočty: bezkonkurenční analýza dat
 
-El año 2023 ha conocido un notable auge de la adopción de la IA de código abierto, en particular en el ámbito de los **grandes modelos de lenguaje (LLM)**. La IA de código abierto designa los softwares y herramientas de IA cuyo código fuente está disponible para desarrolladores, investigadores y otras partes interesadas.
+[**HSBC** ⧉][01] patří mezi průkopníky integrace kvantových výpočtů do finančního sektoru. Banka spolupracovala s dodavateli technologií a výzkumnými laboratořemi, aby prozkoumala využití kvantových technologií pro reálné problémy.
 
-Esta democratización de la tecnología IA ha alimentado avances significativos, alentado la proliferación de modelos de código abierto y consolidado los LLM como motor de innovación. Estos modelos han desempeñado un papel pivote para estimular la innovación, reforzar la toma de decisiones y mejorar la gestión de riesgos en diversas industrias.
+HSBC byla první bankou, která v roce 2023 [**ochránila devizové obchodování řízené AI pomocí kvantové technologie** ⧉][01]. Ve světově prvním testu HSBC použila **[kvantovou distribuci klíčů](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)** k zabezpečení obchodu v objemu 30 milionů EUR z eur na americké dolary. Test ukázal, že kvantová technologie ochrání obchody jakékoli hodnoty, jakmile bude komerčně dostupná a škálovatelná.
 
-### LLM de código abierto: revolucionar el panorama de la IA
+![divider][divider].class=\"m-10 w-100\"
 
-Los LLM de código abierto, como [**WizardLM** ⧉][07] y [**LLaMA 2** ⧉][08], han emergido como competidores formidables de los modelos propietarios. Por ejemplo, [Vicuna ⧉][09], un LLM económico, ha alcanzado el 90 % de las capacidades de ChatGPT mientras que el coste total de su entrenamiento no superó los 300 $. [LLaMA 2 ⧉][08] ha fijado el estándar de oro de la IA ética al alcanzar las puntuaciones de infracción más bajas hasta la fecha. Los LLM de código abierto son más transparentes y personalizables que los LLM propietarios «caja negra» que carecen de interpretabilidad.
+## Nástup AI s otevřeným zdrojovým kódem: změna paradigmatu v umělé inteligenci
 
-#### Crecimiento explosivo de los modelos de IA de código abierto en 2023
+Rok 2023 zaznamenal pozoruhodný nárůst využívání technologie AI s otevřeným zdrojovým kódem, zejména v oblasti **velkých jazykových modelů (LLM)**. AI s otevřeným zdrojovým kódem označuje software a nástroje AI, jejichž zdrojový kód je dostupný vývojářům, výzkumníkům a dalším zúčastněným stranám.
+
+Tato demokratizace technologie AI podpořila významný pokrok, urychlila šíření modelů s otevřeným zdrojovým kódem a upevnila postavení LLM v čele inovací v AI. Tyto modely sehrály klíčovou roli při podpoře inovací, zlepšování rozhodování a zdokonalování řízení rizik v různých odvětvích.
+
+### LLM s otevřeným zdrojovým kódem: proměna oblasti AI
+
+LLM s otevřeným zdrojovým kódem, jako jsou [**WizardLM** ⧉][07] a [**LLaMA 2** ⧉][08], se ukázaly jako silní konkurenti uzavřených modelů. Například [Vicuna ⧉][09], nenákladný LLM, dosáhla 90 % schopností ChatGPT, přestože celý proces trénování stál pouhých 300 USD. [LLaMA 2 ⧉][08] nastavila zlatý standard etické AI tím, že dosáhla dosud nejnižšího skóre porušení pravidel. LLM s otevřeným zdrojovým kódem jsou transparentnější a lépe přizpůsobitelné než uzavřené LLM typu „černá skříňka", které postrádají interpretovatelnost.
+
+#### Explozivní růst modelů AI s otevřeným zdrojovým kódem v roce 2023
 
 ![Explosive Growth of Open-Source AI Models in 2023][22].class=\"img-fluid w-100 clearfix fade-in\"
 
-Este gráfico ilustra vívidamente el ascenso notable de los modelos de IA de código abierto en 2023, con una explosión del número de proyectos y contribuciones. Esta tendencia pone de relieve la importancia creciente de la IA de código abierto para estimular la innovación y favorecer la colaboración en la comunidad IA.
+Tento sloupcový graf názorně ukazuje pozoruhodný nárůst modelů AI s otevřeným zdrojovým kódem v roce 2023, s výrazným zvýšením počtu projektů i počtu příspěvků. Tento trend zdůrazňuje rostoucí význam AI s otevřeným zdrojovým kódem pro podporu inovací a spolupráce v rámci komunity AI.
 
-Varios LLM de código abierto han atraído la atención por sus capacidades revolucionarias:
+Několik LLM s otevřeným zdrojovým kódem si získalo významnou pozornost díky svým průlomovým schopnostem:
 
-- [**Mixtral 8x7B** ⧉][10]: desarrollado por Mistral AI, este potente modelo de lenguaje se distingue por sus pesos abiertos, permitiendo un funcionamiento local con menos restricciones que los modelos competidores. Procesa hasta 32K tokens de contexto y admite varias lenguas: francés, alemán, español, italiano e inglés. [Mixtral 8x7B ⧉][10] está diseñado para el trabajo composicional, el análisis de datos, la depuración de software y la programación. Reivindica igualar o superar a GPT-3.5 de OpenAI y superar a LLaMA 2-70B de Meta en ciertos benchmarks.
+- [**Mixtral 8x7B** ⧉][10]: Tento výkonný jazykový model od Mistral AI vyniká svými otevřenými vahami, které umožňují lokální provoz s menšími omezeními než modely konkurence. Zpracovává kontextová okna až 32K tokenů a podporuje více jazyků včetně francouzštiny, němčiny, španělštiny, italštiny a angličtiny. [Mixtral 8x7B ⧉][10] je určen pro kompoziční práci, analýzu dat, řešení potíží se softwarem a programování. Uvádí se, že se v některých srovnávacích testech vyrovná modelu GPT-3.5 od OpenAI nebo jej předčí a překoná model LLaMA 2-70B od Meta.
 
-- [**GPT-NeoX-20B** ⧉][11]: con 20.000 millones de parámetros, GPT-NeoX-20B es un LLM de código abierto de primer nivel. Se basa en GPT-3 pero introduce el paralelismo síncrono de datos y el gradient checkpointing para mejorar el rendimiento y la eficiencia. El modelo ha demostrado un rendimiento excepcional en diversas tareas: pregunta-respuesta, resumen, traducción.
+- [**GPT-NeoX-20B** ⧉][11]: S 20 miliardami parametrů patří GPT-NeoX-20B mezi přední LLM s otevřeným zdrojovým kódem. Vychází z GPT-3, ale zavádí synchronní datový paralelismus a gradient checkpointing pro zlepšení výkonu a efektivity. Model prokázal výjimečný výkon v řadě úloh, včetně odpovídání na otázky, sumarizace a překladu.
 
-- [**GPT-J** ⧉][12]: con 6.000 millones de parámetros, [GPT-J ⧉][12] ofrece una mayor accesibilidad que los modelos más grandes. [GPT-J ⧉][12] está entrenado sobre el conjunto de datos Pile y comparte sus raíces con la arquitectura GPT-2. Comprende los matices conversacionales, proporciona perspectivas desde fuentes diversas, adapta su tono y estilo, y prioriza la generación de contenido ético y responsable.
+- [**GPT-J** ⧉][12]: Se 6 miliardami parametrů nabízí [GPT-J ⧉][12] vyšší dostupnost oproti větším modelům. [GPT-J ⧉][12] je trénován na datové sadě Pile a vychází ze stejných základů jako architektura GPT-2. Rozumí konverzačním nuancím, poskytuje poznatky z různých zdrojů, přizpůsobuje svůj tón a styl a upřednostňuje etické a odpovědné generování obsahu.
 
-- [**OPT-175B** ⧉][13]: con un tamaño sin precedentes de 175.000 millones de parámetros, [OPT-175B ⧉][13] se erige como un coloso de eficiencia y escala. Entrenado con datos textuales no etiquetados que contienen principalmente frases en inglés, [OPT-175B ⧉][13] emplea la arquitectura Transformer para procesar jerárquicamente el texto de entrada. El modelo ha demostrado un rendimiento impresionante en diversas tareas: pregunta-respuesta, resumen, traducción.
+- [**OPT-175B** ⧉][13]: S bezprecedentní velikostí 175 miliard parametrů představuje [OPT-175B ⧉][13] kolos z hlediska efektivity i rozsahu. [OPT-175B ⧉][13], trénovaný na neoznačených textových datech obsahujících převážně anglické věty, využívá architekturu Transformer k hierarchickému zpracování vstupního textu. Model prokázal působivý výkon v řadě úloh, včetně odpovídání na otázky, sumarizace a překladu.
 
-- [**LLMa 2** ⧉][14]: con 1.600 millones de parámetros, [LLMa 2 ⧉][14] ilustra la versatilidad, respondiendo a una amplia gama de tareas: pregunta-respuesta, resumen, traducción. Entrenado con el conjunto de datos Pile y utilizando la arquitectura Transformer, [LLMa 2 ⧉][14] prueba su adaptabilidad a diversas aplicaciones.
+- [**LLMa 2** ⧉][14]: S 1,6 miliardy parametrů ukazuje [LLMa 2 ⧉][14] svou univerzálnost a zvládá širokou škálu úloh, včetně odpovídání na otázky, sumarizace a překladu. [LLMa 2 ⧉][14], trénovaný na datové sadě Pile a využívající architekturu Transformer, prokazuje svou přizpůsobivost v různých aplikacích.
 
-- [**Google Gemini LLM** ⧉][26]: desvelado en 2023, [Google Gemini LLM ⧉][26] representa un paso significativo en el campo de los grandes modelos de lenguaje. Presentado como sucesor de [PaLM 2 ⧉][27], [Gemini LLM ⧉][26] está diseñado para sobresalir en diversos dominios: comprensión del lenguaje natural, generación de distintos formatos de texto creativo, aplicación de conocimientos a la resolución de problemas. Con su capacidad para tratar datos multimodales, [Google Gemini LLM ⧉][26] tiene gran potencial para aplicaciones en visión por ordenador, investigación científica y sanidad. El modelo está actualmente disponible en tres tamaños: **Ultra**, **Pro** y **Nano**, respondiendo a distintas necesidades computacionales.
+- [**Google Gemini LLM** ⧉][26]: [Google Gemini LLM ⧉][26], představený v roce 2023, znamená významný krok vpřed v oblasti velkých jazykových modelů. Je označován za nástupce modelu [PaLM 2 ⧉][27] a [Gemini LLM ⧉][26] je navržen tak, aby vynikal v různých doménách, včetně porozumění přirozenému jazyku, generování různých kreativních textových formátů a uplatnění znalostí při řešení problémů. Díky své schopnosti zpracovávat multimodální data má [Google Gemini LLM ⧉][26] velký potenciál pro využití v oblastech, jako je počítačové vidění, vědecký výzkum a zdravotnictví. Model je aktuálně dostupný ve třech velikostech: **Ultra**, **Pro** a **Nano**, které odpovídají různým výpočetním nárokům.
 
-### La revolución de la IA de código abierto: configurar el futuro de la IA
+### AI s otevřeným zdrojovým kódem: utváření budoucnosti AI
 
-La revolución de la IA de código abierto transforma fundamentalmente el panorama del desarrollo, despliegue y uso de la IA. Al hacer la IA más accesible, asequible y polivalente, la tecnología de código abierto democratiza las capacidades de IA y abre la vía a innovaciones y aplicaciones revolucionarias. A medida que el movimiento de código abierto gana impulso, podemos anticipar con confianza incluso más avances transformadores que configurarán el futuro de la IA y su profundo impacto sobre nuestro mundo.
+AI s otevřeným zdrojovým kódem zásadně mění vývoj, nasazování a využívání AI. Tím, že činí AI dostupnější, cenově přijatelnější a všestrannější, otevřený zdrojový kód demokratizuje schopnosti AI a připravuje půdu pro průlomové inovace a aplikace. S tím, jak hnutí otevřeného zdrojového kódu nabírá na síle, lze očekávat další zásadní pokrok, který bude utvářet budoucnost AI a její hluboký dopad na náš svět.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Los desafíos de la regulación de la IA
+## Výzvy při regulaci AI
 
-Otro desafío es **garantizar que los sistemas de IA sean justos y no sesgados**. Los sistemas de IA pueden perpetuar los sesgos existentes en los datos sobre los que se entrenan. Por ello es importante desarrollar sistemas de IA transparentes y responsables, auditados para identificar y abordar los sesgos potenciales.
+Další výzvou je **zajistit, aby systémy AI byly spravedlivé a nezkreslené**. Systémy AI mohou přenášet stávající zkreslení obsažená v datech, na nichž jsou trénovány. Je proto důležité vyvíjet systémy AI, které jsou transparentní a odpovědné a které lze auditovat s cílem odhalit a řešit případná zkreslení.
 
-Por último, es importante **establecer directrices éticas para el desarrollo y despliegue de la IA**. Los sistemas de IA deberían diseñarse y utilizarse de una manera responsable y respetuosa con los derechos humanos. Por ejemplo, los sistemas de IA no deberían utilizarse para dañar o explotar a los individuos, ni para invadir su privacidad.
+V neposlední řadě je důležité **stanovit etické zásady pro vývoj a nasazování AI**. Systémy AI by měly být navrhovány a používány odpovědně a s ohledem na lidská práva. Systémy AI by například neměly být využívány k poškozování nebo zneužívání osob ani k narušování jejich soukromí.
 
-Abordar estos desafíos exigirá un enfoque multipartícipe que implique a gobiernos, empresas, investigadores y sociedad civil. Es importante iniciar la conversación ahora sobre la manera de regular la IA equilibrando las necesidades de confidencialidad, seguridad e innovación.
+Řešení těchto výzev bude vyžadovat přístup zahrnující více zúčastněných stran: vlády, podniky, výzkumníky i občanskou společnost. Je důležité již nyní zahájit diskusi o tom, jak regulovat AI způsobem, který vyváží potřebu soukromí a bezpečnosti s potřebou inovací.
 
-## El estado de la gobernanza de la IA
+## Stav správy AI
 
 ![The State of AI Governance][28].class=\"fade-in w-100 p-3 me-3 img-thumbnail \"
 
-En 2023, **importantes iniciativas mundiales y desarrollos han configurado el panorama de la gobernanza y regulación de la IA**. Estas actividades reflejan el reconocimiento creciente de la [**necesidad de marcos robustos para supervisar el desarrollo y despliegue de las tecnologías de IA** ⧉][19].
+V roce 2023 **významné globální iniciativy a události utvářely správu a regulaci AI**. Tyto aktivity odrážejí rostoucí uznání [**potřeby robustních rámců pro dohled nad vývojem a nasazováním technologií AI** ⧉][19].
 
-En Estados Unidos, el presidente Joe Biden emitió un [**decreto para gestionar los riesgos asociados a la IA y apoyar los esfuerzos internacionales de gobernanza** ⧉][15]. La [**Office of Science and Technology Policy (OSTP)** ⧉][23] de la Casa Blanca ha mantenido amplios debates con investigadores, empresas y sociedad civil para informar la gobernanza. Estados Unidos trabaja con sus aliados y socios sobre la gobernanza de la IA, incluida la participación en el G7 Hiroshima AI Process y en el [**AI Safety Summit** ⧉][16] del Reino Unido.
+Ve Spojených státech vydal prezident Joe Biden [**exekutivní nařízení k řízení rizik spojených s AI a k podpoře mezinárodního úsilí o její správu** ⧉][15]. [**Úřad pro vědeckou a technologickou politiku (OSTP)** ⧉][23] Bílého domu vedl rozsáhlé diskuse s výzkumníky, firmami a občanskou společností s cílem podložit správu AI. USA spolupracují se svými spojenci a partnery na správě AI, včetně účasti v procesu G7 Hiroshima AI Process a na britském [**AI Safety Summit** ⧉][16].
 
-El Reino Unido acogió la primera [**AI Safety Summit** ⧉][16], reuniendo a líderes gubernamentales mundiales para discutir los [**riesgos de la IA y la acción coordinada internacionalmente** ⧉][17].
+Spojené království uspořádalo první [**AI Safety Summit** ⧉][16], který svedl dohromady vládní představitele z celého světa k jednání o [**rizicích AI a mezinárodně koordinovaném postupu** ⧉][17].
 
-La [**Declaración de Bletchley** ⧉][18] vio a 28 países más la UE comprometerse a trabajar juntos para abordar los riesgos planteados por la IA durante la primera AI Safety Summit en el Reino Unido.
+V rámci [**Bletchleyské deklarace** ⧉][18] se 28 zemí a EU zavázalo ke společnému postupu při řešení rizik spojených s AI během prvního AI Safety Summit ve Spojeném království.
 
-Los líderes e investigadores del MIT han publicado un conjunto de notas políticas sobre la gobernanza de la IA para ayudar a los legisladores a crear una mejor supervisión. [**A Framework for U.S. AI Governance: Creating a Safe and Thriving AI Sector** ⧉][20] propone que entidades gubernamentales existentes regulen las herramientas de IA.
+Vedoucí představitelé a výzkumníci z MIT vydali soubor analytických podkladů o správě AI, které mají tvůrcům politik pomoci zavést lepší dohled. [**A Framework for U.S. AI Governance: Creating a Safe and Thriving AI Sector** ⧉][20] navrhuje, aby nástroje AI regulovaly stávající vládní instituce.
 
-Más de 60 países en los continentes americano, africano, asiático y europeo han publicado estrategias nacionales de IA, reflejando el impulso global hacia la gobernanza. China se ha comprometido activamente a lanzar principios y regulaciones, entre ellas la [**Global AI Governance Initiative** ⧉][06] y las [**Interim Administrative Measures for the Management of Generative AI Services** ⧉][05].
+Více než 60 zemí v Americe, Africe, Asii a Evropě zveřejnilo národní strategie pro AI, což odráží globální směřování ke správě AI. Čína aktivně zaváděla zásady a předpisy, mimo jiné [**Global AI Governance Initiative** ⧉][06] a [**Interim Administrative Measures for the Management of Generative AI Services** ⧉][05].
 
-Estas iniciativas y desarrollos muestran la creciente necesidad de esfuerzos coordinados nacionales e internacionales para un desarrollo y despliegue responsables de la IA. Si bien se han hecho progresos, la naturaleza compleja y rápidamente evolutiva de la IA presenta desafíos continuos que exigen atención sostenida.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## Conclusión
-
-El año 2023 ha visto avances significativos en los campos de la IA y la QC, en particular en la industria bancaria. El uso pionero por HSBC de la protección cuántica para el trading impulsado por IA representa un hito significativo de la aplicación de estas tecnologías al sector bancario. Los modelos de código abierto han acelerado la madurez de la IA, mientras que las notas políticas del MIT sobre la gobernanza proporcionan una hoja de ruta para la regulación. Estos desarrollos configurarán el futuro de la IA y la QC, con implicaciones profundas para la banca y las finanzas.
+Tyto iniciativy a události ukazují rostoucí potřebu koordinovaného národního i mezinárodního úsilí o odpovědný vývoj a nasazování AI. Přestože bylo dosaženo pokroku, složitá a rychle se vyvíjející povaha AI přináší trvalé výzvy, které vyžadují soustavnou pozornost.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-**¿Quiere saber más sobre el impacto de la IA y la computación cuántica en la industria bancaria?**
+## Závěr
 
-*En conclusión, espero que este artículo haya despertado su interés por el poder transformador de la IA y la computación cuántica en la banca.*
+Rok 2023 přinesl významný pokrok v oblastech AI a QC, zejména v bankovnictví. Průkopnické využití kvantové ochrany pro obchodování řízené AI ze strany HSBC představuje významný mezník v uplatnění těchto technologií v bankovním sektoru. Modely s otevřeným zdrojovým kódem urychlily zralost AI, zatímco odborné studie MIT o správě AI poskytují plán pro regulaci. Tento vývoj bude utvářet budoucnost AI a QC s hlubokými dopady na bankovnictví a finance.
 
-*Si está deseoso de aprender más sobre la intersección de la IA y la computación cuántica en la industria bancaria, no dude en contactarme en [**LinkedIn** ⧉][02] o a través de la [**página de contacto** ⧉][03].*
+![divider][divider].class=\"m-10 w-100\"
 
-*También puede encontrarme en mi nuevo canal de YouTube, [**Banking on Quantum** ⧉][24], donde exploraré los últimos desarrollos de estas tecnologías transformadoras y sus implicaciones para el futuro de las finanzas.*
+**Chcete se dozvědět více o dopadu AI a kvantových výpočtů na bankovní sektor?**
 
-*[**Suscríbase a Banking on Quantum hoy y manténgase a la vanguardia en este campo en rápida evolución.** ⧉][25]*
+*Na závěr doufám, že tento článek ve vás vzbudil zájem o proměňující sílu AI a kvantových výpočtů v bankovnictví.*
 
-Gracias de nuevo por su tiempo, espero tener noticias suyas.
+*Pokud se chcete dozvědět více o průniku AI a kvantových výpočtů v bankovnictví, neváhejte se mi ozvat na [**LinkedIn** ⧉][02] nebo prostřednictvím [**kontaktní stránky** ⧉][03].*
+
+*Můžete se ke mně také připojit na mém novém kanálu YouTube [**Banking on Quantum** ⧉][24], kde budu sledovat nejnovější vývoj těchto proměňujících technologií a jejich důsledky pro budoucnost financí.*
+
+*[**Odebírejte Banking on Quantum ještě dnes a udržte si náskok v tomto rychle se vyvíjejícím oboru.** ⧉][25]*
+
+Ještě jednou děkuji za váš čas a těším se na vaši zprávu.
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -151,7 +238,7 @@ Gracias de nuevo por su tiempo, espero tener noticias suyas.
 [07]: https://github.com/nlpxucan/WizardLM "WizardLM"
 [08]: https://ai.meta.com/llama/ "LLaMA 2"
 [09]: https://lmsys.org/blog/2023-03-30-vicuna/ "Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality"
-[10]: https://mistral.ai/news/mixtral-of-experts/ "Mixtral 8x7B"
+[10]: https://mistral.ai/news/mixtral-of-experts/ "Mixtral 8x7B: An Open-Source Language Model Matching GPT-3.5 and Outperforming LLaMA 2-70B"
 [11]: https://huggingface.co/EleutherAI/gpt-neox-20b "GPT-NeoX-20B"
 [12]: https://huggingface.co/kingoflolz/mesh-transformer-jax "GPT-J"
 [13]: https://huggingface.co/kingoflolz/mesh-transformer-jax "OPT-175B"
@@ -159,7 +246,7 @@ Gracias de nuevo por su tiempo, espero tener noticias suyas.
 [15]: https://carnegieendowment.org/2023/11/14/future-of-ai-governance-conversation-with-arati-prabhakar-event-8195 "The Future of AI Governance: A Conversation with Arati Prabhakar"
 [16]: https://www.aisafetysummit.gov.uk/ "AI Safety Summit"
 [17]: https://www.cov.com/en/news-and-insights/insights/2023/12/international-developments-in-ai-governance-same-goal-different-paths "International developments in AI governance: same goal, different paths"
-[18]: https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023 "The Bletchley Declaration"
+[18]: https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023 "The Bletchley Declaration by Countries Attending the AI Safety Summit, 1-2 November 2023"
 [19]: https://www.spglobal.com/en/research-insights/featured/special-editorial/the-ai-governance-challenge "The AI Governance Challenge"
 [20]: https://news.mit.edu/2023/mit-group-releases-white-papers-governance-ai-1211 "MIT group releases white papers on governance of AI"
 [21]: https://cloudcdn.pro/stocks/diagrams/ai-software-market-revenue-2018-2025-professional.svg "AI Software Market's Surging Revenue: A Visualization of Growth"

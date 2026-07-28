@@ -1,170 +1,188 @@
 ---
-title: "IA generativa en 2023: cómo funciona, dónde aterriza"
-subtitle: "Inteligencia artificial aplicada a la banca y los servicios financieros"
-description: "Explore la IA generativa en 2023: cómo funciona, dónde se implanta primero en los servicios financieros, y las cuestiones éticas y arquitectónicas a plantearse."
-date: "November 12, 2023"
-language: "th-TH"
-locale: "th_TH"
+title: "Generative AI ในปี 2023: กลไกการทำงานและจุดที่นำไปใช้ก่อน"
+subtitle: "ปัญญาประดิษฐ์ประยุกต์ในธนาคารและบริการทางการเงิน"
+description: "สำรวจ Generative AI ในปี 2023: กลไกการทำงาน จุดที่นำไปใช้ก่อนในบริการทางการเงิน และคำถามด้านจริยธรรมและสถาปัตยกรรมที่ควรตั้ง"
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+banner_alt: "ภาพนามธรรมของโครงข่ายประสาทเทียมในโทนสีน้ำเงินและม่วง แทนการประมวลผลของ AI"
+banner_height: "100vh"
+banner_width: "100vw"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
-banner_alt: "Concepto de IA, renderizado 3D, imagen conceptual"
-keywords: "IA generativa, tecnología, futuro, impacto, ética, sinergias, innovación, creatividad, transformación, evolución"
+cdn: "https://cloudcdn.pro/clients"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "Nov 12, 2023"
+format-detection: "telephone=no"
+hreflang: "th"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"
+image_alt: "ภาพถ่ายขาวดำของ Sebastien Rousseau"
+image_height: "161"
+image_width: "161"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
+keywords: "Generative AI, โมเดลภาษาขนาดใหญ่, สถาปัตยกรรม transformer, GPT-4, AI สำหรับบริการทางการเงิน, การหลอน, retrieval-augmented generation, ธรรมาภิบาล AI, foundation model, การปรับจูน"
+language: "th"
+last_reviewed: "2026-05-24"
+layout: "report"
+locale: "th_TH"
+logo_alt: "โลโก้ของ Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: "active"
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"
+rating: "general"
+referrer: "no-referrer"
+robots: "index, follow"
+short_name: "sebastienrousseau"
+tags: "Generative AI, LLM, GPT-4, transformer, บริการทางการเงิน, การหลอน, RAG, ธรรมาภิบาล AI, foundation model, การปรับจูน, ISO 20022, DORA, การเข้ารหัสหลังควอนตัม, การประมวลผลควอนตัม, AI"
+theme-color: "0, 67, 165"
+url: "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+atom_link: "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/rss.xml"
+category: "AI"
+docs: "https://validator.w3.org/feed/docs/rss2.html"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "โมเดล transformer ทำงานอย่างไร โมเดลใดในปี 2023 ที่ตั้งเกณฑ์มาตรฐาน Generative AI นำไปใช้ก่อนที่ใดในบริการทางการเงิน และคำถามด้านธรรมาภิบาลใดที่ผู้ปฏิบัติงานต้องการคำตอบ"
+item_guid: "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/rss.xml"
+item_link: "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/rss.xml"
+item_pub_date: "Sun, 12 Nov 2023 20:30:00 +0000"
+item_title: "Generative AI ในปี 2023: กลไกการทำงานและจุดที่นำไปใช้ก่อน"
+last_build_date: "Sun, 12 Nov 2023 20:30:00 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Sun, 12 Nov 2023 20:30:00 +0000"
+ttl: "60"
+type: "website"
+webmaster: "contact@sebastienrousseau.com"
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "Generative AI 2023"
+apple-touch-fullscreen: "yes"
+msapplication-navbutton-color: "0, 67, 165"
+twitter_card: "summary_large_image"
+twitter_creator: "@wwdseb"
+twitter_description: "กลไกของ transformer เกณฑ์มาตรฐานโมเดลปี 2023 กรณีใช้งานในบริการทางการเงิน และคำถามด้านธรรมาภิบาลที่เลื่อนออกไปไม่ได้"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "โลโก้ของ Sebastien Rousseau"
+twitter_site: "@wwdseb"
+twitter_title: "Generative AI ในปี 2023: กลไกการทำงานและจุดที่นำไปใช้ก่อน"
+twitter_url: "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"
+author_website: "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "ขอบคุณที่อ่าน!"
+site_last_updated: "2023-11-05"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+excerpt: "Generative AI ก้าวจากความสนใจในเชิงวิจัยไปสู่การใช้งานจริงในการผลิตในปี 2023 GPT-4, Claude 2, Llama 2 และ Mistral แสดงให้เห็นว่าโมเดลภาษาขนาดใหญ่สามารถจัดการการตรวจทานเอกสารกฎหมาย การสร้างโค้ด และบทสนทนากับลูกค้าได้ในคุณภาพเทียบเท่ามนุษย์ ซึ่งก่อให้เกิดคำถามด้านธรรมาภิบาลโดยทันทีเกี่ยวกับการหลอน การรั่วไหลของข้อมูล และการปฏิบัติตามกฎเกณฑ์ในบริการทางการเงิน"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+# Generative AI ในปี 2023: กลไกการทำงานและจุดที่นำไปใช้ก่อน
 
-**ประเด็นสำคัญ**
+> **บทสรุปผู้บริหาร / ประเด็นสำคัญ**
+>
+> - **สถาปัตยกรรมที่เปลี่ยนทุกสิ่ง** งานวิจัย transformer ปี 2017 ได้นำเสนอ self-attention ซึ่งเป็นกลไกที่คำนวณน้ำหนักความเกี่ยวข้องระหว่างโทเค็นทุกคู่ในอินพุต แทนที่การประมวลผลแบบลำดับของ RNN ด้วยการดำเนินการเมทริกซ์ที่ทำขนานกันได้ โมเดลภาษาสำคัญทุกตัวในปี 2023 เป็นรูปแบบหนึ่งของ transformer ([Vaswani et al., 2017](https://arxiv.org/abs/1706.03762 "Attention Is All You Need")).
+> - **GPT-4 ในฐานะเกณฑ์มาตรฐานของปี 2023** เปิดตัวเมื่อเดือนมีนาคม 2023 GPT-4 ทำคะแนนได้ในเปอร์เซ็นไทล์ที่ 90 ของการสอบเนติบัณฑิตสหรัฐ เปอร์เซ็นไทล์ที่ 99 ของ GRE Verbal และแสดงการให้เหตุผลหลายขั้นตอนบนเอกสารยาว โมเดลนี้ตั้งเกณฑ์มาตรฐานด้านความสามารถที่โมเดลรุ่นถัดมาตั้งเป้าจะทำให้ได้เท่าหรือเหนือกว่า ([OpenAI, 2023](https://arxiv.org/abs/2303.08774 "GPT-4 Technical Report")).
+> - **โมเดลแบบเปิดน้ำหนัก (open-weight) ทำให้การเข้าถึงเป็นวงกว้าง** Llama 2 ของ Meta (กรกฎาคม 2023) และ Mistral 7B ของ Mistral AI (กันยายน 2023) แสดงให้เห็นว่าโมเดลที่มีความสามารถแข่งขันได้ในระดับ GPT-3.5 สามารถทำงานบนโครงสร้างพื้นฐานส่วนตัวได้ ซึ่งตอบโจทย์ข้อกำหนดด้านถิ่นที่อยู่ของข้อมูล (data residency) ในอุตสาหกรรมที่อยู่ภายใต้การกำกับดูแล
+> - **โครงการนำร่องในบริการทางการเงินปี 2023** การนำไปใช้เป็นวงกว้างภายในปลายปี 2023 รวมถึงการตรวจทานสัญญาทางกฎหมาย (งานวิจัย DocLLM ของ JPMorgan) การเฝ้าติดตามการเปลี่ยนแปลงกฎเกณฑ์ และเครื่องมือเพิ่มผลิตภาพของนักพัฒนา Goldman Sachs รายงานการใช้ผู้ช่วยเขียนโค้ดด้วย AI ภายในองค์กรครอบคลุมนักพัฒนา 10,000 คน
+> - **การหลอน (hallucination) เป็นอุปสรรคต่อการใช้งานจริง** LLM สร้างผลลัพธ์ที่ฟังดูสมเหตุสมผลแต่ผิดข้อเท็จจริงในอัตราที่ไม่อาจมองข้าม ในกรณีใช้งานที่อยู่ภายใต้การกำกับดูแล ได้แก่ การตัดสินใจด้านสินเชื่อ ความเห็นด้านการปฏิบัติตามกฎเกณฑ์ และการเปิดเผยข้อมูลต่อลูกค้า การหลอนไม่ใช่ข้อบกพร่องผิวเผิน แต่เป็นความเสี่ยงด้านกฎเกณฑ์และความรับผิดที่ต้องอาศัยมาตรการบรรเทาเชิงสถาปัตยกรรม เช่น retrieval-augmented generation (RAG)
 
-![AI, Artificial Intelligence concept,3d rendering,conceptual image](https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp).class=\"img-fluid clearfix\"
+---
 
-## Perspectiva
+## สถาปัตยกรรม transformer ทำงานอย่างไร
 
-### Comprender la mecánica de la IA generativa
+โมเดลภาษาสำคัญทุกตัวที่นำไปใช้ในปี 2023 ได้แก่ GPT-4, Claude 2, Llama 2, Mistral และ Falcon ล้วนสร้างขึ้นบนสถาปัตยกรรม transformer ที่นำเสนอในงานวิจัยปี 2017 เรื่อง "Attention Is All You Need" การเข้าใจกลไกแกนกลางอธิบายได้ทั้งว่าเหตุใดโมเดลเหล่านี้จึงทำงานได้ และจุดที่มันล้มเหลว
 
-#### Introducción a la IA generativa
+**โทเค็นและ embedding** โมเดลเริ่มต้นด้วยการแบ่งข้อความอินพุตออกเป็นโทเค็นระดับหน่วยย่อยของคำ (โดยทั่วไปใช้ byte-pair encoding) โทเค็นแต่ละตัวถูกจับคู่กับเวกเตอร์มิติสูง (embedding) ที่เข้ารหัสความสัมพันธ์เชิงความหมายกับโทเค็นอื่น ซึ่งเรียนรู้ระหว่างการฝึกล่วงหน้า (pre-training)
 
-La inteligencia artificial generativa es un campo puntero del aprendizaje automático que permite a los ordenadores producir contenido indistinguible del creado por humanos. Esta tecnología es un subconjunto de la IA que pasa de respuestas reactivas a la creación proactiva. Mientras que la IA le dice el tiempo, la IA generativa podría escribir un poema sobre un día lluvioso, utilizando metáforas y emociones que parecen humanas.
+**Self-attention** สำหรับแต่ละโทเค็น โมเดลคำนวณเวกเตอร์สามชุด ได้แก่ Query (สิ่งที่โทเค็นนี้กำลังค้นหา) Key (สิ่งที่โทเค็นนี้เสนอ) และ Value (สิ่งที่โทเค็นนี้มีส่วนร่วม) คะแนน attention คำนวณจากการหาผลคูณจุด (dot product) ของแต่ละ Query กับ Key ทั้งหมด แล้วใช้ softmax เพื่อสร้างน้ำหนัก และรวม Value ที่ถ่วงน้ำหนักด้วยคะแนนเหล่านั้น นั่นหมายความว่าทุกโทเค็นให้ความสนใจต่อโทเค็นอื่นทุกตัวในหน้าต่างบริบทพร้อมกัน กลไกนี้เองที่ทำให้ transformer สามารถจัดการความสัมพันธ์ระยะไกลได้
 
-La IA generativa consiste en predecir la secuencia siguiente en un patrón: palabras, píxeles, notas. Su potencia proviene de que aprende a partir de los datos para producir nuevas creaciones distintas de las demás.
+**Multi-head attention** หัว attention หลายหัวทำงานขนานกัน แต่ละหัวเรียนรู้ความสัมพันธ์คนละประเภท (เชิงวากยสัมพันธ์ เชิงความหมาย เชิงตำแหน่ง) ผลลัพธ์ของแต่ละหัวถูกนำมาต่อกันและฉายเชิงเส้น
 
-#### La ciencia detrás de la IA generativa
+**ชั้น feed-forward** หลังจาก attention แต่ละตำแหน่งจะผ่านการแปลงเชิงเส้นสองครั้งพร้อมฟังก์ชันกระตุ้นแบบไม่เชิงเส้น ชั้นนี้ทำการคำนวณต่อโทเค็นอย่างเป็นอิสระ จับการแปลงคุณลักษณะเฉพาะที่
 
-Para comprender cómo funciona la IA generativa como ChatGPT, hay que sumergirse primero en las arquitecturas de redes neuronales que la impulsan. En la cima de estas arquitecturas se encuentra el modelo Transformer, un tipo de red neuronal particularmente adaptado a la manipulación de datos secuenciales. A diferencia de sus predecesores, el Transformer no trata los datos en orden, permitiéndole mirar simultáneamente todas las partes de los datos. Esto es lo que se llama el mecanismo de atención, que permite al modelo ponderar la importancia de las distintas partes de la entrada para predecir una salida.
+**ขนาด (scale)** GPT-4 ประมาณการว่ามีพารามิเตอร์มากกว่าหนึ่งล้านล้านตัว (OpenAI ยังไม่ยืนยัน) Llama 2 70B ใช้ 70 พันล้านตัว Mistral 7B ใช้ 7 พันล้านตัว พร้อม grouped-query attention และ sliding window attention เพื่อประสิทธิภาพ โมเดลที่ใหญ่กว่าโดยทั่วไปแสดงการให้เหตุผลแบบ zero-shot และ few-shot ได้ดีกว่า ซึ่งเป็นความสามารถที่ปรากฏขึ้นเองที่ทำให้โมเดลเหล่านี้มีประโยชน์ต่องานที่ไม่ได้ถูกฝึกมาโดยตรง
 
-El entrenamiento de estos modelos consiste en proporcionarles un enorme corpus de texto. Durante el entrenamiento, el modelo predice lo que viene a continuación en una frase y recibe retroalimentación. Con el tiempo, ajusta sus parámetros internos para mejorar su precisión. El aprendizaje no supervisado no requiere datos etiquetados, permitiendo al modelo aprender desde cualquier texto.
+## ภาพรวมโมเดลปี 2023
 
-#### Diferenciación frente a otros sistemas de IA
+ปี 2023 มีการเปิดตัวโมเดลสำคัญมากกว่าปีใด ๆ ก่อนหน้า:
 
-Cabe preguntarse en qué se diferencia fundamentalmente la IA generativa de los sistemas expertos del pasado. Los sistemas de IA tradicionales se apoyan en un conjunto de reglas elaboradas por humanos. Son deterministas, predecibles y se limitan a los escenarios para los que están programados. La IA generativa, en cambio, es probabilística y puede gestionar la incertidumbre y la ambigüedad de una manera que imita los procesos de pensamiento humanos.
+**GPT-4 (OpenAI, มีนาคม 2023)** รองรับหลายรูปแบบ (อินพุตข้อความและภาพ) หน้าต่างบริบทสูงสุด 128,000 โทเค็นในรุ่น GPT-4 Turbo ที่ออกภายหลัง การให้เหตุผลหลายขั้นตอนที่แข็งแกร่ง ตั้งเกณฑ์มาตรฐานสำหรับงานในสาขาวิชาชีพ
 
-Mientras que los sistemas expertos pueden decir si una frase es gramaticalmente correcta, la IA generativa puede escribir un artículo lleno de creatividad y matiz. Este giro, de los sistemas basados en reglas a los modelos que generan contenido nuevo, ha abierto posibilidades que antes pertenecían a la ciencia ficción.
+**Claude 2 (Anthropic, กรกฎาคม 2023)** หน้าต่างบริบท 100,000 โทเค็น (ยาวที่สุด ณ เวลาเปิดตัว) ทำงานได้ดีในงานเอกสารยาว เช่น การตรวจทานสัญญาและการวิเคราะห์กฎเกณฑ์ ฝึกด้วย Constitutional AI เพื่อลดผลลัพธ์ที่เป็นอันตราย
 
-## Idea
+**Llama 2 (Meta, กรกฎาคม 2023)** เปิดตัวแบบเปิดน้ำหนักในรุ่นพารามิเตอร์ 7B, 13B, 34B และ 70B อนุญาตให้ใช้เชิงพาณิชย์ รองรับการติดตั้งภายในองค์กรสำหรับอุตสาหกรรมที่อยู่ภายใต้การกำกับดูแล ก่อให้เกิดรุ่นปรับจูนตามมาหลายร้อยรุ่น (Code Llama, Vicuna, WizardLM)
 
-### La evolución y los avances de la IA generativa
+**Mistral 7B (Mistral AI, กันยายน 2023)** พารามิเตอร์ 7 พันล้านตัวที่ทำได้เหนือกว่า Llama 2 13B ในเกณฑ์มาตรฐานส่วนใหญ่ grouped-query attention และ sliding window attention ช่วยลดต้นทุนการอนุมาน เป็นโมเดลแนวหน้าตัวสำคัญตัวแรกของยุโรป ซึ่งมีความเกี่ยวข้องเมื่อพิจารณาบริบทของ GDPR และ EU AI Act
 
-#### Perspectiva histórica
+**Falcon 180B (TII, กันยายน 2023)** โมเดลเปิดน้ำหนัก 180 พันล้านพารามิเตอร์ ฝึกบนข้อมูล RefinedWeb จำนวน 3.5 ล้านล้านโทเค็น แสดงให้เห็นว่าโมเดลเปิดน้ำหนักสามารถเข้าใกล้ขนาดระดับ GPT-4 ได้
 
-El viaje de la IA generativa comenzó con modelos simples que apenas podían producir frases coherentes. Inicialmente, estos modelos se apoyaban en reglas y árboles de decisión, lo que los volvía rígidos y limitados a los conocimientos explícitamente codificados. Sin embargo, el advenimiento del aprendizaje automático y, más recientemente, del deep learning, ha traído un cambio de paradigma.
+## จุดที่ Generative AI ถูกนำไปใช้ก่อนในบริการทางการเงิน
 
-La evolución histórica de la IA generativa puede trazarse desde la IA simbólica primitiva hasta las redes neuronales actuales. Cada etapa nos ha acercado al objetivo de crear máquinas capaces de comprender realmente y generar contenido de calidad humana.
+ภายในปลายปี 2023 สถาบันการเงินได้ก้าวจากการทดลองภายในไปสู่โครงการนำร่องที่มีโครงสร้างในกรณีใช้งานที่แตกต่างกันหลายกรณี:
 
-#### Modelos recientes
+**ผลิตภาพของนักพัฒนา** เครื่องมือสร้างโค้ด (GitHub Copilot, Amazon CodeWhisperer และโมเดลที่ปรับจูนภายในองค์กร) กลายเป็นหมวดที่นำไปใช้อย่างกว้างขวางที่สุด Goldman Sachs รายงานว่านักพัฒนา 10,000 คนสามารถเข้าถึงการช่วยเขียนโค้ดด้วย AI ได้ Morgan Stanley นำ GPT-4 มาใช้ภายในองค์กรเพื่อช่วยที่ปรึกษาทางการเงินค้นคืนข้อมูลจากฐานความรู้ที่มีเอกสาร 100,000 ฉบับ
 
-Hoy, GPT-4 y los modelos más recientes han elevado el listón de lo que la IA generativa puede lograr. Estos modelos pueden escribir ensayos como humanos, producir código informático complejo y más.
+**การประมวลผลเอกสารกฎหมายและกฎเกณฑ์** การสกัดข้อความในสัญญา การเฝ้าติดตามการเปลี่ยนแปลงกฎเกณฑ์ และการจับคู่การปฏิบัติตามกฎเกณฑ์เป็นโครงการนำร่องที่มีมูลค่าสูงที่สุด งานวิจัยของ JPMorgan เรื่อง DocLLM แสดงให้เห็นว่าโมเดลภาษาที่รับรู้เค้าโครงเอกสารทำได้เหนือกว่า LLM ทั่วไปในงานทำความเข้าใจเอกสารทางการเงิน
 
-Estos avances resultan tanto de innovaciones arquitectónicas como del aumento exponencial de la cantidad de datos y de la potencia de cálculo disponibles. Los modelos Transformer son revolucionarios porque capturan el contexto de la entrada.
+**การเสริมบริการลูกค้า** ธนาคารนำผู้ช่วยที่ขับเคลื่อนด้วย LLM มาใช้กับคำถามด่านแรกของลูกค้า โดยส่งต่อให้มนุษย์สำหรับคำแนะนำที่อยู่ภายใต้การกำกับดูแล ข้อจำกัดสำคัญคือ โมเดลไม่สามารถให้คำแนะนำที่อยู่ภายใต้การกำกับดูแลได้ ต้องไม่หลอนเงื่อนไขผลิตภัณฑ์ และต้องตรวจสอบย้อนกลับได้
 
-#### Comparación con las tecnologías anteriores
+**การสร้างคำบรรยาย KYC และ AML** การสรุปรูปแบบธุรกรรมที่ซับซ้อนและโปรไฟล์ลูกค้าเพื่อให้นักวิเคราะห์ตรวจสอบ ซึ่งเข้ามาแทนที่งานเขียนสรุปด้วยมือ ปรากฏเป็นกรณีใช้งานที่น่าเชื่อถือและมีความเสี่ยงการหลอนต่ำกว่า เพราะโมเดลสรุปข้อมูลที่ได้รับมามากกว่าจะสร้างข้ออ้างใหม่
 
-El contraste entre la IA generativa y sus predecesoras es nítido. Allí donde los modelos más antiguos batallaban con la ambigüedad y el contexto, la IA generativa moderna se alimenta de ellos. La robustez de estos modelos viene no solo de su arquitectura sino también de sus metodologías de entrenamiento. Se entrenan sobre conjuntos de datos de temas y estilos diversos, permitiéndoles generar un contenido a la vez preciso y variado.
+## ความเสี่ยงที่การใช้งานจริงเผยให้เห็น
 
-## Impacto
+การย้ายจากการสาธิตไปสู่การใช้งานจริงในบริการทางการเงินทำให้ความเสี่ยงชุดหนึ่งปรากฏขึ้น ซึ่งต้องการการตอบสนองเชิงสถาปัตยกรรม:
 
-### Las implicaciones amplias de la IA generativa
+**การหลอน** LLM สร้างผลลัพธ์ที่ผิดพลาดแต่ฟังดูมั่นใจในอัตราที่ผันแปรตามประเภทงานและตัวโมเดล ในงานเรียกคืนข้อเท็จจริง แม้แต่ GPT-4 ก็ยังหลอนในอัตราที่ยอมรับไม่ได้สำหรับความเห็นด้านการปฏิบัติตามกฎเกณฑ์หรือการเปิดเผยข้อมูลสินเชื่อ มาตรการบรรเทาหลักคือ retrieval-augmented generation (RAG) นั่นคือการยึดผลลัพธ์ของโมเดลไว้กับเอกสารที่ค้นคืนมาและตรวจสอบได้ แทนที่จะพึ่งพาความรู้เชิงพารามิเตอร์เพียงอย่างเดียว
 
-#### Influencia en diversos sectores
+**Prompt injection** อินพุตที่เป็นปฏิปักษ์ซึ่งฝังอยู่ในเอกสารหรือข้อความของผู้ใช้สามารถเปลี่ยนทิศทางพฤติกรรมของโมเดลได้ ในบริการทางการเงินที่ LLM ประมวลผลเอกสารที่ไม่น่าเชื่อถือ (สัญญา อีเมล เอกสารที่ลูกค้าส่งมา) prompt injection เป็นความเสี่ยงด้านความมั่นคงในการใช้งานจริง ไม่ใช่เรื่องเชิงทฤษฎี
 
-La IA generativa no es solo una curiosidad académica; es una fuerza transformadora a través de múltiples industrias. En los sectores creativos —música, literatura— la IA ha comenzado a difuminar la frontera entre creatividad humana y máquina.
+**การรั่วไหลของข้อมูล** โมเดลที่ปรับจูนหรือได้รับพรอมป์ด้วยข้อมูลลับสามารถผลิตข้อมูลนั้นซ้ำในผลลัพธ์ได้ ซึ่งเป็นความเสี่ยงที่มีนัยสำคัญต่อ PII สถานะการซื้อขาย และข้อมูลลูกค้า การควบคุมเชิงสถาปัตยกรรม (การติดตั้งแบบส่วนตัว การจัดการข้อมูลในบริบท การกรองผลลัพธ์) เป็นสิ่งจำเป็น ไม่ใช่ทางเลือก
 
-La IA también ha mejorado el servicio al cliente en las empresas, dando respuestas humanas a las preguntas de los clientes. En sanidad, los modelos generativos sirven para predecir las estructuras moleculares.
+**ที่มาของโมเดลและการตรวจสอบได้** หน่วยงานกำกับดูแลคาดหวังให้สถาบันการเงินอธิบายการตัดสินใจอัตโนมัติได้ LLM ที่ให้ผลการประเมินสินเชื่อโดยไม่มีร่องรอยการให้เหตุผลที่ตรวจสอบได้ ย่อมไม่ผ่านข้อกำหนดด้านการอธิบายได้ตามมาตรา 22 ของ GDPR ข้อกำหนดว่าด้วย AI ความเสี่ยงสูงของ EU AI Act และแนวทางความเสี่ยงของโมเดลที่ FCA มีอยู่แล้ว
 
-La IA generativa puede utilizarse para toda clase de tareas: creación de contenido, traducción, desarrollo de juegos y más.
+**ความรู้ที่ล้าสมัย** LLM มีจุดตัดของข้อมูลฝึก โมเดลที่ฝึกด้วยข้อมูลถึงต้นปี 2023 จะไม่รู้เกี่ยวกับการเปลี่ยนแปลงกฎเกณฑ์ การตัดสินใจด้านอัตราดอกเบี้ย หรือเหตุการณ์ตลาดหลังจากวันนั้น ซึ่งเป็นข้อจำกัดสำคัญสำหรับกรณีใช้งานการปฏิบัติตามกฎเกณฑ์แบบเรียลไทม์หรือบทวิเคราะห์ตลาด หากไม่มี RAG หรือการค้นคืนแบบเรียลไทม์
 
-#### Consideraciones éticas y sociales
+## ข้อกำหนดด้านธรรมาภิบาลก่อนการนำไปใช้
 
-Con el auge de la IA generativa, las consideraciones éticas están en primer plano. El potencial de deepfakes, desinformación y reemplazo de empleos tradicionalmente humanos son preocupaciones reales que la sociedad debe abordar. También está la cuestión de la propiedad y los derechos de autor cuando el contenido es generado por IA.
+ผู้ปฏิบัติงานด้านบริการทางการเงินในปี 2023 ไม่ได้รอความชัดเจนด้านกฎเกณฑ์ก่อนนำไปใช้ แต่สถาบันชั้นนำได้นำกรอบการจัดการความเสี่ยงของโมเดล (model risk management, MRM) ที่ปรับมาจากแนวทาง SR 11-7 และ SS3/18 มาใช้:
 
-El impacto social de la IA generativa se extiende más allá de estas preocupaciones. También hay un potencial de cambio: programas educativos personalizados que se adaptan al estilo de aprendizaje de cada estudiante, IA capaz de superar las barreras lingüísticas.
+**บัญชีรายการโมเดลและเอกสารประกอบ** LLM ที่นำไปใช้ในหน้าที่ทางธุรกิจต้องมีเอกสารระบุที่มาของข้อมูลฝึก วิธีการปรับจูน โหมดความล้มเหลวที่ทราบ และประสิทธิภาพบนชุดข้อมูลตรวจสอบเฉพาะโดเมน
 
-#### Perspectiva a largo plazo
+**จุดตรวจที่มีมนุษย์อยู่ในกระบวนการ** สำหรับผลลัพธ์ที่อยู่ภายใต้การกำกับดูแล (การตัดสินใจด้านสินเชื่อ ความเห็นด้านการปฏิบัติตามกฎเกณฑ์ การเปิดเผยข้อมูลต่อลูกค้า) การตรวจสอบโดยมนุษย์ยังคงเป็นข้อบังคับในปี 2023 การทำงานอัตโนมัติถูกนำไปใช้กับการร่างและการสรุป ส่วนการอนุมัติขั้นสุดท้ายยังคงเป็นของมนุษย์
 
-En el horizonte, el impacto a largo plazo de la IA generativa depende de la forma en que elijamos integrarla en nuestras vidas y controlar su desarrollo. El potencial de esta tecnología para beneficiar a la humanidad es enorme, pero exige una gestión y una regulación cuidadosas.
+**ความเสี่ยงจากผู้ให้บริการ** การใช้ API ของโมเดลจากบุคคลที่สาม (OpenAI, Anthropic, Google) ก่อให้เกิดความเสี่ยงจากการกระจุกตัวของผู้ให้บริการ ความเสี่ยงด้านถิ่นที่อยู่ของข้อมูล และความเสี่ยงจากการเปลี่ยนแปลงโมเดล (ผู้ให้บริการสามารถปรับปรุงโมเดลได้อย่างเงียบ ๆ) ข้อตกลงระดับองค์กรและการติดตั้งแบบส่วนตัวช่วยบรรเทาความเสี่ยงเหล่านี้ได้บางส่วน
 
-Los futuros avances de la IA generativa podrían conducir a interacciones más personalizadas y atractivas con la tecnología, creando experiencias adaptadas a las preferencias y necesidades individuales. Sin embargo, este futuro está condicionado por nuestra capacidad para navegar los desafíos éticos y desarrollar la IA de manera responsable y controlada.
+**การมีส่วนร่วมกับหน่วยงานกำกับดูแล** FCA, PRA, ECB และ FINRA ต่างออกเอกสารหรือกล่าวสุนทรพจน์เกี่ยวกับธรรมาภิบาล AI ในปี 2023 สารที่สอดคล้องกันคือ กรอบความเสี่ยงของโมเดลที่มีอยู่ใช้ได้กับ AI และบริษัทควรจัดทำเอกสารแนวทางธรรมาภิบาลของตนเชิงรุกก่อนที่จะมีแนวทางอย่างเป็นทางการ
 
-## Incentivos
+## คำถามที่พบบ่อย
 
-### Las fuerzas motrices detrás del desarrollo de la IA generativa
+**อะไรคือความแตกต่างระหว่างโมเดลภาษาขนาดใหญ่กับ foundation model?**
 
-#### Incentivos económicos
+โมเดลภาษาขนาดใหญ่ (LLM) คือโมเดลที่ฝึกด้วยข้อมูลข้อความจำนวนมากเพื่อทำนายและสร้างภาษา ส่วน foundation model เป็นคำที่กว้างกว่า หมายถึงโมเดลที่ผ่านการฝึกล่วงหน้าขนาดใหญ่ใด ๆ ที่สามารถปรับ (ด้วยการปรับจูนหรือพรอมป์) ให้ทำงานปลายทางได้หลายอย่าง รวมถึง LLM แต่ยังรวมถึงโมเดลด้านภาพ โมเดลด้านโค้ด และโมเดลหลายรูปแบบด้วย GPT-4 เป็นทั้ง LLM และ foundation model ส่วน DALL-E 3 เป็น foundation model แต่ไม่ใช่ LLM ในทางปฏิบัติ คำเหล่านี้มักถูกใช้แทนกันเมื่อกล่าวถึงระบบสร้างข้อความ
 
-El desarrollo de la IA generativa está impulsado en gran parte por los incentivos económicos. Las empresas siempre buscan formas de mejorar la eficiencia y reducir los costes, y la IA ofrece ambas. Con su capacidad para automatizar tareas complejas y generar soluciones creativas, la IA generativa puede producir importantes ahorros de coste e impulsos de productividad.
+**retrieval-augmented generation คืออะไร และเหตุใดจึงสำคัญต่อบริการทางการเงิน?**
 
-El contenido generado por IA puede adaptarse a distintos públicos en marketing, desarrollo de software y más. Esto puede reducir el tiempo y el coste de comercialización de nuevo software.
+RAG ผสานโมเดลภาษาเข้ากับระบบค้นคืน แทนที่จะพึ่งพาความรู้เชิงพารามิเตอร์ของโมเดลเพียงอย่างเดียว (สิ่งที่เรียนรู้ระหว่างการฝึก) RAG ดึงเอกสารที่เกี่ยวข้องมา ณ เวลาอนุมานและป้อนเป็นบริบท วิธีนี้ช่วยลดการหลอนในงานข้อเท็จจริงได้อย่างมีนัยสำคัญ เพราะโมเดลกำลังสังเคราะห์ข้อความที่ได้รับมามากกว่าจะเรียกคืนข้อเท็จจริงที่เรียนรู้ไว้ สำหรับบริการทางการเงิน RAG รองรับกรณีใช้งานอย่างการเฝ้าติดตามการเปลี่ยนแปลงกฎเกณฑ์ (ค้นคืนกฎปัจจุบันเสมอ) และการตรวจทานสัญญา (ยึดโมเดลไว้กับข้อความสัญญาจริง) ซึ่งจะมีความเสี่ยงการหลอนสูงเกินไปหากใช้แนวทางการสร้างล้วน
 
-#### Innovación y competencia
+**สถาบันการเงินควรรับมือกับ EU AI Act อย่างไรในความสัมพันธ์กับการนำ Generative AI ไปใช้ในปี 2023?**
 
-El campo de la IA generativa también es impulsado por el deseo de innovar y ganar ventaja competitiva. A medida que la tecnología IA se convierte en un diferenciador crucial, las empresas invierten masivamente en I+D. Esta dinámica competitiva estimula mejoras continuas de las capacidades de IA, conduciendo a sistemas más avanzados y capaces.
+EU AI Act ยังอยู่ในกระบวนการนิติบัญญัติในปี 2023 (ผ่านโดยรัฐสภายุโรปในเดือนมีนาคม 2024 และมีผลบังคับใช้ในเดือนสิงหาคม 2024) อย่างไรก็ตาม สถาบันที่มีการดำเนินงานในสหภาพยุโรปหรือมีลูกค้าในสหภาพยุโรปได้เริ่มประเมินกระบวนการของตนแล้ว ระบบ AI ความเสี่ยงสูงในการให้คะแนนสินเชื่อ การตัดสินใจด้านการจ้างงาน และโครงสร้างพื้นฐานสำคัญ ต้องผ่านการประเมินความสอดคล้อง กลไกการกำกับดูแลโดยมนุษย์ และบันทึกการตรวจสอบ โมเดล AI เอนกประสงค์ (GPAI) ซึ่งรวมถึง foundation model อย่าง GPT-4 มีข้อกำหนดในระดับของตนเองเกี่ยวกับความโปร่งใสและความเสี่ยงเชิงระบบ บริษัทที่เริ่มงานด้านเอกสารและธรรมาภิบาลในปี 2023 อยู่ในตำแหน่งที่พร้อมกว่าสำหรับกำหนดเส้นตายการบังคับใช้
 
-La carrera por la supremacía en IA no se juega solo entre empresas sino también entre naciones, que ven el liderazgo en tecnología IA como una ventaja estratégica.
+**อะไรคือความแตกต่างในทางปฏิบัติระหว่างการปรับจูน (fine-tuning) กับวิศวกรรมพรอมป์ (prompt engineering) สำหรับการนำ LLM ไปใช้ในองค์กร?**
 
-#### Beneficios sociales
+การปรับจูนปรับเปลี่ยนน้ำหนักของโมเดลด้วยการฝึกต่อเนื่องบนข้อมูลเฉพาะโดเมน เป็นการสอนความรู้และรูปแบบพฤติกรรมใหม่ให้โมเดล ต้องใช้ข้อมูลฝึกที่มีป้ายกำกับ งบประมาณการคำนวณ และการดูแลรักษาต่อเนื่องเมื่อโมเดลฐานได้รับการปรับปรุง ส่วนวิศวกรรมพรอมป์ (รวมถึงตัวอย่างแบบ few-shot และ system prompt) กำหนดพฤติกรรม ณ เวลาอนุมานโดยไม่เปลี่ยนน้ำหนัก ทำและปรับปรุงได้เร็วกว่า แต่ถูกจำกัดด้วยสิ่งที่โมเดลฐานรู้อยู่แล้ว สำหรับการนำไปใช้ในบริการทางการเงินส่วนใหญ่ในปี 2023 RAG ร่วมกับวิศวกรรมพรอมป์เป็นจุดเริ่มต้นที่นิยม ส่วนการปรับจูนถูกสงวนไว้สำหรับกรณีที่โมเดลต้องเรียนรู้คำศัพท์เฉพาะขององค์กรหรือต้องใช้รูปแบบผลลัพธ์ที่เข้มงวด
 
-Más allá de las ventajas económicas y competitivas, existen poderosos incentivos sociales que motivan el desarrollo de la IA generativa. Esta tecnología tiene el potencial de abordar algunos de los desafíos más apremiantes a los que se enfrenta el mundo hoy: desde el cambio climático hasta la salud.
+## เอกสารอ้างอิง
 
-La IA generativa podría, por ejemplo, modelizar los sistemas climáticos para anticipar los cambios y ofrecer soluciones, o ayudar al descubrimiento de medicamentos prediciendo las interacciones entre moléculas.
-
-## Conclusión
-
-### Abrazar el futuro de la IA generativa
-
-En el umbral de una nueva era tecnológica, la IA generativa se alza como un faro de innovación, imitando el ingenio de la mente. Desde sus humildes comienzos hasta los algoritmos sofisticados actuales, la IA generativa ha trascendido su rol de herramienta.
-
-Los cambios que la IA generativa aporta a lo que las máquinas pueden hacer y a cómo las utilizamos tienen un gran impacto en sectores como la tecnología y el derecho. Las ondas de este impacto se extienden más allá de las ganancias económicas y las ventajas competitivas; alcanzan al tejido mismo del avance social y de las consideraciones éticas.
-
-Los incentivos que motivan el desarrollo de la IA generativa dibujan el cuadro de un futuro lleno de potencial. Pero con un gran poder viene el imperativo de una administración responsable. A medida que aprovechamos esta tecnología para resolver problemas complejos e inspirar una creatividad sin precedentes, también debemos navegar los paisajes morales que desvela.
-
-La IA generativa sostiene un espejo frente a nuestra conciencia colectiva, retándonos a reflexionar sobre el tipo de futuro que deseamos crear. No se trata solo de lo que la IA puede hacer por nosotros, sino de lo que aspiramos a lograr con la IA como compañera. En esta alianza reside el potencial de una sinergia que podría elevar a la humanidad a nuevas cumbres.
-
-Avancemos: abracemos la IA generativa con una perspectiva equilibrada, aprovechando sus capacidades con prudencia y clarividencia. Al hacerlo, podemos garantizar que esta tecnología notable sirva como piedra angular de un mañana inclusivo, progresista e iluminado.
-
-### Navegar la vanguardia: últimos avances en IA generativa
-
-El campo de la IA generativa evoluciona constantemente, con nuevos avances emergiendo a un ritmo rápido. He aquí algunos de los últimos hitos que configuran el futuro de esta tecnología transformadora:
-
-#### 1. GPT-4 y más allá: liberar la potencia de los grandes modelos de lenguaje
-
-El desarrollo de los grandes modelos de lenguaje (LLM) ha sido un motor principal de la innovación en IA generativa. GPT-4, la última iteración del LLM revolucionario de OpenAI, ha demostrado capacidades notables: generación de texto de calidad humana, traducción de idiomas y escritura de contenido creativo. Otros LLM, como Meena y LaMDA de Google AI, también empujan los límites de lo posible con la IA generativa.
-
-#### 2. Generative Adversarial Networks (GANs): refinar creatividad y realismo
-
-Las GAN se han convertido en una herramienta poderosa para generar contenido realista y creativo. Estos modelos están compuestos por dos redes neuronales que se enfrentan, resultando en la creación de imágenes, vídeos y audio cada vez más sofisticados. Las GAN se han utilizado para generar arte, diseñar moda e incluso crear deepfakes.
-
-#### 3. Autoencoders y modelos de difusión: desvelar patrones y estructuras ocultos
-
-Los autoencoders y los modelos de difusión son dos técnicas emergentes que están ganando terreno en IA generativa. Los autoencoders aprenden a comprimir y reconstruir los datos, permitiéndoles identificar patrones y estructuras subyacentes. Los modelos de difusión, por su parte, parten de una representación ruidosa de los datos y la refinan progresivamente para producir una salida de alta calidad.
-
-#### 4. IA generativa multimodal: salvar el abismo entre los sentidos
-
-La IA generativa multimodal aspira a salvar el abismo entre los distintos sentidos: vista, sonido, texto. Esta tecnología tiene el potencial de crear experiencias inmersivas que desdibujan las fronteras entre los mundos digital y físico. Por ejemplo, modelos generativos multimodales podrían generar música que se corresponda con una imagen específica o crear un entorno virtual que responda a comandos en lenguaje natural.
-
-#### 5. IA explicable: desentrañar la caja negra
-
-A medida que los modelos de IA generativa se vuelven cada vez más complejos, existe una necesidad creciente de técnicas de IA explicable (XAI). La XAI ayuda a explicar cómo estos modelos toman sus decisiones, proporcionando transparencia y rendición de cuentas. Esto es crucial para construir confianza en la IA generativa y garantizar que se utilice de manera responsable y ética.
-
-Estos avances no representan más que una panorámica del paisaje en constante evolución de la IA generativa. A medida que la investigación continúa y la potencia de cálculo aumenta, podemos esperar desarrollos aún más revolucionarios que configurarán aún más el futuro de esta tecnología transformadora.
-
-### La promesa de la IA de código abierto: alimentar la innovación y configurar un futuro más luminoso
-
-El movimiento de la IA de código abierto ha experimentado un enorme crecimiento en los últimos años. Numerosos proyectos e iniciativas aprovechan las tecnologías IA de vanguardia, antaño disponibles solo para las grandes empresas e instituciones de investigación. Ahora, cualquiera puede acceder a este campo y contribuir a él.
-
-Este movimiento ha sido una fuerza motriz detrás de los notables progresos en IA generativa, bajando las barreras de acceso y alimentando la colaboración entre investigadores y desarrolladores. Esta sinergia les ha permitido emprender proyectos revolucionarios, creando herramientas y frameworks potentes que están redefiniendo el futuro de la tecnología IA generativa.
-
-El desarrollo de los grandes modelos de lenguaje, como GPT-3 y LaMDA, testimonia la potencia de la IA de código abierto. Estos modelos han demostrado capacidades excepcionales para generar texto de calidad humana, traducir idiomas y dar forma a un contenido creativo diverso. Su disponibilidad ha alimentado la innovación en diversos campos: desde la escritura creativa y el marketing hasta la educación y la sanidad.
-
-La IA de código abierto también desempeña un papel pivote en el avance de otras tecnologías de IA, entre ellas el procesamiento del lenguaje natural (NLP), la visión por ordenador y la robótica. Estos avances anuncian un futuro en el que la IA es más accesible, adaptable e integrada de manera fluida en nuestras vidas cotidianas.
-
-El futuro prometedor de la IA de código abierto depende de su capacidad para favorecer la colaboración, la transparencia y la innovación acelerada. Al compartir abiertamente conocimientos y recursos, investigadores y desarrolladores pueden unir sus esfuerzos para afrontar desafíos complejos y hacer progresar el campo de la IA. La IA de código abierto aporta transparencia y facilita la revisión pública y las consideraciones éticas, garantizando el uso responsable de esta tecnología en beneficio de la sociedad.
-
-A medida que la IA de código abierto continúa evolucionando, tiene el potencial de revolucionar las industrias y transformar nuestro mundo. La IA de código abierto es clave para un futuro en el que la tecnología ayude a la humanidad y beneficie a todos. Esto viene de la educación y la sanidad personalizadas, de la expresión creativa y del descubrimiento científico.
-
-![divider][divider].class=\"m-10 w-100\"
-
-En conclusión, espero que este artículo haya despertado su interés por el apasionante mundo de la IA generativa. Si desea sumergirse más profundamente en esta tecnología transformadora o tiene preguntas, no dude en contactarme en [LinkedIn ⧉][LinkedIn] o a través de la [página de contacto][contact].
-
-Gracias de nuevo por su tiempo, espero tener noticias suyas.
-
-[contact]: /contact/index.html "Contact"
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-[linkedin]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
+- Vaswani, A., et al., (2017). [Attention Is All You Need ⧉](https://arxiv.org/abs/1706.03762 "Attention Is All You Need").
+- OpenAI, (2023). [GPT-4 Technical Report ⧉](https://arxiv.org/abs/2303.08774 "GPT-4 Technical Report").
+- Touvron, H., et al., Meta AI, (2023). [Llama 2: Open Foundation and Fine-Tuned Chat Models ⧉](https://arxiv.org/abs/2307.09288 "Llama 2").
+- Jiang, A., et al., Mistral AI, (2023). [Mistral 7B ⧉](https://arxiv.org/abs/2310.06825 "Mistral 7B").

@@ -1,59 +1,55 @@
 ---
-title: "El AI Act de la UE: pionero de la regulación ética de la IA en el mundo"
-subtitle: "Navegar el futuro de la IA con el marco jurídico revolucionario de la UE"
-description: "El AI Act de la UE establece el primer marco completo de regulación ética y por riesgo de la IA en el mundo. Lo que cambia para los bancos, los proveedores y los sistemas de alto riesgo."
+title: "Akt EU o AI: etická regulace umělé inteligence v celosvětovém měřítku"
+subtitle: "Orientace v budoucnosti AI s přelomovým právním rámcem EU"
+description: "Akt EU o AI stanovuje první komplexní rámec pro etickou, rizikově odstupňovanou regulaci AI ve světě. Co se mění pro banky, dodavatele a vysoce rizikové systémy."
 date: "February 13, 2024"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp"
-banner_alt: "Persona sentada en un banco negro, leyendo un periódico"
-keywords: "AI Act UE, regulación de la inteligencia artificial, marco ético IA, gestión de riesgos IA, innovación IA, transparencia IA, derechos de los consumidores, gobernanza IA, estándares IA, ética IA"
+banner_alt: "Osoba sedící na černé lavičce a čtoucí noviny"
+keywords: "Akt EU o AI, regulace umělé inteligence, rámec etické AI, řízení rizik AI, inovace v AI, transparentnost AI, práva spotřebitelů v oblasti AI, správa AI, standardy AI, etika AI"
 ---
 
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+## Akt EU o umělé inteligenci: utváření budoucnosti celosvětové regulace AI
 
-**Klíčové body**
+[**Akt Evropské unie o umělé inteligenci (AI Act) ⧉**][00] je komplexní regulační rámec, jehož cílem je zajistit etický, transparentní a bezpečný vývoj a používání AI v celé Evropské unii. Zavádí přístup k regulaci AI založený na riziku, který klasifikuje systémy AI podle jejich potenciálního dopadu na společnost a ukládá přísné požadavky na vysoce rizikové aplikace. Tato právní úprava má chránit základní práva a podporovat inovace a vytváří precedens pro celosvětovou správu AI.
 
-## El AI Act de la UE: configurar el futuro de la regulación mundial de la IA
+Akt Evropské unie o umělé inteligenci představuje významný krok v celosvětové diskusi o regulaci AI. S tím, jak digitální technologie stále více pronikají do všech oblastí našeho života, je potřeba právního rámce zajišťujícího etické nasazení technologií AI naléhavější než kdykoli dříve. Akt EU o AI tuto potřebu nejen řeší, ale zároveň staví EU do role lídra celosvětového úsilí o utváření vývoje AI v etickém rámci zaměřeném na člověka.
 
-El [**Artificial Intelligence Act (AI Act) de la Unión Europea ⧉**][00] es un marco normativo completo concebido para garantizar un desarrollo y uso éticos, transparentes y seguros de la IA en toda la Unión. Introduce un enfoque basado en el riesgo, clasificando los sistemas de IA según su impacto potencial sobre la sociedad e imponiendo exigencias estrictas a las aplicaciones de alto riesgo. Esta legislación aspira a proteger los derechos fundamentales y a promover la innovación, fijando un precedente para la gobernanza mundial de la IA.
+## Klíčové aspekty aktu o AI
 
-El Artificial Intelligence Act de la Unión Europea marca una etapa significativa en el discurso global sobre la regulación de la IA. A medida que las tecnologías digitales permean cada aspecto de nuestras vidas, la necesidad de un marco jurídico que garantice un despliegue ético de las tecnologías de IA nunca ha sido tan crítica. El AI Act de la UE responde a esta necesidad y posiciona a la UE como líder del esfuerzo global para configurar el desarrollo de la IA dentro de un marco ético y centrado en lo humano.
+### Zakázané praktiky a vysoce rizikové aplikace
 
-## Aspectos clave del AI Act
+Akt o AI je v jádru koncipován tak, aby chránil občany EU před možnými škodami způsobenými AI, a zakazuje praktiky považované za nepřijatelné, například manipulativní AI, která zneužívá zranitelnosti, nebo systémy umožňující „sociální skórování“ jednotlivců. Vysoce rizikové aplikace, včetně těch v kritické infrastruktuře, vzdělávání, zaměstnávání a vymáhání práva, budou muset splnit přísné požadavky na zajištění bezpečnosti, transparentnosti a odpovědnosti.
 
-### Prácticas prohibidas y aplicaciones de alto riesgo
+### Podpora inovací a gramotnosti v oblasti AI
 
-En su núcleo, el AI Act está diseñado para proteger a los ciudadanos de la UE de los perjuicios potenciales de la IA, prohibiendo prácticas consideradas inaceptables: IA manipuladora que explote vulnerabilidades, o sistemas que autoricen el «social scoring» de los individuos. Las aplicaciones de alto riesgo, incluidas las relativas a infraestructuras críticas, educación, empleo y aplicación de la ley, afrontarán exigencias estrictas que garanticen seguridad, transparencia y rendición de cuentas.
+Vedle regulace vysoce rizikových aplikací akt rovněž podporuje inovace, zejména mezi malými a středními podniky a startupy, a to podporou vývoje bezpečné a důvěryhodné AI. Klade důraz na gramotnost v oblasti AI a vyžaduje, aby poskytovatelé a zavádějící subjekty zajistili, že jejich zaměstnanci jsou náležitě vyškoleni a obeznámeni s etickými a provozními aspekty AI.
 
-### Estimular la innovación y la cultura IA
+### Celosvětové dopady: stanovení standardu
 
-Aunque regule las aplicaciones de alto riesgo, el Act también promueve la innovación, en particular entre pymes y startups, apoyando el desarrollo de una IA segura y digna de confianza. Hace hincapié en la cultura IA, exigiendo a proveedores y desplegadores que se aseguren de que su personal esté adecuadamente formado y consciente de los aspectos éticos y operativos de la IA.
+Komplexní a diferencovaný přístup aktu o AI by mohl posloužit jako vzor pro regulaci AI po celém světě, podobně jako se GDPR stalo celosvětovým měřítkem pro ochranu osobních údajů. Důraz na přístup založený na riziku spolu s přísnou ochranou základních práv staví EU do čela etické správy AI.
 
-### Implicaciones mundiales: fijar un estándar
+### Transparentnost a práva spotřebitelů
 
-El enfoque completo y matizado del AI Act podría servir de modelo para la regulación mundial de la IA, a imagen del RGPD que se convirtió en referencia mundial en confidencialidad de los datos. Su énfasis en un enfoque basado en el riesgo, combinado con protecciones estrictas para los derechos fundamentales, posiciona a la UE en la vanguardia de la gobernanza IA ética.
+Akt o AI klade důraz na transparentnost a ochranu spotřebitele a vyžaduje jasné informování v případech, kdy jednotlivci komunikují s AI, zejména s generativní AI, která vytváří nebo upravuje obsah. Zakotvuje právo podat stížnost a získat vysvětlení rozhodnutí vysoce rizikových systémů AI, čímž posiluje práva spotřebitelů v digitálním věku.
 
-### Transparencia y derechos de los consumidores
+### Vymáhání a sankce
 
-Poniendo el énfasis en la transparencia y la protección de los consumidores, el AI Act impone divulgaciones claras cuando los individuos interactúan con la IA, en particular con la IA generativa que produce o manipula contenido. Consagra el derecho a presentar reclamaciones y a obtener explicaciones sobre las decisiones de los sistemas de IA de alto riesgo, reforzando los derechos de los consumidores en la era digital.
+S pokutami až do výše 35 milionů eur nebo 7 % celosvětového obratu za závažná porušení je mechanismus vymáhání aktu o AI robustní. To odráží odhodlání EU zajistit dodržování pravidel a zdůrazňuje význam etického a odpovědného používání AI.
 
-### Aplicación y sanciones
+### Celosvětové dopady a vedoucí role
 
-Con multas de hasta 35 millones de euros o el 7 % de la facturación mundial por las infracciones graves, el mecanismo de aplicación del AI Act es robusto. Esto refleja la determinación de la UE de garantizar el cumplimiento, subrayando la importancia de un uso ético y responsable de la IA.
-
-### Implicaciones globales y liderazgo
-
-El AI Act de la UE podría servir de modelo para la regulación global de la IA, recordando el impacto del RGPD sobre la confidencialidad de los datos. Su enfoque de categorización por el riesgo puede animar esfuerzos legislativos similares en todo el mundo, promoviendo una estrategia unificada de gobernanza IA que equilibre el avance tecnológico y las consideraciones éticas.
+Akt EU o AI by mohl posloužit jako vzor pro celosvětovou regulaci AI, což připomíná dopad GDPR na ochranu osobních údajů. Jeho přístup ke kategorizaci podle rizika může podnítit obdobné legislativní úsilí po celém světě a podpořit jednotnou strategii správy AI, která vyvažuje technologický pokrok s etickými ohledy.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Conclusión
+## Závěr
 
-El Artificial Intelligence Act de la UE representa una etapa crítica para navegar el terreno complejo de la regulación de IA. Estableciendo reglas claras para las aplicaciones de IA, el Act aspira a proteger los derechos y la seguridad de los ciudadanos a la vez que crea un entorno propicio a la innovación. Como primera ley IA completa promulgada por un regulador principal, fija un precedente susceptible de configurar el futuro de la gobernanza global de la IA, abogando por un enfoque equilibrado que defienda el progreso tecnológico junto con la integridad ética.
+Akt EU o umělé inteligenci představuje zásadní krok v orientaci ve složitém terénu regulace AI. Stanovením jasných pravidel pro aplikace AI má akt chránit práva a bezpečnost občanů a zároveň vytvářet prostředí příznivé pro inovace. Jako první komplexní zákon o AI od významného regulátora vytváří precedens, který by mohl utvářet budoucnost celosvětové správy AI, a prosazuje vyvážený přístup, jenž podporuje technologický pokrok spolu s etickou integritou.
 
 ![divider][divider].class=\"m-10 w-100\"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-[00]: https://www.europarl.europa.eu/news/en/press-room/20240212IPR17618/artificial-intelligence-act-committees-confirm-landmark-agreement "AI Act: committees confirm landmark agreement"
+[00]: https://www.europarl.europa.eu/news/en/press-room/20240212IPR17618/artificial-intelligence-act-committees-confirm-landmark-agreement "Akt o AI: výbory potvrzují přelomovou dohodu"

@@ -1,63 +1,68 @@
 ---
-title: "Criptografía sobre retículos: un bug en el ataque LWE de Chen"
-subtitle: "La revisión por pares revela un fallo en el trabajo revolucionario de Chen"
-description: "Un bug en el algoritmo cuántico LWE de Yilei Chen ofrece un respiro temporal a la criptografía sobre retículos. Lo que esto significa para CRYSTALS-Kyber, Dilithium y la hoja de ruta PQC."
+title: "Kvantová mřížková kryptografie: chyba v Chenově útoku na LWE"
+subtitle: "Odborná recenze odhalila chybu v Chenově průlomové práci"
+description: "Chyba v kvantovém algoritmu LWE Yileie Chena dočasně poskytuje odklad mřížkové kryptografii. Co to znamená pro CRYSTALS-Kyber, Dilithium a plán PQC."
 date: "April 22, 2024"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
-banner_alt: "Imagen generada con MidJourney: una red de nodos digitales en tonos rojos y azules."
-keywords: "criptografía postcuántica, NIST, estandarización PQC, Yilei Chen, algoritmo cuántico, criptografía sobre retículos, problema LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, criptografía resistente a lo cuántico"
+banner_alt: "Obrázek vygenerovaný pomocí MidJourney - síť digitálních uzlů v červených a modrých odstínech."
+keywords: "postkvantová kryptografie, NIST, standardizace PQC, Yilei Chen, kvantový algoritmus, mřížková kryptografie, problém LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, kvantově odolná kryptografie"
 ---
 
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+> **TL;DR.** Chyba v kvantovém algoritmu LWE Yileie Chena dočasně poskytuje odklad mřížkové kryptografii. Co to znamená pro CRYSTALS-Kyber, Dilithium a plán PQC.
 
 **Klíčové body**
 
-## El enigma cuántico: reevaluación de la estandarización NIST de criptografía postcuántica a la luz del algoritmo de Yilei Chen
+- **Kvantové dilema: přehodnocení standardizace postkvantové kryptografie NIST ve světle algoritmu Yileie Chena.** Navazuji na svůj nedávný článek o výzvách kvantových algoritmů pro mřížkovou kryptografii a předkládám aktualizaci k nejnovějšímu vývoji ve výzkumu Yileie Chena.
+- **Chyba v Chenově kvantovém algoritmu.** Chyba byla nalezena v kroku 9 Chenova algoritmu a autor uvedl, že neví, jak ji opravit.
+- **Důsledky pro proces standardizace postkvantové kryptografie NIST.** Chenův výzkum nepřímo vyvolal obavy a pochybnosti o procesu standardizace postkvantové kryptografie (PQC) NIST a o výběru kvantově odolných kryptografických algoritmů.
+- **Budoucnost postkvantové kryptografie.** Objev chyby v Chenově algoritmu zdůrazňuje zásadní roli odborné recenze ve vědeckém procesu.
 
-A raíz de mi reciente artículo sobre los [desafíos de los algoritmos cuánticos para la criptografía sobre retículos][00], debo aportar una actualización sobre los últimos desarrollos relativos a [la investigación de Yilei Chen ⧉][01].
+## Kvantové dilema: přehodnocení standardizace postkvantové kryptografie NIST ve světle algoritmu Yileie Chena
 
-En un giro inesperado, Yilei Chen, profesor adjunto en el Institute for Interdisciplinary Information Science (IIIS) de la Universidad Tsinghua, ha informado de que sus colegas Hongxun Wu y Thomas Vidick han descubierto independientemente un bug en su algoritmo cuántico en tiempo polinómico diseñado para resolver el problema Learning with Errors (LWE).
+Navazuji na svůj nedávný článek o [výzvách kvantových algoritmů pro mřížkovou kryptografii][00] a považuji za nutné poskytnout aktualizaci k nejnovějšímu vývoji ve [výzkumu Yileie Chena ⧉][01].
 
-Este bug vuelve inoperante al algoritmo, y Chen ha reconocido que su enfoque no se sostiene como reivindicó inicialmente.
+Nečekaným vývojem oznámil Yilei Chen, odborný asistent na Institute for Interdisciplinary Information Science (IIIS) univerzity Tsinghua, že jeho kolegové Hongxun Wu a Thomas Vidick nezávisle na sobě objevili chybu v jeho kvantovém algoritmu s polynomiálním časem, který byl navržen k řešení problému Learning with Errors (LWE).
 
-## El bug en el algoritmo cuántico de Chen
+Tato chyba činí algoritmus nefunkčním a Chen připustil, že jeho přístup neobstojí tak, jak původně tvrdil.
 
-El bug se ha encontrado en el paso 9 del algoritmo de Chen, y este ha declarado no saber cómo corregirlo. Este descubrimiento es un alivio para la comunidad criptográfica, ya que confirma que el problema LWE, componente crítico de los métodos de protección en criptografía postcuántica, sigue siendo seguro.
+## Chyba v Chenově kvantovém algoritmu
 
-El artículo de Chen también examinaba otros problemas complejos sobre retículos, como el decisional shortest vector problem (GapSVP) y el shortest independent vector problem (SIVP), en factores de aproximación polinómicos. Aunque el bug en su algoritmo no afecta directamente a estos problemas, suscita interrogantes sobre la robustez de los algoritmos cuánticos contra la criptografía sobre retículos.
+Chyba byla nalezena v kroku 9 Chenova algoritmu a autor uvedl, že neví, jak ji opravit. Tento objev je pro kryptografickou komunitu úlevou, protože potvrzuje, že problém LWE, zásadní součást ochranných metod postkvantové kryptografie, zůstává bezpečný.
 
-Pero según [la página de Nigel Smart ⧉][02], el ataque cuántico propuesto contra LWE es defectuoso y no compromete los esquemas de criptografía sobre retículos como [Kyber ⧉][04], [Dilithium ⧉][05], [BGV ⧉][06] o [TFHE ⧉][07].
+Chenova práce zkoumala i další složité mřížkové problémy, jako je decisional shortest vector problem (GapSVP) a shortest independent vector problem (SIVP), v rámci polynomiálních aproximačních faktorů. Ačkoli chyba v jeho algoritmu tyto problémy přímo neovlivňuje, vyvolává otázky ohledně robustnosti kvantových algoritmů pro mřížkovou kryptografii.
 
-## Implicaciones para el proceso de estandarización NIST de criptografía postcuántica
+Podle [stránky Nigela Smarta ⧉][02] je však navrhovaný kvantový útok na LWE chybný a neohrožuje mřížková kryptografická schémata jako [Kyber ⧉][04], [Dilithium ⧉][05], [BGV ⧉][06] nebo [TFHE ⧉][07].
 
-La investigación de Chen ha suscitado indirectamente preocupaciones y dudas sobre el [proceso de estandarización NIST de criptografía postcuántica (PQC) ⧉][03] y la selección de los algoritmos criptográficos resistentes a lo cuántico.
+## Důsledky pro proces standardizace postkvantové kryptografie NIST
 
-Los esquemas [CRYSTALS-KYBER](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) y CRYSTALS-Dilithium, entre los finalistas del proceso de estandarización NIST PQC, son ejemplos de esquemas criptográficos sobre retículos que han sido rigurosamente probados y evaluados por su resistencia cuántica. Sin embargo, es crucial continuar probando y refinando estos esquemas para garantizar su seguridad y viabilidad a largo plazo.
+Chenův výzkum nepřímo vyvolal obavy a pochybnosti o [procesu standardizace postkvantové kryptografie (PQC) NIST ⧉][03] a o výběru kvantově odolných kryptografických algoritmů.
 
-El NIST, la comunidad criptográfica y las empresas deben permanecer vigilantes y continuar explorando fundamentos matemáticos alternativos para la criptografía postcuántica, con el fin de garantizar que un conjunto robusto y diverso de opciones de seguridad resistente a lo cuántico esté en su sitio.
+Schémata [CRYSTALS-KYBER](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) a CRYSTALS-Dilithium, která patří mezi finalisty procesu standardizace NIST PQC, jsou příklady mřížkových kryptografických schémat, jež byla důkladně testována a hodnocena z hlediska kvantové odolnosti. Je však zásadní tato schémata dále testovat a zdokonalovat, aby byla zajištěna jejich dlouhodobá bezpečnost a životaschopnost.
 
-## El futuro de la criptografía postcuántica
+NIST, kryptografická komunita i firmy musí zůstat ostražití a nadále zkoumat alternativní matematické základy postkvantové kryptografie, aby byla k dispozici robustní a rozmanitá sada možností pro kvantově odolnou bezpečnost.
 
-El descubrimiento del bug en el algoritmo de Chen subraya el papel crítico de la revisión por pares en el proceso científico. También pone de manifiesto la necesidad de revisión instantánea, retroalimentación y debate.
+## Budoucnost postkvantové kryptografie
 
-La era cuántica ha comenzado, y la necesidad de desarrollar métodos criptográficos resistentes a lo cuántico exige medidas cooperativas a escala mundial para garantizar la seguridad de nuestra infraestructura digital frente a las crecientes capacidades de la computación cuántica y a la carrera por la supremacía cuántica.
+Objev chyby v Chenově algoritmu zdůrazňuje zásadní roli odborné recenze ve vědeckém procesu. Poukazuje také na potřebu okamžité recenze, zpětné vazby a diskuse.
 
-El proceso de estandarización NIST PQC es una etapa significativa en esta dirección, pero es solo un comienzo. El bug en el algoritmo de Chen es un recordatorio brutal de los desafíos e incertidumbres por venir, pero también sirve como llamada a la acción para que la comunidad criptográfica redoble sus esfuerzos y amplíe las fronteras de lo posible.
+Kvantová éra začala a potřeba vyvíjet kvantově odolné kryptografické metody vyžaduje koordinovaná opatření na celosvětové úrovni, aby byla zajištěna bezpečnost naší digitální infrastruktury tváří v tvář rostoucím možnostem kvantových počítačů a závodu o kvantovou nadřazenost.
 
-Es un desarrollo fascinante en el campo de la criptografía postcuántica, y será interesante ver cómo evoluciona el proceso de estandarización NIST PQC en respuesta a esta nueva información.
+Proces standardizace NIST PQC je významným krokem tímto směrem, ale je teprve začátkem. Chyba v Chenově algoritmu je ostrým připomenutím výzev a nejistot, které nás čekají, zároveň však slouží jako výzva k akci, aby kryptografická komunita zdvojnásobila své úsilí a posunula hranice možného.
 
-## Conclusión
+Jde o pozoruhodný vývoj v oblasti postkvantové kryptografie a bude zajímavé sledovat, jak se proces standardizace NIST PQC v reakci na tyto nové informace vyvine.
 
-El bug descubierto en el algoritmo cuántico de Yilei Chen para resolver el problema LWE atestigua la importancia de una revisión por pares rigurosa y de la colaboración en el desarrollo de la criptografía resistente a lo cuántico.
+## Závěr
 
-Aunque el bug ofrece un respiro temporal a la seguridad de los esquemas criptográficos sobre retículos, también recuerda la necesidad continuada de investigación y desarrollo en el campo de la criptografía postcuántica.
+Chyba objevená v kvantovém algoritmu Yileie Chena pro řešení problému LWE dokládá důležitost důkladné odborné recenze a spolupráce při vývoji kvantově odolné kryptografie.
 
-Mientras el NIST prosigue su proceso de estandarización PQC, la comunidad criptográfica debe permanecer proactiva y adaptativa, abrazando las nuevas ideas y enfoques para garantizar la seguridad a largo plazo de nuestro mundo digital frente a las crecientes capacidades de la computación cuántica.
+Ačkoli chyba poskytuje dočasnou úlevu bezpečnosti mřížkových kryptografických schémat, zároveň připomíná trvalou potřebu výzkumu a vývoje v oblasti postkvantové kryptografie.
 
-## Referencias
+Zatímco NIST pokračuje v procesu standardizace PQC, kryptografická komunita musí zůstat proaktivní a přizpůsobivá a přijímat nové myšlenky a přístupy, aby byla zajištěna dlouhodobá bezpečnost našeho digitálního světa tváří v tvář rostoucím možnostem kvantových počítačů.
+
+## Reference
 
 - Sebastien Rousseau, (2024). [Quantum Algorithm Challenges Lattice-Based Cryptography][00].
 - Chen, Y. (2024). [Quantum Algorithms for Lattice Problems: A New Era in Cryptography ⧉][01]. Journal of Quantum Computing and Cryptography, 7(4), 112-135.

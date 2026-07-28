@@ -1,64 +1,60 @@
 ---
-title: "Reconocimiento de voz en tiempo real rápido en macOS: OpenAI Whisper"
-subtitle: "Liberar la potencia de la transcripción IA y GPU en su Mac"
-description: "Cómo OpenAI Whisper y Metal Performance Shaders transforman el reconocimiento de voz en tiempo real en macOS, con velocidad y precisión inigualadas."
+title: "การรู้จำเสียงพูดแบบเรียลไทม์ที่รวดเร็วบน macOS: OpenAI Whisper"
+subtitle: "การแปลงเสียงเป็นข้อความที่ขับเคลื่อนด้วย AI และเร่งความเร็วด้วย GPU บน Mac ของคุณ"
+description: "สำรวจวิธีที่ OpenAI Whisper และ Metal Performance Shaders เปลี่ยนแปลงการรู้จำเสียงพูดแบบเรียลไทม์บน macOS พร้อมมอบความเร็วและความแม่นยำในระดับสูง"
 date: "March 12, 2024"
 language: "th-TH"
 locale: "th_TH"
 banner: "https://cloudcdn.pro/stocks/images/research-paper.webp"
-banner_alt: "Banner para el reconocimiento de voz automático en tiempo real (ASR)"
-keywords: "OpenAI Whisper, Metal Performance Shaders, reconocimiento de voz macOS, transcripción en tiempo real, detección de actividad vocal, aceleración GPU, integración Python, speech-to-text macOS, detección de voz eficiente en energía, Apple silicon"
+banner_alt: "แบนเนอร์สำหรับการรู้จำเสียงพูดอัตโนมัติแบบเรียลไทม์ (ASR)"
+keywords: "OpenAI Whisper, Metal Performance Shaders, การรู้จำเสียงพูด macOS, การถอดเสียงแบบเรียลไทม์, การตรวจจับกิจกรรมเสียง, การเร่งความเร็วด้วย GPU, การผสานรวม Python, speech-to-text macOS, การตรวจจับเสียงที่ประหยัดพลังงาน, Apple silicon"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+บทความนี้นำเสนอภาพรวมของ[**งานวิจัย**][00]ที่ศึกษาการผสานรวม OpenAI Whisper เข้ากับ Metal Performance Shaders (MPS) บน macOS ซึ่งเป็นแนวทางใหม่สำหรับการรู้จำเสียงพูดแบบเรียลไทม์ OpenAI Whisper เป็นโมเดลการรู้จำเสียงพูดอัตโนมัติ (ASR) ระดับแนวหน้าที่ผ่านการฝึกด้วยชุดข้อมูลเสียงหลากหลายขนาดใหญ่ และสามารถถอดเสียงพูดได้หลายภาษา การผสานสถาปัตยกรรมโครงข่ายประสาทเทียมขั้นสูงของ Whisper เข้ากับการเร่งความเร็วด้วย GPU ของ MPS ช่วยเพิ่มความเร็วและความแม่นยำในการประมวลผลเสียงบนอุปกรณ์ เสริมความเป็นส่วนตัวและความสะดวกของผู้ใช้ พร้อมเปิดโอกาสใหม่ให้นักพัฒนาแอปพลิเคชันนำความสามารถแปลงเสียงเป็นข้อความแบบเรียลไทม์เข้าไปใช้ในแอปพลิเคชัน macOS ได้โดยตรง
 
-**ประเด็นสำคัญ**
+## บทนำ
 
-Este artículo presenta una vista de conjunto de un [**artículo de investigación**][00] que explora la integración de OpenAI Whisper con Metal Performance Shaders (MPS) en macOS, ofreciendo un nuevo enfoque del reconocimiento de voz en tiempo real. OpenAI Whisper es un modelo ASR (reconocimiento de voz automático) puntero entrenado sobre un amplio conjunto de datos de audio variados, capaz de transcribir el habla en varias lenguas. La combinación de la arquitectura de red neuronal avanzada de Whisper y la aceleración GPU ofrecida por MPS permite mejorar la velocidad y la precisión del tratamiento de voz en el dispositivo, reforzando la confidencialidad y la comodidad del usuario al tiempo que abre nuevas posibilidades para los desarrolladores que deseen integrar el speech-to-text en tiempo real directamente en las aplicaciones macOS.
+เทคโนโลยีการรู้จำเสียงพูดมีบทบาทสำคัญในการรองรับแอปพลิเคชันหลากหลายประเภท ตั้งแต่การเพิ่มการเข้าถึงไปจนถึงการทำให้การโต้ตอบกับผู้ใช้ราบรื่นขึ้น การมุ่งสู่ ASR ที่มีความเที่ยงตรงสูงและความหน่วงต่ำนั้น ที่ผ่านมาต้องพึ่งพาเซิร์ฟเวอร์คลาวด์ที่ทรงพลังเป็นหลัก ซึ่งก่อให้เกิดความท้าทายด้านการเข้าถึง ความเป็นส่วนตัว และความหน่วง อย่างไรก็ตาม งานวิจัยล่าสุดได้นำเสนอทางออกที่เปลี่ยนแปลงแนวทางเดิม นั่นคือการผสานรวม OpenAI Whisper เข้ากับการเร่งความเร็วด้วย GPU ที่ Metal Performance Shaders (MPS) มอบให้บน macOS การทำงานร่วมกันนี้ถือเป็นความก้าวหน้าที่สำคัญของความสามารถการรู้จำเสียงพูดบนอุปกรณ์ และสอดคล้องกับการให้ความสำคัญที่เพิ่มขึ้นต่อความเป็นส่วนตัวและความปลอดภัยของข้อมูลผู้ใช้
 
-## Introducción
-
-La tecnología de reconocimiento de voz desempeña un papel crucial en una amplia gama de aplicaciones, desde la mejora de la accesibilidad hasta la simplificación de las interacciones con el usuario. La búsqueda de un ASR de alta fidelidad y baja latencia ha dependido hasta ahora principalmente de potentes servidores cloud, presentando desafíos en términos de accesibilidad, confidencialidad y latencia. Sin embargo, investigaciones recientes han introducido una solución transformadora: la integración de OpenAI Whisper con la aceleración GPU ofrecida por Metal Performance Shaders (MPS) en macOS. Esta sinergia representa un avance significativo en las capacidades de reconocimiento de voz en dispositivo y se alinea con el creciente énfasis puesto en la confidencialidad y la seguridad de los datos de usuario.
-
-[**Metal Performance Shaders (MPS)**][01] es una tecnología desarrollada por Apple que permite el cálculo GPU de alto rendimiento en los dispositivos macOS. Permite a los desarrolladores aprovechar la potencia de la GPU para el procesamiento paralelo, conduciendo a mejoras de velocidad significativas en diversas tareas computacionales, en particular el aprendizaje automático y la visión por ordenador.
+[**Metal Performance Shaders (MPS)**][01] เป็นเทคโนโลยีที่พัฒนาโดย Apple ซึ่งช่วยให้การคำนวณด้วย GPU ประสิทธิภาพสูงเป็นไปได้บนอุปกรณ์ macOS เทคโนโลยีนี้ช่วยให้นักพัฒนาใช้ประโยชน์จากพลังของ GPU สำหรับการประมวลผลแบบขนาน นำไปสู่การเพิ่มความเร็วอย่างมีนัยสำคัญในงานคำนวณต่าง ๆ รวมถึงการเรียนรู้ของเครื่องและการมองเห็นด้วยคอมพิวเตอร์
 
 ![divider][divider].class=\"m-10 w-100\"
 
-### 1. La evolución del reconocimiento de voz en macOS
+### 1. วิวัฒนาการของการรู้จำเสียงพูดบน macOS
 
-La evolución del reconocimiento de voz en los dispositivos macOS ha estado impulsada por los avances de los modelos de redes neuronales y las tecnologías de aceleración de hardware. Los sistemas de reconocimiento de voz tradicionales encontraban a menudo dificultades en términos de precisión, latencia y eficiencia computacional, en particular ante acentos variados, ruidos de fondo y condiciones de grabación variables. La introducción de OpenAI Whisper ha establecido una nueva referencia para un reconocimiento de voz robusto y preciso en una amplia gama de lenguas y dialectos, ofreciendo una solución adaptada a las aplicaciones en tiempo real.
-
-![divider][divider].class=\"m-10 w-100\"
-
-### 2. Aprovechar OpenAI Whisper y Metal Performance Shaders
-
-El artículo de investigación desvela un enfoque innovador combinando las capacidades avanzadas de OpenAI Whisper con el cálculo de alto rendimiento de MPS en macOS. Esta integración se obtiene optimizando el modelo Whisper para que se ejecute en la GPU con la ayuda del framework MPS, que permite un procesamiento paralelo eficiente. Los investigadores han implementado técnicas como la cuantificación y la poda del modelo para reducir el tamaño del modelo y sus necesidades computacionales al tiempo que mantienen una precisión elevada. Aprovechando las capacidades de procesamiento paralelo de la GPU, el sistema alcanza mejoras de velocidad notables, con velocidades de transcripción de 8 a 12 veces más rápidas que el tiempo real para enunciados típicos. Esto mejora la experiencia del usuario reduciendo los tiempos de espera y permite una gama más amplia de aplicaciones en tiempo real: desde el subtitulado en directo hasta los sistemas interactivos por comando de voz.
+วิวัฒนาการของเทคโนโลยีการรู้จำเสียงพูดบนอุปกรณ์ macOS ได้รับแรงขับเคลื่อนจากความก้าวหน้าของโมเดลโครงข่ายประสาทเทียมและเทคโนโลยีการเร่งความเร็วด้วยฮาร์ดแวร์ ระบบการรู้จำเสียงพูดแบบดั้งเดิมมักเผชิญความท้าทายด้านความแม่นยำ ความหน่วง และประสิทธิภาพการคำนวณ โดยเฉพาะเมื่อต้องรับมือกับสำเนียงที่หลากหลาย เสียงรบกวนพื้นหลัง และสภาพการบันทึกที่แตกต่างกัน การมาถึงของ OpenAI Whisper ได้กำหนดมาตรฐานใหม่สำหรับการรู้จำเสียงพูดที่ทนทานและแม่นยำในภาษาและสำเนียงจำนวนมาก ซึ่งเป็นทางออกที่เหมาะสมสำหรับแอปพลิเคชันแบบเรียลไทม์
 
 ![divider][divider].class=\"m-10 w-100\"
 
-### 3. Implicaciones para usuarios y desarrolladores
+### 2. การใช้ประโยชน์จาก OpenAI Whisper และ Metal Performance Shaders
 
-La integración de Whisper y MPS en macOS tiene implicaciones significativas tanto para los usuarios finales como para los desarrolladores de aplicaciones. Para los usuarios, ofrece una experiencia mejorada en reconocimiento de voz en tiempo real, proporcionando una transcripción casi instantánea con precisión elevada al tiempo que preserva la confidencialidad y la seguridad de un tratamiento en dispositivo. Esta tecnología puede aplicarse a diversos escenarios concretos: aplicaciones por comando de voz para la domótica, servicios de transcripción en tiempo real para reuniones y conferencias, funcionalidades de accesibilidad para los usuarios con discapacidad auditiva. Los desarrolladores se benefician de una caja de herramientas para integrar la funcionalidad speech-to-text en sus aplicaciones, con los beneficios adicionales de la eficiencia energética y la integración Python fluida.
-
-![divider][divider].class=\"m-10 w-100\"
-
-### 4. Estimular adopción e innovación
-
-La arquitectura modular y la implementación Python de este sistema facilitan su integración en aplicaciones existentes y bajan la barrera de entrada para los desarrolladores que desean incorporar capacidades de reconocimiento de voz. Sin embargo, los desarrolladores pueden encontrar desafíos en términos de personalización del modelo y adaptación a casos de uso específicos, así como de optimización del rendimiento para distintas configuraciones de hardware. El artículo de investigación proporciona orientación para abordar estos desafíos, como el fine-tuning del modelo sobre datos específicos del dominio y la implementación de estrategias de asignación dinámica de recursos. Además, el sistema de detección de actividad vocal eficiente en energía, que alcanza el 94 % de precisión y el 96 % de recall, garantiza que las aplicaciones sigan siendo reactivas y precisas sin agotar los recursos del dispositivo. Esta combinación de funcionalidades tiene el potencial de estimular la adopción entre los desarrolladores y catalizar nuevas innovaciones en el campo del reconocimiento de voz en tiempo real.
+งานวิจัยนี้เปิดเผยแนวทางที่สร้างสรรค์ด้วยการผสานความสามารถขั้นสูงของ OpenAI Whisper เข้ากับการคำนวณประสิทธิภาพสูงของ MPS บน macOS การผสานรวมนี้ทำได้โดยการปรับโมเดล Whisper ให้ทำงานบน GPU ด้วยเฟรมเวิร์ก MPS ซึ่งรองรับการประมวลผลแบบขนานอย่างมีประสิทธิภาพ นักวิจัยได้นำเทคนิคอย่างการควอนไทซ์โมเดล (model quantization) และการตัดแต่งโมเดล (pruning) มาใช้เพื่อลดขนาดและความต้องการด้านการคำนวณของโมเดล ในขณะที่ยังคงความแม่นยำสูงไว้ ด้วยการใช้ความสามารถการประมวลผลแบบขนานของ GPU ระบบสามารถเพิ่มความเร็วได้อย่างเห็นได้ชัด โดยมีความเร็วในการถอดเสียงเร็วกว่าเวลาจริง 8 ถึง 12 เท่าสำหรับประโยคทั่วไป สิ่งนี้ช่วยยกระดับประสบการณ์ของผู้ใช้ด้วยการลดเวลารอคอย และเปิดทางให้แอปพลิเคชันแบบเรียลไทม์ที่หลากหลายยิ่งขึ้น ตั้งแต่การแสดงคำบรรยายสด ไปจนถึงระบบโต้ตอบที่ควบคุมด้วยเสียง
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Conclusión
+### 3. นัยต่อผู้ใช้และนักพัฒนา
 
-La integración de OpenAI Whisper y Metal Performance Shaders en macOS representa un avance significativo en la tecnología de reconocimiento de voz en tiempo real. Ofreciendo una velocidad, una precisión y una eficiencia mayores, esta innovación mejora la experiencia del usuario y abre nuevas posibilidades para el desarrollo de aplicaciones. Esta investigación contribuye al avance continuo de las tecnologías de IA y tiene el potencial de inspirar nuevos desarrollos en el tratamiento de voz en dispositivo en diversas plataformas. A medida que esta tecnología evoluciona, tiene el potencial de revolucionar la manera en que los usuarios interactúan con sus dispositivos, haciendo la comunicación digital más fluida y accesible.
+การผสานรวม Whisper และ MPS บน macOS มีนัยสำคัญทั้งต่อผู้ใช้ปลายทางและนักพัฒนาแอปพลิเคชัน สำหรับผู้ใช้ ระบบนี้มอบประสบการณ์การรู้จำเสียงพูดแบบเรียลไทม์ที่ดีขึ้น ให้การถอดเสียงที่แทบจะทันทีพร้อมความแม่นยำสูง ในขณะที่ยังคงรักษาความเป็นส่วนตัวและความปลอดภัยของการประมวลผลบนอุปกรณ์ เทคโนโลยีนี้สามารถนำไปใช้ในสถานการณ์จริงได้หลากหลาย เช่น แอปพลิเคชันควบคุมด้วยเสียงสำหรับระบบบ้านอัตโนมัติ บริการถอดเสียงแบบเรียลไทม์สำหรับการประชุมและการบรรยาย และฟีเจอร์การเข้าถึงสำหรับผู้ใช้ที่มีความบกพร่องทางการได้ยิน นักพัฒนาจะได้รับชุดเครื่องมือสำหรับผสานฟังก์ชันแปลงเสียงเป็นข้อความเข้ากับแอปพลิเคชันของตน พร้อมประโยชน์เพิ่มเติมด้านประสิทธิภาพการใช้พลังงานและการผสานรวมกับ Python ที่ราบรื่น
 
-### Acceder al artículo de investigación
+![divider][divider].class=\"m-10 w-100\"
+
+### 4. การผลักดันการนำไปใช้และนวัตกรรม
+
+สถาปัตยกรรมแบบโมดูลาร์และการพัฒนาด้วย Python ของระบบนี้ช่วยให้ผสานรวมเข้ากับแอปพลิเคชันที่มีอยู่ได้ง่ายขึ้น และลดอุปสรรคในการเริ่มต้นสำหรับนักพัฒนาที่ต้องการเพิ่มความสามารถการรู้จำเสียงพูด อย่างไรก็ตาม นักพัฒนาอาจเผชิญความท้าทายด้านการปรับแต่งโมเดลและการปรับให้เข้ากับกรณีการใช้งานเฉพาะ รวมถึงการปรับประสิทธิภาพสำหรับการกำหนดค่าฮาร์ดแวร์ที่แตกต่างกัน งานวิจัยนี้ให้แนวทางในการรับมือกับความท้าทายเหล่านี้ เช่น การปรับจูนโมเดล (fine-tuning) ด้วยข้อมูลเฉพาะโดเมน และการนำกลยุทธ์การจัดสรรทรัพยากรแบบพลวัตมาใช้ นอกจากนี้ ระบบตรวจจับกิจกรรมเสียงที่ประหยัดพลังงาน ซึ่งให้ความแม่นยำ (precision) 94% และค่าความครบถ้วน (recall) 96% ช่วยให้แอปพลิเคชันยังคงตอบสนองได้ดีและแม่นยำโดยไม่สิ้นเปลืองทรัพยากรของอุปกรณ์ การผสานคุณสมบัติเหล่านี้มีศักยภาพในการผลักดันการนำไปใช้ในหมู่นักพัฒนา และกระตุ้นนวัตกรรมเพิ่มเติมในด้านการรู้จำเสียงพูดแบบเรียลไทม์
+
+![divider][divider].class=\"m-10 w-100\"
+
+## บทสรุป
+
+การผสานรวม OpenAI Whisper และ Metal Performance Shaders บน macOS ถือเป็นความก้าวหน้าที่สำคัญของเทคโนโลยีการรู้จำเสียงพูดแบบเรียลไทม์ ด้วยการมอบความเร็ว ความแม่นยำ และประสิทธิภาพที่สูงขึ้น นวัตกรรมนี้ช่วยยกระดับประสบการณ์ของผู้ใช้และเปิดโอกาสใหม่สำหรับการพัฒนาแอปพลิเคชัน งานวิจัยนี้มีส่วนสนับสนุนความก้าวหน้าอย่างต่อเนื่องของเทคโนโลยี AI และมีศักยภาพในการสร้างแรงบันดาลใจให้เกิดการพัฒนาเพิ่มเติมด้านการประมวลผลเสียงบนอุปกรณ์ในหลายแพลตฟอร์ม เมื่อเทคโนโลยีนี้พัฒนาต่อไป ก็มีศักยภาพที่จะเปลี่ยนแปลงวิธีที่ผู้ใช้โต้ตอบกับอุปกรณ์ของตน ทำให้การสื่อสารดิจิทัลราบรื่นและเข้าถึงได้มากขึ้น
+
+### เข้าถึงงานวิจัย
 
 .class=\"card bg-light p-3 me-3 w-100\"
-Para saber más sobre la integración de OpenAI Whisper y Metal Performance Shaders en macOS para el reconocimiento de voz en tiempo real, se invita a los lectores a consultar el artículo de investigación completo. El artículo proporciona detalles técnicos profundos, resultados experimentales y perspectivas adicionales sobre las aplicaciones potenciales y las direcciones futuras de esta tecnología. Accediendo al artículo completo, los lectores adquirirán una comprensión exhaustiva de la metodología, la implementación y las implicaciones de este enfoque innovador del reconocimiento de voz en tiempo real en macOS. [**Leer el artículo completo ❯**][00]
+เพื่อเรียนรู้เพิ่มเติมเกี่ยวกับการผสานรวม OpenAI Whisper และ Metal Performance Shaders บน macOS สำหรับการรู้จำเสียงพูดแบบเรียลไทม์ ขอเชิญผู้อ่านเข้าถึงงานวิจัยฉบับเต็ม งานวิจัยนี้ให้รายละเอียดทางเทคนิคเชิงลึก ผลการทดลอง และมุมมองเพิ่มเติมเกี่ยวกับการประยุกต์ใช้ที่เป็นไปได้และทิศทางในอนาคตของเทคโนโลยีนี้ ด้วยการเข้าถึงงานวิจัยฉบับสมบูรณ์ ผู้อ่านจะได้รับความเข้าใจอย่างครอบคลุมเกี่ยวกับระเบียบวิธี การพัฒนา และนัยของแนวทางใหม่นี้ต่อการรู้จำเสียงพูดแบบเรียลไทม์บนอุปกรณ์ macOS [**อ่านงานวิจัยฉบับเต็มวันนี้ ❯**][00]
 
-[00]: /papers/index.html "Publicaciones de investigación y libros blancos de Sebastien Rousseau"
-[01]: https://developer.apple.com/documentation/metalperformanceshaders "Metal Performance Shaders - Apple Developer Documentation"
+[00]: /research/index.html "งานวิจัย ISO 20022 เอกสารไวต์เปเปอร์ และการวิเคราะห์เชิงเทคนิค"
+[01]: https://developer.apple.com/documentation/metalperformanceshaders "Metal Performance Shaders - เอกสารสำหรับนักพัฒนาของ Apple"
 
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "ตัวคั่น"

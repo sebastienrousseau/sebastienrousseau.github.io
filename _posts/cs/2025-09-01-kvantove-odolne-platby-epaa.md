@@ -1,76 +1,71 @@
 ---
-title: "Pagos resistentes a lo cuántico: por qué la industria debe actuar ahora"
-subtitle: "La criptografía postcuántica es ya una decisión de infraestructura actual, y no futura. El libro blanco EPAA expone el riesgo estructural y la urgente necesidad de migración."
-description: "La computación cuántica amenaza la criptografía de los sistemas de pago. El libro blanco EPAA expone el riesgo estructural y aboga por una migración urgente hacia la criptografía postcuántica."
+title: "Kvantově odolné platby: proč musí odvětví jednat hned"
+subtitle: "Kvantově odolná připravenost je rozhodnutí o současné infrastruktuře, nikoli o budoucí. Bílá kniha EPAA popisuje strukturální riziko a naléhavou potřebu migrace."
+description: "Kvantové počítače ohrožují kryptografii platebních systémů. Bílá kniha EPAA popisuje strukturální riziko a naléhavé důvody pro migraci na postkvantovou kryptografii."
 date: "September 01, 2025"
-language: "cs-CZ"
+language: "cs"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
-banner_alt: "Placa de circuito de computación cuántica bañada en luz azul"
-keywords: "pagos resistentes a lo cuántico, criptografía postcuántica, SEPA, SWIFT gpi, ISO 20022, seguridad de los servicios financieros, EPAA, harvest-now decrypt-later, agilidad criptográfica, Sebastien Rousseau"
+banner_alt: "Deska plošných spojů kvantového počítače v modrém světle"
+keywords: "kvantově odolné platby, postkvantová kryptografie, SEPA, SWIFT gpi, ISO 20022, bezpečnost finančních služeb, EPAA, harvest-now decrypt-later, kryptografická agilita, Sebastien Rousseau"
 ---
 
+## Kvantová hrozba pro platební systémy
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+Moderní platební infrastruktura se opírá o kryptografii veřejného klíče, tedy o RSA, ECC a Diffie-Hellman, aby ověřovala transakce, chránila data držitelů karet a zabezpečovala výměnu zpráv mezi finančními institucemi. Tyto algoritmy tvoří základ SWIFT, SEPA, systémů hrubého zúčtování v reálném čase a prakticky každého kartového schématu, které je dnes v provozu.
 
-**Klíčové body**
+Kvantové počítače s Shorovým algoritmem dokážou tyto kryptografické primitivy prolomit. Kvantové stroje odolné vůči chybám sice zatím neexistují v potřebném měřítku, ale vývoj hardwaru, jak jej předvedly IBM, Google a další, činí z této otázky spíše inženýrský harmonogram než teorii. Národní institut pro standardy a technologie (NIST) na to již reagoval dokončením první sady postkvantových kryptografických standardů (FIPS 203, 204 a 205).
 
-## La amenaza cuántica sobre los sistemas de pago
+## Riziko „sklidit teď, dešifrovat později“
 
-La infraestructura de pagos moderna reposa en la criptografía de clave pública —RSA, ECC y Diffie-Hellman— para autenticar las transacciones, proteger los datos de los titulares de tarjetas y asegurar la mensajería entre instituciones financieras. Estos algoritmos sustentan SWIFT, SEPA, los sistemas de liquidación bruta en tiempo real y prácticamente cada esquema de tarjetas en actividad hoy en día.
+Hrozba se neomezuje na budoucí okamžik, kdy kvantové počítače dosáhnou dostatečného výkonu. Státní aktéři a sofistikovaní protivníci již dnes zachytávají a ukládají šifrovaná data se záměrem dešifrovat je, jakmile budou kvantové prostředky k dispozici. Tato strategie „sklidit teď, dešifrovat později“ (harvest-now decrypt-later, HNDL) znamená, že jakákoli platební data s dlouhodobou citlivostí, tedy regulatorní záznamy, archivy pro compliance a smluvní závazky, jsou již ohrožena.
 
-Los ordenadores cuánticos que ejecuten el algoritmo de Shor serán capaces de romper estas primitivas criptográficas. Si bien las máquinas cuánticas tolerantes a fallos aún no existen a la escala requerida, la trayectoria del desarrollo de hardware —demostrada por IBM, Google y otros— convierte esto en una cuestión de calendario de ingeniería más que de teoría. El National Institute of Standards and Technology (NIST) ya ha finalizado su primer juego de estándares de criptografía postcuántica (FIPS 203, 204 y 205) en respuesta.
+Finanční regulátoři začali reagovat. Singapurský měnový úřad (Monetary Authority of Singapore, MAS) vydal pokyny ke kvantové připravenosti. Australský úřad pro obezřetnostní regulaci (Australian Prudential Regulation Authority, APRA) označil kryptografické riziko ve svém rámci technologické odolnosti. Nařízení Evropské unie o digitální provozní odolnosti (Digital Operational Resilience Act, DORA) vyžaduje řízení rizik ICT, které musí zohledňovat vznikající hrozby včetně kvantových počítačů.
 
-## El riesgo «cosechar ahora, descifrar más tarde»
+## Dopad napříč platebními okruhy
 
-La amenaza no se confina a una fecha futura en la que los ordenadores cuánticos alcancen capacidad suficiente. Actores estatales y adversarios sofisticados interceptan y almacenan ya hoy datos cifrados, con la intención de descifrarlos una vez que los recursos cuánticos estén disponibles. Esta estrategia «harvest-now decrypt-later» (HNDL) significa que cualquier dato de pago con sensibilidad larga —registros normativos, archivos de cumplimiento, obligaciones contractuales— está ya en riesgo.
+Důsledky pokrývají celou šíři platební infrastruktury:
 
-Los reguladores financieros han comenzado a reaccionar. La Monetary Authority of Singapore (MAS) ha publicado orientaciones sobre la preparación cuántica. La Australian Prudential Regulation Authority (APRA) ha señalado el riesgo criptográfico en su marco de resiliencia tecnológica. El Digital Operational Resilience Act (DORA) de la Unión Europea impone una gestión de los riesgos ICT que debe tener en cuenta las amenazas emergentes, incluida la computación cuántica.
+**Zprávy SWIFT:** Formáty zpráv MT a MX se pro integritu a autentizaci spoléhají na TLS a digitální podpisy. Narušená infrastruktura klíčů by podkopala model důvěry, který celosvětově propojuje více než 11 000 institucí.
 
-## Impacto en el conjunto de los rails de pago
+**SEPA a okamžité platby:** Schéma SEPA Instant Credit Transfer od European Payments Council zpracovává neodvolatelné transakce za méně než deset sekund. Narušení kryptografie při této rychlosti neponechává žádný prostor pro lidský zásah ani ruční ověření.
 
-Las implicaciones cubren todo el conjunto de la infraestructura de pagos:
+**Platební systémy v reálném čase:** Faster Payments (UK), FedNow (US) a NPP (Austrálie) mají všechny stejnou závislost na klasických kryptografických primitivech pro autentizaci zpráv a ověřování účastníků.
 
-**Mensajería SWIFT:** Los formatos de mensajes MT y MX se apoyan en TLS y las firmas digitales para la integridad y la autenticación. Una infraestructura de claves comprometida socavaría el modelo de confianza que vincula a más de 11.000 instituciones a escala global.
+**Compliance a data s dlouhou životností:** Platební záznamy uchovávané pro regulatorní účely, často povinně po dobu pěti až deseti let či déle, přežijí bezpečnostní záruky kryptografie, která je chránila v okamžiku vzniku. Migrační programy [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) musí zohlednit kryptografickou trvanlivost dat, která produkují.
 
-**SEPA y pagos instantáneos:** El esquema SEPA Instant Credit Transfer del European Payments Council trata transacciones irrevocables en menos de diez segundos. Una vulneración criptográfica a esa velocidad no deja ninguna ventana para una intervención humana o una verificación manual.
+**Blockchain a technologie distribuované účetní knihy:** Platformy digitálních aktiv a tokenizované platební nástroje, které závisejí na kryptografii eliptických křivek, čelí přímé a dobře pochopené hrozbě ze strany kvantových algoritmů.
 
-**Sistemas de pago en tiempo real:** Faster Payments (UK), FedNow (US) y NPP (Australia) comparten todos la misma dependencia de las primitivas criptográficas clásicas para la autenticación de mensajes y la verificación de los participantes.
+## Co musí organizace udělat hned
 
-**Cumplimiento y datos de larga duración de vida:** Los registros de pago conservados con fines normativos —a menudo impuestos durante cinco a diez años o más— sobrevivirán a las garantías de seguridad de la criptografía que los protegía en el momento de su creación. Los programas de migración [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) deben tener en cuenta la duración de conservación criptográfica de los datos que producen.
+Přechod na kvantově odolnou kryptografii není jednorázová aktualizace, ale víceletý program vyžadující strukturovanou přípravu:
 
-**Blockchain y libros mayores distribuidos:** Las plataformas de activos digitales y los instrumentos de pago tokenizados que dependen de la criptografía de curva elíptica afrontan una amenaza directa y bien comprendida de los algoritmos cuánticos.
+**Kryptografická inventarizace:** Organizace musí zkatalogizovat každý systém, protokol a úložiště dat, které závisí na klasické kryptografii veřejného klíče. To zahrnuje certifikáty TLS, autentizaci API, konfigurace HSM, systémy správy klíčů a šifrování dat v klidu.
 
-## Lo que las organizaciones deben hacer ahora
+**Zavedení postkvantových algoritmů:** NIST standardizoval ML-KEM (FIPS 203) pro zapouzdření klíčů a ML-DSA (FIPS 204) pro digitální podpisy. Organizace by měly začít tyto algoritmy testovat v neprodukčních prostředích a vypracovat migrační plány pro kritické systémy.
 
-La transición hacia una criptografía resistente a lo cuántico no es una actualización única sino un programa plurianual que exige una preparación estructurada:
+**Kryptografická agilita:** Systémy musí být navrženy, nebo přepracovány, tak, aby bylo možné kryptografické algoritmy vyměnit bez nutnosti kompletního přepracování aplikací. Tato zásada platí stejnou měrou pro platební brány, middleware pro výměnu zpráv i pro API určená klientům.
 
-**Inventario criptográfico:** Las organizaciones deben catalogar cada sistema, protocolo y almacén de datos que dependa de la criptografía de clave pública clásica. Esto incluye los certificados TLS, la autenticación de API, las configuraciones HSM, los sistemas de gestión de claves y el cifrado de los datos en reposo.
+**Hybridní přístupy:** Během přechodného období poskytují hybridní kryptografická schémata, která kombinují klasické a postkvantové algoritmy, obranu do hloubky. Tento přístup zachovává zpětnou kompatibilitu a zároveň zavádí kvantovou odolnost.
 
-**Adopción de algoritmos postcuánticos:** El NIST ha estandarizado ML-KEM (FIPS 203) para la encapsulación de claves y ML-DSA (FIPS 204) para las firmas digitales. Las organizaciones deberían comenzar a probar estos algoritmos en entornos fuera de producción y desarrollar hojas de ruta de migración para los sistemas críticos.
+## Pracovní skupina EPAA a spolupráce v odvětví
 
-**Agilidad criptográfica:** Los sistemas deben diseñarse —o refactorizarse— de modo que los algoritmos criptográficos puedan reemplazarse sin necesidad de una refactorización aplicativa completa. Este principio se aplica tanto a las pasarelas de pago, como a la mensajería intermediaria y a las API de cliente.
+Emerging Payments Association Asia (EPAA) zřídila svou pracovní skupinu Quantum Safe Cryptography Working Group, aby těmto výzvám čelila koordinovaným postupem v odvětví. Pracovní skupina sdružuje účastníky z celého platebního ekosystému, mimo jiné IBM, HSBC, KPMG, JPMorgan Chase a PayPal.
 
-**Enfoques híbridos:** Durante el periodo de transición, los esquemas criptográficos híbridos que combinan algoritmos clásicos y postcuánticos ofrecen una defensa en profundidad. Este enfoque preserva la retrocompatibilidad al tiempo que introduce la resistencia cuántica.
+Na workshopech v Sydney, Hongkongu a Singapuru vypracovala pracovní skupina společný rámec pro posuzování kvantového rizika v platebních systémech a pro určení praktických cest migrace. Výsledná bílá kniha [Quantum-Safe Payments: Why the Payments Industry Must Act Now][epaa] představuje konsenzuální postoj k naléhavosti a rozsahu této výzvy.
 
-## Grupo de trabajo EPAA y colaboración industrial
+Analýza pracovní skupiny dochází k závěru, že kvantově odolná připravenost je rozhodnutí o současné infrastruktuře, nikoli o budoucí. Organizace, které otálejí, riskují, že nebudou schopny naplnit regulatorní očekávání, ochránit data s dlouhou životností ani udržet interoperabilitu s partnery, kteří již migraci provedli.
 
-La Emerging Payments Association Asia (EPAA) ha establecido su Grupo de trabajo Quantum Safe Cryptography para abordar estos desafíos mediante una acción industrial coordinada. El grupo de trabajo reúne a participantes de todo el ecosistema de pagos, incluidos IBM, HSBC, KPMG, JPMorgan Chase y PayPal, entre otros.
+## O autorovi
 
-En talleres celebrados en Sídney, Hong Kong y Singapur, el grupo de trabajo ha desarrollado un marco compartido para evaluar el riesgo cuántico en los sistemas de pago e identificar vías de migración prácticas. El libro blanco resultante —[Quantum-Safe Payments: Why the Payments Industry Must Act Now][epaa]— representa una posición consensuada sobre la urgencia y la amplitud del desafío.
+Sebastien Rousseau je Senior Digital Product Manager v HSBC Bank plc, kde vede produkty API pro firemní platby v rámci Commercial & Investment Bank banky HSBC. Přispěl do pracovní skupiny EPAA Quantum Safe Cryptography Working Group a zabývá se výzkumem uplatnění postkvantové kryptografie ve finančních službách. [Více o Sebastienovi ❯][00]
 
-El análisis del grupo de trabajo concluye que la preparación resistente a lo cuántico es una decisión de infraestructura actual, y no futura. Las organizaciones que demoren se exponen a no poder ya satisfacer las expectativas normativas, proteger los datos de larga duración o mantener la interoperabilidad con socios ya migrados.
+## Související články
 
-## Sobre el autor
+- [[Kvantová distribuce klíčů](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html): revoluce bankovní bezpečnosti][rel1]
+- [[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): ochranný algoritmus v kvantové éře][rel2]
 
-Sebastien Rousseau es Senior Digital Product Manager en HSBC Bank plc, donde dirige los productos de API de pagos corporativos en la Commercial & Investment Bank de HSBC. Ha contribuido al Grupo de trabajo EPAA Quantum Safe Cryptography y estudia la aplicación de la criptografía postcuántica a los servicios financieros. [Más información sobre Sebastien ❯][00]
-
-## Artículos relacionados
-
-- [[Distribución cuántica de claves](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html): revolucionar la seguridad bancaria][rel1]
-- [[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): el algoritmo de protección en la era cuántica][rel2]
-
-[00]: /about/index.html "Sobre Sebastien Rousseau"
-[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf "Libro blanco EPAA Quantum-Safe Payments"
-[rel1]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution: Revolutionising Security in Banking"
-[rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
+[00]: /about/index.html "O Sebastienovi Rousseauovi"
+[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf "Bílá kniha EPAA Quantum-Safe Payments"
+[rel1]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Kvantová distribuce klíčů: revoluce bankovní bezpečnosti"
+[rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: ochranný algoritmus v kvantové éře"

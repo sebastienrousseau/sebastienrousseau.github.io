@@ -1,75 +1,92 @@
 ---
-title: "El estándar de token ERC-20"
-subtitle: "La interfaz unificada que permitió prosperar al ecosistema Ethereum"
-description: "ERC-20: el tipo de token más extendido en la blockchain Ethereum, a menudo descrito como un contrato digital inteligente (smart contract)."
+title: "ERC-20: rozhraní ethereového tokenu, které změnilo svět"
+subtitle: "Tokeny ERC-20, chytré kontrakty Etherea a standardizace digitálních aktiv."
+description: "ERC-20 je nejběžnější typ tokenu používaný na blockchainu Ethereum a často se označuje jako digitální chytrý kontrakt."
 date: "January 24, 2018"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
-banner_alt: "Ordenador portátil apagado sobre una mesa de madera marrón"
-keywords: "ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, interoperabilidad, DApps, estándar"
+banner_alt: "Vypnutý notebook na hnědém dřevěném stole"
+keywords: "ERC-20, Ethereum, token, chytrý kontrakt, DeFi, EIP, blockchain, interoperabilita, DApps, standard"
 ---
 
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+> **TL;DR.** ERC-20 je nejběžnější typ tokenu na blockchainu Ethereum a často se označuje jako digitální chytrý kontrakt.
 
 **Klíčové body**
 
-![Ordenador portátil apagado sobre una mesa de madera marrón](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"
+- **Myšlenka.** Standard ERC-20 definuje šest základních funkcí, které musí implementovat každý token kompatibilní s ERC-20.
+- **Dopad.** Standard ERC-20 měl významný vliv na ekosystém Ethereum.
+- **Motivace.** Standardizace zavedená protokolem ERC-20 měla i přímý ekonomický dopad.
+- **Potřeba standardizovaného rozhraní tokenu.** Před příchodem standardu ERC-20 (Ethereum Request for Comments 20) připomínal blockchain Ethereum divoký západ tokenových architektur.
 
-## Perspectiva
+![Vypnutý notebook na hnědém dřevěném stole](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"
 
-### La necesidad de una interfaz de token estandarizada
+## Poznatek
 
-Antes del advenimiento del estándar ERC-20 (Ethereum Request for Comments 20), la blockchain Ethereum se parecía al Lejano Oeste de las arquitecturas de token. Cada nuevo token acuñado tenía su propio conjunto único de reglas, funciones e interfaces. Esto imponía a los desarrolladores una curva de aprendizaje pronunciada y frenaba la interoperabilidad de los tokens. En pocas palabras, cada nuevo token era como un nuevo idioma que aprender, comprender e implementar. Esta fragmentación obstaculizaba la escalabilidad y la adopción masiva de tokens en la plataforma Ethereum.
+### Potřeba standardizovaného rozhraní tokenu
 
-La introducción del estándar ERC-20 actuó como un lenguaje unificador, estableciendo un conjunto común de reglas y funciones a las que todos los tokens Ethereum deben ajustarse. A partir de entonces, los desarrolladores disponen de una interfaz coherente, sea cual sea el token. Esta estandarización fluidificó los procesos de interacción con los tokens, permitiendo una integración más fluida en diversas aplicaciones y servicios. Como consecuencia, los desarrolladores pueden interactuar de manera más útil con los tokens, propiciando un entorno favorable a la innovación y al crecimiento en el ecosistema Ethereum.
+Před příchodem standardu ERC-20 (Ethereum Request for Comments 20) připomínal blockchain Ethereum divoký západ tokenových architektur. Každý nově vydaný token měl vlastní sadu pravidel, funkcí a rozhraní. To vývojáře stavělo před náročnou křivku učení a zároveň bránilo interoperabilitě tokenů. V zásadě byl každý nový token jako nový jazyk, který bylo třeba se naučit, pochopit a implementovat. Tato roztříštěnost brzdila škálovatelnost a širší přijetí tokenů na platformě Ethereum.
 
-#### El Lejano Oeste de las arquitecturas de token
+Zavedení standardu ERC-20 posloužilo jako sjednocující jazyk. Stanovilo společnou sadu pravidel a funkcí, kterými se musí řídit všechny tokeny Etherea. Vývojáři teď mají k dispozici konzistentní rozhraní bez ohledu na to, o jaký token jde. Tato standardizace zjednodušila procesy interakce s tokeny a umožnila plynulejší integraci do různých aplikací a služeb. Vývojáři díky tomu mohou s tokeny pracovat smysluplněji, což vytváří prostředí příznivé pro inovace a růst v ekosystému Ethereum.
 
-La blockchain Ethereum se diseñó inicialmente para soportar un único tipo de token: ETH. Pero a medida que la plataforma ganó popularidad, los desarrolladores comenzaron a crear sus propios tokens para representar una variedad de activos y conceptos. Esto dio lugar a una proliferación de arquitecturas de token diferentes, cada una con su propio conjunto único de reglas y funciones.
+#### Divoký západ tokenových architektur
 
-Esta fragmentación dificultaba a los desarrolladores la creación de aplicaciones capaces de interactuar con varios tokens. También complicaba a los usuarios la gestión de sus activos de token en distintas plataformas.
+Blockchain Ethereum byl původně navržen tak, aby podporoval jediný typ tokenu: ETH. S rostoucí popularitou platformy však vývojáři začali vytvářet vlastní tokeny, které představovaly nejrůznější aktiva a koncepty. To vedlo k rozmachu různých tokenových architektur, z nichž každá měla vlastní sadu pravidel a funkcí.
 
-#### El estándar ERC-20
+Tato roztříštěnost vývojářům ztěžovala tvorbu aplikací, které by dokázaly pracovat s více tokeny. Uživatelům zase komplikovala správu jejich tokenových aktiv napříč různými platformami.
 
-El estándar ERC-20 se introdujo en 2015 para responder a los retos planteados por este Lejano Oeste de arquitecturas de token. El estándar define un conjunto común de reglas y funciones a las que todos los tokens Ethereum deben ajustarse. Esta estandarización facilita la creación de aplicaciones capaces de interactuar con cualquier token ERC-20, y también simplifica la gestión de los activos de token por parte de los usuarios.
+#### Standard ERC-20
 
-El estándar ERC-20 ha sido ampliamente adoptado por la comunidad Ethereum. Hoy en día se contabilizan más de 200.000 tokens ERC-20 y el estándar es utilizado por una gran variedad de aplicaciones, incluidos exchanges descentralizados, plataformas de préstamo y dapps de juegos.
+Standard ERC-20 byl představen v roce 2015, aby řešil problémy, které přinesl divoký západ tokenových architektur. Standard definuje společnou sadu pravidel a funkcí, kterými se musí řídit všechny tokeny Etherea. Tato standardizace usnadňuje vývojářům tvorbu aplikací schopných pracovat s libovolným tokenem ERC-20 a uživatelům zjednodušuje správu jejich tokenových aktiv.
 
-## Idea
+Standard ERC-20 komunita Etherea široce přijala. Dnes existuje přes 200 000 tokenů ERC-20 a standard využívá široká škála aplikací, včetně decentralizovaných burz, úvěrových platforem a herních dapp aplikací.
 
-### Un conjunto común de funciones y propiedades para todos los tokens
+## Myšlenka
 
-El estándar ERC-20 define un conjunto de seis funciones esenciales que todos los tokens conformes a ERC-20 deben implementar. Estas funciones son:
+### Společná sada funkcí a vlastností pro všechny tokeny
 
-- `transfer(address to, uint256 amount)`: transfiere un importe de tokens desde la dirección del invocador hacia la dirección especificada.
-- `approve(address spender, uint256 amount)`: autoriza a la dirección especificada a gastar un importe de tokens en nombre del invocador.
-- `allowance(address owner, address spender)`: devuelve el importe de tokens que el «spender» especificado está autorizado a gastar en nombre del «owner» especificado.
-- `totalSupply()`: devuelve el número total de tokens en circulación.
-- `balanceOf(address owner)`: devuelve el número de tokens que posee la dirección especificada.
-- `name()`: devuelve el nombre del token.
-- `symbol()`: devuelve el símbolo del token.
+Standard ERC-20 definuje šest základních funkcí, které musí implementovat každý token kompatibilní s ERC-20. Tyto funkce jsou:
 
-El estándar ERC-20 también define dos eventos que deben emitirse tras la ejecución exitosa de las funciones correspondientes:
+- `transfer(address to, uint256 amount)`: Převede určité množství tokenů z adresy volajícího na zadanou adresu.
+- `approve(address spender, uint256 amount)`: Povolí zadané adrese utratit určité množství tokenů jménem volajícího.
+- `allowance(address owner, address spender)`: Vrátí množství tokenů, které smí zadaný spender utratit jménem zadaného ownera.
+- `totalSupply()`: Vrátí celkový počet tokenů v oběhu.
+- `balanceOf(address owner)`: Vrátí počet tokenů vlastněných zadanou adresou.
+- `name()`: Vrátí název tokenu.
+- `symbol()`: Vrátí symbol tokenu.
 
-- `Transfer(address from, address to, uint256 amount)`: emitido cuando un importe de tokens se transfiere de una dirección a otra.
-- `Approval(address owner, address spender, uint256 amount)`: emitido cuando la dirección especificada es autorizada a gastar un importe de tokens en nombre del «owner» especificado.
+Standard ERC-20 dále definuje dvě události, které musí být vyvolány po úspěšném provedení odpovídajících funkcí. Tyto události jsou:
 
-## Impacto
+- `Transfer(address from, address to, uint256 amount)`: Vyvolána, když je určité množství tokenů převedeno z jedné adresy na druhou.
+- `Approval(address owner, address spender, uint256 amount)`: Vyvolána, když je zadané adrese povoleno utratit určité množství tokenů jménem zadaného ownera.
 
-### El crecimiento de DeFi y la adopción de Ethereum
+## Dopad
 
-El estándar ERC-20 ha tenido un impacto significativo en el ecosistema Ethereum. Ha sido un catalizador clave del movimiento DeFi (finanzas descentralizadas) y también ha contribuido a aumentar la adopción de Ethereum.
+### Růst DeFi a přijetí Etherea
 
-Las plataformas DeFi, que ofrecen toda una gama de servicios financieros que van desde el préstamo hasta la gestión de activos, se apoyan masivamente en los tokens para facilitar las transacciones. Con ERC-20 actuando como un adaptador universal, se volvió mucho más sencillo para las aplicaciones DeFi integrar un amplio abanico de tokens sin tener que adaptar su código a cada uno.
+Standard ERC-20 měl významný vliv na ekosystém Ethereum. Byl klíčovým předpokladem hnutí DeFi (decentralizované finance) a přispěl také k širšímu přijetí Etherea.
 
-El estándar ERC-20 también ha facilitado la gestión de los activos de token por parte de los usuarios. Con tokens que respetan las mismas reglas básicas, a los usuarios les resulta más fácil transferir, gastar y gestionar sus activos de token en varias plataformas. Esta experiencia de usuario mejorada ha sido un motor del aumento de las tasas de adopción de Ethereum.
+Platformy DeFi, které nabízejí řadu finančních služeb od půjček po správu aktiv, se při zpracování transakcí silně opírají o tokeny. Díky tomu, že ERC-20 funguje jako univerzální adaptér, mohou aplikace DeFi mnohem snáze zapojit širokou škálu tokenů, aniž by musely přizpůsobovat svůj kód každému z nich.
 
-## Incentivos
+Standard ERC-20 také uživatelům usnadnil správu tokenových aktiv. Protože se tokeny řídí stejnými základními pravidly, mohou je uživatelé snáze převádět, utrácet a spravovat napříč více platformami. Tato zlepšená uživatelská zkušenost byla jedním z hnacích faktorů rostoucí míry přijetí Etherea.
 
-### Costes de desarrollo reducidos y seguridad mejorada
+## Motivace
 
-La estandarización aportada por el protocolo ERC-20 también ha tenido un impacto económico directo. Al proporcionar un plano probado y aprobado por la comunidad para la creación de tokens, ha reducido significativamente la barrera de entrada para los desarrolladores. Ahora pueden crear un nuevo token con costes de desarrollo reducidos y un plazo de comercialización más corto, sin tener que reinventar la rueda. El estándar fomenta también indirectamente la creación de DApps (aplicaciones descentralizadas) y servicios capaces de interactuar universalmente con cualquier token ERC-20, cultivando así un ecosistema más dinámico.
+### Nižší náklady na vývoj a vyšší bezpečnost
 
-Otro beneficio notable: una seguridad reforzada. El estándar ERC-20 ha sido sometido a un examen riguroso por parte de la comunidad Ethereum, convirtiéndolo en un modelo robusto y seguro para la implementación de tokens. El respeto de este estándar implica que los aspectos fundamentales del smart contract del token siguen las buenas prácticas aceptadas por la comunidad. Esto minimiza el riesgo de vulnerabilidades de seguridad que de otro modo podrían derivarse de un modelo de token mal diseñado. Aunque no es una garantía contra todo tipo de vulnerabilidades, es un paso significativo hacia la seguridad global de los tokens y, por extensión, de los proyectos que los utilizan.
+Standardizace, kterou přinesl protokol ERC-20, měla i přímý ekonomický dopad. Tím, že poskytl ověřený a komunitou schválený vzor pro tvorbu tokenů, výrazně snížil bariéry vstupu pro vývojáře. Ti mohou nyní vytvořit nový token s nižšími náklady na vývoj a rychlejším uvedením na trh, protože již nemusí znovu vynalézat kolo. Standard rovněž nepřímo podporuje tvorbu aplikací DApps (decentralizované aplikace) a služeb, které dokážou univerzálně pracovat s libovolným tokenem ERC-20, a tím přispívá k živějšímu ekosystému.
+
+Dalším významným přínosem je vyšší bezpečnost. Standard ERC-20 prošel důkladným prověřením komunitou Etherea, což z něj činí robustní a bezpečný model pro implementaci tokenů. Dodržování tohoto standardu znamená, že základní aspekty chytrého kontraktu tokenu odpovídají osvědčeným postupům přijímaným komunitou. To minimalizuje riziko bezpečnostních zranitelností, které by jinak mohly vyplynout z nesprávně navrženého modelu tokenu. Není to sice záruka proti všem typům zranitelností, ale je to významný krok k zajištění celkové bezpečnosti tokenů a potažmo i projektů, které je využívají.
+
+![oddělovač](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+**Tím se naše společná chvíle uzavírá. Děkuji za váš čas!**
+
+Máte-li jakékoli dotazy, neváhejte mě kontaktovat přes [LinkedIn ⧉][11] nebo prostřednictvím [kontaktní stránky][10]. Ještě jednou děkuji za váš čas a těším se na vaši zprávu.
+
+[**❬ Zpět na články**][09]
+
+[09]: /articles/index.html "Zpět na články"
+[10]: /contact/index.html "Kontaktovat Sebastiena Rousseaua"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau na LinkedIn"

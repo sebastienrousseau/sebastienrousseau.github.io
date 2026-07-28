@@ -1,86 +1,82 @@
 ---
-title: "Constantes matemáticas y criptográficas para la seguridad en Rust"
-subtitle: "Constantes matemáticas y criptográficas probadas para una seguridad Rust con garantía de memoria"
-description: "Proteja la integridad del código con constantes matemáticas y criptográficas rigurosamente verificadas, reforzando la seguridad de memoria y la concurrencia."
+title: "Matematické a kryptografické konstanty pro bezpečnost v Rustu"
+subtitle: "Prověřené matematické a kryptografické konstanty pro paměťově bezpečný Rust"
+description: "Chraňte integritu kódu pečlivě prověřenými matematickými a kryptografickými konstantami, které posilují paměťovou a souběžnostní bezpečnost."
 date: "November 05, 2023"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
-banner_alt: "Cálculo matemático"
-keywords: "constantes matemáticas, constantes criptográficas, seguridad Rust, comunicación segura, cifrado, RSA, criptografía de curva elíptica, biblioteca Common (CMN), aplicaciones Rust, cálculos matemáticos"
+banner_alt: "Matematický výpočet"
+keywords: "matematické konstanty, kryptografické konstanty, bezpečnost v Rustu, bezpečná komunikace, šifrování, RSA, kryptografie eliptických křivek, knihovna Common (CMN), aplikace v Rustu, matematické výpočty"
 ---
 
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+![Obří bílé sloupy](https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp).class=\"img-fluid clearfix\"
 
-**Klíčové body**
+## Poznatek
 
-![Giant white pillars](https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp).class=\"img-fluid clearfix\"
+### Základ bezpečné komunikace
 
-## Perspectiva
+Matematika poskytuje konstanty, které tvoří základní kameny technologií a bezpečné komunikace. Konstanty jako číslo pí (π) a Eulerovo číslo (e) jsou zásadní ve všem od geometrie po kryptografii a zajišťují naši digitální bezpečnost.
 
-### El fundamento de la comunicación segura
+V kryptografii mají konstanty jedinečnou úlohu. Nejsou nahodilé, ale pečlivě volené a tvoří základ bezpečných šifrovacích metod, jako jsou RSA a kryptografie eliptických křivek. Tyto konstanty jsou klíči v nejdoslovnějším smyslu: chrání naši komunikaci, digitální identity a elektronické transakce.
 
-Las matemáticas proporcionan constantes que son las piedras angulares de la tecnología y de la comunicación segura. Constantes como pi (π) y el número de Euler (e) son cruciales en todo —desde la geometría hasta la criptografía— garantizando nuestra seguridad digital.
+## Myšlenka
 
-En criptografía, las constantes tienen un propósito único. Se eligen meticulosamente, no de forma arbitraria, conformando el fundamento de métodos de cifrado seguros como RSA y la criptografía de curva elíptica. Estas constantes son claves en el sentido más literal, protegiendo nuestras comunicaciones, identidades digitales y transacciones electrónicas.
+### Nové pojetí přístupu ke konstantám: přesně a snadno
 
-## Idea
+[Knihovna Common (CMN)][00] je navržena tak, aby vývojářům poskytla přesný a přímočarý přístup ke konstantám, které potřebují, zabaleným do formátu kompatibilního s Rustem, což zajišťuje snadnou integraci i pochopení.
 
-### Redefinir el acceso a las constantes con precisión y facilidad
+Tím, že tyto konstanty zapouzdřuje do architektury vstřícné k Rustu, nabízí knihovna Common (CMN) robustní, rychlé a intuitivní prostředí. Přesnost zajišťuje typovou bezpečností a doplňuje ji o vyčerpávající dokumentaci, která usnadňuje integraci a prohlubuje pochopení.
 
-La [biblioteca Common (CMN)][00] está diseñada para dar a los desarrolladores un acceso preciso y directo a las constantes que necesitan, empaquetadas en un formato compatible con Rust, garantizando una integración y comprensión sencillas.
+## Dopad
 
-Al encapsular estas constantes en una arquitectura amigable con Rust, la biblioteca Common (CMN) ofrece una experiencia robusta, rápida e intuitiva. Se compromete con la precisión a través de la seguridad de tipos, complementada con una documentación exhaustiva, simplificando la integración y reforzando la comprensión.
+### Vylaďování aplikací v Rustu pomocí spolehlivých konstant
 
-## Impacto
+Knihovna Common (CMN) poskytuje vývojářům v Rustu širokou škálu přesných matematických a kryptografických konstant. Tato přesnost pomáhá předcházet chybám a posiluje bezpečnost. Díky svému multiplatformnímu návrhu a podrobné dokumentaci činí CMN vývoj a nasazování aplikací v Rustu jednodušším a spolehlivějším.
 
-### Afinar las aplicaciones Rust con constantes fiables
+Knihovna Common (CMN), navržená s ohledem na přenositelnost, zaručuje, že aplikace v Rustu lze vyvinout jednou a nasadit kdekoli, bez obav o kompatibilitu. Vyčerpávající dokumentace knihovny také znamená, že ji vývojáři mohou snadno začlenit do svých projektů a rychle se v ní zorientovat.
 
-La biblioteca Common (CMN) proporciona a los desarrolladores Rust una amplia gama de constantes matemáticas y criptográficas precisas. Esta precisión ayuda a prevenir errores y refuerza la seguridad. Con su diseño multiplataforma y su documentación detallada, CMN hace que el desarrollo y el despliegue de aplicaciones Rust sean más sencillos y fiables.
+## Pobídky
 
-Diseñada con la portabilidad en mente, la biblioteca Common (CMN) garantiza que las aplicaciones Rust puedan desarrollarse una vez y desplegarse en cualquier parte, sin preocupaciones de compatibilidad. La documentación exhaustiva de la biblioteca significa también que los desarrolladores pueden integrarla fácilmente en sus proyectos y ponerse al día rápidamente.
+### Posilte své aplikace v Rustu s knihovnou Common (CMN)
 
-## Incentivos
+Pro aplikace v Rustu, které závisejí na matematických nebo kryptografických konstantách, je knihovna Common (CMN) neocenitelným zdrojem. Nabízí:
 
-### Refuerce sus aplicaciones Rust con la biblioteca Common (CMN)
+- **Avogadrova konstanta:** počet atomů v jednom molu látky.
+- **Boltzmannova konstanta:** konstanta vztahující energii k teplotě.
+- **Eulerovo číslo:** základ přirozeného logaritmu.
+- **Funkce gama:** speciální funkce, která se objevuje v mnoha oblastech matematiky a fyziky.
+- **Zlatý řez:** číslo, které se objevuje v mnoha přírodních a matematických objektech.
+- **Číslo pí:** poměr mezi obvodem a průměrem kruhu.
+- **Planckova konstanta:** kvantum účinku.
+- **Stříbrný řez:** číslo podobné zlatému řezu.
+- **Tau:** dvojnásobek matematické konstanty pí.
+- **Odmocnina ze 3:** kladné řešení rovnice x^2 = 3.
+- **Odmocnina z 5:** kladné řešení rovnice x^2 = 5.
 
-Para las aplicaciones Rust que dependen de constantes matemáticas o criptográficas, la biblioteca Common (CMN) es un recurso inestimable. Propone:
+Toto je jen několik z mnoha matematických a kryptografických konstant dostupných v knihovně Common (CMN). Další informace najdete v dokumentaci knihovny Common (CMN): [https://lib.rs/crates/cmn][01].
 
-- **Número de Avogadro**: número de átomos en un mol de sustancia.
-- **Constante de Boltzmann**: constante que relaciona energía y temperatura.
-- **Número de Euler**: base del logaritmo natural.
-- **Función Gamma**: función especial que aparece en muchos campos matemáticos y físicos.
-- **Número áureo**: número que aparece en muchos objetos naturales y matemáticos.
-- **Pi**: proporción entre la circunferencia y el diámetro de un círculo.
-- **Constante de Planck**: cuanto de acción.
-- **Número de plata**: número similar al número áureo.
-- **Tau**: doble de la constante matemática pi.
-- **Raíz cuadrada de 3**: solución positiva de la ecuación x² = 3.
-- **Raíz cuadrada de 5**: solución positiva de la ecuación x² = 5.
+Mezi přínosy používání knihovny Common (CMN) patří:
 
-Estas son solo algunas de las numerosas constantes matemáticas y criptográficas disponibles en la biblioteca Common (CMN). Para más información, consulte la documentación: [https://lib.rs/crates/cmn][01].
+- **Přesnost:** zajišťuje přesné matematické výpočty.
+- **Spolehlivost:** důkladně testovaná knihovna.
+- **Bezpečnost:** typová bezpečnost pomáhá předcházet zranitelnostem.
+- **Přenositelnost:** používejte ji snadno na různých platformách.
+- **Dokumentace:** učte se rychle díky vyčerpávajícím průvodcům.
+- **Univerzálnost** ideální pro širokou škálu výpočetních úloh.
 
-Los beneficios de utilizar la biblioteca Common (CMN) incluyen:
+Případy užití knihovny Common (CMN) jsou rozmanité a zahrnují:
 
-- **Precisión**: garantiza cálculos matemáticos precisos.
-- **Fiabilidad**: una biblioteca rigurosamente probada.
-- **Seguridad**: la seguridad de tipos ayuda a prevenir las vulnerabilidades.
-- **Portabilidad**: utilícela en diversas plataformas con facilidad.
-- **Documentación**: aprenda rápidamente con guías exhaustivas.
-- **Polivalencia**: ideal para una amplia gama de tareas computacionales.
+- Generování šifrovacích klíčů a bezpečnou tvorbu čísel.
+- Pokročilé matematické výpočty.
+- Vývoj aplikací ve vědě, financích a kryptografii.
+- Inovace ve strojovém učení, AI a blockchainu.
 
-Los casos de uso de la biblioteca Common (CMN) son diversos:
+Jak se obor kryptografie vyvíjí, vyvíjí se s ním i knihovna Common (CMN), která drží krok s trendy, jako jsou kvantové výpočty a homomorfní šifrování, aby vaše aplikace zůstaly bezpečné a připravené na budoucnost.
 
-- Generación de claves de cifrado y creación segura de números.
-- Cálculos matemáticos avanzados.
-- Desarrollo de aplicaciones en ciencia, finanzas y criptografía.
-- Innovaciones en aprendizaje automático, IA y blockchain.
+Vývojáři, kteří v Rustu potřebují matematické nebo kryptografické konstanty, by měli knihovnu Common (CMN) považovat za primární zdroj. Knihovna Common (CMN) je svobodný nástroj s otevřeným zdrojovým kódem a je k dispozici ke stažení z [repozitáře na GitHubu ⧉][02].
 
-A medida que el campo de la criptografía evoluciona, la biblioteca Common (CMN) le sigue el paso, manteniéndose por delante de tendencias como la computación cuántica y el cifrado homomórfico para garantizar que sus aplicaciones permanezcan seguras y perdurables.
-
-Los desarrolladores que necesiten constantes matemáticas o criptográficas en Rust deberían considerar la biblioteca Common (CMN) como recurso principal. Common (CMN) es una herramienta gratuita y de código abierto, disponible para su descarga desde el [repositorio GitHub ⧉][02].
-
-[00]: https://github.com/sebastienrousseau/cmn "The Common (CMN) library website"
-[01]: https://docs.rs/cmn/latest/cmn/ "The Common (CMN) library documentation"
-[02]: https://github.com/sebastienrousseau/cmn "The Common (CMN) library GitHub repository"
+[00]: https://github.com/sebastienrousseau/cmn "Web knihovny Common (CMN)"
+[01]: https://docs.rs/cmn/latest/cmn/ "Dokumentace knihovny Common (CMN)"
+[02]: https://github.com/sebastienrousseau/cmn "Repozitář knihovny Common (CMN) na GitHubu"

@@ -1,102 +1,202 @@
 ---
-title: "Blockchain: la tecnología que importa en 2018"
-subtitle: "Criptografía de clave privada y redes entre pares al servicio de transacciones seguras"
-description: "La narración del viaje extraordinario para asegurar las transacciones digitales mediante criptografía de clave privada y redes entre pares (P2P)."
-date: "January 2, 2018"
-language: "th-TH"
-locale: "th_TH"
+
+# Front Matter (YAML)
+
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+banner_alt: "แล็ปท็อปที่ปิดเครื่องวางอยู่บนโต๊ะไม้สีน้ำตาล"
+banner_height: "100vh"
+banner_width: "100vw"
 banner: "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
-banner_alt: "Ordenador portátil apagado sobre una mesa de madera marrón"
-keywords: "blockchain, criptomoneda, Bitcoin, P2P, smart contract, libro mayor distribuido, finanzas, cadena de suministro, identidad digital, tokenización"
+cdn: "https://cloudcdn.pro/clients"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "Jan 02, 2018"
+description: "เรื่องราวของเส้นทางอันน่าทึ่งในการรักษาความปลอดภัยของธุรกรรมดิจิทัลผ่านการเข้ารหัสด้วยกุญแจส่วนตัวและเครือข่ายแบบเพียร์ทูเพียร์ (P2P)"
+format-detection: "telephone=no"
+hreflang: "th"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"
+image_alt: "ภาพเหมือนขาวดำของ Sebastien Rousseau"
+image_height: "162"
+image_width: "162"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
+keywords: "pain001, iso 20022, การชำระเงินอัตโนมัติ, การลดต้นทุน, การประมวลผลการชำระเงิน, ไฟล์การชำระเงิน, การเริ่มต้นการชำระเงิน, ข้อความ pain, มาตรฐานข้อความ pain, การตรวจสอบข้อความ pain"
+language: "th"
+layout: "report"
+locale: "th_TH"
+logo_alt: "โลโก้ของ Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: "active"
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+short_name: "sebastienrousseau"
+subtitle: "บล็อกเชน บัญชีแยกประเภทแบบกระจาย และเทคโนโลยีที่สำคัญในปี 2018"
+tags: "pain001, ISO 20022, การชำระเงินอัตโนมัติ, การลดต้นทุน, การชำระเงิน, ไฟล์การชำระเงิน, ข้อความ pain, DORA, การเข้ารหัสหลังควอนตัม, AI, เงินฝากแบบโทเคน, Rust, การธนาคารแบบคลาวด์เนทีฟ, การชำระเงินข้ามพรมแดน, stablecoins"
+theme-color: "0, 67, 165"
+title: "บล็อกเชนอธิบายให้เข้าใจ เทคโนโลยีที่สำคัญที่สุด"
+url: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+
+# RSS - The RSS feed front matter (YAML).
+atom_link: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/rss.xml"
+category: "Blockchain"
+docs: "https://validator.w3.org/feed/docs/rss2.html"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "เรื่องราวของเส้นทางอันน่าทึ่งในการรักษาความปลอดภัยของธุรกรรมดิจิทัลผ่านการเข้ารหัสด้วยกุญแจส่วนตัวและเครือข่ายแบบเพียร์ทูเพียร์ (P2P)"
+item_guid: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/rss.xml"
+item_link: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/rss.xml"
+item_pub_date: "Tue, 02 Jan 2018 02:20:02 +0000"
+item_title: "บล็อกเชนอธิบายให้เข้าใจ เทคโนโลยีที่สำคัญที่สุด"
+last_build_date: "Tue, 02 Jan 2018 02:20:02 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Tue, 02 Jan 2018 02:20:02 +0000"
+ttl: "60"
+type: "website"
+webmaster: "contact@sebastienrousseau.com"
+
+# Apple - The Apple front matter (YAML).
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "Sebastien Rousseau"
+apple-touch-fullscreen: "yes"
+
+# MS Application - The MS Application front matter (YAML).
+
+msapplication-navbutton-color: "0, 67, 165"
+
+# Twitter Card - The Twitter Card front matter (YAML).
+
+twitter_card: "summary_large_image"
+twitter_creator: "@wwdseb"
+twitter_description: "เรื่องราวของเส้นทางอันน่าทึ่งในการรักษาความปลอดภัยของธุรกรรมดิจิทัลผ่านการเข้ารหัสด้วยกุญแจส่วนตัวและเครือข่ายแบบเพียร์ทูเพียร์ (P2P)"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "โลโก้ของ Sebastien Rousseau"
+twitter_site: "@wwdseb"
+twitter_title: "บล็อกเชนอธิบายให้เข้าใจ เทคโนโลยีที่สำคัญที่สุด"
+twitter_url: "https://sebastienrousseau.com"
+
+# Humans.txt - The Humans.txt front matter (YAML).
+author_website: "https://sebastienrousseau.com"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "ขอบคุณที่อ่าน!"
+site_last_updated: "2023-07-05"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+
+excerpt: "บล็อกเชน เทคโนโลยีพื้นฐานที่ขับเคลื่อนการเติบโตอย่างรวดเร็วของคริปโทเคอร์เรนซี กำลังเปลี่ยนแปลงธุรกิจ บริการทางการเงิน และตลาดทุน เทคโนโลยีนี้กำลังเปลี่ยน…"
+last_reviewed: "2026-05-11"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+# บล็อกเชนอธิบายให้เข้าใจ เทคโนโลยีที่สำคัญที่สุด
 
-**ประเด็นสำคัญ**
+![อาคารสูงมากที่มีรูจำนวนมาก](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"
 
-![Ordenador portátil apagado sobre una mesa de madera marrón](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"
+บล็อกเชน ซึ่งเป็นเทคโนโลยีพื้นฐานที่อยู่เบื้องหลังการเติบโตอย่างรวดเร็วของคริปโทเคอร์เรนซี กำลังเปลี่ยนแปลงธุรกิจ บริการทางการเงิน และตลาดทุน เทคโนโลยีนี้เปลี่ยนวิธีที่เราทำธุรกรรมและดำเนินงาน โดยทำให้ข้อมูลเข้าถึงได้ง่ายขึ้น โปร่งใสขึ้น และปลอดภัยขึ้น
 
-La blockchain, tecnología subyacente al ascenso fulgurante de las criptomonedas, está transformando empresas, servicios financieros y mercados de capitales. Esta tecnología transformadora cambia la manera en que llevamos a cabo las transacciones y operaciones, haciendo los datos más accesibles, transparentes y seguros.
+## มุมมอง
 
-## Perspectiva
+### จุดกำเนิดของฉันทามติแบบกระจายศูนย์
 
-### La génesis del consenso descentralizado
+บล็อกเชนถือกำเนิดขึ้นในฐานะนวัตกรรมพื้นฐานที่ทำให้การพัฒนาคริปโทเคอร์เรนซีอย่าง [Bitcoin][08] เป็นไปได้ โดยแก่นแท้แล้ว บล็อกเชนทำหน้าที่เป็นบัญชีแยกประเภทแบบเปิดและกระจาย ที่บันทึกธุรกรรมในลักษณะที่ตรวจสอบได้และถาวร
 
-La blockchain emergió como la innovación fundacional que hizo posible el desarrollo de criptomonedas como [Bitcoin][08]. En su núcleo, la blockchain es un libro mayor abierto y distribuido que registra las transacciones de forma verificable y permanente.
+ด้วยการอนุญาตให้ข้อมูลดิจิทัลถูกกระจายออกไปโดยไม่ถูกคัดลอก บล็อกเชนได้บุกเบิกระบบแบบเพียร์ทูเพียร์สำหรับการสร้างฉันทามติและความไว้วางใจ เป็นครั้งแรกที่ธุรกรรมสามารถได้รับการอนุมัติแบบกระจายศูนย์โดยไม่ต้องอาศัยตัวกลางแบบรวมศูนย์
 
-Al permitir que la información digital se distribuya sin ser copiada, la blockchain inauguró un sistema entre pares revolucionario para establecer consenso y confianza. Por primera vez, las transacciones podían aprobarse de forma descentralizada, sin un intermediario centralizado.
+ความสามารถของบล็อกเชนในการอำนวยความสะดวกให้เกิดการปฏิสัมพันธ์ออนไลน์ที่ปลอดภัยระหว่างคนแปลกหน้า ได้วางรากฐานให้แก่คริปโทเคอร์เรนซี นอกเหนือจากด้านการเงิน มันยังมีศักยภาพสูงในการเปลี่ยนแปลงการไหลของข้อมูลและธุรกรรมในหลากหลายอุตสาหกรรม
 
-La capacidad de la blockchain para facilitar interacciones seguras en línea entre desconocidos sentó las bases de las criptomonedas. Más allá de las finanzas, encierra un potencial revolucionario para transformar los flujos de datos y transacciones en todos los sectores.
+## แนวคิด
 
-## Idea
+### การขจัดบุคคลที่สามที่เชื่อถือได้ด้วยบัญชีแยกประเภทแบบกระจาย
 
-### Eliminar los terceros de confianza gracias a los libros mayores distribuidos
+บล็อกเชนจัดระเบียบข้อมูลออกเป็นบล็อก ซึ่งเชื่อมโยงเข้าด้วยกันตามลำดับเวลา บล็อกใหม่ถูกเพิ่มเข้ามาโดยเครือข่ายคอมพิวเตอร์แบบกระจายศูนย์แทนที่จะเป็นหน่วยงานกลาง บัญชีแยกประเภทแบบกระจายนี้ถูกจัดเก็บและซิงโครไนซ์พร้อมกันในหลายโหนดทั่วเครือข่าย
 
-Una blockchain organiza los datos en bloques, encadenados cronológicamente. Los nuevos bloques se añaden a través de una red descentralizada de ordenadores en lugar de una parte central. Este libro mayor distribuido se almacena y sincroniza simultáneamente en varios nodos de la red.
+แต่ละบล็อกบรรจุชุดธุรกรรมที่มีการประทับเวลา ซึ่งไม่สามารถแก้ไขได้เมื่อบันทึกแล้ว การเข้ารหัสรับประกันความมั่นคงปลอดภัยและความถูกต้องขณะที่ธุรกรรมได้รับการอนุมัติโดยผู้เข้าร่วมเครือข่าย สัญญาอัจฉริยะ (smart contracts) ช่วยให้สามารถเขียนโค้ดความรับผิดชอบที่ซับซ้อนและดำเนินการโดยอัตโนมัติ
 
-Los bloques contienen lotes de transacciones con marca temporal, inmutables una vez registrados. La criptografía garantiza la seguridad y la exactitud mientras las transacciones son aprobadas por los participantes de la red. Los smart contracts permiten codificar y ejecutar automáticamente responsabilidades complejas.
+ด้วยการทำให้ธุรกรรมแบบเพียร์ทูเพียร์เป็นไปได้โดยไม่ต้องมีตัวกลางแบบรวมศูนย์ บล็อกเชนขจัดจุดล้มเหลวจุดเดียวและสร้างความโปร่งใส ผู้ใช้แต่ละรายยังคงควบคุมข้อมูลและธุรกรรมของตนเอง แนวทางแบบกระจายศูนย์สร้างความไว้วางใจและความรับผิดชอบในระดับขนาดใหญ่
 
-Al permitir transacciones entre pares sin intermediarios centralizados, las blockchains eliminan los puntos únicos de fallo y crean transparencia. Los usuarios individuales conservan el control sobre sus datos y transacciones. El enfoque descentralizado construye confianza y responsabilidad a gran escala.
+## ผลกระทบ
 
-## Impacto
+### การกระตุ้นการเปลี่ยนแปลงครั้งใหญ่ในทุกภาคส่วน
 
-### Una transformación radical en todos los sectores
+บล็อกเชนกำลังทำให้เกิดการเปลี่ยนแปลงอย่างลึกซึ้งในด้านการเงิน การธนาคาร ห่วงโซ่อุปทาน การดูแลสุขภาพ อสังหาริมทรัพย์ และภาคส่วนอื่นๆ ด้วยการขจัดความไม่สมมาตรของข้อมูลและลดความเสี่ยงของคู่สัญญา บล็อกเชนส่งเสริมความโปร่งใสและความถูกต้องสมบูรณ์ในทุกธุรกรรม
 
-La blockchain permite cambios profundos en finanzas, banca, cadenas de suministro, sanidad, sector inmobiliario y otros sectores. Al eliminar la asimetría de información y mitigar los riesgos de contraparte, la blockchain favorece la transparencia y la integridad de las transacciones.
+คริปโทเคอร์เรนซีได้นำเสนอรูปแบบใหม่ของเงินที่เขียนโปรแกรมได้ การเงินแบบกระจายศูนย์ และการโอนแบบเพียร์ทูเพียร์ระดับโลก ในด้านการธนาคาร บล็อกเชนช่วยเพิ่มความเร็วและประสิทธิภาพของการชำระเงิน การแปลงเป็นโทเคน (tokenization) ยังเปิดทางให้เกิดวิธีการระดมทุนแบบใหม่
 
-Las criptomonedas han introducido nuevos modelos de dinero programable, finanzas descentralizadas y transferencias globales entre pares. En la banca, las blockchains mejoran la velocidad y la eficiencia de los pagos. La tokenización permite también nuevos métodos de financiación.
+บล็อกเชนยังรับประกันแหล่งที่มาของผลิตภัณฑ์และการจัดหาอย่างมีจริยธรรมในห่วงโซ่อุปทาน การจัดการเวชระเบียนใช้ประโยชน์จากความมั่นคงปลอดภัยและความถูกต้องของมัน บล็อกเชนยังเริ่มเปลี่ยนแปลงการลงคะแนนเสียง การติดตามค่าลิขสิทธิ์เพลง และระบบอัตลักษณ์ดิจิทัล
 
-La blockchain garantiza asimismo el origen de los productos y un aprovisionamiento ético en las cadenas logísticas. La gestión de historiales médicos aprovecha su seguridad y exactitud. La blockchain comienza incluso a sacudir el voto, el seguimiento de las regalías musicales y los sistemas de identidad digital.
+## กรณีการใช้งาน
 
-## Casos de uso
+### การนำไปใช้งานที่หลากหลายในทุกอุตสาหกรรม
 
-### Implementaciones diversas en todos los sectores
+ความยืดหยุ่นของบล็อกเชนได้จุดประกายการประยุกต์ใช้ที่สร้างสรรค์ในทุกภาคส่วน:
 
-La versatilidad de la blockchain ha generado aplicaciones innovadoras en todos los sectores:
+- **การเงิน:** คริปโทเคอร์เรนซี แพลตฟอร์มแลกเปลี่ยนแบบกระจายศูนย์ การซื้อขายหลักทรัพย์ที่แปลงเป็นโทเคน การชำระเงินข้ามพรมแดน
 
-- **Finanzas**: criptomonedas, plataformas descentralizadas, negociación de valores tokenizados, pagos transfronterizos
+- **ห่วงโซ่อุปทาน:** การติดตามแหล่งที่มาของสินค้า การเพิ่มความโปร่งใสในการผลิตและการกระจายสินค้า
 
-- **Cadena de suministro**: trazabilidad de la procedencia de los bienes, mejora de la transparencia en producción y distribución
+- **การดูแลสุขภาพ:** การจัดเก็บข้อมูลทางการแพทย์อย่างปลอดภัย การอำนวยความสะดวกในการแบ่งปันข้อมูลระหว่างผู้ให้บริการ
 
-- **Sanidad**: almacenamiento seguro de datos médicos, facilitación del intercambio entre proveedores
+- **ภาครัฐ:** ระบบบันทึกอัตลักษณ์ดิจิทัล ระบบการลงคะแนนเสียงที่โปร่งใส
 
-- **Gobierno**: registros de identidad digital, sistemas de votación transparentes
+- **การประกันภัย:** การประมวลผลอัตโนมัติด้วยสัญญาอัจฉริยะ การป้องกันการฉ้อโกง
 
-- **Seguros**: tramitación automatizada mediante smart contracts, prevención del fraude
+- **อสังหาริมทรัพย์:** ธุรกรรมอสังหาริมทรัพย์ที่แปลงเป็นโทเคน ทะเบียนกรรมสิทธิ์ร่วม
 
-- **Inmobiliario**: transacciones inmobiliarias tokenizadas, registro de títulos compartido
+- **พลังงาน:** การซื้อขายพลังงานแบบเพียร์ทูเพียร์ การติดตามเครดิตพลังงานหมุนเวียน
 
-- **Energía**: intercambio de energía entre pares, seguimiento de créditos de energía renovable
+## ข้อจำกัด
 
-## Límites
+### อุปสรรคที่ยังคงมีต่อการนำไปใช้ในกระแสหลัก
 
-### Obstáculos persistentes para la adopción masiva
+แม้บล็อกเชนจะสร้างการเปลี่ยนแปลง แต่ข้อจำกัดด้านการกำกับดูแล ความสามารถในการทำงานร่วมกัน ความซับซ้อน และความสามารถในการขยายตัว ยังคงเป็นอุปสรรคต่อการนำไปใช้ในกระแสหลัก
 
-Aunque transformadora, la blockchain presenta limitaciones —regulación, interoperabilidad, complejidad y escalabilidad— que frenan la adopción masiva.
+การขาดความชัดเจนด้านการกำกับดูแลระหว่างเขตอำนาจศาลขัดขวางการลงทุนเชิงสถาบัน การแก้ไขความท้าทายด้านความเป็นส่วนตัวและการจัดการข้อมูลเป็นเรื่องสำคัญ ความมั่นคงปลอดภัยของเครือข่ายและการใช้พลังงานก็ต้องการความใส่ใจเมื่อบล็อกเชนขยายตัว
 
-La falta de claridad regulatoria entre jurisdicciones inhibe la inversión institucional. Resolver los desafíos relacionados con la privacidad y la gestión de datos es crucial. La seguridad de la red y el consumo energético también requieren atención a medida que la blockchain escala.
+แพลตฟอร์มที่แยกกันทำงานจำเป็นต้องบรรลุความสามารถในการทำงานร่วมกัน ประสบการณ์ผู้ใช้และการออกแบบส่วนติดต่อต้องได้รับการปรับปรุง ความรู้ความเข้าใจเกี่ยวกับบล็อกเชนในหมู่ประชาชนและผู้กำหนดนโยบายจะช่วยผลักดันการยอมรับมากยิ่งขึ้น
 
-Las plataformas en silos deben alcanzar la interoperabilidad. La experiencia de usuario y el diseño de interfaz deben mejorar. La alfabetización en blockchain del público general y de los responsables políticos acelerará aún más la aceptación.
+## แนวโน้ม
 
-## Perspectivas
+### ทิศทางเชิงบวกท่ามกลางความไม่แน่นอน
 
-### Trayectoria positiva pese a las incertidumbres
+บล็อกเชนดูเหมือนพร้อมสำหรับการเติบโตแบบทวีคูณต่อเนื่อง เมื่อองค์กรต่างๆ ตระหนักถึงศักยภาพในการเปลี่ยนแปลงของมัน อย่างไรก็ตาม ความไม่แน่นอนด้านการกำกับดูแล มาตรฐาน และการรับรู้ของสาธารณชนยังคงเป็นอุปสรรค
 
-La blockchain parece dispuesta a continuar su crecimiento exponencial a medida que las organizaciones reconocen su potencial disruptivo. Sin embargo, las incertidumbres en torno a la regulación, los estándares y la percepción pública siguen siendo obstáculos.
+คาดว่าเทคโนโลยีนี้จะแทรกซึมไปทั่วภาคเศรษฐกิจ โดยมีการคาดการณ์การเติบโตสูงในอุตสาหกรรมการเงิน ห่วงโซ่อุปทาน และการดูแลสุขภาพ เป็นต้น แต่นวัตกรรมที่มีความรับผิดชอบเป็นสิ่งจำเป็น
 
-Se espera que la tecnología se extienda a través de los sectores económicos, con un fuerte crecimiento proyectado especialmente en finanzas, cadenas logísticas y sanidad. Pero una innovación responsable es esencial.
+ด้วยปัจจัยสนับสนุนอย่างนโยบายที่เอื้ออำนวย โซลูชันด้านการทำงานร่วมกัน และการออกแบบที่ยึดผู้ใช้เป็นศูนย์กลางที่ช่วยข้ามข้อจำกัดในปัจจุบัน บล็อกเชนอาจปรับเปลี่ยนวิธีที่สังคมบันทึก โอน และกระจายมูลค่าอย่างลึกซึ้ง
 
-Con vientos favorables —políticas de apoyo, soluciones de interoperabilidad y diseño centrado en el usuario— que superen las limitaciones actuales, la blockchain podría recablear profundamente la manera en que la sociedad registra, transfiere y distribuye el valor.
+## บทสรุป
 
-## Conclusión
+### การวางรากฐานสำหรับอนาคตแบบกระจายศูนย์
 
-### Sentar las bases de un futuro descentralizado
+การเปิดตัวของบล็อกเชนถือเป็นช่วงเวลาสำคัญที่ขยายความเป็นไปได้ในการแลกเปลี่ยนสินทรัพย์และข้อมูลดิจิทัลอย่างปลอดภัยผ่านฉันทามติแบบกระจายศูนย์ การเป็นรากฐานให้แก่คริปโทเคอร์เรนซีเป็นเพียงจุดเริ่มต้นเท่านั้น
 
-La introducción de la blockchain marca un momento crucial que amplió las posibilidades de intercambio seguro de activos y datos digitales mediante un consenso descentralizado. Sustentar las criptomonedas no es más que su punto de partida.
+ด้วยการขจัดบุคคลที่สามที่เชื่อถือได้ บล็อกเชนมอบศักยภาพในการปรับโครงสร้างการไหลของมูลค่าในด้านการเงิน การพาณิชย์ ธรรมาภิบาล และสังคม แม้จะมีข้อจำกัด แต่ทิศทางของมันชี้ไปยังอนาคตแบบกระจายศูนย์ที่น่าสนใจในทุกภาคส่วน
 
-Al eliminar los terceros de confianza, la blockchain ofrece el potencial de reestructurar los flujos de valor en finanzas, comercio, gobernanza y sociedad. Pese a sus límites, su trayectoria apunta a un emocionante futuro descentralizado en todos los sectores.
+เช่นเดียวกับอินเทอร์เน็ตก่อนหน้านี้ บล็อกเชนเป็นเทคโนโลยีพื้นฐานที่พร้อมจะเปิดโอกาสให้แก่รูปแบบใหม่ๆ ที่ขับเคลื่อนด้วยความโปร่งใสและความไว้วางใจแบบเพียร์ทูเพียร์ นวัตกรรมนี้มีแนวโน้มที่จะปรับโฉมเศรษฐกิจดิจิทัลและชีวิตที่เชื่อมต่อของเราในอีกหลายปีข้างหน้า
 
-Al igual que internet antes que ella, la blockchain es una tecnología fundacional dispuesta a desbloquear nuevos modelos construidos sobre la transparencia y la confianza entre pares. Esta innovación revolucionaria promete rediseñar nuestras economías digitales y nuestras vidas conectadas en los próximos años.
+![divider](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+**จบการนำเสนอเพียงเท่านี้ ขอบคุณสำหรับเวลาของท่าน**
+
+หากท่านมีคำถามใด กรุณาอย่าลังเลที่จะติดต่อผมผ่าน [LinkedIn ⧉][11] หรือผ่าน [หน้าติดต่อ][10] ขอบคุณอีกครั้งสำหรับเวลาของท่าน และผมหวังว่าจะได้รับข่าวจากท่าน
+
+[**❬ กลับไปยังบทความ**][09]
 
 [08]: /2018-01-01-bitcoin-the-year-in-review/index.html
+[09]: /articles/index.html "กลับไปยังบทความ"
+[10]: /contact/index.html "ติดต่อ Sebastien Rousseau"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau บน LinkedIn"

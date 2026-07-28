@@ -1,97 +1,93 @@
 ---
-title: "IA generativa en la publicidad: Amazon Rufus y Meta"
-subtitle: "Cómo la IA transforma las interacciones con los consumidores y la dinámica publicitaria"
-description: "Cómo la IA transforma la publicidad: perspectivas sobre Rufus de Amazon y los últimos desarrollos de Meta. Descubra el impacto en el compromiso del consumidor."
+title: "AI เชิงสร้างสรรค์ในการโฆษณา: Amazon Rufus และ Meta"
+subtitle: "AI เปลี่ยนแปลงปฏิสัมพันธ์กับผู้บริโภคและพลวัตของการโฆษณาอย่างไร"
+description: "สำรวจว่า AI เปลี่ยนแปลงการโฆษณาอย่างไร พร้อมมุมมองเกี่ยวกับ Rufus ของ Amazon และพัฒนาการล่าสุดของ Meta ทำความเข้าใจผลกระทบต่อการมีส่วนร่วมของผู้บริโภค"
 date: "February 08, 2024"
 language: "th-TH"
 locale: "th_TH"
 banner: "https://cloudcdn.pro/stocks/images/advertising-ai.webp"
-banner_alt: "Una mujer robot con mariposas y flores"
-keywords: "IA en la publicidad, Amazon Rufus, herramientas IA Meta, segmentación del consumidor, tecnología publicitaria, chatbots IA, tendencias de marketing digital, analítica IA, IA creativa, optimización de campañas"
+banner_alt: "หญิงหุ่นยนต์ท่ามกลางผีเสื้อและดอกไม้"
+keywords: "AI ในการโฆษณา, Amazon Rufus, เครื่องมือ AI ของ Meta, การกำหนดกลุ่มเป้าหมายผู้บริโภค, เทคโนโลยีการโฆษณา, แชตบอต AI, แนวโน้มการตลาดดิจิทัล, การวิเคราะห์ด้วย AI, AI เชิงสร้างสรรค์, การเพิ่มประสิทธิภาพแคมเปญโฆษณา"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+ปัญญาประดิษฐ์ (AI) กำลังเปลี่ยนแปลงการโฆษณาอย่างมีนัยสำคัญ โดยมอบประสิทธิภาพและผลลัพธ์ที่ไม่เคยมีมาก่อนให้แก่แคมเปญโฆษณา การเปิดตัว [**Rufus ⧉**][00] ของ Amazon ซึ่งเป็นแชตบอตผู้ช่วยช้อปปิ้งส่วนบุคคล ควบคู่ไปกับการที่ Meta ผสาน AI เข้ากับแพลตฟอร์มต่าง ๆ ผ่านผู้ช่วยเชิงสนทนาและเครื่องมือสร้างสรรค์ เป็นตัวอย่างที่ชัดเจนของแนวหน้าในการเปลี่ยนแปลงนี้ พัฒนาการเหล่านี้ไม่เพียงยกระดับประสบการณ์ของผู้บริโภค แต่ยังเปิดช่องทางใหม่สำหรับการกำหนดกลุ่มเป้าหมายและการมีส่วนร่วมที่แม่นยำ ตอกย้ำบทบาทสำคัญของ AI ต่ออนาคตของการโฆษณา
 
-**ประเด็นสำคัญ**
+## จุดเริ่มต้นของ AI ในการโฆษณา
 
-La inteligencia artificial (IA) transforma radicalmente el panorama publicitario, ofreciendo una eficiencia sin precedentes a las campañas. La introducción por Amazon de [**Rufus ⧉**][00], un chatbot asistente de compras personal, y la integración por Meta de la IA en sus plataformas —asistentes conversacionales y herramientas creativas— ilustran la vanguardia de esta revolución. Estos avances no solo mejoran la experiencia del consumidor, sino que también abren nuevas vías para una segmentación y un compromiso precisos, subrayando el papel pivote de la IA en el futuro de la publicidad.
-
-## El amanecer de la IA en la publicidad
-
-En la era digital, la IA se ha impuesto como un game-changer para la industria publicitaria, redefiniendo los paradigmas de la creatividad, el análisis y el compromiso del consumidor. Con la capacidad de gestionar y analizar vastas cantidades de datos, generar contenido creativo y segmentar a los consumidores con una precisión inigualable, las tecnologías de IA no solo aumentan, sino que también automatizan procesos publicitarios complejos. Este artículo explora el impacto transformador de la IA sobre la publicidad, centrándose en los últimos desarrollos de los gigantes tecnológicos Amazon y Meta, y sus implicaciones para la industria.
+ในยุคดิจิทัล ปัญญาประดิษฐ์ (AI) ได้กลายเป็นปัจจัยที่เปลี่ยนอุตสาหกรรมการโฆษณาอย่างมีนัยสำคัญ ด้วยการนิยามกรอบความคิดด้านความคิดสร้างสรรค์ การวิเคราะห์ และการมีส่วนร่วมของผู้บริโภคขึ้นใหม่ ด้วยความสามารถในการจัดการและวิเคราะห์ข้อมูลปริมาณมหาศาล สร้างเนื้อหาเชิงสร้างสรรค์ และกำหนดกลุ่มเป้าหมายผู้บริโภคด้วยความแม่นยำที่ไม่มีใครเทียบได้ เทคโนโลยี AI ไม่เพียงเสริมกำลัง แต่ยังทำให้กระบวนการโฆษณาที่ซับซ้อนเป็นอัตโนมัติ บทความนี้พิจารณาผลกระทบเชิงเปลี่ยนแปลงของ AI ต่อการโฆษณา โดยมุ่งเน้นพัฒนาการล่าสุดจากบริษัทเทคโนโลยีขนาดใหญ่อย่าง Amazon และ Meta และนัยที่มีต่ออุตสาหกรรม
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## La revolución IA en la publicidad
+## การเปลี่ยนแปลงการโฆษณาด้วย AI
 
-### La ventaja IA
+### ข้อได้เปรียบของ AI
 
-La infusión de IA en la publicidad señala una nueva era de eficacia y eficiencia. Según las encuestas recientes del sector, más del 65 % de los anunciantes han reportado al menos un 20 % más de ROI en las campañas optimizadas por IA respecto a años anteriores. Los algoritmos de IA sobresalen identificando perspectivas en grandes conjuntos de datos que requerirían equipos de analistas para descubrirlas manualmente. Una plataforma de analítica de marketing señaló que sus herramientas IA podían tratar más de 100 millones de puntos de datos para optimizar las campañas, una escala de análisis que la capacidad humana nunca podría alcanzar. Esta capacidad se extiende también a la generación creativa, donde los algoritmos IA de Meta pueden probar más de 10.000 variaciones de anuncios e identificar las creaciones de alto rendimiento en cuestión de horas. El alcance y la velocidad de tales aplicaciones —A/B testing de cientos de anuncios, análisis de las estrategias de los competidores, personalización del contenido para audiencias diversas— sobrepasan la capacidad humana. Esto no solo ahorra tiempo y recursos valiosos, sino que también mejora la precisión y la pertinencia de las campañas a un nivel sin precedentes.
+การนำ AI เข้าสู่การโฆษณาบ่งชี้ถึงยุคใหม่ของประสิทธิภาพและผลลัพธ์ จากการสำรวจอุตสาหกรรมล่าสุด ผู้ลงโฆษณากว่า 65% รายงานว่าได้ ROI สูงขึ้นอย่างน้อย 20% จากแคมเปญที่ปรับแต่งด้วย AI เมื่อเทียบกับปีก่อน ๆ อัลกอริทึม AI ทำได้ดีในการค้นหาข้อมูลเชิงลึกจากชุดข้อมูลขนาดใหญ่ที่ต้องใช้ทีมนักวิเคราะห์จำนวนมากในการค้นหาด้วยมือ แพลตฟอร์มวิเคราะห์การตลาดแห่งหนึ่งระบุว่าเครื่องมือ AI ของตนสามารถประมวลผลข้อมูลกว่า 100 ล้านจุดเพื่อปรับแต่งแคมเปญ ซึ่งเป็นขนาดของการวิเคราะห์ที่ขีดความสามารถของมนุษย์ไม่อาจทำได้ ความสามารถนี้ครอบคลุมไปถึงการสร้างงานสร้างสรรค์ด้วย โดยอัลกอริทึม AI ของ Meta สามารถทดสอบโฆษณากว่า 10,000 รูปแบบและระบุงานสร้างสรรค์ที่ให้ผลลัพธ์สูงได้ภายในไม่กี่ชั่วโมง ขอบเขตและความเร็วของการใช้งาน AI เช่นนี้ ทั้งการทดสอบ A/B โฆษณาหลายร้อยชิ้น การวิเคราะห์กลยุทธ์ของคู่แข่ง และการปรับเนื้อหาให้เหมาะกับกลุ่มเป้าหมายที่หลากหลาย อยู่เกินขีดความสามารถของมนุษย์ สิ่งนี้ไม่เพียงประหยัดเวลาและทรัพยากรที่มีค่า แต่ยังเพิ่มความแม่นยำและความเกี่ยวข้องของแคมเปญโฆษณาในระดับที่ไม่เคยมีมาก่อน
 
-### Más allá de las capacidades humanas
+### เกินขีดความสามารถของมนุษย์
 
-El alcance y la velocidad de la IA en las tareas publicitarias como el A/B testing de cientos de anuncios, el análisis de las estrategias de los competidores y la personalización de contenido para audiencias diversas sobrepasan la capacidad humana. Esto no solo ahorra tiempo y recursos valiosos, sino que mejora la precisión y la pertinencia de las campañas.
+ขอบเขตและความเร็วของ AI ในงานโฆษณา เช่น การทดสอบ A/B โฆษณาหลายร้อยชิ้น การวิเคราะห์กลยุทธ์ของคู่แข่ง และการปรับเนื้อหาให้เหมาะกับกลุ่มเป้าหมายที่หลากหลาย อยู่เกินขีดความสามารถของมนุษย์ สิ่งนี้ไม่เพียงประหยัดเวลาและทรัพยากรที่มีค่า แต่ยังเพิ่มความแม่นยำและความเกี่ยวข้องของแคมเปญโฆษณา
 
-### Experiencias del consumidor elevadas
+### ประสบการณ์ผู้บริโภคที่ยกระดับขึ้น
 
-El impacto de la IA en la publicidad es profundamente visible en las experiencias del consumidor elevadas que permite. Aprovechando la IA para la publicidad segmentada, las empresas pueden entregar un contenido más pertinente, atractivo y personalizado a los consumidores, aumentando así las tasas de conversión y la fidelidad a la marca.
+ผลกระทบของ AI ต่อการโฆษณาปรากฏชัดในประสบการณ์ผู้บริโภคที่ยกระดับขึ้น ด้วยการใช้ AI สำหรับการโฆษณาแบบกำหนดกลุ่มเป้าหมาย ธุรกิจสามารถส่งมอบเนื้อหาที่เกี่ยวข้อง น่าสนใจ และเป็นส่วนตัวมากขึ้นแก่ผู้บริโภค จึงเพิ่มอัตราการเปลี่ยนเป็นลูกค้าและความภักดีต่อแบรนด์
 
-### Una llamada a innovar
+### เหตุผลที่ต้องสร้างนวัตกรรม
 
-Para los anunciantes y empresas, los incentivos para adoptar la IA en la publicidad son claros: eficiencia superior, costes reducidos y mejor ROI. El panorama tecnológico IA en evolución ofrece una oportunidad para innovar, diferenciarse y capturar valor en el espacio competitivo de la publicidad digital.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## Foco en Rufus de Amazon
-
-### Personalizar la experiencia de compra
-
-La introducción por Amazon de Rufus, un chatbot asistente de compras personal, marca un avance significativo en el compromiso del consumidor pilotado por IA. Rufus está diseñado para mejorar la experiencia de compra en línea proporcionando recomendaciones de productos, comparaciones y asistencia conversacional.
-
-### Disrumpir el descubrimiento de productos
-
-Rufus representa un giro hacia el comercio conversacional, donde la IA no solo ayuda al descubrimiento de productos, sino que también influye en los procesos de decisión del consumidor. Este desarrollo podría redefinir la manera en que los consumidores buscan e interactúan con los productos en línea.
-
-### Implicaciones para los anunciantes
-
-Para los anunciantes, Rufus abre nuevas vías de promoción y colocación de productos dentro del ecosistema Amazon. La capacidad de influir directamente en las recomendaciones y decisiones del consumidor mediante la IA subraya la creciente importancia de la IA en la elaboración de estrategias publicitarias eficaces.
+สำหรับผู้ลงโฆษณาและธุรกิจ แรงจูงใจในการนำ AI มาใช้ในการโฆษณานั้นชัดเจน ได้แก่ ประสิทธิภาพที่สูงขึ้น ต้นทุนที่ลดลง และ ROI ที่ดีขึ้น เทคโนโลยี AI ที่พัฒนาอย่างต่อเนื่องเปิดโอกาสให้สร้างนวัตกรรม สร้างความแตกต่าง และสร้างมูลค่าในพื้นที่การโฆษณาดิจิทัลที่มีการแข่งขันสูง
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Las innovaciones IA de Meta
+## โฟกัสที่ Rufus ของ Amazon
 
-### Herramientas creativas impulsadas por IA
+### การปรับประสบการณ์การช้อปปิ้งให้เป็นส่วนตัว
 
-Meta ha integrado activamente la IA generativa en sus herramientas publicitarias, proporcionando a los anunciantes funcionalidades innovadoras para reforzar sus campañas. La compañía ha introducido sus primeras [**funcionalidades de IA generativa para anunciantes ⧉**][01], incluyendo la capacidad de crear fondos, ampliar imágenes y generar varias versiones de texto publicitario basadas en la copia original. Estas herramientas están diseñadas para estimular la creatividad y la productividad, permitiendo a los anunciantes producir contenido creativo fresco a gran escala y potencialmente ahorrar un tiempo significativo en el proceso creativo.
+การเปิดตัว Rufus ของ Amazon ซึ่งเป็นแชตบอตผู้ช่วยช้อปปิ้งส่วนบุคคล ถือเป็นความก้าวหน้าสำคัญในการมีส่วนร่วมของผู้บริโภคที่ขับเคลื่อนด้วย AI Rufus ถูกออกแบบมาเพื่อยกระดับประสบการณ์การช้อปปิ้งออนไลน์ ด้วยการให้คำแนะนำสินค้า การเปรียบเทียบ และการช่วยเหลือเชิงสนทนา
 
-### Reforzar las conexiones y las expresiones
+### การเปลี่ยนรูปแบบการค้นพบสินค้า
 
-La suite de herramientas y plataformas IA de Meta —asistentes conversacionales y herramientas creativas IA— aspira a profundizar el compromiso del usuario y proporcionar maneras nuevas para que empresas y creadores interactúen con su audiencia. Esto se alinea con la misión de Meta de reforzar las conexiones sociales a través de la tecnología.
+Rufus สะท้อนการเปลี่ยนผ่านสู่การพาณิชย์เชิงสนทนา ซึ่ง AI ไม่เพียงช่วยในการค้นพบสินค้า แต่ยังมีอิทธิพลต่อกระบวนการตัดสินใจของผู้บริโภค พัฒนาการนี้อาจนิยามวิธีที่ผู้บริโภคค้นหาและมีปฏิสัมพันธ์กับสินค้าออนไลน์ขึ้นใหม่
 
-### Una plataforma para la creatividad y el compromiso
+### นัยสำหรับผู้ลงโฆษณา
 
-La plataforma AI studio de Meta atestigua un compromiso de hacer las herramientas IA accesibles al desarrollo por terceros, favoreciendo una comunidad de innovación. Esta democratización de las herramientas IA permite a creadores y empresas producir un contenido más atractivo y personalizado.
-
-### Configurar el futuro de la interacción
-
-Los avances IA de Meta fijan nuevos estándares para la manera en que las empresas y creadores interactúan con su audiencia. Facilitando interacciones más personalizadas y significativas, Meta no solo mejora la experiencia del usuario, sino que también abre nuevas oportunidades para la publicidad segmentada.
+สำหรับผู้ลงโฆษณา Rufus เปิดช่องทางใหม่ในการโปรโมตและวางตำแหน่งสินค้าภายในระบบนิเวศของ Amazon ความสามารถในการมีอิทธิพลโดยตรงต่อคำแนะนำและการตัดสินใจของผู้บริโภคผ่าน AI ตอกย้ำความสำคัญที่เพิ่มขึ้นของ AI ในการวางกลยุทธ์การโฆษณาที่มีประสิทธิผล
 
 ![divider][divider].class=\"m-10 w-100\"
 
-Como ilustran Rufus de Amazon y la suite de herramientas IA de Meta, los actores principales de la industria lideran innovaciones punteras para transformar la publicidad con IA. Navegar el panorama publicitario impulsado por IA
+## นวัตกรรม AI ของ Meta
 
-La integración de la IA en las estrategias publicitarias ilustra los avances significativos realizados para revolucionar la industria...
+### เครื่องมือสร้างสรรค์ที่ขับเคลื่อนด้วย AI
 
-## Navegar el panorama publicitario impulsado por IA
+Meta ได้ผสาน AI เชิงสร้างสรรค์เข้ากับเครื่องมือโฆษณาของตนอย่างต่อเนื่อง โดยมอบฟีเจอร์ใหม่ ๆ ให้ผู้ลงโฆษณาเพื่อยกระดับแคมเปญ บริษัทได้เปิดตัว [**ฟีเจอร์ AI เชิงสร้างสรรค์สำหรับผู้ลงโฆษณา ⧉**][01] เป็นครั้งแรก ซึ่งรวมถึงความสามารถในการสร้างพื้นหลัง ขยายภาพ และสร้างข้อความโฆษณาหลายเวอร์ชันจากข้อความต้นฉบับ เครื่องมือเหล่านี้ออกแบบมาเพื่อเพิ่มความคิดสร้างสรรค์และประสิทธิภาพการทำงาน ช่วยให้ผู้ลงโฆษณาผลิตเนื้อหาสร้างสรรค์ใหม่ได้ในวงกว้างและอาจประหยัดเวลาในกระบวนการสร้างสรรค์ได้อย่างมาก
 
-La integración de la IA en las estrategias publicitarias ilustra los avances significativos realizados para revolucionar la industria. A medida que las capacidades de IA continúan progresando, los anunciantes deben formarse activamente sobre estas herramientas emergentes: motores de recomendación, anuncios conversacionales, plataformas de mejora creativa y análisis de audiencia por IA. Los ejes prioritarios implican aprovechar la IA para mejorar las experiencias del consumidor mediante la personalización, mejorar la eficacia de las campañas probando una mayor velocidad de variantes creativas y de mensajes, y estimular la innovación desplegando la IA para nuevas aplicaciones como los anuncios por voz.
+### การยกระดับการเชื่อมต่อและการแสดงออก
 
-Además, anudar las asociaciones adecuadas será pivote: ya sea con plataformas publicitarias como Meta o con proveedores de datos que alimentan los sistemas IA. Los anunciantes deberían contribuir también a ecosistemas abiertos en torno a datos y modelos publicitarios para hacer progresar el bien común. Navegando proactivamente el panorama IA, los anunciantes pueden aprovechar su multitud de capacidades para crear interacciones de marca más conectadas, significativas e impactantes.
+ชุดเครื่องมือและแพลตฟอร์ม AI ของ Meta ทั้งผู้ช่วยเชิงสนทนาและเครื่องมือสร้างสรรค์ที่ขับเคลื่อนด้วย AI มุ่งเพิ่มการมีส่วนร่วมของผู้ใช้ และมอบวิธีใหม่ให้ธุรกิจและครีเอเตอร์มีปฏิสัมพันธ์กับผู้ชม สอดคล้องกับพันธกิจของ Meta ในการยกระดับการเชื่อมต่อทางสังคมผ่านเทคโนโลยี
+
+### แพลตฟอร์มเพื่อความคิดสร้างสรรค์และการมีส่วนร่วม
+
+แพลตฟอร์ม AI studio ของ Meta แสดงถึงความมุ่งมั่นในการทำให้เครื่องมือ AI เข้าถึงได้สำหรับการพัฒนาโดยบุคคลที่สาม ส่งเสริมชุมชนแห่งนวัตกรรม การเปิดกว้างของเครื่องมือ AI นี้ช่วยให้ครีเอเตอร์และธุรกิจสร้างเนื้อหาที่น่าสนใจและเป็นส่วนตัวมากขึ้น
+
+### การกำหนดอนาคตของการปฏิสัมพันธ์
+
+ความก้าวหน้าด้าน AI ของ Meta กำลังกำหนดมาตรฐานใหม่ในการที่ธุรกิจและครีเอเตอร์มีส่วนร่วมกับผู้ชม ด้วยการเอื้อให้เกิดปฏิสัมพันธ์ที่เป็นส่วนตัวและมีความหมายมากขึ้น Meta ไม่เพียงยกระดับประสบการณ์ผู้ใช้ แต่ยังเปิดโอกาสใหม่สำหรับการโฆษณาแบบกำหนดกลุ่มเป้าหมาย
+
+![divider][divider].class=\"m-10 w-100\"
+
+ดังที่เห็นได้จาก Rufus ของ Amazon และชุดเครื่องมือ AI ของ Meta ผู้เล่นรายใหญ่ในอุตสาหกรรมกำลังนำนวัตกรรมล้ำสมัยมาเปลี่ยนแปลงการโฆษณาด้วย AI การวางแนวทางการโฆษณาที่ขับเคลื่อนด้วย AI
+
+การผสาน AI เข้ากับกลยุทธ์การโฆษณาเป็นตัวอย่างของความก้าวหน้าครั้งสำคัญในการเปลี่ยนแปลงอุตสาหกรรม...
+
+## การวางแนวทางการโฆษณาที่ขับเคลื่อนด้วย AI
+
+การผสาน AI เข้ากับกลยุทธ์การโฆษณาเป็นตัวอย่างของความก้าวหน้าครั้งสำคัญในการเปลี่ยนแปลงอุตสาหกรรม เมื่อขีดความสามารถของ AI พัฒนาต่อเนื่อง ผู้ลงโฆษณาต้องศึกษาเครื่องมือใหม่ ๆ เหล่านี้อย่างจริงจัง ทั้งเครื่องมือแนะนำสินค้า โฆษณาเชิงสนทนา แพลตฟอร์มเสริมงานสร้างสรรค์ และการวิเคราะห์ผู้ชมด้วย AI ประเด็นสำคัญได้แก่ การใช้ AI เพื่อยกระดับประสบการณ์ผู้บริโภคผ่านการปรับให้เป็นส่วนตัว การเพิ่มประสิทธิผลของแคมเปญด้วยการทดสอบรูปแบบงานสร้างสรรค์และข้อความในอัตราที่สูงขึ้น และการขับเคลื่อนนวัตกรรมด้วยการนำ AI ไปใช้กับงานใหม่ ๆ เช่น โฆษณาผ่านเสียง
+
+นอกจากนี้ การสร้างความร่วมมือที่เหมาะสมจะมีความสำคัญอย่างยิ่ง ไม่ว่าจะกับแพลตฟอร์มโฆษณาอย่าง Meta หรือผู้ให้บริการข้อมูลที่ป้อนข้อมูลให้ระบบ AI ผู้ลงโฆษณาควรมีส่วนร่วมกับระบบนิเวศแบบเปิดเกี่ยวกับข้อมูลและโมเดลการโฆษณา เพื่อผลักดันความก้าวหน้าร่วมกัน ด้วยการวางแนวทางเชิงรุกในการใช้ AI ผู้ลงโฆษณาสามารถใช้ความสามารถอันหลากหลายของมันเพื่อสร้างปฏิสัมพันธ์กับแบรนด์ที่เชื่อมโยง มีความหมาย และมีผลกระทบมากขึ้น
 
 ![divider][divider].class=\"m-10 w-100\"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 
-[00]: https://www.aboutamazon.com/news/retail/amazon-rufus "Amazon Rufus - AI experience comes to the Amazon Shopping app"
-[01]: https://www.facebook.com/business/news/generative-ai-features-for-ads-coming-to-all-advertisers "Generative AI features for ads coming to all advertisers"
+[00]: https://www.aboutamazon.com/news/retail/amazon-rufus "Amazon Rufus - ประสบการณ์ AI มาสู่แอป Amazon Shopping"
+[01]: https://www.facebook.com/business/news/generative-ai-features-for-ads-coming-to-all-advertisers "ฟีเจอร์ AI เชิงสร้างสรรค์สำหรับโฆษณากำลังมาสู่ผู้ลงโฆษณาทุกราย"

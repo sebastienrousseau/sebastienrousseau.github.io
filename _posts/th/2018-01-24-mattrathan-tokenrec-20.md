@@ -1,75 +1,83 @@
 ---
-title: "El estándar de token ERC-20"
-subtitle: "La interfaz unificada que permitió prosperar al ecosistema Ethereum"
-description: "ERC-20: el tipo de token más extendido en la blockchain Ethereum, a menudo descrito como un contrato digital inteligente (smart contract)."
+title: "ERC-20: อินเทอร์เฟซโทเคนของ Ethereum ที่เปลี่ยนโลก"
+subtitle: "โทเคน ERC-20, สัญญาอัจฉริยะบน Ethereum และการกำหนดมาตรฐานของสินทรัพย์ดิจิทัล"
+description: "ERC-20 เป็นประเภทโทเคนที่ใช้กันมากที่สุดบนบล็อกเชน Ethereum และมักถูกเรียกว่าเป็นสัญญาดิจิทัลแบบสัญญาอัจฉริยะ (smart contract)"
 date: "January 24, 2018"
 language: "th-TH"
 locale: "th_TH"
 banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
-banner_alt: "Ordenador portátil apagado sobre una mesa de madera marrón"
-keywords: "ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, interoperabilidad, DApps, estándar"
+banner_alt: "คอมพิวเตอร์แล็ปท็อปที่ปิดเครื่องวางอยู่บนโต๊ะไม้สีน้ำตาล"
+keywords: "Ethereum, ERC-20, EIP, โทเคน, สัญญาอัจฉริยะ, บล็อกเชน, คริปโทเคอร์เรนซี, smart-token, Solidity, DeFi, การกำหนดมาตรฐาน"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+![อาคารสูงตระหง่านที่มีช่องเปิดจำนวนมาก](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"
 
-**ประเด็นสำคัญ**
+## ข้อมูลเชิงลึก
 
-![Ordenador portátil apagado sobre una mesa de madera marrón](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"
+### ความจำเป็นของอินเทอร์เฟซโทเคนแบบมาตรฐาน
 
-## Perspectiva
+ก่อนการมาถึงของมาตรฐาน ERC-20 (Ethereum Request for Comments 20) บล็อกเชน Ethereum อยู่ในสภาพไร้ระเบียบของสถาปัตยกรรมโทเคน โทเคนแต่ละตัวที่ถูกสร้างขึ้นใหม่ต่างมีชุดกฎ ฟังก์ชัน และอินเทอร์เฟซเฉพาะของตัวเอง สิ่งนี้ไม่เพียงสร้างเส้นโค้งการเรียนรู้ที่ยากลำบากให้แก่นักพัฒนา แต่ยังขัดขวางความสามารถในการทำงานร่วมกันของโทเคนด้วย โดยพื้นฐานแล้ว โทเคนใหม่แต่ละตัวเปรียบเสมือนภาษาใหม่ที่ต้องเรียนรู้ ทำความเข้าใจ และนำไปใช้งาน การกระจัดกระจายนี้เป็นอุปสรรคต่อความสามารถในการขยายตัวและการนำโทเคนไปใช้อย่างกว้างขวางบนแพลตฟอร์ม Ethereum
 
-### La necesidad de una interfaz de token estandarizada
+การนำมาตรฐาน ERC-20 มาใช้ทำหน้าที่เสมือนภาษากลางที่รวมทุกอย่างเข้าด้วยกัน โดยกำหนดชุดกฎและฟังก์ชันร่วมที่โทเคน Ethereum ทุกตัวต้องปฏิบัติตาม บัดนี้นักพัฒนามีอินเทอร์เฟซที่สอดคล้องกันสำหรับการทำงาน ไม่ว่าจะเป็นโทเคนใดก็ตาม การกำหนดมาตรฐานนี้ทำให้กระบวนการโต้ตอบกับโทเคนราบรื่นขึ้น และเปิดทางให้ผสานรวมเข้ากับแอปพลิเคชันและบริการต่าง ๆ ได้อย่างต่อเนื่องมากขึ้น ผลที่ตามมาคือ นักพัฒนาสามารถทำงานกับโทเคนได้อย่างมีความหมายมากขึ้น ซึ่งช่วยส่งเสริมสภาพแวดล้อมที่เอื้อต่อการสร้างสรรค์นวัตกรรมและการเติบโตภายในระบบนิเวศ Ethereum
 
-Antes del advenimiento del estándar ERC-20 (Ethereum Request for Comments 20), la blockchain Ethereum se parecía al Lejano Oeste de las arquitecturas de token. Cada nuevo token acuñado tenía su propio conjunto único de reglas, funciones e interfaces. Esto imponía a los desarrolladores una curva de aprendizaje pronunciada y frenaba la interoperabilidad de los tokens. En pocas palabras, cada nuevo token era como un nuevo idioma que aprender, comprender e implementar. Esta fragmentación obstaculizaba la escalabilidad y la adopción masiva de tokens en la plataforma Ethereum.
+#### สภาพไร้ระเบียบของสถาปัตยกรรมโทเคน
 
-La introducción del estándar ERC-20 actuó como un lenguaje unificador, estableciendo un conjunto común de reglas y funciones a las que todos los tokens Ethereum deben ajustarse. A partir de entonces, los desarrolladores disponen de una interfaz coherente, sea cual sea el token. Esta estandarización fluidificó los procesos de interacción con los tokens, permitiendo una integración más fluida en diversas aplicaciones y servicios. Como consecuencia, los desarrolladores pueden interactuar de manera más útil con los tokens, propiciando un entorno favorable a la innovación y al crecimiento en el ecosistema Ethereum.
+บล็อกเชน Ethereum ในตอนแรกถูกออกแบบมาเพื่อรองรับโทเคนเพียงประเภทเดียวคือ ETH อย่างไรก็ตาม เมื่อแพลตฟอร์มได้รับความนิยมมากขึ้น นักพัฒนาเริ่มสร้างโทเคนของตัวเองเพื่อแทนสินทรัพย์และแนวคิดที่หลากหลาย สิ่งนี้นำไปสู่การแพร่ขยายของสถาปัตยกรรมโทเคนที่แตกต่างกัน ซึ่งแต่ละแบบมีชุดกฎและฟังก์ชันเฉพาะของตัวเอง
 
-#### El Lejano Oeste de las arquitecturas de token
+การกระจัดกระจายนี้ทำให้นักพัฒนาสร้างแอปพลิเคชันที่สามารถโต้ตอบกับโทเคนหลายตัวได้ยาก อีกทั้งยังทำให้ผู้ใช้จัดการสินทรัพย์โทเคนของตนบนแพลตฟอร์มต่าง ๆ ได้ยากด้วย
 
-La blockchain Ethereum se diseñó inicialmente para soportar un único tipo de token: ETH. Pero a medida que la plataforma ganó popularidad, los desarrolladores comenzaron a crear sus propios tokens para representar una variedad de activos y conceptos. Esto dio lugar a una proliferación de arquitecturas de token diferentes, cada una con su propio conjunto único de reglas y funciones.
+#### มาตรฐาน ERC-20
 
-Esta fragmentación dificultaba a los desarrolladores la creación de aplicaciones capaces de interactuar con varios tokens. También complicaba a los usuarios la gestión de sus activos de token en distintas plataformas.
+มาตรฐาน ERC-20 ถูกนำมาใช้ในปี 2015 เพื่อรับมือกับความท้าทายที่เกิดจากสภาพไร้ระเบียบของสถาปัตยกรรมโทเคน มาตรฐานนี้กำหนดชุดกฎและฟังก์ชันร่วมที่โทเคน Ethereum ทุกตัวต้องปฏิบัติตาม การกำหนดมาตรฐานนี้ช่วยให้นักพัฒนาสร้างแอปพลิเคชันที่สามารถโต้ตอบกับโทเคน ERC-20 ใดก็ได้ได้ง่ายขึ้น และยังช่วยให้ผู้ใช้จัดการสินทรัพย์โทเคนของตนได้ง่ายขึ้นด้วย
 
-#### El estándar ERC-20
+มาตรฐาน ERC-20 ได้รับการยอมรับอย่างกว้างขวางจากชุมชน Ethereum ปัจจุบันมีโทเคน ERC-20 อยู่มากกว่า 200,000 ตัว และมาตรฐานนี้ถูกใช้โดยแอปพลิเคชันหลากหลายประเภท รวมถึงกระดานแลกเปลี่ยนแบบกระจายศูนย์ แพลตฟอร์มการปล่อยกู้ และเกม dapps
 
-El estándar ERC-20 se introdujo en 2015 para responder a los retos planteados por este Lejano Oeste de arquitecturas de token. El estándar define un conjunto común de reglas y funciones a las que todos los tokens Ethereum deben ajustarse. Esta estandarización facilita la creación de aplicaciones capaces de interactuar con cualquier token ERC-20, y también simplifica la gestión de los activos de token por parte de los usuarios.
+## แนวคิด
 
-El estándar ERC-20 ha sido ampliamente adoptado por la comunidad Ethereum. Hoy en día se contabilizan más de 200.000 tokens ERC-20 y el estándar es utilizado por una gran variedad de aplicaciones, incluidos exchanges descentralizados, plataformas de préstamo y dapps de juegos.
+### ชุดฟังก์ชันและคุณสมบัติร่วมสำหรับโทเคนทุกตัว
 
-## Idea
+มาตรฐาน ERC-20 กำหนดชุดฟังก์ชันสำคัญหกฟังก์ชันที่โทเคนซึ่งเป็นไปตามมาตรฐาน ERC-20 ทุกตัวต้องนำไปใช้ ฟังก์ชันเหล่านี้ได้แก่
 
-### Un conjunto común de funciones y propiedades para todos los tokens
+- `transfer(address to, uint256 amount)`: โอนจำนวนโทเคนจากที่อยู่ของผู้เรียกใช้ไปยังที่อยู่ที่ระบุ
+- `approve(address spender, uint256 amount)`: อนุมัติให้ที่อยู่ที่ระบุใช้จ่ายจำนวนโทเคนในนามของผู้เรียกใช้
+- `allowance(address owner, address spender)`: คืนค่าจำนวนโทเคนที่ spender ที่ระบุได้รับอนุมัติให้ใช้จ่ายในนามของ owner ที่ระบุ
+- `totalSupply()`: คืนค่าจำนวนโทเคนทั้งหมดที่หมุนเวียนอยู่
+- `balanceOf(address owner)`: คืนค่าจำนวนโทเคนที่ที่อยู่ที่ระบุถือครองอยู่
+- `name()`: คืนค่าชื่อของโทเคน
+- `symbol()`: คืนค่าสัญลักษณ์ของโทเคน
 
-El estándar ERC-20 define un conjunto de seis funciones esenciales que todos los tokens conformes a ERC-20 deben implementar. Estas funciones son:
+มาตรฐาน ERC-20 ยังกำหนดเหตุการณ์ (event) สองรายการที่ต้องถูกส่งออกเมื่อฟังก์ชันที่เกี่ยวข้องทำงานสำเร็จ เหตุการณ์เหล่านี้ได้แก่
 
-- `transfer(address to, uint256 amount)`: transfiere un importe de tokens desde la dirección del invocador hacia la dirección especificada.
-- `approve(address spender, uint256 amount)`: autoriza a la dirección especificada a gastar un importe de tokens en nombre del invocador.
-- `allowance(address owner, address spender)`: devuelve el importe de tokens que el «spender» especificado está autorizado a gastar en nombre del «owner» especificado.
-- `totalSupply()`: devuelve el número total de tokens en circulación.
-- `balanceOf(address owner)`: devuelve el número de tokens que posee la dirección especificada.
-- `name()`: devuelve el nombre del token.
-- `symbol()`: devuelve el símbolo del token.
+- `Transfer(address from, address to, uint256 amount)`: ถูกส่งออกเมื่อมีการโอนจำนวนโทเคนจากที่อยู่หนึ่งไปยังอีกที่อยู่หนึ่ง
+- `Approval(address owner, address spender, uint256 amount)`: ถูกส่งออกเมื่อที่อยู่ที่ระบุได้รับอนุมัติให้ใช้จ่ายจำนวนโทเคนในนามของ owner ที่ระบุ
 
-El estándar ERC-20 también define dos eventos que deben emitirse tras la ejecución exitosa de las funciones correspondientes:
+## ผลกระทบ
 
-- `Transfer(address from, address to, uint256 amount)`: emitido cuando un importe de tokens se transfiere de una dirección a otra.
-- `Approval(address owner, address spender, uint256 amount)`: emitido cuando la dirección especificada es autorizada a gastar un importe de tokens en nombre del «owner» especificado.
+### การเติบโตของ DeFi และการนำ Ethereum ไปใช้
 
-## Impacto
+มาตรฐาน ERC-20 ส่งผลกระทบอย่างมีนัยสำคัญต่อระบบนิเวศ Ethereum มาตรฐานนี้เป็นปัจจัยสำคัญที่ทำให้เกิดขบวนการ DeFi (การเงินแบบกระจายศูนย์) และยังช่วยเพิ่มการนำ Ethereum ไปใช้ด้วย
 
-### El crecimiento de DeFi y la adopción de Ethereum
+แพลตฟอร์ม DeFi ซึ่งให้บริการทางการเงินหลากหลายตั้งแต่การปล่อยกู้ไปจนถึงการบริหารสินทรัพย์ พึ่งพาโทเคนอย่างมากในการอำนวยความสะดวกให้แก่ธุรกรรม เมื่อ ERC-20 ทำหน้าที่เป็นตัวเชื่อมต่อสากล จึงเป็นเรื่องง่ายขึ้นมากสำหรับแอปพลิเคชัน DeFi ที่จะรองรับโทเคนจำนวนมากโดยไม่ต้องปรับแต่งโค้ดของตนสำหรับแต่ละตัว
 
-El estándar ERC-20 ha tenido un impacto significativo en el ecosistema Ethereum. Ha sido un catalizador clave del movimiento DeFi (finanzas descentralizadas) y también ha contribuido a aumentar la adopción de Ethereum.
+มาตรฐาน ERC-20 ยังทำให้ผู้ใช้จัดการสินทรัพย์โทเคนของตนได้ง่ายขึ้น เมื่อโทเคนปฏิบัติตามกฎพื้นฐานชุดเดียวกัน ผู้ใช้จึงโอน ใช้จ่าย และจัดการสินทรัพย์โทเคนของตนบนหลายแพลตฟอร์มได้ง่ายขึ้น ประสบการณ์ผู้ใช้ที่ดีขึ้นนี้เป็นปัจจัยขับเคลื่อนอัตราการนำ Ethereum ไปใช้ที่เพิ่มขึ้น
 
-Las plataformas DeFi, que ofrecen toda una gama de servicios financieros que van desde el préstamo hasta la gestión de activos, se apoyan masivamente en los tokens para facilitar las transacciones. Con ERC-20 actuando como un adaptador universal, se volvió mucho más sencillo para las aplicaciones DeFi integrar un amplio abanico de tokens sin tener que adaptar su código a cada uno.
+## แรงจูงใจ
 
-El estándar ERC-20 también ha facilitado la gestión de los activos de token por parte de los usuarios. Con tokens que respetan las mismas reglas básicas, a los usuarios les resulta más fácil transferir, gastar y gestionar sus activos de token en varias plataformas. Esta experiencia de usuario mejorada ha sido un motor del aumento de las tasas de adopción de Ethereum.
+### ต้นทุนการพัฒนาที่ลดลงและความปลอดภัยที่ดีขึ้น
 
-## Incentivos
+การกำหนดมาตรฐานที่เกิดจากโปรโตคอล ERC-20 ยังส่งผลกระทบทางเศรษฐกิจโดยตรงด้วย ด้วยการมอบพิมพ์เขียวสำหรับการสร้างโทเคนที่ผ่านการทดสอบและได้รับการยอมรับจากชุมชน มาตรฐานนี้ได้ลดอุปสรรคในการเข้าสู่ตลาดของนักพัฒนาลงอย่างมาก บัดนี้พวกเขาสามารถสร้างโทเคนใหม่ด้วยต้นทุนการพัฒนาที่ลดลงและระยะเวลาออกสู่ตลาดที่เร็วขึ้น เพราะไม่ต้องเริ่มต้นใหม่ทั้งหมด มาตรฐานนี้ยังส่งเสริมทางอ้อมให้เกิดการสร้าง DApps (แอปพลิเคชันแบบกระจายศูนย์) และบริการที่สามารถโต้ตอบกับโทเคน ERC-20 ใดก็ได้อย่างเป็นสากล จึงช่วยหล่อเลี้ยงระบบนิเวศที่มีชีวิตชีวามากขึ้น
 
-### Costes de desarrollo reducidos y seguridad mejorada
+ประโยชน์ที่โดดเด่นอีกประการหนึ่งคือความปลอดภัยที่เพิ่มขึ้น มาตรฐาน ERC-20 ผ่านการตรวจสอบอย่างเข้มงวดจากชุมชน Ethereum ทำให้เป็นแบบจำลองที่มั่นคงและปลอดภัยสำหรับการนำโทเคนไปใช้ การปฏิบัติตามมาตรฐานนี้หมายความว่าองค์ประกอบพื้นฐานของสัญญาอัจฉริยะของโทเคนเป็นไปตามแนวปฏิบัติที่ดีที่ชุมชนยอมรับ สิ่งนี้ช่วยลดความเสี่ยงของช่องโหว่ด้านความปลอดภัยที่อาจเกิดจากแบบจำลองโทเคนที่ออกแบบไม่ดี แม้จะไม่ใช่การรับประกันว่าจะปลอดภัยจากช่องโหว่ทุกประเภท แต่ก็เป็นก้าวสำคัญในการสร้างความมั่นใจต่อความปลอดภัยโดยรวมของโทเคน และโดยส่วนขยายคือโครงการต่าง ๆ ที่ใช้โทเคนเหล่านั้น
 
-La estandarización aportada por el protocolo ERC-20 también ha tenido un impacto económico directo. Al proporcionar un plano probado y aprobado por la comunidad para la creación de tokens, ha reducido significativamente la barrera de entrada para los desarrolladores. Ahora pueden crear un nuevo token con costes de desarrollo reducidos y un plazo de comercialización más corto, sin tener que reinventar la rueda. El estándar fomenta también indirectamente la creación de DApps (aplicaciones descentralizadas) y servicios capaces de interactuar universalmente con cualquier token ERC-20, cultivando así un ecosistema más dinámico.
+![divider](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-Otro beneficio notable: una seguridad reforzada. El estándar ERC-20 ha sido sometido a un examen riguroso por parte de la comunidad Ethereum, convirtiéndolo en un modelo robusto y seguro para la implementación de tokens. El respeto de este estándar implica que los aspectos fundamentales del smart contract del token siguen las buenas prácticas aceptadas por la comunidad. Esto minimiza el riesgo de vulnerabilidades de seguridad que de otro modo podrían derivarse de un modelo de token mal diseñado. Aunque no es una garantía contra todo tipo de vulnerabilidades, es un paso significativo hacia la seguridad global de los tokens y, por extensión, de los proyectos que los utilizan.
+**นี่คือบทสรุปของเราในครั้งนี้ ขอบคุณสำหรับเวลาของคุณ**
+
+หากคุณมีคำถามใด ๆ โปรดอย่าลังเลที่จะติดต่อผมผ่าน [LinkedIn ⧉][11] หรือผ่าน [หน้าติดต่อ][10] ขอบคุณอีกครั้งสำหรับเวลาของคุณ และผมหวังว่าจะได้รับข่าวจากคุณ
+
+[**❬ กลับไปที่บทความ**][09]
+
+[09]: /articles/index.html "กลับไปที่บทความ"
+[10]: /contact/index.html "ติดต่อ Sebastien Rousseau"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau บน LinkedIn"

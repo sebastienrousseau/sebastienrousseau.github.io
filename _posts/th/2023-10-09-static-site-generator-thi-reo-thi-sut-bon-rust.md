@@ -1,89 +1,86 @@
 ---
-title: "Static Site Generator: el generador de sitios estáticos más rápido basado en Rust"
-subtitle: "Un SSG ultrarrápido, accesible y optimizado para SEO, escrito en Rust"
-description: "Cree sitios estáticos de alto impacto, escalables hasta el infinito y enteramente bajo su control, gracias a Static Site Generator: un SSG ultrarrápido escrito en Rust."
+title: "Static Site Generator: เครื่องมือสร้างเว็บไซต์แบบสแตติกที่เร็วที่สุดบน Rust"
+subtitle: "SSG ที่รวดเร็ว เข้าถึงได้ และปรับแต่งเพื่อ SEO เขียนด้วย Rust"
+description: "สร้างเว็บไซต์แบบสแตติกที่ทรงพลัง ขยายขนาดได้ไม่จำกัด และอยู่ภายใต้การควบคุมของคุณอย่างสมบูรณ์ ด้วย Static Site Generator ซึ่งเป็น SSG ที่รวดเร็วและเขียนด้วย Rust"
 date: "October 9, 2023"
 language: "th-TH"
 locale: "th_TH"
 banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
-banner_alt: "Ordenador portátil apagado sobre una mesa blanca con un vaso de agua a la izquierda y un bolígrafo, un cuaderno y una planta a la derecha"
-keywords: "Static Site Generator, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, accesibilidad, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS"
+banner_alt: "แล็ปท็อปที่ปิดเครื่องวางบนโต๊ะสีขาว มีแก้วน้ำอยู่ทางซ้าย และปากกา สมุดโน้ต และต้นไม้อยู่ทางขวา"
+keywords: "Static Site Generator, เครื่องมือสร้างเว็บไซต์แบบสแตติก, SSG, Rust, ประสิทธิภาพ, SEO, การเข้าถึง, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS"
 ---
 
+![แล็ปท็อปที่ปิดเครื่องวางบนโต๊ะสีขาว มีแก้วน้ำอยู่ทางซ้าย และปากกา สมุดโน้ต และต้นไม้อยู่ทางขวา](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+## ข้อมูลเชิงลึก
 
-**ประเด็นสำคัญ**
+### เครื่องมือสร้างเว็บไซต์แบบสแตติกคุณภาพสูงสำหรับเว็บยุคใหม่
 
-![Ordenador portátil apagado sobre una mesa blanca con un vaso de agua a la izquierda y un bolígrafo, un cuaderno y una planta a la derecha](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
+ในโลกดิจิทัลที่เปลี่ยนแปลงอยู่ตลอดเวลา ความเร็วและคุณภาพคือสิ่งสำคัญสูงสุด ผมตั้งใจที่จะหาวิธีสร้างเว็บไซต์แบบสแตติกอย่างรวดเร็ว โดยให้ได้ทั้งคุณภาพสูง การเข้าถึง และความเป็นมิตรต่อ SEO
 
-## Perspectiva
+เว็บไซต์แบบสแตติกคือหน้าเว็บที่คงที่และไม่เปลี่ยนแปลงจนกว่าจะมีการอัปเดตด้วยตนเอง ประกอบด้วยไฟล์ HTML, CSS และบางครั้งก็ JavaScript ให้เวลาโหลดที่รวดเร็วและความปลอดภัยที่สูงกว่าเมื่อเทียบกับเว็บไซต์แบบไดนามิก
 
-### Un generador de sitios estáticos de alta calidad para la web moderna
+น่าเสียดายที่ไม่มีผลิตภัณฑ์ใดตอบโจทย์ความต้องการของผมได้ทันทีที่นำมาใช้ ผมจึงลงมือสร้างโซลูชันใหม่ตั้งแต่ต้น เป้าหมายของผมคือการนำเสนอทางเลือกที่รวดเร็วและเชื่อถือได้แทนเครื่องมือสร้างเว็บไซต์แบบสแตติกที่มีอยู่ในตลาด และขยายขอบเขตของสิ่งที่ทำได้ด้วย Rust
 
-En un panorama digital en perpetua evolución, la velocidad y la calidad son primordiales. Quería a toda costa encontrar una manera de generar rápidamente sitios estáticos que aunaran alta calidad, accesibilidad y adecuación al SEO.
+## แนวคิด
 
-Los sitios estáticos son páginas web que permanecen fijas e inalteradas mientras no se actualicen manualmente. Están constituidos por archivos HTML, CSS y, a veces, JavaScript, ofreciendo tiempos de carga rápidos y una seguridad reforzada respecto a los sitios dinámicos.
+### โซลูชันที่ขยายขนาดและปรับแต่งได้ไม่จำกัด
 
-Por desgracia, ningún producto existente respondía a mis exigencias listo para usar. Por ello tomé la iniciativa de crear una nueva solución desde cero. Mi objetivo: ofrecer una alternativa rápida y fiable a los generadores de sitios estáticos disponibles en el mercado, y expandir los límites de lo posible con Rust.
+ผมพัฒนา [**Static Site Generator ⧉**][00] ขึ้นเพื่อมอบเครื่องมือสร้างเว็บไซต์แบบสแตติก (SSG) ที่รวดเร็วอย่างยิ่ง สร้างด้วย [**Rust ⧉**][03] ซึ่งช่วยให้กระบวนการสร้างเว็บไซต์แบบสแตติกที่ปรับแต่งเพื่อ SEO และสอดคล้องกับมาตรฐานการเข้าถึงอย่างครบถ้วนเป็นเรื่องง่ายขึ้น
 
-## Idea
+ความเร็วและความน่าเชื่อถือคือสิ่งที่ผมให้ความสำคัญสูงสุดในการพัฒนา Static Site Generator ภาษา Rust เป็นภาษาโปรแกรมระดับระบบที่ขึ้นชื่อด้านความเร็วและความน่าเชื่อถือ จึงเหมาะอย่างยิ่งสำหรับการพัฒนาเครื่องมือสร้างเว็บไซต์แบบสแตติกที่มีประสิทธิภาพสูง
 
-### Una solución con escalabilidad y personalización infinitas
+ผมกระตือรือร้นที่จะสำรวจขอบเขตของสิ่งที่ทำได้ด้วย Markdown เป้าหมายของผมคือการทำให้แน่ใจว่า Static Site Generator สามารถสร้างเว็บไซต์แบบสแตติกที่รวดเร็ว ปลอดภัย และวางใจได้ ผมต้องการให้ทุกคนเข้าถึงได้ ใช้งานง่าย อัปเดตสะดวก และทำอันดับได้ดีบนเครื่องมือค้นหา
 
-Desarrollé [**Static Site Generator ⧉**][00] para proporcionar un generador de sitios estáticos (SSG) ultrarrápido construido con [**Rust ⧉**][03], que simplifica la creación de sitios estáticos optimizados para SEO y plenamente alineados con los estándares de accesibilidad.
+## ผลกระทบ
 
-La velocidad y la fiabilidad eran mis prioridades absolutas durante el desarrollo de Static Site Generator. Rust es un lenguaje de programación de sistemas reconocido por su rapidez y fiabilidad, lo que lo convierte en la herramienta ideal para desarrollar generadores de sitios estáticos de alto rendimiento.
+### มาตรฐานใหม่สำหรับเครื่องมือสร้างเว็บไซต์แบบสแตติก
 
-Estaba impaciente por explorar los límites de lo posible con Markdown. Mi objetivo: asegurarme de que Static Site Generator pudiera producir sitios estáticos rápidos, seguros y fiables. Quería que fueran accesibles a todos, cómodos y fáciles de actualizar, y que rindieran bien en los motores de búsqueda.
+การสร้างเว็บไซต์แบบสแตติกด้วย Static Site Generator ทำได้อย่างไม่ยากเย็น ทำให้คุณมุ่งเน้นไปที่เนื้อหาที่สร้างผลกระทบสูงสุดต่อกลุ่มเป้าหมาย กระบวนการนี้ตรงไปตรงมาและเสร็จสิ้นภายในเวลาไม่กี่มิลลิวินาที
 
-## Impacto
+ผลลัพธ์คือเว็บไซต์ที่รองรับทุกขนาดหน้าจออย่างสมบูรณ์ สอดคล้องกับ
+[**Web Content Accessibility Guidelines (WCAG) ⧉**][01] และ [**ADA ⧉**][02] และ
+ปรับแต่งเพื่อการทำอันดับบนเครื่องมือค้นหา (SEO) ตั้งแต่เริ่มต้น
 
-### Un nuevo estándar para los generadores de sitios estáticos
+## แรงจูงใจ
 
-Generar un sitio estático con Static Site Generator es sin esfuerzo, lo que permite concentrarse en el contenido para maximizar el impacto en la audiencia destinataria. El proceso es directo y se cierra en unos pocos milisegundos.
+### การยอมรับกระบวนทัศน์ใหม่ต้องอาศัยความกล้าและความมั่นใจ
 
-El resultado son sitios totalmente responsive, conformes con las [**Web Content Accessibility Guidelines (WCAG) ⧉**][01] y la [**ADA ⧉**][02], y optimizados para SEO desde el principio.
+[**Static Site Generator ⧉**][00] นำเสนอมุมมองใหม่ เป็นแนวทางที่สร้างสรรค์ในการทำความเข้าใจเว็บ ด้วยการออกแบบที่พิถีพิถัน มันช่วยให้ผู้สร้างเนื้อหาและมืออาชีพด้านงานสร้างสรรค์ยกระดับประสบการณ์ที่ยึดลูกค้าเป็นศูนย์กลางได้
 
-## Incentivos
+**คุณสมบัติสำคัญ ได้แก่:**
 
-### Abrazar un nuevo paradigma exige coraje y confianza
+* รองรับ [GitHub Flavoured Markdown ⧉ (GFM)][04] อย่างครบถ้วน
+* การผสานรวมกับ [Google][05] และ [Bing][06] Analytics
+* รองรับธีม HTML ที่หลากหลายและเทมเพลตระดับพรีเมียม
+* สร้างฟีด Atom และ RSS สำหรับบล็อก
+* การย่อขนาดซอร์สโค้ดเพื่อเพิ่มประสิทธิภาพและ SEO
+* เซิร์ฟเวอร์สำหรับพัฒนา [Rust][07] ในตัวสำหรับการทดสอบและพัฒนาบนเครื่อง
+* รองรับรูปแบบเนื้อหาหลายรูปแบบ (Markdown, YAML, JSON, TOML, XML)
+* สร้าง sitemap, robots.txt, ระเบียน CNAME และหน้า 404 ที่กำหนดเองโดยอัตโนมัติ
+* รองรับ Progressive Web Apps (PWA) สำหรับการเรียกดูแบบออฟไลน์
+* รองรับเทมเพลตที่กำหนดเองและธีม HTML
 
-[**Static Site Generator ⧉**][00] introduce una perspectiva nueva: un enfoque innovador para comprender la web. Con un diseño meticulosamente concebido, permite a los creadores de contenido y a los profesionales de la creación enriquecer la experiencia centrada en el cliente.
+แต่ละคุณสมบัติสะท้อนคุณค่าอย่างความเรียบง่าย ความน่าเชื่อถือ และความสามารถในการขยายขนาด [**Static Site Generator ⧉**][00] ออกแบบมาเพื่อช่วยสร้างและดูแลเว็บไซต์แบบสแตติกคุณภาพสูงที่ตอบสนองความต้องการของผู้ใช้ยุคใหม่
 
-**Funcionalidades clave:**
+### การปรับแต่งเพื่อ SEO
 
-* Soporte completo de [GitHub Flavoured Markdown ⧉ (GFM)][04]
-* Integraciones [Google][05] y [Bing][06] Analytics
-* Compatibilidad con diversos temas HTML y plantillas premium
-* Generación de feeds Atom y RSS para blogs
-* Minificación del código fuente para el rendimiento y el SEO
-* Servidor de desarrollo [Rust][07] integrado para pruebas locales y desarrollo
-* Soporte de múltiples formatos de contenido (Markdown, YAML, JSON, TOML, XML)
-* Generación automática de sitemaps, robots.txt, registros CNAME y páginas 404 personalizadas
-* Soporte de aplicaciones web progresivas (PWA) para la navegación sin conexión
-* Soporte de plantillas personalizadas y temas HTML
+[**Static Site Generator ⧉**][00] ออกแบบมาเพื่อช่วยให้ผู้ใช้สร้างเว็บไซต์แบบสแตติกที่ปรับแต่งเพื่อเครื่องมือค้นหา คุณสมบัติ SEO สำคัญบางส่วน ได้แก่:
 
-Cada funcionalidad refleja valores como simplicidad, fiabilidad y escalabilidad. [**Static Site Generator ⧉**][00] está concebido para ayudar a crear y mantener sitios estáticos de alta calidad que respondan a las necesidades de los usuarios modernos.
+* สร้างไฟล์ sitemap และ robots.txt โดยอัตโนมัติ
+* รองรับหน้า 404 ที่กำหนดเอง
+* โค้ด HTML ที่สะอาดและมีโครงสร้างที่ดี
+* เวลาโหลดที่รวดเร็ว
+* การออกแบบที่รองรับทุกขนาดหน้าจอ
+* สอดคล้องกับมาตรฐานการเข้าถึง
 
-### Optimización SEO
+[**Static Site Generator ⧉**][00] เป็นเครื่องมือสร้างเว็บไซต์แบบสแตติกที่ทรงพลังและใช้งานได้หลากหลาย พร้อมคุณสมบัติและประโยชน์มากมาย ออกแบบมาเพื่อช่วยให้ผู้ใช้สร้างและดูแลเว็บไซต์แบบสแตติกคุณภาพสูงที่ปรับแต่งเพื่อ SEO และมอบประสบการณ์ผู้ใช้ที่เหนือกว่า
 
-[**Static Site Generator ⧉**][00] está concebido para ayudar a los usuarios a crear sitios estáticos optimizados para los motores de búsqueda. Entre las funcionalidades clave de SEO:
+พร้อมสร้างเว็บไซต์แบบสแตติกประสิทธิภาพสูงภายในไม่กี่นาทีที่จะเพิ่มทราฟฟิกและอัตราการเปลี่ยนเป็นลูกค้าของคุณแล้วหรือยัง?
 
-* Generación automática de sitemaps y archivos robots.txt
-* Soporte de páginas 404 personalizadas
-* Código HTML limpio y bien estructurado
-* Tiempos de carga rápidos
-* Diseño responsive
-* Conformidad de accesibilidad
+[**ทดลองใช้ Static Site Generator ⧉**][00] ฟรีวันนี้ แล้วสัมผัสความแตกต่าง
 
-[**Static Site Generator ⧉**][00] es un generador de sitios estáticos potente y polivalente que ofrece una amplia gama de funcionalidades y beneficios. Está concebido para ayudar a los usuarios a crear y mantener sitios estáticos de alta calidad, optimizados para SEO y que ofrecen una experiencia de usuario superior.
-
-¿Listo para crear en unos minutos un sitio estático de alto rendimiento que impulsará su tráfico y sus conversiones?
-
-[**Pruebe Static Site Generator ⧉**][00] gratis hoy y compruebe la diferencia.
-
-[00]: https://static-site-generator.com/ "Static Site Generator, el generador de sitios estáticos más rápido basado en Rust"
+[00]: https://static-site-generator.com/ "Static Site Generator เครื่องมือสร้างเว็บไซต์แบบสแตติกที่เร็วที่สุดบน Rust (SSG)"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"
 [02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
 [03]: https://www.rust-lang.org/ "Rust Programming Language"

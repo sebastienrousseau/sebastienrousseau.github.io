@@ -1,52 +1,57 @@
 ---
-title: "RustLogs (RLG): biblioteca de registro estructurado para Rust"
-subtitle: "Simplificar su flujo de trabajo de registro en Rust"
-description: "Descubra RustLogs (RLG), la biblioteca flexible de registro para Rust con formatos de logs estructurados, registro asíncrono y opciones de personalización extensas."
+title: "RustLogs (RLG): ไลบรารีบันทึกรายการแบบมีโครงสร้างสำหรับ Rust"
+subtitle: "ปรับกระบวนการบันทึกรายการใน Rust ให้มีประสิทธิภาพ"
+description: "รู้จัก RustLogs (RLG) ไลบรารีบันทึกรายการที่ยืดหยุ่นสำหรับ Rust พร้อมรูปแบบบันทึกแบบมีโครงสร้าง การบันทึกแบบอะซิงโครนัส และตัวเลือกการปรับแต่งที่หลากหลาย"
 date: "March 08, 2024"
 language: "th-TH"
 locale: "th_TH"
 banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
-banner_alt: "Banner para RustLogs (RLG)"
-keywords: "biblioteca de registro Rust, registro Rust asíncrono, formatos de logs estructurados, depuración Rust, registro personalizable, herramientas de desarrollo Rust, funcionalidades RustLogs RLG, registro eficiente, integración RustLogs, documentación RustLogs"
+banner_alt: "แบนเนอร์สำหรับ RustLogs (RLG)"
+keywords: "ไลบรารีบันทึกรายการ Rust, การบันทึกรายการแบบอะซิงโครนัสใน Rust, รูปแบบบันทึกแบบมีโครงสร้าง, การดีบักแอปพลิเคชัน Rust, การบันทึกรายการที่ปรับแต่งได้ใน Rust, เครื่องมือพัฒนา Rust, คุณสมบัติของ RustLogs RLG, การบันทึกรายการที่มีประสิทธิภาพใน Rust, การผสานรวม RustLogs, เอกสารประกอบ RustLogs"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+> **สรุปโดยย่อ** RustLogs (RLG) คือไลบรารีบันทึกรายการสำหรับ Rust ที่ยืดหยุ่น รองรับรูปแบบบันทึกแบบมีโครงสร้าง การบันทึกแบบอะซิงโครนัส และตัวเลือกการปรับแต่งที่หลากหลาย
 
 **ประเด็นสำคัญ**
 
-## Introducción
+- **1. ทำความเข้าใจความจำเป็นของการบันทึกรายการที่มีประสิทธิภาพ** ก่อนพิจารณารายละเอียดของ RustLogs (RLG) เรามาทำความเข้าใจก่อนว่าเหตุใดการบันทึกรายการที่มีประสิทธิภาพจึงจำเป็นในการพัฒนาซอฟต์แวร์
+- **2. RustLogs (RLG): ไลบรารีบันทึกรายการที่ครบถ้วน** RustLogs (RLG) เป็นไลบรารีบันทึกรายการที่มีคุณสมบัติครบถ้วน มุ่งลดความซับซ้อนและปรับกระบวนการเพิ่มความสามารถในการบันทึกรายการให้กับแอปพลิเคชัน Rust
+- **3. เริ่มต้นใช้งาน RustLogs (RLG)** หากต้องการเริ่มใช้ RustLogs (RLG) ในโปรเจกต์ Rust ของคุณ คุณต้องเพิ่มไลบรารีนี้เป็น dependency ในไฟล์ Cargo.toml
+- **4. การบันทึกรายการแบบอะซิงโครนัสด้วย RustLogs (RLG)** หนึ่งในคุณสมบัติที่โดดเด่นของ RustLogs (RLG) คือการรองรับการบันทึกรายการแบบอะซิงโครนัส
 
-En el mundo del desarrollo de software, el registro desempeña un papel crucial para comprender el comportamiento de una aplicación, diagnosticar problemas y garantizar un funcionamiento fluido. Rust, lenguaje de programación de sistemas conocido por su rendimiento y su seguridad, ofrece a los desarrolladores una amplia gama de soluciones de registro. Entre ellas ha nacido RustLogs (RLG): una biblioteca de registro potente y flexible que facilita la adición de capacidades robustas a las aplicaciones Rust.
+## บทนำ
 
-![divider][divider].class=\"m-10 w-100\"
-
-### 1. Comprender la necesidad de un registro eficiente
-
-Antes de sumergirnos en los detalles de RustLogs (RLG), tomemos un momento para comprender por qué un registro eficiente es esencial en el desarrollo de software. El registro es una técnica crucial para capturar la información de ejecución sobre el comportamiento, el flujo de datos y los problemas potenciales de una aplicación. Colocando estratégicamente instrucciones de log en la base de código, los desarrolladores pueden obtener perspectivas valiosas sobre el funcionamiento interno de la aplicación e identificar cualquier anomalía o error. Los desarrolladores pueden reunir eficazmente datos cruciales —ejecuciones de funciones, contenido de variables y notificaciones de error— insertando estratégicamente instrucciones de log en el código. Esta información se vuelve inestimable durante la depuración, la optimización del rendimiento o la investigación de comportamientos inesperados.
-
-Sin embargo, implementar una funcionalidad de registro desde cero puede ser una tarea costosa en tiempo y propensa a errores. Exige una atención cuidadosa a los niveles de log, al formato, a los destinos de salida y al sobrecoste de rendimiento. Es ahí donde interviene RustLogs (RLG), ofreciendo una solución de registro completa y cómoda, diseñada específicamente para los desarrolladores Rust.
+ในการพัฒนาซอฟต์แวร์ การบันทึกรายการมีบทบาทสำคัญต่อการทำความเข้าใจพฤติกรรมของแอปพลิเคชัน การวินิจฉัยปัญหา และการดูแลให้ระบบทำงานได้อย่างราบรื่น Rust เป็นภาษาโปรแกรมระดับระบบที่เป็นที่รู้จักด้านประสิทธิภาพและความปลอดภัย และมอบทางเลือกสำหรับการบันทึกรายการที่หลากหลายแก่นักพัฒนา ในบรรดาไลบรารีเหล่านั้น RustLogs (RLG) ได้ถือกำเนิดขึ้น เป็นไลบรารีบันทึกรายการที่ทรงพลังและยืดหยุ่น ซึ่งช่วยให้เพิ่มความสามารถในการบันทึกรายการที่แข็งแกร่งให้กับแอปพลิเคชัน Rust ได้อย่างง่ายดาย
 
 ![divider][divider].class=\"m-10 w-100\"
 
-### 2. RustLogs (RLG): una biblioteca completa de registro
+### 1. ทำความเข้าใจความจำเป็นของการบันทึกรายการที่มีประสิทธิภาพ
 
-RustLogs (RLG) es una biblioteca de registro rica en funcionalidades que aspira a simplificar y racionalizar el proceso de adición de capacidades de registro a las aplicaciones Rust. Proporciona una API clara e intuitiva, acompañada de un conjunto de macros potentes, facilitando la integración del registro en la base de código. RustLogs (RLG) ofrece una amplia gama de niveles de log. Esto permite controlar el nivel de detalle de los logs en función de la gravedad y la importancia de la información.
+ก่อนพิจารณารายละเอียดของ RustLogs (RLG) เรามาทำความเข้าใจก่อนว่าเหตุใดการบันทึกรายการที่มีประสิทธิภาพจึงจำเป็นในการพัฒนาซอฟต์แวร์ การบันทึกรายการเป็นเทคนิคสำคัญในการเก็บข้อมูลขณะทำงานเกี่ยวกับพฤติกรรมของแอปพลิเคชัน การไหลของข้อมูล และปัญหาที่อาจเกิดขึ้น ด้วยการวางคำสั่งบันทึกไว้ตามจุดต่าง ๆ ในโค้ดอย่างมีกลยุทธ์ นักพัฒนาจะได้รับข้อมูลเชิงลึกที่มีคุณค่าเกี่ยวกับการทำงานภายในของแอปพลิเคชัน และสามารถระบุความผิดปกติหรือข้อผิดพลาดได้ นักพัฒนาสามารถรวบรวมข้อมูลสำคัญได้อย่างมีประสิทธิภาพ เช่น การเรียกใช้ฟังก์ชัน เนื้อหาของตัวแปร และการแจ้งเตือนข้อผิดพลาด โดยการแทรกคำสั่งบันทึกในโค้ดอย่างมีกลยุทธ์ ข้อมูลนี้มีคุณค่าอย่างยิ่งเมื่อต้องแก้ไขข้อบกพร่อง ปรับปรุงประสิทธิภาพ หรือตรวจสอบพฤติกรรมที่ไม่คาดคิด
 
-Una de las fortalezas clave de RustLogs (RLG) es su flexibilidad en términos de formato de logs y destinos de salida. El registro estructurado está soportado, permitiendo capturar los datos de log en un formato estructurado como JSON. Esto facilita el análisis. Además, RustLogs (RLG) ofrece compatibilidad con diversos formatos de salida, incluidos frameworks de registro populares como syslog, Apache Access Log y Log4j XML. Esta versatilidad garantiza que RustLogs (RLG) pueda integrarse de manera fluida con las infraestructuras y herramientas de registro existentes.
+อย่างไรก็ตาม การพัฒนาความสามารถในการบันทึกรายการขึ้นเองตั้งแต่ต้นอาจใช้เวลามากและเกิดข้อผิดพลาดได้ง่าย งานนี้ต้องพิจารณาระดับของบันทึก รูปแบบ ปลายทางของผลลัพธ์ และภาระด้านประสิทธิภาพอย่างรอบคอบ จุดนี้เองที่ RustLogs (RLG) เข้ามามีบทบาท โดยมอบโซลูชันการบันทึกรายการที่ครบถ้วนและใช้งานง่าย ออกแบบมาเพื่อนักพัฒนา Rust โดยเฉพาะ
 
 ![divider][divider].class=\"m-10 w-100\"
 
-### 3. Empezar con RustLogs (RLG)
+### 2. RustLogs (RLG): ไลบรารีบันทึกรายการที่ครบถ้วน
 
-Para empezar a utilizar RustLogs (RLG) en su proyecto Rust, debe añadirlo como dependencia en su archivo `Cargo.toml`. Especifique la versión deseada de RustLogs (RLG) y deje a Cargo encargarse del resto:
+RustLogs (RLG) เป็นไลบรารีบันทึกรายการที่มีคุณสมบัติครบถ้วน มุ่งลดความซับซ้อนและปรับกระบวนการเพิ่มความสามารถในการบันทึกรายการให้กับแอปพลิเคชัน Rust ให้มีประสิทธิภาพ ไลบรารีนี้มี API ที่ชัดเจนและใช้งานง่าย พร้อมด้วยชุดแมโครทรงพลัง ทำให้การผสานการบันทึกรายการเข้ากับโค้ดเป็นเรื่องง่าย RustLogs (RLG) มีระดับของบันทึกที่หลากหลาย ซึ่งช่วยให้คุณควบคุมความละเอียดของบันทึกได้ตามความรุนแรงและความสำคัญของข้อมูล
+
+จุดแข็งสำคัญประการหนึ่งของ RustLogs (RLG) คือความยืดหยุ่นในด้านรูปแบบของบันทึกและปลายทางของผลลัพธ์ ไลบรารีรองรับการบันทึกแบบมีโครงสร้าง ทำให้คุณเก็บข้อมูลบันทึกในรูปแบบที่มีโครงสร้างอย่าง JSON ได้ ซึ่งช่วยให้การแยกวิเคราะห์และการวิเคราะห์ทำได้ง่ายขึ้น นอกจากนี้ RustLogs (RLG) ยังรองรับรูปแบบผลลัพธ์ที่หลากหลาย รวมถึงเฟรมเวิร์กการบันทึกที่เป็นที่นิยมอย่าง syslog, Apache Access Log และ Log4j XML ความอเนกประสงค์นี้ทำให้ RustLogs (RLG) ผสานรวมกับโครงสร้างพื้นฐานและเครื่องมือการบันทึกที่มีอยู่ได้อย่างราบรื่น
+
+![divider][divider].class=\"m-10 w-100\"
+
+### 3. เริ่มต้นใช้งาน RustLogs (RLG)
+
+หากต้องการเริ่มใช้ RustLogs (RLG) ในโปรเจกต์ Rust ของคุณ คุณต้องเพิ่มไลบรารีนี้เป็น dependency ในไฟล์ `Cargo.toml` ระบุเวอร์ชันของ RustLogs (RLG) ที่ต้องการ แล้วให้ Cargo จัดการส่วนที่เหลือ:
 
 ```toml
 [dependencies]
 rlg = "0.0.3"
 ```
 
-Una vez añadida la dependencia, puede empezar a utilizar RustLogs (RLG) en su código Rust. La biblioteca proporciona una API simple e intuitiva para crear entradas de log. He aquí un ejemplo básico:
+เมื่อเพิ่ม dependency แล้ว คุณสามารถเริ่มใช้ RustLogs (RLG) ในโค้ด Rust ของคุณได้ ไลบรารีมี API ที่เรียบง่ายและใช้งานง่ายสำหรับการสร้างรายการบันทึก ตัวอย่างพื้นฐานมีดังนี้:
 
 ```rust
 use rlg::log::Log;
@@ -63,15 +68,15 @@ let log_entry = Log::new(
 );
 ```
 
-Para crear una nueva entrada de log, utilice la función `Log::new()`. Especifique el ID de sesión, la marca temporal, el nivel de log, el componente, el mensaje de log y el formato de log (JSON en este ejemplo). RustLogs (RLG) propone niveles y formatos de log predefinidos. Elija entre los niveles `ALL`, `DEBUG`, `DISABLED`, `ERROR`, `FATAL`, `INFO`, `NONE`, `TRACE`, `VERBOSE` y `WARNING`. Para los formatos, seleccione entre `CLF`, `JSON`, `CEF`, `ELF`, `W3C`, `GELF`, `ApacheAccessLog`, `Logstash`, `Log4jXML` y `NDJSON`. Esto le da un control preciso sobre su configuración de registro.
+หากต้องการสร้างรายการบันทึกใหม่ ให้ใช้ฟังก์ชัน `Log::new()` ระบุ session ID, timestamp, ระดับของบันทึก, คอมโพเนนต์, ข้อความบันทึก และรูปแบบบันทึก (JSON ในตัวอย่างนี้) RustLogs (RLG) มีระดับและรูปแบบของบันทึกที่กำหนดไว้ล่วงหน้า เลือกจากระดับบันทึกอย่าง `ALL`, `DEBUG`, `DISABLED`, `ERROR`, `FATAL`, `INFO`, `NONE`, `TRACE`, `VERBOSE` และ `WARNING` สำหรับรูปแบบบันทึก เลือกจาก `CLF`, `JSON`, `CEF`, `ELF`, `W3C`, `GELF`, `ApacheAccessLog`, `Logstash`, `Log4jXML` และ `NDJSON` สิ่งนี้ช่วยให้คุณควบคุมการตั้งค่าการบันทึกรายการได้อย่างแม่นยำ
 
 ![divider][divider].class=\"m-10 w-100\"
 
-### 4. Registro asíncrono con RustLogs (RLG)
+### 4. การบันทึกรายการแบบอะซิงโครนัสด้วย RustLogs (RLG)
 
-Una de las funcionalidades destacadas de RustLogs (RLG) es su soporte del registro asíncrono. En el desarrollo de software moderno, el rendimiento es primordial, y bloquear el hilo de ejecución principal con fines de registro puede introducir una latencia innecesaria. RustLogs (RLG) aborda este problema proporcionando capacidades de registro asíncrono listas para usar.
+หนึ่งในคุณสมบัติที่โดดเด่นของ RustLogs (RLG) คือการรองรับการบันทึกรายการแบบอะซิงโครนัส ในการพัฒนาซอฟต์แวร์สมัยใหม่ ประสิทธิภาพเป็นเรื่องสำคัญอย่างยิ่ง และการบล็อกเธรดหลักของการทำงานเพื่อการบันทึกรายการอาจทำให้เกิดความหน่วงที่ไม่จำเป็น RustLogs (RLG) แก้ไขปัญหานี้ด้วยการมอบความสามารถในการบันทึกรายการแบบอะซิงโครนัสมาพร้อมใช้งานทันที
 
-Con RustLogs (RLG), puede registrar los mensajes de manera asíncrona mediante el método `log()` sobre una entrada de log. Este método devuelve un `Future` que se ejecuta durante la lógica principal de su aplicación. Esto permite a su aplicación continuar sin esperar al final del registro. He aquí un ejemplo de registro asíncrono con RustLogs (RLG):
+ด้วย RustLogs (RLG) คุณสามารถบันทึกข้อความแบบอะซิงโครนัสได้โดยใช้เมท็อด `log()` บนรายการบันทึก เมท็อดนี้จะคืนค่า `Future` ที่ทำงานระหว่างตรรกะหลักของแอปพลิเคชัน ซึ่งช่วยให้แอปพลิเคชันทำงานต่อได้โดยไม่ต้องรอให้การบันทึกเสร็จสิ้น ตัวอย่างการบันทึกรายการแบบอะซิงโครนัสด้วย RustLogs (RLG) มีดังนี้:
 
 ```rust
 use rlg::log::Log;
@@ -95,23 +100,23 @@ async fn log_async() {
 }
 ```
 
-Aprovechando el registro asíncrono, RustLogs (RLG) garantiza que el rendimiento de su aplicación no se vea comprometido por las operaciones de registro. Esto es particularmente beneficioso en los escenarios de alto rendimiento o cuando se tratan grandes volúmenes de datos de log.
+ด้วยการใช้การบันทึกรายการแบบอะซิงโครนัส RustLogs (RLG) ช่วยให้ประสิทธิภาพของแอปพลิเคชันไม่ได้รับผลกระทบจากการดำเนินการบันทึก สิ่งนี้เป็นประโยชน์อย่างยิ่งในสถานการณ์ที่มีปริมาณงานสูงหรือเมื่อต้องจัดการกับข้อมูลบันทึกจำนวนมาก
 
 ![divider][divider].class=\"m-10 w-100\"
 
-### 5. Configuración y personalización flexibles
+### 5. การกำหนดค่าและการปรับแต่งที่ยืดหยุ่น
 
-RustLogs (RLG) proporciona un alto nivel de flexibilidad y opciones de personalización para responder a exigencias de registro diversas. Puede configurar distintas opciones: ubicación del archivo de log, niveles y formatos de salida. Esto permite parametrizar el registro según las necesidades de su aplicación.
+RustLogs (RLG) มอบความยืดหยุ่นและตัวเลือกการปรับแต่งในระดับสูงเพื่อรองรับความต้องการด้านการบันทึกรายการที่หลากหลาย คุณสามารถกำหนดค่าตัวเลือกการบันทึกต่าง ๆ ได้ เช่น ตำแหน่งไฟล์บันทึก ระดับของบันทึก และรูปแบบผลลัพธ์ ซึ่งช่วยให้คุณตั้งค่าการบันทึกรายการตามความต้องการของแอปพลิเคชันได้
 
-Por defecto, RustLogs (RLG) registra los mensajes en un archivo llamado `RLG.log` en el directorio actual. Sin embargo, puede personalizar fácilmente la ruta del archivo de log definiendo la variable de entorno `LOG_FILE_PATH`:
+โดยค่าเริ่มต้น RustLogs (RLG) จะบันทึกข้อความลงในไฟล์ชื่อ `RLG.log` ในไดเรกทอรีปัจจุบัน อย่างไรก็ตาม คุณสามารถปรับแต่งเส้นทางของไฟล์บันทึกได้ง่าย ๆ โดยการตั้งค่าตัวแปรสภาพแวดล้อม `LOG_FILE_PATH`:
 
 ```rust
 std::env::set_var("LOG_FILE_PATH", "/path/to/custom/log/file.log");
 ```
 
-Esta flexibilidad le permite dirigir la salida de log a distintos archivos según su entorno de despliegue o su infraestructura de registro.
+ความยืดหยุ่นนี้ช่วยให้คุณกำหนดทิศทางผลลัพธ์ของบันทึกไปยังไฟล์ต่าง ๆ ได้ตามสภาพแวดล้อมการปรับใช้หรือโครงสร้างพื้นฐานการบันทึกของคุณ
 
-Además, RustLogs (RLG) proporciona una struct `Config` que le permite cargar los parámetros de configuración desde variables de entorno o recurrir a valores por defecto. Esto permite centralizar su configuración de registro y modificarla fácilmente sin cambiar su código:
+ยิ่งไปกว่านั้น RustLogs (RLG) ยังมี struct `Config` ที่ช่วยให้คุณโหลดการตั้งค่าจากตัวแปรสภาพแวดล้อมหรือใช้ค่าเริ่มต้นแทนได้ ซึ่งช่วยให้คุณรวมศูนย์การกำหนดค่าการบันทึกและแก้ไขได้ง่ายโดยไม่ต้องเปลี่ยนโค้ด:
 
 ```rust
 use rlg::config::Config;
@@ -119,59 +124,59 @@ use rlg::config::Config;
 let config = Config::load();
 ```
 
-Con la struct `Config`, puede acceder a los parámetros de configuración cargados y utilizarlos en toda su aplicación. Esto garantiza un comportamiento de registro coherente en distintas ejecuciones o despliegues.
+ด้วย struct `Config` คุณสามารถเข้าถึงและใช้การตั้งค่าที่โหลดมาได้ทั่วทั้งแอปพลิเคชัน สิ่งนี้ช่วยให้พฤติกรรมการบันทึกรายการสอดคล้องกันในการทำงานหรือการปรับใช้ที่แตกต่างกัน
 
 ![divider][divider].class=\"m-10 w-100\"
 
-### 6. Macros potentes para un registro simplificado
+### 6. แมโครทรงพลังสำหรับการบันทึกรายการที่เรียบง่าย
 
-RustLogs (RLG) ofrece un conjunto de macros potentes que simplifican las tareas comunes de registro y reducen el código boilerplate. Estas macros ofrecen un medio cómodo para registrar mensajes con una configuración mínima. He aquí algunos ejemplos de macros disponibles en RustLogs (RLG):
+RustLogs (RLG) มีชุดแมโครทรงพลังที่ช่วยลดความซับซ้อนของงานบันทึกทั่วไปและลดโค้ดซ้ำซ้อน แมโครเหล่านี้เป็นวิธีที่สะดวกในการบันทึกข้อความด้วยการตั้งค่าและการกำหนดค่าที่น้อยที่สุด ตัวอย่างแมโครที่มีใน RustLogs (RLG) มีดังนี้:
 
-- `macro_log!`: crea una nueva entrada de log con los parámetros especificados.
+- `macro_log!`: สร้างรายการบันทึกใหม่ด้วยพารามิเตอร์ที่ระบุ
 
 ```rust
 let log = macro_log!(session_id, time, level, component, description, format);
 ```
 
-- `macro_info_log!`: crea un log info con ID de sesión y formato por defecto.
+- `macro_info_log!`: สร้างบันทึกระดับ info ด้วย session ID และรูปแบบเริ่มต้น
 
 ```rust
 let log = macro_info_log!(time, component, description);
 ```
 
-- `macro_warn_log!`: crea un log de advertencia.
+- `macro_warn_log!`: สร้างบันทึกคำเตือน
 
 ```rust
 let log = macro_warn_log!(time, component, description);
 ```
 
-- `macro_error_log!`: crea un log de error con formato por defecto.
+- `macro_error_log!`: สร้างบันทึกข้อผิดพลาดด้วยรูปแบบเริ่มต้น
 
 ```rust
 let log = macro_error_log!(time, component, description);
 ```
 
-Estas macros abstraen las complejidades de la creación de entradas de log, permitiéndole concentrarse en la información esencial a registrar. Proporcionan valores por defecto sensatos para los IDs de sesión, los formatos y otros parámetros, reduciendo la cantidad de código a escribir y mantener.
+แมโครเหล่านี้ซ่อนความซับซ้อนของการสร้างรายการบันทึก ทำให้คุณมุ่งเน้นไปที่ข้อมูลสำคัญที่ต้องการบันทึกได้ แมโครมีค่าเริ่มต้นที่เหมาะสมสำหรับ session ID รูปแบบ และพารามิเตอร์อื่น ๆ ช่วยลดปริมาณโค้ดที่คุณต้องเขียนและดูแลรักษา
 
 ![divider][divider].class=\"m-10 w-100\"
 
-### 7. Integración con infraestructuras existentes
+### 7. การผสานรวมกับโครงสร้างพื้นฐานการบันทึกรายการที่มีอยู่
 
-Uno de los beneficios clave de RustLogs (RLG) es su compatibilidad con diversas infraestructuras y herramientas de registro. La biblioteca admite una amplia gama de formatos de salida, facilitando la integración con los pipelines de registro y plataformas de análisis existentes.
+ประโยชน์สำคัญประการหนึ่งของ RustLogs (RLG) คือความเข้ากันได้กับโครงสร้างพื้นฐานและเครื่องมือการบันทึกที่หลากหลาย ไลบรารีรองรับรูปแบบผลลัพธ์ที่หลากหลาย ทำให้ผสานรวมกับไปป์ไลน์การบันทึกและแพลตฟอร์มการวิเคราะห์ที่มีอยู่ได้ง่าย
 
-Por ejemplo, si utiliza un sistema centralizado como syslog, RustLogs (RLG) puede escribir de manera fluida los mensajes en formato syslog. Si utiliza herramientas de agregación como Logstash o Graylog, RustLogs puede sacar los logs en formatos compatibles, por ejemplo JSON o GELF.
+ตัวอย่างเช่น หากคุณใช้ระบบบันทึกแบบรวมศูนย์อย่าง syslog RustLogs (RLG) สามารถเขียนข้อความบันทึกในรูปแบบ syslog ได้อย่างราบรื่น หากคุณใช้เครื่องมือรวบรวมบันทึกอย่าง Logstash หรือ Graylog RustLogs สามารถส่งออกบันทึกในรูปแบบที่เข้ากันได้กับระบบเหล่านี้ เช่น JSON หรือ GELF
 
-Esta capacidad de integración garantiza que puede aprovechar RustLogs (RLG) sin perturbar su configuración de registro existente. Puede seguir utilizando su infraestructura preferida a la vez que se beneficia de la facilidad de uso y la flexibilidad ofrecidas por RustLogs (RLG).
+ความสามารถในการผสานรวมนี้ช่วยให้คุณใช้ประโยชน์จาก RustLogs (RLG) ได้โดยไม่รบกวนการตั้งค่าการบันทึกที่มีอยู่ คุณสามารถใช้โครงสร้างพื้นฐานการบันทึกที่ต้องการต่อไปได้ พร้อมกับได้รับประโยชน์จากความง่ายในการใช้งานและความยืดหยุ่นที่ RustLogs (RLG) มอบให้
 
 ![divider][divider].class=\"m-10 w-100\"
 
-### 8. Gestión de errores y robustez
+### 8. การจัดการข้อผิดพลาดและความทนทาน
 
-Las operaciones de registro no están a salvo de errores, y RustLogs (RLG) proporciona mecanismos robustos de gestión de errores para garantizar la fiabilidad y la integridad de sus logs. La biblioteca devuelve un tipo `Result` desde el método `log()`, permitiéndole gestionar los errores potenciales con elegancia.
+การดำเนินการบันทึกไม่พ้นจากข้อผิดพลาด และ RustLogs (RLG) มีกลไกการจัดการข้อผิดพลาดที่แข็งแกร่งเพื่อรับประกันความน่าเชื่อถือและความถูกต้องของบันทึก ไลบรารีคืนค่าชนิด `Result` จากเมท็อด `log()` ทำให้คุณจัดการข้อผิดพลาดที่อาจเกิดขึ้นได้อย่างเหมาะสม
 
-Entre los errores comunes que pueden surgir durante el registro, se encuentran los errores de E/S de archivo, los problemas de formato o los errores relacionados con la red al enviar logs a destinos remotos. RustLogs (RLG) captura estos errores y proporciona mensajes informativos, permitiendo diagnosticarlos y gestionarlos de manera apropiada.
+ข้อผิดพลาดทั่วไปที่อาจเกิดขึ้นระหว่างการบันทึกได้แก่ ข้อผิดพลาด I/O ของไฟล์ ปัญหาด้านรูปแบบ หรือข้อผิดพลาดที่เกี่ยวข้องกับเครือข่ายเมื่อส่งบันทึกไปยังปลายทางระยะไกล RustLogs (RLG) จับข้อผิดพลาดเหล่านี้และให้ข้อความแสดงข้อผิดพลาดที่เป็นประโยชน์ ช่วยให้คุณวินิจฉัยและจัดการได้อย่างเหมาะสม
 
-He aquí un ejemplo de gestión de errores con RustLogs (RLG):
+ตัวอย่างการจัดการข้อผิดพลาดด้วย RustLogs (RLG) มีดังนี้:
 
 ```rust
 use rlg::log::Log;
@@ -195,34 +200,34 @@ async fn log_with_error_handling() {
 }
 ```
 
-RustLogs (RLG) garantiza que los fallos de registro no pasen inadvertidos. Le da la información necesaria para tomar acciones correctivas gestionando eficazmente los errores.
+RustLogs (RLG) ช่วยให้ความล้มเหลวในการบันทึกไม่ถูกมองข้าม ไลบรารีมอบข้อมูลที่คุณต้องใช้ในการดำเนินการแก้ไขด้วยการจัดการข้อผิดพลาดอย่างมีประสิทธิภาพ
 
 ![divider][divider].class=\"m-10 w-100\"
 
-### 9. Consideraciones de rendimiento
+### 9. ข้อพิจารณาด้านประสิทธิภาพ
 
-En materia de registro, el rendimiento es un factor crítico a considerar. Un registro excesivo o mecanismos ineficientes pueden introducir un sobrecoste significativo e impactar en el rendimiento global de su aplicación. RustLogs (RLG) está diseñado con el rendimiento en mente, ofreciendo varias optimizaciones para minimizar el impacto del registro sobre su sistema.
+ในเรื่องของการบันทึกรายการ ประสิทธิภาพเป็นปัจจัยสำคัญที่ต้องพิจารณา การบันทึกที่มากเกินไปหรือกลไกการบันทึกที่ไม่มีประสิทธิภาพอาจสร้างภาระที่มากและกระทบต่อประสิทธิภาพโดยรวมของแอปพลิเคชัน RustLogs (RLG) ออกแบบโดยคำนึงถึงประสิทธิภาพ และมีการปรับปรุงหลายอย่างเพื่อลดผลกระทบของการบันทึกที่มีต่อระบบของคุณ
 
-En primer lugar, RustLogs (RLG) admite el registro asíncrono, como se mencionó anteriormente. RustLogs (RLG) utiliza operaciones de E/S asíncronas, de modo que el registro no bloquea el hilo principal. Esto permite a su aplicación continuar tratando mientras el registro se produce en segundo plano. Este enfoque no bloqueante minimiza la penalización de rendimiento incurrida por las operaciones de registro.
+ประการแรก RustLogs (RLG) รองรับการบันทึกรายการแบบอะซิงโครนัสตามที่กล่าวไว้ก่อนหน้านี้ RustLogs (RLG) ใช้การดำเนินการ I/O แบบอะซิงโครนัส ดังนั้นการบันทึกจึงไม่บล็อกเธรดหลัก ซึ่งช่วยให้แอปพลิเคชันประมวลผลต่อได้ขณะที่การบันทึกเกิดขึ้นในเบื้องหลัง แนวทางแบบไม่บล็อกนี้ช่วยลดบทลงโทษด้านประสิทธิภาพที่เกิดจากการดำเนินการบันทึก
 
-Además, RustLogs (RLG) emplea mecanismos de formato y salida eficientes. La biblioteca utiliza buffers preasignados y evita las asignaciones de memoria innecesarias tanto como sea posible. Esta optimización reduce la huella de memoria y mejora la eficiencia global del registro.
+นอกจากนี้ RustLogs (RLG) ยังใช้กลไกการจัดรูปแบบและผลลัพธ์ที่มีประสิทธิภาพ ไลบรารีใช้บัฟเฟอร์ที่จัดสรรไว้ล่วงหน้าและหลีกเลี่ยงการจัดสรรหน่วยความจำที่ไม่จำเป็นเท่าที่จะทำได้ การปรับปรุงนี้ช่วยลดการใช้หน่วยความจำและเพิ่มประสิทธิภาพโดยรวมของการบันทึก
 
-RustLogs (RLG) le permite controlar el nivel de detalle en sus logs. Puede elegir registrar solo la información más importante o incluir más detalles para la depuración. Configurando niveles de log apropiados para distintos componentes o módulos, puede optimizar el rendimiento suprimiendo el registro innecesario en los entornos de producción.
+RustLogs (RLG) ช่วยให้คุณควบคุมระดับความละเอียดในบันทึกได้ คุณสามารถเลือกบันทึกเฉพาะข้อมูลที่สำคัญที่สุด หรือรวมรายละเอียดเพิ่มเติมเพื่อการดีบักได้ ด้วยการกำหนดระดับบันทึกที่เหมาะสมสำหรับคอมโพเนนต์หรือโมดูลต่าง ๆ ของแอปพลิเคชัน คุณสามารถปรับประสิทธิภาพได้โดยการลบการบันทึกที่ไม่จำเป็นออกในสภาพแวดล้อมการผลิต
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Conclusión
+## บทสรุป
 
-RustLogs (RLG) es una biblioteca de registro potente, flexible y cómoda que simplifica el proceso de integración del registro en las aplicaciones Rust. Su amplio conjunto de funcionalidades —registro estructurado, operaciones asíncronas y compatibilidad con las infraestructuras de registro populares— la convierte en una opción versátil para necesidades variadas.
+RustLogs (RLG) เป็นไลบรารีบันทึกรายการที่ทรงพลัง ยืดหยุ่น และใช้งานง่าย ซึ่งช่วยลดความซับซ้อนของการนำการบันทึกรายการเข้ามาใช้ในแอปพลิเคชัน Rust ชุดคุณสมบัติที่ครอบคลุม ทั้งการบันทึกแบบมีโครงสร้าง การทำงานแบบอะซิงโครนัส และความเข้ากันได้กับโครงสร้างพื้นฐานการบันทึกที่เป็นที่นิยม ทำให้เป็นทางเลือกที่อเนกประสงค์สำหรับความต้องการด้านการบันทึกที่หลากหลาย
 
-La API intuitiva de la biblioteca, sus macros potentes y sus mecanismos robustos de gestión de errores permiten a los desarrolladores capturar eficazmente y de manera fiable información de ejecución valiosa. Las optimizaciones de rendimiento de RustLogs y sus opciones de configuración flexibles refuerzan aún más su usabilidad y su adaptabilidad a las distintas necesidades de proyecto.
+API ที่ใช้งานง่าย แมโครทรงพลัง และกลไกการจัดการข้อผิดพลาดที่แข็งแกร่งของไลบรารี ช่วยให้นักพัฒนาเก็บข้อมูลขณะทำงานที่มีคุณค่าได้อย่างมีประสิทธิภาพและน่าเชื่อถือ การปรับปรุงประสิทธิภาพและตัวเลือกการกำหนดค่าที่ยืดหยุ่นของ RustLogs ยิ่งเสริมความสามารถในการใช้งานและการปรับตัวให้เข้ากับความต้องการของโปรเจกต์ที่แตกต่างกัน
 
-Con una documentación completa y una integración fluida con el ecosistema Rust, RustLogs se impone como una solución de registro fiable y eficiente para los desarrolladores Rust. Aprovechando las capacidades de RustLogs, los desarrolladores pueden obtener perspectivas más profundas sobre el comportamiento de sus aplicaciones, simplificar los procesos de depuración y garantizar la mantenibilidad a largo plazo de su base de código.
+ด้วยเอกสารประกอบที่ครบถ้วนและการผสานรวมกับระบบนิเวศของ Rust ได้อย่างราบรื่น RustLogs จึงเป็นโซลูชันการบันทึกรายการที่น่าเชื่อถือและมีประสิทธิผลสำหรับนักพัฒนา Rust ด้วยการใช้ความสามารถของ RustLogs นักพัฒนาสามารถเข้าใจพฤติกรรมของแอปพลิเคชันได้ลึกซึ้งยิ่งขึ้น ลดความซับซ้อนของกระบวนการดีบัก และรับประกันการดูแลรักษาโค้ดในระยะยาว
 
-A medida que la comunidad Rust continúa creciendo y evolucionando, RustLogs aspira a convertirse en una herramienta vital en el arsenal del desarrollador, permitiéndole construir aplicaciones robustas, bien registradas y mantenibles con facilidad.
+ในขณะที่ชุมชน Rust ยังคงเติบโตและพัฒนาอย่างต่อเนื่อง RustLogs มุ่งเป็นเครื่องมือสำคัญสำหรับนักพัฒนา ช่วยให้พวกเขาสร้างแอปพลิเคชันที่แข็งแกร่ง มีการบันทึกที่ดี และดูแลรักษาได้ง่าย
 
-[**Empezar ahora →**][00]
+[**เริ่มต้นใช้งานทันที →**][00]
 
-[00]: https://rustlogs.com/ "An Advanced Logging Library for Rust Applications"
+[00]: https://rustlogs.com/ "ไลบรารีบันทึกรายการขั้นสูงสำหรับแอปพลิเคชัน Rust"
 
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "ตัวคั่น"

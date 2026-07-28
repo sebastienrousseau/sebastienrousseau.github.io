@@ -1,54 +1,105 @@
 ---
-title: "Presentación de una nueva criptomoneda y una solución de pago más rápida"
-subtitle: "EXTC Network: una visión para pagos instantáneos sobre blockchain"
-description: "Un capítulo significativo en la evolución del panorama financiero mundial, configurado por la innovación tecnológica, los cambios geopolíticos y las finanzas sostenibles."
+title: "การเปิดตัวสกุลเงินคริปโตใหม่และโซลูชันการชำระเงินที่เร็วขึ้น"
+subtitle: "สกุลเงินคริปโตใหม่และโซลูชันการชำระเงินที่เร็วขึ้นสำหรับการเงินยุคถัดไป"
+description: "ในต้นปี 2018 แพลตฟอร์ม EXTC ได้สำรวจการชำระเงินข้ามพรมแดนที่เร็วขึ้นผ่านสัญญาอัจฉริยะ ERC-223 บน Ethereum ซึ่งเป็นพิมพ์เขียวยุคแรกของสิ่งที่การเงินแบบกระจายศูนย์จะสร้างขึ้นในภายหลัง"
 date: "February 4, 2018"
 language: "th-TH"
 locale: "th_TH"
 banner: "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp"
-banner_alt: "Ordenador portátil apagado sobre una mesa de madera marrón"
-keywords: "EXTC Network, criptomoneda, pagos más rápidos, Ethereum, EIP20, smart contracts, blockchain, pagos transfronterizos, inclusión financiera"
+banner_alt: "คอมพิวเตอร์แล็ปท็อปที่ปิดอยู่บนโต๊ะไม้สีน้ำตาล"
+keywords: "EXTC, ERC-223, สัญญาอัจฉริยะ Ethereum, การชำระเงินที่เร็วขึ้น, สกุลเงินคริปโต, การชำระเงินบนบล็อกเชน, โทเคนการชำระเงิน, การเงินแบบกระจายศูนย์, ERC-20, การชำระเงินข้ามพรมแดน"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+![อาคารสูงมากที่มีรูจำนวนมาก](https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp).class=\"img-fluid clearfix\"
 
-**ประเด็นสำคัญ**
+> **บทสรุปสำหรับผู้บริหาร / ประเด็นสำคัญ**
+>
+> - **สมมติฐานหลัก** สัญญาอัจฉริยะบน Ethereum สามารถแทนที่การส่งต่อแบบทอด ๆ ของธนาคารตัวแทน (correspondent banking) สำหรับการชำระเงินข้ามพรมแดน โดยชำระบัญชีภายในไม่กี่วินาทีแทนที่จะเป็นหลายวัน และตัดชั้นค่าธรรมเนียม 3–7% ออกไป ([World Bank, 2018](https://www.worldbank.org/en/topic/migrationremittancesdiasporaissues/brief/migration-remittances-data "ราคาการโอนเงินของธนาคารโลก")).
+> - **สิ่งที่ ERC-223 มีส่วนช่วยโดยเฉพาะ** มาตรฐานนี้แก้ไขข้อบกพร่องเรื่องการสูญเสียโทเคนอย่างเงียบ ๆ ใน ERC-20 โดยกำหนดให้สัญญาอัจฉริยะต้องเปิดเผยฟังก์ชัน `tokenFallback` ทำให้การโอนที่ล้มเหลวย้อนกลับ (revert) แทนที่จะเผาโทเคนทิ้งอย่างไม่สามารถกู้คืนได้ ([Ethereum EIPs](https://eips.ethereum.org/EIPS/eip-20 "EIP-20: มาตรฐานโทเคน")).
+> - **พรีมิทีฟการชำระเงินของ EXTC** การออกแบบโทเคนรองรับการโอนแบบอะตอมมิกครั้งเดียว คำสั่งชำระเงินประจำที่ทริกเกอร์ตามเวลา การจ่ายเงินขององค์กรแบบหลายลายเซ็น และสินเชื่อรายย่อยทันทีที่ค้ำประกันด้วยหลักทรัพย์ โดยทั้งหมดนี้ไม่ต้องอาศัยสถาบันหักบัญชี
+> - **สิ่งที่การทดลองเผยให้เห็น** การออกแบบทางเทคนิคมีความสอดคล้องกัน แต่เมนเน็ต Ethereum ในปี 2018 ประมวลผลได้ราว 15 ธุรกรรมต่อวินาที ปริมาณการชำระเงินในระดับขนาดใหญ่ต้องอาศัยโซลูชัน Layer-2 ที่ยังไม่พร้อมสำหรับการใช้งานจริง
+> - **มรดกที่ทิ้งไว้** แนวคิดเชิงสถาปัตยกรรมใน EXTC ได้แก่ เงินที่ตั้งโปรแกรมได้ การชำระบัญชีแบบอะตอมมิก และตรรกะโทเคนที่ฝังการปฏิบัติตามกฎเกณฑ์ ปรากฏขึ้นอีกครั้งในโปรโตคอล DeFi ยุคหลัง การออกแบบ CBDC และกรอบงานเงินฝากที่แปลงเป็นโทเคน
 
-![Ordenador portátil apagado sobre una mesa de madera marrón](https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp).class=\"img-fluid clearfix\"
+---
 
-## Perspectiva
+## ปัญหา: การชำระเงินข้ามพรมแดนในปี 2018
 
-### Una necesidad creciente de pagos más rápidos
+การชำระเงินระหว่างประเทศในต้นปี 2018 มีความล่าช้า มีค่าใช้จ่ายสูง และไม่โปร่งใสโดยการออกแบบ การโอนเงินรายย่อยจากสหราชอาณาจักรไปยังเอเชียตะวันออกเฉียงใต้โดยทั่วไปเกี่ยวข้องกับธนาคารตัวแทนสองถึงสี่แห่ง ซึ่งแต่ละแห่งเรียกเก็บค่าธรรมเนียมและเพิ่มเวลาอีกหนึ่งวันเข้าไปในห่วงโซ่การชำระบัญชี ฐานข้อมูล Remittance Prices Worldwide ของธนาคารโลกบันทึกต้นทุนเฉลี่ยทั่วโลกไว้ที่ 6.9% สำหรับการโอนเงิน 200 ดอลลาร์สหรัฐในไตรมาสแรกของปี 2018
 
-En el panorama actual de ritmo acelerado, donde el tiempo es valioso, la demanda de soluciones de pago más rápidas nunca ha sido tan acusada. La red Express Transaction Credits Platform (EXTC) reconoce esta necesidad como motor de su desarrollo.
+สกุลเงินคริปโตได้แสดงให้เห็นแล้วว่าเงินสดดิจิทัลแบบเพียร์ทูเพียร์เป็นไปได้ในทางเทคนิค Bitcoin ชำระบัญชีธุรกรรมทั่วโลกได้ในเวลาราวสิบนาที และชั้นที่ตั้งโปรแกรมได้ของ Ethereum เพิ่มสัญญาอัจฉริยะเข้ามา ซึ่งเป็นโค้ดที่ทำงานได้ด้วยตัวเองและสามารถเข้ารหัสกฎการชำระเงินลงในตัวการโอนเองได้โดยตรง ช่องว่างระหว่างสิ่งที่เป็นไปได้ทางเทคนิคบนเชนกับสิ่งที่ธนาคารตัวแทนแบบดั้งเดิมส่งมอบได้คือพื้นที่การออกแบบที่ EXTC เข้าไป
 
-Con el ascenso exponencial del comercio electrónico, del comercio mundial y de las transacciones transfronterizas, los sistemas bancarios tradicionales a menudo tropiezan con las transferencias rápidas de fondos. Esta toma de conciencia subraya la importancia de un ecosistema financiero capaz de entregar transacciones rápidas y fluidas, trascendiendo las fronteras geográficas.
+## รากฐานทางเทคนิค: ERC-20 และข้อบกพร่องของมัน
 
-El universo de las criptomonedas ya ha demostrado el potencial de revolucionar las velocidades de transacción, pero EXTC Network va más allá. Imagina una suite completa de servicios financieros que aprovecha los libros mayores distribuidos y los smart contracts autoejecutables. Estas tecnologías no se limitan a garantizar pagos más rápidos: también refuerzan la seguridad y la transparencia, factores cruciales para construir confianza en el ecosistema. Al captar el pulso de esta necesidad creciente de velocidad y eficiencia, EXTC Network se posiciona en primera línea de la carrera por redefinir los estándares de pago mundiales.
+มาตรฐาน ERC-20 ซึ่งกำหนดเป็นทางการใน Ethereum Improvement Proposal 20 ได้นิยามอินเทอร์เฟซมาตรฐานสำหรับโทเคนที่ทดแทนกันได้ (fungible tokens) ได้แก่ `balanceOf`, `transfer`, `transferFrom`, `approve` และ `allowance` ภายในต้นปี 2018 ERC-20 เป็นมาตรฐานโทเคนที่ครองตลาด โดยมีโทเคนหลายร้อยรายการถูกนำไปใช้งานบนเมนเน็ต
 
-## Idea
+อย่างไรก็ตาม ERC-20 มีปัญหาเชิงโครงสร้าง เมื่อโทเคนถูกส่งตรงไปยังที่อยู่ของสัญญาอัจฉริยะโดยใช้ฟังก์ชัน `transfer` มาตรฐาน สัญญานั้นไม่มีทางตรวจจับการโอนที่เข้ามาหรือดำเนินการกับมันได้ โทเคนที่ส่งด้วยวิธีนี้ถูกกักไว้อย่างถาวร ชุมชน Ethereum ประมาณการว่ามีโทเคน ERC-20 มูลค่าหลายล้านดอลลาร์สูญหายไปด้วยวิธีนี้ภายในกลางปี 2018
 
-### La visión de EXTC Network
+ERC-223 ซึ่งเสนอโดย Dexaran บนตัวติดตามปัญหา (issue tracker) ของ Ethereum บน GitHub แก้ไขเรื่องนี้ด้วยการเพิ่มข้อกำหนดฟังก์ชัน `tokenFallback(address _from, uint _value, bytes _data)` บนสัญญาที่รับ หากสัญญาที่รับไม่ได้ทำการอิมพลีเมนต์ `tokenFallback` การโอนจะย้อนกลับและโทเคนจะถูกส่งคืนให้ผู้ส่ง สิ่งนี้ทำให้การโอนแบบ ERC-223 เป็นอะตอมมิก กล่าวคือ สัญญายอมรับโทเคนและทำงานตามตรรกะของมัน หรือธุรกรรมล้มเหลวอย่างสะอาด
 
-En el corazón del poder transformador de EXTC Network se encuentra un concepto inédito: crear un estándar para soluciones de pago más rápidas que responda a las exigencias cambiantes del panorama financiero moderno. La red introduce el token EXTC (Express Transaction Credits), un activo digital diseñado para facilitar préstamos instantáneos, pagos ultrarrápidos y depósitos entre participantes. A diferencia de los métodos de pago tradicionales, que a menudo conllevan plazos, intermediarios y costes más elevados, los tokens EXTC ofrecen una alternativa depurada.
+## การออกแบบโทเคน EXTC
 
-La visión de EXTC Network supera el círculo de los entusiastas cripto. Imagina una plataforma que acoge a usuarios de todos los niveles financieros. Particular, propietario de pequeña empresa o gran empresa: la red promete una plataforma bien adaptada para ejecutar transacciones con la máxima eficiencia. Esta inclusividad es una piedra angular de la filosofía de EXTC Network, que se esfuerza por cerrar la brecha entre los sistemas financieros heredados y las innovaciones de la era digital.
+โทเคน Express Transaction Credits ถูกออกแบบขึ้นรอบคุณลักษณะหลักห้าประการ:
 
-## Impacto
+- **ชื่อ สัญลักษณ์ และทศนิยม** ฟิลด์ระบุตัวตนมาตรฐานของ ERC-223 พร้อมทศนิยม 18 ตำแหน่งเพื่อความแม่นยำระดับต่ำกว่าเซนต์
+- **อุปทานรวม** กำหนดตายตัว ณ เวลาที่สร้าง (mint) ทำให้ EXTC เป็นสินทรัพย์ที่มีภาวะเงินฝืด เนื่องจากโทเคนที่สูญหายหรือไม่ถูกอ้างสิทธิไม่สามารถออกใหม่ได้
+- **ยอดคงเหลือและการโอน** ฟังก์ชันอ่านและเขียนมาตรฐาน ขยายเพิ่มด้วยข้อกำหนด `tokenFallback` ของ ERC-223
+- **การรองรับหลายลายเซ็น** การจ่ายเงินขององค์กรต้องมีการร่วมลงนามจากที่อยู่ที่ได้รับอนุญาตหลายรายก่อนดำเนินการ ซึ่งให้ร่องรอยการตรวจสอบโดยไม่ต้องมีสำนักหักบัญชีแบบรวมศูนย์
+- **การโอนที่ล็อกตามเวลา** พรีมิทีฟคำสั่งชำระเงินประจำช่วยให้ EXTC สามารถกำหนดตารางการชำระเงินในอนาคตได้ ซึ่งเป็นความสามารถที่การโอนเงินผ่านธนาคารแบบดั้งเดิมต้องอาศัยคำสั่งจากภายนอกจึงจะทำได้
 
-### Redefinir los paradigmas del pago
+## พรีมิทีฟการชำระเงินที่แพลตฟอร์มมุ่งเป้า
 
-El impacto de la visión de EXTC Network trasciende las fronteras del sector financiero. A medida que la red introduce una suite de servicios financieros, incluyendo préstamos instantáneos y órdenes permanentes en tiempo real, desencadena un cambio de paradigma en la forma en que se perciben y ejecutan las transacciones. La capacidad de llevar a cabo pagos atómicos únicos, pagos basados en el tiempo y pagos masivos de empresa sobre una blockchain o libro mayor distribuido garantiza a los usuarios un nivel inigualable de comodidad y seguridad.
+สถาปัตยกรรมของ EXTC ถูกออกแบบมาเพื่อแทนที่เวิร์กโฟลว์การชำระเงินเฉพาะสี่แบบที่ระบบดั้งเดิมจัดการได้อย่างไม่มีประสิทธิภาพ:
 
-Por otra parte, el énfasis de EXTC Network en el cumplimiento y la regulación añade una capa adicional de credibilidad a su oferta. En un panorama donde la confianza es primordial, el compromiso de la red de respetar las prácticas regulatorias y garantizar la legitimidad de cada nodo entre pares favorece un entorno de fiabilidad. Es un factor crucial para impulsar la adopción masiva de las soluciones de pago basadas en criptomoneda.
+**การชำระเงินแบบอะตอมมิกครั้งเดียว** คือการโอนครั้งเดียวที่ชำระบัญชีในธุรกรรม Ethereum เดียว โดยทั่วไปภายใน 15–30 วินาทีบนเมนเน็ตปี 2018
 
-## Incentivos
+**คำสั่งชำระเงินประจำตามเวลา** คือการโอนซ้ำที่เข้ารหัสเป็นการเรียกสัญญาอัจฉริยะแบบล็อกตามเวลา ตัดความจำเป็นที่ธนาคารต้องรับและดำเนินการตามคำสั่งเป็นงวด ๆ ซ้ำ
 
-### Trazar el camino
+**การจ่ายเงินจำนวนมากขององค์กร** คือการชำระเงินแบบกลุ่มไปยังผู้รับหลายรายในธุรกรรมเดียว โดยการโอนแต่ละรายการต้องมีการอนุมัติแบบหลายลายเซ็น ช่วยลดต้นทุนและความเสี่ยงคู่สัญญา
 
-EXTC Network reconoce que una adopción a gran escala exige un conjunto de beneficios incrementales reconocibles y alcanzables. Como tal, la arquitectura de la red está diseñada para acomodar monedas fiat tradicionales, criptomonedas y tokens conformes. Este enfoque orientado al futuro simplifica la transición para los usuarios habituados a los sistemas financieros convencionales, al tiempo que abre puertas a la colaboración con instituciones financieras establecidas.
+**สินเชื่อทันทีที่ค้ำประกันด้วยหลักทรัพย์** ผู้กู้ล็อกโทเคน EXTC ไว้เป็นหลักประกันในสัญญาอัจฉริยะ สัญญาปล่อยเงินสินเชื่อโดยอัตโนมัติเมื่อได้รับ โดยไม่ต้องมีคณะกรรมการสินเชื่อหรือความล่าช้าในการพิจารณารับประกัน
 
-Al apoyarse en la blockchain Ethereum y respetar los estándares EIP20, el token EXTC garantiza estabilidad y seguridad. Esta garantía constituye un incentivo poderoso para que los usuarios individuales y las empresas adopten el nuevo paradigma de pago ofrecido por EXTC Network. A medida que la red cultiva un ecosistema financiero que prioriza velocidad, seguridad y accesibilidad, atrae a las partes interesadas a participar y contribuir al panorama emergente de soluciones de pago más rápidas.
+## สิ่งที่การทดลองเผยให้เห็น
 
-En conclusión, la presentación de EXTC Network marca un capítulo significativo en la evolución continua del panorama financiero mundial, configurado por la innovación tecnológica, los cambios geopolíticos y las finanzas sostenibles. Con un enfoque visionario de las soluciones de pago más rápidas, sustentado en el potencial de las criptomonedas y los libros mayores distribuidos, la red aspira a redefinir la forma en que se llevan a cabo las transacciones en todo el mundo. Su impacto resuena no solo en el universo de los activos digitales, sino también en la transformación de los sistemas financieros tradicionales, propulsándonos en última instancia hacia un futuro en el que velocidad, seguridad e inclusividad definirán la manera en que intercambiamos valor.
+การออกแบบ EXTC มีความสอดคล้องกันในทางเทคนิค รากฐาน ERC-223 แก้ไขข้อบกพร่องด้านความปลอดภัยที่สำคัญที่สุดของมาตรฐานโทเคนที่ครองตลาด และพรีมิทีฟการชำระเงินเชื่อมโยงโดยตรงกับเวิร์กโฟลว์จริงที่ธนาคารตัวแทนจัดการได้อย่างไม่มีประสิทธิภาพ
+
+ข้อจำกัดในทางปฏิบัติคือปริมาณงาน (throughput) ของ Ethereum ในไตรมาสแรกของปี 2018 เมนเน็ตทำได้เฉลี่ย 15 ธุรกรรมต่อวินาที โดยมีขีดจำกัดแก๊ส (gas limit) ราว 8 ล้านต่อบล็อก เครือข่ายการชำระเงินที่ประมวลผลปริมาณการโอนเงินทั่วโลกแม้เพียงเศษเสี้ยวเล็ก ๆ ซึ่งธนาคารโลกประมาณการว่ามีแรงงานย้ายถิ่น 270 ล้านคนส่งเงินกลับบ้านในปี 2017 ก็จะทำให้เมนเน็ตอิ่มตัวภายในไม่กี่นาที
+
+โซลูชันการขยายขนาด Layer-2 โดยเฉพาะสเตตแชนเนล (state channels) และเวอร์ชันแรก ๆ ของสิ่งที่ต่อมากลายเป็นเทคโนโลยีโรลอัป (rollup) อยู่ระหว่างการวิจัยอย่างจริงจังในปี 2018 แต่ยังไม่พร้อมสำหรับการใช้งานจริง Lightning Network เพิ่งเปิดตัวบนเมนเน็ต Bitcoin ในเดือนมกราคม 2018 พร้อมข้อจำกัดสำคัญ เงื่อนไขทางเทคนิคเบื้องต้นสำหรับเครือข่ายการชำระเงินบนบล็อกเชนที่จะทำงานในระดับธนาคารตัวแทนยังไม่มีอยู่ในเวลานั้น
+
+## แนวคิดที่อยู่รอด
+
+แนวคิดเชิงสถาปัตยกรรมหลายอย่างจาก EXTC และโครงการโทเคนการชำระเงินร่วมสมัยได้รับการพิสูจน์โดยการพัฒนาในเวลาต่อมา:
+
+**เงินที่ตั้งโปรแกรมได้** ซึ่งเข้ารหัสกฎการชำระเงินลงในตรรกะการโอนโดยตรง กลายเป็นคุณสมบัติหลักของโปรโตคอลการปล่อยสินเชื่อ DeFi เช่น Compound และ Aave ที่เปิดตัวในปี 2018 และ 2020 ตามลำดับ
+
+**การชำระบัญชีแบบอะตอมมิกโดยไม่ต้องมีสำนักหักบัญชี** คือคุณสมบัติที่การโอนจะสำเร็จสมบูรณ์หรือย้อนกลับ ปัจจุบันเป็นข้อกำหนดในการออกแบบกรอบงานเงินฝากที่แปลงเป็นโทเคนและสถาปัตยกรรม CBDC สำหรับการชำระเงินรายใหญ่ (wholesale) ที่ธนาคารกลางหลายแห่งกำลังสำรวจ รวมถึงธนาคารกลางอังกฤษและธนาคารกลางยุโรป
+
+**โทเคนที่ฝังการปฏิบัติตามกฎเกณฑ์** ซึ่งฝังข้อจำกัดการโอนและภาระผูกพันในการรายงานไว้ในสัญญาโทเคนเอง ปรากฏในมาตรฐานโทเคนที่มีการกำกับดูแล เช่น ERC-1400 (โทเคนหลักทรัพย์) และในการออกแบบชั้นการปฏิบัติตามกฎเกณฑ์ของ Project Agorá และการทดลองการแปลงเป็นโทเคนแบบหลายธนาคารกลางที่คล้ายกัน
+
+การทดลอง EXTC ไม่ได้ไปถึงระดับการใช้งานจริง แต่คำถามที่มันตั้งขึ้นเกี่ยวกับการชำระบัญชีที่ตั้งโปรแกรมได้ การโอนแบบอะตอมมิก และกฎการชำระเงินที่บังคับใช้ตัวเอง เป็นคำถามที่ถูกต้องสำหรับปี 2018 โครงสร้างพื้นฐานที่จำเป็นในการตอบคำถามเหล่านี้ต้องใช้เวลาอีกห้าปีจึงจะเติบโตเต็มที่
+
+## คำถามที่พบบ่อย
+
+**ERC-223 คืออะไร และเหตุใด EXTC จึงใช้มันแทน ERC-20?**
+
+โทเคน ERC-20 ที่ส่งตรงไปยังที่อยู่ของสัญญาอัจฉริยะจะสูญหายอย่างเงียบ ๆ เพราะสัญญาไม่มีทางตรวจจับการโอนที่เข้ามา ERC-223 แก้ไขเรื่องนี้ด้วยการกำหนดให้สัญญาผู้รับต้องทำการอิมพลีเมนต์ฟังก์ชัน `tokenFallback` หากไม่มีฟังก์ชันนี้ การโอนจะย้อนกลับแทนที่จะเผาโทเคนทิ้ง EXTC นำ ERC-223 มาใช้เพื่อทำให้การโอนบนเชนทั้งหมดเป็นอะตอมมิกและปลอดภัย
+
+**เหตุใดโครงการโทเคนการชำระเงินยุคแรกจึงไม่สามารถขยายขนาดเพื่อแทนที่ธนาคารตัวแทนได้?**
+
+เมนเน็ต Ethereum ในปี 2018 ประมวลผลได้ราว 15 ธุรกรรมต่อวินาที ลำพังปริมาณการโอนเงินทั่วโลก โดยไม่นับการเงินเพื่อการค้าหรือการชำระเงินขององค์กร ก็ต้องการหลายหมื่นธุรกรรมต่อวินาทีแล้ว โครงสร้างพื้นฐานการขยายขนาด Layer-2 ที่จำเป็นเพื่อให้ได้ปริมาณงานเช่นนั้นยังไม่พร้อมสำหรับการใช้งานจริงจนกระทั่งปี 2021–2023
+
+**แนวคิดเบื้องหลัง EXTC เกิดอะไรขึ้น?**
+
+แนวคิดหลักได้แก่ กฎการชำระเงินที่ตั้งโปรแกรมได้ การชำระบัญชีแบบอะตอมมิก และตรรกะโทเคนที่ฝังการปฏิบัติตามกฎเกณฑ์ ถูกนำไปใช้โดยโปรโตคอล DeFi มาตรฐานโทเคนหลักทรัพย์ที่มีการกำกับดูแล (ERC-1400) และงานวิจัยสกุลเงินดิจิทัลของธนาคารกลาง กรอบงานเงินฝากที่แปลงเป็นโทเคนซึ่งขณะนี้ธนาคารพาณิชย์กำลังนำร่องอยู่ สืบย้อนโดยตรงไปยังคำถามเชิงการออกแบบที่การทดลองโทเคนการชำระเงินยุคแรกอย่าง EXTC ตั้งขึ้นเป็นครั้งแรก
+
+**การออกแบบ EXTC ปี 2018 เปรียบเทียบกับข้อเสนอเงินฝากที่แปลงเป็นโทเคนปี 2026 อย่างไร?**
+
+แบบจำลองการชำระบัญชีมีความคล้ายกัน คือโทเคนที่แทนสิทธิเรียกร้องทางการเงิน โอนแบบอะตอมมิกบนบัญชีแยกประเภทแบบกระจาย ความแตกต่างหลักคือ: (1) เงินฝากที่แปลงเป็นโทเคนในปี 2026 เป็นหนี้สินของธนาคารพาณิชย์มากกว่าจะเป็นโทเคนแบบผู้ถือ (bearer tokens); (2) มันทำงานบนบัญชีแยกประเภทแบบมีการอนุญาต (permissioned) หรือแบบไฮบริดที่มีการกำกับดูแล มากกว่าจะเป็นเมนเน็ตสาธารณะ; (3) การปฏิบัติตามกฎเกณฑ์และการยืนยันตัวตนถูกบังคับใช้ที่ชั้นโปรโตคอล แทนที่จะปล่อยให้เป็นหน้าที่ของผู้เข้าร่วม
+
+## เอกสารอ้างอิง
+
+- Ethereum Foundation, (2018). [EIP-20: มาตรฐานโทเคน ⧉](https://eips.ethereum.org/EIPS/eip-20 "EIP-20 มาตรฐานโทเคน").
+- Dexaran, Ethereum GitHub, (2017). [ข้อเสนอมาตรฐานโทเคน ERC-223 ⧉](https://github.com/ethereum/EIPs/issues/223 "การอภิปราย ERC-223").
+- World Bank, (2018). [ราคาการโอนเงินทั่วโลก: ไตรมาสแรก 2018 ⧉](https://www.worldbank.org/en/topic/migrationremittancesdiasporaissues/brief/migration-remittances-data "ราคาการโอนเงินของธนาคารโลก").
+- Buterin, V., (2014). [Ethereum: แพลตฟอร์มสัญญาอัจฉริยะและแอปพลิเคชันแบบกระจายศูนย์ยุคถัดไป ⧉](https://ethereum.org/whitepaper "เอกสารไวต์เปเปอร์ Ethereum").

@@ -1,131 +1,127 @@
 ---
-title: "Proteger los datos en la era cuántica: la biblioteca Hash (HSH)"
-subtitle: "Una biblioteca Rust resistente a lo cuántico para el hashing y la verificación criptográficos"
-description: "HSH se apoya en primitivas criptográficas resistentes a lo cuántico para proteger sus datos frente a los avances futuros de la computación cuántica."
+title: "การปกป้องข้อมูลในยุคควอนตัม: ไลบรารี Hash (HSH)"
+subtitle: "ไลบรารี Rust ที่ต้านทานควอนตัมสำหรับการแฮชและการตรวจสอบเชิงการเข้ารหัส"
+description: "HSH ใช้ไพรมิทีฟการเข้ารหัสที่ต้านทานควอนตัมเพื่อปกป้องข้อมูลของคุณ ให้มั่นใจในความปลอดภัยแม้เผชิญกับความก้าวหน้าของการประมวลผลควอนตัมในอนาคต"
 date: "October 16, 2023"
 language: "th-TH"
 locale: "th_TH"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp"
-banner_alt: "Ilustración creativa sobre el tema de la computación cuántica"
-keywords: "criptografía resistente a lo cuántico, biblioteca Hash, HSH, Rust, postcuántica, PQC, KDF, Argon2i, BScrypt, Scrypt, servicios financieros, seguridad, NIST"
+banner_alt: "ภาพประกอบสร้างสรรค์ในธีมการประมวลผลควอนตัม"
+keywords: "การเข้ารหัสที่ต้านทานควอนตัม, ไลบรารี Hash, HSH, Rust, หลังยุคควอนตัม, PQC, KDF, Argon2i, BScrypt, Scrypt, บริการทางการเงิน, ความปลอดภัย, NIST"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+![ภาพประกอบสร้างสรรค์ในธีมการประมวลผลควอนตัม](https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"
 
-**ประเด็นสำคัญ**
+ในบทความนี้ ผมจะพิจารณาการใช้งานการเข้ารหัสที่ต้านทานควอนตัม โดยเน้นที่ไลบรารี Rust Hash (HSH) ที่ผมพัฒนาขึ้น ไลบรารีนี้ได้รับการปรับให้เหมาะสมอย่างเต็มที่สำหรับฟังก์ชันการแฮชและการตรวจสอบเชิงการเข้ารหัส
 
-![Ilustración creativa sobre el tema de la computación cuántica](https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"
+## มุมมอง
 
-En este artículo examinaré los usos de la criptografía resistente a lo cuántico, centrándome específicamente en la biblioteca Rust Hash (HSH) que he desarrollado. Esta biblioteca está totalmente optimizada para las funciones de hashing y verificación criptográficos.
+### ภัยคุกคามที่กำลังก่อตัวจากการประมวลผลควอนตัม
 
-## Perspectiva
+เมื่อโลกดิจิทัลพัฒนาไป องค์กรบริการทางการเงินต้องนำเทคโนโลยีใหม่มาใช้เพื่อรักษาความสามารถในการแข่งขัน หากไม่ทำเช่นนั้น องค์กรอาจถูกทิ้งไว้ข้างหลัง เพราะการเปลี่ยนผ่านสู่ดิจิทัลกำลังส่งผลกระทบต่อทุกอุตสาหกรรม
 
-### La amenaza emergente de la computación cuántica
+การประมวลผลควอนตัมเป็นสัญญาณของการเปลี่ยนแปลงครั้งใหญ่ ที่มีศักยภาพเร่งความก้าวหน้าอย่างมีนัยสำคัญในหลายภาคส่วน รวมถึงธนาคารและบริการทางการเงิน อย่างไรก็ตาม มันมาพร้อมกับความเสี่ยงร้ายแรงต่อความปลอดภัยดิจิทัล เนื่องจากความสามารถในการถอดรหัสแม้กระทั่งรหัสที่ซับซ้อนที่สุด
 
-A medida que el panorama digital evoluciona, las organizaciones de servicios financieros deben adoptar nuevas tecnologías para seguir siendo competitivas. De no hacerlo, corren el riesgo de quedarse atrás, ya que la transformación digital afecta a todos los sectores.
+การประมวลผลควอนตัมทำให้เทคนิคการเข้ารหัสแบบดั้งเดิมบางอย่างล้าสมัย เพราะสามารถแก้ปัญหาทางคณิตศาสตร์ที่คอมพิวเตอร์แบบคลาสสิกทำไม่ได้
 
-La computación cuántica anuncia un giro mayor: promete acelerar los avances en sectores diversos, incluidos la banca y los servicios financieros. Pero conlleva un riesgo formidable para la seguridad digital, debido a su capacidad para descifrar los códigos más complejos.
+ในบริบทปัจจุบัน Alice และ Bob สามารถสื่อสารกันอย่างปลอดภัยด้วยกุญแจเข้ารหัส ป้องกันไม่ให้ Eve ถอดรหัสข้อความได้ แต่ความปลอดภัยอย่างสมบูรณ์ของการแจกจ่ายและจัดเก็บกุญแจนั้นไม่อาจรับประกันได้ทั้งหมด ด้วยเหตุนี้ คอมพิวเตอร์ควอนตัมจึงเป็นภัยคุกคามสำคัญต่อการเข้ารหัสและความปลอดภัยดิจิทัล
 
-La computación cuántica vuelve obsoletas ciertas técnicas de cifrado tradicionales, ya que puede resolver problemas matemáticos inaccesibles para los ordenadores clásicos.
+#### ปลอดภัยแต่เปราะบาง: การรับมือความท้าทายด้านการเข้ารหัสในยุคควอนตัม
 
-Hoy, Alice y Bob pueden comunicarse de forma segura mediante claves criptográficas, impidiendo que Eve decodifique sus mensajes. Pero la seguridad absoluta de la distribución y el almacenamiento de claves nunca está totalmente garantizada. Los ordenadores cuánticos suponen, pues, una amenaza significativa para el cifrado y la seguridad digital.
+![แผนภาพลำดับ][01].class=\"img-fluid clearfix\"
 
-#### Seguros pero vulnerables: navegar por los retos criptográficos en la era cuántica
+##### คำอธิบายสัญลักษณ์
 
-![Diagrama de secuencia][01].class=\"img-fluid clearfix\"
+* *Alice ถึง Eve: Alice ส่งข้อความที่เข้ารหัส*
+* *Eve ดักจับ: Eve ดักจับข้อความของ Alice*
+* *Eve พยายามถอดรหัส: Eve พยายามแต่ถอดรหัสไม่สำเร็จ*
+* *Eve ถึง Bob: Eve ส่งข้อความที่เข้ารหัสไปยัง Bob*
+* *Bob ถึง Eve: Bob ส่งการตอบกลับที่เข้ารหัสไปยัง Eve*
+* *Eve ดักจับ: Eve ดักจับการตอบกลับของ Bob*
+* *Eve พยายามถอดรหัส: Eve ถอดรหัสไม่สำเร็จอีกครั้ง*
+* *Eve ถึง Alice: Eve ส่งข้อความที่เข้ารหัสไปยัง Alice*
 
-##### Leyenda
+##### คำอธิบาย
 
-* *Alice hacia Eve — Alice envía un mensaje cifrado*
-* *Eve intercepta — Eve intercepta el mensaje de Alice*
-* *Eve intenta descifrar — Eve lo intenta pero no logra descifrar*
-* *Eve hacia Bob — Eve envía un mensaje cifrado a Bob*
-* *Bob hacia Eve — Bob envía una respuesta cifrada a Eve*
-* *Eve intercepta — Eve intercepta la respuesta de Bob*
-* *Eve intenta descifrar — Eve no logra descifrar de nuevo*
-* *Eve hacia Alice — Eve envía un mensaje cifrado a Alice*
+###### การเข้ารหัสในปัจจุบัน
 
-##### Explicación
+อัลกอริทึมการเข้ารหัสที่ Alice และ Bob ใช้อยู่ในปัจจุบันมีประสิทธิภาพในการป้องกันไม่ให้ Eve ถอดรหัสข้อความของพวกเขา อย่างไรก็ตาม การประมวลผลควอนตัมเป็นภัยคุกคามที่อาจเกิดขึ้นต่อความปลอดภัยของอัลกอริทึมเหล่านี้
 
-###### Cifrado actual
+###### ความเสี่ยงเชิงควอนตัมที่อาจเกิดขึ้น
 
-Los algoritmos de cifrado actuales utilizados por Alice y Bob son eficaces para impedir que Eve descifre sus mensajes. Sin embargo, la computación cuántica constituye una amenaza potencial para su seguridad.
+คอมพิวเตอร์ควอนตัมทำการคำนวณบางประเภทได้เร็วกว่าคอมพิวเตอร์แบบดั้งเดิมมาก รวมถึงการคำนวณที่ใช้เจาะอัลกอริทึมการเข้ารหัสบางชนิด หาก Eve เข้าถึงคอมพิวเตอร์ควอนตัมได้ เธออาจเจาะการเข้ารหัสและอ่านข้อความของ Alice และ Bob ได้
 
-###### Riesgo cuántico potencial
+###### ความเสี่ยงในการแจกจ่ายและจัดเก็บกุญแจ
 
-Los ordenadores cuánticos son mucho más rápidos que los ordenadores tradicionales para ciertos tipos de cálculo, incluidos los que sirven para romper determinados algoritmos de cifrado. Si Eve tuviera acceso a un ordenador cuántico, potencialmente podría quebrar el cifrado y leer los mensajes de Alice y Bob.
+แม้ว่า Alice และ Bob จะใช้การเข้ารหัสที่แข็งแกร่ง ข้อความของพวกเขาก็ยังอาจถูกบุกรุกได้หากกุญแจที่ใช้เข้ารหัสและถอดรหัสถูกบุกรุก กุญแจอาจถูกบุกรุกได้หลายวิธี เช่น การโจรกรรม การเจาะระบบ หรือการโจมตีแบบวิศวกรรมสังคม
 
-###### Riesgos vinculados a la distribución y el almacenamiento de claves
+###### ความจำเป็นของการเข้ารหัสหลังยุคควอนตัม
 
-Aunque Alice y Bob utilicen un cifrado robusto, sus mensajes podrían verse comprometidos si las claves utilizadas para cifrar y descifrar son comprometidas. Las claves pueden serlo de múltiples maneras: robo, pirateo o ataques de ingeniería social.
+การเข้ารหัสหลังยุคควอนตัมเป็นสาขาใหม่ของการเข้ารหัสที่ออกแบบมาให้ต้านทานการโจมตีเชิงควอนตัม อัลกอริทึมการเข้ารหัสหลังยุคควอนตัมยังอยู่ระหว่างการพัฒนา แต่มีศักยภาพในการปกป้องข้อมูลจากการโจมตีเชิงควอนตัม
 
-###### Necesidad de una criptografía postcuántica
+### แนะนำการเข้ารหัสที่ต้านทานควอนตัม
 
-La criptografía postcuántica es un nuevo campo diseñado para resistir los ataques cuánticos. Los algoritmos de cifrado postcuántico aún están en desarrollo, pero tienen el potencial de proteger los datos frente a los ataques cuánticos.
+การเข้ารหัสที่ต้านทานควอนตัม หรือที่เรียกว่าการเข้ารหัสหลังยุคควอนตัม (PQC) หรือการเข้ารหัสแบบปลอดภัยจากควอนตัม หมายถึงอัลกอริทึมการเข้ารหัสที่เชื่อว่าปลอดภัยจากการโจมตีด้วยคอมพิวเตอร์ควอนตัม
 
-### Introducción a la criptografía resistente a lo cuántico
+องค์กรต้องใช้มาตรการป้องกันที่จำเป็นเพื่อปกป้องข้อมูลจากอันตรายของการประมวลผลควอนตัม การนำการเข้ารหัสที่ต้านทานควอนตัมและกลยุทธ์การพัวพันเชิงควอนตัมมาใช้สามารถเพิ่มชั้นความปลอดภัยให้แก่บริษัทบริการทางการเงิน
 
-La criptografía resistente a lo cuántico, también llamada criptografía postcuántica (PQC) o criptografía «quantum-safe», designa a los algoritmos criptográficos considerados seguros frente a los ataques de ordenadores cuánticos.
+* **การเข้ารหัสที่ต้านทานควอนตัม** เป็นการเข้ารหัสรูปแบบใหม่ที่สามารถทนต่อการโจมตีจากคอมพิวเตอร์ควอนตัม อัลกอริทึมการเข้ารหัสที่ต้านทานควอนตัมสามารถเพิ่มความเร็วในการประมวลผลข้อมูลและความแม่นยำ ทำให้เป็นตัวเลือกที่มีประสิทธิภาพมากขึ้น
 
-Las organizaciones deben tomar las precauciones necesarias para proteger sus datos frente a los peligros de la computación cuántica. Implementar cifrado resistente a lo cuántico y estrategias de entrelazamiento cuántico puede ofrecer a las empresas de servicios financieros una capa adicional de seguridad.
+* **การพัวพันเชิงควอนตัม** สามารถใช้สร้างระบบ [การแจกจ่ายกุญแจเชิงควอนตัม](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) ([QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)) ซึ่งสามารถสร้างและแจกจ่ายกุญแจเข้ารหัสที่ปลอดภัยในระยะทางไกล ระบบ [QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) มีภูมิคุ้มกันต่อการโจมตีจากคอมพิวเตอร์ควอนตัม จึงเหมาะอย่างยิ่งสำหรับการปกป้องข้อมูลทางการเงินที่ละเอียดอ่อน
 
-* La **criptografía resistente a lo cuántico** es un nuevo tipo de cifrado capaz de resistir los ataques de ordenadores cuánticos. Sus algoritmos pueden acelerar el tratamiento de datos e incrementar la precisión, convirtiéndola en una opción más eficiente.
+## แนวคิด
 
-* El **entrelazamiento cuántico** permite crear sistemas de [distribución cuántica de claves](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) ([QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)), capaces de generar y distribuir claves criptográficas seguras a largas distancias. Los sistemas QKD son inmunes a los ataques de ordenador cuántico, lo que los hace ideales para proteger datos financieros sensibles.
+### ไลบรารี Hash (HSH): การทำงานร่วมกันเชิงบุกเบิกในการเข้ารหัสที่ต้านทานควอนตัม
 
-## Idea
+ไลบรารี Hash (HSH) มอบโซลูชันที่มีน้ำหนักเบา มีประสิทธิภาพ และใช้งานง่ายสำหรับการปกป้องข้อมูลด้วยการเข้ารหัสที่ต้านทานควอนตัม ช่วยให้นักพัฒนาสามารถใช้อัลกอริทึมที่ต้านทานควอนตัมในแอปพลิเคชันของตนได้โดยไม่ต้องเข้าใจอัลกอริทึมการเข้ารหัสเบื้องหลังอย่างละเอียด
 
-### La biblioteca Hash (HSH): interoperabilidad pionera en criptografía resistente a lo cuántico
+ไลบรารีนี้สร้างขึ้นบนภาษาโปรแกรม Rust ซึ่งเป็นที่รู้จักในด้านความเร็วและประสิทธิภาพ เหมาะอย่างยิ่งสำหรับการเข้ารหัสและความน่าเชื่อถือในระยะยาว
 
-La biblioteca Hash (HSH) ofrece una solución ligera, eficiente y fácil de usar para proteger los datos con criptografía resistente a lo cuántico. Permite a los desarrolladores utilizar algoritmos resistentes a lo cuántico en sus aplicaciones sin requerir una comprensión detallada de los algoritmos criptográficos subyacentes.
+## ผลกระทบ
 
-La biblioteca está construida con el lenguaje Rust, reconocido por su rapidez y eficiencia, idóneamente adaptado a la criptografía y a la fiabilidad a largo plazo.
+### ประโยชน์ของไลบรารี Hash เข้ารหัสที่ต้านทานควอนตัม
 
-## Impacto
+[ไลบรารี Hash (HSH) ⧉][00] มอบไพรมิทีฟการเข้ารหัสสมัยใหม่จำนวนมาก สร้างกำแพงที่แข็งแกร่งต่อความซับซ้อนของยุคควอนตัม ความสำคัญของมันอยู่ที่การปกป้องข้อมูลที่ละเอียดอ่อนในยุคที่การประมวลผลควอนตัมเป็นความเสี่ยงสำคัญต่อความปลอดภัยดิจิทัล
 
-### Los beneficios de la biblioteca de hash resistente a lo cuántico
+ไลบรารีนี้มอบระดับการปกป้องสูงสุดที่มีให้ทางออนไลน์แก่องค์กรและสถาบันการเงิน ด้วยชุดอัลกอริทึมที่รวมถึง Argon2i, BScrypt และ Scrypt สิ่งเหล่านี้คือฟังก์ชันการอนุมานกุญแจที่ปลอดภัยโดยอิงรหัสผ่าน (PBKDF) PBKDF ใช้ในการแปลงรหัสผ่านเป็นกุญแจเข้ารหัส ถูกออกแบบให้ทำงานช้าและใช้หน่วยความจำมาก จึงยากต่อการเจาะด้วยการโจมตีแบบลองสุ่มทุกความเป็นไปได้
 
-La [biblioteca Hash (HSH) ⧉][00] aporta una rica paleta de primitivas criptográficas modernas, levantando una barrera sólida frente a las complejidades de la era cuántica. Su importancia reside en la protección de los datos sensibles en una época en que la computación cuántica supone un riesgo significativo para la seguridad digital.
+นอกจากนี้ ไลบรารียังรับประกันว่าผลลัพธ์ไม่เพียงปลอดภัยและมีประสิทธิภาพ แต่ยังเหมาะสมอย่างยิ่งกับแอปพลิเคชันระดับองค์กร ขยายต่อได้ และใช้งานง่าย
 
-La biblioteca ofrece a las organizaciones e instituciones financieras el nivel más alto de protección disponible en línea, con una selección de algoritmos que incluyen Argon2i, BScrypt y Scrypt. Se trata de funciones de derivación de claves seguras a partir de contraseña (PBKDF). Las PBKDF sirven para convertir contraseñas en claves criptográficas. Diseñadas para ser lentas y exigentes en memoria, son difíciles de romper por fuerza bruta.
+## แรงจูงใจ
 
-Por otra parte, la biblioteca garantiza no solo resultados seguros y eficientes, sino también perfectamente adaptados a las aplicaciones empresariales, extensibles y fáciles de usar.
+### การรับมือกับการประมวลผลควอนตัมอย่างปลอดภัย
 
-## Incentivos
+* **การรับประกันความปลอดภัย**: การใช้ไลบรารี Hash (HSH) เป็นการรับประกันแก่องค์กรว่าข้อมูลของพวกเขายังคงปลอดภัย
 
-### Navegar por el paisaje de la computación cuántica con seguridad
+* **การรองรับอนาคต**: การนำอัลกอริทึมที่ต้านทานควอนตัมมาใช้ตั้งแต่ตอนนี้จะปกป้ององค์กรจากช่องโหว่ที่อาจเกิดขึ้นในอนาคต
 
-* **Garantía de seguridad**: utilizar la biblioteca Hash (HSH) da a las organizaciones la garantía de que sus datos permanecen seguros.
+* **ความคุ้มค่าด้านต้นทุน**: ไลบรารี Hash (HSH) เป็นโอเพนซอร์สและสามารถใช้ได้โดยไม่ต้องมีใบอนุญาตราคาแพงหรือค่าสมัครสมาชิก ทำให้เป็นตัวเลือกที่น่าสนใจสำหรับองค์กรที่ต้องการควบคุมต้นทุนให้ต่ำ ในขณะที่ยังเข้าถึงการประมวลผลควอนตัมที่ปลอดภัยได้
 
-* **Perdurabilidad**: adoptar hoy algoritmos resistentes a lo cuántico protegerá a las organizaciones frente a las vulnerabilidades futuras.
+### การรักษาความไว้วางใจของผู้บริโภค
 
-* **Eficiencia económica**: la biblioteca Hash (HSH) es de código abierto y puede utilizarse sin licencia onerosa ni suscripción. Una opción atractiva para las organizaciones que deseen controlar sus costes a la vez que acceden a una computación cuántica segura.
+* **การปกป้องข้อมูลลูกค้า**: การรักษาข้อมูลลูกค้าให้ปลอดภัยจากการโจมตีของคอมพิวเตอร์ควอนตัมช่วยเสริมความไว้วางใจในความสามารถขององค์กรในการปกป้องข้อมูล
 
-### Mantener la confianza de los consumidores
+* **การปฏิบัติตามข้อกำหนดและกฎระเบียบ**: การใช้วิธีการเข้ารหัสขั้นสูงช่วยให้ปฏิบัติตามกฎหมายและกฎระเบียบด้านการปกป้องข้อมูลที่เข้มงวด จึงหลีกเลี่ยงผลทางกฎหมายและค่าปรับ
 
-* **Proteger los datos de los clientes**: asegurar los datos de los clientes frente a los ataques de ordenadores cuánticos refuerza la confianza en la capacidad de las organizaciones para proteger la información.
+### HSH: ไลบรารี Hash ที่ต้านทานควอนตัมอย่างสมบูรณ์
 
-* **Cumplimiento y adhesión normativa**: aplicar métodos criptográficos avanzados ayuda a respetar leyes y reglamentos estrictos de protección de datos, evitando consecuencias jurídicas y multas.
+* **ประสิทธิภาพที่สูงขึ้น**: การใช้ประโยชน์จาก [ไลบรารี Hash (HSH) ⧉][00] ที่สร้างบน Rust มอบความปลอดภัย ประสิทธิภาพ และสมรรถนะ
+ความสอดคล้องข้ามแพลตฟอร์ม: ไลบรารี Hash (HSH) ปกป้องข้อมูลข้ามแพลตฟอร์มและแอปพลิเคชัน
 
-### HSH: la biblioteca de hash definitiva resistente a lo cuántico
+* **ความง่ายในการนำไปใช้**: ไลบรารี Hash (HSH) มอบเครื่องมือที่นักพัฒนานำไปใช้ได้ง่าย ช่วยลดอุปสรรคในการนำอัลกอริทึมที่ต้านทานควอนตัมมาใช้
 
-* **Alto rendimiento**: aprovechar la [biblioteca Hash (HSH) ⧉][00] basada en Rust aporta seguridad, eficiencia y rendimiento.
-Coherencia multiplataforma: la biblioteca Hash (HSH) protege los datos en todas las plataformas y aplicaciones.
+## บทสรุป
 
-* **Facilidad de implementación**: la biblioteca Hash (HSH) proporciona a los desarrolladores una herramienta sencilla de integrar, bajando la barrera de adopción de algoritmos resistentes a lo cuántico.
+[ไลบรารี Hash (HSH) ⧉][00] มอบโซลูชันที่มีน้ำหนักเบา มีประสิทธิภาพ และใช้งานง่ายสำหรับการปกป้องข้อมูลด้วยการเข้ารหัสที่ต้านทานควอนตัม ช่วยให้นักพัฒนาสามารถอัปเกรดโปรโตคอลการเข้ารหัสให้ต้านทานควอนตัมได้อย่างง่ายดายโดยไม่ต้องเข้าใจอัลกอริทึมอย่างลึกซึ้ง
 
-## Conclusión
+การเข้ารหัสที่ต้านทานควอนตัมเป็นสาขาที่พัฒนาอย่างรวดเร็ว และไลบรารี HSH มุ่งมั่นที่จะก้าวนำหน้าอยู่เสมอ ไลบรารีได้รับการอัปเดตอย่างสม่ำเสมอด้วยอัลกอริทึมและฟีเจอร์ใหม่เพื่อป้องกันภัยคุกคามที่กำลังก่อตัว
 
-La [biblioteca Hash (HSH) ⧉][00] ofrece una solución ligera, eficiente y fácil de usar para proteger los datos con criptografía resistente a lo cuántico. Facilita la actualización de los protocolos criptográficos de los desarrolladores para hacerlos resistentes a lo cuántico sin exigir una comprensión profunda de los algoritmos.
+[National Institute of Standards and Technology (NIST) ⧉][02] กำลังกำหนดชุดมาตรฐานอัลกอริทึมการเข้ารหัสหลังยุคควอนตัม ผ่าน [โครงการ Post-Quantum Cryptography (PQC) ⧉][03]
 
-La criptografía resistente a lo cuántico es un campo en rápida evolución, y la biblioteca HSH se compromete a mantenerse a la vanguardia. Se actualiza periódicamente con nuevos algoritmos y funcionalidades para proteger frente a las amenazas emergentes.
-
-El [National Institute of Standards and Technology (NIST) ⧉][02] define actualmente un conjunto de estándares de algoritmos criptográficos postcuánticos a través de su [proyecto Post-Quantum Cryptography (PQC) ⧉][03].
-
-Proteger sus datos frente a los ataques de la computación cuántica es esencial para toda organización que maneje datos sensibles. La [biblioteca Hash (HSH) ⧉][00] es una herramienta potente que puede ayudarle a proteger sus datos frente a esta amenaza emergente.
+การปกป้องข้อมูลของคุณจากการโจมตีของการประมวลผลควอนตัมเป็นสิ่งจำเป็นสำหรับทุกองค์กรที่จัดการข้อมูลที่ละเอียดอ่อน [ไลบรารี Hash (HSH) ⧉][00] เป็นเครื่องมือที่ทรงพลังที่ช่วยให้คุณปกป้องข้อมูลจากภัยคุกคามที่กำลังก่อตัวนี้
 
 [00]: https://crates.io/crates/hsh "The Hash Library (HSH) - Quantum-Resistant Cryptographic Hash Library for Password Hashing and Verification"
-[01]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-encryption.svg "Seguros pero vulnerables: navegar por los retos criptográficos en la era cuántica"
+[01]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-encryption.svg "ปลอดภัยแต่เปราะบาง: การรับมือความท้าทายด้านการเข้ารหัสในยุคควอนตัม"
 [02]: https://www.nist.gov/ "National Institute of Standards and Technology"
 [03]: https://csrc.nist.gov/projects/post-quantum-cryptography "Post-Quantum Cryptography PQC"

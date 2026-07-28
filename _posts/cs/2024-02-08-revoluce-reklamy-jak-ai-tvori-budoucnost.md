@@ -1,97 +1,93 @@
 ---
-title: "IA generativa en la publicidad: Amazon Rufus y Meta"
-subtitle: "Cómo la IA transforma las interacciones con los consumidores y la dinámica publicitaria"
-description: "Cómo la IA transforma la publicidad: perspectivas sobre Rufus de Amazon y los últimos desarrollos de Meta. Descubra el impacto en el compromiso del consumidor."
+title: "Generativní AI v reklamě: Amazon Rufus a Meta"
+subtitle: "Jak AI proměňuje interakce se zákazníky a dynamiku reklamy"
+description: "Jak AI proměňuje reklamu: poznatky o Amazon Rufus a nejnovějším vývoji společnosti Meta. Zjistěte, jaký má dopad na zapojení zákazníků."
 date: "February 08, 2024"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/advertising-ai.webp"
-banner_alt: "Una mujer robot con mariposas y flores"
-keywords: "IA en la publicidad, Amazon Rufus, herramientas IA Meta, segmentación del consumidor, tecnología publicitaria, chatbots IA, tendencias de marketing digital, analítica IA, IA creativa, optimización de campañas"
+banner_alt: "Robotická žena s motýly a květinami"
+keywords: "AI v reklamě, Amazon Rufus, nástroje AI od Meta, cílení na zákazníky, reklamní technologie, AI chatboti, trendy digitálního marketingu, analytika AI, kreativní AI, optimalizace reklamních kampaní"
 ---
 
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+Umělá inteligence (AI) zásadně mění reklamu a přináší reklamním kampaním dosud nevídanou efektivitu a účinnost. Uvedení asistenta [**Rufus ⧉**][00], osobního nákupního chatbota od Amazonu, spolu s integrací AI napříč platformami společnosti Meta prostřednictvím konverzačních asistentů a kreativních nástrojů ukazuje čelo tohoto vývoje. Tyto pokroky nejen zlepšují zákaznickou zkušenost, ale otevírají také nové cesty k přesnému cílení a zapojení a zdůrazňují klíčovou roli AI v budoucnosti reklamy.
 
-**Klíčové body**
+## Nástup AI v reklamě
 
-La inteligencia artificial (IA) transforma radicalmente el panorama publicitario, ofreciendo una eficiencia sin precedentes a las campañas. La introducción por Amazon de [**Rufus ⧉**][00], un chatbot asistente de compras personal, y la integración por Meta de la IA en sus plataformas —asistentes conversacionales y herramientas creativas— ilustran la vanguardia de esta revolución. Estos avances no solo mejoran la experiencia del consumidor, sino que también abren nuevas vías para una segmentación y un compromiso precisos, subrayando el papel pivote de la IA en el futuro de la publicidad.
-
-## El amanecer de la IA en la publicidad
-
-En la era digital, la IA se ha impuesto como un game-changer para la industria publicitaria, redefiniendo los paradigmas de la creatividad, el análisis y el compromiso del consumidor. Con la capacidad de gestionar y analizar vastas cantidades de datos, generar contenido creativo y segmentar a los consumidores con una precisión inigualable, las tecnologías de IA no solo aumentan, sino que también automatizan procesos publicitarios complejos. Este artículo explora el impacto transformador de la IA sobre la publicidad, centrándose en los últimos desarrollos de los gigantes tecnológicos Amazon y Meta, y sus implicaciones para la industria.
+V digitálním věku se umělá inteligence (AI) stala zásadním činitelem reklamního odvětví a nově definuje přístup ke kreativitě, analýze a zapojení zákazníků. Díky schopnosti spravovat a analyzovat obrovské objemy dat, vytvářet kreativní obsah a cílit na zákazníky s nebývalou přesností technologie AI složité reklamní procesy nejen posilují, ale také automatizují. Tento článek zkoumá vliv AI na reklamu se zaměřením na nejnovější vývoj u technologických gigantů Amazon a Meta a na jeho důsledky pro celé odvětví.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## La revolución IA en la publicidad
+## Proměna reklamy díky AI
 
-### La ventaja IA
+### Výhoda AI
 
-La infusión de IA en la publicidad señala una nueva era de eficacia y eficiencia. Según las encuestas recientes del sector, más del 65 % de los anunciantes han reportado al menos un 20 % más de ROI en las campañas optimizadas por IA respecto a años anteriores. Los algoritmos de IA sobresalen identificando perspectivas en grandes conjuntos de datos que requerirían equipos de analistas para descubrirlas manualmente. Una plataforma de analítica de marketing señaló que sus herramientas IA podían tratar más de 100 millones de puntos de datos para optimizar las campañas, una escala de análisis que la capacidad humana nunca podría alcanzar. Esta capacidad se extiende también a la generación creativa, donde los algoritmos IA de Meta pueden probar más de 10.000 variaciones de anuncios e identificar las creaciones de alto rendimiento en cuestión de horas. El alcance y la velocidad de tales aplicaciones —A/B testing de cientos de anuncios, análisis de las estrategias de los competidores, personalización del contenido para audiencias diversas— sobrepasan la capacidad humana. Esto no solo ahorra tiempo y recursos valiosos, sino que también mejora la precisión y la pertinencia de las campañas a un nivel sin precedentes.
+Nasazení AI do reklamy znamená novou éru efektivity a účinnosti. Podle nedávných průzkumů v odvětví více než 65 % inzerentů uvedlo nejméně o 20 % vyšší návratnost investic (ROI) u kampaní optimalizovaných pomocí AI ve srovnání s předchozími lety. Algoritmy AI vynikají v odhalování poznatků z velkých datových souborů, jejichž ruční zpracování by vyžadovalo celé týmy analytiků. Jedna platforma pro marketingovou analytiku uvedla, že její nástroje AI dokázaly pro optimalizaci kampaní zpracovat více než 100 milionů datových bodů, tedy rozsah analýzy, jaký by lidská kapacita nikdy nezvládla. Tato schopnost se týká i tvorby kreativy, kde algoritmy AI společnosti Meta dokážou během několika hodin otestovat více než 10 000 variant reklam a určit ty nejúčinnější. Rozsah a rychlost těchto aplikací AI, včetně A/B testování stovek reklam, analýzy strategií konkurence a personalizace obsahu pro různorodé publikum, přesahují lidské možnosti. To nejen šetří cenný čas a zdroje, ale také zvyšuje přesnost a relevanci reklamních kampaní na dosud nevídané úrovni.
 
-### Más allá de las capacidades humanas
+### Za hranicemi lidských možností
 
-El alcance y la velocidad de la IA en las tareas publicitarias como el A/B testing de cientos de anuncios, el análisis de las estrategias de los competidores y la personalización de contenido para audiencias diversas sobrepasan la capacidad humana. Esto no solo ahorra tiempo y recursos valiosos, sino que mejora la precisión y la pertinencia de las campañas.
+Rozsah a rychlost AI u reklamních úloh, jako je A/B testování stovek reklam, analýza strategií konkurence a personalizace obsahu pro různorodé publikum, přesahují lidské možnosti. To nejen šetří cenný čas a zdroje, ale také zvyšuje přesnost a relevanci reklamních kampaní.
 
-### Experiencias del consumidor elevadas
+### Kvalitnější zákaznická zkušenost
 
-El impacto de la IA en la publicidad es profundamente visible en las experiencias del consumidor elevadas que permite. Aprovechando la IA para la publicidad segmentada, las empresas pueden entregar un contenido más pertinente, atractivo y personalizado a los consumidores, aumentando así las tasas de conversión y la fidelidad a la marca.
+Dopad AI na reklamu je zřetelně patrný ve zkvalitnění zákaznické zkušenosti, kterou umožňuje. Využitím AI pro cílenou reklamu mohou firmy dodávat zákazníkům relevantnější, poutavější a personalizovanější obsah, a zvyšovat tak míru konverze i věrnost značce.
 
-### Una llamada a innovar
+### Výzva k inovaci
 
-Para los anunciantes y empresas, los incentivos para adoptar la IA en la publicidad son claros: eficiencia superior, costes reducidos y mejor ROI. El panorama tecnológico IA en evolución ofrece una oportunidad para innovar, diferenciarse y capturar valor en el espacio competitivo de la publicidad digital.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## Foco en Rufus de Amazon
-
-### Personalizar la experiencia de compra
-
-La introducción por Amazon de Rufus, un chatbot asistente de compras personal, marca un avance significativo en el compromiso del consumidor pilotado por IA. Rufus está diseñado para mejorar la experiencia de compra en línea proporcionando recomendaciones de productos, comparaciones y asistencia conversacional.
-
-### Disrumpir el descubrimiento de productos
-
-Rufus representa un giro hacia el comercio conversacional, donde la IA no solo ayuda al descubrimiento de productos, sino que también influye en los procesos de decisión del consumidor. Este desarrollo podría redefinir la manera en que los consumidores buscan e interactúan con los productos en línea.
-
-### Implicaciones para los anunciantes
-
-Para los anunciantes, Rufus abre nuevas vías de promoción y colocación de productos dentro del ecosistema Amazon. La capacidad de influir directamente en las recomendaciones y decisiones del consumidor mediante la IA subraya la creciente importancia de la IA en la elaboración de estrategias publicitarias eficaces.
+Pro inzerenty a firmy jsou pobídky k zavedení AI do reklamy jasné: vyšší efektivita, nižší náklady a lepší návratnost investic. Vyvíjející se oblast technologií AI nabízí příležitost inovovat, odlišit se a získat hodnotu v konkurenčním prostoru digitální reklamy.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Las innovaciones IA de Meta
+## Zaměřeno na Amazon Rufus
 
-### Herramientas creativas impulsadas por IA
+### Personalizace nákupní zkušenosti
 
-Meta ha integrado activamente la IA generativa en sus herramientas publicitarias, proporcionando a los anunciantes funcionalidades innovadoras para reforzar sus campañas. La compañía ha introducido sus primeras [**funcionalidades de IA generativa para anunciantes ⧉**][01], incluyendo la capacidad de crear fondos, ampliar imágenes y generar varias versiones de texto publicitario basadas en la copia original. Estas herramientas están diseñadas para estimular la creatividad y la productividad, permitiendo a los anunciantes producir contenido creativo fresco a gran escala y potencialmente ahorrar un tiempo significativo en el proceso creativo.
+Uvedení chatbota Rufus, osobního nákupního asistenta, představuje pro Amazon významný pokrok v zapojení zákazníků řízeném AI. Rufus je navržen tak, aby zlepšil zkušenost s online nákupem prostřednictvím doporučení produktů, jejich porovnání a konverzační podpory.
 
-### Reforzar las conexiones y las expresiones
+### Nový přístup k objevování produktů
 
-La suite de herramientas y plataformas IA de Meta —asistentes conversacionales y herramientas creativas IA— aspira a profundizar el compromiso del usuario y proporcionar maneras nuevas para que empresas y creadores interactúen con su audiencia. Esto se alinea con la misión de Meta de reforzar las conexiones sociales a través de la tecnología.
+Rufus představuje posun ke konverzačnímu obchodu, kde AI nejen pomáhá při objevování produktů, ale ovlivňuje také rozhodovací procesy zákazníků. Tento vývoj může nově vymezit způsob, jakým zákazníci online vyhledávají produkty a jak s nimi pracují.
 
-### Una plataforma para la creatividad y el compromiso
+### Důsledky pro inzerenty
 
-La plataforma AI studio de Meta atestigua un compromiso de hacer las herramientas IA accesibles al desarrollo por terceros, favoreciendo una comunidad de innovación. Esta democratización de las herramientas IA permite a creadores y empresas producir un contenido más atractivo y personalizado.
-
-### Configurar el futuro de la interacción
-
-Los avances IA de Meta fijan nuevos estándares para la manera en que las empresas y creadores interactúan con su audiencia. Facilitando interacciones más personalizadas y significativas, Meta no solo mejora la experiencia del usuario, sino que también abre nuevas oportunidades para la publicidad segmentada.
+Inzerentům Rufus otevírá nové cesty k propagaci a umístění produktů v ekosystému Amazonu. Schopnost přímo ovlivňovat doporučení a rozhodnutí zákazníků pomocí AI podtrhuje rostoucí význam AI při tvorbě účinných reklamních strategií.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-Como ilustran Rufus de Amazon y la suite de herramientas IA de Meta, los actores principales de la industria lideran innovaciones punteras para transformar la publicidad con IA. Navegar el panorama publicitario impulsado por IA
+## Inovace AI ve společnosti Meta
 
-La integración de la IA en las estrategias publicitarias ilustra los avances significativos realizados para revolucionar la industria...
+### Kreativní nástroje využívající AI
 
-## Navegar el panorama publicitario impulsado por IA
+Meta aktivně integruje generativní AI do svých reklamních nástrojů a poskytuje inzerentům inovativní funkce pro posílení jejich kampaní. Společnost představila své první [**funkce generativní AI pro inzerenty ⧉**][01], které zahrnují možnost vytvářet pozadí, rozšiřovat obrázky a generovat více verzí reklamního textu na základě původního znění. Tyto nástroje mají podpořit tvořivost a produktivitu, umožnit inzerentům vytvářet nový kreativní obsah ve velkém měřítku a případně ušetřit značný čas v tvůrčím procesu.
 
-La integración de la IA en las estrategias publicitarias ilustra los avances significativos realizados para revolucionar la industria. A medida que las capacidades de IA continúan progresando, los anunciantes deben formarse activamente sobre estas herramientas emergentes: motores de recomendación, anuncios conversacionales, plataformas de mejora creativa y análisis de audiencia por IA. Los ejes prioritarios implican aprovechar la IA para mejorar las experiencias del consumidor mediante la personalización, mejorar la eficacia de las campañas probando una mayor velocidad de variantes creativas y de mensajes, y estimular la innovación desplegando la IA para nuevas aplicaciones como los anuncios por voz.
+### Posílení propojení a vyjadřování
 
-Además, anudar las asociaciones adecuadas será pivote: ya sea con plataformas publicitarias como Meta o con proveedores de datos que alimentan los sistemas IA. Los anunciantes deberían contribuir también a ecosistemas abiertos en torno a datos y modelos publicitarios para hacer progresar el bien común. Navegando proactivamente el panorama IA, los anunciantes pueden aprovechar su multitud de capacidades para crear interacciones de marca más conectadas, significativas e impactantes.
+Sada nástrojů a platforem AI od společnosti Meta, včetně konverzačních asistentů a kreativních nástrojů využívajících AI, si klade za cíl prohloubit zapojení uživatelů a nabídnout firmám a tvůrcům nové způsoby interakce s jejich publikem. To odpovídá poslání společnosti Meta posilovat sociální propojení prostřednictvím technologií.
+
+### Platforma pro tvořivost a zapojení
+
+Platforma AI studio od společnosti Meta dokládá závazek zpřístupnit nástroje AI pro vývoj třetími stranami a podporovat komunitu inovací. Toto zpřístupnění nástrojů AI umožňuje tvůrcům a firmám vytvářet poutavější a personalizovanější obsah.
+
+### Utváření budoucnosti interakce
+
+Pokroky společnosti Meta v oblasti AI nastavují nové standardy pro to, jak firmy a tvůrci komunikují se svým publikem. Usnadněním personalizovanějších a smysluplnějších interakcí Meta nejen zlepšuje uživatelskou zkušenost, ale otevírá také nové příležitosti pro cílenou reklamu.
+
+![divider][divider].class=\"m-10 w-100\"
+
+Jak ukazují Amazon Rufus i sada nástrojů AI od společnosti Meta, přední hráči v odvětví posouvají špičkové inovace, aby reklamu proměnili pomocí AI. Orientace v reklamě řízené AI
+
+Integrace AI do reklamních strategií je příkladem významných kroků, které v tomto odvětví probíhají...
+
+## Orientace v reklamě řízené AI
+
+Integrace AI do reklamních strategií je příkladem významných kroků, které v tomto odvětví probíhají. Jak se schopnosti AI dále vyvíjejí, musí se inzerenti aktivně seznamovat s těmito novými nástroji, včetně doporučovacích systémů, konverzačních reklam, platforem pro zlepšení kreativy a analýzy publika pomocí AI. Mezi klíčové oblasti patří využití AI ke zlepšení zákaznické zkušenosti prostřednictvím personalizace, zvýšení účinnosti kampaní testováním většího množství kreativních variant a sdělení a podpora inovací nasazením AI pro nové aplikace, jako jsou hlasové reklamy.
+
+Zásadní bude také navázání správných partnerství, ať už s reklamními platformami, jako je Meta, nebo s poskytovateli dat, kteří dodávají vstupy pro systémy AI. Inzerenti by měli přispívat i k otevřeným ekosystémům kolem reklamních dat a modelů, a podpořit tak společný pokrok. Aktivní orientací v oblasti AI mohou inzerenti využít celou řadu jejích schopností k vytváření propojenějších, smysluplnějších a působivějších interakcí se značkou.
 
 ![divider][divider].class=\"m-10 w-100\"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 
-[00]: https://www.aboutamazon.com/news/retail/amazon-rufus "Amazon Rufus - AI experience comes to the Amazon Shopping app"
-[01]: https://www.facebook.com/business/news/generative-ai-features-for-ads-coming-to-all-advertisers "Generative AI features for ads coming to all advertisers"
+[00]: https://www.aboutamazon.com/news/retail/amazon-rufus "Amazon Rufus: zkušenost s AI přichází do nákupní aplikace Amazon"
+[01]: https://www.facebook.com/business/news/generative-ai-features-for-ads-coming-to-all-advertisers "Funkce generativní AI pro reklamy míří ke všem inzerentům"

@@ -1,89 +1,85 @@
 ---
-title: "Qiskit y transformada de Fourier cuántica para el análisis de ratios de crédito"
-subtitle: "Optimizar el análisis de ratios de crédito con IBM Qiskit y la transformada de Fourier cuántica"
-description: "Cómo IBM Qiskit y la transformada de Fourier cuántica revolucionan el análisis de ratios de crédito en finanzas, ofreciendo precisión y rapidez inéditas."
+title: "Qiskit a kvantová Fourierova transformace pro analýzu úvěrových poměrů"
+subtitle: "Optimalizace analýzy úvěrových poměrů pomocí IBM Qiskit a kvantové Fourierovy transformace"
+description: "Jak IBM Qiskit a kvantová Fourierova transformace proměňují analýzu úvěrových poměrů ve financích a přinášejí dosud nevídanou přesnost a rychlost."
 date: "January 08, 2024"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp"
-banner_alt: "Sala de ordenador cuántico"
-keywords: "computación cuántica, finanzas, análisis de ratios de crédito, Qiskit, transformada de Fourier cuántica, IBM, aprendizaje automático, inteligencia artificial, evaluación del riesgo financiero, solvencia"
+banner_alt: "Místnost s kvantovým počítačem"
+keywords: "kvantové výpočty, finance, analýza úvěrových poměrů, Qiskit, kvantová Fourierova transformace, IBM, strojové učení, umělá inteligence, hodnocení finančního rizika, úvěruschopnost"
 ---
 
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+Představte si nesplacený úvěr, který bylo možné předvídat. Zdánlivě málo rizikový dlužník se dostane do prodlení a banka utrpí neočekávané ztráty. Tento scénář, kdysi běžné úskalí úvěrové analýzy, se může brzy stát minulostí díky možnostem kvantových výpočtů. Využitím principů kvantové mechaniky mohou nástroje jako [**IBM Qiskit** ⧉][01] a algoritmy jako [**kvantová Fourierova transformace (QFT)**][02] proměnit analýzu úvěrových poměrů a přinést této klíčové finanční praxi dosud nevídanou přesnost a rychlost.
 
-**Klíčové body**
-
-Imagine un préstamo impago que podría haberse predicho. Un prestatario aparentemente de bajo riesgo entra en mora, dejando al banco sacudido por pérdidas inesperadas. Este escenario, antaño escollo común en análisis de crédito, podría pronto volverse una reliquia del pasado gracias al poder revolucionario de la computación cuántica. Aprovechando los principios del dominio cuántico, herramientas como [**IBM Qiskit** ⧉][01] y algoritmos como la [**transformada de Fourier cuántica (QFT)**][02] están dispuestas a transformar el análisis de ratios de crédito, aportando una precisión y una rapidez sin precedentes a esta práctica financiera crítica.
-
-En una época en la que la toma de decisiones impulsada por datos es primordial, la industria bancaria y financiera busca continuamente avances tecnológicos para afinar sus métodos de análisis y evaluación de riesgos. En el corazón de esta búsqueda se encuentra la integración innovadora de la computación cuántica, en particular a través de herramientas como [**IBM Qiskit** ⧉][01] y algoritmos como la [**QFT**][02]. Este artículo explora cómo estas tecnologías cuánticas transforman específicamente el análisis de ratios de crédito, componente crítico de la evaluación de la estabilidad financiera y la solvencia.
+V době, kdy je rozhodování založené na datech zásadní, hledá bankovní a finanční odvětví neustále technologický pokrok, který zpřesní jeho metody analýzy a hodnocení rizik. Jádrem tohoto úsilí je integrace kvantových výpočtů, zejména prostřednictvím nástrojů jako [**IBM Qiskit** ⧉][01] a algoritmů jako [**kvantová Fourierova transformace (QFT)**][02]. Tento článek popisuje, jak tyto kvantové technologie konkrétně mění analýzu úvěrových poměrů, klíčovou složku hodnocení finanční stability a úvěruschopnosti.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Perspectiva
+## Poznatek
 
-### La computación cuántica en finanzas
+### Kvantové výpočty ve financích
 
-Imagine una revolución computacional en la que la información danza a velocidades y complejidades fuera del alcance de los ordenadores clásicos. Esa es la promesa de la computación cuántica, aprovechando la extraña física del dominio cuántico para desbloquear una dimensión enteramente nueva de potencia de procesamiento. En el corazón de las finanzas, donde el análisis rápido y preciso de datos voluminosos y complejos reina supremo, la computación cuántica emerge como un game-changer.
+Představte si výpočetní zlom, kdy informace putují rychlostmi a ve složitostech, které jsou mimo dosah klasických počítačů. To je příslib kvantových výpočtů, které využívají neobvyklou fyziku kvantových systémů k otevření zcela nové dimenze výpočetního výkonu. V oblasti financí, kde rozhoduje rychlá a přesná analýza rozsáhlých a složitých dat, představují kvantové výpočty zásadní změnu.
 
-La computación cuántica aprovecha los principios de la mecánica cuántica para tratar la información de maneras inaccesibles a los ordenadores clásicos. En finanzas, esta capacidad computacional avanzada puede reforzar significativamente los modelos y algoritmos complejos. Los algoritmos cuánticos ofrecen, en particular, una velocidad y una eficiencia sin precedentes para resolver ciertos tipos de problemas.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## Idea
-
-### IBM Qiskit y la transformada de Fourier cuántica
-
-[**IBM Qiskit** ⧉][01], herramienta integral del panorama cuántico, es un framework de desarrollo de software de código abierto diseñado para la computación cuántica. Permite a los usuarios, desde el programador novato hasta el físico cuántico experimentado, desarrollar, simular y ejecutar algoritmos cuánticos. Uno de los componentes clave de Qiskit es su soporte de la [**transformada de Fourier cuántica (QFT)**][02].
-
-La transformada de Fourier cuántica es el análogo cuántico de la transformada de Fourier discreta clásica. Es una piedra angular de muchos algoritmos cuánticos, conocida por su capacidad para gestionar eficientemente cálculos complejos. En las aplicaciones financieras como el análisis de ratios de crédito, el potencial de la QFT reside en su capacidad para tratar los datos financieros mucho más eficientemente que los métodos clásicos. Esta eficiencia se deriva de la capacidad de la QFT para aprovechar el paralelismo cuántico, donde un sistema cuántico puede existir en varios estados simultáneamente, permitiendo el tratamiento simultáneo de un gran conjunto de datos.
-
-La integración de la QFT con el análisis financiero, en particular con el análisis de ratios de crédito, es un game-changer. Sacando partido de la QFT, los analistas financieros pueden tratar y analizar grandes conjuntos de datos con más velocidad y precisión que nunca. Este avance no se resume en la velocidad; se trata de la capacidad para revelar perspectivas y patrones en los datos financieros antes inaccesibles a los métodos clásicos.
+Kvantové výpočty využívají principy kvantové mechaniky ke zpracování informací způsoby, které jsou pro klasické počítače nedosažitelné. Ve financích může tato pokročilá výpočetní schopnost výrazně posílit složité modely a algoritmy. Kvantové algoritmy zejména nabízejí dosud nevídanou rychlost a efektivitu při řešení určitých typů problémů.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Impacto
+## Myšlenka
 
-### Reforzar el análisis de ratios de crédito con la QFT
+### IBM Qiskit a kvantová Fourierova transformace
 
-El análisis de ratios de crédito es una herramienta fundamental de la industria bancaria y financiera para evaluar la estabilidad financiera y la solvencia de las entidades. Tradicionalmente, este análisis se apoya en el tratamiento de grandes volúmenes de datos financieros, una tarea que puede ser a la vez costosa en tiempo y limitada en precisión con los métodos clásicos. La introducción de la [**QFT**][02] en este proceso marca un salto significativo.
+[**IBM Qiskit** ⧉][01], nedílná součást ekosystému kvantových výpočtů, je open-source vývojový framework navržený pro kvantové výpočty. Umožňuje uživatelům, od začínajících programátorů po zkušené kvantové fyziky, vyvíjet, simulovat a spouštět kvantové algoritmy. Jednou z klíčových součástí Qiskitu je podpora [**kvantové Fourierovy transformace (QFT)**][02].
 
-Al aplicar la QFT, la velocidad y la eficiencia del análisis de los ratios de crédito aumentan exponencialmente. La capacidad de la computación cuántica para gestionar rápidamente vastos conjuntos de datos permite un análisis más profundo y matizado de los riesgos de crédito. Esta capacidad reforzada no solo es beneficiosa en términos de velocidad sino también en profundidad y amplitud de análisis. La QFT puede revelar patrones y correlaciones complejos en los datos financieros imperceptibles para los algoritmos clásicos, proporcionando una visión más completa de la estabilidad y los riesgos financieros.
+Kvantová Fourierova transformace je kvantovou obdobou klasické diskrétní Fourierovy transformace. Je základním kamenem mnoha kvantových algoritmů a je známá schopností efektivně zvládat složité výpočty. Ve finančních aplikacích, jako je analýza úvěrových poměrů, spočívá potenciál QFT ve schopnosti zpracovávat finanční data mnohem efektivněji než klasické metody. Tato efektivita vychází ze schopnosti QFT využívat kvantový paralelismus, kdy kvantový systém může existovat současně ve více stavech, což umožňuje souběžné zpracování velké množiny dat.
 
-Sin embargo, integrar la computación cuántica, y específicamente la QFT, en los sistemas financieros existentes no está exento de desafíos. Estos incluyen obstáculos técnicos como la necesidad de una infraestructura preparada para lo cuántico y la complejidad del diseño de algoritmos cuánticos. También hay una curva de aprendizaje pronunciada para comprender e implementar soluciones de computación cuántica. Pese a estos desafíos, los potenciales beneficios de incorporar la QFT al análisis de ratios de crédito son demasiado significativos para ignorarlos, señalando un giro transformador en analítica financiera.
-
-La verdadera potencia de la QFT reside en su capacidad para desvelar conexiones y patrones ocultos que escapan a los algoritmos tradicionales. Imagine tamizar millones de puntos de datos y descubrir correlaciones sutiles entre fluctuaciones de mercado aparentemente sin vínculo, cambios del comportamiento del consumidor e incluso patrones meteorológicos. La QFT puede identificar los hilos anteriormente invisibles que tejen la tapicería financiera, pintando un cuadro mucho más rico y preciso de la salud financiera de una entidad. Esta comprensión más profunda se traduce en evaluaciones de crédito más precisas, permitiendo a los bancos predecir los riesgos potenciales con una precisión sin precedentes y tomar decisiones de préstamo informadas que benefician tanto a las instituciones como a los prestatarios.
+Zapojení QFT do finanční analýzy, zejména do analýzy úvěrových poměrů, představuje zásadní změnu. Díky QFT mohou finanční analytici zpracovávat a analyzovat velké datové soubory rychleji a přesněji než kdykoli dříve. Tento pokrok se netýká jen rychlosti; jde o schopnost odhalit ve finančních datech poznatky a vzorce, které byly dříve klasickými výpočetními metodami nedostupné.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Incentivo
+## Dopad
 
-### Implementación práctica
+### Posílení analýzy úvěrových poměrů pomocí QFT
 
-La implementación práctica de la [**QFT**][02] en el análisis de ratios de crédito comienza con la configuración de [**IBM Qiskit** ⧉][01]. Esto implica la instalación del software Qiskit y la familiarización con sus funcionalidades. El paso siguiente es codificar los datos financieros en un formato compatible con lo cuántico, proceso que exige una comprensión matizada tanto de las finanzas como de la computación cuántica.
+Analýza úvěrových poměrů je základním nástrojem bankovního a finančního odvětví pro hodnocení finanční stability a úvěruschopnosti subjektů. Tradičně se tato analýza opírá o zpracování velkých objemů finančních dat, což je úkol, který může být s klasickými výpočetními metodami časově náročný i omezený v přesnosti. Zavedení [**kvantové Fourierovy transformace (QFT)**][02] do tohoto procesu představuje významný pokrok.
 
-La ejecución de la QFT a través de [**IBM Qiskit** ⧉][01] implica varios pasos técnicos. Primero, los datos financieros deben codificarse en qubits, las unidades básicas de la información cuántica. A continuación, el algoritmo QFT se aplica a estos qubits, permitiendo el tratamiento cuántico de los datos. El paso final consiste en interpretar los resultados de la QFT, traduciendo los cálculos cuánticos en perspectivas financieras significativas.
+Použitím QFT se rychlost a efektivita analýzy úvěrových poměrů exponenciálně zvyšují. Schopnost kvantových výpočtů rychle zpracovávat rozsáhlé datové soubory umožňuje důkladnější a jemnější analýzu úvěrových rizik. Tato posílená schopnost je přínosná nejen z hlediska rychlosti, ale také z hlediska hloubky a šíře analýzy. QFT dokáže ve finančních datech odhalit složité vzorce a korelace, které jsou pro klasické algoritmy nepostřehnutelné, a poskytnout tak komplexnější pohled na finanční stabilitu a rizika.
 
-Para ilustrar estos pasos, los estudios de caso concretos pueden ser muy beneficiosos. Podrían incluir instancias en las que instituciones financieras hayan implementado con éxito la computación cuántica en sus procesos de análisis de crédito, demostrando las aplicaciones prácticas y los beneficios de esta tecnología.
+Zapojení kvantových výpočtů, konkrétně QFT, do stávajících finančních systémů však není bez obtíží. Patří mezi ně technické překážky, jako je potřeba infrastruktury připravené na kvantové výpočty a složitost návrhu kvantových algoritmů. S pochopením a nasazením kvantových řešení je spojena také strmá křivka učení. Navzdory těmto výzvám jsou potenciální přínosy zapojení QFT do analýzy úvěrových poměrů příliš významné na to, aby se přehlížely, a signalizují zásadní posun ve finanční analytice.
 
-El proceso de implementación de la QFT en análisis financiero no es solo un desafío técnico sino también una oportunidad de innovación en el sector financiero. Representa un paso significativo hacia modelos financieros más sofisticados y eficientes, impulsados por las capacidades sin parangón de la computación cuántica.
-
-Aunque la integración de la QFT con los sistemas financieros existentes presenta obstáculos técnicos, el futuro está lejos de ser sombrío. Los avances rápidos en infraestructura preparada para lo cuántico y el desarrollo de algoritmos cuánticos cada vez más fáciles de usar cierran regularmente la brecha entre potencial teórico y aplicación práctica. Con investigación y colaboración continuas, el poder transformador de la QFT en análisis de crédito está más cerca que nunca de convertirse en realidad.
+Skutečná síla QFT spočívá ve schopnosti odhalit skryté souvislosti a vzorce, které tradičním algoritmům unikají. Představte si prohledávání milionů datových bodů a nalezení jemných korelací mezi zdánlivě nesouvisejícími výkyvy trhu, změnami spotřebitelského chování a dokonce i povětrnostními vzorci. QFT dokáže identifikovat dříve neviditelné vazby procházející finančními daty a vykreslit tak mnohem bohatší a přesnější obraz finančního zdraví subjektu. Toto hlubší porozumění se promítá do přesnějšího hodnocení úvěrů, což bankám umožňuje předvídat potenciální rizika s dosud nevídanou přesností a činit informovaná úvěrová rozhodnutí prospěšná jak institucím, tak dlužníkům.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Conclusión
+## Motivace
 
-La integración de [**IBM Qiskit** ⧉][01] y la [transformada de Fourier cuántica][02] con el análisis de ratios de crédito es un indicador claro del potencial transformador de la computación cuántica en el sector financiero. Esta tecnología no es solo una mejora incremental de los métodos existentes; representa un cambio de paradigma en la manera en que se tratan y analizan los datos financieros.
+### Praktická implementace
 
-A medida que la computación cuántica continúa evolucionando y madurando, su adopción en la industria financiera podría redefinir el panorama de la analítica financiera y la evaluación de riesgos. Las implicaciones de esta revolución tecnológica son vastas, con el potencial de reforzar la precisión, la velocidad y la profundidad del análisis financiero, conduciendo en última instancia a una toma de decisiones más informada y eficiente en la industria bancaria y financiera.
+Praktická implementace [**kvantové Fourierovy transformace (QFT)**][02] v analýze úvěrových poměrů začíná nastavením [**IBM Qiskit** ⧉][01]. To zahrnuje instalaci softwaru Qiskit a seznámení se s jeho funkcemi. Dalším krokem je zakódování finančních dat do formátu vhodného pro kvantové zpracování, což je proces vyžadující dobré porozumění financím i kvantovým výpočtům.
 
-El futuro del análisis de crédito es cuántico, y este es el momento de explorar sus posibilidades. Sumérjase más profundamente en [**IBM Qiskit** ⧉][01], únase a comunidades en línea de entusiastas de lo cuántico y manténgase informado de los últimos avances en este campo en rápida evolución. A medida que la computación cuántica toma protagonismo en el panorama financiero, quienes abracen su potencial están a punto de recoger los frutos de un futuro más informado, preciso y, en última instancia, próspero.
+Spuštění QFT pomocí [**IBM Qiskit** ⧉][01] zahrnuje několik technických kroků. Nejprve je nutné finanční data zakódovat do qubitů, základních jednotek kvantové informace. Poté se na tyto qubity aplikuje algoritmus QFT, který umožňuje kvantové zpracování dat. Posledním krokem je interpretace výsledků QFT, tedy převedení kvantových výpočtů zpět na smysluplné finanční poznatky.
+
+Pro ilustraci těchto kroků mohou být velmi přínosné případové studie nebo příklady z praxe. Mohly by zahrnovat situace, kdy finanční instituce úspěšně nasadily kvantové výpočty do svých procesů úvěrové analýzy a prokázaly praktické využití a přínosy této technologie.
+
+Proces zavádění QFT do finanční analýzy není jen technickou výzvou, ale také příležitostí k inovaci ve finančním sektoru. Představuje významný krok směrem k propracovanějším a efektivnějším finančním modelům, který pohánějí bezkonkurenční možnosti kvantových výpočtů.
+
+Ačkoli zapojení QFT do stávajících finančních systémů přináší technické překážky, budoucnost zdaleka není bezútěšná. Rychlý pokrok v infrastruktuře připravené na kvantové výpočty a vývoj stále přívětivějších kvantových algoritmů postupně zmenšují rozdíl mezi teoretickým potenciálem a praktickým využitím. Díky pokračujícímu výzkumu a spolupráci je zásadní přínos QFT pro úvěrovou analýzu blíže realitě než kdykoli předtím.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+## Závěr
 
-[01]: https://www.ibm.com/quantum/qiskit "IBM Quantum Computing | Qiskit"
-[02]: https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html#h4-quantum "Quantum Fourier Transform (QFT)"
+Zapojení [**IBM Qiskit** ⧉][01] a [kvantové Fourierovy transformace][02] do analýzy úvěrových poměrů je jasným ukazatelem transformačního potenciálu kvantových výpočtů ve finančním sektoru. Tato technologie není pouze postupným vylepšením stávajících metod; představuje změnu paradigmatu ve způsobu, jakým se finanční data zpracovávají a analyzují.
+
+S tím, jak se kvantové výpočty dále vyvíjejí a zrají, může jejich přijetí ve finančním odvětví přetvořit podobu finanční analytiky a hodnocení rizik. Důsledky tohoto technologického pokroku jsou rozsáhlé a mají potenciál zvýšit přesnost, rychlost a hloubku finanční analýzy, což nakonec povede k informovanějšímu a efektivnějšímu rozhodování v bankovním a finančním odvětví.
+
+Budoucnost úvěrové analýzy je kvantová a čas prozkoumat její možnosti je nyní. Prostudujte podrobněji [**IBM Qiskit** ⧉][01], zapojte se do online komunit kvantových nadšenců a sledujte nejnovější pokroky v tomto rychle se vyvíjejícím oboru. Až kvantové výpočty zaujmou ústřední místo ve finančním sektoru, ti, kdo přijmou jejich potenciál, získají odměnu v podobě informovanější, přesnější a nakonec i prosperující budoucnosti.
+
+![divider][divider].class=\"m-10 w-100\"
+
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Oddělovač"
+
+[01]: https://www.ibm.com/quantum/qiskit "Kvantové výpočty IBM | Qiskit"
+[02]: https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html#h4-quantum "Kvantová Fourierova transformace (QFT)"

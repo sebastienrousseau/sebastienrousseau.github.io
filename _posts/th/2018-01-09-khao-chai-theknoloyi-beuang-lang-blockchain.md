@@ -1,139 +1,167 @@
 ---
-title: "Comprender la tecnología detrás de blockchain"
-subtitle: "Construir una criptomoneda sobre Ethereum, paso a paso"
-description: "Construir una criptomoneda en la blockchain Ethereum: una guía completa de desarrollo blockchain, tokenización e implementación."
+title: "ทำความเข้าใจเทคโนโลยีเบื้องหลังบล็อกเชน"
+subtitle: "คู่มือเชิงปฏิบัติว่าด้วยการเข้ารหัสและกลไกฉันทามติที่อยู่เบื้องหลังบล็อกเชน"
+description: "บทนำเชิงเทคนิคว่าด้วยการทำงานของบล็อกเชน ทั้งห่วงโซ่แฮชเชิงการเข้ารหัส ต้นไม้เมอร์เคิล ฉันทามติแบบกระจาย และเหตุใดชั้นที่ตั้งโปรแกรมได้ของ Ethereum จึงเปลี่ยนบัญชีแยกประเภทการชำระเงินให้กลายเป็นแพลตฟอร์มสำหรับสัญญาอัจฉริยะและสินทรัพย์โทเคน"
 date: "January 9, 2018"
 language: "th-TH"
 locale: "th_TH"
 banner: "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp"
-banner_alt: "Ordenador portátil apagado sobre una mesa de madera marrón"
-keywords: "blockchain, Ethereum, smart contract, criptomoneda, Solidity, Geth, dApps, ERC-20, tokenización, testnet"
+banner_alt: "บล็อกบัญชีแยกประเภทดิจิทัลเชิงนามธรรมเชื่อมโยงกันด้วยเส้นแสงบนพื้นหลังสีเข้ม"
+keywords: "เทคโนโลยีบล็อกเชน, แฮชเชิงการเข้ารหัส, ต้นไม้เมอร์เคิล, ฉันทามติแบบกระจาย, พิสูจน์งาน, Ethereum, สัญญาอัจฉริยะ, EVM, Solidity, ERC-20, บัญชีแยกประเภทแบบกระจาย, การเงินแบบกระจายศูนย์"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+![บล็อกบัญชีแยกประเภทดิจิทัลเชิงนามธรรมเชื่อมโยงกันด้วยเส้นแสงบนพื้นหลังสีเข้ม](https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp).class=\"img-fluid clearfix\"
 
-**ประเด็นสำคัญ**
+> **บทสรุปผู้บริหาร / ประเด็นสำคัญ**
+>
+> - **ปัญหา** เงินสดดิจิทัลต้องแก้ปัญหาการใช้จ่ายซ้ำซ้อน (double-spend) นั่นคือการป้องกันไม่ให้หน่วยเดียวกันถูกใช้จ่ายสองครั้งโดยไม่ต้องอาศัยสำนักหักบัญชีที่เชื่อถือได้ ไวต์เปเปอร์ของบิตคอยน์ปี 2008 แก้ปัญหานี้ด้วยการแทนที่ตัวกลางที่เชื่อถือได้ด้วยหลักฐานเชิงการเข้ารหัสและฉันทามติแบบกระจาย ([Nakamoto, 2008](https://bitcoin.org/bitcoin.pdf "Bitcoin: A Peer-to-Peer Electronic Cash System")).
+> - **โครงสร้างข้อมูล** บล็อกเชนคือรายการเชื่อมโยง (linked list) ของบล็อก ซึ่งส่วนหัวของแต่ละบล็อกบรรจุค่าแฮช SHA-256 ของส่วนหัวก่อนหน้า ห่วงโซ่แฮชทำให้ประวัติเป็นแบบเพิ่มต่อได้อย่างเดียว การแก้ไขบล็อกในอดีตใด ๆ จะทำให้แฮชทุกค่าที่ตามมาใช้การไม่ได้ บังคับให้ผู้โจมตีต้องทำงานพิสูจน์งานที่ตามมาทั้งหมดใหม่
+> - **ต้นไม้เมอร์เคิล** ธุรกรรมภายในบล็อกถูกแฮชเข้าเป็นต้นไม้เมอร์เคิลแบบทวิภาค ค่าแฮชรากที่จัดเก็บอยู่ในส่วนหัวของบล็อกช่วยให้ตรวจสอบธุรกรรมรายการใด ๆ ได้อย่างมีประสิทธิภาพโดยไม่ต้องดาวน์โหลดทั้งบล็อก ซึ่งเป็นพื้นฐานของไคลเอนต์ SPV แบบเบา
+> - **ส่วนขยายของ Ethereum** Yellow Paper ของ Ethereum (2014) นำเสนอ EVM ซึ่งเป็นเครื่องสแตกแบบกำหนดได้ที่รันอยู่บนฟูลโหนดทุกโหนด สัญญาอัจฉริยะคือไบต์โค้ดที่ดีพลอยลงบนเชน มันประมวลผลเหมือนกันทุกโหนดและชำระราคาแบบอะตอมมิก แทนที่ตัวกลางที่เชื่อถือได้ด้วยโค้ดที่บังคับใช้ตัวเอง ([Wood, 2014](https://ethereum.github.io/yellowpaper/paper.pdf "Ethereum Yellow Paper")).
+> - **นัยเชิงปฏิบัติ** สินทรัพย์โทเคน สเตเบิลคอยน์ และโปรโตคอล DeFi ทุกตัวที่ดีพลอยตั้งแต่ปี 2017 ล้วนทำงานบนรากฐานเหล่านี้ การเข้าใจห่วงโซ่แฮช ต้นไม้เมอร์เคิล และแบบจำลองการประมวลผลของ EVM คือเงื่อนไขเบื้องต้นในการทำงานกับระบบใด ๆ ที่ตั้งอยู่บน Ethereum
 
-![Ordenador portátil apagado sobre una mesa de madera marrón](https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp).class=\"img-fluid clearfix\"
+---
 
-## Perspectiva
+## ปัญหาที่บล็อกเชนแก้ได้
 
-La tecnología blockchain ha abierto la puerta a una nueva era de aplicaciones descentralizadas (dApps) que operan de forma independiente, sin control centralizado. Ethereum proporciona una plataforma potente para crear dApps complejas y smart contracts.
+ก่อนบิตคอยน์ การชำระเงินดิจิทัลต้องอาศัยตัวกลางที่เชื่อถือได้ ไม่ว่าจะเป็นธนาคาร ผู้ประมวลผลการชำระเงิน หรือสำนักหักบัญชี เพื่อป้องกันการใช้จ่ายซ้ำซ้อน หากอลิซส่งไฟล์ดิจิทัลที่แทนมูลค่า 10 ปอนด์ให้บ็อบ ไม่มีสิ่งใดในตัวไฟล์นั้นที่ห้ามเธอส่งสำเนาที่เหมือนกันทุกประการให้แคโรลได้ วิธีแก้ในทุกระบบที่มีอยู่คือการเก็บบันทึกแบบรวมศูนย์ บัญชีแยกประเภทของธนาคารระบุว่าเงินถูกใช้ไปแล้ว จึงไม่สามารถใช้ซ้ำได้อีก
 
-Uno de los usos más prometedores de Ethereum es el lanzamiento de criptomonedas y tokens digitales personalizados. En esta guía completa examinaremos paso a paso cómo crear su propio token criptográfico sobre Ethereum.
+สิ่งที่บิตคอยน์นำเสนอคือการแทนที่บัญชีแยกประเภทที่เชื่อถือได้นั้นด้วยบัญชีแยกประเภทแบบกระจาย ซึ่งบันทึกธุรกรรมทั้งหมดถูกทำซ้ำไว้บนโหนดอิสระหลายพันโหนด ความไม่ไว้วางใจซึ่งกันและกันระหว่างโหนดถูกแปลงเป็นความมั่นคงปลอดภัยผ่านสองกลไก
 
-## Idea
+1. **การเชื่อมโยงเชิงการเข้ารหัส** แต่ละบล็อกของธุรกรรมบรรจุค่าแฮชของบล็อกก่อนหน้า ฟังก์ชันแฮชคือการแมปทางเดียวแบบกำหนดได้ (deterministic) เมื่อป้อนอินพุตใด ๆ ฟังก์ชันจะสร้างเอาต์พุตที่มีความยาวคงที่ และการเปลี่ยนแม้เพียงหนึ่งบิตของอินพุตจะให้เอาต์พุตที่แตกต่างไปโดยสิ้นเชิง นั่นหมายความว่าการแก้ไขบล็อกในอดีตใด ๆ จะทำให้ทุกบล็อกที่ตามมาใช้การไม่ได้
 
-Nuestro objetivo es construir una criptomoneda sencilla sobre Ethereum, ofreciéndole una experiencia práctica de desarrollo blockchain. Estos son los pasos clave que cubriremos:
+2. **ฉันทามติแบบพิสูจน์งาน (proof-of-work)** การเพิ่มบล็อกใหม่ต้องหาค่า nonce ที่ทำให้แฮชของบล็อกมีค่าต่ำกว่าเกณฑ์เป้าหมาย ซึ่งใช้การคำนวณสูงในการค้นหาแต่ตรวจสอบได้ง่ายมาก สิ่งนี้ทำให้การเขียนประวัติศาสตร์ขึ้นใหม่มีต้นทุนแปรผันตามความลึกของบล็อกที่ถูกแก้ไข เพราะผู้โจมตีต้องทำงานพิสูจน์งานทั้งหมดใหม่ตั้งแต่บล็อกนั้นไปจนถึงปลายเชน
 
-### Diseñar la criptomoneda
+การผสานทั้งสองกลไกหมายความว่าเชนที่ยาวที่สุดและมีงานพิสูจน์สะสมมากที่สุด ย่อมเป็นเชนที่ผู้เข้าร่วมซื่อสัตย์ซึ่งใช้ทรัพยากรจริงเป็นผู้ดูแล โดยธรรมชาติของการออกแบบ
 
-La primera tarea crucial es diseñar su criptomoneda. Esto abarca la definición de atributos clave:
+## องค์ประกอบพื้นฐานเชิงการเข้ารหัส
 
-- **Nombre**: elija un nombre único que represente la identidad y el propósito del token.
-- **Símbolo**: elija un símbolo corto como BTC para Bitcoin. Se utiliza en los exchanges.
-- **Oferta total**: determine el número máximo de tokens en circulación.
-- **Decimales**: defina la divisibilidad de su token, como 2 para céntimos.
-- **Funcionalidades adicionales**: añada opcionalmente extras como minting, burning, freezing, etc.
+เทคโนโลยีบล็อกเชนประกอบไพรมิทีฟเชิงการเข้ารหัสที่มีอยู่ก่อนแล้วสามอย่างเข้าเป็นสถาปัตยกรรมใหม่
 
-### Escribir smart contracts
+### ฟังก์ชันแฮช SHA-256
 
-Para dar vida a su criptomoneda, deberá codificar smart contracts que definan la funcionalidad y las reglas del token. Los smart contracts son scripts programáticos almacenados en la blockchain que se ejecutan automáticamente cuando se cumplen ciertas condiciones.
+SHA-256 (Secure Hash Algorithm 256-bit) เป็นสมาชิกของตระกูล SHA-2 ที่ NIST กำหนดเป็นมาตรฐาน รับอินพุตความยาวเท่าใดก็ได้และสร้างเอาต์พุตขนาด 256 บิต คุณสมบัติสำคัญสำหรับการใช้งานบล็อกเชนมีดังนี้
 
-Estas son algunas capacidades clave que hacen que los smart contracts sean idóneos para las criptomonedas:
+- **กำหนดได้ (Deterministic)** อินพุตเดียวกันจะให้เอาต์พุตเดียวกันเสมอ
+- **ต้านการหาพรีอิมเมจ (Pre-image resistance)** เมื่อมีเอาต์พุตแฮช การสร้างอินพุตกลับคืนเป็นสิ่งที่ทำไม่ได้ในทางการคำนวณ
+- **ปรากฏการณ์หิมะถล่ม (Avalanche effect)** การเปลี่ยนหนึ่งบิตของอินพุตจะเปลี่ยนบิตเอาต์พุตราวครึ่งหนึ่ง ทำให้การค้นหาแบบเดารหัส (brute-force) ไม่มีประสิทธิภาพ
+- **ต้านการชนกัน (Collision resistance)** การหาอินพุตสองชุดที่ต่างกันแต่ให้แฮชเดียวกันเป็นสิ่งที่ทำไม่ได้ในทางการคำนวณ
 
-- **Autoejecución**: se activan automáticamente, sin intervención de un tercero.
-- **Inmutabilidad**: una vez desplegado, el código no puede modificarse. Esto garantiza la seguridad.
-- **Autonomía**: no es necesaria ninguna autoridad central para gestionar los smart contracts.
-- **Transparencia**: cualquiera puede inspeccionar la lógica de un smart contract.
-- **Automatización**: acciones como la transferencia de fondos pueden automatizarse mediante el código del contrato.
-- **Seguridad**: los fondos depositados en un contrato quedan protegidos hasta que se cumplen las condiciones de liberación.
-- **Eficiencia**: los smart contracts eliminan intermediarios, haciendo los procesos más rápidos y menos costosos.
+บิตคอยน์ใช้ SHA-256 สองครั้ง (SHA-256d) เพื่อเพิ่มความปลอดภัยต่อการโจมตีแบบต่อขยายความยาว (length-extension) ส่วน Ethereum ใช้ Keccak-256 ซึ่งเป็นตัวแปรที่เข้ารอบสุดท้ายของ SHA-3
 
-Ejemplo de código de contrato en Solidity.
+### ต้นไม้เมอร์เคิล
+
+ต้นไม้เมอร์เคิลคือต้นไม้ทวิภาคของค่าแฮช โหนดใบแต่ละโหนดคือแฮชของธุรกรรมหนึ่งรายการ โหนดภายในแต่ละโหนดคือแฮชของโหนดลูกสองโหนด ค่ารากหรือรากเมอร์เคิล (Merkle root) สรุปธุรกรรมทั้งหมดในบล็อกไว้ในค่าเดียวขนาด 32 ไบต์ที่จัดเก็บอยู่ในส่วนหัวของบล็อก
+
+ผลในทางปฏิบัติคือ การตรวจสอบว่าธุรกรรมหนึ่ง ๆ ถูกรวมอยู่ในบล็อกหรือไม่ ต้องใช้แฮชเพียง `log₂(n)` ค่า ไม่ใช่ธุรกรรมทั้ง `n` รายการ สำหรับบล็อกที่มีธุรกรรม 2,000 รายการ การตรวจสอบต้องใช้แฮช 11 ค่าแทนที่จะเป็น 2,000 ค่า ซึ่งเป็นพื้นฐานของการตรวจสอบการชำระเงินแบบง่าย (Simplified Payment Verification หรือ SPV) ในไคลเอนต์แบบเบา
+
+### ลายเซ็นดิจิทัล (ECDSA)
+
+การอนุมัติธุรกรรมในบิตคอยน์และ Ethereum ใช้ Elliptic Curve Digital Signature Algorithm (ECDSA) บนเส้นโค้ง secp256k1 กุญแจส่วนตัวใช้ลงนามในธุรกรรม โหนดใด ๆ สามารถตรวจสอบลายเซ็นได้โดยใช้กุญแจสาธารณะที่คู่กันโดยไม่ต้องรู้กุญแจส่วนตัว สิ่งนี้รับประกันว่าเฉพาะผู้ถือกุญแจส่วนตัวเท่านั้นที่อนุมัติการใช้จ่ายจากที่อยู่หนึ่งได้
+
+ที่อยู่ Ethereum คือ 20 ไบต์สุดท้ายของแฮช Keccak-256 ของกุญแจสาธารณะ การอนุพัทธ์เช่นนี้ทำให้ที่อยู่มีขนาดกระชับและพกพาสะดวก ในขณะที่ยังผูกกับคู่กุญแจในเชิงการเข้ารหัส
+
+## บล็อกเชนของบิตคอยน์ทำงานอย่างไร
+
+บล็อกของบิตคอยน์ประกอบด้วยส่วนประกอบเชิงตรรกะสามส่วน
+
+**ส่วนหัวของบล็อก** ขนาด 80 ไบต์ ประกอบด้วยเวอร์ชันโปรโตคอล แฮชของส่วนหัวบล็อกก่อนหน้า รากเมอร์เคิลของธุรกรรม เวลาประทับแบบ Unix เป้าหมายความยากปัจจุบัน และค่า nonce นักขุดจะวนค่า nonce (และบางครั้งเวลาประทับหรือ extra-nonce ในธุรกรรม coinbase) จนกว่าแฮชแบบ double-SHA-256 ของส่วนหัวจะมีค่าต่ำกว่าเป้าหมายความยาก
+
+**รายการธุรกรรม** คือชุดธุรกรรมที่เรียงลำดับซึ่งรวมอยู่ในบล็อก ธุรกรรม coinbase (ธุรกรรมแรก) กำหนดรางวัลบล็อกและค่าธรรมเนียมธุรกรรมให้แก่ที่อยู่ของนักขุด
+
+**เชน** คือการเชื่อมโยงของส่วนหัว งานพิสูจน์สะสมในเชน (ผลรวมของงานทั้งหมดที่ใช้สร้างทุกบล็อก) เป็นตัวกำหนดว่าฟอร์กใดคือเชนที่ถูกต้องตามหลัก โหนดจะยึดเชนที่มีงานสะสมมากที่สุดเสมอ
+
+เวลาต่อบล็อกของบิตคอยน์ถูกกำหนดเป้าหมายไว้ที่ 10 นาที ความยากจะปรับทุก 2,016 บล็อก (ประมาณสองสัปดาห์) เพื่อรักษาเป้าหมายนั้นเมื่ออัตราแฮชรวมของเครือข่ายเปลี่ยนแปลง
+
+## ชั้นที่ตั้งโปรแกรมได้ของ Ethereum
+
+Ethereum ขยายแบบจำลองธุรกรรมของบิตคอยน์จาก "การโอนมูลค่า" ไปสู่ "การรันโค้ด" สิ่งที่เพิ่มเข้ามาสำคัญมีดังนี้
+
+**Ethereum Virtual Machine (EVM)** เครื่องเสมือนแบบสแตกที่ใช้เวิร์ดขนาด 256 บิต ซึ่งประมวลผลแบบกำหนดได้บนฟูลโหนดทุกโหนด ทุก opcode มีต้นทุนแก๊สที่ระบุชัดเจน การคำนวณถูกจำกัดด้วยขีดจำกัดแก๊สต่อบล็อก ป้องกันไม่ให้ลูปไม่รู้จบหยุดการทำงานของเครือข่าย โหนดทุกโหนดที่รันไบต์โค้ดเดียวกันบนสถานะเดียวกันต้องให้เอาต์พุตเดียวกัน ฉันทามติในการประมวลผลนี้เองที่ทำให้สัญญาอัจฉริยะไม่ต้องอาศัยความไว้วางใจ
+
+**บัญชี** Ethereum มีบัญชีสองประเภท ได้แก่ บัญชีที่ควบคุมจากภายนอก (Externally Owned Accounts หรือ EOA) ซึ่งควบคุมด้วยกุญแจส่วนตัว และบัญชีสัญญา (Contract Accounts) ซึ่งเก็บโค้ดไว้บนเชน ธุรกรรมที่ส่งไปยังที่อยู่สัญญาจะกระตุ้นให้ไบต์โค้ดของสัญญาทำงาน
+
+**สถานะ** สถานะรวม (global state) ของ Ethereum คือการแมปที่อยู่ไปยังสถานะบัญชี (nonce ยอดคงเหลือ พื้นที่จัดเก็บ และแฮชโค้ด) รากสถานะ (state root) ซึ่งเป็น Merkle Patricia trie ของสถานะบัญชีทั้งหมด ถูกรวมไว้ในส่วนหัวของแต่ละบล็อก ทำให้พิสูจน์สถานะของบัญชีใด ๆ ที่ความสูงบล็อกใด ๆ ได้อย่างมีประสิทธิภาพ
+
+**แก๊ส** ผู้ใช้จ่ายแก๊ส (เป็น ETH) สำหรับทุกการดำเนินการของ EVM แก๊สทำหน้าที่สองอย่าง คือชดเชยนักขุดหรือผู้ตรวจสอบสำหรับการคำนวณ และจำกัดทรัพยากรที่ธุรกรรมเดียวใช้ได้ ป้องกันการโจมตีแบบปฏิเสธการให้บริการผ่านการดำเนินการที่มีต้นทุนสูง
+
+## การเขียนสัญญาอัจฉริยะด้วย Solidity
+
+Solidity เป็นภาษาแบบกำหนดชนิดข้อมูลตายตัว (statically-typed) และเน้นสัญญา ซึ่งคอมไพล์เป็นไบต์โค้ดของ EVM สัญญาโทเคนอย่างง่ายช่วยอธิบายแนวคิดหลักได้ดังนี้
 
 ```solidity
 pragma solidity ^0.8.0;
 
 contract MyToken {
+    string public name;
+    string public symbol;
+    uint8 public decimals;
+    uint256 public totalSupply;
+    mapping(address => uint256) public balanceOf;
 
-  string public name;
-  string public symbol;
-  uint256 public decimals;
-  uint256 public totalSupply;
+    event Transfer(address indexed from, address indexed to, uint256 value);
 
-  constructor(string memory _name, string memory _symbol, uint8 _decimals, uint256 _totalSupply) {
-    name = _name;
-    symbol = _symbol;
-    decimals = _decimals;
-    totalSupply = _totalSupply;
-  }
+    constructor(
+        string memory _name,
+        string memory _symbol,
+        uint8 _decimals,
+        uint256 _totalSupply
+    ) {
+        name = _name;
+        symbol = _symbol;
+        decimals = _decimals;
+        totalSupply = _totalSupply;
+        balanceOf[msg.sender] = _totalSupply;
+    }
 
+    function transfer(address _to, uint256 _value) external returns (bool) {
+        require(balanceOf[msg.sender] >= _value, "Insufficient balance");
+        balanceOf[msg.sender] -= _value;
+        balanceOf[_to] += _value;
+        emit Transfer(msg.sender, _to, _value);
+        return true;
+    }
 }
 ```
 
-Este contrato básico permite crear un token con propiedades como nombre, símbolo, decimales y oferta total.
+ข้อสังเกตสำคัญ `mapping(address => uint256)` คือโครงสร้างการจัดเก็บของ EVM ไม่ใช่โครงสร้างข้อมูลในหน่วยความจำ การอ่านและการเขียนมีต้นทุนแก๊ส `require` จะย้อนธุรกรรมทั้งหมดเมื่อล้มเหลว พร้อมคืนแก๊สที่ไม่ได้ใช้ `event Transfer` ปล่อยล็อกที่ตัวจัดทำดัชนีนอกเชนใช้ติดตามการโอนโดยไม่ต้องอ่านสถานะทั้งหมดซ้ำ `constructor` ทำงานครั้งเดียวตอนดีพลอย ส่วนการเรียกครั้งถัดไปจะไปยังฟังก์ชันที่มีชื่อกำหนดไว้
 
-La función `constructor` inicializa estos parámetros en el momento del despliegue del contrato.
+มาตรฐาน ERC-20 กำหนดอินเทอร์เฟซร่วมสำหรับโทเคนที่ทดแทนกันได้อย่างเป็นทางการ ได้แก่ `transfer` `transferFrom` `approve` `allowance` `balanceOf` และ `totalSupply` ทำให้โทเคนที่สอดคล้องกับ ERC-20 ใด ๆ ทำงานร่วมกับกระดานแลกเปลี่ยนหรือกระเป๋าเงินที่รองรับ ERC-20 ใด ๆ ได้โดยไม่ต้องพัฒนาการเชื่อมต่อเฉพาะ
 
-Este ejemplo se limita a configurar propiedades básicas. Extendería el contrato para añadir más funcionalidades:
+## จากบัญชีแยกประเภทสู่โครงสร้างพื้นฐานทางการเงิน
 
-- Transferencias de tokens entre direcciones
-- Gestión de saldos
-- Autorizaciones (allowances) para gastar tokens
-- Minting y burning de tokens
-- Congelación o bloqueo de transferencias de tokens
-- Implementación de estándares de token como ERC-20
-- Despliegue e interacción con el contrato
+ไพรมิทีฟของบล็อกเชนที่อธิบายไว้ในที่นี้ ได้แก่ ห่วงโซ่แฮช ต้นไม้เมอร์เคิล EVM และ ERC-20 กลายเป็นรากฐานของการประยุกต์ใช้ทางการเงินในวงกว้างระหว่างปี 2018 ถึง 2026
 
-### Desarrollo y pruebas locales
+**การเงินแบบกระจายศูนย์ (DeFi)** โปรโตคอลการปล่อยกู้ (Compound, Aave) ผู้สร้างตลาดอัตโนมัติ (Uniswap) และตัวรวมผลตอบแทน ล้วนทำงานในรูปสัญญาอัจฉริยะบน EVM สิ่งเหล่านี้แทนที่หน้าที่การหักบัญชี การเก็บรักษา และการชำระราคาของตัวกลางทางการเงินแบบดั้งเดิม ด้วยโค้ดที่รันเองและสระสภาพคล่องบนเชน
 
-Antes de desplegar su criptomoneda en la blockchain Ethereum, es prudente realizar pruebas locales exhaustivas. Esto garantiza que su criptomoneda funcione como se espera, sin bugs ni vulnerabilidades imprevistas.
+**สินทรัพย์โทเคน** ธนาคารกลางและธนาคารพาณิชย์กำลังนำร่องเงินฝากโทเคน พันธบัตรโทเคน และกองทุนตลาดเงินโทเคนบนเชนที่เข้ากันได้กับ EVM ในรูปแบบที่ต้องขออนุญาต กลไกเบื้องหลัง ได้แก่ การเปลี่ยนสถานะที่ปกป้องด้วยแฮช การชำระราคาแบบอะตอมมิก และกฎการโอนที่ตั้งโปรแกรมได้ ล้วนเป็นทายาทโดยตรงของสถาปัตยกรรม Ethereum ปี 2014
 
-Para empezar, siga estos pasos:
+**สกุลเงินดิจิทัลของธนาคารกลาง** งานวิจัย CBDC ระดับ wholesale ของธนาคารกลางอังกฤษ โครงการยูโรดิจิทัลของ ECB และ Project Agorá ล้วนศึกษาสถาปัตยกรรม DLT ที่ต่อยอดจากหรือเข้ากันได้กับการออกแบบพื้นฐานในบิตคอยน์และ Ethereum โครงสร้างฉันทามติและห่วงโซ่แฮชยังคงมีความสำคัญ แม้ในกรณีที่แบบจำลองการให้สิทธิ์และการกำกับดูแลจะแตกต่างจากบล็อกเชนสาธารณะโดยสิ้นเชิง
 
-#### Descargar Go-Ethereum (Geth)
+เส้นทางจากไวต์เปเปอร์ของบิตคอยน์ปี 2008 สู่การเงินแบบโทเคนในปี 2026 กินเวลาสองทศวรรษ แต่ดำเนินอยู่บนสายเทคนิคที่สอดคล้องกัน การเข้าใจว่าห่วงโซ่แฮช SHA-256 บังคับความไม่เปลี่ยนแปลงได้อย่างไร ต้นไม้เมอร์เคิลช่วยให้ตรวจสอบได้อย่างมีประสิทธิภาพอย่างไร และ EVM ประมวลผลสัญญาอัจฉริยะแบบอะตอมมิกอย่างไร คือเงื่อนไขเบื้องต้นในการประเมินข้อกล่าวอ้างใด ๆ ว่าบล็อกเชนทำอะไรได้และทำอะไรไม่ได้ในบริการทางการเงินที่อยู่ภายใต้การกำกับ
 
-Comience descargando [Go-Ethereum][00], también llamado Geth, un cliente Ethereum escrito en Go. Geth actúa como interfaz de línea de comandos (CLI) Ethereum, ejecutable en Windows, Mac y Linux. Es una herramienta versátil que permite minar, crear e interactuar con smart contracts en la red Ethereum.
+## คำถามที่พบบ่อย
 
-#### Instalar Ethereum
+**บล็อกเชนกับฐานข้อมูลแบบกระจายต่างกันอย่างไร**
 
-Una vez descargado Geth, instale Ethereum. Para los requisitos previos detallados e instrucciones de compilación completas, consulte las [Installation Instructions][01] disponibles en su wiki oficial.
+ฐานข้อมูลแบบกระจายทั่วไปทำซ้ำข้อมูลบนหลายโหนดเพื่อความพร้อมใช้งานและประสิทธิภาพ แต่ความไว้วางใจยังคงรวมศูนย์ ผู้ดูแลระบบสามารถแก้ไขบันทึกได้ ส่วนบล็อกเชนทำให้การปลอมแปลงมีต้นทุนการคำนวณสูงผ่านการเชื่อมโยงแฮชและฉันทามติ การแก้ไขบันทึกในอดีตใด ๆ ต้องทำงานพิสูจน์งานหรือพิสูจน์การถือครองที่ตามมาทั้งหมดใหม่ และต้องโน้มน้าวให้เครือข่ายยอมรับฟอร์กที่ถูกแก้ไข คุณสมบัติที่แตกต่างคือความสามารถตรวจพบการปลอมแปลง ซึ่งบังคับใช้ด้วยการเข้ารหัสและการออกแบบแรงจูงใจ แทนที่จะเป็นการควบคุมการเข้าถึง
 
-#### Configurar un entorno de desarrollo
+**เหตุใด Ethereum จึงใช้ Keccak-256 แทน SHA-256**
 
-Para facilitar el desarrollo de su criptomoneda, necesitará un entorno de desarrollo, un framework de pruebas y una canalización de activos para Ethereum. Las instrucciones detalladas para instalar estas herramientas esenciales se encuentran en la wiki de Ethereum.
+Ethereum เลือกใช้ Keccak-256 (ตัวที่เข้ารอบสุดท้ายของ SHA-3 ก่อนที่ NIST จะปรับปรุงให้เป็นมาตรฐาน) ส่วนหนึ่งเพราะผู้ออกแบบต้องการเป็นอิสระจากสาย SHA-2 ที่บิตคอยน์พึ่งพาอยู่แล้ว อีกทั้ง Keccak มีคุณสมบัติเชิงพีชคณิตที่ต่างออกไปซึ่งเหมาะกับบางการดำเนินการของ EVM ผลในทางปฏิบัติสำหรับนักพัฒนาคือ การอนุพัทธ์ที่อยู่ Ethereum และการแฮชช่องจัดเก็บใช้ Keccak-256 ไม่ใช่ SHA-256d อย่างในบิตคอยน์
 
-#### Desplegar en una testnet
+**"แก๊ส" ป้องกันอะไรใน EVM**
 
-Una vez que su criptomoneda supere las pruebas locales, puede desplegarla en una testnet. Una testnet es un entorno seguro y controlado que imita el mainnet de Ethereum, permitiéndole evaluar el rendimiento de su criptomoneda en un entorno real, sin riesgo financiero real.
+แก๊สป้องกันการโจมตีสองประเภท ประเภทแรกคือการปฏิเสธการให้บริการผ่านการดำเนินการที่มีต้นทุนการคำนวณสูง ทุก opcode มีต้นทุนแก๊ส ผู้โจมตีจึงไม่สามารถบังคับให้เครือข่ายรันลูปไม่รู้จบโดยไม่มีต้นทุนได้ ประเภทที่สองคือขีดจำกัดแก๊สต่อบล็อกซึ่งจำกัดการคำนวณรวมต่อบล็อก ทำให้เวลาตรวจสอบบล็อกมีขอบเขตและคาดการณ์ได้สำหรับฟูลโหนด หากไม่มีแก๊ส การเรียกสัญญาเพียงครั้งเดียวก็อาจหยุดการทำงานของเครือข่ายได้ด้วยการรันการคำนวณที่ไม่มีขอบเขต
 
-## Impacto
+**พิสูจน์การถือครองเปลี่ยนแบบจำลองความมั่นคงปลอดภัยเมื่อเทียบกับพิสูจน์งานอย่างไร**
 
-Al construir una criptomoneda basada en Ethereum desde cero, obtendrá:
+ในพิสูจน์งาน ความมั่นคงปลอดภัยมาจากการใช้พลังงาน การโจมตีเชนต้องควบคุมอัตราแฮชของเครือข่ายมากกว่า 50% ซึ่งหมายถึงการควบคุมฮาร์ดแวร์และพลังงานทางกายภาพมากกว่า 50% ส่วนในพิสูจน์การถือครอง (ซึ่ง Ethereum ใช้ตั้งแต่ The Merge ในปี 2022) ความมั่นคงปลอดภัยมาจากการวางเดิมพันเชิงเศรษฐกิจ ผู้ตรวจสอบล็อก ETH ไว้เป็นหลักประกัน ซึ่งจะถูกริบหากลงนามในบล็อกที่ขัดแย้งกัน การโจมตีแบบ 51% ต้องได้มาและเสี่ยงกับ ETH ที่ถูกวางเดิมพันมากกว่า 50% ของทั้งหมด นั่นคือต้นทุนด้านเงินทุนแทนที่จะเป็นต้นทุนฮาร์ดแวร์และพลังงาน แบบจำลองความมั่นคงปลอดภัยจึงต่างกัน แต่เทียบเคียงได้ในเชิงคณิตศาสตร์ในแง่เศรษฐกิจ ภายใต้สมมติฐานว่าผู้ตรวจสอบที่มีเหตุผลย่อมเลือกรายได้ค่าธรรมเนียมมากกว่าการทำลายเงินทุนของตน
 
-- Un conocimiento profundo de las aplicaciones descentralizadas (dApps) y de la programación de smart contracts
-- Experiencia práctica con la programación en Solidity
-- Una comprensión de los protocolos de consenso de Ethereum
-- Familiaridad con estándares de token como ERC-20
+## เอกสารอ้างอิง
 
-Este aprendizaje le otorgará los medios para aprovechar la tecnología blockchain en soluciones innovadoras.
-
-## Incentivos
-
-Completar una construcción de token de extremo a extremo desbloquea una experiencia práctica de primera mano con:
-
-- La arquitectura blockchain
-- La mecánica de las criptomonedas
-- El desarrollo de smart contracts
-- Las capacidades y limitaciones de Ethereum
-
-Adquirirá competencias valiosas para hacer avanzar su carrera en programación blockchain.
-
-## Conclusión
-
-En el campo de la tecnología blockchain, la comprensión se gana mejor a través de la puesta en práctica. Construir una criptomoneda sobre la plataforma Ethereum ofrece una oportunidad única de adquirir experiencia de primera mano con las capacidades y limitaciones de la tecnología. Esta guía le arma con los conocimientos y competencias para emprender este apasionante viaje, favoreciendo la innovación y el descubrimiento en el universo en perpetua evolución del desarrollo blockchain y cripto.
-
-[00]: https://geth.ethereum.org/downloads/
-[01]: https://geth.ethereum.org/docs/getting-started/installing-geth
+- Nakamoto, S., (2008). [Bitcoin: A Peer-to-Peer Electronic Cash System ⧉](https://bitcoin.org/bitcoin.pdf "Bitcoin Whitepaper").
+- Buterin, V., (2014). [Ethereum: A Next-Generation Smart Contract and Decentralised Application Platform ⧉](https://ethereum.org/whitepaper "Ethereum Whitepaper").
+- Wood, G., (2014). [Ethereum: A Secure Decentralised Generalised Transaction Ledger ⧉](https://ethereum.github.io/yellowpaper/paper.pdf "Ethereum Yellow Paper").
+- NIST, (2015). [SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions ⧉](https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions "NIST FIPS 202").

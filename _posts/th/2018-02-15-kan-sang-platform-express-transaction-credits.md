@@ -1,69 +1,145 @@
 ---
-title: "La creación de la plataforma Express Transaction Credits"
-subtitle: "Un marco completo para la próxima generación de tokens ERC-223"
-description: "Desarrollar un marco completo para la próxima generación de tokens conformes a Ethereum Request for Comment mediante el estándar ERC-223."
+title: "การสร้างแพลตฟอร์ม Express Transaction Credits"
+subtitle: "การออกแบบแพลตฟอร์ม Express Transaction Credits ด้วยสัญญาอัจฉริยะ ERC-223"
+description: "การเจาะลึกเชิงเทคนิคว่าแพลตฟอร์ม EXTC ถูกสร้างขึ้นบน Ethereum ERC-223 ในปี 2018 อย่างไร ครอบคลุมสถาปัตยกรรมโทเคน การจ่ายเงินแบบหลายลายเซ็น การโอนแบบล็อกตามเวลา และสินเชื่อทันทีที่ค้ำประกันด้วยหลักประกัน"
 date: "February 15, 2018"
 language: "th-TH"
 locale: "th_TH"
+hreflang: "th"
 banner: "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
-banner_alt: "Grandes columnas blancas"
-keywords: "Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, pagos, tokens, préstamos, finanzas descentralizadas"
+banner_alt: "เสาสีขาวขนาดใหญ่"
+keywords: "แพลตฟอร์ม EXTC, ERC-223, สัญญาอัจฉริยะ Ethereum, สถาปัตยกรรมโทเคน, หลายลายเซ็น, การโอนแบบล็อกตามเวลา, การชำระเงินบล็อกเชน, สินเชื่อค้ำประกันด้วยหลักประกัน, การเงินแบบกระจายศูนย์, คริปโทปี 2018"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+![เสาสีขาวขนาดใหญ่](https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp).class=\"img-fluid clearfix\"
 
-**ประเด็นสำคัญ**
+> **บทสรุปผู้บริหาร / ประเด็นสำคัญ**
+>
+> - **ปัญหาต้นตอ** ERC-20 ซึ่งเป็นมาตรฐานโทเคน Ethereum ที่ครองตลาดในปี 2018 มีข้อบกพร่องเชิงโครงสร้าง นั่นคือ โทเคนที่ถูกโอนไปยังที่อยู่ของสัญญาอัจฉริยะโดยตรงจะถูกทำลายไปอย่างเงียบ ๆ หากสัญญานั้นไม่มีตัวจัดการ (handler) แพลตฟอร์มการชำระเงินใดก็ตามที่สร้างบน ERC-20 ย่อมสืบทอดความเสี่ยงนั้นมาด้วย ([Ethereum EIPs](https://eips.ethereum.org/EIPS/eip-20 "EIP-20: มาตรฐานโทเคน")).
+> - **ERC-223 คือทางแก้** ERC-223 กำหนดให้สัญญาผู้รับต้องนำฟังก์ชัน `tokenFallback(address, uint, bytes)` มาใช้ หากไม่มีฟังก์ชันนี้ การโอนจะถูกย้อนกลับแบบอะตอมมิก ไม่มีโทเคนใดสูญหายไปอย่างเงียบ ๆ ได้ ([Ethereum EIPs GitHub](https://github.com/ethereum/EIPs/issues/223 "ข้อเสนอมาตรฐานโทเคน ERC-223")).
+> - **พื้นฐานสัญญาห้าประการของ EXTC** อัตลักษณ์โทเคน (ชื่อ สัญลักษณ์ ความแม่นยำ 18 ทศนิยม) อุปทานคงที่ การโอนที่เป็นไปตามมาตรฐาน ERC-223 การจ่ายเงินองค์กรแบบหลายลายเซ็น และคำสั่งชำระเงินประจำที่ล็อกตามความสูงของบล็อก
+> - **กลไกสินเชื่อค้ำประกัน** ผู้กู้ล็อกโทเคน EXTC ไว้ในเอสโครว์ของสัญญา สัญญาจะปล่อยเงินกู้แบบอะตอมมิกทันทีที่ได้รับหลักประกัน โดยไม่มีความล่าช้าจากการพิจารณาสินเชื่อหรือการอนุมัติจากคณะกรรมการสินเชื่อ
+> - **สิ่งที่การทดลองเผยให้เห็นเกี่ยวกับข้อจำกัดของ Ethereum** ที่ปริมาณงานของเมนเน็ตราว 15 TPS และต้นทุนแก๊ส 0.10–1.00 ดอลลาร์ต่อธุรกรรมในช่วงจุดสูงสุดของเดือนมกราคม 2018 เครือข่ายการชำระเงินที่ประมวลผลปริมาณแม้เพียงระดับการโอนเงินระหว่างประเทศก็ยังไม่สามารถทำได้ทั้งในเชิงเศรษฐกิจและเชิงเทคนิคบน Ethereum สาธารณะ หากปราศจากโครงสร้างพื้นฐาน Layer-2
 
-![Grandes columnas blancas](https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp).class=\"img-fluid clearfix\"
+---
 
-## Perspectiva
+## โจทย์การออกแบบ: เหตุใด ERC-20 จึงไม่เพียงพอ
 
-### Pioneros de una nueva era de los servicios financieros
+มาตรฐาน ERC-20 ซึ่งถูกเสนอในปี 2015 และกำหนดอย่างเป็นทางการใน Ethereum Improvement Proposal 20 ได้นิยามอินเทอร์เฟซโทเคนแบบทดแทนกันได้ที่เป็นมาตรฐานหลัก อันเป็นแรงขับเคลื่อนกระแส ICO ในช่วงปี 2017–2018 ฟังก์ชันหลักหกฟังก์ชันของมัน ได้แก่ `totalSupply`, `balanceOf`, `transfer`, `transferFrom`, `approve` และ `allowance` เพียงพอสำหรับการออกและแลกเปลี่ยนโทเคนอย่างง่าย
 
-El origen de la plataforma Express Transaction Credits (EXTC) se remonta a 2018 y hunde sus raíces en la consideración de las limitaciones de los sistemas financieros tradicionales. Los plazos de transacción, la intervención de intermediarios y la falta de accesibilidad figuran entre los principales desafíos.
+อย่างไรก็ตาม สำหรับแพลตฟอร์มการชำระเงิน ERC-20 มีข้อบกพร่องที่ร้ายแรงถึงระดับการใช้งานจริง ฟังก์ชัน `transfer(address _to, uint256 _value)` โอนโทเคนไปยังที่อยู่ใดก็ได้ รวมถึงที่อยู่ของสัญญา โดยไม่กระตุ้นให้โค้ดใด ๆ ในสัญญาผู้รับทำงาน สัญญาที่ไม่ได้ถูกเขียนโปรแกรมมาเป็นการเฉพาะให้ติดตามการโอน ERC-20 ขาเข้าจะไม่มีทางตรวจจับการโอนเหล่านั้นได้ โทเคนที่ถูกส่งด้วยวิธีนี้จะถูกกักไว้อย่างถาวร โดยไม่มีกลไกใดในการกู้คืน
 
-Esta toma de conciencia impulsó el desarrollo de una plataforma de intercambio descentralizada destinada a eliminar estas barreras. Tiene como objetivo permitir a los usuarios realizar transacciones ultrarrápidas con monedas fiat, criptomonedas o tokens conformes.
+ชุมชน Ethereum ประเมินว่าโทเคน ERC-20 มูลค่าหลายสิบล้านดอลลาร์ได้สูญหายไปอย่างถาวรภายในกลางปี 2018 ผ่านกลไกนี้ การสร้างแพลตฟอร์มการชำระเงินที่การโอนอาจล้มเหลวอย่างเงียบ ๆ และทำลายเงินทุนของผู้ใช้นั้นเป็นสิ่งที่ยอมรับไม่ได้
 
-## Idea
+## โซลูชัน ERC-223: การโอนแบบอะตอมมิกพร้อมการแจ้งเตือน
 
-### Explorar el estándar ERC223 y la plataforma Express Transaction Credits
+ERC-223 ซึ่งถูกเสนอในระบบติดตามปัญหา (issue tracker) ของ Ethereum EIPs บน GitHub ได้แก้ปัญหาการสูญหายอย่างเงียบ ๆ โดยเปลี่ยนสิ่งที่การโอนโทเคนจำเป็นต้องทำ ภายใต้ ERC-223 ฟังก์ชัน `transfer(address _to, uint256 _value, bytes _data)` จะตรวจสอบว่าที่อยู่ผู้รับมีโค้ดสัญญาอยู่หรือไม่ หากมี การโอนจะเรียก `_to.tokenFallback(address _from, uint256 _value, bytes _data)`
 
-En el corazón de la plataforma EXTC se encuentra el estándar Ethereum Request for Comment (ERC) 223, una extensión del estándar de token ERC20. Esta elección estuvo dictada por la voluntad de reforzar la seguridad y la funcionalidad. La plataforma pretende abordar estos retos apoyándose en el estándar ERC-223 y proponiendo un marco completo para la próxima generación de tokens conformes a ERC-223.
+คุณสมบัติสำคัญคือ หากสัญญาผู้รับไม่ได้นำ `tokenFallback` มาใช้ ธุรกรรมการโอนทั้งหมดจะถูกย้อนกลับ (revert) ไม่มีโทเคนออกจากยอดคงเหลือของผู้ส่ง ไม่มีโทเคนถูกกักไว้ การโอนเป็นแบบอะตอมมิก กล่าวคือ มันจะเสร็จสมบูรณ์พร้อมกับการทำงานของโค้ดผู้รับ หรือไม่ก็ล้มเหลวทั้งหมดโดยที่สถานะไม่เปลี่ยนแปลง
 
-EXTC aprovecha las capacidades del estándar ERC223, garantizando la compatibilidad con diversos smart contracts y API dentro del ecosistema Ethereum. El token Express Transaction Credits (EXTC) se introdujo como representación de este estándar, con un conjunto definido de atributos.
+สำหรับ EXTC สิ่งนี้หมายความว่า:
 
-La idea era establecer un token dotado de funcionalidades robustas:
+- **การชำระเงินไปยังสัญญาอัจฉริยะปลอดภัยโดยการออกแบบ** สัญญาเอสโครว์ กระเป๋าเงินแบบหลายลายเซ็น และสัญญาการปล่อยกู้สามารถรับโทเคน EXTC ได้โดยไม่มีความเสี่ยงที่เงินทุนจะสูญหายอย่างไม่สามารถย้อนคืนได้
+- **ฟิลด์ `_data` เปิดทางให้ใส่ข้อมูลเมทาดาทาการชำระเงินได้อย่างสมบูรณ์** เพย์โหลดแบบไบต์สามารถบรรทุกหมายเลขอ้างอิงใบแจ้งหนี้ รหัสเส้นทาง หรือหลักฐานการปฏิบัติตามข้อกำหนด ซึ่งเป็นข้อมูลที่การโอน ERC-20 อย่างง่ายไม่สามารถสื่อสารได้
+- **ต้นทุนแก๊สสูงขึ้นเล็กน้อย** การเรียก `tokenFallback` เพิ่มแก๊สประมาณ 2,000–5,000 หน่วยต่อการโอนหนึ่งครั้ง ซึ่งเป็นภาระส่วนเพิ่มเพียงเล็กน้อยตามราคาแก๊สในปี 2018
 
-- **Nombre, símbolo y decimales**: la identidad del token se define por su nombre y su símbolo, mientras que el parámetro de decimales garantiza la precisión de la representación del valor.
-- **Oferta total**: la oferta total de EXTC es una métrica crucial, que representa la suma de todos los tokens en circulación.
-- **Saldo y transferencia**: los usuarios pueden comprobar su saldo de tokens y efectuar transferencias hacia otras direcciones.
-- **Conformidad ERC223**: el contrato del token respeta el estándar ERC223, ofreciendo funcionalidades avanzadas respecto a su predecesor ERC20.
+## สถาปัตยกรรมสัญญา EXTC
 
-## Impacto
+สัญญาโทเคน EXTC เป็นการนำไปใช้งานด้วยภาษา Solidity ที่จัดโครงสร้างรอบห้าโมดูล:
 
-### Redefinir las transacciones financieras
+### 1. อัตลักษณ์ของโทเคน
 
-El impacto de EXTC se extiende mucho más allá de sus atributos técnicos. Al facilitar préstamos instantáneos, pagos rápidos y depósitos exprés, la plataforma mejora considerablemente la eficiencia de las transacciones financieras. Atrás quedan los tiempos de espera para que los fondos se compensen o los préstamos sean aprobados. Con EXTC, las transacciones se producen en tiempo real, dando poder a particulares y empresas.
+```
+string public name = "Express Transaction Credits";
+string public symbol = "EXTC";
+uint8 public decimals = 18;
+```
 
-Esta plataforma abre la vía a los microcréditos, las transacciones transfronterizas y unos servicios financieros más accesibles para la población no bancarizada. Además, la naturaleza descentralizada de EXTC elimina los intermediarios, reduciendo las comisiones asociadas y reforzando la seguridad.
+ทศนิยมสิบแปดตำแหน่งทำให้ EXTC มีความแม่นยำในระดับต่ำกว่าเซนต์ ซึ่งสอดคล้องกับความละเอียดที่จำเป็นสำหรับกรณีการใช้งานแบบไมโครเพย์เมนต์และไมโครโลน สัญลักษณ์ `EXTC` คือตัวระบุบนเชนที่ลงทะเบียนไว้ในสัญญาโทเคน
 
-## Incentivos
+### 2. อุปทานรวมแบบคงที่
 
-### Estimular la adopción y la participación
+อุปทานรวมถูกกำหนด ณ ตอนติดตั้งสัญญาและไม่สามารถถูกเพิ่มปริมาณด้วยการสร้าง (mint) ในภายหลังได้ ตัวเลือกการออกแบบนี้ทำให้ EXTC มีลักษณะภาวะเงินฝืด กล่าวคือ โทเคนใดก็ตามที่ถูกนำออกจากการหมุนเวียนอย่างถาวรผ่านการเผา (burn) ที่ย้อนคืนไม่ได้ จะลดอุปทานลงโดยไม่มีการทดแทน แบบจำลองอุปทานคงที่เป็นมาตรฐานในการออกแบบโทเคนการชำระเงินปี 2018 ซึ่งสะท้อนสมมติฐานที่ได้รับอิทธิพลจาก Bitcoin ว่าแรงกดดันภาวะเงินฝืดเป็นคุณสมบัติที่ดีสำหรับสื่อกลางในการแลกเปลี่ยน
 
-El éxito de cualquier plataforma financiera depende de la adopción y la participación de los usuarios. EXTC no es una excepción. Para incentivar a los usuarios a comprometerse con la plataforma, se despliegan varias estrategias:
+### 3. ยอดคงเหลือและการโอนที่เป็นไปตามมาตรฐาน ERC-223
 
-- **Velocidad y eficiencia**: el incentivo principal reside en la rapidez y la eficiencia de la plataforma. Los usuarios que buscan pagos o préstamos rápidos se sienten naturalmente atraídos por un sistema que responde con prontitud a sus necesidades.
-- **Ahorro de costes**: unas comisiones reducidas en comparación con los sistemas financieros tradicionales hacen de EXTC una opción atractiva para particulares y empresas conscientes del coste.
-- **Accesibilidad mundial**: la naturaleza sin fronteras de la plataforma atrae a los usuarios que necesitan transacciones internacionales sin los inconvenientes del cambio.
-- **Utilidad del token**: los tokens EXTC superan el marco de las transacciones. Pueden integrarse en aplicaciones descentralizadas (DApps) e incluso servir como recompensas o garantías dentro del ecosistema.
-- **Inclusión financiera**: al dirigirse a la población no bancarizada, EXTC abre el acceso a servicios financieros a quienes antes estaban excluidos.
+ฟังก์ชันการโอนหลักนำอินเทอร์เฟซ ERC-223 มาใช้อย่างครบถ้วน การแมปยอดคงเหลือภายในติดตามการถือครองของแต่ละที่อยู่ ฟังก์ชันช่วย `isContract(address)` แยกแยะที่อยู่แบบ EOA (บัญชีที่ถือครองภายนอก) ออกจากที่อยู่ของสัญญา เพื่อพิจารณาว่าจำเป็นต้องเรียก `tokenFallback` หรือไม่
 
-En conclusión, la plataforma Express Transaction Credits (EXTC) representa un cambio de paradigma en el mundo de las transacciones financieras.
+### 4. การจ่ายเงินองค์กรแบบหลายลายเซ็น
 
-Al apoyarse en el estándar ERC223 y ofrecer una velocidad, una seguridad y una accesibilidad sin parangón, EXTC abre la vía a un futuro en el que los servicios financieros serán verdaderamente globales e inclusivos.
+กระบวนการทำงานการชำระเงินขององค์กรจำเป็นต้องมีการอนุมัติร่วม กล่าวคือ ผู้ลงนามเพียงคนเดียวไม่สามารถริเริ่มการจ่ายเงินที่สูงกว่าเกณฑ์ที่กำหนดได้โดยลำพัง สัญญา EXTC นำรูปแบบหลายลายเซ็นแบบสองในเอ็น (two-of-N) มาใช้:
 
-A medida que la plataforma gane impulso y adopción, su impacto en el panorama financiero promete ser revolucionario, trascendiendo fronteras y democratizando el acceso a las oportunidades económicas.
+1. ผู้ริเริ่มที่กำหนดไว้เสนอการโอน โดยระบุผู้รับ จำนวนเงิน และค่า nonce
+2. ผู้ลงนามร่วมยืนยันค่า nonce นั้น
+3. การโอนจะทำงานก็ต่อเมื่อลายเซ็นทั้งสองถูกบันทึกบนเชนแล้วเท่านั้น
 
-Ya sea usted entusiasta de la tecnología, profesional de las finanzas o simplemente curioso del futuro de las finanzas, EXTC es una plataforma que invita a la exploración y al compromiso.
+สิ่งนี้ขจัดความเสี่ยงจากจุดล้มเหลวจุดเดียวสำหรับบัญชีองค์กร ในขณะที่ยังคงรักษากระบวนการอนุมัติทั้งหมดไว้บนเชนและตรวจสอบได้ โดยไม่ต้องมีตัวกลางสำนักหักบัญชี
+
+### 5. คำสั่งชำระเงินประจำที่ล็อกตามความสูงของบล็อก
+
+การชำระเงินที่เกิดขึ้นเป็นประจำ เช่น เงินเดือน ค่าสมาชิก และการชำระคืนเงินกู้ตามกำหนด จำเป็นต้องมีพื้นฐาน (primitive) สำหรับคำสั่งชำระเงินประจำ EXTC นำสิ่งนี้มาใช้ในรูปแบบการล็อกตามเวลา นั่นคือ ระเบียนการโอนถูกจัดเก็บไว้ในสัญญาพร้อมพารามิเตอร์ `releaseBlock` การโอนจะไม่สามารถทำงานได้จนกว่าความสูงของบล็อก Ethereum จะไปถึง `releaseBlock`
+
+การใช้ความสูงของบล็อกเป็นตัวแทนของเวลาเป็นตัวเลือกที่สมเหตุสมผลในปี 2018 Ethereum ตั้งเป้าช่วงเวลาต่อบล็อกไว้ที่ 15 วินาที ทำให้ความสูงของบล็อกเป็นตัวแทนที่เชื่อถือได้พอสมควรสำหรับเวลาตามนาฬิกาจริงภายในช่วงไม่กี่นาที การประทับเวลาแบบสัมบูรณ์ (`block.timestamp`) นั้นมีให้ใช้ได้ แต่เสี่ยงต่อการถูกนักขุดปรับแต่งภายในกรอบ ±900 วินาที ทำให้ความสูงของบล็อกเป็นข้อมูลอ้างอิงที่ปลอดภัยกว่าสำหรับสัญญาทางการเงิน
+
+## กลไกสินเชื่อทันทีที่ค้ำประกันด้วยหลักประกัน
+
+พื้นฐานการปล่อยกู้ของ EXTC เป็นองค์ประกอบที่ซับซ้อนที่สุด การออกแบบมีดังนี้:
+
+1. **ผู้กู้ล็อกหลักประกัน** ผู้กู้เรียก `lockCollateral(uint256 _collateralAmount)` เพื่อโอนโทเคน EXTC ไปยังเอสโครว์ของสัญญาการปล่อยกู้ผ่าน `tokenFallback` ของ ERC-223
+2. **การตรวจสอบอัตราส่วนสินเชื่อต่อมูลค่าหลักประกัน** สัญญาอ่านอัตราส่วน LTV ที่กำหนดไว้ล่วงหน้า (เช่น 50%) และคำนวณวงเงินกู้สูงสุดเทียบกับหลักประกันที่ถูกล็อกไว้
+3. **การจ่ายเงินกู้แบบอะตอมมิก** หากหลักประกันเป็นไปตามเกณฑ์ขั้นต่ำ สัญญาจะโอนวงเงินกู้ไปยังที่อยู่ของผู้กู้ทันที ไม่มีคิวการพิจารณาสินเชื่อ ไม่มีคณะกรรมการสินเชื่อ ไม่มีความล่าช้าในการชำระบัญชี
+4. **การชำระคืนและการปลดล็อก** เมื่อมีการชำระคืน ทั้งเงินต้นและอัตราดอกเบี้ยคงที่ สัญญาจะปลดล็อกหลักประกันคืนให้แก่ผู้กู้ การไม่ชำระคืนภายใน `releaseBlock` จะกระตุ้นให้เกิดการบังคับขายอัตโนมัติ นั่นคือ สัญญาจะโอนหลักประกันไปยังที่อยู่ที่ผู้ให้กู้กำหนดไว้
+
+กระบวนการทั้งหมดถูกบังคับใช้ด้วยโค้ดของสัญญา ทั้งสองฝ่ายไม่จำเป็นต้องไว้วางใจกันหรือพึ่งพาตัวกลางในการบังคับใช้เงื่อนไข
+
+## สิ่งที่การทดลองเผยให้เห็น
+
+สถาปัตยกรรมสัญญา EXTC มีความสอดคล้องกันในเชิงเทคนิค ERC-223 แก้ไขข้อบกพร่องด้านความปลอดภัยที่ร้ายแรงที่สุดของ ERC-20 พื้นฐานแบบหลายลายเซ็นและการล็อกตามเวลาสอดคล้องโดยตรงกับกระบวนการทำงานการชำระเงินขององค์กรจริง กลไกสินเชื่อที่ค้ำประกันด้วยหลักประกันแสดงให้เห็นว่าการปล่อยกู้แบบมีหลักประกันสามารถทำงานอัตโนมัติได้อย่างสมบูรณ์และบังคับใช้ตัวเองบนเชนได้
+
+ข้อจำกัดสองประการปรากฏชัดในทางปฏิบัติ:
+
+**ต้นทุนแก๊ส** ในช่วงจุดสูงสุดของเดือนมกราคม 2018 ราคาแก๊สของ Ethereum ขึ้นไปถึง 50–100 gwei ทำให้การโอนโทเคน ERC-223 เพียงครั้งเดียวมีต้นทุน 0.50–2.00 ดอลลาร์ สำหรับไมโครเพย์เมนต์หรือการโอนเงินมูลค่า 10–50 ดอลลาร์ ค่าธรรมเนียมเหล่านั้นสูงเกินกว่าจะยอมรับได้
+
+**ปริมาณงานที่รองรับได้ (throughput)** ขีดจำกัดแก๊สต่อบล็อกของเมนเน็ต Ethereum ในช่วงต้นปี 2018 อยู่ที่ประมาณ 8 ล้านหน่วยแก๊ส การโอนแบบ ERC-223 หนึ่งครั้งใช้แก๊สราว 50,000–80,000 หน่วย ดังนั้นเครือข่ายจึงสามารถประมวลผลการโอนโทเคน EXTC ได้ประมาณ 100–160 รายการต่อบล็อก หรือราว 7–11 รายการต่อวินาทีที่ช่วงเวลาต่อบล็อก 15 วินาที ขนาดของเครือข่ายการชำระเงินที่ระดับหลายร้อยหรือหลายพันธุรกรรมต่อวินาทีนั้นไม่สามารถทำได้บน Ethereum สาธารณะหากปราศจากโครงสร้างพื้นฐาน Layer-2 ซึ่งในเวลานั้นยังไม่มีอยู่ในรูปแบบที่ใช้งานจริง
+
+สิ่งเหล่านี้เป็นข้อจำกัดด้านโครงสร้างพื้นฐาน ไม่ใช่ข้อบกพร่องในการออกแบบของ EXTC ตรรกะของสัญญาถูกต้อง แต่บล็อกเชนที่รองรับอยู่เบื้องหลังยังไม่สามารถรองรับปริมาณการชำระเงินที่ระดับอุตสาหกรรมการเงินได้
+
+## แนวคิดที่ไปถึงระดับใช้งานจริง
+
+รูปแบบการออกแบบหลายอย่างจาก EXTC ได้รับการพิสูจน์ยืนยันโดยการพัฒนาในเวลาต่อมา:
+
+**การโอนโทเคนแบบอะตอมมิกพร้อมการแจ้งเตือนผู้รับ** ซึ่งเป็นคุณสมบัติหลักของ ERC-223 กลายเป็นรากฐานของ ERC-777 (2019) ที่ต่อยอดแบบจำลองการแจ้งเตือนและถูกนำไปผนวกเข้ากับโปรโตคอลการปล่อยกู้ DeFi ในภายหลัง รูปแบบ `tokenFallback` ปรากฏอยู่ทั่วไปในสถาปัตยกรรม DeFi สมัยใหม่
+
+**การอนุมัติแบบหลายลายเซ็นสำหรับการจ่ายเงินองค์กร** ซึ่งเป็นรูปแบบที่กำหนดให้ต้องมีลายเซ็นบนเชนหลายรายการก่อนการทำงาน กลายเป็นแบบจำลองมาตรฐานสำหรับการบริหารคลังของ DAO และโซลูชันการเก็บรักษาสินทรัพย์ระดับสถาบัน Gnosis Safe ซึ่งเปิดตัวในปี 2018 ทำให้รูปแบบนี้เป็นที่นิยมในวงกว้าง
+
+**สินเชื่อทันทีที่ค้ำประกันด้วยหลักประกันโดยไม่มีตัวกลาง** ซึ่งเป็นกลไกของการล็อกหลักประกันไว้ในเอสโครว์และปล่อยเงินกู้แบบอะตอมมิก คือการออกแบบพื้นฐานของโปรโตคอลการปล่อยกู้ DeFi เช่น Compound (2018) และ Aave (2020)
+
+**การล็อกตามเวลาด้วยความสูงของบล็อกสำหรับการชำระเงินตามกำหนด** ซึ่งเป็นรูปแบบของการฝังจังหวะเวลาการทำงานในอนาคตไว้ในสัญญา ปรากฏอยู่ในสัญญาการทยอยปลดล็อกโทเคน (vesting) ข้อเสนอด้านธรรมาภิบาลแบบหน่วงเวลา และการออกแบบออราเคิลราคาเฉลี่ยถ่วงน้ำหนักตามเวลา (TWAP) ทั่วทั้งระบบนิเวศ DeFi
+
+การทดลอง EXTC ไม่ได้ไปถึงระดับการใช้งานจริงในเชิงปริมาณ โครงสร้างพื้นฐานที่จำเป็นต่อการทำให้การออกแบบนี้เป็นไปได้ต้องใช้เวลาอีกสามถึงห้าปีจึงจะเติบโตเต็มที่ แต่คำถามด้านการออกแบบที่มันตั้งขึ้นเป็นคำถามที่ถูกต้องสำหรับปี 2018
+
+## คำถามที่พบบ่อย
+
+**เหตุใด ERC-223 จึงไม่เคยถูกนำมาใช้เป็นมาตรฐานโทเคนหลัก ทั้งที่แก้ไขข้อบกพร่องของ ERC-20 ได้?**
+
+ERC-223 กำหนดให้สัญญาผู้รับต้องนำ `tokenFallback` มาใช้ ซึ่งทำลายความเข้ากันได้ย้อนหลังกับสัญญานับพันที่ถูกติดตั้งไว้แล้วสำหรับโทเคน ERC-20 ระบบนิเวศ ERC-20 ที่มีอยู่เดิมนั้นใหญ่เกินกว่าจะย้ายระบบได้ ข้อเสนอในเวลาต่อมา โดยเฉพาะ ERC-777 และ ERC-1363 ได้แก้ปัญหาเดียวกันด้วยการแลกเปลี่ยนด้านความเข้ากันได้ที่ต่างออกไป แต่ ERC-20 ยังคงครองตลาดต่อไปด้วยการผสมผสานระหว่างผลกระทบเชิงเครือข่าย (network effects) และการนำรูปแบบโทเคนแบบห่อหุ้ม (wrapped token) มาใช้ ซึ่งหลีกเลี่ยงสถานการณ์การสูญหายอย่างเงียบ ๆ ได้
+
+**เกิดอะไรขึ้นกับโทเคนและแพลตฟอร์ม EXTC?**
+
+EXTC เป็นโครงการพิสูจน์แนวคิด (proof-of-concept) และโครงการวิจัยระยะแรกจากปี 2018 ตลาด ICO และโทเคนการชำระเงินในวงกว้างหดตัวลงอย่างรวดเร็วตลอดช่วงปี 2018–2019 เมื่อข้อจำกัดด้านความสามารถในการขยายตัวของ Ethereum และความไม่แน่นอนด้านกฎระเบียบปรากฏชัดขึ้น แนวคิดที่ฝังอยู่ในการออกแบบ EXTC กลับมาปรากฏอีกครั้งในโปรโตคอลรุ่นหลังที่สามารถเข้าถึงโครงสร้างพื้นฐาน Layer-2 เครื่องมือที่ดีกว่า และกรอบกฎระเบียบที่ชัดเจนกว่า
+
+**แบบจำลองสินเชื่อค้ำประกันของ EXTC เปรียบเทียบกับโปรโตคอล DeFi สมัยใหม่อย่าง Aave อย่างไร?**
+
+กลไกหลักเหมือนกัน คือ ล็อกหลักประกัน รับเงินกู้ที่คำนวณตามอัตราส่วน LTV ชำระคืนหรือเผชิญการบังคับขาย ความแตกต่างมีดังนี้: (1) โปรโตคอล DeFi สมัยใหม่ใช้ฟีดราคาจากออราเคิลเพื่อกำหนด LTV แบบพลวัตแทนอัตราส่วนคงที่ (2) ใช้อัตราดอกเบี้ยเชิงอัลกอริทึมที่ตอบสนองต่อการใช้งานพูล (3) ทำงานบนเครือข่าย Layer-2 ที่มีต้นทุนแก๊สต่ำกว่าเมนเน็ตปี 2018 ราว 10–100 เท่า (4) Aave และ Compound ผ่านการตรวจสอบความปลอดภัยอย่างเป็นทางการและถือครองสภาพคล่องหลายพันล้านดอลลาร์ ซึ่งเป็นการยืนยันเชิงประจักษ์ว่าแบบจำลองพื้นฐานนี้มีความมั่นคง
+
+**ข้อจำกัดด้านเวอร์ชันของ Solidity ในช่วงต้นปี 2018 มีอะไรบ้าง?**
+
+สัญญา EXTC ถูกเขียนขึ้นสำหรับ Solidity 0.4.x ซึ่งเป็นเวอร์ชันหลักในช่วงต้นปี 2018 Solidity 0.4 ขาดคุณสมบัติด้านความปลอดภัยหลายอย่างที่ถูกเพิ่มเข้ามาในเวอร์ชันหลัง ได้แก่ การตรวจสอบการล้นของจำนวนเต็ม (เพิ่มโดยอัตโนมัติใน 0.8.0) การใช้ `require`/`revert` พร้อมข้อความแสดงข้อผิดพลาด (มีข้อจำกัดใน 0.4) และการกำหนดขอบเขตการมองเห็นของฟังก์ชันอย่างชัดเจน (ค่าเริ่มต้นคือ public ใน 0.4) สัญญานี้พึ่งพาไลบรารี SafeMath ของ OpenZeppelin เพื่อป้องกันการล้นของค่า ซึ่งเป็นรูปแบบที่ใช้กันทั่วไปก่อนที่คอมไพเลอร์จะบังคับใช้สิ่งนี้ในตัว
+
+## เอกสารอ้างอิง
+
+- Ethereum Foundation, (2015). [EIP-20: มาตรฐานโทเคน ⧉](https://eips.ethereum.org/EIPS/eip-20 "EIP-20 มาตรฐานโทเคน").
+- Dexaran, Ethereum GitHub, (2017). [ข้อเสนอมาตรฐานโทเคน ERC-223 ⧉](https://github.com/ethereum/EIPs/issues/223 "การอภิปราย ERC-223").
+- OpenZeppelin, (2018). [OpenZeppelin Contracts: SafeMath ⧉](https://github.com/OpenZeppelin/openzeppelin-contracts "OpenZeppelin Contracts").
+- Ethereum Foundation, (2014). [ไวต์เปเปอร์ Ethereum ⧉](https://ethereum.org/whitepaper "ไวต์เปเปอร์ Ethereum").

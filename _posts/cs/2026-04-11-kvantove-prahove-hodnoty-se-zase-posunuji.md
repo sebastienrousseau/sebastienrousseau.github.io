@@ -1,133 +1,126 @@
 ---
-title: "Los umbrales cuánticos vuelven a moverse"
-subtitle: "Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía."
-description: "Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía."
+title: "Kvantové prahové hodnoty se zase posunují"
+subtitle: "Nový článek naznačuje, že Shorův algoritmus by mohl běžet na pouhých 10 000 qubitech. Důsledky pro kryptografii je těžké přehlédnout."
+description: "Shorův algoritmus může nyní běžet na pouhých 10 000 qubitech. RSA, ECC i časový plán postkvantové migrace se posouvají dopředu. Zde je proč."
 date: "April 11, 2026"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp"
-banner_alt: "Esquema del umbral de qubits para el algoritmo de Shor. Placa de circuito de computación cuántica con reflejos azules"
-keywords: "algoritmo de Shor, qubits, computación cuántica, ECC, RSA-2048, átomos neutros reconfigurables, códigos de corrección de errores, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC, criptografía postcuántica"
+banner_alt: "Diagram prahové hodnoty qubitů pro Shorův algoritmus. Deska plošných spojů kvantového počítače s modrými světelnými vzory"
+keywords: "kvantové počítání, Shorův algoritmus, 10000 qubitů, postkvantová kryptografie, RSA-2048, kryptografie eliptických křivek, qubity z neutrálních atomů, kvantová korekce chyb, kryptografická agilita, časová osa kvantové hrozby"
 ---
 
+## Kvantové prahové hodnoty se zase posunují
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+Nový článek naznačuje, že Shorův algoritmus by mohl běžet na pouhých 10 000 qubitech. Prahová hodnota pro kryptograficky relevantní kvantové počítání klesá rychleji, než většina předpokládala.
 
-**Klíčové body**
-
-## Los umbrales cuánticos vuelven a moverse
-
-Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía.
-
-> **TL;DR.** Un nuevo artículo propone que el algoritmo de Shor pueda ejecutarse con solo 10.000 qubits físicos —cerca de cien veces menos que las estimaciones consensuadas anteriores—. La barrera ya no es puramente teórica: es de ingeniería. Los estándares de criptografía postcuántica ya están finalizados; la prioridad ahora es acelerar la migración.
+> **Klíčové poznatky**
 >
-> **Conclusiones clave**
->
-> - Un nuevo artículo propone que el algoritmo de Shor pueda ejecutarse con solo **10.000 qubits físicos**, alrededor de cien veces menos que las estimaciones consensuadas anteriores.
-> - La reducción está impulsada por tres avances convergentes: códigos de corrección de errores cuánticos de alto rendimiento, retículos de átomos neutros reconfigurables y paralelismo aumentado.
-> - La amenaza no es uniforme. La **criptografía de curva elíptica (ECC)** es más vulnerable a bajos números de qubits; RSA-2048 requiere tiempos de ejecución significativamente más largos a escalas comparables.
-> - Se trata de una **proyección teórica**, no de una demostración operativa. Sigue existiendo una brecha de ingeniería sustancial entre el hardware actual y la ejecución tolerante a fallos a esa escala.
-> - Los estándares de criptografía postcuántica ya están finalizados. La prioridad ahora es **acelerar la migración**, no esperar a que aparezca un sistema cuántico.
+> - Nový článek navrhuje, že Shorův algoritmus by mohl běžet na pouhých **10 000 fyzických qubitech**. Přibližně stokrát méně než dřívější konsenzuální odhady.
+> - Toto snížení pohánějí tři sbíhající se pokroky: kvantové kódy pro korekci chyb s vysokou rychlostí, rekonfigurovatelná pole neutrálních atomů a zvýšený paralelismus.
+> - Hrozba není rovnoměrná. **Kryptografie eliptických křivek (ECC)** je zranitelnější při nižších počtech qubitů; RSA-2048 vyžaduje při srovnatelných rozsazích výrazně delší doby běhu.
+> - Jde o **teoretickou projekci**, nikoli o funkční demonstraci. Mezi současným hardwarem a provozem odolným vůči chybám v tomto rozsahu zůstává značná inženýrská mezera.
+> - Postkvantové kryptografické standardy jsou již finalizovány. Prioritou je nyní **zrychlit migraci**. Ne čekat, až se kvantový systém objeví.
 
-## Una hipótesis familiar, ahora bajo presión
+## Známý předpoklad, nyní pod tlakem
 
-A lo largo de la última década, las discusiones en torno a la computación cuántica y la criptografía han seguido un arco familiar. Las máquinas cuánticas eran reconocidas como teóricamente potentes, pero consideradas impracticables a gran escala. Romper los sistemas criptográficos modernos habría exigido millones de qubits físicos, y el calendario permanecía cómodamente lejano. Esta hipótesis está ahora bajo presión seria.
+Během uplynulého desetiletí sledovaly diskuse o kvantovém počítání a kryptografii známý oblouk. Kvantové stroje byly uznávány jako teoreticky výkonné, avšak považovány za nepraktické ve velkém rozsahu. Prolomení moderních kryptografických systémů by vyžadovalo miliony fyzických qubitů a časový plán zůstával pohodlně vzdálený. Tento předpoklad je nyní pod vážným tlakem.
 
-Un artículo reciente, [«Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits» ⧉](https://arxiv.org/pdf/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits (PDF)"), propone algo más consecuente que un simple avance. Sugiere que el umbral de la computación cuántica criptográficamente relevante podría ser inferior en un orden de magnitud a lo que se creía. No millones de qubits, sino decenas de miles. La distinción importa, y la dirección que implica es difícil de ignorar.
+Nedávný článek, [Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits ⧉](https://arxiv.org/pdf/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits (PDF)"), navrhuje něco závažnějšího než jediný průlom. Naznačuje, že prahová hodnota pro kryptograficky relevantní kvantové výpočty může být o řád nižší, než se dříve věřilo. Ne miliony qubitů, ale desítky tisíc. Tento rozdíl je podstatný a směr, který naznačuje, je těžké přehlédnout.
 
-## La convergencia que impulsa este desplazamiento: corrección de errores, arquitectura y paralelismo
+## Souběh, který pohání tento posun: korekce chyb, architektura a paralelismus
 
-El resultado no emerge de un descubrimiento único. Refleja una convergencia de mejoras en varias capas de la pila de la computación cuántica que, tomadas juntas, desplazan la frontera de lo que parece factible.
+Tento výsledek nevychází z jediného objevu. Odráží souběh zlepšení napříč několika vrstvami zásobníku kvantového počítání, která společně posouvají hranici toho, co se jeví jako proveditelné.
 
-La primera mejora se refiere a la corrección de errores. Los enfoques tradicionales exigían grandes sobrecostes —a menudo cientos de qubits físicos para representar un solo qubit lógico—. El artículo se apoya en cambio en códigos de corrección de errores cuánticos de alto rendimiento, que reducen significativamente ese sobrecoste ([Emergent Mind ⧉](https://www.emergentmind.com/papers/2603.28627 "Shor's Algorithm with 10000 Atomic Qubits")). La segunda se refiere a la arquitectura. El sistema está construido sobre retículos reconfigurables de átomos neutros, que pueden reorganizarse durante el cálculo para permitir una conectividad más flexible y una ejecución más eficiente ([The Quantum Insider ⧉](https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/ "Oratomic Launches to Build Utility-scale Quantum Computers")). La tercera es el paralelismo: aumentar el número de qubits permite ejecutar más operaciones simultáneamente, reduciendo el tiempo de ejecución global.
+První zlepšení se týká korekce chyb. Tradiční přístupy vyžadovaly velkou režii, často stovky fyzických qubitů k reprezentaci jediného logického qubitu. Článek se místo toho opírá o kvantové kódy pro korekci chyb s vysokou rychlostí, které tuto režii výrazně snižují. ([Emergent Mind ⧉](https://www.emergentmind.com/papers/2603.28627 "Shor's Algorithm with 10000 Atomic Qubits")) Druhé se týká architektury. Systém je postaven na rekonfigurovatelných polích neutrálních atomů, která lze během výpočtu přeuspořádat, což umožňuje pružnější propojení a efektivnější provádění. ([The Quantum Insider ⧉](https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/ "Oratomic Launches to Build Utility-scale Quantum Computers")) Třetím je paralelismus: zvýšení počtu qubitů umožňuje souběžně provádět více operací, což zkracuje celkovou dobu provádění.
 
-Ninguna de estas ideas es nueva aisladamente. Combinadas, sin embargo, redefinen lo que antes se trataba como un límite duro.
+Žádná z těchto myšlenek není sama o sobě nová. V kombinaci však mění to, co bylo dříve považováno za pevnou hranici.
 
-## De millones a decenas de miles: lo que las cifras significan realmente
+## Od milionů k desítkám tisíc: co čísla ve skutečnosti znamenají
 
-Durante años, la estimación consensuada para ejecutar el algoritmo de Shor a escalas criptográficas exigía millones de qubits físicos. El nuevo análisis sugiere que, bajo ciertas hipótesis, ese número podría caer a alrededor de 10.000 ([arXiv ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits")). Esta cifra, sin embargo, no es la imagen completa.
+Po léta vyžadoval konsenzuální odhad pro spuštění Shorova algoritmu v kryptografických rozsazích miliony fyzických qubitů. Nová analýza naznačuje, že za určitých předpokladů by toto číslo mohlo klesnout přibližně na 10 000. ([arXiv ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits")) Toto číslo však není úplným obrazem.
 
-En el extremo bajo de ese rango, los tiempos de ejecución siguen siendo largos. Factorizar RSA-2048 al número mínimo de qubits podría aún llevar años de funcionamiento continuo. Una ejecución más rápida requiere más qubits, potencialmente decenas de miles. La relación entre el número de qubits y el tiempo de ejecución no es lineal, y el artículo se cuida de presentar esto como un espectro en lugar de un umbral fijo. Lo que cambia es la dirección: la barrera ya no es puramente teórica. Es ahora una cuestión de ingeniería.
+Na spodním konci tohoto rozsahu zůstávají doby běhu dlouhé. Faktorizace RSA-2048 při minimálních počtech qubitů by stále mohla trvat roky nepřetržitého provozu. Rychlejší provádění vyžaduje více qubitů, potenciálně v řádu desítek tisíc. Vztah mezi počtem qubitů a dobou běhu není lineární a článek dbá na to, aby to prezentoval jako spektrum, nikoli jako pevnou prahovou hodnotu. Co se mění, je směr: bariéra již není čistě teoretická. Nyní je to otázka inženýrství.
 
-### Antiguas hipótesis frente a nuevas realidades
+### Staré předpoklady vs. nové skutečnosti
 
-| Dimensión | Antigua hipótesis | Nueva realidad |
+| Dimenze | Starý předpoklad | Nová skutečnost |
 |---|---|---|
-| Qubits físicos requeridos (algoritmo de Shor) | ~1.000.000+ | ~10.000–26.000 |
-| Tiempo para romper RSA-2048 (al mínimo de qubits) | Inviable esta década | Años (con 10.000 qubits); más rápido con más |
-| Tiempo para romper ECC-256 | Inviable esta década | Días (estimado con ~26.000 qubits) |
-| Paradigma de hardware dominante | Qubits superconductores | Retículos de átomos neutros reconfigurables |
-| Sobrecoste de corrección de errores | Cientos de qubits físicos por qubit lógico | Reducido significativamente mediante códigos de alto rendimiento |
-| Naturaleza de la barrera | Teórica | Ingeniería |
-| Urgencia de migración | Planificación a largo plazo | Despliegue activo requerido ahora |
+| Požadované fyzické qubity (Shorův algoritmus) | ~1 000 000+ | ~10 000–26 000 |
+| Doba k prolomení RSA-2048 (při minimu qubitů) | V tomto desetiletí neproveditelné | Roky (při 10 tis. qubitech); rychleji s více |
+| Doba k prolomení ECC-256 | V tomto desetiletí neproveditelné | Dny (odhad při ~26 tis. qubitech) |
+| Dominantní hardwarové paradigma | Supravodivé qubity | Rekonfigurovatelná pole neutrálních atomů |
+| Režie korekce chyb | Stovky fyzických qubitů na logický qubit | Výrazně snížena pomocí kódů s vysokou rychlostí |
+| Povaha bariéry | Teoretická | Inženýrská |
+| Naléhavost migrace | Dlouhodobé plánování | Nyní vyžadováno aktivní nasazení |
 
-*Fuente: análisis a partir de [arXiv:2603.28627 ⧉](https://arxiv.org/abs/2603.28627) y de la literatura anterior.*
+*Zdroj: Analýza založená na [arXiv:2603.28627 ⧉](https://arxiv.org/abs/2603.28627) a předchozí literatuře.*
 
-## Tiempo, escala y vulnerabilidad desigual de los sistemas criptográficos
+## Čas, rozsah a nerovnoměrná zranitelnost kryptografických systémů
 
-Una de las contribuciones más significativas del artículo es el matiz que introduce en torno al tiempo. La ventaja cuántica no llega de golpe. Existe a lo largo de un espectro determinado por la escala del sistema y la naturaleza del objetivo criptográfico.
+Jedním z významnějších přínosů článku je odstín, který vnáší do otázky času. Kvantová výhoda nepřichází naráz. Existuje podél spektra určeného rozsahem systému a povahou kryptografického cíle.
 
-Con alrededor de 26.000 qubits, los autores estiman que romper la criptografía de curva elíptica podría llevar unos días en condiciones favorables ([arXiv ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits")). Para RSA-2048, los plazos son considerablemente más largos. Esta asimetría es importante. Sugiere que distintos sistemas criptográficos pueden volverse vulnerables en momentos diferentes, en lugar de simultáneamente, y que la transición hacia los estándares postcuánticos probablemente no será un acontecimiento único con una fecha límite única.
+Přibližně s 26 000 qubity autoři odhadují, že prolomení kryptografie eliptických křivek by za příznivých podmínek mohlo trvat dny. ([arXiv ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits")) Pro RSA-2048 jsou časové plány podstatně delší. Tato asymetrie je důležitá. Naznačuje, že různé kryptografické systémy se mohou stát zranitelnými v různých okamžicích, nikoli současně, a že přechod k postkvantovým standardům pravděpodobně nebude jedinou událostí s jediným termínem.
 
-Este esquema es coherente con una cobertura más amplia. Análisis de los últimos meses sugieren que sistemas cuánticos capaces de desafiar el cifrado ampliamente utilizado podrían emerger antes del final de la década ([Nature ⧉](https://www.nature.com/articles/d41586-026-01054-1 "Quantum-computing breakthroughs pose risks to encryption")). Los gobiernos y los organismos de normalización planifican ya las transiciones a la criptografía postcuántica, con calendarios de implementación que se extienden hasta la década de 2030 ([The Quantum Insider ⧉](https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/ "Oratomic Launches to Build Utility-scale Quantum Computers")). La discusión ha pasado de «si» a «cuándo».
+Tento vzorec je v souladu s širším zpravodajstvím. Analýzy z posledních měsíců naznačují, že kvantové systémy schopné ohrozit široce používané šifrování by se mohly objevit před koncem desetiletí. ([Nature ⧉](https://www.nature.com/articles/d41586-026-01054-1 "Quantum-computing breakthroughs pose risks to encryption")) Vlády a normalizační orgány již plánují přechody na postkvantovou kryptografii, s harmonogramy implementace sahajícími do 30. let. ([The Quantum Insider ⧉](https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/ "Oratomic Launches to Build Utility-scale Quantum Computers")) Diskuse se posunula od „zda“ k „kdy“.
 
-## La brecha de ingeniería que persiste
+## Inženýrská mezera, která přetrvává
 
-Conviene ser preciso sobre lo que representa este artículo. Es una proyección, no una demostración. Los sistemas propuestos dependen de hipótesis sobre tasas de error, estabilidad del hardware y comportamiento a la escala que aún no han sido validadas a la escala requerida. Los experimentos actuales operan en el nivel de cientos a algunos miles de qubits, no de decenas de miles funcionando de manera tolerante a fallos durante periodos prolongados ([Phys.org ⧉](https://phys.org/news/2026-04-quantum-built-qubits-team.html "Useful quantum computers could be built with as few as 10,000 qubits")).
+Je důležité být přesný v tom, co tento článek představuje. Je to projekce, nikoli demonstrace. Navrhované systémy závisí na předpokladech o chybovosti, stabilitě hardwaru a chování při škálování, které dosud nebyly ověřeny v požadovaném rozsahu. Současné experimenty pracují na úrovni stovek až nižších tisíců qubitů, nikoli desítek tisíc pracujících odolně vůči chybám po delší dobu. ([Phys.org ⧉](https://phys.org/news/2026-04-quantum-built-qubits-team.html "Useful quantum computers could be built with as few as 10,000 qubits"))
 
-Sigue existiendo una brecha de ingeniería sustancial. El camino de un modelo teórico convincente a un sistema funcional capaz de operación sostenida y tolerante a fallos a esa escala implica desafíos que aún no se comprenden plenamente, y mucho menos se resuelven. Lo que ha cambiado no es la proximidad de una máquina operativa, sino la credibilidad del objetivo. La brecha se estrecha, y la dirección del progreso es coherente.
+Zůstává značná inženýrská mezera. Cesta od přesvědčivého teoretického modelu k funkčnímu systému schopnému trvalého provozu odolného vůči chybám v tomto rozsahu zahrnuje výzvy, které dosud nejsou plně pochopeny, natož vyřešeny. Co se změnilo, není blízkost funkčního stroje, ale věrohodnost cíle. Mezera se zužuje a směr pokroku je konzistentní.
 
-## Por qué el calendario que se comprime exige atención ahora
+## Proč zkracující se časový plán vyžaduje pozornost už teď
 
-La importancia de este trabajo no es que la criptografía vaya a romperse a corto plazo. Es que el calendario se comprime de manera que afecta a las decisiones tomadas hoy. Los sistemas de seguridad se diseñan con largos ciclos de vida en mente. Los datos cifrados hoy pueden tener que permanecer confidenciales durante décadas. Las decisiones de infraestructura tomadas este año serán difíciles de invertir en una ventana de cinco años. Si las capacidades cuánticas llegan antes de lo esperado, estas hipótesis se vuelven frágiles.
+Význam této práce nespočívá v tom, že kryptografie bude prolomena v blízké době. Je v tom, že se časový plán zkracuje způsoby, které ovlivňují rozhodnutí přijímaná dnes. Bezpečnostní systémy jsou navrhovány s ohledem na dlouhé životní cykly. Data zašifrovaná dnes mohou potřebovat zůstat důvěrná po desetiletí. Rozhodnutí o infrastruktuře přijatá letos bude obtížné zvrátit v horizontu pěti let. Pokud kvantové schopnosti přijdou dříve, než se očekává, stanou se tyto předpoklady křehkými.
 
-Por eso la criptografía postcuántica ya se está desplegando en los sectores críticos. No porque la amenaza sea inmediata, sino porque la transición lleva tiempo y el coste de llegar tarde es asimétrico. Hay un patrón recurrente en la historia de la informática: el progreso parece lento hasta que de repente deja de serlo. Lo que comienza como una mejora teórica se convierte en una restricción práctica, y lo que antes se descartaba como lejano se convierte en algo que hay que planificar. La computación cuántica podría seguir exactamente esta trayectoria, no mediante un único avance dramático, sino mediante reducciones regulares de coste, complejidad y escala.
+Proto je postkvantová kryptografie již nasazována napříč kritickými sektory. Ne proto, že by hrozba byla bezprostřední, ale protože přechod vyžaduje čas a náklady na pozdní reakci jsou asymetrické. V historii výpočetní techniky se opakuje jeden vzorec: pokrok se zdá pomalý, dokud náhle není. To, co začíná jako teoretické zlepšení, se stává praktickým omezením, a to, co bylo kdysi odmítáno jako vzdálené, se stává něčím, s čím je třeba počítat. Kvantové počítání může sledovat přesně tuto trajektorii, ne prostřednictvím jediného dramatického průlomu, ale prostřednictvím stálého snižování nákladů, složitosti a rozsahu.
 
-## Lo que esto significa por sector: una guía práctica
+## Co to znamená podle odvětví: praktický průvodce
 
-Las implicaciones de esta investigación no son uniformes en todos los sectores. La respuesta apropiada depende del tipo de activos criptográficos en juego, de la sensibilidad y longevidad de los datos implicados, y del ritmo al que evolucionan las expectativas normativas.
+Důsledky tohoto výzkumu nejsou napříč odvětvími rovnoměrné. Vhodná reakce závisí na typu ohrožených kryptografických aktiv, na citlivosti a životnosti dotčených dat a na tempu, jakým se posouvají regulační očekávání.
 
-### Servicios financieros y FinTech
+### Finanční služby a FinTech
 
-Las instituciones financieras afrontan un riesgo compuesto: poseen datos sensibles a largo plazo, operan sobre infraestructuras con ciclos de reemplazo lentos y están sometidas a un escrutinio normativo creciente en torno a la resiliencia criptográfica. ECC se utiliza ampliamente en las conexiones TLS, la autenticación móvil y las firmas digitales en los rails de pago: la categoría criptográfica que el artículo identifica como la más vulnerable a bajos números de qubits. Las instituciones que aún no han comenzado un inventario criptográfico ni han iniciado una hoja de ruta de migración postcuántica deberían tratar este artículo como un incentivo para acelerar, no como un motivo de pánico. [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) y CRYSTALS-Dilithium, ahora estandarizados por el NIST, son los objetivos de migración apropiados para la encapsulación de claves y las firmas digitales respectivamente.
+Finanční instituce čelí složenému riziku: uchovávají dlouhověká citlivá data, provozují infrastrukturu s pomalými cykly obměny a podléhají rostoucímu regulačnímu dohledu nad kryptografickou odolností. ECC se široce používá v připojeních TLS, mobilní autentizaci a digitálních podpisech napříč platebními kolejemi. Kryptografická kategorie, kterou článek označuje jako nejzranitelnější při nižších počtech qubitů. Instituce, které dosud nezahájily kryptografickou inventarizaci ani nezačaly plán postkvantové migrace, by měly tento článek brát jako podnět ke zrychlení, nikoli jako důvod k panice. [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) a CRYSTALS-Dilithium, oba nyní standardizované institucí NIST, jsou vhodnými cíli migrace pro zapouzdření klíčů, respektive pro digitální podpisy.
 
-### Sector público y defensa
+### Veřejná správa a obrana
 
-Los actores estatales tienen la motivación más fuerte —y, en muchos casos, los recursos— para acelerar el desarrollo de hardware cuántico más allá de lo que se conoce públicamente. Los gobiernos que custodian comunicaciones sensibles, datos de inteligencia o claves de infraestructura crítica deben suponer que los adversarios cosechan ya datos cifrados con vistas a un descifrado futuro, una estrategia comúnmente llamada «harvest now, decrypt later». Para las organizaciones del sector público, el cumplimiento de los mandatos nacionales de preparación cuántica se vuelve cada vez más ineludible, y la ventana de migración proactiva se estrecha.
+Státní aktéři mají nejsilnější motivaci. A v mnoha případech i zdroje. K urychlení vývoje kvantového hardwaru nad rámec toho, co je veřejně známo. Vlády uchovávající citlivou komunikaci, zpravodajská data nebo klíče ke kritické infrastruktuře musí předpokládat, že protivníci již sklízejí zašifrovaná data pro budoucí dešifrování, což je strategie běžně známá jako „harvest now, decrypt later“. Pro organizace veřejného sektoru je dodržování národních mandátů kvantové připravenosti stále nevyhnutelnější a okno pro proaktivní migraci se zužuje.
 
-### Sanidad e infraestructuras críticas
+### Zdravotnictví a kritická infrastruktura
 
-Los historiales médicos, los sistemas de control de servicios públicos y las redes industriales comparten una vulnerabilidad común: datos y sistemas con una vida operativa muy larga, protegidos por estándares criptográficos diseñados para un modelo de amenaza precuántico. Un historial médico cifrado hoy puede tener que permanecer privado durante cincuenta años. Un sistema de control certificado este año puede permanecer en servicio durante dos décadas. Para estos sectores, el calendario que se comprime no es una preocupación abstracta. Es un desafío directo a las hipótesis fundacionales de las arquitecturas de seguridad actuales.
+Zdravotní záznamy, řídicí systémy inženýrských sítí a průmyslové sítě sdílejí společnou zranitelnost: data a systémy s velmi dlouhou provozní životností, chráněné kryptografickými standardy, které byly navrženy pro předkvantový model hrozeb. Zdravotní záznam zašifrovaný dnes může potřebovat zůstat soukromý po padesát let. Řídicí systém certifikovaný letos může zůstat v provozu dvě desetiletí. Pro tato odvětví není zkracující se časový plán abstraktní starostí. Je to přímá výzva základním předpokladům, na nichž stojí současné bezpečnostní architektury.
 
-## Conclusión
+## Závěr
 
-El aspecto más importante de este artículo no es el número específico de qubits que presenta. Es la dirección que ese número implica. La cuestión ya no es si los ordenadores cuánticos pueden desafiar la criptografía moderna. Es a qué velocidad pueden construirse los sistemas requeridos, y si las organizaciones que dependen de los estándares actuales reaccionan lo bastante rápido.
+Nejdůležitějším aspektem tohoto článku není konkrétní počet qubitů, který uvádí. Je to směr, který tento počet naznačuje. Otázkou již není, zda kvantové počítače mohou ohrozit moderní kryptografii. Je to, jak rychle lze potřebné systémy vybudovat a zda se organizace závislé na současných standardech pohybují v reakci dostatečně rychle.
 
-Por el momento, las respuestas siguen siendo inciertas. Pero el margen para diferir la cuestión se estrecha, y el coste de esperar crece con cada reducción creíble del umbral teórico. La comunidad criptográfica, los responsables de seguridad y las industrias que dependen de ellos harían bien en tratar este artículo no como un motivo de alarma, sino como un incentivo serio para acelerar transiciones ya en curso.
+Prozatím zůstávají odpovědi nejisté. Ale prostor pro odkládání této otázky se zužuje a náklady na čekání rostou s každým věrohodným snížením teoretické prahové hodnoty. Kryptografická komunita, bezpečnostní plánovači a odvětví, která se na ně spoléhají, by udělali dobře, kdyby tento článek nebrali jako důvod k poplachu, ale jako vážný podnět ke zrychlení přechodů, které již probíhají.
 
-## Preguntas frecuentes
+## Často kladené otázky
 
-**¿Pueden realmente 10.000 qubits romper el cifrado RSA?**
+**Mohou 10 000 qubitů opravdu prolomit šifrování RSA?**
 
-Teóricamente, sí, con matices importantes. Aunque las estimaciones anteriores sugerían millones de qubits físicos requeridos, nuevas investigaciones sobre códigos de corrección de errores de alto rendimiento y retículos de átomos neutros reconfigurables sugieren que el umbral es significativamente más bajo. Sin embargo, con 10.000 qubits, el tiempo de ejecución estimado para factorizar RSA-2048 sigue siendo extremadamente largo: potencialmente años de funcionamiento continuo. Los ataques más rápidos exigen más qubits, probablemente en el rango de las decenas de miles. El artículo representa una proyección basada en hipótesis modeladas, no una demostración en un sistema operativo.
+Teoreticky ano. Ale s důležitými výhradami. Zatímco dřívější odhady naznačovaly, že je zapotřebí miliony fyzických qubitů, nový výzkum kódů pro korekci chyb s vysokou rychlostí a rekonfigurovatelných polí neutrálních atomů naznačuje, že prahová hodnota je výrazně nižší. Nicméně při 10 000 qubitech zůstává odhadovaná doba běhu pro faktorizaci RSA-2048 extrémně dlouhá. Potenciálně roky nepřetržitého provozu. Rychlejší útoky vyžadují více qubitů, pravděpodobně v řádu desítek tisíc. Článek představuje projekci založenou na modelovaných předpokladech, nikoli demonstraci na funkčním systému.
 
-**¿Qué cifrado está más en riesgo frente a la computación cuántica?**
+**Které šifrování je nejvíce ohroženo kvantovým počítáním?**
 
-La criptografía de curva elíptica (ECC) es generalmente más vulnerable a bajos números de qubits que RSA-2048. El artículo estima que romper ECC podría llevar algunos días utilizando alrededor de 26.000 qubits reconfigurables en condiciones favorables. RSA-2048 requiere un tiempo de ejecución significativamente más largo con números de qubits comparables. Esta asimetría significa que los sistemas dependientes de ECC —comunes en TLS, autenticación móvil y blockchain— pueden afrontar el riesgo en un calendario más corto que las infraestructuras basadas en RSA.
+Kryptografie eliptických křivek (ECC) je obecně zranitelnější při nižších počtech qubitů než RSA-2048. Článek odhaduje, že prolomení ECC by mohlo za příznivých podmínek trvat dny při použití přibližně 26 000 rekonfigurovatelných qubitů. RSA-2048 vyžaduje při srovnatelných počtech qubitů výrazně delší dobu běhu. Tato asymetrie znamená, že systémy závislé na ECC. Běžné v TLS, mobilní autentizaci a blockchainu. Mohou čelit riziku v kratším časovém horizontu než infrastruktura založená na RSA.
 
-**¿Qué es un qubit de átomo neutro reconfigurable?**
+**Co je rekonfigurovatelný qubit z neutrálního atomu?**
 
-Los qubits de átomos neutros son átomos individuales —típicamente rubidio o cesio— atrapados y manipulados mediante luz láser en una cámara de vacío. «Reconfigurable» significa que la disposición de los átomos puede modificarse dinámicamente durante el cálculo, permitiendo una ejecución más eficiente de circuitos cuánticos complejos. Esta flexibilidad reduce el número de qubits físicos necesarios para implementar operaciones lógicas tolerantes a fallos, y es una razón clave por la que el nuevo artículo alcanza estimaciones de qubits más bajas que los trabajos anteriores basados en las arquitecturas de qubits superconductores.
+Qubity z neutrálních atomů jsou jednotlivé atomy. Obvykle rubidium nebo cesium. Zachycené a manipulované pomocí laserového světla ve vakuové komoře. „Rekonfigurovatelný“ znamená, že uspořádání atomů lze během výpočtu dynamicky měnit, což umožňuje efektivnější provádění složitých kvantových obvodů. Tato pružnost snižuje počet fyzických qubitů potřebných k implementaci logických operací odolných vůči chybám a je klíčovým důvodem, proč nový článek dosahuje nižších odhadů qubitů než dřívější práce založené na architekturách supravodivých qubitů.
 
-**¿Qué es la criptografía postcuántica, y por qué se está desplegando ahora?**
+**Co je postkvantová kryptografie a proč se nasazuje už teď?**
 
-La criptografía postcuántica (PQC) designa los algoritmos criptográficos que se piensan seguros tanto contra ordenadores clásicos como cuánticos. El NIST finalizó su primer juego de estándares PQC en 2024, incluido [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) para la encapsulación de claves y CRYSTALS-Dilithium para las firmas digitales. El despliegue comienza ahora —mucho antes de que los ordenadores cuánticos representen una amenaza inmediata— porque las transiciones criptográficas son lentas. Reemplazar estándares incrustados en toda la infraestructura mundial lleva típicamente una década o más, y los datos cifrados hoy pueden tener que permanecer confidenciales mucho después de que las capacidades cuánticas hayan llegado a la madurez.
+Postkvantová kryptografie (PQC) označuje kryptografické algoritmy, o nichž se věří, že jsou bezpečné vůči klasickým i kvantovým počítačům. NIST finalizoval svou první sadu standardů PQC v roce 2024, včetně [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) pro zapouzdření klíčů a CRYSTALS-Dilithium pro digitální podpisy. Nasazení začíná nyní. Dlouho předtím, než kvantové počítače představují bezprostřední hrozbu. Protože kryptografické přechody jsou pomalé. Nahrazení zabudovaných standardů napříč globální infrastrukturou obvykle trvá desetiletí nebo více a data zašifrovaná dnes mohou potřebovat zůstat důvěrná dlouho poté, co kvantové schopnosti dozrají.
 
-**¿Cuántos qubits tiene hoy el ordenador cuántico más potente?**
+**Kolik qubitů má dnes nejvýkonnější kvantový počítač?**
 
-A principios de 2026, los sistemas cuánticos punteros operan en el rango de cientos a algunos miles de qubits físicos. De forma crucial, la mayoría aún no son tolerantes a fallos: operan por debajo de los umbrales de corrección de errores requeridos para un cálculo lógico sostenido y fiable. La brecha entre el hardware actual y las decenas de miles de qubits lógicos tolerantes a fallos de alta fidelidad descritos en el nuevo artículo sigue siendo significativa, aunque el ritmo del progreso a través de las plataformas superconductora, de átomos neutros y de iones atrapados se acelera.
+Na začátku roku 2026 pracují přední kvantové systémy v řádu stovek až nižších tisíců fyzických qubitů. Zásadní je, že většina z nich dosud není odolná vůči chybám. Pracují pod prahovými hodnotami korekce chyb požadovanými pro trvalé, spolehlivé logické výpočty. Mezera mezi dnešním hardwarem a desítkami tisíc vysoce věrných logických qubitů odolných vůči chybám popsanými v novém článku zůstává značná, ačkoli tempo pokroku napříč platformami supravodivých qubitů, neutrálních atomů a zachycených iontů se zrychluje.
 
-## Referencias
+## Odkazy
 
 - Sebastien Rousseau, (2025). [Quantum-Safe Payments: Why the Payments Industry Must Act Now](https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/index.html "Quantum-Safe Payments: Why the Payments Industry Must Act Now").
 - Sebastien Rousseau, (2023). [Quantum Key Distribution: Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution: Revolutionising Security in Banking").

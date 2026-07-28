@@ -1,102 +1,98 @@
 ---
-title: "KyberLib: CRYSTALS-Kyber en Rust para el postcuántico"
-subtitle: "KyberLib, una implementación Rust robusta de CRYSTALS-Kyber para la era cuántica"
-description: "Implementación criptográfica robusta y resistente a lo cuántico del algoritmo CRYSTALS-Kyber, para proteger sus datos de las amenazas cuánticas y ataques criptoanalíticos."
+title: "KyberLib: Rust CRYSTALS-Kyber pro postkvantovou kryptografii"
+subtitle: "KyberLib, robustní implementace CRYSTALS-Kyber v jazyce Rust pro kvantovou éru"
+description: "Robustní a kvantově odolná kryptografická implementace algoritmu CRYSTALS-Kyber, která chrání vaše data před kvantovými hrozbami a kryptoanalytickými útoky."
 date: "November 28, 2023"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
-banner_alt: "Reforzar la comunicación segura en la era cuántica con KyberLib"
-keywords: "KyberLib, Rust CRYSTALS-Kyber, criptografía postcuántica, criptografía sobre retículos, intercambio de claves resistente a lo cuántico, NIST FIPS 203, Sebastien Rousseau, KEM, autenticación de pagos, biblioteca PQC"
+banner_alt: "Zabezpečená komunikace v kvantové éře s knihovnou KyberLib"
+keywords: "KyberLib, Rust CRYSTALS-Kyber, postkvantová kryptografie, mřížková kryptografie, kvantově odolná výměna klíčů, NIST FIPS 203, Sebastien Rousseau, KEM, autentizace plateb, knihovna PQC"
 ---
 
 
-> **TL;DR.** Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.
+[![Zabezpečená komunikace v kvantové éře s knihovnou KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
 
-**Klíčové body**
-
-[![Reforzar la comunicación segura en la era cuántica con KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
-
-`KyberLib` es una biblioteca Rust que protege sus datos frente a la amenaza potencial de la computación cuántica. Construida sobre el **algoritmo [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)**, `KyberLib` ofrece una seguridad, una eficiencia y una versatilidad excepcionales, integrándose fácilmente en diversas plataformas, incluidos los entornos `no-std`.
+`KyberLib` je knihovna v jazyce Rust, která chrání vaše data před potenciální hrozbou kvantových výpočtů. Staví na **algoritmu [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)** a poskytuje vysokou míru zabezpečení, efektivity a všestrannosti se snadnou integrací do různých platforem včetně prostředí `no-std`.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Asegurar sus datos en la era cuántica
+## Zabezpečení dat v kvantové éře
 
-El advenimiento de la computación cuántica ha introducido una amenaza significativa para las medidas criptográficas convencionales. Para abordar este desafío, el campo de la criptografía resistente a lo cuántico (QSC) evoluciona rápidamente.
+Nástup kvantových výpočtů představuje významnou hrozbu pro konvenční kryptografická bezpečnostní opatření. V reakci na tuto výzvu se rychle rozvíjí obor kvantově odolné kryptografie (QSC).
 
-A la vanguardia de este movimiento transformador, el National Institute of Standards and Technology (NIST) lidera la estandarización de los algoritmos QSC.
+V čele tohoto vývoje stojí National Institute of Standards and Technology (NIST), který vede standardizaci algoritmů QSC.
 
-En 2023, el NIST retuvo cuatro algoritmos innovadores:
+V roce 2023 zařadil NIST do užšího výběru čtyři inovativní algoritmy:
 
-- [**CRYSTALS-Kyber** ⧉][01] (mecanismo de encapsulación de claves)
-- [**CRYSTALS-Dilithium** ⧉][02] (firmas digitales)
-- [**FALCON** ⧉][03] (firmas digitales ligeras)
-- [**SPHINCS+** ⧉][04] (firmas digitales basadas en hash)
+- [**[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)** ⧉][01] (mechanismus zapouzdření klíče)
+- [**CRYSTALS-Dilithium** ⧉][02] (digitální podpisy)
+- [**FALCON** ⧉][03] (lehké digitální podpisy)
+- [**SPHINCS+** ⧉][04] (digitální podpisy založené na hashích)
 
-Estos algoritmos revolucionarios se apoyan en principios matemáticos diversos: criptografía sobre retículos, basada en hash, basada en códigos, con el objetivo de proporcionar una defensa robusta contra los ataques cuánticos.
+Tyto algoritmy stojí na různých matematických principech, včetně mřížkové kryptografie, kryptografie založené na hashích a kryptografie založené na kódech, s cílem poskytnout robustní obranu proti kvantovým útokům.
 
-## Explorar la criptografía sobre retículos
+## Zkoumání mřížkové kryptografie
 
-La criptografía sobre retículos (LBC — Lattice-Based Cryptography) emerge como favorita en QSC, ofreciendo una solución prometedora de criptografía postcuántica (PQC). La LBC es polivalente, con aplicaciones que van desde los mecanismos de encapsulación de claves (KEM) hasta las firmas digitales y los esquemas de cifrado de clave pública, anclados en los retículos matemáticos.
+Mřížková kryptografie (LBC, Lattice-Based Cryptography) se stává jedním z hlavních směrů QSC a nabízí slibné řešení postkvantové kryptografie (PQC). LBC je všestranná a její využití sahá od mechanismů zapouzdření klíčů (KEM) přes digitální podpisy až po schémata šifrování s veřejným klíčem, která vycházejí z matematických mřížek.
 
-Los retículos son un concepto fundamental de las matemáticas que han hallado aplicaciones en diversos campos, entre ellos la criptografía. En términos simples, un retículo es un arreglo regular de puntos en el espacio, formando una estructura semejante a una cuadrícula. Estos puntos están conectados por líneas, formando una red de celdas interconectadas. La disposición específica de los puntos y su espaciado definen las características únicas de un retículo.
+Mřížky jsou základním matematickým pojmem, který našel uplatnění v řadě oborů včetně kryptografie. Zjednodušeně řečeno je mřížka pravidelné uspořádání bodů v prostoru, jež tvoří strukturu podobnou mřížové síti. Tyto body jsou propojeny čarami a vytvářejí síť vzájemně propojených buněk. Konkrétní rozmístění bodů a jejich vzájemné rozestupy definují jedinečné vlastnosti dané mřížky.
 
-### Representación 3D de un retículo con vectores base
+### Trojrozměrné znázornění mřížky s bázovými vektory
 
-Este gráfico presenta una estructura de retículo 3D generada por tres vectores base:
+Tento graf znázorňuje trojrozměrnou mřížkovou strukturu vytvořenou třemi bázovými vektory:
 
-- `b1 = [1, 0, 0]` en rojo,
-- `b2 = [0, 1, 0]` en verde, y
-- `b3 = [0, 0, 1]` en azul.
+- `b1 = [1, 0, 0]` červeně,
+- `b2 = [0, 1, 0]` zeleně a
+- `b3 = [0, 0, 1]` modře.
 
-Cada punto del retículo se forma combinando estos vectores base en proporciones enteras variadas, creando un esquema de cuadrícula que se extiende en las tres dimensiones espaciales. La visualización captura la esencia de un retículo 3D, concepto ampliamente utilizado en física y matemáticas para representar el arreglo regular y repetido de puntos en el espacio.
+Každý bod mřížky vzniká kombinací těchto bázových vektorů v různých celočíselných poměrech, čímž vzniká vzor podobný mřížové síti, který se rozprostírá do všech tří prostorových rozměrů. Vizualizace zachycuje podstatu trojrozměrné mřížky, pojmu široce používaného ve fyzice a matematice pro znázornění pravidelného, opakujícího se rozmístění bodů v prostoru.
 
-![3D Lattice Representation with Basis Vectors][06].class=\"img-fluid mx-auto d-block\"
+![Trojrozměrné znázornění mřížky s bázovými vektory][06].class=\"img-fluid mx-auto d-block\"
 
-En criptografía, los retículos se emplean como base de ciertos algoritmos criptográficos. La criptografía sobre retículos aprovecha las propiedades matemáticas de los retículos para crear esquemas criptográficos seguros que resistan los ataques de los ordenadores cuánticos. Los ordenadores cuánticos suponen una amenaza significativa para la criptografía convencional, ya que pueden romper eficientemente algoritmos que se apoyan en la factorización de grandes números o en la resolución de los problemas de logaritmo discreto.
+V kryptografii slouží mřížky jako základ některých kryptografických algoritmů. Mřížková kryptografie (LBC) využívá matematické vlastnosti mřížek k vytvoření bezpečných kryptografických schémat odolných vůči útokům kvantových počítačů. Kvantové počítače představují významnou hrozbu pro konvenční kryptografii, protože dokážou efektivně prolomit algoritmy, které se opírají o faktorizaci velkých čísel nebo o řešení problémů diskrétního logaritmu.
 
-CRYSTALS-Kyber ilustra las fortalezas de la LBC, proporcionando una resistencia robusta contra los ataques cuánticos junto con una eficiencia y un tamaño de clave excepcionales. Su compatibilidad multiplataforma y criptográfica la convierten en una opción fiable de seguridad de datos en la era cuántica.
+[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) je dobrým příkladem předností LBC: poskytuje robustní odolnost proti kvantovým útokům spolu s vysokou efektivitou a příznivou velikostí klíče. Podpora více platforem a kompatibilita s kryptografií z něj činí spolehlivou volbu pro zabezpečení dat v kvantové éře.
 
-Las especificaciones actuales de CRYSTALS-Kyber son:
+Aktuální specifikace [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) jsou následující:
 
-- **Kyber512**: proporciona un nivel de seguridad equivalente al cifrado AES de 128 bits, protegiendo los datos sensibles con una protección estándar del sector.
-- **Kyber768**: proporciona un nivel de seguridad equivalente al cifrado AES de 256 bits, garantizando la confidencialidad de información altamente sensible.
-- **Kyber1024**: proporciona un nivel de seguridad que supera AES de 256 bits, ofreciendo una protección robusta contra los ataques cuánticos y preservando la integridad de los datos en un futuro lejano.
+- **Kyber512**: poskytuje úroveň zabezpečení odpovídající 128bitovému šifrování AES a chrání citlivá data ochranou na úrovni odvětvového standardu.
+- **Kyber768**: poskytuje úroveň zabezpečení odpovídající 256bitovému šifrování AES a zajišťuje důvěrnost vysoce citlivých informací.
+- **Kyber1024**: poskytuje úroveň zabezpečení přesahující 256bitové šifrování AES, nabízí robustní ochranu proti kvantovým útokům a chrání integritu dat i do vzdálené budoucnosti.
 
-### Comparación de niveles de seguridad entre algoritmos clásicos y resistentes a lo cuántico
+### Porovnání úrovní zabezpečení klasických a kvantově odolných algoritmů
 
-Este gráfico ilustra los niveles de seguridad relativos de los algoritmos criptográficos clásicos como RSA-2048 y ECDSA, comparados con las especificaciones de las variantes resistentes a lo cuántico de CRYSTALS-Kyber (Kyber512, Kyber768 y Kyber1024).
+Tento sloupcový graf znázorňuje relativní úrovně zabezpečení klasických kryptografických algoritmů, jako jsou RSA-2048 a Elliptic Curve Digital Signature Algorithm (ECDSA), v porovnání se specifikacemi kvantově odolných variant algoritmu [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) (Kyber512, Kyber768 a Kyber1024).
 
-Aunque el gráfico ofrece una comparación visual, es crucial señalar que los niveles de seguridad no son directamente comparables, ya que se basan en principios matemáticos diferentes.
+Graf sice nabízí vizuální porovnání, je však důležité zdůraznit, že úrovně zabezpečení nelze přímo srovnávat, protože vycházejí z odlišných matematických principů.
 
-Sin embargo, el gráfico aporta un punto de referencia útil para comprender los niveles de seguridad de los algoritmos resistentes a lo cuántico.
+Graf nicméně poskytuje užitečný referenční bod pro pochopení úrovní zabezpečení kvantově odolných algoritmů.
 
-![Lattice-Based Cryptography][05].class=\"img-fluid mx-auto d-block\"
-
-![divider][divider].class=\"m-10 w-100\"
-
-## KyberLib: una biblioteca Rust para la criptografía resistente a lo cuántico
-
-KyberLib aprovecha la potencia de CRYSTALS-Kyber para ofrecer una seguridad de memoria reforzada y una seguridad de sistema robusta. Admite varias especificaciones de CRYSTALS-Kyber (Kyber512, Kyber768, Kyber1024), ofreciendo un abanico de niveles de seguridad adaptados a sus necesidades específicas. Su conformidad `no_std` la convierte en una elección ideal para los sistemas embebidos, y su compatibilidad con WebAssembly (WASM) facilita la integración con las aplicaciones web.
+![Mřížková kryptografie][05].class=\"img-fluid mx-auto d-block\"
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Proteger las aplicaciones web mediante la criptografía resistente a lo cuántico
+## KyberLib: knihovna v jazyce Rust pro kvantově odolnou kryptografii
 
-Diseñada para una huella de memoria mínima, KyberLib es ideal para los sistemas embebidos y con recursos limitados, sin comprometer la seguridad. Su implementación en Rust capitaliza las funcionalidades de seguridad del lenguaje, fortificando la seguridad ofrecida por el algoritmo CRYSTALS-Kyber.
+KyberLib využívá [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) k dosažení lepší paměťové bezpečnosti a robustního zabezpečení na úrovni systému. Podporuje více specifikací [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) (Kyber512, Kyber768, Kyber1024) a nabízí škálu úrovní zabezpečení podle konkrétních potřeb. Díky souladu s `no_std` je vhodnou volbou pro vestavěné systémy a její kompatibilita s WebAssembly (WASM) usnadňuje bezproblémovou integraci do webových aplikací.
 
-Además, la compatibilidad WebAssembly de KyberLib refuerza su utilidad en las aplicaciones web, garantizando que siga siendo una herramienta vital en el campo dinámico de la criptografía.
+![divider][divider].class=\"m-10 w-100\"
 
-[Empiece con KyberLib ahora mismo. ⧉][00] Fácil de instalar, gratuita para uso personal o comercial, KyberLib es su solución de referencia para la criptografía resistente a lo cuántico.
+## Ochrana webových aplikací kvantově odolnou kryptografií
 
-[00]: https://kyberlib.com/getting-started/index.html "Getting Started"
-[01]: https://pq-crystals.org/kyber/ "Kyber: A CCA-secure module-lattice-based KEM"
-[02]: https://pq-crystals.org/dilithium/ "Dilithium: A CCA-secure lattice-based signature scheme"
-[03]: https://falcon-sign.info/ "FALCON: A post-quantum signature scheme"
-[04]: https://sphincs.org/ "SPHINCS+: A stateless hash-based signature scheme"
-[05]: https://cloudcdn.pro/stocks/diagrams/kyber-vs-classical.svg "Comparison of Security Levels between Classical and Quantum-Resistant Algorithms"
-[06]: https://cloudcdn.pro/stocks/diagrams/3D-lattice-graph.svg "3D Lattice Representation with Basis Vectors"
-[07]: https://kyberlib.com/ "Privacy and Security in a Quantum World"
+KyberLib je navržena pro minimální paměťovou náročnost, a je proto vhodná pro vestavěné systémy a systémy s omezenými prostředky bez ústupků v zabezpečení. Její implementace v jazyce Rust těží z bezpečnostních vlastností tohoto jazyka a posiluje zabezpečení, které poskytuje algoritmus [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html).
 
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+Kompatibilita KyberLib s WebAssembly navíc zvyšuje její užitečnost ve webových aplikacích a zajišťuje, že zůstává důležitým nástrojem v dynamicky se vyvíjející kryptografii.
+
+[Začněte s KyberLib ještě dnes. ⧉][00] Snadno se instaluje, je zdarma pro osobní i komerční použití a představuje spolehlivé řešení pro kvantově odolnou kryptografii.
+
+[00]: https://kyberlib.com/getting-started/index.html "Začínáme"
+[01]: https://pq-crystals.org/kyber/ "Kyber: modul-mřížkový KEM zabezpečený proti CCA"
+[02]: https://pq-crystals.org/dilithium/ "Dilithium: mřížkové podpisové schéma zabezpečené proti CCA"
+[03]: https://falcon-sign.info/ "FALCON: postkvantové podpisové schéma"
+[04]: https://sphincs.org/ "SPHINCS+: bezstavové podpisové schéma založené na hashích"
+[05]: https://cloudcdn.pro/stocks/diagrams/kyber-vs-classical.svg "Porovnání úrovní zabezpečení klasických a kvantově odolných algoritmů"
+[06]: https://cloudcdn.pro/stocks/diagrams/3D-lattice-graph.svg "Trojrozměrné znázornění mřížky s bázovými vektory"
+[07]: https://kyberlib.com/ "Soukromí a bezpečnost v kvantovém světě"
+
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Oddělovač"
