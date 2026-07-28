@@ -15,70 +15,82 @@ keywords: "ERC-20, Ethereum, token, akıllı sözleşmeler, ICO, DeFi, Solidity"
 
 ---
 
-> **TL;DR.** ERC-20 è lo standard di interfaccia per token fungibili su Ethereum. Ha standardizzato sei funzioni e due eventi, sbloccando un mercato di token da centinaia di miliardi di dollari, dagli ICO ın 2017 alle stablecoin di oggi.
+> **TL;DR.** ERC-20, Ethereum blok zincirinde en yaygın kullanılan token türüdür ve genellikle akıllı sözleşme tabanlı bir dijital sözleşme olarak anılır.
 >
 > **Önemli Çıkarımlar**
 >
-> - **Interfaccia standard** — sei funzioni (totalSupply, balanceOf, transfer, transferFrom, approve, allowance) consentono interoperabilità totale tra wallet, exchange e protocolli.
-> - **Token fungibili** — ogni unità è identica e intercambiabile, modellando perfettamente valute, punti, azioni tokenizzate.
-> - **Effetto rete** — un'unica interfaccia ha permesso a infrastruttura, tooling e liquidità di concentrarsi rapidamente.
-> - **Limiti noti** — ERC-20 non gestisce nativamente token non fungibili (ERC-721), ricariche meta-transazionali o conformità sofisticata, ragione per cui sono emersi standard successivi.
+> - **Fikir.** ERC-20 standardı, ERC-20 uyumlu tüm token'ların uygulaması gereken altı temel işlevden oluşan bir küme tanımlar.
+> - **Etki.** ERC-20 standardı Ethereum ekosistemi üzerinde önemli bir etki bırakmıştır.
+> - **Teşvik.** ERC-20 protokolünün getirdiği standartlaşmanın doğrudan ekonomik bir etkisi de olmuştur.
+> - **Standartlaştırılmış bir token arayüzüne duyulan ihtiyaç.** ERC-20 (Ethereum Request for Comments 20) standardı ortaya çıkmadan önce, Ethereum blok zinciri token mimarileri açısından bir Vahşi Batı'yı andırıyordu.
 
 ---
 
 ## Bakış
 
-### La necesidad di una interfaz di token estandarizada
+### Standartlaştırılmış bir token arayüzüne duyulan ihtiyaç
 
-Antes ın advenimiento ın standard ERC-20 (Ethereum Request for Comments 20), la blockchain Ethereum se parecía al Lejano Oeste ın arquitecturas di token. Ogni nuovo token acuñado aveva il suo propio conjunto único di regole, funciones e interfaces. Esto imponía ai sviluppatori una curva di aprendizaje pronunciada e frenaba la interoperabilidad ın tokens. In poche palabras, ogni nuovo token era gibi un nuovo idioma che aprender, comprender e implementar. Questa fragmentación obstaculizaba la escalabilidad ve adopción masiva di tokens in la piattaforma Ethereum.
+ERC-20 (Ethereum Request for Comments 20) standardı ortaya çıkmadan önce, Ethereum blok zinciri token mimarileri açısından bir Vahşi Batı'yı andırıyordu. Yeni oluşturulan her token'ın kendine özgü kuralları, işlevleri ve arayüzleri vardı. Bu durum geliştiricilere hem zorlu bir öğrenme eğrisi dayatıyor hem de token'ların birlikte çalışabilirliğini engelliyordu. Özünde her yeni token, öğrenilmesi, anlaşılması ve uygulanması gereken yeni bir dil gibiydi. Bu parçalı yapı, Ethereum platformunda token'ların ölçeklenebilirliğini ve geniş çapta benimsenmesini yavaşlatıyordu.
 
-La introducción ın standard ERC-20 actuó gibi un lenguaje unificador, estableciendo un conjunto común di regole e funciones alle che tutti i tokens Ethereum devono ajustarse. A partir di entonces, i sviluppatori disponen di una interfaz coherente, qualunque sia il token. Questa estandarización fluidificó i processi di interacción con i tokens, permitiendo una integración daha çok fluida in diversas applicazioni e servizi. Come consecuencia, i sviluppatori possono interactuar in modo daha çok útil con i tokens, propiciando un entorno favorable alla innovación e al crecimiento in il ecosistema Ethereum.
+ERC-20 standardının getirilmesi, birleştirici bir dil işlevi gördü ve tüm Ethereum token'larının uyması gereken ortak bir kural ve işlev kümesi ortaya koydu. Artık geliştiriciler, söz konusu token ne olursa olsun tutarlı bir arayüzle çalışabiliyor. Bu standartlaşma, token etkileşim süreçlerini sadeleştirerek çeşitli uygulama ve hizmetlere daha sorunsuz entegrasyonu mümkün kıldı. Sonuç olarak geliştiriciler token'larla daha anlamlı biçimde etkileşime girebiliyor; bu da Ethereum ekosisteminde yeniliği ve büyümeyi destekleyen bir ortam yaratıyor.
 
-#### Il Lejano Oeste ın arquitecturas di token
+#### Token mimarilerinin Vahşi Batısı
 
-La blockchain Ethereum se diseñó inicialmente per soportar un único tipo di token: ETH. Ma man mano che la piattaforma ganó popularidad, i sviluppatori comenzaron a creare i suoi propios tokens per representar una variedad di activos e conceptos. Esto dio lugar a una proliferación di arquitecturas di token diferentes, ognuna con il suo propio conjunto único di regole e funciones.
+Ethereum blok zinciri başlangıçta tek bir token türünü, ETH'yi desteklemek üzere tasarlanmıştı. Ancak platform popülerlik kazandıkça geliştiriciler, çeşitli varlıkları ve kavramları temsil etmek için kendi token'larını oluşturmaya başladı. Bu durum, her biri kendine özgü kural ve işlev kümesine sahip farklı token mimarilerinin çoğalmasına yol açtı.
 
-Questa fragmentación dificultaba ai sviluppatori la creación di applicazioni capaces di interactuar con diversi tokens. Anche complicaba ai utenti la gestión di i suoi activos di token in diverse piattaforme.
+Bu parçalı yapı, geliştiricilerin birden fazla token'la etkileşime girebilen uygulamalar geliştirmesini zorlaştırdı. Ayrıca kullanıcıların token varlıklarını farklı platformlar arasında yönetmesini de güçleştirdi.
 
-#### Il standard ERC-20
+#### ERC-20 standardı
 
-Il standard ERC-20 se introdujo in 2015 per responder ai retos planteados per questo Lejano Oeste di arquitecturas di token. Il standard define un conjunto común di regole e funciones alle che tutti i tokens Ethereum devono ajustarse. Questa estandarización facilita la creación di applicazioni capaces di interactuar con qualsiasi token ERC-20, e anche simplifica la gestión ın activos di token per parte ın utenti.
+ERC-20 standardı, token mimarilerinin Vahşi Batısının doğurduğu sorunları gidermek için 2015 yılında tanıtıldı. Standart, tüm Ethereum token'larının uyması gereken ortak bir kural ve işlev kümesi tanımlar. Bu standartlaşma, geliştiricilerin herhangi bir ERC-20 token'ıyla etkileşime girebilen uygulamalar geliştirmesini kolaylaştırdığı gibi kullanıcıların token varlıklarını yönetmesini de kolaylaştırır.
 
-Il standard ERC-20 è stato ampliamente adoptado için comunità Ethereum. Hoy in día se contabilizan daha çok di 200.000 tokens ERC-20 ve standard è utilizzato per una gran variedad di applicazioni, incluidos exchanges decentralizzati, piattaforme di préstamo e dapps di juegos.
+ERC-20 standardı Ethereum topluluğu tarafından geniş çapta benimsenmiştir. Bugün 200.000'den fazla ERC-20 token'ı bulunmakta ve standart; merkeziyetsiz borsalar, borç verme platformları ve oyun tabanlı dapp'ler dahil çok çeşitli uygulamalar tarafından kullanılmaktadır.
 
 ## Fikir
 
-### Un conjunto común di funciones e propiedades per tutti i tokens
+### Tüm token'lar için ortak işlev ve özellik kümesi
 
-Il standard ERC-20 define un insieme di seis funciones esenciales che tutti i tokens conformes a ERC-20 devono implementar. Queste funciones sono:
+ERC-20 standardı, ERC-20 uyumlu tüm token'ların uygulaması gereken altı temel işlevden oluşan bir küme tanımlar. Bu işlevler şunlardır:
 
-- `transfer(address to, uint256 amount)`: transfiere un importe di tokens da la indirizzo ın invocador verso la indirizzo especificada.
-- `approve(address spender, uint256 amount)`: autoriza alla indirizzo especificada a gastar un importe di tokens in nombre ın invocador.
-- `allowance(address owner, address spender)`: devuelve il importe di tokens che il "spender" especificado è autorizado a gastar in nombre ın "owner" especificado.
-- `totalSupply()`: devuelve il número total di tokens in circulación.
-- `balanceOf(address owner)`: devuelve il número di tokens che posee la indirizzo especificada.
-- `name()`: devuelve il nombre ın token.
-- `symbol()`: devuelve il símbolo ın token.
+- `transfer(address to, uint256 amount)`: Çağıranın adresinden belirtilen adrese belirli miktarda token aktarır.
+- `approve(address spender, uint256 amount)`: Belirtilen adresin, çağıran adına belirli miktarda token harcamasına yetki verir.
+- `allowance(address owner, address spender)`: Belirtilen harcayıcının (spender), belirtilen sahip (owner) adına harcamasına izin verilen token miktarını döndürür.
+- `totalSupply()`: Dolaşımdaki toplam token sayısını döndürür.
+- `balanceOf(address owner)`: Belirtilen adresin sahip olduğu token sayısını döndürür.
+- `name()`: Token'ın adını döndürür.
+- `symbol()`: Token'ın sembolünü döndürür.
 
-Il standard ERC-20 anche define dos eventos che devono emitirse dopo la ejecución exitosa ın funciones correspondientes:
+ERC-20 standardı ayrıca, ilgili işlevlerin başarıyla yürütülmesi üzerine yayımlanması gereken iki olay tanımlar. Bu olaylar şunlardır:
 
-- `Transfer(address from, address to, uint256 amount)`: emitido quando un importe di tokens se transfiere di una indirizzo a altra.
-- `Approval(address owner, address spender, uint256 amount)`: emitido quando la indirizzo especificada è autorizada a gastar un importe di tokens in nombre ın "owner" especificado.
+- `Transfer(address from, address to, uint256 amount)`: Bir adresten diğerine belirli miktarda token aktarıldığında yayımlanır.
+- `Approval(address owner, address spender, uint256 amount)`: Belirtilen adrese, belirtilen sahip (owner) adına belirli miktarda token harcama yetkisi verildiğinde yayımlanır.
 
 ## Etki
 
-### Il crecimiento di DeFi ve adopción di Ethereum
+### DeFi'nin büyümesi ve Ethereum'un benimsenmesi
 
-Il standard ERC-20 ha tenido un impacto significativo in il ecosistema Ethereum. Ha sido un catalizador chiave ın movimiento DeFi (finanza decentralizzata) e anche ha contribuido a aumentar la adopción di Ethereum.
+ERC-20 standardı Ethereum ekosistemi üzerinde önemli bir etki bırakmıştır. DeFi (Merkeziyetsiz Finans) hareketinin başlıca itici güçlerinden biri olmuş ve Ethereum'un benimsenmesini artırmaya da katkı sağlamıştır.
 
-Le piattaforme DeFi, che offrono tutta una gama di servizi finanziari che van da il préstamo fino a la gestión di activos, se apoyan masivamente in i tokens per facilitar le transazioni. Con ERC-20 actuando gibi un adaptador universal, se è tornato molto daha çok semplice per le applicazioni DeFi integrar un amplio abanico di tokens senza avere che adaptar il suo código a ognuno.
+Borç vermeden varlık yönetimine kadar bir dizi finansal hizmet sunan DeFi platformları, işlemleri kolaylaştırmak için büyük ölçüde token'lara dayanır. ERC-20'nin evrensel bir adaptör işlevi görmesiyle, DeFi uygulamalarının kodlarını her token için ayrı ayrı uyarlamak zorunda kalmadan geniş bir token yelpazesini bünyesine katması çok daha kolay hale gelmiştir.
 
-Il standard ERC-20 anche ha facilitado la gestión ın activos di token per parte ın utenti. Con tokens che respetan le stesse regole básicas, ai utenti les resulta daha çok fácil transferir, gastar e gestire i suoi activos di token in diverse piattaforme. Questa experiencia di utente mejorada è stato un motor ın aumento ın tasas di adopción di Ethereum.
+ERC-20 standardı kullanıcıların token varlıklarını yönetmesini de kolaylaştırmıştır. Token'lar aynı temel kurallara uyduğu için kullanıcılar, token varlıklarını birden fazla platform arasında aktarmayı, harcamayı ve yönetmeyi daha kolay buluyor. Gelişen bu kullanıcı deneyimi, Ethereum'un artan benimsenme oranlarının itici bir etkeni olmuştur.
 
 ## Teşvikler
 
-### Costes di desarrollo reducidos e sicurezza mejorada
+### Düşük geliştirme maliyetleri ve gelişmiş güvenlik
 
-La estandarización aportada için protocolo ERC-20 anche ha tenido un impacto economico directo. Al fornire un plano probado e aprobado için comunità için creación di tokens, ha reducido significativamente la barrera di entrada için sviluppatori. Ahora possono creare un nuovo token con costi di desarrollo reducidos e un scadenza di comercialización daha çok corto, senza avere che reinventar la rueda. Il standard fomenta anche indirettamente la creación di DApps (applicazioni decentralizzate) e servizi capaces di interactuar universalmente con qualsiasi token ERC-20, cultivando así un ecosistema daha çok dinámico.
+ERC-20 protokolünün getirdiği standartlaşmanın doğrudan ekonomik bir etkisi de olmuştur. Token oluşturmak için test edilmiş ve toplulukça onaylanmış bir şablon sunarak geliştiriciler için giriş engellerini önemli ölçüde azaltmıştır. Geliştiriciler artık tekerleği yeniden icat etmek zorunda olmadıkları için yeni bir token'ı daha düşük geliştirme maliyetiyle ve daha kısa sürede piyasaya sunabiliyor. Standart ayrıca, herhangi bir ERC-20 token'ıyla evrensel biçimde etkileşime girebilen DApp'lerin (Merkeziyetsiz Uygulamalar) ve hizmetlerin oluşturulmasını dolaylı olarak teşvik ederek daha canlı bir ekosistemi besler.
 
-Altro beneficio notable: una sicurezza reforzada. Il standard ERC-20 è stato sometido a un examen riguroso per parte ın comunità Ethereum, convirtiéndolo in un modello robusto e seguro için implementación di tokens. Il respeto di questo standard implica che i aspectos fundamentales ın smart contract ın token rimangono le buone pratiche aceptadas için comunità. Esto minimiza il rischio di vulnerabilidades di sicurezza che di altro modo potrebbero derivarse di un modello di token male progettato. Sebbene non è una garantía contra tutto tipo di vulnerabilidades, è un passo significativo verso la sicurezza globale ın tokens e, per extensión, ın progetti che i utilizzano.
+Bir diğer önemli fayda, güvenliğin güçlenmesidir. ERC-20 standardı Ethereum topluluğu tarafından titiz bir incelemeden geçmiş ve bu sayede token uygulaması için sağlam ve güvenli bir model haline gelmiştir. Bu standarda uyulması, token'ın akıllı sözleşmesinin temel unsurlarının toplulukça kabul görmüş en iyi uygulamalarla örtüştüğü anlamına gelir. Bu da hatalı tasarlanmış bir token modelinden kaynaklanabilecek güvenlik açıklarının riskini en aza indirir. Her tür açığa karşı bir garanti olmasa da, token'ların ve dolayısıyla onları kullanan projelerin genel güvenliğini sağlama yolunda önemli bir adımdır.
+
+![divider](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+**Birlikte geçirdiğimiz zaman burada sona eriyor. Ayırdığınız vakit için teşekkür ederim!**
+
+Herhangi bir sorunuz olursa, [LinkedIn ⧉][11] üzerinden veya [İletişim sayfası][10] aracılığıyla benimle iletişime geçmekten çekinmeyin. Ayırdığınız vakit için tekrar teşekkür eder, sizden haber almayı dört gözle beklerim.
+
+[**❬ Makalelere Dön**][09]
+
+[09]: /articles/index.html "Makalelere Dön"
+[10]: /contact/index.html "Sebastien Rousseau ile İletişime Geçin"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau LinkedIn'de"

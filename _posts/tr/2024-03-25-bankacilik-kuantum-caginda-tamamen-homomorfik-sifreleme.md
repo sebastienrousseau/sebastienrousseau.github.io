@@ -1,187 +1,187 @@
 ---
 title: "Bankacılık kuantum çağında tamamen homomorfik şifreleme"
-subtitle: "Veri her zaman şifreliyken hesaplama yapma"
-description: "Tamamen homomorfik şifreleme (FHE), bankacılıkta gizliliği koruyarak şifreli veriler üzerinde hesaplama yapmayı sağlar."
+subtitle: "Kuantum bilişim çağında FHE ile veri güvenliğini güçlendirmek, yapay zeka gizliliğini artırmak ve müşteri güvenini pekiştirmek"
+description: "Tamamen homomorfik şifrelemenin bankacılık ve finans sektöründe veri güvenliğini nasıl dönüştürdüğünü ve kuantum bilişim tehditlerine karşı gizliliği nasıl koruduğunu inceleyin."
 date: "March 25, 2024"
 language: "tr-TR"
 locale: "tr_TR"
 banner: "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp"
-banner_alt: "Homomorfik şifrelemenin görselleştirmesi"
-keywords: "FHE, homomorfik şifreleme, bankacılık, kuantum, gizlilik, kriptografi"
+banner_alt: "Tamamen homomorfik şifreleme afişi"
+keywords: "tamamen homomorfik şifreleme, bankacılık güvenliği, kuantum bilişim, finansal veri şifreleme, FHE örnek çalışmaları, FHE düzenleyici çerçeveler, FHE hesaplama yükü, FHE araştırması, FHE donanımı, veri gizliliği yasaları"
 ---
 
 
 ---
 
-> **TL;DR.** La cifratura completamente omomorfica permette di calcolare su dati cifrati senza decifrarli. Combinata con la PQC, costituisce una difesa stratificata che preserva la privacy ın dati anche di fronte al calcolo quantistico.
+> **TL;DR.** Tamamen homomorfik şifreleme (FHE), verinin şifresini çözmeden şifreli veriler üzerinde hesaplama yapmayı sağlar. Bu yetenek, bankacılık ve finans sektöründe veri güvenliğini yeniden tanımlar ve hem geleneksel hem de kuantum bilişim tehditlerine karşı gizliliği korur.
 >
 > **Önemli Çıkarımlar**
 >
-> - **Calcolo sicuro** — operazioni aritmetiche su ciphertext senza accesso al plaintext.
-> - **Privacy preservata** — il fornitore di calcolo non vede mai i dati in chiaro.
-> - **Casi d'uso bancari** — credit scoring delegato, ML su dati sensibili, audit conformi.
-> - **Sfide pratiche** — overhead computazionale ancora elevato, ma in calo rapido.
+> - **Tamamen homomorfik şifrelemeyi anlamak.** Şifreleme, okunabilir veriyi (açık metin) bir algoritma ve şifreleme anahtarı kullanarak okunamaz bir biçime (şifreli metin) dönüştürme yöntemidir.
+> - **Homomorfik şifrelemede atılım.** Homomorfik şifreleme (HE), geleneksel şifrelemenin sınırlamalarını giderir.
+> - **FHE'nin bankacılık ve finans üzerindeki etkisi.** FHE'nin finans sektöründe uygulanması, veri gizliliğinde belirgin bir iyileşme vaat eder.
+> - **Kuantum geleceğine hazırlanmak.** Kuantum bilişimin yaklaşan gelişi, geleneksel şifreleme yöntemleri için olası bir kriz habercisidir.
 
 ---
 
-Il **cifrado completamente homomórfico (FHE — Fully Homomorphic Encryption)** promete redefinir la sicurezza ın dati in la banca ve finanzas. Permitiendo cálculos su dati cifrados, il FHE protege la confidencialidad rispetto alle amenazas convencionales e quantistiche.
+**Tamamen homomorfik şifreleme (FHE)**, bankacılık ve finans sektöründe veri güvenliğini yeniden tanımlamayı vaat eder. Şifreli veriler üzerinde hesaplama yapılmasını sağlayarak FHE, hem geleneksel hem de kuantum bilişim tehditlerine karşı gizliliği korur.
 
-## Introducción
+## Giriş
 
-La implementación ın FHE in il settore finanziario non è solo teórica; viene convirtiendo in una realidad pratica, transformando i standard di sicurezza e confidencialidad ın dati. Questo artículo explora i usos pratici, le consideraciones normativas, i posibles inconvenientes ve progressi di ricerca ın cifrado completamente homomórfico in finanzas e in le applicazioni di intelligenza artificiale (IA).
+FHE'nin finans sektöründe uygulanması yalnızca kuramsal değildir; pratik bir gerçekliğe dönüşerek veri güvenliği ve gizlilik standartlarını değiştirmektedir. Bu makale, tamamen homomorfik şifrelemenin (FHE) finans ve yapay zeka (AI) uygulamalarındaki pratik kullanımlarını, düzenleyici kaygılarını, olası dezavantajlarını ve araştırma gelişmelerini inceler.
 
-## Comprender il cifrado completamente homomórfico
+## Tamamen homomorfik şifrelemeyi anlamak
 
-### Le bases ın cifrado
+### Şifrelemenin temelleri
 
-Il cifrado è un método di transformación di dati legibles (texto chiaro) in un formato ilegible (criptograma) per medio di un algoritmo e una chiave di cifrado. Il objetivo principale è asegurar che solo le partes autorizadas puedan acceder ai dati originales descifrando il criptograma con la ayuda di una chiave di descifrado.
+Şifreleme, okunabilir veriyi (açık metin) bir algoritma ve şifreleme anahtarı kullanarak okunamaz bir biçime (şifreli metin) dönüştürme yöntemidir. Temel amaç, yalnızca yetkili tarafların şifreli metni bir şifre çözme anahtarıyla çözerek özgün veriye erişebilmesini sağlamaktır.
 
-### Métodos di cifrado tradicionales
+### Geleneksel şifreleme yöntemleri
 
-I métodos di cifrado tradicionales possono categorizarse ampliamente in dos tipos: simétrico e asimétrico. Il cifrado simétrico utilizza una sola chiave allo stesso tempo için cifrado ve descifrado. Questa eficiencia ha un costo in sicurezza, in particolare quando la distribución ın chiavi plantea problemas. Il cifrado asimétrico, anche llamado criptografía di chiave pública, utilizza dos chiavi: una için cifrado e altra için descifrado. Questo método è daha çok seguro ma daha çok lento che il cifrado simétrico.
+Geleneksel şifreleme yöntemleri genel olarak iki türe ayrılabilir: simetrik ve asimetrik şifreleme. Simetrik şifreleme, hem şifreleme hem de şifre çözme için tek bir anahtar kullanır. Bu verimlilik, özellikle anahtar dağıtımının zorluk yarattığı durumlarda güvenlik pahasına gelir. Açık anahtarlı kriptografi olarak da adlandırılan asimetrik şifreleme, biri şifreleme, diğeri şifre çözme için olmak üzere iki anahtar kullanır. Bu yöntem daha güvenli, ancak simetrik şifrelemeden daha yavaştır.
 
-### I límites ın cifrado convencional için cálculo
+### Geleneksel şifrelemenin hesaplama açısından sınırlamaları
 
-Sebbene i métodos tradicionales aseguran eficazmente i dati in reposo o in tránsito, fracasan quando se tratta di efectuar cálculos su dati cifrados. Típicamente, per tratar o analizar dati cifrados, bisogna descifrarlos primero, efectuar le operazioni necesarias e luego tornare a cifrarlos. Questa etapa di descifrado plantea un rischio significativo için confidencialidad, in particolare in entornos non confiables o di cloud computing.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## Il progresso ın cifrado homomórfico
-
-Il **cifrado homomórfico (HE)** resuelve i límites ın cifrado convencional. Permite efectuar ciertos cálculos direttamente su i dati cifrados (criptogramas). Il resultado descifrado è idéntico ai dati originales (texto chiaro) dopo di che è statoyan efectuado le stesse operazioni. Il HE se declina in tres grandi variedades: Partially Homomorphic Encryption (PHE), Somewhat Homomorphic Encryption (SHE) e Fully Homomorphic Encryption (FHE).
-
-- **Partially Homomorphic Encryption (PHE):** soporta operazioni ilimitadas di un solo tipo (adición o multiplicación) su i criptogramas.
-- **Somewhat Homomorphic Encryption (SHE):** soporta un número limitado di operazioni, combinando adición e multiplicación, ma solo fino a una cierta profundidad.
-- **Fully Homomorphic Encryption (FHE):** la forma daha çok avanzada, autorizando operazioni ilimitadas di adición e multiplicación su i criptogramas.
-
-### La ingeniosidad tecnica ın FHE
-
-Il FHE reposa su estructuras matemáticas complejas, gibi la criptografía su retículos. La criptografía su retículos è un tipo di cifrado che utilizza estructuras matemáticas llamadas retículos.
-
-Un retículo è una disposición regular di puntos in il espacio, ve criptografía su retículos se apoya in la dificultad di resolver ciertos problemas matemáticos vinculados a queste estructuras. Esto fa sì che la criptografía su retículos sea segura e resistente ai ataques, incluidos i procedentes ın computer quantistici.
-
-In 2009, Craig Gentry ha sviluppato un método, descrito in il suo artículo [**A Fully Homomorphic Encryption Scheme ⧉**][00], per creare un sistema capaz di efectuar una evaluación homomórfica di il suo propio circuito di descifrado. Questo diseño autorreferencial consente ai esquemas FHE efectuar cálculos arbitrarios su dati cifrados.
-
-### Il processo ın algoritmo FHE
-
-![FHE Operational Flow][fhe].class=\"m-10 w-100\"
-
-Il diagrama anterior ilustra il flujo operativo di un algoritmo FHE.
-
-- Il processo di cifrado comienza con i dati in texto chiaro, che se cifran con la ayuda di una chiave di cifrado per generare un criptograma.
-
-- Questi dati cifrados possono entonces someterse a diversos cálculos direttamente su il criptograma mediante un processo conocido gibi bootstrapping.
-
-- Questa capacità única ın FHE consente ai dati permanecer cifrados durante tutto il processo. Una vez efectuadas le operazioni necesarias, il processo di descifrado può reconvertir il criptograma modificado in texto chiaro gracias al esquema FHE.
-
-La vantaggio principale ın FHE reside in il suo capacità per efectuar cálculos su il criptograma senza richiedere descifrado, garantizando así il mantenimiento ın confidencialidad ve sicurezza ın dati durante tutto il cálculo.
-
-### La resistencia quantistica ın FHE
-
-I métodos di cifrado tradicionales sono spesso vulnerables ai algoritmi quantistici. Questi algoritmos possono resolver rapidamente problemas gibi la factorización di enteros ve logaritmos discretos, che constituyen i fundamentos di questi métodos. Per contraste, il FHE emplea problemas su retículos che se cree difíciles di resolver per computer quantistici. Questa resistencia quantistica hace ın FHE un método di cifrado prometedor için era post-quantistica.
-
-Il FHE su retículos è resistente ai ataques quantistici perché i problemas matemáticos subyacentes, gibi il Shortest Vector Problem (SVP) ve Closest Vector Problem (CVP), se consideran difíciles di resolver incluso için computer quantistici. Se bene algoritmi quantistici gibi il di Shor possono romper i métodos di cifrado tradicionales che reposan in la factorización di grandi números o i logaritmos discretos, non se sabe che ofrezcan vantaggi significative in la resolución ın problemas su retículos. Questa caratteristica hace ın FHE su retículos un candidato prometedor için crittografia post-quantistica.
+Geleneksel şifreleme yöntemleri, beklemedeki veya aktarımdaki veriyi etkili biçimde korurken, şifreli veriler üzerinde hesaplama yapma konusunda yetersiz kalır. Tipik olarak, şifreli veriyi işlemek veya çözümlemek için önce şifresini çözmek, gerekli işlemleri yapmak ve ardından yeniden şifrelemek gerekir. Bu şifre çözme adımı, özellikle güvenilmeyen veya bulut bilişim ortamlarında veri gizliliği açısından önemli bir risk oluşturur.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Il impacto ın FHE in la banca ve finanzas
+## Homomorfik şifrelemede atılım
 
-### Confidencialidad e sicurezza ın dati reforzadas
+**Homomorfik şifreleme (HE)**, geleneksel şifrelemenin sınırlamalarını giderir. Belirli hesaplamaların doğrudan şifreli veriler (şifreli metinler) üzerinde yapılmasına olanak tanır. Aynı işlemler uygulandığında, şifresi çözülen sonuç özgün veriyle (açık metin) aynıdır. HE üç ana biçimde gelir: Partially Homomorphic Encryption (PHE), Somewhat Homomorphic Encryption (SHE) ve Fully Homomorphic Encryption (FHE).
 
-La applicazione ın FHE in il settore finanziario promete un refuerzo significativo ın confidencialidad. I bancos possono ora emprender evaluaciones di rischi, la detección di fraude e análisis di dati completi al tiempo che garantiscono la confidencialidad absoluta ın informazione ın clienti. Questo progresso tecnológico mitiga il rischio di brechas di dati, reforzando la integridad ın piattaforme bancarie digitali ve transazioni finanziarie.
+- **Partially Homomorphic Encryption (PHE):** Şifreli metinler üzerinde tek türden (örneğin yalnızca toplama veya yalnızca çarpma) sınırsız işlem yapmayı destekler.
+- **Somewhat Homomorphic Encryption (SHE):** Hem toplama hem de çarpmayı birleştiren, ancak yalnızca belirli bir derinliğe kadar sınırlı sayıda işlemi destekler.
+- **Fully Homomorphic Encryption (FHE):** En gelişmiş biçimdir; şifreli metinler üzerinde hem toplama hem de çarpma işlemlerinin sınırsız yapılmasına olanak tanır.
 
-### Cloud computing e externalización
+### FHE'nin teknik yaratıcılığı
 
-Un ámbito di applicazione principale ın cifrado homomórfico è il tratamiento seguro ın dati in la nube. I bancos possono aprovechar i servizi di cloud computing per tratar dati cifrados senza comprometer il suo confidencialidad. Esto consente alle istituzioni finanziarie aprovechar la escalabilidad ve rentabilidad ın cloud al tiempo che mantienen la confidencialidad di informazione finanziaria sensible.
+FHE, kafes tabanlı kriptografi gibi karmaşık matematiksel yapılara dayanır. Kafes tabanlı kriptografi, kafes adı verilen matematiksel yapıları kullanan bir şifreleme türüdür.
 
-Il movimiento verso il cloud computing ve externalización di tareas computacionales per parte ın bancos subraya la pertinencia ın FHE. Con un cloud computing seguro, le istituzioni finanziarie possono acceder a recursos externos al tiempo che protegen i dati cifrados sensibles mediante il FHE. Il FHE consente ai bancos aprovechar i servizi cloud in modo segura al tiempo che se garantisce che i dati cifrados sensibles permanezcan protegidos in tutto momento.
+Kafes, uzaydaki noktaların düzenli bir dizilimidir ve kafes tabanlı kriptografi, bu yapılarla ilişkili belirli matematiksel problemleri çözmenin zorluğuna dayanır. Bu, kafes tabanlı kriptografiyi kuantum bilgisayarlardan gelenler de dahil olmak üzere saldırılara karşı güvenli ve dayanıklı kılar.
 
-![divider][divider].class=\"m-10 w-100\"
+2009'da Craig Gentry, [**A Fully Homomorphic Encryption Scheme ⧉**][00] adlı makalesinde açıkladığı bir yöntem geliştirdi; bu yöntem, kendi şifre çözme devresinin homomorfik değerlendirmesini yapabilen bir sistem oluşturmayı sağlıyordu. Bu öz-göndergeli tasarım, FHE şemalarının şifreli veriler üzerinde rastgele hesaplamalar yapmasına olanak tanır.
 
-## Prepararse için futuro quantistico
+### FHE algoritmasının işleyişi
 
-Il advenimiento inminente ın calcolo quantistico anuncia una potencial crisis per le metodologías di cifrado tradicionales. Il FHE su retículos è intrínsecamente resistente ai ataques quantistici, ofreciendo una defensa robusta contra la amenaza che la calcolo quantistico plantea alla sicurezza ın dati.
+![FHE işlem akışı][fhe].class=\"m-10 w-100\"
 
-### Cifrado resistente a lo quantistico
+Yukarıdaki diyagram, tamamen homomorfik şifreleme (FHE) algoritmasının işleyiş akışını gösterir.
 
-Il FHE fornisce una capa formidable di protección contra le amenazas ın calcolo quantistico. Empleando tecniche crittografiche su retículos, il FHE garantisce che i dati finanziari ve activos permanezcan seguros incluso rispetto a adversarios quantistici.
+- Şifreleme süreci, bir şifreleme anahtarı kullanılarak şifreli metin üretmek üzere şifrelenen açık metin veriyle başlar.
 
-La resistencia quantistica ın FHE è dovuto a problemas matemáticos subyacentes complejos gibi il Shortest Vector Problem (SVP) ve Closest Vector Problem (CVP). Se supone che questi problemas sono intratables incluso için computer quantistici, lo che hace ın FHE su retículos un candidato ideal için crittografia post-quantistica.
+- Bu şifreli veri, ardından bootstrapping olarak bilinen bir süreç aracılığıyla doğrudan şifreli metin üzerinde çeşitli hesaplamalara tabi tutulabilir.
 
-Utilizar un cifrado resistente a lo quantistico, gibi il FHE, è crucial non solo per proteger i activos finanziari sino anche per mantener la confianza ın clienti in la era digitale. A medida che la calcolo quantistico progresa, le istituzioni finanziarie che prioricen un cifrado robusto saranno mejor posicionadas per navegar i sfide e oportunidades futuros.
+- FHE'nin bu benzersiz yeteneği, verinin tüm süreç boyunca şifreli kalmasını sağlar. Gerekli işlemler yapıldıktan sonra, şifre çözme süreci, FHE şemasını kullanarak değiştirilen şifreli metni yeniden açık metne dönüştürebilir.
 
-![divider][divider].class=\"m-10 w-100\"
+FHE'nin başlıca avantajı, şifre çözmeye gerek kalmadan şifreli metin üzerinde hesaplama yapabilmesinde yatar; böylece hesaplama süreci boyunca veri gizliliği ve güvenliği korunur.
 
-## Il futuro ın FHE in la banca ve finanzas
+### FHE'nin kuantuma dayanıklılığı
 
-La trayectoria ın FHE all'interno dil settore finanziario è prometedora, ma ancora afronta sfide. Il settore bancario può explotar il pleno potencial ın FHE mejorando la tecnologia, integrándola in le operazioni finanziarie cotidianas e cooperando con i reguladores.
+Geleneksel şifreleme yöntemleri çoğunlukla kuantum algoritmalarına karşı savunmasızdır. Bu algoritmalar, bu şifreleme yöntemlerinin temelini oluşturan tamsayı çarpanlarına ayırma ve ayrık logaritmalar gibi problemleri hızla çözebilir. Buna karşılık, tamamen homomorfik şifreleme (FHE), kuantum bilgisayarların çözmesinin zor olduğu düşünülen kafes tabanlı problemleri kullanır. Bu kuantuma dayanıklılık, FHE'yi kuantum sonrası dönem için umut verici bir şifreleme yöntemi haline getirir.
 
-Il FHE può utilizarse in diversas applicazioni bancarie e finanziarie, come:
-
-- **Análisis seguro di dati finanziari**: il FHE consente ai bancos analizar dati finanziari cifrados gibi transazioni, puntuaciones di crédito e carteras di inversión, senza comprometer la confidencialidad ın cliente, garantizando un tratamiento seguro ın informazione sensible.
-
-- **Aprendizaje automático preservando la confidencialidad**: il FHE consente ai bancos entrenar e desplegar modelli di machine learning su dati cifrados, permitiéndoles aprovechar la IA için detección di fraude, la evaluación di rischi ve segmentación di clienti allo stesso tempo che mantienen la confidencialidad.
-
-- **Cálculo multipartícipe seguro**: il FHE consente una colaboración segura tra diverse istituzioni finanziarie, permitiéndoles efectuar cálculos conjuntos su dati cifrados senza compartir informazione sensible, facilitando le transazioni interbancarias seguras ve conformità.
-
-- **Seguridad ın API**: il FHE può asegurar le API cifrando i dati sensibles prima ın transmisión, garantizando che la informazione ın clienti permanezca confidencial durante i intercambios tra bancos e servizi terceros.
-
-- **Cloud computing seguro**: il FHE consente ai bancos externalizar in modo segura i cálculos ve almacenamiento di dati verso piattaforme cloud senza comprometer la confidencialidad, già che i dati permanecen cifrados durante tutto il processo, ampliando il uso di servizi cloud rentables e escalables.
-
-- **Cumplimiento normativo preservando la confidencialidad**: il FHE consente ai bancos compartir dati cifrados con le autoridades reguladoras, permitiendo il conformità ın exigencias di reporting senza exponer informazione sensible, simplificando il processo di conformità al tiempo che se mantiene la confidencialidad.
-
-Queste applicazioni revelan il potere transformador ın FHE in la banca ve finanzas e subrayan il suo potencial per revolucionar i standard di sicurezza e confidencialidad.
+Kafes tabanlı FHE, kuantum saldırılarına karşı dayanıklıdır; çünkü temelindeki matematiksel problemler, örneğin Shortest Vector Problem (SVP) ve Closest Vector Problem (CVP), kuantum bilgisayarlar için bile çözülmesi zor kabul edilir. Shor algoritması gibi kuantum algoritmaları, büyük sayıları çarpanlarına ayırmaya veya ayrık logaritmaları hesaplamaya dayanan geleneksel şifreleme yöntemlerini kırabilse de, kafes tabanlı problemlerin çözümünde belirgin bir üstünlük sağladığı bilinmemektedir. Bu özellik, kafes tabanlı FHE'yi kuantum sonrası kriptografi için umut verici bir aday yapar.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Superar i sfide di adopción ın FHE
+## FHE'nin bankacılık ve finans üzerindeki etkisi
 
-### Zorluklar di prestazioni e optimización
+### Güçlendirilmiş veri gizliliği ve güvenliği
 
-Abordar il sobrecoste computacional intrínseco al FHE rimane siendo un sfida pivote. I recientes progresos in optimización di algoritmos e in desarrollo di aceleradores di hardware especializados reducen la brecha di prestazioni tra il cálculo tradicional ve FHE.
+FHE'nin finans sektöründe uygulanması, veri gizliliğinde belirgin bir iyileşme vaat eder. Bankalar artık müşteri bilgilerinin mutlak gizliliğini sağlarken risk değerlendirmeleri, dolandırıcılık tespiti ve kapsamlı veri analizi yürütebilir. Bu teknolojik gelişme, veri ihlali riskini azaltarak dijital bankacılık platformlarının ve finansal işlemlerin bütünlüğünü pekiştirir.
 
-### Estandarización e colaboración
+### Bulut bilişim ve dış kaynak kullanımı
 
-La vía verso una adopción generalizada ın FHE depende ın estandarización ın protocolos e di una colaboración reforzada tra le partes interesadas ın ecosistema finanziario. Un approccio unificado per abrazar il FHE può acelerar significativamente il suo integración con i servizi finanziari generalistas.
+Homomorfik şifrelemenin başlıca uygulama alanlarından biri, bulutta güvenli veri işlemedir. Bankalar, veri gizliliğinden ödün vermeden şifreli veriyi işlemek için bulut bilişim hizmetlerinden yararlanabilir. Bu, finansal kuruluşların hassas finansal bilgilerin gizliliğini korurken bulut bilişimin ölçeklenebilirliğinden ve maliyet verimliliğinden yararlanmasını sağlar.
 
-### Düzenleme e conformità
-
-I organismos reguladores desempeñan un papel crítico in la adopción ın FHE, con leyes su la confidencialidad ın dati che imponen il suo uso. Un impulso normativo potrebbe servire gibi catalizador için adopción completa ın FHE in tutta la industria bancaria e finanziaria, allo stesso tempo che se garantisce il conformità ın normativas di protección di dati.
-
-Il panorama normativo attorno alla confidencialidad ve sicurezza ın dati desempeña un papel significativo in la adopción ın FHE in il settore bancario. Normativas estrictas gibi il RGPD (General Data Protection Regulation) ve CCPA (California Consumer Privacy Act) imponen medidas robustas di protección di dati e subrayan il diritto individual alla vida privada. Il FHE, con il suo capacità per tratar dati cifrados senza descifrado, se alinea bene con la orientación centrada in la confidencialidad di queste normativas. A medida che le leyes su la confidencialidad se tornano daha çok estrictas, il FHE offre una soluzione convincente che consente ai bancos efectuar i cálculos e análisis necesarios al tiempo che se respetan le exigencias di conformità.
+Bankaların bulut bilişime ve hesaplama görevlerinin dış kaynağa aktarılmasına yönelmesi, FHE'nin önemini ortaya koyar. Güvenli bulut bilişim ile finansal kuruluşlar, hassas şifreli veriyi tamamen homomorfik şifreleme (FHE) aracılığıyla korurken dış kaynaklara erişebilir. FHE, bankaların bulut bilişim hizmetlerinden güvenli biçimde yararlanmasını sağlarken hassas şifreli verinin her zaman korunmasını güvence altına alır.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Asegurar i grandi modelli di linguaggio con il FHE
+## Kuantum geleceğine hazırlanmak
 
-I grandi modelli di linguaggio (LLM) sono potentes strumenti di IA. Ma il suo uso suscita preocupaciones di confidencialidad, in particolare quando tratan dati di utente sensibles. Il FHE offre una soluzione che protege la confidencialidad ın utente e preserva la propiedad intelectual ın propietarios di modelli permitiendo cálculos su dati cifrados.
+Kuantum bilişimin yaklaşan gelişi, geleneksel şifreleme yöntemleri için olası bir kriz habercisidir. Kafes tabanlı FHE, kuantum saldırılarına doğası gereği dayanıklıdır ve kuantum bilişimin veri güvenliğine yönelttiği tehdide karşı sağlam bir savunma sunar.
 
-### Zorluklar di confidencialidad con i LLM
+### Kuantuma dayanıklı şifreleme
 
-Desplegar un LLM in locale per mantener la confidencialidad ın dati plantea sfide gibi costi elevados ve exposición potencial di una propiedad intelectual valiosa. Il FHE aborda questi sfide permitiendo ai LLM funcionar su dati di utente cifrados, garantizando la confidencialidad ve sicurezza ın modello simultáneamente.
+FHE, kuantum bilişim tehditlerine karşı güçlü bir koruma katmanı sağlar. Kafes tabanlı kriptografik teknikler kullanarak FHE, finansal verilerin ve varlıkların kuantum saldırganları karşısında bile güvende kalmasını sağlar.
 
-### Il approccio LLM cifrado di Zama
+FHE'nin kuantuma dayanıklılığı, Shortest Vector Problem (SVP) ve Closest Vector Problem (CVP) gibi karmaşık matematiksel problemlerden kaynaklanır. Bu problemlerin kuantum bilgisayarlar için bile çözülemez olduğu düşünülür ve bu da kafes tabanlı FHE'yi kuantum sonrası kriptografi için ideal bir aday yapar.
 
-[**Zama ⧉**][01], una azienda di tecnologie di confidencialidad, ha demostrado la viabilidad di costruire un LLM cifrado con la ayuda ın FHE. Il suo approccio, che combina FHE e altre tecnologie che refuerzan la confidencialidad, alcanza rendimientos comparables ai modelli non cifrados con solo un aumento modesto ın sobrecoste computacional.
+FHE gibi kuantuma dayanıklı şifreleme kullanmak, yalnızca finansal varlıkları korumak için değil, dijital çağda müşteri güvenini sürdürmek için de kritik önem taşır. Kuantum bilişim ilerledikçe, sağlam şifrelemeye öncelik veren finansal kuruluşlar, gelecekteki zorlukları ve fırsatları yönetmek için daha iyi konumlanacaktır.
 
-### Mejorar la confidencialidad ın utente con LLM cifrados
+![divider][divider].class=\"m-10 w-100\"
 
-La integración ın FHE con i LLM ha il potencial di transformar la confidencialidad ın utente, in particolare in le applicazioni che tratan informazione personal o profesional sensible. A medida che la IA se concentra daha çok in la confidencialidad, è importante che sviluppatori, utenti e reguladores trabajen juntos. Questa colaboración è chiave per costruire un ecosistema di IA che ponga la sicurezza ve confidencialidad in primer lugar.
+## FHE'nin bankacılık ve finanstaki geleceği
+
+FHE'nin finans sektöründeki gidişatı umut verici olsa da hâlâ zorluklarla karşı karşıyadır. Bankacılık sektörü, teknolojiyi geliştirerek, onu günlük finansal operasyonlara katarak ve düzenleyicilerle işbirliği yaparak FHE'nin tüm potansiyelinden yararlanabilir.
+
+FHE, aşağıdakiler gibi çeşitli bankacılık ve finans uygulamalarında kullanılabilir:
+
+- **Güvenli finansal veri analizi**: FHE, bankaların işlemler, kredi puanları ve yatırım portföyleri gibi şifreli finansal verileri müşteri gizliliğinden ödün vermeden çözümlemesini sağlar ve hassas bilgilerin güvenli işlenmesini güvence altına alır.
+
+- **Gizliliği koruyan makine öğrenimi**: FHE, bankaların şifreli veriler üzerinde makine öğrenimi modelleri eğitmesine ve dağıtmasına olanak tanır; böylece veri gizliliğini korurken dolandırıcılık tespiti, risk değerlendirmesi ve müşteri segmentasyonu için yapay zekadan yararlanabilirler.
+
+- **Güvenli çok taraflı hesaplama**: FHE, çeşitli finansal kuruluşlar arasında güvenli işbirliğine olanak tanır; hassas bilgileri paylaşmadan şifreli veriler üzerinde ortak hesaplamalar yapmalarını sağlayarak güvenli bankalararası işlemleri ve uyumluluğu kolaylaştırır.
+
+- **API güvenliği**: FHE, hassas veriyi aktarımdan önce şifreleyerek API'leri koruyabilir; böylece bankalar ile üçüncü taraf hizmetler arasındaki veri alışverişi sırasında müşteri bilgilerinin gizli kalmasını sağlar.
+
+- **Güvenli bulut bilişim**: FHE, bankaların hesaplamaları ve veri depolamayı veri gizliliğinden ödün vermeden bulut platformlarına aktarmasını sağlar; çünkü veri tüm süreç boyunca şifreli kalır ve bu da maliyet-etkin ve ölçeklenebilir bulut hizmetlerinin kullanımını genişletir.
+
+- **Gizliliği koruyan düzenleyici uyum**: FHE, bankaların şifreli veriyi düzenleyici otoritelerle güvenli biçimde paylaşmasına olanak tanır; hassas müşteri bilgilerini açığa çıkarmadan raporlama gereksinimlerine uyumu sağlar ve gizliliği korurken uyum sürecini sadeleştirir.
+
+Bu uygulamalar, FHE'nin bankacılık ve finans sektöründeki dönüştürücü gücünü ortaya koyar ve veri güvenliği ile gizlilik standartlarını yeniden şekillendirme potansiyelini vurgular.
+
+![divider][divider].class=\"m-10 w-100\"
+
+## FHE benimsenmesindeki zorlukların üstesinden gelmek
+
+### Performans zorlukları ve optimizasyon
+
+FHE'ye özgü hesaplama yükünü ele almak önemli bir zorluk olmaya devam ediyor. Algoritmaların optimize edilmesinde ve özel donanım hızlandırıcılarının geliştirilmesinde son dönemde kaydedilen ilerleme, geleneksel bilişim ile tamamen homomorfik şifreleme (FHE) arasındaki performans farkını daraltmaktadır.
+
+### Standartlaştırma ve işbirliği
+
+FHE'nin yaygın biçimde benimsenmesinin yolu, protokollerin standartlaştırılmasına ve finansal ekosistemdeki paydaşlar arasında güçlendirilmiş işbirliğine bağlıdır. FHE'yi benimsemeye yönelik birleşik bir yaklaşım, onun ana akım finansal hizmetlere entegrasyonunu belirgin biçimde hızlandırabilir.
+
+### Düzenleme ve uyum
+
+Düzenleyici kurumlar, veri gizliliği yasalarının kullanımını zorunlu kılmasıyla FHE'nin benimsenmesinde kritik bir rol oynar. Düzenleyici bir teşvik, veri koruma düzenlemelerine uyumu sağlarken FHE'nin bankacılık ve finans sektörünün tamamında kapsamlı biçimde benimsenmesi için bir katalizör görevi görebilir.
+
+Veri gizliliği ve güvenliği etrafındaki düzenleyici ortam, FHE'nin bankacılık sektöründe benimsenmesinde önemli bir rol oynar. General Data Protection Regulation (GDPR) ve California Consumer Privacy Act (CCPA) gibi katı düzenlemeler, sağlam veri koruma önlemlerini zorunlu kılar ve bireyin gizlilik hakkını vurgular. Şifreli veriyi şifresini çözmeden işleyebilme yeteneğiyle FHE, bu düzenlemelerin gizlilik odaklı yaklaşımıyla iyi örtüşür. Veri gizliliği yasaları giderek daha katı hale geldikçe, FHE bankaların uyum gereksinimlerine uyarken gerekli hesaplamaları ve analizleri yapmasına olanak tanıyan güçlü bir çözüm sunar.
+
+![divider][divider].class=\"m-10 w-100\"
+
+## Büyük dil modellerini tamamen homomorfik şifreleme (FHE) ile güvence altına almak
+
+Büyük dil modelleri (LLM'ler), güçlü yapay zeka araçlarıdır. Ancak kullanımları, özellikle hassas kullanıcı verileriyle çalışırken gizlilik kaygıları doğurur. Tamamen homomorfik şifreleme (FHE), şifreli veriler üzerinde hesaplama yapılmasını sağlayarak kullanıcı gizliliğini koruyan ve model sahiplerinin fikri mülkiyetini muhafaza eden bir çözüm sunar.
+
+### LLM'lerde gizlilik zorlukları
+
+Veri gizliliğini korumak amacıyla şirket içi (on-premise) bir LLM dağıtmak, yüksek maliyetler ve değerli fikri mülkiyetin açığa çıkması gibi zorluklar doğurur. FHE, LLM'lerin şifreli kullanıcı verileri üzerinde çalışmasına olanak tanıyarak bu zorlukları ele alır ve gizlilik ile model güvenliğini aynı anda sağlar.
+
+### Zama'nın şifreli LLM yaklaşımı
+
+Bir gizlilik teknolojisi şirketi olan [**Zama ⧉**][01], FHE kullanarak şifreli bir LLM oluşturmanın uygulanabilirliğini göstermiştir. FHE'yi diğer gizlilik güçlendirici teknolojilerle birleştiren yaklaşımları, hesaplama yükünde yalnızca mütevazı bir artışla şifrelenmemiş modellere kıyasla karşılaştırılabilir bir performansa ulaşır.
+
+### Şifreli LLM'lerle kullanıcı gizliliğini iyileştirmek
+
+FHE'nin LLM'lere entegrasyonu, özellikle hassas kişisel veya ticari bilgilerle çalışan uygulamalarda kullanıcı gizliliğini dönüştürme potansiyeli taşır. Yapay zeka gizliliğe daha fazla odaklandıkça, geliştiricilerin, kullanıcıların ve düzenleyicilerin birlikte çalışması önemlidir. Bu işbirliği, güvenliği ve gizliliği ön planda tutan bir yapay zeka ekosistemi kurmanın anahtarıdır.
 
 ![divider][divider].class=\"m-10 w-100\"
 
 ## Sonuç
 
-Il **cifrado completamente homomórfico (FHE)** è una tecnologia di sicurezza ın dati revolucionaria che offre una confidencialidad e una sicurezza excepcionales alla banca ve finanzas.
+**Tamamen homomorfik şifreleme (FHE)**, bankacılık ve finans sektörüne olağanüstü gizlilik ve güvenlik sunan bir veri güvenliği teknolojisidir.
 
-A medida che la calcolo quantistico avanza, il FHE se torna ancora daha çok crucial. Il suo adopción remodelará la ciberseguridad in i servizi finanziari, haciendo la banca digitale daha çok digna di confianza e daha çok segura in il nostro mondo ogni volta daha çok conectado.
+Kuantum bilişim ilerledikçe, FHE daha da kritik hale gelir. Benimsenmesi, finansal hizmetlerde siber güvenliği yeniden şekillendirecek ve giderek daha bağlantılı hale gelen dünyamızda dijital bankacılığı daha güvenilir ve daha güvenli kılacaktır.
 
-Il advenimiento ın FHE anche ha aperto nuove posibilidades di uso seguro e privado ın grandi modelli di linguaggio. Permitiendo LLM cifrados, il FHE garantisce che i dati ın utente permanezcan confidenciales al tiempo che se benefician ın capacità avanzadas di questi modelli.
+FHE'nin ortaya çıkışı, büyük dil modellerinin güvenli ve gizli kullanımı için de yeni olanaklar açmıştır. FHE, şifreli LLM'lere olanak tanıyarak, kullanıcı verilerinin gizli kalmasını ve aynı zamanda bu modellerin gelişmiş yeteneklerinden yararlanılmasını sağlar.
 
-La era ın calcolo quantistico se aproxima. I bancos devono evaluar proactivamente il suo infraestructura di cifrado, identificare le vulnerabilidades potenciales e sviluppare una roadmap chiara için adopción ın FHE al fine di proteger i dati e mantener la confianza ın cliente.
+Kuantum bilişim çağı yaklaşıyor. Bankalar, veriyi korumak ve müşteri güvenini sürdürmek için şifreleme altyapılarını proaktif biçimde değerlendirmeli, olası güvenlik açıklarını belirlemeli ve FHE'yi benimsemeye yönelik net bir yol haritası geliştirmelidir.
 
-[00]: https://crypto.stanford.edu/craig/ "The original paper by Craig Gentry on Fully Homomorphic Encryption"
-[01]: https://zama.ai/ "Zama - Fully Homomorphic Encryption"
+[00]: https://crypto.stanford.edu/craig/ "Craig Gentry'nin tamamen homomorfik şifreleme üzerine özgün makalesi"
+[01]: https://zama.ai/ "Zama - Tamamen Homomorfik Şifreleme"
 
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-[fhe]: https://cloudcdn.pro/stocks/diagrams/fhe_algorithm_diagram.webp "FHE Architecture"
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Ayırıcı"
+[fhe]: https://cloudcdn.pro/stocks/diagrams/fhe_algorithm_diagram.webp "FHE Mimarisi"

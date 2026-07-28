@@ -1,111 +1,111 @@
 ---
 title: "KyberLib: kuantum tehditlerine karşı Rust destekli kalkan"
-subtitle: "CRYSTALS-Kyber'ın güvenli ve performanslı Rust uygulaması"
-description: "KyberLib, kuantum sonrası anahtar kapsülleme için CRYSTALS-Kyber'ın sağlam bir Rust uygulamasıdır."
+subtitle: "KyberLib, kuantum çağı için CRYSTALS-Kyber'ın sağlam bir Rust uygulaması"
+description: "Verilerinizi kuantum tehditlerinden ve kriptanaliz saldırılarından korumak için CRYSTALS-Kyber algoritmasının sağlam ve kuantuma dayanıklı bir kriptografi uygulaması."
 date: "November 28, 2023"
 language: "tr-TR"
 locale: "tr_TR"
 banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
-banner_alt: "Bir kalkanın soyut görselleştirmesi"
-keywords: "KyberLib, CRYSTALS-Kyber, post-kuantum, Rust, kriptografi, KEM, FIPS 203, açık kaynak"
+banner_alt: "KyberLib ile kuantum çağında güvenli iletişimi güçlendirmek"
+keywords: "KyberLib, Rust CRYSTALS-Kyber, kuantum sonrası kriptografi, kafes tabanlı kriptografi, kuantuma dayanıklı anahtar değişimi, NIST FIPS 203, Sebastien Rousseau, KEM, ödeme kimlik doğrulama, PQC kütüphanesi"
 ---
 
 
 ---
 
-> **TL;DR.** KyberLib offre un'implementazione Rust pulita e auditabile dello standard NIST FIPS 203 (CRYSTALS-Kyber). Il fondamento dell'autenticazione di pagamento resistente al quantum.
+> **TL;DR.** Verilerinizi kuantum tehditlerinden ve kriptanaliz saldırılarından korumak için CRYSTALS-Kyber algoritmasının sağlam ve kuantuma dayanıklı bir kriptografi uygulaması.
 >
 > **Önemli Çıkarımlar**
 >
-> - **Implementazione di riferimento** — segue la specifica FIPS 203 in modo verificabile e testabile.
-> - **Sicurezza Rust** — memory-safety, immunità da buffer overflow, build deterministica.
-> - **Performance bancaria** — tempi di esecuzione misurati e prevedibili, adatti a integrazione in motore di autenticazione.
-> - **Open source** — disponibile con licenza Apache-2.0 per audit e riuso.
+> - **Kuantum çağında verilerinizi güvence altına almak.** Kuantum hesaplamanın ortaya çıkışı, geleneksel kriptografik güvenlik önlemlerine ciddi bir tehdit getirdi.
+> - **Kafes tabanlı kriptografiyi incelemek.** Kafes tabanlı kriptografi (LBC), QSC alanında öne çıkan bir aday olarak beliriyor ve umut verici bir kuantum sonrası kriptografi (PQC) çözümü sunuyor.
+> - **KyberLib: kuantuma dayanıklı kriptografi için bir Rust kütüphanesi.** KyberLib, gelişmiş bellek güvenliği ve sağlam sistem düzeyinde güvenlik sunmak için CRYSTALS-Kyber'ın gücünden yararlanır.
+> - **Web uygulamalarını kuantuma dayanıklı kriptografiyle korumak.** Minimum bellek ayak izi için tasarlanan KyberLib, güvenlikten ödün vermeden gömülü ve kaynağı kısıtlı sistemler için idealdir.
 
 ---
 
-[![Reforzar la comunicación segura in la era quantistica con KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
+[![KyberLib ile kuantum çağında güvenli iletişimi güçlendirmek](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
 
-`KyberLib` è una libreria Rust che protege i suoi dati rispetto alla amenaza potencial ın calcolo quantistico. Construida su il **algoritmo [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)**, `KyberLib` offre una sicurezza, una eficiencia e una versatilidad excepcionales, integrándose fácilmente in diversas piattaforme, incluidos i entornos `non-std`.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## Asegurar i suoi dati in la era quantistica
-
-Il advenimiento ın calcolo quantistico ha introducido una amenaza significativa per le medidas crittografiche convencionales. Per abordar questo sfida, il campo ın criptografía resistente a lo quantistico (QSC) evoluciona rapidamente.
-
-Alla vanguardia di questo movimiento transformador, il National Institute of Standards and Technology (NIST) lidera la estandarización ın algoritmos QSC.
-
-In 2023, il NIST retuvo cuatro algoritmos innovadores:
-
-- [**CRYSTALS-Kyber** ⧉][01] (mecanismo di encapsulación di chiavi)
-- [**CRYSTALS-Dilithium** ⧉][02] (firmas digitali)
-- [**FALCON** ⧉][03] (firmas digitali ligeras)
-- [**SPHINCS+** ⧉][04] (firmas digitali basate in hash)
-
-Questi algoritmos revolucionarios se apoyan in principios matemáticos diversos: criptografía su retículos, basata in hash, basata in códigos, con l'obiettivo di fornire una defensa robusta contra i ataques quantistici.
-
-## Explorar la criptografía su retículos
-
-La criptografía su retículos (LBC — Lattice-Based Cryptography) emerge gibi favorita in QSC, ofreciendo una soluzione prometedora di crittografia post-quantistica (PQC). La LBC è polivalente, con applicazioni che van da i mecanismos di encapsulación di chiavi (KEM) fino a le firmas digitali ve esquemas di cifrado di chiave pública, anclados in i retículos matemáticos.
-
-I retículos sono un concepto fundamental ın matemáticas che hanno hallado applicazioni in diversos campos, tra ellos la criptografía. In términos simples, un retículo è un arreglo regular di puntos in il espacio, formando una estructura semejante a una cuadrícula. Questi puntos sono conectados per líneas, formando una rete di celdas interconectadas. La disposición específica ın puntos ve suo espaciado definen le caratteristiche únicas di un retículo.
-
-### Representación 3D di un retículo con vectores base
-
-Questo gráfico presenta una estructura di retículo 3D generata per tres vectores base:
-
-- `b1 = [1, 0, 0]` in rojo,
-- `b2 = [0, 1, 0]` in verde, e
-- `b3 = [0, 0, 1]` in azul.
-
-Ogni punto ın retículo se forma combinando questi vectores base in proporciones enteras variadas, creando un esquema di cuadrícula che se extiende in le tres dimensiones espaciales. La visualización captura la esencia di un retículo 3D, concepto ampliamente utilizzato in física e matemáticas per representar il arreglo regular e repetido di puntos in il espacio.
-
-![3D Lattice Representation with Basis Vectors][06].class=\"img-fluid mx-auto d-block\"
-
-In criptografía, i retículos se emplean gibi base di ciertos algoritmos crittografici. La criptografía su retículos aprovecha le propiedades matemáticas ın retículos per creare esquemas crittografici seguros che resistan i ataques ın computer quantistici. I computer quantistici suponen una amenaza significativa için criptografía convencional, già che possono romper eficientemente algoritmos che se apoyan in la factorización di grandi números o in la resolución ın problemas di logaritmo discreto.
-
-CRYSTALS-Kyber ilustra le fortalezas ın LBC, proporcionando una resistencia robusta contra i ataques quantistici insieme con una eficiencia e un tamaño di chiave excepcionales. Il suo compatibilidad multiplataforma e crittografica la convertono in una opción fiable di sicurezza di dati in la era quantistica.
-
-Le especificaciones actuales di CRYSTALS-Kyber sono:
-
-- **Kyber512**: fornisce un livello di sicurezza equivalente al cifrado AES di 128 bits, protegiendo i dati sensibles con una protección standard ın settore.
-- **Kyber768**: fornisce un livello di sicurezza equivalente al cifrado AES di 256 bits, garantizando la confidencialidad di informazione altamente sensible.
-- **Kyber1024**: fornisce un livello di sicurezza che supera AES di 256 bits, ofreciendo una protección robusta contra i ataques quantistici e preservando la integridad ın dati in un futuro lejano.
-
-### Comparación di livelli di sicurezza tra algoritmos clásicos e resistentes a lo quantistico
-
-Questo gráfico ilustra i livelli di sicurezza relativos ın algoritmos crittografici clásicos gibi RSA-2048 e ECDSA, comparados con le especificaciones ın variantes resistentes a lo quantistico di CRYSTALS-Kyber (Kyber512, Kyber768 e Kyber1024).
-
-Sebbene il gráfico offre una comparación visual, è crucial señalar che i livelli di sicurezza non sono direttamente comparables, già che se basan in principios matemáticos diferentes.
-
-Tuttavia, il gráfico aporta un punto di referencia útil per comprender i livelli di sicurezza ın algoritmos resistentes a lo quantistico.
-
-![Lattice-Based Cryptography][05].class=\"img-fluid mx-auto d-block\"
+`KyberLib`, verilerinizi kuantum hesaplamanın olası tehdidinden koruyan Rust tabanlı bir kütüphanedir. **[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) algoritması** üzerine kurulan `KyberLib`, üstün güvenlik, verimlilik ve çok yönlülük sunar; `no-std` ortamları dahil olmak üzere çeşitli platformlara kolayca entegre olur.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## KyberLib: una libreria Rust için criptografía resistente a lo quantistico
+## Kuantum çağında verilerinizi güvence altına almak
 
-KyberLib aprovecha la potencia di CRYSTALS-Kyber per offrire una sicurezza di memoria reforzada e una sicurezza di sistema robusta. Admite diverse especificaciones di CRYSTALS-Kyber (Kyber512, Kyber768, Kyber1024), ofreciendo un abanico di livelli di sicurezza adaptados a i suoi necesidades específicas. Il suo conformidad `no_std` la converte in una elección ideal için sistemi embebidos, ve suo compatibilidad con WebAssembly (WASM) facilita la integración con le applicazioni web.
+Kuantum hesaplamanın ortaya çıkışı, geleneksel kriptografik güvenlik önlemlerine ciddi bir tehdit getirdi. Bu zorluğa yanıt vermek için kuantuma dayanıklı kriptografi (QSC) alanı hızla gelişiyor.
+
+Bu dönüşümün ön saflarında, QSC algoritmalarının standartlaştırılmasına öncülük eden National Institute of Standards and Technology (NIST) yer alıyor.
+
+2023 yılında NIST, dört yenilikçi algoritmayı kısa listeye aldı:
+
+- [**[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)** ⧉][01] (anahtar kapsülleme mekanizması)
+- [**CRYSTALS-Dilithium** ⧉][02] (dijital imzalar)
+- [**FALCON** ⧉][03] (hafif dijital imzalar)
+- [**SPHINCS+** ⧉][04] (hash tabanlı dijital imzalar)
+
+Bu öncü algoritmalar; kafes tabanlı kriptografi, hash tabanlı kriptografi ve kod tabanlı kriptografi gibi farklı matematiksel ilkeler üzerine kuruludur ve kuantum saldırılarına karşı sağlam bir savunma sağlamayı amaçlar.
+
+## Kafes tabanlı kriptografiyi incelemek
+
+Kafes tabanlı kriptografi (LBC), QSC alanında öne çıkan bir aday olarak beliriyor ve umut verici bir kuantum sonrası kriptografi (PQC) çözümü sunuyor. LBC çok yönlüdür; uygulama alanları, matematiksel kafeslere dayanan anahtar kapsülleme mekanizmalarından (KEM), dijital imzalardan ve açık anahtarlı şifreleme şemalarından oluşur.
+
+Kafesler, matematikte temel bir kavramdır ve kriptografi dahil çeşitli alanlarda uygulama bulmuştur. Basitçe ifade etmek gerekirse, bir kafes, uzayda düzenli bir nokta dizilimidir ve ızgara benzeri bir yapı oluşturur. Bu noktalar çizgilerle birbirine bağlanarak birbirine bağlı hücrelerden oluşan bir ağ meydana getirir. Noktaların belirli dizilimi ve aralarındaki mesafe, bir kafesin kendine özgü özelliklerini tanımlar.
+
+### Taban vektörleriyle 3B kafes gösterimi
+
+Bu grafik, üç taban vektörü tarafından oluşturulan bir 3B kafes yapısını sunar:
+
+- `b1 = [1, 0, 0]` kırmızı,
+- `b2 = [0, 1, 0]` yeşil ve
+- `b3 = [0, 0, 1]` mavi.
+
+Kafes üzerindeki her nokta, bu taban vektörlerinin çeşitli tam sayı oranlarında birleştirilmesiyle oluşur ve üç uzaysal boyutun tamamına yayılan ızgara benzeri bir desen meydana getirir. Görselleştirme, uzaydaki noktaların düzenli ve tekrar eden dizilimini temsil etmek için fizik ve matematikte yaygın olarak kullanılan 3B kafes kavramının özünü yansıtır.
+
+![Taban vektörleriyle 3B kafes gösterimi][06].class=\"img-fluid mx-auto d-block\"
+
+Kriptografide kafesler, belirli kriptografik algoritmalar için temel olarak kullanılır. Kafes tabanlı kriptografi (LBC), kuantum bilgisayarların saldırılarına dayanıklı güvenli kriptografik şemalar oluşturmak için kafeslerin matematiksel özelliklerinden yararlanır. Kuantum bilgisayarlar, büyük sayıları çarpanlarına ayırmaya veya ayrık logaritma problemlerini çözmeye dayanan algoritmaları verimli biçimde kırabildiğinden, geleneksel kriptografi için ciddi bir tehdit oluşturur.
+
+[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html), LBC'nin güçlü yönlerini örnekler; kuantum saldırılarına karşı sağlam bir direnci, üstün verimlilik ve anahtar boyutuyla bir araya getirir. Birden fazla platformu desteklemesi ve kriptografiyle uyumluluğu, onu kuantum çağı için güvenilir bir veri güvenliği seçeneği yapar.
+
+[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) için güncel spesifikasyonlar şöyledir:
+
+- **Kyber512**: 128 bit AES şifrelemeye eşdeğer bir güvenlik düzeyi sağlar ve hassas verileri sektör standardı korumayla güvence altına alır.
+- **Kyber768**: 256 bit AES şifrelemeye eşdeğer bir güvenlik düzeyi sağlar ve son derece hassas bilgilerin gizliliğini güvence altına alır.
+- **Kyber1024**: 256 bit AES şifrelemeyi aşan bir güvenlik düzeyi sağlar; kuantum saldırılarına karşı sağlam bir koruma sunar ve veri bütünlüğünü uzak geleceğe kadar güvence altına alır.
+
+### Klasik ve kuantuma dayanıklı algoritmalar arasında güvenlik düzeylerinin karşılaştırması
+
+Bu çubuk grafik, RSA-2048 ve Eliptik Eğri Dijital İmza Algoritması (ECDSA) gibi klasik kriptografik algoritmaların göreli güvenlik düzeylerini, kuantuma dayanıklı [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) algoritması varyantlarının (Kyber512, Kyber768 ve Kyber1024) spesifikasyonlarıyla karşılaştırarak gösterir.
+
+Grafik görsel bir karşılaştırma sunsa da, güvenlik düzeylerinin farklı matematiksel ilkelere dayandığı için doğrudan karşılaştırılabilir olmadığını belirtmek önemlidir.
+
+Yine de grafik, kuantuma dayanıklı algoritmaların güvenlik düzeylerini anlamak için yararlı bir referans noktası sağlar.
+
+![Kafes tabanlı kriptografi][05].class=\"img-fluid mx-auto d-block\"
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Proteger le applicazioni web mediante la criptografía resistente a lo quantistico
+## KyberLib: kuantuma dayanıklı kriptografi için bir Rust kütüphanesi
 
-Diseñada per una huella di memoria mínima, KyberLib è ideal için sistemi embebidos e con recursos limitados, senza comprometer la sicurezza. Il suo implementación in Rust capitaliza le funzionalità di sicurezza ın lenguaje, fortificando la sicurezza ofrecida için algoritmo CRYSTALS-Kyber.
+KyberLib, gelişmiş bellek güvenliği ve sağlam sistem düzeyinde güvenlik sunmak için [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)'ın gücünden yararlanır. Birden fazla [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) spesifikasyonunu (Kyber512, Kyber768, Kyber1024) destekleyerek özel ihtiyaçlarınıza uygun çeşitli güvenlik düzeyleri sunar. `no_std` uyumluluğu onu gömülü sistemler için ideal bir seçim yaparken, WebAssembly (WASM) uyumluluğu web uygulamalarına sorunsuz entegrasyonu kolaylaştırır.
 
-Inoltre, la compatibilidad WebAssembly di KyberLib refuerza il suo utilidad in le applicazioni web, garantizando che siga siendo una strumento vital in il campo dinámico ın criptografía.
+![divider][divider].class=\"m-10 w-100\"
 
-[Empiece con KyberLib ora stesso. ⧉][00] Fácil di instalar, gratuita per uso personal o commerciale, KyberLib è il suo soluzione di referencia için criptografía resistente a lo quantistico.
+## Web uygulamalarını kuantuma dayanıklı kriptografiyle korumak
 
-[00]: https://kyberlib.com/getting-started/index.html "Getting Started"
+Minimum bellek ayak izi için tasarlanan KyberLib, güvenlikten ödün vermeden gömülü ve kaynağı kısıtlı sistemler için idealdir. Rust tabanlı uygulaması, dilin güvenlik özelliklerinden yararlanarak [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) algoritmasının sunduğu güvenliği güçlendirir.
+
+Ayrıca KyberLib'in WebAssembly uyumluluğu, web uygulamalarındaki kullanışlılığını artırır ve kriptografinin dinamik alanında önemli bir araç olmaya devam etmesini sağlar.
+
+[Hemen KyberLib ile başlayın! ⧉][00] Kurulumu zahmetsiz, hem kişisel hem ticari kullanım için ücretsiz olan KyberLib, kuantuma dayanıklı kriptografi için başvuracağınız çözümdür.
+
+[00]: https://kyberlib.com/getting-started/index.html "Başlarken"
 [01]: https://pq-crystals.org/kyber/ "Kyber: A CCA-secure module-lattice-based KEM"
 [02]: https://pq-crystals.org/dilithium/ "Dilithium: A CCA-secure lattice-based signature scheme"
 [03]: https://falcon-sign.info/ "FALCON: A post-quantum signature scheme"
 [04]: https://sphincs.org/ "SPHINCS+: A stateless hash-based signature scheme"
-[05]: https://cloudcdn.pro/stocks/diagrams/kyber-vs-classical.svg "Comparison of Security Levels between Classical and Quantum-Resistant Algorithms"
-[06]: https://cloudcdn.pro/stocks/diagrams/3D-lattice-graph.svg "3D Lattice Representation with Basis Vectors"
-[07]: https://kyberlib.com/ "Privacy and Security in a Quantum World"
+[05]: https://cloudcdn.pro/stocks/diagrams/kyber-vs-classical.svg "Klasik ve kuantuma dayanıklı algoritmalar arasında güvenlik düzeylerinin karşılaştırması"
+[06]: https://cloudcdn.pro/stocks/diagrams/3D-lattice-graph.svg "Taban vektörleriyle 3B kafes gösterimi"
+[07]: https://kyberlib.com/ "Kuantum dünyasında gizlilik ve güvenlik"
 
-[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Ayırıcı"

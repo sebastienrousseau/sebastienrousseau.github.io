@@ -1,140 +1,153 @@
 ---
-title: "Kuantum çağında veri koruma: hash kütüphanesi hsh"
-subtitle: "Kuantum sonrası kimlik doğrulama için Rust hash temel yapı taşları"
-description: "hsh, parolaların kuantum sonrası çağda şifrelenmesi ve doğrulanması için güvenli hash algoritmaları sunan bir Rust kütüphanesidir."
+title: "Kuantum çağında veri koruma: hash kütüphanesi (HSH)"
+subtitle: "HSH: kuantum sonrası kimlik doğrulama çağı için kuantuma dayanıklı bir hash kütüphanesi"
+description: "HSH, verilerinizi korumak için kuantuma dayanıklı kriptografik temel yapı taşları kullanır ve gelecekteki kuantum bilişim gelişmeleri karşısında bile güvenliğini sağlar."
 date: "October 16, 2023"
 language: "tr-TR"
 locale: "tr_TR"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp"
-banner_alt: "Soyut kriptografik hash görseli"
-keywords: "Rust, hash, hsh, post-kuantum, kriptografi, parolalar, kimlik doğrulama, açık kaynak"
+banner_alt: "Kuantum bilişim temalı yaratıcı bir görsel"
+keywords: "kuantuma dayanıklı kriptografi, kuantum sonrası kriptografi, hash kütüphanesi, HSH, parola özetleme, anahtar türetme, Argon2i, Bcrypt, Scrypt, kuantum bilişim"
 ---
 
 
-![Soyut kriptografik hash görseli](https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"
+![Kuantum bilişim temalı yaratıcı bir görsel](https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"
 
 ---
 
-> **TL;DR.** HSH offre primitive di hash e digest sicure in Rust, progettate per l'era post-quantistica dell'autenticazione. Una base solida için sistemi di password e verifica nei servizi finanziari.
+> **TL;DR.** HSH, verilerinizi korumak için kuantuma dayanıklı kriptografik temel yapı taşları kullanır ve gelecekteki kuantum bilişim gelişmeleri karşısında bile güvenliğini sağlar.
 >
 > **Önemli Çıkarımlar**
 >
-> - **Resistenza al quantum** — algoritmi selezionati per resistere agli attacchi ın avversari quantistici (Grover, ecc.).
-> - **API Rust idiomatica** — interfaccia type-safe, zero-cost e auditabile.
-> - **Caso d'uso bancario** — pensata per password hashing in sistemi di autenticazione regolamentati.
-> - **Open source** — disponibile su crates.io e GitHub con licenza Apache-2.0.
+> - **Fikir.** Hash kütüphanesi (HSH), verileri kuantuma dayanıklı kriptografiyle korumak için hafif, verimli ve kullanımı kolay bir çözüm sunar.
+> - **Etki.** Hash kütüphanesi (HSH), zengin bir modern kriptografik temel yapı taşları kümesi sağlayarak kuantum çağının karmaşıklığına karşı güçlü bir engel oluşturur.
+> - **Teşvikler.** Platformlar arası tutarlılık: Hash kütüphanesi (HSH), verileri farklı platformlar ve uygulamalar genelinde korur.
+> - **Kuantum bilişimin yükselen tehdidi.** Dijital ortam evrildikçe, finansal hizmet kuruluşları rekabetçi kalmak için yeni teknolojileri benimsemek zorundadır.
 
 ---
 
-In questo artículo examinaré i usos ın criptografía resistente a lo quantistico, centrándome específicamente in la libreria Rust Hash (HSH) che he sviluppato. Questa libreria è totalmente optimizada per le funciones di hashing e verificación crittografici.
+Bu makalede, kuantuma dayanıklı kriptografinin kullanım alanlarını inceleyeceğim; özellikle geliştirdiğim Rust Hash kütüphanesi (HSH) üzerinde duracağım. Bu kütüphane, kriptografik özetleme ve doğrulama işlevleri için tümüyle optimize edilmiştir.
+
+> **Tarayıcınızda deneyin.** Aynı algoritma ailesini (SHA-256, BLAKE3, Argon2id) saran bir yardımcı crate, WebAssembly'ye derlenmiştir ve tamamen istemci tarafında çalışır; sunucuya gidiş dönüş ve üçüncü taraf JavaScript olmadan: **[hsh tarayıcı içi demosunu açın →](/labs/hsh-demo/)**
 
 ## Bakış
 
-### La amenaza emergente ın calcolo quantistico
+### Kuantum bilişimin yükselen tehdidi
 
-A medida che il panorama digitale evoluciona, le organizaciones di servizi finanziari devono adoptar nuove tecnologie per seguir siendo competitivas. Di non hacerlo, corren il rischio di quedarse atrás, già che la transformación digitale riguarda a tutti i settori.
+Dijital ortam evrildikçe, finansal hizmet kuruluşları rekabetçi kalmak için yeni teknolojileri benimsemek zorundadır. Bunu yapmamak geride kalmakla sonuçlanabilir; çünkü dijital dönüşüm her sektörü etkilemektedir.
 
-La calcolo quantistico anuncia un giro mayor: promete acelerar i progressi in settori diversos, incluidos la banca ve servizi finanziari. Ma conlleva un rischio formidable için sicurezza digitale, debido a il suo capacità per descifrar i códigos daha çok complejos.
+Kuantum bilişim köklü bir değişimin habercisidir ve Bankacılık ile Finansal Hizmetler dahil olmak üzere çeşitli sektörlerde önemli ilerlemeleri hızlandıracak gücü sunar. Bununla birlikte, en karmaşık şifreleri bile çözebilme yeteneği göz önüne alındığında, dijital güvenlik için ciddi bir risk taşır.
 
-La calcolo quantistico torna obsoletas ciertas tecniche di cifrado tradicionales, già che può resolver problemas matemáticos inaccesibles için ordenadores clásicos.
+Kuantum bilişim, klasik bilgisayarların çözemediği matematiksel problemleri çözebildiği için bazı geleneksel şifreleme tekniklerini kullanılmaz hale getirir.
 
-Hoy, Alice e Bob possono comunicarse in modo segura mediante chiavi crittografiche, impidiendo che Eve decodifique i suoi messaggi. Ma la sicurezza absoluta ın distribución ve almacenamiento di chiavi mai è totalmente garantizada. I computer quantistici suponen, pues, una amenaza significativa için cifrado ve sicurezza digitale.
+Günümüzde Alice ve Bob, kriptografik anahtarlar kullanarak güvenli biçimde iletişim kurabilir ve Eve'in mesajları çözmesini engelleyebilir. Ancak anahtar dağıtımı ve saklanmasının mutlak güvenliği hiçbir zaman tümüyle garanti edilemez. Bunun sonucunda kuantum bilgisayarlar, şifreleme ve dijital güvenlik için önemli bir tehdit oluşturur.
 
-#### Seguros ma vulnerables: navegar için retos crittografici in la era quantistica
+#### Güvenli ama savunmasız: kuantum çağında kriptografik zorluklarda ilerlemek
 
-![Diagrama di secuencia][01].class=\"img-fluid clearfix\"
+![Sıra diyagramı][01].class=\"img-fluid clearfix\"
 
-##### Leyenda
+##### Gösterge
 
-* *Alice verso Eve — Alice envía un messaggio cifrado*
-* *Eve intercepta — Eve intercepta il messaggio di Alice*
-* *Eve intenta descifrar — Eve lo intenta ma non logra descifrar*
-* *Eve verso Bob — Eve envía un messaggio cifrado a Bob*
-* *Bob verso Eve — Bob envía una respuesta cifrada a Eve*
-* *Eve intercepta — Eve intercepta la respuesta di Bob*
-* *Eve intenta descifrar — Eve non logra descifrar di nuovo*
-* *Eve verso Alice — Eve envía un messaggio cifrado a Alice*
+* *Alice'den Eve'e - Alice şifreli mesaj gönderir*
+* *Eve araya girer - Eve, Alice'in mesajını ele geçirir*
+* *Eve şifre çözmeyi dener - Eve dener ama şifreyi çözemez*
+* *Eve'den Bob'a - Eve, Bob'a şifreli mesaj gönderir*
+* *Bob'dan Eve'e - Bob, Eve'e şifreli yanıt gönderir*
+* *Eve araya girer - Eve, Bob'un yanıtını ele geçirir*
+* *Eve şifre çözmeyi dener - Eve yine şifreyi çözemez*
+* *Eve'den Alice'e - Eve, Alice'e şifreli mesaj gönderir*
 
-##### Explicación
+##### Açıklama
 
-###### Cifrado actual
+###### Mevcut şifreleme
 
-I algoritmos di cifrado actuales utilizzati per Alice e Bob sono eficaces per impedir che Eve descifre i suoi messaggi. Tuttavia, la calcolo quantistico constituye una amenaza potencial için suo sicurezza.
+Alice ve Bob'un kullandığı mevcut şifreleme algoritmaları, Eve'in mesajlarını çözmesini engellemede etkilidir. Ancak kuantum bilişim, bu algoritmaların güvenliği için olası bir tehdit oluşturur.
 
-###### Riesgo quantistico potencial
+###### Olası kuantum riski
 
-I computer quantistici sono molto daha çok rápidos che i ordenadores tradicionales per ciertos tipos di cálculo, incluidos i che sirven per romper determinados algoritmos di cifrado. Se Eve tuviera acceso a un computer quantistico, potencialmente potrebbe quebrar il cifrado e leer i messaggi di Alice e Bob.
+Kuantum bilgisayarlar, bazı şifreleme algoritmalarını kırmak için kullanılan hesaplamalar da dahil olmak üzere belirli türdeki hesaplamaları geleneksel bilgisayarlardan çok daha hızlı gerçekleştirir. Eve'in bir kuantum bilgisayara erişimi olsaydı, şifrelemeyi kırıp Alice ve Bob'un mesajlarını okuyabilirdi.
 
-###### Riesgos vinculados alla distribución ve almacenamiento di chiavi
+###### Anahtar dağıtımı ve saklama riskleri
 
-Sebbene Alice e Bob utilicen un cifrado robusto, i suoi messaggi potrebbero verse comprometidos se le chiavi utilizzate per cifrar e descifrar sono comprometidas. Le chiavi possono serlo di múltiples maneras: robo, pirateo o ataques di ingeniería social.
+Alice ve Bob güçlü bir şifreleme kullansa bile, mesajları şifrelemek ve çözmek için kullanılan anahtarlar ele geçirilirse mesajları yine de tehlikeye girebilir. Anahtarlar; hırsızlık, bilgisayar korsanlığı veya sosyal mühendislik saldırıları gibi çeşitli yollarla ele geçirilebilir.
 
-###### Necesidad di una crittografia post-quantistica
+###### Kuantum sonrası kriptografi ihtiyacı
 
-La crittografia post-quantistica è un nuovo campo progettato per resistir i ataques quantistici. I algoritmos di cifrado post-quantistico ancora sono in desarrollo, ma hanno il potencial di proteger i dati rispetto ai ataques quantistici.
+Kuantum sonrası kriptografi, kuantum saldırılarına dayanıklı olacak şekilde tasarlanmış yeni bir kriptografi alanıdır. Kuantum sonrası şifreleme algoritmaları hâlâ geliştirilme aşamasındadır, ancak verileri kuantum saldırılarından koruma potansiyeline sahiptir.
 
-### Introducción alla criptografía resistente a lo quantistico
+### Kuantuma dayanıklı kriptografiye giriş
 
-La criptografía resistente a lo quantistico, anche llamada crittografia post-quantistica (PQC) o criptografía "quantum-safe", designa ai algoritmos crittografici considerados seguros rispetto ai ataques di computer quantistici.
+Kuantuma dayanıklı kriptografi, kuantum sonrası kriptografi (PQC) veya kuantuma güvenli kriptografi olarak da bilinir ve kuantum bilgisayar saldırılarına karşı güvenli olduğu düşünülen kriptografik algoritmaları ifade eder.
 
-Le organizaciones devono tomar le precauciones necesarias per proteger i suoi dati rispetto ai peligros ın calcolo quantistico. Implementar cifrado resistente a lo quantistico e estrategias di entrelazamiento quantistico può offrire alle aziende di servizi finanziari una capa adicional di sicurezza.
+Kuruluşlar, verilerini kuantum bilişimin tehlikelerinden korumak için gerekli önlemleri almalıdır. Kuantuma dayanıklı şifreleme ve kuantum dolanıklığı stratejilerini uygulamak, finansal hizmet şirketlerine ek bir güvenlik katmanı sağlayabilir.
 
-* La **criptografía resistente a lo quantistico** è un nuovo tipo di cifrado capaz di resistir i ataques di computer quantistici. I suoi algoritmos possono acelerar il tratamiento di dati e incrementar la precisión, convirtiéndola in una opción daha çok eficiente.
+* **Kuantuma dayanıklı kriptografi**, kuantum bilgisayarların saldırılarına dayanabilen yeni bir şifreleme türüdür. Kuantuma dayanıklı şifreleme algoritmaları, veri işlemeyi ve doğruluğu hızlandırarak daha verimli bir seçenek haline gelir.
 
-* Il **entrelazamiento quantistico** consente creare sistemi di [distribuzione quantistica ın chiavi](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) ([QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)), capaces di generare e distribuir chiavi crittografiche seguras a largas distancias. I sistemi QKD sono inmunes ai ataques di computer quantistico, lo che i hace ideales per proteger dati finanziari sensibles.
+* **Kuantum dolanıklığı**, uzun mesafelerde güvenli kriptografik anahtarlar üretip dağıtabilen [kuantum anahtar dağıtımı](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) ([QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)) sistemleri oluşturmak için kullanılabilir. [QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) sistemleri, kuantum bilgisayarların saldırılarına karşı bağışıktır ve bu da onları hassas finansal verileri korumak için ideal kılar.
 
 ## Fikir
 
-### La libreria Hash (HSH): interoperabilidad pionera in criptografía resistente a lo quantistico
+### Hash kütüphanesi (HSH): kuantuma dayanıklı kriptografide birlikte çalışabilirliğe öncülük
 
-La libreria Hash (HSH) offre una soluzione ligera, eficiente e fácil di usar per proteger i dati con criptografía resistente a lo quantistico. Permite ai sviluppatori utilizzare algoritmos resistentes a lo quantistico in i suoi applicazioni senza richiedere una comprensión detallada ın algoritmos crittografici subyacentes.
+Hash kütüphanesi (HSH), verileri kuantuma dayanıklı kriptografiyle korumak için hafif, verimli ve kullanımı kolay bir çözüm sunar. Geliştiricilerin, temeldeki kriptografik algoritmaları ayrıntılı biçimde anlamalarına gerek kalmadan uygulamalarında kuantuma dayanıklı algoritmalar kullanmalarını sağlar.
 
-La libreria è costruita con il lenguaje Rust, reconocido için suo rapidez e eficiencia, idóneamente adaptado alla criptografía e alla fiabilidad a lungo termine.
+Kütüphane, hızı ve verimliliğiyle bilinen, kriptografi ve uzun vadeli güvenilirlik için ideal olan Rust programlama dili üzerine kurulmuştur.
 
 ## Etki
 
-### I beneficios ın libreria di hash resistente a lo quantistico
+### Kuantuma dayanıklı kriptografik hash kütüphanesinin faydaları
 
-La [libreria Hash (HSH) ⧉][00] aporta una rica paleta di primitivas crittografiche modernas, levantando una barrera sólida rispetto alle complejidades ın era quantistica. Il suo importancia reside in la protección ın dati sensibles in una época in che la calcolo quantistico supone un rischio significativo için sicurezza digitale.
+[Hash kütüphanesi (HSH) ⧉][00], zengin bir modern kriptografik temel yapı taşları kümesi sağlayarak kuantum çağının karmaşıklığına karşı güçlü bir engel oluşturur. Önemi, kuantum bilişimin dijital güvenlik için önemli bir risk oluşturduğu bir çağda hassas verileri korumasında yatar.
 
-La libreria offre alle organizaciones e istituzioni finanziarie il livello daha çok alto di protección disponible in línea, con una selección di algoritmos che includono Argon2i, BScrypt e Scrypt. Se tratta di funciones di derivación di chiavi seguras a partire da contraseña (PBKDF). Le PBKDF sirven per convertir contraseñas in chiavi crittografiche. Diseñadas per essere lentas e exigentes in memoria, sono difíciles di romper per fuerza bruta.
+Kütüphane, kuruluşlara ve finansal kurumlara Argon2i, BScrypt ve Scrypt dahil olmak üzere bir dizi algoritmayla çevrimiçi ortamda mevcut en yüksek düzeyde koruma sunar. Bunlar, parola tabanlı anahtar türetme güvenli işlevleridir (PBKDF). PBKDF'ler, parolaları kriptografik anahtarlara dönüştürmek için kullanılır. Yavaş ve bellek yoğun olacak şekilde tasarlanmıştır; bu da kaba kuvvet saldırılarıyla kırılmalarını zorlaştırır.
 
-Per altra parte, la libreria garantisce non solo resultados seguros e eficientes, sino anche perfectamente adaptados alle applicazioni empresariales, extensibles e fáciles di usar.
+Ayrıca kütüphane, sonuçların yalnızca güvenli ve verimli olmasını değil, aynı zamanda kurumsal düzeydeki uygulamalar için de tümüyle uygun, genişletilebilir ve kullanımı kolay olmasını garanti eder.
 
 ## Teşvikler
 
-### Navegar için paisaje ın calcolo quantistico con sicurezza
+### Kuantum bilişim ortamında güvenli ilerlemek
 
-* **Garantía di sicurezza**: utilizzare la libreria Hash (HSH) da alle organizaciones la garantía di che i suoi dati permanecen seguros.
+* **Güvenlik güvencesi**: Hash kütüphanesini (HSH) kullanmak, kuruluşlara verilerinin güvende kaldığına dair bir güvence sağlar.
 
-* **Perdurabilidad**: adoptar hoy algoritmos resistentes a lo quantistico protegerá alle organizaciones rispetto alle vulnerabilidades futuras.
+* **Geleceğe hazırlık**: Kuantuma dayanıklı algoritmaları şimdiden benimsemek, kuruluşları gelecekteki olası açıklardan korur.
 
-* **Eficiencia economica**: la libreria Hash (HSH) è di open source e può utilizarse senza licencia onerosa ni suscripción. Una opción atractiva per le organizaciones che deseen controlar i suoi costi allo stesso tempo che acceden a una calcolo quantistico segura.
+* **Maliyet verimliliği**: Hash kütüphanesi (HSH) açık kaynaklıdır ve pahalı lisanslar veya abonelik ücretlerine gerek kalmadan kullanılabilir. Bu, maliyetlerini düşük tutarken güvenli kuantum bilişime erişmek isteyen kuruluşlar için onu cazip bir seçenek haline getirir.
 
-### Mantener la confianza ın consumidores
+### Tüketici güvenini korumak
 
-* **Proteger i dati ın clienti**: asegurar i dati ın clienti rispetto ai ataques di computer quantistici refuerza la confianza in la capacità ın organizaciones per proteger la informazione.
+* **Müşteri verilerini korumak**: Müşteri verilerini kuantum bilgisayar saldırılarından korumak, kuruluşların bilgileri koruma becerisine olan güveni artırır.
 
-* **Cumplimiento e adhesión normativa**: applicare métodos crittografici avanzados ayuda a respetar leyes e reglamentos estrictos di protección di dati, evitando consecuencias jurídicas e multas.
+* **Uyum ve mevzuata bağlılık**: Gelişmiş kriptografik yöntemler uygulamak, katı veri koruma yasalarına ve düzenlemelerine uymaya yardımcı olur ve böylece hukuki sonuçlardan ve para cezalarından kaçınılır.
 
-### HSH: la libreria di hash definitiva resistente a lo quantistico
+### HSH: en üst düzey kuantuma dayanıklı hash kütüphanesi
 
-* **Alto prestazioni**: aprovechar la [libreria Hash (HSH) ⧉][00] basata in Rust aporta sicurezza, eficiencia e prestazioni.
-Coherencia multiplataforma: la libreria Hash (HSH) protege i dati in tutte le piattaforme e applicazioni.
+* **Yüksek performans**: Rust tabanlı [Hash kütüphanesi (HSH) ⧉][00] kullanmak güvenlik, verimlilik ve performans sağlar.
+Platformlar arası tutarlılık: Hash kütüphanesi (HSH), verileri farklı platformlar ve uygulamalar genelinde korur.
 
-* **Facilidad di implementación**: la libreria Hash (HSH) fornisce ai sviluppatori una strumento semplice di integrar, bajando la barrera di adopción di algoritmos resistentes a lo quantistico.
+* **Kolay uygulama**: Hash kütüphanesi (HSH), geliştiricilere uygulaması kolay bir araç sunar ve kuantuma dayanıklı algoritmaları benimsemenin önündeki engeli azaltır.
 
 ## Sonuç
 
-La [libreria Hash (HSH) ⧉][00] offre una soluzione ligera, eficiente e fácil di usar per proteger i dati con criptografía resistente a lo quantistico. Facilita la actualización ın protocolos crittografici ın sviluppatori per hacerlos resistentes a lo quantistico senza exigir una comprensión profunda ın algoritmos.
+[Hash kütüphanesi (HSH) ⧉][00], verileri kuantuma dayanıklı kriptografiyle korumak için hafif, verimli ve kullanımı kolay bir çözüm sunar. Geliştiricilerin, algoritmaları derinlemesine anlamadan kriptografik protokollerini kuantuma dayanıklı olacak şekilde yükseltmesini kolaylaştırır.
 
-La criptografía resistente a lo quantistico è un campo in rápida evolución, ve libreria HSH se compromete a mantenerse alla vanguardia. Se actualiza periódicamente con nuovi algoritmos e funzionalità per proteger rispetto alle amenazas emergentes.
+Kuantuma dayanıklı kriptografi hızla gelişen bir alandır ve HSH kütüphanesi bu gelişmenin önünde kalmayı taahhüt eder. Kütüphane, yükselen tehditlere karşı koruma sağlamak için yeni algoritmalar ve özelliklerle düzenli olarak güncellenir.
 
-Il [National Institute of Standards and Technology (NIST) ⧉][02] define actualmente un insieme di standard di algoritmos crittografici post-quantisticos attraverso il suo [progetto Post-Quantum Cryptography (PQC) ⧉][03].
+[Ulusal Standartlar ve Teknoloji Enstitüsü (NIST) ⧉][02], şu anda [Kuantum Sonrası Kriptografi (PQC) projesi ⧉][03] aracılığıyla bir dizi kuantum sonrası kriptografik algoritma standardı tanımlamaktadır.
 
-Proteger i suoi dati rispetto ai ataques ın calcolo quantistico è esencial per tutta organización che maneje dati sensibles. La [libreria Hash (HSH) ⧉][00] è una strumento potente che può ayudarle a proteger i suoi dati rispetto a questa amenaza emergente.
+Verilerinizi kuantum bilişim saldırılarından korumak, hassas veri işleyen her kuruluş için temel önemdedir. [Hash kütüphanesi (HSH) ⧉][00], verilerinizi bu yükselen tehditten korumanıza yardımcı olabilecek güçlü bir araçtır.
 
-[00]: https://crates.io/crates/hsh "The Hash Library (HSH) - Quantum-Resistant Cryptographic Hash Library for Password Hashing and Verification"
-[01]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-encryption.svg "Seguros ma vulnerables: navegar için retos crittografici in la era quantistica"
-[02]: https://www.nist.gov/ "National Institute of Standards and Technology"
-[03]: https://csrc.nist.gov/projects/post-quantum-cryptography "Post-Quantum Cryptography PQC"
+![ayırıcı](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+**Birlikte geçirdiğimiz zaman burada sona eriyor. Ayırdığınız zaman için teşekkürler!**
+
+Herhangi bir sorunuz varsa, [LinkedIn ⧉][11] veya [İletişim sayfası][10] üzerinden benimle iletişime geçmekten çekinmeyin. Ayırdığınız zaman için tekrar teşekkür eder, sizden haber almayı dört gözle beklerim.
+
+[**❬ Makalelere dön**][09]
+
+[00]: https://crates.io/crates/hsh "Hash kütüphanesi (HSH) - Parola özetleme ve doğrulama için kuantuma dayanıklı kriptografik hash kütüphanesi"
+[01]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-encryption.svg "Güvenli ama savunmasız: kuantum çağında kriptografik zorluklarda ilerlemek"
+[02]: https://www.nist.gov/ "Ulusal Standartlar ve Teknoloji Enstitüsü (NIST)"
+[03]: https://csrc.nist.gov/projects/post-quantum-cryptography "Kuantum Sonrası Kriptografi PQC"
+[09]: /articles/index.html "Makalelere dön"
+[10]: /contact/index.html "Sebastien Rousseau ile iletişim"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau LinkedIn'de"

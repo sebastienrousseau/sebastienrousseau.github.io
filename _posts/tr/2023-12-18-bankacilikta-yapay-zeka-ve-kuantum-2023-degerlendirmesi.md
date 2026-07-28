@@ -1,154 +1,154 @@
 ---
 title: "Bankacılıkta yapay zeka ve kuantum bilişim: 2023 değerlendirmesi"
-subtitle: "Bankacılık ve finansal hizmetlerde yapay zeka ve kuantumun durumu"
-description: "Bankacılıkta yapay zekanın benimsenmesi ve kuantum bilişimin etkisi üzerine 2023 yıllık değerlendirmesi."
+subtitle: "Bankacılığın geleceğini biçimlendirmek: yapay zeka, kuantum bilişim, açık kaynak modeller ve düzenleme görünümü"
+description: "2023'ün teknolojik görünümü: bankacılığı dönüştüren yapay zeka ve kuantum bilişim, yükselen açık kaynak modeller ve gelişen düzenlemeler ile yönetişim."
 date: "December 18, 2023"
 language: "tr-TR"
 locale: "tr_TR"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
 banner_alt: "Yapay zeka ve kuantumun soyut görselleştirmesi"
-keywords: "yapay zeka, kuantum bilişim, bankacılık, finans, 2023, dönüşüm"
+keywords: "bankacılıkta yapay zeka, kuantum bilişim, finansal teknoloji, açık kaynak yapay zeka, risk yönetimi, kuantum güvenliği, yapay zeka düzenlemesi, yapay zeka etiği, yapay zeka yönetişimi, bankacılık inovasyonu"
 ---
 
 
 ---
 
-> **TL;DR.** Il 2023 ha visto la maturazione ın grandi modelli di linguaggio nel banking e l'accelerazione ın investimenti in hardware quantistico. Una panoramica ın tendenze chiave e ın implicazioni strategiche.
+> **TL;DR.** 2023'ün teknolojik görünümü: bankacılığı dönüştüren yapay zeka ve kuantum bilişim, yükselen açık kaynak modeller ve gelişen düzenlemeler ile yönetişim.
 >
 > **Önemli Çıkarımlar**
 >
-> - **Anno ın LLM** — adozione di massa di GPT-4, Gemini e Claude in casi d'uso bancari interni.
-> - **Investimenti quantistici** — IBM, Google, Microsoft e governi accelerano il roadmap hardware.
-> - **Regolamentazione in formazione** — UE AI Act e linee guida prudenziali in arrivo.
-> - **Migrazione PQC** — i primi piani di transizione crittografica vengono pianificati nelle istituzioni di primo livello.
+> - **Yapay zeka ve kuantum bilişimin bankacılık sektöründeki önemi.** Bankacılık sektörü, yapay zeka ile kuantum bilişimin yakınsamasının yönlendirdiği köklü bir dönüşümden geçiyor.
+> - **Açık kaynak yapay zekanın yükselişi.** 2023 yılı, özellikle büyük dil modelleri (LLM) alanında açık kaynak yapay zeka teknolojisinin benimsenmesinde belirgin bir artışa tanık oldu.
+> - **Yapay zekayı düzenlemenin zorlukları.** Bir başka zorluk, yapay zeka sistemlerinin adil ve önyargısız olmasını sağlamaktır.
+> - **Yapay zeka yönetişiminin durumu.** 2023'te önemli küresel girişimler ve gelişmeler, yapay zeka yönetişimi ve düzenlemesinin görünümünü biçimlendirdi.
 
 ---
 
 ## Bakış
 
-In 2023, la intersección ın **intelligenza artificiale (IA)** ve **calcolo quantistico (QC)** ha impactado profundamente in la **industria bancaria e finanziaria**. Queste tecnologie hanno revolucionado la manera in che operano le istituzioni finanziarie, impactando significativamente i pagamenti, la gestión ın rischio ve ciberseguridad.
+2023'te **yapay zeka (AI)** ile **kuantum bilişim (QC)** arasındaki kesişim, **bankacılık ve finans sektörünü** derinden etkiledi. Bu teknolojiler, finans kurumlarının çalışma biçimini kökten dönüştürdü ve ödemeler, risk yönetimi ile siber güvenlik üzerinde önemli bir etki yarattı.
 
-Questo artículo discute il impacto ın **modelli di IA di open source**, la **calcolo quantistico in sicurezza transaccional** ve **regulaciones ve gobernanza** su la banca ve finanzas.
+Bu makale, **açık kaynak yapay zeka modellerinin**, **işlem güvenliğinde kuantum bilişimin** ve **bankacılık ile finansta düzenlemeler ve yönetişimin** etkisini ele alıyor.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## La importancia ın IA ve calcolo quantistico in la industria bancaria
+## Yapay zeka ve kuantum bilişimin bankacılık sektöründeki önemi
 
-La industria bancaria atraviesa una transformación profunda, impulsada için convergencia ın IA ve calcolo quantistico. Queste tecnologie revolucionarias sono remodelando il settore ın servizi finanziari, introduciendo livelli senza precedentes di eficiencia, risparmi di costo e experiencias di cliente reforzadas.
+Bankacılık sektörü, yapay zeka ile kuantum bilişimin yakınsamasının yönlendirdiği köklü bir dönüşümden geçiyor. Bu ileri teknolojiler, finansal hizmetler sektörünü yeniden biçimlendiriyor; benzeri görülmemiş düzeyde verimlilik, maliyet tasarrufu ve gelişmiş müşteri deneyimleri getiriyor.
 
-### Crecimiento fulgurante ın mercado ın software di IA: una visualización
+### Yapay zeka yazılım pazarının hızla artan geliri: büyümenin görselleştirilmesi
 
 ![AI Software Market's Surging Revenue: A Visualization of Growth][21].class=\"img-fluid w-100 clearfix fade-in\"
 
-Il mercado ın software di IA conoce una trayectoria di crecimiento notable, con una facturación anual proyectada in alcuni **asombrosos 126.000 millones di dólares per 2025**.
+Yapay zeka yazılım pazarı dikkate değer bir büyüme eğrisi izliyor; yıllık gelirin 2025'e kadar **126 milyar dolara** ulaşması öngörülüyor.
 
-Questa visualización pone di manifiesto il crecimiento impresionante ın mercado di 2018 a 2025, subrayando la domanda creciente di soluzioni impulsadas per IA in diversas industrias.
+Bu görselleştirme, pazarın 2018'den 2025'e kadarki dikkat çekici büyümesini ortaya koyuyor ve çeşitli sektörlerde yapay zeka destekli çözümlere yönelik artan talebi vurguluyor.
 
-### Il potere ın IA in la banca
+### Bankacılıkta yapay zekanın gücü
 
-I **algoritmos di IA** hanno demostrado capacità notables per analizar vastas cantidades di dati, identificare patrones e tomar decisiones informadas. Questa capacità resulta inestimable için bancos in diversos aspectos di i suoi operazioni.
+**Yapay zeka algoritmaları**, büyük hacimli verileri analiz etme, örüntüleri belirleme ve bilinçli kararlar verme konusunda dikkate değer yetenekler gösterdi. Bu yetenek, bankaların operasyonlarının çeşitli alanlarında paha biçilmez değerde olduğunu kanıtlıyor.
 
-- **Evaluación di rischi**: i sistemi di gestión di rischi impulsados per IA possono analizar dati finanziari complejos per evaluar la solvencia, identificare fraude potencial e mitigar rischi finanziari. Esto consente ai bancos tomar decisiones di préstamo mejor informadas e proteger il suo capital.
+- **Risk değerlendirmesi**: Yapay zeka destekli risk yönetimi sistemleri, kredi değerliliğini ölçmek, olası dolandırıcılığı belirlemek ve finansal riskleri azaltmak için karmaşık finansal verileri analiz edebilir. Bu, bankaların daha bilinçli kredilendirme kararları vermesini ve sermayelerini korumasını sağlar.
 
-- **Procesos di aprobación di préstamos**: la IA può racionalizar i processi di aprobación, reduciendo i tiempos di respuesta e mejorando la satisfacción ın cliente. Al automatizar tareas e aprovechar il análisis predictivo, i bancos possono tramitar le solicitudes daha çok eficientemente e con mayor rapidez.
+- **Kredi onay süreçleri**: Yapay zeka, kredi onay süreçlerini akıcı hale getirerek işlem sürelerini kısaltabilir ve müşteri memnuniyetini artırabilir. Bankalar, görevleri otomatikleştirerek ve öngörücü analitikten yararlanarak başvuruları daha verimli ve daha hızlı işleyebilir.
 
-- **Optimización di carteras di inversión**: la IA può analizar le tendencias di mercado, i factores di rischio ve objetivos di inversión individuales per ottimizzare le carteras. Esto può ayudar ai clienti a alcanzar i suoi objetivos finanziari al tiempo che gestionan eficazmente il suo apetito için rischio.
+- **Yatırım portföyü optimizasyonu**: Yapay zeka, yatırım portföylerini optimize etmek için piyasa eğilimlerini, risk faktörlerini ve bireysel yatırım hedeflerini analiz edebilir. Bu, müşterilerin risk iştahlarını etkin biçimde yönetirken finansal hedeflerine ulaşmalarına yardımcı olabilir.
 
-- **Detección di fraude**: i algoritmos di IA possono rilevare patrones in i dati transaccionales susceptibles di indicar una actividad fraudulenta. Esto consente ai bancos señalar le transazioni sospechosas e tomar le acciones apropiadas per prevenir pérdidas.
+- **Dolandırıcılık tespiti**: Yapay zeka algoritmaları, işlem verilerinde dolandırıcılık faaliyetine işaret edebilecek örüntüleri tespit edebilir. Bu, bankaların şüpheli işlemleri işaretlemesini ve finansal kayıpları önlemek için gerekli önlemleri almasını sağlar.
 
-- **Servicio al cliente**: la IA può aumentar le interacciones humanas in servizio al cliente proporcionando soporte proactivo, resolviendo rapidamente le consultas e recomendando prodotti e servizi personalizados. Esto può reforzar la satisfacción ve fidelidad ın cliente.
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Computación quantistica: desbloquear un análisis di dati senza parangón
-
-[**HSBC** ⧉][01] ha estado alla vanguardia ın integración ın calcolo quantistico in il settore finanziario. Il banco ha colaborado con proveedores tecnológicos e laboratorios di ricerca per explorar la applicazione ın tecnologie quantistiche a problemas concretos.
-
-HSBC fue il primer banco in [**proteger il trading FX impulsado per IA mediante lo quantistico in 2023** ⧉][01]. In un experimento inédito, HSBC ha utilizzato la **[Distribución quantistica di chiavi](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)** per asegurar un escenario di trading di 30 millones di euros verso il dólar estadounidense. Questo experimento demostró che la tecnologia quantistica protegerá le transazioni di qualsiasi valore quando llegue a essere comercialmente accesible e escalable.
+- **Müşteri hizmetleri**: Yapay zeka, proaktif destek sunarak, sorguları hızla çözerek ve kişiselleştirilmiş ürünler ile hizmetler önererek insan müşteri hizmetleri etkileşimlerini güçlendirebilir. Bu, müşteri memnuniyetini ve sadakatini artırabilir.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Il auge ın IA di open source: un cambiamento di paradigma
+### Kuantum bilişim: benzersiz veri analizinin önünü açmak
 
-Il año 2023 ha conocido un notable auge ın adopción ın IA di open source, in particolare in il ámbito ın **grandi modelli di linguaggio (LLM)**. La IA di open source designa i softwares e strumenti di IA cuyo código fuente è disponible per sviluppatori, ricercatori e altre partes interesadas.
+[**HSBC** ⧉][01], kuantum bilişimi finans sektörüne entegre etmede öncü konumda yer aldı. Banka, kuantum teknolojilerinin gerçek dünya sorunlarına uygulanmasını incelemek için teknoloji sağlayıcıları ve araştırma laboratuvarlarıyla iş birliği yaptı.
 
-Questa democratización ın tecnologia IA ha alimentado progressi significativi, alentado la proliferación di modelli di open source e consolidado i LLM gibi motor di innovación. Questi modelli hanno desempeñado un papel pivote per estimular la innovación, reforzar la toma di decisiones e migliorare la gestión di rischi in diversas industrias.
+HSBC, [**2023'te yapay zeka destekli döviz alım satımını kuantumla koruyan** ⧉][01] ilk banka oldu. Dünyada bir ilk olan denemede HSBC, Euro'dan ABD dolarına 30 milyon euroluk bir alım satım senaryosunu güvence altına almak için **[Kuantum Anahtar Dağıtımı](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)** kullandı. Bu deneme, kuantum teknolojisinin ticari olarak erişilebilir ve ölçeklenebilir hale geldiğinde her değerdeki işlemi koruyacağını gösterdi.
 
-### LLM di open source: revolucionar il panorama ın IA
+![divider][divider].class=\"m-10 w-100\"
 
-I LLM di open source, gibi [**WizardLM** ⧉][07] e [**LLaMA 2** ⧉][08], hanno emergido gibi competidores formidables ın modelli propietarios. Ad esempio, [Vicuna ⧉][09], un LLM economico, ha alcanzado il 90 % ın capacità di ChatGPT mentre che il costo total di il suo entrenamiento non superó i 300 $. [LLaMA 2 ⧉][08] ha fijado il standard di oro ın IA ética al alcanzar le puntuaciones di infracción daha çok bajas fino a la fecha. I LLM di open source sono daha çok transparentes e personalizables che i LLM propietarios "caja negra" che carecen di interpretabilidad.
+## Açık kaynak yapay zekanın yükselişi: yapay zekada bir paradigma değişimi
 
-#### Crecimiento explosivo ın modelli di IA di open source in 2023
+2023 yılı, özellikle **büyük dil modelleri (LLM)** alanında açık kaynak yapay zeka teknolojisinin benimsenmesinde dikkate değer bir artışa tanık oldu. Açık kaynak yapay zeka, kaynak kodu geliştiricilere, araştırmacılara ve diğer paydaşlara açık olan yapay zeka yazılımlarını ve araçlarını ifade eder.
+
+Yapay zeka teknolojisinin bu demokratikleşmesi önemli ilerlemeleri teşvik etti, açık kaynak modellerin çoğalmasını hızlandırdı ve LLM'leri yapay zeka inovasyonunda ön saflara yerleştirdi. Bu modeller, çeşitli sektörlerde inovasyonu yönlendirmede, karar almayı güçlendirmede ve risk yönetimini iyileştirmede belirleyici bir rol oynadı.
+
+### Açık kaynak LLM'ler: yapay zeka alanını dönüştürmek
+
+[**WizardLM** ⧉][07] ve [**LLaMA 2** ⧉][08] gibi açık kaynak LLM'ler, kapalı kaynak modellere karşı güçlü rakipler olarak ortaya çıktı. Örneğin, ekonomik bir LLM olan [Vicuna ⧉][09], tüm eğitim sürecinin yalnızca 300 dolara mal olmasına rağmen ChatGPT'nin yeteneklerinin yüzde 90'ına ulaştı. [LLaMA 2 ⧉][08], bugüne kadarki en düşük ihlal puanlarına ulaşarak etik yapay zeka için altın standardı belirledi. Açık kaynak LLM'ler, yorumlanabilirlikten yoksun "kara kutu" kapalı kaynak LLM'lere kıyasla daha şeffaf ve daha özelleştirilebilir.
+
+#### 2023'te açık kaynak yapay zeka modellerinin patlayıcı büyümesi
 
 ![Explosive Growth of Open-Source AI Models in 2023][22].class=\"img-fluid w-100 clearfix fade-in\"
 
-Questo gráfico ilustra vívidamente il ascenso notable ın modelli di IA di open source in 2023, con una explosión ın número di progetti e contribuciones. Questa tendencia pone di relieve la importancia creciente ın IA di open source per estimular la innovación e favorecer la colaboración in la comunità IA.
+Bu çubuk grafik, hem proje sayısında hem de katkı sayısında çarpıcı bir artışla, 2023'te açık kaynak yapay zeka modellerinin dikkate değer yükselişini canlı biçimde gösteriyor. Bu eğilim, yapay zeka topluluğunda inovasyonu yönlendirmede ve iş birliğini teşvik etmede açık kaynak yapay zekanın artan önemini vurguluyor.
 
-Varios LLM di open source hanno atraído la atención için suoi capacità revolucionarias:
+Birçok açık kaynak LLM, çığır açan yetenekleriyle önemli ilgi topladı:
 
-- [**Mixtral 8x7B** ⧉][10]: sviluppato per Mistral AI, questo potente modello di linguaggio se distingue için suoi pesos aperti, permitiendo un funcionamiento locale con meno restricciones che i modelli competidores. Procesa fino a 32K tokens di contexto e admite diverse lenguas: francés, alemán, español, italiano e inglés. [Mixtral 8x7B ⧉][10] è progettato için trabajo composicional, il análisis di dati, la depuración di software ve programación. Reivindica igualar o superare a GPT-3.5 di OpenAI e superare a LLaMA 2-70B di Meta in ciertos benchmarks.
+- [**Mixtral 8x7B** ⧉][10]: Mistral AI tarafından geliştirilen bu güçlü yapay zeka dil modeli, açık ağırlıklarıyla öne çıkar ve rakiplerinin modellerine göre daha az kısıtlamayla yerel çalıştırmaya olanak tanır. 32K tokene kadar bağlam pencerelerini işler ve Fransızca, Almanca, İspanyolca, İtalyanca ve İngilizce dahil çeşitli dilleri destekler. [Mixtral 8x7B ⧉][10], birleşimsel çalışma, veri analizi, yazılım sorun giderme ve programlama için tasarlanmıştır. Belirli kıyaslamalarda OpenAI'nin GPT-3.5'iyle eşleştiğini veya onu geçtiğini ve Meta'nın LLaMA 2-70B modelinden daha iyi performans gösterdiğini iddia eder.
 
-- [**GPT-NeoX-20B** ⧉][11]: con 20.000 millones di parámetros, GPT-NeoX-20B è un LLM di open source di primo livello. Se basa in GPT-3 ma introduce il paralelismo síncrono di dati ve gradient checkpointing per migliorare il prestazioni ve eficiencia. Il modello ha demostrado un prestazioni excepcional in diversas tareas: pregunta-respuesta, resumen, traducción.
+- [**GPT-NeoX-20B** ⧉][11]: 20 milyar parametreyle GPT-NeoX-20B, önde gelen açık kaynak LLM'lerden biridir. GPT-NeoX-20B, GPT-3'e dayanır ancak performansı ve verimliliği artırmak için eşzamanlı veri paralelliği ve gradyan kontrol noktası (gradient checkpointing) getirir. Model; soru yanıtlama, özetleme ve çeviri dahil çeşitli görevlerde olağanüstü performans göstermiştir.
 
-- [**GPT-J** ⧉][12]: con 6.000 millones di parámetros, [GPT-J ⧉][12] offre una mayor accesibilidad che i modelli daha çok grandi. [GPT-J ⧉][12] è entrenado su l'insieme di dati Pile e comparte i suoi raíces con la arquitectura GPT-2. Comprende i matices conversacionales, fornisce prospettive da fuentes diversas, adapta il suo tono e estilo, e prioriza la generación di contenuto ético e responsable.
+- [**GPT-J** ⧉][12]: 6 milyar parametreyle [GPT-J ⧉][12], daha büyük modellere kıyasla daha fazla erişilebilirlik sunar. [GPT-J ⧉][12], Pile veri kümesi üzerinde eğitilmiştir ve kökleri GPT-2 mimarisiyle ortaktır. Konuşma inceliklerini kavrar, çeşitli kaynaklardan içgörüler sunar, tonunu ve üslubunu uyarlar ve etik ile sorumlu içerik üretimini önceliklendirir.
 
-- [**OPT-175B** ⧉][13]: con un tamaño senza precedentes di 175.000 millones di parámetros, [OPT-175B ⧉][13] se erige gibi un coloso di eficiencia e escala. Entrenado con dati textuales non etiquetados che contengono principalmente frases in inglés, [OPT-175B ⧉][13] emplea la arquitectura Transformer per procesar jerárquicamente il texto di entrada. Il modello ha demostrado un prestazioni impresionante in diversas tareas: pregunta-respuesta, resumen, traducción.
+- [**OPT-175** ⧉B][13]: 175 milyar parametrelik benzeri görülmemiş bir boyutla öne çıkan [OPT-175B ⧉][13], verimlilik ve ölçek açısından bir dev olarak konumlanır. Ağırlıklı olarak İngilizce cümleler içeren etiketlenmemiş metin verileri üzerinde eğitilen [OPT-175B ⧉][13], giriş metnini hiyerarşik olarak işlemek için Transformer mimarisini kullanır. Model; soru yanıtlama, özetleme ve çeviri dahil çeşitli görevlerde etkileyici performans göstermiştir.
 
-- [**LLMa 2** ⧉][14]: con 1.600 millones di parámetros, [LLMa 2 ⧉][14] ilustra la versatilidad, respondiendo a una amplia gama di tareas: pregunta-respuesta, resumen, traducción. Entrenado con l'insieme di dati Pile e utilizando la arquitectura Transformer, [LLMa 2 ⧉][14] prueba il suo adaptabilidad a diversas applicazioni.
+- [**LLMa 2** ⧉][14]: 1,6 milyar parametreyle [LLMa 2 ⧉][14], soru yanıtlama, özetleme ve çeviri dahil geniş bir görev yelpazesine hitap ederek çok yönlülüğünü sergiler. Pile veri kümesi üzerinde eğitilen ve Transformer mimarisini kullanan [LLMa 2 ⧉][14], çeşitli uygulamalarda uyarlanabilirliğini kanıtlar.
 
-- [**Google Gemini LLM** ⧉][26]: desvelado in 2023, [Google Gemini LLM ⧉][26] rappresenta un passo significativo in il campo ın grandi modelli di linguaggio. Presentado gibi sucesor di [PaLM 2 ⧉][27], [Gemini LLM ⧉][26] è progettato per sobresalir in diversos dominios: comprensión ın lenguaje natural, generación di diversi formatos di texto creativo, applicazione di conocimientos alla resolución di problemas. Con il suo capacità per tratar dati multimodales, [Google Gemini LLM ⧉][26] ha gran potencial per applicazioni in visione per ordenador, ricerca científica e sanidad. Il modello è actualmente disponible in tres tamaños: **Ultra**, **Pro** e **Nano**, respondiendo a diverse necesidades computacionales.
+- [**Google Gemini LLM** ⧉][26]: 2023'te tanıtılan [Google Gemini LLM ⧉][26], büyük dil modelleri alanında önemli bir adımı temsil eder. [PaLM 2 ⧉][27]'nin halefi olarak sunulan [Gemini LLM ⧉][26]; doğal dil anlama, farklı yaratıcı metin biçimleri üretme ve sorunları çözmek için bilgi uygulama dahil çeşitli alanlarda üstün olacak biçimde tasarlanmıştır. Çok kipli (multimodal) verileri işleme yeteneğiyle [Google Gemini LLM ⧉][26]; bilgisayarlı görü, bilimsel araştırma ve sağlık gibi alanlardaki uygulamalar için büyük bir potansiyel taşır. Model şu anda farklı hesaplama gereksinimlerine hitap eden üç boyutta sunuluyor: **Ultra**, **Pro** ve **Nano**.
 
-### La revolución ın IA di open source: configurar il futuro ın IA
+### Açık kaynak yapay zeka dönüşümü: yapay zekanın geleceğini biçimlendirmek
 
-La revolución ın IA di open source transforma fundamentalmente il panorama ın desarrollo, despliegue e uso ın IA. Al fare la IA daha çok accesible, asequible e polivalente, la tecnologia di open source democratiza le capacità di IA e abre la vía a innovaciones e applicazioni revolucionarias. A medida che il movimiento di open source gana impulso, podemos anticipar con confianza incluso daha çok progressi transformadores che configurarán il futuro ın IA ve suo profundo impacto su il nostro mondo.
+Açık kaynak yapay zeka dönüşümü, yapay zeka geliştirme, dağıtım ve kullanımını temelden değiştiriyor. Açık kaynak teknoloji, yapay zekayı daha erişilebilir, daha uygun maliyetli ve daha çok yönlü hale getirerek yapay zekanın yeteneklerini demokratikleştiriyor ve çığır açan inovasyonlar ile uygulamaların önünü açıyor. Açık kaynak hareketi ivme kazandıkça, yapay zekanın geleceğini ve dünyamız üzerindeki derin etkisini biçimlendirecek daha da dönüştürücü ilerlemeleri güvenle öngörebiliriz.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## I sfide ın regulación ın IA
+## Yapay zekayı düzenlemenin zorlukları
 
-Altro sfida è **garantizar che i sistemi di IA sean giusti e non sesgados**. I sistemi di IA possono perpetuar i sesgos existentes in i dati su i che se entrenan. Per ello è importante sviluppare sistemi di IA transparentes e responsables, auditados per identificare e abordar i sesgos potenciales.
+Bir başka zorluk, **yapay zeka sistemlerinin adil ve önyargısız olmasını sağlamaktır**. Yapay zeka sistemleri, eğitildikleri verilerdeki mevcut önyargıları sürdürebilir. Bu nedenle şeffaf ve hesap verebilir, ayrıca olası önyargıları belirlemek ve gidermek için denetlenebilir yapay zeka sistemleri geliştirmek önemlidir.
 
-Per último, è importante **establecer directrices éticas için desarrollo e despliegue ın IA**. I sistemi di IA dovrebbero diseñarse e utilizarse di una manera responsable e respetuosa con i diritti humanos. Ad esempio, i sistemi di IA non dovrebbero utilizarse per dañar o explotar ai individuos, ni per invadir il suo privacy.
+Son olarak, **yapay zekanın geliştirilmesi ve dağıtımı için etik kurallar belirlemek** önemlidir. Yapay zeka sistemleri, insan haklarına saygılı ve sorumlu bir biçimde tasarlanmalı ve kullanılmalıdır. Örneğin, yapay zeka sistemleri bireylere zarar vermek veya onları istismar etmek için kullanılmamalı ve bireylerin mahremiyetini ihlal etmek için kullanılmamalıdır.
 
-Abordar questi sfide exigirá un approccio multipartícipe che implique a governi, aziende, ricercatori e sociedad civil. È importante iniciar la conversación ora su la manera di regular la IA equilibrando le necesidades di confidencialidad, sicurezza e innovación.
+Bu zorlukların üstesinden gelmek; hükümetleri, işletmeleri, araştırmacıları ve sivil toplumu kapsayan çok paydaşlı bir yaklaşım gerektirecektir. Mahremiyet ve güvenlik ihtiyacını inovasyon ihtiyacıyla dengeleyecek biçimde yapay zekanın nasıl düzenleneceği konusunda şimdiden konuşmaya başlamak önemlidir.
 
-## Il estado ın gobernanza ın IA
+## Yapay zeka yönetişiminin durumu
 
 ![The State of AI Governance][28].class=\"fade-in w-100 p-3 me-3 img-thumbnail \"
 
-In 2023, **importanti iniciativas mundiales e desarrollos hanno configurado il panorama ın gobernanza e regulación ın IA**. Queste actividades reflejan il reconocimiento creciente ın [**necesidad di marcos robustos per supervisar il desarrollo e despliegue ın tecnologie di IA** ⧉][19].
+2023'te **önemli küresel girişimler ve gelişmeler, yapay zeka yönetişimi ve düzenlemesinin görünümünü biçimlendirdi**. Bu faaliyetler, [**yapay zeka teknolojilerinin geliştirilmesini ve dağıtımını denetlemek için sağlam çerçevelere duyulan ihtiyacın** ⧉][19] giderek daha fazla kabul gördüğünü yansıtıyor.
 
-In Estados Unidos, il presidente Joe Biden emitió un [**decreto per gestire i rischi asociados alla IA e apoyar i esfuerzos internazionali di gobernanza** ⧉][15]. La [**Office of Science and Technology Policy (OSTP)** ⧉][23] ın Casa Blanca ha mantenido amplios debates con ricercatori, aziende e sociedad civil per informar la gobernanza. Estados Unidos trabaja con i suoi aliados e socios su la gobernanza ın IA, incluida la participación in il G7 Hiroshima AI Process e in il [**AI Safety Summit** ⧉][16] ın Reino Unido.
+ABD'de Başkan Joe Biden, [**yapay zekayla ilişkili riskleri yönetmek ve yapay zekanın yönetişimine ilişkin uluslararası çabaları desteklemek için bir başkanlık kararnamesi** ⧉][15] çıkardı. Beyaz Saray [**Bilim ve Teknoloji Politikası Ofisi (OSTP)** ⧉][23], yapay zeka yönetişimini bilgilendirmek için araştırmacılar, şirketler ve sivil toplumla kapsamlı görüşmeler yürüttü. ABD; G7 Hiroşima Yapay Zeka Süreci'ne ve Birleşik Krallık'ın [**Yapay Zeka Güvenliği Zirvesi'ne** ⧉][16] katılım dahil, müttefikleri ve ortaklarıyla yapay zeka yönetişimi üzerinde çalışıyor.
 
-Il Reino Unido acogió la primera [**AI Safety Summit** ⧉][16], reuniendo a líderes gubernamentales mundiales per discutir i [**rischi ın IA ve acción coordinada internacionalmente** ⧉][17].
+Birleşik Krallık, ilk [**Yapay Zeka Güvenliği Zirvesi'ne** ⧉][16] ev sahipliği yaparak küresel hükümet liderlerini [**yapay zekanın riskleri ve uluslararası düzeyde koordine edilmiş eylem** ⧉][17] hakkında görüşmek üzere bir araya getirdi.
 
-La [**Declaración di Bletchley** ⧉][18] vio a 28 países daha çok la UE comprometerse a lavorare juntos per abordar i rischi planteados için IA durante la primera AI Safety Summit in il Reino Unido.
+[**Bletchley Bildirgesi** ⧉][18], Birleşik Krallık'taki ilk Yapay Zeka Güvenliği Zirvesi sırasında 28 ülke ile AB'nin yapay zekanın oluşturduğu riskleri ele almak için birlikte çalışma taahhüdünde bulunmasına tanık oldu.
 
-I líderes e ricercatori ın MIT hanno pubblicato un insieme di notas políticas su la gobernanza ın IA per ayudar ai legisladores a creare una mejor supervisión. [**A Framework for U.S. AI Governance: Creating a Safe and Thriving AI Sector** ⧉][20] propone che entidades gubernamentales existentes regulen le strumenti di IA.
+MIT liderleri ve akademisyenleri, politika yapıcıların daha iyi denetim oluşturmasına yardımcı olmak için yapay zeka yönetişimine ilişkin bir dizi politika özeti yayımladı. [**A Framework for U.S. AI Governance: Creating a Safe and Thriving AI Sector** ⧉][20], mevcut hükümet kuruluşlarının yapay zeka araçlarını düzenlemesini öneriyor.
 
-Más di 60 países in i continentes americano, africano, asiático e europeo hanno pubblicato estrategias nazionali di IA, reflejando il impulso globale verso la gobernanza. China è stato comprometido activamente a lanzar principios e regulaciones, tra ellas la [**Global AI Governance Initiative** ⧉][06] ve [**Interim Administrative Measures for the Management of Generative AI Services** ⧉][05].
+Amerika kıtası, Afrika, Asya ve Avrupa'daki 60'tan fazla ülke ulusal yapay zeka stratejileri yayımlayarak yapay zeka yönetişimine yönelik küresel ivmeyi yansıttı. Çin; [**Global AI Governance Initiative** ⧉][06] ve [**Interim Administrative Measures for the Management of Generative AI Services** ⧉][05] dahil olmak üzere ilkeler ve düzenlemeler başlatma konusunda etkin oldu.
 
-Queste iniciativas e desarrollos mostrano la creciente necesidad di esfuerzos coordinados nazionali e internazionali per un desarrollo e despliegue responsables ın IA. Se bene è staton hecho progresos, la naturaleza compleja e rapidamente evolutiva ın IA presenta sfide continuos che exigen atención sostenida.
+Bu girişimler ve gelişmeler, sorumlu yapay zeka geliştirme ve dağıtımı sağlamak için koordineli ulusal ve uluslararası çabalara duyulan artan ihtiyacı gösteriyor. İlerleme kaydedilmiş olsa da, yapay zekanın karmaşık ve hızla gelişen doğası, sürekli dikkat gerektiren zorlukları beraberinde getiriyor.
 
 ![divider][divider].class=\"m-10 w-100\"
 
 ## Sonuç
 
-Il año 2023 ha visto progressi significativi in i campos ın IA ve QC, in particolare in la industria bancaria. Il uso pionero per HSBC ın protección quantistica için trading impulsado per IA rappresenta un hito significativo ın applicazione di queste tecnologie al settore bancario. I modelli di open source hanno acelerado la madurez ın IA, mentre che le notas políticas ın MIT su la gobernanza forniscono una roadmap için regulación. Questi desarrollos configurarán il futuro ın IA ve QC, con implicaciones profundas için banca ve finanzas.
+2023 yılı, özellikle bankacılık sektöründe yapay zeka ve kuantum bilişim alanlarında önemli ilerlemelere tanık oldu. HSBC'nin yapay zeka destekli alım satım için kuantum korumasını öncü biçimde kullanması, bu teknolojilerin bankacılık sektöründe uygulanmasında önemli bir kilometre taşını temsil ediyor. Açık kaynak modeller yapay zekanın olgunlaşmasını hızlandırdı; MIT'nin yapay zeka yönetişimine ilişkin teknik raporları ise düzenleme için bir yol haritası sunuyor. Bu gelişmeler, bankacılık ve finans için derin sonuçlar doğurarak yapay zeka ve kuantum bilişimin geleceğini biçimlendirecek.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-**Quiere sapere daha çok su il impacto ın IA ve calcolo quantistico in la industria bancaria?**
+**Yapay zeka ve kuantum bilişimin bankacılık sektörü üzerindeki etkisi hakkında daha fazla bilgi edinmek ister misiniz?**
 
-*In conclusión, espero che questo artículo haya despertado il suo interés için potere transformador ın IA ve calcolo quantistico in la banca.*
+*Son olarak, bu makalenin bankacılık sektöründe yapay zeka ve kuantum bilişimin dönüştürücü gücüne ilginizi çekmiş olmasını umuyorum.*
 
-*Se è deseoso di aprender daha çok su la intersección ın IA ve calcolo quantistico in la industria bancaria, non dude in contactarme in [**LinkedIn** ⧉][02] o attraverso la [**página di contacto** ⧉][03].*
+*Bankacılık sektöründe yapay zeka ve kuantum bilişimin kesişimi hakkında daha fazla bilgi edinmek istiyorsanız, [**LinkedIn** ⧉][02] üzerinden veya [**İletişim sayfası** ⧉][03] aracılığıyla bana ulaşmaktan çekinmeyin.*
 
-*Anche può encontrarme in il mio nuovo canal di YouTube, [**Banking on Quantum** ⧉][24], dove exploraré i últimos desarrollos di queste tecnologie transformadoras ve suoi implicaciones için futuro ın finanzas.*
+*Ayrıca yeni YouTube kanalım [**Banking on Quantum** ⧉][24] üzerinden bana katılabilirsiniz; burada bu dönüştürücü teknolojilerdeki son gelişmeleri ve bunların finansın geleceğine ilişkin sonuçlarını inceleyeceğim.*
 
-*[**Suscríbase a Banking on Quantum hoy e manténgase alla vanguardia in questo campo in rápida evolución.** ⧉][25]*
+*[**Banking on Quantum'a bugün abone olun ve hızla gelişen bu alanda önde kalın.** ⧉][25]*
 
-Gracias di nuovo için suo tiempo, espero avere noticias suyas.
+Zaman ayırdığınız için tekrar teşekkür eder, sizden haber almayı dört gözle beklerim.
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -160,16 +160,16 @@ Gracias di nuovo için suo tiempo, espero avere noticias suyas.
 [07]: https://github.com/nlpxucan/WizardLM "WizardLM"
 [08]: https://ai.meta.com/llama/ "LLaMA 2"
 [09]: https://lmsys.org/blog/2023-03-30-vicuna/ "Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality"
-[10]: https://mistral.ai/news/mixtral-of-experts/ "Mixtral 8x7B"
+[10]: https://mistral.ai/news/mixtral-of-experts/ "Mixtral 8x7B: An Open-Source Language Model Matching GPT-3.5 and Outperforming LLaMA 2-70B"
 [11]: https://huggingface.co/EleutherAI/gpt-neox-20b "GPT-NeoX-20B"
 [12]: https://huggingface.co/kingoflolz/mesh-transformer-jax "GPT-J"
 [13]: https://huggingface.co/kingoflolz/mesh-transformer-jax "OPT-175B"
 [14]: https://huggingface.co/kingoflolz/mesh-transformer-jax "LLMa 2"
 [15]: https://carnegieendowment.org/2023/11/14/future-of-ai-governance-conversation-with-arati-prabhakar-event-8195 "The Future of AI Governance: A Conversation with Arati Prabhakar"
 [16]: https://www.aisafetysummit.gov.uk/ "AI Safety Summit"
-[17]: https://www.cov.com/in/news-and-insights/insights/2023/12/international-developments-in-ai-governance-same-goal-different-paths "International developments in AI governance: same goal, different paths"
-[18]: https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023 "The Bletchley Declaration"
-[19]: https://www.spglobal.com/in/research-insights/featured/special-editorial/the-ai-governance-challenge "The AI Governance Challenge"
+[17]: https://www.cov.com/en/news-and-insights/insights/2023/12/international-developments-in-ai-governance-same-goal-different-paths "International developments in AI governance: same goal, different paths"
+[18]: https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023 "The Bletchley Declaration by Countries Attending the AI Safety Summit, 1-2 November 2023"
+[19]: https://www.spglobal.com/en/research-insights/featured/special-editorial/the-ai-governance-challenge "The AI Governance Challenge"
 [20]: https://news.mit.edu/2023/mit-group-releases-white-papers-governance-ai-1211 "MIT group releases white papers on governance of AI"
 [21]: https://cloudcdn.pro/stocks/diagrams/ai-software-market-revenue-2018-2025-professional.svg "AI Software Market's Surging Revenue: A Visualization of Growth"
 [22]: https://cloudcdn.pro/stocks/diagrams/rise-of-open-source-ai-models-bar-chart.svg "Explosive Growth of Open-Source AI Models in 2023"

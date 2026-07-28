@@ -1,228 +1,297 @@
 ---
-title: "Asegurar el libro contable: guía para consejos de administración sobre la migración postcuántica en banca corporativa"
-subtitle: "El riesgo cuántico ha pasado de la curiosidad académica a un mandato normativo activo. La hoja de ruta del G7, BIS Project Leap y los calendarios UE/UK/Australia plantean ya la cuestión no del cuándo, sino del cómo."
-description: "El riesgo cuántico ha pasado de la curiosidad académica al mandato normativo. Con la hoja de ruta del G7 de enero de 2026, calendarios UE, UK y australiano ahora aclarados, y BIS Project Leap que ha demostrado la viabilidad en un sistema de pago real, la cuestión para los consejos de administración ya no es la migración, sino los plazos."
-date: "May 14, 2026"
-language: "th-TH"
-locale: "th_TH"
+title: "การปกป้องบัญชีแยกประเภท: คู่มือระดับคณะกรรมการสำหรับการย้ายสู่การเข้ารหัสหลังควอนตัมในการเงินองค์กร"
+subtitle: "ความเสี่ยงเชิงควอนตัมได้เปลี่ยนจากความอยากรู้ในงานวิจัยไปสู่ข้อกำหนดเชิงกำกับดูแลที่มีผลบังคับ ด้วยแผนงาน G7 ที่เผยแพร่ในเดือนมกราคม 2026 และ BIS Project Leap ที่พิสูจน์ความเป็นไปได้ในระบบการชำระเงินจริง คำถามระดับคณะกรรมการจึงไม่ใช่ว่าจะย้ายหรือไม่ แต่เป็นว่าการย้ายจะเสร็จสิ้นก่อนอายุการเก็บรักษาของข้อมูลวันนี้จะหมดลงหรือไม่"
+description: "ความเสี่ยงเชิงควอนตัมได้เปลี่ยนจากความอยากรู้ในงานวิจัยไปสู่ข้อกำหนดเชิงกำกับดูแลที่มีผลบังคับ ด้วยแผนงาน G7 ที่เผยแพร่ในเดือนมกราคม 2026 กรอบเวลาของสหภาพยุโรป สหราชอาณาจักร และ ASD ที่ชัดเจนขึ้น และ BIS Project Leap ที่พิสูจน์ความเป็นไปได้ในระดับธนาคารกลาง คำถามสำหรับคณะกรรมการจึงไม่ใช่ว่าจะย้ายหรือไม่ แต่เป็นว่าการย้ายจะเสร็จสิ้นก่อนอายุการเก็บรักษาเชิงการเข้ารหัสของข้อมูลวันนี้จะหมดลงหรือไม่"
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+banner_alt: "แผนภาพแผนงานการย้ายสู่การเข้ารหัสหลังควอนตัม โครงสร้างพื้นฐานธนาคารองค์กรที่เปลี่ยนจาก RSA ไปสู่ ML-KEM และ ML-DSA"
+banner_height: "571"
+banner_width: "1425"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
-banner_alt: "Puerta de caja fuerte abierta bañada en luz dorada — metáfora visual de la protección criptográfica de los archivos financieros"
-keywords: "criptografía postcuántica, ML-KEM, ML-DSA, FIPS 203, FIPS 204, BIS Project Leap, G7 CEG, NCSC, ANSSI, BSI, ASD, CNSA 2.0, agilidad criptográfica, banca corporativa, pagos wholesale"
+cdn: "https://cloudcdn.pro"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "May 14, 2026"
+format-detection: "telephone=no"
+hreflang: "th"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/th/2026-05-14-kan-pongkan-banchi-yai-postquantum-kanngeon-borisat"
+image_alt: "ภาพถ่ายขาวดำของ Sebastien Rousseau"
+image_height: "162"
+image_width: "162"
+image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
+keywords: "การเข้ารหัสหลังควอนตัม, การย้ายสู่ PQC, ธนาคารองค์กร, บริการทางการเงิน, แผนงาน G7 CEG, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204"
+language: "th"
+last_reviewed: "2026-05-14"
+layout: "report"
+locale: "th_TH"
+logo_alt: "โลโก้ของ Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: ""
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/th/2026-05-14-kan-pongkan-banchi-yai-postquantum-kanngeon-borisat"
+rating: "general"
+referrer: "no-referrer"
+robots: "index, follow"
+schema: "FAQPage, Article"
+seo_title: "การปกป้องบัญชีแยกประเภท: คู่มือการย้ายสู่ Post-Quantum ระดับคณะกรรมการ"
+short_name: "sebastienrousseau"
+tags: "การเข้ารหัสหลังควอนตัม, ธนาคารองค์กร, G7 CEG, BIS Project Leap, ML-KEM, ML-DSA, NCSC, ASD, CNSA 2.0, เก็บเกี่ยวตอนนี้ถอดรหัสภายหลัง, สมการ Mosca, ความคล่องตัวด้านการเข้ารหัส, การเข้ารหัสแบบไฮบริด, ISO 20022, DORA, การคำนวณเชิงควอนตัม, AI, Rust, โอเพนซอร์ส, การชำระเงินข้ามพรมแดน"
+theme-color: "0, 67, 165"
+url: "https://sebastienrousseau.com/th/2026-05-14-kan-pongkan-banchi-yai-postquantum-kanngeon-borisat"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+atom_link: "https://sebastienrousseau.com/th/2026-05-14-kan-pongkan-banchi-yai-postquantum-kanngeon-borisat/rss.xml"
+category: "Quantum"
+docs: "https://validator.w3.org/feed/docs/rss2.html"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "มุมมองระดับคณะกรรมการต่อการย้ายสู่การเข้ารหัสหลังควอนตัมในการเงินองค์กรในเดือนพฤษภาคม 2026 ครอบคลุมแผนงาน G7 ข้อค้นพบจาก BIS Project Leap มาตรฐาน NIST ML-KEM และ ML-DSA และเส้นทางการย้ายเชิงตรรกะสามระยะ"
+item_guid: "https://sebastienrousseau.com/th/2026-05-14-kan-pongkan-banchi-yai-postquantum-kanngeon-borisat/rss.xml"
+item_link: "https://sebastienrousseau.com/th/2026-05-14-kan-pongkan-banchi-yai-postquantum-kanngeon-borisat/rss.xml"
+item_pub_date: "Thu, 14 May 2026 06:06:06 +0000"
+item_title: "การปกป้องบัญชีแยกประเภท: คู่มือระดับคณะกรรมการสำหรับการย้ายสู่การเข้ารหัสหลังควอนตัมในการเงินองค์กร"
+last_build_date: "Thu, 14 May 2026 06:06:06 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Thu, 14 May 2026 06:06:06 +0000"
+ttl: "60"
+type: "article"
+webmaster: "contact@sebastienrousseau.com"
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "ปกป้องบัญชีแยกประเภท"
+apple-touch-fullscreen: "yes"
+msapplication-navbutton-color: "0, 83, 191"
+twitter_card: "summary_large_image"
+twitter_creator: "@wwdseb"
+twitter_description: "มุมมองระดับคณะกรรมการต่อการย้ายสู่การเข้ารหัสหลังควอนตัมในการเงินองค์กรในเดือนพฤษภาคม 2026 ครอบคลุมแผนงาน G7 ข้อค้นพบจาก BIS Project Leap มาตรฐาน NIST ML-KEM และ ML-DSA และเส้นทางการย้ายเชิงตรรกะสามระยะ"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "โลโก้ของ Sebastien Rousseau"
+twitter_site: "@wwdseb"
+twitter_title: "การปกป้องบัญชีแยกประเภท: คู่มือระดับคณะกรรมการสำหรับการย้ายสู่การเข้ารหัสหลังควอนตัมในการเงินองค์กร"
+twitter_url: "https://sebastienrousseau.com/th/2026-05-14-kan-pongkan-banchi-yai-postquantum-kanngeon-borisat"
+author_website: "https://sebastienrousseau.com"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "ขอบคุณที่อ่าน!"
+site_last_updated: "2026-05-14"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+excerpt: "ความเสี่ยงเชิงควอนตัมได้เปลี่ยนจากความอยากรู้ในงานวิจัยไปสู่ข้อกำหนดเชิงกำกับดูแลที่มีผลบังคับ ด้วยแผนงาน G7 ที่เผยแพร่ในเดือนมกราคม 2026 กรอบเวลาของสหภาพยุโรป สหราชอาณาจักร และออสเตรเลียที่ชัดเจนขึ้น และ BIS Project Leap…"
 ---
 
+# การปกป้องบัญชีแยกประเภท: คู่มือระดับคณะกรรมการสำหรับการย้ายสู่การเข้ารหัสหลังควอนตัมในการเงินองค์กร
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
-
-**ประเด็นสำคัญ**
-
-El riesgo cuántico ha pasado de la curiosidad académica al mandato normativo activo. Con la hoja de ruta del G7 publicada en enero de 2026, los calendarios de la UE, el Reino Unido y Australia ahora aclarados, y BIS Project Leap que ha demostrado la viabilidad en un sistema de pago real, la cuestión para los consejos de administración ya no es si hay que migrar, sino si la migración puede completarse antes de que la vida útil criptográfica de los datos de hoy expire.
+ความเสี่ยงเชิงควอนตัมได้เปลี่ยนจากความอยากรู้ในงานวิจัยไปสู่ข้อกำหนดเชิงกำกับดูแลที่มีผลบังคับ ด้วยแผนงาน G7 ที่เผยแพร่ในเดือนมกราคม 2026 กรอบเวลาของสหภาพยุโรป สหราชอาณาจักร และออสเตรเลียที่ชัดเจนขึ้น และ BIS Project Leap ที่พิสูจน์ความเป็นไปได้ในระบบการชำระเงินจริง คำถามสำหรับคณะกรรมการจึงไม่ใช่ว่าจะย้ายหรือไม่ แต่เป็นว่าการย้ายจะเสร็จสิ้นก่อนอายุการเก็บรักษาเชิงการเข้ารหัสของข้อมูลวันนี้จะหมดลงหรือไม่
 
 ---
 
-> **TL;DR.** La preparación postcuántica ha pasado en 2026 de hoja de ruta a obligación. Los consejos de administración deben tratar la migración como una decisión de gestión de riesgos sistémicos, anclada en ML-KEM y ML-DSA, desplegada de forma híbrida, y secuenciada con suficiente antelación para preceder a un CRQC plausible y a las exigencias normativas más estrictas aplicables.
+> **ประเด็นสำคัญ**
 >
-> **Conclusiones clave**
->
-> - **2026 es el año en que la postura normativa se ha endurecido.** La hoja de ruta de enero del Cyber Expert Group del G7, el calendario coordinado del Grupo de cooperación NIS de la UE y el plan en tres fases del NCSC británico han hecho pasar la conversación de la sensibilización a la ejecución. La Australian Signals Directorate va aún más lejos al fijar una fecha límite firme a 2030 para la criptografía asimétrica clásica.
-> - **La exposición es asimétrica.** RSA, ECC y Diffie–Hellman constituyen el problema inmediato: los algoritmos asimétricos que sustentan los handshakes SWIFT, TLS, las PKI, la firma de código y la autenticación de las redes de compensación. El cifrado simétrico (AES-256) sigue siendo estable si se mantiene la longitud de las claves. La atención del consejo debe centrarse en la superficie asimétrica.
-> - **«Cosechar ahora, descifrar más tarde» no es un escenario futuro.** Adversarios interceptan y almacenan ya hoy registros financieros cifrados, registros de liquidación, expedientes de M&A y datos de transferencias transfronterizas, con la intención explícita de descifrarlos una vez que exista un ordenador cuántico criptográficamente relevante (CRQC). Para datos sujetos a una exigencia de confidencialidad de 10 a 20 años, este riesgo ya se ha materializado.
-> - **La industria dispone ahora de un punto de referencia operativo.** [BIS Project Leap Phase 2 ⧉](https://www.bis.org/publ/othp107.htm "Project Leap phase 2: quantum-proofing payment systems"), publicado en diciembre de 2025, sustituyó con éxito las firmas digitales tradicionales por criptografía postcuántica en transferencias de liquidez en producción a través de TARGET2, y ha hecho aflorar los costes de ingeniería específicos (latencia de verificación, tamaño de paquetes) a los que se enfrentará cualquier programa de migración.
-> - **La suite NIST es el ancla mundial.** [FIPS 203 (ML-KEM) ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203, Module-Lattice-Based Key-Encapsulation Mechanism Standard") y FIPS 204 (ML-DSA) son referenciados por todas las jurisdicciones principales, incluso cuando las posiciones nacionales divergen sobre los conjuntos de parámetros y las exigencias híbridas. Los consejos deberían considerar ML-KEM-768 / ML-DSA-65 como suelo y ML-KEM-1024 / ML-DSA-87 como referencia conservadora para los datos de larga vida útil.
-> - **El híbrido es la única vía creíble.** Ninguna autoridad principal recomienda la bascula directa. Hacer funcionar clásico y resistente a lo cuántico en paralelo es el esquema de despliegue validado por el NCSC, el ANSSI, el BSI, y demostrado en Project Leap. Es más pesado que cualquiera de las alternativas, pero es la única que aborda a la vez la compatibilidad de hoy y la amenaza de mañana.
+> - **ปี 2026 คือปีที่ท่าทีเชิงกำกับดูแลเข้มงวดขึ้น** แผนงานเดือนมกราคมของ G7 Cyber Expert Group กรอบเวลาที่ประสานกันของ EU NIS Cooperation Group และแผนสามระยะของ UK NCSC ได้ผลักดันการสนทนาจากการตระหนักรู้ไปสู่การลงมือปฏิบัติ Australian Signals Directorate ก้าวไปไกลกว่านั้นด้วยการกำหนดวันสิ้นสุดที่ตายตัวปี 2030 สำหรับการเข้ารหัสแบบอสมมาตรดั้งเดิม
+> - **ความเสี่ยงมีลักษณะอสมมาตร** RSA, ECC และ Diffie–Hellman คือปัญหาเฉพาะหน้า ซึ่งเป็นอัลกอริทึมอสมมาตรที่รองรับการจับมือ (handshake) ของ SWIFT, TLS, PKI, การลงนามโค้ด และการยืนยันตัวตนของเครือข่ายเคลียริง การเข้ารหัสแบบสมมาตร (AES-256) ยังคงเสถียรหากรักษาความยาวกุญแจไว้ ความสนใจระดับคณะกรรมการจึงต้องมุ่งไปที่พื้นผิวแบบอสมมาตร
+> - **เก็บเกี่ยวตอนนี้ ถอดรหัสภายหลัง ไม่ใช่สถานการณ์ในอนาคต** ปฏิปักษ์กำลังดักจับและจัดเก็บบันทึกทางการเงินที่เข้ารหัส ระเบียนการชำระดุล เอกสาร M&A และข้อมูลการโอนเงินข้ามพรมแดนในวันนี้ โดยมีเจตนาชัดเจนที่จะถอดรหัสเมื่อคอมพิวเตอร์ควอนตัมที่เกี่ยวข้องเชิงการเข้ารหัส (CRQC) ปรากฏขึ้น สำหรับข้อมูลที่มีข้อกำหนดการรักษาความลับ 10 ถึง 20 ปี ความเสี่ยงนั้นได้เกิดขึ้นจริงแล้ว
+> - **ปัจจุบันอุตสาหกรรมมีจุดอ้างอิงที่ใช้งานได้จริงแล้ว** [BIS Project Leap Phase 2 ⧉](https://www.bis.org/publ/othp107.htm "Project Leap ระยะที่ 2: การทำให้ระบบการชำระเงินต้านทานควอนตัม") ที่เผยแพร่ในเดือนธันวาคม 2025 ประสบความสำเร็จในการแทนที่ลายเซ็นดิจิทัลแบบดั้งเดิมด้วยการเข้ารหัสหลังควอนตัมในการโอนสภาพคล่องจริงผ่าน TARGET2 และเผยให้เห็นต้นทุนทางวิศวกรรมที่เฉพาะเจาะจง (ความหน่วงในการตรวจสอบ ขนาดแพ็กเก็ต) ที่ทุกโครงการย้ายระบบจะต้องเผชิญ
+> - **ชุดมาตรฐาน NIST คือหลักยึดระดับโลก** [FIPS 203 (ML-KEM) ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203 มาตรฐานกลไกการห่อหุ้มกุญแจแบบอิงแลตทิซมอดูล") และ FIPS 204 (ML-DSA) ถูกอ้างอิงโดยทุกเขตอำนาจศาลหลัก แม้ในกรณีที่จุดยืนระดับชาติแตกต่างกันในเรื่องชุดพารามิเตอร์และข้อกำหนดแบบไฮบริด คณะกรรมการควรถือว่า ML-KEM-768/ML-DSA-65 เป็นระดับขั้นต่ำ และ ML-KEM-1024/ML-DSA-87 เป็นเกณฑ์พื้นฐานเชิงอนุรักษ์สำหรับข้อมูลที่มีอายุยาว
+> - **ไฮบริดคือเส้นทางเดียวที่น่าเชื่อถือ** ไม่มีหน่วยงานหลักใดแนะนำการเปลี่ยนแบบทันทีทั้งหมด การรันอัลกอริทึมดั้งเดิมและอัลกอริทึมที่ต้านทานควอนตัมควบคู่กันคือรูปแบบการติดตั้งที่ NCSC, ANSSI, BSI รับรอง และได้รับการพิสูจน์ใน Project Leap แล้ว มันหนักกว่าทางเลือกใดทางเลือกหนึ่ง แต่เป็นทางเดียวที่ตอบโจทย์ทั้งความเข้ากันได้ในวันนี้และภัยคุกคามในวันข้างหน้า
 
 ---
 
-## El año en que la postura normativa se ha endurecido
+## ปีที่ท่าทีเชิงกำกับดูแลเข้มงวดขึ้น
 
-Durante la mayor parte de la última década, la criptografía postcuántica vivía en una esquina cómoda de la hoja de ruta a largo plazo. Los ordenadores cuánticos eran impresionantes pero lejanos; la matemática criptográfica subyacente a RSA y a las curvas elípticas se trataba como sustrato estable; y la conversación sobre la migración se mantenía en gran medida confinada a grupos de trabajo especializados. Esa posición ya no es sostenible.
+ตลอดช่วงเกือบทั้งทศวรรษที่ผ่านมา การเข้ารหัสหลังควอนตัมอยู่ในมุมสบายๆ ของแผนงานระยะยาว คอมพิวเตอร์ควอนตัมนั้นน่าประทับใจแต่ยังห่างไกล คณิตศาสตร์เชิงการเข้ารหัสที่รองรับ RSA และเส้นโค้งเชิงวงรีถูกมองว่าเป็นฐานที่มั่นคง และการสนทนาเรื่องการย้ายระบบส่วนใหญ่จำกัดอยู่ในกลุ่มทำงานเฉพาะทาง จุดยืนนั้นไม่อาจยืนหยัดได้อีกต่อไป
 
-En enero de 2026, el [Cyber Expert Group del G7 publicó su declaración más consecuente hasta la fecha ⧉](https://www.gov.uk/government/publications/advancing-a-coordinated-roadmap-for-the-transition-to-post-quantum-cryptography-in-the-financial-sector/g7-cyber-expert-group-statement-on-advancing-a-coordinated-roadmap-for-the-transition-to-post-quantum-cryptography-in-the-financial-sector-january-20 "G7 CEG Statement on Advancing a Coordinated Roadmap for the Transition to Post-Quantum Cryptography in the Financial Sector"), copresidida por el Tesoro estadounidense y el Banco de Inglaterra. El documento no es una regulación, pero pesa más que una orientación clásica: representa la posición compartida de los ministerios de Finanzas, bancos centrales y autoridades de supervisión de las jurisdicciones del G7, según la cual la transición criptográfica es ahora una cuestión de gestión de riesgos sistémicos. La hoja de ruta alinea su horizonte de planificación con mediados de la década de 2030, animando a los sistemas financieros críticos a migrar antes, una formulación que, en el idioma prudente de los banqueros centrales, señala una expectativa más que una sugerencia.
+ในเดือนมกราคม 2026 [G7 Cyber Expert Group ได้เผยแพร่แถลงการณ์ที่สำคัญที่สุดจนถึงปัจจุบัน ⧉](https://www.gov.uk/government/publications/advancing-a-coordinated-roadmap-for-the-transition-to-post-quantum-cryptography-in-the-financial-sector/g7-cyber-expert-group-statement-on-advancing-a-coordinated-roadmap-for-the-transition-to-post-quantum-cryptography-in-the-financial-sector-january-20 "แถลงการณ์ G7 CEG ว่าด้วยการผลักดันแผนงานที่ประสานกันสำหรับการเปลี่ยนผ่านสู่การเข้ารหัสหลังควอนตัมในภาคการเงิน") ซึ่งมีกระทรวงการคลังสหรัฐฯ และธนาคารกลางอังกฤษเป็นประธานร่วม เอกสารนี้ไม่ใช่กฎระเบียบ แต่มีน้ำหนักมากกว่าแนวทางทั่วไป เพราะสะท้อนมุมมองร่วมของกระทรวงการคลัง ธนาคารกลาง และหน่วยงานกำกับดูแลทั่วเขตอำนาจศาล G7 ว่าการเปลี่ยนผ่านเชิงการเข้ารหัสเป็นประเด็นการบริหารความเสี่ยงเชิงระบบแล้วในขณะนี้ แผนงานนี้จัดวางกรอบเวลาการวางแผนไว้ราวกลางทศวรรษ 2030 พร้อมสนับสนุนให้ระบบการเงินที่สำคัญย้ายเร็วขึ้น ซึ่งเป็นถ้อยคำที่ในสำนวนอันระมัดระวังของนายธนาคารกลางนั้นบ่งบอกถึงความคาดหวังมากกว่าข้อเสนอแนะ
 
-Dos meses antes, el BIS Innovation Hub y el Eurosistema publicaron los resultados de [Project Leap Phase 2 ⧉](https://www.bis.org/publ/othp107.htm "Project Leap phase 2: quantum-proofing payment systems"), una experimentación técnica que sustituyó las firmas digitales tradicionales por criptografía postcuántica en transferencias de liquidez en producción entre la Banca d'Italia, la Banque de France, la Deutsche Bundesbank, Nexi-Colt y Swift. La conclusión principal fue un éxito: transferencias firmadas resistentes a lo cuántico atravesaron de extremo a extremo un sistema de pago operativo. El detalle bajo el titular es más instructivo, y se examina más adelante en este artículo.
+สองเดือนก่อนหน้านั้น BIS Innovation Hub และ Eurosystem ได้เผยแพร่ผลลัพธ์ของ [Project Leap Phase 2 ⧉](https://www.bis.org/publ/othp107.htm "Project Leap ระยะที่ 2: การทำให้ระบบการชำระเงินต้านทานควอนตัม") ซึ่งเป็นการทดลองเชิงเทคนิคที่แทนที่ลายเซ็นดิจิทัลแบบดั้งเดิมด้วยการเข้ารหัสหลังควอนตัมในการโอนสภาพคล่องจริงระหว่างธนาคารกลางอิตาลี ธนาคารกลางฝรั่งเศส ธนาคารกลางเยอรมนี Nexi-Colt และ Swift ข้อค้นพบหลักคือความสำเร็จ การโอนที่ลงนามด้วยวิธีต้านทานควอนตัมผ่านระบบการชำระเงินที่ใช้งานจริงได้แบบครบวงจร รายละเอียดที่อยู่ใต้พาดหัวนั้นให้บทเรียนมากกว่า และจะได้รับการพิจารณาในภายหลังของบทความนี้
 
-La combinación de estos dos eventos —un marco político coordinado del G7 y una prueba operativa en un sistema de pago real— ha producido lo que la comunidad técnica esperaba desde hace una década: una respuesta definitiva a la pregunta «¿es esto real?». La respuesta, en mayo de 2026, es sí. La cuestión que queda es la del ritmo.
+การผสานเหตุการณ์ทั้งสองนี้ ทั้งกรอบนโยบายที่ประสานกันของ G7 และหลักฐานที่ใช้งานได้จริงในระบบการชำระเงินจริง ได้สร้างสิ่งที่ประชาคมเทคนิครอคอยมาตลอดทศวรรษ นั่นคือคำตอบที่ชัดเจนต่อคำถามว่า "นี่เป็นเรื่องจริงหรือไม่" คำตอบในเดือนพฤษภาคม 2026 คือใช่ คำถามที่เหลืออยู่คือเรื่องของจังหวะความเร็ว
 
-## Tres vectores de amenaza que deben preocupar al consejo
+## เวกเตอร์ภัยคุกคามสามประการที่คณะกรรมการควรกังวล
 
-Antes de discutir la mecánica de migración, conviene ser preciso sobre lo que está concretamente en juego. El riesgo cuántico en banca corporativa no es uniforme en todo el parque criptográfico, y la atención del consejo se dirige mejor a los tres vectores donde la exposición es más aguda.
+ก่อนจะพูดถึงกลไกการย้ายระบบ ควรระบุให้ชัดเจนว่าอะไรบ้างที่ตกอยู่ในความเสี่ยง ความเสี่ยงเชิงควอนตัมในธนาคารองค์กรไม่ได้กระจายเท่ากันทั่วทั้งขอบเขตการเข้ารหัส และความสนใจของคณะกรรมการควรมุ่งไปที่เวกเตอร์สามประการที่ความเสี่ยงรุนแรงที่สุด
 
-### 1. Cosechar ahora, descifrar más tarde (HNDL)
+### 1. เก็บเกี่ยวตอนนี้ ถอดรหัสภายหลัง (HNDL)
 
-La preocupación más inmediata no es futura. Es presente. Adversarios de nivel estatal y organizaciones criminales sofisticadas interceptan y almacenan sistemáticamente el tráfico financiero cifrado —transferencias, flujos de mensajes SWIFT, comunicaciones M&A, registros de liquidación transfronteriza, contratos de swap y archivos KYC— sin capacidad actual de leerlos. Su objetivo es simple: almacenar ahora, descifrar más tarde, una vez que exista un CRQC. Como [señaló explícitamente el Banco de Pagos Internacionales ⧉](https://www.bis.org/about/bisih/topics/cyber_security/leap.htm "Project Leap: quantum-proofing the financial system"), esa recopilación ya está en curso.
+ความกังวลเฉพาะหน้าที่สุดไม่ใช่เรื่องอนาคต แต่เป็นปัจจุบัน ปฏิปักษ์ระดับรัฐและองค์กรอาชญากรรมที่ซับซ้อนกำลังดักจับและจัดเก็บการรับส่งข้อมูลทางการเงินที่เข้ารหัสอย่างเป็นระบบ ทั้งการโอนเงิน กระแสข้อความ SWIFT การสื่อสาร M&A บันทึกการชำระดุลข้ามพรมแดน สัญญาสวอป และแฟ้ม KYC โดยยังไม่มีความสามารถอ่านมันได้ในปัจจุบัน เป้าหมายของพวกเขาตรงไปตรงมา คือจัดเก็บตอนนี้ ถอดรหัสภายหลัง เมื่อ CRQC ปรากฏขึ้น ดังที่ [ธนาคารเพื่อการชำระหนี้ระหว่างประเทศได้ระบุไว้อย่างชัดเจน ⧉](https://www.bis.org/about/bisih/topics/cyber_security/leap.htm "Project Leap: การทำให้ระบบการเงินต้านทานควอนตัม") การเก็บรวบรวมนี้กำลังเกิดขึ้นแล้ว
 
-Para los consejos, la implicación es incómoda pero precisa: cualquier dato sensible transmitido hoy bajo cifrado asimétrico clásico, cuya exigencia de confidencialidad se extienda más allá de la llegada de un CRQC, ya debe considerarse expuesto. No hay notificación de brecha cuando ocurre un HNDL. No hay alerta SIEM. El cifrado se sostiene —de momento— pero los datos ya han salido del perímetro.
+สำหรับคณะกรรมการ นัยของเรื่องนี้ไม่สบายใจแต่ชัดเจน ข้อมูลอ่อนไหวใดๆ ที่ส่งภายใต้การเข้ารหัสอสมมาตรดั้งเดิมในวันนี้ ซึ่งมีข้อกำหนดการรักษาความลับยาวเกินกว่าการมาถึงของ CRQC ต้องถือว่าถูกเปิดเผยแล้ว ไม่มีการแจ้งเตือนการละเมิดเมื่อ HNDL เกิดขึ้น ไม่มีสัญญาณเตือนใน SIEM การเข้ารหัสยังคงยึดอยู่ในตอนนี้ แต่ข้อมูลได้ออกไปนอกขอบเขตแล้ว
 
-### 2. Riesgo de sensibilidad a largo plazo
+### 2. ความเสี่ยงด้านความอ่อนไหวระยะยาว
 
-Los datos de banca corporativa tienen vidas útiles institucionales inusualmente largas. La documentación de M&A estratégica puede seguir siendo sensible al mercado durante una década. Las comunicaciones sobre secretos industriales y las valoraciones de propiedad intelectual pueden seguir siendo confidenciales durante quince a veinte años. Los registros de liquidación transfronteriza, las exposiciones de contrapartes centrales y las evaluaciones de crédito de contrapartes conservan una sensibilidad comercial mucho más allá de su vida transaccional inmediata.
+ข้อมูลธนาคารองค์กรมีอายุการเก็บรักษาเชิงสถาบันที่ยาวนานผิดปกติ เอกสาร M&A เชิงกลยุทธ์อาจยังคงอ่อนไหวต่อตลาดได้นานถึงหนึ่งทศวรรษ การสื่อสารความลับทางการค้าและการประเมินมูลค่าทรัพย์สินทางปัญญาอาจยังเป็นความลับได้นานสิบห้าถึงยี่สิบปี บันทึกการชำระดุลข้ามพรมแดน ความเสี่ยงของคู่สัญญากลาง และการประเมินเครดิตคู่สัญญายังคงมีความอ่อนไหวเชิงพาณิชย์ยาวนานเกินกว่าอายุการทำธุรกรรมเฉพาะหน้า
 
-La [ecuación de Mosca ⧉](https://www.cryptomathic.com/a-bankers-guide-to-quantum-safe-cryptography-part-3-roadmap-to-pqc-migration-for-financial-institutions-cryptomathic "A Banker's Guide to Quantum Safe Cryptography — Part 3"), formulada originalmente por Michele Mosca y ahora integrada en todo marco de migración serio, formaliza el problema. Si **S** es la vida útil de los datos, **M** es el tiempo necesario para migrar los sistemas que los protegen y **Q** es el tiempo antes de que un CRQC esté disponible, entonces:
+[สมการ Mosca ⧉](https://www.cryptomathic.com/a-bankers-guide-to-quantum-safe-cryptography-part-3-roadmap-to-pqc-migration-for-financial-institutions-cryptomathic "คู่มือนายธนาคารสู่การเข้ารหัสที่ปลอดภัยต่อควอนตัม ตอนที่ 3") ซึ่งเดิมนำเสนอโดย Michele Mosca และปัจจุบันฝังอยู่ในทุกกรอบการย้ายระบบที่จริงจัง ได้ทำให้ปัญหานี้เป็นรูปธรรม หากให้ **S** คืออายุการเก็บรักษาของข้อมูล **M** คือเวลาที่ต้องใช้ในการย้ายระบบที่ปกป้องข้อมูลนั้น และ **Q** คือเวลาจนกว่า CRQC จะพร้อมใช้งาน ดังนั้น
 
 ```
-Si S + M > Q, los datos ya están expuestos.
+หาก S + M > Q ข้อมูลก็ถูกเปิดเผยไปแล้ว
 ```
 
-Para datos cuyo horizonte de confidencialidad es de veinte años y un programa de migración que requiere razonablemente cinco a siete años, el valor Q implícito sobre el que apuesta el consejo es de al menos 25 años. Un cuerpo creciente de evaluaciones de expertos —las [predicciones APAC 2026 de Forrester ⧉](https://www.forrester.com/press-newsroom/forrester-apac-2026-predictions/ "Forrester's 2026 APAC Predictions"), las encuestas anuales del Global Risk Institute y un artículo de arquitectura de febrero de 2026 que propone un CRQC con unos 100.000 qubits físicos utilizando códigos QLDPC— sugiere que esa apuesta es imprudente.
+สำหรับข้อมูลที่มีขอบเขตการรักษาความลับยี่สิบปีและโครงการย้ายระบบที่ต้องใช้เวลาจริงห้าถึงเจ็ดปีจึงจะเสร็จ ค่า Q โดยนัยที่คณะกรรมการกำลังเดิมพันอยู่คืออย่างน้อย 25 ปีข้างหน้า องค์ความรู้จากการประเมินของผู้เชี่ยวชาญที่เพิ่มขึ้น ทั้ง [คำทำนาย APAC ปี 2026 ของ Forrester ⧉](https://www.forrester.com/press-newsroom/forrester-apac-2026-predictions/ "คำทำนาย APAC ปี 2026 ของ Forrester") การสำรวจประจำปีของ Global Risk Institute และเอกสารสถาปัตยกรรมเดือนกุมภาพันธ์ 2026 ที่เสนอ CRQC ที่ราว 100,000 คิวบิตเชิงกายภาพโดยใช้รหัส QLDPC ล้วนบ่งชี้ว่าการเดิมพันนั้นไม่ปลอดภัย
 
-### 3. La vulnerabilidad de los handshakes centrales
+### 3. ช่องโหว่ของการจับมือหลัก
 
-El tercer vector es el más significativo arquitectónicamente. Los cifrados simétricos (AES-256) siguen siendo comparativamente estables; el algoritmo de Grover divide a la mitad el nivel de seguridad efectivo, pero duplicar la longitud de clave restaura el margen. La exposición catastrófica concierne a los algoritmos asimétricos, y son precisamente los algoritmos que sustentan todo handshake autenticado en banca corporativa: RSA en la infraestructura de claves públicas SWIFT, ECDSA en la autenticación cliente/servidor TLS, ECDH en el establecimiento de claves de sesión, y las variantes ECC por todas partes en la autenticación móvil del cliente, las firmas de API y las cadenas de firma de código.
+เวกเตอร์ที่สามมีนัยสำคัญเชิงสถาปัตยกรรมมากที่สุด รหัสสมมาตร (AES-256) ยังค่อนข้างเสถียร อัลกอริทึมของ Grover ลดระดับความปลอดภัยที่มีผลลงครึ่งหนึ่ง แต่การเพิ่มความยาวกุญแจเป็นสองเท่าจะฟื้นระยะปลอดภัยกลับมา ความเสี่ยงที่ร้ายแรงอยู่ที่อัลกอริทึมอสมมาตร และเหล่านี้คืออัลกอริทึมที่รองรับการจับมือที่ยืนยันตัวตนทุกครั้งในการเงินองค์กรอย่างแท้จริง ได้แก่ RSA ในโครงสร้างพื้นฐานกุญแจสาธารณะของ SWIFT, ECDSA ในการยืนยันตัวตนไคลเอนต์/เซิร์ฟเวอร์ TLS, ECDH ในการสถาปนากุญแจเซสชัน และรูปแบบต่างๆ ของ ECC ทั่วทั้งการยืนยันตัวตนบนมือถือของลูกค้า ลายเซ็น API และไปป์ไลน์การลงนามโค้ด
 
-Un CRQC funcional que ejecute el algoritmo de Shor no debilita progresivamente esos sistemas. Los rompe. Una vez que un CRQC sea operativo, cualquier handshake protegido por RSA, cualquier firma ECDSA y cualquier intercambio de clave por curva elíptica se vuelven recuperables, no después de meses de esfuerzo, sino en cuestión de horas. La transición de «seguro» a «comprometido» es binaria, y se propaga simultáneamente a través de cada sistema que utilice el algoritmo afectado. Ese es el fundamento sobre el que descansa la urgencia normativa.
+CRQC ที่ใช้งานได้ซึ่งรันอัลกอริทึมของ Shor ไม่ได้ค่อยๆ ทำให้ระบบเหล่านี้อ่อนแอลง แต่ทำลายมัน เมื่อ CRQC เริ่มทำงาน การจับมือที่ป้องกันด้วย RSA ทุกครั้ง ลายเซ็น ECDSA ทุกอัน และการแลกเปลี่ยนกุญแจเชิงเส้นโค้งวงรีทุกครั้งจะกู้คืนได้ ไม่ใช่ด้วยความพยายามหลายเดือน แต่ภายในไม่กี่ชั่วโมง การเปลี่ยนจาก "ปลอดภัย" ไปเป็น "ถูกเจาะ" เป็นแบบไบนารี และแพร่กระจายพร้อมกันไปทั่วทุกระบบที่ใช้อัลกอริทึมที่ได้รับผลกระทบ นี่คือรากฐานที่ความเร่งด่วนเชิงกำกับดูแลตั้งอยู่
 
-## Endurecimiento normativo: panorama por jurisdicción
+## การเข้มงวดเชิงกำกับดูแล: มุมมองรายเขตอำนาจศาล
 
-El panorama normativo mundial en mayo de 2026 ya no es un mosaico de sugerencias. Es un conjunto coordinado de calendarios que varían en rigor pero convergen hacia el mismo destino. Un banco multinacional que opere en las principales plazas financieras está sometido ahora a la jurisdicción aplicable más estricta, no a la más permisiva.
+ภาพรวมเชิงกำกับดูแลระดับโลกในเดือนพฤษภาคม 2026 ไม่ใช่การปะติดปะต่อของข้อเสนอแนะอีกต่อไป แต่เป็นชุดกรอบเวลาที่ประสานกัน ซึ่งมีความเข้มงวดแตกต่างกันแต่บรรจบสู่ปลายทางเดียวกัน ธนาคารข้ามชาติที่ดำเนินงานทั่วศูนย์กลางการเงินหลักในขณะนี้อยู่ภายใต้เขตอำนาจศาลที่เข้มงวดที่สุดที่บังคับใช้ ไม่ใช่ที่ผ่อนปรนที่สุด
 
-### Estados Unidos
+### สหรัฐอเมริกา
 
-Estados Unidos tiene la posición más prescriptiva para cualquier institución que toque sistemas federales. La [Commercial National Security Algorithm Suite 2.0 ⧉](https://informedclearly.com/en/technology/46563/quantum-encryption-race-post-quantum-security-standards-2026 "Quantum-Encryption Race 2026") de la NSA impone ML-KEM-1024 y ML-DSA-87 para los sistemas de seguridad nacional, debiendo los nuevos sistemas desplegar la PQC a partir de enero de 2027 y debiendo completarse la migración de la infraestructura para 2035. El Memorándum OMB M-23-02 vincula a las agencias federales a la misma trayectoria. Para los bancos comerciales, la exposición inmediata pasa por las cadenas de compras federales, los contratos adyacentes a los NSS, y la presión indirecta que las orientaciones de la NSA ejercen sobre el mercado más amplio.
+สหรัฐฯ มีจุดยืนที่กำหนดรายละเอียดมากที่สุดสำหรับสถาบันใดก็ตามที่เกี่ยวข้องกับระบบของรัฐบาลกลาง [Commercial National Security Algorithm Suite 2.0 ⧉](https://informedclearly.com/en/technology/46563/quantum-encryption-race-post-quantum-security-standards-2026 "การแข่งขันการเข้ารหัสควอนตัม 2026") ของ NSA กำหนดให้ใช้ ML-KEM-1024 และ ML-DSA-87 สำหรับระบบความมั่นคงแห่งชาติ โดยระบบใหม่ต้องติดตั้ง PQC ตั้งแต่เดือนมกราคม 2027 และย้ายโครงสร้างพื้นฐานให้เสร็จภายในปี 2035 บันทึกความเข้าใจ OMB M-23-02 ผูกมัดหน่วยงานรัฐบาลกลางไว้กับเส้นทางเดียวกัน สำหรับธนาคารพาณิชย์ ความเสี่ยงเฉพาะหน้าเกิดผ่านห่วงโซ่การจัดซื้อจัดจ้างของรัฐบาลกลาง สัญญาที่ประชิดกับ NSS และแรงกดดันทางอ้อมที่แนวทางของ NSA มีต่อตลาดในวงกว้าง
 
-### Unión Europea
+### สหภาพยุโรป
 
-La UE opera en tres capas. La [hoja de ruta coordinada de implementación de la Comisión Europea ⧉](https://pqshield.com/pqc-transition-roadmaps-and-guidance/ "PQC Roadmaps and Transition Guidance"), elaborada por el Grupo de cooperación NIS en junio de 2025, fija hitos por fases en 2026 (estrategias nacionales), 2030 (sistemas de alto riesgo migrados) y 2035 (transición completa). El Cyber Resilience Act impondrá actualizaciones de seguridad al estado del arte para los productos digitales a partir de finales de 2027. NIS2 refuerza la gestión de riesgos ICT, aunque ninguna de las dos directivas contiene una exigencia PQC explícita. Los reguladores nacionales, por su parte, han adelantado a la Comisión. El BSI alemán impone el intercambio de claves híbrido y aprueba un panel conservador de ML-KEM, FrodoKEM y Classic McEliece. La ANSSI francesa exige el híbrido tanto para la encapsulación de claves como para las firmas. La NLNCSA neerlandesa y las autoridades noruegas se han alineado con ML-KEM-1024 como referencia conservadora para los datos de larga vida útil.
+สหภาพยุโรปดำเนินงานในสามชั้น [แผนงานการนำไปปฏิบัติที่ประสานกันของคณะกรรมาธิการยุโรป ⧉](https://pqshield.com/pqc-transition-roadmaps-and-guidance/ "แผนงาน PQC และแนวทางการเปลี่ยนผ่าน") ซึ่งจัดทำโดย NIS Cooperation Group ในเดือนมิถุนายน 2025 กำหนดหมุดหมายเป็นระยะที่ปี 2026 (ยุทธศาสตร์ระดับชาติ) ปี 2030 (ย้ายระบบที่มีความเสี่ยงสูง) และปี 2035 (เปลี่ยนผ่านสมบูรณ์) Cyber Resilience Act จะกำหนดให้ยกระดับความปลอดภัยตามเทคโนโลยีล่าสุดสำหรับผลิตภัณฑ์ดิจิทัลตั้งแต่ปลายปี 2027 NIS2 เสริมการบริหารความเสี่ยง ICT แม้ว่าคำสั่งทั้งสองฉบับจะไม่มีข้อกำหนด PQC ที่ชัดแจ้ง อย่างไรก็ตาม หน่วยงานกำกับดูแลระดับชาติได้ก้าวล้ำหน้าคณะกรรมาธิการไปแล้ว BSI ของเยอรมนีกำหนดให้ใช้การแลกเปลี่ยนกุญแจแบบไฮบริดและอนุมัติชุดที่อนุรักษ์นิยมของ ML-KEM, FrodoKEM และ Classic McEliece ANSSI ของฝรั่งเศสกำหนดให้ใช้ไฮบริดทั้งการห่อหุ้มกุญแจและลายเซ็น NLNCSA ของเนเธอร์แลนด์และหน่วยงานของนอร์เวย์ได้ยึด ML-KEM-1024 เป็นเกณฑ์พื้นฐานเชิงอนุรักษ์สำหรับข้อมูลที่มีอายุยาว
 
-### Reino Unido
+### สหราชอาณาจักร
 
-El NCSC británico publicó sus orientaciones definitivas en marzo de 2025 y las reafirmó mediante el Annual Review 2025. El calendario en tres fases es explícito:
+UK NCSC เผยแพร่แนวทางฉบับสมบูรณ์ในเดือนมีนาคม 2025 และยืนยันอีกครั้งผ่าน Annual Review 2025 กรอบเวลาสามระยะนั้นชัดเจน
 
-- **Hasta 2028**: identificar los servicios criptográficos que requieren actualización, construir el plan de migración y producir un inventario criptográfico completo.
-- **2028 a 2031**: ejecutar las actualizaciones prioritarias, en particular sobre los sistemas críticos y los protocolos de Internet expuestos.
-- **2031 a 2035**: completar la migración en el conjunto de sistemas, servicios y productos.
+- **ถึงปี 2028** ระบุบริการเชิงการเข้ารหัสที่ต้องการการยกระดับ จัดทำแผนการย้ายระบบ และจัดทำบัญชีรายการเชิงการเข้ารหัสที่สมบูรณ์
+- **ปี 2028 ถึง 2031** ดำเนินการยกระดับที่มีลำดับความสำคัญสูง โดยเฉพาะบนระบบที่สำคัญและโปรโตคอลอินเทอร์เน็ตที่หันออกสู่ภายนอก
+- **ปี 2031 ถึง 2035** ทำการย้ายระบบให้เสร็จสมบูรณ์ทั่วทุกระบบ บริการ และผลิตภัณฑ์
 
-Para las instituciones financieras británicas, las [orientaciones PQC del CMORG (Cross-Market Operational Resilience Group) ⧉](https://www.cmorg.org.uk/sites/default/files/2025-06/CMORG%20-%20Guidance%20for%20Post-Quantum%20Cryptography%20-%20April%202025%20-%20TLP%20CLEAR%20(1).pdf "CMORG Guidance for Post-Quantum Cryptography") se inscriben junto al marco NCSC, tratan a los bancos como infraestructura nacional crítica y ponen el énfasis en la disponibilidad de proveedores y la alineación de la cadena de suministro.
+สำหรับสถาบันการเงินในสหราชอาณาจักร [แนวทาง PQC ของ CMORG (Cross-Market Operational Resilience Group) ⧉](https://www.cmorg.org.uk/sites/default/files/2025-06/CMORG%20-%20Guidance%20for%20Post-Quantum%20Cryptography%20-%20April%202025%20-%20TLP%20CLEAR%20(1).pdf "แนวทาง CMORG สำหรับการเข้ารหัสหลังควอนตัม") อยู่เคียงข้างกรอบของ NCSC โดยถือว่าธนาคารเป็นโครงสร้างพื้นฐานสำคัญของชาติ และเน้นความพร้อมของผู้ขายและการจัดแนวห่วงโซ่อุปทาน
 
-### Asia-Pacífico
+### เอเชียแปซิฟิก
 
-La postura APAC es más fragmentada pero evoluciona rápido. La ASD australiana tiene la posición más dura a nivel mundial: la criptografía de clave pública clásica ya no debe utilizarse más allá de finales de 2030, sin recomendación híbrida, y ML-KEM-1024 requerido (ML-KEM-768 aceptable solo hasta 2030). Las organizaciones deberían disponer de un plan de transición afinado para finales de 2026. La Monetary Authority de Singapur ha publicado orientaciones formales de preparación cuántica. Japón y Corea del Sur invierten sustancialmente, aunque los dos países disponen de filiales algorítmicas nacionales (Corea ha seleccionado NTRU+ y SMAUG-T como KEM, ALMer y HAETAE como firmas). La National Quantum Mission india, dotada de una asignación gubernamental de 6.003,65 crores de rupias, identifica explícitamente los servicios bancarios y financieros como prioridad estratégica. Las [predicciones APAC 2026 de Forrester ⧉](https://www.forrester.com/press-newsroom/forrester-apac-2026-predictions/ "Forrester's 2026 APAC predictions") evalúan en más del 90 % el número de empresas regionales que deben invertir en tecnologías postcuánticas este año.
+ท่าทีของ APAC มีความกระจัดกระจายกว่าแต่ขยับเร็ว ASD ของออสเตรเลียมีจุดยืนที่เข้มงวดที่สุดในโลก การเข้ารหัสกุญแจสาธารณะดั้งเดิมต้องไม่ถูกใช้เกินปลายปี 2030 ไม่มีคำแนะนำแบบไฮบริด และกำหนดให้ใช้ ML-KEM-1024 (ML-KEM-768 ยอมรับได้เพียงถึงปี 2030) องค์กรควรมีแผนการเปลี่ยนผ่านที่ปรับละเอียดแล้วภายในปลายปี 2026 หน่วยงานการเงินของสิงคโปร์ได้ออกแนวทางความพร้อมด้านความปลอดภัยต่อควอนตัมอย่างเป็นทางการ ญี่ปุ่นและเกาหลีใต้กำลังลงทุนอย่างมาก แม้ทั้งสองประเทศจะมีแนวทางอัลกอริทึมระดับชาติ (เกาหลีเลือก NTRU+ และ SMAUG-T เป็น KEM และ ALMer กับ HAETAE เป็นลายเซ็น) National Quantum Mission ของอินเดีย ซึ่งได้รับการสนับสนุนด้วยงบประมาณรัฐบาล 6,003.65 crore รูปี ระบุอย่างชัดเจนว่าระบบธนาคารและการเงินเป็นลำดับความสำคัญเชิงยุทธศาสตร์ [คำทำนาย APAC ปี 2026 ของ Forrester ⧉](https://www.forrester.com/press-newsroom/forrester-apac-2026-predictions/ "คำทำนาย APAC ปี 2026 ของ Forrester") ระบุว่าจำนวนองค์กรในภูมิภาคที่คาดว่าจะลงทุนในเทคโนโลยีหลังควอนตัมในปีนี้มีมากกว่า 90%
 
-### La posición neta
+### จุดยืนโดยรวม
 
-Para un consejo de administración, la síntesis práctica de esas posiciones jurisdiccionales es directa. Un banco multinacional no puede gestionar el calendario de un solo regulador; debe gestionar el más estricto aplicable. Para la mayoría de las grandes instituciones, esto significa un horizonte de planificación de finales de 2030 para los sistemas de alto riesgo y finales de 2035 para la larga cola; las entidades expuestas a la ASD apuntando a la PQC pura para 2030 y las expuestas a la CNSA apuntando a la misma ventana con ML-KEM-1024 y ML-DSA-87 específicamente.
+สำหรับคณะกรรมการ การสังเคราะห์เชิงปฏิบัติจากจุดยืนรายเขตอำนาจศาลเหล่านี้ตรงไปตรงมา ธนาคารข้ามชาติไม่อาจบริหารตามกรอบเวลาของหน่วยงานกำกับเพียงรายเดียว แต่ต้องบริหารตามกรอบที่เข้มงวดที่สุดที่บังคับใช้ สำหรับสถาบันหลักส่วนใหญ่ นั่นหมายถึงกรอบการวางแผนสิ้นปี 2030 สำหรับระบบที่มีความเสี่ยงสูง และสิ้นปี 2035 สำหรับส่วนที่เหลือ โดยหน่วยงานที่อยู่ในขอบเขต ASD ตั้งเป้า PQC ล้วนภายในปี 2030 และหน่วยงานที่อยู่ในขอบเขต CNSA ตั้งเป้าในช่วงเวลาเดียวกันด้วย ML-KEM-1024 และ ML-DSA-87 โดยเฉพาะ
 
-## BIS Project Leap: lo que la industria ha probado realmente
+## BIS Project Leap: สิ่งที่อุตสาหกรรมได้พิสูจน์แล้วจริง
 
-Project Leap merece la atención del consejo no porque sea un hito de marketing, sino porque se trata de la demostración de extremo a extremo más creíble hasta la fecha de la criptografía postcuántica en un sistema de pago financiero en producción. La conclusión principal es directa: funciona. El detalle subyacente es donde residen las implicaciones operativas.
+Project Leap ควรค่าแก่ความสนใจของคณะกรรมการ ไม่ใช่เพราะเป็นหมุดหมายทางการตลาด แต่เพราะเป็นการสาธิตการเข้ารหัสหลังควอนตัมแบบครบวงจรในระบบการชำระเงินทางการเงินจริงที่น่าเชื่อถือที่สุดจนถึงปัจจุบัน ข้อสรุปหลักตรงไปตรงมา คือมันใช้งานได้ รายละเอียดที่อยู่ใต้นั้นคือจุดที่นัยเชิงปฏิบัติการอยู่
 
-La Fase 1, completada en 2023, estableció una VPN resistente a lo cuántico entre los sistemas IT de la Banque de France y la Deutsche Bundesbank, con mensajes de pago transmitidos entre París y Fráncfort bajo un esquema de cifrado híbrido. La Fase 2, completada a finales de 2025 y [publicada en diciembre ⧉](https://www.bis.org/publ/othp107.htm "Project Leap phase 2: quantum-proofing payment systems"), fue considerablemente más allá. El consorcio sustituyó las firmas digitales tradicionales basadas en RSA por firmas postcuánticas en la ejecución de transferencias de liquidez a través de TARGET2, el sistema de liquidación bruta en tiempo real del Eurosistema. Los participantes —el BIS Innovation Hub Eurosystem Centre, la Banca d'Italia, la Banque de France, la Deutsche Bundesbank, Nexi-Colt (que proporciona la conectividad TARGET2) y Swift— representan precisamente las instituciones cuya infraestructura tendrá que migrar eventualmente.
+ระยะที่ 1 ซึ่งเสร็จในปี 2023 ได้สถาปนา VPN ที่ต้านทานควอนตัมระหว่างระบบไอทีของธนาคารกลางฝรั่งเศสและธนาคารกลางเยอรมนี โดยส่งข้อความการชำระเงินระหว่างปารีสและแฟรงก์เฟิร์ตภายใต้รูปแบบการเข้ารหัสแบบไฮบริด ระยะที่ 2 ซึ่งเสร็จในปลายปี 2025 และ [รายงานในเดือนธันวาคม ⧉](https://www.bis.org/publ/othp107.htm "Project Leap ระยะที่ 2: การทำให้ระบบการชำระเงินต้านทานควอนตัม") ก้าวไปไกลกว่านั้นอย่างมาก กลุ่มความร่วมมือได้แทนที่ลายเซ็นดิจิทัลที่อิงกับ RSA แบบดั้งเดิมด้วยลายเซ็นหลังควอนตัมในการดำเนินการโอนสภาพคล่องผ่าน TARGET2 ซึ่งเป็นระบบการชำระดุลรวมแบบทันเวลาของ Eurosystem ผู้เข้าร่วม ได้แก่ BIS Innovation Hub Eurosystem Centre ธนาคารกลางอิตาลี ธนาคารกลางฝรั่งเศส ธนาคารกลางเยอรมนี Nexi-Colt (ซึ่งให้บริการการเชื่อมต่อ TARGET2) และ Swift ล้วนเป็นตัวแทนของสถาบันที่โครงสร้างพื้นฐานจะต้องย้ายในที่สุดอย่างแท้จริง
 
-El informe hizo aflorar tres constataciones que todo programa de migración debería integrar:
+รายงานชี้ให้เห็นข้อค้นพบสามประการที่ทุกโครงการย้ายระบบควรซึมซับ
 
-- **La latencia de verificación es sensiblemente más elevada.** La verificación de firma postcuántica llevó materialmente más tiempo que la verificación basada en RSA en el mismo hardware. Para un sistema RTGS diseñado en torno a un tratamiento de mensajes por debajo del segundo, no es una observación marginal; es un dato de planificación de capacidad.
-- **Los tamaños de paquete exigen una refactorización del sistema.** Las firmas PQC son un orden de magnitud mayores que los equivalentes ECDSA (véase más abajo). Los sistemas de pago cuyas colas internas, herramientas de supervisión y esquemas de base de datos se han dimensionado para mensajes de tamaño heredado no pueden acomodar la nueva carga útil sin refactorización. Project Leap constató explícitamente que TARGET2 no podía «acomodar fácilmente» el modelo híbrido sin reingeniería sustancial.
-- **El híbrido es la respuesta correcta, pero más pesado.** Ejecutar clásico y postcuántico en paralelo preservó la retrocompatibilidad y proporcionó defensa en profundidad, pero duplicó el coste del tratamiento criptográfico. Es el coste operativo de hacer PQC correctamente durante la transición; no es evitable solo mediante ingeniería astuta.
+- **ความหน่วงในการตรวจสอบสูงขึ้นอย่างมีนัยสำคัญ** การตรวจสอบลายเซ็นหลังควอนตัมใช้เวลานานกว่าการตรวจสอบที่อิงกับ RSA อย่างเป็นสาระสำคัญบนฮาร์ดแวร์เดียวกัน สำหรับระบบ RTGS ที่ออกแบบรอบการจัดการข้อความในระดับต่ำกว่าวินาที นี่ไม่ใช่ข้อสังเกตเล็กน้อย แต่เป็นข้อมูลนำเข้าสำหรับการวางแผนกำลังการรองรับ
+- **ขนาดแพ็กเก็ตต้องมีการพัฒนาระบบใหม่** ลายเซ็น PQC มีขนาดใหญ่กว่าลายเซ็น ECDSA ที่เทียบเท่าถึงหนึ่งลำดับขนาด (รายละเอียดเพิ่มเติมด้านล่าง) ระบบการชำระเงินที่คิว การเฝ้าติดตาม และสคีมาฐานข้อมูลถูกกำหนดขนาดไว้สำหรับมิติข้อความแบบเดิม ไม่อาจรองรับเพย์โหลดใหม่ได้โดยไม่ออกแบบใหม่ Project Leap พบอย่างชัดเจนว่า TARGET2 ไม่อาจ "รองรับได้โดยง่าย" กับโมเดลไฮบริดโดยปราศจากการพัฒนาระบบใหม่ครั้งใหญ่
+- **ไฮบริดคือคำตอบที่ถูกต้อง แต่มันหนักกว่า** การรันอัลกอริทึมดั้งเดิมและหลังควอนตัมควบคู่กันช่วยรักษาความเข้ากันได้ย้อนหลังและให้การป้องกันเชิงลึก แต่ทำให้ภาระการประมวลผลเชิงการเข้ารหัสเพิ่มเป็นสองเท่า นี่คือต้นทุนเชิงปฏิบัติการของการทำ PQC อย่างถูกต้องระหว่างการเปลี่ยนผ่าน และไม่อาจหลีกเลี่ยงได้ด้วยวิศวกรรมอันชาญฉลาดเพียงอย่างเดียว
 
-Para un director financiero que examine un caso de inversión PQC, las constataciones de Project Leap son útiles precisamente porque son precisas. El coste de la migración postcuántica no es una sola línea capex. Es una latencia de verificación que se propaga en los contratos SLA, una expansión del tamaño de mensajes que afecta a los presupuestos de almacenamiento y ancho de banda, y un periodo transitorio de operaciones criptográficas duplicadas que afecta a la planificación de capacidad de cálculo. Ninguno de estos puntos es especulativo. Se han medido en un sistema de banco central en producción.
+สำหรับ CFO ที่พิจารณากรณีทางธุรกิจของ PQC ข้อค้นพบจาก Project Leap มีประโยชน์เพราะมันแม่นยำ ต้นทุนของการย้ายสู่หลังควอนตัมไม่ใช่รายการทุนเพียงบรรทัดเดียว แต่เป็นความหน่วงในการตรวจสอบที่กระเพื่อมไปทั่วสัญญา SLA การขยายขนาดข้อความที่กระทบงบประมาณพื้นที่จัดเก็บและแบนด์วิดท์ และช่วงเปลี่ยนผ่านที่มีการดำเนินการเชิงการเข้ารหัสซ้ำซ้อนซึ่งกระทบการวางแผนกำลังการประมวลผล ไม่มีสิ่งใดในนี้เป็นการคาดเดา ทั้งหมดถูกวัดในระบบธนาคารกลางจริงแล้ว
 
-## La caja de herramientas NIST: ML-KEM y ML-DSA comparados
+## ชุดเครื่องมือ NIST: เปรียบเทียบ ML-KEM และ ML-DSA
 
-La pieza maestra técnica de todo marco nacional creíble es la suite NIST de estándares postcuánticos publicada en agosto de 2024. Dos de esos estándares están en el centro de atención para la banca corporativa: ML-KEM (FIPS 203) para la encapsulación de claves y ML-DSA (FIPS 204) para las firmas digitales. Comparten un fundamento matemático —ambos se apoyan en la dificultad de los problemas Module Learning With Errors (ML-LWE) y Module Short Integer Solution sobre retículos estructurados— pero desempeñan papeles muy distintos en el parque criptográfico, y sus perfiles de rendimiento y tamaño difieren materialmente.
+แกนกลางเชิงเทคนิคของทุกกรอบระดับชาติที่น่าเชื่อถือคือชุดมาตรฐานหลังควอนตัมของ NIST ที่เผยแพร่ในเดือนสิงหาคม 2024 สองในมาตรฐานเหล่านี้เป็นจุดสนใจเฉพาะหน้าสำหรับธนาคารองค์กร คือ ML-KEM (FIPS 203) สำหรับการห่อหุ้มกุญแจ และ ML-DSA (FIPS 204) สำหรับลายเซ็นดิจิทัล ทั้งสองมีรากฐานทางคณิตศาสตร์ร่วมกัน โดยต่างพึ่งพาความยากของปัญหา Module Learning With Errors (ML-LWE) และ Module Short Integer Solution บนแลตทิซที่มีโครงสร้าง แต่ทำหน้าที่ต่างกันมากในขอบเขตการเข้ารหัส และมีโปรไฟล์ด้านสมรรถนะและขนาดที่แตกต่างกันอย่างเป็นสาระสำคัญ
 
-### ML-KEM (FIPS 203) — encapsulación de claves
+### ML-KEM (FIPS 203): การห่อหุ้มกุญแจ
 
-ML-KEM, derivado de [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html), es el reemplazo de ECDH y de RSA-KEM en los protocolos en los que dos partes deben establecer una clave simétrica compartida sobre un canal no seguro. Es, en la práctica, adonde van los handshakes TLS tras la retirada de RSA y de ECDH. NIST define tres conjuntos de parámetros con fuerza de seguridad creciente y rendimiento decreciente: ML-KEM-512 (NIST Categoría 1), ML-KEM-768 (Categoría 3) y ML-KEM-1024 (Categoría 5).
+ML-KEM ซึ่งได้มาจาก [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) เป็นตัวแทนของ ECDH และ RSA-KEM ในโปรโตคอลที่สองฝ่ายต้องสถาปนากุญแจสมมาตรร่วมกันผ่านช่องทางที่ไม่ปลอดภัย ในทางปฏิบัติแล้ว มันคือที่ที่การจับมือ TLS จะไปหลังจากปลดระวาง RSA และ ECDH NIST กำหนดชุดพารามิเตอร์สามชุดที่มีความแข็งแกร่งด้านความปลอดภัยเพิ่มขึ้นและสมรรถนะลดลง ได้แก่ ML-KEM-512 (NIST Category 1) ML-KEM-768 (Category 3) และ ML-KEM-1024 (Category 5)
 
-### ML-DSA (FIPS 204) — firmas digitales
+### ML-DSA (FIPS 204): ลายเซ็นดิจิทัล
 
-ML-DSA, derivado de CRYSTALS-Dilithium, es el reemplazo de las firmas RSA y ECDSA. Soporta la firma de certificados, la firma de código, la firma de documentos y la autenticación. Los tres conjuntos de parámetros son ML-DSA-44, ML-DSA-65 y ML-DSA-87, correspondientes en líneas generales a las NIST Categorías 2, 3 y 5.
+ML-DSA ซึ่งได้มาจาก CRYSTALS-Dilithium เป็นตัวแทนของลายเซ็น RSA และ ECDSA รองรับการลงนามใบรับรอง การลงนามโค้ด การลงนามเอกสาร และการยืนยันตัวตน ชุดพารามิเตอร์ทั้งสามคือ ML-DSA-44, ML-DSA-65 และ ML-DSA-87 ซึ่งสอดคล้องกว้างๆ กับ NIST Category 2, 3 และ 5
 
-### Perfil de tamaño y rendimiento
+### โปรไฟล์ขนาดและสมรรถนะ
 
-Para un CIO que dimensione la capacidad de migración, las cifras más importantes son los tamaños de artefactos. Son las entradas para la planificación de capacidad de red, las proyecciones de almacenamiento y las pruebas a nivel de protocolo.
+สำหรับ CIO ที่กำหนดขอบเขตกำลังการย้ายระบบ ตัวเลขที่สำคัญที่สุดคือขนาดของอาร์ติแฟกต์ เหล่านี้คือข้อมูลนำเข้าสำหรับการวางแผนกำลังการรองรับเครือข่าย การประมาณการพื้นที่จัดเก็บ และการทดสอบระดับโปรโตคอล
 
-| Algoritmo | Clave pública | Criptograma / Firma | Equivalente clásico más cercano | Tamaño vs clásico |
+| อัลกอริทึม | กุญแจสาธารณะ | ไซเฟอร์เท็กซ์ / ลายเซ็น | สิ่งเทียบเท่าดั้งเดิมที่ใกล้ที่สุด | ขนาดเทียบกับดั้งเดิม |
 |---|---|---|---|---|
-| ML-KEM-512 | 800 bytes | 768 bytes (criptograma) | ECDH P-256 (~32 bytes clave pub) | ~25× mayor |
-| ML-KEM-768 | 1.184 bytes | 1.088 bytes (criptograma) | ECDH P-384 | ~25× mayor |
-| ML-KEM-1024 | 1.568 bytes | 1.568 bytes (criptograma) | ECDH P-521 | ~25× mayor |
-| ML-DSA-44 | 1.312 bytes | ~2.420 bytes (firma) | ECDSA P-256 (firma 64 bytes) | ~38× mayor |
-| ML-DSA-65 | 1.952 bytes | ~3.293 bytes (firma) | ECDSA P-384 | ~50× mayor |
-| ML-DSA-87 | 2.592 bytes | ~4.595 bytes (firma) | ECDSA P-521 | ~70× mayor |
+| ML-KEM-512 | 800 ไบต์ | 768 ไบต์ (ไซเฟอร์เท็กซ์) | ECDH P-256 (กุญแจสาธารณะ ~32 ไบต์) | ใหญ่กว่า ~25 เท่า |
+| ML-KEM-768 | 1,184 ไบต์ | 1,088 ไบต์ (ไซเฟอร์เท็กซ์) | ECDH P-384 | ใหญ่กว่า ~25 เท่า |
+| ML-KEM-1024 | 1,568 ไบต์ | 1,568 ไบต์ (ไซเฟอร์เท็กซ์) | ECDH P-521 | ใหญ่กว่า ~25 เท่า |
+| ML-DSA-44 | 1,312 ไบต์ | ~2,420 ไบต์ (ลายเซ็น) | ECDSA P-256 (ลายเซ็น 64 ไบต์) | ใหญ่กว่า ~38 เท่า |
+| ML-DSA-65 | 1,952 ไบต์ | ~3,293 ไบต์ (ลายเซ็น) | ECDSA P-384 | ใหญ่กว่า ~50 เท่า |
+| ML-DSA-87 | 2,592 ไบต์ | ~4,595 ไบต์ (ลายเซ็น) | ECDSA P-521 | ใหญ่กว่า ~70 เท่า |
 
-*Fuente: síntesis de las especificaciones [NIST FIPS 203 ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203, Module-Lattice-Based Key-Encapsulation Mechanism Standard") y FIPS 204, con datos comparativos procedentes de la literatura de benchmarking independiente.*
+*ที่มา: การสังเคราะห์ข้อกำหนด [NIST FIPS 203 ⧉](https://csrc.nist.gov/pubs/fips/203/final "FIPS 203 มาตรฐานกลไกการห่อหุ้มกุญแจแบบอิงแลตทิซมอดูล") และ FIPS 204 พร้อมข้อมูลเปรียบเทียบจากเอกสารการวัดประสิทธิภาพอิสระ*
 
-Tres implicaciones operativas se derivan directamente de ello. **Primero**, el tamaño de firma es la restricción limitante para la mayoría de despliegues empresariales. Una firma ML-DSA-65 es unas cincuenta veces el tamaño de una firma ECDSA P-256, y las cadenas de certificados TLS que llevan CA intermedias crecen proporcionalmente. El trabajo de capacidad sobre esa superficie no es opcional, es estructurador. **Segundo**, ML-KEM es competitivo en cálculo con ECDH y, en algunas implementaciones, materialmente más rápido, en particular en hardware que dispone de soporte vectorial para la aritmética de retículos subyacente. **Tercero**, la verificación ML-DSA es constantemente rápida (a menudo más rápida que la verificación ECDSA), pero la firma ML-DSA implica un bucle de rejection sampling que puede requerir varios intentos en hardware restringido. Para los servicios de firma de alto rendimiento, es un benchmark a verificar más que a presumir.
+นัยเชิงปฏิบัติการสามประการตามมาโดยตรง **ประการแรก** ขนาดลายเซ็นเป็นข้อจำกัดที่ผูกมัดสำหรับการติดตั้งระดับองค์กรส่วนใหญ่ ลายเซ็น ML-DSA-65 มีขนาดราวห้าสิบเท่าของลายเซ็น ECDSA P-256 และห่วงโซ่ใบรับรอง TLS ที่บรรจุ CA ตัวกลางก็ขยายตามสัดส่วน งานด้านกำลังการรองรับบนพื้นผิวนี้ไม่ใช่ทางเลือก แต่เป็นสิ่งที่แบกรับภาระ **ประการที่สอง** ML-KEM แข่งขันได้เชิงการคำนวณกับ ECDH และในการนำไปใช้บางกรณีเร็วกว่าอย่างมีนัยสำคัญ โดยเฉพาะบนฮาร์ดแวร์ที่มีการรองรับแบบเวกเตอร์สำหรับเลขคณิตแลตทิซที่อยู่เบื้องล่าง **ประการที่สาม** การตรวจสอบ ML-DSA เร็วอย่างสม่ำเสมอ (มักเร็วกว่าการตรวจสอบ ECDSA) แต่การลงนาม ML-DSA เกี่ยวข้องกับลูปการสุ่มแบบปฏิเสธที่อาจต้องพยายามหลายครั้งบนฮาร์ดแวร์ที่มีข้อจำกัด สำหรับบริการลงนามที่มีปริมาณงานสูง นี่คือเกณฑ์วัดที่ต้องพิสูจน์มากกว่าจะสันนิษฐาน
 
-### Elegir los conjuntos de parámetros
+### การเลือกชุดพารามิเตอร์
 
-Las posiciones jurisdiccionales sobre la elección de los parámetros no son idénticas, pero la convergencia es clara. ML-KEM-768 y ML-DSA-65 constituyen el suelo empresarial —validados por el NCSC británico como referencia para las organizaciones británicas y aceptables en la mayoría de marcos europeos—. ML-KEM-1024 y ML-DSA-87 son el techo conservador —impuestos por la CNSA 2.0 de la NSA para los sistemas de seguridad nacional estadounidenses y requeridos por la ASD para las entidades australianas reguladas para 2030—. Para los datos de sensibilidad extremadamente larga —registros de liquidación soberanos, propiedad intelectual con horizonte decenal, registros de custodia para instrumentos de largo vencimiento— los conjuntos de parámetros superiores son el valor por defecto defendible.
+จุดยืนรายเขตอำนาจศาลเกี่ยวกับการเลือกพารามิเตอร์ไม่เหมือนกันทีเดียว แต่การบรรจบกันนั้นชัดเจน ML-KEM-768 และ ML-DSA-65 เป็นระดับขั้นต่ำขององค์กร ซึ่ง UK NCSC รับรองเป็นเกณฑ์พื้นฐานสำหรับองค์กรในสหราชอาณาจักรและเป็นที่ยอมรับภายใต้กรอบยุโรปส่วนใหญ่ ML-KEM-1024 และ ML-DSA-87 เป็นเพดานเชิงอนุรักษ์ ซึ่ง NSA CNSA 2.0 กำหนดสำหรับระบบความมั่นคงแห่งชาติสหรัฐฯ และ ASD กำหนดให้หน่วยงานที่อยู่ภายใต้การกำกับของออสเตรเลียใช้ภายในปี 2030 สำหรับข้อมูลที่มีความอ่อนไหวระยะยาวอย่างยิ่ง ทั้งบันทึกการชำระดุลระดับอธิปไตย ทรัพย์สินทางปัญญาที่มีอายุเกินหนึ่งทศวรรษ และระเบียนการรับฝากดูแลสำหรับตราสารที่มีอายุยาว ชุดพารามิเตอร์ที่สูงกว่าคือค่าเริ่มต้นที่ปกป้องได้
 
-### Un fundamento matemático compartido, un riesgo compartido
+### รากฐานทางคณิตศาสตร์ร่วม ความเสี่ยงร่วม
 
-Un punto digno de la atención del consejo: ML-KEM y ML-DSA extraen ambos su seguridad de la misma familia de problemas sobre retículos. Un avance criptoanalítico futuro contra Module-LWE afectaría a los dos estándares simultáneamente. Es precisamente por ello por lo que varias autoridades nacionales —notablemente el BSI alemán y la ANSSI francesa— recomiendan complementar la pila basada en retículos con firmas basadas en funciones de hash (SLH-DSA, FIPS 205) para los casos de uso de firma a largo plazo y firma de código. La agilidad criptográfica, en este sentido, no es solo la capacidad de reemplazar RSA por ML-KEM. Es la capacidad de reemplazar un algoritmo PQC por otro cuando el panorama criptoanalítico evolucione.
+ประเด็นระดับคณะกรรมการที่ควรสังเกต ทั้ง ML-KEM และ ML-DSA ต่างได้ความปลอดภัยมาจากตระกูลปัญหาแลตทิซเดียวกัน ความก้าวหน้าในการวิเคราะห์รหัสในอนาคตต่อ Module-LWE จะกระทบมาตรฐานทั้งสองพร้อมกัน นี่เองคือเหตุผลที่หน่วยงานระดับชาติหลายแห่ง โดยเฉพาะ BSI ของเยอรมนีและ ANSSI ของฝรั่งเศส แนะนำให้เสริมชุดที่อิงแลตทิซด้วยลายเซ็นที่อิงแฮช (SLH-DSA, FIPS 205) สำหรับกรณีการใช้งานลงนามระยะยาวและการลงนามโค้ด ความคล่องตัวด้านการเข้ารหัสในความหมายนี้ไม่ได้เป็นเพียงความสามารถในการสลับ RSA เป็น ML-KEM แต่เป็นความสามารถในการสลับอัลกอริทึม PQC หนึ่งไปเป็นอีกอันเมื่อสภาพการวิเคราะห์รหัสเปลี่ยนไป
 
-## Un camino de migración lógico: Descubrimiento → Triaje → Despliegue híbrido
+## เส้นทางการย้ายเชิงตรรกะ: การค้นพบ → การคัดกรอง → การติดตั้งไฮบริด
 
-Para un consejo que apruebe un programa PQC plurianual, la cuestión operativa es cómo escalonar el trabajo sin asumir un riesgo inaceptable de disponibilidad de servicio. El esquema que ha emergido a través de la hoja de ruta del G7, el marco NCSC, BIS Project Leap y los documentos de orientación nacionales principales converge en tres fases.
+สำหรับคณะกรรมการที่อนุมัติโครงการ PQC หลายปี คำถามเชิงปฏิบัติการคือจะแบ่งงานเป็นระยะอย่างไรโดยไม่รับความเสี่ยงด้านความพร้อมใช้งานของบริการที่ยอมรับไม่ได้ รูปแบบที่ปรากฏขึ้นทั่วแผนงาน G7 กรอบของ NCSC BIS Project Leap และเอกสารแนวทางระดับชาติหลัก บรรจบกันที่สามระยะ
 
 ```
-┌──────────────────────┐   ┌──────────────────────┐   ┌──────────────────────┐
-│ 1. DESCUBRIMIENTO &  │ → │ 2. TRIAJE (MOSCA)    │ → │ 3. DESPLIEGUE        │
-│    CBOM              │   │ Priorización por     │   │    HÍBRIDO           │
-│ Inventario cripto    │   │ riesgo según vida    │   │ Doble sobre clásico  │
-│ en todos los sistemas│   │ útil de los datos    │   │ + PQC, cripto-ágil   │
-└──────────────────────┘   └──────────────────────┘   └──────────────────────┘
+┌────────────────────────┐   ┌────────────────────────┐   ┌────────────────────────┐
+│ 1. การค้นพบ & CBOM       │ → │ 2. การคัดกรอง (MOSCA)    │ → │ 3. การติดตั้งไฮบริด       │
+│    บัญชีรายการเชิง        │   │    จัดลำดับความสำคัญ      │   │    ซองคู่ ดั้งเดิม + PQC   │
+│    การเข้ารหัสทุกระบบ      │   │    ตามอายุของข้อมูล       │   │    คล่องตัวเชิงการเข้ารหัส  │
+└────────────────────────┘   └────────────────────────┘   └────────────────────────┘
 ```
 
-### Fase 1 — Descubrimiento y nomenclatura criptográfica (CBOM)
+### ระยะที่ 1: การค้นพบและบัญชีรายการวัสดุเชิงการเข้ารหัส (CBOM)
 
-No se puede planificar la migración de un parque criptográfico que no ha sido cartografiado, y la mayoría de instituciones no disponen de un mapa exacto. La primera fase es por tanto la producción de una Cryptographic Bill of Materials —un inventario estructurado de cada instancia de criptografía asimétrica en la organización, etiquetada cada instancia por algoritmo, longitud de clave, contexto protocolar, sensibilidad de los datos y propietario del sistema—. El escaneo automatizado sobre las bases de código, aplicaciones web, imágenes de contenedores, configuraciones de bases de datos, almacenes de certificados, módulos HSM e interfaces de proveedor es el mecanismo práctico; el inventario manual de los sistemas heredados y los protocolos propietarios es el complemento inevitable.
+ไม่อาจวางแผนการย้ายระบบสำหรับขอบเขตการเข้ารหัสที่ยังไม่ได้ทำแผนที่ และสถาบันส่วนใหญ่ไม่มีแผนที่ที่ถูกต้อง ระยะแรกจึงเป็นการจัดทำบัญชีรายการวัสดุเชิงการเข้ารหัส (Cryptographic Bill of Materials) ซึ่งเป็นบัญชีรายการที่มีโครงสร้างของทุกอินสแตนซ์ของการเข้ารหัสอสมมาตรทั่วทั้งองค์กร โดยแต่ละอินสแตนซ์ถูกติดป้ายด้วยอัลกอริทึม ความยาวกุญแจ บริบทโปรโตคอล ความอ่อนไหวของข้อมูล และเจ้าของระบบ การสแกนอัตโนมัติทั่วฐานโค้ด เว็บแอปพลิเคชัน อิมเมจคอนเทนเนอร์ การกำหนดค่าฐานข้อมูล คลังใบรับรอง โมดูลความปลอดภัยฮาร์ดแวร์ และอินเทอร์เฟซของผู้ขาย คือกลไกเชิงปฏิบัติ ส่วนบัญชีรายการด้วยมือของระบบเดิมและโปรโตคอลเฉพาะคือส่วนเสริมที่หลีกเลี่ยงไม่ได้
 
-La salida de la Fase 1 no es glamurosa, pero es el único fundamento sobre el que las Fases 2 y 3 pueden descansar. Es también el entregable que la mayoría de funciones de auditoría interna y reguladores externos buscarán primero cuando se empiecen a pedir las atestaciones de cumplimiento PQC.
+ผลลัพธ์ของระยะที่ 1 ไม่ได้ดูหรูหรา แต่เป็นรากฐานเดียวที่ระยะที่ 2 และ 3 จะตั้งอยู่ได้ อีกทั้งยังเป็นสิ่งส่งมอบที่หน่วยงานตรวจสอบภายในและหน่วยงานกำกับภายนอกส่วนใหญ่จะมองหาเป็นอันดับแรกเมื่อเริ่มมีการร้องขอการรับรองการปฏิบัติตาม PQC
 
-### Fase 2 — Triaje de riesgos con la ecuación de Mosca
+### ระยะที่ 2: การคัดกรองความเสี่ยงด้วยสมการ Mosca
 
-Una vez la CBOM en mano, la institución puede aplicar el marco de Mosca activo por activo. Para cada dependencia criptográfica, la cuestión es si **S + M > Q** —si la vida útil de los datos más el tiempo de migración supera el tiempo estimado hasta un CRQC—. Los activos donde la desigualdad es más aguda —datos sensibles de larga vida útil sobre una infraestructura que tarda años en migrar— pasan al frente de la fila. Los activos con vidas útiles de datos cortas o una infraestructura ya modernizada pueden secuenciarse más tarde en el programa.
+เมื่อมี CBOM อยู่ในมือ สถาบันสามารถประยุกต์กรอบของ Mosca ทีละสินทรัพย์ สำหรับการพึ่งพาเชิงการเข้ารหัสแต่ละรายการ คำถามคือ **S + M > Q** หรือไม่ กล่าวคืออายุการเก็บรักษาของข้อมูลบวกกับเวลาการย้ายระบบเกินเวลาโดยประมาณจนถึง CRQC หรือไม่ สินทรัพย์ที่อสมการนี้รุนแรงที่สุด คือข้อมูลอ่อนไหวที่มีอายุยาวบนโครงสร้างพื้นฐานที่ใช้เวลาหลายปีในการย้าย จะอยู่หน้าคิว สินทรัพย์ที่ข้อมูลมีอายุสั้นหรือโครงสร้างพื้นฐานที่ทันสมัยอยู่แล้วสามารถจัดลำดับไว้ภายหลังในโครงการ
 
-Esta es la fase donde el apetito de riesgo del consejo es más visible. El valor Q que la institución elige como objetivo de planificación es, en efecto, una apuesta estratégica sobre el ritmo de los progresos del hardware cuántico. Una Q conservadora (mediados de la década de 2030) produce un plan de migración más agresivo y una línea capex a corto plazo más alta. Una Q optimista (post-2040) produce un plan más relajado y una exposición residual más alta a los datos ya cosechados. Ninguna está equivocada; ambas deberían ser decisiones explícitas del consejo, no defectos implícitos de la función tecnológica.
+นี่คือระยะที่ระดับการยอมรับความเสี่ยงของคณะกรรมการปรากฏชัดที่สุด ค่า Q ที่สถาบันเลือกใช้ในการวางแผน แท้จริงแล้วคือการเดิมพันเชิงกลยุทธ์ต่ออัตราความก้าวหน้าของฮาร์ดแวร์ควอนตัม ค่า Q เชิงอนุรักษ์ (กลางทศวรรษ 2030) ให้แผนการย้ายที่รุกมากขึ้นและรายการทุนระยะสั้นที่สูงขึ้น ค่า Q ที่มองโลกในแง่ดี (หลังปี 2040) ให้แผนที่ผ่อนคลายกว่าและความเสี่ยงคงเหลือที่สูงขึ้นต่อข้อมูลที่กำลังถูกเก็บเกี่ยวอยู่แล้ว ไม่มีอันใดผิด ทั้งสองควรเป็นการตัดสินใจที่ชัดแจ้งของคณะกรรมการ ไม่ใช่ค่าเริ่มต้นโดยปริยายของฝ่ายเทคโนโลยี
 
-### Fase 3 — Despliegue híbrido
+### ระยะที่ 3: การติดตั้งไฮบริด
 
-Una vez identificados los activos prioritarios, el despliegue debería seguir el esquema híbrido demostrado en Project Leap y validado por el NCSC, la ANSSI, el BSI y la hoja de ruta del G7. Un despliegue híbrido hace funcionar un algoritmo clásico y un algoritmo postcuántico en paralelo, combinando sus salidas en una sola envolvente. El compuesto es seguro contra los ataques clásicos (el algoritmo clásico se sostiene hoy) y contra los ataques cuánticos (el algoritmo PQC se sostiene mañana). Concretamente, el esquema habitual es X25519 combinado con ML-KEM-768 o ML-KEM-1024 para la encapsulación de claves, y ECDSA combinado con ML-DSA para las firmas cuando las dobles firmas son operacionalmente factibles.
+เมื่อระบุสินทรัพย์ที่มีลำดับความสำคัญแล้ว การติดตั้งควรเป็นไปตามรูปแบบไฮบริดที่พิสูจน์แล้วใน Project Leap และได้รับการรับรองจาก NCSC, ANSSI, BSI และแผนงาน G7 การติดตั้งไฮบริดรันอัลกอริทึมดั้งเดิมและอัลกอริทึมหลังควอนตัมควบคู่กัน โดยรวมผลลัพธ์ไว้ในซองเดียว ผลลัพธ์ที่ประกอบกันปลอดภัยทั้งต่อการโจมตีแบบดั้งเดิม (อัลกอริทึมดั้งเดิมยึดอยู่ในวันนี้) และการโจมตีเชิงควอนตัม (อัลกอริทึม PQC ยึดอยู่ในวันข้างหน้า) โดยเฉพาะอย่างยิ่ง รูปแบบที่พบบ่อยคือ X25519 ผสมกับ ML-KEM-768 หรือ ML-KEM-1024 สำหรับการห่อหุ้มกุญแจ และ ECDSA ผสมกับ ML-DSA สำหรับลายเซ็นในกรณีที่ลายเซ็นคู่เป็นไปได้เชิงปฏิบัติการ
 
-La constatación de Project Leap según la cual el híbrido es «mucho, mucho más pesado» que cualquiera de los enfoques puros es el contrapeso honesto a esa recomendación. Los consejos deberían anticipar una subida de capacidad de cálculo y almacenamiento, handshakes más largos y complejidad adicional de cadenas de certificados durante la transición. La compensación: el híbrido elimina la mayor fuente única de riesgo de migración: la bascula abrupta de un fundamento criptográfico a otro en entorno de producción.
+ข้อค้นพบจาก Project Leap ที่ว่าไฮบริด "หนักกว่ามาก มากจริงๆ" เมื่อเทียบกับแนวทางแบบล้วนอย่างใดอย่างหนึ่ง คือน้ำหนักถ่วงที่ซื่อตรงต่อคำแนะนำนี้ คณะกรรมการควรคาดหมายการเพิ่มกำลังการประมวลผลและพื้นที่จัดเก็บ การจับมือที่นานขึ้น และความซับซ้อนของห่วงโซ่ใบรับรองที่เพิ่มขึ้นระหว่างการเปลี่ยนผ่าน สิ่งที่ต้องแลกคือ ไฮบริดขจัดแหล่งความเสี่ยงการย้ายระบบที่ใหญ่ที่สุดเพียงแหล่งเดียว นั่นคือการเปลี่ยนแบบทันทีจากรากฐานการเข้ารหัสหนึ่งไปสู่อีกรากฐานหนึ่งในสภาพแวดล้อมการผลิตจริง
 
-## Cuánto cuesta y por qué no hacer nada cuesta más
+## ต้นทุนของสิ่งนี้ และเหตุใดการไม่ทำอะไรจึงมีต้นทุนสูงกว่า
 
-El análisis de Mastercard, [reportado a principios de 2026 ⧉](https://www.qnulabs.com/blog/bank-2030-expiry-date-q-day-fatal-strategy "Your Bank's 2030 Expiry — QNu Labs"), cifró el coste mundial de la migración PQC del sector financiero en 28-42 mil millones de dólares. Dentro de ese agregado, las [investigaciones de RedCompass Labs y CMORG ⧉](https://www.cmorg.org.uk/sites/default/files/2025-06/CMORG%20-%20Guidance%20for%20Post-Quantum%20Cryptography%20-%20April%202025%20-%20TLP%20CLEAR%20(1).pdf "CMORG Guidance for Post-Quantum Cryptography") que siguen los gastos institucionales reales sugieren que los bancos de primer nivel comprometen entre 20 y 30 millones de dólares al año en programas de preparación, con calendarios de implementación que cubren varios ciclos de liderazgo. Son cantidades sustanciales. Sin embargo, no es la comparación pertinente.
+การวิเคราะห์ของ Mastercard [ที่รายงานในต้นปี 2026 ⧉](https://www.qnulabs.com/blog/bank-2030-expiry-date-q-day-fatal-strategy "วันหมดอายุ 2030 ของธนาคารคุณ โดย QNu Labs") ประเมินต้นทุนการย้ายสู่ PQC ของภาคการเงินทั่วโลกไว้ที่ 28 ถึง 42 พันล้านดอลลาร์ ภายในยอดรวมนั้น [งานวิจัยของ RedCompass Labs และ CMORG ⧉](https://www.cmorg.org.uk/sites/default/files/2025-06/CMORG%20-%20Guidance%20for%20Post-Quantum%20Cryptography%20-%20April%202025%20-%20TLP%20CLEAR%20(1).pdf "แนวทาง CMORG สำหรับการเข้ารหัสหลังควอนตัม") ที่ติดตามการใช้จ่ายจริงของสถาบันชี้ว่าธนาคารระดับหนึ่งกำลังทุ่มเงิน 20 ถึง 30 ล้านดอลลาร์ต่อปีให้กับโครงการเตรียมความพร้อม โดยมีกรอบเวลาการนำไปปฏิบัติที่กินเวลาหลายรอบผู้นำ ตัวเลขเหล่านี้มีนัยสำคัญ อย่างไรก็ตาม นี่ไม่ใช่การเปรียบเทียบที่เกี่ยวข้อง
 
-La comparación pertinente es el coste de un solo evento de descifrado retroactivo. Para una institución cuyo tráfico de transferencias cosechado, correspondencia M&A o datos de exposición a contrapartes se vuelven legibles para un adversario en 2032, el coste operativo y reputacional no está acotado por la línea capex de migración. Está acotado por el valor de la década de información estratégica subyacente, que, para cualquier institución sistémica, es materialmente superior a cualquier presupuesto de migración plausible. El encuadre del G7 según el cual la transición criptográfica es una cuestión de gestión de riesgos sistémicos en lugar de una actualización tecnológica es correcto, y los consejos deberían abordarlo sobre esa base.
+การเปรียบเทียบที่เกี่ยวข้องคือต้นทุนของเหตุการณ์ถอดรหัสย้อนหลังเพียงครั้งเดียว สำหรับสถาบันที่การรับส่งการโอนเงินที่ถูกเก็บเกี่ยว จดหมายโต้ตอบ M&A หรือข้อมูลความเสี่ยงคู่สัญญากลายเป็นสิ่งที่ปฏิปักษ์อ่านได้ในปี 2032 ต้นทุนเชิงปฏิบัติการและชื่อเสียงไม่ได้ถูกจำกัดด้วยรายการรายจ่ายลงทุนของการย้ายระบบ แต่ถูกจำกัดด้วยมูลค่าของข้อมูลเชิงกลยุทธ์ตลอดหนึ่งทศวรรษที่อยู่เบื้องล่าง ซึ่งสำหรับสถาบันที่มีความสำคัญเชิงระบบใดๆ ย่อมใหญ่กว่างบประมาณการย้ายระบบที่เป็นไปได้ใดๆ อย่างเป็นสาระสำคัญ การที่ G7 วางกรอบการเปลี่ยนผ่านเชิงการเข้ารหัสให้เป็นประเด็นการบริหารความเสี่ยงเชิงระบบมากกว่าการยกระดับเทคโนโลยีนั้นถูกต้อง และคณะกรรมการควรเข้ามามีส่วนร่วมบนพื้นฐานนั้น
 
-Hay una segunda línea de coste que merece separarse. La migración a la PQC es una función de forzamiento para la agilidad criptográfica: la capacidad arquitectónica para reemplazar los algoritmos criptográficos sin reconstruir los sistemas que dependen de ellos. La mayoría de instituciones no tienen hoy agilidad criptográfica; sus dependencias RSA y ECC están profundamente integradas en las PKI, las cadenas de firma de código, las integraciones de proveedores y los protocolos caseros acumulados a lo largo de las décadas. La inversión en agilidad, hecha bajo la presión de la transición PQC, es duradera. Se movilizará de nuevo cuando llegue la próxima transición criptográfica, ya se trate de un sucesor de la PQC basada en retículos, de una sobrecapa de QKD o de otra cosa que aún no esté en la hoja de ruta de los estándares. Tratado correctamente, el capex de migración PQC es una inversión puntual que reporta opcionalidad recurrente.
+มีรายการต้นทุนที่สองที่ควรแยกออกมา การย้ายสู่ PQC เป็นฟังก์ชันบังคับให้เกิดความคล่องตัวด้านการเข้ารหัส ซึ่งคือความสามารถเชิงสถาปัตยกรรมในการสลับอัลกอริทึมการเข้ารหัสโดยไม่ต้องสร้างระบบที่พึ่งพามันขึ้นใหม่ สถาบันส่วนใหญ่ในปัจจุบันยังไม่มีความคล่องตัวด้านการเข้ารหัส การพึ่งพา RSA และ ECC ของพวกเขาฝังลึกอยู่ใน PKI ห่วงโซ่การลงนามโค้ด การผสานรวมกับผู้ขาย และโปรโตคอลเฉพาะที่สะสมมาตลอดหลายทศวรรษ การลงทุนในความคล่องตัวซึ่งทำภายใต้แรงกดดันของการเปลี่ยนผ่าน PQC นั้นคงทน มันจะถูกเรียกใช้อีกครั้งเมื่อการเปลี่ยนผ่านเชิงการเข้ารหัสครั้งถัดไปมาถึง ไม่ว่าจะเป็นตัวสืบทอดของ PQC ที่อิงแลตทิซ ชั้นเสริมการกระจายกุญแจเชิงควอนตัม หรือสิ่งที่ยังไม่อยู่บนแผนงานมาตรฐาน หากจัดการอย่างถูกต้อง รายจ่ายลงทุนการย้าย PQC คือการลงทุนครั้งเดียวที่ให้ทางเลือกซ้ำๆ ในอนาคต
 
-## Conclusión
+## บทสรุป
 
-El argumento a favor de tratar la migración postcuántica como una prioridad de consejo en 2026 no descansa en la inminencia de un CRQC. Las estimaciones al respecto siguen siendo realmente inciertas: la opinión científica creíble sitúa la probabilidad de un CRQC para 2028 muy por debajo del uno por ciento, ascendiendo a aproximadamente el cincuenta por ciento en el horizonte 2037-2040. El argumento descansa en tres observaciones más que no son inciertas.
+เหตุผลในการถือว่าการย้ายสู่หลังควอนตัมเป็นลำดับความสำคัญระดับคณะกรรมการในปี 2026 ไม่ได้ตั้งอยู่บนความใกล้จะมาถึงของ CRQC การประเมินเรื่องนั้นยังคงไม่แน่นอนอย่างแท้จริง ความเห็นทางวิชาการที่น่าเชื่อถือวางความน่าจะเป็นของ CRQC ภายในปี 2028 ไว้ต่ำกว่าหนึ่งเปอร์เซ็นต์มาก และเพิ่มขึ้นเป็นราวห้าสิบเปอร์เซ็นต์ภายในปี 2037 ถึง 2040 เหตุผลนี้ตั้งอยู่บนข้อสังเกตอีกสามประการที่ไม่ได้ไม่แน่นอน
 
-Primero, el HNDL se produce hoy, y los datos con una exigencia de confidencialidad de al menos una década están expuestos independientemente de cuándo llegue el CRQC. Segundo, la migración del parque criptográfico de una gran institución financiera lleva de cinco a siete años incluso con financiación adecuada y atención de la dirección, lo que significa que el programa iniciado en 2026 termina hacia 2031, bien dentro del extremo conservador de la distribución de probabilidad del CRQC. Tercero, las expectativas normativas se han endurecido materialmente en los últimos doce meses, y las instituciones cuyas actas de consejo 2026 consignen un programa PQC claro estarán en una posición sensiblemente más fuerte que aquellas cuyas actas solo consignen una vigilancia atenta.
+ประการแรก การเก็บเกี่ยวตอนนี้ ถอดรหัสภายหลัง กำลังเกิดขึ้นในวันนี้ และข้อมูลที่มีข้อกำหนดการรักษาความลับเกินหนึ่งทศวรรษถูกเปิดเผยไม่ว่า CRQC จะมาถึงเมื่อใด ประการที่สอง การย้ายขอบเขตการเข้ารหัสของสถาบันการเงินหลักใช้เวลาห้าถึงเจ็ดปีแม้จะมีเงินทุนเพียงพอและความใส่ใจของผู้นำ ซึ่งหมายความว่าโครงการที่เริ่มในปี 2026 จะเสร็จราวปี 2031 ซึ่งอยู่ภายในปลายด้านอนุรักษ์ของการแจกแจงความน่าจะเป็นของ CRQC ประการที่สาม ความคาดหวังเชิงกำกับดูแลได้เข้มงวดขึ้นอย่างเป็นสาระสำคัญในสิบสองเดือนที่ผ่านมา และสถาบันที่บันทึกการประชุมคณะกรรมการปี 2026 ระบุโครงการ PQC ที่ชัดเจนจะอยู่ในตำแหน่งที่แข็งแกร่งกว่าอย่างมีนัยสำคัญเมื่อเทียบกับสถาบันที่บันทึกไว้เพียงการเฝ้าดู
 
-Las instituciones que arrancan ahora tienen la ventaja de la elección. Pueden secuenciar el trabajo a lo largo de varios ciclos de liderazgo, integrarlo con iniciativas de resiliencia más amplias y absorber los costes operativos del despliegue híbrido en una planificación capitalista normal. Las instituciones que esperan afrontarán el mismo trabajo bajo plazos más ajustados, con menos margen de secuenciación, y sobre un trasfondo de restricciones de suministro de hardware PQC, experiencia y capacidad de proveedores. El coste de actuar pronto es conocido; el coste de actuar tarde es asimétrico precisamente de la manera que la gestión de riesgos se diseña para evitar.
+สถาบันที่เริ่มตอนนี้มีข้อได้เปรียบด้านทางเลือก พวกเขาสามารถจัดลำดับงานข้ามรอบผู้นำ ผสานกับความริเริ่มด้านความทนทานในวงกว้าง และดูดซับต้นทุนเชิงปฏิบัติการของการติดตั้งไฮบริดภายในการวางแผนทุนปกติ สถาบันที่รอจะเผชิญงานเดียวกันภายใต้กำหนดเวลาที่คับแคบกว่า มีขอบเขตในการจัดลำดับน้อยลง และท่ามกลางข้อจำกัดด้านอุปทานของฮาร์ดแวร์ที่รองรับ PQC ความเชี่ยวชาญ และกำลังการรองรับของผู้ขาย ต้นทุนของการลงมือแต่เนิ่นๆ นั้นทราบแน่ชัด ส่วนต้นทุนของการลงมือช้าเป็นแบบอสมมาตรในลักษณะที่การบริหารความเสี่ยงถูกออกแบบมาเพื่อหลีกเลี่ยงพอดี
 
-Para poner este artículo en perspectiva en este sitio, el [artículo de abril de 2026 sobre la compresión de los umbrales cuánticos](https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/index.html "Quantum Thresholds Are Moving Again") examinaba la trayectoria material subyacente, el [análisis de noviembre de 2023 sobre CRYSTALS-Kyber](https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age") cubría los fundamentos matemáticos ahora estandarizados bajo ML-KEM, el [artículo de diciembre de 2023 sobre la distribución cuántica de claves](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution Revolutionising Security in Banking") trataba de la sobrecapa [QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) complementaria, y la [implementación de referencia open source KyberLib](https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html "KyberLib: A Rust-Powered Shield Against Quantum Threats") proporciona una implementación Rust operativa de las primitivas subyacentes para las instituciones que deseen inspeccionar directamente la superficie criptográfica. Implicarse en el detalle práctico y técnico —no solo en los titulares normativos— es la manera en que los consejos distinguen un programa de migración creíble de un teatro de cumplimiento.
+สำหรับบริบทก่อนหน้าบนเว็บไซต์นี้ [บทความเดือนเมษายน 2026 เรื่องการบีบอัดเกณฑ์ควอนตัม](https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/index.html "Quantum Thresholds Are Moving Again") ได้พิจารณาเส้นทางของฮาร์ดแวร์ที่อยู่เบื้องล่าง [การวิเคราะห์ CRYSTALS-Kyber เดือนพฤศจิกายน 2023](https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age") ครอบคลุมรากฐานทางคณิตศาสตร์ที่ปัจจุบันได้มาตรฐานเป็น ML-KEM [บทความเดือนธันวาคม 2023 เรื่องการกระจายกุญแจเชิงควอนตัม](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution Revolutionising Security in Banking") กล่าวถึงชั้นเสริม [QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) ที่ช่วยเสริมกัน และ [การนำ KyberLib โอเพนซอร์สไปใช้เป็นข้อมูลอ้างอิง](https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html "KyberLib: A Rust-Powered Shield Against Quantum Threats") ให้การนำไปใช้จริงด้วย Rust ของพรมิทีฟที่อยู่เบื้องล่างสำหรับสถาบันที่ต้องการตรวจสอบพื้นผิวการเข้ารหัสโดยตรง การมีส่วนร่วมกับรายละเอียดเชิงปฏิบัติและเชิงเทคนิค ไม่ใช่เพียงพาดหัวเชิงกำกับดูแล คือวิธีที่คณะกรรมการแยกแยะโครงการย้ายระบบที่น่าเชื่อถือออกจากการแสดงละครการปฏิบัติตามกฎ
 
-## Preguntas frecuentes
+## คำถามที่พบบ่อย
 
-**¿Cuándo existirá realmente un ordenador cuántico criptográficamente relevante?**
+**คอมพิวเตอร์ควอนตัมที่เกี่ยวข้องเชิงการเข้ารหัสจะมีอยู่จริงเมื่อใด**
 
-Las estimaciones creíbles varían ampliamente. A principios de 2026, las demostraciones cuánticas públicas han alcanzado entre 24 y 28 qubits lógicos, mientras que se estima que un CRQC requiere alrededor de 6.000 qubits lógicos sustentados por entre 100.000 y varios millones de qubits físicos, dependiendo del enfoque de corrección de errores. El consenso experto sitúa la probabilidad de un CRQC en menos del uno por ciento para 2028, en torno al cincuenta por ciento en el horizonte 2037-2040, con una variabilidad significativa entre previsiones. Las recientes reducciones de las estimaciones teóricas de recursos —de 20 millones de qubits hace unos años a menos de un millón en los trabajos de Gidney en 2025, y a aproximadamente 100.000 en el artículo QLDPC de febrero de 2026— han comprimido el horizonte de planificación. Para las necesidades de un consejo, la hipótesis de planificación apropiada es mediados de la década de 2030 para los sistemas de alto riesgo, finales de la década de 2030 como punto medio conservador, y antes si la exposición HNDL es la preocupación limitante.
+การประเมินที่น่าเชื่อถือแตกต่างกันมาก ณ ต้นปี 2026 การสาธิตควอนตัมสาธารณะบรรลุคิวบิตเชิงตรรกะราว 24 ถึง 28 คิวบิต ในขณะที่ CRQC ประเมินว่าต้องการคิวบิตเชิงตรรกะราว 6,000 คิวบิต ซึ่งรองรับด้วยคิวบิตเชิงกายภาพระหว่าง 100,000 ถึงหลายล้านคิวบิต ขึ้นอยู่กับแนวทางการแก้ไขข้อผิดพลาด ฉันทามติของผู้เชี่ยวชาญวางความน่าจะเป็นของ CRQC ไว้ต่ำกว่าหนึ่งเปอร์เซ็นต์ภายในปี 2028 และราวห้าสิบเปอร์เซ็นต์ภายในปี 2037 ถึง 2040 โดยมีความผันแปรอย่างมีนัยสำคัญระหว่างการพยากรณ์ การลดลงล่าสุดของการประเมินทรัพยากรเชิงทฤษฎี จาก 20 ล้านคิวบิตเมื่อไม่กี่ปีก่อน เหลือต่ำกว่าหนึ่งล้านคิวบิตในงานของ Gidney ปี 2025 และเหลือราว 100,000 คิวบิตในเอกสารสถาปัตยกรรม QLDPC เดือนกุมภาพันธ์ 2026 ได้บีบอัดกรอบเวลาการวางแผนให้แคบลง สำหรับวัตถุประสงค์ของคณะกรรมการ สมมติฐานการวางแผนที่เหมาะสมคือกลางทศวรรษ 2030 สำหรับระบบที่มีความเสี่ยงสูง ปลายทศวรรษ 2030 เป็นจุดกึ่งกลางเชิงอนุรักษ์ และเร็วกว่านั้นหากความเสี่ยง HNDL เป็นข้อกังวลที่ผูกมัด
 
-**¿Por qué un despliegue híbrido en lugar de postcuántico puro?**
+**เหตุใดจึงเลือกการติดตั้งไฮบริดแทนที่จะเป็นหลังควอนตัมล้วน**
 
-Tres razones. Primero, ML-KEM y ML-DSA, aunque seriamente validados, tienen historiales criptoanalíticos más cortos que RSA y ECC. Un esquema híbrido sigue siendo seguro si cualquiera de los componentes se sostiene; un esquema PQC puro queda expuesto si el problema sobre retículos se debilita inesperadamente. Segundo, el híbrido preserva la retrocompatibilidad con las contrapartes que aún no han migrado, crítico en una transición industrial plurianual. Tercero, toda autoridad principal fuera de la Australian Signals Directorate recomienda explícitamente el híbrido para el periodo de transición: NCSC, ANSSI, BSI, NLNCSA y el marco G7 validan todos el enfoque de doble envolvente. La compensación, como cuantificó Project Leap, es un sobrecoste materialmente más alto en cálculo y almacenamiento. Es el precio de la opcionalidad.
+สามเหตุผล ประการแรก ML-KEM และ ML-DSA แม้จะผ่านการตรวจสอบมาอย่างดี แต่มีประวัติการวิเคราะห์รหัสที่สั้นกว่า RSA และ ECC รูปแบบไฮบริดยังคงปลอดภัยหากองค์ประกอบใดองค์ประกอบหนึ่งยึดอยู่ ส่วนรูปแบบ PQC ล้วนจะถูกเปิดเผยหากปัญหาแลตทิซอ่อนแอลงอย่างไม่คาดคิด ประการที่สอง ไฮบริดรักษาความเข้ากันได้ย้อนหลังกับคู่สัญญาที่ยังไม่ได้ย้ายระบบ ซึ่งสำคัญยิ่งในการเปลี่ยนผ่านของอุตสาหกรรมที่ใช้เวลาหลายปี ประการที่สาม ทุกหน่วยงานหลักนอกเหนือจาก Australian Signals Directorate แนะนำไฮบริดอย่างชัดเจนสำหรับช่วงเปลี่ยนผ่าน ทั้ง NCSC, ANSSI, BSI, NLNCSA และกรอบ G7 ล้วนรับรองแนวทางซองคู่ สิ่งที่ต้องแลกดังที่ Project Leap วัดปริมาณไว้ คือภาระด้านการประมวลผลและพื้นที่จัดเก็บที่สูงขึ้นอย่างมีนัยสำคัญ นั่นคือราคาของการมีทางเลือก
 
-**¿Hace falta a la vez ML-KEM y ML-DSA, o se puede elegir?**
+**เราจำเป็นต้องใช้ทั้ง ML-KEM และ ML-DSA หรือเลือกอย่างใดอย่างหนึ่งได้**
 
-Ambos. ML-KEM y ML-DSA desempeñan roles criptográficos distintos. ML-KEM reemplaza las primitivas de establecimiento de clave en TLS, las VPN, la autenticación móvil y protocolos similares en los que dos partes deben convenir una clave simétrica compartida. ML-DSA reemplaza las primitivas de firma digital en los certificados PKI, la firma de código, la firma de documentos, la mensajería autenticada tipo SWIFT y las aserciones de identidad. El parque criptográfico de una institución utiliza los dos tipos de primitivas en distintos lugares; la migración debe cubrir ambos. El tamaño de firma significativamente mayor de ML-DSA (50-70× ECDSA) suele ser el más exigente de los dos a nivel operativo; el trabajo de planificación de red y almacenamiento para ML-DSA domina la mayoría de evaluaciones de capacidad de migración.
+ทั้งสอง ML-KEM และ ML-DSA ทำหน้าที่เชิงการเข้ารหัสต่างกัน ML-KEM แทนที่พรมิทีฟการสถาปนากุญแจใน TLS, VPN, การยืนยันตัวตนบนมือถือ และโปรโตคอลที่คล้ายกันซึ่งสองฝ่ายต้องตกลงกุญแจสมมาตรร่วมกัน ML-DSA แทนที่พรมิทีฟลายเซ็นดิจิทัลในใบรับรอง PKI การลงนามโค้ด การลงนามเอกสาร การรับส่งข้อความที่ยืนยันตัวตนแบบ SWIFT และการยืนยันอัตลักษณ์ ขอบเขตการเข้ารหัสของสถาบันใช้พรมิทีฟทั้งสองแบบในที่ต่างกัน การย้ายระบบจึงต้องจัดการทั้งคู่ ขนาดลายเซ็นของ ML-DSA ที่ใหญ่กว่าอย่างมีนัยสำคัญ (50 ถึง 70 เท่าของ ECDSA) มักเป็นสิ่งที่เรียกร้องเชิงปฏิบัติการมากกว่าในสองอย่างนี้ งานวางแผนเครือข่ายและพื้นที่จัดเก็บสำหรับ ML-DSA ครองสัดส่วนหลักในการประเมินกำลังการย้ายระบบส่วนใหญ่
 
-**¿Cómo medir el avance de un programa de este tamaño?**
+**เราจะวัดความคืบหน้าของโครงการขนาดใหญ่เช่นนี้อย่างไร**
 
-Tres indicadores son prácticos y se alinean con los principales marcos normativos. **Cobertura de la CBOM**: qué porcentaje de las instancias criptográficas asimétricas de la institución se ha inventariado, clasificado y etiquetado para prioridad de migración. **Cobertura de migración de los activos de alto riesgo**: qué porcentaje de los activos donde la condición S + M > Q de Mosca es verdadera ha migrado a la PQC híbrida. **Cobertura de agilidad criptográfica**: qué porcentaje de los sistemas con dependencia criptográfica puede reemplazar los algoritmos sin cambio de código, solo por configuración. La hoja de ruta G7 CEG, el marco en tres fases del NCSC y la hoja de ruta coordinada UE se conectan todos a estas tres medidas, incluso cuando utilizan terminología diferente.
+สามตัวชี้วัดที่ใช้ได้จริงและสอดคล้องกับกรอบกำกับดูแลหลัก **ความครอบคลุมของ CBOM** คือกี่เปอร์เซ็นต์ของอินสแตนซ์การเข้ารหัสอสมมาตรของสถาบันที่ได้จัดทำบัญชี จัดประเภท และติดป้ายลำดับความสำคัญของการย้ายแล้ว **ความครอบคลุมการย้ายของสินทรัพย์ที่มีความเสี่ยงสูง** คือกี่เปอร์เซ็นต์ของสินทรัพย์ที่เงื่อนไข S + M > Q ของ Mosca เป็นจริงและได้ย้ายไปสู่ PQC แบบไฮบริดแล้ว **ความครอบคลุมความคล่องตัวด้านการเข้ารหัส** คือกี่เปอร์เซ็นต์ของระบบที่พึ่งพาการเข้ารหัสซึ่งสามารถสลับอัลกอริทึมได้โดยไม่ต้องแก้โค้ด ใช้เพียงการกำหนดค่า แผนงาน G7 CEG กรอบสามระยะของ NCSC และแผนงานที่ประสานกันของ EU ล้วนเชื่อมโยงกับสามตัวชี้วัดนี้โดยประมาณ แม้จะใช้คำศัพท์ต่างกัน
 
-**¿Cuál es el coste de esperar un año más?**
+**ต้นทุนของการรออีกหนึ่งปีคืออะไร**
 
-No es nulo, y no es simétrico. Esperar un año renuncia a un año de protección HNDL sobre los datos de larga vida útil: los datos cuya exigencia de confidencialidad se extiende a 2040 quedan expuestos un año más de lo necesario. Comprime la ventana de migración frente a plazos normativos fijos (ASD 2030, hitos NSA CNSA 2.0, objetivo UE 2030 para los sistemas críticos), lo que se traduce en un riesgo de entrega más alto y una flexibilidad de secuenciación reducida. Expone a la institución a restricciones de suministro de proveedores y talento que ya son visibles en el mercado y que se agravarán cuando los mayores actores del sector pasen de la planificación a la ejecución. El coste no es catastrófico en un solo año, pero se compone, y el entorno normativo converge hacia una posición en la que los consejos tendrán que explicar el retraso en lugar del gasto.
+มันไม่ใช่ศูนย์ และไม่สมมาตร การรอหนึ่งปีสละการป้องกัน HNDL หนึ่งปีบนข้อมูลที่มีอายุยาว ข้อมูลที่มีข้อกำหนดการรักษาความลับยาวถึงปี 2040 ถูกเปิดเผยนานกว่าที่จำเป็นหนึ่งปี มันบีบหน้าต่างการย้ายระบบให้แคบลงเมื่อเทียบกับกำหนดเวลาเชิงกำกับดูแลที่ตายตัว (ASD 2030 หมุดหมาย NSA CNSA 2.0 เป้าหมายระบบสำคัญ EU 2030) ซึ่งแปลเป็นความเสี่ยงในการส่งมอบที่สูงขึ้นและความยืดหยุ่นในการจัดลำดับที่ลดลง มันทำให้สถาบันเผชิญข้อจำกัดด้านอุปทานของผู้ขายและบุคลากรที่มองเห็นได้แล้วในตลาดและจะแย่ลงเมื่อผู้เล่นรายใหญ่ที่สุดของอุตสาหกรรมเปลี่ยนจากการวางแผนไปสู่การลงมือ ต้นทุนไม่ได้ร้ายแรงในปีใดปีเดียว แต่ทบต้น และสภาพแวดล้อมเชิงกำกับดูแลกำลังบรรจบสู่จุดที่คณะกรรมการจะถูกคาดหวังให้อธิบายความล่าช้าแทนที่จะอธิบายการใช้จ่าย
 
-## Referencias
+## เอกสารอ้างอิง
 
 - Sebastien Rousseau, (2026). [Quantum Thresholds Are Moving Again](https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/index.html "Quantum Thresholds Are Moving Again").
 - Sebastien Rousseau, (2023). [CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age](https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age").

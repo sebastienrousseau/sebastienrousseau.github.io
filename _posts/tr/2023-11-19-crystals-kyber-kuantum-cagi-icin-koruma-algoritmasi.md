@@ -15,164 +15,164 @@ keywords: "CRYSTALS-Kyber, post-kuantum, kriptografi, NIST, FIPS 203, KEM, kafes
 
 ---
 
-> **TL;DR.** CRYSTALS-Kyber è il KEM (Key Encapsulation Mechanism) post-quantistico standardizzato dal NIST (FIPS 203). Ridisegna la crittografia a chiave pubblica per resistere agli attacchi di Shor su computer quantistici scalati.
+> **TL;DR.** CRYSTALS-Kyber, NIST tarafından standartlaştırılan (FIPS 203) kuantum sonrası bir anahtar kapsülleme mekanizmasıdır (KEM). Açık anahtarlı kriptografiyi, ölçeklenmiş kuantum bilgisayarların saldırılarına dayanacak biçimde yeniden tasarlar.
 >
 > **Önemli Çıkarımlar**
 >
-> - **Standard NIST FIPS 203** — selezionato dopo anni di competizione pubblica gibi KEM post-quantistico per uso generale.
-> - **Basato su reticoli** — sicurezza dimostrabile su problemi reticolari (Module-LWE) ritenuti difficili anche için computer quantistici.
-> - **Prestazioni pragmatiche** — chiavi e ciphertext di dimensioni accettabili per integrazione in TLS, SSH e protocolli di pagamento.
-> - **Roadmap di adozione** — già in deployment in TLS sperimentale, presto obbligatorio için governo USA ve servizi finanziari.
+> - **NIST FIPS 203 standardı** — genel amaçlı bir kuantum sonrası KEM olarak, yıllar süren açık bir yarışmanın ardından seçildi.
+> - **Kafes tabanlı** — güvenliği, kuantum bilgisayarlar için bile zor kabul edilen kafes problemlerine (Module-LWE) dayanır.
+> - **Pragmatik performans** — anahtar ve şifreli metin boyutları, TLS, SSH ve ödeme protokollerine entegrasyon için kabul edilebilir düzeydedir.
+> - **Benimseme yol haritası** — hâlihazırda deneysel TLS içinde dağıtımda; yakında ABD kamu kurumları ve finansal hizmetler için zorunlu hale gelecek.
 
 ---
 
 ## Bakış
 
-### Navegar için minaccia quantistica: la génesis di CRYSTALS-Kyber
+### Kuantum Tehdidinde Yol Almak: CRYSTALS-Kyber'ın Doğuşu
 
-In il mio artículo anterior, [Proteger i dati in la era quantistica ⧉][03], me sumergí in la amenaza inminente ın calcolo quantistico için sicurezza digitale e examiné gibi la criptografía resistente a lo quantistico (QRC) può responder a ella. Ahora voy a explorar `CRYSTALS-Kyber`, un algoritmo QRC revolucionario che transforma il panorama ın sicurezza.
+Önceki makalemde, [Kuantum Çağında Veriyi Korumak ⧉][03], kuantum bilişimin dijital güvenliğe yönelttiği yaklaşan tehdidi ele almış ve kuantuma dayanıklı kriptografinin (QRC) bu tehdidi nasıl karşılayabileceğini incelemiştim. Şimdi, güvenlik uygulamalarını dönüştüren güçlü bir QRC algoritması olan `CRYSTALS-Kyber`'ı ele alacağım.
 
-I computer quantistici, con il suo capacità per realizar ciertos cálculos molto daha çok rápido che i ordenadores clásicos, plantean un rischio significativo için algoritmos di cifrado actuales. Esto suscita inquietudes su la sicurezza ın informazione sensible: transazioni finanziarie, historiales médicos e comunicaciones personales.
+Kuantum bilgisayarlar, belirli hesaplamaları klasik bilgisayarlardan çok daha hızlı gerçekleştirebilme yetenekleriyle, mevcut şifreleme algoritmaları için önemli bir risk oluşturur. Bu durum, finansal işlemler, tıbbi kayıtlar ve kişisel iletişim gibi hassas bilgilerin güvenliği konusunda endişe yaratır.
 
-Per mitigar questa amenaza, i criptógrafos hanno sviluppato algoritmos QRC gibi `CRYSTALS-Kyber`. Questo algoritmo è un mecanismo di encapsulación di chiavi (KEM) progettato per intercambiar in modo segura chiavi secretas tra partes.
+Bu tehdidi azaltmak için kriptograflar, `CRYSTALS-Kyber` gibi QRC algoritmaları geliştirmiştir. Bu algoritma, taraflar arasında gizli anahtarları güvenli biçimde değiş tokuş etmek üzere tasarlanmış bir anahtar kapsülleme mekanizmasıdır (KEM).
 
-Hoy, `CRYSTALS-Kyber` è un líder ın processo di estandarización post-quantistica ın [National Institute of Standards and Technology (NIST) ⧉][05], demostrando il suo potencial gibi soluzione di sicurezza robusta in la era digitale.
+Bugün `CRYSTALS-Kyber`, [National Institute of Standards and Technology (NIST) ⧉][05] kuantum sonrası kriptografi standardizasyon sürecinde önde gelen adaylardan biridir ve dijital çağ için sağlam bir güvenlik çözümü olarak potansiyelini ortaya koymaktadır.
 
-### CRYSTALS-Kyber: sicurezza inquebrantable rispetto alla calcolo quantistico
+### CRYSTALS-Kyber: Kuantum Bilişim Karşısında Tavizsiz Güvenlik
 
-La sicurezza di `CRYSTALS-Kyber` reposa in la dificultad inherente a resolver il problema `Learning With Errors (LWE)` su retículos di módulos. Questo sfida matemático complejo, considerado computacionalmente intratable incluso için computer quantistici, sirve di zócalo alla resistencia di `CRYSTALS-Kyber` rispetto ai ataques quantistici.
+`CRYSTALS-Kyber`'ın güvenliği, modül kafesleri üzerinde `Learning With Errors (LWE)` problemini çözmenin doğasında bulunan zorluğa dayanır. Kuantum bilgisayarlar için bile hesaplama açısından çözülemez kabul edilen bu karmaşık matematiksel problem, `CRYSTALS-Kyber`'ın kuantum saldırılarına karşı dayanıklılığının temelini oluşturur.
 
-### CRYSTALS-Kyber: un cambiamento di paradigma in sicurezza digitale
+### CRYSTALS-Kyber: Dijital Güvenlikte Bir Paradigma Değişimi
 
-`CRYSTALS-Kyber` pertenece alla suite di algoritmos CRYSTALS (Cryptographic Suite for Algebraic Lattices) e porta con orgullo la distinción di algoritmo quantistico-seguro (QSA).
+`CRYSTALS-Kyber`, CRYSTALS (Cryptographic Suite for Algebraic Lattices) algoritma paketine aittir ve kuantuma dayanıklı algoritma (QSA) niteliğini taşır.
 
-Se bene il concepto di utilizzare problemas su retículos con fines crittografici non è enteramente nuovo, `CRYSTALS-Kyber` eleva quello concepto a livelli di eficiencia senza parangón. Il suo capacità per generare chiavi crittografiche con tamaños daha çok pequeños e velocidades di cifrado/descifrado daha çok rápidas lo convertono in una elección ideal per le applicazioni reales, in particolare in il exigente mondo ın finanzas.
+Kafes problemlerini kriptografik amaçlarla kullanma fikri tümüyle yeni olmasa da, `CRYSTALS-Kyber` bu fikri benzersiz bir verimlilik düzeyine taşır. Daha küçük anahtar boyutlarıyla kriptografik anahtarlar üretebilmesi ile daha hızlı şifreleme ve şifre çözme hızları, onu gerçek dünya uygulamaları için, özellikle de finansın zorlu dünyasında, ideal bir seçim haline getirir.
 
 ![Divider][01].class=\"m-10 w-100\"
 
 ## Fikir
 
-### Comprender la mecánica di CRYSTALS-Kyber: la encapsulación di chiavi in il núcleo
+### CRYSTALS-Kyber'ın Mekaniğini Anlamak: Merkezde Anahtar Kapsülleme
 
-In il núcleo ın diseño revolucionario di `CRYSTALS-Kyber` se encuentra il suo approccio innovador ın encapsulación di chiavi, componente crítico ın comunicación segura. Aprovecha la potencia ın criptografía su retículos, método reconocido için suo resistencia rispetto ai ataques quantistici. Questa tecnica sofisticada saca partido di estructuras geométricas in un espacio multidimensional per establecer chiavi crittografiche.
+`CRYSTALS-Kyber`'ın çığır açan tasarımının merkezinde, güvenli iletişimin kritik bir bileşeni olan anahtar kapsüllemeye getirdiği yenilikçi yaklaşım yer alır. Kuantum tabanlı saldırılara karşı dayanıklılığıyla bilinen bir yöntem olan kafes kriptografisinin gücünden yararlanır. Bu gelişmiş teknik, kriptografik anahtarlar oluşturmak için çok boyutlu uzaydaki geometrik yapıları kullanır.
 
-`CRYSTALS-Kyber` emplea un tipo específico di problema su retículos, conocido için suoi propiedades di eficiencia e sicurezza, per generare le chiavi crittografiche. Esto garantisce la protección ın dati sensibles incluso rispetto ai progressi ın calcolo quantistico.
+`CRYSTALS-Kyber`, kriptografik anahtarlar üretmek için verimliliği ve güvenlik özellikleriyle bilinen belirli bir kafes problemi türünü kullanır. Bu, kuantum bilişimdeki ilerlemeler karşısında bile hassas verilerin korunmasını sağlar.
 
-#### Encapsulación di chiavi segura: la esencia di CRYSTALS-Kyber
+#### Güvenli Anahtar Kapsülleme: CRYSTALS-Kyber'ın Özü
 
-La encapsulación di chiavi è semejante a guardar un messaggio in una caja in modo segura, dove solo il destinatario previsto posee la llave per abrirla. In criptografía, questo processo implica creare un par di chiavi: una chiave pública, che può compartirse abiertamente, e una chiave privada, che deve mantenerse secreta. Il brillo di `CRYSTALS-Kyber` reside in il suo capacità per generare e utilizzare queste chiavi di una manera che garantisce una sicurezza senza parangón.
+Anahtar kapsülleme, bir mesajı bir kutuya güvenli biçimde kilitlemeye benzer; kutuyu açacak anahtar yalnızca hedeflenen alıcıdadır. Kriptografide bu süreç, bir anahtar çifti oluşturmayı içerir: açıkça paylaşılabilen bir açık anahtar ve gizli tutulması gereken bir özel anahtar. `CRYSTALS-Kyber`'ın gücü, bu anahtarları benzersiz bir güvenlik sağlayacak biçimde üretme ve kullanma yeteneğinde yatar.
 
-Veamos gibi `CRYSTALS-Kyber` utilizza la encapsulación di chiavi per establecer una comunicación segura tra dos partes, Alice e Bob. Il diagrama di secuencia seguente ilustra i passi involucrados, utilizando `CRYSTALS-Kyber`, un KEM progettato per fornire un intercambio di chiavi seguro için protocolos crittografici. Il KyberServer desempeña aquí un papel pivote in questo processo, generando e distribuyendo le chiavi crittografiche requeridas.
+`CRYSTALS-Kyber`'ın, iki taraf olan Alice ve Bob arasında güvenli iletişim kurmak için anahtar kapsüllemeyi nasıl kullandığını görelim. Aşağıdaki sıra diyagramı, kriptografik protokoller için güvenli anahtar değişimi sağlamak üzere tasarlanmış bir anahtar kapsülleme mekanizması (KEM) olan `CRYSTALS-Kyber` kullanılarak Alice ile Bob arasında güvenli iletişim kurmanın adımlarını gösterir. KyberServer bu süreçte kilit bir rol oynar; `CRYSTALS-Kyber` ile güvenli iletişim için gereken kriptografik anahtarları üretir ve dağıtır.
 
-![CRYSTALS-Kyber Key Encapsulation Mechanism (KEM)][04].class=\"img-fluid clearfix\"
+![CRYSTALS-Kyber Anahtar Kapsülleme Mekanizması (KEM)][04].class=\"img-fluid clearfix\"
 
-##### Leyenda
+##### Gösterge
 
-- Alice: emisor ın messaggio.
-- Bob: receptor ın messaggio.
-- KyberServer: servidor che genera e distribuye le chiavi crittografiche.
+- Alice: Mesajın göndericisi.
+- Bob: Mesajın alıcısı.
+- KyberServer: Kriptografik anahtarları üreten ve dağıtan sunucu.
 
-##### Explicación
+##### Açıklama
 
-###### Intercambio di chiave pública
+###### Açık Anahtar Değişimi
 
-- Alice avvia il processo solicitando il suo chiave pública al KyberServer.
-- Il KyberServer responde enviando la chiave pública di Alice, un valore matemático che può compartirse públicamente senza comprometer la sicurezza ın chiave privada di Alice.
-- Alice comparte dopo il suo chiave pública con Bob, permitiéndole cifrar messaggi che solo Alice può descifrar.
+- Alice, KyberServer'dan açık anahtarını talep ederek süreci başlatır.
+- KyberServer, Alice'in açık anahtarını göndererek yanıt verir; bu, Alice'in özel anahtarının güvenliğini tehlikeye atmadan herkese açık biçimde paylaşılabilen matematiksel bir değerdir.
+- Ardından Alice, açık anahtarını Bob ile paylaşır ve böylece Bob'un yalnızca Alice'in çözebileceği mesajları şifrelemesine olanak tanır.
 
-###### Encapsulación e desencapsulación
+###### Kapsülleme ve Kapsül Çözme
 
-- Bob solicita una chiave di encapsulación al KyberServer. Questa chiave temporal servirá per cifrar la chiave secreta compartida prima di enviarla a Alice.
-- Il KyberServer envía la chiave di encapsulación a Bob.
-- Bob utilizza la chiave pública di Alice ve chiave di encapsulación per cifrar la chiave secreta compartida, creando una cápsula cifrada.
-- Bob envía la cápsula cifrada a Alice.
-- Alice solicita una chiave di descifrado al KyberServer. Questa chiave temporal servirá per descifrar la cápsula e revelar la chiave secreta compartida.
-- Il KyberServer envía la chiave di descifrado a Alice.
+- Bob, KyberServer'dan bir kapsülleme anahtarı talep eder. Bu geçici anahtar, paylaşılan gizli anahtarı Alice'e göndermeden önce şifrelemek için kullanılacaktır.
+- KyberServer, kapsülleme anahtarını Bob'a gönderir.
+- Bob, paylaşılan gizli anahtarı şifrelemek için Alice'in açık anahtarını ve kapsülleme anahtarını kullanarak şifreli bir kapsül oluşturur.
+- Bob, şifreli kapsülü Alice'e gönderir.
+- Alice, KyberServer'dan bir şifre çözme anahtarı talep eder. Bu geçici anahtar, şifreli kapsülü çözmek ve paylaşılan gizli anahtarı ortaya çıkarmak için kullanılacaktır.
+- KyberServer, şifre çözme anahtarını Alice'e gönderir.
 
-###### Intercambio di chiave secreta compartida
+###### Paylaşılan Gizli Anahtar Değişimi
 
-- Alice utilizza il suo chiave privada ve chiave di descifrado per descifrar la cápsula, revelando la chiave secreta compartida.
-- Alice comparte la chiave secreta compartida con Bob, permitiéndole descifrar i messaggi cifrados con questa chiave.
+- Alice, kapsülü çözmek için özel anahtarını ve şifre çözme anahtarını kullanır ve paylaşılan gizli anahtarı ortaya çıkarır.
+- Alice, paylaşılan gizli anahtarı Bob ile paylaşır ve böylece Bob'un bu anahtarla şifrelenmiş mesajları çözmesine olanak tanır.
 
-###### Comunicación segura
+###### Güvenli İletişim
 
-Il diagrama ilustra eficazmente le etapas complejas di establecimiento di un canal di comunicación seguro, subrayando il papel crucial ın KyberServer in la generación e distribución ın chiavi crittografiche. Al impiegare il KEM `CRYSTALS-Kyber`, Alice e Bob possono proteger il suo informazione sensible e mantener una comunicación segura incluso rispetto a adversarios potenciales.
+Sıra diyagramı, güvenli bir iletişim kanalı kurmanın karmaşık adımlarını açık biçimde gösterir ve kriptografik anahtarların üretilmesi ile dağıtılmasında KyberServer'ın kritik rolünü vurgular. `CRYSTALS-Kyber` KEM'ini kullanan Alice ve Bob, olası saldırganlar karşısında bile hassas bilgilerini koruyabilir ve güvenli iletişimi sürdürebilir.
 
-### Criptografía su retículos: un fundamento robusto için resistencia quantistica
+### Kafes Tabanlı Kriptografi: Kuantuma Dayanıklılık için Sağlam Bir Temel
 
-`CRYSTALS-Kyber` emplea un approccio basato in retículos, método reconocido için suo potencial di resistencia ai ataques quantistici. Il principio subyacente ın criptografía su retículos implica estructuras geométricas in un espacio multidimensional. Se bene navegar per queste estructuras complejas può parecer intimidante, `CRYSTALS-Kyber` lo simplifica. Utiliza un tipo específico di problema su retículos, conocido için suoi propiedades di eficiencia e sicurezza, per creare chiavi crittografiche.
+`CRYSTALS-Kyber`, kuantum saldırılarına karşı potansiyel dayanıklılığıyla bilinen bir yöntem olan kafes tabanlı bir yaklaşım kullanır. Kafes kriptografisinin temel ilkesi, çok boyutlu uzaydaki geometrik yapılara dayanır. Bu karmaşık yapılar arasında yol almak göz korkutucu görünse de, `CRYSTALS-Kyber` bunu basitleştirir. Kriptografik anahtarlar oluşturmak için verimliliği ve güvenlik özellikleriyle bilinen belirli bir kafes problemi türünü kullanır.
 
-#### Tamaños di chiave eficientes: equilibrio tra sicurezza e prestazioni
+#### Verimli Anahtar Boyutları: Güvenlik ile Performans Arasında Bir Denge
 
-Una ın caratteristiche destacadas di `CRYSTALS-Kyber` è il tamaño di i suoi chiavi. Comparado con altri algoritmos post-quantisticos, `CRYSTALS-Kyber` offre tamaños di chiave significativamente daha çok pequeños, haciéndolo daha çok pratico per le applicazioni reales. `CRYSTALS-Kyber` propone tres livelli di sicurezza, ognuno con il suo propio tamaño di chiave:
+`CRYSTALS-Kyber`'ın öne çıkan özelliklerinden biri anahtarlarının boyutudur. Diğer kuantum sonrası kriptografik (PQC) algoritmalarla karşılaştırıldığında `CRYSTALS-Kyber`, önemli ölçüde daha küçük anahtar boyutları sunar ve bu da onu gerçek dünya uygulamaları için daha kullanışlı kılar. `CRYSTALS-Kyber`, her biri kendi anahtar boyutuna sahip üç farklı güvenlik düzeyi sunar:
 
-- **Kyber512**: livello di sicurezza di 128 bits, con tamaños di chiave di 1.632 bytes per le chiavi secretas, 800 bytes per le chiavi públicas e 768 bytes için criptogramas.
-- **Kyber768**: livello di sicurezza di 192 bits, con tamaños di chiave di 2.400 bytes per le chiavi secretas, 1.184 bytes per le chiavi públicas e 1.088 bytes için criptogramas.
-- **Kyber1024**: livello di sicurezza di 256 bits, con tamaños di chiave di 3.168 bytes per le chiavi secretas, 1.568 bytes per le chiavi públicas e 1.568 bytes için criptogramas.
+- **Kyber512**: Bu güvenlik düzeyi 128 bit güvenlik sağlar; gizli anahtarlar için 1.632 bayt, açık anahtarlar için 800 bayt ve şifreli metinler için 768 bayt boyutunda anahtarlar kullanır.
+- **Kyber768**: Bu güvenlik düzeyi 192 bit güvenlik sağlar; gizli anahtarlar için 2.400 bayt, açık anahtarlar için 1.184 bayt ve şifreli metinler için 1.088 bayt boyutunda anahtarlar kullanır.
+- **Kyber1024**: Bu güvenlik düzeyi 256 bit güvenlik sağlar; gizli anahtarlar için 3.168 bayt, açık anahtarlar için 1.568 bayt ve şifreli metinler için 1.568 bayt boyutunda anahtarlar kullanır.
 
-Questi tamaños relativamente pequeños hacen che `CRYSTALS-Kyber` sea atractivo için dispositivos con recursos limitados: smartphones e dispositivos IoT. Reducen anche il ancho di banda requerido per transmitir le chiavi, lo che può essere beneficioso per le applicazioni con conectividad di rete limitada.
+Bu görece küçük anahtar boyutları, `CRYSTALS-Kyber`'ı akıllı telefonlar ve IoT cihazları gibi kaynağı kısıtlı cihazlar için cazip bir seçenek haline getirir. Ayrıca kriptografik anahtarların iletilmesi için gereken bant genişliğini azaltır; bu da ağ bağlantısı sınırlı uygulamalar için yararlı olabilir.
 
-#### Velocidad inquebrantable: un faro in il panorama finanziario veloz
+#### Sarsılmaz Hız: Hızlı Tempolu Finans Sektöründe Bir Avantaj
 
-Altro aspecto ın atractivo di `CRYSTALS-Kyber` è il suo velocità. In il settore bancario e finanziario veloz, la velocità cuenta tanto gibi la sicurezza. Il diseño ın algoritmo garantisce che opere rapidamente, facilitando processi di cifrado e descifrado veloces. Questa eficiencia non è statoce a costa ın sicurezza; daha çok bene è un resultado directo ın fundamentos matemáticos sofisticados ın algoritmo.
+`CRYSTALS-Kyber`'ı çekici kılan bir diğer yön hızıdır. Hızlı tempolu bankacılık ve finansal hizmetler sektöründe hız, en az güvenlik kadar önemlidir. Algoritmanın tasarımı, hızlı çalışmasını ve dolayısıyla hızlı şifreleme ve şifre çözme süreçlerini sağlar. Bu verimlilik güvenlikten ödün verilerek elde edilmez; aksine, algoritmanın gelişmiş matematiksel temellerinin doğrudan bir sonucudur.
 
-### CRYSTALS-Kyber: una simbiosis di sicurezza, eficiencia e velocità
+### CRYSTALS-Kyber: Güvenlik, Verimlilik ve Hızın Bir Arada Buluşması
 
-`CRYSTALS-Kyber` ha emergido gibi un líder in la ricerca di criptografía resistente a lo quantistico, ofreciendo una combinación única di sicurezza, eficiencia e velocità. Il suo approccio innovador basato in retículos, i suoi tamaños di chiave daha çok pequeños ve suo diseño optimizado lo convertono in una elección ideal per proteger la informazione sensible in la banca ve servizi finanziari. Mentre il mondo continúa abrazando le tecnologie digitali, `CRYSTALS-Kyber` se posiciona per desempeñar un papel pivote in la protección di i nostri dati in i próximos años.
+`CRYSTALS-Kyber`, kuantuma dayanıklı kriptografi arayışında önde gelen bir aday olarak öne çıkmış; güvenlik, verimlilik ve hızın benzersiz bir birleşimini sunmaktadır. Yenilikçi kafes tabanlı yaklaşımı, daha küçük anahtar boyutları ve optimize edilmiş tasarımı, onu bankacılık ve finansal hizmetler sektöründe hassas bilgileri korumak için ideal bir seçim haline getirir. Dünya dijital teknolojileri benimsemeyi sürdürdükçe, `CRYSTALS-Kyber` önümüzdeki yıllarda verilerimizi korumada kilit bir rol oynamaya hazır durumdadır.
 
 ![Divider][01].class=\"m-10 w-100\"
 
 ## Etki
 
-### CRYSTALS-Kyber: vantaggi için banca ve servizi finanziari
+### CRYSTALS-Kyber: Bankacılık ve Finansal Hizmetler için Avantajlar
 
-La industria bancaria e finanziaria è in una carrera constante per adelantarse a ciberamenazas ogni volta daha çok sofisticadas. In questo contexto, `CRYSTALS-Kyber` se distingue non solo için suoi propiedades resistentes a lo quantistico (QR) sino anche için beneficios tangibles che offre a questa industria. Questa sección dettaglia le vantaggi pratiche di `CRYSTALS-Kyber`, subrayando perché è particularmente adecuado per le necesidades únicas ın istituzioni finanziarie.
+Bankacılık ve finansal hizmetler sektörü, giderek daha sofistike hale gelen siber tehditlerin önünde kalmak için sürekli bir yarış içindedir. Bu bağlamda `CRYSTALS-Kyber`, yalnızca kuantuma dayanıklı (QR) özellikleriyle değil, bu sektöre sunduğu somut faydalarla da öne çıkar. Bu bölüm, `CRYSTALS-Kyber`'ın pratik avantajlarını ele alır ve finansal kurumların kendine özgü ihtiyaçlarına neden özellikle uygun olduğunu vurgular.
 
-- **Seguridad reforzada con chiavi daha çok pequeñas**: una ın vantaggi daha çok significative di `CRYSTALS-Kyber` è il suo capacità per creare chiavi di cifrado daha çok pequeñas senza sacrificar la sicurezza. In un settore dove le brechas di dati possono avere consecuencias catastróficas, una sicurezza robusta non è negociable. I tamaños di chiave daha çok pequeños di `CRYSTALS-Kyber` simplifican i processi di gestión di chiavi, factor crítico in i grandi sistemi bancari dove miles di chiavi sono in juego. Esto non solo refuerza la sicurezza, sino che anche optimiza la eficiencia di almacenamiento e transmisión, factor crucial in una época in che la velocità ve espacio sono valiosos.
+- **Daha Küçük Anahtarlarla Güçlendirilmiş Güvenlik**: `CRYSTALS-Kyber`'ın en önemli avantajlarından biri, güvenlikten ödün vermeden daha küçük şifreleme anahtarları oluşturabilmesidir. Veri ihlallerinin felaket sonuçlar doğurabileceği bir sektörde sağlam güvenlik pazarlık konusu değildir. `CRYSTALS-Kyber`'ın sunduğu daha küçük anahtar boyutları, binlerce anahtarın devrede olduğu büyük ölçekli bankacılık sistemlerinde kritik bir etken olan anahtar yönetimi süreçlerini basitleştirir. Bu, yalnızca güvenliği artırmakla kalmaz, aynı zamanda hız ve alanın değerli olduğu bir çağda kritik bir etken olan depolama ve iletim verimliliğini de en iyi duruma getirir.
 
-- **Velocidad e eficiencia**: in i servizi finanziari, dove le transazioni se producen in milisegundos, la velocità ın operazioni crittografiche è crucial. `CRYSTALS-Kyber` sobresale in questo aspecto, ofreciendo processi rápidos di generación di chiavi, encapsulación e desencapsulación. Questa velocità garantisce che le medidas di sicurezza non se conviertan in un cuello di botella in i entornos di trading di alta frecuencia o durante transazioni il suo larga scala. Inoltre, la eficiencia di `CRYSTALS-Kyber` se traduce in una reducción ın recursos di cálculo, conduciendo a risparmi di costo e a operazioni daha çok respetuosas con il medio ambiente.
+- **Hız ve Verimlilik**: İşlemlerin milisaniyeler içinde gerçekleştiği finansal hizmetlerde kriptografik işlemlerin hızı kritik önemdedir. `CRYSTALS-Kyber` bu konuda öne çıkar; hızlı anahtar üretimi, kapsülleme ve kapsül çözme süreçleri sunar. Bu hız, güvenlik önlemlerinin yüksek frekanslı alım satım ortamlarında veya büyük ölçekli işlemler sırasında bir darboğaza dönüşmemesini sağlar. Ayrıca `CRYSTALS-Kyber`'ın verimliliği, daha az hesaplama kaynağına dönüşerek maliyet tasarrufu ve çevreye daha duyarlı işlemler sağlar.
 
-- **Perdurabilidad rispetto alle minacce quantistiche**: con il advenimiento ın calcolo quantistico, la industria afronta un futuro in il che i métodos crittografici tradicionales potrebbero quedar obsoletos. Al adoptar `CRYSTALS-Kyber`, le istituzioni finanziarie non solo aseguran il suo presente sino che anche se preparan per un mondo post-quantistico. Questo approccio proactivo ın ciberseguridad demuestra un compromiso con la protección a lungo termine ın dati, consideración esencial per le partes interesadas ve clienti che priorizan la sicurezza.
+- **Kuantum Tehditlerine Karşı Geleceğe Hazırlık**: Kuantum bilişimin ortaya çıkışıyla sektör, geleneksel kriptografik yöntemlerin geçersiz kalabileceği bir gelecekle karşı karşıyadır. `CRYSTALS-Kyber`'ı benimseyen finansal kurumlar yalnızca bugünlerini güvence altına almakla kalmaz, aynı zamanda kuantum sonrası bir dünyaya da hazırlanır. Siber güvenliğe yönelik bu proaktif yaklaşım, uzun vadeli veri korumaya bağlılığı gösterir; bu da veri güvenliğine öncelik veren paydaşlar ve müşteriler için önemli bir husustur.
 
-- **Cumplimiento normativo e vantaggio competitiva**: man mano che i reguladores mundiales empiezan a reconocer la minaccia quantistica, è probable che impongan la adopción di algoritmos resistentes a lo quantistico. La adopción temprana di `CRYSTALS-Kyber` posiciona alle istituzioni finanziarie gibi líderes in conformità e sicurezza. Inoltre, offre una vantaggio competitiva, tranquilizando a clienti e socios su il compromiso ın istituzione con pratiche di sicurezza punteras.
+- **Mevzuata Uyum ve Rekabet Avantajı**: Dünya genelindeki düzenleyiciler kuantum tehdidini kabul etmeye başladıkça, kuantuma dayanıklı algoritmaların benimsenmesini zorunlu kılmaları olasıdır. `CRYSTALS-Kyber`'ın erken benimsenmesi, finansal kurumları uyum ve güvenlikte öncü konumuna yerleştirir. Ayrıca, kurumun en ileri güvenlik uygulamalarına bağlılığı konusunda müşterilere ve iş ortaklarına güven vererek rekabet avantajı sunar.
 
 ![Divider][01].class=\"m-10 w-100\"
 
 ## Teşvikler
 
-### Il caso için adopción di CRYSTALS-Kyber
+### CRYSTALS-Kyber'ı Benimsemenin Gerekçesi
 
-In un panorama dove la ciberseguridad non è solo una necesidad sino un diferenciador competitivo, la industria bancaria e finanziaria se encuentra in un punto crítico. La adopción di `CRYSTALS-Kyber` rappresenta un movimiento estratégico, alineándose tanto con le necesidades di sicurezza actuales gibi con i giros tecnológicos futuros. Questa última sección describe i incentivos convincentes per integrar `CRYSTALS-Kyber` in la infraestructura crittografica ın servizi finanziari.
+Siber güvenliğin yalnızca bir gereklilik değil, aynı zamanda bir rekabet farklılaştırıcısı olduğu bir ortamda, bankacılık ve finansal hizmetler sektörü kritik bir dönemeçte bulunuyor. `CRYSTALS-Kyber`'ın benimsenmesi, hem mevcut güvenlik ihtiyaçlarıyla hem de gelecekteki teknolojik değişimlerle uyumlu, stratejik bir adımı temsil eder. Bu son bölüm, `CRYSTALS-Kyber`'ı finansal hizmetlerin kriptografik altyapısına entegre etmenin güçlü gerekçelerini özetler.
 
-- **Adelantarse alle tendencias di ciberseguridad**: il auge ın calcolo quantistico plantea una amenaza significativa için algoritmos tradicionales di cifrado, haciéndolos vulnerables al descifrado için futuros computer quantistici. Al adoptar `CRYSTALS-Kyber`, le istituzioni finanziarie possono proteger i suoi dati sensibles e infraestructuras críticas rispetto a queste amenazas emergentes.
+- **Siber Güvenlik Eğilimlerinin Önünde Kalmak**: Kuantum bilişimin yükselişi, geleneksel şifreleme algoritmaları için önemli bir tehdit oluşturur ve onları gelecekteki kuantum bilgisayarlar tarafından çözülmeye açık hale getirir. `CRYSTALS-Kyber`'ı benimseyen finansal kurumlar, hassas verilerini ve kritik altyapılarını bu yeni ortaya çıkan tehditlere karşı koruyabilir.
 
-- **Eficiencia operativa e rentabilidad**: i tamaños di chiave compactos ve algoritmos eficientes di `CRYSTALS-Kyber` conducen a risparmi sustanciales di costo. Comparado con i algoritmos tradicionales, `CRYSTALS-Kyber` reduce le necesidades di almacenamiento fino a in un 50 % ve consumo di ancho di banda fino a in un 30 %, generando risparmi significativi per le istituzioni finanziarie con grandi volúmenes di dati.
+- **Operasyonel Verimlilik ve Maliyet Etkinliği**: `CRYSTALS-Kyber`'ın kompakt anahtar boyutları ve verimli algoritmaları önemli maliyet tasarrufları sağlar. Geleneksel şifreleme algoritmalarıyla karşılaştırıldığında `CRYSTALS-Kyber`, depolama gereksinimlerini %50'ye kadar ve bant genişliği tüketimini %30'a kadar azaltır; bu da büyük veri hacimlerine sahip finansal kurumlar için önemli maliyet tasarrufları anlamına gelir.
 
-- **Alineación normativa e gestión di rischi**: con diversi organismos reguladores —tra ellos il NIST ve European Union Agency for Cybersecurity (ENISA)— recomendando activamente la adopción di soluzioni crittografiche resistentes a lo quantistico, i adoptantes tempranos di `CRYSTALS-Kyber` saranno bene posicionados per soddisfare le futuras exigencias normativas e mitigar i rischi jurídicos potenciales.
+- **Mevzuata Uyum ve Risk Yönetimi**: National Institute of Standards and Technology (NIST) ve European Union Agency for Cybersecurity (ENISA) dahil olmak üzere çeşitli düzenleyici kuruluşlar, kuantuma dayanıklı kriptografik çözümlerin benimsenmesini etkin biçimde önerdiğinden, `CRYSTALS-Kyber`'ı erken benimseyenler gelecekteki mevzuat gereksinimlerine uyum sağlamak ve olası hukuki riskleri azaltmak için iyi bir konumda olacaktır.
 
-- **Reforzar la confianza ın cliente ve reputación institucional**: istituzioni finanziarie di primo livello gibi Barclays e Deutsche Bank hanno adoptado `CRYSTALS-Kyber` per proteger i dati clienti e asegurar transazioni finanziarie críticas. Questo compromiso con una sicurezza avanzada non solo ha protegido a queste istituzioni di potenciales ciberataques, sino che anche ha reforzado il suo reputación gibi guardianes di confianza ın informazione sensible.
+- **Müşteri Güvenini ve Kurumsal İtibarı Artırmak**: Barclays ve Deutsche Bank gibi önde gelen finansal kurumlar, müşteri verilerini korumak ve kritik finansal işlemlerini güvence altına almak için `CRYSTALS-Kyber`'ı benimsemiştir. Gelişmiş güvenliğe yönelik bu bağlılık, bu kurumları olası siber saldırılardan korumakla kalmamış, aynı zamanda hassas bilgilerin güvenilir koruyucuları olarak itibarlarını da güçlendirmiştir.
 
 ![Divider][01].class=\"m-10 w-100\"
 
 ## Sonuç
 
-### Asegurar il futuro finanziario con CRYSTALS-Kyber
+### CRYSTALS-Kyber ile Finansal Geleceği Güvence Altına Almak
 
-Ante la evolución ın amenazas di ciberseguridad, la industria bancaria e finanziaria afronta una elección crítica. I algoritmos tradicionales di cifrado, antaño considerados seguros, sono ora vulnerables rispetto alla potencia emergente ın calcolo quantistico. `CRYSTALS-Kyber` emerge gibi un faro di sicurezza, ofreciendo una soluzione robusta, eficiente e perdurable per proteger i activos digitali ın settore finanziario.
+Gelişen siber güvenlik tehditleri karşısında bankacılık ve finansal hizmetler sektörü kritik bir seçimle yüz yüzedir. Bir zamanlar güvenli kabul edilen geleneksel şifreleme algoritmaları, kuantum bilişimin yükselen gücü karşısında artık savunmasızdır. `CRYSTALS-Kyber`, finans sektörünün dijital varlıklarını korumak için sağlam, verimli ve geleceğe dayanıklı bir çözüm sunarak güçlü bir güvenlik dayanağı olarak öne çıkar.
 
-Con il suo combinación única di funzionalità QR, eficiencia operativa e tamaños di chiave daha çok pequeños, `CRYSTALS-Kyber` è un game-changer için sicurezza finanziaria. Al adoptar `CRYSTALS-Kyber`, le istituzioni non solo aseguran i suoi operazioni actuales sino che anche se preparan per un futuro in il che la calcolo quantistico redefine la ciberseguridad. Questo approccio proactivo demuestra un compromiso con i daha çok altos standard di sicurezza, reforzando la confianza ın cliente ve resistencia ın industria rispetto alle amenazas in evolución.
+QR özellikleri, operasyonel verimliliği ve daha küçük anahtar boyutlarının benzersiz birleşimiyle `CRYSTALS-Kyber`, finansal güvenlik açısından belirleyici bir gelişmedir. `CRYSTALS-Kyber`'ı benimseyen kurumlar yalnızca mevcut operasyonlarını güvence altına almakla kalmaz, aynı zamanda kuantum bilişimin siber güvenliği yeniden tanımladığı bir geleceğe de hazırlanır. Bu proaktif yaklaşım, en yüksek güvenlik standartlarına bağlılığı gösterir; müşteri güvenini artırır ve sektörün gelişen tehditlere karşı dayanıklılığını pekiştirir.
 
-In un mondo ogni volta daha çok interconectado e digitale, `CRYSTALS-Kyber` se alza gibi un testimonio ın potere ın soluzioni innovadoras e orientadas al futuro. Il suo adopción per istituzioni finanziarie di primo livello gibi Barclays e Deutsche Bank è un fuerte respaldo a i suoi capacità e una señal chiara alla industria per abrazar questa soluzione crittografica resistente a lo quantistico.
+Giderek daha bağlantılı ve dijital hale gelen bir dünyada `CRYSTALS-Kyber`, yenilikçi ve ileri görüşlü çözümlerin gücünü ortaya koyar. Barclays ve Deutsche Bank gibi önde gelen finansal kurumlar tarafından benimsenmesi, yeteneklerinin güçlü bir onayı ve sektöre bu kuantuma dayanıklı kriptografik çözümü benimsemesi yönünde açık bir işarettir.
 
 ![Divider][01].class=\"m-10 w-100\"
 
-In conclusión, espero che questa exploración di `CRYSTALS-Kyber` haya iluminado il profundo impacto ın criptografía resistente a lo quantistico in il settore finanziario. Se desea sumergirse daha çok profundamente in questa tecnologia revolucionaria o ha preguntas, le invito a contactarme in [LinkedIn ⧉][02] o attraverso la [página di contacto][00].
+Son olarak, `CRYSTALS-Kyber` üzerine yaptığım bu incelemenin, kuantuma dayanıklı kriptografinin finans sektöründeki derin etkisini ortaya koyduğunu umuyorum. Bu güçlü teknolojiyi daha ayrıntılı incelemek isterseniz veya sorularınız varsa, [LinkedIn ⧉][02] üzerinden ya da [iletişim sayfası][00] aracılığıyla benimle bağlantı kurmaya davet ediyorum.
 
-Gracias di nuovo için suo tiempo, espero avere noticias suyas.
+Zaman ayırdığınız için tekrar teşekkür eder, sizden haber almayı dört gözle beklerim.
 
-[00]: /contact/index.html "Contact"
+[00]: /contact/index.html "İletişim"
 [01]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-[02]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
-[03]: /2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html "Protecting Data in the Quantum Age: The Hash Library (HSH)"
-[04]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-kyber.svg "CRYSTALS-Kyber Key Encapsulation Mechanism (KEM)"
-[05]: https://www.nist.gov/ "The National Institute of Standards and Technology (NIST)"
+[02]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau LinkedIn'de"
+[03]: /2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html "Kuantum Çağında Veri Koruma: Hash Kütüphanesi (HSH)"
+[04]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-kyber.svg "CRYSTALS-Kyber Anahtar Kapsülleme Mekanizması (KEM)"
+[05]: https://www.nist.gov/ "National Institute of Standards and Technology (NIST)"

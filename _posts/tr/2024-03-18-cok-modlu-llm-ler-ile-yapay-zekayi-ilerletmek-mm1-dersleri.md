@@ -1,106 +1,106 @@
 ---
 title: "Çok modlu LLM'ler ile yapay zekayı ilerletmek: MM1 dersleri"
-subtitle: "Çok modlu büyük dil modelleri üzerine Apple'ın MM1 makalesinin analizi"
-description: "MM1, mimari, ön eğitim stratejileri ve çok modlu LLM'lerin ortaya çıkan yetenekleri üzerine Apple'ın araştırmasıdır."
+subtitle: "Apple'ın MM1 çalışması çok modlu öğrenmeyi nasıl ileriye taşıyor"
+description: "Apple'ın çok modlu büyük dil modelleri (MLLM) üzerine MM1 makalesini inceleyin. Mimarilerini, ön eğitim stratejilerini ve yapay zeka potansiyellerini öğrenin."
 date: "March 18, 2024"
 language: "tr-TR"
 locale: "tr_TR"
 banner: "https://cloudcdn.pro/stocks/images/mm1-visual.webp"
-banner_alt: "MM1 modelinin görselleştirmesi"
-keywords: "MM1, çok modlu, LLM, Apple, üretken yapay zeka, araştırma"
+banner_alt: "Apple MM1 için afiş görseli"
+keywords: "Çok modlu LLM'ler, MM1 çalışması, yapay zeka gelişmeleri, ön eğitim stratejileri, görüntü tanıma, doğal dil işleme, yapay zeka uygulamaları, yapay zekanın geleceği, çok modlu öğrenme, yapay zeka araştırması"
 ---
 
 
 ---
 
-> **TL;DR.** L'articolo MM1 di Apple offre una rara visione interna ın scelte di design per LLM multimodali di frontiera: architettura visione-linguaggio, scaling laws e dati di pre-training.
+> **TL;DR.** Apple'ın çok modlu büyük dil modelleri (MLLM) üzerine MM1 makalesini inceleyin. Mimarilerini, ön eğitim stratejilerini ve yapay zeka potansiyellerini öğrenin.
 >
 > **Önemli Çıkarımlar**
 >
-> - **Architettura ibrida** — combinazione di encoder visivi e modello di linguaggio con cross-attention.
-> - **Scaling laws** — leggi di scala specifiche için modalità mista visione-testo.
-> - **Dati di pre-training** — miscela accurata di immagini-didascalia, documento-immagine e testo-puro.
-> - **Capacità emergenti** — few-shot in-context learning su compiti visivi senza esempi etichettati.
+> - **Çok modlu yapay zekanın ortaya çıkışı.** Yapay zeka alanı, son yıllarda özellikle doğal dil işleme (NLP) ve bilgisayarlı görü alanlarında dikkate değer ilerlemelere tanık olmuştur.
+> - **MM1 çalışması: çok modlu yapay zeka araştırmasında önemli bir aşama.** MM1: Methods Analysis & Insights from Multimodal LLM Pre-training ⧉ çalışması, MLLM'lerin gelişiminde belirleyici bir andır.
+> - **Temel bulgular ve çıkarımlar.** MM1 çalışması, MLLM'ler ve bunların potansiyeli konusundaki anlayışımızı biçimlendiren çeşitli önemli bulgular ortaya koymuştur.
+> - **MM1 model mimarisi ve çok modlu öğrenme süreci.** Diyagram, MM1 modelinin mimarisini ve öğrenme sürecini gösterir.
 
 ---
 
-## Introducción
+## Giriş
 
-La integración ın procesamiento ın lenguaje natural e ın reconocimiento di imágenes ha conducido al desarrollo ın grandi modelli di linguaggio multimodales (MLLM). In il suo artículo, Apple presenta MM1, una colección di modelli di IA multimodales che combinan comprensión visual e lingüística. Dopo experimentos exhaustivos, i ricercatori hanno examinado i factores che contribuyen al prestazioni di questi modelli, explorando diversas elecciones arquitectónicas e combinaciones di dati di preentrenamiento. Il artículo MM1 fornisce informazione esencial su la manera in che i MLLM sono strutturati e entrenados. Describe il approccio ın studio ve suoi conclusiones cruciales, poniendo di manifiesto il suo posible impacto in il futuro ın IA.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## La emergencia ın IA multimodal
-
-Il campo ın IA ha conocido progressi notables in i últimos años, in particolare in il procesamiento ın lenguaje natural (NLP) ve visione per ordenador. I grandi modelli di linguaggio (LLM) hanno transformado la manera in che le máquinas comprenden e generano il lenguaje humano, permitiéndoles realizar tareas complejas gibi la traducción, il resumen di texto e incluso la escritura creativa. Di igual modo, le reti neurali convolucionales (CNN) hanno revolucionado il reconocimiento di imágenes, permitiendo alle máquinas percibir e interpretar dati visuales con una precisión senza precedentes.
-
-I MLLM rappresentano la próxima frontera ın IA, combinando le fortalezas ın NLP ve visione per ordenador per creare modelli che possono tratar e generare informazione attraverso texto e imágenes in modo transparente. Questa fusión di modalidades abre un mondo di posibilidades, da asistentes virtuales daha çok atractivos fino a strumenti inteligentes di creación di contenuto capaces di generare experiencias multimedia cautivadoras.
+Doğal dil işleme ile görüntü tanımanın birleştirilmesi, çok modlu büyük dil modellerinin (MLLM) geliştirilmesiyle sonuçlanmıştır. Apple, makalesinde görüntü ve dil kavrayışını bir araya getiren çok modlu yapay zeka modelleri topluluğu olan MM1'i tanıtmaktadır. Araştırmacılar, kapsamlı deneyler yoluyla bu modellerin performansına katkıda bulunan etkenleri incelemiş, çeşitli mimari tercihleri ve ön eğitim veri bileşimlerini değerlendirmiştir. MM1 makalesi, MLLM'lerin nasıl yapılandırıldığı ve eğitildiği konusunda temel bilgiler sunar. Çalışmanın yaklaşımını ve önemli bulgularını ele alır ve bunların yapay zekanın geleceği üzerindeki olası etkisini ortaya koyar.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Il studio MM1: un hito ın ricerca IA multimodal
+## Çok modlu yapay zekanın ortaya çıkışı
 
-Il studio [**MM1: Methods Analysis & Insights from Multimodal LLM Pre-training ⧉**][00] rappresenta un momento pivote in la evolución ın MLLM. Llevado a cabo per un team di ricercatori renombrados, aspiraba a sacar alla luz i componentes chiave ve estrategias esenciales per un preentrenamiento eficaz ın MLLM, centrándose in il modello MM1 gibi referencia için IA multimodal.
+Yapay zeka alanı, son yıllarda özellikle doğal dil işleme (NLP) ve bilgisayarlı görü alanlarında dikkate değer ilerlemelere tanık olmuştur. Büyük dil modelleri (LLM), makinelerin insan dilini anlama ve üretme biçimini değiştirmiş; dil çevirisi, metin özetleme ve hatta yaratıcı yazım gibi karmaşık görevleri yerine getirmelerini sağlamıştır. Benzer şekilde, evrişimli sinir ağları (CNN) görüntü tanımayı köklü biçimde değiştirmiş, makinelerin görsel verileri daha önce görülmemiş bir doğrulukla algılamasına ve yorumlamasına imkan tanımıştır.
 
-### Metodoloji e objetivos
-
-La publicación MM1 ha empleado un approccio experimental riguroso per ricercare le sutilezas ın arquitectura multimodal e ın estrategias di preentrenamiento. I ricercatori hanno explorado diversos aspectos ın modello, incluido il codificador di imágenes, il conector visione-lenguaje ve selección di diversos conjuntos di dati di preentrenamiento. Analizando sistemáticamente questi componentes, il studio aspiraba a identificare i factores críticos che contribuyen a un prestazioni aumentado ın MLLM.
-
-Un objetivo principale ın ricerca era determinar la mezcla óptima di dati di preentrenamiento per alcanzar capacità di aprendizaje few-shot superiores. Il aprendizaje few-shot designa la capacità di un modello per adaptarse e aprender a partire da un número limitado di ejemplos, un aspecto crucial ın sistemi di IA che devono essere flexibles e eficientes in condiciones reales.
+MLLM'ler, hem NLP hem de bilgisayarlı görünün güçlü yanlarını birleştirerek yapay zekada sonraki aşamayı temsil eder; metin ve görüntüler arasında bilgiyi sorunsuzca işleyip üretebilen modeller oluşturur. Bu modalite birleşimi, daha etkileşimli sanal asistanlardan etkileyici çoklu ortam deneyimleri üretebilen akıllı içerik oluşturma araçlarına kadar çok sayıda olanağın önünü açar.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Sonuçs e lecciones chiave
+## MM1 çalışması: çok modlu yapay zeka araştırmasında önemli bir aşama
 
-Il studio MM1 ha producido diverse prospettive revolucionarias che hanno configurado la nostra comprensión ın MLLM e di il suo potencial. Una ın conclusiones daha çok significative è stato la importancia di una mezcla bene curada di dati di preentrenamiento. I ricercatori hanno descubierto che combinar dati imagen-pie di foto, dati imagen-texto entrelazados e dati di solo texto era esencial per alcanzar un prestazioni óptimo in aprendizaje few-shot. Questa prospettiva subraya la necesidad di conjuntos di dati di preentrenamiento diversos e completi, capaces di captar i matices ın comunicación multimodal.
+[**MM1: Methods Analysis & Insights from Multimodal LLM Pre-training ⧉**][00] çalışması, MLLM'lerin gelişiminde belirleyici bir an olarak öne çıkar. Tanınmış araştırmacılardan oluşan bir ekip tarafından yürütülen bu çalışma, etkili MLLM ön eğitimi için gereken temel bileşenleri ve stratejileri ortaya koymayı amaçlamış; çok modlu yapay zeka için bir kıyaslama noktası olarak MM1 modeline odaklanmıştır.
 
-Altro aspecto notable ın studio MM1 è la inclusión tanto di modelli densos che possono alcanzar 30.000 millones di parámetros gibi di variantes mixture-of-experts (MoE), demostrando la escalabilidad ve flexibilidad ın arquitectura. Il studio ha revelado che la resolución di imagen ha il impacto daha çok significativo su il prestazioni ın modello, daha çok ancora che il tamaño ın modello, subrayando la importancia di una entrada visual di alta qualità in il aprendizaje multimodal.
+### Yöntem ve hedefler
 
-La elección ın arquitectura ın codificador di imágenes, gibi ResNet o ViT, influye significativamente in la capacità ın modello per extraer caratteristiche significative ın dati visuales e per integrarlas con la informazione textual. Inoltre, la resolución ın imágenes di entrada desempeña un papel vital in la determinación ın qualità ve granularidad ın caratteristiche visuales capturadas için modello.
+MM1 yayını, çok modlu mimarinin ve ön eğitim stratejilerinin ayrıntılarını araştırmak için titiz bir deneysel yaklaşım kullanmıştır. Araştırmacılar, görüntü kodlayıcı, görü-dil bağlayıcısı ve çeşitli ön eğitim veri kümelerinin seçimi dahil olmak üzere modelin farklı yönlerini incelemiştir. Bu bileşenleri sistematik biçimde çözümleyerek çalışma, MLLM performansının iyileştirilmesine katkıda bulunan kritik etkenleri belirlemeyi hedeflemiştir.
 
-Il studio MM1 anche pone di manifiesto la importancia ın conector visione-lenguaje per consentire una interacción fluida tra le modalidades visual e textual. I ricercatori hanno experimentado con diversi approcci per fusionar la informazione ın codificador di imágenes e ın modello di linguaggio, identificando i mecanismos di atención cruzada ve atención multicabeza gibi estrategias eficaces per interacciones ricas e contextualmente pertinentes.
+Araştırmanın başlıca hedeflerinden biri, üstün few-shot öğrenme yetenekleri elde etmek için en uygun ön eğitim verisi bileşimini saptamaktı. Few-shot öğrenme, bir modelin sınırlı sayıda örnekten uyum sağlama ve öğrenme yeteneğini ifade eder; gerçek dünya uygulamalarında esnek ve verimli olması gereken yapay zeka sistemleri için önemli bir özelliktir.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Arquitectura ın modello MM1 e processo di aprendizaje multimodal
+## Temel bulgular ve çıkarımlar
+
+MM1 çalışması, MLLM'ler ve bunların potansiyeli konusundaki anlayışımızı biçimlendiren çeşitli önemli bulgular ortaya koymuştur. En dikkate değer bulgulardan biri, iyi seçilmiş bir ön eğitim verisi bileşiminin önemidir. Araştırmacılar, en iyi few-shot öğrenme performansını elde etmek için görüntü-altyazı verisi, iç içe geçmiş görüntü-metin verisi ve yalnızca metin verisinin birleştirilmesinin gerekli olduğunu tespit etmiştir. Bu bulgu, çok modlu iletişimin inceliklerini yakalayabilen çeşitli ve kapsamlı ön eğitim veri kümelerine duyulan gereksinimi vurgular.
+
+MM1 çalışmasının bir diğer dikkate değer yönü, 30 milyar parametreye kadar yoğun modellerin yanı sıra uzman karışımı (MoE) türevlerinin de dahil edilmesidir; bu, mimarinin ölçeklenebilirliğini ve esnekliğini gösterir. Çalışma, görüntü çözünürlüğünün model performansı üzerinde model boyutundan bile daha büyük bir etkiye sahip olduğunu ortaya koyarak çok modlu öğrenmede yüksek kaliteli görsel girdinin önemini vurgulamıştır.
+
+ResNet veya ViT gibi görüntü kodlayıcı mimarisinin seçimi, modelin görsel verilerden anlamlı özellikler çıkarma ve bunları metinsel bilgiyle bütünleştirme yeteneğini önemli ölçüde etkilemiştir. Ayrıca giriş görüntülerinin çözünürlüğü, model tarafından yakalanan görsel özelliklerin kalitesini ve ayrıntı düzeyini belirlemede önemli bir rol oynamıştır.
+
+MM1 çalışması ayrıca, görsel ve metinsel modaliteler arasında sorunsuz etkileşimi sağlamada görü-dil bağlayıcısının önemine de ışık tutar. Araştırmacılar, görüntü kodlayıcıdan ve dil modelinden gelen bilgiyi birleştirmek için çeşitli yaklaşımları denemiş; zengin ve bağlama uygun etkileşimler elde etmek için etkili stratejiler olarak çapraz dikkat mekanizmalarını ve çok başlı dikkati belirlemiştir.
+
+![divider][divider].class=\"m-10 w-100\"
+
+## MM1 model mimarisi ve çok modlu öğrenme süreci
 
 ![MM1 Model Architecture][architecture].class=\"m-10 w-100\"
 
-Il diagrama ilustra la arquitectura ve processo di aprendizaje ın modello MM1. I dati di preentrenamiento se componen di una entrada di imagen e una entrada di texto; la entrada di imagen se tratta mediante il Image Encoder ve entrada di texto alimenta direttamente al transformer LLM preentrenado. Il Image Encoder extrae le caratteristiche visuales ın imágenes di entrada, che se transmiten dopo al VL Connector (Vision-Language Connector). Il VL Connector integra le caratteristiche visuales con la informazione textual ın transformer LLM preentrenado. Questa fusión multimodal consente al modello generare una salida di captioning VQA (Visual Question Answering) mediante fine-tuning supervisado.
+Diyagram, MM1 modelinin mimarisini ve öğrenme sürecini gösterir. Ön eğitim verisi görüntü girdisi ve metin girdisinden oluşur; görüntü girdisi Image Encoder tarafından işlenirken metin girdisi doğrudan önceden eğitilmiş LLM transformer'ına beslenir. Image Encoder, giriş görüntülerinden görsel özellikleri çıkarır ve bunlar ardından VL Connector'a (Vision-Language Connector) aktarılır. VL Connector, görsel özellikleri önceden eğitilmiş LLM transformer'ından gelen metinsel bilgiyle bütünleştirir. Bu çok modlu birleşim, modelin denetimli ince ayar yoluyla VQA (Visual Question Answering) altyazı çıktısı üretmesini sağlar.
 
-La composición ın dati di preentrenamiento include un 45 % di dati entrelazados, un 45 % di pies di foto e un 10 % di dati di solo texto, subrayando la importancia di tipos di dati diversos için entrenamiento ın modello MM1.
+Ön eğitim verisi bileşimi %45 iç içe geçmiş veri, %45 altyazı ve %10 yalnızca metin verisinden oluşur; bu da MM1 modelinin eğitiminde çeşitli veri türlerinin önemini vurgular.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## MM1: una referencia için IA multimodal
+## MM1: çok modlu yapay zeka için bir kıyaslama
 
-Il modello MM1, sviluppato in il marco ın studio, sirve gibi referencia için IA multimodal, demostrando il potencial ın MLLM in diversas applicazioni. Con il suo arquitectura cuidadosamente progettata ve suo régimen di preentrenamiento, MM1 mostra un prestazioni excepcional in una gama di tareas, da il visual question answering fino a il captioning di imágenes.
+Çalışma kapsamında geliştirilen MM1 modeli, çok modlu yapay zeka için bir kıyaslama noktası işlevi görür ve MLLM'lerin çeşitli uygulamalardaki potansiyelini ortaya koyar. Özenle tasarlanmış mimarisi ve ön eğitim düzeniyle MM1, görsel soru yanıtlamadan görüntü altyazılamaya kadar bir dizi görevde yüksek performans gösterir.
 
-Una ın fortalezas chiave di MM1 reside in il suo capacità per generare un texto coherente e contextualmente pertinente a partire da una entrada visual. Ad esempio, presentado con una imagen di una calle concurrida, MM1 può generare una descripción detallada e precisa, captando la esencia ın escena e poniendo di manifiesto elementos chiave gibi la arquitectura, le personas ve actividades.
+MM1'in temel güçlü yanlarından biri, görsel girdiye dayanarak tutarlı ve bağlama uygun metin üretme yeteneğidir. Örneğin, hareketli bir şehir caddesinin görüntüsü sunulduğunda MM1, sahnenin özünü yakalayan ve mimari, insanlar ve etkinlikler gibi temel öğeleri öne çıkaran ayrıntılı ve doğru bir açıklama üretebilir.
 
-### Implicaciones e indirizzi futuras
+### Etkiler ve gelecekteki yönelimler
 
-Le conclusiones ın studio MM1 hanno implicaciones di gran alcance için futuro ın IA e ın aprendizaje multimodal. Le lecciones extraídas di questa ricerca forniscono una base sólida için desarrollo di arquitecturas MLLM daha çok avanzadas e daha çok capaces, abriendo la vía a sistemi di IA capaces di navegar e interpretar in modo fluida il mondo multimodal in il che vivimos.
+MM1 çalışmasının bulguları, yapay zekanın ve çok modlu öğrenmenin geleceği için geniş kapsamlı etkiler taşır. Bu araştırmadan elde edilen çıkarımlar, daha gelişmiş ve yetenekli MLLM mimarilerinin geliştirilmesi için sağlam bir temel sağlar; içinde yaşadığımız çok modlu dünyayı sorunsuzca gezinip yorumlayabilen yapay zeka sistemlerinin önünü açar.
 
-> Vamos a inventar il mañana invece di preocuparnos per lo che ocurrió ayer. — **Steve Jobs**
+> Dün ne olduğu konusunda endişelenmek yerine gelin yarını icat edelim. - **Steve Jobs**
 
-Una indirizzo di ricerca futura emocionante è la exploración di nuovos approcci per integrar informazione visual e textual all'interno di i MLLM. Il studio MM1 ha subrayado la eficacia ın mecanismos di atención cruzada e ın atención multicabeza, ma rimane un vasto potencial per innovaciones adicionales in questo campo. I ricercatori potranno ricercare nuove arquitecturas che se adapten dinámicamente al contenuto ve estructura ın dati di entrada, permitiendo interacciones multimodales ancora daha çok flexibles e conscientes ın contexto.
+Gelecekteki araştırmaların ilgi çekici alanlarından biri, MLLM'ler içinde görsel ve metinsel bilgiyi bütünleştirmeye yönelik yeni yaklaşımların incelenmesidir. MM1 çalışması, çapraz dikkat mekanizmalarının ve çok başlı dikkatin etkinliğini vurgulamıştır; ancak bu alanda daha fazla yeniliğe hâlâ geniş bir olanak vardır. Araştırmacılar, giriş verisinin içeriğine ve yapısına dinamik olarak uyum sağlayabilen yeni mimarileri inceleyebilir; böylece daha esnek ve bağlama duyarlı çok modlu etkileşimler mümkün olabilir.
 
-Otra indirizzo prometedora è la applicazione ın MLLM a escenarios reales, gibi i asistentes virtuales inteligentes, le strumenti educativas ve generación di contenuto creativo. La capacità ın MLLM per tratar e generare informazione attraverso texto e imágenes abre un amplio abanico di posibilidades per migliorare la comunicación humano-máquina e creare experiencias daha çok atractivas e inmersivas.
+Bir diğer umut verici yönelim, MLLM'lerin akıllı sanal asistanlar, eğitim araçları ve yaratıcı içerik üretimi gibi gerçek dünya senaryolarına uygulanmasıdır. MLLM'lerin metin ve görüntüler arasında bilgiyi işleyip üretebilmesi, insan-makine iletişimini geliştirmek ve daha etkileşimli, daha kapsayıcı deneyimler oluşturmak için geniş bir olanaklar yelpazesi sunar.
 
-> La próxima gran etapa ın IA saranno máquinas che comprendan il mondo che le rodea molto mejor, siendo capaces di comprender e razonar su dati che mai prima hanno visto. — **Yann LeCun**
+> Yapay zekada bir sonraki büyük adım, çevrelerindeki dünyayı çok daha iyi anlayan makineler olacak; bunu, daha önce görmedikleri veriler üzerinde akıl yürütebilme yetenekleriyle başaracaklar. - **Yann LeCun**
 
 ![divider][divider].class=\"m-10 w-100\"
 
 ## Sonuç
 
-Il studio MM1 rappresenta un hito significativo in la evolución ın grandi modelli di linguaggio multimodales, ofreciendo lecciones valiosas su la arquitectura, le estrategias di preentrenamiento ve potencial di questi potentes sistemi di IA. Al analizar meticulosamente i componentes chiave ve metodologías esenciales per un preentrenamiento MLLM eficaz, il studio ha sentado le bases di innovaciones futuras in IA multimodal.
+MM1 çalışması, çok modlu büyük dil modellerinin gelişiminde önemli bir dönüm noktasını temsil eder; bu güçlü yapay zeka sistemlerinin mimarisi, ön eğitim stratejileri ve potansiyeli konusunda değerli çıkarımlar sunar. Etkili MLLM ön eğitimi için gereken temel bileşenleri ve yöntemleri titizlikle çözümleyerek çalışma, çok modlu yapay zekada gelecekteki yeniliklerin temelini atmıştır.
 
-Le lecciones extraídas ın studio MM1 darán forma senza dubbio al desarrollo di MLLM daha çok sofisticados e capaces. Questi modelli hanno il potencial di revolucionar la manera in che interactuamos con le máquinas, permitiendo una comunicación daha çok natural, intuitiva e consciente ın contexto attraverso le modalidades textual e visual.
+MM1 çalışmasından çıkarılan dersler, daha karmaşık ve yetenekli MLLM'lerin geliştirilmesine kuşkusuz yön verecektir. Bu modeller, makinelerle etkileşim biçimimizi değiştirme potansiyeline sahiptir; metinsel ve görsel modaliteler arasında daha doğal, sezgisel ve bağlama duyarlı bir iletişime imkan tanır.
 
-Il propio modello MM1 atestigua il potencial increíble ın MLLM, demostrando un prestazioni excepcional in una gama di tareas e estableciendo una nuova referencia için IA multimodal. A medida che i ricercatori continúen construyendo su le lecciones extraídas di questo studio, podemos anticipar un futuro in il che i sistemi di IA navegarán e interpretarán in modo fluida il mondo complejo e multimodal che habitamos, acercándonos alla visione di máquinas verdaderamente inteligentes.
+MM1 modelinin kendisi, MLLM'lerin taşıdığı yüksek potansiyeli ortaya koyar; bir dizi görevde yüksek performans göstererek çok modlu yapay zeka için yeni bir kıyaslama noktası belirler. Araştırmacılar bu çalışmadan elde edilen çıkarımlar üzerine inşa etmeyi sürdürdükçe, yapay zeka sistemlerinin içinde bulunduğumuz karmaşık ve çok modlu dünyayı sorunsuzca gezinip yorumlayabildiği bir geleceği öngörebiliriz; bu da bizi gerçek anlamda akıllı makineler vizyonuna yaklaştırır.
 
-Parovvero daha çok su il studio MM1 e explorar il fascinante mondo ın grandi modelli di linguaggio multimodales, le invito a leer il artículo original: [**MM1: Methods Analysis & Insights from Multimodal LLM Pre-training ⧉**][00]
+Öne çıkan MM1 çalışması hakkında daha fazla bilgi edinmek ve çok modlu büyük dil modellerinin dünyasını incelemek için özgün araştırma makalesini okumanızı öneririm: [**MM1: Methods Analysis & Insights from Multimodal LLM Pre-training ⧉**][00]
 
 [00]: https://arxiv.org/abs/2403.09611 "MM1: Methods Analysis & Insights from Multimodal LLM Pre-training"
 

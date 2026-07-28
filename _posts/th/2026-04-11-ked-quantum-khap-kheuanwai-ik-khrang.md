@@ -1,133 +1,126 @@
 ---
-title: "Los umbrales cuánticos vuelven a moverse"
-subtitle: "Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía."
-description: "Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía."
+title: "เกณฑ์ควอนตัมกำลังขยับ: ความเสี่ยงจากอัลกอริทึม Shor ที่ 10,000 คิวบิต"
+subtitle: "งานวิจัยใหม่ชี้ว่าอัลกอริทึม Shor อาจทำงานได้ด้วยคิวบิตเพียง 10,000 ตัว ผลกระทบต่อการเข้ารหัสนั้นยากที่จะมองข้าม"
+description: "อัลกอริทึม Shor อาจทำงานได้ด้วยคิวบิตเพียง 10,000 ตัวในตอนนี้ RSA, ECC และกรอบเวลาสำหรับการย้ายไปสู่การเข้ารหัสหลังควอนตัมกำลังขยับเร็วขึ้นทั้งหมด นี่คือเหตุผล"
 date: "April 11, 2026"
 language: "th-TH"
 locale: "th_TH"
 banner: "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp"
-banner_alt: "Esquema del umbral de qubits para el algoritmo de Shor. Placa de circuito de computación cuántica con reflejos azules"
-keywords: "algoritmo de Shor, qubits, computación cuántica, ECC, RSA-2048, átomos neutros reconfigurables, códigos de corrección de errores, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC, criptografía postcuántica"
+banner_alt: "แผนภาพเกณฑ์คิวบิตของอัลกอริทึม Shor แผงวงจรคอมพิวเตอร์ควอนตัมที่มีลวดลายแสงสีน้ำเงิน"
+keywords: "การคำนวณเชิงควอนตัม, อัลกอริทึม Shor, คิวบิต 10000 ตัว, การเข้ารหัสหลังควอนตัม, RSA-2048, การเข้ารหัสแบบเส้นโค้งเชิงวงรี, คิวบิตอะตอมเป็นกลาง, การแก้ไขข้อผิดพลาดเชิงควอนตัม, ความคล่องตัวเชิงการเข้ารหัส, กรอบเวลาภัยคุกคามควอนตัม"
 ---
 
+## เกณฑ์ควอนตัมกำลังขยับอีกครั้ง
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+งานวิจัยใหม่ชี้ว่าอัลกอริทึม Shor อาจทำงานได้ด้วยคิวบิตเพียง 10,000 ตัว เกณฑ์สำหรับการคำนวณเชิงควอนตัมที่มีนัยสำคัญต่อการเข้ารหัสกำลังลดลงเร็วกว่าที่คนส่วนใหญ่เคยคาดไว้
 
-**ประเด็นสำคัญ**
-
-## Los umbrales cuánticos vuelven a moverse
-
-Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía.
-
-> **TL;DR.** Un nuevo artículo propone que el algoritmo de Shor pueda ejecutarse con solo 10.000 qubits físicos —cerca de cien veces menos que las estimaciones consensuadas anteriores—. La barrera ya no es puramente teórica: es de ingeniería. Los estándares de criptografía postcuántica ya están finalizados; la prioridad ahora es acelerar la migración.
+> **ประเด็นสำคัญ**
 >
-> **Conclusiones clave**
->
-> - Un nuevo artículo propone que el algoritmo de Shor pueda ejecutarse con solo **10.000 qubits físicos**, alrededor de cien veces menos que las estimaciones consensuadas anteriores.
-> - La reducción está impulsada por tres avances convergentes: códigos de corrección de errores cuánticos de alto rendimiento, retículos de átomos neutros reconfigurables y paralelismo aumentado.
-> - La amenaza no es uniforme. La **criptografía de curva elíptica (ECC)** es más vulnerable a bajos números de qubits; RSA-2048 requiere tiempos de ejecución significativamente más largos a escalas comparables.
-> - Se trata de una **proyección teórica**, no de una demostración operativa. Sigue existiendo una brecha de ingeniería sustancial entre el hardware actual y la ejecución tolerante a fallos a esa escala.
-> - Los estándares de criptografía postcuántica ya están finalizados. La prioridad ahora es **acelerar la migración**, no esperar a que aparezca un sistema cuántico.
+> - งานวิจัยใหม่เสนอว่าอัลกอริทึม Shor อาจทำงานได้ด้วย **คิวบิตทางกายภาพเพียง 10,000 ตัว** ซึ่งน้อยกว่าค่าประมาณตามความเห็นพ้องเดิมราวหนึ่งร้อยเท่า
+> - การลดลงนี้ขับเคลื่อนด้วยความก้าวหน้าที่มาบรรจบกันสามด้าน ได้แก่ รหัสแก้ไขข้อผิดพลาดเชิงควอนตัมอัตราสูง อาร์เรย์อะตอมเป็นกลางที่ปรับโครงแบบได้ และการทำงานแบบขนานที่เพิ่มขึ้น
+> - ภัยคุกคามไม่เท่ากันทั่วทั้งระบบ **การเข้ารหัสแบบเส้นโค้งเชิงวงรี (ECC)** มีความเปราะบางมากกว่าที่จำนวนคิวบิตต่ำ ส่วน RSA-2048 ต้องใช้เวลาทำงานนานกว่าอย่างมีนัยสำคัญที่ระดับขนาดใกล้เคียงกัน
+> - นี่คือ **การคาดการณ์เชิงทฤษฎี** ไม่ใช่การสาธิตที่ใช้งานได้จริง ยังคงมีช่องว่างทางวิศวกรรมที่มากระหว่างฮาร์ดแวร์ปัจจุบันกับการทำงานที่ทนต่อความผิดพลาดที่ระดับขนาดนี้
+> - มาตรฐานการเข้ารหัสหลังควอนตัมได้รับการสรุปเรียบร้อยแล้ว ลำดับความสำคัญในตอนนี้คือ **การเร่งการย้ายระบบ** ไม่ใช่การรอให้ระบบควอนตัมปรากฏขึ้น
 
-## Una hipótesis familiar, ahora bajo presión
+## ข้อสมมติที่คุ้นเคย ซึ่งบัดนี้ถูกกดดัน
 
-A lo largo de la última década, las discusiones en torno a la computación cuántica y la criptografía han seguido un arco familiar. Las máquinas cuánticas eran reconocidas como teóricamente potentes, pero consideradas impracticables a gran escala. Romper los sistemas criptográficos modernos habría exigido millones de qubits físicos, y el calendario permanecía cómodamente lejano. Esta hipótesis está ahora bajo presión seria.
+ตลอดทศวรรษที่ผ่านมา การอภิปรายเกี่ยวกับการคำนวณเชิงควอนตัมและการเข้ารหัสดำเนินไปตามแนวทางที่คุ้นเคย เครื่องควอนตัมได้รับการยอมรับว่ามีพลังในเชิงทฤษฎี แต่ถูกมองว่าไม่สามารถใช้งานจริงได้ในระดับขนาดใหญ่ การเจาะระบบการเข้ารหัสสมัยใหม่จะต้องใช้คิวบิตทางกายภาพหลายล้านตัว และกรอบเวลาก็ยังอยู่ห่างไกลอย่างสบายใจ ข้อสมมตินั้นบัดนี้ถูกกดดันอย่างจริงจัง
 
-Un artículo reciente, [«Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits» ⧉](https://arxiv.org/pdf/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits (PDF)"), propone algo más consecuente que un simple avance. Sugiere que el umbral de la computación cuántica criptográficamente relevante podría ser inferior en un orden de magnitud a lo que se creía. No millones de qubits, sino decenas de miles. La distinción importa, y la dirección que implica es difícil de ignorar.
+งานวิจัยฉบับล่าสุด [Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits ⧉](https://arxiv.org/pdf/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits (PDF)") เสนอสิ่งที่มีนัยสำคัญมากกว่าความก้าวหน้าเพียงครั้งเดียว งานวิจัยนี้ชี้ว่าเกณฑ์สำหรับการคำนวณเชิงควอนตัมที่มีนัยสำคัญต่อการเข้ารหัสอาจต่ำกว่าที่เคยเชื่อกันถึงหนึ่งอันดับขนาด ไม่ใช่คิวบิตหลายล้านตัว แต่เป็นหลักหมื่นตัว ความแตกต่างนี้มีความสำคัญ และทิศทางที่มันบ่งชี้นั้นยากที่จะมองข้าม
 
-## La convergencia que impulsa este desplazamiento: corrección de errores, arquitectura y paralelismo
+## การบรรจบกันที่ขับเคลื่อนการเปลี่ยนแปลง: การแก้ไขข้อผิดพลาด สถาปัตยกรรม และการทำงานแบบขนาน
 
-El resultado no emerge de un descubrimiento único. Refleja una convergencia de mejoras en varias capas de la pila de la computación cuántica que, tomadas juntas, desplazan la frontera de lo que parece factible.
+ผลลัพธ์นี้ไม่ได้เกิดจากการค้นพบเพียงอย่างเดียว แต่สะท้อนถึงการบรรจบกันของการปรับปรุงในหลายชั้นของสแตกการคำนวณเชิงควอนตัม ซึ่งเมื่อรวมกันแล้วได้ขยับขอบเขตของสิ่งที่ดูเป็นไปได้
 
-La primera mejora se refiere a la corrección de errores. Los enfoques tradicionales exigían grandes sobrecostes —a menudo cientos de qubits físicos para representar un solo qubit lógico—. El artículo se apoya en cambio en códigos de corrección de errores cuánticos de alto rendimiento, que reducen significativamente ese sobrecoste ([Emergent Mind ⧉](https://www.emergentmind.com/papers/2603.28627 "Shor's Algorithm with 10000 Atomic Qubits")). La segunda se refiere a la arquitectura. El sistema está construido sobre retículos reconfigurables de átomos neutros, que pueden reorganizarse durante el cálculo para permitir una conectividad más flexible y una ejecución más eficiente ([The Quantum Insider ⧉](https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/ "Oratomic Launches to Build Utility-scale Quantum Computers")). La tercera es el paralelismo: aumentar el número de qubits permite ejecutar más operaciones simultáneamente, reduciendo el tiempo de ejecución global.
+การปรับปรุงประการแรกเกี่ยวข้องกับการแก้ไขข้อผิดพลาด แนวทางแบบดั้งเดิมต้องใช้ทรัพยากรส่วนเกินจำนวนมาก บ่อยครั้งต้องใช้คิวบิตทางกายภาพหลายร้อยตัวเพื่อแทนคิวบิตเชิงตรรกะเพียงตัวเดียว แทนที่จะเป็นเช่นนั้น งานวิจัยนี้อาศัยรหัสแก้ไขข้อผิดพลาดเชิงควอนตัมอัตราสูง ซึ่งลดทรัพยากรส่วนเกินดังกล่าวลงอย่างมีนัยสำคัญ ([Emergent Mind ⧉](https://www.emergentmind.com/papers/2603.28627 "Shor's Algorithm with 10000 Atomic Qubits")) ประการที่สองเกี่ยวข้องกับสถาปัตยกรรม ระบบนี้สร้างขึ้นบนอาร์เรย์อะตอมเป็นกลางที่ปรับโครงแบบได้ ซึ่งสามารถจัดเรียงใหม่ได้ระหว่างการคำนวณเพื่อให้มีการเชื่อมต่อที่ยืดหยุ่นกว่าและการทำงานที่มีประสิทธิภาพกว่า ([The Quantum Insider ⧉](https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/ "Oratomic Launches to Build Utility-scale Quantum Computers")) ประการที่สามคือการทำงานแบบขนาน การเพิ่มจำนวนคิวบิตทำให้สามารถดำเนินการได้พร้อมกันมากขึ้น ซึ่งลดเวลาการทำงานโดยรวม
 
-Ninguna de estas ideas es nueva aisladamente. Combinadas, sin embargo, redefinen lo que antes se trataba como un límite duro.
+ไม่มีแนวคิดใดในสิ่งเหล่านี้ที่ใหม่เมื่อพิจารณาแยกกัน แต่เมื่อนำมารวมกัน แนวคิดเหล่านี้ได้จัดกรอบใหม่ให้กับสิ่งที่ก่อนหน้านี้ถูกมองว่าเป็นขีดจำกัดที่ตายตัว
 
-## De millones a decenas de miles: lo que las cifras significan realmente
+## จากหลักล้านสู่หลักหมื่น: ตัวเลขเหล่านี้หมายความว่าอย่างไรจริง ๆ
 
-Durante años, la estimación consensuada para ejecutar el algoritmo de Shor a escalas criptográficas exigía millones de qubits físicos. El nuevo análisis sugiere que, bajo ciertas hipótesis, ese número podría caer a alrededor de 10.000 ([arXiv ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits")). Esta cifra, sin embargo, no es la imagen completa.
+เป็นเวลาหลายปีที่ค่าประมาณตามความเห็นพ้องสำหรับการรันอัลกอริทึม Shor ที่ระดับขนาดเชิงการเข้ารหัสต้องใช้คิวบิตทางกายภาพหลายล้านตัว การวิเคราะห์ใหม่ชี้ว่า ภายใต้ข้อสมมติบางประการ ตัวเลขนี้อาจลดลงเหลือประมาณ 10,000 ([arXiv ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits")) อย่างไรก็ตาม ตัวเลขดังกล่าวไม่ใช่ภาพที่สมบูรณ์
 
-En el extremo bajo de ese rango, los tiempos de ejecución siguen siendo largos. Factorizar RSA-2048 al número mínimo de qubits podría aún llevar años de funcionamiento continuo. Una ejecución más rápida requiere más qubits, potencialmente decenas de miles. La relación entre el número de qubits y el tiempo de ejecución no es lineal, y el artículo se cuida de presentar esto como un espectro en lugar de un umbral fijo. Lo que cambia es la dirección: la barrera ya no es puramente teórica. Es ahora una cuestión de ingeniería.
+ที่ปลายล่างของช่วงนั้น เวลาการทำงานยังคงยาวนาน การแยกตัวประกอบ RSA-2048 ที่จำนวนคิวบิตต่ำสุดอาจยังต้องใช้การทำงานต่อเนื่องหลายปี การทำงานที่เร็วกว่าต้องใช้คิวบิตมากขึ้น อาจถึงหลักหมื่นตัว ความสัมพันธ์ระหว่างจำนวนคิวบิตกับเวลาการทำงานไม่ได้เป็นเชิงเส้น และงานวิจัยนี้ระมัดระวังที่จะนำเสนอสิ่งนี้ในลักษณะของช่วงต่อเนื่องมากกว่าเกณฑ์ที่ตายตัว สิ่งที่เปลี่ยนไปคือทิศทาง อุปสรรคไม่ได้เป็นเพียงเชิงทฤษฎีอีกต่อไป บัดนี้มันเป็นคำถามทางวิศวกรรม
 
-### Antiguas hipótesis frente a nuevas realidades
+### ข้อสมมติเดิมเทียบกับความเป็นจริงใหม่
 
-| Dimensión | Antigua hipótesis | Nueva realidad |
+| มิติ | ข้อสมมติเดิม | ความเป็นจริงใหม่ |
 |---|---|---|
-| Qubits físicos requeridos (algoritmo de Shor) | ~1.000.000+ | ~10.000–26.000 |
-| Tiempo para romper RSA-2048 (al mínimo de qubits) | Inviable esta década | Años (con 10.000 qubits); más rápido con más |
-| Tiempo para romper ECC-256 | Inviable esta década | Días (estimado con ~26.000 qubits) |
-| Paradigma de hardware dominante | Qubits superconductores | Retículos de átomos neutros reconfigurables |
-| Sobrecoste de corrección de errores | Cientos de qubits físicos por qubit lógico | Reducido significativamente mediante códigos de alto rendimiento |
-| Naturaleza de la barrera | Teórica | Ingeniería |
-| Urgencia de migración | Planificación a largo plazo | Despliegue activo requerido ahora |
+| คิวบิตทางกายภาพที่ต้องใช้ (อัลกอริทึม Shor) | ~1,000,000+ | ~10,000–26,000 |
+| เวลาในการเจาะ RSA-2048 (ที่จำนวนคิวบิตต่ำสุด) | ไม่สามารถทำได้ในทศวรรษนี้ | หลายปี (ที่ 10K คิวบิต); เร็วกว่านี้หากมีมากขึ้น |
+| เวลาในการเจาะ ECC-256 | ไม่สามารถทำได้ในทศวรรษนี้ | หลายวัน (ประมาณที่ ~26K คิวบิต) |
+| กระบวนทัศน์ฮาร์ดแวร์หลัก | คิวบิตตัวนำยิ่งยวด | อาร์เรย์อะตอมเป็นกลางที่ปรับโครงแบบได้ |
+| ทรัพยากรส่วนเกินของการแก้ไขข้อผิดพลาด | คิวบิตทางกายภาพหลายร้อยตัวต่อคิวบิตเชิงตรรกะหนึ่งตัว | ลดลงอย่างมีนัยสำคัญผ่านรหัสอัตราสูง |
+| ลักษณะของอุปสรรค | เชิงทฤษฎี | เชิงวิศวกรรม |
+| ความเร่งด่วนของการย้ายระบบ | การวางแผนระยะยาว | ต้องมีการติดตั้งใช้งานอย่างจริงจังในตอนนี้ |
 
-*Fuente: análisis a partir de [arXiv:2603.28627 ⧉](https://arxiv.org/abs/2603.28627) y de la literatura anterior.*
+*ที่มา: การวิเคราะห์อ้างอิงจาก [arXiv:2603.28627 ⧉](https://arxiv.org/abs/2603.28627) และเอกสารวิชาการก่อนหน้า*
 
-## Tiempo, escala y vulnerabilidad desigual de los sistemas criptográficos
+## เวลา ขนาด และความเปราะบางที่ไม่เท่ากันของระบบการเข้ารหัส
 
-Una de las contribuciones más significativas del artículo es el matiz que introduce en torno al tiempo. La ventaja cuántica no llega de golpe. Existe a lo largo de un espectro determinado por la escala del sistema y la naturaleza del objetivo criptográfico.
+หนึ่งในคุณูปการที่สำคัญกว่าของงานวิจัยนี้คือความละเอียดอ่อนที่มันนำเสนอเกี่ยวกับเรื่องเวลา ความได้เปรียบเชิงควอนตัมไม่ได้มาถึงพร้อมกันทั้งหมดในคราวเดียว แต่ดำรงอยู่บนช่วงต่อเนื่องที่กำหนดโดยขนาดของระบบและลักษณะของเป้าหมายการเข้ารหัส
 
-Con alrededor de 26.000 qubits, los autores estiman que romper la criptografía de curva elíptica podría llevar unos días en condiciones favorables ([arXiv ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits")). Para RSA-2048, los plazos son considerablemente más largos. Esta asimetría es importante. Sugiere que distintos sistemas criptográficos pueden volverse vulnerables en momentos diferentes, en lugar de simultáneamente, y que la transición hacia los estándares postcuánticos probablemente no será un acontecimiento único con una fecha límite única.
+ด้วยคิวบิตประมาณ 26,000 ตัว ผู้เขียนประเมินว่าการเจาะการเข้ารหัสแบบเส้นโค้งเชิงวงรีอาจใช้เวลาหลายวันภายใต้เงื่อนไขที่เอื้ออำนวย ([arXiv ⧉](https://arxiv.org/abs/2603.28627 "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits")) สำหรับ RSA-2048 กรอบเวลายาวนานกว่ามาก ความไม่สมมาตรนี้มีความสำคัญ มันชี้ว่าระบบการเข้ารหัสที่แตกต่างกันอาจกลายเป็นจุดเปราะบางในช่วงเวลาที่ต่างกัน แทนที่จะพร้อมกัน และการเปลี่ยนผ่านไปสู่มาตรฐานหลังควอนตัมไม่น่าจะเป็นเหตุการณ์เดียวที่มีเส้นตายเดียว
 
-Este esquema es coherente con una cobertura más amplia. Análisis de los últimos meses sugieren que sistemas cuánticos capaces de desafiar el cifrado ampliamente utilizado podrían emerger antes del final de la década ([Nature ⧉](https://www.nature.com/articles/d41586-026-01054-1 "Quantum-computing breakthroughs pose risks to encryption")). Los gobiernos y los organismos de normalización planifican ya las transiciones a la criptografía postcuántica, con calendarios de implementación que se extienden hasta la década de 2030 ([The Quantum Insider ⧉](https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/ "Oratomic Launches to Build Utility-scale Quantum Computers")). La discusión ha pasado de «si» a «cuándo».
+รูปแบบนี้สอดคล้องกับการรายงานในวงกว้าง การวิเคราะห์ในช่วงหลายเดือนที่ผ่านมาชี้ว่าระบบควอนตัมที่สามารถท้าทายการเข้ารหัสที่ใช้กันอย่างแพร่หลายอาจปรากฏขึ้นก่อนสิ้นทศวรรษนี้ ([Nature ⧉](https://www.nature.com/articles/d41586-026-01054-1 "Quantum-computing breakthroughs pose risks to encryption")) รัฐบาลและองค์กรมาตรฐานกำลังวางแผนการเปลี่ยนผ่านไปสู่การเข้ารหัสหลังควอนตัมอยู่แล้ว โดยมีกรอบเวลาการนำไปใช้ที่ยืดยาวไปถึงทศวรรษ 2030 ([The Quantum Insider ⧉](https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/ "Oratomic Launches to Build Utility-scale Quantum Computers")) การอภิปรายได้เคลื่อนจากคำถามว่า "หรือไม่" ไปสู่คำถามว่า "เมื่อใด"
 
-## La brecha de ingeniería que persiste
+## ช่องว่างทางวิศวกรรมที่ยังคงอยู่
 
-Conviene ser preciso sobre lo que representa este artículo. Es una proyección, no una demostración. Los sistemas propuestos dependen de hipótesis sobre tasas de error, estabilidad del hardware y comportamiento a la escala que aún no han sido validadas a la escala requerida. Los experimentos actuales operan en el nivel de cientos a algunos miles de qubits, no de decenas de miles funcionando de manera tolerante a fallos durante periodos prolongados ([Phys.org ⧉](https://phys.org/news/2026-04-quantum-built-qubits-team.html "Useful quantum computers could be built with as few as 10,000 qubits")).
+เป็นเรื่องสำคัญที่จะต้องแม่นยำเกี่ยวกับสิ่งที่งานวิจัยนี้เป็นตัวแทน มันคือการคาดการณ์ ไม่ใช่การสาธิต ระบบที่นำเสนอขึ้นอยู่กับข้อสมมติเกี่ยวกับอัตราข้อผิดพลาด ความเสถียรของฮาร์ดแวร์ และพฤติกรรมการขยายขนาด ซึ่งยังไม่ได้รับการตรวจสอบยืนยันที่ระดับขนาดที่ต้องการ การทดลองในปัจจุบันทำงานที่ระดับหลายร้อยถึงไม่กี่พันคิวบิต ไม่ใช่หลักหมื่นที่ทำงานแบบทนต่อความผิดพลาดตลอดช่วงเวลาที่ยาวนาน ([Phys.org ⧉](https://phys.org/news/2026-04-quantum-built-qubits-team.html "Useful quantum computers could be built with as few as 10,000 qubits"))
 
-Sigue existiendo una brecha de ingeniería sustancial. El camino de un modelo teórico convincente a un sistema funcional capaz de operación sostenida y tolerante a fallos a esa escala implica desafíos que aún no se comprenden plenamente, y mucho menos se resuelven. Lo que ha cambiado no es la proximidad de una máquina operativa, sino la credibilidad del objetivo. La brecha se estrecha, y la dirección del progreso es coherente.
+ยังคงมีช่องว่างทางวิศวกรรมที่มาก เส้นทางจากแบบจำลองเชิงทฤษฎีที่น่าเชื่อถือไปสู่ระบบที่ทำงานได้ซึ่งสามารถทำงานอย่างต่อเนื่องและทนต่อความผิดพลาดที่ระดับขนาดนี้ เกี่ยวข้องกับความท้าทายที่ยังไม่เป็นที่เข้าใจอย่างครบถ้วน นับประสาอะไรกับการแก้ไข สิ่งที่เปลี่ยนไปไม่ใช่ความใกล้ชิดของเครื่องที่ใช้งานได้ แต่เป็นความน่าเชื่อถือของเป้าหมาย ช่องว่างกำลังแคบลง และทิศทางของความก้าวหน้ามีความสม่ำเสมอ
 
-## Por qué el calendario que se comprime exige atención ahora
+## เหตุใดกรอบเวลาที่หดสั้นลงจึงเรียกร้องความสนใจในตอนนี้
 
-La importancia de este trabajo no es que la criptografía vaya a romperse a corto plazo. Es que el calendario se comprime de manera que afecta a las decisiones tomadas hoy. Los sistemas de seguridad se diseñan con largos ciclos de vida en mente. Los datos cifrados hoy pueden tener que permanecer confidenciales durante décadas. Las decisiones de infraestructura tomadas este año serán difíciles de invertir en una ventana de cinco años. Si las capacidades cuánticas llegan antes de lo esperado, estas hipótesis se vuelven frágiles.
+นัยสำคัญของงานนี้ไม่ได้อยู่ที่ว่าการเข้ารหัสจะถูกเจาะในระยะอันใกล้ แต่อยู่ที่กรอบเวลากำลังหดสั้นลงในลักษณะที่ส่งผลต่อการตัดสินใจที่กำลังทำอยู่ในวันนี้ ระบบความปลอดภัยถูกออกแบบโดยคำนึงถึงวงจรชีวิตที่ยาวนาน ข้อมูลที่เข้ารหัสในตอนนี้อาจต้องคงความลับไว้นานหลายทศวรรษ การตัดสินใจด้านโครงสร้างพื้นฐานที่ทำในปีนี้จะย้อนกลับได้ยากภายในกรอบห้าปี หากขีดความสามารถเชิงควอนตัมมาถึงเร็วกว่าที่คาด ข้อสมมติเหล่านั้นจะเปราะบาง
 
-Por eso la criptografía postcuántica ya se está desplegando en los sectores críticos. No porque la amenaza sea inmediata, sino porque la transición lleva tiempo y el coste de llegar tarde es asimétrico. Hay un patrón recurrente en la historia de la informática: el progreso parece lento hasta que de repente deja de serlo. Lo que comienza como una mejora teórica se convierte en una restricción práctica, y lo que antes se descartaba como lejano se convierte en algo que hay que planificar. La computación cuántica podría seguir exactamente esta trayectoria, no mediante un único avance dramático, sino mediante reducciones regulares de coste, complejidad y escala.
+นี่คือเหตุผลที่การเข้ารหัสหลังควอนตัมกำลังถูกนำไปใช้ในภาคส่วนสำคัญต่าง ๆ อยู่แล้ว ไม่ใช่เพราะภัยคุกคามอยู่ในทันที แต่เพราะการเปลี่ยนผ่านต้องใช้เวลา และต้นทุนของการล่าช้านั้นไม่สมมาตร มีรูปแบบที่เกิดขึ้นซ้ำในประวัติศาสตร์ของการคำนวณ ความก้าวหน้าดูเหมือนช้าจนกระทั่งจู่ ๆ ก็ไม่ช้าอีกต่อไป สิ่งที่เริ่มต้นในฐานะการปรับปรุงเชิงทฤษฎีกลายเป็นข้อจำกัดเชิงปฏิบัติ และสิ่งที่ครั้งหนึ่งเคยถูกมองข้ามว่าห่างไกลกลายเป็นสิ่งที่ต้องวางแผนรับมือ การคำนวณเชิงควอนตัมอาจกำลังดำเนินตามวิถีนั้นพอดี ไม่ใช่ผ่านความก้าวหน้าครั้งใหญ่เพียงครั้งเดียว แต่ผ่านการลดลงอย่างสม่ำเสมอของต้นทุน ความซับซ้อน และขนาด
 
-## Lo que esto significa por sector: una guía práctica
+## สิ่งนี้หมายความว่าอย่างไรในแต่ละอุตสาหกรรม: คู่มือเชิงปฏิบัติ
 
-Las implicaciones de esta investigación no son uniformes en todos los sectores. La respuesta apropiada depende del tipo de activos criptográficos en juego, de la sensibilidad y longevidad de los datos implicados, y del ritmo al que evolucionan las expectativas normativas.
+นัยของงานวิจัยนี้ไม่เท่ากันในทุกภาคส่วน การตอบสนองที่เหมาะสมขึ้นอยู่กับประเภทของสินทรัพย์การเข้ารหัสที่มีความเสี่ยง ความอ่อนไหวและอายุการใช้งานของข้อมูลที่เกี่ยวข้อง และจังหวะที่ความคาดหวังด้านกฎระเบียบกำลังเคลื่อนไป
 
-### Servicios financieros y FinTech
+### บริการทางการเงินและฟินเทค
 
-Las instituciones financieras afrontan un riesgo compuesto: poseen datos sensibles a largo plazo, operan sobre infraestructuras con ciclos de reemplazo lentos y están sometidas a un escrutinio normativo creciente en torno a la resiliencia criptográfica. ECC se utiliza ampliamente en las conexiones TLS, la autenticación móvil y las firmas digitales en los rails de pago: la categoría criptográfica que el artículo identifica como la más vulnerable a bajos números de qubits. Las instituciones que aún no han comenzado un inventario criptográfico ni han iniciado una hoja de ruta de migración postcuántica deberían tratar este artículo como un incentivo para acelerar, no como un motivo de pánico. [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) y CRYSTALS-Dilithium, ahora estandarizados por el NIST, son los objetivos de migración apropiados para la encapsulación de claves y las firmas digitales respectivamente.
+สถาบันการเงินเผชิญกับความเสี่ยงที่ทับซ้อนกัน พวกเขาถือครองข้อมูลอ่อนไหวที่มีอายุยาวนาน ดำเนินการบนโครงสร้างพื้นฐานที่มีวงจรการเปลี่ยนทดแทนที่ช้า และอยู่ภายใต้การตรวจสอบด้านกฎระเบียบที่เพิ่มขึ้นเกี่ยวกับความทนทานเชิงการเข้ารหัส ECC ถูกใช้อย่างแพร่หลายในการเชื่อมต่อ TLS การยืนยันตัวตนบนมือถือ และลายเซ็นดิจิทัลทั่วทั้งช่องทางการชำระเงิน ซึ่งเป็นหมวดหมู่การเข้ารหัสที่งานวิจัยระบุว่าเปราะบางที่สุดที่จำนวนคิวบิตต่ำ สถาบันที่ยังไม่ได้เริ่มจัดทำบัญชีการเข้ารหัสหรือริเริ่มแผนการย้ายไปสู่ระบบหลังควอนตัมควรถือว่างานวิจัยนี้เป็นสัญญาณให้เร่งดำเนินการ ไม่ใช่เหตุผลให้ตื่นตระหนก [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) และ CRYSTALS-Dilithium ซึ่งบัดนี้ได้รับการกำหนดเป็นมาตรฐานโดย NIST ทั้งคู่ เป็นเป้าหมายการย้ายที่เหมาะสมสำหรับการห่อหุ้มกุญแจและลายเซ็นดิจิทัลตามลำดับ
 
-### Sector público y defensa
+### ภาครัฐและกลาโหม
 
-Los actores estatales tienen la motivación más fuerte —y, en muchos casos, los recursos— para acelerar el desarrollo de hardware cuántico más allá de lo que se conoce públicamente. Los gobiernos que custodian comunicaciones sensibles, datos de inteligencia o claves de infraestructura crítica deben suponer que los adversarios cosechan ya datos cifrados con vistas a un descifrado futuro, una estrategia comúnmente llamada «harvest now, decrypt later». Para las organizaciones del sector público, el cumplimiento de los mandatos nacionales de preparación cuántica se vuelve cada vez más ineludible, y la ventana de migración proactiva se estrecha.
+ผู้ดำเนินการระดับรัฐมีแรงจูงใจที่แข็งแกร่งที่สุด และในหลายกรณีก็มีทรัพยากรที่จะเร่งการพัฒนาฮาร์ดแวร์ควอนตัมเกินกว่าที่เป็นที่รู้กันในสาธารณะ รัฐบาลที่ถือครองการสื่อสารที่อ่อนไหว ข้อมูลข่าวกรอง หรือกุญแจของโครงสร้างพื้นฐานสำคัญ ต้องสมมติว่าฝ่ายตรงข้ามกำลังเก็บเกี่ยวข้อมูลที่เข้ารหัสไว้แล้วเพื่อถอดรหัสในอนาคต ซึ่งเป็นกลยุทธ์ที่รู้จักกันทั่วไปว่า "เก็บเกี่ยวตอนนี้ ถอดรหัสภายหลัง" (harvest now, decrypt later) สำหรับองค์กรภาครัฐ การปฏิบัติตามข้อกำหนดความพร้อมด้านควอนตัมระดับชาติเป็นสิ่งที่หลีกเลี่ยงได้ยากขึ้นเรื่อย ๆ และช่วงเวลาสำหรับการย้ายระบบเชิงรุกกำลังแคบลง
 
-### Sanidad e infraestructuras críticas
+### การดูแลสุขภาพและโครงสร้างพื้นฐานสำคัญ
 
-Los historiales médicos, los sistemas de control de servicios públicos y las redes industriales comparten una vulnerabilidad común: datos y sistemas con una vida operativa muy larga, protegidos por estándares criptográficos diseñados para un modelo de amenaza precuántico. Un historial médico cifrado hoy puede tener que permanecer privado durante cincuenta años. Un sistema de control certificado este año puede permanecer en servicio durante dos décadas. Para estos sectores, el calendario que se comprime no es una preocupación abstracta. Es un desafío directo a las hipótesis fundacionales de las arquitecturas de seguridad actuales.
+บันทึกด้านสุขภาพ ระบบควบคุมสาธารณูปโภค และเครือข่ายอุตสาหกรรมมีจุดเปราะบางร่วมกัน นั่นคือ ข้อมูลและระบบที่มีอายุการใช้งานที่ยาวนานมาก ซึ่งได้รับการปกป้องด้วยมาตรฐานการเข้ารหัสที่ออกแบบมาสำหรับแบบจำลองภัยคุกคามยุคก่อนควอนตัม บันทึกทางการแพทย์ที่เข้ารหัสในวันนี้อาจต้องคงความเป็นส่วนตัวไว้นานถึงห้าสิบปี ระบบควบคุมที่ได้รับการรับรองในปีนี้อาจยังใช้งานอยู่นานถึงสองทศวรรษ สำหรับภาคส่วนเหล่านี้ กรอบเวลาที่หดสั้นลงไม่ใช่ความกังวลเชิงนามธรรม แต่เป็นความท้าทายโดยตรงต่อข้อสมมติพื้นฐานที่อยู่เบื้องหลังสถาปัตยกรรมความปลอดภัยในปัจจุบัน
 
-## Conclusión
+## บทสรุป
 
-El aspecto más importante de este artículo no es el número específico de qubits que presenta. Es la dirección que ese número implica. La cuestión ya no es si los ordenadores cuánticos pueden desafiar la criptografía moderna. Es a qué velocidad pueden construirse los sistemas requeridos, y si las organizaciones que dependen de los estándares actuales reaccionan lo bastante rápido.
+แง่มุมที่สำคัญที่สุดของงานวิจัยนี้ไม่ใช่จำนวนคิวบิตเฉพาะเจาะจงที่นำเสนอ แต่เป็นทิศทางที่จำนวนนั้นบ่งชี้ คำถามไม่ได้อยู่ที่ว่าคอมพิวเตอร์ควอนตัมสามารถท้าทายการเข้ารหัสสมัยใหม่ได้หรือไม่อีกต่อไป แต่อยู่ที่ว่าระบบที่จำเป็นจะสร้างขึ้นได้เร็วเพียงใด และองค์กรที่พึ่งพามาตรฐานปัจจุบันกำลังเคลื่อนไหวตอบสนองเร็วพอหรือไม่
 
-Por el momento, las respuestas siguen siendo inciertas. Pero el margen para diferir la cuestión se estrecha, y el coste de esperar crece con cada reducción creíble del umbral teórico. La comunidad criptográfica, los responsables de seguridad y las industrias que dependen de ellos harían bien en tratar este artículo no como un motivo de alarma, sino como un incentivo serio para acelerar transiciones ya en curso.
+ในตอนนี้ คำตอบยังคงไม่แน่นอน แต่ช่องว่างสำหรับการเลื่อนคำถามนี้ออกไปกำลังแคบลง และต้นทุนของการรอคอยเพิ่มขึ้นทุกครั้งที่มีการลดเกณฑ์เชิงทฤษฎีอย่างน่าเชื่อถือ ชุมชนการเข้ารหัส ผู้วางแผนด้านความปลอดภัย และอุตสาหกรรมที่พึ่งพาพวกเขา ควรถือว่างานวิจัยนี้ไม่ใช่เหตุแห่งความตื่นตระหนก แต่เป็นสัญญาณสำคัญให้เร่งการเปลี่ยนผ่านที่กำลังดำเนินอยู่แล้ว
 
-## Preguntas frecuentes
+## คำถามที่พบบ่อย
 
-**¿Pueden realmente 10.000 qubits romper el cifrado RSA?**
+**คิวบิต 10,000 ตัวสามารถเจาะการเข้ารหัส RSA ได้จริงหรือ?**
 
-Teóricamente, sí, con matices importantes. Aunque las estimaciones anteriores sugerían millones de qubits físicos requeridos, nuevas investigaciones sobre códigos de corrección de errores de alto rendimiento y retículos de átomos neutros reconfigurables sugieren que el umbral es significativamente más bajo. Sin embargo, con 10.000 qubits, el tiempo de ejecución estimado para factorizar RSA-2048 sigue siendo extremadamente largo: potencialmente años de funcionamiento continuo. Los ataques más rápidos exigen más qubits, probablemente en el rango de las decenas de miles. El artículo representa una proyección basada en hipótesis modeladas, no una demostración en un sistema operativo.
+ในเชิงทฤษฎีใช่ แต่มีข้อควรระวังที่สำคัญ แม้ว่าค่าประมาณก่อนหน้านี้จะชี้ว่าต้องใช้คิวบิตทางกายภาพหลายล้านตัว งานวิจัยใหม่เกี่ยวกับรหัสแก้ไขข้อผิดพลาดอัตราสูงและอาร์เรย์อะตอมเป็นกลางที่ปรับโครงแบบได้ชี้ว่าเกณฑ์ต่ำกว่ามากอย่างมีนัยสำคัญ อย่างไรก็ตาม ที่คิวบิต 10,000 ตัว เวลาการทำงานโดยประมาณสำหรับการแยกตัวประกอบ RSA-2048 ยังคงยาวนานมาก อาจถึงหลายปีของการทำงานต่อเนื่อง การโจมตีที่เร็วกว่าต้องใช้คิวบิตมากขึ้น น่าจะอยู่ในช่วงหลักหมื่นตัว งานวิจัยนี้เป็นตัวแทนของการคาดการณ์ที่อ้างอิงจากข้อสมมติที่จำลองขึ้น ไม่ใช่การสาธิตบนระบบที่ใช้งานได้จริง
 
-**¿Qué cifrado está más en riesgo frente a la computación cuántica?**
+**การเข้ารหัสแบบใดมีความเสี่ยงมากที่สุดจากการคำนวณเชิงควอนตัม?**
 
-La criptografía de curva elíptica (ECC) es generalmente más vulnerable a bajos números de qubits que RSA-2048. El artículo estima que romper ECC podría llevar algunos días utilizando alrededor de 26.000 qubits reconfigurables en condiciones favorables. RSA-2048 requiere un tiempo de ejecución significativamente más largo con números de qubits comparables. Esta asimetría significa que los sistemas dependientes de ECC —comunes en TLS, autenticación móvil y blockchain— pueden afrontar el riesgo en un calendario más corto que las infraestructuras basadas en RSA.
+การเข้ารหัสแบบเส้นโค้งเชิงวงรี (ECC) โดยทั่วไปมีความเปราะบางต่อจำนวนคิวบิตที่ต่ำกว่ามากกว่า RSA-2048 งานวิจัยประเมินว่าการเจาะ ECC อาจใช้เวลาหลายวันโดยใช้คิวบิตที่ปรับโครงแบบได้ประมาณ 26,000 ตัวภายใต้เงื่อนไขที่เอื้ออำนวย ส่วน RSA-2048 ต้องใช้เวลาการทำงานที่ยาวนานกว่าอย่างมีนัยสำคัญที่จำนวนคิวบิตใกล้เคียงกัน ความไม่สมมาตรนี้หมายความว่าระบบที่พึ่งพา ECC ซึ่งพบได้ทั่วไปใน TLS การยืนยันตัวตนบนมือถือ และบล็อกเชน อาจเผชิญความเสี่ยงในกรอบเวลาที่สั้นกว่าโครงสร้างพื้นฐานที่อิงกับ RSA
 
-**¿Qué es un qubit de átomo neutro reconfigurable?**
+**คิวบิตอะตอมเป็นกลางที่ปรับโครงแบบได้คืออะไร?**
 
-Los qubits de átomos neutros son átomos individuales —típicamente rubidio o cesio— atrapados y manipulados mediante luz láser en una cámara de vacío. «Reconfigurable» significa que la disposición de los átomos puede modificarse dinámicamente durante el cálculo, permitiendo una ejecución más eficiente de circuitos cuánticos complejos. Esta flexibilidad reduce el número de qubits físicos necesarios para implementar operaciones lógicas tolerantes a fallos, y es una razón clave por la que el nuevo artículo alcanza estimaciones de qubits más bajas que los trabajos anteriores basados en las arquitecturas de qubits superconductores.
+คิวบิตอะตอมเป็นกลางคืออะตอมเดี่ยว ๆ โดยทั่วไปคือรูบิเดียมหรือซีเซียม ที่ถูกกักและควบคุมด้วยแสงเลเซอร์ในห้องสุญญากาศ คำว่า "ปรับโครงแบบได้" หมายความว่าการจัดเรียงของอะตอมสามารถเปลี่ยนแปลงแบบพลวัตได้ระหว่างการคำนวณ ทำให้สามารถดำเนินการวงจรควอนตัมที่ซับซ้อนได้อย่างมีประสิทธิภาพยิ่งขึ้น ความยืดหยุ่นนี้ช่วยลดจำนวนคิวบิตทางกายภาพที่จำเป็นในการดำเนินการเชิงตรรกะที่ทนต่อความผิดพลาด และเป็นเหตุผลสำคัญที่ทำให้งานวิจัยใหม่นี้ได้ค่าประมาณคิวบิตที่ต่ำกว่างานก่อนหน้าที่อิงกับสถาปัตยกรรมคิวบิตตัวนำยิ่งยวด
 
-**¿Qué es la criptografía postcuántica, y por qué se está desplegando ahora?**
+**การเข้ารหัสหลังควอนตัมคืออะไร และเหตุใดจึงถูกนำไปใช้ในตอนนี้?**
 
-La criptografía postcuántica (PQC) designa los algoritmos criptográficos que se piensan seguros tanto contra ordenadores clásicos como cuánticos. El NIST finalizó su primer juego de estándares PQC en 2024, incluido [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) para la encapsulación de claves y CRYSTALS-Dilithium para las firmas digitales. El despliegue comienza ahora —mucho antes de que los ordenadores cuánticos representen una amenaza inmediata— porque las transiciones criptográficas son lentas. Reemplazar estándares incrustados en toda la infraestructura mundial lleva típicamente una década o más, y los datos cifrados hoy pueden tener que permanecer confidenciales mucho después de que las capacidades cuánticas hayan llegado a la madurez.
+การเข้ารหัสหลังควอนตัม (PQC) หมายถึงอัลกอริทึมการเข้ารหัสที่เชื่อว่าปลอดภัยต่อทั้งคอมพิวเตอร์แบบดั้งเดิมและคอมพิวเตอร์ควอนตัม NIST ได้สรุปชุดมาตรฐาน PQC ชุดแรกในปี 2024 ซึ่งรวมถึง [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) สำหรับการห่อหุ้มกุญแจ และ CRYSTALS-Dilithium สำหรับลายเซ็นดิจิทัล การนำไปใช้กำลังเริ่มต้นในตอนนี้ ก่อนที่คอมพิวเตอร์ควอนตัมจะก่อภัยคุกคามในทันทีเป็นเวลานาน เพราะการเปลี่ยนผ่านเชิงการเข้ารหัสเป็นเรื่องที่ช้า การแทนที่มาตรฐานที่ฝังอยู่ทั่วโครงสร้างพื้นฐานทั่วโลกโดยทั่วไปใช้เวลาหนึ่งทศวรรษหรือมากกว่า และข้อมูลที่เข้ารหัสในวันนี้อาจต้องคงความลับไว้นานหลังจากที่ขีดความสามารถเชิงควอนตัมสุกงอมแล้ว
 
-**¿Cuántos qubits tiene hoy el ordenador cuántico más potente?**
+**คอมพิวเตอร์ควอนตัมที่ทรงพลังที่สุดในปัจจุบันมีคิวบิตกี่ตัว?**
 
-A principios de 2026, los sistemas cuánticos punteros operan en el rango de cientos a algunos miles de qubits físicos. De forma crucial, la mayoría aún no son tolerantes a fallos: operan por debajo de los umbrales de corrección de errores requeridos para un cálculo lógico sostenido y fiable. La brecha entre el hardware actual y las decenas de miles de qubits lógicos tolerantes a fallos de alta fidelidad descritos en el nuevo artículo sigue siendo significativa, aunque el ritmo del progreso a través de las plataformas superconductora, de átomos neutros y de iones atrapados se acelera.
+ณ ต้นปี 2026 ระบบควอนตัมชั้นนำทำงานอยู่ในช่วงหลายร้อยถึงไม่กี่พันคิวบิตทางกายภาพ ที่สำคัญคือส่วนใหญ่ยังไม่ทนต่อความผิดพลาด พวกมันทำงานต่ำกว่าเกณฑ์การแก้ไขข้อผิดพลาดที่จำเป็นสำหรับการคำนวณเชิงตรรกะที่ต่อเนื่องและเชื่อถือได้ ช่องว่างระหว่างฮาร์ดแวร์ในปัจจุบันกับคิวบิตเชิงตรรกะที่มีความเที่ยงตรงสูงและทนต่อความผิดพลาดหลักหมื่นตัวตามที่อธิบายไว้ในงานวิจัยใหม่ยังคงมีมาก แม้ว่าจังหวะของความก้าวหน้าในแพลตฟอร์มตัวนำยิ่งยวด อะตอมเป็นกลาง และไอออนที่ถูกกักจะกำลังเร่งตัวขึ้นก็ตาม
 
-## Referencias
+## เอกสารอ้างอิง
 
 - Sebastien Rousseau, (2025). [Quantum-Safe Payments: Why the Payments Industry Must Act Now](https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/index.html "Quantum-Safe Payments: Why the Payments Industry Must Act Now").
 - Sebastien Rousseau, (2023). [Quantum Key Distribution: Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution: Revolutionising Security in Banking").

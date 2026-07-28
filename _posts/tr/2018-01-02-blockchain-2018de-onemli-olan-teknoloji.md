@@ -1,111 +1,111 @@
 ---
-title: "Blockchain: 2018'de önemli olan teknoloji"
-subtitle: "Yıkıcı bir potansiyele sahip dağıtık defter teknolojisi"
-description: "Blockchain, finansal hizmetlerden tedarik zincirine kadar birden çok sektörü dönüştürebilen dağıtık bir defter teknolojisidir."
+title: "Blockchain açıklandı: en çok önem taşıyan teknoloji"
+subtitle: "Blockchain, dağıtık defterler ve 2018'de önemli olan teknoloji"
+description: "Dijital işlemlerin özel anahtar kriptografisi ve eşler arası (P2P) ağlar aracılığıyla güvenceye alınmasının olağanüstü yolculuğunun hikâyesi."
 date: "January 2, 2018"
 language: "tr-TR"
 locale: "tr_TR"
 banner: "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
-banner_alt: "Birbirine zincirleme blok bağlantıları"
-keywords: "blockchain, dağıtık defter, fintech, finansal hizmetler, tedarik zinciri, akıllı sözleşmeler, 2018"
+banner_alt: "Kahverengi ahşap masa üzerinde kapalı bir dizüstü bilgisayar"
+keywords: "pain001, ISO 20022, ödeme otomasyonu, maliyet azaltma, ödeme işleme, ödeme dosyaları, ödeme başlatma, pain mesajı, pain mesaj standartları, pain mesaj doğrulama"
 ---
 
 
-![Birbirine zincirleme blok bağlantıları](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"
+![İçinde çok sayıda delik bulunan çok yüksek bir bina](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"
 
 ---
 
-> **TL;DR.** La blockchain è un libro mastro distribuito che memorizza transazioni in blocchi crittograficamente collegati. Permette a parti che non si fidano l'una dell'altra di concordare su uno stato condiviso senza un'autorità centrale, abilitando una nuova primitiva di fiducia per pagamenti, regolamento titoli e tokenizzazione.
+> **TL;DR.** Dijital işlemlerin özel anahtar kriptografisi ve eşler arası (P2P) ağlar aracılığıyla güvenceye alınmasının olağanüstü yolculuğunun hikâyesi.
 >
 > **Önemli Çıkarımlar**
 >
-> - **Libro mastro distribuito** — i record sono replicati su migliaia di nodi, eliminando il single point of failure.
-> - **Consenso** — algoritmi gibi Proof-of-Work e Proof-of-Stake permettono alla rete di concordare sullo stato senza autorità centrale.
-> - **Smart contract** — codice eseguibile sulla catena che automatizza accordi e regole di business.
-> - **Applicazioni finanziarie** — pagamenti transfrontalieri, regolamento titoli, tokenizzazione e infrastruttura için finanza decentralizzata.
+> - **Fikir.** Bir blockchain, verileri kronolojik olarak birbirine zincirlenen bloklar hâlinde düzenler.
+> - **Etki.** Blockchain; finans, bankacılık, tedarik zincirleri, sağlık, gayrimenkul ve diğer sektörlerde köklü değişimlere olanak tanır.
+> - **Kullanım Alanları.** Blockchain'in çok yönlülüğü, sektörler genelinde yenilikçi uygulamaları tetikledi.
+> - **Sınırlamalar.** Blockchain dönüştürücü olsa da; düzenleme, birlikte çalışabilirlik, karmaşıklık ve ölçeklenebilirlik etrafındaki sınırlamalar, yaygın benimsenmenin önünde engel olmayı sürdürüyor.
 
 ---
 
-La blockchain, tecnologia subyacente al ascenso fulgurante ın criptovalute, è transformando aziende, servizi finanziari e mercados di capitales. Questa tecnologia transformadora cambia la manera in che llevamos a cabo le transazioni e operazioni, haciendo i dati daha çok accesibles, transparentes e seguros.
+Blockchain, kripto paraların hızlı yükselişini sağlayan temel teknoloji olarak işletmeleri, finansal hizmetleri ve sermaye piyasalarını dönüştürüyor. Bu dönüştürücü teknoloji, verileri daha erişilebilir, şeffaf ve güvenli hâle getirerek işlem ve operasyonları yürütme biçimimizi değiştiriyor.
 
-## Bakış
+## İçgörü
 
-### La génesis ın consenso decentralizzato
+### Merkeziyetsiz Uzlaşmanın Doğuşu
 
-La blockchain emergió gibi la innovación fundacional che hizo posible il desarrollo di criptovalute gibi [Bitcoin][08]. In il suo núcleo, la blockchain è un libro mastro aperto e distribuido che registra le transazioni in modo verificable e permanente.
+Blockchain, [Bitcoin][08] gibi kripto paraların geliştirilmesini mümkün kılan temel yenilik olarak ortaya çıktı. Özünde blockchain, işlemleri doğrulanabilir ve kalıcı bir biçimde kaydeden açık, dağıtık bir defter işlevi görür.
 
-Al consentire che la informazione digitale se distribuya senza essere copiada, la blockchain inauguró un sistema tra pares revolucionario per establecer consenso e confianza. Per primera vez, le transazioni potevano aprobarse in modo decentralizzata, senza un intermediario centralizado.
+Dijital bilginin kopyalanmadan dağıtılmasına olanak tanıyarak blockchain, uzlaşma ve güven tesis etmeye yönelik öncü bir eşler arası sistemin yolunu açtı. İlk kez işlemler, merkezî aracılar olmadan merkeziyetsiz biçimde onaylanabildi.
 
-La capacità ın blockchain per facilitar interacciones seguras in línea tra desconocidos sentó le bases ın criptovalute. Más allá ın finanzas, encierra un potencial revolucionario per transformar i flujos di dati e transazioni in tutti i settori.
+Blockchain'in birbirini tanımayan taraflar arasında güvenli çevrimiçi etkileşimleri mümkün kılma kapasitesi, kripto paraların temelini oluşturdu. Finansın ötesinde, sektörler genelinde veri ve işlem akışlarını dönüştürecek köklü bir potansiyel taşır.
 
 ## Fikir
 
-### Eliminar i terceros di confianza gracias ai libri mastri distribuidos
+### Dağıtık Defterler Aracılığıyla Güvenilir Üçüncü Tarafları Ortadan Kaldırmak
 
-Una blockchain organiza i dati in blocchi, encadenados cronológicamente. I nuovi blocchi se añaden attraverso una rete decentralizzata di ordenadores invece di una parte central. Questo libro mastro distribuido se almacena e sincroniza simultáneamente in diversi nodi ın rete.
+Bir blockchain, verileri kronolojik olarak birbirine zincirlenen bloklar hâlinde düzenler. Yeni bloklar, merkezî bir taraf yerine merkeziyetsiz bir bilgisayar ağı tarafından eklenir. Bu dağıtık defter, ağdaki birden çok düğümde eşzamanlı olarak saklanır ve senkronize edilir.
 
-I blocchi contengono lotes di transazioni con marca temporal, inmutables una vez registrados. La criptografía garantisce la sicurezza ve exactitud mentre le transazioni sono aprobadas için participantes ın rete. I smart contracts consentono codificar e ejecutar automáticamente responsabilidades complejas.
+Bloklar, bir kez kaydedildikten sonra değiştirilemeyen, zaman damgalı işlem gruplarını içerir. İşlemler ağ katılımcıları tarafından onaylanırken kriptografi, güvenliği ve doğruluğu sağlar. Akıllı sözleşmeler, karmaşık sorumlulukların kodlanmasını ve otomatik olarak yürütülmesini mümkün kılar.
 
-Al consentire transazioni tra pares senza intermediarios centralizados, le blockchains eliminan i puntos únicos di fallo e creano transparencia. I utenti individuales conservan il control su i suoi dati e transazioni. Il approccio decentralizzato construye confianza e responsabilidad il suo larga scala.
+Merkezî aracılar olmadan eşler arası işlemleri mümkün kılan blockchain'ler, tekil arıza noktalarını ortadan kaldırır ve şeffaflık yaratır. Bireysel kullanıcılar, verileri ve işlemleri üzerindeki denetimi elinde tutar. Merkeziyetsiz yaklaşım, güveni ve hesap verebilirliği geniş ölçekte inşa eder.
 
 ## Etki
 
-### Una transformación radical in tutti i settori
+### Sektörler Genelinde Köklü Dönüşümü Tetiklemek
 
-La blockchain consente cambiamenti profundos in finanzas, banca, catene di suministro, sanidad, settore inmobiliario e altri settori. Al eliminar la asimetría di informazione e mitigar i rischi di contraparte, la blockchain favorece la transparencia ve integridad ın transazioni.
+Blockchain; finans, bankacılık, tedarik zincirleri, sağlık, gayrimenkul ve diğer sektörlerde köklü değişimlere olanak tanır. Bilgi asimetrisini ortadan kaldırarak ve karşı taraf risklerini azaltarak blockchain, işlemler genelinde şeffaflığı ve bütünlüğü destekler.
 
-Le criptovalute hanno introducido nuovi modelli di denaro programable, finanza decentralizzata e transferencias globali tra pares. In la banca, le blockchains mejoran la velocità ve eficiencia ın pagamenti. La tokenización consente anche nuovi métodos di financiación.
+Kripto paralar; programlanabilir para, merkeziyetsiz finans ve küresel eşler arası transferler için yeni modeller getirdi. Bankacılıkta blockchain'ler, ödeme hızını ve verimliliğini artırır. Tokenizasyon ayrıca yeni finansman yöntemlerini mümkün kılar.
 
-La blockchain garantisce asimismo il origen ın prodotti e un aprovisionamiento ético in le catene logísticas. La gestión di historiales médicos aprovecha il suo sicurezza e exactitud. La blockchain comienza incluso a sacudir il voto, il seguimiento ın regalías musicales ve sistemi di identidad digitale.
+Blockchain, tedarik zincirlerinde ürün kaynaklarını ve etik tedariki de güvence altına alır. Sağlık kayıtları yönetimi, blockchain'in güvenliğinden ve doğruluğundan yararlanır. Blockchain; oylama, müzik telif takibi ve dijital kimlik sistemlerini bile dönüştürmeye başlıyor.
 
-## Casos di uso
+## Kullanım Alanları
 
-### Implementaciones diversas in tutti i settori
+### Sektörler Genelinde Çeşitli Uygulamalar
 
-La versatilidad ın blockchain ha generato applicazioni innovadoras in tutti i settori:
+Blockchain'in çok yönlülüğü, sektörler genelinde yenilikçi uygulamaları tetikledi:
 
-- **Finanzas**: criptovalute, piattaforme decentralizzate, negociación di valori tokenizados, pagamenti transfrontalieri
+- **Finans:** Kripto paralar, merkeziyetsiz borsalar, tokenize edilmiş menkul kıymet ticareti, sınır ötesi ödemeler
 
-- **Cadena di suministro**: trazabilidad ın procedencia ın bienes, mejora ın transparencia in produzione e distribución
+- **Tedarik Zinciri:** Malların kaynağının izlenmesi, üretim ve dağıtımda şeffaflığın artırılması
 
-- **Sanidad**: almacenamiento seguro di dati médicos, facilitación ın intercambio tra proveedores
+- **Sağlık:** Güvenli tıbbi veri saklama, sağlayıcılar arasında paylaşımın kolaylaştırılması
 
-- **Gobierno**: registri di identidad digitale, sistemi di votación transparentes
+- **Kamu:** Dijital kimlik kayıtları, şeffaf oylama sistemleri
 
-- **Seguros**: tramitación automatizada mediante smart contracts, prevención ın fraude
+- **Sigorta:** Akıllı sözleşmelerle otomatik işleme, dolandırıcılığın önlenmesi
 
-- **Inmobiliario**: transazioni inmobiliarias tokenizadas, registro di títulos compartido
+- **Gayrimenkul:** Tokenize edilmiş mülk işlemleri, paylaşımlı tapu sicili
 
-- **Energía**: intercambio di energía tra pares, seguimiento di créditos di energía renovable
+- **Enerji:** Eşler arası enerji ticareti, yenilenebilir enerji kredilerinin takibi
 
-## Límites
+## Sınırlamalar
 
-### Obstáculos persistentes için adopción masiva
+### Yaygın Benimsenmenin Önündeki Süregelen Engeller
 
-Sebbene transformadora, la blockchain presenta limitaciones —regulación, interoperabilidad, complejidad e escalabilidad— che frenan la adopción masiva.
+Blockchain dönüştürücü olsa da; düzenleme, birlikte çalışabilirlik, karmaşıklık ve ölçeklenebilirlik etrafındaki sınırlamalar, yaygın benimsenmenin önünde engel olmayı sürdürüyor.
 
-La falta di claridad normativa tra jurisdicciones inhibe la inversión institucional. Resolver i sfide relacionados con la privacy ve gestión di dati è crucial. La sicurezza ın rete ve consumo energético anche richiedono atención man mano che la blockchain escala.
+Yargı bölgeleri genelinde düzenleyici açıklığın olmayışı, kurumsal yatırımı engelliyor. Gizlilik ve veri yönetimiyle ilgili zorlukların çözülmesi kritik önemde. Blockchain ölçeklendikçe ağ güvenliği ve enerji kullanımı da dikkat gerektiriyor.
 
-Le piattaforme in silos devono alcanzar la interoperabilidad. La experiencia di utente ve diseño di interfaz devono migliorare. La alfabetización in blockchain ın público general e ın responsables políticos acelerará ancora daha çok la aceptación.
+Birbirinden kopuk platformların birlikte çalışabilirliği sağlaması gerekiyor. Kullanıcı deneyimi ve arayüz tasarımı iyileşmeli. Kamuoyu ve politika yapıcılar arasındaki blockchain okuryazarlığı, benimsenmeyi daha da artıracaktır.
 
-## Bakışs
+## Görünüm
 
-### Trayectoria positiva pese alle incertidumbres
+### Belirsizliklere Rağmen Olumlu Bir Seyir
 
-La blockchain parece dispuesta a continuar il suo crecimiento exponencial man mano che le organizaciones reconocen il suo potencial disruptivo. Tuttavia, le incertidumbres attorno alla regulación, i standard ve percepción pública rimangono siendo obstáculos.
+Kuruluşlar blockchain'in dönüştürücü potansiyelini fark ettikçe, teknoloji üstel büyümesini sürdürmeye hazır görünüyor. Ancak düzenleme, standartlar ve kamuoyu algıları etrafındaki belirsizlikler engel olarak varlığını koruyor.
 
-Se espera che la tecnologia se extienda attraverso i settori economici, con un fuerte crecimiento proyectado specialmente in finanzas, catene logísticas e sanidad. Ma una innovación responsable è esencial.
+Teknolojinin ekonomik sektörlere yayılması bekleniyor; başta finans, tedarik zincirleri ve sağlık sektörleri olmak üzere yüksek büyüme öngörülüyor. Ancak sorumlu yenilik hayati önemde.
 
-Con vientos favorables —políticas di apoyo, soluzioni di interoperabilidad e diseño centrado in il utente— che superen le limitaciones actuales, la blockchain potrebbe recablear profundamente la manera in che la sociedad registra, transfiere e distribuye il valore.
+Destekleyici politikalar, birlikte çalışabilirlik çözümleri ve kullanıcı odaklı tasarım gibi kolaylaştırıcılar mevcut sınırlamaları aştıkça blockchain, toplumun değeri kaydetme, aktarma ve dağıtma biçimini köklü şekilde yeniden kurabilir.
 
 ## Sonuç
 
-### Sentar le bases di un futuro decentralizzato
+### Merkeziyetsiz Bir Geleceğin Temellerini Atmak
 
-La introducción ın blockchain marca un momento crucial che amplió le posibilidades di intercambio seguro di activos e dati digitali mediante un consenso decentralizzato. Sustentar le criptovalute non è daha çok che il suo punto di partida.
+Blockchain'in ortaya çıkışı, dijital varlıkların ve verilerin merkeziyetsiz uzlaşma yoluyla güvenli biçimde değiş tokuş edilmesine yönelik olanakları genişleten belirleyici bir an oldu. Kripto paralara temel oluşturması yalnızca başlangıç noktasıdır.
 
-Al eliminar i terceros di confianza, la blockchain offre il potencial di reestructurar i flujos di valore in finanzas, commercio, gobernanza e sociedad. Pese a i suoi límites, il suo trayectoria apunta a un emocionante futuro decentralizzato in tutti i settori.
+Güvenilir üçüncü tarafları ortadan kaldırarak blockchain; finans, ticaret, yönetişim ve toplum genelinde değer akışlarını yeniden yapılandırma potansiyeli sunar. Sınırlamalara rağmen izlediği seyir, sektörler genelinde ilgi çekici ve merkeziyetsiz bir geleceğe işaret ediyor.
 
-Al igual che internet prima che ella, la blockchain è una tecnologia fundacional dispuesta a desbloquear nuovi modelli costruiti su la transparencia ve confianza tra pares. Questa innovación revolucionaria promete rediseñar le nostre economías digitali ve nostre vidas conectadas in i próximos años.
+Kendisinden önceki internet gibi blockchain de, eşler arası şeffaflık ve güvenle desteklenen yeni modelleri mümkün kılmaya hazır temel bir teknolojidir. Bu belirleyici yenilik, önümüzdeki yıllarda dijital ekonomilerimizi ve birbirine bağlı yaşamlarımızı yeniden biçimlendirmeyi vaat ediyor.
 
 [08]: /2018-01-01-bitcoin-the-year-in-review/index.html

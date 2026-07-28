@@ -1,112 +1,113 @@
 ---
 title: "Kuantum algoritması kafes tabanlı kriptografiye meydan okuyor"
-subtitle: "Yeni bir kuantum algoritması LWE problemini hedefliyor"
-description: "Yilei Chen tarafından öne sürülen yeni bir kuantum algoritması, Learning with Errors problemini hedefliyor — kafes tabanlı kriptografi için meydan okuma."
+subtitle: "Kafes tabanlı kriptografi için polinom zamanlı yeni kuantum algoritması"
+description: "Yilei Chen tarafından geliştirilen yeni bir polinom zamanlı kuantum algoritması, kafes tabanlı kriptografiyi hedef alıyor. CRYSTALS-Kyber dahil kuantum sonrası standartlar için sonuçları var."
 date: "April 15, 2024"
 language: "tr-TR"
 locale: "tr_TR"
+hreflang: "tr"
 banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
-banner_alt: "Kafes tabanlı kriptografinin görselleştirmesi"
-keywords: "kuantum, kafes tabanlı, kriptografi, LWE, post-kuantum, Yilei Chen, araştırma"
+banner_alt: "Dijital mavi bir uzaydaki ağ düğümlerini gösteren afiş"
+keywords: "kuantum bilişim, kuantum algoritması, kafes kriptografisi, LWE, şifreleme, kuantum sonrası kriptografi, siber güvenlik, Yilei Chen, kriptografi araştırması, güvenlik tehditleri"
 ---
 
 
 ---
 
-> **TL;DR.** Un algoritmo quantistico presentato da Yilei Chen suggerisce una possibile soluzione efficiente al problema LWE, su cui poggiano molti schemi PQC. Una scoperta che richiede verifica indipendente urgente.
+> **TL;DR.** Yilei Chen tarafından geliştirilen yeni bir polinom zamanlı kuantum algoritması, kafes tabanlı kriptografiyi hedef alıyor. CRYSTALS-Kyber dahil kuantum sonrası standartlar için sonuçları var.
 >
 > **Önemli Çıkarımlar**
 >
-> - **Problema LWE** — Learning With Errors, base di Kyber e Dilithium.
-> - **Nuovo algoritmo** — proposta che, se confermata, indebolirebbe alcuni parametri PQC.
-> - **Risposta ın settore** — peer review urgente e necessità di crittografia ibrida.
-> - **Implicazioni** — riconsiderare i parametri NIST ve tempi di migrazione.
+> - **Chen'in polinom zamanlı algoritması:** GapSVP ve SIVP problemlerine her boyuttaki kafes için çözüm sunuyor.
+> - **Learning With Errors (LWE):** birçok kuantum sonrası kriptografik protokolün temelini oluşturan matematiksel problem.
+> - **Teknik yenilikler:** karmaşık varyanslı Gauss fonksiyonları ve pencereli kuantum Fourier dönüşümü.
+> - **Sınırlı pratik etki:** algoritma yüksek modül-gürültü oranı gerektirir; küçük oranlı mevcut şemalar şimdilik güvende kalabilir.
 
 ---
 
-## Resumen ejecutivo
+## Yönetici Özeti
 
-Questo artículo explora i trabajos di [**Yilei Chen ⧉**][00], quien ha sviluppato un `algoritmo quantistico in tiempo polinómico` susceptible di impactar significativamente la dificultad ın problema matemático **Learning With Errors (LWE)**, un sfida fundamental ın criptografía su retículos.
+Bu makale, kafes tabanlı kriptografide temel bir zorluk olan **Learning With Errors (LWE)** matematiksel probleminin zorluğunu önemli ölçüde etkileyebilecek bir `polynomial-time quantum algorithm` geliştiren [**Yilei Chen ⧉**][00]'in çalışmasını ele alıyor.
 
-I retículos sono subgrupos discretos ın espacio euclidiano di n dimensiones che desempeñan un papel crucial in i esquemas crittografici modernos. Il problema LWE consiste in encontrar un vector secreto a partire da un insieme di ecuaciones lineales aproximadas, e constituye una piedra angular di numerosos protocolos crittografici post-quantisticos.
+Kafesler, modern kriptografik şemalarda kritik bir rol oynayan, n boyutlu Öklid uzayının ayrık alt gruplarıdır. LWE problemi, bir dizi yaklaşık doğrusal denklem verildiğinde gizli bir vektörü bulmayı içerir ve birçok kuantum sonrası kriptografik protokolün temel taşıdır.
 
-## Il algoritmo quantistico in tiempo polinómico di Chen
+## Chen'in polinom zamanlı kuantum algoritması
 
-Il algoritmo di Chen offre una soluzione al `decisional shortest vector problem (GapSVP)` e al `shortest independent vector problem (SIVP)` per retículos di qualsiasi dimensión. Lo logra con una complejidad in tiempo polinómico, una mejora significativa respecto alle soluzioni anteriores.
+Chen'in algoritması, herhangi bir boyuttaki kafesler için karar verme temelli `shortest vector problem (GapSVP)` ve `shortest independent vector problem (SIVP)` problemlerine bir çözüm sunar. Bunu, önceki çözümlere göre önemli bir iyileşme olan polinom zaman karmaşıklığıyla başarır.
 
-Le innovaciones chiave di il suo trabajo includono:
+Çalışmasındaki temel yenilikler şunlardır:
 
-* **Funciones gaussianas con varianzas complejas:** Chen introduce il uso di funciones gaussianas con varianzas complejas in il diseño ın algoritmo quantistico. Questo approccio aprovecha le propiedades ın distribuciones gaussianas complejas per manipular daha çok eficientemente i estados quantistici, permitiendo una soluzione daha çok eficiente al problema LWE.
+* **Karmaşık Varyanslı Gauss Fonksiyonları:** Chen, kuantum algoritmasının tasarımında karmaşık varyanslı Gauss fonksiyonlarının kullanımını tanıtıyor. Bu yaklaşım, kuantum durumlarını daha etkili biçimde işlemek için karmaşık Gauss dağılımlarının özelliklerinden yararlanır ve LWE problemine daha verimli bir çözüm sağlar.
 
-* **Transformada di Fourier quantistica con ventana:** Il algoritmo applica una transformada di Fourier quantistica con ventana.
+* **Pencereli Kuantum Fourier Dönüşümü:** Algoritma, pencereli bir kuantum Fourier dönüşümü uygular.
 
-## Introducción ai problemas su retículos e a il suo importancia in criptografía
+## Kafes problemlerine giriş ve kriptografideki önemi
 
-I problemas su retículos implican il studio di estructuras matemáticas llamadas retículos, che sono subgrupos discretos ın espacio euclidiano di n dimensiones. Questi problemas hanno ganado una atención significativa in criptografía debido a il suo presunta resistencia ai ataques quantistici.
+Kafes problemleri, n boyutlu Öklid uzayının ayrık alt grupları olan ve kafes adı verilen matematiksel yapıların incelenmesini içerir. Bu problemler, kuantum saldırılarına karşı varsayılan dirençleri nedeniyle kriptografide önemli ölçüde ilgi görmüştür.
 
-Il problema di retículo daha çok notable è il [**problema Learning With Errors (LWE) ⧉**][01], introducido per Oded Regev. LWE è un problema computacional che consiste in encontrar un vector secreto a partire da un insieme di ecuaciones lineales aproximadas.
+En dikkat çekici kafes problemi, Oded Regev tarafından ortaya konan [**Learning With Errors (LWE) problemi ⧉**][01]'dir. LWE, bir dizi yaklaşık doğrusal denklem verildiğinde gizli bir vektörü bulmayı içeren hesaplamalı bir problemdir.
 
-Numerosos esquemas crittografici modernos, gibi il criptosistema di Regev ve intercambio di chiavi Frodo, basan il suo sicurezza in la dificultad di resolver il problema LWE.
+Regev'in kripto sistemi ve Frodo anahtar değişimi gibi birçok modern kriptografik şema, güvenliğini LWE problemini çözmenin zorluğuna dayandırır.
 
-## Algoritmos clásicos için problemas su retículos ve suoi límites
+## Kafes problemleri için klasik algoritmalar ve sınırları
 
-I algoritmos clásicos per resolver i problemas su retículos, gibi il algoritmo **Lenstra-Lenstra-Lovász (LLL)** ve suoi variantes, sono stati extensamente estudiados in criptografía. Tuttavia, questi algoritmos afrontan sfide significativi in términos di complejidad computacional, in particolare man mano che le dimensiones ın retículo aumentan.
+Kafes problemlerini çözmek için kullanılan **Lenstra-Lenstra-Lovász (LLL) algoritması** ve türevleri gibi klasik algoritmalar, kriptografi alanında kapsamlı biçimde incelenmiştir. Ancak bu algoritmalar, özellikle kafesin boyutları arttıkça hesaplama karmaşıklığı açısından önemli zorluklarla karşılaşır.
 
-I algoritmos clásicos bene conocidos per resolver il problema LWE dependen exponencialmente ın número di variables, lo che i hace impracticables için retículos di alta dimensión. Questa barrera di complejidad è un factor chiave ın sicurezza ın esquemas crittografici basati in LWE.
+LWE problemini çözmek için bilinen klasik algoritmalar, değişken sayısına üstel olarak bağlıdır; bu da onları yüksek boyutlu kafesler için pratik olmaktan çıkarır. Bu karmaşıklık engeli, LWE tabanlı kriptografik şemaların güvenliğinde önemli bir etken olmuştur.
 
-## Intentos anteriores di algoritmi quantistici per LWE
+## LWE için kuantum algoritması geliştirme yönünde önceki girişimler
 
-Antes ın trabajo di Chen, diversi ricercatori avevano explorado il potencial ın algoritmi quantistici per resolver il problema LWE.
+Chen'in çalışmasından önce, birçok araştırmacı LWE problemini çözmek için kuantum algoritmalarının potansiyelini araştırmıştı.
 
-Oded Regev ha sviluppato con successo una reducción quantistica di `GapSVP` a `LWE`. Tuttavia, conviene señalar che questa reducción richiede un oráculo quantistico per resolver GapSVP, cuya existencia rimane per establecer.
+Oded Regev, `GapSVP`'den `LWE`'ye başarılı bir kuantum indirgeme geliştirmiştir. Ancak bu indirgemenin, varlığı henüz kanıtlanmamış olan GapSVP'yi çözmeye yönelik bir kuantum oracle gerektirdiğini belirtmek gerekir.
 
-Kuperberg ha creato [**un algoritmo quantistico per resolver LWE con un factor di aproximación subexponencial ⧉**][02]. Tuttavia, questi approcci algorítmicos se apoyaban in hipótesis non verificadas o presentaban una velocità computacional daha çok lenta. Per contraste, il algoritmo di Chen offre una soluzione in tiempo polinómico senza necesidad di un oráculo quantistico.
+Kuperberg, [**alt üstel yaklaşım faktörüyle LWE'yi çözen bir kuantum algoritması ⧉**][02] oluşturmuştur. Ancak bu algoritmik yaklaşımlar ya doğrulanmamış varsayımlara dayanıyor ya da daha yavaş bir hesaplama hızı sergiliyordu. Buna karşılık Chen'in algoritması, bir kuantum oracle'a ihtiyaç duymadan polinom zamanlı bir çözüm sunar.
 
-## Il algoritmo quantistico in tiempo polinómico di Chen per LWE
+## Chen'in LWE için polinom zamanlı kuantum algoritması
 
-Il algoritmo quantistico di Yilei Chen per resolver il problema LWE in tiempo polinómico rappresenta un progresso significativo in il campo. Il algoritmo emplea dos tecniche nuove:
+Yilei Chen'in LWE problemini polinom zamanda çözen kuantum algoritması, bu alanda önemli bir ilerlemeyi temsil eder. Algoritma iki yeni teknik kullanır:
 
-1. **Funciones gaussianas con varianzas complejas**: Chen introduce il uso di funciones gaussianas con varianzas complejas in il diseño ın algoritmo quantistico. Questo approccio aprovecha le propiedades ın distribuciones gaussianas complejas per manipular daha çok eficientemente i estados quantistici, permitiendo una soluzione daha çok eficiente al problema LWE.
+1. **Karmaşık Varyanslı Gauss Fonksiyonları**: Chen, kuantum algoritmasının tasarımında karmaşık varyanslı Gauss fonksiyonlarının kullanımını tanıtıyor. Bu yaklaşım, kuantum durumlarını daha etkili biçimde işlemek için karmaşık Gauss dağılımlarının özelliklerinden yararlanır ve LWE problemine daha verimli bir çözüm sağlar.
 
-2. **Transformada di Fourier quantistica con ventana**: Il algoritmo applica una transformada di Fourier quantistica con ventana, che consente il análisis simultáneo ın problema in i dominios temporal e frecuencial. Questa tecnica consente al algoritmo tratar eficientemente la estructura di alta dimensión ın retículos e extraer la informazione pertinente per resolver LWE.
+2. **Pencereli Kuantum Fourier Dönüşümü**: Algoritma, problemin hem zaman hem de frekans alanlarında eşzamanlı olarak incelenmesine olanak tanıyan pencereli bir kuantum Fourier dönüşümü uygular. Bu teknik, algoritmanın kafeslerin yüksek boyutlu yapısını verimli biçimde işlemesini ve LWE'yi çözmek için ilgili bilgiyi çıkarmasını sağlar.
 
-Il algoritmo di Chen combina queste tecniche per resolver `LWE`, `GapSVP` e `SIVP` in tiempo polinómico per tutte le dimensiones di retículo. Esto è una mejora importante respecto ai algoritmos clásicos e quantistici anteriores.
+Chen'in algoritması, tüm kafes boyutları için `LWE`, `GapSVP` ve `SIVP` problemlerini polinom zamanda çözmek üzere bu teknikleri birleştirir. Bu, önceki klasik ve kuantum algoritmalarına göre önemli bir iyileşmedir.
 
-## Implicaciones, limitaciones e ejes di ricerca futuros
+## Sonuçlar, sınırlar ve gelecekteki araştırma yönleri
 
-Il algoritmo quantistico di Chen ha implicaciones per LWE, cuestionando la noción di che i ataques quantistici non possono romper LWE ve problemas similares su retículos. Questa hipótesis forma la base di numerosos esquemas crittografici emergentes. Tuttavia, comprender i límites ın algoritmo ve suo impacto potencial su i sistemi di cifrado existentes basati in LWE è esencial.
+Chen'in kuantum algoritması, kuantum saldırılarının LWE'yi ve benzeri kafes tabanlı problemleri kıramayacağı fikrine meydan okuyarak LWE açısından önemli sonuçlar doğurur. Bu varsayım, ortaya çıkan birçok kriptografik şemanın temelini oluşturur. Ancak algoritmanın sınırlarını ve mevcut LWE tabanlı şifreleme sistemleri üzerindeki olası etkisini anlamak önemlidir.
 
-Una cuestión chiave con il algoritmo di Chen è che funciona in modo óptima quando il tamaño ın problema supera significativamente il margen di error permitido. In i esquemas crittografici pratici basati in LWE, il ratio módulo-ruido se mantiene típicamente sotto per razones di sicurezza. Inversamente, il algoritmo di Chen richiede un ratio daha çok alto per alcanzar il suo tiempo di ejecución polinómico.
+Chen'in algoritmasıyla ilgili temel bir mesele, problem boyutunun izin verilen hata payını önemli ölçüde aştığında en iyi biçimde çalışmasıdır. Pratik LWE tabanlı kriptografik şemalarda modül-gürültü oranı, güvenlik amacıyla genellikle düşük tutulur. Buna karşılık Chen'in algoritması, polinom çalışma süresine ulaşmak için daha büyük bir oran gerektirir.
 
-Questo límite sugiere che i esquemas di cifrado basati in LWE existentes con ratios módulo-ruido daha çok pequeños potrebbero permanecer seguros rispetto al algoritmo di Chen così gibi se presenta actualmente. Per consiguiente, se bene il algoritmo marca un progresso teórico significativo, non rappresenta una amenaza inmediata için sicurezza di tutti i sistemi crittografici basati in LWE.
+Bu sınır, daha küçük modül-gürültü oranlarına sahip mevcut LWE tabanlı şifreleme şemalarının, algoritmanın şu anki haliyle Chen'in algoritmasına karşı güvende kalabileceğini gösterir. Dolayısıyla algoritma önemli bir teorik ilerlemeyi işaret etse de, tüm LWE tabanlı kriptografik sistemlerin güvenliği için acil bir tehdit oluşturmaz.
 
-Il suo trabajo subraya la necesidad di proseguir la ricerca su il desarrollo di primitivas crittografiche resistentes a lo quantistico.
+Çalışması, kuantuma dayanıklı kriptografik ilkellerin geliştirilmesine yönelik daha fazla araştırma yapılması gereğini vurgular.
 
-## Aplicaciones potenciales e incentivos
+## Olası uygulamalar ve teşvikler
 
-Il desarrollo di algoritmi quantistici eficientes için problemas su retículos ha implicaciones di gran alcance in tutti i settori che se apoyan in la comunicación digitale segura ve almacenamiento di dati. Il algoritmo di Chen pone di manifiesto la necesidad universal di cifrado resistente a lo quantistico.
+Kafes problemleri için verimli kuantum algoritmalarının geliştirilmesi, güvenli dijital iletişime ve veri depolamaya dayanan tüm sektörlerde geniş kapsamlı sonuçlar doğurur. Chen'in algoritması, kuantuma dayanıklı şifrelemeye duyulan evrensel ihtiyacı öne çıkarır.
 
-Esto include industrias come:
+Bu, aşağıdaki gibi sektörleri içerir:
 
-* **Ciberseguridad:** métodos di cifrado robustos e resistentes a lo quantistico sono cruciales per proteger la informazione sensible in la era ın calcolo quantistico.
+* **Siber güvenlik:** Sağlam, kuantuma dayanıklı şifreleme yöntemleri, kuantum bilişim çağında hassas bilgilerin korunması için kritik öneme sahiptir.
 
-* **Sector público e defensa:** i governi possono aprovechar questi progressi per reforzar la sicurezza ın infraestructuras críticas ve comunicaciones clasificadas, mitigando le amenazas potenciales planteadas per le capacità quantistiche adversarias.
+* **Kamu ve Savunma:** Hükümetler, düşman kuantum bilişim yeteneklerinin oluşturduğu olası tehditleri azaltarak kritik altyapının ve gizli iletişimin güvenliğini artırmak için bu gelişmelerden yararlanabilir.
 
-* **Servicios finanziari:** il settore finanziario depende fuertemente di canales di comunicación seguros per le transazioni ve protección ın dati. Primitivas crittografiche resistentes a lo quantistico basate in i problemas su retículos potrebbero contribuir a garantizar la sicurezza a lungo termine ın sistemi finanziari.
+* **Finansal Hizmetler:** Finans sektörü, işlemler ve veri koruması için güvenli iletişim kanallarına büyük ölçüde bağlıdır. Kafes problemlerine dayanan kuantuma dayanıklı kriptografik ilkeller, finansal sistemlerin uzun vadeli güvenliğini sağlamaya yardımcı olabilir.
 
-* **Sanidad:** mentre i dati sanitarios se tornano ogni volta daha çok digitalizados, garantizar il suo confidencialidad e integridad è primordial. Métodos di cifrado quantistico-seguros derivados ın trabajos di Chen potrebbero ayudar a proteger la informazione sensible ın pacientes contra i futuros ataques quantistici.
+* **Sağlık:** Sağlık verileri giderek dijitalleştikçe, gizliliğinin ve bütünlüğünün sağlanması büyük önem taşır. Chen'in çalışmasından türetilen kuantum güvenli şifreleme yöntemleri, hassas hasta bilgilerini gelecekteki kuantum saldırılarına karşı korumaya yardımcı olabilir.
 
-* **Cloud computing:** con la creciente adopción ın servizi cloud, la sicurezza ın dati almacenados e tratados in il cloud è una preocupación principale. Esquemas di cifrado resistentes a lo quantistico basati in i problemas su retículos potrebbero fornire una capa adicional di protección per le applicazioni ve almacenamiento di dati in modo cloud.
+* **Bulut Bilişim:** Bulut hizmetlerinin artan benimsenmesiyle birlikte, bulutta depolanan ve işlenen verilerin güvenliği önemli bir kaygıdır. Kafes problemlerine dayanan kuantuma dayanıklı şifreleme şemaları, bulut tabanlı uygulamalar ve veri depolama için ek bir koruma katmanı sağlayabilir.
 
 ## Sonuç
 
-Il algoritmo quantistico in tiempo polinómico di Yilei Chen per resolver il problema LWE rappresenta un hito significativo in il campo ın calcolo quantistico ve criptografía. Utilizando nuovi métodos gibi le funciones gaussianas ve transformadas di Fourier quantistiche con ventana, Chen ha mostrado gibi i algoritmi quantistici possono resolver eficientemente problemas complejos su retículos. Tuttavia, è esencial señalar che questo trabajo constituye actualmente un progresso teórico, e che se necessita ricerca adicional per acercarlo a una implementación pratica.
+Yilei Chen'in LWE problemini çözen polinom zamanlı kuantum algoritması, kuantum bilişim ve kriptografi alanında önemli bir dönüm noktasını temsil eder. Gauss fonksiyonları ve pencereli kuantum Fourier dönüşümleri gibi yeni yöntemler kullanan Chen, kuantum algoritmalarının karmaşık kafes problemlerini nasıl verimli biçimde çözebileceğini gösterdi. Ancak bu çalışmanın şu anda teorik bir ilerleme olduğunu ve pratik uygulamaya yaklaştırmak için daha fazla araştırmaya ihtiyaç duyulduğunu belirtmek önemlidir.
 
-Il desarrollo ın criptografía resistente a lo quantistico non è solo un sfida tecnico, sino anche un imperativo estratégico per le aziende ve governi. Invertir in I+D in questo campo potrebbe producir beneficios significativi a lungo termine in términos di sicurezza e confidencialidad ın dati.
+Kuantuma dayanıklı kriptografinin geliştirilmesi yalnızca teknik bir zorluk değil, aynı zamanda hem işletmeler hem de hükümetler için stratejik bir zorunluluktur. Bu alandaki araştırma ve geliştirme çalışmalarına yatırım yapmak, veri güvenliği ve gizliliği açısından uzun vadede önemli faydalar sağlayabilir.
 
-## Riferimenti
+## Kaynaklar
 
-Chen, E. (2024). [**Quantum Algorithms for Lattice Problems: A New Era in Cryptography ⧉**][00]. *Journal of Quantum Computing and Cryptography*, 7(4), 112-135.
+Chen, Y. (2024). [**Quantum Algorithms for Lattice Problems: A New Era in Cryptography ⧉**][00]. *Journal of Quantum Computing and Cryptography*, 7(4), 112-135.
 
 Regev, O. (2005). [**On lattices, learning with errors, random linear codes, and cryptography. ⧉**][01] In *Proceedings of the 37th Annual ACM Symposium on Theory of Computing* (pp. 84-93).
 

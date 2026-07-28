@@ -1,178 +1,183 @@
 ---
-title: "El cifrado completamente homomórfico (FHE) en la era bancaria cuántica"
-subtitle: "Reforzar la seguridad de los datos, mejorar la confidencialidad de la IA y construir la confianza del cliente en la era de la computación cuántica con el FHE"
-description: "Cómo el cifrado completamente homomórfico revoluciona la seguridad de los datos en la banca y las finanzas, garantizando la confidencialidad frente a las amenazas de la computación cuántica."
+title: "การเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์ (FHE) ในยุคควอนตัมของธนาคาร"
+subtitle: "เสริมความปลอดภัยของข้อมูล ยกระดับความเป็นส่วนตัวของ AI และสร้างความไว้วางใจของลูกค้าในยุคการประมวลผลเชิงควอนตัมด้วย FHE"
+description: "ศึกษาวิธีที่การเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์ยกระดับความปลอดภัยของข้อมูลในภาคธนาคารและอุตสาหกรรมการเงิน พร้อมรับประกันความเป็นส่วนตัวจากภัยคุกคามของการประมวลผลเชิงควอนตัม"
 date: "March 25, 2024"
 language: "th-TH"
 locale: "th_TH"
 banner: "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp"
-banner_alt: "Banner del cifrado completamente homomórfico"
-keywords: "cifrado completamente homomórfico, seguridad bancaria, computación cuántica, cifrado de datos financieros, FHE, RGPD, CCPA, cumplimiento, computación cloud, IA y confidencialidad, LLM cifrado, Zama, Gentry"
+banner_alt: "แบนเนอร์สำหรับการเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์"
+keywords: "การเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์, ความปลอดภัยของธนาคาร, การประมวลผลเชิงควอนตัม, การเข้ารหัสข้อมูลทางการเงิน, กรณีศึกษา FHE, กรอบกำกับดูแล FHE, ภาระการคำนวณ FHE, งานวิจัย FHE, ฮาร์ดแวร์ FHE, กฎหมายความเป็นส่วนตัวของข้อมูล"
 ---
 
 
-> **TL;DR.** บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย
+> **TL;DR.** การเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์ (FHE) ช่วยให้ประมวลผลบนข้อมูลที่เข้ารหัสได้โดยตรง จึงรักษาความเป็นส่วนตัวของข้อมูลในภาคธนาคารและอุตสาหกรรมการเงินจากภัยคุกคามทั้งแบบดั้งเดิมและเชิงควอนตัม
 
 **ประเด็นสำคัญ**
 
-El **cifrado completamente homomórfico (FHE — Fully Homomorphic Encryption)** promete redefinir la seguridad de los datos en la banca y las finanzas. Permitiendo cálculos sobre datos cifrados, el FHE protege la confidencialidad frente a las amenazas convencionales y cuánticas.
+- **ทำความเข้าใจการเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์** การเข้ารหัสคือวิธีการแปลงข้อมูลที่อ่านได้ (plaintext) ให้อยู่ในรูปแบบที่อ่านไม่ได้ (ciphertext) โดยใช้อัลกอริทึมและกุญแจเข้ารหัส
+- **ความก้าวหน้าของการเข้ารหัสแบบโฮโมมอร์ฟิก** การเข้ารหัสแบบโฮโมมอร์ฟิก (HE) แก้ข้อจำกัดของการเข้ารหัสแบบเดิม
+- **ผลกระทบของ FHE ต่อภาคธนาคารและการเงิน** การนำ FHE มาใช้ในภาคการเงินช่วยยกระดับความเป็นส่วนตัวของข้อมูลอย่างมีนัยสำคัญ
+- **การเตรียมพร้อมสำหรับอนาคตเชิงควอนตัม** การมาถึงของการประมวลผลเชิงควอนตัมที่ใกล้เข้ามาเป็นความท้าทายต่อวิธีการเข้ารหัสแบบดั้งเดิม
 
-## Introducción
+**การเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์ (FHE)** จะกำหนดนิยามใหม่ให้กับความปลอดภัยของข้อมูลในภาคธนาคารและอุตสาหกรรมการเงิน ด้วยความสามารถในการประมวลผลบนข้อมูลที่เข้ารหัส FHE จึงปกป้องความเป็นส่วนตัวจากภัยคุกคามทั้งแบบดั้งเดิมและการประมวลผลเชิงควอนตัม
 
-La implementación del FHE en el sector financiero no es solo teórica; se está convirtiendo en una realidad práctica, transformando los estándares de seguridad y confidencialidad de los datos. Este artículo explora los usos prácticos, las consideraciones normativas, los posibles inconvenientes y los avances de investigación del cifrado completamente homomórfico en finanzas y en las aplicaciones de inteligencia artificial (IA).
+## บทนำ
 
-## Comprender el cifrado completamente homomórfico
+การนำ FHE มาใช้ในภาคการเงินไม่ได้เป็นเพียงทฤษฎี แต่กำลังกลายเป็นความจริงในทางปฏิบัติ และเปลี่ยนแปลงมาตรฐานด้านความปลอดภัยและความเป็นส่วนตัวของข้อมูล บทความนี้กล่าวถึงการใช้งานจริง ประเด็นด้านกฎระเบียบ ข้อจำกัดที่อาจเกิดขึ้น และความก้าวหน้าของงานวิจัยด้านการเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์ (FHE) ในภาคการเงินและในการประยุกต์ใช้ปัญญาประดิษฐ์ (AI)
 
-### Las bases del cifrado
+## ทำความเข้าใจการเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์
 
-El cifrado es un método de transformación de datos legibles (texto claro) en un formato ilegible (criptograma) por medio de un algoritmo y una clave de cifrado. El objetivo principal es asegurar que solo las partes autorizadas puedan acceder a los datos originales descifrando el criptograma con la ayuda de una clave de descifrado.
+### พื้นฐานของการเข้ารหัส
 
-### Métodos de cifrado tradicionales
+การเข้ารหัสคือวิธีการแปลงข้อมูลที่อ่านได้ (plaintext) ให้อยู่ในรูปแบบที่อ่านไม่ได้ (ciphertext) โดยใช้อัลกอริทึมและกุญแจเข้ารหัส เป้าหมายหลักคือการทำให้เฉพาะฝ่ายที่ได้รับอนุญาตเท่านั้นที่สามารถเข้าถึงข้อมูลต้นฉบับได้ โดยการถอดรหัส ciphertext ด้วยกุญแจถอดรหัส
 
-Los métodos de cifrado tradicionales pueden categorizarse ampliamente en dos tipos: simétrico y asimétrico. El cifrado simétrico utiliza una sola clave a la vez para el cifrado y el descifrado. Esta eficiencia tiene un coste en seguridad, en particular cuando la distribución de las claves plantea problemas. El cifrado asimétrico, también llamado criptografía de clave pública, utiliza dos claves: una para el cifrado y otra para el descifrado. Este método es más seguro pero más lento que el cifrado simétrico.
+### วิธีการเข้ารหัสแบบดั้งเดิม
 
-### Los límites del cifrado convencional para el cálculo
+วิธีการเข้ารหัสแบบดั้งเดิมแบ่งออกได้เป็นสองประเภทกว้าง ๆ คือ การเข้ารหัสแบบสมมาตรและแบบอสมมาตร การเข้ารหัสแบบสมมาตรใช้กุญแจเพียงดอกเดียวทั้งสำหรับการเข้ารหัสและการถอดรหัส ประสิทธิภาพนี้แลกมาด้วยความปลอดภัย โดยเฉพาะเมื่อการแจกจ่ายกุญแจเป็นความท้าทาย การเข้ารหัสแบบอสมมาตร หรือที่เรียกว่าวิทยาการเข้ารหัสแบบกุญแจสาธารณะ ใช้กุญแจสองดอก ดอกหนึ่งสำหรับการเข้ารหัสและอีกดอกสำหรับการถอดรหัส วิธีนี้ปลอดภัยกว่าแต่ช้ากว่าการเข้ารหัสแบบสมมาตร
 
-Aunque los métodos tradicionales aseguran eficazmente los datos en reposo o en tránsito, fracasan cuando se trata de efectuar cálculos sobre datos cifrados. Típicamente, para tratar o analizar datos cifrados, hay que descifrarlos primero, efectuar las operaciones necesarias y luego volver a cifrarlos. Esta etapa de descifrado plantea un riesgo significativo para la confidencialidad, en particular en entornos no confiables o de cloud computing.
+### ข้อจำกัดของการเข้ารหัสแบบเดิมสำหรับการคำนวณ
+
+แม้วิธีการเข้ารหัสแบบดั้งเดิมจะรักษาความปลอดภัยของข้อมูลขณะจัดเก็บหรือขณะส่งได้อย่างมีประสิทธิภาพ แต่กลับทำงานได้ไม่ดีเมื่อต้องประมวลผลบนข้อมูลที่เข้ารหัส โดยทั่วไปแล้ว การจะประมวลผลหรือวิเคราะห์ข้อมูลที่เข้ารหัส จำเป็นต้องถอดรหัสก่อน ทำการดำเนินการที่จำเป็น แล้วจึงเข้ารหัสใหม่ ขั้นตอนการถอดรหัสนี้ก่อให้เกิดความเสี่ยงอย่างมีนัยสำคัญต่อความเป็นส่วนตัวของข้อมูล โดยเฉพาะในสภาพแวดล้อมที่ไม่น่าเชื่อถือหรือการประมวลผลบนคลาวด์
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## El avance del cifrado homomórfico
+## ความก้าวหน้าของการเข้ารหัสแบบโฮโมมอร์ฟิก
 
-El **cifrado homomórfico (HE)** resuelve los límites del cifrado convencional. Permite efectuar ciertos cálculos directamente sobre los datos cifrados (criptogramas). El resultado descifrado es idéntico a los datos originales (texto claro) después de que se hayan efectuado las mismas operaciones. El HE se declina en tres grandes variedades: Partially Homomorphic Encryption (PHE), Somewhat Homomorphic Encryption (SHE) y Fully Homomorphic Encryption (FHE).
+**การเข้ารหัสแบบโฮโมมอร์ฟิก** (HE) แก้ข้อจำกัดของการเข้ารหัสแบบเดิม โดยอนุญาตให้ทำการคำนวณบางอย่างได้โดยตรงบนข้อมูลที่เข้ารหัส (ciphertext) ผลลัพธ์ที่ถอดรหัสแล้วจะเหมือนกับข้อมูลต้นฉบับ (plaintext) หลังจากทำการดำเนินการเดียวกัน HE มีสามรูปแบบหลัก ได้แก่ Partially Homomorphic Encryption (PHE), Somewhat Homomorphic Encryption (SHE) และ Fully Homomorphic Encryption (FHE)
 
-- **Partially Homomorphic Encryption (PHE):** soporta operaciones ilimitadas de un solo tipo (adición o multiplicación) sobre los criptogramas.
-- **Somewhat Homomorphic Encryption (SHE):** soporta un número limitado de operaciones, combinando adición y multiplicación, pero solo hasta una cierta profundidad.
-- **Fully Homomorphic Encryption (FHE):** la forma más avanzada, autorizando operaciones ilimitadas de adición y multiplicación sobre los criptogramas.
+- **Partially Homomorphic Encryption (PHE):** รองรับการดำเนินการประเภทเดียว (เช่น การบวกหรือการคูณ) บน ciphertext ได้ไม่จำกัดจำนวน
+- **Somewhat Homomorphic Encryption (SHE):** รองรับการดำเนินการจำนวนจำกัด โดยผสมทั้งการบวกและการคูณ แต่ทำได้เพียงถึงระดับความลึกหนึ่งเท่านั้น
+- **Fully Homomorphic Encryption (FHE):** รูปแบบที่ก้าวหน้าที่สุด อนุญาตให้ดำเนินการทั้งการบวกและการคูณบน ciphertext ได้ไม่จำกัดจำนวน
 
-### La ingeniosidad técnica del FHE
+### ความชาญฉลาดทางเทคนิคของ FHE
 
-El FHE reposa sobre estructuras matemáticas complejas, como la criptografía sobre retículos. La criptografía sobre retículos es un tipo de cifrado que utiliza estructuras matemáticas llamadas retículos.
+FHE ตั้งอยู่บนโครงสร้างทางคณิตศาสตร์ที่ซับซ้อน เช่น วิทยาการเข้ารหัสแบบแลตทิซ วิทยาการเข้ารหัสแบบแลตทิซเป็นการเข้ารหัสประเภทหนึ่งที่ใช้โครงสร้างทางคณิตศาสตร์ที่เรียกว่าแลตทิซ
 
-Un retículo es una disposición regular de puntos en el espacio, y la criptografía sobre retículos se apoya en la dificultad de resolver ciertos problemas matemáticos vinculados a estas estructuras. Esto hace que la criptografía sobre retículos sea segura y resistente a los ataques, incluidos los procedentes de los ordenadores cuánticos.
+แลตทิซคือการจัดเรียงจุดอย่างเป็นระเบียบในปริภูมิ และวิทยาการเข้ารหัสแบบแลตทิซอาศัยความยากในการแก้ปัญหาทางคณิตศาสตร์บางอย่างที่เกี่ยวข้องกับโครงสร้างเหล่านี้ สิ่งนี้ทำให้วิทยาการเข้ารหัสแบบแลตทิซมีความปลอดภัยและทนทานต่อการโจมตี รวมถึงการโจมตีจากคอมพิวเตอร์ควอนตัม
 
-En 2009, Craig Gentry desarrolló un método, descrito en su artículo [**A Fully Homomorphic Encryption Scheme ⧉**][00], para crear un sistema capaz de efectuar una evaluación homomórfica de su propio circuito de descifrado. Este diseño autorreferencial permite a los esquemas FHE efectuar cálculos arbitrarios sobre datos cifrados.
+ในปี 2009 Craig Gentry ได้พัฒนาวิธีการซึ่งอธิบายไว้ในงานวิจัยของเขา [**A Fully Homomorphic Encryption Scheme ⧉**][00] สำหรับการสร้างระบบที่สามารถประเมินวงจรถอดรหัสของตัวเองแบบโฮโมมอร์ฟิกได้ การออกแบบที่อ้างอิงถึงตัวเองนี้ทำให้ระบบ FHE สามารถทำการคำนวณใด ๆ บนข้อมูลที่เข้ารหัสได้
 
-### El proceso del algoritmo FHE
+### กระบวนการทำงานของอัลกอริทึม FHE
 
 ![FHE Operational Flow][fhe].class=\"m-10 w-100\"
 
-El diagrama anterior ilustra el flujo operativo de un algoritmo FHE.
+แผนภาพด้านบนแสดงกระบวนการทำงานของอัลกอริทึมการเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์ (FHE)
 
-- El proceso de cifrado comienza con los datos en texto claro, que se cifran con la ayuda de una clave de cifrado para generar un criptograma.
+- กระบวนการเข้ารหัสเริ่มต้นด้วยข้อมูล plaintext ซึ่งถูกเข้ารหัสด้วยกุญแจเข้ารหัสเพื่อสร้าง ciphertext
 
-- Estos datos cifrados pueden entonces someterse a diversos cálculos directamente sobre el criptograma mediante un proceso conocido como bootstrapping.
+- ข้อมูลที่เข้ารหัสนี้สามารถผ่านการคำนวณต่าง ๆ ได้โดยตรงบน ciphertext ผ่านกระบวนการที่เรียกว่า bootstrapping
 
-- Esta capacidad única del FHE permite a los datos permanecer cifrados durante todo el proceso. Una vez efectuadas las operaciones necesarias, el proceso de descifrado puede reconvertir el criptograma modificado en texto claro gracias al esquema FHE.
+- ความสามารถเฉพาะตัวของ FHE นี้ทำให้ข้อมูลยังคงเข้ารหัสอยู่ตลอดกระบวนการ เมื่อดำเนินการที่จำเป็นเสร็จสิ้นแล้ว กระบวนการถอดรหัสสามารถแปลง ciphertext ที่ปรับเปลี่ยนแล้วกลับเป็น plaintext ได้ด้วยระบบ FHE
 
-La ventaja principal del FHE reside en su capacidad para efectuar cálculos sobre el criptograma sin requerir descifrado, garantizando así el mantenimiento de la confidencialidad y la seguridad de los datos durante todo el cálculo.
+ข้อได้เปรียบหลักของ FHE อยู่ที่ความสามารถในการคำนวณบน ciphertext โดยไม่ต้องถอดรหัส จึงรักษาความเป็นส่วนตัวและความปลอดภัยของข้อมูลไว้ได้ตลอดกระบวนการคำนวณ
 
-### La resistencia cuántica del FHE
+### ความทนทานต่อควอนตัมของ FHE
 
-Los métodos de cifrado tradicionales son a menudo vulnerables a los algoritmos cuánticos. Estos algoritmos pueden resolver rápidamente problemas como la factorización de enteros y los logaritmos discretos, que constituyen los fundamentos de estos métodos. Por contraste, el FHE emplea problemas sobre retículos que se cree difíciles de resolver por ordenadores cuánticos. Esta resistencia cuántica hace del FHE un método de cifrado prometedor para la era postcuántica.
+วิธีการเข้ารหัสแบบดั้งเดิมมักเปราะบางต่ออัลกอริทึมเชิงควอนตัม อัลกอริทึมเหล่านี้สามารถแก้ปัญหาอย่างการแยกตัวประกอบจำนวนเต็มและลอการิทึมไม่ต่อเนื่องได้อย่างรวดเร็ว ซึ่งเป็นรากฐานของวิธีการเข้ารหัสเหล่านี้ ในทางตรงกันข้าม การเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์ (FHE) ใช้ปัญหาแบบแลตทิซที่เชื่อว่ายากสำหรับคอมพิวเตอร์ควอนตัมในการแก้ ความทนทานต่อควอนตัมนี้ทำให้ FHE เป็นวิธีการเข้ารหัสที่มีศักยภาพสำหรับยุคหลังควอนตัม
 
-El FHE sobre retículos es resistente a los ataques cuánticos porque los problemas matemáticos subyacentes, como el Shortest Vector Problem (SVP) y el Closest Vector Problem (CVP), se consideran difíciles de resolver incluso para los ordenadores cuánticos. Si bien algoritmos cuánticos como el de Shor pueden romper los métodos de cifrado tradicionales que reposan en la factorización de grandes números o los logaritmos discretos, no se sabe que ofrezcan ventajas significativas en la resolución de los problemas sobre retículos. Esta característica hace del FHE sobre retículos un candidato prometedor para la criptografía postcuántica.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## El impacto del FHE en la banca y las finanzas
-
-### Confidencialidad y seguridad de los datos reforzadas
-
-La aplicación del FHE en el sector financiero promete un refuerzo significativo de la confidencialidad. Los bancos pueden ahora emprender evaluaciones de riesgos, la detección de fraude y análisis de datos completos al tiempo que garantizan la confidencialidad absoluta de la información de los clientes. Este avance tecnológico mitiga el riesgo de brechas de datos, reforzando la integridad de las plataformas bancarias digitales y las transacciones financieras.
-
-### Cloud computing y externalización
-
-Un ámbito de aplicación principal del cifrado homomórfico es el tratamiento seguro de los datos en la nube. Los bancos pueden aprovechar los servicios de cloud computing para tratar datos cifrados sin comprometer su confidencialidad. Esto permite a las instituciones financieras aprovechar la escalabilidad y la rentabilidad del cloud al tiempo que mantienen la confidencialidad de información financiera sensible.
-
-El movimiento hacia el cloud computing y la externalización de tareas computacionales por parte de los bancos subraya la pertinencia del FHE. Con un cloud computing seguro, las instituciones financieras pueden acceder a recursos externos al tiempo que protegen los datos cifrados sensibles mediante el FHE. El FHE permite a los bancos aprovechar los servicios cloud de manera segura al tiempo que se garantiza que los datos cifrados sensibles permanezcan protegidos en todo momento.
+FHE แบบแลตทิซทนทานต่อการโจมตีเชิงควอนตัมเพราะปัญหาทางคณิตศาสตร์พื้นฐาน เช่น Shortest Vector Problem (SVP) และ Closest Vector Problem (CVP) ถือว่ายากที่จะแก้แม้แต่สำหรับคอมพิวเตอร์ควอนตัม แม้อัลกอริทึมเชิงควอนตัมอย่างอัลกอริทึมของ Shor จะสามารถทำลายวิธีการเข้ารหัสแบบดั้งเดิมที่อาศัยการแยกตัวประกอบจำนวนขนาดใหญ่หรือการคำนวณลอการิทึมไม่ต่อเนื่องได้ แต่ยังไม่มีข้อมูลว่าอัลกอริทึมเหล่านี้ให้ความได้เปรียบอย่างมีนัยสำคัญในการแก้ปัญหาแบบแลตทิซ คุณลักษณะนี้ทำให้ FHE แบบแลตทิซเป็นตัวเลือกที่มีศักยภาพสำหรับวิทยาการเข้ารหัสหลังควอนตัม
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Prepararse para el futuro cuántico
+## ผลกระทบของ FHE ต่อภาคธนาคารและการเงิน
 
-El advenimiento inminente de la computación cuántica anuncia una potencial crisis para las metodologías de cifrado tradicionales. El FHE sobre retículos es intrínsecamente resistente a los ataques cuánticos, ofreciendo una defensa robusta contra la amenaza que la computación cuántica plantea a la seguridad de los datos.
+### ความเป็นส่วนตัวและความปลอดภัยของข้อมูลที่เพิ่มขึ้น
 
-### Cifrado resistente a lo cuántico
+การนำ FHE มาใช้ในภาคการเงินช่วยยกระดับความเป็นส่วนตัวของข้อมูลอย่างมีนัยสำคัญ ธนาคารสามารถทำการประเมินความเสี่ยง การตรวจจับการฉ้อโกง และการวิเคราะห์ข้อมูลอย่างครอบคลุมได้ ในขณะที่ยังคงรักษาความลับของข้อมูลลูกค้าไว้อย่างสมบูรณ์ ความก้าวหน้าทางเทคโนโลยีนี้ลดความเสี่ยงของการรั่วไหลของข้อมูล และเสริมความมั่นคงให้กับแพลตฟอร์มธนาคารดิจิทัลและธุรกรรมทางการเงิน
 
-El FHE proporciona una capa formidable de protección contra las amenazas de la computación cuántica. Empleando técnicas criptográficas sobre retículos, el FHE garantiza que los datos financieros y los activos permanezcan seguros incluso frente a adversarios cuánticos.
+### การประมวลผลบนคลาวด์และการจ้างงานภายนอก
 
-La resistencia cuántica del FHE se debe a problemas matemáticos subyacentes complejos como el Shortest Vector Problem (SVP) y el Closest Vector Problem (CVP). Se supone que estos problemas son intratables incluso para los ordenadores cuánticos, lo que hace del FHE sobre retículos un candidato ideal para la criptografía postcuántica.
+หนึ่งในพื้นที่การใช้งานหลักของการเข้ารหัสแบบโฮโมมอร์ฟิกคือการประมวลผลข้อมูลอย่างปลอดภัยบนคลาวด์ ธนาคารสามารถใช้บริการประมวลผลบนคลาวด์เพื่อประมวลผลข้อมูลที่เข้ารหัสได้โดยไม่กระทบต่อความเป็นส่วนตัวของข้อมูล สิ่งนี้ทำให้สถาบันการเงินสามารถใช้ประโยชน์จากความสามารถในการขยายขนาดและความคุ้มค่าของการประมวลผลบนคลาวด์ได้ ในขณะที่ยังคงรักษาความลับของข้อมูลทางการเงินที่ละเอียดอ่อน
 
-Utilizar un cifrado resistente a lo cuántico, como el FHE, es crucial no solo para proteger los activos financieros sino también para mantener la confianza de los clientes en la era digital. A medida que la computación cuántica progresa, las instituciones financieras que prioricen un cifrado robusto estarán mejor posicionadas para navegar los desafíos y oportunidades futuros.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## El futuro del FHE en la banca y las finanzas
-
-La trayectoria del FHE dentro del sector financiero es prometedora, pero todavía afronta desafíos. El sector bancario puede explotar el pleno potencial del FHE mejorando la tecnología, integrándola en las operaciones financieras cotidianas y cooperando con los reguladores.
-
-El FHE puede utilizarse en diversas aplicaciones bancarias y financieras, como:
-
-- **Análisis seguro de datos financieros**: el FHE permite a los bancos analizar datos financieros cifrados como transacciones, puntuaciones de crédito y carteras de inversión, sin comprometer la confidencialidad del cliente, garantizando un tratamiento seguro de la información sensible.
-
-- **Aprendizaje automático preservando la confidencialidad**: el FHE permite a los bancos entrenar y desplegar modelos de aprendizaje automático sobre datos cifrados, permitiéndoles aprovechar la IA para la detección de fraude, la evaluación de riesgos y la segmentación de clientes a la vez que mantienen la confidencialidad.
-
-- **Cálculo multipartícipe seguro**: el FHE permite una colaboración segura entre varias instituciones financieras, permitiéndoles efectuar cálculos conjuntos sobre datos cifrados sin compartir información sensible, facilitando las transacciones interbancarias seguras y el cumplimiento.
-
-- **Seguridad de las API**: el FHE puede asegurar las API cifrando los datos sensibles antes de la transmisión, garantizando que la información de los clientes permanezca confidencial durante los intercambios entre bancos y servicios terceros.
-
-- **Cloud computing seguro**: el FHE permite a los bancos externalizar de manera segura los cálculos y el almacenamiento de datos hacia plataformas cloud sin comprometer la confidencialidad, ya que los datos permanecen cifrados durante todo el proceso, ampliando el uso de servicios cloud rentables y escalables.
-
-- **Cumplimiento normativo preservando la confidencialidad**: el FHE permite a los bancos compartir datos cifrados con las autoridades reguladoras, permitiendo el cumplimiento de las exigencias de reporting sin exponer información sensible, simplificando el proceso de cumplimiento al tiempo que se mantiene la confidencialidad.
-
-Estas aplicaciones revelan el poder transformador del FHE en la banca y las finanzas y subrayan su potencial para revolucionar los estándares de seguridad y confidencialidad.
+การเปลี่ยนไปสู่การประมวลผลบนคลาวด์และการจ้างงานคำนวณภายนอกของธนาคารตอกย้ำความสำคัญของ FHE ด้วยการประมวลผลบนคลาวด์ที่ปลอดภัย สถาบันการเงินสามารถเข้าถึงทรัพยากรภายนอกได้ในขณะที่ปกป้องข้อมูลที่เข้ารหัสซึ่งละเอียดอ่อนด้วยการเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์ (FHE) FHE ทำให้ธนาคารสามารถใช้บริการประมวลผลบนคลาวด์ได้อย่างปลอดภัย พร้อมทั้งรับประกันว่าข้อมูลที่เข้ารหัสซึ่งละเอียดอ่อนจะได้รับการปกป้องตลอดเวลา
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Superar los desafíos de adopción del FHE
+## การเตรียมพร้อมสำหรับอนาคตเชิงควอนตัม
 
-### Desafíos de rendimiento y optimización
+การมาถึงของการประมวลผลเชิงควอนตัมที่ใกล้เข้ามาเป็นสัญญาณของความท้าทายที่อาจเกิดขึ้นต่อวิธีการเข้ารหัสแบบดั้งเดิม FHE แบบแลตทิซทนทานต่อการโจมตีเชิงควอนตัมโดยธรรมชาติ จึงเป็นแนวป้องกันที่แข็งแกร่งต่อภัยคุกคามที่การประมวลผลเชิงควอนตัมมีต่อความปลอดภัยของข้อมูล
 
-Abordar el sobrecoste computacional intrínseco al FHE sigue siendo un desafío pivote. Los recientes progresos en optimización de algoritmos y en desarrollo de aceleradores de hardware especializados reducen la brecha de rendimiento entre el cálculo tradicional y el FHE.
+### การเข้ารหัสที่ทนทานต่อควอนตัม
 
-### Estandarización y colaboración
+FHE เป็นชั้นการป้องกันที่แข็งแกร่งต่อภัยคุกคามจากการประมวลผลเชิงควอนตัม ด้วยการใช้เทคนิควิทยาการเข้ารหัสแบบแลตทิซ FHE รับประกันว่าข้อมูลและสินทรัพย์ทางการเงินจะยังคงปลอดภัยแม้เผชิญกับผู้โจมตีเชิงควอนตัม
 
-La vía hacia una adopción generalizada del FHE depende de la estandarización de los protocolos y de una colaboración reforzada entre las partes interesadas del ecosistema financiero. Un enfoque unificado para abrazar el FHE puede acelerar significativamente su integración con los servicios financieros generalistas.
+ความทนทานต่อควอนตัมของ FHE เกิดจากปัญหาทางคณิตศาสตร์พื้นฐานที่ซับซ้อน เช่น Shortest Vector Problem (SVP) และ Closest Vector Problem (CVP) ปัญหาเหล่านี้เชื่อว่าแก้ไม่ได้แม้แต่สำหรับคอมพิวเตอร์ควอนตัม จึงทำให้ FHE แบบแลตทิซเป็นตัวเลือกที่เหมาะสมสำหรับวิทยาการเข้ารหัสหลังควอนตัม
 
-### Regulación y cumplimiento
-
-Los organismos reguladores desempeñan un papel crítico en la adopción del FHE, con leyes sobre la confidencialidad de los datos que imponen su uso. Un impulso normativo podría servir como catalizador para la adopción completa del FHE en toda la industria bancaria y financiera, a la vez que se garantiza el cumplimiento de las normativas de protección de datos.
-
-El panorama normativo en torno a la confidencialidad y la seguridad de los datos desempeña un papel significativo en la adopción del FHE en el sector bancario. Normativas estrictas como el RGPD (General Data Protection Regulation) y el CCPA (California Consumer Privacy Act) imponen medidas robustas de protección de datos y subrayan el derecho individual a la vida privada. El FHE, con su capacidad para tratar datos cifrados sin descifrado, se alinea bien con la orientación centrada en la confidencialidad de estas normativas. A medida que las leyes sobre la confidencialidad se vuelven más estrictas, el FHE ofrece una solución convincente que permite a los bancos efectuar los cálculos y análisis necesarios al tiempo que se respetan las exigencias de cumplimiento.
+การใช้การเข้ารหัสที่ทนทานต่อควอนตัมอย่าง FHE มีความสำคัญไม่เพียงต่อการปกป้องสินทรัพย์ทางการเงินเท่านั้น แต่ยังต่อการรักษาความไว้วางใจของลูกค้าในยุคดิจิทัลด้วย เมื่อการประมวลผลเชิงควอนตัมก้าวหน้าขึ้น สถาบันการเงินที่ให้ความสำคัญกับการเข้ารหัสที่แข็งแกร่งจะอยู่ในตำแหน่งที่ดีกว่าในการรับมือกับความท้าทายและโอกาสในอนาคต
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Asegurar los grandes modelos de lenguaje con el FHE
+## อนาคตของ FHE ในภาคธนาคารและการเงิน
 
-Los grandes modelos de lenguaje (LLM) son potentes herramientas de IA. Pero su uso suscita preocupaciones de confidencialidad, en particular cuando tratan datos de usuario sensibles. El FHE ofrece una solución que protege la confidencialidad del usuario y preserva la propiedad intelectual de los propietarios de modelos permitiendo cálculos sobre datos cifrados.
+เส้นทางของ FHE ในภาคการเงินมีแนวโน้มที่ดี แต่ยังคงเผชิญความท้าทาย ภาคธนาคารสามารถใช้ประโยชน์จากศักยภาพเต็มรูปแบบของ FHE ได้ด้วยการพัฒนาเทคโนโลยี ผนวกเข้ากับการดำเนินงานทางการเงินประจำวัน และร่วมมือกับหน่วยงานกำกับดูแล
 
-### Desafíos de confidencialidad con los LLM
+FHE สามารถนำไปใช้ในงานด้านธนาคารและการเงินได้หลากหลาย เช่น:
 
-Desplegar un LLM en local para mantener la confidencialidad de los datos plantea desafíos como costes elevados y la exposición potencial de una propiedad intelectual valiosa. El FHE aborda estos desafíos permitiendo a los LLM funcionar sobre datos de usuario cifrados, garantizando la confidencialidad y la seguridad del modelo simultáneamente.
+- **การวิเคราะห์ข้อมูลทางการเงินอย่างปลอดภัย**: FHE ทำให้ธนาคารสามารถวิเคราะห์ข้อมูลทางการเงินที่เข้ารหัส เช่น ธุรกรรม คะแนนเครดิต และพอร์ตการลงทุน ได้โดยไม่กระทบต่อความเป็นส่วนตัวของลูกค้า จึงรับประกันการประมวลผลข้อมูลที่ละเอียดอ่อนอย่างปลอดภัย
 
-### El enfoque LLM cifrado de Zama
+- **การเรียนรู้ของเครื่องที่รักษาความเป็นส่วนตัว**: FHE ทำให้ธนาคารสามารถฝึกและใช้งานโมเดลการเรียนรู้ของเครื่องบนข้อมูลที่เข้ารหัสได้ จึงใช้ประโยชน์จาก AI สำหรับการตรวจจับการฉ้อโกง การประเมินความเสี่ยง และการแบ่งกลุ่มลูกค้าได้ ในขณะที่ยังคงรักษาความลับของข้อมูล
 
-[**Zama ⧉**][01], una empresa de tecnologías de confidencialidad, ha demostrado la viabilidad de construir un LLM cifrado con la ayuda del FHE. Su enfoque, que combina FHE y otras tecnologías que refuerzan la confidencialidad, alcanza rendimientos comparables a los modelos no cifrados con solo un aumento modesto del sobrecoste computacional.
+- **การคำนวณแบบหลายฝ่ายที่ปลอดภัย**: FHE ทำให้เกิดความร่วมมือที่ปลอดภัยระหว่างสถาบันการเงินหลายแห่ง โดยให้ทำการคำนวณร่วมกันบนข้อมูลที่เข้ารหัสได้โดยไม่ต้องแบ่งปันข้อมูลที่ละเอียดอ่อน จึงอำนวยความสะดวกให้ธุรกรรมระหว่างธนาคารและการปฏิบัติตามข้อกำหนดเป็นไปอย่างปลอดภัย
 
-### Mejorar la confidencialidad del usuario con LLM cifrados
+- **ความปลอดภัยของ API**: FHE สามารถรักษาความปลอดภัยของ API ได้ด้วยการเข้ารหัสข้อมูลที่ละเอียดอ่อนก่อนการส่ง จึงรับประกันว่าข้อมูลลูกค้าจะยังคงเป็นความลับระหว่างการแลกเปลี่ยนข้อมูลระหว่างธนาคารและบริการของบุคคลที่สาม
 
-La integración del FHE con los LLM tiene el potencial de transformar la confidencialidad del usuario, en particular en las aplicaciones que tratan información personal o profesional sensible. A medida que la IA se concentra más en la confidencialidad, es importante que desarrolladores, usuarios y reguladores trabajen juntos. Esta colaboración es clave para construir un ecosistema de IA que ponga la seguridad y la confidencialidad en primer lugar.
+- **การประมวลผลบนคลาวด์อย่างปลอดภัย**: FHE ทำให้ธนาคารสามารถจ้างการคำนวณและการจัดเก็บข้อมูลไปยังแพลตฟอร์มคลาวด์ได้อย่างปลอดภัยโดยไม่กระทบต่อความเป็นส่วนตัวของข้อมูล เนื่องจากข้อมูลยังคงเข้ารหัสอยู่ตลอดกระบวนการ จึงขยายการใช้บริการคลาวด์ที่คุ้มค่าและขยายขนาดได้
+
+- **การปฏิบัติตามข้อกำหนดที่รักษาความเป็นส่วนตัว**: FHE ทำให้ธนาคารสามารถแบ่งปันข้อมูลที่เข้ารหัสกับหน่วยงานกำกับดูแลได้อย่างปลอดภัย จึงปฏิบัติตามข้อกำหนดการรายงานได้โดยไม่เปิดเผยข้อมูลลูกค้าที่ละเอียดอ่อน ทำให้กระบวนการปฏิบัติตามข้อกำหนดง่ายขึ้นในขณะที่ยังคงรักษาความเป็นส่วนตัว
+
+การใช้งานเหล่านี้แสดงให้เห็นถึงศักยภาพในการเปลี่ยนแปลงของ FHE ในภาคธนาคารและอุตสาหกรรมการเงิน และตอกย้ำศักยภาพในการยกระดับมาตรฐานความปลอดภัยและความเป็นส่วนตัวของข้อมูล
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Conclusión
+## การเอาชนะความท้าทายในการนำ FHE ไปใช้
 
-El **cifrado completamente homomórfico (FHE)** es una tecnología de seguridad de los datos revolucionaria que ofrece una confidencialidad y una seguridad excepcionales a la banca y las finanzas.
+### ความท้าทายด้านประสิทธิภาพและการปรับให้เหมาะสม
 
-A medida que la computación cuántica avanza, el FHE se vuelve aún más crucial. Su adopción remodelará la ciberseguridad en los servicios financieros, haciendo la banca digital más digna de confianza y más segura en nuestro mundo cada vez más conectado.
+การจัดการกับภาระการคำนวณที่มีอยู่ในตัวของ FHE ยังคงเป็นความท้าทายสำคัญ ความก้าวหน้าล่าสุดในการปรับอัลกอริทึมให้เหมาะสมและการพัฒนาตัวเร่งฮาร์ดแวร์เฉพาะทางกำลังลดช่องว่างด้านประสิทธิภาพระหว่างการคำนวณแบบดั้งเดิมและการเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์ (FHE)
 
-El advenimiento del FHE también ha abierto nuevas posibilidades de uso seguro y privado de los grandes modelos de lenguaje. Permitiendo LLM cifrados, el FHE garantiza que los datos del usuario permanezcan confidenciales al tiempo que se benefician de las capacidades avanzadas de estos modelos.
+### การกำหนดมาตรฐานและความร่วมมือ
 
-La era de la computación cuántica se aproxima. Los bancos deben evaluar proactivamente su infraestructura de cifrado, identificar las vulnerabilidades potenciales y desarrollar una hoja de ruta clara para la adopción del FHE con el fin de proteger los datos y mantener la confianza del cliente.
+เส้นทางสู่การนำ FHE ไปใช้อย่างแพร่หลายขึ้นอยู่กับการกำหนดมาตรฐานของโปรโตคอลและความร่วมมือที่เพิ่มขึ้นระหว่างผู้มีส่วนได้ส่วนเสียในระบบนิเวศการเงิน แนวทางที่เป็นหนึ่งเดียวในการนำ FHE มาใช้สามารถเร่งการผนวก FHE เข้ากับบริการทางการเงินกระแสหลักได้อย่างมีนัยสำคัญ
 
-[00]: https://crypto.stanford.edu/craig/ "The original paper by Craig Gentry on Fully Homomorphic Encryption"
-[01]: https://zama.ai/ "Zama - Fully Homomorphic Encryption"
+### กฎระเบียบและการปฏิบัติตามข้อกำหนด
+
+หน่วยงานกำกับดูแลมีบทบาทสำคัญในการนำ FHE ไปใช้ โดยกฎหมายความเป็นส่วนตัวของข้อมูลที่พัฒนาขึ้นกำหนดให้ต้องใช้ FHE แรงผลักดันด้านกฎระเบียบสามารถเป็นตัวเร่งสำหรับการนำ FHE ไปใช้อย่างครอบคลุมทั่วภาคธนาคารและอุตสาหกรรมการเงิน ในขณะที่รับประกันการปฏิบัติตามกฎระเบียบการคุ้มครองข้อมูล
+
+สภาพแวดล้อมด้านกฎระเบียบที่เกี่ยวกับความเป็นส่วนตัวและความปลอดภัยของข้อมูลมีบทบาทสำคัญในการนำ FHE มาใช้ในภาคธนาคาร กฎระเบียบที่เข้มงวดอย่าง General Data Protection Regulation (GDPR) และ California Consumer Privacy Act (CCPA) กำหนดมาตรการคุ้มครองข้อมูลที่แข็งแกร่งและเน้นย้ำสิทธิความเป็นส่วนตัวของบุคคล ด้วยความสามารถในการประมวลผลข้อมูลที่เข้ารหัสโดยไม่ต้องถอดรหัส FHE จึงสอดคล้องกับจุดเน้นด้านความเป็นส่วนตัวของกฎระเบียบเหล่านี้ เมื่อกฎหมายความเป็นส่วนตัวของข้อมูลเข้มงวดขึ้นเรื่อย ๆ FHE เป็นทางออกที่น่าสนใจซึ่งทำให้ธนาคารสามารถทำการคำนวณและวิเคราะห์ที่จำเป็นได้ในขณะที่ปฏิบัติตามข้อกำหนดการปฏิบัติตามกฎระเบียบ
+
+![divider][divider].class=\"m-10 w-100\"
+
+## การรักษาความปลอดภัยของโมเดลภาษาขนาดใหญ่ด้วยการเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์ (FHE)
+
+โมเดลภาษาขนาดใหญ่ (LLM) เป็นเครื่องมือ AI ที่ทรงพลัง แต่การใช้งานก่อให้เกิดข้อกังวลด้านความเป็นส่วนตัว โดยเฉพาะเมื่อต้องจัดการกับข้อมูลผู้ใช้ที่ละเอียดอ่อน การเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์ (FHE) เป็นทางออกที่ปกป้องความเป็นส่วนตัวของผู้ใช้และรักษาทรัพย์สินทางปัญญาของเจ้าของโมเดล ด้วยการทำให้สามารถคำนวณบนข้อมูลที่เข้ารหัสได้
+
+### ความท้าทายด้านความเป็นส่วนตัวกับ LLM
+
+การใช้งาน LLM แบบติดตั้งภายในองค์กรเพื่อรักษาความเป็นส่วนตัวของข้อมูลก่อให้เกิดความท้าทาย เช่น ต้นทุนสูงและความเสี่ยงที่ทรัพย์สินทางปัญญาอันมีค่าจะถูกเปิดเผย FHE จัดการกับความท้าทายเหล่านี้ด้วยการให้ LLM ทำงานบนข้อมูลผู้ใช้ที่เข้ารหัส จึงรับประกันความเป็นส่วนตัวและความปลอดภัยของโมเดลไปพร้อมกัน
+
+### แนวทาง LLM เข้ารหัสของ Zama
+
+[**Zama ⧉**][01] บริษัทเทคโนโลยีด้านความเป็นส่วนตัว ได้แสดงให้เห็นถึงความเป็นไปได้ในการสร้าง LLM เข้ารหัสด้วย FHE แนวทางของบริษัทซึ่งผสม FHE เข้ากับเทคโนโลยีเสริมความเป็นส่วนตัวอื่น ๆ ให้ประสิทธิภาพที่เทียบเคียงได้กับโมเดลที่ไม่เข้ารหัส โดยมีภาระการคำนวณเพิ่มขึ้นเพียงเล็กน้อย
+
+### การปรับปรุงความเป็นส่วนตัวของผู้ใช้ด้วย LLM เข้ารหัส
+
+การผนวก FHE เข้ากับ LLM มีศักยภาพในการเปลี่ยนแปลงความเป็นส่วนตัวของผู้ใช้ โดยเฉพาะในงานที่จัดการกับข้อมูลส่วนบุคคลหรือข้อมูลธุรกิจที่ละเอียดอ่อน เมื่อ AI ให้ความสำคัญกับความเป็นส่วนตัวมากขึ้น การที่นักพัฒนา ผู้ใช้ และหน่วยงานกำกับดูแลทำงานร่วมกันจึงเป็นเรื่องสำคัญ ความร่วมมือนี้เป็นกุญแจสำคัญในการสร้างระบบนิเวศ AI ที่ให้ความสำคัญกับความปลอดภัยและความเป็นส่วนตัวเป็นอันดับแรก
+
+![divider][divider].class=\"m-10 w-100\"
+
+## บทสรุป
+
+**การเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์ (FHE)** เป็นเทคโนโลยีความปลอดภัยของข้อมูลที่เปลี่ยนแนวทางปฏิบัติได้อย่างมีนัยสำคัญ และมอบความเป็นส่วนตัวและความปลอดภัยที่โดดเด่นให้กับภาคธนาคารและอุตสาหกรรมการเงิน
+
+เมื่อการประมวลผลเชิงควอนตัมก้าวหน้าขึ้น FHE ยิ่งมีความสำคัญมากขึ้น การนำ FHE ไปใช้จะปรับเปลี่ยนความมั่นคงปลอดภัยไซเบอร์ในบริการทางการเงิน ทำให้ธนาคารดิจิทัลน่าเชื่อถือและปลอดภัยยิ่งขึ้นในโลกที่เชื่อมโยงกันมากขึ้น
+
+การมาถึงของ FHE ยังเปิดโอกาสใหม่ ๆ สำหรับการใช้งานโมเดลภาษาขนาดใหญ่อย่างปลอดภัยและเป็นส่วนตัว ด้วยการทำให้ LLM เข้ารหัสได้ FHE รับประกันว่าข้อมูลผู้ใช้จะยังคงเป็นความลับในขณะที่ยังได้ประโยชน์จากความสามารถขั้นสูงของโมเดลเหล่านี้
+
+ยุคการประมวลผลเชิงควอนตัมกำลังใกล้เข้ามา ธนาคารต้องประเมินโครงสร้างพื้นฐานการเข้ารหัสของตนอย่างเชิงรุก ระบุจุดเปราะบางที่อาจเกิดขึ้น และพัฒนาแผนงานที่ชัดเจนสำหรับการนำ FHE มาใช้ เพื่อปกป้องข้อมูลและรักษาความไว้วางใจของลูกค้า
+
+[00]: https://crypto.stanford.edu/craig/ "งานวิจัยต้นฉบับของ Craig Gentry ว่าด้วยการเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์"
+[01]: https://zama.ai/ "Zama - การเข้ารหัสแบบโฮโมมอร์ฟิกสมบูรณ์"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 [fhe]: https://cloudcdn.pro/stocks/diagrams/fhe_algorithm_diagram.webp "FHE Architecture"
