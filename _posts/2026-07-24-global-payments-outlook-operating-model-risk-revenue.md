@@ -285,7 +285,7 @@ Most financial institutions recognise the date, but many have treated it merely 
 
 ### The Business Case for Structured Data
 
-While often framed as a compliance cost, high-quality ISO 20022 payment data is a powerful **revenue enabler** for transaction banks:
+While often framed as a compliance cost, high-quality [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) payment data is a powerful **revenue enabler** for transaction banks:
 
 1. **Advanced Credit Decisioning**: Structured invoice, remittance, and ultimate-debtor data allows banks to build automated, highly precise working-capital financing and supply-chain invoice factoring programs for corporate clients.  
 2. **Automated Receivables Matching**: Exposing structured party and invoice identifiers allows banks to offer premium cash-reconciliation and virtual-account pooling products, generating new transaction fee revenue.  

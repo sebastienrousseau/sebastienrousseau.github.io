@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-07-26-from-evidence-to-truth-certified-blockchains-banking-trust/index.html" title="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust">
-<img alt="A constellation of interconnected points of light, representing certified blockchains as the substrate of verifiable banking trust." src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-07-27-verification-of-payee-production-vop-ipr-banks-2026/index.html" title="Verification of Payee in Production: Nine Months of Close Matches, Bulk Files, and Unpriced Liability">
+<img alt="The underside of a lattice dome, hundreds of structural cells converging on a single bright aperture at the centre." src="https://cloudcdn.pro/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Blockchain · Banking · Dora</span>
-<h3><a href="/2026-07-26-from-evidence-to-truth-certified-blockchains-banking-trust/index.html" title="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust">From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust</a></h3>
-<p class="newsroom-meta"><time datetime="2026-07-26">July 26, 2026</time> · Sebastien Rousseau</p>
-<p>Immutable is not the same as trusted. As instant settlement and probabilistic AI reshape banking, the uncertified ledger becomes the weak link, and a certifiable blockchain becomes the audit spine.</p>
-<p><a class="pill ghost" href="/2026-07-26-from-evidence-to-truth-certified-blockchains-banking-trust/index.html" title="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust">Read the full story</a></p>
+<span class="newsroom-eyebrow">Payments · Verification Of Payee · Instant Payments Regulation</span>
+<h3><a href="/2026-07-27-verification-of-payee-production-vop-ipr-banks-2026/index.html" title="Verification of Payee in Production: Nine Months of Close Matches, Bulk Files, and Unpriced Liability">Verification of Payee in Production: Nine Months of Close Matches, Bulk Files, and Unpriced Liability</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-27">July 27, 2026</time> · Sebastien Rousseau</p>
+<p>Payee verification stopped being a competitive feature the day it became a legal obligation. What remains is an operations problem: a five-second budget, an ambiguous middle answer, and corporate files that must be taken apart before they can be checked.</p>
+<p><a class="pill ghost" href="/2026-07-27-verification-of-payee-production-vop-ipr-banks-2026/index.html" title="Verification of Payee in Production: Nine Months of Close Matches, Bulk Files, and Unpriced Liability">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-26-from-evidence-to-truth-certified-blockchains-banking-trust/index.html" title="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust">
+<img alt="A constellation of interconnected points of light, representing certified blockchains as the substrate of verifiable banking trust." src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Blockchain · Banking · Dora</span>
+<h3><a href="/2026-07-26-from-evidence-to-truth-certified-blockchains-banking-trust/index.html" title="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust">From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-26">July 26, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Immutable is not the same as trusted. As instant settlement and probabilistic AI reshape banking, the uncertified ledger becomes the weak link, and a certifiable blockchain becomes the audit spine.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-07-24-global-payments-outlook-operating-model-risk-revenue/index.html" title="The 2026 Global Payments Outlook: Operating Model, Risk, and Revenue in an Agentic, Invisible, Real-Time World">

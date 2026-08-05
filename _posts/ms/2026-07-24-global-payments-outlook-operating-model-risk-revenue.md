@@ -22,7 +22,7 @@ keywords: "perdagangan agentik, liabiliti diwakilkan, Model Context Protocol, PS
 language: "ms"
 last_reviewed: "2026-07-24"
 layout: "report"
-locale: "ms_MS"
+locale: "ms_MY"
 logo_alt: "Logo untuk Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"

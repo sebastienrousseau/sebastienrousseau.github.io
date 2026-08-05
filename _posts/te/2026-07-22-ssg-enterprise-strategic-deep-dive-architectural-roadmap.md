@@ -22,7 +22,7 @@ keywords: "స్టాటిక్ సైట్ జనరేటర్, Rust, fo
 language: "te"
 last_reviewed: "2026-07-22"
 layout: "report"
-locale: "te_TE"
+locale: "te_IN"
 logo_alt: "సెబాస్టియన్ రూసో కొరకు లోగో"
 logo_height: "44"
 logo_width: "44"

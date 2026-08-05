@@ -22,7 +22,7 @@ keywords: "penjana laman statik, Rust, forbid unsafe_code, WCAG 2.2 AA, Content 
 language: "ms"
 last_reviewed: "2026-07-22"
 layout: "report"
-locale: "ms_MS"
+locale: "ms_MY"
 logo_alt: "Logo untuk Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"

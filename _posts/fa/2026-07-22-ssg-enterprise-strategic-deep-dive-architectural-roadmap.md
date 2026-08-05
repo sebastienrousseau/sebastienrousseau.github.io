@@ -22,7 +22,7 @@ keywords: "مولد سایت ایستا, Rust, forbid unsafe_code, WCAG 2.2 AA, 
 language: "fa"
 last_reviewed: "2026-07-22"
 layout: "report"
-locale: "fa_FA"
+locale: "fa_IR"
 logo_alt: "لوگوی سباستین روسو"
 logo_height: "44"
 logo_width: "44"

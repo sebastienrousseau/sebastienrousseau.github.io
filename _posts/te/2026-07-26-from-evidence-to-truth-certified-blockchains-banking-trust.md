@@ -22,7 +22,7 @@ keywords: "ISO/IEC TC 307, ధృవీకరించబడిన బ్లా�
 language: "te"
 last_reviewed: "2026-07-26"
 layout: "report"
-locale: "te_TE"
+locale: "te_IN"
 logo_alt: "సెబాస్టియన్ రూసో కోసం లోగో"
 logo_height: "44"
 logo_width: "44"

@@ -22,7 +22,7 @@ keywords: "ISO/IEC TC 307, blockchain diperakui, teknologi lejar teragih, DORA A
 language: "ms"
 last_reviewed: "2026-07-26"
 layout: "report"
-locale: "ms_MS"
+locale: "ms_MY"
 logo_alt: "Logo untuk Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
