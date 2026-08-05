@@ -307,9 +307,7 @@ def inject_word_count(html: str) -> str:
 # (webp/png/jpg), never for a logo/portrait/divider (a large card needs a large
 # image, and X cannot render an SVG in one).
 _og_image_re = re.compile(r'<meta\s+property="og:image"\s+content="([^"]+)"')
-_banner_src_re = re.compile(
-    r'[ \t]*<meta name="banner-src" content="([^"]*)"\s*/?>\n?'
-)
+_banner_src_re = re.compile(r'[ \t]*<meta name="banner-src" content="([^"]*)"\s*/?>\n?')
 _SMALL_OG_MARKERS = ("divider", "/logos/", "sebastienrousseau.webp")
 
 
@@ -910,6 +908,60 @@ def inject_kpi_metrics(html_text: str) -> str:
         return f"{open_tag}{val}{m.group(3)}" if val else m.group(0)
 
     return _KPI_SPAN_RE.sub(_fill, html_text)
+
+
+# ---------------------------------------------------------------------------
+# 4h. Canonicalise internal links to the pretty (trailing-slash) form
+# ---------------------------------------------------------------------------
+#
+# Canonicals and sitemap.xml both advertise the pretty form (`/about/`), but
+# the generators emit internal hrefs as `/about/index.html`. Both URLs return
+# 200, so Googlebot follows the `index.html` variant out of the page body,
+# reads the canonical pointing at the pretty form, and files the crawl under
+# "Alternate page with proper canonical tag" — the not-indexed bucket in
+# Search Console. Measured on production: 117 distinct `/…/index.html` URLs
+# reachable from the English pages alone (74 dated articles, 43 landing
+# pages), none of them present in the 6,410-URL sitemap.
+#
+# Rewriting at the output layer fixes every generator at once — including
+# topic_link.py, which actively emits the `index.html` form into the source
+# markdown — without touching 1,866 source files.
+#
+# The pattern has to tolerate unquoted attribute values, because the ssg
+# release CI pins minifies pages and strips attribute quotes; that is the
+# same shape that silently defeated the KPI-rail substitution.
+_INTERNAL_INDEX_HREF_RE = re.compile(
+    r"""(?P<attr>\b(?:href|action)\s*=\s*)          # attribute we rewrite
+        (?P<q>["']?)                                 # optional quote
+        # Middle segment optional so a bare `/index.html` (the home page,
+        # whose canonical is `/`) is caught too, not just `/about/index.html`.
+        (?P<path>(?:https://sebastienrousseau\.com)?/(?:[^"'\s>]*?/)?)
+        index\.html
+        (?P<tail>[#?][^"'\s>]*)?                     # keep #fragment / ?query
+        (?P=q)                                       # matching close quote
+    """,
+    re.IGNORECASE | re.VERBOSE,
+)
+
+
+def canonicalise_internal_links(html_text: str) -> tuple[str, int]:
+    """Rewrite internal ``…/index.html`` hrefs to their pretty form.
+
+    ``/about/index.html`` -> ``/about/``. Absolute self-links are handled
+    too. Fragments and query strings are preserved. External links, and
+    any ``index.html`` that is not the last path segment, are untouched.
+
+    Returns ``(html, n_rewritten)``. Idempotent.
+    """
+    if "index.html" not in html_text:
+        return html_text, 0
+
+    def _fix(m: re.Match[str]) -> str:
+        q = m.group("q")
+        return f"{m.group('attr')}{q}{m.group('path')}{m.group('tail') or ''}{q}"
+
+    out, n = _INTERNAL_INDEX_HREF_RE.subn(_fix, html_text)
+    return out, n
 
 
 _ARTICLE_TYPE_RE = re.compile(

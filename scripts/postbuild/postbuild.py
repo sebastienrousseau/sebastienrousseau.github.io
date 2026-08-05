@@ -266,6 +266,7 @@ from postbuild_lib.seo import (  # noqa: F401 — re-exports for back-compat
     _keywords_re,
     align_jsonld_inlanguage,
     build_about_graph,
+    canonicalise_internal_links,
     clean_meta_description,
     compute_word_count,
     fix_article_og_type,
@@ -327,6 +328,7 @@ class _PostbuildCounters:
         "newsarticle_patched",
         "oembed_links_set",
         "og_patched",
+        "pretty_links_patched",
         "pullquotes_set",
         "redundant_titles_stripped",
         "reuse_panels_set",
@@ -408,6 +410,12 @@ def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
         ctr.desc_cleaned += 1
     out = fix_article_og_type(out)
     out = inject_kpi_metrics(out)
+    # Point internal links at the same URL the canonical and sitemap
+    # advertise. Without this, every `/x/index.html` href is a second
+    # crawlable URL for the same page and Search Console files it under
+    # "Alternate page with proper canonical tag".
+    out, n_pretty = canonicalise_internal_links(out)
+    ctr.pretty_links_patched += n_pretty
     # Belt-and-suspenders: align JSON-LD inLanguage to <html lang> for the
     # few content items the translation-time localiser misses (runs before
     # inject_jsonld_hashes so the CSP hash covers the aligned bytes).
@@ -752,6 +760,7 @@ def main() -> None:
         f"{c.theme_inlined} got theme-init inlined, "
         f"{c.cdn_wrapped} img(s) wrapped in CDN transform, "
         f"{c.redundant_titles_stripped} redundant link title(s) stripped, "
+        f"{c.pretty_links_patched} internal link(s) canonicalised to pretty URLs, "
         f"{c.lastmod_meta_patched} last-modified meta tag(s) updated, "
         f"{c.lcp_preloaded} got LCP image preloaded, "
         f"{c.asset_fp_patched} got asset URLs fingerprinted, "
