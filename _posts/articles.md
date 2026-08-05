@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-07-27-verification-of-payee-production-vop-ipr-banks-2026/index.html" title="Verification of Payee in Production: Nine Months of Close Matches, Bulk Files, and Unpriced Liability">
-<img alt="The underside of a lattice dome, hundreds of structural cells converging on a single bright aperture at the centre." src="https://cloudcdn.pro/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-07-28-cryptographic-bill-of-materials-cbom-discovery-banks-2026/index.html" title="You Cannot Migrate What You Cannot Enumerate: The Cryptographic Bill of Materials Banks Still Do Not Have">
+<img alt="A receding row of pendant lamps along a dark window wall, the nearest one sharp and lit and each one behind it fading further into shadow." src="https://cloudcdn.pro/stocks/images/robert-haverly-_kmr5wKVW7E.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Payments · Verification Of Payee · Instant Payments Regulation</span>
-<h3><a href="/2026-07-27-verification-of-payee-production-vop-ipr-banks-2026/index.html" title="Verification of Payee in Production: Nine Months of Close Matches, Bulk Files, and Unpriced Liability">Verification of Payee in Production: Nine Months of Close Matches, Bulk Files, and Unpriced Liability</a></h3>
-<p class="newsroom-meta"><time datetime="2026-07-27">July 27, 2026</time> · Sebastien Rousseau</p>
-<p>Payee verification stopped being a competitive feature the day it became a legal obligation. What remains is an operations problem: a five-second budget, an ambiguous middle answer, and corporate files that must be taken apart before they can be checked.</p>
-<p><a class="pill ghost" href="/2026-07-27-verification-of-payee-production-vop-ipr-banks-2026/index.html" title="Verification of Payee in Production: Nine Months of Close Matches, Bulk Files, and Unpriced Liability">Read the full story</a></p>
+<span class="newsroom-eyebrow">Post-Quantum · Cryptography · Cbom</span>
+<h3><a href="/2026-07-28-cryptographic-bill-of-materials-cbom-discovery-banks-2026/index.html" title="You Cannot Migrate What You Cannot Enumerate: The Cryptographic Bill of Materials Banks Still Do Not Have">You Cannot Migrate What You Cannot Enumerate: The Cryptographic Bill of Materials Banks Still Do Not Have</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-28">July 28, 2026</time> · Sebastien Rousseau</p>
+<p>Every post-quantum roadmap assumes an inventory that does not exist. The asset register knows the server, the owner and the criticality; it does not know the algorithm, the key length, the library or the expiry.</p>
+<p><a class="pill ghost" href="/2026-07-28-cryptographic-bill-of-materials-cbom-discovery-banks-2026/index.html" title="You Cannot Migrate What You Cannot Enumerate: The Cryptographic Bill of Materials Banks Still Do Not Have">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-27-verification-of-payee-production-vop-ipr-banks-2026/index.html" title="Verification of Payee in Production: Nine Months of Close Matches, Bulk Files, and Unpriced Liability">
+<img alt="The underside of a lattice dome, hundreds of structural cells converging on a single bright aperture at the centre." src="https://cloudcdn.pro/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Payments · Verification Of Payee · Instant Payments Regulation</span>
+<h3><a href="/2026-07-27-verification-of-payee-production-vop-ipr-banks-2026/index.html" title="Verification of Payee in Production: Nine Months of Close Matches, Bulk Files, and Unpriced Liability">Verification of Payee in Production: Nine Months of Close Matches, Bulk Files, and Unpriced Liability</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-27">July 27, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Payee verification stopped being a competitive feature the day it became a legal obligation. What remains is an operations problem: a five-second budget, an ambiguous middle answer, and corporate files that must be taken apart before they can be checked.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-07-26-from-evidence-to-truth-certified-blockchains-banking-trust/index.html" title="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust">
