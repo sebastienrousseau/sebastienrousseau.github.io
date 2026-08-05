@@ -512,19 +512,24 @@ def proof_rail_block() -> str:
             return str(int(n))
         return str(value)
 
-    downloads = _fmt("downloads_total", "168k")
-    stars = _fmt("github_stars", "677")
-    articles = _fmt("articles_signed", "73")
-    years = _fmt("years_payments", "20")
+    downloads = _fmt("downloads_total", "42.1M")
+    stars = _fmt("github_stars", "672")
+    articles = _fmt("articles_signed", "96")
+    years = _fmt("years_payments", "19")
     # Split each kpi-cell across multiple lines — SSG's custom-block parser
     # treats single-line <div class="x-y"> as a shortcode and replaces the
     # body with an error alert. Multi-line divs pass through as raw HTML.
+    #
+    # Each value span carries `data-kpi` so postbuild's inject_kpi_metrics
+    # refreshes it on every build, not just on the runs that regenerate this
+    # file. Without it this generator silently *stripped* the attributes from
+    # the committed projects.md and froze the rail at generation time.
     return (
         '<section class="proof-rail projects-proof" aria-label="Open source by the numbers">\n'
-        f'<div class="kpi-cell">\n  <span class="kpi-cell-value">{downloads}</span>\n  <span class="kpi-cell-label">Open-source downloads</span>\n</div>\n'
-        f'<div class="kpi-cell">\n  <span class="kpi-cell-value">{stars}</span>\n  <span class="kpi-cell-label">GitHub stars</span>\n</div>\n'
-        f'<div class="kpi-cell">\n  <span class="kpi-cell-value">{articles}</span>\n  <span class="kpi-cell-label">Sigstore-signed articles</span>\n</div>\n'
-        f'<div class="kpi-cell">\n  <span class="kpi-cell-value">{years}</span>\n  <span class="kpi-cell-label">Years shipping in production</span>\n</div>\n'
+        f'<div class="kpi-cell">\n  <span class="kpi-cell-value" data-kpi="downloads_total">{downloads}</span>\n  <span class="kpi-cell-label">Open-source downloads</span>\n</div>\n'
+        f'<div class="kpi-cell">\n  <span class="kpi-cell-value" data-kpi="github_stars">{stars}</span>\n  <span class="kpi-cell-label">GitHub stars</span>\n</div>\n'
+        f'<div class="kpi-cell">\n  <span class="kpi-cell-value" data-kpi="articles_signed">{articles}</span>\n  <span class="kpi-cell-label">Sigstore-signed articles</span>\n</div>\n'
+        f'<div class="kpi-cell">\n  <span class="kpi-cell-value" data-kpi="years_payments">{years}</span>\n  <span class="kpi-cell-label">Years shipping in production</span>\n</div>\n'
         "</section>"
     )
 
