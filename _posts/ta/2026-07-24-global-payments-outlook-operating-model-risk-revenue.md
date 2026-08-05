@@ -22,7 +22,7 @@ keywords: "ஏஜென்டிக் வர்த்தகம், வழங்
 language: "ta"
 last_reviewed: "2026-07-24"
 layout: "report"
-locale: "ta_TA"
+locale: "ta_IN"
 logo_alt: "செபாஸ்டியன் ரூஸோவின் லோகோ"
 logo_height: "44"
 logo_width: "44"

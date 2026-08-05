@@ -22,7 +22,7 @@ keywords: "ISO/IEC TC 307، بلاک‌چین گواهی‌شده، فناوری
 language: "fa"
 last_reviewed: "2026-07-26"
 layout: "report"
-locale: "fa_FA"
+locale: "fa_IR"
 logo_alt: "نشان سباستین روسو"
 logo_height: "44"
 logo_width: "44"

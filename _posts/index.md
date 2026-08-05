@@ -206,6 +206,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-27-verification-of-payee-production-vop-ipr-banks-2026/index.html" title="Verification of Payee in Production: Nine Months of Close Matches, Bulk Files, and Unpriced Liability">
+<img alt="The underside of a lattice dome, hundreds of structural cells converging on a single bright aperture at the centre." src="https://cloudcdn.pro/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Payments · Fraud · Instant Payments Regulation</span>
+<h3><a href="/2026-07-27-verification-of-payee-production-vop-ipr-banks-2026/index.html">Verification of Payee in Production: Nine Months of Close Matches, Bulk Files, and Unpriced Liability</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-27">July 27, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> The Instant Payments Regulation made payee verification a free utility every euro-area PSP must run. The cost landed not on the match but on close matches, de-bulked corporate files, and a liability boundary the rulebook declines to draw.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-07-26-from-evidence-to-truth-certified-blockchains-banking-trust/index.html" title="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust">
 <img alt="A constellation of interconnected points of light, representing certified blockchains as the substrate of verifiable banking trust." src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>

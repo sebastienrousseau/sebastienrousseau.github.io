@@ -22,7 +22,7 @@ keywords: "ஸ்டேட்டிக் தள ஜெனரேட்டர்,
 language: "ta"
 last_reviewed: "2026-07-22"
 layout: "report"
-locale: "ta_TA"
+locale: "ta_IN"
 logo_alt: "Sebastien Rousseau-வின் லோகோ"
 logo_height: "44"
 logo_width: "44"

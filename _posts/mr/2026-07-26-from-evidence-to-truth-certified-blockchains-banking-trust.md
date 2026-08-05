@@ -22,7 +22,7 @@ keywords: "ISO/IEC TC 307, प्रमाणित ब्लॉकचेन, �
 language: "mr"
 last_reviewed: "2026-07-26"
 layout: "report"
-locale: "mr_MR"
+locale: "mr_IN"
 logo_alt: "Sebastien Rousseau यांचा लोगो"
 logo_height: "44"
 logo_width: "44"

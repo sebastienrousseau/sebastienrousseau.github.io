@@ -22,7 +22,7 @@ keywords: "ISO/IEC TC 307, சான்றளிக்கப்பட்ட ப�
 language: "ta"
 last_reviewed: "2026-07-26"
 layout: "report"
-locale: "ta_TA"
+locale: "ta_IN"
 logo_alt: "Sebastien Rousseau இன் லோகோ"
 logo_height: "44"
 logo_width: "44"

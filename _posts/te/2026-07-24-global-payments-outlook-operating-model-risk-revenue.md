@@ -22,7 +22,7 @@ keywords: "ఏజెంటిక్ కామర్స్, అప్పగిం
 language: "te"
 last_reviewed: "2026-07-24"
 layout: "report"
-locale: "te_TE"
+locale: "te_IN"
 logo_alt: "సెబాస్టియన్ రూసో కోసం లోగో"
 logo_height: "44"
 logo_width: "44"

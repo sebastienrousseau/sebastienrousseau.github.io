@@ -22,7 +22,7 @@ keywords: "एजंटिक कॉमर्स, प्रत्यायोज
 language: "mr"
 last_reviewed: "2026-07-24"
 layout: "report"
-locale: "mr_MR"
+locale: "mr_IN"
 logo_alt: "सेबॅस्टियन रुसोचा लोगो"
 logo_height: "44"
 logo_width: "44"

@@ -22,7 +22,7 @@ keywords: "γεννήτρια στατικών ιστότοπων, Rust, forbid 
 language: "el"
 last_reviewed: "2026-07-22"
 layout: "report"
-locale: "el_EL"
+locale: "el_GR"
 logo_alt: "Λογότυπο του Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"

@@ -22,7 +22,7 @@ keywords: "تجارت عامل‌محور، مسئولیت واگذارشده، 
 language: "fa"
 last_reviewed: "2026-07-24"
 layout: "report"
-locale: "fa_FA"
+locale: "fa_IR"
 logo_alt: "لوگوی سباستین روسو"
 logo_height: "44"
 logo_width: "44"
