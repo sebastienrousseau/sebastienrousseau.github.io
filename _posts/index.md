@@ -206,6 +206,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-28-cryptographic-bill-of-materials-cbom-discovery-banks-2026/index.html" title="You Cannot Migrate What You Cannot Enumerate: The Cryptographic Bill of Materials Banks Still Do Not Have">
+<img alt="A receding row of pendant lamps along a dark window wall, the nearest one sharp and lit and each one behind it fading further into shadow." src="https://cloudcdn.pro/stocks/images/robert-haverly-_kmr5wKVW7E.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Post-Quantum · Crypto-Agility · DORA</span>
+<h3><a href="/2026-07-28-cryptographic-bill-of-materials-cbom-discovery-banks-2026/index.html">You Cannot Migrate What You Cannot Enumerate: The Cryptographic Bill of Materials Banks Still Do Not Have</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-28">July 28, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> The first post-quantum deadline is discovery, not migration. Banks cannot meet it from the DORA asset register, which records the server, the owner and the criticality but not the algorithm, key length or certificate expiry.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-07-27-verification-of-payee-production-vop-ipr-banks-2026/index.html" title="Verification of Payee in Production: Nine Months of Close Matches, Bulk Files, and Unpriced Liability">
 <img alt="The underside of a lattice dome, hundreds of structural cells converging on a single bright aperture at the centre." src="https://cloudcdn.pro/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
