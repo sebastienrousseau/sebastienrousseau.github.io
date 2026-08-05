@@ -827,12 +827,43 @@ _METRICS_JSON = POSTS.parent / "_data" / "proof" / "metrics.json"
 # KPI values never fill (they show the stale hardcoded source numbers until
 # a later entity-decode pass restores the tags — too late). Tolerate both
 # the raw and the escaped tag delimiters so the fill lands either way.
+#
+# The homepage is *also* emitted minified by the ssg release CI pins, which
+# strips attribute quotes and may reorder attributes
+# (`<span class=kpi-cell-value data-kpi=downloads_total>`). A pattern that
+# hard-codes `class="…"` before `data-kpi="…"` silently misses that form
+# too, which is how the live "By the numbers" rail stayed frozen on
+# 37.1M / 663 / 84 while /about/ and /projects/ (emitted unminified) showed
+# the fetched figures. Match on `data-kpi` alone and read the attributes
+# out of the captured tag, so quoting style and attribute order don't
+# matter.
 _KPI_SPAN_RE = re.compile(
-    r'((?:&lt;|<)span[^>]*\bclass="kpi-cell-value"[^>]*\bdata-kpi="([a-z_]+)"[^>]*>)'
-    r"([^<&]*)((?:&lt;|<)/span>)",
+    r"((?:&lt;|<)span(?![-\w])[^>]*\bdata-kpi\s*=[^>]*>)"
+    r"([^<&]*)"
+    r"((?:&lt;|<)/span>)",
     re.IGNORECASE,
 )
+# Attribute reader tolerating double-quoted, single-quoted and bare values.
+_ATTR_VALUE_RE_CACHE: dict[str, re.Pattern[str]] = {}
 _kpi_cache: dict[str, str] | None = None
+
+
+def _attr_value(tag: str, name: str) -> str:
+    """Return ``name``'s value from an opening tag, or ``""`` if absent.
+
+    Handles ``a="b"``, ``a='b'`` and minified bare ``a=b``.
+    """
+    pat = _ATTR_VALUE_RE_CACHE.get(name)
+    if pat is None:
+        pat = re.compile(
+            rf"\b{re.escape(name)}\s*=\s*(?:\"([^\"]*)\"|'([^']*)'|([^\s\"'=<>`]+))",
+            re.IGNORECASE,
+        )
+        _ATTR_VALUE_RE_CACHE[name] = pat
+    m = pat.search(tag)
+    if not m:
+        return ""
+    return next((g for g in m.groups() if g is not None), "")
 
 
 def _format_metric(value: object, fmt: str) -> str:
@@ -867,12 +898,16 @@ def inject_kpi_metrics(html_text: str) -> str:
     """Fill every ``data-kpi``-tagged KPI cell from metrics.json. Pages
     without such cells are untouched. Idempotent."""
     metrics = _kpi_metrics()
-    if not metrics or 'data-kpi="' not in html_text:
+    # Bare `data-kpi` — the minified homepage has no quote after the `=`.
+    if not metrics or "data-kpi" not in html_text:
         return html_text
 
     def _fill(m: re.Match[str]) -> str:
-        val = metrics.get(m.group(2))
-        return f"{m.group(1)}{val}{m.group(4)}" if val else m.group(0)
+        open_tag = m.group(1)
+        if "kpi-cell-value" not in _attr_value(open_tag, "class").split():
+            return m.group(0)
+        val = metrics.get(_attr_value(open_tag, "data-kpi"))
+        return f"{open_tag}{val}{m.group(3)}" if val else m.group(0)
 
     return _KPI_SPAN_RE.sub(_fill, html_text)
 

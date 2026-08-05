@@ -294,6 +294,51 @@ def test_inject_kpi_metrics_fills_entity_escaped_span(monkeypatch):
     assert out == '&lt;span class="kpi-cell-value" data-kpi="downloads_total">38.1M&lt;/span>'
 
 
+def test_inject_kpi_metrics_fills_minified_unquoted_attributes(monkeypatch):
+    # Regression: the ssg release CI pins emits the homepage minified —
+    # attribute quotes stripped. The old `class="kpi-cell-value"` pattern
+    # (and the `'data-kpi="'` guard) both missed that form, so the live
+    # "By the numbers" rail stayed frozen on 37.1M / 663 / 84 while
+    # /about/ and /projects/ — emitted unminified — showed fetched figures.
+    monkeypatch.setattr(
+        seo, "_kpi_cache", {"downloads_total": "42.1M", "github_stars": "672"}
+    )
+    html = (
+        "<div class=kpi-cell>"
+        "<span class=kpi-cell-value data-kpi=downloads_total>37.1M</span>"
+        "<span class=kpi-cell-label>Open-source downloads</span>"
+        "</div>"
+        "<span class=kpi-cell-value data-kpi=github_stars>663</span>"
+    )
+    out = seo.inject_kpi_metrics(html)
+    assert ">42.1M</span>" in out
+    assert ">672</span>" in out
+    assert ">37.1M</span>" not in out
+    assert seo.inject_kpi_metrics(out) == out  # idempotent
+
+
+def test_inject_kpi_metrics_is_quoting_and_order_agnostic(monkeypatch):
+    monkeypatch.setattr(seo, "_kpi_cache", {"github_stars": "672"})
+    for html in (
+        "<span class='kpi-cell-value' data-kpi='github_stars'>663</span>",
+        "<span data-kpi=github_stars class=kpi-cell-value>663</span>",
+        '<span class="stat kpi-cell-value big" data-kpi="github_stars">663</span>',
+    ):
+        assert ">672</span>" in seo.inject_kpi_metrics(html), html
+
+
+def test_inject_kpi_metrics_requires_the_kpi_class(monkeypatch):
+    # `data-kpi` alone is not the contract — the cell must also carry
+    # `kpi-cell-value`, and a tag merely *starting* with "span" is not a span.
+    monkeypatch.setattr(seo, "_kpi_cache", {"github_stars": "672"})
+    for html in (
+        "<span data-kpi=github_stars>663</span>",
+        '<span class="kpi-cell-label" data-kpi="github_stars">663</span>',
+        "<spanner class=kpi-cell-value data-kpi=github_stars>663</spanner>",
+    ):
+        assert seo.inject_kpi_metrics(html) == html, html
+
+
 # ---------------------------------------------------------------------------
 # align_jsonld_inlanguage
 # ---------------------------------------------------------------------------
