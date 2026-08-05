@@ -234,8 +234,8 @@ jobs:
           include-hidden-files: true
 
   # =========================================================================
-  # Stage 2 — fan out pa11y across 5 parallel runners. Shards 1-4 each take
-  # 1/4 of the delta URLs in the default (light) rendering; the `dark` shard
+  # Stage 2 — fan out pa11y across 7 parallel runners. Shards 1-6 each take
+  # 1/6 of the delta URLs in the default (light) rendering; the `dark` shard
   # re-audits the fixed representative subset from .pa11yci.dark with the
   # site's dark theme forced via pa11y actions (click .theme-toggle, wait
   # for html[data-theme="dark"]) — see the Dark-mode sweep block in
@@ -260,7 +260,7 @@ jobs:
       # finalise job.
       fail-fast: false
       matrix:
-        shard: [1, 2, 3, 4, dark]
+        shard: [1, 2, 3, 4, 5, 6, dark]
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
@@ -300,7 +300,7 @@ jobs:
 
       - name: Filter .pa11yci to shard ${{ matrix.shard }}
         # Light shards: round-robin partition — URL i goes to shard
-        # (i % 4) + 1. Stable across runs so cache + manifest stay
+        # (i % 6) + 1. Stable across runs so cache + manifest stay
         # coherent; balanced because URLs are sorted by relpath and
         # locale/article counts are even. Dark shard: the pre-built
         # .pa11yci.dark subset is used verbatim (theme-flip actions are
@@ -317,7 +317,7 @@ jobs:
                   n = len(json.load(f)["urls"])
               print(f"dark shard: {n} representative URLs (theme forced dark)")
           else:
-              shard_n, total = int(shard), 4
+              shard_n, total = int(shard), 6
               with open(".pa11yci") as f:
                   cfg = json.load(f)
               all_urls = cfg["urls"]
