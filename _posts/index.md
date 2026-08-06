@@ -206,6 +206,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-30-model-risk-management-generative-ai-out-of-scope-2026/index.html" title="Out of Scope Is Not Out of Risk: The 2026 Model-Risk Rewrite Left Out the Models Banks Are Actually Deploying">
+<img alt="A long dark bench on a vast paved plaza seen from directly above, with a single seated figure at the far right edge and open ground stretching away from them." src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Model Risk · Generative AI · Supervision</span>
+<h3><a href="/2026-07-30-model-risk-management-generative-ai-out-of-scope-2026/index.html">Out of Scope Is Not Out of Risk: The 2026 Model-Risk Rewrite Left Out the Models Banks Are Actually Deploying</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-30">July 30, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> The April 2026 rewrite superseded fifteen years of model-risk doctrine and expressly excluded generative and agentic AI. Out of scope is not out of risk — and the UK's technology-neutral statement pulls the same models back in.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-07-29-threat-led-penetration-testing-dora-tlpt-banks-2026/index.html" title="The Red Team Became a Supervised Supply Chain: What DORA's TLPT Regime Actually Demands">
 <img alt="The corner of a building clad in a finely perforated white screen, photographed from below against a bright sky." src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -265,17 +277,6 @@ site_software: "Static Site Generator, Rust"
 </div>
 </article>
 
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-07-22-ssg-enterprise-strategic-deep-dive-architectural-roadmap/index.html" title="Static Site Generator (SSG): Enterprise-Grade Strategic Deep Dive and Architectural Roadmap">
-<img alt="An abstract technical background, representing the architectural roadmap of an enterprise-grade static site generator." src="https://cloudcdn.pro/stocks/images/gemini-background.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Rust · Static Site Generator · Web Security</span>
-<h3><a href="/2026-07-22-ssg-enterprise-strategic-deep-dive-architectural-roadmap/index.html">Static Site Generator (SSG): Enterprise-Grade Strategic Deep Dive and Architectural Roadmap</a></h3>
-<p class="newsroom-meta"><time datetime="2026-07-22">July 22, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> A Rust static-site generator built as secure-by-default infrastructure: compile-time SRI, CSP and a WCAG 2.2 AA build gate, an honest gap analysis of what v0.0.41 ships versus what the README promises, and a phased roadmap to an enterprise-grade 1.0.</p>
-</div>
-</article>
 
 </div>
 

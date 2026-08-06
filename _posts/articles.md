@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-07-29-threat-led-penetration-testing-dora-tlpt-banks-2026/index.html" title="The Red Team Became a Supervised Supply Chain: What DORA's TLPT Regime Actually Demands">
-<img alt="The corner of a building clad in a finely perforated white screen, photographed from below against a bright sky." src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-07-30-model-risk-management-generative-ai-out-of-scope-2026/index.html" title="Out of Scope Is Not Out of Risk: The 2026 Model-Risk Rewrite Left Out the Models Banks Are Actually Deploying">
+<img alt="A long dark bench on a vast paved plaza seen from directly above, with a single seated figure at the far right edge and open ground stretching away from them." src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Dora · Threat-Led Penetration Testing · Tlpt</span>
-<h3><a href="/2026-07-29-threat-led-penetration-testing-dora-tlpt-banks-2026/index.html" title="The Red Team Became a Supervised Supply Chain: What DORA's TLPT Regime Actually Demands">The Red Team Became a Supervised Supply Chain: What DORA's TLPT Regime Actually Demands</a></h3>
-<p class="newsroom-meta"><time datetime="2026-07-29">July 29, 2026</time> · Sebastien Rousseau</p>
-<p>Most banks have costed the test. Fewer have costed the supply chain it now depends on: an accredited tester market on a synchronised three-year clock, and threat intelligence that must come from outside every single time.</p>
-<p><a class="pill ghost" href="/2026-07-29-threat-led-penetration-testing-dora-tlpt-banks-2026/index.html" title="The Red Team Became a Supervised Supply Chain: What DORA's TLPT Regime Actually Demands">Read the full story</a></p>
+<span class="newsroom-eyebrow">Model Risk · Generative Ai · Ai Governance</span>
+<h3><a href="/2026-07-30-model-risk-management-generative-ai-out-of-scope-2026/index.html" title="Out of Scope Is Not Out of Risk: The 2026 Model-Risk Rewrite Left Out the Models Banks Are Actually Deploying">Out of Scope Is Not Out of Risk: The 2026 Model-Risk Rewrite Left Out the Models Banks Are Actually Deploying</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-30">July 30, 2026</time> · Sebastien Rousseau</p>
+<p>Fifteen years of model risk doctrine was rewritten in April, and the one paragraph that will matter most to a 2026 risk committee is the one that says which models the guidance does not cover.</p>
+<p><a class="pill ghost" href="/2026-07-30-model-risk-management-generative-ai-out-of-scope-2026/index.html" title="Out of Scope Is Not Out of Risk: The 2026 Model-Risk Rewrite Left Out the Models Banks Are Actually Deploying">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-29-threat-led-penetration-testing-dora-tlpt-banks-2026/index.html" title="The Red Team Became a Supervised Supply Chain: What DORA's TLPT Regime Actually Demands">
+<img alt="The corner of a building clad in a finely perforated white screen, photographed from below against a bright sky." src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Dora · Threat-Led Penetration Testing · Tlpt</span>
+<h3><a href="/2026-07-29-threat-led-penetration-testing-dora-tlpt-banks-2026/index.html" title="The Red Team Became a Supervised Supply Chain: What DORA's TLPT Regime Actually Demands">The Red Team Became a Supervised Supply Chain: What DORA's TLPT Regime Actually Demands</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-29">July 29, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Most banks have costed the test. Fewer have costed the supply chain it now depends on: an accredited tester market on a synchronised three-year clock, and threat intelligence that must come from outside every single time.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-07-28-cryptographic-bill-of-materials-cbom-discovery-banks-2026/index.html" title="You Cannot Migrate What You Cannot Enumerate: The Cryptographic Bill of Materials Banks Still Do Not Have">
