@@ -7,6 +7,8 @@
     "pa11y-ci": "4.1.1"
   },
   "overrides": {
-    "brace-expansion": "^5.0.8"
+    "brace-expansion": "^5.0.9",
+    "ip-address": "^10.3.1",
+    "undici": "^6.28.0"
   }
 }
