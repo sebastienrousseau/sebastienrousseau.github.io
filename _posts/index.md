@@ -206,6 +206,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-29-threat-led-penetration-testing-dora-tlpt-banks-2026/index.html" title="The Red Team Became a Supervised Supply Chain: What DORA's TLPT Regime Actually Demands">
+<img alt="The corner of a building clad in a finely perforated white screen, photographed from below against a bright sky." src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">DORA · Red Teaming · Operational Resilience</span>
+<h3><a href="/2026-07-29-threat-led-penetration-testing-dora-tlpt-banks-2026/index.html">The Red Team Became a Supervised Supply Chain: What DORA's TLPT Regime Actually Demands</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-29">July 29, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> DORA turned adversary simulation into a supervised obligation on a three-year cadence. The constraints that bind are the accredited tester market, threat intelligence that must come from outside every time, and third parties pulled into scope.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-07-28-cryptographic-bill-of-materials-cbom-discovery-banks-2026/index.html" title="You Cannot Migrate What You Cannot Enumerate: The Cryptographic Bill of Materials Banks Still Do Not Have">
 <img alt="A receding row of pendant lamps along a dark window wall, the nearest one sharp and lit and each one behind it fading further into shadow." src="https://cloudcdn.pro/stocks/images/robert-haverly-_kmr5wKVW7E.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
