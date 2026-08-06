@@ -300,9 +300,7 @@ def test_inject_kpi_metrics_fills_minified_unquoted_attributes(monkeypatch):
     # (and the `'data-kpi="'` guard) both missed that form, so the live
     # "By the numbers" rail stayed frozen on 37.1M / 663 / 84 while
     # /about/ and /projects/ — emitted unminified — showed fetched figures.
-    monkeypatch.setattr(
-        seo, "_kpi_cache", {"downloads_total": "42.1M", "github_stars": "672"}
-    )
+    monkeypatch.setattr(seo, "_kpi_cache", {"downloads_total": "42.1M", "github_stars": "672"})
     html = (
         "<div class=kpi-cell>"
         "<span class=kpi-cell-value data-kpi=downloads_total>37.1M</span>"
@@ -337,6 +335,81 @@ def test_inject_kpi_metrics_requires_the_kpi_class(monkeypatch):
         "<spanner class=kpi-cell-value data-kpi=github_stars>663</spanner>",
     ):
         assert seo.inject_kpi_metrics(html) == html, html
+
+
+# ---------------------------------------------------------------------------
+# canonicalise_internal_links
+# ---------------------------------------------------------------------------
+
+
+def test_canonicalise_internal_links_rewrites_every_quoting_style():
+    # The ssg release CI pins minifies pages and strips attribute quotes, so
+    # the pass has to handle bare values as well as quoted ones.
+    for html, want in (
+        ('<a href="/about/index.html">A</a>', '<a href="/about/">A</a>'),
+        ("<a href='/about/index.html'>A</a>", "<a href='/about/'>A</a>"),
+        ("<a href=/about/index.html>A</a>", "<a href=/about/>A</a>"),
+    ):
+        out, n = seo.canonicalise_internal_links(html)
+        assert out == want, html
+        assert n == 1
+
+
+def test_canonicalise_internal_links_handles_root_absolute_and_nested():
+    for html, want in (
+        # Home page: canonical is "/", not "/index.html".
+        ('<a href="/index.html">H</a>', '<a href="/">H</a>'),
+        (
+            '<a href="https://sebastienrousseau.com/articles/index.html">A</a>',
+            '<a href="https://sebastienrousseau.com/articles/">A</a>',
+        ),
+        ('<a href="/fr/a-propos/index.html">A</a>', '<a href="/fr/a-propos/">A</a>'),
+        ('<form action="/contact/index.html">', '<form action="/contact/">'),
+    ):
+        assert seo.canonicalise_internal_links(html)[0] == want, html
+
+
+def test_canonicalise_internal_links_preserves_fragment_and_query():
+    out, _ = seo.canonicalise_internal_links('<a href="/editorial/index.html#bot-policy">p</a>')
+    assert out == '<a href="/editorial/#bot-policy">p</a>'
+    out, _ = seo.canonicalise_internal_links('<a href="/search/index.html?q=iso">s</a>')
+    assert out == '<a href="/search/?q=iso">s</a>'
+
+
+def test_canonicalise_internal_links_leaves_everything_else_alone():
+    for html in (
+        # External host — not ours to canonicalise.
+        '<a href="https://example.com/a/index.html">e</a>',
+        # Not an href/action attribute.
+        '<img src="/assets/index.html" />',
+        # index.html is not the final path segment.
+        '<a href="/docs/index.html.bak">x</a>',
+        # JSON-LD sameAs carries the index.html form deliberately; it has no
+        # href= prefix, so the pass must not reach into it.
+        '<script type="application/ld+json">'
+        '{"sameAs":["https://sebastienrousseau.com/p/index.html"]}</script>',
+        # Already canonical.
+        '<a href="/about/">A</a>',
+    ):
+        assert seo.canonicalise_internal_links(html) == (html, 0), html
+
+
+def test_canonicalise_internal_links_is_idempotent_and_counts():
+    html = (
+        '<a href="/about/index.html">A</a>'
+        "<a href=/articles/index.html>B</a>"
+        '<a href="https://example.com/x/index.html">skip</a>'
+    )
+    once, n1 = seo.canonicalise_internal_links(html)
+    twice, n2 = seo.canonicalise_internal_links(once)
+    assert n1 == 2
+    assert twice == once and n2 == 0
+    assert "example.com/x/index.html" in once
+
+
+def test_canonicalise_internal_links_no_op_without_index_html():
+    html = "<p>nothing to do</p>"
+    assert seo.canonicalise_internal_links(html) == (html, 0)
 
 
 # ---------------------------------------------------------------------------
