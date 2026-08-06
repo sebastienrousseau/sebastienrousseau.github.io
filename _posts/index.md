@@ -206,6 +206,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-07-31-fida-open-finance-data-sharing-schemes-banks-2026/index.html" title="PSD2 Made Banks Build an API. FiDA Makes Them Join a Market.">
+<img alt="A dense city grid photographed from directly above at night, thousands of lit buildings and intersecting streets extending to every edge of the frame." src="https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Open Finance · FiDA · Data Strategy</span>
+<h3><a href="/2026-07-31-fida-open-finance-data-sharing-schemes-banks-2026/index.html">PSD2 Made Banks Build an API. FiDA Makes Them Join a Market.</a></h3>
+<p class="newsroom-meta"><time datetime="2026-07-31">July 31, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> Compliance runs through a scheme you must join, not an interface you build alone. Access acquires a price, and the scope reaches the products banks actually earn on. The terms are being negotiated now.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-07-30-model-risk-management-generative-ai-out-of-scope-2026/index.html" title="Out of Scope Is Not Out of Risk: The 2026 Model-Risk Rewrite Left Out the Models Banks Are Actually Deploying">
 <img alt="A long dark bench on a vast paved plaza seen from directly above, with a single seated figure at the far right edge and open ground stretching away from them." src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -265,17 +277,6 @@ site_software: "Static Site Generator, Rust"
 </div>
 </article>
 
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-07-24-global-payments-outlook-operating-model-risk-revenue/index.html" title="The 2026 Global Payments Outlook: Operating Model, Risk, and Revenue in an Agentic, Invisible, Real-Time World">
-<img alt="An aerial view of London's financial district, representing the 2026 global payments operating model of agentic, invisible, real-time flows." src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Payments · Transaction Banking · DORA</span>
-<h3><a href="/2026-07-24-global-payments-outlook-operating-model-risk-revenue/index.html">The 2026 Global Payments Outlook: Operating Model, Risk, and Revenue in an Agentic, Invisible, Real-Time World</a></h3>
-<p class="newsroom-meta"><time datetime="2026-07-24">July 24, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> A G-SIB operating-model view of 2026 payments: agentic delegated liability, always-on liquidity under DORA, tokenised unified ledgers via Project Agorá, and the hard-dated November 2026 SWIFT structured-address cut-over.</p>
-</div>
-</article>
 
 
 </div>
