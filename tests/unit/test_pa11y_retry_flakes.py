@@ -136,3 +136,74 @@ def test_url_with_no_issues_is_ignored(tmp_path: Path) -> None:
     assert rc == 0
     (urls,), _ = mock_retry.call_args
     assert urls == ["http://x.example/flake/"]
+
+
+def test_navigation_timeout_is_a_flake(tmp_path: Path) -> None:
+    """A page-load timeout is transient, not a WCAG violation.
+
+    Puppeteer reports it with code "?", so before it was listed in
+    FLAKE_NEEDLES it was misfiled as a real failure and blocked the
+    merge without ever being retried.
+    """
+    report = _write_report(
+        tmp_path,
+        {
+            "results": {
+                "http://x.example/id/a/": [
+                    {
+                        "code": "?",
+                        "message": "Navigation timeout of 20000 ms exceeded",
+                    },
+                ],
+            },
+        },
+    )
+    with patch.object(prf, "_retry_urls", return_value=0) as mock_retry:
+        rc = prf.main(["pa11y_retry_flakes.py", str(report)])
+    assert rc == 0
+    mock_retry.assert_called_once()
+    (urls,), _ = mock_retry.call_args
+    assert urls == ["http://x.example/id/a/"]
+
+
+def test_navigation_timeout_still_fails_if_retry_fails(tmp_path: Path) -> None:
+    """A page that times out twice is broken, and must still block."""
+    report = _write_report(
+        tmp_path,
+        {
+            "results": {
+                "http://x.example/id/a/": [
+                    {
+                        "code": "?",
+                        "message": "Navigation timeout of 20000 ms exceeded",
+                    },
+                ],
+            },
+        },
+    )
+    with patch.object(prf, "_retry_urls", return_value=1):
+        assert prf.main(["pa11y_retry_flakes.py", str(report)]) == 1
+
+
+def test_timeout_mixed_with_real_failure_is_not_retried(tmp_path: Path) -> None:
+    """A timeout alongside a genuine violation must not mask it."""
+    report = _write_report(
+        tmp_path,
+        {
+            "results": {
+                "http://x.example/id/a/": [
+                    {
+                        "code": "?",
+                        "message": "Navigation timeout of 20000 ms exceeded",
+                    },
+                    {
+                        "code": "WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37",
+                        "message": "Img element missing an alt attribute.",
+                    },
+                ],
+            },
+        },
+    )
+    with patch.object(prf, "_retry_urls", return_value=0) as mock_retry:
+        assert prf.main(["pa11y_retry_flakes.py", str(report)]) == 1
+    mock_retry.assert_not_called()
