@@ -206,6 +206,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-08-01-eudi-wallet-eidas-2-banks-relying-party-2026/index.html" title="The Wallet Ships in December. Banks Must Accept It a Year Later.">
+<img alt="A covered pedestrian passage between office towers in a financial district, lit from the far end, with the walkway narrowing toward a single controlled opening." src="https://cloudcdn.pro/stocks/images/jez-timms-4xLteCXh6X0.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Digital Identity · eIDAS 2 · Authentication</span>
+<h3><a href="/2026-08-01-eudi-wallet-eidas-2-banks-relying-party-2026/index.html">The Wallet Ships in December. Banks Must Accept It a Year Later.</a></h3>
+<p class="newsroom-meta"><time datetime="2026-08-01">August 1, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> Member States must ship an EU Digital Identity Wallet by December 2026; banks must accept it by December 2027. The bank becomes a registered relying party, and the hardest part is binding a state identity to a customer record opened a decade ago.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-07-31-fida-open-finance-data-sharing-schemes-banks-2026/index.html" title="PSD2 Made Banks Build an API. FiDA Makes Them Join a Market.">
 <img alt="A dense city grid photographed from directly above at night, thousands of lit buildings and intersecting streets extending to every edge of the frame." src="https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -264,20 +276,6 @@ site_software: "Static Site Generator, Rust"
 <p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> The Instant Payments Regulation made payee verification a free utility every euro-area PSP must run. The cost landed not on the match but on close matches, de-bulked corporate files, and a liability boundary the rulebook declines to draw.</p>
 </div>
 </article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-07-26-from-evidence-to-truth-certified-blockchains-banking-trust/index.html" title="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust">
-<img alt="A constellation of interconnected points of light, representing certified blockchains as the substrate of verifiable banking trust." src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Blockchain · DLT Assurance · DORA</span>
-<h3><a href="/2026-07-26-from-evidence-to-truth-certified-blockchains-banking-trust/index.html">From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust</a></h3>
-<p class="newsroom-meta"><time datetime="2026-07-26">July 26, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> Banks certify the entity, the cloud and their AI, but not the ledger that decides what is true. A 5-level Certified Blockchain Index scores ledger governance, consensus, cryptography and observability, closing the fiduciary gap and giving AI a deterministic audit spine.</p>
-</div>
-</article>
-
-
 
 </div>
 
