@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Πυκνό αστικό πλέγμα φωτογραφημένο κατακόρυφα από ψηλά τη νύχτα, με χιλιάδες φωτισμένα κτίρια και διασταυρούμενους δρόμους να εκτείνονται ως την άκρη του κάδρου."
-banner_height: "1187"
-banner_width: "1920"
-banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Grid bandar yang padat dirakam terus dari atas pada waktu malam, ribuan bangunan bercahaya dan jalan bersilang memanjang ke setiap tepi bingkai."
-banner_height: "1187"
-banner_width: "1920"
-banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

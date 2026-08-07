@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "రాత్రి వేళ నేరుగా పైనుంచి తీసిన దట్టమైన నగర గ్రిడ్, ఫ్రేమ్ అంచుల వరకు విస్తరించిన వేలాది వెలుగుతున్న భవనాలు మరియు కలుసుకునే వీధులు."
-banner_height: "1187"
-banner_width: "1920"
-banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

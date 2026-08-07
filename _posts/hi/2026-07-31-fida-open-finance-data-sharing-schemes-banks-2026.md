@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "रात में ठीक ऊपर से खींची गई एक घनी शहरी बसावट, जिसमें हज़ारों रोशन इमारतें और एक-दूसरे को काटती सड़कें फ़्रेम के हर किनारे तक फैली हैं।"
-banner_height: "1187"
-banner_width: "1920"
-banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

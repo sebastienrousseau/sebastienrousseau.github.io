@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "রাতে ঠিক উপর থেকে তোলা একটি ঘন শহরের গ্রিড, হাজার হাজার আলোকিত ভবন ও একে অপরকে ছেদ করা রাস্তা ফ্রেমের প্রতিটি প্রান্ত পর্যন্ত বিস্তৃত।"
-banner_height: "1187"
-banner_width: "1920"
-banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

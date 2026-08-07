@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "இரவில் நேராக மேலிருந்து படமெடுக்கப்பட்ட அடர்த்தியான நகரக் கட்டம்; ஆயிரக்கணக்கான விளக்கேற்றப்பட்ட கட்டடங்களும் குறுக்கிடும் தெருக்களும் சட்டகத்தின் ஒவ்வொரு விளிம்பு வரை நீள்கின்றன."
-banner_height: "1187"
-banner_width: "1920"
-banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"

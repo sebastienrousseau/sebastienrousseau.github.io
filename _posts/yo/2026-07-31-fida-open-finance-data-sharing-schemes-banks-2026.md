@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Àwòrán ìlú ńlá tí a yà láti òkè ní òru, ẹgbẹẹgbẹ̀rún ilé tí ìmọ́lẹ̀ ń tàn àti àwọn òpópónà tí ń kọ́ra wọn, tí ó tàn dé gbogbo etí àwòrán náà."
-banner_height: "1187"
-banner_width: "1920"
-banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp"
+banner_height: "1597"
+banner_width: "2584"
+banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
