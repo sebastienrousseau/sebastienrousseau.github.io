@@ -269,10 +269,26 @@ def _render_card(
     eyebrow_html = f'<p class="eyebrow card-eyebrow">{_esc(eyebrow).upper()}</p>'
     href = href_override or f"/{slug}/"
     safe_alt = banner_alt or title
+    # The featured card is the first <img> on the listing, so postbuild's
+    # stamp_image_dimensions stamps it fetchpriority="high" — which in turn
+    # makes add_responsive_srcset skip it (it assumes a width-matched
+    # preload it must not fight). That leaves the LCP image on whatever
+    # single variant `width` resolves to, so both attributes below matter:
+    #
+    #   loading  lazy would defer the LCP image behind layout. The image
+    #            the page is scored on has to start fetching immediately.
+    #   width    is doubled for DPR (800 -> 1600) and snapped *up* to the
+    #            1920 variant. With no srcset to walk back down, that ships
+    #            the largest file into a box CSS sizes itself. 600 -> 1200.
+    #
+    # Both stay square, and .card-media img is width/height:100% with
+    # object-fit:cover over a 1/1 container, so these are aspect-ratio
+    # hints only — no layout or visual change.
+    loading, box = ("eager", 600) if featured else ("lazy", 800)
     img_html = (
         f'<a class="card-media" href="{href}" tabindex="-1" aria-hidden="true">'
-        f'<img src="{banner}" alt="{_esc(safe_alt)}" loading="lazy" '
-        f'decoding="async" width="800" height="800" />'
+        f'<img src="{banner}" alt="{_esc(safe_alt)}" loading="{loading}" '
+        f'decoding="async" width="{box}" height="{box}" />'
         f"</a>"
     )
     share_html = _card_share_rail(href, title, excerpt)
