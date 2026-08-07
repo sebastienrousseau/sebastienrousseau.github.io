@@ -35,7 +35,15 @@ import sys
 import tempfile
 from pathlib import Path
 
-FLAKE_NEEDLES = ("Execution context was destroyed",)
+FLAKE_NEEDLES = (
+    "Execution context was destroyed",
+    # A page that simply did not load in time under a loaded runner.
+    # Puppeteer reports this with code "?", so without this needle it
+    # is misfiled as a real WCAG violation and blocks the merge. A
+    # genuinely broken page still fails: the retry below re-audits it
+    # and a second timeout propagates its nonzero exit code.
+    "Navigation timeout of",
+)
 
 RETRY_WAIT_MS = 1500
 
