@@ -1,0 +1,85 @@
+# Alerts when main has commits that never reached production.
+#
+# The deploy lives inside ci.yml's finalise job, which is skipped unless
+# every pa11y shard is green. That is the right gate — but it fails
+# silently: the PR goes green, the merge button works, and nothing says
+# the site did not move. On 2026-07-30 a hung pa11y shard skipped the
+# deploy, and three further articles merged before anyone noticed
+# production was still serving the 07-29 build.
+#
+# This job compares main's HEAD against the commit GitHub Pages last
+# deployed and fails when they diverge, so the gap surfaces in under an
+# hour instead of two days.
+name: deploy-drift
+
+on:
+  schedule:
+    # Hourly. Cheap (one API call) and well inside a normal CI cycle, so
+    # a legitimately in-flight deploy is not reported as drift.
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  deployments: read
+
+concurrency:
+  group: deploy-drift
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: main HEAD vs deployed commit
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: main
+          fetch-depth: 50
+
+      - name: Compare deployed commit with main
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          head_sha=$(git rev-parse HEAD)
+          deployed=$(gh api \
+            "repos/${REPO}/deployments?environment=github-pages&per_page=1" \
+            -q '.[0].sha // ""')
+
+          if [ -z "$deployed" ]; then
+            echo "::warning::No github-pages deployment found — nothing to compare."
+            exit 0
+          fi
+
+          echo "main HEAD : $head_sha"
+          echo "deployed  : $deployed"
+
+          if [ "$head_sha" = "$deployed" ]; then
+            echo "In sync."
+            exit 0
+          fi
+
+          # Count only commits that actually change published output.
+          # Workflow-only or tooling-only commits legitimately sit
+          # undeployed until the next content change, and flagging those
+          # would train everyone to ignore this alarm.
+          behind=$(git rev-list --count "${deployed}..${head_sha}" -- \
+            _posts _data _layouts scripts 2>/dev/null || echo "?")
+
+          if [ "$behind" = "0" ]; then
+            echo "Ahead only by commits that do not affect published output."
+            exit 0
+          fi
+
+          echo "::error::Production is $behind content commit(s) behind main."
+          echo "Undeployed commits touching published output:"
+          git log --oneline "${deployed}..${head_sha}" -- _posts _data _layouts scripts | head -20
+          echo
+          echo "Most likely cause: ci.yml's finalise job was skipped because a"
+          echo "pa11y shard failed or hung, so 'Deploy to GitHub Pages' never ran."
+          echo "Re-run the full main workflow (a partial re-run cannot work once"
+          echo "the build-output artifact has expired) to redeploy."
+          exit 1

@@ -641,3 +641,127 @@ def test_cmd_post_handles_missing_manifest(tmp_path: Path) -> None:
         )
     )
     assert rc == 1
+
+
+# ---------------------------------------------------------------------------
+# Partial cache checkpointing (--audited-reports)
+#
+# A hung pa11y shard used to discard the whole run's cache update, so the
+# next run re-swept everything, ran longer, and was likelier to hang again.
+# These cover the narrower update: cache what some shard actually audited
+# clean, leave everything else out.
+# ---------------------------------------------------------------------------
+
+_BASE = "http://127.0.0.1:8000"
+
+
+def _post_args(tmp_path: Path, public_dir: Path, **kw):
+    import argparse
+
+    defaults = dict(
+        public_dir=str(public_dir),
+        cache=str(tmp_path / "_data" / "pa11y-cache.json"),
+        manifest=str(tmp_path / ".pa11y-cache-manifest.json"),
+        audited_reports="",
+        base_url=_BASE,
+    )
+    defaults.update(kw)
+    return argparse.Namespace(**defaults)
+
+
+def _seed_manifest(tmp_path: Path, to_sweep: dict[str, str]) -> None:
+    (tmp_path / ".pa11y-cache-manifest.json").write_text(
+        json.dumps(
+            {
+                "fingerprint": _fp(),
+                "cache_hit_hashes": {},
+                "to_sweep_hashes": to_sweep,
+            },
+        ),
+        encoding="utf-8",
+    )
+
+
+def test_audited_clean_reads_only_passing_urls(tmp_path: Path) -> None:
+    """A URL is audited-clean only if a report lists it with no issues."""
+    reports = tmp_path / "reports"
+    reports.mkdir()
+    (reports / "shard-1.json").write_text(
+        json.dumps(
+            {
+                "results": {
+                    f"{_BASE}/clean/index.html": [],
+                    f"{_BASE}/broken/index.html": [{"code": "WCAG2AA...", "message": "x"}],
+                },
+            },
+        ),
+        encoding="utf-8",
+    )
+    got = pc._audited_clean_relpaths(
+        _post_args(tmp_path, tmp_path, audited_reports=str(reports)),
+    )
+    assert got == {"clean/index.html"}
+
+
+def test_audited_clean_is_none_without_the_flag(tmp_path: Path) -> None:
+    """No flag means the caller is asserting a fully green run."""
+    assert pc._audited_clean_relpaths(_post_args(tmp_path, tmp_path)) is None
+
+
+def test_audited_clean_survives_a_truncated_report(tmp_path: Path) -> None:
+    """A shard killed mid-write leaves invalid JSON; skip it, don't crash."""
+    reports = tmp_path / "reports"
+    reports.mkdir()
+    (reports / "shard-1.json").write_text('{"results": {', encoding="utf-8")
+    (reports / "shard-2.json").write_text(
+        json.dumps({"results": {f"{_BASE}/ok/index.html": []}}),
+        encoding="utf-8",
+    )
+    got = pc._audited_clean_relpaths(
+        _post_args(tmp_path, tmp_path, audited_reports=str(reports)),
+    )
+    assert got == {"ok/index.html"}
+
+
+def test_post_caches_only_audited_pages_when_partial(
+    public_dir: Path,
+    tmp_path: Path,
+) -> None:
+    """The core guarantee: an unaudited page must not be cached.
+
+    page-a was audited clean by a surviving shard; page-b belonged to the
+    shard that hung and was never audited. Only page-a may be
+    checkpointed — otherwise the next run would skip a page nothing has
+    ever checked.
+    """
+    cache_path = tmp_path / "_data" / "pa11y-cache.json"
+    pc.save_cache(cache_path, {"version": pc.CACHE_VERSION, "fingerprint": _fp(), "pages": {}})
+    _seed_manifest(tmp_path, {"page-a/index.html": "a" * 64, "page-b/index.html": "b" * 64})
+
+    reports = tmp_path / "reports"
+    reports.mkdir()
+    (reports / "shard-1.json").write_text(
+        json.dumps({"results": {f"{_BASE}/page-a/index.html": []}}),
+        encoding="utf-8",
+    )
+
+    rc = pc.cmd_post(_post_args(tmp_path, public_dir, audited_reports=str(reports)))
+    assert rc == 0
+    pages = pc.load_cache(cache_path)["pages"]
+    assert "page-a/index.html" in pages
+    assert "page-b/index.html" not in pages
+
+
+def test_post_without_flag_still_caches_whole_delta(
+    public_dir: Path,
+    tmp_path: Path,
+) -> None:
+    """Green-run behaviour is unchanged: the full delta is checkpointed."""
+    cache_path = tmp_path / "_data" / "pa11y-cache.json"
+    pc.save_cache(cache_path, {"version": pc.CACHE_VERSION, "fingerprint": _fp(), "pages": {}})
+    _seed_manifest(tmp_path, {"page-a/index.html": "a" * 64, "page-b/index.html": "b" * 64})
+
+    rc = pc.cmd_post(_post_args(tmp_path, public_dir))
+    assert rc == 0
+    pages = pc.load_cache(cache_path)["pages"]
+    assert {"page-a/index.html", "page-b/index.html"} <= set(pages)
