@@ -249,11 +249,12 @@ jobs:
     needs: build
     if: needs.build.outputs.pa11y-needed == 'true'
     runs-on: ubuntu-latest
-    # A wedged headless-Chrome process can leave pa11y-ci hanging on a
-    # single URL long past its per-URL timeout (observed at 5h+). Bound
-    # the whole shard so a hang fails fast instead of stalling the deploy
-    # indefinitely; a clean shard finishes in ~35 min.
-    timeout-minutes: 50
+    # Backstop only. The run step bounds and retries each pa11y attempt
+    # itself (35m x 2), so this ceiling exists purely to stop a hang
+    # outside pa11y-ci — in checkout, npm ci or the fixture server —
+    # from stalling the deploy indefinitely. It must sit above two full
+    # attempts or the retry can never complete.
+    timeout-minutes: 80
     strategy:
       # Keep all shards going even if one fails, so a single bad URL doesn't
       # mask issues on the other four. We still aggregate exit codes in the
@@ -335,9 +336,36 @@ jobs:
             echo '{"total":0,"passes":0,"errors":0,"results":{}}' > pa11y.shard.json
             exit 0
           fi
+          # A wedged headless-Chrome process hangs pa11y-ci on a single
+          # URL indefinitely. Bounding only the whole job turns that into
+          # a skipped deploy, which is how one transient hang on
+          # 2026-07-30 kept three later merges off production. Bound each
+          # attempt instead and retry once: the hang is transient, and a
+          # re-run of the same commit completed in ~30 min after the
+          # first attempt burned the full 50-minute job budget.
+          #
+          # 35m per attempt clears a clean shard with margin (~13 min
+          # typical, ~30 min against a large backlog delta) while still
+          # catching a hang well inside the job timeout.
+          run_shard() {
+            timeout --signal=TERM --kill-after=60s 35m \
+              pa11y-ci -c .pa11yci.shard --reporter json > pa11y.shard.json
+          }
           set +e
-          pa11y-ci -c .pa11yci.shard --reporter json > pa11y.shard.json
+          run_shard
           rc=$?
+          # 124 = timeout fired; 137 = SIGKILL after --kill-after.
+          if [ "$rc" -eq 124 ] || [ "$rc" -eq 137 ]; then
+            echo "pa11y: shard wedged (exit $rc). Killing stray Chrome and retrying once."
+            pkill -f "chrome|chromium" 2>/dev/null || true
+            sleep 5
+            run_shard
+            rc=$?
+            if [ "$rc" -eq 124 ] || [ "$rc" -eq 137 ]; then
+              echo "pa11y: shard wedged again — failing this shard."
+              exit 1
+            fi
+          fi
           set -e
           if [ "$rc" -eq 0 ]; then
             exit 0
@@ -374,6 +402,67 @@ jobs:
   # artifact, and commit its PNGs to .github/ci-tools/visual/baseline/ in
   # a reviewed PR. Baselines are never pushed automatically.
   # =========================================================================
+  # =========================================================================
+  # Stage 2a-bis — checkpoint the pa11y hash cache even when a shard
+  # failed.
+  #
+  # finalise saves the cache, but only runs when every shard is green, so
+  # one hung shard used to discard the audit work of all the others. The
+  # next run then re-swept the whole delta, took longer, and was likelier
+  # to hang again — a single transient hang on 2026-07-30 compounded into
+  # three merges never reaching production.
+  #
+  # This job breaks that loop. It runs whenever pa11y did not succeed and
+  # checkpoints ONLY the URLs some shard actually audited and found clean
+  # (`post --audited-reports`). Pages nothing audited stay uncached and
+  # get swept next time, so the audit gate is unchanged: this saves work,
+  # never verdicts. Deploy remains gated on a fully green pa11y in
+  # finalise.
+  # =========================================================================
+  pa11y-cache-checkpoint:
+    name: Checkpoint pa11y cache (partial run)
+    needs: [build, pa11y]
+    if: always() && needs.build.result == 'success' && needs.pa11y.result != 'success' && needs.pa11y.result != 'skipped'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Download build artifact
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8
+        with:
+          name: build-output
+
+      - name: Download pa11y shard results
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8
+        with:
+          pattern: pa11y-shard-*
+          path: pa11y-shards
+          merge-multiple: false
+
+      - name: Restore pa11y hash cache
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: _data/pa11y-cache.json
+          key: pa11y-cache-v1-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            pa11y-cache-v1-${{ runner.os }}-
+
+      - name: Checkpoint audited-clean pages only
+        run: |
+          python3 scripts/seo_and_audit/pa11y_cache.py post \
+            --public-dir public \
+            --cache _data/pa11y-cache.json \
+            --manifest .pa11y-cache-manifest.json \
+            --audited-reports pa11y-shards \
+            --base-url http://127.0.0.1:8000
+
+      - name: Save pa11y hash cache
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: _data/pa11y-cache.json
+          key: pa11y-cache-v1-${{ runner.os }}-${{ github.run_id }}
+
   visual:
     name: Visual regression (6 pages, 1440 light)
     needs: build

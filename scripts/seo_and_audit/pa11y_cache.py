@@ -545,6 +545,36 @@ def cmd_pre(args: argparse.Namespace) -> int:
     return 0
 
 
+def _audited_clean_relpaths(args: argparse.Namespace) -> set[str] | None:
+    """Relpaths some shard audited and found clean, or None if not asked.
+
+    Reads the pa11y-ci JSON reports the shards uploaded. Their shape is
+    ``{"results": {url: [issue, ...]}}`` and a *passing* URL is present
+    with an empty issue list, so "audited clean" is exactly
+    ``url in results and not results[url]``. A URL absent from every
+    report was never audited — a hung shard never wrote one — and must
+    not be cached.
+    """
+    reports_dir = getattr(args, "audited_reports", "") or ""
+    if not reports_dir:
+        return None
+    base = (getattr(args, "base_url", "") or "").rstrip("/")
+    clean: set[str] = set()
+    for report in sorted(Path(reports_dir).rglob("*.json")):
+        try:
+            results = json.loads(report.read_text(encoding="utf-8")).get("results", {})
+        except (json.JSONDecodeError, OSError):
+            # A shard that died mid-write leaves a truncated report.
+            # Treat it as "audited nothing" rather than failing the save.
+            continue
+        for url, issues in results.items():
+            if issues:
+                continue
+            rel = url[len(base) :] if base and url.startswith(base) else url
+            clean.add(rel.split("?", 1)[0].split("#", 1)[0].lstrip("/"))
+    return clean
+
+
 def cmd_post(args: argparse.Namespace) -> int:
     """Post-pass: given a successful pa11y run on the delta URLs (which
     is what `pa11y-ci -c .pa11yci` exited 0 for), update the cache so
@@ -573,11 +603,31 @@ def cmd_post(args: argparse.Namespace) -> int:
         pages[rel] = {"hash": h, "status": "pass", "checked": now}
 
     # Newly-passed sweep set: record the current hash as the new
-    # checkpoint. The status comes from the caller — if pa11y exited 0
-    # we trust the full delta passed; if it exited non-zero we never
-    # reach this script (CI fails before we get here), so this branch
-    # only fires on a green run.
-    for rel, h in manifest.get("to_sweep_hashes", {}).items():
+    # checkpoint.
+    #
+    # Without --audited-reports this is a whole-delta update, which is
+    # only sound on a green run: pa11y exited 0, so every swept URL
+    # passed.
+    #
+    # With --audited-reports the run was NOT fully green — one shard
+    # hung or failed — and we may only checkpoint the URLs some shard
+    # actually audited and found clean. That keeps a transient hang in
+    # one shard from throwing away the other shards' work, which is what
+    # turns a single bad run into a compounding backlog: an unsaved
+    # cache means the next run re-sweeps everything, runs longer, and is
+    # likelier to hang again. Pages that were never audited simply stay
+    # out of the cache and get swept next time.
+    audited = _audited_clean_relpaths(args)
+    swept = manifest.get("to_sweep_hashes", {})
+    if audited is not None:
+        skipped = [rel for rel in swept if rel not in audited]
+        swept = {rel: h for rel, h in swept.items() if rel in audited}
+        print(
+            f"pa11y-cache post: partial update — {len(swept)} of "
+            f"{len(swept) + len(skipped)} swept pages were audited clean; "
+            f"{len(skipped)} left uncached for the next run.",
+        )
+    for rel, h in swept.items():
         pages[rel] = {"hash": h, "status": "pass", "checked": now}
 
     # Drop entries for files that no longer exist in public/. They'd
@@ -617,6 +667,16 @@ def main(argv: list[str] | None = None) -> int:
     p_post.add_argument("--public-dir", default="public")
     p_post.add_argument("--cache", default="_data/pa11y-cache.json")
     p_post.add_argument("--manifest", default=".pa11y-cache-manifest.json")
+    p_post.add_argument(
+        "--audited-reports",
+        default="",
+        help=(
+            "Directory of pa11y-ci shard JSON reports. When given, only "
+            "URLs a shard actually audited and found clean are cached — "
+            "use this to checkpoint a partially-green run."
+        ),
+    )
+    p_post.add_argument("--base-url", default="http://127.0.0.1:8000")
     p_post.set_defaults(func=cmd_post)
 
     args = parser.parse_args(argv)
