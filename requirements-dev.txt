@@ -3,7 +3,7 @@
 # (OpenSSF Scorecard Pinned-Dependencies). Versions marked ADR-0002 are
 # the deliberate inline pins this file replaces; the rest resolve to the
 # latest compatible release at lock-generation time.
-ruff==0.16.1                       # ADR-0002
+ruff==0.16.2                       # ADR-0002
 mypy==2.3.0                        # ADR-0002
 types-PyYAML==6.0.12.20260724      # ADR-0002
 cyclonedx-bom==7.3.1               # ADR-0002 (SBOM, ADR-0004)
