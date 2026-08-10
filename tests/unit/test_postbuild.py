@@ -278,3 +278,60 @@ def test_write_llms_full_txt_idempotent(tmp_path, monkeypatch):
 
     assert write_llms_full_txt(public) is True
     assert write_llms_full_txt(public) is False  # idempotent
+
+
+# ---------------------------------------------------------------------------
+# CNAME normalisation
+#
+# GitHub Pages re-reads public/CNAME on every deploy and wants a bare
+# hostname. The SSG writes a full DNS record line
+# ("example.com 3600 IN CNAME www.example.com"); Pages tolerates it by
+# taking the first token, but the published file should say what it means.
+# ---------------------------------------------------------------------------
+
+
+def test_normalise_cname_strips_dns_record_syntax(tmp_path):
+    """The SSG's full record line collapses to the bare hostname."""
+    from postbuild_lib.output import normalise_cname
+
+    (tmp_path / "CNAME").write_text(
+        "sebastienrousseau.com 3600 IN CNAME www.sebastienrousseau.com\n",
+        encoding="utf-8",
+    )
+    assert normalise_cname(tmp_path) is True
+    assert (tmp_path / "CNAME").read_text(encoding="utf-8") == "sebastienrousseau.com\n"
+
+
+def test_normalise_cname_is_idempotent(tmp_path):
+    """A correct file is left alone, so repeat postbuild runs are no-ops."""
+    from postbuild_lib.output import normalise_cname
+
+    (tmp_path / "CNAME").write_text("sebastienrousseau.com\n", encoding="utf-8")
+    assert normalise_cname(tmp_path) is False
+    assert (tmp_path / "CNAME").read_text(encoding="utf-8") == "sebastienrousseau.com\n"
+
+
+def test_normalise_cname_adds_trailing_newline(tmp_path):
+    """A bare host with no trailing newline is still rewritten once."""
+    from postbuild_lib.output import normalise_cname
+
+    (tmp_path / "CNAME").write_text("sebastienrousseau.com", encoding="utf-8")
+    assert normalise_cname(tmp_path) is True
+    assert (tmp_path / "CNAME").read_text(encoding="utf-8") == "sebastienrousseau.com\n"
+
+
+def test_normalise_cname_ignores_missing_file(tmp_path):
+    """No CNAME (e.g. a preview build) must not create one."""
+    from postbuild_lib.output import normalise_cname
+
+    assert normalise_cname(tmp_path) is False
+    assert not (tmp_path / "CNAME").exists()
+
+
+def test_normalise_cname_leaves_blank_file_alone(tmp_path):
+    """An empty file yields no hostname; don't invent one."""
+    from postbuild_lib.output import normalise_cname
+
+    (tmp_path / "CNAME").write_text("\n  \n", encoding="utf-8")
+    assert normalise_cname(tmp_path) is False
+    assert (tmp_path / "CNAME").read_text(encoding="utf-8") == "\n  \n"

@@ -192,6 +192,42 @@ def write_robots(public: Path) -> bool:
 
 
 # ---------------------------------------------------------------------------
+# 6a-iii. CNAME — force a bare hostname
+# ---------------------------------------------------------------------------
+#
+# GitHub Pages reads public/CNAME to learn the custom domain, and the file
+# must contain a bare hostname and nothing else. The SSG emits a full DNS
+# record line instead:
+#
+#     sebastienrousseau.com 3600 IN CNAME www.sebastienrousseau.com
+#
+# Pages currently tolerates that — it takes the first token, which is why
+# the API still reports cname=sebastienrousseau.com — but it re-reads the
+# file on every deploy, and a malformed value is a bad thing to leave
+# sitting under a domain whose certificate is issued off that setting.
+# Normalise to the first token so what we publish says exactly what we
+# mean. Idempotent: returns False when the file is already bare.
+
+
+def normalise_cname(public: Path) -> bool:
+    """Rewrite public/CNAME to the bare hostname. True if it changed."""
+    target = public / "CNAME"
+    if not target.is_file():
+        return False
+    cur = target.read_text(encoding="utf-8")
+    # First whitespace-delimited token of the first non-empty line. A
+    # correct file already *is* that token, so this is a no-op for it.
+    host = next((ln.split()[0] for ln in cur.splitlines() if ln.split()), "")
+    if not host:
+        return False
+    body = f"{host}\n"
+    if cur == body:
+        return False
+    target.write_text(body, encoding="utf-8")
+    return True
+
+
+# ---------------------------------------------------------------------------
 # 6a-ii. humans.txt + security.txt — copy the source files into public/
 # ---------------------------------------------------------------------------
 #
