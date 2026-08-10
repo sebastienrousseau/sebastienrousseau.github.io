@@ -245,6 +245,7 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
     build_llms_ctx_txt,
     build_llms_full_txt,
     build_llms_txt,
+    normalise_cname,
     write_ai_txt,
     write_humans,
     write_json_feed,
@@ -686,6 +687,10 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int, int]:
     # copy through from the repo-root sources so both land non-empty.
     write_humans(PUBLIC, Path("."))
     write_security_txt(PUBLIC, Path("."))
+    # GitHub Pages re-reads CNAME on every deploy and needs a bare
+    # hostname; the SSG emits a full DNS record line.
+    if normalise_cname(PUBLIC):
+        print("  CNAME              : normalised to bare hostname")
     llms_written = write_llms_txt(PUBLIC)
     llms_ctx_written = write_llms_ctx_txt(PUBLIC)
     llms_full_written = write_llms_full_txt(PUBLIC)
