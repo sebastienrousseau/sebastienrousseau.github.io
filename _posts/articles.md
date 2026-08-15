@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-08-01-eudi-wallet-eidas-2-banks-relying-party-2026/index.html" title="The Wallet Ships in December. Banks Must Accept It a Year Later.">
-<img alt="A covered pedestrian passage between office towers in a financial district, lit from the far end, with the walkway narrowing toward a single controlled opening." src="https://cloudcdn.pro/stocks/images/jez-timms-4xLteCXh6X0.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026/index.html" title="Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.">
+<img alt="A white and blue building facade filled with rows of blue glass windows, seen straight on so the glazing reads as a continuous reflective surface." src="https://cloudcdn.pro/stocks/images/marek-piwnicki-11829333.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Digital Identity · Eidas · Eudi Wallet</span>
-<h3><a href="/2026-08-01-eudi-wallet-eidas-2-banks-relying-party-2026/index.html" title="The Wallet Ships in December. Banks Must Accept It a Year Later.">The Wallet Ships in December. Banks Must Accept It a Year Later.</a></h3>
-<p class="newsroom-meta"><time datetime="2026-08-01">August 1, 2026</time> · Sebastien Rousseau</p>
-<p>For a decade banks have owned the login. eIDAS 2 turns identity into something the customer carries and the bank is obliged to accept on request.</p>
-<p><a class="pill ghost" href="/2026-08-01-eudi-wallet-eidas-2-banks-relying-party-2026/index.html" title="The Wallet Ships in December. Banks Must Accept It a Year Later.">Read the full story</a></p>
+<span class="newsroom-eyebrow">Eu Ai Act · Article 50 · Ai Governance</span>
+<h3><a href="/2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026/index.html" title="Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.">Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.</a></h3>
+<p class="newsroom-meta"><time datetime="2026-08-02">August 2, 2026</time> · Sebastien Rousseau</p>
+<p>Relief on the high-risk file arrived nine days ago. The risk now is that banks read one deferral and stand down a programme that still has an obligation biting today.</p>
+<p><a class="pill ghost" href="/2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026/index.html" title="Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-08-01-eudi-wallet-eidas-2-banks-relying-party-2026/index.html" title="The Wallet Ships in December. Banks Must Accept It a Year Later.">
+<img alt="A covered pedestrian passage between office towers in a financial district, lit from the far end, with the walkway narrowing toward a single controlled opening." src="https://cloudcdn.pro/stocks/images/jez-timms-4xLteCXh6X0.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Digital Identity · Eidas · Eudi Wallet</span>
+<h3><a href="/2026-08-01-eudi-wallet-eidas-2-banks-relying-party-2026/index.html" title="The Wallet Ships in December. Banks Must Accept It a Year Later.">The Wallet Ships in December. Banks Must Accept It a Year Later.</a></h3>
+<p class="newsroom-meta"><time datetime="2026-08-01">August 1, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">For a decade banks have owned the login. eIDAS 2 turns identity into something the customer carries and the bank is obliged to accept on request.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-07-31-fida-open-finance-data-sharing-schemes-banks-2026/index.html" title="PSD2 Made Banks Build an API. FiDA Makes Them Join a Market.">
