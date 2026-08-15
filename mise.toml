@@ -9,6 +9,13 @@ python = "3.12"
 node   = "22"
 rust   = "stable"
 
+# pandoc renders the lead-magnet PDFs in build.sh (build_lead_magnets.py).
+# It must be declared here, not merely installed globally: mise puts a
+# `pandoc` shim on PATH regardless, but the shim exits non-zero unless a
+# version is bound for *this* directory. An unbound shim looks present and
+# fails on use, which broke `./build.sh` at the lead-magnet step.
+pandoc = "3.10"
+
 # JS CLI tools managed by mise's npm backend — pinned to the SAME exact
 # versions CI uses (`.github/workflows/ci.yml`: `pa11y-ci@4.1.1`). See
 # ADR-0002. After `mise install`, `pa11y-ci` and `http-server` resolve on
