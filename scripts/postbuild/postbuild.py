@@ -30,6 +30,7 @@ from postbuild_assets import (
     fix_sri,
     inject_jsonld_hashes,
     inject_lcp_preload,
+    normalise_csp,
     setup_asset_state,
     stamp_asset_fingerprints,
     wrap_cdn_images_in_transform,
@@ -309,6 +310,7 @@ class _PostbuildCounters:
         "citation_patched",
         "cite_panels_set",
         "crumbs_patched",
+        "csp_normalised",
         "csp_patched",
         "decks_set",
         "desc_cleaned",
@@ -657,6 +659,12 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     # sitemap). Runs after hreflang + furniture so it overrides any earlier
     # writer. Idempotent.
     patched_hl = normalize_canonical(page, patched_hl)
+    # ssg emits its own listing pages (tag indexes) without our layouts and
+    # ships them a weaker default policy. Normalise before hashing so the
+    # JSON-LD hashes land in the canonical policy rather than ssg's.
+    patched_hl, csp_replaced = normalise_csp(patched_hl)
+    if csp_replaced:
+        ctx.counters.csp_normalised += 1
     patched2 = inject_jsonld_hashes(patched_hl)
     if patched2 != prev_hl:
         ctx.counters.csp_patched += 1
@@ -804,6 +812,7 @@ def main() -> None:
         f"{c.nav_patched} got prev/next nav, "
         f"{c.hreflang_patched} got hreflang pairs, "
         f"{c.csp_patched} got CSP JSON-LD hashes, "
+        f"{c.csp_normalised} got CSP normalised, "
         f"{js_count} JS file(s) minified saving {js_saved} bytes, "
         f"{css_count} CSS file(s) minified saving {css_saved} bytes, "
         f"{sitemap_patched} sitemap entries refreshed, "
