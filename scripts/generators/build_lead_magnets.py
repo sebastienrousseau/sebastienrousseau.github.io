@@ -7,13 +7,18 @@ like ``/resources-pacs008-checklist/``. Source markdown lives in the
 repo; the generated PDFs land in ``public/resources/`` so the deployed
 site serves them from e.g. ``/resources/pacs008-checklist.pdf``.
 
-Requires ``pandoc`` and a LaTeX engine (``xelatex`` preferred) on
-PATH. If either is missing, the committed copies under
-``_data/lead-magnets/pdf/`` are copied into ``public/resources/``
-instead, so non-author developers and CI runners (no TeX install)
-still ship the PDFs. When the tooling *is* present, freshly rendered
-PDFs are mirrored back into ``_data/lead-magnets/pdf/`` so the
-committed store stays current.
+Requires a working ``pandoc`` and LaTeX engine (``xelatex``
+preferred). If either is missing *or does not run*, the committed
+copies under ``_data/lead-magnets/pdf/`` are copied into
+``public/resources/`` instead, so non-author developers and CI
+runners (no TeX install) still ship the PDFs. When the tooling *is*
+usable, freshly rendered PDFs are mirrored back into
+``_data/lead-magnets/pdf/`` so the committed store stays current.
+
+"Missing" deliberately means unusable, not merely absent: a mise/asdf
+shim resolves on PATH yet exits non-zero when no version is bound for
+the directory, which used to slip past the fallback and fail the whole
+build. See ``usable()``.
 """
 
 from __future__ import annotations
@@ -33,11 +38,37 @@ OUT = Path("public/resources")
 COMMITTED = Path("_data/lead-magnets/pdf")
 
 
+def usable(exe: str) -> bool:
+    """True only if ``exe`` resolves on PATH *and* actually runs.
+
+    Presence on PATH is not proof a tool works. Version managers (mise,
+    asdf) install shims that resolve happily but exit non-zero when no
+    version is bound for the current directory — ``shutil.which()``
+    reports those as available, so the caller sails past the fallback
+    and dies later on a real invocation. Probing ``--version`` is the
+    cheapest way to tell a working binary from a dangling shim.
+    """
+    path = shutil.which(exe)
+    if not path:
+        return False
+    try:
+        proc = subprocess.run(
+            [path, "--version"],
+            capture_output=True,
+            timeout=30,
+            check=False,
+        )
+    except (OSError, subprocess.SubprocessError):
+        # Not executable, killed, or timed out — all mean "cannot use".
+        return False
+    return proc.returncode == 0
+
+
 def have_tooling() -> tuple[bool, str]:
-    if not shutil.which("pandoc"):
-        return False, "pandoc not on PATH — falling back to committed PDFs"
-    if not (shutil.which("xelatex") or shutil.which("pdflatex")):
-        return False, "no LaTeX engine on PATH — falling back to committed PDFs"
+    if not usable("pandoc"):
+        return False, "pandoc not usable — falling back to committed PDFs"
+    if not (usable("xelatex") or usable("pdflatex")):
+        return False, "no working LaTeX engine — falling back to committed PDFs"
     return True, ""
 
 
@@ -121,7 +152,7 @@ def main() -> int:
     for md, pdf, exc in results:
         if exc is not None:
             print(
-                f"build_lead_magnets: pandoc failed on {md.name} " f"(exit {exc.returncode})",
+                f"build_lead_magnets: pandoc failed on {md.name} (exit {exc.returncode})",
                 file=sys.stderr,
             )
             return 1

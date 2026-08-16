@@ -1,10 +1,15 @@
 """Unit tests for scripts/build_lead_magnets.py.
 
-Covers all four code paths through main():
-  - no pandoc → fallback copy from _data/lead-magnets/pdf/
-  - no LaTeX → fallback copy from _data/lead-magnets/pdf/
-  - tooling present + no _data/lead-magnets/ → no-op
-  - tooling present + sources → renders each, or surfaces pandoc errors
+Covers tool detection and all four code paths through main():
+  - pandoc missing *or unusable* → fallback copy from _data/lead-magnets/pdf/
+  - LaTeX missing *or unusable* → fallback copy from _data/lead-magnets/pdf/
+  - tooling usable + no _data/lead-magnets/ → no-op
+  - tooling usable + sources → renders each, or surfaces pandoc errors
+
+"Unusable" is the interesting case: a mise/asdf shim resolves on PATH but
+exits non-zero when no version is bound for the directory. Detection must
+probe the binary, not just locate it, or the fallback never fires and the
+whole build dies at the render step.
 """
 
 from __future__ import annotations
@@ -19,46 +24,161 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import build_lead_magnets as blm
 
 # ---------------------------------------------------------------------------
+# helpers
+# ---------------------------------------------------------------------------
+
+
+class _Proc:
+    """Stand-in for subprocess.CompletedProcess — only returncode is read."""
+
+    def __init__(self, returncode: int) -> None:
+        self.returncode = returncode
+
+
+def _stub_tools(monkeypatch, *, on_path, probe_rc=None, raises=None):
+    """Pretend ``on_path`` resolve on PATH and answer ``--version`` probes.
+
+    ``probe_rc`` maps executable name → exit status (default 0). ``raises``
+    maps executable name → exception instance to raise instead.
+    """
+    probe_rc = probe_rc or {}
+    raises = raises or {}
+    monkeypatch.setattr(blm.shutil, "which", lambda n: f"/usr/bin/{n}" if n in on_path else None)
+
+    def fake_run(cmd, **kwargs):
+        exe = Path(cmd[0]).name
+        assert cmd[1] == "--version", f"probe must use --version, got {cmd!r}"
+        if exe in raises:
+            raise raises[exe]
+        return _Proc(probe_rc.get(exe, 0))
+
+    monkeypatch.setattr(blm.subprocess, "run", fake_run)
+
+
+# ---------------------------------------------------------------------------
+# usable
+# ---------------------------------------------------------------------------
+
+
+def test_usable_false_when_not_on_path(monkeypatch):
+    monkeypatch.setattr(blm.shutil, "which", lambda _: None)
+
+    def explode(*a, **kw):  # pragma: no cover - must never run
+        raise AssertionError("must not probe a tool that is not on PATH")
+
+    monkeypatch.setattr(blm.subprocess, "run", explode)
+    assert blm.usable("pandoc") is False
+
+
+def test_usable_true_when_probe_succeeds(monkeypatch):
+    _stub_tools(monkeypatch, on_path={"pandoc"}, probe_rc={"pandoc": 0})
+    assert blm.usable("pandoc") is True
+
+
+def test_usable_false_when_shim_exits_nonzero(monkeypatch):
+    """The mise/asdf regression: on PATH, but no version bound for the dir."""
+    _stub_tools(monkeypatch, on_path={"pandoc"}, probe_rc={"pandoc": 1})
+    assert blm.usable("pandoc") is False
+
+
+def test_usable_false_when_probe_raises_oserror(monkeypatch):
+    _stub_tools(
+        monkeypatch,
+        on_path={"pandoc"},
+        raises={"pandoc": FileNotFoundError("vanished between which() and run()")},
+    )
+    assert blm.usable("pandoc") is False
+
+
+def test_usable_false_when_probe_times_out(monkeypatch):
+    _stub_tools(
+        monkeypatch,
+        on_path={"pandoc"},
+        raises={"pandoc": subprocess.TimeoutExpired(["pandoc"], 30)},
+    )
+    assert blm.usable("pandoc") is False
+
+
+def test_usable_probes_resolved_path_not_bare_name(monkeypatch):
+    seen = {}
+    monkeypatch.setattr(blm.shutil, "which", lambda n: f"/opt/custom/{n}")
+
+    def fake_run(cmd, **kwargs):
+        seen["cmd"] = cmd
+        seen["kwargs"] = kwargs
+        return _Proc(0)
+
+    monkeypatch.setattr(blm.subprocess, "run", fake_run)
+    assert blm.usable("pandoc") is True
+    assert seen["cmd"] == ["/opt/custom/pandoc", "--version"]
+    # A hung shim must not wedge the build, and a noisy one must not
+    # pollute build output.
+    assert seen["kwargs"]["timeout"] == 30
+    assert seen["kwargs"]["capture_output"] is True
+    assert seen["kwargs"]["check"] is False
+
+
+# ---------------------------------------------------------------------------
 # have_tooling
 # ---------------------------------------------------------------------------
 
 
 def test_have_tooling_missing_pandoc(monkeypatch):
-    monkeypatch.setattr(blm.shutil, "which", lambda _: None)
+    _stub_tools(monkeypatch, on_path=set())
+    ok, msg = blm.have_tooling()
+    assert ok is False
+    assert "pandoc" in msg
+
+
+def test_have_tooling_pandoc_on_path_but_broken(monkeypatch):
+    """Regression: a dangling shim used to pass have_tooling() and then
+    fail the build at render time with a non-zero exit."""
+    _stub_tools(monkeypatch, on_path={"pandoc", "xelatex"}, probe_rc={"pandoc": 1})
     ok, msg = blm.have_tooling()
     assert ok is False
     assert "pandoc" in msg
 
 
 def test_have_tooling_missing_latex(monkeypatch):
-    def which(name):
-        return "/usr/bin/pandoc" if name == "pandoc" else None
+    _stub_tools(monkeypatch, on_path={"pandoc"})
+    ok, msg = blm.have_tooling()
+    assert ok is False
+    assert "LaTeX" in msg
 
-    monkeypatch.setattr(blm.shutil, "which", which)
+
+def test_have_tooling_latex_on_path_but_broken(monkeypatch):
+    _stub_tools(
+        monkeypatch,
+        on_path={"pandoc", "xelatex", "pdflatex"},
+        probe_rc={"xelatex": 1, "pdflatex": 1},
+    )
     ok, msg = blm.have_tooling()
     assert ok is False
     assert "LaTeX" in msg
 
 
 def test_have_tooling_all_present_xelatex(monkeypatch):
-    monkeypatch.setattr(
-        blm.shutil,
-        "which",
-        lambda n: f"/usr/bin/{n}" if n in ("pandoc", "xelatex") else None,
-    )
+    _stub_tools(monkeypatch, on_path={"pandoc", "xelatex"})
     ok, msg = blm.have_tooling()
     assert ok is True
     assert msg == ""
 
 
 def test_have_tooling_falls_back_to_pdflatex(monkeypatch):
-    monkeypatch.setattr(
-        blm.shutil,
-        "which",
-        lambda n: f"/usr/bin/{n}" if n in ("pandoc", "pdflatex") else None,
-    )
+    _stub_tools(monkeypatch, on_path={"pandoc", "pdflatex"})
     ok, _ = blm.have_tooling()
     assert ok is True
+
+
+def test_have_tooling_uses_pdflatex_when_xelatex_shim_broken(monkeypatch):
+    _stub_tools(
+        monkeypatch,
+        on_path={"pandoc", "xelatex", "pdflatex"},
+        probe_rc={"xelatex": 1},
+    )
+    ok, msg = blm.have_tooling()
+    assert ok is True
+    assert msg == ""
 
 
 # ---------------------------------------------------------------------------
