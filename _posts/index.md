@@ -206,6 +206,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/index.html" title="DORA Spared You From NIS2. It Will Not Spare You From the CRA.">
+<img alt="Layered mountain ridges receding into pale haze, each ridge fainter than the one before it, seen from above the cloud line." src="https://cloudcdn.pro/stocks/images/paul-earle-wVjd0eWNqI8.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Cyber Resilience Act · Article 14 · Incident Reporting</span>
+<h3><a href="/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/index.html">DORA Spared You From NIS2. It Will Not Spare You From the CRA.</a></h3>
+<p class="newsroom-meta"><time datetime="2026-08-03">August 3, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> CRA Article 14 starts a 24-hour reporting clock on 11 September 2026. It attaches to products rather than entities, so the NIS2 deferral to DORA that spares banks has nothing to displace — and the trigger is exploitation, not severity.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026/index.html" title="Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.">
 <img alt="A white and blue building facade filled with rows of blue glass windows, seen straight on so the glazing reads as a continuous reflective surface." src="https://cloudcdn.pro/stocks/images/marek-piwnicki-11829333.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -262,18 +274,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-07-29-threat-led-penetration-testing-dora-tlpt-banks-2026/index.html">The Red Team Became a Supervised Supply Chain: What DORA's TLPT Regime Actually Demands</a></h3>
 <p class="newsroom-meta"><time datetime="2026-07-29">July 29, 2026</time></p>
 <p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> DORA turned adversary simulation into a supervised obligation on a three-year cadence. The constraints that bind are the accredited tester market, threat intelligence that must come from outside every time, and third parties pulled into scope.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-07-28-cryptographic-bill-of-materials-cbom-discovery-banks-2026/index.html" title="You Cannot Migrate What You Cannot Enumerate: The Cryptographic Bill of Materials Banks Still Do Not Have">
-<img alt="A receding row of pendant lamps along a dark window wall, the nearest one sharp and lit and each one behind it fading further into shadow." src="https://cloudcdn.pro/stocks/images/robert-haverly-_kmr5wKVW7E.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Post-Quantum · Crypto-Agility · DORA</span>
-<h3><a href="/2026-07-28-cryptographic-bill-of-materials-cbom-discovery-banks-2026/index.html">You Cannot Migrate What You Cannot Enumerate: The Cryptographic Bill of Materials Banks Still Do Not Have</a></h3>
-<p class="newsroom-meta"><time datetime="2026-07-28">July 28, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> The first post-quantum deadline is discovery, not migration. Banks cannot meet it from the DORA asset register, which records the server, the owner and the criticality but not the algorithm, key length or certificate expiry.</p>
 </div>
 </article>
 
