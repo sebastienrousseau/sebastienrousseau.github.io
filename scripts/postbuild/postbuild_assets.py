@@ -477,6 +477,89 @@ content_attr_re = re.compile(
 )
 
 
+_CSP_META_RE = re.compile(
+    r"<meta\b[^>]*?http-equiv=[\"']?Content-Security-Policy[\"']?[^>]*?>",
+    re.IGNORECASE,
+)
+_CSP_CONTENT_RE = re.compile(r"content=([\"'])(.*?)\1", re.IGNORECASE | re.DOTALL)
+_SHA_RE = re.compile(r"'sha256-[A-Za-z0-9+/=]+'")
+_LAYOUT_WITH_CSP = Path("_layouts/report.html")
+
+
+def canonical_csp() -> str:
+    """The site's Content-Security-Policy, read from the report layout.
+
+    The layout is the single source of truth — duplicating the policy here
+    would let the two drift silently, which is exactly the failure mode a
+    CSP gate exists to catch.
+    """
+    html = _LAYOUT_WITH_CSP.read_text(encoding="utf-8", errors="ignore")
+    meta = _CSP_META_RE.search(html)
+    if not meta:
+        raise RuntimeError(f"no CSP meta in {_LAYOUT_WITH_CSP} — cannot normalise")
+    content = _CSP_CONTENT_RE.search(meta.group(0))
+    if not content:
+        raise RuntimeError(f"CSP meta in {_LAYOUT_WITH_CSP} has no content attribute")
+    return content.group(2)
+
+
+def _needs_normalising(policy: str) -> bool:
+    """True when a policy fails the shape the CSP gate enforces.
+
+    ssg generates its own listing pages (tag indexes) without going through
+    our layouts, and ships them a weaker default: `style-src` with
+    `'unsafe-inline'`, and `base-uri 'none'` where the gate wants `'self'`.
+    """
+    directives = {}
+    for part in policy.split(";"):
+        part = part.strip()
+        if part:
+            name, _, value = part.partition(" ")
+            directives[name.strip().lower()] = value.strip()
+    if "'unsafe-inline'" in directives.get("style-src", ""):
+        return True
+    if "'unsafe-inline'" in directives.get("script-src", ""):
+        return True
+    return "'self'" not in directives.get("base-uri", "")
+
+
+def _merge_script_hashes(policy: str, hashes: list[str]) -> str:
+    """Carry inline-script hashes across into the canonical policy.
+
+    A generated page computes a sha256 for its own inline bootstrap. Drop
+    that on the floor and the script is blocked at runtime — the page would
+    pass the gate and break in the browser, which is worse than failing.
+    """
+    if not hashes:
+        return policy
+    out = []
+    for part in policy.split(";"):
+        stripped = part.strip()
+        if stripped.lower().startswith("script-src"):
+            missing = [h for h in hashes if h not in stripped]
+            if missing:
+                part = part.rstrip() + " " + " ".join(missing)
+        out.append(part)
+    return ";".join(out)
+
+
+def normalise_csp(html: str) -> tuple[str, bool]:
+    """Replace a non-canonical CSP with the site policy. Idempotent."""
+    meta = _CSP_META_RE.search(html)
+    if not meta:
+        return html, False
+    tag = meta.group(0)
+    content = _CSP_CONTENT_RE.search(tag)
+    if not content:
+        return html, False
+    policy = content.group(2)
+    if not _needs_normalising(policy):
+        return html, False
+    merged = _merge_script_hashes(canonical_csp(), _SHA_RE.findall(policy))
+    new_tag = tag.replace(content.group(0), f'content="{merged}"')
+    return html[: meta.start()] + new_tag + html[meta.end() :], True
+
+
 def inject_jsonld_hashes(html: str) -> str:
     bodies = [m.group(1) for m in jsonld_re.finditer(html)]
     bodies.extend(m.group(1) for m in speculation_re.finditer(html))
