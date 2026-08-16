@@ -62,13 +62,45 @@ def _norm(url: str) -> str:
     return url.rstrip("/")
 
 
+def _index_targets(locs: list[str]) -> list[Path]:
+    """Map <loc> entries of a <sitemapindex> onto files under public/."""
+    out: list[Path] = []
+    for loc in locs:
+        rel = loc.split("//", 1)[-1] if "//" in loc else loc
+        rel = rel.split("/", 1)[-1] if "/" in rel else ""
+        if rel:
+            out.append(PUBLIC / rel.lstrip("/"))
+    return out
+
+
 def collect_sitemap_urls() -> set[str]:
-    """Read every sitemap.xml under public/ (root + per-language indexes)
-    and return the normalised set of every ``<loc>`` entry."""
+    """Return every ``<loc>`` in the root sitemap, following sitemap indexes.
+
+    Deliberately *not* a tree-wide ``rglob``. ssg emits a full copy of the
+    sitemap into every output directory, and each copy prefixes its URLs
+    with the containing directory — yielding malformed double-slash
+    entries like ``/made-with-static-site-generator//2018-01-01-…``. On
+    this site that is 3,635 files, 13.5 GB and ~49.8 M ``<loc>`` entries,
+    of which ~1.8 M are that junk. Reading them turned a one-second gate
+    into a multi-minute one (minutes more when the page cache is cold)
+    while contributing nothing: the root sitemap already covers every
+    rendered page.
+    """
     urls: set[str] = set()
-    for sm in PUBLIC.rglob("sitemap.xml"):
+    seen: set[Path] = set()
+    queue: list[Path] = [PUBLIC / "sitemap.xml"]
+    while queue:
+        sm = queue.pop()
+        resolved = sm.resolve()
+        if resolved in seen or not sm.is_file():
+            continue
+        seen.add(resolved)
         text = sm.read_text(encoding="utf-8", errors="ignore")
-        urls.update(_norm(u) for u in _LOC_RE.findall(text))
+        locs = _LOC_RE.findall(text)
+        if "<sitemapindex" in text:
+            queue.extend(_index_targets(locs))
+        else:
+            urls.update(_norm(u) for u in locs)
     return urls
 
 
@@ -77,8 +109,10 @@ def _is_redirect_page(page: Path) -> bool:
     e.g. /papers/ -> /research/) canonicalise to their target and are
     deliberately purged from the sitemap — a non-canonical URL does not
     belong there. The meta refresh lives in <head>, so sniffing the first
-    few KB is sufficient."""
-    head = page.read_text(encoding="utf-8", errors="ignore")[:4096]
+    few KB is sufficient — read just that, instead of pulling whole pages
+    into memory only to slice the front off them."""
+    with page.open("r", encoding="utf-8", errors="ignore") as fh:
+        head = fh.read(4096)
     return 'http-equiv="refresh"' in head
 
 
