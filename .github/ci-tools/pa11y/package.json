@@ -9,6 +9,7 @@
   "overrides": {
     "brace-expansion": "^5.0.9",
     "ip-address": "^10.3.1",
-    "undici": "^6.28.0"
+    "undici": "^6.28.0",
+    "js-yaml": "^4.3.1"
   }
 }
