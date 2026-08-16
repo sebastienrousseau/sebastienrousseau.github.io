@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026/index.html" title="Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.">
-<img alt="A white and blue building facade filled with rows of blue glass windows, seen straight on so the glazing reads as a continuous reflective surface." src="https://cloudcdn.pro/stocks/images/marek-piwnicki-11829333.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/index.html" title="DORA Spared You From NIS2. It Will Not Spare You From the CRA.">
+<img alt="Layered mountain ridges receding into pale haze, each ridge fainter than the one before it, seen from above the cloud line." src="https://cloudcdn.pro/stocks/images/paul-earle-wVjd0eWNqI8.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Eu Ai Act · Article 50 · Ai Governance</span>
-<h3><a href="/2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026/index.html" title="Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.">Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.</a></h3>
-<p class="newsroom-meta"><time datetime="2026-08-02">August 2, 2026</time> · Sebastien Rousseau</p>
-<p>Relief on the high-risk file arrived nine days ago. The risk now is that banks read one deferral and stand down a programme that still has an obligation biting today.</p>
-<p><a class="pill ghost" href="/2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026/index.html" title="Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.">Read the full story</a></p>
+<span class="newsroom-eyebrow">Cyber Resilience Act · Cra · Dora</span>
+<h3><a href="/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/index.html" title="DORA Spared You From NIS2. It Will Not Spare You From the CRA.">DORA Spared You From NIS2. It Will Not Spare You From the CRA.</a></h3>
+<p class="newsroom-meta"><time datetime="2026-08-03">August 3, 2026</time> · Sebastien Rousseau</p>
+<p>Financial entities learned to answer the NIS2 question with one sentence about DORA. That sentence is correct, and it is about to be applied to a regulation it was never written for.</p>
+<p><a class="pill ghost" href="/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/index.html" title="DORA Spared You From NIS2. It Will Not Spare You From the CRA.">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026/index.html" title="Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.">
+<img alt="A white and blue building facade filled with rows of blue glass windows, seen straight on so the glazing reads as a continuous reflective surface." src="https://cloudcdn.pro/stocks/images/marek-piwnicki-11829333.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Eu Ai Act · Article 50 · Ai Governance</span>
+<h3><a href="/2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026/index.html" title="Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.">Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.</a></h3>
+<p class="newsroom-meta"><time datetime="2026-08-02">August 2, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Relief on the high-risk file arrived nine days ago. The risk now is that banks read one deferral and stand down a programme that still has an obligation biting today.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-08-01-eudi-wallet-eidas-2-banks-relying-party-2026/index.html" title="The Wallet Ships in December. Banks Must Accept It a Year Later.">

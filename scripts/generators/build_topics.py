@@ -216,6 +216,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "into a supervisor-ready scoreboard."
         ),
         "slugs": [
+            "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026",
             "2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026",
             "2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026",
             "2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026",
