@@ -27,9 +27,15 @@ pandoc = "3.10"
 # It tracks the latest published version on crates.io — keep here
 # documented for reproducibility, not for `mise install` to act on.
 #
-#   cargo install ssg --locked --version 0.0.46
+#   cargo install ssg --locked --version 0.0.50
 #
-# Pinned to 0.0.46 across all workflows per ADR-0002; bump deliberately.
+# Policy: CI tracks the latest published ssg. The version is pinned rather
+# than left floating so a build is reproducible and an upstream release
+# cannot change output mid-PR — ssg has form here: 0.0.48+ altered the CSP
+# ssg emits, which broke the build gate until scripts/postbuild/
+# postbuild_assets.py normalise_csp() landed. The bump is therefore a
+# reviewed commit; .github/workflows/ssg-version-check.yml files an issue
+# within a week of a new release so the pin cannot quietly go stale.
 
 [env]
 # Tells Python tooling to honour the repo's pyproject.toml settings.
