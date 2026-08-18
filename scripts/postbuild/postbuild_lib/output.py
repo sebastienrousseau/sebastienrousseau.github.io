@@ -164,9 +164,7 @@ User-agent: Diffbot
 Allow: /
 
 # -- Sitemaps ---------------------------------------------------------------
-Sitemap: https://sebastienrousseau.com/sitemap.xml
-Sitemap: https://sebastienrousseau.com/news-sitemap.xml
-Sitemap: https://sebastienrousseau.com/fr/news-sitemap.xml
+{sitemaps}
 
 # -- Machine-readable surfaces ---------------------------------------------
 # llms.txt        — navigation index for LLM ingestion (llmstxt.org)
@@ -182,12 +180,42 @@ Sitemap: https://sebastienrousseau.com/fr/news-sitemap.xml
 """
 
 
+# Locales whose news sitemap is advertised in robots.txt. A Google News
+# sitemap only does anything for a property approved in Publisher Center, so
+# advertising an unapproved locale is inert — this is an editorial list, not a
+# completeness one. "" is the English root.
+#
+# It is a *filter* over what the build actually produced, not a list of URLs.
+# The previous version hardcoded three literal Sitemap lines, so adding a
+# locale silently left its news sitemap unadvertised and nobody noticed: 34
+# non-empty locale news sitemaps existed on disk while robots.txt named 2.
+# Deriving the candidates from disk means widening coverage is a one-word
+# change here, and a locale that stops producing entries drops out by itself.
+NEWS_SITEMAP_LOCALES: frozenset[str] = frozenset({"", "fr"})
+
+
+def _news_sitemap_lines(public: Path, origin: str = "https://sebastienrousseau.com") -> list[str]:
+    """Sitemap lines for locales that are both advertised and non-empty."""
+    lines = [f"Sitemap: {origin}/sitemap.xml"]
+    for loc in sorted(NEWS_SITEMAP_LOCALES):
+        rel = "news-sitemap.xml" if not loc else f"{loc}/news-sitemap.xml"
+        # Existence only — deliberately not emptiness. The English root news
+        # sitemap is legitimately empty whenever nothing was published in the
+        # last 48 h, which is the correct state for a Google News sitemap, and
+        # filtering on <url> would drop precisely the compliant one while
+        # keeping locale sitemaps that carry months of entries (see #433).
+        if (public / rel).is_file():
+            lines.append(f"Sitemap: {origin}/{rel}")
+    return lines
+
+
 def write_robots(public: Path) -> bool:
     target = public / "robots.txt"
+    body = ROBOTS_BODY.format(sitemaps="\n".join(_news_sitemap_lines(public)))
     cur = target.read_text(encoding="utf-8") if target.is_file() else ""
-    if cur.strip() == ROBOTS_BODY.strip():
+    if cur.strip() == body.strip():
         return False
-    target.write_text(ROBOTS_BODY, encoding="utf-8")
+    target.write_text(body, encoding="utf-8")
     return True
 
 
