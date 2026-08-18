@@ -1188,6 +1188,26 @@ def playlist_layout() -> str:
     return out
 
 
+_BANNER_SRC_META = '    <meta name="banner-src" content="{{banner}}" />\n'
+# Layouts whose pages are not BlogPosting. postbuild_lib.seo reads this meta
+# to rebuild og:image/twitter:image from the real banner; without it ssg
+# scrapes the first body <img> — a share-button icon — and the social card
+# renders small. Emitting it here rather than hand-editing the generated
+# file is the point: a hand edit is silently deleted the next time this
+# generator runs, which is exactly how #396 kept regressing.
+_NEEDS_BANNER_SRC = frozenset({"about.html", "page.html"})
+
+
+def with_banner_src(html: str) -> str:
+    """Insert the banner-src meta ahead of the canonical link. Idempotent."""
+    if 'name="banner-src"' in html:
+        return html
+    anchor = '    <link rel="canonical"'
+    if anchor not in html:
+        raise RuntimeError("canonical link not found — cannot place banner-src meta")
+    return html.replace(anchor, _BANNER_SRC_META + anchor, 1)
+
+
 def write(name: str, html: str) -> None:
     (LAYOUTS / name).write_text(html)
     print(f"wrote _layouts/{name}  ({len(html):,} bytes)")
@@ -1205,6 +1225,8 @@ def main() -> None:
     }
     for name, kind in kind_map.items():
         html = inject_schema(page_html, kind)
+        if name in _NEEDS_BANNER_SRC:
+            html = with_banner_src(html)
         if name == "articles.html":
             # /speaking/, /iso20022-mcp/ and /trust/ fork the built articles
             # page as their shell, so the page-scoped CSS rides articles.html
