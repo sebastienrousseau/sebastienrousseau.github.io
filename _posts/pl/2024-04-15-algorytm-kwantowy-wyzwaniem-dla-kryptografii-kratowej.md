@@ -2,7 +2,7 @@
 title: "Algorytm kwantowy wyzwaniem dla kryptografii kratowej"
 subtitle: "Nowy algorytm kwantowy a kryptografia oparta na kratach"
 description: "Nowy algorytm kwantowy rozwiązuje kluczowy problem kryptograficzny, wzywając do przyspieszenia badań nad bezpieczeństwem odpornym na kwanty."
-date: "Apr 01, 2024"
+date: "April 15, 2024"
 language: "pl-PL"
 locale: "pl_PL"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"

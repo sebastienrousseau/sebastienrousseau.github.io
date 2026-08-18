@@ -3,7 +3,7 @@ title: "మల్టీమోడల్ LLMs తో AI ని ముందుక�
 tags: "Multimodal, LLM, AI, MM1, Pre-training, Image Recognition, NLP, Future, Learning, Research, ISO 20022, post-quantum cryptography, quantum computing"
 subtitle: "AI భవిష్యత్తును ఆవిష్కరిస్తూ: Apple యొక్క సంచలనాత్మక MM1 అధ్యయనం మల్టీమోడల్ లెర్నింగ్‌ను ఎలా విప్లవాత్మకం చేస్తోంది"
 description: "మల్టీమోడల్ లార్జ్ లాంగ్వేజ్ మోడల్స్ (MLLMs) పై Apple యొక్క MM1 పత్రాన్ని అన్వేషించండి. వాటి ఆర్కిటెక్చర్, ప్రీ-ట్రైనింగ్ వ్యూహాలు మరియు AI సామర్థ్యాల గురించి తెలుసుకోండి."
-date: "Mar 17, 2024"
+date: "March 18, 2024"
 language: "te"
 locale: "te_IN"
 banner: "https://cloudcdn.pro/stocks/images/mm1-visual.webp"

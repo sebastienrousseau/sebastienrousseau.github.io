@@ -3,7 +3,7 @@ title: "الگوریتم کوانتومی، رمزنگاری مبتنی بر ش�
 tags: "quantum algorithms, cryptography, lattice problems, LWE, post-quantum cryptography, cybersecurity, research, innovation, future-proofing, ISO 20022, quantum computing, AI"
 subtitle: "الگوریتم کوانتومی چندجمله‌ای‌زمان بعدی برای رمزنگاری مبتنی بر شبکه"
 description: "یک الگوریتم کوانتومی چندجمله‌ای‌زمان جدید از سوی یی‌لی چن، رمزنگاری مبتنی بر شبکه را هدف قرار می‌دهد. پیامدهایی برای استانداردهای پساکوانتومی از جمله CRYSTALS-Kyber."
-date: "Apr 01, 2024"
+date: "April 15, 2024"
 language: "fa"
 locale: "fa_IR"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"

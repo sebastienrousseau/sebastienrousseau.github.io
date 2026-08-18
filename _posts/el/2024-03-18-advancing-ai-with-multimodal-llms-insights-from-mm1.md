@@ -3,7 +3,7 @@ title: "Προωθώντας την ΤΝ με Πολυτροπικά LLM: Γνώ
 tags: "Multimodal, LLM, AI, MM1, Pre-training, Image Recognition, NLP, Future, Learning, Research, ISO 20022, post-quantum cryptography, quantum computing"
 subtitle: "Αποκαλύπτοντας το Μέλλον της ΤΝ: Πώς η Πρωτοποριακή Μελέτη MM1 της Apple Επαναστατεί την Πολυτροπική Μάθηση"
 description: "Εξερευνήστε το άρθρο MM1 της Apple για τα Πολυτροπικά Μεγάλα Γλωσσικά Μοντέλα (MLLM). Μάθετε για την αρχιτεκτονική τους, τις στρατηγικές προεκπαίδευσης και τις δυνατότητες της ΤΝ."
-date: "Mar 17, 2024"
+date: "March 18, 2024"
 language: "el"
 locale: "el_GR"
 banner: "https://cloudcdn.pro/stocks/images/mm1-visual.webp"

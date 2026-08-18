@@ -3,7 +3,7 @@ title: "एआय ट्रेंड्स २०२४: भविष्या�
 tags: "AI, 2024, Trends, generative AI, cybersecurity, Education, Retail, Ethics, Analytics, Innovation, ISO 20022, post-quantum cryptography, quantum computing, open source, Rust"
 subtitle: "तंत्रज्ञान, समाज आणि नैतिक उत्क्रांतीसाठी एक निर्णायक वर्ष"
 description: "२०२४ चे एआय ट्रेंड्स: वित्त क्षेत्रातील जनरेटिव्ह एआय, मल्टिमोडल मॉडेल्स, ऑन-डिव्हाइस एलएलएम आणि बँकिंग व प्रॉडक्ट इंजिनिअरिंगला नव्याने आकार देणारे बदल."
-date: "Jan 08, 2024"
+date: "January 1, 2024"
 language: "mr"
 locale: "mr_IN"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"

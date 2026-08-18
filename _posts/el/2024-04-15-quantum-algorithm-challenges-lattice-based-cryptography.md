@@ -3,7 +3,7 @@ title: "Κβαντικός αλγόριθμος προκαλεί την κρυπ
 tags: "quantum algorithms, cryptography, lattice problems, LWE, post-quantum cryptography, cybersecurity, research, innovation, future-proofing, ISO 20022, quantum computing, AI"
 subtitle: "Ο επόμενος κβαντικός αλγόριθμος πολυωνυμικού χρόνου για την κρυπτογραφία βασισμένη σε πλέγματα"
 description: "Ένας νέος κβαντικός αλγόριθμος πολυωνυμικού χρόνου του Yilei Chen στοχεύει την κρυπτογραφία βασισμένη σε πλέγματα. Επιπτώσεις για τα μετακβαντικά πρότυπα, συμπεριλαμβανομένου του CRYSTALS-Kyber."
-date: "Apr 01, 2024"
+date: "April 15, 2024"
 language: "el"
 locale: "el_GR"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"

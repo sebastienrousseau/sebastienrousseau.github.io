@@ -3,7 +3,7 @@ title: "קידום הבינה המלאכותית עם מודלי שפה גדול
 tags: "Multimodal, LLM, AI, MM1, Pre-training, Image Recognition, NLP, Future, Learning, Research, ISO 20022, קריפטוגרפיה פוסט-קוונטית, מחשוב קוונטי"
 subtitle: "כיצד מחקר MM1 של Apple מקדם את הלמידה הרב-מודלית"
 description: "עיון במאמר MM1 של Apple על מודלי שפה גדולים רב-מודליים (MLLMs). הכירו את הארכיטקטורה שלהם, אסטרטגיות האימון המקדים והפוטנציאל של הבינה המלאכותית."
-date: "Mar 17, 2024"
+date: "March 18, 2024"
 language: "he-IL"
 locale: "he_IL"
 banner: "https://cloudcdn.pro/stocks/images/mm1-visual.webp"

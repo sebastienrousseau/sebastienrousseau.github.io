@@ -2,7 +2,7 @@
 title: "Rozwój AI z multimodalnymi LLM: wnioski z MM1"
 subtitle: "Analiza badań Apple nad multimodalnymi modelami językowymi"
 description: "Analiza artykułu MM1 Apple o multimodalnych dużych modelach językowych: architektura, strategie pretreningu i pojawiające się możliwości."
-date: "Mar 17, 2024"
+date: "March 18, 2024"
 language: "pl-PL"
 locale: "pl_PL"
 banner: "https://cloudcdn.pro/stocks/images/mm1-visual.webp"

@@ -3,7 +3,7 @@ title: "லேட்டிஸ்-அடிப்படையிலான கு�
 tags: "quantum algorithms, cryptography, lattice problems, LWE, post-quantum cryptography, cybersecurity, research, innovation, future-proofing, ISO 20022, quantum computing, AI"
 subtitle: "லேட்டிஸ்-அடிப்படையிலான குறியாக்கவியலுக்கான அடுத்த பல்லுறுப்புக்கோவை-நேர குவாண்டம் அல்காரிதம்"
 description: "Yilei Chen உருவாக்கிய புதிய பல்லுறுப்புக்கோவை-நேர குவாண்டம் அல்காரிதம் லேட்டிஸ்-அடிப்படையிலான குறியாக்கவியலை இலக்கு வைக்கிறது. CRYSTALS-Kyber உள்ளிட்ட பிந்தைய-குவாண்டம் தரநிலைகளுக்கான தாக்கங்கள்."
-date: "Apr 01, 2024"
+date: "April 15, 2024"
 language: "ta"
 locale: "ta_IN"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"

@@ -3,7 +3,7 @@ title: "پیشبرد هوش مصنوعی با مدل‌های زبانی بزر�
 tags: "Multimodal, LLM, AI, MM1, Pre-training, Image Recognition, NLP, Future, Learning, Research, ISO 20022, post-quantum cryptography, quantum computing"
 subtitle: "پرده‌برداری از آیندهٔ هوش مصنوعی: چگونه مطالعهٔ پیشگامانهٔ MM1 اپل یادگیری چندوجهی را دگرگون می‌کند"
 description: "مقالهٔ MM1 اپل دربارهٔ مدل‌های زبانی بزرگ چندوجهی (MLLM) را بررسی کنید. با معماری، راهبردهای پیش‌آموزش و توانمندی‌های هوش مصنوعی آن‌ها آشنا شوید."
-date: "Mar 17, 2024"
+date: "March 18, 2024"
 language: "fa"
 locale: "fa_IR"
 banner: "https://cloudcdn.pro/stocks/images/mm1-visual.webp"

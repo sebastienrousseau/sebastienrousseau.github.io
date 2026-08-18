@@ -3,7 +3,7 @@ title: "خوارزمية كمومية تتحدّى التشفير القائم �
 tags: "quantum algorithms, cryptography, lattice problems, LWE, post-quantum cryptography, cybersecurity, research, innovation, future-proofing, ISO 20022, quantum computing, AI"
 subtitle: "الخوارزمية الكمومية التالية في الزمن المتعدّد الحدود ضدّ التشفير القائم على الشبكات"
 description: "خوارزمية كمومية جديدة في الزمن المتعدّد الحدود من Yilei Chen تستهدف التشفير القائم على الشبكات. تبعات على المعايير ما بعد الكمومية بما في ذلك CRYSTALS-Kyber."
-date: "Apr 01, 2024"
+date: "April 15, 2024"
 language: "fil-PH"
 locale: "fil_PH"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"

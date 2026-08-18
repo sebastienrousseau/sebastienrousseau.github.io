@@ -3,7 +3,7 @@ title: "பன்முக LLM-களுடன் AI-ஐ முன்னேற�
 tags: "Multimodal, LLM, AI, MM1, Pre-training, Image Recognition, NLP, Future, Learning, Research, ISO 20022, post-quantum cryptography, quantum computing"
 subtitle: "AI-இன் எதிர்காலத்தை வெளிப்படுத்துதல்: Apple-இன் முன்னோடி MM1 ஆய்வு பன்முக கற்றலை எவ்வாறு புரட்சிகரமாக மாற்றுகிறது"
 description: "பன்முக பெரிய மொழி மாதிரிகள் (MLLMs) குறித்த Apple-இன் MM1 ஆய்வுக் கட்டுரையை ஆராயுங்கள். அவற்றின் கட்டமைப்பு, முன்-பயிற்சி உத்திகள் மற்றும் AI சாத்தியக்கூறுகள் பற்றி அறியுங்கள்."
-date: "Mar 17, 2024"
+date: "March 18, 2024"
 language: "ta"
 locale: "ta_IN"
 banner: "https://cloudcdn.pro/stocks/images/mm1-visual.webp"

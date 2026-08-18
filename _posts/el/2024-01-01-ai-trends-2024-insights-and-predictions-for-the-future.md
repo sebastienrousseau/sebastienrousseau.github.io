@@ -3,7 +3,7 @@ title: "Τάσεις AI 2024: Γνώσεις και Προβλέψεις για 
 tags: "AI, 2024, Trends, generative AI, cybersecurity, Education, Retail, Ethics, Analytics, Innovation, ISO 20022, post-quantum cryptography, quantum computing, open source, Rust"
 subtitle: "Μια Καθοριστική Χρονιά για την Τεχνολογία, την Κοινωνία και την Ηθική Εξέλιξη"
 description: "Τάσεις AI για το 2024: παραγωγική AI στα χρηματοοικονομικά, πολυτροπικά μοντέλα, LLM στη συσκευή και οι αλλαγές που θα αναδιαμορφώσουν τον τραπεζικό τομέα και τη μηχανική προϊόντων."
-date: "Jan 08, 2024"
+date: "January 1, 2024"
 language: "el"
 locale: "el_GR"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"

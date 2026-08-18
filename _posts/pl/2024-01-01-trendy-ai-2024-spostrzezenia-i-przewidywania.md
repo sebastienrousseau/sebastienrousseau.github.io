@@ -2,7 +2,7 @@
 title: "Trendy AI 2024: spostrzeżenia i przewidywania"
 subtitle: "Co czeka sztuczną inteligencję w 2024 i dalej"
 description: "Trendy 2024 w sztucznej inteligencji: agenci, multimodalne LLM-y, regulacja i AI w przedsiębiorstwach."
-date: "Jan 08, 2024"
+date: "January 1, 2024"
 language: "pl-PL"
 locale: "pl_PL"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"

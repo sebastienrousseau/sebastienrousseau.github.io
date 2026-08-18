@@ -3,7 +3,7 @@ title: "تطوير الذكاء الاصطناعي بالنماذج اللغوي
 tags: "Multimodal, LLM, AI, MM1, Pre-training, Image Recognition, NLP, Future, Learning, Research, ISO 20022, التشفير ما بعد الكمي, الحوسبة الكمومية"
 subtitle: "كشف مستقبل الذكاء الاصطناعي: كيف تُحدِث دراسة MM1 الرائدة من Apple ثورةً في التعلّم متعدّد الوسائط"
 description: "استكشف ورقة Apple البحثية MM1 حول النماذج اللغوية الكبيرة متعدّدة الوسائط (MLLMs). تعرَّف على بنيتها واستراتيجيات التدريب المسبق وإمكاناتها."
-date: "Mar 17, 2024"
+date: "March 18, 2024"
 language: "ar"
 locale: "ar_SA"
 banner: "https://cloudcdn.pro/stocks/images/mm1-visual.webp"
