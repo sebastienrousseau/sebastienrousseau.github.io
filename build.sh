@@ -252,7 +252,7 @@ python3 scripts/generators/build_oembed.py
 python3 scripts/generators/build_translations/__main__.py
 # Remove spurious locale forks of EN-only landing pages. The
 # `2026-banking-architecture-whitepaper` post declares `hreflang: "en"` and
-# has no locale translation sources, but ssg 0.0.46 over-emits locale copies
+# has no locale translation sources, but ssg over-emits locale copies
 # whose chrome the (non-dated-aware) Python localiser correctly skips —
 # leaving unlocalised English chrome that trips test_lang_no_leakage /
 # test_jsonld_localized. These forks are artifacts, not content; drop them so
