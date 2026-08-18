@@ -250,14 +250,20 @@ python3 scripts/generators/build_listings.py
 # rich link card when readers paste-share a sebastienrousseau.com URL.
 python3 scripts/generators/build_oembed.py
 python3 scripts/generators/build_translations/__main__.py
-# Remove spurious locale forks of EN-only landing pages. The
-# `2026-banking-architecture-whitepaper` post declares `hreflang: "en"` and
-# has no locale translation sources, but ssg over-emits locale copies
-# whose chrome the (non-dated-aware) Python localiser correctly skips —
-# leaving unlocalised English chrome that trips test_lang_no_leakage /
-# test_jsonld_localized. These forks are artifacts, not content; drop them so
-# the page stays EN-only as its front matter declares. See
+# Remove locale forks of the whitepaper landing page. The
+# `2026-banking-architecture-whitepaper` post declares `hreflang: "en"`, so it
+# is served EN-only; the locale copies ssg emits carry chrome the
+# (non-dated-aware) Python localiser skips, leaving unlocalised English that
+# trips test_lang_no_leakage / test_jsonld_localized. Dropping them keeps the
+# page EN-only as its front matter declares. See
 # project-docs/operations/ci-flake-triage.md §4.
+#
+# NB: this previously read "has no locale translation sources". That was
+# wrong — 27 are committed under _posts/<lang>/. They are deliberately not
+# published because the front matter says EN-only, which is a different
+# statement from them not existing. Under the pinned ssg nothing links to the
+# deleted URLs, so there is no broken link; newer ssg emits locale tag pages
+# that do link to them (27 broken). Tracked in #431.
 for _wp in public/*/2026-banking-architecture-whitepaper; do
   [ -d "$_wp" ] && [ "$_wp" != "public/2026-banking-architecture-whitepaper" ] && rm -rf "$_wp"
 done
