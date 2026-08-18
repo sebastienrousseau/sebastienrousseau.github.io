@@ -482,3 +482,52 @@ def test_about_prose_article_count_is_not_hand_maintained():
         "about prose must state the article count via a kpi-inline span, "
         f"not a hand-typed number; missing in: {missing}"
     )
+
+
+def test_robots_sitemap_lines_derive_from_disk(tmp_path):
+    """robots.txt must name the sitemaps the build produced, not a literal.
+
+    The previous version hardcoded three Sitemap lines, so adding a locale
+    left its news sitemap unadvertised with nothing to notice: 34 non-empty
+    locale news sitemaps existed while robots.txt named 2.
+    """
+    from postbuild_lib import output
+
+    (tmp_path / "fr").mkdir()
+    (tmp_path / "sitemap.xml").write_text("<urlset/>")
+    # Root legitimately empty — nothing published inside the 48 h window.
+    (tmp_path / "news-sitemap.xml").write_text("<urlset></urlset>")
+    (tmp_path / "fr" / "news-sitemap.xml").write_text("<urlset><url/></urlset>")
+
+    lines = output._news_sitemap_lines(tmp_path, origin="https://example.test")
+    assert lines == [
+        "Sitemap: https://example.test/sitemap.xml",
+        "Sitemap: https://example.test/news-sitemap.xml",
+        "Sitemap: https://example.test/fr/news-sitemap.xml",
+    ]
+
+
+def test_robots_skips_sitemaps_the_build_did_not_produce(tmp_path):
+    """An advertised locale with no file on disk is omitted, not invented."""
+    from postbuild_lib import output
+
+    (tmp_path / "sitemap.xml").write_text("<urlset/>")
+    (tmp_path / "news-sitemap.xml").write_text("<urlset></urlset>")
+    # No fr/ directory at all.
+    lines = output._news_sitemap_lines(tmp_path, origin="https://example.test")
+    assert "fr/news-sitemap.xml" not in " ".join(lines)
+
+
+def test_robots_does_not_filter_on_emptiness(tmp_path):
+    """Regression: an empty root news sitemap is the *correct* state.
+
+    Filtering on `<url>` presence drops the compliant root (nothing published
+    in 48 h) while keeping locale sitemaps that carry months of entries — the
+    exact inversion of what is wanted. See #433.
+    """
+    from postbuild_lib import output
+
+    (tmp_path / "sitemap.xml").write_text("<urlset/>")
+    (tmp_path / "news-sitemap.xml").write_text("<urlset></urlset>")  # zero <url>
+    lines = output._news_sitemap_lines(tmp_path, origin="https://example.test")
+    assert "Sitemap: https://example.test/news-sitemap.xml" in lines
