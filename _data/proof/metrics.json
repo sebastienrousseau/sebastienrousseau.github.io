@@ -1,5 +1,5 @@
 {
-  "$generated_at": "2026-08-15T09:21:14+00:00",
+  "$generated_at": "2026-08-17T18:47:43+00:00",
   "stats": [
     {
       "key": "years_payments",
@@ -11,14 +11,14 @@
     {
       "key": "articles_signed",
       "label": "Signed, dated articles published",
-      "value": 104,
+      "value": 105,
       "format": "plain",
       "source": "_posts/ — every article Sigstore-signed"
     },
     {
       "key": "downloads_total",
       "label": "Open-source package downloads (PyPI + crates.io)",
-      "value": 43659359,
+      "value": 43785040,
       "format": "compact",
       "source": "pypistats.org + crates.io"
     },
