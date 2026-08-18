@@ -13,6 +13,11 @@ concurrency:
   group: schema-diff-${{ github.event.pull_request.number }}
   cancel-in-progress: true
 
+env:
+  # Single source of truth for the ssg pin: the cache key and the install
+  # both read it, so they cannot drift apart. ADR-0002.
+  SSG_VERSION: "0.0.50"
+
 jobs:
   diff:
     runs-on: ubuntu-latest
@@ -36,16 +41,31 @@ jobs:
             ~/.cargo/registry
             ~/.cargo/git
             ~/.cargo/bin
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg-${{ env.SSG_VERSION }}
 
       - name: Add cargo bin to PATH
         run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
       - name: Install Static Site Generator (ssg)
         run: |
-          if ! command -v ssg >/dev/null 2>&1; then
-            cargo install ssg --locked --version 0.0.50   # ADR-0002
+          # `command -v ssg` is not a version check. ~/.cargo/bin is restored
+          # from the cargo cache, so a stale binary satisfies it and the pin
+          # never applies — CI built with 0.0.39 for months while this line
+          # read 0.0.46 and then 0.0.50. The drift was invisible because a
+          # skipped `cargo install` prints nothing. Compare the running
+          # version, reinstall on mismatch, then assert, so a wrong binary
+          # fails the job instead of quietly building the site. ADR-0002.
+          have="$(ssg --version 2>/dev/null | awk '{print $2}' || true)"
+          if [ "${have:-}" != "${SSG_VERSION}" ]; then
+            echo "ssg: have '${have:-none}', want ${SSG_VERSION} — installing"
+            cargo install ssg --locked --version "${SSG_VERSION}" --force
           fi
+          got="$(ssg --version | awk '{print $2}')"
+          if [ "${got}" != "${SSG_VERSION}" ]; then
+            echo "::error::ssg ${got} is running but ${SSG_VERSION} is pinned"
+            exit 1
+          fi
+          echo "ssg ${got} (pinned)"
 
       - name: Setup Python
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
