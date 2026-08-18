@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/index.html" title="DORA Spared You From NIS2. It Will Not Spare You From the CRA.">
-<img alt="Layered mountain ridges receding into pale haze, each ridge fainter than the one before it, seen from above the cloud line." src="https://cloudcdn.pro/stocks/images/paul-earle-wVjd0eWNqI8.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026/index.html" title="Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January.">
+<img alt="A white curved concrete canopy opening onto clear blue sky, its edge sweeping away from the viewer toward a single unobstructed gap." src="https://cloudcdn.pro/stocks/images/matheus-natan-3297593.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Cyber Resilience Act · Cra · Dora</span>
-<h3><a href="/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/index.html" title="DORA Spared You From NIS2. It Will Not Spare You From the CRA.">DORA Spared You From NIS2. It Will Not Spare You From the CRA.</a></h3>
-<p class="newsroom-meta"><time datetime="2026-08-03">August 3, 2026</time> · Sebastien Rousseau</p>
-<p>Financial entities learned to answer the NIS2 question with one sentence about DORA. That sentence is correct, and it is about to be applied to a regulation it was never written for.</p>
-<p><a class="pill ghost" href="/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/index.html" title="DORA Spared You From NIS2. It Will Not Spare You From the CRA.">Read the full story</a></p>
+<span class="newsroom-eyebrow">Eu Data Act · Cloud Switching · Dora</span>
+<h3><a href="/2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026/index.html" title="Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January.">Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January.</a></h3>
+<p class="newsroom-meta"><time datetime="2026-08-04">August 4, 2026</time> · Sebastien Rousseau</p>
+<p>Supervisors have spent two years reading exit plans that assume an exit nobody has priced, budgeted or rehearsed. In January the most durable excuse for that stops being available.</p>
+<p><a class="pill ghost" href="/2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026/index.html" title="Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January.">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/index.html" title="DORA Spared You From NIS2. It Will Not Spare You From the CRA.">
+<img alt="Layered mountain ridges receding into pale haze, each ridge fainter than the one before it, seen from above the cloud line." src="https://cloudcdn.pro/stocks/images/paul-earle-wVjd0eWNqI8.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Cyber Resilience Act · Cra · Dora</span>
+<h3><a href="/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/index.html" title="DORA Spared You From NIS2. It Will Not Spare You From the CRA.">DORA Spared You From NIS2. It Will Not Spare You From the CRA.</a></h3>
+<p class="newsroom-meta"><time datetime="2026-08-03">August 3, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Financial entities learned to answer the NIS2 question with one sentence about DORA. That sentence is correct, and it is about to be applied to a regulation it was never written for.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026/index.html" title="Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.">

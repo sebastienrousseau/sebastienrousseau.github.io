@@ -49,44 +49,6 @@ BASE = "https://sebastienrousseau.com"
 _DATED_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-")
 _FM_KEY_RE = re.compile(r'^([a-zA-Z_]+):\s*(?:"((?:[^"\\]|\\.)*)"|\'((?:[^\'\\]|\\.)*)\')\s*$')
 
-_MONTHS = {
-    "January": 1,
-    "February": 2,
-    "March": 3,
-    "April": 4,
-    "May": 5,
-    "June": 6,
-    "July": 7,
-    "August": 8,
-    "September": 9,
-    "October": 10,
-    "November": 11,
-    "December": 12,
-    # French
-    "janvier": 1,
-    "février": 2,
-    "mars": 3,
-    "avril": 4,
-    "mai": 5,
-    "juin": 6,
-    "juillet": 7,
-    "août": 8,
-    "septembre": 9,
-    "octobre": 10,
-    "novembre": 11,
-    "décembre": 12,
-    # German
-    "Januar": 1,
-    "Februar": 2,
-    "März": 3,
-    "Mai": 5,
-    "Juni": 6,
-    "Juli": 7,
-    "Oktober": 10,
-    "Dezember": 12,
-    # (April/August/September/November share spelling with EN)
-}
-
 
 def parse_frontmatter(text: str) -> dict[str, str]:
     fm: dict[str, str] = {}
@@ -117,24 +79,26 @@ def _parse_date_strptime(s: str) -> datetime | None:
     return None
 
 
-def _parse_date_localised(s: str) -> datetime | None:
-    """'26 octobre 2023'-style dates via the localised month table."""
-    m = re.match(r"^([A-Za-zÀ-ÿ]+)\s+(\d{1,2}),?\s+(\d{4})$", s)
-    if not m:
-        return None
-    month = _MONTHS.get(m.group(1)) or _MONTHS.get(m.group(1).lower())
-    if not month:
-        return None
-    return datetime(int(m.group(3)), month, int(m.group(2)))
-
-
 def parse_date(s: str) -> datetime:
     """Parse a frontmatter date string ('October 26, 2023' or '2023-10-26')
     to a tz-aware UTC datetime at 06:06:06 (mirrors Static Site Generator's RSS time)."""
     s = (s or "").strip()
-    d = (_parse_date_strptime(s) or _parse_date_localised(s)) if s else None
+    d = _parse_date_strptime(s) if s else None
     if d is None:
-        return datetime.now(tz=UTC)
+        # Previously this returned datetime.now(), which stamped every
+        # unparseable date with the build time and said nothing. That is how
+        # 467 posts across 27 locale feeds came to advertise themselves as
+        # published at build time, undetected: the <pubDate> was always
+        # present and always plausible. A localised-date fallback existed but
+        # its regex was month-first while the dates it targeted are day-first
+        # ("28 juin 2026"), so it never fired — a silent fallback behind a
+        # silent fallback. Raise instead; the build should stop rather than
+        # publish a date it had to invent.
+        raise ValueError(
+            f"unparseable frontmatter date {s!r}; expected ISO 8601 or an "
+            "English month name (locale posts inherit the English date — see "
+            "scripts/maintenance/fix_locale_date_frontmatter.py)"
+        )
     return d.replace(hour=6, minute=6, second=6, tzinfo=UTC)
 
 

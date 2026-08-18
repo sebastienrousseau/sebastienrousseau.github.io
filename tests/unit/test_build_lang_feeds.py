@@ -37,10 +37,6 @@ def test_parse_date_strptime_formats() -> None:
     assert blf._parse_date_strptime("not a date") is None
 
 
-def test_parse_date_localised_none_on_garbage() -> None:
-    assert blf._parse_date_localised("garbage string") is None
-
-
 def test_parse_date_sets_rss_time_utc() -> None:
     d = blf.parse_date("2023-10-26")
     assert (d.year, d.month, d.day) == (2023, 10, 26)
@@ -48,12 +44,23 @@ def test_parse_date_sets_rss_time_utc() -> None:
     assert d.tzinfo == UTC
 
 
-def test_parse_date_empty_falls_back_to_now() -> None:
-    d = blf.parse_date("")
-    assert d.tzinfo == UTC  # tz-aware "now", not a crash
+def test_parse_date_raises_instead_of_stamping_now() -> None:
+    """This test previously asserted the opposite, and that is the point.
 
-
-# --- xml_escape ------------------------------------------------------------
+    It read `test_parse_date_empty_falls_back_to_now` and asserted that an
+    unparseable date silently became `datetime.now()`. The fallback was not an
+    oversight — it was specified and covered, which is why nothing questioned
+    it while 467 posts across 27 locale feeds advertised themselves as
+    published at build time. A <pubDate> was always present and always
+    plausible. Failing loudly is the only thing that makes a wrong date
+    findable. See #433.
+    """
+    for bad in ("", "28 juin 2026", "2026年6月27日", "garbage string"):
+        try:
+            blf.parse_date(bad)
+        except ValueError:
+            continue
+        raise AssertionError(f"parse_date({bad!r}) must raise, not invent a date")
 
 
 def test_xml_escape_bare_ampersand_only() -> None:
