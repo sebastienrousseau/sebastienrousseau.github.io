@@ -208,7 +208,7 @@ site_software: "Static Site Generator, Rust"
     <a class="story-card" href="/articles/index.html">
       <span class="story-card-eyebrow">Research notes</span>
       <h3 class="story-card-title">Read the articles</h3>
-      <p class="story-card-body">73 signed, dated pieces on applied AI, ISO 20022, and post-quantum cryptography.</p>
+      <p class="story-card-body"><span class="kpi-inline" data-kpi="articles_signed">105</span> signed, dated pieces on applied AI, ISO 20022, and post-quantum cryptography.</p>
       <span class="story-card-link">Browse</span>
     </a>
     <a class="story-card" href="/case-studies/index.html">
