@@ -27,9 +27,12 @@ pandoc = "3.10"
 # It tracks the latest published version on crates.io — keep here
 # documented for reproducibility, not for `mise install` to act on.
 #
-#   cargo install ssg --locked --version 0.0.50
+#   cargo install ssg --locked --version 0.0.39
 #
-# Policy: CI tracks the latest published ssg. The version is pinned rather
+# Policy: CI tracked the latest published ssg until 0.0.50 broke the Linux
+# build (tags not split on non-ASCII separators -> 348-byte directory name
+# -> ENAMETOOLONG on ext4; see #431). Held at 0.0.39 until that is fixed.
+# The version is pinned rather
 # than left floating so a build is reproducible and an upstream release
 # cannot change output mid-PR — ssg has form here: 0.0.48+ altered the CSP
 # ssg emits, which broke the build gate until scripts/postbuild/
