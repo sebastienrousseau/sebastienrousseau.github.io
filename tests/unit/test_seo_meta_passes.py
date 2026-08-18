@@ -431,3 +431,54 @@ def test_align_jsonld_inlanguage_fixes_mismatch_only():
 def test_align_jsonld_inlanguage_noop_without_html_lang():
     html = _ld('{"inLanguage":"en-GB"}')
     assert seo.align_jsonld_inlanguage(html) == html
+
+
+def test_inject_kpi_metrics_fills_inline_prose_span(monkeypatch):
+    # /about/ quoted the article count mid-sentence as a hand-maintained
+    # number: it said "73 signed, dated pieces" while the KPI rail directly
+    # above it, filled from metrics.json, said 105. The prose opts in with
+    # `kpi-inline` so it tracks the same source without rail styling.
+    monkeypatch.setattr(seo, "_kpi_cache", {"articles_signed": "105"})
+    html = (
+        '<p class="story-card-body">'
+        '<span class="kpi-inline" data-kpi="articles_signed">73</span>'
+        " signed, dated pieces.</p>"
+    )
+    out = seo.inject_kpi_metrics(html)
+    assert ">105</span>" in out
+    assert ">73</span>" not in out
+    assert seo.inject_kpi_metrics(out) == out  # idempotent
+
+
+def test_about_prose_article_count_is_not_hand_maintained():
+    """The count in /about/ prose must come from metrics.json, in every locale.
+
+    A bare number here goes stale on the next publish — it had drifted 32
+    articles behind (73 in prose, 105 in the rail directly above) before this
+    was caught. Asserting on the source rather than the built page means a
+    hand-edit is rejected at unit-test time, not noticed months later.
+    """
+    import json
+    import re
+    from pathlib import Path
+
+    root = Path(__file__).resolve().parent.parent.parent
+    # The articles card: the story card whose body states the count.
+    span = re.compile(
+        r'<p class="story-card-body">[^<]*<span class="kpi-inline" '
+        r'data-kpi="articles_signed">\d+</span>'
+    )
+    missing = []
+
+    def check(label: str, body: str) -> None:
+        if len(span.findall(body)) != 1:
+            missing.append(label)
+
+    check("en", (root / "_posts" / "about.md").read_text())
+    for p in sorted((root / "_data" / "i18n").glob("*/static_bodies.json")):
+        check(p.parent.name, json.loads(p.read_text()).get("bodies", {}).get("about", ""))
+
+    assert not missing, (
+        "about prose must state the article count via a kpi-inline span, "
+        f"not a hand-typed number; missing in: {missing}"
+    )

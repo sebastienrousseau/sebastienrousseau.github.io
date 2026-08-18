@@ -892,6 +892,15 @@ def _kpi_metrics() -> dict[str, str]:
     return _kpi_cache
 
 
+# Classes that opt a `data-kpi` span into the fill. `kpi-cell-value` is the
+# big number in a KPI rail cell; `kpi-inline` is the same figure quoted mid
+# sentence, which needs no rail styling but must not drift from the rail.
+# /about/ said "73 signed, dated pieces" while the rail beside it said 105 —
+# the prose was a hand-maintained copy of a number that already had a live
+# source. An opt-in class keeps `data-kpi` alone from being the contract.
+_KPI_FILL_CLASSES = frozenset({"kpi-cell-value", "kpi-inline"})
+
+
 def inject_kpi_metrics(html_text: str) -> str:
     """Fill every ``data-kpi``-tagged KPI cell from metrics.json. Pages
     without such cells are untouched. Idempotent."""
@@ -902,7 +911,7 @@ def inject_kpi_metrics(html_text: str) -> str:
 
     def _fill(m: re.Match[str]) -> str:
         open_tag = m.group(1)
-        if "kpi-cell-value" not in _attr_value(open_tag, "class").split():
+        if not _KPI_FILL_CLASSES & set(_attr_value(open_tag, "class").split()):
             return m.group(0)
         val = metrics.get(_attr_value(open_tag, "data-kpi"))
         return f"{open_tag}{val}{m.group(3)}" if val else m.group(0)
