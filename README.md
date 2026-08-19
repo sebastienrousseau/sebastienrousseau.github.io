@@ -241,7 +241,13 @@ Rust crates compiled to WebAssembly power interactive, client-side demos. Each d
 
 ## Discovery
 
-Every page carries Schema.org JSON-LD (author, article type, breadcrumbs, cited sources), validated on every build. The site also publishes agent endpoints and text indices (`/api/agents/…`, `/llms-full.txt`) so AI crawlers can parse content and enumerate articles and topics.
+Every page carries Schema.org JSON-LD (author, article type, breadcrumbs, FAQ entities, cited sources), validated on every build; every Article node is bound to the page's canonical URL. The site also publishes agent endpoints and text indices (`/api/agents/…`, `/feed.jsonl`, `/llms-full.txt`) so AI crawlers can parse content and enumerate articles and topics.
+
+`llms.txt` is published but is not treated as a distribution channel: 2026
+field data shows AI crawlers overwhelmingly skip it and fetch HTML directly,
+and Google stated in June 2026 that it is not required for Search. The
+surfaces that are demonstrably fetched — clean HTML, structured data, the
+JSONL corpus and the per-article oEmbed endpoints — are where the effort goes.
 
 ## Development
 
@@ -254,16 +260,23 @@ make verify         # full repo-integrity regression suite (mirrors CI)
 
 Build, serve, inspect in the browser, and confirm the tests are green before pushing.
 
-`make verify` is the one-command regression gate: it runs lint + type-check,
-the full build with its 37 in-build gates (CSP, SRI, i18n parity/hreflang,
-search-index), the unit suite against the freshly-built tree, then JSON-LD
-validation, a strict internal-link audit, and SBOM generation — the same set CI
-enforces before deploy. Run it after `make bootstrap` (it needs the pinned
+`make verify` is the one-command regression gate: it runs lint + type-check +
+the complexity ratchet, the full build with its in-build gates (CSP, SRI, i18n
+parity/hreflang, slug policy, search-index), the unit suite against the
+freshly-built tree, then JSON-LD validation, a strict internal-link audit, and
+SBOM generation — the same set CI enforces before deploy.
+
+The build cleans `public/` first, so a local build and a CI build produce the
+same tree; `make verify` therefore measures what CI measures. Run it after `make bootstrap` (it needs the pinned
 `ssg` 0.0.39).
 
 ## CI gates
 
-Static analysis (ruff, mypy, complexity, duplication), the unit + validation suites, an internal-link audit, JSON-LD validation, a 4-shard Pa11y accessibility pass, and Lighthouse all run on every pull request. A failing gate blocks the merge. See [CI Gates](project-docs/ci.md).
+Static analysis (ruff, mypy, complexity, duplication), the unit + validation suites, an internal-link audit, JSON-LD validation, a 7-shard Pa11y accessibility pass, visual regression, a byte-identical rebuild check, and Lighthouse all run on every pull request. A failing gate blocks the merge. On `main`, a post-deploy check asserts the live origin serves what the build produced. See [CI Gates](project-docs/ci.md).
+
+The complexity gate covers all of `scripts/` and ratchets: current debt is
+enumerated in `scripts/dev/complexity-allowlist.txt`, and the gate fails both
+on anything new and on a stale entry, so the list cannot rot.
 
 ## Deployment
 
