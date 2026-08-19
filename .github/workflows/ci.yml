@@ -785,12 +785,41 @@ jobs:
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
 
       - name: Upload Pages artifact
+        # include-hidden-files is REQUIRED. upload-pages-artifact tars the
+        # directory with `--exclude=.[^/]*` unless this is set, which silently
+        # dropped public/.well-known/ from every deploy: /.well-known/
+        # security.txt (RFC 9116 canonical location), ai.txt (advertised by
+        # robots.txt AND llms.txt), openpgpkey/ (WKD key discovery) and
+        # openapi.json all served 404 in production while being present in the
+        # build. The `verify-deploy` job below asserts they resolve, so this
+        # cannot regress silently again.
         if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
         with:
           path: public
+          include-hidden-files: true
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         id: deployment
         uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5
+
+      - name: Verify the deployed origin
+        # Every other gate runs against public/ on the runner. This is the
+        # only check that looks at what a browser actually receives, which is
+        # the gap that hid the .well-known/ deploy loss for months: the files
+        # were in the build output and 404 in production. Asserts that every
+        # path robots.txt and llms.txt advertise resolves, that the home page
+        # carries a real meta description, and that neither CSP channel
+        # allows 'unsafe-inline'.
+        #
+        # Runs against the Pages origin, not the Cloudflare hostname: the
+        # edge caches HTML, so checking the public hostname immediately after
+        # a deploy tests the previous release. --skip-csp for the same
+        # reason — the security headers are Cloudflare Transform Rules and
+        # are not present on the origin.
+        if: github.ref == 'refs/heads/main'
+        run: |
+          python3 scripts/seo_and_audit/verify_deploy.py \
+            --base "${{ steps.deployment.outputs.page_url }}" \
+            --skip-csp
