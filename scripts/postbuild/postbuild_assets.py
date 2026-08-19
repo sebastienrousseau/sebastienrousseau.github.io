@@ -560,6 +560,42 @@ def normalise_csp(html: str) -> tuple[str, bool]:
     return html[: meta.start()] + new_tag + html[meta.end() :], True
 
 
+def _dedupe_script_hashes(policy: str) -> str:
+    """Collapse repeated ``'sha256-…'`` tokens inside ``script-src``.
+
+    This pass prepends the page's inline-script hashes into ``script-src``
+    unconditionally, and it runs more than once over a page as later passes
+    add content. Every run re-prepended the same tokens, so a shipped article
+    carried 19 hash tokens for 11 distinct scripts and a local build 31 for
+    15 — a redundant kilobyte in the head of every page, ahead of the parser
+    reaching anything that renders. Duplicates are inert to a browser, so
+    this is about size and about the pass being genuinely idempotent.
+
+    First occurrence of each hash wins, so token order stays stable across
+    rebuilds (byte-identical output is a build gate). Only ``script-src`` is
+    touched; other directives are returned unchanged.
+    """
+
+    def _dedupe(m: re.Match[str]) -> str:
+        directive = m.group(0)
+        seen: set[str] = set()
+
+        def _keep(tok: re.Match[str]) -> str:
+            token = tok.group(0)
+            if token in seen:
+                return ""
+            seen.add(token)
+            return token
+
+        collapsed = _SHA_RE.sub(_keep, directive)
+        # Removing tokens leaves runs of spaces behind; normalise them without
+        # disturbing the directive's leading indentation.
+        leading = collapsed[: len(collapsed) - len(collapsed.lstrip())]
+        return leading + re.sub(r"[ \t]{2,}", " ", collapsed.strip())
+
+    return re.sub(r"script-src[^;]*", _dedupe, policy, count=1)
+
+
 def inject_jsonld_hashes(html: str) -> str:
     bodies = [m.group(1) for m in jsonld_re.finditer(html)]
     bodies.extend(m.group(1) for m in speculation_re.finditer(html))
@@ -583,7 +619,7 @@ def inject_jsonld_hashes(html: str) -> str:
                 new_policy,
                 count=1,
             )
-            return c.group(1) + c.group(2) + new_policy + c.group(4)
+            return c.group(1) + c.group(2) + _dedupe_script_hashes(new_policy) + c.group(4)
 
         return content_attr_re.sub(patch_content, tag, count=1)
 
