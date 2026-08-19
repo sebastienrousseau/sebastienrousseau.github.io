@@ -1,0 +1,43 @@
+# Cyclomatic-complexity debt, enumerated. See scripts/dev/check-complexity.sh.
+#
+# The complexity gate covers ALL of scripts/ (it used to cover four
+# directories, leaving the translation pipeline and every audit tool
+# ungated while the README called complexity a CI gate without
+# qualification). Widening it surfaced the functions below.
+#
+# These are accepted TODAY, not forever. The gate fails on anything new,
+# and it also fails on a STALE entry — refactor a function and you must
+# delete its line, so this list cannot rot. Target: empty.
+#
+# Cleared so far (kept as a record of the ratchet moving):
+#   translate_frontmatter._process_article   D(25) -> B(9)
+#   translate_frontmatter._translate_batch   C(14) -> A/B
+#   jsonld_diff.diff_pages                   D(22) -> A/B
+#   topic_link.process_post                  D(22) -> B(6)
+# Each was differential-tested against its pre-refactor implementation
+# before the line was removed.
+scripts/editorial/audit_translations.py:main
+scripts/editorial/automate_tags.py:main
+scripts/editorial/automate_tags.py:process_single_post
+scripts/editorial/backfill_locale_frontmatter.py:_fix_one
+scripts/editorial/backfill_locale_frontmatter.py:_is_in_target_locale
+scripts/editorial/pick_banner.py:main
+scripts/editorial/pick_banner.py:pick
+scripts/editorial/translate_stubs_gemini.py:gemini_generate
+scripts/maintenance/fix_locale_date_frontmatter.py:main
+scripts/postbuild/fix_cdn_urls.py:candidate_paths
+scripts/postbuild/fix_cdn_urls.py:main
+scripts/postbuild/post_enrich.py:_load_post
+scripts/postbuild/post_enrich.py:_related_posts
+scripts/postbuild/postbuild_assets.py:setup_asset_state
+scripts/postbuild/regen_slug_maps.py:_articles_map_for_language
+scripts/security/sigstore_sign.py:main
+scripts/seo_and_audit/audit_links.py:main
+scripts/seo_and_audit/pa11y_cache.py:cmd_post
+scripts/seo_and_audit/pa11y_retry_flakes.py:main
+scripts/seo_and_audit/readability.py:count_syllables
+scripts/seo_and_audit/validate_jsonld.py:_validate_atom_entry
+scripts/seo_and_audit/validate_jsonld.py:_validate_news_extension
+scripts/seo_and_audit/validate_jsonld.py:_validate_rss_item
+scripts/seo_and_audit/validate_jsonld.py:_validate_sitemap_url
+scripts/seo_and_audit/validate_jsonld.py:main

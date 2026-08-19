@@ -62,6 +62,7 @@ test:
 lint:
 	@ruff check scripts/ tests/
 	@python3 scripts/dev/check_naming_conventions.py
+	@bash scripts/dev/check-complexity.sh
 
 # Strict mypy over the strict-clean module tier (ratchets outward).
 typecheck:

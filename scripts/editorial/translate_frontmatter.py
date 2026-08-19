@@ -25,6 +25,7 @@ import re
 import subprocess
 import sys
 import time
+from collections.abc import Mapping
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -157,21 +158,10 @@ _FIELD_GUIDANCE = {
 }
 
 
-def _translate_batch(
-    en_fields: dict[str, str],
-    locales_needing: dict[str, list[str]],
-) -> dict[str, dict[str, str]]:
-    """
-    One ``claude -p`` call: translate ``en_fields`` into every language in
-    ``locales_needing`` (lang → list of fields needed).
-    Returns {lang: {field: translated_value}}.
-    """
-    if not locales_needing:
-        return {}
-
+def _batch_prompt(en_fields: dict[str, str], locales_needing: dict[str, list[str]]) -> str:
+    """The translation prompt for one batch of languages."""
     guidance_lines = "\n".join(f"  - {f}: {_FIELD_GUIDANCE[f]}" for f in FIELDS if f in en_fields)
-
-    prompt = f"""\
+    return f"""\
 You are a professional translator and SEO specialist for financial technology content.
 Translate blog post frontmatter fields precisely, preserving technical terms,
 product names, and brand names in their original form while making the text
@@ -185,7 +175,7 @@ Field-by-field guidance:
 {guidance_lines}
 
 Required translations per language (language_code → list of field names to translate):
-{json.dumps({lang: fields for lang, fields in locales_needing.items()}, ensure_ascii=False, indent=2)}
+{json.dumps(dict(locales_needing), ensure_ascii=False, indent=2)}
 
 Language names:
 {json.dumps({lang: LANG_NAMES[lang] for lang in locales_needing}, ensure_ascii=False, indent=2)}
@@ -205,35 +195,56 @@ Example structure:
 }}
 """
 
+
+def _invoke_translator(prompt: str) -> dict[str, dict[str, str]]:
+    """One ``claude -p`` call. Raises on empty output or unparseable JSON so
+    the retry loop above can decide whether to try again."""
+    result = subprocess.run(
+        ["claude", "-p", prompt],
+        capture_output=True,
+        text=True,
+        timeout=300,
+    )
+    content = result.stdout.strip()
+    if not content:
+        raise ValueError(f"Empty response (stderr: {result.stderr[:200]})")
+    # Strip markdown code fences if present
+    content = re.sub(r"^```(?:json)?\s*", "", content)
+    content = re.sub(r"\s*```$", "", content)
+    parsed: dict[str, dict[str, str]] = json.loads(content)
+    return parsed
+
+
+def _translate_batch(
+    en_fields: dict[str, str],
+    locales_needing: dict[str, list[str]],
+) -> dict[str, dict[str, str]]:
+    """
+    One ``claude -p`` call: translate ``en_fields`` into every language in
+    ``locales_needing`` (lang → list of fields needed).
+    Returns {lang: {field: translated_value}}. Three attempts, then gives up
+    and returns {} — a failed translation must not abort the run.
+    """
+    if not locales_needing:
+        return {}
+    prompt = _batch_prompt(en_fields, locales_needing)
+
     for attempt in range(3):
         try:
-            result = subprocess.run(
-                ["claude", "-p", prompt],
-                capture_output=True,
-                text=True,
-                timeout=300,
-            )
-            content = result.stdout.strip()
-            if not content:
-                raise ValueError(f"Empty response (stderr: {result.stderr[:200]})")
-            # Strip markdown code fences if present
-            content = re.sub(r"^```(?:json)?\s*", "", content)
-            content = re.sub(r"\s*```$", "", content)
-            return json.loads(content)
+            return _invoke_translator(prompt)
         except json.JSONDecodeError as e:
-            print(f"  [attempt {attempt+1}] JSON parse error: {e}", file=sys.stderr)
-            if attempt < 2:
-                time.sleep(3)
+            print(f"  [attempt {attempt + 1}] JSON parse error: {e}", file=sys.stderr)
+            delay = 3
         except subprocess.TimeoutExpired:
             print("  Timeout — retrying", file=sys.stderr)
-            if attempt < 2:
-                time.sleep(5)
+            delay = 5
         except (OSError, ValueError) as e:
             # OSError: claude binary missing/unrunnable; ValueError: the
             # empty-response raise above. Anything else should traceback.
             print(f"  Error: {e}", file=sys.stderr)
-            if attempt < 2:
-                time.sleep(5)
+            delay = 5
+        if attempt < 2:
+            time.sleep(delay)
 
     return {}
 
@@ -243,30 +254,17 @@ Example structure:
 # ---------------------------------------------------------------------------
 
 
-def _process_article(  # noqa: C901 — orchestrates the per-article EN→27 locales frontmatter sync end-to-end
-    en_slug: str,
-    en_path: Path,
-    *,
-    langs_filter: list[str] | None,
-    dry_run: bool,
-) -> int:
-    en_text = en_path.read_text(encoding="utf-8")
+def _en_fields(en_text: str) -> dict[str, str]:
+    """The English front-matter values worth propagating."""
+    return {f: v for f in FIELDS if (v := _read_field(en_text, f))}
 
-    en_fields: dict[str, str] = {}
-    for f in FIELDS:
-        v = _read_field(en_text, f)
-        if v:
-            en_fields[f] = v
 
-    if not en_fields:
-        return 0
-
-    all_langs = [lang.code for lang in _lang_registry.active() if lang.code != "en"]
-    target_langs = langs_filter if langs_filter else all_langs
-
-    locales_needing: dict[str, list[str]] = {}
-    locale_paths: dict[str, Path] = {}
-
+def _locales_needing(
+    en_slug: str, en_fields: dict[str, str], target_langs: list[str]
+) -> tuple[dict[str, list[str]], dict[str, Path]]:
+    """Per locale, which fields still hold the untranslated English value."""
+    needing: dict[str, list[str]] = {}
+    paths: dict[str, Path] = {}
     for lang in target_langs:
         path = _find_locale_file(en_slug, lang)
         if path is None:
@@ -278,53 +276,78 @@ def _process_article(  # noqa: C901 — orchestrates the per-article EN→27 loc
             if _field_exists(loc_text, f) and _read_field(loc_text, f) == en_fields.get(f)
         ]
         if needs:
-            locales_needing[lang] = needs
-            locale_paths[lang] = path
+            needing[lang] = needs
+            paths[lang] = path
+    return needing, paths
 
-    if not locales_needing:
+
+def _apply_translations(path: Path, fields_translated: Mapping[str, object]) -> list[str]:
+    """Write the translated fields into one locale file. Returns the field
+    names actually applied (empty when nothing changed)."""
+    text = path.read_text(encoding="utf-8")
+    new_text = text
+    applied: list[str] = []
+    for field, value in fields_translated.items():
+        if not value or not isinstance(value, str):
+            continue
+        replaced = _replace_field(new_text, field, value)
+        if replaced != new_text:
+            new_text = replaced
+            applied.append(field)
+    if new_text != text:
+        path.write_text(new_text, encoding="utf-8")
+        return applied
+    return []
+
+
+def _run_batches(
+    en_fields: dict[str, str],
+    needing: dict[str, list[str]],
+    paths: dict[str, Path],
+) -> int:
+    """Translate in batches of 3 languages per call (~27s each, proven
+    reliable). Returns the number of locale files updated."""
+    batch_size = 3
+    lang_list = list(needing.items())
+    updated = 0
+    for batch_start in range(0, len(lang_list), batch_size):
+        batch = dict(lang_list[batch_start : batch_start + batch_size])
+        for lang, fields_translated in _translate_batch(en_fields, batch).items():
+            path = paths.get(lang)
+            if path is None:
+                continue
+            applied = _apply_translations(path, fields_translated)
+            if applied:
+                updated += 1
+                print(f"    [{lang}] updated: {', '.join(applied)}")
+    return updated
+
+
+def _process_article(
+    en_slug: str,
+    en_path: Path,
+    *,
+    langs_filter: list[str] | None,
+    dry_run: bool,
+) -> int:
+    en_fields = _en_fields(en_path.read_text(encoding="utf-8"))
+    if not en_fields:
         return 0
 
-    total_fields = sum(len(v) for v in locales_needing.values())
-    print(
-        f"  {en_slug}: {len(locales_needing)} locales, " f"{total_fields} field-translations needed"
-    )
+    all_langs = [lang.code for lang in _lang_registry.active() if lang.code != "en"]
+    needing, paths = _locales_needing(en_slug, en_fields, langs_filter or all_langs)
+    if not needing:
+        return 0
+
+    total_fields = sum(len(v) for v in needing.values())
+    print(f"  {en_slug}: {len(needing)} locales, {total_fields} field-translations needed")
 
     if dry_run:
-        for lang, fields in sorted(locales_needing.items()):
+        for lang, fields in sorted(needing.items()):
             print(f"    [{lang}] would translate: {', '.join(fields)}")
         return 0
 
-    # 3 languages per claude -p call (~27s each, proven reliable)
-    batch_size = 3
-    lang_list = list(locales_needing.items())
-    updated = 0
-
-    for batch_start in range(0, len(lang_list), batch_size):
-        batch = dict(lang_list[batch_start : batch_start + batch_size])
-        translations = _translate_batch(en_fields, batch)
-
-        for lang, fields_translated in translations.items():
-            if lang not in locale_paths:
-                continue
-            path = locale_paths[lang]
-            text = path.read_text(encoding="utf-8")
-            new_text = text
-            applied: list[str] = []
-
-            for field, value in fields_translated.items():
-                if not value or not isinstance(value, str):
-                    continue
-                replaced = _replace_field(new_text, field, value)
-                if replaced != new_text:
-                    new_text = replaced
-                    applied.append(field)
-
-            if new_text != text:
-                path.write_text(new_text, encoding="utf-8")
-                updated += 1
-                print(f"    [{lang}] updated: {', '.join(applied)}")
-
-    return updated
+    return _run_batches(en_fields, needing, paths)
 
 
 # ---------------------------------------------------------------------------

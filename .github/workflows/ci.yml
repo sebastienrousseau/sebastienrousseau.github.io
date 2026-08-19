@@ -87,15 +87,24 @@ jobs:
       - name: Cloudflare KV write audit (Free-tier policy)
         run: bash scripts/dev/check-kv-writes.sh
 
-      - name: Cyclomatic complexity (radon)
+      - name: Cyclomatic complexity (radon, ratcheted over all of scripts/)
+        # Covers ALL of scripts/, not the four directories it used to. The
+        # narrow scope left editorial/, security/ and seo_and_audit/ ungated
+        # while the README described complexity as a CI gate without
+        # qualification — and the ungated set held the worst function in the
+        # repo (translate_frontmatter._process_article at D/25), in the
+        # translation pipeline that rewrites content across 27 locales with
+        # the least test coverage behind it.
+        #
+        # Widening it surfaced 25 more C-or-worse functions, several inside
+        # untested build gates. Restructuring those in one pass to hit a
+        # number is how correctness regressions get introduced, so this uses
+        # the same ratchet the mypy gate uses: everything is checked, current
+        # debt is enumerated in scripts/dev/complexity-allowlist.txt, and the
+        # gate fails on anything new AND on a stale entry.
         run: |
-          radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ scripts/generators/ scripts/lib/ -a -s
-          c_or_worse=$(radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ scripts/generators/ scripts/lib/ -n C -s 2>&1)
-          if [ -n "$c_or_worse" ]; then
-            echo "::error::C-grade or worse complexity found:"
-            echo "$c_or_worse"
-            exit 1
-          fi
+          radon cc scripts/ -a -s
+          bash scripts/dev/check-complexity.sh
 
       - name: Code duplication (jscpd)
         run: |
