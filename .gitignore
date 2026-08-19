@@ -122,3 +122,7 @@ _data/pa11y-cache.json
 
 # --- corral-sync local state (timestamps only; regenerated on next sync) ---
 .corral-state.json
+
+# Deployment config, not a secret but not source: the Cloudflare Web
+# Analytics beacon token (see scripts/postbuild/postbuild_lib/analytics.py).
+_data/analytics.json

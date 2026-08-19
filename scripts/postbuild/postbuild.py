@@ -167,6 +167,7 @@ _ASSET_STATS = setup_asset_state(PUBLIC)
 
 # SEO + Schema.org injection — moved to postbuild_lib.seo
 # Article UI furniture — moved to postbuild_lib.article_furniture
+from postbuild_lib.analytics import beacon_token, inject_analytics_beacon
 from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     AUTHOR_AVATAR,
     AUTHOR_NAME,
@@ -318,6 +319,7 @@ class _PostbuildCounters:
     __slots__ = (
         "about_patched",
         "action_rails_set",
+        "analytics_injected",
         "anchor_patched",
         "article_identity_aligned",
         "asset_dupes_rewritten",
@@ -381,6 +383,7 @@ class _PostbuildContext:
 
     __slots__ = (
         "alias_patterns",
+        "analytics_token",
         "asset_dupes",
         "corpus",
         "counters",
@@ -408,6 +411,8 @@ class _PostbuildContext:
         self.taxonomy = load_taxonomy()
         self.corpus = load_corpus(taxonomy=self.taxonomy)
         self.alias_patterns = _alias_patterns(self.taxonomy)
+        # None unless CF_BEACON_TOKEN / _data/analytics.json is set.
+        self.analytics_token = beacon_token()
         # Byte-identical /_csp/ assets ssg fingerprinted separately, mapped
         # duplicate -> canonical. Computed once; the files themselves are
         # removed after the page loop, once nothing references them.
@@ -768,6 +773,12 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     # writer. Idempotent.
     patched_hl = normalize_canonical(page, patched_hl)
     patched_hl = _apply_final_schema_passes(patched_hl, page, ctx.counters)
+    # Traffic beacon — inert unless a token is configured. Deferred and
+    # appended last so measurement can never sit on the LCP path.
+    prev_beacon = patched_hl
+    patched_hl = inject_analytics_beacon(patched_hl, ctx.analytics_token)
+    if patched_hl != prev_beacon:
+        ctx.counters.analytics_injected += 1
     # Point identical-content stylesheets at one URL so a reader crossing
     # between page types does not re-download bytes they already have.
     prev_dedupe = patched_hl
@@ -899,6 +910,7 @@ def main() -> None:
         f"{c.techarticle_patched} got TechArticle, "
         f"{c.article_identity_aligned} had Article identity aligned to canonical, "
         f"{c.faq_schema_patched} got FAQPage, "
+        f"{c.analytics_injected} got the analytics beacon, "
         f"{c.asset_dupes_rewritten} had duplicate asset URLs collapsed, "
         f"{c.contextual_links_added} got contextual internal links, "
         f"{c.cluster_blocks_added} got a cluster block, "
