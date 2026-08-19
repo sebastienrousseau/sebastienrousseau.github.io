@@ -272,6 +272,7 @@ from postbuild_lib.seo import (  # noqa: F401 — re-exports for back-compat
     clean_meta_description,
     compute_word_count,
     fix_article_og_type,
+    fix_home_social_image,
     fix_social_image,
     inject_about,
     inject_howto,
@@ -412,6 +413,10 @@ def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     if out != prev:
         ctr.desc_cleaned += 1
     out = fix_article_og_type(out)
+    # Home page only: rebuild the social card from the authored landscape
+    # banner and declare its dimensions (the index layout emits no
+    # banner-src marker, so fix_social_image above cannot reach it).
+    out = fix_home_social_image(page, out)
     out = inject_kpi_metrics(out)
     # Point internal links at the same URL the canonical and sitemap
     # advertise. Without this, every `/x/index.html` href is a second
