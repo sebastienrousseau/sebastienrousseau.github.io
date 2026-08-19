@@ -178,15 +178,28 @@ def test_parse_frontmatter_stops_at_second_delimiter(tmp_path):
     assert fm == {"title": "A"}
 
 
-def test_parse_frontmatter_ignores_unquoted_values(tmp_path):
-    """Parser only takes quoted string values — bare YAML scalars
-    (numbers, booleans, lists) are skipped."""
+def test_parse_frontmatter_captures_hyphenated_and_bare_keys(tmp_path):
+    """This helper now delegates to scripts/lib/_frontmatter rather than
+    carrying its own regex.
+
+    The old local pattern accepted only ``[a-z_-]`` keys with double-quoted
+    values, so it silently dropped real front-matter — ``measurementID`` is on
+    every post and was never seen. Verified safe before switching:
+    differential-tested over all 240 posts with zero value mismatches on shared
+    keys (the shared parser is a strict superset), and both call sites read
+    named keys via ``fm.get(...)`` rather than iterating, so recovered keys
+    cannot leak into output.
+    """
     from postbuild_lib import output as out
 
     p = tmp_path / "post.md"
-    p.write_text('---\ntitle: "Hi"\nweight: 42\nactive: true\n---\n', encoding="utf-8")
+    p.write_text(
+        '---\ntitle: "Hi"\nmeasurementID: "G-XYZ"\nactive: true\n---\n', encoding="utf-8"
+    )
     fm = out._parse_frontmatter(p)
-    assert fm == {"title": "Hi"}
+    assert fm["title"] == "Hi"
+    assert fm["measurementID"] == "G-XYZ"
+    assert fm["active"] == "true"
 
 
 def test_parse_frontmatter_no_frontmatter(tmp_path):

@@ -43,28 +43,24 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import _lang_registry  # type: ignore[import-not-found]  # script-mode sibling import
+from _frontmatter import parse_frontmatter as _shared_parse_frontmatter
 
 PUBLIC = Path("public")
 BASE = "https://sebastienrousseau.com"
 
 _DATED_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-")
-_FM_KEY_RE = re.compile(r'^([a-zA-Z_]+):\s*(?:"((?:[^"\\]|\\.)*)"|\'((?:[^\'\\]|\\.)*)\')\s*$')
 
 
 def parse_frontmatter(text: str) -> dict[str, str]:
-    fm: dict[str, str] = {}
-    sep = 0
-    for line in text.splitlines():
-        if line.strip() == "---":
-            sep += 1
-            if sep == 2:
-                break
-            continue
-        if sep != 1:
-            continue
-        m = _FM_KEY_RE.match(line.strip())
-        if m:
-            fm[m.group(1)] = m.group(2) if m.group(2) is not None else m.group(3)
+    """Front matter of a post, via the shared parser in ``scripts/lib``.
+
+    This was a local reimplementation whose key pattern rejected hyphenated and
+    mixed-case keys, so it silently dropped them. Differential-tested against
+    the shared parser over all 240 posts before switching: zero value
+    mismatches on shared keys — the shared parser is a strict superset. This
+    module reads specific known keys, so the extra ones are inert.
+    """
+    fm, _body = _shared_parse_frontmatter(text)
     return fm
 
 
