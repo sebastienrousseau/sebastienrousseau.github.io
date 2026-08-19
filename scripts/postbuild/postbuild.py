@@ -232,6 +232,14 @@ from postbuild_lib.html_passes import (
     strip_duplicate_body_h1,
 )
 from postbuild_lib.index_scorecard import inject_index_scorecard
+from postbuild_lib.internal_links import (
+    _alias_patterns,
+    canonicalise_absolute_self_links,
+    inject_contextual_links,
+    inject_related_cluster,
+    load_corpus,
+    load_taxonomy,
+)
 from postbuild_lib.navigation import (
     build_post_nav_index,
     inject_anchor_links_and_toc,
@@ -313,6 +321,8 @@ class _PostbuildCounters:
         "cdn_wrapped",
         "citation_patched",
         "cite_panels_set",
+        "cluster_blocks_added",
+        "contextual_links_added",
         "crumbs_patched",
         "csp_normalised",
         "csp_patched",
@@ -341,6 +351,7 @@ class _PostbuildCounters:
         "redundant_titles_stripped",
         "reuse_panels_set",
         "section_rules_set",
+        "self_links_canonicalised",
         "share_rails_set",
         "social_patched",
         "softwaresourcecode_patched",
@@ -363,11 +374,14 @@ class _PostbuildContext:
     """Pre-pass artefacts read once and shared across pages."""
 
     __slots__ = (
+        "alias_patterns",
+        "corpus",
         "counters",
         "fr_titles",
         "gh_stats",
         "last_reviewed_index",
         "nav_index",
+        "taxonomy",
         "translated_per_lang",
     )
 
@@ -381,6 +395,12 @@ class _PostbuildContext:
         self.gh_stats = _gh_stats_index()
         self.counters = _PostbuildCounters()
         self.last_reviewed_index = build_comprehensive_lastmod_index()
+        # Article corpus + tag taxonomy for contextual internal linking.
+        # Read once here (not per page) — the alias patterns are ~200
+        # compiled regexes and the corpus is a full front-matter scan.
+        self.taxonomy = load_taxonomy()
+        self.corpus = load_corpus(taxonomy=self.taxonomy)
+        self.alias_patterns = _alias_patterns(self.taxonomy)
 
 
 def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
@@ -610,6 +630,30 @@ def _apply_hreflang_pass(html: str, page: Path, ctx: _PostbuildContext) -> str:
     return inject_hreflang(html, rel_slug, page_lang, ctx.translated_per_lang)
 
 
+def _apply_internal_link_passes(html: str, page: Path, ctx: _PostbuildContext) -> str:
+    """Wire the article into its topic cluster.
+
+    Three steps, in order: give same-origin absolute article links their
+    canonical trailing slash; link the first in-prose mention of a shared
+    topic to the sibling article that owns it; then append the nearest
+    siblings that are still unlinked so no article is left isolated. All
+    three are idempotent and English-only (see internal_links).
+    """
+    ctr = ctx.counters
+    out = canonicalise_absolute_self_links(html)
+    if out != html:
+        ctr.self_links_canonicalised += 1
+    prev = out
+    out = inject_contextual_links(page, out, ctx.corpus, ctx.taxonomy, patterns=ctx.alias_patterns)
+    if out != prev:
+        ctr.contextual_links_added += 1
+    prev = out
+    out = inject_related_cluster(page, out, ctx.corpus)
+    if out != prev:
+        ctr.cluster_blocks_added += 1
+    return out
+
+
 def _apply_final_schema_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     """JSON-LD passes that must see the FINAL DOM.
 
@@ -640,6 +684,7 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     """Run every per-page transform pass on ``page``."""
     original = page.read_text(encoding="utf-8", errors="ignore")
     patched_about = _apply_seo_passes(original, page, ctx.counters)
+    patched_about = _apply_internal_link_passes(patched_about, page, ctx)
     patched_src = _apply_article_passes(patched_about, page, ctx.counters)
     # Per-article inline language switcher — runs after article furniture
     # because it inserts between the hero <section> and <main>, which
@@ -822,6 +867,9 @@ def main() -> None:
         f"{c.techarticle_patched} got TechArticle, "
         f"{c.article_identity_aligned} had Article identity aligned to canonical, "
         f"{c.faq_schema_patched} got FAQPage, "
+        f"{c.contextual_links_added} got contextual internal links, "
+        f"{c.cluster_blocks_added} got a cluster block, "
+        f"{c.self_links_canonicalised} had absolute self-links canonicalised, "
         f"{c.newsarticle_patched} got NewsArticle, "
         f"{c.softwaresourcecode_patched} got SoftwareSourceCode, "
         f"{c.social_patched} got og:image fixed, "
