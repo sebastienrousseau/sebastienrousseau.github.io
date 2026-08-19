@@ -31,6 +31,19 @@ SERVE=0
 #     from the top-6 most recent dated EN posts.
 #
 # Both are idempotent: a no-op rebuild leaves the working tree clean.
+# Start from an empty output tree. ssg writes INTO public/ rather than
+# replacing it, so without this every build layered onto the last one and
+# public/ became an archaeological record: 7,172 stale /tags/ pages from a
+# superseded tag scheme (6,508 of them linking no articles, all titled
+# "— My SSG Site"), a 13,940-URL sitemap against production's 6,816, and a
+# 32.5 MB search index against production's 806 KB. CI never saw it because
+# a CI checkout is already empty, so `make verify` and `make serve` measured
+# a tree neither CI nor production ever had. The SRI pass also re-stamped
+# already-stamped links, emitting duplicate integrity="" attributes on half
+# the tree. Cleaning here is what makes the build reproducible; the
+# `reproducible` job in ci.yml builds twice and diffs to prove it stays so.
+rm -rf public
+
 # Create a temporary copy of the content directory to build from
 rm -rf _posts_build
 cp -R _posts _posts_build
@@ -156,9 +169,23 @@ if [[ -d labs ]]; then
   done
 fi
 
-# Copy fingerprinted assets to their unfingerprinted aliases so the layouts'
-# /main.js, /sw.js, /highlight.css references resolve.
-for f in public/main.*.js public/sw.*.js public/theme-init.*.js public/highlight.*.css; do
+# Copy the fingerprinted service worker to its unfingerprinted alias.
+#
+# ONLY sw.js. A service worker's scope is bound to the path it is registered
+# from, so it needs a stable URL — a fingerprinted worker would orphan its own
+# registration on every deploy. main.js is registered from it at /sw.js, and
+# every page's speculation-rules block excludes that exact path.
+#
+# The other three aliases this loop used to create (main.js, highlight.css,
+# theme-init.js) were dead: postbuild rewrites every reference to the
+# fingerprinted name via _FP_ASSET_MAP, and theme-init is inlined into the
+# head outright. Measured on the built tree: /main.js, /highlight.css and
+# /theme-init.js are referenced by 0 of 6,856 pages, while /sw.js is
+# referenced by all of them. Shipping the unreferenced copies also cost them
+# `cache-control: max-age=0, must-revalidate` — the opposite of the immutable
+# caching the fingerprinted originals get. The comment here previously
+# asserted all four were needed, which is what kept them alive.
+for f in public/sw.*.js; do
   [[ -f "$f" ]] || continue
   base=$(basename "$f")
   short="${base%%.*}.${base##*.}"

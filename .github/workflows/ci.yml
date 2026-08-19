@@ -417,6 +417,93 @@ jobs:
           retention-days: 1
 
   # =========================================================================
+  # Stage 1b — reproducibility. build.sh writes INTO public/ rather than
+  # replacing it, so for a long time every local build layered onto the last
+  # and public/ became an archaeological record: 7,172 stale /tags/ pages
+  # from a superseded scheme (all titled "— My SSG Site"), a 13,940-URL
+  # sitemap against production's 6,816, a 32.5 MB search index against
+  # production's 806 KB. CI never saw it, because a CI checkout starts empty
+  # — which is exactly why it went unnoticed for months while `make verify`
+  # and `make serve` measured a tree neither CI nor production ever had.
+  #
+  # build.sh now cleans public/ first. This job proves it stayed clean: two
+  # builds of the same commit must produce byte-identical trees. That turns
+  # "reproducible byte-identical builds" from an aspiration in the
+  # improvement plan into a check, and it catches any non-idempotent
+  # postbuild pass (duplicate integrity="" attributes, accumulating CSP
+  # hashes, double-injected link blocks) on the PR that introduces it.
+  # =========================================================================
+  reproducible:
+    name: Reproducible build (byte-identical rebuild)
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Install Rust toolchain (cached)
+        uses: dtolnay/rust-toolchain@4be7066ada62dd38de10e7b70166bc74ed198c30 # stable
+
+      - name: Cache cargo registry + git
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            ~/.cargo/bin
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg-${{ env.SSG_VERSION }}
+
+      - name: Add cargo bin to PATH
+        run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Install Static Site Generator (ssg)
+        run: |
+          have="$(ssg --version 2>/dev/null | awk '{print $2}' || true)"
+          if [ "${have:-}" != "${SSG_VERSION}" ]; then
+            cargo install ssg --locked --version "${SSG_VERSION}" --force
+          fi
+          got="$(ssg --version | awk '{print $2}')"
+          [ "${got}" = "${SSG_VERSION}" ] || { echo "::error::ssg ${got} != ${SSG_VERSION}"; exit 1; }
+
+      - name: Install wasm-pack + wasm32 target
+        run: |
+          rustup target add wasm32-unknown-unknown
+          command -v wasm-pack >/dev/null 2>&1 || cargo install wasm-pack --version 0.15.0 --locked
+
+      - name: Setup Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+          cache: 'pip'
+
+      - name: Setup Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v6
+        with:
+          node-version: "22"
+
+      - name: Install Python tooling
+        run: pip install --quiet --require-hashes -r requirements-dev.lock
+
+      - name: Build twice and diff
+        run: |
+          ./build.sh >/dev/null
+          mv public public.first
+          ./build.sh >/dev/null
+          # Timestamped artefacts legitimately differ between runs: the build
+          # stamps wall-clock times into feeds and status. Everything else
+          # must match byte-for-byte.
+          if ! diff -rq \
+                --exclude='*.xml' \
+                --exclude='status.json' \
+                --exclude='feed.json' \
+                --exclude='feed.jsonl' \
+                public.first public > /tmp/repro.diff 2>&1; then
+            echo "::error::rebuild is not byte-identical — a build pass is not idempotent"
+            head -50 /tmp/repro.diff
+            exit 1
+          fi
+          echo "rebuild is byte-identical"
+
+  # =========================================================================
   # Stage 2b — visual regression. Screenshots six key pages (home, hub,
   # docs, trust, papers→research, speaking) at 1440px in forced-light
   # rendering via .github/ci-tools/visual/visual.mjs (puppeteer-core over
