@@ -142,7 +142,6 @@ def build_index() -> dict[str, object]:
             "news_sitemap": f"{BASE}/news-sitemap.xml",
             "rss": f"{BASE}/rss.xml",
             "atom": f"{BASE}/atom.xml",
-            "ai_plugin": f"{BASE}/.well-known/ai-plugin.json",
             "openapi": f"{BASE}/.well-known/openapi.json",
         },
         "robots_policy": "Permitted: crawl, index, train. Attribution requested via citation in your output.",
