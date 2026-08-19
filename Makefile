@@ -1,5 +1,12 @@
 .PHONY: bootstrap build serve regenerate audit audit-external validate test-search-index test-i18n clean test lint typecheck sbom coverage publish-today verify
 
+# Single source of truth for the ssg pin, parsed straight out of the CI
+# workflow so `make bootstrap` can never install a version CI would reject.
+# It drifted before: this Makefile installed 0.0.46 while CI built with
+# 0.0.39 and the README documented a third value. ADR-0002.
+# tests/unit/test_ssg_pin_single_source.py fails the build on any conflict.
+SSG_VERSION := $(shell sed -n 's/^[[:space:]]*SSG_VERSION:[[:space:]]*"\([^"]*\)".*/\1/p' .github/workflows/ci.yml | head -1)
+
 # Default target.
 build:
 	@./build.sh
@@ -87,8 +94,17 @@ bootstrap:
 	@command -v mise >/dev/null 2>&1 || { echo "mise not found — install it from https://mise.jdx.dev, then re-run 'make bootstrap'"; exit 1; }
 	@echo "==> mise install (python 3.12, node 22, rust, pa11y-ci, http-server)"
 	@mise install
-	@echo "==> ssg static-site compiler (0.0.46, pinned — ADR-0002)"
-	@command -v ssg >/dev/null 2>&1 || cargo install ssg --locked --version 0.0.46
+	@echo "==> ssg static-site compiler ($(SSG_VERSION), pinned — ADR-0002)"
+	@# `command -v ssg` is not a version check: a stale binary already on PATH
+	@# satisfies it and the pin never applies. Compare the running version,
+	@# reinstall on mismatch, then assert — same contract as ci.yml.
+	@have=$$(ssg --version 2>/dev/null | awk '{print $$2}' || true); \
+	 if [ "$$have" != "$(SSG_VERSION)" ]; then \
+	   echo "    ssg: have '$${have:-none}', want $(SSG_VERSION) — installing"; \
+	   cargo install ssg --locked --version $(SSG_VERSION) --force; \
+	 fi; \
+	 got=$$(ssg --version | awk '{print $$2}'); \
+	 [ "$$got" = "$(SSG_VERSION)" ] || { echo "ssg $$got running but $(SSG_VERSION) pinned"; exit 1; }
 	@echo "==> python build + dev deps (hash-pinned lock — same as CI)"
 	@pip install --quiet --require-hashes -r requirements-dev.lock
 	@echo "==> bootstrap complete. Next: make build  (first build target: under 10 min)."
@@ -101,8 +117,8 @@ bootstrap:
 # post-build gates that need public/ (JSON-LD, internal links, SBOM).
 # Green here == the same green CI enforces before deploy.
 #
-# Requires a bootstrapped toolchain (make bootstrap) — notably ssg 0.0.46
-# (ADR-0002); ssg 0.0.45 emits a known lang-leakage false positive.
+# Requires a bootstrapped toolchain (make bootstrap) — notably the pinned
+# ssg (ADR-0002); ssg 0.0.45 emits a known lang-leakage false positive.
 verify:
 	@echo "==> [1/7] lint (ruff + naming)";         $(MAKE) --no-print-directory lint
 	@echo "==> [2/7] typecheck (mypy strict tier)"; $(MAKE) --no-print-directory typecheck
