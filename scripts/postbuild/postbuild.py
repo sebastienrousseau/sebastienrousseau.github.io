@@ -260,6 +260,8 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
 # Legacy-URL redirect conversion (/papers -> /research + locale forks)
 from postbuild_lib.redirects import apply_redirect_pages
 from postbuild_lib.schemas import (
+    align_article_identity,
+    inject_faq_schema,
     inject_news_article,
     inject_software_source_code,
     inject_tech_article,
@@ -304,6 +306,7 @@ class _PostbuildCounters:
         "about_patched",
         "action_rails_set",
         "anchor_patched",
+        "article_identity_aligned",
         "asset_fp_patched",
         "body_h1_stripped",
         "byline_straps_set",
@@ -316,6 +319,7 @@ class _PostbuildCounters:
         "decks_set",
         "desc_cleaned",
         "eyebrows_set",
+        "faq_schema_patched",
         "footnotes_set",
         "furniture_patched",
         "howto_patched",
@@ -482,6 +486,10 @@ def _apply_schema_subtype_passes(
     out = inject_software_source_code(page, out)
     if out != prev:
         ctr.softwaresourcecode_patched += 1
+    # Last, so every Article node that exists on the page — ssg's BlogPosting
+    # and whichever subtype was just injected — agrees with <link rel=
+    # canonical> and with itself. Runs before inject_jsonld_hashes so the CSP
+    # hash covers the aligned bytes.
     return out
 
 
@@ -602,6 +610,32 @@ def _apply_hreflang_pass(html: str, page: Path, ctx: _PostbuildContext) -> str:
     return inject_hreflang(html, rel_slug, page_lang, ctx.translated_per_lang)
 
 
+def _apply_final_schema_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
+    """JSON-LD passes that must see the FINAL DOM.
+
+    Both of these depend on markup earlier passes produce, so they run last —
+    after article furniture, navigation, hreflang and canonical normalisation,
+    and immediately before the CSP hash pass so the hashes cover their bytes.
+
+    * ``inject_faq_schema`` reads the FAQ section, which it locates by the
+      heading's ``id``. That ``id`` is added by ``inject_anchor_links_and_toc``
+      in the article passes — running earlier found no heading and silently
+      emitted nothing.
+    * ``align_article_identity`` binds every Article node to the canonical
+      URL, so it has to run after ``normalize_canonical`` has settled what
+      that URL is, and after every pass that may have added an Article node.
+    """
+    prev = html
+    out = inject_faq_schema(page, html)
+    if out != prev:
+        ctr.faq_schema_patched += 1
+    prev = out
+    out = align_article_identity(out)
+    if out != prev:
+        ctr.article_identity_aligned += 1
+    return out
+
+
 def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     """Run every per-page transform pass on ``page``."""
     original = page.read_text(encoding="utf-8", errors="ignore")
@@ -664,6 +698,7 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     # sitemap). Runs after hreflang + furniture so it overrides any earlier
     # writer. Idempotent.
     patched_hl = normalize_canonical(page, patched_hl)
+    patched_hl = _apply_final_schema_passes(patched_hl, page, ctx.counters)
     # ssg emits its own listing pages (tag indexes) without our layouts and
     # ships them a weaker default policy. Normalise before hashing so the
     # JSON-LD hashes land in the canonical policy rather than ssg's.
@@ -785,6 +820,8 @@ def main() -> None:
         f"{c.sri_patched} got real SRI, "
         f"{c.itemlist_patched} got ItemList JSON-LD, "
         f"{c.techarticle_patched} got TechArticle, "
+        f"{c.article_identity_aligned} had Article identity aligned to canonical, "
+        f"{c.faq_schema_patched} got FAQPage, "
         f"{c.newsarticle_patched} got NewsArticle, "
         f"{c.softwaresourcecode_patched} got SoftwareSourceCode, "
         f"{c.social_patched} got og:image fixed, "
