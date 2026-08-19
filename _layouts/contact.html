@@ -79,8 +79,16 @@
 
       :root[data-theme="dark"]{color-scheme:dark}:root[data-theme="light"]{color-scheme:light}
       :root{
-        --accent: rgb({{theme-color}});
-        --accent-rgb: {{theme-color}};
+        /* Per-page accent moved OUT of this block — see the second <style>
+           below. Keeping `rgb({{theme-color}})` here made the whole ~138 KB
+           stylesheet page-variable, so ssg emitted a separate full copy per
+           distinct accent: two 138 KB bundles that differed in six bytes and
+           between them covered 82 % of pages, so any visitor crossing from an
+           article to a listing re-downloaded ~25 KB gzipped of identical CSS.
+           The fallback below is the AAA-safe default; the per-page value
+           overrides it. */
+        --accent: var(--accent-page, rgb(0,67,165));
+        --accent-rgb: var(--accent-page-rgb, 0,67,165);
         /* One link colour everywhere: a fixed, WCAG-AAA-safe blue (>=7:1 on
            white) rather than the per-page --accent, since some articles carry a
            lighter banner-derived accent (e.g. 0,83,191 = 6.23:1) that fails AAA.
@@ -2063,6 +2071,7 @@
       .contact-aside-list a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
       .contact-aside-note{font-size:13.5px;line-height:1.5;color:var(--ink-mute);margin:0;padding-block-start:18px;border-block-start:1px solid var(--rule)}
     </style>
+    <style>:root{--accent-page:rgb({{theme-color}});--accent-page-rgb:{{theme-color}}}</style>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <a class="skip" href="#main">Skip to main content</a>

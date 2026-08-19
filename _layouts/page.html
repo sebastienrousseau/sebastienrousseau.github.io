@@ -80,8 +80,16 @@
 
       :root[data-theme="dark"]{color-scheme:dark}:root[data-theme="light"]{color-scheme:light}
       :root{
-        --accent: rgb({{theme-color}});
-        --accent-rgb: {{theme-color}};
+        /* Per-page accent moved OUT of this block — see the second <style>
+           below. Keeping `rgb({{theme-color}})` here made the whole ~138 KB
+           stylesheet page-variable, so ssg emitted a separate full copy per
+           distinct accent: two 138 KB bundles that differed in six bytes and
+           between them covered 82 % of pages, so any visitor crossing from an
+           article to a listing re-downloaded ~25 KB gzipped of identical CSS.
+           The fallback below is the AAA-safe default; the per-page value
+           overrides it. */
+        --accent: var(--accent-page, rgb(0,67,165));
+        --accent-rgb: var(--accent-page-rgb, 0,67,165);
         /* One link colour everywhere: a fixed, WCAG-AAA-safe blue (>=7:1 on
            white) rather than the per-page --accent, since some articles carry a
            lighter banner-derived accent (e.g. 0,83,191 = 6.23:1) that fails AAA.

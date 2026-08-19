@@ -183,6 +183,11 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     inject_eyebrow,
     slugify,
 )
+from postbuild_lib.asset_dedupe import (
+    find_duplicate_assets,
+    remove_duplicate_files,
+    rewrite_asset_refs,
+)
 from postbuild_lib.citations import (
     inject_citations,
     inject_cite_popover,
@@ -315,6 +320,7 @@ class _PostbuildCounters:
         "action_rails_set",
         "anchor_patched",
         "article_identity_aligned",
+        "asset_dupes_rewritten",
         "asset_fp_patched",
         "body_h1_stripped",
         "byline_straps_set",
@@ -375,6 +381,7 @@ class _PostbuildContext:
 
     __slots__ = (
         "alias_patterns",
+        "asset_dupes",
         "corpus",
         "counters",
         "fr_titles",
@@ -401,6 +408,10 @@ class _PostbuildContext:
         self.taxonomy = load_taxonomy()
         self.corpus = load_corpus(taxonomy=self.taxonomy)
         self.alias_patterns = _alias_patterns(self.taxonomy)
+        # Byte-identical /_csp/ assets ssg fingerprinted separately, mapped
+        # duplicate -> canonical. Computed once; the files themselves are
+        # removed after the page loop, once nothing references them.
+        self.asset_dupes = find_duplicate_assets(PUBLIC)
 
 
 def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
@@ -654,6 +665,19 @@ def _apply_internal_link_passes(html: str, page: Path, ctx: _PostbuildContext) -
     return out
 
 
+def _sweep_duplicate_assets(ctx: _PostbuildContext, had_failures: bool) -> None:
+    """Delete the byte-identical ``/_csp/`` assets whose references were all
+    rewritten to a canonical twin.
+
+    Runs after the page loop, never during it: a page not yet processed still
+    points at them. Skipped when any page failed, since that page kept its
+    original references."""
+    if had_failures or not ctx.asset_dupes:
+        return
+    n_removed = remove_duplicate_files(PUBLIC, ctx.asset_dupes)
+    print(f"  asset dedupe       : {n_removed} byte-identical /_csp/ asset(s) removed")
+
+
 def _apply_final_schema_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     """JSON-LD passes that must see the FINAL DOM.
 
@@ -744,6 +768,12 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     # writer. Idempotent.
     patched_hl = normalize_canonical(page, patched_hl)
     patched_hl = _apply_final_schema_passes(patched_hl, page, ctx.counters)
+    # Point identical-content stylesheets at one URL so a reader crossing
+    # between page types does not re-download bytes they already have.
+    prev_dedupe = patched_hl
+    patched_hl = rewrite_asset_refs(patched_hl, ctx.asset_dupes)
+    if patched_hl != prev_dedupe:
+        ctx.counters.asset_dupes_rewritten += 1
     # ssg emits its own listing pages (tag indexes) without our layouts and
     # ships them a weaker default policy. Normalise before hashing so the
     # JSON-LD hashes land in the canonical policy rather than ssg's.
@@ -823,6 +853,8 @@ def main() -> None:
         except Exception as exc:  # boundary: report + exit 1 below
             failures.append((page, exc))
 
+    _sweep_duplicate_assets(ctx, bool(failures))
+
     (
         sitemap_patched,
         robots_written,
@@ -867,6 +899,7 @@ def main() -> None:
         f"{c.techarticle_patched} got TechArticle, "
         f"{c.article_identity_aligned} had Article identity aligned to canonical, "
         f"{c.faq_schema_patched} got FAQPage, "
+        f"{c.asset_dupes_rewritten} had duplicate asset URLs collapsed, "
         f"{c.contextual_links_added} got contextual internal links, "
         f"{c.cluster_blocks_added} got a cluster block, "
         f"{c.self_links_canonicalised} had absolute self-links canonicalised, "
