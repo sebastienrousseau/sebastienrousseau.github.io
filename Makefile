@@ -53,6 +53,7 @@ test-i18n:
 	@python3 tests/validation/test_sitemap_completeness.py
 	@python3 tests/validation/test_lang_no_leakage.py
 	@python3 tests/validation/test_rtl_safe.py --strict
+	@python3 tests/validation/test_slug_policy.py
 
 # Python test suite (scripts/ utilities).
 test:
