@@ -329,6 +329,12 @@ python3 scripts/seo_and_audit/build_rag_corpus.py
 # French homepage instead of the French translation of that article.
 # Must run after build_translations.py + postbuild.py have finalised
 # every page's hreflang head links.
+# Delete the ~7,400 per-directory sitemap / news-sitemap copies ssg scatters
+# through public/ (17 MB of the deploy artifact, full of malformed
+# double-slash URLs). They are crawlable: /fr/news-sitemap.xml was served in
+# production as one of these stale copies. Runs after every sitemap writer so
+# the legitimate root + per-locale files survive. Idempotent.
+python3 scripts/postbuild/prune_duplicate_sitemaps.py
 python3 scripts/postbuild/fix_lang_switcher.py
 # Sigstore signing pass — no-op unless _data/sigstore/config.json exists
 # (the cosign private key is machine-local, never in CI). Always mirror
