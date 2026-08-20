@@ -15,6 +15,11 @@
 #   jsonld_diff.diff_pages                   D(22) -> A/B
 #   topic_link.process_post                  D(22) -> B(6)
 # Each was differential-tested against its pre-refactor implementation
+#   validate_jsonld._validate_rss_item        C(20) -> cleared
+#   validate_jsonld._validate_news_extension  C(16) -> cleared
+#   validate_jsonld._validate_sitemap_url     C(16) -> cleared
+#   validate_jsonld.main                      C(16) -> cleared
+#   validate_jsonld._validate_atom_entry      C(11) -> cleared
 # before the line was removed.
 scripts/editorial/audit_translations.py:main
 scripts/editorial/automate_tags.py:main
@@ -32,12 +37,5 @@ scripts/postbuild/post_enrich.py:_related_posts
 scripts/postbuild/postbuild_assets.py:setup_asset_state
 scripts/postbuild/regen_slug_maps.py:_articles_map_for_language
 scripts/security/sigstore_sign.py:main
-scripts/seo_and_audit/audit_links.py:main
 scripts/seo_and_audit/pa11y_cache.py:cmd_post
 scripts/seo_and_audit/pa11y_retry_flakes.py:main
-scripts/seo_and_audit/readability.py:count_syllables
-scripts/seo_and_audit/validate_jsonld.py:_validate_atom_entry
-scripts/seo_and_audit/validate_jsonld.py:_validate_news_extension
-scripts/seo_and_audit/validate_jsonld.py:_validate_rss_item
-scripts/seo_and_audit/validate_jsonld.py:_validate_sitemap_url
-scripts/seo_and_audit/validate_jsonld.py:main

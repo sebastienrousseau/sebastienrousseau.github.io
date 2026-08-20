@@ -11,34 +11,43 @@ import re
 import sys
 from pathlib import Path
 
+_VOWELS = "aeiouy"
+
+
+def _vowel_groups(word: str) -> int:
+    """Count runs of vowels — one syllable nucleus per run."""
+    count = 0
+    in_run = False
+    for char in word:
+        if char in _VOWELS:
+            if not in_run:
+                count += 1
+            in_run = True
+        else:
+            in_run = False
+    return count
+
+
+def _silent_ending_adjustment(word: str) -> int:
+    """English spelling adds vowels that are not pronounced. Trailing silent
+    'e' ("make"), and 'es'/'ed' ("makes", "walked") — but not '-le', where the
+    e carries the syllable ("table")."""
+    adjust = 0
+    if word.endswith("e"):
+        adjust -= 1
+    if word.endswith(("es", "ed")) and not word.endswith("le"):
+        adjust -= 1
+    return adjust
+
 
 def count_syllables(word: str) -> int:
+    """Rule-based English syllable count: vowel groups, less silent endings,
+    floored at one for any real word."""
     word = word.lower().strip(".,;:?!'\"()[]{}*-_+=")
     if not word or not word.isalpha():
         return 0
-
-    # Basic rule-based English syllable counter
-    vowels = "aeiouy"
-    count = 0
-    is_vowel = False
-    for char in word:
-        if char in vowels:
-            if not is_vowel:
-                count += 1
-                is_vowel = True
-        else:
-            is_vowel = False
-
-    # Silent 'e' at the end
-    if word.endswith("e"):
-        count -= 1
-    # Silent 'es' or 'ed' endings
-    if (word.endswith("es") or word.endswith("ed")) and not word.endswith("le"):
-        count -= 1
-
-    if count <= 0:
-        count = 1
-    return count
+    count = _vowel_groups(word) + _silent_ending_adjustment(word)
+    return max(count, 1)
 
 
 def analyze_text(text: str) -> tuple[float, float, int, int, int]:
