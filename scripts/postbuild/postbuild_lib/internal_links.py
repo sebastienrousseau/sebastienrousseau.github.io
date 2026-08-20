@@ -43,7 +43,7 @@ except ImportError:  # pragma: no cover - yaml ships in requirements.txt
     yaml = None  # type: ignore[assignment]
 
 from _frontmatter import parse_frontmatter as _parse_frontmatter
-from postbuild_lib._i18n import _detect_page_lang, _slug_maps
+from postbuild_lib._i18n import _detect_page_lang, _slug_maps, _strings_for_lang
 
 POSTS = Path("_posts")
 TAXONOMY = Path("_data") / "taxonomy.yml"
@@ -348,16 +348,69 @@ def _already_linked_stems(html: str) -> set[str]:
     return set(_ANY_ARTICLE_HREF_RE.findall(html))
 
 
+_LOCALE_TITLES: dict[str, dict[str, str]] = {}
+
+
+def locale_titles(lang: str) -> dict[str, str]:
+    """``{english_stem: translated_title}`` for one locale.
+
+    The cluster block on a locale page has to show that locale's titles, not
+    English ones. Locale posts carry a translated ``title:`` in front matter;
+    the EN↔locale stem mapping already exists in
+    ``_data/i18n/<lang>/slugs.json``. Ranking still comes from the **English**
+    tag graph, because translated ``tags:`` are inconsistent across locales
+    (some are absent, some partly translated) while the English taxonomy is
+    the curated one. Presentation is localised; relevance is not re-derived.
+
+    Cached per locale — this reads ~105 files per language across 33 of them.
+    """
+    if lang in _LOCALE_TITLES:
+        return _LOCALE_TITLES[lang]
+    out: dict[str, str] = {}
+    try:
+        en_to_lang = _slug_maps(lang)["articles_en_to_lang"]
+    except Exception:  # a missing slug map must never fail a build
+        _LOCALE_TITLES[lang] = out
+        return out
+    for en_stem, lang_stem in en_to_lang.items():
+        src = POSTS / lang / f"{lang_stem}.md"
+        if not src.is_file():
+            continue
+        fm, _body = _parse_frontmatter(src.read_text(encoding="utf-8"))
+        title = (fm.get("title") or "").strip()
+        if title:
+            out[en_stem] = title
+    _LOCALE_TITLES[lang] = out
+    return out
+
+
+def cluster_heading(lang: str) -> str:
+    """The locale's own "Related articles" string, from strings.json."""
+    if lang == "en":
+        return _CLUSTER_HEADING["en"]
+    try:
+        strings = _strings_for_lang(lang)
+    except Exception:
+        strings = {}
+    return strings.get("article.relatedHeading") or _CLUSTER_HEADING["en"]
+
+
 def _cluster_picks(
     page: Path, html: str, corpus: list[dict], public: Path, target: int
 ) -> tuple[list[dict], str] | None:
     """The siblings to link, plus the page language — or None if not eligible."""
-    en_stem = _page_stem(page, public)
-    if not en_stem:
+    stem = _page_stem(page, public)
+    if not stem:
         return None
     lang = _detect_page_lang(html)
+    # On a locale page the directory name is that locale's slug; map it back to
+    # the English stem so the English tag graph can rank it.
+    en_stem = stem
     if lang != "en":
-        return None
+        try:
+            en_stem = _slug_maps(lang)["articles_lang_to_en"].get(stem, stem)
+        except Exception:
+            return None
     self_article = next((a for a in corpus if a["stem"] == en_stem), None)
     if not self_article:
         return None
@@ -369,16 +422,26 @@ def _cluster_picks(
 
 
 def _cluster_block(picks: list[dict], lang: str) -> str:
-    items = "".join(
-        f'<li><a href="{_localised_url(a["stem"], lang)}">'
-        f"{_html.escape(a['title'], quote=False)}</a></li>"
-        for a in picks
-    )
+    titles = locale_titles(lang) if lang != "en" else {}
+    rows = []
+    for a in picks:
+        # A locale entry only ships if that locale actually has the article
+        # translated; linking a reader to an English page from a French one is
+        # worse than one fewer link.
+        title = titles.get(a["stem"]) if lang != "en" else a["title"]
+        if not title:
+            continue
+        rows.append(
+            f'<li><a href="{_localised_url(a["stem"], lang)}">'
+            f"{_html.escape(title, quote=False)}</a></li>"
+        )
+    if not rows:
+        return ""
     return (
         f'<nav class="cluster-links" aria-labelledby="cluster-links-heading">'
         f'<h2 id="cluster-links-heading" class="cluster-links-heading">'
-        f'{_CLUSTER_HEADING["en"]}</h2>'
-        f'<ul class="cluster-links-list">{items}</ul></nav>'
+        f"{_html.escape(cluster_heading(lang), quote=False)}</h2>"
+        f'<ul class="cluster-links-list">{"".join(rows)}</ul></nav>'
     )
 
 
@@ -399,4 +462,6 @@ def inject_related_cluster(
     if not close:
         return html
     block = _cluster_block(*resolved)
+    if not block:
+        return html
     return html[: close.start()] + block + html[close.start() :]

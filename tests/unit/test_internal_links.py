@@ -342,3 +342,183 @@ def test_cluster_block_skips_locale_pages() -> None:
     page = PUBLIC / "fr" / PAGE.parent.name / "index.html"
     html = _page("<p>Corps.</p>", lang="fr-FR")
     assert inject_related_cluster(page, html, CORPUS, public=PUBLIC) == html
+
+
+# ------------------------------------------------- locale cluster blocks
+#
+# The linker is English-only for *contextual* links: locale prose is a
+# translation, so the English alias vocabulary does not appear in it. But the
+# cluster block is just links, and it was skipping locales too — leaving 3,536
+# of 3,640 dated pages (97.1 %) with no internal links at all, while the
+# English median read 16. Relevance is still ranked on the English tag graph;
+# only the presentation is localised.
+
+
+def _locale_page(lang: str, body: str = "<p>Corps.</p>") -> str:
+    return f'<html lang="{lang}-FR"><body><main>{body}</main></body></html>'
+
+
+def test_locale_pages_get_a_cluster_block(monkeypatch: pytest.MonkeyPatch) -> None:
+    from postbuild_lib import internal_links as il
+
+    monkeypatch.setattr(
+        il, "_slug_maps",
+        lambda _c: {
+            "articles_en_to_lang": {a["stem"]: a["stem"] + "-fr" for a in CORPUS},
+            "articles_lang_to_en": {a["stem"] + "-fr": a["stem"] for a in CORPUS},
+        },
+    )
+    monkeypatch.setattr(il, "locale_titles", lambda _l: {a["stem"]: "Titre " + a["title"] for a in CORPUS})
+    monkeypatch.setattr(il, "cluster_heading", lambda _l: "Articles connexes")
+
+    page = PUBLIC / "fr" / (PAGE.parent.name + "-fr") / "index.html"
+    out = il.inject_related_cluster(page, _locale_page("fr"), CORPUS, public=PUBLIC)
+    assert 'class="cluster-links"' in out
+    assert "Articles connexes" in out
+    assert "Titre " in out, "the block must use the locale's translated titles"
+
+
+def test_locale_block_links_locale_urls(monkeypatch: pytest.MonkeyPatch) -> None:
+    from postbuild_lib import internal_links as il
+
+    monkeypatch.setattr(
+        il, "_slug_maps",
+        lambda _c: {
+            "articles_en_to_lang": {a["stem"]: a["stem"] + "-fr" for a in CORPUS},
+            "articles_lang_to_en": {a["stem"] + "-fr": a["stem"] for a in CORPUS},
+        },
+    )
+    monkeypatch.setattr(il, "locale_titles", lambda _l: {a["stem"]: "T" for a in CORPUS})
+    monkeypatch.setattr(il, "cluster_heading", lambda _l: "Connexes")
+
+    page = PUBLIC / "fr" / (PAGE.parent.name + "-fr") / "index.html"
+    out = il.inject_related_cluster(page, _locale_page("fr"), CORPUS, public=PUBLIC)
+    hrefs = re.findall(r'<li><a href="([^"]+)"', out)
+    assert hrefs, "expected locale links"
+    assert all(h.startswith("/fr/") for h in hrefs), hrefs
+    assert all(h.endswith("-fr/") for h in hrefs), "must point at the locale slug"
+
+
+def test_untranslated_articles_are_omitted_not_linked_in_english(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Sending a French reader to an English page is worse than one fewer link."""
+    from postbuild_lib import internal_links as il
+
+    monkeypatch.setattr(
+        il, "_slug_maps",
+        lambda _c: {
+            "articles_en_to_lang": {a["stem"]: a["stem"] + "-fr" for a in CORPUS},
+            "articles_lang_to_en": {a["stem"] + "-fr": a["stem"] for a in CORPUS},
+        },
+    )
+    # Only one article has a translation.
+    monkeypatch.setattr(il, "locale_titles", lambda _l: {"2026-08-03-cra-reporting": "Traduit"})
+    monkeypatch.setattr(il, "cluster_heading", lambda _l: "Connexes")
+
+    page = PUBLIC / "fr" / (PAGE.parent.name + "-fr") / "index.html"
+    out = il.inject_related_cluster(page, _locale_page("fr"), CORPUS, public=PUBLIC)
+    assert out.count("<li>") == 1, "only the translated article should appear"
+    assert "Traduit" in out
+
+
+def test_locale_block_is_omitted_when_nothing_is_translated(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    from postbuild_lib import internal_links as il
+
+    monkeypatch.setattr(
+        il, "_slug_maps",
+        lambda _c: {
+            "articles_en_to_lang": {a["stem"]: a["stem"] + "-fr" for a in CORPUS},
+            "articles_lang_to_en": {a["stem"] + "-fr": a["stem"] for a in CORPUS},
+        },
+    )
+    monkeypatch.setattr(il, "locale_titles", lambda _l: {})
+    html = _locale_page("fr")
+    page = PUBLIC / "fr" / (PAGE.parent.name + "-fr") / "index.html"
+    assert il.inject_related_cluster(page, html, CORPUS, public=PUBLIC) == html
+
+
+def test_real_locale_titles_and_headings_resolve() -> None:
+    """Guards the wiring against a slugs.json or strings.json shape change."""
+    from postbuild_lib.internal_links import cluster_heading, locale_titles
+
+    titles = locale_titles("fr")
+    assert len(titles) > 50, f"expected a populated FR title index, got {len(titles)}"
+    assert all(isinstance(v, str) and v for v in titles.values())
+    assert cluster_heading("fr"), "FR must resolve a heading string"
+    assert cluster_heading("en") == "Continue reading in this cluster"
+
+
+# --------------------------------------------- locale defensive branches
+#
+# 100 % coverage is a gate on postbuild_lib, and these are the paths that run
+# on a real tree when i18n data is incomplete. Each one exists so a missing or
+# malformed locale file degrades to "fewer links" rather than failing a build.
+
+
+def test_missing_slug_map_yields_no_locale_titles(monkeypatch: pytest.MonkeyPatch) -> None:
+    from postbuild_lib import internal_links as il
+
+    il._LOCALE_TITLES.pop("zz", None)
+    monkeypatch.setattr(il, "_slug_maps", lambda _c: (_ for _ in ()).throw(RuntimeError("none")))
+    assert il.locale_titles("zz") == {}
+
+
+def test_locale_titles_skip_articles_with_no_source_file(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    from postbuild_lib import internal_links as il
+
+    il._LOCALE_TITLES.pop("zy", None)
+    monkeypatch.setattr(
+        il, "_slug_maps",
+        lambda _c: {"articles_en_to_lang": {"2026-01-01-absent": "2026-01-01-absent-zy"}},
+    )
+    assert il.locale_titles("zy") == {}
+
+
+def test_locale_titles_are_cached(monkeypatch: pytest.MonkeyPatch) -> None:
+    from postbuild_lib import internal_links as il
+
+    calls = {"n": 0}
+
+    def counting(_c):
+        calls["n"] += 1
+        return {"articles_en_to_lang": {}}
+
+    il._LOCALE_TITLES.pop("zx", None)
+    monkeypatch.setattr(il, "_slug_maps", counting)
+    il.locale_titles("zx")
+    il.locale_titles("zx")
+    assert calls["n"] == 1, "the title index must be read once per locale"
+
+
+def test_heading_falls_back_when_strings_are_unavailable(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    from postbuild_lib import internal_links as il
+
+    monkeypatch.setattr(
+        il, "_strings_for_lang", lambda _c: (_ for _ in ()).throw(RuntimeError("no strings"))
+    )
+    assert il.cluster_heading("zz") == "Continue reading in this cluster"
+
+
+def test_heading_falls_back_when_the_key_is_missing(monkeypatch: pytest.MonkeyPatch) -> None:
+    from postbuild_lib import internal_links as il
+
+    monkeypatch.setattr(il, "_strings_for_lang", lambda _c: {"other.key": "x"})
+    assert il.cluster_heading("zz") == "Continue reading in this cluster"
+
+
+def test_locale_page_with_an_unusable_slug_map_is_skipped(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    from postbuild_lib import internal_links as il
+
+    monkeypatch.setattr(il, "_slug_maps", lambda _c: (_ for _ in ()).throw(RuntimeError("none")))
+    html = _locale_page("fr")
+    page = PUBLIC / "fr" / (PAGE.parent.name + "-fr") / "index.html"
+    assert il.inject_related_cluster(page, html, CORPUS, public=PUBLIC) == html
