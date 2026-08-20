@@ -403,6 +403,10 @@ python3 tests/validation/test_rtl_safe.py --strict
 # Ratcheted — fails only when a locale goes backwards against the recorded
 # baseline, and prints the remaining backlog every run.
 python3 tests/validation/test_slug_policy.py
+# The two WCAG 2.2 criteria ssg classifies as "manual" are decidable by
+# measurement here (2.5.7 has nothing to apply to; 3.2.6 is a footer link on
+# every page). Gated so they cannot silently regress into being manual again.
+python3 tests/validation/test_wcag_manual_criteria.py
 python3 tests/validation/test_csp_strict.py
 python3 tests/validation/test_sri_integrity.py
 python3 tests/validation/test_meta_description_clean.py
