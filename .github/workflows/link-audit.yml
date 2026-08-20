@@ -18,15 +18,11 @@ env:
   # Single source of truth for the ssg pin: the cache key and the install
   # both read it, so they cannot drift apart. ADR-0002.
   #
-  # Held at 0.0.39 deliberately. ssg >=0.0.50 splits `tags:` on ASCII ","
-  # only, so a locale post using its language's separator (Arabic "،",
-  # fullwidth "，") collapses its whole tag list into one tag. The real
-  # corpus yields a 348-byte directory name; ext4 caps names at 255 bytes,
-  # so the Linux build aborts with ENAMETOOLONG. macOS/APFS counts
-  # characters (230) and survives, which is why this never showed up
-  # locally. See #431. Unpin once upstream splits on non-ASCII separators
-  # or build.sh normalises them before tag generation.
-  SSG_VERSION: "0.0.39"
+  # Tracks the newest stable ssg. build.sh passes --no-tag-pages,
+  # which needs >= 0.0.52 — a pin below that fails with
+  # "unexpected argument". Resolution and the version assertion live
+  # in .github/actions/setup-ssg so every workflow agrees.
+  SSG_VERSION: "latest"
 
 jobs:
   audit:
@@ -54,27 +50,9 @@ jobs:
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg-${{ env.SSG_VERSION }}
 
       - name: Install Static Site Generator (ssg)
-        run: |
-          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
-          export PATH="$HOME/.cargo/bin:$PATH"
-          # `command -v ssg` is not a version check. ~/.cargo/bin is restored
-          # from the cargo cache, so a stale binary satisfies it and the pin
-          # never applies — CI built with 0.0.39 for months while this line
-          # read 0.0.46 and then 0.0.50. The drift was invisible because a
-          # skipped `cargo install` prints nothing. Compare the running
-          # version, reinstall on mismatch, then assert, so a wrong binary
-          # fails the job instead of quietly building the site. ADR-0002.
-          have="$(ssg --version 2>/dev/null | awk '{print $2}' || true)"
-          if [ "${have:-}" != "${SSG_VERSION}" ]; then
-            echo "ssg: have '${have:-none}', want ${SSG_VERSION} — installing"
-            cargo install ssg --locked --version "${SSG_VERSION}" --force
-          fi
-          got="$(ssg --version | awk '{print $2}')"
-          if [ "${got}" != "${SSG_VERSION}" ]; then
-            echo "::error::ssg ${got} is running but ${SSG_VERSION} is pinned"
-            exit 1
-          fi
-          echo "ssg ${got} (pinned)"
+        uses: ./.github/actions/setup-ssg
+        with:
+          version: ${{ env.SSG_VERSION }}
 
       - name: Build site
         run: |

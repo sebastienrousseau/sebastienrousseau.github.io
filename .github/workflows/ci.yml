@@ -53,10 +53,6 @@ env:
   # Set a concrete version here to hold a release back; build.sh then asserts
   # it exactly.
   SSG_VERSION: "latest"
-  # Issue number holding the pin below the latest release. While set,
-  # ssg-version-check.yml stays quiet instead of filing a weekly bump
-  # request we have already decided against. Clear it when #431 closes.
-  SSG_PIN_HOLD: "431"
 
 jobs:
   # =========================================================================
@@ -187,33 +183,9 @@ jobs:
         run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
       - name: Install Static Site Generator (ssg)
-        run: |
-          # `command -v ssg` is not a version check. ~/.cargo/bin is restored
-          # from the cargo cache, so a stale binary satisfies it and the pin
-          # never applies — CI built with 0.0.39 for months while this line
-          # read 0.0.46 and then 0.0.50. The drift was invisible because a
-          # skipped `cargo install` prints nothing. Compare the running
-          # version, reinstall on mismatch, then assert, so a wrong binary
-          # fails the job instead of quietly building the site. ADR-0002.
-          have="$(ssg --version 2>/dev/null | awk '{print $2}' || true)"
-          if [ "${SSG_VERSION}" = "latest" ]; then
-            want="$(cargo search ssg --limit 1 \
-              | sed -n 's/^ssg = "\([^"]*\)".*/\1/p')"
-            [ -n "${want}" ] || { echo "::error::could not resolve latest ssg"; exit 1; }
-          else
-            want="${SSG_VERSION}"
-          fi
-          if [ "${have:-}" != "${want}" ]; then
-            echo "ssg: have '${have:-none}', want ${want} — installing"
-            cargo install ssg --locked --version "${want}" --force
-          fi
-          got="$(ssg --version | awk '{print $2}')"
-          if [ "${got}" != "${want}" ]; then
-            echo "::error::ssg ${got} is running but ${want} was requested"
-            exit 1
-          fi
-          echo "ssg ${got} (SSG_VERSION=${SSG_VERSION})"
-          echo "SSG_RESOLVED=${got}" >> "$GITHUB_ENV"
+        uses: ./.github/actions/setup-ssg
+        with:
+          version: ${{ env.SSG_VERSION }}
 
       - name: Install wasm-pack + wasm32 target
         run: |
@@ -517,13 +489,9 @@ jobs:
         run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
       - name: Install Static Site Generator (ssg)
-        run: |
-          have="$(ssg --version 2>/dev/null | awk '{print $2}' || true)"
-          if [ "${have:-}" != "${SSG_VERSION}" ]; then
-            cargo install ssg --locked --version "${SSG_VERSION}" --force
-          fi
-          got="$(ssg --version | awk '{print $2}')"
-          [ "${got}" = "${SSG_VERSION}" ] || { echo "::error::ssg ${got} != ${SSG_VERSION}"; exit 1; }
+        uses: ./.github/actions/setup-ssg
+        with:
+          version: ${{ env.SSG_VERSION }}
 
       - name: Install wasm-pack + wasm32 target
         run: |
