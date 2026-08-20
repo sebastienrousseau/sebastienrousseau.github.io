@@ -9,6 +9,7 @@
     "puppeteer-core": "24.23.0"
   },
   "overrides": {
+    "@puppeteer/browsers": "^3.0.2",
     "ip-address": "^10.3.1"
   }
 }

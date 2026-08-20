@@ -87,6 +87,35 @@ jobs:
       - name: Cloudflare KV write audit (Free-tier policy)
         run: bash scripts/dev/check-kv-writes.sh
 
+      - name: Vulnerability scan — CI tooling (npm audit)
+        # The Python side has had pip-audit on runtime deps for a while. The
+        # npm side had nothing: the three .github/ci-tools/ lockfiles are
+        # hash-pinned via `npm ci`, which guarantees reproducibility and says
+        # nothing about whether the pinned versions are vulnerable. Dependabot
+        # found extract-zip (GHSA-jmr9-qjv8-65gv, high) sitting transitively in
+        # all three, and no gate here would have caught it.
+        #
+        # Gated at high: npm's transitive trees surface low/moderate advisories
+        # constantly, and a gate that cries wolf gets ignored. High and critical
+        # are the ones that should stop a merge.
+        #
+        # To resolve one: prefer an `overrides` entry in the relevant
+        # package.json, which patches the transitive dependency without moving
+        # the top-level tool version (those are pinned under ADR-0002 and must
+        # not drift). Regenerate the lockfile with `npm install
+        # --package-lock-only` and commit both files.
+        run: |
+          fail=0
+          for tool in visual pa11y lighthouse; do
+            echo "::group::npm audit — $tool"
+            npm audit --audit-level=high --prefix ".github/ci-tools/$tool" || fail=1
+            echo "::endgroup::"
+          done
+          if [ "$fail" -ne 0 ]; then
+            echo "::error::high or critical advisory in the CI tooling — see the groups above"
+            exit 1
+          fi
+
       - name: Cyclomatic complexity (radon, ratcheted over all of scripts/)
         # Covers ALL of scripts/, not the four directories it used to. The
         # narrow scope left editorial/, security/ and seo_and_audit/ ungated

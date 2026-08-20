@@ -7,11 +7,12 @@
     "@lhci/cli": "0.14.0"
   },
   "overrides": {
-    "tmp": "0.2.7",
-    "cookie": "0.7.0",
-    "uuid": "11.1.1",
+    "@puppeteer/browsers": "^3.0.2",
     "brace-expansion": "^5.0.9",
+    "cookie": "0.7.0",
     "ip-address": "^10.3.1",
-    "js-yaml": "^3.15.1"
+    "js-yaml": "^3.15.1",
+    "tmp": "0.2.7",
+    "uuid": "11.1.1"
   }
 }
