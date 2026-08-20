@@ -430,9 +430,7 @@ DARK_SWEEP_RELPATHS: tuple[str, ...] = (
 )
 
 
-def build_dark_config(
-    public_dir: Path, base_url: str, hide_elements: str
-) -> dict[str, Any]:
+def build_dark_config(public_dir: Path, base_url: str, hide_elements: str) -> dict[str, Any]:
     """Pa11y-ci config for the dark-mode representative subset. Same
     defaults as the light sweep except Chrome launches with the
     prefers-color-scheme:dark flags; each URL entry is an object
@@ -575,16 +573,56 @@ def _audited_clean_relpaths(args: argparse.Namespace) -> set[str] | None:
     return clean
 
 
+def _checkpoint_swept(args: argparse.Namespace, manifest: dict) -> dict[str, str]:
+    """The swept pages that may be checkpointed this run.
+
+    Without ``--audited-reports`` this is the whole delta, which is only
+    sound on a green run: pa11y exited 0, so every swept URL passed.
+
+    With ``--audited-reports`` the run was NOT fully green — one shard hung
+    or failed — and only URLs some shard actually audited and found clean may
+    be checkpointed. That keeps a transient hang in one shard from throwing
+    away the other shards' work, which is what turns a single bad run into a
+    compounding backlog: an unsaved cache means the next run re-sweeps
+    everything, runs longer, and is likelier to hang again. Pages that were
+    never audited simply stay out of the cache and get swept next time.
+    """
+    swept = manifest.get("to_sweep_hashes", {})
+    audited = _audited_clean_relpaths(args)
+    if audited is None:
+        return swept
+    kept = {rel: h for rel, h in swept.items() if rel in audited}
+    print(
+        f"pa11y-cache post: partial update — {len(kept)} of "
+        f"{len(swept)} swept pages were audited clean; "
+        f"{len(swept) - len(kept)} left uncached for the next run.",
+    )
+    return kept
+
+
+def _drop_stale(pages: dict, public_dir: Path) -> int:
+    """Forget cached pages that no longer exist in ``public/``.
+
+    They would otherwise accumulate forever as the site changes.
+    """
+    live = {p.relative_to(public_dir).as_posix() for p in public_dir.rglob("index.html")}
+    stale = [rel for rel in pages if rel not in live]
+    for rel in stale:
+        pages.pop(rel, None)
+    return len(stale)
+
+
 def cmd_post(args: argparse.Namespace) -> int:
     """Post-pass: given a successful pa11y run on the delta URLs (which
     is what `pa11y-ci -c .pa11yci` exited 0 for), update the cache so
     next run can skip them."""
-    cache_path = Path(args.cache)
     manifest_path = Path(args.manifest)
     if not manifest_path.is_file():
         print(f"pa11y-cache post: manifest {manifest_path} missing — nothing to update")
         return 1
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+
+    cache_path = Path(args.cache)
     cache = load_cache(cache_path)
     current_fp = manifest["fingerprint"]
 
@@ -598,51 +636,20 @@ def cmd_post(args: argparse.Namespace) -> int:
     pages = cache["pages"]
 
     # Cache-hit set: re-affirm with current timestamp. Their hash didn't
-    # change, so the entry just gets touched.
+    # change, so the entry just gets touched. Newly-swept pages then record
+    # their current hash as the new checkpoint.
     for rel, h in manifest.get("cache_hit_hashes", {}).items():
         pages[rel] = {"hash": h, "status": "pass", "checked": now}
-
-    # Newly-passed sweep set: record the current hash as the new
-    # checkpoint.
-    #
-    # Without --audited-reports this is a whole-delta update, which is
-    # only sound on a green run: pa11y exited 0, so every swept URL
-    # passed.
-    #
-    # With --audited-reports the run was NOT fully green — one shard
-    # hung or failed — and we may only checkpoint the URLs some shard
-    # actually audited and found clean. That keeps a transient hang in
-    # one shard from throwing away the other shards' work, which is what
-    # turns a single bad run into a compounding backlog: an unsaved
-    # cache means the next run re-sweeps everything, runs longer, and is
-    # likelier to hang again. Pages that were never audited simply stay
-    # out of the cache and get swept next time.
-    audited = _audited_clean_relpaths(args)
-    swept = manifest.get("to_sweep_hashes", {})
-    if audited is not None:
-        skipped = [rel for rel in swept if rel not in audited]
-        swept = {rel: h for rel, h in swept.items() if rel in audited}
-        print(
-            f"pa11y-cache post: partial update — {len(swept)} of "
-            f"{len(swept) + len(skipped)} swept pages were audited clean; "
-            f"{len(skipped)} left uncached for the next run.",
-        )
-    for rel, h in swept.items():
+    for rel, h in _checkpoint_swept(args, manifest).items():
         pages[rel] = {"hash": h, "status": "pass", "checked": now}
 
-    # Drop entries for files that no longer exist in public/. They'd
-    # otherwise accumulate as the site changes.
-    public_dir = Path(args.public_dir)
-    live_relpaths = {p.relative_to(public_dir).as_posix() for p in public_dir.rglob("index.html")}
-    stale = [rel for rel in pages if rel not in live_relpaths]
-    for rel in stale:
-        pages.pop(rel, None)
+    stale = _drop_stale(pages, Path(args.public_dir))
 
     save_cache(cache_path, cache)
     print(
         f"pa11y-cache post: {len(pages)} pages now cached as pass "
         f"(+{len(manifest.get('to_sweep_hashes', {}))} swept, "
-        f"-{len(stale)} stale)."
+        f"-{stale} stale)."
     )
     return 0
 

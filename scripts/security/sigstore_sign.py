@@ -113,27 +113,61 @@ def _sign_one(html_path: Path, out_dir: Path, cfg: dict) -> bool:
         return False
     if result.returncode != 0:
         print(
-            f"sigstore: cosign error for {html_path.parent.name}: " f"{result.stderr.strip()}",
+            f"sigstore: cosign error for {html_path.parent.name}: {result.stderr.strip()}",
             file=sys.stderr,
         )
         return False
     return True
 
 
-def main() -> int:
+def _preflight() -> tuple[dict | None, int]:
+    """Config plus the exit code to use when signing cannot run.
+
+    Returns ``(cfg, 0)`` when signing should proceed. A missing config or
+    absent cosign is a deliberate skip (rc 0) — signing is opt-in — whereas
+    an unbuilt ``public/`` is a real error (rc 1).
+    """
     cfg = _load_config()
     if cfg is None:
         print(
             "sigstore: no _data/sigstore/config.json — signing skipped "
             "(see scripts/sigstore_sign.py docstring for activation)"
         )
-        return 0
+        return None, 0
     if not _cosign_available():
         print("sigstore: cosign binary not on PATH — signing skipped", file=sys.stderr)
-        return 0
+        return None, 0
     if not PUBLIC.is_dir():
         print("sigstore: public/ not built — run ./build.sh first", file=sys.stderr)
-        return 1
+        return None, 1
+    return cfg, 0
+
+
+def _article_pages() -> list[Path]:
+    """Every built dated article's ``index.html``, in stable order."""
+    return [
+        html
+        for article_dir in sorted(PUBLIC.iterdir())
+        if article_dir.is_dir()
+        and _DATED_DIR_RE.match(article_dir.name)
+        and (html := article_dir / "index.html").is_file()
+    ]
+
+
+def _publish_bundles() -> None:
+    """Copy the signatures and public key into the published bundles dir."""
+    BUNDLES_DIR.mkdir(parents=True, exist_ok=True)
+    for artefact in sorted(SIGSTORE_DIR.glob("*.bundle")):
+        shutil.copy2(artefact, BUNDLES_DIR / artefact.name)
+    pub = SIGSTORE_DIR / "cosign.pub"
+    if pub.is_file():
+        shutil.copy2(pub, BUNDLES_DIR / pub.name)
+
+
+def main() -> int:
+    cfg, rc = _preflight()
+    if cfg is None:
+        return rc
 
     SIGSTORE_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -145,23 +179,13 @@ def main() -> int:
 
     signed = 0
     failed = 0
-    for article_dir in sorted(PUBLIC.iterdir()):
-        if not article_dir.is_dir() or not _DATED_DIR_RE.match(article_dir.name):
-            continue
-        html = article_dir / "index.html"
-        if not html.is_file():
-            continue
+    for html in _article_pages():
         if _sign_one(html, SIGSTORE_DIR, cfg):
             signed += 1
         else:
             failed += 1
     if signed:
-        BUNDLES_DIR.mkdir(parents=True, exist_ok=True)
-        for artefact in sorted(SIGSTORE_DIR.glob("*.bundle")):
-            shutil.copy2(artefact, BUNDLES_DIR / artefact.name)
-        pub = SIGSTORE_DIR / "cosign.pub"
-        if pub.is_file():
-            shutil.copy2(pub, BUNDLES_DIR / pub.name)
+        _publish_bundles()
     print(f"sigstore: {signed} article(s) signed, {failed} failed")
     return 0 if failed == 0 else 1
 

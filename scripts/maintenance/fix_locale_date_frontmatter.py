@@ -35,6 +35,7 @@ import json
 import pathlib
 import re
 import sys
+from typing import NamedTuple
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 DATED = re.compile(r"^(\d{4}-\d{2}-\d{2})-")
@@ -110,6 +111,69 @@ def en_counterpart(p: pathlib.Path) -> pathlib.Path:
     return ROOT / "_posts" / f"{stem}.md"
 
 
+def _english_source_date(p: pathlib.Path) -> tuple[str | None, str | None]:
+    """The English counterpart's usable ``date:`` value, or a reason it isn't.
+
+    Returns ``(date, None)`` on success and ``(None, why)`` when the locale
+    file has to go to manual review.
+    """
+    en = en_counterpart(p)
+    if not en.is_file():
+        return None, "no English counterpart"
+    src = field(en.read_text(encoding="utf-8"), "date")
+    if not src or not parseable(src):
+        return None, f"English counterpart date unusable: {src!r}"
+    return src, None
+
+
+class _Plan(NamedTuple):
+    """What to do with one locale file: rewrite to ``new_text``, or defer."""
+
+    new_text: str | None
+    src: str = ""
+    why: str = ""
+
+
+def _plan_one(p: pathlib.Path, text: str, slug_date: datetime.date) -> _Plan:
+    """Decide what to do with one unparseable locale date.
+
+    Nothing here guesses: a date is only adopted when it round-trips to a real
+    calendar date *and* agrees with the slug, which is the URL and is not being
+    changed. Anything outside that window is a real editorial difference
+    (backdated repost, corrected date) and goes to a human instead.
+    """
+    src, why = _english_source_date(p)
+    if src is None:
+        return _Plan(None, why=why or "unknown")
+
+    d = to_date(src)
+    if d is None:
+        return _Plan(None, why=f"English date did not round-trip: {src!r}")
+
+    if abs((d - slug_date).days) > SLUG_WINDOW_DAYS:
+        return _Plan(None, why=f"English date {d} vs slug {slug_date}")
+
+    new = re.sub(r'^date:\s*".*?"\s*$', f'date: "{src}"', text, count=1, flags=re.M)
+    if new == text:
+        return _Plan(None, why="date: line did not rewrite")
+    return _Plan(new, src=src)
+
+
+def _report(
+    skipped: int,
+    converted: list[tuple[pathlib.Path, str, str]],
+    manual: list[tuple[pathlib.Path, str]],
+    apply: bool,
+) -> None:
+    """Print the run summary, capped at 20 manual-review lines."""
+    print(f"  already parseable / skipped : {skipped}")
+    print(f"  converted                   : {len(converted)}")
+    print(f"  MANUAL REVIEW               : {len(manual)}")
+    for p, why in manual[:20]:
+        print(f"    {p.parent.name}/{p.stem[:40]}  <- {why}")
+    print(f"  ({'APPLIED' if apply else 'dry run — no files written'})")
+
+
 def main() -> int:
     apply = "--apply" in sys.argv
     converted: list[tuple[pathlib.Path, str, str]] = []
@@ -120,48 +184,21 @@ def main() -> int:
         m = DATED.match(p.stem)
         if not m:
             continue
-        slug_date = datetime.date.fromisoformat(m.group(1))
         text = p.read_text(encoding="utf-8")
         cur = field(text, "date")
         if cur is None or parseable(cur):
             skipped += 1
             continue
 
-        en = en_counterpart(p)
-        if not en.is_file():
-            manual.append((p, "no English counterpart"))
+        plan = _plan_one(p, text, datetime.date.fromisoformat(m.group(1)))
+        if plan.new_text is None:
+            manual.append((p, plan.why))
             continue
-        src = field(en.read_text(encoding="utf-8"), "date")
-        if not src or not parseable(src):
-            manual.append((p, f"English counterpart date unusable: {src!r}"))
-            continue
-
-        # Assertion 1: the source resolves to a real calendar date.
-        d = to_date(src)
-        if d is None:
-            manual.append((p, f"English date did not round-trip: {src!r}"))
-            continue
-        # Assertion 2: it agrees with the slug, which is the URL and is not
-        # being changed here. Anything outside the window is a real editorial
-        # difference (backdated repost, corrected date) and is not guessed at.
-        if abs((d - slug_date).days) > SLUG_WINDOW_DAYS:
-            manual.append((p, f"English date {d} vs slug {slug_date}"))
-            continue
-
-        new = re.sub(r'^date:\s*".*?"\s*$', f'date: "{src}"', text, count=1, flags=re.M)
-        if new == text:
-            manual.append((p, "date: line did not rewrite"))
-            continue
-        converted.append((p, cur, src))
+        converted.append((p, cur, plan.src))
         if apply:
-            p.write_text(new, encoding="utf-8")
+            p.write_text(plan.new_text, encoding="utf-8")
 
-    print(f"  already parseable / skipped : {skipped}")
-    print(f"  converted                   : {len(converted)}")
-    print(f"  MANUAL REVIEW               : {len(manual)}")
-    for p, why in manual[:20]:
-        print(f"    {p.parent.name}/{p.stem[:40]}  <- {why}")
-    print(f"  ({'APPLIED' if apply else 'dry run — no files written'})")
+    _report(skipped, converted, manual, apply)
     return 1 if manual else 0
 
 

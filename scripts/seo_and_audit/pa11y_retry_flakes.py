@@ -48,6 +48,25 @@ FLAKE_NEEDLES = (
 RETRY_WAIT_MS = 1500
 
 
+def _clear_recovered_flakes(report: dict, flaky: list[str], path: Path) -> None:
+    """Drop the recovered URLs from the on-disk report and re-derive its counts.
+
+    The retry re-runs pa11y against a temp config and never rewrites this
+    file, so without this the uploaded shard artifact still carries the flake
+    errors and the finalise merge step fails with "pa11y errors remain".
+    The caller has already established there are no real failures, so once
+    the flaky URLs are dropped no failing URLs remain.
+    """
+    results = report.get("results", {})
+    for url in flaky:
+        results.pop(url, None)
+    report["results"] = results
+    report["errors"] = sum(1 for issues in results.values() if issues)
+    if "total" in report:
+        report["passes"] = report["total"] - report["errors"]
+    path.write_text(json.dumps(report), encoding="utf-8")
+
+
 def main(argv: list[str]) -> int:
     if len(argv) != 2:
         print("usage: pa11y_retry_flakes.py <pa11y.json>", file=sys.stderr)
@@ -80,20 +99,7 @@ def main(argv: list[str]) -> int:
             f"pa11y: all {len(flaky)} flaky URL(s) passed on retry — "
             "treating overall run as passing.",
         )
-        # Clear the recovered flakes from the on-disk report. The retry
-        # re-runs pa11y against a temp config and never rewrote this file,
-        # so without this the uploaded shard artifact still carries the
-        # flake errors and the finalise merge step fails with
-        # "pa11y errors remain". real_failures was empty above, so once
-        # the flaky URLs are dropped no failing URLs remain.
-        results = report.get("results", {})
-        for url in flaky:
-            results.pop(url, None)
-        report["results"] = results
-        report["errors"] = sum(1 for issues in results.values() if issues)
-        if "total" in report:
-            report["passes"] = report["total"] - report["errors"]
-        Path(argv[1]).write_text(json.dumps(report), encoding="utf-8")
+        _clear_recovered_flakes(report, flaky, Path(argv[1]))
     return rc
 
 
