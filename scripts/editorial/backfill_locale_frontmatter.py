@@ -247,15 +247,27 @@ def _is_in_target_locale(text: str, locale: str) -> bool:
     script_re = _SCRIPT_RANGES.get(locale)
     if script_re is not None:
         return script_re.search(text) is not None
-    # Latin script: combine diacritic detection + stop-word signal.
-    diacritic_re = _LATIN_DIACRITICS.get(locale)
-    has_diacritic = bool(diacritic_re and diacritic_re.search(text))
+    return _latin_locale_verdict(text, locale)
+
+
+def _stopword_hits(tokens: list[str], stops: frozenset[str]) -> int:
+    """How many of ``tokens`` are stop-words in ``stops``."""
+    return sum(1 for t in tokens if t in stops)
+
+
+def _latin_locale_verdict(text: str, locale: str) -> bool:
+    """Latin-script decision: combine diacritic detection + stop-word signal.
+
+    Latin locales share an alphabet with English, so no single character
+    proves anything; the verdict needs both signals weighed together.
+    """
     tokens = _tokenize(text)
     if not tokens:
         return False
-    locale_stops = _LOCALE_STOPWORDS.get(locale, frozenset())
-    locale_score = sum(1 for t in tokens if t in locale_stops)
-    en_score = sum(1 for t in tokens if t in _EN_STOPWORDS)
+    diacritic_re = _LATIN_DIACRITICS.get(locale)
+    has_diacritic = bool(diacritic_re and diacritic_re.search(text))
+    locale_score = _stopword_hits(tokens, _LOCALE_STOPWORDS.get(locale, frozenset()))
+    en_score = _stopword_hits(tokens, _EN_STOPWORDS)
     # Decision rule:
     #   - diacritic + any locale stop-word: clearly the locale
     #   - locale stop-words > EN stop-words: locale
@@ -372,45 +384,60 @@ def _fix_one(md: Path, locale: str) -> str | None:
         return None
     fm, body = split
 
-    existing_title = _read_field(fm, "title")
-    existing_excerpt = _read_field(fm, "excerpt")
-
-    candidate_title = _extract_h1(body) if _looks_english_field(existing_title) else None
-    candidate_excerpt = (
-        _extract_tldr(body)
-        if existing_excerpt is None or _looks_english_field(existing_excerpt)
-        else None
-    )
-
-    # Skip if the candidate isn't in the target locale (we'd be replacing
-    # English with English — defeats the point).
-    if candidate_title and not _is_in_target_locale(candidate_title, locale):
-        candidate_title = None
-    if candidate_excerpt and not _is_in_target_locale(candidate_excerpt, locale):
-        candidate_excerpt = None
-
-    if not candidate_title and not candidate_excerpt:
+    title, excerpt = _locale_candidates(fm, body, locale)
+    if not title and not excerpt:
         return None
 
-    new_fm = fm
-    notes: list[str] = []
-    if candidate_title:
-        new_fm = _replace_field(new_fm, "title", candidate_title)
-        notes.append(f'title→"{candidate_title[:55]}{"…" if len(candidate_title) > 55 else ""}"')
-    if candidate_excerpt:
-        if _read_field(new_fm, "excerpt") is None:
-            new_fm = _insert_excerpt_after_title(new_fm, candidate_excerpt)
-        else:
-            new_fm = _replace_field(new_fm, "excerpt", candidate_excerpt)
-        notes.append(
-            f'excerpt→"{candidate_excerpt[:55]}{"…" if len(candidate_excerpt) > 55 else ""}"'
-        )
-
+    new_fm, notes = _apply_candidates(fm, title, excerpt)
     if new_fm == fm:
         return None
 
     md.write_text(new_fm + body, encoding="utf-8")
     return ", ".join(notes)
+
+
+def _locale_candidates(fm: str, body: str, locale: str) -> tuple[str | None, str | None]:
+    """Body-derived title/excerpt worth writing back, or ``None`` per field.
+
+    A field is a candidate only when the existing frontmatter looks English
+    *and* the body's replacement is confidently in ``locale`` — otherwise
+    we would be swapping English for English, which defeats the point.
+    """
+    existing_title = _read_field(fm, "title")
+    existing_excerpt = _read_field(fm, "excerpt")
+
+    title = _extract_h1(body) if _looks_english_field(existing_title) else None
+    excerpt = (
+        _extract_tldr(body)
+        if existing_excerpt is None or _looks_english_field(existing_excerpt)
+        else None
+    )
+    if title and not _is_in_target_locale(title, locale):
+        title = None
+    if excerpt and not _is_in_target_locale(excerpt, locale):
+        excerpt = None
+    return title, excerpt
+
+
+def _apply_candidates(fm: str, title: str | None, excerpt: str | None) -> tuple[str, list[str]]:
+    """Write the candidates into ``fm``, returning the new block and a log line."""
+    new_fm = fm
+    notes: list[str] = []
+    if title:
+        new_fm = _replace_field(new_fm, "title", title)
+        notes.append(f"title→{_note_value(title)}")
+    if excerpt:
+        if _read_field(new_fm, "excerpt") is None:
+            new_fm = _insert_excerpt_after_title(new_fm, excerpt)
+        else:
+            new_fm = _replace_field(new_fm, "excerpt", excerpt)
+        notes.append(f"excerpt→{_note_value(excerpt)}")
+    return new_fm, notes
+
+
+def _note_value(value: str) -> str:
+    """Quoted, ellipsised field value for the human-readable change log."""
+    return f'"{value[:55]}{"…" if len(value) > 55 else ""}"'
 
 
 def main() -> int:

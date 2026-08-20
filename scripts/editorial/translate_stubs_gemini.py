@@ -41,16 +41,24 @@ def _post_json(request: urllib.request.Request, timeout: int) -> str:
         return response.read().decode("utf-8")
 
 
-def gemini_generate(model: str, prompt: str, timeout: int, api_key: str, retries: int = 2) -> str:
+def _retry_delay_seconds(detail: str) -> int:
+    """Seconds to wait after a 429, from the API's own ``retryDelay`` hint.
+
+    A couple of seconds are added so we never come back before the window
+    the server named. Falls back to 35s when the body doesn't carry a hint.
+    """
+    with contextlib.suppress(KeyError, ValueError, json.JSONDecodeError, TypeError):
+        hint = json.loads(detail)["error"]["details"][-1]["retryDelay"]
+        return int(hint.rstrip("s")) + 2
+    return 35
+
+
+def _build_request(model: str, prompt: str, api_key: str) -> urllib.request.Request:
+    """The generateContent POST for one prompt."""
     model_path = urllib.parse.quote(model, safe="")
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_path}:generateContent"
     payload = {
-        "contents": [
-            {
-                "role": "user",
-                "parts": [{"text": prompt}],
-            }
-        ],
+        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
         "generationConfig": {
             "temperature": 0.2,
             "topP": 0.9,
@@ -58,23 +66,23 @@ def gemini_generate(model: str, prompt: str, timeout: int, api_key: str, retries
             "responseMimeType": "text/plain",
         },
     }
-    request = urllib.request.Request(
+    return urllib.request.Request(
         f"{url}?key={urllib.parse.quote(api_key)}",
         data=json.dumps(payload).encode("utf-8"),
         headers={"Content-Type": "application/json"},
         method="POST",
     )
+
+
+def _post_with_retries(request: urllib.request.Request, timeout: int, retries: int) -> str:
+    """POST the request, backing off on 429 and transient transport errors."""
     for attempt in range(retries + 1):
         try:
-            body = _post_json(request, timeout)
-            break
+            return _post_json(request, timeout)
         except urllib.error.HTTPError as exc:
             detail = exc.read().decode("utf-8", errors="replace")
             if exc.code == 429 and attempt < retries:
-                retry_seconds = 35
-                with contextlib.suppress(KeyError, ValueError, json.JSONDecodeError, TypeError):
-                    retry_seconds = int(json.loads(detail)["error"]["details"][-1]["retryDelay"].rstrip("s")) + 2
-                time.sleep(retry_seconds)
+                time.sleep(_retry_delay_seconds(detail))
                 continue
             raise RuntimeError(f"Gemini API request failed: HTTP {exc.code}: {detail}") from exc
         except (urllib.error.URLError, http.client.RemoteDisconnected) as exc:
@@ -82,9 +90,11 @@ def gemini_generate(model: str, prompt: str, timeout: int, api_key: str, retries
                 time.sleep(2 + attempt * 4)
                 continue
             raise RuntimeError(f"Gemini API request failed: {exc}") from exc
-    else:
-        raise RuntimeError("Gemini API request failed after retries")
+    raise RuntimeError("Gemini API request failed after retries")
 
+
+def _join_candidate_text(body: str) -> str:
+    """Concatenate the text parts of every candidate in a response body."""
     data = json.loads(body)
     parts: list[str] = []
     for candidate in data.get("candidates", []):
@@ -95,7 +105,13 @@ def gemini_generate(model: str, prompt: str, timeout: int, api_key: str, retries
         )
     if not parts:
         raise RuntimeError(f"Gemini API returned no text: {body[:1000]}")
-    return shared.extract_translation("\n".join(parts))
+    return "\n".join(parts)
+
+
+def gemini_generate(model: str, prompt: str, timeout: int, api_key: str, retries: int = 2) -> str:
+    request = _build_request(model, prompt, api_key)
+    body = _post_with_retries(request, timeout, retries)
+    return shared.extract_translation(_join_candidate_text(body))
 
 
 def main() -> int:
@@ -104,7 +120,9 @@ def main() -> int:
     parser.add_argument("--langs", nargs="*", help="optional locale codes to process")
     parser.add_argument("--limit", type=int, help="maximum number of files to translate")
     parser.add_argument("--timeout", type=int, default=1200, help="per-file timeout in seconds")
-    parser.add_argument("--dry-run", action="store_true", help="list target files without translating")
+    parser.add_argument(
+        "--dry-run", action="store_true", help="list target files without translating"
+    )
     parser.add_argument(
         "--out-dir",
         type=Path,

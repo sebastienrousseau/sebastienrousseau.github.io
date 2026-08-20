@@ -30,10 +30,7 @@ HARD_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
 
 def iter_locale_posts() -> list[Path]:
     return sorted(
-        path
-        for lang_dir in POSTS.iterdir()
-        if lang_dir.is_dir()
-        for path in lang_dir.glob("*.md")
+        path for lang_dir in POSTS.iterdir() if lang_dir.is_dir() for path in lang_dir.glob("*.md")
     )
 
 
@@ -42,37 +39,51 @@ def scan(path: Path) -> list[str]:
     return [name for name, pattern in HARD_PATTERNS if pattern.search(text)]
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--fail", action="store_true", help="exit non-zero when defects are found")
-    parser.add_argument("--summary-only", action="store_true", help="print counts without file details")
-    args = parser.parse_args()
-
+def _collect_defects() -> tuple[dict[str, Counter[str]], list[tuple[Path, list[str]]]]:
+    """Scan every locale post once, returning per-locale counts and per-file kinds."""
     by_locale: dict[str, Counter[str]] = defaultdict(Counter)
     by_file: list[tuple[Path, list[str]]] = []
-
     for path in iter_locale_posts():
         kinds = scan(path)
         if not kinds:
             continue
-        locale = path.parent.name
-        by_locale[locale].update(kinds)
+        by_locale[path.parent.name].update(kinds)
         by_file.append((path, kinds))
+    return by_locale, by_file
 
-    if by_locale:
-        print("Translation audit defects by locale:")
-        for locale in sorted(by_locale):
-            counts = ", ".join(f"{kind}={count}" for kind, count in sorted(by_locale[locale].items()))
-            print(f"  {locale}: {counts}")
-    else:
+
+def _print_locale_summary(by_locale: dict[str, Counter[str]]) -> None:
+    """One line per locale, or an explicit 'none' so a clean run still reports."""
+    if not by_locale:
         print("Translation audit defects by locale: none")
+        return
+    print("Translation audit defects by locale:")
+    for locale in sorted(by_locale):
+        counts = ", ".join(f"{kind}={count}" for kind, count in sorted(by_locale[locale].items()))
+        print(f"  {locale}: {counts}")
 
-    if by_file and not args.summary_only:
-        print("\nFiles:")
-        for path, kinds in by_file:
-            rel = path.relative_to(ROOT)
-            print(f"  {rel}: {', '.join(kinds)}")
 
+def _print_file_details(by_file: list[tuple[Path, list[str]]]) -> None:
+    """Per-file defect list, repo-relative so the paths are clickable."""
+    if not by_file:
+        return
+    print("\nFiles:")
+    for path, kinds in by_file:
+        print(f"  {path.relative_to(ROOT)}: {', '.join(kinds)}")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--fail", action="store_true", help="exit non-zero when defects are found")
+    parser.add_argument(
+        "--summary-only", action="store_true", help="print counts without file details"
+    )
+    args = parser.parse_args()
+
+    by_locale, by_file = _collect_defects()
+    _print_locale_summary(by_locale)
+    if not args.summary_only:
+        _print_file_details(by_file)
     return 1 if args.fail and by_file else 0
 
 
