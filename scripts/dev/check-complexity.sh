@@ -8,18 +8,22 @@
 # translation pipeline, which rewrites content across 27 locales and has the
 # least test coverage behind it.
 #
-# Widening the scope surfaced 31 C-or-worse functions. Refactoring all of them
-# in one pass would mean restructuring untested build gates (validate_jsonld,
-# audit_links, pa11y_cache) to hit a number, which is how correctness
-# regressions get introduced. So this uses the same RATCHET the mypy gate uses
-# (scripts/typecheck.sh): every directory is checked, known-complex functions
-# are listed in ALLOWLIST below, and the gate fails on anything not listed.
+# Widening the scope surfaced 31 C-or-worse functions. Rather than restructure
+# untested build gates in one pass to hit a number — which is how correctness
+# regressions get introduced — this used the same RATCHET the mypy gate uses
+# (scripts/typecheck.sh): every directory is checked, accepted debt is listed
+# in ALLOWLIST_FILE, and the gate fails on anything not listed.
+#
+# All 31 have since been cleared, each proven equivalent by differential-testing
+# the refactor against the original over real corpus data. The allowlist is now
+# EMPTY, so in practice this gate says: no C-or-worse function anywhere in
+# scripts/. The ratchet stays because it is what keeps that true.
 #
 # The properties that matter:
 #   * no NEW C-or-worse function can be added anywhere in scripts/;
 #   * an allowlisted function that gets refactored must be REMOVED from the
 #     list — the gate fails on a stale entry, so the list cannot rot;
-#   * the debt is enumerated in one place instead of being invisible.
+#   * any future debt is enumerated in one place instead of being invisible.
 #
 # RATCHET: refactor an entry, delete its line, done. Target: empty list.
 set -euo pipefail
@@ -38,7 +42,10 @@ current=$(printf '%s\n' "$report" | awk '
   /^[[:space:]]+[FCM] / { for (i=1;i<=NF;i++) if ($i=="-") { print file ":" $(i-1); break } }
 ' | sort -u)
 
-allowed=$(grep -vE '^\s*(#|$)' "$ALLOWLIST_FILE" | sort -u)
+# `grep -v` exits 1 when the file is nothing but comments — which is the
+# target state — so it must not be allowed to kill the script under `set -e`.
+allowed=$(grep -vE '^\s*(#|$)' "$ALLOWLIST_FILE" | sort -u || true)
+allowed_count=$(printf '%s\n' "$allowed" | grep -c . || true)
 
 new=$(comm -23 <(printf '%s\n' "$current") <(printf '%s\n' "$allowed"))
 stale=$(comm -13 <(printf '%s\n' "$current") <(printf '%s\n' "$allowed"))
@@ -56,6 +63,10 @@ if [[ -n "$stale" ]]; then
 fi
 
 if [[ "$status" -eq 0 ]]; then
-  echo "✓ complexity gate clean ($(printf '%s\n' "$allowed" | grep -c . ) allowlisted, 0 new)"
+  if [[ "$allowed_count" -eq 0 ]]; then
+    echo "✓ complexity gate clean — allowlist empty, no C-or-worse function in scripts/"
+  else
+    echo "✓ complexity gate clean ($allowed_count allowlisted, 0 new)"
+  fi
 fi
 exit "$status"

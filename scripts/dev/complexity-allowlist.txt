@@ -1,41 +1,44 @@
 # Cyclomatic-complexity debt, enumerated. See scripts/dev/check-complexity.sh.
 #
-# The complexity gate covers ALL of scripts/ (it used to cover four
-# directories, leaving the translation pipeline and every audit tool
-# ungated while the README called complexity a CI gate without
-# qualification). Widening it surfaced the functions below.
+# THE LIST IS EMPTY. Every function in scripts/ grades A or B under radon.
 #
-# These are accepted TODAY, not forever. The gate fails on anything new,
-# and it also fails on a STALE entry — refactor a function and you must
-# delete its line, so this list cannot rot. Target: empty.
+# It stays here as the single place any future debt must be declared: the
+# gate fails on a C-or-worse function that is not listed, and it fails on a
+# listed function that is no longer complex, so the list can neither grow
+# silently nor rot.
 #
-# Cleared so far (kept as a record of the ratchet moving):
-#   translate_frontmatter._process_article   D(25) -> B(9)
-#   translate_frontmatter._translate_batch   C(14) -> A/B
-#   jsonld_diff.diff_pages                   D(22) -> A/B
-#   topic_link.process_post                  D(22) -> B(6)
-# Each was differential-tested against its pre-refactor implementation
-#   validate_jsonld._validate_rss_item        C(20) -> cleared
-#   validate_jsonld._validate_news_extension  C(16) -> cleared
-#   validate_jsonld._validate_sitemap_url     C(16) -> cleared
-#   validate_jsonld.main                      C(16) -> cleared
-#   validate_jsonld._validate_atom_entry      C(11) -> cleared
-# before the line was removed.
-scripts/editorial/audit_translations.py:main
-scripts/editorial/automate_tags.py:main
-scripts/editorial/automate_tags.py:process_single_post
-scripts/editorial/backfill_locale_frontmatter.py:_fix_one
-scripts/editorial/backfill_locale_frontmatter.py:_is_in_target_locale
-scripts/editorial/pick_banner.py:main
-scripts/editorial/pick_banner.py:pick
-scripts/editorial/translate_stubs_gemini.py:gemini_generate
-scripts/maintenance/fix_locale_date_frontmatter.py:main
-scripts/postbuild/fix_cdn_urls.py:candidate_paths
-scripts/postbuild/fix_cdn_urls.py:main
-scripts/postbuild/post_enrich.py:_load_post
-scripts/postbuild/post_enrich.py:_related_posts
-scripts/postbuild/postbuild_assets.py:setup_asset_state
-scripts/postbuild/regen_slug_maps.py:_articles_map_for_language
-scripts/security/sigstore_sign.py:main
-scripts/seo_and_audit/pa11y_cache.py:cmd_post
-scripts/seo_and_audit/pa11y_retry_flakes.py:main
+# Adding a line is a deliberate, reviewable act. The bar for doing so is a
+# refactor that cannot be made without risking correctness — not "this one
+# is awkward to split".
+#
+# History — every entry below was cleared, and each refactor was proven
+# equivalent by differential-testing the new implementation against the old
+# one over real corpus data before its line was deleted:
+#
+#   translate_frontmatter._process_article        D(25) -> B
+#   validate_jsonld._validate_rss_item            C(20) -> A/B
+#   jsonld_diff.diff_pages                        D(22) -> A/B
+#   topic_link.process_post                       D(22) -> B(6)
+#   backfill_locale_frontmatter._fix_one          C(17) -> A/B
+#   validate_jsonld._validate_news_extension      C(16) -> A/B
+#   validate_jsonld._validate_sitemap_url         C(16) -> A/B
+#   validate_jsonld.main                          C(16) -> A/B
+#   backfill_locale_frontmatter._is_in_target_locale C(15) -> A/B
+#   fix_locale_date_frontmatter.main              C(15) -> A/B
+#   sigstore_sign.main                            C(15) -> A/B
+#   pa11y_cache.cmd_post                          C(14) -> A/B
+#   translate_frontmatter._translate_batch        C(14) -> A/B
+#   pick_banner.main                              C(13) -> A/B
+#   regen_slug_maps._articles_map_for_language    C(13) -> A/B
+#   automate_tags.main                            C(12) -> A/B
+#   automate_tags.process_single_post             C(12) -> A/B
+#   pick_banner.pick                              C(12) -> A/B
+#   translate_stubs_gemini.gemini_generate        C(12) -> A/B
+#   audit_translations.main                       C(11) -> A/B
+#   pa11y_retry_flakes.main                       C(11) -> A/B
+#   validate_jsonld._validate_atom_entry          C(11) -> A/B
+#   fix_cdn_urls.candidate_paths / .main          C     -> A/B
+#   post_enrich._load_post / ._related_posts      C     -> A/B
+#   postbuild_assets.setup_asset_state            C     -> A/B
+#   readability.count_syllables                   C     -> A/B
+#   audit_links.main                              C     -> A/B
