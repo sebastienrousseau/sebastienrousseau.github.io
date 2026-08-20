@@ -84,7 +84,7 @@ commit-signing key is active before committing.
 <summary>Manual setup (without mise)</summary>
 
 ```bash
-cargo install ssg --locked --version 0.0.39   # Rust SSG compiler (pinned, ADR-0002 — see #431)
+cargo install ssg --locked                    # Rust SSG compiler (tracks latest — ADR-0002)
 pip install -r requirements.txt               # Python build dependencies
 ./build.sh                                     # emits public/ across 28 locales
 ```
@@ -267,8 +267,7 @@ freshly-built tree, then JSON-LD validation, a strict internal-link audit, and
 SBOM generation — the same set CI enforces before deploy.
 
 The build cleans `public/` first, so a local build and a CI build produce the
-same tree; `make verify` therefore measures what CI measures. Run it after `make bootstrap` (it needs the pinned
-`ssg` 0.0.39).
+same tree; `make verify` therefore measures what CI measures. Run it after `make bootstrap` (which installs the current `ssg`).
 
 ## CI gates
 

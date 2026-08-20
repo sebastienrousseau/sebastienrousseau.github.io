@@ -37,7 +37,22 @@ env:
   # characters (230) and survives, which is why this never showed up
   # locally. See #431. Unpin once upstream splits on non-ASCII separators
   # or build.sh normalises them before tag generation.
-  SSG_VERSION: "0.0.39"
+  # "latest" means exactly that: every run installs the newest published ssg.
+  #
+  # This was pinned to 0.0.39 for months because ssg >= 0.0.50 generated a
+  # /tags/ page per term per locale — 7,240 of them, 7,189 titled "My SSG Site"
+  # (the tool's placeholder default, which reached rendered pages). Both are
+  # fixed upstream; the site now passes --no-tag-pages because it generates its
+  # own curated tag pages, and the placeholder default is empty.
+  #
+  # Tracking latest is safe here because breakage is *caught*, not hoped
+  # against: 37 in-build gates, a byte-identical-rebuild job, JSON-LD and
+  # link audits, and a post-deploy origin probe. A pin only converts a loud
+  # failure into a silent staleness, which is what happened last time.
+  #
+  # Set a concrete version here to hold a release back; build.sh then asserts
+  # it exactly.
+  SSG_VERSION: "latest"
   # Issue number holding the pin below the latest release. While set,
   # ssg-version-check.yml stays quiet instead of filing a weekly bump
   # request we have already decided against. Clear it when #431 closes.
@@ -181,16 +196,24 @@ jobs:
           # version, reinstall on mismatch, then assert, so a wrong binary
           # fails the job instead of quietly building the site. ADR-0002.
           have="$(ssg --version 2>/dev/null | awk '{print $2}' || true)"
-          if [ "${have:-}" != "${SSG_VERSION}" ]; then
-            echo "ssg: have '${have:-none}', want ${SSG_VERSION} — installing"
-            cargo install ssg --locked --version "${SSG_VERSION}" --force
+          if [ "${SSG_VERSION}" = "latest" ]; then
+            want="$(cargo search ssg --limit 1 \
+              | sed -n 's/^ssg = "\([^"]*\)".*/\1/p')"
+            [ -n "${want}" ] || { echo "::error::could not resolve latest ssg"; exit 1; }
+          else
+            want="${SSG_VERSION}"
+          fi
+          if [ "${have:-}" != "${want}" ]; then
+            echo "ssg: have '${have:-none}', want ${want} — installing"
+            cargo install ssg --locked --version "${want}" --force
           fi
           got="$(ssg --version | awk '{print $2}')"
-          if [ "${got}" != "${SSG_VERSION}" ]; then
-            echo "::error::ssg ${got} is running but ${SSG_VERSION} is pinned"
+          if [ "${got}" != "${want}" ]; then
+            echo "::error::ssg ${got} is running but ${want} was requested"
             exit 1
           fi
-          echo "ssg ${got} (pinned)"
+          echo "ssg ${got} (SSG_VERSION=${SSG_VERSION})"
+          echo "SSG_RESOLVED=${got}" >> "$GITHUB_ENV"
 
       - name: Install wasm-pack + wasm32 target
         run: |

@@ -1,4 +1,4 @@
-"""The ssg pin must have exactly one value across the repo.
+"""The ssg version policy must have exactly one value across the repo.
 
 `.github/workflows/ci.yml` is the single source of truth (ADR-0002): it is
 what actually builds the deployed site. Every other mention — the Makefile
@@ -31,8 +31,23 @@ def _ci_pin() -> str:
     return m.group(1)
 
 
-def test_ci_declares_a_pin() -> None:
-    assert re.fullmatch(r"\d+\.\d+\.\d+", _ci_pin())
+def test_ci_declares_a_version_policy() -> None:
+    """Either `latest` (track every release) or an exact version (hold one
+    back). A range or a partial version would reintroduce the drift this
+    file exists to prevent."""
+    assert _ci_pin() == "latest" or re.fullmatch(r"\d+\.\d+\.\d+", _ci_pin())
+
+
+def test_mise_tracks_the_same_policy_as_ci() -> None:
+    """mise.toml decides which ssg a *developer* build uses. When it and CI
+    disagree, local output silently stops matching CI — which is exactly how
+    a 14,045-page tree got measured as if it were production's 6,856."""
+    mise = (ROOT / "mise.toml").read_text(encoding="utf-8")
+    m = re.search(r'^"cargo:ssg"\s*=\s*"([^"]+)"', mise, re.MULTILINE)
+    assert m, "mise.toml must declare cargo:ssg so a global mise config cannot shadow it"
+    assert m.group(1) == _ci_pin(), (
+        f"mise.toml tracks ssg {m.group(1)} but ci.yml says {_ci_pin()}"
+    )
 
 
 # A version number is *binding* when its line reads as an instruction to

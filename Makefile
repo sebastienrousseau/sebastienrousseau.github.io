@@ -96,17 +96,20 @@ bootstrap:
 	@command -v mise >/dev/null 2>&1 || { echo "mise not found — install it from https://mise.jdx.dev, then re-run 'make bootstrap'"; exit 1; }
 	@echo "==> mise install (python 3.12, node 22, rust, pa11y-ci, http-server)"
 	@mise install
-	@echo "==> ssg static-site compiler ($(SSG_VERSION), pinned — ADR-0002)"
+	@echo "==> ssg static-site compiler ($(SSG_VERSION) — ADR-0002)"
 	@# `command -v ssg` is not a version check: a stale binary already on PATH
 	@# satisfies it and the pin never applies. Compare the running version,
 	@# reinstall on mismatch, then assert — same contract as ci.yml.
 	@have=$$(ssg --version 2>/dev/null | awk '{print $$2}' || true); \
-	 if [ "$$have" != "$(SSG_VERSION)" ]; then \
-	   echo "    ssg: have '$${have:-none}', want $(SSG_VERSION) — installing"; \
-	   cargo install ssg --locked --version $(SSG_VERSION) --force; \
+	 if [ "$(SSG_VERSION)" = "latest" ]; then \
+	   want=$$(cargo search ssg --limit 1 | sed -n 's/^ssg = "\([^"]*\)".*/\1/p'); \
+	 else want="$(SSG_VERSION)"; fi; \
+	 if [ "$$have" != "$$want" ]; then \
+	   echo "    ssg: have '$${have:-none}', want $$want — installing"; \
+	   cargo install ssg --locked --version $$want --force; \
 	 fi; \
 	 got=$$(ssg --version | awk '{print $$2}'); \
-	 [ "$$got" = "$(SSG_VERSION)" ] || { echo "ssg $$got running but $(SSG_VERSION) pinned"; exit 1; }
+	 [ "$$got" = "$$want" ] || { echo "ssg $$got running but $$want requested"; exit 1; }
 	@echo "==> python build + dev deps (hash-pinned lock — same as CI)"
 	@pip install --quiet --require-hashes -r requirements-dev.lock
 	@echo "==> bootstrap complete. Next: make build  (first build target: under 10 min)."

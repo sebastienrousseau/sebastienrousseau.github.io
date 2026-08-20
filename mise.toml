@@ -34,11 +34,10 @@ pandoc = "3.10"
 # pinned compiler's 6,856 and 48.
 #
 # A repo-local mise config takes precedence over the global one, so declaring it
-# here is what actually makes the pin hold on a developer machine. build.sh
-# asserts the version too, so a mismatch fails loudly rather than producing a
-# plausible-looking wrong build. Keep this in step with SSG_VERSION in
-# .github/workflows/ci.yml — tests/unit/test_ssg_pin_single_source.py enforces it.
-"cargo:ssg" = "0.0.39"
+# here is what stops a global entry deciding which compiler builds this site.
+# It tracks `latest`, matching SSG_VERSION in .github/workflows/ci.yml;
+# tests/unit/test_ssg_pin_single_source.py enforces that they agree.
+"cargo:ssg" = "latest"
 
 # Why 0.0.39 specifically:
 #

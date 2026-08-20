@@ -48,6 +48,17 @@ SERVE=0
 _ssg_want="$(sed -n 's/^[[:space:]]*SSG_VERSION:[[:space:]]*"\([^"]*\)".*/\1/p' \
   .github/workflows/ci.yml | head -1)"
 _ssg_have="$(ssg --version 2>/dev/null | awk '{print $2}' || true)"
+if [ -z "${_ssg_have}" ]; then
+  echo "error: ssg is not on PATH. Install it with: make bootstrap" >&2
+  exit 1
+fi
+# SSG_VERSION=latest means track the newest release; there is nothing to
+# assert against locally, so just record what built the site. A concrete
+# version is asserted exactly.
+if [ "${_ssg_want}" = "latest" ]; then
+  echo "ssg ${_ssg_have} (tracking latest)"
+  _ssg_want=""
+fi
 if [ -n "${_ssg_want}" ] && [ "${_ssg_have}" != "${_ssg_want}" ]; then
   echo "error: ssg ${_ssg_have:-not found} is on PATH but ${_ssg_want} is pinned." >&2
   echo "       which ssg -> $(command -v ssg 2>/dev/null || echo none)" >&2
@@ -94,7 +105,7 @@ python3 scripts/generators/build_tags.py --dir _posts_build
 python3 scripts/postbuild/backfill_permalink.py --dir _posts_build
 
 # Compile the site from the temporary directory instead of _posts
-ssg -n=docs -c=_posts_build -t=_layouts -o=public
+ssg --no-tag-pages -n=docs -c=_posts_build -t=_layouts -o=public
 
 # Clean up the temporary directory
 rm -rf _posts_build
