@@ -31,6 +31,31 @@ SERVE=0
 #     from the top-6 most recent dated EN posts.
 #
 # Both are idempotent: a no-op rebuild leaves the working tree clean.
+# Refuse to build with an ssg other than the pinned one.
+#
+# CI asserts the version in the workflow before building. Nothing asserted it
+# locally, so `./build.sh` used whatever `ssg` resolved to on PATH — and a
+# global mise entry (`cargo:ssg`) shadows ~/.cargo/bin, so a repo-local
+# `cargo install --version` can be silently overridden. That is not
+# hypothetical: it produced a 14,045-page tree with 7,240 /tags/ pages titled
+# "My SSG Site" against the pinned compiler's 6,856 and 48, because ssg >=0.0.50
+# splits `tags:` on ASCII "," only and collapses a locale post's whole tag list
+# into one tag (see the SSG_VERSION comment in .github/workflows/ci.yml, #431).
+#
+# A wrong build that looks plausible is worse than no build, so fail loudly.
+# The version is read from ci.yml, which is the single source of truth for the
+# pin (ADR-0002) — the Makefile derives it the same way.
+_ssg_want="$(sed -n 's/^[[:space:]]*SSG_VERSION:[[:space:]]*"\([^"]*\)".*/\1/p' \
+  .github/workflows/ci.yml | head -1)"
+_ssg_have="$(ssg --version 2>/dev/null | awk '{print $2}' || true)"
+if [ -n "${_ssg_want}" ] && [ "${_ssg_have}" != "${_ssg_want}" ]; then
+  echo "error: ssg ${_ssg_have:-not found} is on PATH but ${_ssg_want} is pinned." >&2
+  echo "       which ssg -> $(command -v ssg 2>/dev/null || echo none)" >&2
+  echo "       Fix with:  cargo install ssg --locked --version ${_ssg_want} --force" >&2
+  echo "       If a mise shim shadows it, check \`mise ls\` and your global config." >&2
+  exit 1
+fi
+
 # Start from an empty output tree. ssg writes INTO public/ rather than
 # replacing it, so without this every build layered onto the last one and
 # public/ became an archaeological record: 7,172 stale /tags/ pages from a
