@@ -735,14 +735,14 @@ def _candidate_digests(body: bytes) -> str:
     return f"sha256-{primary} sha256-{appended}"
 
 
-def setup_asset_state(public: Path) -> tuple[int, int, int, int, int, int]:
-    """Run the import-time asset pipeline in order: minify JS/CSS, populate the
-    SRI hash table, then build the fingerprint map + pattern (minify must run
-    before hashing so the digests match the on-disk minified bytes). Returns
-    ``(js_count, js_before, js_after, css_count, css_before, css_after)``."""
-    global _FP_PATTERN
-    js_count, js_before, js_after = _bulk_minify_js()
-    css_count, css_before, css_after = _bulk_minify_css()
+def _hash_assets(public: Path) -> None:
+    """Populate the SRI digest table for every fingerprinted asset.
+
+    Both directories matter: ``_csp/`` holds the extracted stylesheets and
+    component scripts, and the tree root holds the fingerprinted ``main.*.js``
+    family. Must run after minification so the digests describe the bytes that
+    are actually served.
+    """
     csp_dir = public / "_csp"
     if csp_dir.is_dir():
         for asset in csp_dir.iterdir():
@@ -752,11 +752,31 @@ def setup_asset_state(public: Path) -> tuple[int, int, int, int, int, int]:
         for asset in public.iterdir():
             if asset.is_file() and _top_fp_re.match(asset.name):
                 asset_hashes[asset.name] = _candidate_digests(asset.read_bytes())
-    for fp in public.glob("main.*.js"):
-        if fp.stem.count(".") == 1:
-            _FP_ASSET_MAP["/main.js"] = "/" + fp.name
-    for fp in public.glob("highlight.*.css"):
-        if fp.stem.count(".") == 1:
-            _FP_ASSET_MAP["/highlight.css"] = "/" + fp.name
+
+
+def _map_bare_asset_names(public: Path) -> None:
+    """Map each bare asset reference to its fingerprinted file.
+
+    Layouts emit ``/main.js`` and ``/highlight.css``; postbuild rewrites those
+    to the hashed names. The ``stem.count(".") == 1`` guard picks
+    ``main.<hash>.js`` and skips anything with a longer chain, so a
+    doubly-suffixed leftover cannot claim the mapping.
+    """
+    for bare, pattern in (("/main.js", "main.*.js"), ("/highlight.css", "highlight.*.css")):
+        for fp in public.glob(pattern):
+            if fp.stem.count(".") == 1:
+                _FP_ASSET_MAP[bare] = "/" + fp.name
+
+
+def setup_asset_state(public: Path) -> tuple[int, int, int, int, int, int]:
+    """Run the import-time asset pipeline in order: minify JS/CSS, populate the
+    SRI hash table, then build the fingerprint map + pattern (minify must run
+    before hashing so the digests match the on-disk minified bytes). Returns
+    ``(js_count, js_before, js_after, css_count, css_before, css_after)``."""
+    global _FP_PATTERN
+    js_count, js_before, js_after = _bulk_minify_js()
+    css_count, css_before, css_after = _bulk_minify_css()
+    _hash_assets(public)
+    _map_bare_asset_names(public)
     _FP_PATTERN = _build_fp_pattern()
     return js_count, js_before, js_after, css_count, css_before, css_after

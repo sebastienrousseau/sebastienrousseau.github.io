@@ -280,6 +280,23 @@ def md_inline_to_html(text: str) -> str:
 # ---------------------------------------------------------------------------
 
 
+def _post_fields(fm: list[str], md: Path) -> dict[str, object]:
+    """The derived fields, each with its own fallback chain.
+
+    Every ``or`` here is a documented precedence, not a null-guard: banner
+    beats image, banner_alt beats the title, and the filename is the last
+    resort for a post with no title at all.
+    """
+    return {
+        "title": fm_get(fm, "title") or md.stem,
+        "url": fm_get(fm, "url") or "",
+        "image": fm_get(fm, "banner") or fm_get(fm, "image") or "",
+        "image_alt": fm_get(fm, "banner_alt") or fm_get(fm, "title") or "",
+        "date_iso": md.name[:10],
+        "tags": [t.strip() for t in (fm_get(fm, "tags") or "").split(",") if t.strip()],
+    }
+
+
 def _load_post(md: Path) -> dict[str, object] | None:
     """Read one dated post into the internal ``post`` dict, or return
     None if the file isn't a dated post / has no frontmatter."""
@@ -289,18 +306,7 @@ def _load_post(md: Path) -> dict[str, object] | None:
     if not parts:
         return None
     fm, body = parts
-    body_text = "".join(body)
-    return {
-        "path": md,
-        "fm": fm,
-        "body": body_text,
-        "title": fm_get(fm, "title") or md.stem,
-        "url": fm_get(fm, "url") or "",
-        "image": fm_get(fm, "banner") or fm_get(fm, "image") or "",
-        "image_alt": fm_get(fm, "banner_alt") or fm_get(fm, "title") or "",
-        "date_iso": md.name[:10],
-        "tags": [t.strip() for t in (fm_get(fm, "tags") or "").split(",") if t.strip()],
-    }
+    return {"path": md, "fm": fm, "body": "".join(body), **_post_fields(fm, md)}
 
 
 def _update_frontmatter(post: dict[str, object]) -> tuple[list[str], str]:
@@ -331,6 +337,41 @@ def _build_tag_index(
     return idx
 
 
+def _overlap_via_index(
+    own_tags: set[str],
+    own_path: object,
+    tag_index: dict[str, list[dict[str, object]]],
+) -> list[tuple[int, str, dict[str, object]]]:
+    """Score candidates by walking only posts that share a tag.
+
+    O(tags x posts-per-tag) instead of O(N). Keyed by ``id(other)`` because
+    the post dicts are unhashable and identity is what distinguishes them.
+    """
+    overlap: dict[int, tuple[int, dict[str, object]]] = {}
+    for tag in own_tags:
+        for other in tag_index.get(tag, ()):
+            if other["path"] == own_path:
+                continue
+            oid = id(other)
+            score = overlap[oid][0] + 1 if oid in overlap else 1
+            overlap[oid] = (score, other)
+    return [(score, other["date_iso"], other) for score, other in overlap.values()]
+
+
+def _overlap_via_scan(
+    own_tags: set[str], own_path: object, all_posts: list[dict[str, object]]
+) -> list[tuple[int, str, dict[str, object]]]:
+    """O(N) fallback for callers with no prebuilt index (test fixtures)."""
+    out: list[tuple[int, str, dict[str, object]]] = []
+    for other in all_posts:
+        if other["path"] == own_path:
+            continue
+        score = len(own_tags & {t.lower() for t in other["tags"]})
+        if score:
+            out.append((score, other["date_iso"], other))
+    return out
+
+
 def _related_posts(
     post: dict[str, object],
     all_posts: list[dict[str, object]],
@@ -338,38 +379,16 @@ def _related_posts(
 ) -> list[dict[str, object]]:
     """Stage 2: topic-cluster related posts via tag-overlap score.
 
-    With ``tag_index`` provided (the inverted index built once in
-    ``main()``), the lookup walks only posts that share at least one
-    tag with ``post`` — no longer the full N. Without it, falls back
-    to the O(N) scan so single-post callers (e.g. test fixtures) still
-    work without setup.
+    Ranked by shared-tag count, then recency. Capped at three: the lead block
+    is a pointer, not an index.
     """
     own_tags = {t.lower() for t in post["tags"]}
     own_path = post["path"]
-    candidates: list[tuple[int, str, dict[str, object]]] = []
-    if tag_index is not None:
-        # O(tags × posts-per-tag) walk via the inverted index. Score per
-        # other-post = count of tags it shares with `post`.
-        overlap: dict[int, tuple[int, dict[str, object]]] = {}
-        for tag in own_tags:
-            for other in tag_index.get(tag, ()):
-                if other["path"] == own_path:
-                    continue
-                oid = id(other)
-                if oid in overlap:
-                    overlap[oid] = (overlap[oid][0] + 1, other)
-                else:
-                    overlap[oid] = (1, other)
-        candidates = [(score, other["date_iso"], other) for score, other in overlap.values()]
-    else:
-        # Fallback: O(N) scan for single-post callers (test fixtures).
-        for other in all_posts:
-            if other["path"] == own_path:
-                continue
-            other_tags = {t.lower() for t in other["tags"]}
-            score = len(own_tags & other_tags)
-            if score:
-                candidates.append((score, other["date_iso"], other))
+    candidates = (
+        _overlap_via_index(own_tags, own_path, tag_index)
+        if tag_index is not None
+        else _overlap_via_scan(own_tags, own_path, all_posts)
+    )
     candidates.sort(key=lambda x: (-x[0], -int(x[1].replace("-", ""))))
     return [o for _, _, o in candidates[:3]]
 
