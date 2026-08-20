@@ -19,6 +19,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import contextlib
 import json
 import re
 import statistics
@@ -182,6 +183,16 @@ def _meta_coverage(ps: list[Path]) -> tuple[float, float, float, int]:
     )
 
 
+# An internal article link, in any locale. The locale prefix is the point:
+# a pattern anchored on `^/20\d\d-` matches an English article and silently
+# misses `/fr/2026-…`, which reported locale pages as having zero internal
+# links when they had eight. Every dated page carries a cluster block; the
+# measurement said 2.9 % of them did.
+_ARTICLE_HREF = re.compile(
+    r"^(?:https://sebastienrousseau\.com)?/(?:[a-z]{2}(?:-[a-z]+)?/)?\d{4}-\d{2}-\d{2}-"
+)
+
+
 def _internal_link_counts(ps: list[Path]) -> tuple[list[int], list[int]]:
     """Unique internal article links inside <main>, split (english, locale).
 
@@ -199,11 +210,7 @@ def _internal_link_counts(ps: list[Path]) -> tuple[list[int], list[int]]:
         h = p.read_text(encoding="utf-8", errors="ignore")
         mm = re.search(r"<main\b[^>]*>([\s\S]*?)</main>", h)
         seg = mm.group(1) if mm else ""
-        links = {
-            href
-            for href in re.findall(r'href="([^"]+)"', seg)
-            if re.match(r"^(/20\d\d-|https://sebastienrousseau\.com/20\d\d-)", href)
-        }
+        links = {href for href in re.findall(r'href="([^"]+)"', seg) if _ARTICLE_HREF.match(href)}
         (english if is_en else locale).append(len(links))
     return english, locale
 
@@ -248,8 +255,27 @@ def measure_seo(cat: Category, ps: list[Path]) -> None:
 def measure_ux(cat: Category, ps: list[Path]) -> None:
     if not ps:
         return
-    sizes = sorted(p.stat().st_size for p in ps)
+    # TRANSFERRED bytes, not bytes on disk.
+    #
+    # This measured `stat().st_size` — raw HTML — which is not a quantity any
+    # reader experiences. Production serves `content-encoding: gzip` (verified
+    # against the live origin), and the corpus compresses 5x: p50 86 KB on disk
+    # is 20 KB over the wire.
+    #
+    # Scoring raw bytes is not merely imprecise, it is inverted: a site serving
+    # 60 KB uncompressed would have out-scored this one serving 20 KB
+    # compressed, while being three times slower for every visitor. Compressing
+    # a 400-page sample costs about a second and measures the real thing.
+    import gzip
+    import random
+
+    # Fixed seed: sampling must be deterministic so two runs on the same
+    # tree give the same score. Not a security context.
+    rng = random.Random(11)  # noqa: S311
+    sample = rng.sample(ps, min(len(ps), 400))
+    sizes = sorted(len(gzip.compress(p.read_bytes(), 6)) for p in sample)
     cat.metrics[0].value = round(sizes[len(sizes) // 2] / 1024, 1)
+    cat.metrics[0].detail = f"gzip, n={len(sample)} sampled pages"
     cat.metrics[1].value = round(sizes[int(len(sizes) * 0.9)] / 1024, 1)
 
     # Share of pages served by the single most-used stylesheet: the higher,
@@ -278,6 +304,32 @@ def _read_json(path: Path) -> dict | None:
     return data if isinstance(data, dict) else None
 
 
+def _unverified_wcag_criteria(crit: list[dict]) -> tuple[int, str]:
+    """Criteria with NO verification route anywhere.
+
+    Not criteria ssg's static analyser happens to be unable to check — that is
+    a property of the analyser, not of the site. `runtime` criteria (contrast,
+    reflow, text spacing, focus-not-obscured, status messages) ARE verified,
+    by the Pa11y sweep: a real browser with axe-core across 3,697 pages in
+    light and forced-dark. `not-applicable` ones have nothing to apply to. The
+    two genuinely manual criteria are decided by
+    tests/validation/test_wcag_manual_criteria.py, which is a build gate — if
+    it fails they revert to unverified and this count rises.
+    """
+    runtime_ok = (PUBLIC / "accessibility-report.json").is_file()
+    manual_ok = run(["python3", "tests/validation/test_wcag_manual_criteria.py"])[0] == 0
+    unverified = 0
+    if not runtime_ok:
+        unverified += sum(1 for c in crit if c.get("status") == "runtime")
+    if not manual_ok:
+        unverified += sum(1 for c in crit if c.get("status") == "manual")
+    detail = (
+        f"runtime via Pa11y: {'yes' if runtime_ok else 'NO'}; "
+        f"manual gate: {'pass' if manual_ok else 'FAIL'}"
+    )
+    return unverified, detail
+
+
 def measure_a11y(cat: Category) -> None:
     report = _read_json(PUBLIC / "accessibility-report.json")
     if report is not None:
@@ -293,9 +345,7 @@ def measure_a11y(cat: Category) -> None:
         passing = [c for c in auto if c.get("all_pages_pass")]
         cat.metrics[2].value = round(100 * len(passing) / len(auto), 1)
         cat.metrics[2].detail = f"{len(passing)}/{len(auto)} automated criteria"
-    manual = [c for c in crit if c.get("status") in {"manual", "runtime"}]
-    cat.metrics[3].value = len(manual)
-    cat.metrics[3].detail = "criteria still needing manual/runtime review"
+    cat.metrics[3].value, cat.metrics[3].detail = _unverified_wcag_criteria(crit)
 
 
 def measure_security(cat: Category, ps: list[Path]) -> None:
@@ -349,7 +399,19 @@ def measure_ops(cat: Category) -> None:
         cat.metrics[0].value = "Reproducible build" in text
         cat.metrics[1].value = "verify_deploy.py" in text
         cat.metrics[2].value = "include-hidden-files: true" in text
-        cat.metrics[3].value = text.count("timeout-minutes:")
+        # Coverage, not a count. This used to be `text.count("timeout-minutes:")`
+        # scored against a threshold of 8 — with 7 jobs in the workflow, all
+        # 7 of them bounded, a perfect result could never reach full marks.
+        # That is a defect in the measurement, not in the repo: the property
+        # worth having is "no job can hang indefinitely", which is a ratio.
+        with contextlib.suppress(Exception):  # unparseable workflow -> unmeasured
+            import yaml
+
+            jobs = (yaml.safe_load(text) or {}).get("jobs", {}) or {}
+            if jobs:
+                bounded = sum(1 for j in jobs.values() if j.get("timeout-minutes"))
+                cat.metrics[3].value = round(100 * bounded / len(jobs), 1)
+                cat.metrics[3].detail = f"{bounded}/{len(jobs)} CI jobs bounded"
     adr = ROOT / "project-docs" / "adr"
     if adr.is_dir():
         cat.metrics[4].value = len(list(adr.glob("*.md")))
@@ -396,10 +458,10 @@ def rubric() -> list[Category]:
                    band([(90, 10), (70, 8), (50, 6), (25, 4), (5, 2)])),
         ]),
         Category("ux", "UX / performance", 0.16, [
-            Metric("p50", "median page weight (KB)", "stat over public/",
-                   band([(60, 10), (100, 9), (150, 7), (250, 5), (400, 3)], higher_is_better=False)),
-            Metric("p90", "p90 page weight (KB)", "stat over public/",
-                   band([(120, 10), (200, 9), (300, 7), (450, 5)], higher_is_better=False)),
+            Metric("p50", "median transferred page weight (KB, gzip)", "gzip over a 400-page sample",
+                   band([(25, 10), (40, 9), (60, 7), (100, 5), (160, 3)], higher_is_better=False)),
+            Metric("p90", "p90 transferred page weight (KB, gzip)", "gzip over the sample",
+                   band([(40, 10), (60, 9), (90, 7), (140, 5)], higher_is_better=False)),
             Metric("css_share", "pages sharing one stylesheet (%)", "regex over /_csp/ refs",
                    band([(90, 10), (80, 9), (65, 7), (50, 5), (30, 3)])),
             Metric("fonts", "self-hosted fonts with swap + metric-matched fallbacks", "fonts/fonts.css",
@@ -412,8 +474,8 @@ def rubric() -> list[Category]:
                    band([(3000, 10), (1000, 9), (250, 7), (50, 5)])),
             Metric("wcag_auto", "automated WCAG 2.2 criteria passing (%)", "public/wcag-compliance.json",
                    band([(100, 10), (95, 9), (85, 7), (70, 5)])),
-            Metric("wcag_manual", "criteria still needing manual review", "public/wcag-compliance.json",
-                   band([(0, 10), (2, 8), (4, 6), (6, 4), (8, 2)], higher_is_better=False)),
+            Metric("wcag_manual", "WCAG criteria with no verification route", "pa11y sweep + manual-criteria gate",
+                   band([(0, 10), (1, 6), (3, 3)], higher_is_better=False)),
         ]),
         Category("security", "Security / supply chain", 0.14, [
             Metric("unsafe_inline", "sampled pages allowing 'unsafe-inline'", "grep over a 400-page sample",
@@ -437,8 +499,8 @@ def rubric() -> list[Category]:
             Metric("reproducible", "byte-identical rebuild gate", ".github/workflows/ci.yml", boolean()),
             Metric("deploy_probe", "post-deploy origin verification", ".github/workflows/ci.yml", boolean()),
             Metric("hidden_files", "deploy ships dotfiles (.well-known)", ".github/workflows/ci.yml", boolean()),
-            Metric("timeouts", "CI jobs with an explicit timeout", "grep timeout-minutes",
-                   band([(8, 10), (6, 9), (4, 7), (2, 5)])),
+            Metric("timeouts", "CI jobs bounded by a timeout (%)", "parse ci.yml jobs",
+                   band([(100, 10), (90, 8), (75, 6), (50, 3)])),
             Metric("adrs", "architecture decision records", "project-docs/adr/",
                    band([(12, 10), (8, 9), (5, 7), (2, 5)])),
         ]),
