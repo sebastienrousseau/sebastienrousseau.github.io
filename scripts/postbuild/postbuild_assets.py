@@ -85,7 +85,21 @@ asset_path_re = re.compile(
     r'(?:src|href)=["\']?/(?:_csp/)?([A-Za-z0-9][A-Za-z0-9\-_.]+\.(?:js|css))',
     re.IGNORECASE,
 )
-_SRI_ANY_RE = re.compile(r"\s+integrity=(['\"])sha256-[^'\"]+\1")
+# Any SRI algorithm, not just sha256. ssg's default `sri_algorithm` is
+# SHA-384, so it emits `integrity="sha384-…"` on the stylesheet link it
+# writes. This regex used to match `sha256-` only, so fix_sri did not strip
+# it before stamping its own digest — and every page shipped TWO integrity
+# attributes:
+#
+#   <link … integrity="sha384-2x89…" integrity="sha256-ObNF… sha256-ldKU…">
+#
+# HTML parsers take the first and silently drop the rest, so SRI still held
+# via the sha384 value, but the markup was invalid and the second attribute
+# was dead. It affected 6,854 of 6,856 pages and was invisible while ssg
+# happened to emit sha256, which is what it did on the version this site was
+# pinned to. The docstring below has always claimed "stale/bogus integrity …
+# stripped first so we don't accumulate duplicates"; now the regex agrees.
+_SRI_ANY_RE = re.compile(r"\s+integrity=(['\"])(?:sha(?:256|384|512))-[^'\"]+\1")
 _TAG_CLOSE_RE = re.compile(r"(\s*/?>)\s*$")
 _CROSSORIGIN_RE = re.compile(
     r"\s+crossorigin=(['\"]?)(?:anonymous|use-credentials)\1", re.IGNORECASE
