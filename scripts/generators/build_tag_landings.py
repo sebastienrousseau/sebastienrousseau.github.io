@@ -87,15 +87,9 @@ _HTML_LANG_RE = re.compile(r'<html lang="[^"]*"', re.IGNORECASE)
 # the page at exactly one h1 (WCAG 2.4.6 + 1.3.1 AAA).
 
 
-
-
-
-
 # Tiny per-card share rail — 6 monochrome SVG glyphs (X, LinkedIn, Facebook,
 # WhatsApp, email, copy-link). Mirrors build_listings._card_share_rail; copied
 # here so build_tag_landings stays import-self-contained.
-
-
 
 
 def _extract_excerpt(text: str) -> str:
@@ -120,11 +114,7 @@ def _parse_raw_tags(tags_line: str) -> list[str]:
     """Split a `tags:` frontmatter line into stripped, non-empty tag
     strings."""
     return [
-        t for t in (
-            raw.strip().strip('"').strip("'").strip()
-            for raw in tags_line.split(",")
-        )
-        if t
+        t for t in (raw.strip().strip('"').strip("'").strip() for raw in tags_line.split(",")) if t
     ]
 
 
@@ -176,15 +166,23 @@ def _ingest_post(
     if not meta:
         return
     title, iso_date, slug, excerpt, raw_tags, banner, banner_alt = meta
-    canons = _canonical_set(raw_tags, amap)
+    # Sorted, not the raw set: a set iterates in a per-process random order,
+    # which decided the co-occurrence counter's insertion order and therefore
+    # the tie-break in its `most_common()`. The consumer no longer depends on
+    # insertion order, but building it deterministically keeps the data
+    # structure itself stable rather than relying on every reader to sort.
+    canons = sorted(_canonical_set(raw_tags, amap))
     pillars = _post_pillars(raw_tags, taxonomy, amap)
     for c in canons:
         posts[c].append((title, iso_date, slug, excerpt, pillars, banner, banner_alt))
-        for other in canons - {c}:
-            cooccur[c][other] += 1
+        for other in canons:
+            if other != c:
+                cooccur[c][other] += 1
 
 
-def _walk(taxonomy: dict) -> tuple[
+def _walk(
+    taxonomy: dict,
+) -> tuple[
     dict[str, list[tuple[str, str, str, str, list[str], str, str]]],
     dict[str, collections.Counter[str]],
 ]:
@@ -195,10 +193,10 @@ def _walk(taxonomy: dict) -> tuple[
       same posts — drives the "related tags" sidebar.
     """
     amap = _alias_map(taxonomy)
-    posts: dict[str, list[tuple[str, str, str, str, list[str], str, str]]] = collections.defaultdict(list)
-    cooccur: dict[str, collections.Counter[str]] = collections.defaultdict(
-        collections.Counter
+    posts: dict[str, list[tuple[str, str, str, str, list[str], str, str]]] = (
+        collections.defaultdict(list)
     )
+    cooccur: dict[str, collections.Counter[str]] = collections.defaultdict(collections.Counter)
     for path in sorted((ROOT / "_posts").glob("*.md")):
         # Skip non-article markdown: hub pages (tags.md / categories.md),
         # the homepage (index.md), and anything else without a YYYY-MM-DD
@@ -210,20 +208,6 @@ def _walk(taxonomy: dict) -> tuple[
     for c in posts:
         posts[c].sort(key=lambda p: p[1] or "0000", reverse=True)
     return posts, cooccur
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 def _load_locale_article_slugs(lang: str) -> dict[str, str]:
@@ -263,8 +247,6 @@ def _load_fr_to_en_slug_map(lang: str) -> dict[str, str]:
     }
 
 
-
-
 def _load_locale_post_index(lang: str) -> dict[str, tuple[str, str, str, str]]:
     """Return ``{en_slug: (locale_slug, locale_title, locale_excerpt,
     locale_banner)}`` for every dated post in ``_posts/<lang>/``. Same
@@ -285,12 +267,6 @@ def _load_locale_post_index(lang: str) -> dict[str, tuple[str, str, str, str]]:
         en_slug = fr_to_en.get(stem, stem)
         out[en_slug] = (stem, title, excerpt, banner)
     return out
-
-
-
-
-
-
 
 
 _HREFLANG_ARTICLE_RE = re.compile(r'href="/(\d{4}-\d{2}-\d{2}-[^/"]+)/"')
@@ -314,12 +290,9 @@ def _localise_html_links(
     out = en_html
     out = _HTML_LANG_RE.sub(f'<html lang="{lang}"', out, count=1)
     canonical = f"{_BASE_URL}{locale_root}/{locale_tags}/{slug}/"
-    out = _CANONICAL_RE.sub(
-        f'<link rel="canonical" href="{canonical}"', out, count=1
-    )
-    out = _OG_URL_RE.sub(
-        f'<meta property="og:url" content="{canonical}"', out, count=1
-    )
+    out = _CANONICAL_RE.sub(f'<link rel="canonical" href="{canonical}"', out, count=1)
+    out = _OG_URL_RE.sub(f'<meta property="og:url" content="{canonical}"', out, count=1)
+
     # Article slug remap — strict {en-slug} matches only so we don't
     # silently rewrite unrelated hrefs.
     def _swap_article(m: re.Match[str]) -> str:
@@ -346,10 +319,12 @@ def _translate_chrome_for(lang: str, html: str) -> str:
     # otherwise the `scripts.generators...` package path won't resolve
     # and the import would have to fall back to untranslated chrome.
     import sys as _sys
+
     if str(ROOT) not in _sys.path:
         _sys.path.insert(0, str(ROOT))
     from scripts.generators.build_translations import _state as _bt_state
     from scripts.generators.build_translations._chrome import translate_chrome
+
     _bt_state.bind_lang(lang)
     return translate_chrome(html)
 
@@ -370,27 +345,18 @@ def _write_locale_landings(
         for lang in LOCALES_NON_EN:
             locale_html = _localise_html_links(en_html, lang, slug, article_maps[lang])
             locale_html = _swap_landing_cards(
-                locale_html, posts_for_tag, locale_indexes[lang],
-                article_maps[lang], lang,
+                locale_html,
+                posts_for_tag,
+                locale_indexes[lang],
+                article_maps[lang],
+                lang,
             )
             locale_html = _translate_chrome_for(lang, locale_html)
-            out_path = (
-                PUBLIC / lang / LOCALE_TAGS_PATH[lang] / slug / "index.html"
-            )
+            out_path = PUBLIC / lang / LOCALE_TAGS_PATH[lang] / slug / "index.html"
             out_path.parent.mkdir(parents=True, exist_ok=True)
             out_path.write_text(locale_html, encoding="utf-8")
             written += 1
     return written
-
-
-
-
-
-
-
-
-
-
 
 
 def _write_category_pages(
@@ -409,9 +375,7 @@ def _write_category_pages(
         out_path = PUBLIC / "categories" / pillar / "index.html"
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(page_html, encoding="utf-8")
-        pillar_slugs = [
-            slug for slug, e in taxonomy.items() if e.get("category") == pillar
-        ]
+        pillar_slugs = [slug for slug, e in taxonomy.items() if e.get("category") == pillar]
         pillar_slugs.sort(key=lambda s: -len(posts.get(s, [])))
         recent = _category_recent_posts(pillar_slugs, posts)
         en_pages[pillar] = (page_html, recent)
@@ -439,12 +403,8 @@ def _write_category_locale_forks(
             out = en_html
             out = _HTML_LANG_RE.sub(f'<html lang="{lang}"', out, count=1)
             canonical = f"{_BASE_URL}/{lang}/categories/{pillar}/"
-            out = _CANONICAL_RE.sub(
-                f'<link rel="canonical" href="{canonical}"', out, count=1
-            )
-            out = _OG_URL_RE.sub(
-                f'<meta property="og:url" content="{canonical}"', out, count=1
-            )
+            out = _CANONICAL_RE.sub(f'<link rel="canonical" href="{canonical}"', out, count=1)
+            out = _OG_URL_RE.sub(f'<meta property="og:url" content="{canonical}"', out, count=1)
             amap = article_maps[lang]
 
             def _swap_article(m: re.Match[str], _lang: str = lang, _amap: dict = amap) -> str:
@@ -456,9 +416,7 @@ def _write_category_locale_forks(
             out = _INLANG_RE.sub(f'"inLanguage":"{lang}"', out)
             out = _swap_landing_cards(out, recent, locale_indexes[lang], amap, lang)
             out = _translate_chrome_for(lang, out)
-            out_path = (
-                PUBLIC / lang / "categories" / pillar / "index.html"
-            )
+            out_path = PUBLIC / lang / "categories" / pillar / "index.html"
             out_path.parent.mkdir(parents=True, exist_ok=True)
             out_path.write_text(out, encoding="utf-8")
             written += 1
@@ -483,8 +441,13 @@ def _write_landings(
         if len(ps) < _LANDING_THRESHOLD:
             continue
         page_html = _render_landing_html(
-            template, slug, entry, ps,
-            cooccur.get(slug, collections.Counter()), taxonomy, posts,
+            template,
+            slug,
+            entry,
+            ps,
+            cooccur.get(slug, collections.Counter()),
+            taxonomy,
+            posts,
         )
         out_path = PUBLIC / "tags" / slug / "index.html"
         out_path.parent.mkdir(parents=True, exist_ok=True)
