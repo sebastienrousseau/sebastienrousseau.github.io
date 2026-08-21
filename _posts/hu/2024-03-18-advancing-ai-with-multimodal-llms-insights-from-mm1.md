@@ -3,7 +3,7 @@ title: "A mesterséges intelligencia fejlesztése multimodális LLM-ekkel: tanul
 tags: "Multimodal, LLM, AI, MM1, Pre-training, Image Recognition, NLP, Future, Learning, Research, ISO 20022, post-quantum cryptography, quantum computing"
 subtitle: "A mesterséges intelligencia jövőjének feltárása: hogyan forradalmasítja az Apple úttörő MM1-tanulmánya a multimodális tanulást"
 description: "Ismerje meg az Apple MM1 tanulmányát a multimodális nagy nyelvi modellekről (MLLM-ek). Tudjon meg többet architektúrájukról, előtanítási stratégiáikról és a bennük rejlő mesterséges intelligencia lehetőségekről."
-date: "Mar 17, 2024"
+date: "March 18, 2024"
 language: "hu"
 locale: "hu_HU"
 banner: "https://cloudcdn.pro/stocks/images/mm1-visual.webp"

@@ -104,3 +104,31 @@ def test_parse_date_raises_rather_than_stamping_build_time():
         except ValueError:
             continue
         raise AssertionError(f"parse_date({bad!r}) should raise, not invent a date")
+
+
+def test_every_post_date_agrees_with_its_slug():
+    """The slug is the URL; `date:` must not contradict it.
+
+    Three English posts carried a `date:` that disagreed with their own slug
+    and with their own `pub_date` (e.g. slug 2024-01-01, pub_date 01 Jan,
+    date "Jan 08, 2024"), and 50 locale copies inherited it. Nothing caught it
+    because each value was individually well-formed — the same shape as the
+    build-time fallback: plausible output, no signal.
+
+    Corroboration for the correction was `pub_date` and the English
+    counterpart, both of which agreed with the slug in every case; none were
+    guessed. Slugs were not touched — they are URLs.
+    """
+    from datetime import date
+
+    bad = []
+    for p in sorted((ROOT / "_posts").glob("**/*.md")):
+        if not DATED.match(p.stem):
+            continue
+        v = _field(p.read_text(encoding="utf-8"), "date")
+        if v is None:
+            continue
+        got = _to_date(v)
+        if got is not None and got != date.fromisoformat(p.stem[:10]):
+            bad.append(f"{p.relative_to(ROOT)}: date {v!r} != slug {p.stem[:10]}")
+    assert not bad, f"{len(bad)} post(s) whose date contradicts their URL:\n" + "\n".join(bad[:10])

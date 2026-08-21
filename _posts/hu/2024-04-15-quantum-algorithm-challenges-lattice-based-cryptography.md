@@ -3,7 +3,7 @@ title: "Kvantumalgoritmus kihívás elé állítja a rácsalapú kriptográfiát
 tags: "quantum algorithms, cryptography, lattice problems, LWE, post-quantum cryptography, cybersecurity, research, innovation, future-proofing, ISO 20022, quantum computing, AI"
 subtitle: "A következő polinomiális idejű kvantumalgoritmus a rácsalapú kriptográfiához"
 description: "Yilei Chen új, polinomiális idejű kvantumalgoritmusa a rácsalapú kriptográfiát célozza. Következmények a posztkvantum szabványokra, köztük a CRYSTALS-Kyberre."
-date: "Apr 01, 2024"
+date: "April 15, 2024"
 language: "hu"
 locale: "hu_HU"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"

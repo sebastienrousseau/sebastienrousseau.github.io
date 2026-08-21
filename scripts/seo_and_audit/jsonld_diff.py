@@ -75,45 +75,65 @@ def summarise_block(block: object) -> str:
     return "?"
 
 
+_MAX_LISTED = 25
+
+
+def _sig(blocks: list[object]) -> str:
+    return ", ".join(summarise_block(b) for b in blocks) or "(empty)"
+
+
+def _truncated(keys: list[str]) -> list[str]:
+    """The "… and N more" tail for a list capped at _MAX_LISTED."""
+    overflow = len(keys) - _MAX_LISTED
+    return [f"- … and {overflow} more"] if overflow > 0 else []
+
+
+def _added_section(added: list[str], head: dict[str, list[object]]) -> list[str]:
+    lines = [f"### ➕ {len(added)} page(s) added\n"]
+    lines += [f"- `{k}` — {_sig(head[k])}" for k in added[:_MAX_LISTED]]
+    return [*lines, *_truncated(added), ""]
+
+
+def _removed_section(removed: list[str]) -> list[str]:
+    lines = [f"### ➖ {len(removed)} page(s) removed\n"]
+    lines += [f"- `{k}`" for k in removed[:_MAX_LISTED]]
+    return [*lines, *_truncated(removed), ""]
+
+
+def _changed_line(key: str, base_sig: str, head_sig: str) -> str:
+    if base_sig == head_sig:
+        # Same shape, different content — count BlogPosting prop deltas.
+        return f"- `{key}` — content changed ({base_sig})"
+    return f"- `{key}`\n  - was: {base_sig}\n  - now: {head_sig}"
+
+
+def _changed_section(
+    changed: list[str], base: dict[str, list[object]], head: dict[str, list[object]]
+) -> list[str]:
+    lines = [f"### 🔁 {len(changed)} page(s) with schema changes\n"]
+    lines += [
+        _changed_line(k, _sig(base[k]), _sig(head[k])) for k in changed[:_MAX_LISTED]
+    ]
+    return [*lines, *_truncated(changed), ""]
+
+
 def diff_pages(base: dict[str, list[object]], head: dict[str, list[object]]) -> str:
     base_keys = set(base.keys())
     head_keys = set(head.keys())
     added = sorted(head_keys - base_keys)
     removed = sorted(base_keys - head_keys)
-    changed: list[str] = [k for k in sorted(base_keys & head_keys) if base[k] != head[k]]
+    changed = [k for k in sorted(base_keys & head_keys) if base[k] != head[k]]
 
     if not (added or removed or changed):
         return "✅ **No structured-data changes** vs. base.\n"
 
     lines = ["## Structured-data diff vs. base\n"]
     if added:
-        lines.append(f"### ➕ {len(added)} page(s) added\n")
-        for k in added[:25]:
-            sig = ", ".join(summarise_block(b) for b in head[k]) or "(empty)"
-            lines.append(f"- `{k}` — {sig}")
-        if len(added) > 25:
-            lines.append(f"- … and {len(added) - 25} more")
-        lines.append("")
+        lines += _added_section(added, head)
     if removed:
-        lines.append(f"### ➖ {len(removed)} page(s) removed\n")
-        lines.extend(f"- `{k}`" for k in removed[:25])
-        if len(removed) > 25:
-            lines.append(f"- … and {len(removed) - 25} more")
-        lines.append("")
+        lines += _removed_section(removed)
     if changed:
-        lines.append(f"### 🔁 {len(changed)} page(s) with schema changes\n")
-        for k in changed[:25]:
-            base_sig = ", ".join(summarise_block(b) for b in base[k]) or "(empty)"
-            head_sig = ", ".join(summarise_block(b) for b in head[k]) or "(empty)"
-            if base_sig == head_sig:
-                # Same shape, different content — count BlogPosting prop deltas.
-                lines.append(f"- `{k}` — content changed ({base_sig})")
-            else:
-                lines.append(f"- `{k}`\n  - was: {base_sig}\n  - now: {head_sig}")
-        if len(changed) > 25:
-            lines.append(f"- … and {len(changed) - 25} more")
-        lines.append("")
-
+        lines += _changed_section(changed, base, head)
     lines.append(f"_Compared {len(base_keys)} base pages against {len(head_keys)} head pages._")
     return "\n".join(lines) + "\n"
 

@@ -2,7 +2,7 @@
 title: "Algoritma Kuantum Menantang Kriptografi Berbasis Lattice"
 subtitle: "Algoritma kuantum polynomial-time berikutnya untuk kriptografi berbasis lattice"
 description: "Algoritma kuantum polynomial-time baru oleh Yilei Chen menargetkan kriptografi berbasis lattice. Implikasinya bagi standar post-kuantum termasuk CRYSTALS-Kyber."
-date: "Apr 01, 2024"
+date: "April 15, 2024"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"

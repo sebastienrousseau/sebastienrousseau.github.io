@@ -98,39 +98,62 @@ def _articles_map_for_language(
     previous = previous or {}
     if not lang_dir.is_dir():
         return out
-    locale_by_date: dict[str, list[str]] = {}
+    for date, en_slugs in _locale_stems_by_date(lang_dir, en_by_date).items():
+        _pair_one_date(out, en_by_date[date], en_slugs, previous)
+    return out
+
+
+def _locale_stems_by_date(
+    lang_dir: Path, en_by_date: dict[str, list[str]]
+) -> dict[str, list[str]]:
+    """``{date: [locale stems]}`` for dates that also have an EN article.
+
+    A locale file on a date with no English counterpart has nothing to pair
+    with, so it is dropped here rather than confusing the pairing passes.
+    """
+    by_date: dict[str, list[str]] = {}
     for md in lang_dir.glob("*.md"):
         m = _DATED_RE.match(md.stem)
-        if not m:
-            continue
-        date = m.group(1)
-        if date not in en_by_date:
-            continue
-        locale_by_date.setdefault(date, []).append(md.stem)
+        if m and m.group(1) in en_by_date:
+            by_date.setdefault(m.group(1), []).append(md.stem)
+    return by_date
 
-    for date, en_slugs in en_by_date.items():
-        locale_stems = list(locale_by_date.get(date, []))
-        if not locale_stems:
-            continue
-        en_remaining = list(en_slugs)
-        # Pass 1: sticky preference
-        for en_slug in list(en_remaining):
-            prior = previous.get(en_slug)
-            if prior and prior in locale_stems:
-                out[en_slug] = prior
-                locale_stems.remove(prior)
-                en_remaining.remove(en_slug)
-        # Pass 2: exact stem match (EN-named locale files)
-        for en_slug in list(en_remaining):
-            if en_slug in locale_stems:
-                out[en_slug] = en_slug
-                locale_stems.remove(en_slug)
-                en_remaining.remove(en_slug)
-        # Pass 3: sorted residual pairing
-        en_remaining.sort()
-        locale_stems.sort()
-        out.update(zip(en_remaining, locale_stems, strict=False))
-    return out
+
+def _pair_one_date(
+    out: dict[str, str],
+    en_slugs: list[str],
+    locale_stems: list[str],
+    previous: dict[str, str],
+) -> None:
+    """Pair one date's EN slugs to its locale stems, in three passes.
+
+    Order is the whole design (see the caller's docstring): sticky wins first
+    so a translator's choice cannot be stolen by a later stub, exact stem
+    match second, and only the leftovers are paired positionally.
+    """
+    locale_stems = list(locale_stems)
+    en_remaining = list(en_slugs)
+
+    def claim(en_slug: str, locale_stem: str) -> None:
+        out[en_slug] = locale_stem
+        locale_stems.remove(locale_stem)
+        en_remaining.remove(en_slug)
+
+    # Pass 1: sticky preference — the slug already committed to slugs.json.
+    for en_slug in list(en_remaining):
+        prior = previous.get(en_slug)
+        if prior and prior in locale_stems:
+            claim(en_slug, prior)
+
+    # Pass 2: exact stem match — the locale kept the EN filename.
+    for en_slug in list(en_remaining):
+        if en_slug in locale_stems:
+            claim(en_slug, en_slug)
+
+    # Pass 3: sorted residual pairing — deterministic, order-coupled.
+    en_remaining.sort()
+    locale_stems.sort()
+    out.update(zip(en_remaining, locale_stems, strict=False))
 
 
 def regen_one(lang: str, *, en_by_date: dict[str, str]) -> tuple[int, int]:

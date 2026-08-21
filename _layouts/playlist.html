@@ -39,7 +39,7 @@
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com;
         img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
-        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        style-src 'self' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
         media-src 'self' https://p.scdn.co https://*.scdn.co;" />
 
@@ -79,8 +79,16 @@
 
       :root[data-theme="dark"]{color-scheme:dark}:root[data-theme="light"]{color-scheme:light}
       :root{
-        --accent: rgb({{theme-color}});
-        --accent-rgb: {{theme-color}};
+        /* Per-page accent moved OUT of this block — see the second <style>
+           below. Keeping `rgb({{theme-color}})` here made the whole ~138 KB
+           stylesheet page-variable, so ssg emitted a separate full copy per
+           distinct accent: two 138 KB bundles that differed in six bytes and
+           between them covered 82 % of pages, so any visitor crossing from an
+           article to a listing re-downloaded ~25 KB gzipped of identical CSS.
+           The fallback below is the AAA-safe default; the per-page value
+           overrides it. */
+        --accent: var(--accent-page, rgb(0,67,165));
+        --accent-rgb: var(--accent-page-rgb, 0,67,165);
         /* One link colour everywhere: a fixed, WCAG-AAA-safe blue (>=7:1 on
            white) rather than the per-page --accent, since some articles carry a
            lighter banner-derived accent (e.g. 0,83,191 = 6.23:1) that fails AAA.
@@ -2018,6 +2026,17 @@
       /* Hide the floating Static Site Generator search button. Our nav has its own .ap-search
          which forwards clicks to this button via main.js. */
       #ssg-search-btn{position:absolute!important;left:-9999px!important;top:-9999px!important;width:1px!important;height:1px!important;clip:rect(0 0 0 0)!important;clip-path:inset(50%)!important;overflow:hidden!important;pointer-events:none}
+      /* --- Topic-cluster links -------------------------------------------
+         Appended by postbuild_lib.internal_links.inject_related_cluster:
+         the nearest sibling articles not already linked in the prose, so no
+         article is left isolated from its cluster. Uses the shared tokens
+         so it inherits both themes. */
+      .cluster-links{margin:48px 0 0;padding:24px 0 0;border-top:1px solid var(--rule)}
+      .cluster-links-heading{margin:0 0 12px;font-size:clamp(17px,1.4vw,19px);line-height:1.3;color:var(--ink)}
+      .cluster-links-list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+      .cluster-links-list li{margin:0}
+      .cluster-links-list a{color:var(--link-color);text-underline-offset:2px}
+      .cluster-links-list a:hover{color:var(--link-color-hover)}
       .playlist-intro{max-width:680px;margin:0 auto 32px;text-align:center;font-size:clamp(17px,1.6vw,20px);line-height:1.5;color:var(--ink-mute)}
       .playlist-intro p{margin:0}
       .playlist-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:0 auto 48px;max-width:780px}
@@ -2031,6 +2050,7 @@
       .playlist-featured .spotify-frame{width:100%;height:100%;border-radius:0}
       @media (max-width:833px){.playlist-featured .newsroom-featured-media.spotify-media{aspect-ratio:16/9}}
     </style>
+    <style>:root{--accent-page:rgb({{theme-color}});--accent-page-rgb:{{theme-color}}}</style>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <a class="skip" href="#main">Skip to main content</a>

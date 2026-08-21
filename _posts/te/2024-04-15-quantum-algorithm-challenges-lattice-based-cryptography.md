@@ -3,7 +3,7 @@ title: "క్వాంటం అల్గోరిథం లాటిస్-ఆ
 tags: "quantum algorithms, cryptography, lattice problems, LWE, post-quantum cryptography, cybersecurity, research, innovation, future-proofing, ISO 20022, quantum computing, AI"
 subtitle: "లాటిస్-ఆధారిత క్రిప్టోగ్రఫీ కోసం తదుపరి బహుపది-సమయ క్వాంటం అల్గోరిథం"
 description: "Yilei Chen రూపొందించిన కొత్త బహుపది-సమయ క్వాంటం అల్గోరిథం లాటిస్-ఆధారిత క్రిప్టోగ్రఫీని లక్ష్యంగా చేసుకుంటుంది. CRYSTALS-Kyber సహా క్వాంటం-అనంతర ప్రమాణాలపై దీని ప్రభావాలు."
-date: "Apr 01, 2024"
+date: "April 15, 2024"
 language: "te"
 locale: "te_IN"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"

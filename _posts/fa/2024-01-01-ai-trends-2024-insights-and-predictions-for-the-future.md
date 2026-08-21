@@ -3,7 +3,7 @@ title: "روندهای هوش مصنوعی در سال ۲۰۲۴: بینش‌ها
 tags: "AI, 2024, Trends, generative AI, cybersecurity, Education, Retail, Ethics, Analytics, Innovation, ISO 20022, post-quantum cryptography, quantum computing, open source, Rust"
 subtitle: "سالی سرنوشت‌ساز برای فناوری، جامعه و تحول اخلاقی"
 description: "روندهای هوش مصنوعی برای سال ۲۰۲۴: هوش مصنوعی مولد در حوزه مالی، مدل‌های چندوجهی، مدل‌های زبانی بزرگ روی‌دستگاه و تحولاتی که بانکداری و مهندسی محصول را دگرگون خواهند کرد."
-date: "Jan 08, 2024"
+date: "January 1, 2024"
 language: "fa"
 locale: "fa_IR"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"

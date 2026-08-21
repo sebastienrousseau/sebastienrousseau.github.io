@@ -2,7 +2,7 @@
 title: "Memajukan AI dengan LLM multimodal: pelajaran dari MM1"
 subtitle: "Bagaimana studi MM1 Apple menjelaskan arsitektur, data pre-training, dan kemampuan multimodal"
 description: "Analisis studi MM1 Apple tentang LLM multimodal: arsitektur, strategi pre-training, resolusi gambar, dan kemampuan few-shot."
-date: "Mar 17, 2024"
+date: "March 18, 2024"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/mm1-visual.webp"

@@ -189,7 +189,7 @@ A common misconception among technology managers is that converting Markdown to 
 
 Flat HTML typically lacks three things.
 
-1. **Correct heading hierarchies.** Standard Markdown does not enforce heading order. Jumping from an `<h1>` to an `<h4>` violates WCAG 2.1 AA and breaks document navigation for screen readers.
+1. **Correct heading hierarchies.** Standard Markdown does not enforce heading order. Jumping from an `&lt;h1&gt;` to an `&lt;h4&gt;` violates WCAG 2.1 AA and breaks document navigation for screen readers.
 2. **Explicit table semantics.** Standard Markdown tables are rarely rendered with the correct `<th>` scope and `<tbody>` attributes required for accessible parsing.
 3. **Machine-readable metadata.** Standard HTML lacks the JSON-LD hooks that modern AI search platforms and RAG ingest systems depend on.
 

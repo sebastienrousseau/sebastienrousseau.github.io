@@ -84,29 +84,21 @@ LOCALE_TAGS_PATH: dict[str, str] = {
 _LANDING_THRESHOLD = 3
 _BASE_URL = "https://sebastienrousseau.com"
 _MAIN_RE = re.compile(
-    r'(<main\b[^>]*>)([\s\S]*?)(</main>)',
+    r"(<main\b[^>]*>)([\s\S]*?)(</main>)",
     re.IGNORECASE,
 )
 _TITLE_RE = re.compile(r"<title>[^<]*</title>", re.IGNORECASE)
-_DESC_RE = re.compile(
-    r'<meta name="description" content="[^"]*"', re.IGNORECASE
-)
-_CANONICAL_RE = re.compile(
-    r'<link rel="canonical" href="[^"]*"', re.IGNORECASE
-)
-_OG_TITLE_RE = re.compile(
-    r'<meta property="og:title" content="[^"]*"', re.IGNORECASE
-)
-_OG_DESC_RE = re.compile(
-    r'<meta property="og:description" content="[^"]*"', re.IGNORECASE
-)
-_OG_URL_RE = re.compile(
-    r'<meta property="og:url" content="[^"]*"', re.IGNORECASE
-)
+_DESC_RE = re.compile(r'<meta name="description" content="[^"]*"', re.IGNORECASE)
+_CANONICAL_RE = re.compile(r'<link rel="canonical" href="[^"]*"', re.IGNORECASE)
+_OG_TITLE_RE = re.compile(r'<meta property="og:title" content="[^"]*"', re.IGNORECASE)
+_OG_DESC_RE = re.compile(r'<meta property="og:description" content="[^"]*"', re.IGNORECASE)
+_OG_URL_RE = re.compile(r'<meta property="og:url" content="[^"]*"', re.IGNORECASE)
 _AP_HERO_BLOCK_RE = re.compile(
     r'<section class="ap-hero">[\s\S]*?</section>',
     re.IGNORECASE,
 )
+
+
 def _esc(s: str) -> str:
     return (
         s.replace("&", "&amp;")
@@ -115,6 +107,8 @@ def _esc(s: str) -> str:
         .replace('"', "&quot;")
         .replace("'", "&#x27;")
     )
+
+
 def _card_share_rail(url: str, title: str, desc: str) -> str:
     """6-icon per-card share rail: X / LinkedIn / Facebook / WhatsApp /
     email / copy-link. Anchors-only except for copy-link (button +
@@ -151,6 +145,8 @@ def _card_share_rail(url: str, title: str, desc: str) -> str:
         f'<div class="card-share-rail" role="group" aria-label="Share this article">'
         f"<ul>{items}</ul></div>"
     )
+
+
 def _render_article_cards(
     posts_for_tag: list[tuple[str, str, str, str, list[str], str, str]],
     href_overrides: dict[str, str] | None = None,
@@ -165,18 +161,12 @@ def _render_article_cards(
     overrides = href_overrides or {}
     for title, iso_date, slug, excerpt, pillars, banner, banner_alt in posts_for_tag:
         href = overrides.get(slug) or f"/{slug}/"
-        eyebrow_label = eyebrow_override or (
-            PILLAR_LABELS[pillars[0]] if pillars else "Editorial"
-        )
+        eyebrow_label = eyebrow_override or (PILLAR_LABELS[pillars[0]] if pillars else "Editorial")
         eyebrow_html = f'<p class="eyebrow card-eyebrow">{_esc(eyebrow_label).upper()}</p>'
         date_html = (
-            f'<time datetime="{iso_date}" class="card-date">{iso_date}</time>'
-            if iso_date
-            else ""
+            f'<time datetime="{iso_date}" class="card-date">{iso_date}</time>' if iso_date else ""
         )
-        excerpt_html = (
-            f'<p class="card-excerpt">{_esc(excerpt)}</p>' if excerpt else ""
-        )
+        excerpt_html = f'<p class="card-excerpt">{_esc(excerpt)}</p>' if excerpt else ""
         safe_alt = banner_alt or title
         img_html = (
             f'<a class="card-media" href="{href}" tabindex="-1" aria-hidden="true">'
@@ -200,6 +190,8 @@ def _render_article_cards(
             f"</article>"
         )
     return "".join(cards)
+
+
 def _render_related_tags(
     cooccur: collections.Counter[str],
     taxonomy: dict,
@@ -212,26 +204,34 @@ def _render_related_tags(
     Filters out canonicals whose post count is below ``_LANDING_THRESHOLD``
     — those don't have a landing page, so linking to them would 404 and
     fail the strict-internal link audit."""
+    # `most_common()` breaks ties by INSERTION order, and the counter is built
+    # by iterating a set — whose order Python randomises per process. Tied
+    # co-occurrence counts are the common case, so the chips came out in a
+    # different order on every build and the page was not reproducible.
+    # Sorting by (-count, slug) is a total order over distinct slugs, so the
+    # result no longer depends on how the counter was populated.
     eligible = [
         (other, cnt)
-        for other, cnt in cooccur.most_common()
+        for other, cnt in sorted(cooccur.items(), key=lambda kv: (-kv[1], kv[0]))
         if len(posts.get(other, [])) >= _LANDING_THRESHOLD
     ][:n]
     if not eligible:
         return ""
     chips = "".join(
         f'<a href="/tags/{other}/" class="related-tag-chip">'
-        f'{_esc(taxonomy[other]["name"])} '
+        f"{_esc(taxonomy[other]['name'])} "
         f'<span class="meta">{cnt}</span></a>'
         for other, cnt in eligible
     )
     return (
         f'<nav aria-labelledby="related-tags-h2-{slug}" class="related-tags">'
         f'<h2 id="related-tags-h2-{slug}">Related tags</h2>'
-        f'<p>Topics this tag most often appears with.</p>'
-        f"<div class=\"related-tags-grid\">{chips}</div>"
+        f"<p>Topics this tag most often appears with.</p>"
+        f'<div class="related-tags-grid">{chips}</div>'
         f"</nav>"
     )
+
+
 def _render_jsonld(
     slug: str,
     entry: dict,
@@ -258,7 +258,7 @@ def _render_jsonld(
                 "@type": "CollectionPage",
                 "@id": url,
                 "url": url,
-                "name": f'{entry["name"]} — Articles',
+                "name": f"{entry['name']} — Articles",
                 "description": entry["description"].strip(),
                 "isPartOf": {
                     "@type": "WebSite",
@@ -275,6 +275,8 @@ def _render_jsonld(
     }
     body = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     return f'<script type="application/ld+json">{body}</script>'
+
+
 def _render_landing_body(
     slug: str,
     entry: dict,
@@ -295,14 +297,16 @@ def _render_landing_body(
         f"</header>"
         f'<section class="tag-landing-list" aria-label="Articles tagged {_esc(entry["name"])}">'
         f"{_render_article_cards(posts_for_tag)}"
-        f"</section>"
-        + _render_related_tags(cooccur, taxonomy, slug, posts)
-        + "</div>"
+        f"</section>" + _render_related_tags(cooccur, taxonomy, slug, posts) + "</div>"
     )
+
+
 _HREFLANG_LINK_RE = re.compile(
     r'(<link\s+rel="alternate"\s+hreflang="[^"]+"\s+href=")([^"]+?)/"',
     re.IGNORECASE,
 )
+
+
 def _append_slug_to_hreflang(html: str, slug: str) -> str:
     """Rewrite every ``<link rel="alternate" hreflang="…" href="…/">`` so
     the URL points at the per-tag landing for ``slug`` rather than the
@@ -311,6 +315,8 @@ def _append_slug_to_hreflang(html: str, slug: str) -> str:
     append ``<slug>/`` to keep the chain reciprocal across the locale
     forks of each canonical tag."""
     return _HREFLANG_LINK_RE.sub(rf'\g<1>\g<2>/{slug}/"', html)
+
+
 def _render_landing_html(
     template: str,
     slug: str,
@@ -326,32 +332,24 @@ def _render_landing_html(
     re-pointed at the per-tag landing of each locale so reciprocity
     holds across the 28-locale chain."""
     url = f"{_BASE_URL}/tags/{slug}/"
-    title = f'{entry["name"]} — Articles by topic'
+    title = f"{entry['name']} — Articles by topic"
     desc = entry["description"].strip()
     body = _render_landing_body(slug, entry, posts_for_tag, cooccur, taxonomy, posts)
     out = template
     out = _TITLE_RE.sub(f"<title>{_esc(title)}</title>", out, count=1)
-    out = _DESC_RE.sub(
-        f'<meta name="description" content="{_esc(desc)}"', out, count=1
-    )
-    out = _CANONICAL_RE.sub(
-        f'<link rel="canonical" href="{url}"', out, count=1
-    )
-    out = _OG_TITLE_RE.sub(
-        f'<meta property="og:title" content="{_esc(title)}"', out, count=1
-    )
-    out = _OG_DESC_RE.sub(
-        f'<meta property="og:description" content="{_esc(desc)}"', out, count=1
-    )
-    out = _OG_URL_RE.sub(
-        f'<meta property="og:url" content="{url}"', out, count=1
-    )
+    out = _DESC_RE.sub(f'<meta name="description" content="{_esc(desc)}"', out, count=1)
+    out = _CANONICAL_RE.sub(f'<link rel="canonical" href="{url}"', out, count=1)
+    out = _OG_TITLE_RE.sub(f'<meta property="og:title" content="{_esc(title)}"', out, count=1)
+    out = _OG_DESC_RE.sub(f'<meta property="og:description" content="{_esc(desc)}"', out, count=1)
+    out = _OG_URL_RE.sub(f'<meta property="og:url" content="{url}"', out, count=1)
     out = _append_slug_to_hreflang(out, slug)
     out = _AP_HERO_BLOCK_RE.sub("", out, count=1)
     out = _MAIN_RE.sub(rf"\1{body}\3", out, count=1)
     jsonld = _render_jsonld(slug, entry, posts_for_tag)
     out = out.replace("</head>", f"{jsonld}</head>", 1)
     return out
+
+
 def _locale_post_card_fields(path: Path) -> tuple[str, str, str, str] | None:
     """Extract (stem, title, excerpt, banner) from one locale post.
     Returns None when the post has no `title:` frontmatter."""
@@ -364,12 +362,12 @@ def _locale_post_card_fields(path: Path) -> tuple[str, str, str, str] | None:
     banner_m = _BANNER_FM_RE.search(text)
     title = _strip_fm_quotes(title_m.group(1))
     excerpt = _strip_fm_quotes(
-        excerpt_m.group(1)
-        if excerpt_m
-        else (desc_m.group(1) if desc_m else "")
+        excerpt_m.group(1) if excerpt_m else (desc_m.group(1) if desc_m else "")
     )
     banner = _strip_fm_quotes(banner_m.group(1)) if banner_m else _DEFAULT_BANNER
     return path.stem, title, excerpt, banner
+
+
 def _localise_posts_for_tag(
     posts_for_tag: list[tuple[str, str, str, str, list[str], str, str]],
     locale_index: dict[str, tuple[str, str, str, str]],
@@ -386,10 +384,14 @@ def _localise_posts_for_tag(
             banner = locale_banner or banner
         out.append((title, iso_date, slug, excerpt, pillars, banner, banner_alt))
     return out
+
+
 _LANDING_LIST_SECTION_RE = re.compile(
     r'(<section class="tag-landing-list"[^>]*>)([\s\S]*?)(</section>)',
     re.IGNORECASE,
 )
+
+
 def _swap_landing_cards(
     html: str,
     posts_for_tag: list[tuple[str, str, str, str, list[str], str, str]],
@@ -401,11 +403,11 @@ def _swap_landing_cards(
     ``<section class="tag-landing-list">`` with locale-translated
     cards pointing at ``/<lang>/<locale-slug>/`` URLs."""
     locale_posts = _localise_posts_for_tag(posts_for_tag, locale_index)
-    href_overrides = {
-        p[2]: f"/{lang}/{article_map.get(p[2], p[2])}/" for p in posts_for_tag
-    }
+    href_overrides = {p[2]: f"/{lang}/{article_map.get(p[2], p[2])}/" for p in posts_for_tag}
     body = _render_article_cards(locale_posts, href_overrides=href_overrides)
     return _LANDING_LIST_SECTION_RE.sub(rf"\1{body}\3", html, count=1)
+
+
 def _render_category_tag_item(
     slug: str,
     entry: dict,
@@ -417,10 +419,12 @@ def _render_category_tag_item(
     not linked — their ``/tags/<slug>/`` page is not emitted, so a link
     would 404 and fail audit_links --strict-internal."""
     meta = f' <span class="meta">— {n} article{"s" if n != 1 else ""}</span>'
-    head = f'<strong>{_esc(entry["name"])}</strong>{meta}'
+    head = f"<strong>{_esc(entry['name'])}</strong>{meta}"
     if n >= _LANDING_THRESHOLD:
         head = f'<a href="/tags/{slug}/">{head}</a>'
     return f"<li>{head}<p>{_esc(entry['description'].strip())}</p></li>"
+
+
 def _category_recent_posts(
     pillar_slugs: list[str],
     posts: dict[str, list[tuple[str, str, str, str, list[str], str, str]]],
@@ -438,6 +442,8 @@ def _category_recent_posts(
             recent.append(entry)
     recent.sort(key=lambda p: p[1] or "0000", reverse=True)
     return recent[:n]
+
+
 def _render_category_body(
     pillar: str,
     taxonomy: dict,
@@ -447,9 +453,7 @@ def _render_category_body(
     with the pillar deck, the canonical tags belonging to the pillar
     (each linked to /tags/<slug>/ when landing-eligible, with article
     count), and a "recent across this pillar" card list."""
-    pillar_slugs = [
-        slug for slug, e in taxonomy.items() if e.get("category") == pillar
-    ]
+    pillar_slugs = [slug for slug, e in taxonomy.items() if e.get("category") == pillar]
     pillar_slugs.sort(key=lambda s: -len(posts.get(s, [])))
     tag_items = [
         _render_category_tag_item(slug, taxonomy[slug], len(posts.get(slug, [])))
@@ -466,15 +470,17 @@ def _render_category_body(
         f'<p class="tag-landing-meta">{len(tag_items)} tags</p>'
         f"</header>"
         f'<section aria-label="Tags under {_esc(PILLAR_LABELS[pillar])}">'
-        f'<h2>Tags in this category</h2>'
+        f"<h2>Tags in this category</h2>"
         f'<ul class="tag-list">' + "".join(tag_items) + "</ul>"
         f"</section>"
         f'<section class="tag-landing-list" aria-label="Recent articles">'
-        f'<h2>Recent articles in {_esc(PILLAR_LABELS[pillar])}</h2>'
+        f"<h2>Recent articles in {_esc(PILLAR_LABELS[pillar])}</h2>"
         f"{_render_article_cards(recent)}"
         f"</section>"
         f"</div>"
     )
+
+
 def _rewrite_hreflang_to_category(html: str, pillar: str) -> str:
     """Rewrite the cover template's hreflang chain so every locale URL
     points at ``/categories/<pillar>/`` (EN) or ``/<lang>/categories/
@@ -499,6 +505,8 @@ def _rewrite_hreflang_to_category(html: str, pillar: str) -> str:
         return m.group(0)
 
     return _HREFLANG_LINK_RE.sub(_swap, html)
+
+
 def _render_category_html(
     template: str,
     pillar: str,
@@ -510,21 +518,11 @@ def _render_category_html(
     desc = PILLAR_DECKS[pillar]
     out = template
     out = _TITLE_RE.sub(f"<title>{_esc(title)}</title>", out, count=1)
-    out = _DESC_RE.sub(
-        f'<meta name="description" content="{_esc(desc)}"', out, count=1
-    )
-    out = _CANONICAL_RE.sub(
-        f'<link rel="canonical" href="{url}"', out, count=1
-    )
-    out = _OG_TITLE_RE.sub(
-        f'<meta property="og:title" content="{_esc(title)}"', out, count=1
-    )
-    out = _OG_DESC_RE.sub(
-        f'<meta property="og:description" content="{_esc(desc)}"', out, count=1
-    )
-    out = _OG_URL_RE.sub(
-        f'<meta property="og:url" content="{url}"', out, count=1
-    )
+    out = _DESC_RE.sub(f'<meta name="description" content="{_esc(desc)}"', out, count=1)
+    out = _CANONICAL_RE.sub(f'<link rel="canonical" href="{url}"', out, count=1)
+    out = _OG_TITLE_RE.sub(f'<meta property="og:title" content="{_esc(title)}"', out, count=1)
+    out = _OG_DESC_RE.sub(f'<meta property="og:description" content="{_esc(desc)}"', out, count=1)
+    out = _OG_URL_RE.sub(f'<meta property="og:url" content="{url}"', out, count=1)
     out = _rewrite_hreflang_to_category(out, pillar)
     body = _render_category_body(pillar, taxonomy, posts)
     out = _AP_HERO_BLOCK_RE.sub("", out, count=1)

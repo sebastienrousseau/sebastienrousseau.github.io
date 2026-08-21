@@ -99,6 +99,54 @@ required):
 | `X-Content-Type-Options: nosniff` | `<meta http-equiv>` |
 | `Referrer-Policy: strict-origin-when-cross-origin` | `<meta name="referrer">` |
 
+### ⚠️ The edge CSP header currently weakens this — action required
+
+The table above describes the **meta** policy, which is genuinely strict.
+Cloudflare additionally sends a `Content-Security-Policy` *header* whose
+`script-src` and `style-src` both carry `'unsafe-inline'`:
+
+```
+$ curl -sI https://sebastienrousseau.com/ | grep -o "script-src[^;]*"
+script-src 'self' 'unsafe-inline' 'inline-speculation-rules' https://cdn.jsdelivr.net …
+```
+
+**This is not currently a vulnerability.** When a page is served more than one
+policy, each is enforced independently and *all* must allow — so the strict
+meta policy binds and the header's `'unsafe-inline'` is inert today.
+
+**It is still wrong, and it should be fixed**, because it inverts defence in
+depth: the strong policy lives in the document body and the weak one at the
+edge. If meta injection ever fails on a page — a new template, a generator
+change, an `ssg` upgrade that alters head emission — that page silently
+degrades to `'unsafe-inline'` with nothing to catch it. `ssg` 0.0.48 already
+changed CSP emission once and broke the gate (see `normalise_csp()`).
+
+**Do not simply delete `'unsafe-inline'` from the header.** The header carries
+no per-page hashes, so a header policy of `script-src 'self'` would block the
+inline JSON-LD and theme bootstrap that the meta policy allows by hash — both
+policies must permit, and the header would not.
+
+**The correct change:** remove `script-src` and `style-src` from the edge
+header entirely, leaving script policy to the hash-based meta tag, and keep at
+the edge only what a meta tag cannot express. Cloudflare → Rules → Transform
+Rules → Modify Response Header → set `Content-Security-Policy` to:
+
+```
+default-src 'self'; base-uri 'self'; form-action 'self' https://formspree.io; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests; frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com; img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co; font-src 'self' https://fonts.gstatic.com; media-src 'self' https://p.scdn.co https://*.scdn.co
+```
+
+`frame-ancestors` stays here because `<meta http-equiv>` does not honour it.
+
+**Verify after changing it:**
+
+```bash
+python3 scripts/seo_and_audit/verify_deploy.py
+```
+
+That script asserts no `'unsafe-inline'` in either delivery channel and is
+wired into CI after every `main` deploy, so this cannot regress silently once
+fixed.
+
 ## Speculation Rules API
 
 Every rendered page carries a `<script type="speculationrules">` block

@@ -23,11 +23,23 @@ pandoc = "3.10"
 "npm:pa11y-ci"    = "4.1.1"
 "npm:http-server" = "14"
 
-# ssg (Static Site Generator) is installed from crates.io rather than via mise.
-# It tracks the latest published version on crates.io — keep here
-# documented for reproducibility, not for `mise install` to act on.
+# ssg IS declared here, exactly-pinned, and that is load-bearing.
 #
-#   cargo install ssg --locked --version 0.0.39
+# It used to be deliberately absent ("installed from crates.io rather than via
+# mise"), which meant a `cargo:ssg` entry in the user's GLOBAL mise config won:
+# its shim shadows ~/.cargo/bin, so `cargo install ssg --version <pin>` could be
+# silently overridden and `./build.sh` would compile with whatever version that
+# happened to be. It did — a global entry resolved to 0.0.52 and produced a
+# 14,045-page tree with 7,240 /tags/ pages titled "My SSG Site", against the
+# pinned compiler's 6,856 and 48.
+#
+# A repo-local mise config takes precedence over the global one, so declaring it
+# here is what stops a global entry deciding which compiler builds this site.
+# It tracks `latest`, matching SSG_VERSION in .github/workflows/ci.yml;
+# tests/unit/test_ssg_pin_single_source.py enforces that they agree.
+"cargo:ssg" = "latest"
+
+# Why 0.0.39 specifically:
 #
 # Policy: CI tracked the latest published ssg until 0.0.50 broke the Linux
 # build (tags not split on non-ASCII separators -> 348-byte directory name

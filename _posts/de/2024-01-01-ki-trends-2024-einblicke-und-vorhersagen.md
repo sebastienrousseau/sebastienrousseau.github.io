@@ -2,7 +2,7 @@
 title: "KI-Trends 2024: Einblicke und Vorhersagen für die Zukunft"
 subtitle: "Ein entscheidendes Jahr für Technologie, Gesellschaft und ethische Entwicklung"
 description: "KI-Trends für 2024: generative KI im Finanzwesen, multimodale Modelle, On-Device-LLMs und die Verschiebungen, die das Banking und die Produktentwicklung umgestalten werden."
-date: "Jan 08, 2024"
+date: "January 1, 2024"
 language: "de"
 locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"

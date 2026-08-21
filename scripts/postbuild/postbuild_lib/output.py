@@ -18,6 +18,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 import _lang_registry as _lr
+from _frontmatter import parse_frontmatter as _shared_parse_frontmatter
 
 
 def _all_active_non_en_langs() -> list[str]:
@@ -691,27 +692,18 @@ def write_json_feed(public: Path) -> bool:
 
 
 def _parse_frontmatter(md: Path) -> dict[str, str]:
-    """Minimal YAML-style frontmatter parser. Same shape as the FR
-    feeds helper."""
-    out: dict[str, str] = {}
-    text = md.read_text(encoding="utf-8")
-    lines = text.splitlines()
-    inside = False
-    sep = 0
-    for line in lines:
-        s = line.strip()
-        if s == "---":
-            sep += 1
-            inside = sep == 1
-            if sep == 2:
-                break
-            continue
-        if not inside:
-            continue
-        m = re.match(r'^([a-z_-]+):\s*"((?:[^"\\]|\\.)*)"\s*$', s)
-        if m:
-            out[m.group(1)] = m.group(2)
-    return out
+    """Front matter of a post, via the shared parser in ``scripts/lib``.
+
+    This used to be a third local implementation ("Same shape as the FR feeds
+    helper", which was itself a copy). Its regex only accepted double-quoted
+    values with lowercase-and-hyphen keys, so it silently dropped everything
+    else. Differential-tested against the shared parser over all 240 posts
+    before switching: zero value mismatches on shared keys — the shared parser
+    is a strict superset, recovering keys this one dropped. Callers read
+    specific known keys, so the extra ones are inert.
+    """
+    fm, _body = _shared_parse_frontmatter(md.read_text(encoding="utf-8"))
+    return fm
 
 
 def write_llms_full_txt(public: Path) -> bool:

@@ -19,6 +19,25 @@ set -euo pipefail
 SERVE=0
 [[ "${1:-}" == "--serve" ]] && SERVE=1
 
+# Pin the build clock so the output is a function of the SOURCE, not of when
+# the build ran.
+#
+# ssg stamps `metadata.timestamp` into sbom.cdx.json from the wall clock unless
+# SOURCE_DATE_EPOCH is set, so two builds of the same commit produced two
+# different SBOMs and the byte-identical-rebuild gate failed on that one file
+# long after every real non-determinism had been fixed. `pandoc`/LaTeX honour
+# the same variable, so pinning it here covers anything else that reaches for
+# a clock.
+#
+# The value is the last commit's timestamp — the reproducible-builds
+# convention. It makes the SBOM describe when the content was authored rather
+# than when CI happened to run, which is the more useful claim anyway. An
+# already-exported value wins, so a caller can pin it explicitly.
+if [ -z "${SOURCE_DATE_EPOCH:-}" ]; then
+  SOURCE_DATE_EPOCH="$(git log -1 --format=%ct 2>/dev/null || date -u +%s)"
+  export SOURCE_DATE_EPOCH
+fi
+
 # Regenerate listings that are derived from `_posts/` on every build so
 # article PRs can ship as additive-only diffs (just the new article
 # source + 27 locale translations, no homepage rotation, no slug-map
@@ -31,6 +50,55 @@ SERVE=0
 #     from the top-6 most recent dated EN posts.
 #
 # Both are idempotent: a no-op rebuild leaves the working tree clean.
+# Refuse to build with an ssg other than the pinned one.
+#
+# CI asserts the version in the workflow before building. Nothing asserted it
+# locally, so `./build.sh` used whatever `ssg` resolved to on PATH — and a
+# global mise entry (`cargo:ssg`) shadows ~/.cargo/bin, so a repo-local
+# `cargo install --version` can be silently overridden. That is not
+# hypothetical: it produced a 14,045-page tree with 7,240 /tags/ pages titled
+# "My SSG Site" against the pinned compiler's 6,856 and 48, because ssg >=0.0.50
+# splits `tags:` on ASCII "," only and collapses a locale post's whole tag list
+# into one tag (see the SSG_VERSION comment in .github/workflows/ci.yml, #431).
+#
+# A wrong build that looks plausible is worse than no build, so fail loudly.
+# The version is read from ci.yml, which is the single source of truth for the
+# pin (ADR-0002) — the Makefile derives it the same way.
+_ssg_want="$(sed -n 's/^[[:space:]]*SSG_VERSION:[[:space:]]*"\([^"]*\)".*/\1/p' \
+  .github/workflows/ci.yml | head -1)"
+_ssg_have="$(ssg --version 2>/dev/null | awk '{print $2}' || true)"
+if [ -z "${_ssg_have}" ]; then
+  echo "error: ssg is not on PATH. Install it with: make bootstrap" >&2
+  exit 1
+fi
+# SSG_VERSION=latest means track the newest release; there is nothing to
+# assert against locally, so just record what built the site. A concrete
+# version is asserted exactly.
+if [ "${_ssg_want}" = "latest" ]; then
+  echo "ssg ${_ssg_have} (tracking latest)"
+  _ssg_want=""
+fi
+if [ -n "${_ssg_want}" ] && [ "${_ssg_have}" != "${_ssg_want}" ]; then
+  echo "error: ssg ${_ssg_have:-not found} is on PATH but ${_ssg_want} is pinned." >&2
+  echo "       which ssg -> $(command -v ssg 2>/dev/null || echo none)" >&2
+  echo "       Fix with:  cargo install ssg --locked --version ${_ssg_want} --force" >&2
+  echo "       If a mise shim shadows it, check \`mise ls\` and your global config." >&2
+  exit 1
+fi
+
+# Start from an empty output tree. ssg writes INTO public/ rather than
+# replacing it, so without this every build layered onto the last one and
+# public/ became an archaeological record: 7,172 stale /tags/ pages from a
+# superseded tag scheme (6,508 of them linking no articles, all titled
+# "— My SSG Site"), a 13,940-URL sitemap against production's 6,816, and a
+# 32.5 MB search index against production's 806 KB. CI never saw it because
+# a CI checkout is already empty, so `make verify` and `make serve` measured
+# a tree neither CI nor production ever had. The SRI pass also re-stamped
+# already-stamped links, emitting duplicate integrity="" attributes on half
+# the tree. Cleaning here is what makes the build reproducible; the
+# `reproducible` job in ci.yml builds twice and diffs to prove it stays so.
+rm -rf public
+
 # Create a temporary copy of the content directory to build from
 rm -rf _posts_build
 cp -R _posts _posts_build
@@ -56,7 +124,7 @@ python3 scripts/generators/build_tags.py --dir _posts_build
 python3 scripts/postbuild/backfill_permalink.py --dir _posts_build
 
 # Compile the site from the temporary directory instead of _posts
-ssg -n=docs -c=_posts_build -t=_layouts -o=public
+ssg --no-tag-pages -n=docs -c=_posts_build -t=_layouts -o=public
 
 # Clean up the temporary directory
 rm -rf _posts_build
@@ -156,9 +224,23 @@ if [[ -d labs ]]; then
   done
 fi
 
-# Copy fingerprinted assets to their unfingerprinted aliases so the layouts'
-# /main.js, /sw.js, /highlight.css references resolve.
-for f in public/main.*.js public/sw.*.js public/theme-init.*.js public/highlight.*.css; do
+# Copy the fingerprinted service worker to its unfingerprinted alias.
+#
+# ONLY sw.js. A service worker's scope is bound to the path it is registered
+# from, so it needs a stable URL — a fingerprinted worker would orphan its own
+# registration on every deploy. main.js is registered from it at /sw.js, and
+# every page's speculation-rules block excludes that exact path.
+#
+# The other three aliases this loop used to create (main.js, highlight.css,
+# theme-init.js) were dead: postbuild rewrites every reference to the
+# fingerprinted name via _FP_ASSET_MAP, and theme-init is inlined into the
+# head outright. Measured on the built tree: /main.js, /highlight.css and
+# /theme-init.js are referenced by 0 of 6,856 pages, while /sw.js is
+# referenced by all of them. Shipping the unreferenced copies also cost them
+# `cache-control: max-age=0, must-revalidate` — the opposite of the immutable
+# caching the fingerprinted originals get. The comment here previously
+# asserted all four were needed, which is what kept them alive.
+for f in public/sw.*.js; do
   [[ -f "$f" ]] || continue
   base=$(basename "$f")
   short="${base%%.*}.${base##*.}"
@@ -302,6 +384,12 @@ python3 scripts/seo_and_audit/build_rag_corpus.py
 # French homepage instead of the French translation of that article.
 # Must run after build_translations.py + postbuild.py have finalised
 # every page's hreflang head links.
+# Delete the ~7,400 per-directory sitemap / news-sitemap copies ssg scatters
+# through public/ (17 MB of the deploy artifact, full of malformed
+# double-slash URLs). They are crawlable: /fr/news-sitemap.xml was served in
+# production as one of these stale copies. Runs after every sitemap writer so
+# the legitimate root + per-locale files survive. Idempotent.
+python3 scripts/postbuild/prune_duplicate_sitemaps.py
 python3 scripts/postbuild/fix_lang_switcher.py
 # Sigstore signing pass — no-op unless _data/sigstore/config.json exists
 # (the cosign private key is machine-local, never in CI). Always mirror
@@ -330,6 +418,14 @@ python3 tests/validation/test_jsonld_localized.py
 python3 tests/validation/test_sitemap_completeness.py
 python3 tests/validation/test_lang_no_leakage.py
 python3 tests/validation/test_rtl_safe.py --strict
+# Locale slug policy (ADR-0012): every locale localises its article slugs.
+# Ratcheted — fails only when a locale goes backwards against the recorded
+# baseline, and prints the remaining backlog every run.
+python3 tests/validation/test_slug_policy.py
+# The two WCAG 2.2 criteria ssg classifies as "manual" are decidable by
+# measurement here (2.5.7 has nothing to apply to; 3.2.6 is a footer link on
+# every page). Gated so they cannot silently regress into being manual again.
+python3 tests/validation/test_wcag_manual_criteria.py
 python3 tests/validation/test_csp_strict.py
 python3 tests/validation/test_sri_integrity.py
 python3 tests/validation/test_meta_description_clean.py

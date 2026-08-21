@@ -585,3 +585,277 @@ def inject_software_source_code(page: Path, html: str) -> str:
         return html
     block = f'<script type="application/ld+json">{payload}</script>'
     return re.sub(r"(?i)</body>", block + "</body>", html, count=1)
+
+
+# ---------------------------------------------------------------------------
+# Article identity — one page, one entity
+# ---------------------------------------------------------------------------
+#
+# A dated post carried two Article-family nodes that disagreed about which
+# URL they described:
+#
+#   <link rel="canonical">        .../2026-08-04-slug/     (trailing slash)
+#   BlogPosting.url               .../2026-08-04-slug      (ssg, no slash)
+#   BlogPosting.mainEntityOfPage  .../2026-08-04-slug      (no slash)
+#   TechArticle.mainEntityOfPage  .../2026-08-04-slug/     (slash)
+#
+# Search engines treat the slashed and unslashed forms as distinct URLs, so
+# the richer of the two nodes described a URL that was not the canonical one,
+# and the page presented two competing article entities instead of one.
+# Agreeing on `mainEntityOfPage` is what merges them: same @id, same entity.
+#
+# Two smaller inconsistencies on the same nodes are fixed here too, because
+# they have the same cause (each writer minted its own value):
+#   * inLanguage was "en" on BlogPosting and "en-GB" on TechArticle;
+#   * dateModified was date-only ("2026-08-04") while datePublished was a
+#     full ISO-8601 timestamp.
+#
+# Pure (html) -> html and idempotent: a second pass is a no-op.
+
+_ARTICLE_FAMILY = (
+    "Article",
+    "BlogPosting",
+    "NewsArticle",
+    "ScholarlyArticle",
+    "TechArticle",
+    "Report",
+)
+_DATE_ONLY_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+_LDJSON_BLOCK_RE = re.compile(
+    r'(<script[^>]*type="application/ld\+json"[^>]*>)(.*?)(</script>)',
+    re.IGNORECASE | re.DOTALL,
+)
+
+
+def _is_article_node(node: object) -> bool:
+    if not isinstance(node, dict):
+        return False
+    raw = node.get("@type", "")
+    types = raw if isinstance(raw, list) else [raw]
+    return any(str(t) in _ARTICLE_FAMILY for t in types)
+
+
+def _align_main_entity(node: dict, canonical: str) -> bool:
+    meop = node.get("mainEntityOfPage")
+    if isinstance(meop, dict):
+        if meop.get("@id") == canonical:
+            return False
+        meop["@id"] = canonical
+        return True
+    if isinstance(meop, str) and meop != canonical:
+        node["mainEntityOfPage"] = {"@type": "WebPage", "@id": canonical}
+        return True
+    return False
+
+
+def _align_dates(node: dict) -> bool:
+    """Give a date-only ``dateModified`` the same shape as ``datePublished``
+    so the two are comparable — it shipped as "2026-08-04" beside a full
+    ISO-8601 ``datePublished``."""
+    modified = node.get("dateModified")
+    if not isinstance(modified, str) or not _DATE_ONLY_RE.match(modified):
+        return False
+    published = node.get("datePublished")
+    suffix = "T00:00:00+00:00"
+    if isinstance(published, str) and "T" in published:
+        suffix = "T" + published.split("T", 1)[1]
+    node["dateModified"] = modified + suffix
+    return True
+
+
+def _align_node(node: dict, canonical: str, lang: str) -> bool:
+    """Point one Article node at *canonical* and normalise its language and
+    dateModified. Returns True when anything changed."""
+    changed = False
+    if node.get("url") != canonical:
+        node["url"] = canonical
+        changed = True
+    changed |= _align_main_entity(node, canonical)
+    if "inLanguage" in node and node["inLanguage"] != lang:
+        node["inLanguage"] = lang
+        changed = True
+    changed |= _align_dates(node)
+    return changed
+
+
+def _walk_align(data: object, canonical: str, lang: str) -> bool:
+    changed = False
+    if isinstance(data, dict):
+        if _is_article_node(data):
+            changed |= _align_node(data, canonical, lang)
+        for value in data.values():
+            changed |= _walk_align(value, canonical, lang)
+    elif isinstance(data, list):
+        for item in data:
+            changed |= _walk_align(item, canonical, lang)
+    return changed
+
+
+def align_article_identity(html: str) -> str:
+    """Bind every Article-family JSON-LD node on the page to the canonical URL.
+
+    No-op when the page has no canonical link or no Article node, so listing,
+    topic and identity-only pages pass through untouched."""
+    canon_m = _canonical_re.search(html)
+    if not canon_m:
+        return html
+    canonical = _html.unescape(canon_m.group(1))
+    lang = _page_lang(html)
+
+    def _patch(m: re.Match[str]) -> str:
+        body = m.group(2)
+        try:
+            data = _json.loads(body)
+        except ValueError:
+            return m.group(0)
+        if not _walk_align(data, canonical, lang):
+            return m.group(0)
+        # Match the separator style the block already uses so a rebuild of an
+        # untouched page stays byte-identical.
+        separators = (",", ":") if '", "' not in body[:200] else (", ", ": ")
+        return m.group(1) + _json.dumps(data, separators=separators, ensure_ascii=False) + m.group(3)
+
+    return _LDJSON_BLOCK_RE.sub(_patch, html)
+
+
+# ---------------------------------------------------------------------------
+# FAQPage — mark up the answers that are already written
+# ---------------------------------------------------------------------------
+#
+# Articles carry a real "Frequently Asked Questions" section with genuine
+# question-and-answer prose, and none of it was ever expressed as structured
+# data. Google retired FAQ rich results for most sites, so this is not about
+# the classic SERP payoff; explicit Question/Answer entities are the cleanest
+# signal available to a retrieval system about which span of text answers
+# which question, and answer-block extractability is what AI answer engines
+# select on.
+#
+# Three renderings of the same section exist in the tree and all are handled:
+#
+#   1. <p><strong>Q?</strong><br />A</p>          — what dated articles ship
+#   2. <p><strong>Q?</strong></p><p>A</p>         — the shape _convert_faq_to_qa
+#                                                   expects (it never matched 1)
+#   3. <details class="qa-item"><summary class="qa-q">Q</summary>
+#        <div class="qa-a">A</div></details>      — /projects/, /papers/
+#
+# Only the FAQ section is read: matching starts at the FAQ <h2> and stops at
+# the next <h2> or the end of the article, so a bolded lead-in elsewhere in
+# the body can never be mistaken for a question.
+
+_FAQ_HEADING_RE = re.compile(
+    r'<h2\b[^>]*\bid="(?:frequently-asked-questions|faq|questions?)"[^>]*>.*?</h2>',
+    re.IGNORECASE | re.DOTALL,
+)
+_NEXT_H2_RE = re.compile(r"<h2\b", re.IGNORECASE)
+_TAG_STRIP_RE = re.compile(r"<[^>]+>")
+_WS_COLLAPSE_RE = re.compile(r"\s+")
+
+# 1 + 2: a <p> opening with <strong>…</strong>. The remainder of that <p> is
+# the answer when non-empty (shape 1); otherwise the following <p>s are
+# (shape 2).
+_FAQ_P_RE = re.compile(
+    r"<p\b[^>]*>\s*<strong>(?P<q>.*?)</strong>\s*(?:<br\s*/?>)?(?P<a>.*?)</p>",
+    re.IGNORECASE | re.DOTALL,
+)
+_PLAIN_P_RE = re.compile(r"<p\b[^>]*>(?P<a>.*?)</p>", re.IGNORECASE | re.DOTALL)
+# 3: the collapsible rendering.
+_FAQ_DETAILS_RE = re.compile(
+    r'<details\b[^>]*class="[^"]*qa-item[^"]*"[^>]*>\s*'
+    r'<summary\b[^>]*>(?P<q>.*?)</summary>\s*'
+    r'<div\b[^>]*class="[^"]*qa-a[^"]*"[^>]*>(?P<a>.*?)</div>\s*</details>',
+    re.IGNORECASE | re.DOTALL,
+)
+
+# Below this an "answer" is a stray bold run, not prose.
+_MIN_ANSWER_CHARS = 20
+
+
+def _plain_text(fragment: str) -> str:
+    return _WS_COLLAPSE_RE.sub(" ", _html.unescape(_TAG_STRIP_RE.sub(" ", fragment))).strip()
+
+
+def _faq_section(html: str) -> str | None:
+    """The FAQ section body: from its <h2> to the next <h2> (or end)."""
+    heading = _FAQ_HEADING_RE.search(html)
+    if not heading:
+        return None
+    rest = html[heading.end() :]
+    nxt = _NEXT_H2_RE.search(rest)
+    return rest[: nxt.start()] if nxt else rest
+
+
+def _pairs_from_details(section: str) -> list[tuple[str, str]]:
+    """Shape 3: the collapsible <details class="qa-item"> rendering."""
+    pairs: list[tuple[str, str]] = []
+    for m in _FAQ_DETAILS_RE.finditer(section):
+        q, a = _plain_text(m.group("q")), _plain_text(m.group("a"))
+        if q and len(a) >= _MIN_ANSWER_CHARS:
+            pairs.append((q, a))
+    return pairs
+
+
+def _following_paragraphs(tail: str) -> str:
+    """Shape 2: the answer is the plain <p>s after the question paragraph,
+    up to the next question."""
+    chunks: list[str] = []
+    for pm in _PLAIN_P_RE.finditer(tail):
+        body = pm.group("a")
+        if re.match(r"\s*<strong>", body, re.IGNORECASE):
+            break
+        chunks.append(_plain_text(body))
+        if len(chunks) >= 4:
+            break
+    return " ".join(c for c in chunks if c).strip()
+
+
+def _pairs_from_paragraphs(section: str) -> list[tuple[str, str]]:
+    """Shapes 1 and 2: <p><strong>Q?</strong><br />A</p> and
+    <p><strong>Q?</strong></p><p>A</p>."""
+    pairs: list[tuple[str, str]] = []
+    for m in _FAQ_P_RE.finditer(section):
+        question = _plain_text(m.group("q"))
+        answer = _plain_text(m.group("a")) or _following_paragraphs(section[m.end() :])
+        if question and len(answer) >= _MIN_ANSWER_CHARS:
+            pairs.append((question, answer))
+    return pairs
+
+
+def _extract_qa_pairs(section: str) -> list[tuple[str, str]]:
+    return _pairs_from_details(section) or _pairs_from_paragraphs(section)
+
+
+def inject_faq_schema(page: Path, html: str) -> str:
+    """Emit ``FAQPage`` JSON-LD for a page whose FAQ section has real Q&A.
+
+    Idempotent — a page that already carries a FAQPage node is left alone.
+    No-op when there is no FAQ section or no pair clears the minimum answer
+    length, so listing and identity-only pages pass through untouched."""
+    if "FAQPage" in html:
+        return html
+    section = _faq_section(html)
+    if not section:
+        return html
+    pairs = _extract_qa_pairs(section)
+    if not pairs:
+        return html
+    canon_m = _canonical_re.search(html)
+    base = _html.unescape(canon_m.group(1)) if canon_m else ""
+    graph: dict[str, object] = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": _page_lang(html),
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": q,
+                "acceptedAnswer": {"@type": "Answer", "text": a},
+            }
+            for q, a in pairs
+        ],
+    }
+    if base:
+        graph["@id"] = base.rstrip("/") + "/#faq"
+        graph["isPartOf"] = {"@id": base}
+    payload = _json.dumps(graph, separators=(",", ":"), ensure_ascii=False)
+    block = f'<script type="application/ld+json">{payload}</script>'
+    return re.sub(r"(?i)</body>", block + "</body>", html, count=1)

@@ -1,0 +1,71 @@
+name: Set up ssg
+description: >-
+  Install a specific (or the latest) ssg release and assert the binary that
+  ends up on PATH is the one that was asked for.
+
+inputs:
+  version:
+    description: >-
+      An exact version ("0.0.53") or "latest" to resolve the newest stable
+      release from crates.io.
+    required: false
+    default: latest
+
+outputs:
+  version:
+    description: The exact version that is installed and on PATH.
+    value: ${{ steps.setup.outputs.version }}
+
+runs:
+  using: composite
+  steps:
+    - id: setup
+      shell: bash
+      run: |
+        set -euo pipefail
+
+        # One definition, used by every workflow. This logic previously lived
+        # in six copies across five workflows; when build.sh started passing
+        # --no-tag-pages (ssg >= 0.0.52) only one copy was updated, so four
+        # jobs failed in three different ways at once — "could not resolve
+        # latest ssg", "invalid value 'latest'", and "unexpected argument
+        # '--no-tag-pages'". Copies drift; a single action cannot.
+        want='${{ inputs.version }}'
+
+        if [ "${want}" = "latest" ]; then
+          # crates.io's API, not `cargo search`. Search is a fuzzy,
+          # rate-limited endpoint whose output is not a stable contract —
+          # it returned nothing in CI and took the build down, while working
+          # locally. This endpoint answers exactly one question and is what
+          # ssg-version-check.yml already uses.
+          want="$(curl -fsSL --retry 3 --retry-delay 2 \
+            --user-agent 'sebastienrousseau.github.io setup-ssg' \
+            https://crates.io/api/v1/crates/ssg \
+            | jq -r '.crate.max_stable_version // .crate.max_version')"
+        fi
+
+        case "${want}" in
+          [0-9]*.[0-9]*.[0-9]*) ;;
+          *)
+            echo "::error::could not resolve an ssg version (got '${want:-empty}')"
+            exit 1
+            ;;
+        esac
+
+        # `command -v ssg` is not a version check: ~/.cargo/bin is restored
+        # from the cargo cache, so a stale binary satisfies it and the pin
+        # silently never applies. Compare, reinstall on mismatch, then assert.
+        have="$(ssg --version 2>/dev/null | awk '{print $2}' || true)"
+        if [ "${have:-}" != "${want}" ]; then
+          echo "ssg: have '${have:-none}', want ${want} — installing"
+          cargo install ssg --locked --version "${want}" --force
+        fi
+
+        got="$(ssg --version | awk '{print $2}')"
+        if [ "${got}" != "${want}" ]; then
+          echo "::error::ssg ${got} is on PATH but ${want} was requested"
+          exit 1
+        fi
+
+        echo "ssg ${got}"
+        echo "version=${got}" >> "$GITHUB_OUTPUT"

@@ -339,11 +339,40 @@ def test_sitemap_has_entries():
 
 
 @SKIP_IF_NO_BUILD
-def test_main_js_alias_exists():
-    fps = list(PUBLIC.glob("main.*.js"))
-    assert fps, "no fingerprinted /main.<hash>.js in public/"
-    # The bare alias /main.js is also kept around for legacy refs.
-    assert (PUBLIC / "main.js").is_file(), "/main.js alias missing"
+def test_fingerprinted_main_js_exists():
+    assert list(PUBLIC.glob("main.*.js")), "no fingerprinted /main.<hash>.js in public/"
+
+
+@SKIP_IF_NO_BUILD
+def test_service_worker_keeps_its_stable_alias():
+    """sw.js is the ONE asset that must keep an unfingerprinted URL.
+
+    A service worker's scope is bound to the path it is registered from, so a
+    fingerprinted worker would orphan its own registration on every deploy.
+    main.js registers it at /sw.js and every page's speculation-rules block
+    excludes that exact path.
+    """
+    assert list(PUBLIC.glob("sw.*.js")), "no fingerprinted /sw.<hash>.js in public/"
+    assert (PUBLIC / "sw.js").is_file(), "/sw.js alias missing — SW registration would break"
+
+
+@SKIP_IF_NO_BUILD
+def test_dead_asset_aliases_are_not_shipped():
+    """The /main.js and /highlight.css aliases were referenced by 0 of 6,856
+    pages — postbuild rewrites every reference to the fingerprinted name — yet
+    shipped anyway, and with `max-age=0, must-revalidate` rather than the
+    immutable caching their fingerprinted originals get. Pinned so the alias
+    loop in build.sh cannot quietly start recreating them.
+
+    /theme-init.js is deliberately NOT in this list. It is also unreferenced
+    (postbuild inlines it into the head, CSP-hashed) but build.sh copies it
+    explicitly, and keeping the file costs 270 bytes while protecting any
+    cached page still pointing at it.
+    """
+    for dead in ("main.js", "highlight.css"):
+        assert not (PUBLIC / dead).exists(), (
+            f"/{dead} is shipped but referenced by no page — see build.sh"
+        )
 
 
 @SKIP_IF_NO_BUILD

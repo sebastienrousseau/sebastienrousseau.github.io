@@ -174,3 +174,63 @@ html:lang(te) {
   --type-body: "Noto Sans Telugu", "Inter", "Inter Fallback", "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   --type-display: "Noto Sans Telugu", "Newsreader", "Newsreader Fallback", Georgia, Cambria, "Times New Roman", Times, serif;
 }
+
+/* --- Non-Latin scripts without a bundled webfont ---------------------------
+ *
+ * Tamil and Telugu above ship a subsetted Noto face because no platform can
+ * be relied on to have one. The other non-Latin locales the site publishes —
+ * Arabic, Hebrew, Devanagari (hi, mr), Bengali, Thai, Greek, Japanese,
+ * Korean and both Chinese scripts — deliberately do NOT get a webfont: the
+ * system faces are excellent, and a CJK subset is megabytes.
+ *
+ * They were, however, left on the Latin stack, whose first entries (Inter,
+ * Newsreader) carry none of their glyphs. Rendering then depended entirely
+ * on the browser's last-resort fallback, which differs per platform and is
+ * not something the design can reason about. Naming the platform faces
+ * explicitly makes rendering predictable without downloading anything.
+ *
+ * There is no CLS exposure here either way: no webfont is fetched for these
+ * scripts, so there is no swap to shift the layout. This is about which face
+ * renders, not about when.
+ *
+ * Greek and Cyrillic are covered by Inter/Newsreader's own coverage where the
+ * subset allows, so el/ru/uk keep the Latin stack and are not listed. */
+
+html:lang(ar),
+html:lang(fa) {
+  --type-body: "SF Arabic", "Geeza Pro", "Segoe UI", Tahoma, "Noto Sans Arabic", "Arabic Typesetting", sans-serif;
+  --type-display: "SF Arabic", "Geeza Pro", "Noto Naskh Arabic", "Times New Roman", serif;
+}
+html:lang(he) {
+  --type-body: "SF Hebrew", "Arial Hebrew", "Segoe UI", "Noto Sans Hebrew", Arial, sans-serif;
+  --type-display: "SF Hebrew", "New Peninim MT", "Noto Serif Hebrew", Georgia, serif;
+}
+html:lang(hi),
+html:lang(mr) {
+  --type-body: "Kohinoor Devanagari", "Devanagari Sangam MN", "Nirmala UI", "Noto Sans Devanagari", sans-serif;
+  --type-display: "Devanagari MT", "Noto Serif Devanagari", Georgia, serif;
+}
+html:lang(bn) {
+  --type-body: "Bangla Sangam MN", "Nirmala UI", "Noto Sans Bengali", sans-serif;
+  --type-display: "Bangla MN", "Noto Serif Bengali", Georgia, serif;
+}
+html:lang(th) {
+  --type-body: "Thonburi", "Leelawadee UI", "Noto Sans Thai", sans-serif;
+  --type-display: "Thonburi", "Noto Serif Thai", Georgia, serif;
+}
+html:lang(ja) {
+  --type-body: "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", "MS PGothic", sans-serif;
+  --type-display: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+}
+html:lang(ko) {
+  --type-body: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  --type-display: "AppleMyungjo", "Batang", "Noto Serif KR", serif;
+}
+html:lang(zh-hans) {
+  --type-body: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --type-display: "Songti SC", "SimSun", "Noto Serif SC", serif;
+}
+html:lang(zh-hant) {
+  --type-body: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+  --type-display: "Songti TC", "PMingLiU", "Noto Serif TC", serif;
+}

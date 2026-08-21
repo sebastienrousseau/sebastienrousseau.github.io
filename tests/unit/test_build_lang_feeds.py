@@ -15,16 +15,36 @@ import build_lang_feeds as blf
 
 
 def test_parse_frontmatter_quoted_values() -> None:
-    # _FM_KEY_RE is quoted-only (real frontmatter always quotes values).
     fm = blf.parse_frontmatter('---\ntitle: "Hello"\ndate: "2026-06-29"\nx: \'sq\'\n---\nbody\n')
     assert fm["title"] == "Hello"
     assert fm["date"] == "2026-06-29"
     assert fm["x"] == "sq"  # single-quoted captured too
 
 
-def test_parse_frontmatter_ignores_bare_values() -> None:
-    fm = blf.parse_frontmatter('---\ntitle: "T"\nbare: unquoted\n---\n')
-    assert "bare" not in fm  # only quoted values are captured
+def test_parse_frontmatter_stops_at_the_closing_delimiter() -> None:
+    """The contract that matters: body content never leaks into the dict."""
+    fm = blf.parse_frontmatter('---\ntitle: "T"\n---\nbody\nsneaky: "value"\n')
+    assert fm == {"title": "T"}
+
+
+def test_parse_frontmatter_captures_hyphenated_and_bare_keys() -> None:
+    """This module now delegates to scripts/lib/_frontmatter rather than
+    carrying its own regex. The old local pattern accepted only
+    ``[a-zA-Z_]`` keys with quoted values, so it silently dropped real
+    front-matter keys — ``format-detection``, ``apple-mobile-web-app-title``
+    and friends are present on every post and were never seen.
+
+    Verified safe before switching: differential-tested over all 240 posts,
+    zero value mismatches on shared keys (the shared parser is a strict
+    superset), and every consumer reads named keys via ``fm.get(...)`` rather
+    than iterating, so the recovered keys are inert here.
+    """
+    fm = blf.parse_frontmatter(
+        '---\ntitle: "T"\nformat-detection: "telephone=no"\nbare: unquoted\n---\n'
+    )
+    assert fm["title"] == "T"
+    assert fm["format-detection"] == "telephone=no"
+    assert fm["bare"] == "unquoted"
 
 
 # --- date parsing ----------------------------------------------------------

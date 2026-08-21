@@ -97,27 +97,36 @@ def pick(
     if not candidates:
         return None
     rng = rng or random.Random()  # noqa: S311 — banner picker, not crypto
-    if hints:
-        scored = sorted(
-            ((score_candidate(n, hints), n) for n in candidates),
-            key=lambda t: (-t[0], t[1]),
-        )
-        top_score = scored[0][0]
-        if top_score > 0:
-            tier = [n for s, n in scored if s == top_score]
-            return rng.choice(tier)
-    return rng.choice(candidates)
+    return _hint_biased_pick(candidates, hints, rng) or rng.choice(candidates)
+
+
+def _hint_biased_pick(candidates: list[str], hints: list[str], rng: random.Random) -> str | None:
+    """One of the best-scoring candidates, or ``None`` when no hint matched.
+
+    Ties are broken randomly rather than by name so repeat runs with the
+    same hints don't keep handing back the same banner.
+    """
+    if not hints:
+        return None
+    scored = sorted(
+        ((score_candidate(n, hints), n) for n in candidates),
+        key=lambda t: (-t[0], t[1]),
+    )
+    top_score = scored[0][0]
+    if top_score <= 0:
+        return None
+    return rng.choice([n for s, n in scored if s == top_score])
 
 
 def transform_url(name: str, *, width: int = 1200, q: int = 80) -> str:
     """Emit the CloudCDN transform URL for a stock image."""
     return (
-        "https://cloudcdn.pro/api/transform"
-        f"?url=/stocks/images/{name}&w={width}&format=webp&q={q}"
+        f"https://cloudcdn.pro/api/transform?url=/stocks/images/{name}&w={width}&format=webp&q={q}"
     )
 
 
-def main() -> int:
+def _build_parser() -> argparse.ArgumentParser:
+    """CLI surface — see the module docstring for the contract."""
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument(
         "--hint",
@@ -141,39 +150,52 @@ def main() -> int:
     p.add_argument(
         "--seed", type=int, default=None, help="deterministic picker for reproducible tests"
     )
-    args = p.parse_args()
+    return p
 
+
+def _cmd_check(name: str, inv: list[str], used: set[str], args: argparse.Namespace) -> int:
+    """``--check NAME``: confirm NAME is in inventory and not already a banner."""
+    if name not in inv:
+        print(f"pick_banner: {name} not in inventory", file=sys.stderr)
+        return 1
+    if name in used:
+        print(f"pick_banner: {name} already used as a banner", file=sys.stderr)
+        return 1
+    print(transform_url(name, width=args.width, q=args.quality))
+    return 0
+
+
+def _cmd_list(inv: list[str], used: set[str], limit: int) -> int:
+    """``--list N``: print up to N unused inventory names, one per line."""
+    for n in [n for n in inv if n not in used][:limit]:
+        print(n)
+    return 0
+
+
+def _cmd_pick(inv: list[str], used: set[str], args: argparse.Namespace) -> int:
+    """Default command: pick one unused banner and print its transform URL."""
+    rng = random.Random(args.seed) if args.seed is not None else None  # noqa: S311
+    hints = [h.strip() for h in args.hint.split(",") if h.strip()]
+    name = pick(inv, used, hints, rng=rng)
+    if not name:
+        print("pick_banner: no unused inventory image found", file=sys.stderr)
+        return 1
+    print(transform_url(name, width=args.width, q=args.quality))
+    return 0
+
+
+def main() -> int:
+    args = _build_parser().parse_args()
     inv = collect_inventory(args.inventory)
     if not inv:
         print(f"pick_banner: empty inventory at {args.inventory}", file=sys.stderr)
         return 1
     used = collect_used_banners(ROOT / "_posts")
-    rng = random.Random(args.seed) if args.seed is not None else None  # noqa: S311
-
     if args.check:
-        name = args.check
-        if name not in inv:
-            print(f"pick_banner: {name} not in inventory", file=sys.stderr)
-            return 1
-        if name in used:
-            print(f"pick_banner: {name} already used as a banner", file=sys.stderr)
-            return 1
-        print(transform_url(name, width=args.width, q=args.quality))
-        return 0
-
+        return _cmd_check(args.check, inv, used, args)
     if args.list:
-        candidates = [n for n in inv if n not in used]
-        for n in candidates[: args.list]:
-            print(n)
-        return 0
-
-    hints = [h.strip() for h in args.hint.split(",") if h.strip()]
-    pick_name = pick(inv, used, hints, rng=rng)
-    if not pick_name:
-        print("pick_banner: no unused inventory image found", file=sys.stderr)
-        return 1
-    print(transform_url(pick_name, width=args.width, q=args.quality))
-    return 0
+        return _cmd_list(inv, used, args.list)
+    return _cmd_pick(inv, used, args)
 
 
 if __name__ == "__main__":

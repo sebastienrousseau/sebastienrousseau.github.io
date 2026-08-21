@@ -159,7 +159,13 @@ INFERENCE_RULES = {
         r"\btokenized\s*deposits\b",
         r"\bdeposit\s*tokens\b",
     ],
-    "Rust": [r"\brust\b", r"\bcargo\b", r"\bstatic-site-generator\b", r"\blibmake\b", r"\brustlogs\b"],
+    "Rust": [
+        r"\brust\b",
+        r"\bcargo\b",
+        r"\bstatic-site-generator\b",
+        r"\blibmake\b",
+        r"\brustlogs\b",
+    ],
     "open source": [r"\bopen\s*source\b", r"\bopen-source\b", r"\boss\b"],
     "platform engineering": [
         r"\bplatform\s*engineering\b",
@@ -300,74 +306,81 @@ def get_english_drafts() -> list[str]:
     ]
 
 
+def _declared_tags(fm_dict: dict[str, str]) -> list[str]:
+    """The comma-separated ``tags:`` field, split and stripped."""
+    return [t.strip() for t in fm_dict.get("tags", "").split(",") if t.strip()]
+
+
+def _optimise_english(path: Path, label: str) -> tuple[list[str], int]:
+    """Clean + infer tags for one English file; return them and 1 if written.
+
+    The returned tag list is what locale copies get propagated from, so it is
+    returned even when the file was already correct and nothing was written.
+    """
+    fm_dict, _, body = extract_frontmatter_and_content(path)
+    current = _declared_tags(fm_dict)
+    search_text = f"{fm_dict.get('title', '')} {fm_dict.get('description', '')} {body}"
+    final_tags = infer_tags(search_text, clean_tags(current))
+    if final_tags != current and update_tags_in_file(path, final_tags):
+        print(f"Optimized {label} -> tags: {final_tags}")
+        return final_tags, 1
+    return final_tags, 0
+
+
+def _propagate_to_locale(
+    post: str, lang: str, final_tags: list[str], translations: dict[str, dict[str, str]]
+) -> int:
+    """Mirror the English tags into one locale copy; 1 if it was rewritten."""
+    lang_post_path = POSTS_DIR / lang / post
+    if not lang_post_path.is_file():
+        return 0
+    lang_fm, _, _ = extract_frontmatter_and_content(lang_post_path)
+    expected = clean_tags([translate_tag(t, lang, translations) for t in final_tags])
+    if expected != _declared_tags(lang_fm) and update_tags_in_file(lang_post_path, expected):
+        print(f"Propagated tags to {lang}: {post} -> {expected}")
+        return 1
+    return 0
+
+
 def process_single_post(
     post: str, langs: list[str], translations: dict[str, dict[str, str]]
 ) -> int:
     """Process a single post (English + all translations) and return updated count."""
-    path = POSTS_DIR / post
-    fm_dict, _, body = extract_frontmatter_and_content(path)
-    current_tags = [t.strip() for t in fm_dict.get("tags", "").split(",") if t.strip()]
+    final_tags, updated = _optimise_english(POSTS_DIR / post, f"EN post: {post}")
+    return updated + sum(
+        _propagate_to_locale(post, lang, final_tags, translations) for lang in langs
+    )
 
-    cleaned = clean_tags(current_tags)
-    search_text = f"{fm_dict.get('title', '')} {fm_dict.get('description', '')} {body}"
-    final_tags = infer_tags(search_text, cleaned)
 
-    updated_count = 0
-    if final_tags != current_tags and update_tags_in_file(path, final_tags):
-        print(f"Optimized EN post: {post} -> tags: {final_tags}")
-        updated_count += 1
-
-    for lang in langs:
-        lang_post_path = POSTS_DIR / lang / post
-        if lang_post_path.is_file():
-            lang_fm, _, _ = extract_frontmatter_and_content(lang_post_path)
-            lang_tags = [t.strip() for t in lang_fm.get("tags", "").split(",") if t.strip()]
-            expected_lang_tags = clean_tags(
-                [translate_tag(t, lang, translations) for t in final_tags]
-            )
-
-            if expected_lang_tags != lang_tags and update_tags_in_file(
-                lang_post_path, expected_lang_tags
-            ):
-                print(f"Propagated tags to {lang}: {post} -> {expected_lang_tags}")
-                updated_count += 1
-    return updated_count
+def _optimise_tags_page() -> None:
+    """Keep the ``_posts/tags.md`` index title on the canonical wording."""
+    tags_md_path = POSTS_DIR / "tags.md"
+    if not tags_md_path.is_file():
+        return
+    content = tags_md_path.read_text(encoding="utf-8")
+    new_title = "Tags Index: AI, Payments & Rust OSS - Sebastien Rousseau"
+    title_pattern = re.compile(r'^title:\s*"[^"]*"\s*$', re.MULTILINE)
+    if title_pattern.search(content):
+        content = title_pattern.sub(f'title: "{new_title}"', content, count=1)
+    tags_md_path.write_text(content, encoding="utf-8")
+    print("Optimized tags.md title.")
 
 
 def main():
     translations = load_translations()
     print(f"Loaded {len(translations)} tag translations.")
 
-    english_posts = get_english_posts()
-    english_drafts = get_english_drafts()
     langs = [d for d in os.listdir(POSTS_DIR) if (POSTS_DIR / d).is_dir() and d != "__pycache__"]
 
-    updated_count = sum(process_single_post(post, langs, translations) for post in english_posts)
+    updated_count = sum(
+        process_single_post(post, langs, translations) for post in get_english_posts()
+    )
+    updated_count += sum(
+        _optimise_english(DRAFTS_DIR / draft, f"EN draft: {draft}")[1]
+        for draft in get_english_drafts()
+    )
 
-    # Process English drafts
-    for draft in english_drafts:
-        path = DRAFTS_DIR / draft
-        fm_dict, _, body = extract_frontmatter_and_content(path)
-        current_tags = [t.strip() for t in fm_dict.get("tags", "").split(",") if t.strip()]
-
-        cleaned = clean_tags(current_tags)
-        search_text = f"{fm_dict.get('title', '')} {fm_dict.get('description', '')} {body}"
-        final_tags = infer_tags(search_text, cleaned)
-
-        if final_tags != current_tags and update_tags_in_file(path, final_tags):
-            print(f"Optimized EN draft: {draft} -> tags: {final_tags}")
-            updated_count += 1
-
-    # Finally, optimize the main tags page: _posts/tags.md
-    tags_md_path = POSTS_DIR / "tags.md"
-    if tags_md_path.is_file():
-        tags_md_content = tags_md_path.read_text(encoding="utf-8")
-        new_title = "Tags Index: AI, Payments & Rust OSS - Sebastien Rousseau"
-        title_pattern = re.compile(r'^title:\s*"[^"]*"\s*$', re.MULTILINE)
-        if title_pattern.search(tags_md_content):
-            tags_md_content = title_pattern.sub(f'title: "{new_title}"', tags_md_content, count=1)
-        tags_md_path.write_text(tags_md_content, encoding="utf-8")
-        print("Optimized tags.md title.")
+    _optimise_tags_page()
 
     print(f"Successfully processed all posts. Total tag fields updated: {updated_count}")
     sys.exit(0)

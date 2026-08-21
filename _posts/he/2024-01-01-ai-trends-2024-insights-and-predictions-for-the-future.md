@@ -3,7 +3,7 @@ title: "מגמות בינה מלאכותית 2024: תובנות ותחזיות �
 tags: "AI, 2024, Trends, generative AI, cybersecurity, Education, Retail, Ethics, Analytics, Innovation, ISO 20022, קריפטוגרפיה פוסט-קוונטית, מחשוב קוונטי, open source, Rust"
 subtitle: "שנה מכרעת לטכנולוגיה, לחברה ולהתפתחות האתית"
 description: "מגמות בינה מלאכותית לשנת 2024: בינה מלאכותית יוצרת במימון, מודלים רב-מודאליים, מודלי שפה על המכשיר והשינויים שיעצבו מחדש את הבנקאות והנדסת המוצר."
-date: "Jan 08, 2024"
+date: "January 1, 2024"
 language: "he-IL"
 locale: "he_IL"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"

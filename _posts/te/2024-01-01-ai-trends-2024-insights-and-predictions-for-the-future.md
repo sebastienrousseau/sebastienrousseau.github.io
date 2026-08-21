@@ -3,7 +3,7 @@ title: "AI ట్రెండ్‌లు 2024: భవిష్యత్తు �
 tags: "AI, 2024, Trends, generative AI, cybersecurity, Education, Retail, Ethics, Analytics, Innovation, ISO 20022, post-quantum cryptography, quantum computing, open source, Rust"
 subtitle: "సాంకేతికత, సమాజం మరియు నైతిక పరిణామానికి కీలకమైన సంవత్సరం"
 description: "2024 కోసం AI ట్రెండ్‌లు: ఫైనాన్స్‌లో జనరేటివ్ AI, మల్టీమోడల్ మోడల్‌లు, ఆన్-డివైస్ LLMలు మరియు బ్యాంకింగ్ మరియు ప్రొడక్ట్ ఇంజనీరింగ్‌ను పునర్నిర్మించే మార్పులు."
-date: "Jan 08, 2024"
+date: "January 1, 2024"
 language: "te"
 locale: "te_IN"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"

@@ -3,7 +3,7 @@ title: "क्वांटम अल्गोरिदम लॅटिस-आध
 tags: "quantum algorithms, cryptography, lattice problems, LWE, post-quantum cryptography, cybersecurity, research, innovation, future-proofing, ISO 20022, quantum computing, AI"
 subtitle: "लॅटिस-आधारित क्रिप्टोग्राफीसाठीचा पुढील पॉलिनॉमिअल-टाइम क्वांटम अल्गोरिदम"
 description: "यिलेई चेन यांचा नवीन पॉलिनॉमिअल-टाइम क्वांटम अल्गोरिदम लॅटिस-आधारित क्रिप्टोग्राफीला लक्ष्य करतो. CRYSTALS-Kyber यांसह पोस्ट-क्वांटम मानकांवर होणारे परिणाम."
-date: "Apr 01, 2024"
+date: "April 15, 2024"
 language: "mr"
 locale: "mr_IN"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"

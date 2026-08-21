@@ -3,7 +3,7 @@ title: "اتّجاهات الذكاء الاصطناعي 2024: رؤى وتوقّ
 tags: "AI, 2024, Trends, الذكاء الاصطناعي التوليدي، نموذج اللغة الكبير، GPT-4، محوّل، خدمات مالية، هلوسة، RAG، حوكمة الذكاء الاصطناعي، نموذج تأسيسي، fine-tuning, cybersecurity, Education, Retail, Ethics, Analytics, Innovation, ISO 20022, التشفير ما بعد الكمي, الحوسبة الكمومية, open source, Rust"
 subtitle: "عام محوري للتقنية والمجتمع والتطوّر الأخلاقي"
 description: "اتّجاهات الذكاء الاصطناعي لعام 2024: الذكاء الاصطناعي التوليدي في التمويل، النماذج متعدّدة الوسائط، النماذج اللغوية على الأجهزة، والتحوّلات التي ستُعيد تشكيل القطاع المصرفي وهندسة المنتجات."
-date: "Jan 08, 2024"
+date: "January 1, 2024"
 language: "ar"
 locale: "ar_SA"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"

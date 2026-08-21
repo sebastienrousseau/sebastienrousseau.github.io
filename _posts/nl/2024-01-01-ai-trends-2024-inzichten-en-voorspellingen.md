@@ -2,7 +2,7 @@
 title: "AI-trends 2024: inzichten en voorspellingen voor de toekomst"
 subtitle: "Een blik op de AI-doorbraken, regelgeving en toepassingen die 2024 zullen vormgeven"
 description: "Inzichten en voorspellingen voor de AI-trends die 2024 zullen vormgeven: regelgeving, multimodale modellen, on-device-AI en meer."
-date: "Jan 08, 2024"
+date: "January 1, 2024"
 language: "nl-NL"
 locale: "nl_NL"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"

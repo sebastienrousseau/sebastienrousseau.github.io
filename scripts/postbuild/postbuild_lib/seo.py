@@ -767,9 +767,11 @@ def _desc_from_jsonld(html_text: str) -> str | None:
     return generic
 
 
-def _desc_from_source(page: Path) -> str | None:
-    """Front-matter description for the EN home page — the only page whose
-    JSON-LD carries no description."""
+def _home_front_matter(page: Path) -> str | None:
+    """Raw front-matter text of ``_posts/index.md`` when *page* is the EN home
+    page, else ``None``. The home page is the one page carrying neither an
+    Article-family JSON-LD node nor a generator-authored description, so its
+    authored copy has to come from source."""
     try:
         rel = page.relative_to(PUBLIC).as_posix()
     except ValueError:
@@ -779,8 +781,62 @@ def _desc_from_source(page: Path) -> str | None:
     src = POSTS / "index.md"
     if not src.is_file():
         return None
-    m = _FM_DESC_RE.search(src.read_text(encoding="utf-8")[:4000])
+    return src.read_text(encoding="utf-8")[:4000]
+
+
+def _desc_from_source(page: Path) -> str | None:
+    """Front-matter description for the EN home page — the only page whose
+    JSON-LD carries no description."""
+    fm = _home_front_matter(page)
+    if fm is None:
+        return None
+    m = _FM_DESC_RE.search(fm)
     return m.group(1).strip() if m else None
+
+
+_FM_BANNER_RE = re.compile(r'^banner:\s*["\']?(\S+?)["\']?\s*$', re.MULTILINE)
+_FM_BANNER_W_RE = re.compile(r'^banner_width:\s*["\']?(\d+)["\']?\s*$', re.MULTILINE)
+_FM_BANNER_H_RE = re.compile(r'^banner_height:\s*["\']?(\d+)["\']?\s*$', re.MULTILINE)
+
+
+def fix_home_social_image(page: Path, html: str) -> str:
+    """Point the home page's social card at its authored landscape banner.
+
+    The home page uses the ``index`` layout, which emits no ``banner-src``
+    marker and no BlogPosting node, so ``fix_social_image`` left ssg's scrape
+    in place: a 1597x1597 square portrait on a ``summary_large_image`` card,
+    with no ``og:image:width``/``og:image:height`` for platforms to lay out
+    against. Every other page type sources the card from the front-matter
+    banner; do the same here. Idempotent."""
+    fm = _home_front_matter(page)
+    if fm is None:
+        return html
+    bm = _FM_BANNER_RE.search(fm)
+    if not bm or not _is_raster_banner(bm.group(1)):
+        return html
+    banner = bm.group(1)
+
+    def sub_attr(pattern: str, value: str, text: str) -> str:
+        return re.sub(pattern, lambda m: m.group(1) + f'"{value}"', text, count=1)
+
+    html = sub_attr(r'(<meta\s+property="og:image"\s+content=)"[^"]*"', banner, html)
+    html = sub_attr(r'(<meta\s+name="twitter:image"\s+content=)"[^"]*"', banner, html)
+    dims = [
+        ("og:image:width", _FM_BANNER_W_RE.search(fm)),
+        ("og:image:height", _FM_BANNER_H_RE.search(fm)),
+    ]
+    for prop, match in dims:
+        if not match:
+            continue
+        value = match.group(1)
+        pattern = rf'(<meta\s+property="{re.escape(prop)}"\s+content=)"[^"]*"'
+        if re.search(pattern, html):
+            html = sub_attr(pattern, value, html)
+        else:
+            html = _HEAD_END_RE.sub(
+                f'<meta property="{prop}" content="{value}">\n</head>', html, count=1
+            )
+    return html
 
 
 def _sanitised_scrape(html_text: str) -> str | None:
@@ -979,6 +1035,9 @@ _ARTICLE_TYPE_RE = re.compile(
 _OGTYPE_WEBSITE_RE = re.compile(
     r'(<meta\b[^>]*\bproperty="og:type"[^>]*\bcontent=")website(")', re.IGNORECASE
 )
+_OGTYPE_ARTICLE_RE = re.compile(
+    r'(<meta\b[^>]*\bproperty="og:type"[^>]*\bcontent=")article(")', re.IGNORECASE
+)
 
 
 _LDJSON_FULL_RE = re.compile(
@@ -1018,13 +1077,17 @@ def align_jsonld_inlanguage(html_text: str) -> str:
 
 
 def fix_article_og_type(html_text: str) -> str:
-    """Dated posts carry an Article-family JSON-LD block but the SSG sets
-    ``og:type=website``. Promote it to ``article`` so social + news
-    crawlers classify the page correctly. Non-article pages are untouched.
-    Idempotent."""
-    if not _ARTICLE_TYPE_RE.search(html_text):
-        return html_text
-    return _OGTYPE_WEBSITE_RE.sub(r"\1article\2", html_text, count=1)
+    """Align ``og:type`` with the page's JSON-LD.
+
+    Dated posts carry an Article-family node but the SSG may set
+    ``og:type=website``; promote those to ``article`` so social + news
+    crawlers classify them correctly. The reverse also happens — the home
+    page has no Article node yet shipped ``og:type=article``, which
+    mistypes the site's most-shared URL — so demote a page with no
+    Article-family node back to ``website``. Idempotent."""
+    if _ARTICLE_TYPE_RE.search(html_text):
+        return _OGTYPE_WEBSITE_RE.sub(r"\1article\2", html_text, count=1)
+    return _OGTYPE_ARTICLE_RE.sub(r"\1website\2", html_text, count=1)
 
 
 def _current_meta_description(html_text: str) -> str | None:
@@ -1056,24 +1119,43 @@ def clean_meta_description(page: Path, html_text: str) -> str:
     ones) are left byte-for-byte unchanged, and any single corrupted tag
     (e.g. only ``twitter:description``) is repaired. Idempotent."""
     current = _current_meta_description(html_text)
+    # An authored front-matter description outranks anything the generator
+    # scraped, however clean the scrape looks. The home page shipped
+    # og:/twitter:description scraped from its own nav chrome — "Read as…
+    # Everyone Boards Engineers Regulators What I build …" truncated
+    # mid-sentence on a comma — which passed _is_clean_desc (no markup
+    # markers) and so was never repaired. Authored copy always wins.
+    authored = _desc_from_source(page)
     raw: str | None
-    if current is not None and _is_clean_desc(current):
+    if authored:
+        raw = authored
+    elif current is not None and _is_clean_desc(current):
         raw = current
     else:
-        raw = (
-            _desc_from_jsonld(html_text) or _desc_from_source(page) or _sanitised_scrape(html_text)
-        )
+        raw = _desc_from_jsonld(html_text) or _sanitised_scrape(html_text)
     if not raw:
         return html_text
     esc = _html.escape(_html.unescape(raw), quote=True)
 
     def _fix_tag(m: re.Match[str]) -> str:
         tag = m.group(0)
-        if not _tag_is_corrupt(tag):
+        # With an authored description, every description tag is normalised
+        # onto it. Without one, only demonstrably corrupted tags are touched
+        # so generator-authored page descriptions survive byte-for-byte.
+        if not authored and not _tag_is_corrupt(tag):
             return tag
         return _CONTENT_ATTR_RE.sub(lambda mm: f"{mm.group(1)}{esc}{mm.group(2)}", tag, count=1)
 
-    return _DESC_META_RE.sub(_fix_tag, html_text)
+    out = _DESC_META_RE.sub(_fix_tag, html_text)
+
+    # A page can reach here with og:/twitter:description present but no
+    # <meta name="description"> at all — the home page did, so Google
+    # composed its own snippet for every branded query. Insert it.
+    if _current_meta_description(out) is None:
+        out = _HEAD_END_RE.sub(
+            f'<meta name="description" content="{esc}">\n</head>', out, count=1
+        )
+    return out
 
 
 # ---------------------------------------------------------------------------

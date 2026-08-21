@@ -6,6 +6,14 @@ Covers tool detection and all four code paths through main():
   - tooling usable + no _data/lead-magnets/ → no-op
   - tooling usable + sources → renders each, or surfaces pandoc errors
 
+Plus the freshness stamp that makes the build reproducible. LaTeX PDFs are
+not a pure function of their input (see the module docstring), so an
+unconditional re-render made ./build.sh non-idempotent. The stamp tests below
+pin both directions: a matching stamp must reuse the committed PDF verbatim,
+and ANY change to the source or the pandoc options must re-render. A bug in
+either direction is silent — one leaves the tree permanently dirty, the other
+ships a stale PDF forever.
+
 "Unusable" is the interesting case: a mise/asdf shim resolves on PATH but
 exits non-zero when no version is bound for the directory. Detection must
 probe the binary, not just locate it, or the fallback never fires and the
@@ -346,3 +354,170 @@ def test_main_reports_no_sources_when_dir_empty(tmp_path, monkeypatch, capsys):
     rc = blm.main()
     assert rc == 0
     assert "no markdown sources found" in capsys.readouterr().out
+
+
+# ---------------------------------------------------------------------------
+# freshness stamp / reproducibility
+# ---------------------------------------------------------------------------
+
+
+def _stamped(tmp_path, monkeypatch, body="# A\n"):
+    """A source tree whose committed PDF is stamped as current."""
+    monkeypatch.chdir(tmp_path)
+    src = tmp_path / "_data" / "lead-magnets"
+    src.mkdir(parents=True)
+    md = src / "a.md"
+    md.write_text(body, encoding="utf-8")
+    committed = src / "pdf"
+    committed.mkdir()
+    monkeypatch.setattr(blm, "SRC", src)
+    monkeypatch.setattr(blm, "OUT", tmp_path / "public" / "resources")
+    monkeypatch.setattr(blm, "COMMITTED", committed)
+    (committed / "a.pdf").write_bytes(b"COMMITTED-PDF")
+    blm.write_stamp(md)
+    return md, committed
+
+
+def test_fingerprint_changes_with_source(tmp_path):
+    a = tmp_path / "a.md"
+    a.write_text("one", encoding="utf-8")
+    first = blm.source_fingerprint(a)
+    a.write_text("two", encoding="utf-8")
+    assert blm.source_fingerprint(a) != first
+
+
+def test_fingerprint_changes_with_pandoc_options(tmp_path, monkeypatch):
+    a = tmp_path / "a.md"
+    a.write_text("one", encoding="utf-8")
+    first = blm.source_fingerprint(a)
+    monkeypatch.setattr(blm, "PANDOC_OPTIONS", (*blm.PANDOC_OPTIONS, "--number-sections"))
+    assert blm.source_fingerprint(a) != first
+
+
+def test_fingerprint_is_stable_for_identical_input(tmp_path):
+    a = tmp_path / "a.md"
+    a.write_text("one", encoding="utf-8")
+    assert blm.source_fingerprint(a) == blm.source_fingerprint(a)
+
+
+def test_is_current_true_when_stamp_matches(tmp_path, monkeypatch):
+    md, _ = _stamped(tmp_path, monkeypatch)
+    assert blm.is_current(md) is True
+
+
+def test_is_current_false_when_source_changed(tmp_path, monkeypatch):
+    md, _ = _stamped(tmp_path, monkeypatch)
+    md.write_text("# A changed\n", encoding="utf-8")
+    assert blm.is_current(md) is False
+
+
+def test_is_current_false_without_stamp(tmp_path, monkeypatch):
+    md, _committed = _stamped(tmp_path, monkeypatch)
+    blm.stamp_path(md).unlink()
+    assert blm.is_current(md) is False
+
+
+def test_is_current_false_without_committed_pdf(tmp_path, monkeypatch):
+    md, committed = _stamped(tmp_path, monkeypatch)
+    (committed / "a.pdf").unlink()
+    assert blm.is_current(md) is False
+
+
+def test_main_reuses_committed_pdf_without_rendering(tmp_path, monkeypatch, capsys):
+    _stamped(tmp_path, monkeypatch)
+    monkeypatch.setattr(blm, "have_tooling", lambda: (True, ""))
+
+    def explode(*a, **kw):  # pragma: no cover - must never run
+        raise AssertionError("must not render when the stamp is current")
+
+    monkeypatch.setattr(blm, "render", explode)
+    assert blm.main([]) == 0
+    out = capsys.readouterr().out
+    assert "reused committed PDF" in out
+    assert (blm.OUT / "a.pdf").read_bytes() == b"COMMITTED-PDF"
+
+
+def test_main_rerenders_when_source_changed(tmp_path, monkeypatch):
+    md, _ = _stamped(tmp_path, monkeypatch)
+    md.write_text("# A changed\n", encoding="utf-8")
+    monkeypatch.setattr(blm, "have_tooling", lambda: (True, ""))
+    monkeypatch.setattr(blm, "render", lambda m, pdf: pdf.write_bytes(b"FRESH"))
+    assert blm.main([]) == 0
+    assert (blm.OUT / "a.pdf").read_bytes() == b"FRESH"
+    assert blm.is_current(md) is True
+
+
+def test_main_force_rerenders_a_current_pdf(tmp_path, monkeypatch):
+    _stamped(tmp_path, monkeypatch)
+    monkeypatch.setattr(blm, "have_tooling", lambda: (True, ""))
+    monkeypatch.setattr(blm, "render", lambda m, pdf: pdf.write_bytes(b"FORCED"))
+    assert blm.main(["--force"]) == 0
+    assert (blm.OUT / "a.pdf").read_bytes() == b"FORCED"
+
+
+def test_failed_render_leaves_no_stamp(tmp_path, monkeypatch, capsys):
+    """A stamp written despite a failed render would mark a stale PDF current
+    forever — the one failure mode this scheme must never have."""
+    monkeypatch.chdir(tmp_path)
+    src = tmp_path / "_data" / "lead-magnets"
+    src.mkdir(parents=True)
+    md = src / "a.md"
+    md.write_text("# A\n", encoding="utf-8")
+    monkeypatch.setattr(blm, "SRC", src)
+    monkeypatch.setattr(blm, "OUT", tmp_path / "public" / "resources")
+    monkeypatch.setattr(blm, "COMMITTED", src / "pdf")
+    monkeypatch.setattr(blm, "have_tooling", lambda: (True, ""))
+
+    def boom(m, pdf):
+        raise subprocess.CalledProcessError(1, ["pandoc"])
+
+    monkeypatch.setattr(blm, "render", boom)
+    assert blm.main([]) == 1
+    assert not blm.stamp_path(md).exists()
+    assert "pandoc failed" in capsys.readouterr().err
+
+
+def test_repeated_main_is_idempotent(tmp_path, monkeypatch):
+    """The regression this whole scheme exists to prevent: build twice, get
+    byte-identical artefacts. `render` deliberately emits different bytes on
+    every call, standing in for LaTeX's non-determinism."""
+    monkeypatch.chdir(tmp_path)
+    src = tmp_path / "_data" / "lead-magnets"
+    src.mkdir(parents=True)
+    (src / "a.md").write_text("# A\n", encoding="utf-8")
+    committed = src / "pdf"
+    monkeypatch.setattr(blm, "SRC", src)
+    monkeypatch.setattr(blm, "OUT", tmp_path / "public" / "resources")
+    monkeypatch.setattr(blm, "COMMITTED", committed)
+    monkeypatch.setattr(blm, "have_tooling", lambda: (True, ""))
+
+    calls = {"n": 0}
+
+    def unstable_render(m, pdf):
+        calls["n"] += 1
+        pdf.write_bytes(b"PDF-run-%d" % calls["n"])
+
+    monkeypatch.setattr(blm, "render", unstable_render)
+
+    assert blm.main([]) == 0
+    first = (committed / "a.pdf").read_bytes()
+    assert calls["n"] == 1, "first build must render"
+
+    for _ in range(3):
+        assert blm.main([]) == 0
+    assert calls["n"] == 1, "later builds must not render again"
+    assert (committed / "a.pdf").read_bytes() == first
+    assert (blm.OUT / "a.pdf").read_bytes() == first
+
+
+def test_render_uses_the_shared_option_tuple(tmp_path, monkeypatch):
+    """render() and the fingerprint must read the SAME options, or a layout
+    change could ship without invalidating a single stamp."""
+    src = tmp_path / "src.md"
+    src.write_text("# t\n", encoding="utf-8")
+    captured = {}
+    monkeypatch.setattr(blm.shutil, "which", lambda n: f"/usr/bin/{n}")
+    monkeypatch.setattr(blm.subprocess, "run", lambda cmd, **kw: captured.update({"cmd": cmd}))
+    blm.render(src, tmp_path / "out.pdf")
+    for opt in blm.PANDOC_OPTIONS:
+        assert opt in captured["cmd"]

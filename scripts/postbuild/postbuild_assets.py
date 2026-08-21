@@ -85,7 +85,21 @@ asset_path_re = re.compile(
     r'(?:src|href)=["\']?/(?:_csp/)?([A-Za-z0-9][A-Za-z0-9\-_.]+\.(?:js|css))',
     re.IGNORECASE,
 )
-_SRI_ANY_RE = re.compile(r"\s+integrity=(['\"])sha256-[^'\"]+\1")
+# Any SRI algorithm, not just sha256. ssg's default `sri_algorithm` is
+# SHA-384, so it emits `integrity="sha384-…"` on the stylesheet link it
+# writes. This regex used to match `sha256-` only, so fix_sri did not strip
+# it before stamping its own digest — and every page shipped TWO integrity
+# attributes:
+#
+#   <link … integrity="sha384-2x89…" integrity="sha256-ObNF… sha256-ldKU…">
+#
+# HTML parsers take the first and silently drop the rest, so SRI still held
+# via the sha384 value, but the markup was invalid and the second attribute
+# was dead. It affected 6,854 of 6,856 pages and was invisible while ssg
+# happened to emit sha256, which is what it did on the version this site was
+# pinned to. The docstring below has always claimed "stale/bogus integrity …
+# stripped first so we don't accumulate duplicates"; now the regex agrees.
+_SRI_ANY_RE = re.compile(r"\s+integrity=(['\"])(?:sha(?:256|384|512))-[^'\"]+\1")
 _TAG_CLOSE_RE = re.compile(r"(\s*/?>)\s*$")
 _CROSSORIGIN_RE = re.compile(
     r"\s+crossorigin=(['\"]?)(?:anonymous|use-credentials)\1", re.IGNORECASE
@@ -560,6 +574,42 @@ def normalise_csp(html: str) -> tuple[str, bool]:
     return html[: meta.start()] + new_tag + html[meta.end() :], True
 
 
+def _dedupe_script_hashes(policy: str) -> str:
+    """Collapse repeated ``'sha256-…'`` tokens inside ``script-src``.
+
+    This pass prepends the page's inline-script hashes into ``script-src``
+    unconditionally, and it runs more than once over a page as later passes
+    add content. Every run re-prepended the same tokens, so a shipped article
+    carried 19 hash tokens for 11 distinct scripts and a local build 31 for
+    15 — a redundant kilobyte in the head of every page, ahead of the parser
+    reaching anything that renders. Duplicates are inert to a browser, so
+    this is about size and about the pass being genuinely idempotent.
+
+    First occurrence of each hash wins, so token order stays stable across
+    rebuilds (byte-identical output is a build gate). Only ``script-src`` is
+    touched; other directives are returned unchanged.
+    """
+
+    def _dedupe(m: re.Match[str]) -> str:
+        directive = m.group(0)
+        seen: set[str] = set()
+
+        def _keep(tok: re.Match[str]) -> str:
+            token = tok.group(0)
+            if token in seen:
+                return ""
+            seen.add(token)
+            return token
+
+        collapsed = _SHA_RE.sub(_keep, directive)
+        # Removing tokens leaves runs of spaces behind; normalise them without
+        # disturbing the directive's leading indentation.
+        leading = collapsed[: len(collapsed) - len(collapsed.lstrip())]
+        return leading + re.sub(r"[ \t]{2,}", " ", collapsed.strip())
+
+    return re.sub(r"script-src[^;]*", _dedupe, policy, count=1)
+
+
 def inject_jsonld_hashes(html: str) -> str:
     bodies = [m.group(1) for m in jsonld_re.finditer(html)]
     bodies.extend(m.group(1) for m in speculation_re.finditer(html))
@@ -583,7 +633,7 @@ def inject_jsonld_hashes(html: str) -> str:
                 new_policy,
                 count=1,
             )
-            return c.group(1) + c.group(2) + new_policy + c.group(4)
+            return c.group(1) + c.group(2) + _dedupe_script_hashes(new_policy) + c.group(4)
 
         return content_attr_re.sub(patch_content, tag, count=1)
 
@@ -685,14 +735,14 @@ def _candidate_digests(body: bytes) -> str:
     return f"sha256-{primary} sha256-{appended}"
 
 
-def setup_asset_state(public: Path) -> tuple[int, int, int, int, int, int]:
-    """Run the import-time asset pipeline in order: minify JS/CSS, populate the
-    SRI hash table, then build the fingerprint map + pattern (minify must run
-    before hashing so the digests match the on-disk minified bytes). Returns
-    ``(js_count, js_before, js_after, css_count, css_before, css_after)``."""
-    global _FP_PATTERN
-    js_count, js_before, js_after = _bulk_minify_js()
-    css_count, css_before, css_after = _bulk_minify_css()
+def _hash_assets(public: Path) -> None:
+    """Populate the SRI digest table for every fingerprinted asset.
+
+    Both directories matter: ``_csp/`` holds the extracted stylesheets and
+    component scripts, and the tree root holds the fingerprinted ``main.*.js``
+    family. Must run after minification so the digests describe the bytes that
+    are actually served.
+    """
     csp_dir = public / "_csp"
     if csp_dir.is_dir():
         for asset in csp_dir.iterdir():
@@ -702,11 +752,31 @@ def setup_asset_state(public: Path) -> tuple[int, int, int, int, int, int]:
         for asset in public.iterdir():
             if asset.is_file() and _top_fp_re.match(asset.name):
                 asset_hashes[asset.name] = _candidate_digests(asset.read_bytes())
-    for fp in public.glob("main.*.js"):
-        if fp.stem.count(".") == 1:
-            _FP_ASSET_MAP["/main.js"] = "/" + fp.name
-    for fp in public.glob("highlight.*.css"):
-        if fp.stem.count(".") == 1:
-            _FP_ASSET_MAP["/highlight.css"] = "/" + fp.name
+
+
+def _map_bare_asset_names(public: Path) -> None:
+    """Map each bare asset reference to its fingerprinted file.
+
+    Layouts emit ``/main.js`` and ``/highlight.css``; postbuild rewrites those
+    to the hashed names. The ``stem.count(".") == 1`` guard picks
+    ``main.<hash>.js`` and skips anything with a longer chain, so a
+    doubly-suffixed leftover cannot claim the mapping.
+    """
+    for bare, pattern in (("/main.js", "main.*.js"), ("/highlight.css", "highlight.*.css")):
+        for fp in public.glob(pattern):
+            if fp.stem.count(".") == 1:
+                _FP_ASSET_MAP[bare] = "/" + fp.name
+
+
+def setup_asset_state(public: Path) -> tuple[int, int, int, int, int, int]:
+    """Run the import-time asset pipeline in order: minify JS/CSS, populate the
+    SRI hash table, then build the fingerprint map + pattern (minify must run
+    before hashing so the digests match the on-disk minified bytes). Returns
+    ``(js_count, js_before, js_after, css_count, css_before, css_after)``."""
+    global _FP_PATTERN
+    js_count, js_before, js_after = _bulk_minify_js()
+    css_count, css_before, css_after = _bulk_minify_css()
+    _hash_assets(public)
+    _map_bare_asset_names(public)
     _FP_PATTERN = _build_fp_pattern()
     return js_count, js_before, js_after, css_count, css_before, css_after

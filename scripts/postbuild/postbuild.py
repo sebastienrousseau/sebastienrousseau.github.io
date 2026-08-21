@@ -167,6 +167,7 @@ _ASSET_STATS = setup_asset_state(PUBLIC)
 
 # SEO + Schema.org injection — moved to postbuild_lib.seo
 # Article UI furniture — moved to postbuild_lib.article_furniture
+from postbuild_lib.analytics import beacon_token, inject_analytics_beacon
 from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     AUTHOR_AVATAR,
     AUTHOR_NAME,
@@ -182,6 +183,11 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     inject_deck,
     inject_eyebrow,
     slugify,
+)
+from postbuild_lib.asset_dedupe import (
+    find_duplicate_assets,
+    remove_duplicate_files,
+    rewrite_asset_refs,
 )
 from postbuild_lib.citations import (
     inject_citations,
@@ -226,12 +232,21 @@ from postbuild_lib.hreflang import (  # noqa: F401 — re-exports (split from ar
     inject_lang_switcher,
 )
 from postbuild_lib.html_passes import (
+    decode_entities_in_jsonld,
     hoist_body_link_stylesheets,
     inject_sigstore_attestation,
     inject_table_labels,
     strip_duplicate_body_h1,
 )
 from postbuild_lib.index_scorecard import inject_index_scorecard
+from postbuild_lib.internal_links import (
+    _alias_patterns,
+    canonicalise_absolute_self_links,
+    inject_contextual_links,
+    inject_related_cluster,
+    load_corpus,
+    load_taxonomy,
+)
 from postbuild_lib.navigation import (
     build_post_nav_index,
     inject_anchor_links_and_toc,
@@ -260,6 +275,8 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
 # Legacy-URL redirect conversion (/papers -> /research + locale forks)
 from postbuild_lib.redirects import apply_redirect_pages
 from postbuild_lib.schemas import (
+    align_article_identity,
+    inject_faq_schema,
     inject_news_article,
     inject_software_source_code,
     inject_tech_article,
@@ -272,6 +289,7 @@ from postbuild_lib.seo import (  # noqa: F401 — re-exports for back-compat
     clean_meta_description,
     compute_word_count,
     fix_article_og_type,
+    fix_home_social_image,
     fix_social_image,
     inject_about,
     inject_howto,
@@ -302,25 +320,32 @@ class _PostbuildCounters:
     __slots__ = (
         "about_patched",
         "action_rails_set",
+        "analytics_injected",
         "anchor_patched",
+        "article_identity_aligned",
+        "asset_dupes_rewritten",
         "asset_fp_patched",
         "body_h1_stripped",
         "byline_straps_set",
         "cdn_wrapped",
         "citation_patched",
         "cite_panels_set",
+        "cluster_blocks_added",
+        "contextual_links_added",
         "crumbs_patched",
         "csp_normalised",
         "csp_patched",
         "decks_set",
         "desc_cleaned",
         "eyebrows_set",
+        "faq_schema_patched",
         "footnotes_set",
         "furniture_patched",
         "howto_patched",
         "hreflang_patched",
         "img_dims_patched",
         "itemlist_patched",
+        "jsonld_entities_decoded",
         "langswitch_patched",
         "lastmod_meta_patched",
         "lcp_preloaded",
@@ -336,6 +361,7 @@ class _PostbuildCounters:
         "redundant_titles_stripped",
         "reuse_panels_set",
         "section_rules_set",
+        "self_links_canonicalised",
         "share_rails_set",
         "social_patched",
         "softwaresourcecode_patched",
@@ -358,11 +384,16 @@ class _PostbuildContext:
     """Pre-pass artefacts read once and shared across pages."""
 
     __slots__ = (
+        "alias_patterns",
+        "analytics_token",
+        "asset_dupes",
+        "corpus",
         "counters",
         "fr_titles",
         "gh_stats",
         "last_reviewed_index",
         "nav_index",
+        "taxonomy",
         "translated_per_lang",
     )
 
@@ -376,6 +407,18 @@ class _PostbuildContext:
         self.gh_stats = _gh_stats_index()
         self.counters = _PostbuildCounters()
         self.last_reviewed_index = build_comprehensive_lastmod_index()
+        # Article corpus + tag taxonomy for contextual internal linking.
+        # Read once here (not per page) — the alias patterns are ~200
+        # compiled regexes and the corpus is a full front-matter scan.
+        self.taxonomy = load_taxonomy()
+        self.corpus = load_corpus(taxonomy=self.taxonomy)
+        self.alias_patterns = _alias_patterns(self.taxonomy)
+        # None unless CF_BEACON_TOKEN / _data/analytics.json is set.
+        self.analytics_token = beacon_token()
+        # Byte-identical /_csp/ assets ssg fingerprinted separately, mapped
+        # duplicate -> canonical. Computed once; the files themselves are
+        # removed after the page loop, once nothing references them.
+        self.asset_dupes = find_duplicate_assets(PUBLIC)
 
 
 def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
@@ -412,6 +455,10 @@ def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     if out != prev:
         ctr.desc_cleaned += 1
     out = fix_article_og_type(out)
+    # Home page only: rebuild the social card from the authored landscape
+    # banner and declare its dimensions (the index layout emits no
+    # banner-src marker, so fix_social_image above cannot reach it).
+    out = fix_home_social_image(page, out)
     out = inject_kpi_metrics(out)
     # Point internal links at the same URL the canonical and sitemap
     # advertise. Without this, every `/x/index.html` href is a second
@@ -477,6 +524,10 @@ def _apply_schema_subtype_passes(
     out = inject_software_source_code(page, out)
     if out != prev:
         ctr.softwaresourcecode_patched += 1
+    # Last, so every Article node that exists on the page — ssg's BlogPosting
+    # and whichever subtype was just injected — agrees with <link rel=
+    # canonical> and with itself. Runs before inject_jsonld_hashes so the CSP
+    # hash covers the aligned bytes.
     return out
 
 
@@ -487,6 +538,7 @@ def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str
     out = _bump(inject_article_furniture, out, ctr, "furniture_patched")
     out = _bump(inject_breadcrumbs, out, ctr, "crumbs_patched")
     out = _bump(inject_table_labels, out, ctr, "tables_carded")
+    out = _bump(decode_entities_in_jsonld, out, ctr, "jsonld_entities_decoded")
     # Hero banner (figure pulled from the article's og:image). Runs after
     # furniture so its anchor regex sees the post-furniture document, and
     # before the lang switcher so the switcher slots in after the banner.
@@ -597,10 +649,74 @@ def _apply_hreflang_pass(html: str, page: Path, ctx: _PostbuildContext) -> str:
     return inject_hreflang(html, rel_slug, page_lang, ctx.translated_per_lang)
 
 
+def _apply_internal_link_passes(html: str, page: Path, ctx: _PostbuildContext) -> str:
+    """Wire the article into its topic cluster.
+
+    Three steps, in order: give same-origin absolute article links their
+    canonical trailing slash; link the first in-prose mention of a shared
+    topic to the sibling article that owns it; then append the nearest
+    siblings that are still unlinked so no article is left isolated. All
+    three are idempotent and English-only (see internal_links).
+    """
+    ctr = ctx.counters
+    out = canonicalise_absolute_self_links(html)
+    if out != html:
+        ctr.self_links_canonicalised += 1
+    prev = out
+    out = inject_contextual_links(page, out, ctx.corpus, ctx.taxonomy, patterns=ctx.alias_patterns)
+    if out != prev:
+        ctr.contextual_links_added += 1
+    prev = out
+    out = inject_related_cluster(page, out, ctx.corpus)
+    if out != prev:
+        ctr.cluster_blocks_added += 1
+    return out
+
+
+def _sweep_duplicate_assets(ctx: _PostbuildContext, had_failures: bool) -> None:
+    """Delete the byte-identical ``/_csp/`` assets whose references were all
+    rewritten to a canonical twin.
+
+    Runs after the page loop, never during it: a page not yet processed still
+    points at them. Skipped when any page failed, since that page kept its
+    original references."""
+    if had_failures or not ctx.asset_dupes:
+        return
+    n_removed = remove_duplicate_files(PUBLIC, ctx.asset_dupes)
+    print(f"  asset dedupe       : {n_removed} byte-identical /_csp/ asset(s) removed")
+
+
+def _apply_final_schema_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
+    """JSON-LD passes that must see the FINAL DOM.
+
+    Both of these depend on markup earlier passes produce, so they run last —
+    after article furniture, navigation, hreflang and canonical normalisation,
+    and immediately before the CSP hash pass so the hashes cover their bytes.
+
+    * ``inject_faq_schema`` reads the FAQ section, which it locates by the
+      heading's ``id``. That ``id`` is added by ``inject_anchor_links_and_toc``
+      in the article passes — running earlier found no heading and silently
+      emitted nothing.
+    * ``align_article_identity`` binds every Article node to the canonical
+      URL, so it has to run after ``normalize_canonical`` has settled what
+      that URL is, and after every pass that may have added an Article node.
+    """
+    prev = html
+    out = inject_faq_schema(page, html)
+    if out != prev:
+        ctr.faq_schema_patched += 1
+    prev = out
+    out = align_article_identity(out)
+    if out != prev:
+        ctr.article_identity_aligned += 1
+    return out
+
+
 def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     """Run every per-page transform pass on ``page``."""
     original = page.read_text(encoding="utf-8", errors="ignore")
     patched_about = _apply_seo_passes(original, page, ctx.counters)
+    patched_about = _apply_internal_link_passes(patched_about, page, ctx)
     patched_src = _apply_article_passes(patched_about, page, ctx.counters)
     # Per-article inline language switcher — runs after article furniture
     # because it inserts between the hero <section> and <main>, which
@@ -659,6 +775,19 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     # sitemap). Runs after hreflang + furniture so it overrides any earlier
     # writer. Idempotent.
     patched_hl = normalize_canonical(page, patched_hl)
+    patched_hl = _apply_final_schema_passes(patched_hl, page, ctx.counters)
+    # Traffic beacon — inert unless a token is configured. Deferred and
+    # appended last so measurement can never sit on the LCP path.
+    prev_beacon = patched_hl
+    patched_hl = inject_analytics_beacon(patched_hl, ctx.analytics_token)
+    if patched_hl != prev_beacon:
+        ctx.counters.analytics_injected += 1
+    # Point identical-content stylesheets at one URL so a reader crossing
+    # between page types does not re-download bytes they already have.
+    prev_dedupe = patched_hl
+    patched_hl = rewrite_asset_refs(patched_hl, ctx.asset_dupes)
+    if patched_hl != prev_dedupe:
+        ctx.counters.asset_dupes_rewritten += 1
     # ssg emits its own listing pages (tag indexes) without our layouts and
     # ships them a weaker default policy. Normalise before hashing so the
     # JSON-LD hashes land in the canonical policy rather than ssg's.
@@ -738,6 +867,8 @@ def main() -> None:
         except Exception as exc:  # boundary: report + exit 1 below
             failures.append((page, exc))
 
+    _sweep_duplicate_assets(ctx, bool(failures))
+
     (
         sitemap_patched,
         robots_written,
@@ -780,6 +911,13 @@ def main() -> None:
         f"{c.sri_patched} got real SRI, "
         f"{c.itemlist_patched} got ItemList JSON-LD, "
         f"{c.techarticle_patched} got TechArticle, "
+        f"{c.article_identity_aligned} had Article identity aligned to canonical, "
+        f"{c.faq_schema_patched} got FAQPage, "
+        f"{c.analytics_injected} got the analytics beacon, "
+        f"{c.asset_dupes_rewritten} had duplicate asset URLs collapsed, "
+        f"{c.contextual_links_added} got contextual internal links, "
+        f"{c.cluster_blocks_added} got a cluster block, "
+        f"{c.self_links_canonicalised} had absolute self-links canonicalised, "
         f"{c.newsarticle_patched} got NewsArticle, "
         f"{c.softwaresourcecode_patched} got SoftwareSourceCode, "
         f"{c.social_patched} got og:image fixed, "

@@ -81,3 +81,63 @@ Critical path: −1 → 0 → 1 (these make every later metric trustworthy and m
 
 ## Definition of done
 `make metrics` shows: CI p50 <20 min, incremental build <2 min, coverage ≥90%/libs 100%, mypy strict green, jscpd <1%, no module >800 LOC, Lighthouse perf ≥0.98 gated, SBOM + provenance shipping, Scorecard ≥8, validation suite gating, zero source-mutation foot-guns — all enforced in CI.
+
+---
+
+## Phase 6 — External audit remediation (2026-08-19)
+
+A full audit of the repo, the build output and the live origin produced 21
+confirmed findings. Nineteen are closed in code; the rest are editorial or need
+a Cloudflare login. What follows is the record, including what was *not* done
+and why.
+
+### Closed in this change
+
+| ID | Finding | Fix | Gate that stops it recurring |
+|---|---|---|---|
+| F-01 | `.well-known/` never deployed — `/.well-known/security.txt` (RFC 9116), `ai.txt`, WKD and `openapi.json` all 404 in production while present in the build | `include-hidden-files: true` on the Pages artifact | `verify_deploy.py` after every `main` deploy |
+| F-02 | Home page had no meta description; og/twitter description was a scrape of the nav ending mid-sentence on a comma; `og:type=article`; square og:image with no dimensions | Authored copy now wins over any scrape; symmetric og:type; card sourced from the authored landscape banner | `test_home_social_card.py`, `verify_deploy.py` |
+| F-03 | Build not hermetic — `public/` never cleaned, so local builds accumulated 7,124 pages titled "My SSG Site", a 13,940-URL sitemap and a 32.5 MB search index | `rm -rf public` at the top of `build.sh` | `reproducible` CI job: builds twice, diffs |
+| F-04 | EN news sitemap empty, FR served months-old entries, publication name was an email address | 48 h window + real publication name in `build_lang_feeds`; stray ssg sitemap copies pruned | `test_news_sitemap_locale.py`, `test_prune_duplicate_sitemaps.py` |
+| F-05 | Median 2 internal links per article, 0 contextual in-prose links | Taxonomy-driven contextual linker + cluster block; absolute self-links canonicalised | `test_internal_links.py` |
+| F-07 | No analytics of any kind | Cloudflare Web Analytics plumbing, off until a token is configured | `test_analytics_beacon.py` |
+| F-08 | Article JSON-LD bound to a non-canonical URL; two article nodes disagreeing | `align_article_identity` binds every Article node to the canonical | `test_schema_identity_and_faq.py` |
+| F-09 | Four conflicting `ssg` pins; `make bootstrap` installed one CI would reject | Makefile derives `SSG_VERSION` from `ci.yml` | `test_ssg_pin_single_source.py` |
+| F-10 | Eight near-identical stylesheets; `--accent` inside the shared block made the whole 138 KB file page-variable | Accent split into its own 62 B block; byte-identical assets deduped | `test_asset_dedupe.py` |
+| F-11 | Complexity gate covered 4 of 8 script dirs; worst function in the repo was ungated at D/25 | Gate covers all of `scripts/`, ratcheted | `check-complexity.sh` + allowlist |
+| F-12 | FAQ sections written but never marked up | `FAQPage` emitted from the existing prose | `test_schema_identity_and_faq.py` |
+| F-13 | Slug localisation inconsistent across 28 locales, undocumented | ADR-0012 + per-locale baseline | `test_slug_policy.py` |
+| F-15 | 42 % duplicate CSP hash tokens; a hash of the empty string in `style-src` | Dedupe on emit; dead hash removed | `test_csp_hash_dedupe.py` |
+| F-17 | Duplicate `integrity` attributes on 6,854 pages | Consequence of F-03; gone with the hermetic build | `reproducible` job |
+| F-18 | Three frontmatter parsers | Two collapsed onto `scripts/lib/_frontmatter`, differential-tested over 240 posts | — |
+| F-19 | Deprecated ChatGPT-plugin manifest maintained and advertised | Deleted | — |
+| F-20 | 20 locales rendered in whatever font the platform chose | Explicit per-script stacks in `fonts.css` | — |
+| F-21 | Unreferenced `/main.js` and `/highlight.css` aliases shipped | Only `sw.js` keeps a stable alias, and the comment now says why | `test_build_output.py` |
+
+### Needs a Cloudflare or Google login — see `.git/post-audit-actions.sh`
+
+- **F-16 — edge CSP carries `unsafe-inline`.** Inert today (the strict meta
+  policy also applies and both must allow), but it inverts defence in depth.
+  `DEPLOY.md` carries the exact Transform Rule to paste; do **not** simply
+  delete the token, which would block the hash-allowed inline JSON-LD.
+- **F-07 completion.** Beacon token, Search Console, Bing Webmaster Tools.
+
+### Open, deliberately
+
+- **F-06 — publishing cadence.** 27 articles in June, 13 in July, 4 in August,
+  none since 2026-08-04. This is a decay curve, not a pause, and it is an
+  editorial decision rather than an engineering one. Two things are worth more
+  than resuming a daily target that will be missed again: a cadence that will
+  actually hold, and a **quarterly refresh rotation** over the existing 105
+  articles. AI citation rates fall off sharply past roughly three months
+  without revision, so updating a piece that already ranks beats publishing one
+  that does not — and 37 articles carry a past year in the title.
+- **F-14 — dated article URLs.** See ADR-0013. Deliberately unchanged: the
+  measurement that would justify a migration only starts collecting now.
+
+### Backlogs now tracked rather than invisible
+
+- `scripts/dev/complexity-allowlist.txt` — 25 functions. Four cleared already
+  (two at D/25 and D/22), each differential-tested against its pre-refactor
+  implementation before the line was deleted.
+- `tests/validation/slug-policy-baseline.json` — 34 locales.

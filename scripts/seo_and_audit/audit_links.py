@@ -101,6 +101,38 @@ def host(url: str) -> str:
     return url.split("/", 3)[2] if "://" in url else url
 
 
+def _audit_internal(internal: list[str], public: Path) -> list[str]:
+    """Report every internal href with no file behind it."""
+    broken = [h for h in internal if not check_internal(h, public)]
+    print(f"internal: {len(internal):4d} checked, {len(broken)} broken")
+    for h in broken:
+        print(f"  [missing] {h}")
+    return broken
+
+
+def _audit_external(external: list[str]) -> list[tuple[str, int | str]]:
+    """Report external hrefs that do not answer 2xx/3xx.
+
+    Hosts in HEAD_BLOCKED refuse HEAD from datacentre IPs, so a failure there
+    says nothing about the link; they are skipped and counted separately
+    rather than reported as broken.
+    """
+    checkable = [u for u in external if host(u) not in HEAD_BLOCKED]
+    broken: list[tuple[str, int | str]] = []
+    with ThreadPoolExecutor(max_workers=12) as ex:
+        for url, code in ex.map(check_external, checkable):
+            if not (isinstance(code, int) and 200 <= code < 400):
+                broken.append((url, code))
+    print(
+        f"external: {len(checkable):4d} checked "
+        f"(skipped {len(external) - len(checkable)} bot-blocked), "
+        f"{len(broken)} broken"
+    )
+    for url, code in sorted(broken):
+        print(f"  [{code}] {url}")
+    return broken
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--base-dir", default="public")
@@ -115,27 +147,13 @@ def main() -> int:
         h for h in hrefs if h.startswith(("http://", "https://")) and "127.0.0.1" not in h
     )
 
-    int_broken = [h for h in internal if not check_internal(h, public)]
-    print(f"internal: {len(internal):4d} checked, {len(int_broken)} broken")
-    for h in int_broken:
-        print(f"  [missing] {h}")
-
-    ext_broken: list[tuple[str, int | str]] = []
+    int_broken = _audit_internal(internal, public)
     if args.check_external:
-        checkable = [u for u in external if host(u) not in HEAD_BLOCKED]
-        with ThreadPoolExecutor(max_workers=12) as ex:
-            for url, code in ex.map(check_external, checkable):
-                if not (isinstance(code, int) and 200 <= code < 400):
-                    ext_broken.append((url, code))
-        print(
-            f"external: {len(checkable):4d} checked (skipped {len(external) - len(checkable)} bot-blocked), {len(ext_broken)} broken"
-        )
-        for url, code in sorted(ext_broken):
-            print(f"  [{code}] {url}")
+        _audit_external(external)
 
-    if args.strict_internal and int_broken:
-        return 1
-    return 0
+    # Only internal breakage can fail the build: an external 404 is somebody
+    # else's outage and must not block a deploy.
+    return 1 if (args.strict_internal and int_broken) else 0
 
 
 if __name__ == "__main__":

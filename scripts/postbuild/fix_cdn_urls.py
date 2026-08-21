@@ -129,48 +129,54 @@ def try_ext_variants(rel: str) -> str | None:
     return None
 
 
-def candidate_paths(url: str) -> list[str]:
-    """Generate ordered candidate CDN-relative paths for ``url``."""
-    # Strip scheme + host.
-    path = re.sub(r"^https://(kura|cloudcdn)\.pro/", "", url)
-    cands: list[str] = []
-
-    # Pass-through: already-correct cloudcdn paths.
-    cands.append(path)
-
-    # /stock/<x> → /stocks/<x>
+def _stock_rewrites(path: str) -> list[str]:
+    """Legacy bucket names that were renamed on the CDN."""
+    out: list[str] = []
     if path.startswith("stock/"):
-        cands.append("stocks/" + path[len("stock/") :])
-    # /unsplash/images/banners/<x> → /stocks/images/<x>
+        out.append("stocks/" + path[len("stock/") :])
     if path.startswith("unsplash/images/banners/"):
-        cands.append("stocks/images/" + path[len("unsplash/images/banners/") :])
-    # /unsplash/images/<x> → /stocks/images/<x>
+        out.append("stocks/images/" + path[len("unsplash/images/banners/") :])
     elif path.startswith("unsplash/images/"):
-        cands.append("stocks/images/" + path[len("unsplash/images/") :])
-
-    # /common/images/<x> → /clients/common/images/<x>
+        out.append("stocks/images/" + path[len("unsplash/images/") :])
     if path.startswith("common/images/"):
-        cands.append("clients/" + path)
+        # /clients/common/... is already correct and is left alone.
+        out.append("clients/" + path)
+    return out
 
-    # /clients/common/... is already correct, leave alone.
 
-    # /<brand>.webp or /logos/<brand>.<ext> → /clients/sebastienrousseau/v1/logos/<brand>.<ext>
+def _client_rewrites(path: str) -> list[str]:
+    """Paths that moved under /clients/<project>/v<n>/."""
+    out: list[str] = []
+
+    # /logos/<brand>.<ext> -> the canonical SVG for that brand.
     m = re.match(r"^logos/([A-Za-z0-9_-]+)\.[a-z]+$", path)
     if m and m.group(1) in BRAND_LOGOS:
-        cands.append(f"clients/sebastienrousseau/v1/logos/{m.group(1)}.svg")
+        out.append(f"clients/sebastienrousseau/v1/logos/{m.group(1)}.svg")
 
-    # /<project>/images/<rest> → /clients/<project>/v1/<rest>
+    # /<project>/images/<rest> -> /clients/<project>/v1/<rest>
     m = re.match(r"^([A-Za-z0-9_-]+)/images/(.+)$", path)
     if m and m.group(1) in PROJECT_PREFIXES:
-        cands.append(f"clients/{m.group(1)}/v1/{m.group(2)}")
+        out.append(f"clients/{m.group(1)}/v1/{m.group(2)}")
 
-    # /<project>/v<n>/<rest> → /clients/<project>/v<n>/<rest>
+    # /<project>/v<n>/<rest> -> /clients/<project>/v<n>/<rest>
     m = re.match(r"^([A-Za-z0-9_-]+)/(v\d+)/(.+)$", path)
     if m and m.group(1) in PROJECT_PREFIXES:
-        cands.append(f"clients/{m.group(1)}/{m.group(2)}/{m.group(3)}")
+        out.append(f"clients/{m.group(1)}/{m.group(2)}/{m.group(3)}")
+    return out
 
-    # Deduplicate while preserving order.
-    seen, out = set(), []
+
+def candidate_paths(url: str) -> list[str]:
+    """Ordered candidate CDN-relative paths for ``url``.
+
+    Order is load-bearing: ``resolve`` takes the first candidate that exists
+    on disk, and the unmodified path comes first so an already-correct URL is
+    never rewritten. Duplicates are removed while preserving that order.
+    """
+    path = re.sub(r"^https://(kura|cloudcdn)\.pro/", "", url)
+    cands = [path, *_stock_rewrites(path), *_client_rewrites(path)]
+
+    seen: set[str] = set()
+    out: list[str] = []
     for c in cands:
         if c not in seen:
             seen.add(c)
@@ -189,49 +195,64 @@ def resolve(url: str) -> str | None:
     return None
 
 
-def main() -> int:  # noqa: C901 — one-shot CLI; sequential pipeline by design
+def _rewrite_file(f: Path, missing: dict[str, list[Path]]) -> int:
+    """Rewrite every resolvable CDN URL in one file. Returns the number of
+    occurrences replaced; records unresolvable URLs in ``missing``."""
+    text = f.read_text(encoding="utf-8")
+    urls = sorted(set(URL_RE.findall(text)))
+    if not urls:
+        return 0
+
+    new_text = text
+    rewritten = 0
+    for url in urls:
+        target = resolve(url)
+        if target is None:
+            # Either the URL already resolves (fine) or nothing on the CDN
+            # matches it (a real problem). Distinguish the two.
+            if not any(try_ext_variants(c) for c in candidate_paths(url)):
+                missing.setdefault(url, []).append(f)
+            continue
+        if url == target:
+            continue
+        rewritten += new_text.count(url)
+        new_text = new_text.replace(url, target)
+
+    if new_text != text:
+        f.write_text(new_text, encoding="utf-8")
+    return rewritten
+
+
+def _report_missing(missing: dict[str, list[Path]]) -> None:
+    print(f"\n{len(missing)} unresolved URL(s) (no matching file under {CDN_ROOT}):")
+    for url, paths in sorted(missing.items()):
+        print(f"  {url}")
+        for p in paths[:3]:
+            print(f"    used in {p.relative_to(REPO)}")
+        if len(paths) > 3:
+            print(f"    \u2026 and {len(paths) - 3} more")
+
+
+def main() -> int:
     files: list[Path] = []
     for pattern in SOURCE_GLOBS:
         files.extend(REPO.glob(pattern))
-    files = [f for f in files if f.is_file()]
 
+    missing: dict[str, list[Path]] = {}
     rewrite_count = 0
     file_count = 0
-    missing: dict[str, list[Path]] = {}
-
-    for f in files:
-        text = f.read_text(encoding="utf-8")
-        urls = sorted(set(URL_RE.findall(text)))
-        if not urls:
-            continue
-        new_text = text
-        for url in urls:
-            target = resolve(url)
-            if target is None:
-                # Either fine (resolves as-is) or unresolvable. Distinguish.
-                rels = [c for c in candidate_paths(url) if try_ext_variants(c)]
-                if not rels:
-                    missing.setdefault(url, []).append(f)
-                continue
-            if url == target:
-                continue
-            count = new_text.count(url)
-            new_text = new_text.replace(url, target)
-            rewrite_count += count
-        if new_text != text:
-            f.write_text(new_text, encoding="utf-8")
+    for f in (f for f in files if f.is_file()):
+        before = f.read_text(encoding="utf-8")
+        n = _rewrite_file(f, missing)
+        rewrite_count += n
+        if f.read_text(encoding="utf-8") != before:
             file_count += 1
 
     print(f"rewrote {rewrite_count} URL occurrences across {file_count} file(s)")
     if missing:
-        print(f"\n{len(missing)} unresolved URL(s) (no matching file under {CDN_ROOT}):")
-        for url, paths in sorted(missing.items()):
-            print(f"  {url}")
-            for p in paths[:3]:
-                print(f"    used in {p.relative_to(REPO)}")
-            if len(paths) > 3:
-                print(f"    … and {len(paths) - 3} more")
-        return 0  # report-only, not failure
+        _report_missing(missing)
+    # Report-only: an unresolvable URL is worth knowing about but must not
+    # fail a build on its own.
     return 0
 
 

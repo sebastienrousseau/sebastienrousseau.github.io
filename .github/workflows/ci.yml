@@ -37,11 +37,22 @@ env:
   # characters (230) and survives, which is why this never showed up
   # locally. See #431. Unpin once upstream splits on non-ASCII separators
   # or build.sh normalises them before tag generation.
-  SSG_VERSION: "0.0.39"
-  # Issue number holding the pin below the latest release. While set,
-  # ssg-version-check.yml stays quiet instead of filing a weekly bump
-  # request we have already decided against. Clear it when #431 closes.
-  SSG_PIN_HOLD: "431"
+  # "latest" means exactly that: every run installs the newest published ssg.
+  #
+  # This was pinned to 0.0.39 for months because ssg >= 0.0.50 generated a
+  # /tags/ page per term per locale — 7,240 of them, 7,189 titled "My SSG Site"
+  # (the tool's placeholder default, which reached rendered pages). Both are
+  # fixed upstream; the site now passes --no-tag-pages because it generates its
+  # own curated tag pages, and the placeholder default is empty.
+  #
+  # Tracking latest is safe here because breakage is *caught*, not hoped
+  # against: 37 in-build gates, a byte-identical-rebuild job, JSON-LD and
+  # link audits, and a post-deploy origin probe. A pin only converts a loud
+  # failure into a silent staleness, which is what happened last time.
+  #
+  # Set a concrete version here to hold a release back; build.sh then asserts
+  # it exactly.
+  SSG_VERSION: "latest"
 
 jobs:
   # =========================================================================
@@ -87,15 +98,53 @@ jobs:
       - name: Cloudflare KV write audit (Free-tier policy)
         run: bash scripts/dev/check-kv-writes.sh
 
-      - name: Cyclomatic complexity (radon)
+      - name: Vulnerability scan — CI tooling (npm audit)
+        # The Python side has had pip-audit on runtime deps for a while. The
+        # npm side had nothing: the three .github/ci-tools/ lockfiles are
+        # hash-pinned via `npm ci`, which guarantees reproducibility and says
+        # nothing about whether the pinned versions are vulnerable. Dependabot
+        # found extract-zip (GHSA-jmr9-qjv8-65gv, high) sitting transitively in
+        # all three, and no gate here would have caught it.
+        #
+        # Gated at high: npm's transitive trees surface low/moderate advisories
+        # constantly, and a gate that cries wolf gets ignored. High and critical
+        # are the ones that should stop a merge.
+        #
+        # To resolve one: prefer an `overrides` entry in the relevant
+        # package.json, which patches the transitive dependency without moving
+        # the top-level tool version (those are pinned under ADR-0002 and must
+        # not drift). Regenerate the lockfile with `npm install
+        # --package-lock-only` and commit both files.
         run: |
-          radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ scripts/generators/ scripts/lib/ -a -s
-          c_or_worse=$(radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ scripts/generators/ scripts/lib/ -n C -s 2>&1)
-          if [ -n "$c_or_worse" ]; then
-            echo "::error::C-grade or worse complexity found:"
-            echo "$c_or_worse"
+          fail=0
+          for tool in visual pa11y lighthouse; do
+            echo "::group::npm audit — $tool"
+            npm audit --audit-level=high --prefix ".github/ci-tools/$tool" || fail=1
+            echo "::endgroup::"
+          done
+          if [ "$fail" -ne 0 ]; then
+            echo "::error::high or critical advisory in the CI tooling — see the groups above"
             exit 1
           fi
+
+      - name: Cyclomatic complexity (radon, ratcheted over all of scripts/)
+        # Covers ALL of scripts/, not the four directories it used to. The
+        # narrow scope left editorial/, security/ and seo_and_audit/ ungated
+        # while the README described complexity as a CI gate without
+        # qualification — and the ungated set held the worst function in the
+        # repo (translate_frontmatter._process_article at D/25), in the
+        # translation pipeline that rewrites content across 27 locales with
+        # the least test coverage behind it.
+        #
+        # Widening it surfaced 25 more C-or-worse functions, several inside
+        # untested build gates. Restructuring those in one pass to hit a
+        # number is how correctness regressions get introduced, so this uses
+        # the same ratchet the mypy gate uses: everything is checked, current
+        # debt is enumerated in scripts/dev/complexity-allowlist.txt, and the
+        # gate fails on anything new AND on a stale entry.
+        run: |
+          radon cc scripts/ -a -s
+          bash scripts/dev/check-complexity.sh
 
       - name: Code duplication (jscpd)
         run: |
@@ -134,25 +183,9 @@ jobs:
         run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
       - name: Install Static Site Generator (ssg)
-        run: |
-          # `command -v ssg` is not a version check. ~/.cargo/bin is restored
-          # from the cargo cache, so a stale binary satisfies it and the pin
-          # never applies — CI built with 0.0.39 for months while this line
-          # read 0.0.46 and then 0.0.50. The drift was invisible because a
-          # skipped `cargo install` prints nothing. Compare the running
-          # version, reinstall on mismatch, then assert, so a wrong binary
-          # fails the job instead of quietly building the site. ADR-0002.
-          have="$(ssg --version 2>/dev/null | awk '{print $2}' || true)"
-          if [ "${have:-}" != "${SSG_VERSION}" ]; then
-            echo "ssg: have '${have:-none}', want ${SSG_VERSION} — installing"
-            cargo install ssg --locked --version "${SSG_VERSION}" --force
-          fi
-          got="$(ssg --version | awk '{print $2}')"
-          if [ "${got}" != "${SSG_VERSION}" ]; then
-            echo "::error::ssg ${got} is running but ${SSG_VERSION} is pinned"
-            exit 1
-          fi
-          echo "ssg ${got} (pinned)"
+        uses: ./.github/actions/setup-ssg
+        with:
+          version: ${{ env.SSG_VERSION }}
 
       - name: Install wasm-pack + wasm32 target
         run: |
@@ -415,6 +448,89 @@ jobs:
           name: pa11y-shard-${{ matrix.shard }}
           path: pa11y.shard.json
           retention-days: 1
+
+  # =========================================================================
+  # Stage 1b — reproducibility. build.sh writes INTO public/ rather than
+  # replacing it, so for a long time every local build layered onto the last
+  # and public/ became an archaeological record: 7,172 stale /tags/ pages
+  # from a superseded scheme (all titled "— My SSG Site"), a 13,940-URL
+  # sitemap against production's 6,816, a 32.5 MB search index against
+  # production's 806 KB. CI never saw it, because a CI checkout starts empty
+  # — which is exactly why it went unnoticed for months while `make verify`
+  # and `make serve` measured a tree neither CI nor production ever had.
+  #
+  # build.sh now cleans public/ first. This job proves it stayed clean: two
+  # builds of the same commit must produce byte-identical trees. That turns
+  # "reproducible byte-identical builds" from an aspiration in the
+  # improvement plan into a check, and it catches any non-idempotent
+  # postbuild pass (duplicate integrity="" attributes, accumulating CSP
+  # hashes, double-injected link blocks) on the PR that introduces it.
+  # =========================================================================
+  reproducible:
+    name: Reproducible build (byte-identical rebuild)
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Install Rust toolchain (cached)
+        uses: dtolnay/rust-toolchain@4be7066ada62dd38de10e7b70166bc74ed198c30 # stable
+
+      - name: Cache cargo registry + git
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            ~/.cargo/bin
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg-${{ env.SSG_VERSION }}
+
+      - name: Add cargo bin to PATH
+        run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Install Static Site Generator (ssg)
+        uses: ./.github/actions/setup-ssg
+        with:
+          version: ${{ env.SSG_VERSION }}
+
+      - name: Install wasm-pack + wasm32 target
+        run: |
+          rustup target add wasm32-unknown-unknown
+          command -v wasm-pack >/dev/null 2>&1 || cargo install wasm-pack --version 0.15.0 --locked
+
+      - name: Setup Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+          cache: 'pip'
+
+      - name: Setup Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v6
+        with:
+          node-version: "22"
+
+      - name: Install Python tooling
+        run: pip install --quiet --require-hashes -r requirements-dev.lock
+
+      - name: Build twice and diff
+        run: |
+          ./build.sh >/dev/null
+          mv public public.first
+          ./build.sh >/dev/null
+          # Timestamped artefacts legitimately differ between runs: the build
+          # stamps wall-clock times into feeds and status. Everything else
+          # must match byte-for-byte.
+          if ! diff -rq \
+                --exclude='*.xml' \
+                --exclude='status.json' \
+                --exclude='feed.json' \
+                --exclude='feed.jsonl' \
+                public.first public > /tmp/repro.diff 2>&1; then
+            echo "::error::rebuild is not byte-identical — a build pass is not idempotent"
+            head -50 /tmp/repro.diff
+            exit 1
+          fi
+          echo "rebuild is byte-identical"
 
   # =========================================================================
   # Stage 2b — visual regression. Screenshots six key pages (home, hub,
@@ -698,12 +814,41 @@ jobs:
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
 
       - name: Upload Pages artifact
+        # include-hidden-files is REQUIRED. upload-pages-artifact tars the
+        # directory with `--exclude=.[^/]*` unless this is set, which silently
+        # dropped public/.well-known/ from every deploy: /.well-known/
+        # security.txt (RFC 9116 canonical location), ai.txt (advertised by
+        # robots.txt AND llms.txt), openpgpkey/ (WKD key discovery) and
+        # openapi.json all served 404 in production while being present in the
+        # build. The `verify-deploy` job below asserts they resolve, so this
+        # cannot regress silently again.
         if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
         with:
           path: public
+          include-hidden-files: true
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         id: deployment
         uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5
+
+      - name: Verify the deployed origin
+        # Every other gate runs against public/ on the runner. This is the
+        # only check that looks at what a browser actually receives, which is
+        # the gap that hid the .well-known/ deploy loss for months: the files
+        # were in the build output and 404 in production. Asserts that every
+        # path robots.txt and llms.txt advertise resolves, that the home page
+        # carries a real meta description, and that neither CSP channel
+        # allows 'unsafe-inline'.
+        #
+        # Runs against the Pages origin, not the Cloudflare hostname: the
+        # edge caches HTML, so checking the public hostname immediately after
+        # a deploy tests the previous release. --skip-csp for the same
+        # reason — the security headers are Cloudflare Transform Rules and
+        # are not present on the origin.
+        if: github.ref == 'refs/heads/main'
+        run: |
+          python3 scripts/seo_and_audit/verify_deploy.py \
+            --base "${{ steps.deployment.outputs.page_url }}" \
+            --skip-csp

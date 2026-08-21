@@ -3,7 +3,7 @@ title: "2024 AI போக்குகள்: எதிர்காலத்த�
 tags: "AI, 2024, Trends, generative AI, cybersecurity, Education, Retail, Ethics, Analytics, Innovation, ISO 20022, post-quantum cryptography, quantum computing, open source, Rust"
 subtitle: "தொழில்நுட்பம், சமூகம் மற்றும் நெறிமுறை பரிணாமத்திற்கான ஒரு முக்கியமான ஆண்டு"
 description: "2024-க்கான AI போக்குகள்: நிதித்துறையில் ஜெனரேட்டிவ் AI, மல்டிமோடல் மாடல்கள், சாதனத்தில் இயங்கும் LLM-கள் மற்றும் வங்கியியலையும் தயாரிப்பு பொறியியலையும் மறுவடிவமைக்கவிருக்கும் மாற்றங்கள்."
-date: "Jan 08, 2024"
+date: "January 1, 2024"
 language: "ta"
 locale: "ta_IN"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"

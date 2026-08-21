@@ -2,7 +2,7 @@
 title: "Tren AI 2024: Wawasan dan Prediksi untuk Masa Depan"
 subtitle: "Tahun Penting bagi Teknologi, Masyarakat, dan Evolusi Etika"
 description: "Tren AI 2024: generative AI di bidang keuangan, model multimodal, LLM on-device, dan pergeseran yang akan mengubah perbankan serta rekayasa produk secara mendasar."
-date: "Jan 08, 2024"
+date: "January 1, 2024"
 language: "id-ID"
 locale: "id_ID"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"

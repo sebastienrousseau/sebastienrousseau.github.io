@@ -34,6 +34,7 @@ from pathlib import Path as _Path
 
 _sys.path.insert(0, str(_Path(__file__).resolve().parents[1] / "lib"))
 
+import contextlib
 import json
 import re
 import sys
@@ -42,28 +43,24 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import _lang_registry  # type: ignore[import-not-found]  # script-mode sibling import
+from _frontmatter import parse_frontmatter as _shared_parse_frontmatter
 
 PUBLIC = Path("public")
 BASE = "https://sebastienrousseau.com"
 
 _DATED_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-")
-_FM_KEY_RE = re.compile(r'^([a-zA-Z_]+):\s*(?:"((?:[^"\\]|\\.)*)"|\'((?:[^\'\\]|\\.)*)\')\s*$')
 
 
 def parse_frontmatter(text: str) -> dict[str, str]:
-    fm: dict[str, str] = {}
-    sep = 0
-    for line in text.splitlines():
-        if line.strip() == "---":
-            sep += 1
-            if sep == 2:
-                break
-            continue
-        if sep != 1:
-            continue
-        m = _FM_KEY_RE.match(line.strip())
-        if m:
-            fm[m.group(1)] = m.group(2) if m.group(2) is not None else m.group(3)
+    """Front matter of a post, via the shared parser in ``scripts/lib``.
+
+    This was a local reimplementation whose key pattern rejected hyphenated and
+    mixed-case keys, so it silently dropped them. Differential-tested against
+    the shared parser over all 240 posts before switching: zero value
+    mismatches on shared keys — the shared parser is a strict superset. This
+    module reads specific known keys, so the extra ones are inert.
+    """
+    fm, _body = _shared_parse_frontmatter(text)
     return fm
 
 
@@ -230,7 +227,50 @@ def render_atom(
     return "\n".join(parts)
 
 
-def render_news_sitemap(entries: list[dict[str, object]], bcp47: str) -> str:
+# A Google News sitemap must contain only articles published in the last 48
+# hours (plus a little forward tolerance for timezone skew); anything older is
+# a spec violation Search Console reports as an error. The per-locale feeds
+# emitted every article ever published — /fr/news-sitemap.xml shipped 84 KB of
+# months-old entries — because this renderer reused the unfiltered feed entry
+# list. Mirror the window build_news_sitemap.py already applies to the root.
+_NEWS_WINDOW_PAST_S = 48 * 3600
+_NEWS_WINDOW_FUTURE_S = -7200  # 2 h of forward timezone skew
+
+# Fallback when a locale's strings.json carries no feeds.channelTitle. Same
+# constant as build_news_sitemap.py: a publication NAME, never a contact
+# address. Every locale news sitemap previously named the publication
+# "contact@sebastienrousseau.com (Sebastien Rousseau)" — the author
+# front-matter string — which is what Google News would have displayed.
+_DEFAULT_PUB_NAME = "Sebastien Rousseau Research"
+
+
+def _resolve_pub_name(lang_code: str) -> str:
+    """Localised publication name from ``feeds.channelTitle`` if present, else
+    the canonical English brand string. Tolerates a missing or partial
+    strings.json — a syndication surface must not fail the build."""
+    with contextlib.suppress(Exception):
+        strings = _lang_registry.load_strings(lang_code)
+        if strings.get("feeds.channelTitle"):
+            return str(strings["feeds.channelTitle"])
+    return _DEFAULT_PUB_NAME
+
+
+def _within_news_window(entry: dict[str, object], now: datetime) -> bool:
+    date = entry.get("date")
+    if not isinstance(date, datetime):
+        return False
+    delta = (now - date).total_seconds()
+    return _NEWS_WINDOW_FUTURE_S <= delta <= _NEWS_WINDOW_PAST_S
+
+
+def render_news_sitemap(
+    entries: list[dict[str, object]],
+    bcp47: str,
+    pub_name: str = _DEFAULT_PUB_NAME,
+    now: datetime | None = None,
+) -> str:
+    now = now or datetime.now(tz=UTC)
+    entries = [e for e in entries if _within_news_window(e, now)]
     parts: list[str] = []
     parts.append('<?xml version="1.0" encoding="UTF-8"?>')
     parts.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"')
@@ -240,9 +280,7 @@ def render_news_sitemap(entries: list[dict[str, object]], bcp47: str) -> str:
         parts.append(f"  <loc>{e['url']}</loc>")
         parts.append("  <news:news>")
         parts.append("    <news:publication>")
-        parts.append(
-            "      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>"
-        )
+        parts.append(f"      <news:name>{xml_escape(pub_name)}</news:name>")
         parts.append(f"      <news:language>{bcp47}</news:language>")
         parts.append("    </news:publication>")
         parts.append(f"    <news:publication_date>{iso8601(e['date'])}</news:publication_date>")  # type: ignore[arg-type]
@@ -317,7 +355,8 @@ def build_for_lang(lang_code: str) -> int:
         render_atom(entries, lang_code, lang.bcp47, strings), encoding="utf-8"
     )
     (out / "news-sitemap.xml").write_text(
-        render_news_sitemap(entries, lang.bcp47), encoding="utf-8"
+        render_news_sitemap(entries, lang.bcp47, _resolve_pub_name(lang_code)),
+        encoding="utf-8",
     )
     (out / "feed.json").write_text(
         render_json_feed(entries, lang_code, lang.bcp47, strings), encoding="utf-8"

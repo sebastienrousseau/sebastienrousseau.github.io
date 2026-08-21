@@ -115,25 +115,19 @@ LEAD_BLOCK_RE = re.compile(r"<!-- lead-start -->[\s\S]*?<!-- lead-end -->")
 ENRICH_BLOCK_RE = re.compile(r"<!-- enrich-start -->[\s\S]*?<!-- enrich-end -->")
 
 
-def process_post(path: Path) -> int:  # noqa: C901 — Markdown-region walker; branches map to protect/skip cases
-    """Return number of new internal links added to this post."""
-    src = path.read_text()
-    m = FRONTMATTER_RE.match(src)
-    if not m:
-        return 0
-    fm_block = m.group(1)
-    body = m.group(2)
+def _body_regions(body: str) -> list[tuple[str, bool]]:
+    """Split *body* into ``(text, is_protected)`` pieces covering it exactly.
 
-    # Carve out the lead and enrich blocks — both are auto-regenerated and
-    # any links inside them belong to post_enrich.py, not to us.
+    The lead and enrich blocks are auto-regenerated and any links inside them
+    belong to post_enrich.py, so they are carved out as protected holes.
+    """
     holes: list[tuple[int, int, str]] = []
-    for r in (LEAD_BLOCK_RE, ENRICH_BLOCK_RE):
-        hm = r.search(body)
+    for pattern in (LEAD_BLOCK_RE, ENRICH_BLOCK_RE):
+        hm = pattern.search(body)
         if hm:
             holes.append((hm.start(), hm.end(), hm.group(0)))
     holes.sort()
 
-    # Build ordered (region_text, is_protected) pieces covering the full body.
     pieces: list[tuple[str, bool]] = []
     cursor = 0
     for start, end, text in holes:
@@ -143,41 +137,62 @@ def process_post(path: Path) -> int:  # noqa: C901 — Markdown-region walker; b
         cursor = end
     if cursor < len(body):
         pieces.append((body[cursor:], False))
+    return pieces
 
-    # Filter out entities whose canonical post IS this file (no self-link),
-    # and entities whose canonical URL is ALREADY linked in the body — the
-    # latter is the across-runs idempotency guard: a previous pass already
-    # placed exactly one link for this entity, and we must not place another.
-    stem = path.stem
-    applicable: list[tuple[list[str], str]] = []
-    for v, s in ENTITY_MAP:
-        if s == stem:
+
+def _applicable_entities(body: str, stem: str) -> list[tuple[list[str], str]]:
+    """Entities this post may link.
+
+    Drops the entity whose canonical post IS this file (no self-link), and any
+    entity whose canonical URL is already present — the across-runs
+    idempotency guard, since a previous pass placed exactly one link for it.
+    """
+    out: list[tuple[list[str], str]] = []
+    for variants, canonical_stem in ENTITY_MAP:
+        if canonical_stem == stem or f"/{canonical_stem}/index.html" in body:
             continue
-        canonical_href = f"/{s}/index.html"
-        if canonical_href in body:
+        out.append((variants, canonical_stem))
+    return out
+
+
+def _link_region(
+    region_text: str, applicable: list[tuple[list[str], str]], remaining_idx: list[int]
+) -> tuple[str, list[int]]:
+    """Link one unprotected region, returning its text and the still-unused
+    entity indices. Segments that are themselves protected (code, headings,
+    existing links) are passed through untouched."""
+    new_sub: list[str] = []
+    for seg, seg_protected in split_segments(region_text):
+        if seg_protected or not remaining_idx:
+            new_sub.append(seg)
             continue
-        applicable.append((v, s))
+        active = [applicable[i] for i in remaining_idx]
+        new_seg, consumed_local = link_segment(seg, active)
+        if consumed_local:
+            consumed_global = {remaining_idx[i] for i in consumed_local}
+            remaining_idx = [i for i in remaining_idx if i not in consumed_global]
+        new_sub.append(new_seg)
+    return "".join(new_sub), remaining_idx
+
+
+def process_post(path: Path) -> int:
+    """Return number of new internal links added to this post."""
+    src = path.read_text()
+    m = FRONTMATTER_RE.match(src)
+    if not m:
+        return 0
+    fm_block, body = m.group(1), m.group(2)
+
+    applicable = _applicable_entities(body, path.stem)
     remaining_idx = list(range(len(applicable)))
 
     out_pieces: list[str] = []
-    for region_text, protected in pieces:
+    for region_text, protected in _body_regions(body):
         if protected or not remaining_idx:
             out_pieces.append(region_text)
             continue
-        # Walk sub-segments within this region; segments that are themselves
-        # protected (code/headings/existing links) are left alone.
-        new_sub: list[str] = []
-        for seg, seg_protected in split_segments(region_text):
-            if seg_protected or not remaining_idx:
-                new_sub.append(seg)
-                continue
-            active = [applicable[i] for i in remaining_idx]
-            new_seg, consumed_local = link_segment(seg, active)
-            if consumed_local:
-                consumed_global = {remaining_idx[i] for i in consumed_local}
-                remaining_idx = [i for i in remaining_idx if i not in consumed_global]
-            new_sub.append(new_seg)
-        out_pieces.append("".join(new_sub))
+        linked, remaining_idx = _link_region(region_text, applicable, remaining_idx)
+        out_pieces.append(linked)
 
     new_body = "".join(out_pieces)
     if new_body == body:
