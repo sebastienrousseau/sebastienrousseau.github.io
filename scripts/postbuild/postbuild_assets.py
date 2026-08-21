@@ -190,13 +190,37 @@ def _align_existing_preload(html: str, target_src: str) -> tuple[str, int]:
     return out, n
 
 
+def _drop_unused_preload(html: str) -> tuple[str, int]:
+    """Remove an image preload the page never fetches.
+
+    Only when the URL appears nowhere else in the document. A hero set through
+    CSS (``background-image``) is a legitimate preload target with no ``<img>``
+    to match it, so a URL still referenced somewhere is treated as proof the
+    preload is real and left alone.
+    """
+    m = _LINK_PRELOAD_IMAGE_RE.search(html)
+    if not m:
+        return html, 0
+    href_m = _LINK_HREF_ANY_RE.search(m.group(0))
+    href = (href_m.group(2) or href_m.group(3)) if href_m else ""
+    if not href or html.count(href) > 1:
+        return html, 0
+    return html.replace(m.group(0), "", 1), 1
+
+
 def inject_lcp_preload(html: str) -> tuple[str, int]:
     """Ensure the page has a ``<link rel="preload" as="image">``
     matching the URL the browser actually fetches for the LCP hero —
     i.e. the first non-lazy ``<img src>``.
 
     Three cases:
-      1. No non-lazy <img> on the page → nothing to preload, no-op.
+      1. No non-lazy <img> on the page → nothing to preload. A preload the
+         layout already emitted is dropped *if the page never references
+         that URL again*, because it is then a high-priority fetch of an
+         image the page does not render, taking bandwidth from whatever the
+         real LCP turns out to be. /projects/ shipped exactly that: every
+         image lazy, so this pass found no candidate, and the layout's
+         portrait preload survived unexamined.
       2. Preload already exists with the same href → no-op.
       3. Preload exists with a different href (e.g. layout-emitted
          w=1200 vs actual <img> w=200 after wrap_cdn_images_in_transform
@@ -207,7 +231,7 @@ def inject_lcp_preload(html: str) -> tuple[str, int]:
     Returns ``(new_html, 1)`` on inject/rewrite, ``(html, 0)`` otherwise."""
     img_m = _FIRST_IMG_RE.search(html)
     if not img_m:
-        return html, 0
+        return _drop_unused_preload(html)
     src = img_m.group(1)
     if not src or src.startswith("data:"):
         return html, 0
