@@ -87,6 +87,7 @@ postbuild pass over `public/`. The steps below are in execution order;
 3. **`scripts/postbuild/post_enrich.py`** — injects article furniture (lead aside, related-posts, review date) into the build copy. Requires `--dir` (ADR-0003; never mutates committed source by default).
 4. **`scripts/generators/build_tags.py`** — builds the tag taxonomy and per-post tag badges/meta.
 5. **`scripts/postbuild/backfill_permalink.py`** — backfills a `permalink:` into any build-copy post that lacks one (older locale archive posts), derived from the post's locale dir + slug. ssg ≥ 0.0.45 derives the RSS channel `<link>` from `permalink` and aborts without it; source stays untouched (ADR-0002).
+6. **`scripts/postbuild/backfill_news_date.py`** — backfills `news_publication_date:` into any build-copy post that lacks one, derived from the post's own `date:`. ssg's news-sitemap generator falls back to the *current time* when the field is blank, stamping a build timestamp onto an article as its publication date (#433); only 141 of 3,640 dated posts declared it. Deterministic by construction — a function of the post's date, never of the clock — so the byte-identical rebuild gate still holds. An unparseable date leaves the post as found; source stays untouched (ADR-0003).
 
 ### Phase B — `ssg` (Static Site Generator)
 
