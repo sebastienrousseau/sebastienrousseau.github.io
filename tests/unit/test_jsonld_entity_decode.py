@@ -16,7 +16,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts" / "postbuild"))
 
-from postbuild_lib.html_passes import decode_entities_in_jsonld  # noqa: E402
+from postbuild_lib.html_passes import decode_entities_in_jsonld
 
 WRAP = '<script type="application/ld+json">{}</script>'
 

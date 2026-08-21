@@ -232,9 +232,9 @@ from postbuild_lib.hreflang import (  # noqa: F401 — re-exports (split from ar
     inject_lang_switcher,
 )
 from postbuild_lib.html_passes import (
+    decode_entities_in_jsonld,
     hoist_body_link_stylesheets,
     inject_sigstore_attestation,
-    decode_entities_in_jsonld,
     inject_table_labels,
     strip_duplicate_body_h1,
 )
