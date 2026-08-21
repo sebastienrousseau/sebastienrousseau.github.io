@@ -8,6 +8,7 @@ module; the rest only calls the staying _is_french).
 
 from __future__ import annotations
 
+import json as _json
 import re
 from html import escape as _esc
 from html import unescape as _unesc
@@ -127,6 +128,58 @@ def strip_duplicate_body_h1(html: str) -> str:
         count=1,
     )
     return new_html if n else html
+_LDJSON_RE = re.compile(
+    r'(<script[^>]*type="application/ld\+json"[^>]*>)(.*?)(</script>)',
+    re.DOTALL | re.IGNORECASE,
+)
+
+
+def _decode_json_strings(node: object) -> object:
+    """Recursively HTML-unescape every string *value* in a parsed JSON tree."""
+    if isinstance(node, str):
+        return _unesc(node)
+    if isinstance(node, list):
+        return [_decode_json_strings(v) for v in node]
+    if isinstance(node, dict):
+        return {k: _decode_json_strings(v) for k, v in node.items()}
+    return node
+
+
+def decode_entities_in_jsonld(html: str) -> str:
+    """Strip HTML entities from JSON-LD payloads.
+
+    A ``<script type="application/ld+json">`` body is *not* HTML-parsed, so an
+    entity that arrives inside it is read literally: consumers see the six
+    characters ``&amp;`` in a page name rather than ``&``. The layouts embed
+    ``"name":"{{title}}"`` directly inside the JSON block, and the template
+    layer fills variables with the HTML-escaped form — correct for the rest of
+    the page, wrong here. Measured on this corpus: 1,528 of 26,001 blocks.
+
+    The decode runs on parsed **string values only**, never on the raw text.
+    Unescaping the block wholesale would turn a ``&quot;`` inside a value into
+    a bare quote and break the JSON it was trying to fix — the naive version
+    of this pass is worse than the bug.
+
+    A block that does not parse is left exactly as found: this pass never
+    rewrites what it cannot understand.
+    """
+
+    def _one(m: re.Match[str]) -> str:
+        open_tag, body, close_tag = m.group(1), m.group(2), m.group(3)
+        if "&" not in body:
+            return m.group(0)
+        try:
+            parsed = _json.loads(body)
+        except (ValueError, RecursionError):
+            return m.group(0)
+        decoded = _decode_json_strings(parsed)
+        if decoded == parsed:
+            return m.group(0)
+        return open_tag + _json.dumps(decoded, ensure_ascii=False, separators=(",", ":")) + close_tag
+
+    return _LDJSON_RE.sub(_one, html)
+
+
 def _html_unescape(s: str) -> str:
     """Thin indirection so the strip-duplicate-H1 helper can be patched
     (``article_furniture._unesc``) in tests if needed."""

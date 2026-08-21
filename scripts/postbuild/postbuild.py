@@ -234,6 +234,7 @@ from postbuild_lib.hreflang import (  # noqa: F401 — re-exports (split from ar
 from postbuild_lib.html_passes import (
     hoist_body_link_stylesheets,
     inject_sigstore_attestation,
+    decode_entities_in_jsonld,
     inject_table_labels,
     strip_duplicate_body_h1,
 )
@@ -536,6 +537,7 @@ def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str
     out = _bump(inject_article_furniture, out, ctr, "furniture_patched")
     out = _bump(inject_breadcrumbs, out, ctr, "crumbs_patched")
     out = _bump(inject_table_labels, out, ctr, "tables_carded")
+    out = _bump(decode_entities_in_jsonld, out, ctr, "jsonld_entities_decoded")
     # Hero banner (figure pulled from the article's og:image). Runs after
     # furniture so its anchor regex sees the post-furniture document, and
     # before the lang switcher so the switcher slots in after the banner.
