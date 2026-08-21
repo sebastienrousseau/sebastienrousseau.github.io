@@ -345,6 +345,7 @@ class _PostbuildCounters:
         "hreflang_patched",
         "img_dims_patched",
         "itemlist_patched",
+        "jsonld_entities_decoded",
         "langswitch_patched",
         "lastmod_meta_patched",
         "lcp_preloaded",
