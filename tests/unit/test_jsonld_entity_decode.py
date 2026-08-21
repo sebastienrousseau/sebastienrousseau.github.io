@@ -60,3 +60,74 @@ def test_nested_values_are_decoded() -> None:
 def test_non_jsonld_script_is_not_touched() -> None:
     src = '<script type="text/javascript">var a = "x &amp; y";</script>'
     assert decode_entities_in_jsonld(src) == src
+
+
+# ── The "leave it exactly as found" guarantees ──────────────────────────
+#
+# The docstring promises this pass never rewrites what it cannot understand,
+# and that it decodes parsed string values only. Each early return below is
+# one of those promises. They are also the lines a happy-path test cannot
+# reach: CI runs the coverage gate pre-build, so nothing else exercises them
+# there, and the gate reported 96% on this module while a local run — where
+# a built public/ lets the smoke suite walk the same code — showed 100%.
+
+
+def test_non_string_scalars_survive_unchanged():
+    """Numbers, booleans and null are returned as-is, not stringified.
+
+    `_decode_json_strings` recurses through dicts and lists and unescapes
+    strings; everything else falls through untouched. Coercing `42` to `"42"`
+    here would silently change the type every consumer reads.
+    """
+    # The entity is load-bearing: without an `&` anywhere in the block the
+    # pass short-circuits before it ever recurses, and the scalar branch goes
+    # unexercised while the test still passes.
+    payload = {
+        "@type": "Article",
+        "name": "Payments &amp; Rust",
+        "wordCount": 1200,
+        "isAccessibleForFree": True,
+        "retracted": False,
+        "expires": None,
+        "ratings": [4, 5.5, None, True],
+    }
+    out = json.loads(_body(decode_entities_in_jsonld(WRAP.format(json.dumps(payload)))))
+    assert out["name"] == "Payments & Rust", "the string value must still decode"
+    assert isinstance(out["wordCount"], int)
+    assert out["isAccessibleForFree"] is True
+    assert out["retracted"] is False
+    assert out["expires"] is None
+    assert out["ratings"] == [4, 5.5, None, True]
+
+
+def test_block_without_an_ampersand_is_untouched():
+    """No `&` means nothing to decode — the block is returned byte-identical
+    rather than re-serialised, so key order and spacing are preserved."""
+    original = '{\n  "@type": "Article",\n  "name": "Plain title"\n}'
+    html = WRAP.format(original)
+    assert decode_entities_in_jsonld(html) == html
+
+
+def test_unparseable_block_is_left_exactly_as_found():
+    """A block that is not JSON is never rewritten. Emitting a 'repaired'
+    version of something we could not parse would be worse than the bug."""
+    broken = '{"@type": "Article", "name": "A &amp; B",}'  # trailing comma
+    html = WRAP.format(broken)
+    assert decode_entities_in_jsonld(html) == html
+
+
+def test_ampersand_that_is_not_an_entity_is_a_no_op():
+    """`&` alone is not an entity, so the decode changes nothing and the
+    original text is kept rather than re-serialised."""
+    original = '{"name": "Rock & Roll"}'
+    html = WRAP.format(original)
+    assert decode_entities_in_jsonld(html) == html
+
+
+def test_quot_inside_a_value_does_not_break_the_json():
+    """The failure mode the docstring warns about: unescaping the raw block
+    would turn `&quot;` into a bare quote and destroy the JSON it was trying
+    to fix. Decoding parsed values keeps the document valid."""
+    payload = {"name": "He said &quot;hello&quot; &amp; left"}
+    out = json.loads(_body(decode_entities_in_jsonld(WRAP.format(json.dumps(payload)))))
+    assert out["name"] == 'He said "hello" & left'
