@@ -138,6 +138,13 @@ python3 scripts/generators/build_tags.py --dir _posts_build
 # ssg >=0.0.45 derives the RSS channel <link> from permalink and aborts if
 # it is missing; source stays untouched (build-copy only). See ADR-0002.
 python3 scripts/postbuild/backfill_permalink.py --dir _posts_build
+# Backfill news_publication_date from each post's own date. ssg's news-sitemap
+# generator falls back to the CURRENT TIME when the field is blank, which
+# stamps a build timestamp onto an article as its publication date (#433).
+# Only 141 of 3,640 dated posts declare it; the rest each logged a parse
+# warning every build. Build-copy only, and derived from the post's date, so
+# it stays deterministic for the byte-identical rebuild gate.
+python3 scripts/postbuild/backfill_news_date.py --dir _posts_build
 
 # Compile the site from the temporary directory instead of _posts
 ssg --no-tag-pages -n=docs -c=_posts_build -t=_layouts -o=public
