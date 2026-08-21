@@ -534,6 +534,29 @@ def proof_rail_block() -> str:
     )
 
 
+def _area_card_img(area: dict, *, eager: bool) -> str:
+    """The card's image tag; the first card's is the page's LCP element.
+
+    Lazy-loading it deferred the largest paint to 1.8 s and cost the page its
+    performance budget — 0.93 against a 0.94 floor, identical across all three
+    Lighthouse runs, so not noise. It also left /projects/ with NO non-lazy
+    image at all, which made postbuild's inject_lcp_preload find no LCP
+    candidate: it took its "nothing to preload" path and left the layout's
+    preload pointing at a portrait this page never renders — a high-priority
+    fetch of an unused image, competing with the real LCP.
+
+    Eager-loading the first card fixes both halves, because it also gives
+    inject_lcp_preload a candidate to realign that stale preload to.
+    """
+    loading = "eager" if eager else "lazy"
+    priority = ' fetchpriority="high"' if eager else ""
+    return (
+        f'<img alt="{area["img_alt"]}" src="{area["img"]}" '
+        f'loading="{loading}"{priority} decoding="async" '
+        f'width="1600" height="1000" />'
+    )
+
+
 def setup_three_block() -> str:
     """Three areas of practice as Apple-style cards: large image on top, then
     kicker + headline (with an accent keyword) + body + CTA below, in a 3-up
@@ -542,8 +565,7 @@ def setup_three_block() -> str:
     cards = [
         f'<article class="area-card">\n'
         f'<figure class="area-card-media">\n'
-        f'<img alt="{a["img_alt"]}" src="{a["img"]}" '
-        f'loading="lazy" decoding="async" width="1600" height="1000" />\n'
+        f"{_area_card_img(a, eager=(i == 0))}\n"
         f"</figure>\n"
         f'<div class="area-card-body">\n'
         f'<p class="area-card-kicker">{a["kicker"]}</p>\n'
@@ -554,7 +576,7 @@ def setup_three_block() -> str:
         f'{a["cta_label"]} <span aria-hidden="true">›</span></a></p>\n'
         f"</div>\n"
         f"</article>"
-        for a in AREAS
+        for i, a in enumerate(AREAS)
     ]
     return (
         '<section class="setup-three" aria-labelledby="setup-three-heading">'
