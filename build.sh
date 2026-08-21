@@ -19,6 +19,25 @@ set -euo pipefail
 SERVE=0
 [[ "${1:-}" == "--serve" ]] && SERVE=1
 
+# Pin the build clock so the output is a function of the SOURCE, not of when
+# the build ran.
+#
+# ssg stamps `metadata.timestamp` into sbom.cdx.json from the wall clock unless
+# SOURCE_DATE_EPOCH is set, so two builds of the same commit produced two
+# different SBOMs and the byte-identical-rebuild gate failed on that one file
+# long after every real non-determinism had been fixed. `pandoc`/LaTeX honour
+# the same variable, so pinning it here covers anything else that reaches for
+# a clock.
+#
+# The value is the last commit's timestamp — the reproducible-builds
+# convention. It makes the SBOM describe when the content was authored rather
+# than when CI happened to run, which is the more useful claim anyway. An
+# already-exported value wins, so a caller can pin it explicitly.
+if [ -z "${SOURCE_DATE_EPOCH:-}" ]; then
+  SOURCE_DATE_EPOCH="$(git log -1 --format=%ct 2>/dev/null || date -u +%s)"
+  export SOURCE_DATE_EPOCH
+fi
+
 # Regenerate listings that are derived from `_posts/` on every build so
 # article PRs can ship as additive-only diffs (just the new article
 # source + 27 locale translations, no homepage rotation, no slug-map
