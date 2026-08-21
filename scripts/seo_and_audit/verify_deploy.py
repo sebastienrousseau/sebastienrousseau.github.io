@@ -31,12 +31,24 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from urllib.parse import urljoin
 
 DEFAULT_BASE = "https://sebastienrousseau.com"
 TIMEOUT = 30
+
+# A post-deploy probe races the CDN. GitHub Pages answers 200 with the
+# PREVIOUS build for a short window after a deploy, so a single fetch can
+# assert against content that is already superseded — which is exactly how
+# this gate once reported `home page has no <meta name="description">` while
+# the live page carried a perfectly good one.
+#
+# Retrying converts that race into a real signal: a genuine regression still
+# fails, because it fails every attempt, while a propagation lag resolves.
+RETRIES = 5
+RETRY_DELAY = 20
 _UA = "sebastienrousseau.com-deploy-verifier/1.0"
 
 # Paths that must resolve regardless of what robots.txt happens to name.
@@ -152,21 +164,50 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="skip the CSP assertions (edge headers are not applied on a bare origin)",
     )
+    parser.add_argument(
+        "--retries",
+        type=int,
+        default=RETRIES,
+        help="attempts before a problem is treated as real (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--retry-delay",
+        type=int,
+        default=RETRY_DELAY,
+        help="seconds between attempts (default: %(default)s)",
+    )
     args = parser.parse_args(argv)
     base = args.base.rstrip("/")
 
+    attempts = max(1, args.retries)
     problems: list[str] = []
-    try:
-        paths = {urljoin(base + "/", p) for p in REQUIRED_PATHS} | advertised_paths(base)
-        problems += check_paths(base, paths)
-        problems += check_home_description(base)
-        if not args.skip_csp:
-            problems += check_csp(base)
-    except Failure as exc:
-        problems.append(str(exc))
+    paths: set[str] = set()
+    for attempt in range(1, attempts + 1):
+        problems = []
+        try:
+            paths = {urljoin(base + "/", p) for p in REQUIRED_PATHS} | advertised_paths(base)
+            problems += check_paths(base, paths)
+            problems += check_home_description(base)
+            if not args.skip_csp:
+                problems += check_csp(base)
+        except Failure as exc:
+            problems = [str(exc)]
+        if not problems:
+            break
+        if attempt < attempts:
+            print(
+                f"verify_deploy: {len(problems)} problem(s) on attempt "
+                f"{attempt}/{attempts}; the origin may still be serving the "
+                f"previous build — retrying in {args.retry_delay}s",
+                file=sys.stderr,
+            )
+            time.sleep(args.retry_delay)
 
     if problems:
-        print(f"verify_deploy: {len(problems)} problem(s) against {base}", file=sys.stderr)
+        print(
+            f"verify_deploy: {len(problems)} problem(s) against {base} after {attempts} attempt(s)",
+            file=sys.stderr,
+        )
         for p in problems:
             print(f"  ::error::{p}", file=sys.stderr)
         return 1

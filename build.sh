@@ -61,6 +61,22 @@ fi
 # splits `tags:` on ASCII "," only and collapses a locale post's whole tag list
 # into one tag (see the SSG_VERSION comment in .github/workflows/ci.yml, #431).
 #
+# There is a second way local and CI diverge, and it is not a mistake anyone
+# made. mise withholds releases below `minimum_release_age` — a supply-chain
+# guard against adopting a freshly published version — so with SSG_VERSION
+# tracking `latest`, CI installs a new ssg the moment it is published while
+# this machine keeps resolving the previous one for about a day. `mise
+# ls-remote cargo:ssg` says so explicitly: "N newer releases hidden by
+# minimum_release_age". Symptom: `./build.sh` prints an older version than the
+# CI log for the same commit, and no config is wrong.
+#
+#   Check   mise ls-remote cargo:ssg   (hidden releases are reported)
+#   Adopt   MISE_MINIMUM_RELEASE_AGE=0 mise install cargo:ssg@<version>
+#           cargo install ssg --locked --version <version> --force
+#
+# The second command is the one that matters: `mise which ssg` resolves to
+# ~/.cargo/bin/ssg, so installing into mise alone does not change what runs.
+#
 # A wrong build that looks plausible is worse than no build, so fail loudly.
 # The version is read from ci.yml, which is the single source of truth for the
 # pin (ADR-0002) — the Makefile derives it the same way.
@@ -75,7 +91,7 @@ fi
 # assert against locally, so just record what built the site. A concrete
 # version is asserted exactly.
 if [ "${_ssg_want}" = "latest" ]; then
-  echo "ssg ${_ssg_have} (tracking latest)"
+  echo "ssg ${_ssg_have} (tracking latest; mise may hold back a newer release — see above)"
   _ssg_want=""
 fi
 if [ -n "${_ssg_want}" ] && [ "${_ssg_have}" != "${_ssg_want}" ]; then
