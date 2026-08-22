@@ -2048,6 +2048,9 @@
          site's newsroom grid. Colours come from the tokens below so
          both themes follow. */
       :root{--pl-white:#fff;--pl-rose:#ff6b8a;--pl-spotify:#1db954;--pl-apple:#fa243c;
+        --pl-au-bg:#07030c;--pl-au-1:#ff2d55;--pl-au-2:#ff7a18;
+        --pl-au-3:#c837ff;--pl-au-4:#ff0f4c;--pl-au-5:#7b2bff;
+        --pl-au-6:#ff2d92;--pl-au-7:#ffa53a;--pl-ink-on-brand:#000;
         --pl-night-1:#2a0714;--pl-night-2:#16060f;--pl-night-3:#0a0510;
         --pl-dusk-1:#2c0716;--pl-dusk-2:#170610}
       .pl-stage{--pl-red:var(--pl-apple);--pl-radius:18px;
@@ -2066,9 +2069,6 @@
       .pl-hero .pl-hero-desc{color:rgba(255,255,255,.86)}
       .pl-hero .pl-hero-meta{color:rgba(255,255,255,.66)}
       .pl-hero .pl-hero-kicker{color:var(--pl-rose)}
-      .content .pl-hero a.pl-action-apple,.pl-hero a.pl-action-apple{
-        color:var(--pl-white)!important;border-color:rgba(255,255,255,.4)}
-      .pl-hero a.pl-action-apple:hover{border-color:var(--pl-white);color:var(--pl-white)}
       .pl-hero-inner{max-width:1120px;margin-inline:auto;display:grid;
         grid-template-columns:1fr 1fr;gap:clamp(28px,4.5vw,72px);align-items:center}
       @media (max-width:940px){.pl-hero-inner{grid-template-columns:1fr}}
@@ -2092,18 +2092,92 @@
       .pl-chip:hover,.pl-chip:focus-visible{color:var(--pl-red);border-color:var(--pl-red)}
 
         section.pl-topper{position:relative;margin-inline:calc(50% - 50vw)!important;width:100vw;
-        padding:clamp(64px,9vw,132px) clamp(20px,5vw,64px) clamp(48px,7vw,96px)!important;
+        min-block-size:100svh;display:flex;flex-direction:column;
+        align-items:center;justify-content:center;
+        padding:clamp(88px,11vw,160px) clamp(20px,5vw,64px) clamp(72px,9vw,120px)!important;
         text-align:center;color:var(--pl-white)!important;
-        background:
-          radial-gradient(56% 84% at 16% 2%, rgba(255,45,85,.58), transparent 62%),
-          radial-gradient(50% 72% at 78% 0%, rgba(255,138,46,.44), transparent 64%),
-          radial-gradient(62% 86% at 90% 84%, rgba(148,58,255,.46), transparent 60%),
-          radial-gradient(72% 96% at 28% 98%, rgba(255,26,92,.4), transparent 62%),
-          linear-gradient(150deg,var(--pl-dusk-1) 0%,var(--pl-dusk-2) 48%,var(--pl-night-3) 100%)!important}
-      .pl-topper .ap-hero-eyebrow{color:var(--pl-rose)!important;letter-spacing:.16em}
+        overflow:hidden;isolation:isolate;
+        background:linear-gradient(150deg,var(--pl-dusk-1) 0%,var(--pl-dusk-2) 48%,var(--pl-au-bg) 100%)!important}
+      .pl-topper>*:not(.pl-aurora){position:relative;z-index:1}
+      .pl-topper a.pl-jump{display:inline-flex;align-items:center;gap:11px;
+        margin-block-start:clamp(34px,5vw,62px);padding:14px 28px;border-radius:999px;
+        font-family:var(--type-body);font-size:15px;font-weight:600;text-decoration:none;
+        color:var(--pl-au-bg);background:var(--pl-white);
+        box-shadow:0 10px 34px -12px rgba(0,0,0,.55);
+        transition:transform .2s ease,box-shadow .2s ease}
+      .pl-topper a.pl-jump::after{content:"";inline-size:8px;block-size:8px;
+        border-inline-end:2px solid currentColor;border-block-end:2px solid currentColor;
+        transform:translateY(-2px) rotate(45deg);animation:pl-jump-bob 1.9s ease-in-out infinite}
+      .pl-topper a.pl-jump:hover,.pl-topper a.pl-jump:focus-visible{
+        transform:translateY(-2px);box-shadow:0 16px 40px -12px rgba(0,0,0,.6)}
+      @keyframes pl-jump-bob{0%,100%{transform:translateY(-3px) rotate(45deg)}
+        50%{transform:translateY(2px) rotate(45deg)}}
+      /* Anchor targets clear the sticky nav when the jump button fires. */
+      .pl-band{scroll-margin-block-start:calc(var(--nav-h,64px) + 12px)}
+
+      .pl-aurora{position:absolute;inset:0;z-index:0;pointer-events:none;
+        overflow:hidden;background:var(--pl-au-bg)}
+      .pl-aurora-wrap{position:absolute;inset:-10%;
+        animation:pl-au-hue 90s linear infinite}
+      .pl-aurora span{position:absolute;inset-block-start:50%;inset-inline-start:50%;
+        aspect-ratio:1;mix-blend-mode:screen;will-change:transform,border-radius;
+        animation-iteration-count:infinite;animation-timing-function:linear}
+      .pl-aurora span:nth-child(1){inline-size:clamp(300px,40vw,640px);opacity:0.95;
+        background:radial-gradient(circle,var(--pl-au-1) 0%,color-mix(in srgb,var(--pl-au-1) 45%,transparent) 46%,transparent 72%);
+        filter:blur(clamp(36px,4.4vw,74px)) saturate(165%);
+        border-radius:46% 54% 62% 38% / 44% 40% 60% 56%;transform:translate3d(-40.0%,-78.0%,0) scale(1.000);
+        animation-name:pl-au-1,pl-au-m1;animation-duration:15s,11s}
+      .pl-aurora span:nth-child(2){inline-size:clamp(354px,47vw,755px);opacity:0.85;
+        background:radial-gradient(circle,var(--pl-au-2) 0%,color-mix(in srgb,var(--pl-au-2) 45%,transparent) 46%,transparent 72%);
+        filter:blur(clamp(36px,4.4vw,74px)) saturate(165%);
+        border-radius:46% 54% 62% 38% / 44% 40% 60% 56%;transform:translate3d(-1.4%,-63.9%,0) scale(1.068);
+        animation-name:pl-au-2,pl-au-m2;animation-duration:18s,13s}
+      .pl-aurora span:nth-child(3){inline-size:clamp(258px,34vw,550px);opacity:0.9;
+        background:radial-gradient(circle,var(--pl-au-3) 0%,color-mix(in srgb,var(--pl-au-3) 45%,transparent) 46%,transparent 72%);
+        filter:blur(clamp(36px,4.4vw,74px)) saturate(165%);
+        border-radius:46% 54% 62% 38% / 44% 40% 60% 56%;transform:translate3d(-35.3%,-3.3%,0) scale(0.912);
+        animation-name:pl-au-3,pl-au-m3;animation-duration:16s,12s}
+      .pl-aurora span:nth-child(4){inline-size:clamp(390px,52vw,832px);opacity:0.82;
+        background:radial-gradient(circle,var(--pl-au-4) 0%,color-mix(in srgb,var(--pl-au-4) 45%,transparent) 46%,transparent 72%);
+        filter:blur(clamp(36px,4.4vw,74px)) saturate(165%);
+        border-radius:46% 54% 62% 38% / 44% 40% 60% 56%;transform:translate3d(-114.5%,-18.2%,0) scale(1.155);
+        animation-name:pl-au-4,pl-au-m4;animation-duration:21s,9s}
+      .pl-aurora span:nth-child(5){inline-size:clamp(276px,37vw,588px);opacity:0.88;
+        background:radial-gradient(circle,var(--pl-au-5) 0%,color-mix(in srgb,var(--pl-au-5) 45%,transparent) 46%,transparent 72%);
+        filter:blur(clamp(36px,4.4vw,74px)) saturate(165%);
+        border-radius:46% 54% 62% 38% / 44% 40% 60% 56%;transform:translate3d(-79.5%,-76.5%,0) scale(0.843);
+        animation-name:pl-au-5,pl-au-m5;animation-duration:17s,14s}
+      .pl-aurora span:nth-child(6){inline-size:clamp(324px,43vw,691px);opacity:0.8;
+        background:radial-gradient(circle,var(--pl-au-6) 0%,color-mix(in srgb,var(--pl-au-6) 45%,transparent) 46%,transparent 72%);
+        filter:blur(clamp(36px,4.4vw,74px)) saturate(165%);
+        border-radius:46% 54% 62% 38% / 44% 40% 60% 56%;transform:translate3d(-69.3%,-30.3%,0) scale(1.129);
+        animation-name:pl-au-6,pl-au-m6;animation-duration:19s,10s}
+      .pl-aurora span:nth-child(7){inline-size:clamp(234px,31vw,499px);opacity:0.92;
+        background:radial-gradient(circle,var(--pl-au-7) 0%,color-mix(in srgb,var(--pl-au-7) 45%,transparent) 46%,transparent 72%);
+        filter:blur(clamp(36px,4.4vw,74px)) saturate(165%);
+        border-radius:46% 54% 62% 38% / 44% 40% 60% 56%;transform:translate3d(7.3%,-70.0%,0) scale(0.924);
+        animation-name:pl-au-7,pl-au-m7;animation-duration:14s,15s}
+      @keyframes pl-au-1{0%{transform:translate3d(-40.0%,-78.0%,0) scale(1.000)}10%{transform:translate3d(-51.0%,-61.3%,0) scale(1.152)}20%{transform:translate3d(-68.0%,-54.7%,0) scale(1.094)}30%{transform:translate3d(-80.0%,-59.4%,0) scale(0.906)}40%{transform:translate3d(-97.0%,-68.9%,0) scale(0.848)}50%{transform:translate3d(-108.0%,-78.0%,0) scale(1.000)}60%{transform:translate3d(-97.0%,-87.1%,0) scale(1.152)}70%{transform:translate3d(-80.0%,-96.6%,0) scale(1.094)}80%{transform:translate3d(-68.0%,-101.3%,0) scale(0.906)}90%{transform:translate3d(-51.0%,-94.7%,0) scale(0.848)}100%{transform:translate3d(-40.0%,-78.0%,0) scale(1.000)}}
+      @keyframes pl-au-m1{0%{border-radius:58% 42% 38% 62% / 56% 62% 38% 44%}25%{border-radius:40% 60% 55% 45% / 62% 44% 56% 38%}50%{border-radius:62% 38% 44% 56% / 38% 58% 42% 62%}75%{border-radius:46% 54% 62% 38% / 44% 40% 60% 56%}100%{border-radius:58% 42% 38% 62% / 56% 62% 38% 44%}}
+      @keyframes pl-au-2{0%{transform:translate3d(-1.4%,-63.9%,0) scale(1.068)}10%{transform:translate3d(-10.1%,-62.9%,0) scale(0.884)}20%{transform:translate3d(-26.5%,-67.8%,0) scale(0.860)}30%{transform:translate3d(-42.3%,-76.2%,0) scale(1.030)}40%{transform:translate3d(-38.5%,-89.0%,0) scale(1.159)}50%{transform:translate3d(-26.6%,-104.7%,0) scale(1.068)}60%{transform:translate3d(-17.9%,-114.9%,0) scale(0.884)}70%{transform:translate3d(-1.5%,-111.2%,0) scale(0.860)}80%{transform:translate3d(14.3%,-94.3%,0) scale(1.030)}90%{transform:translate3d(10.5%,-75.1%,0) scale(1.159)}100%{transform:translate3d(-1.4%,-63.9%,0) scale(1.068)}}
+      @keyframes pl-au-m2{0%{border-radius:40% 60% 55% 45% / 62% 44% 56% 38%}25%{border-radius:62% 38% 44% 56% / 38% 58% 42% 62%}50%{border-radius:46% 54% 62% 38% / 44% 40% 60% 56%}75%{border-radius:58% 42% 38% 62% / 56% 62% 38% 44%}100%{border-radius:40% 60% 55% 45% / 62% 44% 56% 38%}}
+      @keyframes pl-au-3{0%{transform:translate3d(-35.3%,-3.3%,0) scale(0.912)}10%{transform:translate3d(-56.2%,-6.0%,0) scale(1.100)}20%{transform:translate3d(-56.5%,-16.6%,0) scale(1.150)}30%{transform:translate3d(-48.5%,-32.2%,0) scale(0.993)}40%{transform:translate3d(-38.8%,-43.0%,0) scale(0.846)}50%{transform:translate3d(-16.7%,-41.1%,0) scale(0.912)}60%{transform:translate3d(4.2%,-29.0%,0) scale(1.100)}70%{transform:translate3d(4.5%,-16.0%,0) scale(1.150)}80%{transform:translate3d(-3.5%,-8.2%,0) scale(0.993)}90%{transform:translate3d(-13.2%,-4.7%,0) scale(0.846)}100%{transform:translate3d(-35.3%,-3.3%,0) scale(0.912)}}
+      @keyframes pl-au-m3{0%{border-radius:62% 38% 44% 56% / 38% 58% 42% 62%}25%{border-radius:46% 54% 62% 38% / 44% 40% 60% 56%}50%{border-radius:58% 42% 38% 62% / 56% 62% 38% 44%}75%{border-radius:40% 60% 55% 45% / 62% 44% 56% 38%}100%{border-radius:62% 38% 44% 56% / 38% 58% 42% 62%}}
+      @keyframes pl-au-4{0%{transform:translate3d(-114.5%,-18.2%,0) scale(1.155)}10%{transform:translate3d(-111.6%,-38.9%,0) scale(1.011)}20%{transform:translate3d(-110.1%,-58.1%,0) scale(0.852)}30%{transform:translate3d(-98.0%,-64.3%,0) scale(0.897)}40%{transform:translate3d(-77.0%,-56.4%,0) scale(1.085)}50%{transform:translate3d(-69.5%,-42.1%,0) scale(1.155)}60%{transform:translate3d(-72.4%,-28.5%,0) scale(1.011)}70%{transform:translate3d(-73.9%,-17.3%,0) scale(0.852)}80%{transform:translate3d(-86.0%,-8.8%,0) scale(0.897)}90%{transform:translate3d(-107.0%,-7.3%,0) scale(1.085)}100%{transform:translate3d(-114.5%,-18.2%,0) scale(1.155)}}
+      @keyframes pl-au-m4{0%{border-radius:46% 54% 62% 38% / 44% 40% 60% 56%}25%{border-radius:58% 42% 38% 62% / 56% 62% 38% 44%}50%{border-radius:40% 60% 55% 45% / 62% 44% 56% 38%}75%{border-radius:62% 38% 44% 56% / 38% 58% 42% 62%}100%{border-radius:46% 54% 62% 38% / 44% 40% 60% 56%}}
+      @keyframes pl-au-5{0%{transform:translate3d(-79.5%,-76.5%,0) scale(0.843)}10%{transform:translate3d(-67.2%,-85.2%,0) scale(0.922)}20%{transform:translate3d(-40.0%,-83.0%,0) scale(1.109)}30%{transform:translate3d(-22.8%,-75.6%,0) scale(1.145)}40%{transform:translate3d(-18.5%,-66.5%,0) scale(0.981)}50%{transform:translate3d(-16.5%,-55.3%,0) scale(0.843)}60%{transform:translate3d(-28.8%,-42.7%,0) scale(0.922)}70%{transform:translate3d(-56.0%,-35.5%,0) scale(1.109)}80%{transform:translate3d(-73.2%,-41.2%,0) scale(1.145)}90%{transform:translate3d(-77.5%,-58.4%,0) scale(0.981)}100%{transform:translate3d(-79.5%,-76.5%,0) scale(0.843)}}
+      @keyframes pl-au-m5{0%{border-radius:58% 42% 38% 62% / 56% 62% 38% 44%}25%{border-radius:40% 60% 55% 45% / 62% 44% 56% 38%}50%{border-radius:62% 38% 44% 56% / 38% 58% 42% 62%}75%{border-radius:46% 54% 62% 38% / 44% 40% 60% 56%}100%{border-radius:58% 42% 38% 62% / 56% 62% 38% 44%}}
+      @keyframes pl-au-6{0%{transform:translate3d(-69.3%,-30.3%,0) scale(1.129)}10%{transform:translate3d(-52.6%,-28.9%,0) scale(1.130)}20%{transform:translate3d(-45.7%,-24.3%,0) scale(0.952)}30%{transform:translate3d(-37.8%,-13.8%,0) scale(0.840)}40%{transform:translate3d(-41.5%,1.4%,0) scale(0.949)}50%{transform:translate3d(-62.7%,12.7%,0) scale(1.129)}60%{transform:translate3d(-79.4%,11.4%,0) scale(1.130)}70%{transform:translate3d(-86.3%,-2.1%,0) scale(0.952)}80%{transform:translate3d(-94.2%,-18.2%,0) scale(0.840)}90%{transform:translate3d(-90.5%,-27.9%,0) scale(0.949)}100%{transform:translate3d(-69.3%,-30.3%,0) scale(1.129)}}
+      @keyframes pl-au-m6{0%{border-radius:40% 60% 55% 45% / 62% 44% 56% 38%}25%{border-radius:62% 38% 44% 56% / 38% 58% 42% 62%}50%{border-radius:46% 54% 62% 38% / 44% 40% 60% 56%}75%{border-radius:58% 42% 38% 62% / 56% 62% 38% 44%}100%{border-radius:40% 60% 55% 45% / 62% 44% 56% 38%}}
+      @keyframes pl-au-7{0%{transform:translate3d(7.3%,-70.0%,0) scale(0.924)}10%{transform:translate3d(20.7%,-58.5%,0) scale(0.843)}20%{transform:translate3d(23.8%,-39.1%,0) scale(0.978)}30%{transform:translate3d(6.1%,-22.5%,0) scale(1.144)}40%{transform:translate3d(-12.4%,-19.3%,0) scale(1.111)}50%{transform:translate3d(-23.3%,-29.8%,0) scale(0.924)}60%{transform:translate3d(-36.7%,-45.4%,0) scale(0.843)}70%{transform:translate3d(-39.8%,-58.0%,0) scale(0.978)}80%{transform:translate3d(-22.1%,-66.3%,0) scale(1.144)}90%{transform:translate3d(-3.6%,-71.2%,0) scale(1.111)}100%{transform:translate3d(7.3%,-70.0%,0) scale(0.924)}}
+      @keyframes pl-au-m7{0%{border-radius:62% 38% 44% 56% / 38% 58% 42% 62%}25%{border-radius:46% 54% 62% 38% / 44% 40% 60% 56%}50%{border-radius:58% 42% 38% 62% / 56% 62% 38% 44%}75%{border-radius:40% 60% 55% 45% / 62% 44% 56% 38%}100%{border-radius:62% 38% 44% 56% / 38% 58% 42% 62%}}
+      /* Slow hue drift keeps the palette evolving without a visible loop. */
+      @keyframes pl-au-hue{0%{filter:hue-rotate(0deg)}100%{filter:hue-rotate(360deg)}}
+      @media (prefers-reduced-motion:reduce){
+        .pl-aurora span,.pl-aurora-wrap{animation:none}}
       .pl-topper h1{font-family:var(--type-body);font-size:clamp(46px,8.4vw,104px)!important;
         line-height:.98;letter-spacing:-.038em;font-weight:700;color:var(--pl-white)!important;
-        margin:10px 0 16px}
+        margin:10px auto 16px}
       .pl-topper .sub{color:rgba(255,255,255,.84)!important;max-width:56ch;
         margin-inline:auto;font-size:clamp(17px,1.7vw,22px);line-height:1.5}
       .pl-faq{margin-inline:calc(50% - 50vw);width:100vw;
@@ -2119,17 +2193,8 @@
       .pl-band{--pl-hue:var(--pl-red);--pl-hue2:var(--pl-hue);
         margin-inline:calc(50% - 50vw);width:100vw;
         padding:clamp(48px,7vw,104px) clamp(20px,5vw,64px);
-        background:
-          radial-gradient(76% 64% at 6% -8%,
-            color-mix(in srgb,var(--pl-hue) 30%,transparent),transparent 62%),
-          radial-gradient(62% 56% at 98% 4%,
-            color-mix(in srgb,var(--pl-hue2) 24%,transparent),transparent 60%),
-          radial-gradient(92% 72% at 52% 112%,
-            color-mix(in srgb,var(--pl-hue) 16%,transparent),transparent 64%),
-          linear-gradient(180deg,
-            color-mix(in srgb,var(--pl-hue) 6%,var(--bg)) 0%,
-            var(--bg) 58%,
-            color-mix(in srgb,var(--pl-hue2) 7%,var(--bg)) 100%)}
+        background:var(--bg)}
+      .pl-band:nth-of-type(even){background:var(--bg-alt,var(--card))}
       .pl-band-inner{max-width:1120px;margin-inline:auto}
       .pl-band-electronic{--pl-hue:#7c5cff;--pl-hue2:#2f7cff}
       .pl-band-soul-jazz{--pl-hue:#ff9f0a;--pl-hue2:#ff5e3a}
@@ -2144,7 +2209,7 @@
       .pl-lane-sub{margin:0;font-size:clamp(15px,1.4vw,18px);color:var(--ink-mute)}
 
       .pl-grid{display:grid;gap:clamp(20px,2.4vw,34px);
-        grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+        grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
 
       /* Cover first: the artwork is the card, the copy sits under it. */
       .pl-card{display:flex;flex-direction:column;background:none;border:0;padding:0}
@@ -2171,13 +2236,14 @@
         border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;
         border:1px solid transparent;transition:filter .18s ease,transform .18s ease}
       .pl-action:hover,.pl-action:focus-visible{filter:brightness(1.08);transform:translateY(-1px)}
-      a.pl-action-spotify,.content a.pl-action-spotify{background:var(--pl-red);color:var(--pl-white)}
-      a.pl-action-apple,.content a.pl-action-apple{color:var(--ink)}
+      a.pl-action-spotify,.content a.pl-action-spotify{background:var(--pl-spotify);color:var(--pl-ink-on-brand)}
+      a.pl-action-apple,.content a.pl-action-apple{background:var(--pl-ink-on-brand);color:var(--pl-white);
+        border-color:color-mix(in srgb,var(--pl-white) 26%,transparent)}
+      .pl-mark{flex:none;display:block}
+      a.pl-action-spotify:hover,a.pl-action-spotify:focus-visible,
+      a.pl-action-apple:hover,a.pl-action-apple:focus-visible{filter:brightness(1.12)}
       .content a.pl-chip{color:var(--ink-soft)}
       .content a.pl-cover{color:inherit}
-      .pl-action-apple{background:transparent;color:var(--ink);border-color:var(--border)}
-      .pl-action-apple:hover,.pl-action-apple:focus-visible{border-color:var(--pl-red);
-        color:var(--pl-red)}
 
       .pl-everywhere{margin-inline:calc(50% - 50vw);width:100vw;
         padding:clamp(56px,8vw,116px) clamp(20px,5vw,64px);text-align:center;
@@ -2316,9 +2382,10 @@
     </header>
 
         <section class="ap-hero pl-topper">
-        <span class="ap-hero-eyebrow">Listening</span>
+        <div class="pl-aurora" aria-hidden="true"><div class="pl-aurora-wrap"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
         <h1>Playlists</h1>
         <p class="sub">{{subtitle}}</p>
+        <a class="pl-jump" href="#lane-electronic">Browse the playlists</a>
       </section>
 
       <main id="main" class="content ap-section">
@@ -2327,10 +2394,10 @@
           <div class="playlist-platforms" data-reveal>
 <p class="playlist-platforms-label">Listen where you already are</p>
 <a class="playlist-platform playlist-platform-spotify" href="https://open.spotify.com/user/sebastienrousseau" target="_blank" rel="me noopener">
-<span aria-hidden="true">&#9835;</span> Follow on Spotify
+<svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg> Follow on Spotify
 </a>
 <a class="playlist-platform playlist-platform-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="me noopener">
-<span aria-hidden="true">&#63743;</span> Follow on Apple Music
+<svg class="pl-mark" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg> Follow on Apple Music
 </a>
 </div>
 <nav class="playlist-chips" aria-label="Jump to a lane"><a class="playlist-chip" href="#lane-electronic">Disco, house and workout</a><a class="playlist-chip" href="#lane-soul-jazz">Soulful, jazz and downtempo</a><a class="playlist-chip" href="#lane-hip-hop">Rap, R&amp;B and beats</a><a class="playlist-chip" href="#lane-morning-mood">Energy and tone</a><a class="playlist-chip" href="#lane-global">World rhythms</a></nav>
@@ -2341,11 +2408,11 @@
 <div class="pl-hero-copy">
 <p class="pl-hero-kicker">Latest playlist</p>
 <h2 class="pl-hero-title" itemprop="name">Lōkahi 🌺</h2>
-<p class="pl-hero-desc" itemprop="description">Sun-drenched indie pop that slips into French house — Tame Impala and almost monday giving way to Stardust, Modjo, Daft Punk and Justice, then Afro house from HUGEL and Salif Keita.</p>
+<p class="pl-hero-desc" itemprop="description">Sun-drenched indie pop sliding into French house — Tame Impala and almost monday giving way to Justice, L'Impératrice and Afro house from HUGEL.</p>
 <p class="pl-hero-meta"><time datetime="2026-08-22">August 2026</time> · Indie pop · French house</p>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6dhwZBIQ4dpoc9lne6b7Aj" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
-<a class="pl-action pl-action-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="noopener">Follow on Apple Music</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6dhwZBIQ4dpoc9lne6b7Aj" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
+<a class="pl-action pl-action-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Listen on Apple Music</a>
 </div>
 </div>
 <div class="pl-hero-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/6dhwZBIQ4dpoc9lne6b7Aj?utm_source=generator&amp;theme=0" width="100%" height="352" frameBorder="0" loading="lazy" title="Lōkahi 🌺 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
@@ -2369,12 +2436,12 @@
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/79rcQ3HAOu3RQTu0hyPFVX" target="_blank" rel="noopener" aria-label="Open ETERNAL GROOVE 🪩 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84ea3cd37ea58de627af7ab3af" alt="Cover artwork for the ETERNAL GROOVE 🪩 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Disco · Classic house</span>
+<span class="pl-genre">Disco house · Garage</span>
 <h3 class="pl-title" itemprop="name">ETERNAL GROOVE 🪩</h3>
-<p class="pl-desc" itemprop="description">Timeless 90s–00s disco & house anthems. Euphoric, soulful, and floor-filling grooves built for nights where the beat never ends.</p>
+<p class="pl-desc" itemprop="description">Late-nineties disco house and garage that still fills a floor — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden and Boris Dlugosch.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/79rcQ3HAOu3RQTu0hyPFVX?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="ETERNAL GROOVE 🪩 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/79rcQ3HAOu3RQTu0hyPFVX" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/79rcQ3HAOu3RQTu0hyPFVX" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
@@ -2382,10 +2449,10 @@
 <img src="https://i.scdn.co/image/ab67706c0000da84fa9411fea3e5385a56df77d2" alt="Cover artwork for the Lōkahi 🌺 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
 <span class="pl-genre">Indie pop · French house</span>
 <h3 class="pl-title" itemprop="name">Lōkahi 🌺</h3>
-<p class="pl-desc" itemprop="description">Sun-drenched indie pop that slips into French house — Tame Impala and almost monday giving way to Stardust, Modjo, Daft Punk and Justice, then Afro house from HUGEL and Salif Keita.</p>
+<p class="pl-desc" itemprop="description">Sun-drenched indie pop sliding into French house — Tame Impala and almost monday giving way to Justice, L'Impératrice and Afro house from HUGEL.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/6dhwZBIQ4dpoc9lne6b7Aj?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="Lōkahi 🌺 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6dhwZBIQ4dpoc9lne6b7Aj" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6dhwZBIQ4dpoc9lne6b7Aj" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
@@ -2393,10 +2460,10 @@
 <img src="https://i.scdn.co/image/ab67706c0000da84f6ea0a0bfa74c52c95690cc4" alt="Cover artwork for the FOREVER ♾️ playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
 <span class="pl-genre">French touch · Electro</span>
 <h3 class="pl-title" itemprop="name">FOREVER ♾️</h3>
-<p class="pl-desc" itemprop="description">French touch at full beam — Daft Punk, Justice, Kavinsky and L'Impératrice trading neon synths and motorik basslines.</p>
+<p class="pl-desc" itemprop="description">French touch at full beam — Daft Punk, Justice, Kavinsky, L'Impératrice and Angèle trading neon synths and motorik basslines.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/2r2g4G5wTSucqWda5MkuXH?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="FOREVER ♾️ playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2r2g4G5wTSucqWda5MkuXH" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2r2g4G5wTSucqWda5MkuXH" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
@@ -2404,65 +2471,65 @@
 <img src="https://i.scdn.co/image/ab67706c0000da84e8a289b744da9c54e867ce52" alt="Cover artwork for the GOLDEN HOUR 🌟 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
 <span class="pl-genre">Indie dance · Synth pop</span>
 <h3 class="pl-title" itemprop="name">GOLDEN HOUR 🌟</h3>
-<p class="pl-desc" itemprop="description">Golden-hour synth pop and indie dance, with Blu DeTiger, Magdalena Bay and Merty Shango carrying the shimmer.</p>
+<p class="pl-desc" itemprop="description">Golden-hour synth pop and indie dance — Blu DeTiger, Merty Shango, Citrus Sun and Enne carrying the shimmer into the evening.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/3YiO3L3LMWlXaGEGtJFdXo?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="GOLDEN HOUR 🌟 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/3YiO3L3LMWlXaGEGtJFdXo" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/3YiO3L3LMWlXaGEGtJFdXo" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/0S31oWFMppEkhtHiSsldI1" target="_blank" rel="noopener" aria-label="Open LOOK 💋 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84e5f9a33792844a185541953b" alt="Cover artwork for the LOOK 💋 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Nu-disco · Electro</span>
+<span class="pl-genre">Nu-disco · French house</span>
 <h3 class="pl-title" itemprop="name">LOOK 💋</h3>
-<p class="pl-desc" itemprop="description">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke.</p>
+<p class="pl-desc" itemprop="description">Nu-disco and French house with the filter open — Fred Falke, Breakbot, Madeon, Lemaitre and Yelle.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/0S31oWFMppEkhtHiSsldI1?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="LOOK 💋 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/0S31oWFMppEkhtHiSsldI1" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/0S31oWFMppEkhtHiSsldI1" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/5OQTseRtYQtZF6kERLvcSz" target="_blank" rel="noopener" aria-label="Open CITY ⛩️ on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84b01797b3eaa398e5be8a19c8" alt="Cover artwork for the CITY ⛩️ playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Techno · Progressive house</span>
+<span class="pl-genre">Progressive house · Electro</span>
 <h3 class="pl-title" itemprop="name">CITY ⛩️</h3>
-<p class="pl-desc" itemprop="description">Immerse yourself in the pulsating rhythms of stripped-back techno, progressive house, and endless dance tracks.</p>
+<p class="pl-desc" itemprop="description">Progressive house and electro built for movement — Madeon, Paul Woolford, Martin Solveig, Secondcity and The Knocks.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/5OQTseRtYQtZF6kERLvcSz?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="CITY ⛩️ playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5OQTseRtYQtZF6kERLvcSz" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5OQTseRtYQtZF6kERLvcSz" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/5OksFu1fF3eHNifxxAcev6" target="_blank" rel="noopener" aria-label="Open NEO DANCE 🪩 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84c99c974c5fc72d354495ffa0" alt="Cover artwork for the NEO DANCE 🪩 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Nu-disco · House</span>
+<span class="pl-genre">Nu-disco · Filtered house</span>
 <h3 class="pl-title" itemprop="name">NEO DANCE 🪩</h3>
-<p class="pl-desc" itemprop="description">Nu-disco and filtered house built for movement — Aevion, Lenno, Oliver, Yelle and Tore P.</p>
+<p class="pl-desc" itemprop="description">Nu-disco and filtered house built for movement — Lenno, Oliver, Tollef and Yelle over clipped guitars and fat synth bass.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/5OksFu1fF3eHNifxxAcev6?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="NEO DANCE 🪩 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5OksFu1fF3eHNifxxAcev6" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5OksFu1fF3eHNifxxAcev6" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/1lZbauO3yCPB3YAyT5xLCW" target="_blank" rel="noopener" aria-label="Open ESSENTIAL 💚 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84f7cdb833e8c21996a92c1c1c" alt="Cover artwork for the ESSENTIAL 💚 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">House · Deep house</span>
+<span class="pl-genre">Deep house · Melodic house</span>
 <h3 class="pl-title" itemprop="name">ESSENTIAL 💚</h3>
-<p class="pl-desc" itemprop="description">Laid-back beats, house-influenced grooves and new deep house tracks.</p>
+<p class="pl-desc" itemprop="description">A hundred deep and melodic house tracks that stay out of the way — Chris Malinchak, Sultan + Shepard, Lenno and Nora Van Elken.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/1lZbauO3yCPB3YAyT5xLCW?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="ESSENTIAL 💚 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/1lZbauO3yCPB3YAyT5xLCW" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/1lZbauO3yCPB3YAyT5xLCW" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/5vKhAAaO06St5XoCh96PxR" target="_blank" rel="noopener" aria-label="Open EVOLUTION ☀️ on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84ef337638a24f69f31d0567da" alt="Cover artwork for the EVOLUTION ☀️ playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Future house · Pop</span>
+<span class="pl-genre">Future house · Electro pop</span>
 <h3 class="pl-title" itemprop="name">EVOLUTION ☀️</h3>
-<p class="pl-desc" itemprop="description">Bright future house and electronic pop from Lenno, Midnight Kids, Party Pupils and Javeon.</p>
+<p class="pl-desc" itemprop="description">Bright future house and electro pop — Lenno, La Felix, The Knocks, Kraak & Smaak and Chris Malinchak across a hundred tracks.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/5vKhAAaO06St5XoCh96PxR?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="EVOLUTION ☀️ playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5vKhAAaO06St5XoCh96PxR" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5vKhAAaO06St5XoCh96PxR" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 </div>
@@ -2473,40 +2540,40 @@
 <div class="pl-band-inner">
 <header class="pl-lane-head">
 <h2 class="pl-lane-title" id="lane-soul-jazz-h">Soul &amp; Jazz</h2>
-<p class="pl-lane-sub">Neo soul, nu jazz and slow tempo · 14 playlists</p>
+<p class="pl-lane-sub">Neo soul, nu jazz and slow tempo · 13 playlists</p>
 </header>
 <div class="pl-grid">
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/2CeSPJPwxmhbIIdfXyap3F" target="_blank" rel="noopener" aria-label="Open THE DATE on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da8452cbacbd7c6cf52a2c2b2a78" alt="Cover artwork for the THE DATE playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Jazzy hip-hop · Downtempo</span>
+<span class="pl-genre">Jazzy hip-hop · Boom bap</span>
 <h3 class="pl-title" itemprop="name">THE DATE</h3>
-<p class="pl-desc" itemprop="description">Chill vibes and smooth grooves—The Date playlist blends jazzy hip-hop, mellow beats, and soulful flows, perfect for setting the mood or unwinding in style. 🎶</p>
+<p class="pl-desc" itemprop="description">Jazz-sampling boom bap for slow evenings — Blu & Exile, Large Professor, 3582 and Scienze trading warm loops and unhurried verses.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/2CeSPJPwxmhbIIdfXyap3F?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="THE DATE playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2CeSPJPwxmhbIIdfXyap3F" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2CeSPJPwxmhbIIdfXyap3F" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/0mrwKGH6s0MWsNfMCtcTQz" target="_blank" rel="noopener" aria-label="Open Groovation 🎷 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da840924f35ba443453381778c15" alt="Cover artwork for the Groovation 🎷 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Jazz-hop · Soul</span>
+<span class="pl-genre">Jazz-hop · Boom bap</span>
 <h3 class="pl-title" itemprop="name">Groovation 🎷</h3>
-<p class="pl-desc" itemprop="description">A smooth blend of jazz-infused beats, soulful bars, and golden-era groove—perfect for late nights, deep thoughts, and head-nodding escape. Pure sonic therapy.</p>
+<p class="pl-desc" itemprop="description">Golden-era jazz-hop from the Phoniks camp — Awon & Phoniks, Anti Lilly, Dephlow and Tiff the Gift over dusty horns and upright bass.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/0mrwKGH6s0MWsNfMCtcTQz?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="Groovation 🎷 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/0mrwKGH6s0MWsNfMCtcTQz" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/0mrwKGH6s0MWsNfMCtcTQz" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/56Vs5RzfyK1uqwWFoTz3SB" target="_blank" rel="noopener" aria-label="Open Thrill Seekers 🌀 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84e7baa033889bbb3bf6657d4e" alt="Cover artwork for the Thrill Seekers 🌀 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Alternative R&B · Downtempo</span>
+<span class="pl-genre">Alternative R&B · Neo soul</span>
 <h3 class="pl-title" itemprop="name">Thrill Seekers 🌀</h3>
-<p class="pl-desc" itemprop="description">A genre-blurring ride through lush beats, soulful flows, and late-night textures curated for seekers of motion, feeling, and moments that linger.</p>
+<p class="pl-desc" itemprop="description">Alternative R&B and late-night neo soul — Brent Faiyaz, Elujay, J.Robb and Lou Phelps over woozy drums and unhurried basslines.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/56Vs5RzfyK1uqwWFoTz3SB?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="Thrill Seekers 🌀 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/56Vs5RzfyK1uqwWFoTz3SB" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/56Vs5RzfyK1uqwWFoTz3SB" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
@@ -2514,21 +2581,21 @@
 <img src="https://i.scdn.co/image/ab67706c0000da84d762254e7a9fd7b28eaf61d9" alt="Cover artwork for the 1975 🪩 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
 <span class="pl-genre">Disco · Boogie</span>
 <h3 class="pl-title" itemprop="name">1975 🪩</h3>
-<p class="pl-desc" itemprop="description">Seventies and eighties floor fillers — The Jacksons, Luther Vandross, Patrice Rushen and Change. Strings, claps, pure boogie.</p>
+<p class="pl-desc" itemprop="description">Seventies and eighties floor fillers — CHIC, Luther Vandross, The Jacksons, Change and Oliver Cheatham. Strings, claps and basslines that do the work.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/1q8SfSUHyFxjUWucE9A1wR?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="1975 🪩 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/1q8SfSUHyFxjUWucE9A1wR" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/1q8SfSUHyFxjUWucE9A1wR" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/7GLBaZHcJ5st67eMCILolm" target="_blank" rel="noopener" aria-label="Open Back to Life 🛟 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da8443105358a81c27b7357bc798" alt="Cover artwork for the Back to Life 🛟 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Soul · Nu jazz</span>
+<span class="pl-genre">Acid jazz · Nu jazz</span>
 <h3 class="pl-title" itemprop="name">Back to Life 🛟</h3>
-<p class="pl-desc" itemprop="description">Soulful house and nu jazz with a live pulse: Nuyorican Soul, Jocelyn Brown, Gretchen Parlato and Count Basic.</p>
+<p class="pl-desc" itemprop="description">Acid jazz and nu jazz with a live band behind it — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson and Count Basic.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/7GLBaZHcJ5st67eMCILolm?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="Back to Life 🛟 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/7GLBaZHcJ5st67eMCILolm" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/7GLBaZHcJ5st67eMCILolm" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
@@ -2536,54 +2603,43 @@
 <img src="https://i.scdn.co/image/ab67706c0000da84b553ef6f2c246695cc5cfdf1" alt="Cover artwork for the UBUNTU 🍥 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
 <span class="pl-genre">Gospel · Soul</span>
 <h3 class="pl-title" itemprop="name">UBUNTU 🍥</h3>
-<p class="pl-desc" itemprop="description">Gospel-rooted soul that lifts a room — Kirk Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris and Avery*Sunshine.</p>
+<p class="pl-desc" itemprop="description">Gospel-rooted soul that lifts a room — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris and Avery*Sunshine.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/2WxvFba2Sgg4Sd3lZJHmHP?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="UBUNTU 🍥 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2WxvFba2Sgg4Sd3lZJHmHP" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2WxvFba2Sgg4Sd3lZJHmHP" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/36Rkih8f9fgd92jI3QVMrQ" target="_blank" rel="noopener" aria-label="Open NEOVIE 🌱 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84f2628cb7fa5462dabcd8fba7" alt="Cover artwork for the NEOVIE 🌱 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Neo soul · Broken beat</span>
+<span class="pl-genre">Broken beat · Nu jazz</span>
 <h3 class="pl-title" itemprop="name">NEOVIE 🌱</h3>
-<p class="pl-desc" itemprop="description">Neo soul and broken beat for slow afternoons, with The Foreign Exchange, Emma-Jean Thackray and Gwen Bunn.</p>
+<p class="pl-desc" itemprop="description">Broken beat and UK nu jazz for slow afternoons — Emma-Jean Thackray, Blue Lab Beats, Galliano and The Brand New Heavies.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/36Rkih8f9fgd92jI3QVMrQ?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="NEOVIE 🌱 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/36Rkih8f9fgd92jI3QVMrQ" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
-</div>
-</article>
-<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<a class="pl-cover" href="https://open.spotify.com/playlist/2JGGk44Nopf8BX7oYJsler" target="_blank" rel="noopener" aria-label="Open COLOURS 🌈 on Spotify">
-<img src="https://i.scdn.co/image/ab67706c0000da8475e09afb846f2658b29bd236" alt="Cover artwork for the COLOURS 🌈 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Soul · Joy</span>
-<h3 class="pl-title" itemprop="name">COLOURS 🌈</h3>
-<p class="pl-desc" itemprop="description">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms.</p>
-<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/2JGGk44Nopf8BX7oYJsler?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="COLOURS 🌈 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
-<div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2JGGk44Nopf8BX7oYJsler" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/36Rkih8f9fgd92jI3QVMrQ" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/261aHSqcEnM5KnTCLSNFQz" target="_blank" rel="noopener" aria-label="Open TIMES ⏳ on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da8465f695e82cbb1b08e5a296b3" alt="Cover artwork for the TIMES ⏳ playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Soul · Broken beat</span>
+<span class="pl-genre">British soul · Broken beat</span>
 <h3 class="pl-title" itemprop="name">TIMES ⏳</h3>
-<p class="pl-desc" itemprop="description">British soul and broken beat at its warmest: Incognito, Shaun Escoffery, Eric Benét, Lucy Pearl and Full Flava.</p>
+<p class="pl-desc" itemprop="description">British soul at its warmest — Incognito, Shaun Escoffery, Cherri V and Tortured Soul, with Stevie Wonder in the room.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/261aHSqcEnM5KnTCLSNFQz?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="TIMES ⏳ playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/261aHSqcEnM5KnTCLSNFQz" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/261aHSqcEnM5KnTCLSNFQz" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/2XO0Kw6aCXdfUT3coih7vg" target="_blank" rel="noopener" aria-label="Open WAVES 🌊 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84a2f65062cc32aca8a80335b6" alt="Cover artwork for the WAVES 🌊 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Jazz · R&B</span>
+<span class="pl-genre">Modern jazz · R&B</span>
 <h3 class="pl-title" itemprop="name">WAVES 🌊</h3>
-<p class="pl-desc" itemprop="description">Modern jazz and R&B in conversation — Robert Glasper, Esperanza Spalding, Tori Kelly, Brandy and Nate Smith.</p>
+<p class="pl-desc" itemprop="description">Modern jazz and R&B in conversation — Robert Glasper, August Greene, Common, Karriem Riggins and Brandy.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/2XO0Kw6aCXdfUT3coih7vg?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="WAVES 🌊 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2XO0Kw6aCXdfUT3coih7vg" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2XO0Kw6aCXdfUT3coih7vg" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
@@ -2591,32 +2647,32 @@
 <img src="https://i.scdn.co/image/ab67706c0000da845e321bde595bb619410594a1" alt="Cover artwork for the LOVE ❤️ playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
 <span class="pl-genre">Soul · Jazz funk</span>
 <h3 class="pl-title" itemprop="name">LOVE ❤️</h3>
-<p class="pl-desc" itemprop="description">Love songs with real players behind them: Bill Withers, Incognito, Snarky Puppy, Lady Blackbird and Citrus Sun.</p>
+<p class="pl-desc" itemprop="description">Love songs with real players behind them — 4hero and Marc Mac, Incognito, Imaani, Natalie Duncan and Adi Oasis.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/0UWRprsfYCjbnpLHCNUCPF?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="LOVE ❤️ playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/0UWRprsfYCjbnpLHCNUCPF" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/0UWRprsfYCjbnpLHCNUCPF" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/5RQ9X2WmRseY9SEU5oLwwX" target="_blank" rel="noopener" aria-label="Open SUMMERTIME 🌞 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84194d2347398021360c2fd549" alt="Cover artwork for the SUMMERTIME 🌞 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Soul · Jazz</span>
+<span class="pl-genre">Neo soul · Jazz</span>
 <h3 class="pl-title" itemprop="name">SUMMERTIME 🌞</h3>
-<p class="pl-desc" itemprop="description">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R&B and Neo Soul beats.</p>
+<p class="pl-desc" itemprop="description">Fifty-five neo soul and jazz cuts for warm evenings — India.Arie, Robert Glasper, Lucy Pearl, Anthony David and Ronny Jordan.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/5RQ9X2WmRseY9SEU5oLwwX?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="SUMMERTIME 🌞 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5RQ9X2WmRseY9SEU5oLwwX" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5RQ9X2WmRseY9SEU5oLwwX" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/7yvugJcCzkaWN908rXTSIL" target="_blank" rel="noopener" aria-label="Open NEO SOUL 🎶 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84ab134bdb207cccad40efcaf9" alt="Cover artwork for the NEO SOUL 🎶 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Soul · R&B</span>
+<span class="pl-genre">Neo soul · Modern R&B</span>
 <h3 class="pl-title" itemprop="name">NEO SOUL 🎶</h3>
-<p class="pl-desc" itemprop="description">A deep dive into the quintessential collection of Jazz, Soul, R&B and Neo Soul beats.</p>
+<p class="pl-desc" itemprop="description">Seventy-three neo soul and modern R&B cuts — Alex Isley, Yebba, Ego Ella May, Robert Glasper and Blue Lab Beats.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/7yvugJcCzkaWN908rXTSIL?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="NEO SOUL 🎶 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/7yvugJcCzkaWN908rXTSIL" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/7yvugJcCzkaWN908rXTSIL" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
@@ -2624,10 +2680,10 @@
 <img src="https://i.scdn.co/image/ab67706c0000da846c1230cdbadc6b04d1eabb5d" alt="Cover artwork for the SPOTLIGHT 🔆 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
 <span class="pl-genre">Jazz funk · Neo soul</span>
 <h3 class="pl-title" itemprop="name">SPOTLIGHT 🔆</h3>
-<p class="pl-desc" itemprop="description">Jazz funk and neo soul with the spotlight on the players — Patrice Rushen, Omar, Kenny Garrett, Jill Scott and Stro Elliot.</p>
+<p class="pl-desc" itemprop="description">A hundred tracks with the spotlight on the players — Erykah Badu, Jill Scott, Omar, Esperanza Spalding and Stevie Wonder.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/5wjy0SY2jCwAZ4UFLF3eXC?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="SPOTLIGHT 🔆 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5wjy0SY2jCwAZ4UFLF3eXC" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5wjy0SY2jCwAZ4UFLF3eXC" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 </div>
@@ -2638,84 +2694,73 @@
 <div class="pl-band-inner">
 <header class="pl-lane-head">
 <h2 class="pl-lane-title" id="lane-hip-hop-h">Hip-Hop</h2>
-<p class="pl-lane-sub">Rap, R&B and golden-era grooves · 7 playlists</p>
+<p class="pl-lane-sub">Boom bap, jazz rap and golden-era grooves · 6 playlists</p>
 </header>
 <div class="pl-grid">
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/6rCGkdLLdt6IXhkQvXSwyF" target="_blank" rel="noopener" aria-label="Open ETHEREAL on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84b4d17e7e80d28b850a7e1bf9" alt="Cover artwork for the ETHEREAL playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Boom bap · Rap</span>
+<span class="pl-genre">Rap · West coast</span>
 <h3 class="pl-title" itemprop="name">ETHEREAL</h3>
-<p class="pl-desc" itemprop="description">Heavyweight rap across the eras, from DJ Muggs and ETO to Eminem, Nicki Minaj and Fat Joe. Dusty drums, sharp pens.</p>
+<p class="pl-desc" itemprop="description">A hundred tracks of rap across four decades — 2Pac and Dr. Dre, Snoop Dogg and Tha Dogg Pound, Ghostface Killah, Nicki Minaj and DJ Muggs.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/6rCGkdLLdt6IXhkQvXSwyF?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="ETHEREAL playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6rCGkdLLdt6IXhkQvXSwyF" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6rCGkdLLdt6IXhkQvXSwyF" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/5mKe1KjwZRzTS4FtU2jejT" target="_blank" rel="noopener" aria-label="Open OBLIVION 💫 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84bf4753aa2e1bfe52f24dc42a" alt="Cover artwork for the OBLIVION 💫 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">West coast · Rap</span>
+<span class="pl-genre">Rap · Soul · French touch</span>
 <h3 class="pl-title" itemprop="name">OBLIVION 💫</h3>
-<p class="pl-desc" itemprop="description">West coast weight and francophone rap side by side — Dr. Dre, Eminem, Xzibit, 113 and Jimmy Sissoko.</p>
+<p class="pl-desc" itemprop="description">A hundred-track crate dig with no genre rule — Dr. Dre and Eminem beside MC Solaar and 113, Charles Aznavour beside DJ Mehdi and Thomas Bangalter.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/5mKe1KjwZRzTS4FtU2jejT?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="OBLIVION 💫 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5mKe1KjwZRzTS4FtU2jejT" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5mKe1KjwZRzTS4FtU2jejT" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/6830pCYVUFYHtnkE4SJfhR" target="_blank" rel="noopener" aria-label="Open BLAST 💥 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84e1f98d87d37ba214a465652b" alt="Cover artwork for the BLAST 💥 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Hip-hop · Rap</span>
+<span class="pl-genre">Hardcore rap · Boom bap</span>
 <h3 class="pl-title" itemprop="name">BLAST 💥</h3>
-<p class="pl-desc" itemprop="description">Brace yourself for hardcore rap and hip hop tracks.</p>
+<p class="pl-desc" itemprop="description">Hardcore nineties rap with the volume up — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre and Snoop Dogg.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/6830pCYVUFYHtnkE4SJfhR?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="BLAST 💥 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6830pCYVUFYHtnkE4SJfhR" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6830pCYVUFYHtnkE4SJfhR" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/6jFJIxFfpUx0oGkbLDImKB" target="_blank" rel="noopener" aria-label="Open HIP-HOP 🎤 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da846bf59c3ee949f0b5203ee8ee" alt="Cover artwork for the HIP-HOP 🎤 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Hip-hop · R&B</span>
+<span class="pl-genre">Boom bap · Jazz rap</span>
 <h3 class="pl-title" itemprop="name">HIP-HOP 🎤</h3>
-<p class="pl-desc" itemprop="description">Original Hip Hop, Rap and R&B Flavor Sessions.</p>
+<p class="pl-desc" itemprop="description">Eighty-six cuts of nineties boom bap and jazz rap — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde and Guru's Jazzmatazz.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/6jFJIxFfpUx0oGkbLDImKB?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="HIP-HOP 🎤 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6jFJIxFfpUx0oGkbLDImKB" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6jFJIxFfpUx0oGkbLDImKB" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/5yUR35ZVOOpxyPOBhAvhkR" target="_blank" rel="noopener" aria-label="Open HIP HOP MIXTAPE 📼 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da844be1d414769f27e5c2f76eda" alt="Cover artwork for the HIP HOP MIXTAPE 📼 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Hip-hop</span>
+<span class="pl-genre">Underground · Boom bap</span>
 <h3 class="pl-title" itemprop="name">HIP HOP MIXTAPE 📼</h3>
-<p class="pl-desc" itemprop="description">A few of the favourite hip-hop gems.</p>
+<p class="pl-desc" itemprop="description">Underground boom bap and instrumentals — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D and Shing02.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/5yUR35ZVOOpxyPOBhAvhkR?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="HIP HOP MIXTAPE 📼 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5yUR35ZVOOpxyPOBhAvhkR" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
-</div>
-</article>
-<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<a class="pl-cover" href="https://open.spotify.com/playlist/3Eg1SZ5yYbtdytaV3sVg6C" target="_blank" rel="noopener" aria-label="Open POP WORKOUT 🥤 on Spotify">
-<img src="https://i.scdn.co/image/ab67706c0000da8444ec7469e1ccb1dab6d21c6d" alt="Cover artwork for the POP WORKOUT 🥤 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Pop · Hip-hop</span>
-<h3 class="pl-title" itemprop="name">POP WORKOUT 🥤</h3>
-<p class="pl-desc" itemprop="description">Explore some of the newest tracks in pop music, from traditional sounds to hip-hop hybrids and beyond.</p>
-<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/3Eg1SZ5yYbtdytaV3sVg6C?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="POP WORKOUT 🥤 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
-<div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/3Eg1SZ5yYbtdytaV3sVg6C" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5yUR35ZVOOpxyPOBhAvhkR" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/5yegPuy33SiP7DIwL6MF0J" target="_blank" rel="noopener" aria-label="Open WORKOUT BEATS 💿 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84b7a032c4641457f36e6abbb6" alt="Cover artwork for the WORKOUT BEATS 💿 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Hip-hop · Indie pop</span>
+<span class="pl-genre">Indie hip-hop · Pop rap</span>
 <h3 class="pl-title" itemprop="name">WORKOUT BEATS 💿</h3>
-<p class="pl-desc" itemprop="description">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks.</p>
+<p class="pl-desc" itemprop="description">Indie hip-hop and pop rap with momentum — Quinn XCII, Kid Quill, EMAN8, gianni & kyle and YONAS.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/5yegPuy33SiP7DIwL6MF0J?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="WORKOUT BEATS 💿 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5yegPuy33SiP7DIwL6MF0J" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5yegPuy33SiP7DIwL6MF0J" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 </div>
@@ -2726,7 +2771,7 @@
 <div class="pl-band-inner">
 <header class="pl-lane-head">
 <h2 class="pl-lane-title" id="lane-morning-mood-h">Morning &amp; Mood</h2>
-<p class="pl-lane-sub">Wake-up energy and evening calm · 8 playlists</p>
+<p class="pl-lane-sub">Downtempo, lo-fi and wake-up energy · 10 playlists</p>
 </header>
 <div class="pl-grid">
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
@@ -2734,21 +2779,21 @@
 <img src="https://i.scdn.co/image/ab67706c0000da84808664129c9412b41219d18a" alt="Cover artwork for the SWIM 🏊 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
 <span class="pl-genre">Chillwave · Downtempo</span>
 <h3 class="pl-title" itemprop="name">SWIM 🏊</h3>
-<p class="pl-desc" itemprop="description">Chill grooves, dreamy vibes, and smooth rhythms for floating through your day—perfect for a swim, a drive, or getting lost in thought. Dive in.</p>
+<p class="pl-desc" itemprop="description">Weightless downtempo for a long drive or a slow morning — Zero 7, Les Imprimés and Ciao Ciao Marigold over soft-focus drums.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/40OkPs9Yk4AtBZrtYz5xtW?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="SWIM 🏊 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/40OkPs9Yk4AtBZrtYz5xtW" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/40OkPs9Yk4AtBZrtYz5xtW" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/4PBfAfwUv5fEJAYErxvNJ4" target="_blank" rel="noopener" aria-label="Open PARISIAN DESTINY 🗼 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84249221c7ca82936f59a3b3aa" alt="Cover artwork for the PARISIAN DESTINY 🗼 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Trip-hop · Downtempo</span>
+<span class="pl-genre">Trip-hop · Jazz-hop</span>
 <h3 class="pl-title" itemprop="name">PARISIAN DESTINY 🗼</h3>
-<p class="pl-desc" itemprop="description">Jazz-sampling trip-hop from Proleter, Poldoore, The Geek x Vrv and Ours Samplus. Cinematic, unhurried, built for headphones.</p>
+<p class="pl-desc" itemprop="description">Jazz-sampling trip-hop from Proleter, Poldoore, Souleance and The Geek x Vrv. Cinematic, unhurried, built for writing.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/4PBfAfwUv5fEJAYErxvNJ4?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="PARISIAN DESTINY 🗼 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/4PBfAfwUv5fEJAYErxvNJ4" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/4PBfAfwUv5fEJAYErxvNJ4" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
@@ -2756,65 +2801,87 @@
 <img src="https://i.scdn.co/image/ab67706c0000da84c101708017adfc783a7a6ff1" alt="Cover artwork for the TETRA 🔱 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
 <span class="pl-genre">Downtempo · Nu jazz</span>
 <h3 class="pl-title" itemprop="name">TETRA 🔱</h3>
-<p class="pl-desc" itemprop="description">Downtempo and nu jazz to think against: Zero 7, Michael League, Souleance, Flatpocket and Twit One.</p>
+<p class="pl-desc" itemprop="description">Downtempo and nu jazz to think against — Zero 7, The Cinematic Orchestra, Souleance, Mozez and Ida Nielsen.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/2KTuNfNOJsvUmrcTK3Erh5?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="TETRA 🔱 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2KTuNfNOJsvUmrcTK3Erh5" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2KTuNfNOJsvUmrcTK3Erh5" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
+</div>
+</article>
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/2JGGk44Nopf8BX7oYJsler" target="_blank" rel="noopener" aria-label="Open COLOURS 🌈 on Spotify">
+<img src="https://i.scdn.co/image/ab67706c0000da8475e09afb846f2658b29bd236" alt="Cover artwork for the COLOURS 🌈 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Trip-hop · Downtempo</span>
+<h3 class="pl-title" itemprop="name">COLOURS 🌈</h3>
+<p class="pl-desc" itemprop="description">Trip-hop and downtempo with a soul core — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra and Nina Simone reworked.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/2JGGk44Nopf8BX7oYJsler?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="COLOURS 🌈 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2JGGk44Nopf8BX7oYJsler" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/6Utj7AwHY6VkgGtm9wAneh" target="_blank" rel="noopener" aria-label="Open LO-FI BEATS 🎹 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84204903094655b4749439b10f" alt="Cover artwork for the LO-FI BEATS 🎹 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Lo-fi</span>
+<span class="pl-genre">Lo-fi · Study beats</span>
 <h3 class="pl-title" itemprop="name">LO-FI BEATS 🎹</h3>
-<p class="pl-desc" itemprop="description">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats.</p>
+<p class="pl-desc" itemprop="description">Fifty-two lo-fi hip hop beats for studying and deep work — Idealism, j'san, Joey Pecoraro, Sugi.wa and aimless. No vocals to argue with.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/6Utj7AwHY6VkgGtm9wAneh?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="LO-FI BEATS 🎹 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6Utj7AwHY6VkgGtm9wAneh" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6Utj7AwHY6VkgGtm9wAneh" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/4y3b1FXh8eVhwRRoKwrtSx" target="_blank" rel="noopener" aria-label="Open COOL 🎧 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da840ab6193f96b895c1264badc3" alt="Cover artwork for the COOL 🎧 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Disco · French house</span>
+<span class="pl-genre">French house · Nu-disco</span>
 <h3 class="pl-title" itemprop="name">COOL 🎧</h3>
-<p class="pl-desc" itemprop="description">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience.</p>
+<p class="pl-desc" itemprop="description">Funky French house and nu-disco on an even keel — Breakbot, Modjo, Fred Falke, Kartell and Chris Malinchak.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/4y3b1FXh8eVhwRRoKwrtSx?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="COOL 🎧 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/4y3b1FXh8eVhwRRoKwrtSx" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/4y3b1FXh8eVhwRRoKwrtSx" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/7hZsKoasqFogxZVqDKYJwA" target="_blank" rel="noopener" aria-label="Open LOTUS 🪷 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84f4c33289cea18b51ca669850" alt="Cover artwork for the LOTUS 🪷 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Nu-Jazz · Downtempo</span>
+<span class="pl-genre">Nu jazz · Downtempo</span>
 <h3 class="pl-title" itemprop="name">LOTUS 🪷</h3>
-<p class="pl-desc" itemprop="description">Take a break from a busy day and relax with soothing nu jazz and downtempo beats.</p>
+<p class="pl-desc" itemprop="description">Soothing nu jazz and downtempo to unwind to — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly and Kid Loco.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/7hZsKoasqFogxZVqDKYJwA?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="LOTUS 🪷 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/7hZsKoasqFogxZVqDKYJwA" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/7hZsKoasqFogxZVqDKYJwA" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/3GspTYbjOA4oCSulh3YLng" target="_blank" rel="noopener" aria-label="Open MORNING ☕️ on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da8440c76601a3cc8932f2b74d5e" alt="Cover artwork for the MORNING ☕️ playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Soul · Mood</span>
+<span class="pl-genre">Soul · Jazz funk</span>
 <h3 class="pl-title" itemprop="name">MORNING ☕️</h3>
-<p class="pl-desc" itemprop="description">Soulful tracks with a fashion-forward vibe. Music to set the tone for a productive and stylish day.</p>
+<p class="pl-desc" itemprop="description">Soul and jazz funk to start the day — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak and Stevie Wonder.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/3GspTYbjOA4oCSulh3YLng?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="MORNING ☕️ playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/3GspTYbjOA4oCSulh3YLng" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/3GspTYbjOA4oCSulh3YLng" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
+</div>
+</article>
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/3Eg1SZ5yYbtdytaV3sVg6C" target="_blank" rel="noopener" aria-label="Open POP WORKOUT 🥤 on Spotify">
+<img src="https://i.scdn.co/image/ab67706c0000da8444ec7469e1ccb1dab6d21c6d" alt="Cover artwork for the POP WORKOUT 🥤 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Uplifting pop</span>
+<h3 class="pl-title" itemprop="name">POP WORKOUT 🥤</h3>
+<p class="pl-desc" itemprop="description">Sixty-four bright, up-tempo pop tracks to move to — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear and Madison.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/3Eg1SZ5yYbtdytaV3sVg6C?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="POP WORKOUT 🥤 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/3Eg1SZ5yYbtdytaV3sVg6C" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/1RnzXyrj73nyo4yK6j3xT9" target="_blank" rel="noopener" aria-label="Open LIFETIME ⏳ on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da84e86212b31675303f2c19b4c1" alt="Cover artwork for the LIFETIME ⏳ playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Hip-hop · R&B</span>
+<span class="pl-genre">Jazz rap · Alt R&B</span>
 <h3 class="pl-title" itemprop="name">LIFETIME ⏳</h3>
-<p class="pl-desc" itemprop="description">Soulful beats and thoughtful lyrics. A captivating look into the world of contemporary hip hop, R&B and rap.</p>
+<p class="pl-desc" itemprop="description">Jazz rap and alternative R&B with something to say — Noname, Anderson .Paak, KAYTRANADA, Q-Tip and A Tribe Called Quest.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/1RnzXyrj73nyo4yK6j3xT9?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="LIFETIME ⏳ playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/1RnzXyrj73nyo4yK6j3xT9" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/1RnzXyrj73nyo4yK6j3xT9" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 </div>
@@ -2831,12 +2898,12 @@
 <article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
 <a class="pl-cover" href="https://open.spotify.com/playlist/13oQhLqxlNuPrn9pOIx6Vx" target="_blank" rel="noopener" aria-label="Open WASSULU DON 🦁 on Spotify">
 <img src="https://i.scdn.co/image/ab67706c0000da8436f3d01be810b7f02b0235dd" alt="Cover artwork for the WASSULU DON 🦁 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
-<span class="pl-genre">Afrobeat · World</span>
+<span class="pl-genre">Afrobeat · Wassoulou</span>
 <h3 class="pl-title" itemprop="name">WASSULU DON 🦁</h3>
-<p class="pl-desc" itemprop="description">Celebrate the diverse heritage of African music. From the soulful rhythms of Wassoulou to the lively beats of Londonko.</p>
+<p class="pl-desc" itemprop="description">West African voices front and centre — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh and Kareyce Fotso, from Wassoulou to kora.</p>
 <div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/13oQhLqxlNuPrn9pOIx6Vx?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="WASSULU DON 🦁 playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
 <div class="pl-actions">
-<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/13oQhLqxlNuPrn9pOIx6Vx" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/13oQhLqxlNuPrn9pOIx6Vx" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
 </div>
 </article>
 </div>
