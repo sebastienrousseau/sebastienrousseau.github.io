@@ -1338,7 +1338,7 @@ playlists arrive on their own.</p>
 <ul class="pl-devices"><li>iPhone</li><li>iPad</li><li>Android</li><li>Mac</li><li>Windows</li><li>Apple Watch</li><li>Apple TV</li><li>CarPlay</li><li>Sonos</li><li>Google Nest</li><li>PlayStation</li><li>Xbox</li><li>Web browser</li></ul>
 <div class="pl-actions pl-actions-center">
 <a class="pl-action pl-action-spotify" href="https://open.spotify.com/user/sebastienrousseau" target="_blank" rel="me noopener">Follow on Spotify</a>
-<a class="pl-action pl-action-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="me noopener">Follow on Apple Music</a>
+<a class="pl-badge pl-badge-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="me noopener" aria-label="Listen on Apple Music"><img src="/_csp/listen-on-apple-music.svg" alt="Listen on Apple Music" width="141" height="41" loading="lazy" decoding="async" /></a>
 </div>
 </div>
 </aside>"""
@@ -1378,7 +1378,7 @@ def _playlist_featured() -> str:
 <p class="pl-hero-meta"><time datetime="2026-08-22">{date}</time> · Indie pop · French house</p>
 <div class="pl-actions">
 <a class="pl-action pl-action-spotify" href="{url}" itemprop="url" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>Play on Spotify</a>
-<a class="pl-action pl-action-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="noopener"><svg class="pl-mark" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>Listen on Apple Music</a>
+<a class="pl-badge pl-badge-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="noopener" aria-label="Listen on Apple Music"><img src="/_csp/listen-on-apple-music.svg" alt="Listen on Apple Music" width="141" height="41" loading="lazy" decoding="async" /></a>
 </div>
 </div>
 <div class="pl-hero-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/{pid}?utm_source=generator&amp;theme=0" width="100%" height="352" frameBorder="0" loading="lazy" title="{title} playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
@@ -1432,8 +1432,8 @@ def playlist_layout() -> str:
 <a class="playlist-platform playlist-platform-spotify" href="https://open.spotify.com/user/sebastienrousseau" target="_blank" rel="me noopener">
 <svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg> Follow on Spotify
 </a>
-<a class="playlist-platform playlist-platform-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="me noopener">
-<svg class="pl-mark" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg> Follow on Apple Music
+<a class="pl-badge playlist-platform-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="me noopener" aria-label="Listen on Apple Music">
+<img src="/_csp/listen-on-apple-music.svg" alt="Listen on Apple Music" width="141" height="41" loading="lazy" decoding="async" />
 </a>
 </div>
 <nav class="playlist-chips" aria-label="Jump to a lane">{lane_chips}</nav>
@@ -1535,7 +1535,7 @@ def playlist_layout() -> str:
       .pl-aurora{position:absolute;inset:0;z-index:0;pointer-events:none;
         overflow:hidden;background:var(--pl-au-bg)}
       .pl-aurora-wrap{position:absolute;inset:-10%;
-        animation:pl-au-hue 90s linear infinite}
+        animation:pl-au-hue 34s ease-in-out infinite}
       .pl-aurora span{position:absolute;inset-block-start:50%;inset-inline-start:50%;
         aspect-ratio:1;mix-blend-mode:screen;will-change:transform,border-radius;
         animation-iteration-count:infinite;animation-timing-function:linear}
@@ -1589,7 +1589,8 @@ def playlist_layout() -> str:
       @keyframes pl-au-7{0%{transform:translate3d(7.3%,-70.0%,0) scale(0.924)}10%{transform:translate3d(20.7%,-58.5%,0) scale(0.843)}20%{transform:translate3d(23.8%,-39.1%,0) scale(0.978)}30%{transform:translate3d(6.1%,-22.5%,0) scale(1.144)}40%{transform:translate3d(-12.4%,-19.3%,0) scale(1.111)}50%{transform:translate3d(-23.3%,-29.8%,0) scale(0.924)}60%{transform:translate3d(-36.7%,-45.4%,0) scale(0.843)}70%{transform:translate3d(-39.8%,-58.0%,0) scale(0.978)}80%{transform:translate3d(-22.1%,-66.3%,0) scale(1.144)}90%{transform:translate3d(-3.6%,-71.2%,0) scale(1.111)}100%{transform:translate3d(7.3%,-70.0%,0) scale(0.924)}}
       @keyframes pl-au-m7{0%{border-radius:62% 38% 44% 56% / 38% 58% 42% 62%}25%{border-radius:46% 54% 62% 38% / 44% 40% 60% 56%}50%{border-radius:58% 42% 38% 62% / 56% 62% 38% 44%}75%{border-radius:40% 60% 55% 45% / 62% 44% 56% 38%}100%{border-radius:62% 38% 44% 56% / 38% 58% 42% 62%}}
       /* Slow hue drift keeps the palette evolving without a visible loop. */
-      @keyframes pl-au-hue{0%{filter:hue-rotate(0deg)}100%{filter:hue-rotate(360deg)}}
+      @keyframes pl-au-hue{0%,100%{filter:hue-rotate(-10deg) saturate(1.05)}
+        50%{filter:hue-rotate(12deg) saturate(1.12)}}
       @media (prefers-reduced-motion:reduce){
         .pl-aurora span,.pl-aurora-wrap{animation:none}}
       .pl-topper h1{font-family:var(--type-body);font-size:clamp(46px,8.4vw,104px)!important;
@@ -1654,11 +1655,13 @@ def playlist_layout() -> str:
         border:1px solid transparent;transition:filter .18s ease,transform .18s ease}
       .pl-action:hover,.pl-action:focus-visible{filter:brightness(1.08);transform:translateY(-1px)}
       a.pl-action-spotify,.content a.pl-action-spotify{background:var(--pl-spotify);color:var(--pl-ink-on-brand)}
-      a.pl-action-apple,.content a.pl-action-apple{background:var(--pl-ink-on-brand);color:var(--pl-white);
-        border-color:color-mix(in srgb,var(--pl-white) 26%,transparent)}
       .pl-mark{flex:none;display:block}
-      a.pl-action-spotify:hover,a.pl-action-spotify:focus-visible,
-      a.pl-action-apple:hover,a.pl-action-apple:focus-visible{filter:brightness(1.12)}
+      a.pl-badge,.content a.pl-badge{display:inline-flex;align-items:center;
+        padding:0;border:0;border-radius:0;background:none;line-height:0;
+        text-decoration:none;transition:transform .18s ease}
+      a.pl-badge img{display:block;block-size:44px;inline-size:auto}
+      a.pl-badge:hover,a.pl-badge:focus-visible{transform:translateY(-1px)}
+      a.pl-action-spotify:hover,a.pl-action-spotify:focus-visible{filter:brightness(1.12)}
       .content a.pl-chip{color:var(--ink-soft)}
       .content a.pl-cover{color:inherit}
 

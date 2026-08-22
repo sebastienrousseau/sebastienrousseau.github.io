@@ -189,6 +189,16 @@ fi
 # <script> the hub generator emits. The data module is real captured
 # tools/call transcripts (see the file header for capture date + servers);
 # the component performs no network calls, so no CSP change is required.
+# Official "Listen on Apple Music" badge, downloaded from Apple's Marketing
+# Tools toolbox. Apple's identity guidelines require the artwork be used
+# unaltered, so it ships as a file and is referenced with <img> rather than
+# inlined and restyled. Same staging pattern as the JS above: land it in
+# public/_csp/ before postbuild so the asset pipeline handles it.
+if [[ -f assets/img/listen-on-apple-music.svg ]]; then
+  mkdir -p public/_csp
+  cp -f assets/img/listen-on-apple-music.svg public/_csp/listen-on-apple-music.svg
+fi
+
 if [[ -d assets/js/mcp-simulator ]]; then
   mkdir -p public/_csp
   cp -f assets/js/mcp-simulator/iso20022-simulator-core.js public/_csp/iso20022-simulator-core.js
