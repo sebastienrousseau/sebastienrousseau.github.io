@@ -812,9 +812,7 @@ STORY_HERO_MAIN = """    <section class="story-hero">
 
 def story_layout() -> str:
     html = TOP + STORY_HERO_MAIN + BOTTOM
-    return html.replace(
-        "    </style>", MCP_REFERENCE_CSS + MCP_DOCS_CSS + "    </style>"
-    )
+    return html.replace("    </style>", MCP_REFERENCE_CSS + MCP_DOCS_CSS + "    </style>")
 
 
 def contact_layout() -> str:
@@ -1369,7 +1367,7 @@ def _playlist_card(item: tuple) -> str:
 
 def _playlist_featured() -> str:
     """The newest playlist, given a full-bleed hero band of its own."""
-    title, eyebrow, date, desc, pid, art = PLAYLISTS_FEATURED
+    title, eyebrow, date, desc, pid, _art = PLAYLISTS_FEATURED
     url = f"https://open.spotify.com/playlist/{pid}"
     return f"""<div class="pl-hero" itemscope itemtype="https://schema.org/MusicPlaylist">
 <div class="pl-hero-inner">
@@ -1672,9 +1670,7 @@ def main() -> None:
             # /speaking/, /iso20022-mcp/ and /trust/ fork the built articles
             # page as their shell, so the page-scoped CSS rides articles.html
             # only.
-            html = html.replace(
-                "    </style>", SPEAKING_MCP_HUB_CSS + TRUST_CSS + "    </style>"
-            )
+            html = html.replace("    </style>", SPEAKING_MCP_HUB_CSS + TRUST_CSS + "    </style>")
         write(name, html)
     # /projects/ has its own hero: the rotating animated title is the page H1.
     write("project.html", inject_schema(project_layout(), "projects"))
