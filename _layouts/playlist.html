@@ -921,7 +921,7 @@
         nav,header.ap-nav,.ap-nav,footer,.ap-search,.ap-lang,.skip,.ap-progress,.reading-progress,.gh-stats-row,.setup-finale,.share-block,.share-rail,.share-rail--sticky,.share-rail--card,.action-rail,.action-rail--sticky,.related-section,.speculation-rules,.crumbs,.topic-breadcrumb,.glass-premium,.btn-sweep::after,.theme-toggle{display:none!important}
         html,body{background:#fff!important;color:#000!important;font-family:Georgia,"Times New Roman",Times,serif!important;font-size:11pt;line-height:1.45}
         main,main.content{max-width:none!important;padding:0!important;display:block!important}
-        .ap-hero,section.ap-hero{padding:0!important;background:transparent!important}
+      .ap-hero{padding:0!important;background:transparent!important}
         .eyebrow{color:#000!important;font-family:Georgia,Times,serif!important;font-size:9pt;letter-spacing:.12em;text-transform:uppercase;margin:0 0 6pt}
         .deck{color:#222!important;font-family:Georgia,Times,serif!important;font-size:12pt;max-width:none}
         .byline-strap{color:#444!important;font-family:Georgia,Times,serif!important;font-size:9pt;letter-spacing:.06em}
@@ -2044,6 +2044,174 @@
       .playlist-chip:hover,.playlist-chip:focus-visible{background:var(--card);border-color:var(--ink-mute)}
       .newsroom-section-head[id^=lane-]{scroll-margin-block-start:calc(var(--nav-h) + 16px)}
       .spotify-frame{border-radius:12px;border:0;display:block;width:100%}
+
+      /* ── Playlists ────────────────────────────────────────────────
+         Apple Music's page, read properly this time.
+
+         The earlier pass borrowed the shape and missed the substance. It
+         set headings in the site's serif display face where Apple uses a
+         tight geometric sans; it drew outline pills where Apple fills its
+         buttons solid in one accent; and it had no artwork at all, so the
+         cards were text where Apple leads with the cover. Those three
+         things are most of why it did not read like the reference.
+
+         Covers come from i.scdn.co — the same asset Spotify serves from
+         spotifycdn.com, on the host this site's CSP already trusts, so
+         the artwork costs no widening of the policy. */
+      .pl-stage{--pl-red:#fa243c;--pl-radius:18px;
+        font-family:var(--type-body);margin:0 0 clamp(48px,7vw,96px)}
+
+      .pl-hero{position:relative;margin-inline:calc(50% - 50vw);width:100vw;
+        padding:clamp(56px,8vw,116px) clamp(20px,5vw,64px);
+        background:
+          radial-gradient(58% 82% at 12% 6%, rgba(255,45,85,.55), transparent 64%),
+          radial-gradient(52% 74% at 74% 4%, rgba(255,132,45,.42), transparent 66%),
+          radial-gradient(64% 88% at 88% 78%, rgba(150,60,255,.44), transparent 62%),
+          radial-gradient(70% 96% at 34% 96%, rgba(255,26,92,.38), transparent 64%),
+          linear-gradient(148deg, #2a0714 0%, #16060f 46%, #0a0510 100%);
+        color:#fff}
+      .pl-hero .pl-hero-title,.pl-hero .pl-everywhere h2{color:#fff}
+      .pl-hero .pl-hero-desc{color:rgba(255,255,255,.86)}
+      .pl-hero .pl-hero-meta{color:rgba(255,255,255,.66)}
+      .pl-hero .pl-hero-kicker{color:#ff6b8a}
+      .content .pl-hero a.pl-action-apple,.pl-hero a.pl-action-apple{
+        color:#fff!important;border-color:rgba(255,255,255,.4)}
+      .pl-hero a.pl-action-apple:hover{border-color:#fff;color:#fff}
+      .pl-hero-inner{max-width:1120px;margin-inline:auto;display:grid;
+        grid-template-columns:1fr 1fr;gap:clamp(28px,4.5vw,72px);align-items:center}
+      @media (max-width:940px){.pl-hero-inner{grid-template-columns:1fr}}
+      .pl-hero-kicker{margin:0 0 12px;font-size:12px;letter-spacing:.14em;
+        text-transform:uppercase;font-weight:700;color:var(--pl-red)}
+      /* Sans, tight, heavy — the Apple register. Not the site's serif. */
+      .pl-hero-title{font-family:var(--type-body);margin:0 0 18px;
+        font-size:clamp(40px,7vw,88px);line-height:1.02;letter-spacing:-.035em;
+        font-weight:700;color:var(--ink)}
+      .pl-hero-desc{margin:0 0 16px;font-size:clamp(17px,1.6vw,21px);line-height:1.5;
+        color:var(--ink-soft);max-width:44ch}
+      .pl-hero-meta{margin:0 0 28px;font-size:14px;color:var(--ink-mute)}
+      .pl-hero-player{border-radius:22px;overflow:hidden;
+        box-shadow:0 30px 70px -26px rgba(0,0,0,.5)}
+
+      .pl-nav{display:flex;flex-wrap:wrap;gap:10px;
+        margin:clamp(30px,4vw,48px) auto 0;max-width:1120px}
+      .pl-chip{display:inline-flex;align-items:center;padding:9px 18px;border-radius:999px;
+        border:1px solid var(--border);color:var(--ink-soft);text-decoration:none;
+        font-size:14px;font-weight:600;transition:color .18s ease,border-color .18s ease}
+      .pl-chip:hover,.pl-chip:focus-visible{color:var(--pl-red);border-color:var(--pl-red)}
+
+        section.pl-topper{position:relative;margin-inline:calc(50% - 50vw)!important;width:100vw;
+        padding:clamp(64px,9vw,132px) clamp(20px,5vw,64px) clamp(48px,7vw,96px)!important;
+        text-align:center;color:#fff!important;
+        background:
+          radial-gradient(56% 84% at 16% 2%, rgba(255,45,85,.58), transparent 62%),
+          radial-gradient(50% 72% at 78% 0%, rgba(255,138,46,.44), transparent 64%),
+          radial-gradient(62% 86% at 90% 84%, rgba(148,58,255,.46), transparent 60%),
+          radial-gradient(72% 96% at 28% 98%, rgba(255,26,92,.4), transparent 62%),
+          linear-gradient(150deg,#2c0716 0%,#170610 48%,#0a0510 100%)!important}
+      .pl-topper .ap-hero-eyebrow{color:#ff6b8a!important;letter-spacing:.16em}
+      .pl-topper h1{font-family:var(--type-body);font-size:clamp(46px,8.4vw,104px)!important;
+        line-height:.98;letter-spacing:-.038em;font-weight:700;color:#fff!important;
+        margin:10px 0 16px}
+      .pl-topper .sub{color:rgba(255,255,255,.84)!important;max-width:56ch;
+        margin-inline:auto;font-size:clamp(17px,1.7vw,22px);line-height:1.5}
+      .pl-faq{margin-inline:calc(50% - 50vw);width:100vw;
+        padding:clamp(56px,8vw,116px) clamp(20px,5vw,64px);background:var(--bg)}
+      .pl-faq-inner{max-width:820px;margin-inline:auto}
+      .pl-faq h2{font-family:var(--type-body);margin:0 0 8px;
+        font-size:clamp(30px,4.6vw,56px);line-height:1.04;letter-spacing:-.03em;
+        font-weight:700;color:var(--ink);text-align:center}
+      .pl-faq-sub{margin:0 0 clamp(28px,4vw,48px);text-align:center;
+        color:var(--ink-mute);font-size:17px}
+      .pl-faq-item{border-bottom:1px solid var(--border)}
+      .pl-faq-item summary{cursor:pointer;list-style:none;padding:20px 4px;
+        font-size:clamp(16px,1.5vw,19px);font-weight:600;color:var(--ink);
+        display:flex;justify-content:space-between;align-items:center;gap:16px}
+      .pl-faq-item summary::-webkit-details-marker{display:none}
+      .pl-faq-item summary::after{content:"+";font-size:24px;font-weight:400;
+        color:var(--ink-mute);transition:transform .2s ease;line-height:1}
+      .pl-faq-item[open] summary::after{transform:rotate(45deg)}
+      .pl-faq-item p{margin:0 0 20px;padding-inline-end:40px;color:var(--ink-soft);
+        font-size:16px;line-height:1.65}
+      @media (prefers-reduced-motion:reduce){.pl-faq-item summary::after{transition:none}}
+      .pl-band{--pl-hue:var(--pl-red);--pl-hue2:var(--pl-hue);
+        margin-inline:calc(50% - 50vw);width:100vw;
+        padding:clamp(48px,7vw,104px) clamp(20px,5vw,64px);
+        background:
+          radial-gradient(76% 64% at 6% -8%,
+            color-mix(in srgb,var(--pl-hue) 30%,transparent),transparent 62%),
+          radial-gradient(62% 56% at 98% 4%,
+            color-mix(in srgb,var(--pl-hue2) 24%,transparent),transparent 60%),
+          radial-gradient(92% 72% at 52% 112%,
+            color-mix(in srgb,var(--pl-hue) 16%,transparent),transparent 64%),
+          linear-gradient(180deg,
+            color-mix(in srgb,var(--pl-hue) 6%,var(--bg)) 0%,
+            var(--bg) 58%,
+            color-mix(in srgb,var(--pl-hue2) 7%,var(--bg)) 100%)}
+      .pl-band-inner{max-width:1120px;margin-inline:auto}
+      .pl-band-electronic{--pl-hue:#7c5cff;--pl-hue2:#2f7cff}
+      .pl-band-soul-jazz{--pl-hue:#ff9f0a;--pl-hue2:#ff5e3a}
+      .pl-band-hip-hop{--pl-hue:#fa243c;--pl-hue2:#b14cff}
+      .pl-band-morning-mood{--pl-hue:#32d3c3;--pl-hue2:#5ac8fa}
+      .pl-band-global{--pl-hue:#30d158;--pl-hue2:#ffd60a}
+
+      .pl-lane-head{margin:0 0 clamp(24px,3.4vw,44px);max-width:46ch}
+      .pl-lane-title{font-family:var(--type-body);margin:0 0 8px;
+        font-size:clamp(30px,4.6vw,56px);line-height:1.04;letter-spacing:-.03em;
+        font-weight:700;color:var(--ink)}
+      .pl-lane-sub{margin:0;font-size:clamp(15px,1.4vw,18px);color:var(--ink-mute)}
+
+      .pl-grid{display:grid;gap:clamp(20px,2.4vw,34px);
+        grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+
+      /* Cover first: the artwork is the card, the copy sits under it. */
+      .pl-card{display:flex;flex-direction:column;background:none;border:0;padding:0}
+      .pl-cover{position:relative;display:block;aspect-ratio:1/1;border-radius:var(--pl-radius);
+        overflow:hidden;margin:0 0 14px;background:var(--bg-alt,var(--card));
+        box-shadow:0 18px 38px -20px rgba(0,0,0,.5);
+        transition:transform .28s cubic-bezier(.2,.7,.2,1),box-shadow .28s ease}
+      .pl-cover img{display:block;width:100%;height:100%;object-fit:cover}
+      .pl-card:hover .pl-cover{transform:translateY(-6px) scale(1.012);
+        box-shadow:0 30px 56px -22px rgba(0,0,0,.6)}
+      .pl-genre{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+        color:var(--pl-hue);margin:0 0 6px;font-weight:700}
+      .pl-title{font-family:var(--type-body);margin:0 0 8px;font-size:clamp(18px,1.6vw,22px);line-height:1.22;
+        letter-spacing:-.015em;color:var(--ink);font-weight:700}
+      .pl-desc{margin:0 0 16px;font-size:14px;line-height:1.55;color:var(--ink-mute);
+        flex:1 1 auto;max-width:40ch}
+      .pl-player{border-radius:12px;overflow:hidden;margin:0 0 14px}
+      .pl-frame{display:block;width:100%;border:0}
+
+      /* Apple fills its buttons. One solid accent, white text, full pill. */
+      .pl-actions{display:flex;flex-wrap:wrap;gap:10px}
+      .pl-actions-center{justify-content:center}
+      .pl-action{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;
+        border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;
+        border:1px solid transparent;transition:filter .18s ease,transform .18s ease}
+      .pl-action:hover,.pl-action:focus-visible{filter:brightness(1.08);transform:translateY(-1px)}
+      a.pl-action-spotify,.content a.pl-action-spotify{background:var(--pl-red);color:#fff}
+      a.pl-action-apple,.content a.pl-action-apple{color:var(--ink)}
+      .content a.pl-chip{color:var(--ink-soft)}
+      .content a.pl-cover{color:inherit}
+      .pl-action-apple{background:transparent;color:var(--ink);border-color:var(--border)}
+      .pl-action-apple:hover,.pl-action-apple:focus-visible{border-color:var(--pl-red);
+        color:var(--pl-red)}
+
+      .pl-everywhere{margin-inline:calc(50% - 50vw);width:100vw;
+        padding:clamp(56px,8vw,116px) clamp(20px,5vw,64px);text-align:center;
+        background:var(--bg-alt,var(--card))}
+      .pl-everywhere-inner{max-width:780px;margin-inline:auto}
+      .pl-everywhere h2{font-family:var(--type-body);margin:0 0 16px;
+        font-size:clamp(30px,4.6vw,56px);line-height:1.04;letter-spacing:-.03em;
+        font-weight:700;color:var(--ink)}
+      .pl-everywhere p{margin:0 auto 28px;max-width:50ch;font-size:clamp(16px,1.5vw,19px);
+        line-height:1.6;color:var(--ink-soft)}
+      .pl-devices{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 24px;
+        margin:0 0 30px;padding:0;list-style:none;font-size:14px;color:var(--ink-mute)}
+
+      @media (prefers-reduced-motion:reduce){
+        .pl-cover,.pl-action,.pl-chip{transition:none}
+        .pl-card:hover .pl-cover,.pl-action:hover{transform:none}}
+
       .playlist-platforms{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:0 0 20px}
       .playlist-platforms-label{margin:0 4px 0 0;font-size:13px;opacity:.75}
       .playlist-platform{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;
@@ -2169,7 +2337,7 @@
       </div>
     </header>
 
-        <section class="ap-hero">
+        <section class="ap-hero pl-topper">
       <span class="ap-hero-eyebrow">Listening</span>
       <h1>Playlists</h1>
       <p class="sub">{{subtitle}}</p>
@@ -2188,545 +2356,541 @@
 </a>
 </div>
 <nav class="playlist-chips" aria-label="Jump to a lane"><a class="playlist-chip" href="#lane-soul-jazz">Soulful, jazz and downtempo</a><a class="playlist-chip" href="#lane-morning-mood">Energy and tone</a><a class="playlist-chip" href="#lane-electronic">Disco, house and workout</a><a class="playlist-chip" href="#lane-hip-hop">Rap, R&B and beats</a><a class="playlist-chip" href="#lane-global">World rhythms</a></nav>
-        <section class="newsroom">
+<section class="pl-stage">
 
-          <header class="newsroom-section-head" data-reveal><p class="newsroom-kicker">FEATURED</p><h2>Latest playlist</h2></header>
-
-          <article class="newsroom-featured playlist-featured" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-featured-media spotify-media">
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/6dhwZBIQ4dpoc9lne6b7Aj?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Lōkahi 🌺 on Spotify"></iframe>
+<div class="pl-hero" itemscope itemtype="https://schema.org/MusicPlaylist">
+<div class="pl-hero-inner">
+<div class="pl-hero-copy">
+<p class="pl-hero-kicker">Latest playlist</p>
+<h2 class="pl-hero-title" itemprop="name">Lōkahi 🌺</h2>
+<p class="pl-hero-desc" itemprop="description">Sun-drenched indie pop that slips into French house — Tame Impala and almost monday giving way to Stardust, Modjo, Daft Punk and Justice, then Afro house from HUGEL and Salif Keita.</p>
+<p class="pl-hero-meta"><time datetime="2026-08-22">August 2026</time> · Indie pop · French house</p>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6dhwZBIQ4dpoc9lne6b7Aj" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="noopener">Follow on Apple Music</a>
 </div>
-<div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Latest · Chill · Island</span>
-<h3 itemprop="name">Lōkahi 🌺</h3>
-<p class="newsroom-meta"><time datetime="2026-08-22">Aug 22, 2026</time> · Spotify</p>
-<p itemprop="description">A polished selection of laid-back, melodic tracks blending warm rhythms, smooth vocals, and uplifting island-inspired sounds. Ideal for relaxed afternoons, scenic drives, and easygoing moments.</p>
-<link itemprop="url" href="https://open.spotify.com/playlist/6dhwZBIQ4dpoc9lne6b7Aj" />
 </div>
-</article>
-
-          <header class="newsroom-section-head" id="lane-soul-jazz" data-reveal><p class="newsroom-kicker">SOUL & JAZZ</p><h2>Soulful, jazz and downtempo</h2><p class="newsroom-lede">Smooth Jazz, Neo Soul, and laid-back grooves. Playlists for when the day calls for a slower tempo.</p></header>
-
-<div class="newsroom-grid">
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Disco · Boogie</span>
-<h3 itemprop="name">1975 🪩</h3>
-<p class="newsroom-excerpt" itemprop="description">Seventies and eighties floor fillers — The Jacksons, Luther Vandross, Patrice Rushen and Change. Strings, claps, pure boogie.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/1q8SfSUHyFxjUWucE9A1wR?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="1975 🪩 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/1q8SfSUHyFxjUWucE9A1wR" />
+<div class="pl-hero-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/6dhwZBIQ4dpoc9lne6b7Aj?utm_source=generator&amp;theme=0" height="380" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="Lōkahi 🌺 on Spotify"></iframe></div>
 </div>
-</article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Soul · Nu jazz</span>
-<h3 itemprop="name">Back to Life 🛟</h3>
-<p class="newsroom-excerpt" itemprop="description">Soulful house and nu jazz with a live pulse: Nuyorican Soul, Jocelyn Brown, Gretchen Parlato and Count Basic.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/7GLBaZHcJ5st67eMCILolm?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Back to Life 🛟 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/7GLBaZHcJ5st67eMCILolm" />
 </div>
-</article>
+<nav class="pl-nav" aria-label="Jump to a genre">
+<a class="pl-chip" href="#lane-electronic">Electronic</a>
+<a class="pl-chip" href="#lane-soul-jazz">Soul &amp; Jazz</a>
+<a class="pl-chip" href="#lane-hip-hop">Hip-Hop</a>
+<a class="pl-chip" href="#lane-morning-mood">Morning &amp; Mood</a>
+<a class="pl-chip" href="#lane-global">Global</a>
+</nav>
 
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Soul · Joy</span>
-<h3 itemprop="name">COLOURS 🌈</h3>
-<p class="newsroom-excerpt" itemprop="description">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/2JGGk44Nopf8BX7oYJsler?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="COLOURS 🌈 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/2JGGk44Nopf8BX7oYJsler" />
+<section class="pl-band pl-band-electronic" id="lane-electronic" aria-labelledby="lane-electronic-h">
+<div class="pl-band-inner">
+<header class="pl-lane-head">
+<h2 class="pl-lane-title" id="lane-electronic-h">Electronic</h2>
+<p class="pl-lane-sub">House, disco and French touch · 9 playlists</p>
+</header>
+<div class="pl-grid">
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/5OQTseRtYQtZF6kERLvcSz" target="_blank" rel="noopener" aria-label="Open CITY ⛩️ on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84b01797b3eaa398e5be8a19c8" alt="Cover artwork for the CITY ⛩️ playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Techno · Progressive house</span>
+<h3 class="pl-title" itemprop="name">CITY ⛩️</h3>
+<p class="pl-desc" itemprop="description">Immerse yourself in the pulsating rhythms of stripped-back techno, progressive house, and endless dance tracks.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/5OQTseRtYQtZF6kERLvcSz?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="CITY ⛩️ on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5OQTseRtYQtZF6kERLvcSz" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Soul · Jazz</span>
-<h3 itemprop="name">Groovation 🎷</h3>
-<p class="newsroom-excerpt" itemprop="description">A smooth blend of jazz-infused beats, soulful bars, and golden-era groove—perfect for late nights, deep thoughts, and head-nodding escape. Pure sonic therapy.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/0mrwKGH6s0MWsNfMCtcTQz?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Groovation 🎷 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/0mrwKGH6s0MWsNfMCtcTQz" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/1lZbauO3yCPB3YAyT5xLCW" target="_blank" rel="noopener" aria-label="Open ESSENTIAL 💚 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84f7cdb833e8c21996a92c1c1c" alt="Cover artwork for the ESSENTIAL 💚 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">House · Deep house</span>
+<h3 class="pl-title" itemprop="name">ESSENTIAL 💚</h3>
+<p class="pl-desc" itemprop="description">Laid-back beats, house-influenced grooves and new deep house tracks.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/1lZbauO3yCPB3YAyT5xLCW?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="ESSENTIAL 💚 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/1lZbauO3yCPB3YAyT5xLCW" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Soul · Jazz funk</span>
-<h3 itemprop="name">LOVE ❤️</h3>
-<p class="newsroom-excerpt" itemprop="description">Love songs with real players behind them: Bill Withers, Incognito, Snarky Puppy, Lady Blackbird and Citrus Sun.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/0UWRprsfYCjbnpLHCNUCPF?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="LOVE ❤️ on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/0UWRprsfYCjbnpLHCNUCPF" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/79rcQ3HAOu3RQTu0hyPFVX" target="_blank" rel="noopener" aria-label="Open ETERNAL GROOVE 🪩 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84ea3cd37ea58de627af7ab3af" alt="Cover artwork for the ETERNAL GROOVE 🪩 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Disco · Classic house</span>
+<h3 class="pl-title" itemprop="name">ETERNAL GROOVE 🪩</h3>
+<p class="pl-desc" itemprop="description">Timeless 90s–00s disco & house anthems. Euphoric, soulful, and floor-filling grooves built for nights where the beat never ends.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/79rcQ3HAOu3RQTu0hyPFVX?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="ETERNAL GROOVE 🪩 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/79rcQ3HAOu3RQTu0hyPFVX" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Soul · R&amp;B</span>
-<h3 itemprop="name">NEO SOUL 🎶</h3>
-<p class="newsroom-excerpt" itemprop="description">A deep dive into the quintessential collection of Jazz, Soul, R&B and Neo Soul beats.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/7yvugJcCzkaWN908rXTSIL?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="NEO SOUL 🎶 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/7yvugJcCzkaWN908rXTSIL" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/5vKhAAaO06St5XoCh96PxR" target="_blank" rel="noopener" aria-label="Open EVOLUTION ☀️ on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84ef337638a24f69f31d0567da" alt="Cover artwork for the EVOLUTION ☀️ playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Future house · Pop</span>
+<h3 class="pl-title" itemprop="name">EVOLUTION ☀️</h3>
+<p class="pl-desc" itemprop="description">Bright future house and electronic pop from Lenno, Midnight Kids, Party Pupils and Javeon.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/5vKhAAaO06St5XoCh96PxR?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="EVOLUTION ☀️ on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5vKhAAaO06St5XoCh96PxR" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Neo soul · Broken beat</span>
-<h3 itemprop="name">NEOVIE 🌱</h3>
-<p class="newsroom-excerpt" itemprop="description">Neo soul and broken beat for slow afternoons, with The Foreign Exchange, Emma-Jean Thackray and Gwen Bunn.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/36Rkih8f9fgd92jI3QVMrQ?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="NEOVIE 🌱 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/36Rkih8f9fgd92jI3QVMrQ" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/2r2g4G5wTSucqWda5MkuXH" target="_blank" rel="noopener" aria-label="Open FOREVER ♾️ on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84f6ea0a0bfa74c52c95690cc4" alt="Cover artwork for the FOREVER ♾️ playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">French touch · Electro</span>
+<h3 class="pl-title" itemprop="name">FOREVER ♾️</h3>
+<p class="pl-desc" itemprop="description">French touch at full beam — Daft Punk, Justice, Kavinsky and L'Impératrice trading neon synths and motorik basslines.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/2r2g4G5wTSucqWda5MkuXH?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="FOREVER ♾️ on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2r2g4G5wTSucqWda5MkuXH" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Jazz funk · Neo soul</span>
-<h3 itemprop="name">SPOTLIGHT 🔆</h3>
-<p class="newsroom-excerpt" itemprop="description">Jazz funk and neo soul with the spotlight on the players — Patrice Rushen, Omar, Kenny Garrett, Jill Scott and Stro Elliot.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/5wjy0SY2jCwAZ4UFLF3eXC?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="SPOTLIGHT 🔆 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/5wjy0SY2jCwAZ4UFLF3eXC" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/3YiO3L3LMWlXaGEGtJFdXo" target="_blank" rel="noopener" aria-label="Open GOLDEN HOUR 🌟 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84e8a289b744da9c54e867ce52" alt="Cover artwork for the GOLDEN HOUR 🌟 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Indie dance · Synth pop</span>
+<h3 class="pl-title" itemprop="name">GOLDEN HOUR 🌟</h3>
+<p class="pl-desc" itemprop="description">Golden-hour synth pop and indie dance, with Blu DeTiger, Magdalena Bay and Merty Shango carrying the shimmer.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/3YiO3L3LMWlXaGEGtJFdXo?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="GOLDEN HOUR 🌟 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/3YiO3L3LMWlXaGEGtJFdXo" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Soul · Jazz</span>
-<h3 itemprop="name">SUMMERTIME 🌞</h3>
-<p class="newsroom-excerpt" itemprop="description">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R&B and Neo Soul beats.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/5RQ9X2WmRseY9SEU5oLwwX?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="SUMMERTIME 🌞 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/5RQ9X2WmRseY9SEU5oLwwX" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/0S31oWFMppEkhtHiSsldI1" target="_blank" rel="noopener" aria-label="Open LOOK 💋 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84e5f9a33792844a185541953b" alt="Cover artwork for the LOOK 💋 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Nu-disco · Electro</span>
+<h3 class="pl-title" itemprop="name">LOOK 💋</h3>
+<p class="pl-desc" itemprop="description">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/0S31oWFMppEkhtHiSsldI1?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="LOOK 💋 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/0S31oWFMppEkhtHiSsldI1" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Soul · Jazz</span>
-<h3 itemprop="name">THE DATE</h3>
-<p class="newsroom-excerpt" itemprop="description">Chill vibes and smooth grooves—The Date playlist blends jazzy hip-hop, mellow beats, and soulful flows, perfect for setting the mood or unwinding in style. 🎶</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/2CeSPJPwxmhbIIdfXyap3F?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="THE DATE on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/2CeSPJPwxmhbIIdfXyap3F" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/6dhwZBIQ4dpoc9lne6b7Aj" target="_blank" rel="noopener" aria-label="Open Lōkahi 🌺 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84fa9411fea3e5385a56df77d2" alt="Cover artwork for the Lōkahi 🌺 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Indie pop · French house</span>
+<h3 class="pl-title" itemprop="name">Lōkahi 🌺</h3>
+<p class="pl-desc" itemprop="description">Sun-drenched indie pop that slips into French house — Tame Impala and almost monday giving way to Stardust, Modjo, Daft Punk and Justice, then Afro house from HUGEL and Salif Keita.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/6dhwZBIQ4dpoc9lne6b7Aj?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="Lōkahi 🌺 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6dhwZBIQ4dpoc9lne6b7Aj" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Soul · Broken beat</span>
-<h3 itemprop="name">TIMES ⏳</h3>
-<p class="newsroom-excerpt" itemprop="description">British soul and broken beat at its warmest: Incognito, Shaun Escoffery, Eric Benét, Lucy Pearl and Full Flava.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/261aHSqcEnM5KnTCLSNFQz?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="TIMES ⏳ on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/261aHSqcEnM5KnTCLSNFQz" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/5OksFu1fF3eHNifxxAcev6" target="_blank" rel="noopener" aria-label="Open NEO DANCE 🪩 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84c99c974c5fc72d354495ffa0" alt="Cover artwork for the NEO DANCE 🪩 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Nu-disco · House</span>
+<h3 class="pl-title" itemprop="name">NEO DANCE 🪩</h3>
+<p class="pl-desc" itemprop="description">Nu-disco and filtered house built for movement — Aevion, Lenno, Oliver, Yelle and Tore P.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/5OksFu1fF3eHNifxxAcev6?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="NEO DANCE 🪩 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5OksFu1fF3eHNifxxAcev6" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
+</div>
+</div>
+</section>
 
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Soul · Jazz</span>
-<h3 itemprop="name">Thrill Seekers 🌀</h3>
-<p class="newsroom-excerpt" itemprop="description">A genre-blurring ride through lush beats, soulful flows, and late-night textures curated for seekers of motion, feeling, and moments that linger.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/56Vs5RzfyK1uqwWFoTz3SB?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Thrill Seekers 🌀 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/56Vs5RzfyK1uqwWFoTz3SB" />
+<section class="pl-band pl-band-soul-jazz" id="lane-soul-jazz" aria-labelledby="lane-soul-jazz-h">
+<div class="pl-band-inner">
+<header class="pl-lane-head">
+<h2 class="pl-lane-title" id="lane-soul-jazz-h">Soul &amp; Jazz</h2>
+<p class="pl-lane-sub">Soul, jazz and everything warm · 14 playlists</p>
+</header>
+<div class="pl-grid">
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/1q8SfSUHyFxjUWucE9A1wR" target="_blank" rel="noopener" aria-label="Open 1975 🪩 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84d762254e7a9fd7b28eaf61d9" alt="Cover artwork for the 1975 🪩 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Disco · Boogie</span>
+<h3 class="pl-title" itemprop="name">1975 🪩</h3>
+<p class="pl-desc" itemprop="description">Seventies and eighties floor fillers — The Jacksons, Luther Vandross, Patrice Rushen and Change. Strings, claps, pure boogie.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/1q8SfSUHyFxjUWucE9A1wR?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="1975 🪩 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/1q8SfSUHyFxjUWucE9A1wR" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Gospel · Soul</span>
-<h3 itemprop="name">UBUNTU 🍥</h3>
-<p class="newsroom-excerpt" itemprop="description">Gospel-rooted soul that lifts a room — Kirk Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris and Avery*Sunshine.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/2WxvFba2Sgg4Sd3lZJHmHP?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="UBUNTU 🍥 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/2WxvFba2Sgg4Sd3lZJHmHP" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/7GLBaZHcJ5st67eMCILolm" target="_blank" rel="noopener" aria-label="Open Back to Life 🛟 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da8443105358a81c27b7357bc798" alt="Cover artwork for the Back to Life 🛟 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Soul · Nu jazz</span>
+<h3 class="pl-title" itemprop="name">Back to Life 🛟</h3>
+<p class="pl-desc" itemprop="description">Soulful house and nu jazz with a live pulse: Nuyorican Soul, Jocelyn Brown, Gretchen Parlato and Count Basic.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/7GLBaZHcJ5st67eMCILolm?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="Back to Life 🛟 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/7GLBaZHcJ5st67eMCILolm" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Jazz · R&amp;B</span>
-<h3 itemprop="name">WAVES 🌊</h3>
-<p class="newsroom-excerpt" itemprop="description">Modern jazz and R&B in conversation — Robert Glasper, Esperanza Spalding, Tori Kelly, Brandy and Nate Smith.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/2XO0Kw6aCXdfUT3coih7vg?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="WAVES 🌊 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/2XO0Kw6aCXdfUT3coih7vg" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/2JGGk44Nopf8BX7oYJsler" target="_blank" rel="noopener" aria-label="Open COLOURS 🌈 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da8475e09afb846f2658b29bd236" alt="Cover artwork for the COLOURS 🌈 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Soul · Joy</span>
+<h3 class="pl-title" itemprop="name">COLOURS 🌈</h3>
+<p class="pl-desc" itemprop="description">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/2JGGk44Nopf8BX7oYJsler?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="COLOURS 🌈 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2JGGk44Nopf8BX7oYJsler" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/0mrwKGH6s0MWsNfMCtcTQz" target="_blank" rel="noopener" aria-label="Open Groovation 🎷 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da840924f35ba443453381778c15" alt="Cover artwork for the Groovation 🎷 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Jazz-hop · Soul</span>
+<h3 class="pl-title" itemprop="name">Groovation 🎷</h3>
+<p class="pl-desc" itemprop="description">A smooth blend of jazz-infused beats, soulful bars, and golden-era groove—perfect for late nights, deep thoughts, and head-nodding escape. Pure sonic therapy.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/0mrwKGH6s0MWsNfMCtcTQz?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="Groovation 🎷 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/0mrwKGH6s0MWsNfMCtcTQz" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Soul · R&B</span>
-<h3>NEO SOUL 🎶</h3>
-<p class="newsroom-excerpt">A deep dive into the quintessential collection of Jazz, Soul, R&B and Neo Soul beats.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/7yvugJcCzkaWN908rXTSIL?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="NEO SOUL 🎶 on Spotify"></iframe>
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/0UWRprsfYCjbnpLHCNUCPF" target="_blank" rel="noopener" aria-label="Open LOVE ❤️ on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da845e321bde595bb619410594a1" alt="Cover artwork for the LOVE ❤️ playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Soul · Jazz funk</span>
+<h3 class="pl-title" itemprop="name">LOVE ❤️</h3>
+<p class="pl-desc" itemprop="description">Love songs with real players behind them: Bill Withers, Incognito, Snarky Puppy, Lady Blackbird and Citrus Sun.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/0UWRprsfYCjbnpLHCNUCPF?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="LOVE ❤️ on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/0UWRprsfYCjbnpLHCNUCPF" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Nu-Jazz · Downtempo</span>
-<h3>LOTUS 🪷</h3>
-<p class="newsroom-excerpt">Take a break from a busy day and relax with soothing nu jazz and downtempo beats.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/7hZsKoasqFogxZVqDKYJwA?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="LOTUS 🪷 on Spotify"></iframe>
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/7yvugJcCzkaWN908rXTSIL" target="_blank" rel="noopener" aria-label="Open NEO SOUL 🎶 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84ab134bdb207cccad40efcaf9" alt="Cover artwork for the NEO SOUL 🎶 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Soul · R&amp;B</span>
+<h3 class="pl-title" itemprop="name">NEO SOUL 🎶</h3>
+<p class="pl-desc" itemprop="description">A deep dive into the quintessential collection of Jazz, Soul, R&B and Neo Soul beats.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/7yvugJcCzkaWN908rXTSIL?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="NEO SOUL 🎶 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/7yvugJcCzkaWN908rXTSIL" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-</div>
-
-<header class="newsroom-section-head" id="lane-morning-mood" data-reveal><p class="newsroom-kicker">MORNING & MOOD</p><h2>Energy and tone</h2><p class="newsroom-lede">Tracks to kick off the day or shift the room. Fashion-forward soul, vivid colour, and laid-back energy.</p></header>
-
-<div class="newsroom-grid">
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Disco · French house</span>
-<h3 itemprop="name">COOL 🎧</h3>
-<p class="newsroom-excerpt" itemprop="description">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/4y3b1FXh8eVhwRRoKwrtSx?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="COOL 🎧 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/4y3b1FXh8eVhwRRoKwrtSx" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/36Rkih8f9fgd92jI3QVMrQ" target="_blank" rel="noopener" aria-label="Open NEOVIE 🌱 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84f2628cb7fa5462dabcd8fba7" alt="Cover artwork for the NEOVIE 🌱 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Neo soul · Broken beat</span>
+<h3 class="pl-title" itemprop="name">NEOVIE 🌱</h3>
+<p class="pl-desc" itemprop="description">Neo soul and broken beat for slow afternoons, with The Foreign Exchange, Emma-Jean Thackray and Gwen Bunn.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/36Rkih8f9fgd92jI3QVMrQ?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="NEOVIE 🌱 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/36Rkih8f9fgd92jI3QVMrQ" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Hip-hop · R&amp;B</span>
-<h3 itemprop="name">LIFETIME ⏳</h3>
-<p class="newsroom-excerpt" itemprop="description">Soulful beats and thoughtful lyrics. A captivating look into the world of contemporary hip hop, R&B and rap.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/1RnzXyrj73nyo4yK6j3xT9?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="LIFETIME ⏳ on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/1RnzXyrj73nyo4yK6j3xT9" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/5wjy0SY2jCwAZ4UFLF3eXC" target="_blank" rel="noopener" aria-label="Open SPOTLIGHT 🔆 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da846c1230cdbadc6b04d1eabb5d" alt="Cover artwork for the SPOTLIGHT 🔆 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Jazz funk · Neo soul</span>
+<h3 class="pl-title" itemprop="name">SPOTLIGHT 🔆</h3>
+<p class="pl-desc" itemprop="description">Jazz funk and neo soul with the spotlight on the players — Patrice Rushen, Omar, Kenny Garrett, Jill Scott and Stro Elliot.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/5wjy0SY2jCwAZ4UFLF3eXC?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="SPOTLIGHT 🔆 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5wjy0SY2jCwAZ4UFLF3eXC" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Lo-fi</span>
-<h3 itemprop="name">LO-FI BEATS 🎹</h3>
-<p class="newsroom-excerpt" itemprop="description">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/6Utj7AwHY6VkgGtm9wAneh?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="LO-FI BEATS 🎹 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/6Utj7AwHY6VkgGtm9wAneh" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/5RQ9X2WmRseY9SEU5oLwwX" target="_blank" rel="noopener" aria-label="Open SUMMERTIME 🌞 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84194d2347398021360c2fd549" alt="Cover artwork for the SUMMERTIME 🌞 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Soul · Jazz</span>
+<h3 class="pl-title" itemprop="name">SUMMERTIME 🌞</h3>
+<p class="pl-desc" itemprop="description">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R&B and Neo Soul beats.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/5RQ9X2WmRseY9SEU5oLwwX?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="SUMMERTIME 🌞 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5RQ9X2WmRseY9SEU5oLwwX" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Nu-Jazz · Downtempo</span>
-<h3 itemprop="name">LOTUS 🪷</h3>
-<p class="newsroom-excerpt" itemprop="description">Take a break from a busy day and relax with soothing nu jazz and downtempo beats.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/7hZsKoasqFogxZVqDKYJwA?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="LOTUS 🪷 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/7hZsKoasqFogxZVqDKYJwA" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/2CeSPJPwxmhbIIdfXyap3F" target="_blank" rel="noopener" aria-label="Open THE DATE on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da8452cbacbd7c6cf52a2c2b2a78" alt="Cover artwork for the THE DATE playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Jazzy hip-hop · Downtempo</span>
+<h3 class="pl-title" itemprop="name">THE DATE</h3>
+<p class="pl-desc" itemprop="description">Chill vibes and smooth grooves—The Date playlist blends jazzy hip-hop, mellow beats, and soulful flows, perfect for setting the mood or unwinding in style. 🎶</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/2CeSPJPwxmhbIIdfXyap3F?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="THE DATE on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2CeSPJPwxmhbIIdfXyap3F" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Chill · Focus</span>
-<h3 itemprop="name">Lōkahi 🌺</h3>
-<p class="newsroom-excerpt" itemprop="description">A polished selection of laid-back, melodic tracks blending warm rhythms, smooth vocals, and uplifting island-inspired sounds. Ideal for relaxed afternoons, scenic drives, and easygoing moments.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/6dhwZBIQ4dpoc9lne6b7Aj?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Lōkahi 🌺 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/6dhwZBIQ4dpoc9lne6b7Aj" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/261aHSqcEnM5KnTCLSNFQz" target="_blank" rel="noopener" aria-label="Open TIMES ⏳ on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da8465f695e82cbb1b08e5a296b3" alt="Cover artwork for the TIMES ⏳ playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Soul · Broken beat</span>
+<h3 class="pl-title" itemprop="name">TIMES ⏳</h3>
+<p class="pl-desc" itemprop="description">British soul and broken beat at its warmest: Incognito, Shaun Escoffery, Eric Benét, Lucy Pearl and Full Flava.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/261aHSqcEnM5KnTCLSNFQz?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="TIMES ⏳ on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/261aHSqcEnM5KnTCLSNFQz" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Soul · Mood</span>
-<h3 itemprop="name">MORNING ☕️</h3>
-<p class="newsroom-excerpt" itemprop="description">Soulful tracks with a fashion-forward vibe. Music to set the tone for a productive and stylish day.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/3GspTYbjOA4oCSulh3YLng?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="MORNING ☕️ on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/3GspTYbjOA4oCSulh3YLng" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/56Vs5RzfyK1uqwWFoTz3SB" target="_blank" rel="noopener" aria-label="Open Thrill Seekers 🌀 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84e7baa033889bbb3bf6657d4e" alt="Cover artwork for the Thrill Seekers 🌀 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Alternative R&B · Downtempo</span>
+<h3 class="pl-title" itemprop="name">Thrill Seekers 🌀</h3>
+<p class="pl-desc" itemprop="description">A genre-blurring ride through lush beats, soulful flows, and late-night textures curated for seekers of motion, feeling, and moments that linger.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/56Vs5RzfyK1uqwWFoTz3SB?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="Thrill Seekers 🌀 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/56Vs5RzfyK1uqwWFoTz3SB" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Trip-hop · Downtempo</span>
-<h3 itemprop="name">PARISIAN DESTINY 🗼</h3>
-<p class="newsroom-excerpt" itemprop="description">Jazz-sampling trip-hop from Proleter, Poldoore, The Geek x Vrv and Ours Samplus. Cinematic, unhurried, built for headphones.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/4PBfAfwUv5fEJAYErxvNJ4?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="PARISIAN DESTINY 🗼 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/4PBfAfwUv5fEJAYErxvNJ4" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/2WxvFba2Sgg4Sd3lZJHmHP" target="_blank" rel="noopener" aria-label="Open UBUNTU 🍥 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84b553ef6f2c246695cc5cfdf1" alt="Cover artwork for the UBUNTU 🍥 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Gospel · Soul</span>
+<h3 class="pl-title" itemprop="name">UBUNTU 🍥</h3>
+<p class="pl-desc" itemprop="description">Gospel-rooted soul that lifts a room — Kirk Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris and Avery*Sunshine.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/2WxvFba2Sgg4Sd3lZJHmHP?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="UBUNTU 🍥 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2WxvFba2Sgg4Sd3lZJHmHP" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Chill · Focus</span>
-<h3 itemprop="name">SWIM 🏊</h3>
-<p class="newsroom-excerpt" itemprop="description">Chill grooves, dreamy vibes, and smooth rhythms for floating through your day—perfect for a swim, a drive, or getting lost in thought. Dive in.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/40OkPs9Yk4AtBZrtYz5xtW?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="SWIM 🏊 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/40OkPs9Yk4AtBZrtYz5xtW" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/2XO0Kw6aCXdfUT3coih7vg" target="_blank" rel="noopener" aria-label="Open WAVES 🌊 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84a2f65062cc32aca8a80335b6" alt="Cover artwork for the WAVES 🌊 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Jazz · R&amp;B</span>
+<h3 class="pl-title" itemprop="name">WAVES 🌊</h3>
+<p class="pl-desc" itemprop="description">Modern jazz and R&B in conversation — Robert Glasper, Esperanza Spalding, Tori Kelly, Brandy and Nate Smith.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/2XO0Kw6aCXdfUT3coih7vg?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="WAVES 🌊 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2XO0Kw6aCXdfUT3coih7vg" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
+</div>
+</div>
+</section>
 
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Downtempo · Nu jazz</span>
-<h3 itemprop="name">TETRA 🔱</h3>
-<p class="newsroom-excerpt" itemprop="description">Downtempo and nu jazz to think against: Zero 7, Michael League, Souleance, Flatpocket and Twit One.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/2KTuNfNOJsvUmrcTK3Erh5?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="TETRA 🔱 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/2KTuNfNOJsvUmrcTK3Erh5" />
+<section class="pl-band pl-band-hip-hop" id="lane-hip-hop" aria-labelledby="lane-hip-hop-h">
+<div class="pl-band-inner">
+<header class="pl-lane-head">
+<h2 class="pl-lane-title" id="lane-hip-hop-h">Hip-Hop</h2>
+<p class="pl-lane-sub">Rap, boom bap and beats · 7 playlists</p>
+</header>
+<div class="pl-grid">
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/6830pCYVUFYHtnkE4SJfhR" target="_blank" rel="noopener" aria-label="Open BLAST 💥 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84e1f98d87d37ba214a465652b" alt="Cover artwork for the BLAST 💥 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Hip-hop · Rap</span>
+<h3 class="pl-title" itemprop="name">BLAST 💥</h3>
+<p class="pl-desc" itemprop="description">Brace yourself for hardcore rap and hip hop tracks.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/6830pCYVUFYHtnkE4SJfhR?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="BLAST 💥 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6830pCYVUFYHtnkE4SJfhR" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/6rCGkdLLdt6IXhkQvXSwyF" target="_blank" rel="noopener" aria-label="Open ETHEREAL on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84b4d17e7e80d28b850a7e1bf9" alt="Cover artwork for the ETHEREAL playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Boom bap · Rap</span>
+<h3 class="pl-title" itemprop="name">ETHEREAL</h3>
+<p class="pl-desc" itemprop="description">Heavyweight rap across the eras, from DJ Muggs and ETO to Eminem, Nicki Minaj and Fat Joe. Dusty drums, sharp pens.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/6rCGkdLLdt6IXhkQvXSwyF?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="ETHEREAL on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6rCGkdLLdt6IXhkQvXSwyF" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Soul · Joy</span>
-<h3>COLOURS 🌈</h3>
-<p class="newsroom-excerpt">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/2JGGk44Nopf8BX7oYJsler?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="COLOURS 🌈 on Spotify"></iframe>
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/5yUR35ZVOOpxyPOBhAvhkR" target="_blank" rel="noopener" aria-label="Open HIP HOP MIXTAPE 📼 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da844be1d414769f27e5c2f76eda" alt="Cover artwork for the HIP HOP MIXTAPE 📼 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Hip-hop</span>
+<h3 class="pl-title" itemprop="name">HIP HOP MIXTAPE 📼</h3>
+<p class="pl-desc" itemprop="description">A few of the favourite hip-hop gems.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/5yUR35ZVOOpxyPOBhAvhkR?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="HIP HOP MIXTAPE 📼 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5yUR35ZVOOpxyPOBhAvhkR" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">House · Deep house</span>
-<h3>ESSENTIAL 💚</h3>
-<p class="newsroom-excerpt">Laid-back beats, house-influenced grooves and new deep house tracks.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/1lZbauO3yCPB3YAyT5xLCW?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="ESSENTIAL 💚 on Spotify"></iframe>
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/6jFJIxFfpUx0oGkbLDImKB" target="_blank" rel="noopener" aria-label="Open HIP-HOP 🎤 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da846bf59c3ee949f0b5203ee8ee" alt="Cover artwork for the HIP-HOP 🎤 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Hip-hop · R&amp;B</span>
+<h3 class="pl-title" itemprop="name">HIP-HOP 🎤</h3>
+<p class="pl-desc" itemprop="description">Original Hip Hop, Rap and R&B Flavor Sessions.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/6jFJIxFfpUx0oGkbLDImKB?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="HIP-HOP 🎤 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6jFJIxFfpUx0oGkbLDImKB" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-</div>
-
-<header class="newsroom-section-head" id="lane-electronic" data-reveal><p class="newsroom-kicker">ELECTRONIC</p><h2>Disco, house and workout</h2><p class="newsroom-lede">Funky disco, French touch and electro. Energetic listening for movement, focus or the dance floor.</p></header>
-
-<div class="newsroom-grid">
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">House · Disco</span>
-<h3 itemprop="name">CITY ⛩️</h3>
-<p class="newsroom-excerpt" itemprop="description">Immerse yourself in the pulsating rhythms of stripped-back techno, progressive house, and endless dance tracks.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/5OQTseRtYQtZF6kERLvcSz?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="CITY ⛩️ on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/5OQTseRtYQtZF6kERLvcSz" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/5mKe1KjwZRzTS4FtU2jejT" target="_blank" rel="noopener" aria-label="Open OBLIVION 💫 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84bf4753aa2e1bfe52f24dc42a" alt="Cover artwork for the OBLIVION 💫 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">West coast · Rap</span>
+<h3 class="pl-title" itemprop="name">OBLIVION 💫</h3>
+<p class="pl-desc" itemprop="description">West coast weight and francophone rap side by side — Dr. Dre, Eminem, Xzibit, 113 and Jimmy Sissoko.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/5mKe1KjwZRzTS4FtU2jejT?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="OBLIVION 💫 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5mKe1KjwZRzTS4FtU2jejT" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">House · Deep house</span>
-<h3 itemprop="name">ESSENTIAL 💚</h3>
-<p class="newsroom-excerpt" itemprop="description">Laid-back beats, house-influenced grooves and new deep house tracks.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/1lZbauO3yCPB3YAyT5xLCW?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="ESSENTIAL 💚 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/1lZbauO3yCPB3YAyT5xLCW" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/3Eg1SZ5yYbtdytaV3sVg6C" target="_blank" rel="noopener" aria-label="Open POP WORKOUT 🥤 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da8444ec7469e1ccb1dab6d21c6d" alt="Cover artwork for the POP WORKOUT 🥤 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Pop · Hip-hop</span>
+<h3 class="pl-title" itemprop="name">POP WORKOUT 🥤</h3>
+<p class="pl-desc" itemprop="description">Explore some of the newest tracks in pop music, from traditional sounds to hip-hop hybrids and beyond.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/3Eg1SZ5yYbtdytaV3sVg6C?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="POP WORKOUT 🥤 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/3Eg1SZ5yYbtdytaV3sVg6C" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">House · Disco</span>
-<h3 itemprop="name">ETERNAL GROOVE 🪩</h3>
-<p class="newsroom-excerpt" itemprop="description">Timeless 90s–00s disco & house anthems. Euphoric, soulful, and floor-filling grooves built for nights where the beat never ends.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/79rcQ3HAOu3RQTu0hyPFVX?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="ETERNAL GROOVE 🪩 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/79rcQ3HAOu3RQTu0hyPFVX" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/5yegPuy33SiP7DIwL6MF0J" target="_blank" rel="noopener" aria-label="Open WORKOUT BEATS 💿 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84b7a032c4641457f36e6abbb6" alt="Cover artwork for the WORKOUT BEATS 💿 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Hip-hop · Indie pop</span>
+<h3 class="pl-title" itemprop="name">WORKOUT BEATS 💿</h3>
+<p class="pl-desc" itemprop="description">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/5yegPuy33SiP7DIwL6MF0J?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="WORKOUT BEATS 💿 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/5yegPuy33SiP7DIwL6MF0J" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
+</div>
+</div>
+</section>
 
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Future house · Pop</span>
-<h3 itemprop="name">EVOLUTION ☀️</h3>
-<p class="newsroom-excerpt" itemprop="description">Bright future house and electronic pop from Lenno, Midnight Kids, Party Pupils and Javeon.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/5vKhAAaO06St5XoCh96PxR?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="EVOLUTION ☀️ on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/5vKhAAaO06St5XoCh96PxR" />
+<section class="pl-band pl-band-morning-mood" id="lane-morning-mood" aria-labelledby="lane-morning-mood-h">
+<div class="pl-band-inner">
+<header class="pl-lane-head">
+<h2 class="pl-lane-title" id="lane-morning-mood-h">Morning &amp; Mood</h2>
+<p class="pl-lane-sub">Slow starts and deep focus · 8 playlists</p>
+</header>
+<div class="pl-grid">
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/4y3b1FXh8eVhwRRoKwrtSx" target="_blank" rel="noopener" aria-label="Open COOL 🎧 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da840ab6193f96b895c1264badc3" alt="Cover artwork for the COOL 🎧 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Disco · French house</span>
+<h3 class="pl-title" itemprop="name">COOL 🎧</h3>
+<p class="pl-desc" itemprop="description">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/4y3b1FXh8eVhwRRoKwrtSx?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="COOL 🎧 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/4y3b1FXh8eVhwRRoKwrtSx" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">French touch · Electro</span>
-<h3 itemprop="name">FOREVER ♾️</h3>
-<p class="newsroom-excerpt" itemprop="description">French touch at full beam — Daft Punk, Justice, Kavinsky and L'Impératrice trading neon synths and motorik basslines.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/2r2g4G5wTSucqWda5MkuXH?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="FOREVER ♾️ on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/2r2g4G5wTSucqWda5MkuXH" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/1RnzXyrj73nyo4yK6j3xT9" target="_blank" rel="noopener" aria-label="Open LIFETIME ⏳ on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84e86212b31675303f2c19b4c1" alt="Cover artwork for the LIFETIME ⏳ playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Hip-hop · R&amp;B</span>
+<h3 class="pl-title" itemprop="name">LIFETIME ⏳</h3>
+<p class="pl-desc" itemprop="description">Soulful beats and thoughtful lyrics. A captivating look into the world of contemporary hip hop, R&B and rap.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/1RnzXyrj73nyo4yK6j3xT9?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="LIFETIME ⏳ on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/1RnzXyrj73nyo4yK6j3xT9" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Indie dance · Synth pop</span>
-<h3 itemprop="name">GOLDEN HOUR 🌟</h3>
-<p class="newsroom-excerpt" itemprop="description">Golden-hour synth pop and indie dance, with Blu DeTiger, Magdalena Bay and Merty Shango carrying the shimmer.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/3YiO3L3LMWlXaGEGtJFdXo?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="GOLDEN HOUR 🌟 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/3YiO3L3LMWlXaGEGtJFdXo" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/6Utj7AwHY6VkgGtm9wAneh" target="_blank" rel="noopener" aria-label="Open LO-FI BEATS 🎹 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84204903094655b4749439b10f" alt="Cover artwork for the LO-FI BEATS 🎹 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Lo-fi</span>
+<h3 class="pl-title" itemprop="name">LO-FI BEATS 🎹</h3>
+<p class="pl-desc" itemprop="description">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/6Utj7AwHY6VkgGtm9wAneh?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="LO-FI BEATS 🎹 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/6Utj7AwHY6VkgGtm9wAneh" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Nu-disco · Electro</span>
-<h3 itemprop="name">LOOK 💋</h3>
-<p class="newsroom-excerpt" itemprop="description">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/0S31oWFMppEkhtHiSsldI1?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="LOOK 💋 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/0S31oWFMppEkhtHiSsldI1" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/7hZsKoasqFogxZVqDKYJwA" target="_blank" rel="noopener" aria-label="Open LOTUS 🪷 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84f4c33289cea18b51ca669850" alt="Cover artwork for the LOTUS 🪷 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Nu-Jazz · Downtempo</span>
+<h3 class="pl-title" itemprop="name">LOTUS 🪷</h3>
+<p class="pl-desc" itemprop="description">Take a break from a busy day and relax with soothing nu jazz and downtempo beats.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/7hZsKoasqFogxZVqDKYJwA?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="LOTUS 🪷 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/7hZsKoasqFogxZVqDKYJwA" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Nu-disco · House</span>
-<h3 itemprop="name">NEO DANCE 🪩</h3>
-<p class="newsroom-excerpt" itemprop="description">Nu-disco and filtered house built for movement — Aevion, Lenno, Oliver, Yelle and Tore P.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/5OksFu1fF3eHNifxxAcev6?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="NEO DANCE 🪩 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/5OksFu1fF3eHNifxxAcev6" />
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/3GspTYbjOA4oCSulh3YLng" target="_blank" rel="noopener" aria-label="Open MORNING ☕️ on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da8440c76601a3cc8932f2b74d5e" alt="Cover artwork for the MORNING ☕️ playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Soul · Mood</span>
+<h3 class="pl-title" itemprop="name">MORNING ☕️</h3>
+<p class="pl-desc" itemprop="description">Soulful tracks with a fashion-forward vibe. Music to set the tone for a productive and stylish day.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/3GspTYbjOA4oCSulh3YLng?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="MORNING ☕️ on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/3GspTYbjOA4oCSulh3YLng" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/4PBfAfwUv5fEJAYErxvNJ4" target="_blank" rel="noopener" aria-label="Open PARISIAN DESTINY 🗼 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84249221c7ca82936f59a3b3aa" alt="Cover artwork for the PARISIAN DESTINY 🗼 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Trip-hop · Downtempo</span>
+<h3 class="pl-title" itemprop="name">PARISIAN DESTINY 🗼</h3>
+<p class="pl-desc" itemprop="description">Jazz-sampling trip-hop from Proleter, Poldoore, The Geek x Vrv and Ours Samplus. Cinematic, unhurried, built for headphones.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/4PBfAfwUv5fEJAYErxvNJ4?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="PARISIAN DESTINY 🗼 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/4PBfAfwUv5fEJAYErxvNJ4" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Nu-disco · Electro</span>
-<h3>LOOK 💋</h3>
-<p class="newsroom-excerpt">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/0S31oWFMppEkhtHiSsldI1?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="LOOK 💋 on Spotify"></iframe>
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/40OkPs9Yk4AtBZrtYz5xtW" target="_blank" rel="noopener" aria-label="Open SWIM 🏊 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84808664129c9412b41219d18a" alt="Cover artwork for the SWIM 🏊 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Chillwave · Downtempo</span>
+<h3 class="pl-title" itemprop="name">SWIM 🏊</h3>
+<p class="pl-desc" itemprop="description">Chill grooves, dreamy vibes, and smooth rhythms for floating through your day—perfect for a swim, a drive, or getting lost in thought. Dive in.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/40OkPs9Yk4AtBZrtYz5xtW?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="SWIM 🏊 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/40OkPs9Yk4AtBZrtYz5xtW" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Hip-hop · Indie pop</span>
-<h3>WORKOUT BEATS 💿</h3>
-<p class="newsroom-excerpt">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/5yegPuy33SiP7DIwL6MF0J?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="WORKOUT BEATS 💿 on Spotify"></iframe>
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/2KTuNfNOJsvUmrcTK3Erh5" target="_blank" rel="noopener" aria-label="Open TETRA 🔱 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da84c101708017adfc783a7a6ff1" alt="Cover artwork for the TETRA 🔱 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Downtempo · Nu jazz</span>
+<h3 class="pl-title" itemprop="name">TETRA 🔱</h3>
+<p class="pl-desc" itemprop="description">Downtempo and nu jazz to think against: Zero 7, Michael League, Souleance, Flatpocket and Twit One.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/2KTuNfNOJsvUmrcTK3Erh5?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="TETRA 🔱 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/2KTuNfNOJsvUmrcTK3Erh5" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
 </div>
-
-<header class="newsroom-section-head" id="lane-hip-hop" data-reveal><p class="newsroom-kicker">HIP-HOP</p><h2>Rap, R&B and beats</h2><p class="newsroom-lede">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo-Fi. The full breadth of beats.</p></header>
-
-<div class="newsroom-grid">
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Hip-hop · Rap</span>
-<h3 itemprop="name">BLAST 💥</h3>
-<p class="newsroom-excerpt" itemprop="description">Brace yourself for hardcore rap and hip hop tracks.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/6830pCYVUFYHtnkE4SJfhR?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="BLAST 💥 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/6830pCYVUFYHtnkE4SJfhR" />
 </div>
-</article>
+</section>
 
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Boom bap · Rap</span>
-<h3 itemprop="name">ETHEREAL</h3>
-<p class="newsroom-excerpt" itemprop="description">Heavyweight rap across the eras, from DJ Muggs and ETO to Eminem, Nicki Minaj and Fat Joe. Dusty drums, sharp pens.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/6rCGkdLLdt6IXhkQvXSwyF?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="ETHEREAL on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/6rCGkdLLdt6IXhkQvXSwyF" />
+<section class="pl-band pl-band-global" id="lane-global" aria-labelledby="lane-global-h">
+<div class="pl-band-inner">
+<header class="pl-lane-head">
+<h2 class="pl-lane-title" id="lane-global-h">Global</h2>
+<p class="pl-lane-sub">Sounds from further afield · 1 playlist</p>
+</header>
+<div class="pl-grid">
+<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="https://open.spotify.com/playlist/13oQhLqxlNuPrn9pOIx6Vx" target="_blank" rel="noopener" aria-label="Open WASSULU DON 🦁 on Spotify"><img src="https://i.scdn.co/image/ab67706c0000da8436f3d01be810b7f02b0235dd" alt="Cover artwork for the WASSULU DON 🦁 playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">Afrobeat · World</span>
+<h3 class="pl-title" itemprop="name">WASSULU DON 🦁</h3>
+<p class="pl-desc" itemprop="description">Celebrate the diverse heritage of African music. From the soulful rhythms of Wassoulou to the lively beats of Londonko.</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/13oQhLqxlNuPrn9pOIx6Vx?utm_source=generator&amp;theme=0" height="152" loading="lazy" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="WASSULU DON 🦁 on Spotify"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/playlist/13oQhLqxlNuPrn9pOIx6Vx" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Hip-hop</span>
-<h3 itemprop="name">HIP HOP MIXTAPE 📼</h3>
-<p class="newsroom-excerpt" itemprop="description">A few of the favourite hip-hop gems.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/5yUR35ZVOOpxyPOBhAvhkR?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="HIP HOP MIXTAPE 📼 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/5yUR35ZVOOpxyPOBhAvhkR" />
 </div>
-</article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Hip-hop · R&amp;B</span>
-<h3 itemprop="name">HIP-HOP 🎤</h3>
-<p class="newsroom-excerpt" itemprop="description">Original Hip Hop, Rap and R&B Flavor Sessions.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/6jFJIxFfpUx0oGkbLDImKB?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="HIP-HOP 🎤 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/6jFJIxFfpUx0oGkbLDImKB" />
 </div>
-</article>
+</section>
 
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">West coast · Rap</span>
-<h3 itemprop="name">OBLIVION 💫</h3>
-<p class="newsroom-excerpt" itemprop="description">West coast weight and francophone rap side by side — Dr. Dre, Eminem, Xzibit, 113 and Jimmy Sissoko.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/5mKe1KjwZRzTS4FtU2jejT?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="OBLIVION 💫 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/5mKe1KjwZRzTS4FtU2jejT" />
+
+<section class="pl-faq" itemscope itemtype="https://schema.org/FAQPage" aria-labelledby="pl-faq-h">
+<div class="pl-faq-inner">
+<h2 id="pl-faq-h">Questions? Answers.</h2>
+<p class="pl-faq-sub">How to listen, on what, and where the music comes from.</p>
+<details class="pl-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<summary itemprop="name">Do I need a Spotify subscription to listen?</summary>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">No. Every playlist plays in the embedded player above on a free Spotify account, with ads between tracks. A Premium account removes the ads and allows offline listening, but nothing here is behind a paywall.</p>
 </div>
-</article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Hip-hop · Rap</span>
-<h3 itemprop="name">POP WORKOUT 🥤</h3>
-<p class="newsroom-excerpt" itemprop="description">Explore some of the newest tracks in pop music, from traditional sounds to hip-hop hybrids and beyond.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/3Eg1SZ5yYbtdytaV3sVg6C?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="POP WORKOUT 🥤 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/3Eg1SZ5yYbtdytaV3sVg6C" />
+</details>
+<details class="pl-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<summary itemprop="name">Can I listen on Apple Music instead?</summary>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Yes — follow the profile at music.apple.com/profile/bxhero. The playlists on this page are the Spotify versions, because Apple Music does not expose individual playlist links publicly. Following the profile is the reliable route on that platform.</p>
 </div>
-</article>
-
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Hip-hop · Indie pop</span>
-<h3 itemprop="name">WORKOUT BEATS 💿</h3>
-<p class="newsroom-excerpt" itemprop="description">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/5yegPuy33SiP7DIwL6MF0J?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="WORKOUT BEATS 💿 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/5yegPuy33SiP7DIwL6MF0J" />
+</details>
+<details class="pl-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<summary itemprop="name">What devices do these work on?</summary>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Anywhere Spotify runs: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox, and any browser. The players on this page work on mobile and desktop without an app.</p>
 </div>
-</article>
-
+</details>
+<details class="pl-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<summary itemprop="name">Which playlist should I start with for deep work?</summary>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Morning &amp; Mood for focus without distraction — downtempo, nu jazz and lo-fi with little or no vocal to compete with reading. Electronic suits work that needs momentum rather than calm.</p>
 </div>
-</article>
-
-<article class="newsroom-card playlist-card">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Hip-hop · Rap</span>
-<h3>BLAST 💥</h3>
-<p class="newsroom-excerpt">Brace yourself for hardcore rap and hip hop tracks.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/6830pCYVUFYHtnkE4SJfhR?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="BLAST 💥 on Spotify"></iframe>
+</details>
+<details class="pl-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<summary itemprop="name">How often are the playlists updated?</summary>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Regularly, and in place. Following a playlist on Spotify or the profile on either service means new tracks arrive without checking back here.</p>
 </div>
-</article>
-
-<article class="newsroom-card playlist-card">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Hip-hop</span>
-<h3>HIP HOP MIXTAPE 📼</h3>
-<p class="newsroom-excerpt">A few of the favourite hip-hop gems.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/5yUR35ZVOOpxyPOBhAvhkR?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="HIP HOP MIXTAPE 📼 on Spotify"></iframe>
+</details>
+<details class="pl-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<summary itemprop="name">Can I share or embed these playlists?</summary>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Yes. Every card links to the playlist on Spotify, where the share menu provides links and embed codes. They are public playlists, free to share.</p>
 </div>
-</article>
-
-<article class="newsroom-card playlist-card">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Hip-hop · R&B</span>
-<h3>LIFETIME ⏳</h3>
-<p class="newsroom-excerpt">Soulful beats and thoughtful lyrics. A captivating look into the world of contemporary hip hop, R&B and rap.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/1RnzXyrj73nyo4yK6j3xT9?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="LIFETIME ⏳ on Spotify"></iframe>
+</details>
+<details class="pl-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<summary itemprop="name">Who makes these playlists?</summary>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Sebastien Rousseau — as BXHERO on Spotify and Apple Music. They are the playlists used while writing about payments and engineering, not an algorithmic feed.</p>
 </div>
-</article>
-
-<article class="newsroom-card playlist-card">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Lo-fi</span>
-<h3>LO-FI BEATS 🎹</h3>
-<p class="newsroom-excerpt">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/6Utj7AwHY6VkgGtm9wAneh?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="LO-FI BEATS 🎹 on Spotify"></iframe>
+</details>
 </div>
-</article>
+</section>
 
+<aside class="pl-everywhere">
+<div class="pl-everywhere-inner">
+<h2>Listen on every device</h2>
+<p>Every playlist plays in the browser above, and in the Spotify app on the
+devices you already use. Follow the profile on either service and new
+playlists arrive on their own.</p>
+<ul class="pl-devices"><li>iPhone</li><li>iPad</li><li>Android</li><li>Mac</li><li>Windows</li><li>Apple Watch</li><li>Apple TV</li><li>CarPlay</li><li>Sonos</li><li>Google Nest</li><li>PlayStation</li><li>Xbox</li><li>Web browser</li></ul>
+<div class="pl-actions pl-actions-center">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/user/sebastienrousseau" target="_blank" rel="me noopener">Follow on Spotify</a>
+<a class="pl-action pl-action-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="me noopener">Follow on Apple Music</a>
 </div>
-
-<header class="newsroom-section-head" id="lane-global" data-reveal><p class="newsroom-kicker">GLOBAL</p><h2>World rhythms</h2></header>
-
-<div class="newsroom-grid">
-<article class="newsroom-card playlist-card" itemscope itemtype="https://schema.org/MusicPlaylist">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Afrobeat · World</span>
-<h3 itemprop="name">WASSULU DON 🦁</h3>
-<p class="newsroom-excerpt" itemprop="description">Celebrate the diverse heritage of African music. From the soulful rhythms of Wassoulou to the lively beats of Londonko.</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/13oQhLqxlNuPrn9pOIx6Vx?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="WASSULU DON 🦁 on Spotify"></iframe>
-<link itemprop="url" href="https://open.spotify.com/playlist/13oQhLqxlNuPrn9pOIx6Vx" />
 </div>
-</article>
+</aside>
 
-</div>
-</article>
-
-</div>
-
-        </section>
-      </div>
+</section>
     </main>
 
 <!-- gen-layouts:footer-start -->
