@@ -952,222 +952,507 @@ def report_layout() -> str:
     return TOP + body + BOTTOM
 
 
-# (title, eyebrow, description, spotify_id)
+# (title, eyebrow, description, spotify_id, artwork_id)
+#
+# Artwork ids resolve against i18n-safe https://i.scdn.co/image/<id>, which
+# the CSP already allows; the cards lead with the cover the way Apple Music
+# does rather than opening on text.
 PLAYLISTS_FEATURED = (
-    "TETRA 🔱",
-    "Latest · Soul · Uplift",
-    "May 11, 2024",
-    "Step into the harmonious realm of TETRA. A euphoric playlist curated to uplift your spirits and fill your soul with joy.",
-    "2KTuNfNOJsvUmrcTK3Erh5",
+    "Lōkahi 🌺",
+    "Latest playlist",
+    "August 2026",
+    "Sun-drenched indie pop that slips into French house — Tame Impala and almost monday giving way to Stardust, Modjo, Daft Punk and Justice, then Afro house from HUGEL and Salif Keita.",
+    "6dhwZBIQ4dpoc9lne6b7Aj",
+    "https://i.scdn.co/image/ab67706c0000da84fa9411fea3e5385a56df77d2",
 )
 
 PLAYLISTS_SECTIONS = [
     (
-        "SOUL & JAZZ",
-        "Soulful, jazz and downtempo",
-        "Smooth Jazz, Neo Soul, and laid-back grooves. Playlists for when the day calls for a slower tempo.",
-        [
-            (
-                "SUMMERTIME 🌞",
-                "Soul · Jazz",
-                "Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R&B and Neo Soul beats.",
-                "5RQ9X2WmRseY9SEU5oLwwX",
-            ),
-            (
-                "NEO SOUL 🎶",
-                "Soul · R&B",
-                "A deep dive into the quintessential collection of Jazz, Soul, R&B and Neo Soul beats.",
-                "7yvugJcCzkaWN908rXTSIL",
-            ),
-            (
-                "LOTUS 🪷",
-                "Nu-Jazz · Downtempo",
-                "Take a break from a busy day and relax with soothing nu jazz and downtempo beats.",
-                "7hZsKoasqFogxZVqDKYJwA",
-            ),
-        ],
-    ),
-    (
-        "MORNING & MOOD",
-        "Energy and tone",
-        "Tracks to kick off the day or shift the room. Fashion-forward soul, vivid colour, and laid-back energy.",
-        [
-            (
-                "MORNING ☕️",
-                "Soul · Mood",
-                "Soulful tracks with a fashion-forward vibe. Music to set the tone for a productive and stylish day.",
-                "3GspTYbjOA4oCSulh3YLng",
-            ),
-            (
-                "COLOURS 🌈",
-                "Soul · Joy",
-                "Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms.",
-                "2JGGk44Nopf8BX7oYJsler",
-            ),
-            (
-                "ESSENTIAL 💚",
-                "House · Deep house",
-                "Laid-back beats, house-influenced grooves and new deep house tracks.",
-                "1lZbauO3yCPB3YAyT5xLCW",
-            ),
-        ],
-    ),
-    (
-        "ELECTRONIC",
+        "electronic",
+        "Electronic",
         "Disco, house and workout",
-        "Funky disco, French touch and electro. Energetic listening for movement, focus or the dance floor.",
+        "House, disco and French touch",
         [
             (
-                "COOL 🎧",
-                "Disco · French house",
-                "Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience.",
-                "4y3b1FXh8eVhwRRoKwrtSx",
+                "ETERNAL GROOVE 🪩",
+                "Disco · Classic house",
+                "Timeless 90s–00s disco & house anthems. Euphoric, soulful, and floor-filling grooves built for nights where the beat never ends.",
+                "79rcQ3HAOu3RQTu0hyPFVX",
+                "https://i.scdn.co/image/ab67706c0000da84ea3cd37ea58de627af7ab3af",
+            ),
+            (
+                "Lōkahi 🌺",
+                "Indie pop · French house",
+                "Sun-drenched indie pop that slips into French house — Tame Impala and almost monday giving way to Stardust, Modjo, Daft Punk and Justice, then Afro house from HUGEL and Salif Keita.",
+                "6dhwZBIQ4dpoc9lne6b7Aj",
+                "https://i.scdn.co/image/ab67706c0000da84fa9411fea3e5385a56df77d2",
+            ),
+            (
+                "FOREVER ♾️",
+                "French touch · Electro",
+                "French touch at full beam — Daft Punk, Justice, Kavinsky and L'Impératrice trading neon synths and motorik basslines.",
+                "2r2g4G5wTSucqWda5MkuXH",
+                "https://i.scdn.co/image/ab67706c0000da84f6ea0a0bfa74c52c95690cc4",
+            ),
+            (
+                "GOLDEN HOUR 🌟",
+                "Indie dance · Synth pop",
+                "Golden-hour synth pop and indie dance, with Blu DeTiger, Magdalena Bay and Merty Shango carrying the shimmer.",
+                "3YiO3L3LMWlXaGEGtJFdXo",
+                "https://i.scdn.co/image/ab67706c0000da84e8a289b744da9c54e867ce52",
             ),
             (
                 "LOOK 💋",
                 "Nu-disco · Electro",
                 "A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke.",
                 "0S31oWFMppEkhtHiSsldI1",
+                "https://i.scdn.co/image/ab67706c0000da84e5f9a33792844a185541953b",
             ),
             (
-                "WORKOUT BEATS 💿",
-                "Hip-hop · Indie pop",
-                "Laid-back beats, hip-hop-influenced grooves and new indie pop tracks.",
-                "5yegPuy33SiP7DIwL6MF0J",
+                "CITY ⛩️",
+                "Techno · Progressive house",
+                "Immerse yourself in the pulsating rhythms of stripped-back techno, progressive house, and endless dance tracks.",
+                "5OQTseRtYQtZF6kERLvcSz",
+                "https://i.scdn.co/image/ab67706c0000da84b01797b3eaa398e5be8a19c8",
+            ),
+            (
+                "NEO DANCE 🪩",
+                "Nu-disco · House",
+                "Nu-disco and filtered house built for movement — Aevion, Lenno, Oliver, Yelle and Tore P.",
+                "5OksFu1fF3eHNifxxAcev6",
+                "https://i.scdn.co/image/ab67706c0000da84c99c974c5fc72d354495ffa0",
+            ),
+            (
+                "ESSENTIAL 💚",
+                "House · Deep house",
+                "Laid-back beats, house-influenced grooves and new deep house tracks.",
+                "1lZbauO3yCPB3YAyT5xLCW",
+                "https://i.scdn.co/image/ab67706c0000da84f7cdb833e8c21996a92c1c1c",
+            ),
+            (
+                "EVOLUTION ☀️",
+                "Future house · Pop",
+                "Bright future house and electronic pop from Lenno, Midnight Kids, Party Pupils and Javeon.",
+                "5vKhAAaO06St5XoCh96PxR",
+                "https://i.scdn.co/image/ab67706c0000da84ef337638a24f69f31d0567da",
             ),
         ],
     ),
     (
-        "HIP-HOP",
-        "Rap, R&B and beats",
-        "From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo-Fi. The full breadth of beats.",
+        "soul-jazz",
+        "Soul &amp; Jazz",
+        "Soulful, jazz and downtempo",
+        "Neo soul, nu jazz and slow tempo",
         [
             (
-                "HIP-HOP 🎤",
-                "Hip-hop · R&B",
-                "Original Hip Hop, Rap and R&B Flavor Sessions.",
-                "6jFJIxFfpUx0oGkbLDImKB",
+                "THE DATE",
+                "Jazzy hip-hop · Downtempo",
+                "Chill vibes and smooth grooves—The Date playlist blends jazzy hip-hop, mellow beats, and soulful flows, perfect for setting the mood or unwinding in style. 🎶",
+                "2CeSPJPwxmhbIIdfXyap3F",
+                "https://i.scdn.co/image/ab67706c0000da8452cbacbd7c6cf52a2c2b2a78",
+            ),
+            (
+                "Groovation 🎷",
+                "Jazz-hop · Soul",
+                "A smooth blend of jazz-infused beats, soulful bars, and golden-era groove—perfect for late nights, deep thoughts, and head-nodding escape. Pure sonic therapy.",
+                "0mrwKGH6s0MWsNfMCtcTQz",
+                "https://i.scdn.co/image/ab67706c0000da840924f35ba443453381778c15",
+            ),
+            (
+                "Thrill Seekers 🌀",
+                "Alternative R&B · Downtempo",
+                "A genre-blurring ride through lush beats, soulful flows, and late-night textures curated for seekers of motion, feeling, and moments that linger.",
+                "56Vs5RzfyK1uqwWFoTz3SB",
+                "https://i.scdn.co/image/ab67706c0000da84e7baa033889bbb3bf6657d4e",
+            ),
+            (
+                "1975 🪩",
+                "Disco · Boogie",
+                "Seventies and eighties floor fillers — The Jacksons, Luther Vandross, Patrice Rushen and Change. Strings, claps, pure boogie.",
+                "1q8SfSUHyFxjUWucE9A1wR",
+                "https://i.scdn.co/image/ab67706c0000da84d762254e7a9fd7b28eaf61d9",
+            ),
+            (
+                "Back to Life 🛟",
+                "Soul · Nu jazz",
+                "Soulful house and nu jazz with a live pulse: Nuyorican Soul, Jocelyn Brown, Gretchen Parlato and Count Basic.",
+                "7GLBaZHcJ5st67eMCILolm",
+                "https://i.scdn.co/image/ab67706c0000da8443105358a81c27b7357bc798",
+            ),
+            (
+                "UBUNTU 🍥",
+                "Gospel · Soul",
+                "Gospel-rooted soul that lifts a room — Kirk Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris and Avery*Sunshine.",
+                "2WxvFba2Sgg4Sd3lZJHmHP",
+                "https://i.scdn.co/image/ab67706c0000da84b553ef6f2c246695cc5cfdf1",
+            ),
+            (
+                "NEOVIE 🌱",
+                "Neo soul · Broken beat",
+                "Neo soul and broken beat for slow afternoons, with The Foreign Exchange, Emma-Jean Thackray and Gwen Bunn.",
+                "36Rkih8f9fgd92jI3QVMrQ",
+                "https://i.scdn.co/image/ab67706c0000da84f2628cb7fa5462dabcd8fba7",
+            ),
+            (
+                "COLOURS 🌈",
+                "Soul · Joy",
+                "Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms.",
+                "2JGGk44Nopf8BX7oYJsler",
+                "https://i.scdn.co/image/ab67706c0000da8475e09afb846f2658b29bd236",
+            ),
+            (
+                "TIMES ⏳",
+                "Soul · Broken beat",
+                "British soul and broken beat at its warmest: Incognito, Shaun Escoffery, Eric Benét, Lucy Pearl and Full Flava.",
+                "261aHSqcEnM5KnTCLSNFQz",
+                "https://i.scdn.co/image/ab67706c0000da8465f695e82cbb1b08e5a296b3",
+            ),
+            (
+                "WAVES 🌊",
+                "Jazz · R&B",
+                "Modern jazz and R&B in conversation — Robert Glasper, Esperanza Spalding, Tori Kelly, Brandy and Nate Smith.",
+                "2XO0Kw6aCXdfUT3coih7vg",
+                "https://i.scdn.co/image/ab67706c0000da84a2f65062cc32aca8a80335b6",
+            ),
+            (
+                "LOVE ❤️",
+                "Soul · Jazz funk",
+                "Love songs with real players behind them: Bill Withers, Incognito, Snarky Puppy, Lady Blackbird and Citrus Sun.",
+                "0UWRprsfYCjbnpLHCNUCPF",
+                "https://i.scdn.co/image/ab67706c0000da845e321bde595bb619410594a1",
+            ),
+            (
+                "SUMMERTIME 🌞",
+                "Soul · Jazz",
+                "Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R&B and Neo Soul beats.",
+                "5RQ9X2WmRseY9SEU5oLwwX",
+                "https://i.scdn.co/image/ab67706c0000da84194d2347398021360c2fd549",
+            ),
+            (
+                "NEO SOUL 🎶",
+                "Soul · R&B",
+                "A deep dive into the quintessential collection of Jazz, Soul, R&B and Neo Soul beats.",
+                "7yvugJcCzkaWN908rXTSIL",
+                "https://i.scdn.co/image/ab67706c0000da84ab134bdb207cccad40efcaf9",
+            ),
+            (
+                "SPOTLIGHT 🔆",
+                "Jazz funk · Neo soul",
+                "Jazz funk and neo soul with the spotlight on the players — Patrice Rushen, Omar, Kenny Garrett, Jill Scott and Stro Elliot.",
+                "5wjy0SY2jCwAZ4UFLF3eXC",
+                "https://i.scdn.co/image/ab67706c0000da846c1230cdbadc6b04d1eabb5d",
+            ),
+        ],
+    ),
+    (
+        "hip-hop",
+        "Hip-Hop",
+        "Rap, R&amp;B and beats",
+        "Rap, R&B and golden-era grooves",
+        [
+            (
+                "ETHEREAL",
+                "Boom bap · Rap",
+                "Heavyweight rap across the eras, from DJ Muggs and ETO to Eminem, Nicki Minaj and Fat Joe. Dusty drums, sharp pens.",
+                "6rCGkdLLdt6IXhkQvXSwyF",
+                "https://i.scdn.co/image/ab67706c0000da84b4d17e7e80d28b850a7e1bf9",
+            ),
+            (
+                "OBLIVION 💫",
+                "West coast · Rap",
+                "West coast weight and francophone rap side by side — Dr. Dre, Eminem, Xzibit, 113 and Jimmy Sissoko.",
+                "5mKe1KjwZRzTS4FtU2jejT",
+                "https://i.scdn.co/image/ab67706c0000da84bf4753aa2e1bfe52f24dc42a",
             ),
             (
                 "BLAST 💥",
                 "Hip-hop · Rap",
                 "Brace yourself for hardcore rap and hip hop tracks.",
                 "6830pCYVUFYHtnkE4SJfhR",
+                "https://i.scdn.co/image/ab67706c0000da84e1f98d87d37ba214a465652b",
+            ),
+            (
+                "HIP-HOP 🎤",
+                "Hip-hop · R&B",
+                "Original Hip Hop, Rap and R&B Flavor Sessions.",
+                "6jFJIxFfpUx0oGkbLDImKB",
+                "https://i.scdn.co/image/ab67706c0000da846bf59c3ee949f0b5203ee8ee",
             ),
             (
                 "HIP HOP MIXTAPE 📼",
                 "Hip-hop",
                 "A few of the favourite hip-hop gems.",
                 "5yUR35ZVOOpxyPOBhAvhkR",
+                "https://i.scdn.co/image/ab67706c0000da844be1d414769f27e5c2f76eda",
             ),
             (
-                "LIFETIME ⏳",
-                "Hip-hop · R&B",
-                "Soulful beats and thoughtful lyrics. A captivating look into the world of contemporary hip hop, R&B and rap.",
-                "1RnzXyrj73nyo4yK6j3xT9",
+                "POP WORKOUT 🥤",
+                "Pop · Hip-hop",
+                "Explore some of the newest tracks in pop music, from traditional sounds to hip-hop hybrids and beyond.",
+                "3Eg1SZ5yYbtdytaV3sVg6C",
+                "https://i.scdn.co/image/ab67706c0000da8444ec7469e1ccb1dab6d21c6d",
+            ),
+            (
+                "WORKOUT BEATS 💿",
+                "Hip-hop · Indie pop",
+                "Laid-back beats, hip-hop-influenced grooves and new indie pop tracks.",
+                "5yegPuy33SiP7DIwL6MF0J",
+                "https://i.scdn.co/image/ab67706c0000da84b7a032c4641457f36e6abbb6",
+            ),
+        ],
+    ),
+    (
+        "morning-mood",
+        "Morning &amp; Mood",
+        "Energy and tone",
+        "Wake-up energy and evening calm",
+        [
+            (
+                "SWIM 🏊",
+                "Chillwave · Downtempo",
+                "Chill grooves, dreamy vibes, and smooth rhythms for floating through your day—perfect for a swim, a drive, or getting lost in thought. Dive in.",
+                "40OkPs9Yk4AtBZrtYz5xtW",
+                "https://i.scdn.co/image/ab67706c0000da84808664129c9412b41219d18a",
+            ),
+            (
+                "PARISIAN DESTINY 🗼",
+                "Trip-hop · Downtempo",
+                "Jazz-sampling trip-hop from Proleter, Poldoore, The Geek x Vrv and Ours Samplus. Cinematic, unhurried, built for headphones.",
+                "4PBfAfwUv5fEJAYErxvNJ4",
+                "https://i.scdn.co/image/ab67706c0000da84249221c7ca82936f59a3b3aa",
+            ),
+            (
+                "TETRA 🔱",
+                "Downtempo · Nu jazz",
+                "Downtempo and nu jazz to think against: Zero 7, Michael League, Souleance, Flatpocket and Twit One.",
+                "2KTuNfNOJsvUmrcTK3Erh5",
+                "https://i.scdn.co/image/ab67706c0000da84c101708017adfc783a7a6ff1",
             ),
             (
                 "LO-FI BEATS 🎹",
                 "Lo-fi",
                 "Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats.",
                 "6Utj7AwHY6VkgGtm9wAneh",
+                "https://i.scdn.co/image/ab67706c0000da84204903094655b4749439b10f",
+            ),
+            (
+                "COOL 🎧",
+                "Disco · French house",
+                "Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience.",
+                "4y3b1FXh8eVhwRRoKwrtSx",
+                "https://i.scdn.co/image/ab67706c0000da840ab6193f96b895c1264badc3",
+            ),
+            (
+                "LOTUS 🪷",
+                "Nu-Jazz · Downtempo",
+                "Take a break from a busy day and relax with soothing nu jazz and downtempo beats.",
+                "7hZsKoasqFogxZVqDKYJwA",
+                "https://i.scdn.co/image/ab67706c0000da84f4c33289cea18b51ca669850",
+            ),
+            (
+                "MORNING ☕️",
+                "Soul · Mood",
+                "Soulful tracks with a fashion-forward vibe. Music to set the tone for a productive and stylish day.",
+                "3GspTYbjOA4oCSulh3YLng",
+                "https://i.scdn.co/image/ab67706c0000da8440c76601a3cc8932f2b74d5e",
+            ),
+            (
+                "LIFETIME ⏳",
+                "Hip-hop · R&B",
+                "Soulful beats and thoughtful lyrics. A captivating look into the world of contemporary hip hop, R&B and rap.",
+                "1RnzXyrj73nyo4yK6j3xT9",
+                "https://i.scdn.co/image/ab67706c0000da84e86212b31675303f2c19b4c1",
             ),
         ],
     ),
     (
-        "GLOBAL",
+        "global",
+        "Global",
         "World rhythms",
-        None,
+        "Rhythms from everywhere else",
         [
             (
                 "WASSULU DON 🦁",
-                "Africa · World",
+                "Afrobeat · World",
                 "Celebrate the diverse heritage of African music. From the soulful rhythms of Wassoulou to the lively beats of Londonko.",
                 "13oQhLqxlNuPrn9pOIx6Vx",
+                "https://i.scdn.co/image/ab67706c0000da8436f3d01be810b7f02b0235dd",
             ),
         ],
     ),
 ]
 
+FAQ_HTML = """<section class="pl-faq" itemscope itemtype="https://schema.org/FAQPage" aria-labelledby="pl-faq-h">
+<div class="pl-faq-inner">
+<h2 id="pl-faq-h">Questions? Answers.</h2>
+<p class="pl-faq-sub">How to listen, on what, and where the music comes from.</p>
+<details class="qa-item pl-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<summary itemprop="name">Do I need a Spotify subscription to listen?</summary>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">No. Every playlist plays in the embedded player above on a free Spotify account, with ads between tracks. A Premium account removes the ads and allows offline listening, but nothing here is behind a paywall.</p>
+</div>
+</details>
+<details class="qa-item pl-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<summary itemprop="name">Can I listen on Apple Music instead?</summary>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Yes — follow the profile at music.apple.com/profile/bxhero. The playlists on this page are the Spotify versions, because Apple Music does not expose individual playlist links publicly. Following the profile is the reliable route on that platform.</p>
+</div>
+</details>
+<details class="qa-item pl-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<summary itemprop="name">What devices do these work on?</summary>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Anywhere Spotify runs: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox, and any browser. The players on this page work on mobile and desktop without an app.</p>
+</div>
+</details>
+<details class="qa-item pl-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<summary itemprop="name">Which playlist should I start with for deep work?</summary>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Morning &amp; Mood for focus without distraction — downtempo, nu jazz and lo-fi with little or no vocal to compete with reading. Electronic suits work that needs momentum rather than calm.</p>
+</div>
+</details>
+<details class="qa-item pl-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<summary itemprop="name">How often are the playlists updated?</summary>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Regularly, and in place. Following a playlist on Spotify or the profile on either service means new tracks arrive without checking back here.</p>
+</div>
+</details>
+<details class="qa-item pl-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<summary itemprop="name">Can I share or embed these playlists?</summary>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Yes. Every card links to the playlist on Spotify, where the share menu provides links and embed codes. They are public playlists, free to share.</p>
+</div>
+</details>
+<details class="qa-item pl-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<summary itemprop="name">Who makes these playlists?</summary>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Sebastien Rousseau — as BXHERO on Spotify and Apple Music. They are the playlists used while writing about payments and engineering, not an algorithmic feed.</p>
+</div>
+</details>
+</div>
+</section>"""
+
+EVERYWHERE_HTML = """<aside class="pl-everywhere">
+<div class="pl-everywhere-inner">
+<h2>Listen on every device</h2>
+<p>Every playlist plays in the browser above, and in the Spotify app on the
+devices you already use. Follow the profile on either service and new
+playlists arrive on their own.</p>
+<ul class="pl-devices"><li>iPhone</li><li>iPad</li><li>Android</li><li>Mac</li><li>Windows</li><li>Apple Watch</li><li>Apple TV</li><li>CarPlay</li><li>Sonos</li><li>Google Nest</li><li>PlayStation</li><li>Xbox</li><li>Web browser</li></ul>
+<div class="pl-actions pl-actions-center">
+<a class="pl-action pl-action-spotify" href="https://open.spotify.com/user/sebastienrousseau" target="_blank" rel="me noopener">Follow on Spotify</a>
+<a class="pl-action pl-action-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="me noopener">Follow on Apple Music</a>
+</div>
+</div>
+</aside>"""
+
 
 def _playlist_card(item: tuple) -> str:
-    title, eyebrow, desc, pid = item
-    return f"""<article class="newsroom-card playlist-card">
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">{eyebrow}</span>
-<h3>{title}</h3>
-<p class="newsroom-excerpt">{desc}</p>
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/{pid}?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="{title} on Spotify"></iframe>
+    """One playlist card: cover, genre, title, blurb, player, Spotify link.
+
+    The cover leads and the embed follows, which is the Apple Music
+    ordering; the card carries MusicPlaylist microdata so the page's
+    ItemList has a name and description per entry."""
+    title, eyebrow, desc, pid, art = item
+    url = f"https://open.spotify.com/playlist/{pid}"
+    return f"""<article class="pl-card" itemscope itemtype="https://schema.org/MusicPlaylist">
+<a class="pl-cover" href="{url}" target="_blank" rel="noopener" aria-label="Open {title} on Spotify">
+<img src="{art}" alt="Cover artwork for the {title} playlist" width="300" height="300" loading="lazy" decoding="async" itemprop="image" /></a>
+<span class="pl-genre">{eyebrow}</span>
+<h3 class="pl-title" itemprop="name">{title}</h3>
+<p class="pl-desc" itemprop="description">{desc}</p>
+<div class="pl-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/{pid}?utm_source=generator&amp;theme=0" width="100%" height="152" frameBorder="0" loading="lazy" title="{title} playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="{url}" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
 </div>
 </article>"""
 
 
 def _playlist_featured() -> str:
-    title, eyebrow, date, desc, pid = PLAYLISTS_FEATURED
-    return f"""<article class="newsroom-featured playlist-featured">
-<div class="newsroom-featured-media spotify-media">
-<iframe class="spotify-frame" src="https://open.spotify.com/embed/playlist/{pid}?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="{title} on Spotify"></iframe>
+    """The newest playlist, given a full-bleed hero band of its own."""
+    title, eyebrow, date, desc, pid, art = PLAYLISTS_FEATURED
+    url = f"https://open.spotify.com/playlist/{pid}"
+    return f"""<div class="pl-hero" itemscope itemtype="https://schema.org/MusicPlaylist">
+<div class="pl-hero-inner">
+<div class="pl-hero-copy">
+<p class="pl-hero-kicker">{eyebrow}</p>
+<h2 class="pl-hero-title" itemprop="name">{title}</h2>
+<p class="pl-hero-desc" itemprop="description">{desc}</p>
+<p class="pl-hero-meta"><time datetime="2026-08-22">{date}</time> · Indie pop · French house</p>
+<div class="pl-actions">
+<a class="pl-action pl-action-spotify" href="{url}" itemprop="url" target="_blank" rel="noopener">Play on Spotify</a>
+<a class="pl-action pl-action-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="noopener">Follow on Apple Music</a>
 </div>
-<div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">{eyebrow}</span>
-<h3>{title}</h3>
-<p class="newsroom-meta"><time datetime="2024-05-11">{date}</time> · Spotify</p>
-<p>{desc}</p>
 </div>
-</article>"""
+<div class="pl-hero-player"><iframe class="pl-frame" src="https://open.spotify.com/embed/playlist/{pid}?utm_source=generator&amp;theme=0" width="100%" height="352" frameBorder="0" loading="lazy" title="{title} playlist on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+</div>
+</div>"""
 
 
-def _section_slug(kicker: str) -> str:
-    """Stable anchor slug for a playlist section header (e.g. 'SOUL & JAZZ' -> 'soul-jazz')."""
-    import re as _re
-
-    return _re.sub(r"[^a-z0-9]+", "-", kicker.lower()).strip("-")
-
-
-def _playlist_section(kicker: str, title: str, lede, items) -> str:
-    anchor = _section_slug(kicker)
-    head = (
-        f'<header class="newsroom-section-head" id="lane-{anchor}" data-reveal>'
-        f'<p class="newsroom-kicker">{kicker}</p><h2>{title}</h2>'
-    )
-    if lede:
-        head += f'<p class="newsroom-lede">{lede}</p>'
-    head += "</header>"
-    cards = "\n\n".join(_playlist_card(i) for i in items)
-    return head + '\n\n<div class="newsroom-grid">\n\n' + cards + "\n\n</div>"
+def _playlist_section(key: str, title: str, _kicker: str, sub: str, items) -> str:
+    """One genre lane, full-bleed, tinted by its own hue pair."""
+    cards = "\n".join(_playlist_card(i) for i in items)
+    n = len(items)
+    plural = "playlist" if n == 1 else "playlists"
+    return f"""<section class="pl-band pl-band-{key}" id="lane-{key}" aria-labelledby="lane-{key}-h">
+<div class="pl-band-inner">
+<header class="pl-lane-head">
+<h2 class="pl-lane-title" id="lane-{key}-h">{title}</h2>
+<p class="pl-lane-sub">{sub} · {n} {plural}</p>
+</header>
+<div class="pl-grid">
+{cards}
+</div>
+</div>
+</section>"""
 
 
 def playlist_layout() -> str:
     sections_html = "\n\n".join(
-        _playlist_section(key, title, link, items) for key, title, link, items in PLAYLISTS_SECTIONS
+        _playlist_section(key, title, kicker, sub, items)
+        for key, title, kicker, sub, items in PLAYLISTS_SECTIONS
     )
-    # Lane chip nav (Apple-HIG selective navigation): one chip per
-    # section, anchor-jumps to lane-<slug>. Mirrors /topics/ pattern.
-    chip_html = "".join(
-        f'<a class="playlist-chip" href="#lane-{_section_slug(key)}">{title}</a>'
-        for key, title, _link, _items in PLAYLISTS_SECTIONS
+    chip_html = "\n".join(
+        f'<a class="pl-chip" href="#lane-{key}">{title}</a>'
+        for key, title, _kicker, _sub, _items in PLAYLISTS_SECTIONS
     )
-    body = f"""    <section class="ap-hero">
-      <span class="ap-hero-eyebrow">Listening</span>
-      <h1>Playlists</h1>
-      <p class="sub">{{{{subtitle}}}}</p>
-    </section>
+    lane_chips = "".join(
+        f'<a class="playlist-chip" href="#lane-{key}">{kicker}</a>'
+        for key, _title, kicker, _sub, _items in PLAYLISTS_SECTIONS
+    )
+    body = f"""    <section class="ap-hero pl-topper">
+        <span class="ap-hero-eyebrow">Listening</span>
+        <h1>Playlists</h1>
+        <p class="sub">{{{{subtitle}}}}</p>
+      </section>
 
-    <main id="main" class="content ap-section">
-      <div class="wrap" style="max-width:var(--max-wide)">
-        <div class="playlist-intro" data-reveal>{{{{content}}}}</div>
-        <nav class="playlist-chips" aria-label="Jump to a lane">{chip_html}</nav>
-        <section class="newsroom">
+      <main id="main" class="content ap-section">
+        <div class="wrap" style="max-width:var(--max-wide)">
+          <div class="playlist-intro" data-reveal>{{{{content}}}}</div>
+          <div class="playlist-platforms" data-reveal>
+<p class="playlist-platforms-label">Listen where you already are</p>
+<a class="playlist-platform playlist-platform-spotify" href="https://open.spotify.com/user/sebastienrousseau" target="_blank" rel="me noopener">
+<span aria-hidden="true">&#9835;</span> Follow on Spotify
+</a>
+<a class="playlist-platform playlist-platform-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="me noopener">
+<span aria-hidden="true">&#63743;</span> Follow on Apple Music
+</a>
+</div>
+<nav class="playlist-chips" aria-label="Jump to a lane">{lane_chips}</nav>
+<section class="pl-stage">
 
-          <header class="newsroom-section-head" data-reveal><p class="newsroom-kicker">FEATURED</p><h2>Latest playlist</h2></header>
+{_playlist_featured()}
+<nav class="pl-nav" aria-label="Jump to a genre">
+{chip_html}
+</nav>
 
-          {_playlist_featured()}
+{sections_html}
 
-          {sections_html}
+{FAQ_HTML}
 
-        </section>
-      </div>
-    </main>
+{EVERYWHERE_HTML}
+</section>
+        </div>
+      </main>
 
 """
     playlist_css = """      .playlist-intro{max-width:680px;margin:0 auto 32px;text-align:center;font-size:clamp(17px,1.6vw,20px);line-height:1.5;color:var(--ink-mute)}
@@ -1175,13 +1460,169 @@ def playlist_layout() -> str:
       .playlist-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:0 auto 48px;max-width:780px}
       .playlist-chip{display:inline-flex;align-items:center;min-height:36px;padding:8px 18px;border:1px solid var(--rule);border-radius:999px;font-family:var(--type-body);font-size:13px;font-weight:600;color:var(--ink-deep);text-decoration:none;background:var(--paper);transition:background .15s,border-color .15s}
       .playlist-chip:hover,.playlist-chip:focus-visible{background:var(--card);border-color:var(--ink-mute)}
-      .newsroom-section-head[id^=lane-]{scroll-margin-block-start:calc(var(--nav-h) + 16px)}
       .spotify-frame{border-radius:12px;border:0;display:block;width:100%}
-      .playlist-card .newsroom-card-body{padding:22px 24px 22px}
-      .playlist-card .newsroom-excerpt{margin-bottom:16px}
-      .playlist-featured .newsroom-featured-media.spotify-media{background:#1f1f1f;aspect-ratio:1/1;padding:0;display:block}
-      .playlist-featured .spotify-frame{width:100%;height:100%;border-radius:0}
-      @media (max-width:833px){.playlist-featured .newsroom-featured-media.spotify-media{aspect-ratio:16/9}}
+      /* Playlist board: full-bleed genre bands, cover-led cards and a
+         tinted hero, mirroring Apple Music's layout rather than the
+         site's newsroom grid. Colours come from the tokens below so
+         both themes follow. */
+      :root{--pl-white:#fff;--pl-rose:#ff6b8a;--pl-spotify:#1db954;--pl-apple:#fa243c;
+        --pl-night-1:#2a0714;--pl-night-2:#16060f;--pl-night-3:#0a0510;
+        --pl-dusk-1:#2c0716;--pl-dusk-2:#170610}
+      .pl-stage{--pl-red:var(--pl-apple);--pl-radius:18px;
+        font-family:var(--type-body);margin:0 0 clamp(48px,7vw,96px)}
+
+      .pl-hero{position:relative;margin-inline:calc(50% - 50vw);width:100vw;
+        padding:clamp(56px,8vw,116px) clamp(20px,5vw,64px);
+        background:
+          radial-gradient(58% 82% at 12% 6%, rgba(255,45,85,.55), transparent 64%),
+          radial-gradient(52% 74% at 74% 4%, rgba(255,132,45,.42), transparent 66%),
+          radial-gradient(64% 88% at 88% 78%, rgba(150,60,255,.44), transparent 62%),
+          radial-gradient(70% 96% at 34% 96%, rgba(255,26,92,.38), transparent 64%),
+          linear-gradient(148deg, var(--pl-night-1) 0%, var(--pl-night-2) 46%, var(--pl-night-3) 100%);
+        color:var(--pl-white)}
+      .pl-hero .pl-hero-title,.pl-hero .pl-everywhere h2{color:var(--pl-white)}
+      .pl-hero .pl-hero-desc{color:rgba(255,255,255,.86)}
+      .pl-hero .pl-hero-meta{color:rgba(255,255,255,.66)}
+      .pl-hero .pl-hero-kicker{color:var(--pl-rose)}
+      .content .pl-hero a.pl-action-apple,.pl-hero a.pl-action-apple{
+        color:var(--pl-white)!important;border-color:rgba(255,255,255,.4)}
+      .pl-hero a.pl-action-apple:hover{border-color:var(--pl-white);color:var(--pl-white)}
+      .pl-hero-inner{max-width:1120px;margin-inline:auto;display:grid;
+        grid-template-columns:1fr 1fr;gap:clamp(28px,4.5vw,72px);align-items:center}
+      @media (max-width:940px){.pl-hero-inner{grid-template-columns:1fr}}
+      .pl-hero-kicker{margin:0 0 12px;font-size:12px;letter-spacing:.14em;
+        text-transform:uppercase;font-weight:700;color:var(--pl-red)}
+      /* Sans, tight, heavy — the Apple register. Not the site's serif. */
+      .pl-hero-title{font-family:var(--type-body);margin:0 0 18px;
+        font-size:clamp(40px,7vw,88px);line-height:1.02;letter-spacing:-.035em;
+        font-weight:700;color:var(--ink)}
+      .pl-hero-desc{margin:0 0 16px;font-size:clamp(17px,1.6vw,21px);line-height:1.5;
+        color:var(--ink-soft);max-width:44ch}
+      .pl-hero-meta{margin:0 0 28px;font-size:14px;color:var(--ink-mute)}
+      .pl-hero-player{border-radius:22px;overflow:hidden;
+        box-shadow:0 30px 70px -26px rgba(0,0,0,.5)}
+
+      .pl-nav{display:flex;flex-wrap:wrap;gap:10px;
+        margin:clamp(30px,4vw,48px) auto 0;max-width:1120px}
+      .pl-chip{display:inline-flex;align-items:center;padding:9px 18px;border-radius:999px;
+        border:1px solid var(--border);color:var(--ink-soft);text-decoration:none;
+        font-size:14px;font-weight:600;transition:color .18s ease,border-color .18s ease}
+      .pl-chip:hover,.pl-chip:focus-visible{color:var(--pl-red);border-color:var(--pl-red)}
+
+        section.pl-topper{position:relative;margin-inline:calc(50% - 50vw)!important;width:100vw;
+        padding:clamp(64px,9vw,132px) clamp(20px,5vw,64px) clamp(48px,7vw,96px)!important;
+        text-align:center;color:var(--pl-white)!important;
+        background:
+          radial-gradient(56% 84% at 16% 2%, rgba(255,45,85,.58), transparent 62%),
+          radial-gradient(50% 72% at 78% 0%, rgba(255,138,46,.44), transparent 64%),
+          radial-gradient(62% 86% at 90% 84%, rgba(148,58,255,.46), transparent 60%),
+          radial-gradient(72% 96% at 28% 98%, rgba(255,26,92,.4), transparent 62%),
+          linear-gradient(150deg,var(--pl-dusk-1) 0%,var(--pl-dusk-2) 48%,var(--pl-night-3) 100%)!important}
+      .pl-topper .ap-hero-eyebrow{color:var(--pl-rose)!important;letter-spacing:.16em}
+      .pl-topper h1{font-family:var(--type-body);font-size:clamp(46px,8.4vw,104px)!important;
+        line-height:.98;letter-spacing:-.038em;font-weight:700;color:var(--pl-white)!important;
+        margin:10px 0 16px}
+      .pl-topper .sub{color:rgba(255,255,255,.84)!important;max-width:56ch;
+        margin-inline:auto;font-size:clamp(17px,1.7vw,22px);line-height:1.5}
+      .pl-faq{margin-inline:calc(50% - 50vw);width:100vw;
+        padding:clamp(56px,8vw,116px) clamp(20px,5vw,64px);background:var(--bg)}
+      .pl-faq-inner{max-width:820px;margin-inline:auto}
+      .pl-faq h2{font-family:var(--type-body);margin:0 0 8px;
+        font-size:clamp(30px,4.6vw,56px);line-height:1.04;letter-spacing:-.03em;
+        font-weight:700;color:var(--ink);text-align:center}
+      .pl-faq-sub{margin:0 0 clamp(28px,4vw,48px);text-align:center;
+        color:var(--ink-mute);font-size:17px}
+      .pl-faq-item p{margin:0 0 20px;padding-inline-end:40px;color:var(--ink-soft);
+        font-size:16px;line-height:1.65}
+      .pl-band{--pl-hue:var(--pl-red);--pl-hue2:var(--pl-hue);
+        margin-inline:calc(50% - 50vw);width:100vw;
+        padding:clamp(48px,7vw,104px) clamp(20px,5vw,64px);
+        background:
+          radial-gradient(76% 64% at 6% -8%,
+            color-mix(in srgb,var(--pl-hue) 30%,transparent),transparent 62%),
+          radial-gradient(62% 56% at 98% 4%,
+            color-mix(in srgb,var(--pl-hue2) 24%,transparent),transparent 60%),
+          radial-gradient(92% 72% at 52% 112%,
+            color-mix(in srgb,var(--pl-hue) 16%,transparent),transparent 64%),
+          linear-gradient(180deg,
+            color-mix(in srgb,var(--pl-hue) 6%,var(--bg)) 0%,
+            var(--bg) 58%,
+            color-mix(in srgb,var(--pl-hue2) 7%,var(--bg)) 100%)}
+      .pl-band-inner{max-width:1120px;margin-inline:auto}
+      .pl-band-electronic{--pl-hue:#7c5cff;--pl-hue2:#2f7cff}
+      .pl-band-soul-jazz{--pl-hue:#ff9f0a;--pl-hue2:#ff5e3a}
+      .pl-band-hip-hop{--pl-hue:#fa243c;--pl-hue2:#b14cff}
+      .pl-band-morning-mood{--pl-hue:#32d3c3;--pl-hue2:#5ac8fa}
+      .pl-band-global{--pl-hue:#30d158;--pl-hue2:#ffd60a}
+
+      .pl-lane-head{margin:0 0 clamp(24px,3.4vw,44px);max-width:46ch}
+      .pl-lane-title{font-family:var(--type-body);margin:0 0 8px;
+        font-size:clamp(30px,4.6vw,56px);line-height:1.04;letter-spacing:-.03em;
+        font-weight:700;color:var(--ink)}
+      .pl-lane-sub{margin:0;font-size:clamp(15px,1.4vw,18px);color:var(--ink-mute)}
+
+      .pl-grid{display:grid;gap:clamp(20px,2.4vw,34px);
+        grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+
+      /* Cover first: the artwork is the card, the copy sits under it. */
+      .pl-card{display:flex;flex-direction:column;background:none;border:0;padding:0}
+      .pl-cover{position:relative;display:block;aspect-ratio:1/1;border-radius:var(--pl-radius);
+        overflow:hidden;margin:0 0 14px;background:var(--bg-alt,var(--card));
+        box-shadow:0 18px 38px -20px rgba(0,0,0,.5);
+        transition:transform .28s cubic-bezier(.2,.7,.2,1),box-shadow .28s ease}
+      .pl-cover img{display:block;width:100%;height:100%;object-fit:cover}
+      .pl-card:hover .pl-cover{transform:translateY(-6px) scale(1.012);
+        box-shadow:0 30px 56px -22px rgba(0,0,0,.6)}
+      .pl-genre{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+        color:var(--pl-hue);margin:0 0 6px;font-weight:700}
+      .pl-title{font-family:var(--type-body);margin:0 0 8px;font-size:clamp(18px,1.6vw,22px);line-height:1.22;
+        letter-spacing:-.015em;color:var(--ink);font-weight:700}
+      .pl-desc{margin:0 0 16px;font-size:14px;line-height:1.55;color:var(--ink-mute);
+        flex:1 1 auto;max-width:40ch}
+      .pl-player{border-radius:12px;overflow:hidden;margin:0 0 14px}
+      .pl-frame{display:block;width:100%;border:0}
+
+      /* Apple fills its buttons. One solid accent, white text, full pill. */
+      .pl-actions{display:flex;flex-wrap:wrap;gap:10px}
+      .pl-actions-center{justify-content:center}
+      .pl-action{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;
+        border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;
+        border:1px solid transparent;transition:filter .18s ease,transform .18s ease}
+      .pl-action:hover,.pl-action:focus-visible{filter:brightness(1.08);transform:translateY(-1px)}
+      a.pl-action-spotify,.content a.pl-action-spotify{background:var(--pl-red);color:var(--pl-white)}
+      a.pl-action-apple,.content a.pl-action-apple{color:var(--ink)}
+      .content a.pl-chip{color:var(--ink-soft)}
+      .content a.pl-cover{color:inherit}
+      .pl-action-apple{background:transparent;color:var(--ink);border-color:var(--border)}
+      .pl-action-apple:hover,.pl-action-apple:focus-visible{border-color:var(--pl-red);
+        color:var(--pl-red)}
+
+      .pl-everywhere{margin-inline:calc(50% - 50vw);width:100vw;
+        padding:clamp(56px,8vw,116px) clamp(20px,5vw,64px);text-align:center;
+        background:var(--bg-alt,var(--card))}
+      .pl-everywhere-inner{max-width:780px;margin-inline:auto}
+      .pl-everywhere h2{font-family:var(--type-body);margin:0 0 16px;
+        font-size:clamp(30px,4.6vw,56px);line-height:1.04;letter-spacing:-.03em;
+        font-weight:700;color:var(--ink)}
+      .pl-everywhere p{margin:0 auto 28px;max-width:50ch;font-size:clamp(16px,1.5vw,19px);
+        line-height:1.6;color:var(--ink-soft)}
+      .pl-devices{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 24px;
+        margin:0 0 30px;padding:0;list-style:none;font-size:14px;color:var(--ink-mute)}
+
+      @media (prefers-reduced-motion:reduce){
+        .pl-cover,.pl-action,.pl-chip{transition:none}
+        .pl-card:hover .pl-cover,.pl-action:hover{transform:none}}
+
+      .playlist-platforms{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:0 0 20px}
+      .playlist-platforms-label{margin:0 4px 0 0;font-size:13px;opacity:.75}
+      .playlist-platform{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;
+        border:1px solid var(--rule,rgba(128,128,128,.32));font-size:14px;font-weight:600;text-decoration:none;
+        transition:transform .15s ease,border-color .15s ease}
+      .playlist-platform:hover,.playlist-platform:focus-visible{transform:translateY(-1px)}
+      .playlist-platform-spotify:hover,.playlist-platform-spotify:focus-visible{border-color:var(--pl-spotify)}
+      .playlist-platform-apple:hover,.playlist-platform-apple:focus-visible{border-color:var(--pl-apple)}
+      @media (prefers-reduced-motion:reduce){.playlist-platform{transition:none}
+        .playlist-platform:hover,.playlist-platform:focus-visible{transform:none}}
 """
     out = TOP + body + BOTTOM
     out = out.replace("    </style>", playlist_css + "    </style>")
