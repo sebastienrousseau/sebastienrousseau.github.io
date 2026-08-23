@@ -26,6 +26,10 @@
       "স্তম্ভ · প্রকল্প"
     ],
     [
+      "Curated topic clusters[^<]+",
+      "বিষয়ভিত্তিক গুচ্ছ — একটি সুতো বেছে নিন আর আর্কাইভ জুড়ে সেটি অনুসরণ করুন।"
+    ],
+    [
       "aria-label=\"Post-Quantum Cryptography\"",
       "aria-label=\"পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি\""
     ],
@@ -46,6 +50,26 @@
       "aria-label=\"ব্লকচেইন ও ডিজিটাল অ্যাসেট\""
     ],
     [
+      "alt=\"Post-Quantum Cryptography — topic banner\"",
+      "alt=\"উত্তর-কোয়ান্টাম ক্রিপ্টোগ্রাফি — বিষয়ের ব্যানার\""
+    ],
+    [
+      "alt=\"ISO 20022 &amp; Payments — topic banner\"",
+      "alt=\"ISO 20022 &amp; পেমেন্ট — বিষয়ের ব্যানার\""
+    ],
+    [
+      "alt=\"Applied AI in Banking — topic banner\"",
+      "alt=\"ব্যাংকিংয়ে প্রযুক্ত এআই — বিষয়ের ব্যানার\""
+    ],
+    [
+      "alt=\"Rust &amp; Open Source — topic banner\"",
+      "alt=\"Rust &amp; ওপেন সোর্স — বিষয়ের ব্যানার\""
+    ],
+    [
+      "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
+      "alt=\"ব্লকচেইন &amp; ডিজিটাল সম্পদ — বিষয়ের ব্যানার\""
+    ],
+    [
       "<h3><a href=\"/fr/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
       "<h3><a href=\"/bn/bishay/post-quantum-cryptography/index.html\">পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি</a></h3>"
     ],
@@ -64,6 +88,26 @@
     [
       "<h3><a href=\"/fr/topics/blockchain-digital-assets/[^\"]+\">Blockchain &amp; Digital Assets</a></h3>",
       "<h3><a href=\"/bn/bishay/blockchain-digital-assets/index.html\">ব্লকচেইন ও ডিজিটাল অ্যাসেট</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Lattice-based cryptography, NIST PQC standards, quantum-safe payments,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফি, NIST PQC মান, কোয়ান্টাম-নিরাপদ পেমেন্ট এবং \"এখন সংগ্রহ করো, পরে ডিক্রিপ্ট করো\" ঝুঁকি। আর্থিক পরিষেবার নিরাপত্তা দলগুলোর জন্য গবেষণা নোট, ওপেন সোর্স লাইব্রেরি ও মাইগ্রেশন প্লেবুক।</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Cross-border message migration, structured-address compliance,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">সীমান্ত-পার বার্তা মাইগ্রেশন, কাঠামোবদ্ধ ঠিকানার সম্মতি, SEPA Instant, SWIFT gpi এবং যে পাইকারি পেমেন্ট রেলগুলো গোটা ব্যবস্থাকে ধরে রাখে। সরঞ্জাম, প্লেবুক ও নিয়ন্ত্রক সময়সূচি।</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Generative AI, multimodal LLMs, voice, and speech models[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">জেনারেটিভ এআই, মাল্টিমোডাল LLM, কণ্ঠ ও বাক্‌-মডেল — এবং শীর্ষস্থানীয় প্রতিষ্ঠানে ব্যাংকিং পরিচালনা, গ্রাহকসেবা ও পণ্য প্রকৌশলকে সেগুলো কীভাবে নতুন করে গড়ছে।</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Open-source Rust libraries I author and maintain:[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">আমার লেখা ও রক্ষণাবেক্ষণ করা ওপেন সোর্স Rust লাইব্রেরি: লগিং, কোড জেনারেশন, তারিখ-সময়, ক্রিপ্টোগ্রাফিক প্রিমিটিভ, Kyber-ভিত্তিক KEM এবং একটি Rust স্ট্যাটিক সাইট জেনারেটর।</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Bitcoin, blockchain fundamentals, ERC-20 tokens, stablecoins,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">বিটকয়েন, ব্লকচেইনের মূল ধারণা, ERC-20 টোকেন, স্টেবলকয়েন এবং ডিজিটাল সম্পদনির্ভর পেমেন্ট রেলকে ঘিরে নিয়ন্ত্রক কাঠামো।</p>"
     ],
     [
       "(\\d+) article\\(s\\)</p>",
@@ -158,6 +202,498 @@
       ">ইংরেজি · PDF"
     ],
     [
+      "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-01-\\2\">\\2 জানুয়ারি \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-02-\\2\">\\2 ফেব্রুয়ারি \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-03-\\2\">\\2 মার্চ \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-04-\\2\">\\2 এপ্রিল \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-05-\\2\">\\2 মে \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-06-\\2\">\\2 জুন \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-07-\\2\">\\2 জুলাই \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-08-\\2\">\\2 অগাস্ট \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-09-\\2\">\\2 সেপ্টেম্বর \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
+      "<time datetime=\"\\1-09-01\">সেপ্টেম্বর \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-10-\\2\">\\2 অক্টোবর \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-11-\\2\">\\2 নভেম্বর \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-12-\\2\">\\2 ডিসেম্বর \\1</time>"
+    ],
+    [
+      ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
+      ">macOS-এ OpenAI Whisper ও Metal Performance Shaders GPU ত্বরণ কাজে লাগিয়ে রিয়েল-টাইম বাক্‌-থেকে-লেখা প্রতিলিপির একটি ব্যবস্থা, যা M1 Max-এ রিয়েল টাইমের ৮–১২ গুণ গতিতে এক সেকেন্ডেরও কম বিলম্ব অর্জন করে।<"
+    ],
+    [
+      ">A new paper suggests Shor\\'s algorithm could run on as few as 10,000 qubits\\. The threshold for cryptographically relevant quantum computing is dropping fast\\.<",
+      ">একটি নতুন গবেষণাপত্র বলছে, শোরের অ্যালগরিদম মাত্র ১০,০০০ কিউবিটেই চলতে পারে। ক্রিপ্টোগ্রাফিকভাবে প্রাসঙ্গিক কোয়ান্টাম কম্পিউটিংয়ের সীমা দ্রুত নামছে।<"
+    ],
+    [
+      ">A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research\\.<",
+      ">LWE সমাধানে Yilei Chen-এর কোয়ান্টাম অ্যালগরিদমে একটি ত্রুটি পাওয়া গেছে, যা ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফিকে সাময়িকভাবে নিরাপদ করেছে এবং নিরবচ্ছিন্ন গবেষণার প্রয়োজন স্পষ্ট করেছে।<"
+    ],
+    [
+      ">New quantum algorithm solves a key cryptographic problem, urging accelerated research into quantum-safe security\\.<",
+      ">একটি নতুন কোয়ান্টাম অ্যালগরিদম একটি গুরুত্বপূর্ণ ক্রিপ্টোগ্রাফিক সমস্যার সমাধান করেছে, যা কোয়ান্টাম-নিরাপদ নিরাপত্তা গবেষণা ত্বরান্বিত করার আহ্বান জানায়।<"
+    ],
+    [
+      ">How Fully Homomorphic Encryption revolutionises data security in banking and financial services, preserving privacy against quantum-era threats\\.<",
+      ">সম্পূর্ণ হোমোমরফিক এনক্রিপশন কীভাবে ব্যাংকিং ও আর্থিক পরিষেবায় তথ্যনিরাপত্তায় বিপ্লব আনছে এবং কোয়ান্টাম যুগের হুমকির মুখে গোপনীয়তা রক্ষা করছে।<"
+    ],
+    [
+      ">An analysis of Apple's MM1 paper on Multimodal Large Language Models — architecture, pre-training strategies and emerging capabilities\\.<",
+      ">মাল্টিমোডাল বৃহৎ ভাষা মডেল নিয়ে Apple-এর MM1 গবেষণাপত্রের একটি বিশ্লেষণ — স্থাপত্য, প্রাক-প্রশিক্ষণ কৌশল ও উদীয়মান সক্ষমতা।<"
+    ],
+    [
+      ">How IBM Qiskit and the Quantum Fourier Transform reshape credit ratio analysis in finance, offering unprecedented accuracy and speed\\.<",
+      ">IBM Qiskit ও কোয়ান্টাম ফুরিয়ে রূপান্তর কীভাবে অর্থায়নে ঋণ-অনুপাত বিশ্লেষণকে নতুন করে গড়ছে, অভূতপূর্ব নির্ভুলতা ও গতি এনে।<"
+    ],
+    [
+      ">The transformative role of AI inside quantum algorithms for finance, focusing on their mathematical structure and banking applications\\.<",
+      ">অর্থায়নের কোয়ান্টাম অ্যালগরিদমের ভেতরে এআইয়ের রূপান্তরকারী ভূমিকা, তাদের গাণিতিক কাঠামো ও ব্যাংকিং প্রয়োগে জোর দিয়ে।<"
+    ],
+    [
+      ">As quantum computers threaten traditional encryption, Quantum Key Distribution \\(QKD\\) emerges as a structural answer for financial-grade security\\.<",
+      ">কোয়ান্টাম কম্পিউটার যখন প্রচলিত এনক্রিপশনকে হুমকিতে ফেলছে, কোয়ান্টাম কী ডিস্ট্রিবিউশন (QKD) আর্থিক মানের নিরাপত্তার কাঠামোগত উত্তর হিসেবে উঠে আসছে।<"
+    ],
+    [
+      ">How CRYSTALS-Kyber, the NIST-selected quantum-resistant key-encapsulation mechanism, is reshaping cryptography for the quantum era\\.<",
+      ">NIST-নির্বাচিত কোয়ান্টাম-প্রতিরোধী কী-এনক্যাপসুলেশন ব্যবস্থা CRYSTALS-Kyber কীভাবে কোয়ান্টাম যুগের ক্রিপ্টোগ্রাফিকে নতুন করে গড়ছে।<"
+    ],
+    [
+      ">What kind of research and papers do you publish\\?</summary>",
+      ">আপনি কী ধরনের গবেষণা ও প্রকাশনা প্রকাশ করেন?</summary>"
+    ],
+    [
+      "(<summary[^>]*>আপনি কী ধরনের গবেষণা ও প্রকাশনা প্রকাশ করেন\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>দুটি ধারা পাশাপাশি চলে। <strong>শিল্প-হোয়াইট পেপার</strong>, যেগুলো Emerging Payments Association Asia (EPAA)-র মতো সংগঠনের জন্য তৈরি, পেমেন্ট অবকাঠামোর কাঠামোগত রূপান্তর পরীক্ষা করে — সাম্প্রতিক কালে পাইকারি ও রিয়েল-টাইম নিষ্পত্তি রেলে ক্রিপ্টোগ্রাফিকভাবে প্রাসঙ্গিক কোয়ান্টাম কম্পিউটিংয়ের প্রভাব। <strong>প্রযুক্ত গবেষণা প্রতিবেদন</strong> নির্দিষ্ট কারিগরি বিষয়ে লক্ষ্য রাখে (যেমন: Apple Silicon-এ Whisper + Metal Performance Shaders দিয়ে রিয়েল-টাইম বাক্‌-শনাক্তকরণ) এবং আলাদাভাবে কেনা যায় এমন PDF হিসেবে প্রকাশিত হয়।</p></section>"
+    ],
+    [
+      ">How often do you release new papers\\?</summary>",
+      ">কত ঘন ঘন নতুন লেখা প্রকাশ করেন?</summary>"
+    ],
+    [
+      "(<summary[^>]*>কত ঘন ঘন নতুন লেখা প্রকাশ করেন\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>অনিয়মিতভাবে, কারণ নিয়মিত ছন্দের চেয়ে মান বেশি গুরুত্বপূর্ণ। কোনো কারিগরি অগ্রগতি যুক্তিসঙ্গত করলে সংক্ষিপ্ত গবেষণা নোট কয়েক সপ্তাহ পরপর প্রকাশ পায়। হোয়াইট পেপার শিল্পচক্রের সঙ্গে মিলিয়ে প্রকাশ করা হয় (যেমন: নিয়ন্ত্রক সময়সূচি, EPAA সম্মেলন)।</p></section>"
+    ],
+    [
+      ">About EPAA</p>",
+      ">EPAA সম্পর্কে</p>"
+    ],
+    [
+      "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
+      "<p class=\"book-about\"><strong>Emerging Payments Association Asia (EPAA)</strong> হলো এশিয়া-প্রশান্ত মহাসাগরীয় অঞ্চলের পেমেন্ট শিল্পের পেশাদার সংগঠন, যা ব্যাংক, প্রসেসর, ফিনটেক ও নিয়ন্ত্রকদের খাতজুড়ে অভিন্ন কাঠামোগত প্রশ্নগুলোকে ঘিরে একত্র করে।"
+    ],
+    [
+      ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
+      ">কোয়ান্টাম-নিরাপদ পেমেন্ট: কেন পেমেন্ট শিল্পকে এখনই পদক্ষেপ নিতে হবে<"
+    ],
+    [
+      ">Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS<",
+      ">macOS-এ OpenAI Whisper ও Metal Performance Shaders দিয়ে রিয়েল-টাইম বাক্‌-শনাক্তকরণ ত্বরান্বিত করা<"
+    ],
+    [
+      ">Recent research and analysis<",
+      ">সাম্প্রতিক গবেষণা ও বিশ্লেষণ<"
+    ],
+    [
+      "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
+      "সেপ্টেম্বর ২০২৫ &middot; Emerging Payments Association Asia (EPAA)"
+    ],
+    [
+      ">Quantum computing threatens the cryptographic foundations[^<]+",
+      ">কোয়ান্টাম কম্পিউটিং আর্থিক পরিষেবার ক্রিপ্টোগ্রাফিক ভিত্তিকে হুমকিতে ফেলছে। পেমেন্ট — রিয়েল টাইম থেকে সীমান্ত-পার নিষ্পত্তি পর্যন্ত — এমন সুরক্ষার ওপর দাঁড়িয়ে যা কোয়ান্টাম কম্পিউটিং একদিন অকার্যকর করে দেবে। এই EPAA হোয়াইট পেপার দেখায় কেন শিল্পকে এখনই পদক্ষেপ নিতে হবে।"
+    ],
+    [
+      "2024 &middot; Independent Research &middot;",
+      "২০২৪ &middot; স্বাধীন গবেষণা &middot;"
+    ],
+    [
+      ">This independent research paper presents[^<]+",
+      ">এই স্বাধীন গবেষণাপত্রে OpenAI Whisper ও Metal Performance Shaders ব্যবহার করে macOS-এ রিয়েল-টাইম বাক্‌-শনাক্তকরণের একটি অপ্টিমাইজেশন উপস্থাপন করা হয়েছে, যেখানে বিলম্ব ও বিদ্যুৎ-দক্ষতায় পরিমাপযোগ্য উন্নতি দেখানো হয়েছে।"
+    ],
+    [
+      ">License &amp; pricing<",
+      ">লাইসেন্স ও মূল্য<"
+    ],
+    [
+      ">One copy per buyer<",
+      ">ক্রেতাপ্রতি একটি কপি<"
+    ],
+    [
+      ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
+      ">প্রশ্ন?<span class=\"qa-headline-soft\"> উত্তর।</span>"
+    ],
+    [
+      ">Questions\\? Answers\\.</h2>",
+      ">প্রশ্ন? উত্তর।</h2>"
+    ],
+    [
+      ">Questions\\? Answers\\.<",
+      ">প্রশ্ন? উত্তর।<"
+    ],
+    [
+      ">Are the white papers free to read\\?</summary>",
+      ">হোয়াইট পেপারগুলো কি বিনামূল্যে পড়া যায়?</summary>"
+    ],
+    [
+      ">May I cite or quote from these papers\\?</summary>",
+      ">আমি কি এই লেখাগুলো থেকে উদ্ধৃত করতে পারি?</summary>"
+    ],
+    [
+      ">Who is the intended audience\\?</summary>",
+      ">এই প্রকাশনাগুলো কাদের জন্য?</summary>"
+    ],
+    [
+      ">Can I commission a paper or speak at an event\\?</summary>",
+      ">আমি কি কোনো গবেষণার ফরমায়েশ দিতে বা কোনো আয়োজনে আমন্ত্রণ জানাতে পারি?</summary>"
+    ],
+    [
+      ">How do I follow new publications\\?</summary>",
+      ">নতুন প্রকাশনা কীভাবে অনুসরণ করব?</summary>"
+    ],
+    [
+      ">Where can I follow new releases\\?</summary>",
+      ">নতুন প্রকাশ কোথায় অনুসরণ করতে পারি?</summary>"
+    ],
+    [
+      "(<summary[^>]*>হোয়াইট পেপারগুলো কি বিনামূল্যে পড়া যায়\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>EPAA হোয়াইট পেপার <em>Quantum-Safe Payments</em> <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> থেকে বিনামূল্যে ও উন্মুক্তভাবে ডাউনলোড করা যায়। OpenAI Whisper ও Metal Performance Shaders দিয়ে রিয়েল-টাইম বাক্‌-শনাক্তকরণ নিয়ে স্বাধীন গবেষণা প্রতিবেদনটি লাইসেন্সকৃত এবং ৪৯.০০ ডলারে আলাদাভাবে কেনা যায় (ইংরেজি, PDF, ~৯৫ কেবি)। ক্রেতাপ্রতি একটি কপি; ডাউনলোড কেবল ব্যক্তিগত ব্যবহারের জন্য, পুনর্বিতরণযোগ্য নয়।</p></section>"
+    ],
+    [
+      "(<summary[^>]*>আমি কি এই লেখাগুলো থেকে উদ্ধৃত করতে পারি\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>হ্যাঁ। যথাযথ কৃতজ্ঞতাসহ সংক্ষিপ্ত উদ্ধৃতি ন্যায্য ব্যবহারের সীমার মধ্যে স্বাগত। EPAA প্রকাশনার ক্ষেত্রে প্রকাশক হিসেবে EPAA-র নাম, কার্যনির্বাহী দল, বছর ও PDF-এর ঠিকানা উল্লেখ করুন। স্বাধীন গবেষণা প্রতিবেদনের ক্ষেত্রে এভাবে উদ্ধৃত করুন: <em>Rousseau, S. (বছর)। শিরোনাম। স্ব-প্রকাশিত।</em> সঙ্গে ক্যানোনিকাল ঠিকানা। কোনো চিত্র বা দীর্ঘ অংশ পুনরুৎপাদনের জন্য আগেই <a href=\"/bn/jogajog/\">যোগাযোগ করুন</a>।</p></section>"
+    ],
+    [
+      "(<summary[^>]*>এই প্রকাশনাগুলো কাদের জন্য\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>শীর্ষস্থানীয় ব্যাংক, কেন্দ্রীয় ব্যাংক, পেমেন্ট ব্যবস্থার পরিচালক ও স্কিম মালিকদের পেমেন্ট পরিচালক, CISO ও জ্যেষ্ঠ স্থপতিদের জন্য। প্রযুক্ত গবেষণা সেই প্রকৌশলী ও পণ্য দায়িত্বপ্রাপ্তদের জন্য, যাঁরা বৃহৎ ভাষা মডেল, ডিভাইসে চলা এআই ও কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফির ওপর কাজ করছেন। প্রতিটি লেখা ক্ষেত্রজ্ঞান ধরে নেয় এবং কর্মরত পেশাদারের ইতিমধ্যেই জানা বিষয়গুলো বাদ দেয়।</p></section>"
+    ],
+    [
+      "(<summary[^>]*>আমি কি কোনো গবেষণার ফরমায়েশ দিতে বা কোনো আয়োজনে আমন্ত্রণ জানাতে পারি\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>হ্যাঁ — বেছে নেওয়া সাপেক্ষে, প্রতিটি ক্ষেত্র আলাদাভাবে বিবেচনা করে। ফরমায়েশি কাজ পাইকারি পেমেন্ট, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার উত্তর-কোয়ান্টাম ক্রিপ্টোগ্রাফি ও ব্যাংকিংয়ে প্রযুক্ত এআই নিয়ে হয়। শিল্প সম্মেলন, কেন্দ্রীয় ব্যাংকের ফোরাম ও নিয়ন্ত্রকদের গোলটেবিলে বক্তৃতা আলাদাভাবে বিবেচনা করা হয়। বিষয়, শ্রোতা ও সময়সূচি উল্লেখ করে <a href=\"/bn/jogajog/\">যোগাযোগ ফর্ম</a> ব্যবহার করুন।</p></section>"
+    ],
+    [
+      "(<summary[^>]*>নতুন প্রকাশনা কীভাবে অনুসরণ করব\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>নতুন লেখা ও গবেষণা নোট প্রথমে সাইটের <a href=\"/bn/rss.xml\">RSS ফিড</a> এবং <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> নিউজলেটারে জানানো হয়, যা উত্তর-কোয়ান্টাম ক্রিপ্টোগ্রাফি, কেন্দ্রীয় ব্যাংক নীতি ও প্রধান পেমেন্ট স্কিমগুলোর মাইগ্রেশন পরিকল্পনা নিয়ে কাজ করে। কোনো স্প্যাম নয় — কেবল নতুন যা কিছু।</p></section>"
+    ],
+    [
+      "(<summary[^>]*>নতুন প্রকাশ কোথায় অনুসরণ করতে পারি\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>নতুন প্রকাশনার খবর পেতে <a href=\"/bn/rss.xml\">RSS ফিডে</a> সাবস্ক্রাইব করুন অথবা <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a>-এ আমাকে অনুসরণ করুন।</p></section>"
+    ],
+    [
+      ">Browse all projects<",
+      ">সব প্রকল্প দেখুন<"
+    ],
+    [
+      ">Three areas of practice\\.\\s*<span",
+      ">চর্চার তিনটি ক্ষেত্র। <span"
+    ],
+    [
+      ">One philosophy\\.</span>",
+      ">একটিই দর্শন।</span>"
+    ],
+    [
+      ">WHAT IS INSIDE<",
+      ">ভেতরে যা আছে<"
+    ],
+    [
+      ">OPEN SOURCE FOR FINANCIAL SERVICES<",
+      ">আর্থিক পরিষেবার জন্য ওপেন সোর্স<"
+    ],
+    [
+      ">Payments and settlement\\.<",
+      ">পেমেন্ট ও নিষ্পত্তি।<"
+    ],
+    [
+      ">Post-quantum cryptography\\.<",
+      ">উত্তর-কোয়ান্টাম ক্রিপ্টোগ্রাফি।<"
+    ],
+    [
+      ">Tooling and infrastructure\\.<",
+      ">সরঞ্জাম ও অবকাঠামো।<"
+    ],
+    [
+      ">Applied AI\\.<",
+      ">প্রযুক্ত এআই।<"
+    ],
+    [
+      ">Explore payments tools\\s+<",
+      ">পেমেন্ট সরঞ্জাম দেখুন <"
+    ],
+    [
+      ">Explore quantum-safe libraries\\s+<",
+      ">কোয়ান্টাম-নিরাপদ লাইব্রেরি দেখুন <"
+    ],
+    [
+      ">Explore developer tools\\s+<",
+      ">ডেভেলপার সরঞ্জাম দেখুন <"
+    ],
+    [
+      ">Explore PQC tools\\s+<",
+      ">PQC সরঞ্জাম দেখুন <"
+    ],
+    [
+      ">Explore AI tools\\s+<",
+      ">এআই সরঞ্জাম দেখুন <"
+    ],
+    [
+      ">Authored & maintained<",
+      ">রচিত ও রক্ষণাবেক্ষণ করা<"
+    ],
+    [
+      ">Authored &amp; maintained<",
+      ">রচিত ও রক্ষণাবেক্ষণ করা<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">অর্থায়নের ভবিষ্যতের জন্য ওপেন সোর্স।<"
+    ],
+    [
+      "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\">ISO 20022 <strong>pain.001</strong> ও <strong>pacs.008</strong> টুলকিট, ব্যাংক বিবরণী পার্সিং এবং কাঠামোবদ্ধ সীমান্ত-পার বার্তায় মাইগ্রেশনের জন্য Rust লাইব্রেরি। SWIFT, SEPA ও রিয়েল-টাইম পেমেন্ট স্কিমের জন্য তৈরি।</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\"><strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203)-এর Rust বাস্তবায়ন, হ্যাশ প্রিমিটিভ ও কোয়ান্টাম-প্রতিরোধী উপাদান। আর্থিক প্রমাণীকরণে RSA ও উপবৃত্তীয় বক্ররেখার যুগের বাইরের সুরক্ষা।</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
+      "<p class=\"setup-card-body\">সিরিয়ালাইজেশন, লগিং, কোড জেনারেশন এবং তারিখ-সময়ের জন্য ওপেন সোর্স Rust লাইব্রেরি। সঙ্গে <strong>Static Site Generator</strong> (SSG), যা এই সাইটটি তৈরি করে, এবং যে ডেভেলপার পরিবেশ একে সরবরাহযোগ্য রাখে।</p>"
+    ],
+    [
+      ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
+      ">বৈশ্বিক মাইগ্রেশনের জন্য ISO 20022 সরঞ্জাম। Pain.001 ফাইল তৈরি, pacs.008 সীমান্ত-পার ক্রেডিট স্থানান্তর এবং কাঠামোবদ্ধ ব্যাংক বিবরণী পার্সিং।<"
+    ],
+    [
+      ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
+      ">CRYSTALS-Kyber-এর Rust বাস্তবায়ন, হ্যাশ ও ডাইজেস্ট প্রিমিটিভ এবং আর্থিক মানের প্রমাণীকরণের জন্য কোয়ান্টাম-প্রতিরোধী উপাদান।<"
+    ],
+    [
+      ">Applied artificial intelligence\\.<",
+      ">প্রযুক্ত কৃত্রিম বুদ্ধিমত্তা।<"
+    ],
+    [
+      ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
+      ">বাক্‌-শনাক্তকরণ, স্বাভাবিক ভাষা ও বৃহৎ ভাষা মডেলকে অর্থায়ন ও উৎপাদনশীলতার বাস্তব সমস্যায় প্রয়োগ করা ওপেন সোর্স এআই প্রকল্প।<"
+    ],
+    [
+      ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
+      ">একটি Python লাইব্রেরি যা CSV বা SQLite থেকে ISO 20022 pain.001 পেমেন্ট ফাইল তৈরি স্বয়ংক্রিয় করে। কাঠামোবদ্ধ সীমান্ত-পার বার্তায় বৈশ্বিক মাইগ্রেশনের জন্য তৈরি।<"
+    ],
+    [
+      ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
+      ">FI-থেকে-FI গ্রাহক ক্রেডিট স্থানান্তরের জন্য ISO 20022 pacs.008 পেমেন্ট বার্তা তৈরি, যাচাই ও সরবরাহ করুন। JSON Schema + XSD যাচাই, ৭৫টি দেশে IBAN, GDPR/PCI-DSS-সম্মত ব্যক্তিগত তথ্য আড়াল।<"
+    ],
+    [
+      ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
+      ">একটি আর্থিক মানের Python টুলকিট যা নানা বিন্যাসের ব্যাংক বিবরণীকে কাঠামোবদ্ধ তথ্যে রূপান্তর করে — বাস্তব বিবরণী ফাইলের বাস্তবতা ও নিয়ন্ত্রিত পরিবেশের নিরীক্ষা-চাহিদার জন্য।<"
+    ],
+    [
+      ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
+      ">এআই-চালিত পূর্বাভাস ব্যবহার করে জটিল তহবিল কাঠামোজুড়ে নগদ বরাদ্দ সর্বোত্তম করার একটি Rust অ্যাপ্লিকেশন। ব্যাংক ও সম্পদ ব্যবস্থাপকদের ট্রেজারি, তহবিল হিসাবরক্ষণ ও সম্পদ বরাদ্দের ব্যবহারক্ষেত্রের জন্য।<"
+    ],
+    [
+      ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
+      ">একাধিক বিন্যাসে QR কোড তৈরি ও পরিচালনার জন্য একটি Rust লাইব্রেরি। সরাসরি পেমেন্ট ব্যবহার: SEPA ক্রেডিট স্থানান্তরের EPC QR কোড, বণিক আদায়ের পেমেন্ট-লিংক QR এবং ধাপ-বৃদ্ধি প্রমাণীকরণ প্রবাহ।<"
+    ],
+    [
+      ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
+      ">সাধারণ ব্যবহারের উত্তর-কোয়ান্টাম কী এনক্যাপসুলেশনের NIST FIPS 203 মান CRYSTALS-Kyber-এর একটি শক্তিশালী Rust বাস্তবায়ন।<"
+    ],
+    [
+      ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
+      ">পাসওয়ার্ড এনক্রিপশন ও যাচাইয়ের জন্য নিরাপদ হ্যাশ ও ডাইজেস্ট অ্যালগরিদম, উত্তর-PQC যুগের জন্য কোয়ান্টাম-প্রতিরোধী দৃষ্টিভঙ্গিতে নকশা করা।<"
+    ],
+    [
+      ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
+      ">নিরীক্ষিত ক্রিপ্টোগ্রাফিক প্রিমিটিভে ভর করে শক্তিশালী, অনন্য ও এলোমেলো পাসওয়ার্ড তৈরির একটি দ্রুত, সরল ও শক্তিশালী ক্রস-প্ল্যাটফর্ম CLI।<"
+    ],
+    [
+      ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
+      ">স্বাভাবিক আলাপচারিতা, PDF সারসংক্ষেপ ও কার্যকর ক্যাশিংয়ের জন্য OpenAI-এর GPT ব্যবহারকারী একটি উন্নত কণ্ঠ-সহকারী। ব্যক্তিগত ও নির্বাহী—দুই ধরনের ব্যবহারের জন্যই তৈরি।<"
+    ],
+    [
+      ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
+      ">উন্নত এআই বাক্‌-শনাক্তকরণ দিয়ে অডিওকে রিয়েল টাইমে লেখায় রূপান্তর করুন। অডিও তথ্য থেকে কাজে লাগানোর মতো অন্তর্দৃষ্টি বের করতে এবং গ্রাহক ও পরিচালন অভিজ্ঞতা উন্নত করতে তৈরি।<"
+    ],
+    [
+      ">Featured · Python · ISO 20022<",
+      ">বাছাই করা · Python · ISO 20022<"
+    ],
+    [
+      ">Python · ISO 20022<",
+      ">Python · ISO 20022<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · অর্থায়ন<"
+    ],
+    [
+      ">Rust · Treasury · AI<",
+      ">Rust · ট্রেজারি · এআই<"
+    ],
+    [
+      ">Rust · Payments QR<",
+      ">Rust · পেমেন্ট QR<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · কোয়ান্টাম<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · নিরাপত্তা<"
+    ],
+    [
+      ">AI · Voice<",
+      ">এআই · কণ্ঠ<"
+    ],
+    [
+      ">AI · Speech<",
+      ">এআই · বাক্‌<"
+    ],
+    [
+      ">PAYMENTS<",
+      ">পেমেন্ট<"
+    ],
+    [
+      ">POST-QUANTUM CRYPTOGRAPHY<",
+      ">উত্তর-কোয়ান্টাম ক্রিপ্টোগ্রাফি<"
+    ],
+    [
+      ">AI AND VOICE<",
+      ">এআই ও কণ্ঠ<"
+    ],
+    [
+      ">DEVELOPER TOOLING<",
+      ">ডেভেলপার সরঞ্জাম<"
+    ],
+    [
+      ">OPEN-SOURCE RUST<",
+      ">ওপেন-সোর্স RUST<"
+    ],
+    [
+      ">WEB AND DEVELOPER ENVIRONMENT<",
+      ">ওয়েব ও ডেভেলপার পরিবেশ<"
+    ],
+    [
+      ">Tooling\\.<",
+      ">সরঞ্জাম।<"
+    ],
+    [
+      ">Rust libraries and tooling\\.</h2>",
+      ">Rust লাইব্রেরি ও সরঞ্জাম।</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
+      "<p class=\"cat-lede\">সিরিয়ালাইজেশন, লগিং, কোড জেনারেশন, গণিত ও ডেভেলপার সরঞ্জাম জুড়ে ওপেন সোর্স Rust প্রকল্প — এই সাইটের পেছনের স্ট্যাটিক সাইট জেনারেটরসহ।</p>"
+    ],
+    [
+      ">Web, templates and environment\\.</h2>",
+      ">ওয়েব, টেমপ্লেট ও পরিবেশ।</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
+      "<p class=\"cat-lede\">শুরু করার টেমপ্লেট, দুটি খাতভিত্তিক প্রকাশনা, একটি CSS ফ্রেমওয়ার্ক এবং যে ডটফাইলগুলো একটি ডেভেলপমেন্ট পরিবেশকে পুনরুৎপাদনযোগ্য রাখে।</p>"
+    ],
+    [
+      ">What licence are these projects released under\\?</summary>",
+      ">এই প্রকল্পগুলো কোন লাইসেন্সে প্রকাশিত?</summary>"
+    ],
+    [
+      ">Are these projects production-ready\\?</summary>",
+      ">এই প্রকল্পগুলো কি প্রোডাকশনের জন্য প্রস্তুত?</summary>"
+    ],
+    [
+      ">How can I contribute or report an issue\\?</summary>",
+      ">আমি কীভাবে অবদান রাখতে বা সমস্যা জানাতে পারি?</summary>"
+    ],
+    [
+      ">Can I use these libraries in a regulated banking environment\\?</summary>",
+      ">আমি কি নিয়ন্ত্রিত ব্যাংকিং পরিবেশে এই লাইব্রেরিগুলো ব্যবহার করতে পারি?</summary>"
+    ],
+    [
+      ">Do you offer commercial support or consulting\\?</summary>",
+      ">আপনি কি বাণিজ্যিক সহায়তা বা পরামর্শ দেন?</summary>"
+    ],
+    [
+      ">How do I follow new releases\\?</summary>",
+      ">নতুন প্রকাশ কীভাবে অনুসরণ করব?</summary>"
+    ],
+    [
+      "(<summary[^>]*>এই প্রকল্পগুলো কোন লাইসেন্সে প্রকাশিত\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>সব প্রকল্প <strong>Apache-2.0</strong> লাইসেন্সে প্রকাশিত। প্রতিটি রিপোজিটরির মূলে থাকা <code>LICENSE</code> ফাইলটিই চূড়ান্ত।</p></section>"
+    ],
+    [
+      "(<summary[^>]*>এই প্রকল্পগুলো কি প্রোডাকশনের জন্য প্রস্তুত\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>প্রকল্পভেদে আলাদা। <em>v1.x</em> চিহ্নিত লাইব্রেরিগুলো স্থিতিশীল ও চাপের মধ্যে পরীক্ষিত; v1-পূর্ববর্তীগুলো মজবুত ভিত্তি হলেও এখনও বদলাতে পারে। প্রতিটি রিপোজিটরির README বর্তমান অবস্থা জানায়; প্রোডাকশনে ব্যবহারের জন্য নির্দিষ্ট নিশ্চয়তা দরকার হলে <a href=\"/bn/jogajog/\">যোগাযোগ করুন</a>।</p></section>"
+    ],
+    [
+      "(<summary[^>]*>আমি কীভাবে অবদান রাখতে বা সমস্যা জানাতে পারি\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>প্রতিটি প্রকল্পের একটি উন্মুক্ত GitHub রিপোজিটরি আছে <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>-এ। সমস্যাটি বর্ণনা করে একটি issue খুলুন (ন্যূনতম পুনরুৎপাদন উদাহরণ হলে ভালো) অথবা কোনো issue-র সঙ্গে যুক্ত একটি pull request দিন। অবদান <em>Developer Certificate of Origin</em> দ্বারা পরিচালিত এবং স্বাক্ষরিত কমিট প্রয়োজন।</p></section>"
+    ],
+    [
+      "(<summary[^>]*>আমি কি নিয়ন্ত্রিত ব্যাংকিং পরিবেশে এই লাইব্রেরিগুলো ব্যবহার করতে পারি\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>হ্যাঁ, প্রচলিত সতর্কতাসহ। লাইব্রেরিগুলো স্বাধীন ওপেন সোর্স কাজ, কোনো নিয়ন্ত্রিত পণ্য নয়। পেমেন্ট অবকাঠামোয় প্রোডাকশনে নামানোর আগে আপনার স্বাভাবিক সরবরাহ-শৃঙ্খল, নিরাপত্তা ও নির্ভরতা পর্যালোচনার প্রক্রিয়া প্রয়োগ করুন — অভ্যন্তরীণ মিররের মাধ্যমে ভেন্ডরিং, SBOM স্ক্যান, Git SHA বা ক্রিপ্টোগ্রাফিক ছাপ ধরে পিন করা।</p></section>"
+    ],
+    [
+      "(<summary[^>]*>আপনি কি বাণিজ্যিক সহায়তা বা পরামর্শ দেন\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>হ্যাঁ, বেছে নেওয়া সাপেক্ষে। কাজগুলো ISO&nbsp;20022 মাইগ্রেশন, উত্তর-কোয়ান্টাম মাইগ্রেশনের পরিকল্পনা এবং আর্থিক পরিষেবায় প্রযুক্ত এআই নিয়ে। সংক্ষিপ্ত বিবরণ, আপনার সময়সূচি ও সম্ভাব্য সীমাবদ্ধতাসহ <a href=\"/bn/jogajog/\">যোগাযোগ করুন</a>।</p></section>"
+    ],
+    [
+      "(<summary[^>]*>নতুন প্রকাশ কীভাবে অনুসরণ করব\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>সাইটের প্রতিটি তারিখযুক্ত লেখা <a href=\"/bn/rss.xml\">RSS ফিড</a> ও <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> নিউজলেটারের মাধ্যমে জানানো হয়। আলাদা রিপোজিটরিগুলোও GitHub-এ রিলিজ প্রকাশ করে, যেগুলো সরাসরি অনুসরণ করা যায়।</p></section>"
+    ],
+    [
+      ">GET IN TOUCH<",
+      ">যোগাযোগ করুন<"
+    ],
+    [
+      ">Have an idea\\? Let's build it\\.<",
+      ">একটা ভাবনা আছে? চলুন সেটি গড়ি।<"
+    ],
+    [
+      ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
+      ">ওপেন সোর্স সহযোগিতা, ফরমায়েশি প্রকৌশল, কিংবা পেমেন্টের ভবিষ্যৎ নিয়ে নিছক আলাপ। যেটি আপনার জন্য মানানসই।<"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">FEATURED</p>",
+      "<p class=\"newsroom-kicker\">বাছাই করা</p>"
+    ],
+    [
       "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
       "aria-label=\"ট্যাগ: \\1, \\2টি পোস্ট\""
     ],
@@ -186,24 +722,56 @@
       "Static Site Generator দিয়ে তৈরি: Rust-চালিত SSG"
     ],
     [
+      "Static Site Generator is a Rust-based static site generator built for performance, accessibility and SEO\\. Lightning-fast builds with first-class JSON-LD\\.",
+      "Static Site Generator হলো Rust-ভিত্তিক একটি স্ট্যাটিক সাইট জেনারেটর, যা পারফরম্যান্স, অভিগম্যতা ও SEO-র জন্য তৈরি। প্রথম শ্রেণির JSON-LD সহ অতি দ্রুত বিল্ড।"
+    ],
+    [
       "Website created with Static Site Generator \\(SSG\\)",
       "Static Site Generator (SSG) দিয়ে তৈরি ওয়েবসাইট"
+    ],
+    [
+      "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
+      "Static Site Generator (SSG) হলো সার্চ ইঞ্জিন অপ্টিমাইজেশন (SEO) ও অভিগম্যতার মান মেনে চলার জন্য একটি অতি দ্রুত সরঞ্জাম।"
     ],
     [
       "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
       "বিষয় ও ট্যাগ সূচি: এআই, পেমেন্ট, কোয়ান্টাম, Rust OSS"
     ],
     [
+      "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
+      "বিষয় ও ট্যাগ ধরে Sebastien Rousseau-এর সাইট ঘুরে দেখুন: এআই, পেমেন্ট, ISO 20022, উত্তর-কোয়ান্টাম ক্রিপ্টোগ্রাফি, Rust ওপেন সোর্স এবং আরও অনেক কিছু।"
+    ],
+    [
       "Website Accessibility Statement — Standards &amp; Contact",
       "ওয়েবসাইট প্রবেশযোগ্যতা বিবৃতি: মান ও যোগাযোগ"
+    ],
+    [
+      "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
+      "এই বিবৃতিতে আমাদের সাইটের অভিগম্যতা, তা উন্নত করতে আমরা কী করছি এবং এ বিষয়ে আমাদের সঙ্গে কীভাবে যোগাযোগ করবেন তা ব্যাখ্যা করা হয়েছে।"
     ],
     [
       "Privacy Statement — How Your Data Is Collected &amp; Used",
       "গোপনীয়তা বিবৃতি: আপনার ডেটা কীভাবে সংগৃহীত ও ব্যবহৃত হয়"
     ],
     [
+      "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
+      "এই পৃষ্ঠা আপনাকে জানায় যে আমাদের ওয়েবসাইট ব্যবহারের সময় ব্যক্তিগত তথ্য সংগ্রহ, ব্যবহার ও প্রকাশ সম্পর্কে আমাদের নীতি কী"
+    ],
+    [
+      "Let's Start a Conversation That Will Make a Real Difference",
+      "চলুন এমন একটি আলাপ শুরু করি যা সত্যিই পার্থক্য গড়বে"
+    ],
+    [
+      "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
+      "কোনো প্রশ্ন বা মন্তব্য আছে? নিচের ফর্মের মাধ্যমে আমার সঙ্গে যোগাযোগ করুন। আপনার কথা শুনতে আমি সবসময় আগ্রহী এবং যত দ্রুত সম্ভব উত্তর দেব।"
+    ],
+    [
       "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
       "ওয়েবসাইট ব্যবহারের শর্তাবলি — Sebastien Rousseau"
+    ],
+    [
+      "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
+      "এই ওয়েবসাইটে প্রবেশ করে আপনি এই ব্যবহারের শর্তাবলি এবং প্রযোজ্য সব আইন ও বিধির দ্বারা আবদ্ধ থাকতে সম্মত হচ্ছেন।"
     ],
     [
       ">Latest research<",
@@ -266,6 +834,18 @@
       ">Open source<"
     ],
     [
+      ">Authored & maintained<",
+      ">রচিত ও রক্ষণাবেক্ষণ করা<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">অর্থায়নের ভবিষ্যতের জন্য ওপেন সোর্স।<"
+    ],
+    [
+      ">A portfolio of",
+      ">একটি সংগ্রহ:"
+    ],
+    [
       ">Start a conversation<",
       ">কথোপকথন শুরু করুন<"
     ],
@@ -290,608 +870,28 @@
       ">সর্বশেষ<"
     ],
     [
-      ">__draft_static_pad_72__<",
-      ">__draft_static_pad_72__<"
+      "<h1>White Papers (?:&amp;|&) Research</h1>",
+      "<h1>হোয়াইট পেপার ও গবেষণা</h1>"
     ],
     [
-      ">__draft_static_pad_73__<",
-      ">__draft_static_pad_73__<"
+      "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/bn/bishay/post-quantum-cryptography/index.html\">উত্তর-কোয়ান্টাম ক্রিপ্টোগ্রাফি</a></h3>"
     ],
     [
-      ">__draft_static_pad_74__<",
-      ">__draft_static_pad_74__<"
+      "<h3><a href=\"[^\"]+/iso-20022-payments/[^\"]*\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/bn/bishay/iso-20022-payments/index.html\">ISO 20022 &amp; পেমেন্ট</a></h3>"
     ],
     [
-      ">__draft_static_pad_75__<",
-      ">__draft_static_pad_75__<"
+      "<h3><a href=\"[^\"]+/applied-ai-banking/[^\"]*\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/bn/bishay/applied-ai-banking/index.html\">ব্যাংকিংয়ে প্রযুক্ত এআই</a></h3>"
     ],
     [
-      ">__draft_static_pad_76__<",
-      ">__draft_static_pad_76__<"
+      "<h3><a href=\"[^\"]+/rust-open-source/[^\"]*\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/bn/bishay/rust-open-source/index.html\">Rust ওপেন সোর্স</a></h3>"
     ],
     [
-      ">__draft_static_pad_77__<",
-      ">__draft_static_pad_77__<"
-    ],
-    [
-      ">__draft_static_pad_78__<",
-      ">__draft_static_pad_78__<"
-    ],
-    [
-      ">__draft_static_pad_79__<",
-      ">__draft_static_pad_79__<"
-    ],
-    [
-      ">__draft_static_pad_80__<",
-      ">__draft_static_pad_80__<"
-    ],
-    [
-      ">__draft_static_pad_81__<",
-      ">__draft_static_pad_81__<"
-    ],
-    [
-      ">__draft_static_pad_82__<",
-      ">__draft_static_pad_82__<"
-    ],
-    [
-      ">__draft_static_pad_83__<",
-      ">__draft_static_pad_83__<"
-    ],
-    [
-      ">__draft_static_pad_84__<",
-      ">__draft_static_pad_84__<"
-    ],
-    [
-      ">__draft_static_pad_85__<",
-      ">__draft_static_pad_85__<"
-    ],
-    [
-      ">__draft_static_pad_86__<",
-      ">__draft_static_pad_86__<"
-    ],
-    [
-      ">__draft_static_pad_87__<",
-      ">__draft_static_pad_87__<"
-    ],
-    [
-      ">__draft_static_pad_88__<",
-      ">__draft_static_pad_88__<"
-    ],
-    [
-      ">__draft_static_pad_89__<",
-      ">__draft_static_pad_89__<"
-    ],
-    [
-      ">__draft_static_pad_90__<",
-      ">__draft_static_pad_90__<"
-    ],
-    [
-      ">__draft_static_pad_91__<",
-      ">__draft_static_pad_91__<"
-    ],
-    [
-      ">__draft_static_pad_92__<",
-      ">__draft_static_pad_92__<"
-    ],
-    [
-      ">__draft_static_pad_93__<",
-      ">__draft_static_pad_93__<"
-    ],
-    [
-      ">__draft_static_pad_94__<",
-      ">__draft_static_pad_94__<"
-    ],
-    [
-      ">__draft_static_pad_95__<",
-      ">__draft_static_pad_95__<"
-    ],
-    [
-      ">__draft_static_pad_96__<",
-      ">__draft_static_pad_96__<"
-    ],
-    [
-      ">__draft_static_pad_97__<",
-      ">__draft_static_pad_97__<"
-    ],
-    [
-      ">__draft_static_pad_98__<",
-      ">__draft_static_pad_98__<"
-    ],
-    [
-      ">__draft_static_pad_99__<",
-      ">__draft_static_pad_99__<"
-    ],
-    [
-      ">__draft_static_pad_100__<",
-      ">__draft_static_pad_100__<"
-    ],
-    [
-      ">__draft_static_pad_101__<",
-      ">__draft_static_pad_101__<"
-    ],
-    [
-      ">__draft_static_pad_102__<",
-      ">__draft_static_pad_102__<"
-    ],
-    [
-      ">__draft_static_pad_103__<",
-      ">__draft_static_pad_103__<"
-    ],
-    [
-      ">__draft_static_pad_104__<",
-      ">__draft_static_pad_104__<"
-    ],
-    [
-      ">__draft_static_pad_105__<",
-      ">__draft_static_pad_105__<"
-    ],
-    [
-      ">__draft_static_pad_106__<",
-      ">__draft_static_pad_106__<"
-    ],
-    [
-      ">__draft_static_pad_107__<",
-      ">__draft_static_pad_107__<"
-    ],
-    [
-      ">__draft_static_pad_108__<",
-      ">__draft_static_pad_108__<"
-    ],
-    [
-      ">__draft_static_pad_109__<",
-      ">__draft_static_pad_109__<"
-    ],
-    [
-      ">__draft_static_pad_110__<",
-      ">__draft_static_pad_110__<"
-    ],
-    [
-      ">__draft_static_pad_111__<",
-      ">__draft_static_pad_111__<"
-    ],
-    [
-      ">__draft_static_pad_112__<",
-      ">__draft_static_pad_112__<"
-    ],
-    [
-      ">__draft_static_pad_113__<",
-      ">__draft_static_pad_113__<"
-    ],
-    [
-      ">__draft_static_pad_114__<",
-      ">__draft_static_pad_114__<"
-    ],
-    [
-      ">__draft_static_pad_115__<",
-      ">__draft_static_pad_115__<"
-    ],
-    [
-      ">__draft_static_pad_116__<",
-      ">__draft_static_pad_116__<"
-    ],
-    [
-      ">__draft_static_pad_117__<",
-      ">__draft_static_pad_117__<"
-    ],
-    [
-      ">__draft_static_pad_118__<",
-      ">__draft_static_pad_118__<"
-    ],
-    [
-      ">__draft_static_pad_119__<",
-      ">__draft_static_pad_119__<"
-    ],
-    [
-      ">__draft_static_pad_120__<",
-      ">__draft_static_pad_120__<"
-    ],
-    [
-      ">__draft_static_pad_121__<",
-      ">__draft_static_pad_121__<"
-    ],
-    [
-      ">__draft_static_pad_122__<",
-      ">__draft_static_pad_122__<"
-    ],
-    [
-      ">__draft_static_pad_123__<",
-      ">__draft_static_pad_123__<"
-    ],
-    [
-      ">__draft_static_pad_124__<",
-      ">__draft_static_pad_124__<"
-    ],
-    [
-      ">__draft_static_pad_125__<",
-      ">__draft_static_pad_125__<"
-    ],
-    [
-      ">__draft_static_pad_126__<",
-      ">__draft_static_pad_126__<"
-    ],
-    [
-      ">__draft_static_pad_127__<",
-      ">__draft_static_pad_127__<"
-    ],
-    [
-      ">__draft_static_pad_128__<",
-      ">__draft_static_pad_128__<"
-    ],
-    [
-      ">__draft_static_pad_129__<",
-      ">__draft_static_pad_129__<"
-    ],
-    [
-      ">__draft_static_pad_130__<",
-      ">__draft_static_pad_130__<"
-    ],
-    [
-      ">__draft_static_pad_131__<",
-      ">__draft_static_pad_131__<"
-    ],
-    [
-      ">__draft_static_pad_132__<",
-      ">__draft_static_pad_132__<"
-    ],
-    [
-      ">__draft_static_pad_133__<",
-      ">__draft_static_pad_133__<"
-    ],
-    [
-      ">__draft_static_pad_134__<",
-      ">__draft_static_pad_134__<"
-    ],
-    [
-      ">__draft_static_pad_135__<",
-      ">__draft_static_pad_135__<"
-    ],
-    [
-      ">__draft_static_pad_136__<",
-      ">__draft_static_pad_136__<"
-    ],
-    [
-      ">__draft_static_pad_137__<",
-      ">__draft_static_pad_137__<"
-    ],
-    [
-      ">__draft_static_pad_138__<",
-      ">__draft_static_pad_138__<"
-    ],
-    [
-      ">__draft_static_pad_139__<",
-      ">__draft_static_pad_139__<"
-    ],
-    [
-      ">__draft_static_pad_140__<",
-      ">__draft_static_pad_140__<"
-    ],
-    [
-      ">__draft_static_pad_141__<",
-      ">__draft_static_pad_141__<"
-    ],
-    [
-      ">__draft_static_pad_142__<",
-      ">__draft_static_pad_142__<"
-    ],
-    [
-      ">__draft_static_pad_143__<",
-      ">__draft_static_pad_143__<"
-    ],
-    [
-      ">__draft_static_pad_144__<",
-      ">__draft_static_pad_144__<"
-    ],
-    [
-      ">__draft_static_pad_145__<",
-      ">__draft_static_pad_145__<"
-    ],
-    [
-      ">__draft_static_pad_146__<",
-      ">__draft_static_pad_146__<"
-    ],
-    [
-      ">__draft_static_pad_147__<",
-      ">__draft_static_pad_147__<"
-    ],
-    [
-      ">__draft_static_pad_148__<",
-      ">__draft_static_pad_148__<"
-    ],
-    [
-      ">__draft_static_pad_149__<",
-      ">__draft_static_pad_149__<"
-    ],
-    [
-      ">__draft_static_pad_150__<",
-      ">__draft_static_pad_150__<"
-    ],
-    [
-      ">__draft_static_pad_151__<",
-      ">__draft_static_pad_151__<"
-    ],
-    [
-      ">__draft_static_pad_152__<",
-      ">__draft_static_pad_152__<"
-    ],
-    [
-      ">__draft_static_pad_153__<",
-      ">__draft_static_pad_153__<"
-    ],
-    [
-      ">__draft_static_pad_154__<",
-      ">__draft_static_pad_154__<"
-    ],
-    [
-      ">__draft_static_pad_155__<",
-      ">__draft_static_pad_155__<"
-    ],
-    [
-      ">__draft_static_pad_156__<",
-      ">__draft_static_pad_156__<"
-    ],
-    [
-      ">__draft_static_pad_157__<",
-      ">__draft_static_pad_157__<"
-    ],
-    [
-      ">__draft_static_pad_158__<",
-      ">__draft_static_pad_158__<"
-    ],
-    [
-      ">__draft_static_pad_159__<",
-      ">__draft_static_pad_159__<"
-    ],
-    [
-      ">__draft_static_pad_160__<",
-      ">__draft_static_pad_160__<"
-    ],
-    [
-      ">__draft_static_pad_161__<",
-      ">__draft_static_pad_161__<"
-    ],
-    [
-      ">__draft_static_pad_162__<",
-      ">__draft_static_pad_162__<"
-    ],
-    [
-      ">__draft_static_pad_163__<",
-      ">__draft_static_pad_163__<"
-    ],
-    [
-      ">__draft_static_pad_164__<",
-      ">__draft_static_pad_164__<"
-    ],
-    [
-      ">__draft_static_pad_165__<",
-      ">__draft_static_pad_165__<"
-    ],
-    [
-      ">__draft_static_pad_166__<",
-      ">__draft_static_pad_166__<"
-    ],
-    [
-      ">__draft_static_pad_167__<",
-      ">__draft_static_pad_167__<"
-    ],
-    [
-      ">__draft_static_pad_168__<",
-      ">__draft_static_pad_168__<"
-    ],
-    [
-      ">__draft_static_pad_169__<",
-      ">__draft_static_pad_169__<"
-    ],
-    [
-      ">__draft_static_pad_170__<",
-      ">__draft_static_pad_170__<"
-    ],
-    [
-      ">__draft_static_pad_171__<",
-      ">__draft_static_pad_171__<"
-    ],
-    [
-      ">__draft_static_pad_172__<",
-      ">__draft_static_pad_172__<"
-    ],
-    [
-      ">__draft_static_pad_173__<",
-      ">__draft_static_pad_173__<"
-    ],
-    [
-      ">__draft_static_pad_174__<",
-      ">__draft_static_pad_174__<"
-    ],
-    [
-      ">__draft_static_pad_175__<",
-      ">__draft_static_pad_175__<"
-    ],
-    [
-      ">__draft_static_pad_176__<",
-      ">__draft_static_pad_176__<"
-    ],
-    [
-      ">__draft_static_pad_177__<",
-      ">__draft_static_pad_177__<"
-    ],
-    [
-      ">__draft_static_pad_178__<",
-      ">__draft_static_pad_178__<"
-    ],
-    [
-      ">__draft_static_pad_179__<",
-      ">__draft_static_pad_179__<"
-    ],
-    [
-      ">__draft_static_pad_180__<",
-      ">__draft_static_pad_180__<"
-    ],
-    [
-      ">__draft_static_pad_181__<",
-      ">__draft_static_pad_181__<"
-    ],
-    [
-      ">__draft_static_pad_182__<",
-      ">__draft_static_pad_182__<"
-    ],
-    [
-      ">__draft_static_pad_183__<",
-      ">__draft_static_pad_183__<"
-    ],
-    [
-      ">__draft_static_pad_184__<",
-      ">__draft_static_pad_184__<"
-    ],
-    [
-      ">__draft_static_pad_185__<",
-      ">__draft_static_pad_185__<"
-    ],
-    [
-      ">__draft_static_pad_186__<",
-      ">__draft_static_pad_186__<"
-    ],
-    [
-      ">__draft_static_pad_187__<",
-      ">__draft_static_pad_187__<"
-    ],
-    [
-      ">__draft_static_pad_188__<",
-      ">__draft_static_pad_188__<"
-    ],
-    [
-      ">__draft_static_pad_189__<",
-      ">__draft_static_pad_189__<"
-    ],
-    [
-      ">__draft_static_pad_190__<",
-      ">__draft_static_pad_190__<"
-    ],
-    [
-      ">__draft_static_pad_191__<",
-      ">__draft_static_pad_191__<"
-    ],
-    [
-      ">__draft_static_pad_192__<",
-      ">__draft_static_pad_192__<"
-    ],
-    [
-      ">__draft_static_pad_193__<",
-      ">__draft_static_pad_193__<"
-    ],
-    [
-      ">__draft_static_pad_194__<",
-      ">__draft_static_pad_194__<"
-    ],
-    [
-      ">__draft_static_pad_195__<",
-      ">__draft_static_pad_195__<"
-    ],
-    [
-      ">__draft_static_pad_196__<",
-      ">__draft_static_pad_196__<"
-    ],
-    [
-      ">__draft_static_pad_197__<",
-      ">__draft_static_pad_197__<"
-    ],
-    [
-      ">__draft_static_pad_198__<",
-      ">__draft_static_pad_198__<"
-    ],
-    [
-      ">__draft_static_pad_199__<",
-      ">__draft_static_pad_199__<"
-    ],
-    [
-      ">__draft_static_pad_200__<",
-      ">__draft_static_pad_200__<"
-    ],
-    [
-      ">__draft_static_pad_201__<",
-      ">__draft_static_pad_201__<"
-    ],
-    [
-      ">__draft_static_pad_202__<",
-      ">__draft_static_pad_202__<"
-    ],
-    [
-      ">__draft_static_pad_203__<",
-      ">__draft_static_pad_203__<"
-    ],
-    [
-      ">__draft_static_pad_204__<",
-      ">__draft_static_pad_204__<"
-    ],
-    [
-      ">__draft_static_pad_205__<",
-      ">__draft_static_pad_205__<"
-    ],
-    [
-      ">__draft_static_pad_206__<",
-      ">__draft_static_pad_206__<"
-    ],
-    [
-      ">__draft_static_pad_207__<",
-      ">__draft_static_pad_207__<"
-    ],
-    [
-      ">__draft_static_pad_208__<",
-      ">__draft_static_pad_208__<"
-    ],
-    [
-      ">__draft_static_pad_209__<",
-      ">__draft_static_pad_209__<"
-    ],
-    [
-      ">__draft_static_pad_210__<",
-      ">__draft_static_pad_210__<"
-    ],
-    [
-      ">__draft_static_pad_211__<",
-      ">__draft_static_pad_211__<"
-    ],
-    [
-      ">__draft_static_pad_212__<",
-      ">__draft_static_pad_212__<"
-    ],
-    [
-      ">__draft_static_pad_213__<",
-      ">__draft_static_pad_213__<"
-    ],
-    [
-      ">__draft_static_pad_214__<",
-      ">__draft_static_pad_214__<"
-    ],
-    [
-      ">__draft_static_pad_215__<",
-      ">__draft_static_pad_215__<"
-    ],
-    [
-      ">__draft_static_pad_216__<",
-      ">__draft_static_pad_216__<"
-    ],
-    [
-      ">__draft_static_pad_217__<",
-      ">__draft_static_pad_217__<"
-    ],
-    [
-      ">__draft_static_pad_218__<",
-      ">__draft_static_pad_218__<"
-    ],
-    [
-      ">__draft_static_pad_219__<",
-      ">__draft_static_pad_219__<"
-    ],
-    [
-      ">__draft_static_pad_220__<",
-      ">__draft_static_pad_220__<"
-    ],
-    [
-      ">__draft_static_pad_221__<",
-      ">__draft_static_pad_221__<"
-    ],
-    [
-      ">__draft_static_pad_222__<",
-      ">__draft_static_pad_222__<"
+      "<h3><a href=\"[^\"]+/blockchain-digital-assets/[^\"]*\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/bn/bishay/blockchain-digital-assets/index.html\">ব্লকচেইন &amp; ডিজিটাল সম্পদ</a></h3>"
     ],
     [
       "<h1>Enterprise AI Banking (?:&amp;|&) Payment Software Suite</h1>",

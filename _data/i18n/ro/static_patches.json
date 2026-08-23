@@ -26,6 +26,10 @@
       "PILON · PROIECT"
     ],
     [
+      "Curated topic clusters[^<]+",
+      "Grupuri tematice — alege un fir și urmărește-l prin arhivă."
+    ],
+    [
       "aria-label=\"Post-Quantum Cryptography\"",
       "aria-label=\"Criptografie post-cuantică\""
     ],
@@ -46,6 +50,26 @@
       "aria-label=\"Blockchain & Active digitale\""
     ],
     [
+      "alt=\"Post-Quantum Cryptography — topic banner\"",
+      "alt=\"Criptografie post-cuantică — banner de subiect\""
+    ],
+    [
+      "alt=\"ISO 20022 &amp; Payments — topic banner\"",
+      "alt=\"ISO 20022 &amp; Plăți — banner de subiect\""
+    ],
+    [
+      "alt=\"Applied AI in Banking — topic banner\"",
+      "alt=\"IA aplicată în domeniul bancar — banner de subiect\""
+    ],
+    [
+      "alt=\"Rust &amp; Open Source — topic banner\"",
+      "alt=\"Rust &amp; Open Source — banner de subiect\""
+    ],
+    [
+      "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
+      "alt=\"Blockchain &amp; Active digitale — banner de subiect\""
+    ],
+    [
       "<h3><a href=\"/fr/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
       "<h3><a href=\"/ro/subiecte/post-quantum-cryptography/index.html\">Criptografie post-cuantică</a></h3>"
     ],
@@ -64,6 +88,26 @@
     [
       "<h3><a href=\"/fr/topics/blockchain-digital-assets/[^\"]+\">Blockchain &amp; Digital Assets</a></h3>",
       "<h3><a href=\"/ro/subiecte/blockchain-digital-assets/index.html\">Blockchain & Active digitale</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Lattice-based cryptography, NIST PQC standards, quantum-safe payments,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Criptografie pe rețele, standarde NIST PQC, plăți rezistente la cuantic și amenințarea „recoltează acum, decriptează mai târziu”. Note de cercetare, biblioteci open source și ghiduri de migrare pentru echipele de securitate din serviciile financiare.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Cross-border message migration, structured-address compliance,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Migrarea mesajelor transfrontaliere, conformitatea adresei structurate, SEPA Instant, SWIFT gpi și rețelele de plăți de gros care susțin totul. Unelte, ghiduri și calendar de reglementare.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Generative AI, multimodal LLMs, voice, and speech models[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">IA generativă, LLM-uri multimodale, voce și modele de vorbire — și felul în care remodelează operațiunile bancare, relația cu clienții și ingineria de produs în instituțiile de prim rang.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Open-source Rust libraries I author and maintain:[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Biblioteci Rust open source pe care le scriu și le întrețin: jurnalizare, generare de cod, dată și oră, primitive criptografice, KEM bazat pe Kyber și un generator de site-uri statice în Rust.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Bitcoin, blockchain fundamentals, ERC-20 tokens, stablecoins,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Bitcoin, fundamentele blockchain, tokenuri ERC-20, stablecoins și cadrul de reglementare din jurul rețelelor de plăți susținute de active digitale.</p>"
     ],
     [
       "(\\d+) article\\(s\\)</p>",
@@ -158,6 +202,498 @@
       ">Română · PDF"
     ],
     [
+      "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-01-\\2\">\\2 ianuarie \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-02-\\2\">\\2 februarie \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-03-\\2\">\\2 martie \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-04-\\2\">\\2 aprilie \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-05-\\2\">\\2 mai \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-06-\\2\">\\2 iunie \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-07-\\2\">\\2 iulie \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-08-\\2\">\\2 august \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-09-\\2\">\\2 septembrie \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
+      "<time datetime=\"\\1-09-01\">Septembrie \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-10-\\2\">\\2 octombrie \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-11-\\2\">\\2 noiembrie \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-12-\\2\">\\2 decembrie \\1</time>"
+    ],
+    [
+      ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
+      ">Un sistem de transcriere vorbire-text în timp real care folosește OpenAI Whisper și accelerarea GPU Metal Performance Shaders pe macOS pentru o latență sub o secundă, de 8–12× timpul real pe M1 Max.<"
+    ],
+    [
+      ">A new paper suggests Shor\\'s algorithm could run on as few as 10,000 qubits\\. The threshold for cryptographically relevant quantum computing is dropping fast\\.<",
+      ">O lucrare nouă sugerează că algoritmul lui Shor ar putea rula pe doar 10.000 de qubiți. Pragul calculului cuantic relevant criptografic scade rapid.<"
+    ],
+    [
+      ">A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research\\.<",
+      ">A fost descoperită o eroare în algoritmul cuantic al lui Yilei Chen pentru rezolvarea LWE, ceea ce securizează temporar criptografia pe rețele și subliniază nevoia de cercetare continuă.<"
+    ],
+    [
+      ">New quantum algorithm solves a key cryptographic problem, urging accelerated research into quantum-safe security\\.<",
+      ">Un nou algoritm cuantic rezolvă o problemă criptografică esențială și cere accelerarea cercetării în securitatea rezistentă la cuantic.<"
+    ],
+    [
+      ">How Fully Homomorphic Encryption revolutionises data security in banking and financial services, preserving privacy against quantum-era threats\\.<",
+      ">Cum revoluționează criptarea complet homomorfă securitatea datelor în domeniul bancar și în serviciile financiare, protejând confidențialitatea în fața amenințărilor erei cuantice.<"
+    ],
+    [
+      ">An analysis of Apple's MM1 paper on Multimodal Large Language Models — architecture, pre-training strategies and emerging capabilities\\.<",
+      ">O analiză a lucrării MM1 de la Apple despre modelele lingvistice mari multimodale — arhitectură, strategii de preantrenare și capabilități emergente.<"
+    ],
+    [
+      ">How IBM Qiskit and the Quantum Fourier Transform reshape credit ratio analysis in finance, offering unprecedented accuracy and speed\\.<",
+      ">Cum remodelează IBM Qiskit și transformata Fourier cuantică analiza ratelor de credit în finanțe, oferind o precizie și o viteză fără precedent.<"
+    ],
+    [
+      ">The transformative role of AI inside quantum algorithms for finance, focusing on their mathematical structure and banking applications\\.<",
+      ">Rolul transformator al IA în interiorul algoritmilor cuantici pentru finanțe, cu accent pe structura lor matematică și pe aplicațiile bancare.<"
+    ],
+    [
+      ">As quantum computers threaten traditional encryption, Quantum Key Distribution \\(QKD\\) emerges as a structural answer for financial-grade security\\.<",
+      ">Pe măsură ce calculatoarele cuantice amenință criptarea tradițională, distribuția cuantică a cheilor (QKD) apare ca răspuns structural pentru securitatea de nivel financiar.<"
+    ],
+    [
+      ">How CRYSTALS-Kyber, the NIST-selected quantum-resistant key-encapsulation mechanism, is reshaping cryptography for the quantum era\\.<",
+      ">Cum remodelează CRYSTALS-Kyber, mecanismul de încapsulare a cheilor rezistent la cuantic selectat de NIST, criptografia erei cuantice.<"
+    ],
+    [
+      ">What kind of research and papers do you publish\\?</summary>",
+      ">Ce fel de cercetări și publicații publicați?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Ce fel de cercetări și publicații publicați\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Coexistă două direcții. <strong>Lucrările albe industriale</strong>, realizate pentru organizații precum Emerging Payments Association Asia (EPAA), examinează transformările structurale ale infrastructurilor de plăți — recent, impactul calculului cuantic relevant criptografic asupra rețelelor de decontare de gros și în timp real. <strong>Rapoartele de cercetare aplicată</strong> vizează subiecte tehnice precise (de exemplu: recunoașterea vocală în timp real cu Whisper + Metal Performance Shaders pe Apple Silicon) și apar ca PDF-uri care pot fi achiziționate individual.</p></section>"
+    ],
+    [
+      ">How often do you release new papers\\?</summary>",
+      ">Cât de des publicați articole noi?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Cât de des publicați articole noi\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Neregulat, din preferință pentru calitate în locul cadenței. Notele scurte de cercetare apar la câteva săptămâni, atunci când un progres tehnic o justifică. Lucrările albe sunt publicate în legătură cu ciclurile industriei (de exemplu: calendare de reglementare, congrese EPAA).</p></section>"
+    ],
+    [
+      ">About EPAA</p>",
+      ">Despre EPAA</p>"
+    ],
+    [
+      "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
+      "<p class=\"book-about\"><strong>Emerging Payments Association Asia (EPAA)</strong> este asociația profesională a industriei plăților din regiunea Asia-Pacific, care reunește bănci, procesatori, fintech-uri și autorități de reglementare în jurul chestiunilor structurale comune sectorului."
+    ],
+    [
+      ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
+      ">Plăți rezistente la cuantic: de ce industria plăților trebuie să acționeze acum<"
+    ],
+    [
+      ">Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS<",
+      ">Accelerarea recunoașterii vocale în timp real cu OpenAI Whisper și Metal Performance Shaders pe macOS<"
+    ],
+    [
+      ">Recent research and analysis<",
+      ">Cercetări și analize recente<"
+    ],
+    [
+      "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
+      "Septembrie 2025 &middot; Emerging Payments Association Asia (EPAA)"
+    ],
+    [
+      ">Quantum computing threatens the cryptographic foundations[^<]+",
+      ">Calculul cuantic amenință fundamentele criptografice ale serviciilor financiare. Plățile — de la timp real la decontarea transfrontalieră — se sprijină pe protecții pe care calculul cuantic le va face în cele din urmă caduce. Această lucrare albă EPAA arată de ce industria trebuie să acționeze acum."
+    ],
+    [
+      "2024 &middot; Independent Research &middot;",
+      "2024 &middot; Cercetare independentă &middot;"
+    ],
+    [
+      ">This independent research paper presents[^<]+",
+      ">Această lucrare de cercetare independentă prezintă o optimizare a recunoașterii vocale în timp real pe macOS cu ajutorul OpenAI Whisper și al Metal Performance Shaders, demonstrând câștiguri măsurabile de latență și de eficiență energetică."
+    ],
+    [
+      ">License &amp; pricing<",
+      ">Licență și prețuri<"
+    ],
+    [
+      ">One copy per buyer<",
+      ">Un exemplar per cumpărător<"
+    ],
+    [
+      ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
+      ">Întrebări?<span class=\"qa-headline-soft\"> Răspunsuri.</span>"
+    ],
+    [
+      ">Questions\\? Answers\\.</h2>",
+      ">Întrebări? Răspunsuri.</h2>"
+    ],
+    [
+      ">Questions\\? Answers\\.<",
+      ">Întrebări? Răspunsuri.<"
+    ],
+    [
+      ">Are the white papers free to read\\?</summary>",
+      ">Sunt lucrările albe gratuite la lectură?</summary>"
+    ],
+    [
+      ">May I cite or quote from these papers\\?</summary>",
+      ">Pot cita din aceste lucrări?</summary>"
+    ],
+    [
+      ">Who is the intended audience\\?</summary>",
+      ">Cui se adresează aceste publicații?</summary>"
+    ],
+    [
+      ">Can I commission a paper or speak at an event\\?</summary>",
+      ">Pot comanda o lucrare sau vă pot invita la un eveniment?</summary>"
+    ],
+    [
+      ">How do I follow new publications\\?</summary>",
+      ">Cum urmăresc publicațiile noi?</summary>"
+    ],
+    [
+      ">Where can I follow new releases\\?</summary>",
+      ">Unde pot urmări noile apariții?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Sunt lucrările albe gratuite la lectură\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Lucrarea albă EPAA <em>Quantum-Safe Payments</em> se poate descărca public și gratuit de pe <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Raportul de cercetare independent despre recunoașterea vocală în timp real cu OpenAI Whisper și Metal Performance Shaders este licențiat și disponibil pentru achiziție individuală la 49,00 $ (engleză, PDF, ~95 KB). Un exemplar per cumpărător; descărcările sunt exclusiv pentru uz personal și nu pot fi redistribuite.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Pot cita din aceste lucrări\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Da. Citatele scurte cu atribuire sunt binevenite în limitele utilizării loiale. Pentru publicațiile EPAA, indicați EPAA drept editor, împreună cu grupul de lucru, anul și adresa PDF-ului. Pentru rapoartele de cercetare independente, citați sub forma: <em>Rousseau, S. (anul). Titlu. Autopublicat.</em> cu adresa canonică. Pentru reproducerea unei figuri sau a unui pasaj mai amplu, vă rog să <a href=\"/ro/contact/\">mă contactați</a> în prealabil.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Cui se adresează aceste publicații\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Directori de plăți, CISO și arhitecți seniori din băncile de prim rang, băncile centrale, operatorii de sisteme de plăți și proprietarii de scheme. Cercetarea aplicată se adresează inginerilor și responsabililor de produs care construiesc pe modele lingvistice mari, IA pe dispozitiv și criptografie rezistentă la cuantic. Fiecare lucrare presupune cunoașterea domeniului și omite explicațiile pe care un profesionist în activitate le are deja.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Pot comanda o lucrare sau vă pot invita la un eveniment\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Da — de la caz la caz, prin selecție. Misiunile comandate vizează plățile de gros, migrarea ISO 20022, criptografia post-cuantică pentru serviciile financiare și IA aplicată în domeniul bancar. Intervențiile la conferințe industriale, forumuri ale băncilor centrale și mese rotunde ale autorităților de reglementare sunt analizate individual. Folosiți <a href=\"/ro/contact/\">formularul de contact</a>, precizând tema, publicul și calendarul.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Cum urmăresc publicațiile noi\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Articolele și notele de cercetare noi sunt anunțate cu prioritate prin <a href=\"/ro/rss.xml\">fluxul RSS</a> al site-ului și prin buletinul informativ <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>, care acoperă criptografia post-cuantică, politica băncilor centrale și foaia de parcurs a migrării principalelor scheme de plăți. Fără spam — doar noutățile.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Unde pot urmări noile apariții\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Abonați-vă la <a href=\"/ro/rss.xml\">fluxul RSS</a> sau urmăriți-mă pe <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> pentru a afla despre publicațiile noi.</p></section>"
+    ],
+    [
+      ">Browse all projects<",
+      ">Vezi toate proiectele<"
+    ],
+    [
+      ">Three areas of practice\\.\\s*<span",
+      ">Trei domenii de practică. <span"
+    ],
+    [
+      ">One philosophy\\.</span>",
+      ">O singură filozofie.</span>"
+    ],
+    [
+      ">WHAT IS INSIDE<",
+      ">CE CONȚINE<"
+    ],
+    [
+      ">OPEN SOURCE FOR FINANCIAL SERVICES<",
+      ">OPEN SOURCE PENTRU SERVICII FINANCIARE<"
+    ],
+    [
+      ">Payments and settlement\\.<",
+      ">Plăți și decontare.<"
+    ],
+    [
+      ">Post-quantum cryptography\\.<",
+      ">Criptografie post-cuantică.<"
+    ],
+    [
+      ">Tooling and infrastructure\\.<",
+      ">Unelte și infrastructură.<"
+    ],
+    [
+      ">Applied AI\\.<",
+      ">IA aplicată.<"
+    ],
+    [
+      ">Explore payments tools\\s+<",
+      ">Explorează uneltele de plăți <"
+    ],
+    [
+      ">Explore quantum-safe libraries\\s+<",
+      ">Explorează bibliotecile rezistente la cuantic <"
+    ],
+    [
+      ">Explore developer tools\\s+<",
+      ">Explorează uneltele pentru dezvoltatori <"
+    ],
+    [
+      ">Explore PQC tools\\s+<",
+      ">Explorează uneltele PQC <"
+    ],
+    [
+      ">Explore AI tools\\s+<",
+      ">Explorează uneltele IA <"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Scrise și întreținute<"
+    ],
+    [
+      ">Authored &amp; maintained<",
+      ">Scrise și întreținute<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Open source pentru viitorul finanțelor.<"
+    ],
+    [
+      "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\">Truse ISO 20022 <strong>pain.001</strong> și <strong>pacs.008</strong>, parsare de extrase bancare și biblioteci Rust pentru migrarea către mesaje transfrontaliere structurate. Construite pentru SWIFT, SEPA și schemele de plăți în timp real.</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\">Implementări Rust ale <strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203), primitive de hash și componente rezistente la cuantic. Protecție dincolo de era RSA și a curbelor eliptice în autentificarea financiară.</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
+      "<p class=\"setup-card-body\">Biblioteci Rust open source pentru serializare, jurnalizare, generare de cod, dată și oră. Plus <strong>Static Site Generator</strong> (SSG), care construiește acest site, și mediul de dezvoltare care îl face livrabil.</p>"
+    ],
+    [
+      ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
+      ">Unelte ISO 20022 pentru migrarea globală. Generare de fișiere Pain.001, transferuri de credit transfrontaliere pacs.008 și parsare structurată a extraselor bancare.<"
+    ],
+    [
+      ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
+      ">Implementări Rust ale CRYSTALS-Kyber, primitive de hash și componente rezistente la cuantic pentru autentificare de nivel financiar.<"
+    ],
+    [
+      ">Applied artificial intelligence\\.<",
+      ">Inteligență artificială aplicată.<"
+    ],
+    [
+      ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
+      ">Proiecte IA open source care aplică recunoașterea vorbirii, limbajul natural și modelele lingvistice mari unor probleme reale de finanțe și productivitate.<"
+    ],
+    [
+      ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
+      ">O bibliotecă Python care automatizează crearea fișierelor de plată ISO 20022 pain.001 din CSV sau SQLite. Construită pentru migrarea globală către mesaje transfrontaliere structurate.<"
+    ],
+    [
+      ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
+      ">Generați, validați și livrați mesaje de plată ISO 20022 pacs.008 pentru transferuri de credit client FI-la-FI. Validare JSON Schema + XSD, IBAN în 75 de țări, mascarea datelor personale conformă GDPR/PCI-DSS.<"
+    ],
+    [
+      ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
+      ">O trusă Python de nivel financiar care transformă extrasele bancare în formate diverse în date structurate — pentru realitatea fișierelor de extras și pentru cerințele de audit ale mediilor reglementate.<"
+    ],
+    [
+      ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
+      ">O aplicație Rust pentru optimizarea alocării de numerar în structuri complexe de fonduri, cu prognoză bazată pe IA. Gândită pentru trezorerie, contabilitatea fondurilor și alocarea activelor în bănci și la administratorii de active.<"
+    ],
+    [
+      ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
+      ">O bibliotecă Rust pentru generarea și manipularea codurilor QR în mai multe formate. Utilizări directe în plăți: coduri QR EPC pentru transferuri SEPA, QR de link de plată pentru încasarea la comerciant și fluxuri de autentificare suplimentară.<"
+    ],
+    [
+      ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
+      ">O implementare Rust robustă a CRYSTALS-Kyber, standardul NIST FIPS 203 pentru încapsularea cheilor post-cuantică de uz general.<"
+    ],
+    [
+      ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
+      ">Algoritmi securizați de hash și digest pentru criptarea și verificarea parolelor, proiectați cu o postură rezistentă la cuantic pentru era post-PQC.<"
+    ],
+    [
+      ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
+      ">O interfață de linie de comandă multiplatformă, rapidă, simplă și puternică pentru generarea de parole puternice, unice și aleatorii, susținută de primitive criptografice auditate.<"
+    ],
+    [
+      ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
+      ">Un asistent vocal avansat care folosește GPT de la OpenAI pentru interacțiuni naturale, rezumate de PDF-uri și memorare eficientă în cache. Construit atât pentru uz personal, cât și executiv.<"
+    ],
+    [
+      ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
+      ">Convertiți sunetul în text în timp real prin recunoaștere vocală IA avansată. Conceput pentru a extrage informații utile din datele audio și a îmbunătăți experiența clienților și a operațiunilor.<"
+    ],
+    [
+      ">Featured · Python · ISO 20022<",
+      ">Recomandat · Python · ISO 20022<"
+    ],
+    [
+      ">Python · ISO 20022<",
+      ">Python · ISO 20022<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · Finanțe<"
+    ],
+    [
+      ">Rust · Treasury · AI<",
+      ">Rust · Trezorerie · IA<"
+    ],
+    [
+      ">Rust · Payments QR<",
+      ">Rust · QR Plăți<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · Cuantic<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · Securitate<"
+    ],
+    [
+      ">AI · Voice<",
+      ">IA · Voce<"
+    ],
+    [
+      ">AI · Speech<",
+      ">IA · Vorbire<"
+    ],
+    [
+      ">PAYMENTS<",
+      ">PLĂȚI<"
+    ],
+    [
+      ">POST-QUANTUM CRYPTOGRAPHY<",
+      ">CRIPTOGRAFIE POST-CUANTICĂ<"
+    ],
+    [
+      ">AI AND VOICE<",
+      ">IA ȘI VOCE<"
+    ],
+    [
+      ">DEVELOPER TOOLING<",
+      ">UNELTE PENTRU DEZVOLTATORI<"
+    ],
+    [
+      ">OPEN-SOURCE RUST<",
+      ">RUST OPEN SOURCE<"
+    ],
+    [
+      ">WEB AND DEVELOPER ENVIRONMENT<",
+      ">WEB ȘI MEDIU DE DEZVOLTARE<"
+    ],
+    [
+      ">Tooling\\.<",
+      ">Unelte.<"
+    ],
+    [
+      ">Rust libraries and tooling\\.</h2>",
+      ">Biblioteci și unelte Rust.</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
+      "<p class=\"cat-lede\">Proiecte Rust open source — serializare, jurnalizare, generare de cod, matematică și unelte pentru dezvoltatori — inclusiv generatorul de site-uri statice care stă la baza acestui site.</p>"
+    ],
+    [
+      ">Web, templates and environment\\.</h2>",
+      ">Web, șabloane și mediu.</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
+      "<p class=\"cat-lede\">Șabloane de pornire, două publicații sectoriale, un framework CSS și dotfiles-urile care mențin un mediu de dezvoltare reproductibil.</p>"
+    ],
+    [
+      ">What licence are these projects released under\\?</summary>",
+      ">Sub ce licență sunt publicate aceste proiecte?</summary>"
+    ],
+    [
+      ">Are these projects production-ready\\?</summary>",
+      ">Sunt aceste proiecte pregătite pentru producție?</summary>"
+    ],
+    [
+      ">How can I contribute or report an issue\\?</summary>",
+      ">Cum pot contribui sau raporta o problemă?</summary>"
+    ],
+    [
+      ">Can I use these libraries in a regulated banking environment\\?</summary>",
+      ">Pot folosi aceste biblioteci într-un mediu bancar reglementat?</summary>"
+    ],
+    [
+      ">Do you offer commercial support or consulting\\?</summary>",
+      ">Oferiți suport comercial sau consultanță?</summary>"
+    ],
+    [
+      ">How do I follow new releases\\?</summary>",
+      ">Cum urmăresc noile apariții?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Sub ce licență sunt publicate aceste proiecte\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Toate proiectele sunt publicate sub licența <strong>Apache-2.0</strong>. Fișierul <code>LICENSE</code> din rădăcina fiecărui depozit este cel care contează.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Sunt aceste proiecte pregătite pentru producție\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Depinde de proiect. Bibliotecile marcate <em>v1.x</em> sunt stabilizate și testate sub sarcină; cele pre-v1 sunt baze solide, dar pot încă evolua. Fișierul README al fiecărui depozit precizează starea curentă; dacă aveți nevoie de o garanție anume pentru utilizarea în producție, <a href=\"/ro/contact/\">contactați-mă</a>.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Cum pot contribui sau raporta o problemă\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Fiecare proiect are un depozit GitHub public la <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Deschideți o problemă în care descrieți situația (un exemplu minim de reproducere este apreciat) sau un pull request legat de o problemă. Contribuțiile sunt guvernate de <em>Developer Certificate of Origin</em> și necesită commit-uri semnate.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Pot folosi aceste biblioteci într-un mediu bancar reglementat\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Da, cu precauțiile obișnuite. Bibliotecile sunt lucrări open source independente, nu un produs reglementat. Aplicați procesele voastre obișnuite de lanț de aprovizionare, securitate și revizuire a dependențelor — vendoring prin oglinda internă, scanare SBOM, fixare prin Git SHA sau amprentă criptografică — înainte de orice implementare în producție pe infrastructura de plăți.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Oferiți suport comercial sau consultanță\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Da, prin selecție. Misiunile vizează migrarea ISO&nbsp;20022, foile de parcurs pentru migrarea post-cuantică și IA aplicată în serviciile financiare. <a href=\"/ro/contact/\">Contactați-mă</a> cu un brief scurt, calendarul dumneavoastră și eventualele constrângeri.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Cum urmăresc noile apariții\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Fiecare articol datat de pe site este anunțat prin <a href=\"/ro/rss.xml\">fluxul RSS</a> și prin buletinul informativ <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Depozitele individuale publică, de asemenea, versiuni pe GitHub pe care le puteți urmări direct.</p></section>"
+    ],
+    [
+      ">GET IN TOUCH<",
+      ">IA LEGĂTURA<"
+    ],
+    [
+      ">Have an idea\\? Let's build it\\.<",
+      ">Ai o idee? Hai s-o construim.<"
+    ],
+    [
+      ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
+      ">Colaborare open source, inginerie la comandă sau pur și simplu o discuție despre viitorul plăților. Cum vă convine.<"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">FEATURED</p>",
+      "<p class=\"newsroom-kicker\">RECOMANDAT</p>"
+    ],
+    [
       "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
       "aria-label=\"Etichetă: \\1, \\2 articole\""
     ],
@@ -186,24 +722,56 @@
       "Realizat cu Static Site Generator: SSG bazat pe Rust"
     ],
     [
+      "Static Site Generator is a Rust-based static site generator built for performance, accessibility and SEO\\. Lightning-fast builds with first-class JSON-LD\\.",
+      "Static Site Generator este un generator de site-uri statice scris în Rust, gândit pentru performanță, accesibilitate și SEO. Compilări extrem de rapide, cu suport nativ pentru JSON-LD."
+    ],
+    [
       "Website created with Static Site Generator \\(SSG\\)",
       "Site web creat cu Static Site Generator (SSG)"
+    ],
+    [
+      "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
+      "Static Site Generator (SSG) este o unealtă extrem de rapidă pentru optimizarea pentru motoarele de căutare (SEO) și pentru conformitatea cu standardele de accesibilitate."
     ],
     [
       "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
       "Index de subiecte și etichete: IA, plăți, cuantic, Rust OSS"
     ],
     [
+      "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
+      "Parcurgeți site-ul lui Sebastien Rousseau după subiect și etichetă: IA, plăți, ISO 20022, criptografie post-cuantică, Rust open source și altele."
+    ],
+    [
       "Website Accessibility Statement — Standards &amp; Contact",
       "Declarație de accesibilitate a site-ului: standarde și contact"
+    ],
+    [
+      "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
+      "Această declarație explică accesibilitatea site-ului nostru, ce facem pentru a o îmbunătăți și cum ne puteți contacta pe această temă."
     ],
     [
       "Privacy Statement — How Your Data Is Collected &amp; Used",
       "Declarație de confidențialitate: cum sunt colectate și utilizate datele dumneavoastră"
     ],
     [
+      "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
+      "Această pagină vă informează despre politicile noastre privind colectarea, utilizarea și divulgarea datelor cu caracter personal atunci când folosiți site-ul"
+    ],
+    [
+      "Let's Start a Conversation That Will Make a Real Difference",
+      "Să începem o conversație care va conta cu adevărat"
+    ],
+    [
+      "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
+      "Aveți o întrebare sau un comentariu? Contactați-mă prin formularul de mai jos. Mă bucur întotdeauna să vă citesc și vă voi răspunde cât mai curând posibil."
+    ],
+    [
       "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
       "Termeni și condiții de utilizare a site-ului — Sebastien Rousseau"
+    ],
+    [
+      "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
+      "Prin accesarea acestui site, recunoașteți și sunteți de acord să respectați prezentele Condiții de utilizare și toate legile și reglementările aplicabile."
     ],
     [
       ">Latest research<",
@@ -266,6 +834,18 @@
       ">Open source<"
     ],
     [
+      ">Authored & maintained<",
+      ">Scrise și întreținute<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Open source pentru viitorul finanțelor.<"
+    ],
+    [
+      ">A portfolio of",
+      ">Un portofoliu de"
+    ],
+    [
       ">Start a conversation<",
       ">Începe o conversație<"
     ],
@@ -290,608 +870,28 @@
       ">Citește cercetările recente<"
     ],
     [
-      ">__draft_static_pad_72__<",
-      ">__draft_static_pad_72__<"
+      "<h1>White Papers (?:&amp;|&) Research</h1>",
+      "<h1>Lucrări albe și cercetare</h1>"
     ],
     [
-      ">__draft_static_pad_73__<",
-      ">__draft_static_pad_73__<"
+      "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/ro/subiecte/post-quantum-cryptography/index.html\">Criptografie post-cuantică</a></h3>"
     ],
     [
-      ">__draft_static_pad_74__<",
-      ">__draft_static_pad_74__<"
+      "<h3><a href=\"[^\"]+/iso-20022-payments/[^\"]*\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/ro/subiecte/iso-20022-payments/index.html\">ISO 20022 &amp; Plăți</a></h3>"
     ],
     [
-      ">__draft_static_pad_75__<",
-      ">__draft_static_pad_75__<"
+      "<h3><a href=\"[^\"]+/applied-ai-banking/[^\"]*\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/ro/subiecte/applied-ai-banking/index.html\">IA aplicată în domeniul bancar</a></h3>"
     ],
     [
-      ">__draft_static_pad_76__<",
-      ">__draft_static_pad_76__<"
+      "<h3><a href=\"[^\"]+/rust-open-source/[^\"]*\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/ro/subiecte/rust-open-source/index.html\">Rust open source</a></h3>"
     ],
     [
-      ">__draft_static_pad_77__<",
-      ">__draft_static_pad_77__<"
-    ],
-    [
-      ">__draft_static_pad_78__<",
-      ">__draft_static_pad_78__<"
-    ],
-    [
-      ">__draft_static_pad_79__<",
-      ">__draft_static_pad_79__<"
-    ],
-    [
-      ">__draft_static_pad_80__<",
-      ">__draft_static_pad_80__<"
-    ],
-    [
-      ">__draft_static_pad_81__<",
-      ">__draft_static_pad_81__<"
-    ],
-    [
-      ">__draft_static_pad_82__<",
-      ">__draft_static_pad_82__<"
-    ],
-    [
-      ">__draft_static_pad_83__<",
-      ">__draft_static_pad_83__<"
-    ],
-    [
-      ">__draft_static_pad_84__<",
-      ">__draft_static_pad_84__<"
-    ],
-    [
-      ">__draft_static_pad_85__<",
-      ">__draft_static_pad_85__<"
-    ],
-    [
-      ">__draft_static_pad_86__<",
-      ">__draft_static_pad_86__<"
-    ],
-    [
-      ">__draft_static_pad_87__<",
-      ">__draft_static_pad_87__<"
-    ],
-    [
-      ">__draft_static_pad_88__<",
-      ">__draft_static_pad_88__<"
-    ],
-    [
-      ">__draft_static_pad_89__<",
-      ">__draft_static_pad_89__<"
-    ],
-    [
-      ">__draft_static_pad_90__<",
-      ">__draft_static_pad_90__<"
-    ],
-    [
-      ">__draft_static_pad_91__<",
-      ">__draft_static_pad_91__<"
-    ],
-    [
-      ">__draft_static_pad_92__<",
-      ">__draft_static_pad_92__<"
-    ],
-    [
-      ">__draft_static_pad_93__<",
-      ">__draft_static_pad_93__<"
-    ],
-    [
-      ">__draft_static_pad_94__<",
-      ">__draft_static_pad_94__<"
-    ],
-    [
-      ">__draft_static_pad_95__<",
-      ">__draft_static_pad_95__<"
-    ],
-    [
-      ">__draft_static_pad_96__<",
-      ">__draft_static_pad_96__<"
-    ],
-    [
-      ">__draft_static_pad_97__<",
-      ">__draft_static_pad_97__<"
-    ],
-    [
-      ">__draft_static_pad_98__<",
-      ">__draft_static_pad_98__<"
-    ],
-    [
-      ">__draft_static_pad_99__<",
-      ">__draft_static_pad_99__<"
-    ],
-    [
-      ">__draft_static_pad_100__<",
-      ">__draft_static_pad_100__<"
-    ],
-    [
-      ">__draft_static_pad_101__<",
-      ">__draft_static_pad_101__<"
-    ],
-    [
-      ">__draft_static_pad_102__<",
-      ">__draft_static_pad_102__<"
-    ],
-    [
-      ">__draft_static_pad_103__<",
-      ">__draft_static_pad_103__<"
-    ],
-    [
-      ">__draft_static_pad_104__<",
-      ">__draft_static_pad_104__<"
-    ],
-    [
-      ">__draft_static_pad_105__<",
-      ">__draft_static_pad_105__<"
-    ],
-    [
-      ">__draft_static_pad_106__<",
-      ">__draft_static_pad_106__<"
-    ],
-    [
-      ">__draft_static_pad_107__<",
-      ">__draft_static_pad_107__<"
-    ],
-    [
-      ">__draft_static_pad_108__<",
-      ">__draft_static_pad_108__<"
-    ],
-    [
-      ">__draft_static_pad_109__<",
-      ">__draft_static_pad_109__<"
-    ],
-    [
-      ">__draft_static_pad_110__<",
-      ">__draft_static_pad_110__<"
-    ],
-    [
-      ">__draft_static_pad_111__<",
-      ">__draft_static_pad_111__<"
-    ],
-    [
-      ">__draft_static_pad_112__<",
-      ">__draft_static_pad_112__<"
-    ],
-    [
-      ">__draft_static_pad_113__<",
-      ">__draft_static_pad_113__<"
-    ],
-    [
-      ">__draft_static_pad_114__<",
-      ">__draft_static_pad_114__<"
-    ],
-    [
-      ">__draft_static_pad_115__<",
-      ">__draft_static_pad_115__<"
-    ],
-    [
-      ">__draft_static_pad_116__<",
-      ">__draft_static_pad_116__<"
-    ],
-    [
-      ">__draft_static_pad_117__<",
-      ">__draft_static_pad_117__<"
-    ],
-    [
-      ">__draft_static_pad_118__<",
-      ">__draft_static_pad_118__<"
-    ],
-    [
-      ">__draft_static_pad_119__<",
-      ">__draft_static_pad_119__<"
-    ],
-    [
-      ">__draft_static_pad_120__<",
-      ">__draft_static_pad_120__<"
-    ],
-    [
-      ">__draft_static_pad_121__<",
-      ">__draft_static_pad_121__<"
-    ],
-    [
-      ">__draft_static_pad_122__<",
-      ">__draft_static_pad_122__<"
-    ],
-    [
-      ">__draft_static_pad_123__<",
-      ">__draft_static_pad_123__<"
-    ],
-    [
-      ">__draft_static_pad_124__<",
-      ">__draft_static_pad_124__<"
-    ],
-    [
-      ">__draft_static_pad_125__<",
-      ">__draft_static_pad_125__<"
-    ],
-    [
-      ">__draft_static_pad_126__<",
-      ">__draft_static_pad_126__<"
-    ],
-    [
-      ">__draft_static_pad_127__<",
-      ">__draft_static_pad_127__<"
-    ],
-    [
-      ">__draft_static_pad_128__<",
-      ">__draft_static_pad_128__<"
-    ],
-    [
-      ">__draft_static_pad_129__<",
-      ">__draft_static_pad_129__<"
-    ],
-    [
-      ">__draft_static_pad_130__<",
-      ">__draft_static_pad_130__<"
-    ],
-    [
-      ">__draft_static_pad_131__<",
-      ">__draft_static_pad_131__<"
-    ],
-    [
-      ">__draft_static_pad_132__<",
-      ">__draft_static_pad_132__<"
-    ],
-    [
-      ">__draft_static_pad_133__<",
-      ">__draft_static_pad_133__<"
-    ],
-    [
-      ">__draft_static_pad_134__<",
-      ">__draft_static_pad_134__<"
-    ],
-    [
-      ">__draft_static_pad_135__<",
-      ">__draft_static_pad_135__<"
-    ],
-    [
-      ">__draft_static_pad_136__<",
-      ">__draft_static_pad_136__<"
-    ],
-    [
-      ">__draft_static_pad_137__<",
-      ">__draft_static_pad_137__<"
-    ],
-    [
-      ">__draft_static_pad_138__<",
-      ">__draft_static_pad_138__<"
-    ],
-    [
-      ">__draft_static_pad_139__<",
-      ">__draft_static_pad_139__<"
-    ],
-    [
-      ">__draft_static_pad_140__<",
-      ">__draft_static_pad_140__<"
-    ],
-    [
-      ">__draft_static_pad_141__<",
-      ">__draft_static_pad_141__<"
-    ],
-    [
-      ">__draft_static_pad_142__<",
-      ">__draft_static_pad_142__<"
-    ],
-    [
-      ">__draft_static_pad_143__<",
-      ">__draft_static_pad_143__<"
-    ],
-    [
-      ">__draft_static_pad_144__<",
-      ">__draft_static_pad_144__<"
-    ],
-    [
-      ">__draft_static_pad_145__<",
-      ">__draft_static_pad_145__<"
-    ],
-    [
-      ">__draft_static_pad_146__<",
-      ">__draft_static_pad_146__<"
-    ],
-    [
-      ">__draft_static_pad_147__<",
-      ">__draft_static_pad_147__<"
-    ],
-    [
-      ">__draft_static_pad_148__<",
-      ">__draft_static_pad_148__<"
-    ],
-    [
-      ">__draft_static_pad_149__<",
-      ">__draft_static_pad_149__<"
-    ],
-    [
-      ">__draft_static_pad_150__<",
-      ">__draft_static_pad_150__<"
-    ],
-    [
-      ">__draft_static_pad_151__<",
-      ">__draft_static_pad_151__<"
-    ],
-    [
-      ">__draft_static_pad_152__<",
-      ">__draft_static_pad_152__<"
-    ],
-    [
-      ">__draft_static_pad_153__<",
-      ">__draft_static_pad_153__<"
-    ],
-    [
-      ">__draft_static_pad_154__<",
-      ">__draft_static_pad_154__<"
-    ],
-    [
-      ">__draft_static_pad_155__<",
-      ">__draft_static_pad_155__<"
-    ],
-    [
-      ">__draft_static_pad_156__<",
-      ">__draft_static_pad_156__<"
-    ],
-    [
-      ">__draft_static_pad_157__<",
-      ">__draft_static_pad_157__<"
-    ],
-    [
-      ">__draft_static_pad_158__<",
-      ">__draft_static_pad_158__<"
-    ],
-    [
-      ">__draft_static_pad_159__<",
-      ">__draft_static_pad_159__<"
-    ],
-    [
-      ">__draft_static_pad_160__<",
-      ">__draft_static_pad_160__<"
-    ],
-    [
-      ">__draft_static_pad_161__<",
-      ">__draft_static_pad_161__<"
-    ],
-    [
-      ">__draft_static_pad_162__<",
-      ">__draft_static_pad_162__<"
-    ],
-    [
-      ">__draft_static_pad_163__<",
-      ">__draft_static_pad_163__<"
-    ],
-    [
-      ">__draft_static_pad_164__<",
-      ">__draft_static_pad_164__<"
-    ],
-    [
-      ">__draft_static_pad_165__<",
-      ">__draft_static_pad_165__<"
-    ],
-    [
-      ">__draft_static_pad_166__<",
-      ">__draft_static_pad_166__<"
-    ],
-    [
-      ">__draft_static_pad_167__<",
-      ">__draft_static_pad_167__<"
-    ],
-    [
-      ">__draft_static_pad_168__<",
-      ">__draft_static_pad_168__<"
-    ],
-    [
-      ">__draft_static_pad_169__<",
-      ">__draft_static_pad_169__<"
-    ],
-    [
-      ">__draft_static_pad_170__<",
-      ">__draft_static_pad_170__<"
-    ],
-    [
-      ">__draft_static_pad_171__<",
-      ">__draft_static_pad_171__<"
-    ],
-    [
-      ">__draft_static_pad_172__<",
-      ">__draft_static_pad_172__<"
-    ],
-    [
-      ">__draft_static_pad_173__<",
-      ">__draft_static_pad_173__<"
-    ],
-    [
-      ">__draft_static_pad_174__<",
-      ">__draft_static_pad_174__<"
-    ],
-    [
-      ">__draft_static_pad_175__<",
-      ">__draft_static_pad_175__<"
-    ],
-    [
-      ">__draft_static_pad_176__<",
-      ">__draft_static_pad_176__<"
-    ],
-    [
-      ">__draft_static_pad_177__<",
-      ">__draft_static_pad_177__<"
-    ],
-    [
-      ">__draft_static_pad_178__<",
-      ">__draft_static_pad_178__<"
-    ],
-    [
-      ">__draft_static_pad_179__<",
-      ">__draft_static_pad_179__<"
-    ],
-    [
-      ">__draft_static_pad_180__<",
-      ">__draft_static_pad_180__<"
-    ],
-    [
-      ">__draft_static_pad_181__<",
-      ">__draft_static_pad_181__<"
-    ],
-    [
-      ">__draft_static_pad_182__<",
-      ">__draft_static_pad_182__<"
-    ],
-    [
-      ">__draft_static_pad_183__<",
-      ">__draft_static_pad_183__<"
-    ],
-    [
-      ">__draft_static_pad_184__<",
-      ">__draft_static_pad_184__<"
-    ],
-    [
-      ">__draft_static_pad_185__<",
-      ">__draft_static_pad_185__<"
-    ],
-    [
-      ">__draft_static_pad_186__<",
-      ">__draft_static_pad_186__<"
-    ],
-    [
-      ">__draft_static_pad_187__<",
-      ">__draft_static_pad_187__<"
-    ],
-    [
-      ">__draft_static_pad_188__<",
-      ">__draft_static_pad_188__<"
-    ],
-    [
-      ">__draft_static_pad_189__<",
-      ">__draft_static_pad_189__<"
-    ],
-    [
-      ">__draft_static_pad_190__<",
-      ">__draft_static_pad_190__<"
-    ],
-    [
-      ">__draft_static_pad_191__<",
-      ">__draft_static_pad_191__<"
-    ],
-    [
-      ">__draft_static_pad_192__<",
-      ">__draft_static_pad_192__<"
-    ],
-    [
-      ">__draft_static_pad_193__<",
-      ">__draft_static_pad_193__<"
-    ],
-    [
-      ">__draft_static_pad_194__<",
-      ">__draft_static_pad_194__<"
-    ],
-    [
-      ">__draft_static_pad_195__<",
-      ">__draft_static_pad_195__<"
-    ],
-    [
-      ">__draft_static_pad_196__<",
-      ">__draft_static_pad_196__<"
-    ],
-    [
-      ">__draft_static_pad_197__<",
-      ">__draft_static_pad_197__<"
-    ],
-    [
-      ">__draft_static_pad_198__<",
-      ">__draft_static_pad_198__<"
-    ],
-    [
-      ">__draft_static_pad_199__<",
-      ">__draft_static_pad_199__<"
-    ],
-    [
-      ">__draft_static_pad_200__<",
-      ">__draft_static_pad_200__<"
-    ],
-    [
-      ">__draft_static_pad_201__<",
-      ">__draft_static_pad_201__<"
-    ],
-    [
-      ">__draft_static_pad_202__<",
-      ">__draft_static_pad_202__<"
-    ],
-    [
-      ">__draft_static_pad_203__<",
-      ">__draft_static_pad_203__<"
-    ],
-    [
-      ">__draft_static_pad_204__<",
-      ">__draft_static_pad_204__<"
-    ],
-    [
-      ">__draft_static_pad_205__<",
-      ">__draft_static_pad_205__<"
-    ],
-    [
-      ">__draft_static_pad_206__<",
-      ">__draft_static_pad_206__<"
-    ],
-    [
-      ">__draft_static_pad_207__<",
-      ">__draft_static_pad_207__<"
-    ],
-    [
-      ">__draft_static_pad_208__<",
-      ">__draft_static_pad_208__<"
-    ],
-    [
-      ">__draft_static_pad_209__<",
-      ">__draft_static_pad_209__<"
-    ],
-    [
-      ">__draft_static_pad_210__<",
-      ">__draft_static_pad_210__<"
-    ],
-    [
-      ">__draft_static_pad_211__<",
-      ">__draft_static_pad_211__<"
-    ],
-    [
-      ">__draft_static_pad_212__<",
-      ">__draft_static_pad_212__<"
-    ],
-    [
-      ">__draft_static_pad_213__<",
-      ">__draft_static_pad_213__<"
-    ],
-    [
-      ">__draft_static_pad_214__<",
-      ">__draft_static_pad_214__<"
-    ],
-    [
-      ">__draft_static_pad_215__<",
-      ">__draft_static_pad_215__<"
-    ],
-    [
-      ">__draft_static_pad_216__<",
-      ">__draft_static_pad_216__<"
-    ],
-    [
-      ">__draft_static_pad_217__<",
-      ">__draft_static_pad_217__<"
-    ],
-    [
-      ">__draft_static_pad_218__<",
-      ">__draft_static_pad_218__<"
-    ],
-    [
-      ">__draft_static_pad_219__<",
-      ">__draft_static_pad_219__<"
-    ],
-    [
-      ">__draft_static_pad_220__<",
-      ">__draft_static_pad_220__<"
-    ],
-    [
-      ">__draft_static_pad_221__<",
-      ">__draft_static_pad_221__<"
-    ],
-    [
-      ">__draft_static_pad_222__<",
-      ">__draft_static_pad_222__<"
+      "<h3><a href=\"[^\"]+/blockchain-digital-assets/[^\"]*\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/ro/subiecte/blockchain-digital-assets/index.html\">Blockchain &amp; active digitale</a></h3>"
     ],
     [
       "<h1>Enterprise AI Banking (?:&amp;|&) Payment Software Suite</h1>",
