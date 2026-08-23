@@ -516,6 +516,16 @@ jobs:
         run: pip install --quiet --require-hashes -r requirements-dev.lock
 
       - name: Build twice and diff
+        # Keep the committed metrics snapshot for both builds. Every figure
+        # in _data/proof/metrics.json is fetched live (pypistats, crates.io,
+        # the GitHub API), so the two builds saw different numbers whenever a
+        # counter moved in between — github_stars and github_forks render in
+        # `plain` format, so one star was enough. That rewrote the KPI on /,
+        # /about/, /projects/ and /speaking/ plus all 34 locale forks, and
+        # search-index.json with them. This job exists to catch a build pass
+        # that is not idempotent; without this it measured the network.
+        env:
+          SKIP_METRICS_FETCH: '1'
         run: |
           ./build.sh >/dev/null
           mv public public.first
