@@ -49,10 +49,21 @@ def build_fr_title_index(pages: list[Path]) -> dict[str, str]:
     return out
 
 
-_HREFLANG_RE = re.compile(
+# Match a <link rel="alternate" hreflang=…> tag with any attribute order and
+# either HTML5 (``>``) or XHTML (``/>``) self-close.
+#
+# Public because three passes strip hreflang before re-emitting it and each
+# had grown its own copy. Two of those copies used ``[^/]*/>``, which can
+# never match a real tag — every ``https://`` href contains a slash — so the
+# strip silently did nothing and the cluster was appended again on every
+# run. One copy was fixed in place; postbuild_transforms kept the broken
+# form, which is how topic and locale-home pages reached 435 hreflang links
+# (twelve duplicate clusters, ~3.8 KB a run).
+HREFLANG_LINK_RE = re.compile(
     r'<link\b(?=[^>]*\brel=["\']?alternate["\']?)(?=[^>]*\bhreflang=)[^>]*/?>',
     re.IGNORECASE,
 )
+_HREFLANG_RE = HREFLANG_LINK_RE
 
 
 def _translated_slugs_per_lang() -> dict[str, set[str]]:

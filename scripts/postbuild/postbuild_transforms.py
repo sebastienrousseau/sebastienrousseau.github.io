@@ -23,7 +23,7 @@ import rjsmin
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from postbuild_assets import _CDN_HOST, _build_cdn_transform_url
 from postbuild_lib._i18n import _all_active_non_en_langs, _slug_maps
-from postbuild_lib.hreflang import _resolve_en_slug
+from postbuild_lib.hreflang import HREFLANG_LINK_RE, _resolve_en_slug
 
 PUBLIC = Path("public")
 _theme_init_src_path = Path("_layouts/theme-init.js")
@@ -179,12 +179,37 @@ def build_itemlist(html: str, classes: tuple[str, ...], page_url: str) -> str | 
     return _json.dumps(_itemlist_graph(items, page_url), separators=(",", ":"), ensure_ascii=False)
 
 
+def _strip_previous_itemlist(html: str, page_url: str) -> str:
+    """Remove an ItemList block this pass wrote on an earlier run.
+
+    Scoped to this pass's exact signature *including the page URL*, so it
+    cannot touch an ItemList emitted by build_topics, build_changelog or
+    the case-study builder that happens to share the page.
+    """
+    return re.sub(
+        r'<script type="application/ld\+json">'
+        r'\{"@context":"https://schema\.org","@type":"ItemList","url":"'
+        + re.escape(page_url)
+        + r'"[\s\S]*?</script>',
+        "",
+        html,
+    )
+
+
 def inject_itemlist(page: Path, html: str) -> str:
+    """Set the listing page's ItemList JSON-LD.
+
+    Replaces rather than appends. Postbuild is re-run over built pages, and
+    this inserted a fresh <script> before </body> every time with nothing
+    checking for one already there — /projects/ grew by a full 29-item
+    graph per run, about 18.7 KB, and never reached a fixed point.
+    """
     rel = page.relative_to(PUBLIC).as_posix()
     classes = LISTING_PAGES.get(rel)
     if not classes:
         return html
     page_url = f"{SITE}/{rel.replace('index.html', '').rstrip('/')}/"
+    html = _strip_previous_itemlist(html, page_url)
     payload = build_itemlist(html, classes, page_url)
     if not payload:
         return html
@@ -238,8 +263,7 @@ def _topic_hreflang(html: str, rel_slug: str) -> str:
         for _code in _all_active_non_en_langs()
     )
     en_url = topic_alts[0][1]
-    _hf_re = re.compile(r'<link rel="alternate"[^>]+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
-    cleaned = _hf_re.sub("", html)
+    cleaned = HREFLANG_LINK_RE.sub("", html)
     topic_links = "".join(
         f'<link rel="alternate" hreflang="{lc}" href="{u}" />' for lc, u in topic_alts
     )
@@ -250,8 +274,7 @@ def _topic_hreflang(html: str, rel_slug: str) -> str:
 def _home_hreflang(html: str) -> str:
     """Build + inject the home-page hreflang triple."""
     _head_re = re.compile(r"</head>", re.IGNORECASE)
-    _hf_re = re.compile(r'<link rel="alternate"[^>]+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
-    cleaned = _hf_re.sub("", html)
+    cleaned = HREFLANG_LINK_RE.sub("", html)
     home_alts: list[tuple[str, str]] = [("en", "https://sebastienrousseau.com/")]
     home_alts.extend(
         (_code, f"https://sebastienrousseau.com/{_code}/") for _code in _all_active_non_en_langs()

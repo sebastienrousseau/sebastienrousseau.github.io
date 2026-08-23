@@ -287,11 +287,29 @@ def compute_word_count(html: str) -> int | None:
     return len(text.split())
 
 
+# One or more ``"wordCount":N,`` keys sitting immediately before
+# ``"headline":`` — the shape a previous run of this pass leaves behind.
+_EXISTING_WORDCOUNT_RUN_RE = re.compile(r'(?:"wordCount":\d+,)+(?="headline":)')
+
+
 def inject_word_count(html: str) -> str:
+    """Set ``wordCount`` on the BlogPosting JSON-LD.
+
+    The comment here used to claim the key was only inserted "if not
+    already present"; nothing checked. Postbuild is re-run over built
+    pages, so each run inserted another copy directly after the
+    ``@type`` and the object accumulated duplicate keys:
+    ``"wordCount":2127,"wordCount":2656,"wordCount":2656,…`` — 17 bytes
+    a run, on ~1,600 dated pages, with no fixed point.
+
+    Stripping the existing run before inserting makes the pass
+    idempotent, keeps the value tracking the body when later passes add
+    content, and heals a tree that already accumulated copies.
+    """
     n = compute_word_count(html)
     if not n:
         return html
-    # Insert "wordCount":N into the BlogPosting object if not already present.
+    html = _EXISTING_WORDCOUNT_RUN_RE.sub("", html)
     return re.sub(
         r'("@type":"BlogPosting"[^{]*?)("headline":)',
         rf'\1"wordCount":{n},\2',

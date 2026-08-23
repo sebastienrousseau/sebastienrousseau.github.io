@@ -211,12 +211,35 @@ def _extract_citations(html: str) -> list[dict[str, str]]:
     return out
 
 
+# A ``"citation"`` array a previous run inserted. The elements are
+# ``{"@type":"CreativeWork","url":"…"}`` and carry no bracket of their
+# own, so the non-greedy character class is enough to bound the array.
+_EXISTING_CITATION_RE = re.compile(r',"citation":\[[^\]]*\]')
+
+
 def inject_citations(html: str) -> str:
-    """Append a "citation" array to the BlogPosting JSON-LD listing the
+    """Set the "citation" array on the BlogPosting JSON-LD to the
     authoritative outbound URLs the post references. AI engines extract
-    citation graphs from this property to build provenance chains."""
+    citation graphs from this property to build provenance chains.
+
+    The array is *replaced*, not appended to. This pass runs over pages
+    that may already carry one — postbuild is re-run over a built tree by
+    the builder smoke tests, and by anyone re-running ./build.sh without
+    a clean public/. Inserting unconditionally added a second copy of the
+    key every time: a dated article went 9 -> 10 -> 11 -> 12 arrays across
+    consecutive runs, roughly 150 bytes a run, with duplicate keys in a
+    single JSON object and no fixed point.
+
+    Its sibling :func:`inject_sources_list` already guards this way. This
+    one strips instead of returning early so that a tree which already
+    accumulated duplicates heals on the next run, and so the array tracks
+    the body's links if they changed.
+    """
     if '"@type":"BlogPosting"' not in html:
         return html
+    # Strip first: extraction reads <main>, so removing the head's JSON-LD
+    # array cannot change what comes back.
+    html = _EXISTING_CITATION_RE.sub("", html)
     cites = _extract_citations(html)
     if not cites:
         return html
