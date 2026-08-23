@@ -1421,7 +1421,7 @@ def playlist_layout() -> str:
       </section>
 
       <main id="main" class="content ap-section">
-        <div class="wrap" style="max-width:var(--max-wide)">
+        <div class="wrap">
           <div class="playlist-intro" data-reveal>{{{{content}}}}</div>
           <div class="playlist-platforms" data-reveal>
 <p class="playlist-platforms-label">The full collection is on Apple Music too</p>
@@ -1682,6 +1682,17 @@ def playlist_layout() -> str:
 """
     out = TOP + body + BOTTOM
     out = out.replace("    </style>", playlist_css + "    </style>")
+    # This page sets every heading in the body sans (Apple Music's grid is
+    # sans, not the site's serif display face), so nothing here resolves to
+    # --type-display. The shared shell preloads the 129 KB Newsreader subset
+    # for the pages that do use it; on this one it downloads at high priority,
+    # competes with the LCP image, and is never painted with. Drop just the
+    # preload — the @font-face stays, so any future serif here still loads.
+    out = out.replace(
+        '    <link rel="preload" as="font" type="font/woff2" '
+        'href="/fonts/newsreader-latin.woff2" crossorigin />\n',
+        "",
+    )
     return out
 
 
