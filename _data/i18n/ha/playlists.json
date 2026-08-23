@@ -1,0 +1,261 @@
+{
+  "_comment": "HA copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "Jerin waƙoƙi",
+    "jump": "Saurari sabon jerin waƙoƙi",
+    "platformsLabel": "Cikakken tarin yana kan Apple Music ma",
+    "navLabel": "Tsallake zuwa wani salo",
+    "play": "Kunna a Spotify",
+    "follow": "Bi a Spotify",
+    "apple": "Saurara a Apple Music",
+    "countOne": "jerin waƙoƙi",
+    "countOther": "jerin waƙoƙi",
+    "coverAlt": "Hoton bangon jerin waƙoƙi na {title}",
+    "openAria": "Buɗe {title} a Spotify",
+    "frameTitle": "Jerin waƙoƙi na {title} a Spotify"
+  },
+  "intro": [
+    "Jerin waƙoƙi talatin da tara da waƙoƙi 1,763, an gina su domin sa'o'in da ke buƙatar kiɗa a baya: aiki mai zurfi, dogon karatu da sake rubutu da dare.",
+    "Neo soul da nu jazz idan aiki na buƙatar haƙuri. Boom bap da jazz rap idan yana buƙatar ƙarfin tafiya. French touch, deep house da disco house idan yana buƙatar ɗagawa. Lo-fi domin sashen da ake sunkuyar da kai, sai kuma bugun Yammacin Afirka da ke ratsa dukan abin.",
+    "Kowane jerin waƙoƙi na kunnawa kyauta a Spotify, kuma cikakken tarin yana kan Apple Music."
+  ],
+  "featured": {
+    "kicker": "Sabon jerin waƙoƙi",
+    "date": "Agusta 2026",
+    "genres": "Indie pop · French house",
+    "desc": "Indie pop cike da hasken rana da ke zamewa cikin French house — Tame Impala da almost monday sun ba da wuri ga Justice, L'Impératrice da afro house na HUGEL."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "Lantarki",
+      "sub": "House, disco da French touch"
+    },
+    "soul-jazz": {
+      "title": "Soul &amp; Jazz",
+      "sub": "Neo soul, nu jazz da sannu-sannu"
+    },
+    "hip-hop": {
+      "title": "Hip-Hop",
+      "sub": "Boom bap, jazz rap da bugun zamanin zinare"
+    },
+    "morning-mood": {
+      "title": "Safiya &amp; yanayi",
+      "sub": "Downtempo, lo-fi da ƙarfin farkawa"
+    },
+    "global": {
+      "title": "Duniya",
+      "sub": "Bugun sauran wurare duka"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "Disco house · Garage",
+      "desc": "Disco house da garage na ƙarshen shekarun casa'in waɗanda har yanzu suke cika dandali — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden da Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "Indie pop · French house",
+      "desc": "Indie pop cike da hasken rana da ke zamewa cikin French house — Tame Impala da almost monday sun ba da wuri ga Justice, L'Impératrice da afro house na HUGEL."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "French touch · Electro",
+      "desc": "French touch da cikakken haske — Daft Punk, Justice, Kavinsky, L'Impératrice da Angèle suna musayar synth mai launin neon da layin bass na motorik."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "Indie dance · Synth pop",
+      "desc": "Synth pop da indie dance a lokacin zinare — Blu DeTiger, Merty Shango, Citrus Sun da Enne suna ɗaukar wannan haske zuwa maraice."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "Nu-disco · French house",
+      "desc": "Nu-disco da French house da tacewa a buɗe — Fred Falke, Breakbot, Madeon, Lemaitre da Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "Progressive house · Electro",
+      "desc": "Progressive house da electro da aka gina domin motsi — Madeon, Paul Woolford, Martin Solveig, Secondcity da The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "Nu-disco · House da aka tace",
+      "desc": "Nu-disco da house da aka tace, an gina su domin motsi — Lenno, Oliver, Tollef da Yelle a kan gitar da aka yanke da bass mai kauri."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "Deep house · Melodic house",
+      "desc": "Waƙoƙi ɗari na deep da melodic house waɗanda suka san kada su hana hanya — Chris Malinchak, Sultan + Shepard, Lenno da Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "Future house · Electro pop",
+      "desc": "Future house mai haske da electro pop — Lenno, La Felix, The Knocks, Kraak & Smaak da Chris Malinchak a cikin waƙoƙi ɗari."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "Hip-hop mai ɗanɗanon jazz · Boom bap",
+      "desc": "Boom bap da ke ɗaukar samfurin jazz domin maraice mai sannu — Blu & Exile, Large Professor, 3582 da Scienze suna musayar zagaye masu ɗumi da baitoci marasa gaggawa."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "Jazz-hop · Boom bap",
+      "desc": "Jazz-hop na zamanin zinare daga sansanin Phoniks — Awon & Phoniks, Anti Lilly, Dephlow da Tiff the Gift a kan ƙaho masu ƙura da babban bass."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "R&B na zaɓi · Neo soul",
+      "desc": "R&B na zaɓi da neo soul na tsakar dare — Brent Faiyaz, Elujay, J.Robb da Lou Phelps a kan ganga marar tsafta da layin bass mara gaggawa."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "Disco · Boogie",
+      "desc": "Waƙoƙin cika dandali na shekarun saba'in da tamanin — CHIC, Luther Vandross, The Jacksons, Change da Oliver Cheatham. Masu aiki su ne kirtani, tafi da layin bass."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "Acid jazz · Nu jazz",
+      "desc": "Acid jazz da nu jazz da ƙungiyar kaɗa kai tsaye a baya — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson da Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "Gospel · Soul",
+      "desc": "Soul mai tushen gospel da ke ɗaga ɗaki gaba ɗaya — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris da Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "Broken beat · Nu jazz",
+      "desc": "Broken beat da nu jazz na Biritaniya domin yamma masu sannu — Emma-Jean Thackray, Blue Lab Beats, Galliano da The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "Soul na Biritaniya · Broken beat",
+      "desc": "Soul na Biritaniya a mafi ɗumin sa — Incognito, Shaun Escoffery, Cherri V da Tortured Soul, tare da Stevie Wonder a ɗakin."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "Jazz na zamani · R&B",
+      "desc": "Jazz na zamani da R&B cikin tattaunawa — Robert Glasper, August Greene, Common, Karriem Riggins da Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Waƙoƙin soyayya da masu kaɗa kayan kiɗa na gaske a baya — 4hero da Marc Mac, Incognito, Imaani, Natalie Duncan da Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "Neo soul · Jazz",
+      "desc": "Waƙoƙi hamsin da biyar na neo soul da jazz domin maraice masu ɗumi — India.Arie, Robert Glasper, Lucy Pearl, Anthony David da Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "Neo soul · R&B na zamani",
+      "desc": "Waƙoƙi saba'in da uku na neo soul da R&B na zamani — Alex Isley, Yebba, Ego Ella May, Robert Glasper da Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "Jazz funk · Neo soul",
+      "desc": "Waƙoƙi ɗari da hasken ke kan masu kaɗa kayan kiɗa — Erykah Badu, Jill Scott, Omar, Esperanza Spalding da Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "Rap · Yammacin gaɓa",
+      "desc": "Waƙoƙin rap ɗari a cikin shekaru arba'in — 2Pac da Dr. Dre, Snoop Dogg da Tha Dogg Pound, Ghostface Killah, Nicki Minaj da DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "Rap · Soul · French touch",
+      "desc": "Waƙoƙi ɗari da aka haƙo daga akwatunan faifai ba tare da dokar salo ba — Dr. Dre da Eminem kusa da MC Solaar da 113, Charles Aznavour kusa da DJ Mehdi da Thomas Bangalter."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "Rap mai tsanani · Boom bap",
+      "desc": "Rap mai tsanani na shekarun casa'in da ƙara sauti — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre da Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "Boom bap · Jazz rap",
+      "desc": "Waƙoƙi tamanin da shida na boom bap da jazz rap na shekarun casa'in — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde da Jazzmatazz na Guru."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "Underground · Boom bap",
+      "desc": "Boom bap na ƙarƙashin ƙasa da waƙoƙin kayan kiɗa kaɗai — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D da Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "Hip-hop mai zaman kansa · Pop rap",
+      "desc": "Hip-hop mai zaman kansa da pop rap masu ƙarfin tafiya — Quinn XCII, Kid Quill, EMAN8, gianni & kyle da YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "Chillwave · Downtempo",
+      "desc": "Downtempo mara nauyi domin doguwar tafiya ko safiya mai sannu — Zero 7, Les Imprimés da Ciao Ciao Marigold a kan ganga masu laushi."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "Trip-hop · Jazz-hop",
+      "desc": "Trip-hop da ke ɗaukar samfurin jazz daga Proleter, Poldoore, Souleance da The Geek x Vrv. Kamar fim, ba tare da gaggawa ba, an gina shi domin rubutu."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "Downtempo · Nu jazz",
+      "desc": "Downtempo da nu jazz da tunani zai iya jingina a kai — Zero 7, The Cinematic Orchestra, Souleance, Mozez da Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "Trip-hop · Downtempo",
+      "desc": "Trip-hop da downtempo mai tushen soul — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra da Nina Simone da aka sake tsara."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "Lo-fi · Bugun karatu",
+      "desc": "Bugun lo-fi hip hop hamsin da biyu domin karatu da aiki mai zurfi — Idealism, j'san, Joey Pecoraro, Sugi.wa da aimless. Babu murya da za ta yi gardama da kai."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "French house · Nu-disco",
+      "desc": "French house mai funk da nu-disco a kan tafiya ɗaya — Breakbot, Modjo, Fred Falke, Kartell da Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "Nu jazz · Downtempo",
+      "desc": "Nu jazz da downtempo masu sanyaya zuciya domin hutawa — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly da Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Soul da jazz funk domin fara rana — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak da Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "Pop mai ɗaga hankali",
+      "desc": "Waƙoƙin pop sittin da huɗu masu haske da sauri domin motsi — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear da Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "Jazz rap · R&B na zaɓi",
+      "desc": "Jazz rap da R&B na zaɓi masu abin faɗa — Noname, Anderson .Paak, KAYTRANADA, Q-Tip da A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "Afrobeat · Wassoulou",
+      "desc": "Muryoyin Yammacin Afirka a gaba — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh da Kareyce Fotso, daga wassoulou zuwa kora."
+    }
+  },
+  "faq": {
+    "heading": "Tambayoyi? Amsoshi.",
+    "sub": "Yadda za a saurara, a kan me, da kuma inda kiɗan ya fito.",
+    "items": [
+      {
+        "q": "Ina buƙatar biyan kuɗin Spotify domin sauraro?",
+        "a": "A'a. Kowane jerin waƙoƙi na kunnawa a cikin na'urar da ke sama tare da asusun Spotify na kyauta, tare da tallace-tallace tsakanin waƙoƙi. Asusun Premium na cire tallace-tallace tare da ba da damar sauraro ba tare da yanar gizo ba, amma babu abin da ke nan a bayan biyan kuɗi."
+      },
+      {
+        "q": "Zan iya sauraro a Apple Music maimakon haka?",
+        "a": "Eh — ku bi shafin a music.apple.com/profile/bxhero. Jerin waƙoƙin da ke wannan shafin sigogin Spotify ne, domin Apple Music ba ya bayyana hanyoyin haɗi na kowane jerin waƙoƙi ga jama'a. A wannan dandalin, bin shafin shi ne hanyar da za a dogara da ita."
+      },
+      {
+        "q": "A kan wane na'ura ne suke aiki?",
+        "a": "Duk inda Spotify ke aiki: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox da kowane mai bincike. Na'urorin kunnawa da ke wannan shafin suna aiki a wayar hannu da kwamfuta ba tare da manhaja ba."
+      },
+      {
+        "q": "Wane jerin waƙoƙi zan fara da shi domin aiki mai zurfi?",
+        "a": "Safiya &amp; yanayi domin mai da hankali ba tare da hargitsi ba — downtempo, nu jazz da lo-fi da murya kaɗan ko babu ita, domin kada ta yi gasa da karatu. Lantarki ya dace da aikin da ke buƙatar ƙarfin tafiya maimakon nutsuwa."
+      },
+      {
+        "q": "Sau nawa ake sabunta jerin waƙoƙin?",
+        "a": "A kai a kai, kuma a wurin. Bin jerin waƙoƙi a Spotify ko bin shafin a ɗaya daga cikin hidimomin biyu ya isa: sabbin waƙoƙi suna zuwa da kansu ba tare da an dawo nan ba."
+      },
+      {
+        "q": "Zan iya raba ko haɗa waɗannan jerin waƙoƙin?",
+        "a": "Eh. Kowane kati na kai ga jerin waƙoƙi a Spotify, inda menu na rabawa ke ba da hanyoyin haɗi da lambar haɗawa. Jerin waƙoƙin jama'a ne, ana iya raba su cikin walwala."
+      },
+      {
+        "q": "Wa ke yin waɗannan jerin waƙoƙin?",
+        "a": "Sebastien Rousseau — a matsayin BXHERO a Spotify da Apple Music. Waɗannan su ne jerin waƙoƙin da ake kunnawa yayin rubutu game da biyan kuɗi da injiniyanci, ba wani jerin da algorithm ya samar ba."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "Saurara a kowace na'ura",
+    "body": "Kowane jerin waƙoƙi na kunnawa a mai bincike da ke sama, da kuma a manhajar Spotify a kan na'urorin da kuka riga kuka saba amfani da su. Ku bi shafin a ɗaya daga cikin hidimomin biyu, sai sabbin jerin waƙoƙi su zo da kansu.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "Mai binciken yanar gizo"
+    ]
+  }
+}

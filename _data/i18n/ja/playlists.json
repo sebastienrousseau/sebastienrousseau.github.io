@@ -1,0 +1,261 @@
+{
+  "_comment": "JA copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "プレイリスト",
+    "jump": "最新のプレイリストを聴く",
+    "platformsLabel": "コレクション全体は Apple Music にもあります",
+    "navLabel": "ジャンルへ移動",
+    "play": "Spotify で再生",
+    "follow": "Spotify でフォロー",
+    "apple": "Apple Music で聴く",
+    "countOne": "プレイリスト",
+    "countOther": "プレイリスト",
+    "coverAlt": "プレイリスト「{title}」のカバーアート",
+    "openAria": "{title} を Spotify で開く",
+    "frameTitle": "Spotify のプレイリスト「{title}」"
+  },
+  "intro": [
+    "39のプレイリストと1,763曲。サウンドトラックを必要とする時間のために組んだ——ディープワーク、長い読書、夜更けの書き直し。",
+    "仕事に忍耐が要るときはネオソウルとヌージャズ。勢いが要るときはブーンバップとジャズラップ。持ち上げが要るときはフレンチタッチ、ディープハウス、ディスコハウス。うつむいて進む区間にはローファイ。そして全体を貫く西アフリカのリズム。",
+    "どのプレイリストも Spotify で無料で聴けます。コレクション全体は Apple Music にもあります。"
+  ],
+  "featured": {
+    "kicker": "最新のプレイリスト",
+    "date": "2026年8月",
+    "genres": "インディーポップ · フレンチハウス",
+    "desc": "陽光を浴びたインディーポップがフレンチハウスへ滑り込む——Tame Impala と almost monday が Justice、L'Impératrice、HUGEL のアフロハウスへ道を譲る。"
+  },
+  "lanes": {
+    "electronic": {
+      "title": "エレクトロニック",
+      "sub": "ハウス、ディスコ、フレンチタッチ"
+    },
+    "soul-jazz": {
+      "title": "ソウル &amp; ジャズ",
+      "sub": "ネオソウル、ヌージャズ、スローテンポ"
+    },
+    "hip-hop": {
+      "title": "ヒップホップ",
+      "sub": "ブーンバップ、ジャズラップ、黄金期のグルーヴ"
+    },
+    "morning-mood": {
+      "title": "モーニング &amp; ムード",
+      "sub": "ダウンテンポ、ローファイ、目覚めのエネルギー"
+    },
+    "global": {
+      "title": "グローバル",
+      "sub": "そのほかの土地のリズム"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "ディスコハウス · ガラージ",
+      "desc": "90年代末のディスコハウスとガラージ、いまもフロアを埋める——Kings Of Tomorrow、David Morales、Moloko、Armand Van Helden、Boris Dlugosch。"
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "インディーポップ · フレンチハウス",
+      "desc": "陽光を浴びたインディーポップがフレンチハウスへ滑り込む——Tame Impala と almost monday が Justice、L'Impératrice、HUGEL のアフロハウスへ道を譲る。"
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "フレンチタッチ · エレクトロ",
+      "desc": "フルビームのフレンチタッチ——Daft Punk、Justice、Kavinsky、L'Impératrice、Angèle がネオンのシンセとモータリックなベースラインを交わす。"
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "インディーダンス · シンセポップ",
+      "desc": "ゴールデンアワーのシンセポップとインディーダンス——Blu DeTiger、Merty Shango、Citrus Sun、Enne がきらめきを夜へ運ぶ。"
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "ヌーディスコ · フレンチハウス",
+      "desc": "フィルターを開いたヌーディスコとフレンチハウス——Fred Falke、Breakbot、Madeon、Lemaitre、Yelle。"
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "プログレッシブハウス · エレクトロ",
+      "desc": "動くために組まれたプログレッシブハウスとエレクトロ——Madeon、Paul Woolford、Martin Solveig、Secondcity、The Knocks。"
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "ヌーディスコ · フィルタードハウス",
+      "desc": "動くために組まれたヌーディスコとフィルタードハウス——刻んだギターと太いシンセベースの上で Lenno、Oliver、Tollef、Yelle。"
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "ディープハウス · メロディックハウス",
+      "desc": "邪魔をしないディープ／メロディックハウス100曲——Chris Malinchak、Sultan + Shepard、Lenno、Nora Van Elken。"
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "フューチャーハウス · エレクトロポップ",
+      "desc": "明るいフューチャーハウスとエレクトロポップ——Lenno、La Felix、The Knocks、Kraak & Smaak、Chris Malinchak が100曲を通して。"
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "ジャジーヒップホップ · ブーンバップ",
+      "desc": "ゆっくりした夜のための、ジャズをサンプリングしたブーンバップ——Blu & Exile、Large Professor、3582、Scienze が温かいループと急がないヴァースを交わす。"
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "ジャズホップ · ブーンバップ",
+      "desc": "Phoniks 一派による黄金期のジャズホップ——埃っぽいホーンとウッドベースの上で Awon & Phoniks、Anti Lilly、Dephlow、Tiff the Gift。"
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "オルタナティブ R&B · ネオソウル",
+      "desc": "オルタナティブ R&B と深夜のネオソウル——ぼやけたドラムと急がないベースラインの上で Brent Faiyaz、Elujay、J.Robb、Lou Phelps。"
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "ディスコ · ブギー",
+      "desc": "70年代と80年代のフロアを埋めた曲——CHIC、Luther Vandross、The Jacksons、Change、Oliver Cheatham。仕事をするのはストリングス、手拍子、ベースライン。"
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "アシッドジャズ · ヌージャズ",
+      "desc": "生バンドを背後に置いたアシッドジャズとヌージャズ——The Brand New Heavies、Incognito、Robert Glasper、Carleen Anderson、Count Basic。"
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "ゴスペル · ソウル",
+      "desc": "部屋ごと持ち上げるゴスペル由来のソウル——Kirk Franklin、Aretha Franklin、Yolanda Adams、Jennifer Hudson、Mica Paris、Avery*Sunshine。"
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "ブロークンビーツ · ヌージャズ",
+      "desc": "ゆっくりした午後のためのブロークンビーツと英国ヌージャズ——Emma-Jean Thackray、Blue Lab Beats、Galliano、The Brand New Heavies。"
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "ブリティッシュソウル · ブロークンビーツ",
+      "desc": "もっとも温かいブリティッシュソウル——Incognito、Shaun Escoffery、Cherri V、Tortured Soul、そして部屋には Stevie Wonder。"
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "モダンジャズ · R&B",
+      "desc": "対話するモダンジャズと R&B——Robert Glasper、August Greene、Common、Karriem Riggins、Brandy。"
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "ソウル · ジャズファンク",
+      "desc": "本物の演奏者を背後に置いたラブソング——4hero と Marc Mac、Incognito、Imaani、Natalie Duncan、Adi Oasis。"
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "ネオソウル · ジャズ",
+      "desc": "暖かい夜のためのネオソウルとジャズ55曲——India.Arie、Robert Glasper、Lucy Pearl、Anthony David、Ronny Jordan。"
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "ネオソウル · モダン R&B",
+      "desc": "ネオソウルとモダン R&B 73曲——Alex Isley、Yebba、Ego Ella May、Robert Glasper、Blue Lab Beats。"
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "ジャズファンク · ネオソウル",
+      "desc": "スポットライトを演奏者に当てた100曲——Erykah Badu、Jill Scott、Omar、Esperanza Spalding、Stevie Wonder。"
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "ラップ · ウェストコースト",
+      "desc": "4つの年代にまたがるラップ100曲——2Pac と Dr. Dre、Snoop Dogg と Tha Dogg Pound、Ghostface Killah、Nicki Minaj、DJ Muggs。"
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "ラップ · ソウル · フレンチタッチ",
+      "desc": "ジャンルの決まりを置かない、レコード箱を掘った100曲——MC Solaar と113の隣に Dr. Dre と Eminem、DJ Mehdi と Thomas Bangalter の隣に Charles Aznavour。"
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "ハードコアラップ · ブーンバップ",
+      "desc": "音量を上げた90年代のハードコアラップ——M.O.P.、Busta Rhymes、Big L、Westside Connection、Dr. Dre、Snoop Dogg。"
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "ブーンバップ · ジャズラップ",
+      "desc": "90年代のブーンバップとジャズラップ86曲——Gang Starr、A Tribe Called Quest、The Roots、The Pharcyde、Guru の Jazzmatazz。"
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "アンダーグラウンド · ブーンバップ",
+      "desc": "アンダーグラウンドのブーンバップとインスト——Apollo Brown、People Under The Stairs、J-Live、One Be Lo、Marcus D、Shing02。"
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "インディーヒップホップ · ポップラップ",
+      "desc": "勢いのあるインディーヒップホップとポップラップ——Quinn XCII、Kid Quill、EMAN8、gianni & kyle、YONAS。"
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "チルウェイブ · ダウンテンポ",
+      "desc": "長い移動やゆっくりした朝のための無重力ダウンテンポ——柔らかく描かれたドラムの上で Zero 7、Les Imprimés、Ciao Ciao Marigold。"
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "トリップホップ · ジャズホップ",
+      "desc": "Proleter、Poldoore、Souleance、The Geek x Vrv によるジャズサンプリングのトリップホップ。映画的で、急がず、書くために組まれている。"
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "ダウンテンポ · ヌージャズ",
+      "desc": "思考を預けられるダウンテンポとヌージャズ——Zero 7、The Cinematic Orchestra、Souleance、Mozez、Ida Nielsen。"
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "トリップホップ · ダウンテンポ",
+      "desc": "ソウルの芯を持つトリップホップとダウンテンポ——Massive Attack、Thievery Corporation、Air、Zero 7、The Cinematic Orchestra、そして再構築された Nina Simone。"
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "ローファイ · 勉強用ビート",
+      "desc": "勉強とディープワークのためのローファイ・ヒップホップ・ビート52曲——Idealism、j'san、Joey Pecoraro、Sugi.wa、aimless。競り合うヴォーカルはなし。"
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "フレンチハウス · ヌーディスコ",
+      "desc": "一定の速度で進むファンキーなフレンチハウスとヌーディスコ——Breakbot、Modjo、Fred Falke、Kartell、Chris Malinchak。"
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "ヌージャズ · ダウンテンポ",
+      "desc": "力を抜くための穏やかなヌージャズとダウンテンポ——Zero 7、4hero、The Cinematic Orchestra、Lemon Jelly、Kid Loco。"
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "ソウル · ジャズファンク",
+      "desc": "一日を始めるためのソウルとジャズファンク——Adi Oasis、Durand Jones、Azymuth、Kraak & Smaak、Stevie Wonder。"
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "高揚するポップ",
+      "desc": "体を動かすための明るく速いポップ64曲——Riley Clemmons、Lauren Daigle、Sarah Reeves、Elle Limebear、Madison。"
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "ジャズラップ · オルタナ R&B",
+      "desc": "言うべきことのあるジャズラップとオルタナティブ R&B——Noname、Anderson .Paak、KAYTRANADA、Q-Tip、A Tribe Called Quest。"
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "アフロビート · ワスル",
+      "desc": "西アフリカの声を前面に——Oumou Sangaré、Fatoumata Diawara、Dobet Gnahoré、Sona Jobarteh、Kareyce Fotso。ワスルからコラまで。"
+    }
+  },
+  "faq": {
+    "heading": "質問と答え。",
+    "sub": "どう聴くか、何で聴くか、そしてこの音楽がどこから来たのか。",
+    "items": [
+      {
+        "q": "聴くのに Spotify の有料プランは必要ですか？",
+        "a": "いいえ。無料アカウントでも、上の埋め込みプレーヤーですべてのプレイリストが再生できます（曲間に広告が入ります）。Premium は広告をなくしオフライン再生を可能にしますが、ここにあるものはどれも有料の壁の向こうにはありません。"
+      },
+      {
+        "q": "Apple Music で聴くことはできますか？",
+        "a": "はい——music.apple.com/profile/bxhero のプロフィールをフォローしてください。このページのプレイリストは Spotify 版です。Apple Music は個々のプレイリストのリンクを公開していないため、あちらではプロフィールのフォローが確実な方法です。"
+      },
+      {
+        "q": "どの端末で使えますか？",
+        "a": "Spotify が動くところならどこでも：iPhone、iPad、Android、Mac、Windows、Apple Watch、Apple TV、CarPlay、Sonos、Google Nest、PlayStation、Xbox、そして任意のブラウザ。このページのプレーヤーはアプリなしでモバイルでもデスクトップでも動きます。"
+      },
+      {
+        "q": "ディープワークにはどのプレイリストから始めればいいですか？",
+        "a": "気を散らさずに集中するならモーニング &amp; ムード——読書と競合するヴォーカルがほとんど、あるいはまったくないダウンテンポ、ヌージャズ、ローファイ。落ち着きより勢いが要る作業にはエレクトロニックが合います。"
+      },
+      {
+        "q": "プレイリストはどのくらいの頻度で更新されますか？",
+        "a": "定期的に、その場で。Spotify でプレイリストを、あるいはどちらかのサービスでプロフィールをフォローしておけば、ここに戻らなくても新しい曲が届きます。"
+      },
+      {
+        "q": "このプレイリストを共有・埋め込みできますか？",
+        "a": "はい。各カードは Spotify のプレイリストにリンクしており、共有メニューからリンクと埋め込みコードが取得できます。公開プレイリストなので自由に共有できます。"
+      },
+      {
+        "q": "誰が作っているのですか？",
+        "a": "Sebastien Rousseau——Spotify と Apple Music では BXHERO として。決済とエンジニアリングについて書きながら実際に流しているプレイリストで、アルゴリズムのフィードではありません。"
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "どの端末でも聴けます",
+    "body": "どのプレイリストも上のブラウザで、そして普段使っている端末の Spotify アプリで再生できます。どちらかのサービスでプロフィールをフォローすれば、新しいプレイリストは自然に届きます。",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "ウェブブラウザ"
+    ]
+  }
+}

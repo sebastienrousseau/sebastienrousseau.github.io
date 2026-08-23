@@ -32,6 +32,7 @@ from ._maps import (
     rewrite_fr_link_titles,
     rewrite_newsroom_card_titles,
 )
+from ._playlists import localize_playlists_page
 
 # ---------------------------------------------------------------------------
 # Hub: /fr/articles/
@@ -511,6 +512,18 @@ def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-pa
         shell,
         count=1,
     )
+
+    # /playlists/ carries 39 generated cards, a featured band, five lane
+    # heads, a 7-question FAQ and a device aside — far more body copy
+    # than the chrome pass or a curated body can cover. Swap it from the
+    # page's own catalogue first, while the EN anchors are still intact.
+    if slug == "playlists":
+        shell, missed = localize_playlists_page(shell, st.LANG_CODE)
+        if missed:
+            print(
+                f"build_translations: playlists[{st.LANG_CODE}] — "
+                f"{len(missed)} anchor(s) not found; first: {missed[0]!r}"
+            )
 
     # Rewrite EN article URLs inside the body to FR counterparts.
     shell = rewrite_en_urls(shell)

@@ -694,118 +694,6 @@
       "<p class=\"newsroom-kicker\">EMPFOHLEN</p>"
     ],
     [
-      ">Latest Music</h2>",
-      ">Aktuelle Musik</h2>"
-    ],
-    [
-      ">Latest playlist</h2>",
-      ">Aktuelle Playlist</h2>"
-    ],
-    [
-      ">Soulful, jazz and downtempo</h2>",
-      ">Soulful, Jazz und Downtempo</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">MORNING & MOOD</p>",
-      "<p class=\"newsroom-kicker\">MORGEN & STIMMUNG</p>"
-    ],
-    [
-      ">Morning, mood and chill</h2>",
-      ">Morgen, Stimmung und Chill</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">ELECTRONIC</p>",
-      "<p class=\"newsroom-kicker\">ELEKTRONISCH</p>"
-    ],
-    [
-      ">Electronic, house and techno</h2>",
-      ">Electronic, House und Techno</h2>"
-    ],
-    [
-      ">Pop, rock and alternative</h2>",
-      ">Pop, Rock und Alternative</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">FOCUS</p>",
-      "<p class=\"newsroom-kicker\">FOKUS</p>"
-    ],
-    [
-      ">Focus and productivity</h2>",
-      ">Fokus und Produktivität</h2>"
-    ],
-    [
-      ">Smooth Jazz, Neo Soul, and laid-back grooves[^<]+",
-      ">Smooth Jazz, Neo Soul und entspannte Grooves. Playlists für Tage, an denen es zur Sache geht, langsamer zu werden."
-    ],
-    [
-      ">This page has a comprehensive list[^<]+",
-      ">Diese Seite zeigt eine umfassende Auswahl der beliebtesten und von der Kritik gefeierten Spotify-Playlists und deckt ein breites Spektrum an Genres ab. Ob Sie Jazz, Soul, Hip-Hop oder elektronische Musik mögen — hier finden Sie die passende Playlist."
-    ],
-    [
-      ">Step into the harmonious realm of TETRA\\.[^<]+",
-      ">Betreten Sie das harmonische Reich von TETRA. Eine euphorische Playlist, die Ihren Geist heben und Ihre Seele mit Freude füllen soll."
-    ],
-    [
-      ">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">Entspannen Sie und genießen Sie die Essenz des Sommers mit dieser kuratierten Auswahl an Jazz, Soul, R&amp;B und Neo-Soul-Beats."
-    ],
-    [
-      ">A deep dive into the quintessential collection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">Ein tiefer Einblick in die quintessentielle Sammlung von Jazz, Soul, R&amp;B und Neo-Soul-Beats."
-    ],
-    [
-      ">Take a break from a busy day and relax with soothing nu jazz and downtempo beats\\.",
-      ">Gönnen Sie sich eine Pause vom hektischen Alltag und entspannen Sie mit beruhigenden Nu-Jazz- und Downtempo-Beats."
-    ],
-    [
-      ">Soulful tracks with a fashion-forward vibe\\. Music to set the tone for a productive and stylish day\\.",
-      ">Soulvolle Tracks mit modischem Vibe. Musik, die den Ton für einen produktiven und stilvollen Tag setzt."
-    ],
-    [
-      ">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms\\.",
-      ">Feiern Sie die Lebensfreude und tauchen Sie ein in eine Welt lebendiger Emotionen, leuchtender Farben und soulvoller Rhythmen."
-    ],
-    [
-      ">Laid-back beats, house-influenced grooves and new deep house tracks\\.",
-      ">Entspannte Beats, house-inspirierte Grooves und neue Deep-House-Tracks."
-    ],
-    [
-      ">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience\\.",
-      ">Eine nahtlose Mischung aus Funky Disco, House, French Touch und weiteren Genres — ein ultracooles und energiegeladenes musikalisches Erlebnis."
-    ],
-    [
-      ">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke\\.",
-      ">Eine klangliche Reise mit Nu-Disco, French House, Electro und Disco House von Künstlern wie Madeon und Fred Falke."
-    ],
-    [
-      ">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks\\.",
-      ">Entspannte Beats, hip-hop-inspirierte Grooves und neue Indie-Pop-Tracks."
-    ],
-    [
-      ">Original Hip Hop, Rap and R(?:&amp;|&)B Flavor Sessions\\.",
-      ">Originale Sessions in den Geschmacksrichtungen Hip Hop, Rap und R&amp;B."
-    ],
-    [
-      ">Brace yourself for hardcore rap and hip hop tracks\\.",
-      ">Machen Sie sich bereit für Hardcore-Rap und Hip-Hop-Tracks."
-    ],
-    [
-      ">A few of the favourite hip-hop gems\\.",
-      ">Einige der liebsten Hip-Hop-Perlen."
-    ],
-    [
-      ">Soulful beats and thoughtful lyrics\\. A captivating look into the world of contemporary hip hop, R(?:&amp;|&)B and rap\\.",
-      ">Soulvolle Beats und durchdachte Texte. Ein fesselnder Blick in die Welt von zeitgenössischem Hip Hop, R&amp;B und Rap."
-    ],
-    [
-      ">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats\\.",
-      ">Entspannte Vibes und sanfte Rhythmen in dieser herausragenden Playlist mit Lo-Fi-Hip-Hop-Beats."
-    ],
-    [
-      ">Celebrate the diverse heritage of African music\\. From the soulful rhythms of Wassoulou to the lively beats of Londonko\\.",
-      ">Feiern Sie das vielfältige Erbe afrikanischer Musik. Von den soulvollen Rhythmen des Wassoulou bis zu den lebendigen Beats des Londonko."
-    ],
-    [
       "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
       "aria-label=\"Etikett: \\1, \\2 Artikel\""
     ],
@@ -1004,18 +892,6 @@
     [
       "<h3><a href=\"[^\"]+/blockchain-digital-assets/[^\"]*\">Blockchain &amp; Digital Assets</a></h3>",
       "<h3><a href=\"/de/themen/blockchain-digital-assets/index.html\">Blockchain &amp; Digital Assets</a></h3>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">Tracks to kick off the day or shift the room\\. Fashion\\-forward soul, vivid colour, and laid\\-back energy\\.</p>",
-      "<p class=\"newsroom-lede\">Tracks für den Tagesstart oder einen Stimmungswechsel. Stilvolle Soul, lebendige Farben und entspannte Energie.</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">Funky disco, French touch and electro\\. Energetic listening for movement, focus or the dance floor\\.</p>",
-      "<p class=\"newsroom-lede\">Funkiger Disco, French Touch und Electro. Energiegeladene Musik für Bewegung, Konzentration oder die Tanzfläche.</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo\\-Fi\\. The full breadth of beats\\.</p>",
-      "<p class=\"newsroom-lede\">Von ursprünglichen Hip-Hop-Sessions über Hardcore-Rap bis hin zu zeitgenössischem R&B und Lo-Fi. Die ganze Bandbreite der Beats.</p>"
     ],
     [
       "<h1>Enterprise AI Banking (?:&amp;|&) Payment Software Suite</h1>",

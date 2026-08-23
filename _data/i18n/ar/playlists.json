@@ -1,0 +1,261 @@
+{
+  "_comment": "AR copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "قوائم التشغيل",
+    "jump": "استمع إلى أحدث قائمة",
+    "platformsLabel": "المجموعة كاملة متاحة أيضًا على Apple Music",
+    "navLabel": "الانتقال إلى نوع موسيقي",
+    "play": "استمع على Spotify",
+    "follow": "تابع على Spotify",
+    "apple": "استمع على Apple Music",
+    "countOne": "قائمة تشغيل",
+    "countOther": "قائمة تشغيل",
+    "coverAlt": "غلاف قائمة التشغيل {title}",
+    "openAria": "فتح {title} على Spotify",
+    "frameTitle": "قائمة التشغيل {title} على Spotify"
+  },
+  "intro": [
+    "تسع وثلاثون قائمة تشغيل و1763 مقطوعة، مبنية للساعات التي تطلب موسيقى مصاحبة: العمل العميق، القراءات الطويلة، وإعادة الكتابة في وقت متأخر.",
+    "نيو سول ونو جاز حين يطلب العمل صبرًا. بوم باب وجاز راب حين يطلب اندفاعًا. فرنش تاتش وديب هاوس وديسكو هاوس حين يطلب ارتفاعًا. لو-فاي للمرحلة التي يخفض فيها الرأس، وإيقاعات غرب أفريقيا تسري في كل ذلك.",
+    "كل قائمة تُسمَع مجانًا على Spotify، والمجموعة كاملة على Apple Music."
+  ],
+  "featured": {
+    "kicker": "أحدث قائمة تشغيل",
+    "date": "أغسطس 2026",
+    "genres": "إندي بوب · فرنش هاوس",
+    "desc": "إندي بوب مغمور بالشمس ينزلق نحو الفرنش هاوس — يفسح Tame Impala وalmost monday المجال لـJustice وL'Impératrice والأفرو هاوس من HUGEL."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "إلكتروني",
+      "sub": "هاوس وديسكو وفرنش تاتش"
+    },
+    "soul-jazz": {
+      "title": "سول &amp; جاز",
+      "sub": "نيو سول ونو جاز وإيقاعات بطيئة"
+    },
+    "hip-hop": {
+      "title": "هيب هوب",
+      "sub": "بوم باب وجاز راب وغروف العصر الذهبي"
+    },
+    "morning-mood": {
+      "title": "الصباح &amp; المزاج",
+      "sub": "داون تيمبو ولو-فاي وطاقة الاستيقاظ"
+    },
+    "global": {
+      "title": "عالمي",
+      "sub": "إيقاعات من كل مكان آخر"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "ديسكو هاوس · غاراج",
+      "desc": "ديسكو هاوس وغاراج من أواخر التسعينيات ما زال يملأ حلبة الرقص — Kings Of Tomorrow وDavid Morales وMoloko وArmand Van Helden وBoris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "إندي بوب · فرنش هاوس",
+      "desc": "إندي بوب مغمور بالشمس ينزلق نحو الفرنش هاوس — يفسح Tame Impala وalmost monday المجال لـJustice وL'Impératrice والأفرو هاوس من HUGEL."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "فرنش تاتش · إلكترو",
+      "desc": "فرنش تاتش بأضواء عالية — Daft Punk وJustice وKavinsky وL'Impératrice وAngèle يتبادلون مركّبات نيون وخطوط باس موتوريك."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "إندي دانس · سينث بوب",
+      "desc": "سينث بوب وإندي دانس في الساعة الذهبية — Blu DeTiger وMerty Shango وCitrus Sun وEnne يحملون ذلك البريق إلى المساء."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "نيو ديسكو · فرنش هاوس",
+      "desc": "نيو ديسكو وفرنش هاوس بمرشّح مفتوح — Fred Falke وBreakbot وMadeon وLemaitre وYelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "بروغريسيف هاوس · إلكترو",
+      "desc": "بروغريسيف هاوس وإلكترو مبنيان للحركة — Madeon وPaul Woolford وMartin Solveig وSecondcity وThe Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "نيو ديسكو · هاوس مرشّح",
+      "desc": "نيو ديسكو وهاوس مرشّح مبنيان للحركة — Lenno وOliver وTollef وYelle فوق غيتارات مقطّعة وباس مركّب سميك."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "ديب هاوس · هاوس لحني",
+      "desc": "مئة مقطوعة ديب هاوس وهاوس لحني تعرف كيف تبتعد عن الطريق — Chris Malinchak وSultan + Shepard وLenno وNora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "فيوتشر هاوس · إلكترو بوب",
+      "desc": "فيوتشر هاوس مشرق وإلكترو بوب — Lenno وLa Felix وThe Knocks وKraak & Smaak وChris Malinchak عبر مئة مقطوعة."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "هيب هوب جازي · بوم باب",
+      "desc": "بوم باب يعتمد عيّنات الجاز للأمسيات البطيئة — Blu & Exile وLarge Professor و3582 وScienze يتبادلون حلقات دافئة ومقاطع غير مستعجلة."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "جاز هوب · بوم باب",
+      "desc": "جاز هوب من العصر الذهبي من معسكر Phoniks — Awon & Phoniks وAnti Lilly وDephlow وTiff the Gift فوق نفخيات مغبرّة وكونترباص."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "آر أند بي بديل · نيو سول",
+      "desc": "آر أند بي بديل ونيو سول في وقت متأخر من الليل — Brent Faiyaz وElujay وJ.Robb وLou Phelps فوق إيقاعات ضبابية وخطوط باس غير مستعجلة."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "ديسكو · بوغي",
+      "desc": "أغانٍ ملأت الحلبات في السبعينيات والثمانينيات — CHIC وLuther Vandross وThe Jacksons وChange وOliver Cheatham. الوتريات والتصفيق وخطوط الباس هي التي تقوم بالعمل."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "أسيد جاز · نو جاز",
+      "desc": "أسيد جاز ونو جاز بفرقة حيّة خلفهما — The Brand New Heavies وIncognito وRobert Glasper وCarleen Anderson وCount Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "غوسبل · سول",
+      "desc": "سول متجذّر في الغوسبل يرفع القاعة كلها — Kirk Franklin وAretha Franklin وYolanda Adams وJennifer Hudson وMica Paris وAvery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "بروكن بيت · نو جاز",
+      "desc": "بروكن بيت ونو جاز بريطاني لأصائل بطيئة — Emma-Jean Thackray وBlue Lab Beats وGalliano وThe Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "سول بريطاني · بروكن بيت",
+      "desc": "السول البريطاني في أدفأ صوره — Incognito وShaun Escoffery وCherri V وTortured Soul، ومعهم Stevie Wonder في الغرفة."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "جاز حديث · آر أند بي",
+      "desc": "جاز حديث وآر أند بي في حوار — Robert Glasper وAugust Greene وCommon وKarriem Riggins وBrandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "سول · جاز فانك",
+      "desc": "أغاني حب بعازفين حقيقيين خلفها — 4hero وMarc Mac وIncognito وImaani وNatalie Duncan وAdi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "نيو سول · جاز",
+      "desc": "خمس وخمسون مقطوعة نيو سول وجاز لأمسيات دافئة — India.Arie وRobert Glasper وLucy Pearl وAnthony David وRonny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "نيو سول · آر أند بي حديث",
+      "desc": "ثلاث وسبعون مقطوعة نيو سول وآر أند بي حديث — Alex Isley وYebba وEgo Ella May وRobert Glasper وBlue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "جاز فانك · نيو سول",
+      "desc": "مئة مقطوعة يتجه فيها الضوء إلى العازفين — Erykah Badu وJill Scott وOmar وEsperanza Spalding وStevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "راب · الساحل الغربي",
+      "desc": "مئة مقطوعة راب عبر أربعة عقود — 2Pac وDr. Dre وSnoop Dogg وTha Dogg Pound وGhostface Killah وNicki Minaj وDJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "راب · سول · فرنش تاتش",
+      "desc": "مئة مقطوعة منقّبة من صناديق الأسطوانات بلا قاعدة نوعية — Dr. Dre وEminem إلى جانب MC Solaar و113، وCharles Aznavour إلى جانب DJ Mehdi وThomas Bangalter."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "راب هاردكور · بوم باب",
+      "desc": "راب هاردكور من التسعينيات بصوت مرتفع — M.O.P. وBusta Rhymes وBig L وWestside Connection وDr. Dre وSnoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "بوم باب · جاز راب",
+      "desc": "ست وثمانون مقطوعة بوم باب وجاز راب من التسعينيات — Gang Starr وA Tribe Called Quest وThe Roots وThe Pharcyde وJazzmatazz لـGuru."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "أندرغراوند · بوم باب",
+      "desc": "بوم باب أندرغراوند ومقطوعات آلية — Apollo Brown وPeople Under The Stairs وJ-Live وOne Be Lo وMarcus D وShing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "هيب هوب مستقل · بوب راب",
+      "desc": "هيب هوب مستقل وبوب راب بدفعة إلى الأمام — Quinn XCII وKid Quill وEMAN8 وgianni & kyle وYONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "تشيل ويف · داون تيمبو",
+      "desc": "داون تيمبو بلا وزن لطريق طويل أو صباح بطيء — Zero 7 وLes Imprimés وCiao Ciao Marigold فوق إيقاعات ناعمة الحواف."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "تريب هوب · جاز هوب",
+      "desc": "تريب هوب يعتمد عيّنات الجاز من Proleter وPoldoore وSouleance وThe Geek x Vrv. سينمائي، غير مستعجل، مبني للكتابة."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "داون تيمبو · نو جاز",
+      "desc": "داون تيمبو ونو جاز يتكئ عليهما التفكير — Zero 7 وThe Cinematic Orchestra وSouleance وMozez وIda Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "تريب هوب · داون تيمبو",
+      "desc": "تريب هوب وداون تيمبو بقلب سول — Massive Attack وThievery Corporation وAir وZero 7 وThe Cinematic Orchestra وNina Simone بإعادة صياغة."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "لو-فاي · إيقاعات للدراسة",
+      "desc": "اثنتان وخمسون مقطوعة لو-فاي هيب هوب للدراسة والعمل العميق — Idealism وj'san وJoey Pecoraro وSugi.wa وaimless. بلا غناء يزاحمك."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "فرنش هاوس · نيو ديسكو",
+      "desc": "فرنش هاوس فانكي ونيو ديسكو على وتيرة ثابتة — Breakbot وModjo وFred Falke وKartell وChris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "نو جاز · داون تيمبو",
+      "desc": "نو جاز وداون تيمبو مهدّئان للاسترخاء — Zero 7 و4hero وThe Cinematic Orchestra وLemon Jelly وKid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "سول · جاز فانك",
+      "desc": "سول وجاز فانك لبداية اليوم — Adi Oasis وDurand Jones وAzymuth وKraak & Smaak وStevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "بوب يبعث الحماس",
+      "desc": "أربع وستون مقطوعة بوب مشرقة وسريعة الإيقاع للحركة — Riley Clemmons وLauren Daigle وSarah Reeves وElle Limebear وMadison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "جاز راب · آر أند بي بديل",
+      "desc": "جاز راب وآر أند بي بديل لديهما ما يقولانه — Noname وAnderson .Paak وKAYTRANADA وQ-Tip وA Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "أفروبيت · واسولو",
+      "desc": "أصوات غرب أفريقيا في المقدمة — Oumou Sangaré وFatoumata Diawara وDobet Gnahoré وSona Jobarteh وKareyce Fotso، من الواسولو إلى الكورا."
+    }
+  },
+  "faq": {
+    "heading": "أسئلة؟ إجابات.",
+    "sub": "كيف تستمع، وعلى أي جهاز، ومن أين تأتي هذه الموسيقى.",
+    "items": [
+      {
+        "q": "هل أحتاج اشتراك Spotify للاستماع؟",
+        "a": "لا. كل قائمة تُشغَّل في المشغّل المدمج أعلاه بحساب Spotify مجاني، مع إعلانات بين المقطوعات. حساب Premium يزيل الإعلانات ويتيح الاستماع دون اتصال، لكن لا شيء هنا خلف جدار دفع."
+      },
+      {
+        "q": "هل يمكنني الاستماع على Apple Music بدلًا من ذلك؟",
+        "a": "نعم — تابع الملف الشخصي على music.apple.com/profile/bxhero. القوائم في هذه الصفحة هي نسخ Spotify، لأن Apple Music لا يتيح روابط القوائم الفردية للعموم. متابعة الملف الشخصي هي الطريق الموثوق على تلك المنصة."
+      },
+      {
+        "q": "على أي أجهزة تعمل هذه القوائم؟",
+        "a": "في كل مكان يعمل فيه Spotify: iPhone وiPad وAndroid وMac وWindows وApple Watch وApple TV وCarPlay وSonos وGoogle Nest وPlayStation وXbox وأي متصفح. المشغّلات في هذه الصفحة تعمل على الهاتف والحاسوب دون تطبيق."
+      },
+      {
+        "q": "بأي قائمة أبدأ للعمل العميق؟",
+        "a": "الصباح &amp; المزاج للتركيز دون تشتيت — داون تيمبو ونو جاز ولو-فاي بغناء قليل أو معدوم حتى لا يزاحم القراءة. الإلكتروني يناسب العمل الذي يطلب اندفاعًا لا هدوءًا."
+      },
+      {
+        "q": "كم مرة تُحدَّث القوائم؟",
+        "a": "بانتظام، وفي مكانها. متابعة قائمة على Spotify أو الملف الشخصي على أي من الخدمتين تكفي: تصل المقطوعات الجديدة دون العودة إلى هنا."
+      },
+      {
+        "q": "هل يمكنني مشاركة هذه القوائم أو تضمينها؟",
+        "a": "نعم. كل بطاقة تقود إلى القائمة على Spotify، حيث تمنحك قائمة المشاركة روابط وأكواد تضمين. هذه قوائم عامة، حرة المشاركة."
+      },
+      {
+        "q": "من يعدّ هذه القوائم؟",
+        "a": "سيباستيان روسو — باسم BXHERO على Spotify وApple Music. هذه هي القوائم التي تُشغَّل أثناء الكتابة عن المدفوعات والهندسة، لا خلاصة خوارزمية."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "استمع على كل جهاز",
+    "body": "كل قائمة تُشغَّل في المتصفح أعلاه، وفي تطبيق Spotify على الأجهزة التي تستخدمها أصلًا. تابع الملف الشخصي على أي من الخدمتين وستصلك القوائم الجديدة من تلقاء نفسها.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "متصفح الويب"
+    ]
+  }
+}

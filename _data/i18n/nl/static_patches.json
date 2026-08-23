@@ -694,118 +694,6 @@
       "<p class=\"newsroom-kicker\">UITGELICHT</p>"
     ],
     [
-      ">Latest Music</h2>",
-      ">Recente muziek</h2>"
-    ],
-    [
-      ">Latest playlist</h2>",
-      ">Recente afspeellijst</h2>"
-    ],
-    [
-      ">Soulful, jazz and downtempo</h2>",
-      ">Soulful, jazz en downtempo</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">MORNING & MOOD</p>",
-      "<p class=\"newsroom-kicker\">OCHTEND & STEMMING</p>"
-    ],
-    [
-      ">Morning, mood and chill</h2>",
-      ">Ochtend, stemming en chill</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">ELECTRONIC</p>",
-      "<p class=\"newsroom-kicker\">ELEKTRONISCH</p>"
-    ],
-    [
-      ">Electronic, house and techno</h2>",
-      ">Electronic, house en techno</h2>"
-    ],
-    [
-      ">Pop, rock and alternative</h2>",
-      ">Pop, rock en alternative</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">FOCUS</p>",
-      "<p class=\"newsroom-kicker\">FOCUS</p>"
-    ],
-    [
-      ">Focus and productivity</h2>",
-      ">Focus en productiviteit</h2>"
-    ],
-    [
-      ">Smooth Jazz, Neo Soul, and laid-back grooves[^<]+",
-      ">Smooth Jazz, Neo Soul en relaxte grooves. Afspeellijsten voor dagen waarop het tijd is om gas terug te nemen."
-    ],
-    [
-      ">This page has a comprehensive list[^<]+",
-      ">Deze pagina toont een uitgebreide selectie van populaire en door de critici geprezen Spotify-afspeellijsten, en bestrijkt een breed scala aan genres. Of u nu houdt van jazz, soul, hip-hop of elektronische muziek — hier vindt u de passende afspeellijst."
-    ],
-    [
-      ">Step into the harmonious realm of TETRA\\.[^<]+",
-      ">Stap binnen in het harmonieuze rijk van TETRA. Een opgewekte afspeellijst die uw geest moet optillen en uw ziel met vreugde moet vullen."
-    ],
-    [
-      ">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">Ontspan en omarm de essentie van de zomer met deze samengestelde selectie jazz-, soul-, R&amp;B- en neo-soul-beats."
-    ],
-    [
-      ">A deep dive into the quintessential collection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">Een diepe duik in de kwintessentiële collectie jazz-, soul-, R&amp;B- en neo-soul-beats."
-    ],
-    [
-      ">Take a break from a busy day and relax with soothing nu jazz and downtempo beats\\.",
-      ">Neem een pauze van een drukke dag en ontspan bij rustgevende nu-jazz- en downtempo-beats."
-    ],
-    [
-      ">Soulful tracks with a fashion-forward vibe\\. Music to set the tone for a productive and stylish day\\.",
-      ">Soulvolle tracks met een stijlvolle vibe. Muziek die de toon zet voor een productieve en stijlvolle dag."
-    ],
-    [
-      ">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms\\.",
-      ">Vier de vreugde van het leven en duik in een wereld van levendige emoties, sprankelende kleuren en soulvolle ritmes."
-    ],
-    [
-      ">Laid-back beats, house-influenced grooves and new deep house tracks\\.",
-      ">Relaxte beats, house-geïnspireerde grooves en nieuwe deep-house-tracks."
-    ],
-    [
-      ">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience\\.",
-      ">Een naadloze versmelting van funky disco, house, French Touch en andere genres tot een ultracoole en energieke muzikale ervaring."
-    ],
-    [
-      ">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke\\.",
-      ">Een sonore reis met nu-disco, French House, electro en disco-house van artiesten zoals Madeon en Fred Falke."
-    ],
-    [
-      ">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks\\.",
-      ">Relaxte beats, hiphop-geïnspireerde grooves en nieuwe indie-poptracks."
-    ],
-    [
-      ">Original Hip Hop, Rap and R(?:&amp;|&)B Flavor Sessions\\.",
-      ">Originele sessies in de smaken hiphop, rap en R&amp;B."
-    ],
-    [
-      ">Brace yourself for hardcore rap and hip hop tracks\\.",
-      ">Maak u klaar voor hardcore rap- en hiphoptracks."
-    ],
-    [
-      ">A few of the favourite hip-hop gems\\.",
-      ">Een aantal van de favoriete hiphop-parels."
-    ],
-    [
-      ">Soulful beats and thoughtful lyrics\\. A captivating look into the world of contemporary hip hop, R(?:&amp;|&)B and rap\\.",
-      ">Soulvolle beats en doordachte teksten. Een meeslepende blik op de wereld van hedendaagse hiphop, R&amp;B en rap."
-    ],
-    [
-      ">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats\\.",
-      ">Relaxte vibes en zachte ritmes in deze schitterende afspeellijst met lo-fi hiphop-beats."
-    ],
-    [
-      ">Celebrate the diverse heritage of African music\\. From the soulful rhythms of Wassoulou to the lively beats of Londonko\\.",
-      ">Vier het diverse erfgoed van Afrikaanse muziek. Van de soulvolle ritmes van Wassoulou tot de levendige beats van Londonko."
-    ],
-    [
       "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
       "aria-label=\"Label: \\1, \\2 artikelen\""
     ],
@@ -1004,18 +892,6 @@
     [
       "<h3><a href=\"[^\"]+/blockchain-digital-assets/[^\"]*\">Blockchain &amp; Digital Assets</a></h3>",
       "<h3><a href=\"/nl/onderwerpen/blockchain-digital-assets/index.html\">Blockchain &amp; digitale activa</a></h3>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">Tracks to kick off the day or shift the room\\. Fashion\\-forward soul, vivid colour, and laid\\-back energy\\.</p>",
-      "<p class=\"newsroom-lede\">Tracks om de dag te beginnen of een wisseling van stemming in de kamer te brengen. Stijlvolle soul, levendige kleuren en relaxte energie.</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">Funky disco, French touch and electro\\. Energetic listening for movement, focus or the dance floor\\.</p>",
-      "<p class=\"newsroom-lede\">Funky disco, French Touch en electro. Energieke muziek voor beweging, focus of de dansvloer.</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo\\-Fi\\. The full breadth of beats\\.</p>",
-      "<p class=\"newsroom-lede\">Van originele hiphop-sessies tot hardcore rap, hedendaagse R&B en lo-fi. De volledige breedte van beats.</p>"
     ],
     [
       "<h1>Enterprise AI Banking (?:&amp;|&) Payment Software Suite</h1>",

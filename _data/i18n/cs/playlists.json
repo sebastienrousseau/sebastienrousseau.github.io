@@ -1,0 +1,261 @@
+{
+  "_comment": "CS copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "Playlisty",
+    "jump": "Poslechnout si nejnovější playlist",
+    "platformsLabel": "Celá sbírka je i na Apple Music",
+    "navLabel": "Přejít na žánr",
+    "play": "Přehrát na Spotify",
+    "follow": "Sledovat na Spotify",
+    "apple": "Poslouchejte na Apple Music",
+    "countOne": "playlist",
+    "countOther": "playlistů",
+    "coverAlt": "Obal playlistu {title}",
+    "openAria": "Otevřít {title} na Spotify",
+    "frameTitle": "Playlist {title} na Spotify"
+  },
+  "intro": [
+    "Třicet devět playlistů a 1 763 skladeb, postavených pro hodiny, které si žádají soundtrack: deep work, dlouhé čtení a pozdní přepisování.",
+    "Neo soul a nu jazz, když práce potřebuje trpělivost. Boom bap a jazz rap, když potřebuje švih. French touch, deep house a disco house, když potřebuje výšku. Lo-fi na úsek se skloněnou hlavou a západoafrické rytmy, které se táhnou vším.",
+    "Každý playlist se dá poslouchat zdarma na Spotify a celá sbírka je na Apple Music."
+  ],
+  "featured": {
+    "kicker": "Nejnovější playlist",
+    "date": "srpen 2026",
+    "genres": "Indie pop · French house",
+    "desc": "Sluncem prosycený indie pop klouzající do French house — Tame Impala a almost monday uvolňují místo Justice, L'Impératrice a afro house od HUGEL."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "Elektronika",
+      "sub": "House, disco a French touch"
+    },
+    "soul-jazz": {
+      "title": "Soul &amp; Jazz",
+      "sub": "Neo soul, nu jazz a pomalá tempa"
+    },
+    "hip-hop": {
+      "title": "Hip-Hop",
+      "sub": "Boom bap, jazz rap a groovy zlaté éry"
+    },
+    "morning-mood": {
+      "title": "Ráno &amp; nálada",
+      "sub": "Downtempo, lo-fi a energie na probuzení"
+    },
+    "global": {
+      "title": "Global",
+      "sub": "Rytmy odevšad jinud"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "Disco house · Garage",
+      "desc": "Disco house a garage z konce devadesátých let, které dodnes zaplní parket — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden a Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "Indie pop · French house",
+      "desc": "Sluncem prosycený indie pop klouzající do French house — Tame Impala a almost monday uvolňují místo Justice, L'Impératrice a afro house od HUGEL."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "French touch · Electro",
+      "desc": "French touch na dálková světla — Daft Punk, Justice, Kavinsky, L'Impératrice a Angèle si předávají neonové syntezátory a motorikové basy."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "Indie dance · Synth pop",
+      "desc": "Synth pop a indie dance ve zlaté hodině — Blu DeTiger, Merty Shango, Citrus Sun a Enne přenášejí ten třpyt do večera."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "Nu-disco · French house",
+      "desc": "Nu-disco a French house s otevřeným filtrem — Fred Falke, Breakbot, Madeon, Lemaitre a Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "Progressive house · Electro",
+      "desc": "Progressive house a electro postavené na pohyb — Madeon, Paul Woolford, Martin Solveig, Secondcity a The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "Nu-disco · Filtered house",
+      "desc": "Nu-disco a filtrovaný house postavené na pohyb — Lenno, Oliver, Tollef a Yelle nad sekanými kytarami a tučným syntezátorovým basem."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "Deep house · Melodic house",
+      "desc": "Sto skladeb deep a melodického house, které se nepletou do cesty — Chris Malinchak, Sultan + Shepard, Lenno a Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "Future house · Electro pop",
+      "desc": "Světlý future house a electro pop — Lenno, La Felix, The Knocks, Kraak & Smaak a Chris Malinchak napříč stovkou skladeb."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "Jazzový hip-hop · Boom bap",
+      "desc": "Boom bap samplující jazz na pomalé večery — Blu & Exile, Large Professor, 3582 a Scienze si předávají teplé smyčky a neuspěchané sloky."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "Jazz-hop · Boom bap",
+      "desc": "Jazz-hop zlaté éry z tábora Phoniks — Awon & Phoniks, Anti Lilly, Dephlow a Tiff the Gift nad zaprášenými žesti a kontrabasem."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "Alternativní R&B · Neo soul",
+      "desc": "Alternativní R&B a noční neo soul — Brent Faiyaz, Elujay, J.Robb a Lou Phelps nad rozostřenými bicími a neuspěchanými basy."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "Disco · Boogie",
+      "desc": "Parketové jistoty ze sedmdesátých a osmdesátých let — CHIC, Luther Vandross, The Jacksons, Change a Oliver Cheatham. Smyčce, tlesknutí a basové linky, které odvedou práci."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "Acid jazz · Nu jazz",
+      "desc": "Acid jazz a nu jazz s živou kapelou za zády — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson a Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "Gospel · Soul",
+      "desc": "Soul s gospelovými kořeny, který nadzvedne celý sál — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris a Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "Broken beat · Nu jazz",
+      "desc": "Broken beat a britský nu jazz na pomalá odpoledne — Emma-Jean Thackray, Blue Lab Beats, Galliano a The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "Britský soul · Broken beat",
+      "desc": "Britský soul v té nejvřelejší poloze — Incognito, Shaun Escoffery, Cherri V a Tortured Soul, se Steviem Wonderem v místnosti."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "Moderní jazz · R&B",
+      "desc": "Moderní jazz a R&B v rozhovoru — Robert Glasper, August Greene, Common, Karriem Riggins a Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Písně o lásce se skutečnými hráči za zády — 4hero a Marc Mac, Incognito, Imaani, Natalie Duncan a Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "Neo soul · Jazz",
+      "desc": "Padesát pět kousků neo soulu a jazzu na teplé večery — India.Arie, Robert Glasper, Lucy Pearl, Anthony David a Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "Neo soul · Moderní R&B",
+      "desc": "Sedmdesát tři kousků neo soulu a moderního R&B — Alex Isley, Yebba, Ego Ella May, Robert Glasper a Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "Jazz funk · Neo soul",
+      "desc": "Sto skladeb s reflektorem namířeným na hráče — Erykah Badu, Jill Scott, Omar, Esperanza Spalding a Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "Rap · Západní pobřeží",
+      "desc": "Sto rapových skladeb napříč čtyřmi dekádami — 2Pac a Dr. Dre, Snoop Dogg a Tha Dogg Pound, Ghostface Killah, Nicki Minaj a DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "Rap · Soul · French touch",
+      "desc": "Sto skladeb vyhrabaných z bedny s deskami bez žánrového pravidla — Dr. Dre a Eminem vedle MC Solaara a 113, Charles Aznavour vedle DJ Mehdiho a Thomase Bangaltera."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "Hardcore rap · Boom bap",
+      "desc": "Tvrdý rap devadesátých let s hlasitostí nahoře — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre a Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "Boom bap · Jazz rap",
+      "desc": "Osmdesát šest kousků boom bapu a jazz rapu z devadesátek — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde a Guruův Jazzmatazz."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "Underground · Boom bap",
+      "desc": "Undergroundový boom bap a instrumentálky — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D a Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "Indie hip-hop · Pop rap",
+      "desc": "Indie hip-hop a pop rap se švihem — Quinn XCII, Kid Quill, EMAN8, gianni & kyle a YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "Chillwave · Downtempo",
+      "desc": "Beztížné downtempo na dlouhou jízdu nebo pomalé ráno — Zero 7, Les Imprimés a Ciao Ciao Marigold nad měkce kreslenými bicími."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "Trip-hop · Jazz-hop",
+      "desc": "Trip-hop samplující jazz od Proletera, Poldoora, Souleance a The Geek x Vrv. Filmový, neuspěchaný, stavěný na psaní."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "Downtempo · Nu jazz",
+      "desc": "Downtempo a nu jazz, o které se dá opřít myšlení — Zero 7, The Cinematic Orchestra, Souleance, Mozez a Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "Trip-hop · Downtempo",
+      "desc": "Trip-hop a downtempo se soulovým jádrem — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra a přepracovaná Nina Simone."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "Lo-fi · Beaty na učení",
+      "desc": "Padesát dva lo-fi hip hopových beatů na učení a soustředěnou práci — Idealism, j'san, Joey Pecoraro, Sugi.wa a aimless. Žádné vokály, se kterými by šlo polemizovat."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "French house · Nu-disco",
+      "desc": "Funkový French house a nu-disco na rovném kurzu — Breakbot, Modjo, Fred Falke, Kartell a Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "Nu jazz · Downtempo",
+      "desc": "Konejšivý nu jazz a downtempo na vydechnutí — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly a Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Soul a jazz funk na začátek dne — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak a Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "Povzbudivý pop",
+      "desc": "Šedesát čtyři světlých, svižných popových skladeb na pohyb — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear a Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "Jazz rap · Alternativní R&B",
+      "desc": "Jazz rap a alternativní R&B, které mají co říct — Noname, Anderson .Paak, KAYTRANADA, Q-Tip a A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "Afrobeat · Wassoulou",
+      "desc": "Západoafrické hlasy v popředí — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh a Kareyce Fotso, od wassoulou po koru."
+    }
+  },
+  "faq": {
+    "heading": "Otázky? Odpovědi.",
+    "sub": "Jak poslouchat, na čem a odkud ta hudba pochází.",
+    "items": [
+      {
+        "q": "Potřebuju k poslechu předplatné Spotify?",
+        "a": "Ne. Každý playlist hraje ve vloženém přehrávači výše i na bezplatném účtu Spotify, s reklamami mezi skladbami. Účet Premium reklamy odstraní a umožní poslech offline, ale nic tady není za placenou zdí."
+      },
+      {
+        "q": "Můžu poslouchat na Apple Music?",
+        "a": "Ano — sledujte profil na music.apple.com/profile/bxhero. Playlisty na této stránce jsou verze ze Spotify, protože Apple Music odkazy na jednotlivé playlisty veřejně nezpřístupňuje. Sledovat profil je na této platformě spolehlivá cesta."
+      },
+      {
+        "q": "Na jakých zařízeních to funguje?",
+        "a": "Všude, kde běží Spotify: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox a jakýkoli prohlížeč. Přehrávače na této stránce fungují na mobilu i na počítači bez aplikace."
+      },
+      {
+        "q": "Kterým playlistem začít pro deep work?",
+        "a": "Ráno &amp; nálada pro soustředění bez rozptylování — downtempo, nu jazz a lo-fi s minimem vokálů, které by soupeřily se čtením. Elektronika sedí k práci, která potřebuje švih spíš než klid."
+      },
+      {
+        "q": "Jak často se playlisty aktualizují?",
+        "a": "Pravidelně a na místě. Stačí sledovat playlist na Spotify nebo profil na jedné z obou služeb: nové skladby dorazí, aniž byste se sem vraceli."
+      },
+      {
+        "q": "Můžu tyto playlisty sdílet nebo vložit na web?",
+        "a": "Ano. Každá karta odkazuje na playlist na Spotify, kde nabídka sdílení poskytne odkazy a kódy pro vložení. Jsou to veřejné playlisty, volně sdílitelné."
+      },
+      {
+        "q": "Kdo tyto playlisty sestavuje?",
+        "a": "Sebastien Rousseau — jako BXHERO na Spotify a Apple Music. Jsou to playlisty, které hrají při psaní o platbách a inženýrství, ne algoritmický feed."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "Poslouchejte na každém zařízení",
+    "body": "Každý playlist hraje v prohlížeči výše i v aplikaci Spotify na zařízeních, která už používáte. Sledujte profil na jedné z obou služeb a nové playlisty dorazí samy.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "Webový prohlížeč"
+    ]
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "_comment": "TA copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "பிளேலிஸ்ட்கள்",
+    "jump": "சமீபத்திய பிளேலிஸ்ட்டைக் கேளுங்கள்",
+    "platformsLabel": "முழுத் தொகுப்பும் Apple Music-இலும் உள்ளது",
+    "navLabel": "ஒரு வகைக்குச் செல்லவும்",
+    "play": "Spotify-இல் கேட்க",
+    "follow": "Spotify-இல் பின்தொடர",
+    "apple": "Apple Music-இல் கேட்க",
+    "countOne": "பிளேலிஸ்ட்",
+    "countOther": "பிளேலிஸ்ட்கள்",
+    "coverAlt": "{title} பிளேலிஸ்ட்டின் அட்டைப் படம்",
+    "openAria": "{title}-ஐ Spotify-இல் திறக்க",
+    "frameTitle": "Spotify-இல் {title} பிளேலிஸ்ட்"
+  },
+  "intro": [
+    "முப்பத்தொன்பது பிளேலிஸ்ட்கள், 1,763 பாடல்கள் — பின்னணி இசை தேவைப்படும் நேரங்களுக்காகக் கட்டப்பட்டவை: ஆழ்ந்த வேலை, நீண்ட வாசிப்பு, இரவு தாண்டிய மறுஎழுத்து.",
+    "வேலைக்குப் பொறுமை தேவைப்படும்போது நியோ சோல், நு ஜாஸ். வேகம் தேவைப்படும்போது பூம் பாப், ஜாஸ் ராப். உயர்வு தேவைப்படும்போது ஃபிரெஞ்ச் டச், டீப் ஹவுஸ், டிஸ்கோ ஹவுஸ். தலை குனிந்து செல்லும் பகுதிக்கு லோ-ஃபை, மேலும் அனைத்தையும் ஊடுருவும் மேற்கு ஆப்பிரிக்க தாளங்கள்.",
+    "ஒவ்வொரு பிளேலிஸ்ட்டும் Spotify-இல் இலவசமாக ஒலிக்கிறது; முழுத் தொகுப்பும் Apple Music-இல் உள்ளது."
+  ],
+  "featured": {
+    "kicker": "சமீபத்திய பிளேலிஸ்ட்",
+    "date": "ஆகஸ்ட் 2026",
+    "genres": "இண்டி பாப் · ஃபிரெஞ்ச் ஹவுஸ",
+    "desc": "வெயில் நனைந்த இண்டி பாப் ஃபிரெஞ்ச் ஹவுஸுக்குள் நழுவுகிறது — Tame Impala, almost monday ஆகியோர் Justice, L'Impératrice மற்றும் HUGEL-இன் ஆஃப்ரோ ஹவுஸுக்கு இடம் விடுகிறார்கள்."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "எலெக்ட்ரானிக்",
+      "sub": "ஹவுஸ், டிஸ்கோ மற்றும் ஃபிரெஞ்ச் டச்"
+    },
+    "soul-jazz": {
+      "title": "சோல் &amp; ஜாஸ்",
+      "sub": "நியோ சோல், நு ஜாஸ் மற்றும் மெதுவான தாளம்"
+    },
+    "hip-hop": {
+      "title": "ஹிப்-ஹாப்",
+      "sub": "பூம் பாப், ஜாஸ் ராப் மற்றும் பொற்கால க்ரூவ்"
+    },
+    "morning-mood": {
+      "title": "காலை &amp; மனநிலை",
+      "sub": "டவுன்டெம்போ, லோ-ஃபை மற்றும் விழிப்பின் ஆற்றல்"
+    },
+    "global": {
+      "title": "உலகம்",
+      "sub": "மற்ற எல்லா இடங்களின் தாளங்கள்"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "டிஸ்கோ ஹவுஸ் · கேரேஜ",
+      "desc": "தொண்ணூறுகளின் இறுதி டிஸ்கோ ஹவுஸும் கேரேஜும், இன்றும் தளத்தை நிரப்புபவை — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden மற்றும் Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "இண்டி பாப் · ஃபிரெஞ்ச் ஹவுஸ",
+      "desc": "வெயில் நனைந்த இண்டி பாப் ஃபிரெஞ்ச் ஹவுஸுக்குள் நழுவுகிறது — Tame Impala, almost monday ஆகியோர் Justice, L'Impératrice மற்றும் HUGEL-இன் ஆஃப்ரோ ஹவுஸுக்கு இடம் விடுகிறார்கள்."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "ஃபிரெஞ்ச் டச் · எலெக்ட்ரோ",
+      "desc": "முழு ஒளியில் ஃபிரெஞ்ச் டச் — Daft Punk, Justice, Kavinsky, L'Impératrice மற்றும் Angèle நியான் சின்த்களையும் மோட்டோரிக் பேஸ்லைன்களையும் பரிமாறிக்கொள்கின்றனர்."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "இண்டி டான்ஸ் · சின்த் பாப்",
+      "desc": "பொன்னான நேரத்தின் சின்த் பாப்பும் இண்டி டான்ஸும் — Blu DeTiger, Merty Shango, Citrus Sun மற்றும் Enne அந்த மின்னலை மாலைக்குக் கொண்டு செல்கின்றனர்."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "நு-டிஸ்கோ · ஃபிரெஞ்ச் ஹவுஸ",
+      "desc": "வடிகட்டி திறந்த நு-டிஸ்கோவும் ஃபிரெஞ்ச் ஹவுஸும் — Fred Falke, Breakbot, Madeon, Lemaitre மற்றும் Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "புரோகிரசிவ் ஹவுஸ் · எலெக்ட்ரோ",
+      "desc": "அசைவுக்காகக் கட்டப்பட்ட புரோகிரசிவ் ஹவுஸும் எலெக்ட்ரோவும் — Madeon, Paul Woolford, Martin Solveig, Secondcity மற்றும் The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "நு-டிஸ்கோ · வடிகட்டப்பட்ட ஹவுஸ",
+      "desc": "அசைவுக்காகக் கட்டப்பட்ட நு-டிஸ்கோவும் வடிகட்டப்பட்ட ஹவுஸும் — வெட்டப்பட்ட கிடார்களும் தடித்த சின்த் பேஸும் மேல் Lenno, Oliver, Tollef மற்றும் Yelle."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "டீப் ஹவுஸ் · மெலடிக் ஹவுஸ",
+      "desc": "வழிமறிக்காமல் இருக்கத் தெரிந்த நூறு டீப் மற்றும் மெலடிக் ஹவுஸ் பாடல்கள் — Chris Malinchak, Sultan + Shepard, Lenno மற்றும் Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "ஃபியூச்சர் ஹவுஸ் · எலெக்ட்ரோ பாப்",
+      "desc": "ஒளிமிக்க ஃபியூச்சர் ஹவுஸும் எலெக்ட்ரோ பாப்பும் — நூறு பாடல்களில் Lenno, La Felix, The Knocks, Kraak & Smaak மற்றும் Chris Malinchak."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "ஜாஸ் சாயல் ஹிப்-ஹாப் · பூம் பாப்",
+      "desc": "மெதுவான மாலைகளுக்கு ஜாஸ் மாதிரிகளைக் கொண்ட பூம் பாப் — Blu & Exile, Large Professor, 3582 மற்றும் Scienze சூடான லூப்களையும் அவசரமற்ற வரிகளையும் பரிமாறுகின்றனர்."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "ஜாஸ்-ஹாப் · பூம் பாப்",
+      "desc": "Phoniks முகாமின் பொற்கால ஜாஸ்-ஹாப் — தூசி படிந்த ஹார்ன்களும் டபுள் பேஸும் மேல் Awon & Phoniks, Anti Lilly, Dephlow மற்றும் Tiff the Gift."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "மாற்று R&B · நியோ சோல",
+      "desc": "மாற்று R&B-யும் நள்ளிரவு நியோ சோலும் — மங்கலான டிரம்களும் அவசரமற்ற பேஸ்லைன்களும் மேல் Brent Faiyaz, Elujay, J.Robb மற்றும் Lou Phelps."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "டிஸ்கோ · பூகி",
+      "desc": "எழுபது, எண்பதுகளின் தளம் நிரப்பும் பாடல்கள் — CHIC, Luther Vandross, The Jacksons, Change மற்றும் Oliver Cheatham. வேலை செய்வது நரம்பிசை, கைத்தட்டல், பேஸ்லைன்."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "ஆசிட் ஜாஸ் · நு ஜாஸ",
+      "desc": "பின்னால் நேரடிக் குழுவுடன் ஆசிட் ஜாஸும் நு ஜாஸும் — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson மற்றும் Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "காஸ்பெல் · சோல",
+      "desc": "அறையையே தூக்கும் காஸ்பெல் வேரூன்றிய சோல் — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris மற்றும் Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "ப்ரோக்கன் பீட் · நு ஜாஸ",
+      "desc": "மெதுவான பிற்பகல்களுக்கு ப்ரோக்கன் பீட்டும் பிரிட்டிஷ் நு ஜாஸும் — Emma-Jean Thackray, Blue Lab Beats, Galliano மற்றும் The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "பிரிட்டிஷ் சோல் · ப்ரோக்கன் பீட்",
+      "desc": "மிக அரவணைப்பான நிலையில் பிரிட்டிஷ் சோல் — Incognito, Shaun Escoffery, Cherri V மற்றும் Tortured Soul, அறையில் Stevie Wonder உடன்."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "நவீன ஜாஸ் · R&B",
+      "desc": "உரையாடலில் நவீன ஜாஸும் R&B-யும் — Robert Glasper, August Greene, Common, Karriem Riggins மற்றும் Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "சோல் · ஜாஸ் ஃபங்க்",
+      "desc": "பின்னால் உண்மையான இசைக்கலைஞர்களுடன் காதல் பாடல்கள் — 4hero மற்றும் Marc Mac, Incognito, Imaani, Natalie Duncan மற்றும் Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "நியோ சோல் · ஜாஸ",
+      "desc": "சூடான மாலைகளுக்கு ஐம்பத்தைந்து நியோ சோல் மற்றும் ஜாஸ் பாடல்கள் — India.Arie, Robert Glasper, Lucy Pearl, Anthony David மற்றும் Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "நியோ சோல் · நவீன R&B",
+      "desc": "எழுபத்து மூன்று நியோ சோல் மற்றும் நவீன R&B பாடல்கள் — Alex Isley, Yebba, Ego Ella May, Robert Glasper மற்றும் Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "ஜாஸ் ஃபங்க் · நியோ சோல",
+      "desc": "இசைக்கலைஞர்கள் மேல் ஒளி விழும் நூறு பாடல்கள் — Erykah Badu, Jill Scott, Omar, Esperanza Spalding மற்றும் Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "ராப் · மேற்குக் கரை",
+      "desc": "நான்கு பத்தாண்டுகளில் பரவிய நூறு ராப் பாடல்கள் — 2Pac மற்றும் Dr. Dre, Snoop Dogg மற்றும் Tha Dogg Pound, Ghostface Killah, Nicki Minaj மற்றும் DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "ராப் · சோல் · ஃபிரெஞ்ச் டச்",
+      "desc": "வகை விதிகளின்றி இசைத்தட்டுப் பெட்டிகளிலிருந்து தோண்டியெடுத்த நூறு பாடல்கள் — MC Solaar, 113 அருகே Dr. Dre மற்றும் Eminem; DJ Mehdi, Thomas Bangalter அருகே Charles Aznavour."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "ஹார்ட்கோர் ராப் · பூம் பாப்",
+      "desc": "ஒலி உயர்த்தி தொண்ணூறுகளின் ஹார்ட்கோர் ராப் — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre மற்றும் Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "பூம் பாப் · ஜாஸ் ராப்",
+      "desc": "தொண்ணூறுகளின் எண்பத்தாறு பூம் பாப் மற்றும் ஜாஸ் ராப் பாடல்கள் — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde மற்றும் Guru-வின் Jazzmatazz."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "அண்டர்கிரவுண்ட் · பூம் பாப்",
+      "desc": "அண்டர்கிரவுண்ட் பூம் பாப்பும் இசைக்கருவி இசையும் — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D மற்றும் Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "இண்டி ஹிப்-ஹாப் · பாப் ராப்",
+      "desc": "வேகமுள்ள இண்டி ஹிப்-ஹாப்பும் பாப் ராப்பும் — Quinn XCII, Kid Quill, EMAN8, gianni & kyle மற்றும் YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "சில்வேவ் · டவுன்டெம்போ",
+      "desc": "நீண்ட பயணத்துக்கோ மெதுவான காலைக்கோ எடையற்ற டவுன்டெம்போ — மென்மையான டிரம்கள் மேல் Zero 7, Les Imprimés மற்றும் Ciao Ciao Marigold."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "டிரிப்-ஹாப் · ஜாஸ்-ஹாப",
+      "desc": "Proleter, Poldoore, Souleance மற்றும் The Geek x Vrv-இன் ஜாஸ் மாதிரி டிரிப்-ஹாப். திரைப்படத் தன்மை, அவசரமின்மை, எழுதுவதற்காகக் கட்டப்பட்டது."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "டவுன்டெம்போ · நு ஜாஸ",
+      "desc": "சிந்தனையைச் சாய்த்துக்கொள்ளக்கூடிய டவுன்டெம்போவும் நு ஜாஸும் — Zero 7, The Cinematic Orchestra, Souleance, Mozez மற்றும் Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "டிரிப்-ஹாப் · டவுன்டெம்போ",
+      "desc": "சோல் மையம் கொண்ட டிரிப்-ஹாப்பும் டவுன்டெம்போவும் — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra மற்றும் மறுவடிவமைக்கப்பட்ட Nina Simone."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "லோ-ஃபை · படிப்புக்கான பீட்",
+      "desc": "படிப்புக்கும் ஆழ்ந்த வேலைக்கும் ஐம்பத்திரண்டு லோ-ஃபை ஹிப் ஹாப் பீட்கள் — Idealism, j'san, Joey Pecoraro, Sugi.wa மற்றும் aimless. வாதிட எந்தக் குரலும் இல்லை."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "ஃபிரெஞ்ச் ஹவுஸ் · நு-டிஸ்கோ",
+      "desc": "சீரான வேகத்தில் ஃபங்கி ஃபிரெஞ்ச் ஹவுஸும் நு-டிஸ்கோவும் — Breakbot, Modjo, Fred Falke, Kartell மற்றும் Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "நு ஜாஸ் · டவுன்டெம்போ",
+      "desc": "இளைப்பாற ஆறுதலான நு ஜாஸும் டவுன்டெம்போவும் — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly மற்றும் Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "சோல் · ஜாஸ் ஃபங்க்",
+      "desc": "நாளைத் தொடங்க சோலும் ஜாஸ் ஃபங்கும் — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak மற்றும் Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "உற்சாகமூட்டும் பாப்",
+      "desc": "அசைவதற்கு அறுபத்து நான்கு ஒளிமிக்க, விரைவான பாப் பாடல்கள் — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear மற்றும் Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "ஜாஸ் ராப் · மாற்று R&B",
+      "desc": "சொல்வதற்கு ஏதோ இருக்கும் ஜாஸ் ராப்பும் மாற்று R&B-யும் — Noname, Anderson .Paak, KAYTRANADA, Q-Tip மற்றும் A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "ஆஃப்ரோபீட் · வாசுலு",
+      "desc": "மேற்கு ஆப்பிரிக்கக் குரல்கள் முன்வரிசையில் — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh மற்றும் Kareyce Fotso, வாசுலு முதல் கோரா வரை."
+    }
+  },
+  "faq": {
+    "heading": "கேள்விகள்? பதில்கள்.",
+    "sub": "எப்படிக் கேட்பது, எதில் கேட்பது, இந்த இசை எங்கிருந்து வருகிறது.",
+    "items": [
+      {
+        "q": "கேட்க Spotify சந்தா தேவையா?",
+        "a": "இல்லை. இலவச Spotify கணக்கிலும் மேலே உள்ள உட்பொதிக்கப்பட்ட பிளேயரில் ஒவ்வொரு பிளேலிஸ்ட்டும் ஒலிக்கும், பாடல்களுக்கு இடையே விளம்பரங்களுடன். Premium கணக்கு விளம்பரங்களை நீக்கி இணையமின்றிக் கேட்க அனுமதிக்கிறது, ஆனால் இங்கு எதுவும் கட்டணச் சுவருக்குப் பின்னால் இல்லை."
+      },
+      {
+        "q": "அதற்குப் பதிலாக Apple Music-இல் கேட்கலாமா?",
+        "a": "ஆம் — music.apple.com/profile/bxhero-இல் உள்ள சுயவிவரத்தைப் பின்தொடருங்கள். இந்தப் பக்கத்தின் பிளேலிஸ்ட்கள் Spotify பதிப்புகள்; ஏனெனில் Apple Music தனிப்பட்ட பிளேலிஸ்ட் இணைப்புகளைப் பொதுவில் வெளியிடுவதில்லை. அந்தத் தளத்தில் சுயவிவரத்தைப் பின்தொடர்வதே நம்பகமான வழி."
+      },
+      {
+        "q": "இவை எந்தச் சாதனங்களில் இயங்கும்?",
+        "a": "Spotify இயங்கும் எல்லா இடத்திலும்: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox மற்றும் எந்த உலாவியிலும். இந்தப் பக்கத்தின் பிளேயர்கள் செயலி இன்றி மொபைலிலும் கணினியிலும் இயங்கும்."
+      },
+      {
+        "q": "ஆழ்ந்த வேலைக்கு எந்தப் பிளேலிஸ்ட்டில் தொடங்குவது?",
+        "a": "கவனச்சிதறல் இன்றி கவனம் குவிக்க காலை &amp; மனநிலை — வாசிப்புடன் போட்டியிடாதபடி குரல் மிகக் குறைவாக அல்லது இல்லாத டவுன்டெம்போ, நு ஜாஸ், லோ-ஃபை. அமைதியை விட வேகம் தேவைப்படும் வேலைக்கு எலெக்ட்ரானிக் பொருந்தும்."
+      },
+      {
+        "q": "பிளேலிஸ்ட்கள் எவ்வளவு அடிக்கடி புதுப்பிக்கப்படுகின்றன?",
+        "a": "தொடர்ந்து, அதே இடத்திலேயே. Spotify-இல் ஒரு பிளேலிஸ்ட்டையோ இரு சேவைகளில் ஒன்றில் சுயவிவரத்தையோ பின்தொடர்ந்தால் போதும்: புதிய பாடல்கள் தாமாகவே வந்துவிடும், மீண்டும் இங்கு வர வேண்டியதில்லை."
+      },
+      {
+        "q": "இந்தப் பிளேலிஸ்ட்களைப் பகிரவோ உட்பொதிக்கவோ முடியுமா?",
+        "a": "ஆம். ஒவ்வொரு அட்டையும் Spotify-இல் உள்ள பிளேலிஸ்ட்டுக்கு இணைக்கிறது; அங்குள்ள பகிர்வு பட்டி இணைப்புகளையும் உட்பொதிப்புக் குறியீட்டையும் தருகிறது. இவை பொதுப் பிளேலிஸ்ட்கள், சுதந்திரமாகப் பகிரலாம்."
+      },
+      {
+        "q": "இந்தப் பிளேலிஸ்ட்களை உருவாக்குவது யார்?",
+        "a": "Sebastien Rousseau — Spotify மற்றும் Apple Music-இல் BXHERO என்ற பெயரில். கட்டணங்கள், பொறியியல் குறித்து எழுதும்போது உண்மையிலேயே ஒலிக்கும் பிளேலிஸ்ட்கள் இவை; வழிமுறை சார்ந்த ஊட்டம் அல்ல."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "எல்லாச் சாதனங்களிலும் கேளுங்கள்",
+    "body": "ஒவ்வொரு பிளேலிஸ்ட்டும் மேலே உள்ள உலாவியிலும், நீங்கள் ஏற்கனவே பயன்படுத்தும் சாதனங்களில் உள்ள Spotify செயலியிலும் ஒலிக்கும். இரு சேவைகளில் ஒன்றில் சுயவிவரத்தைப் பின்தொடருங்கள்; புதிய பிளேலிஸ்ட்கள் தாமாகவே வரும்.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "இணைய உலாவி"
+    ]
+  }
+}

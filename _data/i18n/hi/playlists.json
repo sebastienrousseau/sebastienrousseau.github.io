@@ -1,0 +1,261 @@
+{
+  "_comment": "HI copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "प्लेलिस्ट",
+    "jump": "नवीनतम प्लेलिस्ट सुनें",
+    "platformsLabel": "पूरा संग्रह Apple Music पर भी है",
+    "navLabel": "किसी शैली पर जाएँ",
+    "play": "Spotify पर सुनें",
+    "follow": "Spotify पर फ़ॉलो करें",
+    "apple": "Apple Music पर सुनें",
+    "countOne": "प्लेलिस्ट",
+    "countOther": "प्लेलिस्ट",
+    "coverAlt": "{title} प्लेलिस्ट का कवर चित्र",
+    "openAria": "{title} को Spotify पर खोलें",
+    "frameTitle": "Spotify पर {title} प्लेलिस्ट"
+  },
+  "intro": [
+    "उनतालीस प्लेलिस्ट और 1,763 ट्रैक, उन घंटों के लिए बनाए गए जिन्हें पृष्ठभूमि संगीत चाहिए: गहन काम, लंबी पढ़ाई और देर रात की दोबारा लिखाई।",
+    "जब काम धैर्य माँगे तो नियो सोल और नू जैज़। जब गति माँगे तो बूम बैप और जैज़ रैप। जब उठान माँगे तो फ्रेंच टच, डीप हाउस और डिस्को हाउस। सिर झुकाकर चलने वाले हिस्से के लिए लो-फ़ाई, और इन सबके बीच से गुज़रती पश्चिम अफ़्रीकी लय।",
+    "हर प्लेलिस्ट Spotify पर मुफ़्त चलती है, और पूरा संग्रह Apple Music पर है।"
+  ],
+  "featured": {
+    "kicker": "नवीनतम प्लेलिस्ट",
+    "date": "अगस्त 2026",
+    "genres": "इंडी पॉप · फ्रेंच हाउस",
+    "desc": "धूप में नहाया इंडी पॉप जो फ्रेंच हाउस में फिसल जाता है — Tame Impala और almost monday जगह छोड़ते हैं Justice, L'Impératrice और HUGEL के अफ़्रो हाउस के लिए।"
+  },
+  "lanes": {
+    "electronic": {
+      "title": "इलेक्ट्रॉनिक",
+      "sub": "हाउस, डिस्को और फ्रेंच टच"
+    },
+    "soul-jazz": {
+      "title": "सोल &amp; जैज़",
+      "sub": "नियो सोल, नू जैज़ और धीमी रफ़्तार"
+    },
+    "hip-hop": {
+      "title": "हिप-हॉप",
+      "sub": "बूम बैप, जैज़ रैप और स्वर्ण युग के ग्रूव"
+    },
+    "morning-mood": {
+      "title": "सुबह &amp; मिज़ाज",
+      "sub": "डाउनटेम्पो, लो-फ़ाई और जागने की ऊर्जा"
+    },
+    "global": {
+      "title": "वैश्विक",
+      "sub": "बाकी हर जगह की लय"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "डिस्को हाउस · गैराज",
+      "desc": "नब्बे के दशक के आख़िर का डिस्को हाउस और गैराज, जो आज भी फ़्लोर भर देता है — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden और Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "इंडी पॉप · फ्रेंच हाउस",
+      "desc": "धूप में नहाया इंडी पॉप जो फ्रेंच हाउस में फिसल जाता है — Tame Impala और almost monday जगह छोड़ते हैं Justice, L'Impératrice और HUGEL के अफ़्रो हाउस के लिए।"
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "फ्रेंच टच · इलेक्ट्रो",
+      "desc": "पूरी रोशनी में फ्रेंच टच — Daft Punk, Justice, Kavinsky, L'Impératrice और Angèle नियॉन सिंथ और मोटोरिक बासलाइन का आदान-प्रदान करते हैं।"
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "इंडी डांस · सिंथ पॉप",
+      "desc": "सुनहरे घंटे का सिंथ पॉप और इंडी डांस — Blu DeTiger, Merty Shango, Citrus Sun और Enne उस चमक को शाम तक ले जाते हैं।"
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "नू-डिस्को · फ्रेंच हाउस",
+      "desc": "खुले फ़िल्टर के साथ नू-डिस्को और फ्रेंच हाउस — Fred Falke, Breakbot, Madeon, Lemaitre और Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "प्रोग्रेसिव हाउस · इलेक्ट्रो",
+      "desc": "हरकत के लिए बना प्रोग्रेसिव हाउस और इलेक्ट्रो — Madeon, Paul Woolford, Martin Solveig, Secondcity और The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "नू-डिस्को · फ़िल्टर्ड हाउस",
+      "desc": "हरकत के लिए बना नू-डिस्को और फ़िल्टर्ड हाउस — कटी हुई गिटार और मोटे सिंथ बास पर Lenno, Oliver, Tollef और Yelle."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "डीप हाउस · मेलोडिक हाउस",
+      "desc": "सौ ट्रैक डीप और मेलोडिक हाउस के, जो रास्ते से हट जाना जानते हैं — Chris Malinchak, Sultan + Shepard, Lenno और Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "फ़्यूचर हाउस · इलेक्ट्रो पॉप",
+      "desc": "चमकीला फ़्यूचर हाउस और इलेक्ट्रो पॉप — सौ ट्रैक में Lenno, La Felix, The Knocks, Kraak & Smaak और Chris Malinchak."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "जैज़ी हिप-हॉप · बूम बैप",
+      "desc": "धीमी शामों के लिए जैज़ सैंपल करता बूम बैप — Blu & Exile, Large Professor, 3582 और Scienze गर्म लूप और बिना जल्दबाज़ी वाली पंक्तियाँ साझा करते हैं।"
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "जैज़-हॉप · बूम बैप",
+      "desc": "Phoniks खेमे का स्वर्ण युग जैज़-हॉप — धूल भरे हॉर्न और डबल बास पर Awon & Phoniks, Anti Lilly, Dephlow और Tiff the Gift."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "वैकल्पिक R&B · नियो सोल",
+      "desc": "वैकल्पिक R&B और देर रात का नियो सोल — धुँधले ड्रम और सुस्त बासलाइन पर Brent Faiyaz, Elujay, J.Robb और Lou Phelps."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "डिस्को · बूगी",
+      "desc": "सत्तर और अस्सी के दशक के फ़्लोर भरने वाले गीत — CHIC, Luther Vandross, The Jacksons, Change और Oliver Cheatham. काम करते हैं तार, तालियाँ और बासलाइन।"
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "एसिड जैज़ · नू जैज़",
+      "desc": "पीछे जीवंत बैंड के साथ एसिड जैज़ और नू जैज़ — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson और Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "गॉस्पेल · सोल",
+      "desc": "गॉस्पेल की जड़ों वाला सोल जो पूरा कमरा उठा देता है — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris और Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "ब्रोकन बीट · नू जैज़",
+      "desc": "धीमी दोपहरों के लिए ब्रोकन बीट और ब्रिटिश नू जैज़ — Emma-Jean Thackray, Blue Lab Beats, Galliano और The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "ब्रिटिश सोल · ब्रोकन बीट",
+      "desc": "ब्रिटिश सोल अपने सबसे गर्म रूप में — Incognito, Shaun Escoffery, Cherri V और Tortured Soul, कमरे में Stevie Wonder के साथ।"
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "आधुनिक जैज़ · R&B",
+      "desc": "संवाद में आधुनिक जैज़ और R&B — Robert Glasper, August Greene, Common, Karriem Riggins और Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "सोल · जैज़ फ़ंक",
+      "desc": "पीछे असली वादकों वाले प्रेमगीत — 4hero और Marc Mac, Incognito, Imaani, Natalie Duncan और Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "नियो सोल · जैज़",
+      "desc": "गर्म शामों के लिए पचपन नियो सोल और जैज़ ट्रैक — India.Arie, Robert Glasper, Lucy Pearl, Anthony David और Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "नियो सोल · आधुनिक R&B",
+      "desc": "तिहत्तर नियो सोल और आधुनिक R&B ट्रैक — Alex Isley, Yebba, Ego Ella May, Robert Glasper और Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "जैज़ फ़ंक · नियो सोल",
+      "desc": "सौ ट्रैक जिनमें रोशनी वादकों पर है — Erykah Badu, Jill Scott, Omar, Esperanza Spalding और Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "रैप · वेस्ट कोस्ट",
+      "desc": "चार दशकों में फैले सौ रैप ट्रैक — 2Pac और Dr. Dre, Snoop Dogg और Tha Dogg Pound, Ghostface Killah, Nicki Minaj और DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "रैप · सोल · फ्रेंच टच",
+      "desc": "बिना किसी शैली-नियम के रिकॉर्ड बक्सों से खोदे गए सौ ट्रैक — MC Solaar और 113 के बगल में Dr. Dre और Eminem, DJ Mehdi और Thomas Bangalter के बगल में Charles Aznavour."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "हार्डकोर रैप · बूम बैप",
+      "desc": "आवाज़ ऊँची करके नब्बे के दशक का हार्डकोर रैप — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre और Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "बूम बैप · जैज़ रैप",
+      "desc": "नब्बे के दशक के छियासी बूम बैप और जैज़ रैप ट्रैक — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde और Guru का Jazzmatazz."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "अंडरग्राउंड · बूम बैप",
+      "desc": "अंडरग्राउंड बूम बैप और वाद्य रचनाएँ — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D और Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "इंडी हिप-हॉप · पॉप रैप",
+      "desc": "गति वाला इंडी हिप-हॉप और पॉप रैप — Quinn XCII, Kid Quill, EMAN8, gianni & kyle और YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "चिलवेव · डाउनटेम्पो",
+      "desc": "लंबी ड्राइव या धीमी सुबह के लिए भारहीन डाउनटेम्पो — नरम ड्रम पर Zero 7, Les Imprimés और Ciao Ciao Marigold."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "ट्रिप-हॉप · जैज़-हॉप",
+      "desc": "Proleter, Poldoore, Souleance और The Geek x Vrv का जैज़ सैंपल करता ट्रिप-हॉप। सिनेमाई, बिना जल्दबाज़ी, लिखने के लिए बना।"
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "डाउनटेम्पो · नू जैज़",
+      "desc": "डाउनटेम्पो और नू जैज़ जिन पर सोच टिक सके — Zero 7, The Cinematic Orchestra, Souleance, Mozez और Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "ट्रिप-हॉप · डाउनटेम्पो",
+      "desc": "सोल की धुरी वाला ट्रिप-हॉप और डाउनटेम्पो — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra और नए सिरे से गढ़ी गई Nina Simone."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "लो-फ़ाई · पढ़ाई के बीट",
+      "desc": "पढ़ाई और गहन काम के लिए बावन लो-फ़ाई हिप हॉप बीट — Idealism, j'san, Joey Pecoraro, Sugi.wa और aimless. बहस करने के लिए कोई गायन नहीं।"
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "फ्रेंच हाउस · नू-डिस्को",
+      "desc": "एक समान रफ़्तार पर फ़ंकी फ्रेंच हाउस और नू-डिस्को — Breakbot, Modjo, Fred Falke, Kartell और Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "नू जैज़ · डाउनटेम्पो",
+      "desc": "सुस्ताने के लिए शांत नू जैज़ और डाउनटेम्पो — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly और Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "सोल · जैज़ फ़ंक",
+      "desc": "दिन शुरू करने के लिए सोल और जैज़ फ़ंक — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak और Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "उत्साह भरता पॉप",
+      "desc": "हिलने-डुलने के लिए चौंसठ चमकीले, तेज़ रफ़्तार पॉप ट्रैक — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear और Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "जैज़ रैप · वैकल्पिक R&B",
+      "desc": "कुछ कहने वाला जैज़ रैप और वैकल्पिक R&B — Noname, Anderson .Paak, KAYTRANADA, Q-Tip और A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "अफ़्रोबीट · वासुलु",
+      "desc": "पश्चिम अफ़्रीकी आवाज़ें सबसे आगे — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh और Kareyce Fotso, वासुलु से कोरा तक।"
+    }
+  },
+  "faq": {
+    "heading": "सवाल? जवाब।",
+    "sub": "कैसे सुनें, किस पर सुनें, और यह संगीत कहाँ से आता है।",
+    "items": [
+      {
+        "q": "सुनने के लिए Spotify सदस्यता चाहिए?",
+        "a": "नहीं। मुफ़्त Spotify खाते से भी ऊपर दिए एम्बेडेड प्लेयर में हर प्लेलिस्ट चलती है, ट्रैक के बीच विज्ञापनों के साथ। Premium खाता विज्ञापन हटाता है और ऑफ़लाइन सुनने देता है, पर यहाँ कुछ भी भुगतान की दीवार के पीछे नहीं है।"
+      },
+      {
+        "q": "क्या मैं इसके बजाय Apple Music पर सुन सकता हूँ?",
+        "a": "हाँ — music.apple.com/profile/bxhero पर प्रोफ़ाइल फ़ॉलो करें। इस पृष्ठ की प्लेलिस्ट Spotify संस्करण हैं, क्योंकि Apple Music अलग-अलग प्लेलिस्ट के लिंक सार्वजनिक नहीं करता। उस प्लेटफ़ॉर्म पर प्रोफ़ाइल फ़ॉलो करना ही भरोसेमंद रास्ता है।"
+      },
+      {
+        "q": "ये किन उपकरणों पर चलती हैं?",
+        "a": "जहाँ भी Spotify चलता है: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox और कोई भी ब्राउज़र। इस पृष्ठ के प्लेयर बिना ऐप के मोबाइल और डेस्कटॉप दोनों पर चलते हैं।"
+      },
+      {
+        "q": "गहन काम के लिए किस प्लेलिस्ट से शुरू करूँ?",
+        "a": "बिना ध्यान भटके एकाग्रता के लिए सुबह &amp; मिज़ाज — डाउनटेम्पो, नू जैज़ और लो-फ़ाई, जिनमें गायन बहुत कम या बिलकुल नहीं, ताकि वह पढ़ाई से न भिड़े। जिस काम को शांति नहीं, गति चाहिए, उसके लिए इलेक्ट्रॉनिक ठीक है।"
+      },
+      {
+        "q": "प्लेलिस्ट कितनी बार अपडेट होती हैं?",
+        "a": "नियमित रूप से, और उसी जगह। Spotify पर किसी प्लेलिस्ट को या दोनों में से किसी एक सेवा पर प्रोफ़ाइल को फ़ॉलो कर लेने भर से नए ट्रैक अपने आप पहुँच जाते हैं, यहाँ लौटने की ज़रूरत नहीं।"
+      },
+      {
+        "q": "क्या मैं इन्हें साझा या एम्बेड कर सकता हूँ?",
+        "a": "हाँ। हर कार्ड Spotify पर प्लेलिस्ट से जुड़ता है, जहाँ शेयर मेन्यू लिंक और एम्बेड कोड देता है। ये सार्वजनिक प्लेलिस्ट हैं, साझा करने के लिए स्वतंत्र।"
+      },
+      {
+        "q": "ये प्लेलिस्ट कौन बनाता है?",
+        "a": "सेबेस्टियन रूसो — Spotify और Apple Music पर BXHERO के नाम से। ये वही प्लेलिस्ट हैं जो भुगतान और इंजीनियरिंग पर लिखते समय चलती हैं, कोई एल्गोरिद्मिक फ़ीड नहीं।"
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "हर उपकरण पर सुनें",
+    "body": "हर प्लेलिस्ट ऊपर ब्राउज़र में चलती है, और उन उपकरणों पर Spotify ऐप में भी जिन्हें आप पहले से इस्तेमाल करते हैं। दोनों में से किसी एक सेवा पर प्रोफ़ाइल फ़ॉलो करें और नई प्लेलिस्ट अपने आप आती रहेंगी।",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "वेब ब्राउज़र"
+    ]
+  }
+}

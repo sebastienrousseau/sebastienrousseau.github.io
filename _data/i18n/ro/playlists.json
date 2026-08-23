@@ -1,0 +1,261 @@
+{
+  "_comment": "RO copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "Playlisturi",
+    "jump": "Ascultă cel mai recent playlist",
+    "platformsLabel": "Colecția completă este și pe Apple Music",
+    "navLabel": "Sari la un gen",
+    "play": "Ascultă pe Spotify",
+    "follow": "Urmărește pe Spotify",
+    "apple": "Ascultă pe Apple Music",
+    "countOne": "playlist",
+    "countOther": "playlisturi",
+    "coverAlt": "Coperta playlistului {title}",
+    "openAria": "Deschide {title} pe Spotify",
+    "frameTitle": "Playlistul {title} pe Spotify"
+  },
+  "intro": [
+    "Treizeci și nouă de playlisturi și 1.763 de piese, construite pentru orele care cer o coloană sonoră: deep work, lecturi lungi și rescrieri târzii.",
+    "Neo soul și nu jazz când munca cere răbdare. Boom bap și jazz rap când cere avânt. French touch, deep house și disco house când cere înălțime. Lo-fi pentru porțiunea cu capul plecat și ritmuri vest-africane care străbat totul.",
+    "Fiecare playlist se ascultă gratuit pe Spotify, iar întreaga colecție este pe Apple Music."
+  ],
+  "featured": {
+    "kicker": "Cel mai recent playlist",
+    "date": "august 2026",
+    "genres": "Indie pop · French house",
+    "desc": "Indie pop scăldat în soare care alunecă spre French house — Tame Impala și almost monday lasă locul lui Justice, L'Impératrice și afro house-ului de la HUGEL."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "Electronică",
+      "sub": "House, disco și French touch"
+    },
+    "soul-jazz": {
+      "title": "Soul &amp; Jazz",
+      "sub": "Neo soul, nu jazz și tempouri lente"
+    },
+    "hip-hop": {
+      "title": "Hip-Hop",
+      "sub": "Boom bap, jazz rap și groove-uri din epoca de aur"
+    },
+    "morning-mood": {
+      "title": "Dimineață &amp; dispoziție",
+      "sub": "Downtempo, lo-fi și energie de trezire"
+    },
+    "global": {
+      "title": "Global",
+      "sub": "Ritmuri de oriunde altundeva"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "Disco house · Garage",
+      "desc": "Disco house și garage de la sfârșitul anilor '90 care încă umplu un ring — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden și Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "Indie pop · French house",
+      "desc": "Indie pop scăldat în soare care alunecă spre French house — Tame Impala și almost monday lasă locul lui Justice, L'Impératrice și afro house-ului de la HUGEL."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "French touch · Electro",
+      "desc": "French touch cu farurile aprinse — Daft Punk, Justice, Kavinsky, L'Impératrice și Angèle schimbă între ei sintetizatoare de neon și linii de bas motorik."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "Indie dance · Synth pop",
+      "desc": "Synth pop și indie dance la ora de aur — Blu DeTiger, Merty Shango, Citrus Sun și Enne duc licărirea până seara."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "Nu-disco · French house",
+      "desc": "Nu-disco și French house cu filtrul deschis — Fred Falke, Breakbot, Madeon, Lemaitre și Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "Progressive house · Electro",
+      "desc": "Progressive house și electro construite pentru mișcare — Madeon, Paul Woolford, Martin Solveig, Secondcity și The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "Nu-disco · House filtrat",
+      "desc": "Nu-disco și house filtrat construite pentru mișcare — Lenno, Oliver, Tollef și Yelle peste chitare tăiate și bas gros de sintetizator."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "Deep house · Melodic house",
+      "desc": "O sută de piese de deep house și house melodic care știu să nu stea în cale — Chris Malinchak, Sultan + Shepard, Lenno și Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "Future house · Electro pop",
+      "desc": "Future house luminos și electro pop — Lenno, La Felix, The Knocks, Kraak & Smaak și Chris Malinchak de-a lungul a o sută de piese."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "Hip-hop jazzat · Boom bap",
+      "desc": "Boom bap care samplează jazz pentru seri lente — Blu & Exile, Large Professor, 3582 și Scienze schimbă bucle calde și versuri fără grabă."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "Jazz-hop · Boom bap",
+      "desc": "Jazz-hop din epoca de aur din tabăra Phoniks — Awon & Phoniks, Anti Lilly, Dephlow și Tiff the Gift peste suflători prăfuiți și contrabas."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "R&B alternativ · Neo soul",
+      "desc": "R&B alternativ și neo soul de noapte târziu — Brent Faiyaz, Elujay, J.Robb și Lou Phelps peste tobe difuze și linii de bas fără grabă."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "Disco · Boogie",
+      "desc": "Piese care umplu ringul, din anii '70 și '80 — CHIC, Luther Vandross, The Jacksons, Change și Oliver Cheatham. Corzi, bătăi din palme și linii de bas care fac toată treaba."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "Acid jazz · Nu jazz",
+      "desc": "Acid jazz și nu jazz cu o trupă live în spate — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson și Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "Gospel · Soul",
+      "desc": "Soul cu rădăcini gospel care ridică o încăpere — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris și Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "Broken beat · Nu jazz",
+      "desc": "Broken beat și nu jazz britanic pentru după-amiezi lente — Emma-Jean Thackray, Blue Lab Beats, Galliano și The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "Soul britanic · Broken beat",
+      "desc": "Soul britanic în cea mai caldă formă — Incognito, Shaun Escoffery, Cherri V și Tortured Soul, cu Stevie Wonder în încăpere."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "Jazz modern · R&B",
+      "desc": "Jazz modern și R&B în dialog — Robert Glasper, August Greene, Common, Karriem Riggins și Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Cântece de dragoste cu instrumentiști adevărați în spate — 4hero și Marc Mac, Incognito, Imaani, Natalie Duncan și Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "Neo soul · Jazz",
+      "desc": "Cincizeci și cinci de piese de neo soul și jazz pentru seri calde — India.Arie, Robert Glasper, Lucy Pearl, Anthony David și Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "Neo soul · R&B modern",
+      "desc": "Șaptezeci și trei de piese de neo soul și R&B modern — Alex Isley, Yebba, Ego Ella May, Robert Glasper și Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "Jazz funk · Neo soul",
+      "desc": "O sută de piese cu reflectorul pe instrumentiști — Erykah Badu, Jill Scott, Omar, Esperanza Spalding și Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "Rap · Coasta de Vest",
+      "desc": "O sută de piese de rap din patru decenii — 2Pac și Dr. Dre, Snoop Dogg și Tha Dogg Pound, Ghostface Killah, Nicki Minaj și DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "Rap · Soul · French touch",
+      "desc": "O sută de piese scormonite prin lăzile de discuri, fără regulă de gen — Dr. Dre și Eminem lângă MC Solaar și 113, Charles Aznavour lângă DJ Mehdi și Thomas Bangalter."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "Rap hardcore · Boom bap",
+      "desc": "Rap hardcore din anii '90 cu volumul dat tare — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre și Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "Boom bap · Jazz rap",
+      "desc": "Optzeci și șase de piese de boom bap și jazz rap din anii '90 — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde și Jazzmatazz-ul lui Guru."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "Underground · Boom bap",
+      "desc": "Boom bap underground și instrumentale — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D și Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "Hip-hop indie · Pop rap",
+      "desc": "Hip-hop indie și pop rap cu avânt — Quinn XCII, Kid Quill, EMAN8, gianni & kyle și YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "Chillwave · Downtempo",
+      "desc": "Downtempo fără greutate pentru un drum lung sau o dimineață lentă — Zero 7, Les Imprimés și Ciao Ciao Marigold peste tobe difuze."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "Trip-hop · Jazz-hop",
+      "desc": "Trip-hop care samplează jazz, de la Proleter, Poldoore, Souleance și The Geek x Vrv. Cinematografic, fără grabă, făcut pentru scris."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "Downtempo · Nu jazz",
+      "desc": "Downtempo și nu jazz pe care se poate sprijini gândirea — Zero 7, The Cinematic Orchestra, Souleance, Mozez și Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "Trip-hop · Downtempo",
+      "desc": "Trip-hop și downtempo cu miez de soul — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra și o Nina Simone reinterpretată."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "Lo-fi · Beat-uri de studiu",
+      "desc": "Cincizeci și două de beat-uri lo-fi hip hop pentru studiu și muncă în profunzime — Idealism, j'san, Joey Pecoraro, Sugi.wa și aimless. Fără voci cu care să te contrazici."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "French house · Nu-disco",
+      "desc": "French house funky și nu-disco pe linie dreaptă — Breakbot, Modjo, Fred Falke, Kartell și Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "Nu jazz · Downtempo",
+      "desc": "Nu jazz și downtempo liniștitoare pentru destindere — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly și Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Soul și jazz funk pentru începutul zilei — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak și Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "Pop energizant",
+      "desc": "Șaizeci și patru de piese pop luminoase și alerte pentru mișcare — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear și Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "Jazz rap · R&B alternativ",
+      "desc": "Jazz rap și R&B alternativ care au ceva de spus — Noname, Anderson .Paak, KAYTRANADA, Q-Tip și A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "Afrobeat · Wassoulou",
+      "desc": "Voci vest-africane în prim-plan — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh și Kareyce Fotso, de la wassoulou la kora."
+    }
+  },
+  "faq": {
+    "heading": "Întrebări? Răspunsuri.",
+    "sub": "Cum asculți, pe ce, și de unde vine muzica.",
+    "items": [
+      {
+        "q": "Am nevoie de abonament Spotify ca să ascult?",
+        "a": "Nu. Fiecare playlist se aude în playerul încorporat de mai sus cu un cont Spotify gratuit, cu reclame între piese. Un cont Premium elimină reclamele și permite ascultarea offline, dar nimic de aici nu stă în spatele unui paywall."
+      },
+      {
+        "q": "Pot asculta pe Apple Music în schimb?",
+        "a": "Da — urmărește profilul la music.apple.com/profile/bxhero. Playlisturile de pe această pagină sunt versiunile de pe Spotify, pentru că Apple Music nu expune public linkuri către playlisturi individuale. Urmărirea profilului este calea sigură pe acea platformă."
+      },
+      {
+        "q": "Pe ce dispozitive funcționează?",
+        "a": "Oriunde funcționează Spotify: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox și orice browser. Playerele de pe această pagină funcționează pe mobil și pe desktop, fără aplicație."
+      },
+      {
+        "q": "Cu ce playlist încep pentru deep work?",
+        "a": "Dimineață &amp; dispoziție pentru concentrare fără distragere — downtempo, nu jazz și lo-fi cu voce puțină sau deloc, ca să nu concureze cu cititul. Electronică se potrivește muncii care cere avânt, nu calm."
+      },
+      {
+        "q": "Cât de des sunt actualizate playlisturile?",
+        "a": "Regulat și pe loc. Urmărirea unui playlist pe Spotify sau a profilului pe oricare dintre servicii înseamnă că piesele noi ajung fără să revii aici."
+      },
+      {
+        "q": "Pot distribui sau încorpora aceste playlisturi?",
+        "a": "Da. Fiecare card duce la playlistul de pe Spotify, unde meniul de distribuire oferă linkuri și coduri de încorporare. Sunt playlisturi publice, libere de distribuit."
+      },
+      {
+        "q": "Cine face aceste playlisturi?",
+        "a": "Sebastien Rousseau — ca BXHERO pe Spotify și Apple Music. Sunt playlisturile care rulează în timp ce scrie despre plăți și inginerie, nu un flux algoritmic."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "Ascultă pe orice dispozitiv",
+    "body": "Fiecare playlist se aude în browserul de mai sus și în aplicația Spotify pe dispozitivele pe care le folosești deja. Urmărește profilul pe oricare dintre servicii și playlisturile noi ajung singure.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "Browser web"
+    ]
+  }
+}

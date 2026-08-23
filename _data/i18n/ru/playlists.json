@@ -1,0 +1,261 @@
+{
+  "_comment": "RU copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "Плейлисты",
+    "jump": "Послушать последний плейлист",
+    "platformsLabel": "Вся коллекция есть и в Apple Music",
+    "navLabel": "Перейти к жанру",
+    "play": "Слушать в Spotify",
+    "follow": "Подписаться в Spotify",
+    "apple": "Слушать в Apple Music",
+    "countOne": "плейлист",
+    "countOther": "плейлистов",
+    "coverAlt": "Обложка плейлиста {title}",
+    "openAria": "Открыть {title} в Spotify",
+    "frameTitle": "Плейлист {title} в Spotify"
+  },
+  "intro": [
+    "Тридцать девять плейлистов и 1763 трека, собранные для часов, которым нужен саундтрек: глубокая работа, долгое чтение и поздние переписывания.",
+    "Neo soul и nu jazz, когда работа требует терпения. Boom bap и jazz rap, когда нужен разгон. French touch, deep house и disco house, когда нужен подъём. Lo-fi для отрезка с опущенной головой и западноафриканские ритмы, которые проходят сквозь всё.",
+    "Каждый плейлист бесплатно звучит в Spotify, а вся коллекция есть в Apple Music."
+  ],
+  "featured": {
+    "kicker": "Последний плейлист",
+    "date": "август 2026",
+    "genres": "Indie pop · French house",
+    "desc": "Залитый солнцем инди-поп, соскальзывающий во french house — Tame Impala и almost monday уступают место Justice, L'Impératrice и афро-хаусу от HUGEL."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "Электроника",
+      "sub": "House, disco и French touch"
+    },
+    "soul-jazz": {
+      "title": "Soul &amp; Jazz",
+      "sub": "Neo soul, nu jazz и медленные темпы"
+    },
+    "hip-hop": {
+      "title": "Хип-хоп",
+      "sub": "Boom bap, jazz rap и грувы золотой эры"
+    },
+    "morning-mood": {
+      "title": "Утро &amp; настроение",
+      "sub": "Downtempo, lo-fi и энергия для пробуждения"
+    },
+    "global": {
+      "title": "Global",
+      "sub": "Ритмы отовсюду ещё"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "Disco house · Garage",
+      "desc": "Disco house и garage конца девяностых, которые до сих пор собирают танцпол — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden и Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "Indie pop · French house",
+      "desc": "Залитый солнцем инди-поп, соскальзывающий во french house — Tame Impala и almost monday уступают место Justice, L'Impératrice и афро-хаусу от HUGEL."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "French touch · Electro",
+      "desc": "French touch на дальнем свете — Daft Punk, Justice, Kavinsky, L'Impératrice и Angèle обмениваются неоновыми синтезаторами и моторик-басом."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "Indie dance · Synth pop",
+      "desc": "Synth pop и indie dance в золотой час — Blu DeTiger, Merty Shango, Citrus Sun и Enne уносят это мерцание в вечер."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "Nu-disco · French house",
+      "desc": "Nu-disco и french house с открытым фильтром — Fred Falke, Breakbot, Madeon, Lemaitre и Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "Progressive house · Electro",
+      "desc": "Progressive house и electro, собранные для движения — Madeon, Paul Woolford, Martin Solveig, Secondcity и The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "Nu-disco · Фильтрованный хаус",
+      "desc": "Nu-disco и фильтрованный хаус, собранные для движения — Lenno, Oliver, Tollef и Yelle поверх обрезанных гитар и жирного синтезаторного баса."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "Deep house · Melodic house",
+      "desc": "Сто треков deep и melodic house, которые умеют не мешать — Chris Malinchak, Sultan + Shepard, Lenno и Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "Future house · Electro pop",
+      "desc": "Светлый future house и electro pop — Lenno, La Felix, The Knocks, Kraak & Smaak и Chris Malinchak на протяжении сотни треков."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "Джазовый хип-хоп · Boom bap",
+      "desc": "Boom bap с джазовыми сэмплами для медленных вечеров — Blu & Exile, Large Professor, 3582 и Scienze обмениваются тёплыми петлями и неторопливыми куплетами."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "Jazz-hop · Boom bap",
+      "desc": "Jazz-hop золотой эры из лагеря Phoniks — Awon & Phoniks, Anti Lilly, Dephlow и Tiff the Gift поверх пыльных духовых и контрабаса."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "Альтернативный R&B · Neo soul",
+      "desc": "Альтернативный R&B и ночной neo soul — Brent Faiyaz, Elujay, J.Robb и Lou Phelps поверх размытых барабанов и неторопливых басовых линий."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "Disco · Boogie",
+      "desc": "Танцпольные хиты семидесятых и восьмидесятых — CHIC, Luther Vandross, The Jacksons, Change и Oliver Cheatham. Струнные, хлопки и басовые линии, которые делают всю работу."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "Acid jazz · Nu jazz",
+      "desc": "Acid jazz и nu jazz с живой группой за спиной — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson и Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "Gospel · Soul",
+      "desc": "Соул с госпел-корнями, поднимающий целый зал — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris и Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "Broken beat · Nu jazz",
+      "desc": "Broken beat и британский nu jazz для медленных вечеров — Emma-Jean Thackray, Blue Lab Beats, Galliano и The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "Британский соул · Broken beat",
+      "desc": "Британский соул в самом тёплом изводе — Incognito, Shaun Escoffery, Cherri V и Tortured Soul, со Стиви Уандером в комнате."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "Современный джаз · R&B",
+      "desc": "Современный джаз и R&B в разговоре — Robert Glasper, August Greene, Common, Karriem Riggins и Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Песни о любви с настоящими музыкантами за спиной — 4hero и Marc Mac, Incognito, Imaani, Natalie Duncan и Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "Neo soul · Джаз",
+      "desc": "Пятьдесят пять вещей neo soul и джаза для тёплых вечеров — India.Arie, Robert Glasper, Lucy Pearl, Anthony David и Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "Neo soul · Современный R&B",
+      "desc": "Семьдесят три вещи neo soul и современного R&B — Alex Isley, Yebba, Ego Ella May, Robert Glasper и Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "Jazz funk · Neo soul",
+      "desc": "Сто треков, где прожектор направлен на музыкантов — Erykah Badu, Jill Scott, Omar, Esperanza Spalding и Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "Рэп · Западное побережье",
+      "desc": "Сто рэп-треков за четыре десятилетия — 2Pac и Dr. Dre, Snoop Dogg и Tha Dogg Pound, Ghostface Killah, Nicki Minaj и DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "Рэп · Soul · French touch",
+      "desc": "Сотня треков, выкопанных из ящиков с пластинками без жанровых правил — Dr. Dre и Eminem рядом с MC Solaar и 113, Шарль Азнавур рядом с DJ Mehdi и Thomas Bangalter."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "Хардкор-рэп · Boom bap",
+      "desc": "Жёсткий рэп девяностых на полной громкости — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre и Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "Boom bap · Jazz rap",
+      "desc": "Восемьдесят шесть вещей boom bap и jazz rap девяностых — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde и Jazzmatazz от Guru."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "Андеграунд · Boom bap",
+      "desc": "Андеграундный boom bap и инструменталы — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D и Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "Инди-хип-хоп · Pop rap",
+      "desc": "Инди-хип-хоп и pop rap с разгоном — Quinn XCII, Kid Quill, EMAN8, gianni & kyle и YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "Chillwave · Downtempo",
+      "desc": "Невесомый downtempo для долгой дороги или медленного утра — Zero 7, Les Imprimés и Ciao Ciao Marigold поверх мягко очерченных барабанов."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "Trip-hop · Jazz-hop",
+      "desc": "Trip-hop с джазовыми сэмплами от Proleter, Poldoore, Souleance и The Geek x Vrv. Кинематографично, неторопливо, собрано под письмо."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "Downtempo · Nu jazz",
+      "desc": "Downtempo и nu jazz, на которые опирается мысль — Zero 7, The Cinematic Orchestra, Souleance, Mozez и Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "Trip-hop · Downtempo",
+      "desc": "Trip-hop и downtempo с соул-сердцевиной — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra и переработанная Нина Симон."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "Lo-fi · Биты для учёбы",
+      "desc": "Пятьдесят два lo-fi хип-хоп бита для учёбы и глубокой работы — Idealism, j'san, Joey Pecoraro, Sugi.wa и aimless. Никакого вокала, с которым нужно спорить."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "French house · Nu-disco",
+      "desc": "Фанковый french house и nu-disco на ровном курсе — Breakbot, Modjo, Fred Falke, Kartell и Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "Nu jazz · Downtempo",
+      "desc": "Успокаивающий nu jazz и downtempo, чтобы выдохнуть — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly и Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Соул и jazz funk, чтобы начать день — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak и Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "Подбадривающий поп",
+      "desc": "Шестьдесят четыре светлых, быстрых поп-трека для движения — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear и Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "Jazz rap · Альтернативный R&B",
+      "desc": "Jazz rap и альтернативный R&B, которым есть что сказать — Noname, Anderson .Paak, KAYTRANADA, Q-Tip и A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "Afrobeat · Wassoulou",
+      "desc": "Западноафриканские голоса на первом плане — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh и Kareyce Fotso, от вассулу до коры."
+    }
+  },
+  "faq": {
+    "heading": "Вопросы? Ответы.",
+    "sub": "Как слушать, на чём и откуда берётся музыка.",
+    "items": [
+      {
+        "q": "Нужна ли подписка Spotify, чтобы слушать?",
+        "a": "Нет. Каждый плейлист играет во встроенном плеере выше на бесплатном аккаунте Spotify, с рекламой между треками. Премиум убирает рекламу и разрешает офлайн-прослушивание, но ничего здесь не спрятано за платной стеной."
+      },
+      {
+        "q": "Можно ли слушать в Apple Music?",
+        "a": "Да — подпишитесь на профиль по адресу music.apple.com/profile/bxhero. Плейлисты на этой странице — версии из Spotify, потому что Apple Music не публикует ссылки на отдельные плейлисты. Подписка на профиль — надёжный путь на этой платформе."
+      },
+      {
+        "q": "На каких устройствах это работает?",
+        "a": "Везде, где работает Spotify: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox и любой браузер. Плееры на этой странице работают на телефоне и компьютере без приложения."
+      },
+      {
+        "q": "С какого плейлиста начать для глубокой работы?",
+        "a": "Утро &amp; настроение — для сосредоточенности без отвлечений: downtempo, nu jazz и lo-fi с минимумом вокала или совсем без него, чтобы он не спорил с чтением. Электроника подходит работе, которой нужен разгон, а не покой."
+      },
+      {
+        "q": "Как часто обновляются плейлисты?",
+        "a": "Регулярно и на месте. Достаточно подписаться на плейлист в Spotify или на профиль в любом из сервисов: новые треки приходят сами, возвращаться сюда не нужно."
+      },
+      {
+        "q": "Можно ли делиться этими плейлистами или встраивать их?",
+        "a": "Да. Каждая карточка ведёт на плейлист в Spotify, где меню «Поделиться» выдаёт ссылки и код для встраивания. Это публичные плейлисты, ими можно свободно делиться."
+      },
+      {
+        "q": "Кто составляет эти плейлисты?",
+        "a": "Себастьен Руссо — под именем BXHERO в Spotify и Apple Music. Это плейлисты, которые звучат во время работы над текстами о платежах и инженерии, а не алгоритмическая лента."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "Слушайте на любом устройстве",
+    "body": "Каждый плейлист играет в браузере выше и в приложении Spotify на устройствах, которыми вы и так пользуетесь. Подпишитесь на профиль в любом из сервисов — и новые плейлисты придут сами.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "Веб-браузер"
+    ]
+  }
+}

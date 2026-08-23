@@ -1,0 +1,261 @@
+{
+  "_comment": "SV copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "Spellistor",
+    "jump": "Lyssna på den senaste spellistan",
+    "platformsLabel": "Hela samlingen finns också på Apple Music",
+    "navLabel": "Hoppa till en genre",
+    "play": "Spela på Spotify",
+    "follow": "Följ på Spotify",
+    "apple": "Lyssna på Apple Music",
+    "countOne": "spellista",
+    "countOther": "spellistor",
+    "coverAlt": "Omslagsbild för spellistan {title}",
+    "openAria": "Öppna {title} på Spotify",
+    "frameTitle": "Spellistan {title} på Spotify"
+  },
+  "intro": [
+    "Trettionio spellistor och 1 763 låtar, byggda för de timmar som behöver ett soundtrack — deep work, långa läsningar och sena omskrivningar.",
+    "Neo soul och nu jazz när arbetet kräver tålamod. Boom bap och jazz rap när det kräver fart. French touch, deep house och disco house när det kräver lyft. Lo-fi för sträckan med huvudet nedåt, och västafrikanska rytmer som löper genom alltihop.",
+    "Varje spellista går att lyssna på gratis på Spotify, och hela samlingen finns på Apple Music."
+  ],
+  "featured": {
+    "kicker": "Senaste spellistan",
+    "date": "augusti 2026",
+    "genres": "Indie pop · French house",
+    "desc": "Solindränkt indiepop som glider över i French house — Tame Impala och almost monday lämnar plats åt Justice, L'Impératrice och afro house från HUGEL."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "Elektroniskt",
+      "sub": "House, disco och French touch"
+    },
+    "soul-jazz": {
+      "title": "Soul &amp; Jazz",
+      "sub": "Neo soul, nu jazz och långsamt tempo"
+    },
+    "hip-hop": {
+      "title": "Hip-Hop",
+      "sub": "Boom bap, jazz rap och groove från guldåldern"
+    },
+    "morning-mood": {
+      "title": "Morgon &amp; humör",
+      "sub": "Downtempo, lo-fi och energi att vakna till"
+    },
+    "global": {
+      "title": "Global",
+      "sub": "Rytmer från allt annat håll"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "Disco house · Garage",
+      "desc": "Disco house och garage från sena nittiotalet som fortfarande fyller ett golv — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden och Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "Indie pop · French house",
+      "desc": "Solindränkt indiepop som glider över i French house — Tame Impala och almost monday lämnar plats åt Justice, L'Impératrice och afro house från HUGEL."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "French touch · Electro",
+      "desc": "French touch med helljuset på — Daft Punk, Justice, Kavinsky, L'Impératrice och Angèle byter neonsynthar och motorikbasgångar."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "Indie dance · Synthpop",
+      "desc": "Synthpop och indie dance i den gyllene timmen — Blu DeTiger, Merty Shango, Citrus Sun och Enne bär skimret in i kvällen."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "Nu-disco · French house",
+      "desc": "Nu-disco och French house med filtret öppet — Fred Falke, Breakbot, Madeon, Lemaitre och Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "Progressive house · Electro",
+      "desc": "Progressive house och electro byggda för rörelse — Madeon, Paul Woolford, Martin Solveig, Secondcity och The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "Nu-disco · Filtrerad house",
+      "desc": "Nu-disco och filtrerad house byggda för rörelse — Lenno, Oliver, Tollef och Yelle över klippta gitarrer och fet synthbas."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "Deep house · Melodisk house",
+      "desc": "Hundra spår deep house och melodisk house som håller sig ur vägen — Chris Malinchak, Sultan + Shepard, Lenno och Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "Future house · Electropop",
+      "desc": "Ljus future house och electropop — Lenno, La Felix, The Knocks, Kraak & Smaak och Chris Malinchak över hundra spår."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "Jazzig hiphop · Boom bap",
+      "desc": "Jazzsamplande boom bap för långsamma kvällar — Blu & Exile, Large Professor, 3582 och Scienze byter varma loopar och obrådskande verser."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "Jazz-hop · Boom bap",
+      "desc": "Jazz-hop från guldåldern ur Phoniks-lägret — Awon & Phoniks, Anti Lilly, Dephlow och Tiff the Gift över dammiga blås och kontrabas."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "Alternativ R&B · Neo soul",
+      "desc": "Alternativ R&B och neo soul för sena nätter — Brent Faiyaz, Elujay, J.Robb och Lou Phelps över disiga trummor och obrådskande basgångar."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "Disco · Boogie",
+      "desc": "Golvfyllare från sjuttio- och åttiotalet — CHIC, Luther Vandross, The Jacksons, Change och Oliver Cheatham. Stråkar, klapp och basgångar som gör jobbet."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "Acid jazz · Nu jazz",
+      "desc": "Acid jazz och nu jazz med ett liveband bakom sig — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson och Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "Gospel · Soul",
+      "desc": "Gospelrotad soul som lyfter ett rum — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris och Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "Broken beat · Nu jazz",
+      "desc": "Broken beat och brittisk nu jazz för långsamma eftermiddagar — Emma-Jean Thackray, Blue Lab Beats, Galliano och The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "Brittisk soul · Broken beat",
+      "desc": "Brittisk soul när den är som varmast — Incognito, Shaun Escoffery, Cherri V och Tortured Soul, med Stevie Wonder i rummet."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "Modern jazz · R&B",
+      "desc": "Modern jazz och R&B i samtal — Robert Glasper, August Greene, Common, Karriem Riggins och Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "Soul · Jazzfunk",
+      "desc": "Kärlekslåtar med riktiga musiker bakom sig — 4hero och Marc Mac, Incognito, Imaani, Natalie Duncan och Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "Neo soul · Jazz",
+      "desc": "Femtiofem spår neo soul och jazz för varma kvällar — India.Arie, Robert Glasper, Lucy Pearl, Anthony David och Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "Neo soul · Modern R&B",
+      "desc": "Sjuttiotre spår neo soul och modern R&B — Alex Isley, Yebba, Ego Ella May, Robert Glasper och Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "Jazzfunk · Neo soul",
+      "desc": "Hundra spår med strålkastaren på musikerna — Erykah Badu, Jill Scott, Omar, Esperanza Spalding och Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "Rap · Västkust",
+      "desc": "Hundra rapspår över fyra decennier — 2Pac och Dr. Dre, Snoop Dogg och Tha Dogg Pound, Ghostface Killah, Nicki Minaj och DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "Rap · Soul · French touch",
+      "desc": "Hundra spår grävda ur skivbacken utan genreregler — Dr. Dre och Eminem bredvid MC Solaar och 113, Charles Aznavour bredvid DJ Mehdi och Thomas Bangalter."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "Hardcorerap · Boom bap",
+      "desc": "Hårdför nittiotalsrap med volymen uppskruvad — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre och Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "Boom bap · Jazz rap",
+      "desc": "Åttiosex spår nittiotalsboom bap och jazz rap — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde och Gurus Jazzmatazz."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "Underground · Boom bap",
+      "desc": "Underground boom bap och instrumentaler — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D och Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "Indiehiphop · Poprap",
+      "desc": "Indiehiphop och poprap med fart — Quinn XCII, Kid Quill, EMAN8, gianni & kyle och YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "Chillwave · Downtempo",
+      "desc": "Tyngdlöst downtempo för en lång bilresa eller en långsam morgon — Zero 7, Les Imprimés och Ciao Ciao Marigold över mjukt tecknade trummor."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "Trip-hop · Jazz-hop",
+      "desc": "Jazzsamplande trip-hop från Proleter, Poldoore, Souleance och The Geek x Vrv. Filmiskt, obrådskande, byggt för skrivande."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "Downtempo · Nu jazz",
+      "desc": "Downtempo och nu jazz att tänka mot — Zero 7, The Cinematic Orchestra, Souleance, Mozez och Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "Trip-hop · Downtempo",
+      "desc": "Trip-hop och downtempo med en soulkärna — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra och omarbetad Nina Simone."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "Lo-fi · Pluggbeats",
+      "desc": "Femtiotvå lo-fi-hiphopbeats för plugg och deep work — Idealism, j'san, Joey Pecoraro, Sugi.wa och aimless. Inga sångröster att tvista med."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "French house · Nu-disco",
+      "desc": "Funkig French house och nu-disco på jämn köl — Breakbot, Modjo, Fred Falke, Kartell och Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "Nu jazz · Downtempo",
+      "desc": "Rogivande nu jazz och downtempo att varva ner till — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly och Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "Soul · Jazzfunk",
+      "desc": "Soul och jazzfunk att inleda dagen med — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak och Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "Peppande pop",
+      "desc": "Sextiofyra ljusa poplåtar i högt tempo att röra sig till — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear och Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "Jazz rap · Alternativ R&B",
+      "desc": "Jazz rap och alternativ R&B med något att säga — Noname, Anderson .Paak, KAYTRANADA, Q-Tip och A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "Afrobeat · Wassoulou",
+      "desc": "Västafrikanska röster längst fram — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh och Kareyce Fotso, från wassoulou till kora."
+    }
+  },
+  "faq": {
+    "heading": "Frågor? Svar.",
+    "sub": "Hur man lyssnar, på vad, och var musiken kommer ifrån.",
+    "items": [
+      {
+        "q": "Behöver jag ett Spotify-abonnemang för att lyssna?",
+        "a": "Nej. Varje spellista spelas i den inbäddade spelaren ovan med ett gratis Spotify-konto, med reklam mellan låtarna. Ett Premium-konto tar bort reklamen och tillåter offlinelyssning, men inget här ligger bakom en betalvägg."
+      },
+      {
+        "q": "Kan jag lyssna på Apple Music i stället?",
+        "a": "Ja — följ profilen på music.apple.com/profile/bxhero. Spellistorna på den här sidan är Spotify-versionerna, eftersom Apple Music inte gör länkar till enskilda spellistor offentligt tillgängliga. Att följa profilen är den pålitliga vägen på den plattformen."
+      },
+      {
+        "q": "Vilka enheter fungerar de på?",
+        "a": "Överallt där Spotify går: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox och vilken webbläsare som helst. Spelarna på den här sidan fungerar på mobil och dator utan app."
+      },
+      {
+        "q": "Vilken spellista börjar jag med för deep work?",
+        "a": "Morgon &amp; humör för fokus utan distraktion — downtempo, nu jazz och lo-fi med lite eller ingen sång som konkurrerar med läsningen. Elektroniskt passar arbete som kräver fart snarare än lugn."
+      },
+      {
+        "q": "Hur ofta uppdateras spellistorna?",
+        "a": "Regelbundet, och på plats. Att följa en spellista på Spotify eller profilen på någon av tjänsterna räcker: nya låtar kommer utan att man behöver återvända hit."
+      },
+      {
+        "q": "Får jag dela eller bädda in spellistorna?",
+        "a": "Ja. Varje kort länkar till spellistan på Spotify, där delningsmenyn ger länkar och inbäddningskoder. Det är offentliga spellistor, fria att dela."
+      },
+      {
+        "q": "Vem gör spellistorna?",
+        "a": "Sebastien Rousseau — som BXHERO på Spotify och Apple Music. Det är spellistorna som går medan han skriver om betalningar och teknik, inte ett algoritmiskt flöde."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "Lyssna på alla enheter",
+    "body": "Varje spellista spelas i webbläsaren ovan och i Spotify-appen på de enheter du redan använder. Följ profilen på någon av tjänsterna så kommer nya spellistor av sig själva.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "Webbläsare"
+    ]
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "_comment": "FIL copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "Mga playlist",
+    "jump": "Pakinggan ang pinakabagong playlist",
+    "platformsLabel": "Nasa Apple Music din ang buong koleksyon",
+    "navLabel": "Tumalon sa isang genre",
+    "play": "I-play sa Spotify",
+    "follow": "I-follow sa Spotify",
+    "apple": "Makinig sa Apple Music",
+    "countOne": "playlist",
+    "countOther": "na playlist",
+    "coverAlt": "Cover art ng playlist na {title}",
+    "openAria": "Buksan ang {title} sa Spotify",
+    "frameTitle": "Playlist na {title} sa Spotify"
+  },
+  "intro": [
+    "Tatlumpu't siyam na playlist at 1,763 kanta, ginawa para sa mga oras na kailangan ng soundtrack: malalim na trabaho, mahabang pagbabasa, at pagsusulat muli nang gabing-gabi na.",
+    "Neo soul at nu jazz kapag pasensya ang hinihingi ng trabaho. Boom bap at jazz rap kapag lakas ng dating ang kailangan. French touch, deep house at disco house kapag pag-angat ang kailangan. Lo-fi para sa bahaging nakayuko ka lang at nagtatrabaho, at mga ritmo ng Kanlurang Aprika na dumadaloy sa lahat ng ito.",
+    "Libreng mapapakinggan ang bawat playlist sa Spotify, at nasa Apple Music ang buong koleksyon."
+  ],
+  "featured": {
+    "kicker": "Pinakabagong playlist",
+    "date": "Agosto 2026",
+    "genres": "Indie pop · French house",
+    "desc": "Indie pop na binabad sa araw na dumudulas papuntang French house — nagbibigay-daan ang Tame Impala at almost monday kina Justice, L'Impératrice at sa afro house ng HUGEL."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "Electronic",
+      "sub": "House, disco at French touch"
+    },
+    "soul-jazz": {
+      "title": "Soul &amp; Jazz",
+      "sub": "Neo soul, nu jazz at mabagal na tempo"
+    },
+    "hip-hop": {
+      "title": "Hip-Hop",
+      "sub": "Boom bap, jazz rap at groove ng ginintuang panahon"
+    },
+    "morning-mood": {
+      "title": "Umaga &amp; timpla",
+      "sub": "Downtempo, lo-fi at enerhiya sa paggising"
+    },
+    "global": {
+      "title": "Global",
+      "sub": "Mga ritmo mula sa lahat ng iba pang lugar"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "Disco house · Garage",
+      "desc": "Disco house at garage mula sa huling bahagi ng dekada '90 na napupuno pa rin ang sahig — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden at Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "Indie pop · French house",
+      "desc": "Indie pop na binabad sa araw na dumudulas papuntang French house — nagbibigay-daan ang Tame Impala at almost monday kina Justice, L'Impératrice at sa afro house ng HUGEL."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "French touch · Electro",
+      "desc": "French touch na nakabukas ang mataas na ilaw — nagpapalitan sina Daft Punk, Justice, Kavinsky, L'Impératrice at Angèle ng neon synth at motorik na bassline."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "Indie dance · Synth pop",
+      "desc": "Synth pop at indie dance sa ginintuang oras — dala nina Blu DeTiger, Merty Shango, Citrus Sun at Enne ang kislap na iyon hanggang gabi."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "Nu-disco · French house",
+      "desc": "Nu-disco at French house na bukas ang filter — Fred Falke, Breakbot, Madeon, Lemaitre at Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "Progressive house · Electro",
+      "desc": "Progressive house at electro na ginawa para sa paggalaw — Madeon, Paul Woolford, Martin Solveig, Secondcity at The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "Nu-disco · Filtered house",
+      "desc": "Nu-disco at filtered house na ginawa para sa paggalaw — Lenno, Oliver, Tollef at Yelle sa ibabaw ng pinutol na gitara at makapal na synth bass."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "Deep house · Melodic house",
+      "desc": "Isang daang kanta ng deep at melodic house na marunong umiwas sa daan — Chris Malinchak, Sultan + Shepard, Lenno at Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "Future house · Electro pop",
+      "desc": "Maliwanag na future house at electro pop — Lenno, La Felix, The Knocks, Kraak & Smaak at Chris Malinchak sa loob ng isang daang kanta."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "Jazzy hip-hop · Boom bap",
+      "desc": "Boom bap na kumukuha ng sample sa jazz para sa mabagal na gabi — nagpapalitan sina Blu & Exile, Large Professor, 3582 at Scienze ng mainit na loop at hindi nagmamadaling taludtod."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "Jazz-hop · Boom bap",
+      "desc": "Jazz-hop ng ginintuang panahon mula sa kampo ng Phoniks — Awon & Phoniks, Anti Lilly, Dephlow at Tiff the Gift sa ibabaw ng maalikabok na hihip at upright bass."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "Alternatibong R&B · Neo soul",
+      "desc": "Alternatibong R&B at neo soul ng hatinggabi — Brent Faiyaz, Elujay, J.Robb at Lou Phelps sa ibabaw ng malabong drums at hindi nagmamadaling bassline."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "Disco · Boogie",
+      "desc": "Mga kantang pumupuno ng sahig mula sa dekada '70 at '80 — CHIC, Luther Vandross, The Jacksons, Change at Oliver Cheatham. Ang gumagawa ng trabaho ay ang mga kuwerdas, palakpak at bassline."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "Acid jazz · Nu jazz",
+      "desc": "Acid jazz at nu jazz na may live na banda sa likod — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson at Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "Gospel · Soul",
+      "desc": "Soul na nakaugat sa gospel na nag-aangat ng buong silid — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris at Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "Broken beat · Nu jazz",
+      "desc": "Broken beat at British na nu jazz para sa mabagal na hapon — Emma-Jean Thackray, Blue Lab Beats, Galliano at The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "British soul · Broken beat",
+      "desc": "British soul sa pinakamainit nitong anyo — Incognito, Shaun Escoffery, Cherri V at Tortured Soul, kasama si Stevie Wonder sa silid."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "Modernong jazz · R&B",
+      "desc": "Modernong jazz at R&B na nag-uusap — Robert Glasper, August Greene, Common, Karriem Riggins at Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Mga kantang pag-ibig na may tunay na musikero sa likod — 4hero at Marc Mac, Incognito, Imaani, Natalie Duncan at Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "Neo soul · Jazz",
+      "desc": "Limampu't limang kanta ng neo soul at jazz para sa maiinit na gabi — India.Arie, Robert Glasper, Lucy Pearl, Anthony David at Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "Neo soul · Modernong R&B",
+      "desc": "Pitumpu't tatlong kanta ng neo soul at modernong R&B — Alex Isley, Yebba, Ego Ella May, Robert Glasper at Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "Jazz funk · Neo soul",
+      "desc": "Isang daang kanta kung saan nakatutok ang ilaw sa mga musikero — Erykah Badu, Jill Scott, Omar, Esperanza Spalding at Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "Rap · West coast",
+      "desc": "Isang daang kanta ng rap sa loob ng apat na dekada — 2Pac at Dr. Dre, Snoop Dogg at Tha Dogg Pound, Ghostface Killah, Nicki Minaj at DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "Rap · Soul · French touch",
+      "desc": "Isang daang kantang hinukay sa kahon ng plaka nang walang patakaran sa genre — sina Dr. Dre at Eminem katabi nina MC Solaar at 113, si Charles Aznavour katabi nina DJ Mehdi at Thomas Bangalter."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "Hardcore rap · Boom bap",
+      "desc": "Hardcore rap ng dekada '90 na nakataas ang volume — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre at Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "Boom bap · Jazz rap",
+      "desc": "Walumpu't anim na kanta ng boom bap at jazz rap ng dekada '90 — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde at ang Jazzmatazz ni Guru."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "Underground · Boom bap",
+      "desc": "Underground na boom bap at mga instrumental — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D at Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "Indie hip-hop · Pop rap",
+      "desc": "Indie hip-hop at pop rap na may lakas ng dating — Quinn XCII, Kid Quill, EMAN8, gianni & kyle at YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "Chillwave · Downtempo",
+      "desc": "Walang bigat na downtempo para sa mahabang biyahe o mabagal na umaga — Zero 7, Les Imprimés at Ciao Ciao Marigold sa ibabaw ng malalambot na drums."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "Trip-hop · Jazz-hop",
+      "desc": "Trip-hop na kumukuha ng sample sa jazz mula kina Proleter, Poldoore, Souleance at The Geek x Vrv. Parang pelikula, hindi nagmamadali, ginawa para sa pagsusulat."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "Downtempo · Nu jazz",
+      "desc": "Downtempo at nu jazz na masasandalan ng isip — Zero 7, The Cinematic Orchestra, Souleance, Mozez at Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "Trip-hop · Downtempo",
+      "desc": "Trip-hop at downtempo na may pusong soul — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra at muling inihandang Nina Simone."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "Lo-fi · Beats sa pag-aaral",
+      "desc": "Limampu't dalawang lo-fi hip hop beats para sa pag-aaral at malalim na trabaho — Idealism, j'san, Joey Pecoraro, Sugi.wa at aimless. Walang boses na makikipagtalo sa iyo."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "French house · Nu-disco",
+      "desc": "Funky na French house at nu-disco sa pantay na takbo — Breakbot, Modjo, Fred Falke, Kartell at Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "Nu jazz · Downtempo",
+      "desc": "Nakakakalmang nu jazz at downtempo para makapagpahinga — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly at Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Soul at jazz funk para simulan ang araw — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak at Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "Nakakasiglang pop",
+      "desc": "Animnapu't apat na maliwanag at mabilis na pop na kanta para gumalaw — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear at Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "Jazz rap · Alternatibong R&B",
+      "desc": "Jazz rap at alternatibong R&B na may sasabihin — Noname, Anderson .Paak, KAYTRANADA, Q-Tip at A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "Afrobeat · Wassoulou",
+      "desc": "Mga tinig ng Kanlurang Aprika sa unahan — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh at Kareyce Fotso, mula wassoulou hanggang kora."
+    }
+  },
+  "faq": {
+    "heading": "May tanong? Narito ang sagot.",
+    "sub": "Paano makikinig, saan, at saan nanggagaling ang musika.",
+    "items": [
+      {
+        "q": "Kailangan ba ng subscription sa Spotify para makinig?",
+        "a": "Hindi. Tumutugtog ang bawat playlist sa naka-embed na player sa itaas gamit ang libreng Spotify account, na may patalastas sa pagitan ng mga kanta. Inaalis ng Premium ang patalastas at pinapayagan ang pakikinig nang offline, pero walang anuman dito ang nasa likod ng bayad."
+      },
+      {
+        "q": "Puwede ba akong makinig sa Apple Music na lang?",
+        "a": "Oo — i-follow ang profile sa music.apple.com/profile/bxhero. Mga bersiyong Spotify ang mga playlist sa pahinang ito, dahil hindi ginagawang pampubliko ng Apple Music ang link sa bawat playlist. Sa platform na iyon, ang pag-follow sa profile ang maaasahang daan."
+      },
+      {
+        "q": "Anong mga device ang gumagana?",
+        "a": "Kahit saan tumatakbo ang Spotify: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox, at anumang browser. Gumagana ang mga player sa pahinang ito sa telepono at desktop nang walang app."
+      },
+      {
+        "q": "Aling playlist ang simulan ko para sa malalim na trabaho?",
+        "a": "Umaga &amp; timpla para sa pokus na walang abala — downtempo, nu jazz at lo-fi na kaunti o walang boses para hindi makipagkumpitensya sa pagbabasa. Bagay ang Electronic sa trabahong nangangailangan ng lakas ng dating sa halip na katahimikan."
+      },
+      {
+        "q": "Gaano kadalas na-a-update ang mga playlist?",
+        "a": "Regular, at sa mismong lugar nito. Sapat nang i-follow ang isang playlist sa Spotify o ang profile sa alinman sa dalawang serbisyo: dumarating ang bagong kanta nang hindi na kailangang bumalik dito."
+      },
+      {
+        "q": "Puwede ko bang i-share o i-embed ang mga playlist na ito?",
+        "a": "Oo. Bawat card ay nagtuturo sa playlist sa Spotify, kung saan nagbibigay ang share menu ng link at embed code. Pampublikong playlist ang mga ito, malayang maibabahagi."
+      },
+      {
+        "q": "Sino ang gumagawa ng mga playlist na ito?",
+        "a": "Si Sebastien Rousseau — bilang BXHERO sa Spotify at Apple Music. Ito ang mga playlist na talagang pinapatugtog habang nagsusulat tungkol sa mga pagbabayad at inhinyeriya, hindi isang algorithmic na feed."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "Makinig sa bawat device",
+    "body": "Tumutugtog ang bawat playlist sa browser sa itaas, at sa Spotify app sa mga device na ginagamit mo na. I-follow ang profile sa alinman sa dalawang serbisyo at kusang darating ang mga bagong playlist.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "Web browser"
+    ]
+  }
+}

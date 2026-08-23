@@ -1,0 +1,261 @@
+{
+  "_comment": "HU copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "Lejátszási listák",
+    "jump": "Hallgasd meg a legújabb listát",
+    "platformsLabel": "A teljes gyűjtemény az Apple Musicon is megvan",
+    "navLabel": "Ugrás egy műfajhoz",
+    "play": "Lejátszás Spotifyon",
+    "follow": "Követés Spotifyon",
+    "apple": "Hallgasd meg az Apple Musicon",
+    "countOne": "lejátszási lista",
+    "countOther": "lejátszási lista",
+    "coverAlt": "A(z) {title} lejátszási lista borítója",
+    "openAria": "{title} megnyitása a Spotifyon",
+    "frameTitle": "{title} lejátszási lista a Spotifyon"
+  },
+  "intro": [
+    "Harminckilenc lejátszási lista és 1763 szám, azokra az órákra építve, amelyek zenei aláfestést kívánnak: mély munka, hosszú olvasások és késői újraírások.",
+    "Neo soul és nu jazz, amikor a munka türelmet kíván. Boom bap és jazz rap, amikor lendületet. French touch, deep house és disco house, amikor emelést. Lo-fi a lehajtott fejű szakaszhoz, és nyugat-afrikai ritmusok, amelyek végigfutnak az egészen.",
+    "Minden lista ingyen hallgatható a Spotifyon, a teljes gyűjtemény pedig fent van az Apple Musicon."
+  ],
+  "featured": {
+    "kicker": "Legújabb lejátszási lista",
+    "date": "2026. augusztus",
+    "genres": "Indie pop · French house",
+    "desc": "Napfényben fürdő indie pop, amely French house-ba csúszik át — a Tame Impala és az almost monday átadja a helyet a Justice-nak, L'Impératrice-nak és a HUGEL afro house-ának."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "Elektronikus",
+      "sub": "House, disco és French touch"
+    },
+    "soul-jazz": {
+      "title": "Soul &amp; Jazz",
+      "sub": "Neo soul, nu jazz és lassú tempók"
+    },
+    "hip-hop": {
+      "title": "Hip-Hop",
+      "sub": "Boom bap, jazz rap és aranykori groove-ok"
+    },
+    "morning-mood": {
+      "title": "Reggel &amp; hangulat",
+      "sub": "Downtempo, lo-fi és ébredő energia"
+    },
+    "global": {
+      "title": "Global",
+      "sub": "Ritmusok mindenhonnan máshonnan"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "Disco house · Garage",
+      "desc": "A kilencvenes évek végi disco house és garage, amely ma is megtölt egy táncteret — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden és Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "Indie pop · French house",
+      "desc": "Napfényben fürdő indie pop, amely French house-ba csúszik át — a Tame Impala és az almost monday átadja a helyet a Justice-nak, L'Impératrice-nak és a HUGEL afro house-ának."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "French touch · Electro",
+      "desc": "French touch teljes fényszóróval — Daft Punk, Justice, Kavinsky, L'Impératrice és Angèle váltanak neonszintiket és motorik basszusokat."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "Indie dance · Synth pop",
+      "desc": "Synth pop és indie dance az aranyórában — Blu DeTiger, Merty Shango, Citrus Sun és Enne viszik tovább a csillogást az estébe."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "Nu-disco · French house",
+      "desc": "Nu-disco és French house nyitott szűrővel — Fred Falke, Breakbot, Madeon, Lemaitre és Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "Progressive house · Electro",
+      "desc": "Mozgásra épített progressive house és electro — Madeon, Paul Woolford, Martin Solveig, Secondcity és The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "Nu-disco · Szűrt house",
+      "desc": "Mozgásra épített nu-disco és szűrt house — Lenno, Oliver, Tollef és Yelle csattogó gitárok és vastag szintibasszus fölött."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "Deep house · Melodikus house",
+      "desc": "Száz deep és melodikus house szám, amely nem áll az útba — Chris Malinchak, Sultan + Shepard, Lenno és Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "Future house · Electro pop",
+      "desc": "Világos future house és electro pop — Lenno, La Felix, The Knocks, Kraak & Smaak és Chris Malinchak száz számon át."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "Jazzes hip-hop · Boom bap",
+      "desc": "Jazzt szemplézző boom bap lassú estékre — Blu & Exile, Large Professor, 3582 és Scienze meleg loopokat és sietség nélküli verzéket váltanak."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "Jazz-hop · Boom bap",
+      "desc": "Aranykori jazz-hop a Phoniks-táborból — Awon & Phoniks, Anti Lilly, Dephlow és Tiff the Gift poros fúvósok és nagybőgő fölött."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "Alternatív R&B · Neo soul",
+      "desc": "Alternatív R&B és késő éjszakai neo soul — Brent Faiyaz, Elujay, J.Robb és Lou Phelps kábult dobok és sietség nélküli basszusok fölött."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "Disco · Boogie",
+      "desc": "Hetvenes és nyolcvanas évekbeli tánctérmegtöltők — CHIC, Luther Vandross, The Jacksons, Change és Oliver Cheatham. Vonósok, tapsok és basszusmenetek, amelyek elvégzik a munkát."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "Acid jazz · Nu jazz",
+      "desc": "Acid jazz és nu jazz élő zenekarral a háttérben — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson és Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "Gospel · Soul",
+      "desc": "Gospelgyökerű soul, amely felemel egy termet — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris és Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "Broken beat · Nu jazz",
+      "desc": "Broken beat és brit nu jazz lassú délutánokra — Emma-Jean Thackray, Blue Lab Beats, Galliano és The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "Brit soul · Broken beat",
+      "desc": "A brit soul a legmelegebb formájában — Incognito, Shaun Escoffery, Cherri V és Tortured Soul, Stevie Wonderrel a szobában."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "Modern jazz · R&B",
+      "desc": "Modern jazz és R&B párbeszédben — Robert Glasper, August Greene, Common, Karriem Riggins és Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Szerelmes dalok igazi zenészekkel a hátuk mögött — 4hero és Marc Mac, Incognito, Imaani, Natalie Duncan és Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "Neo soul · Jazz",
+      "desc": "Ötvenöt neo soul és jazz felvétel meleg estékre — India.Arie, Robert Glasper, Lucy Pearl, Anthony David és Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "Neo soul · Modern R&B",
+      "desc": "Hetvenhárom neo soul és modern R&B felvétel — Alex Isley, Yebba, Ego Ella May, Robert Glasper és Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "Jazz funk · Neo soul",
+      "desc": "Száz szám, a reflektorfényben a zenészekkel — Erykah Badu, Jill Scott, Omar, Esperanza Spalding és Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "Rap · Nyugati part",
+      "desc": "Száz rapszám négy évtizedből — 2Pac és Dr. Dre, Snoop Dogg és Tha Dogg Pound, Ghostface Killah, Nicki Minaj és DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "Rap · Soul · French touch",
+      "desc": "Száz szám lemezládákból kiásva, műfaji szabály nélkül — Dr. Dre és Eminem MC Solaar és 113 mellett, Charles Aznavour DJ Mehdi és Thomas Bangalter mellett."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "Hardcore rap · Boom bap",
+      "desc": "Kemény kilencvenes évekbeli rap felhangosítva — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre és Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "Boom bap · Jazz rap",
+      "desc": "Nyolcvanhat kilencvenes évekbeli boom bap és jazz rap felvétel — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde és Guru Jazzmatazza."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "Underground · Boom bap",
+      "desc": "Underground boom bap és instrumentálisok — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D és Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "Indie hip-hop · Pop rap",
+      "desc": "Indie hip-hop és pop rap lendülettel — Quinn XCII, Kid Quill, EMAN8, gianni & kyle és YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "Chillwave · Downtempo",
+      "desc": "Súlytalan downtempo hosszú úthoz vagy lassú reggelhez — Zero 7, Les Imprimés és Ciao Ciao Marigold lágyan rajzolt dobok fölött."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "Trip-hop · Jazz-hop",
+      "desc": "Jazzt szemplézző trip-hop a Proletertől, Poldoore-tól, Souleance-tól és a The Geek x Vrv-től. Filmszerű, sietség nélküli, írásra építve."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "Downtempo · Nu jazz",
+      "desc": "Downtempo és nu jazz, aminek nekifeszülhet a gondolat — Zero 7, The Cinematic Orchestra, Souleance, Mozez és Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "Trip-hop · Downtempo",
+      "desc": "Trip-hop és downtempo soul maggal — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra és újrakevert Nina Simone."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "Lo-fi · Tanuláshoz való beatek",
+      "desc": "Ötvenkét lo-fi hip hop beat tanuláshoz és mély munkához — Idealism, j'san, Joey Pecoraro, Sugi.wa és aimless. Nincs ének, amivel vitatkozni kellene."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "French house · Nu-disco",
+      "desc": "Funkos French house és nu-disco egyenletes tempóban — Breakbot, Modjo, Fred Falke, Kartell és Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "Nu jazz · Downtempo",
+      "desc": "Megnyugtató nu jazz és downtempo a kikapcsolódáshoz — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly és Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Soul és jazz funk a nap kezdetéhez — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak és Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "Lendületes pop",
+      "desc": "Hatvannégy világos, gyors tempójú popszám a mozgáshoz — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear és Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "Jazz rap · Alternatív R&B",
+      "desc": "Jazz rap és alternatív R&B, amelynek van mondanivalója — Noname, Anderson .Paak, KAYTRANADA, Q-Tip és A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "Afrobeat · Wassoulou",
+      "desc": "Nyugat-afrikai hangok az előtérben — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh és Kareyce Fotso, a wassoulou-tól a koráig."
+    }
+  },
+  "faq": {
+    "heading": "Kérdések? Válaszok.",
+    "sub": "Hogyan hallgasd, min, és honnan jön a zene.",
+    "items": [
+      {
+        "q": "Kell Spotify-előfizetés a hallgatáshoz?",
+        "a": "Nem. Minden lista lejátszható a fenti beágyazott lejátszóban ingyenes Spotify-fiókkal, a számok között reklámokkal. A Premium-fiók eltünteti a reklámokat és lehetővé teszi az offline hallgatást, de itt semmi nem áll fizetőfal mögött."
+      },
+      {
+        "q": "Hallgathatom inkább az Apple Musicon?",
+        "a": "Igen — kövesd a profilt a music.apple.com/profile/bxhero címen. Az oldalon lévő listák a Spotify-változatok, mert az Apple Music nem teszi nyilvánosan elérhetővé az egyes listákra mutató linkeket. Azon a platformon a profil követése a megbízható út."
+      },
+      {
+        "q": "Milyen eszközökön működnek?",
+        "a": "Bárhol, ahol a Spotify fut: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox és bármelyik böngésző. Az oldalon lévő lejátszók mobilon és asztali gépen is működnek, alkalmazás nélkül."
+      },
+      {
+        "q": "Melyik listával kezdjek mély munkához?",
+        "a": "Reggel &amp; hangulat a zavartalan összpontosításhoz — downtempo, nu jazz és lo-fi kevés énekkel vagy anélkül, hogy ne versenyezzen az olvasással. Az Elektronikus ahhoz a munkához illik, amely lendületet kíván, nem nyugalmat."
+      },
+      {
+        "q": "Milyen gyakran frissülnek a listák?",
+        "a": "Rendszeresen, helyben. Ha követsz egy listát a Spotifyon vagy a profilt bármelyik szolgáltatásban, az új számok maguktól megérkeznek, ide sem kell visszanézni."
+      },
+      {
+        "q": "Megoszthatom vagy beágyazhatom ezeket a listákat?",
+        "a": "Igen. Minden kártya a Spotifyon lévő listára mutat, ahol a megosztás menü linkeket és beágyazási kódokat ad. Nyilvános listák, szabadon megoszthatók."
+      },
+      {
+        "q": "Ki készíti ezeket a listákat?",
+        "a": "Sebastien Rousseau — BXHERO néven a Spotifyon és az Apple Musicon. Ezek azok a listák, amelyek fizetésekről és mérnöki munkáról írás közben szólnak, nem algoritmikus hírfolyam."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "Hallgasd bármelyik eszközön",
+    "body": "Minden lista lejátszható a fenti böngészőben és a Spotify alkalmazásban azokon az eszközökön, amelyeket amúgy is használsz. Kövesd a profilt bármelyik szolgáltatásban, és az új listák maguktól megérkeznek.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "Webböngésző"
+    ]
+  }
+}

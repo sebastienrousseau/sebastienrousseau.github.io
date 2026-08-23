@@ -1,0 +1,261 @@
+{
+  "_comment": "VI copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "Danh sách phát",
+    "jump": "Nghe danh sách mới nhất",
+    "platformsLabel": "Toàn bộ bộ sưu tập cũng có trên Apple Music",
+    "navLabel": "Chuyển tới một thể loại",
+    "play": "Nghe trên Spotify",
+    "follow": "Theo dõi trên Spotify",
+    "apple": "Nghe trên Apple Music",
+    "countOne": "danh sách phát",
+    "countOther": "danh sách phát",
+    "coverAlt": "Ảnh bìa danh sách phát {title}",
+    "openAria": "Mở {title} trên Spotify",
+    "frameTitle": "Danh sách phát {title} trên Spotify"
+  },
+  "intro": [
+    "Ba mươi chín danh sách phát và 1.763 bản nhạc, dựng cho những giờ cần một nền nhạc: làm việc sâu, đọc dài và viết lại lúc khuya.",
+    "Neo soul và nu jazz khi công việc cần kiên nhẫn. Boom bap và jazz rap khi nó cần đà. French touch, deep house và disco house khi nó cần nâng lên. Lo-fi cho đoạn cắm đầu làm, và những nhịp Tây Phi chạy xuyên suốt tất cả.",
+    "Mọi danh sách phát đều nghe miễn phí trên Spotify, và toàn bộ bộ sưu tập có trên Apple Music."
+  ],
+  "featured": {
+    "kicker": "Danh sách phát mới nhất",
+    "date": "tháng 8 năm 2026",
+    "genres": "Indie pop · French house",
+    "desc": "Indie pop đẫm nắng trượt dần vào French house — Tame Impala và almost monday nhường chỗ cho Justice, L'Impératrice và afro house của HUGEL."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "Điện tử",
+      "sub": "House, disco và French touch"
+    },
+    "soul-jazz": {
+      "title": "Soul &amp; Jazz",
+      "sub": "Neo soul, nu jazz và nhịp chậm"
+    },
+    "hip-hop": {
+      "title": "Hip-Hop",
+      "sub": "Boom bap, jazz rap và groove thời hoàng kim"
+    },
+    "morning-mood": {
+      "title": "Buổi sáng &amp; tâm trạng",
+      "sub": "Downtempo, lo-fi và năng lượng thức dậy"
+    },
+    "global": {
+      "title": "Toàn cầu",
+      "sub": "Nhịp điệu từ mọi nơi còn lại"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "Disco house · Garage",
+      "desc": "Disco house và garage cuối thập niên 1990 vẫn còn lấp đầy sàn nhảy — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden và Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "Indie pop · French house",
+      "desc": "Indie pop đẫm nắng trượt dần vào French house — Tame Impala và almost monday nhường chỗ cho Justice, L'Impératrice và afro house của HUGEL."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "French touch · Electro",
+      "desc": "French touch bật hết đèn pha — Daft Punk, Justice, Kavinsky, L'Impératrice và Angèle trao đổi synth neon và những đường bass motorik."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "Indie dance · Synth pop",
+      "desc": "Synth pop và indie dance trong giờ vàng — Blu DeTiger, Merty Shango, Citrus Sun và Enne mang ánh lấp lánh ấy vào buổi tối."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "Nu-disco · French house",
+      "desc": "Nu-disco và French house mở hết bộ lọc — Fred Falke, Breakbot, Madeon, Lemaitre và Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "Progressive house · Electro",
+      "desc": "Progressive house và electro dựng cho chuyển động — Madeon, Paul Woolford, Martin Solveig, Secondcity và The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "Nu-disco · House lọc",
+      "desc": "Nu-disco và house lọc dựng cho chuyển động — Lenno, Oliver, Tollef và Yelle trên nền guitar cắt gọn và bass synth dày."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "Deep house · Melodic house",
+      "desc": "Một trăm bản deep house và melodic house biết cách tránh đường — Chris Malinchak, Sultan + Shepard, Lenno và Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "Future house · Electro pop",
+      "desc": "Future house sáng và electro pop — Lenno, La Felix, The Knocks, Kraak & Smaak và Chris Malinchak trải suốt một trăm bản."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "Hip-hop chất jazz · Boom bap",
+      "desc": "Boom bap lấy mẫu jazz cho những buổi tối chậm — Blu & Exile, Large Professor, 3582 và Scienze trao nhau những vòng lặp ấm và các đoạn verse thong thả."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "Jazz-hop · Boom bap",
+      "desc": "Jazz-hop thời hoàng kim từ nhóm Phoniks — Awon & Phoniks, Anti Lilly, Dephlow và Tiff the Gift trên nền kèn bụi bặm và contrabass."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "R&B thay thế · Neo soul",
+      "desc": "R&B thay thế và neo soul đêm khuya — Brent Faiyaz, Elujay, J.Robb và Lou Phelps trên nền trống mờ và những đường bass thong thả."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "Disco · Boogie",
+      "desc": "Những bản lấp đầy sàn nhảy thập niên 1970 và 1980 — CHIC, Luther Vandross, The Jacksons, Change và Oliver Cheatham. Làm việc là dàn dây, tiếng vỗ tay và đường bass."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "Acid jazz · Nu jazz",
+      "desc": "Acid jazz và nu jazz có ban nhạc sống phía sau — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson và Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "Gospel · Soul",
+      "desc": "Soul gốc gospel nâng cả căn phòng lên — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris và Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "Broken beat · Nu jazz",
+      "desc": "Broken beat và nu jazz Anh cho những buổi chiều chậm — Emma-Jean Thackray, Blue Lab Beats, Galliano và The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "Soul Anh · Broken beat",
+      "desc": "Soul Anh ở dạng ấm áp nhất — Incognito, Shaun Escoffery, Cherri V và Tortured Soul, với Stevie Wonder trong phòng."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "Jazz hiện đại · R&B",
+      "desc": "Jazz hiện đại và R&B trong một cuộc trò chuyện — Robert Glasper, August Greene, Common, Karriem Riggins và Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Những bản tình ca có nhạc công thật phía sau — 4hero và Marc Mac, Incognito, Imaani, Natalie Duncan và Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "Neo soul · Jazz",
+      "desc": "Năm mươi lăm bản neo soul và jazz cho những tối ấm — India.Arie, Robert Glasper, Lucy Pearl, Anthony David và Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "Neo soul · R&B hiện đại",
+      "desc": "Bảy mươi ba bản neo soul và R&B hiện đại — Alex Isley, Yebba, Ego Ella May, Robert Glasper và Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "Jazz funk · Neo soul",
+      "desc": "Một trăm bản với ánh đèn rọi vào nhạc công — Erykah Badu, Jill Scott, Omar, Esperanza Spalding và Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "Rap · Bờ Tây",
+      "desc": "Một trăm bản rap trải bốn thập niên — 2Pac và Dr. Dre, Snoop Dogg và Tha Dogg Pound, Ghostface Killah, Nicki Minaj và DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "Rap · Soul · French touch",
+      "desc": "Một trăm bản đào từ thùng đĩa mà không theo luật thể loại nào — Dr. Dre và Eminem bên cạnh MC Solaar và 113, Charles Aznavour bên cạnh DJ Mehdi và Thomas Bangalter."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "Rap hardcore · Boom bap",
+      "desc": "Rap hardcore thập niên 1990 mở hết âm lượng — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre và Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "Boom bap · Jazz rap",
+      "desc": "Tám mươi sáu bản boom bap và jazz rap thập niên 1990 — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde và Jazzmatazz của Guru."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "Underground · Boom bap",
+      "desc": "Boom bap underground và các bản hoà tấu — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D và Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "Hip-hop indie · Pop rap",
+      "desc": "Hip-hop indie và pop rap có đà — Quinn XCII, Kid Quill, EMAN8, gianni & kyle và YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "Chillwave · Downtempo",
+      "desc": "Downtempo không trọng lượng cho một chuyến đi dài hay một buổi sáng chậm — Zero 7, Les Imprimés và Ciao Ciao Marigold trên nền trống mềm."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "Trip-hop · Jazz-hop",
+      "desc": "Trip-hop lấy mẫu jazz từ Proleter, Poldoore, Souleance và The Geek x Vrv. Điện ảnh, không vội, dựng để viết."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "Downtempo · Nu jazz",
+      "desc": "Downtempo và nu jazz để tựa suy nghĩ vào — Zero 7, The Cinematic Orchestra, Souleance, Mozez và Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "Trip-hop · Downtempo",
+      "desc": "Trip-hop và downtempo với lõi soul — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra và Nina Simone được làm lại."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "Lo-fi · Beat để học",
+      "desc": "Năm mươi hai beat lo-fi hip hop để học và làm việc sâu — Idealism, j'san, Joey Pecoraro, Sugi.wa và aimless. Không có giọng hát nào để tranh cãi."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "French house · Nu-disco",
+      "desc": "French house funky và nu-disco chạy đều — Breakbot, Modjo, Fred Falke, Kartell và Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "Nu jazz · Downtempo",
+      "desc": "Nu jazz và downtempo dịu êm để thả lỏng — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly và Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Soul và jazz funk để bắt đầu một ngày — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak và Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "Pop nâng tinh thần",
+      "desc": "Sáu mươi tư bản pop sáng, nhịp nhanh để vận động — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear và Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "Jazz rap · R&B thay thế",
+      "desc": "Jazz rap và R&B thay thế có điều muốn nói — Noname, Anderson .Paak, KAYTRANADA, Q-Tip và A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "Afrobeat · Wassoulou",
+      "desc": "Những giọng ca Tây Phi ở tuyến đầu — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh và Kareyce Fotso, từ wassoulou đến đàn kora."
+    }
+  },
+  "faq": {
+    "heading": "Câu hỏi? Câu trả lời.",
+    "sub": "Nghe thế nào, nghe trên gì, và âm nhạc này đến từ đâu.",
+    "items": [
+      {
+        "q": "Có cần gói Spotify trả phí để nghe không?",
+        "a": "Không. Mọi danh sách phát đều chạy trong trình phát nhúng ở trên với tài khoản Spotify miễn phí, có quảng cáo xen giữa các bản nhạc. Tài khoản Premium bỏ quảng cáo và cho nghe ngoại tuyến, nhưng ở đây không có gì nằm sau tường phí."
+      },
+      {
+        "q": "Tôi có thể nghe trên Apple Music thay thế không?",
+        "a": "Có — hãy theo dõi hồ sơ tại music.apple.com/profile/bxhero. Các danh sách trên trang này là bản Spotify, vì Apple Music không công khai liên kết tới từng danh sách phát riêng lẻ. Trên nền tảng đó, theo dõi hồ sơ là cách đáng tin cậy."
+      },
+      {
+        "q": "Chúng chạy được trên những thiết bị nào?",
+        "a": "Bất cứ nơi nào Spotify chạy: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox và mọi trình duyệt. Các trình phát trên trang này chạy trên điện thoại và máy tính mà không cần ứng dụng."
+      },
+      {
+        "q": "Nên bắt đầu với danh sách nào cho làm việc sâu?",
+        "a": "Buổi sáng &amp; tâm trạng để tập trung không bị phân tán — downtempo, nu jazz và lo-fi với rất ít hoặc không có giọng hát cạnh tranh với việc đọc. Điện tử hợp với công việc cần đà hơn là cần tĩnh."
+      },
+      {
+        "q": "Các danh sách được cập nhật thường xuyên đến mức nào?",
+        "a": "Đều đặn, và cập nhật ngay tại chỗ. Chỉ cần theo dõi một danh sách trên Spotify hoặc theo dõi hồ sơ trên một trong hai dịch vụ: các bản nhạc mới sẽ tự đến mà không cần quay lại đây."
+      },
+      {
+        "q": "Tôi có thể chia sẻ hoặc nhúng các danh sách này không?",
+        "a": "Được. Mỗi thẻ dẫn tới danh sách trên Spotify, nơi menu chia sẻ cung cấp liên kết và mã nhúng. Đây là các danh sách công khai, tự do chia sẻ."
+      },
+      {
+        "q": "Ai làm những danh sách này?",
+        "a": "Sebastien Rousseau — với tên BXHERO trên Spotify và Apple Music. Đây là những danh sách thực sự được mở khi viết về thanh toán và kỹ thuật, không phải một luồng do thuật toán tạo ra."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "Nghe trên mọi thiết bị",
+    "body": "Mọi danh sách phát đều chạy trong trình duyệt ở trên, và trong ứng dụng Spotify trên những thiết bị bạn vốn đã dùng. Theo dõi hồ sơ trên một trong hai dịch vụ và các danh sách mới sẽ tự đến.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "Trình duyệt web"
+    ]
+  }
+}
