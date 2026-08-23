@@ -634,12 +634,66 @@ def _dedupe_script_hashes(policy: str) -> str:
     return re.sub(r"script-src[^;]*", _dedupe, policy, count=1)
 
 
+def _strip_script_hashes(policy: str) -> str:
+    """Remove every ``'sha256-…'`` token from ``script-src``.
+
+    Dedupe collapses *repeated* tokens; it cannot see a *stale* one. Every
+    hash in ``script-src`` is derived from an inline script on the page, so
+    once a pass rewrites one of those blocks the old hash matches nothing
+    and is simply dead weight the next injection has no reason to keep.
+
+    Without this the directive grows without bound: re-running postbuild
+    over an already-built tree added one token per page per run (11 -> 12
+    -> 13 on a dated article), because the freshly computed hash was
+    prepended while its predecessor stayed put. Stripping first makes
+    :func:`inject_jsonld_hashes` idempotent by construction — the token set
+    is replaced, not merged — and self-healing on a tree that already
+    accumulated stale entries.
+    """
+
+    def _strip(m: re.Match[str]) -> str:
+        directive = _SHA_RE.sub("", m.group(0))
+        leading = directive[: len(directive) - len(directive.lstrip())]
+        return leading + re.sub(r"[ \t]{2,}", " ", directive.strip())
+
+    return re.sub(r"script-src[^;]*", _strip, policy, count=1)
+
+
+_HTML_COMMENT_RE = re.compile(r"<!--[\s\S]*?-->")
+
+
+def _hashable_scripts(html: str) -> str:
+    """``html`` with comments removed, for finding inline scripts.
+
+    Every layout carries a comment that documents the CSP mechanism, and it
+    quotes the thing it documents::
+
+        <!-- … Inline <script type="application/ld+json"> JSON-LD blocks
+             are allowed *by hash only* … -->
+
+    The block regexes are not comment-aware, so that quoted tag opened a
+    match which ran to the next real ``</script>`` — swallowing the rest of
+    the comment *and the CSP meta that follows it*. Every page therefore
+    hashed a phantom block whose content included the policy being written,
+    so injecting the hash changed the block, which changed its hash. The
+    directive never reached a fixed point: consecutive postbuild runs
+    swapped one token for another forever, and shipped a ``'sha256-…'`` for
+    a script that does not exist.
+
+    Real JSON-LD is machine-generated and never contains an HTML comment
+    (verified across the built tree), so dropping comments before the scan
+    cannot alter a genuine block's bytes.
+    """
+    return _HTML_COMMENT_RE.sub("", html)
+
+
 def inject_jsonld_hashes(html: str) -> str:
-    bodies = [m.group(1) for m in jsonld_re.finditer(html)]
-    bodies.extend(m.group(1) for m in speculation_re.finditer(html))
+    scan = _hashable_scripts(html)
+    bodies = [m.group(1) for m in jsonld_re.finditer(scan)]
+    bodies.extend(m.group(1) for m in speculation_re.finditer(scan))
     # Bare <script> blocks (no src, no type) — currently just the inlined
     # theme-init bootstrap, but the rule is generic.
-    bodies.extend(m.group(1) for m in _inline_script_re.finditer(html))
+    bodies.extend(m.group(1) for m in _inline_script_re.finditer(scan))
     if not bodies:
         return html
     hashes = sorted({b64_sha256(b.encode("utf-8")) for b in bodies})
@@ -651,6 +705,9 @@ def inject_jsonld_hashes(html: str) -> str:
         def patch_content(c: re.Match[str]) -> str:
             policy = c.group(3)
             new_policy = re.sub(r"(script-src[^;]*?)\s*'unsafe-inline'", r"\1", policy)
+            # Replace the hash set rather than merge into it — see
+            # _strip_script_hashes for why merging never converges.
+            new_policy = _strip_script_hashes(new_policy)
             new_policy = re.sub(
                 r"(script-src)(\s+)",
                 r"\1 " + hash_tokens + r"\2",
