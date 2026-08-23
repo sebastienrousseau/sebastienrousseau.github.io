@@ -686,11 +686,12 @@ def stamp_asset_fingerprints(html: str) -> tuple[str, int]:
     ``<script src>`` / ``<link href>`` tags to their fingerprinted
     counterparts (``/main.b5833c97.js``, ``/highlight.a92b9694.css``).
 
-    The bare-name aliases are kept on disk by ``build.sh`` for any
-    code path that still references them (service-worker fetches,
-    legacy bookmarks), but every HTML page should reference the
-    fingerprinted name so that an edge cache (Cloudflare/Fastly) is
-    forced to fetch fresh bytes whenever the file content changes.
+    The bare-name aliases are no longer written: they were referenced by
+    no page, so ``build.sh`` stopped emitting them. Only ``sw.js`` still
+    names them, and because it is not HTML this rewrite never reaches it —
+    ``build.sh`` repoints its precache list separately and asserts the
+    result resolves on disk. Every HTML page must reference the
+    fingerprinted name so that an edge cache can serve it immutably.
 
     Returns ``(new_html, swaps)``."""
     if _FP_PATTERN is None:

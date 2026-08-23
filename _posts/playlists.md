@@ -100,4 +100,8 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-What I listen to while I write. Five tonal lanes — soul and jazz for the long read, morning and mood for the slow start, electronic for the push, hip-hop for the rewrite, and a thread of global rhythms throughout. Updated as the rotation shifts.
+Thirty-nine playlists and 1,763 tracks, built for the hours that need a soundtrack — deep work, long reads and late rewrites.
+
+Neo soul and nu jazz when the work needs patience. Boom bap and jazz rap when it needs momentum. French touch, deep house and disco house when it needs lift. Lo-fi for the head-down stretch, and West African rhythms running through it all.
+
+Every playlist streams free on Spotify, and the whole collection is on Apple Music.

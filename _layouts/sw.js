@@ -23,7 +23,10 @@ const PRECACHE = [
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE).then((c) => c.addAll(PRECACHE).catch(() => null))
+    caches
+      .open(CACHE)
+      .then((c) => Promise.allSettled(PRECACHE.map((u) => c.add(u))))
+      .catch(() => null)
   );
   self.skipWaiting();
 });

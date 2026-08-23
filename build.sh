@@ -281,6 +281,59 @@ for f in public/sw.*.js; do
   cp -f "$f" "public/$short"
 done
 
+# Point the service worker's precache list at the fingerprinted filenames.
+#
+# sw.js lists "/main.js" and "/highlight.css" by bare name, but asset
+# fingerprinting emits main.<hash>.js / highlight.<hash>.css and the bare
+# aliases are deliberately no longer written (see the note above: they were
+# referenced by 0 of 6,856 pages). That measurement counted pages and missed
+# sw.js, which is not HTML and so is never touched by postbuild's
+# stamp_asset_fingerprints() rewrite.
+#
+# The consequence is not a cosmetic 404: cache.addAll() is atomic, so one
+# missing entry rejects the whole batch and NOTHING is precached — including
+# the offline page the worker exists to serve. The rejection is caught and
+# discarded, so it fails silently.
+#
+# Resolve the real names here (they exist by now; ssg emitted them above) and
+# fail the build if the rewritten list does not resolve on disk.
+python3 - <<'SWFIX'
+import pathlib, re, sys
+
+pub = pathlib.Path("public")
+subs = {}
+for bare, pattern in (("main.js", "main.*.js"), ("highlight.css", "highlight.*.css")):
+    hits = sorted(q.name for q in pub.glob(pattern) if q.name != bare)
+    if len(hits) == 1:
+        subs[bare] = hits[0]
+    elif hits:
+        sys.exit(f"sw precache: ambiguous fingerprint for {bare}: {hits}")
+
+changed = 0
+for sw in list(pub.glob("sw.*.js")) + [pub / "sw.js"]:
+    if not sw.is_file():
+        continue
+    src = sw.read_text()
+    out = src
+    for bare, fp in subs.items():
+        out = out.replace(f'"/{bare}"', f'"/{fp}"')
+    if out != src:
+        sw.write_text(out)
+        changed += 1
+
+sw = pub / "sw.js"
+if sw.is_file():
+    listed = re.search(r"PRECACHE\s*=\s*\[(.*?)\]", sw.read_text(), re.S)
+    missing = [
+        u for u in re.findall(r'"(/[^"]+)"', listed.group(1) if listed else "")
+        if not (pub / u.lstrip("/")).exists() and not u.endswith("/")
+    ]
+    if missing:
+        sys.exit(f"sw precache references files not in the build: {missing}")
+
+print(f"    service worker  : precache repointed in {changed} file(s); all entries resolve")
+SWFIX
+
 # Rewrite syntect Base16 Ocean Dark inline styles to AAA-compliant values.
 #
 # The SSG bundles Base16 Ocean Dark as its syntect highlighter theme. The

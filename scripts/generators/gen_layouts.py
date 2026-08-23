@@ -1369,7 +1369,7 @@ def _playlist_featured() -> str:
     """The newest playlist, given a full-bleed hero band of its own."""
     title, eyebrow, date, desc, pid, _art = PLAYLISTS_FEATURED
     url = f"https://open.spotify.com/playlist/{pid}"
-    return f"""<div class="pl-hero" itemscope itemtype="https://schema.org/MusicPlaylist">
+    return f"""<div class="pl-hero" id="latest" itemscope itemtype="https://schema.org/MusicPlaylist">
 <div class="pl-hero-inner">
 <div class="pl-hero-copy">
 <p class="pl-hero-kicker">{eyebrow}</p>
@@ -1413,30 +1413,22 @@ def playlist_layout() -> str:
         f'<a class="pl-chip" href="#lane-{key}">{title}</a>'
         for key, title, _kicker, _sub, _items in PLAYLISTS_SECTIONS
     )
-    lane_chips = "".join(
-        f'<a class="playlist-chip" href="#lane-{key}">{kicker}</a>'
-        for key, _title, kicker, _sub, _items in PLAYLISTS_SECTIONS
-    )
     body = f"""    <section class="ap-hero pl-topper">
         <div class="pl-aurora" aria-hidden="true"><div class="pl-aurora-wrap"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
         <h1>Playlists</h1>
         <p class="sub">{{{{subtitle}}}}</p>
-        <a class="pl-jump" href="#lane-electronic">Browse the playlists</a>
+        <a class="pl-jump" href="#latest">Hear the latest playlist</a>
       </section>
 
       <main id="main" class="content ap-section">
         <div class="wrap" style="max-width:var(--max-wide)">
           <div class="playlist-intro" data-reveal>{{{{content}}}}</div>
           <div class="playlist-platforms" data-reveal>
-<p class="playlist-platforms-label">Listen where you already are</p>
-<a class="playlist-platform playlist-platform-spotify" href="https://open.spotify.com/user/sebastienrousseau" target="_blank" rel="me noopener">
-<svg class="pl-mark" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg> Follow on Spotify
-</a>
+<p class="playlist-platforms-label">The full collection is on Apple Music too</p>
 <a class="pl-badge playlist-platform-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="me noopener" aria-label="Listen on Apple Music">
 <img src="/_csp/listen-on-apple-music.svg" alt="Listen on Apple Music" width="141" height="41" loading="lazy" decoding="async" />
 </a>
 </div>
-<nav class="playlist-chips" aria-label="Jump to a lane">{lane_chips}</nav>
 <section class="pl-stage">
 
 {_playlist_featured()}
@@ -1456,9 +1448,6 @@ def playlist_layout() -> str:
 """
     playlist_css = """      .playlist-intro{max-width:680px;margin:0 auto 32px;text-align:center;font-size:clamp(17px,1.6vw,20px);line-height:1.5;color:var(--ink-mute)}
       .playlist-intro p{margin:0}
-      .playlist-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:0 auto 48px;max-width:780px}
-      .playlist-chip{display:inline-flex;align-items:center;min-height:36px;padding:8px 18px;border:1px solid var(--rule);border-radius:999px;font-family:var(--type-body);font-size:13px;font-weight:600;color:var(--ink-deep);text-decoration:none;background:var(--paper);transition:background .15s,border-color .15s}
-      .playlist-chip:hover,.playlist-chip:focus-visible{background:var(--card);border-color:var(--ink-mute)}
       .spotify-frame{border-radius:12px;border:0;display:block;width:100%}
       /* Playlist board: full-bleed genre bands, cover-led cards and a
          tinted hero, mirroring Apple Music's layout rather than the
@@ -1530,7 +1519,7 @@ def playlist_layout() -> str:
       @keyframes pl-jump-bob{0%,100%{transform:translateY(-3px) rotate(45deg)}
         50%{transform:translateY(2px) rotate(45deg)}}
       /* Anchor targets clear the sticky nav when the jump button fires. */
-      .pl-band{scroll-margin-block-start:calc(var(--nav-h,64px) + 12px)}
+      .pl-band,.pl-hero{scroll-margin-block-start:calc(var(--nav-h,64px) + 12px)}
 
       .pl-aurora{position:absolute;inset:0;z-index:0;pointer-events:none;
         overflow:hidden;background:var(--pl-au-bg)}
@@ -1687,7 +1676,6 @@ def playlist_layout() -> str:
         border:1px solid var(--rule,rgba(128,128,128,.32));font-size:14px;font-weight:600;text-decoration:none;
         transition:transform .15s ease,border-color .15s ease}
       .playlist-platform:hover,.playlist-platform:focus-visible{transform:translateY(-1px)}
-      .playlist-platform-spotify:hover,.playlist-platform-spotify:focus-visible{border-color:var(--pl-spotify)}
       .playlist-platform-apple:hover,.playlist-platform-apple:focus-visible{border-color:var(--pl-apple)}
       @media (prefers-reduced-motion:reduce){.playlist-platform{transition:none}
         .playlist-platform:hover,.playlist-platform:focus-visible{transform:none}}
