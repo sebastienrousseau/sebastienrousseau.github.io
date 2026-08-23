@@ -504,6 +504,7 @@ python3 tests/validation/test_hreflang_reciprocity.py
 python3 tests/validation/test_jsonld_localized.py
 python3 tests/validation/test_sitemap_completeness.py
 python3 tests/validation/test_lang_no_leakage.py
+python3 tests/validation/test_body_translation.py
 python3 tests/validation/test_rtl_safe.py --strict
 # Locale slug policy (ADR-0012): every locale localises its article slugs.
 # Ratcheted — fails only when a locale goes backwards against the recorded
