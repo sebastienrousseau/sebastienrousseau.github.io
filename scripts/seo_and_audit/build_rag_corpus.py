@@ -66,7 +66,7 @@ _EXCERPT_FM_RE = re.compile(r'^excerpt:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _TAG_FM_RE = re.compile(r'^tags:\s*"?([^"\n]+)"?', re.MULTILINE)
 _LICENSE_FM_RE = re.compile(r'^license:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _LASTREV_FM_RE = re.compile(r'^last_reviewed:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
-_MAIN_RE = re.compile(r'<main\b[^>]*>([\s\S]*?)</main>', re.IGNORECASE)
+_MAIN_RE = re.compile(r"<main\b[^>]*>([\s\S]*?)</main>", re.IGNORECASE)
 _TAG_STRIP_RE = re.compile(r"<[^>]+>")
 _WS_RE = re.compile(r"\s+")
 
@@ -146,9 +146,7 @@ def _post_record(
     license_m = _LICENSE_FM_RE.search(text)
     lastrev_m = _LASTREV_FM_RE.search(text)
     tags_m = _TAG_FM_RE.search(text)
-    raw_tags, pillars = _parse_tags_line(
-        tags_m.group(1) if tags_m else None, taxonomy, amap
-    )
+    raw_tags, pillars = _parse_tags_line(tags_m.group(1) if tags_m else None, taxonomy, amap)
     slug = path.stem
     iso_date = stem_m.group(1)
     return {

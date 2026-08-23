@@ -155,13 +155,12 @@ def _check_locale_structure(body: str) -> list[str]:
     if len(h2_idx) < 2:
         return defects
     faq_ok = any(
-        len(re.findall(r"\*\*[^*?]+\?\*\*", body[idx:idx + 2_000])) >= 3
-        for idx in h2_idx
+        len(re.findall(r"\*\*[^*?]+\?\*\*", body[idx : idx + 2_000])) >= 3 for idx in h2_idx
     )
     if not faq_ok:
         defects.append("structure: missing FAQ section (no Q&A-shape H2 in body)")
     refs_ok = any(
-        len(re.findall(r'\[[^\]]+\]\(https?://[^)]+ "[^"]+"\)', body[idx:idx + 4_000])) >= 3
+        len(re.findall(r'\[[^\]]+\]\(https?://[^)]+ "[^"]+"\)', body[idx : idx + 4_000])) >= 3
         for idx in h2_idx
     )
     if not refs_ok:
@@ -239,9 +238,7 @@ def check_date_consistency(path: Path, fm: dict[str, str]) -> list[str]:
                     f"{fm_iso}, but filename says {file_date}"
                 )
         except ValueError:
-            defects.append(
-                f'date: frontmatter `date: "{fm_date}"` is not in ' f'"Month DD, YYYY" form'
-            )
+            defects.append(f'date: frontmatter `date: "{fm_date}"` is not in "Month DD, YYYY" form')
     return defects
 
 
@@ -333,7 +330,7 @@ def main() -> int:
         "--no-network",
         "--bypass-network",
         action="store_true",
-        help="skip banner-reachability + external-link probes " "(useful for offline drafting)",
+        help="skip banner-reachability + external-link probes (useful for offline drafting)",
     )
     p.add_argument(
         "--check-links",

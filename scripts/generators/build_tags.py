@@ -97,7 +97,9 @@ def _post_meta(path: Path) -> tuple[str | None, str, str, str] | None:
     return title, stem_m.group(1), path.stem, tags_m.group(1)
 
 
-def _walk_posts(taxonomy: dict) -> tuple[
+def _walk_posts(
+    taxonomy: dict,
+) -> tuple[
     collections.Counter[str],
     dict[str, list[tuple[str, str, str]]],
 ]:
@@ -158,23 +160,18 @@ def _render_pillar_cards(
     for pillar in PILLAR_ORDER:
         slugs = by_pillar.get(pillar, [])
         article_count = sum(counts.get(s, 0) for s in slugs)
-        label = (
-            f"{PILLAR_LABELS[pillar]} — {len(slugs)} tags, "
-            f"{article_count} articles"
-        )
+        label = f"{PILLAR_LABELS[pillar]} — {len(slugs)} tags, {article_count} articles"
         cards.append(
             f'<a href="#pillar-{pillar}" class="tag-pillar-card" '
             f'aria-label="{label}">'
             f'<p class="eyebrow">{PILLAR_LABELS[pillar]}</p>'
             f'<p class="tag-pillar-count"><strong>{len(slugs)} tags</strong> · '
-            f'{article_count} articles</p>'
-            f'<p>{PILLAR_DECKS[pillar]}</p>'
+            f"{article_count} articles</p>"
+            f"<p>{PILLAR_DECKS[pillar]}</p>"
             f"</a>"
         )
     return (
-        '<nav aria-label="Editorial pillars" class="tag-pillar-grid">'
-        + "".join(cards)
-        + "</nav>"
+        '<nav aria-label="Editorial pillars" class="tag-pillar-grid">' + "".join(cards) + "</nav>"
     )
 
 
@@ -189,11 +186,11 @@ def _render_featured_tags(taxonomy: dict, counts: collections.Counter[str]) -> s
     cards = []
     for slug, n in top:
         entry = taxonomy[slug]
-        label = f'{entry["name"]} — {n} articles'
+        label = f"{entry['name']} — {n} articles"
         cards.append(
             f'<a href="#tag-{slug}" class="tag-featured-card" '
             f'aria-label="{label}">'
-            f'<strong>{entry["name"]}</strong>'
+            f"<strong>{entry['name']}</strong>"
             f'<span class="meta">{n} articles</span>'
             f"</a>"
         )
@@ -218,17 +215,13 @@ def _render_tag_post_list(posts_for_tag: list[tuple[str, str, str]]) -> str:
         return ""
     items = []
     for title, iso_date, slug in posts_for_tag:
-        date_label = (
-            f'<time datetime="{iso_date}">{iso_date}</time>' if iso_date else ""
-        )
+        date_label = f'<time datetime="{iso_date}">{iso_date}</time>' if iso_date else ""
         items.append(f'<li><a href="/{slug}/">{title}</a> {date_label}</li>')
     n = len(posts_for_tag)
     return (
         f'<details class="tag-posts"><summary>'
         f"View {n} article{'s' if n != 1 else ''}"
-        f"</summary><ul>"
-        + "".join(items)
-        + "</ul></details>"
+        f"</summary><ul>" + "".join(items) + "</ul></details>"
     )
 
 
@@ -254,11 +247,9 @@ def _render_pillar_section(
         )
     return (
         f'<section id="pillar-{pillar}" class="tag-pillar-section">'
-        f'<h2>{PILLAR_LABELS[pillar]}</h2>'
+        f"<h2>{PILLAR_LABELS[pillar]}</h2>"
         f'<p class="deck">{PILLAR_DECKS[pillar]}</p>'
-        f'<ul class="tag-list">'
-        + "".join(items)
-        + "</ul></section>"
+        f'<ul class="tag-list">' + "".join(items) + "</ul></section>"
     )
 
 

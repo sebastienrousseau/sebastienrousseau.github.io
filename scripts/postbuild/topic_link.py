@@ -209,7 +209,9 @@ def main() -> None:
     # write) or `--dir _posts_build` (build copy).
     import argparse
 
-    parser = argparse.ArgumentParser(description="Inject topic-cluster cross-links into dated posts.")
+    parser = argparse.ArgumentParser(
+        description="Inject topic-cluster cross-links into dated posts."
+    )
     parser.add_argument(
         "--dir",
         required=True,

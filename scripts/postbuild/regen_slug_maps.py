@@ -103,9 +103,7 @@ def _articles_map_for_language(
     return out
 
 
-def _locale_stems_by_date(
-    lang_dir: Path, en_by_date: dict[str, list[str]]
-) -> dict[str, list[str]]:
+def _locale_stems_by_date(lang_dir: Path, en_by_date: dict[str, list[str]]) -> dict[str, list[str]]:
     """``{date: [locale stems]}`` for dates that also have an EN article.
 
     A locale file on a date with no English counterpart has nothing to pair

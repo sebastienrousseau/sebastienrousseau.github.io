@@ -40,7 +40,7 @@ def test_inject_word_count_skips_when_main_is_empty():
 
 def test_compute_word_count_strips_aside_blocks():
     """Asides (lead, related-cards) are not counted toward the article body."""
-    html = "<main><aside>ignore this aside content</aside>" "<p>real body words here</p></main>"
+    html = "<main><aside>ignore this aside content</aside><p>real body words here</p></main>"
     n = pb.compute_word_count(html)
     assert n == 4  # "real body words here"
 

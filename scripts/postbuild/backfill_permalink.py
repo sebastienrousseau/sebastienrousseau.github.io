@@ -32,9 +32,40 @@ BASE_URL = "https://sebastienrousseau.com"
 # The 34 active translation locales (dirs under _posts/). Kept in sync with
 # _lang_registry.py; a directory not in this set is treated as EN content.
 LOCALES = {
-    "ar", "bn", "cs", "de", "el", "es", "fa", "fil", "fr", "ha", "he", "hi",
-    "hu", "id", "it", "ja", "ko", "mr", "ms", "nl", "pl", "pt-br", "ro", "ru",
-    "sv", "ta", "te", "th", "tr", "uk", "vi", "yo", "zh-hans", "zh-hant",
+    "ar",
+    "bn",
+    "cs",
+    "de",
+    "el",
+    "es",
+    "fa",
+    "fil",
+    "fr",
+    "ha",
+    "he",
+    "hi",
+    "hu",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "mr",
+    "ms",
+    "nl",
+    "pl",
+    "pt-br",
+    "ro",
+    "ru",
+    "sv",
+    "ta",
+    "te",
+    "th",
+    "tr",
+    "uk",
+    "vi",
+    "yo",
+    "zh-hans",
+    "zh-hant",
 }
 
 
@@ -69,8 +100,8 @@ def _insert_permalink(text: str, permalink: str) -> str:
     """Insert the permalink line immediately after the opening ``---``."""
     newline = "\r\n" if text.startswith("---\r\n") else "\n"
     marker = f"---{newline}"
-    rest = text[len(marker):]
-    return f"{marker}permalink: \"{permalink}\"{newline}{rest}"
+    rest = text[len(marker) :]
+    return f'{marker}permalink: "{permalink}"{newline}{rest}'
 
 
 def backfill(root: Path) -> int:

@@ -30,6 +30,8 @@ LABELS_EN: dict[str, str] = {
     "Breadcrumb": "Breadcrumb",
 }
 _LABEL_CACHE: dict[str, dict[str, str]] = {}
+
+
 def _labels_for_lang(code: str) -> dict[str, str]:
     """Per-language label cache. Loads from ``labels.json`` and overlays
     a handful of extra keys ``LABELS_EN`` has but the JSON glossary
@@ -48,6 +50,8 @@ def _labels_for_lang(code: str) -> dict[str, str]:
         out.update(base)
     _LABEL_CACHE[code] = out
     return out
+
+
 def _detect_page_lang(html: str) -> str:
     """Resolve the page's ``<html lang>`` attribute to a registry
     language code. Tries the full lowercased BCP-47 tag first so
@@ -62,9 +66,15 @@ def _detect_page_lang(html: str) -> str:
     if tag in _lr._BY_CODE:
         return tag
     return tag.split("-", 1)[0]
+
+
 def _labels(html: str) -> dict[str, str]:
     return _labels_for_lang(_detect_page_lang(html))
+
+
 _STRINGS_CACHE: dict[str, dict[str, str]] = {}
+
+
 def _strings_for_lang(code: str) -> dict[str, str]:
     """Per-language UI-strings cache (``strings.json``). Returns {} for
     unknown codes so callers fall back to their EN literals."""
@@ -74,9 +84,13 @@ def _strings_for_lang(code: str) -> dict[str, str]:
         except _lr.LanguageError:
             _STRINGS_CACHE[code] = {}
     return _STRINGS_CACHE[code]
+
+
 def _all_active_non_en_langs() -> list[str]:
     """Return the code for every active non-EN language."""
     return [lg.code for lg in _lr.LANGUAGES if lg.active and lg.code != "en"]
+
+
 def _slug_maps_for(code: str) -> dict[str, dict[str, str]]:
     """Return the article + static slug maps (both directions) for ``code``."""
     s = _lr.load_slugs(code)
@@ -88,7 +102,11 @@ def _slug_maps_for(code: str) -> dict[str, dict[str, str]]:
         "statics_en_to_lang": statics,
         "statics_lang_to_en": {v: k for k, v in statics.items()},
     }
+
+
 _SLUG_MAPS_CACHE: dict[str, dict[str, dict[str, str]]] = {}
+
+
 def _slug_maps(code: str) -> dict[str, dict[str, str]]:
     if code not in _SLUG_MAPS_CACHE:
         _SLUG_MAPS_CACHE[code] = _slug_maps_for(code)

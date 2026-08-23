@@ -51,6 +51,7 @@ def _full_frontmatter() -> dict[str, str]:
 
 # --- check_frontmatter -----------------------------------------------------
 
+
 def test_frontmatter_complete_passes() -> None:
     assert check_voice.check_frontmatter(_full_frontmatter()) == []
 
@@ -67,6 +68,7 @@ def test_frontmatter_missing_keys_flagged() -> None:
 
 # --- check_filler ----------------------------------------------------------
 
+
 def test_filler_clean_body_passes() -> None:
     assert check_voice.check_filler("A clean, direct sentence.") == []
 
@@ -78,6 +80,7 @@ def test_filler_detects_banned_phrase_case_insensitive() -> None:
 
 
 # --- check_structure (EN) --------------------------------------------------
+
 
 def test_structure_good_body_passes() -> None:
     assert check_voice.check_structure(_GOOD_BODY, lang="en") == []
@@ -100,6 +103,7 @@ def test_structure_accepts_manual_lead_marker() -> None:
 
 # --- check_markdown_discipline ---------------------------------------------
 
+
 def test_markdown_single_h1_passes() -> None:
     assert check_voice.check_markdown_discipline("# Only One\n\nBody.\n") == []
 
@@ -115,6 +119,7 @@ def test_markdown_flags_broken_citation() -> None:
 
 
 # --- check_date_consistency ------------------------------------------------
+
 
 def _today() -> str:
     return _dt.datetime.now(_dt.UTC).strftime("%Y-%m-%d")

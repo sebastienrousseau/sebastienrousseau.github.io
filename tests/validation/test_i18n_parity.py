@@ -113,8 +113,7 @@ def check_language(lang: _lang_registry.Language) -> list[str]:
     for original, lower in zip(all_native, case_lower, strict=True):
         if lower in seen and seen[lower] != original:
             problems.append(
-                f"[{lang.code}] slug collision: {seen[lower]!r} vs {original!r} "
-                f"(case-insensitive)"
+                f"[{lang.code}] slug collision: {seen[lower]!r} vs {original!r} (case-insensitive)"
             )
         seen[lower] = original
 

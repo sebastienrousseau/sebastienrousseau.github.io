@@ -132,7 +132,11 @@ def test_full_build_nav_has_five_top_items_with_dropdowns() -> None:
     assert nav.count('<li class="has-sub">') == 4
     assert nav.count('class="ap-sub"') == 4
     for label in (
-        "About", "Articles", "Library", "Research", "Suite",
+        "About",
+        "Articles",
+        "Library",
+        "Research",
+        "Suite",
     ):
         assert f">{label}</a>" in nav
     # Each dropdown carries a disclosure button wired to its panel id.
@@ -168,8 +172,13 @@ def test_full_build_nav_has_five_top_items_with_dropdowns() -> None:
     # No nav link points at the /papers/ redirect page.
     assert "/papers/" not in nav
     # F-shape ordering: About leftmost, Suite rightmost.
-    assert nav.index(">About</a>") < nav.index(">Articles</a>") < nav.index(
-        ">Library</a>") < nav.index(">Research</a>") < nav.index(">Suite</a>")
+    assert (
+        nav.index(">About</a>")
+        < nav.index(">Articles</a>")
+        < nav.index(">Library</a>")
+        < nav.index(">Research</a>")
+        < nav.index(">Suite</a>")
+    )
     # No baked active marker — postbuild's inject_nav_active marks the
     # /iso20022-mcp/ sub-item on the final page.
     assert "aria-current" not in nav
@@ -232,8 +241,7 @@ def test_hero_terminal_replaces_hero_image() -> None:
     hero = body.split('<figure class="mcp-term">', 1)[1].split("</figure>", 1)[0]
     assert '<pre class="mcp-term-body">' in hero
     assert (
-        'claude mcp add iso20022 -- uvx --from &quot;iso20022-mcp[all]&quot; '
-        "iso20022-mcp" in hero
+        "claude mcp add iso20022 -- uvx --from &quot;iso20022-mcp[all]&quot; iso20022-mcp" in hero
     )
     assert "schema-valid pain.001.001.03 returned" in hero
     # Typed lines carry the ch-count timing classes documented in
@@ -276,9 +284,15 @@ def test_clients_grid_covers_stdio_and_remote_accurately() -> None:
     out = _run_build(_fake_shell())
     sec = out.split('id="mcp-clients"', 1)[1].split("</section>", 1)[0]
     for name in (
-        "Claude Code", "Claude Desktop", "Cursor", "Windsurf",
-        "VS Code + GitHub Copilot", "Google Gemini CLI",
-        "OpenAI Codex CLI", "OpenAI", "Microsoft Copilot Studio",
+        "Claude Code",
+        "Claude Desktop",
+        "Cursor",
+        "Windsurf",
+        "VS Code + GitHub Copilot",
+        "Google Gemini CLI",
+        "OpenAI Codex CLI",
+        "OpenAI",
+        "Microsoft Copilot Studio",
         "Zapier MCP",
     ):
         assert f"<h3>{name}</h3>" in sec
@@ -299,8 +313,14 @@ def test_clients_grid_covers_stdio_and_remote_accurately() -> None:
     # Every card that shows a config gets its own copy button wired to
     # that card's code element (7 stdio + the OpenAI Agents SDK snippet).
     for slug in (
-        "claude-code", "claude-desktop", "cursor", "windsurf",
-        "vscode", "gemini", "codex", "openai",
+        "claude-code",
+        "claude-desktop",
+        "cursor",
+        "windsurf",
+        "vscode",
+        "gemini",
+        "codex",
+        "openai",
     ):
         assert f'data-copy="#mcp-code-client-{slug}"' in sec
     assert sec.count("data-copy=") == 8
@@ -342,8 +362,13 @@ def test_schema_viewer_renders_captured_tools() -> None:
     # The canonical marker is CSS-generated; no hand-rolled icon span.
     assert "spk-ic" not in sec
     for tool in (
-        "search", "list_families", "list_servers", "describe",
-        "validate", "generate", "parse",
+        "search",
+        "list_families",
+        "list_servers",
+        "describe",
+        "validate",
+        "generate",
+        "parse",
     ):
         assert f'<code class="spk-mono">{tool}</code>' in sec
     # Input properties come from the live capture, not hand-written copy.
@@ -362,13 +387,16 @@ def test_committed_tool_schema_snapshot_is_sound() -> None:
     """The committed tools/list capture stays parseable and read-only."""
     import json
 
-    data = json.loads(
-        (_ROOT / "_data" / "mcp" / "tool_schemas.json").read_text(encoding="utf-8")
-    )
+    data = json.loads((_ROOT / "_data" / "mcp" / "tool_schemas.json").read_text(encoding="utf-8"))
     tools = data["tools"]
     assert [t["name"] for t in tools] == [
-        "search", "list_families", "list_servers", "describe",
-        "validate", "generate", "parse",
+        "search",
+        "list_families",
+        "list_servers",
+        "describe",
+        "validate",
+        "generate",
+        "parse",
     ]
     for t in tools:
         assert t["description"]
@@ -480,9 +508,14 @@ def test_regulators_section_cites_captured_tools_and_hedges_dora() -> None:
     assert sec.count('<div class="spk-path">') == 4
     # Tool names exactly as captured in _data/mcp/*.tools.json.
     for tool in (
-        "cite_rulebook", "list_rulebook_clauses", "get_cbpr_cutover_date",
-        "check_cbpr_readiness", "classify_address", "validate_address",
-        "repair_address", "validate_addresses",
+        "cite_rulebook",
+        "list_rulebook_clauses",
+        "get_cbpr_cutover_date",
+        "check_cbpr_readiness",
+        "classify_address",
+        "validate_address",
+        "repair_address",
+        "validate_addresses",
     ):
         assert f'<code class="spk-mono">{tool}</code>' in sec
     # Dates as the tools themselves state them.
@@ -505,9 +538,7 @@ def test_capability_strip_counts_match_committed_captures() -> None:
     # The published tool count is computed from the committed captures.
     data_dir = _ROOT / "_data" / "mcp"
     expected = len(
-        json.loads((data_dir / "tool_schemas.json").read_text(encoding="utf-8"))[
-            "tools"
-        ]
+        json.loads((data_dir / "tool_schemas.json").read_text(encoding="utf-8"))["tools"]
     )
     for f in sorted(data_dir.glob("*.tools.json")):
         expected += len(json.loads(f.read_text(encoding="utf-8"))["tools"])
@@ -539,15 +570,13 @@ def test_proof_strip_publishes_measured_timings() -> None:
 
     out = _run_build(_fake_shell())
     metrics = json.loads(
-        (_ROOT / "_data" / "mcp" / "verified_metrics.json").read_text(
-            encoding="utf-8"
-        )
+        (_ROOT / "_data" / "mcp" / "verified_metrics.json").read_text(encoding="utf-8")
     )
     tp = metrics["timed_proof"]
     sec = out.split('id="mcp-proof"', 1)[1].split("</section>", 1)[0]
     # The real measured numbers with their date, not a slogan.
-    assert f'{tp["cold_seconds"]}s' in sec
-    assert f'{tp["warm_seconds"]}s' in sec
+    assert f"{tp['cold_seconds']}s" in sec
+    assert f"{tp['warm_seconds']}s" in sec
     assert tp["date_human"] in sec
     assert "cold cache to validated pain.001" in sec
     assert "Method:" in sec and "Machine:" in sec
@@ -558,9 +587,7 @@ def test_prompts_render_committed_transcripts_verbatim() -> None:
 
     out = _run_build(_fake_shell())
     data = json.loads(
-        (_ROOT / "_data" / "mcp" / "hub_transcripts.json").read_text(
-            encoding="utf-8"
-        )
+        (_ROOT / "_data" / "mcp" / "hub_transcripts.json").read_text(encoding="utf-8")
     )
     sec = out.split('id="mcp-prompts"', 1)[1].split("</section>", 1)[0]
     assert sec.count('<article class="mcp-prompt">') == len(data["prompts"]) == 3
@@ -570,12 +597,14 @@ def test_prompts_render_committed_transcripts_verbatim() -> None:
         assert f'data-copy="#mcp-prompt-{p["id"]}"' in sec
         first_line = p["excerpt"].splitlines()[0]
         esc = (
-            first_line.replace("&", "&amp;").replace("<", "&lt;")
-            .replace(">", "&gt;").replace('"', "&quot;")
+            first_line.replace("&", "&amp;")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+            .replace('"', "&quot;")
         )
         assert esc in sec
-        assert f'tool: {p["tool"]}' in sec
-    assert f'captured {data["_meta"]["captured"]}' in sec
+        assert f"tool: {p['tool']}" in sec
+    assert f"captured {data['_meta']['captured']}" in sec
     # Real capabilities only: gateway generate, rulebook citation, sandbox.
     assert "run_sandbox_scenario" in sec
     assert "cite_rulebook" in sec
@@ -586,7 +615,8 @@ def test_sandbox_card_names_tools_and_links_docs_chapter() -> None:
     sec = out.split('id="mcp-sandbox"', 1)[1].split("</section>", 1)[0]
     # Tool names exactly as captured in reconcile-mcp.tools.json.
     for tool in (
-        "list_sandbox_scenarios", "load_sandbox_scenario",
+        "list_sandbox_scenarios",
+        "load_sandbox_scenario",
         "run_sandbox_scenario",
     ):
         assert f'<code class="spk-mono">{tool}</code>' in sec
@@ -600,9 +630,7 @@ def test_adoption_strip_matches_verified_metrics() -> None:
 
     out = _run_build(_fake_shell())
     metrics = json.loads(
-        (_ROOT / "_data" / "mcp" / "verified_metrics.json").read_text(
-            encoding="utf-8"
-        )
+        (_ROOT / "_data" / "mcp" / "verified_metrics.json").read_text(encoding="utf-8")
     )
     ad = metrics["adoption"]
     sec = out.split('id="mcp-adoption"', 1)[1].split("</section>", 1)[0]
@@ -680,8 +708,8 @@ def test_swap_into_shell_body_with_backslashes_lands_verbatim() -> None:
 
 def test_unescape_head_metas_is_head_bounded() -> None:
     html = (
-        "<head>&lt;meta name=\"a\" content=\"b\"&gt;</head>"
-        "<body><p>quoted markup: &lt;meta name=\"c\"&gt;</p></body>"
+        '<head>&lt;meta name="a" content="b"&gt;</head>'
+        '<body><p>quoted markup: &lt;meta name="c"&gt;</p></body>'
     )
     out = cs._unescape_head_metas(html)
     assert '<meta name="a" content="b">' in out

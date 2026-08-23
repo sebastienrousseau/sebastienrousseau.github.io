@@ -14,13 +14,13 @@ import build_listings as bl
 
 # --- _esc ------------------------------------------------------------------
 
+
 def test_esc_escapes_html_metacharacters() -> None:
-    assert bl._esc("a & b < c > d \" e ' f") == (
-        "a &amp; b &lt; c &gt; d &quot; e &#x27; f"
-    )
+    assert bl._esc("a & b < c > d \" e ' f") == ("a &amp; b &lt; c &gt; d &quot; e &#x27; f")
 
 
 # --- _alias_map ------------------------------------------------------------
+
 
 def test_alias_map_maps_slug_and_aliases_lowercased() -> None:
     taxonomy = {
@@ -29,7 +29,7 @@ def test_alias_map_maps_slug_and_aliases_lowercased() -> None:
     }
     amap = bl._alias_map(taxonomy)
     assert amap["agentic-ai"] == "agentic-ai"
-    assert amap["agentic ai"] == "agentic-ai"   # alias, lowercased
+    assert amap["agentic ai"] == "agentic-ai"  # alias, lowercased
     assert amap["agents"] == "agentic-ai"
     assert amap["iso-20022"] == "iso-20022"
 
@@ -56,6 +56,7 @@ def test_post_pillars_empty_when_no_tags_or_unknown() -> None:
 
 # --- _post_card_fields -----------------------------------------------------
 
+
 def _write(tmp: Path, name: str, body: str) -> Path:
     p = tmp / name
     p.write_text(body, encoding="utf-8")
@@ -79,7 +80,7 @@ def test_post_card_fields_extracts_frontmatter(tmp_path: Path) -> None:
     assert title == "An Example Title"
     assert iso == "2026-06-30"
     assert slug == "2026-06-30-example-article"
-    assert excerpt == "The card excerpt."          # excerpt wins over description
+    assert excerpt == "The card excerpt."  # excerpt wins over description
     assert pillars == ["ai"]
     assert banner == "https://cloudcdn.pro/stocks/images/x-1920.webp"
     assert banner_alt == "Banner alt text"
@@ -94,8 +95,8 @@ def test_post_card_fields_excerpt_falls_back_to_description(tmp_path: Path) -> N
     out = bl._post_card_fields(md, {}, {})
     assert out is not None
     assert out[3] == "Only a description."
-    assert out[5] == bl._DEFAULT_BANNER     # default banner when none set
-    assert out[6] == "T"                    # banner_alt defaults to title
+    assert out[5] == bl._DEFAULT_BANNER  # default banner when none set
+    assert out[6] == "T"  # banner_alt defaults to title
 
 
 def test_post_card_fields_returns_none_for_non_dated(tmp_path: Path) -> None:
@@ -105,21 +106,22 @@ def test_post_card_fields_returns_none_for_non_dated(tmp_path: Path) -> None:
 
 # --- _render_pagination ----------------------------------------------------
 
+
 def test_pagination_single_page_is_empty() -> None:
     assert bl._render_pagination(1, 1, "/articles") == ""
 
 
 def test_pagination_first_page_has_next_not_prev() -> None:
     html = bl._render_pagination(1, 3, "/articles")
-    assert "rel=\"prev\"" not in html
-    assert "rel=\"next\"" in html
+    assert 'rel="prev"' not in html
+    assert 'rel="next"' in html
     assert "/articles/page/2/" in html
     assert "/articles/page/3/" in html
-    assert 'aria-current="page">1<' in html   # page 1 is current
+    assert 'aria-current="page">1<' in html  # page 1 is current
 
 
 def test_pagination_middle_page_has_prev_and_next() -> None:
     html = bl._render_pagination(2, 3, "/articles")
-    assert 'href="/articles/" rel="prev"' in html   # page 1 → base/
+    assert 'href="/articles/" rel="prev"' in html  # page 1 → base/
     assert "/articles/page/3/" in html
     assert 'aria-current="page">2<' in html

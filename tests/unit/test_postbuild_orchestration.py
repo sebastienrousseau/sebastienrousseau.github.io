@@ -73,7 +73,6 @@ def fake_public(tmp_path: Path, monkeypatch):
     import postbuild_lib.schemas as schemas
     import postbuild_lib.seo as seo
 
-
     monkeypatch.setattr(af, "PUBLIC", pub)
     monkeypatch.setattr(schemas, "PUBLIC", pub)
     monkeypatch.setattr(seo, "PUBLIC", pub)
@@ -209,7 +208,7 @@ def test_scrub_localhost_urls_no_op_when_clean():
 
 
 def test_card_title_url_picks_longest_text_link():
-    body = '<a class="newsroom-card-media" href="/foo/"></a>' '<a href="/foo/">A Long Headline</a>'
+    body = '<a class="newsroom-card-media" href="/foo/"></a><a href="/foo/">A Long Headline</a>'
     pair = _pt._card_title_url(body)
     assert pair == ("A Long Headline", _pt.SITE + "/foo/")
 
@@ -1065,9 +1064,7 @@ def test_main_runs_against_synthetic_tree(fake_public: Path, capsys):
     assert "failed 0" in captured.out
 
 
-def test_main_contains_per_page_failures_and_exits_nonzero(
-    fake_public: Path, capsys, monkeypatch
-):
+def test_main_contains_per_page_failures_and_exits_nonzero(fake_public: Path, capsys, monkeypatch):
     """One malformed page must not abort the rest of the tree: main()
     processes every page, names the failure on stderr, and exits 1."""
     good = fake_public / "index.html"

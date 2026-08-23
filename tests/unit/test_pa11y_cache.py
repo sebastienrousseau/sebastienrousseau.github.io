@@ -55,18 +55,18 @@ def test_compute_page_hash_normalises_csp_bundle_filename(tmp_path: Path) -> Non
     so a layout-only PR doesn't bust the cache for every page."""
     a = tmp_path / "a.html"
     a.write_text(
-        '<html><head>'
+        "<html><head>"
         '<link rel="stylesheet" href="/_csp/97f63c950cabc48b.css">'
         '<script src="/_csp/3ae64e6558e84d20.js"></script>'
-        '</head><body><h1>Hi</h1></body></html>',
+        "</head><body><h1>Hi</h1></body></html>",
         encoding="utf-8",
     )
     b = tmp_path / "b.html"
     b.write_text(
-        '<html><head>'
+        "<html><head>"
         '<link rel="stylesheet" href="/_csp/46e68e1191726dec.css">'
         '<script src="/_csp/8f94793606401e0a.js"></script>'
-        '</head><body><h1>Hi</h1></body></html>',
+        "</head><body><h1>Hi</h1></body></html>",
         encoding="utf-8",
     )
     assert pc.compute_page_hash(a) == pc.compute_page_hash(b)
@@ -78,18 +78,18 @@ def test_compute_page_hash_normalises_fingerprinted_assets(tmp_path: Path) -> No
     otherwise every layout-touching commit busts the whole cache."""
     a = tmp_path / "a.html"
     a.write_text(
-        '<html><head>'
+        "<html><head>"
         '<script src="/main.799e2fd8.js"></script>'
         '<link rel="stylesheet" href="/main.799e2fd8.css">'
-        '</head><body><h1>Hi</h1></body></html>',
+        "</head><body><h1>Hi</h1></body></html>",
         encoding="utf-8",
     )
     b = tmp_path / "b.html"
     b.write_text(
-        '<html><head>'
+        "<html><head>"
         '<script src="/main.f085a635.js"></script>'
         '<link rel="stylesheet" href="/main.f085a635.css">'
-        '</head><body><h1>Hi</h1></body></html>',
+        "</head><body><h1>Hi</h1></body></html>",
         encoding="utf-8",
     )
     assert pc.compute_page_hash(a) == pc.compute_page_hash(b)

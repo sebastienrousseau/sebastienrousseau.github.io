@@ -33,6 +33,8 @@ def _relativize(url: str) -> str:
     if url.startswith(_BASE_URL):
         return url[len(_BASE_URL) :] or "/"
     return url
+
+
 def _trail_from_node(node: object) -> list[tuple[str, str]]:
     """Extract a 3-level ``(name, root-relative href)`` trail from one
     JSON-LD node; empty list when the node isn't a well-formed
@@ -51,6 +53,8 @@ def _trail_from_node(node: object) -> list[tuple[str, str]]:
             return []
         items.append((name, _relativize(url)))
     return items
+
+
 def _breadcrumb_items(html: str) -> list[tuple[str, str]]:
     """Return the article's ``BreadcrumbList`` as ``[(name, href), …]``
     with hrefs made root-relative. Empty list when no 3-level trail is
@@ -68,6 +72,8 @@ def _breadcrumb_items(html: str) -> list[tuple[str, str]]:
             if items:
                 return items
     return []
+
+
 def inject_breadcrumbs(html: str) -> str:
     """Render a visible breadcrumb trail mirroring the page's 3-level
     ``BreadcrumbList`` JSON-LD (Home > Articles > Title), inserted
@@ -88,10 +94,14 @@ def inject_breadcrumbs(html: str) -> str:
         parts.append(f'<li><a href="{_esc(url, quote=True)}"{current}>{_esc(name)}</a></li>')
     nav = f'<nav class="crumbs" aria-label="{aria}"><ol>{"".join(parts)}</ol></nav>'
     return html.replace('<section class="ap-hero">', f'{nav}<section class="ap-hero">', 1)
+
+
 _HEADING_ANCHOR_RE = re.compile(
     r'\s*<a\s+class="heading-anchor"[\s\S]*?</a>',
     re.IGNORECASE,
 )
+
+
 def inject_anchor_links_and_toc(html: str) -> str:
     """Add id="…" + a click-to-copy anchor link icon to every H2/H3 inside
     <main>. If the post has ≥5 H2 headings, build a table-of-contents card
@@ -152,7 +162,7 @@ def inject_anchor_links_and_toc(html: str) -> str:
         return (
             f'<{level} id="{slug}">{clean_inner} '
             f'<a class="heading-anchor" href="#{slug}" aria-label="{labels["Link to"]} {text}">#</a>'
-            f'</{level}>'
+            f"</{level}>"
         )
 
     new_body = _HEADING_RE.sub(patch_heading, body)
@@ -161,10 +171,12 @@ def inject_anchor_links_and_toc(html: str) -> str:
         items = "".join(f'<li><a href="#{slug}">{text}</a></li>' for slug, text in h2_titles)
         toc_html = (
             f'<aside class="article-toc" aria-label="{labels["Table of contents"]}">'
-            f'<h2>{labels["Contents"]}</h2>'
-            f'<ol>{items}</ol></aside>'
+            f"<h2>{labels['Contents']}</h2>"
+            f"<ol>{items}</ol></aside>"
         )
     return html[: m.start()] + pre + toc_html + new_body + post + html[m.end() :]
+
+
 def build_post_nav_index(
     pages: list[Path],
 ) -> dict[str, tuple[tuple[str, str] | None, tuple[str, str] | None]]:
@@ -198,6 +210,8 @@ def build_post_nav_index(
         next_e = (dated[i + 1][1], dated[i + 1][2]) if i < len(dated) - 1 else None
         out[entry[1]] = (prev_e, next_e)
     return out
+
+
 def _nav_target_for_en_page(top: str) -> str:
     """Map an EN top-level page slug to its nav-link href.
 
@@ -222,12 +236,16 @@ def _nav_target_for_en_page(top: str) -> str:
     if _DATED_SLUG_RE.match(top):
         return "/articles/index.html"
     return f"/{top}/index.html"
+
+
 def _nav_target_for_lang_page(lang: str, top: str) -> str:
     """Map a localised top-level page slug to its nav-link href."""
     articles_slug = _slug_maps(lang)["statics_en_to_lang"].get("articles", "articles")
     if _DATED_SLUG_RE.match(top):
         return f"/{lang}/{articles_slug}/index.html"
     return f"/{lang}/{top}/index.html"
+
+
 def _nav_active_target(page: Path) -> str | None:
     """Return the nav-link href that should be marked active for this
     page, or ``None`` if there's no obvious match.
@@ -248,6 +266,8 @@ def _nav_active_target(page: Path) -> str | None:
             return None
         return _nav_target_for_lang_page(lang, top)
     return None
+
+
 def inject_nav_active(html: str, page: Path) -> str:
     """Add ``aria-current="page"`` + ``class="active"`` to the nav link
     matching this page. For home pages (/, /<lang>/), the brand link
@@ -278,6 +298,8 @@ def inject_nav_active(html: str, page: Path) -> str:
     new_body = pat.sub(repl, header_clean, count=1)
     open_tag = header_m.group(0)[: header_m.group(0).index(">") + 1]
     return html.replace(header_m.group(0), open_tag + new_body + "</header>", 1)
+
+
 def inject_prev_next_nav(
     html: str,
     slug: str,

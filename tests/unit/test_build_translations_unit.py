@@ -428,22 +428,22 @@ def test_strip_postbuild_furniture_removes_en_ws2_components():
     Each gets stripped so postbuild re-runs with locale-correct
     labels.json strings on the localized shell."""
     shell = (
-        '<body>'
+        "<body>"
         '<section class="ap-hero">'
         '<p class="eyebrow">AI</p>'
-        '<h1>T</h1>'
+        "<h1>T</h1>"
         '<p class="sub deck">Standfirst.</p>'
-        '</section>'
+        "</section>"
         '<main id="main"><div class="wrap">'
         '<nav class="share-rail share-rail--sticky" aria-label="Share">'
         '<ul><li><a href="https://twitter.com/intent/tweet?text=...">X</a></li></ul>'
-        '</nav>'
-        '<p>body</p>'
+        "</nav>"
+        "<p>body</p>"
         '<p class="byline-strap" aria-label="Byline">'
         '<a href="/about/index.html">SEBASTIEN ROUSSEAU</a>'
         ' <span class="sep">·</span> <span>FOUNDER · ENGINEER</span></p>'
-        '</div></main>'
-        '</body>'
+        "</div></main>"
+        "</body>"
     )
     out = _article._strip_postbuild_furniture(shell)
     assert 'class="eyebrow"' not in out

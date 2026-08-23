@@ -45,9 +45,7 @@ def test_mise_tracks_the_same_policy_as_ci() -> None:
     mise = (ROOT / "mise.toml").read_text(encoding="utf-8")
     m = re.search(r'^"cargo:ssg"\s*=\s*"([^"]+)"', mise, re.MULTILINE)
     assert m, "mise.toml must declare cargo:ssg so a global mise config cannot shadow it"
-    assert m.group(1) == _ci_pin(), (
-        f"mise.toml tracks ssg {m.group(1)} but ci.yml says {_ci_pin()}"
-    )
+    assert m.group(1) == _ci_pin(), f"mise.toml tracks ssg {m.group(1)} but ci.yml says {_ci_pin()}"
 
 
 # A version number is *binding* when its line reads as an instruction to
@@ -82,6 +80,4 @@ def test_docs_agree_with_the_ci_pin(relpath: str) -> None:
     pin = _ci_pin()
     text = (ROOT / relpath).read_text(encoding="utf-8")
     drift = _binding_versions(text) - {pin}
-    assert not drift, (
-        f"{relpath} states ssg {sorted(drift)} as the pin; ci.yml pins {pin}"
-    )
+    assert not drift, f"{relpath} states ssg {sorted(drift)} as the pin; ci.yml pins {pin}"

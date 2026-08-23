@@ -87,6 +87,9 @@ jobs:
       - name: Lint (ruff)
         run: ruff check scripts/ tests/
 
+      - name: Format (ruff format)
+        run: ruff format --check scripts/ tests/
+
       - name: Type check (mypy strict tier)
         # Strict mypy over the strict-clean module tier; ratchets outward as
         # modules are typed. See scripts/typecheck.sh + improvement-plan Phase 1.2.

@@ -98,15 +98,9 @@ _ICONS = {
         '2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h8"/>'
     ),
     # shield-check: the signed attestation
-    "slsa": (
-        '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>'
-        '<path d="m9 12 2 2 4-4"/>'
-    ),
+    "slsa": ('<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>'),
     # pen: the signature on every article
-    "sign": (
-        '<path d="M12 20h9"/>'
-        '<path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/>'
-    ),
+    "sign": ('<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/>'),
     # gauge: the weekly score
     "score": (
         '<circle cx="12" cy="12" r="10"/><path d="m16 8-4.5 4.5"/>'

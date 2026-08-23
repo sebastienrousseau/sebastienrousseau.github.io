@@ -88,19 +88,19 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
     _h = _hub_strings.get(st.LANG_CODE, _hub_strings["fr"])
     feat_block = (
         f'<header class="newsroom-section-head"><p class="newsroom-kicker">{_h["featuredKicker"]}</p>'
-        f'<h2>{_h["featuredHeading"]}</h2></header>'
+        f"<h2>{_h['featuredHeading']}</h2></header>"
         '<article class="newsroom-featured">'
         f'<a class="newsroom-featured-media" href="{feat_url}" title="{_html.escape(featured["title"], quote=True)}">'
         f'<img alt="{_html.escape(featured["banner_alt"], quote=True)}" '
         f'src="{featured["banner"]}" loading="eager" fetchpriority="high" '
         'decoding="async" width="800" height="800" />'
-        '</a>'
+        "</a>"
         '<div class="newsroom-featured-body">'
         f'<h3><a href="{feat_url}" title="{_html.escape(featured["title"], quote=True)}">{_html.escape(featured["title"])}</a></h3>'
-        f'<p>{_html.escape(featured["description"])}</p>'
+        f"<p>{_html.escape(featured['description'])}</p>"
         f'<p><a class="pill ghost" href="{feat_url}" title="{_html.escape(featured["title"], quote=True)}">{_h["readFull"]}</a></p>'
-        '</div>'
-        '</article>'
+        "</div>"
+        "</article>"
     )
 
     cards: list[str] = []
@@ -110,19 +110,19 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
             '<article class="newsroom-card">'
             f'<a class="newsroom-card-media" href="{url}" title="{_html.escape(e["title"], quote=True)}">'
             f'<img alt="{_html.escape(e["banner_alt"], quote=True)}" src="{e["banner"]}" loading="lazy" decoding="async" width="600" height="600" />'
-            '</a>'
+            "</a>"
             '<div class="newsroom-card-body">'
             f'<h3><a href="{url}" title="{_html.escape(e["title"], quote=True)}">{_html.escape(e["title"])}</a></h3>'
             f'<p class="newsroom-meta"><time datetime="{e["slug"][:10]}">{e["slug"][:10]}</time> · Sebastien Rousseau</p>'
             f'<p class="newsroom-excerpt">{_html.escape(e["description"])}</p>'
-            '</div>'
-            '</article>'
+            "</div>"
+            "</article>"
         )
 
     archive_block = (
         (
             f'<header class="newsroom-section-head"><p class="newsroom-kicker">{_h["archiveKicker"]}</p>'
-            f'<h2>{_h["archiveHeading"]}</h2></header>'
+            f"<h2>{_h['archiveHeading']}</h2></header>"
             '<div class="newsroom-grid">' + "".join(cards) + "</div>"
         )
         if cards
@@ -133,7 +133,7 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
     shell = _NEWSROOM_RE.sub(body, shell, count=1)
     # Localise hero H1 + subtitle on the articles hub.
     shell = _HERO_RE.sub(
-        rf'\g<1>{_html.escape(_h["heroH1"])}\g<2>{_html.escape(_h["heroSub"])}\g<3>',
+        rf"\g<1>{_html.escape(_h['heroH1'])}\g<2>{_html.escape(_h['heroSub'])}\g<3>",
         shell,
         count=1,
     )
@@ -360,12 +360,10 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
             "àti ìgbani-nímọ̀ràn ọjà fún àwọn iṣẹ́ ìnáwó."
         ),
         "zh-hans": (
-            "以应用 AI、支付与抗量子安全塑造银行业的未来。面向金融服务的研究、"
-            "开源库与产品咨询。"
+            "以应用 AI、支付与抗量子安全塑造银行业的未来。面向金融服务的研究、开源库与产品咨询。"
         ),
         "zh-hant": (
-            "以應用 AI、支付與抗量子安全塑造銀行業的未來。面向金融服務的研究、"
-            "開源庫與產品諮詢。"
+            "以應用 AI、支付與抗量子安全塑造銀行業的未來。面向金融服務的研究、開源庫與產品諮詢。"
         ),
     }
     title = _home_titles.get(st.LANG_CODE, _en_home_title)
@@ -685,7 +683,7 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:  # noqa: C901 
         f'<nav aria-label="Fil d\'Ariane" class="topic-breadcrumb">'
         f'<a href="/{st.LANG_CODE}/">Accueil</a> &middot; '
         f'<a href="/{st.LANG_CODE}/{st.STATIC_SLUG_FR.get("topics", "topics")}/index.html">Sujets</a> &middot; '
-        f'<span>{_html.escape(title)}</span></nav>',
+        f"<span>{_html.escape(title)}</span></nav>",
         shell,
         count=1,
     )

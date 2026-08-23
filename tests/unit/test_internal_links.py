@@ -65,7 +65,14 @@ def _anchors(html: str) -> list[tuple[str, str]]:
 
 
 def test_ranking_prefers_more_shared_tags_then_recency() -> None:
-    order = [a["stem"] for a in rank_targets({"dora", "banking"}, CORPUS, "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026")]
+    order = [
+        a["stem"]
+        for a in rank_targets(
+            {"dora", "banking"},
+            CORPUS,
+            "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026",
+        )
+    ]
     # 2-tag matches first, newest of those first.
     assert order[0] == "2026-08-03-cra-reporting"
     assert order[1] == "2023-11-12-old-post"
@@ -121,20 +128,32 @@ def test_link_count_is_capped() -> None:
 
 
 def test_contextual_linking_is_idempotent() -> None:
-    html = _page("<p>DORA already asked for more than a document here.</p><p>ISO 20022 matters.</p>")
+    html = _page(
+        "<p>DORA already asked for more than a document here.</p><p>ISO 20022 matters.</p>"
+    )
     once = inject_contextual_links(PAGE, html, CORPUS, TAXONOMY, public=PUBLIC)
     assert inject_contextual_links(PAGE, once, CORPUS, TAXONOMY, public=PUBLIC) == once
 
 
 def test_locale_pages_are_left_alone() -> None:
     html = _page("<p>DORA already asked for more here.</p>", lang="fr-FR")
-    page = PUBLIC / "fr" / "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026" / "index.html"
+    page = (
+        PUBLIC
+        / "fr"
+        / "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026"
+        / "index.html"
+    )
     assert inject_contextual_links(page, html, CORPUS, TAXONOMY, public=PUBLIC) == html
 
 
 def test_non_article_pages_are_left_alone() -> None:
     html = _page("<p>DORA already asked for more here.</p>")
-    assert inject_contextual_links(PUBLIC / "about" / "index.html", html, CORPUS, TAXONOMY, public=PUBLIC) == html
+    assert (
+        inject_contextual_links(
+            PUBLIC / "about" / "index.html", html, CORPUS, TAXONOMY, public=PUBLIC
+        )
+        == html
+    )
 
 
 def test_word_boundaries_are_respected() -> None:
@@ -190,8 +209,14 @@ def test_cluster_block_is_a_labelled_nav_landmark() -> None:
             '<a href="https://sebastienrousseau.com/2026-08-03-slug/">x</a>',
             '<a href="https://sebastienrousseau.com/2026-08-03-slug/">x</a>',
         ),
-        ('<a href="https://example.com/2026-08-03-slug">x</a>', '<a href="https://example.com/2026-08-03-slug">x</a>'),
-        ('<a href="https://sebastienrousseau.com/about">x</a>', '<a href="https://sebastienrousseau.com/about">x</a>'),
+        (
+            '<a href="https://example.com/2026-08-03-slug">x</a>',
+            '<a href="https://example.com/2026-08-03-slug">x</a>',
+        ),
+        (
+            '<a href="https://sebastienrousseau.com/about">x</a>',
+            '<a href="https://sebastienrousseau.com/about">x</a>',
+        ),
     ],
 )
 def test_absolute_self_links_get_the_canonical_trailing_slash(raw: str, expected: str) -> None:
@@ -246,9 +271,7 @@ def test_posts_without_frontmatter_are_skipped(tmp_path: Path) -> None:
     posts = tmp_path / "_posts"
     posts.mkdir()
     (posts / "2026-01-01-no-frontmatter.md").write_text("# Just a heading", encoding="utf-8")
-    (posts / "2026-01-02-no-tags.md").write_text(
-        '---\ntitle: "T"\n---\nbody', encoding="utf-8"
-    )
+    (posts / "2026-01-02-no-tags.md").write_text('---\ntitle: "T"\n---\nbody', encoding="utf-8")
     (posts / "not-dated.md").write_text('---\ntitle: "T"\ntags: "dora"\n---\n', encoding="utf-8")
     (posts / "2026-01-03-good.md").write_text(
         '---\ntitle: "Good"\ntags: "DORA"\n---\nbody', encoding="utf-8"
@@ -267,7 +290,10 @@ def test_unparseable_page_path_is_ignored() -> None:
 
 def test_bare_public_root_is_not_an_article() -> None:
     html = _page("<p>DORA already asked for more here.</p>")
-    assert inject_contextual_links(PUBLIC / "index.html", html, CORPUS, TAXONOMY, public=PUBLIC) == html
+    assert (
+        inject_contextual_links(PUBLIC / "index.html", html, CORPUS, TAXONOMY, public=PUBLIC)
+        == html
+    )
 
 
 def test_article_absent_from_the_corpus_is_skipped() -> None:
@@ -310,7 +336,9 @@ def test_locale_url_uses_the_slug_map(monkeypatch: pytest.MonkeyPatch) -> None:
     from postbuild_lib import internal_links as il
 
     monkeypatch.setattr(
-        il, "_slug_maps", lambda _c: {"articles_en_to_lang": {"2026-08-03-cra-reporting": "fr-slug"}}
+        il,
+        "_slug_maps",
+        lambda _c: {"articles_en_to_lang": {"2026-08-03-cra-reporting": "fr-slug"}},
     )
     assert il._localised_url("2026-08-03-cra-reporting", "fr") == "/fr/fr-slug/"
 
@@ -362,13 +390,16 @@ def test_locale_pages_get_a_cluster_block(monkeypatch: pytest.MonkeyPatch) -> No
     from postbuild_lib import internal_links as il
 
     monkeypatch.setattr(
-        il, "_slug_maps",
+        il,
+        "_slug_maps",
         lambda _c: {
             "articles_en_to_lang": {a["stem"]: a["stem"] + "-fr" for a in CORPUS},
             "articles_lang_to_en": {a["stem"] + "-fr": a["stem"] for a in CORPUS},
         },
     )
-    monkeypatch.setattr(il, "locale_titles", lambda _l: {a["stem"]: "Titre " + a["title"] for a in CORPUS})
+    monkeypatch.setattr(
+        il, "locale_titles", lambda _l: {a["stem"]: "Titre " + a["title"] for a in CORPUS}
+    )
     monkeypatch.setattr(il, "cluster_heading", lambda _l: "Articles connexes")
 
     page = PUBLIC / "fr" / (PAGE.parent.name + "-fr") / "index.html"
@@ -382,7 +413,8 @@ def test_locale_block_links_locale_urls(monkeypatch: pytest.MonkeyPatch) -> None
     from postbuild_lib import internal_links as il
 
     monkeypatch.setattr(
-        il, "_slug_maps",
+        il,
+        "_slug_maps",
         lambda _c: {
             "articles_en_to_lang": {a["stem"]: a["stem"] + "-fr" for a in CORPUS},
             "articles_lang_to_en": {a["stem"] + "-fr": a["stem"] for a in CORPUS},
@@ -406,7 +438,8 @@ def test_untranslated_articles_are_omitted_not_linked_in_english(
     from postbuild_lib import internal_links as il
 
     monkeypatch.setattr(
-        il, "_slug_maps",
+        il,
+        "_slug_maps",
         lambda _c: {
             "articles_en_to_lang": {a["stem"]: a["stem"] + "-fr" for a in CORPUS},
             "articles_lang_to_en": {a["stem"] + "-fr": a["stem"] for a in CORPUS},
@@ -428,7 +461,8 @@ def test_locale_block_is_omitted_when_nothing_is_translated(
     from postbuild_lib import internal_links as il
 
     monkeypatch.setattr(
-        il, "_slug_maps",
+        il,
+        "_slug_maps",
         lambda _c: {
             "articles_en_to_lang": {a["stem"]: a["stem"] + "-fr" for a in CORPUS},
             "articles_lang_to_en": {a["stem"] + "-fr": a["stem"] for a in CORPUS},
@@ -473,7 +507,8 @@ def test_locale_titles_skip_articles_with_no_source_file(
 
     il._LOCALE_TITLES.pop("zy", None)
     monkeypatch.setattr(
-        il, "_slug_maps",
+        il,
+        "_slug_maps",
         lambda _c: {"articles_en_to_lang": {"2026-01-01-absent": "2026-01-01-absent-zy"}},
     )
     assert il.locale_titles("zy") == {}

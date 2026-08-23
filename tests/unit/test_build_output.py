@@ -72,18 +72,18 @@ PAGE_IDS = [_rel(p) for p in _PAGES]
 @pytest.mark.parametrize("page", _PAGES, ids=PAGE_IDS)
 def test_page_has_html_lang(page: Path):
     html = page.read_text(encoding="utf-8", errors="ignore")
-    assert re.search(
-        r"<html\b[^>]*\blang=", html, re.IGNORECASE
-    ), f"{_rel(page)}: <html> missing lang attribute"
+    assert re.search(r"<html\b[^>]*\blang=", html, re.IGNORECASE), (
+        f"{_rel(page)}: <html> missing lang attribute"
+    )
 
 
 @SKIP_IF_NO_BUILD
 @pytest.mark.parametrize("page", _PAGES, ids=PAGE_IDS)
 def test_page_has_title(page: Path):
     html = page.read_text(encoding="utf-8", errors="ignore")
-    assert re.search(
-        r"<title>[^<]+</title>", html, re.IGNORECASE
-    ), f"{_rel(page)}: <title> missing or empty"
+    assert re.search(r"<title>[^<]+</title>", html, re.IGNORECASE), (
+        f"{_rel(page)}: <title> missing or empty"
+    )
 
 
 @SKIP_IF_NO_BUILD
@@ -138,9 +138,9 @@ def test_page_has_main_js_reference(page: Path):
     # pages plus the site sections include it.
     if not re.search(r"<main\b", html, re.IGNORECASE):
         pytest.skip("page has no <main> — main.js bundle not expected")
-    assert re.search(
-        r'src=["\']?/main\.[a-f0-9]+\.js', html, re.IGNORECASE
-    ), f"{_rel(page)}: fingerprinted /main.<hash>.js reference missing"
+    assert re.search(r'src=["\']?/main\.[a-f0-9]+\.js', html, re.IGNORECASE), (
+        f"{_rel(page)}: fingerprinted /main.<hash>.js reference missing"
+    )
 
 
 @SKIP_IF_NO_BUILD
@@ -157,9 +157,9 @@ def test_page_has_no_localhost_url(page: Path):
 @pytest.mark.parametrize("page", _PAGES, ids=PAGE_IDS)
 def test_page_no_double_encoded_ampersand(page: Path):
     html = page.read_text(encoding="utf-8", errors="ignore")
-    assert (
-        "&amp;amp;" not in html
-    ), f"{_rel(page)}: &amp;amp; survived (XML/HTML escape pass missed it)"
+    assert "&amp;amp;" not in html, (
+        f"{_rel(page)}: &amp;amp; survived (XML/HTML escape pass missed it)"
+    )
 
 
 _HTML_COMMENT_RE = re.compile(r"<!--[\s\S]*?-->")
@@ -184,7 +184,7 @@ def test_page_inline_jsonld_is_valid_json(page: Path):
         try:
             json.loads(body)
         except json.JSONDecodeError as exc:
-            pytest.fail(f"{_rel(page)}: inline JSON-LD invalid — {exc}: " f"{body[:100]}...")
+            pytest.fail(f"{_rel(page)}: inline JSON-LD invalid — {exc}: {body[:100]}...")
 
 
 # ---------------------------------------------------------------------------

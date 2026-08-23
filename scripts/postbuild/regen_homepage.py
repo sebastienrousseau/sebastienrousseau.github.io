@@ -274,6 +274,7 @@ def _collect_top_six() -> list[tuple[str, int, int, int, dict[str, str]]]:
 
 def main() -> int:
     import argparse
+
     parser = argparse.ArgumentParser(description="Regenerate homepage newsroom grid.")
     parser.add_argument("--dir", default=None, help="Custom posts directory")
     args = parser.parse_args()
@@ -315,4 +316,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-

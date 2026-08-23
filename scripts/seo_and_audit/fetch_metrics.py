@@ -98,9 +98,7 @@ def _crates_downloads_all() -> int:
     uid = (user or {}).get("user", {}).get("id")
     if not uid:
         return 0
-    data = _http_get_json(
-        f"https://crates.io/api/v1/crates?user_id={uid}&per_page=100"
-    )
+    data = _http_get_json(f"https://crates.io/api/v1/crates?user_id={uid}&per_page=100")
     if not data:
         return 0
     return sum(int(c.get("downloads") or 0) for c in data.get("crates", []))
@@ -109,8 +107,7 @@ def _crates_downloads_all() -> int:
 def _github_repos() -> tuple[int, int]:
     """Sum stars + forks across the user's repos. (0, 0) on failure."""
     data = _http_get_json(
-        f"https://api.github.com/users/{GITHUB_USER}/repos"
-        f"?per_page=100&type=owner&sort=updated"
+        f"https://api.github.com/users/{GITHUB_USER}/repos?per_page=100&type=owner&sort=updated"
     )
     if not isinstance(data, list):
         return 0, 0
@@ -122,8 +119,7 @@ def _github_repos() -> tuple[int, int]:
 def _articles_count() -> int:
     """Count dated _posts/*.md — local, never fails."""
     return sum(
-        1 for p in (ROOT / "_posts").glob("*.md")
-        if p.name[:4].isdigit() and "-" in p.name[4:5]
+        1 for p in (ROOT / "_posts").glob("*.md") if p.name[:4].isdigit() and "-" in p.name[4:5]
     )
 
 
@@ -227,9 +223,7 @@ def main() -> int:
         json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
-    summary = "  ".join(
-        f"{s['key']}={s['value']}" for s in payload["stats"]
-    )
+    summary = "  ".join(f"{s['key']}={s['value']}" for s in payload["stats"])
     print(f"fetch_metrics: {summary}")
     return 0
 

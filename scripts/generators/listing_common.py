@@ -42,7 +42,11 @@ def _strip_fm_quotes(value: str) -> str:
     if len(value) >= 2 and value[0] == value[-1] and value[0] in ("'", '"'):
         return value[1:-1]
     return value
+
+
 PILLAR_ORDER = ("ai", "payments", "infra", "policy", "open-source", "leadership")
+
+
 def _alias_map(taxonomy: dict) -> dict[str, str]:
     out: dict[str, str] = {}
     for slug, entry in taxonomy.items():
@@ -50,6 +54,8 @@ def _alias_map(taxonomy: dict) -> dict[str, str]:
         for alias in entry.get("aliases", []) or []:
             out[alias.strip().lower()] = slug
     return out
+
+
 def _post_pillars(text: str, taxonomy: dict, amap: dict[str, str]) -> list[str]:
     """Return the deduplicated pillars (categories) a post belongs to,
     derived from its frontmatter `tags:` line resolved through aliases."""
@@ -67,7 +73,11 @@ def _post_pillars(text: str, taxonomy: dict, amap: dict[str, str]) -> list[str]:
             pillars.add(cat)
     # Stable order — same as the pillar nav.
     return [p for p in PILLAR_ORDER if p in pillars]
+
+
 _DEFAULT_BANNER = "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
+
+
 def _load_fr_to_en_slug_map(lang: str) -> dict[str, str]:
     """Return ``{locale_slug: en_slug}`` from
     ``_data/i18n/<lang>/slugs.json``. Returns {} when the file is
@@ -84,6 +94,8 @@ def _load_fr_to_en_slug_map(lang: str) -> dict[str, str]:
         for en_slug, locale_slug in (data.get("articles") or {}).items()
         if isinstance(locale_slug, str) and locale_slug
     }
+
+
 def _locale_post_card_fields(
     path: Path,
 ) -> tuple[str, str, str, str] | None:
@@ -99,12 +111,12 @@ def _locale_post_card_fields(
     banner_m = _BANNER_FM_RE.search(text)
     title = _strip_fm_quotes(title_m.group(1))
     excerpt = _strip_fm_quotes(
-        excerpt_m.group(1)
-        if excerpt_m
-        else (desc_m.group(1) if desc_m else "")
+        excerpt_m.group(1) if excerpt_m else (desc_m.group(1) if desc_m else "")
     )
     banner = _strip_fm_quotes(banner_m.group(1)) if banner_m else _DEFAULT_BANNER
     return path.stem, title, excerpt, banner
+
+
 def _load_locale_post_index(
     lang: str,
 ) -> dict[str, tuple[str, str, str, str]]:
@@ -128,6 +140,8 @@ def _load_locale_post_index(
         en_slug = fr_to_en.get(stem, stem)
         out[en_slug] = (stem, title, excerpt, banner)
     return out
+
+
 def _load_locale_article_slugs(lang: str) -> dict[str, str]:
     path = ROOT / "_data" / "i18n" / lang / "slugs.json"
     if not path.is_file():
@@ -138,6 +152,8 @@ def _load_locale_article_slugs(lang: str) -> dict[str, str]:
         return {}
     arts = data.get("articles") or {}
     return {k: v for k, v in arts.items() if isinstance(v, str) and v}
+
+
 def _translate_chrome_for(lang: str, html: str) -> str:
     """Apply build_translations.translate_chrome bound to ``lang`` —
     translates nav, footer, search labels, aria attributes, language
@@ -149,9 +165,11 @@ def _translate_chrome_for(lang: str, html: str) -> str:
     # otherwise the `scripts.generators...` package path won't resolve
     # and the import would have to fall back to untranslated chrome.
     import sys as _sys
+
     if str(ROOT) not in _sys.path:
         _sys.path.insert(0, str(ROOT))
     from scripts.generators.build_translations import _state as _bt_state
     from scripts.generators.build_translations._chrome import translate_chrome
+
     _bt_state.bind_lang(lang)
     return translate_chrome(html)

@@ -111,9 +111,7 @@ def _changed_section(
     changed: list[str], base: dict[str, list[object]], head: dict[str, list[object]]
 ) -> list[str]:
     lines = [f"### 🔁 {len(changed)} page(s) with schema changes\n"]
-    lines += [
-        _changed_line(k, _sig(base[k]), _sig(head[k])) for k in changed[:_MAX_LISTED]
-    ]
+    lines += [_changed_line(k, _sig(base[k]), _sig(head[k])) for k in changed[:_MAX_LISTED]]
     return [*lines, *_truncated(changed), ""]
 
 

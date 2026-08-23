@@ -26,6 +26,8 @@ from postbuild_lib.article_furniture import (
 )
 
 _SIGSTORE_CONFIG_PRESENT: bool = Path("_data/sigstore/config.json").is_file()
+
+
 def inject_sigstore_attestation(html: str, slug: str) -> str:
     """Insert a 'Signed · cosign' badge near the article footer when a
     Sigstore bundle exists for this slug. No-op otherwise."""
@@ -52,9 +54,13 @@ def inject_sigstore_attestation(html: str, slug: str) -> str:
     )
     # Insert just before the existing article furniture's end-of-main.
     return re.sub(r"(</main>)", badge + r"\1", html, count=1)
+
+
 _TABLE_BLOCK_RE = re.compile(r"<table\b[^>]*>[\s\S]*?</table>", re.IGNORECASE)
 _THEAD_RE = re.compile(r"<thead\b[\s\S]*?</thead>", re.IGNORECASE)
 _TD_OPEN_RE = re.compile(r"<td\b", re.IGNORECASE)
+
+
 def _card_label_table(table: str) -> str:
     """Stamp ``data-label="<column header>"`` on every body ``<td>`` and
     tag the table ``table--cards`` so CSS can collapse it into stacked
@@ -95,6 +101,8 @@ def _card_label_table(table: str) -> str:
 
     head = _TABLE_OPEN_RE.sub(add_class, table[: head_m.end()], count=1)
     return head + body
+
+
 def inject_table_labels(html: str) -> str:
     """Make every article table mobile-fluid: per-cell ``data-label``
     attributes (mirroring the column headers) + a ``table--cards``
@@ -102,6 +110,8 @@ def inject_table_labels(html: str) -> str:
     if '"@type":"BlogPosting"' not in html:
         return html
     return _TABLE_BLOCK_RE.sub(lambda m: _card_label_table(m.group(0)), html)
+
+
 def strip_duplicate_body_h1(html: str) -> str:
     """Remove the first H1 inside <main> when it duplicates the hero H1
     that the layout template emits in ``<section class="ap-hero">``.
@@ -128,6 +138,8 @@ def strip_duplicate_body_h1(html: str) -> str:
         count=1,
     )
     return new_html if n else html
+
+
 _LDJSON_RE = re.compile(
     r'(<script[^>]*type="application/ld\+json"[^>]*>)(.*?)(</script>)',
     re.DOTALL | re.IGNORECASE,
@@ -175,7 +187,9 @@ def decode_entities_in_jsonld(html: str) -> str:
         decoded = _decode_json_strings(parsed)
         if decoded == parsed:
             return m.group(0)
-        return open_tag + _json.dumps(decoded, ensure_ascii=False, separators=(",", ":")) + close_tag
+        return (
+            open_tag + _json.dumps(decoded, ensure_ascii=False, separators=(",", ":")) + close_tag
+        )
 
     return _LDJSON_RE.sub(_one, html)
 
@@ -184,11 +198,15 @@ def _html_unescape(s: str) -> str:
     """Thin indirection so the strip-duplicate-H1 helper can be patched
     (``article_furniture._unesc``) in tests if needed."""
     return _unesc(s)
+
+
 _BODY_LINK_STYLESHEET_RE = re.compile(
     r'<link\b[^>]*\brel=(?:"stylesheet"|stylesheet)[^>]*>',
     re.IGNORECASE,
 )
 _BODY_END_RE = re.compile(r"</head>", re.IGNORECASE)
+
+
 def _sanitize_link_tag(tag: str) -> str:
     """Strip the stray trailing double-quote SSG emits on the search-widget
     stylesheet (``crossorigin="anonymous""``). Browsers treat that as an
@@ -204,6 +222,8 @@ def _sanitize_link_tag(tag: str) -> str:
     # Remove a trailing `"` immediately before the closing `>`.
     tag = re.sub(r'""(\s*/?>)', r'"\1', tag)
     return tag
+
+
 def hoist_body_link_stylesheets(html: str) -> tuple[str, int]:
     """Hoist every in-body ``<link rel=stylesheet>`` into ``<head>`` and
     sanitize the tag (SSG ships one with a malformed double-quote attribute

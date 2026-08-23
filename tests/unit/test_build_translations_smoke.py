@@ -105,7 +105,7 @@ def test_parse_frontmatter_basic():
     """Direct unit test for the bottom-of-stack parser."""
     import build_translations as bt
 
-    src = '---\ntitle: "X"\ndate: "May 19, 2026"\n---\n\n' "# Hello\n\nBody.\n"
+    src = '---\ntitle: "X"\ndate: "May 19, 2026"\n---\n\n# Hello\n\nBody.\n'
     fm, body = bt.parse_frontmatter(src)
     assert fm["title"] == "X"
     assert "# Hello" in body

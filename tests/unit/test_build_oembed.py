@@ -22,7 +22,7 @@ def test_esc_html_escapes_metacharacters() -> None:
 
 
 def test_embed_html_links_and_escapes() -> None:
-    out = oe._embed_html('Title & <b>', "2026-06-29-x", "Excerpt <em>")
+    out = oe._embed_html("Title & <b>", "2026-06-29-x", "Excerpt <em>")
     assert 'href="https://sebastienrousseau.com/2026-06-29-x/"' in out
     assert "Title &amp; &lt;b&gt;" in out  # title escaped
     assert "Excerpt &lt;em&gt;" in out  # excerpt escaped

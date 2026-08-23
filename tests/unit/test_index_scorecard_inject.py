@@ -180,9 +180,7 @@ def test_integrity_stamped_when_digest_known(data_dirs, monkeypatch):
 def test_data_island_escapes_script_breakout(data_dirs):
     hostile = dict(SPEC)
     hostile["title"] = "</script><script>alert(1)</script>"
-    (data_dirs["indices"] / "hostile.json").write_text(
-        json.dumps(hostile), encoding="utf-8"
-    )
+    (data_dirs["indices"] / "hostile.json").write_text(json.dumps(hostile), encoding="utf-8")
     html = _page('<div class="index-scorecard" data-index="hostile"></div>')
     out = isc.inject_index_scorecard(html)
     # No literal </script> from the payload survives inside the JSON island.

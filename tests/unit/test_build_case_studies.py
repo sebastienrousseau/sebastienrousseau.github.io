@@ -16,7 +16,7 @@ import case_studies_schema as css
 
 
 def test_esc_escapes_and_quotes() -> None:
-    assert cs._esc("a & <b> \"c\"") == "a &amp; &lt;b&gt; &quot;c&quot;"
+    assert cs._esc('a & <b> "c"') == "a &amp; &lt;b&gt; &quot;c&quot;"
 
 
 def test_esc_none_is_empty() -> None:

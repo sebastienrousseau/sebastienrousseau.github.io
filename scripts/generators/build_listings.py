@@ -82,10 +82,8 @@ PILLAR_LABELS: dict[str, str] = {
     "open-source": "Open source",
     "leadership": "Banking leadership",
 }
-_MAIN_RE = re.compile(r'(<main\b[^>]*>)([\s\S]*?)(</main>)', re.IGNORECASE)
-_AP_HERO_BLOCK_RE = re.compile(
-    r'<section class="ap-hero">[\s\S]*?</section>', re.IGNORECASE
-)
+_MAIN_RE = re.compile(r"(<main\b[^>]*>)([\s\S]*?)(</main>)", re.IGNORECASE)
+_AP_HERO_BLOCK_RE = re.compile(r'<section class="ap-hero">[\s\S]*?</section>', re.IGNORECASE)
 _HTML_LANG_RE = re.compile(r'<html lang="[^"]*"', re.IGNORECASE)
 _TITLE_RE = re.compile(r"<title>[^<]*</title>", re.IGNORECASE)
 _DESC_RE = re.compile(r'<meta name="description" content="[^"]*"', re.IGNORECASE)
@@ -97,10 +95,40 @@ _INLANG_RE = re.compile(r'"inLanguage":\s*"(?:en|en-GB|en-US)"')
 _HREFLANG_ARTICLE_RE = re.compile(r'href="/(\d{4}-\d{2}-\d{2}-[^/"]+)/"')
 
 LOCALES_NON_EN = (
-    "ar", "bn", "cs", "de", "el", "es", "fa", "fil", "fr", "ha", "he",
-    "hi", "hu", "id", "it", "ja", "ko", "mr", "ms", "nl", "pl", "pt-br",
-    "ro", "ru", "sv", "ta", "te", "th", "tr", "uk", "vi", "yo",
-    "zh-hans", "zh-hant",
+    "ar",
+    "bn",
+    "cs",
+    "de",
+    "el",
+    "es",
+    "fa",
+    "fil",
+    "fr",
+    "ha",
+    "he",
+    "hi",
+    "hu",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "mr",
+    "ms",
+    "nl",
+    "pl",
+    "pt-br",
+    "ro",
+    "ru",
+    "sv",
+    "ta",
+    "te",
+    "th",
+    "tr",
+    "uk",
+    "vi",
+    "yo",
+    "zh-hans",
+    "zh-hant",
 )
 
 
@@ -114,18 +142,12 @@ def _esc(s: str) -> str:
     )
 
 
-
-
 def _load_taxonomy() -> tuple[dict, dict[str, str]]:
     """Return (taxonomy, alias→canonical-slug map). Empty when missing."""
     if yaml is None or not TAXONOMY.is_file():
         return {}, {}
     taxonomy = yaml.safe_load(TAXONOMY.read_text(encoding="utf-8")) or {}
     return taxonomy, _alias_map(taxonomy)
-
-
-
-
 
 
 # Tiny per-card share rail — 5 monochrome SVG glyphs (X, LinkedIn, Facebook,
@@ -195,11 +217,7 @@ def _post_card_fields(
     pillars = _post_pillars(text, taxonomy, amap) if taxonomy else []
     title = title_m.group(1) if title_m else path.stem
     # Excerpt > description > "" — most posts have only description.
-    excerpt = (
-        excerpt_m.group(1)
-        if excerpt_m
-        else (desc_m.group(1) if desc_m else "")
-    )
+    excerpt = excerpt_m.group(1) if excerpt_m else (desc_m.group(1) if desc_m else "")
     banner = banner_m.group(1) if banner_m else _DEFAULT_BANNER
     banner_alt = banner_alt_m.group(1) if banner_alt_m else title
     return (title, stem_m.group(1), path.stem, excerpt, pillars, banner, banner_alt)
@@ -219,12 +237,6 @@ def _walk_posts() -> list[tuple[str, str, str, str, list[str], str, str]]:
     return out
 
 
-
-
-
-
-
-
 def _load_static_slug(lang: str, key: str, default: str) -> str:
     """Return ``static.<key>`` from a locale's slugs.json, with default."""
     path = ROOT / "_data" / "i18n" / lang / "slugs.json"
@@ -235,8 +247,6 @@ def _load_static_slug(lang: str, key: str, default: str) -> str:
     except (OSError, ValueError):
         return default
     return (data.get("static") or {}).get(key) or default
-
-
 
 
 def _render_card(
@@ -258,14 +268,10 @@ def _render_card(
     post has no canonical pillar). On locale forks, ``href_override``
     swaps the article URL to ``/<lang>/<locale-slug>/`` and
     ``eyebrow_override`` swaps the pillar caption to its translation."""
-    excerpt_html = (
-        f'<p class="card-excerpt">{_esc(excerpt)}</p>' if excerpt else ""
-    )
+    excerpt_html = f'<p class="card-excerpt">{_esc(excerpt)}</p>' if excerpt else ""
     year_attr = f' data-year="{iso_date[:4]}"' if iso_date else ""
     cat_attr = f' data-category="{" ".join(pillars)}"' if pillars else ""
-    eyebrow = eyebrow_override or (
-        PILLAR_LABELS[pillars[0]] if pillars else "Editorial"
-    )
+    eyebrow = eyebrow_override or (PILLAR_LABELS[pillars[0]] if pillars else "Editorial")
     eyebrow_html = f'<p class="eyebrow card-eyebrow">{_esc(eyebrow).upper()}</p>'
     href = href_override or f"/{slug}/"
     safe_alt = banner_alt or title
@@ -317,8 +323,7 @@ def _render_filter_form(
     """Two native <select>s + an empty-state region. main.js wires the
     `change` event to update data-filter-* attributes on the list."""
     pillar_opts = '<option value="">All categories</option>' + "".join(
-        f'<option value="{slug}">{_esc(label)}</option>'
-        for slug, label in pillar_options
+        f'<option value="{slug}">{_esc(label)}</option>' for slug, label in pillar_options
     )
     year_opts = '<option value="">All years</option>' + "".join(
         f'<option value="{year}">{year}</option>' for year in year_options
@@ -337,21 +342,19 @@ def _render_filter_form(
     # categories are mixed across years on every page.
     return (
         '<div class="listing-filters" role="search" aria-label="Filter articles">'
-        '<label>Category'
+        "<label>Category"
         f'<select data-filter-target="category" name="category">{pillar_opts}</select>'
-        '</label>'
-        '<label>Year'
+        "</label>"
+        "<label>Year"
         f'<select data-filter-target="year" data-filter-mode="navigate" '
         f'data-navigate-base="{nav_base}" '
         f'name="year">{year_opts}</select>'
-        '</label>'
-        '</div>'
+        "</label>"
+        "</div>"
     )
 
 
-def _render_pagination(
-    page: int, total_pages: int, base_path: str
-) -> str:
+def _render_pagination(page: int, total_pages: int, base_path: str) -> str:
     """Render a Prev/numbered/Next pagination nav. ``base_path`` is the
     URL prefix (no trailing slash) — e.g. ``/articles`` for EN or
     ``/fr/articles`` for FR locale. Page 1 lives at ``<base_path>/``;
@@ -365,28 +368,20 @@ def _render_pagination(
     parts: list[str] = []
     if page > 1:
         parts.append(
-            f'<a href="{page_url(page - 1)}" rel="prev" class="page-nav-prev">'
-            "&larr; Previous"
-            "</a>"
+            f'<a href="{page_url(page - 1)}" rel="prev" class="page-nav-prev">&larr; Previous</a>'
         )
     nums: list[str] = []
     for n in range(1, total_pages + 1):
         if n == page:
-            nums.append(
-                f'<span class="page-nav-num is-current" aria-current="page">{n}</span>'
-            )
+            nums.append(f'<span class="page-nav-num is-current" aria-current="page">{n}</span>')
         else:
             nums.append(f'<a href="{page_url(n)}" class="page-nav-num">{n}</a>')
     parts.append(f'<span class="page-nav-pages">{"".join(nums)}</span>')
     if page < total_pages:
         parts.append(
-            f'<a href="{page_url(page + 1)}" rel="next" class="page-nav-next">'
-            "Next &rarr;"
-            "</a>"
+            f'<a href="{page_url(page + 1)}" rel="next" class="page-nav-next">Next &rarr;</a>'
         )
-    return (
-        f'<nav class="page-nav" aria-label="Pagination">{"".join(parts)}</nav>'
-    )
+    return f'<nav class="page-nav" aria-label="Pagination">{"".join(parts)}</nav>'
 
 
 def _render_listing_body(
@@ -399,8 +394,7 @@ def _render_listing_body(
     all_years: list[str],
 ) -> str:
     cards = "".join(
-        _render_card(*p, featured=(page == 1 and i == 0))
-        for i, p in enumerate(page_posts)
+        _render_card(*p, featured=(page == 1 and i == 0)) for i, p in enumerate(page_posts)
     )
     pagination = _render_pagination(page, total_pages, base_path)
     pillar_options = [(p, PILLAR_LABELS[p]) for p in PILLAR_ORDER]
@@ -430,21 +424,11 @@ def _swap_head(
     canonical_url: str,
 ) -> str:
     out = _TITLE_RE.sub(f"<title>{_esc(title)}</title>", out, count=1)
-    out = _DESC_RE.sub(
-        f'<meta name="description" content="{_esc(desc)}"', out, count=1
-    )
-    out = _CANONICAL_RE.sub(
-        f'<link rel="canonical" href="{canonical_url}"', out, count=1
-    )
-    out = _OG_TITLE_RE.sub(
-        f'<meta property="og:title" content="{_esc(title)}"', out, count=1
-    )
-    out = _OG_DESC_RE.sub(
-        f'<meta property="og:description" content="{_esc(desc)}"', out, count=1
-    )
-    out = _OG_URL_RE.sub(
-        f'<meta property="og:url" content="{canonical_url}"', out, count=1
-    )
+    out = _DESC_RE.sub(f'<meta name="description" content="{_esc(desc)}"', out, count=1)
+    out = _CANONICAL_RE.sub(f'<link rel="canonical" href="{canonical_url}"', out, count=1)
+    out = _OG_TITLE_RE.sub(f'<meta property="og:title" content="{_esc(title)}"', out, count=1)
+    out = _OG_DESC_RE.sub(f'<meta property="og:description" content="{_esc(desc)}"', out, count=1)
+    out = _OG_URL_RE.sub(f'<meta property="og:url" content="{canonical_url}"', out, count=1)
     return out
 
 
@@ -472,8 +456,6 @@ def _render_page_html(
     return out
 
 
-
-
 _TAG_LANDING_LIST_RE = re.compile(
     r'(<section class="tag-landing-list"[^>]*>)([\s\S]*?)(</section>)',
     re.IGNORECASE,
@@ -499,11 +481,15 @@ def _localised_card(
         href = f"/{lang}/{locale_slug}/"
     else:
         href = f"/{lang}/{slug}/"
-    eyebrow = (
-        PILLAR_LABELS[pillars[0]] if pillars else "Editorial"
-    )
+    eyebrow = PILLAR_LABELS[pillars[0]] if pillars else "Editorial"
     return _render_card(
-        title, iso_date, slug, excerpt, pillars, banner, banner_alt,
+        title,
+        iso_date,
+        slug,
+        excerpt,
+        pillars,
+        banner,
+        banner_alt,
         href_override=href,
         eyebrow_override=eyebrow,
         featured=featured,
@@ -549,12 +535,8 @@ def _write_locale_page(
     canonical = f"{_BASE_URL}/{lang}/{locale_prefix}/"
     if page > 1:
         canonical += f"page/{page}/"
-    out = _CANONICAL_RE.sub(
-        f'<link rel="canonical" href="{canonical}"', out, count=1
-    )
-    out = _OG_URL_RE.sub(
-        f'<meta property="og:url" content="{canonical}"', out, count=1
-    )
+    out = _CANONICAL_RE.sub(f'<link rel="canonical" href="{canonical}"', out, count=1)
+    out = _OG_URL_RE.sub(f'<meta property="og:url" content="{canonical}"', out, count=1)
 
     def _swap_article(m: re.Match[str], _lang: str = lang, _amap: dict = article_map) -> str:
         en_slug = m.group(1)
@@ -566,7 +548,10 @@ def _write_locale_page(
     out = _INLANG_RE.sub(f'"inLanguage":"{lang}"', out)
     if page_posts is not None and locale_index is not None:
         out = _swap_locale_cards(
-            out, lang, page_posts, locale_index,
+            out,
+            lang,
+            page_posts,
+            locale_index,
             feature_first=(page == 1),
         )
     out = _translate_chrome_for(lang, out)
@@ -598,8 +583,7 @@ def _render_year_filter_form(
     current archive's year and exposes "All articles" as the way out —
     picking it navigates back to ``<nav_base>/``."""
     pillar_opts = '<option value="">All categories</option>' + "".join(
-        f'<option value="{slug}">{_esc(label)}</option>'
-        for slug, label in pillar_options
+        f'<option value="{slug}">{_esc(label)}</option>' for slug, label in pillar_options
     )
     year_opts = '<option value="">All years</option>' + "".join(
         f'<option value="{y}"{" selected" if y == current_year else ""}>{y}</option>'
@@ -607,15 +591,15 @@ def _render_year_filter_form(
     )
     return (
         '<div class="listing-filters" role="search" aria-label="Filter articles">'
-        '<label>Category'
+        "<label>Category"
         f'<select data-filter-target="category" name="category">{pillar_opts}</select>'
-        '</label>'
-        '<label>Year'
+        "</label>"
+        "<label>Year"
         f'<select data-filter-target="year" data-filter-mode="navigate" '
         f'data-navigate-base="{nav_base}" '
         f'name="year">{year_opts}</select>'
-        '</label>'
-        '</div>'
+        "</label>"
+        "</div>"
     )
 
 
@@ -661,9 +645,7 @@ def _write_year_archives(
         )
         out = _swap_head(template, title, desc, canonical)
         out = _AP_HERO_BLOCK_RE.sub("", out, count=1)
-        out = _MAIN_RE.sub(
-            rf"\1{_render_year_body(year, year_posts, all_years)}\3", out, count=1
-        )
+        out = _MAIN_RE.sub(rf"\1{_render_year_body(year, year_posts, all_years)}\3", out, count=1)
         out_path = PUBLIC / "articles" / year / "index.html"
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(out, encoding="utf-8")
@@ -682,12 +664,8 @@ def _write_year_archives(
             out = en_html
             out = _HTML_LANG_RE.sub(f'<html lang="{lang}"', out, count=1)
             canonical = f"{_BASE_URL}/{lang}/{prefix}/{year}/"
-            out = _CANONICAL_RE.sub(
-                f'<link rel="canonical" href="{canonical}"', out, count=1
-            )
-            out = _OG_URL_RE.sub(
-                f'<meta property="og:url" content="{canonical}"', out, count=1
-            )
+            out = _CANONICAL_RE.sub(f'<link rel="canonical" href="{canonical}"', out, count=1)
+            out = _OG_URL_RE.sub(f'<meta property="og:url" content="{canonical}"', out, count=1)
             amap = article_maps[lang]
 
             def _swap_article(m: re.Match[str], _lang: str = lang, _amap: dict = amap) -> str:
@@ -716,11 +694,7 @@ def _write_en_paged(
     total_pages = len(pages)
     out: list[tuple[int, str, list[tuple[str, str, str, str, list[str], str, str]]]] = []
     for idx, page_posts in enumerate(pages, start=1):
-        canonical = (
-            f"{_BASE_URL}/articles/"
-            if idx == 1
-            else f"{_BASE_URL}/articles/page/{idx}/"
-        )
+        canonical = f"{_BASE_URL}/articles/" if idx == 1 else f"{_BASE_URL}/articles/page/{idx}/"
         page_html = _render_page_html(
             template,
             idx,
@@ -771,7 +745,12 @@ def _write_listings() -> tuple[int, int, int, int]:
                 else PUBLIC / lang / prefix / "page" / str(idx) / "index.html"
             )
             _write_locale_page(
-                en_html, lang, idx, article_maps[lang], prefix, out_path,
+                en_html,
+                lang,
+                idx,
+                article_maps[lang],
+                prefix,
+                out_path,
                 page_posts=page_posts,
                 locale_index=locale_indexes[lang],
             )

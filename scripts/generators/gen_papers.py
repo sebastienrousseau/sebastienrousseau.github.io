@@ -178,12 +178,12 @@ def epaa_card_block() -> str:
     f = FEATURED
     return f"""<article class="book book-no-cover">
 <div class="book-body">
-<p class="book-eyebrow">{f['eyebrow']}</p>
-<h2 class="book-title"><a href="{f['read_url']}" rel="external noopener" title="{f['title']}">{f['title']}</a></h2>
-<p class="book-meta"><time datetime="{f['date_iso']}">{f['date_display']}</time> &middot; <a href="{f['publisher_url']}" rel="external noopener">{f['publisher']}</a></p>
-<p class="book-meta book-meta-faint">{f['format']}</p>
-<p class="book-excerpt">{f['abstract']}</p>
-<p class="book-actions"><a class="pill primary no-chev" href="{f['buy_url']}" rel="external noopener" title="{f['buy_label']} (PDF)">{f['buy_label']}</a> <a class="pill ghost no-chev" href="{f['publisher_url']}" rel="external noopener" title="Visit the Emerging Payments Association Asia">About EPAA</a></p>
+<p class="book-eyebrow">{f["eyebrow"]}</p>
+<h2 class="book-title"><a href="{f["read_url"]}" rel="external noopener" title="{f["title"]}">{f["title"]}</a></h2>
+<p class="book-meta"><time datetime="{f["date_iso"]}">{f["date_display"]}</time> &middot; <a href="{f["publisher_url"]}" rel="external noopener">{f["publisher"]}</a></p>
+<p class="book-meta book-meta-faint">{f["format"]}</p>
+<p class="book-excerpt">{f["abstract"]}</p>
+<p class="book-actions"><a class="pill primary no-chev" href="{f["buy_url"]}" rel="external noopener" title="{f["buy_label"]} (PDF)">{f["buy_label"]}</a> <a class="pill ghost no-chev" href="{f["publisher_url"]}" rel="external noopener" title="Visit the Emerging Payments Association Asia">About EPAA</a></p>
 </div>
 </article>"""
 
@@ -192,12 +192,12 @@ def whisper_card_block() -> str:
     p = PREVIOUS_PUBLICATION
     return f"""<article class="book book-no-cover">
 <div class="book-body">
-<p class="book-eyebrow">{p['eyebrow']}</p>
-<h2 class="book-title"><a href="{p['href']}" title="{p['title']}">{p['title']}</a></h2>
-<p class="book-meta"><time datetime="{p['date_iso']}">{p['date_display']}</time> &middot; Sebastien Rousseau</p>
-<p class="book-meta book-meta-faint">{p['format']}</p>
-<p class="book-excerpt">{p['excerpt']}</p>
-<p class="book-actions"><a class="pill primary no-chev" href="{p['buy_url']}" rel="external noopener" title="Buy the publication on PayPal">Buy &middot; {p['price']}</a> <a class="pill ghost no-chev" href="{p['href']}" title="Read the companion article">Read the article</a></p>
+<p class="book-eyebrow">{p["eyebrow"]}</p>
+<h2 class="book-title"><a href="{p["href"]}" title="{p["title"]}">{p["title"]}</a></h2>
+<p class="book-meta"><time datetime="{p["date_iso"]}">{p["date_display"]}</time> &middot; Sebastien Rousseau</p>
+<p class="book-meta book-meta-faint">{p["format"]}</p>
+<p class="book-excerpt">{p["excerpt"]}</p>
+<p class="book-actions"><a class="pill primary no-chev" href="{p["buy_url"]}" rel="external noopener" title="Buy the publication on PayPal">Buy &middot; {p["price"]}</a> <a class="pill ghost no-chev" href="{p["href"]}" title="Read the companion article">Read the article</a></p>
 </div>
 </article>"""
 

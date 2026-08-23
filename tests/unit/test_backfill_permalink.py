@@ -10,8 +10,7 @@ import importlib.util
 from pathlib import Path
 
 _MODULE_PATH = (
-    Path(__file__).resolve().parents[2]
-    / "scripts" / "postbuild" / "backfill_permalink.py"
+    Path(__file__).resolve().parents[2] / "scripts" / "postbuild" / "backfill_permalink.py"
 )
 _spec = importlib.util.spec_from_file_location("backfill_permalink", _MODULE_PATH)
 assert _spec and _spec.loader
@@ -33,8 +32,7 @@ def test_en_permalink_has_no_locale_segment(tmp_path: Path) -> None:
 
 
 def test_locale_permalink_includes_locale_dir(tmp_path: Path) -> None:
-    md = _write(tmp_path / "zh-hans" / "2020-01-01-ni-hao.md",
-                '---\ntitle: "你好"\n---\n正文\n')
+    md = _write(tmp_path / "zh-hans" / "2020-01-01-ni-hao.md", '---\ntitle: "你好"\n---\n正文\n')
     bp.backfill(tmp_path)
     out = md.read_text(encoding="utf-8")
     assert 'permalink: "https://sebastienrousseau.com/zh-hans/2020-01-01-ni-hao"' in out

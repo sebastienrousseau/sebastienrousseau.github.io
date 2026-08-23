@@ -141,8 +141,6 @@ def english_source_for(path: Path) -> Path:
     raise FileNotFoundError(f"cannot map {path.relative_to(ROOT)} to English source")
 
 
-
-
 def extract_translation(output: str) -> str:
     start = output.find("BEGIN_TRANSLATION")
     end = output.rfind("END_TRANSLATION")
@@ -160,7 +158,9 @@ def prompt_for(lang: str, source_text: str, current_text: str) -> str:
     current_fm, _ = split_frontmatter(current_text)
     protected = ", ".join(sorted(PROTECTED_FRONTMATTER))
     locale_name = LOCALE_NAMES.get(lang, lang)
-    glossary = GLOSSARY.get(lang, "Translate technical prose naturally; preserve canonical acronyms.")
+    glossary = GLOSSARY.get(
+        lang, "Translate technical prose naturally; preserve canonical acronyms."
+    )
     return f"""You are localising a technical banking article for sebastienrousseau.com.
 
 Target locale: {lang} ({locale_name})
@@ -239,8 +239,12 @@ def main() -> int:
     parser.add_argument("--model", required=True, help="Ollama model name, for example llama3.1:8b")
     parser.add_argument("--langs", nargs="*", help="optional locale codes to process")
     parser.add_argument("--limit", type=int, help="maximum number of files to translate")
-    parser.add_argument("--timeout", type=int, default=900, help="per-file Ollama timeout in seconds")
-    parser.add_argument("--dry-run", action="store_true", help="list target files without translating")
+    parser.add_argument(
+        "--timeout", type=int, default=900, help="per-file Ollama timeout in seconds"
+    )
+    parser.add_argument(
+        "--dry-run", action="store_true", help="list target files without translating"
+    )
     args = parser.parse_args()
 
     langs = set(args.langs) if args.langs else None
@@ -260,7 +264,11 @@ def main() -> int:
             continue
         translated = ollama_translate(
             args.model,
-            prompt_for(path.parent.name, source.read_text(encoding="utf-8"), path.read_text(encoding="utf-8")),
+            prompt_for(
+                path.parent.name,
+                source.read_text(encoding="utf-8"),
+                path.read_text(encoding="utf-8"),
+            ),
             args.timeout,
         )
         validate(path, translated)

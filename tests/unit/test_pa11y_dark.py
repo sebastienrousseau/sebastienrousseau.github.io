@@ -79,14 +79,22 @@ def test_cmd_pre_writes_dark_config(tmp_path: Path) -> None:
     rc = pc.main(
         [
             "pre",
-            "--public-dir", str(public),
-            "--cache", str(tmp_path / "cache.json"),
-            "--pa11yci-out", str(tmp_path / ".pa11yci"),
-            "--manifest-out", str(tmp_path / "manifest.json"),
-            "--dark-out", str(dark_out),
-            "--base-url", BASE,
-            "--pa11y-version", "test",
-            "--chromium-version", "test",
+            "--public-dir",
+            str(public),
+            "--cache",
+            str(tmp_path / "cache.json"),
+            "--pa11yci-out",
+            str(tmp_path / ".pa11yci"),
+            "--manifest-out",
+            str(tmp_path / "manifest.json"),
+            "--dark-out",
+            str(dark_out),
+            "--base-url",
+            BASE,
+            "--pa11y-version",
+            "test",
+            "--chromium-version",
+            "test",
         ]
     )
     assert rc == 0

@@ -64,9 +64,7 @@ _REQUIRED_FIELDS = ("name", "plural", "description", "category")
 def _validate_entry(slug: str, entry: object) -> list[str]:
     if not isinstance(entry, dict):
         return [f"{slug}: entry is not a mapping"]
-    problems = [
-        f"{slug}: missing required field '{f}'" for f in _REQUIRED_FIELDS if f not in entry
-    ]
+    problems = [f"{slug}: missing required field '{f}'" for f in _REQUIRED_FIELDS if f not in entry]
     if entry.get("category") not in _PILLARS:
         problems.append(
             f"{slug}: category '{entry.get('category')}' not in allowed pillars {_PILLARS}"
@@ -74,17 +72,13 @@ def _validate_entry(slug: str, entry: object) -> list[str]:
     return problems
 
 
-def _check_alias_collisions(
-    slug: str, entry: dict, seen_aliases: dict[str, str]
-) -> list[str]:
+def _check_alias_collisions(slug: str, entry: dict, seen_aliases: dict[str, str]) -> list[str]:
     problems: list[str] = []
     aliases = entry.get("aliases", []) or []
     for alias in [slug, *aliases]:
         key = alias.strip().lower()
         if key in seen_aliases and seen_aliases[key] != slug:
-            problems.append(
-                f"{slug}: alias '{alias}' already maps to '{seen_aliases[key]}'"
-            )
+            problems.append(f"{slug}: alias '{alias}' already maps to '{seen_aliases[key]}'")
         seen_aliases[key] = slug
     return problems
 
@@ -140,9 +134,7 @@ def _print_taxonomy_summary(taxonomy: dict) -> None:
     print()
 
 
-def _print_coverage(
-    resolved: collections.Counter[str], orphan: collections.Counter[str]
-) -> None:
+def _print_coverage(resolved: collections.Counter[str], orphan: collections.Counter[str]) -> None:
     total = sum(resolved.values()) + sum(orphan.values())
     pct = (100 * sum(resolved.values()) / total) if total else 100.0
     landing = sum(1 for n in resolved.values() if n >= _LANDING_THRESHOLD)
@@ -155,9 +147,7 @@ def _print_coverage(
 
 
 def _print_orphans(orphan: collections.Counter[str]) -> None:
-    print(
-        f"{sum(orphan.values())} orphan tag occurrences across {len(orphan)} distinct strings."
-    )
+    print(f"{sum(orphan.values())} orphan tag occurrences across {len(orphan)} distinct strings.")
     print("Top 15 orphan tags (add alias to taxonomy.yml OR fix post frontmatter):")
     for tag, n in orphan.most_common(15):
         print(f"  {n:>3}  {tag}")

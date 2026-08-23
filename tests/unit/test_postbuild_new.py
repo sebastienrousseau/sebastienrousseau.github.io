@@ -233,8 +233,7 @@ def test_fix_sri_no_op_when_tag_doesnt_reference_an_asset():
 def test_fix_sri_collapses_duplicate_crossorigin(monkeypatch):
     digest = _stub_asset("main.abc.js", b"x", monkeypatch)
     html = (
-        '<script crossorigin="anonymous" defer src=/main.abc.js '
-        'crossorigin="anonymous"></script>'
+        '<script crossorigin="anonymous" defer src=/main.abc.js crossorigin="anonymous"></script>'
     )
     out = pb.fix_sri(html)
     assert out.count('crossorigin="anonymous"') == 1
@@ -353,16 +352,14 @@ def test_inject_lcp_preload_realigns_existing_preload_to_first_img():
 def test_inject_lcp_preload_skips_first_image_when_lazy():
     """If the first <img> is loading=lazy, it isn't an LCP candidate —
     skip rather than preload an off-screen asset."""
-    html = (
-        "<head><title>x</title></head>" '<body><img loading="lazy" src="/below-fold.webp"></body>'
-    )
+    html = '<head><title>x</title></head><body><img loading="lazy" src="/below-fold.webp"></body>'
     out, n = pb.inject_lcp_preload(html)
     assert n == 0
     assert "<link" not in out
 
 
 def test_inject_lcp_preload_skips_data_uri():
-    html = "<head><title>x</title></head>" '<body><img src="data:image/png;base64,AAAA"></body>'
+    html = '<head><title>x</title></head><body><img src="data:image/png;base64,AAAA"></body>'
     _, n = pb.inject_lcp_preload(html)
     assert n == 0
 
@@ -525,7 +522,7 @@ def test_wrap_cdn_images_rewrites_webp_to_variant_url():
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 1
     # 600 rendered × 2 = 1200, which is itself a variant width.
-    assert "src=\"https://cloudcdn.pro/stocks/images/foo-1200.webp\"" in out
+    assert 'src="https://cloudcdn.pro/stocks/images/foo-1200.webp"' in out
     assert "/api/transform" not in out
 
 
@@ -533,13 +530,12 @@ def test_wrap_cdn_images_lcp_hero_still_picks_variant():
     """Variant quality is fixed at ingestion time, so fetchpriority=high
     no longer changes the emitted URL. The variant width is what matters."""
     html = (
-        '<img src="https://cloudcdn.pro/stocks/images/hero.webp" '
-        'width="400" fetchpriority="high">'
+        '<img src="https://cloudcdn.pro/stocks/images/hero.webp" width="400" fetchpriority="high">'
     )
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 1
     # 400 × 2 = 800, snapped up to the 1200 variant.
-    assert "src=\"https://cloudcdn.pro/stocks/images/hero-1200.webp\"" in out
+    assert 'src="https://cloudcdn.pro/stocks/images/hero-1200.webp"' in out
 
 
 def test_wrap_cdn_images_skips_svg_sources():
@@ -553,7 +549,7 @@ def test_wrap_cdn_images_skips_svg_sources():
 
 
 def test_wrap_cdn_images_skips_already_wrapped_urls():
-    html = '<img src="https://cloudcdn.pro/api/transform?url=/x.webp&w=400" ' 'width="200">'
+    html = '<img src="https://cloudcdn.pro/api/transform?url=/x.webp&w=400" width="200">'
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 0
     assert out == html
@@ -577,7 +573,7 @@ def test_wrap_cdn_images_defaults_to_1200_variant_when_no_width():
     html = '<img src="https://cloudcdn.pro/stocks/images/foo.webp">'
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 1
-    assert "src=\"https://cloudcdn.pro/stocks/images/foo-1200.webp\"" in out
+    assert 'src="https://cloudcdn.pro/stocks/images/foo-1200.webp"' in out
 
 
 def test_wrap_cdn_images_snaps_oversized_to_1920_variant():
@@ -585,7 +581,7 @@ def test_wrap_cdn_images_snaps_oversized_to_1920_variant():
     html = '<img src="https://cloudcdn.pro/stocks/images/banner.webp" width="2000">'
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 1
-    assert "src=\"https://cloudcdn.pro/stocks/images/banner-1920.webp\"" in out
+    assert 'src="https://cloudcdn.pro/stocks/images/banner-1920.webp"' in out
 
 
 def test_wrap_cdn_images_tiny_widths_snap_to_320_variant():
@@ -595,7 +591,7 @@ def test_wrap_cdn_images_tiny_widths_snap_to_320_variant():
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 1
     # 40 × 2 = 80; snap up to the 320 variant (smallest pre-gen).
-    assert "src=\"https://cloudcdn.pro/stocks/images/icon-320.webp\"" in out
+    assert 'src="https://cloudcdn.pro/stocks/images/icon-320.webp"' in out
 
 
 def test_wrap_cdn_images_handles_unquoted_attrs():
@@ -764,7 +760,7 @@ def test_align_existing_preload_returns_unchanged_when_subn_fails(monkeypatch):
             return attrs, 0
 
     monkeypatch.setattr(pa, "_LINK_HREF_ANY_RE", _FakeRE(pa._LINK_HREF_ANY_RE))
-    html = '<link rel="preload" as="image" ' 'href="https://cdn.example/old.webp">'
+    html = '<link rel="preload" as="image" href="https://cdn.example/old.webp">'
     out, n = pa._align_existing_preload(html, "https://cdn.example/new.webp")
     assert n == 0
     assert out == html

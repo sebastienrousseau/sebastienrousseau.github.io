@@ -60,8 +60,18 @@ SSG_PIN = "0.0.44"  # ADR-0002 — the CI-pinned generator version.
 WHATS_NEW_LIMIT = 5  # entries surfaced in the homepage strip.
 
 _MONTHS = (
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December",
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
 )
 
 # --- Shell-surgery regexes (mirrors build_listings.py) ----------------------
@@ -157,14 +167,27 @@ def pr_links(posts_dir: Path = POSTS) -> dict[str, int]:
     try:
         shallow = subprocess.run(
             ["git", "rev-parse", "--is-shallow-repository"],
-            cwd=ROOT, capture_output=True, text=True, check=True,
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=True,
         ).stdout.strip()
         if shallow != "false":
             return {}
         out = subprocess.run(
-            ["git", "log", "--diff-filter=A", "--name-only",
-             "--format=%x1f%s", "--", "_posts/*.md"],
-            cwd=ROOT, capture_output=True, text=True, check=True,
+            [
+                "git",
+                "log",
+                "--diff-filter=A",
+                "--name-only",
+                "--format=%x1f%s",
+                "--",
+                "_posts/*.md",
+            ],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=True,
         ).stdout
     except (subprocess.SubprocessError, OSError):
         return {}
@@ -211,7 +234,11 @@ def render_changelog_body(
         items: list[str] = []
         for e in month_entries:
             url = f"/{e.slug}/"
-            desc = f' <span class="changelog-note">{_esc(e.description)}</span>' if e.description else ""
+            desc = (
+                f' <span class="changelog-note">{_esc(e.description)}</span>'
+                if e.description
+                else ""
+            )
             pr = ""
             if e.slug in prs:
                 n = prs[e.slug]
@@ -240,9 +267,7 @@ def render_changelog_body(
         f"<h1>{_esc(title)}</h1>"
         f'<p class="tag-landing-meta">{_esc(lede)} · '
         f'<span id="changelog-count">{len(entries)}</span> entries</p>'
-        "</header>"
-        + "".join(sections)
-        + "</div>"
+        "</header>" + "".join(sections) + "</div>"
     )
 
 
@@ -331,7 +356,12 @@ def _changelog_jsonld(entries: list[Entry], title: str, lede: str) -> str:
                 "@type": "BreadcrumbList",
                 "itemListElement": [
                     {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{BASE}/"},
-                    {"@type": "ListItem", "position": 2, "name": title, "item": f"{BASE}/changelog/"},
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": title,
+                        "item": f"{BASE}/changelog/",
+                    },
                 ],
             },
         ],
@@ -360,7 +390,9 @@ def _swap_head(out: str, title: str, desc: str, canonical: str) -> str:
     return out
 
 
-def render_page(shell: str, body: str, title: str, desc: str, canonical: str, jsonld: str = "") -> str:
+def render_page(
+    shell: str, body: str, title: str, desc: str, canonical: str, jsonld: str = ""
+) -> str:
     """Fork the articles shell into a standalone page: swap head meta,
     drop the ap-hero, replace ``<main>`` body, and inject scoped JSON-LD."""
     out = _strip_itemlist_jsonld(shell)
@@ -387,9 +419,7 @@ def render_status_json(entries: list[Entry]) -> str:
         "content": {
             "articles": len(entries),
             "latest": (
-                {"date": latest.iso, "slug": latest.slug, "title": latest.title}
-                if latest
-                else None
+                {"date": latest.iso, "slug": latest.slug, "title": latest.title} if latest else None
             ),
         },
         "links": {"changelog": f"{BASE}/changelog/", "status": f"{BASE}/status/"},
@@ -403,7 +433,7 @@ def render_status_badge() -> str:
     return (
         '<svg xmlns="http://www.w3.org/2000/svg" width="118" height="20" '
         'role="img" aria-label="build: passing">'
-        '<title>build: passing</title>'
+        "<title>build: passing</title>"
         '<linearGradient id="s" x2="0" y2="100%">'
         '<stop offset="0" stop-color="#bbb" stop-opacity=".1"/>'
         '<stop offset="1" stop-opacity=".1"/></linearGradient>'
@@ -425,7 +455,7 @@ def render_status_body(entries: list[Entry], strings: dict[str, str]) -> str:
     latest_html = ""
     if latest:
         latest_html = (
-            '<p>Most recent publication: '
+            "<p>Most recent publication: "
             f'<a href="/{latest.slug}/">{_esc(latest.title)}</a> '
             f'(<time datetime="{latest.iso}">{_esc(display_date(latest.iso))}</time>).</p>'
         )
@@ -449,7 +479,7 @@ def render_status_body(entries: list[Entry], strings: dict[str, str]) -> str:
         "</section>"
         '<section aria-label="Content freshness">'
         "<h2>Content</h2>"
-        f'<p>{len(entries)} dated articles published. '
+        f"<p>{len(entries)} dated articles published. "
         f'See the <a href="/changelog/">changelog</a> for the full history.</p>'
         f"{latest_html}"
         "</section>"
@@ -482,7 +512,8 @@ def main() -> int:
     body = render_changelog_body(entries, cl_title, cl_lede, prs)
     jsonld = _changelog_jsonld(entries, cl_title, cl_lede)
     page = render_page(
-        shell, body,
+        shell,
+        body,
         title=f"{cl_title} — Sebastien Rousseau",
         desc=cl_lede,
         canonical=f"{BASE}/changelog/",
@@ -501,13 +532,17 @@ def main() -> int:
         if injected:
             home_path.write_text(home, encoding="utf-8")
         else:
-            print("build_changelog: warning — homepage anchor not found; strip skipped", file=sys.stderr)
+            print(
+                "build_changelog: warning — homepage anchor not found; strip skipped",
+                file=sys.stderr,
+            )
 
     # 3. /status/ + status.json + badge.
     st_title = strings.get("status.title") or "Status"
     st_body = render_status_body(entries, strings)
     st_page = render_page(
-        shell, st_body,
+        shell,
+        st_body,
         title=f"{st_title} — Sebastien Rousseau",
         desc="Build, deploy and uptime status for sebastienrousseau.com.",
         canonical=f"{BASE}/status/",

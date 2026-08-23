@@ -98,9 +98,13 @@ def test_render_changelog_body_pr_backlink() -> None:
 
 
 def test_whats_new_section_limits_and_links() -> None:
-    entries = [bc.Entry(f"2026-07-{d:02d}", f"2026-07-{d:02d}-p{d}", f"Post {d}", "") for d in range(1, 10)]
+    entries = [
+        bc.Entry(f"2026-07-{d:02d}", f"2026-07-{d:02d}-p{d}", f"Post {d}", "") for d in range(1, 10)
+    ]
     entries.sort(key=lambda e: (e.iso, e.slug), reverse=True)
-    out = bc.render_whats_new_section(entries, {"whatsNew.title": "What's new", "whatsNew.cta": "View the changelog"})
+    out = bc.render_whats_new_section(
+        entries, {"whatsNew.title": "What's new", "whatsNew.cta": "View the changelog"}
+    )
     assert out.count("<li") == bc.WHATS_NEW_LIMIT  # capped
     assert 'href="/changelog/"' in out
     assert 'aria-labelledby="whats-new-h"' in out
@@ -111,12 +115,16 @@ def test_whats_new_section_limits_and_links() -> None:
 
 
 def test_inject_whats_new_places_after_anchor() -> None:
-    home = '<main id="main"><div class="home-content"><section class="offer">x</section></div></main>'
+    home = (
+        '<main id="main"><div class="home-content"><section class="offer">x</section></div></main>'
+    )
     section = bc.render_whats_new_section([bc.Entry("2026-07-03", "2026-07-03-x", "X", "")], {})
     out, injected = bc.inject_whats_new(home, section)
     assert injected
     anchor = '<div class="home-content">'
-    assert out.index(anchor) < out.index('aria-labelledby="whats-new-h"') < out.index('class="offer"')
+    assert (
+        out.index(anchor) < out.index('aria-labelledby="whats-new-h"') < out.index('class="offer"')
+    )
 
 
 def test_inject_whats_new_is_idempotent() -> None:
@@ -150,7 +158,9 @@ def test_status_json_has_no_timestamp_and_is_deterministic() -> None:
     assert data["content"]["latest"]["slug"] == "2026-07-03-x"
     # No wall-clock leakage into the artifact.
     for banned in ("timestamp", "generated", "generatedAt", "now", "date"):
-        assert banned not in first.lower() or banned == "date"  # 'latest.date' is a content field, allowed
+        assert (
+            banned not in first.lower() or banned == "date"
+        )  # 'latest.date' is a content field, allowed
     assert '"date": "2026-07-03"' in first
 
 

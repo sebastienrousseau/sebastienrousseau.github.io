@@ -1152,9 +1152,7 @@ def clean_meta_description(page: Path, html_text: str) -> str:
     # <meta name="description"> at all — the home page did, so Google
     # composed its own snippet for every branded query. Insert it.
     if _current_meta_description(out) is None:
-        out = _HEAD_END_RE.sub(
-            f'<meta name="description" content="{esc}">\n</head>', out, count=1
-        )
+        out = _HEAD_END_RE.sub(f'<meta name="description" content="{esc}">\n</head>', out, count=1)
     return out
 
 

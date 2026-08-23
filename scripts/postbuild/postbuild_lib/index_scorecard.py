@@ -89,9 +89,7 @@ def _load_strings(lang: str) -> dict[str, str]:
             data = json.loads(path.read_text(encoding="utf-8"))
         except (ValueError, OSError):
             continue
-        return {
-            k: v for k, v in data.items() if k.startswith("scorecard.")
-        }
+        return {k: v for k, v in data.items() if k.startswith("scorecard.")}
     return {}
 
 

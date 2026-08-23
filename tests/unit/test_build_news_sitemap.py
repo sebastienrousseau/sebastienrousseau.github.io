@@ -40,11 +40,7 @@ def test_main_generates_correct_sitemap(tmp_path, monkeypatch):
 
     en_post = posts_dir / f"{yesterday_str}-mock-english-post.md"
     en_post.write_text(
-        "---\n"
-        'title: "Mock English Post"\n'
-        'keywords: "crypto, banking"\n'
-        "---\n"
-        "Body content",
+        '---\ntitle: "Mock English Post"\nkeywords: "crypto, banking"\n---\nBody content',
         encoding="utf-8",
     )
 
@@ -52,7 +48,7 @@ def test_main_generates_correct_sitemap(tmp_path, monkeypatch):
     five_days_ago_str = five_days_ago.strftime("%Y-%m-%d")
     old_post = posts_dir / f"{five_days_ago_str}-old-post.md"
     old_post.write_text(
-        "---\n" 'title: "Old Post"\n' 'keywords: "legacy"\n' "---\n" "Body content",
+        '---\ntitle: "Old Post"\nkeywords: "legacy"\n---\nBody content',
         encoding="utf-8",
     )
 
@@ -73,13 +69,13 @@ def test_main_generates_correct_sitemap(tmp_path, monkeypatch):
     )
 
     (i18n_dir / "strings.json").write_text(
-        "{\n" '  "feeds.channelTitle": "Sebastien Rousseau — Edition Francaise"\n' "}",
+        '{\n  "feeds.channelTitle": "Sebastien Rousseau — Edition Francaise"\n}',
         encoding="utf-8",
     )
 
     fr_post = fr_dir / f"{yesterday_str}-mock-french-post.md"
     fr_post.write_text(
-        "---\n" 'title: "Mock French Post"\n' 'keywords: "banque"\n' "---\n" "Contenu",
+        '---\ntitle: "Mock French Post"\nkeywords: "banque"\n---\nContenu',
         encoding="utf-8",
     )
 

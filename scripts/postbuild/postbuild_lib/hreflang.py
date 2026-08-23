@@ -47,10 +47,14 @@ def build_fr_title_index(pages: list[Path]) -> dict[str, str]:
         if m:
             out[en] = m.group(1).strip()
     return out
+
+
 _HREFLANG_RE = re.compile(
     r'<link\b(?=[^>]*\brel=["\']?alternate["\']?)(?=[^>]*\bhreflang=)[^>]*/?>',
     re.IGNORECASE,
 )
+
+
 def _translated_slugs_per_lang() -> dict[str, set[str]]:
     """Return ``{code: set_of_rendered_slugs}`` for every active non-EN
     language whose output dir exists under ``public/``."""
@@ -61,6 +65,8 @@ def _translated_slugs_per_lang() -> dict[str, set[str]]:
             continue
         out[code] = {p.parent.name for p in d.glob("*/index.html")}
     return out
+
+
 def _translated_slugs() -> tuple[set[str], set[str]]:
     """Legacy FR-only helper. Returns ``(en_slugs_with_fr,
     fr_slugs_with_en)`` for the call sites that haven't yet moved to
@@ -74,12 +80,16 @@ def _translated_slugs() -> tuple[set[str], set[str]]:
     fr_to_en = {v: k for k, v in fr_articles_map.items()}
     fr_with_en = rendered_fr & set(fr_to_en.keys())
     return en_with_fr, fr_with_en
+
+
 def _resolve_en_slug(slug: str, lang: str) -> str | None:
     """Reverse-map any language's slug to its EN counterpart."""
     if lang == "en":
         return slug
     maps = _slug_maps(lang)
     return maps["articles_lang_to_en"].get(slug) or maps["statics_lang_to_en"].get(slug)
+
+
 def _alternates_for_en_slug(
     en_slug: str,
     translated_per_lang: dict[str, set[str]],
@@ -100,6 +110,8 @@ def _alternates_for_en_slug(
             continue
         alts.append((code, f"https://sebastienrousseau.com/{code}/{lang_slug}/"))
     return alts
+
+
 _LANG_SWITCH_STRINGS: dict[str, tuple[str, str]] = {
     "en": ("This post is also available in", "Available languages"),
     "fr": ("Cet article est aussi disponible en", "Langues disponibles"),
@@ -182,6 +194,8 @@ _LANG_SWITCH_INSERT_RE = re.compile(
     r"(</section>)(\s*<main\b)",
     re.IGNORECASE,
 )
+
+
 def _render_lang_switch_item(
     code: str,
     href: str,
@@ -194,6 +208,8 @@ def _render_lang_switch_item(
         f'<li><a href="{href}" lang="{lang_obj.bcp47}" hreflang="{lang_obj.bcp47}"'
         f' rel="alternate"{rtl_attr}>{lang_obj.long_label}</a></li>'
     )
+
+
 def _lang_switch_others(
     en_slug: str,
     lang: str,
@@ -207,6 +223,8 @@ def _lang_switch_others(
     return [
         (code, by_code[code]) for code in _LANG_SWITCH_ORDER if code in by_code and code != lang
     ]
+
+
 def inject_lang_switcher(
     html: str,
     slug: str,
@@ -254,6 +272,8 @@ def inject_lang_switcher(
         count=1,
     )
     return new_html if n else html
+
+
 def inject_hreflang(
     html: str,
     slug: str,

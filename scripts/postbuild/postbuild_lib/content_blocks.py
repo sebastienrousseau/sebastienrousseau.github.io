@@ -34,6 +34,8 @@ _PULL_BLOCKQUOTE_RE = re.compile(
 )
 _H2_WITH_ID_RE = re.compile(r'<h2\s+id="[^"]*"[^>]*>', re.IGNORECASE)
 _FOOTNOTE_MARKER_RE = re.compile(r"\[\^(\d+)\]")
+
+
 def inject_pullquotes(html: str) -> str:
     """Promote ``<blockquote class="pull">…</blockquote>`` blocks to
     ``<aside class="pull-quote">…</aside>`` so the FT-style serif italic
@@ -48,6 +50,8 @@ def inject_pullquotes(html: str) -> str:
         lambda m: f'<aside class="pull-quote">{m.group(1)}</aside>',
         html,
     )
+
+
 def inject_section_rules(html: str) -> str:
     """Insert ``<hr class="section-rule" aria-hidden="true">`` BEFORE
     every prose ``<h2 id="...">`` after the first, on long-read
@@ -71,6 +75,8 @@ def inject_section_rules(html: str) -> str:
         start = match.start()
         out = out[:start] + rule + out[start:]
     return out
+
+
 def _footnote_list_items(definitions: list[tuple[str, str]], labels: dict[str, str]) -> str:
     backref_label = labels.get("Footnotes.return", "Return to text")
     items = []
@@ -81,6 +87,8 @@ def _footnote_list_items(definitions: list[tuple[str, str]], labels: dict[str, s
             f'aria-label="{_esc(backref_label, quote=True)}">↩</a></li>'
         )
     return "".join(items)
+
+
 def inject_footnotes(html: str) -> str:
     """Convert literal markdown footnote markers (``[^n]`` in text and
     ``[^n]: …`` at the article foot) into HTML: each in-text marker
@@ -100,12 +108,11 @@ def inject_footnotes(html: str) -> str:
     # Strip the literal "[^n]: definition" lines from the body — they're
     # about to be moved into the <section class="footnotes"> block.
     body_no_defs = _FOOTNOTE_DEF_RE.sub("", html)
+
     # Wrap remaining "[^n]" markers in <sup><a> superscript links.
     def _sup(m: re.Match[str]) -> str:
         n = m.group(1)
-        return (
-            f'<sup class="footnote-ref"><a href="#fn-{n}" id="fnref-{n}">{n}</a></sup>'
-        )
+        return f'<sup class="footnote-ref"><a href="#fn-{n}" id="fnref-{n}">{n}</a></sup>'
 
     body_marked = _FOOTNOTE_MARKER_RE.sub(_sup, body_no_defs)
     labels = _labels(html)
@@ -117,6 +124,8 @@ def inject_footnotes(html: str) -> str:
         f"<ol>{items}</ol></section>"
     )
     return _WRAP_CLOSE_RE.sub(section + r"\1", body_marked, count=1)
+
+
 _OG_IMAGE_RE = re.compile(
     r'<meta\s+property="og:image"\s+content="([^"]+)"',
     re.IGNORECASE,
@@ -129,6 +138,8 @@ _OG_IMAGE_HEIGHT_RE = re.compile(
     r'<meta\s+property="og:image:height"\s+content="(\d+)"',
     re.IGNORECASE,
 )
+
+
 def _banner_dimensions(html: str) -> tuple[int, int]:
     """Read og:image:width / og:image:height from the rendered HTML and
     return ``(width, height)`` as integers. Falls back to the canonical
@@ -152,11 +163,15 @@ def _banner_dimensions(html: str) -> tuple[int, int]:
         if w > 0 and h > 0:
             return w, h
     return _BANNER_FALLBACK_WIDTH, _BANNER_FALLBACK_HEIGHT
+
+
 def _banner_path(banner_url: str) -> str | None:
     """Return the on-CDN path component (e.g. ``/stocks/images/foo.webp``)
     of a banner URL, or ``None`` if the URL has no extractable path."""
     m = re.match(r"https?://[^/]+(/[^?#]+)", banner_url)
     return m.group(1) if m else None
+
+
 def strip_legacy_inline_banner(html: str, banner_url: str) -> str:
     """Remove the legacy ``<p><img></p>`` wrapper that pre-2026 articles
     used to place the banner inline as the first body element.
@@ -202,6 +217,8 @@ def strip_legacy_inline_banner(html: str, banner_url: str) -> str:
     abs_start = start + m.start()
     abs_end = start + m.end()
     return html[:abs_start] + html[abs_end:]
+
+
 def inject_hero_banner(html: str) -> str:
     """Insert a hero ``<figure class="article-banner">`` right after the
     H1/byline ``<section class="ap-hero">`` on every BlogPosting page.
@@ -260,12 +277,16 @@ def inject_hero_banner(html: str) -> str:
     # inline as the first body element. The auto-injected figure above
     # now carries that role, so the inline copy is a visible duplicate.
     return strip_legacy_inline_banner(new_html, banner_url)
+
+
 _FAQ_H2_RE = re.compile(
     r'<h2 id="(frequently-asked-questions|foire-aux-questions)"[^>]*>'
     r"([\s\S]+?)</h2>"
     r"([\s\S]+?)"
     r"(?=<h2|<aside|</main>|<hr|<footer)",
 )
+
+
 def _convert_faq_to_qa(html: str) -> str:
     """Convert the plain ``<p><strong>Q?</strong></p><p>A</p>…`` FAQ
     structure inside articles into the collapsible ``<details class="qa-item">``
@@ -324,6 +345,8 @@ def _convert_faq_to_qa(html: str) -> str:
         return "".join(out_parts)
 
     return _FAQ_H2_RE.sub(patch, html)
+
+
 _MERMAID_BLOCK_RE = re.compile(
     r'<pre[^>]*>\s*<code\s+class="language-mermaid"[^>]*>([\s\S]*?)</code>\s*</pre>',
     re.IGNORECASE,
@@ -332,6 +355,8 @@ _content_attr_re = re.compile(
     r'(content=)(["\'])(.+?)(\2)',
     re.IGNORECASE | re.DOTALL,
 )
+
+
 def inject_mermaid(html: str) -> str:
     """Convert ```mermaid fenced blocks into <pre class="mermaid"> containers
     so main.js can lazy-load the Mermaid library and render them. Also
@@ -395,6 +420,7 @@ def inject_mermaid(html: str) -> str:
                         count=1,
                     )
                     return clause
+
                 new_policy = re.sub(
                     r"style-src[^;]*",
                     widen_style_src,
@@ -408,6 +434,8 @@ def inject_mermaid(html: str) -> str:
         return _content_attr_re.sub(patch_content, tag, count=1)
 
     return _csp_tag_re.sub(patch_csp, new_html, count=1)
+
+
 SPECULATION_RULES_BLOCK = (
     '<script type="speculationrules">'
     '{"prerender":[{'
@@ -427,6 +455,8 @@ SPECULATION_RULES_BLOCK = (
     "}]}"
     "</script>"
 )
+
+
 def inject_speculation_rules(html: str) -> str:
     """Inject the Speculation Rules API block before </head>. Idempotent."""
     if 'type="speculationrules"' in html:

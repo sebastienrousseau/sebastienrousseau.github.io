@@ -713,7 +713,9 @@ def align_article_identity(html: str) -> str:
         # Match the separator style the block already uses so a rebuild of an
         # untouched page stays byte-identical.
         separators = (",", ":") if '", "' not in body[:200] else (", ", ": ")
-        return m.group(1) + _json.dumps(data, separators=separators, ensure_ascii=False) + m.group(3)
+        return (
+            m.group(1) + _json.dumps(data, separators=separators, ensure_ascii=False) + m.group(3)
+        )
 
     return _LDJSON_BLOCK_RE.sub(_patch, html)
 
@@ -761,7 +763,7 @@ _PLAIN_P_RE = re.compile(r"<p\b[^>]*>(?P<a>.*?)</p>", re.IGNORECASE | re.DOTALL)
 # 3: the collapsible rendering.
 _FAQ_DETAILS_RE = re.compile(
     r'<details\b[^>]*class="[^"]*qa-item[^"]*"[^>]*>\s*'
-    r'<summary\b[^>]*>(?P<q>.*?)</summary>\s*'
+    r"<summary\b[^>]*>(?P<q>.*?)</summary>\s*"
     r'<div\b[^>]*class="[^"]*qa-a[^"]*"[^>]*>(?P<a>.*?)</div>\s*</details>',
     re.IGNORECASE | re.DOTALL,
 )
