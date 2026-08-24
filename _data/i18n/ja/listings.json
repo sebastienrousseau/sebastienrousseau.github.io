@@ -1,0 +1,26 @@
+{
+  "_comment": "JA copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "フィード",
+    "pageLabel": "{total} ページ中 {page} ページ目",
+    "visible": "件表示",
+    "categoryLabel": "カテゴリー",
+    "yearLabel": "年",
+    "allCategories": "すべてのカテゴリー",
+    "allYears": "すべての年",
+    "filterAria": "記事を絞り込む",
+    "listAria": "記事カード",
+    "paginationAria": "ページ送り",
+    "emptyState": "現在の絞り込み条件に一致する記事はありません。",
+    "previous": "前へ",
+    "next": "次へ"
+  },
+  "pillars": {
+    "ai": "応用AI",
+    "payments": "決済とマネー",
+    "infra": "インフラと暗号技術",
+    "policy": "政策とレジリエンス",
+    "open-source": "オープンソース",
+    "leadership": "バンキング・リーダーシップ"
+  }
+}

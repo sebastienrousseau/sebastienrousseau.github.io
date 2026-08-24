@@ -1,0 +1,26 @@
+{
+  "_comment": "BN copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "ফিড",
+    "pageLabel": "{total}-এর মধ্যে {page} নম্বর পৃষ্ঠা",
+    "visible": "দৃশ্যমান",
+    "categoryLabel": "বিভাগ",
+    "yearLabel": "বছর",
+    "allCategories": "সব বিভাগ",
+    "allYears": "সব বছর",
+    "filterAria": "লেখা ছাঁকুন",
+    "listAria": "লেখার কার্ড",
+    "paginationAria": "পৃষ্ঠা বিন্যাস",
+    "emptyState": "বর্তমান ছাঁকনির সঙ্গে কোনো লেখা মেলেনি।",
+    "previous": "আগের",
+    "next": "পরের"
+  },
+  "pillars": {
+    "ai": "প্রযুক্ত এআই",
+    "payments": "পেমেন্ট ও অর্থ",
+    "infra": "পরিকাঠামো ও ক্রিপ্টোগ্রাফি",
+    "policy": "নীতি ও সহনশীলতা",
+    "open-source": "ওপেন সোর্স",
+    "leadership": "ব্যাংকিং নেতৃত্ব"
+  }
+}

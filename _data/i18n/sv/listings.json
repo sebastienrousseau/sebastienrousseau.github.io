@@ -1,0 +1,26 @@
+{
+  "_comment": "SV copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "FLÖDE",
+    "pageLabel": "Sida {page} av {total}",
+    "visible": "synliga",
+    "categoryLabel": "Kategori",
+    "yearLabel": "År",
+    "allCategories": "Alla kategorier",
+    "allYears": "Alla år",
+    "filterAria": "Filtrera artiklar",
+    "listAria": "Artikelkort",
+    "paginationAria": "Sidnumrering",
+    "emptyState": "Inga artiklar matchar de aktuella filtren.",
+    "previous": "Föregående",
+    "next": "Nästa"
+  },
+  "pillars": {
+    "ai": "Tillämpad AI",
+    "payments": "Betalningar & pengar",
+    "infra": "Infrastruktur & kryptografi",
+    "policy": "Politik & motståndskraft",
+    "open-source": "Öppen källkod",
+    "leadership": "Bankledarskap"
+  }
+}

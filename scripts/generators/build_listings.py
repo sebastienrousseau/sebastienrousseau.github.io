@@ -64,6 +64,7 @@ _BASE_URL = "https://sebastienrousseau.com"
 
 _BANNER_ALT_FM_RE = re.compile(r'^banner_alt:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "lib"))
+import _lang_registry
 from _core import DATED_SLUG_RE as _DATED_SLUG_RE  # canonical dated-slug matcher
 from _svg_icons import (
     _CARD_SVG_EMAIL,
@@ -516,6 +517,74 @@ def _swap_locale_cards(
     return _TAG_LANDING_LIST_RE.sub(rf"\1{body}\3", html, count=1)
 
 
+def _translate_listing_body(lang: str, html: str) -> str:
+    """Translate the listing body this generator emits itself.
+
+    ``_translate_chrome_for`` deliberately stops at ``<main>`` — its own
+    docstring says body content "which we emit ourselves" is left alone.
+    Nothing ever picked it up from there, so every locale listing shipped
+    FEED / Page N of M / N visible / Category / Year / All categories /
+    All years and the six pillar names in English, which is why the
+    body-translation gate scored /articles/ at 1.000 on 34 locales.
+
+    Anchored, exact replacements. A locale with no catalogue keeps the
+    English rather than shipping a half-translated page.
+    """
+    try:
+        cat = _lang_registry.load_listings(lang)
+    except _lang_registry.LanguageError:
+        return html
+    en = _lang_registry.listings_reference()
+    ui, pillars = cat.get("ui", {}), cat.get("pillars", {})
+
+    def swap(old: str, new: str) -> None:
+        nonlocal html
+        if new and new != old and old in html:
+            html = html.replace(old, new, 1)
+
+    u = en["ui"]
+    swap(
+        f'<p class="eyebrow">{u["eyebrow"]}</p>',
+        f'<p class="eyebrow">{_esc(ui.get("eyebrow", ""))}</p>',
+    )
+    swap(f"</span> {u['visible']}</p>", f"</span> {_esc(ui.get('visible', ''))}</p>")
+    swap(f'aria-label="{u["filterAria"]}"', f'aria-label="{_esc(ui.get("filterAria", ""))}"')
+    swap(f'aria-label="{u["listAria"]}"', f'aria-label="{_esc(ui.get("listAria", ""))}"')
+    swap(
+        f'aria-label="{u["paginationAria"]}"', f'aria-label="{_esc(ui.get("paginationAria", ""))}"'
+    )
+    swap(f"<label>{u['categoryLabel']}", f"<label>{_esc(ui.get('categoryLabel', ''))}")
+    swap(f"<label>{u['yearLabel']}", f"<label>{_esc(ui.get('yearLabel', ''))}")
+    swap(
+        f'<option value="">{u["allCategories"]}</option>',
+        f'<option value="">{_esc(ui.get("allCategories", ""))}</option>',
+    )
+    swap(
+        f'<option value="">{u["allYears"]}</option>',
+        f'<option value="">{_esc(ui.get("allYears", ""))}</option>',
+    )
+    swap(
+        f'role="status">{u["emptyState"]}</p>',
+        f'role="status">{_esc(ui.get("emptyState", ""))}</p>',
+    )
+    swap(f"&larr; {u['previous']}</a>", f"&larr; {_esc(ui.get('previous', ''))}</a>")
+    swap(f"{u['next']} &rarr;</a>", f"{_esc(ui.get('next', ''))} &rarr;</a>")
+
+    # "Page 2 of 5" — rebuilt from the locale template so word order can move.
+    m = re.search(r'<p class="tag-landing-meta">Page (\d+) of (\d+) ', html)
+    if m and ui.get("pageLabel"):
+        label = ui["pageLabel"].replace("{page}", m.group(1)).replace("{total}", m.group(2))
+        html = html.replace(
+            f'<p class="tag-landing-meta">Page {m.group(1)} of {m.group(2)} ',
+            f'<p class="tag-landing-meta">{_esc(label)} ',
+            1,
+        )
+
+    for key, en_label in en["pillars"].items():
+        swap(f">{_esc(en_label)}</option>", f">{_esc(pillars.get(key, en_label))}</option>")
+    return html
+
+
 def _write_locale_page(
     en_html: str,
     lang: str,
@@ -554,6 +623,7 @@ def _write_locale_page(
             locale_index,
             feature_first=(page == 1),
         )
+    out = _translate_listing_body(lang, out)
     out = _translate_chrome_for(lang, out)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(out, encoding="utf-8")
@@ -676,6 +746,7 @@ def _write_year_archives(
             out = out.replace('href="/articles/', f'href="/{lang}/{prefix}/')
             out = _INLANG_RE.sub(f'"inLanguage":"{lang}"', out)
             out = _swap_locale_cards(out, lang, year_posts, locale_indexes[lang])
+            out = _translate_listing_body(lang, out)
             out = _translate_chrome_for(lang, out)
             out_path.parent.mkdir(parents=True, exist_ok=True)
             out_path.write_text(out, encoding="utf-8")

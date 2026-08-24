@@ -500,6 +500,7 @@ python3 tests/validation/test_i18n_takeaway_labels.py
 python3 tests/validation/test_i18n_render_data.py
 python3 tests/validation/test_i18n_author.py
 python3 tests/validation/test_i18n_playlists.py
+python3 tests/validation/test_i18n_listings.py
 python3 tests/validation/test_hreflang_reciprocity.py
 python3 tests/validation/test_jsonld_localized.py
 python3 tests/validation/test_sitemap_completeness.py

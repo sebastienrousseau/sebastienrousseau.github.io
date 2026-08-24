@@ -36,12 +36,6 @@
     "description": "Erişilebilirlik beyanı: WCAG 2.2 AA uyumu, kapsayıcı ilkeler, geri bildirim ve sorun bildirimi için iletişim bilgileri.",
     "keywords": "erişilebilirlik, WCAG, uyum, dijital kapsayıcılık, denetim"
   },
-  "articles": {
-    "title": "Makaleler — Sebastien Rousseau",
-    "subtitle": "Yapay zeka, post-kuantum kriptografi, ISO 20022 ve ödemelerin geleceği üzerine makaleler.",
-    "description": "Uygulamalı yapay zeka, post-kuantum kriptografi, ISO 20022 ödemeleri ve toptan ödemelerin dönüşümü üzerine makaleler.",
-    "keywords": "makaleler, araştırma, yapay zeka, post-kuantum kriptografi, ISO 20022, toptan ödemeler"
-  },
   "contact": {
     "title": "İletişim — Sebastien Rousseau",
     "subtitle": "Bir sorunuz mu var ya da danışmanlık mı gerekiyor? Bana yazın.",

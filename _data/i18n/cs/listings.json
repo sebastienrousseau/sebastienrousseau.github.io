@@ -1,0 +1,26 @@
+{
+  "_comment": "CS copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "KANÁL",
+    "pageLabel": "Strana {page} z {total}",
+    "visible": "zobrazeno",
+    "categoryLabel": "Kategorie",
+    "yearLabel": "Rok",
+    "allCategories": "Všechny kategorie",
+    "allYears": "Všechny roky",
+    "filterAria": "Filtrovat články",
+    "listAria": "Karty článků",
+    "paginationAria": "Stránkování",
+    "emptyState": "Žádné články neodpovídají aktuálním filtrům.",
+    "previous": "Předchozí",
+    "next": "Další"
+  },
+  "pillars": {
+    "ai": "Aplikovaná UI",
+    "payments": "Platby a peníze",
+    "infra": "Infrastruktura a kryptografie",
+    "policy": "Politika a odolnost",
+    "open-source": "Open source",
+    "leadership": "Bankovní vedení"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_comment": "HI copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "फ़ीड",
+    "pageLabel": "{total} में से पृष्ठ {page}",
+    "visible": "दिख रहे",
+    "categoryLabel": "श्रेणी",
+    "yearLabel": "वर्ष",
+    "allCategories": "सभी श्रेणियाँ",
+    "allYears": "सभी वर्ष",
+    "filterAria": "लेख छाँटें",
+    "listAria": "लेख कार्ड",
+    "paginationAria": "पृष्ठ क्रमांकन",
+    "emptyState": "मौजूदा फ़िल्टर से कोई लेख मेल नहीं खाता।",
+    "previous": "पिछला",
+    "next": "अगला"
+  },
+  "pillars": {
+    "ai": "प्रयुक्त एआई",
+    "payments": "भुगतान और मुद्रा",
+    "infra": "अवसंरचना और क्रिप्टोग्राफी",
+    "policy": "नीति और सहनक्षमता",
+    "open-source": "ओपन सोर्स",
+    "leadership": "बैंकिंग नेतृत्व"
+  }
+}

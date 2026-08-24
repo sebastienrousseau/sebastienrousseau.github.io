@@ -36,12 +36,6 @@
     "description": "Deklaracja dostępności: zgodność z WCAG 2.2 AA, zasady inkluzywności, informacje zwrotne i dane kontaktowe do zgłaszania problemów.",
     "keywords": "dostępność, WCAG, zgodność, inkluzja cyfrowa, audyt"
   },
-  "articles": {
-    "title": "Artykuły — Sebastien Rousseau",
-    "subtitle": "Artykuły o AI, kryptografii postkwantowej, ISO 20022 i przyszłości płatności.",
-    "description": "Artykuły o stosowanej AI, kryptografii postkwantowej, płatnościach ISO 20022 oraz transformacji płatności hurtowych.",
-    "keywords": "artykuły, badania, AI, kryptografia postkwantowa, ISO 20022, płatności hurtowe"
-  },
   "contact": {
     "title": "Kontakt — Sebastien Rousseau",
     "subtitle": "Pytanie lub potrzeba konsultacji? Proszę napisać.",

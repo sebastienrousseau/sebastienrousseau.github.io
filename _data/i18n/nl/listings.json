@@ -1,0 +1,26 @@
+{
+  "_comment": "NL copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "FEED",
+    "pageLabel": "Pagina {page} van {total}",
+    "visible": "zichtbaar",
+    "categoryLabel": "Categorie",
+    "yearLabel": "Jaar",
+    "allCategories": "Alle categorieën",
+    "allYears": "Alle jaren",
+    "filterAria": "Artikelen filteren",
+    "listAria": "Artikelkaarten",
+    "paginationAria": "Paginering",
+    "emptyState": "Geen artikelen komen overeen met de huidige filters.",
+    "previous": "Vorige",
+    "next": "Volgende"
+  },
+  "pillars": {
+    "ai": "Toegepaste AI",
+    "payments": "Betalingen & geld",
+    "infra": "Infrastructuur & cryptografie",
+    "policy": "Beleid & weerbaarheid",
+    "open-source": "Open source",
+    "leadership": "Bankleiderschap"
+  }
+}

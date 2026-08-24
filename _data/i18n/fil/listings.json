@@ -1,0 +1,26 @@
+{
+  "_comment": "FIL copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "FEED",
+    "pageLabel": "Pahina {page} ng {total}",
+    "visible": "ang nakikita",
+    "categoryLabel": "Kategorya",
+    "yearLabel": "Taon",
+    "allCategories": "Lahat ng kategorya",
+    "allYears": "Lahat ng taon",
+    "filterAria": "Salain ang mga artikulo",
+    "listAria": "Mga card ng artikulo",
+    "paginationAria": "Pagnunumero ng pahina",
+    "emptyState": "Walang artikulong tumutugma sa kasalukuyang mga salaan.",
+    "previous": "Nakaraan",
+    "next": "Susunod"
+  },
+  "pillars": {
+    "ai": "Inilapat na AI",
+    "payments": "Mga bayad at pera",
+    "infra": "Imprastraktura at kriptograpiya",
+    "policy": "Patakaran at katatagan",
+    "open-source": "Open source",
+    "leadership": "Pamumuno sa pagbabangko"
+  }
+}

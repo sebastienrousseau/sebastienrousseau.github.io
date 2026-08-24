@@ -383,6 +383,37 @@ def playlist_reference() -> dict:
     }
 
 
+def listings_reference() -> dict:
+    """The English listing-body copy, from ``scripts/lib/_listing_copy.py``.
+
+    English is code, not JSON, for the same reason as
+    :func:`playlist_reference`: the generator renders from the same
+    module, so there is no EN file to drift.
+    """
+    import _listing_copy as lc
+
+    return {"ui": dict(lc.UI), "pillars": dict(lc.PILLARS)}
+
+
+def load_listings(code: str) -> dict:
+    """Load the listing-body copy for ``code``.
+
+    Mirrors :func:`listings_reference`. ``en`` returns the reference so
+    callers can treat every language uniformly. A missing file raises —
+    the generator falls back to English rather than shipping a
+    half-translated listing, and the CI gate fails.
+    """
+    if code == "en":
+        return listings_reference()
+    path = I18N_DIR / code / "listings.json"
+    if not path.is_file():
+        raise LanguageError(f"missing listings glossary: {path}")
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise LanguageError(f"{path}: must be a JSON object")
+    return {k: v for k, v in data.items() if not k.startswith("_")}
+
+
 def load_playlists(code: str) -> dict:
     """Load the /playlists/ copy catalogue for ``code``.
 

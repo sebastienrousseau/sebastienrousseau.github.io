@@ -1,0 +1,26 @@
+{
+  "_comment": "RU copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "ЛЕНТА",
+    "pageLabel": "Страница {page} из {total}",
+    "visible": "показано",
+    "categoryLabel": "Категория",
+    "yearLabel": "Год",
+    "allCategories": "Все категории",
+    "allYears": "Все годы",
+    "filterAria": "Фильтровать статьи",
+    "listAria": "Карточки статей",
+    "paginationAria": "Постраничная навигация",
+    "emptyState": "Ни одна статья не соответствует текущим фильтрам.",
+    "previous": "Назад",
+    "next": "Вперёд"
+  },
+  "pillars": {
+    "ai": "Прикладной ИИ",
+    "payments": "Платежи и деньги",
+    "infra": "Инфраструктура и криптография",
+    "policy": "Политика и устойчивость",
+    "open-source": "Открытый код",
+    "leadership": "Банковское руководство"
+  }
+}

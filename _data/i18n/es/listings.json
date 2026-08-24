@@ -1,0 +1,26 @@
+{
+  "_comment": "ES copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "FLUJO",
+    "pageLabel": "Página {page} de {total}",
+    "visible": "visibles",
+    "categoryLabel": "Categoría",
+    "yearLabel": "Año",
+    "allCategories": "Todas las categorías",
+    "allYears": "Todos los años",
+    "filterAria": "Filtrar artículos",
+    "listAria": "Tarjetas de artículos",
+    "paginationAria": "Paginación",
+    "emptyState": "Ningún artículo coincide con los filtros actuales.",
+    "previous": "Anterior",
+    "next": "Siguiente"
+  },
+  "pillars": {
+    "ai": "IA aplicada",
+    "payments": "Pagos y dinero",
+    "infra": "Infraestructura y criptografía",
+    "policy": "Política y resiliencia",
+    "open-source": "Open source",
+    "leadership": "Dirección bancaria"
+  }
+}

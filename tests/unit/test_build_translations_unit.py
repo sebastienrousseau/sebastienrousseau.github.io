@@ -565,14 +565,6 @@ def test_rewrite_related_card_unknown_and_untitled_slugs():
 # ---------------------------------------------------------------------------
 
 
-def test_render_articles_hub_without_shell_or_entries(monkeypatch, tmp_path):
-    monkeypatch.setattr(st, "PUBLIC", tmp_path)
-    assert bt.render_articles_hub([{"slug": "x"}]) is None  # no shell
-    (tmp_path / "articles").mkdir()
-    (tmp_path / "articles" / "index.html").write_text("<html><body></body></html>")
-    assert bt.render_articles_hub([]) is None  # no entries
-
-
 def test_render_home_without_shell(monkeypatch, tmp_path):
     monkeypatch.setattr(st, "PUBLIC", tmp_path)
     assert bt.render_home() is None
@@ -707,7 +699,6 @@ def test_public_api_names_resolve():
         "render_translation",
         "fr_slug",
         "render_static_translation",
-        "render_articles_hub",
         "render_home",
         "main",
     ):

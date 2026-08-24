@@ -1,0 +1,26 @@
+{
+  "_comment": "UK copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "СТРІЧКА",
+    "pageLabel": "Сторінка {page} з {total}",
+    "visible": "показано",
+    "categoryLabel": "Категорія",
+    "yearLabel": "Рік",
+    "allCategories": "Усі категорії",
+    "allYears": "Усі роки",
+    "filterAria": "Фільтрувати статті",
+    "listAria": "Картки статей",
+    "paginationAria": "Посторінкова навігація",
+    "emptyState": "Жодна стаття не відповідає поточним фільтрам.",
+    "previous": "Назад",
+    "next": "Уперед"
+  },
+  "pillars": {
+    "ai": "Прикладний ШІ",
+    "payments": "Платежі та гроші",
+    "infra": "Інфраструктура та криптографія",
+    "policy": "Політика та стійкість",
+    "open-source": "Відкритий код",
+    "leadership": "Банківське керівництво"
+  }
+}

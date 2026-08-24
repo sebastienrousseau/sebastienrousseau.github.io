@@ -9,7 +9,7 @@ import _lang_registry
 from . import _state as st
 from ._article import render_translation
 from ._fm import parse_frontmatter
-from ._pages import render_articles_hub, render_home, write_static_translations
+from ._pages import render_home, write_static_translations
 from ._search import _build_fr_search_index
 from ._state import fr_slug
 
@@ -60,16 +60,13 @@ def _render_one_lang(code: str) -> int:
         )
         written += 1
 
-    if entries:
-        # Sort newest first to mirror the English /articles/ ordering.
-        entries.sort(key=lambda e: e["slug"], reverse=True)
-        # /fr/articles/ — the French articles listing (was /fr/index.html).
-        articles_hub = render_articles_hub(entries)
-        if articles_hub:
-            articles_path = st.OUT / st.STATIC_SLUG_FR.get("articles", "articles") / "index.html"
-            articles_path.parent.mkdir(parents=True, exist_ok=True)
-            articles_path.write_text(articles_hub, encoding="utf-8")
-            written += 1
+    # /<lang>/<articles>/ is owned by build_listings, which runs earlier and
+    # emits the paged listing with locale-translated cards and (since the
+    # listing-body catalogue landed) localised filter chrome. This pass used
+    # to overwrite that page with its own hub, whose substitution targeted a
+    # `<section class="newsroom">` the listing no longer emits — so the
+    # substitution silently no-opped and wrote the ENGLISH listing body back
+    # over a correctly localised page, on all 34 locales.
 
     # /fr/index.html — the French home page, forked from the EN /index.html
     # so the structure (hero + projects + quote + paper + latest + experience)
@@ -96,7 +93,7 @@ def _render_one_lang(code: str) -> int:
 
     print(
         f"build_translations[{code}]: wrote {written} page(s) "
-        f"({len(entries)} translation(s) + hub + {static_written} static page(s)) "
+        f"({len(entries)} translation(s) + {static_written} static page(s)) "
         f"+ search index ({len(search_entries)} entries)"
     )
     return written

@@ -36,12 +36,6 @@
     "description": "無障礙訪問宣告：遵循 WCAG 2.2 AA 標準、包容性原則、反饋渠道與問題報告聯絡方式。",
     "keywords": "無障礙訪問, WCAG, 合規, 數字包容, 審計"
   },
-  "articles": {
-    "title": "文章 — Sebastien Rousseau",
-    "subtitle": "關於人工智慧、後量子密碼學、ISO 20022 與支付未來的文章。",
-    "description": "關於應用人工智慧、後量子密碼學、ISO 20022 支付以及批發支付轉型的文章。",
-    "keywords": "文章, 研究, 人工智慧, 後量子密碼學, ISO 20022, 批發支付"
-  },
   "contact": {
     "title": "聯絡 — Sebastien Rousseau",
     "subtitle": "有問題或需要諮詢？請聯絡我。",

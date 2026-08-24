@@ -1,0 +1,26 @@
+{
+  "_comment": "EL copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "ΡΟΗ",
+    "pageLabel": "Σελίδα {page} από {total}",
+    "visible": "ορατά",
+    "categoryLabel": "Κατηγορία",
+    "yearLabel": "Έτος",
+    "allCategories": "Όλες οι κατηγορίες",
+    "allYears": "Όλα τα έτη",
+    "filterAria": "Φιλτράρισμα άρθρων",
+    "listAria": "Κάρτες άρθρων",
+    "paginationAria": "Σελιδοποίηση",
+    "emptyState": "Κανένα άρθρο δεν ταιριάζει με τα τρέχοντα φίλτρα.",
+    "previous": "Προηγούμενο",
+    "next": "Επόμενο"
+  },
+  "pillars": {
+    "ai": "Εφαρμοσμένη ΤΝ",
+    "payments": "Πληρωμές & χρήμα",
+    "infra": "Υποδομές & κρυπτογραφία",
+    "policy": "Πολιτική & ανθεκτικότητα",
+    "open-source": "Ανοιχτός κώδικας",
+    "leadership": "Τραπεζική ηγεσία"
+  }
+}

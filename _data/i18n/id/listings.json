@@ -1,0 +1,26 @@
+{
+  "_comment": "ID copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "UMPAN",
+    "pageLabel": "Halaman {page} dari {total}",
+    "visible": "ditampilkan",
+    "categoryLabel": "Kategori",
+    "yearLabel": "Tahun",
+    "allCategories": "Semua kategori",
+    "allYears": "Semua tahun",
+    "filterAria": "Saring artikel",
+    "listAria": "Kartu artikel",
+    "paginationAria": "Penomoran halaman",
+    "emptyState": "Tidak ada artikel yang cocok dengan saringan saat ini.",
+    "previous": "Sebelumnya",
+    "next": "Berikutnya"
+  },
+  "pillars": {
+    "ai": "AI terapan",
+    "payments": "Pembayaran dan uang",
+    "infra": "Infrastruktur dan kriptografi",
+    "policy": "Kebijakan dan ketahanan",
+    "open-source": "Sumber terbuka",
+    "leadership": "Kepemimpinan perbankan"
+  }
+}

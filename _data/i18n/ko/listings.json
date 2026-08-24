@@ -1,0 +1,26 @@
+{
+  "_comment": "KO copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "피드",
+    "pageLabel": "{total}페이지 중 {page}페이지",
+    "visible": "개 표시",
+    "categoryLabel": "카테고리",
+    "yearLabel": "연도",
+    "allCategories": "전체 카테고리",
+    "allYears": "전체 연도",
+    "filterAria": "기사 필터링",
+    "listAria": "기사 카드",
+    "paginationAria": "페이지 매기기",
+    "emptyState": "현재 필터와 일치하는 기사가 없습니다.",
+    "previous": "이전",
+    "next": "다음"
+  },
+  "pillars": {
+    "ai": "응용 AI",
+    "payments": "결제와 금융",
+    "infra": "인프라와 암호기술",
+    "policy": "정책과 회복력",
+    "open-source": "오픈 소스",
+    "leadership": "뱅킹 리더십"
+  }
+}

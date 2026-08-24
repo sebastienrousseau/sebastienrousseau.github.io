@@ -1,0 +1,26 @@
+{
+  "_comment": "TR copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "AKIŞ",
+    "pageLabel": "Sayfa {page} / {total}",
+    "visible": "görünüyor",
+    "categoryLabel": "Kategori",
+    "yearLabel": "Yıl",
+    "allCategories": "Tüm kategoriler",
+    "allYears": "Tüm yıllar",
+    "filterAria": "Makaleleri filtrele",
+    "listAria": "Makale kartları",
+    "paginationAria": "Sayfalama",
+    "emptyState": "Hiçbir makale geçerli filtrelerle eşleşmiyor.",
+    "previous": "Önceki",
+    "next": "Sonraki"
+  },
+  "pillars": {
+    "ai": "Uygulamalı YZ",
+    "payments": "Ödemeler ve para",
+    "infra": "Altyapı ve kriptografi",
+    "policy": "Politika ve dayanıklılık",
+    "open-source": "Açık kaynak",
+    "leadership": "Bankacılık liderliği"
+  }
+}
