@@ -1,0 +1,156 @@
+{
+  "_comment": "Positional /projects/ body copy. Arrays align with the English page in document order; see scripts/generators/build_translations/_projects.py. gh_pushed_template takes {age} verbatim from the GitHub push date.",
+  "kpi": [
+    "Mga download ng open source",
+    "Mga bituin sa GitHub",
+    "Mga artikulong nilagdaan ng Sigstore",
+    "Taon sa produksyon"
+  ],
+  "setup_kicker": [
+    "GINAWA PARA SA SERBISYONG PANANALAPI"
+  ],
+  "setup_headline": [
+    "Tatlong larangan ng gawain. "
+  ],
+  "setup_soft": [
+    "Bayad, seguridad at kasangkapan."
+  ],
+  "area_alt": [
+    "Kuha mula sa himpapawid ng mga interchange sa lungsod sa gabi, bilang larawan ng mga daanan ng bayad na tumatawid sa hangganan.",
+    "Abstraktong larangan ng asul na liwanag, bilang larawan ng post-quantum cryptography para sa mga sistemang pampinansyal.",
+    "Malilinis na linyang arkitektural sa malambot na liwanag, bilang larawan ng maaasahang pundasyon para sa mga developer."
+  ],
+  "area_kicker": [
+    "BAYAD AT ISO 20022",
+    "SEGURIDAD NA POST-QUANTUM",
+    "PLATAPORMA PARA SA DEVELOPER"
+  ],
+  "area_headline": [
+    "Bayad sa pandaigdigang <span class=\"ac\">pamantayan.</span>",
+    "Seguridad na lampas sa <span class=\"ac\">panahon ng RSA.</span>",
+    "Pundasyon para sa inyong <span class=\"ac\">mga inhinyero.</span>"
+  ],
+  "area_text": [
+    "Sakop ng ISO 20022 ang buong siklo ng buhay ng mensahe. Ang mga aklatang ito ay gumagawa ng mga file ng pagsisimula na <strong>pain.001</strong>, bumubuo at nagbeberipika ng mga paglilipat na <strong>pacs.008</strong>, bumabasa ng mga pahayag na <strong>camt.053</strong>, at humahawak ng pangangasiwa ng account na <strong>acmt.001</strong>, kasama ang mga parser para sa mas lumang format. Puwede kayong mag-ampon ng isang aklatan sa bawat pagkakataon sa halip na palitan ang isang pangunahing sistema.",
+    "May mga talaang pampinansyal na nananatiling sensitibo nang ilang dekada, sapat na haba upang ang datos na kinuha ngayon ay mabasa kapag nahinog na ang mga quantum computer. Isinasakatuparan ng mga aklatang Rust na ito ang <strong>ML-KEM (CRYSTALS-Kyber, NIST FIPS 203)</strong> kasama ang hashing at kaugnay na mga primitibo, upang makapagsimula ang paglipat bago ito ipilit ng mga takdang panahon.",
+    "Ang mismong mga aklatang Rust na bumubuo at nagbabantay sa site na ito. Kabilang dito ang <strong>noyalib</strong> para sa YAML at ang <strong>Static Site Generator</strong> mismo, na inilalabas kasama ang talaan ng sangkap na CycloneDX at mga lagda ng Sigstore. Dito nagtatayo ang inyong mga inhinyero sa halip na sila ang magpanatili ng katumbas nito sa loob."
+  ],
+  "area_cta": [
+    "Basahin ang kuwento ng bayad",
+    "Basahin ang kuwento ng seguridad",
+    "Basahin ang kuwento ng plataporma"
+  ],
+  "cat_kicker": [
+    "AWTOMATIKONG IMPRASTRUKTURANG PAMPINANSYAL",
+    "SEGURIDAD PAMPINANSYAL NA POST-QUANTUM",
+    "INILAPAT NA AI AT IMPORMASYON PARA SA PAMUNUAN",
+    "SOBERANONG TEKNOLOHIYA NG ORGANISASYON",
+    "WEB, PAGLALATHALA AT KAPALIGIRAN NG TRABAHO"
+  ],
+  "finale_eyebrow": [
+    "KONTAK"
+  ],
+  "finale_lede": [
+    "Nagpaplano ba kayo ng paglipat sa ISO 20022, ng pagsusuring post-quantum, o ng inilapat na AI sa produksyon? Sabihin ninyo kung ano ang inyong ginagawa. Ituturo ko kung saan pumapasok ang mga kasangkapang ito."
+  ],
+  "finale_cta": [
+    "Makipag-ugnayan"
+  ],
+  "h2": [
+    "Datos pampinansyal, nakalas na.",
+    "Ligtas sa harap ng quantum. Handa para sa organisasyon.",
+    "Magtanong. Tumanggap ng buod.",
+    "Inyong hardware. Inyong datos.",
+    "Ilathala sa paraang inyo.",
+    "Magtayo rito. O itayo natin nang sabay."
+  ],
+  "lede": [
+    "Mga file ng bayad at pahayag ng bangko, walang alitan. Ginagawa ng mga kasangkapang ito ang buong siklo ng buhay ng mensaheng ISO 20022 at binabasa ang magulong pahayag mula sa tunay na mundo nang may tiyak na katumpakan. Dalhin lang ang inyong CSV, PDF o mga database. Dumadaloy na lang ang datos.",
+    "Seguridad na ginawa para sa panahong quantum, ginagamit na ngayon. Sinusundan ng mga aklatang ito ang mga pamantayan ng NIST sa pagbabalot ng susi at sa hashing, upang maihanda ninyo ang imprastrukturang pampinansyal sa hinaharap bago pa man dumating ang banta.",
+    "AI na ipinapatrabaho sa pang-araw-araw na operasyon. I-scan ang code para sa mga kahinaan, gawing maayos na buod ang isang tanong, at magtrabaho gamit ang boses. Sa inyong mga tuntunin, walang pagkakakulong sa isang vendor.",
+    "Pundasyong maaari ninyong ariin. Mga aklatang Rust na na-audit at ligtas sa memorya, tumatakbo sa sarili ninyong imprastruktura at inilalabas kasama ang talaan ng sangkap ng software at lagda ng Sigstore. Basahin ang bawat linya. Dalhin sa loob. Panatilihin sa loob.",
+    "Mga template, isang balangkas na CSS, dalawang publikasyon sa industriya, at ang mauulit na kaayusan na naglalathala ng lahat ng ito. Ang mismong stack na pinatatakbo ng site na ito."
+  ],
+  "alt": [
+    "Banner ng aklatang pambayad na open source na pain001",
+    "Banner ng toolkit na ISO 20022 na pacs008",
+    "Logo ng suite ng pahayag ng bangko na camt053",
+    "Logo ng suite ng pangangasiwa ng account na acmt001",
+    "Banner ng Bank Statement Parser",
+    "Logo ng NaluFX, paglalaan ng salapi na pinapatnubayan ng AI sa Rust",
+    "Logo ng QRC, aklatan ng QR code sa Rust",
+    "Banner ng KyberLib",
+    "Banner ng aklatang Hash (HSH) sa Rust",
+    "Banner ng Password Generator Pro",
+    "Banner ng Euxis, isang open source na scanner ng seguridad ng code",
+    "Banner ng Àkàndé, isang mahusay na AI voice assistant",
+    "Banner ng Audio Analyser",
+    "Banner ng Crypto Service Suite",
+    "Banner ng Static Site Generator",
+    "Banner ng ekosistemang YAML 1.2 sa Rust na noyalib",
+    "Banner ng Serde YML",
+    "Banner ng aklatang RustLogs (RLG)",
+    "Banner ng LibMake",
+    "Banner ng aklatang DateTime (DTT) sa Rust",
+    "Banner ng aklatang Random (VRD) sa Rust",
+    "Banner ng aklatang Common (CMN) sa Rust",
+    "Banner ng aklatang Mini Functions sa Rust",
+    "Banner ng Kaishi, isang panimulang template",
+    "Banner ng Skeletonic Stylus Library",
+    "Banner ng publikasyong Banking On AI",
+    "Banner ng publikasyong Banking On Quantum",
+    "Banner ng website na L90S",
+    "Banner ng proyektong Dotfiles"
+  ],
+  "excerpt": [
+    "Gumagawa ng mga file na ISO 20022 pain.001 mula sa CSV o SQLite. Ginagamit ito ng mga bangko at ng mga tagapagbigay ng serbisyong pambayad upang makalikha ng maayos na istrukturang mensahe ng paglilipat nang hindi muling itinatayo ang mga umiiral na sistema.",
+    "Gumagawa, nagbeberipika at naghahatid ng mga mensaheng ISO 20022 pacs.008 para sa paglilipat ng kliyente sa pagitan ng mga bangko. Kabilang dito ang pagberipika gamit ang JSON Schema at XSD, pagsusuri ng IBAN sa 75 bansa, at pagtatakip ng personal na datos para sa GDPR at PCI-DSS.",
+    "Binabasa ang mga pahayag na ISO 20022 camt.053 mula sa bangko patungo sa kliyente at hinuhugot ang mga balanse, tala at detalye ng transaksyon tungo sa maayos na istrukturang datos. Kabilang dito ang pagkarga ng MT940, pag-export sa XLSX, at mga pagkakabit sa mga editor at katulong na AI.",
+    "Pagpapadala ng mensaheng ISO 20022 para sa pangangasiwa ng account. Nagbubukas, nagpapanatili, nagsasara, naglilipat at nagbeberipika ng mga account sa bangko mula sa payak na mga file ng datos, kasama ang mga kasangkapan para sa mga editor at katulong na AI.",
+    "Isang toolkit sa Python na ginagawang maayos na istrukturang datos ang mga pahayag ng bangko sa iba't ibang format. Ginawa para sa magugulong file mula sa tunay na mundo at para sa mga kahilingan ng pag-awdit.",
+    "Isang aplikasyong Rust para sa paglalaan ng salapi sa iba't ibang istruktura ng pondo, na gumagamit ng hula upang patnubayan ang paghahati. Nakatuon sa treasury, pagtutuos ng pondo at paglalaan ng ari-arian.",
+    "Isang aklatang Rust para gumawa at bumasa ng QR code sa iba't ibang format. Sa bayad, ginagamit ito para sa mga EPC QR code sa paglilipat na SEPA, mga link ng koleksyon para sa mga negosyante, at pinatibay na pagpapatunay.",
+    "Isang pagpapatupad ng CRYSTALS-Kyber sa Rust, ang pamantayang NIST FIPS 203 para sa post-quantum na pagbabalot ng susi.",
+    "Mga algoritmo ng hash at digest para sa pag-iimbak at pagberipika ng password, isinulat nang may paninindigang matibay laban sa quantum.",
+    "Isang kasangkapang command-line na tumatakbo sa iba't ibang plataporma para gumawa ng random na password, nakasandal sa mga na-audit na primitibong kriptograpiko.",
+    "Isang scanner ng seguridad ng code para sa walong wika, na pinagsasama ang static na pagsusuri at pagsusuri ng kontaminasyon sa pagberipika ng malaking language model upang bawasan ang maling babala. Naglalabas ng mga bungkos na SARIF, SBOM at OpenVEX na nilagdaan ng Sigstore para sa pagsusuri ng supply chain.",
+    "Isang voice assistant na itinayo sa mga modelong GPT ng OpenAI, may buod na PDF at imbakan ng sagot. Angkop sa personal at pang-ehekutibong gamit.",
+    "Ginagawang teksto ang audio nang real time gamit ang pagkilala ng pananalita sa tulong ng AI. Nakatuon sa pagsusuri ng mga naitalang usapan at pulong.",
+    "Isang serbisyong kriptograpiko para sa karaniwang pangangailangan ng aplikasyon: pag-e-encrypt, pag-tokenize, pagpapahintulot ng transaksyon, paglagda ng code, at pamamahala ng siklo ng buhay ng susi.",
+    "Isang generator ng static na site sa Rust, ligtas mula sa simula. Kabilang dito ang pagberipika ng WCAG AAA, pagpapatibay ng CSP at SRI, isang daloy ng nilalaman gamit ang lokal na language model, isang target na WebAssembly, at suporta sa 28 wika.",
+    "Isang pagpapatupad ng YAML 1.2 sa purong Rust. Walang code na unsafe, ganap na pagsunod sa pamantayan, serde na pang-stream, isang punong sintaks na walang nawawala, at pagberipika gamit ang JSON Schema. Inilalabas bilang aklatan, kasangkapang command-line, language server, MCP server at build na WASM.",
+    "Pag-serialize at pag-deserialize ng YAML para sa mga istruktura ng datos sa Rust, nakatayo sa balangkas na Serde.",
+    "Isang aklatan ng pag-log para sa Rust na may maayos na istrukturang format, asynchronous na pag-log, at mababagong output.",
+    "Isang generator ng balangkas para sa mga aklatang Rust. Naglalabas ito ng mga file ng template na punô na para sa mga pagsubok, sukatan ng bilis, at tuloy-tuloy na pagsasama.",
+    "Isang aklatan ng petsa at oras para sa Rust: pagbuo ng anyo ayon sa ISO 8601, paghawak ng time zone, at pag-abot sa bawat bahagi ng petsa.",
+    "Paglikha ng random na numero batay sa algoritmong Mersenne Twister, ginagamit sa mga simulasyon at laro.",
+    "Isang aklatang Rust para maabot ang mga konstanteng matematikal at kriptograpiko.",
+    "Isang aklatan ng mga kagamitang function at pambalot na function para sa Rust.",
+    "Isang panimulang template para sa Static Site Generator, inihanda para sa malilinis at naaabot na site. Ito ang template na ginagamit ko kapag nagsisimula ng bagong site.",
+    "Isang modular na aklatang Stylus na may mga bahagi at mixin para sa layout sa web at mobile. Dito nakatayo ang site na ito.",
+    "Isang publikasyon tungkol sa kung paano inilalapat ng mga bangko ang AI, saklaw ang serbisyo sa kliyente, pagtukoy ng pandaraya, at operasyon.",
+    "Isang publikasyon tungkol sa quantum computing sa pagbabangko at pananalapi, mula sa pagsusuri ng panganib hanggang sa kriptograpiya.",
+    "Payo bilang part-time na punong opisyal sa pananalapi mula sa isang lider sa pananalapi na mahigit 20 taon na sa teknolohiya, saklaw ang paglago, pangangalap ng pondo, at operasyong pampinansyal.",
+    "Mga file ng kaayusan para sa macOS, Linux at Windows: mga script at setting para sa isang daloy ng trabaho sa pagbuo."
+  ],
+  "more": [
+    "Alamin pa"
+  ],
+  "faq_q": [
+    "Sa ilalim ng anong lisensya inilalabas ang mga proyektong ito?",
+    "Handa na ba ang mga proyektong ito para sa produksyon?",
+    "Paano ako makakatulong o makakapag-ulat ng problema?",
+    "Puwede ko bang gamitin ang mga aklatang ito sa isang regulated na kapaligirang pambangko?",
+    "Nag-aalok ba kayo ng komersyal na suporta o konsultasyon?",
+    "Paano ko masusundan ang mga bagong labas?"
+  ],
+  "faq_a": [
+    "Karamihan sa mga proyekto ay may dalawang lisensya, MIT at Apache-2.0, ang pamantayan ng ekosistemang Rust, na nagbibigay sa mga komersyal na gumagamit ng malinaw na karapatan sa patente bukod pa sa maluwag na muling pamamahagi. Ilang kasangkapan ng kliyente ang inilalabas sa ilalim ng Apache-2.0 lamang. Ang file ng lisensya sa ugat ng bawat repositoryo ang may awtoridad.",
+    "Marami na. Ginagamit ang <a href=\"https://pain001.com\">pain001</a> ng mga bangko at tagapagbigay ng serbisyong pambayad upang gawing awtomatiko ang paglikha ng file na ISO 20022. Sinusundan ng <a href=\"https://kyberlib.com\">KyberLib</a> ang pamantayang NIST FIPS 203 at may kasamang test vector. Ipinapakita ng README at ng mga badge ng CI sa bawat repositoryo ang kasalukuyang kalagayan; kung kailangan ninyo ng tiyak na katiyakan para sa paggamit sa produksyon, makipag-ugnayan.",
+    "May pampublikong repositoryo sa GitHub ang bawat proyekto sa <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Magbukas ng isyu na naglalarawan ng problema (malaking tulong ang pinakamaikling halimbawang mauulit) o isang pull request na nakakabit sa isang isyu. Pinamamahalaan ng Developer Certificate of Origin ang mga ambag at kailangan ang mga commit na may lagda.",
+    "Oo, kasama ang karaniwang mga paalala. Ang mga aklatan ay nakapag-iisang gawaing open source, hindi isang produktong regulated. Patakbuhin ang inyong karaniwang proseso sa supply chain, seguridad at pagsusuri ng dependency, gaya ng pagpasok sa pamamagitan ng inyong panloob na salamin, pag-scan gamit ang mga kasangkapang SBOM, at pagtali sa Git SHA o kriptograpikong hash, bago i-deploy sa imprastrukturang pambayad sa produksyon.",
+    "Oo, sa piling paraan. Nakatuon ang mga gawain sa paglipat sa ISO 20022, sa mga mapa ng paglipat tungo sa post-quantum na kriptograpiya, at sa inilapat na AI sa serbisyong pampinansyal. <a href=\"/contact/\">Makipag-ugnayan</a> kasama ang maikling paglalarawan, ang inyong takdang panahon, at anumang hadlang.",
+    "Ipinapahayag ang bawat may-petsang sulatin sa site na ito sa pamamagitan ng <a href=\"/rss.xml\">RSS feed</a> at ng newsletter na <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Naglalathala rin ng mga labas ang bawat repositoryo sa GitHub, na maaari ninyong sundan nang tuwiran."
+  ],
+  "gh_pushed_template": "huling commit {age} na ang nakalipas"
+}

@@ -1,0 +1,156 @@
+{
+  "_comment": "Positional /projects/ body copy. Arrays align with the English page in document order; see scripts/generators/build_translations/_projects.py. gh_pushed_template takes {age} verbatim from the GitHub push date.",
+  "kpi": [
+    "Nedladdningar av öppen källkod",
+    "GitHub-stjärnor",
+    "Sigstore-signerade artiklar",
+    "År i produktion"
+  ],
+  "setup_kicker": [
+    "BYGGT FÖR FINANSSEKTORN"
+  ],
+  "setup_headline": [
+    "Tre arbetsområden. "
+  ],
+  "setup_soft": [
+    "Betalningar, säkerhet och verktyg."
+  ],
+  "area_alt": [
+    "Flygbild över trafikplatser i natten, som bild för gränsöverskridande betalningsvägar.",
+    "Abstrakt blått ljusfält, som bild för postkvantkryptografi i finansiella system.",
+    "Rena arkitektoniska linjer i mjukt ljus, som bild för pålitliga grunder för utvecklare."
+  ],
+  "area_kicker": [
+    "BETALNINGAR & ISO 20022",
+    "POSTKVANTSÄKERHET",
+    "UTVECKLARPLATTFORM"
+  ],
+  "area_headline": [
+    "Betalningar i den globala <span class=\"ac\">standarden.</span>",
+    "Säkerhet bortom <span class=\"ac\">RSA-eran.</span>",
+    "Grunder för dina <span class=\"ac\">ingenjörer.</span>"
+  ],
+  "area_text": [
+    "ISO 20022 täcker meddelandets hela livscykel. Dessa bibliotek genererar <strong>pain.001</strong>-initieringsfiler, bygger och validerar <strong>pacs.008</strong>-överföringar, läser <strong>camt.053</strong>-kontoutdrag och sköter <strong>acmt.001</strong>-kontohantering, med parsrar för äldre format. Du kan införa ett bibliotek i taget i stället för att byta ut ett kärnsystem.",
+    "Vissa finansiella uppgifter förblir känsliga i decennier, tillräckligt länge för att det som samlas in i dag ska kunna läsas när kvantdatorer mognat. Dessa Rust-bibliotek implementerar <strong>ML-KEM (CRYSTALS-Kyber, NIST FIPS 203)</strong> tillsammans med hashning och besläktade primitiver, så att en migrering kan börja innan tidsfristerna tvingar fram den.",
+    "Samma Rust-bibliotek som bygger och skyddar den här webbplatsen. Bland dem finns <strong>noyalib</strong> för YAML och <strong>Static Site Generator</strong> själv, utgivna med CycloneDX-SBOM:er och Sigstore-signaturer. Dina ingenjörer bygger vidare på dem i stället för att underhålla motsvarigheterna internt."
+  ],
+  "area_cta": [
+    "Läs berättelsen om betalningar",
+    "Läs berättelsen om säkerhet",
+    "Läs berättelsen om plattformen"
+  ],
+  "cat_kicker": [
+    "AUTOMATISERAD FINANSIELL INFRASTRUKTUR",
+    "POSTKVANTSÄKERHET INOM FINANS",
+    "TILLÄMPAD AI & BESLUTSUNDERLAG",
+    "SUVERÄN FÖRETAGSTEKNIK",
+    "WEBB, PUBLICERING & MILJÖ"
+  ],
+  "finale_eyebrow": [
+    "KONTAKT"
+  ],
+  "finale_lede": [
+    "Planerar du en migrering till ISO 20022, en postkvantgenomgång eller tillämpad AI i produktion? Berätta vad du bygger. Jag visar var de här verktygen passar in."
+  ],
+  "finale_cta": [
+    "Hör av dig"
+  ],
+  "h2": [
+    "Finansiella data, uppredda.",
+    "Kvantsäker. Redo för företaget.",
+    "Ställ en fråga. Få genomgången.",
+    "Din hårdvara. Dina data.",
+    "Publicera på ditt sätt.",
+    "Bygg vidare på det. Eller bygg det med mig."
+  ],
+  "lede": [
+    "Betalfiler och kontoutdrag, utan friktion. De här verktygen genererar hela livscykeln för ISO 20022-meddelanden och tolkar röriga verkliga kontoutdrag med deterministisk precision. Ta med dina CSV-filer, PDF:er eller databaser. Data bara flödar.",
+    "Säkerhet byggd för kvantåldern, tillämpad i dag. De här biblioteken följer NIST-standarderna för nyckelinkapsling och hashning, så att du kan framtidssäkra finansiell infrastruktur långt innan hotet är här.",
+    "AI satt i arbete i den dagliga driften. Skanna kod efter sårbarheter, förvandla en fråga till en strukturerad genomgång och arbeta med rösten. På dina villkor, utan inlåsning till en leverantör.",
+    "Grunder du kan äga. Granskade, minnessäkra Rust-bibliotek som körs på din egen infrastruktur och levereras med en programvaruförteckning och en Sigstore-signatur. Läs varje rad. Ta hem den. Behåll den internt.",
+    "Mallar, ett CSS-ramverk, två branschpublikationer och den reproducerbara uppsättning som levererar allt. Stacken som den här webbplatsen körs på."
+  ],
+  "alt": [
+    "Banderoll för betalbiblioteket pain001 med öppen källkod",
+    "Banderoll för ISO 20022-verktygslådan pacs008",
+    "Logotyp för kontoutdragssviten camt053",
+    "Logotyp för kontohanteringssviten acmt001",
+    "Banderoll för Bank Statement Parser",
+    "Logotyp för NaluFX, AI-driven likviditetsfördelning i Rust",
+    "Logotyp för QRC, ett Rust-bibliotek för QR-koder",
+    "Banderoll för KyberLib",
+    "Banderoll för Rust-biblioteket Hash (HSH)",
+    "Banderoll för Password Generator Pro",
+    "Banderoll för Euxis, en kodsäkerhetsskanner med öppen källkod",
+    "Banderoll för Àkàndé, en avancerad AI-röstassistent",
+    "Banderoll för Audio Analyser",
+    "Banderoll för Crypto Service Suite",
+    "Banderoll för Static Site Generator",
+    "Banderoll för Rust-ekosystemet noyalib för YAML 1.2",
+    "Banderoll för Serde YML",
+    "Banderoll för biblioteket RustLogs (RLG)",
+    "Banderoll för LibMake",
+    "Banderoll för Rust-biblioteket DateTime (DTT)",
+    "Banderoll för Rust-biblioteket Random (VRD)",
+    "Banderoll för Rust-biblioteket Common (CMN)",
+    "Banderoll för Rust-biblioteket Mini Functions",
+    "Banderoll för Kaishi, en startmall",
+    "Banderoll för Skeletonic Stylus Library",
+    "Banderoll för publikationen Banking On AI",
+    "Banderoll för publikationen Banking On Quantum",
+    "Banderoll för webbplatsen L90S",
+    "Banderoll för projektet Dotfiles"
+  ],
+  "excerpt": [
+    "Genererar ISO 20022 pain.001-filer från CSV eller SQLite. Banker och betaltjänstleverantörer använder verktyget för att skapa strukturerade betalningsmeddelanden utan att bygga om befintliga system.",
+    "Genererar, validerar och levererar ISO 20022 pacs.008-meddelanden för kundbetalningar mellan banker. Innehåller validering med JSON Schema och XSD, IBAN-kontroller i 75 länder och maskering av personuppgifter för GDPR och PCI-DSS.",
+    "Läser ISO 20022 camt.053-kontoutdrag från bank till kund och plockar ut saldon, poster och transaktionsdetaljer till strukturerade data. Innehåller MT940-inläsning, XLSX-export och integrationer med redigerare och AI-assistenter.",
+    "ISO 20022-meddelanden för kontohantering. Öppnar, underhåller, avslutar, byter och verifierar bankkonton utifrån enkla datafiler, med verktyg för redigerare och AI-assistenter.",
+    "En Python-verktygslåda som omvandlar kontoutdrag i flera format till strukturerade data. Byggd för röriga verkliga filer och för revisionskrav.",
+    "En Rust-applikation för likviditetsfördelning mellan fondstrukturer, som använder prognoser för att styra fördelningen. Avsedd för treasury, fondredovisning och tillgångsallokering.",
+    "Ett Rust-bibliotek för att generera och läsa QR-koder i flera format. Inom betalningar används det för EPC-QR-koder vid SEPA-överföringar, betallänkar för handlare och förstärkt autentisering.",
+    "En Rust-implementation av CRYSTALS-Kyber, NIST FIPS 203-standarden för postkvantnyckelinkapsling.",
+    "Hash- och sammandragsalgoritmer för lagring och verifiering av lösenord, skrivna med kvantmotstånd i åtanke.",
+    "Ett plattformsoberoende kommandoradsverktyg för att generera slumpmässiga lösenord, byggt på granskade kryptografiska primitiver.",
+    "En kodsäkerhetsskanner för åtta språk som förenar statisk analys och taint-analys med LLM-verifiering för att minska falska positiva. Levererar Sigstore-signerade SARIF-, SBOM- och OpenVEX-paket för granskning av leveranskedjan.",
+    "En röstassistent byggd på OpenAI:s GPT-modeller, med PDF-sammanfattningar och cachning av svar. Lämplig för personligt bruk och för ledningsarbete.",
+    "Omvandlar ljud till text i realtid med AI-baserad taligenkänning. Avsedd för att analysera inspelade samtal och möten.",
+    "En kryptografisk tjänst för vanliga behov i applikationer: kryptering, tokenisering, transaktionsauktorisering, kodsignering och hantering av nycklars livscykel.",
+    "En statisk webbplatsgenerator i Rust, säker som standard. Den omfattar WCAG AAA-validering, härdning av CSP och SRI, en innehållspipeline med lokal LLM, ett WebAssembly-mål och stöd för 28 språk.",
+    "En YAML 1.2-implementation helt i Rust. Ingen unsafe-kod, full specifikationsefterlevnad, strömmande serde, ett förlustfritt syntaxträd och validering med JSON Schema. Levereras som bibliotek, CLI, språkserver, MCP-server och WASM-bygge.",
+    "YAML-serialisering och -deserialisering för datastrukturer i Rust, byggd på ramverket Serde.",
+    "Ett loggbibliotek för Rust med strukturerade format, asynkron loggning och konfigurerbar utdata.",
+    "En ställningsgenerator för Rust-bibliotek. Den skapar förifyllda mallfiler för tester, prestandatester och CI.",
+    "Ett datum- och tidsbibliotek för Rust: ISO 8601-formatering, hantering av tidszoner och åtkomst till enskilda datumdelar.",
+    "Generering av slumptal baserad på Mersenne Twister-algoritmen, använd i simuleringar och spel.",
+    "Ett Rust-bibliotek för åtkomst till matematiska och kryptografiska konstanter.",
+    "Ett bibliotek med hjälp- och omslagsfunktioner för Rust.",
+    "En startmall för Static Site Generator, uppsatt för rena och tillgängliga webbplatser. Mallen jag använder när jag startar en ny webbplats.",
+    "Ett modulärt Stylus-bibliotek med komponenter och mixins för webb- och mobillayouter. Den här webbplatsen är byggd på det.",
+    "En publikation om hur banker tillämpar AI, med kundtjänst, bedrägeriupptäckt och drift.",
+    "En publikation om kvantdatorer inom bank och finans, från riskanalys till kryptografi.",
+    "Rådgivning som fraktions-CFO från en finanschef med mer än 20 år inom teknik, om tillväxt, finansiering och finansiell drift.",
+    "Konfigurationsfiler för macOS, Linux och Windows: skript och inställningar för ett utvecklingsflöde."
+  ],
+  "more": [
+    "Läs mer"
+  ],
+  "faq_q": [
+    "Under vilken licens ges de här projekten ut?",
+    "Är de här projekten redo för produktion?",
+    "Hur kan jag bidra eller rapportera ett problem?",
+    "Får jag använda de här biblioteken i en reglerad bankmiljö?",
+    "Erbjuder du kommersiellt stöd eller konsultation?",
+    "Hur följer jag nya utgåvor?"
+  ],
+  "faq_a": [
+    "De flesta projekt är dubbellicensierade under MIT och Apache-2.0, standarden i Rust-ekosystemet, som ger kommersiella användare uttryckliga patenträttigheter utöver tillåtande vidaredistribution. Ett fåtal kundverktyg ges ut enbart under Apache-2.0. Licensfilen i roten av varje utvecklingsarkiv är den auktoritativa källan.",
+    "Många är det. <a href=\"https://pain001.com\">pain001</a> används av banker och betaltjänstleverantörer för att automatisera skapandet av ISO 20022-filer. <a href=\"https://kyberlib.com\">KyberLib</a> följer specifikationen NIST FIPS 203 och levererar testvektorer. Varje arkivs README och CI-märken visar aktuell status; behöver du en särskild garanti för produktionsbruk, hör av dig.",
+    "Varje projekt har ett offentligt GitHub-arkiv under <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Öppna ett ärende som beskriver problemet (ett minimalt återskapande exempel hjälper) eller en pull request kopplad till ett ärende. Bidrag styrs av Developer Certificate of Origin och kräver signerade commits.",
+    "Ja, med de vanliga förbehållen. Biblioteken är fristående arbete med öppen källkod, inte en reglerad produkt. Kör dina normala processer för leveranskedja, säkerhet och granskning av beroenden, såsom vendoring genom din interna spegel, skanning med SBOM-verktyg och låsning till Git-SHA eller kryptografisk hash, innan du driftsätter i produktionsinfrastruktur för betalningar.",
+    "Ja, i utvalda fall. Uppdragen rör migrering till ISO 20022, färdplaner för migrering till postkvantkryptografi och tillämpad AI inom finansiella tjänster. <a href=\"/contact/\">Hör av dig</a> med en kort beskrivning, din tidplan och eventuella förutsättningar.",
+    "Varje daterat inlägg på den här webbplatsen aviseras via <a href=\"/rss.xml\">RSS-flödet</a> och nyhetsbrevet <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Enskilda arkiv publicerar också utgåvor på GitHub, som du kan bevaka direkt."
+  ],
+  "gh_pushed_template": "senaste commit för {age} sedan"
+}

@@ -1,0 +1,156 @@
+{
+  "_comment": "Positional /projects/ body copy. Arrays align with the English page in document order; see scripts/generators/build_translations/_projects.py. gh_pushed_template takes {age} verbatim from the GitHub push date.",
+  "kpi": [
+    "Zazzagewar buɗaɗɗen tushe",
+    "Taurarin GitHub",
+    "Rubuce-rubucen da Sigstore ya sa hannu",
+    "Shekaru a aikace"
+  ],
+  "setup_kicker": [
+    "AN GINA SHI DON HIDIMOMIN KUƊI"
+  ],
+  "setup_headline": [
+    "Fannoni uku na aiki. "
+  ],
+  "setup_soft": [
+    "Biyan kuɗi, tsaro da kayan aiki."
+  ],
+  "area_alt": [
+    "Hoton mahaɗan hanyoyin birni daga sama da dare, a matsayin siffar hanyoyin biyan kuɗi tsakanin ƙasashe.",
+    "Filin haske mai shuɗi na zube, a matsayin siffar sirrantawa ta bayan-kwantum ga tsarin kuɗi.",
+    "Layukan gine-gine masu tsafta cikin haske mai laushi, a matsayin siffar ginshiƙai amintattu ga masu haɓakawa."
+  ],
+  "area_kicker": [
+    "BIYAN KUƊI DA ISO 20022",
+    "TSARO NA BAYAN-KWANTUM",
+    "DANDALIN MASU HAƁAKAWA"
+  ],
+  "area_headline": [
+    "Biyan kuɗi cikin <span class=\"ac\">mizanin duniya.</span>",
+    "Tsaro fiye da <span class=\"ac\">zamanin RSA.</span>",
+    "Ginshiƙai ga <span class=\"ac\">injiniyoyinku.</span>"
+  ],
+  "area_text": [
+    "ISO 20022 yana ɗaukar cikakken zagayen rayuwar saƙo. Waɗannan ɗakunan karatu suna ƙirƙirar fayilolin farawa na <strong>pain.001</strong>, suna gina da tantance canja wurin <strong>pacs.008</strong>, suna karanta bayanan asusu na <strong>camt.053</strong>, kuma suna kula da sarrafa asusu na <strong>acmt.001</strong>, tare da masu tantance tsofaffin tsare-tsare. Za ka iya ɗaukar ɗakin karatu ɗaya a lokaci guda maimakon maye gurbin babban tsari.",
+    "Wasu bayanan kuɗi na ci gaba da zama masu mahimmanci har shekaru da yawa — tsawon lokacin da ya isa a karanta bayanan da aka tattara yau bayan kwamfutocin kwantum sun balaga. Waɗannan ɗakunan karatu na Rust suna aiwatar da <strong>ML-KEM (CRYSTALS-Kyber, NIST FIPS 203)</strong> tare da rufaffiyar taƙaitawa da abubuwan da suka danganta, don haka ƙaura za ta iya farawa kafin wa'adi ya tilasta ta.",
+    "Waɗannan ɗakunan karatu na Rust ne suka gina wannan shafin suka kuma tsare shi. Daga cikinsu akwai <strong>noyalib</strong> don YAML da <strong>Static Site Generator</strong> kansa, waɗanda ake fitarwa tare da jerin abubuwan CycloneDX da sa hannun Sigstore. Injiniyoyinku suna gina a kansu maimakon kula da makamancinsu a cikin gida."
+  ],
+  "area_cta": [
+    "Karanta labarin biyan kuɗi",
+    "Karanta labarin tsaro",
+    "Karanta labarin dandali"
+  ],
+  "cat_kicker": [
+    "KAYAN AIKIN KUƊI MAI SARRAFA KANSA",
+    "TSARON KUƊI NA BAYAN-KWANTUM",
+    "HANKALI NA WUCIN GADI A AIKACE DA BAYANAI GA SHUGABANNI",
+    "FASAHAR KAMFANI MAI MULKIN KANTA",
+    "YANAR GIZO, BUGA DA MUHALLIN AIKI"
+  ],
+  "finale_eyebrow": [
+    "TUNTUƁA"
+  ],
+  "finale_lede": [
+    "Kana shirin ƙaura zuwa ISO 20022, dubawa ta bayan-kwantum, ko hankali na wucin gadi a aikace a muhallin gaskiya? Gaya mini abin da kake ginawa. Zan nuna maka inda waɗannan kayan aikin suka dace."
+  ],
+  "finale_cta": [
+    "Tuntuɓe ni"
+  ],
+  "h2": [
+    "Bayanan kuɗi, an warware su.",
+    "Amintacce a gaban kwantum. A shirye ga kamfani.",
+    "Yi tambaya. Karɓi taƙaitawa.",
+    "Na'urarka. Bayananka.",
+    "Fitar da shi yadda kake so.",
+    "Ka gina a kansa. Ko mu gina shi tare."
+  ],
+  "lede": [
+    "Fayilolin biyan kuɗi da bayanan asusu, ba tare da tsangwama ba. Waɗannan kayan aikin suna ƙirƙirar cikakken zagayen rayuwar saƙon ISO 20022 kuma suna karanta bayanan asusu masu rikitarwa na duniyar gaskiya da daidaito tabbatacce. Kawo fayilolin CSV, PDF ko bayanan bayananka. Bayanan kawai za su gudana.",
+    "Tsaro da aka gina don zamanin kwantum, ana amfani da shi tun yau. Waɗannan ɗakunan karatu suna bin mizanan NIST na naɗe maɓalli da rufaffiyar taƙaitawa, don ka shirya kayan aikin kuɗi don nan gaba tun kafin barazanar ta iso.",
+    "Hankali na wucin gadi da aka sa a aikin yau da kullum. Ka duba lambar shirye-shirye don neman rauni, ka mai da tambaya taƙaitawa mai tsari, kuma ka yi aiki da murya. A kan sharuɗɗanka, ba tare da ɗaure kanka ga mai kaya ɗaya ba.",
+    "Ginshiƙai da za ka iya mallaka. Ɗakunan karatu na Rust da aka bincika, masu tsaron ƙwaƙwalwa, suna aiki a kan kayan aikinka kuma ana fitar da su tare da jerin abubuwan software da sa hannun Sigstore. Karanta kowane layi. Kawo shi cikin gida. Ka riƙe shi a can.",
+    "Samfura, tsarin CSS, mujallu biyu na masana'antu, da tsarin da za a iya sake samar da shi wanda yake fitar da su duka. Tsarin da wannan shafin ke gudana a kansa."
+  ],
+  "alt": [
+    "Tambarin ɗakin karatu na biyan kuɗi mai buɗaɗɗen tushe pain001",
+    "Tambarin kayan aikin ISO 20022 pacs008",
+    "Alamar tsarin bayanan asusu camt053",
+    "Alamar tsarin sarrafa asusu acmt001",
+    "Tambarin Bank Statement Parser",
+    "Alamar NaluFX, rarraba kuɗi da hankali na wucin gadi cikin Rust",
+    "Alamar QRC, ɗakin karatu na lambobin QR cikin Rust",
+    "Tambarin KyberLib",
+    "Tambarin ɗakin karatu na Hash (HSH) cikin Rust",
+    "Tambarin Password Generator Pro",
+    "Tambarin Euxis, mai binciken tsaron lamba mai buɗaɗɗen tushe",
+    "Tambarin Àkàndé, mataimakin murya na hankali na wucin gadi",
+    "Tambarin Audio Analyser",
+    "Tambarin Crypto Service Suite",
+    "Tambarin Static Site Generator",
+    "Tambarin yanayin YAML 1.2 cikin Rust mai suna noyalib",
+    "Tambarin Serde YML",
+    "Tambarin ɗakin karatu na RustLogs (RLG)",
+    "Tambarin LibMake",
+    "Tambarin ɗakin karatu na DateTime (DTT) cikin Rust",
+    "Tambarin ɗakin karatu na Random (VRD) cikin Rust",
+    "Tambarin ɗakin karatu na Common (CMN) cikin Rust",
+    "Tambarin ɗakin karatu na Mini Functions cikin Rust",
+    "Tambarin Kaishi, samfurin farawa",
+    "Tambarin Skeletonic Stylus Library",
+    "Tambarin mujallar Banking On AI",
+    "Tambarin mujallar Banking On Quantum",
+    "Tambarin shafin yanar gizo na L90S",
+    "Tambarin aikin Dotfiles"
+  ],
+  "excerpt": [
+    "Yana ƙirƙirar fayilolin ISO 20022 pain.001 daga CSV ko SQLite. Bankuna da masu bayar da hidimar biyan kuɗi suna amfani da shi don samar da saƙonnin canja wuri masu tsari ba tare da sake gina tsarin da suke da shi ba.",
+    "Yana ƙirƙirar, tantancewa da isar da saƙonnin ISO 20022 pacs.008 don canja wurin abokan ciniki tsakanin bankuna. Ya ƙunshi tantancewa da JSON Schema da XSD, duba IBAN a ƙasashe 75, da ɓoye bayanan sirri don GDPR da PCI-DSS.",
+    "Yana karanta bayanan asusu na ISO 20022 camt.053 daga banki zuwa abokin ciniki kuma yana fitar da ma'auni, shigarwa da cikakkun bayanan ma'amala zuwa bayanai masu tsari. Ya ƙunshi ɗora MT940, fitarwa zuwa XLSX, da haɗin gwiwa da masu gyara da mataimakan hankali na wucin gadi.",
+    "Saƙonnin ISO 20022 don sarrafa asusu. Yana buɗe, kula, rufe, canja da tabbatar da asusun banki daga fayilolin bayanai masu sauƙi, tare da kayan aiki ga masu gyara da mataimakan hankali na wucin gadi.",
+    "Kayan aiki na Python da ke mai da bayanan asusu na tsare-tsare daban-daban zuwa bayanai masu tsari. An gina shi don fayilolin duniyar gaskiya masu rikitarwa da kuma bukatun binciken lissafi.",
+    "Aikace-aikace na Rust don rarraba kuɗi tsakanin tsarin asusun zuba jari, wanda yake amfani da hasashe don jagorantar rabon. An yi shi ga baitulmali, lissafin asusun zuba jari da rarraba dukiya.",
+    "Ɗakin karatu na Rust don ƙirƙira da karanta lambobin QR cikin tsare-tsare daban-daban. A biyan kuɗi ana amfani da shi ga lambobin EPC QR a canja wurin SEPA, hanyoyin karɓar kuɗi ga 'yan kasuwa, da ƙarfafa tabbatar da ainihi.",
+    "Aiwatar da CRYSTALS-Kyber cikin Rust, wato mizanin NIST FIPS 203 na naɗe maɓalli bayan-kwantum.",
+    "Hanyoyin rufaffiyar taƙaitawa don adanawa da tabbatar da kalmomin sirri, an rubuta su da kallon juriya ga kwantum.",
+    "Kayan aiki na layin umarni mai aiki a dandamali daban-daban don ƙirƙirar kalmomin sirri bazuwar, wanda ya dogara ga tushen sirranta da aka bincika.",
+    "Mai binciken tsaron lamba don harsuna takwas, wanda ya haɗa nazarin tsaye da nazarin gurɓata da tabbatarwa ta babban samfurin harshe don rage faɗakarwar ƙarya. Yana fitar da fakitin SARIF, SBOM da OpenVEX da Sigstore ya sa hannu domin dubawar sarƙar samarwa.",
+    "Mataimakin murya da aka gina a kan samfuran GPT na OpenAI, tare da taƙaitawar PDF da ajiyar amsoshi. Ya dace da amfanin kansa da na shugabanci.",
+    "Yana mai da sauti rubutu a lokaci guda ta hanyar gane magana da hankali na wucin gadi. An yi shi don nazarin tattaunawa da tarurruka da aka rikodi.",
+    "Hidimar sirranta don bukatun aikace-aikace na yau da kullum: rufewa, mai da alama, ba da izinin ma'amala, sa hannu a lamba, da sarrafa zagayen rayuwar maɓalli.",
+    "Mai ƙirƙirar shafuka tsaye cikin Rust, mai tsaro tun daga farko. Ya ƙunshi tantancewar WCAG AAA, ƙarfafa CSP da SRI, hanyar abun ciki da samfurin harshe na cikin gida, makasudin WebAssembly, da tallafin harsuna 28.",
+    "Aiwatar da YAML 1.2 cikin Rust kaɗai. Babu lambar unsafe, cikakken bin ƙayyadaddun tsari, serde mai gudana, itacen tsarin jimla ba tare da asara ba, da tantancewar JSON Schema. Ana fitar da shi a matsayin ɗakin karatu, kayan aiki na layin umarni, sabar harshe, sabar MCP da ginin WASM.",
+    "Jerawa da wargaza jerawar YAML don tsarin bayanai na Rust, an gina shi a kan tsarin Serde.",
+    "Ɗakin karatu na rikodin ayyuka don Rust mai tsare-tsare masu tsari, rikodi mara daidaituwa, da fitarwa mai saitawa.",
+    "Mai ƙirƙirar ƙashin baya don ɗakunan karatu na Rust. Yana fitar da fayilolin samfuri da aka riga aka cika don gwaje-gwaje, awon aiki da haɗakarwa mai ci gaba.",
+    "Ɗakin karatu na kwanan wata da lokaci don Rust: tsara bisa ISO 8601, sarrafa yankunan lokaci, da isa ga sassan kwanan wata ɗaya bayan ɗaya.",
+    "Ƙirƙirar lambobi bazuwar bisa hanyar Mersenne Twister, ana amfani da ita a kwaikwayo da wasanni.",
+    "Ɗakin karatu na Rust don isa ga madaidaitan lissafi da na sirranta.",
+    "Ɗakin karatu na ayyukan taimako da na nannaɗewa don Rust.",
+    "Samfurin farawa don Static Site Generator, an shirya shi don shafuka masu tsafta da masu isa ga kowa. Shi ne samfurin da nake amfani da shi sa'ad da nake fara sabon shafi.",
+    "Ɗakin karatu na Stylus mai sassa tare da abubuwa da gaurayawa don shimfidar yanar gizo da wayar hannu. Wannan shafin a kansa aka gina shi.",
+    "Mujalla kan yadda bankuna ke amfani da hankali na wucin gadi, tun daga hidimar abokan ciniki, gano zamba, har zuwa ayyukan yau da kullum.",
+    "Mujalla kan lissafin kwantum a banki da kuɗi, tun daga nazarin haɗari har zuwa sirranta.",
+    "Shawarwarin shugabar kuɗi ta ɗan lokaci daga jagorar kuɗi mai fiye da shekaru 20 a fasaha, kan haɓaka, tara kuɗi da ayyukan kuɗi.",
+    "Fayilolin saiti don macOS, Linux da Windows: rubutattun umarni da saituna don tafarkin aikin haɓakawa."
+  ],
+  "more": [
+    "Ƙara sani"
+  ],
+  "faq_q": [
+    "Da wace lasisi ake fitar da waɗannan ayyukan?",
+    "Waɗannan ayyukan a shirye suke don amfani na gaske?",
+    "Ta yaya zan ba da gudummawa ko in ba da rahoton matsala?",
+    "Zan iya amfani da waɗannan ɗakunan karatu a muhallin banki mai ƙa'ida?",
+    "Kuna ba da tallafin kasuwanci ko shawarwari?",
+    "Ta yaya zan bi sabbin fitarwa?"
+  ],
+  "faq_a": [
+    "Yawancin ayyukan suna da lasisi biyu, MIT da Apache-2.0, wato mizanin yanayin Rust, wanda ke ba masu amfani na kasuwanci haƙƙin mallaka a fili baya ga sake rarrabawa cikin sauƙi. Ƙananan kayan aikin abokan ciniki ana fitar da su da Apache-2.0 kaɗai. Fayil ɗin lasisi da ke tushen kowane ma'ajiya shi ne hujja ta ƙarshe.",
+    "Da yawa suna a shirye. Bankuna da masu bayar da hidimar biyan kuɗi suna amfani da <a href=\"https://pain001.com\">pain001</a> don sarrafa ƙirƙirar fayilolin ISO 20022 ta kansa. <a href=\"https://kyberlib.com\">KyberLib</a> yana bin ƙayyadaddun NIST FIPS 203 kuma yana zuwa da vektoran gwaji. Fayil ɗin README da alamomin CI na kowace ma'ajiya suna nuna yanayin yanzu; idan kana buƙatar tabbaci na musamman don amfani na gaske, ka tuntuɓe ni.",
+    "Kowane aiki yana da ma'ajiyar GitHub a bainar jama'a a <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Ka buɗe batu inda ka bayyana matsalar (ƙaramin misali da za a iya sake samarwa yana taimakawa sosai) ko ka aika pull request da ke haɗe da wani batu. Gudummawa suna ƙarƙashin Developer Certificate of Origin kuma suna buƙatar commit masu sa hannu.",
+    "Eh, tare da gargaɗin da aka saba. Waɗannan ɗakunan karatu aiki ne mai zaman kansa na buɗaɗɗen tushe, ba kaya mai ƙa'ida ba. Ka gudanar da matakanka na yau da kullum kan sarƙar samarwa, tsaro da dubawar abubuwan da ake dogara da su — kamar shigar da su ta madubinka na cikin gida, dubawa da kayan aikin SBOM, da ɗaure su a kan Git SHA ko rufaffiyar taƙaitawa — kafin ka kai su kayan aikin biyan kuɗi na gaske.",
+    "Eh, a zaɓe. Ayyukan sun mai da hankali kan ƙaura zuwa ISO 20022, taswirar hanya ta ƙaura zuwa sirranta ta bayan-kwantum, da hankali na wucin gadi a aikace a hidimomin kuɗi. Ka <a href=\"/contact/\">tuntuɓe ni</a> da taƙaitaccen bayani, lokacinka, da duk wani ƙuntatawa.",
+    "Ana sanar da kowace rubutacciyar kasida mai kwanan wata a wannan shafin ta <a href=\"/rss.xml\">jerin RSS</a> da wasiƙar labarai ta <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Ma'ajiyoyi ɗaya-ɗaya suma suna buga fitarwa a GitHub, waɗanda za ka iya bi kai tsaye."
+  ],
+  "gh_pushed_template": "commit na ƙarshe {age} da suka wuce"
+}

@@ -1,0 +1,156 @@
+{
+  "_comment": "Positional /projects/ body copy. Arrays align with the English page in document order; see scripts/generators/build_translations/_projects.py. gh_pushed_template takes {age} verbatim from the GitHub push date.",
+  "kpi": [
+    "Muat turun sumber terbuka",
+    "Bintang GitHub",
+    "Artikel bertandatangan Sigstore",
+    "Tahun beroperasi"
+  ],
+  "setup_kicker": [
+    "DIBINA UNTUK PERKHIDMATAN KEWANGAN"
+  ],
+  "setup_headline": [
+    "Tiga bidang kerja. "
+  ],
+  "setup_soft": [
+    "Pembayaran, keselamatan dan peralatan."
+  ],
+  "area_alt": [
+    "Gambar udara persimpangan bertingkat kota pada waktu malam, sebagai gambaran laluan pembayaran rentas sempadan.",
+    "Medan cahaya biru abstrak, sebagai gambaran kriptografi pascakuantum untuk sistem kewangan.",
+    "Garis seni bina yang kemas dalam cahaya lembut, sebagai gambaran asas yang boleh dipercayai bagi pembangun."
+  ],
+  "area_kicker": [
+    "PEMBAYARAN & ISO 20022",
+    "KESELAMATAN PASCAKUANTUM",
+    "PLATFORM PEMBANGUN"
+  ],
+  "area_headline": [
+    "Pembayaran dalam piawaian <span class=\"ac\">global.</span>",
+    "Keselamatan melangkaui <span class=\"ac\">era RSA.</span>",
+    "Asas untuk <span class=\"ac\">jurutera anda.</span>"
+  ],
+  "area_text": [
+    "ISO 20022 merangkumi keseluruhan kitaran hayat mesej. Pustaka ini menjana fail permulaan <strong>pain.001</strong>, membina dan mengesahkan pemindahan <strong>pacs.008</strong>, membaca penyata <strong>camt.053</strong>, serta menguruskan pengurusan akaun <strong>acmt.001</strong>, lengkap dengan penghurai untuk format lama. Anda boleh menerima pakai satu pustaka pada satu masa, bukannya menggantikan sistem teras.",
+    "Sesetengah rekod kewangan kekal sensitif selama berdekad-dekad, cukup lama sehingga data yang dikumpul hari ini boleh dibaca apabila komputer kuantum matang. Pustaka Rust ini melaksanakan <strong>ML-KEM (CRYSTALS-Kyber, NIST FIPS 203)</strong> bersama pencincangan dan primitif berkaitan, supaya peralihan boleh bermula sebelum tarikh akhir memaksanya.",
+    "Pustaka Rust yang sama yang membina dan melindungi tapak ini. Antaranya <strong>noyalib</strong> untuk YAML dan <strong>Static Site Generator</strong> itu sendiri, diterbitkan bersama senarai komponen CycloneDX dan tandatangan Sigstore. Jurutera anda membina di atasnya, bukannya menyelenggara padanannya sendiri."
+  ],
+  "area_cta": [
+    "Baca kisah pembayaran",
+    "Baca kisah keselamatan",
+    "Baca kisah platform"
+  ],
+  "cat_kicker": [
+    "INFRASTRUKTUR KEWANGAN AUTOMATIK",
+    "KESELAMATAN KEWANGAN PASCAKUANTUM",
+    "AI GUNAAN & MAKLUMAT UNTUK PIMPINAN",
+    "TEKNOLOGI PERUSAHAAN BERDAULAT",
+    "WEB, PENERBITAN & PERSEKITARAN KERJA"
+  ],
+  "finale_eyebrow": [
+    "HUBUNGI"
+  ],
+  "finale_lede": [
+    "Sedang merancang peralihan ISO 20022, semakan pascakuantum, atau AI gunaan dalam persekitaran sebenar? Beritahu saya apa yang anda bina. Saya akan tunjukkan di mana peralatan ini sesuai."
+  ],
+  "finale_cta": [
+    "Hubungi saya"
+  ],
+  "h2": [
+    "Data kewangan, terungkai.",
+    "Selamat menghadapi kuantum. Sedia untuk perusahaan.",
+    "Ajukan satu soalan. Dapatkan ringkasannya.",
+    "Perkakasan anda. Data anda.",
+    "Terbitkan mengikut cara anda.",
+    "Bina di atasnya. Atau bina bersama saya."
+  ],
+  "lede": [
+    "Fail pembayaran dan penyata bank, tanpa geseran. Peralatan ini menjana keseluruhan kitaran hayat mesej ISO 20022 dan membaca penyata dunia sebenar yang bersepah dengan kepersisan berketentuan. Bawalah fail CSV, PDF atau pangkalan data anda. Datanya mengalir begitu sahaja.",
+    "Keselamatan yang dibina untuk era kuantum, digunakan hari ini. Pustaka ini mengikuti piawaian NIST bagi pengkapsulan kunci dan pencincangan, supaya anda menyiapkan infrastruktur kewangan untuk masa depan jauh sebelum ancaman tiba.",
+    "AI yang dikerahkan ke dalam operasi harian. Imbas kod untuk mencari kerentanan, tukar satu soalan menjadi ringkasan berstruktur, dan bekerjalah dengan suara. Atas syarat anda, tanpa terikat kepada mana-mana pembekal.",
+    "Asas yang boleh anda miliki. Pustaka Rust yang telah diaudit dan selamat dari segi ingatan, berjalan pada infrastruktur anda sendiri dan diterbitkan dengan senarai komponen perisian serta tandatangan Sigstore. Baca setiap barisnya. Bawa masuk. Simpan di dalam.",
+    "Templat, sebuah rangka kerja CSS, dua penerbitan industri, dan persediaan boleh dihasilkan semula yang menerbitkan kesemuanya. Timbunan yang menjalankan tapak ini."
+  ],
+  "alt": [
+    "Sepanduk pustaka pembayaran sumber terbuka pain001",
+    "Sepanduk kit alat ISO 20022 pacs008",
+    "Logo suite penyata bank camt053",
+    "Logo suite pengurusan akaun acmt001",
+    "Sepanduk Bank Statement Parser",
+    "Logo NaluFX, peruntukan tunai dipacu AI dalam Rust",
+    "Logo QRC, pustaka kod QR dalam Rust",
+    "Sepanduk KyberLib",
+    "Sepanduk pustaka Hash (HSH) dalam Rust",
+    "Sepanduk Password Generator Pro",
+    "Sepanduk Euxis, pengimbas keselamatan kod sumber terbuka",
+    "Sepanduk Àkàndé, pembantu suara AI termaju",
+    "Sepanduk Audio Analyser",
+    "Sepanduk Crypto Service Suite",
+    "Sepanduk Static Site Generator",
+    "Sepanduk ekosistem YAML 1.2 dalam Rust bernama noyalib",
+    "Sepanduk Serde YML",
+    "Sepanduk pustaka RustLogs (RLG)",
+    "Sepanduk LibMake",
+    "Sepanduk pustaka DateTime (DTT) dalam Rust",
+    "Sepanduk pustaka Random (VRD) dalam Rust",
+    "Sepanduk pustaka Common (CMN) dalam Rust",
+    "Sepanduk pustaka Mini Functions dalam Rust",
+    "Sepanduk Kaishi, sebuah templat permulaan",
+    "Sepanduk Skeletonic Stylus Library",
+    "Sepanduk penerbitan Banking On AI",
+    "Sepanduk penerbitan Banking On Quantum",
+    "Sepanduk laman web L90S",
+    "Sepanduk projek Dotfiles"
+  ],
+  "excerpt": [
+    "Menjana fail ISO 20022 pain.001 daripada CSV atau SQLite. Bank dan penyedia perkhidmatan pembayaran menggunakannya untuk menghasilkan mesej pemindahan berstruktur tanpa membina semula sistem sedia ada.",
+    "Menjana, mengesahkan dan menghantar mesej ISO 20022 pacs.008 bagi pemindahan pelanggan antara bank. Merangkumi pengesahan JSON Schema dan XSD, semakan IBAN di 75 negara, serta pelindungan data peribadi untuk GDPR dan PCI-DSS.",
+    "Membaca penyata ISO 20022 camt.053 daripada bank kepada pelanggan dan mengeluarkan baki, catatan serta butiran transaksi menjadi data berstruktur. Merangkumi pemuatan MT940, eksport XLSX, serta penyepaduan dengan penyunting dan pembantu AI.",
+    "Pemesejan ISO 20022 untuk pengurusan akaun. Membuka, menyelenggara, menutup, memindahkan dan mengesahkan akaun bank daripada fail data biasa, dengan peralatan untuk penyunting dan pembantu AI.",
+    "Kit alat Python yang menukar penyata bank dalam beberapa format menjadi data berstruktur. Dibina untuk fail dunia sebenar yang bersepah dan untuk keperluan audit.",
+    "Aplikasi Rust bagi peruntukan tunai merentas struktur dana, yang menggunakan ramalan untuk memandu pembahagiannya. Ditujukan kepada perbendaharaan, perakaunan dana dan peruntukan aset.",
+    "Pustaka Rust untuk menjana dan membaca kod QR dalam beberapa format. Dalam pembayaran, ia digunakan bagi kod EPC QR dalam pemindahan SEPA, pautan kutipan bagi peniaga, dan pengesahan diperkukuh.",
+    "Pelaksanaan CRYSTALS-Kyber dalam Rust, iaitu piawaian NIST FIPS 203 bagi pengkapsulan kunci pascakuantum.",
+    "Algoritma cincang dan ringkasan untuk penyimpanan dan pengesahan kata laluan, ditulis dengan pendirian tahan kuantum.",
+    "Alat baris arahan merentas platform untuk menjana kata laluan rawak, disokong primitif kriptografi yang telah diaudit.",
+    "Pengimbas keselamatan kod bagi lapan bahasa yang menggabungkan analisis statik dan analisis pencemaran dengan pengesahan model bahasa besar untuk mengurangkan amaran palsu. Menghasilkan pakej SARIF, SBOM dan OpenVEX bertandatangan Sigstore bagi semakan rantaian bekalan.",
+    "Pembantu suara yang dibina atas model GPT OpenAI, dengan ringkasan PDF dan simpanan jawapan. Sesuai untuk kegunaan peribadi dan pengurusan tertinggi.",
+    "Menukar audio kepada teks secara masa nyata menggunakan pengecaman pertuturan berasaskan AI. Ditujukan untuk menganalisis perbualan dan mesyuarat yang dirakam.",
+    "Perkhidmatan kriptografi bagi keperluan lazim aplikasi: penyulitan, penokenan, keizinan transaksi, penandatanganan kod, dan pengurusan kitaran hayat kunci.",
+    "Penjana tapak statik dalam Rust, selamat secara lalai. Merangkumi pengesahan WCAG AAA, pengukuhan CSP dan SRI, saluran kandungan dengan model bahasa setempat, sasaran WebAssembly, dan sokongan 28 bahasa.",
+    "Pelaksanaan YAML 1.2 dalam Rust tulen. Tiada kod unsafe, pematuhan penuh kepada spesifikasi, serde secara strim, pepohon sintaks tanpa kehilangan, dan pengesahan JSON Schema. Diterbitkan sebagai pustaka, alat baris arahan, pelayan bahasa, pelayan MCP dan binaan WASM.",
+    "Penyirian dan penyahsirian YAML bagi struktur data Rust, dibina atas rangka kerja Serde.",
+    "Pustaka pengelogan untuk Rust dengan format berstruktur, pengelogan tak segerak, dan keluaran boleh tetapkan.",
+    "Penjana rangka bagi pustaka Rust. Ia menghasilkan fail templat terisi awal untuk ujian, penanda aras dan penyepaduan berterusan.",
+    "Pustaka tarikh dan masa untuk Rust: pemformatan ISO 8601, pengendalian zon waktu, dan capaian kepada setiap komponen tarikh.",
+    "Penjanaan nombor rawak berasaskan algoritma Mersenne Twister, digunakan dalam simulasi dan permainan.",
+    "Pustaka Rust untuk mencapai pemalar matematik dan kriptografi.",
+    "Pustaka fungsi utiliti dan fungsi pembalut untuk Rust.",
+    "Templat permulaan bagi Static Site Generator, disediakan untuk tapak yang kemas dan mudah dicapai. Inilah templat yang saya gunakan apabila memulakan tapak baharu.",
+    "Pustaka Stylus bermodul dengan komponen dan mixin bagi susun atur web dan mudah alih. Tapak ini dibina di atasnya.",
+    "Penerbitan tentang cara bank menerapkan AI, merangkumi khidmat pelanggan, pengesanan penipuan dan operasi.",
+    "Penerbitan tentang pengkomputeran kuantum dalam perbankan dan kewangan, daripada analisis risiko hinggalah kriptografi.",
+    "Khidmat nasihat ketua pegawai kewangan separuh masa daripada seorang pemimpin kewangan dengan lebih 20 tahun dalam teknologi, merangkumi pertumbuhan, pembiayaan dan operasi kewangan.",
+    "Fail tetapan untuk macOS, Linux dan Windows: skrip dan konfigurasi bagi satu aliran kerja pembangunan."
+  ],
+  "more": [
+    "Ketahui lebih lanjut"
+  ],
+  "faq_q": [
+    "Di bawah lesen apakah projek-projek ini dikeluarkan?",
+    "Adakah projek-projek ini sedia untuk operasi sebenar?",
+    "Bagaimana saya boleh menyumbang atau melaporkan masalah?",
+    "Bolehkah saya menggunakan pustaka ini dalam persekitaran perbankan yang dikawal selia?",
+    "Adakah anda menawarkan sokongan komersial atau perundingan?",
+    "Bagaimana saya mengikuti keluaran baharu?"
+  ],
+  "faq_a": [
+    "Kebanyakan projek berlesen dua, MIT dan Apache-2.0, iaitu piawaian ekosistem Rust, yang memberi pengguna komersial hak paten yang jelas di samping pengedaran semula yang longgar. Sebilangan kecil alat pelanggan dikeluarkan di bawah Apache-2.0 sahaja. Fail lesen di akar setiap repositori ialah sumber yang berwibawa.",
+    "Banyak yang sudah sedia. <a href=\"https://pain001.com\">pain001</a> digunakan oleh bank dan penyedia perkhidmatan pembayaran untuk mengautomasikan penghasilan fail ISO 20022. <a href=\"https://kyberlib.com\">KyberLib</a> mengikuti spesifikasi NIST FIPS 203 dan disertakan vektor ujian. Fail README dan lencana CI setiap repositori menunjukkan status semasa; jika anda perlukan jaminan tertentu untuk kegunaan sebenar, sila hubungi saya.",
+    "Setiap projek mempunyai repositori GitHub awam di <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Bukalah isu yang menerangkan masalah (contoh penghasilan semula yang paling ringkas amat membantu) atau pull request yang terpaut kepada sesuatu isu. Sumbangan tertakluk kepada Developer Certificate of Origin dan memerlukan commit bertandatangan.",
+    "Boleh, dengan syarat yang lazim. Pustaka ini ialah kerja sumber terbuka yang berdiri sendiri, bukan produk yang dikawal selia. Jalankan proses rantaian bekalan, keselamatan dan semakan kebergantungan anda seperti biasa, misalnya menariknya melalui cermin dalaman, mengimbas dengan alat SBOM, dan menambat pada Git SHA atau cincangan kriptografi, sebelum menggunakannya pada infrastruktur pembayaran sebenar.",
+    "Ya, secara terpilih. Tugasan tertumpu pada peralihan ISO 20022, pelan hala tuju peralihan kriptografi pascakuantum, dan AI gunaan dalam perkhidmatan kewangan. <a href=\"/contact/\">Hubungi saya</a> dengan ringkasan pendek, jadual anda, dan sebarang kekangan.",
+    "Setiap tulisan bertarikh di tapak ini diumumkan melalui <a href=\"/rss.xml\">suapan RSS</a> dan buletin <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Repositori masing-masing turut menerbitkan keluaran di GitHub, yang boleh anda pantau terus."
+  ],
+  "gh_pushed_template": "commit terakhir {age} lalu"
+}

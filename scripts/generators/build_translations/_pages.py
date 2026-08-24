@@ -32,6 +32,7 @@ from ._maps import (
     rewrite_newsroom_card_titles,
 )
 from ._playlists import localize_playlists_page
+from ._projects import localize_projects_page
 
 # ---------------------------------------------------------------------------
 # Hub: /fr/articles/
@@ -387,6 +388,13 @@ def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-pa
                 f"build_translations: playlists[{st.LANG_CODE}] — "
                 f"{len(missed)} anchor(s) not found; first: {missed[0]!r}"
             )
+
+    # /projects/ is 1,583 words of page copy in a generated 29-card
+    # layout. Swap the text and keep the markup — see _projects.py.
+    if slug == "projects":
+        shell, problems = localize_projects_page(shell, st.LANG_CODE)
+        for problem in problems:
+            print(f"build_translations: projects[{st.LANG_CODE}] — {problem}")
 
     # Rewrite EN article URLs inside the body to FR counterparts.
     shell = rewrite_en_urls(shell)

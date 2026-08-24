@@ -1,0 +1,156 @@
+{
+  "_comment": "Positional /projects/ body copy. Arrays align with the English page in document order; see scripts/generators/build_translations/_projects.py. gh_pushed_template takes {age} verbatim from the GitHub push date.",
+  "kpi": [
+    "Stažení otevřeného softwaru",
+    "Hvězdy na GitHubu",
+    "Články podepsané Sigstore",
+    "Roky v produkci"
+  ],
+  "setup_kicker": [
+    "POSTAVENO PRO FINANČNÍ SLUŽBY"
+  ],
+  "setup_headline": [
+    "Tři oblasti práce. "
+  ],
+  "setup_soft": [
+    "Platby, bezpečnost a nástroje."
+  ],
+  "area_alt": [
+    "Letecký pohled na dálniční křižovatky v noci jako obraz přeshraničních platebních cest.",
+    "Abstraktní pole modrého světla jako obraz postkvantové kryptografie ve finančních systémech.",
+    "Čisté architektonické linie v měkkém světle jako obraz spolehlivých základů pro vývojáře."
+  ],
+  "area_kicker": [
+    "PLATBY A ISO 20022",
+    "POSTKVANTOVÁ BEZPEČNOST",
+    "PLATFORMA PRO VÝVOJÁŘE"
+  ],
+  "area_headline": [
+    "Platby ve světovém <span class=\"ac\">standardu.</span>",
+    "Bezpečnost za hranicí <span class=\"ac\">éry RSA.</span>",
+    "Základy pro vaše <span class=\"ac\">inženýry.</span>"
+  ],
+  "area_text": [
+    "ISO 20022 pokrývá celý životní cyklus zprávy. Tyto knihovny generují příkazové soubory <strong>pain.001</strong>, sestavují a validují převody <strong>pacs.008</strong>, čtou výpisy <strong>camt.053</strong> a obstarávají správu účtů <strong>acmt.001</strong>, včetně parserů pro starší formáty. Můžete nasazovat jednu knihovnu po druhé místo výměny centrálního systému.",
+    "Některé finanční záznamy zůstávají citlivé po desetiletí, dost dlouho na to, aby data zachycená dnes šla přečíst, až kvantové počítače dozrají. Tyto knihovny v Rustu implementují <strong>ML-KEM (CRYSTALS-Kyber, NIST FIPS 203)</strong> spolu s hashováním a souvisejícími primitivy, takže migrace může začít dřív, než ji vynutí termíny.",
+    "Tytéž knihovny v Rustu, které staví a zabezpečují tento web. Patří mezi ně <strong>noyalib</strong> pro YAML a samotný <strong>Static Site Generator</strong>, vydávané se soupisy CycloneDX SBOM a podpisy Sigstore. Vaši inženýři na nich staví místo toho, aby udržovali obdobná řešení vlastními silami."
+  ],
+  "area_cta": [
+    "Přečíst příběh o platbách",
+    "Přečíst příběh o bezpečnosti",
+    "Přečíst příběh o platformě"
+  ],
+  "cat_kicker": [
+    "AUTOMATIZOVANÁ FINANČNÍ INFRASTRUKTURA",
+    "POSTKVANTOVÁ FINANČNÍ BEZPEČNOST",
+    "APLIKOVANÁ UI A PODKLADY PRO VEDENÍ",
+    "SUVERÉNNÍ PODNIKOVÁ TECHNOLOGIE",
+    "WEB, PUBLIKOVÁNÍ A PROSTŘEDÍ"
+  ],
+  "finale_eyebrow": [
+    "KONTAKT"
+  ],
+  "finale_lede": [
+    "Plánujete migraci na ISO 20022, postkvantovou revizi nebo aplikovanou umělou inteligenci v produkci? Napište mi, co stavíte. Ukážu vám, kam tyto nástroje zapadají."
+  ],
+  "finale_cta": [
+    "Ozvěte se"
+  ],
+  "h2": [
+    "Finanční data, rozmotaná.",
+    "Odolné vůči kvantům. Připravené pro podnik.",
+    "Položte otázku. Dostanete podklad.",
+    "Váš hardware. Vaše data.",
+    "Vydejte to po svém.",
+    "Stavte na tom. Nebo to postavte se mnou."
+  ],
+  "lede": [
+    "Platební soubory a bankovní výpisy bez tření. Tyto nástroje generují celý životní cyklus zprávy ISO 20022 a čtou nepořádné výpisy z praxe s deterministickou přesností. Přineste svá CSV, PDF nebo databáze. Data prostě protečou.",
+    "Bezpečnost postavená pro kvantovou éru, uplatněná už dnes. Tyto knihovny sledují standardy NIST pro zapouzdření klíčů a hashování, takže můžete finanční infrastrukturu zabezpečit do budoucna dlouho předtím, než hrozba dorazí.",
+    "Umělá inteligence nasazená do každodenního provozu. Prohledejte kód na zranitelnosti, proměňte otázku ve strukturovaný podklad a pracujte hlasem. Za vašich podmínek, bez závislosti na dodavateli.",
+    "Základy, které můžete vlastnit. Auditované, paměťově bezpečné knihovny v Rustu, které běží na vaší infrastruktuře a vydávají se se soupisem součástí softwaru a podpisem Sigstore. Přečtěte si každý řádek. Vezměte si ho k sobě. Nechte si ho doma.",
+    "Šablony, CSS framework, dvě oborové publikace a reprodukovatelné nastavení, které to všechno vydává. Stack, na kterém běží tento web."
+  ],
+  "alt": [
+    "Banner otevřené platební knihovny pain001",
+    "Banner sady nástrojů ISO 20022 pacs008",
+    "Logo sady pro bankovní výpisy camt053",
+    "Logo sady pro správu účtů acmt001",
+    "Banner Bank Statement Parser",
+    "Logo NaluFX, rozdělování hotovosti s podporou umělé inteligence v Rustu",
+    "Logo QRC, knihovny QR kódů v Rustu",
+    "Banner KyberLib",
+    "Banner knihovny Hash (HSH) v Rustu",
+    "Banner Password Generator Pro",
+    "Banner Euxis, otevřeného skeneru bezpečnosti kódu",
+    "Banner Àkàndé, pokročilého hlasového asistenta s umělou inteligencí",
+    "Banner Audio Analyser",
+    "Banner Crypto Service Suite",
+    "Banner Static Site Generator",
+    "Banner ekosystému YAML 1.2 v Rustu noyalib",
+    "Banner Serde YML",
+    "Banner knihovny RustLogs (RLG)",
+    "Banner LibMake",
+    "Banner knihovny DateTime (DTT) v Rustu",
+    "Banner knihovny Random (VRD) v Rustu",
+    "Banner knihovny Common (CMN) v Rustu",
+    "Banner knihovny Mini Functions v Rustu",
+    "Banner Kaishi, výchozí šablony",
+    "Banner Skeletonic Stylus Library",
+    "Banner publikace Banking On AI",
+    "Banner publikace Banking On Quantum",
+    "Banner webu L90S",
+    "Banner projektu Dotfiles"
+  ],
+  "excerpt": [
+    "Generuje soubory ISO 20022 pain.001 z CSV nebo SQLite. Banky a poskytovatelé platebních služeb jej používají k tvorbě strukturovaných zpráv o úhradě, aniž by přestavovali stávající systémy.",
+    "Generuje, validuje a doručuje zprávy ISO 20022 pacs.008 pro klientské úhrady mezi bankami. Obsahuje validaci podle JSON Schema a XSD, kontroly IBAN v 75 zemích a maskování osobních údajů pro GDPR a PCI-DSS.",
+    "Čte výpisy ISO 20022 camt.053 od banky ke klientovi a získává zůstatky, položky a detail transakcí do strukturovaných dat. Obsahuje načítání MT940, export do XLSX a integrace s editory a asistenty s umělou inteligencí.",
+    "Zprávy ISO 20022 pro správu účtů. Otevírá, vede, ruší, převádí a ověřuje bankovní účty z prostých datových souborů, s nástroji pro editory a asistenty s umělou inteligencí.",
+    "Sada nástrojů v Pythonu, která převádí bankovní výpisy v několika formátech na strukturovaná data. Postavená pro nepořádné soubory z praxe a pro požadavky auditu.",
+    "Aplikace v Rustu pro rozdělování hotovosti napříč fondovými strukturami, která k rozdělení využívá prognózy. Určená pro treasury, účetnictví fondů a alokaci aktiv.",
+    "Knihovna v Rustu pro generování a čtení QR kódů v několika formátech. V platbách slouží k EPC QR kódům u úhrad SEPA, platebním odkazům pro obchodníky a silnějšímu ověření.",
+    "Implementace CRYSTALS-Kyber v Rustu, standardu NIST FIPS 203 pro postkvantové zapouzdření klíčů.",
+    "Hashovací algoritmy a otisky pro ukládání a ověřování hesel, psané s ohledem na odolnost vůči kvantům.",
+    "Víceplatformní nástroj příkazové řádky pro generování náhodných hesel, postavený na auditovaných kryptografických primitivech.",
+    "Skener bezpečnosti kódu pro osm jazyků, který spojuje statickou analýzu a analýzu toku nedůvěryhodných dat s ověřením jazykovým modelem, aby snížil falešné poplachy. Vydává balíčky SARIF, SBOM a OpenVEX podepsané Sigstore pro revizi dodavatelského řetězce.",
+    "Hlasový asistent postavený na modelech GPT od OpenAI, se souhrny v PDF a ukládáním odpovědí do mezipaměti. Vhodný pro osobní i manažerské použití.",
+    "Převádí zvuk na text v reálném čase pomocí rozpoznávání řeči s umělou inteligencí. Určeno k rozboru nahraných hovorů a jednání.",
+    "Kryptografická služba pro běžné potřeby aplikací: šifrování, tokenizace, autorizace transakcí, podepisování kódu a správa životního cyklu klíčů.",
+    "Generátor statických webů v Rustu, bezpečný ve výchozím nastavení. Zahrnuje validaci WCAG AAA, zpevnění CSP a SRI, obsahovou linku s lokálním jazykovým modelem, cíl WebAssembly a podporu 28 jazyků.",
+    "Implementace YAML 1.2 čistě v Rustu. Žádný kód unsafe, plný soulad se specifikací, proudový serde, bezeztrátový syntaktický strom a validace podle JSON Schema. Vydává se jako knihovna, CLI, jazykový server, server MCP a sestavení WASM.",
+    "Serializace a deserializace YAML pro datové struktury v Rustu, postavená na frameworku Serde.",
+    "Knihovna pro logování v Rustu se strukturovanými formáty, asynchronním logováním a nastavitelným výstupem.",
+    "Generátor kostry pro knihovny v Rustu. Vytváří předvyplněné soubory šablon pro testy, benchmarky a CI.",
+    "Knihovna data a času pro Rust: formátování podle ISO 8601, práce s časovými pásmy a přístup k jednotlivým složkám data.",
+    "Generování náhodných čísel založené na algoritmu Mersenne Twister, používané v simulacích a hrách.",
+    "Knihovna v Rustu pro přístup k matematickým a kryptografickým konstantám.",
+    "Knihovna pomocných a obalových funkcí pro Rust.",
+    "Výchozí šablona pro Static Site Generator, připravená pro čisté a přístupné weby. Šablona, kterou používám, když začínám nový web.",
+    "Modulární knihovna Stylus s komponentami a mixiny pro webové a mobilní rozvržení. Tento web je na ní postavený.",
+    "Publikace o tom, jak banky uplatňují umělou inteligenci, od zákaznické péče přes odhalování podvodů po provoz.",
+    "Publikace o kvantových výpočtech v bankovnictví a financích, od analýzy rizik po kryptografii.",
+    "Poradenství finanční ředitelky na částečný úvazek s více než dvaceti lety v technologiích, zaměřené na růst, financování a finanční provoz.",
+    "Konfigurační soubory pro macOS, Linux a Windows: skripty a nastavení pro vývojářský pracovní postup."
+  ],
+  "more": [
+    "Zjistit více"
+  ],
+  "faq_q": [
+    "Pod jakou licencí jsou tyto projekty vydávány?",
+    "Jsou tyto projekty připravené na produkci?",
+    "Jak mohu přispět nebo nahlásit problém?",
+    "Mohu tyto knihovny použít v regulovaném bankovním prostředí?",
+    "Nabízíte komerční podporu nebo poradenství?",
+    "Jak sleduji nová vydání?"
+  ],
+  "faq_a": [
+    "Většina projektů má dvojí licenci MIT a Apache-2.0, standard ekosystému Rust, který komerčním uživatelům přiznává výslovná patentová práva vedle volného šíření. Malý počet klientských nástrojů vychází pouze pod Apache-2.0. Rozhodujícím zdrojem je licenční soubor v kořeni každého repozitáře.",
+    "Mnohé ano. <a href=\"https://pain001.com\">pain001</a> používají banky a poskytovatelé platebních služeb k automatizaci tvorby souborů ISO 20022. <a href=\"https://kyberlib.com\">KyberLib</a> sleduje specifikaci NIST FIPS 203 a dodává testovací vektory. Aktuální stav uvádí soubor README a odznaky CI každého repozitáře; pokud potřebujete konkrétní záruku pro produkční nasazení, ozvěte se.",
+    "Každý projekt má veřejný repozitář na GitHubu pod <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Založte issue s popisem problému (pomůže minimální reprodukce) nebo pull request navázaný na issue. Příspěvky se řídí Developer Certificate of Origin a vyžadují podepsané commity.",
+    "Ano, s obvyklými výhradami. Knihovny jsou nezávislá práce s otevřeným zdrojem, nikoli regulovaný produkt. Před nasazením do produkční platební infrastruktury proveďte své běžné postupy pro dodavatelský řetězec, bezpečnost a revizi závislostí, například vtažení kódu přes interní zrcadlo, prověření nástroji SBOM a připnutí na Git SHA nebo kryptografický otisk.",
+    "Ano, výběrově. Zakázky se soustředí na migraci na ISO 20022, plány přechodu na postkvantovou kryptografii a aplikovanou umělou inteligenci ve finančních službách. <a href=\"/contact/\">Ozvěte se</a> s krátkým zadáním, harmonogramem a případnými omezeními.",
+    "Každý datovaný příspěvek na tomto webu je ohlašován přes <a href=\"/rss.xml\">kanál RSS</a> a newsletter <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Jednotlivé repozitáře zveřejňují vydání také na GitHubu, kde je můžete sledovat přímo."
+  ],
+  "gh_pushed_template": "poslední commit před {age}"
+}

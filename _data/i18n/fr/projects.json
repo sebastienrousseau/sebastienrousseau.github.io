@@ -1,0 +1,156 @@
+{
+  "_comment": "FR copy for the /projects/ page body. Positional arrays; the EN reference is read from the built page by build_translations/_projects.py. Counts are pinned by tests/validation/test_i18n_projects.py.",
+  "kpi": [
+    "Téléchargements open source",
+    "Étoiles GitHub",
+    "Articles signés Sigstore",
+    "Années de mise en production"
+  ],
+  "setup_kicker": [
+    "CONÇU POUR LES SERVICES FINANCIERS"
+  ],
+  "setup_headline": [
+    "Trois domaines de travail. "
+  ],
+  "setup_soft": [
+    "Paiements, sécurité et outillage."
+  ],
+  "area_alt": [
+    "Vue aérienne d'échangeurs urbains la nuit, évoquant les rails de paiement transfrontaliers.",
+    "Champ de lumière bleue abstrait, évoquant la cryptographie post-quantique pour les systèmes financiers.",
+    "Lignes architecturales épurées sous une lumière douce, évoquant des fondations fiables pour les développeurs."
+  ],
+  "area_kicker": [
+    "PAIEMENTS & ISO 20022",
+    "SÉCURITÉ POST-QUANTIQUE",
+    "PLATEFORME DÉVELOPPEUR"
+  ],
+  "area_headline": [
+    "Les paiements dans la <span class=\"ac\">norme mondiale.</span>",
+    "La sécurité au-delà de <span class=\"ac\">l'ère RSA.</span>",
+    "Des fondations pour vos <span class=\"ac\">ingénieurs.</span>"
+  ],
+  "area_text": [
+    "ISO 20022 couvre tout le cycle de vie des messages. Ces bibliothèques génèrent des fichiers d'initiation <strong>pain.001</strong>, construisent et valident des virements <strong>pacs.008</strong>, lisent des relevés <strong>camt.053</strong> et gèrent l'administration de comptes <strong>acmt.001</strong>, avec des parseurs pour les formats plus anciens. Vous pouvez adopter une bibliothèque à la fois plutôt que de remplacer un système central.",
+    "Certaines archives financières restent sensibles pendant des décennies — assez longtemps pour que des données captées aujourd'hui soient lisibles une fois les ordinateurs quantiques matures. Ces bibliothèques Rust implémentent ML-KEM (CRYSTALS-Kyber, NIST FIPS 203) ainsi que le hachage et les primitives associées, afin qu'une migration puisse commencer avant l'échéance.",
+    "Des bibliothèques Rust auditées et sûres en mémoire, qui tournent sur votre infrastructure et sont livrées avec une nomenclature logicielle et une signature Sigstore. Vous gardez le contrôle de la chaîne d'approvisionnement, des dépendances et du déploiement, sans dépendre d'un fournisseur."
+  ],
+  "area_cta": [
+    "Lire le récit paiements",
+    "Lire le récit sécurité",
+    "Lire le récit plateforme"
+  ],
+  "cat_kicker": [
+    "INFRASTRUCTURE FINANCIÈRE AUTOMATISÉE",
+    "SÉCURITÉ FINANCIÈRE POST-QUANTIQUE",
+    "IA APPLIQUÉE & INTELLIGENCE EXÉCUTIVE",
+    "TECHNOLOGIE D'ENTREPRISE SOUVERAINE",
+    "WEB, PUBLICATION & ENVIRONNEMENT"
+  ],
+  "finale_eyebrow": [
+    "CONTACT"
+  ],
+  "finale_lede": [
+    "Vous préparez une migration ISO 20022, une revue post-quantique ou de l'IA appliquée en production ? Dites-moi ce que vous construisez. Je vous montrerai où ces outils s'insèrent."
+  ],
+  "finale_cta": [
+    "Prendre contact"
+  ],
+  "h2": [
+    "Les données financières, démêlées.",
+    "Résistant au quantique. Prêt pour l'entreprise.",
+    "Posez une question. Recevez le briefing.",
+    "Votre matériel. Vos données.",
+    "Livrez à votre façon.",
+    "Construisez dessus. Ou construisons ensemble."
+  ],
+  "lede": [
+    "Fichiers de paiement et relevés bancaires, sans friction. Ces outils génèrent tout le cycle de vie des messages ISO 20022 et analysent des relevés issus du terrain, aussi désordonnés soient-ils.",
+    "Une sécurité conçue pour l'ère quantique, applicable dès aujourd'hui. Ces bibliothèques suivent les normes du NIST pour l'encapsulation de clés et le hachage, afin de pérenniser vos systèmes.",
+    "L'IA mise au travail sur les opérations quotidiennes. Analysez du code à la recherche de vulnérabilités, transformez une question en briefing structuré et travaillez à la voix. À vos conditions.",
+    "Des fondations que vous possédez. Des bibliothèques Rust auditées et sûres en mémoire, qui tournent sur votre infrastructure et sont livrées avec une nomenclature logicielle et une signature Sigstore.",
+    "Des templates, un framework CSS, deux publications sectorielles et l'environnement reproductible qui livre le tout. La pile sur laquelle tourne ce site."
+  ],
+  "alt": [
+    "Bannière de pain001, bibliothèque de paiements open source",
+    "Bannière de pacs008, boîte à outils ISO 20022",
+    "Logo de camt053, suite de relevés bancaires",
+    "Logo de acmt001, suite de gestion de comptes",
+    "Bannière de Bank Statement Parser",
+    "Logo de NaluFX, allocation de trésorerie pilotée par l'IA en Rust",
+    "Logo de QRC, bibliothèque Rust de QR codes",
+    "Bannière de KyberLib",
+    "Bannière de la bibliothèque Rust Hash (HSH)",
+    "Bannière de Password Generator Pro",
+    "Bannière d'Euxis, scanner de sécurité du code open source",
+    "Bannière d'Àkàndé, assistant vocal IA avancé",
+    "Bannière d'Audio Analyser",
+    "Bannière de la Crypto Service Suite",
+    "Bannière du Static Site Generator",
+    "Bannière de l'écosystème YAML 1.2 en Rust noyalib",
+    "Bannière de Serde YML",
+    "Bannière de la bibliothèque RustLogs (RLG)",
+    "Bannière de LibMake",
+    "Bannière de la bibliothèque Rust DateTime (DTT)",
+    "Bannière de la bibliothèque Rust Random (VRD)",
+    "Bannière de la bibliothèque Rust Common (CMN)",
+    "Bannière de la bibliothèque Rust Mini Functions",
+    "Bannière de Kaishi, template de démarrage",
+    "Bannière de la bibliothèque Skeletonic Stylus",
+    "Bannière de la publication Banking On AI",
+    "Bannière de la publication Banking On Quantum",
+    "Bannière du site L90S",
+    "Bannière du projet Dotfiles"
+  ],
+  "excerpt": [
+    "Génère des fichiers ISO 20022 pain.001 depuis CSV ou SQLite. Banques et prestataires de paiement l'utilisent pour produire des messages de virement structurés sans reconstruire les systèmes existants.",
+    "Génère, valide et livre des messages ISO 20022 pacs.008 pour les virements clients de banque à banque. Inclut la validation JSON Schema et XSD, les contrôles IBAN dans 75 pays et le masquage des données personnelles pour le RGPD et PCI-DSS.",
+    "Lit les relevés ISO 20022 camt.053 de banque à client et extrait soldes, écritures et détail des transactions en données structurées. Inclut le chargement MT940, l'export XLSX et des intégrations éditeur et assistant IA.",
+    "Messagerie ISO 20022 de gestion de comptes. Ouvre, maintient, clôture, transfère et vérifie des comptes bancaires à partir de simples fichiers de données, avec outillage éditeur et assistant IA.",
+    "Une boîte à outils Python qui transforme des relevés bancaires de plusieurs formats en données structurées. Conçue pour les fichiers désordonnés du terrain et pour les exigences d'audit.",
+    "Une application Rust pour l'allocation de trésorerie entre structures de fonds, utilisant la prévision pour éclairer la répartition. Pensée pour la trésorerie, la comptabilité de fonds et l'allocation d'actifs.",
+    "Une bibliothèque Rust pour générer et lire des QR codes dans plusieurs formats. Usages paiement : QR codes EPC pour virements SEPA, liens de paiement pour l'encaissement marchand et authentification renforcée.",
+    "Une implémentation Rust de CRYSTALS-Kyber, la norme NIST FIPS 203 pour l'encapsulation de clés post-quantique.",
+    "Algorithmes de hachage et de digest pour le stockage et la vérification de mots de passe, écrits dans une posture résistante au quantique.",
+    "Un outil en ligne de commande multi-plateforme pour générer des mots de passe aléatoires, adossé à des primitives cryptographiques auditées.",
+    "Un scanner de sécurité du code pour huit langages, qui associe analyse statique et analyse de teinte à une vérification par LLM afin de réduire les faux positifs. Produit des lots SARIF, SBOM et OpenVEX signés Sigstore pour la revue de la chaîne d'approvisionnement.",
+    "Un assistant vocal bâti sur les modèles GPT d'OpenAI, avec résumés de PDF et mise en cache des réponses. Adapté à un usage personnel comme exécutif.",
+    "Convertit l'audio en texte en temps réel grâce à la reconnaissance vocale par IA. Destiné à l'analyse de conversations et de réunions enregistrées.",
+    "Un service cryptographique pour les besoins applicatifs courants : chiffrement, tokenisation, autorisation de transaction, signature de code et gestion du cycle de vie des clés.",
+    "Un générateur de sites statiques en Rust, sécurisé par défaut. Il inclut la validation WCAG AAA, le durcissement CSP et SRI, un pipeline de contenu LLM local, une cible WebAssembly et la prise en charge de 28 langues.",
+    "Une implémentation YAML 1.2 en Rust pur. Zéro code unsafe, conformité totale à la spécification, serde en flux, arbre syntaxique sans perte et validation JSON-Schema. Livré comme bibliothèque, CLI, serveur de langage, serveur MCP et build WASM.",
+    "Sérialisation et désérialisation YAML pour les structures de données Rust, bâties sur le framework Serde.",
+    "Une bibliothèque de journalisation pour Rust avec formats structurés, journalisation asynchrone et sortie configurable.",
+    "Un générateur d'ossature pour bibliothèques Rust. Il produit des fichiers de gabarit pré-remplis pour les tests, les benchmarks et la CI.",
+    "Une bibliothèque de date et d'heure pour Rust : formatage ISO 8601, gestion des fuseaux horaires et accès aux composants individuels d'une date.",
+    "Génération de nombres aléatoires fondée sur l'algorithme Mersenne Twister, utilisée en simulation et dans les jeux.",
+    "Une bibliothèque Rust pour accéder aux constantes mathématiques et cryptographiques.",
+    "Une bibliothèque d'utilitaires et de fonctions d'encapsulation pour Rust.",
+    "Un template de démarrage pour le Static Site Generator, configuré pour des sites propres et accessibles. Le template que j'utilise pour démarrer un nouveau site.",
+    "Une bibliothèque Stylus modulaire avec composants et mixins pour les mises en page web et mobile. Ce site est bâti dessus.",
+    "Une publication sur la façon dont les banques appliquent l'IA : service client, détection de la fraude et opérations.",
+    "Une publication sur l'informatique quantique dans la banque et la finance, de l'analyse des risques à la cryptographie.",
+    "Conseil de directeur financier à temps partagé, par un dirigeant financier avec plus de 20 ans dans la technologie : croissance, financement et opérations financières.",
+    "Fichiers de configuration pour macOS, Linux et Windows : scripts et réglages pour un flux de développement."
+  ],
+  "more": [
+    "En savoir plus"
+  ],
+  "faq_q": [
+    "Sous quelle licence ces projets sont-ils publiés ?",
+    "Ces projets sont-ils prêts pour la production ?",
+    "Comment puis-je contribuer ou signaler un problème ?",
+    "Puis-je utiliser ces bibliothèques dans un environnement bancaire régulé ?",
+    "Proposez-vous du support commercial ou du conseil ?",
+    "Comment suivre les nouvelles publications ?"
+  ],
+  "faq_a": [
+    "La plupart des projets sont sous double licence MIT et Apache-2.0, la norme de l'écosystème Rust, qui accorde aux utilisateurs commerciaux des droits de brevet explicites en plus d'une redistribution permissive. Quelques outils clients sont publiés sous Apache-2.0 uniquement. Le fichier de licence à la racine de chaque dépôt fait foi.",
+    "Beaucoup le sont. <a href=\"https://pain001.com\">pain001</a> est utilisé par des banques et des prestataires de services de paiement pour automatiser la création de fichiers ISO 20022. <a href=\"https://kyberlib.com\">KyberLib</a> suit la spécification NIST FIPS 203 et fournit des vecteurs de test. Le README et les badges de CI de chaque dépôt indiquent l'état actuel ; si vous avez besoin d'une garantie précise pour un usage en production, contactez-moi.",
+    "Chaque projet dispose d'un dépôt GitHub public sous <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Ouvrez une issue décrivant le problème (un reproducteur minimal aide) ou une pull request liée à une issue. Les contributions sont régies par le <em>Developer Certificate of Origin</em> et exigent des commits signés.",
+    "Oui, avec les précautions d'usage. Les bibliothèques sont des travaux open source indépendants, pas un produit régulé. Appliquez vos processus habituels de chaîne d'approvisionnement, de sécurité et de revue des dépendances — vendoring via votre miroir interne, analyse SBOM, pinning par SHA Git ou empreinte cryptographique — avant tout déploiement sur une infrastructure de paiement en production.",
+    "Oui, de façon sélective. Les missions portent sur la migration ISO 20022, les feuilles de route de migration post-quantique et l'IA appliquée aux services financiers. <a href=\"/fr/contact/\">Contactez-moi</a> avec un brief court, votre calendrier et vos contraintes éventuelles.",
+    "Chaque article daté de ce site est annoncé via le <a href=\"/fr/rss.xml\">flux RSS</a> et la newsletter <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Les dépôts individuels publient aussi des releases sur GitHub, que vous pouvez suivre directement."
+  ],
+  "gh_pushed_template": "dernier commit il y a {age}"
+}

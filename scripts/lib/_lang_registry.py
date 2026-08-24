@@ -383,6 +383,24 @@ def playlist_reference() -> dict:
     }
 
 
+def load_projects(code: str) -> dict:
+    """Load the /projects/ body copy for ``code``.
+
+    Positional arrays keyed by section — see
+    ``build_translations/_projects.py`` for why the English reference is
+    read from the built page rather than duplicated here.
+    """
+    if code == "en":
+        return {}
+    path = I18N_DIR / code / "projects.json"
+    if not path.is_file():
+        raise LanguageError(f"missing projects glossary: {path}")
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise LanguageError(f"{path}: must be a JSON object")
+    return {k: v for k, v in data.items() if not k.startswith("_")}
+
+
 def listings_reference() -> dict:
     """The English listing-body copy, from ``scripts/lib/_listing_copy.py``.
 

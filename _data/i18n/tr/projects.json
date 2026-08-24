@@ -1,0 +1,156 @@
+{
+  "_comment": "Positional /projects/ body copy. Arrays align with the English page in document order; see scripts/generators/build_translations/_projects.py. gh_pushed_template takes {age} verbatim from the GitHub push date.",
+  "kpi": [
+    "Açık kaynak indirmeleri",
+    "GitHub yıldızları",
+    "Sigstore ile imzalanmış yazılar",
+    "Yıl üretim ortamında"
+  ],
+  "setup_kicker": [
+    "FİNANSAL HİZMETLER İÇİN YAPILDI"
+  ],
+  "setup_headline": [
+    "Üç çalışma alanı. "
+  ],
+  "setup_soft": [
+    "Ödemeler, güvenlik ve araçlar."
+  ],
+  "area_alt": [
+    "Gece çekilmiş otoyol kavşakları havadan görünümü, sınır ötesi ödeme hatlarının imgesi olarak.",
+    "Soyut mavi ışık alanı, finansal sistemler için kuantum sonrası kriptografinin imgesi olarak.",
+    "Yumuşak ışıkta yalın mimari çizgiler, geliştiriciler için güvenilir temellerin imgesi olarak."
+  ],
+  "area_kicker": [
+    "ÖDEMELER VE ISO 20022",
+    "KUANTUM SONRASI GÜVENLİK",
+    "GELİŞTİRİCİ PLATFORMU"
+  ],
+  "area_headline": [
+    "Ödemeler küresel <span class=\"ac\">standartta.</span>",
+    "Güvenlik <span class=\"ac\">RSA çağının ötesinde.</span>",
+    "Mühendisleriniz için <span class=\"ac\">temeller.</span>"
+  ],
+  "area_text": [
+    "ISO 20022, mesajın tüm yaşam döngüsünü kapsar. Bu kütüphaneler <strong>pain.001</strong> talimat dosyaları üretir, <strong>pacs.008</strong> transferlerini oluşturur ve doğrular, <strong>camt.053</strong> ekstrelerini okur ve <strong>acmt.001</strong> hesap yönetimini üstlenir; eski biçimler için ayrıştırıcılarla birlikte. Çekirdek bir sistemi değiştirmek yerine tek tek kütüphane devreye alabilirsiniz.",
+    "Bazı finansal kayıtlar onlarca yıl hassas kalır; bugün toplanan verilerin kuantum bilgisayarlar olgunlaştığında okunabilmesine yetecek kadar uzun. Bu Rust kütüphaneleri <strong>ML-KEM (CRYSTALS-Kyber, NIST FIPS 203)</strong> standardını, özetleme ve ilgili temel işlevlerle birlikte uygular; böylece geçiş, son tarihler dayatmadan önce başlayabilir.",
+    "Bu siteyi kuran ve koruyan Rust kütüphanelerinin ta kendisi. Aralarında YAML için <strong>noyalib</strong> ve <strong>Static Site Generator</strong>'ın kendisi var; CycloneDX SBOM listeleri ve Sigstore imzalarıyla yayımlanıyorlar. Mühendisleriniz eşdeğerlerini kurum içinde sürdürmek yerine bunların üzerine inşa eder."
+  ],
+  "area_cta": [
+    "Ödemeler hikâyesini okuyun",
+    "Güvenlik hikâyesini okuyun",
+    "Platform hikâyesini okuyun"
+  ],
+  "cat_kicker": [
+    "OTOMATİKLEŞTİRİLMİŞ FİNANSAL ALTYAPI",
+    "KUANTUM SONRASI FİNANSAL GÜVENLİK",
+    "UYGULAMALI YAPAY ZEKÂ VE YÖNETİCİ BİLGİLENDİRMESİ",
+    "EGEMEN KURUMSAL TEKNOLOJİ",
+    "WEB, YAYINCILIK VE ÇALIŞMA ORTAMI"
+  ],
+  "finale_eyebrow": [
+    "İLETİŞİM"
+  ],
+  "finale_lede": [
+    "ISO 20022 geçişi, kuantum sonrası bir gözden geçirme ya da üretimde uygulamalı yapay zekâ mı planlıyorsunuz? Ne inşa ettiğinizi anlatın. Bu araçların nereye oturduğunu göstereyim."
+  ],
+  "finale_cta": [
+    "İletişime geçin"
+  ],
+  "h2": [
+    "Finansal veriler, çözülmüş hâliyle.",
+    "Kuantuma dayanıklı. Kurumsala hazır.",
+    "Bir soru sorun. Bilgilendirmeyi alın.",
+    "Sizin donanımınız. Sizin verileriniz.",
+    "Kendi bildiğiniz gibi yayımlayın.",
+    "Üzerine inşa edin. Ya da benimle birlikte inşa edin."
+  ],
+  "lede": [
+    "Ödeme dosyaları ve banka ekstreleri, sürtünmesiz. Bu araçlar ISO 20022 mesajının tüm yaşam döngüsünü üretir ve gerçek hayatın dağınık ekstrelerini belirlenimci bir kesinlikle okur. CSV'lerinizi, PDF'lerinizi ya da veritabanlarınızı getirin. Veri akıp gider.",
+    "Kuantum çağı için kurulmuş, bugün uygulanan güvenlik. Bu kütüphaneler anahtar sarmalama ve özetleme konusunda NIST standartlarını izler; böylece tehdit gelmeden çok önce finansal altyapıyı geleceğe hazırlarsınız.",
+    "Günlük işleyişte iş başında yapay zekâ. Kodu güvenlik açıklarına karşı tarayın, bir soruyu yapılandırılmış bir bilgilendirmeye dönüştürün ve sesle çalışın. Sizin koşullarınızda, tedarikçiye bağımlı kalmadan.",
+    "Sahip olabileceğiniz temeller. Denetlenmiş, bellek güvenli Rust kütüphaneleri; kendi altyapınızda çalışır, bir yazılım bileşen listesi ve bir Sigstore imzasıyla yayımlanır. Her satırını okuyun. İçeri alın. Kurum içinde tutun.",
+    "Şablonlar, bir CSS çatısı, iki sektör yayını ve hepsini yayımlayan yeniden üretilebilir kurulum. Bu sitenin üzerinde çalıştığı yığın."
+  ],
+  "alt": [
+    "Açık kaynaklı pain001 ödeme kütüphanesinin başlık görseli",
+    "pacs008 ISO 20022 araç setinin başlık görseli",
+    "camt053 banka ekstresi paketinin logosu",
+    "acmt001 hesap yönetimi paketinin logosu",
+    "Bank Statement Parser başlık görseli",
+    "NaluFX logosu, Rust ile yapay zekâ destekli nakit dağıtımı",
+    "QRC logosu, Rust ile yazılmış QR kod kütüphanesi",
+    "KyberLib başlık görseli",
+    "Hash (HSH) Rust kütüphanesinin başlık görseli",
+    "Password Generator Pro başlık görseli",
+    "Euxis başlık görseli, açık kaynaklı kod güvenliği tarayıcısı",
+    "Àkàndé başlık görseli, gelişmiş yapay zekâ sesli asistanı",
+    "Audio Analyser başlık görseli",
+    "Crypto Service Suite başlık görseli",
+    "Static Site Generator başlık görseli",
+    "noyalib Rust YAML 1.2 ekosisteminin başlık görseli",
+    "Serde YML başlık görseli",
+    "RustLogs (RLG) kütüphanesinin başlık görseli",
+    "LibMake başlık görseli",
+    "DateTime (DTT) Rust kütüphanesinin başlık görseli",
+    "Random (VRD) Rust kütüphanesinin başlık görseli",
+    "Common (CMN) Rust kütüphanesinin başlık görseli",
+    "Mini Functions Rust kütüphanesinin başlık görseli",
+    "Kaishi başlangıç şablonunun başlık görseli",
+    "Skeletonic Stylus Library başlık görseli",
+    "Banking On AI yayınının başlık görseli",
+    "Banking On Quantum yayınının başlık görseli",
+    "L90S web sitesinin başlık görseli",
+    "Dotfiles projesinin başlık görseli"
+  ],
+  "excerpt": [
+    "CSV ya da SQLite'tan ISO 20022 pain.001 dosyaları üretir. Bankalar ve ödeme hizmeti sağlayıcıları, mevcut sistemleri yeniden kurmadan yapılandırılmış transfer mesajları üretmek için kullanır.",
+    "Bankalar arası müşteri transferleri için ISO 20022 pacs.008 mesajları üretir, doğrular ve iletir. JSON Schema ve XSD doğrulaması, 75 ülkede IBAN denetimi ve KVKK, GDPR ile PCI-DSS için kişisel veri maskeleme içerir.",
+    "Bankadan müşteriye ISO 20022 camt.053 ekstrelerini okur; bakiyeleri, kayıtları ve işlem ayrıntılarını yapılandırılmış veriye çıkarır. MT940 yükleme, XLSX dışa aktarma ve düzenleyici ile yapay zekâ asistanı tümleştirmeleri içerir.",
+    "Hesap yönetimi için ISO 20022 mesajlaşması. Düz veri dosyalarından banka hesabı açar, sürdürür, kapatır, taşır ve doğrular; düzenleyiciler ve yapay zekâ asistanları için araçlarla birlikte.",
+    "Birkaç biçimdeki banka ekstrelerini yapılandırılmış veriye dönüştüren bir Python araç seti. Gerçek hayatın dağınık dosyaları ve denetim gereklilikleri için kurulmuştur.",
+    "Fon yapıları arasında nakit dağıtımı için, dağılımı yönlendirmek üzere öngörülerden yararlanan bir Rust uygulaması. Hazine, fon muhasebesi ve varlık dağılımı için tasarlanmıştır.",
+    "Birkaç biçimde QR kod üretmek ve okumak için bir Rust kütüphanesi. Ödemelerde SEPA transferlerinde EPC QR kodları, satıcı tahsilatı için ödeme bağlantıları ve güçlendirilmiş kimlik doğrulama için kullanılır.",
+    "Kuantum sonrası anahtar sarmalamanın NIST FIPS 203 standardı olan CRYSTALS-Kyber'in Rust ile yazılmış uygulaması.",
+    "Parolaların saklanması ve doğrulanması için özet ve sağlama algoritmaları; kuantuma dayanıklı bir duruşla yazılmıştır.",
+    "Denetlenmiş kriptografik temel işlevlere dayanan, rastgele parola üreten çok platformlu bir komut satırı aracı.",
+    "Sekiz dil için, yanlış pozitifleri azaltmak amacıyla statik çözümleme ve bulaşma çözümlemesini dil modeli doğrulamasıyla birleştiren bir kod güvenliği tarayıcısı. Tedarik zinciri incelemesi için Sigstore ile imzalanmış SARIF, SBOM ve OpenVEX paketleri üretir.",
+    "OpenAI'nin GPT modelleri üzerine kurulu, PDF özetleri ve yanıt önbelleği olan bir sesli asistan. Kişisel ve yönetici kullanımına uygundur.",
+    "Yapay zekâ destekli konuşma tanıma ile sesi gerçek zamanlı olarak metne dönüştürür. Kayıtlı görüşmelerin ve toplantıların çözümlenmesi için tasarlanmıştır.",
+    "Uygulamaların olağan ihtiyaçları için bir kriptografi hizmeti: şifreleme, belirteçleştirme, işlem yetkilendirme, kod imzalama ve anahtar yaşam döngüsü yönetimi.",
+    "Rust ile yazılmış, varsayılan olarak güvenli bir statik site üreteci. WCAG AAA doğrulaması, CSP ve SRI sıkılaştırması, yerel dil modeliyle çalışan bir içerik hattı, bir WebAssembly hedefi ve 28 dil desteği içerir.",
+    "Salt Rust ile yazılmış bir YAML 1.2 uygulaması. Hiç unsafe kod yok; belirtime tam uyum, akışlı serde, kayıpsız bir sözdizim ağacı ve JSON Schema doğrulaması. Kütüphane, komut satırı aracı, dil sunucusu, MCP sunucusu ve WASM derlemesi olarak yayımlanır.",
+    "Rust veri yapıları için, Serde çatısı üzerine kurulmuş YAML serileştirme ve serileştirmeyi çözme.",
+    "Rust için yapılandırılmış biçimler, eşzamansız günlükleme ve ayarlanabilir çıktı sunan bir günlükleme kütüphanesi.",
+    "Rust kütüphaneleri için bir iskelet üreteci. Testler, başarım ölçümleri ve sürekli tümleştirme için önceden doldurulmuş şablon dosyaları üretir.",
+    "Rust için bir tarih ve saat kütüphanesi: ISO 8601 biçimlendirmesi, saat dilimi işleme ve tarihin tek tek bileşenlerine erişim.",
+    "Benzetimlerde ve oyunlarda kullanılan, Mersenne Twister algoritmasına dayalı rastgele sayı üretimi.",
+    "Matematiksel ve kriptografik sabitlere erişim için bir Rust kütüphanesi.",
+    "Rust için yardımcı ve sarmalayıcı işlev kütüphanesi.",
+    "Static Site Generator için, temiz ve erişilebilir siteler üzere ayarlanmış bir başlangıç şablonu. Yeni bir siteye başlarken kullandığım şablon.",
+    "Web ve mobil yerleşimler için bileşenler ve mixin'ler içeren modüler bir Stylus kütüphanesi. Bu site onun üzerine kurulu.",
+    "Bankaların yapay zekâyı nasıl uyguladığına dair bir yayın; müşteri hizmetlerini, dolandırıcılık tespitini ve operasyonu kapsıyor.",
+    "Bankacılık ve finansta kuantum hesaplama üzerine bir yayın; risk çözümlemesinden kriptografiye.",
+    "Teknolojide 20 yılı aşkın deneyimi olan bir finans yöneticisinden yarı zamanlı finans direktörlüğü danışmanlığı; büyüme, finansman ve finansal operasyonlar üzerine.",
+    "macOS, Linux ve Windows için yapılandırma dosyaları: bir geliştirme akışı için betikler ve ayarlar."
+  ],
+  "more": [
+    "Daha fazlasını öğrenin"
+  ],
+  "faq_q": [
+    "Bu projeler hangi lisansla yayımlanıyor?",
+    "Bu projeler üretime hazır mı?",
+    "Nasıl katkıda bulunabilir ya da sorun bildirebilirim?",
+    "Bu kütüphaneleri düzenlemeye tabi bir bankacılık ortamında kullanabilir miyim?",
+    "Ticari destek ya da danışmanlık sunuyor musunuz?",
+    "Yeni sürümleri nasıl takip ederim?"
+  ],
+  "faq_a": [
+    "Projelerin çoğu, Rust ekosisteminin standardı olan MIT ve Apache-2.0 ikili lisansıyla yayımlanır; bu, ticari kullanıcılara serbest yeniden dağıtımın yanı sıra açık patent hakları da verir. Az sayıda müşteri aracı yalnızca Apache-2.0 ile yayımlanır. Her deponun kökündeki lisans dosyası bağlayıcı kaynaktır.",
+    "Çoğu hazır. <a href=\"https://pain001.com\">pain001</a>, ISO 20022 dosya oluşturmayı otomatikleştirmek için bankalar ve ödeme hizmeti sağlayıcıları tarafından kullanılıyor. <a href=\"https://kyberlib.com\">KyberLib</a>, NIST FIPS 203 belirtimini izliyor ve test vektörleriyle geliyor. Her deponun README dosyası ve CI rozetleri güncel durumu gösterir; üretim kullanımı için belirli bir güvence gerekiyorsa iletişime geçin.",
+    "Her projenin <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a> altında açık bir GitHub deposu var. Sorunu anlatan bir konu açın (en küçük yeniden üretim örneği yardımcı olur) ya da bir konuya bağlı bir pull request gönderin. Katkılar Developer Certificate of Origin kapsamındadır ve imzalı commit gerektirir.",
+    "Evet, alışılmış çekincelerle. Kütüphaneler bağımsız açık kaynak çalışmasıdır, düzenlemeye tabi bir ürün değildir. Üretimdeki ödeme altyapısına almadan önce, iç aynanız üzerinden içeri alma, SBOM araçlarıyla tarama ve Git SHA ya da kriptografik özet ile sabitleme gibi olağan tedarik zinciri, güvenlik ve bağımlılık inceleme süreçlerinizi işletin.",
+    "Evet, seçici biçimde. Çalışmalar ISO 20022 geçişi, kuantum sonrası kriptografiye geçiş yol haritaları ve finansal hizmetlerde uygulamalı yapay zekâ üzerinde yoğunlaşıyor. Kısa bir özet, takviminiz ve varsa kısıtlarınızla <a href=\"/contact/\">iletişime geçin</a>.",
+    "Bu sitedeki her tarihli yazı, <a href=\"/rss.xml\">RSS akışı</a> ve <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> bülteni aracılığıyla duyurulur. Tek tek depolar sürümleri GitHub üzerinde de yayımlar; doğrudan izleyebilirsiniz."
+  ],
+  "gh_pushed_template": "son commit {age} önce"
+}

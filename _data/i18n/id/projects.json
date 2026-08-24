@@ -1,0 +1,156 @@
+{
+  "_comment": "Positional /projects/ body copy. Arrays align with the English page in document order; see scripts/generators/build_translations/_projects.py. gh_pushed_template takes {age} verbatim from the GitHub push date.",
+  "kpi": [
+    "Unduhan sumber terbuka",
+    "Bintang GitHub",
+    "Artikel bertanda tangan Sigstore",
+    "Tahun berjalan di produksi"
+  ],
+  "setup_kicker": [
+    "DIBANGUN UNTUK JASA KEUANGAN"
+  ],
+  "setup_headline": [
+    "Tiga bidang kerja. "
+  ],
+  "setup_soft": [
+    "Pembayaran, keamanan, dan perkakas."
+  ],
+  "area_alt": [
+    "Foto udara simpang susun kota pada malam hari, sebagai gambaran jalur pembayaran lintas batas.",
+    "Bidang cahaya biru abstrak, sebagai gambaran kriptografi pascakuantum untuk sistem keuangan.",
+    "Garis arsitektur bersih dalam cahaya lembut, sebagai gambaran fondasi yang dapat diandalkan bagi pengembang."
+  ],
+  "area_kicker": [
+    "PEMBAYARAN & ISO 20022",
+    "KEAMANAN PASCAKUANTUM",
+    "PLATFORM PENGEMBANG"
+  ],
+  "area_headline": [
+    "Pembayaran dalam standar <span class=\"ac\">global.</span>",
+    "Keamanan melampaui <span class=\"ac\">era RSA.</span>",
+    "Fondasi bagi <span class=\"ac\">insinyur Anda.</span>"
+  ],
+  "area_text": [
+    "ISO 20022 mencakup seluruh siklus hidup pesan. Pustaka-pustaka ini menghasilkan berkas inisiasi <strong>pain.001</strong>, menyusun dan memvalidasi transfer <strong>pacs.008</strong>, membaca rekening koran <strong>camt.053</strong>, dan menangani pengelolaan rekening <strong>acmt.001</strong>, lengkap dengan pengurai untuk format lama. Anda dapat mengadopsi satu pustaka pada satu waktu, alih-alih mengganti sistem inti.",
+    "Sebagian catatan keuangan tetap sensitif selama puluhan tahun, cukup lama sehingga data yang dikumpulkan hari ini bisa terbaca ketika komputer kuantum matang. Pustaka Rust ini menerapkan <strong>ML-KEM (CRYSTALS-Kyber, NIST FIPS 203)</strong> beserta hashing dan primitif terkait, sehingga migrasi dapat dimulai sebelum tenggat memaksanya.",
+    "Pustaka Rust yang sama yang membangun dan mengamankan situs ini. Di antaranya <strong>noyalib</strong> untuk YAML dan <strong>Static Site Generator</strong> itu sendiri, yang dirilis bersama daftar komponen CycloneDX dan tanda tangan Sigstore. Insinyur Anda membangun di atasnya, alih-alih merawat padanannya sendiri."
+  ],
+  "area_cta": [
+    "Baca kisah pembayaran",
+    "Baca kisah keamanan",
+    "Baca kisah platform"
+  ],
+  "cat_kicker": [
+    "INFRASTRUKTUR KEUANGAN OTOMATIS",
+    "KEAMANAN KEUANGAN PASCAKUANTUM",
+    "AI TERAPAN & INFORMASI UNTUK PIMPINAN",
+    "TEKNOLOGI PERUSAHAAN YANG BERDAULAT",
+    "WEB, PENERBITAN & LINGKUNGAN KERJA"
+  ],
+  "finale_eyebrow": [
+    "KONTAK"
+  ],
+  "finale_lede": [
+    "Sedang merencanakan migrasi ISO 20022, tinjauan pascakuantum, atau AI terapan di lingkungan produksi? Ceritakan apa yang sedang Anda bangun. Saya akan tunjukkan di mana perkakas ini cocok."
+  ],
+  "finale_cta": [
+    "Hubungi saya"
+  ],
+  "h2": [
+    "Data keuangan, terurai.",
+    "Aman menghadapi kuantum. Siap untuk perusahaan.",
+    "Ajukan satu pertanyaan. Dapatkan ringkasannya.",
+    "Perangkat keras Anda. Data Anda.",
+    "Terbitkan dengan cara Anda.",
+    "Bangun di atasnya. Atau bangun bersama saya."
+  ],
+  "lede": [
+    "Berkas pembayaran dan rekening koran, tanpa gesekan. Perkakas ini menghasilkan seluruh siklus hidup pesan ISO 20022 dan membaca rekening koran dunia nyata yang berantakan dengan presisi deterministik. Bawa saja CSV, PDF, atau basis data Anda. Datanya mengalir begitu saja.",
+    "Keamanan yang dibangun untuk era kuantum, diterapkan hari ini. Pustaka-pustaka ini mengikuti standar NIST untuk enkapsulasi kunci dan hashing, agar Anda menyiapkan infrastruktur keuangan menghadapi masa depan jauh sebelum ancaman tiba.",
+    "AI yang dipekerjakan pada operasi sehari-hari. Pindai kode untuk mencari kerentanan, ubah sebuah pertanyaan menjadi ringkasan terstruktur, dan bekerjalah dengan suara. Dengan syarat Anda, tanpa terkunci pada satu vendor.",
+    "Fondasi yang bisa Anda miliki. Pustaka Rust yang telah diaudit dan aman terhadap memori, berjalan di infrastruktur Anda sendiri dan dirilis dengan daftar komponen perangkat lunak serta tanda tangan Sigstore. Bacalah setiap barisnya. Bawa masuk. Simpan di dalam.",
+    "Templat, sebuah kerangka CSS, dua terbitan industri, dan penyiapan yang dapat direproduksi yang menerbitkan semuanya. Tumpukan tempat situs ini berjalan."
+  ],
+  "alt": [
+    "Spanduk pustaka pembayaran sumber terbuka pain001",
+    "Spanduk perangkat ISO 20022 pacs008",
+    "Logo rangkaian rekening koran camt053",
+    "Logo rangkaian pengelolaan rekening acmt001",
+    "Spanduk Bank Statement Parser",
+    "Logo NaluFX, alokasi kas berbasis AI dalam Rust",
+    "Logo QRC, pustaka kode QR dalam Rust",
+    "Spanduk KyberLib",
+    "Spanduk pustaka Hash (HSH) dalam Rust",
+    "Spanduk Password Generator Pro",
+    "Spanduk Euxis, pemindai keamanan kode sumber terbuka",
+    "Spanduk Àkàndé, asisten suara AI tingkat lanjut",
+    "Spanduk Audio Analyser",
+    "Spanduk Crypto Service Suite",
+    "Spanduk Static Site Generator",
+    "Spanduk ekosistem YAML 1.2 dalam Rust bernama noyalib",
+    "Spanduk Serde YML",
+    "Spanduk pustaka RustLogs (RLG)",
+    "Spanduk LibMake",
+    "Spanduk pustaka DateTime (DTT) dalam Rust",
+    "Spanduk pustaka Random (VRD) dalam Rust",
+    "Spanduk pustaka Common (CMN) dalam Rust",
+    "Spanduk pustaka Mini Functions dalam Rust",
+    "Spanduk Kaishi, sebuah templat awal",
+    "Spanduk Skeletonic Stylus Library",
+    "Spanduk terbitan Banking On AI",
+    "Spanduk terbitan Banking On Quantum",
+    "Spanduk situs web L90S",
+    "Spanduk proyek Dotfiles"
+  ],
+  "excerpt": [
+    "Menghasilkan berkas ISO 20022 pain.001 dari CSV atau SQLite. Bank dan penyedia jasa pembayaran memakainya untuk memproduksi pesan transfer terstruktur tanpa membangun ulang sistem yang ada.",
+    "Menghasilkan, memvalidasi, dan mengirimkan pesan ISO 20022 pacs.008 untuk transfer nasabah antarbank. Mencakup validasi JSON Schema dan XSD, pemeriksaan IBAN di 75 negara, serta penyamaran data pribadi untuk GDPR dan PCI-DSS.",
+    "Membaca rekening koran ISO 20022 camt.053 dari bank ke nasabah dan menarik saldo, ayat jurnal, serta rincian transaksi menjadi data terstruktur. Mencakup pemuatan MT940, ekspor XLSX, serta integrasi dengan penyunting dan asisten AI.",
+    "Perpesanan ISO 20022 untuk pengelolaan rekening. Membuka, memelihara, menutup, memindahkan, dan memverifikasi rekening bank dari berkas data sederhana, dengan perkakas untuk penyunting dan asisten AI.",
+    "Perangkat Python yang mengubah rekening koran dalam beberapa format menjadi data terstruktur. Dibangun untuk berkas dunia nyata yang berantakan dan untuk kebutuhan audit.",
+    "Aplikasi Rust untuk alokasi kas lintas struktur dana, yang memakai peramalan untuk memandu pembagiannya. Ditujukan bagi tresuri, akuntansi dana, dan alokasi aset.",
+    "Pustaka Rust untuk menghasilkan dan membaca kode QR dalam beberapa format. Dalam pembayaran, dipakai untuk kode EPC QR pada transfer SEPA, tautan penagihan bagi pedagang, dan autentikasi bertingkat.",
+    "Implementasi CRYSTALS-Kyber dalam Rust, yakni standar NIST FIPS 203 untuk enkapsulasi kunci pascakuantum.",
+    "Algoritme hash dan ringkasan untuk penyimpanan dan verifikasi kata sandi, ditulis dengan sikap tahan kuantum.",
+    "Perkakas baris perintah lintas platform untuk menghasilkan kata sandi acak, ditopang primitif kriptografi yang telah diaudit.",
+    "Pemindai keamanan kode untuk delapan bahasa yang memadukan analisis statis dan analisis kontaminasi dengan verifikasi model bahasa besar untuk menekan positif palsu. Menghasilkan paket SARIF, SBOM, dan OpenVEX bertanda tangan Sigstore untuk telaah rantai pasok.",
+    "Asisten suara yang dibangun di atas model GPT milik OpenAI, dengan ringkasan PDF dan penyinggahan jawaban. Cocok untuk penggunaan pribadi maupun pimpinan.",
+    "Mengubah audio menjadi teks secara waktu nyata memakai pengenalan ucapan berbasis AI. Ditujukan untuk menganalisis percakapan dan rapat yang terekam.",
+    "Layanan kriptografi untuk kebutuhan umum aplikasi: enkripsi, tokenisasi, otorisasi transaksi, penandatanganan kode, dan pengelolaan daur hidup kunci.",
+    "Pembangkit situs statis dalam Rust, aman sejak bawaan. Mencakup validasi WCAG AAA, pengerasan CSP dan SRI, jalur konten dengan model bahasa lokal, target WebAssembly, dan dukungan 28 bahasa.",
+    "Implementasi YAML 1.2 murni Rust. Tanpa kode unsafe, patuh penuh pada spesifikasi, serde secara aliran, pohon sintaks tanpa kehilangan, dan validasi JSON Schema. Dirilis sebagai pustaka, perkakas baris perintah, peladen bahasa, peladen MCP, dan bangunan WASM.",
+    "Serialisasi dan deserialisasi YAML untuk struktur data Rust, dibangun di atas kerangka Serde.",
+    "Pustaka pencatatan untuk Rust dengan format terstruktur, pencatatan asinkron, dan keluaran yang dapat diatur.",
+    "Pembangkit kerangka untuk pustaka Rust. Ia menghasilkan berkas templat terisi awal untuk pengujian, pengukuran kinerja, dan integrasi berkelanjutan.",
+    "Pustaka tanggal dan waktu untuk Rust: pemformatan ISO 8601, penanganan zona waktu, dan akses ke masing-masing komponen tanggal.",
+    "Pembangkitan bilangan acak berdasarkan algoritme Mersenne Twister, dipakai dalam simulasi dan permainan.",
+    "Pustaka Rust untuk mengakses konstanta matematis dan kriptografis.",
+    "Pustaka fungsi utilitas dan fungsi pembungkus untuk Rust.",
+    "Templat awal untuk Static Site Generator, disiapkan bagi situs yang rapi dan mudah diakses. Templat yang saya pakai ketika memulai situs baru.",
+    "Pustaka Stylus modular dengan komponen dan mixin untuk tata letak web dan seluler. Situs ini dibangun di atasnya.",
+    "Terbitan tentang bagaimana bank menerapkan AI, mencakup layanan nasabah, deteksi kecurangan, dan operasional.",
+    "Terbitan tentang komputasi kuantum di perbankan dan keuangan, dari analisis risiko hingga kriptografi.",
+    "Konsultasi direktur keuangan paruh waktu dari seorang pemimpin keuangan dengan lebih dari 20 tahun di bidang teknologi, mencakup pertumbuhan, pendanaan, dan operasional keuangan.",
+    "Berkas konfigurasi untuk macOS, Linux, dan Windows: skrip dan setelan untuk sebuah alur kerja pengembangan."
+  ],
+  "more": [
+    "Pelajari lebih lanjut"
+  ],
+  "faq_q": [
+    "Di bawah lisensi apa proyek-proyek ini dirilis?",
+    "Apakah proyek-proyek ini siap produksi?",
+    "Bagaimana saya bisa berkontribusi atau melaporkan masalah?",
+    "Bolehkah saya memakai pustaka ini di lingkungan perbankan yang diatur?",
+    "Apakah Anda menyediakan dukungan komersial atau konsultasi?",
+    "Bagaimana saya mengikuti rilis baru?"
+  ],
+  "faq_a": [
+    "Sebagian besar proyek berlisensi ganda MIT dan Apache-2.0, standar ekosistem Rust, yang memberi pengguna komersial hak paten yang tegas di samping redistribusi yang longgar. Sejumlah kecil perkakas milik klien dirilis hanya dengan Apache-2.0. Berkas lisensi di akar tiap repositori adalah sumber yang berwenang.",
+    "Banyak yang sudah. <a href=\"https://pain001.com\">pain001</a> dipakai bank dan penyedia jasa pembayaran untuk mengotomatiskan pembuatan berkas ISO 20022. <a href=\"https://kyberlib.com\">KyberLib</a> mengikuti spesifikasi NIST FIPS 203 dan disertai vektor uji. Berkas README dan lencana CI tiap repositori menunjukkan status terkini; jika Anda perlu jaminan tertentu untuk penggunaan produksi, silakan hubungi saya.",
+    "Setiap proyek punya repositori GitHub publik di <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Bukalah isu yang menjelaskan masalahnya (contoh reproduksi minimal sangat membantu) atau pull request yang tertaut pada sebuah isu. Kontribusi tunduk pada Developer Certificate of Origin dan mensyaratkan commit bertanda tangan.",
+    "Boleh, dengan catatan yang lazim. Pustaka ini adalah karya sumber terbuka yang berdiri sendiri, bukan produk yang diatur. Jalankan proses rantai pasok, keamanan, dan telaah dependensi Anda seperti biasa, misalnya menariknya lewat cermin internal, memindai dengan perkakas SBOM, dan mengunci pada Git SHA atau hash kriptografis, sebelum menggelarnya ke infrastruktur pembayaran produksi.",
+    "Ya, secara selektif. Penugasan berfokus pada migrasi ISO 20022, peta jalan migrasi kriptografi pascakuantum, dan AI terapan di jasa keuangan. <a href=\"/contact/\">Hubungi saya</a> dengan ringkasan singkat, jadwal Anda, dan kendala apa pun.",
+    "Setiap tulisan bertanggal di situs ini diumumkan melalui <a href=\"/rss.xml\">umpan RSS</a> dan buletin <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Masing-masing repositori juga menerbitkan rilis di GitHub, yang bisa Anda pantau langsung."
+  ],
+  "gh_pushed_template": "commit terakhir {age} lalu"
+}

@@ -1,0 +1,156 @@
+{
+  "_comment": "Positional /projects/ body copy. Arrays align with the English page in document order; see scripts/generators/build_translations/_projects.py. gh_pushed_template takes {age} verbatim from the GitHub push date.",
+  "kpi": [
+    "Open source-downloads",
+    "GitHub-sterren",
+    "Met Sigstore ondertekende artikelen",
+    "Jaar in productie"
+  ],
+  "setup_kicker": [
+    "GEBOUWD VOOR DE FINANCIËLE SECTOR"
+  ],
+  "setup_headline": [
+    "Drie werkgebieden. "
+  ],
+  "setup_soft": [
+    "Betalingen, beveiliging en gereedschap."
+  ],
+  "area_alt": [
+    "Luchtfoto van verkeersknooppunten bij nacht, als beeld voor grensoverschrijdende betaalinfrastructuur.",
+    "Abstract blauw lichtveld, als beeld voor postkwantumcryptografie in financiële systemen.",
+    "Strakke architectonische lijnen in zacht licht, als beeld voor betrouwbare fundamenten voor ontwikkelaars."
+  ],
+  "area_kicker": [
+    "BETALINGEN & ISO 20022",
+    "POSTKWANTUMBEVEILIGING",
+    "ONTWIKKELAARSPLATFORM"
+  ],
+  "area_headline": [
+    "Betalingen in de wereldwijde <span class=\"ac\">standaard.</span>",
+    "Beveiliging voorbij het <span class=\"ac\">RSA-tijdperk.</span>",
+    "Fundamenten voor uw <span class=\"ac\">engineers.</span>"
+  ],
+  "area_text": [
+    "ISO 20022 bestrijkt de volledige levensloop van een bericht. Deze bibliotheken genereren <strong>pain.001</strong>-opdrachtbestanden, bouwen en valideren <strong>pacs.008</strong>-overboekingen, lezen <strong>camt.053</strong>-afschriften en verzorgen <strong>acmt.001</strong>-rekeningbeheer, met parsers voor oudere formaten. U kunt één bibliotheek tegelijk invoeren in plaats van een kernsysteem te vervangen.",
+    "Sommige financiële gegevens blijven decennialang gevoelig, lang genoeg dat wat vandaag wordt vastgelegd leesbaar wordt zodra kwantumcomputers volwassen zijn. Deze Rust-bibliotheken implementeren <strong>ML-KEM (CRYSTALS-Kyber, NIST FIPS 203)</strong> samen met hashing en verwante primitieven, zodat een migratie kan beginnen voordat deadlines haar afdwingen.",
+    "Dezelfde Rust-bibliotheken die deze site bouwen en beveiligen. Daartoe behoren <strong>noyalib</strong> voor YAML en de <strong>Static Site Generator</strong> zelf, uitgebracht met CycloneDX-SBOM's en Sigstore-handtekeningen. Uw engineers bouwen erop voort in plaats van de equivalenten zelf te onderhouden."
+  ],
+  "area_cta": [
+    "Lees het verhaal over betalingen",
+    "Lees het verhaal over beveiliging",
+    "Lees het verhaal over het platform"
+  ],
+  "cat_kicker": [
+    "GEAUTOMATISEERDE FINANCIËLE INFRASTRUCTUUR",
+    "POSTKWANTUMBEVEILIGING IN DE FINANCIËLE SECTOR",
+    "TOEGEPASTE AI & BESTUURLIJKE INTELLIGENTIE",
+    "SOEVEREINE BEDRIJFSTECHNOLOGIE",
+    "WEB, PUBLICEREN & OMGEVING"
+  ],
+  "finale_eyebrow": [
+    "CONTACT"
+  ],
+  "finale_lede": [
+    "Plant u een migratie naar ISO 20022, een postkwantumtoets of toegepaste AI in productie? Vertel me wat u bouwt. Ik laat zien waar deze gereedschappen passen."
+  ],
+  "finale_cta": [
+    "Neem contact op"
+  ],
+  "h2": [
+    "Financiële gegevens, ontward.",
+    "Kwantumbestendig. Klaar voor de onderneming.",
+    "Stel een vraag. Krijg de briefing.",
+    "Uw hardware. Uw gegevens.",
+    "Publiceer het op uw manier.",
+    "Bouw erop voort. Of bouw het met mij."
+  ],
+  "lede": [
+    "Betaalbestanden en bankafschriften, zonder wrijving. Deze gereedschappen genereren de volledige levensloop van het ISO 20022-bericht en lezen rommelige afschriften uit de praktijk met deterministische precisie. Breng uw CSV's, PDF's of databases mee. De gegevens stromen gewoon door.",
+    "Beveiliging gebouwd voor het kwantumtijdperk, vandaag toegepast. Deze bibliotheken volgen de NIST-standaarden voor sleutelinkapseling en hashing, zodat u financiële infrastructuur toekomstbestendig maakt lang voordat de dreiging er is.",
+    "AI aan het werk in de dagelijkse bedrijfsvoering. Scan code op kwetsbaarheden, maak van een vraag een gestructureerde briefing en werk met uw stem. Op uw voorwaarden, zonder leveranciersafhankelijkheid.",
+    "Fundamenten die u zelf in handen hebt. Geauditeerde, geheugenveilige Rust-bibliotheken die op uw eigen infrastructuur draaien en worden uitgebracht met een softwarestuklijst en een Sigstore-handtekening. Lees elke regel. Neem hem in eigen beheer. Houd hem in huis.",
+    "Sjablonen, een CSS-framework, twee vakpublicaties en de reproduceerbare opzet die dat alles uitbrengt. De stack waarop deze site draait."
+  ],
+  "alt": [
+    "Banner van de open source-betaalbibliotheek pain001",
+    "Banner van de ISO 20022-toolkit pacs008",
+    "Logo van de bankafschriftsuite camt053",
+    "Logo van de rekeningbeheersuite acmt001",
+    "Banner van Bank Statement Parser",
+    "Logo van NaluFX, AI-gestuurde kasallocatie in Rust",
+    "Logo van QRC, een Rust-bibliotheek voor QR-codes",
+    "Banner van KyberLib",
+    "Banner van de Rust-bibliotheek Hash (HSH)",
+    "Banner van Password Generator Pro",
+    "Banner van Euxis, een open source-scanner voor codebeveiliging",
+    "Banner van Àkàndé, een geavanceerde AI-spraakassistent",
+    "Banner van Audio Analyser",
+    "Banner van de Crypto Service Suite",
+    "Banner van de Static Site Generator",
+    "Banner van het Rust-YAML 1.2-ecosysteem noyalib",
+    "Banner van Serde YML",
+    "Banner van de bibliotheek RustLogs (RLG)",
+    "Banner van LibMake",
+    "Banner van de Rust-bibliotheek DateTime (DTT)",
+    "Banner van de Rust-bibliotheek Random (VRD)",
+    "Banner van de Rust-bibliotheek Common (CMN)",
+    "Banner van de Rust-bibliotheek Mini Functions",
+    "Banner van Kaishi, een startsjabloon",
+    "Banner van de Skeletonic Stylus Library",
+    "Banner van de publicatie Banking On AI",
+    "Banner van de publicatie Banking On Quantum",
+    "Banner van de website L90S",
+    "Banner van het Dotfiles-project"
+  ],
+  "excerpt": [
+    "Genereert ISO 20022 pain.001-bestanden uit CSV of SQLite. Banken en betaaldienstverleners gebruiken het om gestructureerde overboekingsberichten te maken zonder bestaande systemen te herbouwen.",
+    "Genereert, valideert en levert ISO 20022 pacs.008-berichten voor overboekingen van klanten tussen banken. Bevat validatie met JSON Schema en XSD, IBAN-controles in 75 landen en maskering van persoonsgegevens voor AVG en PCI-DSS.",
+    "Leest ISO 20022 camt.053-afschriften van bank naar klant en haalt saldi, boekingen en transactiedetails op als gestructureerde gegevens. Bevat MT940-inlezen, XLSX-export en integraties met editors en AI-assistenten.",
+    "ISO 20022-berichtenverkeer voor rekeningbeheer. Opent, onderhoudt, sluit, wisselt en verifieert bankrekeningen vanuit eenvoudige gegevensbestanden, met gereedschap voor editors en AI-assistenten.",
+    "Een Python-toolkit die bankafschriften in verschillende formaten omzet naar gestructureerde gegevens. Gebouwd voor rommelige bestanden uit de praktijk en voor auditvereisten.",
+    "Een Rust-toepassing voor kasallocatie over fondsstructuren heen, die prognoses gebruikt om de verdeling te onderbouwen. Bedoeld voor treasury, fondsadministratie en vermogensallocatie.",
+    "Een Rust-bibliotheek voor het genereren en lezen van QR-codes in verschillende formaten. In het betalingsverkeer voor EPC-QR-codes bij SEPA-overboekingen, betaallinks voor incasso door handelaren en step-up-authenticatie.",
+    "Een Rust-implementatie van CRYSTALS-Kyber, de NIST FIPS 203-standaard voor postkwantumsleutelinkapseling.",
+    "Hash- en digestalgoritmen voor het opslaan en verifiëren van wachtwoorden, geschreven met het oog op kwantumbestendigheid.",
+    "Een platformonafhankelijk opdrachtregelprogramma voor het genereren van willekeurige wachtwoorden, gebouwd op geauditeerde cryptografische primitieven.",
+    "Een scanner voor codebeveiliging in acht talen die statische analyse en taint-analyse combineert met LLM-verificatie om vals-positieven terug te dringen. Levert met Sigstore ondertekende SARIF-, SBOM- en OpenVEX-bundels voor toetsing van de toeleveringsketen.",
+    "Een spraakassistent gebouwd op de GPT-modellen van OpenAI, met PDF-samenvattingen en het cachen van antwoorden. Geschikt voor persoonlijk en bestuurlijk gebruik.",
+    "Zet audio in real time om naar tekst met AI-spraakherkenning. Bedoeld voor het analyseren van opgenomen gesprekken en vergaderingen.",
+    "Een cryptografische dienst voor gangbare behoeften van toepassingen: versleuteling, tokenisatie, transactieautorisatie, code-ondertekening en het beheer van de sleutellevensloop.",
+    "Een generator voor statische sites in Rust, standaard veilig. Bevat WCAG AAA-validatie, versterking van CSP en SRI, een contentpijplijn met een lokaal LLM, een WebAssembly-doel en ondersteuning voor 28 talen.",
+    "Een YAML 1.2-implementatie volledig in Rust. Geen unsafe code, volledige naleving van de specificatie, streaming via serde, een verliesvrije syntaxboom en validatie met JSON Schema. Uitgebracht als bibliotheek, CLI, language server, MCP-server en WASM-build.",
+    "YAML-serialisatie en -deserialisatie voor Rust-datastructuren, gebouwd op het Serde-framework.",
+    "Een logbibliotheek voor Rust met gestructureerde formaten, asynchroon loggen en instelbare uitvoer.",
+    "Een steigergenerator voor Rust-bibliotheken. Hij levert vooraf ingevulde sjabloonbestanden voor tests, benchmarks en CI.",
+    "Een datum- en tijdbibliotheek voor Rust: ISO 8601-opmaak, omgang met tijdzones en toegang tot afzonderlijke datumonderdelen.",
+    "Generatie van willekeurige getallen op basis van het Mersenne Twister-algoritme, gebruikt in simulaties en spellen.",
+    "Een Rust-bibliotheek voor toegang tot wiskundige en cryptografische constanten.",
+    "Een bibliotheek met hulp- en wrapperfuncties voor Rust.",
+    "Een startsjabloon voor de Static Site Generator, ingericht voor strakke en toegankelijke sites. Het sjabloon dat ik gebruik als ik een nieuwe site begin.",
+    "Een modulaire Stylus-bibliotheek met componenten en mixins voor web- en mobiele indelingen. Deze site is erop gebouwd.",
+    "Een publicatie over hoe banken AI toepassen, van klantenservice en fraudedetectie tot de bedrijfsvoering.",
+    "Een publicatie over kwantumcomputing in bankwezen en financiën, van risicoanalyse tot cryptografie.",
+    "Advies als fractional CFO van een financieel leidinggevende met meer dan 20 jaar in de technologie, over groei, financiering en financiële bedrijfsvoering.",
+    "Configuratiebestanden voor macOS, Linux en Windows: scripts en instellingen voor een ontwikkelworkflow."
+  ],
+  "more": [
+    "Meer lezen"
+  ],
+  "faq_q": [
+    "Onder welke licentie worden deze projecten uitgebracht?",
+    "Zijn deze projecten klaar voor productie?",
+    "Hoe kan ik bijdragen of een probleem melden?",
+    "Mag ik deze bibliotheken gebruiken in een gereguleerde bancaire omgeving?",
+    "Biedt u commerciële ondersteuning of advies?",
+    "Hoe volg ik nieuwe releases?"
+  ],
+  "faq_a": [
+    "De meeste projecten zijn dubbel gelicentieerd onder MIT en Apache-2.0, de standaard voor het Rust-ecosysteem, die commerciële gebruikers naast soepele herdistributie ook uitdrukkelijke octrooirechten geeft. Een klein aantal gereedschappen voor klanten valt alleen onder Apache-2.0. Het licentiebestand in de hoofdmap van elke repository is de gezaghebbende bron.",
+    "Veel wel. <a href=\"https://pain001.com\">pain001</a> wordt door banken en betaaldienstverleners gebruikt om het aanmaken van ISO 20022-bestanden te automatiseren. <a href=\"https://kyberlib.com\">KyberLib</a> volgt de specificatie NIST FIPS 203 en levert testvectoren mee. De README en de CI-badges van elke repository geven de actuele status aan; hebt u een specifieke garantie nodig voor productiegebruik, neem dan contact op.",
+    "Elk project heeft een openbare GitHub-repository op <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Open een issue met een beschrijving van het probleem (een minimaal reproduceerbaar voorbeeld helpt) of een pull request die aan een issue is gekoppeld. Bijdragen vallen onder het Developer Certificate of Origin en vereisen ondertekende commits.",
+    "Ja, met de gebruikelijke kanttekeningen. De bibliotheken zijn onafhankelijk open source-werk, geen gereguleerd product. Doorloop uw normale processen voor toeleveringsketen, beveiliging en afhankelijkheidsbeoordeling, zoals vendoring via uw interne spiegel, scannen met SBOM-gereedschap en vastzetten op Git-SHA of cryptografische hash, voordat u uitrolt naar productie-infrastructuur voor betalingen.",
+    "Ja, op selectieve basis. Opdrachten richten zich op migratie naar ISO 20022, routekaarten voor migratie naar postkwantumcryptografie en toegepaste AI in de financiële dienstverlening. <a href=\"/contact/\">Neem contact op</a> met een korte omschrijving, uw tijdlijn en eventuele randvoorwaarden.",
+    "Elke gedateerde publicatie op deze site wordt aangekondigd via de <a href=\"/rss.xml\">RSS-feed</a> en de nieuwsbrief <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Afzonderlijke repositories publiceren releases ook op GitHub, die u rechtstreeks kunt volgen."
+  ],
+  "gh_pushed_template": "laatste commit {age} geleden"
+}
