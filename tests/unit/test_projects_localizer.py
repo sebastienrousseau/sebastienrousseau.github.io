@@ -31,6 +31,13 @@ from build_translations._projects import (  # type: ignore[import-not-found]
     reference,
 )
 
+PUBLIC = ROOT / "public"
+
+SKIP_IF_NO_BUILD = pytest.mark.skipif(
+    not (PUBLIC / "projects" / "index.html").is_file(),
+    reason="public/projects/ not built — run ./build.sh first",
+)
+
 PAGE = (
     '<main><div class="wrap">'
     '<span class="kpi-cell-label">GitHub stars</span>'
@@ -166,3 +173,27 @@ def test_one_more_translation_covers_every_card(monkeypatch: pytest.MonkeyPatch)
     assert problems == []
     assert out.count("En savoir plus") == 3
     assert "Learn more" not in out
+
+
+@SKIP_IF_NO_BUILD
+def test_a_drifted_catalogue_is_announced_during_the_build(
+    monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    """A mismatch must reach the build log, not just the return value.
+
+    ``localize_projects_page`` reports problems to its caller; it is
+    ``render_static_translation`` that prints them. With all 34
+    catalogues correct that branch never runs, so nothing would notice
+    if the reporting were dropped — and the first symptom of a copy
+    change would be 34 silently half-English pages.
+    """
+    from build_translations import _pages
+    from build_translations import _state as st
+
+    monkeypatch.setattr(_lang_registry, "load_projects", lambda code: {"kpi": ["Étoiles"]})
+    st.bind_lang("fr")
+    _pages.render_static_translation("projects")
+
+    out = capsys.readouterr().out
+    assert "build_translations: projects[fr]" in out
+    assert "kpi: catalogue has 1 entries" in out
