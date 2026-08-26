@@ -1,67 +1,66 @@
 ---
-title: "الإدارة الفعّالة للتاريخ والوقت مع DateTime (DTT)"
+title: "Mabisang pangangasiwa ng petsa at oras gamit ang DateTime (DTT)"
 tags: "DateTime, DTT, Rust, date library, time library, timezone handling, chrono alternative, ISO 8601, time formatting, Sebastien Rousseau, ISO 20022, post-quantum cryptography, AI, open source"
-subtitle: "DTT، مكتبة Rust عالية الدقّة لعمليات التاريخ والوقت."
-description: "DateTime (DTT) مكتبة Rust لتحليل وتحقّق ومعالجة وتنسيق التواريخ والأوقات — دقّة عالية ووظائف واسعة."
+subtitle: "Isang aklatang Rust para sa pagsusuri, pagpapatunay, pagmamanipula, at pagpopormat ng datos ng petsa at oras, may matatag na suporta sa time zone."
+description: "Ang DateTime (DTT): isang aklatang Rust na bukas ang pinagmulan para sa pagsusuri, pagpapatunay, pagmamanipula, at pagpopormat ng petsa at oras — may matatag na suporta sa time zone para sa mga aplikasyong sensitibo sa oras."
 date: "Dec 04, 2023"
 language: "fil-PH"
 locale: "fil_PH"
 banner: "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg"
-banner_alt: "DateTime (DTT)، عُدّتكم الأساسية لعمليات التاريخ والوقت."
-keywords: "DateTime، DTT، مكتبة Rust، التحليل، التحقّق، المعالجة، التنسيق، التواريخ، الأوقات"
+banner_alt: "DateTime (DTT), ang inyong saligang kasangkapan para sa mga operasyon sa petsa at oras"
+keywords: "DTT, DateTime, Rust, petsa at oras, time zone, parsing, validating, formatting, aklatang Rust, bukas ang pinagmulan, tatak ng oras"
 ---
+[![DateTime (DTT), ang inyong saligang kasangkapan para sa mga operasyon sa petsa at oras](https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg).class=\"img-fluid clearfix\"][01]
 
-[![DateTime (DTT)، عُدّتكم الأساسية لعمليات التاريخ والوقت](https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg).class=\"img-fluid clearfix\"][01]
+## Mabisang pangangasiwa ng petsa at oras gamit ang DateTime (DTT)
 
-## الإدارة الفعّالة للتاريخ والوقت مع DateTime (DTT)
-
-في مجال تطوير البرمجيات، تَكمن في إدارة التواريخ والأوقات بفعّالية تحدٍّ شائع. وتَبرز `DateTime (DTT)` مكتبةً Rust مصممة بعناية لتبسيط هذه العملية، فتجعلها سلسة ومباشرة.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## ما هي DTT؟
-
-`DateTime (DTT)` هي مكتبة Rust مفتوحة المصدر، مصمَّمة بعناية لتبسيط تفاعلكم مع التواريخ والأوقات. تُقدّم مجموعة شاملة من الأدوات لتحليل بيانات التاريخ والوقت والتحقّق منها ومعالجتها وتنسيقها. ويُعطي تطوير DTT الأولوية للأداء والدقّة وسهولة التكامل، مما يجعلها خياراً مثالياً لمشاريع تطوير البرمجيات الحديثة.
+Sa larangan ng pagbuo ng software, isang karaniwang hamon ang mabisang pangangasiwa ng petsa at oras. Namumukod ang `DateTime (DTT)` bilang aklatang Rust na maingat na idinisenyo upang pasimplehin ang prosesong ito, kaya nagiging maayos at tuwiran ito.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## الميزات
+## Ano ang DTT?
 
-تَتمتّع DTT بطيف من الميزات يُتيح للمطوّرين إدارة التواريخ والأوقات دون جهد:
+Ang `DateTime (DTT)` ay isang aklatang Rust na bukas ang pinagmulan, maingat na idinisenyo upang pasimplehin ang inyong pakikipag-ugnayan sa petsa at oras. Naghahandog ito ng masaklaw na hanay ng kasangkapan para sa pagsusuri, pagpapatunay, pagmamanipula, at pagpopormat ng datos ng petsa at oras. Binibigyang-prayoridad ng pagbuo ng DTT ang bisa, ang katumpakan, at ang kadalian ng pagsasanib, kaya nagiging angkop na angkop itong pagpipilian para sa mga makabagong proyekto sa pagbuo ng software.
 
-1. **التحليل (Parsing)**: تَستوعب DTT بسلاسة التواريخ والأوقات من صِيَغ نصيّة متنوّعة، وتُحوّلها إلى بُنية ملائمة لـ Rust.
-2. **التحقّق (Validating)**: تَضمن قدرات التحقّق المتينة في DTT دقّة بيانات التاريخ والوقت لديكم، فتمنع الأخطاء وعدم الاتّساق الشائعَين.
-3. **المعالجة (Manipulating)**: تُوفّر DTT طُرقاً سهلة لتعديل بيانات التاريخ والوقت. ويشمل ذلك إضافة الأيام، ومقارنة الأوقات، والمزيد.
-4. **التنسيق (Formatting)**: تُقدّم DTT خيارات تنسيق قابلة للتخصيص لعرض التواريخ والأوقات في صيغ ودودة، تستجيب للاحتياجات المحدّدة لتطبيقكم.
+![divider][divider].class=\"m-10 w-100\"
 
-## الانطلاق مع DTT
+## Mga tampok
 
-للبدء باستخدام DTT في مشاريع Rust الخاصة بكم، اتّبعوا هذه الخطوات البسيطة:
+Taglay ng DTT ang hanay ng tampok na nagpapahintulot sa mga developer na pangasiwaan ang petsa at oras nang walang kahirapan:
 
-1. **تنصيب Rust**: لتنصيب DTT، يلزمكم وجود سلسلة أدوات Rust على حاسوبكم. يمكنكم تنصيبها باتباع التعليمات على موقع Rust.
+1. **Pagsusuri (Parsing)**: maayos na tinatanggap ng DTT ang petsa at oras mula sa iba't ibang pormat ng teksto, at ginagawa nitong balangkas na angkop sa Rust ang mga ito.
+2. **Pagpapatunay (Validating)**: tinitiyak ng matatag na kakayahan sa pagpapatunay ng DTT ang katumpakan ng inyong datos ng petsa at oras, kaya napipigilan nito ang karaniwang pagkakamali at di-pagkakatugma.
+3. **Pagmamanipula (Manipulating)**: naghahandog ang DTT ng madaling paraan upang baguhin ang datos ng petsa at oras. Kabilang dito ang pagdaragdag ng araw, ang paghahambing ng oras, at iba pa.
+4. **Pagpopormat (Formatting)**: naghahandog ang DTT ng maiaangkop na opsiyon sa pagpopormat upang ipakita ang petsa at oras sa magiliw na anyo, na tumutugon sa tiyak na pangangailangan ng inyong aplikasyon.
 
-2. **تنصيب DTT**: بعد تنصيب سلسلة أدوات Rust، يمكنكم تنصيب DTT باستخدام الأمر التالي:
+## Pagsisimula sa DTT
+
+Upang simulan ang paggamit ng DTT sa inyong mga proyektong Rust, sundin ang simpleng hakbang na ito:
+
+1. **Pag-install ng Rust**: upang mai-install ang DTT, kailangan ninyong may hanay ng kasangkapan ng Rust sa inyong kompyuter. Mai-i-install ninyo ito sa pagsunod sa mga tagubilin sa websayt ng Rust.
+
+2. **Pag-install ng DTT**: matapos mai-install ang hanay ng kasangkapan ng Rust, mai-i-install ninyo ang DTT gamit ang sumusunod na utos:
 
 ```bash
 cargo install dtt
 ```
 
-3. **إضافة اعتمادية DTT إلى مشروعكم**: أضيفوا السطر التالي إلى ملف Cargo.toml لتنصيب مكتبة DateTime (DTT).
+3. **Pagdaragdag ng dependency ng DTT sa inyong proyekto**: idagdag ang sumusunod na linya sa talaksang Cargo.toml upang mai-install ang aklatang DateTime (DTT).
 
 ```toml
 [dependencies]
 dtt = "0.0.4"
 ```
 
-4. **استخدام DTT**: بعد التنصيب، استورِدوا مكتبة DateTime (DTT) إلى شفرة Rust الخاصة بكم بالعبارة التالية.
+4. **Paggamit ng DTT**: matapos ang pag-install, i-import ang aklatang DateTime (DTT) sa inyong kodigong Rust gamit ang sumusunod na pahayag.
 
 ```rust
 use dtt::DateTime;
 ```
 
-5. **البدء باستخدام DTT**: بعد استيراد DTT، يمكنكم الآن الاستفادة من ميزاتها الموسّعة لإدارة التواريخ والأوقات في مشاريع Rust.
+5. **Pagsisimula sa paggamit ng DTT**: matapos i-import ang DTT, magagamit na ninyo ngayon ang malawak nitong tampok upang pangasiwaan ang petsa at oras sa inyong mga proyektong Rust.
 
-وفيما يلي مثال على إنشاء كائن DateTime جديد بمنطقة زمنية مخصَّصة (مثلاً CEST):
+Narito naman ang halimbawa ng paglikha ng bagong bagay na DateTime na may pasadyang time zone (halimbawa, CEST):
 
 ```rust
 use dtt::DateTime;
@@ -74,33 +73,33 @@ fn main() {
 }
 ```
 
-لدينا أمثلة إضافية إن أردتم فهم [مرونة DateTime (DTT) وقوّتها ⧉][03].
+Mayroon kaming karagdagang halimbawa kung nais ninyong maunawaan ang [kakayahang umangkop at ang lakas ng DateTime (DTT) ⧉][03].
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## معالجة الأخطاء
+## Paghawak sa pagkakamali
 
-DTT مُصمَّمة مع وضع البساطة وسهولة الاستخدام في الحُسبان. وواجهتها البرمجية الحدسيّة و[توثيقها ⧉][02] الواضح يجعلان البدء والتكامل مع مشاريعكم أمراً يسيراً، فيُقلِّلان وقت التطوير وجهده.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## فوائد استخدام DateTime (DTT)
-
-يُقدّم توظيف DateTime (DTT) لإدارة التواريخ والأوقات في مشاريع Rust فوائد عدّة:
-
-- **دقّة في التطبيقات الحسّاسة للوقت**: الدقّة العالية لـ DTT في حسابات الوقت تجعلها مثالية للتطبيقات التي تكون فيها دقّة الوقت حاسمة، كأنظمة المعاملات المالية، حيث يمكن لدقّة الطابع الزمني أن تُؤثّر على ترتيب المعاملات.
-- **خفض وقت التطوير وجهده**: تُيسّر واجهة DTT البرمجية و[توثيقها ⧉][02] الاستخدام والتكامل مع شفرتكم. وهذا يُقلّل من الوقت والجهد اللازمَين لاستخدام وظائف التاريخ والوقت.
-- **دقّة وموثوقية مُعزَّزة**: تَضمن قدرات التحقّق المتينة في DTT دقّة بيانات التاريخ والوقت لديكم، فتمنع الأخطاء وعدم الاتّساق الشائعَين. وهذا يُفضي إلى تطبيقات أكثر موثوقية وجدارة بالثقة.
-- **عمليات تاريخ ووقت مُبسَّطة**: تُوفّر DTT أدوات لتحليل وتحقّق ومعالجة وتنسيق بيانات التاريخ والوقت، مما يُيسّر العمل معها ويُحسّن كفاءة الشفرة.
-- **تكامل مُبسَّط**: DTT مُصمَّمة للتكامل بسلاسة مع مشاريع Rust القائمة، مما يُقلّل من الاضطرابات ويُتيح لكم إدماج وظائفها في قاعدة شفرتكم بسهولة.
-- **إنتاجية مُعزَّزة للمطوّرين**: بتقليل التعقيد والوقت المُستغرَق في إدارة التواريخ والأوقات، تُمكِّن DTT المطوّرين من التركيز على مهام أكثر استراتيجية، فترفع الإنتاجية الإجمالية.
-- **سهولة التعامل مع المناطق الزمنية**: بدعمها المتين للمناطق الزمنية، تُبسّط DTT التعقيدات المرتبطة ببناء تطبيقات عالمية تتطلّب معالجة مناطق زمنية متعدّدة، كبرامج جدولة فِرَق دولية.
+Idinisenyo ang DTT nang may kaisipang pagiging simple at kadalian ng paggamit. Ginagawang madali ng madaling maunawaang programming interface nito at ng malinaw nitong [dokumentasyon ⧉][02] ang pagsisimula at ang pagsasanib sa inyong mga proyekto, kaya binabawasan nito ang panahon at pagod sa pagbuo.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## احتضنوا الإدارة الفعّالة للتاريخ والوقت مع DTT
+## Ang mga pakinabang ng paggamit ng DateTime (DTT)
 
-[تُبسّط DTT طريقة عملكم مع التواريخ والأوقات في Rust ⧉][00]، مُقدّمةً حلاً متيناً وسهل الاستخدام لإدارة البيانات الزمنية. وبفضل ميزاتها الشاملة، وتصميمها الحدسي، ومعالجتها الموثوقة للأخطاء، DTT هي مكتبتكم المُفضّلة لتبسيط عمليات التاريخ والوقت في مشاريع Rust الخاصة بكم.
+Naghahandog ng ilang pakinabang ang paggamit ng DateTime (DTT) sa pangangasiwa ng petsa at oras sa inyong mga proyektong Rust:
+
+- **Katumpakan sa mga aplikasyong sensitibo sa oras**: ginagawang angkop na angkop ng mataas na katumpakan ng DTT sa kalkulasyon ng oras ang mga aplikasyong mapagpasya ang katumpakan ng oras, tulad ng sistema ng transaksiyong pinansiyal, kung saan maaaring makaapekto ang katumpakan ng tatak ng oras sa pagkakasunod-sunod ng transaksiyon.
+- **Pagbaba ng panahon at pagod sa pagbuo**: pinadadali ng programming interface ng DTT at ng [dokumentasyon ⧉][02] nito ang paggamit at ang pagsasanib sa inyong kodigo. Binabawasan nito ang panahon at pagod na kailangan upang magamit ang punsiyon ng petsa at oras.
+- **Pinatatag na katumpakan at pagiging maaasahan**: tinitiyak ng matatag na kakayahan sa pagpapatunay ng DTT ang katumpakan ng inyong datos ng petsa at oras, kaya napipigilan nito ang karaniwang pagkakamali at di-pagkakatugma. Nauuwi ito sa mas maaasahan at mas mapagkakatiwalaang aplikasyon.
+- **Pinasimpleng operasyon sa petsa at oras**: naghahandog ang DTT ng kasangkapan para sa pagsusuri, pagpapatunay, pagmamanipula, at pagpopormat ng datos ng petsa at oras, kaya pinadadali nito ang pagtatrabaho sa mga ito at pinabubuti ang kahusayan ng kodigo.
+- **Pinasimpleng pagsasanib**: idinisenyo ang DTT upang maisanib nang maayos sa mga umiiral nang proyektong Rust, kaya binabawasan nito ang kaguluhan at pinahihintulutan kayong isama ang punsiyon nito sa inyong kodigo nang madali.
+- **Pinatatag na produktibidad ng developer**: sa pagbabawas ng pagiging masalimuot at ng panahong ginugugol sa pangangasiwa ng petsa at oras, binibigyang-kakayahan ng DTT ang mga developer na tumuon sa mas estratehikong gawain, kaya itinataas nito ang kabuuang produktibidad.
+- **Kadalian ng pakikitungo sa time zone**: sa matatag nitong suporta sa time zone, pinasisimple ng DTT ang mga kumplikasyong nauugnay sa pagbuo ng pandaigdigang aplikasyong nangangailangan ng paghawak sa maraming time zone, tulad ng programa sa pag-iiskedyul para sa mga pangkat na pandaigdigan.
+
+![divider][divider].class=\"m-10 w-100\"
+
+## Yakapin ang mabisang pangangasiwa ng petsa at oras gamit ang DTT
+
+[Pinasisimple ng DTT ang paraan ng inyong pagtatrabaho sa petsa at oras sa Rust ⧉][00], at naghahandog ito ng matatag at madaling gamiting solusyon sa pangangasiwa ng datos na temporal. Salamat sa masaklaw nitong tampok, sa madaling maunawaang disenyo nito, at sa maaasahan nitong paghawak sa pagkakamali, ang DTT ang inyong pinakamainam na aklatan upang pasimplehin ang mga operasyon sa petsa at oras sa inyong mga proyektong Rust.
 
 [00]: https://github.com/sebastienrousseau/dtt#readme "Getting Started"
 [01]: https://github.com/sebastienrousseau/dtt "DateTime (DTT), Your Essential Toolkit for Date and Time Operations"
