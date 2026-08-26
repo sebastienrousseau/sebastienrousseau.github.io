@@ -1,129 +1,128 @@
 ---
-title: "حماية البيانات في عصر الكم: مكتبة الهاش (HSH)"
+title: "Pagsanggalang sa datos sa panahong quantum: ang aklatang hash (HSH)"
 tags: "post-quantum cryptography, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, quantum computing, ISO 20022, AI, Rust, open source"
-subtitle: "HSH: مكتبة هاش مقاومة للحوسبة الكمية لعصر ما بعد الكم في المصادقة."
-description: "تستخدم HSH أوليات تشفيرية مقاومة للحوسبة الكمية لحماية بياناتكم، وضمان أمنها حتى في مواجهة التقدمات المستقبلية للحوسبة الكمية."
+subtitle: "Kriptograpiyang lumalaban sa quantum sa Rust: Argon2i, BScrypt at Scrypt sa isang magaan na aklatan para sa pag-hash at pagpapatunay ng password."
+description: "Paano binabanta ng quantum computing ang tradisyunal na encryption, at paano naghahandog ang aklatang hash (HSH) na nakabatay sa Rust ng mga punsiyong PBKDF na lumalaban sa quantum — Argon2i, BScrypt, Scrypt — para sa pag-hash at pagpapatunay ng password."
 date: "Oct 16, 2023"
 language: "fil-PH"
 locale: "fil_PH"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp"
-banner_alt: "رسم توضيحي إبداعي حول موضوع الحوسبة الكمية"
-keywords: "التشفير المقاوم للكم، التشفير ما بعد الكمي، مكتبة الهاش، HSH، تجزئة كلمات المرور، اشتقاق المفاتيح، Argon2i، Bcrypt، Scrypt، الحوسبة الكمية"
+banner_alt: "Malikhaing paglalarawan hinggil sa paksa ng quantum computing"
+keywords: "HSH, aklatang hash, Rust, kriptograpiyang post-quantum, PQC, quantum computing, Argon2i, BScrypt, Scrypt, PBKDF, QKD, NIST, seguridad ng password"
 ---
+## Pagsanggalang sa datos sa panahong quantum: ang aklatang hash (HSH)
 
-## حماية البيانات في عصر الكم: مكتبة الهاش (HSH)
+![Malikhaing paglalarawan hinggil sa paksa ng quantum computing](https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"
 
-![رسم توضيحي إبداعي حول موضوع الحوسبة الكمية](https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"
+Sa artikulong ito ay tatalakayin ko ang mga gamit ng kriptograpiyang lumalaban sa quantum computing, na nakatuon partikular sa aklatang hash sa wikang Rust (HSH) na aking binuo. Ang aklatang ito ay ganap na optimisado para sa mga punsiyong kriptograpiko ng pag-hash at pagpapatunay.
 
-في هذه المقالة، سأتناول استخدامات التشفير المقاوم للحوسبة الكمية، مع التركيز تحديداً على مكتبة الهاش بلغة Rust (HSH) التي قمت بتطويرها. هذه المكتبة محسَّنة بالكامل لوظائف التجزئة والتحقق التشفيرية.
+## Malalim na pagtingin
 
-## نظرة معمّقة
+### Ang umuusbong na banta ng quantum computing
 
-### التهديد الناشئ للحوسبة الكمية
+Habang umuunlad ang tanawing digital, kailangang yakapin ng mga institusyong nagbibigay ng serbisyong pinansiyal ang mga bagong teknolohiya upang manatiling mapagkumpitensiya. Ang kabiguang gawin ito ay maaaring magdulot ng pagkakaiwan, sapagkat umaabot ang pagbabagong digital sa bawat sektor.
 
-مع تطور المشهد الرقمي، يجب على مؤسسات الخدمات المالية تبنّي التقنيات الجديدة لتظل تنافسية. والإخفاق في ذلك قد يؤدي إلى التخلّف عن الركب، إذ يطال التحول الرقمي كل قطاع.
+Naghahatid ang quantum computing ng radikal na pagbabagong nangangako ng pagpapabilis sa pagsulong sa iba't ibang sektor, kabilang na ang banking at ang mga serbisyong pinansiyal. Gayunman, kasama nito ang malalaking panganib sa seguridad na digital, dahil sa kakayahan nitong basagin ang pinakamasalimuot na kodigo.
 
-تُبشّر الحوسبة الكمية بتحوّل جذري يَعِد بتسريع التقدم في قطاعات متنوعة، من بينها المصرفية والخدمات المالية. غير أنها تأتي مصحوبةً بمخاطر هائلة على الأمن الرقمي، نظراً لقدرتها على فكّ أعقد الشِفرات.
+Ginagawang lipas ng quantum computing ang ilang tradisyunal na teknik sa pag-encrypt, sapagkat kaya nitong lutasin ang mga suliraning matematikal na hindi kayang lutasin ng karaniwang kompyuter.
 
-تجعل الحوسبة الكمية بعض تقنيات التشفير التقليدية متقادمة، لأنها تستطيع حلّ مسائل رياضية يعجز عنها الحاسوب التقليدي.
+Sa kasalukuyang kalagayan, kayang makipag-usap nang ligtas nina Alice at Bob gamit ang mga susing kriptograpiko, kaya napipigilan si Eve na basahin ang mga mensahe. Ngunit hindi ganap na masisiguro ang lubusang seguridad ng pamamahagi at pag-iimbak ng susi. Bunga nito, kumakatawan ang mga quantum na kompyuter sa saligang banta sa kriptograpiya at sa seguridad na digital.
 
-في السياق الحالي، يستطيع آلِس وبوب التواصل بشكل آمن باستخدام مفاتيح تشفيرية، مما يمنع إيف من فكّ الرسائل. ولكن الأمن المطلق لتوزيع المفاتيح وتخزينها لا يمكن ضمانه كلياً. ونتيجة لذلك، تُشكّل الحواسيب الكمية تهديداً جوهرياً للتشفير والأمن الرقمي.
+#### Ligtas ngunit marupok: paglampas sa mga hamong kriptograpiko sa panahong quantum
 
-#### آمن لكنه هشّ: تجاوز التحديات التشفيرية في العصر الكمي
+![Diyagram ng pagkakasunod-sunod][01].class=\"img-fluid clearfix\"
 
-![مخطط تسلسلي][01].class=\"img-fluid clearfix\"
+##### Paliwanag
 
-##### الإيضاح
+* *Alice tungo kay Eve — nagpapadala si Alice ng naka-encrypt na mensahe*
+* *Sinasalo ni Eve — sinasalo ni Eve ang mensahe ni Alice*
+* *Sinusubukang basagin ni Eve — sinusubukan ni Eve ngunit nabibigo siyang basagin ang encryption*
+* *Eve tungo kay Bob — nagpapadala si Eve ng naka-encrypt na mensahe kay Bob*
+* *Bob tungo kay Eve — nagpapadala si Bob ng naka-encrypt na tugon kay Eve*
+* *Sinasalo ni Eve — sinasalo ni Eve ang tugon ni Bob*
+* *Sinusubukang basagin ni Eve — muling nabibigo si Eve na basagin ang encryption*
+* *Eve tungo kay Alice — nagpapadala si Eve ng naka-encrypt na mensahe kay Alice*
 
-* *آلِس إلى إيف — آلِس ترسل رسالة مشفّرة*
-* *إيف تعترض — إيف تعترض رسالة آلِس*
-* *إيف تحاول فكّ التشفير — إيف تحاول لكنها تفشل في فكّ التشفير*
-* *إيف إلى بوب — إيف ترسل رسالة مشفّرة إلى بوب*
-* *بوب إلى إيف — بوب يرسل رداً مشفّراً إلى إيف*
-* *إيف تعترض — إيف تعترض ردّ بوب*
-* *إيف تحاول فكّ التشفير — تفشل إيف مجدداً في فكّ التشفير*
-* *إيف إلى آلِس — إيف ترسل رسالة مشفّرة إلى آلِس*
+##### Pagpapaliwanag
 
-##### التفسير
+###### Ang kasalukuyang encryption
 
-###### التشفير الحالي
+Ang kasalukuyang mga algoritmo ng encryption na ginagamit nina Alice at Bob ay mabisa sa pagpigil kay Eve na basagin ang encryption ng kanilang mensahe. Gayunman, kumakatawan ang quantum computing sa posibleng banta sa seguridad ng mga algoritmong ito.
 
-خوارزميات التشفير الحالية المستخدمة بين آلِس وبوب فعّالة في منع إيف من فكّ تشفير رسائلهما. غير أن الحوسبة الكمية تُمثّل تهديداً محتملاً لأمن هذه الخوارزميات.
+###### Ang mga posibleng panganib na quantum
 
-###### المخاطر الكمية المحتملة
+Ang mga quantum na kompyuter ay higit na mabilis kaysa sa karaniwang kompyuter sa pagsasagawa ng ilang uri ng kalkulasyon, kabilang na ang mga ginagamit upang basagin ang ilang algoritmo ng encryption. Kung magkaroon si Eve ng quantum na kompyuter, maaaring mabasag niya ang encryption at mabasa ang mga mensahe nina Alice at Bob.
 
-الحواسيب الكمية أسرع بكثير من الحواسيب التقليدية في أداء أنواع معيّنة من العمليات الحسابية، بما فيها العمليات المستخدَمة لكسر بعض خوارزميات التشفير. إذا توفّر لإيف حاسوب كمي، فقد تستطيع كسر التشفير وقراءة رسائل آلِس وبوب.
+###### Ang panganib sa pamamahagi at pag-iimbak ng susi
 
-###### مخاطر توزيع المفاتيح وتخزينها
+Kahit gumamit sina Alice at Bob ng matibay na encryption, maaaring mapasok ang kanilang mensahe kung mapasok ang mga susing ginamit sa pag-encrypt at pagbasag nito. Maaaring mapasok ang mga susi sa iba't ibang paraan tulad ng pagnanakaw, ng pag-hack, at ng mga atake sa panlipunang inhinyeriya.
 
-حتى لو استخدم آلِس وبوب تشفيراً قوياً، يمكن أن تُختَرَق رسائلهما إذا اختُرقت المفاتيح المستخدَمة في التشفير وفكّه. ويمكن أن تتعرّض المفاتيح للاختراق بطرق متعددة كالسرقة والقرصنة وهجمات الهندسة الاجتماعية.
+###### Ang pangangailangan ng kriptograpiyang post-quantum
 
-###### الحاجة إلى التشفير ما بعد الكمي
+Ang kriptograpiyang post-quantum ay bagong larangan ng kriptograpiyang idinisenyo upang lumaban sa mga atakeng quantum. Nasa yugto pa rin ng pagbuo ang mga algoritmo ng kriptograpiyang post-quantum, ngunit may tunay na potensiyal ang mga ito upang ipagsanggalang ang datos laban sa mga atakeng quantum.
 
-التشفير ما بعد الكمي هو مجال جديد من التشفير مُصمَّم ليكون مقاوماً للهجمات الكمية. وما تزال خوارزميات التشفير ما بعد الكمي قيد التطوير، لكنها تنطوي على إمكانات حقيقية لحماية البيانات من الهجمات الكمية.
+### Pagpapakilala sa kriptograpiyang lumalaban sa quantum computing
 
-### التعريف بالتشفير المقاوم للحوسبة الكمية
+Ang kriptograpiyang lumalaban sa quantum computing, na kilala rin bilang kriptograpiyang post-quantum (PQC) o kriptograpiyang ligtas sa quantum, ay tumutukoy sa mga algoritmong kriptograpiko na pinaniniwalaang ligtas laban sa atake ng mga quantum na kompyuter.
 
-التشفير المقاوم للحوسبة الكمية، المعروف أيضاً بالتشفير ما بعد الكمي (PQC) أو التشفير الآمن كمياً، يُشير إلى الخوارزميات التشفيرية التي يُعتقد بأمنها في وجه هجمات الحواسيب الكمية.
+Kailangang gawin ng mga institusyon ang mga nararapat na pag-iingat upang ipagsanggalang ang kanilang datos laban sa panganib ng quantum computing. Maaaring maghandog sa mga kompanya ng serbisyong pinansiyal ng karagdagang layer ng seguridad ang pagpapatupad ng kriptograpiyang lumalaban sa quantum at ng mga estratehiya sa quantum entanglement.
 
-يجب على المؤسسات اتخاذ الاحتياطات اللازمة لحماية بياناتها من مخاطر الحوسبة الكمية. ويمكن لتطبيق التشفير المقاوم للكم واستراتيجيات التشابك الكمي أن يُوفّرا لشركات الخدمات المالية طبقة أمنية إضافية.
+* **Ang kriptograpiyang lumalaban sa quantum computing** ay bagong uri ng kriptograpiyang kayang labanan ang atake ng mga quantum na kompyuter. Kayang pabilisin ng mga algoritmo nito ang pagproseso ng datos at mapataas ang katumpakan, kaya nagiging mas mahusay itong pagpipilian.
 
-* **التشفير المقاوم للحوسبة الكمية** هو نوع جديد من التشفير قادر على مقاومة هجمات الحواسيب الكمية. ويمكن لخوارزمياته أن تُسرّع معالجة البيانات وتزيد الدقة، مما يجعلها خياراً أكثر كفاءة.
+* **Ang quantum entanglement** ay maaaring gamitin upang lumikha ng mga sistema ng [quantum na pamamahagi ng susi](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) ([QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)), na kayang lumikha at mamahagi ng ligtas na susing kriptograpiko sa malalayong distansiya. Ang mga sistemang QKD ay hindi tinatablan ng atake mula sa quantum na kompyuter, kaya angkop na angkop ang mga ito sa pagsanggalang sa sensitibong datos na pinansiyal.
 
-* **التشابك الكمي** يمكن استخدامه لإنشاء أنظمة [التوزيع الكمي للمفاتيح](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) ([QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html))، القادرة على توليد وتوزيع مفاتيح تشفيرية آمنة عبر مسافات بعيدة. أنظمة QKD مَنيعة ضد هجمات الحاسوب الكمي، مما يجعلها مثالية لحماية البيانات المالية الحسّاسة.
+## Ang ideya
 
-## الفكرة
+### Ang aklatang hash (HSH): pagpapanguna sa interoperabilidad sa kriptograpiyang lumalaban sa quantum
 
-### مكتبة الهاش (HSH): ريادة قابلية التشغيل البيني في التشفير المقاوم للكم
+Naghahandog ang aklatang hash (HSH) ng magaan, mabisa, at madaling gamiting solusyon sa pagsanggalang sa datos gamit ang kriptograpiyang lumalaban sa quantum computing. Binibigyang-kakayahan nito ang mga developer na gumamit ng mga algoritmong lumalaban sa quantum sa kanilang aplikasyon nang hindi kailangan ang detalyadong pag-unawa sa saligang algoritmong kriptograpiko.
 
-تُوفّر مكتبة الهاش (HSH) حلاً خفيفاً وفعّالاً وسهل الاستخدام لحماية البيانات بتشفير مقاوم للحوسبة الكمية. وهي تُمكّن المطوّرين من استخدام خوارزميات مقاومة للكم في تطبيقاتهم دون الحاجة إلى فهم تفصيلي للخوارزميات التشفيرية الأساسية.
+Ginawa ang aklatan sa wikang pamprograma na Rust, na kilala sa bilis at kahusayan nito, at angkop na angkop sa kriptograpiya at sa pangmatagalang pagiging maaasahan.
 
-بُنيت المكتبة بلغة البرمجة Rust، المعروفة بسرعتها وكفاءتها، والملائمة تماماً للتشفير والموثوقية على المدى الطويل.
+## Ang epekto
 
-## الأثر
+### Ang mga pakinabang ng aklatang hash na lumalaban sa quantum computing
 
-### فوائد مكتبة الهاش المقاومة للحوسبة الكمية
+Naghahandog ang [aklatang hash (HSH) ⧉][00] ng kayamanan ng makabagong primitibong kriptograpiko, at bumubuo ito ng matatag na harang laban sa mga suliranin ng panahong quantum. Nasa pagsanggalang sa sensitibong datos ang halaga nito, sa panahong kumakatawan ang quantum computing sa saligang panganib sa seguridad na digital.
 
-تُقدّم [مكتبة الهاش (HSH) ⧉][00] ثروة من الأوليات التشفيرية الحديثة، مُشكّلةً حاجزاً متيناً في وجه تعقيدات العصر الكمي. وتكمن أهميتها في حماية البيانات الحسّاسة في زمن تُمثّل فيه الحوسبة الكمية خطراً جوهرياً على الأمن الرقمي.
+Naghahandog ang aklatan sa mga organisasyon at institusyong pinansiyal ng pinakamataas na antas ng proteksiyong makukuha sa internet, sa pamamagitan ng piling hanay ng algoritmo, kabilang ang Argon2i, BScrypt, at Scrypt. Ang mga ito ay ligtas na punsiyon ng paghango ng susi na nakabatay sa password (PBKDFs). Ginagamit ang mga punsiyong PBKDF upang gawing susing kriptograpiko ang mga password. Idinisenyo ang mga ito upang maging mabagal at masinsin sa memorya, kaya nagiging mahirap basagin ang mga ito sa pamamagitan ng brute-force na atake.
 
-تُقدّم المكتبة للمؤسسات والمؤسسات المالية أعلى مستوى حماية متاح على الإنترنت، عبر مجموعة مختارة من الخوارزميات، بما فيها Argon2i وBScrypt وScrypt. هذه دوال اشتقاق مفاتيح آمنة قائمة على كلمة مرور (PBKDFs). وتُستخدم دوال PBKDF لتحويل كلمات المرور إلى مفاتيح تشفيرية. وهي مُصمَّمة لتكون بطيئة وكثيفة الاستهلاك للذاكرة، مما يصعّب كسرها بهجمات القوة الغاشمة.
+Bukod dito, tinitiyak ng aklatan na ang mga resulta ay hindi lamang ligtas at mabisa, kundi angkop na angkop din sa mga aplikasyon sa antas ng negosyo, kayang lumawak, at madaling gamitin.
 
-علاوةً على ذلك، تَضمن المكتبة أن النتائج ليست آمنة وفعّالة فحسب، بل ملائمة تماماً للتطبيقات على مستوى المؤسسات، وقابلة للتوسيع، وسهلة الاستخدام.
+## Ang mga insentibo
 
-## الحوافز
+### Ligtas na paglalayag sa tanawin ng quantum computing
 
-### الإبحار في مشهد الحوسبة الكمية بأمان
+* **Katiyakan ng seguridad**: nagbibigay sa mga organisasyon ang paggamit ng aklatang hash (HSH) ng katiyakang mananatiling ligtas ang kanilang datos.
 
-* **ضمان الأمن**: يُوفّر استخدام مكتبة الهاش (HSH) للمؤسسات ضماناً ببقاء بياناتها آمنة.
+* **Paghahanda sa hinaharap**: ang pagyakap ngayon sa mga algoritmong lumalaban sa quantum ay nagsasanggalang sa mga organisasyon laban sa posibleng kahinaan sa hinaharap.
 
-* **التحصين المستقبلي**: تبنّي الخوارزميات المقاومة للكم اليوم يحمي المؤسسات من نقاط الضعف المحتملة في المستقبل.
+* **Kahusayan sa gastos**: ang aklatang hash (HSH) ay bukas ang pinagmulan at magagamit nang hindi kailangan ng mamahaling lisensiya o bayad sa suskripsiyon. Kaya nagiging kaakit-akit itong pagpipilian sa mga organisasyong naghahangad panatilihing mababa ang gastos habang nakakamit ang ligtas na quantum computing.
 
-* **كفاءة التكلفة**: مكتبة الهاش (HSH) مفتوحة المصدر ويمكن استخدامها دون الحاجة إلى تراخيص مكلفة أو رسوم اشتراك. وهذا يجعلها خياراً جذاباً للمؤسسات الساعية للحفاظ على تكاليف منخفضة مع الوصول إلى حوسبة كمية آمنة.
+### Pagpapanatili ng tiwala ng mamimili
 
-### الحفاظ على ثقة المستهلكين
+* **Pagsanggalang sa datos ng kliyente**: pinatatatag ng pagpapanatiling ligtas ng datos ng kliyente laban sa atake ng quantum na kompyuter ang tiwala ng kliyente sa kakayahan ng mga organisasyong ipagsanggalang ang kanilang impormasyon.
 
-* **حماية بيانات العملاء**: يُعزّز تأمين بيانات العملاء من هجمات الحواسيب الكمية ثقة العملاء في قدرة المؤسسات على حماية معلوماتهم.
+* **Pagsunod at obligasyong pangregulasyon**: nakatutulong ang paggamit ng mga abanteng pamamaraang kriptograpiko sa pagsunod sa mahihigpit na batas at alituntunin sa pagsanggalang ng datos, kaya naiiwasan ang mga legal na kahihinatnan at multa.
 
-* **الامتثال والالتزام التنظيمي**: يُسهم تطبيق الأساليب التشفيرية المتقدّمة في الالتزام بقوانين وأنظمة حماية البيانات الصارمة، مما يُجنّب التبعات القانونية والغرامات.
+### HSH: ang pinakamahusay na aklatang hash na lumalaban sa quantum
 
-### HSH: مكتبة الهاش المقاومة للكم بامتياز
+* **Mataas na bisa**: ang paggamit ng [aklatang hash (HSH) ⧉][00] na nakabatay sa Rust ay nagbubunga ng seguridad, kahusayan, at bisa.
+Pagkakatugma sa iba't ibang plataporma: pinagsasanggalang ng aklatang hash (HSH) ang datos sa iba't ibang plataporma at aplikasyon.
 
-* **أداء مرتفع**: الاستفادة من [مكتبة الهاش (HSH) ⧉][00] القائمة على Rust تُحقّق الأمن والكفاءة والأداء.
-الاتساق عبر المنصّات: تَحمي مكتبة الهاش (HSH) البيانات عبر مختلف المنصّات والتطبيقات.
+* **Kadalian ng pagpapatupad**: naghahandog ang aklatang hash (HSH) sa mga developer ng kasangkapang madaling ipatupad, kaya bumababa ang hadlang sa pagyakap sa mga algoritmong lumalaban sa quantum.
 
-* **سهولة التنفيذ**: تُوفّر مكتبة الهاش (HSH) للمطوّرين أداة سهلة التطبيق، مما يخفض الحاجز أمام تبنّي الخوارزميات المقاومة للكم.
+## Pangwakas
 
-## الخلاصة
+Naghahandog ang [aklatang hash (HSH) ⧉][00] ng magaan, mabisa, at madaling gamiting solusyon sa pagsanggalang sa datos gamit ang kriptograpiyang lumalaban sa quantum computing. Pinadadali nito sa mga developer ang pag-upgrade ng kanilang protokol na kriptograpiko upang maging lumalaban sa quantum nang hindi kailangan ang malalim na pag-unawa sa mga algoritmo.
 
-تُوفّر [مكتبة الهاش (HSH) ⧉][00] حلاً خفيفاً وفعّالاً وسهل الاستخدام لحماية البيانات بتشفير مقاوم للحوسبة الكمية. وتُسهّل على المطوّرين ترقية بروتوكولاتهم التشفيرية لتصبح مقاومة للكم دون الحاجة إلى فهم عميق للخوارزميات.
+Ang kriptograpiyang lumalaban sa quantum computing ay larangang mabilis umunlad, at nakatuon ang aklatang HSH na manatili sa unahan nito. Regular itong ina-update ng bagong algoritmo at tampok upang magsanggalang laban sa mga umuusbong na banta.
 
-التشفير المقاوم للحوسبة الكمية مجال يتطوّر بسرعة، ومكتبة HSH ملتزمة بالبقاء في طليعته. وهي تُحدَّث بانتظام بخوارزميات وميزات جديدة للحماية من التهديدات الناشئة.
+Kasalukuyang tinutukoy ng [National Institute of Standards and Technology (NIST) ⧉][02] ang hanay ng pamantayan para sa mga algoritmong kriptograpikong post-quantum sa pamamagitan ng [proyektong kriptograpiyang post-quantum (PQC) ⧉][03].
 
-يُحدّد [المعهد الوطني للمعايير والتقنية (NIST) ⧉][02] حالياً مجموعة من معايير الخوارزميات التشفيرية ما بعد الكمية من خلال [مشروع التشفير ما بعد الكمي (PQC) ⧉][03].
-
-حماية بياناتكم من هجمات الحوسبة الكمية أمر جوهري لأي مؤسسة تتعامل مع بيانات حسّاسة. و[مكتبة الهاش (HSH) ⧉][00] أداة قوية قادرة على مساعدتكم في حماية بياناتكم من هذا التهديد الناشئ.
+Mahalaga sa alinmang organisasyong humahawak ng sensitibong datos ang pagsanggalang sa inyong datos laban sa atake ng quantum computing. At ang [aklatang hash (HSH) ⧉][00] ay malakas na kasangkapang makatutulong sa inyo na ipagsanggalang ang inyong datos laban sa umuusbong na bantang ito.
 
 [00]: https://crates.io/crates/hsh "The Hash Library (HSH) - Quantum-Resistant Cryptographic Hash Library for Password Hashing and Verification"
-[01]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-encryption.svg "آمن لكنه هشّ: تجاوز التحديات التشفيرية في العصر الكمي"
+[01]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-encryption.svg "Ligtas ngunit marupok: paglampas sa mga hamong kriptograpiko sa panahong quantum"
 [02]: https://www.nist.gov/ "National Institute of Standards and Technology"
 [03]: https://csrc.nist.gov/projects/post-quantum-cryptography "Post-Quantum Cryptography PQC"

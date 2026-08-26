@@ -1,83 +1,82 @@
 ---
-title: "Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust"
+title: "Static Site Generator: ang pinakamabilis na SSG na nakabatay sa Rust"
 tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, cross-border payments, stablecoins"
-subtitle: "مولّدُ SSG فائق السرعة، يَسِير الوصول ومُحسَّن لمحرّكات البحث، مكتوبٌ بلغة Rust"
-description: "أنشئ مواقع ساكنة عالية الأثر، قابلة للتوسّع بلا حدود وتحت سيطرتك الكاملة، بفضل Static Site Generator — مولّد SSG فائق السرعة مكتوب بلغة Rust."
+subtitle: "Isang napakabilis na tagalikha ng static na sayt na ginawa sa Rust, optimisado para sa SEO at ganap na tugma sa mga pamantayan ng pagiging accessible."
+description: "Ang Static Site Generator: isang napakabilis na tagalikha ng static na sayt na ginawa sa Rust — buong suporta sa GitHub Flavoured Markdown, awtomatikong sitemap at robots.txt, suporta sa PWA, at pagsunod sa WCAG at ADA."
 date: "October 9, 2023"
 language: "fil-PH"
 locale: "fil_PH"
 banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
-banner_alt: "حاسوب محمول مُطفأ فوق طاولة بيضاء، وإلى اليسار كأس ماء، وإلى اليمين قلم ودفتر ملاحظات ونبتة"
-keywords: "Static Site Generator, مولّد المواقع الساكنة, SSG, Rust, الأداء, SEO, الوصول الميسّر, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS"
+banner_alt: "Isang nakapatay na laptop sa ibabaw ng puting mesa, may basong tubig sa kaliwa at panulat, kuwaderno, at halaman sa kanan"
+keywords: "Static Site Generator, SSG, Rust, static na sayt, SEO, pagiging accessible, WCAG, ADA, Markdown, GFM, PWA, sitemap, robots.txt"
 ---
+![Isang nakapatay na laptop sa ibabaw ng puting mesa, may basong tubig sa kaliwa at panulat, kuwaderno, at halaman sa kanan](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
 
-![حاسوب محمول مُطفأ فوق طاولة بيضاء، وإلى اليسار كأس ماء، وإلى اليمين قلم ودفتر ملاحظات ونبتة](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
+## Static Site Generator: ang pinakamabilis na tagalikha ng static na sayt na nakabatay sa Rust
 
-## Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust
+### Isang mataas ang kalidad na tagalikha ng static na sayt para sa makabagong web
 
-### مولّد مواقع ساكنة عالي الجودة للوب الحديث
+Sa isang tanawing digital na patuloy na nagbabago, ang bilis at ang kalidad ang pinakamahalagang pagpapahalaga. Determinado akong makahanap ng paraan upang makalikha ng static na sayt nang mabilis, na pinagsasama ang mataas na kalidad, ang pagiging accessible, at ang pagkakatugma sa optimisasyon para sa search engine.
 
-في مشهدٍ رقميّ دائم التطوّر، تُمثّل السرعة والجودة قيمتَين قُصويَين. وكنتُ عازماً على إيجاد سبيلٍ لتوليد مواقع ساكنة بسرعةٍ تجمع بين الجودة العالية والوصول الميسّر والتوافق مع تحسين محرّكات البحث.
+Ang static na sayt ay binubuo ng mga pahinang nananatiling matatag at hindi nagbabago maliban kung mano-manong ina-update. Binubuo ito ng mga talaksang HTML, CSS, at kung minsan ay JavaScript, at naghahandog ito ng mabilis na oras ng pag-load at mas matibay na seguridad kumpara sa mga dinamikong sayt.
 
-والمواقع الساكنة صفحاتٌ تظلّ ثابتة ولا تتبدّل ما لم تُحدَّث يدويّاً. وتتألّف من ملفّات HTML و CSS وأحياناً JavaScript، وتُقدّم أزمنة تحميلٍ سريعة وأماناً معزّزاً مقارنةً بالمواقع الديناميكية.
+Sa kasamaang-palad, walang handang produktong agad na nakatugon sa aking pangangailangan. Kaya nagpasiya akong lumikha ng bagong solusyon mula sa simula. Layunin kong maghandog ng mabilis at maaasahang kapalit sa mga tagalikha ng static na sayt na makukuha sa pamilihan, at itulak ang hangganan ng magagawa sa Rust.
 
-ولسوء الحظ، لم يكن ثمّة منتج جاهزٌ يفي بمتطلباتي من فوره. فآليتُ على نفسي إنشاء حلٍّ جديد من الصفر. وكان هدفي تقديم بديلٍ سريع وموثوق لمولّدات المواقع الساكنة المتاحة في السوق، ودفع حدود ما يُمكن إنجازه بـ Rust.
+## Ang ideya
 
-## الفكرة
+### Isang solusyong kayang lumawak at walang hangganang maiaangkop
 
-### حلٌّ قابل للتوسّع والتخصيص بلا حدود
+Binuo ko ang [**Static Site Generator ⧉**][00] upang maghandog ng napakabilis na tagalikha ng static na sayt (SSG) na ginawa sa wikang [**Rust ⧉**][03], na nagpapadali ng paglikha ng static na sayt na optimisado para sa search engine at ganap na tugma sa mga pamantayan ng pagiging accessible.
 
-طوّرتُ [**Static Site Generator ⧉**][00] بهدف تقديم مولّد مواقع ساكنة (SSG) فائق السرعة مبنيّ بلغة [**Rust ⧉**][03]، يُيسّر إنشاء مواقع ساكنة مُحسَّنة لمحرّكات البحث ومتوائمة تماماً مع معايير الوصول الميسّر.
+Ang bilis at ang pagiging maaasahan ang pinakamataas kong prayoridad noong binubuo ang Static Site Generator. Ang Rust ay wikang pamprograma para sa sistema na kilala sa bilis at pagiging maaasahan nito, kaya angkop na angkop ito sa pagbuo ng mataas ang bisang tagalikha ng static na sayt.
 
-كانت السرعة والموثوقية أولويّتي العليا حين تطوير Static Site Generator. و Rust لغة برمجة نظم معروفةٌ بسرعتها وموثوقيّتها، ما يجعلها مثاليّةً لتطوير مولّدات مواقع ساكنة عالية الأداء.
+Masigasig din akong tuklasin ang hangganan ng magagawa sa Markdown. Layunin kong matiyak na kayang lumikha ng Static Site Generator ng static na sayt na mabilis, ligtas, at maaasahan. Nais kong maging bukas ito sa lahat, madaling gamitin, madaling i-update, at makakuha ng mataas na marka sa mga search engine.
 
-وكنتُ شغوفاً باستكشاف حدود ما يُمكن فعله بـ Markdown. وكان هدفي التأكّد من قدرة Static Site Generator على توليد مواقع ساكنة سريعة وآمنة وموثوقة. أردتُها أن تكون متاحةً للجميع، سهلة الاستخدام، ميسّرة التحديث، وأن تُحقّق درجات عاليةً في محرّكات البحث.
+## Ang epekto
 
-## الأثر
+### Isang bagong pamantayan para sa mga tagalikha ng static na sayt
 
-### معيارٌ جديد لمولّدات المواقع الساكنة
+Ang paglikha ng static na sayt gamit ang Static Site Generator ay halos walang pagod, kaya nakatutuon ka sa nilalamang nagpapalaki ng epekto sa iyong target na madla. Tuwiran ang proseso at natatapos ito sa loob ng ilang milisegundo.
 
-توليد موقعٍ ساكن بـ Static Site Generator يكاد يكون جهداً صفريّاً، ما يُتيح التركيز على المحتوى الذي يُعظّم الأثر في الجمهور المستهدف. والعمليّة مباشرة وتُنجَز في أجزاءٍ من الألف من الثانية.
+Bunga nito, ang sayt ay ganap na tumutugon, sumusunod sa [**Web Content Accessibility Guidelines (WCAG) ⧉**][01] at sa [**ADA ⧉**][02], at optimisado para sa optimisasyon ng search engine (SEO) mula pa sa simula.
 
-ونتيجةً لذلك، يكون الموقع متجاوباً بالكامل، ومتوافقاً مع [**Web Content Accessibility Guidelines (WCAG) ⧉**][01] و[**ADA ⧉**][02]، ومُحسَّناً لتحسين محرّكات البحث (SEO) منذ البداية.
+## Ang mga insentibo
 
-## الحوافز
+### Ang pagyakap sa bagong huwaran ay nangangailangan ng tapang at tiwala
 
-### تَبَنّي نموذجٍ جديد يستلزم شجاعةً وثقة
+Naghahandog ang [**Static Site Generator ⧉**][00] ng bagong pananaw — isang mapanlikhang paraan ng pag-unawa sa web. Sa maingat nitong disenyo, binibigyang-kapangyarihan nito ang mga tagalikha ng nilalaman at ang mga malikhaing propesyonal na payamanin ang karanasang nakasentro sa kliyente.
 
-يُقدّم [**Static Site Generator ⧉**][00] منظوراً جديداً — نهجاً مبتكراً لفهم الوب. وبتصميمه المُتقَن، يُمكّن صنّاع المحتوى والمحترفين المبدعين من إثراء التجربة المتمحورة حول العميل.
+**Mga pangunahing tampok:**
 
-**أبرز الميزات:**
+* Buong suporta sa [GitHub Flavoured Markdown ⧉ (GFM)][04]
+* Pagsasanib sa [Google][05] at [Bing][06] Analytics
+* Pagkakatugma sa iba't ibang template ng HTML at sa mga natatanging template
+* Paglikha ng feed na Atom at RSS para sa mga blog
+* Pagpapaliit ng pinagmulang kodigo upang mapatibay ang bisa at ang SEO
+* Nakapaloob na server ng pagpapaunlad sa [Rust][07] para sa lokal na pagsubok at pagbuo
+* Suporta sa maraming pormat ng nilalaman (Markdown, YAML, JSON, TOML, XML)
+* Awtomatikong paglikha ng sitemap, robots.txt, talaang CNAME, at pasadyang pahinang 404
+* Suporta sa mga progresibong web app (PWAs) para sa pagba-browse nang walang koneksiyon
+* Suporta sa pasadyang template at sa mga template ng HTML
 
-* دعم شامل لـ [GitHub Flavoured Markdown ⧉ (GFM)][04]
-* تكاملٌ مع [Google][05] و[Bing][06] Analytics
-* توافقٌ مع طيفٍ من قوالب HTML والقوالب المميّزة
-* توليد خلاصات Atom و RSS للمدوّنات
-* تصغير الشيفرة المصدريّة لتعزيز الأداء و SEO
-* خادم تطوير [Rust][07] مدمج للاختبار والتطوير محلّيّاً
-* دعم تنسيقات محتوى متعدّدة (Markdown, YAML, JSON, TOML, XML)
-* توليدٌ تلقائي لـ sitemaps و robots.txt وسجلّات CNAME وصفحات 404 مخصّصة
-* دعم تطبيقات الوب التقدّمية (PWAs) للتصفّح دون اتصال
-* دعم القوالب المخصّصة وقوالب HTML
+Ipinamamalas ng bawat tampok ang mga pagpapahalagang tulad ng pagiging simple, pagiging maaasahan, at kakayahang lumawak. Idinisenyo ang [**Static Site Generator ⧉**][00] upang tumulong sa paglikha at pagpapanatili ng mataas ang kalidad na static na sayt na tumutugon sa pangangailangan ng mga gumagamit ngayon.
 
-تعكس كلّ ميزةٍ قيماً كالبساطة والموثوقية وقابلية التوسّع. وقد صُمّم [**Static Site Generator ⧉**][00] للمساعدة على إنشاء مواقع ساكنة عالية الجودة وصيانتها بما يستجيب لاحتياجات مستخدمي اليوم.
+### Optimisasyon para sa search engine (SEO)
 
-### تحسين محرّكات البحث (SEO)
+Idinisenyo ang [**Static Site Generator ⧉**][00] upang tulungan ang mga gumagamit na lumikha ng static na sayt na optimisado para sa mga search engine. Kabilang sa mga pangunahing tampok nito para sa SEO ang:
 
-صُمّم [**Static Site Generator ⧉**][00] لمساعدة المستخدمين على إنشاء مواقع ساكنة مُحسَّنة لمحرّكات البحث. ومن أبرز ميزات SEO:
+* Awtomatikong paglikha ng sitemap at ng talaksang robots.txt
+* Suporta sa pasadyang pahinang 404
+* Malinis at maayos ang balangkas na kodigong HTML
+* Mabilis na oras ng pag-load
+* Disenyong tumutugon
+* Pagsunod sa mga pamantayan ng pagiging accessible
 
-* توليدٌ تلقائي لـ sitemaps وملفّات robots.txt
-* دعم صفحات 404 المخصّصة
-* شيفرة HTML نظيفة وحسنة البنية
-* أزمنة تحميل سريعة
-* تصميم متجاوب
-* الامتثال لمعايير الوصول الميسّر
+Ang [**Static Site Generator ⧉**][00] ay isang malakas at maraming gamit na tagalikha ng static na sayt, na naghahandog ng malawak na hanay ng tampok at pakinabang. Idinisenyo ito upang tulungan ang mga gumagamit na lumikha at panatilihin ang mataas ang kalidad na static na sayt, na optimisado para sa SEO at naghahandog ng nakahihigit na karanasan sa paggamit.
 
-[**Static Site Generator ⧉**][00] مولّدٌ قويّ ومتعدّد الاستخدامات للمواقع الساكنة، يُقدّم باقةً واسعة من الميزات والفوائد. وهو مصمَّمٌ لمساعدة المستخدمين على إنشاء مواقع ساكنة عالية الجودة وصيانتها، مُحسَّنة لـ SEO وتُقدّم تجربة استخدامٍ متفوّقة.
+Handa ka na bang lumikha ng mataas ang bisang static na sayt sa loob ng ilang minuto na magtutulak pataas ng iyong trapiko at conversion?
 
-هل أنت مستعدٌّ لإنشاء موقعٍ ساكن عالي الأداء في دقائق يدفع حركة المرور والتحويلات لديك إلى الأعلى؟
-
-[**جرّب Static Site Generator ⧉**][00] مجّاناً اليوم ولاحظ الفرق!
+[**Subukan ang Static Site Generator ⧉**][00] nang libre ngayon at pansinin ang pagkakaiba!
 
 [00]: https://static-site-generator.com/ "Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"

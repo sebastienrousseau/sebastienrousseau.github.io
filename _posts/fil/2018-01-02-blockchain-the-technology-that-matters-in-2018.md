@@ -1,98 +1,98 @@
 ---
-title: "البلوكشين: التقنية التي تهمّ في 2018"
+title: "Blockchain: ang teknolohiyang mahalaga sa 2018"
 tags: "pain001, ISO 20022, payment automation, cost reduction, payments, payment files, pain message, DORA, post-quantum cryptography, AI, tokenised deposits, Rust, cloud native banking, cross-border payments, stablecoins"
-subtitle: "تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ في خدمة معاملاتٍ آمنة"
-description: "حكاية الرحلة الاستثنائية لتأمين المعاملات الرقمية عبر تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ (P2P)."
+subtitle: "Desentralisadong konsenso, ipinamahaging talaan, at ang mga gamit na muling humuhubog sa pinansiya, hanay ng suplay, at pamamahala."
+description: "Paano gumagana ang blockchain bilang bukas at ipinamahaging talaan, kung bakit nito inaalis ang mapagkakatiwalaang ikatlong partido, ang mga gamit nito sa iba't ibang industriya, at ang mga hadlang pa rin sa malawakang pagtanggap."
 date: "January 2, 2018"
 language: "fil-PH"
 locale: "fil_PH"
 banner: "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
-banner_alt: "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية"
-keywords: "blockchain, العملة المشفّرة, Bitcoin, P2P, smart contract, السجل الموزّع, التمويل, سلسلة التوريد, الهويّة الرقمية, الترميز"
+banner_alt: "Isang nakapatay na laptop sa ibabaw ng kayumangging mesang kahoy"
+keywords: "blockchain, desentralisadong konsenso, ipinamahaging talaan, smart contract, cryptocurrency, hanay ng suplay, tokenisasyon, interoperabilidad, digital na pagkakakilanlan"
 ---
 
-![حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"
+![Isang nakapatay na laptop sa ibabaw ng kayumangging mesang kahoy](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"
 
-البلوكشين، التقنية الكامنة وراء الصعود الصاروخي للعملات المشفّرة، تُقلب الشركات والخدمات المالية وأسواق رأس المال رأساً على عقب. وتُغيّر هذه التقنية التحويلية الكيفيّة التي نُجري بها المعاملات والعمليات، إذ تجعل البيانات أيسر إتاحةً وأكثر شفافيةً وأماناً.
+Ang blockchain, ang teknolohiyang nasa likod ng mabilisang pag-angat ng mga cryptocurrency, ay tumataob sa mga kompanya, sa mga serbisyong pinansiyal, at sa mga pamilihan ng kapital. Binabago ng mapagbagong teknolohiyang ito ang paraan ng ating pagsasagawa ng transaksiyon at operasyon, sapagkat ginagawa nitong mas madaling makuha, mas malinaw, at mas ligtas ang datos.
 
-## البلوكشين: التقنية التي تهمّ في 2018
+## Blockchain: ang teknolohiyang mahalaga sa 2018
 
-### نشأة الإجماع اللامركزي
+### Ang pagsilang ng desentralisadong konsenso
 
-برزت البلوكشين بوصفها الابتكار الأساسي الذي أتاح تطوير عملاتٍ مشفّرة مثل [بيتكوين][08]. وفي جوهرها، تعمل البلوكشين سجلاً مفتوحاً موزّعاً يُدوّن المعاملات على نحوٍ قابل للتحقّق ودائم.
+Umusbong ang blockchain bilang pangunahing inobasyong nagbigay-daan sa pagbuo ng mga cryptocurrency tulad ng [Bitcoin][08]. Sa kaibuturan nito, gumagana ang blockchain bilang isang bukas at ipinamahaging talaan na nagtatala ng mga transaksiyon sa paraang mapapatunayan at permanente.
 
-وبسماحها بتوزيع المعلومات الرقمية دون نسخها، رادت البلوكشين منظومةً نِدّ-لنِدّ ثورية لإرساء الإجماع والثقة. ولأوّل مرّة، صارت المعاملات قابلةً للموافقة بلامركزيّةٍ دون وسطاء مركزيين.
+Sa pagpayag nitong maipamahagi ang digital na impormasyon nang hindi ito kinokopya, nanguna ang blockchain sa isang mapanimulang sistemang mula-tao-tungo-sa-tao para sa pagtatatag ng konsenso at tiwala. Sa unang pagkakataon, naging maaaring aprubahan ang mga transaksiyon nang desentralisado at walang sentralisadong tagapamagitan.
 
-ووضعت قدرة البلوكشين على تيسير تفاعلاتٍ آمنة عبر الإنترنت بين الغرباء العمود الفقري للعملات المشفّرة. وفيما يتجاوز التمويل، تحمل البلوكشين إمكاناتٍ ثورية لإعادة تشكيل تدفّقات البيانات والمعاملات عبر القطاعات.
+Ang kakayahan ng blockchain na padaliin ang ligtas na pakikipag-ugnayan sa online sa pagitan ng mga estranghero ang naglatag ng gulugod ng mga cryptocurrency. At lampas sa pinansiya, may mapanimulang potensiyal ang blockchain na muling humubog sa daloy ng datos at transaksiyon sa iba't ibang sektor.
 
-## الفكرة
+## Ang ideya
 
-### إلغاء الأطراف الثالثة الموثوقة عبر السجلّات الموزّعة
+### Pag-aalis ng mapagkakatiwalaang ikatlong partido sa pamamagitan ng ipinamahaging talaan
 
-تُنظِّم البلوكشين البيانات في كتلٍ تتسلسل زمنيّاً. وتُضاف الكتل الجديدة عبر شبكةٍ لامركزية من الحواسيب لا من طرفٍ مركزي. ويُخزَّن هذا السجلّ الموزّع ويُزامَن في الوقت نفسه على عقدٍ متعدّدة في الشبكة.
+Isinasaayos ng blockchain ang datos sa mga bloke na sunod-sunod ayon sa panahon. Ang mga bagong bloke ay idinaragdag ng isang desentralisadong network ng mga kompyuter, hindi ng isang sentral na partido. Ang ipinamahaging talaang ito ay iniimbak at pinagsasabay-sabay sa maraming node sa network.
 
-وتحوي الكتل دفعاتٍ من المعاملات تحمل أختاماً زمنيّة، تصبح غير قابلة للتعديل بمجرّد تسجيلها. وتضمن التعمية الأمان والدقّة بينما يوافق المشاركون في الشبكة على المعاملات. كما تُتيح العقود الذكية ترميز التزاماتٍ معقّدة وتنفيذها تلقائياً.
+Ang mga bloke ay naglalaman ng mga pangkat ng transaksiyong may tatak ng oras, na hindi na maaaring baguhin sa sandaling maitala. Tinitiyak ng kriptograpiya ang seguridad at katumpakan habang inaaprubahan ng mga kalahok sa network ang mga transaksiyon. Pinahihintulutan din ng mga smart contract ang pag-code at kusang pagpapatupad ng masalimuot na obligasyon.
 
-وبإتاحتها معاملات نِدّ-لنِدّ دون وسطاء مركزيين، تُلغي البلوكشين نقاط الفشل الأحادية وتُنشئ شفافية. ويحتفظ المستخدمون الأفراد بالسيطرة على بياناتهم ومعاملاتهم. ويبني النهج اللامركزي ثقةً ومساءلةً على نطاقٍ واسع.
+Sa pagpayag ng mga transaksiyong mula-tao-tungo-sa-tao nang walang sentralisadong tagapamagitan, inaalis ng blockchain ang nag-iisang punto ng kabiguan at lumilikha ng kalinawan. Napananatili ng bawat gumagamit ang kontrol sa kanyang datos at transaksiyon. Nagtatayo ang desentralisadong paraan ng tiwala at pananagutan sa malawakang saklaw.
 
-## الأثر
+## Ang epekto
 
-### إطلاق تحوّلٍ جذري عبر القطاعات
+### Pagpapakawala ng malalim na pagbabago sa iba't ibang sektor
 
-تُتيح البلوكشين تغييراتٍ عميقة في التمويل والصيرفة وسلاسل التوريد والرعاية الصحية والعقار وقطاعاتٍ أخرى. وبإزالة عدم تناظر المعلومات وتخفيف مخاطر الطرف المقابل، تُعزّز البلوكشين الشفافية والنزاهة في المعاملات.
+Nagbibigay-daan ang blockchain sa malalalim na pagbabago sa pinansiya, banking, hanay ng suplay, pangangalagang pangkalusugan, real estate, at iba pang sektor. Sa pag-aalis ng di-pantay na impormasyon at pagbabawas ng panganib mula sa katapat na partido, pinatatatag ng blockchain ang kalinawan at katapatan sa mga transaksiyon.
 
-وقد قدّمت العملات المشفّرة نماذج جديدة من النقود البرمجية والتمويل اللامركزي والتحويلات العالمية نِدّ-لنِدّ. وفي الصيرفة، تُحسّن البلوكشين سرعة المدفوعات وكفاءتها. كما يُتيح الترميز أساليب تمويلٍ جديدة.
+Nagpakilala ang mga cryptocurrency ng bagong anyo ng programmable na salapi, ng desentralisadong pinansiya, at ng pandaigdigang remitensiyang mula-tao-tungo-sa-tao. Sa banking, pinabubuti ng blockchain ang bilis at kahusayan ng bayarin. Nagbubukas din ang tokenisasyon ng bagong paraan ng pagpopondo.
 
-وتضمن البلوكشين أيضاً منشأ المنتجات والتوريد الأخلاقي في سلاسل الإمداد. وتستفيد إدارة السجلّات الصحية من أمانها ودقّتها. بل بدأت البلوكشين زعزعة التصويت وتتبّع حقوق الموسيقى ومنظومات الهويّة الرقمية.
+Tinitiyak din ng blockchain ang pinagmulan ng produkto at ang etikal na pagkuha ng suplay sa hanay ng suplay. Nakikinabang ang pangangasiwa ng talaang pangkalusugan sa seguridad at katumpakan nito. Sinimulan pa ngang yanigin ng blockchain ang pagboto, ang pagsubaybay sa karapatan sa musika, at ang mga sistema ng digital na pagkakakilanlan.
 
-## حالات الاستخدام
+## Mga gamit
 
-### تطبيقات متنوّعة عبر الصناعات
+### Iba't ibang aplikasyon sa buong industriya
 
-أطلقت تعدّدية البلوكشين تطبيقاتٍ مبتكرة عبر القطاعات:
+Nagbunsod ang kagamitan ng blockchain ng mapanlikhang aplikasyon sa iba't ibang sektor:
 
-- **التمويل:** العملات المشفّرة، والمنصّات اللامركزية، وتداول الأوراق المالية المُرمَّزة، والمدفوعات العابرة للحدود
+- **Pinansiya:** mga cryptocurrency, desentralisadong plataporma, kalakalan ng tokenisadong sekuridad, at bayarin na rentas-sempadan
 
-- **سلسلة التوريد:** تتبّع منشأ السلع، وتحسين الشفافية في التصنيع والتوزيع
+- **Hanay ng suplay:** pagsubaybay sa pinagmulan ng kalakal, at pagpapabuti ng kalinawan sa paggawa at pamamahagi
 
-- **الرعاية الصحية:** التخزين الآمن للبيانات الطبية، وتيسير المشاركة بين مقدّمي الخدمات
+- **Pangangalagang pangkalusugan:** ligtas na pag-iimbak ng datos na medikal, at pagpapadali ng pagbabahagi sa pagitan ng mga tagapaglaan
 
-- **الحكومة:** سجلّات الهويّة الرقمية، ومنظومات التصويت الشفّافة
+- **Pamahalaan:** talaan ng digital na pagkakakilanlan, at malilinaw na sistema ng pagboto
 
-- **التأمين:** المعالجة المؤتمتة بالعقود الذكية، ومكافحة الاحتيال
+- **Seguro:** awtomatikong pagproseso sa pamamagitan ng smart contract, at paglaban sa pandaraya
 
-- **العقار:** معاملات عقارية مُرمَّزة، وسجل ملكية مشترك
+- **Real estate:** tokenisadong transaksiyon sa ari-arian, at pinagsasaluhang talaan ng pagmamay-ari
 
-- **الطاقة:** تبادل الطاقة نِدّ-لنِدّ، وتتبّع شهادات الطاقة المتجدّدة
+- **Enerhiya:** palitan ng enerhiyang mula-tao-tungo-sa-tao, at pagsubaybay sa sertipiko ng nababagong enerhiya
 
-## القيود
+## Mga hangganan
 
-### عقبات قائمة تحول دون التبنّي الواسع
+### Mga natitirang hadlang sa malawakang pagtanggap
 
-في حين أنّ البلوكشين تحويليّة، تظلّ القيود المتعلّقة بالتنظيم والتشغيل البيني والتعقيد وقابلية التوسّع حواجز أمام التبنّي الواسع.
+Bagaman mapagbago ang blockchain, nananatiling hadlang sa malawakang pagtanggap ang mga limitasyong may kinalaman sa regulasyon, sa interoperabilidad, sa pagiging masalimuot, at sa kakayahang lumawak.
 
-ويُثبِّط غياب الوضوح التنظيمي عبر الولايات القضائية الاستثمار المؤسّسي. وحلّ التحدّيات المتعلّقة بالخصوصية وإدارة البيانات حيويّ. كما يستلزم أمان الشبكة واستهلاكها للطاقة اهتماماً مع توسّع البلوكشين.
+Pinipigil ng kawalan ng kalinawan sa regulasyon sa iba't ibang hurisdiksiyon ang institusyonal na pamumuhunan. Mahalaga ang paglutas sa mga hamon kaugnay ng pagkapribado at ng pangangasiwa ng datos. Nangangailangan din ng pansin ang seguridad ng network at ang pagkonsumo nito ng enerhiya habang lumalawak ang blockchain.
 
-وتحتاج المنصّات المعزولة إلى تحقيق التشغيل البيني. ويجب أن تتحسّن تجربة المستخدم وتصميم الواجهات. كما ستزيد ثقافة البلوكشين لدى الجمهور وصنّاع السياسات من القبول لها.
+Kailangang makamit ng mga nakabukod na plataporma ang interoperabilidad. Dapat mapabuti ang karanasan ng gumagamit at ang disenyo ng interface. At ang kaalaman sa blockchain sa publiko at sa mga gumagawa ng patakaran ay magpapataas ng pagtanggap dito.
 
-## الآفاق
+## Ang hinaharap
 
-### مسار إيجابي رغم حالة عدم اليقين
+### Positibong landas sa kabila ng kawalang-katiyakan
 
-تبدو البلوكشين مهيّأة لمواصلة نموٍّ أُسّي مع إدراك المنظّمات لإمكاناتها التحويلية. غير أنّ حالة عدم اليقين حول التنظيم والمعايير والتصوّرات العامة تظلّ عقبات.
+Mukhang nakahanda ang blockchain para sa patuloy na eksponensiyal na paglago habang natutuklasan ng mga organisasyon ang mapagbago nitong potensiyal. Gayunman, nananatiling hadlang ang kawalang-katiyakan hinggil sa regulasyon, sa mga pamantayan, at sa pananaw ng publiko.
 
-ويُتوقَّع أن تتغلغل التقنية في القطاعات الاقتصادية، مع نموٍّ متوقّعٍ مرتفع في التمويل وسلاسل التوريد والرعاية الصحية وغيرها. غير أنّ الابتكار المسؤول جوهريّ.
+Inaasahang tatagos ang teknolohiya sa mga sektor ng ekonomiya, na may inaasahang mataas na paglago sa pinansiya, hanay ng suplay, pangangalagang pangkalusugan, at iba pa. Gayunman, mahalaga ang responsableng inobasyon.
 
-ومع عوامل تمكينية كالسياسات الداعمة وحلول التشغيل البيني والتصميم المتمحور حول المستخدم لتجاوز القيود الراهنة، قد تُعيد البلوكشين على نحوٍ عميق توصيل الطريقة التي يُسجّل بها المجتمع القيمة ويُحوّلها ويُوزّعها.
+Sa tulong ng mga salik na nagpapadali — tulad ng suportadong patakaran, ng solusyon sa interoperabilidad, at ng disenyong nakasentro sa gumagamit upang malampasan ang kasalukuyang limitasyon — maaaring malalim na muling ikabit ng blockchain ang paraan ng pagtatala, paglilipat, at pamamahagi ng halaga sa lipunan.
 
-## خاتمة
+## Pangwakas
 
-### إرساء أسس مستقبلٍ لامركزي
+### Paglalatag ng saligan ng isang desentralisadong kinabukasan
 
-يُمثّل ظهور البلوكشين لحظةً مفصليّة وسّعت إمكانات التبادل الآمن للأصول والبيانات الرقمية عبر الإجماع اللامركزي. وكون البلوكشين الأساس للعملات المشفّرة ليس سوى نقطة انطلاقها.
+Kumakatawan ang pagsulpot ng blockchain sa isang mapagpasyang sandaling nagpalawak sa posibilidad ng ligtas na palitan ng digital na ari-arian at datos sa pamamagitan ng desentralisadong konsenso. Ang pagiging saligan ng blockchain para sa mga cryptocurrency ay simula pa lamang nito.
 
-وبإلغاء الأطراف الثالثة الموثوقة، تُتيح البلوكشين إمكان إعادة هيكلة تدفّقات القيمة عبر التمويل والتجارة والحوكمة والمجتمع. ورغم القيود، يُشير مسارها إلى مستقبلٍ لامركزي مُشوّق عبر القطاعات.
+Sa pag-aalis ng mapagkakatiwalaang ikatlong partido, binubuksan ng blockchain ang posibilidad na muling ayusin ang daloy ng halaga sa pinansiya, kalakalan, pamamahala, at lipunan. Sa kabila ng mga limitasyon, tumuturo ang landas nito sa isang kapana-panabik na desentralisadong kinabukasan sa iba't ibang sektor.
 
-وكما الإنترنت من قبلها، فإنّ البلوكشين تقنيّةٌ تأسيسيّة مهيّأة لفتح نماذج جديدة قائمة على الشفافية والثقة نِدّ-لنِدّ. ويَعِد هذا الابتكار الثوري بإعادة رسم اقتصاداتنا الرقمية وحيواتنا الموصولة في السنوات المقبلة.
+Tulad ng internet bago nito, ang blockchain ay isang saligang teknolohiyang nakahandang magbukas ng bagong huwarang nakabatay sa kalinawan at sa tiwalang mula-tao-tungo-sa-tao. Nangangako ang mapanimulang inobasyong ito na muling iguhit ang ating mga digital na ekonomiya at magkakaugnay na buhay sa mga darating na taon.
 
 [08]: /2018-01-01-bitcoin-the-year-in-review/index.html
