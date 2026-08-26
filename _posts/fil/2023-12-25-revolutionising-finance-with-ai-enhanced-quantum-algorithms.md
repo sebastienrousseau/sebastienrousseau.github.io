@@ -1,108 +1,107 @@
 ---
-title: "إحداث ثورة في التمويل عبر الخوارزميات الكمومية المعزّزة بالذكاء الاصطناعي"
+title: "Pagbabago ng pinansiya sa pamamagitan ng mga algoritmong kuwantum na pinatatatag ng AI"
 tags: "Quantum, AI, Finance, Algorithms, Mathematics, Banking, Technology, Innovation, Data, Efficiency, ISO 20022, post-quantum cryptography, quantum computing"
-subtitle: "إطلاق العنان للقوّة الكمومية للابتكار المالي: الذكاء الاصطناعي في قلب الخوارزميات الجيلية الجديدة"
-description: "الدور التحويلي للذكاء الاصطناعي في الخوارزميات الكمومية للتمويل، مع التركيز على تفاصيلها الرياضية وتطبيقاتها المصرفية."
+subtitle: "Ang quantum na transpormasyong Fourier at ang algoritmo ni Grover, pinatatatag ng machine learning, para sa panganib, pandaraya, at pagsusuri ng pamilihan."
+description: "Paano pinagsasama ng pinansiya ang AI at ang mga algoritmong kuwantum: ang quantum na transpormasyong Fourier at ang algoritmo ni Grover, ang matematika sa likod nila, at ang paggamit ng mga ito ng Goldman Sachs, BBVA, Santander at J.P. Morgan."
 date: "Dec 25, 2023"
 language: "fil-PH"
 locale: "fil_PH"
 banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
-banner_alt: "إحداث ثورة في التمويل عبر الخوارزميات الكمومية المعزّزة بالذكاء الاصطناعي"
-keywords: "الحوسبة الكمومية، خوارزميات الذكاء الاصطناعي، الرياضيات المالية، تكنولوجيا القطاع المصرفي، إدارة المخاطر، تصميم الخوارزميات، تحليل البيانات، استراتيجيات الاستثمار، التمويل الكمومي، تعلّم الآلة"
+banner_alt: "Efficiency of AI-Enhanced Quantum Algorithms in Finance"
+keywords: "quantum computing, AI, pinansiya, QFT, quantum na transpormasyong Fourier, algoritmo ni Grover, machine learning, pagtatasa ng panganib, pagtuklas ng pandaraya, Goldman Sachs, BBVA, Santander, J.P. Morgan"
 ---
+## Pagbabago ng pinansiya sa pamamagitan ng mga algoritmong kuwantum na pinatatatag ng AI
 
-## إحداث ثورة في التمويل عبر الخوارزميات الكمومية المعزّزة بالذكاء الاصطناعي
+Nakatayo ang tanawing pinansiyal sa bingit ng mapanguna na pagbabagong itinutulak ng pagtatagpo ng artipisyal na katalinuhan (AI) at ng disenyo ng algoritmong kuwantum. Ang rebolusyong ito sa pinansiya ay wala sa hilaw na lakas na kuwantum, kundi nasa eleganteng algoritmong nagpapabuti rito.
 
-يقف المشهد المالي على أعتاب تحوّل رائد يقوده التقاء الذكاء الاصطناعي (AI) وتصميم الخوارزميات الكمومية. هذه الثورة في التمويل ليست في القوّة الكمومية الخام، بل في خوارزميات أنيقة تُحسّنها.
+## Pangkalahatang tanaw
 
-## نظرة عامّة
+### Ang quantum computing para sa pinansiya: pagbubunyag ng mga makinarya ng inobasyon
 
-### الحوسبة الكمومية للتمويل: كشف محرّكات الابتكار
+Nakatayo sa kaibuturan ng rebolusyong pinansiyal na ito ang dalawang algoritmong kuwantum, na ang bawat isa ay tumutugon sa tiyak na hamon sa pinansiya: ang quantum na transpormasyong Fourier (QFT — Quantum Fourier Transform) at ang algoritmo ni Grover. Kapag pinagsama sa AI, naghahandog ang dalawang algoritmong ito ng walang katulad na lakas-pangkalkulasyon sa pagsusuri ng masalimuot na datos na pinansiyal, kaya pinahihintulutan nila ang mas tumpak na pagtatasa ng panganib, ang pinatatatag na pagtuklas ng pandaraya, at ang nakahihigit na estratehiya sa pamumuhunan.
 
-تقف في صميم هذه الثورة المالية خوارزميتان كمّيتان، تعالج كلٌّ منهما تحدّيات محدّدة في التمويل: التحويل الكمومي لفورييه (QFT — Quantum Fourier Transform) وخوارزمية جروفر. تقدّم هاتان الخوارزميتان، عند دمجهما بالذكاء الاصطناعي، قوّة حاسوبية غير مسبوقة لتحليل البيانات المالية المعقّدة، ممّا يتيح تقييماً للمخاطر أكثر دقّة، وكشفاً معزّزاً للاحتيال، واستراتيجيات استثمار متفوّقة.
+#### Ang quantum na transpormasyong Fourier (QFT)
 
-#### التحويل الكمومي لفورييه (QFT)
+Ang quantum na transpormasyong Fourier, ang katapat na kuwantum ng klasikong transpormasyong Fourier, ay mahalagang kasangkapan sa quantum computing para sa pagproseso ng kalagayang kuwantum. Ang paggamit nito sa pinansiya ay umiikot sa pagmomodelo ng mga pamilihang pinansiyal, lalo na sa pagsusuri ng maikot at yugtuhing uso sa loob ng masalimuot na hanay ng datos. At hindi tulad ng klasikong transpormasyong Fourier, sinasamantala ng QFT ang mga prinsipyo ng superposisyon at ng entanglement, na saligang bahagi ng mekanikang kuwantum, kaya pinahihintulutan nito ang sabayang pagproseso ng maraming kalagayan.
 
-التحويل الكمومي لفورييه، النظير الكمومي لتحويل فورييه الكلاسيكي، أداة محورية في الحوسبة الكمومية لمعالجة الحالات الكمومية. يتمحور تطبيقه في التمويل حول نمذجة الأسواق المالية، خاصّةً في تحليل الاتجاهات الدورية والمرحلية ضمن مجموعات بيانات معقّدة. وبخلاف تحويلات فورييه الكلاسيكية، يستثمر QFT مبدأَي التراكب (superposition) والتشابك (entanglement)، وهما من الجوانب الجوهرية لميكانيكا الكم، ممّا يتيح المعالجة المتزامنة لحالات متعدّدة.
+Inililipat ng quantum na transpormasyong Fourier (QFT) ang kalagayang kuwantum na `|x⟩` tungo sa superposisyon ng mga kalagayan, kaya pinahihintulutan nito ang sabayang pagproseso ng datos. Matematikal itong ipinapahayag sa anyong: `|x⟩ -> (1/√2^n) ∑y=0^2^n-1 e^(2πixy/2^n) |y⟩`.
 
-ينقل التحويل الكمومي لفورييه (QFT) الحالة الكمومية `|x⟩` إلى تراكب من الحالات، ممّا يتيح معالجة البيانات بالتزامن. ويُعبَّر عن ذلك رياضياً بالشكل: `|x⟩ -> (1/√2^n) ∑y=0^2^n-1 e^(2πixy/2^n) |y⟩`.
+Mahalaga ang pormulang ito sa pagbibigay-kakayahan sa kaparalelong pagproseso ng quantum computing, na kailangan sa paghawak ng malaki at masalimuot na hanay ng datos na karaniwan sa mga pamilihang pinansiyal.
 
-هذه الصيغة محورية لتمكين قدرات المعالجة المتوازية للحوسبة الكمومية، الضرورية للتعامل مع مجموعات البيانات الكبيرة والمعقّدة النموذجية في الأسواق المالية.
+Sa praktikal na dako, ginagamit ang QFT upang suriin ang datos na pinansiyal nang napakabilis, kaya nabubunyag nito ang mga huwaran at usong hindi matukoy sa pamamagitan ng klasikong pamamaraan. At ginagawa itong di-mapapantayang kasangkapan sa pagtatasa ng panganib, sa optimisasyon ng portfolio, at sa paghula ng galaw ng pamilihan nang may pinatatatag na katumpakan ng kakayahan nitong hatiin ang hanay ng datos tungo sa saligang prekuwensiya nito.
 
-من الناحية العملية، يُستخدم QFT لتحليل البيانات المالية بسرعة فائقة، كاشفاً عن أنماط واتجاهات يتعذّر تمييزها بالأساليب الكلاسيكية. وقدرته على تفكيك مجموعة بيانات إلى تردّداتها الأساسية تجعله أداة لا تُقدَّر بثمن لتقييم المخاطر وتحسين المحفظة والتنبّؤ بحركات السوق بدقّة معزّزة.
+#### Ang algoritmo ni Grover
 
-#### خوارزمية جروفر
+Naghahandog ang algoritmo ni Grover, na kilala sa kakayahan nito sa quantum na paghahanap, ng malaking bentahe sa bilis kaysa sa klasikong algoritmo sa paghahanap sa loob ng di-nakaayos na base ng datos — isang karaniwang hamon sa pinansiya. At nagpapamalas ito ng natatanging bisa sa mga senaryong mapagpasya ang mabilis na paghahanap at pagkuha ng impormasyon mula sa malalaking hanay ng datos, tulad ng sa pagtuklas ng pandaraya at sa pagsusuri ng pamilihan.
 
-تقدّم خوارزمية جروفر، الشهيرة بقدراتها على البحث الكمومي، ميزة سرعة كبيرة على الخوارزميات الكلاسيكية في البحث في قواعد بيانات غير مرتّبة — وهو تحدٍّ شائع في التمويل. وتُبدي فاعلية خاصّة في السيناريوهات التي يكون فيها البحث السريع واسترجاع المعلومات من مجموعات بيانات كبيرة حاسماً، كما هو الحال في كشف الاحتيال وتحليل السوق.
+Gumagana ang algoritmo sa pamamagitan ng paulit-ulit na paggamit ng halo ng operator ng pagpapalaganap ni Grover at ng operator na orakulo. Sa matematika, ipinapahayag ang prosesong ito sa anyong `(2|ψ⟩⟨ψ|−I)O|x⟩` kung saan ang `O` ang operator na orakulo at ang `|ψ⟩` ang kumakatawan sa pantay na superposisyon ng lahat ng kalagayan. At nagbubunga ang paulit-ulit na pagpapalakas na ito ng kuwadratikong pagbilis sa paghanap ng ninanais na elemento, isang kapansin-pansing pagbuti sa klasikong pamamaraan ng paghahanap.
 
-تعمل الخوارزمية عبر التطبيق التكراري لمزيج من مُشغِّل انتشار جروفر ومُشغِّل عُرَّاف (oracle). رياضياً، تُعبَّر هذه العملية بالشكل `(2|ψ⟩⟨ψ|−I)O|x⟩` حيث `O` هو مُشغِّل العُرَّاف و`|ψ⟩` يمثّل التراكب المنتظم لجميع الحالات. ويفضي هذا التضخيم التكراري إلى تسارع تربيعي في إيجاد العنصر المرغوب، تحسيناً ملحوظاً على أساليب البحث الكلاسيكية.
-
-في السياق المالي، تُفيد خوارزمية جروفر بصفة خاصّة في كشف أنماط أو شذوذات أو معلومات محدّدة ضمن مجموعات بيانات كبيرة وغير منظَّمة. وتتراوح تطبيقاتها من التحليل الآني لبيانات السوق إلى تعزيز تدابير الأمن عبر خوارزميات فعّالة لكشف الاحتيال.
+Sa kontekstong pinansiyal, partikular na kapaki-pakinabang ang algoritmo ni Grover sa pagtuklas ng tiyak na huwaran, anomalya, o impormasyon sa loob ng malaki at di-organisadong hanay ng datos. At ang mga gamit nito ay mula sa tuwirang pagsusuri ng datos ng pamilihan hanggang sa pagpapatibay ng hakbang na pangseguridad sa pamamagitan ng mabisang algoritmo sa pagtuklas ng pandaraya.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## الفكرة
+## Ang ideya
 
-### التآزر: الذكاء الاصطناعي يُغذّي المحرّكات الكمومية للتمويل
+### Ang pagsasanib: pinapagana ng AI ang mga makinaryang kuwantum ng pinansiya
 
-دمج الذكاء الاصطناعي بالحوسبة الكمومية، خاصّةً في عالم التمويل، ليس مجرّد جمع تقنيّتين، بل علاقة تآزرية تضخّم نقاط قوّة كلٍّ منهما. قدرة الذكاء الاصطناعي على التعلّم وتمييز الأنماط والتحليل التنبّؤي تُكمِّل القوّة الحاسوبية الخام للخوارزميات الكمومية، ممّا يفضي إلى تقدّمات غير مسبوقة في التحليل المالي واتّخاذ القرار.
+Ang pagsasama ng AI sa quantum computing, lalo na sa mundo ng pinansiya, ay hindi lamang pagdaragdag ng dalawang teknolohiya, kundi isang ugnayang nagpapalakas sa lakas ng bawat isa. Kinukumpleto ng kakayahan ng AI sa pagkatuto, sa pagkilala ng huwaran, at sa mahulaang pagsusuri ang hilaw na lakas-pangkalkulasyon ng mga algoritmong kuwantum, kaya nagbubunga ito ng walang katulad na pagsulong sa pagsusuring pinansiyal at sa paggawa ng pasya.
 
-#### تعزيز QFT بالذكاء الاصطناعي
+#### Pagpapatibay ng QFT sa pamamagitan ng AI
 
-- **تحسين مدفوع بالذكاء الاصطناعي**: يمكن توظيف الذكاء الاصطناعي، خاصّة خوارزميات تعلّم الآلة، لضبط معاملات QFT بدقّة. تستطيع تقنيات كالشبكات العصبية والتعلّم العميق تحليل البيانات المالية التاريخية لتمييز الأنماط الكامنة، التي يمكن استخدامها بعد ذلك لتحسين أداء QFT في توقّع اتجاهات السوق. يُفضي ذلك إلى نماذج مالية أكثر دقّة ومتانة، ضرورية لإدارة المخاطر وتطوير استراتيجيات الاستثمار.
-- **التحليلات التنبّؤية**: تتيح نماذج تعلّم الآلة، عند دمجها بـ QFT، تحليلات تنبّؤية قادرة على توقّع سلوك السوق بدقّة أعلى.
+- **Optimisasyong itinutulak ng AI**: maaaring gamitin ang AI, lalo na ang mga algoritmo ng machine learning, upang maayos na maitakda ang parametro ng QFT. Kayang suriin ng mga teknik tulad ng neural network at ng deep learning ang kasaysayang datos na pinansiyal upang matukoy ang nakatagong huwaran, na magagamit naman upang mapabuti ang bisa ng QFT sa paghula ng uso sa pamilihan. Nagbubunga ito ng mas tumpak at matatag na modelong pinansiyal, na kailangan sa pangangasiwa ng panganib at sa pagbuo ng estratehiya sa pamumuhunan.
+- **Mahulaang pagsusuri**: pinahihintulutan ng mga modelo ng machine learning, kapag pinagsama sa QFT, ang mahulaang pagsusuring kayang hulaan ang kilos ng pamilihan nang may mas mataas na katumpakan.
 
-يتيح هذا الدمج للمؤسسات المالية محاكاة سيناريوهات سوقية متنوّعة ونتائجها، ممّا يُفضي إلى عمليات اتّخاذ قرار أكثر استنارة واستراتيجية.
+Pinahihintulutan ng pagsasanib na ito ang mga institusyong pinansiyal na gayahin ang iba't ibang senaryo ng pamilihan at ang kalalabasan ng mga ito, kaya nagbubunga ito ng mas may-batayan at mas estratehikong proseso ng paggawa ng pasya.
 
-### تحسين خوارزمية جروفر بالذكاء الاصطناعي
+### Pagpapabuti ng algoritmo ni Grover sa pamamagitan ng AI
 
-- **قدرات بحث معزّزة**: يستطيع الذكاء الاصطناعي تحسين كفاءة خوارزمية جروفر تحسيناً جوهرياً في البحث في مجموعات البيانات الكبيرة وتحليلها. بتوظيف تقنيات حدسية مدفوعة بالذكاء الاصطناعي، يمكن تعديل معاملات بحث خوارزمية جروفر ديناميكياً، ممّا يفضي إلى كشف أسرع وأدقّ للاحتيال أو لشذوذات السوق.
+- **Pinatatatag na kakayahan sa paghahanap**: kayang pabutihin nang malaki ng AI ang kahusayan ng algoritmo ni Grover sa paghahanap at pagsusuri ng malalaking hanay ng datos. Sa paggamit ng heuristikong teknik na itinutulak ng AI, maaaring dinamikong baguhin ang parametro ng paghahanap ng algoritmo ni Grover, kaya nagbubunga ito ng mas mabilis at mas tumpak na pagtuklas ng pandaraya o ng anomalya sa pamilihan.
 
-- **معالجة البيانات الآنية**: قدرات المعالجة الآنية لخوارزمية جروفر، المعزّزة بالذكاء الاصطناعي، مفيدة بصفة خاصّة في البيئة سريعة الإيقاع للأسواق المالية. تستطيع خوارزميات الذكاء الاصطناعي تحديث معايير البحث وتنقيحها باستمرار بناءً على البيانات السوقية المتطوّرة، ممّا يتيح للمؤسسات المالية الاستجابة السريعة للمعلومات الجديدة والحفاظ على ميزة تنافسية.
+- **Tuwirang pagproseso ng datos**: partikular na kapaki-pakinabang sa mabilis na kapaligiran ng mga pamilihang pinansiyal ang kakayahan ng algoritmo ni Grover sa tuwirang pagproseso, na pinatatatag ng AI. Kayang patuloy na i-update at pinuhin ng mga algoritmo ng AI ang pamantayan sa paghahanap batay sa umuunlad na datos ng pamilihan, kaya pinahihintulutan nito ang mga institusyong pinansiyal na mabilis na tumugon sa bagong impormasyon at mapanatili ang mapagkumpitensiyang bentahe.
 
-## الأثر
+## Ang epekto
 
 ![Efficiency of AI-Enhanced Quantum Algorithms in Finance][01].class=\"m-10 w-100\"
 
-الانعكاسات العملية للخوارزميات الكمومية المعزّزة بالذكاء الاصطناعي في التمويل واسعة وتحويلية.
+Malawak at mapagbago ang praktikal na kahihinatnan ng mga algoritmong kuwantum na pinatatatag ng AI sa pinansiya.
 
-### تقييم محسَّن للمخاطر وإدارة محفظة معزّزة
+### Pinabuting pagtatasa ng panganib at pinatatag na pangangasiwa ng portfolio
 
-- **QFT المحسَّنة بالذكاء الاصطناعي**: يتيح تطبيق QFT المحسَّنة بالذكاء الاصطناعي في تقييم المخاطر للبنوك تطوير نماذج مخاطر متطوّرة تأخذ في الحسبان طيفاً أوسع من المتغيّرات وظروف السوق. ويُفضي ذلك إلى تقييمات مخاطر أكثر دقّة، وقرارات إقراض أكثر استنارة، وإدارة محفظة أكثر كفاءة.
+- **QFT na pinabuti ng AI**: pinahihintulutan ng paggamit ng QFT na pinabuti ng AI sa pagtatasa ng panganib ang mga bangko na bumuo ng sopistikadong modelo ng panganib na isinasaalang-alang ang mas malawak na hanay ng baryabol at kalagayan ng pamilihan. At nagbubunga ito ng mas tumpak na pagtatasa ng panganib, ng mas may-batayang pasya sa pagpapautang, at ng mas mahusay na pangangasiwa ng portfolio.
 
-### تحليل سوق متفوّق واستراتيجيات استثمار محسَّنة
+### Nakahihigit na pagsusuri ng pamilihan at pinabuting estratehiya sa pamumuhunan
 
-- **القوّة التنبّؤية لـ QFT**: مع القوّة التنبّؤية المعزّزة لـ QFT، يستطيع المحلّلون الماليون توقّع حركات السوق بدقّة أكبر، فيُوجّهون استراتيجيات الاستثمار وجهود إدارة المخاطر.
+- **Ang mahulaang lakas ng QFT**: sa pinatatatag na mahulaang lakas ng QFT, kayang hulaan ng mga tagasuri ng pinansiya ang galaw ng pamilihan nang may mas malaking katumpakan, kaya nagagabayan nila ang estratehiya sa pamumuhunan at ang pagsisikap sa pangangasiwa ng panganib.
 
-### كشف احتيال أسرع وأكثر كفاءة
+### Mas mabilis at mas mahusay na pagtuklas ng pandaraya
 
-- **خوارزمية جروفر المدعومة بالذكاء الاصطناعي**: يُقلّص دمج الذكاء الاصطناعي مع خوارزمية جروفر الوقت اللازم لكشف الأنشطة الاحتيالية والتصدّي لها تقليصاً جوهرياً، فيحمي الأصول المالية وثقة العملاء.
+- **Ang algoritmo ni Grover na pinapagana ng AI**: malaki ang ibinabawas ng pagsasanib ng AI sa algoritmo ni Grover sa panahong kailangan upang matuklasan at matugunan ang mapanlinlang na gawain, kaya pinagsasanggalang nito ang mga ari-ariang pinansiyal at ang tiwala ng kliyente.
 
-### تخصيص فعّال للموارد
+### Mabisang paglalaan ng mapagkukunan
 
-- **تحسين النماذج المالية**: بتوظيف هذه الخوارزميات المتقدّمة، تستطيع البنوك والمؤسسات المالية تخصيص الموارد بكفاءة أعلى، ممّا يُفضي إلى تحسين توليد الإيرادات وخفض التكاليف ورفع الكفاءة التشغيلية الإجمالية.
+- **Optimisasyon ng modelong pinansiyal**: sa paggamit ng abanteng algoritmong ito, kayang ilaan ng mga bangko at institusyong pinansiyal ang mapagkukunan nang may mas mataas na kahusayan, kaya nagbubunga ito ng pinabuting paglikha ng kita, ng pagbaba ng gastos, at ng pagtaas ng kabuuang kahusayan sa operasyon.
 
-## الحوافز
+## Ang mga insentibo
 
-يقدّم تبنّي هذه الخوارزميات الكمومية المتقدّمة ميزات تنافسية كبيرة للمؤسسات المالية.
+Naghahandog ang pagyakap sa abanteng algoritmong kuwantum na ito ng malaking mapagkumpitensiyang bentahe sa mga institusyong pinansiyal.
 
-### اتّخاذ قرار مستنير
+### May-batayang paggawa ng pasya
 
-- **رؤى استراتيجية**: تتيح الرؤى المستخلصة من التحليلات المدعومة كمومياً للبنوك اتّخاذ قرارات استراتيجية بثقة أعلى، فتحسّن الربحية وتعزّز النموّ المستدام.
+- **Estratehikong kabatiran**: pinahihintulutan ng kabatirang nakuha mula sa pagsusuring pinapagana ng kuwantum ang mga bangko na gumawa ng estratehikong pasya nang may mas mataas na tiwala, kaya pinabubuti nila ang kakayahang kumita at pinatatatag nila ang napapanatiling paglago.
 
-### إدارة مخاطر معزّزة
+### Pinatatag na pangangasiwa ng panganib
 
-- **تخفيف المخاطر**: تترجم القدرة على تقييم المخاطر وإدارتها بدقّة عبر هذه الخوارزميات إلى خفض الخسائر المالية وتعزيز ثقة العملاء.
+- **Pagbabawas ng panganib**: ang kakayahang tumpak na tasahin at pangasiwaan ang panganib sa pamamagitan ng mga algoritmong ito ay nauuwi sa pagbaba ng pagkalugi at sa pagtibay ng tiwala ng kliyente.
 
-### الابتكار والمرونة
+### Inobasyon at katatagan
 
-- **ريادة السوق**: ستكون المؤسسات التي تعتنق هذه التقنيات في طليعة الابتكار المالي، تتكيّف سريعاً مع تغيّرات السوق وتقتنص الفرص الناشئة.
+- **Pamumuno sa pamilihan**: mapapabilang sa unahan ng inobasyong pinansiyal ang mga institusyong yumayakap sa mga teknolohiyang ito, sapagkat mabilis silang umaangkop sa pagbabago ng pamilihan at nasasamantala nila ang mga umuusbong na pagkakataon.
 
-## خاتمة
+## Pangwakas
 
-تُوظّف المؤسسات المالية الرائدة بالفعل الخوارزميات الكمومية المعزّزة بالذكاء الاصطناعي في تطبيقات واقعية. استخدم [**Goldman Sachs** ⧉][07] خوارزمية QFT لتسريع تسعير المشتقّات بمعامل 1000، فيما تشارك [**BBVA** ⧉][06] مع شركة كمومية ناشئة لتحسين تحليل مخاطر الائتمان. وفي كشف الاحتيال، حقّقت الشركة السويسرية الناشئة [**TerraQuantum** ⧉][05] زيادة في السرعة بنسبة 75 % باستخدام خوارزمية جروفر، وتعاون [**Santander** ⧉][04] مع D-Wave لتجريب نظام كمومي لكشف الشذوذات. وما هذه التقدّمات سوى غيض من فيض، إذ يستكشف [**BMO Financial Group** ⧉][03] و[**J.P. Morgan** ⧉][02] تحليل السوق ومحاكاة السيناريوهات عبر أساليب كمومية. ومع نضج التقنية، يمكننا توقّع تطبيقات أكثر تحويلية تُحدث ثورة في اتّخاذ القرار المالي وإدارة المخاطر.
+Gumagamit na sa kasalukuyan ang mga nangungunang institusyong pinansiyal ng mga algoritmong kuwantum na pinatatatag ng AI sa mga aplikasyon sa tunay na buhay. Ginamit ng [**Goldman Sachs** ⧉][07] ang algoritmong QFT upang pabilisin ang pagpepresyo ng derivative nang 1000 beses, samantalang nakikipagtulungan naman ang [**BBVA** ⧉][06] sa isang bagong kompanyang kuwantum upang mapabuti ang pagsusuri ng panganib sa utang. Sa pagtuklas ng pandaraya naman, nakamit ng bagong kompanyang Suwiso na [**TerraQuantum** ⧉][05] ang pagtaas ng bilis nang 75 % gamit ang algoritmo ni Grover, at nakipagtulungan ang [**Santander** ⧉][04] sa D-Wave upang subukan ang isang sistemang kuwantum para sa pagtuklas ng anomalya. At ang mga pagsulong na ito ay bahagi lamang ng kabuuan, sapagkat tinutuklas ng [**BMO Financial Group** ⧉][03] at ng [**J.P. Morgan** ⧉][02] ang pagsusuri ng pamilihan at ang paggaya ng senaryo sa pamamagitan ng pamamaraang kuwantum. At habang gumugulang ang teknolohiya, maaari nating asahan ang higit pang mapagbagong aplikasyong babago sa paggawa ng pasyang pinansiyal at sa pangangasiwa ng panganib.
 
-دمج الذكاء الاصطناعي بتصميم الخوارزميات الكمومية يمثّل لحظة محورية للقطاع المالي. واستثمار القدرات الحاسوبية الاستثنائية لخوارزميات مثل QFT وجروفر، المعزّزتين بالذكاء الاصطناعي، يفتح عصراً جديداً من الكفاءة والدقّة والمرونة في التمويل. ويُمهّد هذا الاندماج التقني الطريق لمستقبل يصبح فيه التمويل أكثر متانة وبصيرة واستجابة للمشهد الاقتصادي العالمي السريع التطوّر.
+Kumakatawan ang pagsasama ng AI sa disenyo ng algoritmong kuwantum sa isang mahalagang sandali para sa sektor na pinansiyal. At binubuksan ng paggamit ng pambihirang kakayahang pangkalkulasyon ng mga algoritmong tulad ng QFT at ng kay Grover, na pinatatatag ng AI, ang bagong panahon ng kahusayan, katumpakan, at katatagan sa pinansiya. At inihahanda ng teknikal na pagsasanib na ito ang daan tungo sa kinabukasang magiging mas matatag, mas may-malay, at mas tumutugon ang pinansiya sa mabilis umuunlad na pandaigdigang tanawing pang-ekonomiya.
 
 ![divider][divider].class=\"m-10 w-100\"
 
