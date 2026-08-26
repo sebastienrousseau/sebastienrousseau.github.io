@@ -1,0 +1,33 @@
+title: pain001 — ISO 20022 fizetési fájlok automatizálása
+banner_alt: Légi városkép szürkületben — a strukturált fizetési fájlok ISO 20022 szerinti automatizálását
+  jelképezi a globális elszámolási hálózatokban
+sector: Nyílt forráskód · Vállalati treasury · ISO 20022
+role: Szerző és karbantartó
+status: Éles üzemben, aktívan karbantartva
+outcome_highlights:
+- label: Customer Credit Transfer Initiation
+- value: XSD-vel ellenőrizve
+  label: Indítás előtti ellenőrzés minden üzeneten
+- label: ISO 7064 Modulo 97-10 ellenőrzőösszegek
+- label: Szabadon használható, forkolható, auditálható
+pull_quote: „Hivatkozik rá az EPAA Quantum-Safe Payments tanulmánya (2025. szeptember). Nyílt forráskódú,
+  az első naptól auditált — semmilyen zárt fordítóréteg nincs az ERP-rendszere és az elszámolási hálózat
+  között.”
+problem: A globális MT → MX átállás minden bankot és vállalati treasuryt arra kényszerít, hogy strukturált
+  pain.001 üzeneteket állítson elő. A legtöbb csapat vagy kézzel írt, törékeny XML-t használ, vagy átláthatatlan,
+  zárt fordítót vásárol. Mindkét út fizetési hibákat juttat az elszámolási hálózatokba, és nem hagy auditnyomot.
+what_i_built: Nyílt forráskódú Python könyvtár, amely ellenőrzött ISO 20022 pain.001 (Customer Credit
+  Transfer Initiation) üzeneteket állít elő CSV / SQLite / Parquet forrásból. Indítás előtti XSD-ellenőrzés,
+  IBAN / BIC ellenőrzőösszegek, személyes adatok maszkolása és teljes XSD-sémamegfelelés — mindez egy
+  Python munkafolyamatban, amely beleillik a meglévő ERP- és treasury-folyamatokba.
+rigour:
+- metric: Támogatott ISO 20022 üzenetek
+- metric: Sémamegfelelés
+  value: Hivatalos XSD-ellenőrzés indítás előtt minden üzeneten
+- metric: Szállított ellenőrzők
+  value: IBAN ellenőrzőszám + BIC és LEI ellenőrzőösszeg (ISO 7064 Modulo 97-10)
+- metric: Licenc
+  value: Apache-2.0 / MIT — szabadon használható, forkolható, auditálható
+validation:
+- Hivatkozik rá az EPAA Quantum-Safe Payments tanulmánya (2025. szeptember)
+- Szerepel a sebastienrousseau.com oldalon 2023. 09. óta megjelent írásokban

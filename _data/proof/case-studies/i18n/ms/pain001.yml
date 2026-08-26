@@ -1,0 +1,33 @@
+title: pain001 — mengautomasikan fail pembayaran ISO 20022
+banner_alt: Pemandangan bandar dari udara pada waktu senja — melambangkan automasi fail pembayaran berstruktur
+  di bawah ISO 20022 merentas rangkaian penjelasan global
+sector: Sumber terbuka · Perbendaharaan korporat · ISO 20022
+role: Penulis dan penyelenggara
+status: Dalam operasi sebenar, diselenggara secara aktif
+outcome_highlights:
+- label: Customer Credit Transfer Initiation
+- value: Disahkan XSD
+  label: Pemeriksaan awal pada setiap mesej
+- label: Hasil tambah semak ISO 7064 Modulo 97-10
+- label: Bebas digunakan, difork dan diaudit
+pull_quote: «Dirujuk dalam kertas putih EPAA Quantum-Safe Payments (September 2025). Sumber terbuka, diaudit
+  sejak hari pertama — tiada penterjemah bermilik antara sistem ERP anda dengan rangkaian penjelasan.»
+problem: Peralihan global MT → MX memaksa setiap bank dan perbendaharaan korporat menghasilkan mesej pain.001
+  berstruktur. Kebanyakan pasukan sama ada menulis XML rapuh dengan tangan atau membeli penterjemah bermilik
+  yang legap. Kedua-dua jalan menghantar ralat pembayaran ke dalam rangkaian penjelasan dan tidak meninggalkan
+  sebarang jejak audit.
+what_i_built: Sebuah pustaka Python sumber terbuka yang menjana mesej ISO 20022 pain.001 (Customer Credit
+  Transfer Initiation) yang disahkan daripada CSV / SQLite / Parquet. Pengesahan XSD awal, hasil tambah
+  semak IBAN / BIC, pelindungan data peribadi dan pematuhan penuh skema XSD — semuanya dalam aliran kerja
+  Python yang menyelit ke dalam saluran ERP dan perbendaharaan sedia ada.
+rigour:
+- metric: Mesej ISO 20022 yang disokong
+- metric: Pematuhan skema
+  value: Pengesahan XSD rasmi secara awal pada setiap mesej
+- metric: Pengesah yang disertakan
+  value: Digit semak IBAN + hasil tambah semak BIC dan LEI (ISO 7064 Modulo 97-10)
+- metric: Lesen
+  value: Apache-2.0 / MIT — bebas digunakan, difork dan diaudit
+validation:
+- Dirujuk dalam kertas putih EPAA Quantum-Safe Payments (September 2025)
+- Dipaparkan dalam tulisan yang diterbitkan di sebastienrousseau.com sejak 09/2023

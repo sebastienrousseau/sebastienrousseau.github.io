@@ -357,7 +357,7 @@ def _emit_one_locale(
     return len(localised_studies) + 1
 
 
-def _emit_locale_forks(studies: list[dict]) -> int:
+def _emit_locale_forks(studies: list[dict]) -> tuple[int, int]:
     """For each active non-EN locale, fork the EN locale shell + run
     translate_chrome to localise nav / footer / search aria / lang switch
     on the case-study pages. Body text is rendered from the per-locale
@@ -370,10 +370,11 @@ def _emit_locale_forks(studies: list[dict]) -> int:
         from build_translations import _state as _st  # type: ignore[import-not-found]
     except ImportError as exc:
         print(f"build_case_studies: skip locale forks — {exc}", file=sys.stderr)
-        return 0
+        return 0, 0
 
     en_shell = SHELL_SRC.read_text(encoding="utf-8")
     total = 0
+    forks = 0
     for lang in _lang_registry.active():
         if lang.code == "en":
             continue
@@ -393,7 +394,8 @@ def _emit_locale_forks(studies: list[dict]) -> int:
         total += _emit_one_locale(
             localised_shell, studies, lang.code, url_segment, lbl, article_slug_map, lang.og_locale
         )
-    return total
+        forks += 1
+    return total, forks
 
 
 def main() -> int:
@@ -407,10 +409,10 @@ def main() -> int:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     en_lbl = _lbl("en")
     en_count = _emit_one_locale(shell, studies, "en", "case-studies", en_lbl, {}, "en_GB")
-    locale_count = _emit_locale_forks(studies)
+    locale_count, fork_count = _emit_locale_forks(studies)
     print(
         f"build_case_studies: wrote {len(studies)} case studies + 1 index in EN "
-        f"({en_count} files); {locale_count} files across 27 locale forks"
+        f"({en_count} files); {locale_count} files across {fork_count} locale forks"
     )
     return 0
 

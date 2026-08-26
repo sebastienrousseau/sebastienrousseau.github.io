@@ -1,0 +1,40 @@
+title: CloudCDN — pelan sumber terbuka untuk pinggir yang berteraskan AI
+banner_alt: Infrastruktur pinggir berteraskan AI — melambangkan get laluan MCP tanpa amanah, pengehadan
+  kadar atom dengan Durable Objects dan perimeter kunci laluan WebAuthn yang dihantar CloudCDN sebagai
+  pelaksanaan rujukan
+sector: Sumber terbuka · Pinggir · Infrastruktur AI
+role: Penulis dan penyelenggara
+status: Dalam operasi sebenar, diselenggara secara aktif
+outcome_highlights:
+- value: 3,185 ujian
+  label: 100 % liputan baris, cabang dan fungsi
+- label: Asal usul binaan + tandatangan Sigstore
+- value: 42 alat MCP
+  label: Setiap panggilan dilog dengan bukti berstruktur
+- label: Dipetakan kepada Perkara 5 dan pengagregatan data risiko
+pull_quote: «Pelaksanaan rujukan sumber terbuka yang boleh dibaca, difork dan ditandatangani oleh pasukan
+  keselamatan — bukan sekadar PDF pemasaran. Pengehadan kadar atom dengan Durable Objects, perimeter WebAuthn,
+  asal usul SLSA L3.»
+problem: Apabila ejen AI dan alat MCP mula memanggil API pinggir dalam skala besar, bank memerlukan perimeter
+  yang tahan trafik autonomi tanpa melepaskan bukti audit bertaraf DORA. CDN sedia ada menawarkan sama
+  ada bahasa pemasaran atau pelan yang legap — tiada satu pun menghasilkan pelaksanaan rujukan yang boleh
+  dibaca, difork dan ditandatangani oleh pasukan keselamatan.
+what_i_built: Get laluan MCP tanpa amanah, sumber terbuka, dengan 42 alat, pengehadan kadar atom Durable
+  Objects, perimeter kunci laluan WebAuthn, URL bertandatangan dan asal usul binaan SLSA Tahap 3. 3,185
+  ujian pada liputan 100 %, dipetakan kepada Perkara 5 DORA, pengagregatan data risiko BCBS 239 dan modal
+  risiko operasi Basel III.
+rigour:
+- metric: Liputan ujian
+  value: 3,185 ujian pada 100 % liputan baris, cabang dan fungsi
+- metric: Integriti rantaian bekalan
+  value: Asal usul binaan SLSA Tahap 3 + tandatangan Sigstore
+- metric: Permukaan MCP
+  value: 42 alat — setiap panggilan dilog dengan bukti berstruktur
+- metric: Pengehadan kadar
+  value: Durable Objects atom (tiada keadaan perlumbaan, tiada kiraan berganda)
+- metric: Kawalan capaian
+  value: Kunci laluan WebAuthn + URL bertandatangan
+- metric: Lesen
+validation:
+- 'Dipaparkan dalam tulisan 11/06/2026: CloudCDN — An Open-Source Blueprint for the AI-Native Edge'
+- Dipetakan kepada Perkara 5 DORA, BCBS 239 dan risiko operasi Basel III
