@@ -45,6 +45,7 @@ import argparse
 import json
 import re
 import sys
+from collections.abc import Iterator
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -83,9 +84,9 @@ _MARKERS: dict[str, tuple[re.Pattern[str], frozenset[str]]] = {
 # transliteration aid — not a sentence in the wrong language.
 MIN_RUN = 3
 
-_MAIN_RE = re.compile(r"<main\b[\s\S]*?</main>", re.IGNORECASE)
-_SCRIPT_TAG_RE = re.compile(r"<script\b[\s\S]*?</script>", re.IGNORECASE)
-_STYLE_RE = re.compile(r"<style\b[\s\S]*?</style>", re.IGNORECASE)
+_MAIN_RE = re.compile(r"<main\b[\s\S]*?</main\s*>", re.IGNORECASE)
+_SCRIPT_TAG_RE = re.compile(r"<script\b[\s\S]*?</script\s*>", re.IGNORECASE)
+_STYLE_RE = re.compile(r"<style\b[\s\S]*?</style\s*>", re.IGNORECASE)
 _TAG_RE = re.compile(r"<[^>]+>")
 
 
@@ -117,6 +118,34 @@ def foreign_runs(code: str, text: str) -> list[tuple[str, str]]:
     return out
 
 
+def _locale_pages() -> Iterator[tuple[str, str, Path]]:
+    """(code, native slug, path) for every built localized static page."""
+    for lang in _lang_registry.active():
+        if lang.code == "en":
+            continue
+        for en_slug, native in _lang_registry.load_slugs(lang.code)["static"].items():
+            if en_slug.startswith("_"):
+                continue
+            page = PUBLIC / lang.code / native / "index.html"
+            if page.is_file():
+                yield lang.code, native, page
+
+
+def scan() -> tuple[dict[str, list[str]], int]:
+    """Per page URL, the foreign scripts it carries; plus the page count."""
+    found: dict[str, list[str]] = {}
+    checked = 0
+    for code, native, page in _locale_pages():
+        text = visible_main(page)
+        if text is None:
+            continue
+        checked += 1
+        scripts = sorted({s for s, _ in foreign_runs(code, text)})
+        if scripts:
+            found[f"/{code}/{native}/"] = scripts
+    return found, checked
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--strict", action="store_true", help="fail on the recorded backlog too")
@@ -127,24 +156,7 @@ def main() -> int:
         print("public/ not built — run ./build.sh first", file=sys.stderr)
         return 0
 
-    found: dict[str, list[str]] = {}
-    checked = 0
-    for lang in _lang_registry.active():
-        if lang.code == "en":
-            continue
-        for en_slug, native in _lang_registry.load_slugs(lang.code)["static"].items():
-            if en_slug.startswith("_"):
-                continue
-            page = PUBLIC / lang.code / native / "index.html"
-            if not page.is_file():
-                continue
-            text = visible_main(page)
-            if text is None:
-                continue
-            checked += 1
-            scripts = [s for s, _ in foreign_runs(lang.code, text)]
-            if scripts:
-                found[f"/{lang.code}/{native}/"] = sorted(scripts)
+    found, checked = scan()
 
     if args.update_baseline:
         BASELINE.write_text(
