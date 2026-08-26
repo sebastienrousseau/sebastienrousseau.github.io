@@ -111,7 +111,7 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 مقال(ات)</p>"
+      "عدد المقالات: \\1</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
@@ -163,7 +163,7 @@
     ],
     [
       ">About EPAA</a>",
-      "<>حول EPAA</a>"
+      ">حول EPAA</a>"
     ],
     [
       "title=\"Visit the Emerging Payments Association Asia\"",
@@ -179,7 +179,7 @@
     ],
     [
       ">Read the article</a>",
-      "<>قراءة المقال</a>"
+      ">قراءة المقال</a>"
     ],
     [
       " · Free download",
@@ -195,7 +195,7 @@
     ],
     [
       ">Request access<",
-      "<>طلب الوصول<"
+      ">طلب الوصول<"
     ],
     [
       ">English · PDF",
@@ -311,7 +311,7 @@
     ],
     [
       ">About EPAA</p>",
-      "<>حول EPAA</p>"
+      ">حول EPAA</p>"
     ],
     [
       "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
@@ -683,7 +683,7 @@
     ],
     [
       ">Have an idea\\? Let's build it\\.<",
-      "<>لديك فكرة؟ لنبنها معًا.<"
+      ">لديك فكرة؟ لنبنها معًا.<"
     ],
     [
       ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
@@ -912,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>انتقلت المنشورات إلى قسم البحوث</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"الخدمات المصرفية السحابية الأصلية\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"الخدمات المصرفية السحابية الأصلية — لافتة الموضوع\""
+    ],
+    [
+      "<h3><a href=\"/ar/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/ar/topics/cloud-native-banking/index.html\">الخدمات المصرفية السحابية الأصلية</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/ar/mawadi/cloud-native-banking/index.html\">الخدمات المصرفية السحابية الأصلية</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">هندسة منصات قائمة على Kubernetes للمؤسسات الخاضعة للتنظيم: مرونة تشغيلية مختبرة وفق DORA، وتقارب الأجهزة الافتراضية والحاويات، والسحابة السيادية، واستراتيجية الخروج، والبنية التي تتيح للمصارف إطلاق الخدمات الحرجة تحت الإشراف.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"الذكاء الاصطناعي الوكيل في المصارف\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"الذكاء الاصطناعي الوكيل في المصارف — لافتة الموضوع\""
+    ],
+    [
+      "<h3><a href=\"/ar/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/ar/topics/agentic-ai-banking/index.html\">الذكاء الاصطناعي الوكيل في المصارف</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/ar/mawadi/agentic-ai-banking/index.html\">الذكاء الاصطناعي الوكيل في المصارف</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">مستويات تحكم للوكلاء، وتوجيه دلالي حتمي، وبوابات سياسات OPA، وسجلات تدقيق WORM غير قابلة للتغيير، وعدسة مخاطر النماذج وفق SR 11-7 / SS1/23 التي تحوّل سير العمل المستقل إلى أدلة جاهزة للمشرف.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"أتمتة الخزينة\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"أتمتة الخزينة — لافتة الموضوع\""
+    ],
+    [
+      "<h3><a href=\"/ar/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/ar/topics/treasury-automation/index.html\">أتمتة الخزينة</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/ar/mawadi/treasury-automation/index.html\">أتمتة الخزينة</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">سيولة قابلة للبرمجة، وخزينة مستقلة، ومحركات مدفوعات ISO 20022، وأدوات مفتوحة المصدر تحوّل CAMT / pacs.008 / MT940 / pain.001 إلى ذكاء معاملات قابل للتدقيق وبمستوى مجلس الإدارة لفرق خزينة الشركات.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"المرونة التشغيلية وDORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"المرونة التشغيلية وDORA — لافتة الموضوع\""
+    ],
+    [
+      "<h3><a href=\"/ar/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/ar/topics/operational-resilience-dora/index.html\">المرونة التشغيلية وDORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/ar/mawadi/operational-resilience-dora/index.html\">المرونة التشغيلية وDORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">مساءلة مجلس الإدارة بموجب المادة 5 من DORA، وتجميع بيانات المخاطر وفق BCBS 239، ومخاطر تركّز الأطراف الثالثة، واختبارات الخروج، والضوابط الهندسية التي تحوّل المرونة التشغيلية من مشروع امتثال إلى لوحة نتائج جاهزة للمشرف.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"العملات المستقرة والترميز\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"العملات المستقرة والترميز — لافتة الموضوع\""
+    ],
+    [
+      "<h3><a href=\"/ar/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/ar/topics/stablecoins-tokenisation/index.html\">العملات المستقرة والترميز</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/ar/mawadi/stablecoins-tokenisation/index.html\">العملات المستقرة والترميز</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">الودائع المرمّزة، وصناديق سوق النقد، وتجارب العملات الرقمية للبنوك المركزية بالجملة، ومنتجا BRSRV/BSTBL من BlackRock، وقانون GENIUS، والخيارات الهندسية التي تجعل النقود القابلة للبرمجة تعمل داخل الميزانيات الخاضعة للتنظيم.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"الذكاء الاصطناعي التوليدي والنماذج اللغوية الكبيرة\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"الذكاء الاصطناعي التوليدي والنماذج اللغوية الكبيرة — لافتة الموضوع\""
+    ],
+    [
+      "<h3><a href=\"/ar/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/ar/topics/generative-ai-llms/index.html\">الذكاء الاصطناعي التوليدي والنماذج اللغوية الكبيرة</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/ar/mawadi/generative-ai-llms/index.html\">الذكاء الاصطناعي التوليدي والنماذج اللغوية الكبيرة</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">النماذج الأساسية، والنماذج اللغوية الكبيرة متعددة الوسائط (Gemini وGemma وMistral وMM1)، وهندسة المطالبات، والإصدارات مفتوحة المصدر التي تحدد ما يمكن للمصارف بناؤه داخل محيط بياناتها.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"ذكاء الصوت والكلام\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"ذكاء الصوت والكلام — لافتة الموضوع\""
+    ],
+    [
+      "<h3><a href=\"/ar/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/ar/topics/voice-speech-ai/index.html\">ذكاء الصوت والكلام</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/ar/mawadi/voice-speech-ai/index.html\">ذكاء الصوت والكلام</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">استنساخ الصوت، والتعرف الفوري على الكلام (Whisper)، والمساعدون الصوتيون للمديرين التنفيذيين، وحزمة ذكاء الصوت التي تعيد تشكيل تجربة عملاء الخدمات المصرفية الخاصة.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"حوكمة الذكاء الاصطناعي وتنظيمه\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"حوكمة الذكاء الاصطناعي وتنظيمه — لافتة الموضوع\""
+    ],
+    [
+      "<h3><a href=\"/ar/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/ar/topics/ai-governance-regulation/index.html\">حوكمة الذكاء الاصطناعي وتنظيمه</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/ar/mawadi/ai-governance-regulation/index.html\">حوكمة الذكاء الاصطناعي وتنظيمه</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">الامتثال لقانون الذكاء الاصطناعي الأوروبي، ومخاطر النماذج وفق SR 11-7، والمساءلة على مستوى مجلس الإدارة، وقابلية تدقيق سير العمل المستقل، والإطار التنظيمي للذكاء الاصطناعي داخل مصارف الفئة الأولى.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"مسارات مدفوعات الجملة\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"مسارات مدفوعات الجملة — لافتة الموضوع\""
+    ],
+    [
+      "<h3><a href=\"/ar/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/ar/topics/wholesale-payments-rails/index.html\">مسارات مدفوعات الجملة</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/ar/mawadi/wholesale-payments-rails/index.html\">مسارات مدفوعات الجملة</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">استراتيجية متعددة المسارات تشمل البطاقات والتحويل من حساب إلى حساب وRTP وFedNow والخدمات المصرفية المفتوحة وممرات العملات المستقرة. اقتصاديات الجملة، ونهائية التسوية، ونموذج الذرّية عبر الحدود من مشروع Agorá التابع لبنك التسويات الدولية.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>التشفير والمرونة</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">التشفير والمرونة</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">الانتقال إلى ما بعد الكم، والمرونة التشغيلية بمستوى DORA، وإطار حوكمة الذكاء الاصطناعي في الخدمات المالية.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>المدفوعات والنقود</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">المدفوعات والنقود</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">الانتقال إلى ISO 20022، والتسوية بالجملة، والعملات المستقرة، والودائع المرمّزة، ووظيفة خزينة الشركات المحيطة بها.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>الذكاء الاصطناعي والسحابة</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">الذكاء الاصطناعي والسحابة</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">الذكاء الاصطناعي التطبيقي، والأنظمة الوكيلة، والنماذج التوليدية، وذكاء الصوت والكلام، والمنصات المصرفية السحابية الأصلية التي تستضيفها.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>المصادر المفتوحة والحرفية</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">المصادر المفتوحة والحرفية</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">مكتبات Rust، وبدائيات البلوك تشين، والانضباط الهندسي مفتوح المصدر الذي يقف خلفها.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">أربع ركائز، وأربع عشرة مجموعة موضوعية، وكل مقال مؤرّخ. اختر خيطًا وتتبّعه عبر الأرشيف.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">ركيزة</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">الركائز</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">المجموعات الموضوعية</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">المقالات المفهرسة</span>"
     ]
   ]
 }

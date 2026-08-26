@@ -912,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>出版物已遷移至研究頁面</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"雲原生銀行\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"雲原生銀行 — 主題橫幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hant/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/zh-hant/topics/cloud-native-banking/index.html\">雲原生銀行</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/zh-hant/zhuti-tw/cloud-native-banking/index.html\">雲原生銀行</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">面向受監理機構的 Kubernetes 平台工程：依 DORA 標準驗證的營運韌性、虛擬機與容器的匯流、主權雲、退場策略，以及讓銀行能在監理之下交付關鍵服務的架構。</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"銀行業中的代理式 AI\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"銀行業中的代理式 AI — 主題橫幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hant/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/zh-hant/topics/agentic-ai-banking/index.html\">銀行業中的代理式 AI</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/zh-hant/zhuti-tw/agentic-ai-banking/index.html\">銀行業中的代理式 AI</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">代理控制平面、決定性語意路由、OPA 政策閘門、不可竄改的 WORM 稽核日誌，以及把自主工作流程轉化為可提交監理機關證據的 SR 11-7 / SS1/23 模型風險視角。</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"資金管理自動化\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"資金管理自動化 — 主題橫幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hant/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/zh-hant/topics/treasury-automation/index.html\">資金管理自動化</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/zh-hant/zhuti-tw/treasury-automation/index.html\">資金管理自動化</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">可程式化流動性、自主資金管理、ISO 20022 支付引擎，以及把 CAMT / pacs.008 / MT940 / pain.001 轉化為可稽核、董事會層級交易情報的開源工具組，服務企業資金團隊。</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"營運韌性與 DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"營運韌性與 DORA — 主題橫幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hant/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/zh-hant/topics/operational-resilience-dora/index.html\">營運韌性與 DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/zh-hant/zhuti-tw/operational-resilience-dora/index.html\">營運韌性與 DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">DORA 第 5 條下的董事會問責、BCBS 239 風險資料彙總、第三方集中度風險、退場測試，以及把營運韌性從法遵專案變成可提交監理機關計分板的工程控制。</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"穩定幣與代幣化\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"穩定幣與代幣化 — 主題橫幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hant/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/zh-hant/topics/stablecoins-tokenisation/index.html\">穩定幣與代幣化</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/zh-hant/zhuti-tw/stablecoins-tokenisation/index.html\">穩定幣與代幣化</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">代幣化存款、貨幣市場基金、大額央行數位貨幣試點、貝萊德的 BRSRV/BSTBL、GENIUS 法案，以及讓可程式化貨幣在受監理資產負債表內運作的工程選擇。</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"生成式 AI 與大型語言模型\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"生成式 AI 與大型語言模型 — 主題橫幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hant/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/zh-hant/topics/generative-ai-llms/index.html\">生成式 AI 與大型語言模型</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/zh-hant/zhuti-tw/generative-ai-llms/index.html\">生成式 AI 與大型語言模型</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">基礎模型、多模態大型語言模型（Gemini、Gemma、Mistral、MM1）、提示工程，以及決定銀行能在自有資料邊界內建構什麼的開源釋出。</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"語音與言語 AI\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"語音與言語 AI — 主題橫幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hant/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/zh-hant/topics/voice-speech-ai/index.html\">語音與言語 AI</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/zh-hant/zhuti-tw/voice-speech-ai/index.html\">語音與言語 AI</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">語音複製、即時語音辨識（Whisper）、面向高階主管的語音助理，以及正在重塑私人銀行客戶體驗的音訊智慧技術堆疊。</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"AI 治理與監理\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"AI 治理與監理 — 主題橫幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hant/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/zh-hant/topics/ai-governance-regulation/index.html\">AI 治理與監理</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/zh-hant/zhuti-tw/ai-governance-regulation/index.html\">AI 治理與監理</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">歐盟人工智慧法案法遵、SR 11-7 模型風險、董事會層級的問責、自主工作流程的可稽核性，以及一級銀行內部的 AI 監理框架。</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"大額支付軌道\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"大額支付軌道 — 主題橫幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hant/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/zh-hant/topics/wholesale-payments-rails/index.html\">大額支付軌道</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/zh-hant/zhuti-tw/wholesale-payments-rails/index.html\">大額支付軌道</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">涵蓋卡組織、帳戶對帳戶轉帳、RTP、FedNow、開放銀行與穩定幣走廊的多軌策略。大額業務經濟性、清算終局性，以及國際清算銀行 Agorá 專案的跨境原子性模型。</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>密碼學與韌性</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">密碼學與韌性</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">後量子遷移、DORA 等級的營運韌性，以及金融服務中的 AI 治理框架。</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>支付與貨幣</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">支付與貨幣</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">ISO 20022 遷移、大額清算、穩定幣、代幣化存款，以及圍繞它們的企業資金管理職能。</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>AI 與雲端</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI 與雲端</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">應用 AI、代理式系統、生成模型、語音與言語 AI，以及承載它們的雲原生銀行平台。</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>開源與工藝</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">開源與工藝</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Rust 函式庫、區塊鏈原語，以及支撐它們的開源工程紀律。</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">四大支柱、十四個主題群集、每一篇標註日期的文章。挑一條線索，沿著典藏一路讀下去。</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">支柱</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">支柱</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">主題群集</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">已收錄文章</span>"
     ]
   ]
 }

@@ -82,7 +82,7 @@
       "<h3><a href=\"/id/topics/applied-ai-banking/index.html\">AI terapan di perbankan</a></h3>"
     ],
     [
-      "<h3><a href=\"/id/topics/rust-open-source/[^\"]+\">Rust &amp; Sumber Terbuka</a></h3>",
+      "<h3><a href=\"/id/topics/rust-open-source/[^\"]+\">Rust &amp; Open Source</a></h3>",
       "<h3><a href=\"/id/topics/rust-open-source/index.html\">Rust &amp; Sumber Terbuka</a></h3>"
     ],
     [
@@ -102,7 +102,7 @@
       "<p class=\"newsroom-excerpt\">AI generatif, LLM multimodal, model suara dan ucapan — dan bagaimana semua ini menata ulang operasi perbankan, layanan pelanggan, dan rekayasa produk di institusi Tier-1.</p>"
     ],
     [
-      "<p class=\"newsroom-excerpt\">Open-source Rust libraries I author and Meintain:[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Open-source Rust libraries I author and maintain:[^<]+</p>",
       "<p class=\"newsroom-excerpt\">Pustaka Rust sumber terbuka yang saya tulis dan pelihara: logging, generasi kode, tanggal-waktu, primitif kriptografi, KEM berbasis Kyber, dan generator situs statis Rust.</p>"
     ],
     [
@@ -163,7 +163,7 @@
     ],
     [
       ">About EPAA</a>",
-      "<>Tentang EPAA</a>"
+      ">Tentang EPAA</a>"
     ],
     [
       "title=\"Visit the Emerging Payments Association Asia\"",
@@ -179,7 +179,7 @@
     ],
     [
       ">Read the article</a>",
-      "<>Baca artikel</a>"
+      ">Baca artikel</a>"
     ],
     [
       " · Free download",
@@ -195,7 +195,7 @@
     ],
     [
       ">Request access<",
-      "<>Minta akses<"
+      ">Minta akses<"
     ],
     [
       ">English · PDF",
@@ -311,7 +311,7 @@
     ],
     [
       ">About EPAA</p>",
-      "<>Tentang EPAA</p>"
+      ">Tentang EPAA</p>"
     ],
     [
       "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
@@ -491,7 +491,7 @@
     ],
     [
       "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
-      "<p class=\"setup-card-body\">Bibliothèques Rust sumber terbuka pour la sérialisation, la journalisation, la génération de code, la date et l'heure. Plus le <strong>Static Site Generator</strong> (SSG) qui construit ce site et l'environnement développeur qui le rend livrable.</p>"
+      "<p class=\"setup-card-body\">Pustaka Rust sumber terbuka untuk serialisasi, logging, generasi kode, tanggal dan waktu, matematika, serta tooling pengembang. Diuji, didokumentasikan, dan siap dikirim.</p>"
     ],
     [
       ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
@@ -683,7 +683,7 @@
     ],
     [
       ">Have an idea\\? Let's build it\\.<",
-      "<>Ada ide? Mari kita bangun bersama.<"
+      ">Ada ide? Mari kita bangun bersama.<"
     ],
     [
       ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
@@ -886,7 +886,7 @@
       "<h3><a href=\"/id/topik/applied-ai-banking/index.html\">AI terapan di perbankan</a></h3>"
     ],
     [
-      "<h3><a href=\"[^\"]+/rust-open-source/[^\"]*\">Rust &amp; Sumber Terbuka</a></h3>",
+      "<h3><a href=\"[^\"]+/rust-open-source/[^\"]*\">Rust &amp; Open Source</a></h3>",
       "<h3><a href=\"/id/topik/rust-open-source/index.html\">Rust sumber terbuka</a></h3>"
     ],
     [
@@ -912,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Publikasi telah pindah ke Riset</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Perbankan cloud-native\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Perbankan cloud-native — spanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/id/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/id/topics/cloud-native-banking/index.html\">Perbankan cloud-native</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/id/topik/cloud-native-banking/index.html\">Perbankan cloud-native</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Rekayasa platform berbasis Kubernetes untuk institusi yang diawasi: ketahanan operasional yang diuji menurut DORA, konvergensi mesin virtual dan kontainer, cloud berdaulat, strategi keluar, serta arsitektur yang memungkinkan bank merilis layanan kritis di bawah pengawasan.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"AI agentik dalam perbankan\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"AI agentik dalam perbankan — spanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/id/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/id/topics/agentic-ai-banking/index.html\">AI agentik dalam perbankan</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/id/topik/agentic-ai-banking/index.html\">AI agentik dalam perbankan</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Bidang kendali agen, perutean semantik deterministik, gerbang kebijakan OPA, log audit WORM yang tidak dapat diubah, dan lensa risiko model SR 11-7 / SS1/23 yang mengubah alur kerja otonom menjadi bukti siap pengawas.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Otomatisasi treasuri\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Otomatisasi treasuri — spanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/id/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/id/topics/treasury-automation/index.html\">Otomatisasi treasuri</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/id/topik/treasury-automation/index.html\">Otomatisasi treasuri</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Likuiditas terprogram, treasuri otonom, mesin pembayaran ISO 20022, dan perangkat sumber terbuka yang mengubah CAMT / pacs.008 / MT940 / pain.001 menjadi intelijen transaksi yang dapat diaudit dan setara tingkat dewan bagi tim treasuri korporasi.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Ketahanan operasional dan DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Ketahanan operasional dan DORA — spanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/id/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/id/topics/operational-resilience-dora/index.html\">Ketahanan operasional dan DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/id/topik/operational-resilience-dora/index.html\">Ketahanan operasional dan DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Akuntabilitas dewan menurut Pasal 5 DORA, agregasi data risiko BCBS 239, risiko konsentrasi pihak ketiga, uji keluar, serta kendali rekayasa yang mengubah ketahanan operasional dari proyek kepatuhan menjadi papan skor siap pengawas.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Stablecoin dan tokenisasi\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Stablecoin dan tokenisasi — spanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/id/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/id/topics/stablecoins-tokenisation/index.html\">Stablecoin dan tokenisasi</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/id/topik/stablecoins-tokenisation/index.html\">Stablecoin dan tokenisasi</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Simpanan tertokenisasi, reksa dana pasar uang, uji coba mata uang digital bank sentral grosir, BRSRV/BSTBL dari BlackRock, Undang-Undang GENIUS, dan pilihan rekayasa di balik cara membuat uang terprogram bekerja di dalam neraca yang diawasi.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"AI generatif dan model bahasa besar\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"AI generatif dan model bahasa besar — spanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/id/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/id/topics/generative-ai-llms/index.html\">AI generatif dan model bahasa besar</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/id/topik/generative-ai-llms/index.html\">AI generatif dan model bahasa besar</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Model fondasi, model bahasa besar multimodal (Gemini, Gemma, Mistral, MM1), rekayasa prompt, dan rilis sumber terbuka yang menentukan apa yang dapat dibangun bank di dalam perimeter data mereka sendiri.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"AI suara dan ucapan\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"AI suara dan ucapan — spanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/id/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/id/topics/voice-speech-ai/index.html\">AI suara dan ucapan</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/id/topik/voice-speech-ai/index.html\">AI suara dan ucapan</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Kloning suara, pengenalan ucapan waktu nyata (Whisper), asisten suara untuk eksekutif, dan tumpukan intelijen audio yang membentuk ulang pengalaman nasabah private banking.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"Tata kelola dan regulasi AI\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"Tata kelola dan regulasi AI — spanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/id/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/id/topics/ai-governance-regulation/index.html\">Tata kelola dan regulasi AI</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/id/topik/ai-governance-regulation/index.html\">Tata kelola dan regulasi AI</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Kepatuhan terhadap Undang-Undang AI Uni Eropa, risiko model SR 11-7, akuntabilitas tingkat dewan, keteraudit-an alur kerja otonom, serta kerangka regulasi AI di bank papan atas.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Rel pembayaran grosir\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Rel pembayaran grosir — spanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/id/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/id/topics/wholesale-payments-rails/index.html\">Rel pembayaran grosir</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/id/topik/wholesale-payments-rails/index.html\">Rel pembayaran grosir</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Strategi multirel yang mencakup kartu, transfer antarrekening, RTP, FedNow, open banking, dan koridor stablecoin. Ekonomi grosir, finalitas penyelesaian, dan model atomisitas lintas batas Proyek Agorá milik BIS.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Kriptografi dan ketahanan</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Kriptografi dan ketahanan</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Migrasi pascakuantum, ketahanan operasional setingkat DORA, dan kerangka tata kelola AI dalam layanan keuangan.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Pembayaran dan uang</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Pembayaran dan uang</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Migrasi ISO 20022, penyelesaian grosir, stablecoin, simpanan tertokenisasi, dan fungsi treasuri korporasi di sekitarnya.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>AI dan cloud</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI dan cloud</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">AI terapan, sistem agentik, model generatif, AI suara dan ucapan, serta platform perbankan cloud-native yang menjalankannya.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Sumber terbuka dan kriya</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Sumber terbuka dan kriya</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Pustaka Rust, primitif blockchain, dan disiplin rekayasa sumber terbuka di baliknya.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Empat pilar, empat belas gugus topik, setiap artikel bertanggal. Pilih satu benang dan telusuri sepanjang arsip.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">PILAR</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Pilar</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Gugus topik</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Artikel terindeks</span>"
     ]
   ]
 }

@@ -19,5 +19,68 @@
   "blockchain-digital-assets": {
     "title": "Blockchain & Active digitale",
     "lede": "Bitcoin, fundamentele blockchain, jetoane ERC-20, stablecoins și cadrul de reglementare din jurul șinelor de plăți susținute de active digitale."
-  }
+  },
+  "cloud-native-banking": {
+    "title": "Banking cloud-native",
+    "lede": "Inginerie de platformă bazată pe Kubernetes pentru instituții reglementate: reziliență operațională testată conform DORA, convergența mașinilor virtuale cu containerele, cloud suveran, strategie de ieșire și arhitectura care permite băncilor să livreze servicii critice sub supraveghere."
+  },
+  "agentic-ai-banking": {
+    "title": "IA agentică în bănci",
+    "lede": "Planuri de control pentru agenți, rutare semantică deterministă, porți de politici OPA, jurnale de audit WORM imuabile și perspectiva riscului de model SR 11-7 / SS1/23 care transformă fluxurile autonome în probe pregătite pentru supraveghetor."
+  },
+  "treasury-automation": {
+    "title": "Automatizarea trezoreriei",
+    "lede": "Lichiditate programabilă, trezorerie autonomă, motoare de plăți ISO 20022 și seturile de instrumente open-source care transformă CAMT / pacs.008 / MT940 / pain.001 în inteligență tranzacțională auditabilă, la nivel de consiliu, pentru echipele de trezorerie corporativă."
+  },
+  "operational-resilience-dora": {
+    "title": "Reziliență operațională și DORA",
+    "lede": "Responsabilitatea consiliului conform articolului 5 din DORA, agregarea datelor de risc BCBS 239, riscul de concentrare la terți, testarea ieșirii și controalele inginerești care transformă reziliența operațională dintr-un proiect de conformitate într-un tablou de bord pregătit pentru supraveghetor."
+  },
+  "stablecoins-tokenisation": {
+    "title": "Stablecoin-uri și tokenizare",
+    "lede": "Depozite tokenizate, fonduri de piață monetară, proiecte-pilot de CBDC en gros, BRSRV/BSTBL de la BlackRock, legea GENIUS și alegerile inginerești care fac banii programabili să funcționeze în bilanțuri reglementate."
+  },
+  "generative-ai-llms": {
+    "title": "IA generativă și LLM-uri",
+    "lede": "Modele fundamentale, LLM-uri multimodale (Gemini, Gemma, Mistral, MM1), ingineria promptului și lansările open-source care definesc ce pot construi băncile în propriul perimetru de date."
+  },
+  "voice-speech-ai": {
+    "title": "IA vocală și de recunoaștere a vorbirii",
+    "lede": "Clonarea vocii, recunoașterea vorbirii în timp real (Whisper), asistenți vocali pentru directori și stiva de inteligență audio care remodelează experiența clientului în private banking."
+  },
+  "ai-governance-regulation": {
+    "title": "Guvernanța și reglementarea IA",
+    "lede": "Conformitatea cu Regulamentul european privind IA, riscul de model SR 11-7, responsabilitatea la nivel de consiliu, auditabilitatea fluxurilor autonome și cadrul de reglementare al IA în băncile de prim rang."
+  },
+  "wholesale-payments-rails": {
+    "title": "Rețele de plăți en gros",
+    "lede": "Strategie multi-rețea care acoperă cardurile, A2A, RTP, FedNow, open banking și coridoarele în stablecoin. Economia en gros, caracterul definitiv al decontării și modelul de atomicitate transfrontalieră din Proiectul Agorá al BRI."
+  },
+  "_pillars": [
+    {
+      "name": "Criptografie și reziliență",
+      "lede": "Migrarea post-cuantică, reziliența operațională la nivel DORA și cadrul de guvernanță a IA în serviciile financiare."
+    },
+    {
+      "name": "Plăți și bani",
+      "lede": "Migrarea la ISO 20022, decontarea en gros, stablecoin-urile, depozitele tokenizate și funcția de trezorerie corporativă din jurul lor."
+    },
+    {
+      "name": "IA și cloud",
+      "lede": "IA aplicată, sisteme agentice, modele generative, IA vocală și platformele bancare cloud-native care le găzduiesc."
+    },
+    {
+      "name": "Open source și meșteșug",
+      "lede": "Biblioteci Rust, primitive blockchain și disciplina de inginerie open-source din spatele lor."
+    }
+  ],
+  "_hub_lede": "Patru piloni, paisprezece grupuri tematice, fiecare articol datat. Alegeți un fir și urmăriți-l prin arhivă.",
+  "_banner_word": "banner de subiect",
+  "_kpi": [
+    "Piloni",
+    "Grupuri tematice",
+    "Articole indexate"
+  ],
+  "_article_count": "{n} articol(e)",
+  "_pillar_kicker": "PILON"
 }

@@ -19,5 +19,68 @@
   "blockchain-digital-assets": {
     "title": "Blockchain a digitální aktiva",
     "lede": "Blockchain a digitální aktiva: tokenizace, ERC-20, stablecoiny, infrastruktura kryptoměn a regulační rámec, který je formuje."
-  }
+  },
+  "cloud-native-banking": {
+    "title": "Cloud-native bankovnictví",
+    "lede": "Platformové inženýrství postavené na Kubernetes pro regulované instituce: provozní odolnost otestovaná podle DORA, konvergence virtuálních strojů a kontejnerů, suverénní cloud, výstupní strategie a architektura, která bankám umožňuje dodávat kritické služby pod dohledem."
+  },
+  "agentic-ai-banking": {
+    "title": "Agentní AI v bankovnictví",
+    "lede": "Řídicí roviny pro agenty, deterministické sémantické směrování, politické brány OPA, neměnné auditní záznamy WORM a pohled na modelové riziko podle SR 11-7 / SS1/23, který mění autonomní pracovní postupy v důkazy připravené pro dohled."
+  },
+  "treasury-automation": {
+    "title": "Automatizace treasury",
+    "lede": "Programovatelná likvidita, autonomní treasury, platební motory ISO 20022 a open-source nástroje, které mění CAMT / pacs.008 / MT940 / pain.001 v auditovatelnou transakční inteligenci na úrovni představenstva pro týmy podnikového treasury."
+  },
+  "operational-resilience-dora": {
+    "title": "Provozní odolnost a DORA",
+    "lede": "Odpovědnost představenstva podle článku 5 DORA, agregace rizikových dat podle BCBS 239, riziko koncentrace u třetích stran, testování výstupu a technické kontroly, které mění provozní odolnost z projektu compliance na výsledkovou tabuli připravenou pro dohled."
+  },
+  "stablecoins-tokenisation": {
+    "title": "Stablecoiny a tokenizace",
+    "lede": "Tokenizované vklady, fondy peněžního trhu, pilotní projekty velkoobchodní CBDC, BRSRV/BSTBL od BlackRock, zákon GENIUS a inženýrská rozhodnutí, díky nimž programovatelné peníze fungují uvnitř regulovaných rozvah."
+  },
+  "generative-ai-llms": {
+    "title": "Generativní AI a LLM",
+    "lede": "Základové modely, multimodální LLM (Gemini, Gemma, Mistral, MM1), prompt engineering a open-source vydání, která určují, co mohou banky stavět uvnitř vlastního datového perimetru."
+  },
+  "voice-speech-ai": {
+    "title": "Hlasová a řečová AI",
+    "lede": "Klonování hlasu, rozpoznávání řeči v reálném čase (Whisper), hlasoví asistenti pro vedení a stack audio inteligence, který přetváří klientskou zkušenost v privátním bankovnictví."
+  },
+  "ai-governance-regulation": {
+    "title": "Správa a regulace AI",
+    "lede": "Soulad s evropským aktem o AI, modelové riziko podle SR 11-7, odpovědnost na úrovni představenstva, auditovatelnost autonomních pracovních postupů a regulační rámec AI ve velkých bankách."
+  },
+  "wholesale-payments-rails": {
+    "title": "Velkoobchodní platební koleje",
+    "lede": "Vícekolejná strategie zahrnující karty, A2A, RTP, FedNow, otevřené bankovnictví a stablecoinové koridory. Velkoobchodní ekonomika, konečnost vypořádání a model přeshraniční atomicity z Projektu Agorá BIS."
+  },
+  "_pillars": [
+    {
+      "name": "Kryptografie a odolnost",
+      "lede": "Postkvantová migrace, provozní odolnost na úrovni DORA a rámec správy AI ve finančních službách."
+    },
+    {
+      "name": "Platby a peníze",
+      "lede": "Migrace na ISO 20022, velkoobchodní vypořádání, stablecoiny, tokenizované vklady a podniková funkce treasury kolem nich."
+    },
+    {
+      "name": "AI a cloud",
+      "lede": "Aplikovaná AI, agentní systémy, generativní modely, hlasová a řečová AI a cloud-native bankovní platformy, které je hostí."
+    },
+    {
+      "name": "Open source a řemeslo",
+      "lede": "Knihovny v Rustu, blockchainové primitivy a open-source inženýrská disciplína, která za nimi stojí."
+    }
+  ],
+  "_hub_lede": "Čtyři pilíře, čtrnáct tematických okruhů, každý datovaný článek. Vyberte si nit a sledujte ji archivem.",
+  "_banner_word": "banner tématu",
+  "_kpi": [
+    "Pilíře",
+    "Tematické okruhy",
+    "Indexované články"
+  ],
+  "_article_count": "Počet článků: {n}",
+  "_pillar_kicker": "PILÍŘ"
 }

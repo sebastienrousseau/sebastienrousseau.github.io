@@ -63,31 +63,31 @@
     ],
     [
       "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
-      "<p>مكتبة Python تُؤتمت إنشاء ملفات الدفع <strong>ISO 20022 pain.001</strong> انطلاقًا من CSV أو SQLite. مُصمَّمة للترحيل العالمي من MT/MX إلى الرسائل المهيكلة عبر SWIFT وSEPA وأبرز الأنظمة.</p>"
+      "<p>Isang aklatang Python na nag-o-otomatisa ng paglikha ng talaksang pagbabayad na <strong>ISO 20022 pain.001</strong> mula sa CSV o SQLite. Idinisenyo para sa pandaigdigang migrasyon tungo sa nakabalangkas na mensaheng rentas-sempadan.</p>"
     ],
     [
       "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
-      "<p>توليد رسائل التحويل الائتماني للعملاء بين المؤسسات المالية <strong>ISO 20022 pacs.008</strong> والتحقق منها وتسليمها. JSON Schema، تحقق XSD، IBAN في 75 دولة، إخفاء البيانات الشخصية وفق GDPR/PCI-DSS.</p>"
+      "<p>Lumikha, magpatunay at maghatid ng mga mensaheng credit transfer ng kliyente sa pagitan ng mga institusyong pinansiyal na <strong>ISO 20022 pacs.008</strong>. Pagpapatunay sa pamamagitan ng JSON Schema + XSD, IBAN sa 75 bansa, at pagtatago ng personal na datos na sumusunod sa GDPR/PCI-DSS.</p>"
     ],
     [
       "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
-      "<p>عُدّة أدوات Python بمستوى صناعة التمويل تحوّل كشوف الحسابات المصرفية متعددة الصيغ إلى بيانات مهيكلة. مصمَّمة لواقع ملفات الكشوف الفعلية ولمتطلبات التدقيق في البيئات الخاضعة للتنظيم.</p>"
+      "<p>Isang kasangkapang Python na pang-pinansiya na nagbabago ng mga bank statement sa iba't ibang format tungo sa nakabalangkas na datos. Idinisenyo para sa tunay na kalagayan ng mga talaksan ng statement at sa mga kahingian ng pag-audit sa reguladong kapaligiran.</p>"
     ],
     [
       "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
-      "<p>مكتبة Rust تُطبّق <strong>خوارزميات تجزئة وملخّص آمنة</strong> لتشفير كلمات المرور والتحقق منها. مُصمَّمة بمنحى مقاوم للحوسبة الكمومية لعصر ما بعد PQC في المصادقة.</p>"
+      "<p>Isang aklatang Rust na naglalapat ng <strong>ligtas na mga algoritmo ng hash at digest</strong> para sa pag-encrypt at pagpapatunay ng password. Idinisenyo nang may tindig na lumalaban sa quantum computing.</p>"
     ],
     [
       "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
-      "<p>تنفيذ Rust متين لـ <strong>CRYSTALS-Kyber</strong>، معيار NIST FIPS 203 للتشفير ما بعد الQuantum عام الاستخدام. أساس مصادقة المدفوعات المقاومة للحوسبة الكمومية.</p>"
+      "<p>Isang matatag na implementasyon sa Rust ng <strong>CRYSTALS-Kyber</strong>, ang pamantayang NIST FIPS 203 para sa pangkalahatang pag-encrypt na post-quantum. Saligan ng awtentikasyon sa pagbabayad.</p>"
     ],
     [
       "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
-      "<p><strong>منظومة YAML 1.2 مكتوبة بالكامل بـ Rust</strong>. صفر unsafe، توافق كامل 100% مع المواصفة (406 / 406 من المجموعة الرسمية)، serde يعتمد البث أولًا، CST بلا فقدان، وتحقق JSON-Schema. مكتبة + CLI (noyafmt، noyavalidate) + LSP + MCP + روابط WASM.</p>"
+      "<p><strong>Isang ekosistemang YAML 1.2 na buong-buong nakasulat sa Rust</strong>. Walang unsafe, 100% pagsunod sa espesipikasyon (406 / 406 ng opisyal na suite), serde na nauuna ang streaming, CST na walang pagkawala, at pagpapatunay sa pamamagitan ng JSON Schema. Aklatan + CLI (noyafmt, noyavalidate) + LSP + MCP + mga bigkis na WASM.</p>"
     ],
     [
       "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
-      "تُهدّد الحوسبة الكمومية الأسس التشفيرية للخدمات المالية. فالمدفوعات — من الزمن الحقيقي إلى التسوية العابرة للحدود — ترتكز على وسائل حماية ستجعلها الحوسبة الكمومية في نهاية المطاف عتيقة."
+      "Binabanta ng quantum computing ang mga saligang kriptograpiko ng mga serbisyong pinansiyal. Ang mga pagbabayad — mula real time hanggang settlement na rentas-sempadan — ay nakasandig sa mga proteksiyong gagawing lipas ng quantum computing sa bandang huli."
     ],
     [
       ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
@@ -115,7 +115,7 @@
     ],
     [
       ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
-      ">باتت الجهات التنظيمية تتعامل مع مبدأ « اجمع الآن وفُكّ الشفرة لاحقًا » بوصفه خطرًا حاضرًا ذا مصداقية. تستعرض هذه الورقة التهديد البنيوي والحجة العاجلة لتحرّك منسَّق عبر قنوات مدفوعات الجملة.</p>"
+      ">Itinuturing na ng mga tagapagregula ang \"anihin ngayon, i-decrypt mamaya\" bilang isang kapani-paniwalang panganib sa kasalukuyan. Binabalangkas ng papel na ito ang banta sa istruktura at ang kagyat na pangangailangan ng nagkakaisang pagkilos sa mga daluyan ng wholesale na pagbabayad.</p>"
     ],
     [
       ">Latest<",
@@ -131,15 +131,15 @@
     ],
     [
       "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
-      "<p class=newsroom-excerpt>لا يحقّ للعملات المستقرة دفع عائد بموجب GENIUS Act. تكشف إيداعات BRSRV وBSTBL الخاصة بـ BlackRock الالتفاف على ذلك: صندوق سوق نقد مرمَّز يعمل جنبًا إلى جنب مع عملة مستقرة منظَّمة لتقديم العائد عبر قناة متاخمة ممتثلة.</p>"
+      "<p class=newsroom-excerpt>Hindi maaaring magbayad ng yield ang mga stablecoin sa ilalim ng GENIUS Act. Ipinapakita ng mga paghahain ng BRSRV at BSTBL ng BlackRock ang paraan sa paligid nito — isang tokenisadong money market fund na tumatakbo katabi ng isang reguladong stablecoin upang maghatid ng yield sa pamamagitan ng isang katabing daluyang sumusunod sa batas.</p>"
     ],
     [
       "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
-      "<p class=newsroom-excerpt>انتقل الخطر الQuantum من فضول Maghanapيّ إلى تفويض تنظيمي فاعل. ومع نشر خارطة طريق G7 في يناير 2026 وإثبات BIS Project Leap الجدوى على أنظمة مدفوعات في الإنتاج، لم يعد السؤال على مستوى مجلس الإدارة هو هل ينبغي الترحيل.</p>"
+      "<p class=newsroom-excerpt>Ang panganib na quantum ay lumipat mula pag-uusisang pampananaliksik tungo sa aktibong utos ng regulasyon. Sa paglalathala ng mapa ng G7 noong Enero 2026 at sa pagpapatunay ng BIS Project Leap ng pagiging posible nito sa mga sistemang pagbabayad na nasa produksiyon, ang tanong sa antas ng lupon ay hindi na kung dapat bang lumipat.</p>"
     ],
     [
       "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
-      "<p class=newsroom-excerpt>اعتبارًا من نوفمبر 2026، يرفض SWIFT CBPR+ العناوين البريدية غير المهيكلة في رسائل المدفوعات العابرة للحدود. على بُعد ستة أشهر، لا تزال 65% من رسائل pacs.008 تُرسَل بعناوين غير ممتثلة، فيما 44% من البنوك متأخرة في برنامج المعالجة.</p>"
+      "<p class=newsroom-excerpt>Mula Nobyembre 2026, tatanggihan ng SWIFT CBPR+ ang mga adres na hindi nakabalangkas sa mga mensahe ng pagbabayad na rentas-sempadan. Anim na buwan bago iyon, 65% pa rin ng mga mensaheng pacs.008 ang ipinapadala nang may adres na hindi sumusunod, habang 44% ng mga bangko ay huli sa programa ng pagwawasto.</p>"
     ],
     [
       ">See all articles\\b",

@@ -163,7 +163,7 @@
     ],
     [
       ">About EPAA</a>",
-      "<>À propos de l'EPAA</a>"
+      ">À propos de l'EPAA</a>"
     ],
     [
       "title=\"Visit the Emerging Payments Association Asia\"",
@@ -179,7 +179,7 @@
     ],
     [
       ">Read the article</a>",
-      "<>Lire l'article</a>"
+      ">Lire l'article</a>"
     ],
     [
       " · Free download",
@@ -195,7 +195,7 @@
     ],
     [
       ">Request access<",
-      "<>Demander l'accès<"
+      ">Demander l'accès<"
     ],
     [
       ">English · PDF",
@@ -311,7 +311,7 @@
     ],
     [
       ">About EPAA</p>",
-      "<>À propos de l'EPAA</p>"
+      ">À propos de l'EPAA</p>"
     ],
     [
       "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
@@ -683,7 +683,7 @@
     ],
     [
       ">Have an idea\\? Let's build it\\.<",
-      "<>Une idée ? Construisons-la ensemble.<"
+      ">Une idée ? Construisons-la ensemble.<"
     ],
     [
       ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
@@ -912,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Les publications ont déménagé vers Recherche</h1>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Cryptographie et résilience</h2>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Migration post-quantique, résilience opérationnelle au niveau DORA, et le cadre de gouvernance de l'IA dans les services financiers.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Paiements et monnaie</h2>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Migration ISO 20022, règlement de gros, stablecoins, dépôts tokenisés, et la fonction de trésorerie d'entreprise qui les entoure.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>IA et cloud</h2>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">IA appliquée, systèmes agentiques, modèles génératifs, IA vocale, et les plateformes bancaires cloud-native qui les hébergent.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Open source et artisanat</h2>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Bibliothèques Rust, primitives blockchain, et la discipline d'ingénierie open source qui les sous-tend.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Quatre piliers, quatorze grappes thématiques, chaque article daté. Choisissez un fil et suivez-le à travers les archives.</p>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Banque cloud-native\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Banque cloud-native — bannière du sujet\""
+    ],
+    [
+      "<h3><a href=\"/fr/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/fr/topics/cloud-native-banking/index.html\">Banque cloud-native</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/fr/sujets/cloud-native-banking/index.html\">Banque cloud-native</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Ingénierie de plateforme fondée sur Kubernetes pour les établissements régulés : résilience opérationnelle éprouvée selon DORA, convergence des machines virtuelles et des conteneurs, cloud souverain, stratégie de sortie, et l'architecture qui permet aux banques de livrer des services critiques sous supervision.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"IA agentique dans la banque\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"IA agentique dans la banque — bannière du sujet\""
+    ],
+    [
+      "<h3><a href=\"/fr/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/fr/topics/agentic-ai-banking/index.html\">IA agentique dans la banque</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/fr/sujets/agentic-ai-banking/index.html\">IA agentique dans la banque</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Plans de contrôle des agents, routage sémantique déterministe, points de contrôle de politique OPA, journaux d'audit WORM immuables, et le prisme du risque de modèle SR 11-7 / SS1/23 qui transforme les flux autonomes en preuves recevables par le superviseur.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Automatisation de la trésorerie\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Automatisation de la trésorerie — bannière du sujet\""
+    ],
+    [
+      "<h3><a href=\"/fr/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/fr/topics/treasury-automation/index.html\">Automatisation de la trésorerie</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/fr/sujets/treasury-automation/index.html\">Automatisation de la trésorerie</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Liquidité programmable, trésorerie autonome, moteurs de paiement ISO 20022, et les boîtes à outils open source qui transforment CAMT / pacs.008 / MT940 / pain.001 en une intelligence transactionnelle auditable et présentable au conseil pour les équipes de trésorerie d'entreprise.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Résilience opérationnelle et DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Résilience opérationnelle et DORA — bannière du sujet\""
+    ],
+    [
+      "<h3><a href=\"/fr/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/fr/topics/operational-resilience-dora/index.html\">Résilience opérationnelle et DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/fr/sujets/operational-resilience-dora/index.html\">Résilience opérationnelle et DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Responsabilité du conseil au titre de l'article 5 de DORA, agrégation des données de risque BCBS 239, risque de concentration sur les tiers, tests de sortie, et les contrôles d'ingénierie qui font passer la résilience opérationnelle d'un projet de conformité à un tableau de bord prêt pour le superviseur.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Stablecoins et tokenisation\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Stablecoins et tokenisation — bannière du sujet\""
+    ],
+    [
+      "<h3><a href=\"/fr/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/fr/topics/stablecoins-tokenisation/index.html\">Stablecoins et tokenisation</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/fr/sujets/stablecoins-tokenisation/index.html\">Stablecoins et tokenisation</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Dépôts tokenisés, fonds monétaires, expérimentations de MNBC de gros, BRSRV/BSTBL de BlackRock, le GENIUS Act, et les choix d'ingénierie qui font fonctionner la monnaie programmable à l'intérieur de bilans régulés.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"IA générative et grands modèles de langage\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"IA générative et grands modèles de langage — bannière du sujet\""
+    ],
+    [
+      "<h3><a href=\"/fr/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/fr/topics/generative-ai-llms/index.html\">IA générative et grands modèles de langage</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/fr/sujets/generative-ai-llms/index.html\">IA générative et grands modèles de langage</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Modèles de fondation, grands modèles multimodaux (Gemini, Gemma, Mistral, MM1), ingénierie des invites, et les publications open source qui déterminent ce que les banques peuvent construire à l'intérieur de leur propre périmètre de données.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"IA vocale et reconnaissance de la parole\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"IA vocale et reconnaissance de la parole — bannière du sujet\""
+    ],
+    [
+      "<h3><a href=\"/fr/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/fr/topics/voice-speech-ai/index.html\">IA vocale et reconnaissance de la parole</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/fr/sujets/voice-speech-ai/index.html\">IA vocale et reconnaissance de la parole</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Clonage vocal, reconnaissance de la parole en temps réel (Whisper), assistants vocaux pour dirigeants, et la pile d'intelligence audio qui redessine l'expérience client de la banque privée.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"Gouvernance et réglementation de l'IA\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"Gouvernance et réglementation de l'IA — bannière du sujet\""
+    ],
+    [
+      "<h3><a href=\"/fr/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/fr/topics/ai-governance-regulation/index.html\">Gouvernance et réglementation de l'IA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/fr/sujets/ai-governance-regulation/index.html\">Gouvernance et réglementation de l'IA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Conformité au règlement européen sur l'IA, risque de modèle SR 11-7, responsabilité au niveau du conseil, auditabilité des flux autonomes, et le cadre réglementaire de l'IA au sein des banques de premier rang.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Infrastructures de paiement de gros\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Infrastructures de paiement de gros — bannière du sujet\""
+    ],
+    [
+      "<h3><a href=\"/fr/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/fr/topics/wholesale-payments-rails/index.html\">Infrastructures de paiement de gros</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/fr/sujets/wholesale-payments-rails/index.html\">Infrastructures de paiement de gros</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Stratégie multi-rails couvrant les cartes, les virements de compte à compte, le RTP, FedNow, l'open banking et les corridors en stablecoins. Économie des paiements de gros, caractère définitif du règlement, et le modèle d'atomicité transfrontalière du projet Agorá de la BRI.</p>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptographie et résilience</a>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Paiements et monnaie</a>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">IA et cloud</a>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open source et artisanat</a>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Piliers</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Grappes thématiques</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Articles indexés</span>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">PILIER</p>"
     ]
   ]
 }

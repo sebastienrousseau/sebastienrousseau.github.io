@@ -19,5 +19,68 @@
   "blockchain-digital-assets": {
     "title": "Blockchain e attività digitali",
     "lede": "Blockchain e attività digitali: tokenizzazione, ERC-20, stablecoin, infrastruttura delle criptovalute e il quadro normativo che le configura."
-  }
+  },
+  "cloud-native-banking": {
+    "title": "Banking cloud-native",
+    "lede": "Ingegneria di piattaforma basata su Kubernetes per istituzioni regolamentate: resilienza operativa testata secondo DORA, convergenza tra macchine virtuali e container, cloud sovrano, strategia di uscita e l'architettura che consente alle banche di rilasciare servizi critici sotto vigilanza."
+  },
+  "agentic-ai-banking": {
+    "title": "IA agentica nel banking",
+    "lede": "Piani di controllo per agenti, instradamento semantico deterministico, gate di policy OPA, log di audit WORM immutabili e la lente del rischio di modello SR 11-7 / SS1/23 che trasforma i flussi autonomi in evidenze pronte per la vigilanza."
+  },
+  "treasury-automation": {
+    "title": "Automazione della tesoreria",
+    "lede": "Liquidità programmabile, tesoreria autonoma, motori di pagamento ISO 20022 e i toolkit open source che trasformano CAMT / pacs.008 / MT940 / pain.001 in intelligenza sulle transazioni verificabile e adatta al consiglio di amministrazione."
+  },
+  "operational-resilience-dora": {
+    "title": "Resilienza operativa e DORA",
+    "lede": "Responsabilità del consiglio ai sensi dell'articolo 5 di DORA, aggregazione dei dati di rischio BCBS 239, rischio di concentrazione sui terzi, test di uscita e i controlli ingegneristici che trasformano la resilienza operativa da progetto di conformità a cruscotto pronto per la vigilanza."
+  },
+  "stablecoins-tokenisation": {
+    "title": "Stablecoin e tokenizzazione",
+    "lede": "Depositi tokenizzati, fondi del mercato monetario, progetti pilota di CBDC wholesale, BRSRV/BSTBL di BlackRock, il GENIUS Act e le scelte ingegneristiche che fanno funzionare il denaro programmabile all'interno di bilanci regolamentati."
+  },
+  "generative-ai-llms": {
+    "title": "IA generativa e LLM",
+    "lede": "Modelli di base, LLM multimodali (Gemini, Gemma, Mistral, MM1), prompt engineering e i rilasci open source che definiscono ciò che le banche possono costruire entro il proprio perimetro dei dati."
+  },
+  "voice-speech-ai": {
+    "title": "IA vocale e riconoscimento del parlato",
+    "lede": "Clonazione vocale, riconoscimento del parlato in tempo reale (Whisper), assistenti vocali per dirigenti e lo stack di audio intelligence che sta ridisegnando l'esperienza del cliente nel private banking."
+  },
+  "ai-governance-regulation": {
+    "title": "Governance e regolamentazione dell'IA",
+    "lede": "Conformità al Regolamento europeo sull'IA, rischio di modello SR 11-7, responsabilità a livello di consiglio, verificabilità dei flussi autonomi e il quadro regolamentare dell'IA nelle banche di primo livello."
+  },
+  "wholesale-payments-rails": {
+    "title": "Binari dei pagamenti wholesale",
+    "lede": "Strategia multi-binario che copre carte, A2A, RTP, FedNow, open banking e corridoi in stablecoin. Economia del wholesale, definitività del regolamento e il modello di atomicità transfrontaliera del Progetto Agorá della BRI."
+  },
+  "_pillars": [
+    {
+      "name": "Crittografia e resilienza",
+      "lede": "Migrazione post-quantistica, resilienza operativa a livello DORA e il quadro di governance dell'IA nei servizi finanziari."
+    },
+    {
+      "name": "Pagamenti e denaro",
+      "lede": "Migrazione a ISO 20022, regolamento wholesale, stablecoin, depositi tokenizzati e la funzione di tesoreria aziendale che li circonda."
+    },
+    {
+      "name": "IA e cloud",
+      "lede": "IA applicata, sistemi agentici, modelli generativi, IA vocale e le piattaforme bancarie cloud-native che li ospitano."
+    },
+    {
+      "name": "Open source e artigianato",
+      "lede": "Librerie Rust, primitive blockchain e la disciplina ingegneristica open source che le sostiene."
+    }
+  ],
+  "_hub_lede": "Quattro pilastri, quattordici cluster tematici, ogni articolo datato. Scegli un filo e seguilo attraverso l'archivio.",
+  "_banner_word": "banner del tema",
+  "_kpi": [
+    "Pilastri",
+    "Cluster tematici",
+    "Articoli indicizzati"
+  ],
+  "_article_count": "{n} articolo/i",
+  "_pillar_kicker": "PILASTRO"
 }

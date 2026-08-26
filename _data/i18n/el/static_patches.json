@@ -110,7 +110,7 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 άρθρο(α)</p>"
+      "\\1 άρθρο/α</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
@@ -682,7 +682,7 @@
     ],
     [
       ">Have an idea\\? Let's build it\\.<",
-      "<>Μια ιδέα; Ας τη φτιάξουμε μαζί.<"
+      ">Μια ιδέα; Ας τη φτιάξουμε μαζί.<"
     ],
     [
       ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
@@ -911,6 +911,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Οι δημοσιεύσεις μεταφέρθηκαν στην Έρευνα</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Cloud-native τραπεζική\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Cloud-native τραπεζική — πανό θέματος\""
+    ],
+    [
+      "<h3><a href=\"/el/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/el/topics/cloud-native-banking/index.html\">Cloud-native τραπεζική</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/el/topics/cloud-native-banking/index.html\">Cloud-native τραπεζική</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Μηχανική πλατφορμών βασισμένη στο Kubernetes για εποπτευόμενα ιδρύματα: λειτουργική ανθεκτικότητα δοκιμασμένη κατά DORA, σύγκλιση εικονικών μηχανών και containers, κυρίαρχο νέφος, στρατηγική εξόδου και η αρχιτεκτονική που επιτρέπει στις τράπεζες να παραδίδουν κρίσιμες υπηρεσίες υπό εποπτεία.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"Πρακτορική ΤΝ στην τραπεζική\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"Πρακτορική ΤΝ στην τραπεζική — πανό θέματος\""
+    ],
+    [
+      "<h3><a href=\"/el/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/el/topics/agentic-ai-banking/index.html\">Πρακτορική ΤΝ στην τραπεζική</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/el/topics/agentic-ai-banking/index.html\">Πρακτορική ΤΝ στην τραπεζική</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Επίπεδα ελέγχου πρακτόρων, ντετερμινιστική σημασιολογική δρομολόγηση, πύλες πολιτικής OPA, αμετάβλητα αρχεία ελέγχου WORM και η οπτική κινδύνου μοντέλου SR 11-7 / SS1/23 που μετατρέπει τις αυτόνομες ροές εργασίας σε τεκμήρια έτοιμα για τον επόπτη.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Αυτοματοποίηση διαχείρισης διαθεσίμων\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Αυτοματοποίηση διαχείρισης διαθεσίμων — πανό θέματος\""
+    ],
+    [
+      "<h3><a href=\"/el/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/el/topics/treasury-automation/index.html\">Αυτοματοποίηση διαχείρισης διαθεσίμων</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/el/topics/treasury-automation/index.html\">Αυτοματοποίηση διαχείρισης διαθεσίμων</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Προγραμματιζόμενη ρευστότητα, αυτόνομη διαχείριση διαθεσίμων, μηχανές πληρωμών ISO 20022 και τα εργαλεία ανοικτού κώδικα που μετατρέπουν τα CAMT / pacs.008 / MT940 / pain.001 σε ελέγξιμη πληροφόρηση συναλλαγών επιπέδου διοικητικού συμβουλίου για ομάδες εταιρικών διαθεσίμων.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Λειτουργική ανθεκτικότητα και DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Λειτουργική ανθεκτικότητα και DORA — πανό θέματος\""
+    ],
+    [
+      "<h3><a href=\"/el/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/el/topics/operational-resilience-dora/index.html\">Λειτουργική ανθεκτικότητα και DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/el/topics/operational-resilience-dora/index.html\">Λειτουργική ανθεκτικότητα και DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Λογοδοσία του διοικητικού συμβουλίου βάσει του άρθρου 5 του DORA, συγκέντρωση δεδομένων κινδύνου κατά BCBS 239, κίνδυνος συγκέντρωσης σε τρίτους, δοκιμές εξόδου και οι μηχανικοί έλεγχοι που μετατρέπουν τη λειτουργική ανθεκτικότητα από έργο συμμόρφωσης σε πίνακα αποτελεσμάτων έτοιμο για τον επόπτη.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Stablecoins και tokenοποίηση\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Stablecoins και tokenοποίηση — πανό θέματος\""
+    ],
+    [
+      "<h3><a href=\"/el/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/el/topics/stablecoins-tokenisation/index.html\">Stablecoins και tokenοποίηση</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/el/topics/stablecoins-tokenisation/index.html\">Stablecoins και tokenοποίηση</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Tokenοποιημένες καταθέσεις, αμοιβαία κεφάλαια χρηματαγοράς, πιλοτικά προγράμματα ψηφιακού νομίσματος κεντρικής τράπεζας χονδρικής, τα BRSRV/BSTBL της BlackRock, ο νόμος GENIUS και οι μηχανικές επιλογές πίσω από τη λειτουργία του προγραμματιζόμενου χρήματος εντός εποπτευόμενων ισολογισμών.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"Παραγωγική ΤΝ και μεγάλα γλωσσικά μοντέλα\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"Παραγωγική ΤΝ και μεγάλα γλωσσικά μοντέλα — πανό θέματος\""
+    ],
+    [
+      "<h3><a href=\"/el/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/el/topics/generative-ai-llms/index.html\">Παραγωγική ΤΝ και μεγάλα γλωσσικά μοντέλα</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/el/topics/generative-ai-llms/index.html\">Παραγωγική ΤΝ και μεγάλα γλωσσικά μοντέλα</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Θεμελιώδη μοντέλα, πολυτροπικά μεγάλα γλωσσικά μοντέλα (Gemini, Gemma, Mistral, MM1), μηχανική προτροπών και οι εκδόσεις ανοικτού κώδικα που καθορίζουν τι μπορούν να χτίσουν οι τράπεζες εντός της δικής τους περιμέτρου δεδομένων.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"ΤΝ φωνής και ομιλίας\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"ΤΝ φωνής και ομιλίας — πανό θέματος\""
+    ],
+    [
+      "<h3><a href=\"/el/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/el/topics/voice-speech-ai/index.html\">ΤΝ φωνής και ομιλίας</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/el/topics/voice-speech-ai/index.html\">ΤΝ φωνής και ομιλίας</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Κλωνοποίηση φωνής, αναγνώριση ομιλίας σε πραγματικό χρόνο (Whisper), φωνητικοί βοηθοί για στελέχη και η στοίβα ακουστικής νοημοσύνης που αναδιαμορφώνει την εμπειρία πελάτη στην ιδιωτική τραπεζική.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"Διακυβέρνηση και ρύθμιση της ΤΝ\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"Διακυβέρνηση και ρύθμιση της ΤΝ — πανό θέματος\""
+    ],
+    [
+      "<h3><a href=\"/el/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/el/topics/ai-governance-regulation/index.html\">Διακυβέρνηση και ρύθμιση της ΤΝ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/el/topics/ai-governance-regulation/index.html\">Διακυβέρνηση και ρύθμιση της ΤΝ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Συμμόρφωση με τον Ευρωπαϊκό Κανονισμό για την ΤΝ, κίνδυνος μοντέλου SR 11-7, λογοδοσία σε επίπεδο διοικητικού συμβουλίου, ελεγξιμότητα των αυτόνομων ροών εργασίας και το ρυθμιστικό πλαίσιο της ΤΝ στις τράπεζες πρώτης βαθμίδας.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Ράγες πληρωμών χονδρικής\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Ράγες πληρωμών χονδρικής — πανό θέματος\""
+    ],
+    [
+      "<h3><a href=\"/el/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/el/topics/wholesale-payments-rails/index.html\">Ράγες πληρωμών χονδρικής</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/el/topics/wholesale-payments-rails/index.html\">Ράγες πληρωμών χονδρικής</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Στρατηγική πολλαπλών ραγών που καλύπτει κάρτες, A2A, RTP, FedNow, ανοικτή τραπεζική και διαδρόμους stablecoin. Οικονομικά χονδρικής, οριστικότητα διακανονισμού και το μοντέλο διασυνοριακής ατομικότητας του Έργου Agorá της BIS.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Κρυπτογραφία και ανθεκτικότητα</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Κρυπτογραφία και ανθεκτικότητα</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Μετα-κβαντική μετάβαση, λειτουργική ανθεκτικότητα επιπέδου DORA και το πλαίσιο διακυβέρνησης της ΤΝ στις χρηματοοικονομικές υπηρεσίες.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Πληρωμές και χρήμα</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Πληρωμές και χρήμα</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Μετάβαση στο ISO 20022, διακανονισμός χονδρικής, stablecoins, tokenοποιημένες καταθέσεις και η εταιρική λειτουργία διαθεσίμων γύρω από αυτά.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>ΤΝ και νέφος</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">ΤΝ και νέφος</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Εφαρμοσμένη ΤΝ, πρακτορικά συστήματα, παραγωγικά μοντέλα, ΤΝ φωνής και ομιλίας, και οι cloud-native τραπεζικές πλατφόρμες που τα φιλοξενούν.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Ανοικτός κώδικας και τέχνη</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Ανοικτός κώδικας και τέχνη</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Βιβλιοθήκες Rust, πρωτογενή στοιχεία blockchain και η μηχανική πειθαρχία ανοικτού κώδικα πίσω τους.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Τέσσερις πυλώνες, δεκατέσσερις θεματικές συστάδες, κάθε χρονολογημένο άρθρο. Διαλέξτε ένα νήμα και ακολουθήστε το μέσα από το αρχείο.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">ΠΥΛΩΝΑΣ</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Πυλώνες</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Θεματικές συστάδες</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Ευρετηριασμένα άρθρα</span>"
     ]
   ]
 }

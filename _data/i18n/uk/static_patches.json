@@ -111,7 +111,7 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 стаття/статті</p>"
+      "Статей: \\1</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
@@ -163,7 +163,7 @@
     ],
     [
       ">About EPAA</a>",
-      "<>Про EPAA</a>"
+      ">Про EPAA</a>"
     ],
     [
       "title=\"Visit the Emerging Payments Association Asia\"",
@@ -179,7 +179,7 @@
     ],
     [
       ">Read the article</a>",
-      "<>Читати статтю</a>"
+      ">Читати статтю</a>"
     ],
     [
       " · Free download",
@@ -195,7 +195,7 @@
     ],
     [
       ">Request access<",
-      "<>Запитати доступ<"
+      ">Запитати доступ<"
     ],
     [
       ">English · PDF",
@@ -311,7 +311,7 @@
     ],
     [
       ">About EPAA</p>",
-      "<>Про EPAA</p>"
+      ">Про EPAA</p>"
     ],
     [
       "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
@@ -491,7 +491,7 @@
     ],
     [
       "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
-      "<p class=\"setup-card-body\">Bibliothèques Rust з відкритим кодом pour la sérialisation, la journalisation, la génération de code, la date et l'heure. Plus le <strong>Static Site Generator</strong> (SSG) qui construit ce site et l'environnement développeur qui le rend livrable.</p>"
+      "<p class=\"setup-card-body\">Бібліотеки Rust з відкритим кодом для серіалізації, журналювання, генерації коду та роботи з датою й часом. А також <strong>Static Site Generator</strong> (SSG), який будує цей сайт, і середовище розробника, що робить його придатним до випуску.</p>"
     ],
     [
       ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
@@ -683,7 +683,7 @@
     ],
     [
       ">Have an idea\\? Let's build it\\.<",
-      "<>Маєте ідею? Створімо її разом.<"
+      ">Маєте ідею? Створімо її разом.<"
     ],
     [
       ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
@@ -912,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Публікації переїхали до розділу «Дослідження»</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Хмарний банкінг\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Хмарний банкінг — банер теми\""
+    ],
+    [
+      "<h3><a href=\"/uk/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/uk/topics/cloud-native-banking/index.html\">Хмарний банкінг</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/uk/temy/cloud-native-banking/index.html\">Хмарний банкінг</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Платформна інженерія на основі Kubernetes для піднаглядових установ: операційна стійкість, перевірена за DORA, зближення віртуальних машин і контейнерів, суверенна хмара, стратегія виходу та архітектура, що дозволяє банкам випускати критичні сервіси під наглядом.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"Агентний ШІ в банківській справі\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"Агентний ШІ в банківській справі — банер теми\""
+    ],
+    [
+      "<h3><a href=\"/uk/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/uk/topics/agentic-ai-banking/index.html\">Агентний ШІ в банківській справі</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/uk/temy/agentic-ai-banking/index.html\">Агентний ШІ в банківській справі</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Площини керування агентами, детерміноване семантичне маршрутування, політичні шлюзи OPA, незмінні журнали аудиту WORM і оптика модельного ризику SR 11-7 / SS1/23, що перетворює автономні робочі процеси на готові для наглядача докази.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Автоматизація казначейства\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Автоматизація казначейства — банер теми\""
+    ],
+    [
+      "<h3><a href=\"/uk/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/uk/topics/treasury-automation/index.html\">Автоматизація казначейства</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/uk/temy/treasury-automation/index.html\">Автоматизація казначейства</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Програмована ліквідність, автономне казначейство, платіжні рушії ISO 20022 та відкриті набори інструментів, які перетворюють CAMT / pacs.008 / MT940 / pain.001 на аудитовану транзакційну аналітику рівня наглядової ради для корпоративних казначейських команд.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Операційна стійкість і DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Операційна стійкість і DORA — банер теми\""
+    ],
+    [
+      "<h3><a href=\"/uk/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/uk/topics/operational-resilience-dora/index.html\">Операційна стійкість і DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/uk/temy/operational-resilience-dora/index.html\">Операційна стійкість і DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Відповідальність наглядової ради за статтею 5 DORA, агрегація даних про ризики за BCBS 239, ризик концентрації в третіх сторін, тестування виходу та інженерні засоби контролю, що перетворюють операційну стійкість із проєкту комплаєнсу на готове для наглядача табло показників.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Стейблкоїни та токенізація\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Стейблкоїни та токенізація — банер теми\""
+    ],
+    [
+      "<h3><a href=\"/uk/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/uk/topics/stablecoins-tokenisation/index.html\">Стейблкоїни та токенізація</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/uk/temy/stablecoins-tokenisation/index.html\">Стейблкоїни та токенізація</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Токенізовані депозити, фонди грошового ринку, пілоти оптових цифрових валют центробанків, BRSRV/BSTBL від BlackRock, закон GENIUS та інженерні рішення, завдяки яким програмовані гроші працюють усередині піднаглядових балансів.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"Генеративний ШІ та великі мовні моделі\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"Генеративний ШІ та великі мовні моделі — банер теми\""
+    ],
+    [
+      "<h3><a href=\"/uk/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/uk/topics/generative-ai-llms/index.html\">Генеративний ШІ та великі мовні моделі</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/uk/temy/generative-ai-llms/index.html\">Генеративний ШІ та великі мовні моделі</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Базові моделі, мультимодальні великі мовні моделі (Gemini, Gemma, Mistral, MM1), інженерія промптів і відкриті релізи, що визначають, що банки можуть будувати всередині власного периметра даних.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"Голосовий і мовленнєвий ШІ\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"Голосовий і мовленнєвий ШІ — банер теми\""
+    ],
+    [
+      "<h3><a href=\"/uk/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/uk/topics/voice-speech-ai/index.html\">Голосовий і мовленнєвий ШІ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/uk/temy/voice-speech-ai/index.html\">Голосовий і мовленнєвий ШІ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Клонування голосу, розпізнавання мовлення в реальному часі (Whisper), голосові помічники для керівників і стек аудіоаналітики, що змінює клієнтський досвід у приватному банкінгу.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"Урядування та регулювання ШІ\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"Урядування та регулювання ШІ — банер теми\""
+    ],
+    [
+      "<h3><a href=\"/uk/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/uk/topics/ai-governance-regulation/index.html\">Урядування та регулювання ШІ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/uk/temy/ai-governance-regulation/index.html\">Урядування та регулювання ШІ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Відповідність Регламенту ЄС про ШІ, модельний ризик за SR 11-7, відповідальність на рівні наглядової ради, аудитованість автономних робочих процесів і регуляторна рамка ШІ у банках першого ешелону.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Оптові платіжні рейки\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Оптові платіжні рейки — банер теми\""
+    ],
+    [
+      "<h3><a href=\"/uk/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/uk/topics/wholesale-payments-rails/index.html\">Оптові платіжні рейки</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/uk/temy/wholesale-payments-rails/index.html\">Оптові платіжні рейки</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Мультирейкова стратегія, що охоплює картки, A2A, RTP, FedNow, відкритий банкінг і стейблкоїн-коридори. Економіка опту, остаточність розрахунків і модель транскордонної атомарності проєкту Agorá БМР.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Криптографія та стійкість</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Криптографія та стійкість</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Постквантова міграція, операційна стійкість рівня DORA та рамка урядування ШІ у фінансових послугах.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Платежі та гроші</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Платежі та гроші</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Міграція на ISO 20022, оптові розрахунки, стейблкоїни, токенізовані депозити та корпоративна казначейська функція навколо них.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>ШІ та хмара</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">ШІ та хмара</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Прикладний ШІ, агентні системи, генеративні моделі, голосовий і мовленнєвий ШІ та хмарні банківські платформи, де вони працюють.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Відкритий код і ремесло</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Відкритий код і ремесло</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Бібліотеки на Rust, блокчейн-примітиви та інженерна дисципліна відкритого коду за ними.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Чотири опори, чотирнадцять тематичних кластерів, кожна датована стаття. Оберіть нитку і простежте її крізь архів.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">ОПОРА</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Опори</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Тематичні кластери</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Проіндексовані статті</span>"
     ]
   ]
 }

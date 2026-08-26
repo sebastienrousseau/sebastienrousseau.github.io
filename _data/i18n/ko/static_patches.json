@@ -111,7 +111,7 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 건의 기사</p>"
+      "\\1개의 글</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
@@ -912,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>간행물이 연구 페이지로 이동했습니다</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"클라우드 네이티브 뱅킹\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"클라우드 네이티브 뱅킹 — 주제 배너\""
+    ],
+    [
+      "<h3><a href=\"/ko/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/ko/topics/cloud-native-banking/index.html\">클라우드 네이티브 뱅킹</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/ko/jujae/cloud-native-banking/index.html\">클라우드 네이티브 뱅킹</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">규제 대상 기관을 위한 Kubernetes 기반 플랫폼 엔지니어링. DORA 기준으로 검증한 운영 복원력, 가상 머신과 컨테이너의 수렴, 소버린 클라우드, 출구 전략, 그리고 은행이 감독 아래 핵심 서비스를 배포할 수 있게 하는 아키텍처.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"은행의 에이전트형 AI\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"은행의 에이전트형 AI — 주제 배너\""
+    ],
+    [
+      "<h3><a href=\"/ko/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/ko/topics/agentic-ai-banking/index.html\">은행의 에이전트형 AI</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/ko/jujae/agentic-ai-banking/index.html\">은행의 에이전트형 AI</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">에이전트 제어 평면, 결정론적 시맨틱 라우팅, OPA 정책 게이트, 변경 불가능한 WORM 감사 로그, 그리고 자율 워크플로를 감독기관 제출용 증거로 바꾸는 SR 11-7 / SS1/23 모델 리스크 관점.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"자금 관리 자동화\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"자금 관리 자동화 — 주제 배너\""
+    ],
+    [
+      "<h3><a href=\"/ko/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/ko/topics/treasury-automation/index.html\">자금 관리 자동화</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/ko/jujae/treasury-automation/index.html\">자금 관리 자동화</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">프로그래머블 유동성, 자율 자금 관리, ISO 20022 결제 엔진, 그리고 CAMT / pacs.008 / MT940 / pain.001을 기업 자금 팀을 위한 감사 가능하고 이사회 수준의 거래 인텔리전스로 바꾸는 오픈소스 도구 모음.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"운영 복원력과 DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"운영 복원력과 DORA — 주제 배너\""
+    ],
+    [
+      "<h3><a href=\"/ko/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/ko/topics/operational-resilience-dora/index.html\">운영 복원력과 DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/ko/jujae/operational-resilience-dora/index.html\">운영 복원력과 DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">DORA 제5조에 따른 이사회 책임, BCBS 239 리스크 데이터 집계, 제3자 집중 리스크, 출구 테스트, 그리고 운영 복원력을 컴플라이언스 과제에서 감독기관용 스코어보드로 바꾸는 엔지니어링 통제.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"스테이블코인과 토큰화\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"스테이블코인과 토큰화 — 주제 배너\""
+    ],
+    [
+      "<h3><a href=\"/ko/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/ko/topics/stablecoins-tokenisation/index.html\">스테이블코인과 토큰화</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/ko/jujae/stablecoins-tokenisation/index.html\">스테이블코인과 토큰화</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">토큰화 예금, 머니마켓펀드, 거액 중앙은행 디지털화폐 시범 사업, 블랙록의 BRSRV/BSTBL, GENIUS 법, 그리고 규제 대상 대차대조표 안에서 프로그래머블 머니를 작동시키는 엔지니어링 선택.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"생성형 AI와 대규모 언어 모델\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"생성형 AI와 대규모 언어 모델 — 주제 배너\""
+    ],
+    [
+      "<h3><a href=\"/ko/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/ko/topics/generative-ai-llms/index.html\">생성형 AI와 대규모 언어 모델</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/ko/jujae/generative-ai-llms/index.html\">생성형 AI와 대규모 언어 모델</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">파운데이션 모델, 멀티모달 대규모 언어 모델(Gemini, Gemma, Mistral, MM1), 프롬프트 엔지니어링, 그리고 은행이 자체 데이터 경계 안에서 무엇을 만들 수 있는지 좌우하는 오픈소스 릴리스.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"음성·발화 AI\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"음성·발화 AI — 주제 배너\""
+    ],
+    [
+      "<h3><a href=\"/ko/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/ko/topics/voice-speech-ai/index.html\">음성·발화 AI</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/ko/jujae/voice-speech-ai/index.html\">음성·발화 AI</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">음성 복제, 실시간 음성 인식(Whisper), 임원용 음성 비서, 그리고 프라이빗 뱅킹 고객 경험을 다시 설계하는 오디오 인텔리전스 스택.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"AI 거버넌스와 규제\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"AI 거버넌스와 규제 — 주제 배너\""
+    ],
+    [
+      "<h3><a href=\"/ko/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/ko/topics/ai-governance-regulation/index.html\">AI 거버넌스와 규제</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/ko/jujae/ai-governance-regulation/index.html\">AI 거버넌스와 규제</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">EU AI법 적합성, SR 11-7 모델 리스크, 이사회 차원의 책임, 자율 워크플로의 감사 가능성, 그리고 1군 은행 내 AI 규제 체계.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"거액 결제 레일\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"거액 결제 레일 — 주제 배너\""
+    ],
+    [
+      "<h3><a href=\"/ko/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/ko/topics/wholesale-payments-rails/index.html\">거액 결제 레일</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/ko/jujae/wholesale-payments-rails/index.html\">거액 결제 레일</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">카드, 계좌 간 이체, RTP, FedNow, 오픈뱅킹, 스테이블코인 회랑을 아우르는 멀티레일 전략. 거액 결제의 경제성, 결제 완결성, 그리고 BIS 프로젝트 Agorá의 국경 간 원자성 모델.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>암호와 복원력</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">암호와 복원력</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">양자 내성 전환, DORA 수준의 운영 복원력, 그리고 금융 서비스 내 AI 거버넌스 체계.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>결제와 화폐</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">결제와 화폐</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">ISO 20022 전환, 거액 결제, 스테이블코인, 토큰화 예금, 그리고 이를 둘러싼 기업 자금 관리 기능.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>AI와 클라우드</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI와 클라우드</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">응용 AI, 에이전트형 시스템, 생성 모델, 음성·발화 AI, 그리고 이를 구동하는 클라우드 네이티브 뱅킹 플랫폼.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>오픈소스와 장인정신</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">오픈소스와 장인정신</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Rust 라이브러리, 블록체인 프리미티브, 그리고 그 뒤에 있는 오픈소스 엔지니어링 규율.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">네 개의 기둥, 열네 개의 주제 클러스터, 날짜가 붙은 모든 글. 실마리를 하나 골라 아카이브를 따라가 보세요.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">기둥</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">기둥</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">주제 클러스터</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">색인된 글</span>"
     ]
   ]
 }

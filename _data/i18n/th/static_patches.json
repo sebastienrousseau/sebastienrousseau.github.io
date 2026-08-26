@@ -163,7 +163,7 @@
     ],
     [
       ">About EPAA</a>",
-      "<>เกี่ยวกับ EPAA</a>"
+      ">เกี่ยวกับ EPAA</a>"
     ],
     [
       "title=\"Visit the Emerging Payments Association Asia\"",
@@ -179,7 +179,7 @@
     ],
     [
       ">Read the article</a>",
-      "<>อ่านบทความ</a>"
+      ">อ่านบทความ</a>"
     ],
     [
       " · Free download",
@@ -195,7 +195,7 @@
     ],
     [
       ">Request access<",
-      "<>ขอสิทธิ์เข้าถึง<"
+      ">ขอสิทธิ์เข้าถึง<"
     ],
     [
       ">English · PDF",
@@ -295,23 +295,23 @@
     ],
     [
       ">What kind of research and papers do you publish\\?</summary>",
-      ">¿Qué tipo de investigaciones y ngan-wichai publica?</summary>"
+      ">คุณเผยแพร่งานวิจัยและสิ่งพิมพ์ประเภทใด</summary>"
     ],
     [
-      "(<summary[^>]*>¿Qué tipo de investigaciones y publicaciones publica\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Coexisten dos ejes. Los <strong>libros blancos sectoriales</strong>, producidos para organizaciones como la Emerging Payments Association Asia (EPAA), examinan las transformaciones estructurales de las infraestructuras de pago — recientemente el impacto de la computación cuántica criptográficamente relevante sobre los raíles de liquidación mayorista y en tiempo real. Los <strong>informes de investigación aplicada</strong> abordan hua-kho técnicos concretos (por ejemplo: reconocimiento de voz en tiempo real con Whisper + Metal Performance Shaders en Apple Silicon) y se publican como PDF de compra individual.</p></section>"
+      "(<summary[^>]*>Quels types de recherches et publications publiez-vous \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>มีสองแนวทางที่ดำเนินไปพร้อมกัน <strong>เอกสารเชิงนโยบายสำหรับอุตสาหกรรม</strong> ซึ่งจัดทำให้องค์กรอย่าง Emerging Payments Association Asia (EPAA) ศึกษาการเปลี่ยนแปลงเชิงโครงสร้างในโครงสร้างพื้นฐานการชำระเงิน — ล่าสุดคือผลกระทบของการประมวลผลควอนตัมที่มีนัยสำคัญทางการเข้ารหัสต่อรางการชำระดุลรายใหญ่และแบบทันที ส่วน <strong>รายงานการวิจัยประยุกต์</strong> มุ่งไปที่หัวข้อทางเทคนิคที่เฉพาะเจาะจง (เช่น การรู้จำเสียงพูดแบบเรียลไทม์ผ่าน Whisper + Metal Performance Shaders บน Apple Silicon) และเผยแพร่เป็นไฟล์ PDF ที่ซื้อแยกได้</p></section>"
     ],
     [
       ">How often do you release new papers\\?</summary>",
-      ">¿Con qué frecuencia publica nuevos artículos?</summary>"
+      ">คุณเผยแพร่บทความใหม่บ่อยเพียงใด</summary>"
     ],
     [
-      "(<summary[^>]*>¿Con qué frecuencia publica nuevos artículos\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Irregularmente, por preferencia por la calidad antes que por la cadencia. Las notas breves de investigación aparecen cada pocas semanas cuando un avance técnico lo justifica. Los libros blancos se publican en relación con ciclos sectoriales (por ejemplo: calendarios regulatorios, congresos de la EPAA).</p></section>"
+      "(<summary[^>]*>À quelle fréquence publiez-vous de nouveaux articles \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>ไม่สม่ำเสมอ โดยให้ความสำคัญกับคุณภาพมากกว่าจังหวะ บันทึกการวิจัยสั้น ๆ จะออกทุกไม่กี่สัปดาห์เมื่อมีพัฒนาการทางเทคนิคที่สมควรแก่การบันทึก ส่วนเอกสารเชิงนโยบายจะเผยแพร่ให้สอดคล้องกับวงรอบของอุตสาหกรรม (เช่น กำหนดการด้านกฎระเบียบ การประชุม EPAA)</p></section>"
     ],
     [
       ">About EPAA</p>",
-      "<>เกี่ยวกับ EPAA</p>"
+      ">เกี่ยวกับ EPAA</p>"
     ],
     [
       "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
@@ -367,51 +367,51 @@
     ],
     [
       ">Are the white papers free to read\\?</summary>",
-      ">¿Son los libros blancos de lectura gratuita?</summary>"
+      ">เอกสารเชิงนโยบายอ่านได้ฟรีหรือไม่</summary>"
     ],
     [
       ">May I cite or quote from these papers\\?</summary>",
-      ">¿Puedo citar estos documentos?</summary>"
+      ">ฉันสามารถอ้างอิงหรือยกข้อความจากเอกสารเหล่านี้ได้หรือไม่</summary>"
     ],
     [
       ">Who is the intended audience\\?</summary>",
-      ">¿A quién van dirigidas estas ngan-wichai?</summary>"
+      ">ผู้อ่านกลุ่มเป้าหมายคือใคร</summary>"
     ],
     [
       ">Can I commission a paper or speak at an event\\?</summary>",
-      ">¿Puedo encargar un estudio o invitarle a una conferencia?</summary>"
+      ">ฉันสามารถว่าจ้างให้จัดทำเอกสารหรือเชิญไปบรรยายได้หรือไม่</summary>"
     ],
     [
       ">How do I follow new publications\\?</summary>",
-      ">¿Cómo seguir las nuevas ngan-wichai?</summary>"
+      ">ฉันจะติดตามสิ่งพิมพ์ใหม่ได้อย่างไร</summary>"
     ],
     [
       ">Where can I follow new releases\\?</summary>",
-      ">¿Dónde puedo seguir las nuevas ngan-wichai?</summary>"
+      ">ฉันจะติดตามการเผยแพร่ใหม่ได้ที่ไหน</summary>"
     ],
     [
-      "(<summary[^>]*>¿Son los libros blancos de lectura gratuita\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>El libro blanco de la EPAA <em>Quantum-Safe Payments</em> está disponible para descarga pública gratuita en <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. El informe de investigación independiente sobre reconocimiento de voz en tiempo real con OpenAI Whisper y Metal Performance Shaders está bajo licencia y disponible para compra individual a 49,00 $ (inglés, PDF, ~95 KB). หนึ่งสำเนาต่อผู้ซื้อ; descargas para uso personal únicamente, no redistribuibles.</p></section>"
+      "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>เอกสารเชิงนโยบาย <em>Quantum-Safe Payments</em> ของ EPAA เปิดให้ดาวน์โหลดสาธารณะโดยไม่มีค่าใช้จ่ายที่ <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> ส่วนรายงานการวิจัยอิสระเรื่องการรู้จำเสียงพูดแบบเรียลไทม์ด้วย OpenAI Whisper และ Metal Performance Shaders นั้นมีลิขสิทธิ์และซื้อแยกได้ในราคา 49.00 $ (ภาษาอังกฤษ, PDF, ประมาณ 95 KB) หนึ่งสำเนาต่อผู้ซื้อหนึ่งราย ไฟล์ที่ดาวน์โหลดมีไว้เพื่อการใช้งานส่วนบุคคลเท่านั้นและห้ามเผยแพร่ต่อ</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Puedo citar estos documentos\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Sí. Las citas breves con atribución son bienvenidas en el marco del fair use. Para las ngan-wichai de la EPAA, cite a la EPAA como editora junto con el grupo de trabajo, el año y la URL del PDF. Para los informes de investigación independientes, cite así: <em>Rousseau, S. (año). Título. Autopublicación.</em> con la URL canónica. Para reproducir una figura o un pasaje extenso, <a href=\"/th/tit-to/\">póngase en tit-to</a> previamente.</p></section>"
+      "(<summary[^>]*>Puis-je citer ces documents \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>ได้ ยินดีให้อ้างอิงข้อความสั้น ๆ พร้อมระบุแหล่งที่มาภายใต้หลักการใช้งานที่เป็นธรรม สำหรับสิ่งพิมพ์ของ EPAA โปรดระบุ EPAA เป็นผู้จัดพิมพ์พร้อมคณะผู้เขียน ปีที่พิมพ์ และลิงก์ไปยังไฟล์ PDF ส่วนรายงานการวิจัยอิสระให้อ้างอิงในรูปแบบ: <em>Rousseau, S. (ปี). ชื่อเรื่อง. จัดพิมพ์เอง.</em> พร้อมลิงก์ตามกฎหมาย หากต้องการทำซ้ำแผนภูมิหรือย่อหน้าที่ยาว โปรด <a href=\"/th/tit-to/\">ติดต่อ</a> ล่วงหน้า</p></section>"
     ],
     [
-      "(<summary[^>]*>¿A quién van dirigidas estas publicaciones\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Directores de pagos, CISO y arquitectos senior en bancos de primer nivel, bancos centrales, operadores de sishua-kho de pago y propietarios de esquemas. La investigación aplicada va dirigida a ingenieros y responsables de producto que construyen sobre grandes modelos de lenguaje, IA en dispositivo y criptografía resistente al cuántico. Cada artículo presupone conocimiento del dominio y omite los recordatorios que un profesional en activo ya posee.</p></section>"
+      "(<summary[^>]*>À qui s’adressent ces publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>ผู้อำนวยการฝ่ายการชำระเงิน ผู้บริหารความมั่นคงสารสนเทศ (CISO) และวิศวกรอาวุโสในธนาคารระดับแนวหน้า ธนาคารกลาง ผู้ให้บริการระบบการชำระเงิน และเจ้าของสคีม ส่วนงานวิจัยประยุกต์มุ่งไปที่วิศวกรและผู้จัดการผลิตภัณฑ์ที่สร้างงานบนโมเดลภาษาขนาดใหญ่ ปัญญาประดิษฐ์บนอุปกรณ์ และการเข้ารหัสที่ทนต่อควอนตัม เอกสารแต่ละฉบับสันนิษฐานว่าผู้อ่านมีความรู้ในสาขาและข้ามคำอธิบายพื้นฐานที่ผู้ปฏิบัติงานทราบดีอยู่แล้ว</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Puedo encargar un estudio o invitarle a una conferencia\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Sí — caso a caso, con selección previa. Los encargos versan sobre pagos mayoristas, migración a ISO 20022, criptografía postcuántica para los servicios financieros e AI ประยุกต์ในธนาคาร. Las intervenciones en conferencias sectoriales, foros de bancos centrales y mesas redondas de reguladores se estudian caso a caso. Utilice el <a href=\"/th/tit-to/\">formulario de tit-to</a> indicando el tema, la audiencia y el calendario.</p></section>"
+      "(<summary[^>]*>Puis-je commander une étude ou inviter à une conférence \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>ได้ — พิจารณาเป็นราย ๆ ไปและคัดเลือก งานที่รับจ้างจัดทำครอบคลุมการชำระเงินรายใหญ่ การย้ายสู่ ISO 20022 การเข้ารหัสหลังควอนตัมสำหรับบริการทางการเงิน และปัญญาประดิษฐ์ประยุกต์ในธนาคาร การเข้าร่วมการประชุมอุตสาหกรรม เวทีธนาคารกลาง และการหารือกับผู้กำกับดูแลจะพิจารณาเป็นราย ๆ ไป กรุณาใช้ <a href=\"/th/tit-to/\">แบบฟอร์มติดต่อ</a> โดยระบุหัวข้อ กลุ่มผู้ฟัง และกรอบเวลา</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Cómo seguir las nuevas publicaciones\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Los nuevos artículos y notas de investigación se anuncian con prioridad mediante el <a href=\"/th/rss.xml\">feed RSS</a> del sitio y la newsletter <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>, que cubre criptografía postcuántica, política de bancos centrales y la hoja de ruta de migración de los principales esquemas de pago. ไม่มีสแปม — เฉพาะข่าวสาร</p></section>"
+      "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>บทความและบันทึกการวิจัยใหม่จะประกาศครั้งแรกผ่าน <a href=\"/th/rss.xml\">ฟีด RSS</a> ของเว็บไซต์และจดหมายข่าว <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> ซึ่งครอบคลุมการเข้ารหัสหลังควอนตัม นโยบายธนาคารกลาง และแผนการย้ายของสคีมการชำระเงินหลัก ไม่มีสแปม — มีแต่สิ่งใหม่</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Dónde puedo seguir las nuevas publicaciones\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>สมัครรับ <a href=\"/th/rss.xml\">feed RSS</a> o sígame en <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> para estar al tanto de las nuevas ngan-wichai.</p></section>"
+      "(<summary[^>]*>Où puis-je suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>สมัครรับ <a href=\"/th/rss.xml\">ฟีด RSS</a> หรือติดตามผมได้ที่ <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> เพื่อรับแจ้งเมื่อมีการเผยแพร่ใหม่</p></section>"
     ],
     [
       ">Browse all projects<",
@@ -631,51 +631,51 @@
     ],
     [
       ">What licence are these projects released under\\?</summary>",
-      ">¿Bajo qué licencia se publican estos khrong-kan?</summary>"
+      ">โครงการเหล่านี้เผยแพร่ภายใต้สัญญาอนุญาตใด</summary>"
     ],
     [
       ">Are these projects production-ready\\?</summary>",
-      ">¿Están estos khrong-kan listos para producción?</summary>"
+      ">โครงการเหล่านี้พร้อมใช้งานจริงหรือไม่</summary>"
     ],
     [
       ">How can I contribute or report an issue\\?</summary>",
-      ">¿Cómo puedo contribuir o reportar un problema?</summary>"
+      ">ฉันจะมีส่วนร่วมหรือรายงานปัญหาได้อย่างไร</summary>"
     ],
     [
       ">Can I use these libraries in a regulated banking environment\\?</summary>",
-      ">¿Puedo usar estas bibliotecas en un entorno bancario regulado?</summary>"
+      ">ฉันสามารถใช้ไลบรารีเหล่านี้ในสภาพแวดล้อมธนาคารที่อยู่ภายใต้การกำกับดูแลได้หรือไม่</summary>"
     ],
     [
       ">Do you offer commercial support or consulting\\?</summary>",
-      ">¿Ofrece soporte comercial o consultoría?</summary>"
+      ">คุณให้บริการสนับสนุนเชิงพาณิชย์หรือให้คำปรึกษาหรือไม่</summary>"
     ],
     [
       ">How do I follow new releases\\?</summary>",
-      ">¿Cómo seguir las nuevas ngan-wichai?</summary>"
+      ">ฉันจะติดตามการเผยแพร่ใหม่ได้อย่างไร</summary>"
     ],
     [
-      "(<summary[^>]*>¿Bajo qué licencia se publican estos proyectos\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Todos los khrong-kan se publican bajo licencia <strong>Apache-2.0</strong>. El archivo <code>LICENSE</code> en la raíz de cada repositorio es la fuente autoritativa.</p></section>"
+      "(<summary[^>]*>Sous quelle licence ces projets sont-ils publiés \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>ทุกโครงการเผยแพร่ภายใต้สัญญาอนุญาต <strong>Apache-2.0</strong> ไฟล์ <code>LICENSE</code> ที่รากของแต่ละคลังเก็บคือแหล่งอ้างอิงที่มีผลผูกพัน</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Están estos proyectos listos para producción\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Depende del proyecto. Las bibliotecas marcadas como <em>v1.x</em> están estabilizadas y probadas bajo carga; las pre-v1 son bases sólidas pero pueden evolucionar. El README de cada repositorio detalla el estado actual; si necesita una garantía específica para uso en producción, <a href=\"/th/tit-to/\">póngase en tit-to</a>.</p></section>"
+      "(<summary[^>]*>Ces projets sont-ils prêts pour la production \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>ขึ้นอยู่กับโครงการ ไลบรารีที่กำกับด้วย <em>v1.x</em> มีความเสถียรและผ่านการทดสอบภายใต้ภาระงานแล้ว ส่วนที่ยังไม่ถึง v1 เป็นรากฐานที่มั่นคงแต่ยังอาจเปลี่ยนแปลงได้ ไฟล์ README ของแต่ละคลังเก็บระบุสถานะปัจจุบันไว้ หากคุณต้องการคำรับรองที่เจาะจงสำหรับการใช้งานจริง กรุณา <a href=\"/th/tit-to/\">ติดต่อ</a></p></section>"
     ],
     [
-      "(<summary[^>]*>¿Cómo puedo contribuir o reportar un problema\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Cada proyecto dispone de un repositorio GitHub público en <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Abra una issue describiendo el problema (un reproductor mínimo es bienvenido) o una pull request vinculada a una issue. Las contribuciones se rigen por el <em>Developer Certificate of Origin</em> y requieren commits firmados.</p></section>"
+      "(<summary[^>]*>Comment puis-je contribuer ou signaler un problème \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>ทุกโครงการมีคลังเก็บสาธารณะบน GitHub ภายใต้ <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a> เปิด issue พร้อมอธิบายปัญหา (ควรมีตัวอย่างขั้นต่ำที่ทำซ้ำได้) หรือส่ง pull request ที่ผูกกับ issue การมีส่วนร่วมอยู่ภายใต้ <em>Developer Certificate of Origin</em> และต้องลงลายมือชื่อใน commit</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Puedo usar estas bibliotecas en un entorno bancario regulado\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Sí, con las precauciones habituales. Las bibliotecas son trabajos de código abierto independientes y no un producto regulado. Aplique sus procesos habituales de supply chain, seguridad y revisión de dependencias — vendoring vía su espejo interno, escaneo SBOM, fijado por Git SHA o huella criptográfica — antes de cualquier despliegue en producción sobre infraestructura de pagos.</p></section>"
+      "(<summary[^>]*>Puis-je utiliser ces bibliothèques dans un environnement bancaire régulé \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>ได้ โดยใช้ความระมัดระวังตามปกติ ไลบรารีเหล่านี้เป็นงานโอเพนซอร์สอิสระ ไม่ใช่ผลิตภัณฑ์ที่อยู่ภายใต้การกำกับดูแล กรุณาใช้กระบวนการตามปกติของคุณสำหรับห่วงโซ่อุปทาน ความมั่นคง และการทบทวนการพึ่งพา — vendoring ผ่านมิเรอร์ภายในองค์กร การตรวจ SBOM การตรึงที่ Git SHA หรือลายนิ้วมือเชิงการเข้ารหัส — ก่อนนำไปใช้งานจริงบนโครงสร้างพื้นฐานการชำระเงิน</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Ofrece soporte comercial o consultoría\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Sí, con selección previa. Los encargos versan sobre migración a ISO&nbsp;20022, hojas de ruta de migración postcuántica e IA aplicada a los servicios financieros. <a href=\"/th/tit-to/\">Contacte conmigo</a> con un brief breve, su calendario y las restricciones aplicables.</p></section>"
+      "(<summary[^>]*>Proposez-vous du support commercial ou du conseil \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>ให้ครับ โดยคัดเลือก งานที่รับครอบคลุมการย้ายสู่ ISO&nbsp;20022 แผนการย้ายสู่ยุคหลังควอนตัม และปัญญาประดิษฐ์ประยุกต์ในบริการทางการเงิน <a href=\"/th/tit-to/\">ติดต่อ</a> พร้อมสรุปสั้น ๆ กรอบเวลาของคุณ และข้อจำกัดที่มี</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Cómo seguir las nuevas publicaciones\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Cada artículo fechado del sitio se anuncia vía el <a href=\"/th/rss.xml\">feed RSS</a> y la newsletter <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Los repositorios individuales también publican releases en GitHub que puede seguir directamente.</p></section>"
+      "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>ทุกบทความที่ระบุวันที่บนเว็บไซต์จะประกาศผ่าน <a href=\"/th/rss.xml\">ฟีด RSS</a> และจดหมายข่าว <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> นอกจากนี้แต่ละคลังเก็บยังเผยแพร่รุ่นของตนบน GitHub ซึ่งคุณติดตามได้โดยตรง</p></section>"
     ],
     [
       ">GET IN TOUCH<",
@@ -683,7 +683,7 @@
     ],
     [
       ">Have an idea\\? Let's build it\\.<",
-      "<>มีความคิดหรือไม่? มาสร้างมันด้วยกัน<"
+      ">มีความคิดหรือไม่? มาสร้างมันด้วยกัน<"
     ],
     [
       ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
@@ -912,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>สิ่งพิมพ์ย้ายไปที่หน้างานวิจัยแล้ว</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"ธนาคารแบบคลาวด์เนทีฟ\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"ธนาคารแบบคลาวด์เนทีฟ — แบนเนอร์หัวข้อ\""
+    ],
+    [
+      "<h3><a href=\"/th/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/th/topics/cloud-native-banking/index.html\">ธนาคารแบบคลาวด์เนทีฟ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/th/hua-kho/cloud-native-banking/index.html\">ธนาคารแบบคลาวด์เนทีฟ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">วิศวกรรมแพลตฟอร์มบนพื้นฐาน Kubernetes สำหรับสถาบันที่อยู่ภายใต้การกำกับดูแล: ความยืดหยุ่นเชิงปฏิบัติการที่ทดสอบตามมาตรฐาน DORA การหลอมรวมเครื่องเสมือนกับคอนเทนเนอร์ คลาวด์อธิปไตย กลยุทธ์การถอนตัว และสถาปัตยกรรมที่ทำให้ธนาคารส่งมอบบริการสำคัญได้ภายใต้การกำกับดูแล</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"AI เชิงเอเจนต์ในธนาคาร\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"AI เชิงเอเจนต์ในธนาคาร — แบนเนอร์หัวข้อ\""
+    ],
+    [
+      "<h3><a href=\"/th/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/th/topics/agentic-ai-banking/index.html\">AI เชิงเอเจนต์ในธนาคาร</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/th/hua-kho/agentic-ai-banking/index.html\">AI เชิงเอเจนต์ในธนาคาร</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">ระนาบควบคุมเอเจนต์ การกำหนดเส้นทางเชิงความหมายแบบกำหนดผลได้ ประตูนโยบาย OPA บันทึกตรวจสอบ WORM ที่แก้ไขไม่ได้ และมุมมองความเสี่ยงของโมเดลตาม SR 11-7 / SS1/23 ที่เปลี่ยนกระบวนการทำงานอัตโนมัติให้เป็นหลักฐานพร้อมยื่นต่อผู้กำกับดูแล</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"ระบบอัตโนมัติด้านบริหารเงินสด\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"ระบบอัตโนมัติด้านบริหารเงินสด — แบนเนอร์หัวข้อ\""
+    ],
+    [
+      "<h3><a href=\"/th/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/th/topics/treasury-automation/index.html\">ระบบอัตโนมัติด้านบริหารเงินสด</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/th/hua-kho/treasury-automation/index.html\">ระบบอัตโนมัติด้านบริหารเงินสด</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">สภาพคล่องที่ตั้งโปรแกรมได้ การบริหารเงินสดแบบอัตโนมัติ เครื่องยนต์ชำระเงิน ISO 20022 และชุดเครื่องมือโอเพนซอร์สที่แปลง CAMT / pacs.008 / MT940 / pain.001 ให้เป็นข้อมูลเชิงลึกด้านธุรกรรมที่ตรวจสอบได้ระดับคณะกรรมการ สำหรับทีมบริหารเงินสดขององค์กร</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"ความยืดหยุ่นเชิงปฏิบัติการและ DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"ความยืดหยุ่นเชิงปฏิบัติการและ DORA — แบนเนอร์หัวข้อ\""
+    ],
+    [
+      "<h3><a href=\"/th/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/th/topics/operational-resilience-dora/index.html\">ความยืดหยุ่นเชิงปฏิบัติการและ DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/th/hua-kho/operational-resilience-dora/index.html\">ความยืดหยุ่นเชิงปฏิบัติการและ DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">ความรับผิดชอบของคณะกรรมการตามมาตรา 5 ของ DORA การรวมข้อมูลความเสี่ยงตาม BCBS 239 ความเสี่ยงจากการกระจุกตัวของบุคคลที่สาม การทดสอบการถอนตัว และการควบคุมเชิงวิศวกรรมที่เปลี่ยนความยืดหยุ่นเชิงปฏิบัติการจากโครงการกำกับการปฏิบัติตามกฎเกณฑ์ให้เป็นกระดานคะแนนพร้อมยื่นต่อผู้กำกับดูแล</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"สเตเบิลคอยน์และการแปลงเป็นโทเคน\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"สเตเบิลคอยน์และการแปลงเป็นโทเคน — แบนเนอร์หัวข้อ\""
+    ],
+    [
+      "<h3><a href=\"/th/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/th/topics/stablecoins-tokenisation/index.html\">สเตเบิลคอยน์และการแปลงเป็นโทเคน</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/th/hua-kho/stablecoins-tokenisation/index.html\">สเตเบิลคอยน์และการแปลงเป็นโทเคน</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">เงินฝากที่แปลงเป็นโทเคน กองทุนตลาดเงิน โครงการนำร่องสกุลเงินดิจิทัลของธนาคารกลางระดับรายใหญ่ ผลิตภัณฑ์ BRSRV/BSTBL ของ BlackRock กฎหมาย GENIUS และทางเลือกเชิงวิศวกรรมที่ทำให้เงินที่ตั้งโปรแกรมได้ทำงานภายในงบดุลที่อยู่ภายใต้การกำกับดูแล</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"AI เชิงสร้างสรรค์และโมเดลภาษาขนาดใหญ่\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"AI เชิงสร้างสรรค์และโมเดลภาษาขนาดใหญ่ — แบนเนอร์หัวข้อ\""
+    ],
+    [
+      "<h3><a href=\"/th/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/th/topics/generative-ai-llms/index.html\">AI เชิงสร้างสรรค์และโมเดลภาษาขนาดใหญ่</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/th/hua-kho/generative-ai-llms/index.html\">AI เชิงสร้างสรรค์และโมเดลภาษาขนาดใหญ่</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">โมเดลพื้นฐาน โมเดลภาษาขนาดใหญ่แบบหลายรูปแบบ (Gemini, Gemma, Mistral, MM1) วิศวกรรมพรอมต์ และการเผยแพร่โอเพนซอร์สที่กำหนดว่าธนาคารสร้างอะไรได้บ้างภายในขอบเขตข้อมูลของตนเอง</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"AI ด้านเสียงและการพูด\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"AI ด้านเสียงและการพูด — แบนเนอร์หัวข้อ\""
+    ],
+    [
+      "<h3><a href=\"/th/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/th/topics/voice-speech-ai/index.html\">AI ด้านเสียงและการพูด</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/th/hua-kho/voice-speech-ai/index.html\">AI ด้านเสียงและการพูด</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">การโคลนเสียง การรู้จำเสียงพูดแบบเรียลไทม์ (Whisper) ผู้ช่วยเสียงสำหรับผู้บริหาร และชุดเทคโนโลยีปัญญาด้านเสียงที่กำลังปรับโฉมประสบการณ์ลูกค้าธนาคารส่วนบุคคล</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"ธรรมาภิบาลและการกำกับดูแล AI\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"ธรรมาภิบาลและการกำกับดูแล AI — แบนเนอร์หัวข้อ\""
+    ],
+    [
+      "<h3><a href=\"/th/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/th/topics/ai-governance-regulation/index.html\">ธรรมาภิบาลและการกำกับดูแล AI</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/th/hua-kho/ai-governance-regulation/index.html\">ธรรมาภิบาลและการกำกับดูแล AI</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">การปฏิบัติตามกฎหมาย AI ของสหภาพยุโรป ความเสี่ยงของโมเดลตาม SR 11-7 ความรับผิดชอบระดับคณะกรรมการ ความสามารถในการตรวจสอบกระบวนการทำงานอัตโนมัติ และกรอบการกำกับดูแล AI ในธนาคารระดับแนวหน้า</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"รางการชำระเงินรายใหญ่\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"รางการชำระเงินรายใหญ่ — แบนเนอร์หัวข้อ\""
+    ],
+    [
+      "<h3><a href=\"/th/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/th/topics/wholesale-payments-rails/index.html\">รางการชำระเงินรายใหญ่</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/th/hua-kho/wholesale-payments-rails/index.html\">รางการชำระเงินรายใหญ่</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">กลยุทธ์หลายรางครอบคลุมบัตร การโอนระหว่างบัญชี RTP FedNow โอเพนแบงกิ้ง และช่องทางสเตเบิลคอยน์ เศรษฐศาสตร์ของธุรกรรมรายใหญ่ ความเป็นที่สุดของการชำระดุล และแบบจำลองความเป็นอะตอมข้ามพรมแดนของโครงการ Agorá ของ BIS</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>การเข้ารหัสและความยืดหยุ่น</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">การเข้ารหัสและความยืดหยุ่น</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">การย้ายสู่ยุคหลังควอนตัม ความยืดหยุ่นเชิงปฏิบัติการระดับ DORA และกรอบธรรมาภิบาล AI ในบริการทางการเงิน</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>การชำระเงินและเงินตรา</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">การชำระเงินและเงินตรา</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">การย้ายสู่ ISO 20022 การชำระดุลรายใหญ่ สเตเบิลคอยน์ เงินฝากที่แปลงเป็นโทเคน และงานบริหารเงินสดขององค์กรที่อยู่รอบ ๆ</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>AI และคลาวด์</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI และคลาวด์</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">AI ประยุกต์ ระบบเชิงเอเจนต์ โมเดลเชิงสร้างสรรค์ AI ด้านเสียงและการพูด และแพลตฟอร์มธนาคารแบบคลาวด์เนทีฟที่รองรับสิ่งเหล่านี้</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>โอเพนซอร์สและงานฝีมือ</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">โอเพนซอร์สและงานฝีมือ</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">ไลบรารี Rust องค์ประกอบพื้นฐานของบล็อกเชน และวินัยทางวิศวกรรมโอเพนซอร์สที่อยู่เบื้องหลัง</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">สี่เสาหลัก สิบสี่กลุ่มหัวข้อ ทุกบทความที่ระบุวันที่ เลือกเส้นทางหนึ่งแล้วตามไปตลอดคลังบทความ</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">เสาหลัก</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">เสาหลัก</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">กลุ่มหัวข้อ</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">บทความที่จัดทำดัชนี</span>"
     ]
   ]
 }

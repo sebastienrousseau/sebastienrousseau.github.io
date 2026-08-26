@@ -19,5 +19,68 @@
   "blockchain-digital-assets": {
     "title": "Blockchain & digitale activa",
     "lede": "Blockchain en digitale activa: tokenisatie, ERC-20, stablecoins, infrastructuur voor cryptovaluta en het regelgevingskader dat deze vormt."
-  }
+  },
+  "cloud-native-banking": {
+    "title": "Cloud-native bankieren",
+    "lede": "Op Kubernetes gebaseerde platform engineering voor gereguleerde instellingen: DORA-geteste operationele weerbaarheid, convergentie van virtuele machines en containers, soevereine cloud, exitstrategie en de architectuur waarmee banken kritieke diensten onder toezicht uitrollen."
+  },
+  "agentic-ai-banking": {
+    "title": "Agentische AI in het bankwezen",
+    "lede": "Control planes voor agenten, deterministische semantische routering, OPA-beleidspoorten, onveranderlijke WORM-auditlogboeken en de modelrisicoblik van SR 11-7 / SS1/23 die autonome workflows omzet in toezichtklaar bewijsmateriaal."
+  },
+  "treasury-automation": {
+    "title": "Treasury-automatisering",
+    "lede": "Programmeerbare liquiditeit, autonome treasury, ISO 20022-betaalengines en de opensource-toolkits die CAMT / pacs.008 / MT940 / pain.001 omzetten in controleerbare transactie-intelligentie op bestuursniveau voor corporate treasury-teams."
+  },
+  "operational-resilience-dora": {
+    "title": "Operationele weerbaarheid en DORA",
+    "lede": "Bestuursverantwoordelijkheid onder DORA artikel 5, risicodata-aggregatie volgens BCBS 239, concentratierisico bij derden, exittests en de technische beheersmaatregelen die operationele weerbaarheid veranderen van een complianceproject in een toezichtklaar scorebord."
+  },
+  "stablecoins-tokenisation": {
+    "title": "Stablecoins en tokenisatie",
+    "lede": "Getokeniseerde deposito's, geldmarktfondsen, wholesale-CBDC-pilots, BlackRocks BRSRV/BSTBL, de GENIUS Act en de technische keuzes waarmee programmeerbaar geld werkt binnen gereguleerde balansen."
+  },
+  "generative-ai-llms": {
+    "title": "Generatieve AI en LLM's",
+    "lede": "Foundation models, multimodale LLM's (Gemini, Gemma, Mistral, MM1), prompt engineering en de opensource-uitgaven die bepalen wat banken binnen hun eigen dataperimeter kunnen bouwen."
+  },
+  "voice-speech-ai": {
+    "title": "Spraak- en stem-AI",
+    "lede": "Stemklonen, spraakherkenning in realtime (Whisper), stemassistenten voor bestuurders en de audio-intelligencestack die de klantervaring in private banking hervormt."
+  },
+  "ai-governance-regulation": {
+    "title": "AI-governance en regelgeving",
+    "lede": "Conformiteit met de EU-AI-verordening, modelrisico volgens SR 11-7, verantwoordelijkheid op bestuursniveau, controleerbaarheid van autonome workflows en het regelgevingskader voor AI binnen grootbanken."
+  },
+  "wholesale-payments-rails": {
+    "title": "Wholesale-betaalrails",
+    "lede": "Multi-railstrategie over kaarten, A2A, RTP, FedNow, open banking en stablecoin-corridors. Wholesale-economie, finaliteit van afwikkeling en het grensoverschrijdende atomiciteitsmodel van BIS Project Agorá."
+  },
+  "_pillars": [
+    {
+      "name": "Cryptografie en weerbaarheid",
+      "lede": "Post-kwantummigratie, operationele weerbaarheid op DORA-niveau en het governancekader rond AI in financiële dienstverlening."
+    },
+    {
+      "name": "Betalingen en geld",
+      "lede": "ISO 20022-migratie, wholesale-afwikkeling, stablecoins, getokeniseerde deposito's en de corporate treasury-functie daaromheen."
+    },
+    {
+      "name": "AI en cloud",
+      "lede": "Toegepaste AI, agentische systemen, generatieve modellen, spraak- en stem-AI, en de cloud-native bankplatformen die ze draaien."
+    },
+    {
+      "name": "Opensource en vakmanschap",
+      "lede": "Rust-bibliotheken, blockchain-primitieven en de opensource-engineeringdiscipline erachter."
+    }
+  ],
+  "_hub_lede": "Vier pijlers, veertien themaclusters, elk gedateerd artikel. Kies een draad en volg die door het archief.",
+  "_banner_word": "themabanner",
+  "_kpi": [
+    "Pijlers",
+    "Themaclusters",
+    "Geïndexeerde artikelen"
+  ],
+  "_article_count": "{n} artikel(en)",
+  "_pillar_kicker": "PIJLER"
 }

@@ -111,7 +111,7 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 статья(-и)</p>"
+      "Статей: \\1</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
@@ -912,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Публикации переехали в раздел «Исследования»</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Облачный банкинг\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Облачный банкинг — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/ru/topics/cloud-native-banking/index.html\">Облачный банкинг</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/ru/temy/cloud-native-banking/index.html\">Облачный банкинг</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Платформенная инженерия на базе Kubernetes для поднадзорных организаций: операционная устойчивость, проверенная по DORA, сближение виртуальных машин и контейнеров, суверенное облако, стратегия выхода и архитектура, позволяющая банкам выпускать критически важные сервисы под надзором.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"Агентный ИИ в банковском деле\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"Агентный ИИ в банковском деле — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/ru/topics/agentic-ai-banking/index.html\">Агентный ИИ в банковском деле</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/ru/temy/agentic-ai-banking/index.html\">Агентный ИИ в банковском деле</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Плоскости управления агентами, детерминированная семантическая маршрутизация, политические шлюзы OPA, неизменяемые журналы аудита WORM и оптика модельного риска SR 11-7 / SS1/23, превращающая автономные рабочие процессы в доказательства, готовые для надзорного органа.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Автоматизация казначейства\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Автоматизация казначейства — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/ru/topics/treasury-automation/index.html\">Автоматизация казначейства</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/ru/temy/treasury-automation/index.html\">Автоматизация казначейства</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Программируемая ликвидность, автономное казначейство, платёжные движки ISO 20022 и открытые наборы инструментов, превращающие CAMT / pacs.008 / MT940 / pain.001 в проверяемую транзакционную аналитику уровня совета директоров для корпоративных казначейских команд.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Операционная устойчивость и DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Операционная устойчивость и DORA — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/ru/topics/operational-resilience-dora/index.html\">Операционная устойчивость и DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/ru/temy/operational-resilience-dora/index.html\">Операционная устойчивость и DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Ответственность совета директоров по статье 5 DORA, агрегация данных о рисках по BCBS 239, риск концентрации у третьих сторон, тестирование выхода и инженерные средства контроля, превращающие операционную устойчивость из проекта комплаенса в готовое для надзора табло показателей.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Стейблкоины и токенизация\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Стейблкоины и токенизация — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/ru/topics/stablecoins-tokenisation/index.html\">Стейблкоины и токенизация</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/ru/temy/stablecoins-tokenisation/index.html\">Стейблкоины и токенизация</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Токенизированные депозиты, фонды денежного рынка, пилоты оптовых цифровых валют центральных банков, BRSRV/BSTBL от BlackRock, закон GENIUS и инженерные решения, благодаря которым программируемые деньги работают внутри поднадзорных балансов.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"Генеративный ИИ и большие языковые модели\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"Генеративный ИИ и большие языковые модели — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/ru/topics/generative-ai-llms/index.html\">Генеративный ИИ и большие языковые модели</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/ru/temy/generative-ai-llms/index.html\">Генеративный ИИ и большие языковые модели</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Базовые модели, мультимодальные большие языковые модели (Gemini, Gemma, Mistral, MM1), инженерия промптов и открытые релизы, определяющие, что банки могут строить внутри собственного периметра данных.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"Голосовой и речевой ИИ\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"Голосовой и речевой ИИ — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/ru/topics/voice-speech-ai/index.html\">Голосовой и речевой ИИ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/ru/temy/voice-speech-ai/index.html\">Голосовой и речевой ИИ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Клонирование голоса, распознавание речи в реальном времени (Whisper), голосовые ассистенты для руководителей и стек аудиоаналитики, меняющий клиентский опыт в частном банковском обслуживании.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"Управление и регулирование ИИ\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"Управление и регулирование ИИ — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/ru/topics/ai-governance-regulation/index.html\">Управление и регулирование ИИ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/ru/temy/ai-governance-regulation/index.html\">Управление и регулирование ИИ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Соответствие Регламенту ЕС об ИИ, модельный риск по SR 11-7, ответственность на уровне совета директоров, проверяемость автономных рабочих процессов и регуляторная рамка ИИ в банках первого эшелона.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Оптовые платёжные рельсы\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Оптовые платёжные рельсы — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/ru/topics/wholesale-payments-rails/index.html\">Оптовые платёжные рельсы</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/ru/temy/wholesale-payments-rails/index.html\">Оптовые платёжные рельсы</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Мультирельсовая стратегия, охватывающая карты, A2A, RTP, FedNow, открытый банкинг и стейблкоин-коридоры. Экономика опта, окончательность расчётов и модель трансграничной атомарности проекта Agorá БМР.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Криптография и устойчивость</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Криптография и устойчивость</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Постквантовая миграция, операционная устойчивость уровня DORA и рамка управления ИИ в финансовых услугах.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Платежи и деньги</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Платежи и деньги</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Миграция на ISO 20022, оптовые расчёты, стейблкоины, токенизированные депозиты и корпоративная казначейская функция вокруг них.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>ИИ и облако</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">ИИ и облако</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Прикладной ИИ, агентные системы, генеративные модели, голосовой и речевой ИИ, а также облачные банковские платформы, где они работают.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Открытый код и ремесло</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Открытый код и ремесло</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Библиотеки на Rust, блокчейн-примитивы и стоящая за ними инженерная дисциплина открытого кода.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Четыре опоры, четырнадцать тематических кластеров, каждая датированная статья. Выберите нить и проследите её через архив.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">ОПОРА</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Опоры</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Тематические кластеры</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Проиндексированные статьи</span>"
     ]
   ]
 }

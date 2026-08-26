@@ -110,7 +110,7 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 கட்டுரை(கள்)</p>"
+      "\\1 கட்டுரைகள்</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
@@ -682,7 +682,7 @@
     ],
     [
       ">Have an idea\\? Let's build it\\.<",
-      "<>ஒரு யோசனை உள்ளதா? அதை ஒன்றாக உருவாக்குவோம்.<"
+      ">ஒரு யோசனை உள்ளதா? அதை ஒன்றாக உருவாக்குவோம்.<"
     ],
     [
       ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
@@ -911,6 +911,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>வெளியீடுகள் ஆராய்ச்சி பிரிவுக்கு மாற்றப்பட்டுள்ளன</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"கிளவுட்-நேட்டிவ் வங்கியியல்\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"கிளவுட்-நேட்டிவ் வங்கியியல் — தலைப்புச் சுவரொட்டி\""
+    ],
+    [
+      "<h3><a href=\"/ta/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/ta/topics/cloud-native-banking/index.html\">கிளவுட்-நேட்டிவ் வங்கியியல்</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/ta/topics/cloud-native-banking/index.html\">கிளவுட்-நேட்டிவ் வங்கியியல்</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">ஒழுங்குபடுத்தப்பட்ட நிறுவனங்களுக்கான Kubernetes அடிப்படையிலான தளப் பொறியியல்: DORA அளவில் சோதிக்கப்பட்ட செயல்பாட்டு நெகிழ்திறன், மெய்நிகர் இயந்திரங்களும் கொள்கலன்களும் ஒன்றிணைதல், இறையாண்மைக் கிளவுட், வெளியேறும் உத்தி, மேற்பார்வையின் கீழ் முக்கியச் சேவைகளை வங்கிகள் வெளியிட உதவும் கட்டமைப்பு.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"வங்கியியலில் முகவர்சார் செயற்கை நுண்ணறிவு\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"வங்கியியலில் முகவர்சார் செயற்கை நுண்ணறிவு — தலைப்புச் சுவரொட்டி\""
+    ],
+    [
+      "<h3><a href=\"/ta/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/ta/topics/agentic-ai-banking/index.html\">வங்கியியலில் முகவர்சார் செயற்கை நுண்ணறிவு</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/ta/topics/agentic-ai-banking/index.html\">வங்கியியலில் முகவர்சார் செயற்கை நுண்ணறிவு</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">முகவர் கட்டுப்பாட்டுத் தளங்கள், நிர்ணயவாத பொருண்மை வழிச்செலுத்தல், OPA கொள்கை வாயில்கள், மாற்ற இயலாத WORM தணிக்கைப் பதிவுகள், மற்றும் தன்னாட்சி பணிப்பாய்வுகளை மேற்பார்வையாளருக்குச் சமர்ப்பிக்கத்தக்க சான்றாக மாற்றும் SR 11-7 / SS1/23 மாதிரி-இடர் நோக்கு.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"கருவூல தன்னியக்கம்\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"கருவூல தன்னியக்கம் — தலைப்புச் சுவரொட்டி\""
+    ],
+    [
+      "<h3><a href=\"/ta/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/ta/topics/treasury-automation/index.html\">கருவூல தன்னியக்கம்</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/ta/topics/treasury-automation/index.html\">கருவூல தன்னியக்கம்</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">நிரல்படுத்தத்தக்க பணப்புழக்கம், தன்னாட்சி கருவூலம், ISO 20022 கட்டண இயந்திரங்கள், மேலும் CAMT / pacs.008 / MT940 / pain.001 ஆவணங்களை நிறுவனக் கருவூலக் குழுக்களுக்குத் தணிக்கைக்குரிய, இயக்குநர் குழு தரமான பரிவர்த்தனை நுண்ணறிவாக மாற்றும் திறந்த மூலக் கருவித்தொகுப்புகள்.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"செயல்பாட்டு நெகிழ்திறனும் DORA-வும்\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"செயல்பாட்டு நெகிழ்திறனும் DORA-வும் — தலைப்புச் சுவரொட்டி\""
+    ],
+    [
+      "<h3><a href=\"/ta/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/ta/topics/operational-resilience-dora/index.html\">செயல்பாட்டு நெகிழ்திறனும் DORA-வும்</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/ta/topics/operational-resilience-dora/index.html\">செயல்பாட்டு நெகிழ்திறனும் DORA-வும்</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">DORA பிரிவு 5-ன் கீழ் இயக்குநர் குழுவின் பொறுப்புக்கூறல், BCBS 239 இடர்-தரவுத் திரட்டல், மூன்றாம் தரப்புச் செறிவு இடர், வெளியேறும் சோதனை, மேலும் செயல்பாட்டு நெகிழ்திறனை இணக்கத் திட்டத்திலிருந்து மேற்பார்வையாளருக்குத் தயாரான மதிப்பெண் பலகையாக மாற்றும் பொறியியல் கட்டுப்பாடுகள்.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"நிலைநாணயங்களும் டோக்கனாக்கமும்\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"நிலைநாணயங்களும் டோக்கனாக்கமும் — தலைப்புச் சுவரொட்டி\""
+    ],
+    [
+      "<h3><a href=\"/ta/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/ta/topics/stablecoins-tokenisation/index.html\">நிலைநாணயங்களும் டோக்கனாக்கமும்</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/ta/topics/stablecoins-tokenisation/index.html\">நிலைநாணயங்களும் டோக்கனாக்கமும்</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">டோக்கனாக்கப்பட்ட வைப்புகள், பணச் சந்தை நிதிகள், மொத்த மத்திய வங்கி இலக்கமுறை நாணயச் சோதனைத் திட்டங்கள், BlackRock-ன் BRSRV/BSTBL, GENIUS சட்டம், மேலும் ஒழுங்குபடுத்தப்பட்ட இருப்பு நிலைக் குறிப்புகளுக்குள் நிரல்படுத்தத்தக்க பணம் இயங்கச் செய்யும் பொறியியல் தேர்வுகள்.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"உருவாக்க செயற்கை நுண்ணறிவும் பெரும் மொழி மாதிரிகளும்\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"உருவாக்க செயற்கை நுண்ணறிவும் பெரும் மொழி மாதிரிகளும் — தலைப்புச் சுவரொட்டி\""
+    ],
+    [
+      "<h3><a href=\"/ta/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/ta/topics/generative-ai-llms/index.html\">உருவாக்க செயற்கை நுண்ணறிவும் பெரும் மொழி மாதிரிகளும்</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/ta/topics/generative-ai-llms/index.html\">உருவாக்க செயற்கை நுண்ணறிவும் பெரும் மொழி மாதிரிகளும்</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">அடித்தள மாதிரிகள், பல்முறை பெரும் மொழி மாதிரிகள் (Gemini, Gemma, Mistral, MM1), தூண்டுதல் பொறியியல், மேலும் வங்கிகள் தமது சொந்தத் தரவு எல்லைக்குள் எதைக் கட்டமைக்க முடியும் என்பதைத் தீர்மானிக்கும் திறந்த மூல வெளியீடுகள்.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"குரல் மற்றும் பேச்சு செயற்கை நுண்ணறிவு\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"குரல் மற்றும் பேச்சு செயற்கை நுண்ணறிவு — தலைப்புச் சுவரொட்டி\""
+    ],
+    [
+      "<h3><a href=\"/ta/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/ta/topics/voice-speech-ai/index.html\">குரல் மற்றும் பேச்சு செயற்கை நுண்ணறிவு</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/ta/topics/voice-speech-ai/index.html\">குரல் மற்றும் பேச்சு செயற்கை நுண்ணறிவு</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">குரல் நகலாக்கம், நிகழ்நேரப் பேச்சு அடையாளம் (Whisper), உயர் நிர்வாகிகளுக்கான குரல் உதவியாளர்கள், மேலும் தனியார் வங்கியியல் வாடிக்கையாளர் அனுபவத்தை மறுவடிவமைக்கும் ஒலி-நுண்ணறிவு அடுக்கு.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"செயற்கை நுண்ணறிவு ஆளுகையும் ஒழுங்குமுறையும்\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"செயற்கை நுண்ணறிவு ஆளுகையும் ஒழுங்குமுறையும் — தலைப்புச் சுவரொட்டி\""
+    ],
+    [
+      "<h3><a href=\"/ta/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/ta/topics/ai-governance-regulation/index.html\">செயற்கை நுண்ணறிவு ஆளுகையும் ஒழுங்குமுறையும்</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/ta/topics/ai-governance-regulation/index.html\">செயற்கை நுண்ணறிவு ஆளுகையும் ஒழுங்குமுறையும்</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">ஐரோப்பிய ஒன்றியச் செயற்கை நுண்ணறிவுச் சட்ட இணக்கம், SR 11-7 மாதிரி இடர், இயக்குநர் குழு நிலைப் பொறுப்புக்கூறல், தன்னாட்சி பணிப்பாய்வுகளின் தணிக்கைத்திறன், மேலும் முதல் நிலை வங்கிகளுக்குள் செயற்கை நுண்ணறிவின் ஒழுங்குமுறைச் சட்டகம்.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"மொத்த கட்டண தண்டவாளங்கள்\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"மொத்த கட்டண தண்டவாளங்கள் — தலைப்புச் சுவரொட்டி\""
+    ],
+    [
+      "<h3><a href=\"/ta/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/ta/topics/wholesale-payments-rails/index.html\">மொத்த கட்டண தண்டவாளங்கள்</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/ta/topics/wholesale-payments-rails/index.html\">மொத்த கட்டண தண்டவாளங்கள்</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">அட்டைகள், கணக்கிலிருந்து கணக்கு பரிமாற்றம், RTP, FedNow, திறந்த வங்கியியல் மற்றும் நிலைநாணய வழித்தடங்கள் முழுவதும் பரவும் பல-தண்டவாள உத்தி. மொத்தப் பொருளியல், தீர்வின் இறுதித்தன்மை, மேலும் BIS-ன் Agorá திட்டத்தின் எல்லை கடந்த பிரிக்கவியலாத் தன்மை மாதிரி.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>மறையியலும் நெகிழ்திறனும்</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">மறையியலும் நெகிழ்திறனும்</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">பிந்தைய குவாண்டம் இடமாற்றம், DORA நிலை செயல்பாட்டு நெகிழ்திறன், மேலும் நிதிச் சேவைகளில் செயற்கை நுண்ணறிவு ஆளுகைச் சட்டகம்.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>கட்டணங்களும் பணமும்</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">கட்டணங்களும் பணமும்</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">ISO 20022 இடமாற்றம், மொத்தத் தீர்வு, நிலைநாணயங்கள், டோக்கனாக்கப்பட்ட வைப்புகள், மேலும் அவற்றைச் சுற்றியுள்ள நிறுவனக் கருவூலப் பணி.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>செயற்கை நுண்ணறிவும் கிளவுட்டும்</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">செயற்கை நுண்ணறிவும் கிளவுட்டும்</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">பயன்பாட்டு செயற்கை நுண்ணறிவு, முகவர்சார் அமைப்புகள், உருவாக்க மாதிரிகள், குரல் மற்றும் பேச்சு செயற்கை நுண்ணறிவு, மேலும் அவற்றை இயக்கும் கிளவுட்-நேட்டிவ் வங்கித் தளங்கள்.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>திறந்த மூலமும் கைவினைத்திறனும்</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">திறந்த மூலமும் கைவினைத்திறனும்</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Rust நூலகங்கள், தொகுதிச் சங்கிலி அடிப்படைக் கூறுகள், மேலும் அவற்றின் பின்னால் உள்ள திறந்த மூலப் பொறியியல் ஒழுங்கு.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">நான்கு தூண்கள், பதினான்கு தலைப்புக் கொத்துகள், தேதியிட்ட ஒவ்வொரு கட்டுரையும். ஒரு இழையைத் தேர்ந்தெடுத்து ஆவணக் காப்பகம் முழுவதும் அதைப் பின்தொடருங்கள்.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">தூண்</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">தூண்கள்</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">தலைப்புக் கொத்துகள்</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">அட்டவணைப்படுத்தப்பட்ட கட்டுரைகள்</span>"
     ]
   ]
 }

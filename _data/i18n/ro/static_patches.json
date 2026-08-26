@@ -912,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Publicațiile s-au mutat la Cercetare</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Banking cloud-native\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Banking cloud-native — banner de subiect\""
+    ],
+    [
+      "<h3><a href=\"/ro/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/ro/topics/cloud-native-banking/index.html\">Banking cloud-native</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/ro/subiecte/cloud-native-banking/index.html\">Banking cloud-native</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Inginerie de platformă bazată pe Kubernetes pentru instituții reglementate: reziliență operațională testată conform DORA, convergența mașinilor virtuale cu containerele, cloud suveran, strategie de ieșire și arhitectura care permite băncilor să livreze servicii critice sub supraveghere.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"IA agentică în bănci\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"IA agentică în bănci — banner de subiect\""
+    ],
+    [
+      "<h3><a href=\"/ro/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/ro/topics/agentic-ai-banking/index.html\">IA agentică în bănci</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/ro/subiecte/agentic-ai-banking/index.html\">IA agentică în bănci</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Planuri de control pentru agenți, rutare semantică deterministă, porți de politici OPA, jurnale de audit WORM imuabile și perspectiva riscului de model SR 11-7 / SS1/23 care transformă fluxurile autonome în probe pregătite pentru supraveghetor.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Automatizarea trezoreriei\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Automatizarea trezoreriei — banner de subiect\""
+    ],
+    [
+      "<h3><a href=\"/ro/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/ro/topics/treasury-automation/index.html\">Automatizarea trezoreriei</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/ro/subiecte/treasury-automation/index.html\">Automatizarea trezoreriei</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Lichiditate programabilă, trezorerie autonomă, motoare de plăți ISO 20022 și seturile de instrumente open-source care transformă CAMT / pacs.008 / MT940 / pain.001 în inteligență tranzacțională auditabilă, la nivel de consiliu, pentru echipele de trezorerie corporativă.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Reziliență operațională și DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Reziliență operațională și DORA — banner de subiect\""
+    ],
+    [
+      "<h3><a href=\"/ro/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/ro/topics/operational-resilience-dora/index.html\">Reziliență operațională și DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/ro/subiecte/operational-resilience-dora/index.html\">Reziliență operațională și DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Responsabilitatea consiliului conform articolului 5 din DORA, agregarea datelor de risc BCBS 239, riscul de concentrare la terți, testarea ieșirii și controalele inginerești care transformă reziliența operațională dintr-un proiect de conformitate într-un tablou de bord pregătit pentru supraveghetor.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Stablecoin-uri și tokenizare\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Stablecoin-uri și tokenizare — banner de subiect\""
+    ],
+    [
+      "<h3><a href=\"/ro/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/ro/topics/stablecoins-tokenisation/index.html\">Stablecoin-uri și tokenizare</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/ro/subiecte/stablecoins-tokenisation/index.html\">Stablecoin-uri și tokenizare</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Depozite tokenizate, fonduri de piață monetară, proiecte-pilot de CBDC en gros, BRSRV/BSTBL de la BlackRock, legea GENIUS și alegerile inginerești care fac banii programabili să funcționeze în bilanțuri reglementate.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"IA generativă și LLM-uri\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"IA generativă și LLM-uri — banner de subiect\""
+    ],
+    [
+      "<h3><a href=\"/ro/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/ro/topics/generative-ai-llms/index.html\">IA generativă și LLM-uri</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/ro/subiecte/generative-ai-llms/index.html\">IA generativă și LLM-uri</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Modele fundamentale, LLM-uri multimodale (Gemini, Gemma, Mistral, MM1), ingineria promptului și lansările open-source care definesc ce pot construi băncile în propriul perimetru de date.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"IA vocală și de recunoaștere a vorbirii\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"IA vocală și de recunoaștere a vorbirii — banner de subiect\""
+    ],
+    [
+      "<h3><a href=\"/ro/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/ro/topics/voice-speech-ai/index.html\">IA vocală și de recunoaștere a vorbirii</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/ro/subiecte/voice-speech-ai/index.html\">IA vocală și de recunoaștere a vorbirii</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Clonarea vocii, recunoașterea vorbirii în timp real (Whisper), asistenți vocali pentru directori și stiva de inteligență audio care remodelează experiența clientului în private banking.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"Guvernanța și reglementarea IA\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"Guvernanța și reglementarea IA — banner de subiect\""
+    ],
+    [
+      "<h3><a href=\"/ro/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/ro/topics/ai-governance-regulation/index.html\">Guvernanța și reglementarea IA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/ro/subiecte/ai-governance-regulation/index.html\">Guvernanța și reglementarea IA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Conformitatea cu Regulamentul european privind IA, riscul de model SR 11-7, responsabilitatea la nivel de consiliu, auditabilitatea fluxurilor autonome și cadrul de reglementare al IA în băncile de prim rang.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Rețele de plăți en gros\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Rețele de plăți en gros — banner de subiect\""
+    ],
+    [
+      "<h3><a href=\"/ro/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/ro/topics/wholesale-payments-rails/index.html\">Rețele de plăți en gros</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/ro/subiecte/wholesale-payments-rails/index.html\">Rețele de plăți en gros</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Strategie multi-rețea care acoperă cardurile, A2A, RTP, FedNow, open banking și coridoarele în stablecoin. Economia en gros, caracterul definitiv al decontării și modelul de atomicitate transfrontalieră din Proiectul Agorá al BRI.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Criptografie și reziliență</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Criptografie și reziliență</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Migrarea post-cuantică, reziliența operațională la nivel DORA și cadrul de guvernanță a IA în serviciile financiare.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Plăți și bani</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Plăți și bani</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Migrarea la ISO 20022, decontarea en gros, stablecoin-urile, depozitele tokenizate și funcția de trezorerie corporativă din jurul lor.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>IA și cloud</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">IA și cloud</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">IA aplicată, sisteme agentice, modele generative, IA vocală și platformele bancare cloud-native care le găzduiesc.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Open source și meșteșug</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open source și meșteșug</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Biblioteci Rust, primitive blockchain și disciplina de inginerie open-source din spatele lor.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Patru piloni, paisprezece grupuri tematice, fiecare articol datat. Alegeți un fir și urmăriți-l prin arhivă.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">PILON</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Piloni</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Grupuri tematice</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Articole indexate</span>"
     ]
   ]
 }

@@ -912,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>As publicações mudaram para Pesquisa</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Banking nativo em nuvem\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Banking nativo em nuvem — banner do tema\""
+    ],
+    [
+      "<h3><a href=\"/pt-br/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/pt-br/topics/cloud-native-banking/index.html\">Banking nativo em nuvem</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/cloud-native-banking/index.html\">Banking nativo em nuvem</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Engenharia de plataforma baseada em Kubernetes para instituições reguladas: resiliência operacional testada segundo a DORA, convergência entre máquinas virtuais e contêineres, nuvem soberana, estratégia de saída e a arquitetura que permite aos bancos entregar serviços críticos sob supervisão.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"IA agêntica no setor bancário\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"IA agêntica no setor bancário — banner do tema\""
+    ],
+    [
+      "<h3><a href=\"/pt-br/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/pt-br/topics/agentic-ai-banking/index.html\">IA agêntica no setor bancário</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/agentic-ai-banking/index.html\">IA agêntica no setor bancário</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Planos de controle de agentes, roteamento semântico determinístico, portões de política OPA, registros de auditoria WORM imutáveis e a lente de risco de modelo SR 11-7 / SS1/23 que transforma fluxos autônomos em evidências prontas para o supervisor.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Automação de tesouraria\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Automação de tesouraria — banner do tema\""
+    ],
+    [
+      "<h3><a href=\"/pt-br/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/pt-br/topics/treasury-automation/index.html\">Automação de tesouraria</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/treasury-automation/index.html\">Automação de tesouraria</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Liquidez programável, tesouraria autônoma, motores de pagamento ISO 20022 e os kits de ferramentas de código aberto que transformam CAMT / pacs.008 / MT940 / pain.001 em inteligência de transações auditável e de nível de conselho para equipes de tesouraria corporativa.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Resiliência operacional e DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Resiliência operacional e DORA — banner do tema\""
+    ],
+    [
+      "<h3><a href=\"/pt-br/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/pt-br/topics/operational-resilience-dora/index.html\">Resiliência operacional e DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/operational-resilience-dora/index.html\">Resiliência operacional e DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Responsabilidade do conselho segundo o artigo 5º da DORA, agregação de dados de risco BCBS 239, risco de concentração em terceiros, testes de saída e os controles de engenharia que transformam a resiliência operacional de um projeto de conformidade em um painel pronto para o supervisor.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Stablecoins e tokenização\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Stablecoins e tokenização — banner do tema\""
+    ],
+    [
+      "<h3><a href=\"/pt-br/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/pt-br/topics/stablecoins-tokenisation/index.html\">Stablecoins e tokenização</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/stablecoins-tokenisation/index.html\">Stablecoins e tokenização</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Depósitos tokenizados, fundos de mercado monetário, pilotos de CBDC de atacado, BRSRV/BSTBL da BlackRock, a Lei GENIUS e as escolhas de engenharia por trás de fazer o dinheiro programável funcionar dentro de balanços regulados.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"IA generativa e LLMs\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"IA generativa e LLMs — banner do tema\""
+    ],
+    [
+      "<h3><a href=\"/pt-br/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/pt-br/topics/generative-ai-llms/index.html\">IA generativa e LLMs</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/generative-ai-llms/index.html\">IA generativa e LLMs</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Modelos fundacionais, LLMs multimodais (Gemini, Gemma, Mistral, MM1), engenharia de prompts e os lançamentos de código aberto que moldam o que os bancos podem construir dentro do próprio perímetro de dados.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"IA de voz e fala\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"IA de voz e fala — banner do tema\""
+    ],
+    [
+      "<h3><a href=\"/pt-br/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/pt-br/topics/voice-speech-ai/index.html\">IA de voz e fala</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/voice-speech-ai/index.html\">IA de voz e fala</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Clonagem de voz, reconhecimento de fala em tempo real (Whisper), assistentes de voz para executivos e a pilha de inteligência de áudio que está remodelando a experiência do cliente no private banking.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"Governança e regulação da IA\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"Governança e regulação da IA — banner do tema\""
+    ],
+    [
+      "<h3><a href=\"/pt-br/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/pt-br/topics/ai-governance-regulation/index.html\">Governança e regulação da IA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/ai-governance-regulation/index.html\">Governança e regulação da IA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Conformidade com o Regulamento Europeu de IA, risco de modelo SR 11-7, responsabilidade no nível do conselho, auditabilidade de fluxos autônomos e o arcabouço regulatório da IA dentro dos bancos de primeira linha.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Trilhos de pagamentos de atacado\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Trilhos de pagamentos de atacado — banner do tema\""
+    ],
+    [
+      "<h3><a href=\"/pt-br/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/pt-br/topics/wholesale-payments-rails/index.html\">Trilhos de pagamentos de atacado</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/wholesale-payments-rails/index.html\">Trilhos de pagamentos de atacado</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Estratégia multitrilho abrangendo cartões, A2A, RTP, FedNow, open banking e corredores de stablecoin. Economia de atacado, caráter definitivo da liquidação e o modelo de atomicidade transfronteiriça do Projeto Agorá do BIS.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Criptografia e resiliência</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Criptografia e resiliência</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Migração pós-quântica, resiliência operacional no nível da DORA e o arcabouço de governança da IA em serviços financeiros.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Pagamentos e dinheiro</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Pagamentos e dinheiro</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Migração para ISO 20022, liquidação de atacado, stablecoins, depósitos tokenizados e a função de tesouraria corporativa ao redor deles.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>IA e nuvem</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">IA e nuvem</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">IA aplicada, sistemas agênticos, modelos generativos, IA de voz e fala, e as plataformas bancárias nativas em nuvem que os hospedam.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Código aberto e ofício</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Código aberto e ofício</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Bibliotecas Rust, primitivas de blockchain e a disciplina de engenharia de código aberto por trás delas.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Quatro pilares, quatorze grupos temáticos, cada artigo datado. Escolha um fio e siga-o pelo arquivo.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">PILAR</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Pilares</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Grupos temáticos</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Artigos indexados</span>"
     ]
   ]
 }

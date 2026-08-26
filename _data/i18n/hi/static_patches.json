@@ -912,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>प्रकाशन अनुसंधान खंड में स्थानांतरित हो गए हैं</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"क्लाउड-नेटिव बैंकिंग\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"क्लाउड-नेटिव बैंकिंग — विषय बैनर\""
+    ],
+    [
+      "<h3><a href=\"/hi/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/hi/topics/cloud-native-banking/index.html\">क्लाउड-नेटिव बैंकिंग</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/hi/vishay/cloud-native-banking/index.html\">क्लाउड-नेटिव बैंकिंग</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">विनियमित संस्थानों के लिए Kubernetes आधारित प्लेटफ़ॉर्म इंजीनियरिंग: DORA के अनुसार परखी गई परिचालन सहनक्षमता, वर्चुअल मशीन और कंटेनर का अभिसरण, संप्रभु क्लाउड, निकास रणनीति, और वह वास्तुकला जो बैंकों को पर्यवेक्षण के अधीन महत्वपूर्ण सेवाएँ जारी करने देती है।</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"बैंकिंग में एजेंटिक एआई\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"बैंकिंग में एजेंटिक एआई — विषय बैनर\""
+    ],
+    [
+      "<h3><a href=\"/hi/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/hi/topics/agentic-ai-banking/index.html\">बैंकिंग में एजेंटिक एआई</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/hi/vishay/agentic-ai-banking/index.html\">बैंकिंग में एजेंटिक एआई</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">एजेंट नियंत्रण तल, नियतात्मक शब्दार्थ मार्गनिर्धारण, OPA नीति द्वार, अपरिवर्तनीय WORM लेखा-परीक्षा लॉग, और SR 11-7 / SS1/23 का मॉडल-जोखिम दृष्टिकोण जो स्वायत्त कार्यप्रवाहों को पर्यवेक्षक के समक्ष प्रस्तुत करने योग्य साक्ष्य में बदल देता है।</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"ट्रेजरी स्वचालन\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"ट्रेजरी स्वचालन — विषय बैनर\""
+    ],
+    [
+      "<h3><a href=\"/hi/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/hi/topics/treasury-automation/index.html\">ट्रेजरी स्वचालन</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/hi/vishay/treasury-automation/index.html\">ट्रेजरी स्वचालन</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">प्रोग्राम योग्य तरलता, स्वायत्त ट्रेजरी, ISO 20022 भुगतान इंजन, और वे मुक्त-स्रोत उपकरण जो CAMT / pacs.008 / MT940 / pain.001 को कॉर्पोरेट ट्रेजरी टीमों के लिए लेखा-परीक्षा योग्य, निदेशक मंडल स्तर की लेनदेन बुद्धिमत्ता में बदल देते हैं।</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"परिचालन सहनक्षमता और DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"परिचालन सहनक्षमता और DORA — विषय बैनर\""
+    ],
+    [
+      "<h3><a href=\"/hi/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/hi/topics/operational-resilience-dora/index.html\">परिचालन सहनक्षमता और DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/hi/vishay/operational-resilience-dora/index.html\">परिचालन सहनक्षमता और DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">DORA अनुच्छेद 5 के अंतर्गत निदेशक मंडल की जवाबदेही, BCBS 239 जोखिम-डेटा समुच्चयन, तृतीय-पक्ष संकेंद्रण जोखिम, निकास परीक्षण, और वे इंजीनियरिंग नियंत्रण जो परिचालन सहनक्षमता को अनुपालन परियोजना से पर्यवेक्षक-योग्य स्कोरबोर्ड में बदल देते हैं।</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"स्टेबलकॉइन और टोकनीकरण\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"स्टेबलकॉइन और टोकनीकरण — विषय बैनर\""
+    ],
+    [
+      "<h3><a href=\"/hi/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/hi/topics/stablecoins-tokenisation/index.html\">स्टेबलकॉइन और टोकनीकरण</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/hi/vishay/stablecoins-tokenisation/index.html\">स्टेबलकॉइन और टोकनीकरण</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">टोकनीकृत जमा, मुद्रा बाज़ार निधियाँ, थोक केंद्रीय बैंक डिजिटल मुद्रा के प्रायोगिक कार्यक्रम, BlackRock के BRSRV/BSTBL, GENIUS अधिनियम, और वे इंजीनियरिंग निर्णय जो प्रोग्राम योग्य मुद्रा को विनियमित तुलनपत्रों के भीतर काम करने लायक बनाते हैं।</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"जनरेटिव एआई और वृहद भाषा मॉडल\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"जनरेटिव एआई और वृहद भाषा मॉडल — विषय बैनर\""
+    ],
+    [
+      "<h3><a href=\"/hi/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/hi/topics/generative-ai-llms/index.html\">जनरेटिव एआई और वृहद भाषा मॉडल</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/hi/vishay/generative-ai-llms/index.html\">जनरेटिव एआई और वृहद भाषा मॉडल</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">आधारभूत मॉडल, बहुविध वृहद भाषा मॉडल (Gemini, Gemma, Mistral, MM1), प्रॉम्प्ट इंजीनियरिंग, और वे मुक्त-स्रोत विमोचन जो तय करते हैं कि बैंक अपने डेटा परिमाप के भीतर क्या बना सकते हैं।</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"वाणी और भाषण एआई\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"वाणी और भाषण एआई — विषय बैनर\""
+    ],
+    [
+      "<h3><a href=\"/hi/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/hi/topics/voice-speech-ai/index.html\">वाणी और भाषण एआई</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/hi/vishay/voice-speech-ai/index.html\">वाणी और भाषण एआई</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">आवाज़ की प्रतिकृति, वास्तविक समय भाषण पहचान (Whisper), शीर्ष प्रबंधन के लिए आवाज़ सहायक, और वह ऑडियो-बुद्धिमत्ता स्टैक जो निजी बैंकिंग के ग्राहक अनुभव को नए सिरे से गढ़ रहा है।</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"एआई अभिशासन और विनियमन\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"एआई अभिशासन और विनियमन — विषय बैनर\""
+    ],
+    [
+      "<h3><a href=\"/hi/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/hi/topics/ai-governance-regulation/index.html\">एआई अभिशासन और विनियमन</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/hi/vishay/ai-governance-regulation/index.html\">एआई अभिशासन और विनियमन</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">यूरोपीय संघ के एआई अधिनियम का अनुपालन, SR 11-7 मॉडल जोखिम, निदेशक मंडल स्तर की जवाबदेही, स्वायत्त कार्यप्रवाहों की लेखा-परीक्षणीयता, और शीर्ष श्रेणी के बैंकों के भीतर एआई का विनियामक ढाँचा।</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"थोक भुगतान रेल\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"थोक भुगतान रेल — विषय बैनर\""
+    ],
+    [
+      "<h3><a href=\"/hi/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/hi/topics/wholesale-payments-rails/index.html\">थोक भुगतान रेल</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/hi/vishay/wholesale-payments-rails/index.html\">थोक भुगतान रेल</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">कार्ड, खाता-से-खाता अंतरण, RTP, FedNow, ओपन बैंकिंग और स्टेबलकॉइन गलियारों तक फैली बहु-रेल रणनीति। थोक अर्थशास्त्र, निपटान की अंतिमता, और BIS की Agorá परियोजना का सीमा-पार अविभाज्यता मॉडल।</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>क्रिप्टोग्राफी और सहनक्षमता</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">क्रिप्टोग्राफी और सहनक्षमता</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">उत्तर-क्वांटम संक्रमण, DORA स्तर की परिचालन सहनक्षमता, और वित्तीय सेवाओं में एआई अभिशासन का ढाँचा।</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>भुगतान और मुद्रा</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">भुगतान और मुद्रा</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">ISO 20022 संक्रमण, थोक निपटान, स्टेबलकॉइन, टोकनीकृत जमा, और इनके इर्द-गिर्द की कॉर्पोरेट ट्रेजरी भूमिका।</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>एआई और क्लाउड</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">एआई और क्लाउड</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">अनुप्रयुक्त एआई, एजेंटिक प्रणालियाँ, जनरेटिव मॉडल, वाणी और भाषण एआई, और इन्हें चलाने वाले क्लाउड-नेटिव बैंकिंग प्लेटफ़ॉर्म।</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>मुक्त स्रोत और शिल्प</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">मुक्त स्रोत और शिल्प</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Rust पुस्तकालय, ब्लॉकचेन आद्य-अवयव, और इनके पीछे का मुक्त-स्रोत इंजीनियरिंग अनुशासन।</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">चार स्तंभ, चौदह विषय समूह, हर तिथि-अंकित लेख। एक सूत्र चुनिए और उसे अभिलेखागार में आद्योपांत देखिए।</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">स्तंभ</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">स्तंभ</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">विषय समूह</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">अनुक्रमित लेख</span>"
     ]
   ]
 }

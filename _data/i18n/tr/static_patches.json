@@ -111,7 +111,7 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 makale</p>"
+      "\\1 yazı</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
@@ -912,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Yayınlar Araştırma bölümüne taşındı</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Bulut yerlisi bankacılık\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Bulut yerlisi bankacılık — konu afişi\""
+    ],
+    [
+      "<h3><a href=\"/tr/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/tr/topics/cloud-native-banking/index.html\">Bulut yerlisi bankacılık</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/tr/konular/cloud-native-banking/index.html\">Bulut yerlisi bankacılık</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Düzenlemeye tabi kurumlar için Kubernetes tabanlı platform mühendisliği: DORA ölçütlerine göre sınanmış operasyonel dayanıklılık, sanal makine ile konteyner yakınsaması, egemen bulut, çıkış stratejisi ve bankaların kritik hizmetleri denetim altında yayına almasını sağlayan mimari.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"Bankacılıkta etmen tabanlı yapay zekâ\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"Bankacılıkta etmen tabanlı yapay zekâ — konu afişi\""
+    ],
+    [
+      "<h3><a href=\"/tr/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/tr/topics/agentic-ai-banking/index.html\">Bankacılıkta etmen tabanlı yapay zekâ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/tr/konular/agentic-ai-banking/index.html\">Bankacılıkta etmen tabanlı yapay zekâ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Etmen denetim düzlemleri, belirlenimci anlamsal yönlendirme, OPA politika kapıları, değiştirilemez WORM denetim kayıtları ve özerk iş akışlarını denetime hazır kanıta dönüştüren SR 11-7 / SS1/23 model riski merceği.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Hazine otomasyonu\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Hazine otomasyonu — konu afişi\""
+    ],
+    [
+      "<h3><a href=\"/tr/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/tr/topics/treasury-automation/index.html\">Hazine otomasyonu</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/tr/konular/treasury-automation/index.html\">Hazine otomasyonu</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Programlanabilir likidite, özerk hazine, ISO 20022 ödeme motorları ve CAMT / pacs.008 / MT940 / pain.001 dosyalarını kurumsal hazine ekipleri için denetlenebilir, yönetim kuruluna sunulabilir işlem zekâsına dönüştüren açık kaynaklı araç takımları.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Operasyonel dayanıklılık ve DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Operasyonel dayanıklılık ve DORA — konu afişi\""
+    ],
+    [
+      "<h3><a href=\"/tr/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/tr/topics/operational-resilience-dora/index.html\">Operasyonel dayanıklılık ve DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/tr/konular/operational-resilience-dora/index.html\">Operasyonel dayanıklılık ve DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">DORA 5. madde kapsamında yönetim kurulu sorumluluğu, BCBS 239 risk verisi toplulaştırma, üçüncü taraf yoğunlaşma riski, çıkış testleri ve operasyonel dayanıklılığı bir uyum projesinden denetime hazır bir puan tablosuna dönüştüren mühendislik kontrolleri.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Sabit paralar ve tokenleştirme\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Sabit paralar ve tokenleştirme — konu afişi\""
+    ],
+    [
+      "<h3><a href=\"/tr/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/tr/topics/stablecoins-tokenisation/index.html\">Sabit paralar ve tokenleştirme</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/tr/konular/stablecoins-tokenisation/index.html\">Sabit paralar ve tokenleştirme</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Tokenleştirilmiş mevduat, para piyasası fonları, toptan CBDC pilotları, BlackRock'ın BRSRV/BSTBL ürünleri, GENIUS Yasası ve programlanabilir paranın düzenlemeye tabi bilançolar içinde çalışmasını sağlayan mühendislik tercihleri.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"Üretken yapay zekâ ve büyük dil modelleri\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"Üretken yapay zekâ ve büyük dil modelleri — konu afişi\""
+    ],
+    [
+      "<h3><a href=\"/tr/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/tr/topics/generative-ai-llms/index.html\">Üretken yapay zekâ ve büyük dil modelleri</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/tr/konular/generative-ai-llms/index.html\">Üretken yapay zekâ ve büyük dil modelleri</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Temel modeller, çok kipli büyük dil modelleri (Gemini, Gemma, Mistral, MM1), istem mühendisliği ve bankaların kendi veri çevrelerinde ne kurabileceğini belirleyen açık kaynak sürümleri.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"Ses ve konuşma yapay zekâsı\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"Ses ve konuşma yapay zekâsı — konu afişi\""
+    ],
+    [
+      "<h3><a href=\"/tr/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/tr/topics/voice-speech-ai/index.html\">Ses ve konuşma yapay zekâsı</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/tr/konular/voice-speech-ai/index.html\">Ses ve konuşma yapay zekâsı</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Ses klonlama, gerçek zamanlı konuşma tanıma (Whisper), yöneticilere yönelik sesli asistanlar ve özel bankacılık müşteri deneyimini yeniden biçimlendiren ses zekâsı yığını.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"Yapay zekâ yönetişimi ve düzenlemesi\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"Yapay zekâ yönetişimi ve düzenlemesi — konu afişi\""
+    ],
+    [
+      "<h3><a href=\"/tr/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/tr/topics/ai-governance-regulation/index.html\">Yapay zekâ yönetişimi ve düzenlemesi</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/tr/konular/ai-governance-regulation/index.html\">Yapay zekâ yönetişimi ve düzenlemesi</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">AB Yapay Zekâ Yasası uyumu, SR 11-7 model riski, yönetim kurulu düzeyinde sorumluluk, özerk iş akışlarının denetlenebilirliği ve birinci kademe bankalarda yapay zekânın düzenleyici çerçevesi.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Toptan ödeme rayları\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Toptan ödeme rayları — konu afişi\""
+    ],
+    [
+      "<h3><a href=\"/tr/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/tr/topics/wholesale-payments-rails/index.html\">Toptan ödeme rayları</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/tr/konular/wholesale-payments-rails/index.html\">Toptan ödeme rayları</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Kartlar, A2A, RTP, FedNow, açık bankacılık ve sabit para koridorlarını kapsayan çok raylı strateji. Toptan ekonomi, mutabakatın kesinliği ve BIS Agorá Projesi'nin sınır ötesi bölünmezlik modeli.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Kriptografi ve dayanıklılık</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Kriptografi ve dayanıklılık</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Kuantum sonrası geçiş, DORA düzeyinde operasyonel dayanıklılık ve finansal hizmetlerde yapay zekâ yönetişimi çerçevesi.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Ödemeler ve para</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Ödemeler ve para</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">ISO 20022 geçişi, toptan mutabakat, sabit paralar, tokenleştirilmiş mevduat ve bunları çevreleyen kurumsal hazine işlevi.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>Yapay zekâ ve bulut</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">Yapay zekâ ve bulut</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Uygulamalı yapay zekâ, etmen tabanlı sistemler, üretken modeller, ses yapay zekâsı ve bunları barındıran bulut yerlisi bankacılık platformları.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Açık kaynak ve zanaat</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Açık kaynak ve zanaat</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Rust kütüphaneleri, blok zinciri ilkelleri ve bunların ardındaki açık kaynak mühendislik disiplini.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Dört sütun, on dört konu kümesi, tarihli her yazı. Bir ipucu seçin ve arşiv boyunca izleyin.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">SÜTUN</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Sütunlar</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Konu kümeleri</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Dizinlenen yazılar</span>"
     ]
   ]
 }

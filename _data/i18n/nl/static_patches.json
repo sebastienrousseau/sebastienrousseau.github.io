@@ -111,7 +111,7 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 artikelen</p>"
+      "\\1 artikel(en)</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
@@ -912,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>De publicaties zijn verhuisd naar Onderzoek</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Cloud-native bankieren\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Cloud-native bankieren — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/nl/topics/cloud-native-banking/index.html\">Cloud-native bankieren</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/cloud-native-banking/index.html\">Cloud-native bankieren</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Op Kubernetes gebaseerde platform engineering voor gereguleerde instellingen: DORA-geteste operationele weerbaarheid, convergentie van virtuele machines en containers, soevereine cloud, exitstrategie en de architectuur waarmee banken kritieke diensten onder toezicht uitrollen.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"Agentische AI in het bankwezen\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"Agentische AI in het bankwezen — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/nl/topics/agentic-ai-banking/index.html\">Agentische AI in het bankwezen</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/agentic-ai-banking/index.html\">Agentische AI in het bankwezen</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Control planes voor agenten, deterministische semantische routering, OPA-beleidspoorten, onveranderlijke WORM-auditlogboeken en de modelrisicoblik van SR 11-7 / SS1/23 die autonome workflows omzet in toezichtklaar bewijsmateriaal.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Treasury-automatisering\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Treasury-automatisering — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/nl/topics/treasury-automation/index.html\">Treasury-automatisering</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/treasury-automation/index.html\">Treasury-automatisering</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Programmeerbare liquiditeit, autonome treasury, ISO 20022-betaalengines en de opensource-toolkits die CAMT / pacs.008 / MT940 / pain.001 omzetten in controleerbare transactie-intelligentie op bestuursniveau voor corporate treasury-teams.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Operationele weerbaarheid en DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Operationele weerbaarheid en DORA — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/nl/topics/operational-resilience-dora/index.html\">Operationele weerbaarheid en DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/operational-resilience-dora/index.html\">Operationele weerbaarheid en DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Bestuursverantwoordelijkheid onder DORA artikel 5, risicodata-aggregatie volgens BCBS 239, concentratierisico bij derden, exittests en de technische beheersmaatregelen die operationele weerbaarheid veranderen van een complianceproject in een toezichtklaar scorebord.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Stablecoins en tokenisatie\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Stablecoins en tokenisatie — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/nl/topics/stablecoins-tokenisation/index.html\">Stablecoins en tokenisatie</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/stablecoins-tokenisation/index.html\">Stablecoins en tokenisatie</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Getokeniseerde deposito's, geldmarktfondsen, wholesale-CBDC-pilots, BlackRocks BRSRV/BSTBL, de GENIUS Act en de technische keuzes waarmee programmeerbaar geld werkt binnen gereguleerde balansen.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"Generatieve AI en LLM's\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"Generatieve AI en LLM's — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/nl/topics/generative-ai-llms/index.html\">Generatieve AI en LLM's</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/generative-ai-llms/index.html\">Generatieve AI en LLM's</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Foundation models, multimodale LLM's (Gemini, Gemma, Mistral, MM1), prompt engineering en de opensource-uitgaven die bepalen wat banken binnen hun eigen dataperimeter kunnen bouwen.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"Spraak- en stem-AI\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"Spraak- en stem-AI — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/nl/topics/voice-speech-ai/index.html\">Spraak- en stem-AI</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/voice-speech-ai/index.html\">Spraak- en stem-AI</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Stemklonen, spraakherkenning in realtime (Whisper), stemassistenten voor bestuurders en de audio-intelligencestack die de klantervaring in private banking hervormt.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"AI-governance en regelgeving\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"AI-governance en regelgeving — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/nl/topics/ai-governance-regulation/index.html\">AI-governance en regelgeving</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/ai-governance-regulation/index.html\">AI-governance en regelgeving</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Conformiteit met de EU-AI-verordening, modelrisico volgens SR 11-7, verantwoordelijkheid op bestuursniveau, controleerbaarheid van autonome workflows en het regelgevingskader voor AI binnen grootbanken.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Wholesale-betaalrails\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Wholesale-betaalrails — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/nl/topics/wholesale-payments-rails/index.html\">Wholesale-betaalrails</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/wholesale-payments-rails/index.html\">Wholesale-betaalrails</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Multi-railstrategie over kaarten, A2A, RTP, FedNow, open banking en stablecoin-corridors. Wholesale-economie, finaliteit van afwikkeling en het grensoverschrijdende atomiciteitsmodel van BIS Project Agorá.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Cryptografie en weerbaarheid</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptografie en weerbaarheid</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Post-kwantummigratie, operationele weerbaarheid op DORA-niveau en het governancekader rond AI in financiële dienstverlening.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Betalingen en geld</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Betalingen en geld</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">ISO 20022-migratie, wholesale-afwikkeling, stablecoins, getokeniseerde deposito's en de corporate treasury-functie daaromheen.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>AI en cloud</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI en cloud</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Toegepaste AI, agentische systemen, generatieve modellen, spraak- en stem-AI, en de cloud-native bankplatformen die ze draaien.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Opensource en vakmanschap</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Opensource en vakmanschap</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Rust-bibliotheken, blockchain-primitieven en de opensource-engineeringdiscipline erachter.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Vier pijlers, veertien themaclusters, elk gedateerd artikel. Kies een draad en volg die door het archief.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">PIJLER</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Pijlers</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Themaclusters</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Geïndexeerde artikelen</span>"
     ]
   ]
 }

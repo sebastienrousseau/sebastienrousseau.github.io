@@ -19,5 +19,68 @@
   "blockchain-digital-assets": {
     "title": "Blockchain & Actifs numériques",
     "lede": "Blockchain et actifs numériques : tokenisation, ERC-20, stablecoins, infrastructure cryptomonnaies, et le cadre réglementaire qui les façonne."
-  }
+  },
+  "cloud-native-banking": {
+    "title": "Banque cloud-native",
+    "lede": "Ingénierie de plateforme fondée sur Kubernetes pour les établissements régulés : résilience opérationnelle éprouvée selon DORA, convergence des machines virtuelles et des conteneurs, cloud souverain, stratégie de sortie, et l'architecture qui permet aux banques de livrer des services critiques sous supervision."
+  },
+  "agentic-ai-banking": {
+    "title": "IA agentique dans la banque",
+    "lede": "Plans de contrôle des agents, routage sémantique déterministe, points de contrôle de politique OPA, journaux d'audit WORM immuables, et le prisme du risque de modèle SR 11-7 / SS1/23 qui transforme les flux autonomes en preuves recevables par le superviseur."
+  },
+  "treasury-automation": {
+    "title": "Automatisation de la trésorerie",
+    "lede": "Liquidité programmable, trésorerie autonome, moteurs de paiement ISO 20022, et les boîtes à outils open source qui transforment CAMT / pacs.008 / MT940 / pain.001 en une intelligence transactionnelle auditable et présentable au conseil pour les équipes de trésorerie d'entreprise."
+  },
+  "operational-resilience-dora": {
+    "title": "Résilience opérationnelle et DORA",
+    "lede": "Responsabilité du conseil au titre de l'article 5 de DORA, agrégation des données de risque BCBS 239, risque de concentration sur les tiers, tests de sortie, et les contrôles d'ingénierie qui font passer la résilience opérationnelle d'un projet de conformité à un tableau de bord prêt pour le superviseur."
+  },
+  "stablecoins-tokenisation": {
+    "title": "Stablecoins et tokenisation",
+    "lede": "Dépôts tokenisés, fonds monétaires, expérimentations de MNBC de gros, BRSRV/BSTBL de BlackRock, le GENIUS Act, et les choix d'ingénierie qui font fonctionner la monnaie programmable à l'intérieur de bilans régulés."
+  },
+  "generative-ai-llms": {
+    "title": "IA générative et grands modèles de langage",
+    "lede": "Modèles de fondation, grands modèles multimodaux (Gemini, Gemma, Mistral, MM1), ingénierie des invites, et les publications open source qui déterminent ce que les banques peuvent construire à l'intérieur de leur propre périmètre de données."
+  },
+  "voice-speech-ai": {
+    "title": "IA vocale et reconnaissance de la parole",
+    "lede": "Clonage vocal, reconnaissance de la parole en temps réel (Whisper), assistants vocaux pour dirigeants, et la pile d'intelligence audio qui redessine l'expérience client de la banque privée."
+  },
+  "ai-governance-regulation": {
+    "title": "Gouvernance et réglementation de l'IA",
+    "lede": "Conformité au règlement européen sur l'IA, risque de modèle SR 11-7, responsabilité au niveau du conseil, auditabilité des flux autonomes, et le cadre réglementaire de l'IA au sein des banques de premier rang."
+  },
+  "wholesale-payments-rails": {
+    "title": "Infrastructures de paiement de gros",
+    "lede": "Stratégie multi-rails couvrant les cartes, les virements de compte à compte, le RTP, FedNow, l'open banking et les corridors en stablecoins. Économie des paiements de gros, caractère définitif du règlement, et le modèle d'atomicité transfrontalière du projet Agorá de la BRI."
+  },
+  "_pillars": [
+    {
+      "name": "Cryptographie et résilience",
+      "lede": "Migration post-quantique, résilience opérationnelle au niveau DORA, et le cadre de gouvernance de l'IA dans les services financiers."
+    },
+    {
+      "name": "Paiements et monnaie",
+      "lede": "Migration ISO 20022, règlement de gros, stablecoins, dépôts tokenisés, et la fonction de trésorerie d'entreprise qui les entoure."
+    },
+    {
+      "name": "IA et cloud",
+      "lede": "IA appliquée, systèmes agentiques, modèles génératifs, IA vocale, et les plateformes bancaires cloud-native qui les hébergent."
+    },
+    {
+      "name": "Open source et artisanat",
+      "lede": "Bibliothèques Rust, primitives blockchain, et la discipline d'ingénierie open source qui les sous-tend."
+    }
+  ],
+  "_hub_lede": "Quatre piliers, quatorze grappes thématiques, chaque article daté. Choisissez un fil et suivez-le à travers les archives.",
+  "_banner_word": "bannière du sujet",
+  "_kpi": [
+    "Piliers",
+    "Grappes thématiques",
+    "Articles indexés"
+  ],
+  "_article_count": "{n} article(s)",
+  "_pillar_kicker": "PILIER"
 }

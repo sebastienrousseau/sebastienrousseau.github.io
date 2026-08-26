@@ -19,5 +19,68 @@
   "blockchain-digital-assets": {
     "title": "Blockchain och digitala tillgångar",
     "lede": "Blockchain och digitala tillgångar: tokenisering, ERC-20, stablecoins, kryptoinfrastruktur och det regelverk som omger dem."
-  }
+  },
+  "cloud-native-banking": {
+    "title": "Molnbaserad bankverksamhet",
+    "lede": "Kubernetes-baserad plattformsteknik för reglerade institut: DORA-testad operativ motståndskraft, konvergens mellan virtuella maskiner och containrar, suveränt moln, exitstrategi och den arkitektur som låter banker leverera kritiska tjänster under tillsyn."
+  },
+  "agentic-ai-banking": {
+    "title": "Agentisk AI i bankvärlden",
+    "lede": "Styrplan för agenter, deterministisk semantisk routning, OPA-policygrindar, oföränderliga WORM-revisionsloggar och den modellriskoptik enligt SR 11-7 / SS1/23 som förvandlar autonoma arbetsflöden till tillsynsfärdig bevisning."
+  },
+  "treasury-automation": {
+    "title": "Treasury-automatisering",
+    "lede": "Programmerbar likviditet, autonom treasury, betalningsmotorer enligt ISO 20022 och de öppna verktygslådor som gör CAMT / pacs.008 / MT940 / pain.001 till granskningsbar transaktionsintelligens på styrelsenivå för företagens treasury-team."
+  },
+  "operational-resilience-dora": {
+    "title": "Operativ motståndskraft och DORA",
+    "lede": "Styrelsens ansvar enligt DORA artikel 5, aggregering av riskdata enligt BCBS 239, koncentrationsrisk hos tredje part, exittester och de tekniska kontroller som förvandlar operativ motståndskraft från ett efterlevnadsprojekt till en tillsynsfärdig resultattavla."
+  },
+  "stablecoins-tokenisation": {
+    "title": "Stablecoins och tokenisering",
+    "lede": "Tokeniserade inlåningsmedel, penningmarknadsfonder, pilotprojekt för grossist-CBDC, BlackRocks BRSRV/BSTBL, GENIUS-lagen och de tekniska val som får programmerbara pengar att fungera inom reglerade balansräkningar."
+  },
+  "generative-ai-llms": {
+    "title": "Generativ AI och LLM:er",
+    "lede": "Grundmodeller, multimodala LLM:er (Gemini, Gemma, Mistral, MM1), promptutveckling och de öppna släpp som avgör vad banker kan bygga innanför sin egen dataperimeter."
+  },
+  "voice-speech-ai": {
+    "title": "Röst- och tal-AI",
+    "lede": "Röstkloning, taligenkänning i realtid (Whisper), röstassistenter för ledningen och den ljudintelligensstack som omformar kundupplevelsen inom private banking."
+  },
+  "ai-governance-regulation": {
+    "title": "AI-styrning och reglering",
+    "lede": "Efterlevnad av EU:s AI-förordning, modellrisk enligt SR 11-7, ansvar på styrelsenivå, granskningsbarhet för autonoma arbetsflöden och regelverket för AI inom storbankerna."
+  },
+  "wholesale-payments-rails": {
+    "title": "Betalningsräls för grossistledet",
+    "lede": "Flerspårsstrategi över kort, A2A, RTP, FedNow, öppen bankverksamhet och stablecoin-korridorer. Grossistekonomi, avvecklingens slutgiltighet och BIS Projekt Agorás modell för gränsöverskridande atomicitet."
+  },
+  "_pillars": [
+    {
+      "name": "Kryptografi och motståndskraft",
+      "lede": "Postkvantmigrering, operativ motståndskraft på DORA-nivå och styrningsramverket för AI inom finansiella tjänster."
+    },
+    {
+      "name": "Betalningar och pengar",
+      "lede": "ISO 20022-migrering, grossistavveckling, stablecoins, tokeniserad inlåning och företagens treasury-funktion runt dem."
+    },
+    {
+      "name": "AI och moln",
+      "lede": "Tillämpad AI, agentiska system, generativa modeller, röst- och tal-AI samt de molnbaserade bankplattformar som driver dem."
+    },
+    {
+      "name": "Öppen källkod och hantverk",
+      "lede": "Rust-bibliotek, blockkedjeprimitiver och den öppna ingenjörsdisciplin som ligger bakom dem."
+    }
+  ],
+  "_hub_lede": "Fyra pelare, fjorton ämnesgrupper, varje daterad artikel. Välj en tråd och följ den genom arkivet.",
+  "_banner_word": "ämnesbanderoll",
+  "_kpi": [
+    "Pelare",
+    "Ämnesgrupper",
+    "Indexerade artiklar"
+  ],
+  "_article_count": "{n} artiklar",
+  "_pillar_kicker": "PELARE"
 }

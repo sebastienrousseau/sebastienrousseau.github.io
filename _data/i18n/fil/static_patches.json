@@ -3,11 +3,11 @@
   "patches": [
     [
       "<a href=\"/\">Home</a> &middot; <span>Topics</span>",
-      "<a href=\"/fil/\">الرئيسية</a> &middot; <span>Mga paksa</span>"
+      "<a href=\"/fil/\">Tahanan</a> &middot; <span>Mga paksa</span>"
     ],
     [
       ">Home<",
-      ">الرئيسية<"
+      ">Tahanan<"
     ],
     [
       ">Topics</h1>",
@@ -15,143 +15,143 @@
     ],
     [
       ">PILLARS</p>",
-      ">المحاور</p>"
+      ">MGA HALIGI</p>"
     ],
     [
       "PILLAR · TOPIC",
-      "محور · موضوع"
+      "HALIGI · PAKSA"
     ],
     [
       "PILLAR · PROJECT",
-      "محور · مشروع"
+      "HALIGI · PROYEKTO"
     ],
     [
       "Curated topic clusters[^<]+",
-      "مجموعات مواضيع مختارة — اختر خيطًا واتبعه عبر الأرشيف."
+      "Mga piling kumpol ng paksa — pumili ng isang hibla at sundan ito sa buong arkibo."
     ],
     [
       "aria-label=\"Post-Quantum Cryptography\"",
-      "aria-label=\"التشفير ما بعد الكمي\""
+      "aria-label=\"Kriptograpiyang post-quantum\""
     ],
     [
       "aria-label=\"ISO 20022 &amp; Payments\"",
-      "aria-label=\"ISO 20022 &amp; المدفوعات\""
+      "aria-label=\"ISO 20022 at mga pagbabayad\""
     ],
     [
       "aria-label=\"Applied AI in Banking\"",
-      "aria-label=\"الذكاء الاصطناعي التطبيقي في الخدمات المصرفية\""
+      "aria-label=\"Inilapat na AI sa banking\""
     ],
     [
       "aria-label=\"Rust &amp; Open Source\"",
-      "aria-label=\"Rust &amp; المصدر المفتوح\""
+      "aria-label=\"Rust at open source\""
     ],
     [
       "aria-label=\"Blockchain &amp; Digital Assets\"",
-      "aria-label=\"Blockchain &amp; الأصول الرقمية\""
+      "aria-label=\"Blockchain at mga digital na ari-arian\""
     ],
     [
       "alt=\"Post-Quantum Cryptography — topic banner\"",
-      "alt=\"التشفير ما بعد الكمي — لافتة الموضوع\""
+      "alt=\"Kriptograpiyang post-quantum — banner ng paksa\""
     ],
     [
       "alt=\"ISO 20022 &amp; Payments — topic banner\"",
-      "alt=\"ISO 20022 &amp; المدفوعات — لافتة الموضوع\""
+      "alt=\"ISO 20022 at mga pagbabayad — banner ng paksa\""
     ],
     [
       "alt=\"Applied AI in Banking — topic banner\"",
-      "alt=\"الذكاء الاصطناعي التطبيقي في الخدمات المصرفية — لافتة الموضوع\""
+      "alt=\"Inilapat na AI sa banking — banner ng paksa\""
     ],
     [
       "alt=\"Rust &amp; Open Source — topic banner\"",
-      "alt=\"Rust &amp; المصدر المفتوح — لافتة الموضوع\""
+      "alt=\"Rust at open source — banner ng paksa\""
     ],
     [
       "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
-      "alt=\"Blockchain &amp; الأصول الرقمية — لافتة الموضوع\""
+      "alt=\"Blockchain at mga digital na ari-arian — banner ng paksa\""
     ],
     [
       "<h3><a href=\"/fr/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
-      "<h3><a href=\"/fil/mga-paksa/post-quantum-cryptography/index.html\">التشفير ما بعد الكمي</a></h3>"
+      "<h3><a href=\"/fil/mga-paksa/post-quantum-cryptography/index.html\">Kriptograpiyang post-quantum</a></h3>"
     ],
     [
       "<h3><a href=\"/fr/topics/iso-20022-payments/[^\"]+\">ISO 20022 &amp; Payments</a></h3>",
-      "<h3><a href=\"/fil/mga-paksa/iso-20022-payments/index.html\">ISO 20022 &amp; المدفوعات</a></h3>"
+      "<h3><a href=\"/fil/mga-paksa/iso-20022-payments/index.html\">ISO 20022 at mga pagbabayad</a></h3>"
     ],
     [
       "<h3><a href=\"/fr/topics/applied-ai-banking/[^\"]+\">Applied AI in Banking</a></h3>",
-      "<h3><a href=\"/fil/mga-paksa/applied-ai-banking/index.html\">الذكاء الاصطناعي التطبيقي في الخدمات المصرفية</a></h3>"
+      "<h3><a href=\"/fil/mga-paksa/applied-ai-banking/index.html\">Inilapat na AI sa banking</a></h3>"
     ],
     [
       "<h3><a href=\"/fr/topics/rust-open-source/[^\"]+\">Rust &amp; Open Source</a></h3>",
-      "<h3><a href=\"/fil/mga-paksa/rust-open-source/index.html\">Rust &amp; المصدر المفتوح</a></h3>"
+      "<h3><a href=\"/fil/mga-paksa/rust-open-source/index.html\">Rust at open source</a></h3>"
     ],
     [
       "<h3><a href=\"/fr/topics/blockchain-digital-assets/[^\"]+\">Blockchain &amp; Digital Assets</a></h3>",
-      "<h3><a href=\"/fil/mga-paksa/blockchain-digital-assets/index.html\">Blockchain &amp; الأصول الرقمية</a></h3>"
+      "<h3><a href=\"/fil/mga-paksa/blockchain-digital-assets/index.html\">Blockchain at mga digital na ari-arian</a></h3>"
     ],
     [
       "<p class=\"newsroom-excerpt\">Lattice-based cryptography, NIST PQC standards, quantum-safe payments,[^<]+</p>",
-      "<p class=\"newsroom-excerpt\">التشفير المعتمد على الشبكات (lattice-based cryptography)، معايير NIST PQC، المدفوعات الآمنة كميًا، وتهديد «احصد الآن، فك التشفير لاحقًا». ملاحظات Maghanapية ومكتبات مفتوحة المصدر ومخططات هجرة لفرق الأمن في الخدمات المالية.</p>"
+      "<p class=\"newsroom-excerpt\">Kriptograpiyang nakabatay sa lattice, mga pamantayang NIST PQC, mga pagbabayad na ligtas sa quantum, at ang banta ng \"anihin ngayon, i-decrypt mamaya\". Mga tala ng pananaliksik, aklatang open source, at plano ng migrasyon para sa mga pangkat ng seguridad sa serbisyong pinansiyal.</p>"
     ],
     [
       "<p class=\"newsroom-excerpt\">Cross-border message migration, structured-address compliance,[^<]+</p>",
-      "<p class=\"newsroom-excerpt\">هجرة الرسائل العابرة للحدود، الامتثال للعناوين المهيكلة، SEPA Instant، SWIFT gpi، وقضبان المدفوعات بالجملة (wholesale) التي تحمل المنظومة. أدوات ومخططات وخارطة طريق تنظيمية.</p>"
+      "<p class=\"newsroom-excerpt\">Migrasyon ng mensaheng rentas-sempadan, pagsunod sa nakabalangkas na adres, SEPA Instant, SWIFT gpi, at ang mga riles ng wholesale na pagbabayad na bumubuhat sa sistema. Mga kasangkapan, plano, at mapa ng regulasyon.</p>"
     ],
     [
       "<p class=\"newsroom-excerpt\">Generative AI, multimodal LLMs, voice, and speech models[^<]+</p>",
-      "<p class=\"newsroom-excerpt\">الذكاء الاصطناعي التوليدي، نماذج LLM متعددة الوسائط، نماذج الصوت والكلام — وكيفية إعادة تشكيلها للعمليات المصرفية وخدمة Trabahoاء وهندسة المنتجات في المؤسسات من الدرجة الأولى.</p>"
+      "<p class=\"newsroom-excerpt\">Generative AI, multimodal na LLM, boses, at mga modelo ng pananalita — at kung paano nila hinuhubog muli ang operasyong pambangko, serbisyo sa kliyente, at inhinyeriya ng produkto sa mga institusyong Tier-1.</p>"
     ],
     [
       "<p class=\"newsroom-excerpt\">Open-source Rust libraries I author and maintain:[^<]+</p>",
-      "<p class=\"newsroom-excerpt\">مكتبات Rust مفتوحة المصدر أؤلفها وأتعهد بصيانتها: التسجيل، توليد الكود، التاريخ والوقت، البدائيات التشفيرية، آلية KEM المعتمدة على Kyber، ومولد مواقع ثابتة بلغة Rust.</p>"
+      "<p class=\"newsroom-excerpt\">Mga aklatang Rust na open source na sinusulat at inaalagaan ko: pagtatala, paglikha ng kodigo, petsa at oras, mga primitibong kriptograpiko, KEM na nakabatay sa Kyber, at isang static site generator sa Rust.</p>"
     ],
     [
       "<p class=\"newsroom-excerpt\">Bitcoin, blockchain fundamentals, ERC-20 tokens, stablecoins,[^<]+</p>",
-      "<p class=\"newsroom-excerpt\">Bitcoin، أساسيات blockchain، رموز ERC-20، Trabahoات المستقرة، والإطار التنظيمي المحيط بقضبان المدفوعات المدعومة بالأصول الرقمية.</p>"
+      "<p class=\"newsroom-excerpt\">Bitcoin, mga saligan ng blockchain, mga token na ERC-20, stablecoin, at ang balangkas ng regulasyon sa paligid ng mga riles ng pagbabayad na nakaangkla sa digital na ari-arian.</p>"
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 مقال(ات)</p>"
+      "\\1 (na) artikulo</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
-      "ورقة بيضاء للقطاع · EPAA"
+      "PAMPAMANTAYANG WHITE PAPER · EPAA"
     ],
     [
       "INDUSTRY WHITE PAPER",
-      "ورقة بيضاء للقطاع"
+      "PAMPAMANTAYANG WHITE PAPER"
     ],
     [
       "PUBLICATION · WHITE PAPER",
-      "إصدار · ورقة بيضاء"
+      "PUBLIKASYON · WHITE PAPER"
     ],
     [
       ">RESEARCH NOTES</p>",
-      ">ملاحظات Maghanapية</p>"
+      ">MGA TALA NG PANANALIKSIK</p>"
     ],
     [
       ">RESEARCH NOTE · QUANTUM<",
-      ">ملاحظة Maghanapية · الكم<"
+      ">TALA NG PANANALIKSIK · QUANTUM<"
     ],
     [
       ">RESEARCH · CRYPTOGRAPHY<",
-      ">Maghanap · تشفير<"
+      ">PANANALIKSIK · KRIPTOGRAPIYA<"
     ],
     [
       ">RESEARCH · AI<",
-      ">Maghanap · الذكاء الاصطناعي<"
+      ">PANANALIKSIK · AI<"
     ],
     [
       ">RESEARCH · QUANTUM FINANCE<",
-      ">Maghanap · التمويل الكمي<"
+      ">PANANALIKSIK · QUANTUM NA PINANSIYA<"
     ],
     [
       ">RESEARCH · QUANTUM BANKING<",
-      ">Maghanap · الخدمات المصرفية الكمية<"
+      ">PANANALIKSIK · QUANTUM NA BANKING<"
     ],
     [
       "WHITE PAPER",
-      "ورقة بيضاء"
+      "WHITE PAPER"
     ],
     [
       ">Read the white paper</a>",
@@ -163,159 +163,159 @@
     ],
     [
       ">About EPAA</a>",
-      "<>Tungkol EPAA</a>"
+      ">Tungkol EPAA</a>"
     ],
     [
       "title=\"Visit the Emerging Payments Association Asia\"",
-      "title=\"زيارة Emerging Payments Association Asia\""
+      "title=\"Bisitahin ang Emerging Payments Association Asia\""
     ],
     [
       ">Buy &middot; \\$([0-9]+)\\.([0-9]+)</a>",
-      ">شراء &middot; \\1٫\\2 $</a>"
+      ">Bumili &middot; \\1.\\2 $</a>"
     ],
     [
       "title=\"Buy the publication on PayPal\"",
-      "title=\"شراء الإصدار عبر PayPal\""
+      "title=\"Bilhin ang publikasyon sa PayPal\""
     ],
     [
       ">Read the article</a>",
-      "<>Basahin ang artikulo</a>"
+      ">Basahin ang artikulo</a>"
     ],
     [
       " · Free download",
-      " · تنزيل مجاني"
+      " · Libreng pag-download"
     ],
     [
       "Free download<",
-      "تنزيل مجاني<"
+      "Libreng pag-download<"
     ],
     [
       ">Download<",
-      ">تنزيل<"
+      ">I-download<"
     ],
     [
       ">Request access<",
-      "<>طلب الوصول<"
+      ">Humiling ng akses<"
     ],
     [
       ">English · PDF",
-      ">الإنجليزية · PDF"
+      ">Ingles · PDF"
     ],
     [
       "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-01-\\2\">\\2 يناير \\1</time>"
+      "<time datetime=\"\\1-01-\\2\">\\2 Enero \\1</time>"
     ],
     [
       "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-02-\\2\">\\2 فبراير \\1</time>"
+      "<time datetime=\"\\1-02-\\2\">\\2 Pebrero \\1</time>"
     ],
     [
       "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-03-\\2\">\\2 مارس \\1</time>"
+      "<time datetime=\"\\1-03-\\2\">\\2 Marso \\1</time>"
     ],
     [
       "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-04-\\2\">\\2 أبريل \\1</time>"
+      "<time datetime=\"\\1-04-\\2\">\\2 Abril \\1</time>"
     ],
     [
       "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-05-\\2\">\\2 مايو \\1</time>"
+      "<time datetime=\"\\1-05-\\2\">\\2 Mayo \\1</time>"
     ],
     [
       "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-06-\\2\">\\2 يونيو \\1</time>"
+      "<time datetime=\"\\1-06-\\2\">\\2 Hunyo \\1</time>"
     ],
     [
       "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-07-\\2\">\\2 يوليو \\1</time>"
+      "<time datetime=\"\\1-07-\\2\">\\2 Hulyo \\1</time>"
     ],
     [
       "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-08-\\2\">\\2 أغسطس \\1</time>"
+      "<time datetime=\"\\1-08-\\2\">\\2 Agosto \\1</time>"
     ],
     [
       "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-09-\\2\">\\2 سبتمبر \\1</time>"
+      "<time datetime=\"\\1-09-\\2\">\\2 Setyembre \\1</time>"
     ],
     [
       "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
-      "<time datetime=\"\\1-09-01\">سبتمبر \\1</time>"
+      "<time datetime=\"\\1-09-01\">Setyembre \\1</time>"
     ],
     [
       "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-10-\\2\">\\2 أكتوبر \\1</time>"
+      "<time datetime=\"\\1-10-\\2\">\\2 Oktubre \\1</time>"
     ],
     [
       "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-11-\\2\">\\2 نوفمبر \\1</time>"
+      "<time datetime=\"\\1-11-\\2\">\\2 Nobyembre \\1</time>"
     ],
     [
       "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-12-\\2\">\\2 ديسمبر \\1</time>"
+      "<time datetime=\"\\1-12-\\2\">\\2 Disyembre \\1</time>"
     ],
     [
       ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
-      ">نظام لتحويل الكلام إلى نص في الوقت الفعلي يستفيد من OpenAI Whisper وتسريع وحدة معالجة الرسومات Metal Performance Shaders على macOS لتحقيق زمن استجابة دون الثانية بمعدل 8 إلى 12× الزمن الفعلي على M1 Max.<"
+      ">Isang sistema para sa real-time na transkripsiyon ng pananalita tungo sa teksto na gumagamit ng OpenAI Whisper at pagpapabilis ng GPU sa pamamagitan ng Metal Performance Shaders sa macOS upang makamit ang latensiyang wala pang isang segundo sa 8 hanggang 12× real time sa M1 Max.<"
     ],
     [
       ">A new paper suggests Shor\\'s algorithm could run on as few as 10,000 qubits\\. The threshold for cryptographically relevant quantum computing is dropping fast\\.<",
-      ">تشير ورقة جديدة إلى أن خوارزمية Shor قد تعمل بأقل من 10,000 كيوبت. عتبة الحوسبة الكمية ذات الأهمية التشفيرية تنخفض بسرعة.<"
+      ">Iminumungkahi ng bagong papel na maaaring tumakbo ang algoritmo ni Shor sa kasingliit ng 10,000 qubit. Mabilis na bumababa ang hangganan ng quantum computing na may bisa sa kriptograpiya.<"
     ],
     [
       ">A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research\\.<",
-      ">اكتُشف خلل في خوارزمية Yilei Chen الكمية لحل مسألة LWE، مما يؤمّن مؤقتًا التشفير المعتمد على الشبكات ويُبرز الحاجة إلى أبحاث مستمرة.<"
+      ">Natuklasan ang isang depekto sa quantum na algoritmo ni Yilei Chen para lutasin ang LWE, pansamantalang nagpapatibay sa kriptograpiyang nakabatay sa lattice at nagbibigay-diin sa pangangailangan ng tuloy-tuloy na pananaliksik.<"
     ],
     [
       ">New quantum algorithm solves a key cryptographic problem, urging accelerated research into quantum-safe security\\.<",
-      ">خوارزمية كمية جديدة تحل مشكلة تشفيرية رئيسية، مما يستدعي تسريع Mga publikasyon في الأمن الآمن كميًا.<"
+      ">Nilulutas ng bagong quantum na algoritmo ang isang pangunahing suliraning kriptograpiko, na nag-uudyok ng mas mabilis na pananaliksik sa seguridad na ligtas sa quantum.<"
     ],
     [
       ">How Fully Homomorphic Encryption revolutionises data security in banking and financial services, preserving privacy against quantum-era threats\\.<",
-      ">كيف يُحدث التشفير المتماثل بالكامل (FHE) ثورة في أمن البيانات في الخدمات المصرفية والمالية، مع الحفاظ على Pagkapribado في مواجهة تهديدات العصر الكمي.<"
+      ">Kung paano binabago ng Fully Homomorphic Encryption (FHE) ang seguridad ng datos sa banking at mga serbisyong pinansiyal, habang pinananatili ang pagkapribado laban sa mga banta ng panahong quantum.<"
     ],
     [
       ">An analysis of Apple's MM1 paper on Multimodal Large Language Models — architecture, pre-training strategies and emerging capabilities\\.<",
-      ">تحليل لورقة Apple MM1 Tungkol النماذج اللغوية الكبيرة متعددة الوسائط — البنية، استراتيجيات التدريب المسبق، والقدرات الناشئة.<"
+      ">Isang pagsusuri sa papel na MM1 ng Apple hinggil sa Multimodal na Malalaking Modelo ng Wika — arkitektura, estratehiya sa paunang pagsasanay, at mga umuusbong na kakayahan.<"
     ],
     [
       ">How IBM Qiskit and the Quantum Fourier Transform reshape credit ratio analysis in finance, offering unprecedented accuracy and speed\\.<",
-      ">كيف يُعيد IBM Qiskit وتحويل فورييه الكمي تشكيل تحليل النسب الائتمانية في التمويل، مما يوفر دقة وسرعة غير مسبوقتين.<"
+      ">Kung paano hinuhubog muli ng IBM Qiskit at ng Quantum Fourier Transform ang pagsusuri ng credit ratio sa pinansiya, na nag-aalok ng katumpakan at bilis na walang katulad.<"
     ],
     [
       ">The transformative role of AI inside quantum algorithms for finance, focusing on their mathematical structure and banking applications\\.<",
-      ">الدور التحويلي للذكاء الاصطناعي داخل الخوارزميات الكمية في التمويل، مع التركيز على بنيتها الرياضية وتطبيقاتها المصرفية.<"
+      ">Ang mapagbagong papel ng AI sa loob ng mga quantum na algoritmo para sa pinansiya, na nakatuon sa kanilang matematikang balangkas at mga aplikasyong pambangko.<"
     ],
     [
       ">As quantum computers threaten traditional encryption, Quantum Key Distribution \\(QKD\\) emerges as a structural answer for financial-grade security\\.<",
-      ">مع تهديد الحواسيب الكمية للتشفير التقليدي، يبرز التوزيع الكمي للمفاتيح (QKD) كإجابة هيكلية لأمن من الدرجة المالية.<"
+      ">Habang binabanta ng mga quantum na kompyuter ang tradisyunal na pag-encrypt, umuusbong ang Quantum Key Distribution (QKD) bilang isang istrukturadong sagot para sa seguridad na pang-pinansiya.<"
     ],
     [
       ">How CRYSTALS-Kyber, the NIST-selected quantum-resistant key-encapsulation mechanism, is reshaping cryptography for the quantum era\\.<",
-      ">كيف تعيد CRYSTALS-Kyber، آلية تغليف المفاتيح المقاومة للكم التي اختارها NIST، تشكيل التشفير لعصر الكم.<"
+      ">Kung paano hinuhubog muli ng CRYSTALS-Kyber, ang mekanismo ng pagbabalot ng susi na hinirang ng NIST at lumalaban sa quantum, ang kriptograpiya para sa panahong quantum.<"
     ],
     [
       ">What kind of research and papers do you publish\\?</summary>",
-      ">ما نوع Mga publikasyon والإصدارات التي تنشرها؟</summary>"
+      ">Anong uri ng pananaliksik at publikasyon ang inilalathala mo?</summary>"
     ],
     [
       "(<summary[^>]*>Quels types de recherches et publications publiez-vous \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>يتعايش محوران. <strong>Mga publikasyon البيضاء للقطاع</strong>، التي تُنتج لمؤسسات مثل Emerging Payments Association Asia (EPAA)، تدرس التTungkolات الهيكلية في بنى المدفوعات — مؤخرًا، أثر الحوسبة الكمية ذات الأهمية التشفيرية على قضبان التسوية بالجملة والفورية. أما <strong>تقارير الMaghanap التطبيقي</strong> فتستهدف مواضيع تقنية محددة (مثلًا: التعرف على الكلام في الوقت الفعلي عبر Whisper + Metal Performance Shaders على Apple Silicon)، وتُنشر بصيغة ملفات PDF قابلة للشراء فرديًا.</p></section>"
+      "\\1<section class=\"qa-a\"><p>May dalawang magkasamang linya. Ang <strong>mga white paper para sa industriya</strong>, na ginagawa para sa mga organisasyong tulad ng Emerging Payments Association Asia (EPAA), ay sumusuri sa mga pagbabagong istruktural sa imprastruktura ng pagbabayad — kamakailan, ang epekto ng quantum computing na may bisa sa kriptograpiya sa mga riles ng wholesale at instant na settlement. Ang <strong>mga ulat ng inilapat na pananaliksik</strong> naman ay nakatuon sa tiyak na paksang teknikal (halimbawa: real-time na pagkilala sa pananalita sa pamamagitan ng Whisper + Metal Performance Shaders sa Apple Silicon), at inilalathala bilang PDF na mabibili nang paisa-isa.</p></section>"
     ],
     [
       ">How often do you release new papers\\?</summary>",
-      ">ما مدى تكرار نشر Mga publikasyon الجديدة؟</summary>"
+      ">Gaano kadalas ka naglalabas ng bagong papel?</summary>"
     ],
     [
       "(<summary[^>]*>À quelle fréquence publiez-vous de nouveaux articles \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>بشكل غير منتظم، تفضيلًا للجودة على الإيقاع. تصدر الملاحظات الMaghanapية القصيرة كل بضعة أسابيع عندما يستدعي ذلك تطور تقني. أما Mga publikasyon البيضاء فتُنشر بالتزامن مع الدورات الصناعية (مثلًا: الجداول التنظيمية، مؤتمرات EPAA).</p></section>"
+      "\\1<section class=\"qa-a\"><p>Hindi regular, mas pinipili ang kalidad kaysa sa ritmo. Ang maiikling tala ng pananaliksik ay lumalabas tuwing ilang linggo kapag may teknikal na pag-unlad na nag-uudyok nito. Ang mga white paper naman ay inilalathala kasabay ng mga siklo ng industriya (halimbawa: mga iskedyul ng regulasyon, kumperensiya ng EPAA).</p></section>"
     ],
     [
       ">About EPAA</p>",
-      "<>Tungkol EPAA</p>"
+      ">Tungkol EPAA</p>"
     ],
     [
       "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
-      "<p class=\"book-about\">تُعدّ <strong>Emerging Payments Association Asia (EPAA)</strong> الجمعية المهنية لقطاع المدفوعات في منطقة آسيا والمحيط الهادئ، إذ تجمع البنوك والمعالجات وشركات التكنولوجيا المالية والجهات التنظيمية Tungkol القضايا الهيكلية المشتركة عبر القطاع."
+      "<p class=\"book-about\">Ang <strong>Emerging Payments Association Asia (EPAA)</strong> ang samahang pampropesyonal ng sektor ng pagbabayad sa rehiyong Asia-Pacific, na nagtitipon ng mga bangko, processor, kompanyang fintech, at tagapagregula hinggil sa mga isyung istruktural na iisa sa buong sektor."
     ],
     [
       ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
@@ -323,95 +323,95 @@
     ],
     [
       ">Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS<",
-      ">تسريع التعرف على الكلام في الوقت الفعلي باستخدام OpenAI Whisper و Metal Performance Shaders على macOS<"
+      ">Pagpapabilis ng real-time na pagkilala sa pananalita gamit ang OpenAI Whisper at Metal Performance Shaders sa macOS<"
     ],
     [
       ">Recent research and analysis<",
-      ">أبحاث وتحليلات حديثة<"
+      ">Kamakailang pananaliksik at pagsusuri<"
     ],
     [
       "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
-      "سبتمبر 2025 &middot; Emerging Payments Association Asia (EPAA)"
+      "Setyembre 2025 &middot; Emerging Payments Association Asia (EPAA)"
     ],
     [
       ">Quantum computing threatens the cryptographic foundations[^<]+",
-      ">تُهدد الحوسبة الكمية الأسس التشفيرية للخدمات المالية. تعتمد المدفوعات — من الزمن الفعلي إلى التسوية العابرة للحدود — على وسائل حماية ستجعلها الحوسبة الكمية متقادمة في النهاية. تشرح هذه الورقة البيضاء من EPAA لماذا ينبغي على القطاع التحرك الآن."
+      ">Binabanta ng quantum computing ang mga saligang kriptograpiko ng mga serbisyong pinansiyal. Ang mga pagbabayad — mula real time hanggang settlement na rentas-sempadan — ay nakasalalay sa mga proteksiyong gagawing lipas ng quantum computing. Ipinapaliwanag ng white paper na ito ng EPAA kung bakit dapat kumilos ang sektor ngayon."
     ],
     [
       "2024 &middot; Independent Research &middot;",
-      "2024 &middot; Maghanap مستقل &middot;"
+      "2024 &middot; Malayang pananaliksik &middot;"
     ],
     [
       ">This independent research paper presents[^<]+",
-      ">يقدم هذا التقرير الMaghanapي المستقل تحسينًا للتعرف على الكلام في الوقت الفعلي على macOS باستخدام OpenAI Whisper و Metal Performance Shaders، مع إثبات مكاسب قابلة للقياس في زمن الاستجابة وكفاءة الطاقة."
+      ">Ipinapakita ng malayang papel ng pananaliksik na ito ang isang optimisasyon ng real-time na pagkilala sa pananalita sa macOS gamit ang OpenAI Whisper at Metal Performance Shaders, na may napapatunayang pakinabang sa latensiya at kahusayan sa enerhiya."
     ],
     [
       ">License &amp; pricing<",
-      ">الترخيص والتسعير<"
+      ">Lisensya at presyo<"
     ],
     [
       ">One copy per buyer<",
-      ">نسخة واحدة لكل مشتري<"
+      ">Isang kopya bawat mamimili<"
     ],
     [
       ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
-      ">أسئلة؟<span class=\"qa-headline-soft\"> أجوبة.</span>"
+      ">Mga tanong?<span class=\"qa-headline-soft\"> Mga sagot.</span>"
     ],
     [
       ">Questions\\? Answers\\.</h2>",
-      ">أسئلة؟ أجوبة.</h2>"
+      ">Mga tanong? Mga sagot.</h2>"
     ],
     [
       ">Questions\\? Answers\\.<",
-      ">أسئلة؟ أجوبة.<"
+      ">Mga tanong? Mga sagot.<"
     ],
     [
       ">Are the white papers free to read\\?</summary>",
-      ">هل Mga publikasyon البيضاء مجانية للقراءة؟</summary>"
+      ">Libre bang basahin ang mga white paper?</summary>"
     ],
     [
       ">May I cite or quote from these papers\\?</summary>",
-      ">هل يمكنني الاستشهاد بهذه الإصدارات؟</summary>"
+      ">Maaari ba akong sumipi mula sa mga papel na ito?</summary>"
     ],
     [
       ">Who is the intended audience\\?</summary>",
-      ">من هم الجمهور المستهدف؟</summary>"
+      ">Sino ang inaasahang mambabasa?</summary>"
     ],
     [
       ">Can I commission a paper or speak at an event\\?</summary>",
-      ">هل يمكنني تكليفك بورقة أو دعوتك إلى مؤتمر؟</summary>"
+      ">Maaari ba akong magpagawa ng papel o mag-imbita sa isang kaganapan?</summary>"
     ],
     [
       ">How do I follow new publications\\?</summary>",
-      ">كيف أتابع الإصدارات الجديدة؟</summary>"
+      ">Paano ko masusubaybayan ang mga bagong publikasyon?</summary>"
     ],
     [
       ">Where can I follow new releases\\?</summary>",
-      ">أين يمكنني متابعة الإصدارات الجديدة؟</summary>"
+      ">Saan ko masusubaybayan ang mga bagong labas?</summary>"
     ],
     [
       "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>الورقة البيضاء <em>Quantum-Safe Payments</em> الصادرة عن EPAA متاحة للتنزيل العام مجانًا على <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. أما تقرير الMaghanap المستقل Tungkol التعرف على الكلام في الوقت الفعلي باستخدام OpenAI Whisper و Metal Performance Shaders فهو مرخص ومتاح للشراء الفردي بسعر 49٫00 $ (الإنجليزية، PDF، نحو 95 كيلوبايت). نسخة واحدة لكل مشتري؛ التنزيلات للاستخدام الشخصي فقط وغير قابلة لإعادة التوزيع.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Ang white paper na <em>Quantum-Safe Payments</em> ng EPAA ay malayang mada-download nang libre sa <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Ang malayang ulat ng pananaliksik tungkol sa real-time na pagkilala sa pananalita gamit ang OpenAI Whisper at Metal Performance Shaders ay lisensiyado at mabibili nang paisa-isa sa halagang 49.00 $ (Ingles, PDF, mga 95 KB). Isang kopya bawat mamimili; ang mga download ay para sa personal na gamit lamang at hindi maaaring ipamahagi muli.</p></section>"
     ],
     [
       "(<summary[^>]*>Puis-je citer ces documents \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>نعم. الاقتباسات القصيرة مع الإسناد مرحب بها في إطار الاستخدام العادل. بالنسبة لإصدارات EPAA، اذكر EPAA كناشر مع مجموعة Trabaho والسنة ورابط ملف PDF. أما تقارير الMaghanap المستقلة فتُستشهد بالصيغة: <em>Rousseau, S. (السنة). العنوان. نشر ذاتي.</em> مع الرابط القانوني. لإعادة إنتاج رسم بياني أو فقرة مطوّلة، يُرجى <a href=\"/fil/makipag-ugnayan/\">الMakipag-ugnayan</a> مسبقًا.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Oo. Malugod na tinatanggap ang maiikling sipi na may pagkilala sa loob ng makatuwirang paggamit. Para sa mga publikasyon ng EPAA, banggitin ang EPAA bilang tagapaglathala kasama ang pangkat ng may-akda, ang taon, at ang link sa PDF. Ang malayang ulat ng pananaliksik ay sinisipi sa anyong: <em>Rousseau, S. (taon). Pamagat. Sariling paglalathala.</em> kasama ang legal na link. Upang muling gamitin ang isang grap o mahabang talata, mangyaring <a href=\"/fil/makipag-ugnayan/\">makipag-ugnayan</a> nang maaga.</p></section>"
     ],
     [
       "(<summary[^>]*>À qui s’adressent ces publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>مديرو المدفوعات، رؤساء أمن المعلومات (CISO)، وكبار المهندسين في البنوك من الدرجة الأولى، البنوك المركزية، مشغلي أنظمة المدفوعات، ومالكي المخططات. يستهدف الMaghanap التطبيقي المهندسين ومديري المنتجات الذين يبنون على النماذج اللغوية الكبيرة والذكاء الاصطناعي على الجهاز والتشفير المقاوم للكم. تفترض كل ورقة معرفة بالمجال وتتجاهل التذكيرات التي يمتلكها المحترف الممارس فعلًا.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Mga direktor ng pagbabayad, punong opisyal ng seguridad ng impormasyon (CISO), at mga senior na inhinyero sa mga bangkong Tier-1, sentral na bangko, tagapagpatakbo ng sistema ng pagbabayad, at may-ari ng mga scheme. Ang inilapat na pananaliksik ay para sa mga inhinyero at tagapamahala ng produkto na nagtatayo sa ibabaw ng malalaking modelo ng wika, AI sa mismong aparato, at kriptograpiyang lumalaban sa quantum. Ipinapalagay ng bawat papel ang kaalaman sa larangan at nilalaktawan ang mga paalalang alam na ng isang nagsasanay na propesyonal.</p></section>"
     ],
     [
       "(<summary[^>]*>Puis-je commander une étude ou inviter à une conférence \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>نعم — حسب الحالة، وعلى أساس الانتقاء. تشمل المهام المُكلّف بها المدفوعات بالجملة، هجرة ISO 20022، التشفير ما بعد الكمي للخدمات المالية، والذكاء الاصطناعي التطبيقي في الخدمات المصرفية. تُدرس المشاركات في مؤتمرات القطاع ومنتديات البنوك المركزية وحلقات الجهات التنظيمية حسب الحالة. استخدم <a href=\"/fil/makipag-ugnayan/\">نموذج Makipag-ugnayan</a> مع تحديد الموضوع والجمهور والجدول الزمني.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Oo — depende sa kaso, at sa piling batayan. Kabilang sa mga ipinagagawang gawain ang wholesale na pagbabayad, migrasyon ng ISO 20022, kriptograpiyang post-quantum para sa mga serbisyong pinansiyal, at inilapat na AI sa banking. Ang paglahok sa mga kumperensiya ng industriya, forum ng sentral na bangko, at pulong ng tagapagregula ay tinitingnan ayon sa kaso. Gamitin ang <a href=\"/fil/makipag-ugnayan/\">porma ng pakikipag-ugnayan</a> na tinutukoy ang paksa, ang mambabasa, at ang iskedyul.</p></section>"
     ],
     [
       "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>يُعلن عن Mga artikulo والملاحظات الMaghanapية الجديدة أولًا عبر <a href=\"/fil/rss.xml\">خلاصة RSS</a> الخاصة بالموقع ونشرة <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>، التي تغطي التشفير ما بعد الكمي وسياسات البنوك المركزية وخارطة طريق هجرة مخططات المدفوعات الرئيسية. لا رسائل مزعجة — فقط ما هو جديد.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Ang mga bagong artikulo at tala ng pananaliksik ay inihahayag muna sa <a href=\"/fil/rss.xml\">feed ng RSS</a> ng sayt at sa newsletter na <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>, na sumasaklaw sa kriptograpiyang post-quantum, patakaran ng sentral na bangko, at ang mapa ng migrasyon ng mga pangunahing scheme ng pagbabayad. Walang spam — ang bago lamang.</p></section>"
     ],
     [
       "(<summary[^>]*>Où puis-je suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Mag-subscribe في <a href=\"/fil/rss.xml\">خلاصة RSS</a> أو تابعني على <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> لتُبلَّغ بالإصدارات الجديدة.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Mag-subscribe sa <a href=\"/fil/rss.xml\">feed ng RSS</a> o sundan ako sa <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> upang maabisuhan tungkol sa mga bagong labas.</p></section>"
     ],
     [
       ">Browse all projects<",
@@ -419,55 +419,55 @@
     ],
     [
       ">Three areas of practice\\.\\s*<span",
-      ">ثلاثة مجالات ممارسة. <span"
+      ">Tatlong larangan ng praktika. <span"
     ],
     [
       ">One philosophy\\.</span>",
-      ">فلسفة واحدة.</span>"
+      ">Isang pilosopiya.</span>"
     ],
     [
       ">WHAT IS INSIDE<",
-      ">المحتوى<"
+      ">ANO ANG NASA LOOB<"
     ],
     [
       ">OPEN SOURCE FOR FINANCIAL SERVICES<",
-      ">مصدر مفتوح للخدمات المالية<"
+      ">OPEN SOURCE PARA SA MGA SERBISYONG PINANSIYAL<"
     ],
     [
       ">Payments and settlement\\.<",
-      ">المدفوعات والتسوية.<"
+      ">Pagbabayad at settlement.<"
     ],
     [
       ">Post-quantum cryptography\\.<",
-      ">التشفير ما بعد الكمي.<"
+      ">Kriptograpiyang post-quantum.<"
     ],
     [
       ">Tooling and infrastructure\\.<",
-      ">الأدوات والبنية التحتية.<"
+      ">Mga kasangkapan at imprastruktura.<"
     ],
     [
       ">Applied AI\\.<",
-      ">الذكاء الاصطناعي التطبيقي.<"
+      ">Inilapat na AI.<"
     ],
     [
       ">Explore payments tools\\s+<",
-      ">استكشاف أدوات المدفوعات <"
+      ">Tuklasin ang mga kasangkapan sa pagbabayad <"
     ],
     [
       ">Explore quantum-safe libraries\\s+<",
-      ">استكشاف المكتبات الآمنة كميًا <"
+      ">Tuklasin ang mga aklatang ligtas sa quantum <"
     ],
     [
       ">Explore developer tools\\s+<",
-      ">استكشاف أدوات المطورين <"
+      ">Tuklasin ang mga kasangkapan ng developer <"
     ],
     [
       ">Explore PQC tools\\s+<",
-      ">استكشاف أدوات PQC <"
+      ">Tuklasin ang mga kasangkapang PQC <"
     ],
     [
       ">Explore AI tools\\s+<",
-      ">استكشاف أدوات الذكاء الاصطناعي <"
+      ">Tuklasin ang mga kasangkapang AI <"
     ],
     [
       ">Authored & maintained<",
@@ -483,75 +483,75 @@
     ],
     [
       "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\">حزم أدوات ISO 20022 <strong>pain.001</strong> و <strong>pacs.008</strong>، تحليل كشوف الحسابات البنكية، ومكتبات Rust للهجرة إلى الرسائل العابرة للحدود المهيكلة. مصممة لـ SWIFT و SEPA ومخططات المدفوعات الفورية.</p>"
+      "<p class=\"setup-card-body\">Mga kasangkapang ISO 20022 <strong>pain.001</strong> at <strong>pacs.008</strong>, pagsusuri ng bank statement, at mga aklatang Rust para sa migrasyon tungo sa nakabalangkas na mensaheng rentas-sempadan. Idinisenyo para sa SWIFT, SEPA, at mga scheme ng instant na pagbabayad.</p>"
     ],
     [
       "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\">تطبيقات Rust لـ <strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203)، بدائيات التجزئة، ولبنات بناء مقاومة للكم. حماية تتجاوز عصر RSA والمنحنى الإهليلجي في المصادقة المالية.</p>"
+      "<p class=\"setup-card-body\">Mga implementasyon sa Rust ng <strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203), mga primitibong hash, at mga bloke ng gusaling lumalaban sa quantum. Proteksiyong lumalampas sa panahon ng RSA at elliptic curve sa awtentikasyong pang-pinansiya.</p>"
     ],
     [
       "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
-      "<p class=\"setup-card-body\">مكتبات Rust مفتوحة المصدر للتسلسل والتسجيل وتوليد الكود والتاريخ والوقت. بالإضافة إلى <strong>Static Site Generator</strong> (SSG) الذي يبني هذا الموقع وبيئة المطور التي تجعله قابلًا للشحن.</p>"
+      "<p class=\"setup-card-body\">Mga aklatang Rust na open source para sa serialisasyon, pagtatala, paglikha ng kodigo, at petsa at oras. Kasama ang <strong>Static Site Generator</strong> (SSG) na bumubuo sa sayt na ito at ang kapaligiran ng developer na nagpapadali sa paghahatid nito.</p>"
     ],
     [
       ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
-      ">أدوات ISO 20022 للهجرة العالمية. توليد ملفات Pain.001، تحويلات ائتمانية عابرة للحدود pacs.008، وتحليل مهيكل لكشوف الحسابات البنكية.<"
+      ">Kasangkapang ISO 20022 para sa pandaigdigang migrasyon. Paglikha ng talaksang Pain.001, mga credit transfer na rentas-sempadan na pacs.008, at nakabalangkas na pagsusuri ng mga bank statement.<"
     ],
     [
       ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
-      ">تطبيقات Rust لـ CRYSTALS-Kyber، بدائيات التجزئة والملخص، ولبنات مقاومة للكم لمصادقة من الدرجة المالية.<"
+      ">Mga implementasyon sa Rust ng CRYSTALS-Kyber, mga primitibong hash at digest, at mga bloke ng gusali na lumalaban sa quantum para sa awtentikasyong pang-pinansiya.<"
     ],
     [
       ">Applied artificial intelligence\\.<",
-      ">الذكاء الاصطناعي التطبيقي.<"
+      ">Inilapat na artipisyal na katalinuhan.<"
     ],
     [
       ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
-      ">مشاريع ذكاء اصطناعي مفتوحة المصدر تطبق التعرف على الكلام وWika الطبيعية والنماذج اللغوية الكبيرة على مشاكل حقيقية في التمويل والإنتاجية.<"
+      ">Mga proyektong AI na open source na naglalapat ng pagkilala sa pananalita, natural na wika, at malalaking modelo ng wika sa mga tunay na suliranin sa pinansiya at produktibidad.<"
     ],
     [
       ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
-      ">مكتبة Python تؤتمت إنشاء ملفات المدفوعات ISO 20022 pain.001 من CSV أو SQLite. مصممة للهجرة العالمية إلى الرسائل العابرة للحدود المهيكلة.<"
+      ">Isang aklatang Python na nag-o-otomatisa ng paglikha ng talaksang pagbabayad na ISO 20022 pain.001 mula sa CSV o SQLite. Idinisenyo para sa pandaigdigang migrasyon tungo sa nakabalangkas na mensaheng rentas-sempadan.<"
     ],
     [
       ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
-      ">توليد رسائل المدفوعات ISO 20022 pacs.008 والتحقق منها وتسليمها للتحويلات الائتمانية للعملاء من مؤسسة مالية إلى أخرى. التحقق عبر JSON Schema + XSD، IBAN عبر 75 دولة، إخفاء بيانات شخصية متوافق مع GDPR/PCI-DSS.<"
+      ">Lumikha, magpatunay, at maghatid ng mga mensaheng pagbabayad na ISO 20022 pacs.008 para sa credit transfer ng kliyente mula institusyong pinansiyal tungo sa isa pa. Pagpapatunay sa pamamagitan ng JSON Schema + XSD, IBAN sa 75 bansa, pagtatago ng personal na datos na sumusunod sa GDPR/PCI-DSS.<"
     ],
     [
       ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
-      ">حزمة أدوات Python من درجة مالية تحوّل كشوف الحسابات البنكية متعددة الصيغ إلى بيانات مهيكلة — لواقع ملفات الكشوف الحقيقية ومتطلبات التدقيق في البيئات الخاضعة للتنظيم.<"
+      ">Isang kasangkapang Python na pang-pinansiya na nagbabago ng mga bank statement sa iba't ibang format tungo sa nakabalangkas na datos — para sa tunay na kalagayan ng mga talaksan ng statement at sa mga kahingian ng pag-audit sa reguladong kapaligiran.<"
     ],
     [
       ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
-      ">تطبيق Rust لتحسين تخصيص النقد عبر هياكل الصناديق المعقدة باستخدام التنبؤ المدعوم بالذكاء الاصطناعي. مُصمَّم لحالات استخدام الخزانة ومحاسبة الصناديق وتخصيص الأصول داخل البنوك ومديري الأصول.<"
+      ">Isang aplikasyong Rust para sa pag-optimisa ng paglalaan ng salapi sa masalimuot na istruktura ng pondo gamit ang panghuhula na pinapagana ng AI. Idinisenyo para sa mga gamit sa treasury, accounting ng pondo, at paglalaan ng ari-arian sa loob ng mga bangko at tagapamahala ng ari-arian.<"
     ],
     [
       ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
-      ">مكتبة Rust لتوليد ومعالجة صور رموز QR بصيغ متعددة. الاستخدامات المباشرة في المدفوعات تشمل EPC QR Codes للتحويلات الائتمانية SEPA، رموز QR لروابط الدفع لتحصيل التجار، وتدفقات المصادقة step-up.<"
+      ">Isang aklatang Rust para sa paglikha at pagmamanipula ng imahen ng QR code sa iba't ibang format. Kabilang sa tuwirang gamit sa pagbabayad ang EPC QR Code para sa SEPA credit transfer, QR code ng link ng pagbabayad para sa pangongolekta ng mangangalakal, at daloy ng step-up na awtentikasyon.<"
     ],
     [
       ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
-      ">تطبيق Rust متين لـ CRYSTALS-Kyber، معيار NIST FIPS 203 لتغليف المفاتيح ما بعد الكمي للأغراض العامة.<"
+      ">Isang matatag na implementasyon sa Rust ng CRYSTALS-Kyber, ang pamantayang NIST FIPS 203 para sa pangkalahatang pagbabalot ng susi na post-quantum.<"
     ],
     [
       ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
-      ">خوارزميات تجزئة وملخص آمنة لتشفير كلمات المرور والتحقق منها، مصممة بموقف مقاوم للكم لعصر ما بعد PQC.<"
+      ">Ligtas na mga algoritmo ng hash at digest para sa pag-encrypt at pagpapatunay ng password, idinisenyo nang may tindig na lumalaban sa quantum para sa panahong post-PQC.<"
     ],
     [
       ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
-      ">واجهة سطر أوامر متعددة المنصات سريعة وبسيطة وقوية لتوليد كلمات مرور قوية وفريدة وعشوائية، مدعومة ببدائيات تشفيرية مدققة.<"
+      ">Isang mabilis, simple, at malakas na cross-platform na CLI para sa paglikha ng malakas, natatangi, at random na password, pinapagana ng mga na-audit na primitibong kriptograpiko.<"
     ],
     [
       ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
-      ">مساعد صوتي متقدم يستخدم GPT من OpenAI للتفاعلات الطبيعية وتلخيصات PDF والتخزين المؤقت الفعال. مصمم للاستخدام الشخصي والتنفيذي على حد سواء.<"
+      ">Isang abanteng katulong sa boses na gumagamit ng GPT ng OpenAI para sa natural na pakikipag-ugnayan, buod ng PDF, at mahusay na caching. Idinisenyo para sa personal at ehekutibong gamit.<"
     ],
     [
       ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
-      ">حوّل الصوت إلى نص في الوقت الفعلي باستخدام التعرف على الكلام بالذكاء الاصطناعي المتقدم. مصمم لاستخلاص رؤى قابلة للتنفيذ من بيانات الصوت وتعزيز تجربة Trabahoاء والتشغيل.<"
+      ">Gawing teksto ang audio sa real time gamit ang abanteng pagkilala sa pananalita ng AI. Idinisenyo upang makuha ang mga makabuluhang kabatiran mula sa datos ng audio at mapabuti ang karanasan ng kliyente at operasyon.<"
     ],
     [
       ">Featured · Python · ISO 20022<",
-      ">مميز · Python · ISO 20022<"
+      ">Itinampok · Python · ISO 20022<"
     ],
     [
       ">Python · ISO 20022<",
@@ -563,11 +563,11 @@
     ],
     [
       ">Rust · Treasury · AI<",
-      ">Rust · الخزانة · الذكاء الاصطناعي<"
+      ">Rust · Treasury · AI<"
     ],
     [
       ">Rust · Payments QR<",
-      ">Rust · QR المدفوعات<"
+      ">Rust · QR ng pagbabayad<"
     ],
     [
       ">Rust · Quantum<",
@@ -579,135 +579,135 @@
     ],
     [
       ">AI · Voice<",
-      ">الذكاء الاصطناعي · الصوت<"
+      ">AI · Boses<"
     ],
     [
       ">AI · Speech<",
-      ">الذكاء الاصطناعي · الكلام<"
+      ">AI · Pananalita<"
     ],
     [
       ">PAYMENTS<",
-      ">المدفوعات<"
+      ">MGA PAGBABAYAD<"
     ],
     [
       ">POST-QUANTUM CRYPTOGRAPHY<",
-      ">التشفير ما بعد الكمي<"
+      ">KRIPTOGRAPIYANG POST-QUANTUM<"
     ],
     [
       ">AI AND VOICE<",
-      ">الذكاء الاصطناعي والصوت<"
+      ">AI AT BOSES<"
     ],
     [
       ">DEVELOPER TOOLING<",
-      ">أدوات المطورين<"
+      ">KASANGKAPAN NG DEVELOPER<"
     ],
     [
       ">OPEN-SOURCE RUST<",
-      ">Rust مفتوح المصدر<"
+      ">OPEN-SOURCE NA RUST<"
     ],
     [
       ">WEB AND DEVELOPER ENVIRONMENT<",
-      ">الويب وبيئة المطور<"
+      ">WEB AT KAPALIGIRAN NG DEVELOPER<"
     ],
     [
       ">Tooling\\.<",
-      ">الأدوات.<"
+      ">Mga kasangkapan.<"
     ],
     [
       ">Rust libraries and tooling\\.</h2>",
-      ">مكتبات وأدوات Rust.</h2>"
+      ">Mga aklatan at kasangkapang Rust.</h2>"
     ],
     [
       "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
-      "<p class=\"cat-lede\">مشاريع Rust مفتوحة المصدر عبر التسلسل والتسجيل وتوليد الكود والرياضيات وأدوات المطورين — بما في ذلك مولد المواقع الثابتة الذي يدير هذا الموقع.</p>"
+      "<p class=\"cat-lede\">Mga proyektong Rust na open source sa serialisasyon, pagtatala, paglikha ng kodigo, matematika, at kasangkapan ng developer — kabilang ang static site generator na nagpapatakbo sa sayt na ito.</p>"
     ],
     [
       ">Web, templates and environment\\.</h2>",
-      ">الويب والقوالب والبيئة.</h2>"
+      ">Web, mga template at kapaligiran.</h2>"
     ],
     [
       "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
-      "<p class=\"cat-lede\">قوالب بدء، إصداران موجّهان للقطاع، إطار عمل CSS، وملفات dotfiles التي تحافظ على بيئة تطوير قابلة للاستنساخ.</p>"
+      "<p class=\"cat-lede\">Mga panimulang template, dalawang publikasyong nakatuon sa industriya, isang framework ng CSS, at ang mga dotfile na nagpapanatili ng maiuulit na kapaligiran ng pagpapaunlad.</p>"
     ],
     [
       ">What licence are these projects released under\\?</summary>",
-      ">تحت أي ترخيص تُصدر هذه Mga proyekto؟</summary>"
+      ">Sa anong lisensya inilalabas ang mga proyektong ito?</summary>"
     ],
     [
       ">Are these projects production-ready\\?</summary>",
-      ">هل هذه Mga proyekto جاهزة للإنتاج؟</summary>"
+      ">Handa na ba sa produksiyon ang mga proyektong ito?</summary>"
     ],
     [
       ">How can I contribute or report an issue\\?</summary>",
-      ">كيف يمكنني المساهمة أو الإبلاغ عن مشكلة؟</summary>"
+      ">Paano ako makakatulong o makakapag-ulat ng isyu?</summary>"
     ],
     [
       ">Can I use these libraries in a regulated banking environment\\?</summary>",
-      ">هل يمكنني استخدام هذه المكتبات في بيئة مصرفية خاضعة للتنظيم؟</summary>"
+      ">Magagamit ko ba ang mga aklatang ito sa isang reguladong kapaligirang pambangko?</summary>"
     ],
     [
       ">Do you offer commercial support or consulting\\?</summary>",
-      ">هل تقدم دعمًا تجاريًا أو استشارات؟</summary>"
+      ">Nag-aalok ka ba ng komersyal na suporta o konsultasyon?</summary>"
     ],
     [
       ">How do I follow new releases\\?</summary>",
-      ">كيف أتابع الإصدارات الجديدة؟</summary>"
+      ">Paano ko masusubaybayan ang mga bagong labas?</summary>"
     ],
     [
       "(<summary[^>]*>Sous quelle licence ces projets sont-ils publiés \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>جميع Mga proyekto منشورة تحت ترخيص <strong>Apache-2.0</strong>. ملف <code>LICENSE</code> في جذر كل مستودع هو المرجع.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Lahat ng proyekto ay inilalabas sa ilalim ng lisensyang <strong>Apache-2.0</strong>. Ang talaksang <code>LICENSE</code> sa ugat ng bawat repositoryo ang sanggunian.</p></section>"
     ],
     [
       "(<summary[^>]*>Ces projets sont-ils prêts pour la production \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>يعتمد ذلك على المشروع. المكتبات المعلَّمة بـ <em>v1.x</em> مستقرة ومُختبرة تحت الحمل؛ أما ما قبل v1 فهي أسس متينة لكنها قد تتطور. يحدد README الخاص بكل مستودع الحالة الحالية؛ إذا كنت بحاجة إلى ضمان محدد للاستخدام في الإنتاج، <a href=\"/fil/makipag-ugnayan/\">Makipag-ugnayan</a>.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Depende iyon sa proyekto. Ang mga aklatang minarkahan ng <em>v1.x</em> ay matatag at nasubok sa ilalim ng karga; ang mga bago pa sa v1 ay matibay na pundasyon ngunit maaaring magbago pa. Tinutukoy ng README ng bawat repositoryo ang kasalukuyang katayuan; kung kailangan mo ng tiyak na katiyakan para sa paggamit sa produksiyon, <a href=\"/fil/makipag-ugnayan/\">makipag-ugnayan</a>.</p></section>"
     ],
     [
       "(<summary[^>]*>Comment puis-je contribuer ou signaler un problème \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>لكل مشروع مستودع GitHub عام تحت <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. اbuksan issue تصف فيها المشكلة (يُستحسن تقديم مثال مبسط لإعادة الإنتاج) أو pull request مرتبط بـ issue. تخضع المساهمات لـ <em>Developer Certificate of Origin</em> وتتطلب توقيع الـ commits.</p></section>"
+      "\\1<section class=\"qa-a\"><p>May pampublikong repositoryo sa GitHub ang bawat proyekto sa ilalim ng <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Magbukas ng issue na naglalarawan ng suliranin (mas mabuti kung may pinasimpleng halimbawa ng pag-uulit) o isang pull request na nakaugnay sa isang issue. Ang mga ambag ay sakop ng <em>Developer Certificate of Origin</em> at nangangailangan ng nilagdaang commit.</p></section>"
     ],
     [
       "(<summary[^>]*>Puis-je utiliser ces bibliothèques dans un environnement bancaire régulé \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>نعم، مع الاحتياطات المعتادة. المكتبات أعمال مفتوحة المصدر مستقلة، وليست منتجًا خاضعًا للتنظيم. طبّق عملياتك المعتادة لسلسلة التوريد والأمن ومراجعة التبعيات — vendoring عبر مرآتك الداخلية، فحص SBOM، تثبيت Git SHA أو بصمة تشفيرية — قبل أي نشر إنتاجي على بنية المدفوعات التحتية.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Oo, kasama ang karaniwang pag-iingat. Ang mga aklatan ay malayang gawang open source, hindi isang reguladong produkto. Ipatupad ang iyong karaniwang proseso para sa rantsong bekalan, seguridad, at pagsusuri ng dependency — vendoring sa iyong panloob na mirror, pagsusuri ng SBOM, pagtali sa Git SHA o kriptograpikong bakas ng daliri — bago ang anumang pagpapakalat sa produksiyon sa imprastruktura ng pagbabayad.</p></section>"
     ],
     [
       "(<summary[^>]*>Proposez-vous du support commercial ou du conseil \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>نعم، على أساس الانتقاء. تشمل المهام هجرة ISO&nbsp;20022، خارطات طريق الهجرة ما بعد الكمية، والذكاء الاصطناعي التطبيقي في الخدمات المالية. <a href=\"/fil/makipag-ugnayan/\">Makipag-ugnayan</a> بموجز قصير وجدولك الزمني وأي قيود.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Oo, sa piling batayan. Kabilang sa mga gawain ang migrasyon ng ISO&nbsp;20022, mga mapa ng migrasyong post-quantum, at inilapat na AI sa mga serbisyong pinansiyal. <a href=\"/fil/makipag-ugnayan/\">Makipag-ugnayan</a> nang may maikling buod, ang iyong iskedyul, at anumang hadlang.</p></section>"
     ],
     [
       "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>يُعلَن عن كل مقال مؤرَّخ في الموقع عبر <a href=\"/fil/rss.xml\">خلاصة RSS</a> ونشرة <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. كما تنشر المستودعات الفردية إصداراتها على GitHub التي يمكنك متابعتها مباشرة.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Ang bawat artikulong may petsa sa sayt ay inihahayag sa pamamagitan ng <a href=\"/fil/rss.xml\">feed ng RSS</a> at ng newsletter na <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Naglalathala rin ang mga indibidwal na repositoryo ng kanilang mga labas sa GitHub na maaari mong sundan nang tuwiran.</p></section>"
     ],
     [
       ">GET IN TOUCH<",
-      ">Makipag-ugnayan معنا<"
+      ">MAKIPAG-UGNAYAN<"
     ],
     [
       ">Have an idea\\? Let's build it\\.<",
-      "<>لديك فكرة؟ لنبنها معًا.<"
+      ">May ideya ka? Buuin natin ito.<"
     ],
     [
       ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
-      ">تعاون مفتوح المصدر، هندسة بتكليف، أو مجرد حديث Tungkol مستقبل المدفوعات. أيها يناسبك.<"
+      ">Kolaborasyong open source, inhinyeriyang ipinagawa, o isang usapan lamang tungkol sa kinabukasan ng pagbabayad. Alinman ang bagay sa iyo.<"
     ],
     [
       "<p class=\"newsroom-kicker\">FEATURED</p>",
-      "<p class=\"newsroom-kicker\">مميز</p>"
+      "<p class=\"newsroom-kicker\">ITINAMPOK</p>"
     ],
     [
       "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
-      "aria-label=\"وسم: \\1، \\2 مقالات\""
+      "aria-label=\"Tag: \\1, \\2 na post\""
     ],
     [
       "(\\(\\d+) Posts\\)",
-      "\\1 مقالات)"
+      "\\1 na post)"
     ],
     [
       ">Featured Tags \\((\\d+)\\)</h2>",
-      ">Mga tag المميزة (\\1)</h2>"
+      ">Mga itinampok na tag (\\1)</h2>"
     ],
     [
       ">Featured Tags<",
-      ">Mga tag المميزة<"
+      ">Mga itinampok na tag<"
     ],
     [
       "<a class=\"pill ghost\" href=\"/fr/contact/\">Get in touch</a>",
@@ -719,75 +719,75 @@
     ],
     [
       "Made with Static Site Generator: Rust-Powered SSG",
-      "صُنع بـ Static Site Generator: SSG مدعوم بـ Rust"
+      "Ginawa gamit ang Static Site Generator: SSG na pinapagana ng Rust"
     ],
     [
       "Static Site Generator is a Rust-based static site generator built for performance, accessibility and SEO\\. Lightning-fast builds with first-class JSON-LD\\.",
-      "Static Site Generator هو مولد مواقع ثابتة بلغة Rust مصمم للأداء وPagiging accessible وتحسين محركات الMaghanap. بناءات فائقة السرعة مع دعم JSON-LD أصيل."
+      "Ang Static Site Generator ay isang static site generator na nakabatay sa Rust, binuo para sa bilis, pagiging accessible, at optimisasyon sa search engine. Napakabilis na build na may katutubong suporta sa JSON-LD."
     ],
     [
       "Website created with Static Site Generator \\(SSG\\)",
-      "موقع أُنشئ بـ Static Site Generator (SSG)"
+      "Websayt na ginawa gamit ang Static Site Generator (SSG)"
     ],
     [
       "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
-      "Static Site Generator (SSG) أداة فائقة السرعة لتحسين محركات الMaghanap (SEO) والامتثال لمعايير Pagiging accessible."
+      "Ang Static Site Generator (SSG) ay isang napakabilis na kasangkapan para sa optimisasyon sa search engine (SEO) at pagsunod sa pamantayan ng pagiging accessible."
     ],
     [
       "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
-      "فهرس Mga paksa وMga tag: الذكاء الاصطناعي، المدفوعات، الكم، Rust OSS"
+      "Indeks ng mga paksa at tag: AI, pagbabayad, quantum, Rust OSS"
     ],
     [
       "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
-      "تصفح موقع Sebastien Rousseau حسب الموضوع والوسم: الذكاء الاصطناعي، المدفوعات، ISO 20022، التشفير ما بعد الكمي، Rust مفتوح المصدر، والمزيد."
+      "Tuklasin ang sayt ni Sebastien Rousseau ayon sa paksa at tag: AI, pagbabayad, ISO 20022, kriptograpiyang post-quantum, open source na Rust, at iba pa."
     ],
     [
       "Website Accessibility Statement — Standards &amp; Contact",
-      "بيان Pagiging accessible إلى الموقع — المعايير وMakipag-ugnayan"
+      "Pahayag ng pagiging accessible ng websayt — mga pamantayan at pakikipag-ugnayan"
     ],
     [
       "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
-      "يوضح هذا البيان Pagiging accessible إلى موقعنا، وما نقوم به لمعالجتها، وكيفية Makipag-ugnayan معنا بشأن Pagiging accessible إلى الويب."
+      "Ipinapaliwanag ng pahayag na ito ang pagiging accessible ng aming websayt, kung ano ang ginagawa namin upang matugunan ito, at kung paano makikipag-ugnayan sa amin hinggil sa pagiging accessible ng web."
     ],
     [
       "Privacy Statement — How Your Data Is Collected &amp; Used",
-      "بيان Pagkapribado — كيف تُجمع بياناتك وتُستخدم"
+      "Pahayag ng pagkapribado — paano kinokolekta at ginagamit ang iyong datos"
     ],
     [
       "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
-      "تُعلمك هذه الصفحة بسياساتنا المتعلقة بجمع البيانات الشخصية واستخدامها والإفصاح عنها عند استخدامك لموقعنا"
+      "Ipinapaalam sa iyo ng pahinang ito ang aming mga patakaran hinggil sa pagkolekta, paggamit, at paghahayag ng personal na datos kapag ginagamit mo ang aming websayt"
     ],
     [
       "Let's Start a Conversation That Will Make a Real Difference",
-      "لنبدأ محادثة تُحدث فرقًا حقيقيًا"
+      "Simulan natin ang isang usapan na magdudulot ng tunay na pagbabago"
     ],
     [
       "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
-      "هل لديك سؤال أو تعليق؟ يُرجى الMakipag-ugnayan عبر النموذج أدناه. يسعدني دائمًا تلقي رسائلك وسأرد في أقرب وقت ممكن."
+      "May tanong o puna? Mangyaring makipag-ugnayan sa akin gamit ang porma sa ibaba. Lagi akong natutuwang makarinig mula sa iyo at tutugon ako sa lalong madaling panahon."
     ],
     [
       "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
-      "شروط وأحكام استخدام الموقع — Sebastien Rousseau"
+      "Mga tuntunin at kundisyon ng paggamit ng websayt — Sebastien Rousseau"
     ],
     [
       "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
-      "بدخولك إلى هذا الموقع، فإنك تُقر وتوافق على الالتزام بهذه Mga tuntunin والأحكام وبجميع القوانين واللوائح المعمول بها."
+      "Sa pagpasok sa websayt na ito, kinikilala mo at sumasang-ayon kang matali sa mga Tuntunin at Kundisyong ito at sa lahat ng naaangkop na batas at regulasyon."
     ],
     [
       ">Latest research<",
-      ">أحدث Mga publikasyon<"
+      ">Pinakabagong pananaliksik<"
     ],
     [
       ">Read latest research<",
-      ">قراءة أحدث Mga publikasyon<"
+      ">Basahin ang pinakabagong pananaliksik<"
     ],
     [
       ">Featured articles<",
-      ">Mga artikulo المميزة<"
+      ">Mga itinampok na artikulo<"
     ],
     [
       ">All articles<",
-      ">جميع Mga artikulo<"
+      ">Lahat ng artikulo<"
     ],
     [
       ">Read more<",
@@ -799,39 +799,39 @@
     ],
     [
       ">Newest first<",
-      ">Pinakabago أولًا<"
+      ">Pinakabago muna<"
     ],
     [
       ">Oldest first<",
-      ">الأقدم أولًا<"
+      ">Pinakaluma muna<"
     ],
     [
       ">By topic<",
-      ">حسب الموضوع<"
+      ">Ayon sa paksa<"
     ],
     [
       ">All topics<",
-      ">جميع Mga paksa<"
+      ">Lahat ng paksa<"
     ],
     [
       ">By tag<",
-      ">حسب الوسم<"
+      ">Ayon sa tag<"
     ],
     [
       ">All tags<",
-      ">جميع Mga tag<"
+      ">Lahat ng tag<"
     ],
     [
       ">Published<",
-      ">نُشر<"
+      ">Nailathala<"
     ],
     [
       ">Updated<",
-      ">حُدِّث<"
+      ">Na-update<"
     ],
     [
       ">Open source<",
-      ">مصدر مفتوح<"
+      ">Open source<"
     ],
     [
       ">Authored & maintained<",
@@ -843,7 +843,7 @@
     ],
     [
       ">A portfolio of",
-      ">حافظة من"
+      ">Isang portfolio ng"
     ],
     [
       ">Start a conversation<",
@@ -851,11 +851,11 @@
     ],
     [
       ">Drop me a line<",
-      ">أرسل لي رسالة<"
+      ">Magpadala ng mensahe<"
     ],
     [
       ">Learn more<",
-      ">اعرف المزيد<"
+      ">Alamin pa<"
     ],
     [
       ">Subscribe<",
@@ -863,7 +863,7 @@
     ],
     [
       ">Follow<",
-      ">تابع<"
+      ">Sundan<"
     ],
     [
       ">Latest<",
@@ -871,27 +871,27 @@
     ],
     [
       "<h1>White Papers (?:&amp;|&) Research</h1>",
-      "<h1>Mga publikasyon البيضاء وMga publikasyon</h1>"
+      "<h1>Mga white paper at pananaliksik</h1>"
     ],
     [
       "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
-      "<h3><a href=\"/fil/mga-paksa/post-quantum-cryptography/index.html\">التشفير ما بعد الكمي</a></h3>"
+      "<h3><a href=\"/fil/mga-paksa/post-quantum-cryptography/index.html\">Kriptograpiyang post-quantum</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/iso-20022-payments/[^\"]*\">ISO 20022 &amp; Payments</a></h3>",
-      "<h3><a href=\"/fil/mga-paksa/iso-20022-payments/index.html\">ISO 20022 &amp; المدفوعات</a></h3>"
+      "<h3><a href=\"/fil/mga-paksa/iso-20022-payments/index.html\">ISO 20022 at mga pagbabayad</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/applied-ai-banking/[^\"]*\">Applied AI in Banking</a></h3>",
-      "<h3><a href=\"/fil/mga-paksa/applied-ai-banking/index.html\">الذكاء الاصطناعي التطبيقي في الخدمات المصرفية</a></h3>"
+      "<h3><a href=\"/fil/mga-paksa/applied-ai-banking/index.html\">Inilapat na AI sa banking</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/rust-open-source/[^\"]*\">Rust &amp; Open Source</a></h3>",
-      "<h3><a href=\"/fil/mga-paksa/rust-open-source/index.html\">Rust مفتوح المصدر</a></h3>"
+      "<h3><a href=\"/fil/mga-paksa/rust-open-source/index.html\">Rust at open source</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/blockchain-digital-assets/[^\"]*\">Blockchain &amp; Digital Assets</a></h3>",
-      "<h3><a href=\"/fil/mga-paksa/blockchain-digital-assets/index.html\">Blockchain &amp; الأصول الرقمية</a></h3>"
+      "<h3><a href=\"/fil/mga-paksa/blockchain-digital-assets/index.html\">Blockchain at mga digital na ari-arian</a></h3>"
     ],
     [
       "<h1>Enterprise AI Banking (?:&amp;|&) Payment Software Suite</h1>",
@@ -912,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Lumipat na ang mga publikasyon sa Pananaliksik</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Cloud-native na banking\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Cloud-native na banking — banner ng paksa\""
+    ],
+    [
+      "<h3><a href=\"/fil/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/fil/topics/cloud-native-banking/index.html\">Cloud-native na banking</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/fil/mga-paksa/cloud-native-banking/index.html\">Cloud-native na banking</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Platform engineering na nakabatay sa Kubernetes para sa mga institusyong regulado: katatagan sa operasyon na sinubok ayon sa DORA, pagsasanib ng virtual machine at container, soberanong cloud, estratehiya sa paglabas, at ang arkitektura na nagbibigay-daan sa mga bangko na maglabas ng kritikal na serbisyo sa ilalim ng superbisyon.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"Agentic na AI sa banking\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"Agentic na AI sa banking — banner ng paksa\""
+    ],
+    [
+      "<h3><a href=\"/fil/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/fil/topics/agentic-ai-banking/index.html\">Agentic na AI sa banking</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/fil/mga-paksa/agentic-ai-banking/index.html\">Agentic na AI sa banking</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Mga control plane ng ahente, deterministikong semantikong pagruruta, mga policy gate ng OPA, hindi mababagong WORM audit log, at ang lente ng panganib sa modelo ayon sa SR 11-7 / SS1/23 na nagpapalit sa mga awtonomong daloy ng trabaho tungo sa ebidensiyang handa para sa superbisor.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Automation ng treasury\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Automation ng treasury — banner ng paksa\""
+    ],
+    [
+      "<h3><a href=\"/fil/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/fil/topics/treasury-automation/index.html\">Automation ng treasury</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/fil/mga-paksa/treasury-automation/index.html\">Automation ng treasury</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Programmable na likididad, awtonomong treasury, mga makina ng pagbabayad na ISO 20022, at ang mga open-source na kasangkapan na nagpapalit sa CAMT / pacs.008 / MT940 / pain.001 tungo sa naaauditang katalinuhan sa transaksiyon na antas-lupon para sa mga pangkat ng treasury ng korporasyon.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Katatagan sa operasyon at DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Katatagan sa operasyon at DORA — banner ng paksa\""
+    ],
+    [
+      "<h3><a href=\"/fil/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/fil/topics/operational-resilience-dora/index.html\">Katatagan sa operasyon at DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/fil/mga-paksa/operational-resilience-dora/index.html\">Katatagan sa operasyon at DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Pananagutan ng lupon sa ilalim ng Artikulo 5 ng DORA, pag-iipon ng datos ng panganib ayon sa BCBS 239, panganib ng konsentrasyon sa third party, pagsusuri sa paglabas, at ang mga kontrol sa inhinyeriya na nagpapalit sa katatagan sa operasyon mula sa proyektong pagsunod tungo sa scoreboard na handa para sa superbisor.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Stablecoin at tokenisasyon\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Stablecoin at tokenisasyon — banner ng paksa\""
+    ],
+    [
+      "<h3><a href=\"/fil/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/fil/topics/stablecoins-tokenisation/index.html\">Stablecoin at tokenisasyon</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/fil/mga-paksa/stablecoins-tokenisation/index.html\">Stablecoin at tokenisasyon</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Mga tokenisadong deposito, money market fund, mga pilot ng wholesale na digital na salapi ng sentral na bangko, ang BRSRV/BSTBL ng BlackRock, ang GENIUS Act, at ang mga pagpiling pang-inhinyeriya sa likod ng pagpapagana ng programmable na salapi sa loob ng mga reguladong balance sheet.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"Generative AI at malalaking language model\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"Generative AI at malalaking language model — banner ng paksa\""
+    ],
+    [
+      "<h3><a href=\"/fil/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/fil/topics/generative-ai-llms/index.html\">Generative AI at malalaking language model</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/fil/mga-paksa/generative-ai-llms/index.html\">Generative AI at malalaking language model</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Mga foundation model, multimodal na malalaking language model (Gemini, Gemma, Mistral, MM1), prompt engineering, at ang mga open-source na paglabas na humuhubog sa maitatayo ng mga bangko sa loob ng sarili nilang perimetro ng datos.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"AI ng boses at pananalita\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"AI ng boses at pananalita — banner ng paksa\""
+    ],
+    [
+      "<h3><a href=\"/fil/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/fil/topics/voice-speech-ai/index.html\">AI ng boses at pananalita</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/fil/mga-paksa/voice-speech-ai/index.html\">AI ng boses at pananalita</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Pagkopya ng boses, real-time na pagkilala sa pananalita (Whisper), mga voice assistant para sa mga ehekutibo, at ang audio-intelligence stack na muling humuhubog sa karanasan ng kliyente sa private banking.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"Pamamahala at regulasyon ng AI\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"Pamamahala at regulasyon ng AI — banner ng paksa\""
+    ],
+    [
+      "<h3><a href=\"/fil/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/fil/topics/ai-governance-regulation/index.html\">Pamamahala at regulasyon ng AI</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/fil/mga-paksa/ai-governance-regulation/index.html\">Pamamahala at regulasyon ng AI</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Pagsunod sa AI Act ng Unyong Europeo, panganib sa modelo ayon sa SR 11-7, pananagutan sa antas ng lupon, kakayahang ma-audit ng mga awtonomong daloy ng trabaho, at ang balangkas na regulatoryo ng AI sa loob ng mga bangkong Tier-1.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Mga riles ng wholesale na pagbabayad\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Mga riles ng wholesale na pagbabayad — banner ng paksa\""
+    ],
+    [
+      "<h3><a href=\"/fil/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/fil/topics/wholesale-payments-rails/index.html\">Mga riles ng wholesale na pagbabayad</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/fil/mga-paksa/wholesale-payments-rails/index.html\">Mga riles ng wholesale na pagbabayad</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Estratehiyang multi-rail na sumasaklaw sa mga card, paglilipat mula account tungo sa account, RTP, FedNow, open banking, at mga koridor ng stablecoin. Ekonomiya ng wholesale, katapusan ng settlement, at ang modelo ng cross-border na atomicity ng Proyektong Agorá ng BIS.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Kriptograpiya at katatagan</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Kriptograpiya at katatagan</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Paglipat matapos ang quantum, katatagan sa operasyon sa antas ng DORA, at ang balangkas ng pamamahala sa AI sa mga serbisyong pinansiyal.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Pagbabayad at salapi</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Pagbabayad at salapi</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Paglipat sa ISO 20022, wholesale na settlement, stablecoin, tokenisadong deposito, at ang tungkulin ng treasury ng korporasyon sa paligid nila.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>AI at cloud</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI at cloud</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Inilapat na AI, mga agentic na sistema, generative na modelo, AI ng boses at pananalita, at ang mga cloud-native na plataporma ng banking na nagpapatakbo sa kanila.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Open source at sining</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open source at sining</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Mga aklatang Rust, mga primitibo ng blockchain, at ang disiplinang pang-inhinyeriya na open source sa likod nila.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Apat na haligi, labing-apat na kumpol ng paksa, bawat artikulong may petsa. Pumili ng isang hibla at sundan ito sa buong arkibo.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">HALIGI</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Mga haligi</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Mga kumpol ng paksa</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Mga naka-index na artikulo</span>"
     ]
   ]
 }

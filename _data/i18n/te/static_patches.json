@@ -110,7 +110,7 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 వ్యాసం(లు)</p>"
+      "\\1 వ్యాసాలు</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
@@ -162,7 +162,7 @@
     ],
     [
       ">About EPAA</a>",
-      "<>EPAA గురించి</a>"
+      ">EPAA గురించి</a>"
     ],
     [
       "title=\"Visit the Emerging Payments Association Asia\"",
@@ -178,7 +178,7 @@
     ],
     [
       ">Read the article</a>",
-      "<>వ్యాసాన్ని చదవండి</a>"
+      ">వ్యాసాన్ని చదవండి</a>"
     ],
     [
       " · Free download",
@@ -194,7 +194,7 @@
     ],
     [
       ">Request access<",
-      "<>యాక్సెస్ కోరండి<"
+      ">యాక్సెస్ కోరండి<"
     ],
     [
       ">English · PDF",
@@ -310,7 +310,7 @@
     ],
     [
       ">About EPAA</p>",
-      "<>EPAA గురించి</p>"
+      ">EPAA గురించి</p>"
     ],
     [
       "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
@@ -682,7 +682,7 @@
     ],
     [
       ">Have an idea\\? Let's build it\\.<",
-      "<>ఒక ఆలోచన ఉందా? దాన్ని కలిసి నిర్మిద్దాం.<"
+      ">ఒక ఆలోచన ఉందా? దాన్ని కలిసి నిర్మిద్దాం.<"
     ],
     [
       ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
@@ -911,6 +911,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>ప్రచురణలు పరిశోధన విభాగానికి తరలించబడ్డాయి</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"క్లౌడ్-నేటివ్ బ్యాంకింగ్\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"క్లౌడ్-నేటివ్ బ్యాంకింగ్ — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/te/topics/cloud-native-banking/index.html\">క్లౌడ్-నేటివ్ బ్యాంకింగ్</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/te/topics/cloud-native-banking/index.html\">క్లౌడ్-నేటివ్ బ్యాంకింగ్</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">నియంత్రిత సంస్థల కోసం Kubernetes ఆధారిత ప్లాట్‌ఫారమ్ ఇంజనీరింగ్: DORA ప్రకారం పరీక్షించిన నిర్వహణ స్థితిస్థాపకత, వర్చువల్ మెషీన్లు మరియు కంటైనర్ల సమ్మేళనం, సార్వభౌమ క్లౌడ్, నిష్క్రమణ వ్యూహం, మరియు పర్యవేక్షణలో కీలక సేవలను విడుదల చేయడానికి బ్యాంకులకు వీలు కల్పించే నిర్మాణం.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"బ్యాంకింగ్‌లో ఏజెంటిక్ ఏఐ\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"బ్యాంకింగ్‌లో ఏజెంటిక్ ఏఐ — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/te/topics/agentic-ai-banking/index.html\">బ్యాంకింగ్‌లో ఏజెంటిక్ ఏఐ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/te/topics/agentic-ai-banking/index.html\">బ్యాంకింగ్‌లో ఏజెంటిక్ ఏఐ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">ఏజెంట్ నియంత్రణ తలాలు, నిర్ధారణాత్మక అర్థ మార్గనిర్దేశం, OPA విధాన ద్వారాలు, మార్చలేని WORM తనిఖీ నమోదులు, మరియు స్వయంప్రతిపత్త పని ప్రవాహాలను పర్యవేక్షకునికి సమర్పించదగిన సాక్ష్యంగా మార్చే SR 11-7 / SS1/23 నమూనా-ప్రమాద దృక్కోణం.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"ట్రెజరీ ఆటోమేషన్\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"ట్రెజరీ ఆటోమేషన్ — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/te/topics/treasury-automation/index.html\">ట్రెజరీ ఆటోమేషన్</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/te/topics/treasury-automation/index.html\">ట్రెజరీ ఆటోమేషన్</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">ప్రోగ్రామ్ చేయదగిన ద్రవ్యత, స్వయంప్రతిపత్త ట్రెజరీ, ISO 20022 చెల్లింపు యంత్రాలు, మరియు CAMT / pacs.008 / MT940 / pain.001 ఫైళ్లను కార్పొరేట్ ట్రెజరీ బృందాల కోసం తనిఖీ చేయదగిన, డైరెక్టర్ల బోర్డు స్థాయి లావాదేవీ విశ్లేషణగా మార్చే ఓపెన్ సోర్స్ సాధన సముదాయాలు.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"నిర్వహణ స్థితిస్థాపకత మరియు DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"నిర్వహణ స్థితిస్థాపకత మరియు DORA — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/te/topics/operational-resilience-dora/index.html\">నిర్వహణ స్థితిస్థాపకత మరియు DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/te/topics/operational-resilience-dora/index.html\">నిర్వహణ స్థితిస్థాపకత మరియు DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">DORA ఆర్టికల్ 5 కింద బోర్డు జవాబుదారీతనం, BCBS 239 ప్రమాద-సమాచార సమీకరణ, మూడవ పక్ష కేంద్రీకరణ ప్రమాదం, నిష్క్రమణ పరీక్ష, మరియు నిర్వహణ స్థితిస్థాపకతను అనుసరణ ప్రాజెక్టు నుండి పర్యవేక్షకునికి సిద్ధమైన స్కోరుబోర్డుగా మార్చే ఇంజనీరింగ్ నియంత్రణలు.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"స్టేబుల్‌కాయిన్లు మరియు టోకనీకరణ\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"స్టేబుల్‌కాయిన్లు మరియు టోకనీకరణ — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/te/topics/stablecoins-tokenisation/index.html\">స్టేబుల్‌కాయిన్లు మరియు టోకనీకరణ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/te/topics/stablecoins-tokenisation/index.html\">స్టేబుల్‌కాయిన్లు మరియు టోకనీకరణ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">టోకనీకరించిన డిపాజిట్లు, ద్రవ్య మార్కెట్ నిధులు, టోకు కేంద్ర బ్యాంకు డిజిటల్ కరెన్సీ ప్రయోగాలు, BlackRock యొక్క BRSRV/BSTBL, GENIUS చట్టం, మరియు నియంత్రిత బ్యాలెన్స్ షీట్ల లోపల ప్రోగ్రామ్ చేయదగిన డబ్బు పనిచేసేలా చేసే ఇంజనీరింగ్ ఎంపికలు.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"జనరేటివ్ ఏఐ మరియు భారీ భాషా నమూనాలు\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"జనరేటివ్ ఏఐ మరియు భారీ భాషా నమూనాలు — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/te/topics/generative-ai-llms/index.html\">జనరేటివ్ ఏఐ మరియు భారీ భాషా నమూనాలు</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/te/topics/generative-ai-llms/index.html\">జనరేటివ్ ఏఐ మరియు భారీ భాషా నమూనాలు</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">మౌలిక నమూనాలు, బహుళరూప భారీ భాషా నమూనాలు (Gemini, Gemma, Mistral, MM1), ప్రాంప్ట్ ఇంజనీరింగ్, మరియు బ్యాంకులు తమ సొంత సమాచార పరిధిలో ఏమి నిర్మించగలవో నిర్ణయించే ఓపెన్ సోర్స్ విడుదలలు.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"గాత్ర మరియు ప్రసంగ ఏఐ\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"గాత్ర మరియు ప్రసంగ ఏఐ — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/te/topics/voice-speech-ai/index.html\">గాత్ర మరియు ప్రసంగ ఏఐ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/te/topics/voice-speech-ai/index.html\">గాత్ర మరియు ప్రసంగ ఏఐ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">గాత్ర ప్రతిరూపణ, తక్షణ ప్రసంగ గుర్తింపు (Whisper), ఉన్నతాధికారుల కోసం గాత్ర సహాయకులు, మరియు ప్రైవేట్ బ్యాంకింగ్ కస్టమర్ అనుభవాన్ని పునర్నిర్మిస్తున్న ఆడియో-విశ్లేషణ పేర్పు.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"ఏఐ పాలన మరియు నియంత్రణ\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"ఏఐ పాలన మరియు నియంత్రణ — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/te/topics/ai-governance-regulation/index.html\">ఏఐ పాలన మరియు నియంత్రణ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/te/topics/ai-governance-regulation/index.html\">ఏఐ పాలన మరియు నియంత్రణ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">యూరోపియన్ యూనియన్ ఏఐ చట్టానికి అనుగుణ్యత, SR 11-7 నమూనా ప్రమాదం, బోర్డు స్థాయి జవాబుదారీతనం, స్వయంప్రతిపత్త పని ప్రవాహాల తనిఖీ సామర్థ్యం, మరియు అగ్రశ్రేణి బ్యాంకుల్లో ఏఐ నియంత్రణ చట్రం.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"టోకు చెల్లింపు పట్టాలు\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"టోకు చెల్లింపు పట్టాలు — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/te/topics/wholesale-payments-rails/index.html\">టోకు చెల్లింపు పట్టాలు</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/te/topics/wholesale-payments-rails/index.html\">టోకు చెల్లింపు పట్టాలు</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">కార్డులు, ఖాతా-నుండి-ఖాతా బదిలీ, RTP, FedNow, ఓపెన్ బ్యాంకింగ్ మరియు స్టేబుల్‌కాయిన్ కారిడార్ల అంతటా విస్తరించిన బహుళ-పట్టా వ్యూహం. టోకు ఆర్థికశాస్త్రం, పరిష్కార నిశ్చితత్వం, మరియు BIS యొక్క Agorá ప్రాజెక్టు సరిహద్దు-దాటు అవిభాజ్యత నమూనా.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>గూఢలిపి శాస్త్రం మరియు స్థితిస్థాపకత</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">గూఢలిపి శాస్త్రం మరియు స్థితిస్థాపకత</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">క్వాంటం-అనంతర వలస, DORA స్థాయి నిర్వహణ స్థితిస్థాపకత, మరియు ఆర్థిక సేవల్లో ఏఐ పాలన చట్రం.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>చెల్లింపులు మరియు డబ్బు</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">చెల్లింపులు మరియు డబ్బు</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">ISO 20022 వలస, టోకు పరిష్కారం, స్టేబుల్‌కాయిన్లు, టోకనీకరించిన డిపాజిట్లు, మరియు వాటి చుట్టూ ఉన్న కార్పొరేట్ ట్రెజరీ విధి.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>ఏఐ మరియు క్లౌడ్</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">ఏఐ మరియు క్లౌడ్</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">అనువర్తిత ఏఐ, ఏజెంటిక్ వ్యవస్థలు, జనరేటివ్ నమూనాలు, గాత్ర మరియు ప్రసంగ ఏఐ, మరియు వాటిని నడిపే క్లౌడ్-నేటివ్ బ్యాంకింగ్ ప్లాట్‌ఫారమ్‌లు.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>ఓపెన్ సోర్స్ మరియు నైపుణ్యం</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">ఓపెన్ సోర్స్ మరియు నైపుణ్యం</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Rust గ్రంథాలయాలు, బ్లాక్‌చెయిన్ మౌలిక అంశాలు, మరియు వాటి వెనుక ఉన్న ఓపెన్ సోర్స్ ఇంజనీరింగ్ క్రమశిక్షణ.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">నాలుగు స్తంభాలు, పద్నాలుగు అంశ సమూహాలు, తేదీ వేసిన ప్రతి వ్యాసం. ఒక దారాన్ని ఎంచుకుని దానిని ఆర్కైవ్ అంతటా అనుసరించండి.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">స్తంభం</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">స్తంభాలు</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">అంశ సమూహాలు</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">సూచీకరించిన వ్యాసాలు</span>"
     ]
   ]
 }

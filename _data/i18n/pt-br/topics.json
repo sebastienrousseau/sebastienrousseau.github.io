@@ -19,5 +19,68 @@
   "blockchain-digital-assets": {
     "title": "Blockchain e ativos digitais",
     "lede": "Blockchain e ativos digitais: tokenização, ERC-20, stablecoins, infraestrutura de criptomoedas e o arcabouço regulatório que os molda."
-  }
+  },
+  "cloud-native-banking": {
+    "title": "Banking nativo em nuvem",
+    "lede": "Engenharia de plataforma baseada em Kubernetes para instituições reguladas: resiliência operacional testada segundo a DORA, convergência entre máquinas virtuais e contêineres, nuvem soberana, estratégia de saída e a arquitetura que permite aos bancos entregar serviços críticos sob supervisão."
+  },
+  "agentic-ai-banking": {
+    "title": "IA agêntica no setor bancário",
+    "lede": "Planos de controle de agentes, roteamento semântico determinístico, portões de política OPA, registros de auditoria WORM imutáveis e a lente de risco de modelo SR 11-7 / SS1/23 que transforma fluxos autônomos em evidências prontas para o supervisor."
+  },
+  "treasury-automation": {
+    "title": "Automação de tesouraria",
+    "lede": "Liquidez programável, tesouraria autônoma, motores de pagamento ISO 20022 e os kits de ferramentas de código aberto que transformam CAMT / pacs.008 / MT940 / pain.001 em inteligência de transações auditável e de nível de conselho para equipes de tesouraria corporativa."
+  },
+  "operational-resilience-dora": {
+    "title": "Resiliência operacional e DORA",
+    "lede": "Responsabilidade do conselho segundo o artigo 5º da DORA, agregação de dados de risco BCBS 239, risco de concentração em terceiros, testes de saída e os controles de engenharia que transformam a resiliência operacional de um projeto de conformidade em um painel pronto para o supervisor."
+  },
+  "stablecoins-tokenisation": {
+    "title": "Stablecoins e tokenização",
+    "lede": "Depósitos tokenizados, fundos de mercado monetário, pilotos de CBDC de atacado, BRSRV/BSTBL da BlackRock, a Lei GENIUS e as escolhas de engenharia por trás de fazer o dinheiro programável funcionar dentro de balanços regulados."
+  },
+  "generative-ai-llms": {
+    "title": "IA generativa e LLMs",
+    "lede": "Modelos fundacionais, LLMs multimodais (Gemini, Gemma, Mistral, MM1), engenharia de prompts e os lançamentos de código aberto que moldam o que os bancos podem construir dentro do próprio perímetro de dados."
+  },
+  "voice-speech-ai": {
+    "title": "IA de voz e fala",
+    "lede": "Clonagem de voz, reconhecimento de fala em tempo real (Whisper), assistentes de voz para executivos e a pilha de inteligência de áudio que está remodelando a experiência do cliente no private banking."
+  },
+  "ai-governance-regulation": {
+    "title": "Governança e regulação da IA",
+    "lede": "Conformidade com o Regulamento Europeu de IA, risco de modelo SR 11-7, responsabilidade no nível do conselho, auditabilidade de fluxos autônomos e o arcabouço regulatório da IA dentro dos bancos de primeira linha."
+  },
+  "wholesale-payments-rails": {
+    "title": "Trilhos de pagamentos de atacado",
+    "lede": "Estratégia multitrilho abrangendo cartões, A2A, RTP, FedNow, open banking e corredores de stablecoin. Economia de atacado, caráter definitivo da liquidação e o modelo de atomicidade transfronteiriça do Projeto Agorá do BIS."
+  },
+  "_pillars": [
+    {
+      "name": "Criptografia e resiliência",
+      "lede": "Migração pós-quântica, resiliência operacional no nível da DORA e o arcabouço de governança da IA em serviços financeiros."
+    },
+    {
+      "name": "Pagamentos e dinheiro",
+      "lede": "Migração para ISO 20022, liquidação de atacado, stablecoins, depósitos tokenizados e a função de tesouraria corporativa ao redor deles."
+    },
+    {
+      "name": "IA e nuvem",
+      "lede": "IA aplicada, sistemas agênticos, modelos generativos, IA de voz e fala, e as plataformas bancárias nativas em nuvem que os hospedam."
+    },
+    {
+      "name": "Código aberto e ofício",
+      "lede": "Bibliotecas Rust, primitivas de blockchain e a disciplina de engenharia de código aberto por trás delas."
+    }
+  ],
+  "_hub_lede": "Quatro pilares, quatorze grupos temáticos, cada artigo datado. Escolha um fio e siga-o pelo arquivo.",
+  "_banner_word": "banner do tema",
+  "_kpi": [
+    "Pilares",
+    "Grupos temáticos",
+    "Artigos indexados"
+  ],
+  "_article_count": "{n} artigo(s)",
+  "_pillar_kicker": "PILAR"
 }

@@ -110,7 +110,7 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 مقاله</p>"
+      "\\1 نوشته</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
@@ -162,7 +162,7 @@
     ],
     [
       ">About EPAA</a>",
-      "<>درباره EPAA</a>"
+      ">درباره EPAA</a>"
     ],
     [
       "title=\"Visit the Emerging Payments Association Asia\"",
@@ -178,7 +178,7 @@
     ],
     [
       ">Read the article</a>",
-      "<>خواندن مقاله</a>"
+      ">خواندن مقاله</a>"
     ],
     [
       " · Free download",
@@ -194,7 +194,7 @@
     ],
     [
       ">Request access<",
-      "<>درخواست دسترسی<"
+      ">درخواست دسترسی<"
     ],
     [
       ">English · PDF",
@@ -310,7 +310,7 @@
     ],
     [
       ">About EPAA</p>",
-      "<>درباره EPAA</p>"
+      ">درباره EPAA</p>"
     ],
     [
       "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
@@ -682,7 +682,7 @@
     ],
     [
       ">Have an idea\\? Let's build it\\.<",
-      "<>ایده‌ای دارید؟ بیایید با هم بسازیمش.<"
+      ">ایده‌ای دارید؟ بیایید با هم بسازیمش.<"
     ],
     [
       ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
@@ -911,6 +911,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>انتشارات به بخش پژوهش منتقل شده است</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"بانکداری بومی ابری\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"بانکداری بومی ابری — بنر موضوع\""
+    ],
+    [
+      "<h3><a href=\"/fa/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/fa/topics/cloud-native-banking/index.html\">بانکداری بومی ابری</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/fa/topics/cloud-native-banking/index.html\">بانکداری بومی ابری</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">مهندسی پلتفرم مبتنی بر Kubernetes برای نهادهای تحت نظارت: تاب‌آوری عملیاتی آزموده‌شده بر پایه DORA، هم‌گرایی ماشین‌های مجازی و کانتینرها، ابر حاکمیتی، راهبرد خروج، و معماری‌ای که به بانک‌ها اجازه می‌دهد خدمات حیاتی را زیر نظارت منتشر کنند.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"هوش مصنوعی عامل‌محور در بانکداری\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"هوش مصنوعی عامل‌محور در بانکداری — بنر موضوع\""
+    ],
+    [
+      "<h3><a href=\"/fa/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/fa/topics/agentic-ai-banking/index.html\">هوش مصنوعی عامل‌محور در بانکداری</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/fa/topics/agentic-ai-banking/index.html\">هوش مصنوعی عامل‌محور در بانکداری</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">لایه‌های کنترل عامل، مسیریابی معنایی قطعی، دروازه‌های سیاست OPA، گزارش‌های ممیزی تغییرناپذیر WORM، و عدسی ریسک مدل بر پایه SR 11-7 / SS1/23 که جریان‌های کاری خودگردان را به شواهد آماده برای ناظر تبدیل می‌کند.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"خودکارسازی خزانه‌داری\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"خودکارسازی خزانه‌داری — بنر موضوع\""
+    ],
+    [
+      "<h3><a href=\"/fa/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/fa/topics/treasury-automation/index.html\">خودکارسازی خزانه‌داری</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/fa/topics/treasury-automation/index.html\">خودکارسازی خزانه‌داری</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">نقدینگی برنامه‌پذیر، خزانه‌داری خودگردان، موتورهای پرداخت ISO 20022، و جعبه‌ابزارهای متن‌باز که CAMT / pacs.008 / MT940 / pain.001 را به هوشمندی تراکنشی قابل ممیزی و در تراز هیئت‌مدیره برای تیم‌های خزانه‌داری شرکتی تبدیل می‌کنند.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"تاب‌آوری عملیاتی و DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"تاب‌آوری عملیاتی و DORA — بنر موضوع\""
+    ],
+    [
+      "<h3><a href=\"/fa/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/fa/topics/operational-resilience-dora/index.html\">تاب‌آوری عملیاتی و DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/fa/topics/operational-resilience-dora/index.html\">تاب‌آوری عملیاتی و DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">پاسخ‌گویی هیئت‌مدیره بر پایه ماده ۵ DORA، تجمیع داده‌های ریسک بر پایه BCBS 239، ریسک تمرکز طرف‌های ثالث، آزمون خروج، و کنترل‌های مهندسی که تاب‌آوری عملیاتی را از یک پروژه انطباق به تابلوی امتیاز آماده برای ناظر تبدیل می‌کنند.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"استیبل‌کوین‌ها و توکن‌سازی\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"استیبل‌کوین‌ها و توکن‌سازی — بنر موضوع\""
+    ],
+    [
+      "<h3><a href=\"/fa/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/fa/topics/stablecoins-tokenisation/index.html\">استیبل‌کوین‌ها و توکن‌سازی</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/fa/topics/stablecoins-tokenisation/index.html\">استیبل‌کوین‌ها و توکن‌سازی</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">سپرده‌های توکن‌شده، صندوق‌های بازار پول، طرح‌های آزمایشی پول دیجیتال بانک مرکزی در سطح عمده، محصولات BRSRV/BSTBL بلک‌راک، قانون GENIUS، و انتخاب‌های مهندسی پشت کارکرد پول برنامه‌پذیر درون ترازنامه‌های تحت نظارت.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"هوش مصنوعی مولد و مدل‌های زبانی بزرگ\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"هوش مصنوعی مولد و مدل‌های زبانی بزرگ — بنر موضوع\""
+    ],
+    [
+      "<h3><a href=\"/fa/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/fa/topics/generative-ai-llms/index.html\">هوش مصنوعی مولد و مدل‌های زبانی بزرگ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/fa/topics/generative-ai-llms/index.html\">هوش مصنوعی مولد و مدل‌های زبانی بزرگ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">مدل‌های پایه، مدل‌های زبانی بزرگ چندوجهی (Gemini، Gemma، Mistral، MM1)، مهندسی پرامپت، و انتشارهای متن‌باز که تعیین می‌کنند بانک‌ها درون محیط داده خود چه می‌توانند بسازند.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"هوش مصنوعی صوت و گفتار\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"هوش مصنوعی صوت و گفتار — بنر موضوع\""
+    ],
+    [
+      "<h3><a href=\"/fa/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/fa/topics/voice-speech-ai/index.html\">هوش مصنوعی صوت و گفتار</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/fa/topics/voice-speech-ai/index.html\">هوش مصنوعی صوت و گفتار</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">شبیه‌سازی صدا، بازشناسی گفتار بی‌درنگ (Whisper)، دستیارهای صوتی مدیران ارشد، و پشته هوشمندی صوتی که تجربه مشتری بانکداری خصوصی را بازتعریف می‌کند.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"حکمرانی و مقررات هوش مصنوعی\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"حکمرانی و مقررات هوش مصنوعی — بنر موضوع\""
+    ],
+    [
+      "<h3><a href=\"/fa/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/fa/topics/ai-governance-regulation/index.html\">حکمرانی و مقررات هوش مصنوعی</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/fa/topics/ai-governance-regulation/index.html\">حکمرانی و مقررات هوش مصنوعی</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">انطباق با قانون هوش مصنوعی اتحادیه اروپا، ریسک مدل بر پایه SR 11-7، پاسخ‌گویی در سطح هیئت‌مدیره، ممیزی‌پذیری جریان‌های کاری خودگردان، و چارچوب مقرراتی هوش مصنوعی در بانک‌های رده نخست.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"ریل‌های پرداخت عمده\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"ریل‌های پرداخت عمده — بنر موضوع\""
+    ],
+    [
+      "<h3><a href=\"/fa/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/fa/topics/wholesale-payments-rails/index.html\">ریل‌های پرداخت عمده</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/fa/topics/wholesale-payments-rails/index.html\">ریل‌های پرداخت عمده</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">راهبرد چندریلی در گستره کارت‌ها، انتقال حساب‌به‌حساب، RTP، FedNow، بانکداری باز و کریدورهای استیبل‌کوین. اقتصاد عمده، قطعیت تسویه، و مدل اتمی بودن فرامرزی پروژه Agorá بانک تسویه بین‌المللی.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>رمزنگاری و تاب‌آوری</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">رمزنگاری و تاب‌آوری</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">مهاجرت پساکوانتومی، تاب‌آوری عملیاتی در تراز DORA، و چارچوب حکمرانی هوش مصنوعی در خدمات مالی.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>پرداخت‌ها و پول</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">پرداخت‌ها و پول</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">مهاجرت به ISO 20022، تسویه عمده، استیبل‌کوین‌ها، سپرده‌های توکن‌شده، و کارکرد خزانه‌داری شرکتی پیرامون آن‌ها.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>هوش مصنوعی و ابر</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">هوش مصنوعی و ابر</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">هوش مصنوعی کاربردی، سامانه‌های عامل‌محور، مدل‌های مولد، هوش مصنوعی صوت و گفتار، و پلتفرم‌های بانکی بومی ابری که میزبان آن‌ها هستند.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>متن‌باز و پیشه‌وری</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">متن‌باز و پیشه‌وری</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">کتابخانه‌های Rust، عناصر بنیادین بلاک‌چین، و انضباط مهندسی متن‌باز پشت آن‌ها.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">چهار ستون، چهارده خوشه موضوعی، هر نوشته تاریخ‌دار. رشته‌ای برگزینید و آن را در سراسر بایگانی دنبال کنید.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">ستون</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">ستون‌ها</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">خوشه‌های موضوعی</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">نوشته‌های نمایه‌شده</span>"
     ]
   ]
 }

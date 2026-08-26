@@ -19,5 +19,68 @@
   "blockchain-digital-assets": {
     "title": "Blockchain ve dijital varlıklar",
     "lede": "Blockchain ve dijital varlıklar: tokenizasyon, ERC-20, stablecoin'ler, kripto para altyapısı ve bunları şekillendiren düzenleyici çerçeve."
-  }
+  },
+  "cloud-native-banking": {
+    "title": "Bulut yerlisi bankacılık",
+    "lede": "Düzenlemeye tabi kurumlar için Kubernetes tabanlı platform mühendisliği: DORA ölçütlerine göre sınanmış operasyonel dayanıklılık, sanal makine ile konteyner yakınsaması, egemen bulut, çıkış stratejisi ve bankaların kritik hizmetleri denetim altında yayına almasını sağlayan mimari."
+  },
+  "agentic-ai-banking": {
+    "title": "Bankacılıkta etmen tabanlı yapay zekâ",
+    "lede": "Etmen denetim düzlemleri, belirlenimci anlamsal yönlendirme, OPA politika kapıları, değiştirilemez WORM denetim kayıtları ve özerk iş akışlarını denetime hazır kanıta dönüştüren SR 11-7 / SS1/23 model riski merceği."
+  },
+  "treasury-automation": {
+    "title": "Hazine otomasyonu",
+    "lede": "Programlanabilir likidite, özerk hazine, ISO 20022 ödeme motorları ve CAMT / pacs.008 / MT940 / pain.001 dosyalarını kurumsal hazine ekipleri için denetlenebilir, yönetim kuruluna sunulabilir işlem zekâsına dönüştüren açık kaynaklı araç takımları."
+  },
+  "operational-resilience-dora": {
+    "title": "Operasyonel dayanıklılık ve DORA",
+    "lede": "DORA 5. madde kapsamında yönetim kurulu sorumluluğu, BCBS 239 risk verisi toplulaştırma, üçüncü taraf yoğunlaşma riski, çıkış testleri ve operasyonel dayanıklılığı bir uyum projesinden denetime hazır bir puan tablosuna dönüştüren mühendislik kontrolleri."
+  },
+  "stablecoins-tokenisation": {
+    "title": "Sabit paralar ve tokenleştirme",
+    "lede": "Tokenleştirilmiş mevduat, para piyasası fonları, toptan CBDC pilotları, BlackRock'ın BRSRV/BSTBL ürünleri, GENIUS Yasası ve programlanabilir paranın düzenlemeye tabi bilançolar içinde çalışmasını sağlayan mühendislik tercihleri."
+  },
+  "generative-ai-llms": {
+    "title": "Üretken yapay zekâ ve büyük dil modelleri",
+    "lede": "Temel modeller, çok kipli büyük dil modelleri (Gemini, Gemma, Mistral, MM1), istem mühendisliği ve bankaların kendi veri çevrelerinde ne kurabileceğini belirleyen açık kaynak sürümleri."
+  },
+  "voice-speech-ai": {
+    "title": "Ses ve konuşma yapay zekâsı",
+    "lede": "Ses klonlama, gerçek zamanlı konuşma tanıma (Whisper), yöneticilere yönelik sesli asistanlar ve özel bankacılık müşteri deneyimini yeniden biçimlendiren ses zekâsı yığını."
+  },
+  "ai-governance-regulation": {
+    "title": "Yapay zekâ yönetişimi ve düzenlemesi",
+    "lede": "AB Yapay Zekâ Yasası uyumu, SR 11-7 model riski, yönetim kurulu düzeyinde sorumluluk, özerk iş akışlarının denetlenebilirliği ve birinci kademe bankalarda yapay zekânın düzenleyici çerçevesi."
+  },
+  "wholesale-payments-rails": {
+    "title": "Toptan ödeme rayları",
+    "lede": "Kartlar, A2A, RTP, FedNow, açık bankacılık ve sabit para koridorlarını kapsayan çok raylı strateji. Toptan ekonomi, mutabakatın kesinliği ve BIS Agorá Projesi'nin sınır ötesi bölünmezlik modeli."
+  },
+  "_pillars": [
+    {
+      "name": "Kriptografi ve dayanıklılık",
+      "lede": "Kuantum sonrası geçiş, DORA düzeyinde operasyonel dayanıklılık ve finansal hizmetlerde yapay zekâ yönetişimi çerçevesi."
+    },
+    {
+      "name": "Ödemeler ve para",
+      "lede": "ISO 20022 geçişi, toptan mutabakat, sabit paralar, tokenleştirilmiş mevduat ve bunları çevreleyen kurumsal hazine işlevi."
+    },
+    {
+      "name": "Yapay zekâ ve bulut",
+      "lede": "Uygulamalı yapay zekâ, etmen tabanlı sistemler, üretken modeller, ses yapay zekâsı ve bunları barındıran bulut yerlisi bankacılık platformları."
+    },
+    {
+      "name": "Açık kaynak ve zanaat",
+      "lede": "Rust kütüphaneleri, blok zinciri ilkelleri ve bunların ardındaki açık kaynak mühendislik disiplini."
+    }
+  ],
+  "_hub_lede": "Dört sütun, on dört konu kümesi, tarihli her yazı. Bir ipucu seçin ve arşiv boyunca izleyin.",
+  "_banner_word": "konu afişi",
+  "_kpi": [
+    "Sütunlar",
+    "Konu kümeleri",
+    "Dizinlenen yazılar"
+  ],
+  "_article_count": "{n} yazı",
+  "_pillar_kicker": "SÜTUN"
 }

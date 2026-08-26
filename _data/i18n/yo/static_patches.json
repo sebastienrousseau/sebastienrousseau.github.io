@@ -111,7 +111,7 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 article(s)</p>"
+      "Àpilẹ̀kọ \\1</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
@@ -912,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Àwọn ìtẹ̀jáde ti kó lọ sí Ìwádìí</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Ìfowópamọ́ tí a kọ́ lórí àwọsánmà\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Ìfowópamọ́ tí a kọ́ lórí àwọsánmà — àsíá kókó\""
+    ],
+    [
+      "<h3><a href=\"/yo/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/yo/topics/cloud-native-banking/index.html\">Ìfowópamọ́ tí a kọ́ lórí àwọsánmà</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/yo/awon-koko/cloud-native-banking/index.html\">Ìfowópamọ́ tí a kọ́ lórí àwọsánmà</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Iṣẹ́ ẹ̀rọ pẹpẹ tí a gbé lé Kubernetes fún àwọn ilé iṣẹ́ tí a ń bójú tó: agbára ìfaradà iṣẹ́ tí a dán wò lórí DORA, ìṣọ̀kan ẹ̀rọ àfojúrí àti kọ̀ntaínà, àwọsánmà olómìnira, ètò ìjáde, àti ìkọ́lé tí ń jẹ́ kí àwọn ilé ìfowópamọ́ tú àwọn iṣẹ́ pàtàkì sílẹ̀ lábẹ́ ìbójútó.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"Òye àtọwọ́dá aṣojú nínú ilé ìfowópamọ́\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"Òye àtọwọ́dá aṣojú nínú ilé ìfowópamọ́ — àsíá kókó\""
+    ],
+    [
+      "<h3><a href=\"/yo/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/yo/topics/agentic-ai-banking/index.html\">Òye àtọwọ́dá aṣojú nínú ilé ìfowópamọ́</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/yo/awon-koko/agentic-ai-banking/index.html\">Òye àtọwọ́dá aṣojú nínú ilé ìfowópamọ́</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Àwọn ẹ̀ka ìdarí aṣojú, ìtọ́sọ́nà ìtumọ̀ tí a ti pinnu tẹ́lẹ̀, àwọn ẹnu-ọ̀nà ìlànà OPA, àwọn àkọsílẹ̀ àyẹ̀wò WORM tí kò ṣeé yípadà, àti ojú ìwòye eewu àwòṣe SR 11-7 / SS1/23 tí ń sọ àwọn iṣẹ́ àdáṣe di ẹ̀rí tí ó ṣetán fún alábòójútó.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Ìṣàkóso owó ìṣúra lọ́nà adáṣe\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Ìṣàkóso owó ìṣúra lọ́nà adáṣe — àsíá kókó\""
+    ],
+    [
+      "<h3><a href=\"/yo/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/yo/topics/treasury-automation/index.html\">Ìṣàkóso owó ìṣúra lọ́nà adáṣe</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/yo/awon-koko/treasury-automation/index.html\">Ìṣàkóso owó ìṣúra lọ́nà adáṣe</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Owó tí ó ṣeé ṣètò, ìṣúra adáṣe, àwọn ẹ̀rọ ìsanwó ISO 20022, àti àwọn irinṣẹ́ orísun ṣíṣí tí ń sọ CAMT / pacs.008 / MT940 / pain.001 di òye ìtajà tí ó ṣeé yẹ̀wò ní ìpele ìgbìmọ̀ olùdarí fún àwọn ẹgbẹ́ ìṣúra ilé iṣẹ́.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Agbára ìfaradà iṣẹ́ àti DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Agbára ìfaradà iṣẹ́ àti DORA — àsíá kókó\""
+    ],
+    [
+      "<h3><a href=\"/yo/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/yo/topics/operational-resilience-dora/index.html\">Agbára ìfaradà iṣẹ́ àti DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/yo/awon-koko/operational-resilience-dora/index.html\">Agbára ìfaradà iṣẹ́ àti DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Ojúṣe ìgbìmọ̀ olùdarí lábẹ́ Abala 5 DORA, ìkójọpọ̀ dátà eewu BCBS 239, eewu ìdojúkọ ẹgbẹ́ kẹta, ìdánwò ìjáde, àti àwọn ìdarí ẹ̀rọ tí ń sọ agbára ìfaradà iṣẹ́ láti inú iṣẹ́ ìbámu di pátákó àmì tí ó ṣetán fún alábòójútó.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Owó dígítà tí kò yípadà àti títokenì\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Owó dígítà tí kò yípadà àti títokenì — àsíá kókó\""
+    ],
+    [
+      "<h3><a href=\"/yo/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/yo/topics/stablecoins-tokenisation/index.html\">Owó dígítà tí kò yípadà àti títokenì</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/yo/awon-koko/stablecoins-tokenisation/index.html\">Owó dígítà tí kò yípadà àti títokenì</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Àwọn ìfipamọ́ tí a tokenì, àwọn owó ọjà ìnáwó, àwọn ìdánwò owó dígítà báńkì àárín ńlá, BRSRV/BSTBL ti BlackRock, Òfin GENIUS, àti àwọn ìpinnu ẹ̀rọ tí ń mú kí owó tí ó ṣeé ṣètò ṣiṣẹ́ nínú àwọn ìwé ìwọ̀ntúnwọ̀nsì tí a ń bójú tó.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"Òye àtọwọ́dá aṣèdá àti àwọn àwòṣe èdè ńlá\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"Òye àtọwọ́dá aṣèdá àti àwọn àwòṣe èdè ńlá — àsíá kókó\""
+    ],
+    [
+      "<h3><a href=\"/yo/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/yo/topics/generative-ai-llms/index.html\">Òye àtọwọ́dá aṣèdá àti àwọn àwòṣe èdè ńlá</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/yo/awon-koko/generative-ai-llms/index.html\">Òye àtọwọ́dá aṣèdá àti àwọn àwòṣe èdè ńlá</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Àwọn àwòṣe ìpìlẹ̀, àwọn àwòṣe èdè ńlá oníhun púpọ̀ (Gemini, Gemma, Mistral, MM1), iṣẹ́ ẹ̀rọ ìtọ́ni, àti àwọn ìtújáde orísun ṣíṣí tí ń pinnu ohun tí àwọn ilé ìfowópamọ́ lè kọ́ nínú àgbègbè dátà tiwọn.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"Òye àtọwọ́dá ohùn àti ọ̀rọ̀ sísọ\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"Òye àtọwọ́dá ohùn àti ọ̀rọ̀ sísọ — àsíá kókó\""
+    ],
+    [
+      "<h3><a href=\"/yo/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/yo/topics/voice-speech-ai/index.html\">Òye àtọwọ́dá ohùn àti ọ̀rọ̀ sísọ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/yo/awon-koko/voice-speech-ai/index.html\">Òye àtọwọ́dá ohùn àti ọ̀rọ̀ sísọ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Ìdàkọ ohùn, ìdámọ̀ ọ̀rọ̀ sísọ lẹ́sẹ̀kẹsẹ̀ (Whisper), àwọn olùrànlọ́wọ́ ohùn fún àwọn olórí, àti àkójọpọ̀ òye ohùn tí ń tún ìrírí oníbàárà ilé ìfowópamọ́ àdáni kọ́.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"Ìṣàkóso àti ìlànà òye àtọwọ́dá\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"Ìṣàkóso àti ìlànà òye àtọwọ́dá — àsíá kókó\""
+    ],
+    [
+      "<h3><a href=\"/yo/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/yo/topics/ai-governance-regulation/index.html\">Ìṣàkóso àti ìlànà òye àtọwọ́dá</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/yo/awon-koko/ai-governance-regulation/index.html\">Ìṣàkóso àti ìlànà òye àtọwọ́dá</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Ìbámu pẹ̀lú Òfin Òye Àtọwọ́dá ti Ẹgbẹ́ Yúróòpù, eewu àwòṣe SR 11-7, ojúṣe ní ìpele ìgbìmọ̀ olùdarí, agbára àyẹ̀wò àwọn iṣẹ́ àdáṣe, àti ìlànà òfin òye àtọwọ́dá nínú àwọn ilé ìfowópamọ́ ńlá.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Àwọn ọ̀nà ìsanwó ńlá\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Àwọn ọ̀nà ìsanwó ńlá — àsíá kókó\""
+    ],
+    [
+      "<h3><a href=\"/yo/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/yo/topics/wholesale-payments-rails/index.html\">Àwọn ọ̀nà ìsanwó ńlá</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/yo/awon-koko/wholesale-payments-rails/index.html\">Àwọn ọ̀nà ìsanwó ńlá</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Ètò ọ̀nà púpọ̀ tí ó gba káàdì, ìfiránṣẹ́ láti àkàǹtì sí àkàǹtì, RTP, FedNow, ìfowópamọ́ ṣíṣí, àti àwọn ọ̀nà owó dígítà tí kò yípadà. Ọrọ̀ ajé ńlá, ìparí ìsanwó, àti àwòṣe àìpínyà káàkiri ilẹ̀ ti Iṣẹ́ Agorá ti BIS.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Ìkọ̀wé àṣírí àti ìfaradà</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Ìkọ̀wé àṣírí àti ìfaradà</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Ìṣílọ lẹ́yìn kúántọ̀mù, agbára ìfaradà iṣẹ́ ní ìpele DORA, àti ìlànà ìṣàkóso òye àtọwọ́dá nínú àwọn iṣẹ́ ìnáwó.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Ìsanwó àti owó</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Ìsanwó àti owó</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Ìṣílọ ISO 20022, ìsanwó ńlá, owó dígítà tí kò yípadà, àwọn ìfipamọ́ tí a tokenì, àti iṣẹ́ ìṣúra ilé iṣẹ́ tí ó yí wọn ká.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>Òye àtọwọ́dá àti àwọsánmà</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">Òye àtọwọ́dá àti àwọsánmà</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Òye àtọwọ́dá ìlò, àwọn ètò aṣojú, àwọn àwòṣe aṣèdá, òye ohùn àti ọ̀rọ̀ sísọ, àti àwọn pẹpẹ ìfowópamọ́ àwọsánmà tí ń gbé wọn.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Orísun ṣíṣí àti iṣẹ́ ọwọ́</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Orísun ṣíṣí àti iṣẹ́ ọwọ́</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Àwọn ilé ìkàwé Rust, àwọn ìpìlẹ̀ blockchain, àti ìlànà iṣẹ́ ẹ̀rọ orísun ṣíṣí tí ó wà lẹ́yìn wọn.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Ọwọ̀n mẹ́rin, ìdìpọ̀ kókó mẹ́rìnlá, gbogbo àpilẹ̀kọ tí ó ní ọjọ́. Yan okùn kan kí o sì tẹ̀lé e káàkiri ilé ìpamọ́.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">ỌWỌ̀N</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Ọwọ̀n</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Ìdìpọ̀ kókó</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Àwọn àpilẹ̀kọ tí a tò</span>"
     ]
   ]
 }

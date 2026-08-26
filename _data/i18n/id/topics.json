@@ -19,5 +19,68 @@
   "blockchain-digital-assets": {
     "title": "Blockchain & Aset digital",
     "lede": "Blockchain dan aset digital: tokenisasi, ERC-20, stablecoin, infrastruktur mata uang kripto, dan kerangka regulasi yang membentuknya."
-  }
+  },
+  "cloud-native-banking": {
+    "title": "Perbankan cloud-native",
+    "lede": "Rekayasa platform berbasis Kubernetes untuk institusi yang diawasi: ketahanan operasional yang diuji menurut DORA, konvergensi mesin virtual dan kontainer, cloud berdaulat, strategi keluar, serta arsitektur yang memungkinkan bank merilis layanan kritis di bawah pengawasan."
+  },
+  "agentic-ai-banking": {
+    "title": "AI agentik dalam perbankan",
+    "lede": "Bidang kendali agen, perutean semantik deterministik, gerbang kebijakan OPA, log audit WORM yang tidak dapat diubah, dan lensa risiko model SR 11-7 / SS1/23 yang mengubah alur kerja otonom menjadi bukti siap pengawas."
+  },
+  "treasury-automation": {
+    "title": "Otomatisasi treasuri",
+    "lede": "Likuiditas terprogram, treasuri otonom, mesin pembayaran ISO 20022, dan perangkat sumber terbuka yang mengubah CAMT / pacs.008 / MT940 / pain.001 menjadi intelijen transaksi yang dapat diaudit dan setara tingkat dewan bagi tim treasuri korporasi."
+  },
+  "operational-resilience-dora": {
+    "title": "Ketahanan operasional dan DORA",
+    "lede": "Akuntabilitas dewan menurut Pasal 5 DORA, agregasi data risiko BCBS 239, risiko konsentrasi pihak ketiga, uji keluar, serta kendali rekayasa yang mengubah ketahanan operasional dari proyek kepatuhan menjadi papan skor siap pengawas."
+  },
+  "stablecoins-tokenisation": {
+    "title": "Stablecoin dan tokenisasi",
+    "lede": "Simpanan tertokenisasi, reksa dana pasar uang, uji coba mata uang digital bank sentral grosir, BRSRV/BSTBL dari BlackRock, Undang-Undang GENIUS, dan pilihan rekayasa di balik cara membuat uang terprogram bekerja di dalam neraca yang diawasi."
+  },
+  "generative-ai-llms": {
+    "title": "AI generatif dan model bahasa besar",
+    "lede": "Model fondasi, model bahasa besar multimodal (Gemini, Gemma, Mistral, MM1), rekayasa prompt, dan rilis sumber terbuka yang menentukan apa yang dapat dibangun bank di dalam perimeter data mereka sendiri."
+  },
+  "voice-speech-ai": {
+    "title": "AI suara dan ucapan",
+    "lede": "Kloning suara, pengenalan ucapan waktu nyata (Whisper), asisten suara untuk eksekutif, dan tumpukan intelijen audio yang membentuk ulang pengalaman nasabah private banking."
+  },
+  "ai-governance-regulation": {
+    "title": "Tata kelola dan regulasi AI",
+    "lede": "Kepatuhan terhadap Undang-Undang AI Uni Eropa, risiko model SR 11-7, akuntabilitas tingkat dewan, keteraudit-an alur kerja otonom, serta kerangka regulasi AI di bank papan atas."
+  },
+  "wholesale-payments-rails": {
+    "title": "Rel pembayaran grosir",
+    "lede": "Strategi multirel yang mencakup kartu, transfer antarrekening, RTP, FedNow, open banking, dan koridor stablecoin. Ekonomi grosir, finalitas penyelesaian, dan model atomisitas lintas batas Proyek Agorá milik BIS."
+  },
+  "_pillars": [
+    {
+      "name": "Kriptografi dan ketahanan",
+      "lede": "Migrasi pascakuantum, ketahanan operasional setingkat DORA, dan kerangka tata kelola AI dalam layanan keuangan."
+    },
+    {
+      "name": "Pembayaran dan uang",
+      "lede": "Migrasi ISO 20022, penyelesaian grosir, stablecoin, simpanan tertokenisasi, dan fungsi treasuri korporasi di sekitarnya."
+    },
+    {
+      "name": "AI dan cloud",
+      "lede": "AI terapan, sistem agentik, model generatif, AI suara dan ucapan, serta platform perbankan cloud-native yang menjalankannya."
+    },
+    {
+      "name": "Sumber terbuka dan kriya",
+      "lede": "Pustaka Rust, primitif blockchain, dan disiplin rekayasa sumber terbuka di baliknya."
+    }
+  ],
+  "_hub_lede": "Empat pilar, empat belas gugus topik, setiap artikel bertanggal. Pilih satu benang dan telusuri sepanjang arsip.",
+  "_banner_word": "spanduk topik",
+  "_kpi": [
+    "Pilar",
+    "Gugus topik",
+    "Artikel terindeks"
+  ],
+  "_article_count": "{n} artikel",
+  "_pillar_kicker": "PILAR"
 }

@@ -111,7 +111,7 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 artikel/artiklar</p>"
+      "\\1 artiklar</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
@@ -163,7 +163,7 @@
     ],
     [
       ">About EPAA</a>",
-      "<>Om EPAA</a>"
+      ">Om EPAA</a>"
     ],
     [
       "title=\"Visit the Emerging Payments Association Asia\"",
@@ -179,7 +179,7 @@
     ],
     [
       ">Read the article</a>",
-      "<>Läs artikeln</a>"
+      ">Läs artikeln</a>"
     ],
     [
       " · Free download",
@@ -195,7 +195,7 @@
     ],
     [
       ">Request access<",
-      "<>Begär åtkomst<"
+      ">Begär åtkomst<"
     ],
     [
       ">English · PDF",
@@ -295,23 +295,23 @@
     ],
     [
       ">What kind of research and papers do you publish\\?</summary>",
-      ">¿Qué tipo de investigaciones y publicaciones publica?</summary>"
+      ">Vilken sorts forskning och publikationer ger du ut?</summary>"
     ],
     [
-      "(<summary[^>]*>¿Qué tipo de investigaciones y publicaciones publica\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Coexisten dos ejes. Los <strong>libros blancos sectoriales</strong>, producidos para organizaciones como la Emerging Payments Association Asia (EPAA), examinan las transformaciones estructurales de las infraestructuras de pago — recientemente el impacto de la computación cuántica criptográficamente relevante sobre los raíles de liquidación mayorista y en tiempo real. Los <strong>informes de investigación aplicada</strong> abordan temas técnicos concretos (por ejemplo: reconocimiento de voz en tiempo real con Whisper + Metal Performance Shaders en Apple Silicon) y se publican como PDF de compra individual.</p></section>"
+      "(<summary[^>]*>Quels types de recherches et publications publiez-vous \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Två spår löper parallellt. <strong>Branschvitböckerna</strong>, som tas fram för organisationer som Emerging Payments Association Asia (EPAA), undersöker strukturella skiften i betalningsinfrastrukturen — senast hur kryptografiskt relevant kvantberäkning påverkar grossist- och realtidsavvecklingens räls. <strong>Rapporterna från tillämpad forskning</strong> riktar in sig på ett avgränsat tekniskt ämne (till exempel taligenkänning i realtid via Whisper + Metal Performance Shaders på Apple Silicon) och ges ut som PDF-filer som köps styckvis.</p></section>"
     ],
     [
       ">How often do you release new papers\\?</summary>",
-      ">¿Con qué frecuencia publica nuevos artiklar?</summary>"
+      ">Hur ofta släpper du nya artiklar?</summary>"
     ],
     [
-      "(<summary[^>]*>¿Con qué frecuencia publica nuevos artiklar\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Irregularmente, por preferencia por la calidad antes que por la cadencia. Las notas breves de investigación aparecen cada pocas semanas cuando un avance técnico lo justifica. Los libros blancos se publican en relación con ciclos sectoriales (por ejemplo: calendarios regulatorios, congresos de la EPAA).</p></section>"
+      "(<summary[^>]*>À quelle fréquence publiez-vous de nouveaux articles \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Oregelbundet, med kvalitet framför takt. Korta forskningsnoteringar kommer med några veckors mellanrum när en teknisk utveckling motiverar det. Vitböckerna publiceras i takt med branschens cykler (till exempel regulatoriska tidplaner, EPAA-konferenser).</p></section>"
     ],
     [
       ">About EPAA</p>",
-      "<>Om EPAA</p>"
+      ">Om EPAA</p>"
     ],
     [
       "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
@@ -367,51 +367,51 @@
     ],
     [
       ">Are the white papers free to read\\?</summary>",
-      ">¿Son los libros blancos de lectura gratuita?</summary>"
+      ">Är vitböckerna fria att läsa?</summary>"
     ],
     [
       ">May I cite or quote from these papers\\?</summary>",
-      ">¿Puedo citar estos documentos?</summary>"
+      ">Får jag citera ur dessa dokument?</summary>"
     ],
     [
       ">Who is the intended audience\\?</summary>",
-      ">¿A quién van dirigidas estas publicaciones?</summary>"
+      ">Vem riktar sig dessa publikationer till?</summary>"
     ],
     [
       ">Can I commission a paper or speak at an event\\?</summary>",
-      ">¿Puedo encargar un estudio o invitarle a una conferencia?</summary>"
+      ">Kan jag beställa en studie eller bjuda in dig till ett evenemang?</summary>"
     ],
     [
       ">How do I follow new publications\\?</summary>",
-      ">¿Cómo seguir las nuevas publicaciones?</summary>"
+      ">Hur följer jag nya publikationer?</summary>"
     ],
     [
       ">Where can I follow new releases\\?</summary>",
-      ">¿Dónde puedo seguir las nuevas publicaciones?</summary>"
+      ">Var kan jag följa nya släpp?</summary>"
     ],
     [
-      "(<summary[^>]*>¿Son los libros blancos de lectura gratuita\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>El libro blanco de la EPAA <em>Quantum-Safe Payments</em> está disponible para descarga pública gratuita en <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. El informe de investigación independiente sobre reconocimiento de voz en tiempo real con OpenAI Whisper y Metal Performance Shaders está bajo licencia y disponible para compra individual a 49,00 $ (inglés, PDF, ~95 KB). Un ejemplar por comprador; descargas para uso personal únicamente, no redistribuibles.</p></section>"
+      "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>EPAA:s vitbok <em>Quantum-Safe Payments</em> är fritt nedladdningsbar utan kostnad på <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Den oberoende forskningsrapporten om taligenkänning i realtid med OpenAI Whisper och Metal Performance Shaders är licensierad och kan köpas styckvis för 49,00 $ (engelska, PDF, cirka 95 kB). Ett exemplar per köpare; nedladdningar är endast för personligt bruk och får inte spridas vidare.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Puedo citar estos documentos\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Sí. Las citas breves con atribución son bienvenidas en el marco del fair use. Para las publicaciones de la EPAA, cite a la EPAA como editora junto con el grupo de trabajo, el año y la URL del PDF. Para los informes de investigación independientes, cite así: <em>Rousseau, S. (año). Título. Autopublicación.</em> con la URL canónica. Para reproducir una figura o un pasaje extenso, <a href=\"/sv/kontakt/\">póngase en contacto</a> previamente.</p></section>"
+      "(<summary[^>]*>Puis-je citer ces documents \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ja. Korta citat med källhänvisning välkomnas inom ramen för god sed. För EPAA:s publikationer anger du EPAA som utgivare tillsammans med författargruppen, året och länken till PDF-filen. De oberoende forskningsrapporterna citeras i formatet: <em>Rousseau, S. (år). Titel. Egen utgivning.</em> med den juridiska länken. För att återge ett diagram eller ett längre stycke, <a href=\"/sv/kontakt/\">hör av dig</a> i förväg.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿A quién van dirigidas estas publicaciones\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Directores de pagos, CISO y arquitectos senior en bancos de primer nivel, bancos centrales, operadores de sistemas de pago y propietarios de esquemas. La investigación aplicada va dirigida a ingenieros y responsables de producto que construyen sobre grandes modelos de lenguaje, IA en dispositivo y criptografía resistente al cuántico. Cada artículo presupone conocimiento del dominio y omite los recordatorios que un profesional en activo ya posee.</p></section>"
+      "(<summary[^>]*>À qui s’adressent ces publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Betalningschefer, informationssäkerhetschefer (CISO) och seniora ingenjörer på storbanker, centralbanker, betalsystemsoperatörer och schemaägare. Den tillämpade forskningen riktar sig till ingenjörer och produktchefer som bygger på stora språkmodeller, AI på enheten och kvantsäker kryptografi. Varje dokument förutsätter ämneskunskap och hoppar över påminnelser som en yrkesverksam redan känner till.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Puedo encargar un estudio o invitarle a una conferencia\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Sí — caso a caso, con selección previa. Los encargos versan sobre pagos mayoristas, migración a ISO 20022, criptografía postcuántica para los servicios financieros e Tillämpad AI i bank. Las intervenciones en conferencias sectoriales, foros de bancos centrales y mesas redondas de reguladores se estudian caso a caso. Utilice el <a href=\"/sv/kontakt/\">formulario de contacto</a> indicando el tema, la audiencia y el calendario.</p></section>"
+      "(<summary[^>]*>Puis-je commander une étude ou inviter à une conférence \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ja — från fall till fall och efter urval. Beställda uppdrag omfattar grossistbetalningar, ISO 20022-migrering, postkvantkryptografi för finansiella tjänster och tillämpad AI inom bankvärlden. Medverkan vid branschkonferenser, centralbanksforum och regulatoriska möten bedöms individuellt. Använd <a href=\"/sv/kontakt/\">kontaktformuläret</a> och ange ämne, målgrupp och tidplan.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Cómo seguir las nuevas publicaciones\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Los nuevos artiklar y notas de investigación se anuncian con prioridad mediante el <a href=\"/sv/rss.xml\">feed RSS</a> del sitio y la newsletter <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>, que cubre criptografía postcuántica, política de bancos centrales y la hoja de ruta de migración de los principales esquemas de pago. Sin spam — solo novedades.</p></section>"
+      "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Nya artiklar och forskningsnoteringar annonseras först i webbplatsens <a href=\"/sv/rss.xml\">RSS-flöde</a> och i nyhetsbrevet <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>, som täcker postkvantkryptografi, centralbankspolitik och migreringsplanen för de stora betalningsschemana. Ingen spam — bara det som är nytt.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Dónde puedo seguir las nuevas publicaciones\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Suscríbase al <a href=\"/sv/rss.xml\">feed RSS</a> o sígame en <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> para estar al tanto de las nuevas publicaciones.</p></section>"
+      "(<summary[^>]*>Où puis-je suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Prenumerera på <a href=\"/sv/rss.xml\">RSS-flödet</a> eller följ mig på <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> för att få veta när nya släpp kommer.</p></section>"
     ],
     [
       ">Browse all projects<",
@@ -631,51 +631,51 @@
     ],
     [
       ">What licence are these projects released under\\?</summary>",
-      ">¿Bajo qué licencia se publican estos proyectos?</summary>"
+      ">Under vilken licens släpps dessa projekt?</summary>"
     ],
     [
       ">Are these projects production-ready\\?</summary>",
-      ">¿Están estos proyectos listos para producción?</summary>"
+      ">Är dessa projekt produktionsklara?</summary>"
     ],
     [
       ">How can I contribute or report an issue\\?</summary>",
-      ">¿Cómo puedo contribuir o reportar un problema?</summary>"
+      ">Hur kan jag bidra eller rapportera ett problem?</summary>"
     ],
     [
       ">Can I use these libraries in a regulated banking environment\\?</summary>",
-      ">¿Puedo usar estas bibliotecas en un entorno bancario regulado?</summary>"
+      ">Får jag använda dessa bibliotek i en reglerad bankmiljö?</summary>"
     ],
     [
       ">Do you offer commercial support or consulting\\?</summary>",
-      ">¿Ofrece soporte comercial o consultoría?</summary>"
+      ">Erbjuder du kommersiell support eller konsulttjänster?</summary>"
     ],
     [
       ">How do I follow new releases\\?</summary>",
-      ">¿Cómo seguir las nuevas publicaciones?</summary>"
+      ">Hur följer jag nya släpp?</summary>"
     ],
     [
-      "(<summary[^>]*>¿Bajo qué licencia se publican estos proyectos\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Todos los proyectos se publican bajo licencia <strong>Apache-2.0</strong>. El archivo <code>LICENSE</code> en la raíz de cada repositorio es la fuente autoritativa.</p></section>"
+      "(<summary[^>]*>Sous quelle licence ces projets sont-ils publiés \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Alla projekt släpps under licensen <strong>Apache-2.0</strong>. Filen <code>LICENSE</code> i roten av varje arkiv är den gällande källan.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Están estos proyectos listos para producción\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Depende del proyecto. Las bibliotecas marcadas como <em>v1.x</em> están estabilizadas y probadas bajo carga; las pre-v1 son bases sólidas pero pueden evolucionar. El README de cada repositorio detalla el estado actual; si necesita una garantía específica para uso en producción, <a href=\"/sv/kontakt/\">póngase en contacto</a>.</p></section>"
+      "(<summary[^>]*>Ces projets sont-ils prêts pour la production \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Det beror på projektet. Bibliotek märkta <em>v1.x</em> är stabila och testade under belastning; de före v1 är stabila grunder men kan fortfarande utvecklas. Varje arkivs README anger nuvarande status; om du behöver ett bestämt åtagande för produktionsbruk, <a href=\"/sv/kontakt/\">hör av dig</a>.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Cómo puedo contribuir o reportar un problema\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Cada proyecto dispone de un repositorio GitHub público en <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Abra una issue describiendo el problema (un reproductor mínimo es bienvenido) o una pull request vinculada a una issue. Las contribuciones se rigen por el <em>Developer Certificate of Origin</em> y requieren commits firmados.</p></section>"
+      "(<summary[^>]*>Comment puis-je contribuer ou signaler un problème \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Varje projekt har ett publikt GitHub-arkiv under <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Öppna ett issue som beskriver problemet (helst med ett minimalt exempel som återskapar det) eller en pull request kopplad till ett issue. Bidrag omfattas av <em>Developer Certificate of Origin</em> och kräver signerade commits.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Puedo usar estas bibliotecas en un entorno bancario regulado\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Sí, con las precauciones habituales. Las bibliotecas son trabajos de código abierto independientes y no un producto regulado. Aplique sus procesos habituales de supply chain, seguridad y revisión de dependencias — vendoring vía su espejo interno, escaneo SBOM, fijado por Git SHA o huella criptográfica — antes de cualquier despliegue en producción sobre infraestructura de pagos.</p></section>"
+      "(<summary[^>]*>Puis-je utiliser ces bibliothèques dans un environnement bancaire régulé \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ja, med sedvanlig försiktighet. Biblioteken är fristående verk med öppen källkod, inte en reglerad produkt. Tillämpa dina vanliga rutiner för leveranskedja, säkerhet och beroendegranskning — vendoring via din interna spegel, SBOM-kontroll, låsning till Git SHA eller kryptografiskt fingeravtryck — före varje produktionssättning på betalningsinfrastruktur.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Ofrece soporte comercial o consultoría\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Sí, con selección previa. Los encargos versan sobre migración a ISO&nbsp;20022, hojas de ruta de migración postcuántica e IA aplicada a los servicios financieros. <a href=\"/sv/kontakt/\">Contacte conmigo</a> con un brief breve, su calendario y las restricciones aplicables.</p></section>"
+      "(<summary[^>]*>Proposez-vous du support commercial ou du conseil \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ja, efter urval. Uppdragen rör ISO&nbsp;20022-migrering, färdplaner för postkvantmigrering och tillämpad AI inom finansiella tjänster. <a href=\"/sv/kontakt/\">Hör av dig</a> med en kort beskrivning, din tidplan och eventuella begränsningar.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Cómo seguir las nuevas publicaciones\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Cada artículo fechado del sitio se anuncia vía el <a href=\"/sv/rss.xml\">feed RSS</a> y la newsletter <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Los repositorios individuales también publican releases en GitHub que puede seguir directamente.</p></section>"
+      "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Varje daterad artikel på webbplatsen annonseras via <a href=\"/sv/rss.xml\">RSS-flödet</a> och nyhetsbrevet <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Enskilda arkiv publicerar dessutom sina släpp på GitHub, som du kan följa direkt.</p></section>"
     ],
     [
       ">GET IN TOUCH<",
@@ -683,7 +683,7 @@
     ],
     [
       ">Have an idea\\? Let's build it\\.<",
-      "<>¿Tiene una idea? Construyámosla juntos.<"
+      ">Har du en idé? Låt oss bygga den.<"
     ],
     [
       ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
@@ -912,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Publikationerna har flyttat till Forskning</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Molnbaserad bankverksamhet\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Molnbaserad bankverksamhet — ämnesbanderoll\""
+    ],
+    [
+      "<h3><a href=\"/sv/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/sv/topics/cloud-native-banking/index.html\">Molnbaserad bankverksamhet</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/sv/amnen/cloud-native-banking/index.html\">Molnbaserad bankverksamhet</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Kubernetes-baserad plattformsteknik för reglerade institut: DORA-testad operativ motståndskraft, konvergens mellan virtuella maskiner och containrar, suveränt moln, exitstrategi och den arkitektur som låter banker leverera kritiska tjänster under tillsyn.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"Agentisk AI i bankvärlden\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"Agentisk AI i bankvärlden — ämnesbanderoll\""
+    ],
+    [
+      "<h3><a href=\"/sv/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/sv/topics/agentic-ai-banking/index.html\">Agentisk AI i bankvärlden</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/sv/amnen/agentic-ai-banking/index.html\">Agentisk AI i bankvärlden</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Styrplan för agenter, deterministisk semantisk routning, OPA-policygrindar, oföränderliga WORM-revisionsloggar och den modellriskoptik enligt SR 11-7 / SS1/23 som förvandlar autonoma arbetsflöden till tillsynsfärdig bevisning.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Treasury-automatisering\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Treasury-automatisering — ämnesbanderoll\""
+    ],
+    [
+      "<h3><a href=\"/sv/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/sv/topics/treasury-automation/index.html\">Treasury-automatisering</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/sv/amnen/treasury-automation/index.html\">Treasury-automatisering</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Programmerbar likviditet, autonom treasury, betalningsmotorer enligt ISO 20022 och de öppna verktygslådor som gör CAMT / pacs.008 / MT940 / pain.001 till granskningsbar transaktionsintelligens på styrelsenivå för företagens treasury-team.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Operativ motståndskraft och DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Operativ motståndskraft och DORA — ämnesbanderoll\""
+    ],
+    [
+      "<h3><a href=\"/sv/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/sv/topics/operational-resilience-dora/index.html\">Operativ motståndskraft och DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/sv/amnen/operational-resilience-dora/index.html\">Operativ motståndskraft och DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Styrelsens ansvar enligt DORA artikel 5, aggregering av riskdata enligt BCBS 239, koncentrationsrisk hos tredje part, exittester och de tekniska kontroller som förvandlar operativ motståndskraft från ett efterlevnadsprojekt till en tillsynsfärdig resultattavla.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Stablecoins och tokenisering\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Stablecoins och tokenisering — ämnesbanderoll\""
+    ],
+    [
+      "<h3><a href=\"/sv/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/sv/topics/stablecoins-tokenisation/index.html\">Stablecoins och tokenisering</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/sv/amnen/stablecoins-tokenisation/index.html\">Stablecoins och tokenisering</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Tokeniserade inlåningsmedel, penningmarknadsfonder, pilotprojekt för grossist-CBDC, BlackRocks BRSRV/BSTBL, GENIUS-lagen och de tekniska val som får programmerbara pengar att fungera inom reglerade balansräkningar.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"Generativ AI och LLM:er\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"Generativ AI och LLM:er — ämnesbanderoll\""
+    ],
+    [
+      "<h3><a href=\"/sv/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/sv/topics/generative-ai-llms/index.html\">Generativ AI och LLM:er</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/sv/amnen/generative-ai-llms/index.html\">Generativ AI och LLM:er</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Grundmodeller, multimodala LLM:er (Gemini, Gemma, Mistral, MM1), promptutveckling och de öppna släpp som avgör vad banker kan bygga innanför sin egen dataperimeter.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"Röst- och tal-AI\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"Röst- och tal-AI — ämnesbanderoll\""
+    ],
+    [
+      "<h3><a href=\"/sv/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/sv/topics/voice-speech-ai/index.html\">Röst- och tal-AI</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/sv/amnen/voice-speech-ai/index.html\">Röst- och tal-AI</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Röstkloning, taligenkänning i realtid (Whisper), röstassistenter för ledningen och den ljudintelligensstack som omformar kundupplevelsen inom private banking.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"AI-styrning och reglering\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"AI-styrning och reglering — ämnesbanderoll\""
+    ],
+    [
+      "<h3><a href=\"/sv/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/sv/topics/ai-governance-regulation/index.html\">AI-styrning och reglering</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/sv/amnen/ai-governance-regulation/index.html\">AI-styrning och reglering</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Efterlevnad av EU:s AI-förordning, modellrisk enligt SR 11-7, ansvar på styrelsenivå, granskningsbarhet för autonoma arbetsflöden och regelverket för AI inom storbankerna.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Betalningsräls för grossistledet\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Betalningsräls för grossistledet — ämnesbanderoll\""
+    ],
+    [
+      "<h3><a href=\"/sv/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/sv/topics/wholesale-payments-rails/index.html\">Betalningsräls för grossistledet</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/sv/amnen/wholesale-payments-rails/index.html\">Betalningsräls för grossistledet</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Flerspårsstrategi över kort, A2A, RTP, FedNow, öppen bankverksamhet och stablecoin-korridorer. Grossistekonomi, avvecklingens slutgiltighet och BIS Projekt Agorás modell för gränsöverskridande atomicitet.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Kryptografi och motståndskraft</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Kryptografi och motståndskraft</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Postkvantmigrering, operativ motståndskraft på DORA-nivå och styrningsramverket för AI inom finansiella tjänster.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Betalningar och pengar</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Betalningar och pengar</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">ISO 20022-migrering, grossistavveckling, stablecoins, tokeniserad inlåning och företagens treasury-funktion runt dem.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>AI och moln</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI och moln</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Tillämpad AI, agentiska system, generativa modeller, röst- och tal-AI samt de molnbaserade bankplattformar som driver dem.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Öppen källkod och hantverk</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Öppen källkod och hantverk</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Rust-bibliotek, blockkedjeprimitiver och den öppna ingenjörsdisciplin som ligger bakom dem.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Fyra pelare, fjorton ämnesgrupper, varje daterad artikel. Välj en tråd och följ den genom arkivet.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">PELARE</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Pelare</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Ämnesgrupper</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Indexerade artiklar</span>"
     ]
   ]
 }

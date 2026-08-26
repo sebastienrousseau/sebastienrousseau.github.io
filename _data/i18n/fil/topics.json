@@ -19,5 +19,68 @@
   "blockchain-digital-assets": {
     "title": "Blockchain at Mga Digital Asset",
     "lede": "Blockchain at digital assets: tokenisation, ERC-20, stablecoins, crypto infrastructure, at ang regulatory framework na humuhubog sa mga ito."
-  }
+  },
+  "cloud-native-banking": {
+    "title": "Cloud-native na banking",
+    "lede": "Platform engineering na nakabatay sa Kubernetes para sa mga institusyong regulado: katatagan sa operasyon na sinubok ayon sa DORA, pagsasanib ng virtual machine at container, soberanong cloud, estratehiya sa paglabas, at ang arkitektura na nagbibigay-daan sa mga bangko na maglabas ng kritikal na serbisyo sa ilalim ng superbisyon."
+  },
+  "agentic-ai-banking": {
+    "title": "Agentic na AI sa banking",
+    "lede": "Mga control plane ng ahente, deterministikong semantikong pagruruta, mga policy gate ng OPA, hindi mababagong WORM audit log, at ang lente ng panganib sa modelo ayon sa SR 11-7 / SS1/23 na nagpapalit sa mga awtonomong daloy ng trabaho tungo sa ebidensiyang handa para sa superbisor."
+  },
+  "treasury-automation": {
+    "title": "Automation ng treasury",
+    "lede": "Programmable na likididad, awtonomong treasury, mga makina ng pagbabayad na ISO 20022, at ang mga open-source na kasangkapan na nagpapalit sa CAMT / pacs.008 / MT940 / pain.001 tungo sa naaauditang katalinuhan sa transaksiyon na antas-lupon para sa mga pangkat ng treasury ng korporasyon."
+  },
+  "operational-resilience-dora": {
+    "title": "Katatagan sa operasyon at DORA",
+    "lede": "Pananagutan ng lupon sa ilalim ng Artikulo 5 ng DORA, pag-iipon ng datos ng panganib ayon sa BCBS 239, panganib ng konsentrasyon sa third party, pagsusuri sa paglabas, at ang mga kontrol sa inhinyeriya na nagpapalit sa katatagan sa operasyon mula sa proyektong pagsunod tungo sa scoreboard na handa para sa superbisor."
+  },
+  "stablecoins-tokenisation": {
+    "title": "Stablecoin at tokenisasyon",
+    "lede": "Mga tokenisadong deposito, money market fund, mga pilot ng wholesale na digital na salapi ng sentral na bangko, ang BRSRV/BSTBL ng BlackRock, ang GENIUS Act, at ang mga pagpiling pang-inhinyeriya sa likod ng pagpapagana ng programmable na salapi sa loob ng mga reguladong balance sheet."
+  },
+  "generative-ai-llms": {
+    "title": "Generative AI at malalaking language model",
+    "lede": "Mga foundation model, multimodal na malalaking language model (Gemini, Gemma, Mistral, MM1), prompt engineering, at ang mga open-source na paglabas na humuhubog sa maitatayo ng mga bangko sa loob ng sarili nilang perimetro ng datos."
+  },
+  "voice-speech-ai": {
+    "title": "AI ng boses at pananalita",
+    "lede": "Pagkopya ng boses, real-time na pagkilala sa pananalita (Whisper), mga voice assistant para sa mga ehekutibo, at ang audio-intelligence stack na muling humuhubog sa karanasan ng kliyente sa private banking."
+  },
+  "ai-governance-regulation": {
+    "title": "Pamamahala at regulasyon ng AI",
+    "lede": "Pagsunod sa AI Act ng Unyong Europeo, panganib sa modelo ayon sa SR 11-7, pananagutan sa antas ng lupon, kakayahang ma-audit ng mga awtonomong daloy ng trabaho, at ang balangkas na regulatoryo ng AI sa loob ng mga bangkong Tier-1."
+  },
+  "wholesale-payments-rails": {
+    "title": "Mga riles ng wholesale na pagbabayad",
+    "lede": "Estratehiyang multi-rail na sumasaklaw sa mga card, paglilipat mula account tungo sa account, RTP, FedNow, open banking, at mga koridor ng stablecoin. Ekonomiya ng wholesale, katapusan ng settlement, at ang modelo ng cross-border na atomicity ng Proyektong Agorá ng BIS."
+  },
+  "_pillars": [
+    {
+      "name": "Kriptograpiya at katatagan",
+      "lede": "Paglipat matapos ang quantum, katatagan sa operasyon sa antas ng DORA, at ang balangkas ng pamamahala sa AI sa mga serbisyong pinansiyal."
+    },
+    {
+      "name": "Pagbabayad at salapi",
+      "lede": "Paglipat sa ISO 20022, wholesale na settlement, stablecoin, tokenisadong deposito, at ang tungkulin ng treasury ng korporasyon sa paligid nila."
+    },
+    {
+      "name": "AI at cloud",
+      "lede": "Inilapat na AI, mga agentic na sistema, generative na modelo, AI ng boses at pananalita, at ang mga cloud-native na plataporma ng banking na nagpapatakbo sa kanila."
+    },
+    {
+      "name": "Open source at sining",
+      "lede": "Mga aklatang Rust, mga primitibo ng blockchain, at ang disiplinang pang-inhinyeriya na open source sa likod nila."
+    }
+  ],
+  "_hub_lede": "Apat na haligi, labing-apat na kumpol ng paksa, bawat artikulong may petsa. Pumili ng isang hibla at sundan ito sa buong arkibo.",
+  "_banner_word": "banner ng paksa",
+  "_kpi": [
+    "Mga haligi",
+    "Mga kumpol ng paksa",
+    "Mga naka-index na artikulo"
+  ],
+  "_article_count": "{n} (na) artikulo",
+  "_pillar_kicker": "HALIGI"
 }
