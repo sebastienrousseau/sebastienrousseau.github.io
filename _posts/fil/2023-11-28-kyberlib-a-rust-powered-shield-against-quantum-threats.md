@@ -1,92 +1,91 @@
 ---
-title: "KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم"
+title: "KyberLib: CRYSTALS-Kyber sa Rust para sa panahong post-quantum"
 tags: "KyberLib, Rust, CRYSTALS-Kyber, post-quantum cryptography, lattice-based cryptography, key encapsulation mechanism, NIST, libsignal, cryptography, ISO 20022, quantum computing, AI"
-subtitle: "KyberLib، تطبيق Rust متين لـ CRYSTALS-Kyber للعصر الكمي."
-description: "تطبيق تشفيري متين وآمن كمياً لخوارزمية CRYSTALS-Kyber، لحماية بياناتكم من التهديدات الكمية وهجمات تحليل الشفرات."
+subtitle: "Isang aklatang Rust na nagpapatupad ng CRYSTALS-Kyber, may suporta sa no_std at WebAssembly para sa mga nakapaloob na sistema at aplikasyong web."
+description: "Ang KyberLib: isang aklatang Rust na nagpapatupad ng CRYSTALS-Kyber — ang apat na algoritmong hinirang ng NIST, ang kriptograpiyang nakabatay sa sala-sala, at ang suporta sa no_std at WebAssembly para sa mga sistemang limitado ang mapagkukunan."
 date: "Nov 28, 2023"
 language: "fil-PH"
 locale: "fil_PH"
 banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
-banner_alt: "تعزيز الاتصالات الآمنة في العصر الكمي مع KyberLib"
-keywords: "KyberLib، Rust CRYSTALS-Kyber، التشفير ما بعد الكمي، التشفير القائم على الشبكيات، تبادل المفاتيح المقاوم للكم، NIST FIPS 203، Sebastien Rousseau، KEM، مصادقة المدفوعات، مكتبة PQC"
+banner_alt: "Pagpapatibay ng ligtas na komunikasyon sa panahong quantum gamit ang KyberLib"
+keywords: "KyberLib, CRYSTALS-Kyber, Rust, kriptograpiyang post-quantum, PQC, sala-sala, LBC, NIST, no_std, WebAssembly, WASM, Dilithium, FALCON, SPHINCS+"
 ---
+## KyberLib: CRYSTALS-Kyber sa wikang Rust para sa panahong post-quantum
 
-## KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم
+[![Pagpapatibay ng ligtas na komunikasyon sa panahong quantum gamit ang KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
 
-[![تعزيز الاتصالات الآمنة في العصر الكمي مع KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
-
-`KyberLib` مكتبة بلغة Rust تَحمي بياناتكم من التهديد المحتمل للحوسبة الكمية. مَبنيّة على **خوارزمية [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)**، تُقدّم `KyberLib` أمناً وكفاءة وتنوُّعاً استثنائياً، وتتكامل بسهولة مع منصّات متعدّدة، بما فيها بيئات `no-std`.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## تأمين بياناتكم في العصر الكمي
-
-أدخل مجيء الحوسبة الكمية تهديداً جوهرياً للتدابير التشفيرية التقليدية. ولمعالجة هذا التحدّي، يتطوّر مجال التشفير الآمن كمياً (QSC) بسرعة.
-
-في طليعة هذه الحركة التحويلية، يَقود المعهد الوطني للمعايير والتقنية (NIST) عملية تقييس خوارزميات QSC.
-
-في عام 2023، اختار NIST أربع خوارزميات مبتكرة كقائمة قصيرة:
-
-- [**[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)** ⧉][01] (آلية تغليف المفاتيح)
-- [**CRYSTALS-Dilithium** ⧉][02] (التواقيع الرقمية)
-- [**FALCON** ⧉][03] (تواقيع رقمية خفيفة)
-- [**SPHINCS+** ⧉][04] (تواقيع رقمية قائمة على الهاش)
-
-تَستند هذه الخوارزميات الثورية إلى مبادئ رياضية متنوّعة، تشمل التشفير القائم على الشبكيات، والتشفير القائم على الهاش، والتشفير القائم على الشيفرات (codes)، بهدف توفير دفاع متين ضد الهجمات الكمية.
-
-## استكشاف التشفير القائم على الشبكيات
-
-يَبرز التشفير القائم على الشبكيات (LBC — Lattice-Based Cryptography) كمرشّح رائد في QSC، مُقدّماً حلاً واعداً للتشفير ما بعد الكمي (PQC). والـ LBC متنوّع، بتطبيقات تتراوح بين آليات تغليف المفاتيح (KEMs) والتواقيع الرقمية ومخطّطات التشفير بالمفتاح العام، المُتجذّرة في الشبكيات الرياضية.
-
-الشبكيات مفهوم أساسي في الرياضيات وَجد تطبيقات في مجالات متعدّدة، من بينها التشفير. وبأبسط العبارات، الشبكية ترتيب منتظم لنقاط في الفضاء، يُشكّل بُنية شبيهة بالشبكة. هذه النقاط متّصلة بخطوط، فتُكوّن شبكة من الخلايا المترابطة. والترتيب المحدّد للنقاط والمسافات بينها يُحدّد الخصائص الفريدة للشبكية.
-
-### تمثيل ثلاثي الأبعاد لشبكية بأشعّة أساس
-
-يَعرض هذا الرسم بنية شبكية ثلاثية الأبعاد مُولَّدة بثلاثة أشعّة أساس:
-
-- `b1 = [1, 0, 0]` بالأحمر،
-- `b2 = [0, 1, 0]` بالأخضر، و
-- `b3 = [0, 0, 1]` بالأزرق.
-
-تتشكّل كل نقطة في الشبكية عبر دمج هذه الأشعّة الأساس بنِسَبٍ صحيحة متنوّعة، مُنشِئةً نمطاً شبيهاً بالشبكة يَمتد في الأبعاد المكانية الثلاثة. وتُجسّد هذه التصويرة جوهر الشبكية ثلاثية الأبعاد، وهو مفهوم مُستخدَم على نطاق واسع في الفيزياء والرياضيات لتمثيل الترتيب المنتظم والمُتكرّر لنقاط في الفضاء.
-
-![تمثيل ثلاثي الأبعاد لشبكية بأشعّة أساس][06].class=\"img-fluid mx-auto d-block\"
-
-في التشفير، تُوظَّف الشبكيات أساساً لخوارزميات تشفيرية معيّنة. ويستغلّ التشفير القائم على الشبكيات (LBC) الخصائص الرياضية للشبكيات لإنشاء مخطّطات تشفيرية آمنة مقاومة لهجمات الحواسيب الكمية. فالحواسيب الكمية تُشكّل تهديداً جوهرياً للتشفير التقليدي، إذ تستطيع كسر خوارزميات تعتمد على تحليل أعداد كبيرة أو حلّ مسائل اللوغاريتم المنفصل بكفاءة.
-
-تُجسّد CRYSTALS-Kyber نقاط قوّة LBC، مُقدّمةً مقاومة متينة للهجمات الكمية مقرونة بكفاءة استثنائية وحجم مفتاح مناسب. وتجعلها قابليتها للعمل على منصّات متعدّدة وتوافقها مع التشفير خياراً موثوقاً لأمن البيانات في العصر الكمي.
-
-المواصفات الحالية لـ CRYSTALS-Kyber كالتالي:
-
-- **Kyber512**: يُوفّر مستوى أمن مكافئاً لتشفير AES بـ 128 بت، مما يَحمي البيانات الحسّاسة بحماية وفق معايير الصناعة.
-- **Kyber768**: يُوفّر مستوى أمن مكافئاً لتشفير AES بـ 256 بت، مُؤمِّناً سرّية المعلومات البالغة الحساسية.
-- **Kyber1024**: يُوفّر مستوى أمن يتجاوز تشفير AES بـ 256 بت، مُقدّماً حماية متينة ضد الهجمات الكمية ويحفظ سلامة البيانات لفترات طويلة في المستقبل.
-
-### مقارنة مستويات الأمن بين الخوارزميات الكلاسيكية والمقاومة للكم
-
-يُوضّح هذا الرسم البياني مستويات الأمن النسبية للخوارزميات التشفيرية الكلاسيكية كـ RSA-2048 وخوارزمية التوقيع الرقمي بالمنحنى الإهليلجي (ECDSA)، مقارنةً بمواصفات متغيّرات CRYSTALS-Kyber المقاومة للكم (Kyber512 وKyber768 وKyber1024).
-
-ورغم أن الرسم البياني يُقدّم مقارنة بصريّة، تجدر الإشارة إلى أن مستويات الأمن ليست قابلة للمقارنة المباشرة، لكونها مَبنيّة على مبادئ رياضية مختلفة.
-
-غير أن الرسم البياني يُوفّر مرجعاً مفيداً لفهم مستويات الأمن للخوارزميات المقاومة للكم.
-
-![التشفير القائم على الشبكيات][05].class=\"img-fluid mx-auto d-block\"
+Ang `KyberLib` ay isang aklatan sa wikang Rust na nagsasanggalang sa inyong datos laban sa posibleng banta ng quantum computing. Nakabuo sa **algoritmong [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)**, naghahandog ang `KyberLib` ng pambihirang seguridad, kahusayan, at sari-saring gamit, at madali itong naisasanib sa maraming plataporma, kabilang na ang mga kapaligirang `no-std`.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## KyberLib: مكتبة Rust للتشفير المقاوم للحوسبة الكمية
+## Pagtiyak ng seguridad ng inyong datos sa panahong quantum
 
-تُسخِّر KyberLib قوّة CRYSTALS-Kyber لتقديم سلامة ذاكرة مُعزَّزة وأمن نظامي متين. وتدعم مواصفات CRYSTALS-Kyber المتعدّدة (Kyber512 وKyber768 وKyber1024)، مُقدّمةً طيفاً من مستويات الأمن المُلائمة لاحتياجاتكم المحدّدة. وتوافقها مع `no_std` يجعلها خياراً مثالياً للأنظمة المدمجة، فيما تُيسّر توافقيتها مع WebAssembly (WASM) التكامل السلس مع تطبيقات الويب.
+Nagdala ang pagdating ng quantum computing ng saligang banta sa tradisyunal na hakbang na kriptograpiko. Upang tugunan ang hamong ito, mabilis na umuunlad ang larangan ng kriptograpiyang ligtas sa quantum (QSC).
+
+Sa unahan ng mapagbagong kilusang ito, pinamumunuan ng National Institute of Standards and Technology (NIST) ang proseso ng pagsasapamantayan ng mga algoritmong QSC.
+
+Noong 2023, pumili ang NIST ng apat na mapanlikhang algoritmo bilang maikling talaan:
+
+- [**[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)** ⧉][01] (mekanismo ng pagbabalot ng susi)
+- [**CRYSTALS-Dilithium** ⧉][02] (mga digital na lagda)
+- [**FALCON** ⧉][03] (magaang digital na lagda)
+- [**SPHINCS+** ⧉][04] (digital na lagdang nakabatay sa hash)
+
+Nakasalalay ang mga mapanimulang algoritmong ito sa iba't ibang prinsipyong matematikal, kabilang ang kriptograpiyang nakabatay sa sala-sala, ang kriptograpiyang nakabatay sa hash, at ang kriptograpiyang nakabatay sa kodigo, na naglalayong maghandog ng matatag na depensa laban sa mga atakeng quantum.
+
+## Pagtuklas sa kriptograpiyang nakabatay sa sala-sala
+
+Namumukod ang kriptograpiyang nakabatay sa sala-sala (LBC — Lattice-Based Cryptography) bilang nangungunang kandidato sa QSC, at naghahandog ito ng maaasahang solusyon para sa kriptograpiyang post-quantum (PQC). Sari-sari ang gamit ng LBC, mula sa mekanismo ng pagbabalot ng susi (KEMs) hanggang sa mga digital na lagda at sa mga balangkas ng encryption sa pamamagitan ng pampublikong susi, na nakaugat sa matematikal na sala-sala.
+
+Ang sala-sala ay saligang konsepto sa matematika na nakahanap ng gamit sa iba't ibang larangan, kabilang na ang kriptograpiya. Sa pinakasimpleng pananalita, ang sala-sala ay regular na pagkakaayos ng mga punto sa espasyo, na bumubuo ng balangkas na parang lambat. Magkakaugnay ang mga puntong ito sa pamamagitan ng linya, kaya bumubuo sila ng lambat ng magkakadugtong na selda. At ang tiyak na pagkakaayos ng mga punto at ang agwat sa pagitan ng mga ito ang nagtatakda ng natatanging katangian ng sala-sala.
+
+### Tatlong-dimensiyong paglalarawan ng sala-sala gamit ang mga saligang bektor
+
+Ipinapakita ng guhit na ito ang balangkas ng tatlong-dimensiyong sala-sala na nilikha ng tatlong saligang bektor:
+
+- `b1 = [1, 0, 0]` sa pula,
+- `b2 = [0, 1, 0]` sa berde, at
+- `b3 = [0, 0, 1]` sa asul.
+
+Nabubuo ang bawat punto sa sala-sala sa pamamagitan ng pagsasama ng mga saligang bektor na ito sa iba't ibang buong-bilang na proporsiyon, kaya nalilikha ang huwarang parang lambat na umaabot sa tatlong dimensiyon ng espasyo. Ipinamamalas ng larawang ito ang diwa ng tatlong-dimensiyong sala-sala, isang konseptong malawakang ginagamit sa pisika at matematika upang katawanin ang regular at paulit-ulit na pagkakaayos ng mga punto sa espasyo.
+
+![Tatlong-dimensiyong paglalarawan ng sala-sala gamit ang mga saligang bektor][06].class=\"img-fluid mx-auto d-block\"
+
+Sa kriptograpiya, pangunahing ginagamit ang sala-sala para sa ilang algoritmong kriptograpiko. Sinasamantala ng kriptograpiyang nakabatay sa sala-sala (LBC) ang matematikal na katangian ng sala-sala upang lumikha ng ligtas na balangkas na kriptograpikong lumalaban sa atake ng mga quantum na kompyuter. Kumakatawan ang mga quantum na kompyuter sa saligang banta sa tradisyunal na kriptograpiya, sapagkat kaya nilang basagin nang mahusay ang mga algoritmong umaasa sa pagpapaktor ng malalaking bilang o sa paglutas ng suliraning diskretong logaritmo.
+
+Ipinamamalas ng CRYSTALS-Kyber ang lakas ng LBC, at naghahandog ito ng matatag na paglaban sa atakeng quantum na sinasamahan ng pambihirang kahusayan at angkop na laki ng susi. At ginagawa itong maaasahang pagpipilian para sa seguridad ng datos sa panahong quantum ng kakayahan nitong gumana sa maraming plataporma at ng pagkakatugma nito sa encryption.
+
+Ang kasalukuyang espesipikasyon ng CRYSTALS-Kyber ay ang mga sumusunod:
+
+- **Kyber512**: naghahandog ng antas ng seguridad na katumbas ng encryption na AES sa 128 bit, kaya pinagsasanggalang nito ang sensitibong datos nang naaayon sa pamantayan ng industriya.
+- **Kyber768**: naghahandog ng antas ng seguridad na katumbas ng encryption na AES sa 256 bit, kaya tinitiyak nito ang pagkalihim ng napakasensitibong impormasyon.
+- **Kyber1024**: naghahandog ng antas ng seguridad na lampas sa encryption na AES sa 256 bit, kaya naghahatid ito ng matatag na proteksiyon laban sa atakeng quantum at pinananatili ang integridad ng datos sa mahabang panahon sa hinaharap.
+
+### Paghahambing ng antas ng seguridad sa pagitan ng klasiko at ng lumalaban-sa-quantum na algoritmo
+
+Ipinapaliwanag ng grapikong ito ang kaugnay na antas ng seguridad ng mga klasikong algoritmong kriptograpiko tulad ng RSA-2048 at ng algoritmo ng digital na lagda sa elliptic curve (ECDSA), kumpara sa espesipikasyon ng mga baryanteng lumalaban sa quantum ng CRYSTALS-Kyber (Kyber512, Kyber768, at Kyber1024).
+
+Bagaman naghahandog ang grapiko ng biswal na paghahambing, mahalagang banggitin na hindi tuwirang maihahambing ang mga antas ng seguridad, sapagkat nakabatay ang mga ito sa magkakaibang prinsipyong matematikal.
+
+Gayunman, naghahandog ang grapiko ng kapaki-pakinabang na sanggunian sa pag-unawa sa antas ng seguridad ng mga algoritmong lumalaban sa quantum.
+
+![Kriptograpiyang nakabatay sa sala-sala][05].class=\"img-fluid mx-auto d-block\"
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## حماية تطبيقات الويب بالتشفير المقاوم للكم
+## KyberLib: isang aklatang Rust para sa kriptograpiyang lumalaban sa quantum computing
 
-KyberLib، المُصمَّمة بأقل بصمة ذاكرة، مثالية للأنظمة المدمجة ومحدودة الموارد دون التضحية بالأمن. وتطبيقها بلغة Rust يَستفيد من سمات السلامة في اللغة، فيُحصّن الأمن الذي تُقدّمه خوارزمية CRYSTALS-Kyber.
+Ginagamit ng KyberLib ang lakas ng CRYSTALS-Kyber upang maghandog ng pinatatag na kaligtasan ng memorya at matatag na seguridad ng sistema. Sinusuportahan nito ang iba't ibang espesipikasyon ng CRYSTALS-Kyber (Kyber512, Kyber768, at Kyber1024), kaya naghahandog ito ng hanay ng antas ng seguridad na angkop sa inyong tiyak na pangangailangan. Ginagawa itong angkop na angkop na pagpipilian para sa mga nakapaloob na sistema ng pagkakatugma nito sa `no_std`, samantalang pinadadali naman ng pagkakatugma nito sa WebAssembly (WASM) ang maayos na pagsasanib sa mga aplikasyong web.
 
-علاوةً على ذلك، تُعزّز توافقية KyberLib مع WebAssembly فائدتَها في تطبيقات الويب، ضامنةً بقاءها أداة حيوية في عالم التشفير الديناميكي.
+![divider][divider].class=\"m-10 w-100\"
 
-[انطلقوا مع KyberLib الآن! ⧉][00] سهلة التثبيت، ومجانية للاستخدام الشخصي والتجاري على حدٍّ سواء، تُمثّل KyberLib حلّكم الأمثل للتشفير المقاوم للحوسبة الكمية.
+## Pagsanggalang sa mga aplikasyong web gamit ang kriptograpiyang lumalaban sa quantum
+
+Ang KyberLib, na idinisenyo nang may pinakamaliit na bakas sa memorya, ay angkop na angkop sa mga nakapaloob at limitado-sa-mapagkukunang sistema nang hindi isinasakripisyo ang seguridad. Sinasamantala ng pagpapatupad nito sa wikang Rust ang mga katangian ng kaligtasan ng wika, kaya pinatatatag nito ang seguridad na inihahandog ng algoritmong CRYSTALS-Kyber.
+
+Bukod dito, pinatatatag ng pagkakatugma ng KyberLib sa WebAssembly ang pakinabang nito sa mga aplikasyong web, kaya tinitiyak nitong mananatili itong mahalagang kasangkapan sa dinamikong mundo ng kriptograpiya.
+
+[Magsimula sa KyberLib ngayon! ⧉][00] Madaling i-install, at libre para sa personal at komersiyal na paggamit, ang KyberLib ang inyong pinakamainam na solusyon para sa kriptograpiyang lumalaban sa quantum computing.
 
 [00]: https://kyberlib.com/getting-started/index.html "Getting Started"
 [01]: https://pq-crystals.org/kyber/ "Kyber: A CCA-secure module-lattice-based KEM"
