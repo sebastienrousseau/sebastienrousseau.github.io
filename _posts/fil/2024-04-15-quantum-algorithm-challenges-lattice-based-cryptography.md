@@ -1,99 +1,96 @@
 ---
-title: "خوارزمية كمومية تتحدّى التشفير القائم على الشبكات"
+title: "Isang algoritmong kuwantum na humahamon sa kriptograpiyang nakabatay sa sala-sala"
 tags: "quantum algorithms, cryptography, lattice problems, LWE, post-quantum cryptography, cybersecurity, research, innovation, future-proofing, ISO 20022, quantum computing, AI"
-subtitle: "الخوارزمية الكمومية التالية في الزمن المتعدّد الحدود ضدّ التشفير القائم على الشبكات"
-description: "خوارزمية كمومية جديدة في الزمن المتعدّد الحدود من Yilei Chen تستهدف التشفير القائم على الشبكات. تبعات على المعايير ما بعد الكمومية بما في ذلك CRYSTALS-Kyber."
+subtitle: "Ang algoritmo ni Yilei Chen sa polinomyal na oras para sa LWE, GapSVP at SIVP — at kung bakit hindi pa ito agarang banta."
+description: "Ang algoritmong kuwantum ni Yilei Chen sa polinomyal na oras para sa Learning With Errors: ang punsiyong Gaussian na may masalimuot na baryansiya, ang transpormasyong Fourier na may bintana, at kung bakit nananatiling ligtas ang umiiral nang balangkas na nakabatay sa LWE."
 date: "April 15, 2024"
 language: "fil-PH"
 locale: "fil_PH"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
-banner_alt: "لافتة تُمثّل عُقَد شبكة في فضاء رقمي أزرق"
-keywords: "الحوسبة الكمومية, الخوارزمية الكمومية, التشفير القائم على الشبكات, LWE, التشفير, التشفير ما بعد الكمومي, الأمن السيبراني, Yilei Chen, أبحاث التشفير, التهديدات الأمنية"
+banner_alt: "Malikhaing paglalarawan hinggil sa kriptograpiyang nakabatay sa sala-sala"
+keywords: "Yilei Chen, LWE, Learning With Errors, sala-sala, GapSVP, SIVP, algoritmong kuwantum, polinomyal na oras, kriptograpiyang post-quantum, Regev, Kuperberg, LLL"
 ---
+## Isang algoritmong kuwantum na humahamon sa kriptograpiyang nakabatay sa sala-sala
 
-## خوارزمية كمومية تتحدّى التشفير القائم على الشبكات
+## Buod para sa pamunuan
 
-## الموجز التنفيذي
+Tinatalakay ng artikulong ito ang gawa ni [**Yilei Chen ⧉**][00], na bumuo ng `algoritmong kuwantum sa polinomyal na oras` na maaaring may nadaramang epekto sa hirap ng suliraning matematikal na **Learning With Errors (LWE)**, na saligang hamon sa kriptograpiyang nakabatay sa sala-sala.
 
-يتناول هذا المقال عمل [**Yilei Chen ⧉**][00]، الذي طوَّر `خوارزمية كمومية في الزمن المتعدّد الحدود` يمكن أن تؤثّر تأثيراً ملموساً في صعوبة المسألة الرياضية **Learning With Errors (LWE)**، التي تُمثّل تحدّياً جوهرياً في التشفير القائم على الشبكات.
+Ang sala-sala ay diskretong pangkat na bahagi ng espasyong Euclidean na may n na dimensiyon, at gumaganap ito ng mapagpasyang papel sa makabagong balangkas na kriptograpiko. At hinihingi ng suliraning LWE ang paghanap ng lihim na bektor batay sa hanay ng tinatayang linyar na ekwasyon, at haligi ito ng maraming protokol ng kriptograpiyang post-quantum.
 
-الشبكات هي مجموعات فرعية متقطّعة من الفضاء الإقليدي ذي n من الأبعاد، تؤدّي دوراً حاسماً في المخطّطات التشفيرية الحديثة. وتقتضي مسألة LWE إيجاد متّجه سرّي بناءً على مجموعة من المعادلات الخطّية التقريبية، وتُمثّل ركيزة لكثير من بروتوكولات التشفير ما بعد الكمومية.
+## Ang algoritmong kuwantum ni Chen sa polinomyal na oras
 
-## خوارزمية Chen الكمومية في الزمن المتعدّد الحدود
+Naghahandog ang algoritmo ni Chen ng solusyon sa `decisional shortest vector problem (GapSVP)` at sa `shortest independent vector problem (SIVP)` para sa sala-sala sa anumang dimensiyon. At nakakamit nito ito sa polinomyal na pagiging masalimuot ng oras, na malaking pagbuti kumpara sa mga naunang solusyon.
 
-تُقدِّم خوارزمية Chen حلاًّ لـ`decisional shortest vector problem (GapSVP)` و`shortest independent vector problem (SIVP)` للشبكات بأيّ بُعد. وتحقّق ذلك بتعقيد زمني متعدّد الحدود، وهو تحسين كبير على الحلول السابقة.
+Kabilang sa pangunahing inobasyon sa kanyang gawa ang:
 
-تشمل الابتكارات الرئيسية في عمله:
+* **Punsiyong Gaussian na may masalimuot na baryansiya:** ipinapasok ni Chen ang paggamit ng punsiyong Gaussian na may masalimuot na baryansiya sa disenyo ng algoritmong kuwantum. At ginagamit ng paraang ito ang katangian ng masalimuot na distribusyong Gaussian upang mas mabisang maproseso ang kalagayang kuwantum, kaya binibigyang-kakayahan nito ang mas mahusay na solusyon sa suliraning LWE.
 
-* **دوال غاوسية بتباينات معقّدة:** يُقدِّم Chen استخدام دوال غاوسية بتباينات معقّدة في تصميم الخوارزمية الكمومية. ويستفيد هذا النهج من خصائص التوزيعات الغاوسية المعقّدة لمعالجة الحالات الكمومية بفعالية أكبر، ممّا يُمكِّن من حلٍّ أكثر كفاءة لمسألة LWE.
+* **Transpormasyong Fourier na kuwantum na may bintana:** ginagamit ng algoritmo ang transpormasyong Fourier na kuwantum na may bintana.
 
-* **تحويل فورييه الكمومي ذو النوافذ:** تُطبِّق الخوارزمية تحويل فورييه كمومياً ذا نوافذ.
+## Panimula sa suliranin ng sala-sala at sa halaga nito sa kriptograpiya
 
-## مقدّمة في مسائل الشبكات وأهمّيتها في التشفير
+Sinasaklaw ng suliranin ng sala-sala ang pag-aaral ng balangkas na matematikal na tinatawag na sala-sala, na diskretong pangkat na bahagi ng espasyong Euclidean na may n na dimensiyon. At nakatanggap ang mga suliraning ito ng malaking pansin sa kriptograpiya dahil sa ipinapalagay na paglaban ng mga ito sa atakeng kuwantum.
 
-تشمل مسائل الشبكات دراسة بُنى رياضية تُسمّى الشبكات، وهي مجموعات فرعية متقطّعة من الفضاء الإقليدي ذي n من الأبعاد. وقد حظيت هذه المسائل باهتمام كبير في التشفير بسبب مقاومتها المفترضة للهجمات الكمومية.
+Ang pinakatanyag na suliranin ng sala-sala ay ang [**suliraning Learning With Errors (LWE) ⧉**][01], na ipinakilala ni Oded Regev. At ang LWE ay suliraning pangkalkulasyon na hinihingi ang paghanap ng lihim na bektor batay sa hanay ng tinatayang linyar na ekwasyon.
 
-أبرز مسألة شبكية هي [**مسألة Learning With Errors (LWE) ⧉**][01]، التي قدّمها Oded Regev. وLWE مسألة حسابية تقضي بإيجاد متّجه سرّي بناءً على مجموعة من المعادلات الخطّية التقريبية.
+Nakasalalay ang maraming makabagong balangkas na kriptograpiko, tulad ng sistema ni Regev at ng palitan ng susing Frodo, sa hirap ng paglutas sa suliraning LWE para sa seguridad ng mga ito.
 
-تستند الكثير من المخطّطات التشفيرية الحديثة، كنظام Regev وتبادل المفاتيح Frodo، في أمنها إلى صعوبة حلّ مسألة LWE.
+## Ang klasikong algoritmo para sa suliranin ng sala-sala at ang hangganan nito
 
-## الخوارزميات الكلاسيكية لمسائل الشبكات وقيودها
+Masusing pinag-aralan sa larangan ng kriptograpiya ang klasikong algoritmo para lutasin ang suliranin ng sala-sala, tulad ng algoritmong **Lenstra-Lenstra-Lovász (LLL)** at ng mga uri nito. Gayunman, humaharap ang mga algoritmong ito sa malalaking hamon sa pagiging masalimuot na pangkalkulasyon, lalo na habang dumarami ang dimensiyon ng sala-sala.
 
-دُرِسَت الخوارزميات الكلاسيكية لحلّ مسائل الشبكات، كخوارزمية **Lenstra-Lenstra-Lovász (LLL)** وأنواعها، دراسةً مستفيضةً في ميدان التشفير. غير أنّ هذه الخوارزميات تواجه تحدّيات كبيرة في التعقيد الحاسوبي، خاصّةً مع ازدياد أبعاد الشبكة.
+Nakasalalay nang eksponensiyal ang kilalang klasikong algoritmo para lutasin ang suliraning LWE sa bilang ng baryabol, kaya nagiging hindi praktikal ang mga ito para sa sala-salang mataas ang dimensiyon. At naging pangunahing salik ang harang na ito ng pagiging masalimuot sa seguridad ng balangkas na kriptograpikong nakabatay sa LWE.
 
-تعتمد الخوارزميات الكلاسيكية المعروفة لحلّ مسألة LWE اعتماداً أُسّياً على عدد المتغيّرات، ممّا يجعلها غير عملية للشبكات ذات الأبعاد العالية. وقد كان حاجز التعقيد هذا عاملاً رئيسياً في أمن المخطّطات التشفيرية القائمة على LWE.
+## Ang naunang pagtatangkang bumuo ng algoritmong kuwantum para sa LWE
 
-## محاولات سابقة لتطوير خوارزميات كمومية لـLWE
+Bago ang gawa ni Chen, tinuklas ng ilang mananaliksik ang potensiyal ng algoritmong kuwantum para lutasin ang suliraning LWE.
 
-قبل عمل Chen، استكشف عدد من الباحثين إمكانات الخوارزميات الكمومية لحلّ مسألة LWE.
+Matagumpay na bumuo si Oded Regev ng kuwantum na pagbabawas mula `GapSVP` tungo sa `LWE`. Gayunman, karapat-dapat banggitin na nangangailangan ang pagbabawas na ito ng orakulong kuwantum upang malutas ang GapSVP, isang orakulong hindi pa napatutunayang umiiral.
 
-طوَّر Oded Regev بنجاح اختزالاً كمومياً من `GapSVP` إلى `LWE`. غير أنّه يجدر بالذكر أنّ هذا الاختزال يتطلّب وحياً كمومياً لحلّ GapSVP، وهو وحي لم يُثبَت وجوده بعد.
+Lumikha si Kuperberg ng [**algoritmong kuwantum upang lutasin ang LWE gamit ang halos eksponensiyal na salik ng pagtatantiya ⧉**][02]. Gayunman, ang mga paraang algoritmikong ito ay alinman sa nakasalalay sa palagay na hindi napatunayan o nagpapakita ng mas mabagal na bilis ng pagkalkula. Sa kabaligtaran, naghahandog ang algoritmo ni Chen ng solusyon sa polinomyal na oras nang hindi nangangailangan ng orakulong kuwantum.
 
-أنشأ Kuperberg [**خوارزمية كمومية لحلّ LWE بعامل تقريب شبه أُسّي ⧉**][02]. غير أنّ هذه النهج الخوارزمية كانت إمّا تستند إلى افتراضات غير محقَّقة أو تُظهر سرعة حساب أبطأ. وعلى النقيض، تُقدّم خوارزمية Chen حلاًّ في الزمن المتعدّد الحدود دون الحاجة إلى وحي كمومي.
+## Ang algoritmong kuwantum ni Chen sa polinomyal na oras para sa LWE
 
-## خوارزمية Chen الكمومية في الزمن المتعدّد الحدود لـLWE
+Kumakatawan ang algoritmong kuwantum ni Yilei Chen para lutasin ang suliraning LWE sa polinomyal na oras sa kapansin-pansing tagumpay sa larangan. At gumagamit ang algoritmo ng dalawang bagong teknik:
 
-تُمثّل الخوارزمية الكمومية لـYilei Chen لحلّ مسألة LWE في زمن متعدّد الحدود اختراقاً ملحوظاً في الميدان. وتوظِّف الخوارزمية تقنيتين جديدتين:
+1. **Punsiyong Gaussian na may masalimuot na baryansiya**: ipinapasok ni Chen ang paggamit ng punsiyong Gaussian na may masalimuot na baryansiya sa disenyo ng algoritmong kuwantum. At ginagamit ng paraang ito ang katangian ng masalimuot na distribusyong Gaussian upang mas mabisang maproseso ang kalagayang kuwantum, kaya binibigyang-kakayahan nito ang mas mahusay na solusyon sa suliraning LWE.
 
-1. **دوال غاوسية بتباينات معقّدة**: يُقدِّم Chen استخدام دوال غاوسية بتباينات معقّدة في تصميم الخوارزمية الكمومية. ويستفيد هذا النهج من خصائص التوزيعات الغاوسية المعقّدة لمعالجة الحالات الكمومية بفعالية أكبر، ممّا يُمكِّن من حلٍّ أكثر كفاءة لمسألة LWE.
+2. **Transpormasyong Fourier na kuwantum na may bintana**: ginagamit ng algoritmo ang transpormasyong Fourier na kuwantum na may bintana, na nagpapahintulot ng sabayang pagsusuri sa suliranin sa larangan ng oras at ng prekuwensiya. At binibigyang-kakayahan ng teknik na ito ang algoritmo na mahusay na maproseso ang mataas-ang-dimensiyong balangkas ng sala-sala at makakuha ng kaugnay na impormasyon upang malutas ang LWE.
 
-2. **تحويل فورييه الكمومي ذو النوافذ**: تُطبِّق الخوارزمية تحويل فورييه كمومياً ذا نوافذ، يُتيح التحليل المتزامن للمسألة في المجالين الزمني والترددي. وتُمكِّن هذه التقنية الخوارزمية من معالجة البُنية ذات الأبعاد العالية للشبكات بكفاءة واستخلاص المعلومات ذات الصلة لحلّ LWE.
+Pinagsasama ng algoritmo ni Chen ang mga teknik na ito upang malutas ang `LWE`, ang `GapSVP`, at ang `SIVP` sa polinomyal na oras para sa lahat ng dimensiyon ng sala-sala. At malaking pagbuti ito kumpara sa klasiko at sa naunang kuwantum na algoritmo.
 
-تجمع خوارزمية Chen هذه التقنيات لحلّ `LWE` و`GapSVP` و`SIVP` في زمن متعدّد الحدود لجميع أبعاد الشبكة. وهذا تحسين كبير على الخوارزميات الكلاسيكية والكمومية السابقة.
+## Ang kahihinatnan, ang hangganan, at ang direksiyon ng pananaliksik sa hinaharap
 
-## التبعات والقيود واتّجاهات البحث المستقبلية
+May kahihinatnan sa LWE ang algoritmong kuwantum ni Chen, sapagkat hinahamon nito ang kaisipang hindi kayang basagin ng atakeng kuwantum ang LWE at ang katulad na suliraning nakabatay sa sala-sala. At bumubuo ang palagay na ito ng saligan ng maraming umuusbong na balangkas na kriptograpiko. Gayunman, saligan ang pag-unawa sa hangganan ng algoritmo at sa posibleng epekto nito sa umiiral nang sistemang kriptograpikong nakabatay sa LWE.
 
-لخوارزمية Chen الكمومية تبعاتٌ على LWE، إذ تطعن في فكرة أنّ الهجمات الكمومية لا تستطيع كسر LWE والمسائل المماثلة القائمة على الشبكات. ويُشكِّل هذا الافتراض أساس الكثير من المخطّطات التشفيرية الناشئة. غير أنّ فهم قيود الخوارزمية وتأثيرها المحتمل على أنظمة التشفير القائمة على LWE أمر جوهري.
+Isa sa pangunahing usapin sa algoritmo ni Chen ang paggana nito sa pinakamainam na paraan kapag malaki ang lampas ng laki ng suliranin sa pinahihintulutang margin ng pagkakamali. At sa praktikal na balangkas na kriptograpikong nakabatay sa LWE, pinananatiling mababa ang proporsiyon ng modulus sa ingay para sa layuning pangseguridad. Sa kabaligtaran, hinihingi ng algoritmo ni Chen ang mas malaking proporsiyon upang makamit ang polinomyal na oras ng pagtakbo.
 
-من المسائل الرئيسية في خوارزمية Chen أنّها تعمل على النحو الأمثل عندما يتجاوز حجم المسألة تجاوزاً كبيراً هامش الخطأ المسموح به. وفي المخطّطات التشفيرية العملية القائمة على LWE، تُحفَظ نسبة المُعامل (modulus) إلى الضوضاء عند مستوى منخفض لأغراض أمنية. وعلى النقيض، تستلزم خوارزمية Chen نسبة أكبر لتحقيق زمن تشغيل متعدّد الحدود.
+Tumuturo ang hangganang ito na maaaring manatiling ligtas laban sa algoritmo ni Chen sa kasalukuyang anyo nito ang umiiral nang balangkas ng kriptograpiyang nakabatay sa LWE na may mas maliit na proporsiyon ng modulus sa ingay. Kaya nga, bagaman kumakatawan ang algoritmo sa mahalagang teoretikal na tagumpay, hindi ito agarang banta sa seguridad ng lahat ng sistemang kriptograpikong nakabatay sa LWE.
 
-تُشير هذه القيود إلى أنّ مخطّطات التشفير الحالية القائمة على LWE بنسب مُعامل-إلى-ضوضاء أصغر قد تظلّ آمنةً ضدّ خوارزمية Chen كما هي حالياً. ولذلك، رغم أنّ الخوارزمية تُمثّل اختراقاً نظرياً مهمّاً، فإنّها لا تُشكّل تهديداً فورياً لأمن جميع أنظمة التشفير القائمة على LWE.
+At binibigyang-diin ng kanyang gawa ang pangangailangan ng higit pang pananaliksik sa pagbuo ng primitibong kriptograpikong lumalaban sa kuwantum.
 
-ويُؤكِّد عمله الحاجة إلى مزيد من البحث في تطوير أوّليّات تشفيرية مقاومة للكمومية.
+## Ang mga posibleng gamit at insentibo
 
-## التطبيقات والحوافز المحتملة
+May malayong-abot na kahihinatnan ang pagbuo ng mabisang algoritmong kuwantum para sa suliranin ng sala-sala sa lahat ng sektor na nakasalalay sa ligtas na digital na komunikasyon at sa pag-iimbak ng datos. At itinatampok ng algoritmo ni Chen ang pandaigdigang pangangailangan ng kriptograpiyang lumalaban sa kuwantum.
 
-لتطوير خوارزميات كمومية فعّالة لمسائل الشبكات تبعاتٌ بعيدة المدى عبر جميع القطاعات التي تعتمد على التواصل الرقمي الآمن وتخزين البيانات. وتُبرز خوارزمية Chen الحاجة العالمية إلى تشفير مقاوم للكمومية.
+At kabilang dito ang mga industriya tulad ng:
 
-ويشمل ذلك صناعات مثل:
+* **Seguridad na sibernetiko:** itinuturing na saligan ang matatag at lumalaban-sa-kuwantum na pamamaraan ng encryption upang maipagsanggalang ang sensitibong impormasyon sa panahon ng quantum computing.
 
-* **الأمن السيبراني:** تُعدّ طرق التشفير المتينة المقاومة للكمومية جوهرية لحماية المعلومات الحسّاسة في عصر الحوسبة الكمومية.
+* **Pamahalaan at depensa:** magagamit ng mga pamahalaan ang mga pagsulong na ito upang mapatatag ang seguridad ng mahalagang imprastruktura at ng lihim na komunikasyon, kaya nababawasan nila ang posibleng bantang nagmumula sa kaaway na kakayahan sa quantum computing.
 
-* **الحكومة والدفاع:** يمكن للحكومات الاستفادة من هذه التقدّمات لتعزيز أمن البنية التحتية الحرجة والاتّصالات السرّية، فتُخفِّف من التهديدات المحتملة الناشئة عن قدرات الحوسبة الكمومية المعادية.
+* **Mga serbisyong pinansiyal:** lubhang nakasalalay ang sektor na pinansiyal sa ligtas na daluyan ng komunikasyon para sa transaksiyon at sa pagsanggalang ng datos. At kayang mag-ambag ng primitibong kriptograpikong lumalaban sa kuwantum na nakabatay sa suliranin ng sala-sala sa pagtiyak ng pangmatagalang seguridad ng mga sistemang pinansiyal.
 
-* **الخدمات المالية:** يعتمد القطاع المالي اعتماداً كبيراً على قنوات التواصل الآمن للمعاملات وحماية البيانات. ويمكن للأوّليّات التشفيرية المقاومة للكمومية القائمة على مسائل الشبكات أن تُسهم في ضمان الأمن طويل الأمد للأنظمة المالية.
+* **Pangangalagang pangkalusugan:** habang lalong nagiging digital ang datos ng pangangalagang pangkalusugan, nagiging napakahalaga ang pagtiyak ng pagkalihim at integridad nito. At kayang mag-ambag ng pamamaraan ng kriptograpiyang ligtas sa kuwantum na hinango sa gawa ni Chen sa pagsanggalang ng sensitibong impormasyon ng pasyente laban sa atakeng kuwantum sa hinaharap.
 
-* **الرعاية الصحية:** مع تزايد رقمنة بيانات الرعاية الصحية، يصبح ضمان سرّيتها وسلامتها أمراً بالغ الأهمّية. ويمكن لطرق التشفير الكمومية الآمنة المستنبَطة من عمل Chen أن تُسهم في حماية معلومات المرضى الحسّاسة من الهجمات الكمومية المستقبلية.
+## Pangwakas
 
-* **الحوسبة السحابية:** مع التبنّي المتزايد للخدمات السحابية، يُعدّ أمن البيانات المخزَّنة والمعالَجة في السحابة مصدر قلق رئيسي. ويمكن لمخطّطات التشفير المقاومة للكمومية القائمة على مسائل الشبكات أن توفّر طبقة حماية إضافية للتطبيقات وتخزين البيانات السحابية.
+Kumakatawan ang algoritmong kuwantum ni Yilei Chen sa polinomyal na oras para lutasin ang suliraning LWE sa kapansin-pansing palatandaan sa larangan ng quantum computing at ng kriptograpiya. At sa paggamit ng bagong pamamaraan tulad ng punsiyong Gaussian at ng transpormasyong Fourier na kuwantum na may bintana, ipinakita ni Chen kung paano mahusay na malulutas ng algoritmong kuwantum ang masasalimuot na suliranin ng sala-sala. Gayunman, saligang pansinin na sa kasalukuyan ay teoretikal na tagumpay ang gawang ito, at kailangan ang higit pang pananaliksik upang mailapit ito sa praktikal na paggamit.
 
-## الخاتمة
+Ang pagbuo ng kriptograpiyang lumalaban sa kuwantum ay hindi lamang teknikal na hamon, kundi estratehikong pangangailangan din para sa mga kompanya at pamahalaan nang sabay. At maaaring magbunga ang pamumuhunan sa pagsisikap ng pananaliksik at pagpapaunlad sa larangang ito ng malaking pangmatagalang pakinabang sa dako ng seguridad at pagkapribado ng datos.
 
-تُمثّل خوارزمية Yilei Chen الكمومية في الزمن المتعدّد الحدود لحلّ مسألة LWE معلماً ملحوظاً في ميدان الحوسبة الكمومية والتشفير. وباستخدام طرق جديدة كالدوال الغاوسية وتحويلات فورييه الكمومية ذات النوافذ، أظهر Chen كيف يمكن للخوارزميات الكمومية أن تحلّ مسائل الشبكات المعقّدة بكفاءة. غير أنّه من الجوهري ملاحظة أنّ هذا العمل حالياً اختراق نظري، وأنّ هناك حاجة إلى مزيد من البحث لتقريبه من التطبيق العملي.
-
-ليس تطوير التشفير المقاوم للكمومية مجرّد تحدٍّ تقني، بل هو أيضاً ضرورة استراتيجية للشركات والحكومات على السواء. وقد تُسفر الاستثمارات في جهود البحث والتطوير في هذا الميدان عن فوائد طويلة الأمد كبيرة من حيث أمن البيانات وخصوصيتها.
-
-## المراجع
+## Mga sanggunian
 
 Chen, Y. (2024). [**Quantum Algorithms for Lattice Problems: A New Era in Cryptography ⧉**][00]. *Journal of Quantum Computing and Cryptography*, 7(4), 112-135.
 
