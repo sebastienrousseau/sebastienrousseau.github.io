@@ -55,9 +55,9 @@ test-i18n:
 	@python3 tests/validation/test_i18n_listings.py
 	@python3 tests/validation/test_i18n_projects.py
 	@python3 tests/validation/test_i18n_speaking.py
-	@python3 tests/validation/test_i18n_cross_locale_script.py
+	@python3 tests/validation/test_i18n_cross_locale_script.py --strict
 	@python3 tests/validation/test_lang_no_leakage.py
-	@python3 tests/validation/test_body_translation.py
+	@python3 tests/validation/test_body_translation.py --strict
 	@python3 tests/validation/test_rtl_safe.py --strict
 	@python3 tests/validation/test_slug_policy.py
 

@@ -34,6 +34,14 @@ mechanism as the slug policy, the mypy tier and the complexity allowlist.
 ``--strict`` fails on the backlog too, for when it has been worked
 through.
 
+That backlog is now empty. /speaking/, /suite/, /articles/, /library/,
+/projects/, /topics/ and /case-studies/ all shipped an English ``<main>``
+when this gate was written — 1.000 on the worst locale for the first
+three — and all seven are now under 0.12, the worst page on the site
+being /tags/ at 0.427 against a 0.60 threshold. So ``--strict`` is on in
+build.sh and the Makefile, which is what turns "no page ships an English
+body" from an observation that happens to hold into an invariant.
+
 Usage:  python3 tests/validation/test_body_translation.py [--strict]
         python3 tests/validation/test_body_translation.py --update-baseline
 """
@@ -68,6 +76,28 @@ NGRAM = 5
 # Below this many n-grams the English page has too little prose for the
 # ratio to mean anything (a redirect stub, a bare listing).
 MIN_NGRAMS = 20
+
+# Drift a page may accumulate before the ratchet calls it a regression.
+#
+# The floor absorbs a card being added to a listing page. It is not enough
+# on its own: pages built largely from article titles carry English that is
+# English by design, and their score creeps upward as English articles are
+# published. Measured over one build cycle with no work done on either
+# page, /tags/ moved +0.006 and /research/ +0.001 — against a flat 0.02
+# that is a handful of cycles before a spurious failure.
+#
+# So the band scales with the recorded value. A page already at 0.4 is one
+# whose content churns; a page at 0.0 is not, and stays on the floor. Even
+# at the widest this leaves the gate's actual signal untouched: a body
+# reverting to English moves the score to ~1.0, tenths above any band here.
+TOLERANCE_FLOOR = 0.02
+TOLERANCE_FRACTION = 0.15
+
+
+def tolerance(recorded: float) -> float:
+    """Drift allowed for a page recorded at ``recorded``."""
+    return max(TOLERANCE_FLOOR, TOLERANCE_FRACTION * recorded)
+
 
 _MAIN_RE = re.compile(r"<main\b[\s\S]*?</main\s*>", re.IGNORECASE)
 _SCRIPT_RE = re.compile(r"<script\b[\s\S]*?</script(?:[\s/][^>]*)?>", re.IGNORECASE)
@@ -161,12 +191,11 @@ def main() -> int:
     for slug, v in sorted(current.items()):
         worst = v["worst"]
         recorded = baseline.get(slug)
-        # Tolerance absorbs a card being added to a listing page; a body
-        # reverting to English moves this by tenths, not thousandths.
-        if recorded is not None and worst > recorded + 0.02:
+        if recorded is not None and worst > recorded + tolerance(recorded):
             regressions.append(
                 f"  {slug}: worst-locale English share {worst:.3f} "
-                f"(baseline {recorded:.3f}) — a localized <main> reverted to English"
+                f"(baseline {recorded:.3f} +{tolerance(recorded):.3f}) "
+                f"— a localized <main> reverted to English"
             )
         if worst >= THRESHOLD:
             backlog.append(
