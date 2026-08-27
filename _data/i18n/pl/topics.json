@@ -19,5 +19,68 @@
   "blockchain-digital-assets": {
     "title": "Blockchain i aktywa cyfrowe",
     "lede": "Blockchain i aktywa cyfrowe: tokenizacja, ERC-20, stablecoiny, infrastruktura kryptowalut oraz ramy regulacyjne, które ją kształtują."
-  }
+  },
+  "cloud-native-banking": {
+    "title": "Bankowość cloud-native",
+    "lede": "Inżynieria platform oparta na Kubernetes dla instytucji regulowanych: odporność operacyjna przetestowana pod kątem DORA, konwergencja maszyn wirtualnych i kontenerów, chmura suwerenna, strategia wyjścia oraz architektura pozwalająca bankom wdrażać usługi krytyczne pod nadzorem."
+  },
+  "agentic-ai-banking": {
+    "title": "Agentowa SI w bankowości",
+    "lede": "Płaszczyzny sterowania agentami, deterministyczny routing semantyczny, bramki polityk OPA, niezmienne dzienniki audytu WORM oraz perspektywa ryzyka modelu SR 11-7 / SS1/23, która przekształca autonomiczne przepływy pracy w dowody gotowe dla nadzorcy."
+  },
+  "treasury-automation": {
+    "title": "Automatyzacja skarbu",
+    "lede": "Programowalna płynność, autonomiczny skarb, silniki płatności ISO 20022 oraz zestawy narzędzi open source, które zamieniają CAMT / pacs.008 / MT940 / pain.001 w audytowalną, zdatną dla zarządu inteligencję transakcyjną dla zespołów skarbu korporacyjnego."
+  },
+  "operational-resilience-dora": {
+    "title": "Odporność operacyjna i DORA",
+    "lede": "Odpowiedzialność zarządu wynikająca z artykułu 5 DORA, agregacja danych o ryzyku wg BCBS 239, ryzyko koncentracji dostawców zewnętrznych, testy wyjścia oraz kontrole inżynieryjne, które zmieniają odporność operacyjną z projektu zgodności w tablicę wyników gotową dla nadzorcy."
+  },
+  "stablecoins-tokenisation": {
+    "title": "Stablecoiny i tokenizacja",
+    "lede": "Tokenizowane depozyty, fundusze rynku pieniężnego, pilotaże hurtowego CBDC, BRSRV/BSTBL od BlackRock, ustawa GENIUS oraz decyzje inżynieryjne stojące za tym, by programowalny pieniądz działał w regulowanych bilansach."
+  },
+  "generative-ai-llms": {
+    "title": "Generatywna SI i modele LLM",
+    "lede": "Modele fundamentowe, multimodalne modele LLM (Gemini, Gemma, Mistral, MM1), inżynieria promptów oraz wydania open source kształtujące to, co banki mogą budować wewnątrz własnego obwodu danych."
+  },
+  "voice-speech-ai": {
+    "title": "SI głosu i mowy",
+    "lede": "Klonowanie głosu, rozpoznawanie mowy w czasie rzeczywistym (Whisper), asystenci głosowi dla kadry zarządzającej oraz stos inteligencji audio przekształcający doświadczenie klienta bankowości prywatnej."
+  },
+  "ai-governance-regulation": {
+    "title": "Nadzór i regulacja SI",
+    "lede": "Zgodność z unijnym aktem o SI, ryzyko modelu SR 11-7, odpowiedzialność na poziomie zarządu, audytowalność autonomicznych przepływów pracy oraz ramy regulacyjne SI w bankach pierwszej ligi."
+  },
+  "wholesale-payments-rails": {
+    "title": "Szyny płatności hurtowych",
+    "lede": "Strategia wieloszynowa obejmująca karty, A2A, RTP, FedNow, otwartą bankowość i korytarze stablecoinowe. Ekonomia hurtu, ostateczność rozrachunku oraz model atomowości transgranicznej z Projektu Agorá BIS."
+  },
+  "_pillars": [
+    {
+      "name": "Kryptografia i odporność",
+      "lede": "Migracja postkwantowa, odporność operacyjna na poziomie DORA oraz ramy nadzoru nad SI w usługach finansowych."
+    },
+    {
+      "name": "Płatności i pieniądz",
+      "lede": "Migracja do ISO 20022, rozrachunek hurtowy, stablecoiny, tokenizowane depozyty i otaczająca je funkcja skarbu korporacyjnego."
+    },
+    {
+      "name": "SI i chmura",
+      "lede": "Stosowana SI, systemy agentowe, modele generatywne, SI głosu i mowy oraz platformy bankowe cloud-native, które je goszczą."
+    },
+    {
+      "name": "Open source i rzemiosło",
+      "lede": "Biblioteki Rust, prymitywy blockchain oraz stojąca za nimi dyscyplina inżynierska open source."
+    }
+  ],
+  "_hub_lede": "Cztery filary, czternaście klastrów tematycznych, każdy datowany artykuł. Wybierz wątek i prześledź go w archiwum.",
+  "_banner_word": "baner tematu",
+  "_kpi": [
+    "Filary",
+    "Klastry tematyczne",
+    "Zindeksowane artykuły"
+  ],
+  "_article_count": "Artykuły: {n}",
+  "_pillar_kicker": "FILAR"
 }

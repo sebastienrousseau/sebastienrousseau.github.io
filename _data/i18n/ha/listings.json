@@ -1,0 +1,26 @@
+{
+  "_comment": "HA copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "JERIN LABARAI",
+    "pageLabel": "Shafi na {page} daga {total}",
+    "visible": "ana nunawa",
+    "categoryLabel": "Rukuni",
+    "yearLabel": "Shekara",
+    "allCategories": "Dukan rukunoni",
+    "allYears": "Dukan shekaru",
+    "filterAria": "Tace labarai",
+    "listAria": "Katunan labarai",
+    "paginationAria": "Lambar shafuka",
+    "emptyState": "Babu labarin da ya dace da tacewar yanzu.",
+    "previous": "Baya",
+    "next": "Gaba"
+  },
+  "pillars": {
+    "ai": "AI da aka yi amfani da shi",
+    "payments": "Biyan kuɗi da kuɗi",
+    "infra": "Kayan more rayuwa da kiripitoggirafi",
+    "policy": "Manufofi da juriya",
+    "open-source": "Buɗaɗɗen tushe",
+    "leadership": "Jagoranci a banki"
+  }
+}

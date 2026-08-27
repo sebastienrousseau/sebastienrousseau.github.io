@@ -40,6 +40,7 @@ from __future__ import annotations
 
 import datetime as _dt
 import json
+import os
 import sys
 import urllib.error
 import urllib.request
@@ -98,9 +99,7 @@ def _crates_downloads_all() -> int:
     uid = (user or {}).get("user", {}).get("id")
     if not uid:
         return 0
-    data = _http_get_json(
-        f"https://crates.io/api/v1/crates?user_id={uid}&per_page=100"
-    )
+    data = _http_get_json(f"https://crates.io/api/v1/crates?user_id={uid}&per_page=100")
     if not data:
         return 0
     return sum(int(c.get("downloads") or 0) for c in data.get("crates", []))
@@ -109,8 +108,7 @@ def _crates_downloads_all() -> int:
 def _github_repos() -> tuple[int, int]:
     """Sum stars + forks across the user's repos. (0, 0) on failure."""
     data = _http_get_json(
-        f"https://api.github.com/users/{GITHUB_USER}/repos"
-        f"?per_page=100&type=owner&sort=updated"
+        f"https://api.github.com/users/{GITHUB_USER}/repos?per_page=100&type=owner&sort=updated"
     )
     if not isinstance(data, list):
         return 0, 0
@@ -122,8 +120,7 @@ def _github_repos() -> tuple[int, int]:
 def _articles_count() -> int:
     """Count dated _posts/*.md — local, never fails."""
     return sum(
-        1 for p in (ROOT / "_posts").glob("*.md")
-        if p.name[:4].isdigit() and "-" in p.name[4:5]
+        1 for p in (ROOT / "_posts").glob("*.md") if p.name[:4].isdigit() and "-" in p.name[4:5]
     )
 
 
@@ -167,7 +164,29 @@ def _max_value(key: str, computed: int, fallback: dict) -> int:
     return computed
 
 
+# Opt out of the network fetch and keep the committed snapshot.
+#
+# Set by the reproducible-build CI job, which builds twice and requires
+# byte-identical output. Every number below is fetched live, so the two
+# builds saw different values whenever a counter moved between them —
+# github_stars and github_forks render in `plain` format, so a single
+# star was enough. That rewrote the KPI figure on /, /about/, /projects/
+# and /speaking/ plus all 34 locale forks, and search-index.json with
+# them, failing a job whose stated purpose is to catch a build pass that
+# is not idempotent. It was measuring the network, not the build.
+SKIP_ENV = "SKIP_METRICS_FETCH"
+
+
 def main() -> int:
+    if os.environ.get(SKIP_ENV):
+        existing = _load_existing()
+        if not existing:
+            print(f"fetch_metrics: {SKIP_ENV} set but no committed snapshot — nothing to keep")
+            return 0
+        summary = "  ".join(f"{s['key']}={s['value']}" for s in existing.get("stats", []))
+        print(f"fetch_metrics: {SKIP_ENV} set — keeping committed snapshot  {summary}")
+        return 0
+
     fallback = _load_existing()
 
     pypi_total = sum(_pypi_downloads(p) for p in PYPI_PACKAGES)
@@ -227,9 +246,7 @@ def main() -> int:
         json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
-    summary = "  ".join(
-        f"{s['key']}={s['value']}" for s in payload["stats"]
-    )
+    summary = "  ".join(f"{s['key']}={s['value']}" for s in payload["stats"])
     print(f"fetch_metrics: {summary}")
     return 0
 

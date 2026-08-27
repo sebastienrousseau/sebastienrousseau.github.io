@@ -47,8 +47,7 @@ def _load(meta: dict) -> dict:
 
 def test_committed_catalog_matches_capture_no_drift() -> None:
     assert ref.apply(PAGE_TEXT) == PAGE_TEXT, (
-        "committed reference page is stale; run "
-        "python3 scripts/generators/render_mcp_reference.py"
+        "committed reference page is stale; run python3 scripts/generators/render_mcp_reference.py"
     )
 
 

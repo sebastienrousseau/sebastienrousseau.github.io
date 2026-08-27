@@ -1,0 +1,156 @@
+{
+  "_comment": "Positional /projects/ body copy. Arrays align with the English page in document order; see scripts/generators/build_translations/_projects.py. gh_pushed_template takes {age} verbatim from the GitHub push date.",
+  "kpi": [
+    "Ìgbàsílẹ̀ orísun ṣíṣí",
+    "Ìràwọ̀ GitHub",
+    "Àwọn àpilẹ̀kọ tí Sigstore fọwọ́sí",
+    "Ọdún ní iṣẹ́ gidi"
+  ],
+  "setup_kicker": [
+    "A KỌ́ Ọ FÚN ÀWỌN IṢẸ́ ÌNÁWÓ"
+  ],
+  "setup_headline": [
+    "Àwọn agbègbè iṣẹ́ mẹ́ta. "
+  ],
+  "setup_soft": [
+    "Ìsanwó, ààbò àti ohun-èlò."
+  ],
+  "area_alt": [
+    "Àwòrán ojú-ọ̀nà ìlú láti òkè ní alẹ́, gẹ́gẹ́ bí àpẹẹrẹ ojú-ọ̀nà ìsanwó tí ó rékọjá ààlà.",
+    "Pápá ìmọ́lẹ̀ búlúù aláìlẹ́wà, gẹ́gẹ́ bí àpẹẹrẹ ìsekóòdù lẹ́yìn-kúáǹtọ̀mù fún àwọn ètò ìnáwó.",
+    "Àwọn ìlà iṣẹ́-ọnà tí ó mọ́ nínú ìmọ́lẹ̀ jẹ́ẹ́jẹ́, gẹ́gẹ́ bí àpẹẹrẹ ìpìlẹ̀ tí a lè gbẹ́kẹ̀lé fún àwọn olùkọ́ni."
+  ],
+  "area_kicker": [
+    "ÌSANWÓ ÀTI ISO 20022",
+    "ÀÀBÒ LẸ́YÌN-KÚÁǸTỌ̀MÙ",
+    "PÁPÁ FÚN ÀWỌN OLÙKỌ́NI"
+  ],
+  "area_headline": [
+    "Ìsanwó nínú <span class=\"ac\">ìlànà àgbáyé.</span>",
+    "Ààbò tí ó kọjá <span class=\"ac\">àkókò RSA.</span>",
+    "Ìpìlẹ̀ fún <span class=\"ac\">àwọn onímọ̀-ẹ̀rọ rẹ.</span>"
+  ],
+  "area_text": [
+    "ISO 20022 bo gbogbo àyíká ìgbésí ayé ìránṣẹ́. Àwọn ilé-ìkàwé wọ̀nyí ń ṣẹ̀dá àwọn fáìlì ìbẹ̀rẹ̀ <strong>pain.001</strong>, wọ́n ń kọ́ tí wọ́n sì ń yẹ àwọn ìfiránṣẹ́ owó <strong>pacs.008</strong> wò, wọ́n ń ka àwọn ìwé-ìṣirò <strong>camt.053</strong>, wọ́n sì ń bójú tó ìṣàkóso àkántì <strong>acmt.001</strong>, pẹ̀lú àwọn atúmọ̀ fún àwọn ọ̀nà àtijọ́. O lè gba ilé-ìkàwé kan lẹ́ẹ̀kan dípò kí o pààrọ̀ ètò àárín gbùngbùn.",
+    "Àwọn àkọsílẹ̀ ìnáwó kan ń wà ní ìkọ̀kọ̀ fún ẹ̀wádún — tó pẹ́ tó bẹ́ẹ̀ tí dátà tí a kójọ lónìí lè di kíkà nígbà tí àwọn kọ̀ǹpútà kúáǹtọ̀mù bá dàgbà. Àwọn ilé-ìkàwé Rust wọ̀nyí ń mú <strong>ML-KEM (CRYSTALS-Kyber, NIST FIPS 203)</strong> ṣẹ pẹ̀lú ìtúmọ̀-kúkúrú àti àwọn ìpìlẹ̀ tí ó ní í ṣe pẹ̀lú rẹ̀, kí ìṣílọ lè bẹ̀rẹ̀ kí ọjọ́ gbèdéke tó fipá mú un.",
+    "Àwọn ilé-ìkàwé Rust kan náà tí ó kọ́ ojú-òpó yìí tí ó sì ń dáàbò bò ó. Nínú wọn ni <strong>noyalib</strong> fún YAML àti <strong>Static Site Generator</strong> fúnra rẹ̀, tí a ń tẹ̀ jáde pẹ̀lú àkójọ ohun-èlò CycloneDX àti ìfọwọ́sí Sigstore. Àwọn onímọ̀-ẹ̀rọ rẹ yóò kọ́ lórí wọn dípò kí wọ́n máa tọ́jú irú wọn nílé."
+  ],
+  "area_cta": [
+    "Ka ìtàn ìsanwó",
+    "Ka ìtàn ààbò",
+    "Ka ìtàn pápá náà"
+  ],
+  "cat_kicker": [
+    "ÈTÒ ÌNÁWÓ TÍ Ó Ń ṢIṢẸ́ FÚNRA RẸ̀",
+    "ÀÀBÒ ÌNÁWÓ LẸ́YÌN-KÚÁǸTỌ̀MÙ",
+    "ỌGBỌ́N ATỌ́NÀ TÍ A LÒ ÀTI ÌTỌ́SỌ́NÀ FÚN OLÓRÍ",
+    "ÌMỌ̀-ẸÌRỌ AJỌ TÍ Ó NÍ ÒMINIRA",
+    "WẸ́Ẹ̀BÙ, ÌTẸ̀JÁDE ÀTI AGBÈGBÈ IṢẸ́"
+  ],
+  "finale_eyebrow": [
+    "ÌBÁNISỌ̀RỌ̀"
+  ],
+  "finale_lede": [
+    "Ṣé o ń gbèrò ìṣílọ sí ISO 20022, àyẹ̀wò lẹ́yìn-kúáǹtọ̀mù, tàbí ọgbọ́n atọ́nà tí a lò nínú iṣẹ́ gidi? Sọ ohun tí o ń kọ́ fún mi. Èmi yóò fi ibi tí àwọn ohun-èlò wọ̀nyí bá mu hàn ọ́."
+  ],
+  "finale_cta": [
+    "Bá mi sọ̀rọ̀"
+  ],
+  "h2": [
+    "Dátà ìnáwó, tí a tú kalẹ̀.",
+    "Ààbò níwájú kúáǹtọ̀mù. Ó ṣetán fún ajọ.",
+    "Bèèrè ìbéèrè kan. Gba àkópọ̀ rẹ̀.",
+    "Ẹ̀rọ tìrẹ. Dátà tìrẹ.",
+    "Tẹ̀ ẹ́ jáde ní ọ̀nà tìrẹ.",
+    "Kọ́ lórí rẹ̀. Tàbí kí a jọ kọ́ ọ."
+  ],
+  "lede": [
+    "Àwọn fáìlì ìsanwó àti ìwé-ìṣirò báǹkì, láìsí ìdíwọ́. Àwọn ohun-èlò wọ̀nyí ń ṣẹ̀dá gbogbo àyíká ìgbésí ayé ìránṣẹ́ ISO 20022, wọ́n sì ń ka àwọn ìwé-ìṣirò rúdurùdu ti ayé gidi pẹ̀lú pípé tí a lè sọ tẹ́lẹ̀. Mú àwọn fáìlì CSV, PDF tàbí àwọn ilé-ìpamọ́ dátà rẹ wá. Dátà yóò kàn ṣàn lọ.",
+    "Ààbò tí a kọ́ fún àkókò kúáǹtọ̀mù, tí a ń lò lónìí. Àwọn ilé-ìkàwé wọ̀nyí ń tẹ̀lé àwọn ìlànà NIST nípa dídi kọ́kọ́rọ́ àti ìtúmọ̀-kúkúrú, kí o lè múra ètò ìnáwó sílẹ̀ fún ọjọ́ iwájú kí ewu tó dé.",
+    "Ọgbọ́n atọ́nà tí a fi sí iṣẹ́ ojoojúmọ́. Ṣàyẹ̀wò kóòdù fún àìlera, sọ ìbéèrè kan di àkópọ̀ tí ó ní ìlànà, kí o sì fi ohùn ṣiṣẹ́. Ní àwọn ìlànà tìrẹ, láìsí dídè mọ́ olùpèsè kan.",
+    "Ìpìlẹ̀ tí o lè ni. Àwọn ilé-ìkàwé Rust tí a ti ṣàyẹ̀wò, tí ó ní ààbò ìrántí, tí ń ṣiṣẹ́ lórí ohun-èlò tìrẹ, tí a sì ń tẹ̀ jáde pẹ̀lú àkójọ ohun-èlò sọ́ftíwéà àti ìfọwọ́sí Sigstore. Ka gbogbo ìlà rẹ̀. Mú un wọlé. Fi í sílé.",
+    "Àwọn àwòṣe, ilé-iṣẹ́ CSS kan, àwọn ìwé-ìròyìn ilé-iṣẹ́ méjì, àti ètò tí a lè tún ṣe tí ó ń tẹ̀ gbogbo wọn jáde. Àkójọpọ̀ tí ojú-òpó yìí ń ṣiṣẹ́ lórí rẹ̀."
+  ],
+  "alt": [
+    "Àsíá ilé-ìkàwé ìsanwó orísun ṣíṣí pain001",
+    "Àsíá àpò-irinṣẹ́ ISO 20022 pacs008",
+    "Àmì àkójọpọ̀ ìwé-ìṣirò báǹkì camt053",
+    "Àmì àkójọpọ̀ ìṣàkóso àkántì acmt001",
+    "Àsíá Bank Statement Parser",
+    "Àmì NaluFX, pípín owó pẹ̀lú ọgbọ́n atọ́nà nínú Rust",
+    "Àmì QRC, ilé-ìkàwé kóòdù QR nínú Rust",
+    "Àsíá KyberLib",
+    "Àsíá ilé-ìkàwé Hash (HSH) nínú Rust",
+    "Àsíá Password Generator Pro",
+    "Àsíá Euxis, ẹ̀rọ àyẹ̀wò ààbò kóòdù orísun ṣíṣí",
+    "Àsíá Àkàndé, olùrànlọ́wọ́ ohùn ọgbọ́n atọ́nà tí ó ga",
+    "Àsíá Audio Analyser",
+    "Àsíá Crypto Service Suite",
+    "Àsíá Static Site Generator",
+    "Àsíá àyíká YAML 1.2 nínú Rust tí à ń pè ní noyalib",
+    "Àsíá Serde YML",
+    "Àsíá ilé-ìkàwé RustLogs (RLG)",
+    "Àsíá LibMake",
+    "Àsíá ilé-ìkàwé DateTime (DTT) nínú Rust",
+    "Àsíá ilé-ìkàwé Random (VRD) nínú Rust",
+    "Àsíá ilé-ìkàwé Common (CMN) nínú Rust",
+    "Àsíá ilé-ìkàwé Mini Functions nínú Rust",
+    "Àsíá Kaishi, àwòṣe ìbẹ̀rẹ̀",
+    "Àsíá Skeletonic Stylus Library",
+    "Àsíá ìwé-ìròyìn Banking On AI",
+    "Àsíá ìwé-ìròyìn Banking On Quantum",
+    "Àsíá ojú-òpó L90S",
+    "Àsíá iṣẹ́ akánṣe Dotfiles"
+  ],
+  "excerpt": [
+    "Ó ń ṣẹ̀dá àwọn fáìlì ISO 20022 pain.001 láti CSV tàbí SQLite. Àwọn báǹkì àti àwọn olùpèsè iṣẹ́ ìsanwó ń lò ó láti ṣẹ̀dá àwọn ìránṣẹ́ ìfiránṣẹ́ owó tí ó ní ìlànà, láìsí kí wọ́n tún àwọn ètò tí wọ́n ní kọ́.",
+    "Ó ń ṣẹ̀dá, ó ń yẹ̀wò, ó sì ń fi àwọn ìránṣẹ́ ISO 20022 pacs.008 ránṣẹ́ fún ìfiránṣẹ́ owó àwọn oníbàárà láàrin àwọn báǹkì. Ó ní àyẹ̀wò JSON Schema àti XSD, àyẹ̀wò IBAN ní orílẹ̀-èdè 75, àti bíbo dátà ara-ẹni fún GDPR àti PCI-DSS.",
+    "Ó ń ka àwọn ìwé-ìṣirò ISO 20022 camt.053 láti báǹkì sí oníbàárà, ó sì ń mú ìyókù, àkọsílẹ̀ àti àlàyé ìdúnàádúrà jáde sí dátà tí ó ní ìlànà. Ó ní ìkójọpọ̀ MT940, ìtújáde XLSX, àti ìsopọ̀ pẹ̀lú àwọn atúnṣe àti àwọn olùrànlọ́wọ́ ọgbọ́n atọ́nà.",
+    "Ìfiránṣẹ́ ISO 20022 fún ìṣàkóso àkántì. Ó ń ṣí, ó ń tọ́jú, ó ń tì, ó ń gbé àti ó ń fi àwọn àkántì báǹkì hàn láti inú àwọn fáìlì dátà tí ó rọrùn, pẹ̀lú ohun-èlò fún àwọn atúnṣe àti àwọn olùrànlọ́wọ́ ọgbọ́n atọ́nà.",
+    "Àpò-irinṣẹ́ Python tí ó ń sọ àwọn ìwé-ìṣirò báǹkì ní ọ̀nà púpọ̀ di dátà tí ó ní ìlànà. A kọ́ ọ fún àwọn fáìlì rúdurùdu ti ayé gidi àti fún àwọn ìbéèrè àyẹ̀wò ìṣirò.",
+    "Ohun-èlò Rust fún pípín owó láàrin àwọn ètò owó-ìdókòwò, tí ó ń lo àsọtẹ́lẹ̀ láti tọ́ pípín náà sọ́nà. A gbé e kalẹ̀ fún ilé-ìṣúra, ìṣirò owó-ìdókòwò àti pípín dúkìá.",
+    "Ilé-ìkàwé Rust fún ṣíṣẹ̀dá àti kíka àwọn kóòdù QR ní ọ̀nà púpọ̀. Nínú ìsanwó, à ń lò ó fún kóòdù EPC QR nínú ìfiránṣẹ́ owó SEPA, àwọn ọ̀nà ìgbàowó fún oníṣòwò, àti ìfidánimọ̀ tí a fún lókun.",
+    "Ìmúṣẹ CRYSTALS-Kyber nínú Rust, ìyẹn ìlànà NIST FIPS 203 fún dídi kọ́kọ́rọ́ lẹ́yìn-kúáǹtọ̀mù.",
+    "Àwọn ọ̀nà ìtúmọ̀-kúkúrú fún pípa àti fífi ọ̀rọ̀-ìgbaniwọlé hàn, tí a kọ pẹ̀lú ìdúró tí ó lè kojú kúáǹtọ̀mù.",
+    "Ohun-èlò ìlà-àṣẹ tí ó ń ṣiṣẹ́ lórí pápá púpọ̀ fún ṣíṣẹ̀dá àwọn ọ̀rọ̀-ìgbaniwọlé aláìtòótọ́, tí ó dúró lórí àwọn ìpìlẹ̀ ìsekóòdù tí a ti ṣàyẹ̀wò.",
+    "Ẹ̀rọ àyẹ̀wò ààbò kóòdù fún èdè mẹ́jọ, tí ó so ìtúpalẹ̀ tí kò yí padà àti ìtúpalẹ̀ ìbàjẹ́ pọ̀ mọ́ ìfidájú láti ọwọ́ àwòṣe èdè ńlá láti dín ìkìlọ̀ èké kù. Ó ń mú àwọn àpò SARIF, SBOM àti OpenVEX tí Sigstore fọwọ́sí jáde fún àyẹ̀wò ẹ̀wọ̀n ìpèsè.",
+    "Olùrànlọ́wọ́ ohùn tí a kọ́ lórí àwọn àwòṣe GPT ti OpenAI, pẹ̀lú àkópọ̀ PDF àti ìpamọ́ ìdáhùn. Ó bá ìlò ara-ẹni àti ti ìdarí mu.",
+    "Ó ń sọ ohùn di ọ̀rọ̀ ní àkókò gidi pẹ̀lú ìdámọ̀ ọ̀rọ̀-sísọ ti ọgbọ́n atọ́nà. A gbé e kalẹ̀ fún ìtúpalẹ̀ àwọn ìjíròrò àti ìpàdé tí a ti gbasilẹ̀.",
+    "Iṣẹ́ ìsekóòdù fún àwọn àìní gbogbogbò ti àwọn ohun-èlò: ìsekóòdù, sísọ di àmì, ìfàṣẹsí ìdúnàádúrà, ìfọwọ́sí kóòdù, àti ìṣàkóso àyíká ìgbésí ayé kọ́kọ́rọ́.",
+    "Ẹ̀rọ ìṣẹ̀dá ojú-òpó tí kò yí padà nínú Rust, tí ó ní ààbò láti ìbẹ̀rẹ̀. Ó ní àyẹ̀wò WCAG AAA, ìfúnlókun CSP àti SRI, ọ̀nà àkóónú pẹ̀lú àwòṣe èdè agbègbè, àfojúsùn WebAssembly, àti àtìlẹyìn fún èdè 28.",
+    "Ìmúṣẹ YAML 1.2 nínú Rust nìkan. Kò sí kóòdù unsafe, ìtẹ̀lé ìlànà ní kíkún, serde tí ó ń ṣàn, igi gírámà tí kò pàdánù ohunkóhun, àti àyẹ̀wò JSON Schema. À ń tẹ̀ ẹ́ jáde gẹ́gẹ́ bí ilé-ìkàwé, ohun-èlò ìlà-àṣẹ, olùpín èdè, olùpín MCP àti ìkọ́ WASM.",
+    "Ìtòlẹ́sẹẹsẹ àti ìtú ìtòlẹ́sẹẹsẹ YAML fún àwọn ètò dátà Rust, tí a kọ́ lórí ilé-iṣẹ́ Serde.",
+    "Ilé-ìkàwé ìkọsílẹ̀ fún Rust pẹ̀lú ọ̀nà tí ó ní ìlànà, ìkọsílẹ̀ tí kò tẹ̀lé ara, àti ìtújáde tí a lè ṣàtúnṣe.",
+    "Ẹ̀rọ ìṣẹ̀dá egungun fún àwọn ilé-ìkàwé Rust. Ó ń mú àwọn fáìlì àwòṣe tí a ti kún tẹ́lẹ̀ jáde fún àyẹ̀wò, ìwọ̀n iṣẹ́, àti ìsopọ̀ tí ń tẹ̀síwájú.",
+    "Ilé-ìkàwé ọjọ́ àti àkókò fún Rust: ìtòlẹ́sẹẹsẹ ISO 8601, ìṣàkóso agbègbè àkókò, àti ìwọlé sí àwọn ẹ̀yà ọjọ́ lọ́kọ̀ọ̀kan.",
+    "Ìṣẹ̀dá nọ́mbà aláìtòótọ́ tí ó dá lórí ọ̀nà Mersenne Twister, à ń lò ó nínú àfarawé àti eré.",
+    "Ilé-ìkàwé Rust fún ìwọlé sí àwọn àìyípadà ìṣirò àti ti ìsekóòdù.",
+    "Ilé-ìkàwé àwọn iṣẹ́ ìrànlọ́wọ́ àti iṣẹ́ ìdìpọ̀ fún Rust.",
+    "Àwòṣe ìbẹ̀rẹ̀ fún Static Site Generator, tí a ti ṣètò fún àwọn ojú-òpó tí ó mọ́ tí ó sì ṣí sílẹ̀ fún gbogbo ènìyàn. Àwòṣe tí mo ń lò nígbà tí mo bá ń bẹ̀rẹ̀ ojú-òpó tuntun.",
+    "Ilé-ìkàwé Stylus oníyẹ̀wù pẹ̀lú àwọn ẹ̀yà àti àdàpọ̀ fún ìtòlẹ́sẹẹsẹ wẹ́ẹ̀bù àti alágbèéká. Ojú-òpó yìí ni a kọ́ lórí rẹ̀.",
+    "Ìwé-ìròyìn nípa bí àwọn báǹkì ṣe ń lo ọgbọ́n atọ́nà, láti iṣẹ́ oníbàárà, ìwádìí ẹ̀tàn, dé iṣẹ́ ojoojúmọ́.",
+    "Ìwé-ìròyìn nípa ìṣirò kúáǹtọ̀mù nínú báǹkì àti ìnáwó, láti ìtúpalẹ̀ ewu dé ìsekóòdù.",
+    "Ìmọ̀ràn olórí ìnáwó apá-àkókò láti ọ̀dọ̀ olórí ìnáwó tí ó ní ju ogún ọdún lọ nínú ìmọ̀-ẹ̀rọ, tí ó bo ìdàgbàsókè, ìkójọ owó àti iṣẹ́ ìnáwó.",
+    "Àwọn fáìlì ètò fún macOS, Linux àti Windows: àwọn àṣẹ àti ìṣètò fún ọ̀nà iṣẹ́ ìdàgbàsókè."
+  ],
+  "more": [
+    "Kọ́ sí i"
+  ],
+  "faq_q": [
+    "Ìwé-àṣẹ wo ni a fi ń tẹ̀ àwọn iṣẹ́ akánṣe wọ̀nyí jáde?",
+    "Ṣé àwọn iṣẹ́ akánṣe wọ̀nyí ti ṣetán fún iṣẹ́ gidi?",
+    "Báwo ni mo ṣe lè kópa tàbí kí n ròyìn ìṣòro?",
+    "Ṣé mo lè lo àwọn ilé-ìkàwé wọ̀nyí nínú agbègbè báǹkì tí ó ní ìlànà?",
+    "Ṣé o ń pèsè àtìlẹyìn ìṣòwò tàbí ìmọ̀ràn?",
+    "Báwo ni mo ṣe lè tẹ̀lé àwọn ìtẹ̀jáde tuntun?"
+  ],
+  "faq_a": [
+    "Ọ̀pọ̀ àwọn iṣẹ́ akánṣe ní ìwé-àṣẹ méjì, MIT àti Apache-2.0, ìyẹn ìlànà àyíká Rust, tí ó fún àwọn olùlò ìṣòwò ní ẹ̀tọ́ ìforúkọsílẹ̀ ní kedere pẹ̀lú ìpínkiri tí ó rọrùn. Àwọn ohun-èlò oníbàárà díẹ̀ ni a ń tẹ̀ jáde pẹ̀lú Apache-2.0 nìkan. Fáìlì ìwé-àṣẹ tí ó wà ní gbòǹgbò ilé-ìpamọ́ kọ̀ọ̀kan ni orísun tí a gbẹ́kẹ̀lé.",
+    "Ọ̀pọ̀ ti ṣetán. Àwọn báǹkì àti àwọn olùpèsè iṣẹ́ ìsanwó ń lo <a href=\"https://pain001.com\">pain001</a> láti mú ṣíṣẹ̀dá fáìlì ISO 20022 ṣiṣẹ́ fúnra rẹ̀. <a href=\"https://kyberlib.com\">KyberLib</a> ń tẹ̀lé ìlànà NIST FIPS 203 ó sì ń wá pẹ̀lú àwọn vẹ́ktọ̀ àyẹ̀wò. Fáìlì README àti àwọn àmì CI ti ilé-ìpamọ́ kọ̀ọ̀kan yóò sọ ipò lọ́wọ́lọ́wọ́ fún ọ; bí o bá nílò ìdánilójú pàtó fún ìlò gidi, bá mi sọ̀rọ̀.",
+    "Iṣẹ́ akánṣe kọ̀ọ̀kan ní ilé-ìpamọ́ GitHub ní gbangba ní <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Ṣí ọ̀rọ̀ kan tí ó ṣàlàyé ìṣòro náà (àpẹẹrẹ kékeré tí a lè tún ṣe máa ń ṣèrànwọ́ gan-an) tàbí pull request tí ó so mọ́ ọ̀rọ̀ kan. Developer Certificate of Origin ni ó ń darí àwọn ìkópa, wọ́n sì nílò commit tí a fọwọ́sí.",
+    "Bẹ́ẹ̀ ni, pẹ̀lú àwọn ìkìlọ̀ tí a mọ̀. Àwọn ilé-ìkàwé wọ̀nyí jẹ́ iṣẹ́ orísun ṣíṣí tí ó dá dúró, kì í ṣe ọjà tí ó ní ìlànà. Ṣe àwọn ìlànà rẹ tí o ti mọ̀ nípa ẹ̀wọ̀n ìpèsè, ààbò àti àyẹ̀wò ohun tí o gbáralé — bí mímú un wọlé láti inú dígí inú-ilé rẹ, ṣíṣàyẹ̀wò pẹ̀lú ohun-èlò SBOM, àti dídè é mọ́ Git SHA tàbí ìtúmọ̀-kúkúrú ìsekóòdù — kí o tó gbé e sí ètò ìsanwó gidi.",
+    "Bẹ́ẹ̀ ni, ní yíyàn. Àwọn iṣẹ́ náà dojúkọ ìṣílọ sí ISO 20022, àwọn àwòrán ọ̀nà ìṣílọ sí ìsekóòdù lẹ́yìn-kúáǹtọ̀mù, àti ọgbọ́n atọ́nà tí a lò nínú àwọn iṣẹ́ ìnáwó. <a href=\"/contact/\">Bá mi sọ̀rọ̀</a> pẹ̀lú àlàyé kúkúrú, àkókò rẹ, àti ìdíwọ́ èyíkéyìí.",
+    "Gbogbo àkọsílẹ̀ tí ó ní ọjọ́ lórí ojú-òpó yìí ni a ń kéde nípasẹ̀ <a href=\"/rss.xml\">ìṣàn RSS</a> àti ìwé-ìròyìn <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Àwọn ilé-ìpamọ́ kọ̀ọ̀kan náà ń tẹ̀ àwọn ìtẹ̀jáde jáde lórí GitHub, tí o lè tẹ̀lé wọn tààrà."
+  ],
+  "gh_pushed_template": "commit tí ó gbẹ̀yìn {age} sẹ́yìn"
+}

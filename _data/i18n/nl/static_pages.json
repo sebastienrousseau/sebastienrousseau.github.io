@@ -79,10 +79,10 @@
     "keywords": "Static Site Generator, SSG, Rust, prestaties, SEO"
   },
   "playlists": {
-    "title": "Afspeellijsten — Sebastien Rousseau",
-    "subtitle": "Spotify-afspeellijsten geselecteerd voor diepe focus, creativiteit en engineering-mindset.",
-    "description": "Muziek- en luisterselectie van Sebastien Rousseau.",
-    "keywords": "afspeellijsten, muziek"
+    "title": "39 playlists voor focus en deep work — Sebastien Rousseau",
+    "subtitle": "Neo soul, jazz funk, boom bap, French touch, deep house en West-Afrikaanse ritmes — ruim 1.700 nummers in 39 playlists, gratis op Spotify en Apple Music.",
+    "description": "39 met de hand samengestelde playlists voor focus en deep work: neo soul, nu jazz, boom bap, French touch, deep house, lo-fi en afrobeat. Ruim 1.700 nummers, gratis op Spotify en Apple Music.",
+    "keywords": "focusplaylists, muziek voor deep work, werkplaylists, studieplaylists, neo soul playlist, nu jazz playlist, jazz funk playlist, boom bap playlist, jazz rap playlist, French touch playlist, deep house playlist, lo-fi beats om te studeren, afrobeat playlist, disco house playlist, downtempo playlist, trip-hop playlist, Spotify-playlists, Apple Music-playlists, samengestelde playlists, muziek om te programmeren"
   },
   "404": {
     "title": "Pagina niet gevonden — Sebastien Rousseau",
@@ -101,11 +101,5 @@
     "subtitle": "Hartelijk dank voor uw bericht!",
     "description": "Bedankt voor uw bericht. Ik neem zo spoedig mogelijk contact met u op.",
     "keywords": "bedankt"
-  },
-  "articles": {
-    "title": "Artikelen — Sebastien Rousseau",
-    "subtitle": "Artikelen over AI, post-kwantumcryptografie, ISO 20022 en de toekomst van het betalingsverkeer.",
-    "description": "Artikelen over toegepaste AI, post-kwantumcryptografie, ISO 20022-betalingen en de transformatie van het wholesale-betalingsverkeer.",
-    "keywords": "artikelen, onderzoek, AI, post-kwantumcryptografie, ISO 20022, wholesale-betalingen"
   }
 }

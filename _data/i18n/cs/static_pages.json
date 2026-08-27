@@ -36,12 +36,6 @@
     "description": "Prohlášení o přístupnosti: soulad s WCAG 2.2 AA, inkluzivní principy, zpětná vazba a kontakt pro hlášení problémů.",
     "keywords": "přístupnost, WCAG, soulad, digitální inkluze"
   },
-  "articles": {
-    "title": "Články — Sebastien Rousseau",
-    "subtitle": "Články o AI, postkvantové kryptografii, ISO 20022 a budoucnosti plateb.",
-    "description": "Články o aplikované AI, postkvantové kryptografii, platbách ISO 20022 a transformaci velkoobchodních plateb.",
-    "keywords": "články, výzkum, AI, postkvantová kryptografie, ISO 20022, velkoobchodní platby"
-  },
   "contact": {
     "title": "Kontakt — Sebastien Rousseau",
     "subtitle": "Máte otázku nebo potřebujete poradit? Napište mi.",
@@ -67,10 +61,10 @@
     "keywords": "publikace, články, zprávy, výzkum, ISO 20022, AI, postkvantová kryptografie"
   },
   "playlists": {
-    "title": "Playlisty — Sebastien Rousseau",
-    "subtitle": "Vybrané Spotify playlisty pro hlubokou práci, kreativitu a inženýrský mindset.",
-    "description": "Hudební a poslechový výběr Sebastiena Rousseaua.",
-    "keywords": "playlisty, hudba"
+    "title": "39 playlistů pro soustředění a deep work — Sebastien Rousseau",
+    "subtitle": "Neo soul, jazz funk, boom bap, French touch, deep house a západoafrické rytmy — přes 1 700 skladeb ve 39 playlistech, zdarma na Spotify a Apple Music.",
+    "description": "39 ručně sestavených hudebních playlistů pro soustředění a deep work: neo soul, nu jazz, boom bap, French touch, deep house, lo-fi a afrobeat. Přes 1 700 skladeb, zdarma na Spotify a Apple Music.",
+    "keywords": "playlisty na soustředění, hudba na deep work, playlisty do práce, playlisty na učení, neo soul playlist, nu jazz playlist, jazz funk playlist, boom bap playlist, jazz rap playlist, French touch playlist, deep house playlist, lo-fi beaty na učení, afrobeat playlist, disco house playlist, downtempo playlist, trip-hop playlist, playlisty Spotify, playlisty Apple Music, kurátorské playlisty, hudba na programování"
   },
   "privacy": {
     "title": "Zásady ochrany osobních údajů — Sebastien Rousseau",

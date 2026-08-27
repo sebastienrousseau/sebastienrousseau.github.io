@@ -39,7 +39,9 @@ def test_map_exact_stem_match(tmp_path) -> None:
     lang = tmp_path / "fr"
     _touch(lang, "2026-06-29-post")  # EN-named locale file
     en_by_date = {"2026-06-29": ["2026-06-29-post"]}
-    assert rsm._articles_map_for_language(lang, en_by_date) == {"2026-06-29-post": "2026-06-29-post"}
+    assert rsm._articles_map_for_language(lang, en_by_date) == {
+        "2026-06-29-post": "2026-06-29-post"
+    }
 
 
 def test_map_sticky_preference_wins(tmp_path) -> None:

@@ -76,7 +76,10 @@ def test_post_url_prefers_explicit_url() -> None:
 
 
 def test_post_url_derives_from_path_stem() -> None:
-    assert pe.post_url({"url": "", "path": Path("2026-06-29-slug.md")}) == "/2026-06-29-slug/index.html"
+    assert (
+        pe.post_url({"url": "", "path": Path("2026-06-29-slug.md")})
+        == "/2026-06-29-slug/index.html"
+    )
 
 
 # --- md_inline_to_html -----------------------------------------------------

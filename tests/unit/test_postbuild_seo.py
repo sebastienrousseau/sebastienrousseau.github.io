@@ -72,7 +72,7 @@ def test_patch_block_no_op_when_title_not_in_index():
     don't fall back to the home URL."""
     from postbuild_lib import feeds as out
 
-    block = "<item><title>Unknown post</title>" "<link>http://127.0.0.1:8000/.meta/</link></item>"
+    block = "<item><title>Unknown post</title><link>http://127.0.0.1:8000/.meta/</link></item>"
     rewritten = out._patch_block(block, {})
     assert rewritten == block
 
@@ -82,9 +82,7 @@ def test_patch_block_decodes_xml_entities_in_title_lookup():
     either escaped or unescaped form."""
     from postbuild_lib import feeds as out
 
-    block = (
-        "<item><title>AI &amp; Quantum</title>" "<link>http://localhost:8000/.meta/</link></item>"
-    )
+    block = "<item><title>AI &amp; Quantum</title><link>http://localhost:8000/.meta/</link></item>"
     idx = {"AI & Quantum": "https://sebastienrousseau.com/ai-quantum"}
     rewritten = out._patch_block(block, idx)
     assert "https://sebastienrousseau.com/ai-quantum" in rewritten
@@ -94,7 +92,7 @@ def test_patch_block_rewrites_meta_path_on_any_host():
     """``host/.meta/`` is rewritten even when the host isn't localhost."""
     from postbuild_lib import feeds as out
 
-    block = "<item><title>X</title>" "<link>https://example.com/.meta/</link></item>"
+    block = "<item><title>X</title><link>https://example.com/.meta/</link></item>"
     idx = {"X": "https://sebastienrousseau.com/x"}
     rewritten = out._patch_block(block, idx)
     assert "https://sebastienrousseau.com/x" in rewritten
@@ -386,7 +384,7 @@ def test_inject_hreflang_strips_existing_alternates_first():
 
     # The strip regex expects the XHTML self-close style ``/>`` because
     # that's what the postbuild renderer emits.
-    html = "<head>" '<link rel="alternate" hreflang="en" href="https://old.example/" />' "</head>"
+    html = '<head><link rel="alternate" hreflang="en" href="https://old.example/" /></head>'
     out = inject_hreflang(html, "about", "en", {"fr": {"a-propos"}})
     assert "https://old.example/" not in out
     assert "/fr/a-propos/" in out
@@ -489,7 +487,6 @@ def test_translated_slugs_per_lang_returns_empty_when_no_public_tree(tmp_path, m
     # Temporarily point PUBLIC at the empty tree
     from unittest.mock import patch
 
-
     with patch.object(hf, "PUBLIC", tmp_path / "public"):
         out = hf._translated_slugs_per_lang()
     assert out == {}
@@ -497,7 +494,6 @@ def test_translated_slugs_per_lang_returns_empty_when_no_public_tree(tmp_path, m
 
 def test_translated_slugs_legacy_returns_two_empty_sets_without_fr_dir(tmp_path, monkeypatch):
     from unittest.mock import patch
-
 
     monkeypatch.chdir(tmp_path)
     (tmp_path / "public").mkdir()
@@ -525,7 +521,6 @@ def test_slug_maps_for_known_lang_returns_four_maps():
 def test_translated_slugs_per_lang_walks_rendered_pages(tmp_path):
     """A rendered /<lang>/<slug>/index.html populates the set for that lang."""
     from unittest.mock import patch
-
 
     public = tmp_path / "public"
     (public / "fr" / "a-propos").mkdir(parents=True)
@@ -908,8 +903,7 @@ def test_fix_xml_feed_urls_handles_atom_and_news_blocks(tmp_path, monkeypatch):
         encoding="utf-8",
     )
     (tmp_path / "atom.xml").write_text(
-        "<feed><entry><title>T</title>"
-        '<link href="http://localhost:8000/.meta/"/></entry></feed>',
+        '<feed><entry><title>T</title><link href="http://localhost:8000/.meta/"/></entry></feed>',
         encoding="utf-8",
     )
     (tmp_path / "news-sitemap.xml").write_text(
@@ -1501,7 +1495,7 @@ def test_refresh_sitemap_lastmod_inserts_when_no_existing_lastmod(tmp_path):
     """A URL with a tracked slug but no existing ``<lastmod>`` gets a fresh one inserted."""
     sitemap = tmp_path / "sitemap.xml"
     sitemap.write_text(
-        "<urlset><url>" "<loc>https://sebastienrousseau.com/2026-05-12-x/</loc>" "</url></urlset>",
+        "<urlset><url><loc>https://sebastienrousseau.com/2026-05-12-x/</loc></url></urlset>",
         encoding="utf-8",
     )
     from postbuild_lib.feeds import refresh_sitemap_lastmod

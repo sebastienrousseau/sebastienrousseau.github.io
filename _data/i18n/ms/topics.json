@@ -19,5 +19,68 @@
   "blockchain-digital-assets": {
     "title": "Blockchain & Aset Digital",
     "lede": "Blockchain dan aset digital: tokenisasi, ERC-20, stablecoin, infrastruktur mata wang kripto, dan rangka kerja kawal selia yang membentuknya."
-  }
+  },
+  "cloud-native-banking": {
+    "title": "Perbankan cloud-native",
+    "lede": "Kejuruteraan platform berasaskan Kubernetes untuk institusi yang dikawal selia: daya tahan operasi yang diuji menurut DORA, penumpuan mesin maya dan bekas, awan berdaulat, strategi keluar, serta seni bina yang membolehkan bank melancarkan perkhidmatan kritikal di bawah penyeliaan."
+  },
+  "agentic-ai-banking": {
+    "title": "AI agentik dalam perbankan",
+    "lede": "Satah kawalan ejen, penghalaan semantik berketentuan, pintu dasar OPA, log audit WORM yang tidak boleh diubah, dan kanta risiko model SR 11-7 / SS1/23 yang menukar aliran kerja autonomi menjadi bukti sedia penyelia."
+  },
+  "treasury-automation": {
+    "title": "Automasi perbendaharaan",
+    "lede": "Kecairan boleh atur cara, perbendaharaan autonomi, enjin pembayaran ISO 20022, dan kit alat sumber terbuka yang menukar CAMT / pacs.008 / MT940 / pain.001 menjadi risikan transaksi boleh audit bertaraf lembaga pengarah bagi pasukan perbendaharaan korporat."
+  },
+  "operational-resilience-dora": {
+    "title": "Daya tahan operasi dan DORA",
+    "lede": "Kebertanggungjawaban lembaga pengarah di bawah Perkara 5 DORA, pengagregatan data risiko BCBS 239, risiko penumpuan pihak ketiga, ujian keluar, serta kawalan kejuruteraan yang menukar daya tahan operasi daripada projek pematuhan kepada papan mata sedia penyelia."
+  },
+  "stablecoins-tokenisation": {
+    "title": "Stablecoin dan tokenisasi",
+    "lede": "Deposit tertokenisasi, dana pasaran wang, perintis mata wang digital bank pusat borong, BRSRV/BSTBL daripada BlackRock, Akta GENIUS, dan pilihan kejuruteraan di sebalik cara wang boleh atur cara berfungsi dalam kunci kira-kira yang dikawal selia."
+  },
+  "generative-ai-llms": {
+    "title": "AI generatif dan model bahasa besar",
+    "lede": "Model asas, model bahasa besar multimod (Gemini, Gemma, Mistral, MM1), kejuruteraan gesaan, dan keluaran sumber terbuka yang menentukan apa yang boleh dibina oleh bank dalam perimeter data mereka sendiri."
+  },
+  "voice-speech-ai": {
+    "title": "AI suara dan pertuturan",
+    "lede": "Pengklonan suara, pengecaman pertuturan masa nyata (Whisper), pembantu suara untuk eksekutif, dan tindanan risikan audio yang membentuk semula pengalaman pelanggan perbankan persendirian."
+  },
+  "ai-governance-regulation": {
+    "title": "Tadbir urus dan pengawalseliaan AI",
+    "lede": "Pematuhan Akta AI Kesatuan Eropah, risiko model SR 11-7, kebertanggungjawaban peringkat lembaga pengarah, kebolehauditan aliran kerja autonomi, serta rangka kerja pengawalseliaan AI dalam bank barisan hadapan."
+  },
+  "wholesale-payments-rails": {
+    "title": "Landasan pembayaran borong",
+    "lede": "Strategi berbilang landasan merentasi kad, pindahan akaun ke akaun, RTP, FedNow, perbankan terbuka, dan koridor stablecoin. Ekonomi borong, kemuktamadan penyelesaian, dan model keatoman rentas sempadan Projek Agorá milik BIS."
+  },
+  "_pillars": [
+    {
+      "name": "Kriptografi dan daya tahan",
+      "lede": "Migrasi pasca-kuantum, daya tahan operasi setaraf DORA, dan rangka kerja tadbir urus AI dalam perkhidmatan kewangan."
+    },
+    {
+      "name": "Pembayaran dan wang",
+      "lede": "Migrasi ISO 20022, penyelesaian borong, stablecoin, deposit tertokenisasi, dan fungsi perbendaharaan korporat di sekelilingnya."
+    },
+    {
+      "name": "AI dan awan",
+      "lede": "AI gunaan, sistem agentik, model generatif, AI suara dan pertuturan, serta platform perbankan cloud-native yang menjalankannya."
+    },
+    {
+      "name": "Sumber terbuka dan kraf",
+      "lede": "Pustaka Rust, primitif rantaian blok, dan disiplin kejuruteraan sumber terbuka di sebaliknya."
+    }
+  ],
+  "_hub_lede": "Empat tonggak, empat belas gugusan topik, setiap artikel bertarikh. Pilih satu benang dan ikutinya menyusuri arkib.",
+  "_banner_word": "sepanduk topik",
+  "_kpi": [
+    "Tonggak",
+    "Gugusan topik",
+    "Artikel terindeks"
+  ],
+  "_article_count": "{n} artikel",
+  "_pillar_kicker": "TONGGAK"
 }

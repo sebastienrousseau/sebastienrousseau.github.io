@@ -130,7 +130,7 @@ def test_write_security_txt_copies_source_into_public(tmp_path):
     source_root.mkdir()
     public = tmp_path / "public"
     public.mkdir()
-    body = "Contact: mailto:sebastian.rousseau@gmail.com\n" "Expires: 2027-06-04T00:00:00.000Z\n"
+    body = "Contact: mailto:sebastian.rousseau@gmail.com\nExpires: 2027-06-04T00:00:00.000Z\n"
     (source_root / "security.txt").write_text(body, encoding="utf-8")
     (public / "security.txt").write_text("", encoding="utf-8")
 
@@ -193,9 +193,7 @@ def test_parse_frontmatter_captures_hyphenated_and_bare_keys(tmp_path):
     from postbuild_lib import output as out
 
     p = tmp_path / "post.md"
-    p.write_text(
-        '---\ntitle: "Hi"\nmeasurementID: "G-XYZ"\nactive: true\n---\n', encoding="utf-8"
-    )
+    p.write_text('---\ntitle: "Hi"\nmeasurementID: "G-XYZ"\nactive: true\n---\n', encoding="utf-8")
     fm = out._parse_frontmatter(p)
     assert fm["title"] == "Hi"
     assert fm["measurementID"] == "G-XYZ"

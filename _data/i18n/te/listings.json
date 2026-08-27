@@ -1,0 +1,26 @@
+{
+  "_comment": "TE copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "ఫీడ్",
+    "pageLabel": "{total}లో {page}వ పేజీ",
+    "visible": "కనిపిస్తున్నాయి",
+    "categoryLabel": "వర్గం",
+    "yearLabel": "సంవత్సరం",
+    "allCategories": "అన్ని వర్గాలు",
+    "allYears": "అన్ని సంవత్సరాలు",
+    "filterAria": "వ్యాసాలను వడపోయండి",
+    "listAria": "వ్యాస కార్డులు",
+    "paginationAria": "పేజీకరణ",
+    "emptyState": "ప్రస్తుత వడపోతలకు సరిపోయే వ్యాసం ఏదీ లేదు.",
+    "previous": "మునుపటిది",
+    "next": "తదుపరిది"
+  },
+  "pillars": {
+    "ai": "అనువర్తిత ఏఐ",
+    "payments": "చెల్లింపులు మరియు డబ్బు",
+    "infra": "మౌలిక సదుపాయాలు మరియు గూఢలిపి",
+    "policy": "విధానం మరియు స్థితిస్థాపకత",
+    "open-source": "ఓపెన్ సోర్స్",
+    "leadership": "బ్యాంకింగ్ నాయకత్వం"
+  }
+}

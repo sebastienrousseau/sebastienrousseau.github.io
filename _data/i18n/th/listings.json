@@ -1,0 +1,26 @@
+{
+  "_comment": "TH copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "ฟีด",
+    "pageLabel": "หน้า {page} จาก {total}",
+    "visible": "แสดงอยู่",
+    "categoryLabel": "หมวดหมู่",
+    "yearLabel": "ปี",
+    "allCategories": "ทุกหมวดหมู่",
+    "allYears": "ทุกปี",
+    "filterAria": "กรองบทความ",
+    "listAria": "การ์ดบทความ",
+    "paginationAria": "การแบ่งหน้า",
+    "emptyState": "ไม่มีบทความที่ตรงกับตัวกรองปัจจุบัน",
+    "previous": "ก่อนหน้า",
+    "next": "ถัดไป"
+  },
+  "pillars": {
+    "ai": "เอไอประยุกต์",
+    "payments": "การชำระเงินและการเงิน",
+    "infra": "โครงสร้างพื้นฐานและวิทยาการรหัสลับ",
+    "policy": "นโยบายและความยืดหยุ่น",
+    "open-source": "โอเพนซอร์ส",
+    "leadership": "ความเป็นผู้นำด้านการธนาคาร"
+  }
+}

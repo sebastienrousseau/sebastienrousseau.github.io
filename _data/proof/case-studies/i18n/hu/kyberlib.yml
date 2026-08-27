@@ -1,0 +1,40 @@
+title: KyberLib — éles üzemre kész ML-KEM Rustban
+banner_alt: Kvantumbiztos kriptográfiai kulcscsere — a FIPS 203 szerinti ML-KEM átállást jelképezi a bankszektorban
+sector: Nyílt forráskód · Bankszektor · Szabványok
+role: Szerző és karbantartó
+status: Éles üzemben, aktívan karbantartva
+outcome_highlights:
+- label: A NIST publikációs úthoz igazítva
+- value: Felső 44 %
+  label: Mintegy 182 PQC-könyvtár közül (Qtonic Lab)
+- label: HSM-ekbe és biztonságos enklávékba ágyazható
+- value: 1 átvevő
+  label: QGram (Quantum2pi) posztkvantum üzenetküldő
+pull_quote: „A Qtonic Quantum Lab — független posztkvantum kriptográfiai nyilvántartás — értékelte, és
+  a QGram (Quantum2pi) átvette végponttól végpontig titkosított üzenetküldéshez. Mindkettő ellenőrizhető
+  anélkül, hogy rajtam keresztül menne.”
+problem: A bankok előtt ott a SWIFT strukturált címekre való átállásának 2026. november 14-i határideje
+  és a NIST hosszabb posztkvantum átállási ablaka. A meglévő PQC-megvalósítások szakpolitikai anyagként,
+  laborkódként vagy zárt HSM-fekete dobozként érkeznek — egyiket sem tudja egy fizetési architekt elolvasni,
+  tesztelni vagy jóváhagyni.
+what_i_built: A KyberLib a FIPS 203 szerinti ML-KEM (CRYSTALS-Kyber) szabványt vizsgálható Rust kóddá
+  teszi. Hibrid klasszikus és kvantumbiztos kézfogások, no_std fordítás HSM-be ágyazáshoz, kriptográfiailag
+  rugalmas absztrakciós határok, és az a DORA 5. cikk szerinti irányítási bizonyíték, amelyre az igazgatóságoknak
+  most szükségük van a PQC-átálláshoz, átláthatatlan szállítói kockázat felvállalása nélkül.
+rigour:
+- metric: Szabvány
+- metric: Hibrid mód
+  value: Klasszikus TLS + ML-KEM-768 X25519MLKEM768 módban
+- metric: Beágyazás
+  value: no_std — HSM-ekbe, biztonságos enklávékba és beágyazott célokra illeszkedik
+- metric: Kriptográfiai rugalmasság
+  value: Az absztrakciós határok API-változtatás nélkül teszik cserélhetővé az algoritmust
+- metric: Licenc
+validation:
+- Hivatkozik rá az EPAA Quantum-Safe Payments tanulmánya (2025. szeptember)
+- 'Szerepel a 2026. 06. 12-i írásban: KyberLib and the Post-Quantum Banking Migration'
+- A NIST FIPS 203 / 204 / 205 publikációs úthoz igazítva
+- A Qtonic Quantum Lab értékelte — független posztkvantum kriptográfiai értékelési nyilvántartás, mintegy
+  182 PQC-könyvtár vizsgálatával (felső 44 %, a felvételért fizetni nem lehet)
+- 'A QGram (Quantum2pi) átvette — posztkvantum, végponttól végpontig titkosított, egyenrangú felek közötti
+  üzenetküldő, amely az üzenetek titkosításához a KyberLibet használja (ellenőrizhető: f6s.com/software/qgram)'

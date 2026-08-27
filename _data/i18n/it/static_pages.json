@@ -36,12 +36,6 @@
     "description": "Dichiarazione di accessibilità: conformità WCAG 2.2 AA, principi inclusivi, feedback e contatti per segnalare problemi.",
     "keywords": "accessibilità, WCAG, conformità, inclusione digitale, audit"
   },
-  "articles": {
-    "title": "Articoli — Sebastien Rousseau",
-    "subtitle": "Articoli su IA, crittografia post-quantistica, ISO 20022 e il futuro dei pagamenti.",
-    "description": "Articoli su IA applicata, crittografia post-quantistica, pagamenti ISO 20022 e trasformazione dei pagamenti wholesale.",
-    "keywords": "articoli, ricerca, IA, crittografia post-quantistica, ISO 20022, pagamenti wholesale"
-  },
   "contact": {
     "title": "Contatti — Sebastien Rousseau",
     "subtitle": "Hai una domanda o ti serve un consiglio? Scrivimi.",
@@ -67,10 +61,10 @@
     "keywords": "pubblicazioni, articoli, rapporti, ricerca, ISO 20022, IA, crittografia post-quantistica"
   },
   "playlists": {
-    "title": "Playlist — Sebastien Rousseau",
-    "subtitle": "Playlist di Spotify selezionate per il deep work, la creatività e la mentalità ingegneristica.",
-    "description": "Selezione musicale e di ascolto di Sebastien Rousseau.",
-    "keywords": "playlist, musica"
+    "title": "39 playlist per concentrazione e deep work — Sebastien Rousseau",
+    "subtitle": "Neo soul, jazz funk, boom bap, French touch, deep house e ritmi dell'Africa occidentale: oltre 1.700 brani in 39 playlist, gratis su Spotify e Apple Music.",
+    "description": "39 playlist musicali costruite a mano per la concentrazione e il deep work: neo soul, nu jazz, boom bap, French touch, deep house, lo-fi e afrobeat. Oltre 1.700 brani, gratis su Spotify e Apple Music.",
+    "keywords": "playlist per concentrarsi, musica per deep work, playlist per lavorare, playlist per studiare, playlist neo soul, playlist nu jazz, playlist jazz funk, playlist boom bap, playlist jazz rap, playlist French touch, playlist deep house, lo-fi per studiare, playlist afrobeat, playlist disco house, playlist downtempo, playlist trip-hop, playlist Spotify, playlist Apple Music, playlist selezionate, musica per programmare"
   },
   "privacy": {
     "title": "Informativa sulla privacy — Sebastien Rousseau",

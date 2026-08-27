@@ -51,9 +51,9 @@ def beacon_token(config: Path = _CONFIG) -> str | None:
     raw = os.environ.get(_ENV_VAR, "").strip()
     if not raw and config.is_file():
         try:
-            raw = str(json.loads(config.read_text(encoding="utf-8")).get(
-                "cloudflare_beacon_token", ""
-            )).strip()
+            raw = str(
+                json.loads(config.read_text(encoding="utf-8")).get("cloudflare_beacon_token", "")
+            ).strip()
         except (OSError, ValueError):
             return None
     return raw if _TOKEN_RE.match(raw) else None

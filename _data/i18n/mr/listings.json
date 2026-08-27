@@ -1,0 +1,26 @@
+{
+  "_comment": "MR copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "फीड",
+    "pageLabel": "{total} पैकी पृष्ठ {page}",
+    "visible": "दिसत आहेत",
+    "categoryLabel": "श्रेणी",
+    "yearLabel": "वर्ष",
+    "allCategories": "सर्व श्रेणी",
+    "allYears": "सर्व वर्षे",
+    "filterAria": "लेख गाळा",
+    "listAria": "लेख कार्ड",
+    "paginationAria": "पृष्ठक्रमांकन",
+    "emptyState": "सध्याच्या गाळणीशी जुळणारा कोणताही लेख नाही.",
+    "previous": "मागील",
+    "next": "पुढील"
+  },
+  "pillars": {
+    "ai": "उपयोजित एआय",
+    "payments": "देयके आणि पैसा",
+    "infra": "पायाभूत सुविधा आणि क्रिप्टोग्राफी",
+    "policy": "धोरण आणि लवचिकता",
+    "open-source": "ओपन सोर्स",
+    "leadership": "बँकिंग नेतृत्व"
+  }
+}

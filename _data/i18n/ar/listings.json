@@ -1,0 +1,26 @@
+{
+  "_comment": "AR copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "التدفق",
+    "pageLabel": "الصفحة {page} من {total}",
+    "visible": "معروض",
+    "categoryLabel": "الفئة",
+    "yearLabel": "السنة",
+    "allCategories": "كل الفئات",
+    "allYears": "كل السنوات",
+    "filterAria": "تصفية المقالات",
+    "listAria": "بطاقات المقالات",
+    "paginationAria": "ترقيم الصفحات",
+    "emptyState": "لا توجد مقالات تطابق عوامل التصفية الحالية.",
+    "previous": "السابق",
+    "next": "التالي"
+  },
+  "pillars": {
+    "ai": "الذكاء الاصطناعي التطبيقي",
+    "payments": "المدفوعات والنقود",
+    "infra": "البنية التحتية والتشفير",
+    "policy": "السياسات والمرونة",
+    "open-source": "المصادر المفتوحة",
+    "leadership": "القيادة المصرفية"
+  }
+}

@@ -111,7 +111,7 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 artikelen</p>"
+      "\\1 artikel(en)</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
@@ -694,118 +694,6 @@
       "<p class=\"newsroom-kicker\">UITGELICHT</p>"
     ],
     [
-      ">Latest Music</h2>",
-      ">Recente muziek</h2>"
-    ],
-    [
-      ">Latest playlist</h2>",
-      ">Recente afspeellijst</h2>"
-    ],
-    [
-      ">Soulful, jazz and downtempo</h2>",
-      ">Soulful, jazz en downtempo</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">MORNING & MOOD</p>",
-      "<p class=\"newsroom-kicker\">OCHTEND & STEMMING</p>"
-    ],
-    [
-      ">Morning, mood and chill</h2>",
-      ">Ochtend, stemming en chill</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">ELECTRONIC</p>",
-      "<p class=\"newsroom-kicker\">ELEKTRONISCH</p>"
-    ],
-    [
-      ">Electronic, house and techno</h2>",
-      ">Electronic, house en techno</h2>"
-    ],
-    [
-      ">Pop, rock and alternative</h2>",
-      ">Pop, rock en alternative</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">FOCUS</p>",
-      "<p class=\"newsroom-kicker\">FOCUS</p>"
-    ],
-    [
-      ">Focus and productivity</h2>",
-      ">Focus en productiviteit</h2>"
-    ],
-    [
-      ">Smooth Jazz, Neo Soul, and laid-back grooves[^<]+",
-      ">Smooth Jazz, Neo Soul en relaxte grooves. Afspeellijsten voor dagen waarop het tijd is om gas terug te nemen."
-    ],
-    [
-      ">This page has a comprehensive list[^<]+",
-      ">Deze pagina toont een uitgebreide selectie van populaire en door de critici geprezen Spotify-afspeellijsten, en bestrijkt een breed scala aan genres. Of u nu houdt van jazz, soul, hip-hop of elektronische muziek — hier vindt u de passende afspeellijst."
-    ],
-    [
-      ">Step into the harmonious realm of TETRA\\.[^<]+",
-      ">Stap binnen in het harmonieuze rijk van TETRA. Een opgewekte afspeellijst die uw geest moet optillen en uw ziel met vreugde moet vullen."
-    ],
-    [
-      ">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">Ontspan en omarm de essentie van de zomer met deze samengestelde selectie jazz-, soul-, R&amp;B- en neo-soul-beats."
-    ],
-    [
-      ">A deep dive into the quintessential collection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">Een diepe duik in de kwintessentiële collectie jazz-, soul-, R&amp;B- en neo-soul-beats."
-    ],
-    [
-      ">Take a break from a busy day and relax with soothing nu jazz and downtempo beats\\.",
-      ">Neem een pauze van een drukke dag en ontspan bij rustgevende nu-jazz- en downtempo-beats."
-    ],
-    [
-      ">Soulful tracks with a fashion-forward vibe\\. Music to set the tone for a productive and stylish day\\.",
-      ">Soulvolle tracks met een stijlvolle vibe. Muziek die de toon zet voor een productieve en stijlvolle dag."
-    ],
-    [
-      ">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms\\.",
-      ">Vier de vreugde van het leven en duik in een wereld van levendige emoties, sprankelende kleuren en soulvolle ritmes."
-    ],
-    [
-      ">Laid-back beats, house-influenced grooves and new deep house tracks\\.",
-      ">Relaxte beats, house-geïnspireerde grooves en nieuwe deep-house-tracks."
-    ],
-    [
-      ">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience\\.",
-      ">Een naadloze versmelting van funky disco, house, French Touch en andere genres tot een ultracoole en energieke muzikale ervaring."
-    ],
-    [
-      ">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke\\.",
-      ">Een sonore reis met nu-disco, French House, electro en disco-house van artiesten zoals Madeon en Fred Falke."
-    ],
-    [
-      ">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks\\.",
-      ">Relaxte beats, hiphop-geïnspireerde grooves en nieuwe indie-poptracks."
-    ],
-    [
-      ">Original Hip Hop, Rap and R(?:&amp;|&)B Flavor Sessions\\.",
-      ">Originele sessies in de smaken hiphop, rap en R&amp;B."
-    ],
-    [
-      ">Brace yourself for hardcore rap and hip hop tracks\\.",
-      ">Maak u klaar voor hardcore rap- en hiphoptracks."
-    ],
-    [
-      ">A few of the favourite hip-hop gems\\.",
-      ">Een aantal van de favoriete hiphop-parels."
-    ],
-    [
-      ">Soulful beats and thoughtful lyrics\\. A captivating look into the world of contemporary hip hop, R(?:&amp;|&)B and rap\\.",
-      ">Soulvolle beats en doordachte teksten. Een meeslepende blik op de wereld van hedendaagse hiphop, R&amp;B en rap."
-    ],
-    [
-      ">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats\\.",
-      ">Relaxte vibes en zachte ritmes in deze schitterende afspeellijst met lo-fi hiphop-beats."
-    ],
-    [
-      ">Celebrate the diverse heritage of African music\\. From the soulful rhythms of Wassoulou to the lively beats of Londonko\\.",
-      ">Vier het diverse erfgoed van Afrikaanse muziek. Van de soulvolle ritmes van Wassoulou tot de levendige beats van Londonko."
-    ],
-    [
       "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
       "aria-label=\"Label: \\1, \\2 artikelen\""
     ],
@@ -1006,18 +894,6 @@
       "<h3><a href=\"/nl/onderwerpen/blockchain-digital-assets/index.html\">Blockchain &amp; digitale activa</a></h3>"
     ],
     [
-      "<p class=\"newsroom-lede\">Tracks to kick off the day or shift the room\\. Fashion\\-forward soul, vivid colour, and laid\\-back energy\\.</p>",
-      "<p class=\"newsroom-lede\">Tracks om de dag te beginnen of een wisseling van stemming in de kamer te brengen. Stijlvolle soul, levendige kleuren en relaxte energie.</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">Funky disco, French touch and electro\\. Energetic listening for movement, focus or the dance floor\\.</p>",
-      "<p class=\"newsroom-lede\">Funky disco, French Touch en electro. Energieke muziek voor beweging, focus of de dansvloer.</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo\\-Fi\\. The full breadth of beats\\.</p>",
-      "<p class=\"newsroom-lede\">Van originele hiphop-sessies tot hardcore rap, hedendaagse R&B en lo-fi. De volledige breedte van beats.</p>"
-    ],
-    [
       "<h1>Enterprise AI Banking (?:&amp;|&) Payment Software Suite</h1>",
       "<h1>Enterprise AI-softwaresuite voor banken en betalingen</h1>"
     ],
@@ -1036,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>De publicaties zijn verhuisd naar Onderzoek</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Cloud-native bankieren\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Cloud-native bankieren — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/nl/topics/cloud-native-banking/index.html\">Cloud-native bankieren</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/cloud-native-banking/index.html\">Cloud-native bankieren</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Op Kubernetes gebaseerde platform engineering voor gereguleerde instellingen: DORA-geteste operationele weerbaarheid, convergentie van virtuele machines en containers, soevereine cloud, exitstrategie en de architectuur waarmee banken kritieke diensten onder toezicht uitrollen.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"Agentische AI in het bankwezen\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"Agentische AI in het bankwezen — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/nl/topics/agentic-ai-banking/index.html\">Agentische AI in het bankwezen</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/agentic-ai-banking/index.html\">Agentische AI in het bankwezen</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Control planes voor agenten, deterministische semantische routering, OPA-beleidspoorten, onveranderlijke WORM-auditlogboeken en de modelrisicoblik van SR 11-7 / SS1/23 die autonome workflows omzet in toezichtklaar bewijsmateriaal.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Treasury-automatisering\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Treasury-automatisering — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/nl/topics/treasury-automation/index.html\">Treasury-automatisering</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/treasury-automation/index.html\">Treasury-automatisering</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Programmeerbare liquiditeit, autonome treasury, ISO 20022-betaalengines en de opensource-toolkits die CAMT / pacs.008 / MT940 / pain.001 omzetten in controleerbare transactie-intelligentie op bestuursniveau voor corporate treasury-teams.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Operationele weerbaarheid en DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Operationele weerbaarheid en DORA — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/nl/topics/operational-resilience-dora/index.html\">Operationele weerbaarheid en DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/operational-resilience-dora/index.html\">Operationele weerbaarheid en DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Bestuursverantwoordelijkheid onder DORA artikel 5, risicodata-aggregatie volgens BCBS 239, concentratierisico bij derden, exittests en de technische beheersmaatregelen die operationele weerbaarheid veranderen van een complianceproject in een toezichtklaar scorebord.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Stablecoins en tokenisatie\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Stablecoins en tokenisatie — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/nl/topics/stablecoins-tokenisation/index.html\">Stablecoins en tokenisatie</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/stablecoins-tokenisation/index.html\">Stablecoins en tokenisatie</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Getokeniseerde deposito's, geldmarktfondsen, wholesale-CBDC-pilots, BlackRocks BRSRV/BSTBL, de GENIUS Act en de technische keuzes waarmee programmeerbaar geld werkt binnen gereguleerde balansen.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"Generatieve AI en LLM's\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"Generatieve AI en LLM's — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/nl/topics/generative-ai-llms/index.html\">Generatieve AI en LLM's</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/generative-ai-llms/index.html\">Generatieve AI en LLM's</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Foundation models, multimodale LLM's (Gemini, Gemma, Mistral, MM1), prompt engineering en de opensource-uitgaven die bepalen wat banken binnen hun eigen dataperimeter kunnen bouwen.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"Spraak- en stem-AI\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"Spraak- en stem-AI — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/nl/topics/voice-speech-ai/index.html\">Spraak- en stem-AI</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/voice-speech-ai/index.html\">Spraak- en stem-AI</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Stemklonen, spraakherkenning in realtime (Whisper), stemassistenten voor bestuurders en de audio-intelligencestack die de klantervaring in private banking hervormt.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"AI-governance en regelgeving\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"AI-governance en regelgeving — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/nl/topics/ai-governance-regulation/index.html\">AI-governance en regelgeving</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/ai-governance-regulation/index.html\">AI-governance en regelgeving</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Conformiteit met de EU-AI-verordening, modelrisico volgens SR 11-7, verantwoordelijkheid op bestuursniveau, controleerbaarheid van autonome workflows en het regelgevingskader voor AI binnen grootbanken.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Wholesale-betaalrails\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Wholesale-betaalrails — themabanner\""
+    ],
+    [
+      "<h3><a href=\"/nl/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/nl/topics/wholesale-payments-rails/index.html\">Wholesale-betaalrails</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/nl/onderwerpen/wholesale-payments-rails/index.html\">Wholesale-betaalrails</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Multi-railstrategie over kaarten, A2A, RTP, FedNow, open banking en stablecoin-corridors. Wholesale-economie, finaliteit van afwikkeling en het grensoverschrijdende atomiciteitsmodel van BIS Project Agorá.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Cryptografie en weerbaarheid</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptografie en weerbaarheid</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Post-kwantummigratie, operationele weerbaarheid op DORA-niveau en het governancekader rond AI in financiële dienstverlening.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Betalingen en geld</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Betalingen en geld</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">ISO 20022-migratie, wholesale-afwikkeling, stablecoins, getokeniseerde deposito's en de corporate treasury-functie daaromheen.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>AI en cloud</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI en cloud</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Toegepaste AI, agentische systemen, generatieve modellen, spraak- en stem-AI, en de cloud-native bankplatformen die ze draaien.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Opensource en vakmanschap</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Opensource en vakmanschap</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Rust-bibliotheken, blockchain-primitieven en de opensource-engineeringdiscipline erachter.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Vier pijlers, veertien themaclusters, elk gedateerd artikel. Kies een draad en volg die door het archief.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">PIJLER</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Pijlers</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Themaclusters</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Geïndexeerde artikelen</span>"
     ]
   ]
 }

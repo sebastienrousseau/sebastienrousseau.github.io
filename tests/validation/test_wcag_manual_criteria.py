@@ -115,7 +115,9 @@ def main() -> int:
             f"single-pointer alternative — e.g. {drag[0]}"
         )
     else:
-        print(f"  2.5.7 Dragging Movements   not applicable — 0 drag interactions in {len(pages)} pages + shipped JS")
+        print(
+            f"  2.5.7 Dragging Movements   not applicable — 0 drag interactions in {len(pages)} pages + shipped JS"
+        )
 
     slugs = _contact_slugs()
     missing = check_3_2_6_consistent_help(pages, slugs)
@@ -125,7 +127,9 @@ def main() -> int:
             f"sampled pages carry no help link — e.g. {missing[0]}"
         )
     else:
-        print(f"  3.2.6 Consistent Help      pass — footer help link on {min(len(pages), SAMPLE)}/{min(len(pages), SAMPLE)} sampled pages across {len(slugs)} locales")
+        print(
+            f"  3.2.6 Consistent Help      pass — footer help link on {min(len(pages), SAMPLE)}/{min(len(pages), SAMPLE)} sampled pages across {len(slugs)} locales"
+        )
 
     if problems:
         for p in problems:

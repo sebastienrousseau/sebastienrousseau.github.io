@@ -1,0 +1,156 @@
+{
+  "_comment": "Positional /projects/ body copy. Arrays align with the English page in document order; see scripts/generators/build_translations/_projects.py. gh_pushed_template takes {age} verbatim from the GitHub push date.",
+  "kpi": [
+    "Nyílt forráskódú letöltések",
+    "GitHub-csillagok",
+    "Sigstore-aláírt cikkek",
+    "Év éles üzemben"
+  ],
+  "setup_kicker": [
+    "PÉNZÜGYI SZOLGÁLTATÁSOKRA ÉPÍTVE"
+  ],
+  "setup_headline": [
+    "Három munkaterület. "
+  ],
+  "setup_soft": [
+    "Fizetések, biztonság és eszközök."
+  ],
+  "area_alt": [
+    "Autópálya-csomópontok légi felvétele éjszaka, a határokon átnyúló fizetési pályák képeként.",
+    "Elvont kék fénymező, a pénzügyi rendszerek posztkvantum kriptográfiájának képeként.",
+    "Tiszta építészeti vonalak lágy fényben, a fejlesztők megbízható alapjainak képeként."
+  ],
+  "area_kicker": [
+    "FIZETÉSEK ÉS ISO 20022",
+    "POSZTKVANTUM BIZTONSÁG",
+    "FEJLESZTŐI PLATFORM"
+  ],
+  "area_headline": [
+    "Fizetések a globális <span class=\"ac\">szabványban.</span>",
+    "Biztonság az <span class=\"ac\">RSA-koron túl.</span>",
+    "Alapok a <span class=\"ac\">mérnökeidnek.</span>"
+  ],
+  "area_text": [
+    "Az ISO 20022 az üzenet teljes életciklusát lefedi. Ezek a könyvtárak <strong>pain.001</strong> megbízásfájlokat állítanak elő, <strong>pacs.008</strong> átutalásokat építenek és ellenőriznek, <strong>camt.053</strong> kivonatokat olvasnak, és ellátják az <strong>acmt.001</strong> számlakezelést, régebbi formátumokhoz való értelmezőkkel együtt. Egyszerre egy könyvtárat vezethetsz be ahelyett, hogy központi rendszert cserélnél.",
+    "Egyes pénzügyi feljegyzések évtizedekig érzékenyek maradnak, elég sokáig ahhoz, hogy a ma rögzített adatok olvashatóvá váljanak, mire a kvantumszámítógépek beérnek. Ezek a Rust könyvtárak az <strong>ML-KEM (CRYSTALS-Kyber, NIST FIPS 203)</strong> szabványt valósítják meg, hasítással és kapcsolódó primitívekkel együtt, így az átállás elkezdődhet, mielőtt a határidők kikényszerítenék.",
+    "Ugyanazok a Rust könyvtárak, amelyek ezt a webhelyet építik és védik. Köztük a <strong>noyalib</strong> a YAML-hoz és maga a <strong>Static Site Generator</strong>, CycloneDX SBOM-okkal és Sigstore-aláírásokkal közzétéve. A mérnökeid ezekre építenek ahelyett, hogy házon belül tartanák karban a megfelelőiket."
+  ],
+  "area_cta": [
+    "Olvasd el a fizetések történetét",
+    "Olvasd el a biztonság történetét",
+    "Olvasd el a platform történetét"
+  ],
+  "cat_kicker": [
+    "AUTOMATIZÁLT PÉNZÜGYI INFRASTRUKTÚRA",
+    "POSZTKVANTUM PÉNZÜGYI BIZTONSÁG",
+    "ALKALMAZOTT MI ÉS VEZETŐI TÁJÉKOZTATÁS",
+    "SZUVERÉN VÁLLALATI TECHNOLÓGIA",
+    "WEB, KIADÁS ÉS KÖRNYEZET"
+  ],
+  "finale_eyebrow": [
+    "KAPCSOLAT"
+  ],
+  "finale_lede": [
+    "ISO 20022 átállást, posztkvantum felülvizsgálatot vagy éles üzemben alkalmazott mesterséges intelligenciát tervezel? Írd meg, mit építesz. Megmutatom, hova illenek ezek az eszközök."
+  ],
+  "finale_cta": [
+    "Vedd fel a kapcsolatot"
+  ],
+  "h2": [
+    "Pénzügyi adatok, kibogozva.",
+    "Kvantumbiztos. Vállalati szintre kész.",
+    "Tegyél fel egy kérdést. Megkapod az összefoglalót.",
+    "A te hardvered. A te adataid.",
+    "Add ki a magad módján.",
+    "Építs rá. Vagy építsd meg velem."
+  ],
+  "lede": [
+    "Fizetési fájlok és bankkivonatok, súrlódás nélkül. Ezek az eszközök az ISO 20022 üzenet teljes életciklusát előállítják, és determinisztikus pontossággal olvassák a valós élet rendezetlen kivonatait. Hozd a CSV-idet, a PDF-jeidet vagy az adatbázisaidat. Az adat egyszerűen átfolyik.",
+    "A kvantumkorra épített biztonság, már ma alkalmazva. Ezek a könyvtárak a NIST kulcsbeágyazási és hasítási szabványait követik, így jóval a fenyegetés megérkezése előtt jövőállóvá teheted a pénzügyi infrastruktúrát.",
+    "Mesterséges intelligencia a mindennapi működésben. Vizsgáld át a kódot sérülékenységekért, alakíts egy kérdést strukturált összefoglalóvá, és dolgozz hanggal. A te feltételeid szerint, szállítói bezártság nélkül.",
+    "Alapok, amelyek a tieid lehetnek. Auditált, memóriabiztos Rust könyvtárak, amelyek a te infrastruktúrádon futnak, és szoftver-összetevőjegyzékkel és Sigstore-aláírással jelennek meg. Olvasd el minden sorát. Vedd át. Tartsd házon belül.",
+    "Sablonok, egy CSS keretrendszer, két szakmai kiadvány és a reprodukálható beállítás, amely mindezt megjelenteti. Az a technológiai készlet, amelyen ez a webhely fut."
+  ],
+  "alt": [
+    "A pain001 nyílt forráskódú fizetési könyvtár fejléce",
+    "A pacs008 ISO 20022 eszközkészlet fejléce",
+    "A camt053 bankkivonat-csomag emblémája",
+    "Az acmt001 számlakezelő csomag emblémája",
+    "A Bank Statement Parser fejléce",
+    "A NaluFX emblémája, mesterséges intelligenciával támogatott készpénzelosztás Rustban",
+    "A QRC emblémája, QR-kód könyvtár Rustban",
+    "A KyberLib fejléce",
+    "A Hash (HSH) Rust könyvtár fejléce",
+    "A Password Generator Pro fejléce",
+    "Az Euxis fejléce, nyílt forráskódú kódbiztonsági vizsgáló",
+    "Az Àkàndé fejléce, fejlett hangasszisztens mesterséges intelligenciával",
+    "Az Audio Analyser fejléce",
+    "A Crypto Service Suite fejléce",
+    "A Static Site Generator fejléce",
+    "A noyalib Rust YAML 1.2 ökoszisztéma fejléce",
+    "A Serde YML fejléce",
+    "A RustLogs (RLG) könyvtár fejléce",
+    "A LibMake fejléce",
+    "A DateTime (DTT) Rust könyvtár fejléce",
+    "A Random (VRD) Rust könyvtár fejléce",
+    "A Common (CMN) Rust könyvtár fejléce",
+    "A Mini Functions Rust könyvtár fejléce",
+    "A Kaishi kiindulási sablon fejléce",
+    "A Skeletonic Stylus Library fejléce",
+    "A Banking On AI kiadvány fejléce",
+    "A Banking On Quantum kiadvány fejléce",
+    "Az L90S webhely fejléce",
+    "A Dotfiles projekt fejléce"
+  ],
+  "excerpt": [
+    "ISO 20022 pain.001 fájlokat állít elő CSV-ből vagy SQLite-ból. Bankok és fizetési szolgáltatók használják strukturált átutalási üzenetek előállítására anélkül, hogy a meglévő rendszereket újraépítenék.",
+    "ISO 20022 pacs.008 üzeneteket állít elő, ellenőriz és továbbít bankok közötti ügyfélátutalásokhoz. Tartalmaz JSON Schema és XSD szerinti ellenőrzést, IBAN-vizsgálatot 75 országban, valamint személyes adatok maszkolását a GDPR és a PCI-DSS miatt.",
+    "Beolvassa a banktól ügyfélnek szóló ISO 20022 camt.053 kivonatokat, és strukturált adattá alakítja az egyenlegeket, tételeket és tranzakciós részleteket. Tartalmaz MT940-betöltést, XLSX-exportot, valamint szerkesztő- és MI-asszisztens-integrációkat.",
+    "ISO 20022 üzenetküldés számlakezeléshez. Egyszerű adatfájlokból nyit, vezet, zár, vált és ellenőriz bankszámlákat, szerkesztőknek és MI-asszisztenseknek szóló eszközökkel.",
+    "Python eszközkészlet, amely többféle formátumú bankkivonatot alakít strukturált adattá. A valós élet rendezetlen fájljaihoz és az auditkövetelményekhez készült.",
+    "Rust alkalmazás készpénz elosztására alapstruktúrák között, amely előrejelzésekkel támogatja a felosztást. Treasury, alapkönyvelés és eszközallokáció számára készült.",
+    "Rust könyvtár QR-kódok előállítására és beolvasására többféle formátumban. A fizetésekben EPC QR-kódokhoz SEPA-átutalásoknál, kereskedői fizetési hivatkozásokhoz és megerősített hitelesítéshez használják.",
+    "A CRYSTALS-Kyber Rust megvalósítása, amely a posztkvantum kulcsbeágyazás NIST FIPS 203 szabványa.",
+    "Hasító- és lenyomatalgoritmusok jelszavak tárolásához és ellenőrzéséhez, kvantumellenálló szemlélettel írva.",
+    "Többplatformos parancssori eszköz véletlenszerű jelszavak előállítására, auditált kriptográfiai primitívekre építve.",
+    "Nyolc nyelvre kiterjedő kódbiztonsági vizsgáló, amely statikus és szennyeződéselemzést párosít nyelvi modell általi ellenőrzéssel a téves riasztások csökkentésére. Sigstore-aláírt SARIF-, SBOM- és OpenVEX-csomagokat ad ki az ellátási lánc átvilágításához.",
+    "Az OpenAI GPT-modelljeire épülő hangasszisztens, PDF-összefoglalókkal és válaszgyorsítótárral. Személyes és vezetői használatra egyaránt alkalmas.",
+    "Valós időben alakít hangot szöveggé mesterséges intelligenciás beszédfelismeréssel. Rögzített beszélgetések és megbeszélések elemzésére készült.",
+    "Kriptográfiai szolgáltatás az alkalmazások szokásos igényeire: titkosítás, tokenizálás, tranzakcióengedélyezés, kódaláírás és kulcséletciklus-kezelés.",
+    "Statikus webhelygenerátor Rustban, alapértelmezés szerint biztonságosan. Tartalmaz WCAG AAA szerinti ellenőrzést, CSP- és SRI-megerősítést, helyi nyelvi modellel működő tartalmi folyamatot, WebAssembly célt és 28 nyelv támogatását.",
+    "Tisztán Rust nyelvű YAML 1.2 megvalósítás. Nincs unsafe kód, teljes megfelelés a specifikációnak, folyamszerű serde, veszteségmentes szintaxisfa és JSON Schema szerinti ellenőrzés. Könyvtárként, parancssori eszközként, nyelvi kiszolgálóként, MCP-kiszolgálóként és WASM-változatként jelenik meg.",
+    "YAML sorosítás és visszaalakítás Rust adatszerkezetekhez, a Serde keretrendszerre építve.",
+    "Naplózókönyvtár Rusthoz strukturált formátumokkal, aszinkron naplózással és állítható kimenettel.",
+    "Vázgenerátor Rust könyvtárakhoz. Előre kitöltött sablonfájlokat állít elő tesztekhez, teljesítménymérésekhez és a folyamatos integrációhoz.",
+    "Dátum- és időkönyvtár Rusthoz: ISO 8601 szerinti formázás, időzónakezelés és hozzáférés a dátum egyes összetevőihez.",
+    "Véletlenszám-előállítás a Mersenne Twister algoritmus alapján, szimulációkban és játékokban használva.",
+    "Rust könyvtár matematikai és kriptográfiai állandók eléréséhez.",
+    "Segéd- és burkolófüggvények könyvtára Rusthoz.",
+    "Kiindulási sablon a Static Site Generatorhoz, letisztult és akadálymentes webhelyekre felkészítve. Ezt a sablont használom, amikor új webhelybe kezdek.",
+    "Moduláris Stylus könyvtár webes és mobil elrendezésekhez való összetevőkkel és mixinekkel. Ez a webhely erre épül.",
+    "Kiadvány arról, hogyan alkalmazzák a bankok a mesterséges intelligenciát az ügyfélkiszolgálásban, a csalásfelderítésben és a működésben.",
+    "Kiadvány a kvantumszámítástechnikáról a bank- és pénzügyi szektorban, a kockázatelemzéstől a kriptográfiáig.",
+    "Részidős pénzügyi vezetői tanácsadás egy több mint húsz éve a technológiában dolgozó pénzügyi vezetőtől, a növekedés, a forrásbevonás és a pénzügyi működés témáiban.",
+    "Konfigurációs fájlok macOS, Linux és Windows rendszerhez: parancsfájlok és beállítások egy fejlesztői munkamenethez."
+  ],
+  "more": [
+    "Tudj meg többet"
+  ],
+  "faq_q": [
+    "Milyen licenc alatt jelennek meg ezek a projektek?",
+    "Éles üzemre készek ezek a projektek?",
+    "Hogyan járulhatok hozzá, vagy hogyan jelenthetek hibát?",
+    "Használhatom ezeket a könyvtárakat szabályozott banki környezetben?",
+    "Kínálsz kereskedelmi támogatást vagy tanácsadást?",
+    "Hogyan követhetem az új kiadásokat?"
+  ],
+  "faq_a": [
+    "A legtöbb projekt kettős, MIT és Apache-2.0 licenc alatt jelenik meg, ami a Rust ökoszisztéma szabványa, és a megengedő továbbadás mellett kifejezett szabadalmi jogokat is ad a kereskedelmi felhasználóknak. Néhány ügyféleszköz kizárólag Apache-2.0 alatt jelenik meg. A mérvadó forrás az egyes tárolók gyökerében lévő licencfájl.",
+    "Sok igen. A <a href=\"https://pain001.com\">pain001</a> eszközt bankok és fizetési szolgáltatók használják az ISO 20022 fájlok előállításának automatizálására. A <a href=\"https://kyberlib.com\">KyberLib</a> a NIST FIPS 203 specifikációt követi, és tesztvektorokat is szállít. Az egyes tárolók README-fájlja és CI-jelvényei mutatják az aktuális állapotot; ha éles használathoz konkrét garanciára van szükséged, vedd fel a kapcsolatot.",
+    "Minden projektnek van nyilvános GitHub-tárolója a <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a> címen. Nyiss hibajegyet a probléma leírásával (egy minimális reprodukció sokat segít), vagy hibajegyhez kapcsolt pull requestet. A hozzájárulásokra a Developer Certificate of Origin vonatkozik, és aláírt commitokat igényelnek.",
+    "Igen, a szokásos fenntartásokkal. A könyvtárak független, nyílt forráskódú munkák, nem szabályozott termékek. Éles fizetési infrastruktúrába való bevezetés előtt futtasd le a szokásos ellátásilánc-, biztonsági és függőségi átvilágítási folyamataidat, például a belső tükrön keresztüli behozatalt, az SBOM-eszközökkel végzett vizsgálatot és a Git SHA vagy kriptográfiai lenyomat szerinti rögzítést.",
+    "Igen, válogatott esetekben. A megbízások az ISO 20022 átállásra, a posztkvantum kriptográfiai átállás ütemtervére és a pénzügyi szolgáltatásokban alkalmazott mesterséges intelligenciára összpontosítanak. <a href=\"/contact/\">Vedd fel a kapcsolatot</a> egy rövid leírással, az ütemezéseddel és az esetleges megkötésekkel.",
+    "A webhely minden dátumozott bejegyzését bejelentjük az <a href=\"/rss.xml\">RSS-csatornán</a> és a <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> hírlevélben. Az egyes tárolók a GitHubon is közzéteszik a kiadásokat, amelyeket közvetlenül követhetsz."
+  ],
+  "gh_pushed_template": "utolsó commit {age} ezelőtt"
+}

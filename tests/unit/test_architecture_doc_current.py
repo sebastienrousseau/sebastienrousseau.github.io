@@ -45,9 +45,7 @@ def test_every_build_script_is_documented() -> None:
     scripts = _build_scripts()
     assert scripts, "no `python3 scripts/...py` invocations found in build.sh"
 
-    missing = sorted(
-        rel for rel in scripts if _doc_token(rel) not in doc
-    )
+    missing = sorted(rel for rel in scripts if _doc_token(rel) not in doc)
     assert not missing, (
         "architecture.md is missing build-pipeline scripts (Phase 5.4): "
         + ", ".join(missing)

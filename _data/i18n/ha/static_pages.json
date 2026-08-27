@@ -39,13 +39,6 @@
     "keywords": "samun dama, WCAG, bin ka'ida, haɗa kowa ta dijital, bincike",
     "_draft": true
   },
-  "articles": {
-    "title": "Labarai — Sebastien Rousseau",
-    "subtitle": "Labarai kan AI, kiriftografi bayan kwantum, ISO 20022 da makomar biyan kuɗi.",
-    "description": "Labarai kan AI mai amfani, kiriftografi bayan kwantum, biyan kuɗi na ISO 20022 da sauyin biyan kuɗi na manyan ma'amaloli.",
-    "keywords": "labarai, bincike, AI, kiriftografi bayan kwantum, ISO 20022, biyan kuɗi na manyan ma'amaloli",
-    "_draft": true
-  },
   "contact": {
     "title": "Tuntube mu — Sebastien Rousseau",
     "subtitle": "Kana da tambaya ko kana buƙatar shawara? Tuntube mu.",
@@ -75,11 +68,10 @@
     "_draft": true
   },
   "playlists": {
-    "title": "Jerin waƙoƙi — Sebastien Rousseau",
-    "subtitle": "Zaɓaɓɓun jerin waƙoƙi na Spotify don aiki mai zurfi, ƙirƙira da tunanin injiniya.",
-    "description": "Zaɓin waƙoƙin Sebastien Rousseau.",
-    "keywords": "jerin waƙoƙi, waƙa",
-    "_draft": true
+    "title": "Jerin waƙoƙi 39 domin mai da hankali da aiki mai zurfi — Sebastien Rousseau",
+    "subtitle": "Neo soul, jazz funk, boom bap, French touch, deep house da bugun Yammacin Afirka — waƙoƙi sama da 1,700 a cikin jerin waƙoƙi 39, kyauta a Spotify da Apple Music.",
+    "description": "Jerin waƙoƙi 39 da aka gina da hannu domin mai da hankali da aiki mai zurfi: neo soul, nu jazz, boom bap, French touch, deep house, lo-fi da afrobeat. Waƙoƙi sama da 1,700, kyauta a Spotify da Apple Music.",
+    "keywords": "jerin waƙoƙin mai da hankali, kiɗan aiki mai zurfi, jerin waƙoƙin aiki, jerin waƙoƙin karatu, jerin neo soul, jerin nu jazz, jerin jazz funk, jerin boom bap, jerin jazz rap, jerin French touch, jerin deep house, lo-fi domin karatu, jerin afrobeat, jerin disco house, jerin downtempo, jerin trip-hop, jerin waƙoƙin Spotify, jerin waƙoƙin Apple Music, zaɓaɓɓun jerin waƙoƙi, kiɗa domin rubuta lamba"
   },
   "privacy": {
     "title": "Manufar sirri — Sebastien Rousseau",

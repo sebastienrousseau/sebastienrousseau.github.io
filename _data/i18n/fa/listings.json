@@ -1,0 +1,26 @@
+{
+  "_comment": "FA copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "خوراک",
+    "pageLabel": "صفحه {page} از {total}",
+    "visible": "نمایش",
+    "categoryLabel": "دسته",
+    "yearLabel": "سال",
+    "allCategories": "همه دسته‌ها",
+    "allYears": "همه سال‌ها",
+    "filterAria": "فیلتر مقاله‌ها",
+    "listAria": "کارت‌های مقاله",
+    "paginationAria": "صفحه‌بندی",
+    "emptyState": "هیچ مقاله‌ای با فیلترهای فعلی مطابقت ندارد.",
+    "previous": "قبلی",
+    "next": "بعدی"
+  },
+  "pillars": {
+    "ai": "هوش مصنوعی کاربردی",
+    "payments": "پرداخت‌ها و پول",
+    "infra": "زیرساخت و رمزنگاری",
+    "policy": "سیاست و تاب‌آوری",
+    "open-source": "متن‌باز",
+    "leadership": "رهبری بانکی"
+  }
+}

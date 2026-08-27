@@ -1,0 +1,261 @@
+{
+  "_comment": "KO copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "플레이리스트",
+    "jump": "최신 플레이리스트 듣기",
+    "platformsLabel": "전체 컬렉션은 Apple Music에도 있습니다",
+    "navLabel": "장르로 이동",
+    "play": "Spotify에서 재생",
+    "follow": "Spotify에서 팔로우",
+    "apple": "Apple Music에서 듣기",
+    "countOne": "플레이리스트",
+    "countOther": "플레이리스트",
+    "coverAlt": "{title} 플레이리스트 커버 이미지",
+    "openAria": "{title}을(를) Spotify에서 열기",
+    "frameTitle": "Spotify의 {title} 플레이리스트"
+  },
+  "intro": [
+    "서른아홉 개의 플레이리스트와 1,763곡. 사운드트랙이 필요한 시간을 위해 만들었습니다 — 딥 워크, 긴 독서, 늦은 밤의 다시 쓰기.",
+    "일에 인내가 필요할 때는 네오 소울과 누 재즈. 추진력이 필요할 때는 붐뱁과 재즈 랩. 들어 올릴 힘이 필요할 때는 프렌치 터치, 딥 하우스, 디스코 하우스. 고개 숙이고 달리는 구간에는 로파이, 그리고 그 모두를 관통하는 서아프리카 리듬.",
+    "모든 플레이리스트는 Spotify에서 무료로 재생되며, 전체 컬렉션은 Apple Music에 있습니다."
+  ],
+  "featured": {
+    "kicker": "최신 플레이리스트",
+    "date": "2026년 8월",
+    "genres": "인디 팝 · 프렌치 하우스",
+    "desc": "햇살에 잠긴 인디 팝이 프렌치 하우스로 미끄러집니다 — Tame Impala와 almost monday가 Justice, L'Impératrice, HUGEL의 아프로 하우스에 자리를 내줍니다."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "일렉트로닉",
+      "sub": "하우스, 디스코, 프렌치 터치"
+    },
+    "soul-jazz": {
+      "title": "소울 &amp; 재즈",
+      "sub": "네오 소울, 누 재즈, 느린 템포"
+    },
+    "hip-hop": {
+      "title": "힙합",
+      "sub": "붐뱁, 재즈 랩, 황금기의 그루브"
+    },
+    "morning-mood": {
+      "title": "아침 &amp; 무드",
+      "sub": "다운템포, 로파이, 깨어나는 에너지"
+    },
+    "global": {
+      "title": "글로벌",
+      "sub": "그 밖의 모든 곳에서 온 리듬"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "디스코 하우스 · 개러지",
+      "desc": "지금도 플로어를 채우는 90년대 후반의 디스코 하우스와 개러지 — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden, Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "인디 팝 · 프렌치 하우스",
+      "desc": "햇살에 잠긴 인디 팝이 프렌치 하우스로 미끄러집니다 — Tame Impala와 almost monday가 Justice, L'Impératrice, HUGEL의 아프로 하우스에 자리를 내줍니다."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "프렌치 터치 · 일렉트로",
+      "desc": "상향등을 켠 프렌치 터치 — Daft Punk, Justice, Kavinsky, L'Impératrice, Angèle이 네온 신스와 모토릭 베이스라인을 주고받습니다."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "인디 댄스 · 신스 팝",
+      "desc": "골든아워의 신스 팝과 인디 댄스 — Blu DeTiger, Merty Shango, Citrus Sun, Enne가 그 반짝임을 저녁까지 옮깁니다."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "누 디스코 · 프렌치 하우스",
+      "desc": "필터를 연 누 디스코와 프렌치 하우스 — Fred Falke, Breakbot, Madeon, Lemaitre, Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "프로그레시브 하우스 · 일렉트로",
+      "desc": "움직이기 위해 만든 프로그레시브 하우스와 일렉트로 — Madeon, Paul Woolford, Martin Solveig, Secondcity, The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "누 디스코 · 필터드 하우스",
+      "desc": "움직이기 위해 만든 누 디스코와 필터드 하우스 — 끊어 친 기타와 두툼한 신스 베이스 위의 Lenno, Oliver, Tollef, Yelle."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "딥 하우스 · 멜로딕 하우스",
+      "desc": "방해가 되지 않는 딥·멜로딕 하우스 100곡 — Chris Malinchak, Sultan + Shepard, Lenno, Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "퓨처 하우스 · 일렉트로 팝",
+      "desc": "밝은 퓨처 하우스와 일렉트로 팝 — 100곡에 걸친 Lenno, La Felix, The Knocks, Kraak & Smaak, Chris Malinchak."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "재지 힙합 · 붐뱁",
+      "desc": "느린 저녁을 위한, 재즈를 샘플링한 붐뱁 — Blu & Exile, Large Professor, 3582, Scienze가 따뜻한 루프와 서두르지 않는 벌스를 주고받습니다."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "재즈홉 · 붐뱁",
+      "desc": "Phoniks 진영의 황금기 재즈홉 — 먼지 낀 브라스와 더블베이스 위의 Awon & Phoniks, Anti Lilly, Dephlow, Tiff the Gift."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "얼터너티브 R&B · 네오 소울",
+      "desc": "얼터너티브 R&B와 늦은 밤의 네오 소울 — 흐릿한 드럼과 서두르지 않는 베이스라인 위의 Brent Faiyaz, Elujay, J.Robb, Lou Phelps."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "디스코 · 부기",
+      "desc": "70년대와 80년대의 플로어를 채우던 곡들 — CHIC, Luther Vandross, The Jacksons, Change, Oliver Cheatham. 일을 해내는 건 현악, 박수, 베이스라인."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "애시드 재즈 · 누 재즈",
+      "desc": "라이브 밴드를 뒤에 둔 애시드 재즈와 누 재즈 — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson, Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "가스펠 · 소울",
+      "desc": "방 전체를 들어 올리는 가스펠 뿌리의 소울 — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris, Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "브로큰 비트 · 누 재즈",
+      "desc": "느린 오후를 위한 브로큰 비트와 영국 누 재즈 — Emma-Jean Thackray, Blue Lab Beats, Galliano, The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "브리티시 소울 · 브로큰 비트",
+      "desc": "가장 따뜻한 결의 브리티시 소울 — Incognito, Shaun Escoffery, Cherri V, Tortured Soul, 그리고 방 안의 Stevie Wonder."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "모던 재즈 · R&B",
+      "desc": "대화하는 모던 재즈와 R&B — Robert Glasper, August Greene, Common, Karriem Riggins, Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "소울 · 재즈 펑크",
+      "desc": "진짜 연주자들을 뒤에 둔 사랑 노래 — 4hero와 Marc Mac, Incognito, Imaani, Natalie Duncan, Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "네오 소울 · 재즈",
+      "desc": "따뜻한 저녁을 위한 네오 소울과 재즈 55곡 — India.Arie, Robert Glasper, Lucy Pearl, Anthony David, Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "네오 소울 · 모던 R&B",
+      "desc": "네오 소울과 모던 R&B 73곡 — Alex Isley, Yebba, Ego Ella May, Robert Glasper, Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "재즈 펑크 · 네오 소울",
+      "desc": "조명을 연주자에게 맞춘 100곡 — Erykah Badu, Jill Scott, Omar, Esperanza Spalding, Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "랩 · 웨스트 코스트",
+      "desc": "네 개의 시대를 가로지르는 랩 100곡 — 2Pac과 Dr. Dre, Snoop Dogg과 Tha Dogg Pound, Ghostface Killah, Nicki Minaj, DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "랩 · 소울 · 프렌치 터치",
+      "desc": "장르 규칙 없이 레코드 상자를 파낸 100곡 — MC Solaar와 113 옆의 Dr. Dre와 Eminem, DJ Mehdi와 Thomas Bangalter 옆의 Charles Aznavour."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "하드코어 랩 · 붐뱁",
+      "desc": "볼륨을 올린 90년대 하드코어 랩 — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre, Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "붐뱁 · 재즈 랩",
+      "desc": "90년대 붐뱁과 재즈 랩 86곡 — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde, 그리고 Guru의 Jazzmatazz."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "언더그라운드 · 붐뱁",
+      "desc": "언더그라운드 붐뱁과 인스트루멘털 — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D, Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "인디 힙합 · 팝 랩",
+      "desc": "추진력 있는 인디 힙합과 팝 랩 — Quinn XCII, Kid Quill, EMAN8, gianni & kyle, YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "칠웨이브 · 다운템포",
+      "desc": "긴 드라이브나 느린 아침을 위한 무중력 다운템포 — 부드럽게 그려진 드럼 위의 Zero 7, Les Imprimés, Ciao Ciao Marigold."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "트립합 · 재즈홉",
+      "desc": "Proleter, Poldoore, Souleance, The Geek x Vrv의 재즈 샘플링 트립합. 영화적이고, 서두르지 않으며, 글쓰기를 위해 만들어졌습니다."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "다운템포 · 누 재즈",
+      "desc": "생각을 기대어 둘 수 있는 다운템포와 누 재즈 — Zero 7, The Cinematic Orchestra, Souleance, Mozez, Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "트립합 · 다운템포",
+      "desc": "소울의 심을 가진 트립합과 다운템포 — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra, 그리고 재해석된 Nina Simone."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "로파이 · 공부용 비트",
+      "desc": "공부와 딥 워크를 위한 로파이 힙합 비트 52곡 — Idealism, j'san, Joey Pecoraro, Sugi.wa, aimless. 다툴 보컬은 없습니다."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "프렌치 하우스 · 누 디스코",
+      "desc": "일정한 속도로 나아가는 펑키한 프렌치 하우스와 누 디스코 — Breakbot, Modjo, Fred Falke, Kartell, Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "누 재즈 · 다운템포",
+      "desc": "긴장을 푸는 데 좋은 잔잔한 누 재즈와 다운템포 — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly, Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "소울 · 재즈 펑크",
+      "desc": "하루를 시작하는 소울과 재즈 펑크 — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak, Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "기운을 북돋는 팝",
+      "desc": "몸을 움직이게 하는 밝고 빠른 팝 64곡 — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear, Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "재즈 랩 · 얼터너티브 R&B",
+      "desc": "할 말이 있는 재즈 랩과 얼터너티브 R&B — Noname, Anderson .Paak, KAYTRANADA, Q-Tip, A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "아프로비트 · 와술루",
+      "desc": "서아프리카의 목소리를 전면에 — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh, Kareyce Fotso. 와술루에서 코라까지."
+    }
+  },
+  "faq": {
+    "heading": "궁금한 점과 답.",
+    "sub": "어떻게 듣는지, 무엇으로 듣는지, 그리고 이 음악이 어디에서 왔는지.",
+    "items": [
+      {
+        "q": "듣는 데 Spotify 구독이 필요한가요?",
+        "a": "아니요. 무료 Spotify 계정으로도 위의 내장 플레이어에서 모든 플레이리스트가 재생되며, 곡 사이에 광고가 나옵니다. Premium은 광고를 없애고 오프라인 재생을 허용하지만, 여기 있는 것 중 유료 장벽 뒤에 있는 것은 없습니다."
+      },
+      {
+        "q": "Apple Music에서 들을 수 있나요?",
+        "a": "네 — music.apple.com/profile/bxhero의 프로필을 팔로우하세요. 이 페이지의 플레이리스트는 Spotify 버전입니다. Apple Music은 개별 플레이리스트 링크를 공개하지 않기 때문에, 그 플랫폼에서는 프로필 팔로우가 확실한 방법입니다."
+      },
+      {
+        "q": "어떤 기기에서 작동하나요?",
+        "a": "Spotify가 돌아가는 곳이면 어디든: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox, 그리고 모든 브라우저. 이 페이지의 플레이어는 앱 없이 모바일과 데스크톱에서 작동합니다."
+      },
+      {
+        "q": "딥 워크에는 어떤 플레이리스트로 시작하면 좋을까요?",
+        "a": "방해 없는 집중에는 아침 &amp; 무드 — 읽기와 겨루지 않도록 보컬이 적거나 없는 다운템포, 누 재즈, 로파이. 차분함보다 추진력이 필요한 작업에는 일렉트로닉이 어울립니다."
+      },
+      {
+        "q": "플레이리스트는 얼마나 자주 갱신되나요?",
+        "a": "정기적으로, 그 자리에서. Spotify에서 플레이리스트를, 또는 두 서비스 중 하나에서 프로필을 팔로우해 두면 여기로 돌아오지 않아도 새 곡이 도착합니다."
+      },
+      {
+        "q": "이 플레이리스트를 공유하거나 임베드해도 되나요?",
+        "a": "네. 각 카드는 Spotify의 플레이리스트로 연결되며, 그곳의 공유 메뉴에서 링크와 임베드 코드를 얻을 수 있습니다. 공개 플레이리스트이므로 자유롭게 공유할 수 있습니다."
+      },
+      {
+        "q": "이 플레이리스트는 누가 만드나요?",
+        "a": "Sebastien Rousseau — Spotify와 Apple Music에서는 BXHERO로. 결제와 엔지니어링에 대해 쓰는 동안 실제로 틀어 두는 플레이리스트이며, 알고리즘 피드가 아닙니다."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "모든 기기에서 듣기",
+    "body": "모든 플레이리스트는 위의 브라우저에서, 그리고 이미 쓰고 있는 기기의 Spotify 앱에서 재생됩니다. 두 서비스 중 하나에서 프로필을 팔로우하면 새 플레이리스트가 알아서 도착합니다.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "웹 브라우저"
+    ]
+  }
+}

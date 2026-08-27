@@ -16,7 +16,12 @@ _LBL = {
     "Case study": "Case study",
     "deck": "Proof of work.",
 }
-_STUDY = {"slug": "acme", "title": "Acme", "problem": "Big\n  problem here.", "period": "2023 – present"}
+_STUDY = {
+    "slug": "acme",
+    "title": "Acme",
+    "problem": "Big\n  problem here.",
+    "period": "2023 – present",
+}
 
 
 # --- _source_code_entity ---------------------------------------------------
@@ -69,8 +74,13 @@ def test_article_jsonld_core_fields_and_date_from_period() -> None:
 
 
 def test_article_jsonld_date_fallback_and_banner_and_about() -> None:
-    study = {"slug": "b", "title": "B", "period": "ongoing", "banner": "/b.webp",
-             "links": {"bank": "https://hsbc.example"}}
+    study = {
+        "slug": "b",
+        "title": "B",
+        "period": "ongoing",
+        "banner": "/b.webp",
+        "links": {"bank": "https://hsbc.example"},
+    }
     out = s._build_article_jsonld(study, _LBL, "en", "seg")
     assert out["datePublished"] == "2025-09-01"  # non-numeric period → fallback
     assert out["image"] == "/b.webp"

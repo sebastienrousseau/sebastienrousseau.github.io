@@ -1,0 +1,26 @@
+{
+  "_comment": "TA copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "ஊட்டம்",
+    "pageLabel": "{total} இல் {page} ஆம் பக்கம்",
+    "visible": "காட்டப்படுகிறது",
+    "categoryLabel": "வகை",
+    "yearLabel": "ஆண்டு",
+    "allCategories": "அனைத்து வகைகளும்",
+    "allYears": "அனைத்து ஆண்டுகளும்",
+    "filterAria": "கட்டுரைகளை வடிகட்டு",
+    "listAria": "கட்டுரை அட்டைகள்",
+    "paginationAria": "பக்கமாக்கல்",
+    "emptyState": "தற்போதைய வடிகட்டிகளுக்குப் பொருந்தும் கட்டுரை எதுவும் இல்லை.",
+    "previous": "முந்தையது",
+    "next": "அடுத்தது"
+  },
+  "pillars": {
+    "ai": "பயன்பாட்டு செயற்கை நுண்ணறிவு",
+    "payments": "கட்டணங்களும் பணமும்",
+    "infra": "உள்கட்டமைப்பும் மறையாக்கமும்",
+    "policy": "கொள்கையும் தாங்குதிறனும்",
+    "open-source": "திறந்த மூலம்",
+    "leadership": "வங்கித் தலைமை"
+  }
+}

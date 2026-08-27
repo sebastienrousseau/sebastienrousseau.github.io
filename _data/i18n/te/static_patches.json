@@ -110,7 +110,7 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 వ్యాసం(లు)</p>"
+      "\\1 వ్యాసాలు</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
@@ -162,7 +162,7 @@
     ],
     [
       ">About EPAA</a>",
-      "<>EPAA గురించి</a>"
+      ">EPAA గురించి</a>"
     ],
     [
       "title=\"Visit the Emerging Payments Association Asia\"",
@@ -178,7 +178,7 @@
     ],
     [
       ">Read the article</a>",
-      "<>వ్యాసాన్ని చదవండి</a>"
+      ">వ్యాసాన్ని చదవండి</a>"
     ],
     [
       " · Free download",
@@ -194,7 +194,7 @@
     ],
     [
       ">Request access<",
-      "<>యాక్సెస్ కోరండి<"
+      ">యాక్సెస్ కోరండి<"
     ],
     [
       ">English · PDF",
@@ -310,7 +310,7 @@
     ],
     [
       ">About EPAA</p>",
-      "<>EPAA గురించి</p>"
+      ">EPAA గురించి</p>"
     ],
     [
       "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
@@ -682,7 +682,7 @@
     ],
     [
       ">Have an idea\\? Let's build it\\.<",
-      "<>ఒక ఆలోచన ఉందా? దాన్ని కలిసి నిర్మిద్దాం.<"
+      ">ఒక ఆలోచన ఉందా? దాన్ని కలిసి నిర్మిద్దాం.<"
     ],
     [
       ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
@@ -691,118 +691,6 @@
     [
       "<p class=\"newsroom-kicker\">FEATURED</p>",
       "<p class=\"newsroom-kicker\">ప్రత్యేకం</p>"
-    ],
-    [
-      ">Latest Music</h2>",
-      ">తాజా సంగీతం</h2>"
-    ],
-    [
-      ">Latest playlist</h2>",
-      ">తాజా ప్లేలిస్ట్</h2>"
-    ],
-    [
-      ">Soulful, jazz and downtempo</h2>",
-      ">సోల్‌ఫుల్, జాజ్ మరియు డౌన్‌టెంపో</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">MORNING & MOOD</p>",
-      "<p class=\"newsroom-kicker\">ఉదయం & మూడ్</p>"
-    ],
-    [
-      ">Morning, mood and chill</h2>",
-      ">ఉదయం, మూడ్ మరియు చిల్</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">ELECTRONIC</p>",
-      "<p class=\"newsroom-kicker\">ఎలక్ట్రానిక్</p>"
-    ],
-    [
-      ">Electronic, house and techno</h2>",
-      ">ఎలక్ట్రానిక్, హౌస్ మరియు టెక్నో</h2>"
-    ],
-    [
-      ">Pop, rock and alternative</h2>",
-      ">పాప్, రాక్ మరియు ఆల్టర్నేటివ్</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">FOCUS</p>",
-      "<p class=\"newsroom-kicker\">ఏకాగ్రత</p>"
-    ],
-    [
-      ">Focus and productivity</h2>",
-      ">ఏకాగ్రత మరియు ఉత్పాదకత</h2>"
-    ],
-    [
-      ">Smooth Jazz, Neo Soul, and laid-back grooves[^<]+",
-      ">Smooth Jazz, Neo Soul మరియు నెమ్మదైన గ్రూవ్‌లు. రోజు నెమ్మదించమని కోరినప్పటి కోసం ప్లేలిస్ట్‌లు."
-    ],
-    [
-      ">This page has a comprehensive list[^<]+",
-      ">ఈ పేజీ విస్తృత శ్రేణి శైలులను కవర్ చేస్తూ, అత్యంత జనాదరణ పొందిన మరియు విమర్శకుల ప్రశంసలు అందుకున్న Spotify ప్లేలిస్ట్‌ల ఎంపికను అందిస్తుంది. మీరు జాజ్, సోల్, హిప్-హాప్ లేదా ఎలక్ట్రానిక్ సంగీత అభిమాని అయినా, మీ అభిరుచికి తగిన ప్లేలిస్ట్ మీకు లభిస్తుంది."
-    ],
-    [
-      ">Step into the harmonious realm of TETRA\\.[^<]+",
-      ">TETRA యొక్క సామరస్యపూర్వక సామ్రాజ్యంలోకి అడుగుపెట్టండి. మీ మనసును ఉత్తేజపరచి మీ ఆత్మను ఆనందంతో నింపడానికి రూపొందించిన ఉల్లాసభరిత ప్లేలిస్ట్."
-    ],
-    [
-      ">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">ఈ Jazz, Soul, R&amp;B మరియు Neo Soul ఎంపికతో విశ్రాంతి తీసుకుని వేసవి సారాన్ని ఆస్వాదించండి."
-    ],
-    [
-      ">A deep dive into the quintessential collection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">Jazz, Soul, R&amp;B మరియు Neo Soul యొక్క సారభూత సేకరణలోకి లోతైన ప్రయాణం."
-    ],
-    [
-      ">Take a break from a busy day and relax with soothing nu jazz and downtempo beats\\.",
-      ">బిజీ రోజులో ఒక విరామం తీసుకుని, ప్రశాంతమైన నూ జాజ్ మరియు డౌన్‌టెంపో బీట్‌లతో విశ్రాంతి తీసుకోండి."
-    ],
-    [
-      ">Soulful tracks with a fashion-forward vibe\\. Music to set the tone for a productive and stylish day\\.",
-      ">అభ్యుదయ వైబ్‌తో సోల్ ట్రాక్‌లు. ఉత్పాదక మరియు స్టైలిష్ రోజుకు స్వరాన్ని సెట్ చేసే సంగీతం."
-    ],
-    [
-      ">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms\\.",
-      ">జీవన ఆనందాన్ని జరుపుకుని, ప్రస్ఫుటమైన భావోద్వేగాలు, శక్తివంతమైన రంగులు మరియు సోల్ లయల ప్రపంచంలోకి మునిగిపోండి."
-    ],
-    [
-      ">Laid-back beats, house-influenced grooves and new deep house tracks\\.",
-      ">నెమ్మదైన బీట్‌లు, హౌస్-ప్రేరిత గ్రూవ్‌లు మరియు కొత్త డీప్ హౌస్ ట్రాక్‌లు."
-    ],
-    [
-      ">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience\\.",
-      ">ఫంకీ డిస్కో, హౌస్, French touch మరియు ఇతర శైలులను సజావుగా మిళితం చేసి అల్ట్రా-కూల్ మరియు శక్తివంతమైన సంగీత అనుభవం."
-    ],
-    [
-      ">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke\\.",
-      ">Madeon మరియు Fred Falke వంటి కళాకారుల Nu-Disco, French House, Electro మరియు Disco House ట్యూన్‌లతో కూడిన ఒక సోనిక్ ప్రయాణం."
-    ],
-    [
-      ">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks\\.",
-      ">నెమ్మదైన బీట్‌లు, హిప్-హాప్-ప్రేరిత గ్రూవ్‌లు మరియు కొత్త ఇండీ పాప్ ట్రాక్‌లు."
-    ],
-    [
-      ">Original Hip Hop, Rap and R(?:&amp;|&)B Flavor Sessions\\.",
-      ">Hip Hop, Rap మరియు R&amp;B రుచుల ఒరిజినల్ సెషన్‌లు."
-    ],
-    [
-      ">Brace yourself for hardcore rap and hip hop tracks\\.",
-      ">హార్డ్‌కోర్ ర్యాప్ మరియు హిప్ హాప్ ట్రాక్‌లకు సిద్ధంగా ఉండండి."
-    ],
-    [
-      ">A few of the favourite hip-hop gems\\.",
-      ">అభిమాన హిప్-హాప్ రత్నాలలో కొన్ని."
-    ],
-    [
-      ">Soulful beats and thoughtful lyrics\\. A captivating look into the world of contemporary hip hop, R(?:&amp;|&)B and rap\\.",
-      ">సోల్ బీట్‌లు మరియు ఆలోచనాత్మక సాహిత్యం. సమకాలీన హిప్ హాప్, R&amp;B మరియు ర్యాప్ ప్రపంచంపై ఆకర్షణీయమైన చూపు."
-    ],
-    [
-      ">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats\\.",
-      ">ఈ అద్భుతమైన Lo-Fi Hip Hop ప్లేలిస్ట్‌లో నెమ్మదైన వైబ్‌లు మరియు మృదువైన లయలు."
-    ],
-    [
-      ">Celebrate the diverse heritage of African music\\. From the soulful rhythms of Wassoulou to the lively beats of Londonko\\.",
-      ">ఆఫ్రికన్ సంగీతం యొక్క గొప్ప వైవిధ్యాన్ని జరుపుకోండి. Wassoulou సోల్ లయల నుండి Londonko చురుకైన బీట్‌ల వరకు."
     ],
     [
       "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
@@ -1005,18 +893,6 @@
       "<h3><a href=\"/te/topics/blockchain-digital-assets/index.html\">బ్లాక్‌చెయిన్ &amp; డిజిటల్ ఆస్తులు</a></h3>"
     ],
     [
-      "<p class=\"newsroom-lede\">Tracks to kick off the day or shift the room\\. Fashion\\-forward soul, vivid colour, and laid\\-back energy\\.</p>",
-      "<p class=\"newsroom-lede\">రోజును ప్రారంభించడానికి లేదా వాతావరణాన్ని మార్చడానికి ట్రాక్‌లు. అభ్యుదయ సోల్, ప్రస్ఫుటమైన రంగు మరియు నెమ్మదైన శక్తి.</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">Funky disco, French touch and electro\\. Energetic listening for movement, focus or the dance floor\\.</p>",
-      "<p class=\"newsroom-lede\">ఫంకీ డిస్కో, French touch మరియు ఎలక్ట్రో. కదలిక, ఏకాగ్రత లేదా డ్యాన్స్ ఫ్లోర్ కోసం శక్తివంతమైన శ్రవణం.</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo\\-Fi\\. The full breadth of beats\\.</p>",
-      "<p class=\"newsroom-lede\">ఒరిజినల్ Hip Hop సెషన్‌ల నుండి హార్డ్‌కోర్ ర్యాప్, సమకాలీన R&B మరియు Lo-Fi వరకు. బీట్‌ల పూర్తి విస్తృతి.</p>"
-    ],
-    [
       "<h1>Enterprise AI Banking (?:&amp;|&) Payment Software Suite</h1>",
       "<h1>బ్యాంకింగ్ మరియు చెల్లింపుల కోసం ఎంటర్‌ప్రైజ్ AI సాఫ్ట్‌వేర్ సూట్</h1>"
     ],
@@ -1035,6 +911,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>ప్రచురణలు పరిశోధన విభాగానికి తరలించబడ్డాయి</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"క్లౌడ్-నేటివ్ బ్యాంకింగ్\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"క్లౌడ్-నేటివ్ బ్యాంకింగ్ — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/te/topics/cloud-native-banking/index.html\">క్లౌడ్-నేటివ్ బ్యాంకింగ్</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/te/topics/cloud-native-banking/index.html\">క్లౌడ్-నేటివ్ బ్యాంకింగ్</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">నియంత్రిత సంస్థల కోసం Kubernetes ఆధారిత ప్లాట్‌ఫారమ్ ఇంజనీరింగ్: DORA ప్రకారం పరీక్షించిన నిర్వహణ స్థితిస్థాపకత, వర్చువల్ మెషీన్లు మరియు కంటైనర్ల సమ్మేళనం, సార్వభౌమ క్లౌడ్, నిష్క్రమణ వ్యూహం, మరియు పర్యవేక్షణలో కీలక సేవలను విడుదల చేయడానికి బ్యాంకులకు వీలు కల్పించే నిర్మాణం.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"బ్యాంకింగ్‌లో ఏజెంటిక్ ఏఐ\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"బ్యాంకింగ్‌లో ఏజెంటిక్ ఏఐ — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/te/topics/agentic-ai-banking/index.html\">బ్యాంకింగ్‌లో ఏజెంటిక్ ఏఐ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/te/topics/agentic-ai-banking/index.html\">బ్యాంకింగ్‌లో ఏజెంటిక్ ఏఐ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">ఏజెంట్ నియంత్రణ తలాలు, నిర్ధారణాత్మక అర్థ మార్గనిర్దేశం, OPA విధాన ద్వారాలు, మార్చలేని WORM తనిఖీ నమోదులు, మరియు స్వయంప్రతిపత్త పని ప్రవాహాలను పర్యవేక్షకునికి సమర్పించదగిన సాక్ష్యంగా మార్చే SR 11-7 / SS1/23 నమూనా-ప్రమాద దృక్కోణం.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"ట్రెజరీ ఆటోమేషన్\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"ట్రెజరీ ఆటోమేషన్ — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/te/topics/treasury-automation/index.html\">ట్రెజరీ ఆటోమేషన్</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/te/topics/treasury-automation/index.html\">ట్రెజరీ ఆటోమేషన్</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">ప్రోగ్రామ్ చేయదగిన ద్రవ్యత, స్వయంప్రతిపత్త ట్రెజరీ, ISO 20022 చెల్లింపు యంత్రాలు, మరియు CAMT / pacs.008 / MT940 / pain.001 ఫైళ్లను కార్పొరేట్ ట్రెజరీ బృందాల కోసం తనిఖీ చేయదగిన, డైరెక్టర్ల బోర్డు స్థాయి లావాదేవీ విశ్లేషణగా మార్చే ఓపెన్ సోర్స్ సాధన సముదాయాలు.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"నిర్వహణ స్థితిస్థాపకత మరియు DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"నిర్వహణ స్థితిస్థాపకత మరియు DORA — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/te/topics/operational-resilience-dora/index.html\">నిర్వహణ స్థితిస్థాపకత మరియు DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/te/topics/operational-resilience-dora/index.html\">నిర్వహణ స్థితిస్థాపకత మరియు DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">DORA ఆర్టికల్ 5 కింద బోర్డు జవాబుదారీతనం, BCBS 239 ప్రమాద-సమాచార సమీకరణ, మూడవ పక్ష కేంద్రీకరణ ప్రమాదం, నిష్క్రమణ పరీక్ష, మరియు నిర్వహణ స్థితిస్థాపకతను అనుసరణ ప్రాజెక్టు నుండి పర్యవేక్షకునికి సిద్ధమైన స్కోరుబోర్డుగా మార్చే ఇంజనీరింగ్ నియంత్రణలు.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"స్టేబుల్‌కాయిన్లు మరియు టోకనీకరణ\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"స్టేబుల్‌కాయిన్లు మరియు టోకనీకరణ — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/te/topics/stablecoins-tokenisation/index.html\">స్టేబుల్‌కాయిన్లు మరియు టోకనీకరణ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/te/topics/stablecoins-tokenisation/index.html\">స్టేబుల్‌కాయిన్లు మరియు టోకనీకరణ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">టోకనీకరించిన డిపాజిట్లు, ద్రవ్య మార్కెట్ నిధులు, టోకు కేంద్ర బ్యాంకు డిజిటల్ కరెన్సీ ప్రయోగాలు, BlackRock యొక్క BRSRV/BSTBL, GENIUS చట్టం, మరియు నియంత్రిత బ్యాలెన్స్ షీట్ల లోపల ప్రోగ్రామ్ చేయదగిన డబ్బు పనిచేసేలా చేసే ఇంజనీరింగ్ ఎంపికలు.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"జనరేటివ్ ఏఐ మరియు భారీ భాషా నమూనాలు\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"జనరేటివ్ ఏఐ మరియు భారీ భాషా నమూనాలు — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/te/topics/generative-ai-llms/index.html\">జనరేటివ్ ఏఐ మరియు భారీ భాషా నమూనాలు</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/te/topics/generative-ai-llms/index.html\">జనరేటివ్ ఏఐ మరియు భారీ భాషా నమూనాలు</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">మౌలిక నమూనాలు, బహుళరూప భారీ భాషా నమూనాలు (Gemini, Gemma, Mistral, MM1), ప్రాంప్ట్ ఇంజనీరింగ్, మరియు బ్యాంకులు తమ సొంత సమాచార పరిధిలో ఏమి నిర్మించగలవో నిర్ణయించే ఓపెన్ సోర్స్ విడుదలలు.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"గాత్ర మరియు ప్రసంగ ఏఐ\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"గాత్ర మరియు ప్రసంగ ఏఐ — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/te/topics/voice-speech-ai/index.html\">గాత్ర మరియు ప్రసంగ ఏఐ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/te/topics/voice-speech-ai/index.html\">గాత్ర మరియు ప్రసంగ ఏఐ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">గాత్ర ప్రతిరూపణ, తక్షణ ప్రసంగ గుర్తింపు (Whisper), ఉన్నతాధికారుల కోసం గాత్ర సహాయకులు, మరియు ప్రైవేట్ బ్యాంకింగ్ కస్టమర్ అనుభవాన్ని పునర్నిర్మిస్తున్న ఆడియో-విశ్లేషణ పేర్పు.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"ఏఐ పాలన మరియు నియంత్రణ\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"ఏఐ పాలన మరియు నియంత్రణ — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/te/topics/ai-governance-regulation/index.html\">ఏఐ పాలన మరియు నియంత్రణ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/te/topics/ai-governance-regulation/index.html\">ఏఐ పాలన మరియు నియంత్రణ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">యూరోపియన్ యూనియన్ ఏఐ చట్టానికి అనుగుణ్యత, SR 11-7 నమూనా ప్రమాదం, బోర్డు స్థాయి జవాబుదారీతనం, స్వయంప్రతిపత్త పని ప్రవాహాల తనిఖీ సామర్థ్యం, మరియు అగ్రశ్రేణి బ్యాంకుల్లో ఏఐ నియంత్రణ చట్రం.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"టోకు చెల్లింపు పట్టాలు\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"టోకు చెల్లింపు పట్టాలు — అంశ బ్యానర్\""
+    ],
+    [
+      "<h3><a href=\"/te/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/te/topics/wholesale-payments-rails/index.html\">టోకు చెల్లింపు పట్టాలు</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/te/topics/wholesale-payments-rails/index.html\">టోకు చెల్లింపు పట్టాలు</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">కార్డులు, ఖాతా-నుండి-ఖాతా బదిలీ, RTP, FedNow, ఓపెన్ బ్యాంకింగ్ మరియు స్టేబుల్‌కాయిన్ కారిడార్ల అంతటా విస్తరించిన బహుళ-పట్టా వ్యూహం. టోకు ఆర్థికశాస్త్రం, పరిష్కార నిశ్చితత్వం, మరియు BIS యొక్క Agorá ప్రాజెక్టు సరిహద్దు-దాటు అవిభాజ్యత నమూనా.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>గూఢలిపి శాస్త్రం మరియు స్థితిస్థాపకత</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">గూఢలిపి శాస్త్రం మరియు స్థితిస్థాపకత</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">క్వాంటం-అనంతర వలస, DORA స్థాయి నిర్వహణ స్థితిస్థాపకత, మరియు ఆర్థిక సేవల్లో ఏఐ పాలన చట్రం.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>చెల్లింపులు మరియు డబ్బు</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">చెల్లింపులు మరియు డబ్బు</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">ISO 20022 వలస, టోకు పరిష్కారం, స్టేబుల్‌కాయిన్లు, టోకనీకరించిన డిపాజిట్లు, మరియు వాటి చుట్టూ ఉన్న కార్పొరేట్ ట్రెజరీ విధి.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>ఏఐ మరియు క్లౌడ్</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">ఏఐ మరియు క్లౌడ్</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">అనువర్తిత ఏఐ, ఏజెంటిక్ వ్యవస్థలు, జనరేటివ్ నమూనాలు, గాత్ర మరియు ప్రసంగ ఏఐ, మరియు వాటిని నడిపే క్లౌడ్-నేటివ్ బ్యాంకింగ్ ప్లాట్‌ఫారమ్‌లు.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>ఓపెన్ సోర్స్ మరియు నైపుణ్యం</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">ఓపెన్ సోర్స్ మరియు నైపుణ్యం</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Rust గ్రంథాలయాలు, బ్లాక్‌చెయిన్ మౌలిక అంశాలు, మరియు వాటి వెనుక ఉన్న ఓపెన్ సోర్స్ ఇంజనీరింగ్ క్రమశిక్షణ.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">నాలుగు స్తంభాలు, పద్నాలుగు అంశ సమూహాలు, తేదీ వేసిన ప్రతి వ్యాసం. ఒక దారాన్ని ఎంచుకుని దానిని ఆర్కైవ్ అంతటా అనుసరించండి.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">స్తంభం</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">స్తంభాలు</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">అంశ సమూహాలు</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">సూచీకరించిన వ్యాసాలు</span>"
     ]
   ]
 }

@@ -58,6 +58,8 @@ CITATION_AUTHORITIES = (
 )
 _OUTBOUND_LINK_RE = re.compile(r'<a\b[^>]*\bhref="(https?://[^"]+)"', re.IGNORECASE)
 _AUTHOR_INITIAL = "S."
+
+
 def _parse_iso_date(date_str: str) -> _datetime | None:
     if not date_str:
         return None
@@ -67,9 +69,13 @@ def _parse_iso_date(date_str: str) -> _datetime | None:
         except ValueError:
             continue
     return None
+
+
 def _first_word(title: str) -> str:
     m = re.search(r"\w+", title)
     return m.group(0).lower() if m else "post"
+
+
 def _citation_blocks(title: str, url: str, date_str: str) -> dict[str, str]:
     """Render the 5 academic citation formats from article metadata."""
     dt = _parse_iso_date(date_str)
@@ -90,19 +96,14 @@ def _citation_blocks(title: str, url: str, date_str: str) -> dict[str, str]:
         f"  urldate = {{{year}}}\n"
         f"}}"
     )
-    ris = (
-        f"TY  - GEN\n"
-        f"AU  - {author_lastfirst}\n"
-        f"TI  - {title}\n"
-        f"PY  - {year}\n"
-        f"UR  - {url}\n"
-        f"ER  -"
-    )
+    ris = f"TY  - GEN\nAU  - {author_lastfirst}\nTI  - {title}\nPY  - {year}\nUR  - {url}\nER  -"
     vancouver = (
         f"{author_vancouver}. {title}. sebastienrousseau.com. "
         f"{year} {month_short} {day}. Available from: {url}"
     )
-    chicago = f'{author_lastfirst}. "{title}." sebastienrousseau.com. {month_long} {day}, {year}. {url}.'
+    chicago = (
+        f'{author_lastfirst}. "{title}." sebastienrousseau.com. {month_long} {day}, {year}. {url}.'
+    )
     apa = f"{author_apa} ({year}, {month_long} {day}). {title}. sebastienrousseau.com. {url}"
     return {
         "BibTeX": bibtex,
@@ -111,6 +112,8 @@ def _citation_blocks(title: str, url: str, date_str: str) -> dict[str, str]:
         "Chicago": chicago,
         "APA": apa,
     }
+
+
 def inject_cite_popover(html: str) -> str:
     """Append a zero-JS ``<details class="cite-popover" id="cite-popover">``
     block at the wrap-div close, with one ``<pre>`` per citation format
@@ -169,16 +172,20 @@ def inject_cite_popover(html: str) -> str:
         )
     popover = (
         f'<details class="cite-popover" id="cite-popover">'
-        f'<summary>{_esc(labels.get("Cite.heading", "Cite this article"))}</summary>'
+        f"<summary>{_esc(labels.get('Cite.heading', 'Cite this article'))}</summary>"
         + meta_block
         + "".join(blocks)
         + "</details>"
     )
     return _WRAP_CLOSE_RE.sub(popover + r"\1", html, count=1)
+
+
 _NON_BODY_ASIDE_RE = re.compile(
     r'<aside\s+class="(?:author-card|related-posts|post-lead|article-sources|article-toc)\b[^"]*"[\s\S]*?</aside>',
     re.IGNORECASE,
 )
+
+
 def _extract_citations(html: str) -> list[dict[str, str]]:
     """Return at most 12 distinct authoritative outbound links from the
     article body. Strips author-card / related-posts / post-lead / ToC /
@@ -202,12 +209,37 @@ def _extract_citations(html: str) -> list[dict[str, str]]:
         if len(out) >= 12:
             break
     return out
+
+
+# A ``"citation"`` array a previous run inserted. The elements are
+# ``{"@type":"CreativeWork","url":"…"}`` and carry no bracket of their
+# own, so the non-greedy character class is enough to bound the array.
+_EXISTING_CITATION_RE = re.compile(r',"citation":\[[^\]]*\]')
+
+
 def inject_citations(html: str) -> str:
-    """Append a "citation" array to the BlogPosting JSON-LD listing the
+    """Set the "citation" array on the BlogPosting JSON-LD to the
     authoritative outbound URLs the post references. AI engines extract
-    citation graphs from this property to build provenance chains."""
+    citation graphs from this property to build provenance chains.
+
+    The array is *replaced*, not appended to. This pass runs over pages
+    that may already carry one — postbuild is re-run over a built tree by
+    the builder smoke tests, and by anyone re-running ./build.sh without
+    a clean public/. Inserting unconditionally added a second copy of the
+    key every time: a dated article went 9 -> 10 -> 11 -> 12 arrays across
+    consecutive runs, roughly 150 bytes a run, with duplicate keys in a
+    single JSON object and no fixed point.
+
+    Its sibling :func:`inject_sources_list` already guards this way. This
+    one strips instead of returning early so that a tree which already
+    accumulated duplicates heals on the next run, and so the array tracks
+    the body's links if they changed.
+    """
     if '"@type":"BlogPosting"' not in html:
         return html
+    # Strip first: extraction reads <main>, so removing the head's JSON-LD
+    # array cannot change what comes back.
+    html = _EXISTING_CITATION_RE.sub("", html)
     cites = _extract_citations(html)
     if not cites:
         return html
@@ -219,6 +251,8 @@ def inject_citations(html: str) -> str:
         html,
         count=1,
     )
+
+
 def inject_sources_list(html: str) -> str:
     """Mirror the JSON-LD citation array as a human-visible <aside> so the
     primary-source references are visible to readers, not just AI crawlers.
@@ -249,7 +283,7 @@ def inject_sources_list(html: str) -> str:
         '<aside class="article-sources" aria-labelledby="sources-heading">'
         f'<h2 id="sources-heading" class="article-sources-heading">{heading}</h2>'
         f'<ol class="article-sources-list">{"".join(items)}</ol>'
-        '</aside>'
+        "</aside>"
     )
     # Insert before the prev/next nav if it's already there, else before
     # the closing </div></main>.

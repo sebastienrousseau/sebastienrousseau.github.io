@@ -1,0 +1,261 @@
+{
+  "_comment": "IT copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "Playlist",
+    "jump": "Ascolta l'ultima playlist",
+    "platformsLabel": "L'intera raccolta è anche su Apple Music",
+    "navLabel": "Vai a un genere",
+    "play": "Ascolta su Spotify",
+    "follow": "Segui su Spotify",
+    "apple": "Ascolta su Apple Music",
+    "countOne": "playlist",
+    "countOther": "playlist",
+    "coverAlt": "Copertina della playlist {title}",
+    "openAria": "Apri {title} su Spotify",
+    "frameTitle": "Playlist {title} su Spotify"
+  },
+  "intro": [
+    "Trentanove playlist e 1.763 brani, pensati per le ore che chiedono una colonna sonora: deep work, letture lunghe e riscritture a tarda notte.",
+    "Neo soul e nu jazz quando il lavoro chiede pazienza. Boom bap e jazz rap quando chiede slancio. French touch, deep house e disco house quando chiede quota. Lo-fi per il tratto a testa bassa, e ritmi dell'Africa occidentale che attraversano tutto.",
+    "Ogni playlist si ascolta gratis su Spotify, e l'intera raccolta è su Apple Music."
+  ],
+  "featured": {
+    "kicker": "Ultima playlist",
+    "date": "agosto 2026",
+    "genres": "Indie pop · French house",
+    "desc": "Indie pop inondato di sole che scivola nella French house — Tame Impala e almost monday lasciano il posto a Justice, L'Impératrice e all'afro house di HUGEL."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "Elettronica",
+      "sub": "House, disco e French touch"
+    },
+    "soul-jazz": {
+      "title": "Soul &amp; Jazz",
+      "sub": "Neo soul, nu jazz e tempi lenti"
+    },
+    "hip-hop": {
+      "title": "Hip-Hop",
+      "sub": "Boom bap, jazz rap e groove dell'epoca d'oro"
+    },
+    "morning-mood": {
+      "title": "Mattina &amp; umore",
+      "sub": "Downtempo, lo-fi ed energia del risveglio"
+    },
+    "global": {
+      "title": "Global",
+      "sub": "Ritmi da ogni altrove"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "Disco house · Garage",
+      "desc": "Disco house e garage di fine anni Novanta che riempiono ancora una pista — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden e Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "Indie pop · French house",
+      "desc": "Indie pop inondato di sole che scivola nella French house — Tame Impala e almost monday lasciano il posto a Justice, L'Impératrice e all'afro house di HUGEL."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "French touch · Electro",
+      "desc": "French touch a fari accesi — Daft Punk, Justice, Kavinsky, L'Impératrice e Angèle si scambiano sintetizzatori al neon e bassi motorik."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "Indie dance · Synth pop",
+      "desc": "Synth pop e indie dance nell'ora dorata — Blu DeTiger, Merty Shango, Citrus Sun e Enne portano il luccichio fino a sera."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "Nu-disco · French house",
+      "desc": "Nu-disco e French house a filtro aperto — Fred Falke, Breakbot, Madeon, Lemaitre e Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "Progressive house · Electro",
+      "desc": "Progressive house ed electro costruite per muoversi — Madeon, Paul Woolford, Martin Solveig, Secondcity e The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "Nu-disco · House filtrata",
+      "desc": "Nu-disco e house filtrata costruite per muoversi — Lenno, Oliver, Tollef e Yelle su chitarre tagliate e bassi di sintetizzatore grassi."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "Deep house · Melodic house",
+      "desc": "Cento brani di deep house e house melodica che sanno restare in disparte — Chris Malinchak, Sultan + Shepard, Lenno e Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "Future house · Electro pop",
+      "desc": "Future house luminosa ed electro pop — Lenno, La Felix, The Knocks, Kraak & Smaak e Chris Malinchak lungo cento brani."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "Hip-hop jazzato · Boom bap",
+      "desc": "Boom bap che campiona il jazz per serate lente — Blu & Exile, Large Professor, 3582 e Scienze si scambiano loop caldi e strofe senza fretta."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "Jazz-hop · Boom bap",
+      "desc": "Jazz-hop dell'epoca d'oro dal campo Phoniks — Awon & Phoniks, Anti Lilly, Dephlow e Tiff the Gift su fiati polverosi e contrabbasso."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "R&B alternativo · Neo soul",
+      "desc": "R&B alternativo e neo soul da notte fonda — Brent Faiyaz, Elujay, J.Robb e Lou Phelps su batterie ovattate e bassi senza fretta."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "Disco · Boogie",
+      "desc": "Riempipista degli anni Settanta e Ottanta — CHIC, Luther Vandross, The Jacksons, Change e Oliver Cheatham. Archi, battiti di mani e bassi che fanno il lavoro."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "Acid jazz · Nu jazz",
+      "desc": "Acid jazz e nu jazz con una band dal vivo dietro — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson e Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "Gospel · Soul",
+      "desc": "Soul di radice gospel che solleva una stanza — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris e Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "Broken beat · Nu jazz",
+      "desc": "Broken beat e nu jazz britannico per pomeriggi lenti — Emma-Jean Thackray, Blue Lab Beats, Galliano e The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "Soul britannico · Broken beat",
+      "desc": "Il soul britannico nella sua versione più calda — Incognito, Shaun Escoffery, Cherri V e Tortured Soul, con Stevie Wonder nella stanza."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "Jazz moderno · R&B",
+      "desc": "Jazz moderno e R&B in conversazione — Robert Glasper, August Greene, Common, Karriem Riggins e Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Canzoni d'amore con musicisti veri dietro — 4hero e Marc Mac, Incognito, Imaani, Natalie Duncan e Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "Neo soul · Jazz",
+      "desc": "Cinquantacinque brani di neo soul e jazz per sere tiepide — India.Arie, Robert Glasper, Lucy Pearl, Anthony David e Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "Neo soul · R&B moderno",
+      "desc": "Settantatré brani di neo soul e R&B moderno — Alex Isley, Yebba, Ego Ella May, Robert Glasper e Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "Jazz funk · Neo soul",
+      "desc": "Cento brani con i riflettori puntati sui musicisti — Erykah Badu, Jill Scott, Omar, Esperanza Spalding e Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "Rap · West coast",
+      "desc": "Cento brani rap lungo quattro decenni — 2Pac e Dr. Dre, Snoop Dogg e Tha Dogg Pound, Ghostface Killah, Nicki Minaj e DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "Rap · Soul · French touch",
+      "desc": "Cento brani di scavo tra le casse dei dischi senza regole di genere — Dr. Dre ed Eminem accanto a MC Solaar e 113, Charles Aznavour accanto a DJ Mehdi e Thomas Bangalter."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "Rap hardcore · Boom bap",
+      "desc": "Rap hardcore anni Novanta a volume alto — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre e Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "Boom bap · Jazz rap",
+      "desc": "Ottantasei brani di boom bap e jazz rap anni Novanta — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde e il Jazzmatazz di Guru."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "Underground · Boom bap",
+      "desc": "Boom bap underground e strumentali — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D e Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "Hip-hop indie · Pop rap",
+      "desc": "Hip-hop indie e pop rap con slancio — Quinn XCII, Kid Quill, EMAN8, gianni & kyle e YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "Chillwave · Downtempo",
+      "desc": "Downtempo senza peso per un viaggio lungo o un mattino lento — Zero 7, Les Imprimés e Ciao Ciao Marigold su batterie sfocate."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "Trip-hop · Jazz-hop",
+      "desc": "Trip-hop che campiona il jazz, firmato Proleter, Poldoore, Souleance e The Geek x Vrv. Cinematografico, senza fretta, fatto per scrivere."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "Downtempo · Nu jazz",
+      "desc": "Downtempo e nu jazz su cui appoggiare il pensiero — Zero 7, The Cinematic Orchestra, Souleance, Mozez e Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "Trip-hop · Downtempo",
+      "desc": "Trip-hop e downtempo con un cuore soul — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra e Nina Simone rielaborata."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "Lo-fi · Beat per studiare",
+      "desc": "Cinquantadue beat lo-fi hip hop per studiare e lavorare a fondo — Idealism, j'san, Joey Pecoraro, Sugi.wa e aimless. Nessuna voce con cui discutere."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "French house · Nu-disco",
+      "desc": "French house funky e nu-disco in linea retta — Breakbot, Modjo, Fred Falke, Kartell e Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "Nu jazz · Downtempo",
+      "desc": "Nu jazz e downtempo distensivi per staccare — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly e Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Soul e jazz funk per iniziare la giornata — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak e Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "Pop trascinante",
+      "desc": "Sessantaquattro brani pop luminosi e ritmati per muoversi — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear e Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "Jazz rap · R&B alternativo",
+      "desc": "Jazz rap e R&B alternativo con qualcosa da dire — Noname, Anderson .Paak, KAYTRANADA, Q-Tip e A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "Afrobeat · Wassoulou",
+      "desc": "Voci dell'Africa occidentale in primo piano — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh e Kareyce Fotso, dal wassoulou alla kora."
+    }
+  },
+  "faq": {
+    "heading": "Domande? Risposte.",
+    "sub": "Come ascoltare, su cosa, e da dove viene la musica.",
+    "items": [
+      {
+        "q": "Serve un abbonamento Spotify per ascoltare?",
+        "a": "No. Ogni playlist si ascolta nel player incorporato qui sopra con un account Spotify gratuito, con pubblicità fra i brani. Un account Premium toglie la pubblicità e permette l'ascolto offline, ma qui non c'è nulla dietro un paywall."
+      },
+      {
+        "q": "Posso ascoltare su Apple Music?",
+        "a": "Sì — segui il profilo su music.apple.com/profile/bxhero. Le playlist di questa pagina sono le versioni Spotify, perché Apple Music non espone pubblicamente i link alle singole playlist. Seguire il profilo è la strada affidabile su quella piattaforma."
+      },
+      {
+        "q": "Su quali dispositivi funzionano?",
+        "a": "Ovunque funzioni Spotify: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox e qualsiasi browser. I player di questa pagina funzionano su mobile e desktop senza app."
+      },
+      {
+        "q": "Con quale playlist inizio per il deep work?",
+        "a": "Mattina &amp; umore per concentrarsi senza distrazioni: downtempo, nu jazz e lo-fi con poca o nessuna voce a competere con la lettura. Elettronica va bene per il lavoro che chiede slancio più che calma."
+      },
+      {
+        "q": "Ogni quanto vengono aggiornate le playlist?",
+        "a": "Regolarmente, e sul posto. Seguire una playlist su Spotify o il profilo su uno dei due servizi basta: i brani nuovi arrivano senza tornare qui."
+      },
+      {
+        "q": "Posso condividere o incorporare queste playlist?",
+        "a": "Sì. Ogni scheda rimanda alla playlist su Spotify, dove il menu di condivisione fornisce link e codici di incorporamento. Sono playlist pubbliche, libere da condividere."
+      },
+      {
+        "q": "Chi cura queste playlist?",
+        "a": "Sebastien Rousseau — come BXHERO su Spotify e Apple Music. Sono le playlist che girano mentre scrive di pagamenti e ingegneria, non un feed algoritmico."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "Ascolta su ogni dispositivo",
+    "body": "Ogni playlist si ascolta nel browser qui sopra e nell'app Spotify sui dispositivi che già usi. Segui il profilo su uno dei due servizi e le nuove playlist arrivano da sole.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "Browser web"
+    ]
+  }
+}

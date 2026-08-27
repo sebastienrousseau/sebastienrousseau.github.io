@@ -1,0 +1,261 @@
+{
+  "_comment": "TR copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "Çalma listeleri",
+    "jump": "En yeni çalma listesini dinle",
+    "platformsLabel": "Koleksiyonun tamamı Apple Music'te de var",
+    "navLabel": "Bir türe atla",
+    "play": "Spotify'da çal",
+    "follow": "Spotify'da takip et",
+    "apple": "Apple Music'te dinle",
+    "countOne": "çalma listesi",
+    "countOther": "çalma listesi",
+    "coverAlt": "{title} çalma listesinin kapak görseli",
+    "openAria": "{title} listesini Spotify'da aç",
+    "frameTitle": "Spotify'da {title} çalma listesi"
+  },
+  "intro": [
+    "Otuz dokuz çalma listesi ve 1.763 parça; bir fon müziği isteyen saatler için kuruldu: derin çalışma, uzun okumalar ve geç saatteki yeniden yazımlar.",
+    "İş sabır istediğinde neo soul ve nu jazz. İvme istediğinde boom bap ve jazz rap. Yükseliş istediğinde French touch, deep house ve disco house. Başı önde geçen bölüm için lo-fi ve hepsinin içinden geçen Batı Afrika ritimleri.",
+    "Her çalma listesi Spotify'da ücretsiz çalıyor, koleksiyonun tamamı ise Apple Music'te."
+  ],
+  "featured": {
+    "kicker": "En yeni çalma listesi",
+    "date": "Ağustos 2026",
+    "genres": "Indie pop · French house",
+    "desc": "Güneşe boğulmuş indie pop French house'a kayıyor — Tame Impala ve almost monday yerini Justice, L'Impératrice ve HUGEL'in afro house'una bırakıyor."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "Elektronik",
+      "sub": "House, disco ve French touch"
+    },
+    "soul-jazz": {
+      "title": "Soul &amp; Jazz",
+      "sub": "Neo soul, nu jazz ve yavaş tempolar"
+    },
+    "hip-hop": {
+      "title": "Hip-Hop",
+      "sub": "Boom bap, jazz rap ve altın çağ groove'ları"
+    },
+    "morning-mood": {
+      "title": "Sabah &amp; ruh hali",
+      "sub": "Downtempo, lo-fi ve uyanma enerjisi"
+    },
+    "global": {
+      "title": "Global",
+      "sub": "Başka her yerin ritimleri"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "Disco house · Garage",
+      "desc": "Doksanların sonundan, hâlâ pist dolduran disco house ve garage — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden ve Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "Indie pop · French house",
+      "desc": "Güneşe boğulmuş indie pop French house'a kayıyor — Tame Impala ve almost monday yerini Justice, L'Impératrice ve HUGEL'in afro house'una bırakıyor."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "French touch · Electro",
+      "desc": "Uzun farlarıyla French touch — Daft Punk, Justice, Kavinsky, L'Impératrice ve Angèle neon synth'ler ve motorik bas hatları takas ediyor."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "Indie dance · Synth pop",
+      "desc": "Altın saatte synth pop ve indie dance — Blu DeTiger, Merty Shango, Citrus Sun ve Enne o parıltıyı akşama taşıyor."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "Nu-disco · French house",
+      "desc": "Filtresi açık nu-disco ve French house — Fred Falke, Breakbot, Madeon, Lemaitre ve Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "Progressive house · Electro",
+      "desc": "Hareket için kurulmuş progressive house ve electro — Madeon, Paul Woolford, Martin Solveig, Secondcity ve The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "Nu-disco · Filtrelenmiş house",
+      "desc": "Hareket için kurulmuş nu-disco ve filtrelenmiş house — Lenno, Oliver, Tollef ve Yelle; kesik gitarlar ve kalın synth basın üzerinde."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "Deep house · Melodik house",
+      "desc": "Yoldan çekilmeyi bilen yüz deep ve melodik house parçası — Chris Malinchak, Sultan + Shepard, Lenno ve Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "Future house · Electro pop",
+      "desc": "Aydınlık future house ve electro pop — Lenno, La Felix, The Knocks, Kraak & Smaak ve Chris Malinchak yüz parça boyunca."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "Cazlı hip-hop · Boom bap",
+      "desc": "Yavaş akşamlar için caz örnekleyen boom bap — Blu & Exile, Large Professor, 3582 ve Scienze sıcak döngüler ve acelesiz mısralar takas ediyor."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "Jazz-hop · Boom bap",
+      "desc": "Phoniks kampından altın çağ jazz-hop'ı — Awon & Phoniks, Anti Lilly, Dephlow ve Tiff the Gift; tozlu nefesliler ve kontrbasın üzerinde."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "Alternatif R&B · Neo soul",
+      "desc": "Alternatif R&B ve gece geç saatin neo soul'u — Brent Faiyaz, Elujay, J.Robb ve Lou Phelps; puslu davullar ve acelesiz bas hatlarının üzerinde."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "Disco · Boogie",
+      "desc": "Yetmişlerin ve seksenlerin pist dolduranları — CHIC, Luther Vandross, The Jacksons, Change ve Oliver Cheatham. İşi yapan yaylılar, alkışlar ve bas hatları."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "Acid jazz · Nu jazz",
+      "desc": "Arkasında canlı bir grup olan acid jazz ve nu jazz — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson ve Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "Gospel · Soul",
+      "desc": "Bir odayı kaldıran gospel köklü soul — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris ve Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "Broken beat · Nu jazz",
+      "desc": "Yavaş öğleden sonralar için broken beat ve İngiliz nu jazz'ı — Emma-Jean Thackray, Blue Lab Beats, Galliano ve The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "İngiliz soul'u · Broken beat",
+      "desc": "İngiliz soul'unun en sıcak hali — Incognito, Shaun Escoffery, Cherri V ve Tortured Soul; odada Stevie Wonder'la."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "Modern caz · R&B",
+      "desc": "Sohbet halinde modern caz ve R&B — Robert Glasper, August Greene, Common, Karriem Riggins ve Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Arkasında gerçek müzisyenler olan aşk şarkıları — 4hero ve Marc Mac, Incognito, Imaani, Natalie Duncan ve Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "Neo soul · Caz",
+      "desc": "Sıcak akşamlar için elli beş neo soul ve caz parçası — India.Arie, Robert Glasper, Lucy Pearl, Anthony David ve Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "Neo soul · Modern R&B",
+      "desc": "Yetmiş üç neo soul ve modern R&B parçası — Alex Isley, Yebba, Ego Ella May, Robert Glasper ve Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "Jazz funk · Neo soul",
+      "desc": "Işığı müzisyenlerin üzerine tutan yüz parça — Erykah Badu, Jill Scott, Omar, Esperanza Spalding ve Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "Rap · Batı yakası",
+      "desc": "Dört on yıla yayılan yüz rap parçası — 2Pac ve Dr. Dre, Snoop Dogg ve Tha Dogg Pound, Ghostface Killah, Nicki Minaj ve DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "Rap · Soul · French touch",
+      "desc": "Tür kuralı olmadan plak sandığından kazılmış yüz parça — MC Solaar ve 113'ün yanında Dr. Dre ve Eminem, DJ Mehdi ve Thomas Bangalter'in yanında Charles Aznavour."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "Hardcore rap · Boom bap",
+      "desc": "Sesi açık doksanlar hardcore rap'i — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre ve Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "Boom bap · Jazz rap",
+      "desc": "Doksanların seksen altı boom bap ve jazz rap parçası — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde ve Guru'nun Jazzmatazz'ı."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "Underground · Boom bap",
+      "desc": "Underground boom bap ve enstrümantaller — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D ve Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "Indie hip-hop · Pop rap",
+      "desc": "İvmesi olan indie hip-hop ve pop rap — Quinn XCII, Kid Quill, EMAN8, gianni & kyle ve YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "Chillwave · Downtempo",
+      "desc": "Uzun bir yolculuk ya da yavaş bir sabah için ağırlıksız downtempo — Zero 7, Les Imprimés ve Ciao Ciao Marigold; yumuşak çizilmiş davulların üzerinde."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "Trip-hop · Jazz-hop",
+      "desc": "Proleter, Poldoore, Souleance ve The Geek x Vrv'den caz örnekleyen trip-hop. Sinematik, acelesiz, yazmak için kurulmuş."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "Downtempo · Nu jazz",
+      "desc": "Düşüncenin yaslanabileceği downtempo ve nu jazz — Zero 7, The Cinematic Orchestra, Souleance, Mozez ve Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "Trip-hop · Downtempo",
+      "desc": "Soul çekirdekli trip-hop ve downtempo — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra ve yeniden işlenmiş Nina Simone."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "Lo-fi · Ders çalışma beat'leri",
+      "desc": "Ders çalışmak ve derin çalışmak için elli iki lo-fi hip hop beat'i — Idealism, j'san, Joey Pecoraro, Sugi.wa ve aimless. Tartışacak vokal yok."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "French house · Nu-disco",
+      "desc": "Düz bir rotada funky French house ve nu-disco — Breakbot, Modjo, Fred Falke, Kartell ve Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "Nu jazz · Downtempo",
+      "desc": "Gevşemek için yatıştırıcı nu jazz ve downtempo — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly ve Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Güne başlamak için soul ve jazz funk — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak ve Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "Enerji veren pop",
+      "desc": "Hareket etmek için altmış dört aydınlık, hızlı tempolu pop parçası — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear ve Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "Jazz rap · Alternatif R&B",
+      "desc": "Söyleyecek sözü olan jazz rap ve alternatif R&B — Noname, Anderson .Paak, KAYTRANADA, Q-Tip ve A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "Afrobeat · Wassoulou",
+      "desc": "Ön planda Batı Afrika sesleri — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh ve Kareyce Fotso; wassoulou'dan kora'ya."
+    }
+  },
+  "faq": {
+    "heading": "Soru mu var? Cevaplar burada.",
+    "sub": "Nasıl, neyle dinlenir ve müzik nereden geliyor.",
+    "items": [
+      {
+        "q": "Dinlemek için Spotify aboneliği gerekiyor mu?",
+        "a": "Hayır. Her çalma listesi yukarıdaki gömülü oynatıcıda ücretsiz bir Spotify hesabıyla, parçalar arasında reklamlarla çalıyor. Premium hesap reklamları kaldırır ve çevrimdışı dinlemeye izin verir, ama buradaki hiçbir şey ödeme duvarının arkasında değil."
+      },
+      {
+        "q": "Bunun yerine Apple Music'te dinleyebilir miyim?",
+        "a": "Evet — music.apple.com/profile/bxhero adresindeki profili takip edin. Bu sayfadaki listeler Spotify sürümleri, çünkü Apple Music tek tek çalma listesi bağlantılarını herkese açık sunmuyor. O platformda güvenilir yol profili takip etmek."
+      },
+      {
+        "q": "Hangi cihazlarda çalışıyor?",
+        "a": "Spotify'ın çalıştığı her yerde: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox ve herhangi bir tarayıcı. Bu sayfadaki oynatıcılar mobilde ve masaüstünde uygulamasız çalışıyor."
+      },
+      {
+        "q": "Derin çalışma için hangi listeyle başlamalıyım?",
+        "a": "Dikkat dağılmadan odaklanmak için Sabah &amp; ruh hali — okumayla yarışacak vokali az olan ya da hiç olmayan downtempo, nu jazz ve lo-fi. Elektronik, sakinlikten çok ivme isteyen işlere uyuyor."
+      },
+      {
+        "q": "Listeler ne sıklıkla güncelleniyor?",
+        "a": "Düzenli olarak ve yerinde. Spotify'da bir listeyi ya da iki servisten birinde profili takip etmek yeter: yeni parçalar buraya dönmenize gerek kalmadan geliyor."
+      },
+      {
+        "q": "Bu listeleri paylaşabilir veya gömebilir miyim?",
+        "a": "Evet. Her kart Spotify'daki listeye bağlanıyor; paylaşım menüsü orada bağlantıları ve gömme kodlarını veriyor. Bunlar herkese açık listeler, serbestçe paylaşılabilir."
+      },
+      {
+        "q": "Bu listeleri kim hazırlıyor?",
+        "a": "Sebastien Rousseau — Spotify ve Apple Music'te BXHERO adıyla. Bunlar ödemeler ve mühendislik üzerine yazarken çalan listeler, algoritmik bir akış değil."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "Her cihazda dinleyin",
+    "body": "Her çalma listesi yukarıdaki tarayıcıda ve zaten kullandığınız cihazlardaki Spotify uygulamasında çalıyor. İki servisten birinde profili takip edin, yeni listeler kendiliğinden gelsin.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "Web tarayıcısı"
+    ]
+  }
+}

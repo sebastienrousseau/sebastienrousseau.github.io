@@ -42,7 +42,7 @@ _ESCAPED_META_RE = re.compile(r"&lt;(?:meta|link)\b.*?(?:&gt;|>)", re.DOTALL)
 
 # Marker that gates the body pass: only the ssg-escaped enrich/lead
 # fragments carry it. Articles never do.
-_BODY_MARKER = '&lt;div lang='
+_BODY_MARKER = "&lt;div lang="
 
 _PRE_CODE_RE = re.compile(r"<(pre|code)\b[\s\S]*?</\1>", re.IGNORECASE)
 

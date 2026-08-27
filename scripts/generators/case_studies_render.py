@@ -40,7 +40,10 @@ from case_studies_schema import (
 
 
 def _render_hero_stage(
-    study: dict, lbl: dict[str, str], lang: str, url_segment: str,
+    study: dict,
+    lbl: dict[str, str],
+    lang: str,
+    url_segment: str,
 ) -> str:
     """FT customer-stories hero — full-bleed photo with overlay text + CTA."""
     title = study.get("title", study.get("slug", ""))
@@ -60,7 +63,7 @@ def _render_hero_stage(
             f'<img alt="" src="{_esc(banner)}" '
             'loading="eager" fetchpriority="high" decoding="async" '
             'width="1600" height="900">'
-            '</figure>'
+            "</figure>"
         )
 
     return (
@@ -70,20 +73,22 @@ def _render_hero_stage(
         + '<div class="cs-hero-text">'
         + breadcrumb
         + f'<p class="cs-kicker">{_esc(kicker)}</p>'
-        + f'<h1>{_esc(title)}</h1>'
-        + (f'<p class="cs-deck">{_esc(deck)}</p>' if deck else '')
+        + f"<h1>{_esc(title)}</h1>"
+        + (f'<p class="cs-deck">{_esc(deck)}</p>' if deck else "")
         + f'<a class="cs-hero-cta" href="#story">{_esc(lbl.get("Read case study", "Read more"))}</a>'
-        + '</div>'
-        + '</div>'
-        + '</section>'
+        + "</div>"
+        + "</div>"
+        + "</section>"
     )
+
+
 def _render_outcomes_stage(outcomes: list[dict], lbl: dict[str, str]) -> str:
     if not outcomes:
         return ""
     items = "".join(
         '<div class="cs-outcome">'
-        f'<dt>{_esc(o.get("value",""))}</dt>'
-        f'<dd>{_esc(o.get("label",""))}</dd>'
+        f"<dt>{_esc(o.get('value', ''))}</dt>"
+        f"<dd>{_esc(o.get('label', ''))}</dd>"
         "</div>"
         for o in outcomes
     )
@@ -91,12 +96,12 @@ def _render_outcomes_stage(outcomes: list[dict], lbl: dict[str, str]) -> str:
         '<section class="cs-stage cs-outcomes" data-stage '
         f'aria-label="{_esc(lbl["By the numbers"])}">'
         '<div class="cs-stage-row">'
-        + _stage_no(0, lbl["By the numbers"]).replace(
-            '<span aria-hidden="true">00 — </span>', ''
-        )
-        + f'<dl>{items}</dl>'
-        '</div></section>'
+        + _stage_no(0, lbl["By the numbers"]).replace('<span aria-hidden="true">00 — </span>', "")
+        + f"<dl>{items}</dl>"
+        "</div></section>"
     )
+
+
 def _render_quote_stage(quote: str) -> str:
     """Full-bleed italic serif pull quote."""
     q = (quote or "").strip().strip('"').strip("“").strip("”")
@@ -105,10 +110,12 @@ def _render_quote_stage(quote: str) -> str:
     return (
         '<section class="cs-stage cs-quote" data-stage>'
         '<div class="cs-stage-row">'
-        f'<blockquote><p>{_esc(q)}</p>'
-        '<cite>— from the case-study brief</cite></blockquote>'
-        '</div></section>'
+        f"<blockquote><p>{_esc(q)}</p>"
+        "<cite>— from the case-study brief</cite></blockquote>"
+        "</div></section>"
     )
+
+
 def _render_story_stage(n: int, label: str, body_text: str, anchor: str = "") -> str:
     if not body_text:
         return ""
@@ -117,53 +124,61 @@ def _render_story_stage(n: int, label: str, body_text: str, anchor: str = "") ->
         f'<section class="cs-stage cs-story" data-stage{anchor_attr}>'
         '<div class="cs-stage-row">'
         f'<div class="cs-stage-head">{_stage_no(n, label)}'
-        f'<h2>{_esc(label)}</h2></div>'
+        f"<h2>{_esc(label)}</h2></div>"
         '<div class="cs-stage-body">'
-        f'<p>{_esc(body_text)}</p>'
-        '</div></div></section>'
+        f"<p>{_esc(body_text)}</p>"
+        "</div></div></section>"
     )
+
+
 def _render_rigour_stage(rigour: list[dict], lbl: dict[str, str], n: int) -> str:
     if not rigour:
         return ""
     cards = "".join(
         '<li class="cs-rigour-card">'
-        f'<p class="cs-rigour-card-signal">{_esc(r.get("metric",""))}</p>'
-        f'<p class="cs-rigour-card-value">{_esc(r.get("value",""))}</p>'
-        '</li>'
+        f'<p class="cs-rigour-card-signal">{_esc(r.get("metric", ""))}</p>'
+        f'<p class="cs-rigour-card-value">{_esc(r.get("value", ""))}</p>'
+        "</li>"
         for r in rigour
     )
     return (
         '<section class="cs-stage cs-rigour" data-stage>'
         '<div class="cs-stage-row">'
         + _stage_no(n, lbl["Engineering rigour"])
-        + f'<h2>{_esc(lbl["Engineering rigour"])}</h2>'
+        + f"<h2>{_esc(lbl['Engineering rigour'])}</h2>"
         + f'<ul class="cs-rigour-grid" role="list">{cards}</ul>'
-        '</div></section>'
+        "</div></section>"
     )
+
+
 def _render_validation_stage(items: list[str], lbl: dict[str, str], n: int) -> str:
     if not items:
         return ""
-    lis = "".join(f'<li>{_esc(i)}</li>' for i in items)
+    lis = "".join(f"<li>{_esc(i)}</li>" for i in items)
     return (
         '<section class="cs-stage cs-validation" data-stage>'
         '<div class="cs-stage-row">'
         + _stage_no(n, lbl["Independently verified"])
-        + f'<h2>{_esc(lbl["Independently verified"])}</h2>'
-        + f'<ul>{lis}</ul>'
-        '</div></section>'
+        + f"<h2>{_esc(lbl['Independently verified'])}</h2>"
+        + f"<ul>{lis}</ul>"
+        "</div></section>"
     )
+
+
 def _render_standards_stage(items: list[str], lbl: dict[str, str], n: int) -> str:
     if not items:
         return ""
-    pills = "".join(f'<li>{_esc(i)}</li>' for i in items)
+    pills = "".join(f"<li>{_esc(i)}</li>" for i in items)
     return (
         '<section class="cs-stage cs-standards" data-stage>'
         '<div class="cs-stage-row">'
         + _stage_no(n, lbl["Aligned standards"])
-        + f'<h2>{_esc(lbl["Aligned standards"])}</h2>'
+        + f"<h2>{_esc(lbl['Aligned standards'])}</h2>"
         + f'<ul class="cs-standards-pills" role="list">{pills}</ul>'
-        '</div></section>'
+        "</div></section>"
     )
+
+
 def _render_links_stage(links: dict[str, str], lbl: dict[str, str], n: int) -> str:
     if not links:
         return ""
@@ -174,21 +189,21 @@ def _render_links_stage(links: dict[str, str], lbl: dict[str, str], n: int) -> s
             seen.add(key)
             rows.append(
                 f'<li><a href="{_esc(links[key])}" rel="noopener noreferrer">'
-                f'{_esc(_LINK_LABELS.get(key, key))}</a></li>'
+                f"{_esc(_LINK_LABELS.get(key, key))}</a></li>"
             )
     for key, val in links.items():
         if key not in seen:
-            rows.append(
-                f'<li><a href="{_esc(val)}" rel="noopener noreferrer">{_esc(key)}</a></li>'
-            )
+            rows.append(f'<li><a href="{_esc(val)}" rel="noopener noreferrer">{_esc(key)}</a></li>')
     return (
         '<section class="cs-stage cs-stage--wash cs-links" data-stage>'
         '<div class="cs-stage-row">'
         + _stage_no(n, lbl["Verifiable links"])
-        + f'<h2>{_esc(lbl["Verifiable links"])}</h2>'
+        + f"<h2>{_esc(lbl['Verifiable links'])}</h2>"
         + f'<ul class="cs-links-grid" role="list">{"".join(rows)}</ul>'
-        '</div></section>'
+        "</div></section>"
     )
+
+
 def _render_related_articles_stage(
     slugs: list[str], lbl: dict[str, str], lang: str, article_slug_map: dict[str, str]
 ) -> str:
@@ -203,26 +218,33 @@ def _render_related_articles_stage(
         '<section class="cs-stage cs-related" data-stage>'
         '<div class="cs-stage-row cs-stage-row--mid">'
         f'<p class="cs-stage-no">{_esc(lbl["Related articles"]).upper()}</p>'
-        f'<h2>{_esc(lbl["Related articles"])}</h2>'
+        f"<h2>{_esc(lbl['Related articles'])}</h2>"
         f'<ul class="cs-links-grid" role="list">{"".join(items)}</ul>'
-        '</div></section>'
+        "</div></section>"
     )
+
+
 def _render_cta_stage(lbl: dict[str, str], lang: str) -> str:
     contact = "/contact/" if lang == "en" else f"/{lang}/{_contact_slug(lang)}/"
     return (
         '<section class="cs-stage cs-cta" data-stage>'
         '<div class="cs-stage-row">'
         f'<p class="cs-stage-no">{_esc(lbl.get("Next", "Next")).upper()}</p>'
-        f'<h2>{_esc(lbl.get("CTA headline", "Want this kind of evidence in your bank?"))}</h2>'
-        f'<p>{_esc(lbl.get("CTA body", "Architecture reviews, post-quantum migration plans, treasury-API programmes — all signed, all verifiable."))}</p>'
+        f"<h2>{_esc(lbl.get('CTA headline', 'Want this kind of evidence in your bank?'))}</h2>"
+        f"<p>{_esc(lbl.get('CTA body', 'Architecture reviews, post-quantum migration plans, treasury-API programmes — all signed, all verifiable.'))}</p>"
         f'<a class="cs-cta-btn" href="{contact}">'
-        f'{_esc(lbl.get("Get in touch", "Get in touch"))}'
-        '</a>'
-        '</div></section>'
+        f"{_esc(lbl.get('Get in touch', 'Get in touch'))}"
+        "</a>"
+        "</div></section>"
     )
+
+
 def _render_more_studies_stage(
-    current: dict, all_studies: list[dict], lbl: dict[str, str],
-    lang: str, url_segment: str,
+    current: dict,
+    all_studies: list[dict],
+    lbl: dict[str, str],
+    lang: str,
+    url_segment: str,
 ) -> str:
     others = [s for s in all_studies if s["slug"] != current["slug"]][:4]
     if not others:
@@ -240,7 +262,7 @@ def _render_more_studies_stage(
                 '<span class="cs-more-card-media" aria-hidden="true">'
                 f'<img class="cs-more-card-bg" alt="" src="{_esc(banner)}" '
                 'loading="lazy" decoding="async" width="600" height="375">'
-                '</span>'
+                "</span>"
             )
         cards.append(
             '<article class="cs-more-card">'
@@ -248,16 +270,18 @@ def _render_more_studies_stage(
             + '<div class="cs-more-card-body">'
             + f'<p class="cs-more-card-kicker">{_esc(kicker)}</p>'
             + f'<h3 class="cs-more-card-title"><a href="{href}">{_esc(title)}</a></h3>'
-            + '</div></article>'
+            + "</div></article>"
         )
     return (
         '<section class="cs-stage cs-more" data-stage>'
         '<div class="cs-stage-row">'
         f'<p class="cs-stage-no">{_esc(lbl["More case studies"]).upper()}</p>'
-        f'<h2>{_esc(lbl["More case studies"])}</h2>'
+        f"<h2>{_esc(lbl['More case studies'])}</h2>"
         f'<div class="cs-more-grid" role="list">{"".join(cards)}</div>'
-        '</div></section>'
+        "</div></section>"
     )
+
+
 _MAIN_SECTIONS: tuple[tuple[str, str, int, str], ...] = (
     ("problem", "Problem", 1, "story"),
     ("what_i_built", "What I built", 2, ""),
@@ -266,8 +290,13 @@ _MAIN_SECTIONS: tuple[tuple[str, str, int, str], ...] = (
     ("validation", "Independently verified", 4, ""),
     ("related_articles", "Related articles", 0, ""),
 )
+
+
 def _render_main_body_parts(
-    study: dict, lbl: dict[str, str], lang: str, article_slug_map: dict[str, str],
+    study: dict,
+    lbl: dict[str, str],
+    lang: str,
+    article_slug_map: dict[str, str],
 ) -> list[str]:
     """Build the ordered narrative sections for the right column."""
     parts: list[str] = []
@@ -279,10 +308,15 @@ def _render_main_body_parts(
         if not body:
             continue
         prefix = _stage_n(stage) if stage else ""
-        parts.append(_prose_section(f'{prefix}{_esc(lbl[label_key])}', body, anchor=anchor))
+        parts.append(_prose_section(f"{prefix}{_esc(lbl[label_key])}", body, anchor=anchor))
     return parts
+
+
 def _render_body_two_col(
-    study: dict, lbl: dict[str, str], lang: str, url_segment: str,
+    study: dict,
+    lbl: dict[str, str],
+    lang: str,
+    url_segment: str,
     article_slug_map: dict[str, str],
 ) -> str:
     """FT customer-story two-column body: sticky left rail + right prose column."""
@@ -291,17 +325,21 @@ def _render_body_two_col(
     main_body = f'<div class="cs-body-main">{"".join(main_parts)}</div>'
     return (
         '<section class="cs-stage cs-body-stage" data-stage>'
-        '<div class="cs-stage-row cs-body-grid">'
-        + side + main_body
-        + '</div></section>'
+        '<div class="cs-stage-row cs-body-grid">' + side + main_body + "</div></section>"
     )
+
+
 def _render_body(
-    study: dict, lbl: dict[str, str], lang: str, url_segment: str,
-    article_slug_map: dict[str, str], all_studies: list[dict],
+    study: dict,
+    lbl: dict[str, str],
+    lang: str,
+    url_segment: str,
+    article_slug_map: dict[str, str],
+    all_studies: list[dict],
 ) -> str:
     """Per-study page — FT customer-stories pattern:
-       hero (full-bleed photo) → 2-col body (sticky meta rail + prose) →
-       CTA closer → more case studies → JSON-LD."""
+    hero (full-bleed photo) → 2-col body (sticky meta rail + prose) →
+    CTA closer → more case studies → JSON-LD."""
 
     article_jsonld = _json_ld_block(_build_article_jsonld(study, lbl, lang, url_segment))
     breadcrumb_jsonld = _json_ld_block(_build_breadcrumb_jsonld(lbl, lang, url_segment, study))
@@ -314,8 +352,10 @@ def _render_body(
         + _render_more_studies_stage(study, all_studies, lbl, lang, url_segment)
         + breadcrumb_jsonld
         + article_jsonld
-        + '</div>'
+        + "</div>"
     )
+
+
 def _hub_h1(lbl: dict[str, str], lang: str) -> str:
     """Hub-page H1. EN gets the keyword-rich SEO headline from the 5-item
     nav re-architecture spec; locales keep their translated label (the EN
@@ -327,7 +367,10 @@ def _hub_h1(lbl: dict[str, str], lang: str) -> str:
 
 
 def _render_index_body(
-    studies: list[dict], lbl: dict[str, str], lang: str, url_segment: str,
+    studies: list[dict],
+    lbl: dict[str, str],
+    lang: str,
+    url_segment: str,
 ) -> str:
     """Hub page — full-bleed hero (uses first study's banner as bg),
     metrics-bar stage, filter-bar stage, banner-card grid stage, CTA."""
@@ -340,9 +383,9 @@ def _render_index_body(
             '<div class="cs-stage-row">'
             + breadcrumb
             + f'<p class="cs-kicker">{_esc(lbl["eyebrow_plural"])}</p>'
-            + f'<h1>{_esc(_hub_h1(lbl, lang))}</h1>'
+            + f"<h1>{_esc(_hub_h1(lbl, lang))}</h1>"
             + f'<p class="cs-deck">{_esc(lbl["deck"])}</p>'
-            + '</div></section></div>'
+            + "</div></section></div>"
         )
 
     # Pick a hero banner from the first study so the hub feels editorial.
@@ -352,10 +395,7 @@ def _render_index_body(
     summary_swaps, radio_options = _filter_dropdown_html(categories, lbl)
 
     metric_items = "".join(
-        '<div class="cs-hub-metric">'
-        f'<dt>{_esc(label)}</dt>'
-        f'<dd>{_esc(value)}</dd>'
-        '</div>'
+        f'<div class="cs-hub-metric"><dt>{_esc(label)}</dt><dd>{_esc(value)}</dd></div>'
         for value, label in (
             (str(len(studies)), lbl["Case studies"]),
             (str(len(categories)), lbl["Categories"]),
@@ -371,7 +411,7 @@ def _render_index_body(
             f'<img alt="" src="{_esc(hero_banner)}" '
             'loading="eager" fetchpriority="high" decoding="async" '
             'width="1600" height="900">'
-            '</figure>'
+            "</figure>"
         )
     hero_stage = (
         '<section class="cs-stage cs-hero cs-hub-hero" data-stage>'
@@ -380,11 +420,11 @@ def _render_index_body(
         '<div class="cs-hero-text">'
         + breadcrumb
         + f'<p class="cs-kicker">{_esc(lbl["eyebrow_plural"])}</p>'
-        + f'<h1>{_esc(_hub_h1(lbl, lang))}</h1>'
+        + f"<h1>{_esc(_hub_h1(lbl, lang))}</h1>"
         + f'<p class="cs-deck">{_esc(lbl["deck"])}</p>'
         + f'<a class="cs-hero-cta" href="#hub-grid">{_esc(lbl.get("Read case study", "Browse"))}</a>'
-        + '</div></div>'
-        + '</section>'
+        + "</div></div>"
+        + "</section>"
     )
 
     metrics_stage = (
@@ -392,7 +432,7 @@ def _render_index_body(
         f'aria-label="{_esc(lbl["By the numbers"])}">'
         '<div class="cs-stage-row">'
         f'<dl class="cs-hub-metrics">{metric_items}</dl>'
-        '</div></section>'
+        "</div></section>"
     )
 
     filter_bar = (
@@ -405,19 +445,21 @@ def _render_index_body(
         '<details class="cs-dropdown">'
         '<summary class="cs-dropdown-summary" '
         f'aria-label="{_esc(lbl["Filter by category"])}">'
-        '<span class="cs-dd-prefix">' + _esc(lbl["Filter by category"]) + ':</span> '
+        '<span class="cs-dd-prefix">'
+        + _esc(lbl["Filter by category"])
+        + ":</span> "
         + summary_swaps
-        + '</summary>'
+        + "</summary>"
         '<fieldset class="cs-dropdown-menu" role="radiogroup" '
         f'aria-label="{_esc(lbl["Filter by category"])}">'
         '<legend class="visually-hidden">'
-        + _esc(lbl["Filter by category"]) +
-        '</legend>'
+        + _esc(lbl["Filter by category"])
+        + "</legend>"
         + radio_options
-        + '</fieldset>'
-        '</details>'
+        + "</fieldset>"
+        "</details>"
         + f'<span class="cs-filter-meta">{_esc(lbl["count"].format(n=len(studies)))}</span>'
-        '</div>'
+        "</div>"
     )
 
     cards: list[str] = []
@@ -438,7 +480,7 @@ def _render_index_body(
                 f'<a class="cs-card-media" href="{href}" tabindex="-1" aria-hidden="true">'
                 f'<img alt="{_esc(banner_alt)}" src="{_esc(banner)}" '
                 'loading="lazy" decoding="async" width="800" height="500">'
-                '</a>'
+                "</a>"
             )
 
         cards.append(
@@ -448,18 +490,19 @@ def _render_index_body(
             + f'<p class="cs-card-kicker">{_esc(kicker)}</p>'
             + f'<h2 class="cs-card-title"><a href="{href}">{_esc(title)}</a></h2>'
             + f'<p class="cs-card-excerpt">{_esc(excerpt)}</p>'
-            + '</div></article>'
+            + "</div></article>"
         )
 
     # Close the filter section, then open a sibling grid stage so the
     # CSS :has() ~ filter selector can reach it without inline JS.
     grid = (
-        '</div></section>'
+        "</div></section>"
         '<section class="cs-stage cs-grid-stage" data-stage>'
         '<div class="cs-stage-row">'
         f'<section class="cs-grid" aria-label="{_esc(lbl["Case studies"])}">'
-        + "".join(cards) + '</section>'
-        '</div></section>'
+        + "".join(cards)
+        + "</section>"
+        "</div></section>"
     )
 
     cta_stage = _render_cta_stage(lbl, lang)
@@ -471,9 +514,10 @@ def _render_index_body(
         '<div class="case-study-wrap">'
         + hero_stage
         + metrics_stage
-        + filter_bar + grid
+        + filter_bar
+        + grid
         + cta_stage
         + breadcrumb_jsonld
         + collection_jsonld
-        + '</div>'
+        + "</div>"
     )

@@ -1,53 +1,52 @@
 ---
-title: "قانون الذكاء الاصطناعي في الاتحاد الأوروبي: رائد التنظيم الأخلاقي للذكاء الاصطناعي عالمياً"
+title: "Ang batas sa AI ng Unyong Europeo: paghubog sa pandaigdigang regulasyon ng AI"
 tags: "EU, AI, Regulation, Ethics, Innovation, Transparency, Governance, Standards, Consumer Rights, Technology, ISO 20022, post-quantum cryptography"
-subtitle: "التنقل في مستقبل الذكاء الاصطناعي بالإطار القانوني الرائد للاتحاد الأوروبي"
-description: "يُرسي AI Act في الاتحاد الأوروبي أول إطار شامل للتنظيم الأخلاقي والمُتدرِّج بالمخاطر للذكاء الاصطناعي عالمياً. ما يتغير للمصارف والموردين والأنظمة عالية المخاطر."
+subtitle: "Isang paraang nakabatay sa panganib, ipinagbabawal na gawi, at multang umaabot sa 7% ng pandaigdigang kita — ang unang masaklaw na batas sa AI."
+description: "Ang AI Act ng Unyong Europeo: ang paraang nakabatay sa panganib, ang ipinagbabawal na gawi, ang kahingian sa mga aplikasyong mataas ang panganib, ang karapatan ng mamimili, at ang multang umaabot sa 35 milyong euro o 7% ng pandaigdigang kita."
 date: "Feb 13, 2024"
 language: "fil-PH"
 locale: "fil_PH"
 banner: "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp"
-banner_alt: "شخص يجلس على مقعد أسود يقرأ صحيفة"
-keywords: "AI Act الاتحاد الأوروبي, تنظيم الذكاء الاصطناعي, إطار الذكاء الاصطناعي الأخلاقي, إدارة مخاطر الذكاء الاصطناعي, ابتكار الذكاء الاصطناعي, شفافية الذكاء الاصطناعي, حقوق المستهلكين, حوكمة الذكاء الاصطناعي, معايير الذكاء الاصطناعي, أخلاقيات الذكاء الاصطناعي"
+banner_alt: "Malikhaing paglalarawan hinggil sa regulasyon ng artipisyal na katalinuhan"
+keywords: "AI Act, Unyong Europeo, regulasyon ng AI, nakabatay sa panganib, GDPR, etikal na AI, generative na AI, kalinawan, karapatan ng mamimili, pamamahala ng AI"
 ---
+## Ang batas sa AI ng Unyong Europeo: paghubog sa kinabukasan ng pandaigdigang regulasyon ng AI
 
-## قانون الذكاء الاصطناعي في الاتحاد الأوروبي: تشكيل مستقبل التنظيم العالمي للذكاء الاصطناعي
+Ang [**Artificial Intelligence Act (AI Act) ng Unyong Europeo ⧉**][00] ay masaklaw na balangkas na pangregulasyon na idinisenyo upang matiyak na etikal, malinaw, at ligtas ang pagbuo at paggamit ng AI sa buong Unyong Europeo. At naghahandog ito ng paraang nakabatay sa panganib sa pagreregula ng AI, sapagkat inuuri nito ang mga sistemang AI batay sa posibleng epekto ng mga ito sa lipunan, at nagpapataw ito ng mahigpit na kahingian sa mga aplikasyong mataas ang panganib. Layunin ng batas na ito na ipagsanggalang ang saligang karapatan at patatagin ang inobasyon, kaya naglalatag ito ng pamarisan para sa pamamahala ng AI sa buong mundo.
 
-[**Artificial Intelligence Act (AI Act) الاتحاد الأوروبي ⧉**][00] إطار تنظيمي شامل صُمِّم لضمان تطوير واستخدام الذكاء الاصطناعي بشكل أخلاقي وشفاف وآمن عبر الاتحاد الأوروبي. ويُقدِّم نهجاً قائماً على المخاطر لتنظيم الذكاء الاصطناعي، إذ يُصنِّف أنظمة الذكاء الاصطناعي بناءً على أثرها المحتمل على المجتمع، ويفرض متطلبات صارمة على التطبيقات عالية المخاطر. يهدف هذا التشريع إلى حماية الحقوق الأساسية وتعزيز الابتكار، مُرسياً سابقة لحوكمة الذكاء الاصطناعي عالمياً.
+Kumakatawan ang Artificial Intelligence Act ng Unyong Europeo sa saligang hakbang sa pandaigdigang talakayan hinggil sa pagreregula ng AI. At habang lalong tumatagos ang mga teknolohiyang digital sa bawat bahagi ng ating buhay, hindi pa naging kasing-agaran kailanman ang pangangailangan ng balangkas na legal na tumitiyak sa etikal na paglulunsad ng mga teknolohiyang AI. Hindi lamang tinutugunan ng AI Act ng Unyong Europeo ang pangangailangang ito, kundi inilalagay din nito ang Unyon bilang lider sa pandaigdigang pagsisikap na hubugin ang pagbuo ng AI sa loob ng etikal na balangkas na nakasentro sa tao.
 
-يُمثِّل Artificial Intelligence Act الاتحاد الأوروبي خطوة جوهرية في النقاش العالمي حول تنظيم الذكاء الاصطناعي. ومع تغلغل التقنيات الرقمية بشكل متزايد في كل جانب من جوانب حياتنا، لم تكن الحاجة إلى إطار قانوني يضمن النشر الأخلاقي لتقنيات الذكاء الاصطناعي أكثر إلحاحاً من أي وقت مضى. لا يُلبي AI Act في الاتحاد الأوروبي هذه الحاجة فحسب، بل يضع الاتحاد قائداً في الجهد العالمي لتشكيل تطوير الذكاء الاصطناعي ضمن إطار أخلاقي يتمحور حول الإنسان.
+## Ang mga pangunahing bahagi ng AI Act
 
-## الجوانب الرئيسية في AI Act
+### Ang ipinagbabawal na gawi at ang mga aplikasyong mataas ang panganib
 
-### الممارسات المحظورة والتطبيقات عالية المخاطر
+Sa kaibuturan nito, idinisenyo ang AI Act upang ipagsanggalang ang mga mamamayan ng Unyong Europeo laban sa posibleng pinsala ng AI, sapagkat ipinagbabawal nito ang mga gawing itinuturing na hindi katanggap-tanggap, tulad ng mapanlinlang na AI na sinasamantala ang kahinaan, o ng mga sistemang nagpapahintulot ng "panlipunang pagmamarka" sa mga indibidwal. At haharap sa mahigpit na kahingian ang mga aplikasyong mataas ang panganib, kabilang na ang mga nasa mahalagang imprastruktura, edukasyon, pagtatrabaho, at pagpapatupad ng batas, upang matiyak ang kaligtasan, kalinawan, at pananagutan.
 
-في صميمه، صُمِّم AI Act لحماية مواطني الاتحاد الأوروبي من الأضرار المحتملة للذكاء الاصطناعي، إذ يحظر الممارسات التي تُعدُّ غير مقبولة، كالذكاء الاصطناعي المُتلاعب الذي يستغل نقاط الضعف، أو الأنظمة التي تُتيح «التصنيف الاجتماعي» للأفراد. وستواجه التطبيقات عالية المخاطر، بما فيها تلك في البنية التحتية الحرجة والتعليم والتوظيف وإنفاذ القانون، متطلبات صارمة لضمان السلامة والشفافية والمساءلة.
+### Pagpapatibay ng inobasyon at ng kaalaman sa AI
 
-### تعزيز الابتكار والثقافة بالذكاء الاصطناعي
+Bagaman inirereregula ng batas ang mga aplikasyong mataas ang panganib, pinatatatag din nito ang inobasyon, lalo na sa mga maliliit at katamtamang kompanya at sa mga bagong kompanya, sa pamamagitan ng pagsuporta nito sa pagbuo ng AI na ligtas at mapagkakatiwalaan. At binibigyang-diin nito ang kaalaman sa AI, sapagkat inaatasan nito ang tagapaglaan at ang naglulunsad na tiyaking sapat ang pagsasanay ng kanilang tauhan at may kamalayan sila sa etikal at operasyonal na bahagi ng AI.
 
-في حين يُنظِّم القانون التطبيقات عالية المخاطر، يُعزِّز أيضاً الابتكار، خاصة بين الشركات الصغيرة والمتوسطة والشركات الناشئة، بدعمه تطوير ذكاء اصطناعي آمن وجدير بالثقة. ويُؤكِّد على الثقافة بالذكاء الاصطناعي، إذ يُلزم المُورِّد والمُنشِر بضمان تدريب موظفيهم ملائماً ووعيهم بالجوانب الأخلاقية والتشغيلية للذكاء الاصطناعي.
+### Pandaigdigang kahihinatnan: paglalatag ng pamantayan
 
-### تبعات عالمية: إرساء معيار
+Maaaring maging balangkas para sa pagreregula ng AI sa buong mundo ang masaklaw at maingat na paraan ng AI Act, gaya ng pagiging pandaigdigang sanggunian ng GDPR para sa pagkapribado ng datos. At inilalagay ng pagtuon nito sa paraang nakabatay sa panganib, kasama ang mahigpit na pagsanggalang sa saligang karapatan, ang Unyong Europeo sa unahan ng etikal na pamamahala ng AI.
 
-قد يكون النهج الشامل والمُدقَّق لـ AI Act مُخطَّطاً لتنظيم الذكاء الاصطناعي عالمياً، تماماً كما أصبح GDPR مرجعاً عالمياً لخصوصية البيانات. إن تركيزه على نهج قائم على المخاطر، إلى جانب حماية صارمة للحقوق الأساسية، يضع الاتحاد الأوروبي في طليعة الحوكمة الأخلاقية للذكاء الاصطناعي.
+### Kalinawan at karapatan ng mamimili
 
-### الشفافية وحقوق المستهلكين
+Sa pagbibigay-diin nito sa kalinawan at sa pagsanggalang ng mamimili, inaatasan ng AI Act ang malinaw na paghahayag kapag nakikipag-ugnayan ang mga indibidwal sa AI, lalo na sa generative na AI na lumilikha o nagmamanipula ng nilalaman. At itinatalaga nito ang karapatang maghain ng reklamo at makakuha ng paliwanag hinggil sa pasya ng mga sistemang AI na mataas ang panganib, kaya pinatatatag nito ang karapatan ng mamimili sa panahong digital.
 
-بتأكيده على الشفافية وحماية المستهلك، يُلزم AI Act بإفصاحات واضحة عند تفاعل الأفراد مع الذكاء الاصطناعي، خاصة مع الذكاء الاصطناعي التوليدي الذي يُنتج محتوى أو يتلاعب به. ويُكرِّس الحق في تقديم الشكاوى والحصول على تفسيرات بشأن قرارات أنظمة الذكاء الاصطناعي عالية المخاطر، مما يُعزِّز حقوق المستهلكين في العصر الرقمي.
+### Pagpapatupad at parusa
 
-### الإنفاذ والعقوبات
+Sa multang umaabot sa 35 milyong euro o 7% ng pandaigdigang kita para sa malubhang paglabag, malakas ang mekanismo ng pagpapatupad ng AI Act. At ipinapakita nito ang determinasyon ng Unyong Europeo na tiyakin ang pagsunod, kaya itinatampok nito ang halaga ng etikal at responsableng paggamit ng AI.
 
-بغرامات تصل إلى 35 مليون يورو أو 7% من حجم الأعمال العالمي للانتهاكات الجسيمة، فإن آلية إنفاذ AI Act قوية. ويعكس ذلك تصميم الاتحاد الأوروبي على ضمان الامتثال، مُبرزاً أهمية الاستخدام الأخلاقي والمسؤول للذكاء الاصطناعي.
+### Pandaigdigang kahihinatnan at pamumuno
 
-### تبعات عالمية وقيادة
-
-قد يكون AI Act في الاتحاد الأوروبي مُخطَّطاً للتنظيم العالمي للذكاء الاصطناعي، مُذكِّراً بأثر GDPR على خصوصية البيانات. وقد يُشجع نهج التصنيف القائم على المخاطر فيه جهوداً تشريعية مماثلة عبر العالم، مُعزِّزاً استراتيجية موحدة لحوكمة الذكاء الاصطناعي تُوازن بين التقدم التقني والاعتبارات الأخلاقية.
+Maaaring maging balangkas para sa pandaigdigang pagreregula ng AI ang AI Act ng Unyong Europeo, na nagpapaalala sa epekto ng GDPR sa pagkapribado ng datos. At maaaring hikayatin ng paraan nito ng pag-uuri na nakabatay sa panganib ang katulad na pagsisikap na pambatas sa buong mundo, kaya pinatatatag nito ang nagkakaisang estratehiya sa pamamahala ng AI na nagbabalanse ng teknikal na pagsulong at ng etikal na pagsasaalang-alang.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## خاتمة
+## Pangwakas
 
-يُمثِّل Artificial Intelligence Act في الاتحاد الأوروبي خطوة حاسمة للتنقل في التضاريس المعقدة لتنظيم الذكاء الاصطناعي. فبإرسائه قواعد واضحة لتطبيقات الذكاء الاصطناعي، يهدف القانون إلى حماية حقوق المواطنين وسلامتهم مع توفير بيئة مواتية للابتكار. وبوصفه أول قانون شامل للذكاء الاصطناعي يصدر عن جهة تنظيمية كبرى، فإنه يُرسي سابقة قد تُشكِّل مستقبل الحوكمة العالمية للذكاء الاصطناعي، إذ يُدافع عن نهج متوازن يحتفي بالتقدم التقني إلى جانب النزاهة الأخلاقية.
+Kumakatawan ang Artificial Intelligence Act ng Unyong Europeo sa mapagpasyang hakbang sa paglalayag sa masalimuot na lupain ng pagreregula ng AI. At sa paglalatag nito ng malinaw na patakaran para sa mga aplikasyon ng AI, layunin ng batas na ipagsanggalang ang karapatan at kaligtasan ng mga mamamayan habang naghahandog ng kapaligirang kaaya-aya sa inobasyon. At bilang unang masaklaw na batas sa AI na inilabas ng isang malaking katawang pangregulasyon, naglalatag ito ng pamarisang maaaring humubog sa kinabukasan ng pandaigdigang pamamahala ng AI, sapagkat ipinagtatanggol nito ang balanseng paraang ipinagdiriwang ang teknikal na pagsulong kasabay ng etikal na katapatan.
 
 ![divider][divider].class=\"m-10 w-100\"
 

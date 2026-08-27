@@ -16,6 +16,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "lib"))
+import _lang_registry
 from _svg_icons import (
     _CARD_SVG_EMAIL,
     _CARD_SVG_FB,
@@ -51,35 +52,17 @@ PILLAR_DECKS: dict[str, str] = {
     "open-source": "OSS in regulated banking — supply-chain trust, Rust, MCP, the projects banks rely on and ship.",
     "leadership": "CTO / CIO concerns — strategic technology decisions, organisational design, original analysis.",
 }
-LOCALE_TAGS_PATH: dict[str, str] = {
-    "en": "tags",
-    "ar": "wusum",
-    "bn": "tag",
-    "cs": "stitky",
-    "de": "etiketten",
-    "es": "etiquetas",
-    "fil": "mga-tag",
-    "fr": "etiquettes",
-    "ha": "tags",
-    "he": "tagim",
-    "hi": "tag",
-    "id": "label",
-    "it": "etichette",
-    "ja": "tagu",
-    "ko": "taegeu",
-    "nl": "labels",
-    "pl": "tagi",
-    "pt-br": "etiquetas",
-    "ro": "etichete",
-    "ru": "tegi",
-    "sv": "taggar",
-    "th": "thaek",
-    "tr": "etiketler",
-    "uk": "tegy",
-    "vi": "the",
-    "yo": "awon-ami",
-    "zh-hans": "biaoqian",
-    "zh-hant": "biaoqian-tw",
+# Derived from the slug registry rather than hand-maintained. The literal
+# dict this replaces had drifted: it listed 28 locales while the registry
+# had 35, so build_tag_landings covered 27 of 34 non-EN locales and el, fa,
+# hu, mr, ms, ta and te silently got no tag or category landing pages at
+# all. It agreed with the registry on every one of the 27 it did carry, so
+# this is an exact swap plus the seven that were missing.
+# English is the source and has no slug map of its own, hence the seed.
+LOCALE_TAGS_PATH: dict[str, str] = {"en": "tags"} | {
+    lang.code: _lang_registry.load_slugs(lang.code)["static"].get("tags", "tags")
+    for lang in _lang_registry.active()
+    if lang.code != "en"
 }
 _LANDING_THRESHOLD = 3
 _BASE_URL = "https://sebastienrousseau.com"

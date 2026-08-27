@@ -61,7 +61,7 @@ def inject_oembed_link(html: str) -> str:
     idempotent."""
     if '"@type":"BlogPosting"' not in html:
         return html
-    if 'application/json+oembed' in html:
+    if "application/json+oembed" in html:
         return html
     canonical_m = _CANONICAL_RE.search(html)
     title_m = _OG_TITLE_RE.search(html)
@@ -90,13 +90,19 @@ def inject_oembed_link(html: str) -> str:
         f'title="{_esc(title, quote=True)}">'
     )
     return html.replace("</head>", f"{link}</head>", 1)
+
+
 _LEAD_TAKEAWAYS_RE = re.compile(
     r'<ul\s+class="post-lead-takeaways">(.*?)</ul>', re.IGNORECASE | re.DOTALL
 )
-_HTML_TAGS_RE = re.compile(r'<[^>]+>')
-_BODY_QUESTION_RE = re.compile(r'<p(?:\s[^>]*)?>([^<]{50,300}?\?)\s*</p>', re.IGNORECASE)
+_HTML_TAGS_RE = re.compile(r"<[^>]+>")
+_BODY_QUESTION_RE = re.compile(r"<p(?:\s[^>]*)?>([^<]{50,300}?\?)\s*</p>", re.IGNORECASE)
+
+
 def _byline_role(is_fr: bool) -> str:
     return "FONDATEUR · INGÉNIEUR" if is_fr else "FOUNDER · ENGINEER"
+
+
 def inject_byline_strap(html: str) -> str:
     """Render an FT-style byline strap (``NAME · ROLE`` in caps) at the
     foot of the article body, INSIDE the wrap-div so it ends up
@@ -121,13 +127,19 @@ def inject_byline_strap(html: str) -> str:
         f"<span>{_esc(role)}</span></p>"
     )
     return _WRAP_CLOSE_RE.sub(strap + r"\1", html, count=1)
+
+
 def _share_li(href: str, label: str, glyph: str) -> str:
     return (
         f'<li><a href="{_esc(href, quote=True)}" rel="noopener noreferrer" '
         f'aria-label="{_esc(label, quote=True)}">{glyph}</a></li>'
     )
+
+
 def _strip_html_tags(text: str) -> str:
     return _unesc(_HTML_TAGS_RE.sub("", text)).strip()
+
+
 def _extract_lead_takeaways_text(html: str) -> list[str]:
     """Return plain-text bullet strings from the lead block takeaways list."""
     m = _LEAD_TAKEAWAYS_RE.search(html)
@@ -139,6 +151,8 @@ def _extract_lead_takeaways_text(html: str) -> list[str]:
         if text:
             items.append(text)
     return items[:5]
+
+
 def _extract_body_question(html: str) -> str:
     """Return the first short question-paragraph found in the article body."""
     for m in _BODY_QUESTION_RE.finditer(html):
@@ -146,6 +160,8 @@ def _extract_body_question(html: str) -> str:
         if text.endswith("?"):
             return text
     return ""
+
+
 def _keywords_to_hashtags(html: str, max_n: int = 5) -> list[str]:
     """Convert JSON-LD BlogPosting keywords to #CamelCase hashtags."""
     m = _keywords_re.search(html)
@@ -165,9 +181,9 @@ def _keywords_to_hashtags(html: str, max_n: int = 5) -> list[str]:
         if len(result) >= max_n:
             break
     return result
-def _generate_linkedin_post(
-    payload: dict[str, str], html: str, labels: dict[str, str]
-) -> str:
+
+
+def _generate_linkedin_post(payload: dict[str, str], html: str, labels: dict[str, str]) -> str:
     """Build a copy-ready LinkedIn post from article metadata and lead block.
 
     Structure (mirrors the Readable Framework the editorial team uses):
@@ -211,6 +227,8 @@ def _generate_linkedin_post(
         parts += ["", hashtags]
     parts += ["", "Sebastien Rousseau | CC-BY-4.0"]
     return "\n".join(parts)
+
+
 def _share_payload(html: str) -> dict[str, str] | None:
     """Extract canonical URL + og:title + meta description and return
     the per-platform pre-fill strings the share rail needs. Returns
@@ -232,6 +250,8 @@ def _share_payload(html: str) -> dict[str, str] | None:
         "title": title,
         "desc": desc,
     }
+
+
 def _share_rail_items(payload: dict[str, str], labels: dict[str, str]) -> str:
     """Render the 5 share-rail <li> anchors. Per-platform pre-fill
     strategy (the richer the prompt, the more likely the reader
@@ -290,6 +310,8 @@ def _share_rail_items(payload: dict[str, str], labels: dict[str, str]) -> str:
             _SVG_BLUESKY,
         )
     )
+
+
 def _syndication_payloads(
     payload: dict[str, str], html: str, labels: dict[str, str]
 ) -> dict[str, str]:
@@ -320,9 +342,9 @@ def _syndication_payloads(
     mastodon = "\n\n".join(p for p in (title, desc_trunc, url) if p)
     linkedin = _generate_linkedin_post(payload, html, labels)
     return {"medium": medium_md, "mastodon": mastodon, "linkedin": linkedin}
-def _render_syndication_panel(
-    payload: dict[str, str], labels: dict[str, str], html: str
-) -> str:
+
+
+def _render_syndication_panel(payload: dict[str, str], labels: dict[str, str], html: str) -> str:
     """Inline collapsible at the article foot with copy buttons for
     Medium, Mastodon, and LinkedIn. Each pre block has a stable id so
     main.js's existing [data-copy] handler wires the clipboard."""
@@ -348,10 +370,10 @@ def _render_syndication_panel(
     heading = _esc(labels.get("Syndicate.heading", "Syndicate this article"))
     return (
         f'<details class="cite-popover" id="syndicate-popover">'
-        f"<summary>{heading}</summary>"
-        + "".join(blocks)
-        + "</details>"
+        f"<summary>{heading}</summary>" + "".join(blocks) + "</details>"
     )
+
+
 def inject_syndication_panel(html: str) -> str:
     """Append a syndication payload panel at the wrap-div close —
     pre-formatted blocks for Medium import, Mastodon, and LinkedIn,
@@ -368,6 +390,8 @@ def inject_syndication_panel(html: str) -> str:
         return html
     panel = _render_syndication_panel(payload, _labels(html), html)
     return _WRAP_CLOSE_RE.sub(panel + r"\1", html, count=1)
+
+
 def inject_share_rail(html: str) -> str:
     """Render an FT-style vertical share rail (X / LinkedIn / Facebook
     / WhatsApp / email / Bluesky) at the top of the article body. CSS
@@ -385,11 +409,10 @@ def inject_share_rail(html: str) -> str:
         return html
     items = _share_rail_items(payload, _labels(html))
     aria = _esc(_labels(html).get("Share", "Share"), quote=True)
-    rail = (
-        f'<nav class="share-rail share-rail--sticky" aria-label="{aria}">'
-        f"<ul>{items}</ul></nav>"
-    )
+    rail = f'<nav class="share-rail share-rail--sticky" aria-label="{aria}"><ul>{items}</ul></nav>'
     return _MAIN_RE.sub(rf"\1{rail}\2\3", html, count=1)
+
+
 _LICENSE_RE = re.compile(r'<meta\s+name="license"\s+content="([^"]+)"', re.IGNORECASE)
 _LICENSE_LABELS: dict[str, str] = {
     "CC-BY-4.0": "Creative Commons Attribution 4.0 International",
@@ -404,6 +427,8 @@ _SVG_QUOTE = (
     'c0 1.5.5 2.5 1.5 3v1c-2 0-3.5-2-3.5-4V4.5z"/>'
     "</svg>"
 )
+
+
 def _slug_from_canonical(html: str) -> str | None:
     """Return the bare slug from the canonical URL. Canonical URLs on
     this site always end with ``/<slug>/index.html``; strip that suffix
@@ -418,6 +443,8 @@ def _slug_from_canonical(html: str) -> str | None:
             url = url[: -len(suffix)]
             break
     return url.rsplit("/", 1)[-1] or None
+
+
 def _license_id(html: str) -> str:
     m = _LICENSE_RE.search(html)
     if m:
@@ -425,6 +452,8 @@ def _license_id(html: str) -> str:
         if candidate in _LICENSE_LABELS:
             return candidate
     return _LICENSE_DEFAULT
+
+
 def inject_action_rail(html: str) -> str:
     """Render the floating ``.action-rail--sticky`` with Save PDF + Cite
     at the top of the article body. The CSS positions it on the right
@@ -452,16 +481,17 @@ def inject_action_rail(html: str) -> str:
     items = (
         f'<li><a href="{pdf_href}" download="{slug}.pdf" '
         f'data-print-fallback rel="alternate" type="application/pdf">'
-        f'{_SVG_DOWNLOAD}'
-        f'<span>{_esc(labels.get("Action.savePdf", "Save PDF"))}</span></a></li>'
+        f"{_SVG_DOWNLOAD}"
+        f"<span>{_esc(labels.get('Action.savePdf', 'Save PDF'))}</span></a></li>"
         f'<li><a href="#cite-popover">{_SVG_QUOTE}'
-        f'<span>{_esc(labels.get("Action.cite", "Cite"))}</span></a></li>'
+        f"<span>{_esc(labels.get('Action.cite', 'Cite'))}</span></a></li>"
     )
     rail = (
-        f'<nav class="action-rail action-rail--sticky" aria-label="{aria}">'
-        f"<ul>{items}</ul></nav>"
+        f'<nav class="action-rail action-rail--sticky" aria-label="{aria}"><ul>{items}</ul></nav>'
     )
     return _MAIN_RE.sub(rf"\1{rail}\2\3", html, count=1)
+
+
 def inject_reuse_panel(html: str) -> str:
     """Append a republish / reuse panel at the wrap-div close: licence
     statement, machine-readable ``rel="license"`` link, attribution
@@ -525,7 +555,7 @@ def inject_reuse_panel(html: str) -> str:
     panel = (
         f'<section class="reuse" aria-labelledby="reuse-heading">'
         f'<h2 id="reuse-heading">'
-        f'{_esc(labels.get("Reuse.heading", "Republish this article"))}</h2>'
+        f"{_esc(labels.get('Reuse.heading', 'Republish this article'))}</h2>"
         + meta_block
         + f"<p>{_esc(labels.get('Reuse.license', 'This article is licensed under'))} "
         + f"{license_a}. "

@@ -1,143 +1,142 @@
 ---
-title: "حالة الذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي: مراجعة 2023"
+title: "Ang kalagayan ng AI at ng quantum computing sa banking: pagsusuri sa 2023"
 tags: "AI in banking, quantum computing, open-source LLMs, AI regulation, AI governance, post-quantum cryptography, risk management, 2023 review, banking innovation, serbisyong pinansyal, ISO 20022, AI, open source"
-subtitle: "تشكيل مستقبل القطاع المصرفي: الذكاء الاصطناعي، الحوسبة الكمومية، النماذج مفتوحة المصدر، والمشهد التنظيمي"
-description: "استكشاف المشهد التكنولوجي لعام 2023: الذكاء الاصطناعي والحوسبة الكمومية يُحدثان ثورة في القطاع المصرفي، صعود النماذج مفتوحة المصدر، وتطوّر التشريعات والحوكمة."
+subtitle: "Mga modelong AI na bukas ang pinagmulan, ang quantum na proteksiyon ng HSBC sa kalakalan, at ang tanawin ng pamamahala sa AI noong 2023."
+description: "Pagsusuri sa 2023: ang epekto ng AI at ng quantum computing sa banking — ang pag-angat ng malalaking modelo ng wikang bukas ang pinagmulan, ang paggamit ng HSBC ng QKD sa kalakalang FX, at ang umuusbong na tanawin ng pamamahala sa AI."
 date: "Dec 18, 2023"
 language: "fil-PH"
 locale: "fil_PH"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
-banner_alt: "حالة الذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي: مراجعة 2023"
-keywords: "الذكاء الاصطناعي في القطاع المصرفي، الحوسبة الكمومية، التكنولوجيا المالية، الذكاء الاصطناعي مفتوح المصدر، إدارة المخاطر، الأمن الكمومي، تنظيم الذكاء الاصطناعي، أخلاقيات الذكاء الاصطناعي، حوكمة الذكاء الاصطناعي، الابتكار المصرفي"
+banner_alt: "Ang kalagayan ng pamamahala sa AI"
+keywords: "AI, quantum computing, banking, 2023, LLM, bukas ang pinagmulan, Mixtral, GPT-NeoX, GPT-J, OPT-175B, Gemini, HSBC, QKD, pamamahala sa AI, Deklarasyon ng Bletchley, MIT"
 ---
+## Ang kalagayan ng AI at ng quantum computing sa sektor ng banking: pagsusuri sa 2023
 
-## حالة الذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي: مراجعة 2023
+## Pangkalahatang tanaw
 
-## نظرة عامّة
+Noong 2023, malalim ang naging epekto ng pagtatagpo ng **artipisyal na katalinuhan (AI)** at ng **quantum computing (QC)** sa **industriya ng banking at pinansiya**. Binago nang malaki ng dalawang teknolohiyang ito ang paraan ng paggana ng mga institusyong pinansiyal, at malaki ang naging epekto nila sa mga pagbabayad, sa pangangasiwa ng panganib, at sa seguridad na sibernetiko.
 
-في عام 2023، أثّر تقاطع **الذكاء الاصطناعي (AI)** و**الحوسبة الكمومية (QC)** تأثيراً عميقاً في **الصناعة المصرفية والمالية**. لقد أحدثت هاتان التقنيتان ثورة في طريقة عمل المؤسسات المالية، وأثّرتا تأثيراً جوهرياً في المدفوعات وإدارة المخاطر والأمن السيبراني.
-
-تتناول هذه المقالة أثر **نماذج الذكاء الاصطناعي مفتوحة المصدر**، و**الحوسبة الكمومية في أمن المعاملات**، و**التشريعات والحوكمة** على القطاع المصرفي والمالي.
+Tinatalakay ng artikulong ito ang epekto ng **mga modelo ng AI na bukas ang pinagmulan**, ng **quantum computing sa seguridad ng transaksiyon**, at ng **batas at pamamahala** sa sektor ng banking at pinansiya.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## أهمية الذكاء الاصطناعي والحوسبة الكمومية في الصناعة المصرفية
+## Ang halaga ng AI at ng quantum computing sa industriya ng banking
 
-تشهد الصناعة المصرفية تحوّلاً عميقاً يقوده التقاء الذكاء الاصطناعي والحوسبة الكمومية. تُعيد هاتان التقنيتان الثوريّتان تشكيل قطاع الخدمات المالية، مُدخِلَتَين مستويات غير مسبوقة من الكفاءة وخفض التكاليف وتعزيز تجارب العملاء.
+Nararanasan ng industriya ng banking ang malalim na pagbabagong itinutulak ng pagtatagpo ng AI at ng quantum computing. Muling hinuhubog ng dalawang mapanimulang teknolohiyang ito ang sektor ng serbisyong pinansiyal, at nagdadala sila ng walang katulad na antas ng kahusayan, ng pagbaba ng gastos, at ng pinatatatag na karanasan ng kliyente.
 
-### النموّ المتسارع لإيرادات سوق برمجيات الذكاء الاصطناعي: تصوّر بصري للنموّ
+### Ang mabilis na paglago ng kita sa pamilihan ng software na AI: isang biswal na paglalarawan ng paglago
 
 ![AI Software Market's Surging Revenue: A Visualization of Growth][21].class=\"img-fluid w-100 clearfix fade-in\"
 
-يشهد سوق برمجيات الذكاء الاصطناعي مسار نموّ ملحوظاً، مع توقّعات بأن تبلغ الإيرادات السنوية **رقماً مذهلاً قدره 126 مليار دولار بحلول 2025**.
+Nararanasan ng pamilihan ng software na AI ang kapansin-pansing landas ng paglago, na may inaasahang taunang kitang **umaabot sa nakamamanghang 126 bilyong dolyar pagsapit ng 2025**.
 
-يُبرز هذا التصوّر النموّ المثير للإعجاب للسوق من 2018 إلى 2025، ضوءاً على الطلب المتنامي على الحلول المدعومة بالذكاء الاصطناعي عبر مختلف الصناعات.
+Itinatampok ng paglalarawang ito ang kahanga-hangang paglago ng pamilihan mula 2018 hanggang 2025, na nagbibigay-liwanag sa lumalaking pangangailangan sa mga solusyong pinapagana ng AI sa iba't ibang industriya.
 
-### قوّة الذكاء الاصطناعي في القطاع المصرفي
+### Ang lakas ng AI sa sektor ng banking
 
-برهنت **خوارزميات الذكاء الاصطناعي** على قدرات لافتة في تحليل كمّيات هائلة من البيانات وتمييز الأنماط واتّخاذ قرارات مستنيرة. وتُثبت هذه القدرة قيمتها التي لا تُقدّر بثمن للبنوك في مختلف جوانب عملياتها.
+Ipinamalas ng **mga algoritmo ng AI** ang kapansin-pansing kakayahan sa pagsusuri ng napakalaking dami ng datos, sa pagkilala ng huwaran, at sa paggawa ng may-batayang pasya. At napatutunayan ng kakayahang ito ang di-mapapantayang halaga nito para sa mga bangko sa iba't ibang bahagi ng kanilang operasyon.
 
-- **تقييم المخاطر**: تستطيع أنظمة إدارة المخاطر المدعومة بالذكاء الاصطناعي تحليل البيانات المالية المعقّدة لتقييم الجدارة الائتمانية، ورصد الاحتيال المحتمل، وتخفيف المخاطر المالية. يمكّن ذلك البنوك من اتّخاذ قرارات إقراض أكثر استنارة وحماية رأس مالها.
+- **Pagtatasa ng panganib**: kayang suriin ng mga sistema ng pangangasiwa ng panganib na pinapagana ng AI ang masalimuot na datos na pinansiyal upang tasahin ang pagiging karapat-dapat sa utang, tuklasin ang posibleng pandaraya, at bawasan ang panganib na pinansiyal. Binibigyang-kakayahan nito ang mga bangko na gumawa ng mas may-batayang pasya sa pagpapautang at maipagsanggalang ang kanilang kapital.
 
-- **عمليات الموافقة على القروض**: يستطيع الذكاء الاصطناعي تبسيط عمليات الموافقة على القروض، فيُقلّص أوقات المعالجة ويُحسّن رضا العملاء. ومن خلال أتمتة المهام والاستفادة من التحليلات التنبّؤية، تستطيع البنوك معالجة الطلبات بكفاءة وسرعة أكبر.
+- **Proseso ng pag-apruba ng utang**: kayang pasimplehin ng AI ang proseso ng pag-apruba ng utang, kaya binabawasan nito ang oras ng pagproseso at pinabubuti ang kasiyahan ng kliyente. At sa pamamagitan ng pag-otomatisa ng gawain at ng paggamit ng mahulaang pagsusuri, kayang iproseso ng mga bangko ang aplikasyon nang higit na mahusay at mabilis.
 
-- **تحسين محفظة الاستثمار**: يستطيع الذكاء الاصطناعي تحليل اتجاهات السوق وعوامل المخاطر والأهداف الاستثمارية الفردية لتحسين المحافظ. يساعد ذلك العملاء على تحقيق أهدافهم المالية مع إدارة شهيّتهم للمخاطر بكفاءة.
+- **Optimisasyon ng portfolio ng pamumuhunan**: kayang suriin ng AI ang mga uso sa pamilihan, ang mga salik ng panganib, at ang indibidwal na layunin sa pamumuhunan upang ma-optimisa ang portfolio. Nakatutulong ito sa mga kliyente na makamit ang kanilang layuning pinansiyal habang mahusay na pinangangasiwaan ang kanilang gana sa panganib.
 
-- **كشف الاحتيال**: تستطيع خوارزميات الذكاء الاصطناعي رصد أنماط في بيانات المعاملات قد تشير إلى نشاط احتيالي. يمكّن ذلك البنوك من الإبلاغ عن المعاملات المشبوهة واتّخاذ الإجراءات المناسبة لمنع الخسائر المالية.
+- **Pagtuklas ng pandaraya**: kayang matukoy ng mga algoritmo ng AI ang mga huwaran sa datos ng transaksiyon na maaaring magpahiwatig ng mapanlinlang na gawain. Binibigyang-kakayahan nito ang mga bangko na iulat ang kahina-hinalang transaksiyon at gumawa ng nararapat na hakbang upang mapigil ang pagkalugi.
 
-- **خدمة العملاء**: يستطيع الذكاء الاصطناعي تعزيز تفاعلات خدمة العملاء البشرية بتقديم دعم استباقي، والاستجابة السريعة للاستفسارات، والتوصية بمنتجات وخدمات مخصّصة. يُمكن لذلك أن يعزّز رضا العملاء وولاءهم.
-
-![divider][divider].class=\"m-10 w-100\"
-
-### الحوسبة الكمومية: إطلاق العنان لتحليل بيانات لا مثيل له
-
-كان [**HSBC** ⧉][01] في طليعة دمج الحوسبة الكمومية في القطاع المالي. تعاون البنك مع مزوّدي التكنولوجيا ومختبرات البحث لاستكشاف تطبيق التقنيات الكمومية على مشاكل واقعية.
-
-كان HSBC أوّل بنك [**يحمي تداول العملات الأجنبية المعزّز بالذكاء الاصطناعي عبر التقنية الكمومية في 2023** ⧉][01]. في تجربة هي الأولى من نوعها عالمياً، استخدم HSBC **[توزيع المفاتيح الكمومي](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)** لتأمين سيناريو تداول بقيمة 30 مليون يورو من اليورو إلى الدولار الأمريكي. أظهرت هذه التجربة أنّ التقنية الكمومية ستحمي معاملات بأيّ قيمة عندما تصبح متاحة تجارياً وقابلة للتوسعة.
+- **Serbisyo sa kliyente**: kayang patatagin ng AI ang pakikipag-ugnayan ng tao sa serbisyo sa kliyente sa pamamagitan ng maagap na suporta, ng mabilis na tugon sa katanungan, at ng pagrerekomenda ng pasadyang produkto at serbisyo. Kaya nitong patatagin ang kasiyahan at katapatan ng kliyente.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## صعود الذكاء الاصطناعي مفتوح المصدر: تحوّل في النموذج
+### Ang quantum computing: pagpapakawala ng walang katulad na pagsusuri ng datos
 
-شهد عام 2023 صعوداً ملحوظاً في تبنّي تقنية الذكاء الاصطناعي مفتوحة المصدر، خاصّةً في مجال **النماذج اللغوية الكبيرة (LLMs)**. يشير الذكاء الاصطناعي مفتوح المصدر إلى برمجيات وأدوات ذكاء اصطناعي تكون شفرتها المصدرية متاحة للمطوّرين والباحثين وسائر الأطراف المعنية.
+Nanguna ang [**HSBC** ⧉][01] sa pagsasanib ng quantum computing sa sektor na pinansiyal. Nakipagtulungan ang bangko sa mga tagapaglaan ng teknolohiya at sa mga laboratoryo ng pananaliksik upang tuklasin ang paggamit ng mga teknolohiyang kuwantum sa mga suliranin sa tunay na buhay.
 
-أتاحت هذه الدمقرطة لتقنية الذكاء الاصطناعي تحقيق تقدّمات جوهرية، ودفعت تكاثر النماذج مفتوحة المصدر، ورسّخت النماذج اللغوية الكبيرة كقوّة دافعة للابتكار. لعبت هذه النماذج دوراً محورياً في تحفيز الابتكار وتعزيز اتّخاذ القرار وتحسين إدارة المخاطر عبر صناعات متعدّدة.
+Ang HSBC ang unang bangkong [**nagsanggalang sa kalakalan ng dayuhang salapi na pinatatatag ng AI sa pamamagitan ng teknolohiyang kuwantum noong 2023** ⧉][01]. Sa isang pagsubok na unang beses sa buong mundo, ginamit ng HSBC ang **[quantum na pamamahagi ng susi](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)** upang tiyakin ang seguridad ng senaryo ng kalakalang nagkakahalaga ng 30 milyong euro mula euro tungo sa dolyar na Amerikano. Ipinakita ng pagsubok na ito na ipagsasanggalang ng teknolohiyang kuwantum ang mga transaksiyon sa anumang halaga kapag naging komersiyal na itong makukuha at kayang lumawak.
 
-### النماذج اللغوية الكبيرة مفتوحة المصدر: ثورة في مشهد الذكاء الاصطناعي
+![divider][divider].class=\"m-10 w-100\"
 
-برزت النماذج اللغوية الكبيرة مفتوحة المصدر، مثل [**WizardLM** ⧉][07] و[**LLaMA 2** ⧉][08]، باعتبارها منافسات قويّة للنماذج مغلقة المصدر. فعلى سبيل المثال، حقّق [Vicuna ⧉][09]، وهو نموذج لغوي اقتصادي، 90 % من قدرات ChatGPT رغم أنّ تكلفة تدريبه الكلّية بلغت 300 دولار فقط. ووضع [LLaMA 2 ⧉][08] المعيار الذهبي للذكاء الاصطناعي الأخلاقي بتحقيق أدنى درجات للانتهاكات حتى الآن. والنماذج اللغوية الكبيرة مفتوحة المصدر أكثر شفافية وقابلية للتخصيص من نظيراتها مغلقة المصدر، التي تفتقر إلى قابلية التفسير.
+## Ang pag-angat ng AI na bukas ang pinagmulan: isang pagbabago ng huwaran
 
-#### النموّ الانفجاري لنماذج الذكاء الاصطناعي مفتوحة المصدر في 2023
+Nasaksihan ng taong 2023 ang kapansin-pansing pag-angat ng pagyakap sa teknolohiyang AI na bukas ang pinagmulan, lalo na sa larangan ng **malalaking modelo ng wika (LLMs)**. Tumutukoy ang AI na bukas ang pinagmulan sa software at kasangkapang AI na ang pinagmulang kodigo ay makukuha ng mga developer, mananaliksik, at iba pang may kinalaman.
+
+Pinahintulutan ng demokratisasyong ito ng teknolohiyang AI ang saligang pagsulong, itinulak nito ang pagdami ng mga modelong bukas ang pinagmulan, at pinatatag nito ang malalaking modelo ng wika bilang puwersang nagtutulak ng inobasyon. Gumanap ang mga modelong ito ng mahalagang papel sa pagpapasigla ng inobasyon, sa pagpapatibay ng paggawa ng pasya, at sa pagpapabuti ng pangangasiwa ng panganib sa iba't ibang industriya.
+
+### Ang malalaking modelo ng wikang bukas ang pinagmulan: isang rebolusyon sa tanawin ng AI
+
+Sumulpot ang malalaking modelo ng wikang bukas ang pinagmulan, tulad ng [**WizardLM** ⧉][07] at ng [**LLaMA 2** ⧉][08], bilang malalakas na katunggali ng mga modelong sarado ang pinagmulan. Halimbawa, nakamit ng [Vicuna ⧉][09], isang matipid na modelo ng wika, ang 90 % ng kakayahan ng ChatGPT bagaman umabot lamang sa 300 dolyar ang kabuuang gastos sa pagsasanay nito. At naglatag ang [LLaMA 2 ⧉][08] ng gintong pamantayan para sa etikal na AI sa pamamagitan ng pagkamit ng pinakamababang marka sa paglabag hanggang ngayon. Higit na malinaw at maiaangkop ang malalaking modelo ng wikang bukas ang pinagmulan kaysa sa katapat nilang sarado ang pinagmulan, na kulang sa kakayahang maipaliwanag.
+
+#### Ang pasabog na paglago ng mga modelong AI na bukas ang pinagmulan noong 2023
 
 ![Explosive Growth of Open-Source AI Models in 2023][22].class=\"img-fluid w-100 clearfix fade-in\"
 
-يُبرز هذا الرسم البياني بوضوح الصعود الملحوظ لنماذج الذكاء الاصطناعي مفتوحة المصدر في 2023، مع طفرة مذهلة في عدد المشاريع وعدد المساهمات. ويسلّط هذا الاتجاه الضوء على الأهمية المتنامية للذكاء الاصطناعي مفتوح المصدر في تحفيز الابتكار وتعزيز التعاون داخل مجتمع الذكاء الاصطناعي.
+Malinaw na itinatampok ng grapikong ito ang kapansin-pansing pag-angat ng mga modelong AI na bukas ang pinagmulan noong 2023, na may nakamamanghang pagsulpot sa bilang ng proyekto at sa bilang ng ambag. At binibigyang-diin ng usong ito ang lumalaking halaga ng AI na bukas ang pinagmulan sa pagpapasigla ng inobasyon at sa pagpapatibay ng pakikipagtulungan sa loob ng komunidad ng AI.
 
-استقطبت عدّة نماذج لغوية كبيرة مفتوحة المصدر اهتماماً كبيراً لقدراتها الرائدة:
+Nakakuha ng malaking pansin ang ilang malalaking modelo ng wikang bukas ang pinagmulan dahil sa mapanguna nilang kakayahan:
 
-- [**Mixtral 8x7B** ⧉][10]: طوّرته Mistral AI، يتميّز هذا النموذج اللغوي القويّ بأوزانه المفتوحة، ممّا يتيح تشغيلاً محلّياً بقيود أقلّ من نماذج المنافسين. يعالج نوافذ سياق تصل إلى 32 ألف رمز ويدعم لغات متعدّدة، من بينها الفرنسية والألمانية والإسبانية والإيطالية والإنجليزية. صُمِّم [Mixtral 8x7B ⧉][10] للعمل التركيبي وتحليل البيانات واستكشاف أخطاء البرمجيات والبرمجة. ويدّعي أنّه يضاهي أو يتجاوز GPT-3.5 من OpenAI ويتفوّق على LLaMA 2-70B من Meta في بعض اختبارات الأداء.
+- [**Mixtral 8x7B** ⧉][10]: binuo ng Mistral AI, namumukod ang malakas na modelo ng wikang ito dahil sa bukas nitong timbang, kaya pinahihintulutan nito ang lokal na pagpapatakbo na may mas kaunting hadlang kaysa sa mga modelo ng katunggali. Kaya nitong hawakan ang bintana ng konteksto na umaabot sa 32 libong token at sinusuportahan nito ang maraming wika, kabilang na ang Pranses, Aleman, Kastila, Italyano, at Ingles. Idinisenyo ang [Mixtral 8x7B ⧉][10] para sa gawaing komposisyonal, para sa pagsusuri ng datos, para sa pagtuklas ng depekto sa software, at para sa pagpoprograma. At iginigiit nitong kayang pantayan o higitan nito ang GPT-3.5 ng OpenAI at nahihigitan nito ang LLaMA 2-70B ng Meta sa ilang pagsusulit sa bisa.
 
-- [**GPT-NeoX-20B** ⧉][11]: بـ 20 مليار معامل، يقف GPT-NeoX-20B في طليعة النماذج اللغوية الكبيرة مفتوحة المصدر. يستند إلى GPT-3 لكنّه يُدخل التوازي المتزامن للبيانات ونقاط تفتيش التدرّج لتحسين الأداء والكفاءة. وأظهر النموذج أداءً استثنائياً في مهام مختلفة، منها الإجابة عن الأسئلة والتلخيص والترجمة.
+- [**GPT-NeoX-20B** ⧉][11]: sa 20 bilyong parametro, nakatayo ang GPT-NeoX-20B sa unahan ng malalaking modelo ng wikang bukas ang pinagmulan. Nakasalalay ito sa GPT-3 ngunit ipinapasok nito ang sabayang paralelismo ng datos at ang mga punto ng pagsusuri ng gradient upang mapabuti ang bisa at kahusayan. At ipinamalas ng modelo ang pambihirang bisa sa iba't ibang gawain, kabilang na ang pagsagot sa tanong, ang pagbubuod, at ang pagsasalin.
 
-- [**GPT-J** ⧉][12]: بـ 6 مليارات معامل، يقدّم [GPT-J ⧉][12] إمكانية وصول أكبر مقارنة بالنماذج الأضخم. دُرِّب [GPT-J ⧉][12] على مجموعة بيانات Pile ويشترك في جذوره مع معمارية GPT-2. يفهم الفروق الدقيقة في المحادثة، ويقدّم رؤى من مصادر متنوّعة، ويُكيِّف نبرته وأسلوبه، ويُولي الأولوية للتوليد الأخلاقي والمسؤول للمحتوى.
+- [**GPT-J** ⧉][12]: sa 6 bilyong parametro, naghahandog ang [GPT-J ⧉][12] ng mas malaking pag-abot kumpara sa mas malalaking modelo. Sinanay ang [GPT-J ⧉][12] sa hanay ng datos na Pile at pinagsasaluhan nito ang ugat ng arkitektura ng GPT-2. Nauunawaan nito ang mga banayad na pagkakaiba sa pag-uusap, naghahandog ito ng kabatiran mula sa iba't ibang pinagmulan, iniaangkop nito ang tono at estilo nito, at binibigyang-prayoridad nito ang etikal at responsableng paglikha ng nilalaman.
 
-- [**OPT-175B** ⧉][13]: بحجم غير مسبوق يبلغ 175 مليار معامل، يقف [OPT-175B ⧉][13] صرحاً للكفاءة والسعة. يستخدم [OPT-175B ⧉][13]، المدرَّب على بيانات نصّية غير معنونة تحوي بشكل رئيسي جُمَلاً إنجليزية، معمارية Transformer لمعالجة النصّ المُدخَل بشكل هرمي. أظهر النموذج أداءً مُبهراً في مهام متعدّدة، منها الإجابة عن الأسئلة والتلخيص والترجمة.
+- [**OPT-175B** ⧉][13]: sa walang katulad na laking 175 bilyong parametro, nakatayo ang [OPT-175B ⧉][13] bilang monumento ng kahusayan at kapasidad. Gumagamit ang [OPT-175B ⧉][13], na sinanay sa datos na tekstong walang etiketa na pangunahing naglalaman ng pangungusap sa Ingles, ng arkitekturang Transformer upang iproseso ang ipinasok na teksto nang hayerarkikal. At ipinamalas ng modelo ang kahanga-hangang bisa sa maraming gawain, kabilang na ang pagsagot sa tanong, ang pagbubuod, at ang pagsasalin.
 
-- [**LLMa 2** ⧉][14]: بـ 1.6 مليار معامل، يُبرز [LLMa 2 ⧉][14] براعته في التنوّع، مع استجابته لطيف واسع من المهام، منها الإجابة عن الأسئلة والتلخيص والترجمة. ودُرِّب [LLMa 2 ⧉][14] على مجموعة بيانات Pile مستخدماً معمارية Transformer، فيُثبت قابلية تكيّفه عبر تطبيقات متنوّعة.
+- [**LLMa 2** ⧉][14]: sa 1.6 bilyong parametro, itinatampok ng [LLMa 2 ⧉][14] ang kagalingan nito sa sari-saring gamit, at tumutugon ito sa malawak na hanay ng gawain, kabilang na ang pagsagot sa tanong, ang pagbubuod, at ang pagsasalin. At sinanay ang [LLMa 2 ⧉][14] sa hanay ng datos na Pile gamit ang arkitekturang Transformer, kaya pinatutunayan nito ang kakayahan nitong umangkop sa iba't ibang aplikasyon.
 
-- [**Google Gemini LLM** ⧉][26]: كُشف النقاب عنه في 2023، يمثّل [Google Gemini LLM ⧉][26] قفزة جوهرية إلى الأمام في عالم النماذج اللغوية الكبيرة. وبوصفه خَلَفاً لِـ [PaLM 2 ⧉][27]، صُمِّم [Gemini LLM ⧉][26] للتفوّق في مجالات متعدّدة، منها فهم اللغة الطبيعية وتوليد أشكال نصّية إبداعية متنوّعة وتطبيق المعرفة لحلّ المشكلات. وبفضل قدرته على معالجة البيانات متعدّدة الوسائط، يحوز [Google Gemini LLM ⧉][26] إمكانات هائلة لتطبيقات في مجالات كالرؤية الحاسوبية والبحث العلمي والرعاية الصحّية. والنموذج متاح حالياً بثلاثة أحجام: **Ultra** و**Pro** و**Nano**، تلبيةً لاحتياجات حاسوبية مختلفة.
+- [**Google Gemini LLM** ⧉][26]: inihayag noong 2023, kumakatawan ang [Google Gemini LLM ⧉][26] sa saligang paglundag pasulong sa mundo ng malalaking modelo ng wika. At bilang kahalili ng [PaLM 2 ⧉][27], idinisenyo ang [Gemini LLM ⧉][26] upang mangibabaw sa iba't ibang larangan, kabilang na ang pag-unawa sa likas na wika, ang paglikha ng iba't ibang malikhaing anyo ng teksto, at ang paggamit ng kaalaman sa paglutas ng suliranin. At salamat sa kakayahan nitong magproseso ng datos na maraming anyo, taglay ng [Google Gemini LLM ⧉][26] ang napakalaking potensiyal para sa aplikasyon sa mga larangang tulad ng biswal na pagkilala ng kompyuter, ng siyentipikong pananaliksik, at ng pangangalagang pangkalusugan. Makukuha ang modelo sa kasalukuyan sa tatlong laki: **Ultra**, **Pro**, at **Nano**, na tumutugon sa iba't ibang pangangailangang pangkalkulasyon.
 
-### ثورة الذكاء الاصطناعي مفتوح المصدر: تشكيل مستقبل الذكاء الاصطناعي
+### Ang rebolusyon ng AI na bukas ang pinagmulan: paghubog sa kinabukasan ng AI
 
-تُحوّل ثورة الذكاء الاصطناعي مفتوح المصدر مشهد تطوير الذكاء الاصطناعي ونشره واستخدامه تحويلاً جذرياً. فبجعل الذكاء الاصطناعي أكثر إتاحة ومعقولية في الكلفة وتنوّعاً، تُدمقرط التقنية مفتوحة المصدر قدراته وتمهّد الطريق لابتكارات وتطبيقات رائدة. ومع تنامي زخم حركة المصدر المفتوح، يمكننا توقّع المزيد من التقدّمات التحويلية التي ستشكّل مستقبل الذكاء الاصطناعي وأثره العميق على عالمنا.
+Radikal na binabago ng rebolusyon ng AI na bukas ang pinagmulan ang tanawin ng pagbuo, paglulunsad, at paggamit ng AI. At sa paggawa sa AI na mas maaabot, mas abot-kaya, at mas sari-sari, dinedemokratisa ng teknolohiyang bukas ang pinagmulan ang kakayahan nito at inihahanda nito ang daan tungo sa mapanguna na inobasyon at aplikasyon. At habang lumalakas ang sigla ng kilusang bukas ang pinagmulan, maaari nating asahan ang higit pang mapagbagong pagsulong na huhubog sa kinabukasan ng AI at sa malalim nitong epekto sa ating mundo.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## تحدّيات تنظيم الذكاء الاصطناعي
+## Ang mga hamon sa pagreregula ng AI
 
-ثمّة تحدٍّ آخر يتمثّل في **ضمان كون أنظمة الذكاء الاصطناعي عادلة وغير منحازة**. فقد تُديم أنظمة الذكاء الاصطناعي التحيّزات القائمة في البيانات التي دُرِّبت عليها. ومن الأهمّية بمكان تطوير أنظمة ذكاء اصطناعي شفّافة وخاضعة للمساءلة، يمكن تدقيقها للكشف عن التحيّزات المحتملة ومعالجتها.
+May isa pang hamon na binubuo ng **pagtiyak na patas at walang kinikilingan ang mga sistemang AI**. Maaaring ipagpatuloy ng mga sistemang AI ang umiiral nang kiling sa datos na pinagsanayan nila. At napakahalagang bumuo ng mga sistemang AI na malinaw at may pananagutan, na maaaring suriin upang matuklasan at matugunan ang posibleng kiling.
 
-أخيراً، من المهمّ **وضع مبادئ توجيهية أخلاقية لتطوير ونشر الذكاء الاصطناعي**. ينبغي تصميم أنظمة الذكاء الاصطناعي واستخدامها بطريقة مسؤولة تحترم حقوق الإنسان. فعلى سبيل المثال، ينبغي ألّا تُستخدم لإلحاق الأذى بالأفراد أو استغلالهم، ولا لانتهاك خصوصيتهم.
+Panghuli, mahalagang **maglatag ng etikal na alituntunin para sa pagbuo at paglulunsad ng AI**. Dapat idisenyo at gamitin ang mga sistemang AI sa responsableng paraang gumagalang sa karapatang pantao. Halimbawa, hindi dapat gamitin ang mga ito upang makapinsala o makasamantala sa mga indibidwal, ni upang labagin ang kanilang pagkapribado.
 
-تتطلّب مواجهة هذه التحدّيات نهجاً متعدّد الأطراف يُشرك الحكومات والشركات والباحثين والمجتمع المدني. ومن المهمّ بدء الحوار الآن حول كيفية تنظيم الذكاء الاصطناعي بطريقة توازن بين الحاجة إلى الخصوصية والأمن والحاجة إلى الابتكار.
+Nangangailangan ang pagharap sa mga hamong ito ng paraang maraming panig na sumasangkot sa mga pamahalaan, kompanya, mananaliksik, at sa lipunang sibil. At mahalagang simulan na ngayon ang usapan hinggil sa kung paano regulahin ang AI sa paraang nagbabalanse ng pangangailangan sa pagkapribado at seguridad at ng pangangailangan sa inobasyon.
 
-## حالة حوكمة الذكاء الاصطناعي
+## Ang kalagayan ng pamamahala sa AI
 
 ![The State of AI Governance][28].class=\"fade-in w-100 p-3 me-3 img-thumbnail \"
 
-في عام 2023، **شكّلت مبادرات ومستجدّات عالمية مهمّة مشهد حوكمة الذكاء الاصطناعي وتنظيمه**. تعكس هذه الأنشطة الإقرار المتنامي بـ[**الحاجة إلى أطر متينة للإشراف على تطوير ونشر تقنيات الذكاء الاصطناعي** ⧉][19].
+Noong 2023, **hinubog ng mahahalagang pandaigdigang hakbangin at pangyayari ang tanawin ng pamamahala at pagreregula sa AI**. Ipinamamalas ng mga gawaing ito ang lumalaking pagkilala sa [**pangangailangan ng matatag na balangkas sa pangangasiwa ng pagbuo at paglulunsad ng mga teknolohiyang AI** ⧉][19].
 
-في الولايات المتّحدة، أصدر الرئيس جو بايدن [**أمراً تنفيذياً لإدارة المخاطر المرتبطة بالذكاء الاصطناعي ودعم الجهود الدولية لحوكمته** ⧉][15]. وقد انخرط [**مكتب البيت الأبيض لسياسة العلوم والتكنولوجيا (OSTP)** ⧉][23] في مناقشات مستفيضة مع الباحثين والشركات والمجتمع المدني لتوجيه حوكمة الذكاء الاصطناعي. وتعمل الولايات المتّحدة مع حلفائها وشركائها على حوكمة الذكاء الاصطناعي، بما في ذلك المشاركة في عملية G7 Hiroshima AI Process وفي [**AI Safety Summit** ⧉][16] في المملكة المتّحدة.
+Sa Estados Unidos, naglabas si Pangulong Joe Biden ng [**kautusang tagapagpaganap upang pangasiwaan ang panganib na kaugnay ng AI at suportahan ang pandaigdigang pagsisikap sa pamamahala nito** ⧉][15]. At nakilahok ang [**tanggapan ng White House para sa patakaran sa agham at teknolohiya (OSTP)** ⧉][23] sa masusing talakayan kasama ang mga mananaliksik, kompanya, at ang lipunang sibil upang gabayan ang pamamahala sa AI. Nakikipagtulungan naman ang Estados Unidos sa mga kaalyado at katuwang nito sa pamamahala ng AI, kabilang na ang paglahok sa prosesong G7 Hiroshima AI Process at sa [**AI Safety Summit** ⧉][16] sa Reyno Unido.
 
-استضافت المملكة المتّحدة قمّة [**AI Safety Summit** ⧉][16] الافتتاحية، ممّا جمع قادة حكوميين عالميين لمناقشة [**مخاطر الذكاء الاصطناعي والإجراءات المنسّقة دولياً** ⧉][17].
+Ang Reyno Unido naman ang nagdaos ng panimulang [**AI Safety Summit** ⧉][16], kaya nagtipon ito ng mga pandaigdigang lider ng pamahalaan upang talakayin ang [**panganib ng AI at ang pandaigdigang magkakaugnay na hakbang** ⧉][17].
 
-شهد [**إعلان بليتشلي** ⧉][18] تعهّد 28 دولة، إضافة إلى الاتّحاد الأوروبي، بالعمل معاً لمعالجة المخاطر التي يطرحها الذكاء الاصطناعي خلال أوّل AI Safety Summit في المملكة المتّحدة.
+Nasaksihan ng [**Deklarasyon ng Bletchley** ⧉][18] ang pangako ng 28 bansa, kasama ang Unyong Europeo, na magtulungan upang tugunan ang mga panganib na dulot ng AI sa unang AI Safety Summit sa Reyno Unido.
 
-أصدر قادة وباحثو MIT مجموعة من الأوراق السياسية حول حوكمة الذكاء الاصطناعي لمساعدة صانعي السياسات على إنشاء إشراف أفضل. تقترح ورقة [**A Framework for U.S. AI Governance: Creating a Safe and Thriving AI Sector** ⧉][20] أن تتولّى كيانات حكومية قائمة تنظيم أدوات الذكاء الاصطناعي.
+Naglabas ang mga lider at mananaliksik ng MIT ng hanay ng papel sa patakaran hinggil sa pamamahala ng AI upang matulungan ang mga gumagawa ng patakaran na makapagtatag ng mas mabuting pangangasiwa. Iminumungkahi ng papel na [**A Framework for U.S. AI Governance: Creating a Safe and Thriving AI Sector** ⧉][20] na ang umiiral nang mga entidad ng pamahalaan ang mangasiwa sa pagreregula ng mga kasangkapang AI.
 
-نشر أكثر من 60 بلداً في الأمريكتين وإفريقيا وآسيا وأوروبا استراتيجيات وطنية للذكاء الاصطناعي، ممّا يعكس الزخم العالمي نحو حوكمته. وقد كانت الصين فاعلة في إطلاق مبادئ ولوائح، منها [**Global AI Governance Initiative** ⧉][06] و[**Interim Administrative Measures for the Management of Generative AI Services** ⧉][05].
+Mahigit 60 bansa sa Amerika, Aprika, Asya, at Europa ang naglathala ng pambansang estratehiya para sa AI, kaya ipinapakita nito ang pandaigdigang sigla tungo sa pamamahala nito. At naging aktibo naman ang Tsina sa paglulunsad ng mga prinsipyo at alituntunin, kabilang na ang [**Global AI Governance Initiative** ⧉][06] at ang [**Interim Administrative Measures for the Management of Generative AI Services** ⧉][05].
 
-تُبيّن هذه المبادرات والمستجدّات الحاجة المتنامية إلى جهود وطنية ودولية منسّقة لضمان تطوير ونشر مسؤولَين للذكاء الاصطناعي. وفي حين أُحرز تقدّم، تطرح طبيعة الذكاء الاصطناعي المعقّدة وسرعة تطوّرها تحدّيات مستمرّة تتطلّب اهتماماً متواصلاً.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## خاتمة
-
-شهد عام 2023 تقدّمات جوهرية في مجالات الذكاء الاصطناعي والحوسبة الكمومية، خاصّةً في الصناعة المصرفية. ويمثّل الاستخدام الريادي لِـ HSBC للحماية الكمومية للتداول المعزّز بالذكاء الاصطناعي علامة فارقة في تطبيق هذه التقنيات في القطاع المصرفي. لقد سرّعت النماذج مفتوحة المصدر نضج الذكاء الاصطناعي، فيما تقدّم الأوراق البيضاء من MIT حول حوكمته خارطة طريق للتنظيم. ستشكّل هذه التطوّرات مستقبل الذكاء الاصطناعي والحوسبة الكمومية، بانعكاسات عميقة على القطاع المصرفي والمالي.
+Ipinapakita ng mga hakbangin at pangyayaring ito ang lumalaking pangangailangan ng magkakaugnay na pambansa at pandaigdigang pagsisikap upang matiyak ang responsableng pagbuo at paglulunsad ng AI. At bagaman may nakamit nang pagsulong, naghahain ang masalimuot na kalikasan ng AI at ang bilis ng pag-unlad nito ng mga patuloy na hamong nangangailangan ng walang tigil na pansin.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-**هل تودّ معرفة المزيد عن أثر الذكاء الاصطناعي والحوسبة الكمومية في الصناعة المصرفية؟**
+## Pangwakas
 
-*ختاماً، آمل أن تكون هذه المقالة قد أيقظت اهتمامك بالقوّة التحويلية للذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي.*
+Nasaksihan ng taong 2023 ang saligang pagsulong sa larangan ng AI at ng quantum computing, lalo na sa industriya ng banking. At kumakatawan ang mapanguna na paggamit ng HSBC ng proteksiyong kuwantum para sa kalakalang pinatatatag ng AI sa isang mahalagang palatandaan ng paggamit ng mga teknolohiyang ito sa sektor ng banking. Pinabilis ng mga modelong bukas ang pinagmulan ang paggulang ng AI, samantalang naghahandog naman ang mga papel na puti mula sa MIT hinggil sa pamamahala nito ng mapa tungo sa regulasyon. Huhubugin ng mga pag-unlad na ito ang kinabukasan ng AI at ng quantum computing, na may malalim na kahihinatnan sa sektor ng banking at pinansiya.
 
-*إن كنت متلهّفاً لمعرفة المزيد عن تقاطع الذكاء الاصطناعي والحوسبة الكمومية في الصناعة المصرفية، لا تتردّد في التواصل معي على [**LinkedIn** ⧉][02] أو عبر [**صفحة الاتصال** ⧉][03].*
+![divider][divider].class=\"m-10 w-100\"
 
-*يمكنك أيضاً الانضمام إليّ على قناتي الجديدة على YouTube، [**Banking on Quantum** ⧉][24]، حيث سأستكشف أحدث التطوّرات في هذه التقنيات التحويلية وانعكاساتها على مستقبل التمويل.*
+**Nais mo bang matuto pa hinggil sa epekto ng AI at ng quantum computing sa industriya ng banking?**
 
-*[**اشترك في Banking on Quantum اليوم وابقَ في الصدارة في هذا المجال السريع التطوّر!** ⧉][25]*
+*Sa pagtatapos, umaasa akong nagising ng artikulong ito ang iyong interes sa mapagbagong lakas ng AI at ng quantum computing sa sektor ng banking.*
 
-شكراً لك مرّة أخرى على وقتك، وأتطلّع إلى سماع آرائك!
+*Kung sabik kang matuto pa hinggil sa pagtatagpo ng AI at ng quantum computing sa industriya ng banking, huwag mag-atubiling makipag-ugnayan sa akin sa [**LinkedIn** ⧉][02] o sa pamamagitan ng [**pahina ng pakikipag-ugnayan** ⧉][03].*
+
+*Maaari ka ring sumama sa akin sa aking bagong channel sa YouTube, [**Banking on Quantum** ⧉][24], kung saan tutuklasin ko ang pinakabagong pag-unlad sa mga mapagbagong teknolohiyang ito at ang kahihinatnan ng mga ito sa kinabukasan ng pinansiya.*
+
+*[**Mag-subscribe sa Banking on Quantum ngayon at manatili sa unahan sa mabilis umuunlad na larangang ito!** ⧉][25]*
+
+Maraming salamat muli sa iyong panahon, at inaasahan kong marinig ang iyong palagay!
 
 ![divider][divider].class=\"m-10 w-100\"
 

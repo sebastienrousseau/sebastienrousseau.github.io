@@ -531,6 +531,8 @@ def _swap_main_body(shell: str, body: str) -> str:
     if n:
         return out
     return _MAIN_WRAP_RE.sub(rf'\1<div class="wrap report-wrap">{body}</div>\2', shell, count=1)
+
+
 _LDJSON_BLOCKS_RE = re.compile(
     r'<script type="application/ld\+json">[\s\S]*?</script>', re.IGNORECASE
 )
@@ -744,9 +746,9 @@ def render_hub(shell: str) -> tuple[str, str]:
             f'<section class="topic-pillar" id="pillar-{pillar_slug}" data-reveal>'
             '<header class="topic-pillar-head">'
             f'<p class="newsroom-kicker">PILLAR</p>'
-            f'<h2>{pillar_name}</h2>'
+            f"<h2>{pillar_name}</h2>"
             f'<p class="topic-pillar-lede">{pillar_lede}</p>'
-            '</header>'
+            "</header>"
             f'<div class="newsroom-grid">{cards}</div>'
             "</section>"
         )
@@ -766,16 +768,14 @@ def render_hub(shell: str) -> tuple[str, str]:
         '<p class="newsroom-kicker">PILLARS</p>'
         "<h1>Topics</h1>"
         '<p class="topic-lede">Four pillars, fourteen topic clusters, every dated article. '
-        'Pick a thread and follow it through the archive.</p>'
+        "Pick a thread and follow it through the archive.</p>"
         f'<nav class="topic-chips" aria-label="Jump to pillar">{chips}</nav>'
         "</header>"
         '<section class="proof-rail topic-proof" aria-label="Topics at a glance">'
         f'<div class="kpi-cell"><span class="kpi-cell-value">{len(PILLARS)}</span><span class="kpi-cell-label">Pillars</span></div>'
         f'<div class="kpi-cell"><span class="kpi-cell-value">{total_topics}</span><span class="kpi-cell-label">Topic clusters</span></div>'
         f'<div class="kpi-cell"><span class="kpi-cell-value">{total_articles}</span><span class="kpi-cell-label">Articles indexed</span></div>'
-        '</section>'
-        + "".join(pillar_sections)
-        + "</section>"
+        "</section>" + "".join(pillar_sections) + "</section>"
     )
     out = _strip_extra_jsonld(shell)
     out = _strip_shell_hero(out)

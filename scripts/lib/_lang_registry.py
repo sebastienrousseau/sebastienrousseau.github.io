@@ -327,6 +327,134 @@ def load_labels(code: str) -> dict[str, str]:
     return {k: v for k, v in data.items() if not k.startswith("_")}
 
 
+def playlist_reference() -> dict:
+    """The English /playlists/ copy catalogue, derived from
+    ``scripts/lib/_playlist_copy.py``.
+
+    English is code, not JSON: the generator renders the page from the
+    same module, so there is no EN ``playlists.json`` to drift out of
+    sync. Every other language ships one, and
+    :mod:`tests.validation.test_i18n_playlists` checks its shape against
+    the structure returned here.
+    """
+    import _playlist_copy as pl
+
+    return {
+        "ui": {
+            "h1": pl.HERO_H1,
+            "jump": pl.HERO_JUMP,
+            "platformsLabel": pl.PLATFORMS_LABEL,
+            "navLabel": pl.NAV_LABEL,
+            "play": pl.PLAY_LABEL,
+            "follow": pl.FOLLOW_LABEL,
+            "apple": pl.APPLE_LABEL,
+            "countOne": pl.LANE_COUNT_ONE,
+            "countOther": pl.LANE_COUNT_OTHER,
+            "coverAlt": pl.COVER_ALT,
+            "openAria": pl.OPEN_ARIA,
+            "frameTitle": pl.FRAME_TITLE,
+        },
+        "intro": list(pl.INTRO_PARAGRAPHS),
+        "featured": {
+            "kicker": pl.PLAYLISTS_FEATURED[1],
+            "date": pl.PLAYLISTS_FEATURED[2],
+            "genres": pl.FEATURED_GENRES,
+            "desc": pl.PLAYLISTS_FEATURED[3],
+        },
+        "lanes": {
+            key: {"title": title, "sub": sub}
+            for key, title, _kicker, sub, _items in pl.PLAYLISTS_SECTIONS
+        },
+        "cards": {
+            pid: {"eyebrow": eyebrow, "desc": desc}
+            for _k, _t, _kk, _s, items in pl.PLAYLISTS_SECTIONS
+            for _title, eyebrow, desc, pid, _art in items
+        },
+        "faq": {
+            "heading": pl.FAQ_HEADING,
+            "sub": pl.FAQ_SUB,
+            "items": [{"q": q, "a": a} for q, a in pl.FAQ_ITEMS],
+        },
+        "everywhere": {
+            "heading": pl.EVERYWHERE_HEADING,
+            "body": pl.EVERYWHERE_BODY,
+            "devices": list(pl.DEVICES),
+        },
+    }
+
+
+def load_projects(code: str) -> dict:
+    """Load the /projects/ body copy for ``code``.
+
+    Positional arrays keyed by section — see
+    ``build_translations/_projects.py`` for why the English reference is
+    read from the built page rather than duplicated here.
+    """
+    if code == "en":
+        return {}
+    path = I18N_DIR / code / "projects.json"
+    if not path.is_file():
+        raise LanguageError(f"missing projects glossary: {path}")
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise LanguageError(f"{path}: must be a JSON object")
+    return {k: v for k, v in data.items() if not k.startswith("_")}
+
+
+def listings_reference() -> dict:
+    """The English listing-body copy, from ``scripts/lib/_listing_copy.py``.
+
+    English is code, not JSON, for the same reason as
+    :func:`playlist_reference`: the generator renders from the same
+    module, so there is no EN file to drift.
+    """
+    import _listing_copy as lc
+
+    return {"ui": dict(lc.UI), "pillars": dict(lc.PILLARS)}
+
+
+def load_listings(code: str) -> dict:
+    """Load the listing-body copy for ``code``.
+
+    Mirrors :func:`listings_reference`. ``en`` returns the reference so
+    callers can treat every language uniformly. A missing file raises —
+    the generator falls back to English rather than shipping a
+    half-translated listing, and the CI gate fails.
+    """
+    if code == "en":
+        return listings_reference()
+    path = I18N_DIR / code / "listings.json"
+    if not path.is_file():
+        raise LanguageError(f"missing listings glossary: {path}")
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise LanguageError(f"{path}: must be a JSON object")
+    return {k: v for k, v in data.items() if not k.startswith("_")}
+
+
+def load_playlists(code: str) -> dict:
+    """Load the /playlists/ copy catalogue for ``code``.
+
+    Mirrors the structure of :func:`playlist_reference` — the English
+    source — with every prose string translated. Cards are keyed by
+    Spotify playlist id and lanes by lane key, so re-ordering the page
+    never invalidates a translation. Playlist *names* are proper nouns
+    and stay in the catalogue's source module, not here.
+
+    ``en`` returns the reference itself so callers can treat every
+    language uniformly.
+    """
+    if code == "en":
+        return playlist_reference()
+    path = I18N_DIR / code / "playlists.json"
+    if not path.is_file():
+        raise LanguageError(f"missing playlists glossary: {path}")
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise LanguageError(f"{path}: must be a JSON object")
+    return {k: v for k, v in data.items() if not k.startswith("_")}
+
+
 def fr_slug(en_slug: str) -> str:
     """Convenience: EN slug → FR slug. Returns input unchanged if no
     translation is recorded — matches the legacy ``_fr_slugs.fr_slug``

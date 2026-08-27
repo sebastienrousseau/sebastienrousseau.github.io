@@ -39,8 +39,7 @@ PAGE = ROOT / "_posts" / "iso20022-mcp-reference.md"
 BEGIN = "<!-- BEGIN GENERATED: mcp-tool-catalog. Do not edit by hand. -->"
 END = "<!-- END GENERATED: mcp-tool-catalog -->"
 REGEN_NOTE = (
-    "<!-- Regenerated from _data/mcp/*.json by "
-    "scripts/generators/render_mcp_reference.py -->"
+    "<!-- Regenerated from _data/mcp/*.json by scripts/generators/render_mcp_reference.py -->"
 )
 
 # Curated presentation per server, in catalog order. Everything below the
@@ -320,9 +319,9 @@ def _render_server(meta: dict, doc: dict) -> list[str]:
 def _reject_stray_snapshots() -> None:
     """Fail when a captured snapshot on disk is missing from ``SERVERS``."""
     expected = {m["file"] for m in SERVERS}
-    on_disk = {
-        p.name for p in DATA.glob("*.json") if p.name.endswith((".tools.json",))
-    } | {"tool_schemas.json"}
+    on_disk = {p.name for p in DATA.glob("*.json") if p.name.endswith((".tools.json",))} | {
+        "tool_schemas.json"
+    }
     extra = sorted(on_disk - expected)
     if extra:
         raise SystemExit(
@@ -375,8 +374,7 @@ def apply(page_text: str) -> str:
         _, tail = rest.split(END, 1)
     except ValueError as exc:
         raise SystemExit(
-            f"render_mcp_reference: markers not found in {PAGE} "
-            f"(need both {BEGIN!r} and {END!r})"
+            f"render_mcp_reference: markers not found in {PAGE} (need both {BEGIN!r} and {END!r})"
         ) from exc
     return head + render_catalog() + tail
 

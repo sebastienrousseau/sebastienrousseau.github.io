@@ -1,0 +1,261 @@
+{
+  "_comment": "TH copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "เพลย์ลิสต์",
+    "jump": "ฟังเพลย์ลิสต์ล่าสุด",
+    "platformsLabel": "คอลเลกชันทั้งหมดมีบน Apple Music ด้วย",
+    "navLabel": "ข้ามไปยังแนวเพลง",
+    "play": "เล่นบน Spotify",
+    "follow": "ติดตามบน Spotify",
+    "apple": "ฟังบน Apple Music",
+    "countOne": "เพลย์ลิสต์",
+    "countOther": "เพลย์ลิสต์",
+    "coverAlt": "ภาพปกเพลย์ลิสต์ {title}",
+    "openAria": "เปิด {title} บน Spotify",
+    "frameTitle": "เพลย์ลิสต์ {title} บน Spotify"
+  },
+  "intro": [
+    "สามสิบเก้าเพลย์ลิสต์ และ 1,763 เพลง สร้างขึ้นเพื่อชั่วโมงที่ต้องการเสียงประกอบ ทั้งงานที่ต้องจดจ่อ การอ่านยาว ๆ และการเขียนใหม่ตอนดึก",
+    "นีโอโซลและนูแจ๊สเมื่องานต้องการความอดทน บูมแบปและแจ๊สแร็ปเมื่อมันต้องการแรงส่ง เฟรนช์ทัช ดีปเฮาส์ และดิสโก้เฮาส์เมื่อมันต้องการการยกตัว โลไฟสำหรับช่วงที่ก้มหน้าก้มตาทำ และจังหวะแอฟริกาตะวันตกที่แทรกอยู่ตลอดทั้งหมด",
+    "ทุกเพลย์ลิสต์ฟังฟรีบน Spotify และคอลเลกชันทั้งหมดอยู่บน Apple Music"
+  ],
+  "featured": {
+    "kicker": "เพลย์ลิสต์ล่าสุด",
+    "date": "สิงหาคม 2026",
+    "genres": "อินดี้ป็อป · เฟรนช์เฮาส์",
+    "desc": "อินดี้ป็อปอาบแดดที่ไหลลื่นเข้าสู่เฟรนช์เฮาส์ — Tame Impala และ almost monday เปิดทางให้ Justice, L'Impératrice และแอฟโฟรเฮาส์จาก HUGEL"
+  },
+  "lanes": {
+    "electronic": {
+      "title": "อิเล็กทรอนิก",
+      "sub": "เฮาส์ ดิสโก้ และเฟรนช์ทัช"
+    },
+    "soul-jazz": {
+      "title": "โซล &amp; แจ๊ส",
+      "sub": "นีโอโซล นูแจ๊ส และจังหวะช้า"
+    },
+    "hip-hop": {
+      "title": "ฮิปฮอป",
+      "sub": "บูมแบป แจ๊สแร็ป และกรูฟยุคทอง"
+    },
+    "morning-mood": {
+      "title": "เช้า &amp; อารมณ์",
+      "sub": "ดาวน์เทมโป โลไฟ และพลังตอนตื่น"
+    },
+    "global": {
+      "title": "โลก",
+      "sub": "จังหวะจากทุกที่ที่เหลือ"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "ดิสโก้เฮาส์ · การาจ",
+      "desc": "ดิสโก้เฮาส์และการาจปลายยุคเก้าศูนย์ที่ยังเรียกคนลงฟลอร์ได้ — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden และ Boris Dlugosch"
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "อินดี้ป็อป · เฟรนช์เฮาส์",
+      "desc": "อินดี้ป็อปอาบแดดที่ไหลลื่นเข้าสู่เฟรนช์เฮาส์ — Tame Impala และ almost monday เปิดทางให้ Justice, L'Impératrice และแอฟโฟรเฮาส์จาก HUGEL"
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "เฟรนช์ทัช · อิเล็กโทร",
+      "desc": "เฟรนช์ทัชแบบเปิดไฟสูง — Daft Punk, Justice, Kavinsky, L'Impératrice และ Angèle สลับกันเล่นซินธ์นีออนและไลน์เบสแบบโมโตริก"
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "อินดี้แดนซ์ · ซินธ์ป็อป",
+      "desc": "ซินธ์ป็อปและอินดี้แดนซ์ในชั่วโมงทอง — Blu DeTiger, Merty Shango, Citrus Sun และ Enne พาประกายนั้นไปจนถึงค่ำ"
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "นูดิสโก้ · เฟรนช์เฮาส์",
+      "desc": "นูดิสโก้และเฟรนช์เฮาส์แบบเปิดฟิลเตอร์ — Fred Falke, Breakbot, Madeon, Lemaitre และ Yelle"
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "โปรเกรสซีฟเฮาส์ · อิเล็กโทร",
+      "desc": "โปรเกรสซีฟเฮาส์และอิเล็กโทรที่สร้างมาเพื่อการเคลื่อนไหว — Madeon, Paul Woolford, Martin Solveig, Secondcity และ The Knocks"
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "นูดิสโก้ · ฟิลเตอร์เฮาส์",
+      "desc": "นูดิสโก้และฟิลเตอร์เฮาส์ที่สร้างมาเพื่อการเคลื่อนไหว — Lenno, Oliver, Tollef และ Yelle บนกีตาร์สับและเบสซินธ์หนา ๆ"
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "ดีปเฮาส์ · เมโลดิกเฮาส์",
+      "desc": "หนึ่งร้อยเพลงดีปเฮาส์และเมโลดิกเฮาส์ที่รู้จักหลีกทางให้ — Chris Malinchak, Sultan + Shepard, Lenno และ Nora Van Elken"
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "ฟิวเจอร์เฮาส์ · อิเล็กโทรป็อป",
+      "desc": "ฟิวเจอร์เฮาส์สว่างและอิเล็กโทรป็อป — Lenno, La Felix, The Knocks, Kraak & Smaak และ Chris Malinchak ตลอดหนึ่งร้อยเพลง"
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "ฮิปฮอปกลิ่นแจ๊ส · บูมแบป",
+      "desc": "บูมแบปที่แซมเปิลแจ๊สสำหรับค่ำคืนช้า ๆ — Blu & Exile, Large Professor, 3582 และ Scienze สลับลูปอุ่น ๆ กับท่อนที่ไม่รีบร้อน"
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "แจ๊สฮอป · บูมแบป",
+      "desc": "แจ๊สฮอปยุคทองจากค่าย Phoniks — Awon & Phoniks, Anti Lilly, Dephlow และ Tiff the Gift บนเครื่องเป่าฝุ่นจับและดับเบิลเบส"
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "อัลเทอร์เนทีฟ R&B · นีโอโซล",
+      "desc": "อัลเทอร์เนทีฟ R&B และนีโอโซลดึก ๆ — Brent Faiyaz, Elujay, J.Robb และ Lou Phelps บนกลองมัว ๆ และไลน์เบสที่ไม่เร่ง"
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "ดิสโก้ · บูกี้",
+      "desc": "เพลงเรียกคนลงฟลอร์จากยุคเจ็ดศูนย์และแปดศูนย์ — CHIC, Luther Vandross, The Jacksons, Change และ Oliver Cheatham เครื่องสาย เสียงปรบมือ และไลน์เบสคือคนทำงาน"
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "แอซิดแจ๊ส · นูแจ๊ส",
+      "desc": "แอซิดแจ๊สและนูแจ๊สที่มีวงสดอยู่ข้างหลัง — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson และ Count Basic"
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "กอสเปล · โซล",
+      "desc": "โซลรากกอสเปลที่ยกทั้งห้องขึ้นได้ — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris และ Avery*Sunshine"
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "โบรกเคนบีต · นูแจ๊ส",
+      "desc": "โบรกเคนบีตและนูแจ๊สอังกฤษสำหรับบ่ายที่เนิบช้า — Emma-Jean Thackray, Blue Lab Beats, Galliano และ The Brand New Heavies"
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "โซลอังกฤษ · โบรกเคนบีต",
+      "desc": "โซลอังกฤษในแบบที่อบอุ่นที่สุด — Incognito, Shaun Escoffery, Cherri V และ Tortured Soul โดยมี Stevie Wonder อยู่ในห้องด้วย"
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "แจ๊สร่วมสมัย · R&B",
+      "desc": "แจ๊สร่วมสมัยและ R&B ที่คุยกัน — Robert Glasper, August Greene, Common, Karriem Riggins และ Brandy"
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "โซล · แจ๊สฟังก์",
+      "desc": "เพลงรักที่มีนักดนตรีจริงอยู่ข้างหลัง — 4hero และ Marc Mac, Incognito, Imaani, Natalie Duncan และ Adi Oasis"
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "นีโอโซล · แจ๊ส",
+      "desc": "ห้าสิบห้าเพลงนีโอโซลและแจ๊สสำหรับค่ำคืนอบอุ่น — India.Arie, Robert Glasper, Lucy Pearl, Anthony David และ Ronny Jordan"
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "นีโอโซล · R&B ร่วมสมัย",
+      "desc": "เจ็ดสิบสามเพลงนีโอโซลและ R&B ร่วมสมัย — Alex Isley, Yebba, Ego Ella May, Robert Glasper และ Blue Lab Beats"
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "แจ๊สฟังก์ · นีโอโซล",
+      "desc": "หนึ่งร้อยเพลงที่ส่องไฟไปที่นักดนตรี — Erykah Badu, Jill Scott, Omar, Esperanza Spalding และ Stevie Wonder"
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "แร็ป · ฝั่งตะวันตก",
+      "desc": "หนึ่งร้อยเพลงแร็ปข้ามสี่ทศวรรษ — 2Pac และ Dr. Dre, Snoop Dogg และ Tha Dogg Pound, Ghostface Killah, Nicki Minaj และ DJ Muggs"
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "แร็ป · โซล · เฟรนช์ทัช",
+      "desc": "หนึ่งร้อยเพลงที่ขุดจากกล่องแผ่นเสียงโดยไม่มีกฎแนวเพลง — Dr. Dre และ Eminem อยู่ข้าง MC Solaar และ 113, Charles Aznavour อยู่ข้าง DJ Mehdi และ Thomas Bangalter"
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "ฮาร์ดคอร์แร็ป · บูมแบป",
+      "desc": "แร็ปฮาร์ดคอร์ยุคเก้าศูนย์แบบเปิดเสียงดัง — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre และ Snoop Dogg"
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "บูมแบป · แจ๊สแร็ป",
+      "desc": "แปดสิบหกเพลงบูมแบปและแจ๊สแร็ปยุคเก้าศูนย์ — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde และ Jazzmatazz ของ Guru"
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "อันเดอร์กราวด์ · บูมแบป",
+      "desc": "บูมแบปอันเดอร์กราวด์และเพลงบรรเลง — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D และ Shing02"
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "อินดี้ฮิปฮอป · ป็อปแร็ป",
+      "desc": "อินดี้ฮิปฮอปและป็อปแร็ปที่มีแรงส่ง — Quinn XCII, Kid Quill, EMAN8, gianni & kyle และ YONAS"
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "ชิลล์เวฟ · ดาวน์เทมโป",
+      "desc": "ดาวน์เทมโปไร้น้ำหนักสำหรับการเดินทางไกลหรือเช้าที่เนิบช้า — Zero 7, Les Imprimés และ Ciao Ciao Marigold บนกลองที่นุ่มละมุน"
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "ทริปฮอป · แจ๊สฮอป",
+      "desc": "ทริปฮอปที่แซมเปิลแจ๊สจาก Proleter, Poldoore, Souleance และ The Geek x Vrv ให้ภาพแบบภาพยนตร์ ไม่รีบร้อน สร้างมาเพื่อการเขียน"
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "ดาวน์เทมโป · นูแจ๊ส",
+      "desc": "ดาวน์เทมโปและนูแจ๊สที่ให้ความคิดพิงได้ — Zero 7, The Cinematic Orchestra, Souleance, Mozez และ Ida Nielsen"
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "ทริปฮอป · ดาวน์เทมโป",
+      "desc": "ทริปฮอปและดาวน์เทมโปที่มีแกนเป็นโซล — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra และ Nina Simone ที่ถูกเรียบเรียงใหม่"
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "โลไฟ · บีตสำหรับอ่านหนังสือ",
+      "desc": "ห้าสิบสองบีตโลไฟฮิปฮอปสำหรับอ่านหนังสือและงานที่ต้องจดจ่อ — Idealism, j'san, Joey Pecoraro, Sugi.wa และ aimless ไม่มีเสียงร้องมาแย่งความสนใจ"
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "เฟรนช์เฮาส์ · นูดิสโก้",
+      "desc": "เฟรนช์เฮาส์ฟังกี้และนูดิสโก้ที่เดินเรียบ — Breakbot, Modjo, Fred Falke, Kartell และ Chris Malinchak"
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "นูแจ๊ส · ดาวน์เทมโป",
+      "desc": "นูแจ๊สและดาวน์เทมโปที่ผ่อนคลายให้ได้ปล่อยวาง — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly และ Kid Loco"
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "โซล · แจ๊สฟังก์",
+      "desc": "โซลและแจ๊สฟังก์สำหรับเริ่มต้นวัน — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak และ Stevie Wonder"
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "ป็อปที่ปลุกใจ",
+      "desc": "หกสิบสี่เพลงป็อปสว่างจังหวะเร็วสำหรับขยับตัว — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear และ Madison"
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "แจ๊สแร็ป · อัลเทอร์เนทีฟ R&B",
+      "desc": "แจ๊สแร็ปและอัลเทอร์เนทีฟ R&B ที่มีเรื่องจะพูด — Noname, Anderson .Paak, KAYTRANADA, Q-Tip และ A Tribe Called Quest"
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "แอฟโฟรบีต · วาสซูลู",
+      "desc": "เสียงจากแอฟริกาตะวันตกอยู่แถวหน้า — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh และ Kareyce Fotso ตั้งแต่วาสซูลูจนถึงโครา"
+    }
+  },
+  "faq": {
+    "heading": "มีคำถาม? นี่คือคำตอบ",
+    "sub": "ฟังอย่างไร ฟังบนอะไร และดนตรีเหล่านี้มาจากไหน",
+    "items": [
+      {
+        "q": "ต้องสมัคร Spotify แบบเสียเงินไหมถึงจะฟังได้?",
+        "a": "ไม่ต้อง ทุกเพลย์ลิสต์เล่นได้ในเครื่องเล่นที่ฝังไว้ด้านบนด้วยบัญชี Spotify แบบฟรี โดยมีโฆษณาคั่นระหว่างเพลง บัญชี Premium ช่วยตัดโฆษณาและฟังออฟไลน์ได้ แต่ไม่มีอะไรในหน้านี้อยู่หลังกำแพงเก็บเงิน"
+      },
+      {
+        "q": "ฟังบน Apple Music แทนได้ไหม?",
+        "a": "ได้ — ติดตามโปรไฟล์ที่ music.apple.com/profile/bxhero เพลย์ลิสต์ในหน้านี้เป็นเวอร์ชัน Spotify เพราะ Apple Music ไม่เปิดลิงก์เพลย์ลิสต์รายรายการให้สาธารณะ บนแพลตฟอร์มนั้นการติดตามโปรไฟล์คือทางที่เชื่อถือได้"
+      },
+      {
+        "q": "ใช้ได้กับอุปกรณ์อะไรบ้าง?",
+        "a": "ทุกที่ที่ Spotify ทำงานได้ ทั้ง iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox และเบราว์เซอร์ใด ๆ เครื่องเล่นในหน้านี้ทำงานได้ทั้งบนมือถือและคอมพิวเตอร์โดยไม่ต้องติดตั้งแอป"
+      },
+      {
+        "q": "ควรเริ่มจากเพลย์ลิสต์ไหนสำหรับงานที่ต้องจดจ่อ?",
+        "a": "เช้า &amp; อารมณ์ สำหรับสมาธิที่ไม่ถูกรบกวน — ดาวน์เทมโป นูแจ๊ส และโลไฟที่มีเสียงร้องน้อยหรือไม่มีเลย จะได้ไม่แย่งความสนใจกับการอ่าน ส่วนอิเล็กทรอนิกเหมาะกับงานที่ต้องการแรงส่งมากกว่าความสงบ"
+      },
+      {
+        "q": "เพลย์ลิสต์อัปเดตบ่อยแค่ไหน?",
+        "a": "สม่ำเสมอ และอัปเดตในที่เดิม แค่ติดตามเพลย์ลิสต์บน Spotify หรือติดตามโปรไฟล์บนบริการใดบริการหนึ่ง เพลงใหม่ก็จะมาถึงเองโดยไม่ต้องกลับมาที่นี่"
+      },
+      {
+        "q": "แชร์หรือฝังเพลย์ลิสต์เหล่านี้ได้ไหม?",
+        "a": "ได้ ทุกการ์ดลิงก์ไปยังเพลย์ลิสต์บน Spotify ซึ่งเมนูแชร์จะให้ทั้งลิงก์และโค้ดสำหรับฝัง เป็นเพลย์ลิสต์สาธารณะ แชร์ได้อย่างอิสระ"
+      },
+      {
+        "q": "ใครเป็นคนทำเพลย์ลิสต์เหล่านี้?",
+        "a": "Sebastien Rousseau — ใช้ชื่อ BXHERO บน Spotify และ Apple Music นี่คือเพลย์ลิสต์ที่เปิดฟังจริงระหว่างเขียนเรื่องระบบชำระเงินและวิศวกรรม ไม่ใช่ฟีดจากอัลกอริทึม"
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "ฟังได้บนทุกอุปกรณ์",
+    "body": "ทุกเพลย์ลิสต์เล่นได้ในเบราว์เซอร์ด้านบน และในแอป Spotify บนอุปกรณ์ที่คุณใช้อยู่แล้ว ติดตามโปรไฟล์บนบริการใดบริการหนึ่ง แล้วเพลย์ลิสต์ใหม่จะมาถึงเอง",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "เว็บเบราว์เซอร์"
+    ]
+  }
+}

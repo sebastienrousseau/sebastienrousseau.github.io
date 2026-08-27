@@ -694,118 +694,6 @@
       "<p class=\"newsroom-kicker\">精选</p>"
     ],
     [
-      ">Latest Music</h2>",
-      ">最新音乐</h2>"
-    ],
-    [
-      ">Latest playlist</h2>",
-      ">最新播放列表</h2>"
-    ],
-    [
-      ">Soulful, jazz and downtempo</h2>",
-      ">灵魂乐、爵士与慢节奏</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">MORNING & MOOD</p>",
-      "<p class=\"newsroom-kicker\">清晨与氛围</p>"
-    ],
-    [
-      ">Morning, mood and chill</h2>",
-      ">清晨、氛围与放松</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">ELECTRONIC</p>",
-      "<p class=\"newsroom-kicker\">电子</p>"
-    ],
-    [
-      ">Electronic, house and techno</h2>",
-      ">电子、浩室与铁克诺</h2>"
-    ],
-    [
-      ">Pop, rock and alternative</h2>",
-      ">流行、摇滚与另类</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">FOCUS</p>",
-      "<p class=\"newsroom-kicker\">专注</p>"
-    ],
-    [
-      ">Focus and productivity</h2>",
-      ">专注与生产力</h2>"
-    ],
-    [
-      ">Smooth Jazz, Neo Soul, and laid-back grooves[^<]+",
-      ">柔和爵士、Neo Soul 与悠闲律动。当一天需要放慢节奏时，播放它们。"
-    ],
-    [
-      ">This page has a comprehensive list[^<]+",
-      ">本页精选 Spotify 上备受好评且广受欢迎的播放列表，覆盖多种风格。无论您喜欢爵士、灵魂乐、嘻哈还是电子音乐，都能在这里找到合您口味的播放列表。"
-    ],
-    [
-      ">Step into the harmonious realm of TETRA\\.[^<]+",
-      ">步入 TETRA 的和谐世界。一份令人振奋的播放列表，旨在提升心情、充盈灵魂。"
-    ],
-    [
-      ">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">放松身心，用这份精选的爵士、灵魂、R&amp;B 与 Neo Soul 节拍，拥抱夏日的本真。"
-    ],
-    [
-      ">A deep dive into the quintessential collection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">深入探索爵士、灵魂、R&amp;B 与 Neo Soul 节拍的精粹合集。"
-    ],
-    [
-      ">Take a break from a busy day and relax with soothing nu jazz and downtempo beats\\.",
-      ">在忙碌的一天里休息片刻，在舒缓的 nu jazz 与慢节拍中放松。"
-    ],
-    [
-      ">Soulful tracks with a fashion-forward vibe\\. Music to set the tone for a productive and stylish day\\.",
-      ">充满灵魂感且具时尚气息的曲目。为高效又有格调的一天定下基调。"
-    ],
-    [
-      ">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms\\.",
-      ">庆祝生活的喜悦，沉浸于鲜活情感、明亮色彩与灵魂律动的世界。"
-    ],
-    [
-      ">Laid-back beats, house-influenced grooves and new deep house tracks\\.",
-      ">悠闲节拍、house 风格的律动以及新的 deep house 单曲。"
-    ],
-    [
-      ">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience\\.",
-      ">将放克迪斯科、浩室、French touch 等流派无缝融合，呈现一场超酷且充满能量的音乐体验。"
-    ],
-    [
-      ">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke\\.",
-      ">一次声音之旅，囊括 Madeon、Fred Falke 等艺术家的 Nu-Disco、French House、Electro 与 Disco House。"
-    ],
-    [
-      ">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks\\.",
-      ">悠闲节拍、嘻哈风格的律动以及新的独立流行单曲。"
-    ],
-    [
-      ">Original Hip Hop, Rap and R(?:&amp;|&)B Flavor Sessions\\.",
-      ">原创嘻哈、说唱与 R&amp;B 风味的合集。"
-    ],
-    [
-      ">Brace yourself for hardcore rap and hip hop tracks\\.",
-      ">准备好迎接硬核说唱与嘻哈曲目。"
-    ],
-    [
-      ">A few of the favourite hip-hop gems\\.",
-      ">一些备受喜爱的嘻哈精品。"
-    ],
-    [
-      ">Soulful beats and thoughtful lyrics\\. A captivating look into the world of contemporary hip hop, R(?:&amp;|&)B and rap\\.",
-      ">充满灵魂感的节拍与深思熟虑的歌词。引人入胜地走进当代嘻哈、R&amp;B 与说唱的世界。"
-    ],
-    [
-      ">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats\\.",
-      ">这份精彩的 Lo-Fi Hip Hop 节拍播放列表带来悠闲氛围与柔和韵律。"
-    ],
-    [
-      ">Celebrate the diverse heritage of African music\\. From the soulful rhythms of Wassoulou to the lively beats of Londonko\\.",
-      ">致敬非洲音乐的多元传承。从 Wassoulou 的灵魂律动到 Londonko 的活泼节拍。"
-    ],
-    [
       "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
       "aria-label=\"标签：\\1，\\2 篇文章\""
     ],
@@ -1006,18 +894,6 @@
       "<h3><a href=\"/zh-hans/zhuti/blockchain-digital-assets/index.html\">区块链与数字资产</a></h3>"
     ],
     [
-      "<p class=\"newsroom-lede\">Tracks to kick off the day or shift the room\\. Fashion\\-forward soul, vivid colour, and laid\\-back energy\\.</p>",
-      "<p class=\"newsroom-lede\">开启一天或调整氛围的曲目。时尚前卫的灵魂乐、鲜活的色彩与悠闲的能量。</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">Funky disco, French touch and electro\\. Energetic listening for movement, focus or the dance floor\\.</p>",
-      "<p class=\"newsroom-lede\">放克迪斯科、French touch 与 electro。适合运动、专注或舞池的有能量音乐。</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo\\-Fi\\. The full breadth of beats\\.</p>",
-      "<p class=\"newsroom-lede\">从原创嘻哈到硬核说唱，再到当代 R&B 与 Lo-Fi。节拍的全部宽度。</p>"
-    ],
-    [
       "<h1>Enterprise AI Banking (?:&amp;|&) Payment Software Suite</h1>",
       "<h1>面向银行与支付的企业级 AI 软件套件</h1>"
     ],
@@ -1036,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>出版物已迁移至研究页面</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"云原生银行\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"云原生银行 — 主题横幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hans/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/zh-hans/topics/cloud-native-banking/index.html\">云原生银行</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/zh-hans/zhuti/cloud-native-banking/index.html\">云原生银行</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">面向受监管机构的 Kubernetes 平台工程：按 DORA 标准验证的运营韧性、虚拟机与容器的融合、主权云、退出策略，以及让银行能在监管之下交付关键服务的架构。</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"银行业中的智能体 AI\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"银行业中的智能体 AI — 主题横幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hans/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/zh-hans/topics/agentic-ai-banking/index.html\">银行业中的智能体 AI</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/zh-hans/zhuti/agentic-ai-banking/index.html\">银行业中的智能体 AI</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">智能体控制平面、确定性语义路由、OPA 策略闸门、不可篡改的 WORM 审计日志，以及把自主工作流转化为可提交监管机构证据的 SR 11-7 / SS1/23 模型风险视角。</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"资金管理自动化\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"资金管理自动化 — 主题横幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hans/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/zh-hans/topics/treasury-automation/index.html\">资金管理自动化</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/zh-hans/zhuti/treasury-automation/index.html\">资金管理自动化</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">可编程流动性、自主资金管理、ISO 20022 支付引擎，以及把 CAMT / pacs.008 / MT940 / pain.001 转化为可审计、董事会级交易情报的开源工具包，服务于企业资金团队。</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"运营韧性与 DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"运营韧性与 DORA — 主题横幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hans/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/zh-hans/topics/operational-resilience-dora/index.html\">运营韧性与 DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/zh-hans/zhuti/operational-resilience-dora/index.html\">运营韧性与 DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">DORA 第 5 条下的董事会问责、BCBS 239 风险数据汇总、第三方集中度风险、退出测试，以及把运营韧性从合规项目变成可提交监管机构记分板的工程控制。</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"稳定币与代币化\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"稳定币与代币化 — 主题横幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hans/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/zh-hans/topics/stablecoins-tokenisation/index.html\">稳定币与代币化</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/zh-hans/zhuti/stablecoins-tokenisation/index.html\">稳定币与代币化</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">代币化存款、货币市场基金、大额央行数字货币试点、贝莱德的 BRSRV/BSTBL、GENIUS 法案，以及让可编程货币在受监管资产负债表内运转的工程选择。</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"生成式 AI 与大语言模型\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"生成式 AI 与大语言模型 — 主题横幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hans/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/zh-hans/topics/generative-ai-llms/index.html\">生成式 AI 与大语言模型</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/zh-hans/zhuti/generative-ai-llms/index.html\">生成式 AI 与大语言模型</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">基础模型、多模态大语言模型（Gemini、Gemma、Mistral、MM1）、提示工程，以及决定银行能在自有数据边界内构建什么的开源发布。</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"语音与言语 AI\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"语音与言语 AI — 主题横幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hans/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/zh-hans/topics/voice-speech-ai/index.html\">语音与言语 AI</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/zh-hans/zhuti/voice-speech-ai/index.html\">语音与言语 AI</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">语音克隆、实时语音识别（Whisper）、面向高管的语音助手，以及正在重塑私人银行客户体验的音频智能技术栈。</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"AI 治理与监管\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"AI 治理与监管 — 主题横幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hans/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/zh-hans/topics/ai-governance-regulation/index.html\">AI 治理与监管</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/zh-hans/zhuti/ai-governance-regulation/index.html\">AI 治理与监管</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">欧盟人工智能法案合规、SR 11-7 模型风险、董事会层面的问责、自主工作流的可审计性，以及一级银行内部的 AI 监管框架。</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"大额支付轨道\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"大额支付轨道 — 主题横幅\""
+    ],
+    [
+      "<h3><a href=\"/zh-hans/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/zh-hans/topics/wholesale-payments-rails/index.html\">大额支付轨道</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/zh-hans/zhuti/wholesale-payments-rails/index.html\">大额支付轨道</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">覆盖卡组织、账户到账户转账、RTP、FedNow、开放银行与稳定币走廊的多轨道策略。大额业务经济性、结算终局性，以及国际清算银行 Agorá 项目的跨境原子性模型。</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>密码学与韧性</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">密码学与韧性</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">后量子迁移、DORA 级别的运营韧性，以及金融服务中的 AI 治理框架。</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>支付与货币</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">支付与货币</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">ISO 20022 迁移、大额结算、稳定币、代币化存款，以及围绕它们的企业资金管理职能。</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>AI 与云</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI 与云</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">应用 AI、智能体系统、生成模型、语音与言语 AI，以及承载它们的云原生银行平台。</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>开源与匠艺</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">开源与匠艺</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Rust 库、区块链原语，以及支撑它们的开源工程纪律。</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">四大支柱、十四个主题集群、每一篇标注日期的文章。挑一条线索，沿着归档一路读下去。</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">支柱</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">支柱</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">主题集群</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">已收录文章</span>"
     ]
   ]
 }

@@ -111,7 +111,7 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 článek(y)</p>"
+      "Počet článků: \\1</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
@@ -163,7 +163,7 @@
     ],
     [
       ">About EPAA</a>",
-      "<>O EPAA</a>"
+      ">O EPAA</a>"
     ],
     [
       "title=\"Visit the Emerging Payments Association Asia\"",
@@ -179,7 +179,7 @@
     ],
     [
       ">Read the article</a>",
-      "<>Číst článek</a>"
+      ">Číst článek</a>"
     ],
     [
       " · Free download",
@@ -195,7 +195,7 @@
     ],
     [
       ">Request access<",
-      "<>Žádost o přístup<"
+      ">Žádost o přístup<"
     ],
     [
       ">English · PDF",
@@ -295,23 +295,23 @@
     ],
     [
       ">What kind of research and papers do you publish\\?</summary>",
-      ">¿Qué tipo de investigaciones y publikace publica?</summary>"
+      ">Jaký druh výzkumu a publikací vydáváte?</summary>"
     ],
     [
-      "(<summary[^>]*>¿Qué tipo de investigaciones y publicaciones publica\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Coexisten dos ejes. Los <strong>libros blancos sectoriales</strong>, producidos para organizaciones como la Emerging Payments Association Asia (EPAA), examinan las transformaciones estructurales de las infraestructuras de pago — recientemente el impacto de la computación cuántica criptográficamente relevante sobre los raíles de liquidación mayorista y en tiempo real. Los <strong>informes de investigación aplicada</strong> abordan temata técnicos concretos (por ejemplo: reconocimiento de voz en tiempo real con Whisper + Metal Performance Shaders en Apple Silicon) y se publican como PDF de compra individual.</p></section>"
+      "(<summary[^>]*>Quels types de recherches et publications publiez-vous \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Existují dvě souběžné linie. <strong>Oborové bílé knihy</strong>, vytvářené pro organizace jako Emerging Payments Association Asia (EPAA), zkoumají strukturální posuny v platební infrastruktuře — naposledy dopad kryptograficky významného kvantového počítání na velkoobchodní a okamžité zúčtovací koleje. <strong>Zprávy z aplikovaného výzkumu</strong> se zaměřují na konkrétní technické téma (například rozpoznávání řeči v reálném čase pomocí Whisper + Metal Performance Shaders na Apple Silicon) a vycházejí jako samostatně prodejné soubory PDF.</p></section>"
     ],
     [
       ">How often do you release new papers\\?</summary>",
-      ">¿Con qué frecuencia publica nuevos artículos?</summary>"
+      ">Jak často vydáváte nové články?</summary>"
     ],
     [
-      "(<summary[^>]*>¿Con qué frecuencia publica nuevos artículos\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Irregularmente, por preferencia por la calidad antes que por la cadencia. Las notas breves de investigación aparecen cada pocas semanas cuando un avance técnico lo justifica. Los libros blancos se publican en relación con ciclos sectoriales (por ejemplo: calendarios regulatorios, congresos de la EPAA).</p></section>"
+      "(<summary[^>]*>À quelle fréquence publiez-vous de nouveaux articles \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Nepravidelně, s důrazem na kvalitu před rytmem. Krátké výzkumné poznámky vycházejí každých několik týdnů, pokud to technický vývoj vyžaduje. Bílé knihy vycházejí v souladu s oborovými cykly (například regulační lhůty, konference EPAA).</p></section>"
     ],
     [
       ">About EPAA</p>",
-      "<>O EPAA</p>"
+      ">O EPAA</p>"
     ],
     [
       "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
@@ -367,51 +367,51 @@
     ],
     [
       ">Are the white papers free to read\\?</summary>",
-      ">¿Son los libros blancos de lectura gratuita?</summary>"
+      ">Jsou bílé knihy volně ke čtení?</summary>"
     ],
     [
       ">May I cite or quote from these papers\\?</summary>",
-      ">¿Puedo citar estos documentos?</summary>"
+      ">Mohu z těchto dokumentů citovat?</summary>"
     ],
     [
       ">Who is the intended audience\\?</summary>",
-      ">¿A quién van dirigidas estas publikace?</summary>"
+      ">Komu jsou tyto publikace určeny?</summary>"
     ],
     [
       ">Can I commission a paper or speak at an event\\?</summary>",
-      ">¿Puedo encargar un estudio o invitarle a una conferencia?</summary>"
+      ">Mohu si objednat studii nebo vás pozvat na konferenci?</summary>"
     ],
     [
       ">How do I follow new publications\\?</summary>",
-      ">¿Cómo seguir las nuevas publikace?</summary>"
+      ">Jak mohu sledovat nové publikace?</summary>"
     ],
     [
       ">Where can I follow new releases\\?</summary>",
-      ">¿Dónde puedo seguir las nuevas publikace?</summary>"
+      ">Kde mohu sledovat nová vydání?</summary>"
     ],
     [
-      "(<summary[^>]*>¿Son los libros blancos de lectura gratuita\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>El libro blanco de la EPAA <em>Quantum-Safe Payments</em> está disponible para descarga pública gratuita en <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. El informe de investigación independiente sobre reconocimiento de voz en tiempo real con OpenAI Whisper y Metal Performance Shaders está bajo licencia y disponible para compra individual a 49,00 $ (inglés, PDF, ~95 KB). Jedna kopie na kupujícího; descargas para uso personal únicamente, no redistribuibles.</p></section>"
+      "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Bílá kniha EPAA <em>Quantum-Safe Payments</em> je volně ke stažení zdarma na <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Nezávislá výzkumná zpráva o rozpoznávání řeči v reálném čase pomocí OpenAI Whisper a Metal Performance Shaders je licencovaná a k dispozici k samostatnému zakoupení za 49,00 $ (anglicky, PDF, přibližně 95 kB). Jedna kopie na kupujícího; stažené soubory jsou pouze pro osobní použití a nelze je dále šířit.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Puedo citar estos documentos\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Sí. Las citas breves con atribución son bienvenidas en el marco del fair use. Para las publikace de la EPAA, cite a la EPAA como editora junto con el grupo de trabajo, el año y la URL del PDF. Para los informes de investigación independientes, cite así: <em>Rousseau, S. (año). Título. Autopublicación.</em> con la URL canónica. Para reproducir una figura o un pasaje extenso, <a href=\"/cs/kontakt/\">póngase en kontakt</a> previamente.</p></section>"
+      "(<summary[^>]*>Puis-je citer ces documents \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ano. Krátké citace s uvedením zdroje jsou v rámci řádného užití vítány. U publikací EPAA uveďte EPAA jako vydavatele spolu s autorskou skupinou, rokem a odkazem na PDF. Nezávislé výzkumné zprávy se citují ve formátu: <em>Rousseau, S. (rok). Název. Vlastním nákladem.</em> spolu s právním odkazem. Pro reprodukci grafu nebo delšího odstavce nás prosím <a href=\"/cs/kontakt/\">kontaktujte</a> předem.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿A quién van dirigidas estas publicaciones\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Directores de pagos, CISO y arquitectos senior en bancos de primer nivel, bancos centrales, operadores de sistemata de pago y propietarios de esquemas. La investigación aplicada va dirigida a ingenieros y responsables de producto que construyen sobre grandes modelos de lenguaje, IA en dispositivo y criptografía resistente al cuántico. Cada artículo presupone conocimiento del dominio y omite los recordatorios que un profesional en activo ya posee.</p></section>"
+      "(<summary[^>]*>À qui s’adressent ces publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ředitelé plateb, manažeři bezpečnosti informací (CISO) a senior inženýři ve velkých bankách, centrálních bankách, provozovatelích platebních systémů a u vlastníků schémat. Aplikovaný výzkum je určen inženýrům a produktovým manažerům, kteří staví na velkých jazykových modelech, AI na zařízení a kryptografii odolné vůči kvantovým počítačům. Každý dokument předpokládá znalost oboru a vynechává připomínky, které praktikující profesionál už zná.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Puedo encargar un estudio o invitarle a una conferencia\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Sí — caso a caso, con selección previa. Los encargos versan sobre pagos mayoristas, migración a ISO 20022, criptografía postcuántica para los servicios financieros e Aplikovaná AI v bankovnictví. Las intervenciones en conferencias sectoriales, foros de bancos centrales y mesas redondas de reguladores se estudian caso a caso. Utilice el <a href=\"/cs/kontakt/\">formulario de kontakt</a> indicando el tema, la audiencia y el calendario.</p></section>"
+      "(<summary[^>]*>Puis-je commander une étude ou inviter à une conférence \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ano — případ od případu a na výběrovém základě. Zadané zakázky zahrnují velkoobchodní platby, migraci na ISO 20022, postkvantovou kryptografii pro finanční služby a aplikovanou AI v bankovnictví. Účast na oborových konferencích, fórech centrálních bank a setkáních regulátorů se posuzuje individuálně. Použijte <a href=\"/cs/kontakt/\">kontaktní formulář</a> s uvedením tématu, publika a časového rámce.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Cómo seguir las nuevas publicaciones\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Los nuevos artículos y notas de investigación se anuncian con prioridad mediante el <a href=\"/cs/rss.xml\">feed RSS</a> del sitio y la newsletter <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>, que cubre criptografía postcuántica, política de bancos centrales y la hoja de ruta de migración de los principales esquemas de pago. Žádný spam — pouze novinky.</p></section>"
+      "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Nové články a výzkumné poznámky se oznamují nejprve v <a href=\"/cs/rss.xml\">RSS kanálu</a> webu a v newsletteru <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>, který pokrývá postkvantovou kryptografii, politiku centrálních bank a plán migrace hlavních platebních schémat. Žádný spam — jen to nové.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Dónde puedo seguir las nuevas publicaciones\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Přihlaste se k odběru <a href=\"/cs/rss.xml\">feed RSS</a> o sígame en <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> para estar al tanto de las nuevas publikace.</p></section>"
+      "(<summary[^>]*>Où puis-je suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Přihlaste se k <a href=\"/cs/rss.xml\">RSS kanálu</a> nebo mě sledujte na <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a>, abyste byli informováni o nových vydáních.</p></section>"
     ],
     [
       ">Browse all projects<",
@@ -631,51 +631,51 @@
     ],
     [
       ">What licence are these projects released under\\?</summary>",
-      ">¿Bajo qué licencia se publican estos projekty?</summary>"
+      ">Pod jakou licencí jsou tyto projekty vydávány?</summary>"
     ],
     [
       ">Are these projects production-ready\\?</summary>",
-      ">¿Están estos projekty listos para producción?</summary>"
+      ">Jsou tyto projekty připravené pro produkci?</summary>"
     ],
     [
       ">How can I contribute or report an issue\\?</summary>",
-      ">¿Cómo puedo contribuir o reportar un problema?</summary>"
+      ">Jak mohu přispět nebo nahlásit problém?</summary>"
     ],
     [
       ">Can I use these libraries in a regulated banking environment\\?</summary>",
-      ">¿Puedo usar estas bibliotecas en un entorno bancario regulado?</summary>"
+      ">Mohu tyto knihovny použít v regulovaném bankovním prostředí?</summary>"
     ],
     [
       ">Do you offer commercial support or consulting\\?</summary>",
-      ">¿Ofrece soporte comercial o consultoría?</summary>"
+      ">Nabízíte komerční podporu nebo konzultace?</summary>"
     ],
     [
       ">How do I follow new releases\\?</summary>",
-      ">¿Cómo seguir las nuevas publikace?</summary>"
+      ">Jak mohu sledovat nová vydání?</summary>"
     ],
     [
-      "(<summary[^>]*>¿Bajo qué licencia se publican estos proyectos\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Todos los projekty se publican bajo licencia <strong>Apache-2.0</strong>. El archivo <code>LICENSE</code> en la raíz de cada repositorio es la fuente autoritativa.</p></section>"
+      "(<summary[^>]*>Sous quelle licence ces projets sont-ils publiés \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Všechny projekty jsou vydávány pod licencí <strong>Apache-2.0</strong>. Soubor <code>LICENSE</code> v kořeni každého repozitáře je závazným zdrojem.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Están estos proyectos listos para producción\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Depende del proyecto. Las bibliotecas marcadas como <em>v1.x</em> están estabilizadas y probadas bajo carga; las pre-v1 son bases sólidas pero pueden evolucionar. El README de cada repositorio detalla el estado actual; si necesita una garantía específica para uso en producción, <a href=\"/cs/kontakt/\">póngase en kontakt</a>.</p></section>"
+      "(<summary[^>]*>Ces projets sont-ils prêts pour la production \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Záleží na projektu. Knihovny označené <em>v1.x</em> jsou stabilní a testované pod zátěží; ty před v1 jsou pevným základem, ale mohou se ještě vyvíjet. Soubor README každého repozitáře uvádí aktuální stav; pokud potřebujete konkrétní záruku pro produkční nasazení, <a href=\"/cs/kontakt/\">kontaktujte mě</a>.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Cómo puedo contribuir o reportar un problema\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Cada proyecto dispone de un repositorio GitHub público en <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Abra una issue describiendo el problema (un reproductor mínimo es bienvenido) o una pull request vinculada a una issue. Las contribuciones se rigen por el <em>Developer Certificate of Origin</em> y requieren commits firmados.</p></section>"
+      "(<summary[^>]*>Comment puis-je contribuer ou signaler un problème \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Každý projekt má veřejný repozitář na GitHubu pod <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Založte issue s popisem problému (ideálně s minimálním příkladem k reprodukci) nebo pull request navázaný na issue. Příspěvky podléhají <em>Developer Certificate of Origin</em> a vyžadují podepsané commity.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Puedo usar estas bibliotecas en un entorno bancario regulado\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Sí, con las precauciones habituales. Las bibliotecas son trabajos de código abierto independientes y no un producto regulado. Aplique sus procesos habituales de supply chain, seguridad y revisión de dependencias — vendoring vía su espejo interno, escaneo SBOM, fijado por Git SHA o huella criptográfica — antes de cualquier despliegue en producción sobre infraestructura de pagos.</p></section>"
+      "(<summary[^>]*>Puis-je utiliser ces bibliothèques dans un environnement bancaire régulé \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ano, s obvyklou opatrností. Knihovny jsou nezávislá open-source díla, nikoli regulovaný produkt. Uplatněte své běžné postupy pro dodavatelský řetězec, bezpečnost a revizi závislostí — vendoring přes vaše interní zrcadlo, kontrolu SBOM, připnutí na Git SHA nebo kryptografický otisk — před jakýmkoli produkčním nasazením na platební infrastruktuře.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Ofrece soporte comercial o consultoría\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Sí, con selección previa. Los encargos versan sobre migración a ISO&nbsp;20022, hojas de ruta de migración postcuántica e IA aplicada a los servicios financieros. <a href=\"/cs/kontakt/\">Contacte conmigo</a> con un brief breve, su calendario y las restricciones aplicables.</p></section>"
+      "(<summary[^>]*>Proposez-vous du support commercial ou du conseil \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ano, na výběrovém základě. Zakázky se týkají migrace na ISO&nbsp;20022, plánů postkvantové migrace a aplikované AI ve finančních službách. <a href=\"/cs/kontakt/\">Kontaktujte mě</a> s krátkým zadáním, časovým rámcem a případnými omezeními.</p></section>"
     ],
     [
-      "(<summary[^>]*>¿Cómo seguir las nuevas publicaciones\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Cada artículo fechado del sitio se anuncia vía el <a href=\"/cs/rss.xml\">feed RSS</a> y la newsletter <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Los repositorios individuales también publican releases en GitHub que puede seguir directamente.</p></section>"
+      "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Každý datovaný článek na webu se oznamuje přes <a href=\"/cs/rss.xml\">RSS kanál</a> a newsletter <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Jednotlivé repozitáře také zveřejňují svá vydání na GitHubu, která můžete sledovat přímo.</p></section>"
     ],
     [
       ">GET IN TOUCH<",
@@ -683,7 +683,7 @@
     ],
     [
       ">Have an idea\\? Let's build it\\.<",
-      "<>Máte nápad? Postavme ho společně.<"
+      ">Máte nápad? Postavme ho společně.<"
     ],
     [
       ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
@@ -692,118 +692,6 @@
     [
       "<p class=\"newsroom-kicker\">FEATURED</p>",
       "<p class=\"newsroom-kicker\">DOPORUČENO</p>"
-    ],
-    [
-      ">Latest Music</h2>",
-      ">Nová hudba</h2>"
-    ],
-    [
-      ">Latest playlist</h2>",
-      ">Nový playlist</h2>"
-    ],
-    [
-      ">Soulful, jazz and downtempo</h2>",
-      ">Soulful, jazz a downtempo</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">MORNING & MOOD</p>",
-      "<p class=\"newsroom-kicker\">RÁNO & NÁLADA</p>"
-    ],
-    [
-      ">Morning, mood and chill</h2>",
-      ">Ráno, nálada a chill</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">ELECTRONIC</p>",
-      "<p class=\"newsroom-kicker\">ELEKTRONICKÁ</p>"
-    ],
-    [
-      ">Electronic, house and techno</h2>",
-      ">Elektronická, house a techno</h2>"
-    ],
-    [
-      ">Pop, rock and alternative</h2>",
-      ">Pop, rock a alternativa</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">FOCUS</p>",
-      "<p class=\"newsroom-kicker\">SOUSTŘEDĚNÍ</p>"
-    ],
-    [
-      ">Focus and productivity</h2>",
-      ">Soustředění a produktivita</h2>"
-    ],
-    [
-      ">Smooth Jazz, Neo Soul, and laid-back grooves[^<]+",
-      ">Smooth Jazz, Neo Soul a uvolněné groovy. Playlisty pro chvíle, kdy si den žádá zpomalit."
-    ],
-    [
-      ">This page has a comprehensive list[^<]+",
-      ">Esta página presenta una selección de las playlisty de Spotify más populares y aclamadas por la crítica, abarcando un amplio abanico de géneros. Sea fan del jazz, del soul, del hip-hop o de la música electrónica, encontrará una playlist a su gusto."
-    ],
-    [
-      ">Step into the harmonious realm of TETRA\\.[^<]+",
-      ">Vstupte do harmonické říše TETRA. Euforický playlist navržený k povznesení nálady a naplnění duše radostí."
-    ],
-    [
-      ">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">Uvolněte se a objevte esenci léta s tímto výběrem Jazz, Soul, R&amp;B a Neo Soul."
-    ],
-    [
-      ">A deep dive into the quintessential collection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">Hluboký ponor do kvintesenciální kolekce Jazz, Soul, R&amp;B a Neo Soul."
-    ],
-    [
-      ">Take a break from a busy day and relax with soothing nu jazz and downtempo beats\\.",
-      ">Udělejte si přestávku v rušném dni a uvolněte se s uklidňujícím nu jazz a downtempo."
-    ],
-    [
-      ">Soulful tracks with a fashion-forward vibe\\. Music to set the tone for a productive and stylish day\\.",
-      ">Témata soul con un aire vanguardista. La música ideal para marcar el tono de un día productivo y con estilo."
-    ],
-    [
-      ">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms\\.",
-      ">Oslavte radost ze života a ponořte se do světa živých emocí, zářivých barev a soulových rytmů."
-    ],
-    [
-      ">Laid-back beats, house-influenced grooves and new deep house tracks\\.",
-      ">Uvolněné beaty, house-inspirované groovy a nové perly deep house."
-    ],
-    [
-      ">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience\\.",
-      ">Plynulá směs funky disco, house, French touch a dalších žánrů pro ultra-cool a energickou hudební zážitek."
-    ],
-    [
-      ">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke\\.",
-      ">Zvuková cesta s Nu-Disco, French House, Electro a Disco House od umělců jako Madeon a Fred Falke."
-    ],
-    [
-      ">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks\\.",
-      ">Beats relajados, grooves de inspiración hip-hop y nuevos temata indie pop."
-    ],
-    [
-      ">Original Hip Hop, Rap and R(?:&amp;|&)B Flavor Sessions\\.",
-      ">Originální sezení s příchutí Hip Hop, Rap a R&amp;B."
-    ],
-    [
-      ">Brace yourself for hardcore rap and hip hop tracks\\.",
-      ">Připravte se na hardcore rap a hip hop."
-    ],
-    [
-      ">A few of the favourite hip-hop gems\\.",
-      ">Některé z oblíbených perel hip-hopu."
-    ],
-    [
-      ">Soulful beats and thoughtful lyrics\\. A captivating look into the world of contemporary hip hop, R(?:&amp;|&)B and rap\\.",
-      ">Soulové beaty a promyšlené texty. Strhující pohled na současný hip hop, R&amp;B a rap."
-    ],
-    [
-      ">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats\\.",
-      ">Uvolněné atmosféry a jemné rytmy v této úchvatné playlistu Lo-Fi Hip Hop."
-    ],
-    [
-      ">Celebrate the diverse heritage of African music\\. From the soulful rhythms of Wassoulou to the lively beats of Londonko\\.",
-      ">Oslavte bohatou rozmanitost africké hudby. Od soulových rytmů Wassoulou po živé beaty Londonko."
     ],
     [
       "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
@@ -1006,18 +894,6 @@
       "<h3><a href=\"/cs/temata/blockchain-digital-assets/index.html\">Blockchain &amp; digitální aktiva</a></h3>"
     ],
     [
-      "<p class=\"newsroom-lede\">Tracks to kick off the day or shift the room\\. Fashion\\-forward soul, vivid colour, and laid\\-back energy\\.</p>",
-      "<p class=\"newsroom-lede\">Témata para arrancar el día o cambiar el ambiente. Soul vanguardista, colores vivos y energía relajada.</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">Funky disco, French touch and electro\\. Energetic listening for movement, focus or the dance floor\\.</p>",
-      "<p class=\"newsroom-lede\">Funky disco, French touch a electro. Energický poslech pro pohyb, soustředění nebo taneční parket.</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo\\-Fi\\. The full breadth of beats\\.</p>",
-      "<p class=\"newsroom-lede\">Od originálních Hip Hop sezení po hardcore rap, přes současný R&B a Lo-Fi. Celá šíře beatů.</p>"
-    ],
-    [
       "<h1>Enterprise AI Banking (?:&amp;|&) Payment Software Suite</h1>",
       "<h1>Sada podnikového AI softwaru pro banky a platby</h1>"
     ],
@@ -1036,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Publikace se přestěhovaly do sekce Výzkum</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Cloud-native bankovnictví\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Cloud-native bankovnictví — banner tématu\""
+    ],
+    [
+      "<h3><a href=\"/cs/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/cs/topics/cloud-native-banking/index.html\">Cloud-native bankovnictví</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/cs/temata/cloud-native-banking/index.html\">Cloud-native bankovnictví</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Platformové inženýrství postavené na Kubernetes pro regulované instituce: provozní odolnost otestovaná podle DORA, konvergence virtuálních strojů a kontejnerů, suverénní cloud, výstupní strategie a architektura, která bankám umožňuje dodávat kritické služby pod dohledem.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"Agentní AI v bankovnictví\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"Agentní AI v bankovnictví — banner tématu\""
+    ],
+    [
+      "<h3><a href=\"/cs/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/cs/topics/agentic-ai-banking/index.html\">Agentní AI v bankovnictví</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/cs/temata/agentic-ai-banking/index.html\">Agentní AI v bankovnictví</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Řídicí roviny pro agenty, deterministické sémantické směrování, politické brány OPA, neměnné auditní záznamy WORM a pohled na modelové riziko podle SR 11-7 / SS1/23, který mění autonomní pracovní postupy v důkazy připravené pro dohled.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Automatizace treasury\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Automatizace treasury — banner tématu\""
+    ],
+    [
+      "<h3><a href=\"/cs/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/cs/topics/treasury-automation/index.html\">Automatizace treasury</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/cs/temata/treasury-automation/index.html\">Automatizace treasury</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Programovatelná likvidita, autonomní treasury, platební motory ISO 20022 a open-source nástroje, které mění CAMT / pacs.008 / MT940 / pain.001 v auditovatelnou transakční inteligenci na úrovni představenstva pro týmy podnikového treasury.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Provozní odolnost a DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Provozní odolnost a DORA — banner tématu\""
+    ],
+    [
+      "<h3><a href=\"/cs/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/cs/topics/operational-resilience-dora/index.html\">Provozní odolnost a DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/cs/temata/operational-resilience-dora/index.html\">Provozní odolnost a DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Odpovědnost představenstva podle článku 5 DORA, agregace rizikových dat podle BCBS 239, riziko koncentrace u třetích stran, testování výstupu a technické kontroly, které mění provozní odolnost z projektu compliance na výsledkovou tabuli připravenou pro dohled.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Stablecoiny a tokenizace\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Stablecoiny a tokenizace — banner tématu\""
+    ],
+    [
+      "<h3><a href=\"/cs/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/cs/topics/stablecoins-tokenisation/index.html\">Stablecoiny a tokenizace</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/cs/temata/stablecoins-tokenisation/index.html\">Stablecoiny a tokenizace</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Tokenizované vklady, fondy peněžního trhu, pilotní projekty velkoobchodní CBDC, BRSRV/BSTBL od BlackRock, zákon GENIUS a inženýrská rozhodnutí, díky nimž programovatelné peníze fungují uvnitř regulovaných rozvah.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"Generativní AI a LLM\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"Generativní AI a LLM — banner tématu\""
+    ],
+    [
+      "<h3><a href=\"/cs/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/cs/topics/generative-ai-llms/index.html\">Generativní AI a LLM</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/cs/temata/generative-ai-llms/index.html\">Generativní AI a LLM</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Základové modely, multimodální LLM (Gemini, Gemma, Mistral, MM1), prompt engineering a open-source vydání, která určují, co mohou banky stavět uvnitř vlastního datového perimetru.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"Hlasová a řečová AI\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"Hlasová a řečová AI — banner tématu\""
+    ],
+    [
+      "<h3><a href=\"/cs/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/cs/topics/voice-speech-ai/index.html\">Hlasová a řečová AI</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/cs/temata/voice-speech-ai/index.html\">Hlasová a řečová AI</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Klonování hlasu, rozpoznávání řeči v reálném čase (Whisper), hlasoví asistenti pro vedení a stack audio inteligence, který přetváří klientskou zkušenost v privátním bankovnictví.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"Správa a regulace AI\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"Správa a regulace AI — banner tématu\""
+    ],
+    [
+      "<h3><a href=\"/cs/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/cs/topics/ai-governance-regulation/index.html\">Správa a regulace AI</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/cs/temata/ai-governance-regulation/index.html\">Správa a regulace AI</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Soulad s evropským aktem o AI, modelové riziko podle SR 11-7, odpovědnost na úrovni představenstva, auditovatelnost autonomních pracovních postupů a regulační rámec AI ve velkých bankách.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Velkoobchodní platební koleje\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Velkoobchodní platební koleje — banner tématu\""
+    ],
+    [
+      "<h3><a href=\"/cs/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/cs/topics/wholesale-payments-rails/index.html\">Velkoobchodní platební koleje</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/cs/temata/wholesale-payments-rails/index.html\">Velkoobchodní platební koleje</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Vícekolejná strategie zahrnující karty, A2A, RTP, FedNow, otevřené bankovnictví a stablecoinové koridory. Velkoobchodní ekonomika, konečnost vypořádání a model přeshraniční atomicity z Projektu Agorá BIS.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Kryptografie a odolnost</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Kryptografie a odolnost</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Postkvantová migrace, provozní odolnost na úrovni DORA a rámec správy AI ve finančních službách.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Platby a peníze</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Platby a peníze</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Migrace na ISO 20022, velkoobchodní vypořádání, stablecoiny, tokenizované vklady a podniková funkce treasury kolem nich.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>AI a cloud</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI a cloud</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Aplikovaná AI, agentní systémy, generativní modely, hlasová a řečová AI a cloud-native bankovní platformy, které je hostí.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Open source a řemeslo</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open source a řemeslo</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Knihovny v Rustu, blockchainové primitivy a open-source inženýrská disciplína, která za nimi stojí.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Čtyři pilíře, čtrnáct tematických okruhů, každý datovaný článek. Vyberte si nit a sledujte ji archivem.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">PILÍŘ</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Pilíře</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Tematické okruhy</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Indexované články</span>"
     ]
   ]
 }

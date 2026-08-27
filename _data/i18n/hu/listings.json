@@ -1,0 +1,26 @@
+{
+  "_comment": "HU copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "HÍRFOLYAM",
+    "pageLabel": "{total} / {page}. oldal",
+    "visible": "látható",
+    "categoryLabel": "Kategória",
+    "yearLabel": "Év",
+    "allCategories": "Minden kategória",
+    "allYears": "Minden év",
+    "filterAria": "Cikkek szűrése",
+    "listAria": "Cikk-kártyák",
+    "paginationAria": "Lapozás",
+    "emptyState": "Egyetlen cikk sem felel meg a jelenlegi szűrőknek.",
+    "previous": "Előző",
+    "next": "Következő"
+  },
+  "pillars": {
+    "ai": "Alkalmazott MI",
+    "payments": "Fizetések és pénz",
+    "infra": "Infrastruktúra és kriptográfia",
+    "policy": "Szabályozás és ellenálló képesség",
+    "open-source": "Nyílt forráskód",
+    "leadership": "Banki vezetés"
+  }
+}

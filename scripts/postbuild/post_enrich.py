@@ -461,7 +461,7 @@ def _related_grid_html(related: list[dict[str, object]], post: dict[str, object]
             '<footer class="related-body">'
             f'<h3><a href="{url}">{r["title"]}</a></h3>'
             f'<p><time datetime="{r["date_iso"]}">{r["date_iso"]}</time></p>'
-            '</footer></article>'
+            "</footer></article>"
         )
     out.append("</div>")
     out.append("</aside>")
@@ -478,8 +478,7 @@ def _append_enrich_block(
     body_text = ENRICH_BLOCK_RE.sub("", body_text)
     block: list[str] = ["", "<!-- enrich-start -->", _AUTHOR_CARD_HTML]
     block.append(
-        f'<p class="post-reviewed">Last reviewed '
-        f'<time datetime="{reviewed}">{reviewed}</time>.</p>'
+        f'<p class="post-reviewed">Last reviewed <time datetime="{reviewed}">{reviewed}</time>.</p>'
     )
     block.extend(_related_grid_html(related, post))
     block.append("<!-- enrich-end -->")
@@ -513,6 +512,7 @@ def main() -> None:
     lead block, (4) bottom enrichment block.
     """
     import argparse
+
     parser = argparse.ArgumentParser(description="Enrich dated blog posts.")
     # `--dir` is REQUIRED, with no default — see ADR-0003. This enricher
     # rewrites post bodies in place; defaulting to `_posts` meant a bare run
@@ -552,4 +552,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

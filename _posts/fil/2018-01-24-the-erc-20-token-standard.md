@@ -1,71 +1,70 @@
 ---
-title: "معيار التوكن ERC-20"
+title: "Ang pamantayang token na ERC-20"
 tags: "Ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, Solidity, ISO 20022, post-quantum cryptography, AI, stablecoins"
-subtitle: "الواجهة الموحَّدة التي أتاحت لمنظومة Ethereum أن تزدهر"
-description: "ERC-20: أكثر أنواع التوكنات شيوعاً على بلوكشين Ethereum، يُوصف كثيراً بأنّه عقد رقمي ذكي (smart contract)."
+subtitle: "Paano pinag-isa ng ERC-20 ang arkitektura ng token sa Ethereum, at kung bakit ito naging katalista ng desentralisadong pinansiya."
+description: "Ang pamantayang ERC-20: ang anim na pangunahing punsiyon at dalawang pangyayaring tinutukoy nito, kung paano nito inalis ang pagkakawatak-watak ng arkitektura ng token sa Ethereum, at ang epekto nito sa DeFi at sa seguridad."
 date: "January 24, 2018"
 language: "fil-PH"
 locale: "fil_PH"
 banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
-banner_alt: "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية"
-keywords: "ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, التشغيل البيني, DApps, المعيار"
+banner_alt: "Isang nakapatay na laptop sa ibabaw ng kayumangging mesang kahoy"
+keywords: "ERC-20, Ethereum, pamantayang token, smart contract, DeFi, desentralisadong pinansiya, interoperabilidad, DApps, seguridad ng token, blockchain"
 ---
+![Isang nakapatay na laptop sa ibabaw ng kayumangging mesang kahoy](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"
 
-![حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"
+## Ang pamantayang token na ERC-20
 
-## معيار التوكن ERC-20
+### Ang pangangailangan ng isang pinag-isang interface ng token
 
-### الحاجة إلى واجهة توكن موحّدة
+Bago sumulpot ang pamantayang ERC-20 (Ethereum Request for Comments 20), ang blockchain ng Ethereum ay tila lupang walang batas pagdating sa arkitektura ng token. Ang bawat bagong token ay may sarili nitong hanay ng patakaran, punsiyon, at interface. Hindi lamang nito ipinapasan sa mga developer ang mabigat na kurba ng pagkatuto, kundi hinahadlangan din nito ang interoperabilidad ng mga token. Sa esensiya, ang bawat bagong token ay parang isang bagong wikang kailangang pag-aralan, unawain, at ipatupad. Napigil ng pagkakawatak-watak na ito ang kakayahang lumawak at ang malawakang pagtanggap sa mga token sa plataporma ng Ethereum.
 
-قبل ظهور معيار ERC-20 (Ethereum Request for Comments 20)، كانت بلوكشين Ethereum أشبه بالغرب المتوحّش لمعماريّات التوكنات. فكلّ توكن جديد كان يحمل مجموعةً خاصّة به من القواعد والدوال والواجهات. ولم يكن ذلك يُلقي على المطوّرين عبء منحنى تعلّمٍ مُرهق فحسب، بل كان يُعيق التشغيل البيني للتوكنات أيضاً. وفي جوهر الأمر، كان كلّ توكن جديد أشبه بلغةٍ جديدة تتعيّن دراستها وفهمها وتنفيذها. وقد أعاق هذا التشظّي قابلية التوسّع والتبنّي الواسع للتوكنات على منصّة Ethereum.
+Ang pagsulpot ng pamantayang ERC-20 ay gumanap na tila isang pinag-isang wika, sapagkat naglatag ito ng magkakabahaging hanay ng patakaran at punsiyon na sinusunod ng lahat ng token sa Ethereum. Ngayon ay may isa nang magkatugmang interface ang mga developer na mapagtatrabahuhan, anuman ang tokeng tinutukoy. Pinasimple ng pagsasapamantayang ito ang pakikipag-ugnayan sa mga token, kaya naging mas maayos ang pagsasanib nito sa iba't ibang aplikasyon at serbisyo. Bunga nito, mas mabisa nang natatrato ng mga developer ang mga token, na naghahanda ng kapaligirang kaaya-aya sa inobasyon at paglago sa loob ng ekosistema ng Ethereum.
 
-وقد أدّى ظهور معيار ERC-20 دور لغةٍ موحّدة، إذ وضع مجموعةً مشتركة من القواعد والدوال التي يلتزم بها جميع توكنات Ethereum. وصار للمطوّرين الآن واجهةٌ متّسقة يعملون بها، أيّاً كان التوكن المعني. وقد بسّط هذا التوحيد عمليات التفاعل مع التوكنات، فأتاح اندماجاً أكثر سلاسةً في تطبيقاتٍ وخدماتٍ متنوّعة. ونتيجةً لذلك، صار بمقدور المطوّرين التعامل بفاعليّة أكبر مع التوكنات، ما يُهيّئ بيئةً مواتية للابتكار والنموّ ضمن منظومة Ethereum.
+#### Ang lupang walang batas ng arkitektura ng token
 
-#### الغرب المتوحّش لمعماريّات التوكنات
+Ang blockchain ng Ethereum ay orihinal na idinisenyo upang suportahan ang iisang uri ng token: ang ETH. Gayunman, habang lumalago ang katanyagan ng plataporma, sinimulan ng mga developer na lumikha ng sarili nilang token upang katawanin ang iba't ibang ari-arian at konsepto. Nagbunga ito ng pagdami ng magkakaibang arkitektura ng token, bawat isa ay may sariling hanay ng patakaran at punsiyon.
 
-صُمِّمت بلوكشين Ethereum في الأصل لدعم نوعٍ واحد من التوكنات: ETH. غير أنّه مع تنامي شعبية المنصّة، شرع المطوّرون في إنشاء توكناتهم الخاصّة لتمثيل تشكيلةٍ من الأصول والمفاهيم. وأفضى ذلك إلى تكاثر معماريّاتٍ مختلفة للتوكنات، كلٌّ منها بمجموعتها الخاصّة من القواعد والدوال.
+Dahil sa pagkakawatak-watak na ito, naging mahirap para sa mga developer ang lumikha ng aplikasyong nakikipag-ugnayan sa maraming token. Naging mahirap din para sa mga gumagamit ang pangasiwaan ang kanilang mga ari-ariang token sa iba't ibang plataporma.
 
-وقد جعل هذا التشظّي من العسير على المطوّرين إنشاء تطبيقاتٍ تتفاعل مع توكناتٍ متعدّدة. كما صعّب على المستخدمين إدارة أصولهم من التوكنات عبر منصّاتٍ مختلفة.
+#### Ang pamantayang ERC-20
 
-#### معيار ERC-20
+Inilunsad ang pamantayang ERC-20 noong 2015 upang harapin ang mga hamong dulot ng lupang walang batas ng arkitektura ng token. Tinutukoy ng pamantayan ang magkakabahaging hanay ng patakaran at punsiyon na sinusunod ng lahat ng token sa Ethereum. Pinadadali ng pagsasapamantayang ito sa mga developer ang paglikha ng aplikasyong kayang makipag-ugnayan sa alinmang tokeng ERC-20, at pinadadali rin nito sa mga gumagamit ang pangangasiwa ng kanilang ari-arian.
 
-طُرح معيار ERC-20 عام 2015 لمواجهة التحدّيات التي فرضها الغرب المتوحّش لمعماريّات التوكنات. ويُحدّد المعيار مجموعةً مشتركة من القواعد والدوال التي يلتزم بها جميع توكنات Ethereum. وهذا التوحيد يُسهّل على المطوّرين إنشاء تطبيقاتٍ قادرة على التفاعل مع أيّ توكن ERC-20، ويُسهّل على المستخدمين كذلك إدارة أصولهم.
+Malawakang tinanggap ng komunidad ng Ethereum ang pamantayang ERC-20. Sa kasalukuyan, mahigit 200,000 na ang bilang ng umiiral na tokeng ERC-20, at ginagamit ang pamantayan sa malawak na hanay ng aplikasyon, kabilang na ang mga desentralisadong palitan, ang mga plataporma ng pagpapautang, at ang mga desentralisadong aplikasyon sa paglalaro.
 
-وقد تبنّى مجتمع Ethereum معيار ERC-20 على نطاقٍ واسع. واليوم، يتجاوز عدد توكنات ERC-20 الموجودة 200,000 توكن، ويُستخدم المعيار في طائفةٍ واسعة من التطبيقات، من بينها المنصّات اللامركزية ومنصّات الإقراض وتطبيقات الألعاب اللامركزية.
+## Ang ideya
 
-## الفكرة
+### Isang magkakabahaging hanay ng punsiyon at katangian para sa lahat ng token
 
-### مجموعة دوال وخصائص مشتركة لجميع التوكنات
+Tinutukoy ng pamantayang ERC-20 ang anim na pangunahing punsiyong dapat ipatupad ng lahat ng tugmang token. Ang mga punsiyong ito ay:
 
-يُحدّد معيار ERC-20 ستّ دوال جوهرية يجب أن تُنفّذها جميع التوكنات المتوافقة. وهذه الدوال هي:
+- `transfer(address to, uint256 amount)`: naglilipat ng dami ng token mula sa adres ng tumatawag tungo sa tinukoy na adres.
+- `approve(address spender, uint256 amount)`: pinahihintulutan ang tinukoy na adres na gumastos ng dami ng token sa ngalan ng tumatawag.
+- `allowance(address owner, address spender)`: ibinabalik ang dami ng tokeng pinapayagang gastusin ng tinukoy na `spender` sa ngalan ng tinukoy na `owner`.
+- `totalSupply()`: ibinabalik ang kabuuang bilang ng tokeng nasa sirkulasyon.
+- `balanceOf(address owner)`: ibinabalik ang bilang ng tokeng pag-aari ng tinukoy na adres.
+- `name()`: ibinabalik ang pangalan ng token.
+- `symbol()`: ibinabalik ang simbolo ng token.
 
-- `transfer(address to, uint256 amount)`: يُحوّل مقداراً من التوكنات من عنوان المُستدعي إلى العنوان المُحدّد.
-- `approve(address spender, uint256 amount)`: يُفوّض العنوان المُحدّد لإنفاق مقدارٍ من التوكنات نيابةً عن المُستدعي.
-- `allowance(address owner, address spender)`: يُرجع مقدار التوكنات الذي يُسمح لـ `spender` المُحدّد بإنفاقه نيابةً عن `owner` المُحدّد.
-- `totalSupply()`: يُرجع إجمالي عدد التوكنات المتداولة.
-- `balanceOf(address owner)`: يُرجع عدد التوكنات التي يملكها العنوان المُحدّد.
-- `name()`: يُرجع اسم التوكن.
-- `symbol()`: يُرجع رمز التوكن.
+Tinutukoy din ng pamantayan ang dalawang pangyayaring dapat ilabas kapag matagumpay na naisagawa ang katumbas na punsiyon:
 
-كما يُحدّد المعيار حدَثَين يجب إصدارهما عند التنفيذ الناجح للدوال المقابلة:
+- `Transfer(address from, address to, uint256 amount)`: inilalabas kapag naglipat ng dami ng token mula sa isang adres tungo sa iba.
+- `Approval(address owner, address spender, uint256 amount)`: inilalabas kapag binigyan ang tinukoy na adres ng pahintulot na gumastos ng dami ng token sa ngalan ng tinukoy na `owner`.
 
-- `Transfer(address from, address to, uint256 amount)`: يُصدَر عند تحويل مقدارٍ من التوكنات من عنوانٍ إلى آخر.
-- `Approval(address owner, address spender, uint256 amount)`: يُصدَر عند منح العنوان المُحدّد إذناً بإنفاق مقدارٍ من التوكنات نيابةً عن `owner` المُحدّد.
+## Ang epekto
 
-## الأثر
+### Ang paglago ng desentralisadong pinansiya (DeFi) at ang pagdami ng gumagamit ng Ethereum
 
-### نموّ التمويل اللامركزي (DeFi) وزيادة تبنّي Ethereum
+Nagdulot ang pamantayang ERC-20 ng nadaramang epekto sa ekosistema ng Ethereum. Naging mahalaga itong katalista ng kilusang desentralisadong pinansiya (DeFi), at nag-ambag din ito sa paglawak ng pagtanggap sa Ethereum.
 
-أحدث معيار ERC-20 أثراً ملموساً في منظومة Ethereum. فقد كان محفّزاً جوهريّاً لحركة التمويل اللامركزي (DeFi)، وأسهم كذلك في توسيع تبنّي Ethereum.
+Ang mga plataporma ng desentralisadong pinansiya, na naghahandog ng hanay ng serbisyong pinansiyal mula pagpapautang hanggang pangangasiwa ng ari-arian, ay lubhang umaasa sa mga token upang mapadali ang mga transaksiyon. Sa paggampan ng ERC-20 bilang pandaigdigang konektor, naging higit na madali para sa mga aplikasyong DeFi ang isanib ang malawak na hanay ng token nang hindi kailangang iangkop ang kanilang kodigo sa bawat token.
 
-وتعتمد منصّات التمويل اللامركزي، التي تُقدّم باقةً من الخدمات المالية تتراوح من الإقراض إلى إدارة الأصول، اعتماداً كبيراً على التوكنات لتيسير المعاملات. ومع قيام ERC-20 بدور المُوصِّل الكوني، صار من الأيسر بكثيرٍ على تطبيقات DeFi دمج طيفٍ واسع من التوكنات دون الحاجة إلى تخصيص شيفرتها لكلّ توكن.
+Pinadali rin ng pamantayan sa mga gumagamit ang pangangasiwa ng kanilang mga ari-ariang token. Dahil sumusunod ang mga token sa iisang saligang patakaran, mas madali nang nailulipat, nagagastos, at napangangasiwaan ng mga gumagamit ang kanilang ari-arian sa iba't ibang plataporma. Ang pagbuting ito sa karanasan ng gumagamit ang naging pampasigla sa mas mataas na antas ng pagtanggap sa Ethereum.
 
-كما يسّر المعيار على المستخدمين إدارة أصولهم من التوكنات. فمع التزام التوكنات بالقواعد الأساسية نفسها، يجد المستخدمون سهولةً أكبر في تحويل أصولهم وإنفاقها وإدارتها عبر منصّاتٍ متعدّدة. وقد كان تحسّن تجربة المستخدم هذا محرّكاً لارتفاع معدّلات تبنّي Ethereum.
+## Ang mga insentibo
 
-## الحوافز
+### Pagbaba ng gastos sa pagpapaunlad at pagtibay ng seguridad
 
-### خفض كلفة التطوير وتعزيز الأمان
+Ang pagsasapamantayang dala ng protokol na ERC-20 ay nag-iwan din ng tuwirang epektong pang-ekonomiya. Sa paglalaan ng isang nasubok at kinikilala ng komunidad na balangkas para sa paglikha ng token, malaki ang ibinaba ng pamantayan sa hadlang sa pagpasok ng mga developer. Kaya na nilang lumikha ngayon ng bagong token nang may mas mababang gastos sa pagpapaunlad at mas mabilis na pagpasok sa pamilihan, nang hindi na kailangang muling likhain ang gulong. Hinihikayat din ng pamantayan, sa di-tuwirang paraan, ang paglikha ng mga desentralisadong aplikasyon (DApps) at serbisyong kayang makipag-ugnayan sa pandaigdigang saklaw sa alinmang tokeng ERC-20, na nagpapasigla naman sa isang lalong masiglang ekosistema.
 
-ترك التوحيد الذي أتى به بروتوكول ERC-20 أثراً اقتصادياً مباشراً أيضاً. فبتوفيره مخطّطاً مُختبَراً ومعتمداً من المجتمع لإنشاء التوكنات، خفض المعيار خفضاً كبيراً عتبات الدخول أمام المطوّرين. فبات بإمكانهم الآن إنشاء توكنٍ جديد بكلفة تطويرٍ أقلّ ووصولٍ أسرع إلى السوق، دون الحاجة إلى إعادة اختراع العجلة. ويُشجّع المعيار أيضاً، بصورةٍ غير مباشرة، إنشاء تطبيقاتٍ لامركزية (DApps) وخدماتٍ قادرة على التفاعل عالميّاً مع أيّ توكن ERC-20، ما يُغذّي منظومةً أكثر حيوية.
-
-ومن المزايا اللافتة الأخرى تعزيز الأمان. فقد خضع معيار ERC-20 لتدقيقٍ صارم من مجتمع Ethereum، ما جعله نموذجاً متيناً وآمناً لتنفيذ التوكنات. والالتزام بهذا المعيار يعني أنّ الجوانب الأساسية للعقد الذكي للتوكن تتّبع أفضل الممارسات المقبولة من المجتمع. وهذا يُقلّص خطر الثغرات الأمنية التي قد تنجم عن نموذج توكن مُصمَّم تصميماً قاصراً. وفي حين أنّ ذلك لا يُشكّل ضماناً ضدّ جميع أنواع الثغرات، فإنّه خطوةٌ جوهريّة نحو ضمان الأمان الإجمالي للتوكنات، وبالتالي للمشاريع التي تستخدمها.
+Isa pang kapansin-pansing bentahe ang pagtibay ng seguridad. Sumailalim ang pamantayang ERC-20 sa mahigpit na pagsusuri ng komunidad ng Ethereum, kaya naging matatag at ligtas itong modelo para sa pagpapatupad ng token. Ang pagsunod sa pamantayang ito ay nangangahulugang sinusunod ng mga pangunahing bahagi ng smart contract ng token ang pinakamahusay na kasanayang tinatanggap ng komunidad. Binabawasan nito ang panganib ng butas sa seguridad na maaaring idulot ng isang kulang sa disenyong modelo ng token. Bagaman hindi ito garantiya laban sa lahat ng uri ng kahinaan, isa itong mahalagang hakbang tungo sa pagtiyak ng pangkalahatang seguridad ng mga token, at samakatwid ng mga proyektong gumagamit ng mga ito.

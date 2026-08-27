@@ -154,10 +154,7 @@ def main() -> int:
         if n > 0:
             total_files += 1
             total_links += n
-    print(
-        f"fix_lang_switcher: rewrote {total_links} switcher link(s) "
-        f"across {total_files} page(s)"
-    )
+    print(f"fix_lang_switcher: rewrote {total_links} switcher link(s) across {total_files} page(s)")
     return 0
 
 

@@ -76,8 +76,7 @@ def check_page(path: Path) -> list[str]:
         seen: list[str] = []
         _walk_inlanguage(data, seen)
         problems.extend(
-            f"{rel}: inLanguage={tag!r} (base {_base_lang(tag)!r}) "
-            f"≠ <html lang> base {page_lang!r}"
+            f"{rel}: inLanguage={tag!r} (base {_base_lang(tag)!r}) ≠ <html lang> base {page_lang!r}"
             for tag in seen
             if _base_lang(tag) != page_lang
         )

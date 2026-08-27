@@ -189,6 +189,16 @@ fi
 # <script> the hub generator emits. The data module is real captured
 # tools/call transcripts (see the file header for capture date + servers);
 # the component performs no network calls, so no CSP change is required.
+# Official "Listen on Apple Music" badge, downloaded from Apple's Marketing
+# Tools toolbox. Apple's identity guidelines require the artwork be used
+# unaltered, so it ships as a file and is referenced with <img> rather than
+# inlined and restyled. Same staging pattern as the JS above: land it in
+# public/_csp/ before postbuild so the asset pipeline handles it.
+if [[ -f assets/img/listen-on-apple-music.svg ]]; then
+  mkdir -p public/_csp
+  cp -f assets/img/listen-on-apple-music.svg public/_csp/listen-on-apple-music.svg
+fi
+
 if [[ -d assets/js/mcp-simulator ]]; then
   mkdir -p public/_csp
   cp -f assets/js/mcp-simulator/iso20022-simulator-core.js public/_csp/iso20022-simulator-core.js
@@ -270,6 +280,59 @@ for f in public/sw.*.js; do
   [[ "$short" == "$base" ]] && continue
   cp -f "$f" "public/$short"
 done
+
+# Point the service worker's precache list at the fingerprinted filenames.
+#
+# sw.js lists "/main.js" and "/highlight.css" by bare name, but asset
+# fingerprinting emits main.<hash>.js / highlight.<hash>.css and the bare
+# aliases are deliberately no longer written (see the note above: they were
+# referenced by 0 of 6,856 pages). That measurement counted pages and missed
+# sw.js, which is not HTML and so is never touched by postbuild's
+# stamp_asset_fingerprints() rewrite.
+#
+# The consequence is not a cosmetic 404: cache.addAll() is atomic, so one
+# missing entry rejects the whole batch and NOTHING is precached — including
+# the offline page the worker exists to serve. The rejection is caught and
+# discarded, so it fails silently.
+#
+# Resolve the real names here (they exist by now; ssg emitted them above) and
+# fail the build if the rewritten list does not resolve on disk.
+python3 - <<'SWFIX'
+import pathlib, re, sys
+
+pub = pathlib.Path("public")
+subs = {}
+for bare, pattern in (("main.js", "main.*.js"), ("highlight.css", "highlight.*.css")):
+    hits = sorted(q.name for q in pub.glob(pattern) if q.name != bare)
+    if len(hits) == 1:
+        subs[bare] = hits[0]
+    elif hits:
+        sys.exit(f"sw precache: ambiguous fingerprint for {bare}: {hits}")
+
+changed = 0
+for sw in list(pub.glob("sw.*.js")) + [pub / "sw.js"]:
+    if not sw.is_file():
+        continue
+    src = sw.read_text()
+    out = src
+    for bare, fp in subs.items():
+        out = out.replace(f'"/{bare}"', f'"/{fp}"')
+    if out != src:
+        sw.write_text(out)
+        changed += 1
+
+sw = pub / "sw.js"
+if sw.is_file():
+    listed = re.search(r"PRECACHE\s*=\s*\[(.*?)\]", sw.read_text(), re.S)
+    missing = [
+        u for u in re.findall(r'"(/[^"]+)"', listed.group(1) if listed else "")
+        if not (pub / u.lstrip("/")).exists() and not u.endswith("/")
+    ]
+    if missing:
+        sys.exit(f"sw precache references files not in the build: {missing}")
+
+print(f"    service worker  : precache repointed in {changed} file(s); all entries resolve")
+SWFIX
 
 # Rewrite syntect Base16 Ocean Dark inline styles to AAA-compliant values.
 #
@@ -436,10 +499,16 @@ python3 tests/validation/test_i18n_labels.py
 python3 tests/validation/test_i18n_takeaway_labels.py
 python3 tests/validation/test_i18n_render_data.py
 python3 tests/validation/test_i18n_author.py
+python3 tests/validation/test_i18n_playlists.py
+python3 tests/validation/test_i18n_listings.py
+python3 tests/validation/test_i18n_projects.py
+python3 tests/validation/test_i18n_speaking.py
+python3 tests/validation/test_i18n_cross_locale_script.py
 python3 tests/validation/test_hreflang_reciprocity.py
 python3 tests/validation/test_jsonld_localized.py
 python3 tests/validation/test_sitemap_completeness.py
 python3 tests/validation/test_lang_no_leakage.py
+python3 tests/validation/test_body_translation.py
 python3 tests/validation/test_rtl_safe.py --strict
 # Locale slug policy (ADR-0012): every locale localises its article slugs.
 # Ratcheted — fails only when a locale goes backwards against the recorded

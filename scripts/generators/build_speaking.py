@@ -44,6 +44,7 @@ try:
     # <meta>/<link> tags, bounded to the <head>…</head> slice.
     from build_case_studies import _unescape_head_metas
 except ImportError:  # pragma: no cover — local head-bounded copy until shared
+
     def _unescape_head_metas(html_text: str) -> str:
         """Repair entity-escaped ``<meta>`` / ``<link>`` tags some local SSG
         builds emit in the shell's <head>. No-op on CI (tags are real there).
@@ -59,6 +60,7 @@ except ImportError:  # pragma: no cover — local head-bounded copy until shared
         )
         return head + html_text[end:]
 
+
 ROOT = Path(__file__).resolve().parents[2]
 PUBLIC = ROOT / "public"
 SPEAKING_MD = ROOT / "_data" / "proof" / "speaking.md"
@@ -71,9 +73,22 @@ URL = f"{BASE_URL}/speaking/"
 # in prose. Longest-first so multi-token names match before their fragments.
 _MONO_TERMS = sorted(
     [
-        "ISO 20022", "pacs.008", "pain.001", "head.001", "FIPS 203", "NIST PQC",
-        "SR 11-7", "SS1/23", "BIC/IBAN/LEI", "UETR", "WORM", "DORA", "SWIFT",
-        "OAuth", "OPA", "BAH",
+        "ISO 20022",
+        "pacs.008",
+        "pain.001",
+        "head.001",
+        "FIPS 203",
+        "NIST PQC",
+        "SR 11-7",
+        "SS1/23",
+        "BIC/IBAN/LEI",
+        "UETR",
+        "WORM",
+        "DORA",
+        "SWIFT",
+        "OAuth",
+        "OPA",
+        "BAH",
     ],
     key=len,
     reverse=True,
@@ -138,7 +153,7 @@ def _mark_nav_active(html_text: str) -> str:
     chrome."""
     if '<ul class="ap-menu">' not in html_text:
         raise SystemExit(
-            "build_speaking: primary nav (<ul class=\"ap-menu\">) not found "
+            'build_speaking: primary nav (<ul class="ap-menu">) not found '
             "in the shell (nav markup changed?)"
         )
     out = html_text.replace(
@@ -189,27 +204,30 @@ def _hero(d: dict, booking: str) -> str:
         f'<div class="spk-hero-photo"><img src="{_esc(portrait)}" '
         f'alt="{_esc(bio.get("portrait_alt", ""))}" width="440" height="550" '
         'fetchpriority="high" decoding="async" /></div>'
-        if portrait else ""
+        if portrait
+        else ""
     )
     nudge_txt = h.get("press_nudge", "")
     nudge_cta = h.get("press_nudge_cta", "")
     nudge_link = (
         f' <a href="#spk-media" class="spk-textlink">{_esc(nudge_cta)} '
         '<span aria-hidden="true">&#8594;</span></a>'
-        if nudge_cta else ""
+        if nudge_cta
+        else ""
     )
     nudge_html = (
         f'<p class="spk-press-nudge">{_esc(nudge_txt)}{nudge_link}</p>'
-        if (nudge_txt or nudge_cta) else ""
+        if (nudge_txt or nudge_cta)
+        else ""
     )
     return (
         '<header class="spk-hero" id="spk-top"><div class="spk-hero-grid"><div>'
         f'<span class="spk-eyebrow">{_esc(h.get("eyebrow", ""))}</span>'
-        f'<h1>{_esc(h.get("headline", ""))}</h1>'
+        f"<h1>{_esc(h.get('headline', ''))}</h1>"
         f'<p class="spk-lede">{_esc(h.get("lede", ""))}</p>'
         '<div class="spk-cta-row">'
         f'<a href="{_esc(booking)}" class="spk-btn spk-btn-primary">'
-        f'{_esc(h.get("primary_cta", "Invite me to speak"))} {_arrow()}</a>'
+        f"{_esc(h.get('primary_cta', 'Invite me to speak'))} {_arrow()}</a>"
         f'<a href="#spk-keynotes" class="spk-btn spk-btn-ghost">{_esc(h.get("secondary_cta", "Explore keynotes"))}</a>'
         "</div>"
         f"{nudge_html}"
@@ -276,8 +294,8 @@ def _paths(d: dict, booking: str) -> str:
         cards.append(
             '<div class="spk-path">'
             f'<span class="spk-eyebrow">{_esc(it.get("eyebrow", ""))}</span>'
-            f'<h3>{_esc(it.get("title", ""))}</h3>'
-            f'<p>{_esc(it.get("body", ""))}</p>'
+            f"<h3>{_esc(it.get('title', ''))}</h3>"
+            f"<p>{_esc(it.get('body', ''))}</p>"
             f"<ul>{bullets}</ul>"
             f'<a href="{_esc(href)}" class="spk-btn {primary}">{_esc(it.get("cta_label", ""))}</a>'
             "</div>"
@@ -305,7 +323,7 @@ def _keynotes(d: dict, booking: str) -> str:
         cards.append(
             '<article class="spk-talk">'
             f'<div class="{flag_cls}">{_esc(flag_txt)}</div>'
-            f'<h3>{_esc(t.get("title", ""))}</h3>'
+            f"<h3>{_esc(t.get('title', ''))}</h3>"
             f'<p class="spk-desc">{_rich(t.get("desc", ""))}</p>'
             f'<p class="spk-outcome"><b>{_esc(out_label)}</b> {_rich(t.get("outcome", ""))}</p>'
             '<div class="spk-talk-foot">'
@@ -316,10 +334,10 @@ def _keynotes(d: dict, booking: str) -> str:
     if custom.get("title"):
         cards.append(
             '<article class="spk-talk spk-talk-cta">'
-            f'<h3>{_esc(custom.get("title", ""))}</h3>'
+            f"<h3>{_esc(custom.get('title', ''))}</h3>"
             f'<p class="spk-desc">{_esc(custom.get("body", ""))}</p>'
             f'<a href="{_esc(booking)}" class="spk-btn spk-btn-primary">'
-            f'{_esc(custom.get("cta_label", ""))} {_arrow()}</a>'
+            f"{_esc(custom.get('cta_label', ''))} {_arrow()}</a>"
             "</article>"
         )
     return (
@@ -336,9 +354,9 @@ def _work(d: dict) -> str:
         return ""
     fmt_cards = "".join(
         '<div class="spk-format">'
-        f'<h3>{_esc(f.get("name", ""))}</h3>'
+        f"<h3>{_esc(f.get('name', ''))}</h3>"
         f'<div class="spk-dur">{_esc(f.get("duration", ""))}</div>'
-        f'<p>{_esc(f.get("body", ""))}</p></div>'
+        f"<p>{_esc(f.get('body', ''))}</p></div>"
         for f in formats
     )
     reach = "".join(f'<span class="spk-chip">{_esc(r)}</span>' for r in (w.get("reach") or []))
@@ -364,10 +382,10 @@ def _media(d: dict, booking: str) -> str:
     return (
         '<section id="spk-media"><div class="spk-wrap"><div class="spk-media">'
         f'<span class="spk-eyebrow">{_esc(m.get("eyebrow", ""))}</span>'
-        f'<h2>{_esc(m.get("headline", ""))}</h2>'
+        f"<h2>{_esc(m.get('headline', ''))}</h2>"
         '<div class="spk-media-grid"><div>'
         f'<span class="spk-avail"><span class="spk-dot"></span>{_esc(m.get("availability", ""))}</span>'
-        f'<p>{_esc(m.get("body", ""))}</p>{spec_html}'
+        f"<p>{_esc(m.get('body', ''))}</p>{spec_html}"
         '<div class="spk-media-actions">'
         f'<a href="{_esc(booking)}" class="spk-btn spk-btn-onblue">{_esc(m.get("cta_label", "Book expert comment"))}</a>'
         "</div></div>"
@@ -385,7 +403,8 @@ def _biography(d: dict, bio_html: str) -> str:
         f'<div class="spk-bio-photo"><img src="{_esc(portrait)}" '
         f'alt="{_esc(b.get("portrait_alt", ""))}" width="220" height="220" '
         'loading="lazy" decoding="async" /></div>'
-        if portrait else ""
+        if portrait
+        else ""
     )
     return (
         '<section class="spk-band" id="spk-bio"><div class="spk-wrap">'
@@ -447,24 +466,24 @@ def _booking(d: dict, booking: str) -> str:
     if not b:
         return ""
     facts = "".join(
-        f'<li><span>{_esc(x.get("k", ""))}</span><b>{_esc(x.get("v", ""))}</b></li>'
+        f"<li><span>{_esc(x.get('k', ''))}</span><b>{_esc(x.get('v', ''))}</b></li>"
         for x in (b.get("aside_facts") or [])
     )
     aside = (
         '<aside class="spk-book-aside">'
         f'<span class="spk-eyebrow">{_esc(b.get("aside_eyebrow", ""))}</span>'
-        f'<h3>{_esc(b.get("aside_title", ""))}</h3>'
-        f'<p>{_esc(b.get("aside_body", ""))}</p>'
+        f"<h3>{_esc(b.get('aside_title', ''))}</h3>"
+        f"<p>{_esc(b.get('aside_body', ''))}</p>"
         f'<span class="spk-avail"><span class="spk-dot spk-dot-static"></span>{_esc(b.get("aside_availability", ""))}</span>'
         f'<ul class="spk-aside-list">{facts}</ul></aside>'
     )
     intro = (
         '<div class="spk-book-intro">'
         f'<span class="spk-eyebrow">{_esc(b.get("eyebrow", ""))}</span>'
-        f'<h2>{_esc(b.get("headline", ""))}</h2>'
+        f"<h2>{_esc(b.get('headline', ''))}</h2>"
         f'<p class="spk-lede">{_esc(b.get("lede", ""))}</p>'
         f'<a href="{_esc(booking)}" class="spk-btn spk-btn-primary">'
-        f'{_esc(b.get("cta_label", "Invite me to speak"))} {_arrow()}</a>'
+        f"{_esc(b.get('cta_label', 'Invite me to speak'))} {_arrow()}</a>"
         "</div>"
     )
     return (
@@ -479,11 +498,11 @@ def _final_cta(d: dict, booking: str) -> str:
         return ""
     return (
         '<section class="spk-band spk-finalcta"><div class="spk-wrap">'
-        f'<h2>{_esc(c.get("headline", ""))}</h2>'
+        f"<h2>{_esc(c.get('headline', ''))}</h2>"
         f'<p class="spk-lede">{_esc(c.get("lede", ""))}</p>'
         '<div class="spk-cta-row">'
         f'<a href="{_esc(booking)}" class="spk-btn spk-btn-primary">'
-        f'{_esc(c.get("primary_cta", ""))} {_arrow()}</a>'
+        f"{_esc(c.get('primary_cta', ''))} {_arrow()}</a>"
         f'<a href="#spk-media" class="spk-btn spk-btn-ghost">{_esc(c.get("secondary_cta", ""))}</a>'
         "</div></div></section>"
     )
@@ -493,11 +512,7 @@ def _jsonld_script(payload: dict) -> str:
     """Serialise ``payload`` into a JSON-LD <script>, escaping ``</`` so the
     JSON can never terminate the script element early."""
     blob = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
-    return (
-        '<script type="application/ld+json">'
-        + blob.replace("</", "<\\/")
-        + "</script>"
-    )
+    return '<script type="application/ld+json">' + blob.replace("</", "<\\/") + "</script>"
 
 
 def _topics_jsonld(d: dict) -> str:
@@ -572,9 +587,7 @@ def _render_body(d: dict, bio_html: str, url: str) -> str:
 # Frontmatter split on ``---`` *delimiter lines* only (not substrings, so
 # ``# --- Hero`` section comments inside the frontmatter don't break the
 # parse). Tolerates a leading BOM and CRLF line endings.
-_FM_RE = re.compile(
-    "^\ufeff?" + r"---[ \t]*\r?\n(.*?)\r?\n---[ \t]*\r?\n(.*)$", re.DOTALL
-)
+_FM_RE = re.compile("^\ufeff?" + r"---[ \t]*\r?\n(.*?)\r?\n---[ \t]*\r?\n(.*)$", re.DOTALL)
 
 
 def _parse_source() -> tuple[dict, str]:
@@ -593,9 +606,7 @@ def _parse_source() -> tuple[dict, str]:
     try:
         data = yaml.safe_load(m.group(1)) or {}
     except yaml.YAMLError as exc:
-        raise SystemExit(
-            f"build_speaking: invalid YAML in {SPEAKING_MD}: {exc}"
-        ) from exc
+        raise SystemExit(f"build_speaking: invalid YAML in {SPEAKING_MD}: {exc}") from exc
     body_md = m.group(2).strip()
     if not data or not body_md:
         raise SystemExit(
@@ -656,6 +667,7 @@ def _localize_static_hrefs(body: str, lang: str, static_slugs: dict[str, str]) -
     """Rewrite body links to top-level EN static pages (``/contact/index.html``)
     onto the locale's slugged path (``/ar/ittisal/index.html``) using the
     locale's ``slugs.json`` "static" map. Links not in the map pass through."""
+
     def repl(m: re.Match) -> str:
         slug = static_slugs.get(m.group(1))
         return f'href="/{lang}/{slug}/index.html"' if slug else m.group(0)
@@ -674,7 +686,7 @@ def _dedupe_named_meta(head: str, name: str, replacement: str | None) -> str:
         )
     parts, last = [], 0
     for i, m in enumerate(matches):
-        parts.append(head[last:m.start()])
+        parts.append(head[last : m.start()])
         if i == 0:
             parts.append(replacement if replacement is not None else m.group(0))
         last = m.end()
@@ -734,9 +746,7 @@ def _patch_head(out: str, doc_title: str, seo_title: str, desc: str) -> str:
         count=1,
     )
     if not n:
-        raise SystemExit(
-            "build_speaking: head patch failed — twitter:description not found"
-        )
+        raise SystemExit("build_speaking: head patch failed — twitter:description not found")
     # Stale articles-hub web-app title; tolerate absence (nothing stale then).
     head = re.sub(
         r'(<meta name="apple-mobile-web-app-title" content=")[^"]*(")',
@@ -745,9 +755,7 @@ def _patch_head(out: str, doc_title: str, seo_title: str, desc: str) -> str:
         count=1,
     )
     if "Discover How Technology" in head:
-        raise SystemExit(
-            "build_speaking: head patch failed — stale articles copy left in <head>"
-        )
+        raise SystemExit("build_speaking: head patch failed — stale articles copy left in <head>")
     return head + rest
 
 
@@ -767,15 +775,12 @@ def _strip_articles_jsonld(out: str) -> str:
     new, n = _ARTICLES_JSONLD_RE.subn("", out)
     if not n:
         raise SystemExit(
-            "build_speaking: articles CollectionPage JSON-LD not found — "
-            "shell layout changed?"
+            "build_speaking: articles CollectionPage JSON-LD not found — shell layout changed?"
         )
     return new
 
 
-_OG_LOCALE_RE = re.compile(
-    r'(<meta\s+property="og:locale"\s+content=")[^"]*(")', re.IGNORECASE
-)
+_OG_LOCALE_RE = re.compile(r'(<meta\s+property="og:locale"\s+content=")[^"]*(")', re.IGNORECASE)
 
 
 def _emit_one_locale(
@@ -812,9 +817,7 @@ def _emit_one_locale(
     out = _OG_LOCALE_RE.sub(rf"\g<1>{og_locale}\g<2>", out, count=1)
     out = _strip_articles_jsonld(out)
     if "Discover How Technology" in out:
-        raise SystemExit(
-            f"build_speaking: stale articles copy remains in the '{lang}' page"
-        )
+        raise SystemExit(f"build_speaking: stale articles copy remains in the '{lang}' page")
 
     target = (PUBLIC / "speaking" if lang == "en" else PUBLIC / lang / segment) / "index.html"
     target.parent.mkdir(parents=True, exist_ok=True)
@@ -846,7 +849,9 @@ def _emit_locale_forks(active_shell: str, data: dict, bio_html: str) -> int:
         loc_shell = _ch.translate_chrome(loc_shell)
         loc_shell = _ch._localize_inlanguage_globally(loc_shell, lang.code)
         loc_data, loc_bio = _load_overlay(lang.code, data, bio_html)
-        _emit_one_locale(loc_shell, loc_data, loc_bio, lang.code, segment, static_slugs, lang.og_locale)
+        _emit_one_locale(
+            loc_shell, loc_data, loc_bio, lang.code, segment, static_slugs, lang.og_locale
+        )
         total += 1
     return total
 

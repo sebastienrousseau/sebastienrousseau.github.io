@@ -24,12 +24,8 @@ ROOT = Path(__file__).resolve().parents[2]
 PUBLIC = ROOT / "public"
 BASE = "https://sebastienrousseau.com"
 
-_CANONICAL_RE = re.compile(
-    r'<link\b[^>]*\brel=["\']?canonical["\']?[^>]*>', re.IGNORECASE
-)
-_OGURL_RE = re.compile(
-    r'<meta\b[^>]*\bproperty=["\']?og:url["\']?[^>]*>', re.IGNORECASE
-)
+_CANONICAL_RE = re.compile(r'<link\b[^>]*\brel=["\']?canonical["\']?[^>]*>', re.IGNORECASE)
+_OGURL_RE = re.compile(r'<meta\b[^>]*\bproperty=["\']?og:url["\']?[^>]*>', re.IGNORECASE)
 _HREF_RE = re.compile(r'href=["\']?([^"\'\s>]+)', re.IGNORECASE)
 _CONTENT_RE = re.compile(r'content=["\']?([^"\'\s>]+)', re.IGNORECASE)
 # Redirect pages (legacy URLs converted by postbuild_lib.redirects, e.g.
@@ -72,9 +68,7 @@ def main() -> int:
             # (self-canonical would contradict the redirect).
             target = refresh_m.group(1)
             if canon != target:
-                bad.append(
-                    f"{rel}: redirect page canonical={canon!r} != refresh target={target!r}"
-                )
+                bad.append(f"{rel}: redirect page canonical={canon!r} != refresh target={target!r}")
             continue
         if canon != expected:
             bad.append(f"{rel}: canonical={canon!r} expected={expected!r}")

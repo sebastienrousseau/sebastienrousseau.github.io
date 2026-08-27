@@ -1,0 +1,26 @@
+{
+  "_comment": "YO copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "ÌṢÀN",
+    "pageLabel": "Ojú-ìwé {page} nínú {total}",
+    "visible": "tí a fi hàn",
+    "categoryLabel": "Ẹ̀ka",
+    "yearLabel": "Ọdún",
+    "allCategories": "Gbogbo ẹ̀ka",
+    "allYears": "Gbogbo ọdún",
+    "filterAria": "Ṣàyẹ̀wò àwọn àpilẹ̀kọ",
+    "listAria": "Káàdì àpilẹ̀kọ",
+    "paginationAria": "Ìtòlẹ́sẹẹsẹ ojú-ìwé",
+    "emptyState": "Kò sí àpilẹ̀kọ tí ó bá àyẹ̀wò ìsinsìnyí mu.",
+    "previous": "Tẹ́lẹ̀",
+    "next": "Tókàn"
+  },
+  "pillars": {
+    "ai": "AI tí a lò",
+    "payments": "Ìsanwó àti owó",
+    "infra": "Ìpìlẹ̀ àti kírípítógíráfì",
+    "policy": "Ìlànà àti ìfaradà",
+    "open-source": "Orísun ṣíṣí",
+    "leadership": "Ìdarí ilé ìfowópamọ́"
+  }
+}

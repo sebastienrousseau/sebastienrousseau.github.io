@@ -91,6 +91,7 @@ LANG_NAMES: dict[str, str] = {
 # Frontmatter field read / write helpers
 # ---------------------------------------------------------------------------
 
+
 def _read_field(text: str, field: str) -> str | None:
     """Read a quoted frontmatter field value."""
     m = re.search(

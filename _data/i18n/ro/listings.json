@@ -1,0 +1,26 @@
+{
+  "_comment": "RO copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "FLUX",
+    "pageLabel": "Pagina {page} din {total}",
+    "visible": "vizibile",
+    "categoryLabel": "Categorie",
+    "yearLabel": "An",
+    "allCategories": "Toate categoriile",
+    "allYears": "Toți anii",
+    "filterAria": "Filtrează articolele",
+    "listAria": "Carduri de articole",
+    "paginationAria": "Paginare",
+    "emptyState": "Niciun articol nu corespunde filtrelor curente.",
+    "previous": "Anterior",
+    "next": "Următor"
+  },
+  "pillars": {
+    "ai": "IA aplicată",
+    "payments": "Plăți și bani",
+    "infra": "Infrastructură și criptografie",
+    "policy": "Politici și reziliență",
+    "open-source": "Open source",
+    "leadership": "Conducere bancară"
+  }
+}

@@ -1,47 +1,46 @@
 ---
-title: "فك شفرة Gemini 1.5: ثورة Google في الذكاء الاصطناعي مشروحةً"
+title: "Pagbasag sa kodigo ng Gemini 1.5: ipinaliwanag ang rebolusyon ng Google sa AI"
 tags: "Gemini 1.5, Google AI, AI Efficiency, AI Quality, Context Window, In-Context Learning, AI Use Cases, AI Revolution, Technology Transformation, Data Analysis, ISO 20022, post-quantum cryptography, AI, DORA, tokenised deposits, platform engineering, sovereign cloud, cloud native banking, cross-border payments, stablecoins"
-subtitle: "غوص عميق في آخر اختراقات Google في الذكاء الاصطناعي"
-description: "Gemini 1.5 من Google يدفع نافذة السياق إلى ما يتجاوز المليون رمز. ما الذي يفتحه ذلك للتمويل المُعزَّز بالاسترجاع، والمقايضات التي يجدر الإلمام بها."
+subtitle: "Ang arkitekturang Mixture of Experts, ang bintana ng konteksto na 10 milyong token, at ang mga etikal na tanong na kasunod nito."
+description: "Ang Gemini 1.5 ng Google: ang arkitekturang Mixture of Experts, ang bintana ng konteksto na umaabot sa 10 milyong token, ang bisa nito sa mga sukatang panukat, at ang etikal na pagsasaalang-alang sa responsableng pagbuo."
 date: "Feb 19, 2024"
 language: "fil-PH"
 locale: "fil_PH"
 banner: "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp"
-banner_alt: "تصور تجريدي لشبكات الذكاء الاصطناعي يُمثِّل قدرات Gemini 1.5"
-keywords: "Gemini 1.5, Google AI, architecture Mixture-of-Experts, الكفاءة الحسابية, توسيع نافذة السياق, ابتكار الذكاء الاصطناعي, تحويل تحليل البيانات, in-context learning, حالات استخدام الذكاء الاصطناعي, الثورة التكنولوجية"
+banner_alt: "Malikhaing paglalarawan hinggil sa mga modelong pangwika ng Google"
+keywords: "Gemini 1.5, Google, AI, malaking modelo ng wika, Mixture of Experts, MoE, bintana ng konteksto, token, DeepMind, etikal na AI, kiling"
 ---
+## Pagbasag sa kodigo ng Gemini 1.5: ipinaliwanag ang rebolusyon ng Google sa AI
 
-## فك شفرة Gemini 1.5: ثورة Google في الذكاء الاصطناعي مشروحةً
+Kumakatawan ang [**Gemini 1.5 ng Google ⧉**][00] sa saligang pagsulong sa AI, sapagkat pinabubuti nito ang kahusayan at ang kakayahang magproseso ng malaking dami ng impormasyon. Nahihigitan ng modelong pangwika na ito ang hinalinhan nitong Gemini 1.0, at binubuksan nito ang bagong panahon ng lakas-pangkalkulasyon at ng paggamit ng mga modelong AI. Tuklasin natin ang mapagbagong potensiyal ng Gemini 1.5 at ang kahihinatnan nito sa kinabukasan ng inobasyon sa AI.
 
-[**Gemini 1.5 من Google ⧉**][00] يُمثِّل تقدماً جوهرياً في الذكاء الاصطناعي، إذ يُحسِّن الكفاءة والقدرة على معالجة كميات كبيرة من المعلومات. يتفوق نموذج اللغة هذا على سلفه Gemini 1.0، ويفتح حقبة جديدة من القوة الحسابية واستخدام نماذج الذكاء الاصطناعي. لنستكشف الإمكانات التحويلية لـ Gemini 1.5 وانعكاساتها على مستقبل ابتكار الذكاء الاصطناعي.
+## Ang ebolusyon ng Gemini: mula 1.0 tungo sa 1.5
 
-## تطور Gemini: من 1.0 إلى 1.5
+Nakabuo ang Gemini 1.5 sa bagong bersiyon ng arkitekturang Mixture of Experts (MoE), kaya pinatatatag nito ang kakayahan nitong piliing paganahin ang pinakaangkop na daanan sa neural network nito. At malaki ang ipinatataas ng pagsulong na ito sa kahusayan at bisa, sapagkat pinahihintulutan nito ang Gemini 1.5 na magproseso ng umaabot sa isang milyong token. Pinahihintulutan ng tampok na ito ang modelo na magproseso ng malalaking hanay ng datos, kabilang na ang bidyo, ang tunog, at ang masasalimuot na base ng kodigo, kaya nahihigitan nito ang Gemini 1.0.
 
-بُني Gemini 1.5 على نسخة جديدة من بنية Mixture of Experts (MoE)، مما يُعزِّز قدرته على التنشيط الانتقائي لأكثر المسارات ملاءمةً في شبكته العصبية. ويُزيد هذا التقدم الكفاءة والأداء بشكل كبير، إذ يُتيح لـ Gemini 1.5 معالجة ما يصل إلى مليون رمز. تُتيح هذه الميزة للنموذج معالجة مجموعات بيانات كبيرة، تشمل الفيديو والصوت وقواعد الكود المعقدة، متجاوزاً Gemini 1.0.
+### Isang tagumpay sa kahusayan at kalidad
 
-### اختراق في الكفاءة والجودة
+Nakakamit ng Gemini 1.5 ang kalidad na katulad ng naunang bersiyong Ultra habang malaki ang ibinababa sa kinakailangang mapagkukunang pangkalkulasyon. At dinedemokratisa ng kahusayang ito ang pag-abot sa abanteng kakayahan ng AI, sapagkat pinahihintulutan nito ang mas malawak na paggamit at pagsubok sa iba't ibang industriya.
 
-يُحقِّق Gemini 1.5 جودة مماثلة لإصدار Ultra السابق مع تقليل الموارد الحسابية المطلوبة بشكل كبير. وتُديمقرط هذه الكفاءة الوصول إلى قدرات الذكاء الاصطناعي المتقدمة، إذ تُتيح تطبيقاً وتجريباً أوسع عبر الصناعات.
+### Pagpapalawak ng bintana ng konteksto
 
-### توسيع نافذة السياق
+Isa sa pinakamapanimulang tampok ng Gemini 1.5 ang pinalawak nitong bintana ng konteksto, na kayang magproseso ng input na umaabot sa 10 milyong token. At malaking pagbabago ang kakayahang ito para sa mga aplikasyong nangangailangan ng pagbubuod ng malaking dami ng impormasyon, sapagkat pinahihintulutan nito ang mas malalim at mas tumpak na pag-unawa sa datos.
 
-من أكثر ميزات Gemini 1.5 ثوريةً نافذة سياقه الموسَّعة، القادرة على معالجة مُدخلات تصل إلى 10 ملايين رمز. وهذه القدرة عامل تغيير للتطبيقات التي تتطلب توليف كميات كبيرة من المعلومات، إذ تُتيح فهماً أعمق وأكثر دقة للبيانات.
+### Tagumpay sa mga sukatang panukat
 
-### النجاح في المقاييس المرجعية
+Pinatutunayan ng bisa ng Gemini 1.5 sa iba't ibang sukatang panukat, kung saan nahihigitan nito ang Gemini 1.0 sa 87% ng mga senaryo ng pagsubok, ang pagiging nakahihigit nito. At nagtala ang AI ng rekord sa pagproseso at pagkuha ng impormasyon mula sa malalaking hanay ng datos sa pagtatasang "Needle In A Haystack".
 
-أداء Gemini 1.5 على المقاييس المرجعية المتنوعة، إذ يتفوق على Gemini 1.0 في 87% من سيناريوهات الاختبار، يُؤكِّد تفوقه. وقد سجَّل الذكاء الاصطناعي رقماً قياسياً في معالجة واسترجاع المعلومات من مجموعات البيانات الكبيرة في تقييم "Needle In A Haystack".
+## Mga mapanimulang gamit at kahihinatnan sa hinaharap
 
-## حالات استخدام ثورية وتبعات مستقبلية
+Nagbubukas ang mga pagsulong ng Gemini 1.5 ng kasaganaan ng aplikasyon sa mga sektor tulad ng teknolohiya, edukasyon, at malikhaing sining. At babaguhin ng sari-saring gamit at ng mapagbagong potensiyal nito ang mga industriya, sapagkat naghahandog ito ng kasangkapan para sa pagsusuri ng datos, para sa pag-unawang maraming anyo, para sa tulong sa pagpoprograma, at para sa paglikha ng malikhaing nilalaman.
 
-تفتح تطورات Gemini 1.5 وفرة من التطبيقات عبر قطاعات كالتقنية والتعليم والفنون الإبداعية. وستُحدث تنوعيته وإمكاناته التحويلية ثورة في الصناعات، إذ يُقدِّم أدوات لتحليل البيانات والفهم متعدد الوسائط ومساعدة البرمجة وتوليد المحتوى الإبداعي.
+## Etikal na pagsasaalang-alang at responsableng pagbuo
 
-## اعتبارات أخلاقية وتطوير مسؤول
+Nagbubunsod ang mabilis na pagsulong ng mga modelong pangwika tulad ng Gemini 1.5 ng mahahalagang tanong hinggil sa etikal na kahihinatnan. Sa pangkalahatan, kinikilala ng komunidad ng AI ang halaga ng pagbibigay-prayoridad sa pagkapribado, ng pag-iwas sa kiling, at ng pagbuo ng ligtas na sistema habang nagiging mas may-kakayahan ang mga modelo. Sinasabi ng [**Google ⧉**][01] na binigyang-diin nito ang mga katangiang tulad ng kaligtasan, seguridad, at pagiging patas sa panahon ng pagbuo ng Gemini 1.5. Iginigiit din ng kompanya na isinanib nito ang mga teknik na algoritmiko upang matuklasan ang paglikha ng nakapipinsalang nilalaman, kasama ang mga sistema sa pagbabantay ng kiling. At napakahalaga ng patuloy na panlabas na pagsusuri at pangangasiwa mula sa mga organisasyong di-pangkalakal at sa mga akademikong pag-aaral upang mapatunayan ang etikal na prayoridad at ang teknikal na panagot. At upang mapabuti ang Gemini 1.5 at ang iba pang nangungunang modelo habang pinagsasanggalang ang pagkapribado at pinatatatag ang pagiging patas, dapat manatiling mapagbantay ang mga mananaliksik, gumagawa ng patakaran, at kompanya.
 
-يُثير التقدم السريع لنماذج اللغة كـ Gemini 1.5 أسئلة مهمة حول التبعات الأخلاقية. يُدرك مجتمع الذكاء الاصطناعي عموماً أهمية إيلاء الأولوية للخصوصية وتفادي التحيز وتطوير أنظمة آمنة كلما أصبحت النماذج أكثر قدرة. تذكر [**Google ⧉**][01] أنها أكَّدت على خصائص كالسلامة والأمن والإنصاف خلال تطوير Gemini 1.5. وتدَّعي الشركة كذلك أنها أدمجت تقنيات خوارزمية لاكتشاف توليد المحتوى الضار، إلى جانب أنظمة مراقبة التحيز. وتكتسب المراجعات الخارجية المستمرة والإشراف من المنظمات غير الربحية والدراسات الأكاديمية أهمية بالغة للتحقق من الأولويات الأخلاقية والضمانات التقنية. ولتحسين Gemini 1.5 والنماذج الرائدة الأخرى مع حماية الخصوصية وتعزيز الإنصاف، يجب على الباحثين وصانعي السياسات والشركات أن يظلوا يقظين.
+## Pangwakas
 
-## خاتمة
-
-يُمثِّل Gemini 1.5 تقدماً جوهرياً في تقنية الذكاء الاصطناعي. فهو يُحسِّن الكفاءة، ويُوسِّع السياق، ويُقدِّم استخدامات مبتكرة، مُرسياً معايير جديدة للتقنية. وسيُحدث ثورة في تفاعلاتنا مع التقنية ويُشكِّل مستقبل ابتكار الذكاء الاصطناعي.
+Kumakatawan ang Gemini 1.5 sa saligang pagsulong sa teknolohiyang AI. Pinabubuti nito ang kahusayan, pinalalawak nito ang konteksto, at naghahandog ito ng mapanlikhang gamit, kaya naglalatag ito ng bagong pamantayan para sa teknolohiya. At babaguhin nito ang ating pakikipag-ugnayan sa teknolohiya at huhubugin nito ang kinabukasan ng inobasyon sa AI.
 
 [00]: https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/ "Google's Gemini 1.5: The Next Generation of AI Models"
 [01]: https://deepmind.google/technologies/gemini/#introduction "Gemini - Google DeepMind"

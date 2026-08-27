@@ -1,0 +1,35 @@
+title: BankStatementParser — egységes tranzakciós intelligencia a treasury számára
+banner_alt: Modern pénzügyi iroda éjszaka — az egységes tranzakciós intelligenciát jelképezi a CAMT, MT940,
+  OFX és CSV bankkivonat-formátumokon át
+sector: Nyílt forráskód · Vállalati treasury · Kockázati adatok összesítése
+role: Szerző és karbantartó
+status: Éles üzemben, aktívan karbantartva
+outcome_highlights:
+- value: 6 formátum
+  label: CAMT (.052/.053/.054), MT940, OFX, CSV, OCR PDF
+- value: Mezőnként
+  label: 'Eredet: a forrásformátum és az értelmező verziója naplózva'
+- label: A kockázati adatok összesítéséhez igazítva
+- label: Szabadon használható, forkolható, auditálható
+pull_quote: „Sémával ellenőrzött CAMT / MT940 / PAIN értelmezők, OCR tartalék a beszkennelt PDF-ekhez,
+  determinisztikus mezőleképezés, SR 11-7 szintű auditbizonyíték — minden átalakítási lépés rögzítve és
+  reprodukálható.”
+problem: A vállalati treasury csapatok CAMT, PAIN.001, MT940, OFX, CSV és beszkennelt PDF formátumban
+  kapnak bankkivonatokat több tucat banktól. Minden formátum más mezőjelentéseket, kódolásokat és kétértelműségeket
+  hordoz. A legtöbb csapat bankonként épít törékeny értelmezőket, ami elzárja a valós idejű készpénz-előrejelzést,
+  a csalásfelderítést és az auditálható egyeztetést.
+what_i_built: Nyílt forráskódú Python eszközkészlet, amely minden elterjedt bankkivonat-formátumot egyetlen,
+  egységes tranzakciós adatfolyammá von össze. Sémával ellenőrzött CAMT / MT940 / PAIN értelmezők, OCR
+  tartalék a beszkennelt PDF-ekhez, determinisztikus mezőleképezés és SR 11-7 szintű auditbizonyíték minden
+  átalakítási lépéshez.
+rigour:
+- metric: Feldolgozott formátumok
+  value: CAMT (.052, .053, .054), MT940, OFX, CSV, beszkennelt PDF (OCR)
+- metric: Egységesítés
+  value: Egyetlen, egységes tranzakciós rekordséma
+- metric: Auditnyom
+  value: Mezőnkénti eredet — a forrásformátum és az értelmező verziója soronként naplózva
+- metric: Licenc
+validation:
+- 'Szerepel a 2026. 06. 14-i írásban: From Bank Statements to Unified Transaction Intelligence'
+- Úgy tervezve, hogy megfeleljen a BCBS 239 kockázatiadat-összesítési követelményeinek

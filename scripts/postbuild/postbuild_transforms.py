@@ -23,7 +23,7 @@ import rjsmin
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from postbuild_assets import _CDN_HOST, _build_cdn_transform_url
 from postbuild_lib._i18n import _all_active_non_en_langs, _slug_maps
-from postbuild_lib.hreflang import _resolve_en_slug
+from postbuild_lib.hreflang import HREFLANG_LINK_RE, _resolve_en_slug
 
 PUBLIC = Path("public")
 _theme_init_src_path = Path("_layouts/theme-init.js")
@@ -32,6 +32,8 @@ _PERSISTED_TRANSFORM_RE = re.compile(
     re.escape(_CDN_HOST)
     + r"/api/transform\?url=(?P<path>/[^&\"' ]+)(?:&[^\"' ]*?w=(?P<w>\d+))?[^\"' ]*"
 )
+
+
 def _rewrite_persisted_transform(match: re.Match[str]) -> str:
     """Convert a persisted /api/transform URL into the equivalent pre-gen
     variant. Used as a single in-place sweep across rendered HTML to clean
@@ -43,22 +45,30 @@ def _rewrite_persisted_transform(match: re.Match[str]) -> str:
     except (TypeError, ValueError):
         width = 1200
     return _build_cdn_transform_url(path, width, 80)
+
+
 def rewrite_persisted_transforms(html: str) -> tuple[str, int]:
     """Replace every ``https://cloudcdn.pro/api/transform?url=…`` URL in
     ``html`` with its pre-gen variant equivalent. Returns
     ``(new_html, n_rewrites)``."""
     new_html, n = _PERSISTED_TRANSFORM_RE.subn(_rewrite_persisted_transform, html)
     return new_html, n
+
+
 _REDUNDANT_LINK_TITLE_RE = re.compile(
     r"<a\b([^>]*)>([^<]+)</a>",
     re.IGNORECASE,
 )
 _TITLE_ATTR_RE = re.compile(r'\s+title="([^"]+)"', re.IGNORECASE)
+
+
 def _title_matches_text(title: str, text: str) -> bool:
     """Whitespace + trailing-punctuation insensitive equality."""
     norm_t = re.sub(r"\s+", " ", title).strip().rstrip(".,:;")
     norm_x = re.sub(r"\s+", " ", text).strip().rstrip(".,:;")
     return bool(norm_t) and norm_t == norm_x
+
+
 def strip_redundant_link_titles(html: str) -> tuple[str, int]:
     """Remove the ``title="…"`` attribute on every ``<a>`` whose title
     matches the visible inner text. Returns ``(new_html, n_removed)``."""
@@ -75,6 +85,8 @@ def strip_redundant_link_titles(html: str) -> tuple[str, int]:
         return f"<a{new_attrs}>{text}</a>"
 
     return _REDUNDANT_LINK_TITLE_RE.sub(patch, html), n
+
+
 THEME_INIT_MINIFIED = (
     rjsmin.jsmin(_theme_init_src_path.read_text(encoding="utf-8"))
     if _theme_init_src_path.is_file()
@@ -84,6 +96,8 @@ _theme_init_tag_re = re.compile(
     r'<script\b[^>]*\bsrc=["\']?/theme-init\.js["\']?[^>]*>\s*</script>',
     re.IGNORECASE,
 )
+
+
 def inline_theme_init(html: str) -> tuple[str, int]:
     """Replace the external ``<script src="/theme-init.js">`` tag with an
     inline ``<script>`` carrying the minified theme bootstrap. Returns
@@ -93,6 +107,8 @@ def inline_theme_init(html: str) -> tuple[str, int]:
     replacement = f"<script>{THEME_INIT_MINIFIED}</script>"
     new, n = _theme_init_tag_re.subn(replacement, html)
     return new, n
+
+
 LISTING_PAGES = {
     "articles/index.html": ("newsroom-card", "newsroom-featured"),
     "papers/index.html": ("newsroom-card", "book"),
@@ -112,8 +128,12 @@ _first_link_re = re.compile(
 )
 _strip_tags_re = re.compile(r"<[^>]+>")
 _ws_re = re.compile(r"\s+")
+
+
 def _strip_tags(s: str) -> str:
     return _ws_re.sub(" ", _strip_tags_re.sub("", s)).strip()
+
+
 def _card_title_url(body: str) -> tuple[str, str] | None:
     """Pick the canonical ``(title, url)`` pair from one card body.
     The card's H3-title link carries the visible text; the media link
@@ -131,6 +151,8 @@ def _card_title_url(body: str) -> tuple[str, str] | None:
         if best is None or cand[0] > best[0]:
             best = cand
     return (best[1], best[2]) if best is not None else None
+
+
 def _itemlist_graph(items: list[tuple[str, str]], page_url: str) -> dict[str, object]:
     return {
         "@context": "https://schema.org",
@@ -142,6 +164,8 @@ def _itemlist_graph(items: list[tuple[str, str]], page_url: str) -> dict[str, ob
             for i, (title, url) in enumerate(items)
         ],
     }
+
+
 def build_itemlist(html: str, classes: tuple[str, ...], page_url: str) -> str | None:
     items: list[tuple[str, str]] = []
     for m in _card_block_re.finditer(html):
@@ -153,22 +177,53 @@ def build_itemlist(html: str, classes: tuple[str, ...], page_url: str) -> str | 
     if not items:
         return None
     return _json.dumps(_itemlist_graph(items, page_url), separators=(",", ":"), ensure_ascii=False)
+
+
+def _strip_previous_itemlist(html: str, page_url: str) -> str:
+    """Remove an ItemList block this pass wrote on an earlier run.
+
+    Scoped to this pass's exact signature *including the page URL*, so it
+    cannot touch an ItemList emitted by build_topics, build_changelog or
+    the case-study builder that happens to share the page.
+    """
+    return re.sub(
+        r'<script type="application/ld\+json">'
+        r'\{"@context":"https://schema\.org","@type":"ItemList","url":"'
+        + re.escape(page_url)
+        + r'"[\s\S]*?</script>',
+        "",
+        html,
+    )
+
+
 def inject_itemlist(page: Path, html: str) -> str:
+    """Set the listing page's ItemList JSON-LD.
+
+    Replaces rather than appends. Postbuild is re-run over built pages, and
+    this inserted a fresh <script> before </body> every time with nothing
+    checking for one already there — /projects/ grew by a full 29-item
+    graph per run, about 18.7 KB, and never reached a fixed point.
+    """
     rel = page.relative_to(PUBLIC).as_posix()
     classes = LISTING_PAGES.get(rel)
     if not classes:
         return html
     page_url = f"{SITE}/{rel.replace('index.html', '').rstrip('/')}/"
+    html = _strip_previous_itemlist(html, page_url)
     payload = build_itemlist(html, classes, page_url)
     if not payload:
         return html
     block = '<script type="application/ld+json">' + payload + "</script>"
     # Insert just before </body> so the existing CSP-hash pass picks it up.
     return re.sub(r"(?i)</body>", block + "</body>", html, count=1)
+
+
 _LOCALHOST_HOST_RE = re.compile(
     r"https?://(?:127\.0\.0\.1(?::\d+)?|localhost(?::\d+)?)",
     re.IGNORECASE,
 )
+
+
 def scrub_localhost_urls(html: str) -> tuple[str, int]:
     """Replace any ``http://127.0.0.1[:port]`` or ``http://localhost[:port]``
     leftover inside the page (typically <link rel="canonical"> or the
@@ -180,6 +235,8 @@ def scrub_localhost_urls(html: str) -> tuple[str, int]:
     new = _LOCALHOST_HOST_RE.sub("https://sebastienrousseau.com", html)
     n = 0 if new == html else 1
     return new, n
+
+
 def _bump(fn: Callable[[str], str], html: str, ctr: Any, attr: str) -> str:
     """Run a one-arg HTML→HTML injector, bump ``ctr.<attr>`` if the page
     actually changed, return the new HTML. Centralises the
@@ -190,6 +247,8 @@ def _bump(fn: Callable[[str], str], html: str, ctr: Any, attr: str) -> str:
     if out != html:
         setattr(ctr, attr, getattr(ctr, attr) + 1)
     return out
+
+
 def _topic_hreflang(html: str, rel_slug: str) -> str:
     """Build + inject the topic-subpage hreflang triple."""
     topic_alts: list[tuple[str, str]] = [
@@ -204,18 +263,18 @@ def _topic_hreflang(html: str, rel_slug: str) -> str:
         for _code in _all_active_non_en_langs()
     )
     en_url = topic_alts[0][1]
-    _hf_re = re.compile(r'<link rel="alternate"[^>]+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
-    cleaned = _hf_re.sub("", html)
+    cleaned = HREFLANG_LINK_RE.sub("", html)
     topic_links = "".join(
         f'<link rel="alternate" hreflang="{lc}" href="{u}" />' for lc, u in topic_alts
     )
     topic_links += f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
     return re.sub(r"</head>", topic_links + "</head>", cleaned, count=1, flags=re.IGNORECASE)
+
+
 def _home_hreflang(html: str) -> str:
     """Build + inject the home-page hreflang triple."""
     _head_re = re.compile(r"</head>", re.IGNORECASE)
-    _hf_re = re.compile(r'<link rel="alternate"[^>]+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
-    cleaned = _hf_re.sub("", html)
+    cleaned = HREFLANG_LINK_RE.sub("", html)
     home_alts: list[tuple[str, str]] = [("en", "https://sebastienrousseau.com/")]
     home_alts.extend(
         (_code, f"https://sebastienrousseau.com/{_code}/") for _code in _all_active_non_en_langs()
@@ -227,10 +286,14 @@ def _home_hreflang(html: str) -> str:
         '<link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/" />'
     )
     return _head_re.sub(home_links + "</head>", cleaned, count=1)
+
+
 _LAST_MODIFIED_META_RE = re.compile(
     r'(<meta\s+itemprop="dateModified"\s+content=")([^"]*)("\s+id="last-modified"\s*/?>)',
     re.IGNORECASE,
 )
+
+
 def _parse_lastmod_date(last: str) -> str:
     """Helper to parse raw lastmod strings into YYYY-MM-DD format."""
     from datetime import datetime
@@ -243,6 +306,8 @@ def _parse_lastmod_date(last: str) -> str:
         except ValueError:
             continue
     return last
+
+
 def build_comprehensive_lastmod_index() -> dict[str, str]:
     """Walk _posts/ to parse last_reviewed for all pages (falling back to
     last_build_date or date, normalized to YYYY-MM-DD format)."""
@@ -258,6 +323,8 @@ def build_comprehensive_lastmod_index() -> dict[str, str]:
         if last:
             out[md.stem] = _parse_lastmod_date(last)
     return out
+
+
 def update_last_modified_date(html: str, page: Path, ctx: Any) -> str:
     """Update `<meta itemprop="dateModified" content="..." id="last-modified" />`
     to the dynamic `last_reviewed` date from the source page's frontmatter."""
@@ -280,7 +347,7 @@ def update_last_modified_date(html: str, page: Path, ctx: Any) -> str:
         new_date = date.today().isoformat()
 
     return _LAST_MODIFIED_META_RE.sub(
-        rf'\g<1>{new_date}\g<3>',
+        rf"\g<1>{new_date}\g<3>",
         html,
         count=1,
     )

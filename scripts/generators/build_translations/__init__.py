@@ -14,7 +14,7 @@ this package:
      canonical, JSON-LD inLanguage / headline / description).
   5. Writes ``public/fr/{slug}/index.html``.
 
-Also emits ``public/fr/index.html`` — the French articles hub.
+Also emits ``public/fr/index.html`` — the French home page.
 
 Hreflang reciprocity (English ↔ French) is wired in postbuild.py so
 the link tags survive subsequent rebuilds.
@@ -62,7 +62,6 @@ from ._maps import (
     rewrite_related_card_titles,
 )
 from ._pages import (
-    render_articles_hub,
     render_home,
     render_static_translation,
     write_static_translations,
@@ -105,7 +104,6 @@ __all__ = [
     "localize_feed_links",
     "main",
     "parse_frontmatter",
-    "render_articles_hub",
     "render_home",
     "render_markdown",
     "render_static_translation",

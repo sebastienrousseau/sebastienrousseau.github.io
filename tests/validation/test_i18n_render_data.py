@@ -41,6 +41,14 @@ ROOT = Path(__file__).resolve().parents[2]
 I18N_DIR = ROOT / "_data" / "i18n"
 
 
+# Placeholder rows a draft translation used to pad its list up to the FR
+# count. They satisfy a count check while translating nothing, which is
+# exactly how bn/ha/ro/yo shipped 151 padded rows apiece and left their
+# static pages leaking English inside <main> — where the EN-leakage gate,
+# scoped to chrome, could not see it.
+_PLACEHOLDER = "__draft_static_pad_"
+
+
 def check_patches(code: str, name: str, loader, fr_count: int) -> list[str]:
     try:
         entries = loader(code)
@@ -48,6 +56,12 @@ def check_patches(code: str, name: str, loader, fr_count: int) -> list[str]:
         return [str(e)]
     if len(entries) != fr_count:
         return [f"[{code}/{name}] count mismatch: {len(entries)} vs FR reference {fr_count}"]
+    pads = [i for i, (pattern, _) in enumerate(entries) if _PLACEHOLDER in pattern]
+    if pads:
+        return [
+            f"[{code}/{name}] {len(pads)} placeholder row(s) padding the count "
+            f"(first at index {pads[0]}) — translate them or shorten the FR reference"
+        ]
     return []
 
 

@@ -36,12 +36,6 @@
     "description": "접근성 성명: WCAG 2.2 AA 준수, 포용성 원칙, 문제 보고를 위한 피드백 및 연락 채널.",
     "keywords": "접근성, WCAG, 적합성, 디지털 포용, 감사"
   },
-  "articles": {
-    "title": "기사 — Sebastien Rousseau",
-    "subtitle": "AI, 포스트 양자 암호, ISO 20022, 결제의 미래에 관한 기사.",
-    "description": "응용 AI, 포스트 양자 암호, ISO 20022 결제, 도매 결제 변혁에 관한 기사.",
-    "keywords": "기사, 연구, AI, 포스트 양자 암호, ISO 20022, 도매 결제"
-  },
   "contact": {
     "title": "문의하기 — Sebastien Rousseau",
     "subtitle": "문의나 협력 요청이 있으시면 부담 없이 연락 주십시오.",
@@ -67,10 +61,10 @@
     "keywords": "논문, 간행물, 보고서, 연구, ISO 20022, AI, 포스트 양자 암호"
   },
   "playlists": {
-    "title": "플레이리스트 — Sebastien Rousseau",
-    "subtitle": "딥워크, 창의성, 엔지니어의 집중을 위하여 엄선한 Spotify 플레이리스트.",
-    "description": "Sebastien Rousseau가 엄선한 음악과 청취 가이드.",
-    "keywords": "플레이리스트, 음악"
+    "title": "집중과 딥 워크를 위한 39개의 플레이리스트 — Sebastien Rousseau",
+    "subtitle": "네오 소울, 재즈 펑크, 붐뱁, 프렌치 터치, 딥 하우스, 서아프리카 리듬 — 39개 플레이리스트에 1,700곡 이상. Spotify와 Apple Music에서 무료.",
+    "description": "집중과 딥 워크를 위해 직접 만든 39개의 음악 플레이리스트: 네오 소울, 누 재즈, 붐뱁, 프렌치 터치, 딥 하우스, 로파이, 아프로비트. 1,700곡 이상, Spotify와 Apple Music에서 무료.",
+    "keywords": "집중 플레이리스트, 딥 워크 음악, 작업용 플레이리스트, 공부용 플레이리스트, 네오 소울 플레이리스트, 누 재즈 플레이리스트, 재즈 펑크 플레이리스트, 붐뱁 플레이리스트, 재즈 랩 플레이리스트, 프렌치 터치 플레이리스트, 딥 하우스 플레이리스트, 공부용 로파이, 아프로비트 플레이리스트, 디스코 하우스 플레이리스트, 다운템포 플레이리스트, 트립합 플레이리스트, Spotify 플레이리스트, Apple Music 플레이리스트, 큐레이션 플레이리스트, 코딩 음악"
   },
   "privacy": {
     "title": "개인정보처리방침 — Sebastien Rousseau",

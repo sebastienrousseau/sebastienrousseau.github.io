@@ -26,6 +26,10 @@
       "GINSHIƘI · AIKI"
     ],
     [
+      "Curated topic clusters[^<]+",
+      "Gungun batutuwa — zaɓi zare ɗaya sannan ka bi shi cikin taskar."
+    ],
+    [
       "aria-label=\"Post-Quantum Cryptography\"",
       "aria-label=\"Kiriftografi bayan kwantum\""
     ],
@@ -44,6 +48,26 @@
     [
       "aria-label=\"Blockchain &amp; Digital Assets\"",
       "aria-label=\"Blockchain da Kayan Dijital\""
+    ],
+    [
+      "alt=\"Post-Quantum Cryptography — topic banner\"",
+      "alt=\"Kiripitoggirafi bayan-kwantam — tambarin batu\""
+    ],
+    [
+      "alt=\"ISO 20022 &amp; Payments — topic banner\"",
+      "alt=\"ISO 20022 &amp; Biyan kuɗi — tambarin batu\""
+    ],
+    [
+      "alt=\"Applied AI in Banking — topic banner\"",
+      "alt=\"AI da aka yi amfani da shi a banki — tambarin batu\""
+    ],
+    [
+      "alt=\"Rust &amp; Open Source — topic banner\"",
+      "alt=\"Rust &amp; Buɗaɗɗen tushe — tambarin batu\""
+    ],
+    [
+      "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
+      "alt=\"Blockchain &amp; Kadarorin dijital — tambarin batu\""
     ],
     [
       "<h3><a href=\"/fr/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
@@ -66,8 +90,28 @@
       "<h3><a href=\"/ha/batutuwa/blockchain-digital-assets/index.html\">Blockchain da Kayan Dijital</a></h3>"
     ],
     [
+      "<p class=\"newsroom-excerpt\">Lattice-based cryptography, NIST PQC standards, quantum-safe payments,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Kiripitoggirafi bisa lattice, ƙa'idojin NIST PQC, biyan kuɗi mai jure kwantam da barazanar \"tattara yanzu, warware daga baya\". Rubuce-rubucen bincike, ɗakunan karatu na buɗaɗɗen tushe da jagororin ƙaura ga ƙungiyoyin tsaro na hidimomin kuɗi.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Cross-border message migration, structured-address compliance,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Ƙaurar saƙonni tsakanin ƙasashe, bin ƙa'idar adireshi mai tsari, SEPA Instant, SWIFT gpi da manyan hanyoyin biyan kuɗi da suke ɗauke da komai. Kayan aiki, jagora da jadawalin tsari.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Generative AI, multimodal LLMs, voice, and speech models[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">AI mai ƙirƙira, LLM masu hanyoyi da yawa, murya da samfuran magana — da yadda suke sake tsara ayyukan banki, hidimar abokan ciniki da injiniyancin samfura a manyan cibiyoyi.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Open-source Rust libraries I author and maintain:[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Ɗakunan karatu na Rust na buɗaɗɗen tushe da nake rubutawa da kula da su: shiga rajista, ƙirƙirar kod, kwanan wata da lokaci, tushen kiripitoggirafi, KEM bisa Kyber da wani janareta na shafukan tsaye da aka rubuta da Rust.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Bitcoin, blockchain fundamentals, ERC-20 tokens, stablecoins,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Bitcoin, tushen blockchain, alamun ERC-20, stablecoins da tsarin doka game da hanyoyin biyan kuɗi da kadarorin dijital ke goyan baya.</p>"
+    ],
+    [
       "(\\d+) article\\(s\\)</p>",
-      "labarai \\1</p>"
+      "Makaloli \\1</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
@@ -158,6 +202,498 @@
       ">Turanci · PDF"
     ],
     [
+      "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-01-\\2\">\\2 Janairu \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-02-\\2\">\\2 Fabrairu \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-03-\\2\">\\2 Maris \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-04-\\2\">\\2 Afrilu \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-05-\\2\">\\2 Mayu \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-06-\\2\">\\2 Yuni \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-07-\\2\">\\2 Yuli \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-08-\\2\">\\2 Agusta \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-09-\\2\">\\2 Satumba \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
+      "<time datetime=\"\\1-09-01\">Satumba \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-10-\\2\">\\2 Oktoba \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-11-\\2\">\\2 Nuwamba \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-12-\\2\">\\2 Disamba \\1</time>"
+    ],
+    [
+      ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
+      ">Tsarin juyar da magana zuwa rubutu a lokaci guda wanda ke amfani da OpenAI Whisper da haɓakar GPU ta Metal Performance Shaders a macOS domin samun jinkiri ƙasa da daƙiƙa ɗaya, sau 8–12 na ainihin lokaci a M1 Max.<"
+    ],
+    [
+      ">A new paper suggests Shor\\'s algorithm could run on as few as 10,000 qubits\\. The threshold for cryptographically relevant quantum computing is dropping fast\\.<",
+      ">Sabon takarda ya nuna cewa algorithm ɗin Shor na iya gudana da ƙwayoyin ƙubit 10,000 kacal. Matakin lissafin kwantam mai muhimmanci ga kiripitoggirafi yana saukowa da sauri.<"
+    ],
+    [
+      ">A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research\\.<",
+      ">An gano kuskure a cikin algorithm ɗin kwantam na Yilei Chen na warware LWE, wanda ya tsare kiripitoggirafi bisa lattice na ɗan lokaci tare da nuna buƙatar ci gaba da bincike.<"
+    ],
+    [
+      ">New quantum algorithm solves a key cryptographic problem, urging accelerated research into quantum-safe security\\.<",
+      ">Sabon algorithm ɗin kwantam ya warware wata muhimmiyar matsalar kiripitoggirafi, yana kira da a gaggauta bincike kan tsaro mai jure kwantam.<"
+    ],
+    [
+      ">How Fully Homomorphic Encryption revolutionises data security in banking and financial services, preserving privacy against quantum-era threats\\.<",
+      ">Yadda cikakken ɓoye-bayanai na homomorphic ke kawo sauyi ga tsaron bayanai a banki da hidimomin kuɗi, yana kiyaye sirri gaban barazanar zamanin kwantam.<"
+    ],
+    [
+      ">An analysis of Apple's MM1 paper on Multimodal Large Language Models — architecture, pre-training strategies and emerging capabilities\\.<",
+      ">Nazarin takardar MM1 ta Apple kan manyan samfuran harshe masu hanyoyi da yawa — gine-gine, dabarun horo na farko da sabbin iyawa.<"
+    ],
+    [
+      ">How IBM Qiskit and the Quantum Fourier Transform reshape credit ratio analysis in finance, offering unprecedented accuracy and speed\\.<",
+      ">Yadda IBM Qiskit da juyawar Fourier ta kwantam ke sake tsara nazarin rabon bashi a fannin kuɗi, tare da daidaito da gudu da ba a taɓa gani ba.<"
+    ],
+    [
+      ">The transformative role of AI inside quantum algorithms for finance, focusing on their mathematical structure and banking applications\\.<",
+      ">Muhimmiyar rawar AI a cikin algorithms na kwantam don fannin kuɗi, tare da mai da hankali kan tsarinsu na lissafi da amfaninsu a banki.<"
+    ],
+    [
+      ">As quantum computers threaten traditional encryption, Quantum Key Distribution \\(QKD\\) emerges as a structural answer for financial-grade security\\.<",
+      ">Yayin da kwamfutocin kwantam ke barazana ga ɓoye-bayanai na gargajiya, rarraba maɓalli ta kwantam (QKD) na fitowa a matsayin amsa mai tushe ga tsaro na matakin kuɗi.<"
+    ],
+    [
+      ">How CRYSTALS-Kyber, the NIST-selected quantum-resistant key-encapsulation mechanism, is reshaping cryptography for the quantum era\\.<",
+      ">Yadda CRYSTALS-Kyber, tsarin ɗaure maɓalli mai jure kwantam da NIST ta zaɓa, ke sake tsara kiripitoggirafi na zamanin kwantam.<"
+    ],
+    [
+      ">What kind of research and papers do you publish\\?</summary>",
+      ">Wane irin bincike da wallafe-wallafe kuke fitarwa?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Wane irin bincike da wallafe-wallafe kuke fitarwa\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Akwai hanyoyi biyu da suke tafiya tare. <strong>Takardun farare na masana'antu</strong>, waɗanda ake yi wa ƙungiyoyi kamar Emerging Payments Association Asia (EPAA), suna nazarin sauye-sauyen tsari a kayan more rayuwa na biyan kuɗi — kwanan nan tasirin lissafin kwantam mai muhimmanci ga kiripitoggirafi kan hanyoyin sasantawa na manyan biyan kuɗi da na lokaci guda. <strong>Rahotannin bincike da aka yi amfani da su</strong> suna mai da hankali kan takamaiman batutuwan fasaha (misali: gane magana a lokaci guda da Whisper + Metal Performance Shaders a Apple Silicon) kuma ana fitar da su a matsayin PDF da ake sayan kowanne shi kaɗai.</p></section>"
+    ],
+    [
+      ">How often do you release new papers\\?</summary>",
+      ">Sau nawa kuke fitar da sabbin rubuce-rubuce?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Sau nawa kuke fitar da sabbin rubuce-rubuce\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ba bisa tsari ba, saboda an fi son inganci fiye da yawan fitarwa. Gajerun rubuce-rubucen bincike na fitowa duk bayan 'yan makonni idan wani ci gaban fasaha ya buƙaci hakan. Ana fitar da takardun farare a daidai da zagayen masana'antu (misali: jadawalin doka, taron EPAA).</p></section>"
+    ],
+    [
+      ">About EPAA</p>",
+      ">Game da EPAA</p>"
+    ],
+    [
+      "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
+      "<p class=\"book-about\"><strong>Emerging Payments Association Asia (EPAA)</strong> ita ce ƙungiyar ƙwararru ta masana'antar biyan kuɗi a yankin Asiya-Pasifik, wadda take haɗa bankuna, masu sarrafa biyan kuɗi, fintech da masu tsara doka kan tambayoyin tsari da suka shafi dukan sashen."
+    ],
+    [
+      ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
+      ">Biyan kuɗi mai jure kwantam: dalilin da ya sa masana'antar biyan kuɗi dole ta ɗauki mataki yanzu<"
+    ],
+    [
+      ">Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS<",
+      ">Haɓaka gane magana a lokaci guda da OpenAI Whisper da Metal Performance Shaders a macOS<"
+    ],
+    [
+      ">Recent research and analysis<",
+      ">Bincike da nazari na kwanan nan<"
+    ],
+    [
+      "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
+      "Satumba 2025 &middot; Emerging Payments Association Asia (EPAA)"
+    ],
+    [
+      ">Quantum computing threatens the cryptographic foundations[^<]+",
+      ">Lissafin kwantam yana barazana ga tushen kiripitoggirafi na hidimomin kuɗi. Biyan kuɗi — daga lokaci guda zuwa sasantawa tsakanin ƙasashe — yana dogara ne kan kariyar da lissafin kwantam zai ƙarasa mayar da wofi. Wannan takardar EPAA ta bayyana dalilin da ya sa masana'antar dole ta ɗauki mataki yanzu."
+    ],
+    [
+      "2024 &middot; Independent Research &middot;",
+      "2024 &middot; Bincike mai zaman kansa &middot;"
+    ],
+    [
+      ">This independent research paper presents[^<]+",
+      ">Wannan takardar bincike mai zaman kanta tana gabatar da inganta gane magana a lokaci guda a macOS ta amfani da OpenAI Whisper da Metal Performance Shaders, tana nuna ribar da za a iya awo a jinkiri da amfani da wutar lantarki."
+    ],
+    [
+      ">License &amp; pricing<",
+      ">Lasisi da farashi<"
+    ],
+    [
+      ">One copy per buyer<",
+      ">Kwafi ɗaya ga kowane mai saya<"
+    ],
+    [
+      ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
+      ">Tambayoyi?<span class=\"qa-headline-soft\"> Amsoshi.</span>"
+    ],
+    [
+      ">Questions\\? Answers\\.</h2>",
+      ">Tambayoyi? Amsoshi.</h2>"
+    ],
+    [
+      ">Questions\\? Answers\\.<",
+      ">Tambayoyi? Amsoshi.<"
+    ],
+    [
+      ">Are the white papers free to read\\?</summary>",
+      ">Shin ana iya karanta takardun fararen kyauta?</summary>"
+    ],
+    [
+      ">May I cite or quote from these papers\\?</summary>",
+      ">Zan iya ambaton waɗannan takardu?</summary>"
+    ],
+    [
+      ">Who is the intended audience\\?</summary>",
+      ">Ga wa aka nufi waɗannan wallafe-wallafe?</summary>"
+    ],
+    [
+      ">Can I commission a paper or speak at an event\\?</summary>",
+      ">Zan iya ba da odar bincike ko gayyata zuwa taro?</summary>"
+    ],
+    [
+      ">How do I follow new publications\\?</summary>",
+      ">Ta yaya zan bi sabbin wallafe-wallafe?</summary>"
+    ],
+    [
+      ">Where can I follow new releases\\?</summary>",
+      ">A ina zan iya bin sabbin fitarwa?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Shin ana iya karanta takardun fararen kyauta\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ana iya sauke takardar EPAA <em>Quantum-Safe Payments</em> kyauta kuma a bainar jama'a daga <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Rahoton bincike mai zaman kansa kan gane magana a lokaci guda da OpenAI Whisper da Metal Performance Shaders yana da lasisi kuma ana iya sayan sa shi kaɗai kan $49.00 (Turanci, PDF, ~95 KB). Kwafi ɗaya ga kowane mai saya; saukewa don amfanin kai kaɗai, ba a sake rarrabawa.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Zan iya ambaton waɗannan takardu\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ee. Ana maraba da gajerun ambato tare da yabo a cikin iyakar amfani na adalci. Ga wallafe-wallafen EPAA, a ambaci EPAA a matsayin mai bugawa tare da ƙungiyar aiki, shekara da adireshin PDF. Ga rahotannin bincike masu zaman kansu, a ambata haka: <em>Rousseau, S. (shekara). Take. An buga da kai.</em> tare da adireshin canonical. Domin sake buga wani zane ko doguwar sashe, a <a href=\"/ha/tuntube-mu/\">tuntuɓe ni</a> tukun.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Ga wa aka nufi waɗannan wallafe-wallafe\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Daraktocin biyan kuɗi, CISO da manyan masu tsara tsarin fasaha a manyan bankuna, bankunan tsakiya, masu gudanar da tsarin biyan kuɗi da masu mallakar tsare-tsare. Binciken da aka yi amfani da shi yana nufin injiniyoyi da masu kula da samfura da ke gina kan manyan samfuran harshe, AI a kan na'ura da kiripitoggirafi mai jure kwantam. Kowace takarda tana ɗaukan sanin fannin kuma tana barin bayanan da ƙwararre mai aiki ya riga ya sani.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Zan iya ba da odar bincike ko gayyata zuwa taro\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ee — kowane hali a kansa, bisa zaɓi. Ayyukan oda suna kan manyan biyan kuɗi, ƙaurar ISO 20022, kiripitoggirafi bayan-kwantam ga hidimomin kuɗi da AI da aka yi amfani da shi a banki. Ana duba jawabai a taron masana'antu, dandalin bankunan tsakiya da teburin tattaunawa na masu tsara doka kowanne shi kaɗai. Yi amfani da <a href=\"/ha/tuntube-mu/\">fom ɗin tuntuɓa</a>, tare da bayyana batun, masu sauraro da jadawali.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Ta yaya zan bi sabbin wallafe-wallafe\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ana sanar da sabbin rubuce-rubuce da bayanan bincike da farko ta <a href=\"/ha/rss.xml\">RSS feed</a> na shafin da wasiƙar labarai ta <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>, wadda ke rufe kiripitoggirafi bayan-kwantam, manufofin bankunan tsakiya da shirin ƙaura na manyan tsare-tsaren biyan kuɗi. Babu spam — sabbin abubuwa kaɗai.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>A ina zan iya bin sabbin fitarwa\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ka yi rajista ga <a href=\"/ha/rss.xml\">RSS feed</a> ko ka bi ni a <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> domin sanin sabbin wallafe-wallafe.</p></section>"
+    ],
+    [
+      ">Browse all projects<",
+      ">Duba dukan ayyukan<"
+    ],
+    [
+      ">Three areas of practice\\.\\s*<span",
+      ">Fannoni uku na aiki. <span"
+    ],
+    [
+      ">One philosophy\\.</span>",
+      ">Falsafa ɗaya.</span>"
+    ],
+    [
+      ">WHAT IS INSIDE<",
+      ">ABIN DA KE CIKI<"
+    ],
+    [
+      ">OPEN SOURCE FOR FINANCIAL SERVICES<",
+      ">BUƊAƊƊEN TUSHE DON HIDIMOMIN KUƊI<"
+    ],
+    [
+      ">Payments and settlement\\.<",
+      ">Biyan kuɗi da sasantawa.<"
+    ],
+    [
+      ">Post-quantum cryptography\\.<",
+      ">Kiripitoggirafi bayan-kwantam.<"
+    ],
+    [
+      ">Tooling and infrastructure\\.<",
+      ">Kayan aiki da kayan more rayuwa.<"
+    ],
+    [
+      ">Applied AI\\.<",
+      ">AI da aka yi amfani da shi.<"
+    ],
+    [
+      ">Explore payments tools\\s+<",
+      ">Bincika kayan aikin biyan kuɗi <"
+    ],
+    [
+      ">Explore quantum-safe libraries\\s+<",
+      ">Bincika ɗakunan karatu masu jure kwantam <"
+    ],
+    [
+      ">Explore developer tools\\s+<",
+      ">Bincika kayan aikin masu haɓakawa <"
+    ],
+    [
+      ">Explore PQC tools\\s+<",
+      ">Bincika kayan aikin PQC <"
+    ],
+    [
+      ">Explore AI tools\\s+<",
+      ">Bincika kayan aikin AI <"
+    ],
+    [
+      ">Authored & maintained<",
+      ">An rubuta kuma ana kula da su<"
+    ],
+    [
+      ">Authored &amp; maintained<",
+      ">An rubuta kuma ana kula da su<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Buɗaɗɗen tushe don makomar fannin kuɗi.<"
+    ],
+    [
+      "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\">Kayan aikin ISO 20022 na <strong>pain.001</strong> da <strong>pacs.008</strong>, karanta bayanan asusun banki, da ɗakunan karatu na Rust don ƙaura zuwa saƙonni masu tsari tsakanin ƙasashe. An gina su don SWIFT, SEPA da tsarin biyan kuɗi na lokaci guda.</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\">Aiwatarwar Rust na <strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203), tushen hash da ginshiƙai masu jure kwantam. Kariya bayan zamanin RSA da lanƙwasar elliptic a tabbatar da ainihi na fannin kuɗi.</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
+      "<p class=\"setup-card-body\">Ɗakunan karatu na Rust na buɗaɗɗen tushe don tsara bayanai, shiga rajista, ƙirƙirar kod, kwanan wata da lokaci. Haka kuma <strong>Static Site Generator</strong> (SSG) da ke gina wannan shafin, da yanayin haɓakawa da ke sa a iya isar da shi.</p>"
+    ],
+    [
+      ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
+      ">Kayan aikin ISO 20022 don ƙaurar duniya. Ƙirƙirar fayilolin Pain.001, canja wurin bashi tsakanin ƙasashe na pacs.008, da karanta bayanan asusun banki cikin tsari.<"
+    ],
+    [
+      ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
+      ">Aiwatarwar Rust na CRYSTALS-Kyber, tushen hash da digest, da ginshiƙai masu jure kwantam don tabbatar da ainihi na matakin kuɗi.<"
+    ],
+    [
+      ">Applied artificial intelligence\\.<",
+      ">Basirar wucin gadi da aka yi amfani da ita.<"
+    ],
+    [
+      ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
+      ">Ayyukan AI na buɗaɗɗen tushe da ke amfani da gane magana, harshe na ɗabi'a da manyan samfuran harshe kan matsalolin gaske na kuɗi da yawan aiki.<"
+    ],
+    [
+      ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
+      ">Ɗakin karatu na Python da ke sarrafa ƙirƙirar fayilolin biyan kuɗi na ISO 20022 pain.001 daga CSV ko SQLite. An gina shi don ƙaurar duniya zuwa saƙonni masu tsari tsakanin ƙasashe.<"
+    ],
+    [
+      ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
+      ">Ƙirƙira, tantance da isar da saƙonnin biyan kuɗi na ISO 20022 pacs.008 don canja wurin bashi na abokin ciniki tsakanin cibiyoyi. Tantancewar JSON Schema + XSD, IBAN a ƙasashe 75, ɓoye bayanan sirri bisa GDPR/PCI-DSS.<"
+    ],
+    [
+      ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
+      ">Kayan aikin Python na matakin kuɗi da ke juya bayanan asusun banki na tsari daban-daban zuwa bayanai masu tsari — don gaskiyar fayilolin bayanan asusu da buƙatun bincike na yanayin da doka ke tsarawa.<"
+    ],
+    [
+      ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
+      ">Aikace-aikacen Rust don inganta rabon kuɗi a tsakanin hadaddun tsarin asusun zuba jari ta hanyar hasashe da AI ke tafiyarwa. An yi shi don baitulmali, lissafin asusun zuba jari da rabon kadarori a bankuna da masu sarrafa kadarori.<"
+    ],
+    [
+      ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
+      ">Ɗakin karatu na Rust don ƙirƙira da sarrafa hotunan lambar QR a tsare-tsare da yawa. Amfani kai tsaye a biyan kuɗi: lambobin QR na EPC don canja wurin SEPA, QR na hanyar biyan kuɗi ga ɗan kasuwa, da tsarin ƙarin tabbatarwa.<"
+    ],
+    [
+      ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
+      ">Ingantacciyar aiwatarwar Rust na CRYSTALS-Kyber, ƙa'idar NIST FIPS 203 ta ɗaure maɓalli bayan-kwantam don amfani gaba ɗaya.<"
+    ],
+    [
+      ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
+      ">Ingantattun algorithms na hash da digest don ɓoyewa da tantance kalmomin sirri, an tsara su da tsayuwa mai jure kwantam don zamanin bayan-PQC.<"
+    ],
+    [
+      ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
+      ">CLI mai sauri, mai sauƙi kuma mai ƙarfi da ke aiki a dandamali daban-daban don ƙirƙirar kalmomin sirri masu ƙarfi, na musamman kuma na bazuwa, bisa tushen kiripitoggirafi da aka duba.<"
+    ],
+    [
+      ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
+      ">Mataimakin murya na zamani da ke amfani da GPT na OpenAI don hulɗa ta ɗabi'a, taƙaitaccen PDF da ajiyar bayanai mai inganci. An gina shi don amfanin kai da na shugabanni.<"
+    ],
+    [
+      ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
+      ">Juya sauti zuwa rubutu a lokaci guda ta hanyar gane magana ta AI mai ci gaba. An tsara shi don fitar da fahimta mai amfani daga bayanan sauti da inganta hulɗa da abokan ciniki da ayyukan yau da kullum.<"
+    ],
+    [
+      ">Featured · Python · ISO 20022<",
+      ">Zaɓaɓɓe · Python · ISO 20022<"
+    ],
+    [
+      ">Python · ISO 20022<",
+      ">Python · ISO 20022<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · Kuɗi<"
+    ],
+    [
+      ">Rust · Treasury · AI<",
+      ">Rust · Baitulmali · AI<"
+    ],
+    [
+      ">Rust · Payments QR<",
+      ">Rust · QR na biyan kuɗi<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · Kwantam<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · Tsaro<"
+    ],
+    [
+      ">AI · Voice<",
+      ">AI · Murya<"
+    ],
+    [
+      ">AI · Speech<",
+      ">AI · Magana<"
+    ],
+    [
+      ">PAYMENTS<",
+      ">BIYAN KUƊI<"
+    ],
+    [
+      ">POST-QUANTUM CRYPTOGRAPHY<",
+      ">KIRIPITOGGIRAFI BAYAN-KWANTAM<"
+    ],
+    [
+      ">AI AND VOICE<",
+      ">AI DA MURYA<"
+    ],
+    [
+      ">DEVELOPER TOOLING<",
+      ">KAYAN AIKIN MASU HAƁAKAWA<"
+    ],
+    [
+      ">OPEN-SOURCE RUST<",
+      ">RUST NA BUƊAƊƊEN TUSHE<"
+    ],
+    [
+      ">WEB AND DEVELOPER ENVIRONMENT<",
+      ">YANAR GIZO DA YANAYIN HAƁAKAWA<"
+    ],
+    [
+      ">Tooling\\.<",
+      ">Kayan aiki.<"
+    ],
+    [
+      ">Rust libraries and tooling\\.</h2>",
+      ">Ɗakunan karatu da kayan aikin Rust.</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
+      "<p class=\"cat-lede\">Ayyukan Rust na buɗaɗɗen tushe a fannin tsara bayanai, shiga rajista, ƙirƙirar kod, lissafi da kayan aikin masu haɓakawa — haɗe da janaretan shafukan tsaye da ke bayan wannan shafin.</p>"
+    ],
+    [
+      ">Web, templates and environment\\.</h2>",
+      ">Yanar gizo, samfura da yanayi.</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
+      "<p class=\"cat-lede\">Samfuran farawa, wallafe-wallafe biyu na masana'antu, tsarin CSS, da fayilolin dot da ke sa yanayin haɓakawa ya kasance mai maimaituwa.</p>"
+    ],
+    [
+      ">What licence are these projects released under\\?</summary>",
+      ">Ƙarƙashin wace lasisi aka fitar da waɗannan ayyukan?</summary>"
+    ],
+    [
+      ">Are these projects production-ready\\?</summary>",
+      ">Shin waɗannan ayyukan a shirye suke don amfani na gaske?</summary>"
+    ],
+    [
+      ">How can I contribute or report an issue\\?</summary>",
+      ">Ta yaya zan ba da gudummawa ko bayar da rahoton matsala?</summary>"
+    ],
+    [
+      ">Can I use these libraries in a regulated banking environment\\?</summary>",
+      ">Zan iya amfani da waɗannan ɗakunan karatu a yanayin banki mai tsari?</summary>"
+    ],
+    [
+      ">Do you offer commercial support or consulting\\?</summary>",
+      ">Kuna bayar da tallafi na kasuwanci ko shawarwari?</summary>"
+    ],
+    [
+      ">How do I follow new releases\\?</summary>",
+      ">Ta yaya zan bi sabbin fitarwa?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Ƙarƙashin wace lasisi aka fitar da waɗannan ayyukan\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>An fitar da dukan ayyukan ƙarƙashin lasisin <strong>Apache-2.0</strong>. Fayil ɗin <code>LICENSE</code> da ke tushen kowane repository shi ne mai iko.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Shin waɗannan ayyukan a shirye suke don amfani na gaske\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ya danganta da aikin. Ɗakunan karatu masu alamar <em>v1.x</em> sun kafu kuma an gwada su a ƙarƙashin nauyi; waɗanda ba su kai v1 ba tushe ne mai ƙarfi amma har yanzu suna iya canzawa. README na kowane repository yana bayyana matsayin yanzu; idan kana buƙatar wata takamaiman tabbaci don amfani na gaske, <a href=\"/ha/tuntube-mu/\">ka tuntuɓe ni</a>.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Ta yaya zan ba da gudummawa ko bayar da rahoton matsala\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Kowane aiki yana da repository na GitHub a bainar jama'a a <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Ka buɗe issue inda ka bayyana matsalar (misalin sake haifar da ita a taƙaice ana godiya) ko pull request da ke da alaƙa da wata issue. <em>Developer Certificate of Origin</em> ce ke tafiyar da gudummawa kuma ana buƙatar commit masu sa hannu.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Zan iya amfani da waɗannan ɗakunan karatu a yanayin banki mai tsari\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ee, tare da matakan kariya na yau da kullum. Ɗakunan karatu ayyuka ne na buɗaɗɗen tushe masu zaman kansu, ba samfurin da doka ke tsarawa ba. Ka yi amfani da tsarinka na yau da kullum na sarkar samarwa, tsaro da duba abin dogaro — vendoring ta madubin cikin gida, binciken SBOM, ɗaure ta Git SHA ko sawun kiripitoggirafi — kafin kowane tura shi zuwa aiki na gaske a kayan more rayuwa na biyan kuɗi.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Kuna bayar da tallafi na kasuwanci ko shawarwari\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ee, bisa zaɓi. Ayyukan suna kan ƙaurar ISO&nbsp;20022, shirye-shiryen ƙaura bayan-kwantam da AI da aka yi amfani da shi a hidimomin kuɗi. <a href=\"/ha/tuntube-mu/\">Ka tuntuɓe ni</a> tare da gajeren bayani, jadawalinka da duk wata iyaka.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Ta yaya zan bi sabbin fitarwa\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Ana sanar da kowace rubutu mai kwanan wata a shafin ta <a href=\"/ha/rss.xml\">RSS feed</a> da wasiƙar labarai ta <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Repositories ɗin kowanne kuma suna fitar da sakewa a GitHub da za ka iya bi kai tsaye.</p></section>"
+    ],
+    [
+      ">GET IN TOUCH<",
+      ">TUNTUƁE MU<"
+    ],
+    [
+      ">Have an idea\\? Let's build it\\.<",
+      ">Kana da wani tunani? Bari mu gina shi.<"
+    ],
+    [
+      ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
+      ">Haɗin gwiwa kan buɗaɗɗen tushe, injiniyanci na oda, ko kuma kawai tattaunawa kan makomar biyan kuɗi. Duk yadda ya dace da kai.<"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">FEATURED</p>",
+      "<p class=\"newsroom-kicker\">ZAƁAƁƁE</p>"
+    ],
+    [
       "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
       "aria-label=\"Tag: \\1, rubuce-rubuce \\2\""
     ],
@@ -186,24 +722,56 @@
       "An yi da Static Site Generator: SSG mai ƙarfin Rust"
     ],
     [
+      "Static Site Generator is a Rust-based static site generator built for performance, accessibility and SEO\\. Lightning-fast builds with first-class JSON-LD\\.",
+      "Static Site Generator janareta ne na shafukan tsaye da aka rubuta da Rust, an gina shi don aiki mai sauri, samun dama da SEO. Ginin sauri ƙwarai tare da goyon bayan JSON-LD na asali."
+    ],
+    [
       "Website created with Static Site Generator \\(SSG\\)",
       "An ƙirƙiri gidan yanar gizon da Static Site Generator (SSG)"
+    ],
+    [
+      "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
+      "Static Site Generator (SSG) kayan aiki ne mai matuƙar sauri don inganta injin bincike (SEO) da bin ƙa'idojin samun dama."
     ],
     [
       "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
       "Fihirisar batutuwa da tags: AI, biyan kuɗi, kwantum, Rust OSS"
     ],
     [
+      "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
+      "Bincika shafin Sebastien Rousseau bisa batu da alama: AI, biyan kuɗi, ISO 20022, kiripitoggirafi bayan-kwantam, Rust na buɗaɗɗen tushe da ƙari."
+    ],
+    [
       "Website Accessibility Statement — Standards &amp; Contact",
       "Sanarwar samun dama ta gidan yanar gizo: ka'idoji da tuntuɓa"
+    ],
+    [
+      "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
+      "Wannan sanarwa tana bayyana samun damar shafinmu, abin da muke yi don gyara shi, da yadda za ku tuntuɓe mu kan wannan batu."
     ],
     [
       "Privacy Statement — How Your Data Is Collected &amp; Used",
       "Sanarwar sirri: yadda ake tattarawa da amfani da bayananka"
     ],
     [
+      "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
+      "Wannan shafi yana sanar da ku manufofinmu game da tattarawa, amfani da bayyana bayanan sirri lokacin da kuke amfani da shafinmu"
+    ],
+    [
+      "Let's Start a Conversation That Will Make a Real Difference",
+      "Bari mu fara tattaunawar da za ta kawo canji na gaskiya"
+    ],
+    [
+      "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
+      "Kana da tambaya ko ra'ayi? Ka tuntuɓe ni ta fom ɗin da ke ƙasa. Koyaushe ina farin cikin jin daga gare ka kuma zan amsa da wuri-wuri."
+    ],
+    [
       "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
       "Sharuɗɗan amfani da gidan yanar gizo — Sebastien Rousseau"
+    ],
+    [
+      "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
+      "Ta hanyar shiga wannan shafin, ka amince kuma ka yarda da ɗaure ka da waɗannan Sharuɗɗan Amfani da dukan dokoki da ƙa'idoji masu aiki."
     ],
     [
       ">Latest research<",
@@ -266,6 +834,18 @@
       ">Open source<"
     ],
     [
+      ">Authored & maintained<",
+      ">An rubuta kuma ana kula da su<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Buɗaɗɗen tushe don makomar fannin kuɗi.<"
+    ],
+    [
+      ">A portfolio of",
+      ">Tarin"
+    ],
+    [
       ">Start a conversation<",
       ">Fara tattaunawa<"
     ],
@@ -290,732 +870,28 @@
       ">Karanta sabbin bincike<"
     ],
     [
-      ">__draft_static_pad_72__<",
-      ">__draft_static_pad_72__<"
+      "<h1>White Papers (?:&amp;|&) Research</h1>",
+      "<h1>Takardun farare da bincike</h1>"
     ],
     [
-      ">__draft_static_pad_73__<",
-      ">__draft_static_pad_73__<"
+      "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/ha/batutuwa/post-quantum-cryptography/index.html\">Kiripitoggirafi bayan-kwantam</a></h3>"
     ],
     [
-      ">__draft_static_pad_74__<",
-      ">__draft_static_pad_74__<"
+      "<h3><a href=\"[^\"]+/iso-20022-payments/[^\"]*\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/ha/batutuwa/iso-20022-payments/index.html\">ISO 20022 &amp; Biyan kuɗi</a></h3>"
     ],
     [
-      ">__draft_static_pad_75__<",
-      ">__draft_static_pad_75__<"
+      "<h3><a href=\"[^\"]+/applied-ai-banking/[^\"]*\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/ha/batutuwa/applied-ai-banking/index.html\">AI da aka yi amfani da shi a banki</a></h3>"
     ],
     [
-      ">__draft_static_pad_76__<",
-      ">__draft_static_pad_76__<"
+      "<h3><a href=\"[^\"]+/rust-open-source/[^\"]*\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/ha/batutuwa/rust-open-source/index.html\">Rust na buɗaɗɗen tushe</a></h3>"
     ],
     [
-      ">__draft_static_pad_77__<",
-      ">__draft_static_pad_77__<"
-    ],
-    [
-      ">__draft_static_pad_78__<",
-      ">__draft_static_pad_78__<"
-    ],
-    [
-      ">__draft_static_pad_79__<",
-      ">__draft_static_pad_79__<"
-    ],
-    [
-      ">__draft_static_pad_80__<",
-      ">__draft_static_pad_80__<"
-    ],
-    [
-      ">__draft_static_pad_81__<",
-      ">__draft_static_pad_81__<"
-    ],
-    [
-      ">__draft_static_pad_82__<",
-      ">__draft_static_pad_82__<"
-    ],
-    [
-      ">__draft_static_pad_83__<",
-      ">__draft_static_pad_83__<"
-    ],
-    [
-      ">__draft_static_pad_84__<",
-      ">__draft_static_pad_84__<"
-    ],
-    [
-      ">__draft_static_pad_85__<",
-      ">__draft_static_pad_85__<"
-    ],
-    [
-      ">__draft_static_pad_86__<",
-      ">__draft_static_pad_86__<"
-    ],
-    [
-      ">__draft_static_pad_87__<",
-      ">__draft_static_pad_87__<"
-    ],
-    [
-      ">__draft_static_pad_88__<",
-      ">__draft_static_pad_88__<"
-    ],
-    [
-      ">__draft_static_pad_89__<",
-      ">__draft_static_pad_89__<"
-    ],
-    [
-      ">__draft_static_pad_90__<",
-      ">__draft_static_pad_90__<"
-    ],
-    [
-      ">__draft_static_pad_91__<",
-      ">__draft_static_pad_91__<"
-    ],
-    [
-      ">__draft_static_pad_92__<",
-      ">__draft_static_pad_92__<"
-    ],
-    [
-      ">__draft_static_pad_93__<",
-      ">__draft_static_pad_93__<"
-    ],
-    [
-      ">__draft_static_pad_94__<",
-      ">__draft_static_pad_94__<"
-    ],
-    [
-      ">__draft_static_pad_95__<",
-      ">__draft_static_pad_95__<"
-    ],
-    [
-      ">__draft_static_pad_96__<",
-      ">__draft_static_pad_96__<"
-    ],
-    [
-      ">__draft_static_pad_97__<",
-      ">__draft_static_pad_97__<"
-    ],
-    [
-      ">__draft_static_pad_98__<",
-      ">__draft_static_pad_98__<"
-    ],
-    [
-      ">__draft_static_pad_99__<",
-      ">__draft_static_pad_99__<"
-    ],
-    [
-      ">__draft_static_pad_100__<",
-      ">__draft_static_pad_100__<"
-    ],
-    [
-      ">__draft_static_pad_101__<",
-      ">__draft_static_pad_101__<"
-    ],
-    [
-      ">__draft_static_pad_102__<",
-      ">__draft_static_pad_102__<"
-    ],
-    [
-      ">__draft_static_pad_103__<",
-      ">__draft_static_pad_103__<"
-    ],
-    [
-      ">__draft_static_pad_104__<",
-      ">__draft_static_pad_104__<"
-    ],
-    [
-      ">__draft_static_pad_105__<",
-      ">__draft_static_pad_105__<"
-    ],
-    [
-      ">__draft_static_pad_106__<",
-      ">__draft_static_pad_106__<"
-    ],
-    [
-      ">__draft_static_pad_107__<",
-      ">__draft_static_pad_107__<"
-    ],
-    [
-      ">__draft_static_pad_108__<",
-      ">__draft_static_pad_108__<"
-    ],
-    [
-      ">__draft_static_pad_109__<",
-      ">__draft_static_pad_109__<"
-    ],
-    [
-      ">__draft_static_pad_110__<",
-      ">__draft_static_pad_110__<"
-    ],
-    [
-      ">__draft_static_pad_111__<",
-      ">__draft_static_pad_111__<"
-    ],
-    [
-      ">__draft_static_pad_112__<",
-      ">__draft_static_pad_112__<"
-    ],
-    [
-      ">__draft_static_pad_113__<",
-      ">__draft_static_pad_113__<"
-    ],
-    [
-      ">__draft_static_pad_114__<",
-      ">__draft_static_pad_114__<"
-    ],
-    [
-      ">__draft_static_pad_115__<",
-      ">__draft_static_pad_115__<"
-    ],
-    [
-      ">__draft_static_pad_116__<",
-      ">__draft_static_pad_116__<"
-    ],
-    [
-      ">__draft_static_pad_117__<",
-      ">__draft_static_pad_117__<"
-    ],
-    [
-      ">__draft_static_pad_118__<",
-      ">__draft_static_pad_118__<"
-    ],
-    [
-      ">__draft_static_pad_119__<",
-      ">__draft_static_pad_119__<"
-    ],
-    [
-      ">__draft_static_pad_120__<",
-      ">__draft_static_pad_120__<"
-    ],
-    [
-      ">__draft_static_pad_121__<",
-      ">__draft_static_pad_121__<"
-    ],
-    [
-      ">__draft_static_pad_122__<",
-      ">__draft_static_pad_122__<"
-    ],
-    [
-      ">__draft_static_pad_123__<",
-      ">__draft_static_pad_123__<"
-    ],
-    [
-      ">__draft_static_pad_124__<",
-      ">__draft_static_pad_124__<"
-    ],
-    [
-      ">__draft_static_pad_125__<",
-      ">__draft_static_pad_125__<"
-    ],
-    [
-      ">__draft_static_pad_126__<",
-      ">__draft_static_pad_126__<"
-    ],
-    [
-      ">__draft_static_pad_127__<",
-      ">__draft_static_pad_127__<"
-    ],
-    [
-      ">__draft_static_pad_128__<",
-      ">__draft_static_pad_128__<"
-    ],
-    [
-      ">__draft_static_pad_129__<",
-      ">__draft_static_pad_129__<"
-    ],
-    [
-      ">__draft_static_pad_130__<",
-      ">__draft_static_pad_130__<"
-    ],
-    [
-      ">__draft_static_pad_131__<",
-      ">__draft_static_pad_131__<"
-    ],
-    [
-      ">__draft_static_pad_132__<",
-      ">__draft_static_pad_132__<"
-    ],
-    [
-      ">__draft_static_pad_133__<",
-      ">__draft_static_pad_133__<"
-    ],
-    [
-      ">__draft_static_pad_134__<",
-      ">__draft_static_pad_134__<"
-    ],
-    [
-      ">__draft_static_pad_135__<",
-      ">__draft_static_pad_135__<"
-    ],
-    [
-      ">__draft_static_pad_136__<",
-      ">__draft_static_pad_136__<"
-    ],
-    [
-      ">__draft_static_pad_137__<",
-      ">__draft_static_pad_137__<"
-    ],
-    [
-      ">__draft_static_pad_138__<",
-      ">__draft_static_pad_138__<"
-    ],
-    [
-      ">__draft_static_pad_139__<",
-      ">__draft_static_pad_139__<"
-    ],
-    [
-      ">__draft_static_pad_140__<",
-      ">__draft_static_pad_140__<"
-    ],
-    [
-      ">__draft_static_pad_141__<",
-      ">__draft_static_pad_141__<"
-    ],
-    [
-      ">__draft_static_pad_142__<",
-      ">__draft_static_pad_142__<"
-    ],
-    [
-      ">__draft_static_pad_143__<",
-      ">__draft_static_pad_143__<"
-    ],
-    [
-      ">__draft_static_pad_144__<",
-      ">__draft_static_pad_144__<"
-    ],
-    [
-      ">__draft_static_pad_145__<",
-      ">__draft_static_pad_145__<"
-    ],
-    [
-      ">__draft_static_pad_146__<",
-      ">__draft_static_pad_146__<"
-    ],
-    [
-      ">__draft_static_pad_147__<",
-      ">__draft_static_pad_147__<"
-    ],
-    [
-      ">__draft_static_pad_148__<",
-      ">__draft_static_pad_148__<"
-    ],
-    [
-      ">__draft_static_pad_149__<",
-      ">__draft_static_pad_149__<"
-    ],
-    [
-      ">__draft_static_pad_150__<",
-      ">__draft_static_pad_150__<"
-    ],
-    [
-      ">__draft_static_pad_151__<",
-      ">__draft_static_pad_151__<"
-    ],
-    [
-      ">__draft_static_pad_152__<",
-      ">__draft_static_pad_152__<"
-    ],
-    [
-      ">__draft_static_pad_153__<",
-      ">__draft_static_pad_153__<"
-    ],
-    [
-      ">__draft_static_pad_154__<",
-      ">__draft_static_pad_154__<"
-    ],
-    [
-      ">__draft_static_pad_155__<",
-      ">__draft_static_pad_155__<"
-    ],
-    [
-      ">__draft_static_pad_156__<",
-      ">__draft_static_pad_156__<"
-    ],
-    [
-      ">__draft_static_pad_157__<",
-      ">__draft_static_pad_157__<"
-    ],
-    [
-      ">__draft_static_pad_158__<",
-      ">__draft_static_pad_158__<"
-    ],
-    [
-      ">__draft_static_pad_159__<",
-      ">__draft_static_pad_159__<"
-    ],
-    [
-      ">__draft_static_pad_160__<",
-      ">__draft_static_pad_160__<"
-    ],
-    [
-      ">__draft_static_pad_161__<",
-      ">__draft_static_pad_161__<"
-    ],
-    [
-      ">__draft_static_pad_162__<",
-      ">__draft_static_pad_162__<"
-    ],
-    [
-      ">__draft_static_pad_163__<",
-      ">__draft_static_pad_163__<"
-    ],
-    [
-      ">__draft_static_pad_164__<",
-      ">__draft_static_pad_164__<"
-    ],
-    [
-      ">__draft_static_pad_165__<",
-      ">__draft_static_pad_165__<"
-    ],
-    [
-      ">__draft_static_pad_166__<",
-      ">__draft_static_pad_166__<"
-    ],
-    [
-      ">__draft_static_pad_167__<",
-      ">__draft_static_pad_167__<"
-    ],
-    [
-      ">__draft_static_pad_168__<",
-      ">__draft_static_pad_168__<"
-    ],
-    [
-      ">__draft_static_pad_169__<",
-      ">__draft_static_pad_169__<"
-    ],
-    [
-      ">__draft_static_pad_170__<",
-      ">__draft_static_pad_170__<"
-    ],
-    [
-      ">__draft_static_pad_171__<",
-      ">__draft_static_pad_171__<"
-    ],
-    [
-      ">__draft_static_pad_172__<",
-      ">__draft_static_pad_172__<"
-    ],
-    [
-      ">__draft_static_pad_173__<",
-      ">__draft_static_pad_173__<"
-    ],
-    [
-      ">__draft_static_pad_174__<",
-      ">__draft_static_pad_174__<"
-    ],
-    [
-      ">__draft_static_pad_175__<",
-      ">__draft_static_pad_175__<"
-    ],
-    [
-      ">__draft_static_pad_176__<",
-      ">__draft_static_pad_176__<"
-    ],
-    [
-      ">__draft_static_pad_177__<",
-      ">__draft_static_pad_177__<"
-    ],
-    [
-      ">__draft_static_pad_178__<",
-      ">__draft_static_pad_178__<"
-    ],
-    [
-      ">__draft_static_pad_179__<",
-      ">__draft_static_pad_179__<"
-    ],
-    [
-      ">__draft_static_pad_180__<",
-      ">__draft_static_pad_180__<"
-    ],
-    [
-      ">__draft_static_pad_181__<",
-      ">__draft_static_pad_181__<"
-    ],
-    [
-      ">__draft_static_pad_182__<",
-      ">__draft_static_pad_182__<"
-    ],
-    [
-      ">__draft_static_pad_183__<",
-      ">__draft_static_pad_183__<"
-    ],
-    [
-      ">__draft_static_pad_184__<",
-      ">__draft_static_pad_184__<"
-    ],
-    [
-      ">__draft_static_pad_185__<",
-      ">__draft_static_pad_185__<"
-    ],
-    [
-      ">__draft_static_pad_186__<",
-      ">__draft_static_pad_186__<"
-    ],
-    [
-      ">__draft_static_pad_187__<",
-      ">__draft_static_pad_187__<"
-    ],
-    [
-      ">__draft_static_pad_188__<",
-      ">__draft_static_pad_188__<"
-    ],
-    [
-      ">__draft_static_pad_189__<",
-      ">__draft_static_pad_189__<"
-    ],
-    [
-      ">__draft_static_pad_190__<",
-      ">__draft_static_pad_190__<"
-    ],
-    [
-      ">__draft_static_pad_191__<",
-      ">__draft_static_pad_191__<"
-    ],
-    [
-      ">__draft_static_pad_192__<",
-      ">__draft_static_pad_192__<"
-    ],
-    [
-      ">__draft_static_pad_193__<",
-      ">__draft_static_pad_193__<"
-    ],
-    [
-      ">__draft_static_pad_194__<",
-      ">__draft_static_pad_194__<"
-    ],
-    [
-      ">__draft_static_pad_195__<",
-      ">__draft_static_pad_195__<"
-    ],
-    [
-      ">__draft_static_pad_196__<",
-      ">__draft_static_pad_196__<"
-    ],
-    [
-      ">__draft_static_pad_197__<",
-      ">__draft_static_pad_197__<"
-    ],
-    [
-      ">__draft_static_pad_198__<",
-      ">__draft_static_pad_198__<"
-    ],
-    [
-      ">__draft_static_pad_199__<",
-      ">__draft_static_pad_199__<"
-    ],
-    [
-      ">__draft_static_pad_200__<",
-      ">__draft_static_pad_200__<"
-    ],
-    [
-      ">__draft_static_pad_201__<",
-      ">__draft_static_pad_201__<"
-    ],
-    [
-      ">__draft_static_pad_202__<",
-      ">__draft_static_pad_202__<"
-    ],
-    [
-      ">__draft_static_pad_203__<",
-      ">__draft_static_pad_203__<"
-    ],
-    [
-      ">__draft_static_pad_204__<",
-      ">__draft_static_pad_204__<"
-    ],
-    [
-      ">__draft_static_pad_205__<",
-      ">__draft_static_pad_205__<"
-    ],
-    [
-      ">__draft_static_pad_206__<",
-      ">__draft_static_pad_206__<"
-    ],
-    [
-      ">__draft_static_pad_207__<",
-      ">__draft_static_pad_207__<"
-    ],
-    [
-      ">__draft_static_pad_208__<",
-      ">__draft_static_pad_208__<"
-    ],
-    [
-      ">__draft_static_pad_209__<",
-      ">__draft_static_pad_209__<"
-    ],
-    [
-      ">__draft_static_pad_210__<",
-      ">__draft_static_pad_210__<"
-    ],
-    [
-      ">__draft_static_pad_211__<",
-      ">__draft_static_pad_211__<"
-    ],
-    [
-      ">__draft_static_pad_212__<",
-      ">__draft_static_pad_212__<"
-    ],
-    [
-      ">__draft_static_pad_213__<",
-      ">__draft_static_pad_213__<"
-    ],
-    [
-      ">__draft_static_pad_214__<",
-      ">__draft_static_pad_214__<"
-    ],
-    [
-      ">__draft_static_pad_215__<",
-      ">__draft_static_pad_215__<"
-    ],
-    [
-      ">__draft_static_pad_216__<",
-      ">__draft_static_pad_216__<"
-    ],
-    [
-      ">__draft_static_pad_217__<",
-      ">__draft_static_pad_217__<"
-    ],
-    [
-      ">__draft_static_pad_218__<",
-      ">__draft_static_pad_218__<"
-    ],
-    [
-      ">__draft_static_pad_219__<",
-      ">__draft_static_pad_219__<"
-    ],
-    [
-      ">__draft_static_pad_220__<",
-      ">__draft_static_pad_220__<"
-    ],
-    [
-      ">__draft_static_pad_221__<",
-      ">__draft_static_pad_221__<"
-    ],
-    [
-      ">__draft_static_pad_222__<",
-      ">__draft_static_pad_222__<"
-    ],
-    [
-      ">__draft_static_pad_223__<",
-      ">__draft_static_pad_223__<"
-    ],
-    [
-      ">__draft_static_pad_224__<",
-      ">__draft_static_pad_224__<"
-    ],
-    [
-      ">__draft_static_pad_225__<",
-      ">__draft_static_pad_225__<"
-    ],
-    [
-      ">__draft_static_pad_226__<",
-      ">__draft_static_pad_226__<"
-    ],
-    [
-      ">__draft_static_pad_227__<",
-      ">__draft_static_pad_227__<"
-    ],
-    [
-      ">__draft_static_pad_228__<",
-      ">__draft_static_pad_228__<"
-    ],
-    [
-      ">__draft_static_pad_229__<",
-      ">__draft_static_pad_229__<"
-    ],
-    [
-      ">__draft_static_pad_230__<",
-      ">__draft_static_pad_230__<"
-    ],
-    [
-      ">__draft_static_pad_231__<",
-      ">__draft_static_pad_231__<"
-    ],
-    [
-      ">__draft_static_pad_232__<",
-      ">__draft_static_pad_232__<"
-    ],
-    [
-      ">__draft_static_pad_233__<",
-      ">__draft_static_pad_233__<"
-    ],
-    [
-      ">__draft_static_pad_234__<",
-      ">__draft_static_pad_234__<"
-    ],
-    [
-      ">__draft_static_pad_235__<",
-      ">__draft_static_pad_235__<"
-    ],
-    [
-      ">__draft_static_pad_236__<",
-      ">__draft_static_pad_236__<"
-    ],
-    [
-      ">__draft_static_pad_237__<",
-      ">__draft_static_pad_237__<"
-    ],
-    [
-      ">__draft_static_pad_238__<",
-      ">__draft_static_pad_238__<"
-    ],
-    [
-      ">__draft_static_pad_239__<",
-      ">__draft_static_pad_239__<"
-    ],
-    [
-      ">__draft_static_pad_240__<",
-      ">__draft_static_pad_240__<"
-    ],
-    [
-      ">__draft_static_pad_241__<",
-      ">__draft_static_pad_241__<"
-    ],
-    [
-      ">__draft_static_pad_242__<",
-      ">__draft_static_pad_242__<"
-    ],
-    [
-      ">__draft_static_pad_243__<",
-      ">__draft_static_pad_243__<"
-    ],
-    [
-      ">__draft_static_pad_244__<",
-      ">__draft_static_pad_244__<"
-    ],
-    [
-      ">__draft_static_pad_245__<",
-      ">__draft_static_pad_245__<"
-    ],
-    [
-      ">__draft_static_pad_246__<",
-      ">__draft_static_pad_246__<"
-    ],
-    [
-      ">__draft_static_pad_247__<",
-      ">__draft_static_pad_247__<"
-    ],
-    [
-      ">__draft_static_pad_248__<",
-      ">__draft_static_pad_248__<"
-    ],
-    [
-      ">__draft_static_pad_249__<",
-      ">__draft_static_pad_249__<"
-    ],
-    [
-      ">__draft_static_pad_250__<",
-      ">__draft_static_pad_250__<"
-    ],
-    [
-      ">__draft_static_pad_251__<",
-      ">__draft_static_pad_251__<"
-    ],
-    [
-      ">__draft_static_pad_252__<",
-      ">__draft_static_pad_252__<"
-    ],
-    [
-      ">__draft_static_pad_253__<",
-      ">__draft_static_pad_253__<"
+      "<h3><a href=\"[^\"]+/blockchain-digital-assets/[^\"]*\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/ha/batutuwa/blockchain-digital-assets/index.html\">Blockchain &amp; kadarorin dijital</a></h3>"
     ],
     [
       "<h1>Enterprise AI Banking (?:&amp;|&) Payment Software Suite</h1>",
@@ -1036,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Wallafe-wallafen sun koma sashen Bincike</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Bankin da aka gina a kan girgije\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Bankin da aka gina a kan girgije — tutar batu\""
+    ],
+    [
+      "<h3><a href=\"/ha/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/ha/topics/cloud-native-banking/index.html\">Bankin da aka gina a kan girgije</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/ha/batutuwa/cloud-native-banking/index.html\">Bankin da aka gina a kan girgije</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Injiniyan dandali bisa Kubernetes ga cibiyoyin da ake sa ido a kai: juriyar aiki da aka gwada bisa DORA, hadewar na'urori masu kama-da-wane da kwantena, girgije mai cin gashin kansa, dabarar fita, da kuma gine-ginen da ke ba bankuna damar fitar da muhimman ayyuka a karkashin kulawa.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"Basirar wucin gadi mai wakilci a banki\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"Basirar wucin gadi mai wakilci a banki — tutar batu\""
+    ],
+    [
+      "<h3><a href=\"/ha/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/ha/topics/agentic-ai-banking/index.html\">Basirar wucin gadi mai wakilci a banki</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/ha/batutuwa/agentic-ai-banking/index.html\">Basirar wucin gadi mai wakilci a banki</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Matakan sarrafa wakilai, tura sakonni na ma'ana ta hanyar da aka tsara, kofofin manufa na OPA, bayanan bincike na WORM da ba a iya canzawa, da kuma ruwan tabarau na hadarin samfuri bisa SR 11-7 / SS1/23 wanda ke mayar da ayyukan kai-tsaye zuwa shaidar da ta dace ga mai kulawa.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Sarrafa baitulmali ta atomatik\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Sarrafa baitulmali ta atomatik — tutar batu\""
+    ],
+    [
+      "<h3><a href=\"/ha/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/ha/topics/treasury-automation/index.html\">Sarrafa baitulmali ta atomatik</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/ha/batutuwa/treasury-automation/index.html\">Sarrafa baitulmali ta atomatik</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Kudi mai sassauci da ake iya tsarawa, baitulmali mai cin gashin kansa, injinan biyan kudi na ISO 20022, da kuma kayan aikin bude tushe da ke mayar da CAMT / pacs.008 / MT940 / pain.001 zuwa bayanan mu'amala da ake iya bincikawa a matakin kwamitin gudanarwa ga kungiyoyin baitulmalin kamfanoni.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Juriyar aiki da DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Juriyar aiki da DORA — tutar batu\""
+    ],
+    [
+      "<h3><a href=\"/ha/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/ha/topics/operational-resilience-dora/index.html\">Juriyar aiki da DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/ha/batutuwa/operational-resilience-dora/index.html\">Juriyar aiki da DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Alhakin kwamitin gudanarwa bisa Sashe na 5 na DORA, tara bayanan hadari bisa BCBS 239, hadarin tarin kungiyoyi na waje, gwajin fita, da kuma matakan injiniya da ke mayar da juriyar aiki daga aikin bin doka zuwa allon sakamako da ya dace ga mai kulawa.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Tsayayyun tsabar kudi da tokanisa\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Tsayayyun tsabar kudi da tokanisa — tutar batu\""
+    ],
+    [
+      "<h3><a href=\"/ha/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/ha/topics/stablecoins-tokenisation/index.html\">Tsayayyun tsabar kudi da tokanisa</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/ha/batutuwa/stablecoins-tokenisation/index.html\">Tsayayyun tsabar kudi da tokanisa</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Ajiyar da aka tokanisa, asusun kasuwar kudi, gwaje-gwajen kudin dijital na babban banki na kasuwanci mai yawa, BRSRV/BSTBL na BlackRock, Dokar GENIUS, da kuma zabin injiniya da ke sa kudi mai sassaucin tsarawa ya yi aiki cikin lissafin kudi da ake sa ido a kai.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"Basirar wucin gadi mai kirkira da manyan samfuran harshe\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"Basirar wucin gadi mai kirkira da manyan samfuran harshe — tutar batu\""
+    ],
+    [
+      "<h3><a href=\"/ha/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/ha/topics/generative-ai-llms/index.html\">Basirar wucin gadi mai kirkira da manyan samfuran harshe</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/ha/batutuwa/generative-ai-llms/index.html\">Basirar wucin gadi mai kirkira da manyan samfuran harshe</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Samfuran tushe, manyan samfuran harshe masu hanyoyi da yawa (Gemini, Gemma, Mistral, MM1), injiniyan umarni, da kuma fitowar bude tushe da ke tsara abin da bankuna za su iya ginawa cikin iyakar bayanansu.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"Basirar wucin gadi ta murya da magana\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"Basirar wucin gadi ta murya da magana — tutar batu\""
+    ],
+    [
+      "<h3><a href=\"/ha/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/ha/topics/voice-speech-ai/index.html\">Basirar wucin gadi ta murya da magana</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/ha/batutuwa/voice-speech-ai/index.html\">Basirar wucin gadi ta murya da magana</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Kwafin murya, gane magana nan take (Whisper), mataimakan murya ga manyan shugabanni, da kuma tarin basirar sauti da ke sake tsara kwarewar abokin ciniki na bankin sirri.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"Shugabanci da tsarin dokokin basirar wucin gadi\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"Shugabanci da tsarin dokokin basirar wucin gadi — tutar batu\""
+    ],
+    [
+      "<h3><a href=\"/ha/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/ha/topics/ai-governance-regulation/index.html\">Shugabanci da tsarin dokokin basirar wucin gadi</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/ha/batutuwa/ai-governance-regulation/index.html\">Shugabanci da tsarin dokokin basirar wucin gadi</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Bin Dokar Basirar Wucin Gadi ta Tarayyar Turai, hadarin samfuri bisa SR 11-7, alhaki a matakin kwamitin gudanarwa, iya bincika ayyukan kai-tsaye, da kuma tsarin dokokin basirar wucin gadi cikin manyan bankuna.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Hanyoyin biyan kudi na kasuwanci mai yawa\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Hanyoyin biyan kudi na kasuwanci mai yawa — tutar batu\""
+    ],
+    [
+      "<h3><a href=\"/ha/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/ha/topics/wholesale-payments-rails/index.html\">Hanyoyin biyan kudi na kasuwanci mai yawa</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/ha/batutuwa/wholesale-payments-rails/index.html\">Hanyoyin biyan kudi na kasuwanci mai yawa</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Dabarar hanyoyi da yawa da ta hada katunan, canja wuri tsakanin asusu, RTP, FedNow, bankin bude, da kuma hanyoyin tsayayyun tsabar kudi. Tattalin arzikin kasuwanci mai yawa, karshen sasantawa, da kuma samfurin rashin rabuwa tsakanin kasashe na Aikin Agorá na BIS.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Sirrin rubutu da juriya</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Sirrin rubutu da juriya</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Kaura bayan kwanton, juriyar aiki a matakin DORA, da kuma tsarin shugabancin basirar wucin gadi cikin ayyukan kudi.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Biyan kudi da kudi</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Biyan kudi da kudi</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Kaura zuwa ISO 20022, sasantawar kasuwanci mai yawa, tsayayyun tsabar kudi, ajiyar da aka tokanisa, da kuma aikin baitulmalin kamfani da ke kewaye da su.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>Basirar wucin gadi da girgije</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">Basirar wucin gadi da girgije</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Basirar wucin gadi mai amfani, tsarin wakilci, samfuran kirkira, basirar murya da magana, da kuma dandalin bankin girgije da ke gudanar da su.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Bude tushe da sana'a</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Bude tushe da sana'a</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Dakunan karatu na Rust, tushen blockchain, da kuma horon injiniya na bude tushe da ke bayansu.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Ginshikai hudu, kungiyoyin batu goma sha hudu, kowace makala mai kwanan wata. Zabi zare daya ka bi shi cikin dukkan tarihin.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">GINSHIKI</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Ginshikai</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Kungiyoyin batu</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Makaloli da aka lissafa</span>"
     ]
   ]
 }

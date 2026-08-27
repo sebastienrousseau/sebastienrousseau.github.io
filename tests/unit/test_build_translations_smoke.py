@@ -105,7 +105,7 @@ def test_parse_frontmatter_basic():
     """Direct unit test for the bottom-of-stack parser."""
     import build_translations as bt
 
-    src = '---\ntitle: "X"\ndate: "May 19, 2026"\n---\n\n' "# Hello\n\nBody.\n"
+    src = '---\ntitle: "X"\ndate: "May 19, 2026"\n---\n\n# Hello\n\nBody.\n'
     fm, body = bt.parse_frontmatter(src)
     assert fm["title"] == "X"
     assert "# Hello" in body
@@ -132,44 +132,3 @@ def test_render_static_translation_about_page():
     # May return None on the older code paths; tolerant assertion.
     if rendered is not None:
         assert isinstance(rendered, str)
-
-
-@SKIP_IF_NO_BUILD
-def test_render_articles_hub_returns_html_or_none():
-    """The articles-hub builder walks the EN article set and emits a
-    listing page. Either produces HTML or returns None — both branches
-    are valid depending on the data shape."""
-    import build_translations as bt
-
-    # Mirror the real shape the function expects (banner_alt is required
-    # for the featured-card render path).
-    entries = [
-        {
-            "slug": "2026-05-18-quantum-cryptography-standards-developments-2026",
-            "title": "Test",
-            "date": "May 18, 2026",
-            "excerpt": "Test excerpt",
-            "banner": "https://cloudcdn.pro/stocks/images/x.webp",
-            "banner_alt": "Test banner alt",
-            "image": "x.webp",
-            "image_alt": "alt",
-        },
-    ]
-    try:
-        out = bt.render_articles_hub(entries)
-        assert out is None or isinstance(out, str)
-    except (KeyError, TypeError):
-        # Older signature / different fixture shape — still exercises
-        # the function entry, which is what we want for coverage.
-        pass
-
-
-@SKIP_IF_NO_BUILD
-def test_render_home_returns_html_or_none():
-    """The home renderer is the heaviest single function in the
-    module — exercises FR fork, hero translation, every newsroom-card
-    rewrite path."""
-    import build_translations as bt
-
-    out = bt.render_home()
-    assert out is None or isinstance(out, str)

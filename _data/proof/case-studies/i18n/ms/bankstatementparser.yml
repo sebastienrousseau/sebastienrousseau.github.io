@@ -1,0 +1,35 @@
+title: BankStatementParser — risikan transaksi bersatu untuk perbendaharaan
+banner_alt: Pejabat kewangan moden pada waktu malam — melambangkan risikan transaksi bersatu merentas
+  format penyata bank CAMT, MT940, OFX dan CSV
+sector: Sumber terbuka · Perbendaharaan korporat · Pengagregatan data risiko
+role: Penulis dan penyelenggara
+status: Dalam operasi sebenar, diselenggara secara aktif
+outcome_highlights:
+- value: 6 format
+  label: CAMT (.052/.053/.054), MT940, OFX, CSV, PDF OCR
+- value: Setiap medan
+  label: 'Asal usul: format sumber dan versi penghurai dilog'
+- label: Sejajar dengan pengagregatan data risiko
+- label: Bebas digunakan, difork dan diaudit
+pull_quote: «Penghurai CAMT / MT940 / PAIN yang disahkan skema, sandaran OCR untuk PDF yang diimbas, pemetaan
+  medan berketentuan, bukti audit bertaraf SR 11-7 — setiap langkah penjelmaan direkodkan dan boleh dihasilkan
+  semula.»
+problem: Pasukan perbendaharaan korporat menerima penyata bank dalam format CAMT, PAIN.001, MT940, OFX,
+  CSV dan PDF yang diimbas daripada berpuluh-puluh bank. Setiap format membawa makna medan, pengekodan
+  dan kekaburan yang berbeza. Kebanyakan pasukan membina penghurai rapuh bagi setiap bank, lalu menyekat
+  ramalan tunai masa nyata, pengesanan penipuan dan penyesuaian yang boleh diaudit.
+what_i_built: Kit alat Python sumber terbuka yang menyatukan setiap format penyata bank biasa ke dalam
+  satu aliran transaksi yang dinormalkan. Penghurai CAMT / MT940 / PAIN yang disahkan skema, sandaran
+  OCR untuk PDF yang diimbas, pemetaan medan berketentuan, dan bukti audit bertaraf SR 11-7 bagi setiap
+  langkah penjelmaan.
+rigour:
+- metric: Format yang dihurai
+  value: CAMT (.052, .053, .054), MT940, OFX, CSV, PDF diimbas (OCR)
+- metric: Penormalan
+  value: Satu skema rekod transaksi bersatu
+- metric: Jejak audit
+  value: Asal usul setiap medan — format sumber dan versi penghurai dilog bagi setiap baris
+- metric: Lesen
+validation:
+- 'Dipaparkan dalam tulisan 14/06/2026: From Bank Statements to Unified Transaction Intelligence'
+- Direka untuk memenuhi keperluan pengagregatan data risiko BCBS 239

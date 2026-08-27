@@ -19,5 +19,68 @@
   "blockchain-digital-assets": {
     "title": "Blockchain da Kayan Dijital",
     "lede": "Bitcoin, asalin blockchain, alamomin ERC-20, stablecoin da tsarin tsari da ke kewaye da hanyoyin biyan kuɗi waɗanda kayan dijital ke goyon baya."
-  }
+  },
+  "cloud-native-banking": {
+    "title": "Bankin da aka gina a kan girgije",
+    "lede": "Injiniyan dandali bisa Kubernetes ga cibiyoyin da ake sa ido a kai: juriyar aiki da aka gwada bisa DORA, hadewar na'urori masu kama-da-wane da kwantena, girgije mai cin gashin kansa, dabarar fita, da kuma gine-ginen da ke ba bankuna damar fitar da muhimman ayyuka a karkashin kulawa."
+  },
+  "agentic-ai-banking": {
+    "title": "Basirar wucin gadi mai wakilci a banki",
+    "lede": "Matakan sarrafa wakilai, tura sakonni na ma'ana ta hanyar da aka tsara, kofofin manufa na OPA, bayanan bincike na WORM da ba a iya canzawa, da kuma ruwan tabarau na hadarin samfuri bisa SR 11-7 / SS1/23 wanda ke mayar da ayyukan kai-tsaye zuwa shaidar da ta dace ga mai kulawa."
+  },
+  "treasury-automation": {
+    "title": "Sarrafa baitulmali ta atomatik",
+    "lede": "Kudi mai sassauci da ake iya tsarawa, baitulmali mai cin gashin kansa, injinan biyan kudi na ISO 20022, da kuma kayan aikin bude tushe da ke mayar da CAMT / pacs.008 / MT940 / pain.001 zuwa bayanan mu'amala da ake iya bincikawa a matakin kwamitin gudanarwa ga kungiyoyin baitulmalin kamfanoni."
+  },
+  "operational-resilience-dora": {
+    "title": "Juriyar aiki da DORA",
+    "lede": "Alhakin kwamitin gudanarwa bisa Sashe na 5 na DORA, tara bayanan hadari bisa BCBS 239, hadarin tarin kungiyoyi na waje, gwajin fita, da kuma matakan injiniya da ke mayar da juriyar aiki daga aikin bin doka zuwa allon sakamako da ya dace ga mai kulawa."
+  },
+  "stablecoins-tokenisation": {
+    "title": "Tsayayyun tsabar kudi da tokanisa",
+    "lede": "Ajiyar da aka tokanisa, asusun kasuwar kudi, gwaje-gwajen kudin dijital na babban banki na kasuwanci mai yawa, BRSRV/BSTBL na BlackRock, Dokar GENIUS, da kuma zabin injiniya da ke sa kudi mai sassaucin tsarawa ya yi aiki cikin lissafin kudi da ake sa ido a kai."
+  },
+  "generative-ai-llms": {
+    "title": "Basirar wucin gadi mai kirkira da manyan samfuran harshe",
+    "lede": "Samfuran tushe, manyan samfuran harshe masu hanyoyi da yawa (Gemini, Gemma, Mistral, MM1), injiniyan umarni, da kuma fitowar bude tushe da ke tsara abin da bankuna za su iya ginawa cikin iyakar bayanansu."
+  },
+  "voice-speech-ai": {
+    "title": "Basirar wucin gadi ta murya da magana",
+    "lede": "Kwafin murya, gane magana nan take (Whisper), mataimakan murya ga manyan shugabanni, da kuma tarin basirar sauti da ke sake tsara kwarewar abokin ciniki na bankin sirri."
+  },
+  "ai-governance-regulation": {
+    "title": "Shugabanci da tsarin dokokin basirar wucin gadi",
+    "lede": "Bin Dokar Basirar Wucin Gadi ta Tarayyar Turai, hadarin samfuri bisa SR 11-7, alhaki a matakin kwamitin gudanarwa, iya bincika ayyukan kai-tsaye, da kuma tsarin dokokin basirar wucin gadi cikin manyan bankuna."
+  },
+  "wholesale-payments-rails": {
+    "title": "Hanyoyin biyan kudi na kasuwanci mai yawa",
+    "lede": "Dabarar hanyoyi da yawa da ta hada katunan, canja wuri tsakanin asusu, RTP, FedNow, bankin bude, da kuma hanyoyin tsayayyun tsabar kudi. Tattalin arzikin kasuwanci mai yawa, karshen sasantawa, da kuma samfurin rashin rabuwa tsakanin kasashe na Aikin Agorá na BIS."
+  },
+  "_pillars": [
+    {
+      "name": "Sirrin rubutu da juriya",
+      "lede": "Kaura bayan kwanton, juriyar aiki a matakin DORA, da kuma tsarin shugabancin basirar wucin gadi cikin ayyukan kudi."
+    },
+    {
+      "name": "Biyan kudi da kudi",
+      "lede": "Kaura zuwa ISO 20022, sasantawar kasuwanci mai yawa, tsayayyun tsabar kudi, ajiyar da aka tokanisa, da kuma aikin baitulmalin kamfani da ke kewaye da su."
+    },
+    {
+      "name": "Basirar wucin gadi da girgije",
+      "lede": "Basirar wucin gadi mai amfani, tsarin wakilci, samfuran kirkira, basirar murya da magana, da kuma dandalin bankin girgije da ke gudanar da su."
+    },
+    {
+      "name": "Bude tushe da sana'a",
+      "lede": "Dakunan karatu na Rust, tushen blockchain, da kuma horon injiniya na bude tushe da ke bayansu."
+    }
+  ],
+  "_hub_lede": "Ginshikai hudu, kungiyoyin batu goma sha hudu, kowace makala mai kwanan wata. Zabi zare daya ka bi shi cikin dukkan tarihin.",
+  "_banner_word": "tutar batu",
+  "_kpi": [
+    "Ginshikai",
+    "Kungiyoyin batu",
+    "Makaloli da aka lissafa"
+  ],
+  "_article_count": "Makaloli {n}",
+  "_pillar_kicker": "GINSHIKI"
 }

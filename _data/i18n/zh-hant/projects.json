@@ -1,0 +1,156 @@
+{
+  "_comment": "Positional /projects/ body copy. Arrays align with the English page in document order; see scripts/generators/build_translations/_projects.py. gh_pushed_template takes {age} verbatim from the GitHub push date.",
+  "kpi": [
+    "開源下載量",
+    "GitHub 星標數",
+    "Sigstore 簽署的文章",
+    "投入生產的年數"
+  ],
+  "setup_kicker": [
+    "為金融服務而打造"
+  ],
+  "setup_headline": [
+    "三個工作領域。 "
+  ],
+  "setup_soft": [
+    "支付、安全與工具。"
+  ],
+  "area_alt": [
+    "夜間城市交流道的空拍圖，代表跨境支付通道。",
+    "抽象的藍色光場，代表面向金融系統的後量子密碼學。",
+    "柔光中俐落的建築線條，代表可靠的開發基礎。"
+  ],
+  "area_kicker": [
+    "支付與 ISO 20022",
+    "後量子安全",
+    "開發者平台"
+  ],
+  "area_headline": [
+    "支付，遵循全球<span class=\"ac\">標準。</span>",
+    "超越 <span class=\"ac\">RSA 時代</span>的安全。",
+    "為你的<span class=\"ac\">工程師打好地基。</span>"
+  ],
+  "area_text": [
+    "ISO 20022 涵蓋訊息的完整生命週期。這些函式庫產生 <strong>pain.001</strong> 發動檔案，建立並驗證 <strong>pacs.008</strong> 轉帳，讀取 <strong>camt.053</strong> 對帳單，並處理 <strong>acmt.001</strong> 帳戶管理，同時附有面向舊格式的剖析器。你可以一次採用一個函式庫，不必替換核心系統。",
+    "有些金融紀錄會在數十年間維持敏感，久到今日採集的資料可能在量子電腦成熟後被讀出。這些 Rust 函式庫實作了 <strong>ML-KEM (CRYSTALS-Kyber, NIST FIPS 203)</strong>，並配有雜湊及相關原語，讓遷移能在期限逼近之前就開始。",
+    "正是打造並保護本站的那批 Rust 函式庫。其中包括用於 YAML 的 <strong>noyalib</strong> 與 <strong>Static Site Generator</strong> 本身，發布時附上 CycloneDX SBOM 與 Sigstore 簽章。你的工程師在它們之上建構，而不必自行維護同類實作。"
+  ],
+  "area_cta": [
+    "閱讀支付的故事",
+    "閱讀安全的故事",
+    "閱讀平台的故事"
+  ],
+  "cat_kicker": [
+    "自動化金融基礎設施",
+    "後量子金融安全",
+    "應用 AI 與管理層洞察",
+    "自主可控的企業技術",
+    "網站、出版與工作環境"
+  ],
+  "finale_eyebrow": [
+    "聯絡"
+  ],
+  "finale_lede": [
+    "正在規劃 ISO 20022 遷移、後量子評估，或把應用 AI 投入生產？告訴我你在打造什麼。我會告訴你這些工具該放在哪裡。"
+  ],
+  "finale_cta": [
+    "與我聯絡"
+  ],
+  "h2": [
+    "金融資料，理清楚。",
+    "抗量子。可用於企業。",
+    "提出一個問題。得到一份簡報。",
+    "你的硬體。你的資料。",
+    "照你的方式交付。",
+    "在它之上建構。或者和我一起建構。"
+  ],
+  "lede": [
+    "支付檔案與銀行對帳單，沒有摩擦。這些工具產生完整的 ISO 20022 訊息生命週期，並以確定性的精度剖析現實中雜亂的對帳單。帶上你的 CSV、PDF 或資料庫。資料自然就流動起來了。",
+    "為量子時代打造的安全，今天就能用上。這些函式庫緊跟 NIST 在金鑰封裝與雜湊方面的標準，讓你在威脅到來之前很久，就把金融基礎設施做好面向未來的準備。",
+    "把 AI 用在日常營運裡。掃描程式碼找漏洞，把一個問題變成結構化簡報，用語音完成工作。照你的條件來，不被供應商綁住。",
+    "你能真正擁有的基礎。經過稽核、記憶體安全的 Rust 函式庫，執行在你自己的基礎設施上，發布時附上軟體物料清單與 Sigstore 簽章。逐行讀它。收進來。留在自己手裡。",
+    "範本、一個 CSS 框架、兩份產業刊物，以及把這一切發布出去的可重現組態。本站執行其上的技術堆疊。"
+  ],
+  "alt": [
+    "開源支付函式庫 pain001 的橫幅",
+    "ISO 20022 工具組 pacs008 的橫幅",
+    "銀行對帳單套件 camt053 的標誌",
+    "帳戶管理套件 acmt001 的標誌",
+    "Bank Statement Parser 的橫幅",
+    "NaluFX 的標誌，以 Rust 實作的 AI 驅動資金配置",
+    "QRC 的標誌，一個 Rust QR 碼函式庫",
+    "KyberLib 的橫幅",
+    "Rust 函式庫 Hash (HSH) 的橫幅",
+    "Password Generator Pro 的橫幅",
+    "Euxis 的橫幅，一個開源程式碼安全掃描器",
+    "Àkàndé 的橫幅，一個先進的 AI 語音助理",
+    "Audio Analyser 的橫幅",
+    "Crypto Service Suite 的橫幅",
+    "Static Site Generator 的橫幅",
+    "Rust YAML 1.2 生態 noyalib 的橫幅",
+    "Serde YML 的橫幅",
+    "RustLogs (RLG) 函式庫的橫幅",
+    "LibMake 的橫幅",
+    "Rust 函式庫 DateTime (DTT) 的橫幅",
+    "Rust 函式庫 Random (VRD) 的橫幅",
+    "Rust 函式庫 Common (CMN) 的橫幅",
+    "Rust 函式庫 Mini Functions 的橫幅",
+    "起始範本 Kaishi 的橫幅",
+    "Skeletonic Stylus Library 的橫幅",
+    "刊物 Banking On AI 的橫幅",
+    "刊物 Banking On Quantum 的橫幅",
+    "L90S 網站的橫幅",
+    "Dotfiles 專案的橫幅"
+  ],
+  "excerpt": [
+    "從 CSV 或 SQLite 產生 ISO 20022 pain.001 檔案。銀行與支付服務商用它產出結構化的匯款訊息，而不必重建既有系統。",
+    "為銀行間的客戶轉帳產生、驗證並遞送 ISO 20022 pacs.008 訊息。包含 JSON Schema 與 XSD 驗證、涵蓋 75 個國家的 IBAN 檢查，以及面向 GDPR 與 PCI-DSS 的個資遮蔽。",
+    "讀取銀行發給客戶的 ISO 20022 camt.053 對帳單，把餘額、分錄與交易明細擷取為結構化資料。包含 MT940 載入、XLSX 匯出，以及編輯器與 AI 助理整合。",
+    "面向帳戶管理的 ISO 20022 訊息。從一般資料檔出發，開立、維護、關閉、移轉並核驗銀行帳戶，並配有面向編輯器與 AI 助理的工具。",
+    "一個 Python 工具組，把多種格式的銀行對帳單轉成結構化資料。為現實中雜亂的檔案與稽核需求而建。",
+    "一個以 Rust 撰寫的應用程式，用於在基金架構之間進行資金配置，並以預測引導拆分。面向財資、基金會計與資產配置。",
+    "一個以 Rust 撰寫的函式庫，可產生並讀取多種格式的 QR 碼。在支付場景中用於 SEPA 轉帳的 EPC QR 碼、商家收款的支付連結，以及強化驗證。",
+    "CRYSTALS-Kyber 的 Rust 實作，即後量子金鑰封裝的 NIST FIPS 203 標準。",
+    "用於密碼儲存與驗證的雜湊與摘要演算法，以抗量子的姿態撰寫。",
+    "一個跨平台命令列工具，用於產生隨機密碼，底層倚賴經過稽核的密碼學原語。",
+    "一個涵蓋八種語言的程式碼安全掃描器，把靜態分析與污染分析結合大型語言模型驗證，以減少誤判。輸出經 Sigstore 簽署的 SARIF、SBOM 與 OpenVEX 組合，供供應鏈審查使用。",
+    "一個建立在 OpenAI GPT 模型之上的語音助理，帶有 PDF 摘要與回應快取。適合個人與管理層使用。",
+    "藉由 AI 語音辨識把音訊即時轉成文字。面向已錄製對話與會議的分析。",
+    "一項面向應用常見需求的密碼學服務：加密、代碼化、交易授權、程式碼簽署以及金鑰生命週期管理。",
+    "一個以 Rust 撰寫、預設即安全的靜態網站產生器。包含 WCAG AAA 驗證、CSP 與 SRI 強化、本機大型語言模型內容管線、WebAssembly 目標，以及 28 種語言支援。",
+    "一個純 Rust 的 YAML 1.2 實作。零 unsafe 程式碼、完整符合規範、以 serde 進行串流、無損語法樹以及 JSON Schema 驗證。以函式庫、命令列工具、語言伺服器、MCP 伺服器與 WASM 建置的形式發布。",
+    "面向 Rust 資料結構的 YAML 序列化與反序列化，建立在 Serde 框架之上。",
+    "一個 Rust 記錄函式庫，支援結構化格式、非同步記錄與可設定輸出。",
+    "一個面向 Rust 函式庫的鷹架產生器。它會為測試、效能測試與持續整合產生預先填好的範本檔。",
+    "一個 Rust 日期時間函式庫：ISO 8601 格式化、時區處理，以及對日期各組成部分的存取。",
+    "以梅森旋轉演算法為基礎的亂數產生，用於模擬與遊戲。",
+    "一個用於存取數學常數與密碼學常數的 Rust 函式庫。",
+    "一個面向 Rust 的實用函式與封裝函式庫。",
+    "Static Site Generator 的起始範本，針對整潔且無障礙的網站做了設定。這是我開新網站時用的範本。",
+    "一個模組化的 Stylus 函式庫，為網頁與行動版版面提供元件和混入。本站就建立在它之上。",
+    "一份關於銀行如何應用 AI 的刊物，涵蓋客戶服務、詐欺偵測與營運。",
+    "一份關於銀行與金融領域量子運算的刊物，從風險分析到密碼學。",
+    "由一位在科技業深耕二十餘年的財務主管提供的兼職財務長顧問服務，涵蓋成長、募資與財務營運。",
+    "面向 macOS、Linux 與 Windows 的設定檔：一套開發工作流程的指令稿與設定。"
+  ],
+  "more": [
+    "了解更多"
+  ],
+  "faq_q": [
+    "這些專案以什麼授權發布？",
+    "這些專案可以用於生產嗎？",
+    "我如何參與貢獻或回報問題？",
+    "我可以在受監理的銀行環境中使用這些函式庫嗎？",
+    "你提供商業支援或顧問服務嗎？",
+    "我如何追蹤新版本？"
+  ],
+  "faq_a": [
+    "多數專案採用 MIT 與 Apache-2.0 雙授權，這是 Rust 生態的慣例，在寬鬆再散布之外，還向商業使用者明確授予專利權利。少數客戶專案僅以 Apache-2.0 發布。每個儲存庫根目錄下的授權檔是權威依據。",
+    "不少已經可以。<a href=\"https://pain001.com\">pain001</a> 已被銀行與支付服務商用於自動產生 ISO 20022 檔案。<a href=\"https://kyberlib.com\">KyberLib</a> 緊跟 NIST FIPS 203 規範並附上測試向量。各儲存庫的 README 與 CI 徽章會告訴你目前狀態；如果你的生產使用需要特定保證，請與我聯絡。",
+    "每個專案在 <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a> 下都有公開的 GitHub 儲存庫。請開一個 issue 描述問題（附上最小重現會很有幫助），或提交一個關聯到 issue 的合併請求。貢獻遵循 Developer Certificate of Origin，並要求已簽署的提交。",
+    "可以，但有一貫的前提。這些函式庫是獨立的開源作品，不是受監理的產品。在部署到生產支付基礎設施之前，請照常走你的供應鏈、安全與相依性審查流程，例如透過內部鏡像引入、用 SBOM 工具掃描，以及按 Git SHA 或密碼學雜湊做固定。",
+    "有，但會有所選擇。合作集中在 ISO 20022 遷移、後量子密碼遷移路線圖，以及金融服務中的應用 AI。請<a href=\"/contact/\">與我聯絡</a>，附上簡要說明、時程與任何限制條件。",
+    "本站每一篇帶日期的文章都會透過 <a href=\"/rss.xml\">RSS 來源</a>與 <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> 電子報發布。各個儲存庫也會在 GitHub 上發布版本，你可以直接追蹤。"
+  ],
+  "gh_pushed_template": "最近一次提交在{age}前"
+}

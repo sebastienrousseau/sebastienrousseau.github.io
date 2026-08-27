@@ -1,0 +1,26 @@
+{
+  "_comment": "HE copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "פיד",
+    "pageLabel": "עמוד {page} מתוך {total}",
+    "visible": "מוצגים",
+    "categoryLabel": "קטגוריה",
+    "yearLabel": "שנה",
+    "allCategories": "כל הקטגוריות",
+    "allYears": "כל השנים",
+    "filterAria": "סינון מאמרים",
+    "listAria": "כרטיסי מאמרים",
+    "paginationAria": "עימוד",
+    "emptyState": "אין מאמרים התואמים את הסינון הנוכחי.",
+    "previous": "הקודם",
+    "next": "הבא"
+  },
+  "pillars": {
+    "ai": "בינה מלאכותית יישומית",
+    "payments": "תשלומים וכסף",
+    "infra": "תשתיות והצפנה",
+    "policy": "מדיניות וחוסן",
+    "open-source": "קוד פתוח",
+    "leadership": "מנהיגות בנקאית"
+  }
+}

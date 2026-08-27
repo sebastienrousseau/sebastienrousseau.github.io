@@ -694,118 +694,6 @@
       "<p class=\"newsroom-kicker\">IN EVIDENZA</p>"
     ],
     [
-      ">Latest Music</h2>",
-      ">Musica recente</h2>"
-    ],
-    [
-      ">Latest playlist</h2>",
-      ">Playlist recente</h2>"
-    ],
-    [
-      ">Soulful, jazz and downtempo</h2>",
-      ">Soulful, jazz e downtempo</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">MORNING & MOOD</p>",
-      "<p class=\"newsroom-kicker\">MATTINA & ATMOSFERA</p>"
-    ],
-    [
-      ">Morning, mood and chill</h2>",
-      ">Mattina, atmosfera e chill</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">ELECTRONIC</p>",
-      "<p class=\"newsroom-kicker\">ELETTRONICA</p>"
-    ],
-    [
-      ">Electronic, house and techno</h2>",
-      ">Elettronica, house e techno</h2>"
-    ],
-    [
-      ">Pop, rock and alternative</h2>",
-      ">Pop, rock e alternativa</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">FOCUS</p>",
-      "<p class=\"newsroom-kicker\">CONCENTRAZIONE</p>"
-    ],
-    [
-      ">Focus and productivity</h2>",
-      ">Concentrazione e produttività</h2>"
-    ],
-    [
-      ">Smooth Jazz, Neo Soul, and laid-back grooves[^<]+",
-      ">Smooth Jazz, Neo Soul e groove rilassati. Playlist per quando la giornata chiede di rallentare."
-    ],
-    [
-      ">This page has a comprehensive list[^<]+",
-      ">Questa pagina presenta una selezione delle playlist Spotify più popolari e acclamate dalla critica, attraversando un'ampia gamma di generi. Che tu sia appassionato di jazz, soul, hip-hop o musica elettronica, troverai una playlist a tuo gusto."
-    ],
-    [
-      ">Step into the harmonious realm of TETRA\\.[^<]+",
-      ">Entra nel regno armonioso di TETRA. Una playlist euforica concepita per sollevare il tuo umore e riempire la tua anima di gioia."
-    ],
-    [
-      ">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">Rilassati e abbraccia l'essenza dell'estate con questa selezione di Jazz, Soul, R&amp;B e Neo Soul."
-    ],
-    [
-      ">A deep dive into the quintessential collection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">Un'immersione profonda nella collezione quintessenziale di Jazz, Soul, R&amp;B e Neo Soul."
-    ],
-    [
-      ">Take a break from a busy day and relax with soothing nu jazz and downtempo beats\\.",
-      ">Prenditi una pausa in una giornata frenetica e rilassati con nu jazz e downtempo soothing."
-    ],
-    [
-      ">Soulful tracks with a fashion-forward vibe\\. Music to set the tone for a productive and stylish day\\.",
-      ">Tracce soul con un'atmosfera fashion-forward. La musica ideale per dare il tono a una giornata produttiva e con stile."
-    ],
-    [
-      ">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms\\.",
-      ">Celebra la gioia di vivere e immergiti in un mondo di emozioni vivide, colori vibranti e ritmi soul."
-    ],
-    [
-      ">Laid-back beats, house-influenced grooves and new deep house tracks\\.",
-      ">Beat rilassati, groove ispirati all'house e nuove tracce deep house."
-    ],
-    [
-      ">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience\\.",
-      ">Una miscela fluida di disco funky, house, French touch e altri generi per un'esperienza musicale ultra-cool ed energica."
-    ],
-    [
-      ">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke\\.",
-      ">Un viaggio sonoro con Nu-Disco, French House, Electro e Disco House di artisti come Madeon e Fred Falke."
-    ],
-    [
-      ">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks\\.",
-      ">Beat rilassati, groove di ispirazione hip-hop e nuove tracce indie pop."
-    ],
-    [
-      ">Original Hip Hop, Rap and R(?:&amp;|&)B Flavor Sessions\\.",
-      ">Sessioni originali con sapore Hip Hop, Rap e R&amp;B."
-    ],
-    [
-      ">Brace yourself for hardcore rap and hip hop tracks\\.",
-      ">Preparati a rap e hip hop hardcore."
-    ],
-    [
-      ">A few of the favourite hip-hop gems\\.",
-      ">Alcune delle gemme preferite dell'hip-hop."
-    ],
-    [
-      ">Soulful beats and thoughtful lyrics\\. A captivating look into the world of contemporary hip hop, R(?:&amp;|&)B and rap\\.",
-      ">Beat soul e testi riflessivi. Uno sguardo affascinante sull'hip hop, R&amp;B e rap contemporanei."
-    ],
-    [
-      ">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats\\.",
-      ">Atmosfere rilassate e ritmi morbidi in questa splendida playlist di Lo-Fi Hip Hop."
-    ],
-    [
-      ">Celebrate the diverse heritage of African music\\. From the soulful rhythms of Wassoulou to the lively beats of Londonko\\.",
-      ">Celebra la ricca diversità della musica africana. Dai ritmi soul del Wassoulou ai beat vivaci del Londonko."
-    ],
-    [
       "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
       "aria-label=\"Etichetta: \\1, \\2 articoli\""
     ],
@@ -1006,18 +894,6 @@
       "<h3><a href=\"/it/argomenti/blockchain-digital-assets/index.html\">Blockchain &amp; attività digitali</a></h3>"
     ],
     [
-      "<p class=\"newsroom-lede\">Tracks to kick off the day or shift the room\\. Fashion\\-forward soul, vivid colour, and laid\\-back energy\\.</p>",
-      "<p class=\"newsroom-lede\">Tracce per iniziare la giornata o cambiare l'ambiente. Soul fashion-forward, colori vivaci ed energia rilassata.</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">Funky disco, French touch and electro\\. Energetic listening for movement, focus or the dance floor\\.</p>",
-      "<p class=\"newsroom-lede\">Disco funky, French touch ed electro. Un ascolto energico per il movimento, la concentrazione o la pista da ballo.</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo\\-Fi\\. The full breadth of beats\\.</p>",
-      "<p class=\"newsroom-lede\">Dalle sessioni originali di Hip Hop al rap hardcore, passando per R&B contemporaneo e Lo-Fi. L'intera ampiezza dei beat.</p>"
-    ],
-    [
       "<h1>Enterprise AI Banking (?:&amp;|&) Payment Software Suite</h1>",
       "<h1>Suite software di IA aziendale per banche e pagamenti</h1>"
     ],
@@ -1036,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Le pubblicazioni si sono trasferite in Ricerca</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Banking cloud-native\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Banking cloud-native — banner del tema\""
+    ],
+    [
+      "<h3><a href=\"/it/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/it/topics/cloud-native-banking/index.html\">Banking cloud-native</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/it/argomenti/cloud-native-banking/index.html\">Banking cloud-native</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Ingegneria di piattaforma basata su Kubernetes per istituzioni regolamentate: resilienza operativa testata secondo DORA, convergenza tra macchine virtuali e container, cloud sovrano, strategia di uscita e l'architettura che consente alle banche di rilasciare servizi critici sotto vigilanza.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"IA agentica nel banking\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"IA agentica nel banking — banner del tema\""
+    ],
+    [
+      "<h3><a href=\"/it/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/it/topics/agentic-ai-banking/index.html\">IA agentica nel banking</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/it/argomenti/agentic-ai-banking/index.html\">IA agentica nel banking</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Piani di controllo per agenti, instradamento semantico deterministico, gate di policy OPA, log di audit WORM immutabili e la lente del rischio di modello SR 11-7 / SS1/23 che trasforma i flussi autonomi in evidenze pronte per la vigilanza.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Automazione della tesoreria\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Automazione della tesoreria — banner del tema\""
+    ],
+    [
+      "<h3><a href=\"/it/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/it/topics/treasury-automation/index.html\">Automazione della tesoreria</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/it/argomenti/treasury-automation/index.html\">Automazione della tesoreria</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Liquidità programmabile, tesoreria autonoma, motori di pagamento ISO 20022 e i toolkit open source che trasformano CAMT / pacs.008 / MT940 / pain.001 in intelligenza sulle transazioni verificabile e adatta al consiglio di amministrazione.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Resilienza operativa e DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Resilienza operativa e DORA — banner del tema\""
+    ],
+    [
+      "<h3><a href=\"/it/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/it/topics/operational-resilience-dora/index.html\">Resilienza operativa e DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/it/argomenti/operational-resilience-dora/index.html\">Resilienza operativa e DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Responsabilità del consiglio ai sensi dell'articolo 5 di DORA, aggregazione dei dati di rischio BCBS 239, rischio di concentrazione sui terzi, test di uscita e i controlli ingegneristici che trasformano la resilienza operativa da progetto di conformità a cruscotto pronto per la vigilanza.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Stablecoin e tokenizzazione\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Stablecoin e tokenizzazione — banner del tema\""
+    ],
+    [
+      "<h3><a href=\"/it/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/it/topics/stablecoins-tokenisation/index.html\">Stablecoin e tokenizzazione</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/it/argomenti/stablecoins-tokenisation/index.html\">Stablecoin e tokenizzazione</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Depositi tokenizzati, fondi del mercato monetario, progetti pilota di CBDC wholesale, BRSRV/BSTBL di BlackRock, il GENIUS Act e le scelte ingegneristiche che fanno funzionare il denaro programmabile all'interno di bilanci regolamentati.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"IA generativa e LLM\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"IA generativa e LLM — banner del tema\""
+    ],
+    [
+      "<h3><a href=\"/it/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/it/topics/generative-ai-llms/index.html\">IA generativa e LLM</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/it/argomenti/generative-ai-llms/index.html\">IA generativa e LLM</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Modelli di base, LLM multimodali (Gemini, Gemma, Mistral, MM1), prompt engineering e i rilasci open source che definiscono ciò che le banche possono costruire entro il proprio perimetro dei dati.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"IA vocale e riconoscimento del parlato\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"IA vocale e riconoscimento del parlato — banner del tema\""
+    ],
+    [
+      "<h3><a href=\"/it/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/it/topics/voice-speech-ai/index.html\">IA vocale e riconoscimento del parlato</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/it/argomenti/voice-speech-ai/index.html\">IA vocale e riconoscimento del parlato</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Clonazione vocale, riconoscimento del parlato in tempo reale (Whisper), assistenti vocali per dirigenti e lo stack di audio intelligence che sta ridisegnando l'esperienza del cliente nel private banking.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"Governance e regolamentazione dell'IA\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"Governance e regolamentazione dell'IA — banner del tema\""
+    ],
+    [
+      "<h3><a href=\"/it/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/it/topics/ai-governance-regulation/index.html\">Governance e regolamentazione dell'IA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/it/argomenti/ai-governance-regulation/index.html\">Governance e regolamentazione dell'IA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Conformità al Regolamento europeo sull'IA, rischio di modello SR 11-7, responsabilità a livello di consiglio, verificabilità dei flussi autonomi e il quadro regolamentare dell'IA nelle banche di primo livello.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Binari dei pagamenti wholesale\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Binari dei pagamenti wholesale — banner del tema\""
+    ],
+    [
+      "<h3><a href=\"/it/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/it/topics/wholesale-payments-rails/index.html\">Binari dei pagamenti wholesale</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/it/argomenti/wholesale-payments-rails/index.html\">Binari dei pagamenti wholesale</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Strategia multi-binario che copre carte, A2A, RTP, FedNow, open banking e corridoi in stablecoin. Economia del wholesale, definitività del regolamento e il modello di atomicità transfrontaliera del Progetto Agorá della BRI.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Crittografia e resilienza</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Crittografia e resilienza</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Migrazione post-quantistica, resilienza operativa a livello DORA e il quadro di governance dell'IA nei servizi finanziari.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Pagamenti e denaro</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Pagamenti e denaro</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Migrazione a ISO 20022, regolamento wholesale, stablecoin, depositi tokenizzati e la funzione di tesoreria aziendale che li circonda.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>IA e cloud</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">IA e cloud</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">IA applicata, sistemi agentici, modelli generativi, IA vocale e le piattaforme bancarie cloud-native che li ospitano.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Open source e artigianato</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open source e artigianato</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Librerie Rust, primitive blockchain e la disciplina ingegneristica open source che le sostiene.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Quattro pilastri, quattordici cluster tematici, ogni articolo datato. Scegli un filo e seguilo attraverso l'archivio.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">PILASTRO</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Pilastri</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Cluster tematici</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Articoli indicizzati</span>"
     ]
   ]
 }

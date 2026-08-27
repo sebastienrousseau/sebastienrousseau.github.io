@@ -29,9 +29,7 @@ import tag_landing_render as tlr
 
 
 def test_strip_fm_quotes_single_quoted_value() -> None:
-    assert lc._strip_fm_quotes("'https://cloudcdn.pro/x.webp'") == (
-        "https://cloudcdn.pro/x.webp"
-    )
+    assert lc._strip_fm_quotes("'https://cloudcdn.pro/x.webp'") == ("https://cloudcdn.pro/x.webp")
     assert lc._strip_fm_quotes("'Bitcoin: A Peer-to-Peer System'") == (
         "Bitcoin: A Peer-to-Peer System"
     )
@@ -51,9 +49,7 @@ def test_strip_fm_quotes_preserves_internal_apostrophe() -> None:
     # This is the string the double-quote regex yields for
     # ``title: "Bitcoin's year in review"``. First/last chars are B/w,
     # so no pair is peeled and the apostrophe must survive.
-    assert lc._strip_fm_quotes("Bitcoin's year in review") == (
-        "Bitcoin's year in review"
-    )
+    assert lc._strip_fm_quotes("Bitcoin's year in review") == ("Bitcoin's year in review")
 
 
 def test_strip_fm_quotes_leaves_unmatched_leading_quote() -> None:

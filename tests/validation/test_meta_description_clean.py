@@ -25,7 +25,7 @@ PUBLIC = ROOT / "public"
 
 # The three description-bearing meta tags (name= or property=).
 _DESC_META_RE = re.compile(
-    r'<meta\b[^>]*\b(?:name|property)='
+    r"<meta\b[^>]*\b(?:name|property)="
     r'"(description|og:description|twitter:description)"[^>]*>',
     re.IGNORECASE,
 )
@@ -42,7 +42,7 @@ def _defects(html: str) -> list[str]:
         cm = _CONTENT_RE.search(tag.group(0))
         content = cm.group(1) if cm else ""
         if any(marker in content for marker in _CORRUPT_MARKERS):
-            out.append(f'{tag.group(1)}: {content[:80]}')
+            out.append(f"{tag.group(1)}: {content[:80]}")
     return out
 
 

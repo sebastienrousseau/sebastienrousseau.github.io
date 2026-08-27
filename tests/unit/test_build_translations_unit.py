@@ -428,22 +428,22 @@ def test_strip_postbuild_furniture_removes_en_ws2_components():
     Each gets stripped so postbuild re-runs with locale-correct
     labels.json strings on the localized shell."""
     shell = (
-        '<body>'
+        "<body>"
         '<section class="ap-hero">'
         '<p class="eyebrow">AI</p>'
-        '<h1>T</h1>'
+        "<h1>T</h1>"
         '<p class="sub deck">Standfirst.</p>'
-        '</section>'
+        "</section>"
         '<main id="main"><div class="wrap">'
         '<nav class="share-rail share-rail--sticky" aria-label="Share">'
         '<ul><li><a href="https://twitter.com/intent/tweet?text=...">X</a></li></ul>'
-        '</nav>'
-        '<p>body</p>'
+        "</nav>"
+        "<p>body</p>"
         '<p class="byline-strap" aria-label="Byline">'
         '<a href="/about/index.html">SEBASTIEN ROUSSEAU</a>'
         ' <span class="sep">·</span> <span>FOUNDER · ENGINEER</span></p>'
-        '</div></main>'
-        '</body>'
+        "</div></main>"
+        "</body>"
     )
     out = _article._strip_postbuild_furniture(shell)
     assert 'class="eyebrow"' not in out
@@ -563,14 +563,6 @@ def test_rewrite_related_card_unknown_and_untitled_slugs():
 # ---------------------------------------------------------------------------
 # _pages — shell-missing and JSON-LD branches
 # ---------------------------------------------------------------------------
-
-
-def test_render_articles_hub_without_shell_or_entries(monkeypatch, tmp_path):
-    monkeypatch.setattr(st, "PUBLIC", tmp_path)
-    assert bt.render_articles_hub([{"slug": "x"}]) is None  # no shell
-    (tmp_path / "articles").mkdir()
-    (tmp_path / "articles" / "index.html").write_text("<html><body></body></html>")
-    assert bt.render_articles_hub([]) is None  # no entries
 
 
 def test_render_home_without_shell(monkeypatch, tmp_path):
@@ -707,7 +699,6 @@ def test_public_api_names_resolve():
         "render_translation",
         "fr_slug",
         "render_static_translation",
-        "render_articles_hub",
         "render_home",
         "main",
     ):

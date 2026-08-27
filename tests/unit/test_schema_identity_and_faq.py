@@ -26,10 +26,7 @@ def _page(head_extra: str = "", body: str = "") -> str:
 
 
 def _blocks(html: str) -> list[dict]:
-    return [
-        json.loads(raw)
-        for raw in re.findall(r'ld\+json">(.*?)</script>', html, re.DOTALL)
-    ]
+    return [json.loads(raw) for raw in re.findall(r'ld\+json">(.*?)</script>', html, re.DOTALL)]
 
 
 def _nodes(html: str) -> list[dict]:
@@ -169,7 +166,9 @@ def test_short_answers_are_rejected() -> None:
 
 
 def test_page_without_faq_section_is_unchanged() -> None:
-    html = _page(body="<h2 id=\"other\">Other</h2><p><strong>Q?</strong><br />Long enough answer.</p>")
+    html = _page(
+        body='<h2 id="other">Other</h2><p><strong>Q?</strong><br />Long enough answer.</p>'
+    )
     assert inject_faq_schema(PAGE, html) == html
 
 

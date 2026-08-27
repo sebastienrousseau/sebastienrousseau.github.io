@@ -32,7 +32,6 @@ POSTS = ROOT / "_posts"
 BASELINE = Path(__file__).with_name("slug-policy-baseline.json")
 
 
-
 def english_stems() -> set[str]:
     return {p.stem for p in POSTS.glob("20*.md")}
 
@@ -67,9 +66,7 @@ def evaluate(
                 f"{pct_english}% English now vs {prior}% at baseline (ADR-0012)"
             )
         elif pct_english > 0:
-            backlog.append(
-                f"{lang}: {english}/{total} ({pct_english}%) still use the English slug"
-            )
+            backlog.append(f"{lang}: {english}/{total} ({pct_english}%) still use the English slug")
     return failures, backlog
 
 

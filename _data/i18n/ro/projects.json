@@ -1,0 +1,156 @@
+{
+  "_comment": "Positional /projects/ body copy. Arrays align with the English page in document order; see scripts/generators/build_translations/_projects.py. gh_pushed_template takes {age} verbatim from the GitHub push date.",
+  "kpi": [
+    "Descărcări open source",
+    "Stele pe GitHub",
+    "Articole semnate cu Sigstore",
+    "Ani în producție"
+  ],
+  "setup_kicker": [
+    "CONSTRUIT PENTRU SERVICII FINANCIARE"
+  ],
+  "setup_headline": [
+    "Trei domenii de lucru. "
+  ],
+  "setup_soft": [
+    "Plăți, securitate și unelte."
+  ],
+  "area_alt": [
+    "Vedere aeriană a unor noduri rutiere noaptea, ca imagine a rutelor de plată transfrontaliere.",
+    "Câmp abstract de lumină albastră, ca imagine a criptografiei postcuantice pentru sisteme financiare.",
+    "Linii arhitecturale curate în lumină difuză, ca imagine a unor fundații de încredere pentru dezvoltatori."
+  ],
+  "area_kicker": [
+    "PLĂȚI ȘI ISO 20022",
+    "SECURITATE POSTCUANTICĂ",
+    "PLATFORMĂ PENTRU DEZVOLTATORI"
+  ],
+  "area_headline": [
+    "Plăți în standardul <span class=\"ac\">global.</span>",
+    "Securitate dincolo de <span class=\"ac\">era RSA.</span>",
+    "Fundații pentru <span class=\"ac\">inginerii tăi.</span>"
+  ],
+  "area_text": [
+    "ISO 20022 acoperă întregul ciclu de viață al mesajului. Aceste biblioteci generează fișiere de inițiere <strong>pain.001</strong>, construiesc și validează transferuri <strong>pacs.008</strong>, citesc extrase <strong>camt.053</strong> și se ocupă de administrarea conturilor <strong>acmt.001</strong>, cu parsere pentru formate mai vechi. Poți adopta câte o bibliotecă pe rând, în loc să înlocuiești un sistem central.",
+    "Unele înregistrări financiare rămân sensibile zeci de ani, suficient cât datele colectate azi să poată fi citite când calculatoarele cuantice se vor maturiza. Aceste biblioteci în Rust implementează <strong>ML-KEM (CRYSTALS-Kyber, NIST FIPS 203)</strong> împreună cu hashing și primitive înrudite, astfel încât migrarea să poată începe înainte ca termenele să o impună.",
+    "Aceleași biblioteci în Rust care construiesc și protejează acest site. Printre ele se numără <strong>noyalib</strong> pentru YAML și însuși <strong>Static Site Generator</strong>, publicate cu SBOM-uri CycloneDX și semnături Sigstore. Inginerii tăi construiesc pe ele în loc să întrețină echivalentele în casă."
+  ],
+  "area_cta": [
+    "Citește povestea plăților",
+    "Citește povestea securității",
+    "Citește povestea platformei"
+  ],
+  "cat_kicker": [
+    "INFRASTRUCTURĂ FINANCIARĂ AUTOMATIZATĂ",
+    "SECURITATE FINANCIARĂ POSTCUANTICĂ",
+    "IA APLICATĂ ȘI INFORMARE EXECUTIVĂ",
+    "TEHNOLOGIE SUVERANĂ PENTRU ORGANIZAȚII",
+    "WEB, PUBLICARE ȘI MEDIU DE LUCRU"
+  ],
+  "finale_eyebrow": [
+    "CONTACT"
+  ],
+  "finale_lede": [
+    "Plănuiești o migrare la ISO 20022, o analiză postcuantică sau IA aplicată în producție? Spune-mi ce construiești. Îți arăt unde se potrivesc aceste unelte."
+  ],
+  "finale_cta": [
+    "Ia legătura"
+  ],
+  "h2": [
+    "Date financiare, descurcate.",
+    "Sigură în fața cuanticii. Pregătită pentru organizație.",
+    "Pune o întrebare. Primești informarea.",
+    "Hardware-ul tău. Datele tale.",
+    "Publică în felul tău.",
+    "Construiește pe ele. Sau construiește-le cu mine."
+  ],
+  "lede": [
+    "Fișiere de plată și extrase bancare, fără fricțiune. Aceste unelte generează întregul ciclu de viață al mesajului ISO 20022 și citesc extrase dezordonate din lumea reală cu precizie deterministă. Adu-ți fișierele CSV, PDF-urile sau bazele de date. Datele pur și simplu curg.",
+    "Securitate construită pentru era cuantică, aplicată azi. Aceste biblioteci urmăresc standardele NIST pentru încapsularea cheilor și hashing, ca să poți pregăti infrastructura financiară pentru viitor cu mult înainte să apară amenințarea.",
+    "IA pusă la treabă în operațiunile de zi cu zi. Scanează codul pentru vulnerabilități, transformă o întrebare într-o informare structurată și lucrează prin voce. În termenii tăi, fără dependență de furnizor.",
+    "Fundații pe care le poți deține. Biblioteci în Rust auditate și sigure la nivel de memorie, care rulează pe infrastructura ta și se publică cu o listă a componentelor software și o semnătură Sigstore. Citește fiecare rând. Adu-l la tine. Ține-l în casă.",
+    "Șabloane, un framework CSS, două publicații de sector și configurarea reproductibilă care le livrează pe toate. Stiva pe care rulează acest site."
+  ],
+  "alt": [
+    "Banner pentru biblioteca de plăți open source pain001",
+    "Banner pentru setul de unelte ISO 20022 pacs008",
+    "Logo pentru suita de extrase bancare camt053",
+    "Logo pentru suita de administrare a conturilor acmt001",
+    "Banner pentru Bank Statement Parser",
+    "Logo pentru NaluFX, alocare de numerar asistată de IA în Rust",
+    "Logo pentru QRC, o bibliotecă de coduri QR în Rust",
+    "Banner pentru KyberLib",
+    "Banner pentru biblioteca Hash (HSH) în Rust",
+    "Banner pentru Password Generator Pro",
+    "Banner pentru Euxis, un scaner open source de securitate a codului",
+    "Banner pentru Àkàndé, un asistent vocal avansat cu IA",
+    "Banner pentru Audio Analyser",
+    "Banner pentru Crypto Service Suite",
+    "Banner pentru Static Site Generator",
+    "Banner pentru ecosistemul YAML 1.2 în Rust noyalib",
+    "Banner pentru Serde YML",
+    "Banner pentru biblioteca RustLogs (RLG)",
+    "Banner pentru LibMake",
+    "Banner pentru biblioteca DateTime (DTT) în Rust",
+    "Banner pentru biblioteca Random (VRD) în Rust",
+    "Banner pentru biblioteca Common (CMN) în Rust",
+    "Banner pentru biblioteca Mini Functions în Rust",
+    "Banner pentru Kaishi, un șablon de pornire",
+    "Banner pentru Skeletonic Stylus Library",
+    "Banner pentru publicația Banking On AI",
+    "Banner pentru publicația Banking On Quantum",
+    "Banner pentru site-ul L90S",
+    "Banner pentru proiectul Dotfiles"
+  ],
+  "excerpt": [
+    "Generează fișiere ISO 20022 pain.001 din CSV sau SQLite. Băncile și furnizorii de servicii de plată îl folosesc pentru a produce mesaje structurate de transfer credit fără să reconstruiască sistemele existente.",
+    "Generează, validează și livrează mesaje ISO 20022 pacs.008 pentru transferurile clienților între bănci. Include validare cu JSON Schema și XSD, verificări IBAN în 75 de țări și mascarea datelor cu caracter personal pentru GDPR și PCI-DSS.",
+    "Citește extrase ISO 20022 camt.053 de la bancă la client și extrage solduri, înregistrări și detalii de tranzacție în date structurate. Include încărcare MT940, export XLSX și integrări cu editoare și asistenți IA.",
+    "Mesagerie ISO 20022 pentru administrarea conturilor. Deschide, întreține, închide, transferă și verifică conturi bancare pornind de la fișiere de date simple, cu unelte pentru editoare și asistenți IA.",
+    "Un set de unelte în Python care transformă extrasele bancare în mai multe formate în date structurate. Construit pentru fișiere dezordonate din lumea reală și pentru cerințe de audit.",
+    "O aplicație în Rust pentru alocarea numerarului între structuri de fonduri, care folosește prognoze pentru a orienta împărțirea. Destinată trezoreriei, contabilității fondurilor și alocării activelor.",
+    "O bibliotecă în Rust pentru generarea și citirea codurilor QR în mai multe formate. În plăți se folosește pentru coduri QR EPC la transferurile SEPA, linkuri de încasare pentru comercianți și autentificare consolidată.",
+    "O implementare în Rust a CRYSTALS-Kyber, standardul NIST FIPS 203 pentru încapsularea postcuantică a cheilor.",
+    "Algoritmi de hash și amprentă pentru stocarea și verificarea parolelor, scriși cu o postură rezistentă la cuantic.",
+    "O unealtă de linie de comandă multiplatformă pentru generarea de parole aleatorii, susținută de primitive criptografice auditate.",
+    "Un scaner de securitate a codului pentru opt limbaje, care combină analiza statică și analiza contaminării cu verificarea printr-un model lingvistic pentru a reduce falsele pozitive. Produce pachete SARIF, SBOM și OpenVEX semnate cu Sigstore pentru revizuirea lanțului de aprovizionare.",
+    "Un asistent vocal construit pe modelele GPT ale OpenAI, cu rezumate în PDF și memorare a răspunsurilor. Potrivit pentru uz personal și executiv.",
+    "Transformă sunetul în text în timp real folosind recunoașterea vocală cu IA. Destinat analizei conversațiilor și ședințelor înregistrate.",
+    "Un serviciu criptografic pentru nevoile obișnuite ale aplicațiilor: criptare, tokenizare, autorizarea tranzacțiilor, semnarea codului și gestionarea ciclului de viață al cheilor.",
+    "Un generator de site-uri statice în Rust, sigur implicit. Include validare WCAG AAA, întărire CSP și SRI, un flux de conținut cu model lingvistic local, o țintă WebAssembly și suport pentru 28 de limbi.",
+    "O implementare YAML 1.2 pur în Rust. Zero cod unsafe, conformitate deplină cu specificația, serde în flux, un arbore sintactic fără pierderi și validare cu JSON Schema. Se livrează ca bibliotecă, CLI, server de limbaj, server MCP și compilare WASM.",
+    "Serializare și deserializare YAML pentru structuri de date în Rust, construită pe framework-ul Serde.",
+    "O bibliotecă de jurnalizare pentru Rust cu formate structurate, jurnalizare asincronă și ieșire configurabilă.",
+    "Un generator de schelet pentru biblioteci în Rust. Emite fișiere șablon precompletate pentru teste, benchmark-uri și CI.",
+    "O bibliotecă de dată și oră pentru Rust: formatare ISO 8601, gestionarea fusurilor orare și acces la componentele individuale ale datei.",
+    "Generare de numere aleatorii bazată pe algoritmul Mersenne Twister, folosită în simulări și jocuri.",
+    "O bibliotecă în Rust pentru accesul la constante matematice și criptografice.",
+    "O bibliotecă de utilitare și funcții de învelire pentru Rust.",
+    "Un șablon de pornire pentru Static Site Generator, pregătit pentru site-uri curate și accesibile. Șablonul pe care îl folosesc când încep un site nou.",
+    "O bibliotecă Stylus modulară cu componente și mixin-uri pentru aranjamente web și mobile. Acest site este construit pe ea.",
+    "O publicație despre felul în care băncile aplică IA, de la relația cu clienții la detectarea fraudei și operațiuni.",
+    "O publicație despre calculul cuantic în bănci și finanțe, de la analiza riscului la criptografie.",
+    "Consultanță de director financiar cu normă parțială, oferită de o profesionistă cu peste 20 de ani în tehnologie, pe teme de creștere, finanțare și operațiuni financiare.",
+    "Fișiere de configurare pentru macOS, Linux și Windows: scripturi și setări pentru un flux de lucru de dezvoltare."
+  ],
+  "more": [
+    "Află mai multe"
+  ],
+  "faq_q": [
+    "Sub ce licență sunt publicate aceste proiecte?",
+    "Sunt aceste proiecte pregătite pentru producție?",
+    "Cum pot contribui sau raporta o problemă?",
+    "Pot folosi aceste biblioteci într-un mediu bancar reglementat?",
+    "Oferi suport comercial sau consultanță?",
+    "Cum urmăresc noile versiuni?"
+  ],
+  "faq_a": [
+    "Majoritatea proiectelor au licență dublă MIT și Apache-2.0, standardul ecosistemului Rust, care oferă utilizatorilor comerciali drepturi de brevet explicite pe lângă redistribuirea permisivă. Un număr mic de unelte realizate pentru clienți se publică doar sub Apache-2.0. Fișierul de licență din rădăcina fiecărui depozit este sursa care decide.",
+    "Multe sunt. <a href=\"https://pain001.com\">pain001</a> este folosit de bănci și de furnizori de servicii de plată pentru a automatiza crearea fișierelor ISO 20022. <a href=\"https://kyberlib.com\">KyberLib</a> urmărește specificația NIST FIPS 203 și livrează vectori de test. Fișierul README și insignele CI ale fiecărui depozit arată starea curentă; dacă îți trebuie o garanție anume pentru producție, ia legătura.",
+    "Fiecare proiect are un depozit GitHub public la <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Deschide o problemă în care descrii situația (un exemplu minim reproductibil ajută) sau un pull request legat de o problemă. Contribuțiile sunt guvernate de Developer Certificate of Origin și cer commituri semnate.",
+    "Da, cu precauțiile obișnuite. Bibliotecile sunt muncă independentă cu sursă deschisă, nu un produs reglementat. Aplică-ți procesele obișnuite privind lanțul de aprovizionare, securitatea și revizuirea dependențelor, precum aducerea codului prin oglinda internă, scanarea cu unelte SBOM și fixarea pe SHA Git sau pe amprentă criptografică, înainte de a implementa în infrastructura de plăți din producție.",
+    "Da, în mod selectiv. Colaborările se concentrează pe migrarea la ISO 20022, pe foile de parcurs pentru migrarea la criptografie postcuantică și pe IA aplicată în servicii financiare. <a href=\"/contact/\">Ia legătura</a> cu o descriere scurtă, calendarul tău și eventualele constrângeri.",
+    "Fiecare articol datat de pe acest site este anunțat prin <a href=\"/rss.xml\">fluxul RSS</a> și prin buletinul <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Depozitele individuale publică versiuni și pe GitHub, unde le poți urmări direct."
+  ],
+  "gh_pushed_template": "ultimul commit acum {age}"
+}

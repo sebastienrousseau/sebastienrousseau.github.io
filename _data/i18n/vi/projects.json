@@ -1,0 +1,156 @@
+{
+  "_comment": "Positional /projects/ body copy. Arrays align with the English page in document order; see scripts/generators/build_translations/_projects.py. gh_pushed_template takes {age} verbatim from the GitHub push date.",
+  "kpi": [
+    "Lượt tải mã nguồn mở",
+    "Sao trên GitHub",
+    "Bài viết ký bằng Sigstore",
+    "Năm chạy trong môi trường thật"
+  ],
+  "setup_kicker": [
+    "DỰNG CHO NGÀNH DỊCH VỤ TÀI CHÍNH"
+  ],
+  "setup_headline": [
+    "Ba mảng công việc. "
+  ],
+  "setup_soft": [
+    "Thanh toán, bảo mật và công cụ."
+  ],
+  "area_alt": [
+    "Ảnh chụp từ trên cao các nút giao đô thị về đêm, tượng trưng cho những tuyến thanh toán xuyên biên giới.",
+    "Trường ánh sáng xanh trừu tượng, tượng trưng cho mật mã hậu lượng tử dành cho hệ thống tài chính.",
+    "Những đường nét kiến trúc gọn gàng trong ánh sáng dịu, tượng trưng cho nền móng đáng tin cậy cho lập trình viên."
+  ],
+  "area_kicker": [
+    "THANH TOÁN & ISO 20022",
+    "BẢO MẬT HẬU LƯỢNG TỬ",
+    "NỀN TẢNG CHO LẬP TRÌNH VIÊN"
+  ],
+  "area_headline": [
+    "Thanh toán theo chuẩn <span class=\"ac\">toàn cầu.</span>",
+    "Bảo mật vượt qua <span class=\"ac\">kỷ nguyên RSA.</span>",
+    "Nền móng cho <span class=\"ac\">kỹ sư của bạn.</span>"
+  ],
+  "area_text": [
+    "ISO 20022 bao trọn vòng đời của thông điệp. Các thư viện này sinh tệp khởi tạo <strong>pain.001</strong>, dựng và kiểm định chuyển khoản <strong>pacs.008</strong>, đọc sao kê <strong>camt.053</strong> và lo phần quản lý tài khoản <strong>acmt.001</strong>, kèm bộ phân tích cho các định dạng cũ hơn. Bạn có thể áp dụng từng thư viện một thay vì thay thế cả một hệ thống lõi.",
+    "Một số hồ sơ tài chính vẫn nhạy cảm suốt hàng chục năm, đủ lâu để dữ liệu thu thập hôm nay có thể bị đọc khi máy tính lượng tử đủ chín. Các thư viện Rust này hiện thực <strong>ML-KEM (CRYSTALS-Kyber, NIST FIPS 203)</strong> cùng với băm và các nguyên hàm liên quan, để việc chuyển đổi có thể bắt đầu trước khi hạn chót ép buộc.",
+    "Chính những thư viện Rust dựng nên và bảo vệ trang này. Trong đó có <strong>noyalib</strong> cho YAML và bản thân <strong>Static Site Generator</strong>, phát hành kèm danh mục thành phần CycloneDX và chữ ký Sigstore. Kỹ sư của bạn dựng trên chúng thay vì tự bảo trì những thứ tương đương trong nội bộ."
+  ],
+  "area_cta": [
+    "Đọc câu chuyện thanh toán",
+    "Đọc câu chuyện bảo mật",
+    "Đọc câu chuyện nền tảng"
+  ],
+  "cat_kicker": [
+    "HẠ TẦNG TÀI CHÍNH TỰ ĐỘNG HÓA",
+    "BẢO MẬT TÀI CHÍNH HẬU LƯỢNG TỬ",
+    "AI ỨNG DỤNG VÀ THÔNG TIN CHO LÃNH ĐẠO",
+    "CÔNG NGHỆ DOANH NGHIỆP TỰ CHỦ",
+    "WEB, XUẤT BẢN VÀ MÔI TRƯỜNG LÀM VIỆC"
+  ],
+  "finale_eyebrow": [
+    "LIÊN HỆ"
+  ],
+  "finale_lede": [
+    "Bạn đang lên kế hoạch chuyển sang ISO 20022, rà soát hậu lượng tử, hay đưa AI ứng dụng vào môi trường thật? Hãy cho tôi biết bạn đang dựng gì. Tôi sẽ chỉ ra những công cụ này khớp vào đâu."
+  ],
+  "finale_cta": [
+    "Liên hệ với tôi"
+  ],
+  "h2": [
+    "Dữ liệu tài chính, đã gỡ rối.",
+    "An toàn trước lượng tử. Sẵn sàng cho doanh nghiệp.",
+    "Đặt một câu hỏi. Nhận về bản tóm lược.",
+    "Phần cứng của bạn. Dữ liệu của bạn.",
+    "Xuất bản theo cách của bạn.",
+    "Dựng trên nó. Hoặc dựng nó cùng tôi."
+  ],
+  "lede": [
+    "Tệp thanh toán và sao kê ngân hàng, không còn ma sát. Những công cụ này sinh trọn vòng đời thông điệp ISO 20022 và đọc những bản sao kê lộn xộn ngoài đời thật với độ chính xác tất định. Cứ mang CSV, PDF hay cơ sở dữ liệu của bạn tới. Dữ liệu sẽ tự chảy.",
+    "Bảo mật dựng cho kỷ nguyên lượng tử, áp dụng ngay hôm nay. Các thư viện này bám sát chuẩn NIST về đóng gói khóa và băm, để bạn chuẩn bị hạ tầng tài chính cho tương lai từ rất lâu trước khi mối đe dọa xuất hiện.",
+    "Đưa AI vào việc vận hành hằng ngày. Quét mã tìm lỗ hổng, biến một câu hỏi thành bản tóm lược có cấu trúc, và làm việc bằng giọng nói. Theo điều kiện của bạn, không bị trói vào nhà cung cấp nào.",
+    "Nền móng bạn thật sự sở hữu. Các thư viện Rust đã kiểm toán, an toàn bộ nhớ, chạy trên hạ tầng của chính bạn và phát hành kèm danh mục thành phần phần mềm cùng chữ ký Sigstore. Đọc từng dòng. Mang về. Giữ trong nhà.",
+    "Các mẫu, một khung CSS, hai ấn phẩm chuyên ngành, và bộ cấu hình tái lập được đã xuất bản tất cả. Chính là ngăn xếp mà trang này đang chạy trên đó."
+  ],
+  "alt": [
+    "Ảnh bìa của thư viện thanh toán mã nguồn mở pain001",
+    "Ảnh bìa của bộ công cụ ISO 20022 pacs008",
+    "Biểu trưng của bộ sao kê ngân hàng camt053",
+    "Biểu trưng của bộ quản lý tài khoản acmt001",
+    "Ảnh bìa của Bank Statement Parser",
+    "Biểu trưng của NaluFX, phân bổ tiền mặt dẫn dắt bằng AI viết bằng Rust",
+    "Biểu trưng của QRC, thư viện mã QR viết bằng Rust",
+    "Ảnh bìa của KyberLib",
+    "Ảnh bìa của thư viện Hash (HSH) viết bằng Rust",
+    "Ảnh bìa của Password Generator Pro",
+    "Ảnh bìa của Euxis, trình quét bảo mật mã nguồn mở",
+    "Ảnh bìa của Àkàndé, trợ lý giọng nói AI nâng cao",
+    "Ảnh bìa của Audio Analyser",
+    "Ảnh bìa của Crypto Service Suite",
+    "Ảnh bìa của Static Site Generator",
+    "Ảnh bìa của hệ sinh thái YAML 1.2 viết bằng Rust mang tên noyalib",
+    "Ảnh bìa của Serde YML",
+    "Ảnh bìa của thư viện RustLogs (RLG)",
+    "Ảnh bìa của LibMake",
+    "Ảnh bìa của thư viện DateTime (DTT) viết bằng Rust",
+    "Ảnh bìa của thư viện Random (VRD) viết bằng Rust",
+    "Ảnh bìa của thư viện Common (CMN) viết bằng Rust",
+    "Ảnh bìa của thư viện Mini Functions viết bằng Rust",
+    "Ảnh bìa của Kaishi, một mẫu khởi đầu",
+    "Ảnh bìa của Skeletonic Stylus Library",
+    "Ảnh bìa của ấn phẩm Banking On AI",
+    "Ảnh bìa của ấn phẩm Banking On Quantum",
+    "Ảnh bìa của trang web L90S",
+    "Ảnh bìa của dự án Dotfiles"
+  ],
+  "excerpt": [
+    "Sinh tệp ISO 20022 pain.001 từ CSV hoặc SQLite. Các ngân hàng và đơn vị cung cấp dịch vụ thanh toán dùng nó để tạo thông điệp chuyển khoản có cấu trúc mà không phải dựng lại hệ thống hiện có.",
+    "Sinh, kiểm định và chuyển giao thông điệp ISO 20022 pacs.008 cho các khoản chuyển của khách hàng giữa các ngân hàng. Bao gồm kiểm định bằng JSON Schema và XSD, kiểm tra IBAN tại 75 quốc gia, và che dữ liệu cá nhân cho GDPR và PCI-DSS.",
+    "Đọc sao kê ISO 20022 camt.053 từ ngân hàng gửi khách hàng, rồi trích số dư, bút toán và chi tiết giao dịch thành dữ liệu có cấu trúc. Bao gồm nạp MT940, xuất XLSX, cùng tích hợp với trình soạn thảo và trợ lý AI.",
+    "Trao đổi thông điệp ISO 20022 cho việc quản lý tài khoản. Mở, duy trì, đóng, chuyển và xác minh tài khoản ngân hàng từ những tệp dữ liệu đơn giản, kèm công cụ cho trình soạn thảo và trợ lý AI.",
+    "Bộ công cụ Python biến sao kê ngân hàng ở nhiều định dạng thành dữ liệu có cấu trúc. Dựng cho những tệp lộn xộn ngoài đời thật và cho các yêu cầu kiểm toán.",
+    "Ứng dụng viết bằng Rust để phân bổ tiền mặt giữa các cấu trúc quỹ, dùng dự báo để định hướng cách chia. Hướng tới ngân quỹ, kế toán quỹ và phân bổ tài sản.",
+    "Thư viện Rust để sinh và đọc mã QR ở nhiều định dạng. Trong thanh toán, nó dùng cho mã EPC QR trong chuyển khoản SEPA, liên kết thu tiền cho đơn vị chấp nhận, và xác thực tăng cường.",
+    "Bản hiện thực CRYSTALS-Kyber bằng Rust, tức chuẩn NIST FIPS 203 cho đóng gói khóa hậu lượng tử.",
+    "Các thuật toán băm và tóm lược để lưu trữ và xác minh mật khẩu, viết với tư thế kháng lượng tử.",
+    "Công cụ dòng lệnh đa nền tảng để sinh mật khẩu ngẫu nhiên, dựa trên các nguyên hàm mật mã đã được kiểm toán.",
+    "Trình quét bảo mật mã cho tám ngôn ngữ, kết hợp phân tích tĩnh và phân tích nhiễm bẩn với việc kiểm chứng bằng mô hình ngôn ngữ lớn để giảm cảnh báo sai. Xuất các gói SARIF, SBOM và OpenVEX ký bằng Sigstore phục vụ rà soát chuỗi cung ứng.",
+    "Trợ lý giọng nói dựng trên các mô hình GPT của OpenAI, kèm tóm tắt PDF và bộ nhớ đệm câu trả lời. Phù hợp cho cả sử dụng cá nhân lẫn cấp điều hành.",
+    "Chuyển âm thanh thành văn bản theo thời gian thực bằng nhận dạng tiếng nói dùng AI. Hướng tới việc phân tích các cuộc trò chuyện và cuộc họp đã ghi.",
+    "Dịch vụ mật mã cho những nhu cầu thường gặp của ứng dụng: mã hóa, mã thông báo hóa, cấp phép giao dịch, ký mã và quản lý vòng đời khóa.",
+    "Trình sinh trang tĩnh viết bằng Rust, an toàn ngay từ mặc định. Bao gồm kiểm định WCAG AAA, gia cố CSP và SRI, một chuỗi xử lý nội dung với mô hình ngôn ngữ cục bộ, một đích WebAssembly và hỗ trợ 28 ngôn ngữ.",
+    "Bản hiện thực YAML 1.2 thuần Rust. Không có mã unsafe, tuân thủ đặc tả đầy đủ, serde theo luồng, cây cú pháp không mất mát và kiểm định bằng JSON Schema. Phát hành dưới dạng thư viện, công cụ dòng lệnh, máy chủ ngôn ngữ, máy chủ MCP và bản dựng WASM.",
+    "Tuần tự hóa và giải tuần tự hóa YAML cho các cấu trúc dữ liệu Rust, dựng trên khung Serde.",
+    "Thư viện ghi nhật ký cho Rust với các định dạng có cấu trúc, ghi nhật ký bất đồng bộ và đầu ra cấu hình được.",
+    "Trình sinh khung sườn cho các thư viện Rust. Nó tạo sẵn các tệp mẫu đã điền cho kiểm thử, đo hiệu năng và tích hợp liên tục.",
+    "Thư viện ngày và giờ cho Rust: định dạng theo ISO 8601, xử lý múi giờ và truy cập từng thành phần của ngày.",
+    "Sinh số ngẫu nhiên dựa trên thuật toán Mersenne Twister, dùng trong mô phỏng và trò chơi.",
+    "Thư viện Rust để truy cập các hằng số toán học và mật mã.",
+    "Thư viện các hàm tiện ích và hàm bao cho Rust.",
+    "Mẫu khởi đầu cho Static Site Generator, đã thiết lập sẵn cho những trang gọn gàng và dễ tiếp cận. Đây là mẫu tôi dùng khi bắt đầu một trang mới.",
+    "Thư viện Stylus theo mô-đun với các thành phần và mixin cho bố cục web và di động. Trang này được dựng trên nó.",
+    "Ấn phẩm về cách các ngân hàng đang ứng dụng AI, trải từ chăm sóc khách hàng, phát hiện gian lận đến vận hành.",
+    "Ấn phẩm về tính toán lượng tử trong ngân hàng và tài chính, từ phân tích rủi ro đến mật mã.",
+    "Dịch vụ tư vấn giám đốc tài chính bán thời gian từ một nhà lãnh đạo tài chính với hơn 20 năm trong ngành công nghệ, bao quát tăng trưởng, gọi vốn và vận hành tài chính.",
+    "Tệp cấu hình cho macOS, Linux và Windows: các kịch bản và thiết lập cho một quy trình làm việc phát triển."
+  ],
+  "more": [
+    "Tìm hiểu thêm"
+  ],
+  "faq_q": [
+    "Các dự án này phát hành theo giấy phép nào?",
+    "Các dự án này đã sẵn sàng cho môi trường thật chưa?",
+    "Tôi có thể đóng góp hoặc báo lỗi bằng cách nào?",
+    "Tôi có thể dùng các thư viện này trong môi trường ngân hàng chịu quản lý không?",
+    "Bạn có cung cấp hỗ trợ thương mại hoặc tư vấn không?",
+    "Tôi theo dõi các bản phát hành mới thế nào?"
+  ],
+  "faq_a": [
+    "Phần lớn dự án cấp phép kép theo MIT và Apache-2.0, chuẩn mực của hệ sinh thái Rust, vốn trao cho người dùng thương mại quyền sáng chế minh thị bên cạnh việc phân phối lại thoáng. Một số ít công cụ làm cho khách hàng chỉ phát hành theo Apache-2.0. Tệp giấy phép ở thư mục gốc của mỗi kho mã mới là nguồn có thẩm quyền.",
+    "Nhiều dự án đã sẵn sàng. <a href=\"https://pain001.com\">pain001</a> được các ngân hàng và đơn vị cung cấp dịch vụ thanh toán dùng để tự động hóa việc tạo tệp ISO 20022. <a href=\"https://kyberlib.com\">KyberLib</a> bám sát đặc tả NIST FIPS 203 và kèm theo vector kiểm thử. Tệp README cùng huy hiệu CI của mỗi kho mã sẽ cho biết trạng thái hiện tại; nếu bạn cần một bảo đảm cụ thể cho việc dùng trong môi trường thật, hãy liên hệ.",
+    "Mỗi dự án đều có kho mã GitHub công khai tại <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Hãy mở một issue mô tả vấn đề (một ví dụ tái hiện tối giản sẽ rất hữu ích) hoặc gửi pull request gắn với một issue. Đóng góp tuân theo Developer Certificate of Origin và yêu cầu commit đã ký.",
+    "Có, với những lưu ý thường lệ. Các thư viện là công việc mã nguồn mở độc lập, không phải sản phẩm chịu quản lý. Hãy chạy các quy trình thường lệ của bạn về chuỗi cung ứng, bảo mật và rà soát phụ thuộc, chẳng hạn đưa vào qua bản sao nội bộ, quét bằng công cụ SBOM và ghim theo Git SHA hoặc băm mật mã, trước khi triển khai lên hạ tầng thanh toán thật.",
+    "Có, trên cơ sở chọn lọc. Công việc tập trung vào chuyển đổi sang ISO 20022, lộ trình chuyển sang mật mã hậu lượng tử, và AI ứng dụng trong dịch vụ tài chính. Hãy <a href=\"/contact/\">liên hệ</a> kèm mô tả ngắn, mốc thời gian và bất kỳ ràng buộc nào.",
+    "Mỗi bài viết có ghi ngày trên trang này đều được thông báo qua <a href=\"/rss.xml\">nguồn cấp RSS</a> và bản tin <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Từng kho mã cũng đăng bản phát hành trên GitHub, bạn có thể theo dõi trực tiếp."
+  ],
+  "gh_pushed_template": "commit gần nhất {age} trước"
+}

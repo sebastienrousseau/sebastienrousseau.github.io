@@ -1,0 +1,156 @@
+{
+  "_comment": "Positional /projects/ body copy. Arrays align with the English page in document order; see scripts/generators/build_translations/_projects.py. gh_pushed_template takes {age} verbatim from the GitHub push date.",
+  "kpi": [
+    "开源下载量",
+    "GitHub 星标数",
+    "Sigstore 签名的文章",
+    "投入生产的年数"
+  ],
+  "setup_kicker": [
+    "为金融服务而打造"
+  ],
+  "setup_headline": [
+    "三个工作领域。 "
+  ],
+  "setup_soft": [
+    "支付、安全与工具。"
+  ],
+  "area_alt": [
+    "夜间城市立交桥的航拍图，代表跨境支付通道。",
+    "抽象的蓝色光场，代表面向金融系统的后量子密码学。",
+    "柔光中利落的建筑线条，代表可靠的开发基础。"
+  ],
+  "area_kicker": [
+    "支付与 ISO 20022",
+    "后量子安全",
+    "开发者平台"
+  ],
+  "area_headline": [
+    "支付，遵循全球<span class=\"ac\">标准。</span>",
+    "超越 <span class=\"ac\">RSA 时代</span>的安全。",
+    "为你的<span class=\"ac\">工程师打好地基。</span>"
+  ],
+  "area_text": [
+    "ISO 20022 覆盖报文的完整生命周期。这些库生成 <strong>pain.001</strong> 发起文件，构建并校验 <strong>pacs.008</strong> 转账，读取 <strong>camt.053</strong> 对账单，并处理 <strong>acmt.001</strong> 账户管理，同时附带面向旧格式的解析器。你可以一次采用一个库，而不必替换核心系统。",
+    "有些金融记录会在数十年里保持敏感，久到今天采集的数据可能在量子计算机成熟后被读出。这些 Rust 库实现了 <strong>ML-KEM (CRYSTALS-Kyber, NIST FIPS 203)</strong>，并配有哈希及相关原语，让迁移可以在期限逼迫之前就开始。",
+    "正是构建并保护本站的那批 Rust 库。其中包括用于 YAML 的 <strong>noyalib</strong> 和 <strong>Static Site Generator</strong> 本身，发布时附带 CycloneDX SBOM 与 Sigstore 签名。你的工程师在它们之上构建，而不必自行维护同类实现。"
+  ],
+  "area_cta": [
+    "阅读支付的故事",
+    "阅读安全的故事",
+    "阅读平台的故事"
+  ],
+  "cat_kicker": [
+    "自动化金融基础设施",
+    "后量子金融安全",
+    "应用 AI 与管理层洞察",
+    "自主可控的企业技术",
+    "网站、出版与工作环境"
+  ],
+  "finale_eyebrow": [
+    "联系"
+  ],
+  "finale_lede": [
+    "正在筹划 ISO 20022 迁移、后量子评估，或是把应用 AI 投入生产？告诉我你在构建什么。我会告诉你这些工具该放在哪里。"
+  ],
+  "finale_cta": [
+    "与我联系"
+  ],
+  "h2": [
+    "金融数据，理清楚。",
+    "抗量子。可用于企业。",
+    "提出一个问题。得到一份简报。",
+    "你的硬件。你的数据。",
+    "按你的方式交付。",
+    "在它之上构建。或者和我一起构建。"
+  ],
+  "lede": [
+    "支付文件与银行对账单，没有摩擦。这些工具生成完整的 ISO 20022 报文生命周期，并以确定性的精度解析现实中杂乱的对账单。带上你的 CSV、PDF 或数据库。数据自然就流动起来了。",
+    "为量子时代打造的安全，今天就能用上。这些库紧跟 NIST 在密钥封装与哈希方面的标准，让你在威胁到来之前很久，就把金融基础设施做好面向未来的准备。",
+    "把 AI 用在日常运营里。扫描代码找漏洞，把一个问题变成结构化简报，用语音完成工作。按你的条件来，不被供应商绑定。",
+    "你能真正拥有的基础。经过审计、内存安全的 Rust 库，运行在你自己的基础设施上，发布时附带软件物料清单和 Sigstore 签名。逐行读它。收进来。留在自己手里。",
+    "模板、一个 CSS 框架、两份行业刊物，以及把这一切发布出去的可复现配置。本站运行其上的技术栈。"
+  ],
+  "alt": [
+    "开源支付库 pain001 的横幅",
+    "ISO 20022 工具包 pacs008 的横幅",
+    "银行对账单套件 camt053 的标志",
+    "账户管理套件 acmt001 的标志",
+    "Bank Statement Parser 的横幅",
+    "NaluFX 的标志，用 Rust 实现的 AI 驱动资金配置",
+    "QRC 的标志，一个 Rust 二维码库",
+    "KyberLib 的横幅",
+    "Rust 库 Hash (HSH) 的横幅",
+    "Password Generator Pro 的横幅",
+    "Euxis 的横幅，一个开源代码安全扫描器",
+    "Àkàndé 的横幅，一个先进的 AI 语音助手",
+    "Audio Analyser 的横幅",
+    "Crypto Service Suite 的横幅",
+    "Static Site Generator 的横幅",
+    "Rust YAML 1.2 生态 noyalib 的横幅",
+    "Serde YML 的横幅",
+    "RustLogs (RLG) 库的横幅",
+    "LibMake 的横幅",
+    "Rust 库 DateTime (DTT) 的横幅",
+    "Rust 库 Random (VRD) 的横幅",
+    "Rust 库 Common (CMN) 的横幅",
+    "Rust 库 Mini Functions 的横幅",
+    "起始模板 Kaishi 的横幅",
+    "Skeletonic Stylus Library 的横幅",
+    "刊物 Banking On AI 的横幅",
+    "刊物 Banking On Quantum 的横幅",
+    "L90S 网站的横幅",
+    "Dotfiles 项目的横幅"
+  ],
+  "excerpt": [
+    "从 CSV 或 SQLite 生成 ISO 20022 pain.001 文件。银行和支付服务商用它来产出结构化的贷记转账报文，而无需重建现有系统。",
+    "为银行间的客户转账生成、校验并投递 ISO 20022 pacs.008 报文。包含 JSON Schema 与 XSD 校验、覆盖 75 个国家的 IBAN 检查，以及面向 GDPR 与 PCI-DSS 的个人信息脱敏。",
+    "读取银行发给客户的 ISO 20022 camt.053 对账单，把余额、分录和交易明细提取为结构化数据。包含 MT940 载入、XLSX 导出，以及编辑器与 AI 助手集成。",
+    "面向账户管理的 ISO 20022 报文。从普通数据文件出发，开立、维护、关闭、迁移并核验银行账户，并配有面向编辑器和 AI 助手的工具。",
+    "一个 Python 工具包，把多种格式的银行对账单转成结构化数据。为现实中杂乱的文件和审计要求而建。",
+    "一个用 Rust 编写的应用，用于在基金架构之间进行资金配置，并以预测来指导拆分。面向财资、基金会计与资产配置。",
+    "一个用 Rust 编写的库，可生成和读取多种格式的二维码。在支付场景中用于 SEPA 转账的 EPC 二维码、商户收款的支付链接以及强化认证。",
+    "CRYSTALS-Kyber 的 Rust 实现，即后量子密钥封装的 NIST FIPS 203 标准。",
+    "用于口令存储与校验的哈希与摘要算法，以抗量子的姿态编写。",
+    "一个跨平台命令行工具，用于生成随机口令，底层依托经过审计的密码学原语。",
+    "一个覆盖八种语言的代码安全扫描器，把静态分析和污点分析与大语言模型校验结合起来，以减少误报。输出经 Sigstore 签名的 SARIF、SBOM 与 OpenVEX 组合，供供应链审查使用。",
+    "一个建立在 OpenAI GPT 模型之上的语音助手，带有 PDF 摘要与响应缓存。适合个人与管理层使用。",
+    "借助 AI 语音识别把音频实时转成文字。面向已录制对话与会议的分析。",
+    "一项面向应用常见需求的密码学服务：加密、令牌化、交易授权、代码签名以及密钥生命周期管理。",
+    "一个用 Rust 编写、默认即安全的静态站点生成器。包含 WCAG AAA 校验、CSP 与 SRI 加固、本地大语言模型内容流水线、WebAssembly 目标以及 28 种语言支持。",
+    "一个纯 Rust 的 YAML 1.2 实现。零 unsafe 代码、完整符合规范、基于 serde 的流式处理、无损语法树以及 JSON Schema 校验。以库、命令行工具、语言服务器、MCP 服务器和 WASM 构建的形式发布。",
+    "面向 Rust 数据结构的 YAML 序列化与反序列化，建立在 Serde 框架之上。",
+    "一个 Rust 日志库，支持结构化格式、异步日志与可配置输出。",
+    "一个面向 Rust 库的脚手架生成器。它会为测试、基准测试和持续集成生成预先填好的模板文件。",
+    "一个 Rust 日期时间库：ISO 8601 格式化、时区处理，以及对日期各组成部分的访问。",
+    "基于梅森旋转算法的随机数生成，用于模拟与游戏。",
+    "一个用于访问数学常量与密码学常量的 Rust 库。",
+    "一个面向 Rust 的实用函数与封装函数库。",
+    "Static Site Generator 的起始模板，针对整洁且无障碍的站点做了配置。这是我开新站点时用的模板。",
+    "一个模块化的 Stylus 库，为网页与移动端布局提供组件和混入。本站就建立在它之上。",
+    "一份关于银行如何应用 AI 的刊物，涵盖客户服务、欺诈检测与运营。",
+    "一份关于银行与金融领域量子计算的刊物，从风险分析到密码学。",
+    "由一位在科技行业深耕二十余年的财务负责人提供的兼职首席财务官顾问服务，涵盖增长、融资与财务运营。",
+    "面向 macOS、Linux 与 Windows 的配置文件：一套开发工作流的脚本与设置。"
+  ],
+  "more": [
+    "了解更多"
+  ],
+  "faq_q": [
+    "这些项目以什么许可发布？",
+    "这些项目可以用于生产吗？",
+    "我如何参与贡献或反馈问题？",
+    "我可以在受监管的银行环境中使用这些库吗？",
+    "你提供商业支持或咨询吗？",
+    "我如何跟进新版本？"
+  ],
+  "faq_a": [
+    "多数项目采用 MIT 与 Apache-2.0 双许可，这是 Rust 生态的惯例，在宽松再分发之外还向商业用户明确授予专利权利。少数客户项目仅以 Apache-2.0 发布。每个仓库根目录下的许可文件是权威依据。",
+    "不少已经可以。<a href=\"https://pain001.com\">pain001</a> 已被银行和支付服务商用于自动生成 ISO 20022 文件。<a href=\"https://kyberlib.com\">KyberLib</a> 紧跟 NIST FIPS 203 规范并附带测试向量。各仓库的 README 和 CI 徽章会告诉你当前状态；如果你的生产使用需要特定保证，请与我联系。",
+    "每个项目在 <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a> 下都有公开的 GitHub 仓库。请开一个 issue 描述问题（附上最小复现会很有帮助），或提交一个关联到 issue 的合并请求。贡献遵循 Developer Certificate of Origin，并要求已签名的提交。",
+    "可以，但有一贯的前提。这些库是独立的开源作品，不是受监管的产品。在部署到生产支付基础设施之前，请照常走你的供应链、安全与依赖审查流程，例如通过内部镜像引入、用 SBOM 工具扫描，以及按 Git SHA 或密码学哈希做固定。",
+    "提供，但会有所选择。合作集中在 ISO 20022 迁移、后量子密码迁移路线图，以及金融服务中的应用 AI。请<a href=\"/contact/\">与我联系</a>，附上简要说明、时间安排和任何约束条件。",
+    "本站每一篇带日期的文章都会通过 <a href=\"/rss.xml\">RSS 源</a>和 <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> 通讯发布。各个仓库也会在 GitHub 上发布版本，你可以直接关注。"
+  ],
+  "gh_pushed_template": "最近一次提交在{age}前"
+}

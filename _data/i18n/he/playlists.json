@@ -1,0 +1,261 @@
+{
+  "_comment": "HE copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "פלייליסטים",
+    "jump": "להאזין לפלייליסט האחרון",
+    "platformsLabel": "כל האוסף נמצא גם ב-Apple Music",
+    "navLabel": "מעבר לז'אנר",
+    "play": "להשמיע ב-Spotify",
+    "follow": "לעקוב ב-Spotify",
+    "apple": "להאזין ב-Apple Music",
+    "countOne": "פלייליסט",
+    "countOther": "פלייליסטים",
+    "coverAlt": "עטיפת הפלייליסט {title}",
+    "openAria": "פתיחת {title} ב-Spotify",
+    "frameTitle": "הפלייליסט {title} ב-Spotify"
+  },
+  "intro": [
+    "שלושים ותשעה פלייליסטים ו-1,763 רצועות, בנויים לשעות שדורשות פסקול: עבודה עמוקה, קריאות ארוכות וכתיבה מחדש בלילה.",
+    "ניאו סול ונו ג'אז כשהעבודה דורשת סבלנות. בום באפ וג'אז ראפ כשהיא דורשת תנופה. פרנץ' טאץ', דיפ האוס ודיסקו האוס כשהיא דורשת הרמה. לו-פיי לקטע של הראש למטה, וקצבים ממערב אפריקה שעוברים דרך הכול.",
+    "כל פלייליסט מתנגן בחינם ב-Spotify, וכל האוסף נמצא ב-Apple Music."
+  ],
+  "featured": {
+    "kicker": "הפלייליסט האחרון",
+    "date": "אוגוסט 2026",
+    "genres": "אינדי פופ · פרנץ' האוס",
+    "desc": "אינדי פופ שטוף שמש שמחליק אל תוך פרנץ' האוס — Tame Impala ו-almost monday מפנים מקום ל-Justice, ל-L'Impératrice ולאפרו האוס של HUGEL."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "אלקטרוני",
+      "sub": "האוס, דיסקו ופרנץ' טאץ'"
+    },
+    "soul-jazz": {
+      "title": "סול &amp; ג'אז",
+      "sub": "ניאו סול, נו ג'אז וקצב איטי"
+    },
+    "hip-hop": {
+      "title": "היפ-הופ",
+      "sub": "בום באפ, ג'אז ראפ וגרוב מתקופת הזהב"
+    },
+    "morning-mood": {
+      "title": "בוקר &amp; מצב רוח",
+      "sub": "דאונטמפו, לו-פיי ואנרגיה להתעוררות"
+    },
+    "global": {
+      "title": "גלובלי",
+      "sub": "קצבים מכל שאר העולם"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "דיסקו האוס · גראז'",
+      "desc": "דיסקו האוס וגראז' מסוף שנות התשעים שעדיין ממלאים רחבה — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden ו-Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "אינדי פופ · פרנץ' האוס",
+      "desc": "אינדי פופ שטוף שמש שמחליק אל תוך פרנץ' האוס — Tame Impala ו-almost monday מפנים מקום ל-Justice, ל-L'Impératrice ולאפרו האוס של HUGEL."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "פרנץ' טאץ' · אלקטרו",
+      "desc": "פרנץ' טאץ' באור גבוה — Daft Punk, Justice, Kavinsky, L'Impératrice ו-Angèle מחליפים סינתים ניאוניים וקווי בס מוטוריים."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "אינדי דאנס · סינת' פופ",
+      "desc": "סינת' פופ ואינדי דאנס בשעת הזהב — Blu DeTiger, Merty Shango, Citrus Sun ו-Enne נושאים את הנצנוץ אל הערב."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "נו-דיסקו · פרנץ' האוס",
+      "desc": "נו-דיסקו ופרנץ' האוס עם פילטר פתוח — Fred Falke, Breakbot, Madeon, Lemaitre ו-Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "פרוגרסיב האוס · אלקטרו",
+      "desc": "פרוגרסיב האוס ואלקטרו שנבנו לתנועה — Madeon, Paul Woolford, Martin Solveig, Secondcity ו-The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "נו-דיסקו · האוס מסונן",
+      "desc": "נו-דיסקו והאוס מסונן שנבנו לתנועה — Lenno, Oliver, Tollef ו-Yelle מעל גיטרות קצוצות ובס סינתי שמן."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "דיפ האוס · האוס מלודי",
+      "desc": "מאה רצועות דיפ והאוס מלודי שיודעות לא להפריע — Chris Malinchak, Sultan + Shepard, Lenno ו-Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "פיוצ'ר האוס · אלקטרו פופ",
+      "desc": "פיוצ'ר האוס בהיר ואלקטרו פופ — Lenno, La Felix, The Knocks, Kraak & Smaak ו-Chris Malinchak לאורך מאה רצועות."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "היפ-הופ ג'אזי · בום באפ",
+      "desc": "בום באפ שדוגם ג'אז לערבים איטיים — Blu & Exile, Large Professor, 3582 ו-Scienze מחליפים לופים חמים ובתים לא ממהרים."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "ג'אז-הופ · בום באפ",
+      "desc": "ג'אז-הופ מתקופת הזהב ממחנה Phoniks — Awon & Phoniks, Anti Lilly, Dephlow ו-Tiff the Gift מעל כלי נשיפה מאובקים וקונטרבס."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "אר-אנד-בי אלטרנטיבי · ניאו סול",
+      "desc": "אר-אנד-בי אלטרנטיבי וניאו סול של שעות הלילה — Brent Faiyaz, Elujay, J.Robb ו-Lou Phelps מעל תופים מטושטשים וקווי בס לא ממהרים."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "דיסקו · בוגי",
+      "desc": "להיטי רחבה משנות השבעים והשמונים — CHIC, Luther Vandross, The Jacksons, Change ו-Oliver Cheatham. הכלים שעושים את העבודה הם כלי המיתר, המחיאות וקווי הבס."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "אסיד ג'אז · נו ג'אז",
+      "desc": "אסיד ג'אז ונו ג'אז עם להקה חיה מאחור — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson ו-Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "גוספל · סול",
+      "desc": "סול עם שורשי גוספל שמרים חדר שלם — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris ו-Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "ברוקן ביט · נו ג'אז",
+      "desc": "ברוקן ביט ונו ג'אז בריטי לאחר צהריים איטיים — Emma-Jean Thackray, Blue Lab Beats, Galliano ו-The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "סול בריטי · ברוקן ביט",
+      "desc": "הסול הבריטי בגרסתו החמה ביותר — Incognito, Shaun Escoffery, Cherri V ו-Tortured Soul, עם Stevie Wonder בחדר."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "ג'אז עכשווי · אר-אנד-בי",
+      "desc": "ג'אז עכשווי ואר-אנד-בי בשיחה — Robert Glasper, August Greene, Common, Karriem Riggins ו-Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "סול · ג'אז פאנק",
+      "desc": "שירי אהבה עם נגנים אמיתיים מאחור — 4hero ו-Marc Mac, Incognito, Imaani, Natalie Duncan ו-Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "ניאו סול · ג'אז",
+      "desc": "חמישים וחמש רצועות ניאו סול וג'אז לערבים חמים — India.Arie, Robert Glasper, Lucy Pearl, Anthony David ו-Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "ניאו סול · אר-אנד-בי עכשווי",
+      "desc": "שבעים ושלוש רצועות ניאו סול ואר-אנד-בי עכשווי — Alex Isley, Yebba, Ego Ella May, Robert Glasper ו-Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "ג'אז פאנק · ניאו סול",
+      "desc": "מאה רצועות שבהן הזרקור מופנה אל הנגנים — Erykah Badu, Jill Scott, Omar, Esperanza Spalding ו-Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "ראפ · החוף המערבי",
+      "desc": "מאה רצועות ראפ לאורך ארבעה עשורים — 2Pac ו-Dr. Dre, Snoop Dogg ו-Tha Dogg Pound, Ghostface Killah, Nicki Minaj ו-DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "ראפ · סול · פרנץ' טאץ'",
+      "desc": "מאה רצועות של חפירה בארגזי תקליטים בלי כלל ז'אנר — Dr. Dre ו-Eminem לצד MC Solaar ו-113, Charles Aznavour לצד DJ Mehdi ו-Thomas Bangalter."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "ראפ הארדקור · בום באפ",
+      "desc": "ראפ הארדקור משנות התשעים בעוצמה גבוהה — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre ו-Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "בום באפ · ג'אז ראפ",
+      "desc": "שמונים ושש רצועות בום באפ וג'אז ראפ משנות התשעים — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde וה-Jazzmatazz של Guru."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "אנדרגראונד · בום באפ",
+      "desc": "בום באפ אנדרגראונד ואינסטרומנטלים — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D ו-Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "היפ-הופ אינדי · פופ ראפ",
+      "desc": "היפ-הופ אינדי ופופ ראפ עם תנופה — Quinn XCII, Kid Quill, EMAN8, gianni & kyle ו-YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "צ'ילוויב · דאונטמפו",
+      "desc": "דאונטמפו חסר משקל לנסיעה ארוכה או לבוקר איטי — Zero 7, Les Imprimés ו-Ciao Ciao Marigold מעל תופים מרוככים."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "טריפ-הופ · ג'אז-הופ",
+      "desc": "טריפ-הופ שדוגם ג'אז מאת Proleter, Poldoore, Souleance ו-The Geek x Vrv. קולנועי, לא ממהר, בנוי לכתיבה."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "דאונטמפו · נו ג'אז",
+      "desc": "דאונטמפו ונו ג'אז שאפשר להישען עליהם במחשבה — Zero 7, The Cinematic Orchestra, Souleance, Mozez ו-Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "טריפ-הופ · דאונטמפו",
+      "desc": "טריפ-הופ ודאונטמפו עם ליבה של סול — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra ו-Nina Simone בעיבוד מחדש."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "לו-פיי · ביטים ללימוד",
+      "desc": "חמישים ושניים ביטים של לו-פיי היפ הופ ללימוד ולעבודה עמוקה — Idealism, j'san, Joey Pecoraro, Sugi.wa ו-aimless. בלי שירה שתתחרה בך."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "פרנץ' האוס · נו-דיסקו",
+      "desc": "פרנץ' האוס פאנקי ונו-דיסקו במהירות קבועה — Breakbot, Modjo, Fred Falke, Kartell ו-Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "נו ג'אז · דאונטמפו",
+      "desc": "נו ג'אז ודאונטמפו מרגיעים להורדת הילוך — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly ו-Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "סול · ג'אז פאנק",
+      "desc": "סול וג'אז פאנק לפתיחת היום — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak ו-Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "פופ מרומם",
+      "desc": "שישים וארבעה שירי פופ בהירים ומהירים לתנועה — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear ו-Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "ג'אז ראפ · אר-אנד-בי אלטרנטיבי",
+      "desc": "ג'אז ראפ ואר-אנד-בי אלטרנטיבי שיש להם מה לומר — Noname, Anderson .Paak, KAYTRANADA, Q-Tip ו-A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "אפרוביט · ואסולו",
+      "desc": "קולות ממערב אפריקה בחזית — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh ו-Kareyce Fotso, מהוואסולו ועד הקורה."
+    }
+  },
+  "faq": {
+    "heading": "שאלות? תשובות.",
+    "sub": "איך מאזינים, במה, ומאיפה מגיעה המוזיקה.",
+    "items": [
+      {
+        "q": "צריך מנוי Spotify כדי להאזין?",
+        "a": "לא. כל פלייליסט מתנגן בנגן המוטמע שלמעלה גם עם חשבון Spotify חינמי, עם פרסומות בין הרצועות. חשבון Premium מסיר את הפרסומות ומאפשר האזנה לא מקוונת, אבל שום דבר כאן לא נמצא מאחורי תשלום."
+      },
+      {
+        "q": "אפשר להאזין ב-Apple Music במקום?",
+        "a": "כן — עקבו אחרי הפרופיל בכתובת music.apple.com/profile/bxhero. הפלייליסטים בעמוד הזה הם גרסאות Spotify, כי Apple Music לא חושף קישורים לפלייליסטים בודדים לציבור. מעקב אחרי הפרופיל הוא הדרך האמינה בפלטפורמה הזאת."
+      },
+      {
+        "q": "באילו מכשירים זה עובד?",
+        "a": "בכל מקום שבו Spotify רץ: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox וכל דפדפן. הנגנים בעמוד הזה עובדים בנייד ובמחשב בלי אפליקציה."
+      },
+      {
+        "q": "באיזה פלייליסט להתחיל לעבודה עמוקה?",
+        "a": "בוקר &amp; מצב רוח לריכוז בלי הסחות — דאונטמפו, נו ג'אז ולו-פיי עם מעט שירה או בלעדיה, כדי שלא תתחרה בקריאה. אלקטרוני מתאים לעבודה שדורשת תנופה ולא שקט."
+      },
+      {
+        "q": "באיזו תדירות הפלייליסטים מתעדכנים?",
+        "a": "באופן קבוע, ובמקום. מעקב אחרי פלייליסט ב-Spotify או אחרי הפרופיל באחד משני השירותים מספיק: רצועות חדשות מגיעות בלי לחזור לכאן."
+      },
+      {
+        "q": "אפשר לשתף או להטמיע את הפלייליסטים האלה?",
+        "a": "כן. כל כרטיס מוביל לפלייליסט ב-Spotify, שם תפריט השיתוף נותן קישורים וקודי הטמעה. אלה פלייליסטים ציבוריים, פתוחים לשיתוף."
+      },
+      {
+        "q": "מי מרכיב את הפלייליסטים האלה?",
+        "a": "סבסטיאן רוסו — בשם BXHERO ב-Spotify וב-Apple Music. אלה הפלייליסטים שמתנגנים בזמן כתיבה על תשלומים והנדסה, לא פיד אלגוריתמי."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "להאזין בכל מכשיר",
+    "body": "כל פלייליסט מתנגן בדפדפן שלמעלה, וגם באפליקציית Spotify במכשירים שאתם כבר משתמשים בהם. עקבו אחרי הפרופיל באחד משני השירותים ופלייליסטים חדשים יגיעו מעצמם.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "דפדפן אינטרנט"
+    ]
+  }
+}

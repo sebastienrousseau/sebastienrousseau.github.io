@@ -1,0 +1,41 @@
+title: CloudCDN — nyílt forráskódú tervrajz az MI-központú peremhez
+banner_alt: MI-központú peremhálózati infrastruktúra — a zéró bizalmi MCP-átjárót, az atomi Durable Objects
+  sebességkorlátozást és a WebAuthn kulcsos perem védelmet jelképezi, amelyet a CloudCDN referenciamegvalósításként
+  szállít
+sector: Nyílt forráskód · Perem · MI-infrastruktúra
+role: Szerző és karbantartó
+status: Éles üzemben, aktívan karbantartva
+outcome_highlights:
+- value: 3 185 teszt
+  label: 100 % sor-, elágazás- és függvénylefedettség
+- label: Build-eredetigazolás + Sigstore aláírás
+- value: 42 MCP-eszköz
+  label: Minden hívás strukturált bizonyítékkal naplózva
+- label: Az 5. cikkhez és a kockázati adatok összesítéséhez rendelve
+pull_quote: „Nyílt forráskódú referenciamegvalósítás, amelyet egy biztonsági csapat elolvashat, forkolhat
+  és aláírhat — nem pedig egy marketing-PDF. Atomi Durable Objects sebességkorlátozás, WebAuthn perem,
+  SLSA L3 eredetigazolás.”
+problem: Ahogy az MI-ügynökök és MCP-eszközök nagy léptékben kezdik hívni a peremhálózati API-kat, a bankoknak
+  olyan peremre van szükségük, amely elbírja az autonóm forgalmat anélkül, hogy feladná a DORA szintű
+  auditbizonyítékot. A meglévő CDN-ek vagy marketingnyelvet, vagy átláthatatlan csomagokat kínálnak —
+  egyik sem állítja elő azt a referenciamegvalósítást, amelyet egy biztonsági csapat elolvashat, forkolhat
+  és aláírhat.
+what_i_built: Nyílt forráskódú, zéró bizalmi MCP-átjáró 42 eszközzel, atomi Durable Objects sebességkorlátozással,
+  WebAuthn kulcsos peremmel, aláírt URL-ekkel és SLSA 3. szintű build-eredetigazolással. 3 185 teszt 100
+  %-os lefedettséggel, a DORA 5. cikkéhez, a BCBS 239 kockázatiadat-összesítéshez és a Bázel III működési
+  kockázati tőkéhez rendelve.
+rigour:
+- metric: Tesztlefedettség
+  value: 3 185 teszt 100 % sor-, elágazás- és függvénylefedettséggel
+- metric: Ellátási lánc integritása
+  value: SLSA 3. szintű build-eredetigazolás + Sigstore aláírás
+- metric: MCP-felület
+  value: 42 eszköz — minden hívás strukturált bizonyítékkal naplózva
+- metric: Sebességkorlátozás
+  value: Atomi Durable Objects (nincs versenyhelyzet, nincs kettős számlálás)
+- metric: Hozzáférés-vezérlés
+  value: WebAuthn kulcsok + aláírt URL-ek
+- metric: Licenc
+validation:
+- 'Szerepel a 2026. 06. 11-i írásban: CloudCDN — An Open-Source Blueprint for the AI-Native Edge'
+- A DORA 5. cikkéhez, a BCBS 239-hez és a Bázel III működési kockázathoz rendelve

@@ -1,163 +1,162 @@
 ---
-title: "CRYSTALS-Kyber: خوارزمية الحماية في العصر الكمي"
+title: "CRYSTALS-Kyber: ang algoritmong nagsasanggalang sa panahong quantum"
 tags: "quantum, CRYSTALS-Kyber, encryption, cybersecurity, banking, finance, data, future, post-quantum cryptography, cryptography, ISO 20022, DORA, quantum computing, AI, Rust"
-subtitle: "CRYSTALS-Kyber، معيار NIST FIPS 203 لتغليف المفاتيح ما بعد الكمي."
-description: "اكتشفوا كيف تُحدِث CRYSTALS-Kyber، خوارزمية تشفير مقاومة للحوسبة الكمية، ثورةً في عالم التشفير وتُهيّئنا للعصر الكمي."
+subtitle: "Isang mekanismo ng pagbabalot ng susi na nakabatay sa sala-sala, hinirang ng NIST, na naghahandog ng seguridad na lumalaban sa quantum sa mas maliit na susi."
+description: "Ang CRYSTALS-Kyber: isang mekanismo ng pagbabalot ng susi (KEM) na nakabatay sa suliraning Learning With Errors sa sala-sala — ang tatlong antas ng seguridad nito, ang laki ng susi nito, at kung bakit ito niyakap ng banking at ng mga serbisyong pinansiyal."
 date: "Nov 19, 2023"
 language: "fil-PH"
 locale: "fil_PH"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp"
-banner_alt: "حاسوب كمي حديث وأنيق"
-keywords: "الحوسبة الكمية، التشفير المقاوم للكم، CRYSTALS-Kyber، التشفير، الأمن، المصرفية، المالية، الحماية، حماية البيانات، الاستدامة"
+banner_alt: "Isang makabago at eleganteng quantum na kompyuter"
+keywords: "CRYSTALS-Kyber, KEM, pagbabalot ng susi, kriptograpiyang post-quantum, PQC, sala-sala, Learning With Errors, LWE, NIST, ENISA, Kyber512, Kyber768, Kyber1024, seguridad sa banking"
 ---
+## CRYSTALS-Kyber: ang algoritmong nagsasanggalang sa panahong quantum
 
-## CRYSTALS-Kyber: خوارزمية الحماية في العصر الكمي
+![Isang makabago at eleganteng quantum na kompyuter](https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp).class=\"img-fluid clearfix\"
 
-![حاسوب كمي حديث وأنيق](https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp).class=\"img-fluid clearfix\"
+## Malalim na pagtingin
 
-## نظرة معمّقة
+### Paglalayag sa bantang quantum: ang pagsilang ng CRYSTALS-Kyber
 
-### الإبحار في التهديد الكمي: نشأة CRYSTALS-Kyber
+Sa naunang artikulo ko, [Pagsanggalang sa datos sa panahong quantum ⧉][03], tinalakay ko nang malalim ang nalalapit na banta ng quantum computing sa seguridad na digital, at tiningnan ko kung paano tinutugunan ng kriptograpiyang lumalaban sa quantum (QRC) ang bantang ito. Tutuklasin ko naman ngayon ang `CRYSTALS-Kyber`, isang mapanimulang algoritmong QRC na bumabago sa tanawin ng seguridad.
 
-في مقالتي السابقة، [حماية البيانات في العصر الكمي ⧉][03]، تعمّقتُ في التهديد الوشيك للحوسبة الكمية على الأمن الرقمي، ونظرتُ في كيفيّة معالجة التشفير المقاوم للكم (QRC) لهذا التهديد. سأستكشف الآن `CRYSTALS-Kyber`، خوارزمية QRC ثورية تُحوّل مشهد الأمن.
+Ang mga quantum na kompyuter, sa kakayahan nilang magsagawa ng ilang kalkulasyon nang higit na mabilis kaysa sa karaniwang kompyuter, ay kumakatawan sa saligang panganib sa kasalukuyang algoritmo ng encryption. Nagbubunsod ito ng alalahanin hinggil sa seguridad ng sensitibong impormasyon, kabilang na ang mga transaksiyong pinansiyal, ang mga talaang medikal, at ang mga personal na komunikasyon.
 
-تُمثّل الحواسيب الكمية، بقدرتها على إجراء بعض الحسابات أسرع بكثير من الحواسيب التقليدية، مخاطر جوهرية على خوارزميات التشفير الحالية. وهذا يُثير مخاوف بشأن أمن المعلومات الحسّاسة، بما فيها المعاملات المالية والسجلات الطبية والاتصالات الشخصية.
+Upang mabawasan ang bantang ito, bumuo ang mga kriptograpo ng mga algoritmong QRC, tulad ng `CRYSTALS-Kyber`. Ang algoritmong ito ay isang mekanismo ng pagbabalot ng susi (KEM) na idinisenyo upang ligtas na maipagpalit ang lihim na susi sa pagitan ng mga partido.
 
-ولتخفيف هذا التهديد، طوّر المُشَفِّرون خوارزميات QRC، كـ `CRYSTALS-Kyber`. وهذه الخوارزمية آلية تغليف مفاتيح (KEM) مُصمَّمة لتبادل المفاتيح السرّية بين الأطراف بشكل آمن.
+Sa kasalukuyan, namumukod ang `CRYSTALS-Kyber` bilang nangunguna sa proseso ng pagsasapamantayan ng kriptograpiyang post-quantum ng [National Institute of Standards and Technology (NIST) ⧉][05], na nagpapamalas ng potensiyal nito bilang matatag na solusyong pangseguridad para sa panahong digital.
 
-اليوم، تَبرز `CRYSTALS-Kyber` كرائدة في عملية تقييس التشفير ما بعد الكمي لدى [المعهد الوطني للمعايير والتقنية (NIST) ⧉][05]، مُظهِرةً إمكاناتها كحل أمني متين للعصر الرقمي.
+### CRYSTALS-Kyber: seguridad na nakatindig laban sa quantum computing
 
-### CRYSTALS-Kyber: أمنٌ راسخ في وجه الحوسبة الكمية
+Nakasalalay ang seguridad ng `CRYSTALS-Kyber` sa hirap ng paglutas sa suliraning `Learning With Errors (LWE)` sa ibabaw ng mga sala-salang (lattice) ng yunit. Ang masalimuot na hamong matematikal na ito, na itinuturing na hindi malulutas sa pagkalkula kahit ng mga quantum na kompyuter, ang haligi ng katatagan ng `CRYSTALS-Kyber` laban sa mga atakeng quantum.
 
-يَستند أمن `CRYSTALS-Kyber` إلى صعوبة حلّ مسألة `Learning With Errors (LWE)` فوق شبكيّات (lattices) الوحدات. ويُمثّل هذا التحدّي الرياضي المُعقّد، الذي يُعدّ مُستعصياً حسابياً حتى للحواسيب الكمية، الركيزة لصمود `CRYSTALS-Kyber` في وجه الهجمات الكمية.
+### CRYSTALS-Kyber: isang radikal na pagbabago sa seguridad na digital
 
-### CRYSTALS-Kyber: تحوّل جذري في الأمن الرقمي
+Kabilang ang `CRYSTALS-Kyber` sa pangkat ng mga algoritmong CRYSTALS (Cryptographic Suite for Algebraic Lattices), at buong-pagmamalaking taglay nito ang katangiang algoritmong ligtas sa quantum (QSA).
 
-تنتمي `CRYSTALS-Kyber` إلى مجموعة خوارزميات CRYSTALS (Cryptographic Suite for Algebraic Lattices)، وتحمل بفخر صفة خوارزمية آمنة كمياً (QSA).
-
-ورغم أن مفهوم توظيف مسائل الشبكيات لأغراض تشفيرية ليس جديداً تماماً، فإن `CRYSTALS-Kyber` ترفع هذا المفهوم إلى مستويات لا تُضاهى من الكفاءة. وقدرتها على توليد مفاتيح تشفيرية بأحجام أصغر وسرعات تشفير وفكّ أعلى تجعلها خياراً مثالياً للتطبيقات الواقعية، خاصةً في عالم المالية الصارم.
-
-![Divider][01].class=\"m-10 w-100\"
-
-## الفكرة
-
-### فهم آليّات CRYSTALS-Kyber: تغليف المفاتيح في القلب
-
-في صميم التصميم الثوري لـ `CRYSTALS-Kyber` يَكمن نهجها المبتكر لتغليف المفاتيح، وهو مُكوّن جوهري للاتصالات الآمنة. وتُسخِّر قوّة التشفير القائم على الشبكيات، وهو أسلوب معروف بصموده في وجه الهجمات الكمية. وتستفيد هذه التقنية المتطوّرة من البُنى الهندسية في فضاء متعدد الأبعاد لإنشاء مفاتيح تشفيرية.
-
-تُوظِّف `CRYSTALS-Kyber` نوعاً محدّداً من مسائل الشبكيات، معروفاً بخصائصه في الكفاءة والأمن، لتوليد المفاتيح التشفيرية. وهذا يَضمن حماية البيانات الحسّاسة حتى في وجه تطوّرات الحوسبة الكمية.
-
-#### تغليف المفاتيح الآمن: جوهر CRYSTALS-Kyber
-
-تغليف المفاتيح أشبه بإغلاق رسالة بأمان في صندوق، يَملك مفتاحَ فتحه المُستلِم المقصود وحده. وفي عالم التشفير، تنطوي هذه العملية على إنشاء زوج من المفاتيح: مفتاح عام يمكن مشاركته علناً، ومفتاح خاص يجب أن يبقى سرّاً. وتَكمن عبقرية `CRYSTALS-Kyber` في قدرتها على توليد هذين المفتاحَين واستخدامهما على نحو يَضمن أمناً لا يُضاهى.
-
-لنرَ كيف تستخدم `CRYSTALS-Kyber` تغليف المفاتيح لإنشاء اتصال آمن بين طرفَين، آلِس وبوب. يُوضّح المخطط التسلسلي أدناه الخطوات في إقامة اتصال آمن بين آلِس وبوب باستخدام `CRYSTALS-Kyber`، آلية KEM مُصمَّمة لتأمين تبادل المفاتيح لبروتوكولات التشفير. ويُؤدّي KyberServer هنا دوراً محورياً، إذ يُولّد المفاتيح التشفيرية ويُوزّعها.
-
-![آلية تغليف المفاتيح (KEM) في CRYSTALS-Kyber][04].class=\"img-fluid clearfix\"
-
-##### الإيضاح
-
-- آلِس: مُرسِل الرسالة.
-- بوب: مُستلِم الرسالة.
-- KyberServer: الخادم الذي يُولّد المفاتيح التشفيرية ويُوزّعها.
-
-##### التفسير
-
-###### تبادل المفتاح العام
-
-- تبدأ آلِس العملية بطلب مفتاحها العام من KyberServer.
-- يستجيب KyberServer بإرسال مفتاح آلِس العام، وهو قيمة رياضية يمكن مشاركتها علناً دون المساس بأمن مفتاح آلِس الخاص.
-- تشارك آلِس بعدها مفتاحها العام مع بوب، مما يُتيح له تشفير رسائل لا تستطيع فكّها سواها.
-
-###### التغليف وفكّ التغليف
-
-- يطلب بوب مفتاح تغليف من KyberServer. وسيُستخدم هذا المفتاح المؤقّت لتشفير المفتاح السرّي المشترك قبل إرساله إلى آلِس.
-- يُرسل KyberServer مفتاح التغليف إلى بوب.
-- يَستخدم بوب مفتاح آلِس العام ومفتاح التغليف لتشفير المفتاح السرّي المشترك، مُنشِئاً كبسولة مُشفَّرة.
-- يُرسل بوب الكبسولة المُشفَّرة إلى آلِس.
-- تطلب آلِس مفتاح فكّ من KyberServer. وسيُستخدم هذا المفتاح المؤقّت لفكّ الكبسولة المُشفَّرة والكشف عن المفتاح السرّي المشترك.
-- يُرسل KyberServer مفتاح الفكّ إلى آلِس.
-
-###### تبادل المفتاح السرّي المشترك
-
-- تَستخدم آلِس مفتاحها الخاص ومفتاح الفكّ لفكّ الكبسولة، مُكشِّفةً المفتاح السرّي المشترك.
-- تُشارك آلِس المفتاح السرّي المشترك مع بوب، مما يُتيح له فكّ الرسائل المُشفَّرة بهذا المفتاح.
-
-###### الاتصال الآمن
-
-يُجسّد المخطط بفعّالية الخطوات المُعقّدة في إقامة قناة اتصال آمنة، مُبرِزاً الدور الحاسم لـ KyberServer في توليد المفاتيح التشفيرية وتوزيعها. وباستخدام KEM `CRYSTALS-Kyber`، تستطيع آلِس وبوب حماية معلوماتهما الحسّاسة والحفاظ على اتصال آمن حتى في وجه خصوم محتملين.
-
-### التشفير القائم على الشبكيات: أساس متين للمقاومة الكمية
-
-تَستخدم `CRYSTALS-Kyber` نهجاً قائماً على الشبكيات، وهو أسلوب معروف بإمكان مقاومته للهجمات الكمية. والمبدأ الكامن وراء التشفير القائم على الشبكيات يَنطوي على بُنى هندسية في فضاء متعدد الأبعاد. ومع أن الإبحار في هذه البُنى المُعقّدة قد يبدو شاقّاً، تُبسّطه `CRYSTALS-Kyber`. وهي تَستخدم نوعاً محدّداً من مسائل الشبكيات، معروفاً بخصائصه في الكفاءة والأمن، لإنشاء المفاتيح التشفيرية.
-
-#### أحجام مفاتيح فعّالة: توازن بين الأمن والأداء
-
-من أبرز ميزات `CRYSTALS-Kyber` حجم مفاتيحها. ومقارنةً بخوارزميات التشفير ما بعد الكمي (PQC) الأخرى، تُقدّم `CRYSTALS-Kyber` أحجام مفاتيح أصغر بكثير، مما يجعلها أكثر عمليّةً للتطبيقات الواقعية. وتُوفّر `CRYSTALS-Kyber` ثلاثة مستويات أمنية، لكل منها حجم مفتاحه الخاص:
-
-- **Kyber512**: يُوفّر هذا المستوى أمناً قدره 128 بت، ويستخدم أحجام مفاتيح مقدارها 1,632 بايت للمفاتيح السرّية، 800 بايت للمفاتيح العامة، و768 بايت للنصوص المُشفَّرة.
-- **Kyber768**: يُوفّر أمناً قدره 192 بت، ويستخدم أحجام مفاتيح مقدارها 2,400 بايت للمفاتيح السرّية، 1,184 بايت للمفاتيح العامة، و1,088 بايت للنصوص المُشفَّرة.
-- **Kyber1024**: يُوفّر أمناً قدره 256 بت، ويستخدم أحجام مفاتيح مقدارها 3,168 بايت للمفاتيح السرّية، 1,568 بايت للمفاتيح العامة، و1,568 بايت للنصوص المُشفَّرة.
-
-تجعل هذه الأحجام الصغيرة نسبياً `CRYSTALS-Kyber` خياراً جذّاباً للأجهزة محدودة الموارد، كالهواتف الذكية وأجهزة IoT. كما تُقلّل من عرض الحزمة المطلوب لنقل المفاتيح التشفيرية، وهو ما قد يُفيد التطبيقات ذات الاتصال الشبكي المحدود.
-
-#### سرعة لا تتزعزع: مَنارٌ في المشهد المالي السريع
-
-من جوانب جاذبية `CRYSTALS-Kyber` الأخرى سرعتُها. ففي قطاع المصرفية والخدمات المالية السريع، السرعة بأهميّة الأمن. وتصميم الخوارزمية يَضمن عملها بكفاءة، مُيسِّراً عمليات تشفير وفكّ تشفير سريعة. وهذه الكفاءة لا تأتي على حساب الأمن، بل هي نتيجة مباشرة للأسس الرياضية المتقدّمة للخوارزمية.
-
-### CRYSTALS-Kyber: تآزر الأمن والكفاءة والسرعة
-
-ظَهَرت `CRYSTALS-Kyber` رائدةً في السعي نحو التشفير المقاوم للحوسبة الكمية، مُقدِّمةً مزيجاً فريداً من الأمن والكفاءة والسرعة. ونهجها المبتكر القائم على الشبكيات، وأحجام مفاتيحها الأصغر، وتصميمها المُحسَّن، يجعلها خياراً مثالياً لحماية المعلومات الحسّاسة في صناعة المصرفية والخدمات المالية. ومع استمرار العالم في احتضان التقنيات الرقمية، تَقف `CRYSTALS-Kyber` مهيّأةً لتأدية دور محوري في حماية بياناتنا لسنوات قادمة.
+Bagaman hindi ganap na bago ang konsepto ng paggamit ng suliraning sala-sala para sa layuning kriptograpiko, itinataas ng `CRYSTALS-Kyber` ang konseptong ito sa antas ng kahusayang walang katulad. Ang kakayahan nitong lumikha ng susing kriptograpiko na mas maliit ang laki at may mas mabilis na pag-encrypt at pagbasag ay ginagawa itong angkop na angkop na pagpipilian sa mga aplikasyon sa tunay na buhay, lalo na sa mahigpit na mundo ng pinansiya.
 
 ![Divider][01].class=\"m-10 w-100\"
 
-## الأثر
+## Ang ideya
 
-### CRYSTALS-Kyber: مزايا للمصرفية والخدمات المالية
+### Pag-unawa sa mekanismo ng CRYSTALS-Kyber: ang pagbabalot ng susi sa gitna
 
-تخوض صناعة المصرفية والخدمات المالية سباقاً متواصلاً للبقاء في طليعة تهديدات سيبرانية متزايدة التطوّر. وفي هذا السياق، تتميّز `CRYSTALS-Kyber` ليس فقط بخصائصها المقاومة للكم (QR)، بل أيضاً بالفوائد الملموسة التي تُقدّمها لهذه الصناعة. ويَستعرض هذا القسم الميزات العملية لـ `CRYSTALS-Kyber`، مُبرِزاً لماذا تُلائم تحديداً الاحتياجات الفريدة للمؤسسات المالية.
+Nasa kaibuturan ng mapanimulang disenyo ng `CRYSTALS-Kyber` ang mapanlikha nitong paraan ng pagbabalot ng susi, isang saligang sangkap ng ligtas na komunikasyon. Ginagamit nito ang lakas ng kriptograpiyang nakabatay sa sala-sala, isang pamamaraang kilala sa katatagan nito laban sa mga atakeng quantum. Ginagamit ng abanteng teknik na ito ang mga balangkas na heometriko sa isang espasyong maraming dimensiyon upang lumikha ng susing kriptograpiko.
 
-- **أمن مُعزَّز بمفاتيح أصغر**: من أبرز مزايا `CRYSTALS-Kyber` قدرتها على إنشاء مفاتيح تشفير أصغر دون التضحية بالأمن. ففي قطاع قد تكون لخروقات البيانات فيه عواقب كارثية، الأمن المتين غير قابل للتفاوض. وأحجام المفاتيح الأصغر التي تُقدّمها `CRYSTALS-Kyber` تُبسّط عمليات إدارة المفاتيح، وهو عامل حاسم في الأنظمة المصرفية واسعة النطاق حيث آلاف المفاتيح في التداول. وهذا لا يُعزّز الأمن فحسب، بل يُحسّن أيضاً كفاءة التخزين والإرسال، وهو عامل بالغ الأهمية في عصر تَغلو فيه السرعة والمساحة.
+Gumagamit ang `CRYSTALS-Kyber` ng tiyak na uri ng suliraning sala-sala, na kilala sa katangian nito sa kahusayan at seguridad, upang lumikha ng susing kriptograpiko. Tinitiyak nito ang pagsanggalang sa sensitibong datos kahit sa harap ng pag-unlad ng quantum computing.
 
-- **السرعة والكفاءة**: في الخدمات المالية، حيث تجري المعاملات في أجزاء من الألف من الثانية، تكون سرعة العمليات التشفيرية حاسمة. وتتفوّق `CRYSTALS-Kyber` في هذا الجانب، مُقدّمةً عمليات سريعة لتوليد المفاتيح والتغليف وفكّ التغليف. وتَضمن هذه السرعة ألا تُصبح إجراءات الأمن عنق زجاجة في بيئات التداول عالي التردد أو خلال المعاملات الكبرى. زِد على ذلك، أن كفاءة `CRYSTALS-Kyber` تَنعكس على تقليل موارد الحوسبة، مما يُسهم في وفورات تكلفة وعمليات أكثر استدامةً بيئياً.
+#### Ligtas na pagbabalot ng susi: ang kaibuturan ng CRYSTALS-Kyber
 
-- **التحصين المستقبلي ضد التهديدات الكمية**: مع مجيء الحوسبة الكمية، تواجه الصناعة مستقبلاً قد تُصبح فيه الأساليب التشفيرية التقليدية متقادمة. وبتبنّي `CRYSTALS-Kyber`، لا تُؤمِّن المؤسسات المالية حاضرَها فحسب، بل تُهيّئ نفسها أيضاً لعالم ما بعد كمي. ويُبرهن هذا النهج الاستباقي للأمن السيبراني على التزامها بحماية البيانات طويلة الأمد، وهو اعتبار جوهري لأصحاب المصلحة والعملاء الذين يُولون أمن البيانات الأولوية.
+Ang pagbabalot ng susi ay tulad ng ligtas na pagsasara ng mensahe sa loob ng isang kahon, na ang tanging may susi upang buksan ito ay ang nilalayong tatanggap. Sa mundo ng kriptograpiya, kasangkot sa prosesong ito ang paglikha ng magkapares na susi: isang pampublikong susi na maaaring ibahagi nang hayagan, at isang pribadong susi na kailangang manatiling lihim. Nasa kakayahan nitong likhain at gamitin ang dalawang susing ito sa paraang tumitiyak ng walang katulad na seguridad ang katalinuhan ng `CRYSTALS-Kyber`.
 
-- **الامتثال التنظيمي والميزة التنافسية**: مع بدء المُنظِّمين حول العالم في الاعتراف بالتهديد الكمي، فإنهم على الأرجح سيُلزمون بتبنّي خوارزميات مقاومة للكم. والتبنّي المبكّر لـ `CRYSTALS-Kyber` يُمَوضِع المؤسسات المالية كقائدات في الامتثال والأمن. كما يُوفّر ميزة تنافسية، إذ يَبعث الطمأنينة لدى العملاء والشركاء حول التزام المؤسسة بممارسات الأمن المتطوّرة.
+Tingnan natin kung paano ginagamit ng `CRYSTALS-Kyber` ang pagbabalot ng susi upang magtatag ng ligtas na komunikasyon sa pagitan ng dalawang partido, sina Alice at Bob. Ipinapakita ng diyagram ng pagkakasunod-sunod sa ibaba ang mga hakbang sa pagtatatag ng ligtas na komunikasyon nina Alice at Bob gamit ang `CRYSTALS-Kyber`, isang mekanismong KEM na idinisenyo upang tiyakin ang ligtas na palitan ng susi para sa mga protokol ng encryption. Gumaganap dito ng mahalagang papel ang KyberServer, sapagkat ito ang lumilikha at namamahagi ng susing kriptograpiko.
+
+![Ang mekanismo ng pagbabalot ng susi (KEM) sa CRYSTALS-Kyber][04].class=\"img-fluid clearfix\"
+
+##### Paliwanag
+
+- Alice: ang nagpapadala ng mensahe.
+- Bob: ang tumatanggap ng mensahe.
+- KyberServer: ang serber na lumilikha at namamahagi ng susing kriptograpiko.
+
+##### Pagpapaliwanag
+
+###### Ang palitan ng pampublikong susi
+
+- Sinisimulan ni Alice ang proseso sa paghiling ng kanyang pampublikong susi mula sa KyberServer.
+- Tumutugon ang KyberServer sa pagpapadala ng pampublikong susi ni Alice, na isang halagang matematikal na maaaring ibahagi nang hayagan nang hindi nasasakripisyo ang seguridad ng pribadong susi ni Alice.
+- Ibinabahagi naman ni Alice ang kanyang pampublikong susi kay Bob, kaya nagagawa nitong mag-encrypt ng mensaheng siya lamang ang makababasag.
+
+###### Ang pagbabalot at pagbubukas ng balot
+
+- Humihiling si Bob ng susi sa pagbabalot mula sa KyberServer. Gagamitin ang pansamantalang susing ito upang i-encrypt ang pinagsasaluhang lihim na susi bago ito ipadala kay Alice.
+- Ipinadadala ng KyberServer ang susi sa pagbabalot kay Bob.
+- Ginagamit ni Bob ang pampublikong susi ni Alice at ang susi sa pagbabalot upang i-encrypt ang pinagsasaluhang lihim na susi, kaya nakalilikha siya ng naka-encrypt na kapsula.
+- Ipinadadala ni Bob ang naka-encrypt na kapsula kay Alice.
+- Humihiling si Alice ng susi sa pagbubukas mula sa KyberServer. Gagamitin ang pansamantalang susing ito upang buksan ang naka-encrypt na kapsula at ibunyag ang pinagsasaluhang lihim na susi.
+- Ipinadadala ng KyberServer ang susi sa pagbubukas kay Alice.
+
+###### Ang palitan ng pinagsasaluhang lihim na susi
+
+- Ginagamit ni Alice ang kanyang pribadong susi at ang susi sa pagbubukas upang buksan ang kapsula, kaya nabubunyag ang pinagsasaluhang lihim na susi.
+- Ibinabahagi ni Alice ang pinagsasaluhang lihim na susi kay Bob, kaya nagagawa nitong basagin ang mga mensaheng naka-encrypt sa susing ito.
+
+###### Ang ligtas na komunikasyon
+
+Mabisang ipinapakita ng diyagram ang masasalimuot na hakbang sa pagtatatag ng ligtas na daluyan ng komunikasyon, at itinatampok nito ang mapagpasyang papel ng KyberServer sa paglikha at pamamahagi ng susing kriptograpiko. Sa paggamit ng KEM na `CRYSTALS-Kyber`, kayang ipagsanggalang nina Alice at Bob ang kanilang sensitibong impormasyon at mapanatili ang ligtas na komunikasyon kahit sa harap ng mga posibleng kalaban.
+
+### Ang kriptograpiyang nakabatay sa sala-sala: matatag na saligan ng paglaban sa quantum
+
+Gumagamit ang `CRYSTALS-Kyber` ng paraang nakabatay sa sala-sala, isang pamamaraang kilala sa posibleng paglaban nito sa mga atakeng quantum. Ang prinsipyong nasa likod ng kriptograpiyang nakabatay sa sala-sala ay may kinalaman sa mga balangkas na heometriko sa espasyong maraming dimensiyon. Bagaman maaaring mukhang mabigat ang paglalayag sa masasalimuot na balangkas na ito, pinasisimple ito ng `CRYSTALS-Kyber`. Gumagamit ito ng tiyak na uri ng suliraning sala-sala, na kilala sa katangian nito sa kahusayan at seguridad, upang lumikha ng susing kriptograpiko.
+
+#### Mabisang laki ng susi: balanse ng seguridad at bisa
+
+Isa sa mga pangunahing tampok ng `CRYSTALS-Kyber` ang laki ng susi nito. Kumpara sa ibang algoritmo ng kriptograpiyang post-quantum (PQC), naghahandog ang `CRYSTALS-Kyber` ng laki ng susing higit na maliit, kaya nagiging higit itong praktikal sa mga aplikasyon sa tunay na buhay. Naghahandog ang `CRYSTALS-Kyber` ng tatlong antas ng seguridad, na ang bawat isa ay may sariling laki ng susi:
+
+- **Kyber512**: naghahandog ang antas na ito ng seguridad na 128 bit, at gumagamit ito ng laki ng susing 1,632 byte para sa lihim na susi, 800 byte para sa pampublikong susi, at 768 byte para sa naka-encrypt na teksto.
+- **Kyber768**: naghahandog ito ng seguridad na 192 bit, at gumagamit ito ng laki ng susing 2,400 byte para sa lihim na susi, 1,184 byte para sa pampublikong susi, at 1,088 byte para sa naka-encrypt na teksto.
+- **Kyber1024**: naghahandog ito ng seguridad na 256 bit, at gumagamit ito ng laki ng susing 3,168 byte para sa lihim na susi, 1,568 byte para sa pampublikong susi, at 1,568 byte para sa naka-encrypt na teksto.
+
+Ginagawa ng medyo maliliit na lakíng ito ang `CRYSTALS-Kyber` na kaakit-akit na pagpipilian para sa mga aparatong limitado ang mapagkukunan, tulad ng smartphone at ng aparatong IoT. Binabawasan din nito ang bandwidth na kailangan sa paglilipat ng susing kriptograpiko, na maaaring makatulong sa mga aplikasyong limitado ang koneksiyon sa network.
+
+#### Hindi natitinag na bilis: isang parola sa mabilis na tanawing pinansiyal
+
+Isa pang bagay na nagpapaakit sa `CRYSTALS-Kyber` ang bilis nito. Sa mabilis na sektor ng banking at ng mga serbisyong pinansiyal, kasinghalaga ng seguridad ang bilis. Tinitiyak ng disenyo ng algoritmo na gumagana ito nang mahusay, kaya napadadali ang mabilis na pag-encrypt at pagbasag. Hindi nakukuha ang kahusayang ito sa kapalit ng seguridad; tuwiran itong bunga ng abanteng saligang matematikal ng algoritmo.
+
+### CRYSTALS-Kyber: ang pagsasanib ng seguridad, kahusayan, at bilis
+
+Sumulpot ang `CRYSTALS-Kyber` bilang nangunguna sa paghahanap ng kriptograpiyang lumalaban sa quantum computing, at naghahandog ito ng natatanging halo ng seguridad, kahusayan, at bilis. Ang mapanlikha nitong paraang nakabatay sa sala-sala, ang mas maliit na laki ng susi nito, at ang optimisadong disenyo nito ay ginagawa itong angkop na angkop na pagpipilian sa pagsanggalang ng sensitibong impormasyon sa industriya ng banking at ng mga serbisyong pinansiyal. At habang patuloy na niyayakap ng mundo ang mga teknolohiyang digital, nakahanda ang `CRYSTALS-Kyber` na gumanap ng mahalagang papel sa pagsanggalang ng ating datos sa mga darating na taon.
 
 ![Divider][01].class=\"m-10 w-100\"
 
-## الحوافز
+## Ang epekto
 
-### حُجّة تبنّي CRYSTALS-Kyber
+### CRYSTALS-Kyber: mga bentahe para sa banking at mga serbisyong pinansiyal
 
-في مشهد لا تكون فيه الأمن السيبراني ضرورةً فحسب بل عامل تمييز تنافسي، تقف صناعة المصرفية والخدمات المالية عند مفترق طرق حاسم. ويُمثّل تبنّي `CRYSTALS-Kyber` خطوة استراتيجية، تتماشى مع احتياجات الأمن الراهنة والتحوّلات التقنية المقبلة معاً. ويَستعرض هذا القسم الأخير الحوافز المُقنعة لدمج `CRYSTALS-Kyber` في البنية التشفيرية للخدمات المالية.
+Nakikipagkarera nang walang tigil ang industriya ng banking at ng mga serbisyong pinansiyal upang manatiling nangunguna laban sa mga bantang sibernetikong lalong nagiging sopistikado. Sa kalagayang ito, namumukod ang `CRYSTALS-Kyber` hindi lamang dahil sa katangian nitong lumalaban sa quantum (QR), kundi dahil din sa nadaramang pakinabang na inihahandog nito sa industriyang ito. Tinatalakay ng bahaging ito ang mga praktikal na tampok ng `CRYSTALS-Kyber`, at itinatampok kung bakit partikular itong angkop sa natatanging pangangailangan ng mga institusyong pinansiyal.
 
-- **البقاء في طليعة اتجاهات الأمن السيبراني**: يُمثّل صعود الحوسبة الكمية تهديداً جوهرياً للخوارزميات التقليدية للتشفير، إذ يجعلها قابلة لفكّ الشفرة بواسطة الحواسيب الكمية المُقبلة. وبتبنّي `CRYSTALS-Kyber`، يمكن للمؤسسات المالية حماية بياناتها الحسّاسة وبنيتها التحتية الحيوية في وجه هذه التهديدات الناشئة.
+- **Pinatatag na seguridad gamit ang mas maliliit na susi**: isa sa pangunahing bentahe ng `CRYSTALS-Kyber` ang kakayahan nitong lumikha ng mas maliit na susi ng encryption nang hindi isinasakripisyo ang seguridad. Sa isang sektor na maaaring maging mapaminsala ang bunga ng paglabag sa datos, hindi napag-uusapan ang matatag na seguridad. Pinasisimple ng mas maliit na laki ng susing inihahandog ng `CRYSTALS-Kyber` ang pangangasiwa ng susi, na mapagpasyang salik sa malalaking sistemang pambangko kung saan libu-libong susi ang nasa sirkulasyon. Hindi lamang nito pinatatatag ang seguridad, kundi pinabubuti rin nito ang kahusayan ng pag-iimbak at pagpapadala, na napakahalagang salik sa panahong mahalaga ang bilis at ang espasyo.
 
-- **الكفاءة التشغيلية والجدوى الاقتصادية**: تَقود أحجام المفاتيح المُدمَجة والخوارزميات الفعّالة لـ `CRYSTALS-Kyber` إلى وفورات تكلفة جوهرية. ومقارنةً بخوارزميات التشفير التقليدية، تُقلّل `CRYSTALS-Kyber` احتياجات التخزين بنسبة تصل إلى 50% واستهلاك عرض الحزمة بنسبة تصل إلى 30%، مما يُحقّق وفورات معتبرة للمؤسسات المالية ذات الأحجام الضخمة من البيانات.
+- **Bilis at kahusayan**: sa mga serbisyong pinansiyal, kung saan nagaganap ang mga transaksiyon sa loob ng milisegundo, mapagpasya ang bilis ng operasyong kriptograpiko. Nangingibabaw ang `CRYSTALS-Kyber` sa bahaging ito, at naghahandog ito ng mabilis na operasyon sa paglikha ng susi, sa pagbabalot, at sa pagbubukas ng balot. Tinitiyak ng bilis na ito na hindi nagiging sagabal ang mga hakbang na pangseguridad sa kapaligiran ng mataas na dalas na kalakalan o sa panahon ng malalaking transaksiyon. Bukod dito, ang kahusayan ng `CRYSTALS-Kyber` ay nauuwi sa mas kaunting mapagkukunang pangkalkulasyon, kaya nakatutulong ito sa pagtitipid sa gastos at sa mas maunlad-sa-kapaligirang operasyon.
 
-- **المواءمة التنظيمية وإدارة المخاطر**: مع توصية عدّة هيئات تنظيمية، بما فيها المعهد الوطني للمعايير والتقنية (NIST) ووكالة الاتحاد الأوروبي للأمن السيبراني (ENISA)، بتبنّي حلول تشفير مقاومة للكم، سيكون المتبنّون المبكّرون لـ `CRYSTALS-Kyber` في موضع جيد للامتثال للمتطلبات التنظيمية المقبلة وتخفيف المخاطر القانونية المحتملة.
+- **Paghahanda sa hinaharap laban sa mga bantang quantum**: sa pagdating ng quantum computing, humaharap ang industriya sa kinabukasang maaaring maging lipas na ang tradisyunal na pamamaraang kriptograpiko. Sa pagyakap sa `CRYSTALS-Kyber`, hindi lamang tinitiyak ng mga institusyong pinansiyal ang kanilang kasalukuyan, kundi inihahanda rin nila ang kanilang sarili para sa mundong post-quantum. Ipinamamalas ng maagap na paraang ito sa seguridad na sibernetiko ang kanilang pangako sa pangmatagalang pagsanggalang ng datos, isang saligang pagsasaalang-alang para sa mga may kinalaman at sa mga kliyenteng nagbibigay-prayoridad sa seguridad ng datos.
 
-- **تعزيز ثقة العملاء وسُمعة المؤسسة**: تبنّت مؤسسات مالية رائدة كـ Barclays و Deutsche Bank `CRYSTALS-Kyber` لحماية بيانات عملائها وتأمين معاملاتها المالية الحرجة. ولم يحمِ هذا الالتزام بالأمن المتقدّم هذه المؤسسات من الهجمات السيبرانية المحتملة فحسب، بل عزّز كذلك سُمعتها كأمناء جديرين بالثقة على المعلومات الحسّاسة.
-
-![Divider][01].class=\"m-10 w-100\"
-
-## الخلاصة
-
-### تأمين المستقبل المالي بـ CRYSTALS-Kyber
-
-في وجه التهديدات السيبرانية المتطوّرة، تواجه صناعة المصرفية والخدمات المالية خياراً حاسماً. فالخوارزميات التقليدية للتشفير، التي اعتُبرت آمنة في يوم ما، باتت الآن هشّة أمام القوّة الناشئة للحوسبة الكمية. وتَبرز `CRYSTALS-Kyber` مَناراً للأمن، مُقدّمةً حلاً متيناً وفعّالاً وقابلاً للاستدامة لحماية الأصول الرقمية للقطاع المالي.
-
-بمزيجها الفريد من سمات المقاومة الكمية، والكفاءة التشغيلية، وأحجام المفاتيح الأصغر، تُمثّل `CRYSTALS-Kyber` نقطة تحوّل في الأمن المالي. وبتبنّي `CRYSTALS-Kyber`، لا تُؤمِّن المؤسسات عملياتها الحالية فحسب، بل تتهيّأ أيضاً لمستقبل تُعيد فيه الحوسبة الكمية تعريف الأمن السيبراني. ويُبرهن هذا النهج الاستباقي على التزامها بأعلى معايير الأمن، مُعزِّزاً ثقة العملاء وداعِماً صلابة الصناعة في وجه التهديدات المتطوّرة.
-
-في عالم متزايد الترابط والرقمنة، تَقف `CRYSTALS-Kyber` شاهداً على قوّة الحلول المبتكرة والتطلّعية. وتبنّيها من قِبل مؤسسات مالية رائدة كـ Barclays و Deutsche Bank هو تأييد قوي لقدراتها وإشارة واضحة للصناعة لاحتضان هذا الحل التشفيري المقاوم للكم.
+- **Pagsunod sa regulasyon at mapagkumpitensiyang bentahe**: habang sinisimulan ng mga tagapagregula sa buong mundo na kilalanin ang bantang quantum, malamang na iaatas nila ang pagyakap sa mga algoritmong lumalaban sa quantum. Ang maagang pagyakap sa `CRYSTALS-Kyber` ay naglalagay sa mga institusyong pinansiyal bilang nangunguna sa pagsunod at sa seguridad. Naghahandog din ito ng mapagkumpitensiyang bentahe, sapagkat nagbibigay ito ng katiwasayan sa mga kliyente at katuwang hinggil sa pangako ng institusyon sa abanteng kasanayang pangseguridad.
 
 ![Divider][01].class=\"m-10 w-100\"
 
-في الختام، أرجو أن يكون هذا الاستكشاف لـ `CRYSTALS-Kyber` قد أنار الأثر العميق للتشفير المقاوم للحوسبة الكمية في القطاع المالي. وإن رغبتم في التعمّق أكثر في هذه التقنية الثورية أو كانت لديكم أيّ استفسارات، فأدعوكم للتواصل معي على [LinkedIn ⧉][02] أو عبر [صفحة الاتصال][00].
+## Ang mga insentibo
 
-شكراً مرّة أخرى على وقتكم، وأتطلّع إلى سماع أخباركم.
+### Ang argumento para sa pagyakap sa CRYSTALS-Kyber
+
+Sa isang tanawing hindi lamang pangangailangan kundi mapagkumpitensiyang pagkakaiba rin ang seguridad na sibernetiko, nakatayo ang industriya ng banking at ng mga serbisyong pinansiyal sa isang mapagpasyang sangandaan. Ang pagyakap sa `CRYSTALS-Kyber` ay kumakatawan sa estratehikong hakbang na naaayon sa kasalukuyang pangangailangan sa seguridad at sa mga darating na pagbabagong teknikal nang sabay. Tinatalakay ng huling bahaging ito ang mga nakakukumbinsing insentibo sa pagsasanib ng `CRYSTALS-Kyber` sa balangkas na kriptograpiko ng mga serbisyong pinansiyal.
+
+- **Pananatili sa unahan ng mga usong pangseguridad**: kumakatawan ang pag-angat ng quantum computing sa saligang banta sa tradisyunal na algoritmo ng encryption, sapagkat ginagawa nitong mababasag ng mga darating na quantum na kompyuter ang mga ito. Sa pagyakap sa `CRYSTALS-Kyber`, kayang ipagsanggalang ng mga institusyong pinansiyal ang kanilang sensitibong datos at ang kanilang mahalagang imprastruktura laban sa mga umuusbong na bantang ito.
+
+- **Kahusayan sa operasyon at pagiging matipid**: ang siksik na laki ng susi at ang mabisang algoritmo ng `CRYSTALS-Kyber` ay nauuwi sa malaking pagtitipid sa gastos. Kumpara sa tradisyunal na algoritmo ng encryption, binabawasan ng `CRYSTALS-Kyber` ang pangangailangan sa imbakan nang hanggang 50% at ang pagkonsumo ng bandwidth nang hanggang 30%, kaya nagbubunga ito ng malaking pagtitipid para sa mga institusyong pinansiyal na may napakalaking dami ng datos.
+
+- **Pagkakaayon sa regulasyon at pangangasiwa ng panganib**: sa pagrerekomenda ng ilang katawang pangregulasyon, kabilang na ang National Institute of Standards and Technology (NIST) at ang European Union Agency for Cybersecurity (ENISA), ng pagyakap sa solusyong kriptograpikong lumalaban sa quantum, mapapabuti ang katayuan ng mga maagang gumamit ng `CRYSTALS-Kyber` upang sumunod sa mga darating na kahingiang pangregulasyon at mabawasan ang posibleng legal na panganib.
+
+- **Pagpapatibay ng tiwala ng kliyente at ng reputasyon ng institusyon**: niyakap ng mga nangungunang institusyong pinansiyal tulad ng Barclays at Deutsche Bank ang `CRYSTALS-Kyber` upang ipagsanggalang ang datos ng kanilang kliyente at tiyakin ang seguridad ng kanilang mahahalagang transaksiyong pinansiyal. Hindi lamang pinangalagaan ng pangakong ito sa abanteng seguridad ang mga institusyong ito laban sa posibleng atakeng sibernetiko, kundi pinatibay din nito ang kanilang reputasyon bilang mapagkakatiwalaang tagapangalaga ng sensitibong impormasyon.
+
+![Divider][01].class=\"m-10 w-100\"
+
+## Pangwakas
+
+### Pagtiyak ng seguridad ng kinabukasang pinansiyal gamit ang CRYSTALS-Kyber
+
+Sa harap ng umuunlad na bantang sibernetiko, humaharap ang industriya ng banking at ng mga serbisyong pinansiyal sa isang mapagpasyang pagpipilian. Ang tradisyunal na algoritmo ng encryption, na dating itinuring na ligtas, ay marupok na ngayon sa harap ng umuusbong na lakas ng quantum computing. Namumukod ang `CRYSTALS-Kyber` bilang parola ng seguridad, at naghahandog ito ng matatag, mabisa, at napapanatiling solusyon sa pagsanggalang ng mga digital na ari-arian ng sektor na pinansiyal.
+
+Sa natatanging halo nito ng katangiang lumalaban sa quantum, ng kahusayan sa operasyon, at ng mas maliit na laki ng susi, kumakatawan ang `CRYSTALS-Kyber` sa isang punto ng pagbabago sa seguridad na pinansiyal. Sa pagyakap sa `CRYSTALS-Kyber`, hindi lamang tinitiyak ng mga institusyon ang seguridad ng kanilang kasalukuyang operasyon, kundi inihahanda rin nila ang sarili sa kinabukasang muling bibigyang-kahulugan ng quantum computing ang seguridad na sibernetiko. Ipinamamalas ng maagap na paraang ito ang kanilang pangako sa pinakamataas na pamantayan ng seguridad, na nagpapatibay sa tiwala ng kliyente at sumusuporta sa katatagan ng industriya laban sa mga umuunlad na banta.
+
+Sa isang mundong lalong nagkakaugnay at nagiging digital, nakatayo ang `CRYSTALS-Kyber` bilang patotoo sa lakas ng mapanlikha at malayong-tanaw na solusyon. Ang pagyakap dito ng mga nangungunang institusyong pinansiyal tulad ng Barclays at Deutsche Bank ay malakas na pagsang-ayon sa kakayahan nito at malinaw na hudyat sa industriya na yakapin ang solusyong kriptograpikong lumalaban sa quantum na ito.
+
+![Divider][01].class=\"m-10 w-100\"
+
+Sa pagtatapos, umaasa akong naliwanagan ng pagtuklas na ito sa `CRYSTALS-Kyber` ang malalim na epekto ng kriptograpiyang lumalaban sa quantum computing sa sektor na pinansiyal. At kung nais ninyong lumalim pa sa mapanimulang teknolohiyang ito o kung mayroon kayong anumang katanungan, inaanyayahan ko kayong makipag-ugnayan sa akin sa [LinkedIn ⧉][02] o sa pamamagitan ng [pahina ng pakikipag-ugnayan][00].
+
+Maraming salamat muli sa inyong panahon, at inaasahan kong makarinig mula sa inyo.
 
 [00]: /contact/index.html "Contact"
 [01]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"

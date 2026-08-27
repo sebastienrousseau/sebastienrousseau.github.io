@@ -118,8 +118,7 @@ _ICON_SVG = {
     ),
     "shield": '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
     "lock": (
-        '<rect x="3" y="11" width="18" height="11" rx="2"/>'
-        '<path d="M7 11V7a5 5 0 0 1 10 0v4"/>'
+        '<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>'
     ),
     "eye": '<path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/>',
 }
@@ -153,27 +152,22 @@ def _icon(section_id: str, i: int) -> str:
 # extra resolves cleanly since camt053 0.0.14 and acmt001 0.0.3.
 UVX_ARGS = '"--from", "iso20022-mcp[all]", "iso20022-mcp"'
 UVX_CMD = 'uvx --from "iso20022-mcp[all]" iso20022-mcp'
-_JSON_BODY = (
-    '    "iso20022": {\n'
-    '      "command": "uvx",\n'
-    f"      \"args\": [{UVX_ARGS}]\n"
-    "    }"
-)
+_JSON_BODY = f'    "iso20022": {{\n      "command": "uvx",\n      "args": [{UVX_ARGS}]\n    }}'
 MCPSERVERS_JSON = '{\n  "mcpServers": {\n' + _JSON_BODY + "\n  }\n}"
 VSCODE_JSON = (
     '{\n  "servers": {\n'
     '    "iso20022": {\n'
     '      "type": "stdio",\n'
     '      "command": "uvx",\n'
-    f"      \"args\": [{UVX_ARGS}]\n"
+    f'      "args": [{UVX_ARGS}]\n'
     "    }\n  }\n}"
 )
 AGENTS_SDK_PY = (
     "async with MCPServerStdio(\n"
     '    name="iso20022",\n'
-    '    params={\n'
+    "    params={\n"
     '        "command": "uvx",\n'
-    f"        \"args\": [{UVX_ARGS}],\n"
+    f'        "args": [{UVX_ARGS}],\n'
     "    },\n"
     ") as server:\n"
     "    ..."
@@ -725,8 +719,7 @@ C: dict = {
                 "name": "OpenAI Codex CLI",
                 "slug": "codex",
                 "where": (
-                    "~/.codex/config.toml, or one command: "
-                    "codex mcp add iso20022 -- uvx ..."
+                    "~/.codex/config.toml, or one command: codex mcp add iso20022 -- uvx ..."
                 ),
                 "code": CODEX_TOML,
             },
@@ -785,10 +778,7 @@ C: dict = {
             {
                 "id": "pip",
                 "label": "pip",
-                "code": (
-                    'pip install "iso20022-mcp[all]"\n'
-                    "iso20022-mcp"
-                ),
+                "code": ('pip install "iso20022-mcp[all]"\niso20022-mcp'),
                 "note": (
                     "Installed with pip, the client config is just the "
                     "iso20022-mcp command, no args."
@@ -817,7 +807,7 @@ C: dict = {
                 "label": "VS Code",
                 "code": VSCODE_JSON,
                 "note": (
-                    '.vscode/mcp.json, for GitHub Copilot. The top-level '
+                    ".vscode/mcp.json, for GitHub Copilot. The top-level "
                     'key is "servers", not "mcpServers".'
                 ),
             },
@@ -869,7 +859,7 @@ def _hero(d: dict) -> str:
         '<header class="spk-hero" id="spk-top">'
         '<div class="spk-hero-grid"><div class="mcp-hero-copy">'
         f'<span class="spk-eyebrow">{_esc(h["eyebrow"])}</span>'
-        f'<h1>{_esc(h["headline"])}</h1>'
+        f"<h1>{_esc(h['headline'])}</h1>"
         f'<p class="spk-lede">{_rich(h["lede"])}</p>'
         '<div class="spk-cta-row">'
         '<a href="#mcp-start" class="spk-btn spk-btn-primary">Get started '
@@ -912,8 +902,7 @@ _TERM_LINES: list[tuple[str, str, str, str]] = [
         "ask",
         "mcp-tl-typed mcp-tl-t4",
         "> ",
-        "Generate a pain.001 credit transfer paying Acme GmbH EUR 4,200, "
-        "executing Friday.",
+        "Generate a pain.001 credit transfer paying Acme GmbH EUR 4,200, executing Friday.",
     ),
     ("out", "mcp-tl-fade mcp-tl-f5", "", "generate · records validated against the official XSD"),
     ("ok", "mcp-tl-fade mcp-tl-f6", "", "✓ schema-valid pain.001.001.03 returned"),
@@ -928,14 +917,8 @@ def _hero_terminal() -> str:
     LCP candidate stays the h1 headline instead of a hero image)."""
     lines = []
     for kind, timing, glyph, text in _TERM_LINES:
-        ps = (
-            f'<span class="mcp-tl-ps" aria-hidden="true">{_esc(glyph)}</span>'
-            if glyph
-            else ""
-        )
-        lines.append(
-            f'<span class="mcp-tl mcp-tl-{kind} {timing}">{ps}{_esc(text)}</span>'
-        )
+        ps = f'<span class="mcp-tl-ps" aria-hidden="true">{_esc(glyph)}</span>' if glyph else ""
+        lines.append(f'<span class="mcp-tl mcp-tl-{kind} {timing}">{ps}{_esc(text)}</span>')
     caret = '<span class="mcp-tl mcp-tl-caret" aria-hidden="true"></span>'
     return (
         '<figure class="mcp-term">'
@@ -949,9 +932,7 @@ def _hero_terminal() -> str:
     )
 
 
-def _cards(
-    section: dict, section_id: str, band: bool = False, bullets: bool = False
-) -> str:
+def _cards(section: dict, section_id: str, band: bool = False, bullets: bool = False) -> str:
     items = []
     for i, it in enumerate(section["cards"]):
         primary = "spk-btn-primary" if i == 0 else "spk-btn-ghost"
@@ -963,14 +944,14 @@ def _cards(
             cta = (
                 f'<a href="{_esc(it["cta_href"])}" class="spk-btn {primary}" '
                 f'aria-label="{_esc(it["cta_label"])}: {_esc(it["title"].rstrip("."))}">'
-                f'{_esc(it["cta_label"])}</a>'
+                f"{_esc(it['cta_label'])}</a>"
             )
             extra = f"<ul>{lis}</ul>{cta}"
         items.append(
             '<div class="spk-path">'
             + _icon(section_id, i)
             + f'<span class="spk-eyebrow">{_esc(it["eyebrow"])}</span>'
-            f'<h3>{_esc(it["title"])}</h3><p>{_rich(it["body"])}</p>{extra}</div>'
+            f"<h3>{_esc(it['title'])}</h3><p>{_rich(it['body'])}</p>{extra}</div>"
         )
     cls = "spk-band" if band else ""
     return (
@@ -992,9 +973,7 @@ def _start() -> str:
             "STEP 2",
             "Ask in plain terms.",
             "Try " + _mono('search "cancel a payment"') + " and it points you "
-            "at the right message, then "
-            + _mono("generate")
-            + " returns XSD-valid XML.",
+            "at the right message, then " + _mono("generate") + " returns XSD-valid XML.",
         ),
         (
             "STEP 3",
@@ -1042,14 +1021,12 @@ def _flow(d: dict) -> str:
     steps = []
     for s in d["steps"]:
         gate = " mcp-step-gate" if s["gate"] else ""
-        badge = (
-            '<span class="mcp-gate-badge">Approval wall</span>' if s["gate"] else ""
-        )
+        badge = '<span class="mcp-gate-badge">Approval wall</span>' if s["gate"] else ""
         steps.append(
             f'<li class="mcp-step{gate}">'
             f'<span class="mcp-step-num" aria-hidden="true">{_esc(s["num"])}</span>'
             f"{badge}"
-            f'<h3>{_esc(s["title"])}</h3><p>{_rich(s["body"])}</p></li>'
+            f"<h3>{_esc(s['title'])}</h3><p>{_rich(s['body'])}</p></li>"
         )
     return (
         '<section id="mcp-flow"><div class="spk-wrap">'
@@ -1066,7 +1043,7 @@ def _security(d: dict) -> str:
             '<div class="mcp-sec-cell">'
             + _icon("mcp-security", i)
             + f'<span class="spk-eyebrow">{_esc(it["eyebrow"])}</span>'
-            f'<h3>{_esc(it["title"])}</h3><p>{_rich(it["body"])}</p></div>'
+            f"<h3>{_esc(it['title'])}</h3><p>{_rich(it['body'])}</p></div>"
         )
     return (
         '<section class="spk-band" id="mcp-security"><div class="spk-wrap">'
@@ -1105,8 +1082,7 @@ def _read_as() -> str:
 
 def _stat_cells(cells: list[tuple[str, str]]) -> str:
     return "".join(
-        f'<div><p class="spk-num">{_esc(num)}</p>'
-        f'<p class="spk-lbl">{_esc(lbl)}</p></div>'
+        f'<div><p class="spk-num">{_esc(num)}</p><p class="spk-lbl">{_esc(lbl)}</p></div>'
         for num, lbl in cells
     )
 
@@ -1147,7 +1123,9 @@ def _regulators(d: dict) -> str:
         (
             "CITED, NOT ASSERTED",
             "Rulebook clauses with sources.",
-            _mono("cite_rulebook") + " and " + _mono("list_rulebook_clauses")
+            _mono("cite_rulebook")
+            + " and "
+            + _mono("list_rulebook_clauses")
             + " return curated SEPA, CBPR+ and HVPS+ clauses, versioned, "
             "each with its canonical source URL, so a compliance claim can "
             "be traced to the official document.",
@@ -1155,7 +1133,8 @@ def _regulators(d: dict) -> str:
         (
             "THE 2026 CUTOVER",
             "November 2026, encoded.",
-            _mono("get_cbpr_cutover_date") + " returns 2026-11-16, and "
+            _mono("get_cbpr_cutover_date")
+            + " returns 2026-11-16, and "
             + _mono("check_cbpr_readiness")
             + " audits a camt.053 statement against the CBPR+ acceptance "
             "rules that take effect at the 14-16 November 2026 cutover, "
@@ -1164,8 +1143,12 @@ def _regulators(d: dict) -> str:
         (
             "STRUCTURED ADDRESSES",
             "The address cliff, tool by tool.",
-            _mono("classify_address") + ", " + _mono("validate_address")
-            + ", " + _mono("repair_address") + " and "
+            _mono("classify_address")
+            + ", "
+            + _mono("validate_address")
+            + ", "
+            + _mono("repair_address")
+            + " and "
             + _mono("validate_addresses")
             + " classify, police and repair party addresses against the "
             "14 November 2026 rule that rejects unstructured-only addresses.",
@@ -1209,7 +1192,7 @@ def _free(d: dict) -> str:
     cells = "".join(
         '<div class="mcp-sec-cell">'
         f'<span class="spk-eyebrow">{_esc(it["eyebrow"])}</span>'
-        f'<h3>{_esc(it["title"])}</h3><p>{_rich(it["body"])}</p></div>'
+        f"<h3>{_esc(it['title'])}</h3><p>{_rich(it['body'])}</p></div>"
         for it in d["cards"]
     )
     return (
@@ -1267,14 +1250,11 @@ def _prompts(d: dict, data: dict | None) -> str:
     blocks = []
     for p in data["prompts"]:
         pid = p["id"]
-        meta = (
-            f'{p["server"]} · tool: {p["tool"]} · stdio JSON-RPC · '
-            f"captured {captured}"
-        )
+        meta = f"{p['server']} · tool: {p['tool']} · stdio JSON-RPC · captured {captured}"
         blocks.append(
             '<article class="mcp-prompt">'
             f'<span class="spk-eyebrow">{_esc(p["eyebrow"])}</span>'
-            f'<h3>{_esc(p["title"])}</h3>'
+            f"<h3>{_esc(p['title'])}</h3>"
             f'<p class="mcp-prompt-meta">{_esc(meta)}</p>'
             '<p class="mcp-prompt-label">The prompt</p>'
             + _code_block(p["prompt"], f"mcp-prompt-{pid}", copy=True)
@@ -1298,9 +1278,12 @@ def _sandbox(d: dict) -> str:
     captured in _data/mcp/reconcile-mcp.tools.json and points at the docs
     reconciliation chapter."""
     body = (
-        _mono("reconcile-mcp") + " ships deterministic sandbox fixtures: "
-        + _mono("list_sandbox_scenarios") + " shows the scenarios, "
-        + _mono("load_sandbox_scenario") + " opens one for inspection and "
+        _mono("reconcile-mcp")
+        + " ships deterministic sandbox fixtures: "
+        + _mono("list_sandbox_scenarios")
+        + " shows the scenarios, "
+        + _mono("load_sandbox_scenario")
+        + " opens one for inspection and "
         + _mono("run_sandbox_scenario")
         + " reconciles it in one call. Watch a full, explainable "
         "reconciliation, exact matches, short payments, splits and "
@@ -1375,22 +1358,22 @@ def _clients(d: dict) -> str:
     shape verbatim; remote-first platforms get one honest sentence."""
     cards = [
         '<div class="mcp-client">'
-        f'<h3>{_esc(it["name"])}</h3>'
+        f"<h3>{_esc(it['name'])}</h3>"
         f'<p class="mcp-client-where">{_esc(it["where"])}</p>'
-        + _code_block(it["code"], f'mcp-code-client-{it["slug"]}', copy=True)
+        + _code_block(it["code"], f"mcp-code-client-{it['slug']}", copy=True)
         + "</div>"
         for it in d["stdio"]
     ]
     remote = []
     for it in d["remote"]:
         code = (
-            _code_block(it["code"], f'mcp-code-client-{it["slug"]}', copy=True)
+            _code_block(it["code"], f"mcp-code-client-{it['slug']}", copy=True)
             if it.get("code")
             else ""
         )
         remote.append(
             '<div class="mcp-client mcp-client-remote">'
-            f'<h3>{_esc(it["name"])}</h3><p>{_rich(it["body"])}</p>{code}</div>'
+            f"<h3>{_esc(it['name'])}</h3><p>{_rich(it['body'])}</p>{code}</div>"
         )
     return (
         '<section id="mcp-clients"><div class="spk-wrap">'
@@ -1413,16 +1396,15 @@ def _install_tabs(d: dict) -> str:
     tabs = d["tabs"]
     radios, labels, panels = [], [], []
     for i, t in enumerate(tabs):
-        tid = f'mcp-tab-{t["id"]}'
+        tid = f"mcp-tab-{t['id']}"
         checked = " checked" if i == 0 else ""
         radios.append(
-            f'<input type="radio" name="mcp-install-tab" id="{tid}" '
-            f'class="mcp-tab-in"{checked}>'
+            f'<input type="radio" name="mcp-install-tab" id="{tid}" class="mcp-tab-in"{checked}>'
         )
         labels.append(f'<label for="{tid}">{_esc(t["label"])}</label>')
         panels.append(
             f'<div class="mcp-tab-panel" id="mcp-panel-{t["id"]}">'
-            + _code_block(t["code"], f'mcp-code-{t["id"]}', copy=True)
+            + _code_block(t["code"], f"mcp-code-{t['id']}", copy=True)
             + f'<p class="mcp-tab-note">{_rich(t["note"])}</p></div>'
         )
     return (
@@ -1478,7 +1460,7 @@ def _schemas(d: dict) -> str:
         + _esc(t.get("description", ""))
         + "</span></summary>"
         '<div class="qa-a mcp-schema-body">'
-        f'<p>{_esc(t.get("description", ""))}</p>'
+        f"<p>{_esc(t.get('description', ''))}</p>"
         + _schema_props(t.get("inputSchema") or {})
         + "</div></details>"
         for t in tools
@@ -1565,9 +1547,7 @@ def _render_body(d: dict) -> str:
         _aud(_schemas(d["schemas"]), "mcp-schemas"),
         _aud(_cards(d["safety"], "mcp-safety", bullets=False), "mcp-safety"),
     ]
-    return (
-        '<div class="speaking-page iso20022-mcp-page">' + "".join(sections) + "</div>"
-    )
+    return '<div class="speaking-page iso20022-mcp-page">' + "".join(sections) + "</div>"
 
 
 def _nav(shell: str) -> str:
@@ -1663,9 +1643,7 @@ def _lang_switcher_home(html: str) -> str:
 
     out, n = _SWITCHER_ITEM_RE.subn(repl, html)
     if n == 0:
-        raise SystemExit(
-            "build_iso20022_mcp: no .ap-lang-item switcher links found in shell"
-        )
+        raise SystemExit("build_iso20022_mcp: no .ap-lang-item switcher links found in shell")
     return out
 
 
@@ -1736,9 +1714,7 @@ def _jsonld_script(payload: dict) -> str:
     escaped as ``<\\/`` so no value can close the script element early."""
     return (
         '<script type="application/ld+json">\n'
-        + json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace(
-            "</", "<\\/"
-        )
+        + json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
         + "\n    </script>"
     )
 
@@ -1886,9 +1862,7 @@ def _fix_metas(html: str) -> str:
     # Page JSON-LD: the articles CollectionPage graph → hub WebPage graph.
     html, n = _COLLECTION_LD_RE.subn(lambda m: _hub_jsonld(), html, count=1)
     if n == 0:
-        raise SystemExit(
-            "build_iso20022_mcp: _fix_metas anchor missing: CollectionPage JSON-LD"
-        )
+        raise SystemExit("build_iso20022_mcp: _fix_metas anchor missing: CollectionPage JSON-LD")
 
     # Never ship duplicate viewport / theme-color tags. Viewport dedupes by
     # name (the unescaped shell can carry a second, differing copy);

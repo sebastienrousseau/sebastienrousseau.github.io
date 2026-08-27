@@ -44,21 +44,14 @@ _EXCERPT_FM_RE = re.compile(r'^excerpt:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 _BANNER_FM_RE = re.compile(r'^banner:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 
 # Default image when frontmatter has no banner — site brand image.
-_DEFAULT_THUMBNAIL = (
-    "https://cloudcdn.pro/clients/sebastienrousseau/v1/og/sebastienrousseau.png"
-)
+_DEFAULT_THUMBNAIL = "https://cloudcdn.pro/clients/sebastienrousseau/v1/og/sebastienrousseau.png"
 _THUMBNAIL_W = 1200
 _THUMBNAIL_H = 630
 _EMBED_HEIGHT = 240
 
 
 def _esc_html(s: str) -> str:
-    return (
-        s.replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
-    )
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
 
 
 def _post_meta(path: Path) -> tuple[str, str, str, str] | None:
@@ -88,7 +81,7 @@ def _embed_html(title: str, slug: str, excerpt: str) -> str:
         f'<blockquote class="oembed-card">'
         f'<p><a href="{url}">{safe_title}</a></p>'
         + (f"<p>{safe_excerpt}</p>" if safe_excerpt else "")
-        + f'<p><cite>{_AUTHOR_NAME} — sebastienrousseau.com</cite></p>'
+        + f"<p><cite>{_AUTHOR_NAME} — sebastienrousseau.com</cite></p>"
         f"</blockquote>"
     )
     return snippet

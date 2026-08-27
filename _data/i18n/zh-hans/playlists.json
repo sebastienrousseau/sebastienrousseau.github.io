@@ -1,0 +1,261 @@
+{
+  "_comment": "ZH-HANS copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "播放列表",
+    "jump": "听最新的播放列表",
+    "platformsLabel": "整套合集在 Apple Music 上也有",
+    "navLabel": "跳到某个曲风",
+    "play": "在 Spotify 上播放",
+    "follow": "在 Spotify 上关注",
+    "apple": "在 Apple Music 上聆听",
+    "countOne": "个播放列表",
+    "countOther": "个播放列表",
+    "coverAlt": "播放列表《{title}》的封面",
+    "openAria": "在 Spotify 上打开《{title}》",
+    "frameTitle": "Spotify 上的播放列表《{title}》"
+  },
+  "intro": [
+    "三十九个播放列表，1,763 首曲目，为那些需要配乐的时段而做——深度工作、长时间阅读，以及深夜的重写。",
+    "工作需要耐心时，是新灵魂乐和新爵士。需要推力时，是 boom bap 和爵士说唱。需要抬升时，是法式浩室、深浩室和迪斯科浩室。埋头苦干的那一段交给 lo-fi，而西非节奏贯穿始终。",
+    "每个播放列表都可以在 Spotify 上免费收听，整套合集则在 Apple Music 上。"
+  ],
+  "featured": {
+    "kicker": "最新播放列表",
+    "date": "2026 年 8 月",
+    "genres": "独立流行 · 法式浩室",
+    "desc": "洒满阳光的独立流行滑入法式浩室——Tame Impala 与 almost monday 让位给 Justice、L'Impératrice 以及 HUGEL 的非洲浩室。"
+  },
+  "lanes": {
+    "electronic": {
+      "title": "电子",
+      "sub": "浩室、迪斯科与法式浩室"
+    },
+    "soul-jazz": {
+      "title": "灵魂乐 &amp; 爵士",
+      "sub": "新灵魂乐、新爵士与慢速节奏"
+    },
+    "hip-hop": {
+      "title": "嘻哈",
+      "sub": "Boom bap、爵士说唱与黄金年代的律动"
+    },
+    "morning-mood": {
+      "title": "清晨 &amp; 心情",
+      "sub": "慢拍、lo-fi 与唤醒的能量"
+    },
+    "global": {
+      "title": "环球",
+      "sub": "来自世界其余角落的节奏"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "迪斯科浩室 · 车库",
+      "desc": "九十年代末的迪斯科浩室与车库，至今仍能填满舞池——Kings Of Tomorrow、David Morales、Moloko、Armand Van Helden 和 Boris Dlugosch。"
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "独立流行 · 法式浩室",
+      "desc": "洒满阳光的独立流行滑入法式浩室——Tame Impala 与 almost monday 让位给 Justice、L'Impératrice 以及 HUGEL 的非洲浩室。"
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "法式浩室 · 电子",
+      "desc": "开着远光灯的法式浩室——Daft Punk、Justice、Kavinsky、L'Impératrice 和 Angèle 交换霓虹合成器与马达式贝斯线。"
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "独立舞曲 · 合成器流行",
+      "desc": "黄金时刻的合成器流行与独立舞曲——Blu DeTiger、Merty Shango、Citrus Sun 和 Enne 把那层微光带进夜晚。"
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "新迪斯科 · 法式浩室",
+      "desc": "开着滤波器的新迪斯科与法式浩室——Fred Falke、Breakbot、Madeon、Lemaitre 和 Yelle。"
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "前卫浩室 · 电子",
+      "desc": "为身体而做的前卫浩室与电子——Madeon、Paul Woolford、Martin Solveig、Secondcity 和 The Knocks。"
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "新迪斯科 · 滤波浩室",
+      "desc": "为身体而做的新迪斯科与滤波浩室——Lenno、Oliver、Tollef 和 Yelle，落在切碎的吉他和厚实的合成贝斯之上。"
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "深浩室 · 旋律浩室",
+      "desc": "一百首懂得不挡路的深浩室与旋律浩室——Chris Malinchak、Sultan + Shepard、Lenno 和 Nora Van Elken。"
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "未来浩室 · 电子流行",
+      "desc": "明亮的未来浩室与电子流行——Lenno、La Felix、The Knocks、Kraak & Smaak 和 Chris Malinchak，贯穿一百首曲目。"
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "爵士味嘻哈 · Boom bap",
+      "desc": "为缓慢夜晚而做的、采样爵士的 boom bap——Blu & Exile、Large Professor、3582 和 Scienze 交换温暖的循环与不赶时间的段落。"
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "爵士嘻哈 · Boom bap",
+      "desc": "Phoniks 阵营的黄金年代爵士嘻哈——Awon & Phoniks、Anti Lilly、Dephlow 和 Tiff the Gift，落在蒙尘的铜管与低音提琴之上。"
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "另类 R&B · 新灵魂乐",
+      "desc": "另类 R&B 与深夜的新灵魂乐——Brent Faiyaz、Elujay、J.Robb 和 Lou Phelps，落在朦胧的鼓与不赶时间的贝斯线之上。"
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "迪斯科 · 布基",
+      "desc": "七十与八十年代的舞池必备——CHIC、Luther Vandross、The Jacksons、Change 和 Oliver Cheatham。干活的是弦乐、掌声和贝斯线。"
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "酸爵士 · 新爵士",
+      "desc": "背后有现场乐队的酸爵士与新爵士——The Brand New Heavies、Incognito、Robert Glasper、Carleen Anderson 和 Count Basic。"
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "福音 · 灵魂乐",
+      "desc": "能把整个房间托起来的福音根源灵魂乐——Kirk Franklin、Aretha Franklin、Yolanda Adams、Jennifer Hudson、Mica Paris 和 Avery*Sunshine。"
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "碎拍 · 新爵士",
+      "desc": "为缓慢午后而做的碎拍与英国新爵士——Emma-Jean Thackray、Blue Lab Beats、Galliano 和 The Brand New Heavies。"
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "英式灵魂乐 · 碎拍",
+      "desc": "最温暖的一面的英式灵魂乐——Incognito、Shaun Escoffery、Cherri V 和 Tortured Soul，房间里还有 Stevie Wonder。"
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "现代爵士 · R&B",
+      "desc": "在对话中的现代爵士与 R&B——Robert Glasper、August Greene、Common、Karriem Riggins 和 Brandy。"
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "灵魂乐 · 爵士放克",
+      "desc": "背后有真乐手的情歌——4hero 与 Marc Mac、Incognito、Imaani、Natalie Duncan 和 Adi Oasis。"
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "新灵魂乐 · 爵士",
+      "desc": "为温暖夜晚准备的五十五首新灵魂乐与爵士——India.Arie、Robert Glasper、Lucy Pearl、Anthony David 和 Ronny Jordan。"
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "新灵魂乐 · 现代 R&B",
+      "desc": "七十三首新灵魂乐与现代 R&B——Alex Isley、Yebba、Ego Ella May、Robert Glasper 和 Blue Lab Beats。"
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "爵士放克 · 新灵魂乐",
+      "desc": "一百首把聚光灯打在乐手身上的曲目——Erykah Badu、Jill Scott、Omar、Esperanza Spalding 和 Stevie Wonder。"
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "说唱 · 西岸",
+      "desc": "横跨四个年代的一百首说唱——2Pac 与 Dr. Dre、Snoop Dogg 与 Tha Dogg Pound、Ghostface Killah、Nicki Minaj 和 DJ Muggs。"
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "说唱 · 灵魂乐 · 法式浩室",
+      "desc": "不设曲风规则的一百首唱片箱挖掘——Dr. Dre 与 Eminem 挨着 MC Solaar 与 113，Charles Aznavour 挨着 DJ Mehdi 与 Thomas Bangalter。"
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "硬核说唱 · Boom bap",
+      "desc": "把音量开大的九十年代硬核说唱——M.O.P.、Busta Rhymes、Big L、Westside Connection、Dr. Dre 和 Snoop Dogg。"
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "Boom bap · 爵士说唱",
+      "desc": "八十六首九十年代的 boom bap 与爵士说唱——Gang Starr、A Tribe Called Quest、The Roots、The Pharcyde 和 Guru 的 Jazzmatazz。"
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "地下 · Boom bap",
+      "desc": "地下 boom bap 与器乐——Apollo Brown、People Under The Stairs、J-Live、One Be Lo、Marcus D 和 Shing02。"
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "独立嘻哈 · 流行说唱",
+      "desc": "有推力的独立嘻哈与流行说唱——Quinn XCII、Kid Quill、EMAN8、gianni & kyle 和 YONAS。"
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "Chillwave · 慢拍",
+      "desc": "为长途驾驶或缓慢清晨准备的失重慢拍——Zero 7、Les Imprimés 和 Ciao Ciao Marigold，落在柔焦的鼓上。"
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "Trip-hop · 爵士嘻哈",
+      "desc": "来自 Proleter、Poldoore、Souleance 和 The Geek x Vrv 的采样爵士 trip-hop。电影感，不赶时间，为写作而做。"
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "慢拍 · 新爵士",
+      "desc": "可以让思绪靠上去的慢拍与新爵士——Zero 7、The Cinematic Orchestra、Souleance、Mozez 和 Ida Nielsen。"
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "Trip-hop · 慢拍",
+      "desc": "带灵魂内核的 trip-hop 与慢拍——Massive Attack、Thievery Corporation、Air、Zero 7、The Cinematic Orchestra，以及被重新改编的 Nina Simone。"
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "Lo-fi · 学习节拍",
+      "desc": "五十二首用于学习与深度工作的 lo-fi 嘻哈节拍——Idealism、j'san、Joey Pecoraro、Sugi.wa 和 aimless。没有会来抢戏的人声。"
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "法式浩室 · 新迪斯科",
+      "desc": "保持平稳的放克法式浩室与新迪斯科——Breakbot、Modjo、Fred Falke、Kartell 和 Chris Malinchak。"
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "新爵士 · 慢拍",
+      "desc": "让人松下来的舒缓新爵士与慢拍——Zero 7、4hero、The Cinematic Orchestra、Lemon Jelly 和 Kid Loco。"
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "灵魂乐 · 爵士放克",
+      "desc": "开启一天的灵魂乐与爵士放克——Adi Oasis、Durand Jones、Azymuth、Kraak & Smaak 和 Stevie Wonder。"
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "提神流行",
+      "desc": "六十四首明亮快节奏、适合活动身体的流行曲——Riley Clemmons、Lauren Daigle、Sarah Reeves、Elle Limebear 和 Madison。"
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "爵士说唱 · 另类 R&B",
+      "desc": "有话要说的爵士说唱与另类 R&B——Noname、Anderson .Paak、KAYTRANADA、Q-Tip 和 A Tribe Called Quest。"
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "非洲节拍 · 瓦苏鲁",
+      "desc": "西非的声音站在最前面——Oumou Sangaré、Fatoumata Diawara、Dobet Gnahoré、Sona Jobarteh 和 Kareyce Fotso，从瓦苏鲁到科拉琴。"
+    }
+  },
+  "faq": {
+    "heading": "有疑问？这里是答案。",
+    "sub": "怎么听、用什么听，以及这些音乐从哪里来。",
+    "items": [
+      {
+        "q": "收听需要 Spotify 订阅吗？",
+        "a": "不需要。用免费的 Spotify 账号就能在上方的嵌入播放器里播放每一个列表，曲目之间会有广告。Premium 账号可以去掉广告并支持离线收听，但这里没有任何内容被放在付费墙后面。"
+      },
+      {
+        "q": "可以改用 Apple Music 收听吗？",
+        "a": "可以——请关注 music.apple.com/profile/bxhero 上的资料页。本页的列表是 Spotify 版本，因为 Apple Music 并不公开单个播放列表的链接。在那个平台上，关注资料页是可靠的做法。"
+      },
+      {
+        "q": "这些能在哪些设备上用？",
+        "a": "只要 Spotify 能跑的地方都行：iPhone、iPad、Android、Mac、Windows、Apple Watch、Apple TV、CarPlay、Sonos、Google Nest、PlayStation、Xbox，以及任何浏览器。本页的播放器在手机和电脑上都能用，不需要安装应用。"
+      },
+      {
+        "q": "做深度工作该从哪个列表开始？",
+        "a": "想要不被打断的专注，就选清晨 &amp; 心情——慢拍、新爵士和 lo-fi，人声很少或没有，不会跟阅读抢注意力。需要推力而非平静的工作，则适合电子。"
+      },
+      {
+        "q": "列表多久更新一次？",
+        "a": "定期更新，而且是就地更新。在 Spotify 上关注某个列表，或在两个服务中任选其一关注资料页，新曲目就会自己送到，不必再回到这里。"
+      },
+      {
+        "q": "我可以分享或嵌入这些列表吗？",
+        "a": "可以。每张卡片都会链接到 Spotify 上的列表，分享菜单里能拿到链接和嵌入代码。这些都是公开列表，可以自由分享。"
+      },
+      {
+        "q": "这些列表是谁做的？",
+        "a": "Sebastien Rousseau——在 Spotify 和 Apple Music 上用 BXHERO 这个名字。这些是他写支付与工程文章时真正在放的列表，不是算法推荐流。"
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "在任何设备上收听",
+    "body": "每个列表都能在上方的浏览器里播放，也能在你本来就在用的设备上通过 Spotify 应用播放。在两个服务中任选其一关注资料页，新的列表就会自己到来。",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "网页浏览器"
+    ]
+  }
+}

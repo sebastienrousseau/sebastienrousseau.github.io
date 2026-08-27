@@ -111,7 +111,7 @@
     ],
     [
       "(\\d+) article\\(s\\)</p>",
-      "\\1 статья(-и)</p>"
+      "Статей: \\1</p>"
     ],
     [
       "INDUSTRY WHITE PAPER · EPAA",
@@ -694,118 +694,6 @@
       "<p class=\"newsroom-kicker\">ИЗБРАННОЕ</p>"
     ],
     [
-      ">Latest Music</h2>",
-      ">Последняя музыка</h2>"
-    ],
-    [
-      ">Latest playlist</h2>",
-      ">Последний плейлист</h2>"
-    ],
-    [
-      ">Soulful, jazz and downtempo</h2>",
-      ">Соул, джаз и даунтемпо</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">MORNING & MOOD</p>",
-      "<p class=\"newsroom-kicker\">УТРО И НАСТРОЕНИЕ</p>"
-    ],
-    [
-      ">Morning, mood and chill</h2>",
-      ">Утро, настроение и чилл</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">ELECTRONIC</p>",
-      "<p class=\"newsroom-kicker\">ЭЛЕКТРОНИКА</p>"
-    ],
-    [
-      ">Electronic, house and techno</h2>",
-      ">Электроника, хаус и техно</h2>"
-    ],
-    [
-      ">Pop, rock and alternative</h2>",
-      ">Поп, рок и альтернатива</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">FOCUS</p>",
-      "<p class=\"newsroom-kicker\">КОНЦЕНТРАЦИЯ</p>"
-    ],
-    [
-      ">Focus and productivity</h2>",
-      ">Концентрация и продуктивность</h2>"
-    ],
-    [
-      ">Smooth Jazz, Neo Soul, and laid-back grooves[^<]+",
-      ">Smooth Jazz, Neo Soul и расслабленные грувы. Плейлисты для тех моментов, когда день просит замедлиться."
-    ],
-    [
-      ">This page has a comprehensive list[^<]+",
-      ">На этой странице представлена подборка наиболее популярных и признанных критиками плейлистов Spotify, охватывающих широкий спектр жанров. Любите ли Вы джаз, соул, хип-хоп или электронную музыку — здесь найдётся плейлист на Ваш вкус."
-    ],
-    [
-      ">Step into the harmonious realm of TETRA\\.[^<]+",
-      ">Войдите в гармоничный мир TETRA. Эйфорический плейлист, призванный возвысить дух и наполнить душу радостью."
-    ],
-    [
-      ">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">Расслабьтесь и почувствуйте суть лета с этой подборкой Jazz, Soul, R&amp;B и Neo Soul."
-    ],
-    [
-      ">A deep dive into the quintessential collection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">Глубокое погружение в квинтэссенцию Jazz, Soul, R&amp;B и Neo Soul."
-    ],
-    [
-      ">Take a break from a busy day and relax with soothing nu jazz and downtempo beats\\.",
-      ">Сделайте паузу в насыщенный день и расслабьтесь с успокаивающим nu jazz и downtempo."
-    ],
-    [
-      ">Soulful tracks with a fashion-forward vibe\\. Music to set the tone for a productive and stylish day\\.",
-      ">Соул-треки с прогрессивным fashion-настроением. Музыка, задающая тон продуктивному и стильному дню."
-    ],
-    [
-      ">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms\\.",
-      ">Празднуйте радость жизни и погрузитесь в мир ярких эмоций, насыщенных красок и соул-ритмов."
-    ],
-    [
-      ">Laid-back beats, house-influenced grooves and new deep house tracks\\.",
-      ">Расслабленные биты, грувы с оттенками хауса и свежие deep house треки."
-    ],
-    [
-      ">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience\\.",
-      ">Бесшовное сочетание funky disco, house, French touch и других жанров в ультрастильное и энергичное музыкальное путешествие."
-    ],
-    [
-      ">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke\\.",
-      ">Звуковое путешествие с Nu-Disco, French House, Electro и Disco House от таких исполнителей, как Madeon и Fred Falke."
-    ],
-    [
-      ">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks\\.",
-      ">Расслабленные биты, грувы с оттенками хип-хопа и свежие indie pop треки."
-    ],
-    [
-      ">Original Hip Hop, Rap and R(?:&amp;|&)B Flavor Sessions\\.",
-      ">Оригинальные сессии с привкусом Hip Hop, Rap и R&amp;B."
-    ],
-    [
-      ">Brace yourself for hardcore rap and hip hop tracks\\.",
-      ">Готовьтесь к жёсткому рэпу и хардкорному хип-хопу."
-    ],
-    [
-      ">A few of the favourite hip-hop gems\\.",
-      ">Несколько любимых хип-хоп жемчужин."
-    ],
-    [
-      ">Soulful beats and thoughtful lyrics\\. A captivating look into the world of contemporary hip hop, R(?:&amp;|&)B and rap\\.",
-      ">Соул-биты и продуманные тексты. Захватывающий взгляд на мир современного хип-хопа, R&amp;B и рэпа."
-    ],
-    [
-      ">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats\\.",
-      ">Расслабленные настроения и мягкие ритмы в этом великолепном плейлисте Lo-Fi Hip Hop."
-    ],
-    [
-      ">Celebrate the diverse heritage of African music\\. From the soulful rhythms of Wassoulou to the lively beats of Londonko\\.",
-      ">Откройте для себя многообразие африканской музыки. От соул-ритмов Wassoulou до живых битов Londonko."
-    ],
-    [
       "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
       "aria-label=\"Тег: \\1, \\2 статей\""
     ],
@@ -1006,18 +894,6 @@
       "<h3><a href=\"/ru/temy/blockchain-digital-assets/index.html\">Блокчейн и цифровые активы</a></h3>"
     ],
     [
-      "<p class=\"newsroom-lede\">Tracks to kick off the day or shift the room\\. Fashion\\-forward soul, vivid colour, and laid\\-back energy\\.</p>",
-      "<p class=\"newsroom-lede\">Треки, чтобы начать день или сменить атмосферу. Прогрессивный соул, яркие краски и расслабленная энергия.</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">Funky disco, French touch and electro\\. Energetic listening for movement, focus or the dance floor\\.</p>",
-      "<p class=\"newsroom-lede\">Funky disco, French touch и электро. Энергичное прослушивание для движения, концентрации или танцпола.</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo\\-Fi\\. The full breadth of beats\\.</p>",
-      "<p class=\"newsroom-lede\">От оригинальных хип-хоп сессий до хардкорного рэпа, современного R&B и Lo-Fi. Полная палитра битов.</p>"
-    ],
-    [
       "<h1>Enterprise AI Banking (?:&amp;|&) Payment Software Suite</h1>",
       "<h1>Корпоративный пакет ИИ-программ для банков и платежей</h1>"
     ],
@@ -1036,6 +912,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Публикации переехали в раздел «Исследования»</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Облачный банкинг\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Облачный банкинг — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/ru/topics/cloud-native-banking/index.html\">Облачный банкинг</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/ru/temy/cloud-native-banking/index.html\">Облачный банкинг</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Платформенная инженерия на базе Kubernetes для поднадзорных организаций: операционная устойчивость, проверенная по DORA, сближение виртуальных машин и контейнеров, суверенное облако, стратегия выхода и архитектура, позволяющая банкам выпускать критически важные сервисы под надзором.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"Агентный ИИ в банковском деле\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"Агентный ИИ в банковском деле — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/ru/topics/agentic-ai-banking/index.html\">Агентный ИИ в банковском деле</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/ru/temy/agentic-ai-banking/index.html\">Агентный ИИ в банковском деле</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Плоскости управления агентами, детерминированная семантическая маршрутизация, политические шлюзы OPA, неизменяемые журналы аудита WORM и оптика модельного риска SR 11-7 / SS1/23, превращающая автономные рабочие процессы в доказательства, готовые для надзорного органа.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Автоматизация казначейства\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Автоматизация казначейства — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/ru/topics/treasury-automation/index.html\">Автоматизация казначейства</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/ru/temy/treasury-automation/index.html\">Автоматизация казначейства</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Программируемая ликвидность, автономное казначейство, платёжные движки ISO 20022 и открытые наборы инструментов, превращающие CAMT / pacs.008 / MT940 / pain.001 в проверяемую транзакционную аналитику уровня совета директоров для корпоративных казначейских команд.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Операционная устойчивость и DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Операционная устойчивость и DORA — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/ru/topics/operational-resilience-dora/index.html\">Операционная устойчивость и DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/ru/temy/operational-resilience-dora/index.html\">Операционная устойчивость и DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Ответственность совета директоров по статье 5 DORA, агрегация данных о рисках по BCBS 239, риск концентрации у третьих сторон, тестирование выхода и инженерные средства контроля, превращающие операционную устойчивость из проекта комплаенса в готовое для надзора табло показателей.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Стейблкоины и токенизация\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Стейблкоины и токенизация — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/ru/topics/stablecoins-tokenisation/index.html\">Стейблкоины и токенизация</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/ru/temy/stablecoins-tokenisation/index.html\">Стейблкоины и токенизация</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Токенизированные депозиты, фонды денежного рынка, пилоты оптовых цифровых валют центральных банков, BRSRV/BSTBL от BlackRock, закон GENIUS и инженерные решения, благодаря которым программируемые деньги работают внутри поднадзорных балансов.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"Генеративный ИИ и большие языковые модели\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"Генеративный ИИ и большие языковые модели — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/ru/topics/generative-ai-llms/index.html\">Генеративный ИИ и большие языковые модели</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/ru/temy/generative-ai-llms/index.html\">Генеративный ИИ и большие языковые модели</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Базовые модели, мультимодальные большие языковые модели (Gemini, Gemma, Mistral, MM1), инженерия промптов и открытые релизы, определяющие, что банки могут строить внутри собственного периметра данных.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"Голосовой и речевой ИИ\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"Голосовой и речевой ИИ — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/ru/topics/voice-speech-ai/index.html\">Голосовой и речевой ИИ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/ru/temy/voice-speech-ai/index.html\">Голосовой и речевой ИИ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Клонирование голоса, распознавание речи в реальном времени (Whisper), голосовые ассистенты для руководителей и стек аудиоаналитики, меняющий клиентский опыт в частном банковском обслуживании.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"Управление и регулирование ИИ\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"Управление и регулирование ИИ — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/ru/topics/ai-governance-regulation/index.html\">Управление и регулирование ИИ</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/ru/temy/ai-governance-regulation/index.html\">Управление и регулирование ИИ</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Соответствие Регламенту ЕС об ИИ, модельный риск по SR 11-7, ответственность на уровне совета директоров, проверяемость автономных рабочих процессов и регуляторная рамка ИИ в банках первого эшелона.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Оптовые платёжные рельсы\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Оптовые платёжные рельсы — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/ru/topics/wholesale-payments-rails/index.html\">Оптовые платёжные рельсы</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/ru/temy/wholesale-payments-rails/index.html\">Оптовые платёжные рельсы</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Мультирельсовая стратегия, охватывающая карты, A2A, RTP, FedNow, открытый банкинг и стейблкоин-коридоры. Экономика опта, окончательность расчётов и модель трансграничной атомарности проекта Agorá БМР.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Криптография и устойчивость</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Криптография и устойчивость</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Постквантовая миграция, операционная устойчивость уровня DORA и рамка управления ИИ в финансовых услугах.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Платежи и деньги</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Платежи и деньги</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Миграция на ISO 20022, оптовые расчёты, стейблкоины, токенизированные депозиты и корпоративная казначейская функция вокруг них.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>ИИ и облако</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">ИИ и облако</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Прикладной ИИ, агентные системы, генеративные модели, голосовой и речевой ИИ, а также облачные банковские платформы, где они работают.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Открытый код и ремесло</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Открытый код и ремесло</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Библиотеки на Rust, блокчейн-примитивы и стоящая за ними инженерная дисциплина открытого кода.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Четыре опоры, четырнадцать тематических кластеров, каждая датированная статья. Выберите нить и проследите её через архив.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">ОПОРА</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Опоры</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Тематические кластеры</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Проиндексированные статьи</span>"
     ]
   ]
 }

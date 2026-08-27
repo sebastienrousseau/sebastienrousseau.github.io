@@ -36,7 +36,7 @@ def _extract_tech_article(html: str) -> dict:
 
 
 def test_parse_keywords_extracts_meta_keywords():
-    html = "<html><head>" '<meta name="keywords" content="Rust, ISO 20022, PQC">' "</head></html>"
+    html = '<html><head><meta name="keywords" content="Rust, ISO 20022, PQC"></head></html>'
     assert sc._parse_keywords(html) == ["Rust", "ISO 20022", "PQC"]
 
 

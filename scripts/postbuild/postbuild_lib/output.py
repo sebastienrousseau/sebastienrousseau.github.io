@@ -716,4 +716,3 @@ def write_llms_full_txt(public: Path) -> bool:
         return False
     target.write_text(new, encoding="utf-8")
     return True
-

@@ -1,0 +1,37 @@
+title: HSBC Treasury APIs — fizetések és Banking-as-a-Service
+banner_alt: A londoni City látképe — azt a treasury API-platformot jelképezi, amely a HSBC Commercial
+  & Investment Bank programja keretében készült
+sector: Első vonalbeli kereskedelmi bank · Vállalati treasury · Szabályozott fizetések
+role: Vezető termék- és technológiai felelős
+status: Éles üzemben egy első vonalbeli globális banknál
+outcome_highlights:
+- value: Első vonal
+  label: Globális bank, Commercial & Investment Bank
+- label: Szabályozott fizetési perem
+- value: Treasury / BaaS
+  label: Programozható készpénz, likviditás, fizetési sínek
+- value: Több éves
+  label: Vezető termék- és technológiai irányítás
+pull_quote: „Éles fizetési, egyenleg- és likviditási API-k a bank szabályozói peremén belül — az architektúrától
+  a szállítói integráción és a felügyeleti bizonyítékon át azokig a működési ellenállóképességi kontrollokig,
+  amelyeket ma a DORA és az SR 11-7 ír elő.”
+problem: A vállalati treasury csapatok programozható hozzáférést kérnek a készpénzkezeléshez, a likviditáshoz
+  és a fizetési sínekhez egy első vonalbeli bankon belül — anélkül, hogy lemondanának arról a felügyeleti
+  bizonyítékrétegről, amelyet magának a banknak elő kell állítania.
+what_i_built: A HSBC treasury API-jainak és Banking-as-a-Service programjának termék- és technológiai
+  munkafolyamatait vezettem a Commercial & Investment Bankon belül, éles fizetési, egyenleg- és likviditási
+  API-kat szállítva a bank szabályozói peremén belül. Dolgoztam az architektúrán, a szállítói integráción,
+  a felügyeleti bizonyítékon és azokon a működési ellenállóképességi kontrollokon, amelyeket ma a DORA
+  és az SR 11-7 ír elő.
+rigour:
+- metric: Szerep
+  value: Vezető termék- és technológiai irányítás a CIB-en belül
+- metric: Környezet
+  value: FCA / PRA által szabályozott fizetési platform
+- metric: Terjedelem
+  value: Treasury API-k, egyenleg- és készpénzkezelés, BaaS-terjesztés
+- metric: Felhasználók
+  value: Vállalati treasurerek multinacionális cégeknél és második vonalbeli bankoknál
+validation:
+- Nyilvános szerep a HSBC Commercial & Investment Banknál — LinkedInen ellenőrizhető
+- A program terjedelme a Rólam / Tapasztalat szakaszban szerepel

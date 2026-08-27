@@ -162,7 +162,7 @@
     ],
     [
       ">About EPAA</a>",
-      "<>Perihal EPAA</a>"
+      ">Perihal EPAA</a>"
     ],
     [
       "title=\"Visit the Emerging Payments Association Asia\"",
@@ -178,7 +178,7 @@
     ],
     [
       ">Read the article</a>",
-      "<>Baca artikel</a>"
+      ">Baca artikel</a>"
     ],
     [
       " · Free download",
@@ -194,7 +194,7 @@
     ],
     [
       ">Request access<",
-      "<>Minta akses<"
+      ">Minta akses<"
     ],
     [
       ">English · PDF",
@@ -310,7 +310,7 @@
     ],
     [
       ">About EPAA</p>",
-      "<>Perihal EPAA</p>"
+      ">Perihal EPAA</p>"
     ],
     [
       "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
@@ -682,7 +682,7 @@
     ],
     [
       ">Have an idea\\? Let's build it\\.<",
-      "<>Ada idea? Mari bina bersama.<"
+      ">Ada idea? Mari bina bersama.<"
     ],
     [
       ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
@@ -691,118 +691,6 @@
     [
       "<p class=\"newsroom-kicker\">FEATURED</p>",
       "<p class=\"newsroom-kicker\">PILIHAN</p>"
-    ],
-    [
-      ">Latest Music</h2>",
-      ">Muzik terkini</h2>"
-    ],
-    [
-      ">Latest playlist</h2>",
-      ">Senarai main terkini</h2>"
-    ],
-    [
-      ">Soulful, jazz and downtempo</h2>",
-      ">Soulful, jazz dan downtempo</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">MORNING & MOOD</p>",
-      "<p class=\"newsroom-kicker\">PAGI & SUASANA</p>"
-    ],
-    [
-      ">Morning, mood and chill</h2>",
-      ">Pagi, suasana dan santai</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">ELECTRONIC</p>",
-      "<p class=\"newsroom-kicker\">ELEKTRONIK</p>"
-    ],
-    [
-      ">Electronic, house and techno</h2>",
-      ">Elektro, house dan techno</h2>"
-    ],
-    [
-      ">Pop, rock and alternative</h2>",
-      ">Pop, rock dan alternatif</h2>"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">FOCUS</p>",
-      "<p class=\"newsroom-kicker\">FOKUS</p>"
-    ],
-    [
-      ">Focus and productivity</h2>",
-      ">Fokus dan produktiviti</h2>"
-    ],
-    [
-      ">Smooth Jazz, Neo Soul, and laid-back grooves[^<]+",
-      ">Smooth Jazz, Neo Soul dan groove yang santai. Senarai main untuk saat hari menuntut anda perlahankan langkah."
-    ],
-    [
-      ">This page has a comprehensive list[^<]+",
-      ">Halaman ini memaparkan pilihan senarai main Spotify yang paling popular dan mendapat pujian kritikan, merangkumi pelbagai genre. Sama ada anda peminat jazz, soul, hip-hop atau muzik elektronik, anda akan menemui senarai main yang menepati cita rasa anda."
-    ],
-    [
-      ">Step into the harmonious realm of TETRA\\.[^<]+",
-      ">Masuklah ke alam harmoni TETRA. Senarai main euforia yang direka untuk mengangkat semangat anda dan memenuhi jiwa dengan kegembiraan."
-    ],
-    [
-      ">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">Bersantailah dan hayati intipati musim panas dengan pilihan Jazz, Soul, R&amp;B dan Neo Soul ini."
-    ],
-    [
-      ">A deep dive into the quintessential collection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
-      ">Selami secara mendalam koleksi terunggul Jazz, Soul, R&amp;B dan Neo Soul."
-    ],
-    [
-      ">Take a break from a busy day and relax with soothing nu jazz and downtempo beats\\.",
-      ">Rehatkan diri daripada hari yang sibuk dan bersantai dengan nu jazz dan downtempo yang menenangkan."
-    ],
-    [
-      ">Soulful tracks with a fashion-forward vibe\\. Music to set the tone for a productive and stylish day\\.",
-      ">Lagu-lagu soul dengan vibe avant-garde. Muzik yang sempurna untuk menetapkan nada hari yang produktif dan bergaya."
-    ],
-    [
-      ">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms\\.",
-      ">Raikan keindahan hidup dan selami dunia emosi yang meriah, warna yang terang dan irama soul."
-    ],
-    [
-      ">Laid-back beats, house-influenced grooves and new deep house tracks\\.",
-      ">Beat santai, groove berinspirasikan house dan permata deep house terbaharu."
-    ],
-    [
-      ">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience\\.",
-      ">Gabungan lancar disko funky, house, French touch dan genre lain untuk pengalaman muzik yang ultra-keren dan bertenaga."
-    ],
-    [
-      ">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke\\.",
-      ">Pengembaraan bunyi yang menggabungkan Nu-Disco, French House, Electro dan Disco House daripada artis seperti Madeon dan Fred Falke."
-    ],
-    [
-      ">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks\\.",
-      ">Beat santai, groove berinspirasikan hip-hop dan lagu indie pop terbaharu."
-    ],
-    [
-      ">Original Hip Hop, Rap and R(?:&amp;|&)B Flavor Sessions\\.",
-      ">Sesi asli beraroma Hip Hop, Rap dan R&amp;B."
-    ],
-    [
-      ">Brace yourself for hardcore rap and hip hop tracks\\.",
-      ">Bersedialah untuk rap dan hip hop hardcore."
-    ],
-    [
-      ">A few of the favourite hip-hop gems\\.",
-      ">Beberapa permata hip-hop kegemaran."
-    ],
-    [
-      ">Soulful beats and thoughtful lyrics\\. A captivating look into the world of contemporary hip hop, R(?:&amp;|&)B and rap\\.",
-      ">Beat soul dan lirik yang mendalam. Pandangan memikat tentang hip hop, R&amp;B dan rap kontemporari."
-    ],
-    [
-      ">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats\\.",
-      ">Suasana santai dan irama lembut dalam senarai main Lo-Fi Hip Hop yang menakjubkan ini."
-    ],
-    [
-      ">Celebrate the diverse heritage of African music\\. From the soulful rhythms of Wassoulou to the lively beats of Londonko\\.",
-      ">Raikan kepelbagaian kaya muzik Afrika. Daripada irama soul Wassoulou kepada beat rancak Londonko."
     ],
     [
       "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
@@ -1005,18 +893,6 @@
       "<h3><a href=\"/ms/topics/blockchain-digital-assets/index.html\">Blockchain &amp; aset digital</a></h3>"
     ],
     [
-      "<p class=\"newsroom-lede\">Tracks to kick off the day or shift the room\\. Fashion\\-forward soul, vivid colour, and laid\\-back energy\\.</p>",
-      "<p class=\"newsroom-lede\">Lagu-lagu untuk memulakan hari atau mengubah suasana. Soul yang elegan, warna terang dan tenaga santai.</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">Funky disco, French touch and electro\\. Energetic listening for movement, focus or the dance floor\\.</p>",
-      "<p class=\"newsroom-lede\">Disko funky, French touch dan elektro. Pendengaran bertenaga untuk pergerakan, fokus atau lantai tarian.</p>"
-    ],
-    [
-      "<p class=\"newsroom-lede\">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo\\-Fi\\. The full breadth of beats\\.</p>",
-      "<p class=\"newsroom-lede\">Daripada sesi Hip Hop asli kepada rap hardcore, R&B kontemporari dan Lo-Fi. Seluruh palet beat.</p>"
-    ],
-    [
       "<h1>Enterprise AI Banking (?:&amp;|&) Payment Software Suite</h1>",
       "<h1>Suite perisian AI perusahaan untuk perbankan dan pembayaran</h1>"
     ],
@@ -1035,6 +911,254 @@
     [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Penerbitan telah berpindah ke Penyelidikan</h1>"
+    ],
+    [
+      "aria-label=\"Cloud Native Banking\"",
+      "aria-label=\"Perbankan cloud-native\""
+    ],
+    [
+      "alt=\"Cloud Native Banking — topic banner\"",
+      "alt=\"Perbankan cloud-native — sepanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/ms/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/ms/topics/cloud-native-banking/index.html\">Perbankan cloud-native</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
+      "<h3><a href=\"/ms/topics/cloud-native-banking/index.html\">Perbankan cloud-native</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Kubernetes\\-based\\ platform\\ engineering\\ for\\ regulated\\ institut[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Kejuruteraan platform berasaskan Kubernetes untuk institusi yang dikawal selia: daya tahan operasi yang diuji menurut DORA, penumpuan mesin maya dan bekas, awan berdaulat, strategi keluar, serta seni bina yang membolehkan bank melancarkan perkhidmatan kritikal di bawah penyeliaan.</p>"
+    ],
+    [
+      "aria-label=\"Agentic AI in Banking\"",
+      "aria-label=\"AI agentik dalam perbankan\""
+    ],
+    [
+      "alt=\"Agentic AI in Banking — topic banner\"",
+      "alt=\"AI agentik dalam perbankan — sepanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/ms/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/ms/topics/agentic-ai-banking/index.html\">AI agentik dalam perbankan</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
+      "<h3><a href=\"/ms/topics/agentic-ai-banking/index.html\">AI agentik dalam perbankan</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Agent\\ control\\ planes,\\ deterministic\\ semantic\\ routing,\\ OPA\\ po[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Satah kawalan ejen, penghalaan semantik berketentuan, pintu dasar OPA, log audit WORM yang tidak boleh diubah, dan kanta risiko model SR 11-7 / SS1/23 yang menukar aliran kerja autonomi menjadi bukti sedia penyelia.</p>"
+    ],
+    [
+      "aria-label=\"Treasury Automation\"",
+      "aria-label=\"Automasi perbendaharaan\""
+    ],
+    [
+      "alt=\"Treasury Automation — topic banner\"",
+      "alt=\"Automasi perbendaharaan — sepanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/ms/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/ms/topics/treasury-automation/index.html\">Automasi perbendaharaan</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
+      "<h3><a href=\"/ms/topics/treasury-automation/index.html\">Automasi perbendaharaan</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Programmable\\ liquidity,\\ autonomous\\ treasury,\\ ISO\\ 20022\\ payme[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Kecairan boleh atur cara, perbendaharaan autonomi, enjin pembayaran ISO 20022, dan kit alat sumber terbuka yang menukar CAMT / pacs.008 / MT940 / pain.001 menjadi risikan transaksi boleh audit bertaraf lembaga pengarah bagi pasukan perbendaharaan korporat.</p>"
+    ],
+    [
+      "aria-label=\"Operational Resilience &amp; DORA\"",
+      "aria-label=\"Daya tahan operasi dan DORA\""
+    ],
+    [
+      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
+      "alt=\"Daya tahan operasi dan DORA — sepanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/ms/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/ms/topics/operational-resilience-dora/index.html\">Daya tahan operasi dan DORA</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
+      "<h3><a href=\"/ms/topics/operational-resilience-dora/index.html\">Daya tahan operasi dan DORA</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">DORA\\ Article\\ 5\\ board\\ accountability,\\ BCBS\\ 239\\ risk\\-data\\ aggr[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Kebertanggungjawaban lembaga pengarah di bawah Perkara 5 DORA, pengagregatan data risiko BCBS 239, risiko penumpuan pihak ketiga, ujian keluar, serta kawalan kejuruteraan yang menukar daya tahan operasi daripada projek pematuhan kepada papan mata sedia penyelia.</p>"
+    ],
+    [
+      "aria-label=\"Stablecoins &amp; Tokenisation\"",
+      "aria-label=\"Stablecoin dan tokenisasi\""
+    ],
+    [
+      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
+      "alt=\"Stablecoin dan tokenisasi — sepanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/ms/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/ms/topics/stablecoins-tokenisation/index.html\">Stablecoin dan tokenisasi</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
+      "<h3><a href=\"/ms/topics/stablecoins-tokenisation/index.html\">Stablecoin dan tokenisasi</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Tokenised\\ deposits,\\ money\\-market\\ funds,\\ wholesale\\ CBDC\\ pilot[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Deposit tertokenisasi, dana pasaran wang, perintis mata wang digital bank pusat borong, BRSRV/BSTBL daripada BlackRock, Akta GENIUS, dan pilihan kejuruteraan di sebalik cara wang boleh atur cara berfungsi dalam kunci kira-kira yang dikawal selia.</p>"
+    ],
+    [
+      "aria-label=\"Generative AI &amp; LLMs\"",
+      "aria-label=\"AI generatif dan model bahasa besar\""
+    ],
+    [
+      "alt=\"Generative AI &amp; LLMs — topic banner\"",
+      "alt=\"AI generatif dan model bahasa besar — sepanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/ms/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/ms/topics/generative-ai-llms/index.html\">AI generatif dan model bahasa besar</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
+      "<h3><a href=\"/ms/topics/generative-ai-llms/index.html\">AI generatif dan model bahasa besar</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Foundation\\ models,\\ multimodal\\ LLMs\\ \\(Gemini,\\ Gemma,\\ Mistral,\\ [^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Model asas, model bahasa besar multimod (Gemini, Gemma, Mistral, MM1), kejuruteraan gesaan, dan keluaran sumber terbuka yang menentukan apa yang boleh dibina oleh bank dalam perimeter data mereka sendiri.</p>"
+    ],
+    [
+      "aria-label=\"Voice &amp; Speech AI\"",
+      "aria-label=\"AI suara dan pertuturan\""
+    ],
+    [
+      "alt=\"Voice &amp; Speech AI — topic banner\"",
+      "alt=\"AI suara dan pertuturan — sepanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/ms/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/ms/topics/voice-speech-ai/index.html\">AI suara dan pertuturan</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
+      "<h3><a href=\"/ms/topics/voice-speech-ai/index.html\">AI suara dan pertuturan</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Voice\\ cloning,\\ real\\-time\\ speech\\ recognition\\ \\(Whisper\\),\\ execu[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Pengklonan suara, pengecaman pertuturan masa nyata (Whisper), pembantu suara untuk eksekutif, dan tindanan risikan audio yang membentuk semula pengalaman pelanggan perbankan persendirian.</p>"
+    ],
+    [
+      "aria-label=\"AI Governance &amp; Regulation\"",
+      "aria-label=\"Tadbir urus dan pengawalseliaan AI\""
+    ],
+    [
+      "alt=\"AI Governance &amp; Regulation — topic banner\"",
+      "alt=\"Tadbir urus dan pengawalseliaan AI — sepanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/ms/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/ms/topics/ai-governance-regulation/index.html\">Tadbir urus dan pengawalseliaan AI</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
+      "<h3><a href=\"/ms/topics/ai-governance-regulation/index.html\">Tadbir urus dan pengawalseliaan AI</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">EU\\ AI\\ Act\\ conformity,\\ SR\\ 11\\-7\\ model\\ risk,\\ board\\-level\\ accoun[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Pematuhan Akta AI Kesatuan Eropah, risiko model SR 11-7, kebertanggungjawaban peringkat lembaga pengarah, kebolehauditan aliran kerja autonomi, serta rangka kerja pengawalseliaan AI dalam bank barisan hadapan.</p>"
+    ],
+    [
+      "aria-label=\"Wholesale Payments Rails\"",
+      "aria-label=\"Landasan pembayaran borong\""
+    ],
+    [
+      "alt=\"Wholesale Payments Rails — topic banner\"",
+      "alt=\"Landasan pembayaran borong — sepanduk topik\""
+    ],
+    [
+      "<h3><a href=\"/ms/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/ms/topics/wholesale-payments-rails/index.html\">Landasan pembayaran borong</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",
+      "<h3><a href=\"/ms/topics/wholesale-payments-rails/index.html\">Landasan pembayaran borong</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Multi\\-rail\\ strategy\\ across\\ cards,\\ A2A,\\ RTP,\\ FedNow,\\ open\\ ban[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Strategi berbilang landasan merentasi kad, pindahan akaun ke akaun, RTP, FedNow, perbankan terbuka, dan koridor stablecoin. Ekonomi borong, kemuktamadan penyelesaian, dan model keatoman rentas sempadan Projek Agorá milik BIS.</p>"
+    ],
+    [
+      "<h2>Cryptography &amp; resilience</h2>",
+      "<h2>Kriptografi dan daya tahan</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Cryptography\\ \\&amp;\\ resilience</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-cryptography-resilience\">Kriptografi dan daya tahan</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Post\\-quantum\\ migration,\\ DORA\\-grade\\ operational\\ resilience,\\ a[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Migrasi pasca-kuantum, daya tahan operasi setaraf DORA, dan rangka kerja tadbir urus AI dalam perkhidmatan kewangan.</p>"
+    ],
+    [
+      "<h2>Payments &amp; money</h2>",
+      "<h2>Pembayaran dan wang</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Payments\\ \\&amp;\\ money</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-payments-money\">Pembayaran dan wang</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">ISO\\ 20022\\ migration,\\ wholesale\\ settlement,\\ stablecoins,\\ toke[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Migrasi ISO 20022, penyelesaian borong, stablecoin, deposit tertokenisasi, dan fungsi perbendaharaan korporat di sekelilingnya.</p>"
+    ],
+    [
+      "<h2>AI &amp; cloud</h2>",
+      "<h2>AI dan awan</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI\\ \\&amp;\\ cloud</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-ai-cloud\">AI dan awan</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Applied\\ AI,\\ agentic\\ systems,\\ generative\\ models,\\ voice\\ and\\ sp[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">AI gunaan, sistem agentik, model generatif, AI suara dan pertuturan, serta platform perbankan cloud-native yang menjalankannya.</p>"
+    ],
+    [
+      "<h2>Open source &amp; craft</h2>",
+      "<h2>Sumber terbuka dan kraf</h2>"
+    ],
+    [
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Open\\ source\\ \\&amp;\\ craft</a>",
+      "<a class=\"topic-chip\" href=\"#pillar-open-source-craft\">Sumber terbuka dan kraf</a>"
+    ],
+    [
+      "<p class=\"topic-pillar-lede\">Rust\\ libraries,\\ blockchain\\ primitives,\\ and\\ the\\ open\\-source\\ e[^<]*</p>",
+      "<p class=\"topic-pillar-lede\">Pustaka Rust, primitif rantaian blok, dan disiplin kejuruteraan sumber terbuka di sebaliknya.</p>"
+    ],
+    [
+      "<p class=\"topic-lede\">Four\\ pillars,\\ fourteen\\ topic\\ clusters,\\ every\\ dated[^<]*</p>",
+      "<p class=\"topic-lede\">Empat tonggak, empat belas gugusan topik, setiap artikel bertarikh. Pilih satu benang dan ikutinya menyusuri arkib.</p>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">PILLAR</p>",
+      "<p class=\"newsroom-kicker\">TONGGAK</p>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Pillars</span>",
+      "<span class=\"kpi-cell-label\">Tonggak</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Topic clusters</span>",
+      "<span class=\"kpi-cell-label\">Gugusan topik</span>"
+    ],
+    [
+      "<span class=\"kpi-cell-label\">Articles indexed</span>",
+      "<span class=\"kpi-cell-label\">Artikel terindeks</span>"
     ]
   ]
 }

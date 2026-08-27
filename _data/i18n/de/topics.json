@@ -19,5 +19,68 @@
   "blockchain-digital-assets": {
     "title": "Blockchain & Digital Assets",
     "lede": "Blockchain und digitale Vermögenswerte: Tokenisierung, ERC-20, Stablecoins, Kryptowährungs-Infrastruktur und der regulatorische Rahmen, der sie prägt."
-  }
+  },
+  "cloud-native-banking": {
+    "title": "Cloud-native Banking",
+    "lede": "Kubernetes-basiertes Plattform-Engineering für regulierte Institute: DORA-geprüfte operative Resilienz, Konvergenz von virtuellen Maschinen und Containern, souveräne Cloud, Ausstiegsstrategie und die Architektur, mit der Banken kritische Dienste unter Aufsicht ausliefern."
+  },
+  "agentic-ai-banking": {
+    "title": "Agentische KI im Bankwesen",
+    "lede": "Steuerungsebenen für Agenten, deterministisches semantisches Routing, OPA-Richtlinienprüfungen, unveränderliche WORM-Auditprotokolle und die Modellrisiko-Perspektive nach SR 11-7 / SS1/23, die autonome Arbeitsabläufe in aufsichtsreife Nachweise verwandelt."
+  },
+  "treasury-automation": {
+    "title": "Treasury-Automatisierung",
+    "lede": "Programmierbare Liquidität, autonomes Treasury, ISO-20022-Zahlungsmaschinen und die Open-Source-Werkzeuge, die CAMT / pacs.008 / MT940 / pain.001 in prüffähige, vorstandstaugliche Transaktionsintelligenz für Corporate-Treasury-Teams überführen."
+  },
+  "operational-resilience-dora": {
+    "title": "Operative Resilienz und DORA",
+    "lede": "Vorstandsverantwortung nach DORA Artikel 5, Risikodatenaggregation nach BCBS 239, Konzentrationsrisiko bei Dritten, Ausstiegstests und die technischen Kontrollen, die operative Resilienz von einem Compliance-Projekt in eine aufsichtsreife Kennzahlentafel verwandeln."
+  },
+  "stablecoins-tokenisation": {
+    "title": "Stablecoins und Tokenisierung",
+    "lede": "Tokenisierte Einlagen, Geldmarktfonds, Wholesale-CBDC-Pilotprojekte, BlackRocks BRSRV/BSTBL, der GENIUS Act und die technischen Entscheidungen, die programmierbares Geld in regulierten Bilanzen funktionsfähig machen."
+  },
+  "generative-ai-llms": {
+    "title": "Generative KI und LLMs",
+    "lede": "Foundation Models, multimodale LLMs (Gemini, Gemma, Mistral, MM1), Prompt Engineering und die Open-Source-Veröffentlichungen, die bestimmen, was Banken innerhalb ihres eigenen Datenperimeters bauen können."
+  },
+  "voice-speech-ai": {
+    "title": "Sprach- und Stimm-KI",
+    "lede": "Stimmklonung, Spracherkennung in Echtzeit (Whisper), Sprachassistenten für Führungskräfte und der Audio-Intelligence-Stack, der das Kundenerlebnis im Private Banking neu gestaltet."
+  },
+  "ai-governance-regulation": {
+    "title": "KI-Governance und Regulierung",
+    "lede": "Konformität mit der EU-KI-Verordnung, Modellrisiko nach SR 11-7, Verantwortung auf Vorstandsebene, Prüffähigkeit autonomer Arbeitsabläufe und der regulatorische Rahmen für KI in Großbanken."
+  },
+  "wholesale-payments-rails": {
+    "title": "Wholesale-Zahlungsschienen",
+    "lede": "Multi-Rail-Strategie über Karten, A2A, RTP, FedNow, Open Banking und Stablecoin-Korridore hinweg. Wholesale-Ökonomie, Endgültigkeit der Abwicklung und das grenzüberschreitende Atomaritätsmodell des BIZ-Projekts Agorá."
+  },
+  "_pillars": [
+    {
+      "name": "Kryptografie und Resilienz",
+      "lede": "Post-Quanten-Migration, operative Resilienz auf DORA-Niveau und der Governance-Rahmen für KI in Finanzdienstleistungen."
+    },
+    {
+      "name": "Zahlungsverkehr und Geld",
+      "lede": "ISO-20022-Migration, Wholesale-Abwicklung, Stablecoins, tokenisierte Einlagen und die Corporate-Treasury-Funktion darum herum."
+    },
+    {
+      "name": "KI und Cloud",
+      "lede": "Angewandte KI, agentische Systeme, generative Modelle, Sprach- und Stimm-KI sowie die cloud-nativen Bankplattformen, die sie betreiben."
+    },
+    {
+      "name": "Open Source und Handwerk",
+      "lede": "Rust-Bibliotheken, Blockchain-Primitive und die Open-Source-Ingenieursdisziplin dahinter."
+    }
+  ],
+  "_hub_lede": "Vier Säulen, vierzehn Themencluster, jeder datierte Beitrag. Wählen Sie einen Faden und verfolgen Sie ihn durch das Archiv.",
+  "_banner_word": "Themenbanner",
+  "_kpi": [
+    "Säulen",
+    "Themencluster",
+    "Indexierte Beiträge"
+  ],
+  "_article_count": "{n} Artikel",
+  "_pillar_kicker": "SÄULE"
 }

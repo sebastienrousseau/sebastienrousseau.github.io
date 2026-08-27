@@ -19,5 +19,68 @@
   "blockchain-digital-assets": {
     "title": "Blokklánc és digitális eszközök",
     "lede": "Blokklánc és digitális eszközök: tokenizáció, ERC-20, stabilérmék, kriptovaluta-infrastruktúra, és az őket alakító szabályozási keretrendszer."
-  }
+  },
+  "cloud-native-banking": {
+    "title": "Felhőnatív bankolás",
+    "lede": "Kubernetes-alapú platformmérnökség szabályozott intézmények számára: DORA szerint tesztelt működési ellenálló képesség, virtuális gépek és konténerek konvergenciája, szuverén felhő, kilépési stratégia és az az architektúra, amely lehetővé teszi a bankoknak, hogy kritikus szolgáltatásokat felügyelet alatt élesítsenek."
+  },
+  "agentic-ai-banking": {
+    "title": "Ügynöki MI a bankszektorban",
+    "lede": "Ügynökvezérlési síkok, determinisztikus szemantikus útválasztás, OPA szabálykapuk, megváltoztathatatlan WORM auditnaplók, és az SR 11-7 / SS1/23 modellkockázati nézőpont, amely az autonóm munkafolyamatokat felügyeletre kész bizonyítékká alakítja."
+  },
+  "treasury-automation": {
+    "title": "Treasury-automatizálás",
+    "lede": "Programozható likviditás, autonóm treasury, ISO 20022 fizetési motorok, és azok a nyílt forráskódú eszközkészletek, amelyek a CAMT / pacs.008 / MT940 / pain.001 állományokat auditálható, igazgatósági szintű tranzakciós információvá alakítják a vállalati treasury-csapatok számára."
+  },
+  "operational-resilience-dora": {
+    "title": "Működési ellenálló képesség és DORA",
+    "lede": "Igazgatósági felelősség a DORA 5. cikke szerint, BCBS 239 szerinti kockázatiadat-aggregáció, harmadik feles koncentrációs kockázat, kilépési tesztelés, és azok a mérnöki kontrollok, amelyek a működési ellenálló képességet megfelelőségi projektből felügyeletre kész eredménytáblává alakítják."
+  },
+  "stablecoins-tokenisation": {
+    "title": "Stabilérmék és tokenizáció",
+    "lede": "Tokenizált betétek, pénzpiaci alapok, nagyértékű jegybanki digitális pénz pilotprojektek, a BlackRock BRSRV/BSTBL termékei, a GENIUS-törvény, és azok a mérnöki döntések, amelyek működővé teszik a programozható pénzt a szabályozott mérlegeken belül."
+  },
+  "generative-ai-llms": {
+    "title": "Generatív MI és nagy nyelvi modellek",
+    "lede": "Alapmodellek, multimodális nagy nyelvi modellek (Gemini, Gemma, Mistral, MM1), promptmérnökség, és azok a nyílt forráskódú kiadások, amelyek meghatározzák, mit építhetnek a bankok a saját adatperemükön belül."
+  },
+  "voice-speech-ai": {
+    "title": "Hang- és beszéd-MI",
+    "lede": "Hangklónozás, valós idejű beszédfelismerés (Whisper), vezetői hangasszisztensek, és az a hangintelligencia-verem, amely átalakítja a privátbanki ügyfélélményt."
+  },
+  "ai-governance-regulation": {
+    "title": "MI-irányítás és szabályozás",
+    "lede": "Az uniós MI-rendeletnek való megfelelés, SR 11-7 modellkockázat, igazgatósági szintű felelősség, az autonóm munkafolyamatok auditálhatósága, és az MI szabályozási kerete az első vonalbeli bankokban."
+  },
+  "wholesale-payments-rails": {
+    "title": "Nagyértékű fizetési sínek",
+    "lede": "Többsínes stratégia kártyák, A2A, RTP, FedNow, nyílt bankolás és stabilérme-folyosók mentén. Nagyértékű közgazdaságtan, a kiegyenlítés véglegessége, és a BIS Agorá projekt határon átnyúló atomicitási modellje."
+  },
+  "_pillars": [
+    {
+      "name": "Kriptográfia és ellenálló képesség",
+      "lede": "Poszt-kvantum migráció, DORA-szintű működési ellenálló képesség, és az MI irányítási kerete a pénzügyi szolgáltatásokban."
+    },
+    {
+      "name": "Fizetések és pénz",
+      "lede": "ISO 20022 migráció, nagyértékű kiegyenlítés, stabilérmék, tokenizált betétek, és a körülöttük lévő vállalati treasury-funkció."
+    },
+    {
+      "name": "MI és felhő",
+      "lede": "Alkalmazott MI, ügynöki rendszerek, generatív modellek, hang- és beszéd-MI, valamint az őket futtató felhőnatív banki platformok."
+    },
+    {
+      "name": "Nyílt forráskód és mesterség",
+      "lede": "Rust-könyvtárak, blokklánc-primitívek, és a mögöttük álló nyílt forráskódú mérnöki fegyelem."
+    }
+  ],
+  "_hub_lede": "Négy pillér, tizennégy témacsoport, minden keltezett cikk. Válasszon egy szálat, és kövesse végig az archívumon.",
+  "_banner_word": "témaszalag",
+  "_kpi": [
+    "Pillérek",
+    "Témacsoportok",
+    "Indexelt cikkek"
+  ],
+  "_article_count": "{n} cikk",
+  "_pillar_kicker": "PILLÉR"
 }

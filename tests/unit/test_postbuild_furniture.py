@@ -253,9 +253,7 @@ def test_render_tag_badges_uses_canonical_slug_for_non_ascii_chip(monkeypatch):
 
     monkeypatch.setattr(af, "_has_landing", lambda slug, lang="en": True)
     labels = {"Topics": "トピック"}
-    out = _render_tag_badges(
-        ["ブロックチェーン"], labels, lang="ja", tag_slugs=["blockchain"]
-    )
+    out = _render_tag_badges(["ブロックチェーン"], labels, lang="ja", tag_slugs=["blockchain"])
     assert '<a href="/ja/tagu/blockchain/" class="article-tag" rel="tag">' in out
     assert "ブロックチェーン</a>" in out  # localised display text kept
     assert "//" not in out.replace("https://", "")

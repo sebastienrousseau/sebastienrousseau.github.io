@@ -92,7 +92,7 @@ def test_xml_escape_preserves_existing_entities() -> None:
 
 
 def test_xml_escape_angle_brackets_and_quotes() -> None:
-    assert blf.xml_escape('<x> "y" \'z\'') == "&lt;x&gt; &quot;y&quot; &apos;z&apos;"
+    assert blf.xml_escape("<x> \"y\" 'z'") == "&lt;x&gt; &quot;y&quot; &apos;z&apos;"
 
 
 # --- date formatting -------------------------------------------------------

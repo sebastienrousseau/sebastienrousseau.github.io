@@ -1,0 +1,261 @@
+{
+  "_comment": "TE copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "ప్లేలిస్టులు",
+    "jump": "సరికొత్త ప్లేలిస్ట్ వినండి",
+    "platformsLabel": "మొత్తం సేకరణ Apple Music లోనూ ఉంది",
+    "navLabel": "ఒక శైలికి వెళ్లండి",
+    "play": "Spotify లో వినండి",
+    "follow": "Spotify లో అనుసరించండి",
+    "apple": "Apple Music లో వినండి",
+    "countOne": "ప్లేలిస్ట్",
+    "countOther": "ప్లేలిస్టులు",
+    "coverAlt": "{title} ప్లేలిస్ట్ కవర్ చిత్రం",
+    "openAria": "{title} ను Spotify లో తెరవండి",
+    "frameTitle": "Spotify లో {title} ప్లేలిస్ట్"
+  },
+  "intro": [
+    "ముప్పై తొమ్మిది ప్లేలిస్టులు, 1,763 పాటలు — నేపథ్య సంగీతం అవసరమయ్యే గంటల కోసం కట్టినవి: లోతైన పని, సుదీర్ఘ పఠనం, రాత్రి పొద్దుపోయాక చేసే తిరగరాతలు.",
+    "పనికి ఓపిక కావాలంటే నియో సోల్, ను జాజ్. ఊపు కావాలంటే బూమ్ బ్యాప్, జాజ్ ర్యాప్. ఎత్తు కావాలంటే ఫ్రెంచ్ టచ్, డీప్ హౌస్, డిస్కో హౌస్. తల దించి సాగే భాగానికి లో-ఫై, వీటన్నిటి గుండా ప్రవహించే పశ్చిమ ఆఫ్రికా లయలు.",
+    "ప్రతి ప్లేలిస్ట్ Spotify లో ఉచితంగా వినిపిస్తుంది, మొత్తం సేకరణ Apple Music లో ఉంది."
+  ],
+  "featured": {
+    "kicker": "సరికొత్త ప్లేలిస్ట్",
+    "date": "ఆగస్టు 2026",
+    "genres": "ఇండీ పాప్ · ఫ్రెంచ్ హౌస్",
+    "desc": "ఎండలో తడిసిన ఇండీ పాప్ ఫ్రెంచ్ హౌస్ లోకి జారుతుంది — Tame Impala, almost monday లు Justice, L'Impératrice, HUGEL ఆఫ్రో హౌస్ కి చోటు ఇస్తారు."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "ఎలక్ట్రానిక్",
+      "sub": "హౌస్, డిస్కో మరియు ఫ్రెంచ్ టచ్"
+    },
+    "soul-jazz": {
+      "title": "సోల్ &amp; జాజ్",
+      "sub": "నియో సోల్, ను జాజ్ మరియు నెమ్మది లయ"
+    },
+    "hip-hop": {
+      "title": "హిప్-హాప్",
+      "sub": "బూమ్ బ్యాప్, జాజ్ ర్యాప్ మరియు స్వర్ణయుగపు గ్రూవ్"
+    },
+    "morning-mood": {
+      "title": "ఉదయం &amp; మనోభావం",
+      "sub": "డౌన్‌టెంపో, లో-ఫై మరియు మేల్కొలిపే శక్తి"
+    },
+    "global": {
+      "title": "ప్రపంచం",
+      "sub": "మిగతా ప్రతిచోటి లయలు"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "డిస్కో హౌస్ · గ్యారేజ్",
+      "desc": "తొంభైల చివరి డిస్కో హౌస్, గ్యారేజ్ — ఇప్పటికీ ఫ్లోర్ నింపేవి — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden మరియు Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "ఇండీ పాప్ · ఫ్రెంచ్ హౌస్",
+      "desc": "ఎండలో తడిసిన ఇండీ పాప్ ఫ్రెంచ్ హౌస్ లోకి జారుతుంది — Tame Impala, almost monday లు Justice, L'Impératrice, HUGEL ఆఫ్రో హౌస్ కి చోటు ఇస్తారు."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "ఫ్రెంచ్ టచ్ · ఎలక్ట్రో",
+      "desc": "పూర్తి వెలుగులో ఫ్రెంచ్ టచ్ — Daft Punk, Justice, Kavinsky, L'Impératrice మరియు Angèle నియాన్ సింత్‌లనూ మోటోరిక్ బాస్‌లైన్‌లనూ మార్చుకుంటారు."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "ఇండీ డాన్స్ · సింత్ పాప్",
+      "desc": "బంగారు వేళలోని సింత్ పాప్, ఇండీ డాన్స్ — Blu DeTiger, Merty Shango, Citrus Sun మరియు Enne ఆ మెరుపును సాయంత్రం దాకా తీసుకెళ్తారు."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "ను-డిస్కో · ఫ్రెంచ్ హౌస్",
+      "desc": "ఫిల్టర్ తెరిచి ను-డిస్కో, ఫ్రెంచ్ హౌస్ — Fred Falke, Breakbot, Madeon, Lemaitre మరియు Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "ప్రోగ్రెసివ్ హౌస్ · ఎలక్ట్రో",
+      "desc": "కదలిక కోసం కట్టిన ప్రోగ్రెసివ్ హౌస్, ఎలక్ట్రో — Madeon, Paul Woolford, Martin Solveig, Secondcity మరియు The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "ను-డిస్కో · ఫిల్టర్డ్ హౌస్",
+      "desc": "కదలిక కోసం కట్టిన ను-డిస్కో, ఫిల్టర్డ్ హౌస్ — కత్తిరించిన గిటార్లు, లావు సింత్ బాస్ మీద Lenno, Oliver, Tollef మరియు Yelle."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "డీప్ హౌస్ · మెలొడిక్ హౌస్",
+      "desc": "దారికి అడ్డం రాకుండా ఉండగలిగే వంద డీప్, మెలొడిక్ హౌస్ పాటలు — Chris Malinchak, Sultan + Shepard, Lenno మరియు Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "ఫ్యూచర్ హౌస్ · ఎలక్ట్రో పాప్",
+      "desc": "ప్రకాశవంతమైన ఫ్యూచర్ హౌస్, ఎలక్ట్రో పాప్ — వంద పాటల్లో Lenno, La Felix, The Knocks, Kraak & Smaak మరియు Chris Malinchak."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "జాజీ హిప్-హాప్ · బూమ్ బ్యాప్",
+      "desc": "నెమ్మది సాయంత్రాల కోసం జాజ్ శాంపిల్ చేసే బూమ్ బ్యాప్ — Blu & Exile, Large Professor, 3582 మరియు Scienze వెచ్చని లూప్‌లనూ తొందర లేని పాదాలనూ పంచుకుంటారు."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "జాజ్-హాప్ · బూమ్ బ్యాప్",
+      "desc": "Phoniks శిబిరపు స్వర్ణయుగపు జాజ్-హాప్ — దుమ్ము పట్టిన హార్న్‌లు, డబుల్ బాస్ మీద Awon & Phoniks, Anti Lilly, Dephlow మరియు Tiff the Gift."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "ప్రత్యామ్నాయ R&B · నియో సోల్",
+      "desc": "ప్రత్యామ్నాయ R&B, అర్ధరాత్రి నియో సోల్ — మసక డ్రమ్స్, తొందర లేని బాస్‌లైన్‌ల మీద Brent Faiyaz, Elujay, J.Robb మరియు Lou Phelps."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "డిస్కో · బూగీ",
+      "desc": "డెబ్భై, ఎనభైల నాటి ఫ్లోర్ నింపే పాటలు — CHIC, Luther Vandross, The Jacksons, Change మరియు Oliver Cheatham. పని చేసేవి తీగ వాయిద్యాలు, చప్పట్లు, బాస్‌లైన్‌లు."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "యాసిడ్ జాజ్ · ను జాజ్",
+      "desc": "వెనుక ప్రత్యక్ష బృందంతో యాసిడ్ జాజ్, ను జాజ్ — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson మరియు Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "గాస్పెల్ · సోల్",
+      "desc": "గది మొత్తాన్ని ఎత్తే గాస్పెల్ మూలాల సోల్ — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris మరియు Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "బ్రోకెన్ బీట్ · ను జాజ్",
+      "desc": "నెమ్మది మధ్యాహ్నాల కోసం బ్రోకెన్ బీట్, బ్రిటిష్ ను జాజ్ — Emma-Jean Thackray, Blue Lab Beats, Galliano మరియు The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "బ్రిటిష్ సోల్ · బ్రోకెన్ బీట్",
+      "desc": "అత్యంత వెచ్చని రూపంలో బ్రిటిష్ సోల్ — Incognito, Shaun Escoffery, Cherri V మరియు Tortured Soul, గదిలో Stevie Wonder తో."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "ఆధునిక జాజ్ · R&B",
+      "desc": "సంభాషణలో ఆధునిక జాజ్, R&B — Robert Glasper, August Greene, Common, Karriem Riggins మరియు Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "సోల్ · జాజ్ ఫంక్",
+      "desc": "వెనుక నిజమైన వాద్యకారులతో ప్రేమ గీతాలు — 4hero మరియు Marc Mac, Incognito, Imaani, Natalie Duncan మరియు Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "నియో సోల్ · జాజ్",
+      "desc": "వెచ్చని సాయంత్రాల కోసం యాభై ఐదు నియో సోల్, జాజ్ పాటలు — India.Arie, Robert Glasper, Lucy Pearl, Anthony David మరియు Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "నియో సోల్ · ఆధునిక R&B",
+      "desc": "డెబ్భై మూడు నియో సోల్, ఆధునిక R&B పాటలు — Alex Isley, Yebba, Ego Ella May, Robert Glasper మరియు Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "జాజ్ ఫంక్ · నియో సోల్",
+      "desc": "వాద్యకారుల మీద వెలుగు పడే వంద పాటలు — Erykah Badu, Jill Scott, Omar, Esperanza Spalding మరియు Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "ర్యాప్ · వెస్ట్ కోస్ట్",
+      "desc": "నాలుగు దశాబ్దాల్లో విస్తరించిన వంద ర్యాప్ పాటలు — 2Pac మరియు Dr. Dre, Snoop Dogg మరియు Tha Dogg Pound, Ghostface Killah, Nicki Minaj మరియు DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "ర్యాప్ · సోల్ · ఫ్రెంచ్ టచ్",
+      "desc": "శైలి నియమం లేకుండా రికార్డు పెట్టెల్లో తవ్విన వంద పాటలు — MC Solaar, 113 పక్కన Dr. Dre, Eminem; DJ Mehdi, Thomas Bangalter పక్కన Charles Aznavour."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "హార్డ్‌కోర్ ర్యాప్ · బూమ్ బ్యాప్",
+      "desc": "ధ్వని పెంచి తొంభైల హార్డ్‌కోర్ ర్యాప్ — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre మరియు Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "బూమ్ బ్యాప్ · జాజ్ ర్యాప్",
+      "desc": "తొంభైల నాటి ఎనభై ఆరు బూమ్ బ్యాప్, జాజ్ ర్యాప్ పాటలు — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde మరియు Guru యొక్క Jazzmatazz."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "అండర్‌గ్రౌండ్ · బూమ్ బ్యాప్",
+      "desc": "అండర్‌గ్రౌండ్ బూమ్ బ్యాప్, వాద్య రచనలు — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D మరియు Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "ఇండీ హిప్-హాప్ · పాప్ ర్యాప్",
+      "desc": "ఊపు ఉన్న ఇండీ హిప్-హాప్, పాప్ ర్యాప్ — Quinn XCII, Kid Quill, EMAN8, gianni & kyle మరియు YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "చిల్‌వేవ్ · డౌన్‌టెంపో",
+      "desc": "సుదీర్ఘ ప్రయాణానికో నెమ్మది ఉదయానికో బరువు లేని డౌన్‌టెంపో — మృదువైన డ్రమ్స్ మీద Zero 7, Les Imprimés మరియు Ciao Ciao Marigold."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "ట్రిప్-హాప్ · జాజ్-హాప్",
+      "desc": "Proleter, Poldoore, Souleance మరియు The Geek x Vrv నుంచి జాజ్ శాంపిల్ చేసే ట్రిప్-హాప్. సినిమాటిక్, తొందర లేనిది, రాయడం కోసం కట్టినది."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "డౌన్‌టెంపో · ను జాజ్",
+      "desc": "ఆలోచనను ఆనించగలిగే డౌన్‌టెంపో, ను జాజ్ — Zero 7, The Cinematic Orchestra, Souleance, Mozez మరియు Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "ట్రిప్-హాప్ · డౌన్‌టెంపో",
+      "desc": "సోల్ కేంద్రం ఉన్న ట్రిప్-హాప్, డౌన్‌టెంపో — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra మరియు కొత్తగా మలచిన Nina Simone."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "లో-ఫై · చదువు బీట్లు",
+      "desc": "చదువుకూ లోతైన పనికీ యాభై రెండు లో-ఫై హిప్ హాప్ బీట్లు — Idealism, j'san, Joey Pecoraro, Sugi.wa మరియు aimless. వాదించడానికి గాత్రమే లేదు."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "ఫ్రెంచ్ హౌస్ · ను-డిస్కో",
+      "desc": "సమాన వేగంతో ఫంకీ ఫ్రెంచ్ హౌస్, ను-డిస్కో — Breakbot, Modjo, Fred Falke, Kartell మరియు Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "ను జాజ్ · డౌన్‌టెంపో",
+      "desc": "సేదతీరడానికి ఓదార్పునిచ్చే ను జాజ్, డౌన్‌టెంపో — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly మరియు Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "సోల్ · జాజ్ ఫంక్",
+      "desc": "రోజు మొదలుపెట్టడానికి సోల్, జాజ్ ఫంక్ — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak మరియు Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "ఉత్తేజపరిచే పాప్",
+      "desc": "కదలడానికి అరవై నాలుగు ప్రకాశవంతమైన, వేగవంతమైన పాప్ పాటలు — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear మరియు Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "జాజ్ ర్యాప్ · ప్రత్యామ్నాయ R&B",
+      "desc": "చెప్పడానికి ఏదో ఉన్న జాజ్ ర్యాప్, ప్రత్యామ్నాయ R&B — Noname, Anderson .Paak, KAYTRANADA, Q-Tip మరియు A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "ఆఫ్రోబీట్ · వాసులు",
+      "desc": "పశ్చిమ ఆఫ్రికా గొంతులు ముందు వరుసలో — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh మరియు Kareyce Fotso, వాసులు నుంచి కోరా దాకా."
+    }
+  },
+  "faq": {
+    "heading": "ప్రశ్నలా? సమాధానాలు.",
+    "sub": "ఎలా వినాలి, దేనిపై వినాలి, ఈ సంగీతం ఎక్కడి నుంచి వచ్చింది.",
+    "items": [
+      {
+        "q": "వినడానికి Spotify చందా కావాలా?",
+        "a": "అక్కర్లేదు. ఉచిత Spotify ఖాతాతోనే పైన ఉన్న ప్లేయర్‌లో ప్రతి ప్లేలిస్ట్ వినిపిస్తుంది, పాటల మధ్య ప్రకటనలతో. Premium ఖాతా ప్రకటనలను తీసేసి ఆఫ్‌లైన్ వినికిడిని ఇస్తుంది, కానీ ఇక్కడ ఏదీ చెల్లింపు గోడ వెనుక లేదు."
+      },
+      {
+        "q": "బదులుగా Apple Music లో వినవచ్చా?",
+        "a": "వినవచ్చు — music.apple.com/profile/bxhero లోని ప్రొఫైల్‌ను అనుసరించండి. ఈ పేజీలోని ప్లేలిస్టులు Spotify సంస్కరణలు, ఎందుకంటే Apple Music వ్యక్తిగత ప్లేలిస్ట్ లింక్‌లను బహిరంగంగా ఇవ్వదు. ఆ వేదికపై ప్రొఫైల్‌ను అనుసరించడమే నమ్మదగిన మార్గం."
+      },
+      {
+        "q": "ఇవి ఏ పరికరాల్లో పనిచేస్తాయి?",
+        "a": "Spotify నడిచే ప్రతిచోటా: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox మరియు ఏ బ్రౌజర్‌లోనైనా. ఈ పేజీలోని ప్లేయర్లు యాప్ లేకుండానే మొబైల్‌లోనూ కంప్యూటర్‌లోనూ పనిచేస్తాయి."
+      },
+      {
+        "q": "లోతైన పనికి ఏ ప్లేలిస్ట్ తో మొదలుపెట్టాలి?",
+        "a": "దృష్టి చెదరకుండా ఏకాగ్రత కోసం ఉదయం &amp; మనోభావం — చదవడంతో పోటీ పడనంత తక్కువ గాత్రం ఉన్న లేదా అసలు లేని డౌన్‌టెంపో, ను జాజ్, లో-ఫై. ప్రశాంతత కంటే ఊపు కావాల్సిన పనికి ఎలక్ట్రానిక్ సరిపోతుంది."
+      },
+      {
+        "q": "ప్లేలిస్టులు ఎంత తరచుగా నవీకరిస్తారు?",
+        "a": "క్రమం తప్పకుండా, అక్కడే. Spotify లో ఒక ప్లేలిస్ట్‌ను గానీ రెండు సేవల్లో ఏదో ఒకదానిలో ప్రొఫైల్‌ను గానీ అనుసరిస్తే చాలు: కొత్త పాటలు వాటంతట అవే వస్తాయి, ఇక్కడికి తిరిగి రావాల్సిన పని లేదు."
+      },
+      {
+        "q": "ఈ ప్లేలిస్టులను పంచవచ్చా లేదా పొందుపరచవచ్చా?",
+        "a": "పంచవచ్చు. ప్రతి కార్డు Spotify లోని ప్లేలిస్ట్‌కు తీసుకెళ్తుంది, అక్కడి భాగస్వామ్య మెనూ లింక్‌లనూ ఎంబెడ్ కోడ్‌నూ ఇస్తుంది. ఇవి బహిరంగ ప్లేలిస్టులు, స్వేచ్ఛగా పంచుకోవచ్చు."
+      },
+      {
+        "q": "ఈ ప్లేలిస్టులు ఎవరు చేస్తారు?",
+        "a": "Sebastien Rousseau — Spotify మరియు Apple Music లో BXHERO పేరుతో. చెల్లింపులు, ఇంజనీరింగ్ గురించి రాస్తున్నప్పుడు నిజంగా వినిపించే ప్లేలిస్టులు ఇవి; అల్గారిథమిక్ ఫీడ్ కాదు."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "ప్రతి పరికరంలోనూ వినండి",
+    "body": "ప్రతి ప్లేలిస్ట్ పైన ఉన్న బ్రౌజర్‌లోనూ, మీరు ఇప్పటికే వాడుతున్న పరికరాల్లోని Spotify యాప్‌లోనూ వినిపిస్తుంది. రెండు సేవల్లో ఏదో ఒకదానిలో ప్రొఫైల్‌ను అనుసరించండి, కొత్త ప్లేలిస్టులు వాటంతట అవే వస్తాయి.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "వెబ్ బ్రౌజర్"
+    ]
+  }
+}

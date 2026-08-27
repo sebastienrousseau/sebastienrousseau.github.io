@@ -19,5 +19,68 @@
   "blockchain-digital-assets": {
     "title": "Blockchain & Tài sản số",
     "lede": "Blockchain và tài sản số: token hoá, ERC-20, stablecoin, hạ tầng tiền mã hoá và khung quy định định hình chúng."
-  }
+  },
+  "cloud-native-banking": {
+    "title": "Ngân hàng thuần đám mây",
+    "lede": "Kỹ thuật nền tảng dựa trên Kubernetes cho các định chế chịu giám sát: khả năng chống chịu vận hành đã kiểm thử theo DORA, sự hội tụ giữa máy ảo và container, đám mây chủ quyền, chiến lược thoát, và kiến trúc cho phép ngân hàng đưa dịch vụ trọng yếu lên môi trường thật dưới sự giám sát."
+  },
+  "agentic-ai-banking": {
+    "title": "AI tác tử trong ngân hàng",
+    "lede": "Mặt phẳng điều khiển tác tử, định tuyến ngữ nghĩa tất định, cổng chính sách OPA, nhật ký kiểm toán WORM bất biến, và lăng kính rủi ro mô hình SR 11-7 / SS1/23 biến các luồng công việc tự trị thành bằng chứng sẵn sàng trình cơ quan giám sát."
+  },
+  "treasury-automation": {
+    "title": "Tự động hóa ngân quỹ",
+    "lede": "Thanh khoản khả lập trình, ngân quỹ tự trị, động cơ thanh toán ISO 20022, và các bộ công cụ nguồn mở biến CAMT / pacs.008 / MT940 / pain.001 thành thông tin giao dịch có thể kiểm toán ở tầm hội đồng quản trị cho các đội ngân quỹ doanh nghiệp."
+  },
+  "operational-resilience-dora": {
+    "title": "Khả năng chống chịu vận hành và DORA",
+    "lede": "Trách nhiệm giải trình của hội đồng quản trị theo Điều 5 DORA, tổng hợp dữ liệu rủi ro theo BCBS 239, rủi ro tập trung bên thứ ba, kiểm thử thoát, và các biện pháp kiểm soát kỹ thuật biến khả năng chống chịu vận hành từ một dự án tuân thủ thành bảng điểm sẵn sàng trình cơ quan giám sát."
+  },
+  "stablecoins-tokenisation": {
+    "title": "Stablecoin và mã hóa tài sản",
+    "lede": "Tiền gửi được mã hóa, quỹ thị trường tiền tệ, các chương trình thí điểm tiền kỹ thuật số ngân hàng trung ương bán buôn, BRSRV/BSTBL của BlackRock, Đạo luật GENIUS, và những lựa chọn kỹ thuật giúp tiền khả lập trình vận hành bên trong các bảng cân đối chịu giám sát."
+  },
+  "generative-ai-llms": {
+    "title": "AI tạo sinh và mô hình ngôn ngữ lớn",
+    "lede": "Mô hình nền tảng, mô hình ngôn ngữ lớn đa phương thức (Gemini, Gemma, Mistral, MM1), kỹ thuật prompt, và các bản phát hành nguồn mở định hình những gì ngân hàng có thể xây bên trong vành đai dữ liệu của chính mình."
+  },
+  "voice-speech-ai": {
+    "title": "AI giọng nói và lời nói",
+    "lede": "Nhân bản giọng nói, nhận dạng lời nói thời gian thực (Whisper), trợ lý giọng nói cho lãnh đạo, và ngăn xếp trí tuệ âm thanh đang định hình lại trải nghiệm khách hàng ngân hàng tư nhân."
+  },
+  "ai-governance-regulation": {
+    "title": "Quản trị và quy định về AI",
+    "lede": "Tuân thủ Đạo luật AI của Liên minh châu Âu, rủi ro mô hình theo SR 11-7, trách nhiệm giải trình ở cấp hội đồng quản trị, khả năng kiểm toán các luồng công việc tự trị, và khung pháp lý cho AI trong các ngân hàng hàng đầu."
+  },
+  "wholesale-payments-rails": {
+    "title": "Đường ray thanh toán bán buôn",
+    "lede": "Chiến lược đa đường ray trải trên thẻ, chuyển khoản tài khoản sang tài khoản, RTP, FedNow, ngân hàng mở và các hành lang stablecoin. Kinh tế học bán buôn, tính chung cuộc của thanh toán, và mô hình nguyên tử xuyên biên giới của Dự án Agorá thuộc BIS."
+  },
+  "_pillars": [
+    {
+      "name": "Mật mã học và khả năng chống chịu",
+      "lede": "Chuyển đổi hậu lượng tử, khả năng chống chịu vận hành ở tầm DORA, và khung quản trị AI trong dịch vụ tài chính."
+    },
+    {
+      "name": "Thanh toán và tiền tệ",
+      "lede": "Chuyển đổi ISO 20022, thanh toán bán buôn, stablecoin, tiền gửi được mã hóa, và chức năng ngân quỹ doanh nghiệp xoay quanh chúng."
+    },
+    {
+      "name": "AI và đám mây",
+      "lede": "AI ứng dụng, hệ thống tác tử, mô hình tạo sinh, AI giọng nói và lời nói, cùng các nền tảng ngân hàng thuần đám mây vận hành chúng."
+    },
+    {
+      "name": "Nguồn mở và tay nghề",
+      "lede": "Thư viện Rust, các nguyên thủy blockchain, và kỷ luật kỹ thuật nguồn mở đứng sau chúng."
+    }
+  ],
+  "_hub_lede": "Bốn trụ cột, mười bốn cụm chủ đề, mọi bài viết có ngày tháng. Chọn một sợi chỉ và lần theo nó xuyên suốt kho lưu trữ.",
+  "_banner_word": "biểu ngữ chủ đề",
+  "_kpi": [
+    "Trụ cột",
+    "Cụm chủ đề",
+    "Bài viết đã lập chỉ mục"
+  ],
+  "_article_count": "{n} bài viết",
+  "_pillar_kicker": "TRỤ CỘT"
 }

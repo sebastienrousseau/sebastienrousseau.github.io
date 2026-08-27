@@ -35,10 +35,7 @@ def test_alias_map_tolerates_missing_aliases_key() -> None:
 
 # --- _post_meta ------------------------------------------------------------
 
-_POST = (
-    '---\ntitle: "The Quantum Age"\n'
-    'tags: "post-quantum, cryptography"\n---\nbody text\n'
-)
+_POST = '---\ntitle: "The Quantum Age"\ntags: "post-quantum, cryptography"\n---\nbody text\n'
 
 
 def test_post_meta_extracts_title_date_slug_tags(tmp_path: Path) -> None:

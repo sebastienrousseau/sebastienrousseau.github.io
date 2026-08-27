@@ -1,0 +1,261 @@
+{
+  "_comment": "YO copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "Àkójọ orin",
+    "jump": "Gbọ́ àkójọ orin tuntun",
+    "platformsLabel": "Gbogbo àkójọpọ̀ náà wà lórí Apple Music pẹ̀lú",
+    "navLabel": "Fò sí ẹ̀ka orin kan",
+    "play": "Tẹ́tí sí i lórí Spotify",
+    "follow": "Tẹ̀lé lórí Spotify",
+    "apple": "Tẹ́tí sí i lórí Apple Music",
+    "countOne": "àkójọ orin",
+    "countOther": "àkójọ orin",
+    "coverAlt": "Àwòrán ìbòrí àkójọ orin {title}",
+    "openAria": "Ṣí {title} lórí Spotify",
+    "frameTitle": "Àkójọ orin {title} lórí Spotify"
+  },
+  "intro": [
+    "Àkójọ orin mọ́kàndínlógójì àti orin 1,763, tí a kọ́ fún àwọn wákàtí tí ó nílò orin lẹ́yìn: iṣẹ́ jíjìn, kíkà gígùn àti àtúnkọ àárọ̀ òru.",
+    "Neo soul àti nu jazz nígbà tí iṣẹ́ bá nílò sùúrù. Boom bap àti jazz rap nígbà tí ó bá nílò agbára ìtẹ̀síwájú. French touch, deep house àti disco house nígbà tí ó bá nílò gbígbéga. Lo-fi fún apá tí a fi orí balẹ̀ ṣe, àti àwọn ìlù Ìwọ̀ Oòrùn Áfíríkà tí ó ń gba inú gbogbo rẹ̀ kọjá.",
+    "Gbogbo àkójọ orin ni a lè gbọ́ lọ́fẹ̀ẹ́ lórí Spotify, gbogbo àkójọpọ̀ náà sì wà lórí Apple Music."
+  ],
+  "featured": {
+    "kicker": "Àkójọ orin tuntun",
+    "date": "Ògúsù 2026",
+    "genres": "Indie pop · French house",
+    "desc": "Indie pop tí oòrùn kún inú rẹ̀ tí ó ń yọ́ wọ inú French house — Tame Impala àti almost monday fi ààyè sílẹ̀ fún Justice, L'Impératrice àti afro house láti ọwọ́ HUGEL."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "Ẹ̀rọ orin",
+      "sub": "House, disco àti French touch"
+    },
+    "soul-jazz": {
+      "title": "Soul &amp; Jazz",
+      "sub": "Neo soul, nu jazz àti ìlù tí ó lọ́ra"
+    },
+    "hip-hop": {
+      "title": "Hip-Hop",
+      "sub": "Boom bap, jazz rap àti ìlù ìgbà wúrà"
+    },
+    "morning-mood": {
+      "title": "Àárọ̀ &amp; ìṣesí",
+      "sub": "Downtempo, lo-fi àti agbára jíjí"
+    },
+    "global": {
+      "title": "Àgbáyé",
+      "sub": "Àwọn ìlù láti gbogbo ibòmíràn"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "Disco house · Garage",
+      "desc": "Disco house àti garage ti òpin ọdún àádọ́rùn-ún tí ó ṣì ń kún ilẹ̀ ijó — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden àti Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "Indie pop · French house",
+      "desc": "Indie pop tí oòrùn kún inú rẹ̀ tí ó ń yọ́ wọ inú French house — Tame Impala àti almost monday fi ààyè sílẹ̀ fún Justice, L'Impératrice àti afro house láti ọwọ́ HUGEL."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "French touch · Electro",
+      "desc": "French touch pẹ̀lú ìmọ́lẹ̀ kíkún — Daft Punk, Justice, Kavinsky, L'Impératrice àti Angèle ń pààrọ̀ synth neon àti ìlà bass motorik."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "Indie dance · Synth pop",
+      "desc": "Synth pop àti indie dance ní wákàtí wúrà — Blu DeTiger, Merty Shango, Citrus Sun àti Enne ń gbé ìtànṣán yẹn dé alẹ́."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "Nu-disco · French house",
+      "desc": "Nu-disco àti French house pẹ̀lú àlẹ̀mọ́ ṣíṣí — Fred Falke, Breakbot, Madeon, Lemaitre àti Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "Progressive house · Electro",
+      "desc": "Progressive house àti electro tí a kọ́ fún ìṣíkiri — Madeon, Paul Woolford, Martin Solveig, Secondcity àti The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "Nu-disco · House àlẹ̀mọ́",
+      "desc": "Nu-disco àti house àlẹ̀mọ́ tí a kọ́ fún ìṣíkiri — Lenno, Oliver, Tollef àti Yelle lórí gita gígé àti bass synth tí ó nípọn."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "Deep house · Melodic house",
+      "desc": "Orin ọgọ́rùn-ún ti deep àti melodic house tí ó mọ̀ láti má dí ọ̀nà — Chris Malinchak, Sultan + Shepard, Lenno àti Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "Future house · Electro pop",
+      "desc": "Future house tí ó mọ́lẹ̀ àti electro pop — Lenno, La Felix, The Knocks, Kraak & Smaak àti Chris Malinchak láàrin orin ọgọ́rùn-ún."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "Hip-hop onítọ́wọ́ jazz · Boom bap",
+      "desc": "Boom bap tí ó ń mú àpẹẹrẹ jazz fún àwọn alẹ́ tí ó lọ́ra — Blu & Exile, Large Professor, 3582 àti Scienze ń pààrọ̀ ìyíká gbígbóná àti ẹsẹ tí kò yára."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "Jazz-hop · Boom bap",
+      "desc": "Jazz-hop ìgbà wúrà láti ibùdó Phoniks — Awon & Phoniks, Anti Lilly, Dephlow àti Tiff the Gift lórí ohun èlò fífẹ́ tí eruku bò àti bass gíga."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "R&B àyàn · Neo soul",
+      "desc": "R&B àyàn àti neo soul àárín òru — Brent Faiyaz, Elujay, J.Robb àti Lou Phelps lórí ìlù tí kò yékéré àti ìlà bass tí kò yára."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "Disco · Boogie",
+      "desc": "Orin tí ó kún ilẹ̀ ijó ní ọdún àádọ́rin àti ọgọ́rin — CHIC, Luther Vandross, The Jacksons, Change àti Oliver Cheatham. Àwọn tí ń ṣiṣẹ́ ni okùn, ìpàtẹ́wọ́ àti ìlà bass."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "Acid jazz · Nu jazz",
+      "desc": "Acid jazz àti nu jazz pẹ̀lú ẹgbẹ́ alààyè lẹ́yìn — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson àti Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "Gospel · Soul",
+      "desc": "Soul tí gbòngbò rẹ̀ jẹ́ gospel tí ó ń gbé gbogbo yàrá sókè — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris àti Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "Broken beat · Nu jazz",
+      "desc": "Broken beat àti nu jazz ilẹ̀ Gẹ̀ẹ́sì fún ọ̀sán tí ó lọ́ra — Emma-Jean Thackray, Blue Lab Beats, Galliano àti The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "Soul ilẹ̀ Gẹ̀ẹ́sì · Broken beat",
+      "desc": "Soul ilẹ̀ Gẹ̀ẹ́sì ní ọ̀nà tí ó gbóná jùlọ — Incognito, Shaun Escoffery, Cherri V àti Tortured Soul, pẹ̀lú Stevie Wonder nínú yàrá náà."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "Jazz òde òní · R&B",
+      "desc": "Jazz òde òní àti R&B nínú ìjíròrò — Robert Glasper, August Greene, Common, Karriem Riggins àti Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Orin ìfẹ́ pẹ̀lú àwọn agbáradùrù gidi lẹ́yìn — 4hero àti Marc Mac, Incognito, Imaani, Natalie Duncan àti Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "Neo soul · Jazz",
+      "desc": "Orin àádọ́ta-lé-márùn-ún ti neo soul àti jazz fún àwọn alẹ́ gbígbóná — India.Arie, Robert Glasper, Lucy Pearl, Anthony David àti Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "Neo soul · R&B òde òní",
+      "desc": "Orin àádọ́rin-lé-mẹ́ta ti neo soul àti R&B òde òní — Alex Isley, Yebba, Ego Ella May, Robert Glasper àti Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "Jazz funk · Neo soul",
+      "desc": "Orin ọgọ́rùn-ún tí ìmọ́lẹ̀ wà lórí àwọn agbáradùrù — Erykah Badu, Jill Scott, Omar, Esperanza Spalding àti Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "Rap · Etíkun Ìwọ̀ Oòrùn",
+      "desc": "Orin rap ọgọ́rùn-ún ní ẹ̀wádún mẹ́rin — 2Pac àti Dr. Dre, Snoop Dogg àti Tha Dogg Pound, Ghostface Killah, Nicki Minaj àti DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "Rap · Soul · French touch",
+      "desc": "Orin ọgọ́rùn-ún tí a gbẹ́ jáde láti inú àpótí àwo láìsí òfin ẹ̀ka — Dr. Dre àti Eminem lẹ́gbẹ̀ẹ́ MC Solaar àti 113, Charles Aznavour lẹ́gbẹ̀ẹ́ DJ Mehdi àti Thomas Bangalter."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "Rap líle · Boom bap",
+      "desc": "Rap líle ti ọdún àádọ́rùn-ún pẹ̀lú ohùn gbígbé sókè — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre àti Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "Boom bap · Jazz rap",
+      "desc": "Orin ọgọ́rin-lé-mẹ́fà ti boom bap àti jazz rap ọdún àádọ́rùn-ún — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde àti Jazzmatazz ti Guru."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "Underground · Boom bap",
+      "desc": "Boom bap underground àti orin ohun èlò — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D àti Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "Hip-hop indie · Pop rap",
+      "desc": "Hip-hop indie àti pop rap pẹ̀lú agbára ìtẹ̀síwájú — Quinn XCII, Kid Quill, EMAN8, gianni & kyle àti YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "Chillwave · Downtempo",
+      "desc": "Downtempo tí kò wúwo fún ìrìnàjò gígùn tàbí àárọ̀ tí ó lọ́ra — Zero 7, Les Imprimés àti Ciao Ciao Marigold lórí ìlù tí ó rọ̀."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "Trip-hop · Jazz-hop",
+      "desc": "Trip-hop tí ó ń mú àpẹẹrẹ jazz láti ọwọ́ Proleter, Poldoore, Souleance àti The Geek x Vrv. Bí fíìmù, kò yára, a kọ́ ọ fún kíkọ̀wé."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "Downtempo · Nu jazz",
+      "desc": "Downtempo àti nu jazz tí èrò lè fara tì — Zero 7, The Cinematic Orchestra, Souleance, Mozez àti Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "Trip-hop · Downtempo",
+      "desc": "Trip-hop àti downtempo tí ọkàn rẹ̀ jẹ́ soul — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra àti Nina Simone tí a tún ṣe."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "Lo-fi · Ìlù ìkẹ́kọ̀ọ́",
+      "desc": "Ìlù lo-fi hip hop àádọ́ta-lé-méjì fún ìkẹ́kọ̀ọ́ àti iṣẹ́ jíjìn — Idealism, j'san, Joey Pecoraro, Sugi.wa àti aimless. Kò sí ohùn tí yóò bá ọ jiyàn."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "French house · Nu-disco",
+      "desc": "French house onífúńkì àti nu-disco ní ìwọ̀n kan náà — Breakbot, Modjo, Fred Falke, Kartell àti Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "Nu jazz · Downtempo",
+      "desc": "Nu jazz àti downtempo tí ń tuni lára fún ìsinmi — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly àti Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Soul àti jazz funk láti bẹ̀rẹ̀ ọjọ́ — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak àti Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "Pop tí ń gbé ọkàn sókè",
+      "desc": "Orin pop ọgọ́ta-lé-mẹ́rin tí ó mọ́lẹ̀ tí ó sì yára fún ìṣíkiri — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear àti Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "Jazz rap · R&B àyàn",
+      "desc": "Jazz rap àti R&B àyàn tí wọ́n ní ohun tí wọ́n fẹ́ sọ — Noname, Anderson .Paak, KAYTRANADA, Q-Tip àti A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "Afrobeat · Wassoulou",
+      "desc": "Àwọn ohùn Ìwọ̀ Oòrùn Áfíríkà ní iwájú — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh àti Kareyce Fotso, láti wassoulou dé kora."
+    }
+  },
+  "faq": {
+    "heading": "Ìbéèrè? Ìdáhùn.",
+    "sub": "Bí a ṣe ń tẹ́tí sí i, lórí kí ni, àti ibi tí orin náà ti wá.",
+    "items": [
+      {
+        "q": "Ṣé mo nílò ìforúkọsílẹ̀ Spotify kí n tó lè tẹ́tí sí i?",
+        "a": "Rárá. Gbogbo àkójọ orin ni ó ń ṣiṣẹ́ nínú ẹ̀rọ tí ó wà lókè pẹ̀lú àkàǹtì Spotify ọ̀fẹ́, pẹ̀lú ìpolówó láàrin orin. Àkàǹtì Premium ń mú ìpolówó kúrò ó sì ń jẹ́ kí a tẹ́tí sí i láìsí ìntánẹ́ẹ̀tì, ṣùgbọ́n kò sí ohunkóhun níbí tí ó wà lẹ́yìn ògiri owó."
+      },
+      {
+        "q": "Ṣé mo lè tẹ́tí sí i lórí Apple Music dípò?",
+        "a": "Bẹ́ẹ̀ ni — tẹ̀lé profáìlì náà ní music.apple.com/profile/bxhero. Àwọn àkójọ orin lórí ojú-ìwé yìí jẹ́ ẹ̀dà Spotify, nítorí Apple Music kò ṣí ọ̀nà àbáwọlé àkójọ orin kọ̀ọ̀kan sílẹ̀ fún gbogbo ènìyàn. Lórí pẹpẹ yẹn, títẹ̀lé profáìlì ni ọ̀nà tí a lè gbẹ́kẹ̀lé."
+      },
+      {
+        "q": "Àwọn ẹ̀rọ wo ni wọ́n ń ṣiṣẹ́ lórí?",
+        "a": "Ibikíbi tí Spotify bá ń ṣiṣẹ́: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox àti ẹ̀rọ àṣàwákiri èyíkéyìí. Àwọn ẹ̀rọ ìṣeré lórí ojú-ìwé yìí ń ṣiṣẹ́ lórí ẹ̀rọ ìbánisọ̀rọ̀ àti kọ̀ǹpútà láìsí ohun èlò."
+      },
+      {
+        "q": "Àkójọ orin wo ni kí n bẹ̀rẹ̀ pẹ̀lú fún iṣẹ́ jíjìn?",
+        "a": "Àárọ̀ &amp; ìṣesí fún ìdojúkọ láìsí ìdíwọ́ — downtempo, nu jazz àti lo-fi pẹ̀lú ohùn díẹ̀ tàbí láìsí ohùn rárá kí ó má bàa bá kíkà díje. Ẹ̀rọ orin bá iṣẹ́ tí ó nílò agbára ìtẹ̀síwájú dípò ìdákẹ́rọ́rọ́ mu."
+      },
+      {
+        "q": "Ìgbà mélòó ni a ń ṣe àtúnṣe sí àwọn àkójọ orin?",
+        "a": "Nígbà gbogbo, àti ní ibẹ̀ náà. Títẹ̀lé àkójọ orin lórí Spotify tàbí profáìlì lórí èyíkéyìí nínú àwọn iṣẹ́ méjèèjì tó: orin tuntun ń dé fúnra rẹ̀ láìsí padà síbí."
+      },
+      {
+        "q": "Ṣé mo lè pín tàbí fi àwọn àkójọ orin yìí sínú ojú-ìwé mi?",
+        "a": "Bẹ́ẹ̀ ni. Káàdì kọ̀ọ̀kan ń darí sí àkójọ orin lórí Spotify, níbi tí àkójọ ìpínkiri ti ń fún ni ní ọ̀nà àbáwọlé àti kóòdù ìfibọ̀. Àkójọ orin gbangba ni wọ́n, a lè pín wọn lọ́fẹ̀ẹ́."
+      },
+      {
+        "q": "Ta ni ó ń ṣe àwọn àkójọ orin yìí?",
+        "a": "Sebastien Rousseau — gẹ́gẹ́ bí BXHERO lórí Spotify àti Apple Music. Àwọn àkójọ orin tí ó ń ṣiṣẹ́ nígbà tí ó bá ń kọ̀wé nípa ìsanwó àti iṣẹ́ ẹ̀rọ ni wọ́n, kì í ṣe ìṣàn algorithm."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "Tẹ́tí sí i lórí gbogbo ẹ̀rọ",
+    "body": "Gbogbo àkójọ orin ni ó ń ṣiṣẹ́ nínú ẹ̀rọ àṣàwákiri tí ó wà lókè, àti nínú ohun èlò Spotify lórí àwọn ẹ̀rọ tí o ti ń lò tẹ́lẹ̀. Tẹ̀lé profáìlì náà lórí èyíkéyìí nínú àwọn iṣẹ́ méjèèjì, àwọn àkójọ orin tuntun yóò sì máa dé fúnra wọn.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "Ẹ̀rọ àṣàwákiri wẹ́ẹ̀bù"
+    ]
+  }
+}

@@ -224,9 +224,7 @@ def measure_seo(cat: Category, ps: list[Path]) -> None:
     cat.metrics[2].value = og
     cat.metrics[3].value = placeholder
 
-    _rc, out = run(
-        ["python3", "scripts/seo_and_audit/validate_jsonld.py", "--base-dir", "public"]
-    )
+    _rc, out = run(["python3", "scripts/seo_and_audit/validate_jsonld.py", "--base-dir", "public"])
     m = re.search(r"(\d+) with structured-data errors", out)
     if m:
         cat.metrics[4].value = int(m.group(1))
@@ -245,7 +243,13 @@ def measure_seo(cat: Category, ps: list[Path]) -> None:
         )
 
     _rc, out = run(
-        ["python3", "scripts/seo_and_audit/audit_links.py", "--base-dir", "public", "--strict-internal"]
+        [
+            "python3",
+            "scripts/seo_and_audit/audit_links.py",
+            "--base-dir",
+            "public",
+            "--strict-internal",
+        ]
     )
     m = re.search(r"(\d+) checked, (\d+) broken", out)
     if m:
@@ -352,18 +356,24 @@ def measure_security(cat: Category, ps: list[Path]) -> None:
     if not ps:
         return
     sample = ps[: min(len(ps), 400)]
-    unsafe = sum(1 for p in sample if "'unsafe-inline'" in p.read_text(encoding="utf-8", errors="ignore"))
+    unsafe = sum(
+        1 for p in sample if "'unsafe-inline'" in p.read_text(encoding="utf-8", errors="ignore")
+    )
     cat.metrics[0].value = unsafe
 
     with_sri = sum(
-        1 for p in sample if re.search(r'<link[^>]+integrity="sha', p.read_text(encoding="utf-8", errors="ignore"))
+        1
+        for p in sample
+        if re.search(r'<link[^>]+integrity="sha', p.read_text(encoding="utf-8", errors="ignore"))
     )
     cat.metrics[1].value = round(100 * with_sri / len(sample), 1)
 
     dupe_integrity = sum(
         1
         for p in sample
-        if re.search(r'integrity="[^"]*"\s+integrity="', p.read_text(encoding="utf-8", errors="ignore"))
+        if re.search(
+            r'integrity="[^"]*"\s+integrity="', p.read_text(encoding="utf-8", errors="ignore")
+        )
     )
     cat.metrics[2].value = dupe_integrity
 
@@ -429,81 +439,250 @@ def measure_ops(cat: Category) -> None:
 
 def rubric() -> list[Category]:
     return [
-        Category("code", "Code quality", 0.18, [
-            Metric("lint", "ruff clean", "ruff check scripts/ tests/", boolean()),
-            Metric("types", "mypy strict tier clean", "bash scripts/typecheck.sh", boolean()),
-            Metric("complexity", "C-or-worse functions", "radon cc scripts/ -n C",
-                   band([(0, 10), (10, 8), (25, 6), (40, 4), (60, 2)], higher_is_better=False)),
-            Metric("tests", "unit tests collected", "pytest --collect-only -q",
-                   band([(50_000, 10), (10_000, 9), (2_000, 8), (500, 6), (100, 4)])),
-            Metric("dupe_assets", "byte-identical assets shipped twice", "sha256 over public/_csp/",
-                   band([(0, 10), (1, 8), (3, 5), (6, 2)], higher_is_better=False)),
-        ]),
-        Category("seo", "SEO / discoverability", 0.22, [
-            Metric("desc", "pages with a real meta description (%)", "regex over public/**/index.html",
-                   band([(99, 10), (95, 9), (90, 7), (75, 5), (50, 3)])),
-            Metric("canonical", "pages with rel=canonical (%)", "regex over public/",
-                   band([(99, 10), (95, 9), (90, 7), (75, 4)])),
-            Metric("og", "pages with og:title (%)", "regex over public/",
-                   band([(99, 10), (95, 9), (90, 7), (75, 4)])),
-            Metric("placeholder", "pages carrying a generator placeholder", "grep 'My SSG Site'",
-                   band([(0, 10), (1, 3)], higher_is_better=False)),
-            Metric("jsonld", "pages with structured-data errors", "validate_jsonld.py",
-                   band([(0, 10), (1, 7), (10, 4), (50, 1)], higher_is_better=False)),
-            Metric("links", "median internal links per article", "regex inside <main>",
-                   band([(12, 10), (8, 9), (5, 7), (3, 5), (1, 2)])),
-            Metric("broken", "broken internal links", "audit_links.py --strict-internal",
-                   band([(0, 10), (1, 5)], higher_is_better=False)),
-            Metric("links_reach", "dated pages with >=4 internal links (%)", "regex inside <main>, all locales",
-                   band([(90, 10), (70, 8), (50, 6), (25, 4), (5, 2)])),
-        ]),
-        Category("ux", "UX / performance", 0.16, [
-            Metric("p50", "median transferred page weight (KB, gzip)", "gzip over a 400-page sample",
-                   band([(25, 10), (40, 9), (60, 7), (100, 5), (160, 3)], higher_is_better=False)),
-            Metric("p90", "p90 transferred page weight (KB, gzip)", "gzip over the sample",
-                   band([(40, 10), (60, 9), (90, 7), (140, 5)], higher_is_better=False)),
-            Metric("css_share", "pages sharing one stylesheet (%)", "regex over /_csp/ refs",
-                   band([(90, 10), (80, 9), (65, 7), (50, 5), (30, 3)])),
-            Metric("fonts", "self-hosted fonts with swap + metric-matched fallbacks", "fonts/fonts.css",
-                   boolean()),
-        ]),
-        Category("a11y", "Accessibility", 0.16, [
-            Metric("issues", "Pa11y issues in the last sweep", "public/accessibility-report.json",
-                   band([(0, 10), (1, 6), (10, 3)], higher_is_better=False)),
-            Metric("scanned", "pages covered by the sweep", "public/accessibility-report.json",
-                   band([(3000, 10), (1000, 9), (250, 7), (50, 5)])),
-            Metric("wcag_auto", "automated WCAG 2.2 criteria passing (%)", "public/wcag-compliance.json",
-                   band([(100, 10), (95, 9), (85, 7), (70, 5)])),
-            Metric("wcag_manual", "WCAG criteria with no verification route", "pa11y sweep + manual-criteria gate",
-                   band([(0, 10), (1, 6), (3, 3)], higher_is_better=False)),
-        ]),
-        Category("security", "Security / supply chain", 0.14, [
-            Metric("unsafe_inline", "sampled pages allowing 'unsafe-inline'", "grep over a 400-page sample",
-                   band([(0, 10), (1, 2)], higher_is_better=False)),
-            Metric("sri", "sampled pages with SRI on stylesheets (%)", "regex over a 400-page sample",
-                   band([(99, 10), (95, 9), (85, 7), (60, 4)])),
-            Metric("dupe_integrity", "pages with duplicate integrity attributes", "regex over the sample",
-                   band([(0, 10), (1, 3)], higher_is_better=False)),
-            Metric("sbom", "CycloneDX SBOM emitted", "public/sbom.cdx.json", boolean()),
-            Metric("npm_audit", "ci-tools lockfiles with high/critical advisories", "npm audit --audit-level=high",
-                   band([(0, 10), (1, 4)], higher_is_better=False)),
-        ]),
-        Category("i18n", "Internationalisation", 0.08, [
-            Metric("hreflang", "hreflang reciprocity gate", "tests/validation/test_hreflang_reciprocity.py", boolean()),
-            Metric("parity", "locale parity gate", "tests/validation/test_i18n_parity.py", boolean()),
-            Metric("slug_policy", "slug policy gate (ADR-0012)", "tests/validation/test_slug_policy.py", boolean()),
-            Metric("locales", "active locales", "count of _posts/<lang>/",
-                   band([(20, 10), (10, 9), (5, 7), (2, 5)])),
-        ]),
-        Category("ops", "Operability", 0.06, [
-            Metric("reproducible", "byte-identical rebuild gate", ".github/workflows/ci.yml", boolean()),
-            Metric("deploy_probe", "post-deploy origin verification", ".github/workflows/ci.yml", boolean()),
-            Metric("hidden_files", "deploy ships dotfiles (.well-known)", ".github/workflows/ci.yml", boolean()),
-            Metric("timeouts", "CI jobs bounded by a timeout (%)", "parse ci.yml jobs",
-                   band([(100, 10), (90, 8), (75, 6), (50, 3)])),
-            Metric("adrs", "architecture decision records", "project-docs/adr/",
-                   band([(12, 10), (8, 9), (5, 7), (2, 5)])),
-        ]),
+        Category(
+            "code",
+            "Code quality",
+            0.18,
+            [
+                Metric("lint", "ruff clean", "ruff check scripts/ tests/", boolean()),
+                Metric("types", "mypy strict tier clean", "bash scripts/typecheck.sh", boolean()),
+                Metric(
+                    "complexity",
+                    "C-or-worse functions",
+                    "radon cc scripts/ -n C",
+                    band([(0, 10), (10, 8), (25, 6), (40, 4), (60, 2)], higher_is_better=False),
+                ),
+                Metric(
+                    "tests",
+                    "unit tests collected",
+                    "pytest --collect-only -q",
+                    band([(50_000, 10), (10_000, 9), (2_000, 8), (500, 6), (100, 4)]),
+                ),
+                Metric(
+                    "dupe_assets",
+                    "byte-identical assets shipped twice",
+                    "sha256 over public/_csp/",
+                    band([(0, 10), (1, 8), (3, 5), (6, 2)], higher_is_better=False),
+                ),
+            ],
+        ),
+        Category(
+            "seo",
+            "SEO / discoverability",
+            0.22,
+            [
+                Metric(
+                    "desc",
+                    "pages with a real meta description (%)",
+                    "regex over public/**/index.html",
+                    band([(99, 10), (95, 9), (90, 7), (75, 5), (50, 3)]),
+                ),
+                Metric(
+                    "canonical",
+                    "pages with rel=canonical (%)",
+                    "regex over public/",
+                    band([(99, 10), (95, 9), (90, 7), (75, 4)]),
+                ),
+                Metric(
+                    "og",
+                    "pages with og:title (%)",
+                    "regex over public/",
+                    band([(99, 10), (95, 9), (90, 7), (75, 4)]),
+                ),
+                Metric(
+                    "placeholder",
+                    "pages carrying a generator placeholder",
+                    "grep 'My SSG Site'",
+                    band([(0, 10), (1, 3)], higher_is_better=False),
+                ),
+                Metric(
+                    "jsonld",
+                    "pages with structured-data errors",
+                    "validate_jsonld.py",
+                    band([(0, 10), (1, 7), (10, 4), (50, 1)], higher_is_better=False),
+                ),
+                Metric(
+                    "links",
+                    "median internal links per article",
+                    "regex inside <main>",
+                    band([(12, 10), (8, 9), (5, 7), (3, 5), (1, 2)]),
+                ),
+                Metric(
+                    "broken",
+                    "broken internal links",
+                    "audit_links.py --strict-internal",
+                    band([(0, 10), (1, 5)], higher_is_better=False),
+                ),
+                Metric(
+                    "links_reach",
+                    "dated pages with >=4 internal links (%)",
+                    "regex inside <main>, all locales",
+                    band([(90, 10), (70, 8), (50, 6), (25, 4), (5, 2)]),
+                ),
+            ],
+        ),
+        Category(
+            "ux",
+            "UX / performance",
+            0.16,
+            [
+                Metric(
+                    "p50",
+                    "median transferred page weight (KB, gzip)",
+                    "gzip over a 400-page sample",
+                    band([(25, 10), (40, 9), (60, 7), (100, 5), (160, 3)], higher_is_better=False),
+                ),
+                Metric(
+                    "p90",
+                    "p90 transferred page weight (KB, gzip)",
+                    "gzip over the sample",
+                    band([(40, 10), (60, 9), (90, 7), (140, 5)], higher_is_better=False),
+                ),
+                Metric(
+                    "css_share",
+                    "pages sharing one stylesheet (%)",
+                    "regex over /_csp/ refs",
+                    band([(90, 10), (80, 9), (65, 7), (50, 5), (30, 3)]),
+                ),
+                Metric(
+                    "fonts",
+                    "self-hosted fonts with swap + metric-matched fallbacks",
+                    "fonts/fonts.css",
+                    boolean(),
+                ),
+            ],
+        ),
+        Category(
+            "a11y",
+            "Accessibility",
+            0.16,
+            [
+                Metric(
+                    "issues",
+                    "Pa11y issues in the last sweep",
+                    "public/accessibility-report.json",
+                    band([(0, 10), (1, 6), (10, 3)], higher_is_better=False),
+                ),
+                Metric(
+                    "scanned",
+                    "pages covered by the sweep",
+                    "public/accessibility-report.json",
+                    band([(3000, 10), (1000, 9), (250, 7), (50, 5)]),
+                ),
+                Metric(
+                    "wcag_auto",
+                    "automated WCAG 2.2 criteria passing (%)",
+                    "public/wcag-compliance.json",
+                    band([(100, 10), (95, 9), (85, 7), (70, 5)]),
+                ),
+                Metric(
+                    "wcag_manual",
+                    "WCAG criteria with no verification route",
+                    "pa11y sweep + manual-criteria gate",
+                    band([(0, 10), (1, 6), (3, 3)], higher_is_better=False),
+                ),
+            ],
+        ),
+        Category(
+            "security",
+            "Security / supply chain",
+            0.14,
+            [
+                Metric(
+                    "unsafe_inline",
+                    "sampled pages allowing 'unsafe-inline'",
+                    "grep over a 400-page sample",
+                    band([(0, 10), (1, 2)], higher_is_better=False),
+                ),
+                Metric(
+                    "sri",
+                    "sampled pages with SRI on stylesheets (%)",
+                    "regex over a 400-page sample",
+                    band([(99, 10), (95, 9), (85, 7), (60, 4)]),
+                ),
+                Metric(
+                    "dupe_integrity",
+                    "pages with duplicate integrity attributes",
+                    "regex over the sample",
+                    band([(0, 10), (1, 3)], higher_is_better=False),
+                ),
+                Metric("sbom", "CycloneDX SBOM emitted", "public/sbom.cdx.json", boolean()),
+                Metric(
+                    "npm_audit",
+                    "ci-tools lockfiles with high/critical advisories",
+                    "npm audit --audit-level=high",
+                    band([(0, 10), (1, 4)], higher_is_better=False),
+                ),
+            ],
+        ),
+        Category(
+            "i18n",
+            "Internationalisation",
+            0.08,
+            [
+                Metric(
+                    "hreflang",
+                    "hreflang reciprocity gate",
+                    "tests/validation/test_hreflang_reciprocity.py",
+                    boolean(),
+                ),
+                Metric(
+                    "parity",
+                    "locale parity gate",
+                    "tests/validation/test_i18n_parity.py",
+                    boolean(),
+                ),
+                Metric(
+                    "slug_policy",
+                    "slug policy gate (ADR-0012)",
+                    "tests/validation/test_slug_policy.py",
+                    boolean(),
+                ),
+                Metric(
+                    "locales",
+                    "active locales",
+                    "count of _posts/<lang>/",
+                    band([(20, 10), (10, 9), (5, 7), (2, 5)]),
+                ),
+            ],
+        ),
+        Category(
+            "ops",
+            "Operability",
+            0.06,
+            [
+                Metric(
+                    "reproducible",
+                    "byte-identical rebuild gate",
+                    ".github/workflows/ci.yml",
+                    boolean(),
+                ),
+                Metric(
+                    "deploy_probe",
+                    "post-deploy origin verification",
+                    ".github/workflows/ci.yml",
+                    boolean(),
+                ),
+                Metric(
+                    "hidden_files",
+                    "deploy ships dotfiles (.well-known)",
+                    ".github/workflows/ci.yml",
+                    boolean(),
+                ),
+                Metric(
+                    "timeouts",
+                    "CI jobs bounded by a timeout (%)",
+                    "parse ci.yml jobs",
+                    band([(100, 10), (90, 8), (75, 6), (50, 3)]),
+                ),
+                Metric(
+                    "adrs",
+                    "architecture decision records",
+                    "project-docs/adr/",
+                    band([(12, 10), (8, 9), (5, 7), (2, 5)]),
+                ),
+            ],
+        ),
     ]
 
 
@@ -573,22 +752,36 @@ def main(argv: list[str] | None = None) -> int:
 
     cats = collect()
     if args.json:
-        print(json.dumps({
-            "overall": overall(cats),
-            "categories": [
+        print(
+            json.dumps(
                 {
-                    "key": c.key, "label": c.label, "weight": c.weight,
-                    "score": c.score, "coverage": c.coverage,
-                    "metrics": [
-                        {"key": m.key, "label": m.label, "how": m.how,
-                         "value": m.value if m.value is not UNMEASURED else None,
-                         "score": m.score, "detail": m.detail}
-                        for m in c.metrics
+                    "overall": overall(cats),
+                    "categories": [
+                        {
+                            "key": c.key,
+                            "label": c.label,
+                            "weight": c.weight,
+                            "score": c.score,
+                            "coverage": c.coverage,
+                            "metrics": [
+                                {
+                                    "key": m.key,
+                                    "label": m.label,
+                                    "how": m.how,
+                                    "value": m.value if m.value is not UNMEASURED else None,
+                                    "score": m.score,
+                                    "detail": m.detail,
+                                }
+                                for m in c.metrics
+                            ],
+                        }
+                        for c in cats
                     ],
-                }
-                for c in cats
-            ],
-        }, indent=2, default=str))
+                },
+                indent=2,
+                default=str,
+            )
+        )
     else:
         print(render(cats))
 

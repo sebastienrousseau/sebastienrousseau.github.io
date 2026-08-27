@@ -1,0 +1,261 @@
+{
+  "_comment": "MS copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "Senarai main",
+    "jump": "Dengar senarai main terkini",
+    "platformsLabel": "Seluruh koleksi turut ada di Apple Music",
+    "navLabel": "Lompat ke satu genre",
+    "play": "Main di Spotify",
+    "follow": "Ikuti di Spotify",
+    "apple": "Dengar di Apple Music",
+    "countOne": "senarai main",
+    "countOther": "senarai main",
+    "coverAlt": "Kulit senarai main {title}",
+    "openAria": "Buka {title} di Spotify",
+    "frameTitle": "Senarai main {title} di Spotify"
+  },
+  "intro": [
+    "Tiga puluh sembilan senarai main dan 1,763 lagu, dibina untuk jam-jam yang memerlukan muzik latar: kerja mendalam, bacaan panjang dan tulis semula lewat malam.",
+    "Neo soul dan nu jazz apabila kerja menuntut kesabaran. Boom bap dan jazz rap apabila ia menuntut rentak. French touch, deep house dan disco house apabila ia menuntut angkatan. Lo-fi untuk bahagian yang dibuat sambil menunduk, dan rentak Afrika Barat yang mengalir menerusi kesemuanya.",
+    "Setiap senarai main boleh didengar percuma di Spotify, dan seluruh koleksinya ada di Apple Music."
+  ],
+  "featured": {
+    "kicker": "Senarai main terkini",
+    "date": "Ogos 2026",
+    "genres": "Indie pop · French house",
+    "desc": "Indie pop bermandi cahaya matahari yang meluncur ke French house — Tame Impala dan almost monday memberi laluan kepada Justice, L'Impératrice dan afro house daripada HUGEL."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "Elektronik",
+      "sub": "House, disko dan French touch"
+    },
+    "soul-jazz": {
+      "title": "Soul &amp; Jazz",
+      "sub": "Neo soul, nu jazz dan tempo perlahan"
+    },
+    "hip-hop": {
+      "title": "Hip-Hop",
+      "sub": "Boom bap, jazz rap dan groove era keemasan"
+    },
+    "morning-mood": {
+      "title": "Pagi &amp; suasana",
+      "sub": "Downtempo, lo-fi dan tenaga untuk bangun"
+    },
+    "global": {
+      "title": "Global",
+      "sub": "Rentak dari segala tempat lain"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "Disco house · Garage",
+      "desc": "Disco house dan garage penghujung sembilan puluhan yang masih memenuhi lantai tarian — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden dan Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "Indie pop · French house",
+      "desc": "Indie pop bermandi cahaya matahari yang meluncur ke French house — Tame Impala dan almost monday memberi laluan kepada Justice, L'Impératrice dan afro house daripada HUGEL."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "French touch · Electro",
+      "desc": "French touch dengan lampu jauh menyala — Daft Punk, Justice, Kavinsky, L'Impératrice dan Angèle bertukar synth neon dan garis bes motorik."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "Indie dance · Synth pop",
+      "desc": "Synth pop dan indie dance pada jam emas — Blu DeTiger, Merty Shango, Citrus Sun dan Enne membawa kilauan itu hingga ke malam."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "Nu-disco · French house",
+      "desc": "Nu-disco dan French house dengan penapis terbuka — Fred Falke, Breakbot, Madeon, Lemaitre dan Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "Progressive house · Electro",
+      "desc": "Progressive house dan electro yang dibina untuk gerakan — Madeon, Paul Woolford, Martin Solveig, Secondcity dan The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "Nu-disco · House ditapis",
+      "desc": "Nu-disco dan house ditapis yang dibina untuk gerakan — Lenno, Oliver, Tollef dan Yelle di atas gitar terpotong dan bes synth tebal."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "Deep house · Melodic house",
+      "desc": "Seratus lagu deep dan melodic house yang tahu untuk tidak menghalang — Chris Malinchak, Sultan + Shepard, Lenno dan Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "Future house · Electro pop",
+      "desc": "Future house yang cerah dan electro pop — Lenno, La Felix, The Knocks, Kraak & Smaak dan Chris Malinchak sepanjang seratus lagu."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "Hip-hop berbaur jazz · Boom bap",
+      "desc": "Boom bap yang mengambil sampel jazz untuk malam yang perlahan — Blu & Exile, Large Professor, 3582 dan Scienze bertukar gelung hangat dan rangkap yang tidak tergesa."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "Jazz-hop · Boom bap",
+      "desc": "Jazz-hop era keemasan dari kem Phoniks — Awon & Phoniks, Anti Lilly, Dephlow dan Tiff the Gift di atas tiupan berdebu dan bes berdiri."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "R&B alternatif · Neo soul",
+      "desc": "R&B alternatif dan neo soul lewat malam — Brent Faiyaz, Elujay, J.Robb dan Lou Phelps di atas dram berkabus dan garis bes yang santai."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "Disko · Boogie",
+      "desc": "Lagu pemenuh lantai tarian dari tujuh puluhan dan lapan puluhan — CHIC, Luther Vandross, The Jacksons, Change dan Oliver Cheatham. Yang membuat kerja ialah alat bertali, tepukan dan garis bes."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "Acid jazz · Nu jazz",
+      "desc": "Acid jazz dan nu jazz dengan kumpulan langsung di belakangnya — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson dan Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "Gospel · Soul",
+      "desc": "Soul berakar gospel yang mengangkat seisi bilik — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris dan Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "Broken beat · Nu jazz",
+      "desc": "Broken beat dan nu jazz British untuk petang yang perlahan — Emma-Jean Thackray, Blue Lab Beats, Galliano dan The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "Soul British · Broken beat",
+      "desc": "Soul British dalam bentuknya yang paling mesra — Incognito, Shaun Escoffery, Cherri V dan Tortured Soul, dengan Stevie Wonder dalam bilik."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "Jazz moden · R&B",
+      "desc": "Jazz moden dan R&B dalam perbualan — Robert Glasper, August Greene, Common, Karriem Riggins dan Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Lagu cinta dengan pemain sebenar di belakangnya — 4hero dan Marc Mac, Incognito, Imaani, Natalie Duncan dan Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "Neo soul · Jazz",
+      "desc": "Lima puluh lima lagu neo soul dan jazz untuk malam yang hangat — India.Arie, Robert Glasper, Lucy Pearl, Anthony David dan Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "Neo soul · R&B moden",
+      "desc": "Tujuh puluh tiga lagu neo soul dan R&B moden — Alex Isley, Yebba, Ego Ella May, Robert Glasper dan Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "Jazz funk · Neo soul",
+      "desc": "Seratus lagu dengan lampu sorot pada pemainnya — Erykah Badu, Jill Scott, Omar, Esperanza Spalding dan Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "Rap · Pantai Barat",
+      "desc": "Seratus lagu rap merentas empat dekad — 2Pac dan Dr. Dre, Snoop Dogg dan Tha Dogg Pound, Ghostface Killah, Nicki Minaj dan DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "Rap · Soul · French touch",
+      "desc": "Seratus lagu hasil menggali kotak piring hitam tanpa peraturan genre — Dr. Dre dan Eminem di sebelah MC Solaar dan 113, Charles Aznavour di sebelah DJ Mehdi dan Thomas Bangalter."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "Rap hardcore · Boom bap",
+      "desc": "Rap hardcore sembilan puluhan dengan kelantangan dinaikkan — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre dan Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "Boom bap · Jazz rap",
+      "desc": "Lapan puluh enam lagu boom bap dan jazz rap sembilan puluhan — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde dan Jazzmatazz milik Guru."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "Underground · Boom bap",
+      "desc": "Boom bap underground dan instrumental — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D dan Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "Hip-hop indie · Pop rap",
+      "desc": "Hip-hop indie dan pop rap yang berentak — Quinn XCII, Kid Quill, EMAN8, gianni & kyle dan YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "Chillwave · Downtempo",
+      "desc": "Downtempo tanpa berat untuk perjalanan jauh atau pagi yang perlahan — Zero 7, Les Imprimés dan Ciao Ciao Marigold di atas dram bergaris lembut."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "Trip-hop · Jazz-hop",
+      "desc": "Trip-hop yang mengambil sampel jazz daripada Proleter, Poldoore, Souleance dan The Geek x Vrv. Sinematik, tidak tergesa, dibina untuk menulis."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "Downtempo · Nu jazz",
+      "desc": "Downtempo dan nu jazz untuk menyandarkan fikiran — Zero 7, The Cinematic Orchestra, Souleance, Mozez dan Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "Trip-hop · Downtempo",
+      "desc": "Trip-hop dan downtempo dengan teras soul — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra dan Nina Simone yang diolah semula."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "Lo-fi · Beat untuk belajar",
+      "desc": "Lima puluh dua beat lo-fi hip hop untuk belajar dan kerja mendalam — Idealism, j'san, Joey Pecoraro, Sugi.wa dan aimless. Tiada vokal untuk berbalah."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "French house · Nu-disco",
+      "desc": "French house funky dan nu-disco pada laju yang sekata — Breakbot, Modjo, Fred Falke, Kartell dan Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "Nu jazz · Downtempo",
+      "desc": "Nu jazz dan downtempo yang menenangkan untuk melepaskan lelah — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly dan Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Soul dan jazz funk untuk memulakan hari — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak dan Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "Pop yang membangkitkan",
+      "desc": "Enam puluh empat lagu pop cerah bertempo pantas untuk bergerak — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear dan Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "Jazz rap · R&B alternatif",
+      "desc": "Jazz rap dan R&B alternatif yang ada sesuatu untuk dikatakan — Noname, Anderson .Paak, KAYTRANADA, Q-Tip dan A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "Afrobeat · Wassoulou",
+      "desc": "Suara Afrika Barat di barisan hadapan — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh dan Kareyce Fotso, daripada wassoulou hingga kora."
+    }
+  },
+  "faq": {
+    "heading": "Soalan? Jawapan.",
+    "sub": "Bagaimana untuk mendengar, pada apa, dan dari mana muziknya datang.",
+    "items": [
+      {
+        "q": "Perlukah langganan Spotify untuk mendengar?",
+        "a": "Tidak. Setiap senarai main dimainkan dalam pemain terbenam di atas dengan akaun Spotify percuma, dengan iklan antara lagu. Akaun Premium membuang iklan dan membenarkan pendengaran luar talian, tetapi tiada apa-apa di sini berada di sebalik dinding bayaran."
+      },
+      {
+        "q": "Bolehkah saya mendengar di Apple Music sebaliknya?",
+        "a": "Boleh — ikuti profil di music.apple.com/profile/bxhero. Senarai main di halaman ini ialah versi Spotify, kerana Apple Music tidak mendedahkan pautan senarai main individu kepada umum. Di platform itu, mengikuti profil ialah laluan yang boleh dipercayai."
+      },
+      {
+        "q": "Peranti apa yang menyokongnya?",
+        "a": "Di mana sahaja Spotify berjalan: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox dan mana-mana pelayar. Pemain di halaman ini berfungsi pada telefon dan komputer tanpa aplikasi."
+      },
+      {
+        "q": "Senarai main mana patut saya mulakan untuk kerja mendalam?",
+        "a": "Pagi &amp; suasana untuk fokus tanpa gangguan — downtempo, nu jazz dan lo-fi dengan vokal yang sedikit atau tiada langsung supaya tidak bersaing dengan bacaan. Elektronik sesuai untuk kerja yang perlukan rentak, bukan ketenangan."
+      },
+      {
+        "q": "Berapa kerap senarai main dikemas kini?",
+        "a": "Kerap, dan di tempatnya. Cukup dengan mengikuti senarai main di Spotify atau mengikuti profil di salah satu perkhidmatan: lagu baharu tiba dengan sendirinya tanpa perlu kembali ke sini."
+      },
+      {
+        "q": "Bolehkah saya berkongsi atau membenamkan senarai main ini?",
+        "a": "Boleh. Setiap kad menuju ke senarai main di Spotify, di mana menu perkongsian memberikan pautan dan kod benaman. Ini senarai main awam, bebas dikongsi."
+      },
+      {
+        "q": "Siapa yang menyusun senarai main ini?",
+        "a": "Sebastien Rousseau — sebagai BXHERO di Spotify dan Apple Music. Inilah senarai main yang benar-benar dimainkan sambil menulis tentang pembayaran dan kejuruteraan, bukan suapan algoritma."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "Dengar pada setiap peranti",
+    "body": "Setiap senarai main dimainkan dalam pelayar di atas, dan dalam aplikasi Spotify pada peranti yang anda memang sudah guna. Ikuti profil di salah satu perkhidmatan dan senarai main baharu akan tiba dengan sendirinya.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "Pelayar web"
+    ]
+  }
+}

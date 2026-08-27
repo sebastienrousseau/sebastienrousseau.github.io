@@ -1,0 +1,261 @@
+{
+  "_comment": "BN copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "প্লেলিস্ট",
+    "jump": "সাম্প্রতিকতম প্লেলিস্ট শুনুন",
+    "platformsLabel": "পুরো সংগ্রহ Apple Music-এও আছে",
+    "navLabel": "কোনো ধারায় যান",
+    "play": "Spotify-তে শুনুন",
+    "follow": "Spotify-তে ফলো করুন",
+    "apple": "Apple Music-এ শুনুন",
+    "countOne": "প্লেলিস্ট",
+    "countOther": "প্লেলিস্ট",
+    "coverAlt": "{title} প্লেলিস্টের প্রচ্ছদ",
+    "openAria": "{title} Spotify-তে খুলুন",
+    "frameTitle": "Spotify-তে {title} প্লেলিস্ট"
+  },
+  "intro": [
+    "ঊনচল্লিশটি প্লেলিস্ট আর ১,৭৬৩টি গান, সেইসব ঘণ্টার জন্য তৈরি যাদের একটা আবহসংগীত দরকার: গভীর কাজ, দীর্ঘ পড়া আর রাত গভীরে ফের লেখা।",
+    "কাজ যখন ধৈর্য চায়, তখন নিও সোল আর নু জ্যাজ। গতি চাইলে বুম ব্যাপ আর জ্যাজ র‍্যাপ। উত্তোলন চাইলে ফ্রেঞ্চ টাচ, ডিপ হাউস আর ডিস্কো হাউস। মাথা নিচু করে এগোনোর অংশটুকুর জন্য লো-ফাই, আর সবকিছুর ভেতর দিয়ে বয়ে যাওয়া পশ্চিম আফ্রিকার ছন্দ।",
+    "প্রতিটি প্লেলিস্ট Spotify-তে বিনামূল্যে বাজে, আর পুরো সংগ্রহ আছে Apple Music-এ।"
+  ],
+  "featured": {
+    "kicker": "সাম্প্রতিকতম প্লেলিস্ট",
+    "date": "অগাস্ট ২০২৬",
+    "genres": "ইন্ডি পপ · ফ্রেঞ্চ হাউস",
+    "desc": "রোদে ভেজা ইন্ডি পপ গড়িয়ে যায় ফ্রেঞ্চ হাউসে — Tame Impala আর almost monday জায়গা ছেড়ে দেয় Justice, L'Impératrice আর HUGEL-এর আফ্রো হাউসকে।"
+  },
+  "lanes": {
+    "electronic": {
+      "title": "ইলেকট্রনিক",
+      "sub": "হাউস, ডিস্কো আর ফ্রেঞ্চ টাচ"
+    },
+    "soul-jazz": {
+      "title": "সোল &amp; জ্যাজ",
+      "sub": "নিও সোল, নু জ্যাজ আর ধীর লয়"
+    },
+    "hip-hop": {
+      "title": "হিপ-হপ",
+      "sub": "বুম ব্যাপ, জ্যাজ র‍্যাপ আর স্বর্ণযুগের গ্রুভ"
+    },
+    "morning-mood": {
+      "title": "সকাল &amp; মেজাজ",
+      "sub": "ডাউনটেম্পো, লো-ফাই আর জেগে ওঠার শক্তি"
+    },
+    "global": {
+      "title": "বিশ্ব",
+      "sub": "বাকি সব জায়গার ছন্দ"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "ডিস্কো হাউস · গ্যারাজ",
+      "desc": "নব্বইয়ের শেষদিকের ডিস্কো হাউস আর গ্যারাজ, যা আজও ফ্লোর ভরায় — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden আর Boris Dlugosch।"
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "ইন্ডি পপ · ফ্রেঞ্চ হাউস",
+      "desc": "রোদে ভেজা ইন্ডি পপ গড়িয়ে যায় ফ্রেঞ্চ হাউসে — Tame Impala আর almost monday জায়গা ছেড়ে দেয় Justice, L'Impératrice আর HUGEL-এর আফ্রো হাউসকে।"
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "ফ্রেঞ্চ টাচ · ইলেকট্রো",
+      "desc": "পূর্ণ আলোয় ফ্রেঞ্চ টাচ — Daft Punk, Justice, Kavinsky, L'Impératrice আর Angèle নিয়ন সিন্থ আর মোটোরিক বেসলাইন বিনিময় করে।"
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "ইন্ডি ড্যান্স · সিন্থ পপ",
+      "desc": "সোনালি সময়ের সিন্থ পপ আর ইন্ডি ড্যান্স — Blu DeTiger, Merty Shango, Citrus Sun আর Enne সেই ঝিলিক সন্ধ্যায় বয়ে নিয়ে যায়।"
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "নু-ডিস্কো · ফ্রেঞ্চ হাউস",
+      "desc": "ফিল্টার খুলে দেওয়া নু-ডিস্কো আর ফ্রেঞ্চ হাউস — Fred Falke, Breakbot, Madeon, Lemaitre আর Yelle।"
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "প্রোগ্রেসিভ হাউস · ইলেকট্রো",
+      "desc": "নড়াচড়ার জন্য বানানো প্রোগ্রেসিভ হাউস আর ইলেকট্রো — Madeon, Paul Woolford, Martin Solveig, Secondcity আর The Knocks।"
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "নু-ডিস্কো · ফিল্টার্ড হাউস",
+      "desc": "নড়াচড়ার জন্য বানানো নু-ডিস্কো আর ফিল্টার্ড হাউস — কাটা গিটার আর মোটা সিন্থ বেসের ওপর Lenno, Oliver, Tollef আর Yelle।"
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "ডিপ হাউস · মেলোডিক হাউস",
+      "desc": "একশো ডিপ আর মেলোডিক হাউস গান, যারা পথ ছেড়ে দিতে জানে — Chris Malinchak, Sultan + Shepard, Lenno আর Nora Van Elken।"
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "ফিউচার হাউস · ইলেকট্রো পপ",
+      "desc": "উজ্জ্বল ফিউচার হাউস আর ইলেকট্রো পপ — একশো গানজুড়ে Lenno, La Felix, The Knocks, Kraak & Smaak আর Chris Malinchak।"
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "জ্যাজি হিপ-হপ · বুম ব্যাপ",
+      "desc": "ধীর সন্ধ্যার জন্য জ্যাজ স্যাম্পল করা বুম ব্যাপ — Blu & Exile, Large Professor, 3582 আর Scienze উষ্ণ লুপ আর তাড়াহীন পঙ্‌ক্তি বিনিময় করে।"
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "জ্যাজ-হপ · বুম ব্যাপ",
+      "desc": "Phoniks শিবিরের স্বর্ণযুগের জ্যাজ-হপ — ধুলোমাখা হর্ন আর ডাবল বেসের ওপর Awon & Phoniks, Anti Lilly, Dephlow আর Tiff the Gift।"
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "বিকল্প R&B · নিও সোল",
+      "desc": "বিকল্প R&B আর গভীর রাতের নিও সোল — ঝাপসা ড্রাম আর তাড়াহীন বেসলাইনের ওপর Brent Faiyaz, Elujay, J.Robb আর Lou Phelps।"
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "ডিস্কো · বুগি",
+      "desc": "সত্তর আর আশির দশকের ফ্লোর ভরানো গান — CHIC, Luther Vandross, The Jacksons, Change আর Oliver Cheatham। কাজটা করে তারযন্ত্র, হাততালি আর বেসলাইন।"
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "অ্যাসিড জ্যাজ · নু জ্যাজ",
+      "desc": "পেছনে জীবন্ত ব্যান্ড নিয়ে অ্যাসিড জ্যাজ আর নু জ্যাজ — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson আর Count Basic।"
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "গসপেল · সোল",
+      "desc": "গোটা ঘর তুলে ধরা গসপেল-শিকড়ের সোল — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris আর Avery*Sunshine।"
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "ব্রোকেন বিট · নু জ্যাজ",
+      "desc": "ধীর বিকেলের জন্য ব্রোকেন বিট আর ব্রিটিশ নু জ্যাজ — Emma-Jean Thackray, Blue Lab Beats, Galliano আর The Brand New Heavies।"
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "ব্রিটিশ সোল · ব্রোকেন বিট",
+      "desc": "ব্রিটিশ সোল তার উষ্ণতম চেহারায় — Incognito, Shaun Escoffery, Cherri V আর Tortured Soul, ঘরে Stevie Wonder সহ।"
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "আধুনিক জ্যাজ · R&B",
+      "desc": "সংলাপে আধুনিক জ্যাজ আর R&B — Robert Glasper, August Greene, Common, Karriem Riggins আর Brandy।"
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "সোল · জ্যাজ ফাঙ্ক",
+      "desc": "পেছনে সত্যিকারের বাদক নিয়ে প্রেমের গান — 4hero আর Marc Mac, Incognito, Imaani, Natalie Duncan আর Adi Oasis।"
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "নিও সোল · জ্যাজ",
+      "desc": "উষ্ণ সন্ধ্যার জন্য পঞ্চান্নটি নিও সোল আর জ্যাজ গান — India.Arie, Robert Glasper, Lucy Pearl, Anthony David আর Ronny Jordan।"
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "নিও সোল · আধুনিক R&B",
+      "desc": "তিয়াত্তরটি নিও সোল আর আধুনিক R&B গান — Alex Isley, Yebba, Ego Ella May, Robert Glasper আর Blue Lab Beats।"
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "জ্যাজ ফাঙ্ক · নিও সোল",
+      "desc": "একশো গান, যেখানে আলো পড়ে বাদকদের ওপর — Erykah Badu, Jill Scott, Omar, Esperanza Spalding আর Stevie Wonder।"
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "র‍্যাপ · ওয়েস্ট কোস্ট",
+      "desc": "চার দশকজুড়ে একশোটি র‍্যাপ গান — 2Pac আর Dr. Dre, Snoop Dogg আর Tha Dogg Pound, Ghostface Killah, Nicki Minaj আর DJ Muggs।"
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "র‍্যাপ · সোল · ফ্রেঞ্চ টাচ",
+      "desc": "ধারার কোনো নিয়ম ছাড়াই রেকর্ডের বাক্স ঘেঁটে তোলা একশো গান — MC Solaar আর 113-এর পাশে Dr. Dre আর Eminem, DJ Mehdi আর Thomas Bangalter-এর পাশে Charles Aznavour।"
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "হার্ডকোর র‍্যাপ · বুম ব্যাপ",
+      "desc": "ভলিউম বাড়িয়ে নব্বইয়ের হার্ডকোর র‍্যাপ — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre আর Snoop Dogg।"
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "বুম ব্যাপ · জ্যাজ র‍্যাপ",
+      "desc": "নব্বইয়ের ছিয়াশিটি বুম ব্যাপ আর জ্যাজ র‍্যাপ গান — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde আর Guru-র Jazzmatazz।"
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "আন্ডারগ্রাউন্ড · বুম ব্যাপ",
+      "desc": "আন্ডারগ্রাউন্ড বুম ব্যাপ আর বাদ্যরচনা — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D আর Shing02।"
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "ইন্ডি হিপ-হপ · পপ র‍্যাপ",
+      "desc": "গতিময় ইন্ডি হিপ-হপ আর পপ র‍্যাপ — Quinn XCII, Kid Quill, EMAN8, gianni & kyle আর YONAS।"
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "চিলওয়েভ · ডাউনটেম্পো",
+      "desc": "লম্বা পথ বা ধীর সকালের জন্য ভারহীন ডাউনটেম্পো — নরম ড্রামের ওপর Zero 7, Les Imprimés আর Ciao Ciao Marigold।"
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "ট্রিপ-হপ · জ্যাজ-হপ",
+      "desc": "Proleter, Poldoore, Souleance আর The Geek x Vrv-এর জ্যাজ স্যাম্পল করা ট্রিপ-হপ। চলচ্চিত্রসুলভ, তাড়াহীন, লেখার জন্য বানানো।"
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "ডাউনটেম্পো · নু জ্যাজ",
+      "desc": "যার ওপর ভাবনা হেলান দিতে পারে, এমন ডাউনটেম্পো আর নু জ্যাজ — Zero 7, The Cinematic Orchestra, Souleance, Mozez আর Ida Nielsen।"
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "ট্রিপ-হপ · ডাউনটেম্পো",
+      "desc": "সোলের কেন্দ্র নিয়ে ট্রিপ-হপ আর ডাউনটেম্পো — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra আর নতুন করে গড়া Nina Simone।"
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "লো-ফাই · পড়ার বিট",
+      "desc": "পড়াশোনা আর গভীর কাজের জন্য বাহান্নটি লো-ফাই হিপ হপ বিট — Idealism, j'san, Joey Pecoraro, Sugi.wa আর aimless। তর্ক করার মতো কোনো কণ্ঠ নেই।"
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "ফ্রেঞ্চ হাউস · নু-ডিস্কো",
+      "desc": "সমান গতিতে ফাঙ্কি ফ্রেঞ্চ হাউস আর নু-ডিস্কো — Breakbot, Modjo, Fred Falke, Kartell আর Chris Malinchak।"
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "নু জ্যাজ · ডাউনটেম্পো",
+      "desc": "ঢিলে হওয়ার জন্য প্রশান্ত নু জ্যাজ আর ডাউনটেম্পো — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly আর Kid Loco।"
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "সোল · জ্যাজ ফাঙ্ক",
+      "desc": "দিন শুরু করার জন্য সোল আর জ্যাজ ফাঙ্ক — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak আর Stevie Wonder।"
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "উদ্দীপক পপ",
+      "desc": "নড়াচড়ার জন্য চৌষট্টিটি উজ্জ্বল, দ্রুত লয়ের পপ গান — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear আর Madison।"
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "জ্যাজ র‍্যাপ · বিকল্প R&B",
+      "desc": "বলার মতো কিছু আছে এমন জ্যাজ র‍্যাপ আর বিকল্প R&B — Noname, Anderson .Paak, KAYTRANADA, Q-Tip আর A Tribe Called Quest।"
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "আফ্রোবিট · ওয়াসুলু",
+      "desc": "পশ্চিম আফ্রিকার কণ্ঠ একেবারে সামনে — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh আর Kareyce Fotso, ওয়াসুলু থেকে কোরা পর্যন্ত।"
+    }
+  },
+  "faq": {
+    "heading": "প্রশ্ন? উত্তর।",
+    "sub": "কীভাবে শুনবেন, কিসে শুনবেন, আর এই সংগীত কোথা থেকে আসে।",
+    "items": [
+      {
+        "q": "শোনার জন্য কি Spotify সাবস্ক্রিপশন লাগে?",
+        "a": "না। বিনামূল্যের Spotify অ্যাকাউন্টেই উপরের এমবেড করা প্লেয়ারে প্রতিটি প্লেলিস্ট বাজে, গানের ফাঁকে বিজ্ঞাপনসহ। Premium অ্যাকাউন্ট বিজ্ঞাপন সরায় আর অফলাইনে শোনার সুযোগ দেয়, তবে এখানে কিছুই পেওয়ালের পেছনে নেই।"
+      },
+      {
+        "q": "আমি কি বদলে Apple Music-এ শুনতে পারি?",
+        "a": "হ্যাঁ — music.apple.com/profile/bxhero-তে প্রোফাইলটি ফলো করুন। এই পাতার প্লেলিস্টগুলো Spotify সংস্করণ, কারণ Apple Music আলাদা প্লেলিস্টের লিংক প্রকাশ্যে দেয় না। ওই প্ল্যাটফর্মে প্রোফাইল ফলো করাই নির্ভরযোগ্য পথ।"
+      },
+      {
+        "q": "এগুলো কোন কোন ডিভাইসে চলে?",
+        "a": "যেখানে Spotify চলে সেখানেই: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox আর যেকোনো ব্রাউজার। এই পাতার প্লেয়ারগুলো অ্যাপ ছাড়াই মোবাইল ও ডেস্কটপে চলে।"
+      },
+      {
+        "q": "গভীর কাজের জন্য কোন প্লেলিস্ট দিয়ে শুরু করব?",
+        "a": "মনোযোগে ব্যাঘাত না ঘটিয়ে কাজের জন্য সকাল &amp; মেজাজ — ডাউনটেম্পো, নু জ্যাজ আর লো-ফাই, যেখানে কণ্ঠ খুব কম বা নেই, তাই পড়ার সঙ্গে লড়ে না। যে কাজে শান্তির চেয়ে গতি দরকার, তার জন্য ইলেকট্রনিক মানানসই।"
+      },
+      {
+        "q": "প্লেলিস্ট কত ঘন ঘন হালনাগাদ হয়?",
+        "a": "নিয়মিত, এবং জায়গাতেই। Spotify-তে কোনো প্লেলিস্ট বা দুই সেবার যেকোনো একটিতে প্রোফাইল ফলো করলেই নতুন গান নিজে থেকে পৌঁছে যায়, এখানে ফিরে আসতে হয় না।"
+      },
+      {
+        "q": "আমি কি এই প্লেলিস্টগুলো শেয়ার বা এমবেড করতে পারি?",
+        "a": "হ্যাঁ। প্রতিটি কার্ড Spotify-র প্লেলিস্টে নিয়ে যায়, যেখানে শেয়ার মেনু লিংক আর এমবেড কোড দেয়। এগুলো প্রকাশ্য প্লেলিস্ট, অবাধে শেয়ার করা যায়।"
+      },
+      {
+        "q": "এই প্লেলিস্টগুলো কে বানায়?",
+        "a": "সেবাস্তিয়ঁ রুসো — Spotify আর Apple Music-এ BXHERO নামে। পেমেন্ট আর প্রকৌশল নিয়ে লেখার সময় সত্যিই যেগুলো বাজে, এগুলো সেই প্লেলিস্ট; কোনো অ্যালগরিদমিক ফিড নয়।"
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "যেকোনো ডিভাইসে শুনুন",
+    "body": "প্রতিটি প্লেলিস্ট উপরের ব্রাউজারে বাজে, আর আপনি যেসব ডিভাইস এমনিতেই ব্যবহার করেন সেগুলোর Spotify অ্যাপেও। দুই সেবার যেকোনো একটিতে প্রোফাইল ফলো করুন, নতুন প্লেলিস্ট নিজে থেকেই আসবে।",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "ওয়েব ব্রাউজার"
+    ]
+  }
+}

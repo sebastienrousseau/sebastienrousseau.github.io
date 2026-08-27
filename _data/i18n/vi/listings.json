@@ -1,0 +1,26 @@
+{
+  "_comment": "VI copy for the generator-emitted article-listing body (build_listings). Mirrors scripts/lib/_listing_copy.py. {page}/{total} are placeholders the renderer fills.",
+  "ui": {
+    "eyebrow": "DÒNG BÀI",
+    "pageLabel": "Trang {page} trên {total}",
+    "visible": "đang hiển thị",
+    "categoryLabel": "Chuyên mục",
+    "yearLabel": "Năm",
+    "allCategories": "Tất cả chuyên mục",
+    "allYears": "Tất cả các năm",
+    "filterAria": "Lọc bài viết",
+    "listAria": "Thẻ bài viết",
+    "paginationAria": "Phân trang",
+    "emptyState": "Không có bài viết nào khớp với bộ lọc hiện tại.",
+    "previous": "Trước",
+    "next": "Tiếp"
+  },
+  "pillars": {
+    "ai": "AI ứng dụng",
+    "payments": "Thanh toán và tiền tệ",
+    "infra": "Hạ tầng và mật mã",
+    "policy": "Chính sách và khả năng chống chịu",
+    "open-source": "Nguồn mở",
+    "leadership": "Lãnh đạo ngân hàng"
+  }
+}

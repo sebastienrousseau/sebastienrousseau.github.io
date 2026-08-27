@@ -1,0 +1,261 @@
+{
+  "_comment": "EL copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "Λίστες αναπαραγωγής",
+    "jump": "Άκου την πιο πρόσφατη λίστα",
+    "platformsLabel": "Όλη η συλλογή υπάρχει και στο Apple Music",
+    "navLabel": "Μετάβαση σε είδος",
+    "play": "Αναπαραγωγή στο Spotify",
+    "follow": "Ακολούθησε στο Spotify",
+    "apple": "Άκου στο Apple Music",
+    "countOne": "λίστα",
+    "countOther": "λίστες",
+    "coverAlt": "Εξώφυλλο της λίστας {title}",
+    "openAria": "Άνοιγμα του {title} στο Spotify",
+    "frameTitle": "Λίστα {title} στο Spotify"
+  },
+  "intro": [
+    "Τριάντα εννέα λίστες και 1.763 κομμάτια, φτιαγμένα για τις ώρες που ζητούν μουσική υπόκρουση: βαθιά συγκέντρωση, μεγάλα διαβάσματα και νυχτερινές ξαναγραφές.",
+    "Neo soul και nu jazz όταν η δουλειά ζητά υπομονή. Boom bap και jazz rap όταν ζητά ορμή. French touch, deep house και disco house όταν ζητά ανύψωση. Lo-fi για το κομμάτι με σκυμμένο κεφάλι, και δυτικοαφρικανικοί ρυθμοί που διατρέχουν τα πάντα.",
+    "Κάθε λίστα παίζει δωρεάν στο Spotify, και όλη η συλλογή βρίσκεται στο Apple Music."
+  ],
+  "featured": {
+    "kicker": "Πιο πρόσφατη λίστα",
+    "date": "Αύγουστος 2026",
+    "genres": "Indie pop · French house",
+    "desc": "Ηλιόλουστη indie pop που γλιστρά στη French house — οι Tame Impala και οι almost monday δίνουν τη θέση τους στους Justice, στη L'Impératrice και στην afro house του HUGEL."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "Ηλεκτρονική",
+      "sub": "House, disco και French touch"
+    },
+    "soul-jazz": {
+      "title": "Soul &amp; Jazz",
+      "sub": "Neo soul, nu jazz και αργά τέμπο"
+    },
+    "hip-hop": {
+      "title": "Hip-Hop",
+      "sub": "Boom bap, jazz rap και grooves της χρυσής εποχής"
+    },
+    "morning-mood": {
+      "title": "Πρωί &amp; διάθεση",
+      "sub": "Downtempo, lo-fi και ενέργεια για ξύπνημα"
+    },
+    "global": {
+      "title": "Global",
+      "sub": "Ρυθμοί απ' όλο τον υπόλοιπο κόσμο"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "Disco house · Garage",
+      "desc": "Disco house και garage των τελών της δεκαετίας του '90 που ακόμη γεμίζουν πίστα — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden και Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "Indie pop · French house",
+      "desc": "Ηλιόλουστη indie pop που γλιστρά στη French house — οι Tame Impala και οι almost monday δίνουν τη θέση τους στους Justice, στη L'Impératrice και στην afro house του HUGEL."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "French touch · Electro",
+      "desc": "French touch με τα φώτα ορθάνοιχτα — Daft Punk, Justice, Kavinsky, L'Impératrice και Angèle ανταλλάσσουν συνθεσάιζερ νέον και motorik μπάσα."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "Indie dance · Synth pop",
+      "desc": "Synth pop και indie dance στη χρυσή ώρα — Blu DeTiger, Merty Shango, Citrus Sun και Enne μεταφέρουν τη λάμψη ως το βράδυ."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "Nu-disco · French house",
+      "desc": "Nu-disco και French house με ανοιχτό φίλτρο — Fred Falke, Breakbot, Madeon, Lemaitre και Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "Progressive house · Electro",
+      "desc": "Progressive house και electro φτιαγμένα για κίνηση — Madeon, Paul Woolford, Martin Solveig, Secondcity και The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "Nu-disco · Φιλτραρισμένη house",
+      "desc": "Nu-disco και φιλτραρισμένη house φτιαγμένες για κίνηση — Lenno, Oliver, Tollef και Yelle πάνω σε κοφτές κιθάρες και χοντρό synth μπάσο."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "Deep house · Melodic house",
+      "desc": "Εκατό κομμάτια deep και melodic house που ξέρουν να μένουν στην άκρη — Chris Malinchak, Sultan + Shepard, Lenno και Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "Future house · Electro pop",
+      "desc": "Φωτεινή future house και electro pop — Lenno, La Felix, The Knocks, Kraak & Smaak και Chris Malinchak σε εκατό κομμάτια."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "Τζαζ hip-hop · Boom bap",
+      "desc": "Boom bap που δειγματοληπτεί τζαζ για αργά βράδια — Blu & Exile, Large Professor, 3582 και Scienze ανταλλάσσουν ζεστά loops και αβίαστους στίχους."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "Jazz-hop · Boom bap",
+      "desc": "Jazz-hop της χρυσής εποχής από το στρατόπεδο Phoniks — Awon & Phoniks, Anti Lilly, Dephlow και Tiff the Gift πάνω σε σκονισμένα πνευστά και κοντραμπάσο."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "Εναλλακτικό R&B · Neo soul",
+      "desc": "Εναλλακτικό R&B και νυχτερινή neo soul — Brent Faiyaz, Elujay, J.Robb και Lou Phelps πάνω σε θολά ντραμς και αβίαστες μπασογραμμές."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "Disco · Boogie",
+      "desc": "Κομμάτια που γέμιζαν πίστες στα seventies και τα eighties — CHIC, Luther Vandross, The Jacksons, Change και Oliver Cheatham. Έγχορδα, παλαμάκια και μπασογραμμές που κάνουν όλη τη δουλειά."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "Acid jazz · Nu jazz",
+      "desc": "Acid jazz και nu jazz με ζωντανή μπάντα από πίσω — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson και Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "Gospel · Soul",
+      "desc": "Soul με ρίζες στο gospel που σηκώνει ολόκληρη αίθουσα — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris και Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "Broken beat · Nu jazz",
+      "desc": "Broken beat και βρετανική nu jazz για αργά απογεύματα — Emma-Jean Thackray, Blue Lab Beats, Galliano και The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "Βρετανική soul · Broken beat",
+      "desc": "Η βρετανική soul στην πιο ζεστή της εκδοχή — Incognito, Shaun Escoffery, Cherri V και Tortured Soul, με τον Stevie Wonder στο δωμάτιο."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "Σύγχρονη τζαζ · R&B",
+      "desc": "Σύγχρονη τζαζ και R&B σε διάλογο — Robert Glasper, August Greene, Common, Karriem Riggins και Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Ερωτικά τραγούδια με πραγματικούς μουσικούς από πίσω — 4hero και Marc Mac, Incognito, Imaani, Natalie Duncan και Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "Neo soul · Τζαζ",
+      "desc": "Πενήντα πέντε κομμάτια neo soul και τζαζ για ζεστά βράδια — India.Arie, Robert Glasper, Lucy Pearl, Anthony David και Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "Neo soul · Σύγχρονο R&B",
+      "desc": "Εβδομήντα τρία κομμάτια neo soul και σύγχρονου R&B — Alex Isley, Yebba, Ego Ella May, Robert Glasper και Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "Jazz funk · Neo soul",
+      "desc": "Εκατό κομμάτια με τον προβολέα στους μουσικούς — Erykah Badu, Jill Scott, Omar, Esperanza Spalding και Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "Ραπ · Δυτική ακτή",
+      "desc": "Εκατό κομμάτια ραπ από τέσσερις δεκαετίες — 2Pac και Dr. Dre, Snoop Dogg και Tha Dogg Pound, Ghostface Killah, Nicki Minaj και DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "Ραπ · Soul · French touch",
+      "desc": "Εκατό κομμάτια σκαλισμένα μέσα από κάσες δίσκων χωρίς κανόνα είδους — Dr. Dre και Eminem δίπλα στον MC Solaar και τους 113, ο Charles Aznavour δίπλα στον DJ Mehdi και τον Thomas Bangalter."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "Hardcore ραπ · Boom bap",
+      "desc": "Σκληρό ραπ των nineties με την ένταση ψηλά — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre και Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "Boom bap · Jazz rap",
+      "desc": "Ογδόντα έξι κομμάτια boom bap και jazz rap των nineties — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde και το Jazzmatazz του Guru."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "Underground · Boom bap",
+      "desc": "Underground boom bap και ορχηστρικά — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D και Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "Indie hip-hop · Pop rap",
+      "desc": "Indie hip-hop και pop rap με ορμή — Quinn XCII, Kid Quill, EMAN8, gianni & kyle και YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "Chillwave · Downtempo",
+      "desc": "Ανάλαφρο downtempo για μεγάλη διαδρομή ή αργό πρωινό — Zero 7, Les Imprimés και Ciao Ciao Marigold πάνω σε απαλά σχεδιασμένα ντραμς."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "Trip-hop · Jazz-hop",
+      "desc": "Trip-hop που δειγματοληπτεί τζαζ από τους Proleter, Poldoore, Souleance και The Geek x Vrv. Κινηματογραφικό, αβίαστο, φτιαγμένο για γράψιμο."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "Downtempo · Nu jazz",
+      "desc": "Downtempo και nu jazz για να ακουμπήσει πάνω τους η σκέψη — Zero 7, The Cinematic Orchestra, Souleance, Mozez και Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "Trip-hop · Downtempo",
+      "desc": "Trip-hop και downtempo με πυρήνα soul — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra και μια επεξεργασμένη Nina Simone."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "Lo-fi · Beats για διάβασμα",
+      "desc": "Πενήντα δύο lo-fi hip hop beats για διάβασμα και βαθιά συγκέντρωση — Idealism, j'san, Joey Pecoraro, Sugi.wa και aimless. Καθόλου φωνητικά για να διαφωνήσεις."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "French house · Nu-disco",
+      "desc": "Funky French house και nu-disco σε σταθερή πορεία — Breakbot, Modjo, Fred Falke, Kartell και Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "Nu jazz · Downtempo",
+      "desc": "Καταπραϋντική nu jazz και downtempo για χαλάρωση — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly και Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Soul και jazz funk για την αρχή της μέρας — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak και Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "Αναζωογονητική pop",
+      "desc": "Εξήντα τέσσερα φωτεινά, γρήγορα pop κομμάτια για κίνηση — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear και Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "Jazz rap · Εναλλακτικό R&B",
+      "desc": "Jazz rap και εναλλακτικό R&B με κάτι να πουν — Noname, Anderson .Paak, KAYTRANADA, Q-Tip και A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "Afrobeat · Wassoulou",
+      "desc": "Δυτικοαφρικανικές φωνές στο προσκήνιο — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh και Kareyce Fotso, από το wassoulou ως την κόρα."
+    }
+  },
+  "faq": {
+    "heading": "Ερωτήσεις; Απαντήσεις.",
+    "sub": "Πώς ακούς, σε τι, και από πού έρχεται η μουσική.",
+    "items": [
+      {
+        "q": "Χρειάζομαι συνδρομή Spotify για να ακούσω;",
+        "a": "Όχι. Κάθε λίστα παίζει στο ενσωματωμένο πρόγραμμα αναπαραγωγής παραπάνω με δωρεάν λογαριασμό Spotify, με διαφημίσεις ανάμεσα στα κομμάτια. Ένας λογαριασμός Premium αφαιρεί τις διαφημίσεις και επιτρέπει ακρόαση εκτός σύνδεσης, αλλά τίποτα εδώ δεν είναι πίσω από πληρωμή."
+      },
+      {
+        "q": "Μπορώ να ακούσω στο Apple Music;",
+        "a": "Ναι — ακολούθησε το προφίλ στο music.apple.com/profile/bxhero. Οι λίστες αυτής της σελίδας είναι οι εκδοχές του Spotify, επειδή το Apple Music δεν δημοσιοποιεί συνδέσμους μεμονωμένων λιστών. Η παρακολούθηση του προφίλ είναι ο αξιόπιστος δρόμος σε εκείνη την πλατφόρμα."
+      },
+      {
+        "q": "Σε ποιες συσκευές δουλεύουν;",
+        "a": "Όπου τρέχει το Spotify: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox και οποιοδήποτε πρόγραμμα περιήγησης. Τα προγράμματα αναπαραγωγής αυτής της σελίδας δουλεύουν σε κινητό και υπολογιστή χωρίς εφαρμογή."
+      },
+      {
+        "q": "Με ποια λίστα να ξεκινήσω για βαθιά συγκέντρωση;",
+        "a": "Πρωί &amp; διάθεση για συγκέντρωση χωρίς περισπασμούς — downtempo, nu jazz και lo-fi με ελάχιστα ή καθόλου φωνητικά που να ανταγωνίζονται το διάβασμα. Η Ηλεκτρονική ταιριάζει σε δουλειά που ζητά ορμή αντί για ηρεμία."
+      },
+      {
+        "q": "Πόσο συχνά ανανεώνονται οι λίστες;",
+        "a": "Τακτικά, και επιτόπου. Ακολουθώντας μια λίστα στο Spotify ή το προφίλ σε οποιαδήποτε από τις δύο υπηρεσίες, τα νέα κομμάτια φτάνουν χωρίς να ξαναπεράσεις από εδώ."
+      },
+      {
+        "q": "Μπορώ να μοιραστώ ή να ενσωματώσω αυτές τις λίστες;",
+        "a": "Ναι. Κάθε κάρτα οδηγεί στη λίστα στο Spotify, όπου το μενού κοινοποίησης δίνει συνδέσμους και κώδικα ενσωμάτωσης. Είναι δημόσιες λίστες, ελεύθερες να μοιραστούν."
+      },
+      {
+        "q": "Ποιος φτιάχνει αυτές τις λίστες;",
+        "a": "Ο Sebastien Rousseau — ως BXHERO στο Spotify και στο Apple Music. Είναι οι λίστες που παίζουν όσο γράφει για πληρωμές και μηχανική, όχι μια αλγοριθμική ροή."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "Άκου σε κάθε συσκευή",
+    "body": "Κάθε λίστα παίζει στο πρόγραμμα περιήγησης παραπάνω και στην εφαρμογή Spotify στις συσκευές που ήδη χρησιμοποιείς. Ακολούθησε το προφίλ σε οποιαδήποτε από τις δύο υπηρεσίες και οι νέες λίστες έρχονται μόνες τους.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "Πρόγραμμα περιήγησης"
+    ]
+  }
+}

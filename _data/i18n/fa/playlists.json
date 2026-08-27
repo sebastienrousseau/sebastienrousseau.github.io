@@ -1,0 +1,261 @@
+{
+  "_comment": "FA copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "فهرست‌های پخش",
+    "jump": "شنیدن تازه‌ترین فهرست",
+    "platformsLabel": "کل مجموعه روی Apple Music هم هست",
+    "navLabel": "رفتن به یک ژانر",
+    "play": "پخش در Spotify",
+    "follow": "دنبال کردن در Spotify",
+    "apple": "شنیدن در Apple Music",
+    "countOne": "فهرست پخش",
+    "countOther": "فهرست پخش",
+    "coverAlt": "تصویر جلد فهرست پخش {title}",
+    "openAria": "باز کردن {title} در Spotify",
+    "frameTitle": "فهرست پخش {title} در Spotify"
+  },
+  "intro": [
+    "سی و نه فهرست پخش و ۱٬۷۶۳ قطعه، ساخته‌شده برای ساعت‌هایی که موسیقی پس‌زمینه می‌خواهند: کار عمیق، خواندن‌های طولانی و بازنویسی‌های دیروقت.",
+    "نئو سول و نو جز وقتی کار صبر می‌خواهد. بوم بپ و جز رپ وقتی شتاب می‌خواهد. فرنچ تاچ، دیپ هاوس و دیسکو هاوس وقتی بلندشدن می‌خواهد. لو-فای برای بخشی که سر پایین است، و ریتم‌های غرب آفریقا که از میان همه‌شان می‌گذرد.",
+    "هر فهرست پخش رایگان در Spotify پخش می‌شود و کل مجموعه در Apple Music است."
+  ],
+  "featured": {
+    "kicker": "تازه‌ترین فهرست پخش",
+    "date": "اوت ۲۰۲۶",
+    "genres": "ایندی پاپ · فرنچ هاوس",
+    "desc": "ایندی پاپ آفتاب‌خورده که به فرنچ هاوس سُر می‌خورد — Tame Impala و almost monday جا را به Justice، L'Impératrice و افرو هاوس HUGEL می‌دهند."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "الکترونیک",
+      "sub": "هاوس، دیسکو و فرنچ تاچ"
+    },
+    "soul-jazz": {
+      "title": "سول &amp; جز",
+      "sub": "نئو سول، نو جز و تمپوهای کند"
+    },
+    "hip-hop": {
+      "title": "هیپ‌هاپ",
+      "sub": "بوم بپ، جز رپ و گروو دوران طلایی"
+    },
+    "morning-mood": {
+      "title": "صبح &amp; حال",
+      "sub": "داون‌تمپو، لو-فای و انرژی بیدارشدن"
+    },
+    "global": {
+      "title": "جهانی",
+      "sub": "ریتم‌هایی از هر جای دیگر"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "دیسکو هاوس · گاراژ",
+      "desc": "دیسکو هاوس و گاراژ اواخر دهه نود که هنوز پیست را پر می‌کند — Kings Of Tomorrow، David Morales، Moloko، Armand Van Helden و Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "ایندی پاپ · فرنچ هاوس",
+      "desc": "ایندی پاپ آفتاب‌خورده که به فرنچ هاوس سُر می‌خورد — Tame Impala و almost monday جا را به Justice، L'Impératrice و افرو هاوس HUGEL می‌دهند."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "فرنچ تاچ · الکترو",
+      "desc": "فرنچ تاچ با نور بالا — Daft Punk، Justice، Kavinsky، L'Impératrice و Angèle سینت‌های نئونی و خط‌باس‌های موتوریک رد و بدل می‌کنند."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "ایندی دنس · سینت پاپ",
+      "desc": "سینت پاپ و ایندی دنس در ساعت طلایی — Blu DeTiger، Merty Shango، Citrus Sun و Enne آن درخشش را تا شب می‌برند."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "نو-دیسکو · فرنچ هاوس",
+      "desc": "نو-دیسکو و فرنچ هاوس با فیلتر باز — Fred Falke، Breakbot، Madeon، Lemaitre و Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "پروگرسیو هاوس · الکترو",
+      "desc": "پروگرسیو هاوس و الکترو ساخته‌شده برای حرکت — Madeon، Paul Woolford، Martin Solveig، Secondcity و The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "نو-دیسکو · هاوس فیلترشده",
+      "desc": "نو-دیسکو و هاوس فیلترشده ساخته‌شده برای حرکت — Lenno، Oliver، Tollef و Yelle روی گیتارهای بریده و باس سینتی چاق."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "دیپ هاوس · هاوس ملودیک",
+      "desc": "صد قطعه دیپ و هاوس ملودیک که بلدند سر راه نباشند — Chris Malinchak، Sultan + Shepard، Lenno و Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "فیوچر هاوس · الکترو پاپ",
+      "desc": "فیوچر هاوس روشن و الکترو پاپ — Lenno، La Felix، The Knocks، Kraak & Smaak و Chris Malinchak در طول صد قطعه."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "هیپ‌هاپ جزی · بوم بپ",
+      "desc": "بوم بپ با سمپل جز برای شب‌های کند — Blu & Exile، Large Professor، 3582 و Scienze لوپ‌های گرم و بندهای بی‌عجله رد و بدل می‌کنند."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "جز-هاپ · بوم بپ",
+      "desc": "جز-هاپ دوران طلایی از اردوی Phoniks — Awon & Phoniks، Anti Lilly، Dephlow و Tiff the Gift روی بادی‌های خاک‌گرفته و کنترباس."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "آر اند بی بدیل · نئو سول",
+      "desc": "آر اند بی بدیل و نئو سول نیمه‌شب — Brent Faiyaz، Elujay، J.Robb و Lou Phelps روی درام‌های مه‌آلود و خط‌باس‌های بی‌عجله."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "دیسکو · بوگی",
+      "desc": "پرکننده‌های پیست دهه هفتاد و هشتاد — CHIC، Luther Vandross، The Jacksons، Change و Oliver Cheatham. کار را زهی‌ها، دست‌زدن‌ها و خط‌باس‌ها انجام می‌دهند."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "اسید جز · نو جز",
+      "desc": "اسید جز و نو جز با یک گروه زنده پشت سرشان — The Brand New Heavies، Incognito، Robert Glasper، Carleen Anderson و Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "گاسپل · سول",
+      "desc": "سول با ریشه گاسپل که کل سالن را بلند می‌کند — Kirk Franklin، Aretha Franklin، Yolanda Adams، Jennifer Hudson، Mica Paris و Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "بروکن بیت · نو جز",
+      "desc": "بروکن بیت و نو جز بریتانیایی برای بعدازظهرهای کند — Emma-Jean Thackray، Blue Lab Beats، Galliano و The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "سول بریتانیایی · بروکن بیت",
+      "desc": "سول بریتانیایی در گرم‌ترین حالتش — Incognito، Shaun Escoffery، Cherri V و Tortured Soul، با Stevie Wonder در همان اتاق."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "جز مدرن · آر اند بی",
+      "desc": "جز مدرن و آر اند بی در گفت‌وگو — Robert Glasper، August Greene، Common، Karriem Riggins و Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "سول · جز فانک",
+      "desc": "ترانه‌های عاشقانه با نوازنده‌های واقعی پشت سرشان — 4hero و Marc Mac، Incognito، Imaani، Natalie Duncan و Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "نئو سول · جز",
+      "desc": "پنجاه و پنج قطعه نئو سول و جز برای شب‌های گرم — India.Arie، Robert Glasper، Lucy Pearl، Anthony David و Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "نئو سول · آر اند بی مدرن",
+      "desc": "هفتاد و سه قطعه نئو سول و آر اند بی مدرن — Alex Isley، Yebba، Ego Ella May، Robert Glasper و Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "جز فانک · نئو سول",
+      "desc": "صد قطعه با نورافکن روی نوازنده‌ها — Erykah Badu، Jill Scott، Omar، Esperanza Spalding و Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "رپ · ساحل غربی",
+      "desc": "صد قطعه رپ در چهار دهه — 2Pac و Dr. Dre، Snoop Dogg و Tha Dogg Pound، Ghostface Killah، Nicki Minaj و DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "رپ · سول · فرنچ تاچ",
+      "desc": "صد قطعه کندوکاو در جعبه صفحه‌ها بدون قاعده ژانری — Dr. Dre و Eminem کنار MC Solaar و 113، Charles Aznavour کنار DJ Mehdi و Thomas Bangalter."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "رپ هاردکور · بوم بپ",
+      "desc": "رپ هاردکور دهه نود با صدای بلند — M.O.P.، Busta Rhymes، Big L، Westside Connection، Dr. Dre و Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "بوم بپ · جز رپ",
+      "desc": "هشتاد و شش قطعه بوم بپ و جز رپ دهه نود — Gang Starr، A Tribe Called Quest، The Roots، The Pharcyde و Jazzmatazz از Guru."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "آندرگراند · بوم بپ",
+      "desc": "بوم بپ آندرگراند و بی‌کلام‌ها — Apollo Brown، People Under The Stairs، J-Live، One Be Lo، Marcus D و Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "هیپ‌هاپ مستقل · پاپ رپ",
+      "desc": "هیپ‌هاپ مستقل و پاپ رپ با شتاب — Quinn XCII، Kid Quill، EMAN8، gianni & kyle و YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "چیل‌ویو · داون‌تمپو",
+      "desc": "داون‌تمپوی بی‌وزن برای یک سفر طولانی یا صبحی کند — Zero 7، Les Imprimés و Ciao Ciao Marigold روی درام‌های نرم."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "تریپ-هاپ · جز-هاپ",
+      "desc": "تریپ-هاپ با سمپل جز از Proleter، Poldoore، Souleance و The Geek x Vrv. سینمایی، بی‌عجله، ساخته‌شده برای نوشتن."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "داون‌تمپو · نو جز",
+      "desc": "داون‌تمپو و نو جز که می‌شود فکر را به آن تکیه داد — Zero 7، The Cinematic Orchestra، Souleance، Mozez و Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "تریپ-هاپ · داون‌تمپو",
+      "desc": "تریپ-هاپ و داون‌تمپو با هسته سول — Massive Attack، Thievery Corporation، Air، Zero 7، The Cinematic Orchestra و Nina Simone بازپرداخت‌شده."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "لو-فای · بیت‌های درس خواندن",
+      "desc": "پنجاه و دو بیت لو-فای هیپ هاپ برای درس خواندن و کار عمیق — Idealism، j'san، Joey Pecoraro، Sugi.wa و aimless. هیچ آوازی برای رقابت با شما نیست."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "فرنچ هاوس · نو-دیسکو",
+      "desc": "فرنچ هاوس فانکی و نو-دیسکو با سرعتی یکنواخت — Breakbot، Modjo، Fred Falke، Kartell و Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "نو جز · داون‌تمپو",
+      "desc": "نو جز و داون‌تمپوی آرام‌بخش برای رها شدن — Zero 7، 4hero، The Cinematic Orchestra، Lemon Jelly و Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "سول · جز فانک",
+      "desc": "سول و جز فانک برای شروع روز — Adi Oasis، Durand Jones، Azymuth، Kraak & Smaak و Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "پاپ نشاط‌آور",
+      "desc": "شصت و چهار قطعه پاپ روشن و تندآهنگ برای حرکت — Riley Clemmons، Lauren Daigle، Sarah Reeves، Elle Limebear و Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "جز رپ · آر اند بی بدیل",
+      "desc": "جز رپ و آر اند بی بدیل که حرفی برای گفتن دارند — Noname، Anderson .Paak، KAYTRANADA، Q-Tip و A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "افروبیت · واسولو",
+      "desc": "صداهای غرب آفریقا در خط مقدم — Oumou Sangaré، Fatoumata Diawara، Dobet Gnahoré، Sona Jobarteh و Kareyce Fotso، از واسولو تا کورا."
+    }
+  },
+  "faq": {
+    "heading": "پرسش؟ پاسخ.",
+    "sub": "چطور گوش کنید، با چه چیزی، و این موسیقی از کجا می‌آید.",
+    "items": [
+      {
+        "q": "برای گوش دادن اشتراک Spotify لازم است؟",
+        "a": "نه. هر فهرست پخش با یک حساب رایگان Spotify در پخش‌کننده بالا اجرا می‌شود، با تبلیغ میان قطعه‌ها. حساب Premium تبلیغ‌ها را برمی‌دارد و پخش آفلاین را ممکن می‌کند، اما هیچ‌چیز اینجا پشت دیوار پرداخت نیست."
+      },
+      {
+        "q": "می‌توانم به‌جای آن در Apple Music گوش کنم؟",
+        "a": "بله — نمایه را در music.apple.com/profile/bxhero دنبال کنید. فهرست‌های این صفحه نسخه‌های Spotify هستند، چون Apple Music پیوند فهرست‌های تکی را عمومی نمی‌کند. در آن پلتفرم، دنبال کردن نمایه راه مطمئن است."
+      },
+      {
+        "q": "روی چه دستگاه‌هایی کار می‌کند؟",
+        "a": "هر جا Spotify اجرا شود: iPhone، iPad، Android، Mac، Windows، Apple Watch، Apple TV، CarPlay، Sonos، Google Nest، PlayStation، Xbox و هر مرورگری. پخش‌کننده‌های این صفحه روی موبایل و دسکتاپ بدون برنامه کار می‌کنند."
+      },
+      {
+        "q": "برای کار عمیق از کدام فهرست شروع کنم؟",
+        "a": "صبح &amp; حال برای تمرکز بدون حواس‌پرتی — داون‌تمپو، نو جز و لو-فای با آواز کم یا بدون آواز تا با خواندن رقابت نکند. الکترونیک به کاری می‌خورد که به‌جای آرامش، شتاب می‌خواهد."
+      },
+      {
+        "q": "فهرست‌ها هر چند وقت به‌روز می‌شوند؟",
+        "a": "به‌طور منظم و در همان جا. دنبال کردن یک فهرست در Spotify یا نمایه در هر یک از دو سرویس کافی است: قطعه‌های تازه بدون بازگشت به اینجا می‌رسند."
+      },
+      {
+        "q": "می‌توانم این فهرست‌ها را هم‌رسانی یا جاسازی کنم؟",
+        "a": "بله. هر کارت به فهرست در Spotify پیوند می‌خورد و منوی هم‌رسانی آنجا پیوند و کد جاسازی می‌دهد. این‌ها فهرست‌های عمومی‌اند و آزادانه قابل هم‌رسانی."
+      },
+      {
+        "q": "این فهرست‌ها را چه کسی می‌سازد؟",
+        "a": "سباستین روسو — با نام BXHERO در Spotify و Apple Music. این‌ها همان فهرست‌هایی‌اند که هنگام نوشتن درباره پرداخت‌ها و مهندسی پخش می‌شوند، نه یک خوراک الگوریتمی."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "روی هر دستگاهی گوش کنید",
+    "body": "هر فهرست پخش در مرورگر بالا اجرا می‌شود و در برنامه Spotify روی همان دستگاه‌هایی که از قبل استفاده می‌کنید. نمایه را در یکی از دو سرویس دنبال کنید تا فهرست‌های تازه خودشان برسند.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "مرورگر وب"
+    ]
+  }
+}

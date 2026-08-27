@@ -42,13 +42,13 @@ def check(path: Path) -> list[str]:
     problems: list[str] = []
     for i, e in enumerate(entries):
         problems.extend(
-            f"{path} entry {i} ({e.get('url','?')}): missing '{k}'"
+            f"{path} entry {i} ({e.get('url', '?')}): missing '{k}'"
             for k in REQUIRED_KEYS
             if k not in e
         )
         if "headings" in e and not isinstance(e["headings"], list):
             problems.append(
-                f"{path} entry {i} ({e.get('url','?')}): "
+                f"{path} entry {i} ({e.get('url', '?')}): "
                 f"'headings' is {type(e['headings']).__name__}, expected list"
             )
     return problems

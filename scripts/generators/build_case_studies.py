@@ -73,34 +73,19 @@ def _lbl(lang: str) -> dict[str, str]:
     v3 = _CS_LABELS_V3.get(lang, _CS_LABELS_V3["en"])
     return {**base, **v1, **v2, **v3}
 
+
 _TITLE_RE = re.compile(r"<title>[^<]*</title>", re.IGNORECASE)
-_DESC_RE = re.compile(
-    r'<meta name="description" content="[^"]*"', re.IGNORECASE
-)
-_CANONICAL_RE = re.compile(
-    r'<link rel="canonical" href="[^"]*"', re.IGNORECASE
-)
-_OG_TITLE_RE = re.compile(
-    r'(<meta property="og:title" content=")[^"]*(")', re.IGNORECASE
-)
-_OG_DESC_RE = re.compile(
-    r'(<meta property="og:description" content=")[^"]*(")', re.IGNORECASE
-)
-_OG_URL_RE = re.compile(
-    r'(<meta property="og:url" content=")[^"]*(")', re.IGNORECASE
-)
-_OG_LOCALE_RE = re.compile(
-    r'(<meta\s+property="og:locale"\s+content=")[^"]*(")', re.IGNORECASE
-)
+_DESC_RE = re.compile(r'<meta name="description" content="[^"]*"', re.IGNORECASE)
+_CANONICAL_RE = re.compile(r'<link rel="canonical" href="[^"]*"', re.IGNORECASE)
+_OG_TITLE_RE = re.compile(r'(<meta property="og:title" content=")[^"]*(")', re.IGNORECASE)
+_OG_DESC_RE = re.compile(r'(<meta property="og:description" content=")[^"]*(")', re.IGNORECASE)
+_OG_URL_RE = re.compile(r'(<meta property="og:url" content=")[^"]*(")', re.IGNORECASE)
+_OG_LOCALE_RE = re.compile(r'(<meta\s+property="og:locale"\s+content=")[^"]*(")', re.IGNORECASE)
 _MAIN_WRAP_RE = re.compile(
     r'(<main\b[^>]*>\s*)<div class="wrap[^"]*">[\s\S]*?</div>(\s*</main>)',
     re.IGNORECASE,
 )
-_AP_HERO_BLOCK_RE = re.compile(
-    r'<section class="ap-hero">[\s\S]*?</section>', re.IGNORECASE
-)
-
-
+_AP_HERO_BLOCK_RE = re.compile(r'<section class="ap-hero">[\s\S]*?</section>', re.IGNORECASE)
 
 
 def _load_studies() -> list[dict]:
@@ -139,11 +124,19 @@ def _load_overlay(lang: str, slug: str) -> dict:
         return {}
 
 
-_OVERLAY_KEEP_EN = frozenset({
-    "slug", "banner", "category_slug", "links",
-    "related_articles", "signed", "period",
-    "outcome_highlights_keep_values", "standards",
-})
+_OVERLAY_KEEP_EN = frozenset(
+    {
+        "slug",
+        "banner",
+        "category_slug",
+        "links",
+        "related_articles",
+        "signed",
+        "period",
+        "outcome_highlights_keep_values",
+        "standards",
+    }
+)
 _OVERLAY_LIST_FIELDS = frozenset({"outcome_highlights", "rigour"})
 
 
@@ -193,126 +186,17 @@ def _load_metrics() -> dict:
         return {}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def _hero_variant(slug: str) -> str:
     """Rotate hero composition across 5 studies so each feels distinct.
     Stable per slug — same slug always gets the same variant."""
     return ("centre", "left", "split")[sum(ord(c) for c in slug) % 3]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 sys.path.insert(0, str(ROOT / "scripts" / "lib"))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # Ordered (field, label-key, stage-number-or-zero, anchor) tuples driving
 # the right-column section render. Stage number 0 means "no NN — prefix".
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 def _unescape_head_metas(html_text: str) -> str:
@@ -350,9 +234,7 @@ def _swap_into_shell(shell: str, body: str, title: str, desc: str, url: str) -> 
     # text/HTML, and str.sub replacement *templates* would interpret \g<0> /
     # lone backslashes in it (silent duplication or re.error).
     esc_title, esc_desc, esc_url = _esc(title), _esc(desc), _esc(url)
-    out = _sub_verified(
-        _TITLE_RE, lambda m: f"<title>{esc_title}</title>", shell, "<title>"
-    )
+    out = _sub_verified(_TITLE_RE, lambda m: f"<title>{esc_title}</title>", shell, "<title>")
     out = _sub_verified(
         _DESC_RE,
         lambda m: f'<meta name="description" content="{esc_desc}"',
@@ -371,9 +253,7 @@ def _swap_into_shell(shell: str, body: str, title: str, desc: str, url: str) -> 
     out = _sub_verified(
         _OG_DESC_RE, lambda m: m.group(1) + esc_desc + m.group(2), out, "og:description"
     )
-    out = _sub_verified(
-        _OG_URL_RE, lambda m: m.group(1) + esc_url + m.group(2), out, "og:url"
-    )
+    out = _sub_verified(_OG_URL_RE, lambda m: m.group(1) + esc_url + m.group(2), out, "og:url")
     # The ap-hero block is a conditional strip, not an anchor: only some
     # homepage-style shells carry it (the articles shell does not), so its
     # absence is expected and must not fail the build.
@@ -388,9 +268,15 @@ def _swap_into_shell(shell: str, body: str, title: str, desc: str, url: str) -> 
 
 
 def _write_study(
-    shell: str, study: dict, lang: str, url_segment: str,
-    lbl: dict[str, str], out_dir: Path, article_slug_map: dict[str, str],
-    all_studies: list[dict], og_locale: str,
+    shell: str,
+    study: dict,
+    lang: str,
+    url_segment: str,
+    lbl: dict[str, str],
+    out_dir: Path,
+    article_slug_map: dict[str, str],
+    all_studies: list[dict],
+    og_locale: str,
 ) -> Path:
     slug = study["slug"]
     title = study.get("title", slug)
@@ -410,15 +296,16 @@ def _write_study(
 
 
 def _write_index(
-    shell: str, studies: list[dict], lang: str, url_segment: str,
-    lbl: dict[str, str], out_dir: Path, og_locale: str,
+    shell: str,
+    studies: list[dict],
+    lang: str,
+    url_segment: str,
+    lbl: dict[str, str],
+    out_dir: Path,
+    og_locale: str,
 ) -> Path:
     body = _render_index_body(studies, lbl, lang, url_segment)
-    url = (
-        f"{_BASE_URL}/case-studies/"
-        if lang == "en"
-        else f"{_BASE_URL}/{lang}/{url_segment}/"
-    )
+    url = f"{_BASE_URL}/case-studies/" if lang == "en" else f"{_BASE_URL}/{lang}/{url_segment}/"
     # EN hub gets the keyword-rich SEO title from the 5-item nav
     # re-architecture spec; locales keep their translated label.
     hub_title = (
@@ -427,7 +314,8 @@ def _write_index(
         else f"{lbl['Case studies']} — Sebastien Rousseau"
     )
     out = _swap_into_shell(
-        shell, body,
+        shell,
+        body,
         hub_title,
         lbl["deck"],
         url,
@@ -440,8 +328,13 @@ def _write_index(
 
 
 def _emit_one_locale(
-    shell: str, studies: list[dict], lang: str, url_segment: str,
-    lbl: dict[str, str], article_slug_map: dict[str, str], og_locale: str,
+    shell: str,
+    studies: list[dict],
+    lang: str,
+    url_segment: str,
+    lbl: dict[str, str],
+    article_slug_map: dict[str, str],
+    og_locale: str,
 ) -> int:
     out_dir = OUT_DIR if lang == "en" else (PUBLIC / lang / url_segment)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -449,12 +342,22 @@ def _emit_one_locale(
     # through unchanged (overlay loader returns {} for lang == 'en').
     localised_studies = [_localised_study(s, lang) for s in studies]
     for study in localised_studies:
-        _write_study(shell, study, lang, url_segment, lbl, out_dir, article_slug_map, localised_studies, og_locale)
+        _write_study(
+            shell,
+            study,
+            lang,
+            url_segment,
+            lbl,
+            out_dir,
+            article_slug_map,
+            localised_studies,
+            og_locale,
+        )
     _write_index(shell, localised_studies, lang, url_segment, lbl, out_dir, og_locale)
     return len(localised_studies) + 1
 
 
-def _emit_locale_forks(studies: list[dict]) -> int:
+def _emit_locale_forks(studies: list[dict]) -> tuple[int, int]:
     """For each active non-EN locale, fork the EN locale shell + run
     translate_chrome to localise nav / footer / search aria / lang switch
     on the case-study pages. Body text is rendered from the per-locale
@@ -467,10 +370,11 @@ def _emit_locale_forks(studies: list[dict]) -> int:
         from build_translations import _state as _st  # type: ignore[import-not-found]
     except ImportError as exc:
         print(f"build_case_studies: skip locale forks — {exc}", file=sys.stderr)
-        return 0
+        return 0, 0
 
     en_shell = SHELL_SRC.read_text(encoding="utf-8")
     total = 0
+    forks = 0
     for lang in _lang_registry.active():
         if lang.code == "en":
             continue
@@ -490,7 +394,8 @@ def _emit_locale_forks(studies: list[dict]) -> int:
         total += _emit_one_locale(
             localised_shell, studies, lang.code, url_segment, lbl, article_slug_map, lang.og_locale
         )
-    return total
+        forks += 1
+    return total, forks
 
 
 def main() -> int:
@@ -504,10 +409,10 @@ def main() -> int:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     en_lbl = _lbl("en")
     en_count = _emit_one_locale(shell, studies, "en", "case-studies", en_lbl, {}, "en_GB")
-    locale_count = _emit_locale_forks(studies)
+    locale_count, fork_count = _emit_locale_forks(studies)
     print(
         f"build_case_studies: wrote {len(studies)} case studies + 1 index in EN "
-        f"({en_count} files); {locale_count} files across 27 locale forks"
+        f"({en_count} files); {locale_count} files across {fork_count} locale forks"
     )
     return 0
 

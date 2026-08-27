@@ -286,13 +286,11 @@ def _build_fr_lead(description: str, takeaways: list[tuple[str, str]]) -> str:
         f'<p class="post-lead-tldr"><strong>TL;DR.</strong> {_html.escape(description)}</p>',
     ]
     if takeaways:
-        parts.append(
-            f'<p class="post-lead-heading"><strong>{_html.escape(heading)}</strong></p>'
-        )
+        parts.append(f'<p class="post-lead-heading"><strong>{_html.escape(heading)}</strong></p>')
         parts.append('<ul class="post-lead-takeaways">')
         for heading, sentence in takeaways:
             parts.append(
-                f"  <li><strong>{_html.escape(heading)}.</strong> " f"{_html.escape(sentence)}</li>"
+                f"  <li><strong>{_html.escape(heading)}.</strong> {_html.escape(sentence)}</li>"
             )
         parts.append("</ul>")
     parts.append("</aside>")
@@ -368,9 +366,7 @@ def _french_body(
         lead = lead_aside or _french_lead_fallback(description)
     _strings = _lang_registry.load_strings(st.LANG_CODE)
     review_label = _strings.get("article.lastReviewedLabel", "Last reviewed ")
-    review = (
-        f'<p class="post-reviewed">{review_label}' f'<time datetime="{today}">{today}</time>.</p>'
-    )
+    review = f'<p class="post-reviewed">{review_label}<time datetime="{today}">{today}</time>.</p>'
     # The translated source markdown may already contain post_enrich-injected
     # author-card / post-reviewed / lead-aside / related-posts blocks copied
     # from the EN scaffold; strip them so the localised versions emitted by

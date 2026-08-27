@@ -370,9 +370,7 @@ def _rss_item_content(item: ET.Element, i: int, warnings: list[str]) -> None:
     make it a worse feed."""
     description = (item.findtext("description") or "").strip()
     if description and len(description) < 10:
-        warnings.append(
-            f"rss: item[{i}] <description> too short ({len(description)}c, ideal >=10)"
-        )
+        warnings.append(f"rss: item[{i}] <description> too short ({len(description)}c, ideal >=10)")
     pub_date = (item.findtext("pubDate") or "").strip()
     if pub_date and not RFC822_RE.match(pub_date):
         warnings.append(f"rss: item[{i}] <pubDate> not RFC 822: {pub_date!r}")
@@ -420,9 +418,7 @@ def _validate_rss(root: ET.Element, errors: list[str], warnings: list[str]) -> N
         _validate_rss_item(item, i, seen_guids, seen_links, errors, warnings)
 
 
-def _atom_entry_id(
-    entry: ET.Element, i: int, seen_ids: dict[str, int], errors: list[str]
-) -> None:
+def _atom_entry_id(entry: ET.Element, i: int, seen_ids: dict[str, int], errors: list[str]) -> None:
     eid = (entry.findtext(f"{{{_ATOM_NS}}}id") or "").strip()
     _check_url_taint(f"atom: entry[{i}] <id>", eid, errors)
     if not eid:
@@ -432,9 +428,7 @@ def _atom_entry_id(
     seen_ids[eid] = i
 
 
-def _atom_entry_links(
-    entry: ET.Element, i: int, errors: list[str], warnings: list[str]
-) -> None:
+def _atom_entry_links(entry: ET.Element, i: int, errors: list[str], warnings: list[str]) -> None:
     for j, ln in enumerate(entry.findall(f"{{{_ATOM_NS}}}link")):
         href = ln.attrib.get("href", "")
         _check_url_taint(f"atom: entry[{i}] <link>[{j}] href", href, errors)
@@ -540,9 +534,7 @@ def _validate_news_extension(
     _news_keywords(news, i, warnings)
 
 
-_CHANGEFREQ = frozenset(
-    {"always", "hourly", "daily", "weekly", "monthly", "yearly", "never"}
-)
+_CHANGEFREQ = frozenset({"always", "hourly", "daily", "weekly", "monthly", "yearly", "never"})
 
 
 def _sitemap_url_optional_fields(url: ET.Element, i: int, warnings: list[str]) -> None:

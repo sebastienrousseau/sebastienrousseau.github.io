@@ -1,0 +1,261 @@
+{
+  "_comment": "NL copy for /playlists/. Mirrors scripts/lib/_playlist_copy.py (the EN source). Cards are keyed by Spotify playlist id, lanes by lane key. Playlist names are proper nouns and stay in the source module. Values are HTML-ready: no raw < or \" characters.",
+  "ui": {
+    "h1": "Playlists",
+    "jump": "Luister naar de nieuwste playlist",
+    "platformsLabel": "De hele collectie staat ook op Apple Music",
+    "navLabel": "Ga naar een genre",
+    "play": "Afspelen op Spotify",
+    "follow": "Volgen op Spotify",
+    "apple": "Luister op Apple Music",
+    "countOne": "playlist",
+    "countOther": "playlists",
+    "coverAlt": "Hoesbeeld van de playlist {title}",
+    "openAria": "{title} openen op Spotify",
+    "frameTitle": "Playlist {title} op Spotify"
+  },
+  "intro": [
+    "Negenendertig playlists en 1.763 nummers, gemaakt voor de uren die om een soundtrack vragen: deep work, lange teksten en late herschrijvingen.",
+    "Neo soul en nu jazz als het werk geduld vraagt. Boom bap en jazz rap als het vaart vraagt. French touch, deep house en disco house als het lift vraagt. Lo-fi voor het stuk met het hoofd omlaag, en West-Afrikaanse ritmes die er dwars doorheen lopen.",
+    "Elke playlist speelt gratis op Spotify, en de hele collectie staat op Apple Music."
+  ],
+  "featured": {
+    "kicker": "Nieuwste playlist",
+    "date": "augustus 2026",
+    "genres": "Indie pop · French house",
+    "desc": "Zonovergoten indie pop die overgaat in French house — Tame Impala en almost monday maken plaats voor Justice, L'Impératrice en de afro house van HUGEL."
+  },
+  "lanes": {
+    "electronic": {
+      "title": "Elektronisch",
+      "sub": "House, disco en French touch"
+    },
+    "soul-jazz": {
+      "title": "Soul &amp; Jazz",
+      "sub": "Neo soul, nu jazz en traag tempo"
+    },
+    "hip-hop": {
+      "title": "Hip-Hop",
+      "sub": "Boom bap, jazz rap en grooves uit de gouden tijd"
+    },
+    "morning-mood": {
+      "title": "Ochtend &amp; stemming",
+      "sub": "Downtempo, lo-fi en energie om wakker te worden"
+    },
+    "global": {
+      "title": "Global",
+      "sub": "Ritmes van overal elders"
+    }
+  },
+  "cards": {
+    "79rcQ3HAOu3RQTu0hyPFVX": {
+      "eyebrow": "Disco house · Garage",
+      "desc": "Disco house en garage uit de late jaren negentig die een vloer nog steeds vullen — Kings Of Tomorrow, David Morales, Moloko, Armand Van Helden en Boris Dlugosch."
+    },
+    "6dhwZBIQ4dpoc9lne6b7Aj": {
+      "eyebrow": "Indie pop · French house",
+      "desc": "Zonovergoten indie pop die overgaat in French house — Tame Impala en almost monday maken plaats voor Justice, L'Impératrice en de afro house van HUGEL."
+    },
+    "2r2g4G5wTSucqWda5MkuXH": {
+      "eyebrow": "French touch · Electro",
+      "desc": "French touch op vol licht — Daft Punk, Justice, Kavinsky, L'Impératrice en Angèle wisselen neonsynths en motorik-baslijnen uit."
+    },
+    "3YiO3L3LMWlXaGEGtJFdXo": {
+      "eyebrow": "Indie dance · Synth pop",
+      "desc": "Synth pop en indie dance in het gouden uur — Blu DeTiger, Merty Shango, Citrus Sun en Enne dragen de glans de avond in."
+    },
+    "0S31oWFMppEkhtHiSsldI1": {
+      "eyebrow": "Nu-disco · French house",
+      "desc": "Nu-disco en French house met het filter open — Fred Falke, Breakbot, Madeon, Lemaitre en Yelle."
+    },
+    "5OQTseRtYQtZF6kERLvcSz": {
+      "eyebrow": "Progressive house · Electro",
+      "desc": "Progressive house en electro gebouwd om te bewegen — Madeon, Paul Woolford, Martin Solveig, Secondcity en The Knocks."
+    },
+    "5OksFu1fF3eHNifxxAcev6": {
+      "eyebrow": "Nu-disco · Gefilterde house",
+      "desc": "Nu-disco en gefilterde house gebouwd om te bewegen — Lenno, Oliver, Tollef en Yelle over afgeknipte gitaren en vette synthbas."
+    },
+    "1lZbauO3yCPB3YAyT5xLCW": {
+      "eyebrow": "Deep house · Melodic house",
+      "desc": "Honderd deep- en melodic-housenummers die niet in de weg lopen — Chris Malinchak, Sultan + Shepard, Lenno en Nora Van Elken."
+    },
+    "5vKhAAaO06St5XoCh96PxR": {
+      "eyebrow": "Future house · Electro pop",
+      "desc": "Heldere future house en electro pop — Lenno, La Felix, The Knocks, Kraak & Smaak en Chris Malinchak over honderd nummers."
+    },
+    "2CeSPJPwxmhbIIdfXyap3F": {
+      "eyebrow": "Jazzy hiphop · Boom bap",
+      "desc": "Jazz-samplende boom bap voor trage avonden — Blu & Exile, Large Professor, 3582 en Scienze wisselen warme loops en onhaastige coupletten uit."
+    },
+    "0mrwKGH6s0MWsNfMCtcTQz": {
+      "eyebrow": "Jazz-hop · Boom bap",
+      "desc": "Jazz-hop uit de gouden tijd van het Phoniks-kamp — Awon & Phoniks, Anti Lilly, Dephlow en Tiff the Gift over stoffige blazers en contrabas."
+    },
+    "56Vs5RzfyK1uqwWFoTz3SB": {
+      "eyebrow": "Alternatieve R&B · Neo soul",
+      "desc": "Alternatieve R&B en neo soul voor de late uren — Brent Faiyaz, Elujay, J.Robb en Lou Phelps over wazige drums en onhaastige baslijnen."
+    },
+    "1q8SfSUHyFxjUWucE9A1wR": {
+      "eyebrow": "Disco · Boogie",
+      "desc": "Vloervullers uit de jaren zeventig en tachtig — CHIC, Luther Vandross, The Jacksons, Change en Oliver Cheatham. Strijkers, klappen en baslijnen die het werk doen."
+    },
+    "7GLBaZHcJ5st67eMCILolm": {
+      "eyebrow": "Acid jazz · Nu jazz",
+      "desc": "Acid jazz en nu jazz met een live band erachter — The Brand New Heavies, Incognito, Robert Glasper, Carleen Anderson en Count Basic."
+    },
+    "2WxvFba2Sgg4Sd3lZJHmHP": {
+      "eyebrow": "Gospel · Soul",
+      "desc": "Soul met gospelwortels die een zaal optilt — Kirk Franklin, Aretha Franklin, Yolanda Adams, Jennifer Hudson, Mica Paris en Avery*Sunshine."
+    },
+    "36Rkih8f9fgd92jI3QVMrQ": {
+      "eyebrow": "Broken beat · Nu jazz",
+      "desc": "Broken beat en Britse nu jazz voor trage middagen — Emma-Jean Thackray, Blue Lab Beats, Galliano en The Brand New Heavies."
+    },
+    "261aHSqcEnM5KnTCLSNFQz": {
+      "eyebrow": "Britse soul · Broken beat",
+      "desc": "Britse soul op zijn warmst — Incognito, Shaun Escoffery, Cherri V en Tortured Soul, met Stevie Wonder in de kamer."
+    },
+    "2XO0Kw6aCXdfUT3coih7vg": {
+      "eyebrow": "Moderne jazz · R&B",
+      "desc": "Moderne jazz en R&B in gesprek — Robert Glasper, August Greene, Common, Karriem Riggins en Brandy."
+    },
+    "0UWRprsfYCjbnpLHCNUCPF": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Liefdesliedjes met echte muzikanten erachter — 4hero en Marc Mac, Incognito, Imaani, Natalie Duncan en Adi Oasis."
+    },
+    "5RQ9X2WmRseY9SEU5oLwwX": {
+      "eyebrow": "Neo soul · Jazz",
+      "desc": "Vijfenvijftig neo soul- en jazznummers voor warme avonden — India.Arie, Robert Glasper, Lucy Pearl, Anthony David en Ronny Jordan."
+    },
+    "7yvugJcCzkaWN908rXTSIL": {
+      "eyebrow": "Neo soul · Moderne R&B",
+      "desc": "Drieënzeventig nummers neo soul en moderne R&B — Alex Isley, Yebba, Ego Ella May, Robert Glasper en Blue Lab Beats."
+    },
+    "5wjy0SY2jCwAZ4UFLF3eXC": {
+      "eyebrow": "Jazz funk · Neo soul",
+      "desc": "Honderd nummers met de schijnwerper op de muzikanten — Erykah Badu, Jill Scott, Omar, Esperanza Spalding en Stevie Wonder."
+    },
+    "6rCGkdLLdt6IXhkQvXSwyF": {
+      "eyebrow": "Rap · Westkust",
+      "desc": "Honderd rapnummers uit vier decennia — 2Pac en Dr. Dre, Snoop Dogg en Tha Dogg Pound, Ghostface Killah, Nicki Minaj en DJ Muggs."
+    },
+    "5mKe1KjwZRzTS4FtU2jejT": {
+      "eyebrow": "Rap · Soul · French touch",
+      "desc": "Honderd nummers gegraven uit de platenbak zonder genreregel — Dr. Dre en Eminem naast MC Solaar en 113, Charles Aznavour naast DJ Mehdi en Thomas Bangalter."
+    },
+    "6830pCYVUFYHtnkE4SJfhR": {
+      "eyebrow": "Hardcore rap · Boom bap",
+      "desc": "Hardcore rap uit de jaren negentig met het volume omhoog — M.O.P., Busta Rhymes, Big L, Westside Connection, Dr. Dre en Snoop Dogg."
+    },
+    "6jFJIxFfpUx0oGkbLDImKB": {
+      "eyebrow": "Boom bap · Jazz rap",
+      "desc": "Zesentachtig nummers boom bap en jazz rap uit de jaren negentig — Gang Starr, A Tribe Called Quest, The Roots, The Pharcyde en Guru's Jazzmatazz."
+    },
+    "5yUR35ZVOOpxyPOBhAvhkR": {
+      "eyebrow": "Underground · Boom bap",
+      "desc": "Underground boom bap en instrumentals — Apollo Brown, People Under The Stairs, J-Live, One Be Lo, Marcus D en Shing02."
+    },
+    "5yegPuy33SiP7DIwL6MF0J": {
+      "eyebrow": "Indie hiphop · Pop rap",
+      "desc": "Indie hiphop en pop rap met vaart — Quinn XCII, Kid Quill, EMAN8, gianni & kyle en YONAS."
+    },
+    "40OkPs9Yk4AtBZrtYz5xtW": {
+      "eyebrow": "Chillwave · Downtempo",
+      "desc": "Gewichtloze downtempo voor een lange rit of een trage ochtend — Zero 7, Les Imprimés en Ciao Ciao Marigold over zachtgetekende drums."
+    },
+    "4PBfAfwUv5fEJAYErxvNJ4": {
+      "eyebrow": "Trip-hop · Jazz-hop",
+      "desc": "Jazz-samplende trip-hop van Proleter, Poldoore, Souleance en The Geek x Vrv. Filmisch, onhaastig, gemaakt om te schrijven."
+    },
+    "2KTuNfNOJsvUmrcTK3Erh5": {
+      "eyebrow": "Downtempo · Nu jazz",
+      "desc": "Downtempo en nu jazz om tegenaan te denken — Zero 7, The Cinematic Orchestra, Souleance, Mozez en Ida Nielsen."
+    },
+    "2JGGk44Nopf8BX7oYJsler": {
+      "eyebrow": "Trip-hop · Downtempo",
+      "desc": "Trip-hop en downtempo met een soulkern — Massive Attack, Thievery Corporation, Air, Zero 7, The Cinematic Orchestra en een bewerkte Nina Simone."
+    },
+    "6Utj7AwHY6VkgGtm9wAneh": {
+      "eyebrow": "Lo-fi · Studeerbeats",
+      "desc": "Tweeënvijftig lo-fi hiphopbeats om te studeren en diep te werken — Idealism, j'san, Joey Pecoraro, Sugi.wa en aimless. Geen zang om mee in discussie te gaan."
+    },
+    "4y3b1FXh8eVhwRRoKwrtSx": {
+      "eyebrow": "French house · Nu-disco",
+      "desc": "Funky French house en nu-disco op een gelijke koers — Breakbot, Modjo, Fred Falke, Kartell en Chris Malinchak."
+    },
+    "7hZsKoasqFogxZVqDKYJwA": {
+      "eyebrow": "Nu jazz · Downtempo",
+      "desc": "Rustgevende nu jazz en downtempo om tot rust te komen — Zero 7, 4hero, The Cinematic Orchestra, Lemon Jelly en Kid Loco."
+    },
+    "3GspTYbjOA4oCSulh3YLng": {
+      "eyebrow": "Soul · Jazz funk",
+      "desc": "Soul en jazz funk om de dag mee te beginnen — Adi Oasis, Durand Jones, Azymuth, Kraak & Smaak en Stevie Wonder."
+    },
+    "3Eg1SZ5yYbtdytaV3sVg6C": {
+      "eyebrow": "Opbeurende pop",
+      "desc": "Vierenzestig heldere, opzwepende popnummers om op te bewegen — Riley Clemmons, Lauren Daigle, Sarah Reeves, Elle Limebear en Madison."
+    },
+    "1RnzXyrj73nyo4yK6j3xT9": {
+      "eyebrow": "Jazz rap · Alternatieve R&B",
+      "desc": "Jazz rap en alternatieve R&B met iets te zeggen — Noname, Anderson .Paak, KAYTRANADA, Q-Tip en A Tribe Called Quest."
+    },
+    "13oQhLqxlNuPrn9pOIx6Vx": {
+      "eyebrow": "Afrobeat · Wassoulou",
+      "desc": "West-Afrikaanse stemmen op de voorgrond — Oumou Sangaré, Fatoumata Diawara, Dobet Gnahoré, Sona Jobarteh en Kareyce Fotso, van wassoulou tot kora."
+    }
+  },
+  "faq": {
+    "heading": "Vragen? Antwoorden.",
+    "sub": "Hoe je luistert, waarop, en waar de muziek vandaan komt.",
+    "items": [
+      {
+        "q": "Heb ik een Spotify-abonnement nodig om te luisteren?",
+        "a": "Nee. Elke playlist speelt in de ingesloten speler hierboven met een gratis Spotify-account, met reclame tussen de nummers. Een Premium-account haalt de reclame weg en maakt offline luisteren mogelijk, maar niets hier zit achter een betaalmuur."
+      },
+      {
+        "q": "Kan ik in plaats daarvan op Apple Music luisteren?",
+        "a": "Ja — volg het profiel op music.apple.com/profile/bxhero. De playlists op deze pagina zijn de Spotify-versies, omdat Apple Music links naar losse playlists niet openbaar beschikbaar maakt. Het profiel volgen is op dat platform de betrouwbare route."
+      },
+      {
+        "q": "Op welke apparaten werkt dit?",
+        "a": "Overal waar Spotify draait: iPhone, iPad, Android, Mac, Windows, Apple Watch, Apple TV, CarPlay, Sonos, Google Nest, PlayStation, Xbox en elke browser. De spelers op deze pagina werken op mobiel en desktop zonder app."
+      },
+      {
+        "q": "Met welke playlist begin ik voor deep work?",
+        "a": "Ochtend &amp; stemming voor focus zonder afleiding: downtempo, nu jazz en lo-fi met weinig of geen zang die met lezen concurreert. Elektronisch past bij werk dat vaart vraagt in plaats van rust."
+      },
+      {
+        "q": "Hoe vaak worden de playlists bijgewerkt?",
+        "a": "Regelmatig, en ter plekke. Wie een playlist op Spotify of het profiel op een van beide diensten volgt, krijgt nieuwe nummers zonder hier terug te komen."
+      },
+      {
+        "q": "Mag ik deze playlists delen of insluiten?",
+        "a": "Ja. Elke kaart linkt naar de playlist op Spotify, waar het deelmenu links en insluitcodes geeft. Het zijn openbare playlists, vrij te delen."
+      },
+      {
+        "q": "Wie maakt deze playlists?",
+        "a": "Sebastien Rousseau — als BXHERO op Spotify en Apple Music. Het zijn de playlists die draaien tijdens het schrijven over betalingen en engineering, geen algoritmische feed."
+      }
+    ]
+  },
+  "everywhere": {
+    "heading": "Luister op elk apparaat",
+    "body": "Elke playlist speelt in de browser hierboven en in de Spotify-app op de apparaten die je toch al gebruikt. Volg het profiel op een van beide diensten en nieuwe playlists komen vanzelf binnen.",
+    "devices": [
+      "iPhone",
+      "iPad",
+      "Android",
+      "Mac",
+      "Windows",
+      "Apple Watch",
+      "Apple TV",
+      "CarPlay",
+      "Sonos",
+      "Google Nest",
+      "PlayStation",
+      "Xbox",
+      "Webbrowser"
+    ]
+  }
+}
