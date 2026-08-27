@@ -8,13 +8,21 @@ idempotency.
 
 from __future__ import annotations
 
+import json
 import sys
 from pathlib import Path
+
+import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts" / "postbuild"))
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts" / "lib"))
 
-from postbuild_lib.redirects import apply_redirect_pages
+from postbuild_lib import redirects as _redirects
+from postbuild_lib.redirects import (
+    _article_redirect_pairs,
+    apply_article_redirects,
+    apply_redirect_pages,
+)
 
 _BASE = "https://sebastienrousseau.com"
 
@@ -116,3 +124,105 @@ def test_missing_pages_are_skipped(tmp_path):
     converted, purged = apply_redirect_pages(public)
     assert converted == 0
     assert purged == 0
+
+
+# ---------------------------------------------------------------------------
+# Retired article URLs (_data/redirects/articles.json).
+#
+# Distinct from the /papers -> /research case above: there the legacy page
+# is still rendered and gets converted in place. Here the build stopped
+# emitting the old path entirely, so the page has to be materialised from
+# its target before the same conversion runs.
+# ---------------------------------------------------------------------------
+
+
+def _article_tree(tmp_path: Path) -> Path:
+    """A tree with two live targets (EN + fr) and no legacy paths."""
+    public = tmp_path / "public"
+    for rel, url in (
+        ("2024-01-08-new", f"{_BASE}/2024-01-08-new/"),
+        ("fr/2024-01-08-nouveau", f"{_BASE}/fr/2024-01-08-nouveau/"),
+    ):
+        d = public / rel
+        d.mkdir(parents=True)
+        (d / "index.html").write_text(_page(url, _hreflang_cluster()))
+    return public
+
+
+@pytest.fixture
+def _map(tmp_path, monkeypatch):
+    """Point the module at a throwaway redirect map."""
+
+    def _write(payload: dict) -> None:
+        f = tmp_path / "articles.json"
+        f.write_text(json.dumps(payload), encoding="utf-8")
+        monkeypatch.setattr(_redirects, "ARTICLE_REDIRECTS", f)
+
+    return _write
+
+
+def test_retired_article_url_is_materialised(tmp_path, _map):
+    public = _article_tree(tmp_path)
+    _map({"_comment": "ignored", "en": {"2024-01-01-old": "2024-01-08-new"}})
+
+    assert apply_article_redirects(public) == 1
+    page = public / "2024-01-01-old" / "index.html"
+    assert page.is_file()
+    html = page.read_text()
+    assert f'content="0; url={_BASE}/2024-01-08-new/"' in html
+    assert f'href="{_BASE}/2024-01-08-new/"' in html
+    assert "hreflang=" not in html
+
+
+def test_locale_key_maps_under_its_prefix(tmp_path, _map):
+    public = _article_tree(tmp_path)
+    _map({"fr": {"2024-01-01-ancien": "2024-01-08-nouveau"}})
+
+    assert apply_article_redirects(public) == 1
+    html = (public / "fr" / "2024-01-01-ancien" / "index.html").read_text()
+    assert f'content="0; url={_BASE}/fr/2024-01-08-nouveau/"' in html
+
+
+def test_is_idempotent(tmp_path, _map):
+    public = _article_tree(tmp_path)
+    _map({"en": {"2024-01-01-old": "2024-01-08-new"}})
+
+    assert apply_article_redirects(public) == 1
+    before = (public / "2024-01-01-old" / "index.html").read_text()
+    # A second pass must not rewrite the page — the byte-identical rebuild
+    # job diffs two consecutive builds.
+    assert apply_article_redirects(public) == 0
+    assert (public / "2024-01-01-old" / "index.html").read_text() == before
+
+
+def test_entry_with_missing_target_is_skipped(tmp_path, _map):
+    """A stale map entry must not create a page pointing at a 404."""
+    public = _article_tree(tmp_path)
+    _map({"en": {"2024-01-01-old": "2099-01-01-never-published"}})
+
+    assert apply_article_redirects(public) == 0
+    assert not (public / "2024-01-01-old").exists()
+
+
+def test_live_url_is_never_overwritten(tmp_path, _map):
+    """If the source still renders it is content, not a legacy path."""
+    public = _article_tree(tmp_path)
+    live = public / "2024-01-08-new" / "index.html"
+    original = live.read_text()
+    _map({"en": {"2024-01-08-new": "2024-01-08-new"}})
+
+    assert apply_article_redirects(public) == 0
+    assert live.read_text() == original
+
+
+def test_underscore_keys_are_not_treated_as_locales(tmp_path, _map):
+    public = _article_tree(tmp_path)
+    _map({"_comment": {"2024-01-01-old": "2024-01-08-new"}})
+
+    assert _article_redirect_pairs(public) == []
+
+
+def test_missing_map_file_is_not_an_error(tmp_path, monkeypatch):
+    public = _article_tree(tmp_path)
+    monkeypatch.setattr(_redirects, "ARTICLE_REDIRECTS", tmp_path / "absent.json")
+    assert apply_article_redirects(public) == 0

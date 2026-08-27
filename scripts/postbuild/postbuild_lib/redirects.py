@@ -1,10 +1,25 @@
-"""Redirect-page conversion: /papers -> /research (EN + every locale fork).
+"""Redirect pages for retired URLs.
 
-The publications hub moved to /research in the 5-item nav re-architecture
-(Suite / Research / Case studies / Resources / About). /research is the
-canonical hub; the legacy /papers URLs stay rendered so old inbound links,
-bookmarks and the URL inventory keep resolving, but each is converted into
-a true redirect page:
+Two kinds, and they differ in whether a source page still exists.
+
+*Static moves* (/papers -> /research, EN + every locale fork). The
+legacy page is still rendered, so it is converted in place.
+
+*Retired article URLs* (_data/redirects/articles.json). The build
+stops emitting the old path entirely, so there is nothing to convert
+and the URL 404s. 128 of these accumulated: 108 from English article
+renames propagating to all 34 locales, 12 from locale slug
+localisation, 8 on the English root. apply_article_redirects
+materialises each one from its target. See that function for why the
+page is a copy rather than a stub.
+
+The static move: the publications hub went to /research in the 5-item nav
+re-architecture (Suite / Research / Case studies / Resources / About).
+/research is the canonical hub; the legacy /papers URLs stay rendered so
+old inbound links, bookmarks and the URL inventory keep resolving.
+
+Whichever way the source page comes to exist, both kinds are then turned
+into a true redirect page the same way:
 
 * ``<meta http-equiv="refresh" content="0; url=<target>">`` injected into
   ``<head>`` -- Google treats an instant meta refresh as a permanent
@@ -16,9 +31,12 @@ a true redirect page:
 * The URL is dropped from every sitemap: non-canonical URLs do not belong
   in a sitemap.
 
-Locale forks get equivalent treatment via the per-locale slug maps:
-``/<lang>/<papers-slug>/`` redirects to ``/<lang>/<research-slug>/`` (for
-example ``/fr/publications/`` -> ``/fr/recherche/``).
+Locale forks of the static move are derived from the per-locale slug
+maps: ``/<lang>/<papers-slug>/`` redirects to ``/<lang>/<research-slug>/``
+(for example ``/fr/publications/`` -> ``/fr/recherche/``). Retired article
+URLs are listed per locale in the JSON, because their old slugs cannot be
+recomputed from the current maps -- that is exactly the information the
+rename destroyed.
 
 Must run AFTER the per-page pipeline (normalize_canonical would otherwise
 rewrite the canonical back to self) and AFTER the sitemap augment pass in
@@ -34,6 +52,7 @@ every-page-in-sitemap rule).
 
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -46,6 +65,12 @@ from postbuild_lib.article_furniture import _BASE_URL, PUBLIC
 # EN slug pairs: source page -> canonical target. Locale forks are derived
 # from the per-locale slug maps at run time.
 REDIRECTS: dict[str, str] = {"papers": "research"}
+
+# Article URLs that were published and no longer render. Unlike the static
+# pairs above, there is no source page left to convert: the build simply
+# stops emitting the old path, so the URL 404s. Each entry is materialised
+# from its target instead — see apply_article_redirects.
+ARTICLE_REDIRECTS = Path(__file__).resolve().parents[3] / "_data" / "redirects" / "articles.json"
 
 _META_REFRESH_RE = re.compile(r'<meta\s+http-equiv="refresh"[^>]*>', re.IGNORECASE)
 _CANONICAL_RE = re.compile(
@@ -137,6 +162,59 @@ def _purge_from_sitemaps(public: Path, redirect_urls: set[str]) -> int:
         if new != text:
             sm.write_text(new, encoding="utf-8")
     return removed
+
+
+def _article_redirect_pairs(public: Path) -> list[tuple[Path, Path, str]]:
+    """``[(source index.html, target index.html, absolute target URL), ...]``.
+
+    Skips any entry whose target does not render (a stale map entry must
+    not create a page pointing at a 404) and any whose source still
+    renders (that URL is live content, not a legacy path).
+    """
+    try:
+        data = json.loads(ARTICLE_REDIRECTS.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return []
+    pairs: list[tuple[Path, Path, str]] = []
+    for code, mapping in data.items():
+        if code.startswith("_"):
+            continue
+        root = public if code == "en" else public / code
+        prefix = "" if code == "en" else f"{code}/"
+        for dead, target in mapping.items():
+            src, tgt = root / dead / "index.html", root / target / "index.html"
+            if tgt.is_file() and not src.exists():
+                pairs.append((src, tgt, f"{_BASE_URL}/{prefix}{target}/"))
+    return pairs
+
+
+def apply_article_redirects(public: Path = PUBLIC) -> int:
+    """Materialise every retired article URL as a redirect page.
+
+    The page is a copy of its target rather than a hand-rolled stub: nine
+    validation gates walk every page in ``public/`` and only two exempt
+    redirect pages, so a minimal stub would have to satisfy the other
+    seven on its own. Copying inherits the furniture they check —
+    ``inLanguage``, meta description, CSP hashes, WCAG landmarks — and
+    ``_convert_page`` then applies the redirect semantics on top.
+
+    The copied JSON-LD keeps the target's ``url``/``@id``, which is what
+    a redirect page should assert: this URL is not canonical, that one
+    is. ``test_structured_data`` validates blocks that are present and
+    neither requires them nor checks cross-page ``@id`` uniqueness, so
+    the duplication is inert.
+
+    Idempotent: a source that already exists is skipped by
+    ``_article_redirect_pairs``, so a second run over a built tree is a
+    no-op and the byte-identical-rebuild job stays green.
+    """
+    made = 0
+    for src, tgt, url in _article_redirect_pairs(public):
+        src.parent.mkdir(parents=True, exist_ok=True)
+        src.write_text(tgt.read_text(encoding="utf-8"), encoding="utf-8")
+        _convert_page(src, url)
+        made += 1
+    return made
 
 
 def apply_redirect_pages(public: Path = PUBLIC) -> tuple[int, int]:

@@ -1,0 +1,187 @@
+{
+  "_comment": "Article URLs that were published on main and no longer render, mapped to their successor. Keyed by locale; 'en' is the root. Sources: git rename detection over _posts/ on first-parent main, plus each locale's slugs.json history replayed through the builder rule OUT/EN_TO_FR.get(slug, slug). postbuild_lib.redirects materialises each key as a redirect page. Deliberately NOT listed: 2024-04-13-a-quantum-breakthrough-in-lattice-cryptography, removed with no successor — it stays a 404, which is the honest response for deleted content.",
+  "en": {
+    "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator": "2023-10-09-the-fastest-rust-based-static-site-generator",
+    "2023-10-16-hsh-the-creation-of-a-quantum-resistant-cryptographic-hash-library-built-with-rust": "2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh",
+    "2023-10-28-shokunin-the-fastest-rust-based-static-site-generator": "2023-10-09-the-fastest-rust-based-static-site-generator",
+    "2023-11-27-hsh-the-creation-of-a-quantum-resistant-cryptographic-hash-library-built-with-rust": "2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh",
+    "2024-01-01-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform": "2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform",
+    "2026-05-18-agentic-engineering-banks-blueprint-2026": "2026-05-17-agentic-engineering-banks-blueprint-2026",
+    "2026-05-21-best-cloud-infrastructure-architecture-2026": "2026-05-16-best-cloud-infrastructure-architecture-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "ar": {
+    "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator": "2023-10-09-the-fastest-rust-based-static-site-generator",
+    "2026-05-18-agentic-engineering-banks-blueprint-2026": "2026-05-17-agentic-engineering-banks-blueprint-2026",
+    "2026-05-21-best-cloud-infrastructure-architecture-2026": "2026-05-16-best-cloud-infrastructure-architecture-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "bn": {
+    "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator": "2023-10-09-the-fastest-rust-based-static-site-generator",
+    "2026-05-18-agentic-engineering-banks-blueprint-2026": "2026-05-17-agentic-engineering-banks-blueprint-2026",
+    "2026-05-21-best-cloud-infrastructure-architecture-2026": "2026-05-16-best-cloud-infrastructure-architecture-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "cs": {
+    "2023-10-09-shokunin-nejrychlejsi-staticky-generator-v-rustu": "2023-10-09-nejrychlejsi-staticky-generator-v-rustu",
+    "2026-05-18-agentni-inzenyrstvi-banky-blueprint-2026": "2026-05-17-agentni-inzenyrstvi-banky-blueprint-2026",
+    "2026-05-21-nejlepsi-cloudova-architektura-pro-banky-2026": "2026-05-16-nejlepsi-cloudova-architektura-pro-banky-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "de": {
+    "2023-10-09-shokunin-der-schnellste-rust-basierte-static-site-generator": "2023-10-09-der-schnellste-rust-basierte-static-site-generator",
+    "2026-05-18-agentische-engineering-banken-blueprint-2026": "2026-05-17-agentische-engineering-banken-blueprint-2026",
+    "2026-05-21-beste-cloud-infrastruktur-architektur-fuer-banken-2026": "2026-05-16-beste-cloud-infrastruktur-architektur-fuer-banken-2026",
+    "2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026": "2026-05-31-post-quantum-zahlungsverkehr-infrastructure-replace-rather-than-retrofit-2026",
+    "2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026": "2026-06-08-banking-resilience-index-ai-cloud-quantum-zahlungsverkehr-third-party-risk-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "es": {
+    "2023-10-09-shokunin-el-generador-de-sitios-estaticos-rust-mas-rapido": "2023-10-09-el-generador-de-sitios-estaticos-rust-mas-rapido",
+    "2026-05-18-ingenieria-agentica-bancos-blueprint-2026": "2026-05-17-ingenieria-agentica-bancos-blueprint-2026",
+    "2026-05-21-mejor-arquitectura-cloud-para-bancos-2026": "2026-05-16-mejor-arquitectura-cloud-para-bancos-2026",
+    "2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026": "2026-05-31-post-quantum-pagos-infrastructure-replace-rather-than-retrofit-2026",
+    "2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026": "2026-06-08-banking-resilience-index-ai-cloud-quantum-pagos-third-party-risk-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "fil": {
+    "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator": "2023-10-09-the-fastest-rust-based-static-site-generator",
+    "2026-05-18-agentic-engineering-banks-blueprint-2026": "2026-05-17-agentic-engineering-banks-blueprint-2026",
+    "2026-05-21-best-cloud-infrastructure-architecture-2026": "2026-05-16-best-cloud-infrastructure-architecture-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "fr": {
+    "2023-10-09-shokunin-generateur-de-sites-statiques-rust-le-plus-rapide": "2023-10-09-generateur-de-sites-statiques-rust-le-plus-rapide",
+    "2026-05-18-ingenierie-agentique-banques-blueprint-2026": "2026-05-17-ingenierie-agentique-banques-blueprint-2026",
+    "2026-05-21-meilleure-architecture-cloud-pour-les-banques-2026": "2026-05-16-meilleure-architecture-cloud-pour-les-banques-2026",
+    "2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026": "2026-05-25-programmable-liquidity-ai-tokenise-deposits-real-time-treasury-2026",
+    "2026-05-26-stablecoins-vs-tokenised-deposits-bank-strategy-2026": "2026-05-26-stablecoins-vs-tokenise-deposits-bank-strategy-2026",
+    "2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026": "2026-05-31-post-quantique-paiements-infrastructure-replace-rather-than-retrofit-2026",
+    "2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026": "2026-06-08-banking-resilience-index-ai-cloud-quantique-paiements-third-party-risk-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "ha": {
+    "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator": "2023-10-09-the-fastest-rust-based-static-site-generator",
+    "2026-05-18-agentic-engineering-banks-blueprint-2026": "2026-05-17-agentic-engineering-banks-blueprint-2026",
+    "2026-05-21-best-cloud-infrastructure-architecture-2026": "2026-05-16-best-cloud-infrastructure-architecture-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "he": {
+    "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator": "2023-10-09-the-fastest-rust-based-static-site-generator",
+    "2026-05-18-agentic-engineering-banks-blueprint-2026": "2026-05-17-agentic-engineering-banks-blueprint-2026",
+    "2026-05-21-best-cloud-infrastructure-architecture-2026": "2026-05-16-best-cloud-infrastructure-architecture-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "hi": {
+    "2023-10-09-shokunin-sabse-tez-rust-static-site-generator": "2023-10-09-sabse-tez-rust-static-site-generator",
+    "2026-05-18-agentic-engineering-banks-blueprint-2026": "2026-05-17-agentic-engineering-banks-blueprint-2026",
+    "2026-05-21-banks-ke-liye-shreshth-cloud-architecture-2026": "2026-05-16-banks-ke-liye-shreshth-cloud-architecture-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "id": {
+    "2023-10-09-shokunin-generator-situs-statis-rust-tercepat": "2023-10-09-generator-situs-statis-rust-tercepat",
+    "2026-05-18-rekayasa-agentik-bank-cetak-biru-2026": "2026-05-17-rekayasa-agentik-bank-cetak-biru-2026",
+    "2026-05-21-arsitektur-infrastruktur-cloud-terbaik-untuk-bank-2026": "2026-05-16-arsitektur-infrastruktur-cloud-terbaik-untuk-bank-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "it": {
+    "2023-10-09-shokunin-il-generatore-di-siti-statici-rust-piu-veloce": "2023-10-09-il-generatore-di-siti-statici-rust-piu-veloce",
+    "2026-05-18-ingegneria-agentica-banche-blueprint-2026": "2026-05-17-ingegneria-agentica-banche-blueprint-2026",
+    "2026-05-21-miglior-architettura-cloud-per-banche-2026": "2026-05-16-miglior-architettura-cloud-per-banche-2026",
+    "2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026": "2026-05-31-post-quantum-pagamenti-infrastructure-replace-rather-than-retrofit-2026",
+    "2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026": "2026-06-08-banking-resilience-index-ai-cloud-quantum-pagamenti-third-party-risk-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "ja": {
+    "2023-10-09-shokunin-saisoku-no-rust-sei-shizen-saito-jenereta": "2023-10-09-saisoku-no-rust-sei-shizen-saito-jenereta",
+    "2026-05-18-eejentikku-enjiniaringu-ginkou-no-2026-sekkeizu": "2026-05-17-eejentikku-enjiniaringu-ginkou-no-2026-sekkeizu",
+    "2026-05-21-2026-saiyou-no-kuraudo-infura-aakitekucha": "2026-05-16-2026-saiyou-no-kuraudo-infura-aakitekucha",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "ko": {
+    "2023-10-09-shokunin-choegoseok-rust-gibon-jeongjeoksaiteu-saengseonggi": "2023-10-09-choegoseok-rust-gibon-jeongjeoksaiteu-saengseonggi",
+    "2026-05-18-eijenteuk-enjineoring-eunhaeng-2026-seolgyedo": "2026-05-17-eijenteuk-enjineoring-eunhaeng-2026-seolgyedo",
+    "2026-05-21-2026-choeseon-keulaeudeu-infra-akitekcheo": "2026-05-16-2026-choeseon-keulaeudeu-infra-akitekcheo",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "nl": {
+    "2023-10-09-shokunin-de-snelste-rust-gebaseerde-statische-sitegenerator": "2023-10-09-de-snelste-rust-gebaseerde-statische-sitegenerator",
+    "2026-05-18-agentic-engineering-banken-blauwdruk-2026": "2026-05-17-agentic-engineering-banken-blauwdruk-2026",
+    "2026-05-21-beste-cloud-infrastructuur-architectuur-voor-banken-2026": "2026-05-16-beste-cloud-infrastructuur-architectuur-voor-banken-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "pl": {
+    "2023-10-09-shokunin-najszybszy-generator-stron-statycznych-w-rust": "2023-10-09-najszybszy-generator-stron-statycznych-w-rust",
+    "2026-05-18-inzynieria-agentowa-blueprint-bankow-2026": "2026-05-17-inzynieria-agentowa-blueprint-bankow-2026",
+    "2026-05-21-najlepsza-architektura-infrastruktury-chmurowej-2026": "2026-05-16-najlepsza-architektura-infrastruktury-chmurowej-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "pt-br": {
+    "2023-10-09-shokunin-o-gerador-de-sites-estaticos-rust-mais-rapido": "2023-10-09-o-gerador-de-sites-estaticos-rust-mais-rapido",
+    "2026-05-18-engenharia-agentica-bancos-blueprint-2026": "2026-05-17-engenharia-agentica-bancos-blueprint-2026",
+    "2026-05-21-melhor-arquitetura-cloud-para-bancos-2026": "2026-05-16-melhor-arquitetura-cloud-para-bancos-2026",
+    "2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026": "2026-05-31-post-quantum-pagamentos-infrastructure-replace-rather-than-retrofit-2026",
+    "2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026": "2026-06-08-banking-resilience-index-ai-cloud-quantum-pagamentos-third-party-risk-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "ro": {
+    "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator": "2023-10-09-the-fastest-rust-based-static-site-generator",
+    "2026-05-18-agentic-engineering-banks-blueprint-2026": "2026-05-17-agentic-engineering-banks-blueprint-2026",
+    "2026-05-21-best-cloud-infrastructure-architecture-2026": "2026-05-16-best-cloud-infrastructure-architecture-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "ru": {
+    "2023-10-09-shokunin-samyi-bystryi-staticheskii-generator-na-rust": "2023-10-09-samyi-bystryi-staticheskii-generator-na-rust",
+    "2026-05-18-agentnaya-inzheneriya-plan-dlya-bankov-2026": "2026-05-17-agentnaya-inzheneriya-plan-dlya-bankov-2026",
+    "2026-05-21-luchshaya-cloud-arkhitektura-dlya-bankov-2026": "2026-05-16-luchshaya-cloud-arkhitektura-dlya-bankov-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "sv": {
+    "2023-10-09-shokunin-snabbaste-rust-baserade-statiska-sajtgeneratorn": "2023-10-09-snabbaste-rust-baserade-statiska-sajtgeneratorn",
+    "2026-05-18-agentisk-ingenjorskonst-banker-blueprint-2026": "2026-05-17-agentisk-ingenjorskonst-banker-blueprint-2026",
+    "2026-05-21-basta-molnarkitektur-for-banker-2026": "2026-05-16-basta-molnarkitektur-for-banker-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "th": {
+    "2023-10-09-shokunin-static-site-generator-thi-reo-thi-sut-bon-rust": "2023-10-09-static-site-generator-thi-reo-thi-sut-bon-rust",
+    "2026-05-18-witsawakam-agentic-thanakhan-phaen-2026": "2026-05-17-witsawakam-agentic-thanakhan-phaen-2026",
+    "2026-05-21-sthapattayakam-cloud-thi-di-thi-sut-samrap-thanakhan-2026": "2026-05-16-sthapattayakam-cloud-thi-di-thi-sut-samrap-thanakhan-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "tr": {
+    "2023-10-09-shokunin-rust-tabanli-en-hizli-statik-site-jeneratoru": "2023-10-09-rust-tabanli-en-hizli-statik-site-jeneratoru",
+    "2026-05-18-ajan-tabanli-muhendislik-bankalar-icin-2026-plani": "2026-05-17-ajan-tabanli-muhendislik-bankalar-icin-2026-plani",
+    "2026-05-21-bankalar-icin-en-iyi-bulut-mimarisi-2026": "2026-05-16-bankalar-icin-en-iyi-bulut-mimarisi-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "uk": {
+    "2023-10-09-shokunin-naishvydshyi-rust-statychnyy-henerator": "2023-10-09-naishvydshyi-rust-statychnyy-henerator",
+    "2026-05-18-ahentyna-inzheneriya-banky-blueprint-2026": "2026-05-17-ahentyna-inzheneriya-banky-blueprint-2026",
+    "2026-05-21-naikrashcha-khmarna-arkhitektura-dlya-bankiv-2026": "2026-05-16-naikrashcha-khmarna-arkhitektura-dlya-bankiv-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "vi": {
+    "2023-10-09-shokunin-bo-tao-trang-tinh-rust-nhanh-nhat": "2023-10-09-bo-tao-trang-tinh-rust-nhanh-nhat",
+    "2026-05-18-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026": "2026-05-17-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026",
+    "2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026": "2026-05-16-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "yo": {
+    "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator": "2023-10-09-the-fastest-rust-based-static-site-generator",
+    "2026-05-18-agentic-engineering-banks-blueprint-2026": "2026-05-17-agentic-engineering-banks-blueprint-2026",
+    "2026-05-21-best-cloud-infrastructure-architecture-2026": "2026-05-16-best-cloud-infrastructure-architecture-2026",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "zh-hans": {
+    "2023-10-09-shokunin-zuikuai-de-rust-jingtai-zhandian-shengchengqi": "2023-10-09-zuikuai-de-rust-jingtai-zhandian-shengchengqi",
+    "2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu": "2026-05-17-ai-dailixing-gongcheng-yinhang-2026-lantu",
+    "2026-05-21-2026-zuijia-yun-jichu-jiagou": "2026-05-16-2026-zuijia-yun-jichu-jiagou",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  },
+  "zh-hant": {
+    "2023-10-09-shokunin-zuikuai-de-rust-jingtai-zhandian-shengchengqi-tw": "2023-10-09-zuikuai-de-rust-jingtai-zhandian-shengchengqi-tw",
+    "2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu-tw": "2026-05-17-ai-dailixing-gongcheng-yinhang-2026-lantu-tw",
+    "2026-05-21-2026-zuijia-yun-jichu-jiagou-tw": "2026-05-16-2026-zuijia-yun-jichu-jiagou-tw",
+    "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+  }
+}
