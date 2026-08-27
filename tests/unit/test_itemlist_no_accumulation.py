@@ -26,7 +26,6 @@ import postbuild_transforms as pt  # type: ignore[import-not-found]
 _REL = next(iter(pt.LISTING_PAGES))
 _CLASSES = pt.LISTING_PAGES[_REL]
 _PAGE = pt.PUBLIC / _REL
-_URL = f"{pt.SITE}/{_REL.replace('index.html', '').rstrip('/')}/"
 
 
 def _page(n: int = 3) -> str:

@@ -70,8 +70,8 @@ NGRAM = 5
 MIN_NGRAMS = 20
 
 _MAIN_RE = re.compile(r"<main\b[\s\S]*?</main\s*>", re.IGNORECASE)
-_SCRIPT_RE = re.compile(r"<script\b[\s\S]*?</script\s*>", re.IGNORECASE)
-_STYLE_RE = re.compile(r"<style\b[\s\S]*?</style\s*>", re.IGNORECASE)
+_SCRIPT_RE = re.compile(r"<script\b[\s\S]*?</script(?:[\s/][^>]*)?>", re.IGNORECASE)
+_STYLE_RE = re.compile(r"<style\b[\s\S]*?</style(?:[\s/][^>]*)?>", re.IGNORECASE)
 _COMMENT_RE = re.compile(r"<!--[\s\S]*?-->")
 _TAG_RE = re.compile(r"<[^>]+>")
 _WS_RE = re.compile(r"\s+")

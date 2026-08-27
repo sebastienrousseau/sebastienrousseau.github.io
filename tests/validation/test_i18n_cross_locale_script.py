@@ -85,8 +85,8 @@ _MARKERS: dict[str, tuple[re.Pattern[str], frozenset[str]]] = {
 MIN_RUN = 3
 
 _MAIN_RE = re.compile(r"<main\b[\s\S]*?</main\s*>", re.IGNORECASE)
-_SCRIPT_TAG_RE = re.compile(r"<script\b[\s\S]*?</script\s*>", re.IGNORECASE)
-_STYLE_RE = re.compile(r"<style\b[\s\S]*?</style\s*>", re.IGNORECASE)
+_SCRIPT_TAG_RE = re.compile(r"<script\b[\s\S]*?</script(?:[\s/][^>]*)?>", re.IGNORECASE)
+_STYLE_RE = re.compile(r"<style\b[\s\S]*?</style(?:[\s/][^>]*)?>", re.IGNORECASE)
 _TAG_RE = re.compile(r"<[^>]+>")
 
 
