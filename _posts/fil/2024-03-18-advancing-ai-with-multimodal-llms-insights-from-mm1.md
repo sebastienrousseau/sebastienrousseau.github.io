@@ -1,95 +1,94 @@
 ---
-title: "تطوير الذكاء الاصطناعي بالنماذج اللغوية الكبيرة متعدّدة الوسائط: رؤى من MM1"
+title: "Pagsulong ng AI sa pamamagitan ng maraming-anyong LLM: kabatiran mula sa MM1"
 tags: "Multimodal, LLM, AI, MM1, Pre-training, Image Recognition, NLP, Future, Learning, Research, ISO 20022, post-quantum cryptography, quantum computing"
-subtitle: "كشف مستقبل الذكاء الاصطناعي: كيف تُحدِث دراسة MM1 الرائدة من Apple ثورةً في التعلّم متعدّد الوسائط"
-description: "استكشف ورقة Apple البحثية MM1 حول النماذج اللغوية الكبيرة متعدّدة الوسائط (MLLMs). تعرَّف على بنيتها واستراتيجيات التدريب المسبق وإمكاناتها."
+subtitle: "Ang pag-aaral ng Apple sa paunang pagsasanay ng maraming-anyong LLM: ang halo ng datos, ang resolusyon ng larawan, at ang tagakabit ng paningin at wika."
+description: "Ang pag-aaral na MM1 ng Apple hinggil sa paunang pagsasanay ng malalaking modelo ng wikang maraming anyo: ang halong 45/45/10 ng datos, kung bakit mas mahalaga ang resolusyon ng larawan kaysa sa laki ng modelo, at ang papel ng tagakabit ng paningin at wika."
 date: "March 18, 2024"
 language: "fil-PH"
 locale: "fil_PH"
 banner: "https://cloudcdn.pro/stocks/images/mm1-visual.webp"
-banner_alt: "لافتة MM1 من Apple"
-keywords: "النماذج اللغوية الكبيرة متعدّدة الوسائط, دراسة MM1, تقدّمات الذكاء الاصطناعي, استراتيجيات التدريب المسبق, التعرّف على الصور, معالجة اللغة الطبيعية, تطبيقات الذكاء الاصطناعي, مستقبل الذكاء الاصطناعي, التعلّم متعدّد الوسائط, أبحاث الذكاء الاصطناعي"
+banner_alt: "MM1 Model Architecture"
+keywords: "MM1, Apple, maraming anyo, MLLM, malaking modelo ng wika, paunang pagsasanay, few-shot, cross-attention, ViT, ResNet, mixture-of-experts, VQA, captioning"
 ---
+## Pagsulong ng AI sa pamamagitan ng malalaking modelo ng wikang maraming anyo: kabatiran mula sa MM1
 
-## تطوير الذكاء الاصطناعي بالنماذج اللغوية الكبيرة متعدّدة الوسائط: رؤى من MM1
+## Panimula
 
-## المقدّمة
-
-أفضى دمج معالجة اللغة الطبيعية والتعرّف على الصور إلى تطوير النماذج اللغوية الكبيرة متعدّدة الوسائط (MLLMs). وفي ورقتها البحثية، تُقدّم Apple نموذج MM1، وهو مجموعة من نماذج الذكاء الاصطناعي متعدّدة الوسائط التي تجمع بين الفهم البصري واللغوي. وقد فحص الباحثون من خلال تجارب مستفيضة العوامل التي تُسهم في أداء هذه النماذج، مستكشفين خيارات معمارية وتركيبات بيانات تدريب مسبق مختلفة. وتُوفّر ورقة MM1 معلومات جوهرية حول كيفية بنية النماذج اللغوية الكبيرة متعدّدة الوسائط وتدريبها. وتناقش نهج الدراسة ومستنتجاتها الحاسمة، مُبرِزةً تأثيرها المحتمل على مستقبل الذكاء الاصطناعي.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## ظهور الذكاء الاصطناعي متعدّد الوسائط
-
-شهد ميدان الذكاء الاصطناعي تقدّماً ملحوظاً في السنوات الأخيرة، خاصّةً في مجالَي معالجة اللغة الطبيعية (NLP) والرؤية الحاسوبية. وقد حوَّلت النماذج اللغوية الكبيرة (LLMs) الطريقة التي تفهم بها الآلات اللغة البشرية وتُولِّدها، ممّا مكَّنها من أداء مهامّ معقّدة كترجمة اللغة وتلخيص النصوص وحتّى الكتابة الإبداعية. وبالمثل، أحدثت الشبكات العصبية الالتفافية (CNNs) ثورةً في التعرّف على الصور، فأتاحت للآلات إدراك البيانات البصرية وتفسيرها بدقّة لم يسبق لها مثيل.
-
-تُمثّل النماذج اللغوية الكبيرة متعدّدة الوسائط الحدّ الفاصل التالي في الذكاء الاصطناعي، إذ تجمع بين نقاط قوّة معالجة اللغة الطبيعية والرؤية الحاسوبية لإنشاء نماذج يمكنها معالجة المعلومات وتوليدها بسلاسة عبر النصّ والصور. ويفتح هذا الانصهار بين الوسائط عالماً من الإمكانيات، من المساعدين الافتراضيين الأكثر جاذبية إلى أدوات إنشاء المحتوى الذكيّة القادرة على توليد تجارب وسائط متعدّدة آسرة.
+Nagbunga ang pagsasanib ng pagproseso ng likas na wika at ng pagkilala ng larawan sa pagbuo ng malalaking modelo ng wikang maraming anyo (MLLMs). At sa papel ng pananaliksik nito, inihaharap ng Apple ang modelong MM1, isang pangkat ng mga modelong AI na maraming anyo na pinagsasama ang biswal at pangwikang pag-unawa. At sinuri ng mga mananaliksik sa pamamagitan ng masusing eksperimento ang mga salik na nag-aambag sa bisa ng mga modelong ito, at tinuklas nila ang iba't ibang pagpipiliang arkitektural at kombinasyon ng datos sa paunang pagsasanay. At naghahandog ang papel ng MM1 ng saligang impormasyon hinggil sa kung paano binubuo at sinasanay ang malalaking modelo ng wikang maraming anyo. Tinatalakay ng artikulong ito ang paraan ng pag-aaral at ang mapagpasya nitong konklusyon, at itinatampok nito ang posibleng epekto ng mga ito sa kinabukasan ng AI.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## دراسة MM1: علامة فارقة في أبحاث الذكاء الاصطناعي متعدّد الوسائط
+## Ang pagsulpot ng AI na maraming anyo
 
-تقف دراسة [**MM1: Methods Analysis & Insights from Multimodal LLM Pre-training ⧉**][00] لحظةً محوريّةً في تطوّر النماذج اللغوية الكبيرة متعدّدة الوسائط. وقد قادتها فِرقة من الباحثين البارزين، وكانت تهدف إلى الكشف عن المكوّنات الرئيسية والاستراتيجيات الجوهرية للتدريب المسبق الفعّال لهذه النماذج، مع التركيز على نموذج MM1 بوصفه مرجعاً للذكاء الاصطناعي متعدّد الوسائط.
+Nasaksihan ng larangan ng AI ang kapansin-pansing pagsulong sa mga nakaraang taon, lalo na sa larangan ng pagproseso ng likas na wika (NLP) at ng biswal na pagkilala ng kompyuter. At binago ng malalaking modelo ng wika (LLMs) ang paraan ng pag-unawa at paglikha ng mga makina ng wikang pantao, kaya binigyang-kakayahan nila ang mga ito na magsagawa ng masasalimuot na gawain tulad ng pagsasalin ng wika, ng pagbubuod ng teksto, at maging ng malikhaing pagsulat. At sa katulad na paraan, binago ng convolutional neural network (CNNs) ang pagkilala ng larawan, kaya pinahintulutan nila ang mga makina na madama at bigyang-kahulugan ang biswal na datos nang may katumpakang walang katulad.
 
-### المنهجية والأهداف
-
-اعتمدت نشرة MM1 نهجاً تجريبياً صارماً للتحقيق في دقائق المعمارية متعدّدة الوسائط واستراتيجيات التدريب المسبق. واستكشف الباحثون جوانب متعدّدة من النموذج، بما في ذلك مُرمِّز الصور، ومُوصِّل الرؤية واللغة، واختيار مجموعات بيانات تدريب مسبق متنوّعة. وبتحليل هذه المكوّنات بشكل منهجي، سعت الدراسة إلى تحديد العوامل الحاسمة التي تُسهم في تعزيز أداء النماذج اللغوية الكبيرة متعدّدة الوسائط.
-
-كان من الأهداف الرئيسية للبحث تحديد المزيج الأمثل من بيانات التدريب المسبق لتحقيق قدرات التعلّم بأمثلة قليلة (few-shot) المتفوّقة. ويشير التعلّم بأمثلة قليلة إلى قدرة النموذج على التكيّف والتعلّم من عدد محدود من الأمثلة، وهو جانب جوهري في أنظمة الذكاء الاصطناعي التي يجب أن تكون مرنة وفعّالة في التطبيقات الواقعية.
+Kumakatawan ang malalaking modelo ng wikang maraming anyo sa susunod na hangganan sa AI, sapagkat pinagsasama nila ang lakas ng pagproseso ng likas na wika at ng biswal na pagkilala ng kompyuter upang makalikha ng mga modelong kayang magproseso at lumikha ng impormasyon nang maayos sa teksto at sa larawan. At binubuksan ng pagsasanib na ito ng mga anyo ang isang mundo ng posibilidad, mula sa mas kaakit-akit na birtuwal na katulong hanggang sa matatalinong kasangkapan sa paglikha ng nilalaman na kayang lumikha ng nakabibighaning karanasan sa maraming midya.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## النتائج والرؤى الرئيسية
+## Ang pag-aaral na MM1: isang palatandaan sa pananaliksik ng AI na maraming anyo
 
-أسفرت دراسة MM1 عن عدّة رؤى رائدة شكَّلت فهمنا للنماذج اللغوية الكبيرة متعدّدة الوسائط وإمكاناتها. ومن أبرز النتائج أهمّية مزيج جيّد التنسيق من بيانات التدريب المسبق. فقد اكتشف الباحثون أنّ الجمع بين بيانات الصورة-التعليق، وبيانات الصور-النصوص المتداخلة، والبيانات النصية فقط، أمر جوهري لتحقيق أداء أمثل في التعلّم بأمثلة قليلة. وتُبرز هذه الرؤية الحاجة إلى مجموعات بيانات تدريب مسبق متنوّعة وشاملة قادرة على التقاط دقائق التواصل متعدّد الوسائط.
+Nakatayo ang pag-aaral na [**MM1: Methods Analysis & Insights from Multimodal LLM Pre-training ⧉**][00] bilang mahalagang sandali sa ebolusyon ng malalaking modelo ng wikang maraming anyo. At pinamunuan ito ng pangkat ng mga kilalang mananaliksik, at layunin nitong ibunyag ang pangunahing sangkap at ang saligang estratehiya para sa mabisang paunang pagsasanay ng mga modelong ito, na nakatuon sa modelong MM1 bilang sanggunian ng AI na maraming anyo.
 
-جانب آخر بارز في دراسة MM1 هو تضمين كلٍّ من النماذج الكثيفة بمعاملات تصل إلى 30 مليار، ومتغيّرات mixture-of-experts (MoE)، ممّا يُبرهن على قابلية المعمارية للتوسّع ومرونتها. وكشفت الدراسة أنّ دقّة الصورة لها التأثير الأكبر على أداء النموذج، أكبر حتّى من حجم النموذج، مؤكّدةً أهمّية الإدخال البصري عالي الجودة في التعلّم متعدّد الوسائط.
+### Ang pamamaraan at layunin
 
-أثَّر اختيار معمارية مُرمِّز الصور، كـResNet أو ViT، تأثيراً كبيراً في قدرة النموذج على استخلاص ملامح ذات معنى من البيانات البصرية ودمجها مع المعلومات النصية. وعلاوةً على ذلك، أدّت دقّة الصور المُدخَلة دوراً حيويّاً في تحديد جودة الملامح البصرية وحَبكتها التي يلتقطها النموذج.
+Gumamit ang paglalathala ng MM1 ng mahigpit na eksperimental na paraan upang siyasatin ang detalye ng arkitekturang maraming anyo at ng estratehiya sa paunang pagsasanay. At tinuklas ng mga mananaliksik ang iba't ibang bahagi ng modelo, kabilang na ang tagakodigo ng larawan, ang tagakabit ng paningin at wika, at ang pagpili ng iba't ibang hanay ng datos sa paunang pagsasanay. At sa sistematikong pagsusuri ng mga sangkap na ito, hinangad ng pag-aaral na matukoy ang mapagpasyang salik na nag-aambag sa pagpapatibay ng bisa ng malalaking modelo ng wikang maraming anyo.
 
-كما تُسلِّط دراسة MM1 الضوء على أهمّية مُوصِّل الرؤية واللغة في تمكين التفاعل السلس بين الوسائط البصرية والنصية. وقد جرَّب الباحثون أساليب متعدّدة لدمج المعلومات من مُرمِّز الصور ونموذج اللغة، فحدَّدوا آليات الانتباه المتقاطع والانتباه متعدّد الرؤوس بوصفها استراتيجيات فعّالة لتفاعلات ثرية وذات صلة سياقية.
+Isa sa pangunahing layunin ng pananaliksik ang pagtukoy sa pinakamainam na halo ng datos sa paunang pagsasanay upang makamit ang nakahihigit na kakayahan sa pagkatuto mula sa iilang halimbawa (few-shot). At tumutukoy ang pagkatuto mula sa iilang halimbawa sa kakayahan ng modelo na umangkop at matuto mula sa limitadong bilang ng halimbawa, na saligang bahagi sa mga sistemang AI na dapat maging nababaluktot at mabisa sa mga aplikasyon sa tunay na buhay.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## معمارية نموذج MM1 وعملية التعلّم متعدّد الوسائط
+## Ang mga pangunahing resulta at kabatiran
+
+Nagbunga ang pag-aaral na MM1 ng ilang mapanguna na kabatirang humubog sa ating pag-unawa sa malalaking modelo ng wikang maraming anyo at sa potensiyal ng mga ito. At isa sa pinakamahalagang resulta ang halaga ng maayos na pinagsama-samang halo ng datos sa paunang pagsasanay. Natuklasan ng mga mananaliksik na saligan ang pagsasama ng datos na larawan-kapsiyon, ng datos na larawan-tekstong magkasalit, at ng datos na tekstong lamang upang makamit ang pinakamainam na bisa sa pagkatuto mula sa iilang halimbawa. At itinatampok ng kabatirang ito ang pangangailangan ng sari-sari at masaklaw na hanay ng datos sa paunang pagsasanay na kayang kunin ang detalye ng komunikasyong maraming anyo.
+
+Isa pang namumukod na bahagi ng pag-aaral na MM1 ang pagsasama ng mga modelong siksik na may parametrong umaabot sa 30 bilyon, at ng mga baryanteng mixture-of-experts (MoE), kaya pinatutunayan nito ang kakayahang lumawak at ang kakayahang umangkop ng arkitektura. At ibinunyag ng pag-aaral na ang resolusyon ng larawan ang may pinakamalaking epekto sa bisa ng modelo, higit pa nga sa laki ng modelo, kaya binibigyang-diin nito ang halaga ng mataas ang kalidad na biswal na input sa pagkatutong maraming anyo.
+
+Malaki ang naging epekto ng pagpili ng arkitektura ng tagakodigo ng larawan, tulad ng ResNet o ng ViT, sa kakayahan ng modelo na kumuha ng makabuluhang katangian mula sa biswal na datos at pagsamahin ang mga ito sa impormasyong tekstuwal. At bukod dito, gumanap ng mahalagang papel ang resolusyon ng ipinasok na larawan sa pagtatakda ng kalidad at detalye ng biswal na katangiang nakukuha ng modelo.
+
+Binibigyang-liwanag din ng pag-aaral na MM1 ang halaga ng tagakabit ng paningin at wika sa pagbibigay-kakayahan ng maayos na pakikipag-ugnayan sa pagitan ng biswal at tekstuwal na anyo. At sinubok ng mga mananaliksik ang iba't ibang pamamaraan upang pagsamahin ang impormasyon mula sa tagakodigo ng larawan at mula sa modelong pangwika, kaya natukoy nila ang mekanismo ng cross-attention at ng multi-head attention bilang mabisang estratehiya para sa mayaman at kontekstuwal na angkop na pakikipag-ugnayan.
+
+![divider][divider].class=\"m-10 w-100\"
+
+## Ang arkitektura ng modelong MM1 at ang proseso ng pagkatutong maraming anyo
 
 ![MM1 Model Architecture][architecture].class=\"m-10 w-100\"
 
-يُوضِّح المخطّط معمارية نموذج MM1 وعملية تعلّمه. تتكوّن بيانات التدريب المسبق من إدخال للصور وإدخال للنصوص، حيث يُعالَج إدخال الصور بواسطة Image Encoder ويُغذّي إدخال النصوص مباشرةً المحوِّل المدرَّب مسبقاً للنموذج اللغوي الكبير. ويستخرج Image Encoder الملامح البصرية من الصور المُدخَلة، التي تُمرَّر بعد ذلك إلى VL Connector (Vision-Language Connector). ويدمج VL Connector الملامح البصرية مع المعلومات النصية من المحوِّل المدرَّب مسبقاً. ويُمكِّن هذا الانصهار متعدّد الوسائط النموذج من توليد إخراج captioning للإجابة على الأسئلة البصرية (VQA) عبر الضبط الدقيق الموجَّه.
+Ipinapaliwanag ng diyagram ang arkitektura ng modelong MM1 at ang proseso ng pagkatuto nito. Binubuo ang datos sa paunang pagsasanay ng input na larawan at ng input na teksto, kung saan pinoproseso ang input na larawan ng Image Encoder at tuwirang pinapakain naman ang input na teksto sa naunang sinanay na transformer ng malaking modelo ng wika. At kinukuha ng Image Encoder ang biswal na katangian mula sa ipinasok na larawan, na ipinapasa naman sa VL Connector (Vision-Language Connector). At pinagsasama ng VL Connector ang biswal na katangian at ang impormasyong tekstuwal mula sa naunang sinanay na transformer. At binibigyang-kakayahan ng pagsasanib na maraming anyo na ito ang modelo upang makalikha ng output na captioning para sa pagsagot sa biswal na tanong (VQA) sa pamamagitan ng maingat na pag-aayos ayon sa tagubilin.
 
-تشمل تركيبة بيانات التدريب المسبق 45% من البيانات المتداخلة و45% من التعليقات و10% من البيانات النصية فقط، ممّا يُبرز أهمّية تنوّع أنواع البيانات في تدريب نموذج MM1.
-
-![divider][divider].class=\"m-10 w-100\"
-
-## MM1: مرجع للذكاء الاصطناعي متعدّد الوسائط
-
-يقف نموذج MM1، الذي طُوِّر في إطار الدراسة، مرجعاً للذكاء الاصطناعي متعدّد الوسائط، مُبرهناً على إمكانات النماذج اللغوية الكبيرة متعدّدة الوسائط في تطبيقات متنوّعة. وبمعماريته المصمَّمة بعناية ونظامه للتدريب المسبق، يُبدي MM1 أداءً استثنائياً عبر مجموعة من المهامّ، من الإجابة على الأسئلة البصرية إلى وصف الصور.
-
-تكمن إحدى نقاط القوة الرئيسية في MM1 في قدرته على توليد نصّ متّسق وذي صلة سياقية بناءً على إدخال بصري. فعلى سبيل المثال، عند تقديم صورة لشارع مدينة صاخب، يستطيع MM1 توليد وصف مفصَّل ودقيق يلتقط جوهر المشهد ويُبرز العناصر الرئيسية كالعمارة والناس والأنشطة.
-
-### التبعات والاتّجاهات المستقبلية
-
-لنتائج دراسة MM1 تبعاتٌ بعيدة المدى على مستقبل الذكاء الاصطناعي والتعلّم متعدّد الوسائط. وتوفّر الرؤى المكتسبة من هذا البحث أساساً صلباً لتطوير معماريات MLLM أكثر تقدّماً وقدرةً، ممّا يُمهِّد الطريق لأنظمة ذكاء اصطناعي قادرة على التنقّل بسلاسة في العالم متعدّد الوسائط الذي نعيش فيه وتفسيره.
-
-> لنذهب لاختراع الغد بدلاً من القلق بشأن ما حدث بالأمس. — **Steve Jobs**
-
-من ميادين البحث المستقبلية المثيرة استكشاف أساليب جديدة لدمج المعلومات البصرية والنصية داخل النماذج اللغوية الكبيرة متعدّدة الوسائط. وقد أبرزت دراسة MM1 فاعلية آليات الانتباه المتقاطع والانتباه متعدّد الرؤوس، لكن لا يزال هناك إمكانات واسعة لمزيد من الابتكارات في هذا المجال. وقد يبحث الباحثون في معماريات جديدة قادرة على التكيّف ديناميكياً مع محتوى البيانات المُدخَلة وبنيتها، ممّا يُتيح تفاعلات متعدّدة الوسائط أكثر مرونةً ووعياً بالسياق.
-
-وميدان واعد آخر هو تطبيق هذه النماذج في سيناريوهات واقعية، كالمساعدين الافتراضيين الأذكياء وأدوات التعليم وتوليد المحتوى الإبداعي. فقدرة هذه النماذج على معالجة المعلومات وتوليدها عبر النصّ والصور تفتح طيفاً واسعاً من الإمكانيات لتعزيز التواصل بين الإنسان والآلة وخلق تجارب أكثر جاذبية وانغماساً.
-
-> الخطوة الكبرى المقبلة في الذكاء الاصطناعي ستكون آلات تفهم العالم من حولها بشكل أفضل بكثير، عبر قدرتها على فهم البيانات التي لم ترَها من قبل والاستدلال عليها. — **Yann LeCun**
+Binubuo ang kombinasyon ng datos sa paunang pagsasanay ng 45% na datos na magkasalit, ng 45% na kapsiyon, at ng 10% na datos na tekstong lamang, kaya itinatampok nito ang halaga ng sari-saring uri ng datos sa pagsasanay ng modelong MM1.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## الخاتمة
+## Ang MM1: isang sanggunian para sa AI na maraming anyo
 
-تُمثّل دراسة MM1 معلماً جوهرياً في تطوّر النماذج اللغوية الكبيرة متعدّدة الوسائط، إذ تُقدّم رؤى لا تُقدَّر بثمن حول المعمارية واستراتيجيات التدريب المسبق وإمكانات هذه الأنظمة الذكية القوية. وبتحليل المكوّنات والمنهجيات الأساسية للتدريب المسبق الفعّال لـMLLMs تحليلاً دقيقاً، أرست الدراسة أساس الابتكارات القادمة في الذكاء الاصطناعي متعدّد الوسائط.
+Nakatayo ang modelong MM1, na binuo sa loob ng pag-aaral, bilang sanggunian para sa AI na maraming anyo, at pinatutunayan nito ang potensiyal ng malalaking modelo ng wikang maraming anyo sa iba't ibang aplikasyon. At sa maingat nitong idinisenyong arkitektura at sa sistema nito ng paunang pagsasanay, nagpapamalas ang MM1 ng pambihirang bisa sa hanay ng gawain, mula sa pagsagot sa biswal na tanong hanggang sa paglalarawan ng larawan.
 
-ستُشكِّل الدروس المستفادة من دراسة MM1 بلا شكّ تطوير نماذج لغوية كبيرة متعدّدة الوسائط أكثر تطوّراً وقدرةً. ولهذه النماذج إمكانية إحداث ثورة في طريقة تفاعلنا مع الآلات، إذ تُتيح تواصلاً أكثر طبيعيّةً وحدسيّةً ووعياً بالسياق عبر الوسائط النصية والبصرية.
+Nasa kakayahan nitong lumikha ng magkakaugnay at kontekstuwal na angkop na teksto batay sa biswal na input ang isa sa pangunahing lakas ng MM1. Halimbawa, kapag ipinakita ang larawan ng isang abalang lansangan sa lungsod, kayang lumikha ng MM1 ng detalyado at tumpak na paglalarawang kumukuha sa diwa ng tanawin at nagtatampok sa pangunahing elemento nito tulad ng arkitektura, ng mga tao, at ng mga gawain.
 
-ويُمثّل نموذج MM1 ذاته شهادةً على الإمكانات الهائلة لهذه النماذج، مُبرهناً على أداء استثنائي عبر مجموعة من المهامّ ومُرسياً مرجعاً جديداً للذكاء الاصطناعي متعدّد الوسائط. ومع استمرار الباحثين في البناء على الرؤى المكتسبة من هذه الدراسة، يمكننا أن نتوقّع مستقبلاً تتنقّل فيه أنظمة الذكاء الاصطناعي بسلاسة في العالم المعقَّد متعدّد الوسائط الذي نسكنه وتفسّره، فيقربنا من رؤية الآلات الذكيّة حقّاً.
+### Ang kahihinatnan at ang mga direksiyon sa hinaharap
 
-لمعرفة المزيد عن دراسة MM1 الرائدة واستكشاف العالم المُدهش للنماذج اللغوية الكبيرة متعدّدة الوسائط، أدعوكم إلى قراءة الورقة البحثية الأصلية: [**MM1: Methods Analysis & Insights from Multimodal LLM Pre-training ⧉**][00]
+May malayong-abot na kahihinatnan ang resulta ng pag-aaral na MM1 para sa kinabukasan ng AI at ng pagkatutong maraming anyo. At naghahandog ang kabatirang nakuha mula sa pananaliksik na ito ng matatag na saligan para sa pagbuo ng mas abante at mas may-kakayahang arkitekturang MLLM, kaya inihahanda nito ang daan para sa mga sistemang AI na kayang maglayag nang maayos sa mundong maraming anyo na ating ginagalawan at bigyang-kahulugan ito.
+
+> Halina't imbentuhin natin ang bukas sa halip na mag-alala sa nangyari kahapon. — **Steve Jobs**
+
+Isa sa kapana-panabik na larangan ng pananaliksik sa hinaharap ang pagtuklas sa bagong pamamaraan upang pagsamahin ang biswal at tekstuwal na impormasyon sa loob ng malalaking modelo ng wikang maraming anyo. At itinampok ng pag-aaral na MM1 ang bisa ng mekanismo ng cross-attention at ng multi-head attention, ngunit malawak pa rin ang potensiyal para sa higit pang inobasyon sa larangang ito. At maaaring saliksikin ng mga mananaliksik ang bagong arkitekturang kayang dinamikong umangkop sa nilalaman at balangkas ng ipinasok na datos, kaya pinahihintulutan nito ang mas nababaluktot at mas may-kamalayan-sa-konteksto na pakikipag-ugnayang maraming anyo.
+
+At isa pang maaasahang larangan ang paggamit ng mga modelong ito sa mga senaryo sa tunay na buhay, tulad ng matatalinong birtuwal na katulong, ng kasangkapan sa edukasyon, at ng paglikha ng malikhaing nilalaman. Sapagkat binubuksan ng kakayahan ng mga modelong ito na magproseso at lumikha ng impormasyon sa teksto at sa larawan ang malawak na saklaw ng posibilidad para sa pagpapatibay ng komunikasyon sa pagitan ng tao at makina at para sa paglikha ng mas kaakit-akit at mas nakalulubog na karanasan.
+
+> Ang susunod na malaking hakbang sa AI ay magiging mga makinang higit na nauunawaan ang mundo sa paligid nila, sa pamamagitan ng kakayahan nilang unawain at pangatwiranan ang datos na hindi pa nila nakikita noon. — **Yann LeCun**
+
+![divider][divider].class=\"m-10 w-100\"
+
+## Pangwakas
+
+Kumakatawan ang pag-aaral na MM1 sa saligang palatandaan sa ebolusyon ng malalaking modelo ng wikang maraming anyo, sapagkat naghahandog ito ng di-mapapantayang kabatiran hinggil sa arkitektura, sa estratehiya ng paunang pagsasanay, at sa potensiyal ng malalakas na matatalinong sistemang ito. At sa masusing pagsusuri sa saligang sangkap at pamamaraan ng mabisang paunang pagsasanay ng MLLMs, naglatag ang pag-aaral ng saligan ng mga darating na inobasyon sa AI na maraming anyo.
+
+Walang dudang huhubugin ng mga aral na nakuha mula sa pag-aaral na MM1 ang pagbuo ng mas sopistikado at mas may-kakayahang malalaking modelo ng wikang maraming anyo. At taglay ng mga modelong ito ang posibilidad na baguhin ang paraan ng ating pakikipag-ugnayan sa mga makina, sapagkat pinahihintulutan nila ang mas likas, mas madaling maunawaan, at mas may-kamalayan-sa-konteksto na komunikasyon sa pamamagitan ng tekstuwal at biswal na anyo.
+
+At kumakatawan ang mismong modelong MM1 sa patotoo ng napakalaking potensiyal ng mga modelong ito, sapagkat pinatutunayan nito ang pambihirang bisa sa hanay ng gawain at naglalatag ito ng bagong sanggunian para sa AI na maraming anyo. At habang patuloy na nagtatayo ang mga mananaliksik sa ibabaw ng kabatirang nakuha mula sa pag-aaral na ito, maaari nating asahan ang kinabukasang maglalayag at magbibigay-kahulugan nang maayos ang mga sistemang AI sa masalimuot at maraming anyong mundong ating tinitirhan, kaya inilalapit nito tayo sa pananaw ng tunay na matatalinong makina.
+
+Upang matuto pa hinggil sa mapanguna na pag-aaral na MM1 at matuklasan ang kahanga-hangang mundo ng malalaking modelo ng wikang maraming anyo, inaanyayahan ko kayong basahin ang orihinal na papel ng pananaliksik: [**MM1: Methods Analysis & Insights from Multimodal LLM Pre-training ⧉**][00]
 
 [00]: https://arxiv.org/abs/2403.09611 "MM1: Methods Analysis & Insights from Multimodal LLM Pre-training"
 
