@@ -273,7 +273,7 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
 )
 
 # Legacy-URL redirect conversion (/papers -> /research + locale forks)
-from postbuild_lib.redirects import apply_redirect_pages
+from postbuild_lib.redirects import apply_article_redirects, apply_redirect_pages
 from postbuild_lib.schemas import (
     align_article_identity,
     inject_faq_schema,
@@ -892,6 +892,15 @@ def main() -> None:
         f"postbuild: redirects — {redirect_pages} legacy page(s) converted, "
         f"{redirect_purged} sitemap entrie(s) purged"
     )
+
+    # Retired article URLs (_data/redirects/articles.json). Unlike the
+    # static move above there is no rendered source page to convert — the
+    # build stopped emitting the old path — so each is materialised from
+    # its target. Runs here for the same reason: after _finalize_build, so
+    # the sitemap augment cannot re-add them and normalize_canonical
+    # cannot rewrite the target canonical back to self.
+    article_redirects = apply_article_redirects(PUBLIC)
+    print(f"postbuild: redirects — {article_redirects} retired article URL(s) materialised")
 
     c = ctx.counters
     js_saved = _ASSET_STATS[1] - _ASSET_STATS[2]
