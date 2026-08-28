@@ -110,17 +110,26 @@
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-afakum-min-nis2-la-min-cra",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-khuttat-khurujikum-dora-suirat-walam-tukhattat",
     "2018-01-09-understanding-the-technology-behind-blockchain": "2018-01-09-fahm-altiqniya-wara-blockchain",
-    "2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution": "2018-02-04-alkashf-an-umla-mushaffara-wahal-dafa",
+    "2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution": "2018-02-04-alkashf-an-umla-mushaffara-jadida-wahal",
     "2018-02-15-the-making-of-the-express-transaction-credits-platform": "2018-02-15-suna-minassat-express-transaction-credits",
-    "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001": "2023-09-29-atmatat-milaffat-aldafa-iso-20022-pain001",
+    "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001": "2023-09-29-atmatat-insha-milaffat-aldafa-iso-20022",
     "2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries": "2023-10-26-libmake-muwallid-hayakil-maktabat-rust",
-    "2023-11-12-exploring-generative-ai": "2023-11-12-aldhaka-alistinai-altawlidi-2023",
-    "2024-01-23-advancements-in-ai-prompt-engineering": "2024-01-23-handasat-alawamir-aldhaka-alistinai-2024",
-    "2024-01-29-ai-powered-audio-insights-analysis-translations": "2024-01-29-audio-analyser-azure-speech-nlp-altarjama",
-    "2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance": "2024-02-12-akande-musaid-sawti-gpt-lilmudara",
-    "2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026": "2026-07-02-min-aldalil-ila-alhaqiqa-silasil-alkutal",
-    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-qiraat-ufuq-makhatir-altiqniyat-alnashia",
-    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-min-altajazzu-ila-alsada-miyar-api"
+    "2023-11-12-exploring-generative-ai": "2023-11-12-aldhaka-alistinai-altawlidi-kayf-yamal-waayn",
+    "2024-01-23-advancements-in-ai-prompt-engineering": "2024-01-23-handasat-alawamir-bildhaka-alistinai-altiqniyat-alfaala",
+    "2024-01-29-ai-powered-audio-insights-analysis-translations": "2024-01-29-audio-analyser-khat-anabib-azure-speech",
+    "2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance": "2024-02-12-akande-musaid-sawti-madum-gpt-lilmudara",
+    "2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026": "2026-07-02-aldalil-ila-alhaqiqa-limadha-satuhaddid-silasil",
+    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-qiraat-ufuq-makhatir-altiqniyat-alnashia-lilbunuk",
+    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-altajazzu-ila-alsada-miyar-wajihat-barmajat",
+    "2018-02-04-alkashf-an-umla-mushaffara-wahal-dafa": "2018-02-04-alkashf-an-umla-mushaffara-jadida-wahal",
+    "2023-09-29-atmatat-milaffat-aldafa-iso-20022-pain001": "2023-09-29-atmatat-insha-milaffat-aldafa-iso-20022",
+    "2023-11-12-aldhaka-alistinai-altawlidi-2023": "2023-11-12-aldhaka-alistinai-altawlidi-kayf-yamal-waayn",
+    "2024-01-23-handasat-alawamir-aldhaka-alistinai-2024": "2024-01-23-handasat-alawamir-bildhaka-alistinai-altiqniyat-alfaala",
+    "2024-01-29-audio-analyser-azure-speech-nlp-altarjama": "2024-01-29-audio-analyser-khat-anabib-azure-speech",
+    "2024-02-12-akande-musaid-sawti-gpt-lilmudara": "2024-02-12-akande-musaid-sawti-madum-gpt-lilmudara",
+    "2026-07-02-min-aldalil-ila-alhaqiqa-silasil-alkutal": "2026-07-02-aldalil-ila-alhaqiqa-limadha-satuhaddid-silasil",
+    "2026-07-03-qiraat-ufuq-makhatir-altiqniyat-alnashia": "2026-07-03-qiraat-ufuq-makhatir-altiqniyat-alnashia-lilbunuk",
+    "2026-07-07-min-altajazzu-ila-alsada-miyar-api": "2026-07-07-altajazzu-ila-alsada-miyar-wajihat-barmajat"
   },
   "bn": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-pratham-kriptokarensir-ek-bachharer-parjalochana",
@@ -230,8 +239,10 @@
     "2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026": "2026-08-02-apanar-uchch-jhunkir-samajsima-disembar-2027",
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-apanake-nis2-banchijechhe-cra-banchabe",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-apanar-dora-prasthan-parikalpanar-dam-dhara",
-    "2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026": "2026-07-02-praman-theke-sattye-pratyayita-blockchain",
-    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-banker-jonno-udiyaman-projuktir-jhuki-diganta"
+    "2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026": "2026-07-02-praman-theke-sattye-ken-pratyayita-blockchain",
+    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-bankgulir-jonno-udiyaman-projuktir-jhuki-diganta",
+    "2026-07-02-praman-theke-sattye-pratyayita-blockchain": "2026-07-02-praman-theke-sattye-ken-pratyayita-blockchain",
+    "2026-07-03-banker-jonno-udiyaman-projuktir-jhuki-diganta": "2026-07-03-bankgulir-jonno-udiyaman-projuktir-jhuki-diganta"
   },
   "cs": {
     "2023-10-09-shokunin-nejrychlejsi-staticky-generator-v-rustu": "2023-10-09-nejrychlejsi-staticky-generator-v-rustu",
@@ -296,8 +307,10 @@
     "2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026": "2026-08-02-vas-termin-pro-vysoke-riziko",
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-vas-usetrila-nis2-od-cra",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-vas-plan-odchodu-podle-dora-byl",
-    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-cteni-rizikoveho-horizontu-vznikajicich-technologii-pro",
-    "2026-07-08-global-corporate-standard-iso-20022-swift-2026": "2026-07-08-od-zprav-mape-budovani-globalniho-firemniho"
+    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-cteni-rizikoveho-horizontu-vznikajicich-technologii-banky",
+    "2026-07-08-global-corporate-standard-iso-20022-swift-2026": "2026-07-08-zprav-mape-budovani-globalniho-firemniho-standardu",
+    "2026-07-03-cteni-rizikoveho-horizontu-vznikajicich-technologii-pro": "2026-07-03-cteni-rizikoveho-horizontu-vznikajicich-technologii-banky",
+    "2026-07-08-od-zprav-mape-budovani-globalniho-firemniho": "2026-07-08-zprav-mape-budovani-globalniho-firemniho-standardu"
   },
   "de": {
     "2023-10-09-shokunin-der-schnellste-rust-basierte-static-site-generator": "2023-10-09-der-schnellste-rust-basierte-static-site-generator",
@@ -356,7 +369,8 @@
     "2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026": "2026-08-02-ihre-hochrisiko-frist-ruckte-auf-dezember",
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-hat-sie-von-nis2-befreit",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-ihr-dora-ausstiegsplan-war-kalkuliert-nicht",
-    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-den-risikohorizont-der-aufkommenden-technologien-fur"
+    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-risikohorizont-der-aufkommenden-technologien-banken-lesen",
+    "2026-07-03-den-risikohorizont-der-aufkommenden-technologien-fur": "2026-07-03-risikohorizont-der-aufkommenden-technologien-banken-lesen"
   },
   "es": {
     "2023-10-09-shokunin-el-generador-de-sitios-estaticos-rust-mas-rapido": "2023-10-09-el-generador-de-sitios-estaticos-rust-mas-rapido",
@@ -413,9 +427,12 @@
     "2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026": "2026-08-02-su-plazo-de-alto-riesgo-paso",
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-os-libro-de-nis2",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-vuestro-plan-de-salida-dora",
-    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-leer-el-horizonte-de-riesgos-tecnologicos",
-    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-de-la-fragmentacion-linea-fractura",
-    "2026-07-08-global-corporate-standard-iso-20022-swift-2026": "2026-07-08-de-los-mensajes-al-mapa"
+    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-leer-el-horizonte-riesgos-tecnologicos-emergentes",
+    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-fragmentacion-la-linea-fractura-estandar-api",
+    "2026-07-08-global-corporate-standard-iso-20022-swift-2026": "2026-07-08-mensajes-al-mapa-estandar-corporativo-global",
+    "2026-07-03-leer-el-horizonte-de-riesgos-tecnologicos": "2026-07-03-leer-el-horizonte-riesgos-tecnologicos-emergentes",
+    "2026-07-07-de-la-fragmentacion-linea-fractura": "2026-07-07-fragmentacion-la-linea-fractura-estandar-api",
+    "2026-07-08-de-los-mensajes-al-mapa": "2026-07-08-mensajes-al-mapa-estandar-corporativo-global"
   },
   "fil": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-balik-tanaw-sa-taon",
@@ -516,16 +533,26 @@
     "2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026": "2026-08-02-ai-act-artikulo-50-transparency-para-sa-bangko",
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-cyber-resilience-act-artikulo-14-pag-uulat",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-data-act-cloud-switching-at-dora-exit",
-    "2018-01-09-understanding-the-technology-behind-blockchain": "2018-01-09-pag-unawa-sa-teknolohiya-likod",
-    "2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution": "2018-02-04-pagpapakilala-ng-bagong-cryptocurrency-at-mabilis",
-    "2018-02-15-the-making-of-the-express-transaction-credits-platform": "2018-02-15-ang-paglikha-ng-express-transaction-credits",
-    "2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries": "2023-10-26-libmake-tagabuo-ng-scaffold-para",
-    "2023-11-12-exploring-generative-ai": "2023-11-12-generative-ai-noong-2023-paano-ito",
-    "2024-01-23-advancements-in-ai-prompt-engineering": "2024-01-23-ai-prompt-engineering-2024-mga-teknik",
-    "2024-01-29-ai-powered-audio-insights-analysis-translations": "2024-01-29-audio-analyser-azure-speech-nlp",
-    "2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance": "2024-02-12-akande-gpt-powered-voice-assistant-para",
-    "2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026": "2026-05-30-wholesale-digital-markets-sa-uk-tokenized",
-    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-pagbasa-sa-abot-tanaw-ng-panganib"
+    "2018-01-09-understanding-the-technology-behind-blockchain": "2018-01-09-pag-unawa-teknolohiya-likod-blockchain",
+    "2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution": "2018-02-04-pagpapakilala-ng-bagong-cryptocurrency-mabilis-solusyon",
+    "2018-02-15-the-making-of-the-express-transaction-credits-platform": "2018-02-15-paglikha-ng-express-transaction-credits-platform",
+    "2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries": "2023-10-26-libmake-tagabuo-scaffold-rust-library",
+    "2023-11-12-exploring-generative-ai": "2023-11-12-generative-ai-noong-paano-gumagana-saan",
+    "2024-01-23-advancements-in-ai-prompt-engineering": "2024-01-23-prompt-engineering-teknik-gumagana",
+    "2024-01-29-ai-powered-audio-insights-analysis-translations": "2024-01-29-audio-analyser-azure-speech-nlp-translation",
+    "2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance": "2024-02-12-akande-gpt-powered-voice-assistant-eksekutibo",
+    "2026-05-30-uk-wholesale-digital-markets-tokenised-gilts-settlement-2026": "2026-05-30-wholesale-digital-markets-uk-tokenized-gilts",
+    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-pagbasa-sa-abot-tanaw-panganib-umuusbong",
+    "2018-01-09-pag-unawa-sa-teknolohiya-likod": "2018-01-09-pag-unawa-teknolohiya-likod-blockchain",
+    "2018-02-04-pagpapakilala-ng-bagong-cryptocurrency-at-mabilis": "2018-02-04-pagpapakilala-ng-bagong-cryptocurrency-mabilis-solusyon",
+    "2018-02-15-ang-paglikha-ng-express-transaction-credits": "2018-02-15-paglikha-ng-express-transaction-credits-platform",
+    "2023-10-26-libmake-tagabuo-ng-scaffold-para": "2023-10-26-libmake-tagabuo-scaffold-rust-library",
+    "2023-11-12-generative-ai-noong-2023-paano-ito": "2023-11-12-generative-ai-noong-paano-gumagana-saan",
+    "2024-01-23-ai-prompt-engineering-2024-mga-teknik": "2024-01-23-prompt-engineering-teknik-gumagana",
+    "2024-01-29-audio-analyser-azure-speech-nlp": "2024-01-29-audio-analyser-azure-speech-nlp-translation",
+    "2024-02-12-akande-gpt-powered-voice-assistant-para": "2024-02-12-akande-gpt-powered-voice-assistant-eksekutibo",
+    "2026-05-30-wholesale-digital-markets-sa-uk-tokenized": "2026-05-30-wholesale-digital-markets-uk-tokenized-gilts",
+    "2026-07-03-pagbasa-sa-abot-tanaw-ng-panganib": "2026-07-03-pagbasa-sa-abot-tanaw-panganib-umuusbong"
   },
   "fr": {
     "2023-10-09-shokunin-generateur-de-sites-statiques-rust-le-plus-rapide": "2023-10-09-generateur-de-sites-statiques-rust-le-plus-rapide",
@@ -784,16 +811,24 @@
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-patra-etchem-minis2-lo-micra",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-tochnit-hayetsia-shelachem-tumchera-lo-tuchnena",
     "2018-01-09-understanding-the-technology-behind-blockchain": "2018-01-09-havanat-hatekhnologia-mahorei-blockchain",
-    "2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution": "2018-02-04-hasifat-matbea-kriptografi-hadash-tashlumim",
+    "2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution": "2018-02-04-hasifat-matbea-kriptografi-hadash-ufitaron-tashlumim",
     "2018-02-15-the-making-of-the-express-transaction-credits-platform": "2018-02-15-bniyat-platformat-express-transaction-credits",
-    "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001": "2023-09-29-otomatsia-kovtsei-tashlum-iso-20022-pain001",
+    "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001": "2023-09-29-otomatsia-shel-yetsirat-kovtsei-tashlum-iso",
     "2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries": "2023-10-26-libmake-meholel-shladim-sifriyot-rust",
-    "2023-11-12-exploring-generative-ai": "2023-11-12-generative-ai-2023-eikh-oved-heikhan-nohet",
-    "2024-01-23-advancements-in-ai-prompt-engineering": "2024-01-23-handasat-promptim-ai-2024-tekhnikot",
-    "2024-01-29-ai-powered-audio-insights-analysis-translations": "2024-01-29-audio-analyser-azure-speech-nlp-tsinor-tirgum",
-    "2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance": "2024-02-12-akande-ozer-koli-gpt-lemenahalim",
-    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-kriat-ofek-hasikunim-tekhnologiot-mitpathot",
-    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-mipitsul-lekav-shever-teken-api-iski"
+    "2023-11-12-exploring-generative-ai": "2023-11-12-generative-ai-keitsad-oved-heikhan-nohet",
+    "2024-01-23-advancements-in-ai-prompt-engineering": "2024-01-23-handasat-promptim-ai-tekhnikot-sheovdot",
+    "2024-01-29-ai-powered-audio-insights-analysis-translations": "2024-01-29-audio-analyser-azure-speech-nlp-tsinor",
+    "2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance": "2024-02-12-akande-ozer-koli-mevusas-gpt-lemenahalim",
+    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-kriat-ofek-hasikunim-tekhnologiot-mitpathot-avur",
+    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-mipitsul-lekav-shever-teken-api-hahaser",
+    "2018-02-04-hasifat-matbea-kriptografi-hadash-tashlumim": "2018-02-04-hasifat-matbea-kriptografi-hadash-ufitaron-tashlumim",
+    "2023-09-29-otomatsia-kovtsei-tashlum-iso-20022-pain001": "2023-09-29-otomatsia-shel-yetsirat-kovtsei-tashlum-iso",
+    "2023-11-12-generative-ai-2023-eikh-oved-heikhan-nohet": "2023-11-12-generative-ai-keitsad-oved-heikhan-nohet",
+    "2024-01-23-handasat-promptim-ai-2024-tekhnikot": "2024-01-23-handasat-promptim-ai-tekhnikot-sheovdot",
+    "2024-01-29-audio-analyser-azure-speech-nlp-tsinor-tirgum": "2024-01-29-audio-analyser-azure-speech-nlp-tsinor",
+    "2024-02-12-akande-ozer-koli-gpt-lemenahalim": "2024-02-12-akande-ozer-koli-mevusas-gpt-lemenahalim",
+    "2026-07-03-kriat-ofek-hasikunim-tekhnologiot-mitpathot": "2026-07-03-kriat-ofek-hasikunim-tekhnologiot-mitpathot-avur",
+    "2026-07-07-mipitsul-lekav-shever-teken-api-iski": "2026-07-07-mipitsul-lekav-shever-teken-api-hahaser"
   },
   "hi": {
     "2023-10-09-shokunin-sabse-tez-rust-static-site-generator": "2023-10-09-sabse-tez-rust-static-site-generator",
@@ -986,7 +1021,8 @@
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-vi-ha-risparmiato-nis2-non",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-il-vostro-piano-di-uscita-dora",
     "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-leggere-orizzonte-dei-rischi-tecnologici-emergenti",
-    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-dalla-frammentazione-alla-faglia-lo-standard"
+    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-dalla-frammentazione-alla-faglia-standard-api",
+    "2026-07-07-dalla-frammentazione-alla-faglia-lo-standard": "2026-07-07-dalla-frammentazione-alla-faglia-standard-api"
   },
   "ja": {
     "2023-10-09-shokunin-saisoku-no-rust-sei-shizen-saito-jenereta": "2023-10-09-saisoku-no-rust-sei-shizen-saito-jenereta",
@@ -1051,8 +1087,10 @@
     "2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026": "2026-08-02-kou-risk-no-kigen-wa-2027-nen-12-gatsu-he",
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-wa-nis2-kara-mamotta-ga-cra-kara-wa-mamoranai",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-dora-tettai-keikaku-wa-mitsumorareta-dake",
-    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-shinko-gijutsu-risk-chihei-ginko-2026",
-    "2026-07-08-global-corporate-standard-iso-20022-swift-2026": "2026-07-08-message-kara-chizu-e-iso-20022-swift"
+    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-ginko-shinko-gijutsu-risk-chihei-yomu",
+    "2026-07-08-global-corporate-standard-iso-20022-swift-2026": "2026-07-08-message-kara-chizu-iso-20022-swift",
+    "2026-07-03-shinko-gijutsu-risk-chihei-ginko-2026": "2026-07-03-ginko-shinko-gijutsu-risk-chihei-yomu",
+    "2026-07-08-message-kara-chizu-e-iso-20022-swift": "2026-07-08-message-kara-chizu-iso-20022-swift"
   },
   "ko": {
     "2023-10-09-shokunin-choegoseok-rust-gibon-jeongjeoksaiteu-saengseonggi": "2023-10-09-choegoseok-rust-gibon-jeongjeoksaiteu-saengseonggi",
@@ -1183,8 +1221,10 @@
     "2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026": "2026-08-02-uw-hoogrisicodeadline-schoof-op-naar-december",
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-hield-nis2-van-weg",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-uw-dora-exitplan-was-begroot-niet",
-    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-de-risicohorizon-van-opkomende-technologie-voor",
-    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-van-fragmentatie-naar-breuklijn-de-ontbrekende"
+    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-risicohorizon-van-opkomende-technologie-banken-lezen",
+    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-fragmentatie-naar-breuklijn-ontbrekende-api-standaard",
+    "2026-07-03-de-risicohorizon-van-opkomende-technologie-voor": "2026-07-03-risicohorizon-van-opkomende-technologie-banken-lezen",
+    "2026-07-07-van-fragmentatie-naar-breuklijn-de-ontbrekende": "2026-07-07-fragmentatie-naar-breuklijn-ontbrekende-api-standaard"
   },
   "pl": {
     "2023-10-09-shokunin-najszybszy-generator-stron-statycznych-w-rust": "2023-10-09-najszybszy-generator-stron-statycznych-w-rust",
@@ -1250,7 +1290,8 @@
     "2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026": "2026-08-02-wasz-termin-wysokiego-ryzyka-przesuna-sie",
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-uchroni-was-przed-nis2-cra",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-wasz-plan-wyjscia-wg-dora-zosta",
-    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-odczytywanie-horyzontu-ryzyk-technologii-wschodzacych-dla"
+    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-odczytywanie-horyzontu-ryzyk-technologii-wschodzacych-bankow",
+    "2026-07-03-odczytywanie-horyzontu-ryzyk-technologii-wschodzacych-dla": "2026-07-03-odczytywanie-horyzontu-ryzyk-technologii-wschodzacych-bankow"
   },
   "pt-br": {
     "2023-10-09-shokunin-o-gerador-de-sites-estaticos-rust-mais-rapido": "2023-10-09-o-gerador-de-sites-estaticos-rust-mais-rapido",
@@ -1307,8 +1348,10 @@
     "2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026": "2026-08-02-seu-prazo-de-alto-risco-foi",
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-livrou-voces-da-nis2-nao",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-seu-plano-de-saida-dora-foi",
-    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-lendo-horizonte-de-riscos-das-tecnologias",
-    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-da-fragmentacao-falha-estrutural-padrao"
+    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-lendo-horizonte-riscos-tecnologias-emergentes-bancos",
+    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-fragmentacao-falha-estrutural-padrao-api-ausente",
+    "2026-07-03-lendo-horizonte-de-riscos-das-tecnologias": "2026-07-03-lendo-horizonte-riscos-tecnologias-emergentes-bancos",
+    "2026-07-07-da-fragmentacao-falha-estrutural-padrao": "2026-07-07-fragmentacao-falha-estrutural-padrao-api-ausente"
   },
   "ro": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-retrospectiva-primului-an-primei-criptomonede",
@@ -1551,8 +1594,10 @@
     "2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026": "2026-08-02-er-hogrisktidsfrist-flyttades-till-december-2027",
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-befriade-er-fran-nis2-cra",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-er-dora-exitplan-blev-prissatt-inte",
-    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-att-lasa-risklandskapet-for-framvaxande-teknik",
-    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-fran-fragmentering-till-forkastningslinje-foretagsbankernas-saknade"
+    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-lasa-risklandskapet-framvaxande-teknik-banker",
+    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-fran-fragmentering-forkastningslinje-foretagsbankernas-saknade-api",
+    "2026-07-03-att-lasa-risklandskapet-for-framvaxande-teknik": "2026-07-03-lasa-risklandskapet-framvaxande-teknik-banker",
+    "2026-07-07-fran-fragmentering-till-forkastningslinje-foretagsbankernas-saknade": "2026-07-07-fran-fragmentering-forkastningslinje-foretagsbankernas-saknade-api"
   },
   "th": {
     "2023-10-09-shokunin-static-site-generator-thi-reo-thi-sut-bon-rust": "2023-10-09-static-site-generator-thi-reo-thi-sut-bon-rust",
@@ -1618,7 +1663,8 @@
     "2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026": "2026-08-02-sen-tai-khwam-siang-sung-luean-pai-2027",
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-chuai-hai-phon-nis2-tae-mai-phon-cra",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-phaen-thon-tua-dora-thuk-ti-rakha",
-    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-kan-an-khopfa-khwamsiang-theknoloyi-thanakhan"
+    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-khopfa-khwamsiang-theknoloyi-koetmai-samrap-thanakhan",
+    "2026-07-03-kan-an-khopfa-khwamsiang-theknoloyi-thanakhan": "2026-07-03-khopfa-khwamsiang-theknoloyi-koetmai-samrap-thanakhan"
   },
   "tr": {
     "2023-10-09-shokunin-rust-tabanli-en-hizli-statik-site-jeneratoru": "2023-10-09-rust-tabanli-en-hizli-statik-site-jeneratoru",
@@ -1683,8 +1729,9 @@
     "2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026": "2026-08-02-yuksek-risk-tarihiniz-aralik-2027",
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-sizi-nis2-den-kurtardi-cra",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-dora-cikis-planiniz-fiyatlandirildi-planlanmadi-ocak",
-    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-bankalar-icin-gelisen-teknoloji-risk-ufku",
-    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-parcalanmadan-fay-hattina-ajan-caginda-kurumsal"
+    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-bankalar-icin-gelisen-teknoloji-risk-ufkunu",
+    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-parcalanmadan-fay-hattina-ajan-caginda-kurumsal",
+    "2026-07-03-bankalar-icin-gelisen-teknoloji-risk-ufku": "2026-07-03-bankalar-icin-gelisen-teknoloji-risk-ufkunu"
   },
   "uk": {
     "2023-10-09-shokunin-naishvydshyi-rust-statychnyy-henerator": "2023-10-09-naishvydshyi-rust-statychnyy-henerator",
@@ -1750,7 +1797,8 @@
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-vberehla-vas-nis2-cra-vona",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-vash-plan-vykhodu-dora-otsinyly-splanuvaly",
     "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-chytannya-horyzontu-ryzykiv-novitnikh-tekhnolohiy-bankiv",
-    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-vid-frahmentatsiyi-liniyi-rozlomu-vidsutniy-standart"
+    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-frahmentatsiyi-do-liniyi-rozlomu-vidsutniy-standart",
+    "2026-07-07-vid-frahmentatsiyi-liniyi-rozlomu-vidsutniy-standart": "2026-07-07-frahmentatsiyi-do-liniyi-rozlomu-vidsutniy-standart"
   },
   "vi": {
     "2023-10-09-shokunin-bo-tao-trang-tinh-rust-nhanh-nhat": "2023-10-09-bo-tao-trang-tinh-rust-nhanh-nhat",
@@ -1815,8 +1863,10 @@
     "2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026": "2026-08-02-han-rui-ro-cao-cua-ban",
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-da-mien-cho-ban-khoi",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-ke-hoach-roi-di-theo-dora",
-    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-doc-chan-troi-rui-ro-cong-nghe-moi-noi",
-    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-tu-phan-manh-den-duong-dut"
+    "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-doc-chan-troi-rui-ro-cong",
+    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-phan-manh-duong-dut-gay-chuan",
+    "2026-07-03-doc-chan-troi-rui-ro-cong-nghe-moi-noi": "2026-07-03-doc-chan-troi-rui-ro-cong",
+    "2026-07-07-tu-phan-manh-den-duong-dut": "2026-07-07-phan-manh-duong-dut-gay-chuan"
   },
   "yo": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-atunyewo-odun-kan-cryptocurrency-akoko",
@@ -1928,7 +1978,8 @@
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-gba-yin-lowo-nis2",
     "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-won-diyele-eto-ijade-dora-yin",
     "2026-07-03-emerging-technology-risk-horizon-banks-2026": "2026-07-03-kika-oju-orun-ewu-imo-ero",
-    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-lati-pinpin-idojuko-ewu-ilana-api"
+    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": "2026-07-07-pinpin-si-idojuko-ewu-ilana-api",
+    "2026-07-07-lati-pinpin-idojuko-ewu-ilana-api": "2026-07-07-pinpin-si-idojuko-ewu-ilana-api"
   },
   "zh-hans": {
     "2023-10-09-shokunin-zuikuai-de-rust-jingtai-zhandian-shengchengqi": "2023-10-09-zuikuai-de-rust-jingtai-zhandian-shengchengqi",
