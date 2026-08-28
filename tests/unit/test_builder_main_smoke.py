@@ -21,23 +21,18 @@ wrote into committed source — ``gen_layouts`` into ``_layouts/`` and
 dirty, which ADR-0003 and ``_copy_root_posts`` below already forbade for
 the enrichers but nothing enforced for the rest.
 
-So the tree is cloned once per module and every main() runs inside it:
-
-* 14 of the 16 builders resolve the output as a CWD-relative
-  ``Path("public")``, so ``chdir`` into the clone redirects them.
-* The two ``__file__``-anchored ones have their module constants
-  repointed explicitly — ``chdir`` cannot reach them.
-
-``tests/unit/conftest.py`` gates the property: the session fails if any
-test leaves ``public/`` altered or a tracked file dirty.
+The whole unit session now runs inside a disposable clone of the tree —
+see ``tests/unit/conftest.py``, which also gates the property: the run
+fails if any test leaves the real ``public/`` altered or a tracked file
+dirty. Scoping the clone per-module was not enough; a first pass at this
+sandboxed only this file and CI still reported 6,497 rewritten files,
+because several other modules invoke the same entry points.
 """
 
 from __future__ import annotations
 
 import hashlib
-import importlib
 import shutil
-import subprocess
 import sys
 from pathlib import Path
 
@@ -71,97 +66,6 @@ def _posts_fingerprint() -> str:
         h.update(p.name.encode())
         h.update(p.read_bytes())
     return h.hexdigest()
-
-
-def _clone_tree(src: Path, dst: Path) -> None:
-    """Copy ``src`` to ``dst``, preferring a filesystem copy-on-write clone.
-
-    ``public/`` is ~1.1 GB across 24k files. APFS and btrfs/xfs clone it in
-    seconds for near-zero disk; elsewhere this degrades to a real copy,
-    which is still the right trade against an order-dependent suite.
-    """
-    for cmd in (["cp", "--reflink=auto", "-R"], ["cp", "-c", "-R"], ["cp", "-R"]):
-        try:
-            r = subprocess.run([*cmd, str(src), str(dst)], capture_output=True, timeout=900)
-        except (OSError, subprocess.SubprocessError):
-            continue
-        if r.returncode == 0:
-            return
-    shutil.copytree(src, dst)
-
-
-# Builders whose main() this module invokes. ``chdir`` redirects anything
-# resolved as a CWD-relative ``Path("public")``, but a module-level constant
-# built from ``__file__`` is already absolute by then and points at the real
-# repo. Rather than list those constants — a list goes stale the moment
-# someone adds one — every Path attribute on these modules is repointed into
-# the sandbox automatically. A builder added to the tests but missing here is
-# caught by the isolation gate in conftest, loudly, rather than silently
-# writing to the working tree.
-_BUILDER_MODULES = (
-    "post_enrich",
-    "build_topics",
-    "build_lang_feeds",
-    "build_agent_api",
-    "build_lead_magnets",
-    "gen_layouts",
-    "gen_projects",
-    "gen_papers",
-    "gen_articles",
-    "topic_link",
-    "fix_cdn_urls",
-    "validate_jsonld",
-    "jsonld_diff",
-)
-
-
-def _repoint_module_paths(mod: object, sandbox: Path, mp: pytest.MonkeyPatch) -> int:
-    """Redirect every absolute Path constant on ``mod`` into ``sandbox``.
-
-    Only paths that resolve inside the real repo are touched; anything
-    pointing elsewhere (a temp dir, an absolute URL-ish path) is left alone.
-    """
-    moved = 0
-    for attr, val in list(vars(mod).items()):
-        if attr.startswith("__") or not isinstance(val, Path) or not val.is_absolute():
-            continue
-        try:
-            rel = val.resolve().relative_to(ROOT)
-        except ValueError:
-            continue
-        mp.setattr(mod, attr, sandbox if rel == Path(".") else sandbox / rel, raising=False)
-        moved += 1
-    return moved
-
-
-@pytest.fixture(scope="module", autouse=True)
-def _sandboxed_build_tree(tmp_path_factory):
-    """Point every main() in this module at a disposable clone of the tree."""
-    if not PUBLIC.is_dir():
-        yield None
-        return
-
-    sandbox = tmp_path_factory.mktemp("build_tree")
-    for name in ("public", "_posts", "_data", "_layouts"):
-        src = ROOT / name
-        if src.is_dir():
-            _clone_tree(src, sandbox / name)
-
-    mp = pytest.MonkeyPatch()
-    mp.chdir(sandbox)
-    for mod_name in _BUILDER_MODULES:
-        try:
-            mod = importlib.import_module(mod_name)
-        except Exception as exc:  # pragma: no cover - builder absent
-            # Not fatal: the module simply is not under test here. The
-            # isolation gate still catches anything it would have written.
-            print(f"sandbox: skipping {mod_name} ({type(exc).__name__}: {exc})")
-            continue
-        _repoint_module_paths(mod, sandbox, mp)
-    try:
-        yield sandbox
-    finally:
-        mp.undo()
 
 
 # ---------------------------------------------------------------------------
