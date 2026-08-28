@@ -318,5 +318,3 @@ Anhand der aus adressierbaren Pools erfassten Erlöse, der Kosten dualer Rail-Be
 </div>
 </aside>
 <!-- enrich-end -->
-</content>
-</invoke>

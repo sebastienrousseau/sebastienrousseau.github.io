@@ -207,4 +207,3 @@ A sikelin ɗan adam, a'a, kuma wataƙila ba nan kusa ba. Ya zuwa farkon shekarar
 </div>
 </aside>
 <!-- enrich-end -->
----

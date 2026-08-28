@@ -113,30 +113,30 @@ def inject_table_labels(html: str) -> str:
 
 
 def strip_duplicate_body_h1(html: str) -> str:
-    """Remove the first H1 inside <main> when it duplicates the hero H1
-    that the layout template emits in ``<section class="ap-hero">``.
+    """Remove the first H1 inside <main>: the hero H1 the layout emits in
+    ``<section class="ap-hero">`` is the page's only H1.
 
     Every dated article runs the markdown body through Static Site
-    Generator with the H1 markdown ``# {{title}}`` at the top. The
-    layout *also* emits ``<h1>{{title}}</h1>`` in the hero band. The
-    rendered output therefore carries two H1s with identical text —
-    WCAG 1.3.1 / 2.4.6 violation, plus a noisy duplicate above the
-    article body.
+    Generator with an H1 at the top. The layout *also* emits
+    ``<h1>{{title}}</h1>`` in the hero band. The rendered output
+    therefore carries two H1s — WCAG 1.3.1 / 2.4.6 violation, plus a
+    noisy duplicate headline directly above the article body.
 
-    The fix is render-only: ``check_voice`` still requires exactly one
-    H1 in the markdown source (so editors keep the canonical title at
-    the top of the file), but the postbuild pass deletes the
-    duplicate before the page is served.
+    This used to strip the body H1 only when its text matched the hero
+    exactly, to avoid deleting content that might differ on purpose.
+    That left the drifted majority in place: ``title:`` is the short
+    SEO form and the body H1 the long headline, so on 267 posts the two
+    differ by wording alone and both survived. The duplicate is one of
+    *role*, not of text — a second H1 is wrong whatever it says — so the
+    match is now on position rather than on content.
+
+    The fix stays render-only: the markdown keeps its full headline for
+    editors (``check_voice`` still requires exactly one H1 in source),
+    and only the served page drops the redundant second one.
     """
-    hero_m = _H1_RE.search(html)
-    if hero_m is None:
+    if _H1_RE.search(html) is None:
         return html
-    hero_text = _html_unescape(hero_m.group(1)).strip()
-    new_html, n = _BODY_H1_RE.subn(
-        lambda m: m.group(1) if _html_unescape(m.group(2)).strip() == hero_text else m.group(0),
-        html,
-        count=1,
-    )
+    new_html, n = _BODY_H1_RE.subn(lambda m: m.group(1), html, count=1)
     return new_html if n else html
 
 
@@ -192,12 +192,6 @@ def decode_entities_in_jsonld(html: str) -> str:
         )
 
     return _LDJSON_RE.sub(_one, html)
-
-
-def _html_unescape(s: str) -> str:
-    """Thin indirection so the strip-duplicate-H1 helper can be patched
-    (``article_furniture._unesc``) in tests if needed."""
-    return _unesc(s)
 
 
 _BODY_LINK_STYLESHEET_RE = re.compile(

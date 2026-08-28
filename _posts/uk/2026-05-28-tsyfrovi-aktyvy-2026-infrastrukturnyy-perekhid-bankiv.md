@@ -318,5 +318,3 @@ BCG завершує десятикроковим керівництвом. Ск
 </div>
 </aside>
 <!-- enrich-end -->
-</content>
-</invoke>

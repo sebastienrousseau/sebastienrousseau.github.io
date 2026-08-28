@@ -316,5 +316,3 @@ Genom intäkter som fångats från adresserbara pooler, kostnad för drift med d
 </div>
 </aside>
 <!-- enrich-end -->
-</content>
-</invoke>

@@ -70,5 +70,3 @@ Shor चा अल्गोरिदम चालवणारे क्वां
 [epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf "EPAA क्वांटम-सुरक्षित पेमेंट्स श्वेतपत्रिका"
 [rel1]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution: बँकिंगमधील सुरक्षेत क्रांती"
 [rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: क्वांटम युगातील संरक्षक अल्गोरिदम"
-
-END_TRANSLATION

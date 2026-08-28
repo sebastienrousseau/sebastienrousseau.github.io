@@ -256,4 +256,3 @@ EXTC був проектом перевірки концепції (proof-of-con
 </div>
 </aside>
 <!-- enrich-end -->
-```

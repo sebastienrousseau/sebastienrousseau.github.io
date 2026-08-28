@@ -274,4 +274,3 @@ pacs.008 メッセージは少なくとも次を含みます。
 </div>
 </aside>
 <!-- enrich-end -->
-</content>

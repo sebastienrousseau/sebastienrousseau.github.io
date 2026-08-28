@@ -225,5 +225,3 @@ Devlet ihraçlı bir kimlikle mevcut müşteri ana kaydınız arasında varlık 
 * Avrupa Parlamentosu ve Avrupa Birliği Konseyi, 2015\. *İç pazarda ödeme hizmetlerine ilişkin Directive (EU) 2015/2366 (PSD2)*. Brüksel: Avrupa Birliği Resmî Gazetesi. Erişim adresi: [Avrupa Parlamentosu ve Avrupa Birliği Konseyi, 2015\.](https://eur-lex.europa.eu/eli/dir/2015/2366/oj "Avrupa Parlamentosu ve Avrupa Birliği Konseyi, 2015.").  
 * Avrupa Komisyonu, 2018\. *Güçlü müşteri kimlik doğrulamasına ilişkin düzenleyici teknik standartlar bakımından Directive (EU) 2015/2366'yı tamamlayan Commission Delegated Regulation (EU) 2018/389*. Brüksel: Avrupa Birliği Resmî Gazetesi. Erişim adresi: [Avrupa Komisyonu, 2018\.](https://eur-lex.europa.eu/eli/reg_del/2018/389/oj "Avrupa Komisyonu, 2018.").  
 * OpenID Foundation, 2026\. *OpenID for Verifiable Presentations*. San Ramon: OpenID Foundation. Erişim adresi: [OpenID Foundation, 2026\.](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html "OpenID Foundation, 2026.").
-</content>
-</invoke>

@@ -294,4 +294,3 @@ Zamanin Quantum Computing yana gabatowa. Dole ne bankuna su yi nazari da wuri ak
 </div>
 </aside>
 <!-- enrich-end -->
----

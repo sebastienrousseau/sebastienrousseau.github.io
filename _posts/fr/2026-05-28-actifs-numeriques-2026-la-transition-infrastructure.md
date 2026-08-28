@@ -318,5 +318,3 @@ Par les revenus captés sur les pools adressables, le coût d'exploitation en do
 </div>
 </aside>
 <!-- enrich-end -->
-</content>
-</invoke>

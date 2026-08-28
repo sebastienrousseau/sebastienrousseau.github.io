@@ -142,5 +142,3 @@ uint8 public decimals = 18;
 - Dexaran, Ethereum GitHub, (2017). [Πρόταση προτύπου token ERC-223 ⧉](https://github.com/ethereum/EIPs/issues/223 "Συζήτηση ERC-223").
 - OpenZeppelin, (2018). [OpenZeppelin Contracts — SafeMath ⧉](https://github.com/OpenZeppelin/openzeppelin-contracts "OpenZeppelin Contracts").
 - Ethereum Foundation, (2014). [Λευκή βίβλος του Ethereum ⧉](https://ethereum.org/whitepaper "Λευκή βίβλος του Ethereum").
-
-END_TRANSLATION

@@ -283,5 +283,3 @@ Tiga perkara, berurutan. Pertama, hasilkan Rang Bahan AI — inventori lengkap s
 - VentureBeat, (2026). [Agentic coding at enterprise scale demands spec-driven development ⧉](https://venturebeat.com/orchestration/agentic-coding-at-enterprise-scale-demands-spec-driven-development "Agentic coding at enterprise scale demands spec-driven development"). VentureBeat.
 - The News (Pakistan), (2026). [Why British banks' push for agentic AI is worrying UK regulators ⧉](https://www.thenews.com.pk/latest/1385186-why-british-banks-push-for-agentic-ai-is-worrying-uk-regulators "Why British banks' push for agentic AI is worrying UK regulators"). The News International.
 - CNBC, (2026). [Anthropic's Mythos set off a cybersecurity 'hysteria' ⧉](https://www.cnbc.com/2026/05/08/anthropic-mythos-ai-cybersecurity-banks.html "Anthropic's Mythos set off a cybersecurity hysteria"). CNBC.
-
-END_TRANSLATION

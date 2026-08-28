@@ -35,7 +35,7 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "Multi-Rail Bank 2026: FedNow vs RTP vs ACH vs USDC"
+seo_title: "Ang Multi-Rail Bank sa 2026: FedNow, RTP, ACH at USDC"
 short_name: "sebastienrousseau"
 subtitle: "Ang multi-rail strategy ay routing engine, liquidity book, at ISO 20022 translator na nakatayo sa ibabaw ng legacy core. Ang mga arkitektong tinatrato ito bilang product launch ay magpopondo sa tatlong rail at hindi pamamahalaan ang isa man nang maayos."
 tags: "payments, FedNow, RTP, ACH, stablecoin settlement, USDC, ISO 20022, A2A payments, Open Banking APIs, pre-funded liquidity, multi-rail bank, post-quantum cryptography, AI, stablecoins, tokenised deposits, platform engineering, cross-border payments, DORA, cloud native banking"
@@ -73,7 +73,7 @@ twitter_description: "Ang multi-rail ay hindi product launch — ito ay routing 
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Multi-Rail Bank 2026: FedNow vs RTP vs ACH vs USDC"
+twitter_title: "Ang Multi-Rail Bank sa 2026: FedNow, RTP, ACH at USDC"
 twitter_url: "https://sebastienrousseau.com/2026-06-01-multi-rail-bank-cards-a2a-stablecoins-rtp-fednow-open-banking-2026"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
@@ -278,5 +278,3 @@ Depende ito sa participant volume. Ang isang bangkong nakakikita ng USD 50m peak
 </div>
 </aside>
 <!-- enrich-end -->
-</content>
-</invoke>

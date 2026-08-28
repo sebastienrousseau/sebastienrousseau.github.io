@@ -274,5 +274,3 @@ Cela dépend du volume du participant. Une banque voyant un pic horaire de sorti
 </div>
 </aside>
 <!-- enrich-end -->
-</content>
-</invoke>

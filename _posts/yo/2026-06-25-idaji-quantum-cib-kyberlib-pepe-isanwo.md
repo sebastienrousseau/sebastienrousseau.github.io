@@ -174,5 +174,3 @@ Bẹ̀rẹ̀ pẹ̀lú CBOM. Bo gbogbo ìpilẹ̀ ní ìwé. Ṣíkiri àwọn �
 <aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Olùṣàkóso ìmọ̀-ẹ̀rọ báńkì àgbà tó ń kọ̀wé lórí AI tí a lò, ìṣíkiri ISO 20022, cryptography post-quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà àpapọ̀ ti ìsanwó wholesale.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profile pípé</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò ìkẹyìn <time datetime="2026-06-25">2026-06-25</time>.</p>
 <!-- enrich-end -->
-
-</invoke>

@@ -275,5 +275,3 @@ PQC yetenekli, mevcut PKI'ye entegre, üretim güvenini bozmadan çift algoritma
 </div>
 </aside>
 <!-- enrich-end -->
-</content>
-</invoke>

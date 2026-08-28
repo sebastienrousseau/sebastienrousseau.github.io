@@ -274,4 +274,3 @@ Es hängt vom Teilnehmervolumen ab. Eine Bank mit einem stündlichen Instant-Zah
 </div>
 </aside>
 <!-- enrich-end -->
-</content>

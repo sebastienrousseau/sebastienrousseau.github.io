@@ -171,5 +171,3 @@ keywords: "ISO 20022, Swift CBPR+, εταιρικά τραπεζικά API, CPMI
 - [Swift, *ISO 20022 harmonisation charter*](https://www.swift.com/sites/default/files/documents/swift_standards_iso20022_harmonisation_charter_factsheet.pdf "Swift — ISO 20022 harmonisation charter") ⧉. [MyStandards, πρότυπα CGI-MP και η πειθαρχία της τεκμηρίωσης των επεκτάσεων αντί του πολλαπλασιασμού προσαρμοσμένων διαλέκτων.]
 
 *Τελευταία αναθεώρηση Ιούλιος 2026. Πρωτότυπη ανάλυση· οι πηγές παρατίθενται, δεν αναπαράγονται. Τα στοιχεία και τα χρονοδιαγράμματα κινούνται γρήγορα σε αυτόν τον χώρο — επαληθεύστε τα σε σχέση με πρωτογενείς πηγές πριν από την αναδημοσίευση. Υπό άδεια CC-BY-4.0.*
-
-END_TRANSLATION

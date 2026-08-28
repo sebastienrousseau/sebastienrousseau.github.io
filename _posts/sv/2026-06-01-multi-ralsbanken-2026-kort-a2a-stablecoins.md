@@ -274,5 +274,3 @@ Det beror på deltagarvolymen. En bank som ser en topp på 50 miljoner USD per t
 </div>
 </aside>
 <!-- enrich-end -->
-</content>
-</invoke>

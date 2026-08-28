@@ -274,5 +274,3 @@ Dipende dal volume del partecipante. Una banca che vede un picco orario di 50 mi
 </div>
 </aside>
 <!-- enrich-end -->
-</content>
-</invoke>

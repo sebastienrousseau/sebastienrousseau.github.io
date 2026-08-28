@@ -83,5 +83,3 @@ QFT चे खरे सामर्थ्य पारंपरिक अल्
 
 [01]: https://www.ibm.com/quantum/qiskit "IBM Quantum Computing | Qiskit"
 [02]: https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html#h4-quantum "Quantum Fourier Transform (QFT)"
-
-END_TRANSLATION

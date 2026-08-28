@@ -257,5 +257,3 @@ A legtöbb joghatóságban a tisztán engedélymentes nyilvános blokkláncok ne
 * ISO/IEC 307-es Műszaki Bizottság, 2020\. *ISO/IEC 22739:2020, Blokklánc és elosztott főkönyvi technológiák, szókészlet*. Genf: Nemzetközi Szabványügyi Szervezet. Elérhető: [ISO/IEC 307-es Műszaki Bizottság, 2020\.](https://www.iso.org/standard/73771.html "ISO/IEC 307-es Műszaki Bizottság, 2020\.").  
 * Nemzeti Szabványügyi és Technológiai Intézet (NIST), 2026\. *Az első három véglegesített posztkvantum titkosítási szabvány (FIPS 203, 204 és 205\)*. Gaithersburg: Az Egyesült Államok Kereskedelmi Minisztériuma. Elérhető: [Nemzeti Szabványügyi és Technológiai Intézet (NIST), 2026\.](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalised-post-quantum-encryption-standards "Nemzeti Szabványügyi és Technológiai Intézet (NIST), 2026\.").
 
-</content>
-</invoke>
