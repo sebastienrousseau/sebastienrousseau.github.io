@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Stručný přehled">
+<aside class="post-lead" aria-label="Shrnutí článku">
 <p class="post-lead-tldr"><strong>Stručně.</strong> Podnikové technologie v roce 2026 definuje souběh globálně distribuovaného serverless vykonávání a agentní AI. Standardní CDN — postavené pro cache statických souborů a základní směrování provozu — jsou v éře aktivní orchestrace dat v reálném čase strukturálně zastaralé. CloudCDN je open source blueprint, který přetváří edge v aktivní řídicí rovinu: serverless runtimy, stavovou koordinaci přes Cloudflare Durable Objects a zero-trust bránu Model Context Protocol (MCP), která autonomním AI agentům umožňuje provozovat webovou infrastrukturu uvnitř ohraničených, kryptograficky zabezpečených provozních mantinelů.</p>
 <p class="post-lead-heading"><strong>Klíčové body</strong></p>
 <ul class="post-lead-takeaways">

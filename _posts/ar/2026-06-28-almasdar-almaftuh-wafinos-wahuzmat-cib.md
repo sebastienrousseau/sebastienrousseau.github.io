@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # المصدر المفتوح وFINOS وحزمة CIB سحابية الأصل
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="ملخص المقال">
 <p class="post-lead-tldr"><strong>الخلاصة.</strong> Morgan Stanley وJPMorgan وCiti تُضاعف رهانها على FINOS وLinux Foundation. حزمة CIB سحابية الأصل في 2026 مفتوحة افتراضياً — مكتبات MIT وApache 2.0 وBSD-3-Clause، وزمن تشغيل CNCF، وفواتير مواد SBOMs، وإثبات SLSA، وقطع أثرية موقَّعة بـ sigstore — ومكتبات Rust كـ noyalib وhttp-handle وhsh وKyberLib تكشف كيف تبدو هذه الحزمة في الشيفرة.</p>
 <p class="post-lead-heading"><strong>أبرز النقاط</strong></p>
 <ul class="post-lead-takeaways">
@@ -178,6 +178,6 @@ site_software: "Static Site Generator, Rust"
 المصدر المفتوح لم يعد سؤال التحديث. هو إجابة التحديث.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="صورة لـ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي كبير يكتب في الذكاء الاصطناعي التطبيقي، والانتقال إلى ISO 20022، وتشفير ما بعد الكم للخدمات المالية، والتحوُّل البنيوي للمدفوعات بالجملة.</span><span class="author-credentials">أكثر من 20 عاماً عبر HSBC Commercial &amp; Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="صورة لـ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي كبير يكتب في الذكاء الاصطناعي التطبيقي، والانتقال إلى ISO 20022، وتشفير ما بعد الكم للخدمات المالية، والتحوُّل البنيوي للمدفوعات بالجملة.</span><span class="author-credentials">أكثر من 20 عاماً عبر HSBC Commercial &amp; Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-06-28">2026-06-28</time>.</p>
 <!-- enrich-end -->

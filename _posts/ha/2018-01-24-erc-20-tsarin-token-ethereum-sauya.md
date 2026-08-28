@@ -101,7 +101,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Takaitaccen bayani na labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> ERC-20: Token na Ethereum ERC-20 shine mafi yawan nau'in token da ake amfani da shi a blockchain na Ethereum, kuma galibi ana kiransa kwangilar dijital ta smart contract.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan da aka koya</strong></p>
 <ul class="post-lead-takeaways">

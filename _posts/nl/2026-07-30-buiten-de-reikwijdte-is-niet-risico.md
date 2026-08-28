@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> De herziene modelrisicorichtlijn van 17 april 2026 (SR 26-2 / OCC Bulletin 2026-13) vervangt het kader uit 2011 en sluit generatieve en agentische AI uitdrukkelijk uit, met een toegezegde consultatie. Die uitsluiting is een beslissing over de reikwijdte van <em>deze</em> toezichtsrichtlijn, geen goedkeuring van de toezichthouder: hetzelfde model valt nog altijd onder risico van derden, operationeel risico, consumentenbescherming en non-discriminatoire kredietverlening. Intussen is het Britse SS1/23 technologieneutraal en blijft het die modellen wél binnenhalen. Een groepsbank draait nu één model onder twee antwoorden, en het eerlijke antwoord is om te sturen op de strengste van de twee.</p>
 <p class="post-lead-heading"><strong>Belangrijkste conclusies</strong></p>
 <ul class="post-lead-takeaways">

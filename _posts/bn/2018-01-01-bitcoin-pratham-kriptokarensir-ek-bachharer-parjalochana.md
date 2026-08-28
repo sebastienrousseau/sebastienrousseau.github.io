@@ -99,7 +99,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="নিবন্ধের সারাংশ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে (TL;DR).</strong> Bitcoin: একটি পিয়ার-টু-পিয়ার ইলেকট্রনিক ক্যাশ সিস্টেম (P2P ECS) যা মানুষের অনলাইন লেনদেনের পদ্ধতিকে বৈপ্লবিকভাবে পরিবর্তন করার সম্ভাবনা রাখে।</p>
 <p class="post-lead-heading"><strong>মূল বক্তব্য</strong></p>
 <ul class="post-lead-takeaways">

@@ -87,7 +87,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 # ดัชนี Agentic AI สำหรับธนาคารในปี 2026: การวัด Autonomy
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="บทสรุปบทความ">
+<aside class="post-lead" aria-label="สรุปบทความ">
 <p class="post-lead-tldr"><strong>สรุปสั้น.</strong> Agentic AI (เอไอเชิงเอเจนต์) ในวงการธนาคารกลายเป็นโครงสร้างพื้นฐานเชิงปฏิบัติการในปี 2026: สถาบันการเงิน 52% ใช้งานแล้ว แต่มีเพียง 14% เท่านั้นที่เรียกมันว่าเปลี่ยนเกม ดัชนีนี้ปิดช่องว่างดังกล่าวด้วยการให้คะแนนความพร้อมใน 6 มิติ ได้แก่ ระดับความเป็นอิสระ สถาปัตยกรรมการกำกับดูแล หลักฐานเชิงกำกับ ความรับผิดชอบเชิงเศรษฐกิจ ความพร้อมขององค์กร และความสอดคล้องเชิงกำกับระดับโลก โดยปรับเทียบกับ SR 11-7, SS1/23, EU AI Act และแนวปฏิบัติที่ดี (sound practices) ของ FSB เดือนมิถุนายน 2026</p>
 <p class="post-lead-heading"><strong>ประเด็นสำคัญ</strong></p>
 <ul class="post-lead-takeaways">

@@ -107,7 +107,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Takaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>A takaice (TL;DR).</strong> Gano RustLogs (RLG), ɗakin karatu mai sassauci na logging don Rust tare da tsarin log da aka tsara, logging na asynchronous, da zaɓuɓɓuka masu yawa na keɓantawa. </p>
 <p class="post-lead-heading"><strong>Muhimman bayanai</strong></p>
 <ul class="post-lead-takeaways">

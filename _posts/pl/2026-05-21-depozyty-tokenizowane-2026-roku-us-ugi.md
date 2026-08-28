@@ -89,7 +89,7 @@ excerpt: "W 2026 roku usługi depozytów tokenizowanych przechodzą z fazy bada�
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>W skrócie.</strong> W 2026 roku usługi depozytów tokenizowanych przechodzą z fazy badań do pilotów bankowych i pierwszych propozycji klienckich. Status pozostaje przedskalowy, lecz kierunek jest jasny: pieniądz banków komercyjnych jest dostosowywany do rozrachunku programowalnego, cyfrowych portfeli, interoperacyjności ze stablecoinami oraz tokenizowanych rynków kapitałowych.</p>
 <p class="post-lead-heading"><strong>Najważniejsze wnioski</strong></p>
 <ul class="post-lead-takeaways">

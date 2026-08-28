@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Taƙaitaccen bayanin labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>A taƙaice.</strong> Dokar Bayanai ta Tarayyar Turai tana cire kuɗaɗen sauya mai bayar da girgije a hankali, kuma ta haramta su gaba ɗaya daga <strong>12 ga Janairu 2027</strong>, har da fitar da bayanai. Tun <strong>12 ga Satumba 2025</strong>, abokan hulɗa suna da hakkin doka na sauya mai bayarwa da samun haɗin kai na fasaha wajen mayar da bayanansu; tsarin riƙon ƙwarya ya bar masu bayarwa su karɓi <em>kuɗaɗen da ke da alaƙa kai tsaye da sauyawa</em> kaɗai, ba tare da riba ba. <strong>Sashe na 28(8)</strong> na DORA ya riga ya buƙaci dabarun ficewa ga hidimomin fasahar sadarwa da ke tallafa wa muhimman ayyuka ko masu mahimmanci, kuma ya buƙaci waɗannan shirye-shirye su kasance cikakku, an rubuta su, kuma <strong>an gwada su yadda ya kamata</strong>. Kuɗi shi ne dalilin da ya sa gwaji bai taɓa faruwa ba. A Janairu wannan dalili zai ƙare, kuma gibin da ke tsakanin shirin da aka rubuta da shirin da aka tabbatar zai zama dukan haɗarin.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan da za a fahimta</strong></p>
 <ul class="post-lead-takeaways">

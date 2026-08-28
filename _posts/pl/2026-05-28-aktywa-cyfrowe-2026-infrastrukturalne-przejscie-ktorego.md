@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Aktywa cyfrowe w 2026: infrastrukturalne przejscie, ktorego banki nie odlozą
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Podsumowanie artykulu">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Aktywa cyfrowe nie sa juz zakladem innowacyjnym — to pytanie o architekture rozliczenia, przechowywania i bilansu. Krypto to klasa aktywow o wartosci ~3 biliony dolarow, stablecoiny ~300 mld dolarow, stokenizowane RWA urosly w 2025 roku o ~300%. Zadanie banku w 2026 to projekt infrastruktury w warunkach strukturalnej niepewnosci.</p>
 <p class="post-lead-heading"><strong>Kluczowe wnioski</strong></p>
 <ul class="post-lead-takeaways">

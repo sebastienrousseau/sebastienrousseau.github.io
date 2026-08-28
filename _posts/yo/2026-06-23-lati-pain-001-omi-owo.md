@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Láti Pain.001 sí Omi Owó Tí A Lè Ṣàṣàlọ́ṣẹ́: ISO 20022 gẹ́gẹ́ bí Ètò Iṣan Ara Aládàáṣiṣẹ́ ti Ìṣúra ní 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> ISO 20022 kì í ṣe iṣẹ́ ìṣílọ́ mọ́. Ní 2026 òun ni àsìkò data tí ó wà lábẹ́ omi owó tí a lè ṣàṣàlọ́ṣẹ́, ìṣúra aṣojú, àti ìpadàrọ́pò SWIFT MT/MX ti Oṣù Kọkànlá 2026 tí ó fẹ́rẹ̀ẹ́ tó ìdajì àwọn báńkì kò tí ì sẹ́tán fún.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
@@ -250,6 +250,6 @@ RedCompass Labs (2025). *What now? ISO 20022 deadlines in 2026 onwards*. Wà ní
 SWIFT (2024). *Cross-Border Payments and Reporting Plus (CBPR+) usage guidelines*. Wà ní: [https://www.swift.com/standards/iso-20022/iso-20022-programme](https://www.swift.com/standards/iso-20022/iso-20022-programme "SWIFT CBPR+ usage guidelines")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa olùkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ báńkì àgbà tí ó ń kọ̀wé lórí AI tí a fi sí ìwúlò, ìṣílọ́ ISO 20022, cryptography lẹ́yìn-quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ìpilẹ̀ ti àwọn ìsanwó olówó.</span><span class="author-credentials">Ó ju ọdún 20 lọ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profáìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ báńkì àgbà tí ó ń kọ̀wé lórí AI tí a fi sí ìwúlò, ìṣílọ́ ISO 20022, cryptography lẹ́yìn-quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ìpilẹ̀ ti àwọn ìsanwó olówó.</span><span class="author-credentials">Ó ju ọdún 20 lọ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profáìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò ìkẹhìn <time datetime="2026-06-23">2026-06-23</time>.</p>
 <!-- enrich-end -->

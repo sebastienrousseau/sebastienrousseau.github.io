@@ -107,7 +107,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Rezumatul articolului">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Cunoaște noul Asistent multilingv al Mistral AI. O IA avansată care înțelege și răspunde în mai multe limbi, într-o singură conversație și în timp real.</p>
 <p class="post-lead-heading"><strong>Idei principale</strong></p>
 <ul class="post-lead-takeaways">

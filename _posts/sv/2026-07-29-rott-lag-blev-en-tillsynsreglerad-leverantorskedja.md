@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>Sammanfattning.</strong> DORA:s TLPT-regim omvandlar arbetet med rött lag (red team) från en frivillig säkerhetsövning till en tillsynsreglerad, bevisproducerande skyldighet med treårig takt, för de enheter som en behörig myndighet pekar ut. De bindande begränsningarna är inte tekniska. De ligger på utbudssidan: Article 27 kräver testleverantörer som är ackrediterade eller bundna av uppförandekoder, med oberoende bestyrkande och ansvarsförsäkring för yrkesutövare, tillåter interna röda lag i högst två av var tredje cykel och kräver att leverantören av hotunderrättelser är extern varje enskild gång. Kritiska funktioner som körs hos tredjepartsleverantörer drar in dessa leverantörer i testet.</p>
 <p class="post-lead-heading"><strong>Viktigaste slutsatserna</strong></p>
 <ul class="post-lead-takeaways">

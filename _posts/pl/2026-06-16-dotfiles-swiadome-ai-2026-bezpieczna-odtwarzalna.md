@@ -106,7 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Podsumowanie artykułu">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>W skrócie.</strong> Stacja robocza programisty nie jest już zwykłym endpointem; jest aktywnym uczestnikiem łańcucha dostaw oprogramowania i bezpośrednim interfejsem lokalnej płaszczyzny sterowania AI. Asystenci AI w terminalu i serwery <a href="https://modelcontextprotocol.io">Model Context Protocol (MCP)</a> wykonują lokalne polecenia powłoki, przeglądają repozytoria i bezpośrednio odczytują wrażliwe pliki konfiguracyjne. <a href="https://github.com/sebastienrousseau/dotfiles">Dotfiles Sebastiena Rousseau</a> to deklaratywny framework open source budujący bezpieczne, odtwarzalne stacje robocze w macOS, Linux i Windows Subsystem for Linux (WSL) — integrujący <a href="https://www.chezmoi.io/">Chezmoi</a>, <a href="https://github.com/getsops/sops">SOPS, age</a> oraz proweniencję wydań SLSA Level 3 dla izolacji sekretów bezpiecznej pamięciowo i ograniczonych ścieżek wykonania lokalnych modeli AI.</p>
 <p class="post-lead-heading"><strong>Wnioski kluczowe</strong></p>
 <ul class="post-lead-takeaways">

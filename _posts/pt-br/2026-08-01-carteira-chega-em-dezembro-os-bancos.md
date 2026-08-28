@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Resumo do artigo">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> O Regulation (EU) 2024/1183 reescreveu o eIDAS. Duas datas importam: até <strong>24 de dezembro de 2026</strong> cada Estado-Membro deve fornecer ao menos uma European Digital Identity Wallet, e até <strong>24 de dezembro de 2027</strong> as partes confiantes de grande e médio porte nos setores listados — entre eles bancos e serviços financeiros — devem aceitá-la para autenticação forte do usuário quando o usuário pedir. O papel do banco muda de emissor de credencial para parte confiante registrada, e o registro é uma precondição jurídica, não técnica. A engenharia é banal. As consequências de governança, responsabilidade civil e comprovação de identidade não são.</p>
 <p class="post-lead-heading"><strong>Principais conclusões</strong></p>
 <ul class="post-lead-takeaways">

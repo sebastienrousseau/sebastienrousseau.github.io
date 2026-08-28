@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Agentowy skarb 2026: od Indeksu autonomicznego skarbu do produkcyjnych co-pilotów
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Agentowe co-piloty skarbu przechodzą w 2026 z kontrolowanych pilotaży do produkcji. Wzorzec powtarza się w skarbach CIB: agenci czytają dane gotówkowe w ISO 20022, wywołują ograniczone narzędzia i rebalansują płynność w pasmach polityki — z kontrolami SR 11-7, DORA i EU AI Act wokół nich.</p>
 <p class="post-lead-heading"><strong>Kluczowe wnioski</strong></p>
 <ul class="post-lead-takeaways">

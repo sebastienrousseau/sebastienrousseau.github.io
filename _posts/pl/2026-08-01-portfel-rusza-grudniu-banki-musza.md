@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>W skrócie.</strong> Regulation (EU) 2024/1183 przepisało eIDAS. Liczą się dwie daty: do <strong>24 grudnia 2026 r.</strong> każde państwo członkowskie musi udostępnić co najmniej jeden europejski portfel tożsamości cyfrowej, a do <strong>24 grudnia 2027 r.</strong> duże i średnie strony ufające z wymienionych sektorów — w tym bankowości i usług finansowych — muszą go przyjmować do silnego uwierzytelniania użytkownika, gdy użytkownik o to poprosi. Rola banku zmienia się z wystawcy poświadczeń w zarejestrowaną stronę ufającą, a rejestracja jest warunkiem prawnym, nie technicznym. Inżynieria jest tu bez fajerwerków. Konsekwencje w obszarze ładu korporacyjnego, odpowiedzialności i potwierdzania tożsamości — już nie.</p>
 <p class="post-lead-heading"><strong>Najważniejsze wnioski</strong></p>
 <ul class="post-lead-takeaways">

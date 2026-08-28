@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Tóm tắt bài viết">
 <p class="post-lead-tldr"><strong>Tóm tắt nhanh.</strong> Regulation (EU) 2024/1183 đã viết lại eIDAS. Hai mốc thời gian đáng lưu ý: trước <strong>24 tháng 12 năm 2026</strong>, mỗi quốc gia thành viên phải cung cấp ít nhất một Ví Danh tính Số châu Âu, và trước <strong>24 tháng 12 năm 2027</strong>, các bên tin cậy quy mô lớn và vừa thuộc những ngành được liệt kê — trong đó có ngân hàng và dịch vụ tài chính — phải chấp nhận ví này cho mục đích xác thực người dùng mạnh khi người dùng yêu cầu. Vai trò của ngân hàng chuyển từ tổ chức phát hành chứng danh sang bên tin cậy đã đăng ký, và việc đăng ký là điều kiện tiên quyết về pháp lý, không phải về kỹ thuật. Phần kỹ thuật không có gì đặc biệt. Hệ quả về quản trị, trách nhiệm pháp lý và định danh thì có.</p>
 <p class="post-lead-heading"><strong>Những điểm chính</strong></p>
 <ul class="post-lead-takeaways">

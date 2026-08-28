@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="लेख सारांश">
 <p class="post-lead-tldr"><strong>संक्षेप में।</strong> FiDA अधिक एंडपॉइंट वाला PSD2 नहीं है। तीन संरचनात्मक बदलाव अनुपालन का अर्थ ही बदल देते हैं: पहुँच अब उस इंटरफ़ेस से नहीं, बल्कि उस योजना से नियंत्रित होती है जिसमें आपको शामिल होना पड़ेगा; डेटा धारक उचित प्रतिपूर्ति माँग सकते हैं, इसलिए पहुँच एक निःशुल्क कर्तव्य के बजाय सशुल्क उत्पाद बन जाती है; और कार्यक्षेत्र बंधक ऋण, बचत, निवेश, पेंशन और गैर-जीवन बीमा तक पहुँचता है — यानी वे उत्पाद जिन पर बैंक वास्तव में कमाते हैं। पाठ अभी त्रिपक्षीय वार्ता (trilogue) में है, लेकिन जो योजनाएँ मानक तय करेंगी वे अभी डिज़ाइन हो रही हैं, और असली प्रभाव वहीं है।</p>
 <p class="post-lead-heading"><strong>मुख्य बातें</strong></p>
 <ul class="post-lead-takeaways">

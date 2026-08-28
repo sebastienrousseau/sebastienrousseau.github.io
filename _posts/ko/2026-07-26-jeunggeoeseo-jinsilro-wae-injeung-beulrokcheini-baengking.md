@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **불변은 신뢰와 같지 않습니다.** 홀세일 뱅킹이 실시간 결제와 확률론적 AI로 이동하면서, 무엇이 진실인지를 결정하는 원장은 은행이 여전히 인증하지 못하는 유일한 계층이 되었습니다. 은행은 Basel III 하에서 법인을, ISO 27001 하에서 클라우드를, ISO 42001 하에서 자사의 AI를 인증하지만, 분산 원장과 그 거버넌스, 합의, 암호, 스마트 컨트랙트는 벤더별 가정에 맡겨져 있습니다. 이 보고서는 그 수탁 책임의 공백을 메우려면 ISO/IEC TC 307 지침에서 규범적 보증으로 나아가야 한다고 주장합니다. 즉, 원장을 5단계 인증 블록체인 지수에 대해 채점하여 엔지니어링 지표를 이사회가 감사할 수 있고 DORA로 방어 가능한 진실로 바꾸는 것입니다.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="글 요약">
+<aside class="post-lead" aria-label="기사 요약">
 <p class="post-lead-tldr"><strong>요약.</strong> 은행은 법인, 클라우드, 그리고 자사의 AI는 인증하지만, 점점 더 무엇이 진실인지를 결정하는 원장은 인증하지 못합니다. ISO/IEC TC 307은 보증이 아니라 지침을 제공합니다. 5단계 인증 블록체인 지수는 원장 거버넌스, 합의 무결성, 신원과 암호, 스마트 컨트랙트 보증, 관측성을 역량 성숙도 모델에 대해 채점하여, 수탁 책임의 공백을 메우고 확률론적 AI에 결정론적 감사 스파인을 제공합니다.</p>
 <p class="post-lead-heading"><strong>핵심 요점</strong></p>
 <ul class="post-lead-takeaways">

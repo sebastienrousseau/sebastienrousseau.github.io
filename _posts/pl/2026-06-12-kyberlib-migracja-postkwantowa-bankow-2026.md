@@ -90,7 +90,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Podsumowanie artykułu">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>W skrócie.</strong> Infrastruktura bankowa w 2026 roku stoi wobec zagrożenia systemowego o znanym punkcie końcowym: obliczenia w skali kwantowej złamią wymianę kluczy RSA i ECC, która chroni dzisiejszy ruch w tranzycie. Standardy federalne i dokumenty nadzorcze podniosły świadomość; wykonanie techniczne pozostaje zamknięte w silosach. <a href="https://github.com/sebastienrousseau/kyberlib">KyberLib</a> to open source'owy plan inżynierski, który przenosi narrację postkwantową do konkretnego, bezpiecznego pamięciowo kodu Rust — implementując ustandaryzowany przez NIST ML-KEM (FIPS 203) za kryptoagilnymi granicami abstrakcji, tak aby instytucje mogły zmodernizować bezpieczeństwo transportu i enkapsulację kluczy, zanim ataki „Store Now, Decrypt Later" dosięgną ich archiwów.</p>
 <p class="post-lead-heading"><strong>Wnioski kluczowe</strong></p>
 <ul class="post-lead-takeaways">

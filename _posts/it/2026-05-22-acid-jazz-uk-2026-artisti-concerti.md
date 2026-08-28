@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Il Rinnovamento dell’Acid Jazz nel Regno Unito: Artisti, Concerti, Album 2026 e il Ritorno della Cultura Live Guidata dal Groove
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Sommario dell’articolo">
+<aside class="post-lead" aria-label="Sintesi dell'articolo">
 <p class="post-lead-tldr"><strong>In sintesi.</strong> Il rinnovamento dell’acid jazz nel Regno Unito nel 2026 non è nostalgia: è un ecosistema vivo in cui Acid Jazz Records, artisti di prima generazione, festival jazz funk e musicisti più giovani orientati al groove sono tutti attivi contemporaneamente.</p>
 <p class="post-lead-heading"><strong>Punti chiave</strong></p>
 <ul class="post-lead-takeaways">
@@ -231,6 +231,6 @@ Il collegamento è il groove, non la classificazione rigida dei generi. Festival
 - Mostly Jazz Funk & Soul Festival, (2026). [Mostly Jazz Funk & Soul Festival 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
 - Marlbank, (2026). [I migliori album jazz britannici del 2026 finora ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "I migliori album jazz britannici del 2026 finora").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Informazioni sull’autore"><img alt="Ritratto di Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist, scrive di IA applicata, migrazione a ISO 20022, crittografia post-quantum per i servizi finanziari e trasformazione strutturale dei pagamenti wholesale.</span><span class="author-credentials">Oltre 20 anni in HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profilo completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Informazioni sull'autore"><img alt="Ritratto di Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist, scrive di IA applicata, migrazione a ISO 20022, crittografia post-quantum per i servizi finanziari e trasformazione strutturale dei pagamenti wholesale.</span><span class="author-credentials">Oltre 20 anni in HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profilo completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ultima revisione <time datetime="2026-05-22">2026-05-22</time>.</p>
 <!-- enrich-end -->

@@ -107,7 +107,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> ফুলি হোমোমরফিক এনক্রিপশন কীভাবে ব্যাংকিং ও আর্থিক শিল্পে ডেটা নিরাপত্তায় বিপ্লব আনছে এবং কোয়ান্টাম কম্পিউটিং হুমকির বিরুদ্ধে গোপনীয়তা নিশ্চিত করছে তা অন্বেষণ করুন।</p>
 <p class="post-lead-heading"><strong>মূল শিক্ষা</strong></p>
 <ul class="post-lead-takeaways">

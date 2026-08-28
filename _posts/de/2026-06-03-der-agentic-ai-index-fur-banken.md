@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Der Agentic-AI-Index für Banken 2026: Autonomie, Governance, Auditierbarkeit und Geschäftsauswirkungen
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Zusammenfassung des Artikels">
+<aside class="post-lead" aria-label="Artikelzusammenfassung">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Eine Blaupause zur Messung der Agentic-AI-Reife in Tier-1-Banken entlang von sechs Dimensionen: Autonomiestufe, API-Berechtigungen, deterministische Schutzmechanismen, Human-in-the-Loop-Abdeckung, Audit-Vollständigkeit und Unit Economics. Klassifizieren Sie Agenten nach dem, was sie tun dürfen, nicht nach der Cleverness des zugrunde liegenden Modells. Behandeln Sie jeden produktiven Agenten ab Tag eins als SR-11-7- / SS1/23-Modell.</p>
 <p class="post-lead-heading"><strong>Wichtige Erkenntnisse</strong></p>
 <ul class="post-lead-takeaways">

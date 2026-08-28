@@ -94,7 +94,7 @@ last_reviewed: "2026-05-24"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="প্রবন্ধের সারাংশ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে.</strong> <a href="https://github.com/sebastienrousseau/libmake">LibMake</a> একটি open-source Rust CLI tool (<code>cargo install libmake</code>) যা CLI flag বা versioned config file (TOML, YAML, JSON বা CSV) থেকে production-ready library scaffold তৈরি করে। এক invocation-এ Cargo.toml, src/lib.rs, tests/, benches/ এবং GitHub Actions CI workflow-সহ সম্পূর্ণ project structure তৈরি হয়।</p>
 <p class="post-lead-heading"><strong>মূল বিষয়াবলি</strong></p>
 <ul class="post-lead-takeaways">

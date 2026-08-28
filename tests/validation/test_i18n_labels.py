@@ -23,6 +23,7 @@ from pathlib import Path as _Path
 
 _sys.path.insert(0, str(_Path(__file__).resolve().parents[2] / "scripts" / "lib"))
 
+import re
 import sys
 from pathlib import Path
 
@@ -31,6 +32,47 @@ import _lang_registry  # type: ignore[import-not-found]
 
 ROOT = Path(__file__).resolve().parents[2]
 I18N_DIR = ROOT / "_data" / "i18n"
+POSTS = ROOT / "_posts"
+
+# Article furniture whose accessible name comes from labels.json. These sit
+# inside <main>, so test_lang_no_leakage.py deliberately does not see them —
+# it scopes to page chrome so quoted English in prose is not flagged. That
+# left 652 furniture labels across all 34 locales reading "Article summary"
+# or "About the author" to a screen reader on a translated page, plus variant
+# drift where a locale had settled on two different wordings.
+_FURNITURE = {
+    "post-lead": (
+        "Article summary",
+        re.compile(r'<aside class="post-lead" aria-label="([^"]+)"'),
+    ),
+    "author-card": (
+        "About the author",
+        re.compile(r'<aside class="author-card" aria-label="([^"]+)"'),
+    ),
+}
+
+
+def check_furniture_labels() -> list[str]:
+    """Every furniture aria-label must be its locale's labels.json value."""
+    problems: list[str] = []
+    for directory in sorted(POSTS.iterdir()):
+        if not directory.is_dir() or directory.name.startswith((".", "_")):
+            continue
+        try:
+            labels = _lang_registry.load_labels(directory.name)
+        except _lang_registry.LanguageError:
+            continue
+        for post in sorted(directory.glob("*.md")):
+            body = post.read_text(encoding="utf-8")
+            for component, (key, pattern) in _FURNITURE.items():
+                want = labels.get(key)
+                problems.extend(
+                    f"[{directory.name}] {post.name}: {component} aria-label is "
+                    f"{found!r}, expected {want!r}"
+                    for found in pattern.findall(body)
+                    if want is not None and found != want
+                )
+    return problems
 
 
 def check_language(code: str, reference_keys: set[str]) -> list[str]:
@@ -81,6 +123,7 @@ def main() -> int:
     all_problems: list[str] = []
     for code in lang_dirs:
         all_problems.extend(check_language(code, reference_keys))
+    all_problems.extend(check_furniture_labels())
 
     if all_problems:
         print("body-labels parity defects:", file=sys.stderr)

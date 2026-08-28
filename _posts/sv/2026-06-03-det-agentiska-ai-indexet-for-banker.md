@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Det agentiska AI-indexet för banker 2026: Att mäta autonomi, styrning, revisionsbarhet och affärspåverkan
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>Sammanfattning.</strong> En ritning för att mäta agentisk AI-mognad i Tier-1-banker längs sex dimensioner: autonominivå, API-behörigheter, deterministiska skyddsmekanismer, täckning av människa i loopen, revisionsfullständighet och enhetsekonomi. Klassificera agenter efter vad de får göra, inte efter hur smart den underliggande modellen är. Behandla varje produktionsagent som en SR 11-7 / SS1/23-modell från dag ett.</p>
 <p class="post-lead-heading"><strong>Viktiga slutsatser</strong></p>
 <ul class="post-lead-takeaways">

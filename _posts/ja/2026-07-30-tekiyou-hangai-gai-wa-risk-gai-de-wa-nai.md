@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> 2026年4月17日の改定モデルリスク監督指針(SR 26-2 / OCC Bulletin 2026-13)は、2011年のフレームワークを廃止して置き換え、生成AIとエージェントAIを明示的に除外したうえで、意見募集を予告しました。この除外は<em>本</em>監督指針の適用範囲に関する判断であって、監督上の承認ではありません。同じモデルは依然として第三者リスク、オペレーショナルリスク、消費者保護、公正な与信の内側にあります。一方で英国のSS1/23は技術中立であり、それらのモデルを引き続き取り込んでいます。グループ銀行はいま、ひとつのモデルを2つの答えのもとで運用しており、誠実な対応は厳しい方に合わせて統制することです。</p>
 <p class="post-lead-heading"><strong>要点</strong></p>
 <ul class="post-lead-takeaways">

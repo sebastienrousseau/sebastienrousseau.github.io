@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Àwọn Ọjà Ti Olówó-Ńlá Dijítà ní UK: Gilts Tí A Ṣe Tókènì, Ìpinnu Ìsanwó, àti Ipa Akọni Tuntun
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> UK ti yan Akọni Àwọn Ọjà Ti Olówó-Ńlá Dijítà (Wholesale Digital Markets Champion). Iṣẹ́ náà kìí ṣe ti ayẹyẹ. Ó jẹ́ ìpele alákojọpọ̀ tó le koko láàrín HM Treasury, FCA, àti Bank of England (BoE) — ipa tí a ṣe láti fipá mú ìbáraẹnisọ̀rọ̀ ẹ̀ka aládàáni nínú Digital Securities Sandbox (DSS). Gilts tí a ṣe tókènì ń ṣe ìpinnu ìbéèrè yìí ní àkọ́kọ́: HQLA lórí DLT, atomic lòdì sí owó tí a ṣe tókènì, pẹ̀lú repo nínú ọjọ́ gẹ́gẹ́ bí èrè kíákíá.</p>
 <p class="post-lead-heading"><strong>Àwọn àyọkà pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

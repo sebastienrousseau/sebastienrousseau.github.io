@@ -107,7 +107,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="নিবন্ধের সারাংশ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Mistral AI-এর নতুন বহুভাষিক সহকারীর সাথে পরিচিত হন। একটি উন্নত AI যা একটি কথোপকথনে একাধিক ভাষায় বুঝতে ও সাড়া দিতে পারে, রিয়েল-টাইমে।</p>
 <p class="post-lead-heading"><strong>মূল শিক্ষা সমূহ</strong></p>
 <ul class="post-lead-takeaways">

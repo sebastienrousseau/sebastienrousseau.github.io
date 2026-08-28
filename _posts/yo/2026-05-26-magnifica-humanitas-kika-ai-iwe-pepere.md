@@ -89,7 +89,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>Lálàkúrú.</strong> Ní 25 May 2026, Póòpù Leo XIV ṣe àfilọ́lẹ̀ <em>Magnifica Humanitas</em>, ìwé pẹpẹrẹ póòpù àkọ́kọ́ lórí AI. Kíkà láti inú ilé-iṣẹ́ ìmọ̀-ẹ̀rọ gẹ́gẹ́ bí ìlànà ìṣe-ìṣètò dípò gẹ́gẹ́ bí ẹ̀kọ́, ó ń tún gbogbo ìbẹ̀rù àwùjọ tí ó tẹ̀lé ọkọ̀-ojú-irin, ọkọ̀-ayọ́kẹ́lẹ́, agbára iparun, àti ínítánẹ́ẹ̀tì sọ — ó sì parí, ní òdodo, lórí ìrètí.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

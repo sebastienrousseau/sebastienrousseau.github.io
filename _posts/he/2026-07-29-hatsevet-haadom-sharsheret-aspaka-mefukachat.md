@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="תקציר המאמר">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> משטר ה-TLPT של DORA ממיר את פעילות הצוות האדום מתרגיל אבטחה וולונטרי לחובה מפוקחת ומייצרת ראיות, בתדירות של שלוש שנים, עבור גופים שהרשות המוסמכת מייעדת לכך. האילוצים הכובלים אינם טכניים. הם נמצאים בצד ההיצע: Article 27 מחייב ספקי בדיקות מוסמכים או מחויבים לקוד אתי, נושאי אישור ביקורת עצמאי וביטוח אחריות מקצועית; מתיר צוותים אדומים פנימיים בשניים מכל שלושה מחזורים לכל היותר; ומחייב שספק מודיעין האיומים יהיה חיצוני בכל פעם מחדש. פונקציות קריטיות הרצות אצל ספקי צד שלישי גוררות את אותם ספקים אל תוך הבדיקה.</p>
 <p class="post-lead-heading"><strong>נקודות מפתח</strong></p>
 <ul class="post-lead-takeaways">

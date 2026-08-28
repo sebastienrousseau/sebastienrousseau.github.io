@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> 最初のポスト量子期限は移行ではなく棚卸しです。NCSCは2031年および2035年の移行マイルストーンに先立ち、2028年までに暗号依存関係の全体像を把握することを求めています。銀行はDORAがすでに保持を義務づけている資産台帳からこれを作れません。台帳はサーバー、所有者、重要度を記録する一方で、アルゴリズム、鍵長、ライブラリ、証明書の有効期限を記録しないからです。CycloneDXに統合されECMA-424として標準化された暗号部品表(CBOM)が、欠けているデータモデルです。これを維持される統制ではなく一度限りのPQC用スプレッドシートとして扱うことが、2031年のマイルストーンを失わせる誤りです。</p>
 <p class="post-lead-heading"><strong>要点</strong></p>
 <ul class="post-lead-takeaways">

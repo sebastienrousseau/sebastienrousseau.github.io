@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # UK-এ অ্যাসিড জ্যাজের পুনরুজ্জীবন: ২০২৬-এর শিল্পী, কনসার্ট, অ্যালবাম এবং গ্রুভ-নির্ভর লাইভ সংস্কৃতির প্রত্যাবর্তন
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="নিবন্ধ সারসংক্ষেপ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে।</strong> ২০২৬ সালে UK অ্যাসিড জ্যাজের পুনরুজ্জীবন নস্টালজিয়া নয় — এটি একটি সক্রিয় পরিবেশতন্ত্র, যেখানে Acid Jazz Records, প্রথম প্রজন্মের শিল্পী, জ্যাজ-ফাঙ্ক উৎসব এবং তরুণ গ্রুভ-কেন্দ্রিক সংগীতশিল্পীরা একযোগে সক্রিয়।</p>
 <p class="post-lead-heading"><strong>মূল বিষয়সমূহ</strong></p>
 <ul class="post-lead-takeaways">

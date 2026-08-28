@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # العملات المستقرة مقابل الودائع المرمَّزة في 2026: ما الذي يجب على البنوك الدفاع عنه فعلاً
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="ملخّص المقال">
+<aside class="post-lead" aria-label="ملخص المقال">
 <p class="post-lead-tldr"><strong>الخلاصة.</strong> تُقدِّم العملات المستقرة والودائع المرمَّزة في 2026 تسويةً قابلةً للبرمجة، غير أنها تجلس على ميزانيات عمومية مختلفة، وتُمثِّل مطالبات قانونية مختلفة، وملامح سيولة مختلفة، ونماذج ثقة مختلفة. والبنوك عند منعطف يتعرّض فيه امتياز الودائع ودور التسوية والعلامة المنظَّمة لضغط متزامن من المُصدِرين من القطاع الخاص ومن البدائل المُجازة تنظيمياً. والموقف القابل للدفاع ليس «ابنِ واحداً وتجاهل الآخر»، بل انضباط التصميم: بنيةُ نموذجٍ نقدي واضحة تُحدِّد أيّ نوع رمز يحمل أيّ تدفّق عمل للعميل، وأيّ الضوابط تجري بسرعة التدفّق، وأيّ الأدلة تُنتَج قبل أن يطلبها المُشرفون.</p>
 <p class="post-lead-heading"><strong>أبرز النقاط</strong></p>
 <ul class="post-lead-takeaways">
@@ -201,6 +201,6 @@ site_software: "Static Site Generator, Rust"
 - GOV.UK، (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="نبذة عن المؤلف"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والبنية التحتية للمدفوعات، والنقد المُرمَّز، وISO 20022، والأمن ما بعد الكمومي، والخدمات المالية السحابية الأصل، والأسواق الرقمية المُنظَّمة.</span><span class="author-credentials">أكثر من 20 عاماً من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والبنية التحتية للمدفوعات، والنقد المُرمَّز، وISO 20022، والأمن ما بعد الكمومي، والخدمات المالية السحابية الأصل، والأسواق الرقمية المُنظَّمة.</span><span class="author-credentials">أكثر من 20 عاماً من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-05-26">2026-05-26</time>.</p>
 <!-- enrich-end -->

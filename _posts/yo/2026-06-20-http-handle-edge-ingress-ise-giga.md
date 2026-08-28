@@ -103,7 +103,7 @@ site_software: "Static Site Generator, Rust"
 # http-handle: Edge Ingress Ìṣẹ́ Gíga Laisi Gbára fún Bankì ní 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkópọ̀ ọrọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> http-handle jẹ faili binary Rust orísun ìṣí tí a so pọ̀ ni ìpépe tí ó rọ́pò Nginx àti Envoy ní ìbẹ̀rẹ̀ bankì. Ó pèsè awọn ìbéèrè 180,000 fún ìṣẹ́jú kan lórí awọn ìdènà ARM64 nípasẹ̀ gbigbe zero-copy <code>sendfile(2)</code> ti Linux, ṣe agbékalẹ̀ mTLS àti ìmúdájú JWT ní ìpele socket nẹ́tíwọọkì ṣáájú kí koodu ohun èlò kankan ṣiṣẹ́, dárò HTTP/2 àti HTTP/3 laifọwọ́yi nípasẹ̀ ALPN àti ó ṣe àgbékalẹ̀ awọn wíwọn OpenTelemetry ní ìpamọ́ — gbogbo rẹ̀ pẹ̀lú ọfin gbára akókò ìṣiṣẹ́ ofo ju <code>libc</code> lọ.</p>
 <p class="post-lead-heading"><strong>Àwọn ìpínlẹ̀ pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

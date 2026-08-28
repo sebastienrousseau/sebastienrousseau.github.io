@@ -103,7 +103,7 @@ site_software: "Static Site Generator, Rust"
 # Canza Markdown zuwa HTML mai Sauƙin Isa, Shirye don SEO, da Tsari tare da Rust a 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Takaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> HTML Generator mai-Rust-tsantsa ne na sarrafa Markdown zuwa HTML wanda yake tilasta WCAG 2.1 AA a lokacin gini, yana shigo da JSON-LD mai bin tsarin schema, yana nuna MathML da Mermaid SVG ta asali, kuma yana ware sarrafa a cikin sandbox na WebAssembly — yana mai da buga abubuwa zuwa wurin kula da bututun da aka kebe wanda ke tabbatar da sauƙin isa, SEO, da tsaron ICT.</p>
 <p class="post-lead-heading"><strong>Manyan abubuwan da za a ɗauka</strong></p>
 <ul class="post-lead-takeaways">

@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> FiDA to nie PSD2 z dłuższą listą endpointów. Trzy różnice strukturalne zmieniają sens zgodności: dostępem rządzi system, do którego trzeba przystąpić, a nie interfejs, który buduje się samemu; posiadacze danych mogą żądać rozsądnego wynagrodzenia, więc dostęp staje się produktem z ceną, a nie darmowym obowiązkiem; a zakres sięga kredytów hipotecznych, oszczędności, inwestycji, emerytur i ubezpieczeń innych niż na życie — produktów, na których banki faktycznie zarabiają. Tekst wciąż jest w trilogu, ale systemy, które zdefiniują standardy, projektuje się już teraz, i to tam leży dźwignia.</p>
 <p class="post-lead-heading"><strong>Najważniejsze wnioski</strong></p>
 <ul class="post-lead-takeaways">

@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Indicele AI agentic pentru bănci în 2026: măsurarea autonomiei, guvernanței, auditabilității și impactului asupra afacerii
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Rezumatul articolului">
 <p class="post-lead-tldr"><strong>Pe scurt.</strong> Un plan pentru măsurarea pregătirii AI agentic în băncile de prim rang pe șase dimensiuni: nivelul de autonomie, permisionarea API, barierele de siguranță deterministe, acoperirea om în buclă, completitudinea jurnalului de audit și economia per unitate. Clasificați agenții după ceea ce au voie să facă, nu după cât de deștept este modelul care îi animă. Tratați fiecare agent din producție ca model SR 11-7 / SS1/23 din prima zi.</p>
 <p class="post-lead-heading"><strong>Concluzii principale</strong></p>
 <ul class="post-lead-takeaways">

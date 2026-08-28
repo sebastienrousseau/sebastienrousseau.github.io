@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="บทสรุปบทความ">
+<aside class="post-lead" aria-label="สรุปบทความ">
 <p class="post-lead-tldr"><strong>สรุปสั้น</strong> ระเบียบ (EU) 2024/2847 — ระเบียบว่าด้วยความยืดหยุ่นทางไซเบอร์ — ใช้บังคับเต็มรูปแบบในวันที่ <strong>11 ธันวาคม 2570</strong> แต่<strong>หน้าที่รายงานตามมาตรา 14 เริ่มในวันที่ 11 กันยายน 2569</strong> ผู้ผลิตต้องส่ง<strong>คำเตือนล่วงหน้าภายใน 24 ชั่วโมง</strong> นับแต่ทราบถึงช่องโหว่ที่ถูกใช้ประโยชน์อย่างต่อเนื่องหรือเหตุการณ์ร้ายแรง <strong>การแจ้งฉบับสมบูรณ์ภายใน 72 ชั่วโมง</strong> และ<strong>รายงานฉบับสุดท้ายภายใน 14 วัน</strong> (ช่องโหว่) หรือ <strong>หนึ่งเดือน</strong> (เหตุการณ์) ผ่านแพลตฟอร์มรายงานรวมศูนย์ของ ENISA ไปยัง CSIRT ของรัฐที่ผู้ผลิตมีสถานประกอบการหลัก ความเสี่ยงสูงถึง <strong>15 ล้านยูโร หรือร้อยละ 2.5 ของรายได้รวมทั่วโลกต่อปี</strong> แล้วแต่จำนวนใดสูงกว่า หลัก <em>lex specialis</em> ที่ส่งต่อจาก NIS2 ไปยัง DORA ไม่ทำงานในที่นี้ เพราะ CRA ไม่ใช่ทั้ง NIS2 และไม่ใช่กฎหมายว่าด้วยนิติบุคคล</p>
 <p class="post-lead-heading"><strong>ประเด็นสำคัญ</strong></p>
 <ul class="post-lead-takeaways">

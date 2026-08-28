@@ -109,7 +109,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ṣàwárí bí IBM Qiskit àti Quantum Fourier Transform ṣe ń yí ìtúpalẹ̀ ìdásí ìgbàwọ̀ padà nínú ìṣúnmọ̀ owó, pẹ̀lú ìpéye àti ìyára tí kò tíì rí rí.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
@@ -196,7 +196,7 @@ Bí ìṣírò kuantọ́ọ̀mù ṣe ń tẹ̀síwájú láti dàgbà, gbígba
 [02]: https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html#h4-quantum "Quantum Fourier Transform (QFT)"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa olùkọ̀wé"><img alt="Àwòrán ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist tí ń kọ̀wé lórí applied AI, ISO 20022 migration, post-quantum cryptography fún àwọn iṣẹ́ ìṣúnmọ̀ owó, àti ìyípadà structural ti wholesale payments.</span><span class="author-credentials">Ọdún 20+ kárí HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaili kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist tí ń kọ̀wé lórí applied AI, ISO 20022 migration, post-quantum cryptography fún àwọn iṣẹ́ ìṣúnmọ̀ owó, àti ìyípadà structural ti wholesale payments.</span><span class="author-credentials">Ọdún 20+ kárí HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaili kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àtúnyẹ̀wò tó kẹ́yìn <time datetime="2026-06-23">2026-06-23</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Ìkàwé tí ó jọra</h2>

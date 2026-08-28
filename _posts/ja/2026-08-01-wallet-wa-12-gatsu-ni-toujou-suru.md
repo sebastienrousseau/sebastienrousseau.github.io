@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>要点。</strong> Regulation (EU) 2024/1183はeIDASを書き換えました。重要な期日は2つです。<strong>2026年12月24日</strong>までに各加盟国は少なくとも1つの欧州デジタルIDウォレットを提供しなければならず、<strong>2027年12月24日</strong>までに、列挙された業種——銀行および金融サービスを含みます——の大規模および中規模のリライング・パーティ（検証者）は、利用者が求めた場合に強力な利用者認証のためにそれを受け入れなければなりません。銀行の役割はクレデンシャルの発行者から登録されたリライング・パーティ（検証者）へと変わり、登録は技術的な前提ではなく法的な前提条件です。エンジニアリングは平凡です。ガバナンス、責任分担、本人確認の帰結はそうではありません。</p>
 <p class="post-lead-heading"><strong>重要ポイント</strong></p>
 <ul class="post-lead-takeaways">

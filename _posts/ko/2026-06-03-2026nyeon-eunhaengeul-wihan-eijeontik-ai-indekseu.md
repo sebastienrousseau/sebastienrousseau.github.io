@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # 2026년 은행을 위한 에이전틱 AI 인덱스: 자율성, 거버넌스, 감사 가능성, 비즈니스 임팩트 측정하기
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="기사 요약">
 <p class="post-lead-tldr"><strong>핵심 요약.</strong> Tier-1 은행의 에이전틱 AI 준비도를 여섯 가지 차원 — 자율성 등급, API 권한 부여, 결정론적 가드레일, 휴먼 인 더 루프 적용 범위, 감사 완전성, 단위 경제성 — 으로 측정하는 청사진입니다. 에이전트는 기반 모델의 영리함이 아니라 허용된 행동 범위로 분류해야 합니다. 모든 프로덕션 에이전트는 첫날부터 SR 11-7 / SS1/23 모델로 다루어야 합니다.</p>
 <p class="post-lead-heading"><strong>핵심 시사점</strong></p>
 <ul class="post-lead-takeaways">

@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # ওপেন সোর্স, FINOS এবং ক্লাউড-নেটিভ CIB স্ট্যাক
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="নিবন্ধের সারাংশ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে।</strong> Morgan Stanley, JPMorgan ও Citi FINOS ও Linux Foundation-এ দ্বিগুণ বিনিয়োগ করছে। ২০২৬-এ ক্লাউড-নেটিভ CIB স্ট্যাক ডিফল্টরূপে উন্মুক্ত — MIT, Apache 2.0 ও BSD-3-Clause লাইব্রেরি, CNCF রানটাইম, SBOM, SLSA প্রভেন্যান্স ও sigstore-স্বাক্ষরিত আর্টিফ্যাক্ট — এবং noyalib, http-handle, hsh ও KyberLib-এর মতো Rust লাইব্রেরি দেখায় সেই স্ট্যাক কোডে কেমন দেখায়।</p>
 <p class="post-lead-heading"><strong>মূল উপলব্ধি</strong></p>
 <ul class="post-lead-takeaways">

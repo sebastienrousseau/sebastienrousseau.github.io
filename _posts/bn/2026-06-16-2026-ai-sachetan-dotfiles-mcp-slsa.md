@@ -106,7 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="নিবন্ধ সারাংশ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে।</strong> ডেভেলপার ওয়ার্কস্টেশন আর কেবল একটি এন্ডপয়েন্ট নয়; এটি সফটওয়্যার সরবরাহ শৃঙ্খলের একজন সক্রিয় অংশীদার এবং স্থানীয় AI নিয়ন্ত্রণ-তলের সরাসরি ইন্টারফেস। টার্মিনাল-ভিত্তিক AI সহকারী ও <a href="https://modelcontextprotocol.io">Model Context Protocol (MCP)</a> সার্ভার সরাসরি স্থানীয় শেল কমান্ড চালায়, রেপো পরিদর্শন করে এবং সংবেদনশীল কনফিগারেশন ফাইল পড়ে। <a href="https://github.com/sebastienrousseau/dotfiles">Sebastien Rousseau-র Dotfiles</a> একটি ঘোষণামূলক, ওপেন-সোর্স ফ্রেমওয়ার্ক যা macOS, Linux ও Windows Subsystem for Linux (WSL) জুড়ে সুরক্ষিত, পুনরুৎপাদনযোগ্য ওয়ার্কস্টেশন তৈরি করে — মেমরি-নিরাপদ গোপন তথ্য বিচ্ছিন্নকরণ ও স্থানীয় AI মডেলের জন্য সীমাবদ্ধ নির্বাহ পথের লক্ষ্যে <a href="https://www.chezmoi.io/">Chezmoi</a>, <a href="https://github.com/getsops/sops">SOPS, age</a> এবং SLSA Level 3 বিল্ড প্রভেন্যান্সকে একত্র করে।</p>
 <p class="post-lead-heading"><strong>মূল গ্রহণযোগ্য বিষয়</strong></p>
 <ul class="post-lead-takeaways">

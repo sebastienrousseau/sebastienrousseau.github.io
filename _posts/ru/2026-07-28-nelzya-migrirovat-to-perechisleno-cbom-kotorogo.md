@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Краткое содержание статьи">
 <p class="post-lead-tldr"><strong>Кратко.</strong> Первый постквантовый срок — это выявление и инвентаризация, а не миграция: NCSC ожидает полную картину криптографических зависимостей к 2028 году, до миграционных рубежей 2031 и 2035 годов. Банки не соберут её из реестра активов, который DORA уже обязывает их вести, потому что этот реестр фиксирует сервер, владельца и критичность, но не алгоритм, длину ключа, библиотеку или срок действия сертификата. Cryptography Bill of Materials, вошедшая в состав CycloneDX и стандартизованная как ECMA-424, — это недостающая модель данных. Отношение к ней как к разовой PQC-таблице, а не как к поддерживаемому контролю, — та ошибка, которая будет стоить рубежа 2031 года.</p>
 <p class="post-lead-heading"><strong>Ключевые выводы</strong></p>
 <ul class="post-lead-takeaways">

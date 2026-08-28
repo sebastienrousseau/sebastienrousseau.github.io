@@ -99,7 +99,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Kwamfutar quantum na barazana ga cryptography na tsarin biyan kuɗi. Takarda ta EPAA ta bayyana haɗarin tsarin da gaggawar hijira zuwa PQC.</p>
 <p class="post-lead-heading"><strong>Muhimman batutuwa</strong></p>
 <ul class="post-lead-takeaways">
@@ -173,7 +173,7 @@ Sebastien Rousseau shine Babban Manajan Samfuran Dijital a HSBC Bank plc, wanda 
 [rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: Algorithm Mai Karewa a Zamanin Quantum"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki da ke rubutu a kan applied AI, ƙaurawar ISO 20022, post-quantum cryptography don ayyukan kuɗi, da kuma canjin tsari na wholesale payments.</span><span class="author-credentials">Shekaru 20+ a faɗin HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki da ke rubutu a kan applied AI, ƙaurawar ISO 20022, post-quantum cryptography don ayyukan kuɗi, da kuma canjin tsari na wholesale payments.</span><span class="author-credentials">Shekaru 20+ a faɗin HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-06-23">2026-06-23</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Karatun da ke da alaƙa</h2>

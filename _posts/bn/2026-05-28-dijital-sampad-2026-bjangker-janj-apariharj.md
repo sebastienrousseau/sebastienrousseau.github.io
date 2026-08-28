@@ -90,7 +90,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="নিবন্ধ সারসংক্ষেপ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে।</strong> ডিজিটাল সম্পদ আর উদ্ভাবন বাজি নয় — এটি সেটেলমেন্ট, কাস্টডি ও ব্যালেন্স শিট স্থাপত্যের প্রশ্ন। ক্রিপ্টো একটি ~3 ট্রিলিয়ন ডলারের সম্পদ শ্রেণি, স্টেবলকয়েন ~300 বিলিয়ন ডলার, টোকেনাইজড RWA 2025 সালে প্রায় 300% বৃদ্ধি পেয়েছে। ২০২৬-এ ব্যাংকের কাজ কাঠামোগত অনিশ্চয়তায় পরিকাঠামো ডিজাইন।</p>
 <p class="post-lead-heading"><strong>মূল উপলব্ধি</strong></p>
 <ul class="post-lead-takeaways">

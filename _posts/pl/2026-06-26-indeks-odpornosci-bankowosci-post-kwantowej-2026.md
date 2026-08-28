@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Indeks odporności bankowości post-kwantowej w 2026 roku: EO 14409, globalne terminy i powiernicza zwinność kryptograficzna
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Podsumowanie artykułu">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>W skrócie.</strong> Migracja do kryptografii post-kwantowej (PQC) przekroczyła punkt bez powrotu. Po podpisaniu amerykańskiego Executive Order 14409 w dniu 22 czerwca 2026 roku oraz wyznaczeniu przez francuskie ANSSI twardego terminu 2030 — z zatrzymaniem certyfikacji produktów bez PQC od 2027 roku — zwinność kryptograficzna nie jest już aspiracją techniczną. Jest mandatem regulacyjnym. Indeks ten przekuwa ten mandat w gotową dla zarządu kartę 0–5 obejmującą pięć audytowalnych warstw.</p>
 <p class="post-lead-heading"><strong>Kluczowe wnioski</strong></p>
 <ul class="post-lead-takeaways">

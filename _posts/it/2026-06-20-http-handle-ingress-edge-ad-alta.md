@@ -106,7 +106,7 @@ excerpt: "Il margine bancario ha un problema di dipendenze. Ogni istanza Nginx o
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Riepilogo dell'articolo">
+<aside class="post-lead" aria-label="Sintesi dell'articolo">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> http-handle è un binario Rust collegato staticamente che eroga 180.000 richieste al secondo al margine bancario con zero dipendenze runtime, validazione mTLS e JWT integrata, HTTP/2 e HTTP/3 negoziati da ALPN, e osservabilità OTLP — colmando le lacune di sicurezza e resilienza che Nginx ed Envoy lasciano aperte.</p>
 <p class="post-lead-heading"><strong>Punti chiave</strong></p>
 <ul class="post-lead-takeaways">
@@ -316,7 +316,7 @@ Internet Engineering Task Force (2014). *RFC 7301: Transport Layer Security (TLS
 OpenTelemetry Authors (2024). *OpenTelemetry Protocol Specification (OTLP)*. Available at: [https://opentelemetry.io/docs/specs/otlp/](https://opentelemetry.io/docs/specs/otlp/)
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnologo bancario senior che scrive di AI applicata, migrazione ISO 20022, crittografia post-quantistica per i servizi finanziari e la trasformazione strutturale dei pagamenti all'ingrosso.</span><span class="author-credentials">20+ anni tra HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profilo completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Informazioni sull'autore"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tecnologo bancario senior che scrive di AI applicata, migrazione ISO 20022, crittografia post-quantistica per i servizi finanziari e la trasformazione strutturale dei pagamenti all'ingrosso.</span><span class="author-credentials">20+ anni tra HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profilo completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Ultima revisione <time datetime="2026-06-20">2026-06-20</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Letture correlate</h2>

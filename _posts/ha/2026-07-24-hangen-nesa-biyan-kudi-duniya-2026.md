@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Biyan kuɗi ya ƙaura daga zama kayan aikin gudanarwa zuwa zama ainihin dabarun fasaha na banki.** A shekarar 2026 tsarin aiki na biyan kuɗi na duniya ana bayyana shi ta hanyar ƙarfi uku masu haɗuwa, kasuwancin agentic, kwararar da aka saka marar ganuwa da aiwatarwa ta lokaci-lokaci, kuma kowanne yana sake fasalta inda bankin ma'amala ke ɗaukar haɗari da samun kuɗin shiga. Wannan rahoto ya haɗa hangen nesa na 2026 na J.P. Morgan Payments, Global Payments, HSBC da The Payments Association zuwa ra'ayi guda ɗaya na tsarin aiki: yadda shugabannin G-SIB da na yanki, shugabannin baitulmali da masu tsara doka dole su bi ta kasuwancin da model ke fara shi, ruwan kuɗi mai aiki koyaushe a ƙarƙashin DORA, ledger haɗaɗɗe na tokenised a ƙarƙashin BIS Project Agorá, da ƙarshen adireshi mai tsari na SWIFT na Nuwamba 2026 mai ƙayyadadden kwanan wata.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Taƙaitawar labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Yanayin biyan kuɗi na 2026 ya ƙaura daga ƙaurar saƙonni zuwa tsarin aiki mai fuskoki da yawa inda haɗari da kuɗin shiga ke ƙayyadewa ta iyawar lokaci-lokaci. Ginshiƙai huɗu, kasuwancin agentic, baitulmali mai aiki koyaushe, ledger haɗaɗɗe na tokenised da kariyar zamba ta bayanai masu tsari, suna bayyana ajandar hukumar gudanarwa ta 2026 zuwa 2028 don bankunan ma'amala na duniya.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan da za a koya</strong></p>
 <ul class="post-lead-takeaways">

@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
 <p class="post-lead-tldr"><strong>Kort samengevat.</strong> FiDA is geen PSD2 met meer endpoints. Drie structurele breuken veranderen wat naleving betekent: toegang wordt bestuurd door een regeling waar u lid van moet worden in plaats van door een interface die u alleen bouwt; datahouders mogen een redelijke vergoeding vragen, waardoor toegang een geprijsd product wordt in plaats van een gratis plicht; en de reikwijdte omvat hypotheken, spaargeld, beleggingen, pensioenen en schadeverzekeringen — de producten waar banken daadwerkelijk aan verdienen. De tekst zit nog in de trialoog, maar de regelingen die de standaarden gaan bepalen worden nu ontworpen, en daar ligt de invloed.</p>
 <p class="post-lead-heading"><strong>Belangrijkste conclusies</strong></p>
 <ul class="post-lead-takeaways">

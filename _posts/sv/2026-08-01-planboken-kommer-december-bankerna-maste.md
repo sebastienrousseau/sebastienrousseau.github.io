@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Regulation (EU) 2024/1183 skrev om eIDAS. Två datum spelar roll: senast <strong>24 december 2026</strong> ska varje medlemsstat tillhandahålla minst en europeisk digital identitetsplånbok, och senast <strong>24 december 2027</strong> ska stora och medelstora förlitande parter i uppräknade sektorer — bank och finansiella tjänster bland dem — acceptera den för stark användarautentisering när en användare begär det. Bankens roll skiftar från utfärdare av identitetsintyg till registrerad förlitande part, och registreringen är en rättslig förutsättning, inte en teknisk. Ingenjörsarbetet är odramatiskt. Konsekvenserna för styrning, ansvar och identitetskontroll är det inte.</p>
 <p class="post-lead-heading"><strong>Viktigaste slutsatserna</strong></p>
 <ul class="post-lead-takeaways">

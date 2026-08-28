@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="A cikk összefoglalója">
 <p class="post-lead-tldr"><strong>Röviden.</strong> Az első posztkvantum határidő a feltárás, nem a migráció — az NCSC 2028-ra várja a kriptográfiai függőségek teljes képét, a 2031-es és 2035-ös migrációs mérföldkövek előtt. A bankok ezt nem tudják előállítani abból az eszköznyilvántartásból, amelyet a DORA amúgy is előír, mert az a nyilvántartás a szervert, a gazdát és a kritikusságot rögzíti, nem az algoritmust, a kulcshosszt, a könyvtárat vagy a tanúsítvány lejáratát. A hiányzó adatmodell a kriptográfiai anyagjegyzék (CBOM), amely mára a CycloneDX része és ECMA-424 néven szabvány. Ha ezt egyszeri PQC-táblázatként kezelik, nem fenntartott kontrollként, az a hiba viszi el a 2031-es mérföldkövet.</p>
 <p class="post-lead-heading"><strong>Legfontosabb tanulságok</strong></p>
 <ul class="post-lead-takeaways">

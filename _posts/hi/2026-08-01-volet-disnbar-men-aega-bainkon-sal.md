@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="लेख सारांश">
 <p class="post-lead-tldr"><strong>संक्षेप में।</strong> Regulation (EU) 2024/1183 ने eIDAS को फिर से लिखा। दो तिथियाँ मायने रखती हैं: <strong>24 दिसंबर 2026</strong> तक हर सदस्य राष्ट्र को कम से कम एक यूरोपीय डिजिटल पहचान वॉलेट उपलब्ध कराना होगा, और <strong>24 दिसंबर 2027</strong> तक सूचीबद्ध क्षेत्रों के बड़े और मध्यम निर्भर पक्षों को — जिनमें बैंकिंग और वित्तीय सेवाएँ शामिल हैं — उपयोगकर्ता के अनुरोध पर सशक्त उपयोगकर्ता प्रमाणीकरण के लिए उसे स्वीकारना होगा। बैंक की भूमिका प्रमाण-पत्र जारीकर्ता से बदलकर पंजीकृत निर्भर पक्ष की हो जाती है, और पंजीकरण एक कानूनी पूर्वशर्त है, तकनीकी नहीं। इंजीनियरिंग साधारण है। शासन, दायित्व और पहचान-प्रमाणन के परिणाम साधारण नहीं हैं।</p>
 <p class="post-lead-heading"><strong>मुख्य बिंदु</strong></p>
 <ul class="post-lead-takeaways">

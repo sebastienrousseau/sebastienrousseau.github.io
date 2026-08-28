@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Always-On CIB: সাইবার পুনরুদ্ধার, ফলব্যাক রেল ও কোয়ান্টাম-নিরাপদ ট্রেজারি
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="নিবন্ধের সারাংশ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে।</strong> ২০২৬-এ কর্পোরেট ও বিনিয়োগ ব্যাংকিংকে একটি সাইবার ঘটনার সময় সর্বদা-চালু আচরণের ভিত্তিতে বিচার করা হয়। সাইবার পুনরুদ্ধার ভল্ট, RTGS, ইনস্ট্যান্ট ও টোকেনাইজড নেটওয়ার্ক জুড়ে ISO 20022 ফলব্যাক রেল এবং কোয়ান্টাম-নিরাপদ ট্রেজারি নিয়ন্ত্রণ এখন একটি পরিচালন ডায়াগ্রামে বসে — এবং বোর্ড তাতে স্বাক্ষর করে।</p>
 <p class="post-lead-heading"><strong>মূল শিক্ষা</strong></p>
 <ul class="post-lead-takeaways">

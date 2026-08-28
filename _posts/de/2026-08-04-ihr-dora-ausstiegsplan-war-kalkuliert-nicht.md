@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Zusammenfassung des Artikels">
+<aside class="post-lead" aria-label="Artikelzusammenfassung">
 <p class="post-lead-tldr"><strong>Kurz gefasst.</strong> Die EU-Datenverordnung baut Wechselentgelte für die Cloud stufenweise ab und schafft sie ab dem <strong>12. Januar 2027</strong> vollständig ab, Egress eingeschlossen. Seit dem <strong>12. September 2025</strong> haben Kunden einen gesetzlichen Anspruch auf Anbieterwechsel und auf technische Mitwirkung bei der Datenportierung; die Übergangsregelung erlaubte nur die Erstattung der <em>unmittelbar mit dem Wechsel verbundenen Kosten</em>, ohne Aufschlag. <strong>Artikel 28 Absatz 8</strong> DORA verlangt bereits Ausstiegsstrategien für IKT-Dienstleistungen, die kritische oder wichtige Funktionen unterstützen, und fordert, dass diese Pläne umfassend, dokumentiert und <strong>hinreichend getestet</strong> sind. Die Kosten waren der stehende Grund, warum nie getestet wurde. Im Januar entfällt dieser Grund, und der Abstand zwischen einem geschriebenen und einem nachgewiesenen Plan wird zur gesamten Exponierung.</p>
 <p class="post-lead-heading"><strong>Kernaussagen</strong></p>
 <ul class="post-lead-takeaways">

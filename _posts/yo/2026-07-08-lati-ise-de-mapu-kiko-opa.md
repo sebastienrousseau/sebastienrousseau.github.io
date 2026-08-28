@@ -88,7 +88,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Ilé-iṣẹ́ náà ní èdè àgbáyé fún àwọn ìsanwó nígbẹ̀yìngbẹ́yín. Ó ṣì kò ní mápù àgbáyé fún àwọn ilé-iṣẹ́ láti ṣe lórí rẹ̀.** ISO 20022 àti ètò CBPR+ ti Swift ti fún àwọn ìsanwó àgbélébùú-ààlà ní dátà tí ó ní ọrọ̀, tí a ṣètò, tí a ṣàjọpọ̀, tí àwọn ìbéèrè dátà òpin-2027 ti CPMI ti fún ní àfikún lábẹ́ ọ̀nà-iṣẹ́ G20. Ohun tí wọn kò ṣe ni sísọ fún olùtọ́jú owó ilé-iṣẹ́, tàbí àwọn ètò tí ń ṣe fún wọn, bí a ṣe gbọ́dọ̀ ṣàfihàn dátà náà, dáàbò bò ó, ṣàkọsílẹ̀ ẹ̀yà rẹ̀, kí a sì hùwà sí i ní àgbáyé gidi. Àbájáde rẹ̀ jẹ́ ìyípadà àjèjì kan: àwọn iṣẹ́ náà ń pé jọ ní gbogbo àgbáyé, ṣùgbọ́n ọ̀nà tí àwọn báńkì ń jẹ́ kí àwọn ilé-iṣẹ́ lò wọ́n ṣì ń fọ́ báńkì-lẹ́yìn-báńkì. Èyí ni bí àwọn báńkì àti àwọn ilé-iṣẹ́ ìnáwó ṣe lè yí padà láti àwọn iṣẹ́ tí a ṣàjọpọ̀ sí ọ̀pá ìdiwọ̀n aṣojú àgbáyé — nípa lílo àwọn ọ̀nà tí wọ́n ti ní.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Ìsọníṣókí àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> ISO 20022 àti CBPR+ ti Swift ti fún àwọn ìsanwó àgbélébùú-ààlà ní èdè àgbáyé tí a ṣàjọpọ̀, tí a ṣètò — tí àwọn ìbéèrè dátà òpin-2027 ti CPMI ti fún ní àfikún. Ohun tí wọn kò fún àwọn ilé-iṣẹ́ ni mápù àgbáyé fún bí a ṣe ń ṣàfihàn dátà náà, dáàbò bò ó, tí a sì ń hùwà sí i. Àwọn iṣẹ́ náà ń pé jọ ní gbogbo àgbáyé; àwọn interface ṣì ń fọ́ báńkì-lẹ́yìn-báńkì. Èyí ni bí a ṣe lè fẹ̀ ìṣàjọpọ̀ láti "ohun tí ìsanwó ń sọ" sí "bí ilé-iṣẹ́ ṣe ń lò ó" — lórí àwọn ọ̀nà tí ó ti wà.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

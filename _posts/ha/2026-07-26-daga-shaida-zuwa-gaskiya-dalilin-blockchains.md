@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Rashin canzawa ba daidai yake da amincewa ba.** Yayin da bankin manyan kasuwanci ke matsawa zuwa biyan kuɗi na lokaci-lokaci da AI mai yiwuwa, littafin da ke yanke abin da yake gaskiya ya zama layin da bankuna har yanzu ba za su iya tabbatarwa ba. Suna tabbatar da hukumar a ƙarƙashin Basel III, girgije a ƙarƙashin ISO 27001 da AI dinsu a ƙarƙashin ISO 42001, amma distributed ledger, mulkinsa, consensus, cryptography da smart contracts, an bar shi ga zaton musamman na mai kaya. Wannan rahoto na gardama cewa rufe wannan giɓin amana na buƙatar matsawa daga jagorar ISO/IEC TC 307 zuwa tabbaci na tsari: ƙididdiga littafi da Certified Blockchain Index mai matakai 5 wanda ke mai da ma'aunin injiniya zuwa gaskiyar da ake iya tantancewa a zauren gudanarwa, wadda za a iya kare ta a ƙarƙashin DORA.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Taƙaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Bankuna suna tabbatar da hukumar, girgije da AI dinsu, amma ba littafin da ke ƙara yanke abin da yake gaskiya ba. ISO/IEC TC 307 na ba da jagora, ba tabbaci ba. Certified Blockchain Index mai matakai 5 na ƙididdiga mulkin littafi, amincin consensus, ainihi da cryptography, tabbacin smart-contract da lura da Capability Maturity Model, yana rufe giɓin amana kuma yana ba AI mai yiwuwa kashin bayan bincike mai tabbataccen sakamako.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan da za a koya</strong></p>
 <ul class="post-lead-takeaways">

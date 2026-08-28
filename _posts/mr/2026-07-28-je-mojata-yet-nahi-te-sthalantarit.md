@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="लेखाचा सारांश">
 <p class="post-lead-tldr"><strong>थोडक्यात.</strong> पहिली पोस्ट-क्वांटम मुदत शोध व नोंदणीची आहे, स्थलांतराची नाही — २०३१ आणि २०३५ च्या स्थलांतर टप्प्यांच्या आधी, २०२८ पर्यंत क्रिप्टोग्राफिक अवलंबित्वांचे संपूर्ण चित्र NCSC अपेक्षित करते. DORA ज्या मालमत्ता नोंदवहीची सक्ती आधीच करते, तिच्यातून बँका हे चित्र काढू शकत नाहीत, कारण ती नोंदवही सर्व्हर, मालक आणि निकड नोंदवते — अल्गोरिदम, कळ लांबी, लायब्ररी किंवा प्रमाणपत्राची मुदतसमाप्ती नाही. आता CycloneDX चा भाग असलेली आणि ECMA-424 म्हणून प्रमाणित झालेली Cryptography Bill of Materials हेच ते हरवलेले डेटा मॉडेल आहे. तिला देखभाल केले जाणारे नियंत्रण न मानता एकवेळची PQC स्प्रेडशीट मानणे — हीच चूक २०३१ चा टप्पा गमावायला लावेल.</p>
 <p class="post-lead-heading"><strong>मुख्य मुद्दे</strong></p>
 <ul class="post-lead-takeaways">

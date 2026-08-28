@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # De Post-Quantum Banking Resilience Index in 2026: EO 14409, mondiale deadlines en fiduciaire crypto-flexibiliteit
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> De migratie naar post-kwantumcryptografie (PQC) heeft het punt van geen terugkeer gepasseerd. Met de Amerikaanse Executive Order 14409, ondertekend op 22 juni 2026, en de harde 2030-deadline van het Franse ANSSI — certificering van niet-PQC-producten stopt in 2027 — is crypto-flexibiliteit niet langer een technische ambitie. Het is een regelgevend mandaat. Deze index zet dat mandaat om in een 0–5 scorecard voor de raad van bestuur, over vijf controleerbare lagen.</p>
 <p class="post-lead-heading"><strong>Belangrijkste conclusies</strong></p>
 <ul class="post-lead-takeaways">

@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>TL;DR。</strong>2026 年 4 月 17 日修订的模型风险监管指引(SR 26-2 / OCC Bulletin 2026-13)取代了 2011 年框架,并明确把生成式 AI 与智能体 AI 排除在外,同时承诺将启动公开征求意见。这项排除是关于<em>这一份</em>指引适用范围的决定,不是监管放行:同一个模型仍然落在第三方风险、操作风险、消费者保护与公平信贷之内。与此同时,英国的 SS1/23 保持技术中立,继续把这些模型拉进来。集团银行如今要让同一个模型面对两套答案,而诚实的回应是按其中更严的那一套来治理。</p>
 <p class="post-lead-heading"><strong>核心要点</strong></p>
 <ul class="post-lead-takeaways">

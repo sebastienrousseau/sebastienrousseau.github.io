@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Index agentní AI pro banky v roce 2026: měření autonomie, governance, auditovatelnosti a obchodního dopadu
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Shrnutí článku">
 <p class="post-lead-tldr"><strong>Ve zkratce.</strong> Plán pro měření připravenosti bank první kategorie na agentní AI v šesti dimenzích: úroveň autonomie, oprávnění k API, deterministické ochranné mantinely, pokrytí člověkem ve smyčce, úplnost auditu a jednotková ekonomika. Klasifikujte agenty podle toho, co smějí dělat, nikoli podle toho, jak chytrý je podkladový model. Ke každému produkčnímu agentovi přistupujte jako k modelu SR 11-7 / SS1/23 od prvního dne.</p>
 <p class="post-lead-heading"><strong>Klíčová zjištění</strong></p>
 <ul class="post-lead-takeaways">

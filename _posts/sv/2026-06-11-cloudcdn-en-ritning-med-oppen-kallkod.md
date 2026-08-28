@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Sammanfattning av artikeln">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>Sammanfattning.</strong> Företagsteknik 2026 definieras av konvergensen mellan globalt distribuerad serverlös exekvering och agentbaserad AI. Standard-CDN:er — byggda för statisk filcachning och grundläggande trafikstyrning — är strukturellt föråldrade i en era av aktiv dataorkestrering i realtid. CloudCDN är en ritning med öppen källkod som omvandlar edge till ett aktivt kontrollplan: serverlösa runtimes, tillståndsbärande samordning genom Cloudflare Durable Objects och en zero-trust-gateway för Model Context Protocol (MCP) som låter autonoma AI-agenter driva webbinfrastruktur inom avgränsade, kryptografiskt säkrade operativa ramar.</p>
 <p class="post-lead-heading"><strong>Viktiga slutsatser</strong></p>
 <ul class="post-lead-takeaways">

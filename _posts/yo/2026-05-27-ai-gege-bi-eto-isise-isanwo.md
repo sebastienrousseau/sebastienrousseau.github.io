@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # AI gẹ́gẹ́ bí Ètò Ìṣiṣẹ́ AI ti Ìsanwó: Jìbìtì, Ìpinnu Ọ̀nà, Ìfaradà, Ìbámu 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkójọpọ̀ àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> AI nínú ìsanwó ti kọjá láti àwọn dáṣíbọ̀ọ̀dù àyẹ̀wò sí ipò ètò ìṣiṣẹ́ AI ní 2026 — ó ń ṣiṣẹ́ àyẹ̀wò jìbìtì, àtúnṣe ìsanwó, ìpinnu ọ̀nà, ìhùmọ̀ owó tó ń sàn, ìbámu AML àti ìfòfindè, àti ìṣàkóso agentic commerce ní ìyára iṣẹ́. Ìbéèrè ìlànà fún àwọn bánkì kì í ṣe "irinṣẹ́ AI wo ni a ó dán wò" mọ́ bí kò ṣe ìbáwí ìpilẹ̀ṣẹ̀: èwo ni ìṣàkóso AI ń ṣiṣẹ́ gidi-àkókò lórí iṣẹ́ wo, ta ni ó ní ìṣàlàyé, àti bí a ṣe lè fún àwọn alábòójútó ní ẹ̀rí àwọn ìpinnu náà. Àwòṣe tó ń borí ni ìṣètò pẹ̀lú ọrọ̀-ajé tí a lè wọ̀nwọ́n — kì í ṣe àwọn ìdánwò tí a yà sọ́tọ̀ lórí àwọn legacy tí ó rọrùn láti ṣẹ̀.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

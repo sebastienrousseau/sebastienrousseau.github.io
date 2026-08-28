@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Resumo do artigo">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> A orientação supervisória revisada de risco de modelo de 17 de abril de 2026 (SR 26-2 / OCC Bulletin 2026-13) substitui o arcabouço de 2011 e exclui expressamente a IA generativa e a IA agentic, com uma consulta pública prometida. Essa exclusão é uma decisão de escopo sobre <em>esta</em> orientação, não um aval supervisório: o mesmo modelo continua dentro de risco de terceiros, risco operacional, proteção ao consumidor e concessão equitativa de crédito. Enquanto isso, a SS1/23 do Reino Unido é tecnologicamente neutra e continua a trazer esses modelos para dentro. Um banco de grupo agora opera um mesmo modelo sob duas respostas, e a resposta honesta é governar pela mais rigorosa delas.</p>
 <p class="post-lead-heading"><strong>Principais conclusões</strong></p>
 <ul class="post-lead-takeaways">

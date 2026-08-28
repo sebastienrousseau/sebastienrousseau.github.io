@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="기사 요약">
 <p class="post-lead-tldr"><strong>요약.</strong> DORA의 TLPT 체제는 레드팀 훈련을 재량적 보안 활동에서 3년 주기의 감독 대상·증거 산출 의무로 전환하며, 대상은 감독당국이 지정한 기관입니다. 실질적 제약은 기술이 아니라 공급 측에 있습니다. Article 27은 인증을 받았거나 행동강령을 준수하고 독립적 검증과 전문인 배상책임보험을 갖춘 테스트 수행기관을 요구하며, 내부 레드팀은 세 번 중 최대 두 번까지만 허용하고, 위협 인텔리전스 제공자는 매번 외부여야 한다고 규정합니다. 제3자 공급업체 위에서 돌아가는 중요 기능은 해당 공급업체까지 테스트 안으로 끌어들입니다.</p>
 <p class="post-lead-heading"><strong>핵심 요점</strong></p>
 <ul class="post-lead-takeaways">

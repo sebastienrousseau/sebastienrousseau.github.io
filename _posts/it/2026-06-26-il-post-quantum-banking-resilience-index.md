@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Il Post-Quantum Banking Resilience Index nel 2026: EO 14409, scadenze globali e agilità crittografica fiduciaria
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Sintesi dell'articolo">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> La migrazione alla crittografia post-quantistica (PQC) ha superato il punto di non ritorno. Con l'Executive Order 14409 statunitense firmato il 22 giugno 2026 e l'ANSSI francese che fissa una scadenza perentoria al 2030 — con lo stop alla certificazione dei prodotti non-PQC nel 2027 — l'agilità crittografica non è più un'aspirazione tecnica. È un mandato regolamentare. Questo indice trasforma quel mandato in una scorecard 0–5 pronta per il consiglio, articolata su cinque livelli verificabili.</p>
 <p class="post-lead-heading"><strong>Punti chiave</strong></p>
 <ul class="post-lead-takeaways">

@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Verificarea beneficiarului a încetat să fie un produs în ziua în care a devenit o obligație.** De la 9 octombrie 2025, fiecare prestator de servicii de plată dintr-un stat membru al zonei euro trebuie să ofere Verification of Payee pentru transferurile credit, gratuit, conform Regulation (EU) 2024/886. Verificarea în sine nu este dificilă: compari un nume cu numele deținut pe cont și răspunzi. Dificil s-a dovedit tot ce o înconjoară — un buget de răspuns de cinci secunde, un răspuns intermediar care nu este nici da, nici nu, fișiere corporative care trebuie desfăcute înainte de a putea fi verificate și o graniță a răspunderii pe care nici regulamentul, nici rulebook-ul schemei nu o trasează.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Rezumatul articolului">
 <p class="post-lead-tldr"><strong>Pe scurt.</strong> Regulamentul privind plățile instant a transformat verificarea beneficiarului dintr-un element de diferențiere într-o utilitate pe care fiecare PSP din zona euro trebuie să o opereze gratuit, atât pentru transferurile credit standard, cât și pentru cele instant. La nouă luni, costul de inginerie nu a căzut pe algoritmul de potrivire. A căzut pe răspunsul „potrivire aproximativă”, pe desfacerea fișierelor corporative de plăți în cereri linie cu linie într-un plic de cinci secunde și pe faptul că un avertisment livrat și ignorat redistribuie pierderea într-un mod pe care nimeni nu l-a cuantificat.</p>
 <p class="post-lead-heading"><strong>Concluzii esențiale</strong></p>
 <ul class="post-lead-takeaways">

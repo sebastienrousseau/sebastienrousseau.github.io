@@ -93,7 +93,7 @@ webmaster: "contact@sebastienrousseau.com"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Takaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>A taƙaice.</strong> Bincika Samfurin AI na Google Gemma: Aikin buɗaɗɗen tushe wanda ke bayar da mafita na AI na ɗabi'a don amfanin mutum ɗaya da kamfanoni.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan da aka koya</strong></p>
 <ul class="post-lead-takeaways">

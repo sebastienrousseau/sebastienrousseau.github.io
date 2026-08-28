@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Zrewidowane wytyczne nadzorcze o ryzyku modeli z 17 kwietnia 2026 roku (SR 26-2 / OCC Bulletin 2026-13) zastępują ramy z 2011 roku i wprost wyłączają generatywną oraz agentową AI, z obietnicą konsultacji publicznych. To wyłączenie jest decyzją o zakresie stosowania <em>tych</em> wytycznych, a nie nadzorczym zezwoleniem: ten sam model nadal podlega ryzyku stron trzecich, ryzyku operacyjnemu, ochronie konsumenta i niedyskryminacyjnemu kredytowaniu. Tymczasem brytyjskie SS1/23 jest neutralne technologicznie i nadal wciąga te modele w swój zakres. Bank grupowy prowadzi teraz jeden model pod dwiema odpowiedziami, a uczciwą reakcją jest zarządzanie nim według surowszej z nich.</p>
 <p class="post-lead-heading"><strong>Najważniejsze wnioski</strong></p>
 <ul class="post-lead-takeaways">

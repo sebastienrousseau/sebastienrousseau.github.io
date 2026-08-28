@@ -107,7 +107,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Короткий зміст статті">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Gemini 1.5 від Google розширює контекстні вікна понад 1 мільйон токенів. Що це дає для фінансів із доповненим пошуком і які компроміси варто враховувати.</p>
 <p class="post-lead-heading"><strong>Основні висновки</strong></p>
 <ul class="post-lead-takeaways">

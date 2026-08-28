@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Ìjẹ́rìísí payee dá dúró láti jẹ́ ọjà ní ọjọ́ tí ó di ọ̀ranyàn.** Láti 9 Oṣù Kẹ̀wá 2025, gbogbo olùpèsè iṣẹ́ ìsanwó nínú Orílẹ̀-èdè Ọmọ-ẹgbẹ́ agbègbè yúrò ní láti pèsè Verification of Payee lórí àwọn credit transfer, láìsí owó kankan, lábẹ́ Regulation (EU) 2024/886. Àyẹ̀wò fúnra rẹ̀ kò ṣòro: fi orúkọ kan wé orúkọ tí ó wà lórí àkàǹtì kí o sì dáhùn. Ohun tí ó ti ṣòro ni gbogbo ohun tí ó yí i ká — ìsúnwọ̀n ìdáhùn ìṣẹ́jú-àáyá márùn-ún, ìdáhùn àárín tí kì í ṣe bẹ́ẹ̀ ni tàbí bẹ́ẹ̀kọ́, àwọn fáìlì ilé-iṣẹ́ tí a gbọ́dọ̀ tú palẹ̀ kí a tó lè yẹ̀ wọ́n wò, àti ààlà ẹrù-ojúṣe tí òfin àti ìwé ìlànà ètò náà jọ kọ̀ láti fà.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkótán àkọsílẹ̀">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Instant Payments Regulation sọ ìjẹ́rìísí payee di, láti orísun ìdíje, iṣẹ́ ìpìlẹ̀ tí gbogbo PSP agbègbè yúrò gbọ́dọ̀ ṣe láìgba owó, lórí credit transfer déédéé àti ti ojú-ẹsẹ̀ bákan náà. Lẹ́yìn oṣù mẹ́sàn-án, ìnáwó ẹ̀rọ-ìmọ̀ kò bọ́ sórí algorithm ìfiwéra. Ó bọ́ sórí ìdáhùn "close match", sórí títú àwọn fáìlì ìsanwó ilé-iṣẹ́ palẹ̀ sí ìbéèrè ìlà-kọ̀ọ̀kan nínú àpò ìṣẹ́jú-àáyá márùn-ún, àti sórí òtítọ́ pé ìkìlọ̀ tí a fi hàn tí a sì override ń pín àdánù ní ọ̀nà tí ẹnìkankan kò tí ì fi owó sí.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

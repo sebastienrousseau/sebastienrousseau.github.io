@@ -103,7 +103,7 @@ site_software: "Static Site Generator, Rust"
 # Rustで実現する2026年のMarkdownからアクセシブルなSEO対応構造化HTMLへの変換
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="記事の概要">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> HTML GeneratorはピュアRust製のMarkdown-to-HTMLコンパイラです。ビルド時にWCAG 2.1 AAを強制し、スキーマ準拠のJSON-LDを自動注入し、MathMLとMermaid SVGをネイティブでレンダリングし、パーシングをWebAssemblyサンドボックス内で実行します。これにより、パブリッシングをアクセシビリティ、SEO、ICTセキュリティのためのコンパイル制御型コントロール・プレーンに変えます。</p>
 <p class="post-lead-heading"><strong>主なポイント</strong></p>
 <ul class="post-lead-takeaways">

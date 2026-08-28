@@ -89,7 +89,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> 25 травня 2026 Папа Лев XIV оприлюднив <em>Magnifica Humanitas</em> — першу папську енцикліку про ШІ. Прочитана з позиції технологічної індустрії як етична рамка, а не як доктрина, вона повторює кожну моральну тривогу, що супроводжувала залізницю, автомобіль, ядерну енергію та інтернет, — і чесно приземляється на надії.</p>
 <p class="post-lead-heading"><strong>Ключові висновки</strong></p>
 <ul class="post-lead-takeaways">

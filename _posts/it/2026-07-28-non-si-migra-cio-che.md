@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Sintesi dell'articolo">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> La prima scadenza post-quantistica è di ricognizione, non di migrazione: l'NCSC si attende un quadro completo delle dipendenze crittografiche entro il 2028, prima delle tappe di migrazione del 2031 e del 2035. Le banche non possono ricavarlo dal registro degli asset che DORA le obbliga già a tenere, perché quel registro annota il server, il proprietario e la criticità, ma non l'algoritmo, la lunghezza della chiave, la libreria o la scadenza del certificato. Il Cryptography Bill of Materials, ormai parte di CycloneDX e standardizzato come ECMA-424, è il modello di dati mancante. Trattarlo come un foglio di calcolo PQC una tantum anziché come un controllo mantenuto nel tempo è l'errore che farà mancare la tappa del 2031.</p>
 <p class="post-lead-heading"><strong>Punti chiave</strong></p>
 <ul class="post-lead-takeaways">

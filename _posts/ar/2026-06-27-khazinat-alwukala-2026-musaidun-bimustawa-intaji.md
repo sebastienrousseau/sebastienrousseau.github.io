@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # خزينة الوكلاء 2026: من مؤشر الخزينة المستقلة إلى مساعدين بمستوى إنتاجي
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="ملخص المقال">
 <p class="post-lead-tldr"><strong>الخلاصة.</strong> مساعدو الخزينة الوكلاء ينتقلون من طيارين مُحكمين إلى الإنتاج في 2026. النمط متسق عبر خزائن CIB: يقرأ الوكلاء بيانات نقد ISO 20022، ويستدعون أدوات مُقيَّدة، ويُعيدون موازنة السيولة داخل نطاقات السياسة — مع ضوابط SR 11-7 وDORA وEU AI Act ملفوفة حولهم.</p>
 <p class="post-lead-heading"><strong>أبرز النقاط</strong></p>
 <ul class="post-lead-takeaways">
@@ -183,6 +183,6 @@ site_software: "Static Site Generator, Rust"
 للسياق المنبع، انظر [مؤشر الخزينة المستقلة](https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/ "مؤشر الخزينة المستقلة 2026")، وللإطار الحوكمي، [مؤشر ذكاء الوكلاء للمصارف](https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/ "مؤشر ذكاء الوكلاء للمصارف 2026").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="صورة لـ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب في الذكاء الاصطناعي التطبيقي، وترحيلة ISO 20022، والتشفير ما بعد الكم للخدمات المالية، والتحوُّل البنيوي للمدفوعات بالجملة.</span><span class="author-credentials">أكثر من 20 عاماً عبر HSBC Commercial &amp; Investment Bank، وPayPal، وBarclays، وShazam، وAKQA، وVirgin Group. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="صورة لـ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب في الذكاء الاصطناعي التطبيقي، وترحيلة ISO 20022، والتشفير ما بعد الكم للخدمات المالية، والتحوُّل البنيوي للمدفوعات بالجملة.</span><span class="author-credentials">أكثر من 20 عاماً عبر HSBC Commercial &amp; Investment Bank، وPayPal، وBarclays، وShazam، وAKQA، وVirgin Group. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-06-27">2026-06-27</time>.</p>
 <!-- enrich-end -->

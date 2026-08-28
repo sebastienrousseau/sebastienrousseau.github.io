@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Från pain.001 till programmerbar likviditet: ISO 20022 som treasurys autonoma nervsystem 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Sammanfattning av artikeln">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> ISO 20022 är inte längre ett migrationsprojekt. 2026 är det datasubstratet under programmerbar likviditet, agentisk treasury och den SWIFT MT/MX-övergång den 22 november 2026 som nästan hälften av bankerna fortfarande inte hinner med.</p>
 <p class="post-lead-heading"><strong>Viktiga slutsatser</strong></p>
 <ul class="post-lead-takeaways">

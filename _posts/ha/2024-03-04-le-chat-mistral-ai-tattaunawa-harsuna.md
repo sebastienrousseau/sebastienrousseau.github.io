@@ -107,7 +107,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Takaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ku san sabon Mataimaki mai harsuna da yawa na Mistral AI. AI na zamani wanda zai iya fahimta da mayar da martani cikin harsuna da yawa, a tattaunawa ɗaya kuma a lokaci na gaske.</p>
 <p class="post-lead-heading"><strong>Babban abubuwan da za a kula</strong></p>
 <ul class="post-lead-takeaways">

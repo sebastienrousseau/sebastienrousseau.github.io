@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Shrnutí článku">
 <p class="post-lead-tldr"><strong>Shrnutí.</strong> Prvním postkvantovým termínem je zmapování a inventarizace, nikoli migrace — NCSC očekává úplný obraz kryptografických závislostí do roku 2028, tedy před migračními milníky 2031 a 2035. Banky jej z registru aktiv, který jim DORA už dnes ukládá vést, nesestaví, protože ten registr eviduje server, vlastníka a kritičnost, ale ne algoritmus, délku klíče, knihovnu ani expiraci certifikátu. Kryptografický soupis materiálu (CBOM), dnes součást CycloneDX a standardizovaný jako ECMA-424, je chybějícím datovým modelem. Chápat jej jako jednorázovou postkvantovou tabulku místo udržované kontroly je chyba, která bude stát milník 2031.</p>
 <p class="post-lead-heading"><strong>Klíčové závěry</strong></p>
 <ul class="post-lead-takeaways">

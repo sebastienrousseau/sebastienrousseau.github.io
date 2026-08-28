@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Cross-Border 2026: ISO 20022, Open Finance at Tokenised Deposits sa Corporate Treasury
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Buod ng artikulo">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ang cross-border corporate treasury sa 2026 ay tumatakbo sa apat na rails nang sabay — SWIFT CBPR+, instant A2A sa ilalim ng PSD3/FiDA, tokenised deposits, at stablecoin rails — pinagdurugtong ng ISO 20022 bilang common grammar. Ang trabaho para sa CIB at corporate treasury teams ay orchestration, hindi rail selection.</p>
 <p class="post-lead-heading"><strong>Mga pangunahing punto</strong></p>
 <ul class="post-lead-takeaways">
@@ -242,6 +242,6 @@ International Organization for Standardization (2020). *ISO 17442 Financial serv
 SWIFT (2024). *Cross-Border Payments and Reporting Plus (CBPR+) usage guidelines*. Available at: [https://www.swift.com/standards/iso-20022/iso-20022-programme](https://www.swift.com/standards/iso-20022/iso-20022-programme "SWIFT CBPR+ usage guidelines")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na nagsusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at ang structural transformation ng wholesale payments.</span><span class="author-credentials">20+ taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na nagsusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at ang structural transformation ng wholesale payments.</span><span class="author-credentials">20+ taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Huling sinuri noong <time datetime="2026-06-24">2026-06-24</time>.</p>
 <!-- enrich-end -->

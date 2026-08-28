@@ -98,7 +98,7 @@ excerpt: "KyberLib হল একটি Rust-ভিত্তিক লাইব�
 last_reviewed: "2026-05-11"
 ---
 <!-- lead-start -->
-<aside class="post-lead" aria-label="নিবন্ধের সারাংশ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে (TL;DR)।</strong> কোয়ান্টাম হুমকি এবং ক্রিপ্টোঅ্যানালিটিক আক্রমণ থেকে আপনার ডেটাকে সুরক্ষিত রাখতে CRYSTALS-Kyber অ্যালগরিদমের একটি শক্তিশালী এবং কোয়ান্টাম-নিরাপদ ক্রিপ্টোগ্রাফি বাস্তবায়ন।</p>
 <p class="post-lead-heading"><strong>মূল শিক্ষণীয় বিষয়সমূহ</strong></p>
 <ul class="post-lead-takeaways">

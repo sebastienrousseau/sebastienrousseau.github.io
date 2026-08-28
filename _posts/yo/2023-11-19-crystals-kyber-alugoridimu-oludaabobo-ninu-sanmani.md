@@ -99,7 +99,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ṣawari bí CRYSTALS-Kyber, algorithm cryptography tí ó lè dojú quantum, ṣe ń yí agbaye cryptography padà tí ó sì ń múra wa sílẹ̀ fún àkókò quantum.</p>
 <p class="post-lead-heading"><strong>Àwọn Kókó Pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
@@ -266,7 +266,7 @@ O ṣeun kọ sẹ́ẹ̀ fún àkókò rẹ, mo sì ń nireti láti gbọ́ lá
 [05]: https://www.nist.gov/ "National Institute of Standards and Technology (NIST)"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa olùkọ̀wé"><img alt="Àwòrán ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist tí ó ń kọ̀wé lórí applied AI, ISO 20022 migration, post-quantum cryptography fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ètò ti àwọn ìlò-ìnáwó wholesale.</span><span class="author-credentials">Ọdún 20+ kárí HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Àkọsílẹ̀ kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist tí ó ń kọ̀wé lórí applied AI, ISO 20022 migration, post-quantum cryptography fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ètò ti àwọn ìlò-ìnáwó wholesale.</span><span class="author-credentials">Ọdún 20+ kárí HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Àkọsílẹ̀ kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn ní <time datetime="2026-06-23">2026-06-23</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Ìkàwé tí ó jọ mọ́ ọn</h2>

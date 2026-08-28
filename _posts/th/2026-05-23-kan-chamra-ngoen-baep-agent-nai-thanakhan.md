@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # การชำระเงินแบบเอเจนต์ในธนาคาร: ความยินยอม ความรับผิด และ UX การชำระเงินใหม่ปี 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="สรุปบทความ">
 <p class="post-lead-tldr"><strong>สรุปสำหรับผู้บริหาร</strong> การชำระเงินแบบเอเจนต์ (agentic payments) ในปี 2026 ไม่ใช่แนวคิดอีกต่อไป Mastercard และ Rabobank ดำเนินธุรกรรมจริงในเนเธอร์แลนด์ โดย AI agent เริ่มการชำระเงินผ่าน Mastercard Agent Pay โดยไม่แตะข้อมูลบัตรเลย คำสั่งความยินยอม (consent mandate) เชิงเข้ารหัสแบบ AP2 พร้อมด้วย x402, A2A, MCP และ MPP กำลังก่อตัวเป็นชั้นโพรโทคอล ขณะที่ EFTA, Regulation E และกฎหมายบริการชำระเงินสหราชอาณาจักรยังไม่ได้รับการปรับปรุงให้รองรับธุรกรรมเอเจนต์อิสระ ธนาคารจึงต้องมีสถาปัตยกรรม ความยินยอม + อัตลักษณ์ + ความรับผิด ที่สร้างหลักฐานก่อนการชำระบัญชี (pre-settlement evidence) ไม่ใช่หลักฐานตอบโต้ข้อพิพาทย้อนหลัง</p>
 <p class="post-lead-heading"><strong>ประเด็นสำคัญ</strong></p>
 <ul class="post-lead-takeaways">

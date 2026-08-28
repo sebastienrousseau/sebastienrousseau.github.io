@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> DORAのTLPT制度は、レッドチーム演習を任意のセキュリティ活動から、所管当局が指定した金融機関に対する3年周期の監督下の義務、すなわち証跡を生む義務へと転換します。効いてくる制約は技術ではありません。供給側にあります。Article 27は、認定を受けたか行動規範に拘束されるテスト事業者に対し、独立した保証と専門職賠償責任保険を求め、内部レッドチームの利用を3回のうち最大2回までに限り、脅威インテリジェンスの提供者は毎回必ず外部であることを求めます。第三者提供者の上で動く重要機能は、その提供者をテストの内側へ引き込みます。</p>
 <p class="post-lead-heading"><strong>要点</strong></p>
 <ul class="post-lead-takeaways">

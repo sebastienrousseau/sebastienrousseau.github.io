@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Ringkasan artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Tenggat pasca-kuantum yang pertama adalah identifikasi dan inventarisasi, bukan migrasi — NCSC menuntut gambaran lengkap ketergantungan kriptografis pada 2028, sebelum tonggak migrasi 2031 dan 2035. Bank tidak dapat menghasilkannya dari daftar aset yang sudah diwajibkan DORA, karena daftar itu mencatat server, pemilik dan tingkat kekritisan, tetapi bukan algoritma, panjang kunci, pustaka atau kedaluwarsa sertifikat. Cryptography Bill of Materials, kini bagian dari CycloneDX dan dibakukan sebagai ECMA-424, adalah model data yang hilang itu. Memperlakukannya sebagai lembar kerja PQC sekali jadi alih-alih sebagai kontrol yang dipelihara adalah kesalahan yang akan merenggut tonggak 2031.</p>
 <p class="post-lead-heading"><strong>Poin-poin utama</strong></p>
 <ul class="post-lead-takeaways">

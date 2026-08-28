@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Agentbaserad treasury 2026: från Autonomous Treasury Index till produktionsklara medpiloter
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Sammanfattning av artikeln">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Agentbaserade treasury-medpiloter går från kontrollerade piloter in i produktion under 2026. Mönstret är konsekvent över CIB-treasuryer: agenter läser ISO 20022-kassadata, anropar avgränsade verktyg och balanserar om likviditeten inom policyband — med SR 11-7-, DORA- och EU AI Act-kontroller runt sig.</p>
 <p class="post-lead-heading"><strong>Viktiga slutsatser</strong></p>
 <ul class="post-lead-takeaways">

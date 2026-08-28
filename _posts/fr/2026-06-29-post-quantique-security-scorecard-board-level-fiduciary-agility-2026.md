@@ -87,7 +87,7 @@ webmaster: "contact@sebastienrousseau.com"
 
 # Tableau de bord post-quantique 2026 : un cadre de métriques pour le conseil au service de l'agilité cryptographique fiduciaire
 
-<aside class="post-lead" aria-label="Synthèse de l'article">
+<aside class="post-lead" aria-label="Résumé de l'article">
 <p class="post-lead-tldr"><strong>En bref.</strong> En juin 2026, la cryptographie post-quantique (PQC) est passée d'une préoccupation technique expérimentale à une obligation fiduciaire de premier rang. Les conseils doivent désormais superviser la migration systématique du chiffrement hérité vers les standards NIST FIPS 203 et 204, afin d'atténuer les risques financiers et opérationnels systémiques au titre de DORA.</p>
 <p class="post-lead-heading"><strong>Points clés à retenir</strong></p>
 <ul class="post-lead-takeaways">

@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Regulation (EU) 2024/1183 herschreef eIDAS. Twee data tellen: vóór <strong>24 december 2026</strong> moet elke lidstaat ten minste één European Digital Identity Wallet aanbieden, en vóór <strong>24 december 2027</strong> moeten grote en middelgrote vertrouwende partijen in de genoemde sectoren — waaronder het bank- en financiële wezen — die accepteren voor sterke gebruikersauthenticatie zodra een gebruiker daarom vraagt. De rol van de bank verschuift van uitgever van verklaringen naar geregistreerde vertrouwende partij, en registratie is een juridische voorwaarde vooraf, geen technische. De engineering is onopvallend. De gevolgen voor governance, aansprakelijkheid en identiteitsvaststelling zijn dat niet.</p>
 <p class="post-lead-heading"><strong>Belangrijkste punten</strong></p>
 <ul class="post-lead-takeaways">

@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Sammanfattning av artikeln">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>Kort sagt.</strong> Förordning (EU) 2024/2847 — cyberresiliensförordningen — tillämpas fullt ut den <strong>11 december 2027</strong>, men dess <strong>rapporteringsskyldigheter enligt artikel 14 börjar den 11 september 2026</strong>. Tillverkare ska lämna en <strong>tidig varning inom 24 timmar</strong> från att de fått kännedom om en aktivt utnyttjad sårbarhet eller en allvarlig incident, en <strong>fullständig anmälan inom 72 timmar</strong> och en <strong>slutrapport inom 14 dagar</strong> (sårbarheter) eller <strong>en månad</strong> (incidenter), via ENISA:s gemensamma rapporteringsplattform till CSIRT i det land där tillverkaren har sitt huvudsakliga verksamhetsställe. Exponeringen når <strong>15 miljoner euro eller 2,5 % av den totala globala årsomsättningen</strong>, beroende på vilket som är högst. <em>Lex specialis</em>-regeln som hänvisar från NIS2 till DORA fungerar inte här, eftersom CRA varken är NIS2 eller entitetsrätt.</p>
 <p class="post-lead-heading"><strong>Viktigaste punkterna</strong></p>
 <ul class="post-lead-takeaways">

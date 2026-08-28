@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Index bankovní infrastruktury 2026: měření připravenosti pro agentní AI, kvantovou bezpečnost, cloud-native odolnost a velkoobchodní platby
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Proč na tom záleží">
+<aside class="post-lead" aria-label="Shrnutí článku">
   <p class="post-lead-tldr"><strong>O čem je tento článek:</strong> Rámec ve stylu Stanford AI Indexu pro měření připravenosti bank ve čtyřech doménách infrastruktury roku 2026, které se nyní pohybují společně — agentní AI, postkvantová kryptografie, cloud-native odolnost a velkoobchodní platby — plus pět metrik pro správní radu, které z rámce dělají provozní schopnost.</p>
   <p class="post-lead-takeaways"><strong>Komu je článek určen:</strong> CTO bank, ředitelům inženýrství, ředitelům pro riziko a odolnost, ředitelům plateb, ředitelům kryptografického inženýrství, členům správních rad s dohledem nad technologiemi a regulátorům (PRA, ECB, FCA, OCC), kteří je dozorují.</p>
 </aside>

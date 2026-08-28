@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Niezmienny to nie to samo co zaufany.** Gdy bankowość hurtowa przechodzi na rozrachunek w czasie rzeczywistym i probabilistyczną AI, księga decydująca o tym, co jest prawdą, stała się jedyną warstwą, której banki wciąż nie potrafią certyfikować. Certyfikują podmiot na podstawie Basel III, chmurę na podstawie ISO 27001 oraz swoją AI na podstawie ISO 42001, ale rozproszona księga, jej governance, konsensus, kryptografia i inteligentne kontrakty pozostawione są założeniom specyficznym dla dostawcy. Ten raport dowodzi, że zamknięcie tej luki fiducjarnej wymaga przejścia od wytycznych ISO/IEC TC 307 do preskryptywnego zapewnienia: oceny księgi względem 5-poziomowego Indeksu Certyfikowanego Blockchaina, który zamienia metryki inżynierskie w prawdę audytowalną przez zarząd i możliwą do obrony wobec DORA.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Podsumowanie artykułu">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>W skrócie.</strong> Banki certyfikują podmiot, chmurę i swoją AI, ale nie księgę, która coraz częściej rozstrzyga o tym, co jest prawdą. ISO/IEC TC 307 daje wytyczne, a nie zapewnienie. 5-poziomowy Indeks Certyfikowanego Blockchaina ocenia governance księgi, integralność konsensusu, tożsamość i kryptografię, zapewnienie inteligentnych kontraktów oraz obserwowalność względem modelu dojrzałości, zamykając lukę fiducjarną i dając probabilistycznej AI deterministyczny kręgosłup audytu.</p>
 <p class="post-lead-heading"><strong>Kluczowe wnioski</strong></p>
 <ul class="post-lead-takeaways">

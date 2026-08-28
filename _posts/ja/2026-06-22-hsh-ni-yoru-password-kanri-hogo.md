@@ -96,7 +96,7 @@ twitter_image_alt: "セバスチャン・ルソーのモノクロ・ポートレ
 # エンタープライズ銀行業におけるパスワード管理の保護:hsh によるマルチアルゴリズムハッシュとアップグレード
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="記事の概要">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>要旨。</strong> <a href="https://github.com/sebastienrousseau/hsh">hsh</a> は、ティア 1 銀行がレガシーなパスワードハッシュを Argon2id のような現代的な標準へサービス中断なしに移行できるようにする、オープンソースのピュア Rust 暗号フレームワークです。HSM 由来のペッパリングを統合し、C ベースの FFI ラッパーに依存せず厳格なメモリ安全性を強制することで、DORA および Basel III 適合を直接脅かす暗号の劣化脆弱性を塞ぎます。</p>
 <p class="post-lead-heading"><strong>主要な要点</strong></p>
 <ul class="post-lead-takeaways">

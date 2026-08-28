@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Résumé de l'article">
 <p class="post-lead-tldr"><strong>En bref.</strong> Les orientations révisées du 17 avril 2026 sur le risque de modèle (SR 26-2 / OCC Bulletin 2026-13) remplacent le cadre de 2011 et excluent expressément l'IA générative et agentique, un appel à contributions étant promis. Cette exclusion est une décision de périmètre relative à <em>ces</em> orientations, pas un quitus prudentiel : le même modèle relève toujours du risque lié aux tiers, du risque opérationnel, de la protection des consommateurs et de l'équité de l'octroi de crédit. Pendant ce temps, la SS1/23 britannique reste neutre sur le plan technologique et continue d'y intégrer ces modèles. Un groupe bancaire exploite désormais un seul modèle sous deux réponses, et la réaction honnête consiste à le gouverner selon la plus stricte des deux.</p>
 <p class="post-lead-heading"><strong>Points clés</strong></p>
 <ul class="post-lead-takeaways">

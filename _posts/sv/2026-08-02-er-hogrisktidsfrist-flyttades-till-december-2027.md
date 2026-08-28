@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Sammanfattning av artikeln">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>Kort sagt.</strong> AI-omnibusen sköt upp högriskskyldigheterna i bilaga III till <strong>2 december 2027</strong> och bilaga I till <strong>2 augusti 2028</strong>. Den lämnade <strong>Article 50 orörd, tillämplig sedan 2 augusti 2026</strong>. Fyra skyldigheter gäller nu: att upplysa om att en person interagerar med ett AI-system; att märka AI-genererat innehåll i maskinläsbart format; att informera om känsloigenkänning och biometrisk kategorisering; och att märka deepfakes och AI-genererad text som publiceras i frågor av allmänt intresse. Exponeringen når <strong>15 miljoner euro eller 3 % av den totala globala årsomsättningen</strong>, beroende på vilket som är högre. Skyldigheten tillhör digitala kanaler och marknad, inte modellriskteamet som håller i det uppskjutna ärendet.</p>
 <p class="post-lead-heading"><strong>Viktigaste punkterna</strong></p>
 <ul class="post-lead-takeaways">

@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Agentic AI Index don Bankuna a 2026: Auna Cin Gashin Kai, Mulki, Ikon Binciken Audit, da Tasirin Kasuwanci
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Shirin auna shirin agentic AI a bankunan tier-1 a fuska shida: matakin cin gashin kai, izini na API, deterministic guardrails, ɗaukar nauyin human-in-the-loop, cikar audit, da tattalin arziƙin kowane aiki. Rarrabe agents bisa abin da aka ba su izinin yi, ba bisa hankalin model ɗin da ke ƙasa ba. Ɗauki kowane agent na samar a matsayin model na SR 11-7 / SS1/23 daga rana ta farko.</p>
 <p class="post-lead-heading"><strong>Manyan abubuwan da za a koya</strong></p>
 <ul class="post-lead-takeaways">
@@ -266,6 +266,6 @@ Lambobi huɗu a kowane workflow: matakin cin gashin kai, cikar audit-trace, ƙim
 - Cloud Native Computing Foundation, (2018). [Open Policy Agent (OPA) ⧉](https://www.openpolicyagent.org/ "Open Policy Agent — sarrafawa ta tushen manufa don muhalli na cloud native").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Game da Marubuci"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu kan amfani da AI, abubuwan more rayuwa na biyan kuɗi, kuɗin da aka tokenize, ISO 20022, tsaron bayan quantum, sabis na kuɗi na cloud-native, da kasuwannin dijital da aka tsara.</span><span class="author-credentials">Shekaru 20+ a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu kan amfani da AI, abubuwan more rayuwa na biyan kuɗi, kuɗin da aka tokenize, ISO 20022, tsaron bayan quantum, sabis na kuɗi na cloud-native, da kasuwannin dijital da aka tsara.</span><span class="author-credentials">Shekaru 20+ a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Bita ta ƙarshe <time datetime="2026-06-03">2026-06-03</time>.</p>
 <!-- enrich-end -->

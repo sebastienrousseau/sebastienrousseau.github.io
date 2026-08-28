@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Resumo do artigo">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> O primeiro prazo pós-quântico é de descoberta, não de migração — o NCSC espera um retrato completo das dependências criptográficas até 2028, antes dos marcos de migração de 2031 e 2035. Os bancos não conseguem produzi-lo a partir do registro de ativos que o DORA já os obriga a manter, porque esse registro anota o servidor, o dono e a criticidade, mas não o algoritmo, o tamanho da chave, a biblioteca ou o vencimento do certificado. O Cryptography Bill of Materials, hoje parte do CycloneDX e padronizado como ECMA-424, é o modelo de dados que falta. Tratá-lo como planilha pontual de PQC, em vez de controle mantido, é o erro que vai custar o marco de 2031.</p>
 <p class="post-lead-heading"><strong>Principais conclusões</strong></p>
 <ul class="post-lead-takeaways">

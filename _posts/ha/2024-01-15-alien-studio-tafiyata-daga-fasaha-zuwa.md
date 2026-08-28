@@ -108,7 +108,7 @@ excerpt: "Shekarar 2023 ta kasance shekarar sauyi da fahimta mai zurfi. Sakamako
 last_reviewed: "2026-05-11"
 ---
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ku tare da ni a tafiyata ta sirri daga Rust, AI, da Quantum Computing zuwa sake fasalin fasaha da daukar hoto ta Alien Studio.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan da za a koya</strong></p>
 <ul class="post-lead-takeaways">

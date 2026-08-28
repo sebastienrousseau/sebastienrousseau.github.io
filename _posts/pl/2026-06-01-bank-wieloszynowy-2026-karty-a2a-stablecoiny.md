@@ -89,7 +89,7 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Podsumowanie artykułu">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>W skrócie.</strong> Bank wieloszynowy w 2026 składa się z trzech warstw nad rdzeniem legacy: silnika orkiestracji wybierającego szynę dla każdej transakcji, księgi płynności zarządzającej saldami prefinansowanymi wymaganymi przez każdą szynę natychmiastową oraz tłumacza ISO 20022 pacs.008, który przepuszcza dane rdzenia do A2A i API Open Banking bez utraty ustrukturyzowanych informacji o płatności. Każdy, kto finansuje "FedNow" lub "stablecoiny" jako osobne programy produktowe, wyda podwójnie i będzie słabo operował obydwoma.</p>
 <p class="post-lead-heading"><strong>Najważniejsze wnioski</strong></p>
 <ul class="post-lead-takeaways">

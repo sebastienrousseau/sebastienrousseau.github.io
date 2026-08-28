@@ -86,7 +86,7 @@ webmaster: "contact@sebastienrousseau.com"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> ERC-20: ইথেরিয়াম টোকেন ERC-20 হল ইথেরিয়াম ব্লকচেইনে ব্যবহৃত সবচেয়ে সাধারণ টোকেন এবং এটিকে প্রায়শই একটি স্মার্ট কন্ট্রাক্ট ডিজিটাল চুক্তি হিসেবে উল্লেখ করা হয়।</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">

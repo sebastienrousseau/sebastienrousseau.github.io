@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Chỉ số Ngân hàng Cloud-Native 2026: DORA, Kỹ thuật Nền tảng, Cloud Chủ quyền và Phục hồi Vận hành
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Tóm tắt bài viết">
 <p class="post-lead-tldr"><strong>Tóm tắt.</strong> Ngân hàng cloud-native năm 2026 đang ở giai đoạn kiểm toán DORA, không còn ở giai đoạn chuẩn bị. Khung pháp lý có hiệu lực từ 17 tháng 1 năm 2025; chế độ chỉ định CTPP theo Điều 28-44 đang mở dần qua 2025-2026; AWS, Microsoft (Azure), Google (GCP) và Salesforce đều nằm bên trong hoặc sát chu vi chỉ định; [các ưu tiên giám sát 2026-28 ⧉](https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html "Ưu tiên Giám sát Ngân hàng ECB 2026-28") của ECB có chương trình rõ ràng về sẵn sàng đối phó gián đoạn cloud và kiểm thử thâm nhập theo mối đe doạ. Phần kỹ thuật quan trọng là các nguyên thuỷ kỹ thuật nền tảng — paved road trên Kubernetes cộng Backstage cộng OPA cộng OpenTelemetry — sinh ra bằng chứng đăng ký Điều 8 DORA với tốc độ của pipeline triển khai, cộng bằng chứng kiểm thử thoát ra giúp phân biệt khả năng thay thế tin cậy khỏi sân khấu hồ sơ.</p>
 <p class="post-lead-heading"><strong>Điểm chính</strong></p>
 <ul class="post-lead-takeaways">

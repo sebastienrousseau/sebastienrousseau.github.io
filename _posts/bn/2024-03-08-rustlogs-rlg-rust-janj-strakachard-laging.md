@@ -94,7 +94,7 @@ webmaster: "contact@sebastienrousseau.com"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> RustLogs (RLG) আবিষ্কার করুন — Rust-এর জন্য নমনীয় লগিং লাইব্রেরি, যা স্ট্রাকচার্ড লগ ফরম্যাট, অ্যাসিঙ্ক্রোনাস লগিং এবং ব্যাপক কাস্টমাইজেশন বিকল্প সরবরাহ করে। </p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">

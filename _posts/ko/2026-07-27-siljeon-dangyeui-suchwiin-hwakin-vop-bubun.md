@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **수취인 확인은 의무가 된 날 상품이기를 멈추었습니다.** 2025년 10월 9일부터 유로존 회원국의 모든 지급서비스제공자(PSP)는 Regulation (EU) 2024/886에 따라 계좌이체에 대해 수취인 확인(Verification of Payee)을 무상으로 제공해야 합니다. 확인 자체는 어렵지 않습니다. 입력된 이름을 계좌에 등록된 이름과 대조하고 답하면 됩니다. 정작 어려웠던 것은 그 주변 전부입니다. 5초의 응답 예산, 예도 아니고 아니오도 아닌 중간 답변, 확인하기 전에 해체해야 하는 기업 파일, 그리고 규정과 스킴 룰북이 모두 긋기를 거부한 책임 경계입니다.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="기사 요약">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> 즉시지급규정(Instant Payments Regulation)은 수취인 확인을 차별화 요소에서, 유로존 모든 PSP가 무상으로 운영해야 하는 공공 인프라로 바꾸었습니다. 대상은 즉시 계좌이체만이 아니라 일반 계좌이체까지입니다. 9개월이 지난 지금, 엔지니어링 비용은 매칭 알고리즘에 떨어지지 않았습니다. "부분 일치" 응답에, 기업 지급 파일을 5초 범위 안에서 건별 요청으로 분해하는 작업에, 그리고 경고를 전달했는데도 지급인이 경고 무시 후 진행하면 아무도 값을 매기지 않은 방식으로 손실이 재배분된다는 사실에 떨어졌습니다.</p>
 <p class="post-lead-heading"><strong>핵심 요점</strong></p>
 <ul class="post-lead-takeaways">

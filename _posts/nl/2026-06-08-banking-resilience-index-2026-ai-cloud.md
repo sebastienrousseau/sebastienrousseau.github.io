@@ -90,7 +90,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Samenvatting artikel">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Een Banking Resilience Index 2026 — AI-risico, concentratierisico cloud, kwantumveilige migratie, betalingscontinuïteit en kritieke derdenafhankelijkheid samen gemeten, niet als vijf gescheiden compliance-silo's.</p>
 <p class="post-lead-heading"><strong>Belangrijkste punten</strong></p>
 <ul class="post-lead-takeaways">

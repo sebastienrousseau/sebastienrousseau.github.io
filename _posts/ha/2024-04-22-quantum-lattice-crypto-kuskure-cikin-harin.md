@@ -107,7 +107,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Takaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Kuskure a cikin algorithm ɗin quantum LWE na Yilei Chen ya ba da kariya ta wucin gadi ga lattice-based cryptography. Me wannan ke nufi ga CRYSTALS-Kyber, Dilithium da taswirar hanyar PQC.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan da za a koya</strong></p>
 <ul class="post-lead-takeaways">

@@ -90,7 +90,7 @@ site_software: "Static Site Generator, Rust"
 <p class="deck">2026 年全球支付週期由三股匯流力量定義——智能體商務、隱形嵌入式支付與即時執行——立基於 Project Agorá 下的通證化統一帳本,以及 2026 年 11 月 SWIFT 結構化地址硬性切換之上。</p>
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>重點摘要。</strong>2026 年支付格局已從訊息遷移走向多維度營運模式,風險與營收皆由即時執行決定。本文將 J.P. Morgan、Global Payments、HSBC 與 Payments Association 2026 展望綜合為四支柱 G-SIB 營運計畫,涵蓋模型發起的智能體商務、永不中斷的財資 API、BIS Project Agorá 下的通證化統一帳本,以及 2026 年 11 月 14/15 日 SWIFT 結構化地址期限。Swift CBPR+ 自 2026 年 11 月 14 日起移除非結構化 `<AdrLine>` 區塊;EPC SEPA 規則手冊僅允許非結構化地址至 2026 年 11 月 15 日。</p>
 <p class="post-lead-heading"><strong>關鍵啟示</strong></p>
 <ul class="post-lead-takeaways">
@@ -366,6 +366,6 @@ Agorá 是整合框架。各國 wCBDC 實驗涵蓋央行貨幣端;Agorá 將通�
 - European Banking Authority. (2019). *Guidelines on outsourcing arrangements (EBA/GL/2019/02)*. [EBA Outsourcing Guidelines](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家,撰寫應用 AI、ISO 20022 遷移、金融服務後量子密碼學,以及批發支付的結構性轉型。</span><span class="author-credentials">逾 20 年經歷,橫跨 HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group。<a href="/about/index.html">完整檔案</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家,撰寫應用 AI、ISO 20022 遷移、金融服務後量子密碼學,以及批發支付的結構性轉型。</span><span class="author-credentials">逾 20 年經歷,橫跨 HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group。<a href="/about/index.html">完整檔案</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最後審閱 <time datetime="2026-06-25">2026-06-25</time>。</p>
 <!-- enrich-end -->

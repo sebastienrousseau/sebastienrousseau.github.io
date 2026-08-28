@@ -94,7 +94,7 @@ last_reviewed: "2026-05-24"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Takaitaccen labari">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>A takaice.</strong> <a href="https://github.com/sebastienrousseau/libmake">LibMake</a> Rust CLI tool ne na open-source (<code>cargo install libmake</code>) da ke samar da production-ready library scaffold daga CLI flags ko versioned config file (TOML, YAML, JSON, ko CSV), yana ƙirƙirar cikakken project structure da Cargo.toml, src/lib.rs, tests/, benches/, da GitHub Actions CI workflow a invocation guda.</p>
 <p class="post-lead-heading"><strong>Mahimman bayanai</strong></p>
 <ul class="post-lead-takeaways">
@@ -256,7 +256,7 @@ LibMake yana karɓar kowace string don `--edition` da `--rustversion` kuma yana 
 [00]: https://github.com/sebastienrousseau/libmake "LibMake — Rust library scaffold generator"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Game da marubuci"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki da ke rubutu kan AI mai amfani, ISO 20022 migration, post-quantum cryptography don financial services, da structural transformation na wholesale payments.</span><span class="author-credentials">Sama da shekaru 20 a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayanin martaba</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki da ke rubutu kan AI mai amfani, ISO 20022 migration, post-quantum cryptography don financial services, da structural transformation na wholesale payments.</span><span class="author-credentials">Sama da shekaru 20 a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayanin martaba</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">An sake dubawa na ƙarshe <time datetime="2026-05-24">2026-05-24</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Karin karatu</h2>

@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Ringkasan artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Rezim TLPT DORA mengubah tim merah dari latihan keamanan yang bersifat pilihan menjadi kewajiban terawasi yang menghasilkan bukti, dalam siklus tiga tahunan, bagi entitas yang ditetapkan oleh otoritas yang berwenang. Kendala yang mengikat bukan kendala teknis, melainkan kendala sisi pasokan: Pasal 27 mensyaratkan penyedia pengujian yang terakreditasi atau terikat kode etik, yang membawa jaminan independen dan asuransi tanggung gugat profesional; mengizinkan tim merah internal paling banyak untuk dua dari setiap tiga siklus; dan mewajibkan penyedia intelijen ancaman berasal dari luar pada setiap pengujian tanpa kecuali. Fungsi kritis yang berjalan di penyedia pihak ketiga menyeret penyedia tersebut masuk ke dalam pengujian.</p>
 <p class="post-lead-heading"><strong>Poin utama</strong></p>
 <ul class="post-lead-takeaways">

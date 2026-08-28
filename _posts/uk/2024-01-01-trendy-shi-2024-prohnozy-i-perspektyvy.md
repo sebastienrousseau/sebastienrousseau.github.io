@@ -109,7 +109,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>Стисло (TL;DR).</strong> Тенденції ШІ 2024: генеративний ШІ у фінансах, мультимодальні моделі, LLM на пристроях та зміни, що переформують банківську справу й розробку продуктів.</p>
 <p class="post-lead-heading"><strong>Основні висновки</strong></p>
 <ul class="post-lead-takeaways">

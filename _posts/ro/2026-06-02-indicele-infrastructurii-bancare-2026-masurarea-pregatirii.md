@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Indicele Infrastructurii Bancare 2026: măsurarea pregătirii pentru AI agentic, securitate post-cuantică, reziliență cloud-nativă și plăți de gros
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="De ce contează acest subiect">
+<aside class="post-lead" aria-label="Rezumatul articolului">
   <p class="post-lead-tldr"><strong>Despre ce este acest articol:</strong> un cadru de tip AI Index Stanford pentru măsurarea pregătirii băncilor pe cele patru domenii de infrastructură din 2026 care se mișcă acum împreună — AI agentic, criptografie post-cuantică, reziliență cloud-nativă și plăți de gros — plus cei cinci indicatori la nivel de consiliu care transformă cadrul într-o capacitate operațională.</p>
   <p class="post-lead-takeaways"><strong>Cui i se adresează:</strong> CTO de bancă, șefi de inginerie, directori de risc și reziliență, șefi de plăți, șefi de inginerie criptografică, membri ai consiliului de administrație cu supraveghere tehnologică și autoritățile de reglementare (PRA, BCE, FCA, OCC) care îi supraveghează.</p>
 </aside>

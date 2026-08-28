@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Sammanfattning av artikeln">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>Kort sagt.</strong> EU:s dataförordning fasar ut avgifterna för byte av molnleverantör och avskaffar dem helt från den <strong>12 januari 2027</strong>, datautträde inkluderat. Sedan den <strong>12 september 2025</strong> har kunder en lagstadgad rätt att byta leverantör och att få tekniskt samarbete vid överföringen av sina data; under övergångsregimen fick leverantörer endast ta ut <em>kostnader som är direkt kopplade till bytet</em>, utan påslag. DORA <strong>artikel 28.8</strong> kräver redan exitstrategier för IKT-tjänster som stöder kritiska eller viktiga funktioner, och kräver att planerna är heltäckande, dokumenterade och <strong>tillräckligt testade</strong>. Kostnaden har varit det stående skälet till att testningen aldrig blev av. I januari upphör det skälet, och glappet mellan en nedskriven plan och en påvisad plan blir hela exponeringen.</p>
 <p class="post-lead-heading"><strong>Viktigaste slutsatserna</strong></p>
 <ul class="post-lead-takeaways">

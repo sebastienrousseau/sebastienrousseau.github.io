@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Kontroll av betalningsmottagaren slutade vara en produkt den dag den blev en skyldighet.** Sedan den 9 oktober 2025 måste varje betaltjänstleverantör i en medlemsstat inom euroområdet erbjuda Verification of Payee på kreditöverföringar, kostnadsfritt, enligt Regulation (EU) 2024/886. Själva kontrollen är inte svår: jämför ett namn med det namn som är registrerat på kontot och lämna ett svar. Det som visat sig svårt är allt runt omkring — en svarsbudget på fem sekunder, ett mellansvar som varken är ja eller nej, företagsfiler som måste plockas isär innan de kan kontrolleras, och en ansvarsgräns som varken förordningen eller systemets regelbok vill dra.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Instant Payments Regulation förvandlade kontrollen av betalningsmottagaren från en differentierare till en basfunktion som varje PSP i euroområdet måste driva utan avgift, på vanliga kreditöverföringar såväl som på omedelbara. Nio månader in har ingenjörskostnaden inte landat på matchningsalgoritmen. Den har landat på svaret "nära träff", på att stycka upp företagens betalningsfiler i en förfrågan per rad inom ett femsekundersfönster, och på att en varning som visas och ignoreras flyttar förlusten på ett sätt som ingen har prissatt.</p>
 <p class="post-lead-heading"><strong>Viktigaste slutsatserna</strong></p>
 <ul class="post-lead-takeaways">

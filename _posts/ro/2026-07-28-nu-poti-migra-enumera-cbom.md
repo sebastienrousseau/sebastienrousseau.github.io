@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Rezumatul articolului">
 <p class="post-lead-tldr"><strong>Pe scurt.</strong> Primul termen post-cuantic este identificarea și inventarierea, nu migrarea — NCSC așteaptă o imagine completă a dependențelor criptografice până în 2028, înaintea jaloanelor de migrare din 2031 și 2035. Băncile nu o pot produce din registrul activelor pe care DORA le obligă deja să îl țină, pentru că acel registru consemnează serverul, proprietarul și criticitatea, dar nu algoritmul, lungimea cheii, biblioteca sau expirarea certificatului. Cryptography Bill of Materials, acum parte din CycloneDX și standardizat ca ECMA-424, este modelul de date care lipsește. Tratarea lui ca un tabel PQC făcut o singură dată, în loc de un control menținut permanent, este greșeala care va costa jalonul din 2031.</p>
 <p class="post-lead-heading"><strong>Concluzii esențiale</strong></p>
 <ul class="post-lead-takeaways">

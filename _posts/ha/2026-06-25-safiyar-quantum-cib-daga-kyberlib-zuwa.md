@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Safiyar Quantum don CIB: Daga KyberLib zuwa Tarin Biyan Kuɗi Mai Juriya ga Quantum
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Taƙaitawar labari">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> BIS Quantum Dawn da taswirar PQC ta G7 Cyber Expert Group na Janairu 2026 sun fitar da cryptography na post-quantum daga bincike zuwa cikin ajandar hukumar na banki na kasuwanci da na zuba jari (CIB). KyberLib ya ba banki wurin farawa mai inspectable na ML-KEM da ML-DSA; sauran aikin shi ne shirin sauyawa na shekaru da yawa, mai crypto-agile a fadin biyan kuɗi, kuɗin kasuwanci, custody, da bayyanawa.</p>
 <p class="post-lead-heading"><strong>Manyan abubuwan ɗauka</strong></p>
 <ul class="post-lead-takeaways">
@@ -171,6 +171,6 @@ Sauyawar post-quantum ba ya zama tambaya ta ko primitives suna nan ba. Suna nan;
 Fara da CBOM. Yi wrapper ga kowane primitive. Ƙaurar mafi tsayi da farko. Sa hannunka a kai.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Game da marubuci"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist da ke rubutu akan AI mai amfani, ƙaurar ISO 20022, cryptography na post-quantum don ayyukan kuɗi, da sauyawar tsari na biyan kuɗi na manyan ma'amaloli.</span><span class="author-credentials">Shekaru 20+ a fadin HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayanin</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist da ke rubutu akan AI mai amfani, ƙaurar ISO 20022, cryptography na post-quantum don ayyukan kuɗi, da sauyawar tsari na biyan kuɗi na manyan ma'amaloli.</span><span class="author-credentials">Shekaru 20+ a fadin HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayanin</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">An bita na ƙarshe <time datetime="2026-06-25">2026-06-25</time>.</p>
 <!-- enrich-end -->

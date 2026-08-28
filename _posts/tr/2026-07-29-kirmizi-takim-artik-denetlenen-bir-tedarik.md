@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Makale özeti">
 <p class="post-lead-tldr"><strong>Özet.</strong> DORA'nın TLPT rejimi, kırmızı takım çalışmasını isteğe bağlı bir güvenlik egzersizinden, yetkili otoritenin belirlediği kuruluşlar için üç yıllık bir döngüde denetlenen ve kanıt üreten bir yükümlülüğe dönüştürür. Bağlayıcı kısıtlar teknik değildir. Arz tarafındadır: Article 27, bağımsız güvence raporu ve mesleki sorumluluk sigortası taşıyan, akredite veya davranış kurallarına bağlı test sağlayıcıları ister; iç kırmızı takımlara her üç döngünün en fazla ikisinde izin verir; tehdit istihbaratı sağlayıcısının ise istisnasız her seferinde dışarıdan olmasını şart koşar. Üçüncü taraf sağlayıcılar üzerinde çalışan kritik işlevler, o sağlayıcıları da testin içine çeker.</p>
 <p class="post-lead-heading"><strong>Temel çıkarımlar</strong></p>
 <ul class="post-lead-takeaways">

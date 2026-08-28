@@ -106,7 +106,7 @@ excerpt: "Gemini 1.5 an gina shi ne akan sabon tsarin Mixture of Experts (MoE), 
 last_reviewed: "2026-05-11"
 ---
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Gemini 1.5 na Google yana faɗaɗa tagar mahallin sama da alamomi miliyan 1. Abin da wannan ke buɗewa don harkar kuɗi ta retrieval-augmented da wuraren musayar da ya kamata a san su.</p>
 <p class="post-lead-heading"><strong>Muhimman bayanai</strong></p>
 <ul class="post-lead-takeaways">

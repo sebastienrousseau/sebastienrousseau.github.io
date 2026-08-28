@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Always-On CIB: kybernetická obnova, záložní koleje a kvantově bezpečná treasury
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Shrnutí článku">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Korporátní a investiční bankovnictví se v roce 2026 posuzuje podle chování v režimu always-on během kybernetické události. Trezory kybernetické obnovy, záložní koleje ISO 20022 napříč RTGS, instantními i tokenizovanými sítěmi a kvantově bezpečné treasury kontroly nyní sedí na jednom provozním schématu — a podepisuje ho představenstvo.</p>
 <p class="post-lead-heading"><strong>Klíčové závěry</strong></p>
 <ul class="post-lead-takeaways">

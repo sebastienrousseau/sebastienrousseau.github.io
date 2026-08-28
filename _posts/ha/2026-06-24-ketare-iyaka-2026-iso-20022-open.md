@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Ƙetare Iyaka 2026: ISO 20022, Open Finance da Tokenised Deposits a Kuɗin Kamfanoni
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Taƙaitawar labari">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Kuɗin kamfanoni na ƙetare iyaka a 2026 yana aiki a kan layi huɗu a hannu ɗaya — SWIFT CBPR+, A2A nan take a ƙarƙashin PSD3/FiDA, tokenised deposits, da hanyoyin stablecoin — an haɗa su tare ta ISO 20022 a matsayin harshen gama gari. Aikin ƙungiyoyin CIB da na kuɗin kamfanoni shi ne orchestration, ba zaɓen layi ba.</p>
 <p class="post-lead-heading"><strong>Manyan abubuwan ɗauka</strong></p>
 <ul class="post-lead-takeaways">

@@ -91,7 +91,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Fún atẹ̀wé tí ìlànà ń ṣàkóso, ẹ̀rọ-agbéjáde ojú-òpó aláìdúró kì í ṣe ohun-èlò àpẹẹrẹ mọ́; ó ti di apá kan agbègbè-ewu iṣẹ́.** Rust orísun-ṣíṣí [static-site-generator](https://github.com/sebastienrousseau/static-site-generator) ni a kọ́ lórí ìpìlẹ̀ yẹn, tí ó ń gbé ààbò, ìwọlé-fún-gbogbo, ìtumọ̀-orílẹ̀-èdè àti ọ̀nà-iṣẹ́ àkóónú AI lọ sí àkókò-àkópọ̀ kí àyẹ̀wò tí ó kùnà lè dá àkópọ̀ dúró dípò kí ó dé ipò-ìṣàgbéjáde. Ìtúpalẹ̀ yìí ya ohun tí v0.0.41 ń gbé jáde ní tòótọ́ kúrò lọ́wọ́ ohun tí àkọsílẹ̀ rẹ̀ ṣì ń ṣèlérí nìkan, ó ṣàkàwé agbára-iṣẹ́ ilé-iṣẹ́ márùn-ún tí kò tíì ní, ó sì dábàá ọ̀nà onípele sí ìtújáde 1.0 tó bá DORA, Òfin Ìwọlé-fún-Gbogbo ti Yúróòpù àti àwọn ìlànà ẹ̀wọ̀n-ìpèsè òde-òní mu.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Rust <code>static-site-generator</code> ń tọ́jú ìṣàgbéjáde wẹ́ẹ̀bù gẹ́gẹ́ bí ọ̀nà-iṣẹ́ sọ́fítíwérì tí a lè ṣàyẹ̀wò tó sì jẹ́ aláàbò-nípasẹ̀-ìpìlẹ̀: <code>forbid(unsafe_code)</code> káàkiri iṣẹ́-àyè, SHA-384 Subresource Integrity, ìfàyọ Content Security Policy, ẹnu-ọ̀nà WCAG 2.2 AA àkókò-àkópọ̀ àti ọ̀nà-iṣẹ́ LLM àdúgbò-àkọ́kọ́. Àyẹ̀wò kóòdù ti v0.0.41 fihàn pé ọ̀pọ̀ ẹ̀yà tí a kọsílẹ̀ ṣì jẹ́ àfojúsùn, ìdínkù-ìwọ̀n àbínibí, àkópọ̀-àtúntò àfikún-síi àti AVIF nínú wọn. Èyí ni àyẹ̀wò àlàfo òtítọ́ àti àwòrán-ọ̀nà onípele sí 1.0 ipò-ilé-iṣẹ́.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

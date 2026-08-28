@@ -109,7 +109,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Takaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>A takaice (TL;DR).</strong> Dokar EU AI Act ta kafa tsarin farko mafi cikakken tsari don tsara dokokin AI na ɗa'a da matakan haɗari a duk duniya. Abubuwan da suka canza ga bankuna, masu siyarwa da kuma tsarin haɗarin babba.</p>
 <p class="post-lead-heading"><strong>Babban abubuwan da za a iya koya</strong></p>
 <ul class="post-lead-takeaways">

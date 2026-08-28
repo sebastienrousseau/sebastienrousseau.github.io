@@ -89,7 +89,7 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="記事サマリー">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>要点。</strong> SWIFT MT と ISO 20022 を運ぶ暗号封筒は、RSA-2048 と ECC を前提に設計されています。NIST が標準化した耐量子アルゴリズム — ML-KEM(FIPS 203)と ML-DSA(FIPS 204) — の公開鍵と署名は、最大で 20 倍大きくなります。これらを既存レールに後付けすると、パケット断片化、HSM スループットの枯渇、許容できないレイテンシ尾部が発生します。今収穫し後で復号(HNDL)は、待つという選択肢を奪いました。2026 年に防衛可能なアーキテクチャ選択は、パッチではなく暗号アジリティを備えたレールへの置換です。</p>
 <p class="post-lead-heading"><strong>主な論点</strong></p>
 <ul class="post-lead-takeaways">

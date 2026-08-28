@@ -86,7 +86,7 @@ site_software: "Static Site Generator, Rust"
 ---
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Sammanfattning av artikeln">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Grossistbetalningar 2026 ligger i skärningspunkten mellan två strukturella skiften: ISO 20022 som tvingar in strukturerad betalningsdata i driftsmodellen, och tokeniserade insättningar plus BIS Project Agorá som flyttar gränsöverskridande avveckling mot atomära, programmerbara, alltid påslagna spår. Frågan 2026 för en bank är inte längre "migrerade vi meddelandena" utan "är våra betalningsoperationer mätbara, dirigerade och tillsynsbara" — och indexet bryter ner det i fyra exakta procenttal: fullständighet i strukturerad data, optimalitet i spårdirigering, eftersläpning av avvecklingsfinalitet och täckning av Agorá-korridorer.</p>
 <p class="post-lead-heading"><strong>Centrala lärdomar</strong></p>
 <ul class="post-lead-takeaways">

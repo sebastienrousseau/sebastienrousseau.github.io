@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Chỉ số Hạ tầng Ngân hàng 2026: Đo lường mức độ sẵn sàng cho Agentic AI, An ninh Kháng Lượng tử, Khả năng Phục hồi Cloud Native và Thanh toán Bán buôn
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Vì sao điều này quan trọng">
+<aside class="post-lead" aria-label="Tóm tắt bài viết">
   <p class="post-lead-tldr"><strong>Bài viết này về điều gì:</strong> Một khung kiểu Stanford AI Index để đo lường mức độ sẵn sàng của ngân hàng trên bốn lĩnh vực hạ tầng năm 2026 hiện đang chuyển động cùng nhau — agentic AI, mật mã hậu lượng tử, khả năng phục hồi cloud-native và thanh toán bán buôn — cùng năm chỉ số cấp hội đồng biến khung này thành năng lực vận hành.</p>
   <p class="post-lead-takeaways"><strong>Ai nên đọc bài này:</strong> CTO ngân hàng, Trưởng Bộ phận Kỹ thuật, Giám đốc Rủi ro và Khả năng Phục hồi, Trưởng Bộ phận Thanh toán, Trưởng Bộ phận Kỹ thuật Mật mã, thành viên hội đồng quản trị giám sát công nghệ, và các cơ quan quản lý (PRA, ECB, FCA, OCC) giám sát họ.</p>
 </aside>

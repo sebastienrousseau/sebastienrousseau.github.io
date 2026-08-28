@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>摘要重點。</strong> 第一個後量子期限是盤點，不是遷移——NCSC 要求在 2028 年之前對密碼相依關係有完整圖像，早於 2031 年與 2035 年的遷移里程碑。銀行無法從 DORA 已經強制他們維護的資產登錄冊中生出這張圖像，因為那份登錄冊記錄的是伺服器、擁有者與重要性，而不是演算法、金鑰長度、函式庫或憑證到期日。密碼物料清單（Cryptography Bill of Materials，CBOM）如今已納入 CycloneDX 並標準化為 ECMA-424，正是缺席的那個資料模型。把它當成一次性的 PQC 試算表、而不是一項持續維護的控制措施，就是會賠掉 2031 年里程碑的那個錯誤。</p>
 <p class="post-lead-heading"><strong>核心要點</strong></p>
 <ul class="post-lead-takeaways">

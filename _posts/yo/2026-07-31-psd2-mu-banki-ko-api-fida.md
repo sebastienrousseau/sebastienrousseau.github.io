@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> FiDA kì í ṣe PSD2 pẹ̀lú endpoint kún un. Ìyapa ìṣètò mẹ́ta ló yí ìtumọ̀ ìtẹ̀lé-òfin padà: scheme tí o gbọ́dọ̀ wọ̀ ni yóò máa ṣàkóso ààyè, kì í ṣe interface tí o kọ́ fúnra rẹ; àwọn data holder lè béèrè compensation tí ó bọ́gbọ́n mu, nítorí náà ààyè yóò di ọjà onílówó dípò ojúṣe ọ̀fẹ́; scope náà sì dé mọ́gẹ́ẹ̀jì, ìfowópamọ́, ìdókòwò, owó ìfẹ̀yìntì àti non-life insurance — àwọn ọjà tí àwọn báńkì ń jèrè lórí ní ti gidi. Ìwé náà ṣì wà nínú trilogue, ṣùgbọ́n a ń ṣe àpẹrẹ àwọn scheme tí yóò pinnu àwọn ọ̀pá-ìwọ̀n báyìí, ibẹ̀ sì ni agbára ìdúnàádúrà wà.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

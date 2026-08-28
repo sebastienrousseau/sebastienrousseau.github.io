@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Agentenbasierte Zahlungen im Banking: Einwilligung, Haftung, neue Zahlungs-UX 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Artikelzusammenfassung">
 <p class="post-lead-tldr"><strong>Kurzfassung.</strong> Agentenbasierte Zahlungen (agentic payments) sind 2026 kein Konzept mehr: Mastercard und Rabobank haben in den Niederlanden eine Live-Transaktion abgewickelt, bei der ein AI agent (Künstliche-Intelligenz-Agent) die Zahlung über Mastercard Agent Pay anstieß, ohne jemals Kartendaten zu berühren. AP2-konforme kryptografische Mandate sowie x402, A2A, MCP und MPP etablieren sich als Protokollschicht, während EFTA, Regulation E und das britische Zahlungsdienste-Recht für autonome Agententransaktionen noch nicht angepasst wurden. Banken benötigen jetzt eine Architektur aus Einwilligung, Identität und Haftung, die einen vor-Abwicklungs-Nachweis (pre-settlement evidence) erzeugt — keine nachträgliche Streitfall-Verteidigung.</p>
 <p class="post-lead-heading"><strong>Kernaussagen</strong></p>
 <ul class="post-lead-takeaways">

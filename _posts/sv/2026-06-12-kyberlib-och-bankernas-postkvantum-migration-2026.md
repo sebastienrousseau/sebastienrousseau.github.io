@@ -90,7 +90,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Sammanfattning av artikeln">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>Sammanfattning.</strong> Bankinfrastrukturen står 2026 inför ett systemhot med en känd slutpunkt: beräkningar i kvantskala kommer att knäcka det RSA- och ECC-nyckelutbyte som skyddar dagens transittrafik. Federala standarder och tillsynsdokument har höjt medvetenheten; det tekniska genomförandet förblir uppdelat i silor. <a href="https://github.com/sebastienrousseau/kyberlib">KyberLib</a> är en ingenjörsritning med öppen källkod som flyttar postkvantum-berättelsen in i konkret, minnessäker Rust-kod — med NIST-standardiserad ML-KEM (FIPS 203) bakom krypto-agila abstraktionsgränser, så att institutioner kan uppgradera transportsäkerhet och nyckelinkapsling innan "Store Now, Decrypt Later"-attacker når deras arkiv.</p>
 <p class="post-lead-heading"><strong>Viktiga slutsatser</strong></p>
 <ul class="post-lead-takeaways">

@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # CIB の量子の夜明け:KyberLib から量子耐性ペイメントスタックへ
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> BIS *Quantum Dawn* と G7 サイバー専門家グループの 2026 年 1 月 PQC ロードマップは、ポスト量子暗号を研究領域からコーポレート・投資銀行 (CIB) の取締役会議題へ押し上げました。KyberLib は、検査可能な ML-KEM および ML-DSA の出発点を銀行へ提供します。残る作業は、ペイメント、貿易金融、カストディ、開示を横断する複数年の、暗号アジリティを備えた移行プログラムです。</p>
 <p class="post-lead-heading"><strong>主要な要点</strong></p>
 <ul class="post-lead-takeaways">
@@ -171,6 +171,6 @@ KyberLib は純粋な Rust でプリミティブを実証します。Tier-1 銀�
 CBOM から始めてください。すべてのプリミティブをラップしてください。最も長いテールから移行してください。そこに自分の名を記してください。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="セバスチャン・ルソーのポートレート" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、ホールセールペイメントの構造的転換を執筆するシニアバンキングテクノロジスト。</span><span class="author-credentials">HSBC コマーシャル・インベストメントバンク、PayPal、Barclays、Shazam、AKQA、Virgin Group を横断する 20 年以上の経験。<a href="/about/index.html">プロフィール全文</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="著者について"><img alt="セバスチャン・ルソーのポートレート" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、ホールセールペイメントの構造的転換を執筆するシニアバンキングテクノロジスト。</span><span class="author-credentials">HSBC コマーシャル・インベストメントバンク、PayPal、Barclays、Shazam、AKQA、Virgin Group を横断する 20 年以上の経験。<a href="/about/index.html">プロフィール全文</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最終レビュー <time datetime="2026-06-25">2026-06-25</time>。</p>
 <!-- enrich-end -->

@@ -107,7 +107,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Akopọ abala">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Algorithm kuantum akoko polynomial tuntun ti Yilei Chen fojusi cryptography lattice, pẹlu awọn ipa fun awọn iṣedede post-quantum bii CRYSTALS-Kyber.</p>
 <p class="post-lead-heading"><strong>Awọn aaye pataki</strong></p>
 <ul class="post-lead-takeaways">
@@ -213,7 +213,7 @@ Kuperberg, G. (2005). [**A subexponential-time quantum algorithm for the dihedra
 [02]: https://arxiv.org/abs/quant-ph/0302112 "Algorithm kuantum akoko subexponential fun iṣoro dihedral hidden subgroup"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nipa onkọwe"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onimọ-ẹrọ ile-ifowopamọ giga ti o kọwe lori applied AI, ISO 20022 migration, post-quantum cryptography fun awọn iṣẹ iṣowo, ati iyipada igbekalẹ ti awọn sisanwo osunwon.</span><span class="author-credentials">Ọdun 20+ kọja HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaili ni kikun</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onimọ-ẹrọ ile-ifowopamọ giga ti o kọwe lori applied AI, ISO 20022 migration, post-quantum cryptography fun awọn iṣẹ iṣowo, ati iyipada igbekalẹ ti awọn sisanwo osunwon.</span><span class="author-credentials">Ọdun 20+ kọja HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaili ni kikun</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Atunyẹwo kẹhin <time datetime="2026-06-23">2026-06-23</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Kika to jọmọ</h2>

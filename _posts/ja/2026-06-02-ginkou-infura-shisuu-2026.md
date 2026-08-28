@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # 2026 年銀行インフラ指数:エージェント型 AI、量子安全セキュリティ、クラウドネイティブ・レジリエンス、ホールセール決済の準備度計測
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="本稿の意義">
+<aside class="post-lead" aria-label="記事の要約">
   <p class="post-lead-tldr"><strong>本稿の主題。</strong> Stanford AI Index 型のフレームワークを用い、2026 年に一体として動く 4 つのインフラ領域 — エージェント型 AI、ポスト量子暗号、クラウドネイティブ・レジリエンス、ホールセール決済 — の銀行準備度を計測します。あわせて、このフレームワークを運営能力へと転換する取締役会レベルの 5 つの指標を提示します。</p>
   <p class="post-lead-takeaways"><strong>想定読者。</strong> 銀行 CTO、エンジニアリング責任者、最高リスク・レジリエンス責任者(CRRO)、決済責任者、暗号エンジニアリング責任者、テクノロジー監督を担う取締役、そして彼らを監督する規制当局(PRA、ECB、FCA、OCC)。</p>
 </aside>

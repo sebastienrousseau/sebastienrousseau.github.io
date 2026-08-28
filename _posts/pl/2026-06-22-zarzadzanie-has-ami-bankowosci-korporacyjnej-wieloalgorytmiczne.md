@@ -96,7 +96,7 @@ twitter_image_alt: "Czarno-biały portret Sebastiena Rousseau"
 # Zarządzanie hasłami w bankowości korporacyjnej: wieloalgorytmiczne hashowanie i aktualizacje z hsh
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Podsumowanie artykułu">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> <a href="https://github.com/sebastienrousseau/hsh">hsh</a> to open-source'owy framework kryptograficzny napisany w czystym Rust, który pozwala bankom tier-1 migrować starsze hashe haseł do nowoczesnych standardów takich jak Argon2id bez żadnej przerwy w usłudze. Integrując pieprzenie wspierane przez HSM i wymuszając ścisłe bezpieczeństwo pamięci bez wrapperów FFI w C, zamyka podatności wynikające z degradacji kryptografii, które bezpośrednio zagrażają zgodności z DORA i Basel III.</p>
 <p class="post-lead-heading"><strong>Kluczowe wnioski</strong></p>
 <ul class="post-lead-takeaways">

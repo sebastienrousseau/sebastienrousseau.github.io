@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Ma'aunin Juriya na Banki na Post-Quantum a 2026: EO 14409, Ƙayyadaddun Lokuta na Duniya, da Juriyar Cryptography ta Amana
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Takaitaccen labari">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ƙaurar post-quantum cryptography (PQC) ta wuce wurin da babu komawa. Tare da sanya hannu kan Executive Order 14409 na Amurka a ranar 22 ga Yuni 2026 da ANSSI na Faransa wadda ta sanya ƙayyadadden lokaci na 2030 — tare da dakatar da takardar shaida ga kayayyakin da ba PQC ba a 2027 — juriyar cryptography ba sauran buri na fasaha ba ne. Wajibcin tsari ne. Wannan ma'aunin yana mayar da wannan wajibci zuwa katin maki 0–5 da kwamitin gudanarwa zai iya bita a fadin layuka biyar masu iya bincike.</p>
 <p class="post-lead-heading"><strong>Mahimman abubuwan da za a koya</strong></p>
 <ul class="post-lead-takeaways">
@@ -211,6 +211,6 @@ Tsarin hybrid mai iyaka yana rage haɗarin algorithm — hanyar tana tsira idan 
 - [BIS Project Leap — kāre tsarin kuɗi daga quantum](https://www.bis.org/about/bisih/topics/cyber_security/leap.htm "BIS Innovation Hub — Project Leap, kāre tsarin biyan kuɗi na babban banki da tsakanin bankuna daga quantum")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Game da marubuci"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist da ke rubutu akan AI mai amfani, ƙaurar ISO 20022, cryptography na post-quantum don ayyukan kuɗi, da sauyawar tsari na biyan kuɗi na manyan ma'amaloli.</span><span class="author-credentials">Shekaru 20+ a fadin HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayanin</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist da ke rubutu akan AI mai amfani, ƙaurar ISO 20022, cryptography na post-quantum don ayyukan kuɗi, da sauyawar tsari na biyan kuɗi na manyan ma'amaloli.</span><span class="author-credentials">Shekaru 20+ a fadin HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayanin</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">An bita na ƙarshe <time datetime="2026-06-26">2026-06-26</time>.</p>
 <!-- enrich-end -->

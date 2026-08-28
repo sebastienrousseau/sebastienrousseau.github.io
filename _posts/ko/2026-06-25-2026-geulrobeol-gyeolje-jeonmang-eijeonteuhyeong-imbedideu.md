@@ -90,7 +90,7 @@ site_software: "Static Site Generator, Rust"
 <p class="deck">2026년 글로벌 결제 사이클은 세 가지 융합되는 힘 — 에이전트형 커머스, 임베디드 결제, 실시간 실행 — 으로 정의되며, Project Agorá 하의 토큰화 통합 원장과 2026년 11월 14/15일의 확정된 SWIFT 및 SEPA 구조화 주소 컷오버 위에 자리잡고 있습니다. Swift CBPR+는 2026년 11월 14일부터 비구조화 `<AdrLine>` 블록을 제거합니다. EPC SEPA 규칙서는 2026년 11월 15일까지만 비구조화 주소를 허용합니다.</p>
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="기사 요약">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> 2026년 결제 환경은 메시징 마이그레이션에서 벗어나, 실시간 실행이 리스크와 수익을 좌우하는 다차원 운영 모델로 이동했습니다. 이 글은 J.P. Morgan, Global Payments, HSBC, Payments Association의 2026년 전망을 4개 기둥의 G-SIB 운영 계획으로 종합하며, 모델이 개시하는 에이전트형 커머스, 상시 가동 자금 관리 API, BIS Project Agorá 하의 토큰화 통합 원장, 그리고 2026년 11월 14/15일 SWIFT 및 SEPA 구조화 주소 마감일을 다룹니다. Swift CBPR+는 2026년 11월 14일부터 비구조화 `<AdrLine>` 블록을 제거합니다. EPC SEPA 규칙서는 2026년 11월 15일까지만 비구조화 주소를 허용합니다.</p>
 <p class="post-lead-heading"><strong>핵심 요점</strong></p>
 <ul class="post-lead-takeaways">
@@ -365,6 +365,6 @@ Agorá는 통합 프레임입니다. 국가 wCBDC 실험은 중앙은행 화폐 
 - European Banking Authority. (2019). *Guidelines on outsourcing arrangements (EBA/GL/2019/02)*. [EBA Outsourcing Guidelines](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="저자 소개"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-06-25">2026-06-25</time>.</p>
 <!-- enrich-end -->

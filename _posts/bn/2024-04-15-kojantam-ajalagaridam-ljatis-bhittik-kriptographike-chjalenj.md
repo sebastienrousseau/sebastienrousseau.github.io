@@ -107,7 +107,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="নিবন্ধের সারাংশ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Yilei Chen-এর একটি নতুন পলিনোমিয়াল-টাইম কোয়ান্টাম অ্যালগরিদম ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফিকে লক্ষ্য করে। CRYSTALS-Kyber সহ পোস্ট-কোয়ান্টাম মানদণ্ডের উপর এর প্রভাব।</p>
 <p class="post-lead-heading"><strong>মূল শিক্ষা</strong></p>
 <ul class="post-lead-takeaways">

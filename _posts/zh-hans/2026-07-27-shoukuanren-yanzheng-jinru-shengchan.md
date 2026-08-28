@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **收款人验证在成为法定义务的那一天,就不再是一款产品。** 自 2025 年 10 月 9 日起,欧元区成员国的每一家支付服务提供商都必须依据 Regulation (EU) 2024/886,对贷记转账免费提供收款人验证。检查本身并不难:把一个名称与账户上登记的名称比对,然后给出答案。难的是它周围的一切——五秒响应预算、一个既不是"是"也不是"否"的中间答案、必须先拆开才能校验的企业文件,以及监管条例和规则手册都拒绝划定的责任边界。
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>TL;DR。</strong>即时支付条例把收款人验证从差异化卖点变成了每家欧元区支付服务提供商必须免费运行的公共设施,适用范围既覆盖即时贷记转账,也覆盖普通贷记转账。上线九个月后,工程成本并没有落在匹配算法上,而是落在"近似匹配"这一响应类型上,落在把企业支付文件拆解成逐笔请求并塞进五秒窗口这件事上,也落在一个事实上:警告已发出、付款人执意继续,损失的归属就此改变,而没有人为这种改变定过价。</p>
 <p class="post-lead-heading"><strong>核心要点</strong></p>
 <ul class="post-lead-takeaways">

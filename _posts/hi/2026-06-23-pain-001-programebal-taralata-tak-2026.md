@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Pain.001 से प्रोग्रामेबल तरलता तक: 2026 में ट्रेज़री के स्वायत्त तंत्रिका तंत्र के रूप में ISO 20022
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="लेख सारांश">
 <p class="post-lead-tldr"><strong>संक्षेप में।</strong> ISO 20022 अब कोई माइग्रेशन परियोजना नहीं है। 2026 में यह प्रोग्रामेबल तरलता, एजेंटिक ट्रेज़री और नवंबर 2026 SWIFT MT/MX कट-ओवर के नीचे का डेटा सब्सट्रेट है — जिसे पूरा करने में लगभग आधे बैंक अभी भी पटरी से उतरे हुए हैं।</p>
 <p class="post-lead-heading"><strong>मुख्य निष्कर्ष</strong></p>
 <ul class="post-lead-takeaways">
@@ -250,6 +250,6 @@ RedCompass Labs (2025). *What now? ISO 20022 deadlines in 2026 onwards*. उप�
 SWIFT (2024). *Cross-Border Payments and Reporting Plus (CBPR+) usage guidelines*. उपलब्ध: [https://www.swift.com/standards/iso-20022/iso-20022-programme](https://www.swift.com/standards/iso-20022/iso-20022-programme "SWIFT CBPR+ usage guidelines")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Sebastien Rousseau का चित्र" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग प्रौद्योगिकीविद् जो अनुप्रयुक्त AI, ISO 20022 माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफ़ी और थोक भुगतान के संरचनात्मक रूपांतरण पर लिखते हैं।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20+ वर्ष। <a href="/about/index.html">पूर्ण प्रोफ़ाइल</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="लेखक के बारे में"><img alt="Sebastien Rousseau का चित्र" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग प्रौद्योगिकीविद् जो अनुप्रयुक्त AI, ISO 20022 माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफ़ी और थोक भुगतान के संरचनात्मक रूपांतरण पर लिखते हैं।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20+ वर्ष। <a href="/about/index.html">पूर्ण प्रोफ़ाइल</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-06-23">2026-06-23</time>।</p>
 <!-- enrich-end -->

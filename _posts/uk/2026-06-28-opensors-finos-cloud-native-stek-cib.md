@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Опенсорс, FINOS і cloud-native стек CIB
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Morgan Stanley, JPMorgan і Citi подвоюють ставку на FINOS і Linux Foundation. Cloud-native стек CIB у 2026 році відкритий за замовчуванням — бібліотеки під MIT, Apache 2.0 і BSD-3-Clause, рантайм CNCF, SBOM, провенанс SLSA та артефакти, підписані sigstore — а бібліотеки на Rust на кшталт noyalib, http-handle, hsh і KyberLib показують, як цей стек виглядає в коді.</p>
 <p class="post-lead-heading"><strong>Ключові висновки</strong></p>
 <ul class="post-lead-takeaways">
@@ -178,6 +178,6 @@ Cloud-native стек CIB у 2026 році — це більше не карти
 Опенсорс більше не питання модернізації. Це відповідь модернізації.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший банківський технолог, що пише про прикладний AI, міграцію ISO 20022, постквантову криптографію для фінансових послуг та структурну трансформацію оптових платежів.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший банківський технолог, що пише про прикладний AI, міграцію ISO 20022, постквантову криптографію для фінансових послуг та структурну трансформацію оптових платежів.</span><span class="author-credentials">Понад 20 років у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Востаннє переглянуто <time datetime="2026-06-28">2026-06-28</time>.</p>
 <!-- enrich-end -->

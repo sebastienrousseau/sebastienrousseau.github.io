@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Zusammenfassung des Artikels">
+<aside class="post-lead" aria-label="Artikelzusammenfassung">
 <p class="post-lead-tldr"><strong>Kurz gefasst.</strong> Die Verordnung (EU) 2024/2847 — der Cyber Resilience Act — gilt vollumfänglich ab dem <strong>11. Dezember 2027</strong>, ihre <strong>Meldepflichten nach Artikel 14 beginnen jedoch am 11. September 2026</strong>. Hersteller müssen eine <strong>Frühwarnung binnen 24 Stunden</strong> nach Kenntnis einer aktiv ausgenutzten Schwachstelle oder eines schwerwiegenden Vorfalls übermitteln, eine <strong>vollständige Meldung binnen 72 Stunden</strong> und einen <strong>Abschlussbericht binnen 14 Tagen</strong> (Schwachstellen) beziehungsweise <strong>einem Monat</strong> (Vorfälle), über die zentrale Meldeplattform der ENISA an das CSIRT der Hauptniederlassung des Herstellers. Das Risiko reicht bis <strong>15 Millionen Euro oder 2,5 % des weltweiten Jahresumsatzes</strong>, je nachdem, welcher Betrag höher ist. Die <em>Lex-specialis</em>-Regel, die von NIS2 auf DORA verweist, greift nicht, denn der CRA ist weder NIS2 noch Unternehmensrecht.</p>
 <p class="post-lead-heading"><strong>Kernaussagen</strong></p>
 <ul class="post-lead-takeaways">

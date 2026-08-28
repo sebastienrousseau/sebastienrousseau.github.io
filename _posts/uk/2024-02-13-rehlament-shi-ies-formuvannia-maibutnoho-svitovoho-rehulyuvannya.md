@@ -109,7 +109,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Закон ЄС про штучний інтелект (EU AI Act) встановлює першу комплексну структуру для етичного, розділеного за рівнями ризику регулювання ШІ в усьому світі. Що змінюється для банків, постачальників та систем із високим ризиком.</p>
 <p class="post-lead-heading"><strong>Основні висновки</strong></p>
 <ul class="post-lead-takeaways">

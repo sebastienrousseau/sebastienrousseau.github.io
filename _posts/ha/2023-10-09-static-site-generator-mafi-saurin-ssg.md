@@ -99,7 +99,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Taƙaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Yana ba ku damar ƙirƙirar gidajen yanar gizo na tsaye masu tasiri tare da yiwuwar da ba ta iyaka, girma marar iyaka, da kasancewar yanar gizo ta musamman da kuke sarrafawa.</p>
 <p class="post-lead-heading"><strong>Babban abubuwan da aka koya</strong></p>
 <ul class="post-lead-takeaways">

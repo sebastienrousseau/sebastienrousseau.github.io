@@ -89,7 +89,7 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Sammanfattning av artikeln">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Multi-rälsbanken 2026 består av tre lager staplade ovanpå den äldre kärnan: en orkestreringsmotor som väljer räls per transaktion, en likviditetsbok som hanterar de förfinansierade saldon som varje omedelbar räls kräver, och en ISO 20022 pacs.008-översättare som låter kärndata flöda in i A2A och Open Banking-API:er utan att förlora strukturerad betalningsinformation. Den som finansierar "FedNow" eller "stablecoins" som separata produktprogram betalar dubbelt och driver båda dåligt.</p>
 <p class="post-lead-heading"><strong>Centrala slutsatser</strong></p>
 <ul class="post-lead-takeaways">

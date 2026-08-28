@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Autonomous Treasury Index 2026: agentisk treasury, programmerbar likviditet och tokeniserade insättningar
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Sammanfattning av artikeln">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>Sammanfattning.</strong> Ett index för autonom treasury 2026 — som mäter agentiska arbetsflöden, täckning av programmerbar likviditet, integration av tokeniserade insättningar, orkestrering av realtidsbetalningar och automatiserad realtidsstyrning av kassa som en sammanhållen operativ modell.</p>
 <p class="post-lead-heading"><strong>Viktiga slutsatser</strong></p>
 <ul class="post-lead-takeaways">

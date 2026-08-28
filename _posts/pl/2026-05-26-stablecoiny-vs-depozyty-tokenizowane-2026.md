@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Stablecoiny vs depozyty tokenizowane w 2026: co banki musza obronic
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Stablecoiny i depozyty tokenizowane dostarczaja w 2026 rozliczenie programowalne, ale opieraja sie na innych bilansach, innych roszczeniach prawnych, innych profilach plynnosci i innych modelach zaufania. Banki znajduja sie w punkcie zwrotnym, w ktorym franczyza depozytowa, rola rozliczeniowa i regulowana marka znajduja sie jednoczesnie pod presja prywatnych emitentow oraz alternatyw blogoslawionych przez regulatora. Mozliwa do obrony pozycja to nie "zbuduj jedno i ignoruj drugie", lecz dyscyplina projektowa: jasna architektura modelu pieniadza, ktora mowi, ktory typ tokena obsluguje ktory proces klienta, ktore kontrole dzialaja z predkoscia procesu i ktore dowody powstaja zanim regulator o nie zapyta.</p>
 <p class="post-lead-heading"><strong>Kluczowe wnioski</strong></p>
 <ul class="post-lead-takeaways">

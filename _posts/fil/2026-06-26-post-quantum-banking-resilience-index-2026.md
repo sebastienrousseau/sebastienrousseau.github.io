@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Ang Post-Quantum Banking Resilience Index sa 2026: EO 14409, Mga Pandaigdigang Takdang Petsa, at Fiduciaryong Cryptographic Agility
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Buod ng artikulo">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Lumampas na sa puntong walang balikan ang post-quantum cryptography (PQC) migration. Sa pagpirma ng US Executive Order 14409 noong 22 Hunyo 2026 at sa pagtatakda ng France na ANSSI ng mahigpit na takdang petsang 2030 — titigil ang sertipikasyon ng mga produktong hindi PQC sa 2027 — hindi na isang teknikal na pangarap ang cryptographic agility. Isa na itong regulatoryong mandato. Ginagawa ng index na ito ang mandatong iyon na isang 0–5 scorecard na handa para sa lupon sa limang layer na maaaring i-audit.</p>
 <p class="post-lead-heading"><strong>Mga pangunahing punto</strong></p>
 <ul class="post-lead-takeaways">

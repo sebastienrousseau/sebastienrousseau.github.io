@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # De Banking Infrastructure Index 2026: gereedheid meten voor agentic AI, kwantumveilige beveiliging, cloud-native veerkracht en wholesale-betalingen
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Waarom dit telt">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
   <p class="post-lead-tldr"><strong>Waar dit artikel over gaat:</strong> Een kader in de stijl van de Stanford AI Index om bankgereedheid te meten in de vier infrastructuurdomeinen die in 2026 samen bewegen — agentic AI, post-kwantumcryptografie, cloud-native veerkracht en wholesale-betalingen — plus de vijf bestuurlijke metrieken die het kader omzetten in een operationele capaciteit.</p>
   <p class="post-lead-takeaways"><strong>Voor wie dit relevant is:</strong> CTO's van banken, hoofden Engineering, Chief Risk and Resilience Officers, hoofden Payments, hoofden Cryptographic Engineering, bestuursleden met technologieportefeuille en de toezichthouders (PRA, ECB, FCA, OCC) die hen superviseren.</p>
 </aside>

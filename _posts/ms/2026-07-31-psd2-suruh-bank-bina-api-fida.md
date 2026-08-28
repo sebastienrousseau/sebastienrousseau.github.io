@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Ringkasan artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> FiDA bukan PSD2 dengan lebih banyak endpoint. Tiga keretakan struktur mengubah maksud pematuhan: akses ditadbir oleh skim yang anda mesti sertai, bukan antara muka yang anda bina sendiri; pemegang data boleh menuntut pampasan munasabah, jadi akses menjadi produk berbayar dan bukan kewajipan percuma; dan skop menjangkau gadai janji, simpanan, pelaburan, pencen dan insurans am — produk yang benar-benar menjana pendapatan bank. Teks masih dalam trilog, tetapi skim yang akan menetapkan piawaian sedang direka sekarang, dan di situlah letaknya daya pengaruh.</p>
 <p class="post-lead-heading"><strong>Intisari utama</strong></p>
 <ul class="post-lead-takeaways">

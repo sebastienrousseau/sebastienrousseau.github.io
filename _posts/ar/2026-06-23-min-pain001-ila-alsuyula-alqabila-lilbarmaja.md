@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # من Pain.001 إلى السيولة القابلة للبرمجة: ISO 20022 بوصفه الجهاز العصبي اللاإرادي للخزينة في 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="ملخص المقالة">
+<aside class="post-lead" aria-label="ملخص المقال">
 <p class="post-lead-tldr"><strong>الخلاصة.</strong> ISO 20022 لم يعد مشروع ترحيل. في 2026 صار طبقة البيانات التي تقوم عليها السيولة القابلة للبرمجة، والخزينة الوكيلية، وموعد إيقاف SWIFT MT/MX في نوفمبر 2026 الذي ما زال نصف البنوك تقريباً متأخراً عن اللحاق به.</p>
 <p class="post-lead-heading"><strong>أبرز النقاط</strong></p>
 <ul class="post-lead-takeaways">

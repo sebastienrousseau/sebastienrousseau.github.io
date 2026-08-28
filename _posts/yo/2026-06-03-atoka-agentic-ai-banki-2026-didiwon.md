@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Atọ́ka Agentic AI fún Àwọn Bánkì ní 2026: Dídiwọ̀n Ìṣọmọ̀dáṣe, Ìṣàkóso, Agbára Àyẹ̀wò, àti Ipa Ìṣòwò
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Àwòrán ìkọ́lé fún dídiwọ̀n ìmúrasílẹ̀ agentic AI nínú àwọn bánkì ipele-kìíní lórí ìpín mẹ́fà: ipele ìṣọmọ̀dáṣe, ìfúnni-àṣẹ API, àwọn guardrails tí a lè sọ àsọtẹ́lẹ̀, agbófiro human-in-the-loop, ìkún audit, àti ètò ọrọ̀-ajé ẹ̀ka. Ṣe ìpín àwọn agent nípa ohun tí a ti gba láàyè wọn láti ṣe, kìí ṣe nípa bí àwòrán tí ó wà ní ìpìlẹ̀ ti gbọ́n tó. Kà gbogbo agent tí ó wà nínú iṣẹ́ gẹ́gẹ́ bí àwòrán SR 11-7 / SS1/23 láti ọjọ́ kìn-ín-ní.</p>
 <p class="post-lead-heading"><strong>Àwọn àkíyèsí pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
@@ -266,6 +266,6 @@ Nọ́ńbà mẹ́rin fún workflow kọ̀ọ̀kan: ipele ìṣọmọ̀dáṣe,
 - Cloud Native Computing Foundation, (2018). [Open Policy Agent (OPA) ⧉](https://www.openpolicyagent.org/ "Open Policy Agent — ìṣàkóso tí ó dá lórí ìlànà fún àwọn agbègbè cloud native").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa Òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ohun èlò ìsanwó, owó tókenì, ISO 20022, ààbò lẹ́yìn-quantum, iṣẹ́ ìnáwó orígínal-àwọsánmà, àti àwọn ọjà onírọ́pò tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ohun èlò ìsanwó, owó tókenì, ISO 20022, ààbò lẹ́yìn-quantum, iṣẹ́ ìnáwó orígínal-àwọsánmà, àti àwọn ọjà onírọ́pò tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn <time datetime="2026-06-03">2026-06-03</time>.</p>
 <!-- enrich-end -->

@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Rezumatul articolului">
 <p class="post-lead-tldr"><strong>Pe scurt.</strong> Regulation (EU) 2024/1183 a rescris eIDAS. Două date contează: până la <strong>24 decembrie 2026</strong> fiecare stat membru trebuie să furnizeze cel puțin un portofel european de identitate digitală, iar până la <strong>24 decembrie 2027</strong> părțile utilizatoare mari și mijlocii din sectoarele listate — bănci și servicii financiare între ele — trebuie să îl accepte pentru autentificarea puternică a utilizatorului atunci când un utilizator cere acest lucru. Rolul băncii trece de la emitent de acreditări la parte utilizatoare înregistrată, iar înregistrarea este o precondiție juridică, nu una tehnică. Ingineria este banală. Consecințele de guvernanță, răspundere și verificare a identității nu sunt.</p>
 <p class="post-lead-heading"><strong>Concluzii esențiale</strong></p>
 <ul class="post-lead-takeaways">

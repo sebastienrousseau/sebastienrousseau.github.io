@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # सदैव-चालू CIB: साइबर रिकवरी, फ़ॉलबैक रेल्स और क्वांटम-सुरक्षित ट्रेज़री
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="लेख सारांश">
 <p class="post-lead-tldr"><strong>संक्षेप में।</strong> 2026 में कॉर्पोरेट और निवेश बैंकिंग का मूल्यांकन साइबर घटना के दौरान सदैव-चालू व्यवहार पर होता है। साइबर रिकवरी वॉल्ट्स, RTGS, इंस्टैंट और टोकनाइज़्ड नेटवर्कों पर ISO 20022 फ़ॉलबैक रेल्स, और क्वांटम-सुरक्षित ट्रेज़री नियंत्रण अब एक ही परिचालन आरेख पर बैठते हैं — और बोर्ड उस पर हस्ताक्षर करता है।</p>
 <p class="post-lead-heading"><strong>मुख्य बिंदु</strong></p>
 <ul class="post-lead-takeaways">

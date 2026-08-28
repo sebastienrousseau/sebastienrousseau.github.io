@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # 2026 年的後量子銀行韌性指數:EO 14409、全球大限與受託的密碼敏捷性
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>太長不看。</strong>後量子密碼學(PQC)遷移已越過不可逆的臨界點。隨著美國行政命令 EO 14409 於 2026 年 6 月 22 日簽署、法國 ANSSI 設定嚴格的 2030 年大限——非 PQC 產品的認證將於 2027 年停止——密碼敏捷性不再是技術上的願景,而是監管的強制要求。本指數把這項要求轉化為董事會可用的 0–5 級計分卡,橫跨五個可稽核的層級。</p>
 <p class="post-lead-heading"><strong>重點摘要</strong></p>
 <ul class="post-lead-takeaways">

@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # আন্তঃসীমান্ত ২০২৬: কর্পোরেট ট্রেজারিতে ISO 20022, ওপেন ফিনান্স ও টোকেনাইজড ডিপোজিট
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="নিবন্ধ সারসংক্ষেপ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে।</strong> ২০২৬-এ আন্তঃসীমান্ত কর্পোরেট ট্রেজারি সমান্তরালভাবে চারটি রেলে চলে — SWIFT CBPR+, PSD3/FiDA-র অধীন তাৎক্ষণিক A2A, টোকেনাইজড ডিপোজিট এবং স্টেবলকয়েন রেল — অভিন্ন ব্যাকরণ হিসেবে ISO 20022 দ্বারা সেলাই করা। CIB ও কর্পোরেট ট্রেজারি দলের জন্য কাজটি অর্কেস্ট্রেশন, রেল নির্বাচন নয়।</p>
 <p class="post-lead-heading"><strong>মূল শিক্ষা</strong></p>
 <ul class="post-lead-takeaways">

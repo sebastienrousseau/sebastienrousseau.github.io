@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="వ్యాస సారాంశం">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> మొదటి పోస్ట్-క్వాంటం గడువు మైగ్రేషన్ కాదు, గుర్తింపు మరియు జాబితా తయారీ — 2031 మరియు 2035 మైగ్రేషన్ మైలురాళ్ల కంటే ముందు, 2028 నాటికి క్రిప్టోగ్రాఫిక్ ఆధారాల పూర్తి చిత్రాన్ని NCSC ఆశిస్తోంది. DORA ఇప్పటికే బ్యాంకులచేత నిర్వహింపజేస్తున్న ఆస్తుల నమోదు పట్టిక నుండి వాటిని ఇది తయారు చేయలేవు, ఎందుకంటే ఆ పట్టిక సర్వర్, యజమాని, కీలకత్వాన్ని నమోదు చేస్తుంది కానీ అల్గారిథం, కీ పొడవు, లైబ్రరీ లేదా ధ్రువపత్రం గడువును కాదు. ఇప్పుడు CycloneDXలో భాగమై ECMA-424గా ప్రామాణీకరించబడిన Cryptography Bill of Materials అనేదే ఆ లోపించిన డేటా మోడల్. దీన్ని నిర్వహించబడే నియంత్రణగా కాకుండా ఒకసారి తయారుచేసే PQC స్ప్రెడ్‌షీట్‌గా చూడటమే 2031 మైలురాయిని కోల్పోయేలా చేసే పొరపాటు.</p>
 <p class="post-lead-heading"><strong>ముఖ్యాంశాలు</strong></p>
 <ul class="post-lead-takeaways">

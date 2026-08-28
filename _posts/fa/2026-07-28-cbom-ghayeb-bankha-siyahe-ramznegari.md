@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="خلاصهٔ مقاله">
 <p class="post-lead-tldr"><strong>خلاصه.</strong> نخستین مهلت پساکوانتومی شناسایی است، نه مهاجرت — مرکز NCSC انتظار دارد تصویری کامل از وابستگی‌های رمزنگاری تا 2028 آماده باشد، پیش از نقاط عطف مهاجرت در 2031 و 2035. بانک‌ها نمی‌توانند این تصویر را از دفتر دارایی‌هایی بیرون بکشند که DORA همین حالا آن‌ها را به نگهداری‌اش ملزم کرده، چون آن دفتر سرور، مالک و درجهٔ حساسیت را ثبت می‌کند اما الگوریتم، طول کلید، کتابخانه یا انقضای گواهی را نه. فهرست اقلام رمزنگاری (CBOM) که اکنون بخشی از CycloneDX است و با عنوان ECMA-424 استاندارد شده، همان مدل دادهٔ گمشده است. برخورد با آن به‌مثابهٔ یک صفحه‌گستردهٔ یک‌بارمصرف PQC به‌جای یک کنترل نگهداری‌شده، همان اشتباهی است که نقطهٔ عطف 2031 را از دست خواهد داد.</p>
 <p class="post-lead-heading"><strong>نکته‌های کلیدی</strong></p>
 <ul class="post-lead-takeaways">

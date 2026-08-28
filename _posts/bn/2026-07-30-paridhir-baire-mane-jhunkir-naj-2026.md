@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে।</strong> ২০২৬ সালের ১৭ এপ্রিলের সংশোধিত মডেল ঝুঁকি নির্দেশিকা (SR 26-2 / OCC Bulletin 2026-13) ২০১১ সালের কাঠামোকে প্রতিস্থাপন করে এবং জেনারেটিভ ও এজেন্টিক AI-কে স্পষ্টভাবে বাদ দেয়, সঙ্গে একটি জনমত জরিপের প্রতিশ্রুতি। সেই বর্জন <em>এই</em> নির্দেশিকার পরিধি নিয়ে একটি সিদ্ধান্ত, তত্ত্বাবধায়ক ছাড়পত্র নয়: একই মডেল এখনও তৃতীয় পক্ষের ঝুঁকি, পরিচালনগত ঝুঁকি, ভোক্তা সুরক্ষা ও ন্যায্য ঋণদানের ভিতরেই বসে আছে। এদিকে যুক্তরাজ্যের SS1/23 প্রযুক্তি-নিরপেক্ষ এবং সেই মডেলগুলিকে টেনে আনছে। একটি গোষ্ঠী-ব্যাংক এখন এক মডেল নিয়ে দুই উত্তরে চলছে, আর সৎ জবাব হল দুটির মধ্যে কঠোরতরটি মেনে শাসন করা।</p>
 <p class="post-lead-heading"><strong>মূল বিষয়গুলি</strong></p>
 <ul class="post-lead-takeaways">

@@ -107,7 +107,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Короткий зміст статті">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Досліджуйте статтю Apple MM1 про багатомодальні великі мовні моделі (MLLM). Дізнайтеся про архітектуру, стратегії попереднього навчання та потенціал AI.</p>
 <p class="post-lead-heading"><strong>Основні висновки</strong></p>
 <ul class="post-lead-takeaways">

@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Індекс хмарно-нативного банкінгу у 2026: DORA, інженерія платформи, суверенна хмара та операційна стійкість
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Резюме статті">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>Стисло.</strong> Хмарно-нативний банкінг у 2026 — у фазі аудиту DORA, а не підготовки. Режим діє з 17 січня 2025; режим визначення CTPP за Статтями 28-44 розгортається протягом 2025-2026; AWS, Microsoft (Azure), Google (GCP) та Salesforce — усі в межах або поруч із периметром визначення; [наглядові пріоритети ЄЦБ на 2026-28 ⧉](https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html "Наглядові пріоритети ЄЦБ 2026-28") містять окремі програми з готовності до хмарних збоїв і тестування на проникнення під керівництвом загроз. Інженерна робота, що має значення, — це примітиви інженерії платформи: бруковані маршрути на Kubernetes плюс Backstage плюс OPA плюс OpenTelemetry — що продукують докази реєстру за Статтею 8 DORA зі швидкістю конвеєра розгортання, плюс протестовані докази виконання виходу, які відрізняють реальну замінність від документаційного театру.</p>
 <p class="post-lead-heading"><strong>Ключові висновки</strong></p>
 <ul class="post-lead-takeaways">

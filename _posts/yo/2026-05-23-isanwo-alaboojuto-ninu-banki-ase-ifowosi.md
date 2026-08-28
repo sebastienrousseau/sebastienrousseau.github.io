@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Ìsanwó Alábòójútó nínú Báńkì: Àṣẹ Ìfọwọ́sí, Ojúṣe, àti UX Ìsanwó Tuntun ní 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ìsanwó alábòójútó (agentic payments) ní 2026 kì í ṣe èrò mọ́: Mastercard àti Rabobank ṣe ìṣòwò alààyè ní Netherlands nínú èyí tí AI agent kan bẹ̀rẹ̀ ìsanwó nípasẹ̀ Mastercard Agent Pay láìfọwọ́kan dátà káàdì rárá. Àwọn àṣẹ cryptographic onírúurú AP2, x402, A2A, MCP àti MPP ń farahàn gẹ́gẹ́ bí ìpele protocol, nígbà tí EFTA, Regulation E, àti òfin iṣẹ́-ìsanwó UK kò ì tí ì gba àtúnṣe fún àwọn ìṣòwò agent aládàáṣe. Báyìí àwọn báńkì nílò ìgbékalẹ̀ àṣẹ ìfọwọ́sí + ìdánimọ̀ + ojúṣe tí ó ń mú ẹ̀rí ṣáájú ìpinnu jáde — kì í ṣe ìgbèjà ìjà lẹ́yìn-ọ̀rọ̀.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

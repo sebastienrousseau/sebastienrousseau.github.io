@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Quantum-Safe Banking Index w 2026 r.: kryptografia postkwantowa, QKD, krypto-zwinność i ryzyko harvest-now-decrypt-later
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Podsumowanie artykułu">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Bankowość kwantowo-bezpieczna w 2026 r. to program dostawczy, którego termin wyznacza przecięcie dwóch krzywych — długości życia poufnych danych, którymi instytucja dysponuje dziś, oraz horyzontu pojawienia się komputera kwantowego istotnego kryptograficznie (CRQC). Standardy NIST FIPS 203 / 204 / 205 są finalne od sierpnia 2024 r.; CNSA 2.0 wyznacza stan docelowy dla administracji federalnej USA na 2033 r.; harvest-now-decrypt-later dzieje się już dziś na długoterminowych danych. Karta wyników kwantowych dla zarządu śledzi cztery dokładne wskaźniki procentowe: kompletność inwentaryzacji, ekspozycję HNDL, postęp migracji NIST i gotowość krypto-zwinności.</p>
 <p class="post-lead-heading"><strong>Kluczowe wnioski</strong></p>
 <ul class="post-lead-takeaways">

@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Índice de Infraestrutura Bancária 2026: medindo prontidão em IA agêntica, segurança quântica, resiliência nativa em nuvem e pagamentos de atacado
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Por que isso importa">
+<aside class="post-lead" aria-label="Resumo do artigo">
   <p class="post-lead-tldr"><strong>Sobre o que é este artigo:</strong> Um framework no estilo do Stanford AI Index para medir a prontidão dos bancos nos quatro domínios de infraestrutura que em 2026 passam a se mover em conjunto — IA agêntica, criptografia pós-quântica, resiliência nativa em nuvem e pagamentos de atacado — somados às cinco métricas de nível de conselho que convertem o framework em capacidade operacional.</p>
   <p class="post-lead-takeaways"><strong>Para quem é a leitura:</strong> CTOs de bancos, líderes de engenharia, diretores de risco e resiliência, líderes de pagamentos, líderes de engenharia criptográfica, conselheiros com responsabilidade de supervisão tecnológica e os reguladores (PRA, BCE, FCA, OCC) que os supervisionam.</p>
 </aside>

@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="תקציר המאמר">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> יעד הזמן הפוסט-קוונטי הראשון הוא מיפוי ומצאי, לא הגירה — NCSC מצפה לתמונה מלאה של תלויות ההצפנה עד 2028, לפני אבני הדרך של ההגירה ב-2031 וב-2035. הבנקים אינם יכולים להפיק אותה ממרשם הנכסים ש-DORA כבר מחייבת אותם לנהל, משום שאותו מרשם מתעד את השרת, את הבעלים ואת רמת הקריטיות, אך לא את האלגוריתם, את אורך המפתח, את הספרייה או את מועד פקיעת התעודה. רשימת רכיבי ההצפנה (CBOM), שהיא כיום חלק מ-CycloneDX ומתוקננת כ-ECMA-424, היא מודל הנתונים החסר. התייחסות אליה כאל גיליון PQC חד-פעמי במקום כאל בקרה מתוחזקת היא הטעות שתעלה במחיר אבן הדרך של 2031.</p>
 <p class="post-lead-heading"><strong>נקודות מפתח</strong></p>
 <ul class="post-lead-takeaways">

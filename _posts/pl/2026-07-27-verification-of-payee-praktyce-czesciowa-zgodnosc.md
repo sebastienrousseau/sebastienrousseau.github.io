@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Weryfikacja odbiorcy płatności przestała być produktem w dniu, w którym stała się obowiązkiem.** Od 9 października 2025 r. każdy dostawca usług płatniczych w państwie członkowskim strefy euro musi oferować Verification of Payee dla poleceń przelewu, bezpłatnie, na mocy Regulation (EU) 2024/886. Sama kontrola nie jest trudna: porównaj nazwę z nazwą zapisaną na rachunku i odpowiedz. Trudne okazało się wszystko wokół niej — budżet pięciu sekund na odpowiedź, odpowiedź pośrednia, która nie jest ani „tak", ani „nie", pliki korporacyjne, które trzeba rozłożyć na części, zanim da się je sprawdzić, oraz granica odpowiedzialności, której ani rozporządzenie, ani regulamin schematu wyznaczyć nie chcą.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Rozporządzenie o płatnościach natychmiastowych zamieniło weryfikację odbiorcy płatności z wyróżnika w usługę powszechną, którą każdy PSP w strefie euro musi prowadzić bezpłatnie, zarówno dla zwykłych, jak i natychmiastowych poleceń przelewu. Po dziewięciu miesiącach widać, że koszt inżynieryjny nie spadł na algorytm dopasowania. Spadł na odpowiedź „częściowa zgodność", na rozbijanie zbiorczych plików płatniczych na pojedyncze zapytania mieszczące się w kopercie pięciu sekund oraz na fakt, że ostrzeżenie pokazane i zignorowane przenosi stratę w sposób, którego nikt nie wycenił.</p>
 <p class="post-lead-heading"><strong>Najważniejsze wnioski</strong></p>
 <ul class="post-lead-takeaways">

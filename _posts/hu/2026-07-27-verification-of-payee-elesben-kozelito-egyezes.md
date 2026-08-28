@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **A kedvezményezett-ellenőrzés abban a pillanatban szűnt meg terméknek lenni, amikor kötelezettséggé vált.** 2025. október 9. óta az eurózóna tagállamaiban minden pénzforgalmi szolgáltatónak díjmentesen kell kínálnia a Verification of Payee (kedvezményezett-ellenőrzés) szolgáltatást az átutalásokra, a Regulation (EU) 2024/886 alapján. Maga az ellenőrzés nem nehéz: össze kell vetni egy nevet a számlához nyilvántartott névvel, és válaszolni kell. Ami nehéznek bizonyult, az minden más körülötte: az öt másodperces válaszidőkeret, a középső válasz, amely se nem igen, se nem nem, a vállalati állományok, amelyeket szét kell bontani, mielőtt ellenőrizni lehetne őket, és a felelősségi határ, amelyet sem a rendelet, sem a séma szabálykönyve nem hajlandó meghúzni.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="A cikk összefoglalója">
 <p class="post-lead-tldr"><strong>Röviden.</strong> Az azonnali fizetési rendelet a kedvezményezett-ellenőrzést megkülönböztető képességből olyan közművé alakította, amelyet minden eurózónás PSP-nek díjmentesen kell üzemeltetnie, méghozzá nemcsak az azonnali, hanem a hagyományos átutalásokra is. Kilenc hónap után a mérnöki költség nem az egyeztetési algoritmuson csapódott le. A „közelítő egyezés” válaszon csapódott le, a vállalati fizetési állományok soronkénti kérésekre bontásán egy öt másodperces borítékon belül, és azon, hogy egy kiadott, majd felülbírált figyelmeztetés úgy csoportosítja át a veszteséget, ahogy azt senki nem árazta be.</p>
 <p class="post-lead-heading"><strong>Legfontosabb tanulságok</strong></p>
 <ul class="post-lead-takeaways">

@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Stablecoins vs Àwọn Ìfowópamọ́ Tókènì ní 2026: Ohun Tí Àwọn Bánkì Gbọ́dọ̀ Dáàbò
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Stablecoins àti àwọn ìfowópamọ́ tókènì méjèèjì ń pèsè ìpinnu owó tó lè ṣètò ní 2026, ṣùgbọ́n wọ́n jókòó lórí àwọn ìwé ìṣirò ọ̀tọ̀ọ̀tọ̀, àwọn ẹ̀tọ́ òfin ọ̀tọ̀ọ̀tọ̀, àwọn àkànṣe owó tó ń sàn ọ̀tọ̀ọ̀tọ̀, àti àwọn àwòṣe ìgbẹ́kẹ̀lé ọ̀tọ̀ọ̀tọ̀. Àwọn bánkì wà ní ipò ìyípadà níbi tí ètò ìfowópamọ́, ipa ìpinnu owó, àti àmì oníṣàkóso ń sí abẹ́ ìfunpá lápapọ̀ láti ọwọ́ àwọn olùgbé jáde aládàáni àti láti ọwọ́ àwọn yíyàn tí àwọn alábòójútó ti fẹ́. Ipò tí a lè dáàbò kì í ṣe "kọ́ ọ̀kan kí o sì gbàgbé èkejì" bí kò ṣe ìbáwí àpẹrẹ: ìgbékalẹ̀ àwòṣe-owó tí ó ṣe kedere tó ń sọ àwòṣe tókènì wo ni ó gbé ìṣàn iṣẹ́ oníbàárà wo, ìdarí wo ni ó ń ṣiṣẹ́ ní ìyára ìṣàn iṣẹ́, àti ẹ̀rí wo ni a ó pèsè kí àwọn alábòójútó tó béèrè.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

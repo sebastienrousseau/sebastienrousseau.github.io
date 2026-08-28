@@ -98,7 +98,7 @@ excerpt: "KyberLib laburare ne da aka gina akan Rust wanda ke kare bayananku dag
 last_reviewed: "2026-05-11"
 ---
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Taƙaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Aiwatar da ɓoyayyar bayanai ta CRYSTALS-Kyber mai ƙarfi da juriya ga quantum, don kare bayananku daga barazanar ƙididdigewa da hare-haren cryptanalytic.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan da za a ɗauka</strong></p>
 <ul class="post-lead-takeaways">

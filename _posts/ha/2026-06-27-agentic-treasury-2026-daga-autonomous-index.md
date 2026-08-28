@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Agentic Treasury 2026: Daga Autonomous Treasury Index zuwa Co-Pilots na Matakin Samarwa
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Taƙaitawar labari">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Agentic treasury co-pilots suna motsi daga gwaji da aka sarrafa zuwa cikin samarwa a 2026. Tsarin yana daidai a fadin treasury na CIB: wakilai suna karatun bayanan kuɗi na ISO 20022, suna kiran kayan aiki masu iyaka, kuma suna daidaita liquidity a cikin layukan manufofin — tare da sarrafa SR 11-7, DORA, da EU AI Act a kewayen su.</p>
 <p class="post-lead-heading"><strong>Manyan abubuwan ɗauka</strong></p>
 <ul class="post-lead-takeaways">

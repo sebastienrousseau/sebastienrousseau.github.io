@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Tóm tắt bài viết">
 <p class="post-lead-tldr"><strong>Tóm tắt nhanh.</strong> Hướng dẫn giám sát rủi ro mô hình sửa đổi ngày 17/4/2026 (SR 26-2 / OCC Bulletin 2026-13) thay thế khuôn khổ năm 2011 và loại trừ minh thị AI tạo sinh cùng AI tác tử, kèm cam kết lấy ý kiến công khai. Loại trừ đó là một quyết định về phạm vi áp dụng của <em>chính</em> hướng dẫn này, không phải một giấy thông hành từ cơ quan giám sát: cùng mô hình ấy vẫn nằm trong rủi ro bên thứ ba, rủi ro hoạt động, bảo vệ người tiêu dùng và cho vay công bằng. Trong khi đó, SS1/23 của Anh Quốc trung lập công nghệ và vẫn kéo những mô hình ấy vào phạm vi. Một tập đoàn ngân hàng giờ vận hành một mô hình dưới hai câu trả lời, và cách phản ứng trung thực là quản trị theo tiêu chuẩn chặt hơn.</p>
 <p class="post-lead-heading"><strong>Những điểm cốt lõi</strong></p>
 <ul class="post-lead-takeaways">

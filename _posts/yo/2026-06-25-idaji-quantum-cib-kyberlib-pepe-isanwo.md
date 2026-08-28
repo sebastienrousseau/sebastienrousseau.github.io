@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Ìdàjí Quantum fún CIB: Láti KyberLib sí Pẹpẹ Ìsanwó Tó Dúró Níwájú Quantum
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Ìsọnísókí àròkọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> BIS Quantum Dawn àti àpẹrẹ ọ̀nà PQC G7 Cyber Expert Group ti Oṣù Kínní 2026 ti gbé cryptography post-quantum kúrò ní iṣẹ́ ìwádìí, wọ́n sì fi sí àpapọ̀ ìgbìmọ̀ olórí corporate and investment banking (CIB). KyberLib ń fún àwọn báńkì ní ibẹ̀rẹ̀ ML-KEM àti ML-DSA tí a lè yẹ̀wò; iṣẹ́ tó kù jẹ́ ètò ìṣíkiri crypto-agile tí yóò gbà ọ̀pọ̀ ọdún, kọjá ìsanwó, ìnáwó ìṣòwò, custody, àti ìfihàn.</p>
 <p class="post-lead-heading"><strong>Àwọn àyọkà pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

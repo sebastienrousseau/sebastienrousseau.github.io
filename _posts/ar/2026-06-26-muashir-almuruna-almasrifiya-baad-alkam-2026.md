@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # مؤشر المرونة المصرفية بعد الكم في 2026: EO 14409 والمواعيد النهائية العالمية والمرونة التشفيرية الائتمانية
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="ملخص المقال">
 <p class="post-lead-tldr"><strong>باختصار.</strong> تجاوز الانتقال إلى التشفير بعد الكم (PQC) نقطة اللاعودة. فمع توقيع الأمر التنفيذي الأمريكي EO 14409 في 22 يونيو 2026 وتحديد ANSSI الفرنسية موعداً نهائياً صارماً عند 2030 — مع توقّف اعتماد المنتجات غير المتوافقة مع PQC في 2027 — لم تعد المرونة التشفيرية طموحاً تقنياً. بل صارت تكليفاً تنظيمياً. يحوّل هذا المؤشر ذلك التكليف إلى بطاقة 0–5 جاهزة لمجلس الإدارة عبر خمس طبقات قابلة للتدقيق.</p>
 <p class="post-lead-heading"><strong>أبرز النقاط</strong></p>
 <ul class="post-lead-takeaways">
@@ -211,6 +211,6 @@ SNDL هو ممارسة اعتراض حركة المرور المشفّرة وأ�
 - [BIS Project Leap — تحصين النظام المالي ضد الكم](https://www.bis.org/about/bisih/topics/cyber_security/leap.htm "مركز BIS للابتكار — مشروع Leap، تحصين أنظمة المدفوعات للبنوك المركزية وبين البنوك ضد الكم")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="عن المؤلف"><img alt="صورة شخصية لـ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والانتقال إلى ISO 20022، والتشفير بعد الكم للخدمات المالية، والتحول البنيوي للمدفوعات بالجملة.</span><span class="author-credentials">أكثر من 20 عاماً عبر HSBC Commercial &amp; Investment Bank، وPayPal، وBarclays، وShazam، وAKQA، وVirgin Group. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="صورة شخصية لـ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والانتقال إلى ISO 20022، والتشفير بعد الكم للخدمات المالية، والتحول البنيوي للمدفوعات بالجملة.</span><span class="author-credentials">أكثر من 20 عاماً عبر HSBC Commercial &amp; Investment Bank، وPayPal، وBarclays، وShazam، وAKQA، وVirgin Group. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-06-26">2026-06-26</time>.</p>
 <!-- enrich-end -->

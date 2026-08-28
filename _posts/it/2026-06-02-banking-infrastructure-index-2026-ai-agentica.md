@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Banking Infrastructure Index 2026: misurare la prontezza su AI agentica, sicurezza quantum-safe, resilienza cloud-nativa e pagamenti wholesale
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Perché è importante">
+<aside class="post-lead" aria-label="Sintesi dell'articolo">
   <p class="post-lead-tldr"><strong>Di cosa parla questo articolo:</strong> un framework in stile Stanford AI Index per misurare la prontezza delle banche sui quattro domini infrastrutturali del 2026 che ormai si muovono insieme — AI agentica, crittografia post-quantistica, resilienza cloud-nativa e pagamenti wholesale — più le cinque metriche a livello di consiglio che trasformano il framework in capacità operativa.</p>
   <p class="post-lead-takeaways"><strong>A chi è rivolto:</strong> CTO bancari, responsabili dell'ingegneria, Chief Risk and Resilience Officer, responsabili dei pagamenti, responsabili dell'ingegneria crittografica, consiglieri con delega alla tecnologia e i regolatori (PRA, BCE, FCA, OCC) che li vigilano.</p>
 </aside>

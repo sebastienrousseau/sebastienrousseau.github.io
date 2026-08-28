@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Samenvatting artikel">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> DORA, de EU AI Act, GDPR, concentratierisico cloud en regels voor datasoevereiniteit smelten in 2026 samen tot één compliance-stack voor banken. De strategische vraag is verschoven van "welk kader implementeren we" naar "welke architectuur orkestreert alle vijf" — bewijs van ICT-veerkracht, AI-risicoclassificatie, registratie van rechtsgronden, concentratielimieten voor derde partijen en soevereine datakeuzes draaien via één operating model dat toezichthouders kunnen auditen. Vijf parallelle programma's bouwen het operationeel risico van het komende decennium; één orkestratielaag met meetbaar bewijs wint.</p>
 <p class="post-lead-heading"><strong>Belangrijkste punten</strong></p>
 <ul class="post-lead-takeaways">

@@ -91,7 +91,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **규제 대상 퍼블리셔에게 정적 사이트 생성기는 더 이상 디자인 도구가 아니라 운영 리스크 경계선의 일부입니다.** 오픈소스 Rust [static-site-generator](https://github.com/sebastienrousseau/static-site-generator)는 이 전제 위에 구축되어, 보안, 접근성, 국제화, AI 콘텐츠 파이프라인을 컴파일 타임으로 이동시켜 검사가 실패하면 결과물이 프로덕션에 도달하는 대신 빌드가 중단되도록 합니다. 이 분석은 버전 0.0.41이 실제로 제공하는 것과 문서가 여전히 약속에 그치는 것을 구분하고, 아직 갖추지 못한 다섯 가지 엔터프라이즈 역량을 제시하며, DORA와 유럽 접근성법, 현대적 공급망 표준에 부합하는 1.0 릴리스로 가는 단계별 경로를 제안합니다.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="글 요약">
+<aside class="post-lead" aria-label="기사 요약">
 <p class="post-lead-tldr"><strong>요약.</strong> Rust <code>static-site-generator</code>는 웹 퍼블리싱을 감사 가능하고 시큐어 바이 디폴트인 소프트웨어 파이프라인으로 다룹니다. 워크스페이스 전역 <code>forbid(unsafe_code)</code>, SHA-384 Subresource Integrity, Content Security Policy 추출, 컴파일 타임 WCAG 2.2 AA 게이트, 그리고 로컬 우선 LLM 파이프라인이 그 예입니다. v0.0.41 코드 검토 결과 문서화된 여러 기능이 여전히 구상 단계에 머물러 있으며, 네이티브 압축과 증분 리빌드, AVIF가 여기에 포함됩니다. 이 글은 정직한 격차 분석과 엔터프라이즈급 1.0으로 가는 단계별 로드맵입니다.</p>
 <p class="post-lead-heading"><strong>핵심 요점</strong></p>
 <ul class="post-lead-takeaways">

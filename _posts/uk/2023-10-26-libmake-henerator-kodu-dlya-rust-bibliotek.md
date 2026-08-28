@@ -94,7 +94,7 @@ webmaster: "contact@sebastienrousseau.com"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Стислий опис статті">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> LibMake — це CLI-інструмент для Rust, який генерує повну структуру бібліотеки — Cargo.toml, src/lib.rs із шаблонами документації, тестовими та бенчмарк-середовищами, а також CI через GitHub Actions — за допомогою однієї команди або версіонованого конфігураційного файлу TOML/YAML.</p>
 <p class="post-lead-heading"><strong>Основні тези</strong></p>
 <ul class="post-lead-takeaways">

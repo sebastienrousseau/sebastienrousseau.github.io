@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Index 2026 des infrastructures bancaires : mesurer la maturité IA agentique, post-quantique, cloud natif et paiements de gros
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Pourquoi cela compte">
+<aside class="post-lead" aria-label="Résumé de l'article">
   <p class="post-lead-tldr"><strong>Sujet de l'article :</strong> un cadre inspiré de l'AI Index de Stanford pour mesurer la maturité bancaire sur les quatre domaines d'infrastructure de 2026 qui évoluent désormais ensemble — IA agentique, cryptographie post-quantique, résilience cloud natif et paiements de gros — assorti des cinq indicateurs de niveau conseil qui transforment ce cadre en capacité opérationnelle.</p>
   <p class="post-lead-takeaways"><strong>Public visé :</strong> directeurs techniques de banques, directeurs de l'ingénierie, directeurs des risques et de la résilience, directeurs des paiements, responsables de l'ingénierie cryptographique, administrateurs en charge de la supervision technologique, et les régulateurs (PRA, BCE, FCA, OCC) qui en assurent le contrôle.</p>
 </aside>

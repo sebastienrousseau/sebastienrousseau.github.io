@@ -94,7 +94,7 @@ webmaster: "contact@sebastienrousseau.com"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Стислий опис статті">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>Стисло.</strong> Дізнайтеся, як IBM Qiskit і Квантове перетворення Фур'є революціонізують аналіз кредитних коефіцієнтів у фінансах, забезпечуючи безпрецедентну точність і швидкість.</p>
 <p class="post-lead-heading"><strong>Основні тези</strong></p>
 <ul class="post-lead-takeaways">

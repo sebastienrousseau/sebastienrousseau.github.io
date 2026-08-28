@@ -103,7 +103,7 @@ site_software: "Static Site Generator, Rust"
 # http-handle: 2026 में बैंकिंग के लिए उच्च-प्रदर्शन, ज़ीरो-डिपेंडेंसी एज इनग्रेस
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="लेख का सारांश">
+<aside class="post-lead" aria-label="लेख सारांश">
 <p class="post-lead-tldr"><strong>संक्षेप में।</strong> http-handle एक ओपन-सोर्स, स्थिर रूप से लिंक किया गया Rust बाइनरी है जो बैंकिंग एज पर Nginx और Envoy की जगह लेता है। यह Linux <code>sendfile(2)</code> ज़ीरो-कॉपी ट्रांसफर के ज़रिए ARM64 नोड्स पर प्रति सेकंड 1,80,000 अनुरोध देता है, किसी भी एप्लिकेशन कोड के चलने से पहले नेटवर्क सॉकेट लेयर पर mTLS और JWT सत्यापन लागू करता है, ALPN के ज़रिए स्वचालित रूप से HTTP/2 और HTTP/3 पर बातचीत करता है, और मूल रूप से OpenTelemetry मेट्रिक्स उत्सर्जित करता है — सब कुछ <code>libc</code> से परे बिना किसी रनटाइम निर्भरता के।</p>
 <p class="post-lead-heading"><strong>मुख्य निष्कर्ष</strong></p>
 <ul class="post-lead-takeaways">

@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Die Prüfung des Zahlungsempfängers hörte an dem Tag auf, ein Produkt zu sein, an dem sie zur Pflicht wurde.** Seit dem 9. Oktober 2025 muss jeder Zahlungsdienstleister in einem Mitgliedstaat des Euroraums Verification of Payee für Überweisungen anbieten, kostenlos, nach Regulation (EU) 2024/886. Die Prüfung selbst ist nicht schwierig: einen Namen mit dem auf einem Konto hinterlegten Namen vergleichen und antworten. Schwierig ist alles darum herum — ein Antwortbudget von fünf Sekunden, eine mittlere Antwort, die weder Ja noch Nein lautet, Firmendateien, die vor der Prüfung zerlegt werden müssen, und eine Haftungsgrenze, die weder die Verordnung noch das Rulebook des Scheme zieht.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Zusammenfassung des Artikels">
+<aside class="post-lead" aria-label="Artikelzusammenfassung">
 <p class="post-lead-tldr"><strong>Kurzfassung.</strong> Die Instant Payments Regulation hat die Prüfung des Zahlungsempfängers von einem Differenzierungsmerkmal in eine Grundleistung verwandelt, die jeder PSP im Euroraum kostenlos betreiben muss — für klassische Überweisungen ebenso wie für Echtzeitüberweisungen. Neun Monate später liegt der Engineering-Aufwand nicht im Matching-Algorithmus. Er liegt in der Antwort „Close Match", im Entbündeln von Firmen-Zahlungsdateien in Einzelanfragen innerhalb eines Fünf-Sekunden-Fensters und darin, dass eine erteilte und übergangene Warnung Verluste neu verteilt, ohne dass jemand sie eingepreist hätte.</p>
 <p class="post-lead-heading"><strong>Zentrale Erkenntnisse</strong></p>
 <ul class="post-lead-takeaways">

@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Daga Pain.001 zuwa Kuɗi Mai Shirye-shirye: ISO 20022 a Matsayin Tsarin Jijiya na Baitulmali a 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Taƙaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> ISO 20022 ba aikin ƙaura ba ne kuma. A 2026 shi ne tushen bayanai a ƙarƙashin kuɗi mai shirye-shirye, baitulmalin wakilci, da yankan SWIFT MT/MX na Nuwamba 2026 da kusan rabin bankuna har yanzu ba a kan hanya don cikawa.</p>
 <p class="post-lead-heading"><strong>Mahimman abubuwan koyo</strong></p>
 <ul class="post-lead-takeaways">

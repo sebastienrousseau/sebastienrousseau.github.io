@@ -91,7 +91,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Ga mai bugawa da ke ƙarƙashin ka'ida, static site generator ba kayan aikin ƙira ba ne kuma; wani ɓangare ne na iyakar haɗarin aiki.** Rust [static-site-generator](https://github.com/sebastienrousseau/static-site-generator) mai buɗaɗɗen tushe an gina shi bisa wannan tunani, yana matsar da tsaro, samun dama, harhaɗa harsuna da AI content pipelines zuwa lokacin compile domin dubawa da ta gaza ta dakatar da build maimakon ta kai ga production. Wannan nazari ya raba abin da sigar 0.0.41 ke bayarwa da gaske daga abin da takardun ta har yanzu ke yi alkawari kawai, ya gabatar da iyawa biyar na kamfani da ba ta da su tukuna, kuma ya ba da shawarar hanya mai matakai zuwa fitowar 1.0 da ta dace da DORA, European Accessibility Act da ƙa'idodin supply-chain na zamani.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Taƙaitawar labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Rust <code>static-site-generator</code> yana kula da bugawa a yanar gizo a matsayin software pipeline mai dubawa, mai tsaro ta asali: <code>forbid(unsafe_code)</code> a fadin workspace, SHA-384 Subresource Integrity, ciran Content Security Policy, WCAG 2.2 AA gate na lokacin compile da LLM pipeline mai fifita gida. Dubawar code na v0.0.41 ya nuna cewa fasaloli da dama da aka rubuta har yanzu buri ne kawai, daga cikinsu native minification, incremental rebuilds da AVIF. Wannan shi ne gaskiyar nazarin gibi da tsarin aiki mai matakai zuwa 1.0 na matakin kamfani.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan da za a ɗauka</strong></p>
 <ul class="post-lead-takeaways">

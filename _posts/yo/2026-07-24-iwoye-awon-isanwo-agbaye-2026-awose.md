@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Àwọn ìsanwó ti yí padà láti jíjẹ́ ohun-èlò ìṣàkóso sí ọ̀kànkàn ọgbọ́n-ìṣe ìmọ̀-ẹ̀rọ báńkì.** Ní 2026, àwòṣe ìṣiṣẹ́ ìsanwó àgbáyé jẹ́ àsọyé nípasẹ̀ àwọn agbára mẹ́ta tí ó ń ṣùpọ̀, òwò agentic, àwọn ìṣàn tí a fi bọ́ inú tí a kò lè rí àti ìṣiṣẹ́ àkókò-gidi, olúkúlùkù wọn sì ń tún ibi tí báńkì-ìdúnàádúrà ti ń ru ewu tí ó sì ń jèrè owó ṣe. Ìròyìn yìí ṣàkópọ̀ àwọn ìwòye 2026 ti J.P. Morgan Payments, Global Payments, HSBC àti The Payments Association sínú ìwòye àwòṣe-ìṣiṣẹ́ kan ṣoṣo: bí àwọn olóyè G-SIB àti ti àgbègbè, àwọn olórí ilé-ìṣúra àti àwọn olùdarí òfin ṣe gbọ́dọ̀ tọpinpin òwò tí àwòṣe ti pilẹ̀, owó-ríró àìdálẹ́kun lábẹ́ DORA, àwọn ìwé-ìṣirò ìṣọ̀kan tí a sọ di token lábẹ́ BIS Project Agorá, àti ìyípadà àdírẹ́sì-onílànà SWIFT ti November 2026 tí ó ní déètì gbọningbọnin.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Àyíká ìsanwó 2026 ti yí padà láti ìṣílọ́ àwọn ìránṣẹ́ sí àwòṣe ìṣiṣẹ́ oníwọ̀n-púpọ̀ níbi tí agbára àkókò-gidi ti ń pín ewu àti owó-wíwọlé. Àwọn òpó mẹ́rin, òwò agentic, ilé-ìṣúra àìdálẹ́kun, àwọn ìwé-ìṣirò ìṣọ̀kan tí a sọ di token àti ìdáàbòbò ẹ̀tàn data-onílànà, ni ó ṣàsọyé àjálọ́rí ìgbìmọ̀-olùdarí ti 2026 sí 2028 fún àwọn báńkì-ìdúnàádúrà àgbáyé.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

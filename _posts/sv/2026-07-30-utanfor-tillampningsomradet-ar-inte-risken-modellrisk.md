@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>Sammanfattning.</strong> Den reviderade tillsynsvägledningen om modellrisk av den 17 april 2026 (SR 26-2 / OCC Bulletin 2026-13) ersätter 2011 års ramverk och undantar uttryckligen generativ och agentisk AI, med ett utlovat offentligt samråd. Undantaget är ett beslut om tillämpningsområdet för <em>denna</em> vägledning, inte ett tillsynsgodkännande: samma modell ligger fortfarande inom tredjepartsrisk, operativ risk, konsumentskydd och rättvis kreditgivning. Samtidigt är brittiska SS1/23 teknikneutral och fortsätter att dra in dessa modeller. En koncernbank kör nu en modell under två svar, och det ärliga svaret är att styra efter det strängare av dem.</p>
 <p class="post-lead-heading"><strong>Viktigaste slutsatserna</strong></p>
 <ul class="post-lead-takeaways">

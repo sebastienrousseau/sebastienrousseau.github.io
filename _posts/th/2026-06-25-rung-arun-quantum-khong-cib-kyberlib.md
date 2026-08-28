@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # รุ่งอรุณควอนตัมของ CIB: จาก KyberLib สู่สแตกการชำระเงินที่ทนทานต่อควอนตัม
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="สรุปบทความ">
 <p class="post-lead-tldr"><strong>สรุปสั้น.</strong> BIS Quantum Dawn และโรดแมป PQC ของ G7 Cyber Expert Group เดือนมกราคม 2026 ได้ผลักดันการเข้ารหัสหลังควอนตัมออกจากงานวิจัย เข้าสู่วาระคณะกรรมการของธนาคารองค์กรและธนาคารเพื่อการลงทุน (CIB) KyberLib มอบจุดเริ่มต้น ML-KEM และ ML-DSA ที่ตรวจสอบได้ให้แก่ธนาคาร งานที่เหลือคือโปรแกรมเปลี่ยนผ่านที่ crypto-agile หลายปี ครอบคลุมการชำระเงิน การเงินการค้า คัสโตดี และการเปิดเผยข้อมูล</p>
 <p class="post-lead-heading"><strong>ประเด็นสำคัญ</strong></p>
 <ul class="post-lead-takeaways">
@@ -171,6 +171,6 @@ KyberLib พิสูจน์ primitives ใน Rust ล้วน เส้น�
 เริ่มที่ CBOM ห่อหุ้มทุก primitive ย้ายหางที่ยาวที่สุดก่อน ลงนามด้วยชื่อคุณเอง
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="ภาพถ่ายของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีอาวุโสด้านธนาคาร เขียนเกี่ยวกับ AI ประยุกต์ การย้ายระบบ ISO 20022 การเข้ารหัสหลังควอนตัมสำหรับบริการทางการเงิน และการเปลี่ยนแปลงเชิงโครงสร้างของการชำระเงินขายส่ง</span><span class="author-credentials">ประสบการณ์กว่า 20 ปีกับ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพถ่ายของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีอาวุโสด้านธนาคาร เขียนเกี่ยวกับ AI ประยุกต์ การย้ายระบบ ISO 20022 การเข้ารหัสหลังควอนตัมสำหรับบริการทางการเงิน และการเปลี่ยนแปลงเชิงโครงสร้างของการชำระเงินขายส่ง</span><span class="author-credentials">ประสบการณ์กว่า 20 ปีกับ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">ตรวจทานครั้งล่าสุด <time datetime="2026-06-25">2026-06-25</time>.</p>
 <!-- enrich-end -->

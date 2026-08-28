@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="תקציר המאמר">
 <p class="post-lead-tldr"><strong>בקצרה.</strong> Regulation (EU) 2024/1183 כתבה מחדש את eIDAS. שני תאריכים חשובים: עד <strong>24 בדצמבר 2026</strong> כל מדינה חברה חייבת לספק לפחות ארנק זהות דיגיטלי אירופי אחד, ועד <strong>24 בדצמבר 2027</strong> צדדים נסמכים גדולים ובינוניים במגזרים הנקובים — ובהם הבנקאות והשירותים הפיננסיים — חייבים לקבלו לצורך אימות משתמש חזק כאשר המשתמש מבקש זאת. תפקידו של הבנק משתנה מגורם מנפיק של אישורי זהות לצד נסמך רשום, והרישום הוא תנאי מוקדם משפטי, לא טכני. ההנדסה כאן שגרתית. ההשלכות בתחומי הממשל, האחריות והוכחת הזהות אינן שגרתיות כלל.</p>
 <p class="post-lead-heading"><strong>נקודות מפתח</strong></p>
 <ul class="post-lead-takeaways">

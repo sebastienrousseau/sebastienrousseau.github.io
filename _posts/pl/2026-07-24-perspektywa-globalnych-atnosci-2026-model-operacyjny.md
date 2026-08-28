@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Płatności przeszły z roli administracyjnego narzędzia do rdzenia strategii technologicznej banku.** W 2026 roku model operacyjny globalnych płatności wyznaczają trzy zbieżne siły — handel agentowy, niewidoczne przepływy wbudowane oraz realizacja w czasie rzeczywistym — a każda z nich na nowo określa, gdzie bank transakcyjny ponosi ryzyko i osiąga przychody. Niniejszy raport syntetyzuje prognozy 2026 firm J.P. Morgan Payments, Global Payments, HSBC oraz The Payments Association w jeden spójny widok modelu operacyjnego: jak kadra kierownicza G-SIB i banków regionalnych, dyrektorzy skarbowości oraz regulatorzy powinni poruszać się w obszarze handlu inicjowanego przez modele, stale dostępnej płynności w reżimie DORA, tokenizowanych ujednoliconych ksiąg w ramach BIS Project Agorá oraz twardo datowanego przełączenia na adresy ustrukturyzowane SWIFT w listopadzie 2026 roku.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Podsumowanie artykułu">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>W skrócie.</strong> Krajobraz płatności 2026 przesunął się od migracji standardów komunikatów ku wielowymiarowemu modelowi operacyjnemu, w którym ryzyko i przychody są dyktowane przez zdolność działania w czasie rzeczywistym. Cztery filary — handel agentowy, stale dostępna skarbowość, tokenizowane ujednolicone księgi oraz ochrona przed oszustwami oparta na danych ustrukturyzowanych — wyznaczają agendę zarządu globalnych banków transakcyjnych na lata 2026–2028.</p>
 <p class="post-lead-heading"><strong>Kluczowe wnioski</strong></p>
 <ul class="post-lead-takeaways">

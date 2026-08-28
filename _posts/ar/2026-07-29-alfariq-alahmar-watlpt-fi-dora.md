@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="ملخص المقال">
 <p class="post-lead-tldr"><strong>باختصار.</strong> نظام TLPT في DORA يحوّل عمل الفريق الأحمر من تمرين أمني اختياري إلى التزام خاضع للإشراف يُنتج أدلة بوتيرة كل ثلاث سنوات، بالنسبة للكيانات التي تُسمّيها السلطة المختصة. القيود المُلزِمة ليست تقنية. إنها قيود جانب العرض: يشترط Article 27 مقدّمي خدمة اختبار معتمَدين أو ملتزمين بمدونة سلوك، يحملون ضمانًا مستقلًا وتغطية تأمين المسؤولية المهنية، ويسمح بالفرق الحمراء الداخلية في اختبارين على الأكثر من كل ثلاثة اختبارات، ويُلزم بأن يكون مزوّد استخبارات التهديدات خارجيًا في كل مرة دون استثناء. والوظائف الحرجة التي تعمل على مزوّدين من أطراف ثالثة تجرّ هؤلاء المزوّدين إلى داخل الاختبار.</p>
 <p class="post-lead-heading"><strong>أبرز النقاط</strong></p>
 <ul class="post-lead-takeaways">

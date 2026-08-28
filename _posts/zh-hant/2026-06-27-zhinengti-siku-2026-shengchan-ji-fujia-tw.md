@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # 2026 代理式財資:從《自主財資指數》到正式環境級副駕駛
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>重點速覽。</strong>代理式財資副駕駛在 2026 年從受控試點邁入正式環境。CIB 財資的模式一致:代理讀取 ISO 20022 現金資料、呼叫受限工具,並在政策區間內重新平衡流動性——外圍以 SR 11-7、DORA 與 EU AI Act 控制框架包覆。</p>
 <p class="post-lead-heading"><strong>關鍵要點</strong></p>
 <ul class="post-lead-takeaways">

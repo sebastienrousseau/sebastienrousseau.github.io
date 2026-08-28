@@ -86,7 +86,7 @@ last_reviewed: "2026-05-24"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Buod ng artikulo">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ang Generative AI ay lumipat mula sa pananaliksik patungo sa produksyon noong 2023. Ang arkitektura ng transformer — partikular ang mekanismo ng self-attention — ang nagbigay sa mga large language model ng kakayahang hawakan ang mahabang konteksto sa mga dokumento. Tinukoy ng GPT-4, Claude 2, Llama 2, at Mistral ang tanawin ng benchmark noong 2023. Ang mga serbisyong pinansyal ay nakakita ng pinakamaagang mga pagpapatupad sa negosyo sa pagbuo ng code, pagbubuod ng regulatoryong dokumento, at awtomatisasyon ng KYC, ngunit ang paggamit sa produksyon ay nangangailangan ng pagharap sa panganib ng hallucination, pamamahala ng datos, at mga inaasahan ng regulasyon ng mga superbisor na aktibong nagmamasid.</p>
 <p class="post-lead-heading"><strong>Mga pangunahing aral</strong></p>
 <ul class="post-lead-takeaways">
@@ -203,7 +203,7 @@ Binabago ng fine-tuning ang mga timbang ng modelo sa pamamagitan ng pagpapatuloy
 - Jiang, A., et al., Mistral AI, (2023). [Mistral 7B ⧉](https://arxiv.org/abs/2310.06825 "Mistral 7B").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-24">2026-05-24</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>

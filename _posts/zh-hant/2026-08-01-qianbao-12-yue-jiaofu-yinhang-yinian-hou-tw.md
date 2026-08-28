@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>重點摘要。</strong> Regulation (EU) 2024/1183 改寫了 eIDAS。兩個日期關鍵：<strong>2026 年 12 月 24 日</strong>前，每個會員國必須提供至少一款歐洲數位身分錢包；<strong>2027 年 12 月 24 日</strong>前，列名產業中的大型與中型信賴方——銀行與金融服務在內——必須在使用者提出要求時，接受它用於強式使用者驗證。銀行的角色從憑證簽發方轉為已註冊的信賴方，而註冊是法律前提，不是技術前提。工程本身平淡無奇。治理、責任歸屬與身分證明的後果則不然。</p>
 <p class="post-lead-heading"><strong>關鍵要點</strong></p>
 <ul class="post-lead-takeaways">

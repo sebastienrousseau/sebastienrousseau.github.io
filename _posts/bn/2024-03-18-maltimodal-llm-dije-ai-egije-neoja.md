@@ -14,7 +14,7 @@ keywords: "মাল্টিমোডাল LLM, MM1 গবেষণা, AI অ
 ![Apple MM1-এর ব্যানার](https://cloudcdn.pro/stocks/images/mm1-visual.webp).class="img-fluid clearfix"
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="প্রবন্ধের সারাংশ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সারাংশ।</strong> MM1 দেখায় Apple কীভাবে ছবি ও ভাষা বোঝে এমন মাল্টিমোডাল মডেল তৈরি করেছে। মূল শিক্ষা হলো: ডেটার মিশ্রণ, ছবি রেজোলিউশন, ভিশন encoder এবং vision-language connector মডেলের কার্যকারিতা নির্ধারণ করে।</p>
 <p class="post-lead-heading"><strong>মূল বার্তা</strong></p>
 <ul class="post-lead-takeaways">

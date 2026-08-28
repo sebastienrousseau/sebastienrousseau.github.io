@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Кванто́вий світанок для CIB: від KyberLib до квантово-стійкого платіжного стека
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Резюме статті">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>Коротко.</strong> BIS Quantum Dawn і дорожня карта PQC від G7 Cyber Expert Group, опублікована у січні 2026 року, винесли посткванто́ву криптографію з досліджень на порядок денний правлінь корпоративного й інвестиційного банкінгу (CIB). KyberLib дає банкам придатну до інспекції відправну точку на ML-KEM і ML-DSA; решта роботи — це багаторічна крипто-агільна програма переходу на платежах, торговому фінансуванні, кастоді та розкритті.</p>
 <p class="post-lead-heading"><strong>Ключові висновки</strong></p>
 <ul class="post-lead-takeaways">

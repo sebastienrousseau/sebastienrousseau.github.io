@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>TL;DR。</strong>DORA 的 TLPT 制度,把红队演练从一项自由裁量的安全活动,变成了针对主管当局所指定实体、以三年为周期、必须产出证据的受监管义务。真正的约束不是技术性的,而是供给侧的:Article 27 要求测试服务商通过认证认可或受正式行为准则约束,持有独立鉴证报告和职业责任保险;允许内部红队最多承担三个周期中的两个;并要求威胁情报提供方每一次都来自机构外部。运行在第三方提供商之上的关键职能,会把这些提供商一并拉进测试。</p>
 <p class="post-lead-heading"><strong>核心要点</strong></p>
 <ul class="post-lead-takeaways">

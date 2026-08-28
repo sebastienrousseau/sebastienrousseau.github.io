@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # مؤشر البنية التحتية المصرفية 2026: قياس الجاهزية للذكاء الاصطناعي الوكيلي والأمن الكمومي والمرونة السحابية الأصلية ومدفوعات الجملة
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="لماذا يهمّ هذا">
+<aside class="post-lead" aria-label="ملخص المقال">
   <p class="post-lead-tldr"><strong>موضوع هذه المقالة:</strong> إطار على غرار مؤشر ستانفورد للذكاء الاصطناعي لقياس جاهزية المصارف عبر مجالات البنية التحتية الأربعة التي باتت في 2026 تتحرَّك معًا — الذكاء الاصطناعي الوكيلي، والتشفير ما بعد الكمومي، والمرونة السحابية الأصلية، ومدفوعات الجملة — إلى جانب المؤشرات الخمسة على مستوى مجلس الإدارة التي تُحوِّل الإطار إلى قدرة تشغيلية.</p>
   <p class="post-lead-takeaways"><strong>لمن تُوجَّه:</strong> الرؤساء التقنيون للمصارف، ورؤساء الهندسة، ورؤساء المخاطر والمرونة، ورؤساء المدفوعات، ورؤساء هندسة التشفير، وأعضاء مجالس الإدارة المُكلَّفون بالإشراف التقني، والجهات المنظِّمة (PRA وECB وFCA وOCC) التي تشرف عليهم.</p>
 </aside>
@@ -217,6 +217,6 @@ site_software: "Static Site Generator, Rust"
 - European Banking Authority, (2026). [قانون المرونة التشغيلية الرقمية ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "قانون المرونة التشغيلية الرقمية").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="نبذة عن المؤلف"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والبنية التحتية للمدفوعات، والأموال المُرمَّزة، وISO 20022، والأمن ما بعد الكمومي، والخدمات المالية السحابية الأصلية، والأسواق الرقمية المنظَّمة.</span><span class="author-credentials">أكثر من 20 عامًا من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والبنية التحتية للمدفوعات، والأموال المُرمَّزة، وISO 20022، والأمن ما بعد الكمومي، والخدمات المالية السحابية الأصلية، والأسواق الرقمية المنظَّمة.</span><span class="author-credentials">أكثر من 20 عامًا من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-06-02">2026-06-02</time>.</p>
 <!-- enrich-end -->

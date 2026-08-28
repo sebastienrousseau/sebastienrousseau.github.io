@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # CIB-এর জন্য কোয়ান্টাম ভোর: KyberLib থেকে কোয়ান্টাম-প্রতিরোধী পেমেন্ট স্ট্যাক
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="নিবন্ধের সারাংশ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে।</strong> BIS Quantum Dawn এবং G7 Cyber Expert Group-এর জানুয়ারি ২০২৬ PQC রোডম্যাপ পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফিকে গবেষণার বাইরে এনে কর্পোরেট ও বিনিয়োগ ব্যাংকিং (CIB) বোর্ডের আলোচ্যসূচিতে বসিয়েছে। KyberLib ব্যাংককে একটি পরিদর্শনযোগ্য ML-KEM ও ML-DSA শুরুর বিন্দু দেয়; বাকি কাজ পেমেন্ট, ট্রেড ফাইন্যান্স, কাস্টডি ও প্রকাশনার জুড়ে একটি বহু-বছরের, ক্রিপ্টো-অ্যাজাইল রূপান্তর প্রোগ্রাম।</p>
 <p class="post-lead-heading"><strong>মূল শিক্ষা</strong></p>
 <ul class="post-lead-takeaways">

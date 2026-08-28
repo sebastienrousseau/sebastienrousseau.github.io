@@ -86,7 +86,7 @@ webmaster: "contact@sebastienrousseau.com"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="নিবন্ধের সারাংশ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> ব্যক্তিগত-কী ক্রিপ্টোগ্রাফি এবং পিয়ার-টু-পিয়ার (P2P) নেটওয়ার্কের মাধ্যমে ডিজিটাল লেনদেন সুরক্ষিত করার অসাধারণ যাত্রার একটি গল্প।</p>
 <p class="post-lead-heading"><strong>মূল বিষয়সমূহ</strong></p>
 <ul class="post-lead-takeaways">
@@ -197,7 +197,7 @@ webmaster: "contact@sebastienrousseau.com"
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "লিঙ্কডইন-এ সেবাস্টিয়ান রুসো"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="লেখক পরিচিতি"><img alt="সেবাস্টিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ যিনি ফলিত AI, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং হোলসেল পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লিখছেন।</span><span class="author-credentials">HSBC কমার্শিয়াল অ্যান্ড ইনভেস্টমেন্ট ব্যাংক, PayPal, Barclays, Shazam, AKQA, Virgin Group জুড়ে ২০ বছরেরও বেশি সময়ের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্টিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ যিনি ফলিত AI, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং হোলসেল পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লিখছেন।</span><span class="author-credentials">HSBC কমার্শিয়াল অ্যান্ড ইনভেস্টমেন্ট ব্যাংক, PayPal, Barclays, Shazam, AKQA, Virgin Group জুড়ে ২০ বছরেরও বেশি সময়ের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">শেষ পর্যালোচনা করা হয়েছে <time datetime="2026-06-23">2026-06-23</time>।</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">সম্পর্কিত পাঠ</h2>

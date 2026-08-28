@@ -89,7 +89,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> ২৫ মে ২০২৬-এ পোপ লিও চতুর্দশ <em>Magnifica Humanitas</em> প্রকাশ করেন — AI নিয়ে প্রথম পোপীয় বিশ্বপত্র। প্রযুক্তি শিল্পের ভিতর থেকে মতবাদ নয়, নৈতিক কাঠামো হিসেবে পড়লে এটি ট্রেন, গাড়ি, পারমাণবিক শক্তি ও ইন্টারনেটের সঙ্গে আসা প্রতিটি নৈতিক উদ্বেগের প্রতিধ্বনি — এবং সৎভাবে আশায় গিয়ে দাঁড়ায়।</p>
 <p class="post-lead-heading"><strong>মূল গ্রহণযোগ্য বিষয়</strong></p>
 <ul class="post-lead-takeaways">

@@ -109,7 +109,7 @@ last_reviewed: "2026-05-24"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Стислий опис статті">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>Стисло (TL;DR).</strong> Audio Analyser використовує нейронні моделі перетворення мовлення на текст Azure Cognitive Services, NLP для аналізу тексту та CherryPy для перетворення аудіозаписів на текстові розшифровки з можливістю пошуку, оцінками тональності, вилученням ключових слів та багатомовними перекладами.</p>
 <p class="post-lead-heading"><strong>Основні висновки</strong></p>
 <ul class="post-lead-takeaways">

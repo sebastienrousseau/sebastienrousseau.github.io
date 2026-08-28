@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # שווקים דיגיטליים סיטונאיים בבריטניה: גילטים מתומללים, סליקה ותפקיד המתאם החדש
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="תקציר המאמר">
 <p class="post-lead-tldr"><strong>תקציר.</strong> בריטניה מינתה מתאם לשווקים דיגיטליים סיטונאיים (Wholesale Digital Markets Champion). זה אינו תפקיד טקסי. זוהי שכבת התיאום הקשוחה שבין HM Treasury, ה-FCA ובנק אנגליה — תפקיד שתוכנן לכפות יכולת פעולה הדדית בין שחקני המגזר הפרטי בתוך ה-Digital Securities Sandbox (DSS). גילטים מתומללים מסדירים את השאלה הזו ראשונים: HQLA על DLT, אטומיים מול מזומן מתומלל, עם ריפו תוך-יומי כפרס המיידי.</p>
 <p class="post-lead-heading"><strong>נקודות מפתח</strong></p>
 <ul class="post-lead-takeaways">
@@ -235,7 +235,7 @@ Regulated Liability Network, Canton, רשתות DLT פרטיות של בנקים
 - Global Government Finance, (2026). [מתאם השווקים הדיגיטליים הסיטונאיים של בריטניה ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "מתאם השווקים הדיגיטליים הסיטונאיים של בריטניה").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="אודות המחבר"><img alt="פורטרט של Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">טכנולוג בנקאות בכיר הכותב על AI יישומי, הגירת ISO 20022, קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים והשינוי המבני של תשלומים סיטונאיים.</span><span class="author-credentials">20+ שנים ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="אודות הכותב"><img alt="פורטרט של Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">טכנולוג בנקאות בכיר הכותב על AI יישומי, הגירת ISO 20022, קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים והשינוי המבני של תשלומים סיטונאיים.</span><span class="author-credentials">20+ שנים ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">נסקר לאחרונה <time datetime="2026-05-30">2026-05-30</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">קריאה נוספת</h2>

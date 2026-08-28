@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Эйсид-джаз в Великобритании: артисты, концерты и альбомы 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Краткое содержание статьи">
 <p class="post-lead-tldr"><strong>Кратко.</strong> Возрождение эйсид-джаза в Великобритании в 2026 году — это не ностальгия, а живая экосистема, в которой Acid Jazz Records, артисты первой волны, джаз-фанк-фестивали и молодые музыканты, ориентированные на грув, активны одновременно.</p>
 <p class="post-lead-heading"><strong>Ключевые выводы</strong></p>
 <ul class="post-lead-takeaways">

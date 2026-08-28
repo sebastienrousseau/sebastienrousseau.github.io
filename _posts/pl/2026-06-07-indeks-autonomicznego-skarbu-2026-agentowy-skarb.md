@@ -90,7 +90,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Podsumowanie artykułu">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>W skrócie.</strong> Indeks autonomicznego skarbu 2026 — pomiar agentowych przepływów, pokrycia programowalnej płynności, integracji stokenizowanych depozytów, orkiestracji płatności w czasie rzeczywistym i automatycznej kontroli gotówki jako jednej tkanki modelu operacyjnego.</p>
 <p class="post-lead-heading"><strong>Wnioski kluczowe</strong></p>
 <ul class="post-lead-takeaways">

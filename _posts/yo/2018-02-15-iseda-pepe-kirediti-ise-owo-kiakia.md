@@ -86,7 +86,7 @@ last_reviewed: "2026-05-24"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Àpilẹ̀ yìí ń ṣàkọsílẹ̀ ikọ́ àṣà imọ̀ ẹ̀rọ ti ìpèlẹ̀ Express Transaction Credits (EXTC) ní ìbẹ̀rẹ̀ ọdún 2018 — ní pàtàkì ẹ̀dá ọba àdéhùn token tí a ṣe lé ERC-223, ìrọ̀lẹ̀ àgbékalẹ̀ ìsanwó pẹ̀lú àwọn ibuwọlu lọ́pọ̀lọpọ̀, àwọn ẹ̀yọ ìpẹṣẹ tí a tiipa pẹ̀lú àkókò, àti ẹ̀rọ àyárayára ìyáwó-ìfọkànsín tí a ṣe lé àwọn ohun ìṣèdájú. Ó jẹ́ àkọsílẹ̀ ohun tí ìpilẹ̀ṣẹ̀ nílò, ohun tí ERC-223 yanjú tí ERC-20 kò lè yanjú, àti ibiti àwọn nẹ́tíwọ́kì ìsanwó lórí ẹwọn ti dojúkọ àwọn ìdíwọ̀ líle ti Ethereum gbangba ní ọdún 2018.</p>
 <p class="post-lead-heading"><strong>Àwọn ohun tí a kọ</strong></p>
 <ul class="post-lead-takeaways">
@@ -232,7 +232,7 @@ A kọ àdéhùn EXTC fún Solidity 0.4.x, ẹ̀dà tó bori ní ìbẹ̀rẹ̀ 
 - Ethereum Foundation, (2014). [Ethereum Whitepaper ⧉](https://ethereum.org/whitepaper "Ethereum Whitepaper").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-24">2026-05-24</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>

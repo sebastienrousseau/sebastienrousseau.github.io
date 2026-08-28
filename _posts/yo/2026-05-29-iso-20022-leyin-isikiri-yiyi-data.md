@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # ISO 20022 Lẹ́yìn Ìṣíkiri: Yíyí Dátà Ìsanwó Padà Di Ọjà Báńkì ní 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> ISO 20022 lẹ́yìn ìṣíkiri kìí ṣe ìparí ètò — ó jẹ́ ìbẹ̀rẹ̀ àǹfààní ọjà dátà. Àdírẹ́ẹ̀sì tó ní ìṣètò, kóòdù ìdí, àlàyé invoice, àwọn ìránṣẹ́ ìwádìí, àti ìṣẹ̀lẹ̀ ipò tó kún ń di àwọn ọjà ìbáramu, àdàmọ̀, owó wíwà, ìbámu, àti àlàyé tí àwọn ilé-iṣẹ́ yóò sanwó owó àfikún fún. Ìbéèrè ìlànà 2026 fún àwọn báńkì ni ìbáwí àpẹẹrẹ: ọjà dátà ìsanwó wo ló gbé àkọsílẹ̀ iṣẹ́ oníbàátì wo, ìṣàkóso wo ló ń ṣiṣẹ́ ní ìyára iṣẹ́, àti báwo ni a ṣe lè díyelé ìṣètò náà. Àwọn báńkì tó tọ́jú ISO 20022 gẹ́gẹ́ bí ìṣíkiri tó parí pàdánù èrè dátà; àwọn báńkì tó tọ́jú gẹ́gẹ́ bí pẹpẹ ọjà ń bú u sí i.</p>
 <p class="post-lead-heading"><strong>Àwọn àyọkà pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

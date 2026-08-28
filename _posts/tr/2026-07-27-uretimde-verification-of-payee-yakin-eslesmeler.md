@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Alacaklı doğrulaması, bir yükümlülük hâline geldiği gün ürün olmaktan çıktı.** 9 Ekim 2025'ten bu yana euro bölgesindeki her üye devlette faaliyet gösteren her ödeme hizmeti sağlayıcısı, Regulation (EU) 2024/886 uyarınca kredi transferlerinde Verification of Payee hizmetini ücretsiz sunmak zorunda. Kontrolün kendisi zor değil: bir ismi hesapta kayıtlı isimle karşılaştır ve yanıtla. Zor çıkan, etrafındaki her şey oldu — beş saniyelik yanıt bütçesi, ne evet ne hayır olan bir orta yanıt, kontrol edilebilmek için parçalanması gereken kurumsal dosyalar ve hem yönetmeliğin hem şema kural kitabının çizmekten kaçındığı bir sorumluluk sınırı.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Makale özeti">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Instant Payments Regulation, alacaklı doğrulamasını bir farklılaşma unsurundan, euro bölgesindeki her PSP'nin ücretsiz işletmek zorunda olduğu bir altyapıya dönüştürdü; hem anlık hem standart kredi transferlerinde. Dokuz ay sonunda mühendislik maliyeti eşleştirme algoritmasına binmedi. "Yakın eşleşme" yanıtına, kurumsal ödeme dosyalarının beş saniyelik zarf içinde satır bazlı taleplere parçalanmasına ve verilip yok sayılan bir uyarının zararı kimsenin fiyatlamadığı bir biçimde yeniden dağıtmasına bindi.</p>
 <p class="post-lead-heading"><strong>Öne çıkanlar</strong></p>
 <ul class="post-lead-takeaways">

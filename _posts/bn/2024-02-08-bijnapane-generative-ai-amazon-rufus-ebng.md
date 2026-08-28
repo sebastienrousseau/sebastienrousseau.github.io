@@ -109,7 +109,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="নিবন্ধের সারাংশ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপ (TL;DR).</strong> AI কীভাবে বিজ্ঞাপনকে রূপান্তরিত করছে তা Amazon-এর Rufus ও Meta-র সর্বশেষ উন্নয়নের অন্তর্দৃষ্টি সহ অন্বেষণ করুন। ভোক্তা সম্পৃক্ততার উপর প্রভাব আবিষ্কার করুন।</p>
 <p class="post-lead-heading"><strong>প্রধান শিক্ষণীয় বিষয়সমূহ</strong></p>
 <ul class="post-lead-takeaways">
@@ -204,7 +204,7 @@ Rufus কথোপকথনমূলক বাণিজ্যের (conversatio
 [01]: https://www.facebook.com/business/news/generative-ai-features-for-ads-coming-to-all-advertisers "সব বিজ্ঞাপনদাতাদের জন্য আসছে বিজ্ঞাপনের জেনারেটিভ AI ফিচার"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="লেখক পরিচিতি"><img alt="সেবাস্টিয়ান রুশোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং টেকনোলজিস্ট, যিনি ফলিত AI, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং হোলসেল পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লিখছেন।</span><span class="author-credentials">HSBC কমার্শিয়াল অ্যান্ড ইনভেস্টমেন্ট ব্যাংক, PayPal, Barclays, Shazam, AKQA, Virgin Group জুড়ে ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্টিয়ান রুশোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং টেকনোলজিস্ট, যিনি ফলিত AI, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং হোলসেল পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লিখছেন।</span><span class="author-credentials">HSBC কমার্শিয়াল অ্যান্ড ইনভেস্টমেন্ট ব্যাংক, PayPal, Barclays, Shazam, AKQA, Virgin Group জুড়ে ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">সর্বশেষ পর্যালোচনা করা হয়েছে <time datetime="2026-06-23">2026-06-23</time>।</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">সম্পর্কিত পঠন</h2>

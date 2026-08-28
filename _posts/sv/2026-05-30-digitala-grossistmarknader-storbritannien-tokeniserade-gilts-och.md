@@ -91,7 +91,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Sammanfattning av artikeln">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>Sammanfattning.</strong> Storbritannien har utsett en Wholesale Digital Markets Champion. Uppdraget är inte ceremoniellt. Det är det hårdföra samordningslagret mellan HM Treasury, FCA och Bank of England — rollen är konstruerad för att tvinga fram interoperabilitet i den privata sektorn inom Digital Securities Sandbox (DSS). Tokeniserade gilts avgör denna fråga först: HQLA på DLT, atomärt mot tokeniserade kontanter, med intradagsrepo som den omedelbara vinsten.</p>
 <p class="post-lead-heading"><strong>Viktiga slutsatser</strong></p>
 <ul class="post-lead-takeaways">

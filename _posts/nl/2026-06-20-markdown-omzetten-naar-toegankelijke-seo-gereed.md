@@ -103,7 +103,7 @@ site_software: "Static Site Generator, Rust"
 # Markdown omzetten naar toegankelijke, SEO-gereed, gestructureerde HTML met Rust in 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Artikelsamenvatting">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> HTML Generator is een pure-Rust Markdown-naar-HTML-compiler die WCAG 2.1 AA afdwingt tijdens het bouwen, schema-conforme JSON-LD injecteert, MathML en Mermaid SVG native rendert en het parseren isoleert binnen een WebAssembly-sandbox — waarmee publicatie een compile-gated controlevlak wordt voor toegankelijkheid, SEO en ICT-beveiliging.</p>
 <p class="post-lead-heading"><strong>Kernpunten</strong></p>
 <ul class="post-lead-takeaways">

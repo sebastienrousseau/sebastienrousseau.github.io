@@ -90,7 +90,7 @@ site_software: "Static Site Generator, Rust"
 <p class="deck">מחזור התשלומים הגלובלי של 2026 מוגדר על ידי שלושה כוחות מתכנסים — מסחר סוכני, תשלומים מוטמעים בלתי נראים, וביצוע בזמן אמת — היושבים על גבי ספר חשבונות מאוחד בטוקניזציה תחת Project Agorá ומעבר SWIFT לכתובת מובנית מחייב בנובמבר 2026.</p>
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="תקציר המאמר">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> נוף התשלומים של 2026 עבר מהגירת מסרים למודל תפעולי רב-ממדי שבו סיכון והכנסה נקבעים על ידי ביצוע בזמן אמת. הניתוח מסנתז את תחזיות 2026 של J.P. Morgan, Global Payments, HSBC וה-Payments Association לתוכנית תפעולית בעלת ארבעה עמודי תווך לבנקים G-SIB, המכסה מסחר סוכני יזום-מודל, ממשקי API אוצריים פעילים ללא הפסקה, ספרי חשבונות מאוחדים בטוקניזציה תחת BIS Project Agorá, ומועד הסיום של 14/15 בנובמבר 2026 למעבר ה-SWIFT לכתובת מובנית.</p>
 <p class="post-lead-heading"><strong>תובנות עיקריות</strong></p>
 <ul class="post-lead-takeaways">
@@ -365,6 +365,6 @@ Agorá הוא המסגרת המשלבת. ניסויי wCBDC לאומיים מכ�
 - European Banking Authority. (2019). *Guidelines on outsourcing arrangements (EBA/GL/2019/02)*. [EBA Outsourcing Guidelines](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על AI יישומי, מהגרת ISO 20022, קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים והטרנספורמציה המבנית של תשלומים סיטונאיים.</span><span class="author-credentials">מעל 20 שנה ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="אודות הכותב"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על AI יישומי, מהגרת ISO 20022, קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים והטרנספורמציה המבנית של תשלומים סיטונאיים.</span><span class="author-credentials">מעל 20 שנה ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">נסקר לאחרונה <time datetime="2026-06-25">2026-06-25</time>.</p>
 <!-- enrich-end -->

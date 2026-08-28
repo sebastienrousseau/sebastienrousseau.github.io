@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # CIB를 위한 양자 새벽: KyberLib에서 양자 내성 결제 스택까지
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="기사 요약">
 <p class="post-lead-tldr"><strong>요약.</strong> BIS Quantum Dawn과 G7 사이버 전문가 그룹의 2026년 1월 PQC 로드맵은 포스트 양자 암호를 연구 영역 밖으로 끌어내 기업·투자은행(CIB) 이사회 안건으로 옮겨놓았습니다. KyberLib은 은행에 감사 가능한 ML-KEM 및 ML-DSA 출발점을 제공합니다. 남은 작업은 결제, 무역금융, 수탁, 공시 전반에 걸친 다년간의 암호 민첩성 기반 전환 프로그램입니다.</p>
 <p class="post-lead-heading"><strong>핵심 시사점</strong></p>
 <ul class="post-lead-takeaways">

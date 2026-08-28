@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Chỉ số AI Tác nhân cho Ngân hàng năm 2026: Đo lường Quyền Tự chủ, Quản trị, Khả năng Kiểm toán và Tác động Kinh doanh
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Tóm tắt bài viết">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Bản thiết kế đo lường mức sẵn sàng triển khai AI tác nhân tại các ngân hàng tier-1 trên sáu chiều: cấp độ tự chủ, phân quyền API, rào chắn an toàn tất định, mức phủ con người trong vòng lặp, độ đầy đủ kiểm toán và đơn vị kinh tế. Phân loại tác nhân theo những gì chúng được phép làm, không theo độ thông minh của mô hình bên dưới. Đối xử với mọi tác nhân chạy production như một mô hình thuộc phạm vi SR 11-7 / SS1/23 ngay từ ngày đầu.</p>
 <p class="post-lead-heading"><strong>Điểm chính</strong></p>
 <ul class="post-lead-takeaways">

@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Περίληψη άρθρου">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ο Regulation (EU) 2024/1183 ξαναέγραψε τον eIDAS. Μετρούν δύο ημερομηνίες: ως τις <strong>24 Δεκεμβρίου 2026</strong> κάθε κράτος μέλος οφείλει να παρέχει τουλάχιστον ένα European Digital Identity Wallet και ως τις <strong>24 Δεκεμβρίου 2027</strong> τα μεγάλα και μεσαία βασιζόμενα μέρη στους απαριθμούμενους κλάδους — μεταξύ τους η τραπεζική και οι χρηματοπιστωτικές υπηρεσίες — οφείλουν να το δέχονται για ισχυρή ταυτοποίηση χρήστη όταν το ζητήσει ο χρήστης. Ο ρόλος της τράπεζας αλλάζει από εκδότης διαπιστευτηρίων σε καταχωρισμένο βασιζόμενο μέρος, και η καταχώριση είναι νομική προϋπόθεση, όχι τεχνική. Η μηχανική πλευρά δεν έχει τίποτα αξιοσημείωτο. Οι συνέπειες σε διακυβέρνηση, ευθύνη και επαλήθευση ταυτότητας έχουν.</p>
 <p class="post-lead-heading"><strong>Βασικά συμπεράσματα</strong></p>
 <ul class="post-lead-takeaways">

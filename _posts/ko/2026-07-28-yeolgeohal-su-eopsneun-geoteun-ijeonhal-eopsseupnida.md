@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="기사 요약">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> 첫 번째 양자내성 기한은 마이그레이션이 아니라 식별·조사입니다. NCSC는 2031년과 2035년 마이그레이션 마일스톤에 앞서 2028년까지 암호 의존성의 완전한 그림을 갖출 것을 요구합니다. 은행은 DORA가 이미 유지하도록 의무화한 자산 대장으로는 이를 만들어낼 수 없습니다. 그 대장은 서버와 소유자, 중요도를 기록할 뿐 알고리즘, 키 길이, 라이브러리, 인증서 만료일은 기록하지 않기 때문입니다. 이제 CycloneDX의 일부이자 ECMA-424로 표준화된 암호 자산 명세서(Cryptography Bill of Materials)가 바로 그 빠진 데이터 모델입니다. 이를 유지·운영되는 통제가 아니라 일회성 PQC 스프레드시트로 다루는 것이 2031년 마일스톤을 놓치게 만들 실수입니다.</p>
 <p class="post-lead-heading"><strong>핵심 요약</strong></p>
 <ul class="post-lead-takeaways">

@@ -87,7 +87,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 # 2026년 은행을 위한 Agentic AI 지수: Autonomy 측정
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="기사 요약">
 <p class="post-lead-tldr"><strong>요약(TL;DR).</strong> 은행권의 에이전틱 AI(agentic AI)는 2026년 현재 운영 인프라입니다. 금융기관의 52%가 이미 이를 배포하고 있으나, 변혁적이라고 평가하는 곳은 14%에 불과합니다. 본 인덱스는 자율성 등급, 거버넌스 아키텍처, 규제 증거, 경제적 책임성, 조직 준비도, 글로벌 규제 정합성이라는 6개 차원에서 준비도를 평가하여 그 격차를 좁힙니다. 평가 기준은 SR 11-7, SS1/23, EU AI Act, 그리고 FSB 2026년 6월 건전 관행(sound practices)에 맞추어 정렬되어 있습니다.</p>
 <p class="post-lead-heading"><strong>핵심 요점</strong></p>
 <ul class="post-lead-takeaways">

@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Indicele de reziliență bancară post-cuantică în 2026: EO 14409, termene-limită globale și agilitate criptografică fiduciară
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Rezumatul articolului">
 <p class="post-lead-tldr"><strong>Pe scurt.</strong> Migrarea către criptografia post-cuantică (PQC) a trecut de punctul fără întoarcere. Cu Executive Order 14409 din SUA semnat pe 22 iunie 2026 și cu ANSSI din Franța stabilind un termen-limită ferm pentru 2030 — certificarea produselor non-PQC încetând în 2027 — agilitatea criptografică nu mai este o aspirație tehnică. Este un mandat de reglementare. Acest indice transformă mandatul respectiv într-un punctaj 0–5 pentru consiliu, pe cinci straturi auditabile.</p>
 <p class="post-lead-heading"><strong>Concluzii esențiale</strong></p>
 <ul class="post-lead-takeaways">

@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # התחדשות האסיד ג'אז בבריטניה: אמנים, קונצרטים ואלבומים של 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="סיכום המאמר">
+<aside class="post-lead" aria-label="תקציר המאמר">
 <p class="post-lead-tldr"><strong>בקצרה.</strong> תחיית האסיד ג'אז הבריטי ב-2026 אינה נוסטלגיה — מדובר במערכת אקולוגית חיה שבה Acid Jazz Records, אמני הגל הראשון, פסטיבלי ג'אז-פאנק ומוזיקאים צעירים מוכווני גרוב פעילים בו-זמנית.</p>
 <p class="post-lead-heading"><strong>נקודות מפתח</strong></p>
 <ul class="post-lead-takeaways">
@@ -231,6 +231,6 @@ The Brand New Heavies עם Galliano ב-The Glasshouse ו-The James Taylor Quarte
 - Mostly Jazz Funk & Soul Festival, (2026). [פסטיבל Mostly Jazz Funk & Soul 2026 ⧉](https://mostlyjazz.co.uk "Mostly Jazz Funk & Soul Festival").
 - Marlbank, (2026). [אלבומי הג'אז הבריטי המובילים של 2026 עד כה ⧉](https://marlbank.net/top-jazz-in-2026/top-uk-jazz-albums-in-2026-so-far/ "Top UK jazz albums in 2026 so far").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="על המחבר"><img alt="דיוקן של סבסטיאן רוסו" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">סבסטיאן רוסו</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על בינה מלאכותית יישומית, על המעבר ל-ISO 20022, על קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים ועל השינוי המבני של תשלומי הסיטונאות.</span><span class="author-credentials">למעלה מ-20 שנים ב-HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="אודות הכותב"><img alt="דיוקן של סבסטיאן רוסו" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">סבסטיאן רוסו</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על בינה מלאכותית יישומית, על המעבר ל-ISO 20022, על קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים ועל השינוי המבני של תשלומי הסיטונאות.</span><span class="author-credentials">למעלה מ-20 שנים ב-HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">נסקר לאחרונה <time datetime="2026-05-22">2026-05-22</time>.</p>
 <!-- enrich-end -->

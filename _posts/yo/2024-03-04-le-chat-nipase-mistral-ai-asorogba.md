@@ -107,7 +107,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Akopọ àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Pade Oluranlọwọ tuntun ti Mistral AI ti o le sọrọ ede pupọ. AI giga ti o le ye àti dáhùn ní ede pupọ, gbogbo rẹ nínú ìjíròrò kan ní àkókò gidi.</p>
 <p class="post-lead-heading"><strong>Awọn koko pataki</strong></p>
 <ul class="post-lead-takeaways">
@@ -210,7 +210,7 @@ Ni ipari, Le Chat lati ọwọ Mistral AI jẹ aṣoju fifo nla si iwaju ni aaye
 [02]: https://chat.openai.com/ "ChatGPT"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nipa onkọwe"><img alt="Aworan ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onimọ-ẹrọ banki giga ti n kọ lori applied AI, ijira ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum fun awọn iṣẹ inawo, ati iyipada igbekalẹ ti awọn sisanwo osunwon.</span><span class="author-credentials">Ju ọdun 20+ lọ kọja HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaili kikun</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Aworan ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onimọ-ẹrọ banki giga ti n kọ lori applied AI, ijira ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum fun awọn iṣẹ inawo, ati iyipada igbekalẹ ti awọn sisanwo osunwon.</span><span class="author-credentials">Ju ọdun 20+ lọ kọja HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaili kikun</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Atunyẹwo to kẹhin <time datetime="2026-06-23">2026-06-23</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Kika ti o ni ibatan</h2>

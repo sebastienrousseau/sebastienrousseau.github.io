@@ -86,7 +86,7 @@ webmaster: "contact@sebastienrousseau.com"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Takaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Gano yadda CRYSTALS-Kyber, wani algorithm na cryptography mai juriya da quantum, yake kawo sauyi a duniyar cryptography kuma yake shirya mu don zamanin quantum.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan lura</strong></p>
 <ul class="post-lead-takeaways">

@@ -109,7 +109,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Alien Studio-র মাধ্যমে Rust, AI এবং Quantum Computing থেকে শিল্প ও ফটোগ্রাফিকে নতুনভাবে সংজ্ঞায়িত করার আমার ব্যক্তিগত যাত্রায় যোগ দিন।</p>
 <p class="post-lead-heading"><strong>মূল কথা</strong></p>
 <ul class="post-lead-takeaways">
@@ -225,7 +225,7 @@ Alien Studio-তে প্রতিটি ছবি কেবল একটি �
 [09]: https://www.midjourney.com/explore "Midjourney"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="লেখক পরিচিতি"><img alt="Sebastien Rousseau-এর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ যিনি ফলিত AI, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবাগুলোর জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং হোলসেল পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group জুড়ে ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="Sebastien Rousseau-এর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ যিনি ফলিত AI, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবাগুলোর জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং হোলসেল পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লেখেন।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group জুড়ে ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">সর্বশেষ পর্যালোচনা করা হয়েছে <time datetime="2026-06-23">2026-06-23</time> তারিখে।</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">সম্পর্কিত পঠন</h2>

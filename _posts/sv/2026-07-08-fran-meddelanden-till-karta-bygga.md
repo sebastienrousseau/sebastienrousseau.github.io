@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Branschen har äntligen ett globalt språk för betalningar. Den har fortfarande ingen global karta för att företag ska kunna agera på det.** ISO 20022 och Swifts CBPR+-program har gett gränsöverskridande betalningar rik, strukturerad och harmoniserad data, förstärkt av CPMI:s datakrav med slutdatum 2027 inom ramen för G20-färdplanen. Vad de inte har gjort är att tala om för en finanschef på ett företag, eller för de system som agerar å deras vägnar, hur den datan bör exponeras, säkras, versioneras och hanteras i verkligheten. Följden är en märklig inversion: meddelandena konvergerar världen över, men det sätt på vilket banker låter företag använda dem förblir splittrat bank för bank. Så här kan banker och finansinstitut gå från harmoniserade meddelanden till en global företagsstandard — med de skenor de redan har.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Sammanfattning av artikeln">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>Sammanfattning.</strong> ISO 20022 och Swifts CBPR+ har gett gränsöverskridande betalningar ett harmoniserat, strukturerat och globalt språk — förstärkt av CPMI:s datakrav med slutdatum 2027. Vad de inte har gett företag är en global karta för hur den datan exponeras, säkras och hanteras. Meddelandena konvergerar världen över; gränssnitten förblir splittrade bank för bank. Så här utvidgas harmoniseringen från "vad en betalning säger" till "hur ett företag använder den" — på de skenor som redan finns.</p>
 <p class="post-lead-heading"><strong>Viktiga slutsatser</strong></p>
 <ul class="post-lead-takeaways">

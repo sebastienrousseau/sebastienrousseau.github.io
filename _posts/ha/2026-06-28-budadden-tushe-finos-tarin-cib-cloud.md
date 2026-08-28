@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Buɗaɗɗen Tushe, FINOS da Tarin CIB na Cloud-Native
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Taƙaitawar labari">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Morgan Stanley, JPMorgan da Citi suna ƙara tsananta jajircewarsu akan FINOS da Linux Foundation. Tarin CIB na cloud-native a 2026 buɗaɗɗe ne ta tsohuwa — ɗakunan karatu na MIT, Apache 2.0 da BSD-3-Clause, runtime na CNCF, SBOMs, tushen SLSA da kayan aikin da sigstore ya sa hannu — kuma ɗakunan karatu na Rust kamar noyalib, http-handle, hsh da KyberLib suna nuna yadda wancan tarin yake a cikin lamba.</p>
 <p class="post-lead-heading"><strong>Manyan abubuwan ɗauka</strong></p>
 <ul class="post-lead-takeaways">

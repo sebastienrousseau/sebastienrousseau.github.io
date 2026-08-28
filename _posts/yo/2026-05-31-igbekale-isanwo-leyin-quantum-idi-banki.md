@@ -89,7 +89,7 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>Lókè-rẹpẹtẹ.</strong> Àwọn ìdìpọ̀ cryptography tí ó ń gbé ìsanwó SWIFT MT àti ISO 20022 ni a kọ́ fún RSA-2048 àti ECC. Àwọn algorithm lẹyin-quantum tí NIST gbé kalẹ̀ — ML-KEM (FIPS 203) àti ML-DSA (FIPS 204) — ń mú kọ́kọ́rọ́ ìgbangba àti àmì-iwé jáde tí ó tó ìlọ́pò ogún ní títóbi. Bí ìbámu àwọn iléèsé wọ̀nyẹn sí ọ̀nà àkànṣe ṣe ń mú ìpínyà ìdìpọ̀, ìparun HSM, àti ìdúró tí àwọn ẹgbẹ́ iṣẹ́ kò lè gba jáde. Kórè-báyìí-fọkàn-báyẹn ti yọ àyàn láti dúró kúrò. Àyàn ìgbékalẹ̀ tí ó dúró ní 2026 ni ìfìrọ́pò lórí ọ̀nà ìyára crypto, kì í ṣe ìṣàtúnṣe.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
@@ -264,7 +264,7 @@ Báńkì tí ó dúró ń gba fèrèsé ìṣíkiri tí ọ̀nà tẹ̀ jáde, �
 - Bank of England (PRA), (2024). [SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa Òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ìṣíkiri ISO 20022, cryptography lẹyin-quantum fún iṣẹ́ ìnáwó, àti ìyípadà ìgbékalẹ̀ ti àwọn ìsanwó ti olówó-ńlá.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ìṣíkiri ISO 20022, cryptography lẹyin-quantum fún iṣẹ́ ìnáwó, àti ìyípadà ìgbékalẹ̀ ti àwọn ìsanwó ti olówó-ńlá.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn <time datetime="2026-05-31">2026-05-31</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Àkàwé Ìtọ́kasí</h2>

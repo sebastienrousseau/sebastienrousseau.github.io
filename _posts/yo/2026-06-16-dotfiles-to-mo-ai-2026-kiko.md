@@ -106,7 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ibi iṣẹ́ olùdàgbàsókè kìí ṣe ojú-ìpàdé ẹ̀gbẹ́ mọ́; ó ti di alábàákẹ́gbẹ́ tó ń ṣiṣẹ́ nínú ìjẹun ìpèsè software, ó sì ti di ojú-ìpàdé tààrà fún pẹpẹ ìṣàkóso AI àdúgbò. Àwọn olùrànlọ́wọ́ AI tó dá lórí terminal àti àwọn olùṣiṣẹ́ <a href="https://modelcontextprotocol.io">Model Context Protocol (MCP)</a> ń pe àṣẹ shell àdúgbò, ń ṣàyẹ̀wò ibi ìpamọ́ kóòdù, wọ́n sì ń kà àwọn fáìlì ètò tó ní àṣírí tààrà. <a href="https://github.com/sebastienrousseau/dotfiles">Dotfiles Sebastien Rousseau</a> jẹ́ àwòkọ́ṣe orisun ṣiṣi, ìpolówó tí ń kọ́ àwọn ibi iṣẹ́ tó ní ààbò, tí a lè dá padà lórí macOS, Linux, àti Windows Subsystem for Linux (WSL) — ó ń da <a href="https://www.chezmoi.io/">Chezmoi</a>, <a href="https://github.com/getsops/sops">SOPS, age</a>, àti ẹ̀rí orísun SLSA Ìpele 3 pọ̀ fún ìpinyà àṣírí tó ní ààbò ìrántí àti ọ̀nà ìṣe tó ní ààlà fún àwọn àwòkọ́ṣe AI àdúgbò.</p>
 <p class="post-lead-heading"><strong>Àwọn àyọkà pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
@@ -261,7 +261,7 @@ Bash, Zsh, Fish, Nushell, àti PowerShell — pẹ̀lú ìbámu kọjá macOS, L
 - GitHub, (2026). *ibi ìpamọ́ dotfiles orisun ṣiṣi*. Wà nínú: [Ibi Ìpamọ́ dotfiles ⧉](https://github.com/sebastienrousseau/dotfiles "ibi ìpamọ́ dotfiles").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa onkọwe"><img alt="Àwòrán ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ báńkì àgbà tí ó ń kọ nípa AI tí a lò, ìṣíkiri ISO 20022, cryptography post-quantum fún iṣẹ́ ìnáwó, àti ìyípadà ìpìlẹ̀ àwọn ìsanwó wholesale.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ báńkì àgbà tí ó ń kọ nípa AI tí a lò, ìṣíkiri ISO 20022, cryptography post-quantum fún iṣẹ́ ìnáwó, àti ìyípadà ìpìlẹ̀ àwọn ìsanwó wholesale.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò gbẹ̀yìn <time datetime="2026-06-16">2026-06-16</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Àwọn ìwé tó jẹmọ́</h2>

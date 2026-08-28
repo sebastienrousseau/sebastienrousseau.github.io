@@ -106,7 +106,7 @@ excerpt: "OpenVoice пропонує значні переваги перед і
 last_reviewed: "2026-05-11"
 ---
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Стислий опис статті">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> OpenVoice від MIT, Tsinghua та MyShell забезпечує професійне клонування голосу з точним контролем тону, акценту та емоцій, а також компроміси, про які варто знати.</p>
 <p class="post-lead-heading"><strong>Ключові висновки</strong></p>
 <ul class="post-lead-takeaways">

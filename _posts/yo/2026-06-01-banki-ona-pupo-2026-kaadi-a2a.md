@@ -89,7 +89,7 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Àkójọpọ̀ àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Báńkì ọ̀nà-púpọ̀ ní 2026 jẹ́ nǹkan mẹ́ta tó dúró lórí ìpilẹ̀ àtọwọ́dọ́wọ́: ẹ̀rọ àkójọpọ̀ tó ń yan ọ̀nà ìsanwó fún ìṣòwò kọ̀ọ̀kan, ìwé owó tó ń ṣàkóso owó tó wà ní àkọ́sẹ̀ tí gbogbo ọ̀nà ojúkojú béèrè, àti olùtumọ̀ ISO 20022 pacs.008 tó jẹ́ kí ìsọfúnni ìpilẹ̀ fà wọ inú A2A àti Open Banking APIs láìsí ìpàdánù ìfìrànṣẹ́ owó tí a ṣètò. Ẹnikẹ́ni tó bá san owó "FedNow" tàbí "stablecoins" gẹ́gẹ́ bí àwọn ètò ọjà ọ̀tọ̀ọ̀tọ̀ yóò san méjì ó sì ṣiṣẹ́ ní àìbóde lórí àwọn méjèèjì.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
@@ -263,7 +263,7 @@ Bẹ̀rẹ̀ pẹ̀lú pacs.008 ìjáde, pain.001 ìwọlé (ìbẹ̀rẹ̀ ìf�
 - Circle Internet Financial, (2026). [USDC Treasury & Reserves ⧉](https://www.circle.com/transparency "Circle transparency").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa Òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ìṣíkiri ISO 20022, cryptography lẹyin-quantum fún iṣẹ́ ìnáwó, àti ìyípadà ìgbékalẹ̀ ti àwọn ìsanwó ti olówó-ńlá.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ìṣíkiri ISO 20022, cryptography lẹyin-quantum fún iṣẹ́ ìnáwó, àti ìyípadà ìgbékalẹ̀ ti àwọn ìsanwó ti olówó-ńlá.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn <time datetime="2026-06-01">2026-06-01</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Àkàwé Ìtọ́kasí</h2>

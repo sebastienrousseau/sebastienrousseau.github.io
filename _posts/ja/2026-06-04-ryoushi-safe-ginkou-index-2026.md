@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # 2026 年の量子セーフ銀行インデックス: ポスト量子暗号、QKD、クリプト・アジリティ、HNDL リスク
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="記事サマリー">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>要旨。</strong> 2026 年の量子セーフ銀行業務は、2 本の曲線が交差する地点で期限が決まる実行プログラムです。1 本目は機関が今日保有するデータの機密性ライフタイム、もう 1 本は暗号学的に重要な量子コンピュータ (CRQC) の到来見通しです。NIST FIPS 203 / 204 / 205 は 2024 年 8 月以降に確定し、CNSA 2.0 は米国連邦の最終形を 2033 年に設定しています。harvest-now-decrypt-later (収集して後で復号) は長期保全データに対してすでに発生しています。取締役会レベル量子スコアカードは 4 つの精緻なパーセンテージ、すなわちインベントリ完全性、HNDL エクスポージャ、NIST 移行進捗、クリプト・アジリティ準備度を追跡します。</p>
 <p class="post-lead-heading"><strong>主要ポイント</strong></p>
 <ul class="post-lead-takeaways">

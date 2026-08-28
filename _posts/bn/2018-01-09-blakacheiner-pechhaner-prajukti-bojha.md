@@ -86,7 +86,7 @@ last_reviewed: "2026-05-24"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে।</strong> Blockchain হল একটি বিতরণকৃত খাতা যেখানে প্রতিটি রেকর্ড (ব্লক) ক্রিপ্টোগ্রাফিকভাবে পূর্ববর্তী ব্লকের সাথে যুক্ত। যেকোনো ঐতিহাসিক রেকর্ড পরিবর্তন করলে পরবর্তী সমস্ত ব্লক অবৈধ হয়ে যায় — এই বৈশিষ্ট্যটি কোনো কেন্দ্রীয় কর্তৃপক্ষ দ্বারা নয়, বরং একই নিয়ম অনুসরণকারী স্বাধীন যাচাইকারীদের নেটওয়ার্ক দ্বারা প্রয়োগ করা হয়। Ethereum এই ডিজাইনকে Turing-সম্পূর্ণ এক্সিকিউশন স্তর দিয়ে প্রসারিত করেছে, খাতাকে প্রোগ্রামযোগ্য করে তুলেছে এবং স্মার্ট কন্ট্র্যাক্ট, ডিজিটাল টোকেন ও বিকেন্দ্রীভূত অর্থায়নের দরজা খুলে দিয়েছে।</p>
 <p class="post-lead-heading"><strong>মূল বিষয়সমূহ</strong></p>
 <ul class="post-lead-takeaways">
@@ -255,7 +255,7 @@ Proof-of-work-এ, নিরাপত্তা শক্তি ব্যয় �
 - NIST, (2015). [SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions ⧉](https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions "NIST FIPS 202").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-24">2026-05-24</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>

@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Always-on CIB: кіберповернення, резервні рейки і квантово-безпечне казначейство
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>Коротко.</strong> CIB у 2026 році оцінюється за поведінкою always-on під час кіберінциденту. Сховища кіберповернення, резервні рейки ISO 20022 поверх RTGS, миттєвих і токенізованих мереж та квантово-безпечні казначейські контролі тепер сидять на одній операційній діаграмі — і її підписує правління.</p>
 <p class="post-lead-heading"><strong>Ключові висновки</strong></p>
 <ul class="post-lead-takeaways">

@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Rezumatul articolului">
 <p class="post-lead-tldr"><strong>Pe scurt.</strong> Regimul TLPT din DORA transformă echipa roșie (red team) dintr-un exercițiu de securitate opțional într-o obligație supravegheată și producătoare de probe, cu o cadență de trei ani, pentru entitățile desemnate de o autoritate competentă. Constrângerile care contează nu sunt tehnice. Ele țin de ofertă: Article 27 cere furnizori de testare acreditați sau supuși unui cod formal, care dețin o asigurare independentă și o asigurare de răspundere civilă profesională, permite echipe roșii interne pentru cel mult două din trei cicluri și impune ca furnizorul de informații despre amenințări să fie extern de fiecare dată. Funcțiile critice care rulează la furnizori terți îi atrag pe acei furnizori în test.</p>
 <p class="post-lead-heading"><strong>Concluzii principale</strong></p>
 <ul class="post-lead-takeaways">

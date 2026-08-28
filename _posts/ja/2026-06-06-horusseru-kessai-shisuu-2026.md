@@ -86,7 +86,7 @@ site_software: "Static Site Generator, Rust"
 ---
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="記事サマリー">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>要旨。</strong> 2026 年のホールセール決済は、2 つの構造的シフトの交点に位置します。ISO 20022 が構造化された決済データを業務モデルへ強制的に組み込み、トークン化預金と BIS Project Agorá が国境を越えた決済をアトミックかつプログラマブルで常時稼働のレールへ移行させています。2026 年に銀行が問うべきは「メッセージを移行したか」ではなく「決済オペレーションは計測可能で、ルーティングされ、監督可能か」です。本指数はこれを 4 つの正確な百分率に分解します:構造化データ完備率、レール経路選択の最適度、決済の最終性ラグ、Agorá コリドー被覆率です。</p>
 <p class="post-lead-heading"><strong>主要な要点</strong></p>
 <ul class="post-lead-takeaways">

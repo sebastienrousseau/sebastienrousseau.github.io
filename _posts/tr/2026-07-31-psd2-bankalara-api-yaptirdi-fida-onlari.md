@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Makale özeti">
 <p class="post-lead-tldr"><strong>Özet.</strong> FiDA, daha fazla uç noktası olan bir PSD2 değil. Üç yapısal kopuş uyumun anlamını değiştiriyor: erişim, tek başınıza kurduğunuz bir arayüzle değil, katılmak zorunda olduğunuz bir şemayla yönetiliyor; veri sahipleri makul ücretlendirme talep edebiliyor, dolayısıyla erişim ücretsiz bir görev olmaktan çıkıp fiyatlı bir ürüne dönüşüyor; ve kapsam konut kredilerine, tasarruflara, yatırımlara, emekliliğe ve hayat dışı sigortaya — yani bankaların gerçekten kazandığı ürünlere — uzanıyor. Metin hâlâ üçlü müzakerede, ancak standartları belirleyecek şemalar şimdiden tasarlanıyor; kaldıraç da tam olarak orada.</p>
 <p class="post-lead-heading"><strong>Öne çıkanlar</strong></p>
 <ul class="post-lead-takeaways">

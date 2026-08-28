@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="लेख का सारांश">
+<aside class="post-lead" aria-label="लेख सारांश">
 <p class="post-lead-tldr"><strong>संक्षेप में।</strong> विनियम (EU) 2024/2847 — साइबर अनुकूलनशीलता विनियम — पूर्ण रूप से <strong>11 दिसंबर 2027</strong> को लागू होता है, परंतु उसके <strong>अनुच्छेद 14 के रिपोर्टिंग दायित्व 11 सितंबर 2026 से आरंभ होते हैं</strong>। निर्माताओं को सक्रिय रूप से शोषित भेद्यता या गंभीर घटना की जानकारी होने के <strong>24 घंटे के भीतर पूर्व-चेतावनी</strong>, <strong>72 घंटे के भीतर पूर्ण अधिसूचना</strong> और <strong>14 दिन के भीतर अंतिम रिपोर्ट</strong> (भेद्यताएँ) अथवा <strong>एक माह</strong> (घटनाएँ) भेजनी होगी, ENISA के एकल रिपोर्टिंग प्लेटफ़ॉर्म के माध्यम से, निर्माता के मुख्य स्थापना वाले राज्य के CSIRT को। जोखिम <strong>1.5 करोड़ यूरो या कुल वैश्विक वार्षिक कारोबार के 2.5%</strong> तक पहुँचता है, जो भी अधिक हो। NIS2 से DORA की ओर भेजने वाला <em>lex specialis</em> नियम यहाँ काम नहीं करता, क्योंकि CRA न NIS2 है न संस्था-विधि।</p>
 <p class="post-lead-heading"><strong>मुख्य बिंदु</strong></p>
 <ul class="post-lead-takeaways">

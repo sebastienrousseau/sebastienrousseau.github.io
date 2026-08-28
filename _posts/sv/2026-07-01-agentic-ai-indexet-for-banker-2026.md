@@ -87,7 +87,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 # Agentic AI-indexet för banker 2026: att mäta autonomi
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Sammanfattning av artikeln">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>Sammanfattning.</strong> Agentisk AI inom bankväsendet är operativ infrastruktur 2026: 52 % av finansinstituten har redan tagit den i drift, men endast 14 % beskriver den som transformerande. Det här indexet sluter det gapet genom att poängsätta beredskap över sex dimensioner — autonominivåer, styrningsarkitektur, regulatoriskt bevisunderlag, ekonomisk ansvarsskyldighet, organisatorisk beredskap och global regulatorisk samstämmighet — kalibrerade mot SR 11-7, SS1/23, EU AI Act och FSB:s sunda praxis från juni 2026.</p>
 <p class="post-lead-heading"><strong>Viktiga slutsatser</strong></p>
 <ul class="post-lead-takeaways">

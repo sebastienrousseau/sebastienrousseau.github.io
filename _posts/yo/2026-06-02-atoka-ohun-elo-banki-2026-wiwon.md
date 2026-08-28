@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Atọ́ka Ohun Èlò Báńkì 2026: Wíwọn Ìmúrasílẹ̀ fún AI Aládàádúró, Ààbò Ọba-Aláṣẹ-Quantum, Ìfaradà Orígínal-Àwọsánmà, àti Ìsanwó Olówó-Ńlá
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Ìdí tí èyí fi ṣe pàtàkì">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
   <p class="post-lead-tldr"><strong>Ohun tí àpilẹ̀kọ yìí jẹ́ nípa:</strong> Àpẹẹrẹ àwòkọ́ṣe Stanford AI Index fún wíwọn ìmúrasílẹ̀ báńkì kọjá àwọn agbègbè ohun èlò mẹ́rin tó ń lọ papọ̀ ní 2026 — AI aládàádúró, cryptography lẹ́yìn-quantum, ìfaradà orígínal-àwọsánmà, àti ìsanwó olówó-ńlá — àti àwọn ìwọ̀n márùn-ún ti ipele igbimọ tó ń sọ àpẹẹrẹ náà di agbára ìṣiṣẹ́.</p>
   <p class="post-lead-takeaways"><strong>Ẹni tó yẹ kí ó kà á:</strong> Àwọn CTO báńkì, Olórí Onímọ̀-ẹ̀rọ, Olórí Ewu àti Ìfaradà, Olórí Ìsanwó, Olórí Onímọ̀-ẹ̀rọ Cryptography, àwọn olùdarí igbimọ tó ń bójútó ẹ̀rọ-ìmọ̀, àti àwọn alámójútó (PRA, ECB, FCA, OCC) tó ń bójútó wọn.</p>
 </aside>
@@ -217,7 +217,7 @@ Lọ́dọọdún fún ìfiwéra ètò, pẹ̀lú àtúnṣe ti inú lọ́sọ�
 - European Banking Authority, (2026). [Òfin Ìfaradà Ìṣiṣẹ́ Onímọ̀-ẹ̀rọ ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "Òfin Ìfaradà Ìṣiṣẹ́ Onímọ̀-ẹ̀rọ").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa Òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ohun èlò ìsanwó, owó tókenì, ISO 20022, ààbò lẹ́yìn-quantum, iṣẹ́ ìnáwó orígínal-àwọsánmà, àti àwọn ọjà onírọ́pò tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ohun èlò ìsanwó, owó tókenì, ISO 20022, ààbò lẹ́yìn-quantum, iṣẹ́ ìnáwó orígínal-àwọsánmà, àti àwọn ọjà onírọ́pò tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn <time datetime="2026-06-02">2026-06-02</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Àkàwé Ìtọ́kasí</h2>

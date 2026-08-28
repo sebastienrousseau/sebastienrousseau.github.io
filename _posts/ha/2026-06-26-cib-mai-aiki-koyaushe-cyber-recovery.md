@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # CIB Mai Aiki Koyaushe: Cyber Recovery, Fallback Rails da Treasury Mai Aminci ga Quantum
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Taƙaitawar labari">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Aikin banki na corporate da investment a 2026 ana auna shi a kan halayyar aiki koyaushe yayin lamarin cyber. Vaults na cyber recovery, ISO 20022 fallback rails a fadin RTGS, hanyoyin sauri da tokenised, da sarrafa treasury mai aminci ga quantum yanzu suna zaune a kan zane guda na aiki — kuma hukumar tana sa hannu a kanta.</p>
 <p class="post-lead-heading"><strong>Manyan abubuwan ɗauka</strong></p>
 <ul class="post-lead-takeaways">

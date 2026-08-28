@@ -103,7 +103,7 @@ site_software: "Static Site Generator, Rust"
 # http-handle: Высокопроизводительный Ingress Edge без Зависимостей для Банкинга в 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Резюме статьи">
+<aside class="post-lead" aria-label="Краткое содержание статьи">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> http-handle — это бинарный файл Rust с открытым исходным кодом, статически скомпилированный, который заменяет Nginx и Envoy на банковском периметре. Он обеспечивает 180 000 запросов в секунду на узлах ARM64 через передачи zero-copy <code>sendfile(2)</code> Linux, применяет mTLS и валидацию JWT на уровне сетевого сокета до запуска любого кода приложения, автоматически согласовывает HTTP/2 и HTTP/3 через ALPN и нативно отправляет метрики OpenTelemetry — всё с нулевыми зависимостями от времени выполнения помимо <code>libc</code>.</p>
 <p class="post-lead-heading"><strong>Ключевые выводы</strong></p>
 <ul class="post-lead-takeaways">

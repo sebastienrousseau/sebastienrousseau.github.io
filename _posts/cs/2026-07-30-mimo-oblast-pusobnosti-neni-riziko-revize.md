@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Shrnutí článku">
 <p class="post-lead-tldr"><strong>Ve zkratce.</strong> Revidované dohledové pokyny k modelovému riziku ze 17. dubna 2026 (SR 26-2 / OCC Bulletin 2026-13) nahrazují rámec z roku 2011 a výslovně vylučují generativní a agentní AI, s příslibem veřejné konzultace. Toto vyloučení je rozhodnutím o oblasti působnosti <em>těchto</em> pokynů, nikoli dohledovým schválením: tentýž model nadále spadá pod riziko třetích stran, operační riziko, ochranu spotřebitele a nediskriminační úvěrování. Britský SS1/23 je přitom technologicky neutrální a tyto modely dál zahrnuje. Skupinová banka teď provozuje jeden model pod dvěma odpověďmi a poctivou reakcí je řídit se tou přísnější.</p>
 <p class="post-lead-heading"><strong>Klíčové poznatky</strong></p>
 <ul class="post-lead-takeaways">
