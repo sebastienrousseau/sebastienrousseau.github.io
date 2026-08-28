@@ -46,7 +46,7 @@ def test_suffix_is_not_doubled():
 
 
 def test_year_is_dropped_because_the_filename_already_carries_it():
-    """"2026'da bankalar…" would otherwise give 2026-07-03-2026-…"""
+    """ "2026'da bankalar…" would otherwise give 2026-07-03-2026-…"""
     assert not derive_slug("2026'da bankalar için risk", "tr", "2026").startswith("2026")
 
 
