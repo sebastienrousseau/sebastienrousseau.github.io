@@ -7,14 +7,20 @@ already localise roughly 43 % of theirs, so a "non-Latin keeps English" rule
 would declare live URLs violations to fit a table.
 
 Slugs were localised inconsistently and nothing recorded why — 14 locales at
-100 % English, most of the rest near half, `fr` at 33 %. This makes the gap
-measurable and stops it widening.
+100 % English, most of the rest near half, `fr` at 33 %. The ratchet below made
+that gap measurable and stopped it widening while it was worked through.
 
-Ratchet: each locale's current localisation rate is recorded as a baseline and
-the gate FAILS only if a locale goes backwards. The remaining backlog is
-printed every run — visible, not silently permanent. Same mechanism as the
-mypy tier and the complexity allowlist. `--strict` fails on the backlog too,
-for when it has been worked through.
+The backlog is now closed: all 34 locales are at 0 % English slugs, the
+baseline records 0 for every locale, and `build.sh` runs this gate with
+`--strict`, so a single English slug fails the build rather than being
+absorbed as backlog. The ratchet remains — each locale's rate is recorded as a
+baseline and the gate FAILS if a locale goes backwards — but with a zero
+baseline and `--strict` the two conditions coincide.
+
+The last 71 files were English-slugged because their `title:` frontmatter had
+never been translated (bodies and `seo_title` had been), so there was no
+localised title for the slug to follow. Fixing the titles is what made the
+slugs derivable.
 
 Usage:  python3 tests/validation/test_slug_policy.py [--strict]
         python3 tests/validation/test_slug_policy.py --update-baseline
