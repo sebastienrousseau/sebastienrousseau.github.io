@@ -30,6 +30,42 @@ Bagi institusi kewangan, peralihan ini mewujudkan kekangan operasi yang besar:
 
 [Pacs008](https://github.com/sebastienrousseau/pacs008) menyelesaikan masalah ini. Ia ialah pustaka Python sumber terbuka yang ringan dan mengautomasikan penukaran data kewangan mentah kepada mesej pemindahan kredit pelanggan antara bank pacs.008 ISO 20022 yang disahkan sepenuhnya dan mematuhi skema. Dengan merapatkan jurang data warisan-ke-berstruktur, pacs008 memberikan Pulangan atas Daya Tahan (RoR) yang tinggi, memelihara modal kerja dan menjamin pelaksanaan masa nyata merentasi rel global.
 
+## Mengapa saya membina pacs008 sebegini
+
+Saya menulis `pacs008` dan pustaka adiknya di hulu, `pain001`, dan saya
+menghabiskan kehidupan kerja saya dalam pembayaran borong serta pengurusan produk
+API. Gabungan itulah sebab pustaka ini berbentuk sedemikian, jadi wajar keputusan
+tersebut dinyatakan secara terang, bukan dibiarkan tersirat dalam kod.
+
+**Pengesahan berjalan sebelum penjanaan, bukan selepasnya.** Naluri kebanyakan
+warisan sistem pembayaran ialah menjana mesej kemudian memeriksanya, kerana
+begitulah proses semakan dibentuk: fail dihasilkan, seseorang memeriksanya,
+pengecualian masuk ke barisan. Susunan itu menjamin kecacatan ditemui pada titik
+tuas paling rendah — selepas kerja menyusun mesej sudah selesai, dan selalunya
+selepas mesej meninggalkan institusi. Mengesahkan dahulu bermakna alamat tidak
+patuh atau IBAN cacat menjadi kegagalan binaan, bukan penolakan rangkaian.
+
+**Lesennya MIT kerana bank perlu membaca logik pengesahan, bukan
+mempercayainya.** Pengesah tertutup meminta institusi menerima tafsiran orang
+lain terhadap garis panduan penggunaan secara membuta tuli. Itu bukan permintaan
+munasabah kepada pasukan yang memikul kewajipan kawal selia. Setiap peraturan
+dalam pustaka ini boleh diperiksa, dipertikaikan dan difork.
+
+**Pengesahan dibuat terhadap skema XSD rasmi, bukan dilaksanakan semula.**
+Anggaran tulisan tangan bagi peraturan ISO 20022 akan menyimpang daripada kontrak
+sebenar rangkaian sebaik sahaja mana-mana pihak berubah. Skema itulah kontraknya;
+apa-apa lain ialah sumber kebenaran kedua yang menanti untuk bercanggah.
+
+**Ia menyasarkan CI, bukan langkah semakan.** Pengesah yang perlu diingat oleh
+seseorang untuk dijalankan ialah pengesah yang berhenti dijalankan di bawah
+tekanan tarikh akhir — tepat ketika ia paling penting.
+
+Apa yang sengaja tidak dilakukan pustaka ini sama sengajanya. Ia ialah kit alat
+lapisan mesej. Ia tidak menggantikan enjin pembayaran, sistem saringan sekatan,
+atau pembersihan data induk pelanggan yang perlu dilakukan institusi di puncanya.
+Ia menjadikan pembersihan itu boleh dikuatkuasakan; ia tidak melakukannya untuk
+anda.
+
 ## Lensa Seni Bina pacs008 2026
 
 Pustaka pacs008 distrukturkan sebagai enjin pengesahan dan penjanaan terpencil, memastikan input mentah dihurai, diperkaya, dan dibalut secara sistematik dalam sampul standard:

@@ -137,6 +137,45 @@ Pour les institutions financières, cette transition crée des contraintes opér
 
 [pacs008](https://github.com/sebastienrousseau/pacs008) résout ce problème. C'est une bibliothèque Python open source et légère qui automatise la conversion de données financières brutes en messages pacs.008 de virement client interbancaire ISO 20022 entièrement validés et conformes au schéma. En comblant l'écart entre les données héritées et structurées, pacs008 délivre un Return on Resilience (RoR) élevé, préservant le fonds de roulement et sécurisant l'exécution en temps réel sur les rails mondiaux.
 
+## Pourquoi j'ai conçu pacs008 ainsi
+
+J'ai écrit `pacs008`, ainsi que son pendant en amont `pain001`, et je consacre ma
+vie professionnelle aux paiements de gros et à la gestion de produits API. C'est
+cette combinaison qui explique la forme de cette bibliothèque, et il vaut donc
+mieux exposer ces décisions explicitement plutôt que de les laisser implicites
+dans le code.
+
+**La validation précède la génération, et non l'inverse.** Le réflexe, dans la
+plupart des patrimoines de paiement, consiste à générer un message puis à le
+vérifier, parce que c'est ainsi qu'est façonné le processus de revue : un fichier
+est produit, quelqu'un l'inspecte, les exceptions partent en file d'attente. Cet
+ordre garantit que les défauts sont découverts au point de moindre levier — une
+fois l'assemblage du message déjà fait, et souvent une fois le message sorti de
+l'établissement. Valider d'abord signifie qu'une adresse non conforme ou un IBAN
+mal formé devient un échec de build plutôt qu'un rejet réseau.
+
+**La licence est MIT parce que les banques doivent lire la logique de validation,
+pas s'y fier.** Un validateur fermé demande à un établissement d'accepter sur
+parole la lecture que quelqu'un d'autre fait des règles d'usage. Ce n'est pas une
+demande raisonnable envers une équipe qui porte l'obligation réglementaire. Chaque
+règle de cette bibliothèque peut être inspectée, contestée et forkée.
+
+**La validation s'appuie sur les schémas XSD officiels plutôt que sur une
+réimplémentation.** Une approximation écrite à la main des règles ISO 20022
+diverge du contrat réel du réseau dès que l'une des deux parties change. Les
+schémas sont le contrat ; tout le reste est une seconde source de vérité qui
+attend de le contredire.
+
+**Elle vise l'intégration continue plutôt qu'une étape de revue.** Un validateur
+qu'une personne doit penser à lancer est un validateur qu'on cesse de lancer sous
+la pression des délais, c'est-à-dire précisément quand il compte le plus.
+
+Ce que la bibliothèque ne fait délibérément pas l'est tout autant. C'est une
+boîte à outils de la couche message. Elle ne remplace ni un moteur de paiement, ni
+un système de filtrage des sanctions, ni le nettoyage des données de référence
+client qu'un établissement doit mener à la source. Elle rend ce nettoyage
+opposable ; elle ne le fait pas à votre place.
+
 ## La grille de lecture architecturale pacs008 en 2026
 
 La bibliothèque pacs008 est structurée comme un moteur isolé de validation et de génération, garantissant que les entrées brutes sont systématiquement analysées, enrichies et encapsulées dans des enveloppes standard :

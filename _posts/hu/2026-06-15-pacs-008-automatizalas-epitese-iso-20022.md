@@ -30,6 +30,44 @@ A pénzügyi intézmények számára ez az átmenet jelentős működési korlá
 
 A [Pacs008](https://github.com/sebastienrousseau/pacs008) megoldja ezt a problémát. Ez egy nyílt forráskódú, könnyűsúlyú Python-könyvtár, amely automatizálja a nyers pénzügyi adatok teljesen validált, sémakompatibilis ISO 20022 pacs.008 bankközi ügyfélátutalási üzenetekké alakítását. Azáltal, hogy áthidalja a régi és a strukturált adatok közötti szakadékot, a pacs008 magas ellenállóképesség-megtérülést (Return on Resilience, RoR) biztosít, megőrzi a forgótőkét és biztosítja a valós idejű végrehajtást a globális rendszereken keresztül.
 
+## Miért így építettem meg a pacs008-at
+
+Én írtam a `pacs008`-at és annak felmenő testvérét, a `pain001`-et, és a
+munkásságomat a nagyértékű fizetéseknek és az API-termékmenedzsmentnek szentelem.
+Ez a kombináció magyarázza, miért így néz ki ez a könyvtár, ezért érdemes a
+döntéseket kimondani ahelyett, hogy a kódban maradnának burkoltan.
+
+**A validáció a generálás előtt fut, nem utána.** A legtöbb fizetési
+rendszerkörnyezetben az ösztön az, hogy előbb elkészül az üzenet, azután
+ellenőrzik, mert így van kialakítva az átvizsgálási folyamat: elkészül egy
+állomány, valaki megnézi, a kivételek sorba kerülnek. Ez a sorrend garantálja,
+hogy a hibák a legkisebb hatásfokú ponton derüljenek ki — miután az üzenet
+összeállítása már megtörtént, és gyakran azután, hogy elhagyta az intézményt. Ha
+előbb validálunk, akkor a nem megfelelő cím vagy a hibás IBAN build-hiba lesz,
+nem hálózati elutasítás.
+
+**A licenc MIT, mert a bankoknak olvasniuk kell a validációs logikát, nem
+megbízniuk benne.** Egy zárt validátor azt kéri az intézménytől, hogy jóhiszeműen
+fogadja el valaki más olvasatát a használati útmutatókról. Ezt nem ésszerű kérni
+egy csapattól, amely a szabályozói kötelezettséget viseli. E könyvtár minden
+szabálya megvizsgálható, vitatható és forkolható.
+
+**A validáció a hivatalos XSD-sémák ellen történik, nem újraimplementálva.** Az
+ISO 20022 szabályainak kézzel írt közelítése attól a pillanattól elsodródik a
+hálózat tényleges szerződésétől, hogy bármelyik fél változik. A sémák a
+szerződés; minden más egy második igazságforrás, amely csak arra vár, hogy
+ellentmondjon.
+
+**A CI-t célozza, nem egy átvizsgálási lépést.** Az a validátor, amelynek
+futtatására egy embernek emlékeznie kell, az a validátor, amelyet határidős
+nyomás alatt már nem futtatnak — vagyis épp akkor nem, amikor a legfontosabb.
+
+Az is éppúgy szándékos, amit a könyvtár tudatosan nem csinál. Ez egy
+üzenetrétegbeli eszközkészlet. Nem helyettesít fizetési motort, szankciószűrő
+rendszert, sem az ügyféltörzsadatok rendbetételét, amelyet az intézménynek a
+forrásnál kell elvégeznie. Számonkérhetővé teszi ezt a rendbetételt; nem végzi el
+Ön helyett.
+
 ## A pacs008 2026-os architektúrája
 
 A pacs008 könyvtár egy elszigetelt validációs és generáló motorként épül fel, biztosítva, hogy a nyers bemenetek szisztematikusan elemzésre, gazdagításra és szabványos borítékokba csomagolásra kerüljenek:

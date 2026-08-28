@@ -146,6 +146,41 @@ For financial institutions, this transition creates major operational constraint
 
 [Pacs008](https://github.com/sebastienrousseau/pacs008) solves this problem. It is an open-source, lightweight Python library that automates the conversion of raw financial data into fully validated, schema-compliant ISO 20022 pacs.008 interbank customer credit transfer messages. By bridging the legacy-to-structured data gap, pacs008 delivers a high Return on Resilience (RoR), preserving working capital and securing real-time execution across global rails.
 
+## Why I Built pacs008 This Way
+
+I wrote `pacs008`, and its upstream sibling `pain001`, and I spend my working life
+on wholesale payments and API product management. That combination is the reason
+this library looks the way it does, so it is worth setting out the decisions
+explicitly rather than leaving them implicit in the code.
+
+**Validation runs before generation, not after.** The instinct in most payment
+estates is to generate a message and then check it, because that is how the
+review process is shaped: a file is produced, someone inspects it, exceptions go
+to a queue. That ordering guarantees defects are found at the point of least
+leverage — after the work of assembling the message is already done, and often
+after it has left the building. Validating first means a non-compliant address
+or a malformed IBAN is a build failure rather than a network rejection.
+
+**The licence is MIT because banks have to read the validation logic, not trust
+it.** A closed validator asks an institution to accept somebody else's reading of
+the usage guidelines on faith. That is not a reasonable thing to ask of a team
+that carries the regulatory obligation. Every rule in this library can be
+inspected, disagreed with, and forked.
+
+**Validation is checked against the official XSD schemas rather than
+reimplemented.** A hand-written approximation of the ISO 20022 rules drifts from
+the network's actual contract the moment either side changes. The schemas are the
+contract; anything else is a second source of truth waiting to disagree.
+
+**It targets CI rather than a review step.** A validator that a person has to
+remember to run is a validator that stops being run under deadline pressure,
+which is exactly when it matters most.
+
+What the library deliberately does not do is equally deliberate. It is a
+message-layer toolkit. It does not replace a payments engine, a sanctions
+screening system, or the customer master-data remediation an institution has to
+do at source. It makes that remediation enforceable; it does not do it for you.
+
 ## The pacs008 2026 Architecture Lens
 
 The pacs008 library is structured as an insulated validation and generation engine, ensuring raw inputs are systematically parsed, enriched, and wrapped in standard envelopes:

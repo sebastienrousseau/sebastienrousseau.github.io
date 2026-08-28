@@ -137,6 +137,44 @@ Pentru instituțiile financiare, această tranziție creează constrângeri oper
 
 [pacs008](https://github.com/sebastienrousseau/pacs008) rezolvă această problemă. Este o bibliotecă Python open-source, ușoară, care automatizează conversia datelor financiare brute în mesaje ISO 20022 pacs.008 de transfer credit client interbancar, complet validate și conforme cu schema. Acoperind golul dintre datele moștenite și cele structurate, pacs008 oferă un Return on Resilience (RoR) ridicat, conservând capitalul de lucru și asigurând execuția în timp real pe rețelele globale.
 
+## De ce am construit pacs008 în acest fel
+
+Am scris `pacs008` și biblioteca-soră din amonte, `pain001`, și îmi dedic viața
+profesională plăților wholesale și managementului de produs pentru API-uri.
+Această combinație explică forma bibliotecii, așa că merită expuse deciziile
+explicit, în loc să rămână implicite în cod.
+
+**Validarea rulează înaintea generării, nu după.** Instinctul, în majoritatea
+patrimoniilor de plăți, este să generezi mesajul și abia apoi să îl verifici,
+pentru că așa este croit procesul de revizuire: se produce un fișier, cineva îl
+inspectează, excepțiile ajung într-o coadă. Ordinea aceasta garantează că
+defectele apar în punctul cu cel mai mic efect de pârghie — după ce munca de
+asamblare a mesajului este deja făcută și, adesea, după ce mesajul a părăsit
+instituția. A valida întâi înseamnă că o adresă neconformă sau un IBAN malformat
+devine o eroare de build, nu o respingere în rețea.
+
+**Licența este MIT pentru că băncile trebuie să citească logica de validare, nu
+să se încreadă în ea.** Un validator închis cere unei instituții să accepte pe
+cuvânt lectura altcuiva asupra ghidurilor de utilizare. Nu este o cerință
+rezonabilă față de o echipă care poartă obligația de reglementare. Fiecare regulă
+din această bibliotecă poate fi inspectată, contestată și bifurcată.
+
+**Validarea se face față de schemele XSD oficiale, nu printr-o
+reimplementare.** O aproximare scrisă de mână a regulilor ISO 20022 se
+îndepărtează de contractul real al rețelei de îndată ce oricare dintre părți se
+schimbă. Schemele sunt contractul; orice altceva este o a doua sursă de adevăr
+care așteaptă să îl contrazică.
+
+**Țintește integrarea continuă, nu un pas de revizuire.** Un validator pe care
+cineva trebuie să își amintească să îl ruleze este un validator care încetează să
+mai fie rulat sub presiunea termenelor — exact atunci când contează cel mai mult.
+
+Ceea ce biblioteca nu face în mod deliberat este la fel de deliberat. Este un set
+de instrumente pentru stratul de mesaje. Nu înlocuiește un motor de plăți, un
+sistem de screening al sancțiunilor și nici curățarea datelor de referință despre
+clienți pe care instituția trebuie să o facă la sursă. Face acea curățare
+exigibilă; nu o face în locul dumneavoastră.
+
 ## Perspectiva arhitecturală pacs008 2026
 
 Biblioteca pacs008 este structurată ca un motor izolat de validare și generare, asigurând că intrările brute sunt sistematic analizate, îmbogățite și împachetate în plicuri standard:

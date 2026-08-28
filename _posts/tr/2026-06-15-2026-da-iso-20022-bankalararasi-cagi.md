@@ -137,6 +137,41 @@ Finansal kurumlar için bu geçiş ciddi operasyonel kısıtlar yaratıyor:
 
 [pacs008](https://github.com/sebastienrousseau/pacs008) bu sorunu çözer. Ham finansal verilerin tamamen doğrulanmış, şema uyumlu ISO 20022 pacs.008 bankalararası müşteri alacak transferi mesajlarına dönüştürülmesini otomatikleştiren, açık kaynaklı, hafif bir Python kütüphanesidir. Eski-yapılandırılmış veri boşluğunu kapatarak pacs008, yüksek Dayanıklılık Getirisi (RoR) sunar; işletme sermayesini korur ve küresel raylar genelinde gerçek zamanlı yürütmeyi güvence altına alır.
 
+## pacs008'i neden böyle kurdum
+
+`pacs008`'i ve onun yukarı akıştaki kardeşi `pain001`'i ben yazdım; çalışma
+hayatımı toptan ödemeler ve API ürün yönetimine ayırıyorum. Bu kütüphanenin
+biçimini açıklayan şey bu birleşim; dolayısıyla kararları kodun içinde örtük
+bırakmak yerine açıkça ortaya koymak yerinde olur.
+
+**Doğrulama, üretimden sonra değil önce çalışır.** Çoğu ödeme mirasında refleks,
+mesajı üretip sonra denetlemektir; çünkü inceleme süreci böyle biçimlenmiştir:
+dosya üretilir, biri bakar, istisnalar kuyruğa gider. Bu sıralama, kusurların en
+az kaldıraçlı noktada bulunmasını garanti eder — mesajı bir araya getirme işi
+bittikten, çoğu zaman da mesaj kurumdan çıktıktan sonra. Önce doğrulamak,
+uyumsuz bir adresin ya da bozuk bir IBAN'ın ağ reddi yerine bir derleme hatası
+olması demektir.
+
+**Lisans MIT, çünkü bankaların doğrulama mantığını okuması gerekir, ona güvenmesi
+değil.** Kapalı bir doğrulayıcı, kurumdan başkasının kullanım kılavuzu okumasını
+peşinen kabul etmesini ister. Düzenleyici yükümlülüğü taşıyan bir ekipten bunu
+istemek makul değildir. Bu kütüphanedeki her kural incelenebilir, itiraz
+edilebilir ve çatallanabilir.
+
+**Doğrulama, yeniden yazılmış bir kopya yerine resmî XSD şemalarına karşı
+yapılır.** ISO 20022 kurallarının elle yazılmış bir yaklaşığı, taraflardan biri
+değiştiği anda ağın gerçek sözleşmesinden ayrışır. Şemalar sözleşmedir; başka her
+şey, çelişmeyi bekleyen ikinci bir doğruluk kaynağıdır.
+
+**Bir inceleme adımını değil, CI'ı hedefler.** Çalıştırılması birinin aklında
+tutmasına bağlı olan bir doğrulayıcı, teslim baskısı altında çalıştırılmayı
+bırakan bir doğrulayıcıdır — yani tam da en çok önem taşıdığı anda.
+
+Kütüphanenin bilerek yapmadıkları da aynı ölçüde bilinçlidir. Bu bir mesaj
+katmanı araç takımıdır. Bir ödeme motorunun, yaptırım tarama sisteminin ya da
+kurumun kaynakta yapması gereken müşteri ana veri düzeltmesinin yerini almaz. O
+düzeltmeyi zorunlu kılar; sizin yerinize yapmaz.
+
 ## 2026 pacs008 Mimari Merceği
 
 pacs008 kütüphanesi, ham girdilerin sistematik olarak ayrıştırılmasını, zenginleştirilmesini ve standart zarflar içine sarılmasını sağlayan yalıtılmış bir doğrulama ve üretim motoru olarak yapılandırılmıştır:

@@ -137,6 +137,42 @@ För finansiella institutioner skapar denna övergång stora operativa begränsn
 
 [Pacs008](https://github.com/sebastienrousseau/pacs008) löser detta problem. Det är ett lättviktigt Python-bibliotek i öppen källkod som automatiserar konverteringen av rådata från finansiella system till fullständigt validerade, schemakompatibla ISO 20022 pacs.008 interbanka kundbetalningsöverföringsmeddelanden. Genom att brygga gapet mellan legacy- och strukturerad data levererar pacs008 en hög avkastning på resiliens (RoR), bevarar rörelsekapital och säkrar realtidsexekvering över globala rails.
 
+## Varför jag byggde pacs008 så här
+
+Jag skrev `pacs008` och dess uppströms syskon `pain001`, och jag ägnar mitt
+arbetsliv åt wholesale payments och API-produktledning. Den kombinationen är
+skälet till att biblioteket ser ut som det gör, så det är värt att skriva ut
+besluten uttryckligen i stället för att låta dem ligga underförstådda i koden.
+
+**Valideringen körs före genereringen, inte efter.** Reflexen i de flesta
+betalningslandskap är att generera ett meddelande och sedan kontrollera det,
+eftersom granskningsprocessen är formad så: en fil produceras, någon inspekterar
+den, avvikelser går till en kö. Den ordningen garanterar att defekter hittas där
+hävstången är minst — efter att arbetet med att sätta ihop meddelandet redan är
+gjort, och ofta efter att det lämnat huset. Att validera först innebär att en
+icke-konform adress eller ett felaktigt IBAN blir ett byggfel i stället för en
+avvisning i nätet.
+
+**Licensen är MIT därför att banker måste kunna läsa valideringslogiken, inte
+lita på den.** En sluten validator ber ett institut att på tro och heder godta
+någon annans tolkning av usage guidelines. Det är inte rimligt att begära av ett
+team som bär det regulatoriska ansvaret. Varje regel i biblioteket kan
+granskas, ifrågasättas och forkas.
+
+**Valideringen sker mot de officiella XSD-scheman i stället för att
+återimplementeras.** En handskriven approximation av ISO 20022-reglerna glider
+ifrån nätets faktiska kontrakt så snart någondera sidan ändras. Scheman är
+kontraktet; allt annat är en andra sanningskälla som väntar på att säga emot.
+
+**Den siktar på CI snarare än på ett granskningssteg.** En validator som en
+människa måste komma ihåg att köra är en validator som slutar köras under
+tidspress — vilket är precis då den betyder mest.
+
+Det biblioteket medvetet inte gör är lika medvetet. Det är en verktygslåda för
+meddelandelagret. Det ersätter varken en betalmotor, ett sanktionsscreeningsystem
+eller den sanering av kundmasterdata som ett institut måste göra vid källan. Det
+gör den saneringen möjlig att kräva; det gör den inte åt dig.
+
 ## Arkitekturlinsen för pacs008 2026
 
 pacs008-biblioteket är strukturerat som en isolerad validerings- och genereringsmotor som säkerställer att rådata systematiskt parsas, berikas och kapslas in i standardkonvolut:

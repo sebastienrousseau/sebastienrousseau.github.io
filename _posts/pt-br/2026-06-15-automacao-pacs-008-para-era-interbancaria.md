@@ -137,6 +137,44 @@ Para as instituições financeiras, essa transição cria restrições operacion
 
 [pacs008](https://github.com/sebastienrousseau/pacs008) resolve esse problema. É uma biblioteca Python de código aberto e leve que automatiza a conversão de dados financeiros brutos em mensagens pacs.008 de transferência de crédito de cliente interbancário ISO 20022 totalmente validadas e em conformidade com o schema. Ao conectar a lacuna entre dados legados e estruturados, pacs008 entrega um Retorno sobre Resiliência (RoR) elevado, preservando capital de giro e garantindo execução em tempo real nos trilhos globais.
 
+## Por que construí o pacs008 desta forma
+
+Escrevi o `pacs008` e sua biblioteca irmã a montante, o `pain001`, e dedico minha
+vida profissional a pagamentos de atacado e à gestão de produto de APIs. É essa
+combinação que explica o formato desta biblioteca, então vale explicitar as
+decisões em vez de deixá-las implícitas no código.
+
+**A validação ocorre antes da geração, não depois.** O instinto na maioria dos
+parques de pagamentos é gerar a mensagem e então conferi-la, porque é assim que o
+processo de revisão está moldado: um arquivo é produzido, alguém inspeciona,
+exceções vão para uma fila. Essa ordem garante que os defeitos apareçam no ponto
+de menor alavancagem — depois que o trabalho de montar a mensagem já foi feito e,
+muitas vezes, depois que ela já saiu da instituição. Validar primeiro significa
+que um endereço não conforme ou um IBAN malformado vira falha de build em vez de
+rejeição na rede.
+
+**A licença é MIT porque bancos precisam ler a lógica de validação, não confiar
+nela.** Um validador fechado pede que a instituição aceite, por fé, a leitura que
+outra pessoa faz das usage guidelines. Não é algo razoável de se pedir a uma
+equipe que carrega a obrigação regulatória. Cada regra desta biblioteca pode ser
+inspecionada, contestada e bifurcada.
+
+**A validação é feita contra os esquemas XSD oficiais, em vez de
+reimplementada.** Uma aproximação escrita à mão das regras ISO 20022 se afasta do
+contrato real da rede assim que qualquer um dos lados muda. Os esquemas são o
+contrato; qualquer outra coisa é uma segunda fonte de verdade esperando para
+discordar.
+
+**Ela mira em CI, não em uma etapa de revisão.** Um validador que alguém precisa
+lembrar de rodar é um validador que deixa de ser rodado sob pressão de prazo —
+exatamente quando ele mais importa.
+
+O que a biblioteca deliberadamente não faz é igualmente deliberado. Ela é um
+toolkit da camada de mensagens. Não substitui um motor de pagamentos, um sistema
+de triagem de sanções, nem a remediação dos dados mestres de cliente que a
+instituição precisa fazer na origem. Ela torna essa remediação exigível; não a
+faz por você.
+
 ## A lente de arquitetura pacs008 2026
 
 A biblioteca pacs008 é estruturada como um motor isolado de validação e geração, garantindo que entradas brutas sejam sistematicamente analisadas, enriquecidas e envelopadas em formatos padrão:
