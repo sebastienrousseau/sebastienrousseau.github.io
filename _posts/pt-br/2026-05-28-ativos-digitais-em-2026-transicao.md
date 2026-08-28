@@ -316,5 +316,3 @@ Por receita capturada dos pools endereçáveis, custo de operação em rails dup
 </div>
 </aside>
 <!-- enrich-end -->
-</content>
-</invoke>

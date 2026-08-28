@@ -318,5 +318,3 @@ BCG завершает отчёт десятишаговым руководст�
 </div>
 </aside>
 <!-- enrich-end -->
-</content>
-</invoke>

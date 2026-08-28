@@ -275,5 +275,3 @@ SLH-DSA(SPHINCS+ の標準化版)はハッシュベースであり、利用で�
 </div>
 </aside>
 <!-- enrich-end -->
-</content>
-</invoke>

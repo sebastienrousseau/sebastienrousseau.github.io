@@ -172,5 +172,3 @@ Ya. Terjemahan ialah peringkat saluran paip pilihan yang dikawal oleh bendera CL
 4. Microsoft. *Azure AI Translator — Supported languages*. Microsoft Learn, 2024. <https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support>
 
 [00]: https://audioanalyser.co/ "Audio Analyser — alat analitik pertuturan yang disokong Azure"
-
-END_TRANSLATION

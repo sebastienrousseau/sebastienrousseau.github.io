@@ -176,5 +176,3 @@ Open Policy Agent (یا معادل آن) میان اعتبارسنج و API می
 - European Commission, (2024). [Regulation (EU) 2024/1689 — AI Act ⧉](https://eur-lex.europa.eu/eli/reg/2024/1689/oj "Regulation (EU) 2024/1689 — the EU AI Act").
 - NVIDIA, (2024). [NeMo Guardrails framework ⧉](https://github.com/NVIDIA/NeMo-Guardrails "NeMo Guardrails — open-source toolkit for adding programmable guardrails to LLM-based conversational systems").
 - Cloud Native Computing Foundation, (2018). [Open Policy Agent (OPA) ⧉](https://www.openpolicyagent.org/ "Open Policy Agent — policy-based control for cloud native environments").
-
-END_TRANSLATION

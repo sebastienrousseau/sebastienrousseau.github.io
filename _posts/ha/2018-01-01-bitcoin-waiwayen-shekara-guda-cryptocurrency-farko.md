@@ -245,4 +245,3 @@ Idan kuna da wasu tambayoyi, don Allah kada ku yi jinkirin tuntuɓata ta [Linked
 </div>
 </aside>
 <!-- enrich-end -->
----

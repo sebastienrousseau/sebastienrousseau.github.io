@@ -274,5 +274,3 @@ site_software: "Static Site Generator, Rust"
 </div>
 </aside>
 <!-- enrich-end -->
-</content>
-</invoke>

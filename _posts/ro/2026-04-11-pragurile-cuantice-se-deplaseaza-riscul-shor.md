@@ -227,4 +227,3 @@ La începutul anului 2026, sistemele cuantice de vârf funcționează în interv
 </div>
 </aside>
 <!-- enrich-end -->
----

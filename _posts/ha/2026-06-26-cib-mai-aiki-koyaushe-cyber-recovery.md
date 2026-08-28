@@ -177,5 +177,3 @@ Aiki koyaushe ba taken ba ne. Lamba ce a kan dashboard, mai sa hannu daga babban
 <aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu akan AI mai aiki, ƙaurawar ISO 20022, post-quantum cryptography don sabis na kuɗi, da canjin tsari na biyan kuɗi na wholesale.</span><span class="author-credentials">Shekaru 20+ a fadin HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayanin martaba</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">An sake duba na ƙarshe <time datetime="2026-06-26">2026-06-26</time>.</p>
 <!-- enrich-end -->
-</content>
-</invoke>

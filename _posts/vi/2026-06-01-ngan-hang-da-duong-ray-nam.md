@@ -274,5 +274,3 @@ Tuỳ khối lượng thành viên. Một ngân hàng có dòng ra thanh toán t
 </div>
 </aside>
 <!-- enrich-end -->
-</content>
-</invoke>

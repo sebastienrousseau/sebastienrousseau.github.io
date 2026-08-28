@@ -185,5 +185,3 @@ Igen, a 28-44. cikk alatt. A CTPP kijelölési rendszer az európai felügyeleti
 - Európai Adatvédelmi Testület, (2020). [01/2020. sz. ajánlás a kiegészítő intézkedésekről ⧉](https://www.edpb.europa.eu/our-work-tools/our-documents/recommendations/recommendations-012020-measures-supplement-transfer_en "EDPB Recommendations 01/2020").
 - Egyesült Államok Kereskedelmi Minisztériuma, (2023). [EU-USA adatvédelmi keret ⧉](https://www.dataprivacyframework.gov/list "DPF participant list").
 - Európai Bizottság, (2021). [2021/914 (EU) bizottsági végrehajtási határozat: általános szerződési feltételek ⧉](https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj "2021 SCCs").
-</content>
-</invoke>

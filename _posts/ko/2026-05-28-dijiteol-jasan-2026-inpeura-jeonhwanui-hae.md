@@ -318,5 +318,3 @@ BCG는 10단계 가이드로 마무리합니다. 이를 향후 12개월의 즉�
 </div>
 </aside>
 <!-- enrich-end -->
-</content>
-</invoke>

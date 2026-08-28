@@ -171,5 +171,3 @@ A résztvevő volumenétől függ. Egy 50 millió dolláros óránkénti azonnal
 - BIS Committee on Payments and Market Infrastructures, (2025). [Fast payments and the future of the financial system ⧉](https://www.bis.org/cpmi/publ/d228.htm "CPMI fast payments report").
 - Open Banking Limited, (2026). [Variable Recurring Payments specification ⧉](https://www.openbanking.org.uk/vrp/ "Open Banking VRP").
 - Circle Internet Financial, (2026). [USDC Treasury & Reserves ⧉](https://www.circle.com/transparency "Circle transparency").
-</content>
-</invoke>

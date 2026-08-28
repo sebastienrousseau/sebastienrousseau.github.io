@@ -211,5 +211,3 @@ Gemma با توانایی پردازش اطلاعات در حوزه‌های م�
 [05]: https://ollama.com/download "Ollama Download"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-
-END_TRANSLATION

@@ -221,4 +221,3 @@ Prin adaptarea modelelor sale de IA la industrii și cazuri de utilizare specifi
 </div>
 </aside>
 <!-- enrich-end -->
-```

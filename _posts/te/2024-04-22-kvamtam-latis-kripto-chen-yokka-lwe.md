@@ -68,5 +68,3 @@ NIST తన PQC ప్రామాణీకరణ ప్రక్రియను
 [05]: https://pq-crystals.org/dilithium/ "Dilithium"
 [06]: https://www.inferati.com/blog/fhe-schemes-bgv "BGV"
 [07]: https://tfhe.github.io/tfhe/ "TFHE"
-
-END_TRANSLATION

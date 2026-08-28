@@ -112,5 +112,3 @@ keywords: "سفر شخصی در فناوری, کشف Rust, کاوش در هوش 
 [07]: https://en.wikipedia.org/wiki/Artificial_intelligence "هوش مصنوعی"
 [08]: https://en.wikipedia.org/wiki/Quantum_computing "رایانش کوانتومی"
 [09]: https://www.midjourney.com/explore "Midjourney"
-
-END_TRANSLATION

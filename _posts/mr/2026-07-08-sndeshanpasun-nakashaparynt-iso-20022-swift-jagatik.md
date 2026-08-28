@@ -171,5 +171,3 @@ Swift चे स्वतःचे कॉर्पोरेट मार्ग�
 - [Swift, *ISO 20022 harmonisation charter*](https://www.swift.com/sites/default/files/documents/swift_standards_iso20022_harmonisation_charter_factsheet.pdf "Swift — ISO 20022 harmonisation charter") ⧉. [MyStandards, CGI-MP टेम्पलेट्स आणि सानुकूल बोलीभाषा प्रसरण करण्याऐवजी विस्तार दस्तऐवजित करण्याची शिस्त.]
 
 *अखेरचे पुनरावलोकन जुलै 2026. मूळ विश्लेषण; स्रोत उद्धृत केले आहेत, पुनरुत्पादित केलेले नाहीत. या क्षेत्रात आकडे आणि कालरेषा वेगाने बदलतात — पुनःप्रकाशनापूर्वी प्राथमिक स्रोतांशी पडताळणी करा. CC-BY-4.0 अंतर्गत परवानाकृत.*
-
-END_TRANSLATION
