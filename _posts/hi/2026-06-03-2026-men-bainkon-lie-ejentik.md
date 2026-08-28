@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # 2026 में बैंकों के लिए एजेंटिक AI सूचकांक: स्वायत्तता, गवर्नेंस, ऑडिटेबिलिटी और व्यावसायिक प्रभाव मापना
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="लेख सारांश">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> टियर-1 बैंकों में एजेंटिक AI तत्परता को छह आयामों पर मापने का ब्लूप्रिंट: स्वायत्तता स्तर, API अनुमति-व्यवस्था, डिटरमिनिस्टिक सुरक्षा बाधाएं, ह्यूमन इन द लूप कवरेज, ऑडिट पूर्णता और इकाई-स्तरीय अर्थशास्त्र। एजेंटों को इस आधार पर वर्गीकृत करें कि उन्हें क्या करने की अनुमति है, न कि अंतर्निहित मॉडल कितना चतुर है। हर उत्पादन एजेंट को पहले दिन से ही SR 11-7 / SS1/23 मॉडल मानें।</p>
 <p class="post-lead-heading"><strong>मुख्य निष्कर्ष</strong></p>
 <ul class="post-lead-takeaways">

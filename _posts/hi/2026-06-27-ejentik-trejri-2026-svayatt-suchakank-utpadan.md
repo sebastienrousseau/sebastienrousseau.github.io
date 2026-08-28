@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # एजेंटिक ट्रेज़री 2026: स्वायत्त ट्रेज़री सूचकांक से उत्पादन-स्तरीय को-पायलट तक
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="लेख सारांश">
 <p class="post-lead-tldr"><strong>संक्षेप में।</strong> एजेंटिक ट्रेज़री को-पायलट 2026 में नियंत्रित पायलट से उत्पादन की ओर बढ़ रहे हैं। पैटर्न CIB ट्रेज़री के पार स्थिर है: एजेंट ISO 20022 नकद डेटा पढ़ते हैं, सीमित टूल कॉल करते हैं और नीति बैंडों के भीतर तरलता पुनर्संतुलित करते हैं — चारों ओर SR 11-7, DORA और EU AI Act नियंत्रणों के साथ।</p>
 <p class="post-lead-heading"><strong>मुख्य निष्कर्ष</strong></p>
 <ul class="post-lead-takeaways">
@@ -183,6 +183,6 @@ site_software: "Static Site Generator, Rust"
 अपस्ट्रीम संदर्भ के लिए, [स्वायत्त ट्रेज़री सूचकांक](https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/ "स्वायत्त ट्रेज़री सूचकांक 2026") देखें, और अभिशासन फ्रेम के लिए, [बैंकों के लिए एजेंटिक AI सूचकांक](https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/ "बैंकों के लिए एजेंटिक AI सूचकांक 2026") देखें।
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Sebastien Rousseau का चित्र" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग प्रौद्योगिकीविद्, अनुप्रयुक्त AI, ISO 20022 माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफ़ी और थोक भुगतान के संरचनात्मक रूपांतरण पर लिखते हैं।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20+ वर्ष। <a href="/about/index.html">पूर्ण प्रोफ़ाइल</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="लेखक के बारे में"><img alt="Sebastien Rousseau का चित्र" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग प्रौद्योगिकीविद्, अनुप्रयुक्त AI, ISO 20022 माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफ़ी और थोक भुगतान के संरचनात्मक रूपांतरण पर लिखते हैं।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20+ वर्ष। <a href="/about/index.html">पूर्ण प्रोफ़ाइल</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-06-27">2026-06-27</time>।</p>
 <!-- enrich-end -->

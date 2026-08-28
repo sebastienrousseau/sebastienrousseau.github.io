@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Der Quantum-Safe-Banking-Index 2026: Post-Quanten-Kryptografie, QKD, Krypto-Agilität und Harvest-now-decrypt-later-Risiko
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Artikelzusammenfassung">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Quantum-Safe-Banking 2026 ist ein Lieferprogramm mit einer Deadline, die durch den Schnittpunkt zweier Kurven bestimmt wird — die Vertraulichkeits-Lebensdauer der Daten, die das Institut heute hält, und den Eintrittshorizont eines kryptografisch relevanten Quantencomputers (CRQC). NIST FIPS 203 / 204 / 205 sind seit August 2024 final; CNSA 2.0 legt den US-Bundesendzustand auf 2033 fest; Harvest-now-decrypt-later trifft langlebige Daten bereits heute. Die Quantum-Scorecard auf Vorstandsebene verfolgt vier exakte Prozentsätze: Inventarvollständigkeit, HNDL-Exposition, NIST-Migrationsfortschritt, Krypto-Agilitäts-Reife.</p>
 <p class="post-lead-heading"><strong>Wichtigste Erkenntnisse</strong></p>
 <ul class="post-lead-takeaways">

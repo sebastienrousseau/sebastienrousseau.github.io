@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="लेख का सारांश">
+<aside class="post-lead" aria-label="लेख सारांश">
 <p class="post-lead-tldr"><strong>संक्षेप में।</strong> एआई ऑम्निबस ने अनुबंध III के उच्च-जोखिम दायित्वों को <strong>2 दिसंबर 2027</strong> और अनुबंध I को <strong>2 अगस्त 2028</strong> तक टाल दिया। उसने <strong>Article 50 को अछूता छोड़ा, जो 2 अगस्त 2026 से लागू है</strong>। चार दायित्व अभी प्रभावी हैं: यह बताना कि व्यक्ति किसी एआई प्रणाली से संवाद कर रहा है; एआई-निर्मित सामग्री को मशीन-पठनीय रूप में चिह्नित करना; भाव पहचान और बायोमेट्रिक वर्गीकरण की सूचना देना; और डीपफेक तथा लोकहित के विषयों पर प्रकाशित एआई-निर्मित पाठ को लेबल करना। जोखिम <strong>1.5 करोड़ यूरो या कुल वैश्विक वार्षिक कारोबार का 3%</strong>, जो भी अधिक हो, तक पहुँचता है। यह दायित्व डिजिटल चैनलों और विपणन का है, उस मॉडल-जोखिम टीम का नहीं जो टाली गई फाइल सँभाल रही है।</p>
 <p class="post-lead-heading"><strong>मुख्य बिंदु</strong></p>
 <ul class="post-lead-takeaways">

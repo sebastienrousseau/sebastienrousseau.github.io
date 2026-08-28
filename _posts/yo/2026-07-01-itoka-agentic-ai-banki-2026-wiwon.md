@@ -87,7 +87,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 # Ìtọ́ka Agentic AI fún Banki ní 2026: Wíwọ̀n Autonomy
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Akopọ àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>Ni kukuru.</strong> Agentic AI ninu banki jẹ amayederun iṣẹ ni 2026: 52% ti awọn ile-iṣẹ inawo ti n lo o tẹlẹ, sibẹ 14% nikan ni wọn pe e ni iyipada pataki. Ìtọ́ka yii pa aafo naa nipa fifun imurasilẹ ni ami kọja iwọn mẹfa — ipele autonomy, faaji iṣakoso, ẹri ilana, iṣiro ọrọ-aje, imurasilẹ ajo, ati ibamu ilana agbaye — ti a ṣe ibamu pẹlu SR 11-7, SS1/23, EU AI Act, ati FSB sound practices ti June 2026.</p>
 <p class="post-lead-heading"><strong>Awọn koko pataki</strong></p>
 <ul class="post-lead-takeaways">
@@ -454,6 +454,6 @@ No. The FSB explicitly states the 12 Sound Practices are not binding standards. 
 
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa olùkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ báńkì àgbà tó ń kọ̀wé nípa AI ìmúṣẹ, ìṣíkiri ISO 20022, cryptography post-quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ìpilẹ̀ ti àwọn ìsanwó wholesale.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profáìlì pípé</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ báńkì àgbà tó ń kọ̀wé nípa AI ìmúṣẹ, ìṣíkiri ISO 20022, cryptography post-quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ìpilẹ̀ ti àwọn ìsanwó wholesale.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profáìlì pípé</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Tí a tún yẹ̀wò kẹ́yìn <time datetime="2026-07-01">2026-07-01</time>.</p>
 <!-- enrich-end -->

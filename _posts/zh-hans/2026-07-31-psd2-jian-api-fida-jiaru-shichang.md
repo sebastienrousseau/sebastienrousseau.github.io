@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>TL;DR。</strong>FiDA 不是多加几个端点的 PSD2。三处结构性断裂改变了合规的含义:访问由一套你必须加入的机制来治理,而不是一个你独自搭建的接口;数据持有方可以寻求合理补偿,访问因此从一项无偿义务变成一件有价格的产品;适用范围延伸到按揭、储蓄、投资、养老金与非寿险——也就是银行真正赚钱的那些产品。文本仍在三方谈判之中,但那些将要定义标准的机制正在此刻被设计出来,而杠杆就落在那里。</p>
 <p class="post-lead-heading"><strong>核心要点</strong></p>
 <ul class="post-lead-takeaways">

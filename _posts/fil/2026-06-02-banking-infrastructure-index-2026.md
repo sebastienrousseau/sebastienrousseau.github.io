@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Ang 2026 Banking Infrastructure Index: Pagsukat ng Katatagan para sa Agentic AI, Quantum-Safe Security, Cloud-Native na Katatagan, at Wholesale Payments
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Bakit ito mahalaga">
+<aside class="post-lead" aria-label="Buod ng artikulo">
   <p class="post-lead-tldr"><strong>Tungkol saan ang artikulong ito:</strong> Isang balangkas na hango sa estilo ng Stanford AI Index para sa pagsukat ng katatagan ng bangko sa apat na infrastructure domain ng 2026 na magkasabay nang gumagalaw — agentic AI, post-quantum cryptography, cloud-native na katatagan, at wholesale payments — kasama ang limang board-level metrics na nagbabago sa balangkas tungo sa operating capability.</p>
   <p class="post-lead-takeaways"><strong>Sino ang dapat magbasa nito:</strong> Mga Bank CTO, Heads of Engineering, Chief Risk and Resilience Officers, Heads of Payments, Heads of Cryptographic Engineering, mga direktor ng board na may technology oversight, at ang mga regulator (PRA, ECB, FCA, OCC) na nangangasiwa sa kanila.</p>
 </aside>

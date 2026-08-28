@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Ringkasan artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Regulation (EU) 2024/1183 menulis semula eIDAS. Dua tarikh yang penting: menjelang <strong>24 Disember 2026</strong> setiap Negara Anggota wajib menyediakan sekurang-kurangnya satu European Digital Identity Wallet, dan menjelang <strong>24 Disember 2027</strong> pihak bergantung bersaiz besar dan sederhana dalam sektor tersenarai — perbankan dan perkhidmatan kewangan antaranya — wajib menerimanya untuk pengesahan pengguna yang kukuh apabila pengguna memintanya. Peranan bank berubah daripada pengeluar kelayakan identiti kepada pihak bergantung berdaftar, dan pendaftaran itu prasyarat undang-undang, bukan prasyarat teknikal. Kerja kejuruteraannya biasa sahaja. Akibat tadbir urus, liabiliti dan pembuktian identitinya tidak.</p>
 <p class="post-lead-heading"><strong>Intipati utama</strong></p>
 <ul class="post-lead-takeaways">

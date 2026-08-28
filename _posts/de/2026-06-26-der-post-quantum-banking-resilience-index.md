@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Der Post-Quantum Banking Resilience Index 2026: EO 14409, globale Fristen und treuhänderische Krypto-Agilität
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Artikelzusammenfassung">
 <p class="post-lead-tldr"><strong>Kurz gefasst.</strong> Die Migration zur Post-Quantum-Kryptografie (PQC) hat den Punkt ohne Wiederkehr überschritten. Mit der am 22. Juni 2026 unterzeichneten US-amerikanischen Executive Order 14409 und der harten Frist 2030 der französischen ANSSI — die Zertifizierung von Nicht-PQC-Produkten endet 2027 — ist Krypto-Agilität kein technisches Streben mehr. Sie ist ein regulatorischer Auftrag. Dieser Index verwandelt diesen Auftrag in ein vorstandstaugliches 0–5-Scorecard über fünf prüfbare Ebenen.</p>
 <p class="post-lead-heading"><strong>Kernaussagen</strong></p>
 <ul class="post-lead-takeaways">

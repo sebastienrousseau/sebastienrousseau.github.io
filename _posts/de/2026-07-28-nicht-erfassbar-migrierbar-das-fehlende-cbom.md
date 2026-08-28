@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Artikelzusammenfassung">
 <p class="post-lead-tldr"><strong>Kurzfassung.</strong> Die erste Post-Quanten-Frist gilt der Bestandsaufnahme, nicht der Migration — das NCSC erwartet bis 2028 ein vollständiges Bild der kryptografischen Abhängigkeiten, vor den Migrationsmeilensteinen 2031 und 2035. Banken können es aus dem Asset-Register, das DORA ohnehin verlangt, nicht erzeugen: Dieses Register erfasst den Server, den Eigentümer und die Kritikalität, nicht aber Algorithmus, Schlüssellänge, Bibliothek oder Zertifikatsablauf. Das Cryptography Bill of Materials, inzwischen Bestandteil von CycloneDX und als ECMA-424 standardisiert, ist das fehlende Datenmodell. Es als einmalige PQC-Tabelle statt als gepflegten Kontrollmechanismus zu behandeln, ist der Fehler, der den Meilenstein 2031 kosten wird.</p>
 <p class="post-lead-heading"><strong>Zentrale Erkenntnisse</strong></p>
 <ul class="post-lead-takeaways">

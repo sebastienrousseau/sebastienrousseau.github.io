@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # クロスボーダー 2026:企業財務における ISO 20022、オープンファイナンス、トークン化預金
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="記事の概要">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> 2026 年のクロスボーダー企業財務は、4 つのレールを並行して動かします — SWIFT CBPR+、PSD3/FiDA 下の即時 A2A、トークン化預金、ステーブルコインレール — これらを ISO 20022 が共通文法として縫合します。CIB と企業財務チームの仕事は、レール選定ではなくオーケストレーションです。</p>
 <p class="post-lead-heading"><strong>主要な要点</strong></p>
 <ul class="post-lead-takeaways">

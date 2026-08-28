@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # 뱅킹 에이전트 결제: 2026년 동의·책임·새로운 결제 UX
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="기사 요약">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> 2026년 에이전트 결제(agentic payments)는 더 이상 개념이 아닙니다. Mastercard와 Rabobank가 네덜란드에서 실거래를 수행했으며, AI 에이전트(AI agent)가 카드 데이터에 한 번도 접근하지 않은 채 Mastercard Agent Pay를 통해 결제를 개시하였습니다. AP2 방식 암호학적 동의 위임(consent mandate), x402, A2A, MCP, MPP가 프로토콜 계층으로 부상하는 한편, EFTA, Regulation E, 영국 결제 서비스법은 아직 자율 에이전트 거래에 맞춰 갱신되지 않았습니다. 은행에 지금 필요한 것은 사후 분쟁 방어가 아니라 결제 전 증거(pre-settlement evidence)를 산출하는 동의·신원·책임 아키텍처입니다.</p>
 <p class="post-lead-heading"><strong>핵심 요약</strong></p>
 <ul class="post-lead-takeaways">

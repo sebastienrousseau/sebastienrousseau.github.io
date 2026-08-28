@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # 2026 銀行智能體 AI 指數:量測自主性、治理、可稽核性與業務影響
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>重點摘要。</strong> 一份量測一級銀行智能體 AI 就緒度的藍圖,涵蓋六大面向:自主性等級、API 權限管理、確定性護欄機制、人在迴路覆蓋率、稽核完整性與單位經濟性。請依照智能體「被允許做什麼」分類,而非依照底層模型「有多聰明」。從第一天起,就把每個生產智能體當作 SR 11-7 / SS1/23 模型來治理。</p>
 <p class="post-lead-heading"><strong>關鍵要點</strong></p>
 <ul class="post-lead-takeaways">

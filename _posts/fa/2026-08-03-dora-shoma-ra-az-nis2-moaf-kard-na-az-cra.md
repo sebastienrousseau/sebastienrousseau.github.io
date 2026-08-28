@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="خلاصه مقاله">
+<aside class="post-lead" aria-label="خلاصهٔ مقاله">
 <p class="post-lead-tldr"><strong>در یک نگاه.</strong> مقرره (EU) 2024/2847 — مقرره تاب‌آوری سایبری — به‌طور کامل در <strong>۱۱ دسامبر ۲۰۲۷</strong> اعمال می‌شود، اما <strong>تکالیف گزارش‌دهی ماده ۱۴ از ۱۱ سپتامبر ۲۰۲۶ آغاز می‌شود</strong>. سازندگان باید <strong>ظرف ۲۴ ساعت</strong> از آگاهی به آسیب‌پذیری در حال بهره‌برداری فعال یا رخداد شدید، <strong>هشدار زودهنگام</strong> بفرستند، <strong>اطلاع کامل ظرف ۷۲ ساعت</strong>، و <strong>گزارش نهایی ظرف ۱۴ روز</strong> (آسیب‌پذیری‌ها) یا <strong>یک ماه</strong> (رخدادها)، از طریق سکوی واحد گزارش‌دهی ENISA به CSIRT کشوری که سازنده در آن اقامتگاه اصلی دارد. میزان مواجهه تا <strong>۱۵ میلیون یورو یا ۲٫۵٪ گردش مالی سالانه جهانی</strong> می‌رسد، هر کدام بیشتر باشد. قاعده <em>lex specialis</em> که از NIS2 به DORA ارجاع می‌دهد اینجا کار نمی‌کند، زیرا CRA نه NIS2 است و نه حقوق نهادها.</p>
 <p class="post-lead-heading"><strong>نکات کلیدی</strong></p>
 <ul class="post-lead-takeaways">

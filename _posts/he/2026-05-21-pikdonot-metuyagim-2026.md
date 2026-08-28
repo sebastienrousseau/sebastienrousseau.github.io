@@ -89,7 +89,7 @@ excerpt: "שירותי הפיקדונות המתויגים ב-2026 עוברים 
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="תקציר המאמר">
 <p class="post-lead-tldr"><strong>תקציר.</strong> שירותי הפיקדונות המתויגים ב-2026 עוברים ממחקר לפיילוטים בנקאיים ולהצעות ראשוניות ללקוחות. הסטטוס עודנו טרום-קנה-מידה, אך הכיוון ברור: כספי הבנקים המסחריים מותאמים לסילוק בר-תכנות, לארנקים דיגיטליים, לאינטראופרביליות עם סטייבלקוינים ולשווקי הון מתויגים.</p>
 <p class="post-lead-heading"><strong>עיקרי הדברים</strong></p>
 <ul class="post-lead-takeaways">
@@ -325,7 +325,7 @@ HSBC לא התעלם כליל ממסלול הסטייבלקוינים. הבנק 
 - FDIC, (2026). [דרישות וסטנדרטים של חוק GENIUS — הצעת רגולציה ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").
 - Cambridge Centre for Alternative Finance, (2026). [כסף מתויג: מקרי שימוש, אינטראופרביליות ורגולציה ⧉](https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf "Tokenised money report").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="על המחבר"><img alt="דיוקן של סבסטיאן רוסו" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">סבסטיאן רוסו</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על בינה מלאכותית יישומית, על המעבר ל-ISO 20022, על קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים ועל השינוי המבני של תשלומי הסיטונאות.</span><span class="author-credentials">למעלה מ-20 שנים ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="אודות הכותב"><img alt="דיוקן של סבסטיאן רוסו" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">סבסטיאן רוסו</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על בינה מלאכותית יישומית, על המעבר ל-ISO 20022, על קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים ועל השינוי המבני של תשלומי הסיטונאות.</span><span class="author-credentials">למעלה מ-20 שנים ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">נסקר לאחרונה <time datetime="2026-05-21">2026-05-21</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">קריאה נוספת</h2>

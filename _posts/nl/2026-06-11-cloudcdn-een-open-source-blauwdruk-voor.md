@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Samenvatting artikel">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Enterprise-technologie in 2026 wordt bepaald door de samenkomst van wereldwijd gedistribueerde serverless-uitvoering en agentische AI. Standaard-CDN's — gebouwd voor het cachen van statische bestanden en elementaire verkeersroutering — zijn structureel verouderd in een tijdperk van actieve, realtime data-orkestratie. CloudCDN is een open source blauwdruk die de edge herinricht als een actief controlevlak: serverless-runtimes, stateful coördinatie via Cloudflare Durable Objects, en een zero-trust Model Context Protocol (MCP)-gateway waarmee autonome AI-agents webinfrastructuur bedienen binnen begrensde, cryptografisch beveiligde operationele kaders.</p>
 <p class="post-lead-heading"><strong>Belangrijkste punten</strong></p>
 <ul class="post-lead-takeaways">

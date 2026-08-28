@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # 開源、FINOS 與雲端原生 CIB 堆疊
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>速答。</strong>Morgan Stanley、JPMorgan 與 Citi 加碼押注 FINOS 與 Linux Foundation。2026 年的雲端原生 CIB 堆疊預設即開源——MIT、Apache 2.0 與 BSD-3-Clause 函式庫、CNCF 執行時、SBOM、SLSA 來源證明,以及 sigstore 簽章產物——而 noyalib、http-handle、hsh 與 KyberLib 等 Rust 函式庫,正以程式碼揭示這套堆疊的真實樣貌。</p>
 <p class="post-lead-heading"><strong>關鍵要點</strong></p>
 <ul class="post-lead-takeaways">

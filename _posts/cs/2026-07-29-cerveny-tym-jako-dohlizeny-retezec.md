@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Shrnutí článku">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Režim TLPT podle nařízení DORA mění červený tým (red team) z dobrovolného bezpečnostního cvičení v dohlíženou povinnost s tříletou kadencí, která produkuje důkazy, a to pro subjekty určené příslušným orgánem. Omezení, která skutečně vážou, nejsou technická. Leží na straně nabídky: Article 27 vyžaduje akreditované dodavatele testování nebo dodavatele vázané kodexem, s nezávislým ověřením a pojištěním profesní odpovědnosti, připouští interní červené týmy nejvýše ve dvou ze tří cyklů a pokaždé vyžaduje externího poskytovatele zpravodajství o hrozbách. Kritické funkce běžící u třetích stran vtahují tyto poskytovatele do testu.</p>
 <p class="post-lead-heading"><strong>Hlavní zjištění</strong></p>
 <ul class="post-lead-takeaways">

@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="خلاصهٔ مقاله">
 <p class="post-lead-tldr"><strong>خلاصه.</strong> رهنمود نظارتی بازنگری‌شدهٔ ریسک مدل مورخ 17 آوریل 2026 (SR 26-2 / OCC Bulletin 2026-13) جانشین چارچوب 2011 می‌شود و هوش مصنوعی مولد و عامل‌محور را صراحتاً کنار می‌گذارد، با وعدهٔ یک فراخوان نظرخواهی. آن استثنا تصمیمی دربارهٔ دامنهٔ شمولِ <em>همین</em> رهنمود است، نه برائت‌نامهٔ نظارتی: همان مدل کماکان درون ریسک اشخاص ثالث، ریسک عملیاتی، حمایت از مصرف‌کننده و اعطای اعتبار منصفانه می‌نشیند. در همان حال، SS1/23 بریتانیا فناوری‌خنثاست و همچنان آن مدل‌ها را به درون می‌کشد. یک بانک گروهی اکنون یک مدل را با دو پاسخ اداره می‌کند، و پاسخ صادقانه آن است که به سخت‌گیرانه‌ترینشان حکمرانی کند.</p>
 <p class="post-lead-heading"><strong>نکته‌های کلیدی</strong></p>
 <ul class="post-lead-takeaways">

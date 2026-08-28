@@ -103,7 +103,7 @@ site_software: "Static Site Generator, Rust"
 # http-handle: Wysokowydajny Ingress Edge bez Zależności dla Bankowości w 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Podsumowanie artykułu">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> http-handle to otwartoźródłowy, statycznie zlinkowany plik binarny Rust, który zastępuje Nginx i Envoy na bankowej krawędzi. Dostarcza 180 000 żądań na sekundę na węzłach ARM64 za pośrednictwem transferów zero-copy <code>sendfile(2)</code> Linuxa, egzekwuje mTLS i walidację JWT na warstwie gniazda sieciowego przed uruchomieniem jakiegokolwiek kodu aplikacji, automatycznie negocjuje HTTP/2 i HTTP/3 przez ALPN oraz wysyła metryki OpenTelemetry natywnie — wszystko bez zależności środowiska uruchomieniowego poza <code>libc</code>.</p>
 <p class="post-lead-heading"><strong>Kluczowe wnioski</strong></p>
 <ul class="post-lead-takeaways">

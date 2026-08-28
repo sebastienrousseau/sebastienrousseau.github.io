@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # مؤشر الذكاء الاصطناعي الوكيل للبنوك في عام 2026: قياس الاستقلالية والحوكمة وقابلية التدقيق والأثر التجاري
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="ملخص المقال">
 <p class="post-lead-tldr"><strong>الخلاصة.</strong> مخطط لقياس جاهزية الذكاء الاصطناعي الوكيل في بنوك الفئة الأولى عبر ستة أبعاد: درجة الاستقلالية، وصلاحيات واجهات برمجة التطبيقات، وحواجز الحماية الحتمية، وتغطية البشر في الحلقة، واكتمال التدقيق، والاقتصاديات الوحدوية. صنِّف الوكلاء بناءً على ما يُسمح لهم بفعله، لا بناءً على ذكاء النموذج الكامن. وتعامل مع كل وكيل في الإنتاج بوصفه نموذجًا خاضعًا لـ SR 11-7 / SS1/23 من اليوم الأول.</p>
 <p class="post-lead-heading"><strong>أبرز النقاط</strong></p>
 <ul class="post-lead-takeaways">
@@ -266,6 +266,6 @@ Open Policy Agent (أو ما يكافئه) يجلس بين المُتحقِّق 
 - Cloud Native Computing Foundation, (2018). [Open Policy Agent (OPA) ⧉](https://www.openpolicyagent.org/ "Open Policy Agent — تحكم قائم على السياسة للبيئات السحابية الأصلية").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="نبذة عن المؤلف"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والبنية التحتية للمدفوعات، والأموال المُرمَّزة، وISO 20022، والأمن ما بعد الكمومي، والخدمات المالية السحابية الأصلية، والأسواق الرقمية المنظَّمة.</span><span class="author-credentials">أكثر من 20 عامًا من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والبنية التحتية للمدفوعات، والأموال المُرمَّزة، وISO 20022، والأمن ما بعد الكمومي، والخدمات المالية السحابية الأصلية، والأسواق الرقمية المنظَّمة.</span><span class="author-credentials">أكثر من 20 عامًا من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-06-03">2026-06-03</time>.</p>
 <!-- enrich-end -->

@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Ìsọjí Acid Jazz ní UK: Àwọn Olórin, Ere Orin, Àbúm 2026, àti Ìpadàbọ̀ Àṣà Ìgbádùn Alẹ́ Tí Groove Ń Darí
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkọpọ̀ Àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>Ìsọnísókí.</strong> Ìsọjí acid jazz UK ní 2026 kì í ṣe ìrántí ìgbàanì — ó jẹ́ ẹ̀dá alààyè tí Acid Jazz Records, àwọn olórin ìpele àkọ́kọ́, àwọn àjọ̀dún jazz-funk, àti àwọn músíṣẹ̀ bọ́ọ̀rọ̀ tí groove ń darí wọn ń ṣiṣẹ́ papọ̀ lọ́kan ṣoṣo.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

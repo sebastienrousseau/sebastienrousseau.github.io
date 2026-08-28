@@ -87,7 +87,7 @@ webmaster: "contact@sebastienrousseau.com"
 
 # Ìwé-Ìdíwọ̀n Ààbò Lẹ́yìn-Quantum 2026: Ìlànà Àmì Ìpele-Ìgbìmọ̀ Olórí fún Crypto-Agility Fiduciary
 
-<aside class="post-lead" aria-label="Ìsọnísókí àkòrí">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ní Òṣù Kẹfà 2026, cryptography lẹ́yìn-quantum (PQC) ti yẹsẹ̀ kúrò nínú ọ̀ràn ìmọ̀-ẹ̀rọ àdánwò sí ojúṣe fiduciary àkọ́kọ́. Àwọn ìgbìmọ̀ olórí gbọ́dọ̀ bojú tó ìṣíkiri ètò ti cryptography àtijọ́ sí àwọn ìpilẹ̀ṣẹ̀ NIST FIPS 203 àti 204 láti dín àwọn ewu ìnáwó àti ìṣiṣẹ́ àárín-ètò kù lábẹ́ DORA.</p>
 <p class="post-lead-heading"><strong>Àwọn àyọkà pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

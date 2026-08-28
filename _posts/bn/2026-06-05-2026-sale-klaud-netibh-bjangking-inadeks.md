@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # ২০২৬ সালে ক্লাউড-নেটিভ ব্যাংকিং ইনডেক্স: DORA, প্ল্যাটফর্ম ইঞ্জিনিয়ারিং, সার্বভৌম ক্লাউড এবং পরিচালনাগত স্থিতিস্থাপকতা
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="নিবন্ধ সারসংক্ষেপ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে।</strong> ২০২৬ সালে ক্লাউড-নেটিভ ব্যাংকিং প্রস্তুতি পর্যায়ে নেই, DORA অডিট পর্যায়ে রয়েছে। ১৭ জানুয়ারি ২০২৫ থেকে এই বিধান কার্যকর; Articles 28-44-এর অধীনে CTPP মনোনয়ন ব্যবস্থা ২০২৫-২০২৬ জুড়ে খুলছে; AWS, Microsoft (Azure), Google (GCP) এবং Salesforce — সবাই মনোনয়ন পরিধির ভেতরে বা কাছাকাছি; ECB-এর [২০২৬-২৮ তত্ত্বাবধান অগ্রাধিকার ⧉](https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html "ECB Banking Supervision priorities 2026-28") ক্লাউড-বিঘ্ন প্রস্তুতি এবং হুমকি-চালিত পেনিট্রেশন টেস্টিংয়ের ওপর সুস্পষ্ট কর্মসূচি ধারণ করে। গুরুত্বপূর্ণ ইঞ্জিনিয়ারিং কাজ হলো প্ল্যাটফর্ম ইঞ্জিনিয়ারিং প্রিমিটিভ — Kubernetes-এর উপর পেভড রোড, প্লাস Backstage, প্লাস OPA, প্লাস OpenTelemetry — যা ডিপ্লয়মেন্ট পাইপলাইনের গতিতে DORA Article 8 রেজিস্টার প্রমাণ তৈরি করে, এবং সঙ্গে পরীক্ষিত এক্সিট-এক্সিকিউশন প্রমাণ যা বিশ্বাসযোগ্য প্রতিস্থাপনযোগ্যতাকে ডকুমেন্টেশন থিয়েটার থেকে আলাদা করে।</p>
 <p class="post-lead-heading"><strong>মূল উপলব্ধি</strong></p>
 <ul class="post-lead-takeaways">

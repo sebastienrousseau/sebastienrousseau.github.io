@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="สรุปบทความ">
 <p class="post-lead-tldr"><strong>สรุปสั้น</strong> เส้นตายหลังยุคควอนตัมด่านแรกคือการค้นหาและจัดทำบัญชี ไม่ใช่การย้ายระบบ NCSC คาดหมายให้ธนาคารมีภาพครบถ้วนของการพึ่งพาการเข้ารหัสภายในปี 2028 ก่อนหมุดหมายการย้ายระบบปี 2031 และ 2035 ธนาคารสร้างภาพนั้นจากทะเบียนสินทรัพย์ที่ DORA บังคับให้จัดทำอยู่แล้วไม่ได้ เพราะทะเบียนนั้นบันทึกเซิร์ฟเวอร์ เจ้าของ และระดับความสำคัญ แต่ไม่บันทึกอัลกอริทึม ความยาวกุญแจ ไลบรารี หรือวันหมดอายุของใบรับรอง Cryptography Bill of Materials ซึ่งปัจจุบันเป็นส่วนหนึ่งของ CycloneDX และได้มาตรฐานเป็น ECMA-424 คือแบบจำลองข้อมูลที่ขาดหายไป การมองมันเป็นสเปรดชีต PQC ที่ทำครั้งเดียวจบ แทนที่จะเป็นการควบคุมที่ดูแลต่อเนื่อง คือความผิดพลาดที่จะทำให้พลาดหมุดหมายปี 2031</p>
 <p class="post-lead-heading"><strong>ประเด็นสำคัญ</strong></p>
 <ul class="post-lead-takeaways">

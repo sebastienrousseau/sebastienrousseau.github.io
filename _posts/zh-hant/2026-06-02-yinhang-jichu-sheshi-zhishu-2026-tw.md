@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # 2026 銀行基礎建設指數:衡量自主式 AI、量子安全、雲原生韌性與大額支付的準備度
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="本文重點">
+<aside class="post-lead" aria-label="文章摘要">
   <p class="post-lead-tldr"><strong>本文主題:</strong> 一套類似史丹佛 AI 指數的框架,用來衡量銀行在 2026 年四大同步演進的基礎建設領域——自主式 AI、後量子密碼學、雲原生韌性與大額支付——之準備度,並提出將框架轉化為營運能力的五項董事會層級指標。</p>
   <p class="post-lead-takeaways"><strong>適讀對象:</strong> 銀行 CTO、工程主管、首席風險長與韌性長、支付主管、密碼工程主管、具科技督導職責的董事,以及監理機構(PRA、ECB、FCA、OCC)的相關官員。</p>
 </aside>

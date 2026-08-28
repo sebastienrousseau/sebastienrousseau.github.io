@@ -88,7 +88,7 @@ excerpt: "2026'da tokenize mevduat hizmetleri araştırma aşamasından banka pi
 # 2026'da Tokenize Mevduatlar: Bankacılık Hizmetleri, Stablecoin Rekabeti ve Programlanabilir Ticari Banka Parasının Durumu
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Makale özeti">
 <p class="post-lead-tldr"><strong>Özet.</strong> 2026'da tokenize mevduat hizmetleri araştırma aşamasından banka pilotlarına ve ilk müşteri tekliflerine geçiyor. Durum hâlâ ölçeklenme öncesinde olmakla birlikte yön nettir: ticari banka parası, programlanabilir mutabakat, dijital cüzdanlar, stablecoin birlikte çalışabilirliği ve tokenize sermaye piyasaları için uyarlanıyor.</p>
 <p class="post-lead-heading"><strong>Temel çıkarımlar</strong></p>
 <ul class="post-lead-takeaways">
@@ -325,7 +325,7 @@ Bölünmüş bir taç. JPMorgan, Kinexys by J.P. Morgan (formerly Onyx) ile gün
 - Cambridge Centre for Alternative Finance, (2026). [Tokenised money: Use cases, interoperability and regulation ⧉](https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf "Tokenised money report").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Yazar hakkında"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Son inceleme <time datetime="2026-06-23">2026-06-23</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">İlgili okuma</h2>

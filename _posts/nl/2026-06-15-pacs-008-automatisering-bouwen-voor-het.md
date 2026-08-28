@@ -106,7 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Artikelsamenvatting">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Onder de SWIFT CBPR+-richtlijnen ontmantelt de Structured Address Cliff van 14 november 2026 ongestructureerde postadressen in TARGET2, CHAPS, Fedwire, Lynx en SEPA. pacs008 is een open source Python-bibliotheek die de generatie en validatie van ISO 20022 FI-to-FI klant-overboekingen (pacs.008) automatiseert, betalingen omhult in Business Application Headers (BAH head.001) en compliance voor gestructureerde adressen in het datapad inbouwt voordat het bericht een clearingnetwerk raakt.</p>
 <p class="post-lead-heading"><strong>Belangrijkste punten</strong></p>
 <ul class="post-lead-takeaways">

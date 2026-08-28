@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # ข้ามพรมแดน 2026: ISO 20022, Open Finance และเงินฝากแบบโทเค็นในเทรเชอรีองค์กร
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="สรุปบทความ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> เทรเชอรีองค์กรข้ามพรมแดนในปี 2026 ทำงานบนสี่รางขนานกัน — SWIFT CBPR+, A2A ทันทีภายใต้ PSD3/FiDA, เงินฝากแบบโทเค็น และรางสเตเบิลคอยน์ — เย็บเข้าด้วยกันด้วย ISO 20022 ในฐานะไวยากรณ์ร่วม งานของทีม CIB และเทรเชอรีองค์กรคือออร์เคสเตรชัน ไม่ใช่การเลือกราง</p>
 <p class="post-lead-heading"><strong>ประเด็นสำคัญ</strong></p>
 <ul class="post-lead-takeaways">
@@ -242,6 +242,6 @@ International Organization for Standardization (2020). *ISO 17442 Financial serv
 SWIFT (2024). *Cross-Border Payments and Reporting Plus (CBPR+) usage guidelines*. Available at: [https://www.swift.com/standards/iso-20022/iso-20022-programme](https://www.swift.com/standards/iso-20022/iso-20022-programme "SWIFT CBPR+ usage guidelines")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="ภาพเหมือนของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารระดับซีเนียร์ เขียนเกี่ยวกับ AI ประยุกต์ การโยกย้าย ISO 20022 การเข้ารหัสยุคหลังควอนตัมสำหรับบริการการเงิน และการเปลี่ยนผ่านเชิงโครงสร้างของการชำระเงินโฮลเซล</span><span class="author-credentials">ประสบการณ์กว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group <a href="/about/index.html">โปรไฟล์ฉบับเต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพเหมือนของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารระดับซีเนียร์ เขียนเกี่ยวกับ AI ประยุกต์ การโยกย้าย ISO 20022 การเข้ารหัสยุคหลังควอนตัมสำหรับบริการการเงิน และการเปลี่ยนผ่านเชิงโครงสร้างของการชำระเงินโฮลเซล</span><span class="author-credentials">ประสบการณ์กว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group <a href="/about/index.html">โปรไฟล์ฉบับเต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">ตรวจทานล่าสุด <time datetime="2026-06-24">2026-06-24</time></p>
 <!-- enrich-end -->

@@ -86,7 +86,7 @@ webmaster: "contact@sebastienrousseau.com"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ìṣirò kuatomu ń halẹ̀ mọ́ cryptography ti ètò ìsanwó. Ìwé funfun EPAA ṣàlàyé ewu ìgbékalẹ̀ àti ìjẹ̀pàtàkì ìjíkọ PQC.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
@@ -160,7 +160,7 @@ Sebastien Rousseau jẹ́ Senior Digital Product Manager ní HSBC Bank plc, tí 
 [rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: Algorithm Olùdáàbòbò ní Sànmánì Kuatomu"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa olùkọ̀wé"><img alt="Àwòrán ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ bánkì àgbà tí ń kọ̀wé lórí AI tí a lò, ìjíkọ ISO 20022, post-quantum cryptography fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ètò ti àwọn ìsanwó osunwon.</span><span class="author-credentials">Ọdún 20+ kọjá Commercial &amp; Investment Bank ti HSBC, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Ìgbésí-ayé kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ bánkì àgbà tí ń kọ̀wé lórí AI tí a lò, ìjíkọ ISO 20022, post-quantum cryptography fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ètò ti àwọn ìsanwó osunwon.</span><span class="author-credentials">Ọdún 20+ kọjá Commercial &amp; Investment Bank ti HSBC, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Ìgbésí-ayé kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Atúnyẹ̀wò kẹyìn ní <time datetime="2026-06-23">2026-06-23</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Ìkàwé tó tan mọ́ ọn</h2>

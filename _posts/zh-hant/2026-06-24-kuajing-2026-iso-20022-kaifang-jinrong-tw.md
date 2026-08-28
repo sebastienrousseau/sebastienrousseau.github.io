@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # 2026 跨境:ISO 20022、開放金融與代幣化存款在企業財資的角色
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>結論先講。</strong>2026 年的跨境企業財資,並行運轉於四條軌道之上——SWIFT CBPR+、PSD3/FiDA 下的即時 A2A、代幣化存款,以及穩定幣軌道——由 ISO 20022 作為共通語法縫合起來。CIB 與企業財資團隊真正要做的,是編排,而不是挑軌道。</p>
 <p class="post-lead-heading"><strong>關鍵要點</strong></p>
 <ul class="post-lead-takeaways">
@@ -242,6 +242,6 @@ International Organization for Standardization (2020). *ISO 17442 Financial serv
 SWIFT (2024). *Cross-Border Payments and Reporting Plus (CBPR+) usage guidelines*. Available at: [https://www.swift.com/standards/iso-20022/iso-20022-programme](https://www.swift.com/standards/iso-20022/iso-20022-programme "SWIFT CBPR+ usage guidelines")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,長期撰文探討應用 AI、ISO 20022 遷移、金融服務的後量子密碼學,以及批發支付的結構性轉型。</span><span class="author-credentials">逾 20 年資歷,橫跨 HSBC 商業銀行暨投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group。<a href="/about/index.html">完整檔案</a>&middot;<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a>&middot;<a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 的肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行科技人,長期撰文探討應用 AI、ISO 20022 遷移、金融服務的後量子密碼學,以及批發支付的結構性轉型。</span><span class="author-credentials">逾 20 年資歷,橫跨 HSBC 商業銀行暨投資銀行、PayPal、Barclays、Shazam、AKQA、Virgin Group。<a href="/about/index.html">完整檔案</a>&middot;<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a>&middot;<a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最後審閱於 <time datetime="2026-06-24">2026-06-24</time>。</p>
 <!-- enrich-end -->

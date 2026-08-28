@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="A cikk összefoglalója">
 <p class="post-lead-tldr"><strong>Röviden.</strong> A DORA TLPT-rendszere a vörös csapatos tesztelést mérlegelésen alapuló biztonsági gyakorlatból hároméves ciklusú, felügyelt, bizonyítékot termelő kötelezettséggé alakítja azoknál a szervezeteknél, amelyeket egy illetékes hatóság kijelöl. A szorító korlátok nem technikaiak. Kínálati oldaliak: az Article 27 cikk akkreditált vagy magatartási kódexhez kötött tesztszolgáltatókat követel, független bizonyosságnyújtással és szakmai felelősségbiztosítással; belső vörös csapatot legfeljebb minden három ciklusból kettőben enged meg; a fenyegetésfelderítést szállító félnek pedig minden egyes alkalommal külsőnek kell lennie. A harmadik feles szolgáltatókon futó kritikus funkciók bevonzzák ezeket a szolgáltatókat a tesztbe.</p>
 <p class="post-lead-heading"><strong>Legfontosabb tanulságok</strong></p>
 <ul class="post-lead-takeaways">

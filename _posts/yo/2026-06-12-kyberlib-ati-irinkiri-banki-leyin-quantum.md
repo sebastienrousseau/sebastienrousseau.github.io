@@ -90,7 +90,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ìgbékalẹ̀ báńkì ní 2026 dojú kọ ewu ètò-ara tí òpin rẹ̀ ti hàn kedere: ìṣirò ní ìwọ̀n quantum yóò fọ́ pàṣípààrọ̀ kọ́kọ́rọ́ RSA àti ECC tí ó ń dáàbò bo ìjábọ̀ tí ń kọjá lórí ẹ̀rọ lónìí. Àwọn ìpilẹ̀ṣẹ̀ ìjọba àpapọ̀ àti àwọn ìwé ìlànà alábojútó ti gbé ìmọ̀ sókè; ìmúṣẹ ìmọ̀-iṣẹ́ ṣì wà ní ọ̀tọ̀ọ̀tọ̀. <a href="https://github.com/sebastienrousseau/kyberlib">KyberLib</a> jẹ́ àwòrán ìkọ́lé ìmọ̀-iṣẹ́ orisun ṣiṣi tí ó gbé ìtàn lẹ́yìn-quantum lọ sí kóòdù Rust gangan tó ní ààbò ìrántí — ó ń ṣe ìmúṣẹ ML-KEM tí NIST ṣe ìpilẹ̀ṣẹ̀ (FIPS 203) lẹ́yìn àwọn ààlà ìyàsọ́tọ̀ crypto-agile, kí àwọn ilé-iṣẹ́ lè gbé ààbò ìgbéjáde àti ìfilọ́ kọ́kọ́rọ́ ga kí àwọn ìkọlù "Store Now, Decrypt Later" tó dé ibi ìpamọ́ wọn.</p>
 <p class="post-lead-heading"><strong>Àwọn àyọkà pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
@@ -263,6 +263,6 @@ Bí ìpele ìgbéjáde bá gbẹ́kẹ̀lé RSA tàbí ECC àfọwọ́gbà, àw
 - GitHub, (2026). [Ibi ìpamọ́ orisun ṣiṣi kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "Ibi ìpamọ́ kyberlib").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nipa Onkọwe"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ìgbékalẹ̀ ìsanwó, owó tókènì, ISO 20022, ààbò post-quantum, iṣẹ́ ìnáwó cloud-native, àti àwọn ọjà oníbàátì tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ìgbékalẹ̀ ìsanwó, owó tókènì, ISO 20022, ààbò post-quantum, iṣẹ́ ìnáwó cloud-native, àti àwọn ọjà oníbàátì tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn <time datetime="2026-06-12">2026-06-12</time>.</p>
 <!-- enrich-end -->

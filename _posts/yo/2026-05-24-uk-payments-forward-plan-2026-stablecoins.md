@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # UK Payments Forward Plan ní 2026: Stablecoins, Ẹnu-Ọ̀nà Bankì, Àwọn Ìfowópamọ́ Tókènì, àti Ìsanwó Alábòójútó
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> UK Payments Forward Plan àti àkójọpọ̀ ìlànà April 2026 ṣe àlàyé agbègbè ìṣàkóso (regulatory perimeter) kan ṣoṣo fún ìsanwó ìbílẹ̀, stablecoins, àwọn ìfowópamọ́ tókènì (tokenised deposits), ẹnu-ọ̀nà bankì (open banking), àti ìsanwó alábòójútó (agentic payments). Ìbéèrè ìṣẹ̀ètò fún àwọn báńkì UK ti yí padà láti "ọjà wo ni a ó tú jáde" sí "àwòṣe ìgbékalẹ̀ wo ni a ó pa lápapọ̀" — pípa ìlànà, ọjà, dátà, ìyàn ọ̀nà (rail), ìdarí ewu, àti ẹ̀rí mọ́ àwòṣe iṣẹ́ kan tí àwọn alábòójútó lè bójú tó tí àwọn oníbàárà sì lè lò. Àwọn ilé-iṣẹ́ tí yóò borí ni àwọn tí ó gba ìpinnu nípa ìwà ẹ̀tàn alààyè, owó tó ń sàn (liquidity), ìbámu, ìpinnu owó (settlement), àti ewu iṣẹ́ gẹ́gẹ́ bí ìbéèrè ìgbékalẹ̀ kan.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> FiDA är inte PSD2 med fler endpoints. Tre strukturella brott ändrar vad efterlevnad betyder: åtkomsten styrs av ett system som du måste gå med i, inte av ett gränssnitt du bygger ensam; datainnehavare får begära rimlig ersättning, så åtkomst blir en prissatt produkt i stället för en gratis skyldighet; och tillämpningsområdet når bolån, sparande, investeringar, pensioner och skadeförsäkring — de produkter bankerna faktiskt tjänar pengar på. Texten ligger fortfarande i trilog, men de system som ska definiera standarderna utformas nu, och det är där hävstången finns.</p>
 <p class="post-lead-heading"><strong>Viktigaste slutsatserna</strong></p>
 <ul class="post-lead-takeaways">

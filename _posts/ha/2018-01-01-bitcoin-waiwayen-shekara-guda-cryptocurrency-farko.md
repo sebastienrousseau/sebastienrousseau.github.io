@@ -98,7 +98,7 @@ excerpt: "Bitcoin, wanda galibi ake kira zinarin dijital, ya fara juyin juya hal
 last_reviewed: "2026-05-11"
 ---
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Bitcoin: Tsarin Kuɗin Lantarki na Peer-to-Peer (P2P ECS) wanda ke da yuwuwar sauya yadda mutane ke yin ciniki ta yanar gizo.</p>
 <p class="post-lead-heading"><strong>Babban abubuwan da aka koya</strong></p>
 <ul class="post-lead-takeaways">

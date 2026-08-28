@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # 2026년 포스트 양자 뱅킹 회복탄력성 지수: EO 14409, 글로벌 기한, 그리고 수탁자적 암호 민첩성
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="기사 요약">
 <p class="post-lead-tldr"><strong>요약.</strong> 포스트 양자 암호(PQC) 마이그레이션은 돌이킬 수 없는 지점을 넘어섰습니다. 미국 Executive Order 14409가 2026년 6월 22일 서명되고 프랑스 ANSSI가 강력한 2030년 기한 — 비 PQC 제품의 인증이 2027년에 중단 — 을 설정함에 따라, 암호 민첩성은 더 이상 기술적 열망이 아닙니다. 그것은 규제 의무입니다. 본 지수는 그 의무를 감사 가능한 다섯 개 계층 전반에 걸친 이사회용 0–5 스코어카드로 전환합니다.</p>
 <p class="post-lead-heading"><strong>핵심 요점</strong></p>
 <ul class="post-lead-takeaways">

@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # এজেন্টিক ট্রেজারি ২০২৬: Autonomous Treasury Index থেকে প্রোডাকশন-গ্রেড কো-পাইলট
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> এজেন্টিক ট্রেজারি কো-পাইলট ২০২৬-এ নিয়ন্ত্রিত পাইলট থেকে প্রোডাকশনে যাচ্ছে। CIB ট্রেজারি জুড়ে প্যাটার্ন একই: এজেন্ট ISO 20022 ক্যাশ ডেটা পড়ে, সীমাবদ্ধ টুল কল করে এবং নীতি ব্যান্ডের ভেতরে তারল্য পুনঃসামঞ্জস্য করে — চারপাশে SR 11-7, DORA ও EU AI Act নিয়ন্ত্রণ মোড়ানো।</p>
 <p class="post-lead-heading"><strong>মূল শিক্ষা</strong></p>
 <ul class="post-lead-takeaways">

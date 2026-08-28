@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="ملخص المقال">
 <p class="post-lead-tldr"><strong>الخلاصة.</strong> FiDA ليس PSD2 بنقاط نهاية أكثر. ثلاثة فروق بنيوية تغيّر معنى الامتثال: الوصول تحكمه منظومة عليك الانضمام إليها لا واجهة تبنيها وحدك؛ ويجوز لحائزي البيانات طلب تعويض معقول، فيصبح الوصول منتجاً مُسعَّراً لا واجباً مجانياً؛ ونطاق التطبيق يبلغ الرهون العقارية والمدخرات والاستثمارات والمعاشات والتأمين على غير الحياة — أي المنتجات التي تربح منها البنوك فعلاً. النص لا يزال في المفاوضات الثلاثية، لكن المنظومات التي ستحدّد المعايير تُصمَّم الآن، وهناك تقع القدرة على التأثير.</p>
 <p class="post-lead-heading"><strong>أبرز النقاط</strong></p>
 <ul class="post-lead-takeaways">

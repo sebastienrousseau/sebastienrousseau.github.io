@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Indeks odporności bankowej w 2026: AI, chmura, kwanty, płatności i ryzyko koncentracji stron trzecich
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Podsumowanie artykułu">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>W skrócie.</strong> Indeks odporności bankowej 2026 — ryzyko AI, koncentracja chmury, migracja kwantowoodporna, ciągłość płatności i krytyczna zależność od stron trzecich mierzone łącznie, a nie jako pięć odrębnych silosów zgodności.</p>
 <p class="post-lead-heading"><strong>Wnioski kluczowe</strong></p>
 <ul class="post-lead-takeaways">

@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Transgranicznie 2026: ISO 20022, otwarte finanse i tokenizowane depozyty w treasury korporacyjnym
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Podsumowanie artykułu">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Transgraniczny treasury korporacyjny w 2026 działa równolegle na czterech torach — SWIFT CBPR+, instant A2A w ramach PSD3/FiDA, tokenizowane depozyty oraz tory stablecoinów — spiętych przez ISO 20022 jako wspólną gramatykę. Praca dla zespołów CIB i treasury korporacyjnego to orkiestracja, nie wybór toru.</p>
 <p class="post-lead-heading"><strong>Kluczowe wnioski</strong></p>
 <ul class="post-lead-takeaways">

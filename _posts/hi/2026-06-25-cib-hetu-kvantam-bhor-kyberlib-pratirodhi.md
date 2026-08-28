@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # CIB हेतु क्वांटम भोर: KyberLib से एक क्वांटम-प्रतिरोधी भुगतान स्टैक तक
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="लेख सारांश">
 <p class="post-lead-tldr"><strong>संक्षेप में।</strong> BIS क्वांटम भोर और G7 साइबर विशेषज्ञ समूह के जनवरी 2026 के PQC रोडमैप ने पोस्ट-क्वांटम क्रिप्टोग्राफ़ी को शोध से निकालकर कॉर्पोरेट एवं निवेश बैंकिंग (CIB) के बोर्ड एजेंडे पर रख दिया है। KyberLib बैंकों को एक निरीक्षण-योग्य ML-KEM और ML-DSA प्रारंभ-बिंदु देता है; शेष कार्य भुगतान, व्यापार वित्त, कस्टडी और प्रकटीकरण में एक बहु-वर्षीय, क्रिप्टो-चपल संक्रमण कार्यक्रम है।</p>
 <p class="post-lead-heading"><strong>मुख्य निष्कर्ष</strong></p>
 <ul class="post-lead-takeaways">

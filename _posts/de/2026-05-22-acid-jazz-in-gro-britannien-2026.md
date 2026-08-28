@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Die Erneuerung des Acid Jazz in Großbritannien: Künstler, Konzerte, Alben 2026 und die Rückkehr einer Groove-geprägten Livekultur
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Zusammenfassung des Artikels">
+<aside class="post-lead" aria-label="Artikelzusammenfassung">
 <p class="post-lead-tldr"><strong>Kurzfassung.</strong> Die britische Acid-Jazz-Erneuerung 2026 ist kein Nostalgieprojekt — sie ist ein lebendiges Ökosystem, in dem Acid Jazz Records, Erstgenerations-Acts, Jazz-Funk-Festivals und jüngere Groove-orientierte Musikerinnen und Musiker gleichzeitig aktiv sind.</p>
 <p class="post-lead-heading"><strong>Wesentliche Erkenntnisse</strong></p>
 <ul class="post-lead-takeaways">

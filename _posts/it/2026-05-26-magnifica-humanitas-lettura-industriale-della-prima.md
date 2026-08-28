@@ -89,7 +89,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Sintesi dell'articolo">
 <p class="post-lead-tldr"><strong>In sintesi.</strong> Il 25 maggio 2026 Papa Leone XIV ha pubblicato <em>Magnifica Humanitas</em>, prima enciclica papale dedicata all'IA. Letta dall'interno dell'industria tecnologica come quadro etico — non come dottrina — riecheggia tutte le inquietudini morali che hanno accompagnato il treno, l'automobile, il nucleare e Internet, e approda, con onestà, alla speranza.</p>
 <p class="post-lead-heading"><strong>Punti chiave</strong></p>
 <ul class="post-lead-takeaways">

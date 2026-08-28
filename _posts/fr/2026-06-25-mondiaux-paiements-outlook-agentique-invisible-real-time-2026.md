@@ -90,7 +90,7 @@ site_software: "Static Site Generator, Rust"
 <p class="deck">Le cycle mondial des paiements 2026 repose sur trois forces convergentes — commerce agentique, paiements intégrés invisibles et exécution en temps réel — posées sur un registre unifié tokenisé sous Project Agorá et la bascule SWIFT vers l'adresse structurée du 14 novembre 2026.</p>
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Résumé de l'article">
 <p class="post-lead-tldr"><strong>En bref.</strong> Le paysage des paiements 2026 ne se réduit plus à une migration de messagerie : c'est un modèle opérationnel multidimensionnel où le risque et le revenu sont dictés par l'exécution en temps réel. Cette analyse synthétise les perspectives 2026 de J.P. Morgan, Global Payments, HSBC et The Payments Association en un plan opérationnel G-SIB à quatre piliers — commerce agentique initié par modèle, API de trésorerie en continu, registres unifiés tokenisés sous Project Agorá (BIS) et les échéances structurées SWIFT et SEPA du 14/15 novembre 2026 (Swift CBPR+ : 14 novembre 2026 ; règlements EPC SEPA : 15 novembre 2026). Swift CBPR+ retire l'`<AdrLine>` non structuré à partir du 14 novembre 2026 ; le règlement EPC SEPA n'autorise l'adresse non structurée que jusqu'au 15 novembre 2026.</p>
 <p class="post-lead-heading"><strong>Points clés</strong></p>
 <ul class="post-lead-takeaways">

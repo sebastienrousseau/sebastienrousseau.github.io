@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Taƙaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>Taƙaitawa.</strong> FiDA ba PSD2 ba ne mai ƙarin endpoints. Manyan sauye-sauye uku na tsari sun canza ma'anar bin ƙa'ida: scheme ɗin da dole ka shiga ne zai jagoranci samun data, ba interface da ka gina kai kaɗai ba; data holders za su iya neman compensation mai ma'ana, don haka samun data ya zama samfuri mai farashi maimakon wajibi kyauta; kuma scope ɗin ya kai jinginar gida, ajiya, zuba jari, fansho da non-life insurance — samfuran da bankuna ke samun riba a kansu da gaske. Rubutun na nan a trilogue, amma ana ƙera scheme ɗin da za su ayyana ƙa'idojin a yanzu, kuma a nan ne ƙarfin tasiri yake.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan da za a koya</strong></p>
 <ul class="post-lead-takeaways">

@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # ISO 20022 efter migreringen: betaldata som bankprodukter 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Sammanfattning av artikeln">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>Sammanfattning.</strong> ISO 20022 efter migreringen är ingen projektavslutning — det är starten på en möjlighet för betaldata-produkter. Strukturerade adresser, ändamålskoder, fakturadetaljer, utredningsmeddelanden och rika statushändelser blir produkter för avstämning, bedrägeri, likviditet, regelefterlevnad och analys som företagskunder är beredda att betala premie för. Den strategiska frågan för banker 2026 handlar om designdisciplin: vilken betaldata-produkt bär vilket klientarbetsflöde, vilka kontroller löper i arbetsflödeshastighet och hur prissätts orkestreringen. Banker som behandlar ISO 20022 som en avslutad migrering förlorar datadividenden; banker som behandlar den som en produktplattform förränta den.</p>
 <p class="post-lead-heading"><strong>Viktiga slutsatser</strong></p>
 <ul class="post-lead-takeaways">

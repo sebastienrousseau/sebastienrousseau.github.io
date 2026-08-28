@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে।</strong> Regulation (EU) 2024/1183 eIDAS-কে নতুন করে লিখেছে। দুটি তারিখ গুরুত্বপূর্ণ: <strong>২৪ ডিসেম্বর ২০২৬</strong>-এর মধ্যে প্রতিটি সদস্য রাষ্ট্রকে অন্তত একটি European Digital Identity Wallet দিতে হবে, এবং <strong>২৪ ডিসেম্বর ২০২৭</strong>-এর মধ্যে তালিকাভুক্ত খাতগুলোর বড় ও মাঝারি নির্ভরকারী পক্ষকে — যার মধ্যে ব্যাংকিং ও আর্থিক সেবা রয়েছে — ব্যবহারকারী চাইলে শক্তিশালী ব্যবহারকারী প্রমাণীকরণের জন্য তা গ্রহণ করতে হবে। ব্যাংকের ভূমিকা পরিচয় প্রমাণপত্রের ইস্যুকারী থেকে বদলে হয় নিবন্ধিত নির্ভরকারী পক্ষ, আর নিবন্ধন এখানে আইনি পূর্বশর্ত, কারিগরি নয়। প্রকৌশলের দিকটি সাদামাটা। শাসন, দায় এবং পরিচয় যাচাইয়ের পরিণতিগুলো নয়।</p>
 <p class="post-lead-heading"><strong>মূল বিষয়গুলো</strong></p>
 <ul class="post-lead-takeaways">

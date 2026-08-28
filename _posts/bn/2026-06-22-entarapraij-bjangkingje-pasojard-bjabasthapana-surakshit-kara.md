@@ -96,7 +96,7 @@ twitter_image_alt: "সেবাস্তিয়ান রুসোর সা�
 # এন্টারপ্রাইজ ব্যাংকিংয়ে পাসওয়ার্ড ব্যবস্থাপনা সুরক্ষিত করা: hsh-এর মাধ্যমে মাল্টি-অ্যালগরিদম হ্যাশিং ও আপগ্রেড
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> <a href="https://github.com/sebastienrousseau/hsh">hsh</a> একটি ওপেন-সোর্স, pure-Rust ক্রিপ্টোগ্রাফিক ফ্রেমওয়ার্ক — যা টিয়ার-১ ব্যাংককে শূন্য সেবা-বিঘ্নে লিগ্যাসি পাসওয়ার্ড হ্যাশ Argon2id-এর মতো আধুনিক মানে স্থানান্তরে সক্ষম করে। HSM-সমর্থিত পেপারিং সংহত করে এবং C-ভিত্তিক FFI র‍্যাপার ছাড়াই কঠোর মেমোরি নিরাপত্তা প্রয়োগ করে, এটি সেই ক্রিপ্টোগ্রাফিক ক্ষয় দুর্বলতা বন্ধ করে যা সরাসরি DORA ও Basel III পরিপালনকে হুমকিতে ফেলে।</p>
 <p class="post-lead-heading"><strong>মূল শিক্ষা</strong></p>
 <ul class="post-lead-takeaways">
@@ -336,6 +336,6 @@ National Institute of Standards and Technology (2024). *Initial Public Draft —
 OWASP Foundation (2024). *Password Storage Cheat Sheet*. Available at: [https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html "OWASP Password Storage Cheat Sheet")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ — প্রয়োগকৃত AI, ISO 20022 মাইগ্রেশন, আর্থিক সেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি ও পাইকারি পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লেখেন।</span><span class="author-credentials">HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam জুড়ে ২০+ বছর। <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুসোর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং প্রযুক্তিবিদ — প্রয়োগকৃত AI, ISO 20022 মাইগ্রেশন, আর্থিক সেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি ও পাইকারি পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লেখেন।</span><span class="author-credentials">HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam জুড়ে ২০+ বছর। <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-06-22">2026-06-22</time>।</p>
 <!-- enrich-end -->

@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Banking Resilience Index 2026: AI, moln, kvant, betalningar och tredjepartsrisk
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Sammanfattning av artikeln">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>Sammanfattning.</strong> Ett bankindex 2026 för operationell motståndskraft — AI-risk, koncentrationsrisk i molnet, kvantsäker migration, betalningskontinuitet och kritisk tredjepartsrisk mätta tillsammans, inte som fem separata efterlevnadssilon.</p>
 <p class="post-lead-heading"><strong>Viktiga slutsatser</strong></p>
 <ul class="post-lead-takeaways">

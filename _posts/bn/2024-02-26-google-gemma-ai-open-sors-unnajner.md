@@ -107,7 +107,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="নিবন্ধের সারাংশ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে (TL;DR).</strong> গুগলের Gemma AI মডেলটি অন্বেষণ করুন: একটি ওপেন-সোর্স প্রকল্প যা ব্যক্তিগত এবং এন্টারপ্রাইজ উভয় ব্যবহারের জন্যই নৈতিক AI সমাধান প্রদান করে।</p>
 <p class="post-lead-heading"><strong>মূল বিষয়সমূহ</strong></p>
 <ul class="post-lead-takeaways">
@@ -322,7 +322,7 @@ Gemma-এর সূচনা AI-এর ক্ষেত্রে একটি য
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "ডিভাইডার"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="লেখক পরিচিতি"><img alt="সেবাস্তিয়ান রুশো-এর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং টেকনোলজিস্ট, যিনি ফলিত এআই (applied AI), ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি বা হোলসেল পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লিখছেন।</span><span class="author-credentials">এইচএসবিসি কমার্শিয়াল অ্যান্ড ইনভেস্টমেন্ট ব্যাংক, পেপ্যাল, বার্কলেস, শাজাম, একেকিউএ, ভার্জিন গ্রুপ জুড়ে ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="সেবাস্তিয়ান রুশো-এর প্রতিকৃতি" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাংকিং টেকনোলজিস্ট, যিনি ফলিত এআই (applied AI), ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি বা হোলসেল পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লিখছেন।</span><span class="author-credentials">এইচএসবিসি কমার্শিয়াল অ্যান্ড ইনভেস্টমেন্ট ব্যাংক, পেপ্যাল, বার্কলেস, শাজাম, একেকিউএ, ভার্জিন গ্রুপ জুড়ে ২০+ বছরের অভিজ্ঞতা। <a href="/about/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">সর্বশেষ পর্যালোচনা করা হয়েছে <time datetime="2026-06-23">2026-06-23</time>।</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">সম্পর্কিত পঠন</h2>

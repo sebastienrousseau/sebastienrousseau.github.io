@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # DORA, EU AI Act i suwerenność danych: stos zgodności banków w 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Podsumowanie artykułu">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>W skrócie.</strong> DORA, EU AI Act, RODO, ryzyko koncentracji chmury oraz przepisy o suwerenności danych zbiegają się w 2026 roku w jeden stos zgodności banku. Pytanie strategiczne przesunęło się z „który framework wdrożyć” na „która architektura orkiestruje wszystkie pięć” — prowadzenie dowodów odporności ICT, klasyfikacji wysokiego ryzyka AI, ewidencji podstaw prawnych, limitów koncentracji stron trzecich oraz decyzji o suwerennych danych przez jeden model operacyjny, który nadzorca może zaudytować. Pięć równoległych programów generuje ryzyko operacyjne na kolejną dekadę; wygrywa jedna warstwa orkiestracji z mierzalnymi dowodami.</p>
 <p class="post-lead-heading"><strong>Wnioski kluczowe</strong></p>
 <ul class="post-lead-takeaways">

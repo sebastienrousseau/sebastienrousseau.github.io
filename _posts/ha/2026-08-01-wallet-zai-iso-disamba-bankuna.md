@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Takaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Regulation (EU) 2024/1183 ya sake rubuta eIDAS. Kwanaki biyu ne suka fi muhimmanci: kafin <strong>24 Disamba 2026</strong> dole kowace kasa mamba ta samar da akalla European Digital Identity Wallet guda daya, kuma kafin <strong>24 Disamba 2027</strong> dole manyan da matsakaitan relying party a fannonin da aka lissafa — banki da hidimomin kudi cikinsu — su karbe shi don strong user authentication idan mai amfani ya nema. Matsayin banki ya sauya daga mai fitar da credential zuwa rijistaccen relying party, kuma rijista sharadi ne na doka, ba na fasaha ba. Aikin injiniya ba abin mamaki ba ne. Sakamakon shugabanci, alhaki da tabbatar da shaida shi ne abin mamaki.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan da za a dauka</strong></p>
 <ul class="post-lead-takeaways">

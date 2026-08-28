@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Агентські платежі у банкінгу: згода, відповідальність та новий UX 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Підсумок статті">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Агентські платежі (agentic payments) у 2026 році перестали бути концепцією: Mastercard і Rabobank провели у Нідерландах живу транзакцію, у якій AI-агент (AI agent) ініціював платіж через Mastercard Agent Pay, не торкаючись карткових даних. Криптографічні мандати у стилі AP2, x402, A2A, MCP і MPP формують протоколовий рівень, тоді як EFTA, Regulation E та платіжне законодавство Великої Британії ще не оновлені під транзакції автономних агентів. Банкам потрібна архітектура згоди + ідентичності + відповідальності, яка генерує докази до розрахунку (pre-settlement evidence), а не ретроспективний захист у спорі.</p>
 <p class="post-lead-heading"><strong>Ключові висновки</strong></p>
 <ul class="post-lead-takeaways">

@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Index 2026 de l'IA agentique bancaire : autonomie et gouvernance
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Résumé de l'article">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Un plan pour mesurer la maturité de l'IA agentique dans les banques Tier 1 selon six dimensions : niveau d'autonomie, gestion des permissions API, garde-fous déterministes, couverture humain dans la boucle (HITL), exhaustivité du journal d'audit et économie unitaire. Classer les agents par ce qu'ils sont autorisés à faire, et non par l'intelligence du modèle sous-jacent. Traiter chaque agent en production comme un modèle au sens de SR 11-7 (Federal Reserve) et SS1/23 (PRA) dès le premier jour.</p>
 <p class="post-lead-heading"><strong>Points clés</strong></p>
 <ul class="post-lead-takeaways">

@@ -90,7 +90,7 @@ site_software: "Static Site Generator, Rust"
 <p class="deck">Globální cyklus plateb roku 2026 definují tři sbíhající se síly — agentní obchod, neviditelné integrované platby a vykonávání v reálném čase — postavené na tokenizované sjednocené účetní knize v rámci Project Agorá a tvrdém termínu přepnutí na strukturovanou adresu SWIFT v listopadu 2026.</p>
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Shrnutí článku">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Platební krajina roku 2026 se posunula od migrace zpráv k vícerozměrnému provoznímu modelu, kde riziko a výnosy diktuje vykonávání v reálném čase. Tento text syntetizuje výhledy J.P. Morgan, Global Payments, HSBC a Payments Association na rok 2026 do čtyřpilířového provozního plánu G-SIB, který pokrývá agentní obchod iniciovaný modelem, nepřetržitě dostupná treasury API, tokenizované sjednocené účetní knihy v rámci BIS Project Agorá a termíny strukturované adresy SWIFT a SEPA 14./15. listopadu 2026 (Swift CBPR+: 14. listopadu 2026; pravidla EPC SEPA: 15. listopadu 2026).</p>
 <p class="post-lead-heading"><strong>Klíčová zjištění</strong></p>
 <ul class="post-lead-takeaways">

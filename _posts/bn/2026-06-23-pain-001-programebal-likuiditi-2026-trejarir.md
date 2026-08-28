@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Pain.001 থেকে প্রোগ্রামেবল লিকুইডিটি: ২০২৬-এ ট্রেজারির স্বায়ত্ত স্নায়ুতন্ত্র হিসেবে ISO 20022
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে।</strong> ISO 20022 আর কোনো মাইগ্রেশন প্রকল্প নয়। ২০২৬-এ এটি প্রোগ্রামেবল লিকুইডিটি, এজেন্টিক ট্রেজারি ও ২০২৬ সালের নভেম্বরের SWIFT MT/MX কাট-ওভারের নিচের ডেটা সাবস্ট্রেট — যা পূরণে বিশ্বের প্রায় অর্ধেক ব্যাংক এখনও পিছিয়ে।</p>
 <p class="post-lead-heading"><strong>মূল শিক্ষা</strong></p>
 <ul class="post-lead-takeaways">

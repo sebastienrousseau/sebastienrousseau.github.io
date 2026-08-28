@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # AI jako system operacyjny platnosci: oszustwo, routing, odpornosc i zgodnosc w 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Podsumowanie artykulu">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> AI w platnosciach w 2026 roku przeszla z dashboardow analitycznych do statusu systemu operacyjnego — obsluguje screening oszustw, naprawe platnosci, routing, prognoze plynnosci, zgodnosc AML i screening sankcji oraz kontrole handlu agentowego w tempie procesu. Strategiczne pytanie dla bankow nie brzmi juz "ktore narzedzie AI pilotowac", lecz dotyczy dyscypliny projektowej: ktore kontrole AI dzialaja w czasie rzeczywistym w ktorym procesie, kto odpowiada za wyjasnialnosc i jak dokumentowac decyzje wobec nadzoru. Modelem zwycieskim jest orkiestracja z mierzalna ekonomika — a nie izolowane piloty nakladane na kruche legacy.</p>
 <p class="post-lead-heading"><strong>Kluczowe wnioski</strong></p>
 <ul class="post-lead-takeaways">

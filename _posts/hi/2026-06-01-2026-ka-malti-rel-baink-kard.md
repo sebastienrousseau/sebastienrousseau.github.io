@@ -89,7 +89,7 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="लेख का सार">
+<aside class="post-lead" aria-label="लेख सारांश">
 <p class="post-lead-tldr"><strong>संक्षेप में।</strong> 2026 का मल्टी-रेल बैंक लीगेसी कोर के ऊपर तीन चीज़ें एक के ऊपर एक रखता है: एक ऑर्केस्ट्रेशन इंजन जो हर लेन-देन के लिए रेल चुनता है, एक तरलता बही जो हर तत्काल रेल द्वारा माँगे जाने वाले पूर्व-वित्तपोषित शेषों को संभालती है, और एक ISO 20022 pacs.008 अनुवादक जो कोर डेटा को संरचित प्रेषण जानकारी खोए बिना A2A और ओपन बैंकिंग API तक पहुँचाता है। जो भी "FedNow" या "स्टेबलकॉइन" को अलग-अलग प्रोडक्ट प्रोग्रामों के रूप में फंड करेगा, वह दोगुना खर्च करेगा और दोनों को बुरी तरह चलाएगा।</p>
 <p class="post-lead-heading"><strong>मुख्य निष्कर्ष</strong></p>
 <ul class="post-lead-takeaways">

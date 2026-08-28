@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Banking Infrastructure Index 2026: Mengukur Kesiapan Agentic AI, Keamanan Kuantum, Ketahanan Cloud Native, dan Pembayaran Grosir
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Mengapa ini penting">
+<aside class="post-lead" aria-label="Ringkasan artikel">
   <p class="post-lead-tldr"><strong>Tentang artikel ini:</strong> Kerangka bergaya Stanford AI Index untuk mengukur kesiapan bank pada empat domain infrastruktur 2026 yang kini bergerak bersama — agentic AI, kriptografi pasca-kuantum, ketahanan cloud-native, dan pembayaran grosir — ditambah lima metrik tingkat dewan yang mengubah kerangka itu menjadi kapabilitas operasional.</p>
   <p class="post-lead-takeaways"><strong>Siapa yang sebaiknya membaca:</strong> CTO bank, Kepala Engineering, Chief Risk and Resilience Officer, Kepala Pembayaran, Kepala Cryptographic Engineering, anggota dewan direksi dengan pengawasan teknologi, serta regulator (PRA, ECB, FCA, OCC) yang mengawasi mereka.</p>
 </aside>

@@ -89,7 +89,7 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="記事概要">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>要約。</strong> 2026 年のマルチレール銀行は、レガシーコアの上に積み重なる三つの要素です。取引ごとにレールを選定するオーケストレーション・エンジン、各即時決済レールが要求する事前資金供給残高を管理する流動性ブック、そしてコアデータを構造化送金情報を失うことなく A2A および Open Banking API へ流通させる ISO 20022 pacs.008 翻訳器です。「FedNow」や「ステーブルコイン」を個別の製品プログラムとして予算化する組織は、二重に支出し、双方とも十分には運用できません。</p>
 <p class="post-lead-heading"><strong>主要なポイント</strong></p>
 <ul class="post-lead-takeaways">

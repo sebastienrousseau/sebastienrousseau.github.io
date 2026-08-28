@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Ringkasan artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Rejim TLPT DORA menukar pasukan merah daripada latihan keselamatan mengikut budi bicara kepada kewajipan diselia yang menghasilkan bukti pada kitaran tiga tahun, bagi entiti yang ditetapkan oleh pihak berkuasa berwibawa. Kekangan yang mengikat bukan bersifat teknikal. Ia datang dari sisi bekalan: Article 27 menuntut penyedia ujian yang terakreditasi atau terikat kod, membawa jaminan bebas dan insurans tanggung rugi profesional, membenarkan pasukan merah dalaman bagi paling banyak dua daripada setiap tiga kitaran, dan menuntut penyedia risikan ancaman datang dari luar pada setiap kali. Fungsi kritikal yang berjalan pada penyedia pihak ketiga menarik penyedia tersebut masuk ke dalam ujian.</p>
 <p class="post-lead-heading"><strong>Intisari utama</strong></p>
 <ul class="post-lead-takeaways">

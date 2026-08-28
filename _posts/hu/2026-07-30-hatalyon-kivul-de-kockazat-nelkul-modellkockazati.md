@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="A cikk összefoglalója">
 <p class="post-lead-tldr"><strong>Röviden.</strong> A 2026. április 17-i felülvizsgált modellkockázati útmutató (SR 26-2 / OCC Bulletin 2026-13) felváltja a 2011-es keretrendszert, és kifejezetten kizárja a generatív és az ágens MI-t, ígéretet téve egy nyilvános konzultációra. Ez a kizárás <em>ennek</em> az útmutatónak a hatályáról szóló döntés, nem felügyeleti feloldozás: ugyanaz a modell továbbra is a harmadik felek kockázata, a működési kockázat, a fogyasztóvédelem és a tisztességes hitelezés hatálya alatt marad. Eközben a brit SS1/23 technológiasemleges, és továbbra is behúzza ezeket a modelleket. Egy csoportbank most egyetlen modellt két válasz alatt működtet, és az őszinte reakció az, ha a szigorúbbhoz igazítja az irányítást.</p>
 <p class="post-lead-heading"><strong>Legfontosabb tanulságok</strong></p>
 <ul class="post-lead-takeaways">

@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="תקציר המאמר">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> FiDA אינו PSD2 עם עוד נקודות קצה. שלושה שברים מבניים משנים את משמעות הציות: הגישה נשלטת על ידי מנגנון שחובה להצטרף אליו ולא על ידי ממשק שבונים לבד; מחזיקי הנתונים רשאים לדרוש תמורה סבירה, ולכן הגישה הופכת למוצר מתומחר ולא לחובה ללא עלות; והתחולה מגיעה למשכנתאות, חיסכון, השקעות, פנסיה וביטוח כללי — המוצרים שהבנקים באמת מרוויחים עליהם. הנוסח עדיין בהליך הטרילוג, אך המנגנונים שיגדירו את התקנים מתוכננים עכשיו, ושם יושב כוח המיקוח.</p>
 <p class="post-lead-heading"><strong>נקודות מפתח</strong></p>
 <ul class="post-lead-takeaways">

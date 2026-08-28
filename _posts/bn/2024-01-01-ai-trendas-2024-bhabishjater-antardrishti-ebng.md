@@ -94,7 +94,7 @@ webmaster: "contact@sebastienrousseau.com"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> ২০২৪-এর AI প্রবণতা: অর্থায়নে generative AI, মাল্টিমোডাল মডেল, অন-ডিভাইস LLM এবং ব্যাংকিং ও পণ্য প্রকৌশলকে নতুনভাবে রূপ দেবে এমন পরিবর্তনসমূহ।</p>
 <p class="post-lead-heading"><strong>প্রধান শিক্ষণীয় বিষয়সমূহ</strong></p>
 <ul class="post-lead-takeaways">

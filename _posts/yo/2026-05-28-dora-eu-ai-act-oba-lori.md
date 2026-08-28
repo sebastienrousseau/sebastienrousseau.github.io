@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # DORA, EU AI Act, àti Ọba Lori Dátà: Akopọ Ìbámu 2026 fún Báńkì
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> DORA, EU AI Act, GDPR, ewu ìṣàkójọ cloud, àti àwọn òfin ọba lori dátà ń pa pọ̀ ní 2026 di akopọ ìbámu kan ṣoṣo fún àwọn báńkì. Ìbéèrè ìlànà ti yí padà láti "èwo nínú àwọn ìlànà ni a yóò gbé kalẹ̀" sí "èwo nínú àwọn ìkọ́lé ni yóò ṣètò gbogbo márùn-ún" — ṣíṣe ẹ̀rí ìfaradà ICT, ìpín ewu AI, àkọsílẹ̀ ipilẹ̀ òfin, ààlà ìṣàkójọ ẹlẹgbẹ́ẹ kẹta, àti àṣàyàn dátà ọba nípasẹ̀ àwòkọ́ṣe iṣẹ́ kan tí àwọn alábojútó lè ṣàyẹ̀wò. Ètò márùn-ún tó wà ní ìbámu ń kọ́ ewu iṣẹ́ ọdún mẹ́wàá tí ń bọ̀; ìpele ìṣètò kan pẹ̀lú ẹ̀rí tó ṣe wíwọ̀n ni yóò borí.</p>
 <p class="post-lead-heading"><strong>Àwọn àyọkà pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

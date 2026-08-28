@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Owó Tó Ń Ṣàn Nípasẹ̀ Ètò ní 2026: AI, Àwọn Ìfowópamọ́ Tókènì, àti Ìṣètò Ètò Owó Àkókò Gangan
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Owó tó ń ṣàn nípasẹ̀ ètò ní 2026 so àsọtẹ́lẹ̀ AI, àwọn ìfowópamọ́ tókènì, àwọn ọ̀nà ìsanwó àkókò gangan, àkáǹtì ojú-ìwòye, stablecoins, àti treasury management systems pọ̀ sí ìpele ìṣètò kan fún ọwọ́ ìṣiṣẹ́ àwọn ilé-iṣẹ́. Ìbéèrè ìmọ̀ràn fún àwọn báńkì ti yí pa dà láti "ọjà wo ni a ó ṣe ìfilọ́lẹ̀" sí "ìgbékalẹ̀ wo ni a ó ṣètò" — tí ó so ètò, ọjà, dátà, yíyàn ọ̀nà, ìdarí ewu, àti ẹ̀rí pọ̀ sí àwòṣe iṣẹ́ kan tí àwọn alábòójútó lè yẹ̀wò àti CFO lè lò. Báńkì tí ó lè darí, ṣàkóso, ṣàṣe iye, fi ẹ̀rí hàn, àti ṣe àlàyé ìṣàn iṣẹ́ ètò owó kọ̀ọ̀kan yóò ré ju báńkì tí ó kàn gba irinṣẹ́ mìíràn lọ.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

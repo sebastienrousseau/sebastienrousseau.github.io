@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ìmọ̀-ẹ̀rọ ilé-iṣẹ́ ní 2026 dúró lórí ìṣọ̀kan ìṣiṣẹ́ serverless tí a pín káàkiri àgbáyé àti AI aṣojú. Àwọn CDN ìbílẹ̀ — tí a kọ́ fún ìpamọ́ fáìlì aimi àti ìṣíkiri ìjábọ̀ ìpìlẹ̀ — ti di ohun ìgbàanì ní ti ìkọ́lé ní sáà ìṣètò dátà àkókò gangan tó ń ṣiṣẹ́ lọ́wọ́. CloudCDN jẹ́ ètò ìpinnu orisun ṣiṣi tí ó yí eti padà di ipele iṣakoso tó ń ṣiṣẹ́: àwọn runtime serverless, ìṣọ̀kan ipò nípasẹ̀ Cloudflare Durable Objects, àti ẹnu-ọ̀nà Model Context Protocol (MCP) zero-trust tí ó jẹ́ kí àwọn aṣojú AI adáṣiṣẹ́ lè ṣiṣẹ́ ìgbékalẹ̀ wẹ́ẹ̀bù nínú àwọn ààlà iṣẹ́ tó ní ààlà tí cryptography sì ń ṣọ́.</p>
 <p class="post-lead-heading"><strong>Àwọn àyọkà pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
@@ -282,6 +282,6 @@ Bẹ́ẹ̀kọ́. Àwọn CDN aládàáni, orisun-pípadé ń gbáralé ààbò
 - GitHub, (2026). [Ibi ìpamọ́ cloudcdn.pro ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "Ibi ìpamọ́ cloudcdn.pro").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa Onkọwe"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ìgbékalẹ̀ ìsanwó, owó tókènì, ISO 20022, ààbò post-quantum, iṣẹ́ ìnáwó cloud-native, ìgbékalẹ̀ orisun ṣiṣi, àti àwọn ọjà oníbàátì tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ bánkì àgbà tí ó ń kọ nípa AI tí a lo, ìgbékalẹ̀ ìsanwó, owó tókènì, ISO 20022, ààbò post-quantum, iṣẹ́ ìnáwó cloud-native, ìgbékalẹ̀ orisun ṣiṣi, àti àwọn ọjà oníbàátì tí a ṣàkóso.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn <time datetime="2026-06-11">2026-06-11</time>.</p>
 <!-- enrich-end -->

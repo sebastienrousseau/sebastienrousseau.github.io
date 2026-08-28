@@ -94,7 +94,7 @@ last_reviewed: "2026-05-24"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>Ní ṣókí.</strong> <a href="https://pain001.com/">pain001</a> jẹ́ ilé-ìkàwé Python open-source tó ń ka data ìsanwó láti fáìlì CSV tàbí SQLite, tó sì ń dá ISO 20022 pain.001.001.09 (CustomerCreditTransferInitiation) XML, pẹ̀lú ìfọwọ́sí output sí ISO 20022 XSD schema àti iṣiro <code>CtrlSum</code> àti <code>NbOfTxs</code> laifọwọyi. SEPA Credit Transfer àti CBPR+ cross-border message variants méjèèjì ni support.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
@@ -275,7 +275,7 @@ pain001 ń raise `pain001.exceptions.ValidationError` pẹ̀lú lxml validation 
 [01]: https://www.iso20022.org/ "ISO 20022: Universal financial industry message scheme"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa onkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹrọ banking agba tó ń kọ nípa applied AI, ISO 20022 migration, post-quantum cryptography fún financial services, àti structural transformation ti wholesale payments.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaili kikun</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹrọ banking agba tó ń kọ nípa applied AI, ISO 20022 migration, post-quantum cryptography fún financial services, àti structural transformation ti wholesale payments.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaili kikun</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">A ṣe àtúnyẹ̀wò kẹ́yìn <time datetime="2026-05-24">2026-05-24</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Kíka tó jọmọ́</h2>

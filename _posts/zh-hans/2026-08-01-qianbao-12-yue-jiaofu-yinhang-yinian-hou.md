@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>摘要。</strong> Regulation (EU) 2024/1183 重写了 eIDAS。两个日期至关重要：到 <strong>2026年12月24日</strong>，每个成员国必须提供至少一款欧洲数字身份钱包；到 <strong>2027年12月24日</strong>，列名行业中的大型和中型依赖方——银行与金融服务位列其中——在用户提出请求时必须接受该钱包用于强用户认证。银行的角色从凭证签发方转为已注册的依赖方，而注册是法律前提，不是技术前提。工程本身平淡无奇。治理、责任与身份核验方面的后果并不平淡。</p>
 <p class="post-lead-heading"><strong>核心要点</strong></p>
 <ul class="post-lead-takeaways">

@@ -101,7 +101,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> HSH কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফিক প্রিমিティブ ব্যবহার করে আপনার ডেটা সুরক্ষিত রাখে, ভবিষ্যতের কোয়ান্টাম কম্পিউটিং অগ্রগতির মুখেও এর নিরাপত্তা নিশ্চিত করে।</p>
 <p class="post-lead-heading"><strong>মূল শিক্ষণীয় বিষয়সমূহ</strong></p>
 <ul class="post-lead-takeaways">

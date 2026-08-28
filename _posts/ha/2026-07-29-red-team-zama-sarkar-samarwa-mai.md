@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Tsarin TLPT na DORA ya juyar da red teaming daga aikin tsaro na zaɓi zuwa wajibi mai ƙarƙashin kulawa wanda ke haifar da shaida, duk shekara uku, ga cibiyoyin da hukuma mai iko ta naɗa. Matsalolin da ke ɗaure ba na fasaha ba ne. Na ɓangaren samarwa ne: Article 27 na buƙatar testers masu accreditation ko waɗanda ƙa'idar ɗabi'a ta ɗaure, waɗanda ke ɗauke da tabbaci mai zaman kansa da professional indemnity insurance; yana ba da izinin red team na ciki har zuwa gwaji biyu cikin kowane uku; kuma yana buƙatar mai ba da threat intelligence ya kasance na waje a kowane lokaci. Muhimman ayyuka da ke gudana a kan masu samarwa na waje suna jawo waɗannan masu samarwa cikin gwajin.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan da za a ɗauka</strong></p>
 <ul class="post-lead-takeaways">

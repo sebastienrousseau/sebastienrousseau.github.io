@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Tantance payee ya daina zama samfuri ranar da ya zama wajibi.** Tun 9 ga Oktoba 2025, kowane mai bayar da sabis na biyan kuɗi a ƙasashe membobi na yankin Euro dole ne ya bayar da Verification of Payee kan credit transfer, kyauta, ƙarƙashin Regulation (EU) 2024/886. Dubawar kanta ba ta da wahala: kwatanta suna da sunan da ke kan asusu sannan a amsa. Abin da ya yi wahala shi ne duk abin da ke kewaye da ita — kasafin amsa na daƙiƙa biyar, amsa ta tsakiya wadda ba eh ba ce kuma ba a'a ba, fayilolin kamfanoni da dole a wargaza su kafin a duba su, da iyakar alhakin da ka'idar da rulebook ɗin tsarin suka ƙi zana.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Instant Payments Regulation ta mai da tantance payee daga abin bambanta kai zuwa aikin yau da kullum da kowane PSP na yankin Euro dole ne ya gudanar ba tare da caji ba, kan credit transfer na yau da kullum kamar yadda take kan na gaggawa. Bayan watanni tara, farashin injiniya bai sauka kan algorithm ɗin daidaitawa ba. Ya sauka kan amsar "close match", kan wargaza fayilolin biyan kuɗi na kamfanoni zuwa buƙatu na kowane layi cikin ambulan daƙiƙa biyar, da kuma kan gaskiyar cewa gargaɗin da aka bayar sannan aka yi masa override yana sake rarraba asara ta hanyar da babu wanda ya sanya mata farashi.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan da za a ɗauka</strong></p>
 <ul class="post-lead-takeaways">

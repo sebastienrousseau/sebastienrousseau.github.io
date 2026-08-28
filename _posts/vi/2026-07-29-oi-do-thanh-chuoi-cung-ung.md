@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Tóm tắt bài viết">
 <p class="post-lead-tldr"><strong>Tóm tắt.</strong> Chế độ TLPT của DORA chuyển kiểm thử đội đỏ từ một bài tập an ninh tùy nghi thành nghĩa vụ chịu giám sát và phải tạo ra bằng chứng, theo chu kỳ ba năm, đối với các tổ chức do cơ quan có thẩm quyền chỉ định. Ràng buộc thắt chặt không nằm ở kỹ thuật. Nó nằm ở phía cung: Article 27 yêu cầu đơn vị kiểm thử được công nhận hoặc tuân thủ bộ quy tắc chính thức, có báo cáo đảm bảo độc lập và bảo hiểm trách nhiệm nghề nghiệp; cho phép đội đỏ nội bộ thực hiện tối đa hai trong mỗi ba chu kỳ; và buộc nhà cung cấp tình báo mối đe dọa phải từ bên ngoài trong mọi lần. Chức năng trọng yếu chạy trên nhà cung cấp bên thứ ba sẽ kéo chính các nhà cung cấp đó vào bài kiểm thử.</p>
 <p class="post-lead-heading"><strong>Những điểm chính</strong></p>
 <ul class="post-lead-takeaways">

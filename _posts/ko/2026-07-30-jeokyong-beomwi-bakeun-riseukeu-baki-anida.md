@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="기사 요약">
 <p class="post-lead-tldr"><strong>요약.</strong> 2026년 4월 17일 개정된 모델 리스크 감독 지침(SR 26-2 / OCC Bulletin 2026-13)은 2011년 프레임워크를 대체하면서 생성형 AI와 에이전틱 AI를 명시적으로 제외했고, 의견 수렴을 예고했습니다. 이 제외는 <em>이 지침</em>의 적용 범위에 관한 결정일 뿐 감독상의 면죄부가 아닙니다. 같은 모델은 여전히 제3자 리스크, 운영 리스크, 소비자 보호, 공정 대출 안에 놓여 있습니다. 한편 영국의 SS1/23은 기술 중립적이며 그 모델들을 계속 범위 안으로 끌어들입니다. 그룹 은행은 이제 하나의 모델을 두 개의 답으로 운영하게 되었고, 정직한 대응은 둘 중 더 엄격한 쪽에 맞추어 통제하는 것입니다.</p>
 <p class="post-lead-heading"><strong>핵심 요점</strong></p>
 <ul class="post-lead-takeaways">

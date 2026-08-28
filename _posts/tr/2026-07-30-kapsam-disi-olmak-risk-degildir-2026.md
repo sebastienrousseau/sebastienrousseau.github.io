@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Makale özeti">
 <p class="post-lead-tldr"><strong>Özet.</strong> 17 Nisan 2026 tarihli revize model riski denetim rehberi (SR 26-2 / OCC Bulletin 2026-13) 2011 çerçevesinin yerini alıyor ve üretken ile ajanlı yapay zekâyı açıkça kapsam dışında tutuyor; bir görüş çağrısı vaat ediliyor. Bu dışarıda bırakma, <em>bu</em> denetim rehberine ilişkin bir kapsam kararıdır, denetimsel bir muafiyet değil: aynı model hâlâ üçüncü taraf riski, operasyonel risk, tüketicinin korunması ve adil kredilendirme içinde duruyor. Bu sırada Birleşik Krallık'ın SS1/23 beyanı teknolojiden bağımsız ve aynı modelleri kapsamaya devam ediyor. Bir grup bankası artık tek bir modeli iki farklı cevapla yönetiyor ve dürüst karşılık, ikisinin daha katı olanına göre yönetmek.</p>
 <p class="post-lead-heading"><strong>Öne çıkan sonuçlar</strong></p>
 <ul class="post-lead-takeaways">

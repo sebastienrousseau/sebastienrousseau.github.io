@@ -89,7 +89,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="लेख सारांश">
 <p class="post-lead-tldr"><strong>संक्षेप में।</strong> 25 मई 2026 को पोप लियो XIV ने <em>Magnifica Humanitas</em> जारी किया — AI पर पहला पोप विश्वपत्र। प्रौद्योगिकी उद्योग के भीतर से इसे सिद्धांत के बजाय एक नैतिक ढाँचे के रूप में पढ़ने पर, यह उन सभी नैतिक चिंताओं की प्रतिध्वनि है जो रेलगाड़ी, मोटरकार, परमाणु शक्ति और इंटरनेट के साथ आईं — और ईमानदारी से, आशा पर आकर ठहरता है।</p>
 <p class="post-lead-heading"><strong>मुख्य निष्कर्ष</strong></p>
 <ul class="post-lead-takeaways">

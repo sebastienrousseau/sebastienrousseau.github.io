@@ -99,7 +99,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> HSH nlo awọn ipilẹ cryptographic ti o tako quantum lati daabobo data rẹ, ni idaniloju aabo rẹ paapaa ni oju awọn ilọsiwaju iṣiro quantum ti ọjọ iwaju.</p>
 <p class="post-lead-heading"><strong>Awọn koko pataki</strong></p>
 <ul class="post-lead-takeaways">
@@ -241,7 +241,7 @@ Ti o ba ni awọn ibeere eyikeyi, jọwọ mase ṣiyemeji lati kan si mi nipas�
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau lori LinkedIn"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa onkọ̀wé"><img alt="Àwòrán Portrait ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onimọ-ẹrọ ile-ifowopamọ giga ti o kọ nipa applied AI, iṣilọ ISO 20022, post-quantum cryptography fun awọn iṣekẹ eto inawo, ati iyipada igbekalẹ ti awọn sisanwo osunwon.</span><span class="author-credentials">20+ ọdun kọja HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaili ni kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Portrait ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onimọ-ẹrọ ile-ifowopamọ giga ti o kọ nipa applied AI, iṣilọ ISO 20022, post-quantum cryptography fun awọn iṣekẹ eto inawo, ati iyipada igbekalẹ ti awọn sisanwo osunwon.</span><span class="author-credentials">20+ ọdun kọja HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaili ni kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Atunyẹwo to kẹhin <time datetime="2026-06-23">2026-06-23</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Kika to jọmọ</h2>

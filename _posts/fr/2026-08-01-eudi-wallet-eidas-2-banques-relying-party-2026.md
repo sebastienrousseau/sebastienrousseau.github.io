@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Résumé de l'article">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Le Regulation (EU) 2024/1183 a réécrit eIDAS. Deux dates comptent : au <strong>24 décembre 2026</strong>, chaque État membre doit fournir au moins un portefeuille européen d'identité numérique, et au <strong>24 décembre 2027</strong>, les grandes et moyennes parties utilisatrices des secteurs listés — banque et services financiers en font partie — doivent l'accepter pour l'authentification forte de l'utilisateur lorsqu'un utilisateur le demande. Le rôle de la banque passe d'émetteur d'attestations à partie utilisatrice enregistrée, et l'enregistrement est une condition juridique préalable, pas une condition technique. L'ingénierie n'a rien de remarquable. Les conséquences en matière de gouvernance, de responsabilité et de vérification d'identité, si.</p>
 <p class="post-lead-heading"><strong>Points clés</strong></p>
 <ul class="post-lead-takeaways">

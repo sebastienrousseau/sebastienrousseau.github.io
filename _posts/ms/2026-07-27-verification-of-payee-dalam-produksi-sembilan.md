@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Pengesahan penerima bayaran berhenti menjadi produk pada hari ia menjadi kewajipan.** Sejak 9 Oktober 2025, setiap penyedia perkhidmatan pembayaran di Negara Anggota zon euro wajib menawarkan Verification of Payee ke atas pindahan kredit, tanpa caj, di bawah Regulation (EU) 2024/886. Semakan itu sendiri tidak sukar: bandingkan satu nama dengan nama yang tercatat pada akaun, kemudian jawab. Yang terbukti sukar ialah segala-galanya di sekelilingnya — bajet respons lima saat, satu jawapan tengah yang bukan ya dan bukan tidak, fail korporat yang mesti dileraikan sebelum boleh disemak, dan sempadan liabiliti yang enggan ditetapkan oleh peraturan mahupun buku peraturan skim.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Ringkasan artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Instant Payments Regulation menukar pengesahan penerima bayaran daripada pembeza kepada utiliti yang wajib dijalankan setiap PSP zon euro tanpa caj, ke atas pindahan kredit standard dan juga segera. Sembilan bulan berlalu, kos kejuruteraan tidak jatuh pada algoritma padanan. Ia jatuh pada respons "padanan hampir", pada kerja menyahpukal fail pembayaran korporat menjadi permintaan setiap baris dalam sampul lima saat, dan pada hakikat bahawa amaran yang disampaikan lalu diabaikan mengagihkan semula kerugian dengan cara yang tidak pernah dihargakan sesiapa.</p>
 <p class="post-lead-heading"><strong>Intipati utama</strong></p>
 <ul class="post-lead-takeaways">

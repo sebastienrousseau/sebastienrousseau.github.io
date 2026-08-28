@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # 2026 智能体司库：从自治司库指数到生产级副驾
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>速览。</strong>2026 年，智能体司库副驾正从受控试点迈入生产。CIB 司库的模式保持一致：智能体读取 ISO 20022 现金数据、调用有边界的工具，并在政策带内再平衡流动性——外围嵌入 SR 11-7、DORA 与 EU AI Act 控制。</p>
 <p class="post-lead-heading"><strong>核心要点</strong></p>
 <ul class="post-lead-takeaways">
@@ -183,6 +183,6 @@ site_software: "Static Site Generator, Rust"
 上游脉络见 [自治司库指数](https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/ "The Autonomous Treasury Index 2026")，治理框架见 [银行业智能体 AI 指数](https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/ "The Agentic AI Index for Banks 2026")。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行业技术专家，长期撰写应用 AI、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付的结构性转型。</span><span class="author-credentials">在 HSBC 商业及投资银行、PayPal、Barclays、Shazam、AKQA、Virgin Group 累计超过 20 年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行业技术专家，长期撰写应用 AI、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付的结构性转型。</span><span class="author-credentials">在 HSBC 商业及投资银行、PayPal、Barclays、Shazam、AKQA、Virgin Group 累计超过 20 年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最近复核 <time datetime="2026-06-27">2026-06-27</time>。</p>
 <!-- enrich-end -->

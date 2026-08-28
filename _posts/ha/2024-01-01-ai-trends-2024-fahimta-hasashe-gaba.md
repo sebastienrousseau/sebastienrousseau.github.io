@@ -109,7 +109,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Abubuwan da suka fi muhimmanci na AI na 2024: generative AI a harkar kuɗi, ƙirar multimodal, LLMs na na'ura, da sauye-sauyen da za su sake fasalin banki da injiniyancin kayayyaki.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan lura</strong></p>
 <ul class="post-lead-takeaways">

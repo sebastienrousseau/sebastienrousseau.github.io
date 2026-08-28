@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # De Autonome Treasury-Index in 2026: agentische treasury, programmeerbare liquiditeit, getokeniseerde deposito's en realtime cash control
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Samenvatting artikel">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Een autonome treasury-index 2026 — meting van agentische workflows, dekking van programmeerbare liquiditeit, integratie van getokeniseerde deposito's, orkestratie van realtime betalingen en geautomatiseerde cash control als één operating-model.</p>
 <p class="post-lead-heading"><strong>Belangrijkste punten</strong></p>
 <ul class="post-lead-takeaways">

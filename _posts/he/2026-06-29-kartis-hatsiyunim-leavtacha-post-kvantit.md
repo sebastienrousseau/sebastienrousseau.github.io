@@ -87,7 +87,7 @@ webmaster: "contact@sebastienrousseau.com"
 
 # כרטיס הציונים לאבטחה פוסט-קוונטית 2026: מסגרת מדדים ברמת הדירקטוריון לזריזות קריפטוגרפית נאמנותית
 
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="תקציר המאמר">
 <p class="post-lead-tldr"><strong>תקציר.</strong> נכון ליוני 2026, קריפטוגרפיה פוסט-קוונטית (PQC) עברה מדאגה טכנית ניסיונית לחובה נאמנותית ראשית. דירקטוריונים חייבים כעת לפקח על ההגירה השיטתית של הצפנה מדור קודם לתקני NIST FIPS 203 ו-204, כדי להפחית סיכונים פיננסיים ותפעוליים מערכתיים תחת DORA.</p>
 <p class="post-lead-heading"><strong>נקודות עיקריות</strong></p>
 <ul class="post-lead-takeaways">
@@ -167,5 +167,5 @@ graph TD
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026 "KyberLib וההגירה הבנקאית הפוסט-קוונטית") ובני זמנו הופכים זאת מכתיבה מחדש של פלטפורמה רב-שנתית לשינוי תצורה. תפקיד הדירקטוריון אינו לכתוב את הקוד. תפקיד הדירקטוריון הוא לדרוש שמדד מוכנות הזריזות הקריפטוגרפית — שיעור אפליקציות הליבה מאחורי ממשק קריפטוגרפי מופשט — יחצה את ה-85% תוך שנים-עשר חודשים, ולקרוא את כרטיס הציונים הרבעוני.
 
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">טכנולוג בנקאות בכיר הכותב על AI יישומי, הגירה ל-ISO 20022, קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים והטרנספורמציה המבנית של תשלומים סיטוניים.</span><span class="author-credentials">למעלה מ-20 שנה ב-HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="אודות הכותב"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">טכנולוג בנקאות בכיר הכותב על AI יישומי, הגירה ל-ISO 20022, קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים והטרנספורמציה המבנית של תשלומים סיטוניים.</span><span class="author-credentials">למעלה מ-20 שנה ב-HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">נסקר לאחרונה <time datetime="2026-06-29">2026-06-29</time>.</p>

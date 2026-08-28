@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="기사 요약">
 <p class="post-lead-tldr"><strong>요약.</strong> FiDA는 엔드포인트가 늘어난 PSD2가 아닙니다. 세 가지 구조적 단절이 규제 준수의 의미 자체를 바꿉니다. 접근은 혼자 만드는 인터페이스가 아니라 반드시 가입해야 하는 체계가 규율합니다. 데이터 보유자는 합리적 보상을 요구할 수 있으므로, 접근은 무상 의무가 아니라 값이 매겨진 상품이 됩니다. 그리고 적용 범위는 주택담보대출, 예금, 투자, 연금, 손해보험까지, 즉 은행이 실제로 수익을 내는 상품까지 미칩니다. 문안은 아직 3자 협의(트릴로그) 단계에 있지만, 표준을 규정하게 될 체계는 지금 설계되고 있으며 협상력이 놓인 지점도 바로 그곳입니다.</p>
 <p class="post-lead-heading"><strong>핵심 시사점</strong></p>
 <ul class="post-lead-takeaways">

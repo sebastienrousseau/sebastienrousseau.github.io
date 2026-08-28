@@ -14,7 +14,7 @@ keywords: "LLM multimodal, binciken MM1, ci gaban AI, dabarun pre-training, gane
 ![Tutar Apple MM1](https://cloudcdn.pro/stocks/images/mm1-visual.webp).class="img-fluid clearfix"
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Takaitaccen labari">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>Takaitawa.</strong> MM1 ya nuna yadda Apple ya gina model da ke haɗa fahimtar hoto da harshe. Darasin injiniya shi ne: cakuda bayanai, resolution na hoto, image encoder, da vision-language connector su ne ke ɗaukar nauyin inganci.</p>
 <p class="post-lead-heading"><strong>Mahimman darussa</strong></p>
 <ul class="post-lead-takeaways">

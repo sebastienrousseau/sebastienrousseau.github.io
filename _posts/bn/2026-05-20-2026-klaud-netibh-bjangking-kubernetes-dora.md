@@ -89,7 +89,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সারসংক্ষেপ।</strong> ২০২৬-এ ক্লাউড-নেটিভ ব্যাংকিং মানে Kubernetes-ভিত্তিক প্ল্যাটফর্ম ইঞ্জিনিয়ারিং, DORA (Digital Operational Resilience Act)-এর জন্য প্রস্তুত পরিচালনাগত স্থিতিস্থাপকতা, ভার্চুয়াল মেশিন (VM) ও কন্টেইনার অভিসরণ, ক্লাউড সার্বভৌমত্ব, AI/ML (Artificial Intelligence/Machine Learning) ওয়ার্কলোড স্থাপনা, ডেটা পোর্টেবিলিটি এবং প্রমাণ যে গুরুত্বপূর্ণ আর্থিক পরিষেবাগুলি সরবরাহকারীর বিঘ্নের পরেও টিকে থাকতে পারে।</p>
 <p class="post-lead-heading"><strong>মূল উপলব্ধি</strong></p>
 <ul class="post-lead-takeaways">

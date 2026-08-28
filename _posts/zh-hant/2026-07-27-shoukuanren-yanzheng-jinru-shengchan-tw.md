@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **收款人驗證在成為義務的那一天，就不再是產品。** 自 2025 年 10 月 9 日起，歐元區會員國的每一家支付服務提供者都必須依 Regulation (EU) 2024/886 對匯款免費提供收款人驗證（Verification of Payee，VoP）。查核本身不難：拿一個名稱去比對帳戶上登載的名稱，然後回答。難的是圍繞在它周邊的一切——五秒的回應預算、一個既不是「是」也不是「否」的中間答案、必須先拆開才能查核的企業檔案，以及法規與方案規則手冊雙雙拒絕劃定的責任界線。
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>摘要重點。</strong> 即時支付法規把收款人驗證從差異化賣點轉為公用設施：每一家歐元區 PSP 都必須免費營運，且適用範圍涵蓋一般匯款而不只是即時匯款。上線九個月，工程成本並未落在比對演算法上，而是落在「近似相符」這個回應、落在把企業支付檔案拆解成逐筆請求並塞進五秒信封裡，以及落在一個現實：警告發出後被忽略繼續執行，會以無人定價的方式重新分配損失。</p>
 <p class="post-lead-heading"><strong>核心要點</strong></p>
 <ul class="post-lead-takeaways">

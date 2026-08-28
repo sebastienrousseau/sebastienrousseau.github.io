@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # المدفوعات الوكيلة في المصارف: الموافقة والمسؤولية وتجربة الدفع الجديدة 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="ملخّص المقال">
+<aside class="post-lead" aria-label="ملخص المقال">
 <p class="post-lead-tldr"><strong>الخلاصة.</strong> لم تعد المدفوعات الوكيلة (agentic payments) في 2026 مفهوماً نظرياً: أجرت Mastercard وRabobank معاملة حية في هولندا بدأ فيها وكيل ذكاء اصطناعي (AI agent) عملية الدفع عبر Mastercard Agent Pay دون لمس بيانات البطاقة. تظهر التفويضات التشفيرية على نسق AP2 وبروتوكولات x402 وA2A وMCP وMPP طبقةً بروتوكوليةً ناشئة، بينما لم يُحدَّث EFTA وRegulation E وقانون خدمات الدفع البريطاني بعدُ لمعاملات الوكلاء المستقلين. تحتاج البنوك الآن إلى معمارية موافقة + هوية + مسؤولية تُنتج دليل ما قبل التسوية — لا دفاعاً ارتجاعياً عن النزاعات.</p>
 <p class="post-lead-heading"><strong>أبرز النقاط</strong></p>
 <ul class="post-lead-takeaways">
@@ -203,6 +203,6 @@ site_software: "Static Site Generator, Rust"
 - J.P. Morgan، (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="نبذة عن المؤلف"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والبنية التحتية للمدفوعات، والنقد المُرمَّز، وISO 20022، والأمن ما بعد الكمومي، والخدمات المالية السحابية الأصل، والأسواق الرقمية المُنظَّمة.</span><span class="author-credentials">أكثر من 20 عاماً من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="صورة شخصية لسيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">سيباستيان روسو</a></strong><span class="author-card-bio">تقني مصرفي أول يكتب عن الذكاء الاصطناعي التطبيقي، والبنية التحتية للمدفوعات، والنقد المُرمَّز، وISO 20022، والأمن ما بعد الكمومي، والخدمات المالية السحابية الأصل، والأسواق الرقمية المُنظَّمة.</span><span class="author-credentials">أكثر من 20 عاماً من الخبرة لدى HSBC للخدمات المصرفية التجارية والاستثمارية، وPayPal، وBarclays، وShazam، وAKQA، ومجموعة Virgin. <a href="/about/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">آخر مراجعة <time datetime="2026-05-23">2026-05-23</time>.</p>
 <!-- enrich-end -->

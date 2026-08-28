@@ -96,7 +96,7 @@ twitter_image_alt: "Hoton Sebastien Rousseau a baki da fari"
 # Tabbatar da Sarrafa Password a Banki na Kamfanoni: Hashing Mai Algorithms da yawa da Haɓakawa tare da hsh
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Taƙaitawar labari">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>Taƙaice.</strong> <a href="https://github.com/sebastienrousseau/hsh">hsh</a> tari ne na open-source, pure-Rust na cryptography da ke ba bankunan matakin koli damar ƙaurar tsoffin hashes na password zuwa ma'auni na zamani kamar Argon2id ba tare da katsewar sabis ba. Ta hanyar haɗa peppering da HSM ke goyon baya da aiwatar da tsauraran aminci na ƙwaƙwalwa ba tare da C-based FFI wrappers ba, yana rufe raunin ruɓewar cryptography da kai tsaye ke barazana ga biyayya ga DORA da Basel III.</p>
 <p class="post-lead-heading"><strong>Manyan abubuwan ɗauka</strong></p>
 <ul class="post-lead-takeaways">

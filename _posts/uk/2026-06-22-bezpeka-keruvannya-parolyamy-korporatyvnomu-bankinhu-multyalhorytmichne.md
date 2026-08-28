@@ -96,7 +96,7 @@ twitter_image_alt: "Чорно-білий портрет Себастьяна Р
 # Безпека керування паролями в корпоративному банкінгу: мультиалгоритмічне хешування та апгрейди з hsh
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Резюме статті">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>Стисло.</strong> <a href="https://github.com/sebastienrousseau/hsh">hsh</a> — це опенсорсний, чистий на Rust криптографічний фреймворк, що дозволяє Tier-1 банкам мігрувати застарілі хеші паролів до сучасних стандартів, як-от Argon2id, без жодної перерви в обслуговуванні. Інтегруючи HSM-перчинку та застосовуючи сувору безпеку пам'яті без C-FFI обгорток, він закриває вразливості криптографічної корозії, що напряму загрожують відповідності DORA та Basel III.</p>
 <p class="post-lead-heading"><strong>Ключові висновки</strong></p>
 <ul class="post-lead-takeaways">

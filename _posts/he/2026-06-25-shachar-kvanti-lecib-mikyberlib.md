@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # שחר קוונטי ל-CIB: מ-KyberLib לערימת תשלומים עמידה קוונטית
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="תקציר המאמר">
 <p class="post-lead-tldr"><strong>תקציר.</strong> BIS Quantum Dawn ומפת הדרכים PQC של G7 Cyber Expert Group מינואר 2026 הוציאו את הקריפטוגרפיה הפוסט-קוונטית מתחום המחקר אל סדר היום של דירקטוריון הבנקאות התאגידית וההשקעות (CIB). KyberLib מעניק לבנקים נקודת התחלה ניתנת לבדיקה של ML-KEM ו-ML-DSA; העבודה שנותרה היא תוכנית מעבר רב-שנתית וזריזה קריפטוגרפית על פני תשלומים, מימון סחר, משמורת וגילוי.</p>
 <p class="post-lead-heading"><strong>תובנות מפתח</strong></p>
 <ul class="post-lead-takeaways">
@@ -171,6 +171,6 @@ KyberLib מוכיח את הפרימיטיבים ב-`Rust` טהור. נתיב ה�
 התחילו עם ה-CBOM. עטפו כל פרימיטיב. הגרו את הזנבות הארוכים ביותר ראשונים. חתמו את שמכם על זה.
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="פורטרט של Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על AI יישומי, הגירת ISO 20022, קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים והטרנספורמציה המבנית של תשלומים סיטונאיים.</span><span class="author-credentials">20+ שנים על פני HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="אודות הכותב"><img alt="פורטרט של Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">טכנולוג בנקאי בכיר הכותב על AI יישומי, הגירת ISO 20022, קריפטוגרפיה פוסט-קוונטית לשירותים פיננסיים והטרנספורמציה המבנית של תשלומים סיטונאיים.</span><span class="author-credentials">20+ שנים על פני HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">נסקר לאחרונה <time datetime="2026-06-25">2026-06-25</time>.</p>
 <!-- enrich-end -->

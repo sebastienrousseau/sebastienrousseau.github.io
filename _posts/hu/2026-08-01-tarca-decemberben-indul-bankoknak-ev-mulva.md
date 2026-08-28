@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="A cikk összefoglalója">
 <p class="post-lead-tldr"><strong>Röviden.</strong> A Regulation (EU) 2024/1183 újraírta az eIDAS-t. Két dátum számít: <strong>2026. december 24-ig</strong> minden tagállamnak biztosítania kell legalább egy európai digitális személyazonossági tárcát, <strong>2027. december 24-ig</strong> pedig a felsorolt ágazatok nagy- és középméretű támaszkodó feleinek — köztük a bankoknak és a pénzügyi szolgáltatóknak — el kell fogadniuk azt erős felhasználó-hitelesítésre, ha a felhasználó ezt kéri. A bank szerepe az azonosító igazolás kibocsátójából nyilvántartásba vett támaszkodó féllé válik, a regisztráció pedig jogi előfeltétel, nem technikai. A mérnöki munka nem különösebben érdekes. A kormányzási, felelősségi és személyazonosság-ellenőrzési következmények annál inkább.</p>
 <p class="post-lead-heading"><strong>Fő tanulságok</strong></p>
 <ul class="post-lead-takeaways">

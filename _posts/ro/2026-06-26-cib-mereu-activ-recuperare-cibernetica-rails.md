@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # CIB mereu activ: recuperare cibernetică, rails de rezervă și trezorerie rezistentă cuantic
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Rezumat articol">
+<aside class="post-lead" aria-label="Rezumatul articolului">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Banca corporativă și de investiții în 2026 este judecată după comportamentul mereu activ în timpul unui eveniment cibernetic. Seifurile de recuperare cibernetică, rails de rezervă ISO 20022 pe RTGS, instant și rețele tokenizate, plus controalele de trezorerie rezistente cuantic, stau acum pe o singură diagramă de operare — iar consiliul o semnează.</p>
 <p class="post-lead-heading"><strong>Concluzii principale</strong></p>
 <ul class="post-lead-takeaways">

@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # 2026 年のポスト量子バンキング・レジリエンス指数: EO 14409、世界的期限、そして受託者としての暗号アジリティ
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>要点。</strong> ポスト量子暗号（PQC）への移行は、もはや後戻りのできない地点を越えました。米国の Executive Order 14409 が 2026 年 6 月 22 日に署名され、フランスの ANSSI が確固たる 2030 年期限を設定し、非 PQC 製品の認証は 2027 年に停止します。暗号アジリティ（暗号アジリティ）はもはや技術的な願望ではなく、規制上の義務です。本指数は、その義務を 5 つの監査可能なレイヤーにわたる取締役会向けの 0〜5 スコアカードへと変えます。</p>
 <p class="post-lead-heading"><strong>主要なポイント</strong></p>
 <ul class="post-lead-takeaways">
@@ -211,6 +211,6 @@ SNDL とは、暗号化されたトラフィックを今日傍受しアーカイ
 - [BIS Project Leap — 金融システムの量子耐性化](https://www.bis.org/about/bisih/topics/cyber_security/leap.htm "BIS イノベーション・ハブ — Project Leap、中央銀行およびインターバンク決済システムの量子耐性化")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="セバスチャン・ルソーのポートレート" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、ホールセール決済の構造的転換を執筆するシニアバンキングテクノロジスト。</span><span class="author-credentials">HSBC コマーシャル・インベストメントバンク、PayPal、Barclays、Shazam、AKQA、Virgin Group を横断する 20 年以上の経験。<a href="/about/index.html">プロフィール全文</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="著者について"><img alt="セバスチャン・ルソーのポートレート" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、ホールセール決済の構造的転換を執筆するシニアバンキングテクノロジスト。</span><span class="author-credentials">HSBC コマーシャル・インベストメントバンク、PayPal、Barclays、Shazam、AKQA、Virgin Group を横断する 20 年以上の経験。<a href="/about/index.html">プロフィール全文</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最終レビュー <time datetime="2026-06-26">2026-06-26</time>。</p>
 <!-- enrich-end -->

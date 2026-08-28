@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Digitala tillgångar 2026: infrastrukturövergången bankerna inte kan skjuta upp
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Sammanfattning av artikeln">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>Sammanfattning.</strong> Digitala tillgångar är inte längre en innovationssatsning — de är en arkitekturfråga för avveckling, förvaring och balansräkning. Krypto är en tillgångsklass på ~3 biljoner dollar, stablecoins ~300 miljarder dollar, tokeniserade RWA växte ~300 % under 2025. Bankernas uppgift 2026 är infrastrukturdesign under strukturell osäkerhet.</p>
 <p class="post-lead-heading"><strong>Viktiga slutsatser</strong></p>
 <ul class="post-lead-takeaways">

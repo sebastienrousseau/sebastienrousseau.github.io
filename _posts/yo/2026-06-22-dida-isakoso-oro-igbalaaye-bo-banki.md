@@ -96,7 +96,7 @@ twitter_image_alt: "Àwòrán Aláwọ̀ Dúdú àti Funfun ti Sebastien Roussea
 # Dída Ìṣàkóso Ọ̀rọ̀-ìgbàláàyè Bo ní Báńkì Ilé-iṣẹ́: Hashing Aláwọ̀n-méjì àti Àwọn Ìgbéga pẹ̀lú hsh
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Ìsọnísókí àròkọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> <a href="https://github.com/sebastienrousseau/hsh">hsh</a> jẹ́ ìpilẹ̀ cryptographic open-source, Rust mímọ́ tó ń jẹ́ kí àwọn báńkì tier-1 ṣíkiri àwọn hash ọ̀rọ̀-ìgbàláàyè ìbílẹ̀ sí àwọn àpẹẹrẹ òde-òní bíi Argon2id láìní ìfáfá iṣẹ́ kankan. Nípa dída peppering tí HSM ń tì lẹ́yìn mọ́ àti fífipá-mu ààbò ìrántí muna láìní àwọn ìwé-ọ̀rọ̀ FFI ti C, ó ń pa àwọn àìlera ìbàjẹ́ cryptographic tó ń lewu DORA àti ìtẹ́lọ́rùn Basel III tààrà.</p>
 <p class="post-lead-heading"><strong>Àwọn àyọkà pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
@@ -336,6 +336,6 @@ National Institute of Standards and Technology (2024). *Initial Public Draft —
 OWASP Foundation (2024). *Password Storage Cheat Sheet*. Wà ní: [https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html "OWASP Password Storage Cheat Sheet")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa onkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ báńkì àgbà tó ń kọ̀wé lórí AI tó ṣiṣẹ́, ìṣíkiri ISO 20022, cryptography lẹ́yìn-quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ètò àwọn ìsanwó wholesale.</span><span class="author-credentials">Ó ti lé ní ọdún 20 kọjá HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ báńkì àgbà tó ń kọ̀wé lórí AI tó ṣiṣẹ́, ìṣíkiri ISO 20022, cryptography lẹ́yìn-quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ètò àwọn ìsanwó wholesale.</span><span class="author-credentials">Ó ti lé ní ọdún 20 kọjá HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Tí a yẹ̀wò gbẹ̀yìn <time datetime="2026-06-22">2026-06-22</time>.</p>
 <!-- enrich-end -->

@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Agentic AI-index voor banken 2026: autonomie, governance, auditeerbaarheid en bedrijfsimpact
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Een blauwdruk om agentic AI-volwassenheid bij Tier-1-banken te meten langs zes dimensies: autonomieniveau, API-permissionering, deterministische vangrails, dekking van human-in-the-loop, volledigheid van het auditlog en unit economics. Classificeer agents op wat zij mogen doen, niet op hoe slim het onderliggende model is. Behandel elke productie-agent vanaf dag één als een SR 11-7- / SS1/23-model.</p>
 <p class="post-lead-heading"><strong>Kernpunten</strong></p>
 <ul class="post-lead-takeaways">

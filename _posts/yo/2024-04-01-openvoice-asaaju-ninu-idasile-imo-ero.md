@@ -93,7 +93,7 @@ webmaster: "contact@sebastienrousseau.com"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Ìbáwíwọ̀ àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> OpenVoice láti MIT, Tsinghua àti MyShell ń pèsè ìdàkọ ohùn ipele-ìṣejáde pẹ̀lú ìdarí ohùn orin, àkópọ̀ ohùn àti ẹ̀dùn ọkàn tí ó kójá sẹ́ńtíìlì — àti àwọn àbájáde tí ó yẹ láti mọ̀.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
@@ -208,7 +208,7 @@ OpenVoice jẹ́ àmì pàtàkì nínú ìdàgbàsókè ti ìmọ̀-ẹ̀rọ ì
 [04]: https://www.tsinghua.edu.cn/en/ "Tsinghua University"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa olùkọ̀wé"><img alt="Àwòrán ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist tí ó ń kọ̀wé lórí applied AI, ISO 20022 migration, ìsirò ìpamọ́ lẹ́yìn quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ìmúṣe ti wholesale payments.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Ìwé kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist tí ó ń kọ̀wé lórí applied AI, ISO 20022 migration, ìsirò ìpamọ́ lẹ́yìn quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ìmúṣe ti wholesale payments.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Ìwé kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àtúnyẹ̀wò kẹyìn <time datetime="2026-06-23">2026-06-23</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Ìwé kíkà tí ó tan mọ́ ọn</h2>

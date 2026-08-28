@@ -103,7 +103,7 @@ site_software: "Static Site Generator, Rust"
 # Przekształcanie Markdown w dostępny, zoptymalizowany pod SEO i ustrukturyzowany HTML z Rust w 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Podsumowanie artykułu">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> HTML Generator to czysty kompilator Markdown-to-HTML napisany w Rust, który wymusza WCAG 2.1 AA na etapie kompilacji, wstrzykuje zgodny ze schematem JSON-LD, natywnie renderuje MathML i Mermaid SVG oraz izoluje parsowanie wewnątrz sandboxa WebAssembly — przekształcając publikowanie w bramkowaną kompilacją płaszczyznę kontroli dla dostępności, SEO i bezpieczeństwa ICT.</p>
 <p class="post-lead-heading"><strong>Kluczowe wnioski</strong></p>
 <ul class="post-lead-takeaways">

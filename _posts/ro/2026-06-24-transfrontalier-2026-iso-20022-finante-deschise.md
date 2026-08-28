@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Transfrontalier 2026: ISO 20022, finanțe deschise și depozite tokenizate în trezoreria corporativă
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Rezumat articol">
+<aside class="post-lead" aria-label="Rezumatul articolului">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Trezoreria corporativă transfrontalieră în 2026 funcționează pe patru șine în paralel — SWIFT CBPR+, A2A instant sub PSD3/FiDA, depozite tokenizate și șine de stablecoin — cusute împreună de ISO 20022 ca gramatică comună. Munca pentru echipele CIB și de trezorerie corporativă este orchestrarea, nu selecția șinei.</p>
 <p class="post-lead-heading"><strong>Concluzii principale</strong></p>
 <ul class="post-lead-takeaways">

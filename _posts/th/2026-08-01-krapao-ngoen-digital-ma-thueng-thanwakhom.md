@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="สรุปบทความ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Regulation (EU) 2024/1183 เขียน eIDAS ใหม่ มีสองวันที่สำคัญ ภายใน <strong>24 ธันวาคม 2026</strong> รัฐสมาชิกแต่ละประเทศต้องจัดให้มี European Digital Identity Wallet อย่างน้อยหนึ่งราย และภายใน <strong>24 ธันวาคม 2027</strong> ฝ่ายที่เชื่อถือขนาดใหญ่และขนาดกลางในภาคธุรกิจที่ระบุไว้ ซึ่งรวมถึงธนาคารและบริการทางการเงิน ต้องยอมรับกระเป๋าเงินดิจิทัลเพื่อการยืนยันตัวตนผู้ใช้ที่เข้มงวดเมื่อผู้ใช้ร้องขอ บทบาทของธนาคารเปลี่ยนจากผู้ออกหลักฐานยืนยันตัวตนไปเป็นฝ่ายที่เชื่อถือซึ่งขึ้นทะเบียนแล้ว และการขึ้นทะเบียนคือเงื่อนไขทางกฎหมาย ไม่ใช่เงื่อนไขทางเทคนิค งานวิศวกรรมนั้นธรรมดา ผลที่ตามมาด้านธรรมาภิบาล ความรับผิด และการพิสูจน์ตัวตนนั้นไม่ธรรมดา</p>
 <p class="post-lead-heading"><strong>ประเด็นสำคัญ</strong></p>
 <ul class="post-lead-takeaways">

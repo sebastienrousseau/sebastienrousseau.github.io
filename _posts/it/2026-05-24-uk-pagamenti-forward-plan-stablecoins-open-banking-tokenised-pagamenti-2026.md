@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # UK Payments Forward Plan 2026: stablecoin, open banking, depositi tokenizzati e pagamenti agentici
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Sommario dell'articolo">
+<aside class="post-lead" aria-label="Sintesi dell'articolo">
 <p class="post-lead-tldr"><strong>In sintesi.</strong> Il UK Payments Forward Plan e il pacchetto di policy di aprile 2026 definiscono un unico perimetro regolamentare per pagamenti tradizionali, stablecoin, depositi tokenizzati, open banking e pagamenti agentici. La questione strategica per le banche britanniche è passata da "quale prodotto lanciare" a "quale architettura orchestrare" — collegando policy, prodotto, dati, scelta dei binari, controlli di rischio e prove in un unico modello operativo che il regolatore possa supervisionare e che il cliente possa usare. Vincono le istituzioni che trattano le decisioni in tempo reale su frode, liquidità, compliance, regolamento e rischio operativo come un unico problema di design.</p>
 <p class="post-lead-heading"><strong>Punti chiave</strong></p>
 <ul class="post-lead-takeaways">

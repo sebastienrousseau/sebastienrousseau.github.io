@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="A cikk összefoglalója">
 <p class="post-lead-tldr"><strong>Röviden.</strong> A FiDA nem több végpontot jelentő PSD2. Három szerkezeti törés írja át a megfelelés jelentését: a hozzáférést egy rendszer szabályozza, amelybe be kell lépni, nem egy interfész, amelyet egyedül megépít; az adatbirtokos ésszerű díjazást kérhet, így a hozzáférés ingyenes kötelezettségből árazott termékké válik; a hatály pedig kiterjed a jelzáloghitelekre, a megtakarításokra, a befektetésekre, a nyugdíjakra és a nem-életbiztosításra — azokra a termékekre, amelyeken a bankok valóban keresnek. A szöveg még trilógusban van, de a szabványokat meghatározó rendszereket most tervezik, és a mozgástér ott van.</p>
 <p class="post-lead-heading"><strong>Legfontosabb tanulságok</strong></p>
 <ul class="post-lead-takeaways">

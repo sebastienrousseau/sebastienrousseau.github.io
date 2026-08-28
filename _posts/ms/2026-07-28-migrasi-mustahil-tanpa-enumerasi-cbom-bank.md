@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Ringkasan artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Tarikh akhir pasca-kuantum yang pertama ialah pengenalpastian dan inventori, bukan migrasi — NCSC menjangkakan gambaran lengkap kebergantungan kriptografi menjelang 2028, sebelum tonggak migrasi 2031 dan 2035. Bank tidak mampu menghasilkannya daripada daftar aset yang sudah diwajibkan oleh DORA, kerana daftar itu merekod pelayan, pemilik dan tahap kritikal tetapi bukan algoritma, panjang kunci, pustaka atau tarikh tamat tempoh sijil. Bil Bahan Kriptografi, yang kini sebahagian daripada CycloneDX dan dipiawaikan sebagai ECMA-424, ialah model data yang hilang itu. Menganggapnya sebagai hamparan PQC sekali sahaja dan bukan sebagai kawalan yang diselenggara ialah kesilapan yang akan meragut tonggak 2031.</p>
 <p class="post-lead-heading"><strong>Perkara utama</strong></p>
 <ul class="post-lead-takeaways">

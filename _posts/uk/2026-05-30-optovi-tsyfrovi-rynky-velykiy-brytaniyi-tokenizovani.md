@@ -91,7 +91,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Підсумок статті">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>Стисло.</strong> Велика Британія призначила Чемпіона оптових цифрових ринків (Wholesale Digital Markets Champion). Це не церемоніальна посада, а жорсткий координаційний шар між HM Treasury, FCA та Bank of England — роль, створена, щоб примусити приватний сектор до взаємосумісності всередині Digital Securities Sandbox (DSS). Токенізовані гілти закривають це питання першими: HQLA на DLT, атомарно проти токенізованої готівки, а внутрішньоденне репо — найближчий приз.</p>
 <p class="post-lead-heading"><strong>Ключові висновки</strong></p>
 <ul class="post-lead-takeaways">

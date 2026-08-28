@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Xác minh người thụ hưởng thôi là một sản phẩm kể từ ngày nó trở thành nghĩa vụ.** Từ ngày 9 tháng 10 năm 2025, mọi nhà cung cấp dịch vụ thanh toán tại một Quốc gia Thành viên khu vực đồng euro phải cung cấp Verification of Payee cho các giao dịch chuyển khoản có, miễn phí, theo Regulation (EU) 2024/886. Bản thân phép kiểm tra không khó: so tên được nhập với tên đang gắn với tài khoản rồi trả lời. Cái khó nằm ở tất cả những gì bao quanh nó — ngân sách phản hồi năm giây, một câu trả lời giữa chừng không phải có cũng không phải không, những tệp doanh nghiệp phải tháo rời trước khi kiểm tra được, và một ranh giới trách nhiệm mà cả quy định lẫn bộ quy tắc của scheme đều từ chối vạch ra.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Tóm tắt bài viết">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Instant Payments Regulation đã chuyển việc xác minh người thụ hưởng từ một yếu tố khác biệt hoá thành hạ tầng mà mọi PSP khu vực đồng euro phải vận hành miễn phí, trên cả chuyển khoản có tiêu chuẩn lẫn chuyển khoản tức thời. Sau chín tháng, chi phí kỹ thuật không rơi vào thuật toán đối sánh. Nó rơi vào phản hồi "khớp gần đúng", vào việc tách tệp thanh toán doanh nghiệp thành từng yêu cầu theo dòng trong khung năm giây, và vào thực tế rằng một cảnh báo đã hiển thị rồi bị bỏ qua sẽ phân bổ lại tổn thất theo cách chưa ai định giá.</p>
 <p class="post-lead-heading"><strong>Những điểm chính</strong></p>
 <ul class="post-lead-takeaways">

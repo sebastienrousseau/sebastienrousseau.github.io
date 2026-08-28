@@ -99,7 +99,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Оскільки квантові комп'ютери загрожують традиційним методам шифрування, квантовий розподіл ключів (QKD) стає революційним рішенням, що пропонує безпрецедентний рівень безпеки.</p>
 <p class="post-lead-heading"><strong>Ключові тези</strong></p>
 <ul class="post-lead-takeaways">

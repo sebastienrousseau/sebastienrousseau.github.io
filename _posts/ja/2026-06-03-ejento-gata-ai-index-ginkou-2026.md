@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # 銀行向けエージェント型AIインデックス 2026:自律性・ガバナンス・監査可能性・ビジネスインパクトの測定
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Tier-1銀行のエージェント型AI(agentic AI)成熟度を6軸で測るための設計図です。自律性ティア、API権限設計、決定論的ガードレール、ヒューマン・イン・ザ・ループのカバレッジ、監査の完全性、そしてユニットエコノミクス。エージェントは基盤モデルの賢さではなく「何を許可されているか」で分類してください。本番稼働するすべてのエージェントを初日から SR 11-7 / SS1/23 のモデルとして扱う必要があります。</p>
 <p class="post-lead-heading"><strong>主な要点</strong></p>
 <ul class="post-lead-takeaways">

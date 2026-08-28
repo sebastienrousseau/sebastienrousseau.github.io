@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Buod ng artikulo">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Hindi PSD2 na may dagdag na endpoint ang FiDA. Tatlong estruktural na putol ang nagpapabago sa kahulugan ng pagsunod: pinamamahalaan ng isang scheme na dapat mong salihan ang access, hindi ng interface na itinatayo mong mag-isa; puwedeng humingi ng makatwirang compensation ang mga data holder, kaya nagiging may-presyong produkto ang access sa halip na libreng tungkulin; at umaabot ang scope sa mortgage, ipon, pamumuhunan, pensiyon at non-life insurance — ang mga produktong talagang kinikitaan ng mga bangko. Nasa trilogue pa rin ang teksto, ngunit dinidisenyo na ngayon ang mga scheme na magtatakda ng mga standard, at doon nakalagay ang leverage.</p>
 <p class="post-lead-heading"><strong>Mga pangunahing punto</strong></p>
 <ul class="post-lead-takeaways">

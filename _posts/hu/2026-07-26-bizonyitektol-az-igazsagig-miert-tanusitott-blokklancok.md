@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **A megváltoztathatatlan nem azonos a megbízhatóval.** Ahogy a nagybanki működés a valós idejű kiegyenlítés és a valószínűségi MI felé mozdul, a főkönyv, amely eldönti, mi az igaz, azzá az egyetlen réteggé vált, amelyet a bankok még mindig nem tudnak tanúsítani. Az entitást a Basel III szerint, a felhőt az ISO 27001 szerint, az MI-t pedig az ISO 42001 szerint tanúsítják, de az elosztott főkönyvet, annak irányítását, konszenzusát, kriptográfiáját és okosszerződéseit szállítóspecifikus feltételezésekre bízzák. E jelentés amellett érvel, hogy e fiduciárius rés bezárása azt kívánja, hogy az ISO/IEC TC 307 iránymutatástól az előíró jellegű bizonyosság felé lépjünk: a főkönyvet egy 5 szintű tanúsított blokklánc indexhez mérjük, amely a mérnöki mutatókat igazgatótanács által auditálható, DORA-védhető igazsággá alakítja.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Cikkösszefoglaló">
+<aside class="post-lead" aria-label="A cikk összefoglalója">
 <p class="post-lead-tldr"><strong>Röviden.</strong> A bankok tanúsítják az entitást, a felhőt és az MI-t, de nem a főkönyvet, amely egyre inkább eldönti, mi az igaz. Az ISO/IEC TC 307 iránymutatást ad, nem bizonyosságot. Egy 5 szintű tanúsított blokklánc index egy érettségi modellhez méri a főkönyv irányítását, a konszenzus integritását, az identitást és a kriptográfiát, az okosszerződések bizonyosságát és a megfigyelhetőséget, ezzel bezárja a fiduciárius rést, és determinisztikus auditgerincet ad a valószínűségi MI-nek.</p>
 <p class="post-lead-heading"><strong>Fő tanulságok</strong></p>
 <ul class="post-lead-takeaways">

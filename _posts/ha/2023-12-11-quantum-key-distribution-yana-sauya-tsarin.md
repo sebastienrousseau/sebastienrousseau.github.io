@@ -98,7 +98,7 @@ excerpt: "As quantum computers pose a threat to traditional encryption methods, 
 last_reviewed: "2026-05-11"
 ---
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Yayin da kwamfutocin quantum ke barazana ga hanyoyin ɓoyewa na gargajiya, Quantum Key Distribution (QKD) ta fito a matsayin canjin wasa, tana ba da tsaro marar misali.</p>
 <p class="post-lead-heading"><strong>Muhimman bayanai</strong></p>
 <ul class="post-lead-takeaways">

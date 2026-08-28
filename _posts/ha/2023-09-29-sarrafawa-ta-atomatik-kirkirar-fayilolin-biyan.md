@@ -94,7 +94,7 @@ last_reviewed: "2026-05-24"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Takaitaccen labari">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>A takaice.</strong> <a href="https://pain001.com/">pain001</a> ɗakin karatu ne na Python na open-source da ke karanta bayanan biyan kuɗi daga CSV ko SQLite sannan ya samar da ISO 20022 pain.001.001.09 (CustomerCreditTransferInitiation) XML, yana tantance output da ISO 20022 XSD schema kuma yana lissafa <code>CtrlSum</code> da <code>NbOfTxs</code> ta atomatik. Ana goyon bayan SEPA Credit Transfer da CBPR+ na biyan kuɗi ƙetare.</p>
 <p class="post-lead-heading"><strong>Mahimman bayanai</strong></p>
 <ul class="post-lead-takeaways">
@@ -275,7 +275,7 @@ pain001 yana ɗaga `pain001.exceptions.ValidationError` tare da lxml validation 
 [01]: https://www.iso20022.org/ "ISO 20022: Universal financial industry message scheme"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Game da marubuci"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki da ke rubutu kan AI mai amfani, ƙaura zuwa ISO 20022, post-quantum cryptography ga financial services, da canjin tsarin wholesale payments.</span><span class="author-credentials">Sama da shekaru 20 a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayanin martaba</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki da ke rubutu kan AI mai amfani, ƙaura zuwa ISO 20022, post-quantum cryptography ga financial services, da canjin tsarin wholesale payments.</span><span class="author-credentials">Sama da shekaru 20 a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayanin martaba</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">An sake dubawa na ƙarshe <time datetime="2026-05-24">2026-05-24</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Karin karatu</h2>

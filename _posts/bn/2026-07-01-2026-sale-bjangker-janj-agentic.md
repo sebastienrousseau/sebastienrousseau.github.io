@@ -87,7 +87,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 # ২০২৬ সালে ব্যাংকের জন্য Agentic AI সূচক: Autonomy মাপা
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="নিবন্ধ সারসংক্ষেপ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে।</strong> 2026 সালে ব্যাংকিংয়ে এজেন্টিক এআই (agentic AI) এখন পরিচালনামূলক পরিকাঠামো: 52% আর্থিক প্রতিষ্ঠান ইতিমধ্যেই এটি মোতায়েন করেছে, তবু মাত্র 14% একে রূপান্তরকারী বলে অভিহিত করে। এই সূচক সেই ব্যবধান বন্ধ করে ছয়টি মাত্রায় প্রস্তুতি স্কোর করে — স্বায়ত্তশাসন স্তর, গভর্ন্যান্স স্থাপত্য, নিয়ন্ত্রক প্রমাণ, অর্থনৈতিক জবাবদিহিতা, সাংগঠনিক প্রস্তুতি এবং বৈশ্বিক নিয়ন্ত্রক সঙ্গতি — যা `SR 11-7`, `SS1/23`, `EU AI Act` এবং `FSB`-এর জুন 2026 সাউন্ড প্র্যাকটিসেসের সঙ্গে ক্যালিব্রেট করা।</p>
 <p class="post-lead-heading"><strong>মূল বিষয়গুলি</strong></p>
 <ul class="post-lead-takeaways">

@@ -89,7 +89,7 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="নিবন্ধ সারসংক্ষেপ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে।</strong> SWIFT MT ও ISO 20022 পেমেন্ট বহনকারী ক্রিপ্টোগ্রাফিক এনভেলপগুলি RSA-2048 ও ECC-র জন্য আকারিত হয়েছিল। NIST-এর মানক পোস্ট-কোয়ান্টাম অ্যালগরিদম — ML-KEM (FIPS 203) ও ML-DSA (FIPS 204) — যে পাবলিক কী ও স্বাক্ষর তৈরি করে তা বিশ গুণ পর্যন্ত বড়। সেই পেলোড লিগ্যাসি রেলে অভিযোজনের ফলে প্যাকেট খণ্ডিতকরণ, HSM ক্ষয় ও লেটেন্সি লেজ তৈরি হয়, যা অপারেশন দল সামলাতে পারে না। এখন-সংগ্রহ-পরে-ডিক্রিপ্ট অপেক্ষার বিকল্পই কেড়ে নেয়। ২০২৬-এ যৌক্তিক স্থাপত্য পছন্দ ক্রিপ্টো-চটপটে রেলে প্রতিস্থাপন, প্যাচ নয়।</p>
 <p class="post-lead-heading"><strong>মূল বিষয়</strong></p>
 <ul class="post-lead-takeaways">

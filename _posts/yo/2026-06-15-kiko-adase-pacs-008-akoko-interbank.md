@@ -106,7 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Lábẹ́ àwọn ìtọ́sọ́nà SWIFT CBPR+, November 14, 2026 Ààlà Àdírẹ́sì Tó Ní Ètò ń yọ àwọn àdírẹ́sì ìfìránṣẹ́ láìní ètò kúrò ní TARGET2, CHAPS, Fedwire, Lynx, àti SEPA. pacs008 jẹ́ ìwé-ìkàwé Python orisun ṣiṣi tó ń ṣe àdàṣe ìṣẹ̀dá àti ìfọwọsì ìránṣẹ́ ISO 20022 FI-to-FI gbígbé awin onibara (pacs.008), tó ń fi àwọn ìsanwó pamọ́ sínú Business Application Headers (BAH head.001), tó sì ń sin ìbámu àdírẹ́sì tó ní ètò sínú ọ̀nà dátà kí ìránṣẹ́ tó kàn nẹ́tíwọ́kì ìpinnu.</p>
 <p class="post-lead-heading"><strong>Àwọn àyọkà pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
@@ -296,7 +296,7 @@ pacs008 wá pẹ̀lú àwọn olùfọwọsì tí a sin sí inú fún Bank Ident
 
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa Onkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ báńkì àgbà tó ń kọ nípa AI tí a lò, ìṣíkiri ISO 20022, ìpamọ́ post-quantum fún iṣẹ́ ìnáwó, àti ìmúlò ìpilẹ̀ ti àwọn ìsanwó òṣùnwọ̀n.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ báńkì àgbà tó ń kọ nípa AI tí a lò, ìṣíkiri ISO 20022, ìpamọ́ post-quantum fún iṣẹ́ ìnáwó, àti ìmúlò ìpilẹ̀ ti àwọn ìsanwó òṣùnwọ̀n.</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaìlì kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò tó kẹ́yìn <time datetime="2026-06-15">2026-06-15</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Àwọn àpilẹ̀kọ tó jẹ mọ́ ọn</h2>

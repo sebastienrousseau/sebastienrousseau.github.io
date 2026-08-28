@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Verifikasi penerima pembayaran berhenti menjadi produk sejak hari ia menjadi kewajiban.** Sejak 9 Oktober 2025, setiap penyedia jasa pembayaran di Negara Anggota kawasan euro wajib menawarkan Verification of Payee pada transfer kredit, tanpa biaya, berdasarkan Regulation (EU) 2024/886. Pemeriksaannya sendiri tidak sulit: bandingkan sebuah nama dengan nama yang tercatat pada rekening, lalu jawab. Yang terbukti sulit adalah segala hal di sekelilingnya — anggaran respons lima detik, jawaban tengah yang bukan ya dan bukan tidak, berkas korporat yang harus dibongkar sebelum dapat diperiksa, dan batas liabilitas yang enggan ditarik baik oleh regulasi maupun oleh rulebook skema.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Ringkasan artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Instant Payments Regulation mengubah verifikasi penerima pembayaran dari pembeda kompetitif menjadi utilitas yang wajib dijalankan setiap PSP kawasan euro tanpa biaya, pada transfer kredit standar maupun instan. Sembilan bulan berjalan, biaya rekayasanya tidak jatuh pada algoritma pencocokan. Ia jatuh pada respons "kecocokan sebagian", pada pembongkaran berkas pembayaran korporat menjadi permintaan per baris dalam amplop lima detik, dan pada kenyataan bahwa peringatan yang disampaikan lalu diabaikan memindahkan kerugian dengan cara yang belum dihargai siapa pun.</p>
 <p class="post-lead-heading"><strong>Poin utama</strong></p>
 <ul class="post-lead-takeaways">

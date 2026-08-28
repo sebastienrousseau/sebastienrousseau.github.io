@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Стислий виклад статті">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>Стисло.</strong> Регламент (ЄС) 2024/2847 — Регламент про кіберстійкість — застосовується в повному обсязі з <strong>11 грудня 2027 року</strong>, але його <strong>обов'язки з повідомлення за статтею 14 починаються 11 вересня 2026 року</strong>. Виробники мають надіслати <strong>раннє попередження протягом 24 годин</strong> від моменту, коли їм стало відомо про активно експлуатовану вразливість чи серйозний інцидент, <strong>повне повідомлення протягом 72 годин</strong> і <strong>підсумковий звіт протягом 14 днів</strong> (вразливості) або <strong>одного місяця</strong> (інциденти), через єдину платформу повідомлень ENISA до CSIRT держави основного місця діяльності виробника. Ризик сягає <strong>15 млн євро або 2,5 % загального річного світового обороту</strong> — залежно від того, що більше. Правило <em>lex specialis</em>, яке відсилає від NIS2 до DORA, тут не працює: CRA не є ні NIS2, ні правом суб'єктів.</p>
 <p class="post-lead-heading"><strong>Ключові висновки</strong></p>
 <ul class="post-lead-takeaways">

@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> De eerste post-quantumdeadline gaat over inventarisatie, niet over migratie: de NCSC verwacht in 2028 een volledig beeld van de cryptografische afhankelijkheden, vóór de migratiemijlpalen van 2031 en 2035. Banken kunnen dat beeld niet leveren vanuit het assetregister dat DORA hun al oplegt, want dat register legt de server, de eigenaar en de kriticiteit vast, maar niet het algoritme, de sleutellengte, de bibliotheek of de vervaldatum van het certificaat. De Cryptography Bill of Materials, inmiddels onderdeel van CycloneDX en gestandaardiseerd als ECMA-424, is het ontbrekende datamodel. Wie het behandelt als een eenmalig PQC-spreadsheet in plaats van als een onderhouden beheersmaatregel, maakt de fout die de mijlpaal van 2031 gaat kosten.</p>
 <p class="post-lead-heading"><strong>Belangrijkste conclusies</strong></p>
 <ul class="post-lead-takeaways">

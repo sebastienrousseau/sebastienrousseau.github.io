@@ -86,7 +86,7 @@ last_reviewed: "2026-05-24"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Akopọ ìwé">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Blockchain jẹ́ ìwé àkọsílẹ̀ tí a pín káàkiri nínú èyí tí gbogbo àkọsílẹ̀ kọ̀ọ̀kan (búlọ́ọ̀kù) ti sopọ̀ mọ́ ẹni tó ṣáájú rẹ̀ ní ọ̀nà àbájáde àṣírí. Yíyí àkọsílẹ̀ ìtàn èkejì kankan padà máa ń mú gbogbo búlọ́ọ̀kù tó tẹ̀lé ẹ̀ di aláìṣiṣẹ́ — àǹfààní kan tí kì í ṣe ìjọba àárín gbùngbùn tí ń fipá mú, ṣùgbọ́n nẹ́tíwọ́ọ̀kì àwọn olùfòyèwò tí kò ní àjọṣepọ̀ tí ń ṣiṣẹ́ pẹ̀lú àwọn ìlànà kan náà. Ethereum faagun apẹrẹ yìí pẹ̀lú ìpele ìmúṣẹ Turing-complete, tí ó mú kí ìwé àkọsílẹ̀ lè ṣe ètò àti ṣí ìlẹ̀kùn fún smart contracts, àwọn token dígítálì, àti ìṣúná tí kò ní àárín gbùngbùn.</p>
 <p class="post-lead-heading"><strong>Àwọn àmúlò pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
@@ -255,7 +255,7 @@ Nínú proof-of-work, wàláà ń pèsè ààbò nípasẹ̀ ìnáwó agbára: �
 - NIST, (2015). [SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions ⧉](https://www.nist.gov/publications/sha-3-standard-permutation-based-hash-and-extendable-output-functions "NIST FIPS 202").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-24">2026-05-24</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>

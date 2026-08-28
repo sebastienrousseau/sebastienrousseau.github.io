@@ -87,7 +87,7 @@ webmaster: "contact@sebastienrousseau.com"
 
 # Post-Quantum Security Scorecard 2026: een metriekkader op bestuursniveau voor fiduciaire cryptografische wendbaarheid
 
-<aside class="post-lead" aria-label="Artikelsamenvatting">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Per juni 2026 is post-kwantum cryptografie (PQC) overgegaan van een experimentele technische kwestie naar een primaire fiduciaire verplichting. Besturen moeten nu de systematische migratie van verouderde versleuteling naar de standaarden NIST FIPS 203 en 204 overzien om systemische financiële en operationele risico's onder DORA te beperken.</p>
 <p class="post-lead-heading"><strong>Belangrijkste conclusies</strong></p>
 <ul class="post-lead-takeaways">

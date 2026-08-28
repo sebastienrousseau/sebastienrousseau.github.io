@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="תקציר המאמר">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> ההנחיות הפיקוחיות המתוקנות לסיכוני מודלים מ-17 באפריל 2026 (SR 26-2 / OCC Bulletin 2026-13) מחליפות את מסגרת 2011 ומוציאות במפורש AI גנרטיבי ו-AI סוכני, לצד התחייבות לקול קורא להערות. ההוצאה הזו היא החלטת תחולה לגבי <em>ההנחיות האלה</em>, לא אישור פיקוחי: אותו מודל עצמו עדיין יושב בתוך סיכון צד שלישי, סיכון תפעולי, הגנת הצרכן והלוואות הוגנות. במקביל, ה-SS1/23 הבריטי ניטרלי טכנולוגית וממשיך למשוך את המודלים האלה פנימה. בנק קבוצתי מפעיל כעת מודל אחד תחת שתי תשובות, והתגובה הכנה היא לנהל אותו לפי המחמירה מביניהן.</p>
 <p class="post-lead-heading"><strong>נקודות מפתח</strong></p>
 <ul class="post-lead-takeaways">

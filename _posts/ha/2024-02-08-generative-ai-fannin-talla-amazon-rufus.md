@@ -93,7 +93,7 @@ webmaster: "contact@sebastienrousseau.com"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Bincika yadda AI ke canza duniyar talla ta hanyar fahimtar Amazon Rufus da sabbin ci gaban Meta. Gano tasirin kan hulɗar masu amfani da samfuran.</p>
 <p class="post-lead-heading"><strong>Babban abubuwan da za a ɗauka</strong></p>
 <ul class="post-lead-takeaways">

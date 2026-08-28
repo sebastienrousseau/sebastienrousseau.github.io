@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Agentisches Treasury 2026: Vom Autonomous Treasury Index zu produktionsreifen Co-Piloten
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Artikelzusammenfassung">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Agentische Treasury-Co-Piloten gehen 2026 von kontrollierten Piloten in die Produktion. Das Muster ist über CIB-Treasuries hinweg konsistent: Agenten lesen ISO 20022-Cash-Daten, rufen begrenzte Werkzeuge auf und rebalancieren Liquidität innerhalb von Policy-Bändern — eingerahmt von SR 11-7, DORA und EU AI Act.</p>
 <p class="post-lead-heading"><strong>Kernaussagen</strong></p>
 <ul class="post-lead-takeaways">
@@ -183,6 +183,6 @@ Die interessante Arbeit liegt 2026 nicht im Modell. Sie liegt in der Steuerungse
 Zum vorgelagerten Kontext siehe den [Autonomous Treasury Index](https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/ "Der Autonomous Treasury Index 2026") und, für den Governance-Rahmen, den [Agentic AI Index für Banken](https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/ "Der Agentic AI Index für Banken 2026").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Porträt von Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior Banking-Technologe, schreibt über angewandte KI, ISO 20022-Migration, Post-Quantum-Kryptografie für Finanzdienstleistungen und die strukturelle Transformation des Wholesale-Zahlungsverkehrs.</span><span class="author-credentials">Über 20 Jahre bei HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Vollständiges Profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Über den Autor"><img alt="Porträt von Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior Banking-Technologe, schreibt über angewandte KI, ISO 20022-Migration, Post-Quantum-Kryptografie für Finanzdienstleistungen und die strukturelle Transformation des Wholesale-Zahlungsverkehrs.</span><span class="author-credentials">Über 20 Jahre bei HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Vollständiges Profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Zuletzt geprüft am <time datetime="2026-06-27">2026-06-27</time>.</p>
 <!-- enrich-end -->

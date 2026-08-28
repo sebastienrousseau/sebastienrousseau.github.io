@@ -97,7 +97,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Короткий зміст статті">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>Стисло.</strong> Дослідження технологічного ландшафту 2023 року: AI та квантові обчислення революціонізують банківську сферу, зростання моделей з відкритим кодом та розвиток регулювання й управління</p>
 <p class="post-lead-heading"><strong>Ключові висновки</strong></p>
 <ul class="post-lead-takeaways">

@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # 2026 Bankacılık Altyapı Endeksi: Özerk Yapay Zeka, Kuantum-Güvenli Güvenlik, Bulut-Yerel Dayanıklılık ve Toptan Ödemelerde Hazır Olma Ölçümü
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Bu neden önemli">
+<aside class="post-lead" aria-label="Makale özeti">
   <p class="post-lead-tldr"><strong>Bu yazı neyi ele alıyor:</strong> Banka hazırlığını, artık birlikte hareket eden 2026'nın dört altyapı alanı boyunca — özerk yapay zeka, post-kuantum kriptografi, bulut-yerel dayanıklılık ve toptan ödemeler — ölçmek için Stanford AI Index tarzı bir çerçeve; ve çerçeveyi bir işletim yetkinliğine dönüştüren yönetim kurulu düzeyindeki beş metrik.</p>
   <p class="post-lead-takeaways"><strong>Bu yazıyı kim okumalı:</strong> Banka CTO'ları, Mühendislik Başkanları, Risk ve Dayanıklılık Direktörleri, Ödemeler Başkanları, Kriptografik Mühendislik Başkanları, teknoloji denetimine bakan yönetim kurulu üyeleri ve onları denetleyen düzenleyiciler (PRA, ECB, FCA, OCC).</p>
 </aside>

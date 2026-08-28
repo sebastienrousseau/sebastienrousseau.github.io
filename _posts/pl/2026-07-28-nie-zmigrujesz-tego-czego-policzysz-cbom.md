@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Pierwszy termin postkwantowy dotyczy rozpoznania, nie migracji — NCSC oczekuje pełnego obrazu zależności kryptograficznych do 2028 roku, przed kamieniami migracyjnymi na 2031 i 2035 rok. Banki nie zbudują go z rejestru aktywów, do którego prowadzenia DORA już je zobowiązuje, ponieważ ten rejestr zapisuje serwer, właściciela i krytyczność, ale nie algorytm, długość klucza, bibliotekę ani datę wygaśnięcia certyfikatu. Cryptography Bill of Materials, dziś część CycloneDX i znormalizowany jako ECMA-424, jest brakującym modelem danych. Potraktowanie go jako jednorazowego arkusza PQC zamiast utrzymywanego mechanizmu kontrolnego to błąd, który będzie kosztował kamień milowy 2031.</p>
 <p class="post-lead-heading"><strong>Najważniejsze wnioski</strong></p>
 <ul class="post-lead-takeaways">

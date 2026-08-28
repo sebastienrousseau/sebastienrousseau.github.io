@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # 2026 年银行基础设施指数:衡量自主式 AI、量子安全、云原生韧性与批发支付的就绪度
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="为什么这件事重要">
+<aside class="post-lead" aria-label="文章摘要">
   <p class="post-lead-tldr"><strong>本文要点:</strong>一套对标斯坦福 AI Index 风格的框架,用于衡量银行在 2026 年四个已经必须协同推进的基础设施领域——自主式 AI、后量子密码学、云原生韧性与批发支付——的就绪度,外加把框架转化为运营能力的五项董事会级指标。</p>
   <p class="post-lead-takeaways"><strong>适合阅读的对象:</strong>银行 CTO、工程主管、首席风险与韧性官、支付主管、密码工程主管、负责科技治理的董事,以及对其实施监管的机构(PRA、ECB、FCA、OCC)。</p>
 </aside>

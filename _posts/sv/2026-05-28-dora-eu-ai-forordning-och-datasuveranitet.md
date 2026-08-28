@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # DORA, EU:s AI-förordning och datasuveränitet: bankernas efterlevnadsstack 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Sammanfattning av artikeln">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>Sammanfattning.</strong> DORA, EU:s AI-förordning, GDPR, koncentrationsrisk i molnet och regler om datasuveränitet konvergerar 2026 till en gemensam efterlevnadsstack för banker. Den strategiska frågan har flyttats från "vilket regelverk ska införas" till "vilken arkitektur orkestrerar alla fem" — att driva IKT-resiliensbevis, AI-riskklassificering, register över rättslig grund, koncentrationsgränser för tredje part och suveräna dataval genom en operativ modell som tillsynsmyndigheter kan granska. Fem parallella program bygger nästa decenniums operativa risk; ett orkestreringslager med mätbara bevis vinner.</p>
 <p class="post-lead-heading"><strong>Viktiga slutsatser</strong></p>
 <ul class="post-lead-takeaways">

@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="लेखाचा सारांश">
 <p class="post-lead-tldr"><strong>थोडक्यात.</strong> Regulation (EU) 2024/1183 ने eIDAS नव्याने लिहिले. दोन तारखा महत्त्वाच्या आहेत: <strong>24 डिसेंबर 2026</strong> पर्यंत प्रत्येक सदस्य राष्ट्राने किमान एक युरोपियन डिजिटल ओळख वॉलेट पुरवले पाहिजे, आणि <strong>24 डिसेंबर 2027</strong> पर्यंत सूचीबद्ध क्षेत्रांतील मोठ्या व मध्यम अवलंबून असणाऱ्या पक्षांनी — ज्यात बँकिंग व वित्तीय सेवा येतात — वापरकर्त्याने मागितल्यास सशक्त वापरकर्ता प्रमाणीकरणासाठी ते स्वीकारले पाहिजे. बँकेची भूमिका ओळख प्रमाणपत्र जारीकर्त्याकडून नोंदणीकृत अवलंबून असणारा पक्ष अशी बदलते, आणि नोंदणी ही तांत्रिक नव्हे तर कायदेशीर पूर्वअट आहे. अभियांत्रिकी सामान्य आहे. प्रशासन, दायित्व आणि ओळख-सिद्धतेचे परिणाम मात्र तसे नाहीत.</p>
 <p class="post-lead-heading"><strong>महत्त्वाचे मुद्दे</strong></p>
 <ul class="post-lead-takeaways">

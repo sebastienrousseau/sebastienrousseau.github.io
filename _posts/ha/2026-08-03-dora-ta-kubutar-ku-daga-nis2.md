@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Taƙaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>A taƙaice.</strong> Ka'ida (EU) 2024/2847 — Ka'idar Juriyar Sadarwar Yanar Gizo — tana aiki gaba ɗaya a <strong>11 ga Disamba 2027</strong>, amma <strong>wajibcin bayar da rahoto na Sashe na 14 yana farawa a 11 ga Satumba 2026</strong>. Masana'antu dole su aika <strong>gargaɗin farko cikin awa 24</strong> tun bayan sun sami labarin rauni da ake amfani da shi a zahiri ko mummunan lamari, <strong>cikakken sanarwa cikin awa 72</strong>, sannan <strong>rahoton ƙarshe cikin kwana 14</strong> (rauni) ko <strong>wata ɗaya</strong> (lamari), ta dandalin bayar da rahoto guda ɗaya na ENISA zuwa CSIRT na ƙasar da masana'antar take da babbar cibiyarta. Haɗarin ya kai <strong>Yuro miliyan 15 ko kashi 2.5 na jimillar kuɗin shiga na shekara a duniya</strong>, wanda ya fi girma. Ƙa'idar <em>lex specialis</em> da ke tura daga NIS2 zuwa DORA ba ta aiki a nan, domin CRA ba NIS2 ba ce kuma ba dokar cibiyoyi ba ce.</p>
 <p class="post-lead-heading"><strong>Manyan abubuwa</strong></p>
 <ul class="post-lead-takeaways">

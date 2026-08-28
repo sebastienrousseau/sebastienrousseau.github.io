@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Artikelzusammenfassung">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> DORAs TLPT-Regime macht aus Red Teaming statt einer freiwilligen Sicherheitsübung eine beaufsichtigte, beweispflichtige Verpflichtung im Dreijahrestakt — für Unternehmen, die eine zuständige Behörde benennt. Die bindenden Grenzen sind nicht technischer Natur. Sie liegen auf der Angebotsseite: Article 27 verlangt akkreditierte oder an einen Verhaltenskodex gebundene Testdienstleister mit unabhängigem Prüfnachweis und Berufshaftpflichtversicherung, erlaubt interne Red Teams für höchstens zwei von drei Zyklen und verlangt jedes Mal einen externen Anbieter der Bedrohungsaufklärung. Kritische Funktionen, die bei Drittanbietern laufen, ziehen diese Anbieter in den Test hinein.</p>
 <p class="post-lead-heading"><strong>Die wichtigsten Erkenntnisse</strong></p>
 <ul class="post-lead-takeaways">

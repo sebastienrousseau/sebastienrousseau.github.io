@@ -94,7 +94,7 @@ last_reviewed: "2026-05-24"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Стислий опис статті">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>Стислий опис.</strong> Автоматизуйте створення платіжних файлів ISO 20022 pain.001 з CSV або SQLite. pain001 — це бібліотека Python з відкритим кодом, яка спрощує дотримання вимог.</p>
 <p class="post-lead-heading"><strong>Основні тези</strong></p>
 <ul class="post-lead-takeaways">

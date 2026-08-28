@@ -96,7 +96,7 @@ twitter_image_alt: "Zwart-witportret van Sebastien Rousseau"
 # Wachtwoordbeheer beveiligen in enterprise banking: multi-algoritme hashing en upgrades met hsh
 
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Artikelsamenvatting">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> <a href="https://github.com/sebastienrousseau/hsh">hsh</a> is een open source, pure-Rust cryptografisch framework waarmee tier-1 banken legacy wachtwoordhashes kunnen migreren naar moderne standaarden zoals Argon2id zonder service-onderbreking. Door HSM-backed peppering te integreren en strikte geheugenveiligheid af te dwingen zonder C-gebaseerde FFI-wrappers, sluit het de cryptografische rot-kwetsbaarheden die DORA- en Basel III-compliance rechtstreeks bedreigen.</p>
 <p class="post-lead-heading"><strong>Belangrijkste inzichten</strong></p>
 <ul class="post-lead-takeaways">

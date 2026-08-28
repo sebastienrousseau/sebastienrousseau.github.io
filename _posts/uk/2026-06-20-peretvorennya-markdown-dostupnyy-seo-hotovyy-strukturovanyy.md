@@ -103,7 +103,7 @@ site_software: "Static Site Generator, Rust"
 # Перетворення Markdown на доступний, SEO-готовий, структурований HTML за допомогою Rust у 2026 році
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Резюме статті">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> HTML Generator — це чистий Rust-компілятор Markdown-до-HTML, який забезпечує дотримання WCAG 2.1 AA на етапі збірки, автоматично інжектує схема-сумісний JSON-LD, відтворює MathML і Mermaid SVG нативно та ізолює парсинг у пісочниці WebAssembly — перетворюючи видання на компілятивно-контрольовану керуючу площину для доступності, SEO та ІКТ-безпеки.</p>
 <p class="post-lead-heading"><strong>Ключові висновки</strong></p>
 <ul class="post-lead-takeaways">

@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="लेख सारांश">
 <p class="post-lead-tldr"><strong>संक्षेप में।</strong> पहली पोस्ट-क्वांटम समयसीमा खोज एवं सूचीकरण की है, माइग्रेशन की नहीं — NCSC 2031 और 2035 के माइग्रेशन पड़ावों से पहले, 2028 तक क्रिप्टोग्राफ़िक निर्भरताओं की पूरी तस्वीर की अपेक्षा करता है। बैंक यह तस्वीर उस परिसंपत्ति रजिस्टर से नहीं निकाल सकते जो DORA उनसे पहले से रखवाता है, क्योंकि वह रजिस्टर सर्वर, स्वामी और गंभीरता दर्ज करता है, पर एल्गोरिदम, कुंजी लंबाई, लाइब्रेरी या प्रमाणपत्र की समाप्ति नहीं। Cryptography Bill of Materials, जो अब CycloneDX का हिस्सा है और ECMA-424 के रूप में मानकीकृत है, वही गुम डेटा मॉडल है। इसे एक बनाए रखे जाने वाले नियंत्रण के बजाय एक बार की PQC स्प्रेडशीट मान लेना वह गलती है जो 2031 का पड़ाव चुका देगी।</p>
 <p class="post-lead-heading"><strong>मुख्य निष्कर्ष</strong></p>
 <ul class="post-lead-takeaways">

@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **受取人確認は、義務になった日にプロダクトであることをやめました。** 2025年10月9日以降、ユーロ圏加盟国のすべての決済サービスプロバイダー（PSP）は、Regulation (EU) 2024/886に基づき、送金についてVerification of Payeeを無償で提供しなければなりません。照合そのものは難しくありません。提示された名義を口座上の名義と突き合わせ、答えを返すだけです。難しかったのは、その周辺のすべてでした。5秒の応答予算、イエスでもノーでもない中間の答え、照合の前に分解しなければならない法人ファイル、そして規制もスキームのルールブックも引こうとしない責任の分界線です。
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Instant Payments Regulationは、受取人確認を差別化要因から、ユーロ圏の全PSPが無償で運用しなければならない社会インフラへと変えました。しかも即時送金だけでなく、通常の送金にも適用されます。9か月が経ち、エンジニアリングのコストはマッチングアルゴリズムには落ちませんでした。落ちたのは「部分一致」という応答、法人の支払ファイルを5秒の枠内で明細ごとのリクエストへ分解する処理、そして警告を表示したうえで警告を無視して続行されたとき、誰も値付けしていない形で損失の配分が動くという事実です。</p>
 <p class="post-lead-heading"><strong>主なポイント</strong></p>
 <ul class="post-lead-takeaways">

@@ -90,7 +90,7 @@ site_software: "Static Site Generator, Rust"
 <p class="deck">2026年の世界決済サイクルは、3つの収斂する力 — エージェント型コマース、不可視の組み込み型決済、リアルタイム実行 — によって定義されます。これらはProject Agorá下のトークン化された統一台帳の上に成り立ち、2026年11月のSWIFT構造化アドレス・カットオーバーという確定期限に直面しています。</p>
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> 2026年の決済領域は、メッセージング移行から、リアルタイム実行がリスクと収益を規定する多次元のオペレーティング・モデルへと移行しました。本稿はJ.P. Morgan、Global Payments、HSBC、Payments Associationの2026年展望を統合し、モデル起点のエージェント型コマース、常時稼働の財務API、BIS Project Agorá下のトークン化統一台帳、2026年11月14日／15日のSWIFTおよびSEPA構造化アドレス期限を網羅する、4つの柱からなるG-SIBオペレーティング・プランを提示します（Swift CBPR+は2026年11月14日から非構造化`<AdrLine>`ブロックを削除します。EPC SEPAルールブックは2026年11月15日まで非構造化アドレスを許容します）。</p>
 <p class="post-lead-heading"><strong>主な要点</strong></p>
 <ul class="post-lead-takeaways">
@@ -365,6 +365,6 @@ Agoráは統合のフレームです。各国のwCBDC実験は中央銀行マネ
 - European Banking Authority. (2019). *Guidelines on outsourcing arrangements (EBA/GL/2019/02)*. [EBA Outsourcing Guidelines](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用AI、ISO 20022移行、金融サービス向けポスト量子暗号、ホールセール決済の構造変革を執筆する、シニア・バンキング・テクノロジスト。</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Groupにて20年以上の経験。<a href="/about/index.html">フル・プロフィール</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="著者について"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用AI、ISO 20022移行、金融サービス向けポスト量子暗号、ホールセール決済の構造変革を執筆する、シニア・バンキング・テクノロジスト。</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Groupにて20年以上の経験。<a href="/about/index.html">フル・プロフィール</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最終レビュー <time datetime="2026-06-25">2026-06-25</time>。</p>
 <!-- enrich-end -->

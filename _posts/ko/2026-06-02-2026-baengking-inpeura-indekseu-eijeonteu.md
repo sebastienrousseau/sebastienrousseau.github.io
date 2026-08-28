@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # 2026 뱅킹 인프라 인덱스: 에이전트 AI, 양자내성 보안, 클라우드 네이티브 회복력, 도매 결제 준비도 측정
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="이 글이 중요한 이유">
+<aside class="post-lead" aria-label="기사 요약">
   <p class="post-lead-tldr"><strong>이 글의 주제:</strong> 이제 함께 움직이는 2026년 네 가지 인프라 영역 — 에이전트 AI, 양자내성 암호, 클라우드 네이티브 회복력, 도매 결제 — 전반의 은행 준비도를 측정하는 Stanford AI Index 방식의 프레임워크와, 이 프레임워크를 운영 역량으로 전환하는 다섯 가지 이사회 지표를 다룹니다.</p>
   <p class="post-lead-takeaways"><strong>읽어야 할 대상:</strong> 은행 CTO, 엔지니어링 책임자, 최고 리스크·회복력 책임자, 결제 책임자, 암호 엔지니어링 책임자, 기술 감독 권한을 가진 이사회 임원, 그리고 이들을 감독하는 규제 당국(PRA, ECB, FCA, OCC)입니다.</p>
 </aside>

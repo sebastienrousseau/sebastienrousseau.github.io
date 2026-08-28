@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Sabuntawar Acid Jazz a UK: Mawaka, Wasanni, Albam na 2026 da Dawowar Al'adun Kide-kide na Groove
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Taƙaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Farfaɗowar acid jazz ta UK a 2026 ba ta neman tsohon lokaci ba — ta kasance muhalli mai rai inda Acid Jazz Records, tsofaffin mawaka, bukukuwan jazz funk, da ƙaramar mawaka masu sha'awar groove suke aiki a lokaci ɗaya.</p>
 <p class="post-lead-heading"><strong>Mahimman bayanai</strong></p>
 <ul class="post-lead-takeaways">

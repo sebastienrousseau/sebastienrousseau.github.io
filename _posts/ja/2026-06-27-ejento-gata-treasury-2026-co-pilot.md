@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # エージェント型トレジャリー 2026:自律型トレジャリー指数から本番グレードのコ・パイロットへ
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> エージェント型トレジャリー・コ・パイロットは、2026 年に統制されたパイロットから本番へと移行しています。CIB トレジャリー全体でパターンは一貫しています — エージェントは ISO 20022 のキャッシュデータを読み、境界付けされたツールを呼び出し、ポリシー帯域内で流動性をリバランスします — その周囲には SR 11-7、DORA、EU AI Act の統制が巻かれています。</p>
 <p class="post-lead-heading"><strong>主要な要点</strong></p>
 <ul class="post-lead-takeaways">
@@ -183,6 +183,6 @@ CIB 規模で本番稼働している三つのトレジャリー・コ・パイ�
 上流の文脈については、[自律型トレジャリー指数](https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/ "自律型トレジャリー指数 2026") を、ガバナンスの枠組みについては、[銀行向けエージェント型 AI 指数](https://sebastienrousseau.com/2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026/ "銀行向けエージェント型 AI 指数 2026") を参照してください。
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="セバスチャン・ルソーのポートレート" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、ホールセール決済の構造的変革について執筆するシニア・バンキング・テクノロジスト。</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group において 20 年超。<a href="/about/index.html">フルプロフィール</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="著者について"><img alt="セバスチャン・ルソーのポートレート" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービス向けポスト量子暗号、ホールセール決済の構造的変革について執筆するシニア・バンキング・テクノロジスト。</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group において 20 年超。<a href="/about/index.html">フルプロフィール</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最終レビュー <time datetime="2026-06-27">2026-06-27</time>。</p>
 <!-- enrich-end -->

@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **A fizetések adminisztratív segédeszközből a banki technológiai stratégia magjává váltak.** 2026-ban a globális fizetési működési modellt három egymáshoz közelítő erő határozza meg, az ügynöki kereskedelem, a láthatatlan beágyazott pénzmozgások és a valós idejű végrehajtás, és mindegyik átrajzolja, hol visel kockázatot és hol termel bevételt egy tranzakciós bank. Ez a jelentés a J.P. Morgan Payments, a Global Payments, a HSBC és a The Payments Association 2026-os kilátásait egyetlen működésimodell-nézetté szintetizálja: hogyan kell a G-SIB- és regionális vezetőknek, treasury-vezetőknek és szabályozóknak eligazodniuk a modell által kezdeményezett kereskedelemben, a DORA szerinti folyamatosan elérhető likviditásban, a BIS Project Agorá keretében működő tokenizált egységes főkönyvekben és a fix dátumú, 2026. novemberi SWIFT strukturáltcím-átállásban.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Cikk összefoglalója">
+<aside class="post-lead" aria-label="A cikk összefoglalója">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> A 2026-os fizetési környezet az üzenetküldési migrációktól egy többdimenziós működési modellhez jutott, amelyben a kockázatot és a bevételt a valós idejű képesség szabja meg. Négy pillér, az ügynöki kereskedelem, a folyamatosan elérhető treasury, a tokenizált egységes főkönyvek és a strukturált adatokra épülő csalás elleni védelem, jelöli ki a globális tranzakciós bankok 2026–2028-as igazgatósági menetrendjét.</p>
 <p class="post-lead-heading"><strong>Legfontosabb tanulságok</strong></p>
 <ul class="post-lead-takeaways">

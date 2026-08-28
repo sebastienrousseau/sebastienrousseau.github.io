@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Від pain.001 до програмованої ліквідності: ISO 20022 як автономна нервова система казначейства у 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>Стисло.</strong> ISO 20022 — це вже не міграційний проєкт. У 2026 році це субстрат даних під програмованою ліквідністю, агентним казначейством і переходом SWIFT MT/MX у листопаді 2026, до якого майже половина банків досі не встигає.</p>
 <p class="post-lead-heading"><strong>Ключові висновки</strong></p>
 <ul class="post-lead-takeaways">

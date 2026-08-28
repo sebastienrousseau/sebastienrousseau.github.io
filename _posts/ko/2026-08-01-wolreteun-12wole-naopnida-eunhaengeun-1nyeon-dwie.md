@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="기사 요약">
 <p class="post-lead-tldr"><strong>요약.</strong> Regulation (EU) 2024/1183은 eIDAS를 다시 썼습니다. 중요한 날짜는 둘입니다. <strong>2026년 12월 24일</strong>까지 각 회원국은 최소 하나의 유럽 디지털 신원 월렛을 제공해야 하고, <strong>2027년 12월 24일</strong>까지 명시된 업종의 대·중형 신뢰 당사자는 — 은행업과 금융 서비스가 여기 포함됩니다 — 사용자가 요청할 때 강력한 사용자 인증에 이를 수용해야 합니다. 은행의 역할은 크리덴셜 발급기관에서 등록된 신뢰 당사자로 바뀌며, 등록은 기술적 전제가 아니라 법적 전제입니다. 엔지니어링은 평범합니다. 거버넌스, 책임, 신원 확인의 결과는 그렇지 않습니다.</p>
 <p class="post-lead-heading"><strong>핵심 요점</strong></p>
 <ul class="post-lead-takeaways">

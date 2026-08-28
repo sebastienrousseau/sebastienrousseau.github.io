@@ -94,7 +94,7 @@ webmaster: "contact@sebastienrousseau.com"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> EU AI Act বিশ্বব্যাপী নৈতিক, ঝুঁকি-স্তরীয় AI নিয়ন্ত্রণের প্রথম ব্যাপক কাঠামো নির্ধারণ করে। ব্যাংক, বিক্রেতা এবং উচ্চ-ঝুঁকির সিস্টেমের জন্য কী পরিবর্তন আসছে তা জানুন।</p>
 <p class="post-lead-heading"><strong>মূল শিক্ষা</strong></p>
 <ul class="post-lead-takeaways">

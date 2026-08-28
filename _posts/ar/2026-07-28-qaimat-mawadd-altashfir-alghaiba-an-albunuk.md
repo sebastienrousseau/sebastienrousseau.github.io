@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="ملخص المقال">
 <p class="post-lead-tldr"><strong>الخلاصة.</strong> أول موعد نهائي لما بعد الكم هو الاكتشاف والجرد لا الترحيل — تنتظر NCSC صورة كاملة لتبعيات التشفير بحلول 2028، قبل محطتي الترحيل في 2031 و2035. والبنوك عاجزة عن إخراجها من سجل الأصول الذي تُلزمها DORA بحفظه أصلًا، لأن ذلك السجل يسجّل الخادم والمالك ودرجة الحرجية، لا الخوارزمية ولا طول المفتاح ولا المكتبة ولا انتهاء الشهادة. وقائمة مواد التشفير، التي صارت جزءًا من CycloneDX ومعيارًا تحت اسم ECMA-424، هي نموذج البيانات الناقص. أما التعامل معها كجدول بيانات لمرة واحدة للتشفير ما بعد الكمي بدل ضابط مُصان، فهو الخطأ الذي سيكلّف محطة 2031.</p>
 <p class="post-lead-heading"><strong>أبرز النقاط</strong></p>
 <ul class="post-lead-takeaways">

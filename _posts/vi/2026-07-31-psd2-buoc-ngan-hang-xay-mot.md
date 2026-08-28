@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Tóm tắt bài viết">
 <p class="post-lead-tldr"><strong>Tóm tắt.</strong> FiDA không phải PSD2 với nhiều endpoint hơn. Ba đứt gãy cấu trúc làm thay đổi ý nghĩa của việc tuân thủ: quyền truy cập do một cơ chế bạn buộc phải gia nhập điều chỉnh, chứ không phải một giao diện bạn tự xây; bên nắm giữ dữ liệu có thể yêu cầu khoản bù đắp chi phí hợp lý, nên truy cập trở thành một sản phẩm có giá thay vì một nghĩa vụ miễn phí; và phạm vi áp dụng vươn tới thế chấp, tiết kiệm, đầu tư, hưu trí và bảo hiểm phi nhân thọ — những sản phẩm ngân hàng thực sự kiếm được tiền. Văn bản vẫn đang trong đàm phán ba bên, nhưng các cơ chế sẽ định ra tiêu chuẩn thì đang được thiết kế ngay bây giờ, và đó là nơi đòn bẩy nằm.</p>
 <p class="post-lead-heading"><strong>Những điểm chính</strong></p>
 <ul class="post-lead-takeaways">

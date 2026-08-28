@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Tóm tắt bài viết">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Hạn hậu lượng tử đầu tiên là rà soát và kiểm kê, không phải di trú — NCSC yêu cầu một bức tranh đầy đủ về các phụ thuộc mật mã trước năm 2028, trước cả các mốc di trú 2031 và 2035. Ngân hàng không thể dựng bức tranh đó từ sổ đăng ký tài sản mà DORA đã buộc họ duy trì, vì sổ đó ghi nhận máy chủ, chủ sở hữu và mức trọng yếu, chứ không ghi thuật toán, độ dài khóa, thư viện hay ngày hết hạn chứng chỉ. Bản kê khai mật mã (Cryptography Bill of Materials), nay là một phần của CycloneDX và được chuẩn hóa thành ECMA-424, chính là mô hình dữ liệu còn thiếu. Coi nó như một bảng tính PQC làm một lần thay vì một chốt kiểm soát được duy trì là sai lầm sẽ đánh mất mốc 2031.</p>
 <p class="post-lead-heading"><strong>Những điểm chính</strong></p>
 <ul class="post-lead-takeaways">

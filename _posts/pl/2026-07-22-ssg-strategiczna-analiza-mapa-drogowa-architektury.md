@@ -91,7 +91,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **Dla regulowanego wydawcy generator stron statycznych nie jest już narzędziem projektowym; stanowi część perymetru ryzyka operacyjnego.** Otwartoźródłowy [static-site-generator](https://github.com/sebastienrousseau/static-site-generator) napisany w Rust opiera się na tym założeniu, przenosząc bezpieczeństwo, dostępność, internacjonalizację i potoki treści AI na etap kompilacji, tak aby nieudana kontrola zatrzymała kompilację, zamiast trafić na produkcję. Niniejsza analiza oddziela to, co wersja 0.0.41 faktycznie dostarcza, od tego, co jej dokumentacja wciąż jedynie obiecuje, wskazuje pięć funkcji klasy enterprise, których jeszcze nie posiada, oraz proponuje etapową drogę do wydania 1.0 zgodnego z DORA, europejskim aktem o dostępności i nowoczesnymi standardami łańcucha dostaw.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Podsumowanie artykułu">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Napisany w Rust <code>static-site-generator</code> traktuje publikację w sieci jako audytowalny, domyślnie bezpieczny potok oprogramowania: obejmujący całą przestrzeń roboczą <code>forbid(unsafe_code)</code>, SHA-384 Subresource Integrity, ekstrakcję Content Security Policy, bramkę WCAG 2.2 AA w czasie kompilacji oraz lokalny potok LLM. Inspekcja kodu wersji 0.0.41 pokazuje, że kilka udokumentowanych funkcji pozostaje na etapie planów — wśród nich natywna minifikacja, kompilacje przyrostowe i AVIF. Oto rzetelna analiza luk i etapowa mapa drogowa do wersji 1.0 klasy enterprise.</p>
 <p class="post-lead-heading"><strong>Najważniejsze wnioski</strong></p>
 <ul class="post-lead-takeaways">

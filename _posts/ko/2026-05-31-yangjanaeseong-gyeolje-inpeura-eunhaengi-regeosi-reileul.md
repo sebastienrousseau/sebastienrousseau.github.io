@@ -89,7 +89,7 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="문서 요약">
+<aside class="post-lead" aria-label="기사 요약">
 <p class="post-lead-tldr"><strong>요약.</strong> SWIFT MT와 ISO 20022 결제를 운반하는 암호 봉투는 RSA-2048과 ECC에 맞춰 설계되었습니다. NIST가 표준화한 양자내성 알고리즘인 ML-KEM(FIPS 203)과 ML-DSA(FIPS 204)는 공개키와 서명이 최대 20배 더 큽니다. 이러한 페이로드를 레거시 레일에 개조해 넣으면 패킷 단편화, HSM 고갈, 운영팀이 흡수할 수 없는 지연 꼬리가 발생합니다. 지금 수집 나중에 복호화(HNDL)는 대기할 선택지를 제거합니다. 2026년에 방어 가능한 아키텍처 선택은 패치가 아니라 암호 민첩성 레일로의 대체입니다.</p>
 <p class="post-lead-heading"><strong>핵심 시사점</strong></p>
 <ul class="post-lead-takeaways">

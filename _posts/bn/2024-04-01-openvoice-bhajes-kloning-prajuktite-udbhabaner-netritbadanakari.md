@@ -107,7 +107,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="নিবন্ধের সারাংশ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষিপ্ত বিবরণ (TL;DR)।</strong> MIT, Tsinghua এবং MyShell থেকে OpenVoice ফাইন-গ্রেইনড টোন, অ্যাকসেন্ট এবং ইমোশন কন্ট্রোল সহ প্রোডাকশন-গ্রেড ভয়েস ক্লোনিং প্রদান করে — এবং যে ট্রেড-অফগুলো জানা দরকার।</p>
 <p class="post-lead-heading"><strong>মূল দিকগুলো</strong></p>
 <ul class="post-lead-takeaways">

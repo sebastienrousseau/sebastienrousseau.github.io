@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="ملخص المقال">
 <p class="post-lead-tldr"><strong>الخلاصة.</strong> Regulation (EU) 2024/1183 أعادت كتابة eIDAS. تاريخان يهمّان: بحلول <strong>24 ديسمبر 2026</strong> على كل دولة عضو توفير محفظة هوية رقمية أوروبية واحدة على الأقل، وبحلول <strong>24 ديسمبر 2027</strong> على الأطراف المعتمِدة الكبيرة والمتوسطة في القطاعات المدرجة — ومنها الصيرفة والخدمات المالية — قبولها في المصادقة القوية للمستخدم متى طلب المستخدم ذلك. دور البنك ينتقل من جهة إصدار بيانات اعتماد إلى طرف معتمِد مُسجَّل، والتسجيل شرط قانوني مسبق لا شرط تقني. الهندسة نفسها عادية. أمّا تبعات الحوكمة والمسؤولية وإثبات الهوية فليست كذلك.</p>
 <p class="post-lead-heading"><strong>أبرز النقاط</strong></p>
 <ul class="post-lead-takeaways">

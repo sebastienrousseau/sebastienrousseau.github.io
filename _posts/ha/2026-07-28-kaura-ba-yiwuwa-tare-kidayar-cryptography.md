@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Wa'adin post-quantum na farko discovery ne, ba ƙaura ba — NCSC na sa ran cikakken hoto na dogaron cryptographic nan da 2028, kafin matakan ƙaura na 2031 da 2035. Bankuna ba za su iya fitar da shi daga asset register da DORA ya riga ya tilasta musu ajiyewa ba, domin wannan register yana rubuta server, mai shi da matakin mahimmanci amma ba algorithm, key length, library ko ranar ƙarewar certificate ba. Cryptography Bill of Materials, wanda yanzu yake ɓangare na CycloneDX kuma aka daidaita shi a matsayin ECMA-424, shi ne data model ɗin da ya ɓace. Ɗaukarsa a matsayin takardar PQC ta lokaci ɗaya maimakon control da ake kula da shi shi ne kuskuren da zai ci matakin 2031.</p>
 <p class="post-lead-heading"><strong>Mahimman abubuwan da za a ɗauka</strong></p>
 <ul class="post-lead-takeaways">

@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Indeks Infrastruktury Bankowej 2026: pomiar gotowości na agentowe AI, kryptografię kwantowo-odporną, odporność cloud-native i płatności hurtowe
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Dlaczego to ma znaczenie">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
   <p class="post-lead-tldr"><strong>O czym jest ten artykuł:</strong> ramy w stylu Stanford AI Index do pomiaru gotowości banku w czterech obszarach infrastrukturalnych 2026, które dziś poruszają się razem — agentowe AI, kryptografia postkwantowa, odporność cloud-native i płatności hurtowe — wraz z pięcioma metrykami na poziomie zarządu, które przekształcają te ramy w zdolność operacyjną.</p>
   <p class="post-lead-takeaways"><strong>Dla kogo jest ten tekst:</strong> CTO banków, szefowie inżynierii, dyrektorzy ryzyka i odporności (CRO), szefowie płatności, szefowie inżynierii kryptograficznej, członkowie zarządów nadzorujący technologię oraz regulatorzy (PRA, EBC, FCA, OCC), którzy ich nadzorują.</p>
 </aside>

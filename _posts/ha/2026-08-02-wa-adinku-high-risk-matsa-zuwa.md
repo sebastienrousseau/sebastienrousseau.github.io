@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Takaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> AI omnibus ya jinkirta wajiban high-risk na Annex III zuwa <strong>2 Disamba 2027</strong> da na Annex I zuwa <strong>2 Agusta 2028</strong>. Ya bar <strong>Article 50 kamar yadda yake, yana aiki tun 2 Agusta 2026</strong>. Wajibai huɗu na aiki yanzu: sanar da cewa mutum yana hulɗa da AI system; yin alama ga abin da AI ta ƙirƙira a cikin tsarin machine-readable; sanar da emotion recognition da biometric categorisation; da yin lakabi ga deepfakes da rubutun da AI ta ƙirƙira waɗanda aka wallafa kan al'amuran maslahar jama'a. Haɗarin ya kai <strong>Yuro miliyan 15 ko kashi 3% na jimlar kuɗin shiga na shekara a duniya</strong>, duk wanda ya fi girma. Wajibcin na tashoshin dijital ne da tallace-tallace, ba na ƙungiyar model risk da ke riƙe da fayil ɗin da aka jinkirta ba.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan da za a dauka</strong></p>
 <ul class="post-lead-takeaways">

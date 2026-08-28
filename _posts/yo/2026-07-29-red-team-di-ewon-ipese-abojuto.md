@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ìlànà TLPT ti DORA yí red teaming padà láti eré ààbò tí ó dá lórí ìfẹ́ ilé-iṣẹ́ sí ojúṣe tí a ń bójú tó, tí ó ń mú ẹ̀rí jáde lórí àkókò ọdún mẹ́ta, fún àwọn ilé-iṣẹ́ tí aláṣẹ tó ní ẹ̀tọ́ bá yàn. Àwọn ìdíwọ́ tí ó dè ọ́ kì í ṣe ti ìmọ̀-ẹ̀rọ. Ti ìhà ìpèsè ni wọ́n: Article 27 ń béèrè àwọn tester tí ó ní accreditation tàbí tí ó dè mọ́ òfin ìwà, tí wọ́n ru ìdánilójú òmìnira àti professional indemnity insurance, ó gba red team inú ilé láàyè fún méjì nínú gbogbo ìgbà mẹ́ta, ó sì ń béèrè pé olùpèsè threat intelligence gbọ́dọ̀ wá láti òde nígbà gbogbo. Àwọn iṣẹ́ pàtàkì tí ó ń ṣiṣẹ́ lórí àwọn olùpèsè ẹnìkẹta ń fa àwọn olùpèsè yẹn wọ inú ìdánwò náà.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

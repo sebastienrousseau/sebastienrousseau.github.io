@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Buod ng artikulo">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Pinapalitan ng binagong model risk guidance ng 17 Abril 2026 (SR 26-2 / OCC Bulletin 2026-13) ang balangkas ng 2011 at tahasang ibinubukod nito ang generative at agentic AI, na may ipinangakong request for information. Desisyon iyon tungkol sa scope ng guidance na <em>ito</em>, hindi pahintulot mula sa superbisor: nananatili ang parehong modelo sa loob ng third-party risk, operational risk, proteksyon ng consumer at fair lending. Samantala, technology-neutral ang SS1/23 ng UK at patuloy nitong isinasama ang mga modelong iyon. Isang modelo sa ilalim ng dalawang sagot ang pinatatakbo ngayon ng isang group bank, at ang matapat na tugon ay pamahalaan ito ayon sa mas mahigpit sa dalawa.</p>
 <p class="post-lead-heading"><strong>Mga pangunahing punto</strong></p>
 <ul class="post-lead-takeaways">

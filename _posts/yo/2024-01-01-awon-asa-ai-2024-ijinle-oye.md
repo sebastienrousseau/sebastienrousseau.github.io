@@ -109,7 +109,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkópọ̀ àkọsílẹ̀">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Awọn aṣa AI fún 2024: AI ìpilẹ̀ṣẹ̀ nínú ìnáwó, àwọn awoṣe multimodal, LLM lórí ẹ̀rọ àti àwọn ìyípadà tí yóò tún ṣe àpẹ̀rẹ̀ ilé-ìfowópamọ́ àti ìmọ̀-ẹ̀rọ ọjà.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó kókó àyọkà</strong></p>
 <ul class="post-lead-takeaways">

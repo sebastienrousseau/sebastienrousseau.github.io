@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="記事の要約">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> FiDAはエンドポイントを増やしたPSD2ではありません。3つの構造的断絶が、コンプライアンスの意味を変えます。アクセスは、単独で構築するインターフェースではなく、加盟しなければならないスキームによって統治されます。データ保有者は合理的な対価を求めることができ、アクセスは無償の義務ではなく値付けされたプロダクトになります。そして適用範囲は、住宅ローン、貯蓄、投資、年金、損害保険 — 銀行が実際に収益を上げているプロダクト — に及びます。テキストはなお三者協議(トリローグ)の途上にありますが、標準を定めることになるスキームはいま設計されており、レバレッジが効くのはそこです。</p>
 <p class="post-lead-heading"><strong>要点</strong></p>
 <ul class="post-lead-takeaways">

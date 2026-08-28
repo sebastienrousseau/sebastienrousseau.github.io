@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Àtọ́ka Ìfaradà Báńkì Post-Quantum ní 2026: EO 14409, Àwọn Ọjọ́ Gbèdéke Àgbáyé, àti Crypto-Agility Akóni
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Àkótán àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ìṣíkiri post-quantum cryptography (PQC) ti kọjá ibi tí kò sí ìpadà mọ́. Pẹ̀lú Executive Order 14409 ti US tí a fọwọ́sí ní ọjọ́ 22 oṣù Kẹfà 2026 àti ANSSI ti Faranse tó gbé ọjọ́ gbèdéke lílekoko 2030 kalẹ̀ — ìjẹ́rìí àwọn ọjà tí kì í ṣe PQC yóò dúró ní 2027 — crypto-agility kì í ṣe ìfojúsọ́nà ìmọ̀-ẹ̀rọ mọ́. Ó ti di àṣẹ ìṣàkóso. Àtọ́ka yìí yí àṣẹ yẹn padà sí káàdì àmì 0–5 tí ìgbìmọ̀ olùdarí lè lò kọjá ìpele márùn-ún tí a lè ṣàyẹ̀wò.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Відродження Acid Jazz у Великій Британії: виконавці, концерти та альбоми 2026
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Короткий зміст статті">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>Коротко.</strong> Відродження UK acid jazz у 2026 році — це не ностальгія, а жива екосистема, де Acid Jazz Records, виконавці першої хвилі, джаз-фанк-фестивалі та молоді грув-орієнтовані музиканти діють одночасно.</p>
 <p class="post-lead-heading"><strong>Ключові висновки</strong></p>
 <ul class="post-lead-takeaways">

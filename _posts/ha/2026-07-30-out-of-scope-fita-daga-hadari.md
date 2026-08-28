@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Taƙaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>Taƙaitawa.</strong> Guidance kan model risk da aka sabunta a 17 ga Afrilu 2026 (SR 26-2 / OCC Bulletin 2026-13) ta maye gurbin tsarin 2011 kuma ta cire generative da agentic AI a fili, tare da alƙawarin request for information. Wannan cirewa shawara ce kan scope na <em>wannan</em> guidance, ba izinin kulawa ba: samfuri ɗaya har yanzu yana zaune cikin third-party risk, haɗarin aiki, kariyar mabukaci da fair lending. A halin yanzu SS1/23 ta Birtaniya tana tsaka-tsaki kan fasaha kuma tana ci gaba da jawo waɗannan samfuran a ciki. Bankin ƙungiya yanzu yana gudanar da samfuri guda ƙarƙashin amsoshi biyu, kuma amsar gaskiya ita ce a yi shugabanci bisa mafi tsanani daga cikinsu.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan da za a ɗauka</strong></p>
 <ul class="post-lead-takeaways">

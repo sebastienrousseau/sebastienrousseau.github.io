@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Der Banking Infrastructure Index 2026: Reife messen für agentische KI, quantensichere Sicherheit, Cloud-Resilienz und Wholesale-Zahlungsverkehr
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Worum es hier geht">
+<aside class="post-lead" aria-label="Artikelzusammenfassung">
   <p class="post-lead-tldr"><strong>Worum es in diesem Artikel geht:</strong> Ein Rahmen im Stil des Stanford AI Index zur Messung der Bankenreife über die vier Infrastrukturdomänen 2026, die sich nun gemeinsam bewegen — agentische KI, Post-Quanten-Kryptografie (PQC), cloud-native Resilienz und Wholesale-Zahlungsverkehr — plus die fünf Kennzahlen auf Vorstandsebene, die aus dem Rahmen eine operative Fähigkeit machen.</p>
   <p class="post-lead-takeaways"><strong>Für wen dieser Artikel geschrieben ist:</strong> Bank-CTOs, Leiter Engineering, Chief Risk and Resilience Officers, Leiter Zahlungsverkehr, Leiter Cryptographic Engineering, Aufsichtsräte und Vorstandsmitglieder mit Technologieverantwortung sowie die Aufsichtsbehörden (BaFin, EZB, FCA, PRA, OCC), die sie beaufsichtigen.</p>
 </aside>

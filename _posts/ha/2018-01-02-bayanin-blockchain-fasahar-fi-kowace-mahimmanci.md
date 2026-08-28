@@ -98,7 +98,7 @@ excerpt: "Blockchain, fasahar da ke bayan bunkasar cryptocurrencies cikin sauri,
 last_reviewed: "2026-05-11"
 ---
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Takaitaccen bayanin labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Labarin tafiya mai ban al'ajabi na kare ma'amalar dijital ta hanyar Private-key Cryptography da hanyoyin sadarwar Peer-to-peer (P2P).</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan da aka koya</strong></p>
 <ul class="post-lead-takeaways">

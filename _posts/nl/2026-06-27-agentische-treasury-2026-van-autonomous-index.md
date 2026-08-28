@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Agentische treasury 2026: van Autonomous Treasury Index naar production-grade co-pilots
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Agentische treasury co-pilots verlaten in 2026 de gecontroleerde pilots en gaan productie in. Het patroon is consistent in CIB-treasuries: agents lezen ISO 20022-kasdata, roepen begrensde tools aan en herbalanceren liquiditeit binnen beleidsbanden — met controles vanuit SR 11-7, DORA en de EU AI Act eromheen.</p>
 <p class="post-lead-heading"><strong>Belangrijkste inzichten</strong></p>
 <ul class="post-lead-takeaways">

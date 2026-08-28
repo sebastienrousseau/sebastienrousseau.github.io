@@ -111,7 +111,7 @@ last_reviewed: "2026-05-24"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Àkàndé — це голосовий асистент Python із відкритим вихідним кодом, який об'єднує розпізнавання мовлення OpenAI Whisper, генерацію відповідей GPT-4 та локальний кеш відповідей SQLite у робочий процес, керований голосом — створюючи резюме PDF з історії розмов і зберігаючи всі дані локально.</p>
 <p class="post-lead-heading"><strong>Ключові висновки</strong></p>
 <ul class="post-lead-takeaways">

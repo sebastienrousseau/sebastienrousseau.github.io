@@ -109,7 +109,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Darapọ mọ mi lori irin-ajo ti ara ẹni lati Rust, AI, ati Quantum Computing si atunṣafihan aworan ati fọtoyiya nipasẹ Alien Studio.</p>
 <p class="post-lead-heading"><strong>Àwọn ohun pàtàkì tí a rí gbà</strong></p>
 <ul class="post-lead-takeaways">
@@ -225,7 +225,7 @@ Mo ké sí ọ láti ṣe àbẹ̀wò sí [**Alien Studio ⧉**][00], láti rí 
 [09]: https://www.midjourney.com/explore "Midjourney"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ ilé-fowópamọ́ àgbà tí ń kọ̀wé lórí AI tó wà fún lílo, ìṣíkiri ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ètò ti àwọn ìsanwó wholesale.</span><span class="author-credentials">Ó ju ọdún 20+ lọ káàkiri HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Ìfihàn kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ ilé-fowópamọ́ àgbà tí ń kọ̀wé lórí AI tó wà fún lílo, ìṣíkiri ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ètò ti àwọn ìsanwó wholesale.</span><span class="author-credentials">Ó ju ọdún 20+ lọ káàkiri HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Ìfihàn kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Atúnyẹ̀wò kẹyìn <time datetime="2026-06-23">2026-06-23</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Kíkà tó jọ mọ́ ọ</h2>

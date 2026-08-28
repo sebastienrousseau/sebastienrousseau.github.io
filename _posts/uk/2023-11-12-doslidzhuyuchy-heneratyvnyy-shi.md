@@ -102,7 +102,7 @@ last_reviewed: "2026-05-24"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Стислий опис статті">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Дослідіть генеративний ШІ у 2023 році: як він працює, де він впроваджується в першу чергу у сфері фінансових послуг, а також етичні та архітектурні питання, які варто поставити.</p>
 <p class="post-lead-heading"><strong>Основні висновки</strong></p>
 <ul class="post-lead-takeaways">

@@ -106,7 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Artikelsamenvatting">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Het ontwikkelaarswerkstation is geen eindpunt meer; het is een actieve deelnemer in de software-leveringsketen en een directe interface voor het lokale AI-control-plane. Terminalgebaseerde AI-assistenten en <a href="https://modelcontextprotocol.io">Model Context Protocol (MCP)</a>-servers voeren lokale shell-commando's uit, inspecteren repositories en lezen gevoelige configuratiebestanden rechtstreeks. <a href="https://github.com/sebastienrousseau/dotfiles">Sebastien Rousseau's Dotfiles</a> is een declaratief, open-source framework dat veilige, reproduceerbare werkstations bouwt op macOS, Linux en Windows Subsystem for Linux (WSL) — met integratie van <a href="https://www.chezmoi.io/">Chezmoi</a>, <a href="https://github.com/getsops/sops">SOPS, age</a> en SLSA Level 3-buildprovenance voor geheugenveilige secrets-isolatie en begrensde uitvoeringspaden voor lokale AI-modellen.</p>
 <p class="post-lead-heading"><strong>Belangrijkste punten</strong></p>
 <ul class="post-lead-takeaways">

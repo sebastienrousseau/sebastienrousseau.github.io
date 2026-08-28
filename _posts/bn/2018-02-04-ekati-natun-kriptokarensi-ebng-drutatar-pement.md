@@ -86,7 +86,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সারসংক্ষেপ।</strong> Express Transaction Credits (EXTC) প্ল্যাটফর্ম, যা ২০১৮ সালের প্রথম দিকে ডিজাইন করা হয়েছিল, প্রোগ্রামযোগ্য পেমেন্ট টোকেনে Ethereum-ভিত্তিক একটি পরীক্ষা ছিল। ERC-223 টোকেন মানদণ্ডের উপর নির্মিত, এটি ক্রস-বর্ডার ট্রান্সফারে মধ্যস্থতাকারীদের বাদ দেওয়া, আণবিক পেমেন্ট সক্ষম করা এবং ব্যাংক-বঞ্চিতদের জন্য আর্থিক সেবা সুলভ করার লক্ষ্য রেখেছিল — এমন ধারণা যা বিকেন্দ্রীভূত অর্থায়ন পরবর্তীতে বড় পরিসরে আনুষ্ঠানিক রূপ দিয়েছে।</p>
 <p class="post-lead-heading"><strong>মূল উপলব্ধি</strong></p>
 <ul class="post-lead-takeaways">
@@ -193,7 +193,7 @@ EXTC পরীক্ষা প্রোডাকশন স্কেলে পৌ
 - Buterin, V., (2014). [Ethereum: A Next-Generation Smart Contract and Decentralised Application Platform ⧉](https://ethereum.org/whitepaper "Ethereum Whitepaper").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-24">2026-05-24</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>

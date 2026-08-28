@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>TL;DR。</strong>第一个后量子期限是发现与盘点,不是迁移——NCSC 要求在 2028 年前拿出一幅完整的密码依赖图景,时间早于 2031 年和 2035 年的迁移里程碑。银行无法用 DORA 已经强制他们保存的那份资产登记册交出这幅图景,因为那份登记册记录的是服务器、责任人和关键性,而不是算法、密钥长度、库或证书到期日。密码物料清单如今已并入 CycloneDX 并被标准化为 ECMA-424,正是这份缺失的数据模型。把它当成一次性的 PQC 电子表格,而不是一项持续维护的控制措施,就是会葬送 2031 年里程碑的那个错误。</p>
 <p class="post-lead-heading"><strong>核心要点</strong></p>
 <ul class="post-lead-takeaways">

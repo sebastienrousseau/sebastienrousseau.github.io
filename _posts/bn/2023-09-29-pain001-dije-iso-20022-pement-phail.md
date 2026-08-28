@@ -94,7 +94,7 @@ last_reviewed: "2026-05-24"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="প্রবন্ধের সারাংশ">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে.</strong> <a href="https://pain001.com/">pain001</a> একটি ওপেন-সোর্স Python লাইব্রেরি যা CSV বা SQLite ফাইল থেকে পেমেন্ট ডেটা পড়ে ISO 20022 pain.001.001.09 (CustomerCreditTransferInitiation) XML তৈরি করে, ISO 20022 XSD স্কিমার বিপরীতে আউটপুট যাচাই করে এবং <code>CtrlSum</code> ও <code>NbOfTxs</code> স্বয়ংক্রিয়ভাবে গণনা করে। SEPA Credit Transfer এবং CBPR+ সীমান্ত-পার বার্তা ভ্যারিয়েন্ট দুটিই সমর্থিত।</p>
 <p class="post-lead-heading"><strong>মূল বিষয়াবলি</strong></p>
 <ul class="post-lead-takeaways">

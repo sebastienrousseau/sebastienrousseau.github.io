@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Агентна трежері 2026: від Autonomous Treasury Index до продакшен-рівня копілотів
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Стислий зміст статті">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Агентні трежері-копілоти переходять з контрольованих пілотів у продакшен у 2026. Шаблон послідовний у CIB-трежері: агенти читають касові дані ISO 20022, викликають обмежені інструменти й перебалансовують ліквідність у межах політикових коридорів — обгорнуті контролями SR 11-7, DORA та EU AI Act.</p>
 <p class="post-lead-heading"><strong>Ключові висновки</strong></p>
 <ul class="post-lead-takeaways">

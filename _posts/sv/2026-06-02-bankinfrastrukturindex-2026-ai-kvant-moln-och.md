@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Bankinfrastrukturindex 2026: AI, kvant, moln och wholesale-betalningar
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Därför är detta viktigt">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
   <p class="post-lead-tldr"><strong>Vad artikeln handlar om:</strong> Ett ramverk i Stanford AI Index-anda för att mäta bankernas beredskap inom de fyra infrastrukturdomäner som under 2026 rör sig tillsammans — agentisk AI, postkvantkryptografi, molnnativ motståndskraft och wholesale-betalningar — samt de fem styrelsenivåmått som omvandlar ramverket till en operativ förmåga.</p>
   <p class="post-lead-takeaways"><strong>För vem:</strong> Bank-CTO:er, chefer för engineering, Chief Risk and Resilience Officers, betalningschefer, ansvariga för kryptografisk teknik, styrelseledamöter med teknologiansvar samt de tillsynsmyndigheter (PRA, ECB, FCA, OCC) som övervakar dem.</p>
 </aside>

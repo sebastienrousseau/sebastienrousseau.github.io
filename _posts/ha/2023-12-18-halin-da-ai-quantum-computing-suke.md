@@ -86,7 +86,7 @@ webmaster: "contact@sebastienrousseau.com"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>A taƙaice.</strong> Binciken Fasahar Teknoloji na 2023: AI da Quantum Computing suna juya Banki, Haɓakar Samfuran Open-Source, da Dokokin Tsarin Mulki</p>
 <p class="post-lead-heading"><strong>Muhimman bayanai</strong></p>
 <ul class="post-lead-takeaways">

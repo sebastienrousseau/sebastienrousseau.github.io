@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Artikelzusammenfassung">
 <p class="post-lead-tldr"><strong>Kurzfassung.</strong> Die überarbeiteten Modellrisiko-Leitlinien vom 17. April 2026 (SR 26-2 / OCC Bulletin 2026-13) lösen den Rahmen von 2011 ab und nehmen generative sowie agentische KI ausdrücklich aus; ein Konsultationsaufruf ist zugesagt. Diese Ausnahme ist eine Entscheidung über den Anwendungsbereich <em>dieser</em> Leitlinien, keine aufsichtliche Unbedenklichkeitsbescheinigung: Dasselbe Modell fällt weiterhin unter Drittparteirisiko, operationelles Risiko, Verbraucherschutz und diskriminierungsfreie Kreditvergabe. Die britische SS1/23 ist demgegenüber technologieneutral und erfasst diese Modelle weiterhin. Eine Gruppenbank betreibt nun ein Modell unter zwei Antworten, und die ehrliche Reaktion ist, nach der strengeren von beiden zu steuern.</p>
 <p class="post-lead-heading"><strong>Kernaussagen</strong></p>
 <ul class="post-lead-takeaways">

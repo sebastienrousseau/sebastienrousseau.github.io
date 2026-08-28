@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Shrnutí článku">
 <p class="post-lead-tldr"><strong>Ve zkratce.</strong> Regulation (EU) 2024/1183 přepsalo eIDAS. Rozhodují dvě data: do <strong>24. prosince 2026</strong> musí každý členský stát poskytnout alespoň jednu evropskou peněženku digitální identity a do <strong>24. prosince 2027</strong> ji velké a střední spoléhající se strany ve vyjmenovaných sektorech — mezi nimi bankovnictví a finanční služby — musí přijmout pro silné ověření uživatele, pokud o to uživatel požádá. Role banky se mění z vydavatele potvrzení totožnosti na registrovanou spoléhající se stranu a registrace je právní, nikoli technickou podmínkou. Inženýrská část je nezajímavá. Důsledky pro správu, odpovědnost a prokazování totožnosti nikoli.</p>
 <p class="post-lead-heading"><strong>Klíčové poznatky</strong></p>
 <ul class="post-lead-takeaways">

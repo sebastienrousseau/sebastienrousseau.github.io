@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Index postkvantové odolnosti bankovnictví v roce 2026: EO 14409, globální termíny a svěřenská kryptografická agilita
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Shrnutí článku">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Migrace na postkvantovou kryptografii (PQC) překročila bod, odkud není návratu. Po podpisu amerického Executive Order 14409 dne 22. června 2026 a stanovení neúprosného termínu pro rok 2030 ze strany francouzské ANSSI — kdy certifikace produktů bez PQC končí v roce 2027 — už kryptografická agilita není technickou ambicí. Je to regulatorní mandát. Tento index proměňuje tento mandát v hodnoticí kartu 0–5 pro představenstvo napříč pěti auditovatelnými vrstvami.</p>
 <p class="post-lead-heading"><strong>Klíčové závěry</strong></p>
 <ul class="post-lead-takeaways">

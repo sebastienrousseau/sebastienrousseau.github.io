@@ -87,7 +87,7 @@ webmaster: "contact@sebastienrousseau.com"
 
 # 2026 양자내성 보안 스코어카드: 수탁자 차원 암호 민첩성을 위한 이사회 지표 프레임워크
 
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="기사 요약">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> 2026년 6월 현재, 양자내성 암호 (PQC)는 실험적 기술 관심사에서 주요 수탁자 의무로 이동했습니다. 이사회는 이제 DORA 아래 시스템적 금융·운영 리스크를 완화하기 위해 레거시 암호화의 NIST FIPS 203 및 204 표준으로의 체계적 이전을 감독해야 합니다.</p>
 <p class="post-lead-heading"><strong>핵심 시사점</strong></p>
 <ul class="post-lead-takeaways">
@@ -167,5 +167,5 @@ Tier-1 은행의 암호 자산은 더 이상 CISO만의 관심사가 아닙니�
 
 [KyberLib](https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026)과 그 동류는 이를 다년간의 플랫폼 재작성에서 구성 변경으로 바꿉니다. 이사회의 일은 코드를 작성하는 것이 아닙니다. 이사회의 일은 암호 민첩성 준비 지수 — 추상화된 암호 인터페이스 뒤에 있는 핵심 애플리케이션의 비율 — 가 12개월 내에 85 %를 통과하도록 요구하고, 분기별 스코어카드를 읽는 일입니다.
 
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 이전, 금융 서비스용 양자내성 암호, 도매 결제의 구조적 전환을 다루는 시니어 뱅킹 기술자.</span><span class="author-credentials">HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam에서 20년 이상. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="저자 소개"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 이전, 금융 서비스용 양자내성 암호, 도매 결제의 구조적 전환을 다루는 시니어 뱅킹 기술자.</span><span class="author-credentials">HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam에서 20년 이상. <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">최종 검토 <time datetime="2026-06-29">2026-06-29</time>.</p>

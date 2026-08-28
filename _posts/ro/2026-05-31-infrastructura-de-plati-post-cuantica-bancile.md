@@ -89,7 +89,7 @@ site_software: "Static Site Generator, Rust"
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Rezumat al articolului">
+<aside class="post-lead" aria-label="Rezumatul articolului">
 <p class="post-lead-tldr"><strong>Pe scurt.</strong> Anvelopele criptografice care transportă plățile SWIFT MT și ISO 20022 au fost dimensionate pentru RSA-2048 și ECC. Algoritmii post-cuantici standardizați de NIST — ML-KEM (FIPS 203) și ML-DSA (FIPS 204) — produc chei publice și semnături de până la douăzeci de ori mai mari. Adaptarea acelor sarcini utile în căile moștenite cauzează fragmentare a pachetelor, epuizare HSM și cozi de latență pe care echipele operaționale nu le pot absorbi. Colectează-acum-decriptează-mai-târziu elimină opțiunea de a aștepta. Alegerea arhitecturală defensabilă în 2026 este înlocuirea pe căi cripto-agile, nu peticirea.</p>
 <p class="post-lead-heading"><strong>Concluzii-cheie</strong></p>
 <ul class="post-lead-takeaways">

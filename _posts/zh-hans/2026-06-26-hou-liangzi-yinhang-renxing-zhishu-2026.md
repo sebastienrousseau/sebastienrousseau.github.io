@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # 2026 年后量子银行韧性指数：EO 14409、全球期限与受托密码敏捷性
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="文章摘要">
 <p class="post-lead-tldr"><strong>摘要。</strong> 后量子密码学（PQC）迁移已越过其不可逆转的临界点。随着美国行政命令 EO 14409 于 2026 年 6 月 22 日签署，以及法国 ANSSI 设定 2030 年硬性期限——非 PQC 产品的认证将于 2027 年终止——密码敏捷性已不再是一项技术愿景。它已是一项监管强制要求。本指数将这一强制要求转化为面向董事会的 0–5 级记分卡，覆盖五个可审计的层级。</p>
 <p class="post-lead-heading"><strong>关键要点</strong></p>
 <ul class="post-lead-takeaways">
@@ -211,6 +211,6 @@ SNDL 是指在当下拦截并归档加密流量，待 CRQC 出现后再将其解
 - [BIS Project Leap——为金融系统提供抗量子防护](https://www.bis.org/about/bisih/topics/cyber_security/leap.htm "BIS 创新枢纽——Project Leap，为央行与银行间支付系统提供抗量子防护")
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行业技术专家，撰写应用 AI、ISO 20022 迁移、金融服务后量子密码学，以及大额支付结构性转型相关文章。</span><span class="author-credentials">在汇丰商业与投资银行、PayPal、巴克莱、Shazam、AKQA、Virgin Group 拥有 20 多年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行业技术专家，撰写应用 AI、ISO 20022 迁移、金融服务后量子密码学，以及大额支付结构性转型相关文章。</span><span class="author-credentials">在汇丰商业与投资银行、PayPal、巴克莱、Shazam、AKQA、Virgin Group 拥有 20 多年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">最后审阅 <time datetime="2026-06-26">2026-06-26</time>。</p>
 <!-- enrich-end -->

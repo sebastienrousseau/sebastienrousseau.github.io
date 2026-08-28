@@ -98,7 +98,7 @@ excerpt: "Ní 2023, ìpàdé láàárín Imọ̀ Ẹ̀rọ Aláfọwọ́dá (AI
 last_reviewed: "2026-05-11"
 ---
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>Kókó Ọ̀rọ̀.</strong> Ṣíṣàwárí Ilẹ̀ Ìmọ̀ Ẹrọ 2023: AI àti Quantum Computing Ń Yípadà Ẹ̀ka Ilé-ifowopamọ́, Àwọn Àwòṣe Open-Source Tí Ń Dide àti Ìṣàkóso àti Àwọn Òfin Tí Ń Dàgbàsókè</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">
@@ -270,7 +270,7 @@ Oṣẹ́ pupọ̀ fún àkókò rẹ, mo sì ń retí láti gbọ́ láti ọ̀
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="Nípa olùkọ̀wé"><img alt="Àwòrán ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ ilé-ifowopamọ́ gíga tí ó ń kọ̀wé lórí AI tí a lò, ìṣídi ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum (post-quantum cryptography) fún àwọn iṣẹ́ ìnáwó, àti ìyípadà iṣẹ́-ọwọ́ ti sísanwó gbòòrò (wholesale payments).</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaili kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán ti Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀-ẹ̀rọ ilé-ifowopamọ́ gíga tí ó ń kọ̀wé lórí AI tí a lò, ìṣídi ISO 20022, ìsirò ìpamọ́ lẹ́yìn quantum (post-quantum cryptography) fún àwọn iṣẹ́ ìnáwó, àti ìyípadà iṣẹ́-ọwọ́ ti sísanwó gbòòrò (wholesale payments).</span><span class="author-credentials">Ọdún 20+ kọjá HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profaili kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Àyẹ̀wò kẹ́yìn ní <time datetime="2026-06-23">2026-06-23</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Ìkàwé tí ó tan mọ́ ọn</h2>

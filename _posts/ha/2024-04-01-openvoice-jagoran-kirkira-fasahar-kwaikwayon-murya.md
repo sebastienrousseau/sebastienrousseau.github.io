@@ -107,7 +107,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Takaitaccen labarin">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> OpenVoice daga MIT, Tsinghua da MyShell yana ba da damar kwafin murya mai inganci (production-grade) tare da ingantaccen ikon sarrafa sauti, lafazi, da motsin rai — da kuma abubuwan da ya kamata a sani.</p>
 <p class="post-lead-heading"><strong>Bayanai masu mahimmanci</strong></p>
 <ul class="post-lead-takeaways">

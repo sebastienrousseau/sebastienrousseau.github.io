@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="নিবন্ধের সারসংক্ষেপ">
 <p class="post-lead-tldr"><strong>সংক্ষেপে।</strong> FiDA মানে বাড়তি এন্ডপয়েন্টসহ PSD2 নয়। তিনটি কাঠামোগত ভাঙন কমপ্লায়েন্সের অর্থ বদলে দেয়: অ্যাক্সেস পরিচালিত হয় এমন একটি কাঠামো দিয়ে যাতে আপনাকে যোগ দিতে হবে, নিজে একা বানানো কোনো ইন্টারফেস দিয়ে নয়; ডেটা ধারক যুক্তিসংগত ক্ষতিপূরণ চাইতে পারে, ফলে অ্যাক্সেস বিনামূল্যের কর্তব্য নয়, দামযুক্ত পণ্য হয়ে ওঠে; এবং পরিধি পৌঁছায় বন্ধকি ঋণ, সঞ্চয়, বিনিয়োগ, পেনশন ও নন-লাইফ বিমা পর্যন্ত — অর্থাৎ যেসব পণ্য থেকে ব্যাংক সত্যিকারের আয় করে। পাঠটি এখনও ত্রিপক্ষীয় আলোচনায় (trilogue), কিন্তু যে কাঠামোগুলি মান নির্ধারণ করবে সেগুলির নকশা এখনই হচ্ছে, আর সুবিধাটা ঠিক সেখানেই।</p>
 <p class="post-lead-heading"><strong>মূল বিষয়গুলি</strong></p>
 <ul class="post-lead-takeaways">

@@ -89,7 +89,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 **De controle op de begunstigde hield op een product te zijn op de dag dat het een verplichting werd.** Sinds 9 oktober 2025 moet elke betaaldienstverlener in een lidstaat van de eurozone Verification of Payee kosteloos aanbieden op overboekingen, op grond van Regulation (EU) 2024/886. De controle zelf is niet moeilijk: vergelijk een naam met de naam die op een rekening staat en geef antwoord. Moeilijk is alles eromheen — een responsbudget van vijf seconden, een middenantwoord dat noch ja noch nee is, zakelijke bestanden die uit elkaar moeten voordat ze gecontroleerd kunnen worden, en een aansprakelijkheidsgrens die zowel de verordening als het scheme rulebook weigert te trekken.
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Samenvatting van het artikel">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> De Instant Payments Regulation maakte van de controle op de begunstigde geen onderscheidend kenmerk meer, maar een nutsvoorziening die elke PSP in de eurozone kosteloos moet draaien, op gewone én instant overboekingen. Negen maanden later blijkt de technische rekening niet bij het matchingalgoritme te liggen. Zij ligt bij het antwoord "bijna-overeenkomst", bij het ontrafelen van zakelijke batchbestanden in verzoeken per regel binnen een venster van vijf seconden, en bij het feit dat een getoonde en genegeerde waarschuwing schade herverdeelt op een manier die niemand heeft beprijsd.</p>
 <p class="post-lead-heading"><strong>Kernpunten</strong></p>
 <ul class="post-lead-takeaways">

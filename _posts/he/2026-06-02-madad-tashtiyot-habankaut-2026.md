@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # מדד תשתיות הבנקאות 2026: מדידת מוכנות לבינה אוטונומית, אבטחה קוונטית, חוסן ענן ותשלומים סיטונאיים
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="מדוע זה חשוב">
+<aside class="post-lead" aria-label="תקציר המאמר">
   <p class="post-lead-tldr"><strong>על מה המאמר הזה:</strong> מסגרת בסגנון Stanford AI Index למדידת מוכנות הבנק בארבעת תחומי התשתית של 2026 הנעים כיום יחד — בינה אוטונומית, קריפטוגרפיה פוסט-קוונטית, חוסן ענן-מקורי ותשלומים סיטונאיים — לצד חמשת מדדי הדירקטוריון ההופכים את המסגרת ליכולת תפעולית.</p>
   <p class="post-lead-takeaways"><strong>למי מיועד המאמר:</strong> מנהלי טכנולוגיות בבנקים, ראשי הנדסה, מנהלי סיכונים וחוסן ראשיים, ראשי תשלומים, ראשי הנדסת קריפטוגרפיה, חברי דירקטוריון עם פיקוח טכנולוגי והרגולטורים (PRA, ECB, FCA, OCC) המפקחים עליהם.</p>
 </aside>
@@ -217,6 +217,6 @@ Stanford AI Index מועיל משום שהוא מתייחס לתחום טכנו�
 - European Banking Authority, (2026). [Digital Operational Resilience Act ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "Digital Operational Resilience Act").
 
 <!-- enrich-start -->
-<aside class="author-card" aria-label="אודות המחבר"><img alt="פורטרט של Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">טכנולוג בנקאות בכיר הכותב על AI יישומי, תשתיות תשלומים, כסף מתוסמל, ISO 20022, אבטחה פוסט-קוונטית, שירותים פיננסיים ענן-מקוריים ושווקים דיגיטליים מפוקחים.</span><span class="author-credentials">20+ שנים ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<aside class="author-card" aria-label="אודות הכותב"><img alt="פורטרט של Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">טכנולוג בנקאות בכיר הכותב על AI יישומי, תשתיות תשלומים, כסף מתוסמל, ISO 20022, אבטחה פוסט-קוונטית, שירותים פיננסיים ענן-מקוריים ושווקים דיגיטליים מפוקחים.</span><span class="author-credentials">20+ שנים ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">נסקר לאחרונה <time datetime="2026-06-02">2026-06-02</time>.</p>
 <!-- enrich-end -->

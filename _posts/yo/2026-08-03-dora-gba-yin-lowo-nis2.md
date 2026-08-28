@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Ìsọníṣókí àpilẹ̀kọ">
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
 <p class="post-lead-tldr"><strong>Ní ṣókí.</strong> Òfin (EU) 2024/2847 — Òfin Ìforítì Sáíbà — yóò wúlò ní kíkún ní <strong>11 Oṣù Kejìlá 2027</strong>, ṣùgbọ́n <strong>ojúṣe ìròyìn nínú Abala 14 yóò bẹ̀rẹ̀ ní 11 Oṣù Kẹsàn-án 2026</strong>. Àwọn olùṣelọ́pọ̀ gbọ́dọ̀ fi <strong>ìkìlọ̀ àkọ́kọ́ ránṣẹ́ láàrin wákàtí 24</strong> lẹ́yìn tí wọ́n bá gbọ́ nípa àléébù tí a ń lò lọ́wọ́lọ́wọ́ tàbí ìṣẹ̀lẹ̀ líle, <strong>ìfitónilétí kíkún láàrin wákàtí 72</strong>, àti <strong>ìjábọ̀ ìkẹyìn láàrin ọjọ́ 14</strong> (àléébù) tàbí <strong>oṣù kan</strong> (ìṣẹ̀lẹ̀), nípasẹ̀ ìkànnì ìròyìn ẹyọ kan ti ENISA sí CSIRT ìlú tí olùṣelọ́pọ̀ ní ibùdó pàtàkì rẹ̀. Ewu náà dé <strong>yúrò mílíọ̀nù 15 tàbí 2.5% owó tí ó wọlé lọ́dọọdún káàkiri àgbáyé</strong>, èyí tó bá pọ̀ jù. Òfin <em>lex specialis</em> tó ń tọ́ka láti NIS2 sí DORA kò ṣiṣẹ́ níbí, nítorí CRA kì í ṣe NIS2 bẹ́ẹ̀ ni kì í ṣe òfin ilé-iṣẹ́.</p>
 <p class="post-lead-heading"><strong>Àwọn kókó pàtàkì</strong></p>
 <ul class="post-lead-takeaways">

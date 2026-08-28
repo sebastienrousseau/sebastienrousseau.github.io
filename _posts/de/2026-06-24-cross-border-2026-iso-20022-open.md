@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # Cross-Border 2026: ISO 20022, Open Finance und tokenisierte Einlagen in der Firmenkunden-Treasury
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Artikel-Zusammenfassung">
+<aside class="post-lead" aria-label="Artikelzusammenfassung">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Grenzüberschreitende Firmenkunden-Treasury läuft 2026 auf vier Schienen parallel — SWIFT CBPR+, instant A2A unter PSD3/FiDA, tokenisierte Einlagen und Stablecoin-Rails — zusammengehalten durch ISO 20022 als gemeinsame Grammatik. Die Aufgabe für CIB- und Corporate-Treasury-Teams ist Orchestrierung, nicht Schienenauswahl.</p>
 <p class="post-lead-heading"><strong>Kernaussagen</strong></p>
 <ul class="post-lead-takeaways">

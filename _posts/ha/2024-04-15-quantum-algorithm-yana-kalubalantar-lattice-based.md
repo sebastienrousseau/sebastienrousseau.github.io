@@ -110,7 +110,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Takaitaccen bayani">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Sabon algorithm na quantum na polynomial-time na Yilei Chen yana kai hari ga lattice-based cryptography. Tasirin da hakan ke da shi ga ma'auni na post-quantum kamar CRYSTALS-Kyber.</p>
 <p class="post-lead-heading"><strong>Babban abubuwan da za a ɗauka</strong></p>
 <ul class="post-lead-takeaways">

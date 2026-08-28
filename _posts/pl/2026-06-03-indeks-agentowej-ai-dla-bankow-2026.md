@@ -88,7 +88,7 @@ site_software: "Static Site Generator, Rust"
 # Indeks Agentowej AI dla Banków w 2026 roku: Pomiar Autonomii, Ładu, Audytowalności i Wpływu Biznesowego
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Streszczenie artykułu">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Plan pomiaru gotowości na agentową AI w bankach Tier-1 w sześciu wymiarach: poziom autonomii, uprawnienia API, deterministyczne mechanizmy zabezpieczające, zasięg człowiek w pętli, kompletność audytu i ekonomia jednostkowa. Klasyfikuj agentów według tego, co wolno im robić, a nie według tego, jak inteligentny jest model bazowy. Traktuj każdego agenta produkcyjnego jako model SR 11-7 / SS1/23 od pierwszego dnia.</p>
 <p class="post-lead-heading"><strong>Najważniejsze wnioski</strong></p>
 <ul class="post-lead-takeaways">

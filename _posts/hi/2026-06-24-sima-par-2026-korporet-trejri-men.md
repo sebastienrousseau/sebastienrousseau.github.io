@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 # सीमा-पार 2026: कॉर्पोरेट ट्रेज़री में ISO 20022, ओपन फ़ाइनेंस और टोकनीकृत जमा
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="लेख सारांश">
 <p class="post-lead-tldr"><strong>संक्षेप में।</strong> 2026 में सीमा-पार कॉर्पोरेट ट्रेज़री चार रेलों पर समानांतर चलती है — SWIFT CBPR+, PSD3/FiDA के अंतर्गत तत्काल A2A, टोकनीकृत जमा और स्टेबलकॉइन रेल — और इन्हें ISO 20022 सामान्य व्याकरण के रूप में आपस में पिरोता है। CIB और कॉर्पोरेट ट्रेज़री टीमों का कार्य ऑर्केस्ट्रेशन है, रेल चयन नहीं।</p>
 <p class="post-lead-heading"><strong>मुख्य निष्कर्ष</strong></p>
 <ul class="post-lead-takeaways">

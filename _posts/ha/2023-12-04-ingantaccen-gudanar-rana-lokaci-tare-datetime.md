@@ -99,7 +99,7 @@ last_reviewed: "2026-05-11"
 ---
 
 <!-- lead-start -->
-<aside class="post-lead" aria-label="Takaitaccen makala">
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> DateTime (DTT) ɗakin karatu ne na Rust don tattarowa, tabbatarwa, sarrafa da kuma tsara kwanaki da lokuta — babban daidaito, ayyuka masu faɗi.</p>
 <p class="post-lead-heading"><strong>Muhimman abubuwan fahimta</strong></p>
 <ul class="post-lead-takeaways">

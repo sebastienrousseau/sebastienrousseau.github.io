@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Artikelsammanfattning">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Den första kvantsäkra deadlinen gäller kartläggning och inventering, inte migrering — NCSC förväntar sig en fullständig bild av de kryptografiska beroendena till 2028, före migreringsmilstolparna 2031 och 2035. Bankerna kan inte ta fram den ur det tillgångsregister som DORA redan tvingar dem att föra, eftersom registret redovisar servern, ägaren och kritikaliteten men inte algoritmen, nyckellängden, biblioteket eller certifikatets utgångsdatum. Cryptography Bill of Materials, numera en del av CycloneDX och standardiserad som ECMA-424, är den datamodell som saknas. Att behandla den som ett engångskalkylark för PQC i stället för som en löpande kontroll är misstaget som kommer att kosta 2031-milstolpen.</p>
 <p class="post-lead-heading"><strong>Viktigaste slutsatserna</strong></p>
 <ul class="post-lead-takeaways">

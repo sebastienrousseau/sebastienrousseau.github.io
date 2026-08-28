@@ -90,7 +90,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 <!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead" aria-label="Article summary">
+<aside class="post-lead" aria-label="Artikelzusammenfassung">
 <p class="post-lead-tldr"><strong>Kurzfassung.</strong> FiDA ist nicht PSD2 mit mehr Endpunkten. Drei strukturelle Brüche verändern, was Compliance bedeutet: Der Zugang wird durch ein Schema geregelt, dem Sie beitreten müssen, statt durch eine Schnittstelle, die Sie allein bauen; Dateninhaber dürfen eine angemessene Vergütung verlangen, womit Zugang zu einem bepreisten Produkt statt zu einer kostenlosen Pflicht wird; und der Anwendungsbereich reicht bis zu Hypotheken, Spareinlagen, Anlagen, Altersvorsorge und Nichtlebensversicherung — also zu den Produkten, an denen Banken tatsächlich verdienen. Der Text steckt weiterhin im Trilog, aber die Schemata, die die Standards definieren werden, entstehen bereits jetzt. Genau dort liegt der Hebel.</p>
 <p class="post-lead-heading"><strong>Die wichtigsten Erkenntnisse</strong></p>
 <ul class="post-lead-takeaways">
