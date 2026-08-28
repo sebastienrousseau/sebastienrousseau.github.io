@@ -1,19 +1,37 @@
-"""Run ``main()`` on the big builder scripts against the real
-post-build tree, then re-run postbuild to re-stamp CSP/SRI on
-anything that got rewritten.
+"""Run ``main()`` on the big builder scripts against a disposable clone
+of the build tree.
 
-Each test is a single ``main()`` invocation — that's deliberately
-unsophisticated. The script's internals are idempotent on a clean
-tree (they write the same bytes that already exist), so re-running
-``./build.sh`` between sessions repairs any drift. The pay-off is
-coverage: each main() walks 100+ to 1000+ lines of branchy logic
-that's untouchable from a unit test without a vast fixture.
+Each test is a single ``main()`` invocation — deliberately
+unsophisticated. The pay-off is coverage: each main() walks 100+ to
+1000+ lines of branchy logic that is untouchable from a unit test
+without a vast fixture.
+
+These mains write. They used to write into the *real* tree, with a
+module-teardown pass re-stamping CSP/SRI afterwards. That was measured
+at 6,453 files rewritten per run, and it made the whole unit suite
+order-dependent: any module reading ``public/`` between the mutation and
+the teardown saw an incoherent build. ``test_csp_strict_passes`` and
+``test_pages_with_eager_image_have_preload`` passed in isolation and
+failed in a full run for exactly that reason. CI only hid it by
+partitioning the suite across shards.
+
+Worse, two builders anchor on ``__file__`` rather than the CWD and so
+wrote into committed source — ``gen_layouts`` into ``_layouts/`` and
+``gen_articles`` into ``_posts/articles.md``. A test run left the repo
+dirty, which ADR-0003 and ``_copy_root_posts`` below already forbade for
+the enrichers but nothing enforced for the rest.
+
+The whole unit session now runs inside a disposable clone of the tree —
+see ``tests/unit/conftest.py``, which also gates the property: the run
+fails if any test leaves the real ``public/`` altered or a tracked file
+dirty. Scoping the clone per-module was not enough; a first pass at this
+sandboxed only this file and CI still reported 6,497 rewritten files,
+because several other modules invoke the same entry points.
 """
 
 from __future__ import annotations
 
 import hashlib
-import importlib
 import shutil
 import sys
 from pathlib import Path
@@ -48,15 +66,6 @@ def _posts_fingerprint() -> str:
         h.update(p.name.encode())
         h.update(p.read_bytes())
     return h.hexdigest()
-
-
-def _repair_csp_after_mutating_main():
-    """Postbuild's CSP-hash + SRI passes need to re-stamp anything
-    that got rewritten. Idempotent — same bytes in, same bytes out."""
-    import postbuild
-
-    importlib.reload(postbuild)
-    postbuild.main()
 
 
 # ---------------------------------------------------------------------------
@@ -208,16 +217,3 @@ def test_jsonld_diff_main_runs():
 
     with contextlib.suppress(SystemExit):
         jsonld_diff.main()
-
-
-# ---------------------------------------------------------------------------
-# Final repair pass — ensure later tests in the same pytest run see a
-# coherent build tree. Implemented as a module-finalizer-ish fixture
-# that fires after every test in this file.
-# ---------------------------------------------------------------------------
-
-
-@pytest.fixture(autouse=True, scope="module")
-def _repair_after_module():
-    yield
-    _repair_csp_after_mutating_main()
