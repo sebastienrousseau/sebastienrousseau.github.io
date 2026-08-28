@@ -870,20 +870,26 @@ def test_strip_duplicate_body_h1_removes_match():
     assert "</h1>\n<p>body</p>" not in out
 
 
-def test_strip_duplicate_body_h1_keeps_distinct_h1():
-    """If the body H1 differs from the hero H1, leave both in place
-    (something unusual is going on; don't silently delete content)."""
+def test_strip_duplicate_body_h1_removes_drifted_h1():
+    """The body H1 goes even when its text differs from the hero.
+
+    ``title:`` is the short SEO form and the body H1 the long headline,
+    so on most posts the two differ by wording. A second H1 is wrong
+    whatever it says, so the strip is keyed on position, not text.
+    """
     from postbuild_lib.html_passes import strip_duplicate_body_h1
 
     html = (
         '<section class="ap-hero"><h1>Hero Title</h1></section>'
         '<main><div class="wrap-article">'
-        "<h1>A different body title</h1>"
+        "<h1>A different, longer body title</h1>"
         "<p>body</p>"
         "</div></main>"
     )
     out = strip_duplicate_body_h1(html)
-    assert out == html
+    assert out.count("<h1>") == 1
+    assert "<h1>Hero Title</h1>" in out
+    assert "A different, longer body title" not in out
 
 
 def test_strip_duplicate_body_h1_no_op_without_hero():
