@@ -137,6 +137,40 @@ Pro finanční instituce tento přechod vytváří zásadní provozní omezení:
 
 [Pacs008](https://github.com/sebastienrousseau/pacs008) tento problém řeší. Je to open source, odlehčená Python knihovna, která automatizuje konverzi surových finančních dat do plně validovaných ISO 20022 pacs.008 mezibankovních klientských úvěrových převodů odpovídajících schématu. Překlenutím mezery mezi legacy a strukturovanými daty dodává pacs008 vysoký Return on Resilience (RoR), chrání pracovní kapitál a zajišťuje provedení v reálném čase napříč globálními platebními kolejnicemi.
 
+## Proč jsem pacs008 postavil právě takto
+
+Napsal jsem `pacs008` i jeho předřazenou sestru `pain001` a svůj pracovní život
+věnuji velkoobchodním platbám a produktovému řízení API. Právě tato kombinace
+vysvětluje podobu knihovny, a proto stojí za to vyslovit rozhodnutí výslovně,
+místo abych je nechal skryté v kódu.
+
+**Validace běží před generováním, ne po něm.** Instinkt většiny platebních
+prostředí je vygenerovat zprávu a teprve pak ji zkontrolovat, protože tak je
+tvarován kontrolní proces: vznikne soubor, někdo jej prohlédne, výjimky putují do
+fronty. Toto pořadí zaručuje, že se vady najdou v místě nejmenší páky — až když
+je práce na sestavení zprávy hotová, a často až když zpráva opustila instituci.
+Validovat nejdřív znamená, že nevyhovující adresa nebo chybný IBAN je selháním
+buildu, nikoli odmítnutím v síti.
+
+**Licence je MIT, protože banky musí validační logiku číst, ne jí věřit.**
+Uzavřený validátor žádá instituci, aby na slovo přijala cizí výklad prováděcích
+pokynů. To není rozumné chtít po týmu, který nese regulatorní povinnost. Každé
+pravidlo v této knihovně lze prohlédnout, zpochybnit a forknout.
+
+**Validuje se proti oficiálním XSD schématům, ne proti vlastní
+reimplementaci.** Ručně psaná aproximace pravidel ISO 20022 se odchýlí od
+skutečné smlouvy sítě, jakmile se kterákoli strana změní. Schémata jsou ta
+smlouva; cokoli jiného je druhý zdroj pravdy čekající, až si budou odporovat.
+
+**Míří na CI, ne na krok revize.** Validátor, na jehož spuštění si musí někdo
+vzpomenout, je validátor, který se pod tlakem termínů přestane spouštět — tedy
+přesně tehdy, kdy je nejdůležitější.
+
+Co knihovna záměrně nedělá, je stejně záměrné. Je to nástroj vrstvy zpráv.
+Nenahrazuje platební engine, systém sankčního screeningu ani očistu kmenových dat
+klientů, kterou instituce musí provést u zdroje. Činí tuto očistu vymahatelnou;
+nedělá ji za vás.
+
 ## Architektonická optika pacs008 2026
 
 Knihovna pacs008 je strukturována jako izolovaný validační a generační engine, který zajišťuje, že surové vstupy jsou systematicky parsovány, obohaceny a obaleny do standardních obálek:

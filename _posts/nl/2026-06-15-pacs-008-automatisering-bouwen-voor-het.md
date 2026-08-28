@@ -137,6 +137,44 @@ Voor financiële instellingen creëert deze overgang grote operationele beperkin
 
 [pacs008](https://github.com/sebastienrousseau/pacs008) lost dit probleem op. Het is een open source, lichtgewicht Python-bibliotheek die de conversie automatiseert van ruwe financiële data naar volledig gevalideerde, schema-conforme ISO 20022 pacs.008-berichten voor interbancaire klant-overboekingen. Door de kloof tussen legacy en gestructureerde data te overbruggen, levert pacs008 een hoog Return on Resilience (RoR), met behoud van werkkapitaal en zekerstelling van realtime-uitvoering over wereldwijde rails.
 
+## Waarom ik pacs008 zo heb gebouwd
+
+Ik heb `pacs008` geschreven, en het bovenstroomse zusterproject `pain001`, en ik
+besteed mijn werkende leven aan wholesale payments en API-productmanagement. Die
+combinatie verklaart waarom deze bibliotheek eruitziet zoals ze eruitziet, dus is
+het de moeite waard de keuzes expliciet te maken in plaats van ze impliciet in de
+code te laten.
+
+**Validatie draait vóór generatie, niet erna.** De reflex in de meeste
+betaallandschappen is een bericht genereren en het daarna controleren, omdat het
+reviewproces zo is gevormd: er wordt een bestand geproduceerd, iemand bekijkt
+het, uitzonderingen gaan naar een wachtrij. Die volgorde garandeert dat fouten
+worden gevonden op het punt met de minste hefboom — nadat het samenstellen van
+het bericht al is gedaan, en vaak nadat het het pand al heeft verlaten. Eerst
+valideren betekent dat een niet-conform adres of een misvormd IBAN een
+build-fout wordt in plaats van een afwijzing op het netwerk.
+
+**De licentie is MIT omdat banken de validatielogica moeten kunnen lezen, niet
+vertrouwen.** Een gesloten validator vraagt een instelling om andermans lezing
+van de usage guidelines op goed geloof te aanvaarden. Dat is geen redelijke vraag
+aan een team dat de regulatoire verplichting draagt. Elke regel in deze
+bibliotheek kan worden geïnspecteerd, betwist en geforkt.
+
+**Er wordt gevalideerd tegen de officiële XSD-schema's in plaats van tegen een
+herimplementatie.** Een met de hand geschreven benadering van de ISO 20022-regels
+loopt uit de pas met het feitelijke contract van het netwerk zodra een van beide
+zijden verandert. De schema's zijn het contract; al het andere is een tweede bron
+van waarheid die staat te wachten om het tegen te spreken.
+
+**Ze richt zich op CI in plaats van op een reviewstap.** Een validator die iemand
+moet onthouden te draaien, is een validator die onder tijdsdruk niet meer wordt
+gedraaid — precies wanneer het er het meest toe doet.
+
+Wat de bibliotheek bewust níét doet, is even bewust gekozen. Ze is een toolkit
+voor de berichtlaag. Ze vervangt geen betaalengine, geen sanctiescreening en
+evenmin het opschonen van de klantstamgegevens dat een instelling bij de bron
+moet doen. Ze maakt dat opschonen afdwingbaar; ze doet het niet voor u.
+
 ## Architectuurperspectief van pacs008 in 2026
 
 De pacs008-bibliotheek is gestructureerd als een geïsoleerde validatie- en generatie-engine, die ervoor zorgt dat ruwe invoer systematisch wordt geparseerd, verrijkt en in standaard-enveloppen wordt verpakt:

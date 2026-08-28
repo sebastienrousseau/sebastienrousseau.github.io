@@ -137,6 +137,44 @@ Per le istituzioni finanziarie questa transizione genera vincoli operativi rilev
 
 [pacs008](https://github.com/sebastienrousseau/pacs008) risolve questo problema. È una libreria Python open source e leggera che automatizza la conversione di dati finanziari grezzi in messaggi ISO 20022 pacs.008 di bonifico cliente interbancario pienamente validati e conformi allo schema. Colmando il divario fra dati legacy e dati strutturati, pacs008 produce un alto Return on Resilience (RoR), preservando il capitale circolante e assicurando l'esecuzione in tempo reale sui rail globali.
 
+## Perché ho costruito pacs008 in questo modo
+
+Ho scritto `pacs008` e la sua sorella a monte `pain001`, e dedico la mia vita
+lavorativa ai pagamenti wholesale e al product management delle API. È questa
+combinazione a spiegare la forma di questa libreria, e vale quindi la pena
+esplicitare le decisioni invece di lasciarle implicite nel codice.
+
+**La validazione precede la generazione, non la segue.** L'istinto, nella maggior
+parte dei patrimoni applicativi dei pagamenti, è generare un messaggio e poi
+verificarlo, perché è così che è modellato il processo di revisione: si produce
+un file, qualcuno lo ispeziona, le eccezioni finiscono in coda. Quest'ordine
+garantisce che i difetti emergano nel punto di minor leva, quando il lavoro di
+assemblaggio è già fatto e spesso quando il messaggio ha già lasciato
+l'istituto. Validare prima significa che un indirizzo non conforme o un IBAN
+malformato diventa un errore di build anziché un rifiuto di rete.
+
+**La licenza è MIT perché le banche devono leggere la logica di validazione, non
+fidarsene.** Un validatore chiuso chiede a un istituto di accettare per fede la
+lettura che un altro dà delle usage guidelines. Non è una richiesta ragionevole
+verso un team che porta l'obbligo regolamentare. Ogni regola di questa libreria
+può essere ispezionata, contestata e forkata.
+
+**La validazione avviene contro gli schemi XSD ufficiali anziché essere
+reimplementata.** Un'approssimazione scritta a mano delle regole ISO 20022 devia
+dal contratto reale della rete non appena una delle due parti cambia. Gli schemi
+sono il contratto; tutto il resto è una seconda fonte di verità in attesa di
+contraddirlo.
+
+**Punta alla CI e non a un passaggio di revisione.** Un validatore che una
+persona deve ricordarsi di eseguire è un validatore che sotto la pressione delle
+scadenze smette di essere eseguito, cioè proprio quando conta di più.
+
+Ciò che la libreria deliberatamente non fa è altrettanto deliberato. È un toolkit
+del livello messaggio. Non sostituisce un motore di pagamento, un sistema di
+screening delle sanzioni, né la bonifica dei dati anagrafici del cliente che
+l'istituto deve fare alla fonte. Rende quella bonifica esigibile; non la fa al
+posto vostro.
+
 ## La lente architetturale pacs008 2026
 
 La libreria pacs008 è strutturata come un motore di validazione e generazione insulato, che assicura un parsing sistematico, l'arricchimento e l'incapsulamento standard degli input grezzi:

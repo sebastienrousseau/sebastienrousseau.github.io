@@ -137,6 +137,46 @@ Für Finanzinstitute entstehen aus diesem Übergang erhebliche operative Zwänge
 
 [pacs008](https://github.com/sebastienrousseau/pacs008) löst dieses Problem. Es ist eine schlanke, quelloffene Python-Bibliothek, die die Umwandlung von Roh-Finanzdaten in vollständig validierte, schemakonforme ISO 20022 pacs.008 Interbank-Kundenüberweisungs-Nachrichten automatisiert. Indem sie die Lücke zwischen Legacy- und strukturierten Daten schließt, liefert pacs008 einen hohen Return on Resilience (RoR), sichert das Working Capital und gewährleistet die Echtzeit-Ausführung über globale Rails.
 
+## Warum ich pacs008 so gebaut habe
+
+Ich habe `pacs008` geschrieben, ebenso das vorgelagerte Schwesterprojekt
+`pain001`, und ich verbringe mein Arbeitsleben mit Wholesale Payments und
+API-Produktmanagement. Diese Kombination ist der Grund, warum diese Bibliothek so
+aussieht, wie sie aussieht — es lohnt sich also, die Entscheidungen ausdrücklich
+darzulegen, statt sie implizit im Code zu belassen.
+
+**Die Validierung läuft vor der Generierung, nicht danach.** Der Reflex in den
+meisten Zahlungslandschaften besteht darin, eine Nachricht zu erzeugen und sie
+anschließend zu prüfen, weil der Prüfprozess so geschnitten ist: Eine Datei
+entsteht, jemand sieht sie durch, Ausnahmen wandern in eine Warteschlange. Diese
+Reihenfolge garantiert, dass Fehler an der Stelle mit dem geringsten Hebel
+gefunden werden — nachdem die Arbeit des Zusammenbaus bereits erledigt ist und
+oft nachdem die Nachricht das Haus verlassen hat. Zuerst zu validieren heißt,
+dass eine nicht konforme Adresse oder eine fehlerhafte IBAN ein Build-Fehler wird
+statt einer Ablehnung im Netz.
+
+**Die Lizenz ist MIT, weil Banken die Validierungslogik lesen müssen, nicht ihr
+vertrauen.** Ein geschlossener Validator verlangt von einem Institut, die Lesart
+eines anderen zu den Usage Guidelines auf Treu und Glauben zu übernehmen. Das ist
+einem Team, das die regulatorische Verantwortung trägt, nicht zuzumuten. Jede
+Regel dieser Bibliothek lässt sich prüfen, bestreiten und forken.
+
+**Validiert wird gegen die offiziellen XSD-Schemata statt gegen eine
+Nachimplementierung.** Eine handgeschriebene Annäherung an die ISO-20022-Regeln
+driftet vom tatsächlichen Vertrag des Netzes ab, sobald sich eine der beiden
+Seiten ändert. Die Schemata sind der Vertrag; alles andere ist eine zweite
+Wahrheitsquelle, die nur darauf wartet, zu widersprechen.
+
+**Sie zielt auf CI statt auf einen Prüfschritt.** Ein Validator, an dessen
+Ausführung sich ein Mensch erinnern muss, ist ein Validator, der unter Termindruck
+nicht mehr ausgeführt wird — also genau dann, wenn er am wichtigsten ist.
+
+Was die Bibliothek bewusst nicht tut, ist ebenso bewusst gewählt. Sie ist ein
+Werkzeugkasten für die Nachrichtenebene. Sie ersetzt weder eine Payment Engine
+noch ein Sanktions-Screening noch die Bereinigung der Kundenstammdaten, die ein
+Institut an der Quelle leisten muss. Sie macht diese Bereinigung durchsetzbar;
+sie nimmt sie Ihnen nicht ab.
+
 ## Die Architekturperspektive von pacs008 für 2026
 
 Die pacs008-Bibliothek ist als gekapselte Validierungs- und Erzeugungs-Engine aufgebaut und stellt sicher, dass rohe Eingaben systematisch geparst, angereichert und in Standard-Hüllen verpackt werden:

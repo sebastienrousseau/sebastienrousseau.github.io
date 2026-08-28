@@ -137,6 +137,41 @@ Fún àwọn ilé-ìṣirò owó, ìṣíkiri yìí ń dá àwọn ìnira ìṣi
 
 [pacs008](https://github.com/sebastienrousseau/pacs008) ń yanjú ìṣòro yìí. Ó jẹ́ ìwé-ìkàwé Python orisun ṣiṣi tó fẹ́rẹ̀ẹ́, tó ń ṣe àdàṣe ìyípadà dátà ìnáwó òṣùwọ̀n sí àwọn ìránṣẹ́ gbígbé awin onibara interbank ISO 20022 pacs.008 tí a ti fọwọsi gbangba, tí ó sì bá àwòkọ́ṣe mu. Nípa pípa aafo dátà àtijọ́-sí-tó-ní-ètò, pacs008 ń pèsè Return on Resilience (RoR) tó ga, ó ń pa owó iṣẹ́ wíwà mọ́, ó sì ń dáàbò bo ìṣiṣẹ́ àkókò gangan kọjá àwọn ọ̀nà àgbáyé.
 
+## Ìdí tí mo fi kọ́ pacs008 báyìí
+
+Èmi ni mo kọ `pacs008` àti arákùnrin rẹ̀ tí ó wà lókè, `pain001`, mo sì ń lo ìgbésí
+ayé iṣẹ́ mi lórí ìsanwó ńlá àti ìṣàkóso ọjà API. Ìdàpọ̀ yìí ni ìdí tí ilé-ìkàwé yìí
+fi rí báyìí, nítorí náà ó yẹ kí a sọ àwọn ìpinnu náà ní gbangba dípò kí a fi wọ́n
+pamọ́ nínú kóòdù.
+
+**Ìfẹsẹ̀múlẹ̀ ń ṣiṣẹ́ ṣáájú ìṣẹ̀dá, kì í ṣe lẹ́yìn rẹ̀.** Àṣà tí ó wọ́pọ̀ nínú ọ̀pọ̀
+ètò ìsanwó ni láti ṣẹ̀dá ìfìwéránṣẹ́ kí a tó yẹ̀ ẹ́ wò, nítorí bẹ́ẹ̀ ni a ṣe ètò
+àyẹ̀wò: a ṣẹ̀dá fáìlì, ẹnìkan yẹ̀ ẹ́ wò, àwọn àyàfi lọ sí ìlà ìdúró. Ètò yìí ń mú
+kí a rí àṣìṣe níbi tí agbára àtúnṣe kéré jù — lẹ́yìn tí iṣẹ́ kíkó ìfìwéránṣẹ́
+papọ̀ ti parí, àti lọ́pọ̀ ìgbà lẹ́yìn tí ó ti kúrò ní ilé-iṣẹ́. Ìfẹsẹ̀múlẹ̀ ṣáájú
+túmọ̀ sí pé àdírẹ́sì tí kò bá òfin mu tàbí IBAN tí kò tọ́ di àṣìṣe ìkọ́, kì í ṣe
+ìkọ̀sílẹ̀ láti ọ̀dọ̀ nẹ́tíwọ́kì.
+
+**Ìwé àṣẹ jẹ́ MIT nítorí àwọn báǹkì gbọ́dọ̀ ka ọgbọ́n ìfẹsẹ̀múlẹ̀, kì í ṣe kí wọ́n
+gbẹ́kẹ̀lé e lásán.** Olùfẹsẹ̀múlẹ̀ tí a tì bèèrè pé kí ilé-iṣẹ́ gba ìtumọ̀ ẹlòmíràn
+nípa àwọn ìtọ́sọ́nà ìlò gbọ́ ní àìfọ̀rọ̀wérọ̀. Kì í ṣe ohun tí ó tọ́ láti bèèrè lọ́wọ́
+ẹgbẹ́ tí ó ru ojúṣe ìlànà. Gbogbo òfin nínú ilé-ìkàwé yìí ni a lè yẹ̀ wò, kí a
+tako, kí a sì fork.
+
+**A ń fẹsẹ̀múlẹ̀ lòdì sí àwọn àwòrán XSD òṣìṣẹ́ dípò kí a tún wọn kọ.** Ìsúnmọ́ tí a
+kọ ní ọwọ́ nípa àwọn òfin ISO 20022 yóò yàtọ̀ sí àdéhùn gidi ti nẹ́tíwọ́kì ní kété
+tí ẹgbẹ́ kankan bá yípadà. Àwọn àwòrán náà ni àdéhùn; ohunkóhun mìíràn jẹ́ orísun
+òtítọ́ kejì tí ó ń dúró láti tako.
+
+**Ó ń fojúsùn CI dípò ìgbésẹ̀ àyẹ̀wò.** Olùfẹsẹ̀múlẹ̀ tí ènìyàn gbọ́dọ̀ rántí láti
+ṣiṣẹ́ jẹ́ olùfẹsẹ̀múlẹ̀ tí a máa dá ṣíṣe dúró nígbà ìdààmú àkókò — èyí tí ó jẹ́ ìgbà
+tí ó ṣe pàtàkì jùlọ.
+
+Ohun tí ilé-ìkàwé náà kò ṣe mọ̀ọ́mọ̀ jẹ́ mọ̀ọ́mọ̀ bákan náà. Ohun èlò ìpele
+ìfìwéránṣẹ́ ni. Kò rọ́pò ẹ̀rọ ìsanwó, ètò àyẹ̀wò ìjìyà, tàbí àtúnṣe àkọsílẹ̀ pàtàkì
+oníbàárà tí ilé-iṣẹ́ gbọ́dọ̀ ṣe ní orísun. Ó mú kí àtúnṣe náà di ohun tí a lè
+béèrè fún; kò ṣe é fún ọ.
+
 ## Èèdì Ìkọ́lé pacs008 ní 2026
 
 A ti gbé ìwé-ìkàwé pacs008 kalẹ̀ gẹ́gẹ́ bí ẹ̀rọ ìfọwọsì àti ìṣẹ̀dá tí a kò sopọ̀, tí ó ń ṣe ìdáńdé pé a kọ́, a fi agbára kún, a sì fi àwọn dátà òṣùwọ̀n pamọ́ sínú àwọn òbìrìkítí òṣùnwọ̀n:

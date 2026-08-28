@@ -137,6 +137,42 @@ Bagi lembaga keuangan, transisi ini menciptakan kendala operasional besar:
 
 [Pacs008](https://github.com/sebastienrousseau/pacs008) menyelesaikan persoalan ini. Ia adalah pustaka Python open source yang ringan, mengotomatisasi konversi data keuangan mentah menjadi pesan transfer kredit nasabah antarbank pacs.008 ISO 20022 yang sepenuhnya tervalidasi dan patuh skema. Dengan menjembatani jurang data legacy-ke-terstruktur, pacs008 memberikan Return on Resilience (RoR) yang tinggi, menjaga modal kerja, dan mengamankan eksekusi real-time di seluruh rel global.
 
+## Mengapa saya membangun pacs008 seperti ini
+
+Saya menulis `pacs008` dan saudaranya di hulu, `pain001`, dan saya menghabiskan
+hidup kerja saya pada pembayaran wholesale serta manajemen produk API. Kombinasi
+itulah alasan pustaka ini berbentuk seperti sekarang, jadi lebih baik keputusan
+tersebut dinyatakan terbuka daripada dibiarkan tersirat di dalam kode.
+
+**Validasi berjalan sebelum pembuatan, bukan sesudahnya.** Naluri pada sebagian
+besar lanskap pembayaran adalah membuat pesan lalu memeriksanya, karena begitulah
+proses telaah dibentuk: berkas dihasilkan, seseorang memeriksanya, pengecualian
+masuk antrean. Urutan itu menjamin cacat ditemukan pada titik dengan daya ungkit
+paling kecil — setelah pekerjaan menyusun pesan selesai, dan sering kali setelah
+pesan meninggalkan institusi. Memvalidasi lebih dulu berarti alamat yang tidak
+patuh atau IBAN yang cacat menjadi kegagalan build, bukan penolakan jaringan.
+
+**Lisensinya MIT karena bank harus membaca logika validasi, bukan
+memercayainya.** Validator tertutup meminta institusi menerima begitu saja
+pembacaan orang lain atas panduan penggunaan. Itu bukan permintaan yang wajar
+kepada tim yang memikul kewajiban regulasi. Setiap aturan di pustaka ini dapat
+diperiksa, dibantah, dan difork.
+
+**Validasi diuji terhadap skema XSD resmi, bukan diimplementasikan ulang.**
+Pendekatan buatan tangan atas aturan ISO 20022 akan menyimpang dari kontrak nyata
+jaringan begitu salah satu sisi berubah. Skema adalah kontraknya; hal lain adalah
+sumber kebenaran kedua yang menunggu untuk berselisih.
+
+**Ia menyasar CI, bukan langkah telaah.** Validator yang harus diingat seseorang
+untuk dijalankan adalah validator yang berhenti dijalankan di bawah tekanan
+tenggat — persis ketika ia paling penting.
+
+Apa yang sengaja tidak dilakukan pustaka ini sama disengajanya. Ini adalah
+perkakas lapisan pesan. Ia tidak menggantikan mesin pembayaran, sistem penyaringan
+sanksi, atau pembenahan data induk nasabah yang harus dilakukan institusi di
+sumbernya. Ia membuat pembenahan itu dapat ditegakkan; ia tidak melakukannya
+untuk Anda.
+
 ## Lensa Arsitektur pacs008 2026
 
 Pustaka pacs008 disusun sebagai mesin validasi dan pembuatan terisolasi, memastikan input mentah diurai secara sistematis, diperkaya, dan dibungkus dalam selubung standar:

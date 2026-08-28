@@ -137,6 +137,41 @@ Ga cibiyoyin kuɗi, wannan canji yana haifar da manyan ƙuntatawa na aiki:
 
 [Pacs008](https://github.com/sebastienrousseau/pacs008) yana magance wannan matsala. Ɗakin karatu ne na Python na buɗaɗɗen tushe, mai sauƙi wanda ke sarrafa canjin bayanan kuɗi marasa tsari zuwa saƙonnin canja wurin kuɗin abokin ciniki tsakanin bankuna na ISO 20022 pacs.008 da aka tabbatar gabaɗaya, masu bin schema. Ta hanyar haɗa giɓin gargajiya-zuwa-tsari na bayanai, pacs008 yana ba da Riba Mai Girma kan Juriya (RoR), yana adana babban birni mai aiki kuma yana tabbatar da aiwatarwa a ainihin lokaci a kan dukkan layuka na duniya.
 
+## Dalilin da ya sa na gina pacs008 haka
+
+Ni na rubuta `pacs008` da ɗan'uwansa na sama, `pain001`, kuma rayuwar aikina tana
+kan biyan kuɗi na babban sikeli da kuma sarrafa kayan API. Wannan haɗin shi ne
+dalilin da ya sa wannan ɗakin karatu yake kamar haka, don haka ya dace a bayyana
+shawarwarin a fili maimakon barin su a ɓoye cikin lambar.
+
+**Tabbatarwa tana gudana kafin ƙirƙira, ba bayanta ba.** Al'adar da aka saba a
+yawancin tsarin biyan kuɗi ita ce a ƙirƙiri saƙo sannan a duba shi, domin haka
+aka tsara tsarin nazari: an ƙirƙiri fayil, wani ya duba shi, keɓancewa su shiga
+layi. Wannan tsari yana tabbatar da cewa ana samun kurakurai a wurin da ƙarfin
+gyara ya fi ƙaranci — bayan an gama aikin haɗa saƙon, kuma sau da yawa bayan ya
+bar cibiyar. Tabbatarwa da farko na nufin adireshi mara bin ƙa'ida ko IBAN mara
+kyau ya zama kuskuren gina shirin maimakon ƙin karɓa daga hanyar sadarwa.
+
+**Lasisin MIT ne domin bankuna suna buƙatar karanta dabarun tabbatarwa, ba
+amincewa da su kawai ba.** Mai tabbatarwa a rufe yana neman cibiya ta amince da
+fahimtar wani game da ƙa'idodin amfani ba tare da bincike ba. Wannan ba abu ne
+mai ma'ana a nema daga ƙungiyar da ke ɗauke da nauyin ka'ida ba. Kowace doka a
+cikin wannan ɗakin karatu ana iya duba ta, a ƙalubalance ta, a kuma yi mata fork.
+
+**Ana tabbatarwa bisa tsarin XSD na hukuma maimakon sake rubuta shi.** Kwatancen
+da aka rubuta da hannu na ƙa'idodin ISO 20022 zai rabu da ainihin yarjejeniyar
+hanyar sadarwa da zaran wani ɓangare ya canza. Tsarin XSD shi ne yarjejeniyar;
+duk sauran tushe ne na biyu na gaskiya wanda ke jira ya saɓa.
+
+**Tana nufin CI, ba mataki na nazari ba.** Mai tabbatarwa da mutum yake buƙatar
+tunawa don gudanar da shi shi ne mai tabbatarwa da ake dainawa gudanarwa a lokacin
+matsin lokaci — wato daidai lokacin da ya fi muhimmanci.
+
+Abin da ɗakin karatu bai yi da gangan ba shi ma an yi shi da gangan. Kayan aiki
+ne na matakin saƙo. Ba ya maye gurbin injin biyan kuɗi, tsarin binciken takunkumi,
+ko gyaran manyan bayanan abokin ciniki da cibiyar dole ta yi tun daga tushe. Yana
+sa wannan gyaran ya zama abin tilastawa; ba ya yi maka shi ba.
+
 ## Tabarau na Gine-gine na pacs008 a 2026
 
 An gina ɗakin karatu na pacs008 a matsayin injin tabbatarwa da samarwa wanda aka ware, yana tabbatar cewa ana sarrafa shigarwar danye cikin tsari, ana wadatar da su, kuma ana naɗa su a cikin ambulafin daidaitattu:

@@ -137,6 +137,48 @@ Para sa financial institutions, lumilikha ang transisyong ito ng mga pangunahing
 
 Nilulutas ng [Pacs008](https://github.com/sebastienrousseau/pacs008) ang problemang ito. Ito ay isang open-source at magaang Python library na nag-aautomate sa conversion ng raw financial data patungo sa fully validated at schema-compliant na ISO 20022 pacs.008 interbank customer credit transfer messages. Sa pamamagitan ng pagbubuklod sa legacy-to-structured data gap, naghahatid ang pacs008 ng mataas na Return on Resilience (RoR), na pinananatili ang working capital at sinisiguro ang real-time execution sa lahat ng global rails.
 
+## Kung bakit ganito ang pagkakabuo ko sa pacs008
+
+Ako ang sumulat ng `pacs008` at ng kapatid nitong nasa itaas, ang `pain001`, at
+inilalaan ko ang buhay-trabaho ko sa pakyawang bayaran at sa pamamahala ng
+produktong API. Ang pinagsamang ito ang dahilan kung bakit ganito ang anyo ng
+aklatan, kaya mabuti nang ilahad nang hayagan ang mga desisyon kaysa iwan ang mga
+ito na nakatago sa loob ng kodigo.
+
+**Nauuna ang pagpapatunay kaysa sa paglikha, hindi kabaligtaran.** Ang hilig sa
+karamihan ng ari-ariang pambayaran ay lumikha muna ng mensahe at saka ito
+suriin, sapagkat ganoon ang hubog ng proseso ng pagsusuri: nalilikha ang
+talaksan, may sumisilip dito, at napupunta sa pila ang eksepsiyon. Tinitiyak ng
+pagkakasunod na iyon na matutuklasan ang kapintasan sa puntong pinakamaliit ang
+pingga — matapos matapos ang gawain ng pagbuo sa mensahe, at madalas matapos itong
+lumabas ng institusyon. Ang unang pagpapatunay ay nangangahulugang ang di-sumusunod
+na tirahan o ang maling anyong IBAN ay nagiging kabiguan ng pagtatayo sa halip na
+pagtanggi ng network.
+
+**MIT ang lisensiya sapagkat kailangang mabasa ng bangko ang lohika ng
+pagpapatunay, hindi ito basta pagkatiwalaan.** Hinihingi ng saradong tagapagpatunay
+sa isang institusyon na tanggapin sa salita lamang ang pagbasa ng iba sa
+alituntunin ng paggamit. Hindi iyon makatwirang hingin sa pangkat na siyang may
+dalang obligasyong regulatoryo. Masusuri, matututulan, at ma-fork ang bawat
+patakaran sa aklatang ito.
+
+**Isinasagawa ang pagpapatunay laban sa opisyal na eskemang XSD sa halip na muling
+itayo ito.** Ang kamay na hulang bersiyon ng patakaran ng ISO 20022 ay lumilihis
+sa tunay na kontrata ng network sa oras na magbago ang alinmang panig. Ang eskema
+ang kontrata; ang lahat ng iba ay pangalawang bukal ng katotohanang naghihintay
+lamang na sumalungat.
+
+**Ang tinutumbok nito ay ang CI, hindi ang isang hakbang ng pagsusuri.** Ang
+tagapagpatunay na kailangan pang alalahanin ng tao upang patakbuhin ay
+tagapagpatunay na hihinto sa pagtakbo sa ilalim ng presyon ng takdang-araw — na
+siya mismong sandaling pinakamahalaga ito.
+
+Sinadya rin ang hindi ginagawa ng aklatan. Isa itong kasangkapan sa antas ng
+mensahe. Hindi nito pinapalitan ang makinarya ng bayaran, ang sistema ng pagsala
+sa parusa, o ang paglilinis ng pangunahing datos ng kliyente na kailangang gawin
+ng institusyon sa bukal. Ginagawa nitong maipatutupad ang paglilinis na iyon;
+hindi nito ito ginagawa para sa iyo.
+
 ## Ang Architecture Lens ng pacs008 sa 2026
 
 Binuo ang pacs008 library bilang isang insulated validation at generation engine, na tinitiyak na ang raw inputs ay sistematikong pinapro-proseso, pinapayaman, at binabalot sa mga standard envelope:

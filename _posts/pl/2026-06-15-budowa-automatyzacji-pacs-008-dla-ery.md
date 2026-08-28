@@ -137,6 +137,43 @@ Dla instytucji finansowych to przejście tworzy poważne ograniczenia operacyjne
 
 [pacs008](https://github.com/sebastienrousseau/pacs008) rozwiązuje ten problem. Jest lekką biblioteką Python open source, która automatyzuje konwersję surowych danych finansowych w pełni zwalidowane, zgodne ze schematem komunikaty ISO 20022 pacs.008 przelewu kredytowego klienta w obrocie międzybankowym. Łącząc lukę między danymi legacy a ustrukturyzowanymi, pacs008 dostarcza wysoki Return on Resilience (RoR), chroniąc kapitał obrotowy i zabezpieczając wykonanie w czasie rzeczywistym na rachach globalnych.
 
+## Dlaczego zbudowałem pacs008 właśnie tak
+
+Napisałem `pacs008` oraz jego siostrzany projekt `pain001`, a zawodowo zajmuję
+się płatnościami hurtowymi i zarządzaniem produktem API. To połączenie tłumaczy
+kształt tej biblioteki, więc warto wyłożyć te decyzje wprost, zamiast zostawiać
+je w domyśle w kodzie.
+
+**Walidacja poprzedza generowanie, a nie odwrotnie.** Odruch w większości
+środowisk płatniczych polega na wygenerowaniu komunikatu i dopiero potem jego
+sprawdzeniu, bo tak ukształtowany jest proces przeglądu: powstaje plik, ktoś go
+ogląda, wyjątki trafiają do kolejki. Taka kolejność gwarantuje, że wady zostaną
+znalezione w punkcie najmniejszej dźwigni — gdy praca nad złożeniem komunikatu
+jest już wykonana, a często gdy komunikat opuścił już instytucję. Walidacja
+najpierw oznacza, że niezgodny adres albo błędny IBAN staje się błędem builda, a
+nie odrzuceniem w sieci.
+
+**Licencja to MIT, ponieważ banki muszą czytać logikę walidacji, a nie jej
+ufać.** Zamknięty walidator prosi instytucję, by na słowo przyjęła cudzą
+interpretację wytycznych użycia. Nie jest to rozsądne żądanie wobec zespołu,
+który ponosi obowiązek regulacyjny. Każdą regułę tej biblioteki można obejrzeć,
+zakwestionować i sforkować.
+
+**Walidacja odbywa się wobec oficjalnych schematów XSD, a nie wobec własnej
+reimplementacji.** Ręcznie napisane przybliżenie reguł ISO 20022 rozjeżdża się z
+faktycznym kontraktem sieci, gdy tylko którakolwiek ze stron się zmieni. Schematy
+są kontraktem; wszystko inne to drugie źródło prawdy, które czeka, by mu
+zaprzeczyć.
+
+**Celuje w CI, a nie w krok przeglądu.** Walidator, o którego uruchomieniu ktoś
+musi pamiętać, to walidator, który przestaje być uruchamiany pod presją terminów
+— czyli dokładnie wtedy, gdy liczy się najbardziej.
+
+To, czego biblioteka celowo nie robi, jest równie celowe. To zestaw narzędzi
+warstwy komunikatów. Nie zastępuje silnika płatności, systemu screeningu sankcji
+ani porządkowania danych podstawowych klienta, które instytucja musi wykonać u
+źródła. Sprawia, że to porządkowanie da się wyegzekwować; nie robi go za was.
+
 ## Soczewka architektoniczna pacs008 w 2026
 
 Biblioteka pacs008 jest skonstruowana jako odizolowany silnik walidacji i generowania, zapewniający, że surowe wejścia są systematycznie parsowane, wzbogacane i opakowywane w standardowe koperty:

@@ -137,6 +137,41 @@ Tháng 6 năm 2026, ngành dịch vụ tài chính đang nhanh chóng tiến g�
 
 [pacs008](https://github.com/sebastienrousseau/pacs008) giải quyết vấn đề này. Đây là một thư viện Python mã nguồn mở, gọn nhẹ, tự động hóa việc chuyển đổi dữ liệu tài chính thô thành các thông điệp pacs.008 chuyển khoản tín dụng khách hàng liên ngân hàng ISO 20022 đã được xác thực đầy đủ và tuân thủ lược đồ. Bằng cách bắc cầu khoảng cách giữa dữ liệu kế thừa và có cấu trúc, pacs008 mang lại Return on Resilience (RoR) cao, bảo toàn vốn lưu động và đảm bảo thực thi theo thời gian thực trên các mạng thanh toán toàn cầu.
 
+## Vì sao tôi xây dựng pacs008 theo cách này
+
+Tôi viết `pacs008` và thư viện anh em ở thượng nguồn của nó, `pain001`, và tôi
+dành đời làm nghề cho thanh toán bán buôn cùng quản trị sản phẩm API. Chính sự
+kết hợp đó lý giải hình hài của thư viện này, nên tốt hơn là nêu rõ các quyết
+định thay vì để chúng ngầm ẩn trong mã nguồn.
+
+**Việc kiểm tra chạy trước khi sinh thông điệp, không phải sau.** Bản năng ở phần
+lớn hệ thống thanh toán là sinh thông điệp rồi mới kiểm tra, vì quy trình rà soát
+được định hình như vậy: một tệp được tạo ra, ai đó xem xét, ngoại lệ đi vào hàng
+đợi. Trật tự ấy bảo đảm rằng lỗi được phát hiện ở điểm ít đòn bẩy nhất — sau khi
+công việc lắp ráp thông điệp đã xong, và thường là sau khi nó đã rời khỏi tổ
+chức. Kiểm tra trước nghĩa là một địa chỉ không tuân thủ hay một IBAN sai định
+dạng trở thành lỗi build chứ không phải một lần từ chối trên mạng lưới.
+
+**Giấy phép là MIT bởi vì ngân hàng phải đọc được logic kiểm tra, chứ không phải
+tin vào nó.** Một trình kiểm tra đóng đòi hỏi tổ chức chấp nhận cách đọc hướng
+dẫn sử dụng của người khác trên cơ sở niềm tin. Đó không phải điều hợp lý để yêu
+cầu một đội ngũ đang gánh nghĩa vụ pháp lý. Mọi quy tắc trong thư viện này đều có
+thể được xem xét, phản bác và fork.
+
+**Việc kiểm tra dựa trên các lược đồ XSD chính thức thay vì cài đặt lại.** Một
+xấp xỉ viết tay của các quy tắc ISO 20022 sẽ lệch khỏi hợp đồng thực của mạng
+lưới ngay khi một trong hai phía thay đổi. Lược đồ chính là hợp đồng; mọi thứ
+khác là nguồn chân lý thứ hai đang chờ để mâu thuẫn.
+
+**Nó nhắm tới CI chứ không phải một bước rà soát.** Một trình kiểm tra mà con
+người phải nhớ để chạy là một trình kiểm tra sẽ thôi được chạy dưới áp lực thời
+hạn — đúng lúc nó quan trọng nhất.
+
+Những gì thư viện cố ý không làm cũng có chủ đích không kém. Đây là bộ công cụ ở
+tầng thông điệp. Nó không thay thế một hệ thống thanh toán lõi, một hệ thống rà
+soát cấm vận, hay việc làm sạch dữ liệu chủ khách hàng mà tổ chức phải thực hiện
+tại nguồn. Nó khiến việc làm sạch đó có thể cưỡng chế; nó không làm thay bạn.
+
 ## Lăng kính kiến trúc pacs008 năm 2026
 
 Thư viện pacs008 được cấu trúc như một engine xác thực và sinh thông điệp được cách ly, đảm bảo các đầu vào thô được phân tích, làm giàu và đóng gói trong các phong bì tiêu chuẩn một cách hệ thống:
