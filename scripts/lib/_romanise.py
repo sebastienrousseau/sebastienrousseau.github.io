@@ -1015,7 +1015,9 @@ def _has_inherent_vowel(nxt: str, code: str, vir: str, matra: set[str]) -> bool:
     """
     if nxt == vir or nxt in matra:
         return False
-    word_end = nxt == "" or not (_is_cons(nxt, code) or nxt in matra or nxt == vir)
+    # nxt is neither the virama nor a matra by now, so a non-consonant here
+    # (or the end of the string) means the syllable ends the word.
+    word_end = nxt == "" or not _is_cons(nxt, code)
     return not (word_end and code in _FINAL_SCHWA_DROP)
 
 
