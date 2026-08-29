@@ -54,3 +54,29 @@ def test_an_internal_link_is_resolved_without_its_query(tmp_path):
     (tmp_path / "about" / "index.html").write_text("x", encoding="utf-8")
     assert audit_links.check_internal("/about/?utm_source=x", tmp_path)
     assert not audit_links.check_internal("/missing/?utm_source=x", tmp_path)
+
+
+def test_share_endpoints_are_not_audited():
+    """They are actions, not citations: each page produces a distinct one and
+    they 404 to a HEAD from a datacentre.
+
+    Keeping the query string so a real citation resolves made every share
+    button its own URL — 3675 of 3832 reported-broken links were one
+    bsky.app share repeated once per page, which buried the real result.
+    """
+    for url in (
+        "https://bsky.app/intent/compose?text=hi",
+        "https://twitter.com/intent/tweet?url=x",
+        "https://www.facebook.com/sharer/sharer.php?u=x",
+        "https://www.linkedin.com/sharing/share-offsite/?url=x",
+    ):
+        assert audit_links.is_share_endpoint(url), url
+
+
+def test_a_cited_resource_is_still_audited():
+    for url in (
+        "https://www.bis.org/publ/bcbs189.pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R2554",
+        "https://bsky.app/profile/someone",
+    ):
+        assert not audit_links.is_share_endpoint(url), url
