@@ -109,4 +109,4 @@ OpenVoice marca um ponto seminal em a evolução de a tecnologia de clonación d
 [01]: https://research.myshell.ai/open-voice "OpenVoice: Versatile Instant Voice Cloning"
 [02]: https://openai.com/blog/navigating-the-challenges-and-opportunities-of-synthetic-voices "Navigating the Challenges and Opportunities of Synthetic Voices"
 [03]: https://www.mit.edu/ "Massachusetts Institute of Technology"
-[04]: https://www.tsinghua.edu.cn/em/ "Tsinghua University"
+[04]: https://www.tsinghua.edu.cn/en/ "Tsinghua University"
