@@ -399,49 +399,35 @@ jobs:
 
       - name: Run pa11y-ci on this shard
         run: |
-          n=$(python3 -c "import json; print(len(json.load(open('.pa11yci.shard'))['urls']))")
-          if [ "$n" -eq 0 ]; then
-            echo "empty shard"
-            echo '{"total":0,"passes":0,"errors":0,"results":{}}' > pa11y.shard.json
-            exit 0
-          fi
-          # A wedged headless-Chrome process hangs pa11y-ci on a single
-          # URL indefinitely. Bounding only the whole job turns that into
-          # a skipped deploy, which is how one transient hang on
-          # 2026-07-30 kept three later merges off production. Bound each
-          # attempt instead and retry once: the hang is transient, and a
-          # re-run of the same commit completed in ~30 min after the
-          # first attempt burned the full 50-minute job budget.
+          # A wedged headless Chrome hangs pa11y-ci on the URL it is holding.
+          # pa11y's own `timeout` is a page-load timeout inside the browser,
+          # so it never fires when the browser itself is what stopped
+          # responding.
           #
-          # 35m per attempt clears a clean shard with margin (~13 min
-          # typical, ~30 min against a large backlog delta) while still
-          # catching a hang well inside the job timeout.
-          run_shard() {
-            timeout --signal=TERM --kill-after=60s 35m \
-              pa11y-ci -c .pa11yci.shard --reporter json > pa11y.shard.json
-          }
+          # Bounding the whole shard (35m, retried once) turned one stuck URL
+          # into 70 minutes of CI, no results for any other URL in the shard,
+          # and no clue which URL was to blame — 3 of the 15 runs before this
+          # change, and one hang on 2026-07-30 kept three merges off
+          # production. The runner below bounds each chunk instead: a wedge
+          # costs one chunk, names its URLs, and every other chunk still
+          # reports.
+          # The step shell is `bash -e`, so the runner's exit code has to be
+          # captured with errexit off or the step dies before rc is read.
           set +e
-          run_shard
+          python3 scripts/seo_and_audit/pa11y_run_shard.py \
+            --config .pa11yci.shard \
+            --out pa11y.shard.json \
+            --chunk-size 8 \
+            --timeout 360 \
+            --budget 3300
           rc=$?
-          # 124 = timeout fired; 137 = SIGKILL after --kill-after.
-          if [ "$rc" -eq 124 ] || [ "$rc" -eq 137 ]; then
-            echo "pa11y: shard wedged (exit $rc). Killing stray Chrome and retrying once."
-            pkill -f "chrome|chromium" 2>/dev/null || true
-            sleep 5
-            run_shard
-            rc=$?
-            if [ "$rc" -eq 124 ] || [ "$rc" -eq 137 ]; then
-              echo "pa11y: shard wedged again — failing this shard."
-              exit 1
-            fi
-          fi
           set -e
           if [ "$rc" -eq 0 ]; then
             exit 0
           fi
-          # Best-effort flake retry on this shard's results. The shard
-          # still fails if real errors remain after the retry, blocking
-          # finalise from updating the cache.
+          # Best-effort flake retry on this shard's results. The shard still
+          # fails if real errors remain after the retry, blocking finalise
+          # from updating the cache.
           python3 scripts/seo_and_audit/pa11y_retry_flakes.py pa11y.shard.json
 
       - name: Upload pa11y shard result
