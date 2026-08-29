@@ -68,6 +68,10 @@ test:
 # Static analysis (ruff, configured in pyproject.toml).
 lint:
 	@ruff check scripts/ tests/
+# CI's Static analysis job gates formatting separately from linting, so a
+# ruff-check-clean branch could still fail there — which is what happened to
+# PR #455 after local verification passed. Same check, same scope as CI.
+	@ruff format --check scripts/ tests/
 	@python3 scripts/dev/check_naming_conventions.py
 	@bash scripts/dev/check-complexity.sh
 

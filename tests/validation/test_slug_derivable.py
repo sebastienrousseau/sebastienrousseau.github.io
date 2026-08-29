@@ -28,7 +28,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -60,6 +62,73 @@ def locale_report() -> dict[str, dict[str, int]]:
         if total:
             out[d.name] = {"total": total, "derivable": derivable}
     return out
+
+
+def _base_ref() -> str | None:
+    """The ref this branch is measured against, if one is resolvable."""
+    candidates = []
+    if os.environ.get("GITHUB_BASE_REF"):
+        candidates.append(f"origin/{os.environ['GITHUB_BASE_REF']}")
+    candidates += ["origin/main", "main"]
+    for ref in candidates:
+        proc = subprocess.run(
+            ["git", "rev-parse", "--verify", "--quiet", ref],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        if proc.returncode == 0:
+            return ref
+    return None
+
+
+def changed_posts(base: str) -> list[Path]:
+    """Posts added or renamed since ``base``.
+
+    The ratchet compares a per-locale *count*, so a new post with a
+    hand-typed slug slips through as long as some other post becomes
+    derivable — verified by seeding exactly that and watching the ratchet
+    pass. New work has no archive to excuse it, so it is held to the
+    deriver exactly.
+    """
+    proc = subprocess.run(
+        ["git", "diff", "--name-status", "--diff-filter=AR", f"{base}...HEAD", "--", "_posts"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if proc.returncode != 0:
+        return []
+    paths = []
+    for line in proc.stdout.splitlines():
+        path = line.split("\t")[-1]  # for a rename this is the destination
+        if path.endswith(".md"):
+            paths.append(ROOT / path)
+    return [p for p in paths if p.is_file()]
+
+
+def check_changed(paths: list[Path]) -> list[str]:
+    """Every added or renamed locale post must re-derive from its title."""
+    problems = []
+    for post in paths:
+        parts = post.relative_to(ROOT).parts
+        if len(parts) < 3:
+            continue  # EN posts live at _posts/*.md and are not localised
+        locale = parts[1]
+        match = _TITLE_RE.search(post.read_text(encoding="utf-8"))
+        if match is None:
+            continue
+        date = post.stem[:10]
+        want = f"{date}-{derive_slug(match.group(1), locale, date[:4])}"
+        if post.stem != want:
+            problems.append(
+                f"{post.relative_to(ROOT)}: slug is not derivable — expected {want!r}. "
+                f"Rename it, or add the missing words to "
+                f"_data/i18n/romanisation-lexicon.json."
+            )
+    return problems
 
 
 def evaluate(
@@ -106,6 +175,14 @@ def main(argv: list[str] | None = None) -> int:
 
     baseline = json.loads(BASELINE.read_text(encoding="utf-8")) if BASELINE.exists() else {}
     failures, backlog = evaluate(report, baseline)
+
+    # New work is held to the deriver exactly; the archive stays on the ratchet.
+    base = _base_ref()
+    if base:
+        changed = changed_posts(base)
+        if changed:
+            print(f"  strict: {len(changed)} post(s) added or renamed since {base}")
+        failures.extend(check_changed(changed))
 
     for line in backlog:
         print(f"  backlog: {line}")
