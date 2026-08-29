@@ -276,6 +276,7 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
 from postbuild_lib.redirects import apply_article_redirects, apply_redirect_pages
 from postbuild_lib.schemas import (
     align_article_identity,
+    inject_dataset,
     inject_faq_schema,
     inject_news_article,
     inject_software_source_code,
@@ -335,6 +336,7 @@ class _PostbuildCounters:
         "crumbs_patched",
         "csp_normalised",
         "csp_patched",
+        "dataset_patched",
         "decks_set",
         "desc_cleaned",
         "eyebrows_set",
@@ -520,6 +522,10 @@ def _apply_schema_subtype_passes(
     out = inject_news_article(page, out)
     if out != prev:
         ctr.newsarticle_patched += 1
+    prev = out
+    out = inject_dataset(page, out)
+    if out != prev:
+        ctr.dataset_patched += 1
     prev = out
     out = inject_software_source_code(page, out)
     if out != prev:
@@ -920,6 +926,7 @@ def main() -> None:
         f"{c.sri_patched} got real SRI, "
         f"{c.itemlist_patched} got ItemList JSON-LD, "
         f"{c.techarticle_patched} got TechArticle, "
+        f"{c.dataset_patched} got Dataset, "
         f"{c.article_identity_aligned} had Article identity aligned to canonical, "
         f"{c.faq_schema_patched} got FAQPage, "
         f"{c.analytics_injected} got the analytics beacon, "

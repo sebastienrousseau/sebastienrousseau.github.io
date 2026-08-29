@@ -1,0 +1,313 @@
+{
+  "$comment": "Publish the index and scorecard articles as machine-readable datasets.",
+  "datasets": [
+    {
+      "slug": "2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026",
+      "name": "The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments",
+      "description": "A Stanford AI Index-inspired banking infrastructure index for 2026, measuring readiness across agentic AI, quantum-safe security, cloud native resilience, and global wholesale payments.",
+      "keywords": "banking infrastructure index 2026, agentic AI banking, quantum safe banking, cloud native banking, wholesale payments, ISO 20022, DORA, Project Agora, tokenised deposits",
+      "date": "Jun 2, 2026",
+      "measures": "Index Layer",
+      "variables": [
+        {
+          "name": "Agentic AI",
+          "description": "2026 Direction: From copilots to bounded autonomous workflows; Readiness Metric: Task success, human override, auditability, value per decision; Risk if Mishandled: Unbounded autonomy, hallucinated action, weak accountability"
+        },
+        {
+          "name": "Quantum-safe security",
+          "description": "2026 Direction: From crypto inventory to hybrid PQC migration; Readiness Metric: Coverage of ML-KEM, ML-DSA, SLH-DSA readiness; Risk if Mishandled: Harvest-now-decrypt-later exposure"
+        },
+        {
+          "name": "Cloud native resilience",
+          "description": "2026 Direction: From cloud adoption to demonstrable exit and failover evidence; Readiness Metric: DORA register, exit tests, concentration controls; Risk if Mishandled: Critical-function outage without credible recovery"
+        },
+        {
+          "name": "Wholesale payments",
+          "description": "2026 Direction: From messaging migration to programmable settlement; Readiness Metric: ISO 20022 quality, tokenised settlement, liquidity impact; Risk if Mishandled: Faster fragmented payments with poor data"
+        },
+        {
+          "name": "Economics",
+          "description": "2026 Direction: From innovation budgets to unit economics; Readiness Metric: Cost per decision, payment, repair, investigation, and settlement; Risk if Mishandled: Scaling technology without measurable value"
+        }
+      ]
+    },
+    {
+      "slug": "2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026",
+      "name": "The Agentic AI Index for Banks in 2026: Measuring Autonomy, Governance, Auditability, and Business Impact",
+      "description": "An index-style framework for measuring agentic AI readiness in banks, covering autonomy, governance, auditability, reliability, controls, and business value.",
+      "keywords": "agentic AI banking 2026, AI agents banks, AI governance financial services, autonomous banking workflows, model risk management, AI auditability",
+      "date": "June 3, 2026",
+      "measures": "Index Layer",
+      "variables": [
+        {
+          "name": "Autonomy tier",
+          "description": "What \"Ready\" Looks Like: Every production workflow tagged Level 0\u20134; no Level 5 in production; Readiness Metric: % workflows by tier; share at Level 3+; Failure Mode: Production agent emits a pacs.008 to a hallucinated beneficiary BIC because no static allow-list gates the payload before SWIFTNet"
+        },
+        {
+          "name": "API permissioning",
+          "description": "What \"Ready\" Looks Like: Each agent maps to one service account with least-privilege OAuth scopes (e.g., card-freeze:write:lt-5000usd); MTLS to legacy core; Readiness Metric: % agents at least-privilege; orphan-permission count; Failure Mode: Agent reuses an over-scoped service account; iterates accounts it had no business reading; GDPR Article 33 incident filed within 72 hours"
+        },
+        {
+          "name": "Deterministic guardrails",
+          "description": "What \"Ready\" Looks Like: Every tool-call routed through a semantic router (NeMo Guardrails / LangChain Guardrails) plus JSON-schema validator before the API; Readiness Metric: % tool-calls intercepted; reject rate by category; Failure Mode: LLM emits a transfer call with amount: 0; downstream API does not validate; ledger reconciliation alert lands 18 hours later in a different timezone"
+        },
+        {
+          "name": "Human-in-the-loop coverage",
+          "description": "What \"Ready\" Looks Like: Every Level-3 execution surfaces an approval UI with a hard timeout; auto-approve disabled by policy; Readiness Metric: Approval throughput; rubber-stamp rate (approved in under 2 seconds); Failure Mode: Operator clicks \"approve\" on 200 alerts in 4 minutes; SAR filed against a legitimate customer; regulator complaint within the week"
+        },
+        {
+          "name": "Audit completeness",
+          "description": "What \"Ready\" Looks Like: Immutable WORM log captures system prompt + retrieved context + LLM output + tool-call + tool result + approver UID; cryptographically signed at write time; Readiness Metric: % invocations with complete trace; Failure Mode: SR 11-7 examiner asks why agent #4421 approved a $4.8M wire; bank has the wire receipt and the model card; no prompt-level evidence; finding issued"
+        },
+        {
+          "name": "Unit economics",
+          "description": "What \"Ready\" Looks Like: Cost per completed decision tracked including reversal and repair cost; positive vs manual baseline; Readiness Metric: Net cost per decision; reversal rate; Failure Mode: Per-token spend on edge-case agents exceeds the manual investigator cost they replaced; CFO kills the program in Q3"
+        }
+      ]
+    },
+    {
+      "slug": "2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026",
+      "name": "The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk",
+      "description": "A banking index for quantum-safe readiness in 2026, covering NIST post-quantum standards, cryptographic inventory, crypto-agility, QKD, and long-lived data exposure.",
+      "keywords": "quantum safe banking 2026, post quantum cryptography banks, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto agility, QKD banking",
+      "date": "June 4, 2026",
+      "measures": "Index Layer",
+      "variables": [
+        {
+          "name": "Inventory",
+          "description": "2026 Direction: Map cryptographic assets, protocols, certificates, vendors, and data classes; Readiness Metric: Percentage of estate inventoried; Risk if Mishandled: Unknown quantum-vulnerable dependencies"
+        },
+        {
+          "name": "Exposure",
+          "description": "2026 Direction: Classify systems by confidentiality lifetime and transaction criticality; Readiness Metric: High-risk assets by value and lifetime; Risk if Mishandled: Misprioritised migration"
+        },
+        {
+          "name": "Migration",
+          "description": "2026 Direction: Adopt hybrid and PQC-ready patterns aligned to NIST standards; Readiness Metric: ML-KEM and ML-DSA readiness; Risk if Mishandled: Emergency re-platforming under deadline"
+        },
+        {
+          "name": "Crypto-agility",
+          "description": "2026 Direction: Separate application logic from cryptographic primitives; Readiness Metric: Policy-controlled crypto coverage; Risk if Mishandled: Hard-coded algorithms across the estate"
+        },
+        {
+          "name": "Assurance",
+          "description": "2026 Direction: Test interoperability, performance, HSM support, certificates, and vendor readiness; Readiness Metric: Test pass rate and exception backlog; Risk if Mishandled: Broken channels or weak fallback controls"
+        }
+      ]
+    },
+    {
+      "slug": "2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026",
+      "name": "The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience",
+      "description": "A 2026 cloud native banking index for measuring DORA readiness, platform engineering maturity, cloud concentration risk, exit evidence, and operational resilience.",
+      "keywords": "cloud native banking 2026, DORA banks, cloud concentration risk, platform engineering banks, ICT third party risk, cloud exit strategy, sovereign cloud",
+      "date": "June 5, 2026",
+      "measures": "Index Layer",
+      "variables": [
+        {
+          "name": "Platform maturity",
+          "description": "What \"Ready\" Looks Like: >80% of workloads on a paved-road Kubernetes platform (EKS / AKS / GKE / OpenShift) with policy-as-code admission, GitOps deployment, automated DR testing; Readiness Metric: % of CIFs on paved-road platform; shadow-deployment count; mean time to onboard a new service to the platform; Failure Mode: Shadow platforms with inconsistent controls; CIFs running on un-paved infrastructure invisible to the Article 8 register reconciliation"
+        },
+        {
+          "name": "Article 8 register integrity",
+          "description": "What \"Ready\" Looks Like: Register of Information reconciles automatically to the platform's third-party API consumption + cloud-bill-of-materials; criticality classification consistent with the institution's CIF inventory; Readiness Metric: % register entries reconciled to platform telemetry; orphan-entry count; CTPP-perimeter integrity check; Failure Mode: ESAs identify a designated CTPP dependency the institution failed to disclose under Article 8; individual finding and CTPP-perimeter consequence"
+        },
+        {
+          "name": "Cloud concentration",
+          "description": "What \"Ready\" Looks Like: Critical functions mapped to cloud providers AND sub-cloud regions AND services AND substitutability assessment; cross-CIF correlated exposure quantified; Readiness Metric: Concentration score per CIF; correlated exposure across CIFs sharing a designated CTPP region; Failure Mode: A single AWS us-east-1 IAM outage takes down four CIFs the institution thought were independently resourced"
+        },
+        {
+          "name": "Tested exit capability",
+          "description": "What \"Ready\" Looks Like: Annual end-to-end exit execution test for every CIF dependent on a designated CTPP; documented RTO / RPO meets BIA-derived targets; data-portability path tested; Readiness Metric: Test pass rate per CIF; mean exit-execution time vs RTO target; data-portability path latency; Failure Mode: Exit plan that exists only as a PDF; tabletop says 4h RTO, actual test shows 48h on first attempt"
+        },
+        {
+          "name": "Observability + incident reporting",
+          "description": "What \"Ready\" Looks Like: OpenTelemetry traces end-to-end across services; automated Article 18 4-hour classification helper wired into the incident-management platform; Readiness Metric: % CIF traffic covered by OTel traces; mean time from incident detection to Article 18 classification decision; Failure Mode: Major incident classified outside the 4-hour window because the criticality determination required a triage meeting; Article 18 finding"
+        },
+        {
+          "name": "TLPT integration",
+          "description": "What \"Ready\" Looks Like: TLPT scope derived from CIF inventory and refreshed continuously; findings feed back into platform policy-as-code; closed findings produce supervisory-ready evidence packets; Readiness Metric: TLPT findings closure rate; finding-to-policy-update cycle time; Failure Mode: TLPT discovers a vulnerability the institution's platform-engineering team can't fix in less than two release cycles"
+        }
+      ]
+    },
+    {
+      "slug": "2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026",
+      "name": "The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement",
+      "description": "A 2026 index for wholesale payments readiness, measuring ISO 20022 data quality, tokenised deposits, real-time rails, cross-border settlement, and liquidity efficiency.",
+      "keywords": "wholesale payments 2026, ISO 20022, tokenised deposits, Project Agora, cross border payments, real time payments, structured address data, payment data quality",
+      "date": "June 6, 2026",
+      "measures": "Index Layer",
+      "variables": [
+        {
+          "name": "ISO 20022 data",
+          "description": "2026 Direction: Move from unstructured text to governed structured fields; Readiness Metric: Structured-address readiness and reject rate; Risk if Mishandled: Payment rejects and manual repair"
+        },
+        {
+          "name": "Rail orchestration",
+          "description": "2026 Direction: Route across RTGS, instant, correspondent, stablecoin, and tokenised rails; Readiness Metric: Cost, speed, finality, and jurisdiction-aware routing; Risk if Mishandled: Fragmented rails with duplicated controls"
+        },
+        {
+          "name": "Tokenised settlement",
+          "description": "2026 Direction: Use tokenised deposits and central bank money where they reduce friction; Readiness Metric: DvP, PvP, atomic settlement coverage; Risk if Mishandled: Pilot assets without business workflow value"
+        },
+        {
+          "name": "Liquidity",
+          "description": "2026 Direction: Optimise intraday liquidity, trapped cash, and settlement windows; Readiness Metric: Liquidity saved and settlement-failure reduction; Risk if Mishandled: Faster drains on liquidity"
+        },
+        {
+          "name": "Compliance",
+          "description": "2026 Direction: Embed AML, sanctions, FATF, and audit requirements into payment data; Readiness Metric: Straight-through compliance and explainability; Risk if Mishandled: Richer data without stronger controls"
+        }
+      ]
+    },
+    {
+      "slug": "2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026",
+      "name": "The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control",
+      "description": "A 2026 index for autonomous treasury readiness, covering agentic treasury workflows, programmable liquidity, tokenised deposits, real-time payments, and automated cash control.",
+      "keywords": "autonomous treasury 2026, agentic treasury, programmable liquidity, tokenised deposits treasury, real time treasury, cash management AI",
+      "date": "June 7, 2026",
+      "measures": "Index Layer",
+      "variables": [
+        {
+          "name": "Visibility",
+          "description": "2026 Direction: Unify account, payment, liquidity, and exposure data; Readiness Metric: Coverage of real-time cash positions; Risk if Mishandled: Fragmented cash visibility"
+        },
+        {
+          "name": "Forecasting",
+          "description": "2026 Direction: Use AI to forecast balances, flows, and funding needs; Readiness Metric: Forecast accuracy and exception rate; Risk if Mishandled: False confidence in weak data"
+        },
+        {
+          "name": "Autonomy",
+          "description": "2026 Direction: Give agents bounded authority for recommendations and actions; Readiness Metric: Mandate coverage and approval quality; Risk if Mishandled: Unauthorised or unexplained action"
+        },
+        {
+          "name": "Programmability",
+          "description": "2026 Direction: Use tokenised deposits and smart conditions where they add value; Readiness Metric: Conditional payment and atomic settlement use cases; Risk if Mishandled: Technology-led treasury pilots"
+        },
+        {
+          "name": "Controls",
+          "description": "2026 Direction: Embed limits, sanctions, FX, liquidity, and audit controls; Readiness Metric: Control evidence per treasury action; Risk if Mishandled: Manual governance after execution"
+        }
+      ]
+    },
+    {
+      "slug": "2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026",
+      "name": "The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk",
+      "description": "A 2026 banking resilience index combining AI risk, cloud concentration, quantum-safe security, payment continuity, and critical third-party dependency.",
+      "keywords": "banking resilience index 2026, DORA resilience, AI operational risk, cloud concentration risk, quantum risk banking, payment resilience",
+      "date": "June 8, 2026",
+      "measures": "Index Layer",
+      "variables": [
+        {
+          "name": "AI resilience",
+          "description": "2026 Direction: Govern model failure, agent action, cyber misuse, and oversight loss; Readiness Metric: Incident rate, override rate, control coverage; Risk if Mishandled: Automation amplifies failure"
+        },
+        {
+          "name": "Cloud resilience",
+          "description": "2026 Direction: Test recovery, exit, failover, and provider disruption scenarios; Readiness Metric: Critical-service recovery evidence; Risk if Mishandled: Provider outage becomes bank outage"
+        },
+        {
+          "name": "Quantum resilience",
+          "description": "2026 Direction: Prepare cryptography for future algorithm breakage; Readiness Metric: PQC migration and crypto-agility score; Risk if Mishandled: Loss of confidentiality and signature trust"
+        },
+        {
+          "name": "Payment resilience",
+          "description": "2026 Direction: Maintain continuity across rails, data, sanctions, liquidity, and operations; Readiness Metric: Failed payment and repair rates; Risk if Mishandled: Client-visible operational disruption"
+        },
+        {
+          "name": "Third-party resilience",
+          "description": "2026 Direction: Map and test dependencies across providers and subcontractors; Readiness Metric: Dependency concentration and substitutability; Risk if Mishandled: Hidden single points of failure"
+        }
+      ]
+    },
+    {
+      "slug": "2026-06-26-post-quantum-banking-resilience-index-eo-14409-fiduciary-crypto-agility-2026",
+      "name": "The Post-Quantum Banking Resilience Index in 2026: EO 14409, Global Deadlines, and Fiduciary Cryptographic Agility",
+      "description": "EO 14409, ANSSI's 2030 deadline and DORA Article 5 turn post-quantum migration into a board-ready resilience index \u2014 a 0\u20135 maturity scorecard for banks.",
+      "keywords": "post-quantum cryptography, PQC, EO 14409, Executive Order 14409, ANSSI 2030 deadline, ML-KEM, ML-DSA, SLH-DSA, FIPS 203, FIPS 204, FIPS 205, CBOM, SBOM, crypto-agility, store now decrypt later, SNDL, CRQC, DORA Article 5, Basel III, post-quantum banking resilience index, SWIFT, hybrid key exchange, fiduciary duty, banking, wholesale payments, custody",
+      "date": "June 26, 2026",
+      "measures": "Index Layer",
+      "variables": [
+        {
+          "name": "Inventory & Discovery",
+          "description": "Readiness Metric: % of apps with automated SBOM/CBOM; Failure Mode: Undiscovered legacy keys; Weight: 30%"
+        },
+        {
+          "name": "KEM / Transport",
+          "description": "Readiness Metric: % of channels using hybrid ML-KEM; Failure Mode: Retroactive decryption (SNDL); Weight: 25%"
+        },
+        {
+          "name": "Digital Signatures",
+          "description": "Readiness Metric: % of pipelines with ML-DSA support; Failure Mode: Forged ledger authorisations; Weight: 20%"
+        },
+        {
+          "name": "Crypto-Agility",
+          "description": "Readiness Metric: Mean time to swap crypto-primitives; Failure Mode: Locked into vulnerable algorithms; Weight: 15%"
+        },
+        {
+          "name": "Regulatory Alignment",
+          "description": "Readiness Metric: Audit readiness; board sign-off; Failure Mode: DORA supervisory findings; Weight: 10%"
+        }
+      ]
+    },
+    {
+      "slug": "2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026",
+      "name": "The 2026 Post-Quantum Security Scorecard: A Board-Level Metric Framework",
+      "description": "The 2026 Post-Quantum Security Scorecard provides boards and senior management with a fiduciary metric framework to track Cryptographic Bill of Materials (CBOM), HNDL exposure, and NIST FIPS 203/204 migration velocity across tier-1 banking infrastructure.",
+      "keywords": "post-quantum cryptography, PQC scorecard, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, banking governance, crypto-agility, KyberLib, DORA compliance, SM&CR, quantum resilience",
+      "date": "June 29, 2026",
+      "measures": "Metric",
+      "variables": [
+        {
+          "name": "Inventory Completeness Percentage (ICP)",
+          "description": "Mathematical Formula: (Identified Crypto Assets / Total Estimated Assets) \u00d7 100; Board-Approved Tolerances: > 98%; Risk if Out of Tolerance: Shadow encryption and blind spots in high-value clearing data paths."
+        },
+        {
+          "name": "HNDL Exposure Rate (HER)",
+          "description": "Mathematical Formula: (Long-Lived Data on Legacy Crypto / Total Long-Lived Data) \u00d7 100; Board-Approved Tolerances: < 5%; Risk if Out of Tolerance: Permanent compromise of trade secrets, sovereign debt ledgers, and wholesale payment records."
+        },
+        {
+          "name": "NIST Migration Progress Rate (MPR)",
+          "description": "Mathematical Formula: (Systems running FIPS 203/204 / Total Critical Systems) \u00d7 100; Board-Approved Tolerances: > 60% (by YE 2026); Risk if Out of Tolerance: Regulatory non-compliance and exclusion from G20-aligned counterparties."
+        },
+        {
+          "name": "Crypto-Agility Readiness Index (CARI)",
+          "description": "Mathematical Formula: (Apps with Abstracted Crypto Layers / Total Core Apps) \u00d7 100; Board-Approved Tolerances: > 85%; Risk if Out of Tolerance: Severe technical debt and inability to respond to future algorithm deprecations."
+        }
+      ]
+    },
+    {
+      "slug": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026",
+      "name": "The Agentic AI Index for Banks in 2026: Measuring Autonomy",
+      "description": "A six-dimension index scoring agentic AI readiness in banks: autonomy tiers, governance, regulatory evidence, economics, readiness, and global alignment.",
+      "keywords": "agentic AI, agentic AI banking, AI governance, autonomy tiers, model risk management, SR 11-7, SS1/23, EU AI Act, FSB sound practices, IOSCO, MAS, IMDA, agent control plane, kill switch, WORM audit log, OPA, OAuth, audit evidence, DORA, ROTE, McKinsey, Cambridge CCAF, Stanford AI Index, OSWorld",
+      "date": "July 1, 2026",
+      "measures": "Dimension",
+      "variables": [
+        {
+          "name": "Governance Architecture",
+          "description": "Weight: 25%; Rationale: Highest weight: the control plane is the only thing that fails safely when the model fails"
+        },
+        {
+          "name": "Regulatory Evidence Completeness",
+          "description": "Weight: 20%; Rationale: Vital for the August 2 EU AI Act deadline and continuous supervisory readiness"
+        },
+        {
+          "name": "Autonomy Tier Coverage",
+          "description": "Weight: 15%; Rationale: Slightly reduced to reflect that tier classification, while foundational, is now a threshold expectation rather than a differentiator"
+        },
+        {
+          "name": "Economic Accountability",
+          "description": "Weight: 15%; Rationale: Critical for CFO/ROI alignment against McKinsey's profit-pool and ROTE-gap scenarios"
+        },
+        {
+          "name": "Organisational Readiness",
+          "description": "Weight: 10%; Rationale: Streamlined: structural governance is necessary but increasingly table-stakes at Tier 1 institutions"
+        },
+        {
+          "name": "Global Regulatory Alignment",
+          "description": "Weight: 15%; Rationale: Increased: must actively account for DORA third-party ICT concentration risk, cross-border agent execution, and systemic herding risk scoring"
+        }
+      ]
+    }
+  ]
+}
