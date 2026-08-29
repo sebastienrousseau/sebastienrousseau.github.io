@@ -121,6 +121,6 @@ Le invito a visitar [**Alien Studio ⧉**][00], per vedere attraverso le fotogra
 [04]: https://cloudcdn.pro/clients/alienstudio/v1/collections/metropolis/metropolis-08.webp "Youthful beauty, lit by day's end, amidst the urban flow, a silent story"
 [05]: https://cloudcdn.pro/clients/alienstudio/v1/collections/serenity/serenity-01.webp "Glistening dawn serenity"
 [06]: https://www.rust-lang.org/ "Rust Programming Language"
-[07]: https://in.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence"
-[08]: https://in.wikipedia.org/wiki/Quantum_computing "Quantum computing"
+[07]: https://en.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence"
+[08]: https://en.wikipedia.org/wiki/Quantum_computing "Quantum computing"
 [09]: https://www.midjourney.com/explore "Midjourney"

@@ -94,6 +94,6 @@ Cada funcionalidad refleja मूल्य जैसे simplicidad, fiabilidad 
 [02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
 [03]: https://www.rust-lang.org/ "Rust Programming Language"
 [04]: https://github.github.com/gfm/ "GitHub Flavored Markdown Spec"
-[05]: https://analytics.google.com/analytics/वेब/ "Google Analytics"
+[05]: https://analytics.google.com/analytics/web/ "Google Analytics"
 [06]: https://www.bing.com/webmasters/ "Bing Webmaster Tools"
 [07]: https://www.rust-lang.org/tools/install "Rust Installation Guide"

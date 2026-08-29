@@ -518,6 +518,7 @@ python3 tests/validation/test_rtl_safe.py --strict
 python3 tests/validation/test_slug_policy.py --strict
 python3 tests/validation/test_slug_derivable.py
 python3 tests/validation/test_no_pipeline_artefacts.py
+python3 tests/validation/test_url_integrity.py
 # The two WCAG 2.2 criteria ssg classifies as "manual" are decidable by
 # measurement here (2.5.7 has nothing to apply to; 3.2.6 is a footer link on
 # every page). Gated so they cannot silently regress into being manual again.

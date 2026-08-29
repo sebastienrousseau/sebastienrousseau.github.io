@@ -16,6 +16,7 @@ from pathlib import Path as _Path
 _sys.path.insert(0, str(_Path(__file__).resolve().parents[1] / "lib"))
 
 import argparse
+import http.client
 import re
 import sys
 import urllib.error
@@ -93,7 +94,17 @@ def check_external(url: str) -> tuple[str, int | str]:
             return url, r.status
     except urllib.error.HTTPError as e:
         return url, e.code
-    except (urllib.error.URLError, TimeoutError, OSError, ValueError) as e:
+    # http.client.InvalidURL derives from HTTPException, not from OSError or
+    # ValueError, so a malformed URL — a space in a path, say — escaped this
+    # handler and aborted the whole audit on the first one it met. Every link
+    # after it went unchecked, which is the opposite of what an audit is for.
+    except (
+        urllib.error.URLError,
+        TimeoutError,
+        OSError,
+        ValueError,
+        http.client.HTTPException,
+    ) as e:
         return url, f"ERR {type(e).__name__}"
 
 
