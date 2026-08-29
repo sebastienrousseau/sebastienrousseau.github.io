@@ -94,15 +94,28 @@ def check_internal(href: str, public: Path) -> bool:
     return bool(target.with_suffix(".html").is_file())
 
 
+def _fetch(url: str, method: str) -> tuple[str, int | str]:
+    req = urllib.request.Request(
+        url,
+        method=method,
+        headers={"User-Agent": "Mozilla/5.0 audit_links"},
+    )
+    with urllib.request.urlopen(req, timeout=8) as r:
+        return url, r.status
+
+
 def check_external(url: str) -> tuple[str, int | str]:
     try:
-        req = urllib.request.Request(
-            url,
-            method="HEAD",
-            headers={"User-Agent": "Mozilla/5.0 audit_links"},
-        )
-        with urllib.request.urlopen(req, timeout=8) as r:
-            return url, r.status
+        try:
+            return _fetch(url, "HEAD")
+        except urllib.error.HTTPError as e:
+            # Plenty of servers answer HEAD with 4xx and GET with 200 —
+            # csrc.nist.gov and gleif.org both do. Reporting those as broken
+            # is how a link checker loses the reader's trust, so a 4xx from
+            # HEAD is a question, not an answer.
+            if 400 <= e.code < 500:
+                return _fetch(url, "GET")
+            raise
     except urllib.error.HTTPError as e:
         return url, e.code
     # http.client.InvalidURL derives from HTTPException, not from OSError or

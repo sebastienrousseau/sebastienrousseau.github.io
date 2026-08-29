@@ -89,7 +89,7 @@ logger.error("charge_failed", json!({
 rustlogs = "0.0.1"
 ```
 
-Mã nguồn trên [GitHub ⧉](https://github.com/sebastienrousseau/rustlogs) theo Apache-2.0.
+Mã nguồn trên [GitHub ⧉](https://github.com/sebastienrousseau/rlg) theo Apache-2.0.
 
 ## Kết luận
 
