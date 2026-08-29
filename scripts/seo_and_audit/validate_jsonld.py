@@ -235,6 +235,13 @@ def _validate_jsonld_block(
     except json.JSONDecodeError as e:
         errors.append(f"block#{i}: invalid JSON ({e.msg} at line {e.lineno} col {e.colno})")
         return
+    # iter_typed_nodes yields a node once per entry in its @type, so the
+    # required-field and empty-url checks run per type — which is what they
+    # want. The @id uniqueness check does not: a node typed
+    # ["Organization", "Brand"] is one node with one @id, and visiting it
+    # twice made it collide with itself. That single pattern produced 10051
+    # warnings across the site, enough to bury a real collision.
+    visited: set[int] = set()
     for type_str, node in iter_typed_nodes(data):
         # Skip pure @id references — pointers to nodes defined elsewhere,
         # not full node definitions.
@@ -242,7 +249,9 @@ def _validate_jsonld_block(
         if keys_no_at <= {"type", "id"}:
             continue
         _check_node_required(type_str, node, errors)
-        _check_node_id_unique(type_str, node, ids_seen, warnings)
+        if id(node) not in visited:
+            visited.add(id(node))
+            _check_node_id_unique(type_str, node, ids_seen, warnings)
         _check_node_empty_urls(type_str, node, errors)
 
 

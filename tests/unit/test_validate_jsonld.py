@@ -332,3 +332,57 @@ def test_validate_page_passes_when_csp_and_jsonld_both_correct(tmp_path):
     p.write_text(html, encoding="utf-8")
     errors, _ = v.validate_page(p)
     assert errors == []
+
+
+# ---------------------------------------------------------------------------
+# @id uniqueness — a node may carry several @types without colliding with
+# itself. iter_typed_nodes yields one node once per @type, which is what the
+# required-field checks want; applying it to @id uniqueness made every
+# ["Organization", "Brand"] node a duplicate of itself, 10051 warnings across
+# the site — enough noise to bury a real collision.
+# ---------------------------------------------------------------------------
+
+
+def _warnings_for(payload: str) -> list[str]:
+    errors: list[str] = []
+    warnings: list[str] = []
+    v._validate_jsonld_block(payload, 0, set(), errors, warnings)
+    return warnings
+
+
+MULTI_TYPE_NODE = """
+{"@graph": [
+  {"@type": ["Organization", "Brand"], "@id": "https://x/#org",
+   "name": "X", "url": "https://x/"}
+]}
+"""
+
+TWO_NODES_ONE_ID = """
+{"@graph": [
+  {"@type": "Organization", "@id": "https://x/#org", "name": "X", "url": "https://x/"},
+  {"@type": "WebSite", "@id": "https://x/#org", "name": "Y", "url": "https://x/"}
+]}
+"""
+
+DISTINCT_IDS = """
+{"@graph": [
+  {"@type": "Organization", "@id": "https://x/#org", "name": "X", "url": "https://x/"},
+  {"@type": "WebSite", "@id": "https://x/#site", "name": "Y", "url": "https://x/"}
+]}
+"""
+
+
+def test_a_node_with_several_types_does_not_collide_with_itself():
+    assert _warnings_for(MULTI_TYPE_NODE) == []
+
+
+def test_two_nodes_sharing_an_id_still_warn():
+    """The rule must keep catching what it exists for."""
+    warnings = _warnings_for(TWO_NODES_ONE_ID)
+    assert len(warnings) == 1
+    assert "duplicate @id" in warnings[0]
+    assert "https://x/#org" in warnings[0]
+
+
+def test_distinct_ids_are_quiet():
+    assert _warnings_for(DISTINCT_IDS) == []
