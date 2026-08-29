@@ -297,6 +297,40 @@ def write_security_txt(public: Path, source_root: Path) -> bool:
 # ---------------------------------------------------------------------------
 
 
+_DATASETS_MANIFEST = Path("_data") / "datasets.json"
+
+
+def _dataset_lines(base: str) -> list[str]:
+    """Advertise the index and scorecard datasets in llms.txt.
+
+    The index articles publish Dataset JSON-LD whose distributions live at
+    /data/<slug>.json and .csv. llms.txt is where this site tells a crawler
+    which surfaces are machine-readable, and a dataset nobody is pointed at
+    is a dataset nobody retrieves. Listing them here also brings them under
+    verify_deploy.py, which asserts every path llms.txt advertises resolves.
+
+    Derived from the manifest, so declaring a dataset advertises it.
+    """
+    if not _DATASETS_MANIFEST.is_file():
+        return []
+    manifest = json.loads(_DATASETS_MANIFEST.read_text(encoding="utf-8"))
+    entries = manifest.get("datasets", [])
+    if not entries:
+        return []
+    lines = [
+        f"- [/data/<slug>.json]({base}/data/{entries[0]['slug']}.json) — the scoring "
+        f"framework behind each index and scorecard article, as JSON "
+        f"({len(entries)} today); `.csv` alongside each. Described on the article "
+        f"page as schema.org Dataset with variableMeasured and both distributions."
+    ]
+    lines.extend(
+        f"- [{entry['name']}]({base}/data/{entry['slug']}.json) — "
+        f"{len(entry.get('variables', []))} measured variables."
+        for entry in entries
+    )
+    return lines
+
+
 def build_llms_txt() -> str:
     """Render llms.txt — a curated index designed for LLM consumption.
     Format: H1 site name + summary, then bulleted sections for the
@@ -367,6 +401,7 @@ def build_llms_txt() -> str:
         f"static oEmbed metadata per article. Notion / Discord / Slack / "
         f"WordPress / Atlassian consume this directly."
     )
+    out.extend(_dataset_lines(base))
     out.append(
         "- [/tags/](https://sebastienrousseau.com/tags/) — curated "
         "6-pillar editorial cover with featured tags and per-tag "
