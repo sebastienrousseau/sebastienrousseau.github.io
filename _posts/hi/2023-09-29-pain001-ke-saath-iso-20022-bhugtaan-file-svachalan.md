@@ -10,7 +10,7 @@ banner_alt: "ISO 20022 भुगतान-संदेशों की प्र
 keywords: "ISO 20022, pain.001, Python, भुगतान, स्वचालन, SEPA, SWIFT, XML, बैंकिंग, ट्रेज़री"
 ---
 
-![Un edificio muy उच्च perforado के साथ numerosas aberturas](https://cloudcdn.pro/stocks/images/andrea-का-santis-T3Qen8vVgRc.webp).class=\"img-fluid clearfix\"
+![Un edificio muy उच्च perforado के साथ numerosas aberturas](https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp).class=\"img-fluid clearfix\"
 
 > **TL;DR.** pain001 Python लाइब्रेरी से ISO 20022-अनुपालक भुगतान-फ़ाइलें कैसे उत्पन्न करें — एक व्यावहारिक गाइड। (DRAFT — मशीन-सहायता प्राप्त हिंदी अनुवाद; देशी समीक्षा लंबित।)
 >
@@ -76,4 +76,4 @@ He aquí द्वारा qué debería विचार करना **Pain001
 [00]: https://pain001.com/ "Pain001: Automate ISO 20022-Compliant Payment File Creation"
 [01]: https://www.iso20022.org/ "ISO 20022: A single standardisation approach (methodology, process, repository) to be used by all financial standards initiatives"
 [02]: https://pain001.com/index.html "Embrace the future of payment automation with Pain001"
-[03]: https://medium.com/@wwdseb/automating-iso-20022-compliant-payment-file-creation-with-pain001-5e32f789155को "Embrace the future of payment automation with Pain001"
+[03]: https://medium.com/@wwdseb/automating-iso-20022-compliant-payment-file-creation-with-pain001-5e32f789155a "Embrace the future of payment automation with Pain001"
