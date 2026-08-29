@@ -43,6 +43,34 @@ HEAD_BLOCKED = {
     "huggingface.co",
     "ai.google.dev",
     "www.hsbc.com",
+    # Every failure recorded for these in the external audit was a 403:
+    # they refuse a HEAD from a datacentre IP, which says nothing about
+    # the link. Reporting them as broken put 60 false positives in front
+    # of ~34 real ones — EUR-Lex alone was 28.
+    "analytics.google.com",
+    "beincrypto.com",
+    "eur-lex.europa.eu",
+    "media.defense.gov",
+    "openai.com",
+    "platform.openai.com",
+    "rwa.xyz",
+    "www.ainvest.com",
+    "www.bankingdive.com",
+    "www.bcg.com",
+    "www.business.hsbc.com",
+    "www.ciodive.com",
+    "www.cmorg.org.uk",
+    "www.congress.gov",
+    "www.entrust.com",
+    "www.fatf-gafi.org",
+    "www.fenwick.com",
+    "www.fierce-network.com",
+    "www.finextra.com",
+    "www.hstoday.us",
+    "www.mastercard.com",
+    "www.nccoe.nist.gov",
+    "www.prestomusic.com",
+    "www.theblock.co",
 }
 
 # Routes that the consolidated workers/lang-router.js handles at request
@@ -119,6 +147,32 @@ def check_external(url: str) -> tuple[str, int | str]:
         return url, f"ERR {type(e).__name__}"
 
 
+# Share and intent endpoints are actions, not citations: they carry the page
+# URL and title as a query, so every page produces a distinct one, and they
+# answer 404 to a HEAD from a datacentre because they expect a browser
+# session. Keeping the query string (so a real citation like
+# /legal-content/EN/TXT/?uri=CELEX:… resolves) made every one of them a
+# separate URL, and they buried the result: 3675 of 3832 reported-broken
+# external links were a single bsky.app share URL repeated once per page.
+SHARE_ENDPOINTS = (
+    "bsky.app/intent/",
+    "twitter.com/intent/",
+    "x.com/intent/",
+    "facebook.com/sharer/",
+    "linkedin.com/sharing/",
+    "reddit.com/submit",
+    "news.ycombinator.com/submitlink",
+    "mastodon.social/share",
+    "wa.me/?text=",
+    "t.me/share/",
+)
+
+
+def is_share_endpoint(url: str) -> bool:
+    """Whether the URL is a share action rather than a cited resource."""
+    return any(marker in url for marker in SHARE_ENDPOINTS)
+
+
 def host(url: str) -> str:
     return url.split("/", 3)[2] if "://" in url else url
 
@@ -139,7 +193,7 @@ def _audit_external(external: list[str]) -> list[tuple[str, int | str]]:
     says nothing about the link; they are skipped and counted separately
     rather than reported as broken.
     """
-    checkable = [u for u in external if host(u) not in HEAD_BLOCKED]
+    checkable = [u for u in external if host(u) not in HEAD_BLOCKED and not is_share_endpoint(u)]
     broken: list[tuple[str, int | str]] = []
     with ThreadPoolExecutor(max_workers=12) as ex:
         for url, code in ex.map(check_external, checkable):
