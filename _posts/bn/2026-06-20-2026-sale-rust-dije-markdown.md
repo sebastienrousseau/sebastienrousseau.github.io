@@ -112,7 +112,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>০১. ২০২৬ সালে অ্যাক্সেসিবিলিটি-ফার্স্ট HTML কম্পাইলার কেন গুরুত্বপূর্ণ।</strong> EAA এবং ADA Title III অ্যাক্সেসিবিলিটিকে ইঞ্জিনিয়ারিং স্বাস্থ্যবিধি থেকে আর্থিক দায়বদ্ধতায় পরিণত করেছে।</li>
   <li><strong>০২. HTML Generator ২০২৬ আর্কিটেকচার লেন্স।</strong> কাঁচা Markdown থেকে শক্তিশালী HTML আউটপুটে একটি বহু-স্তরীয়, কম্পাইলার-গেটেড পাইপলাইন।</li>
 </ul>
-<p class="post-lead-related"><strong>সংশ্লিষ্ট পাঠ:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">২০২৬ সালে AI, MCP এবং আর্থিক অবকাঠামোর জন্য YAML-এর কেন নিরাপদ Rust স্ট্যাক প্রয়োজন</a>, <a href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026">২০২৬ সালে AI-যুগের পাবলিশিংয়ের জন্য ডিফল্ট-নিরাপদ Static Site Generator</a>, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: ২০২৬ সালে AI-নেটিভ এজের জন্য একটি ওপেন-সোর্স ব্লুপ্রিন্ট</a>।</p>
+<p class="post-lead-related"><strong>সংশ্লিষ্ট পাঠ:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">২০২৬ সালে AI, MCP এবং আর্থিক অবকাঠামোর জন্য YAML-এর কেন নিরাপদ Rust স্ট্যাক প্রয়োজন</a>, ২০২৬ সালে AI-যুগের পাবলিশিংয়ের জন্য ডিফল্ট-নিরাপদ Static Site Generator, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: ২০২৬ সালে AI-নেটিভ এজের জন্য একটি ওপেন-সোর্স ব্লুপ্রিন্ট</a>।</p>
 </aside>
 <!-- lead-end -->
 
@@ -134,7 +134,7 @@ Markdown রেন্ডারিং তুচ্ছ মনে হয়। প�
 - **WebAssembly স্যান্ডবক্সিং।** অবিশ্বস্ত Markdown পার্স করা একটি নিরাপত্তা ঝুঁকি। [WASM](https://webassembly.org/) টার্গেট করার মাধ্যমে, HTML Generator একটি আইসোলেটেড স্যান্ডবক্সের মধ্যে চলে যা স্বেচ্ছাচারী কোড এক্সিকিউশন প্রতিরোধ করে এবং হোস্ট সিস্টেমকে সুরক্ষিত করে — সরাসরি [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554) ICT-নিরাপত্তা বাধ্যবাধকতা পূরণ করে।
 - **বোর্ডের জন্য আর্থিক সুরক্ষা।** প্রযুক্তিগত অ-সম্মতি এখন বোর্ডরুমে প্রবেশ করেছে। একটি কম্পাইলার-গেটেড HTML ইঞ্জিন মানকীকরণ পরিচালক এবং সিনিয়র ম্যানেজমেন্টকে DORA, EAA এবং ADA Title III-এর অধীনে ব্যক্তিগত দেওয়ানি ও নিয়ন্ত্রক ঝুঁকি থেকে রক্ষা করে।
 
-**সংশ্লিষ্ট পাঠ:** [২০২৬ সালে AI, MCP এবং আর্থিক অবকাঠামোর জন্য YAML-এর কেন নিরাপদ Rust স্ট্যাক প্রয়োজন](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), [২০২৬ সালে AI-যুগের পাবলিশিংয়ের জন্য ডিফল্ট-নিরাপদ Static Site Generator](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/), [CloudCDN: ২০২৬ সালে AI-নেটিভ এজের জন্য একটি ওপেন-সোর্স ব্লুপ্রিন্ট](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/)।
+**সংশ্লিষ্ট পাঠ:** [২০২৬ সালে AI, MCP এবং আর্থিক অবকাঠামোর জন্য YAML-এর কেন নিরাপদ Rust স্ট্যাক প্রয়োজন](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), ২০২৬ সালে AI-যুগের পাবলিশিংয়ের জন্য ডিফল্ট-নিরাপদ Static Site Generator, [CloudCDN: ২০২৬ সালে AI-নেটিভ এজের জন্য একটি ওপেন-সোর্স ব্লুপ্রিন্ট](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/)।
 
 ## ০১. ২০২৬ সালে অ্যাক্সেসিবিলিটি-ফার্স্ট HTML কম্পাইলার কেন গুরুত্বপূর্ণ
 

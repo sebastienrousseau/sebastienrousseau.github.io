@@ -134,9 +134,9 @@ site_software: "Static Site Generator, Rust"
 
 **FHE** 让一家银行在网络恢复保险库内对加密的司库头寸进行计算，而无须暴露明文。当生产环境受到怀疑时，分析、对账与交易前检查可以在加密副本上继续进行。[国际清算银行《Project Leap：让金融体系抗量子》论文](https://www.bis.org/publ/bppdf/bispap158.htm "BIS Papers No 158——Project Leap")直接提出了运营层面的论据——机密性控制与韧性控制正在向同一组原语收敛。
 
-**QKD** 在承载持续在线工作负载的数据中心之间提供信息论安全的密钥分发。它不是 PQC 的替代品。它是一种互补层，仅用于物理密钥交换保证值得其成本的少数链路。作者此前的文章——[QKD 在批发银行业：物理级密钥真正物有所值之处](https://sebastienrousseau.com/2026-04-18-qkd-wholesale-banking-physics-grade-keys-2026 "QKD 在批发银行业")——划定了边界。
+**QKD** 在承载持续在线工作负载的数据中心之间提供信息论安全的密钥分发。它不是 PQC 的替代品。它是一种互补层，仅用于物理密钥交换保证值得其成本的少数链路。作者此前的文章——[QKD 在批发银行业：物理级密钥真正物有所值之处](https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026)——划定了边界。
 
-**PQC**，具体而言是 [FIPS 203](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf "FIPS 203——基于模格的密钥封装机制")与 [FIPS 204](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf "FIPS 204——基于模格的数字签名标准")，如今为回退轨道清单、网络恢复保险库快照，以及主用与应急参与方之间的跨域信任链签名。一家 2026 年仍以经典 RSA 为切换工件签名的 CIB，等于在向监管机构主动报告一项发现。[FHE 在银行业分析中](https://sebastienrousseau.com/2026-05-29-fhe-banking-analytics-confidential-compute-2026 "FHE 在银行业分析")一文在分析域中提出了相同观点——韧性论证则将其干净地延伸到了恢复域。
+**PQC**，具体而言是 [FIPS 203](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf "FIPS 203——基于模格的密钥封装机制")与 [FIPS 204](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf "FIPS 204——基于模格的数字签名标准")，如今为回退轨道清单、网络恢复保险库快照，以及主用与应急参与方之间的跨域信任链签名。一家 2026 年仍以经典 RSA 为切换工件签名的 CIB，等于在向监管机构主动报告一项发现。[FHE 在银行业分析中](https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era)一文在分析域中提出了相同观点——韧性论证则将其干净地延伸到了恢复域。
 
 ## 03. 回退轨道设计模式——ISO 20022 跨 RTGS、即时、代币化与外部网络
 

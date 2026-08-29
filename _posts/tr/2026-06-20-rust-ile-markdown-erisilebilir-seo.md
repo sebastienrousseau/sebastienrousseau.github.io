@@ -112,7 +112,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>01. 2026'da erişilebilirlik öncelikli bir HTML derleyicisinin önemi.</strong> EAA ve ADA Title III, erişilebilirliği mühendislik hijyeninden fiduciary yükümlülüğe taşıdı.</li>
   <li><strong>02. HTML Generator 2026 mimari perspektifi.</strong> Ham Markdown'dan sertleştirilmiş HTML çıktısına kadar çok aşamalı, derleme kapılı bir hat.</li>
 </ul>
-<p class="post-lead-related"><strong>İlgili okumalar:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">2026'da YAML Neden AI, MCP ve Finansal Altyapı için Daha Güvenli Bir Rust Yığınına İhtiyaç Duyuyor</a>, <a href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026">2026'da AI Çağı Yayımcılığı için Varsayılan Güvenli Static Site Generator</a>, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: 2026'da AI'ya Özgü Edge için Açık Kaynak Planı</a>.</p>
+<p class="post-lead-related"><strong>İlgili okumalar:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">2026'da YAML Neden AI, MCP ve Finansal Altyapı için Daha Güvenli Bir Rust Yığınına İhtiyaç Duyuyor</a>, 2026'da AI Çağı Yayımcılığı için Varsayılan Güvenli Static Site Generator, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: 2026'da AI'ya Özgü Edge için Açık Kaynak Planı</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -134,7 +134,7 @@ Markdown işleme yüzeysel görünür. Yayımlama kalitesinde HTML elde etmek bi
 - **WebAssembly sandbox ortamı.** Güvenilmeyen Markdown'ı ayrıştırmak bir güvenlik riskidir. [WASM](https://webassembly.org/) hedefleyerek HTML Generator, rastgele kod yürütmeyi engelleyen ve ana sistemi koruyan yalıtılmış bir sandbox ortamında çalışır — [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554) BİT güvenlik yükümlülüklerini doğrudan karşılar.
 - **Yönetim kurulları için fiduciary koruma.** Teknik uyumsuzluk yönetim kurulu gündemine taşındı. Derleme kapılı bir HTML motorunu standartlaştırmak, yöneticileri ve üst yönetimi DORA, EAA ve ADA Title III kapsamındaki kişisel hukuki ve düzenleyici riskten korur.
 
-**İlgili okumalar:** [2026'da YAML Neden AI, MCP ve Finansal Altyapı için Daha Güvenli Bir Rust Yığınına İhtiyaç Duyuyor](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), [2026'da AI Çağı Yayımcılığı için Varsayılan Güvenli Static Site Generator](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/), [CloudCDN: 2026'da AI'ya Özgü Edge için Açık Kaynak Planı](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
+**İlgili okumalar:** [2026'da YAML Neden AI, MCP ve Finansal Altyapı için Daha Güvenli Bir Rust Yığınına İhtiyaç Duyuyor](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), 2026'da AI Çağı Yayımcılığı için Varsayılan Güvenli Static Site Generator, [CloudCDN: 2026'da AI'ya Özgü Edge için Açık Kaynak Planı](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
 
 ## 01. 2026'da Erişilebilirlik Öncelikli Bir HTML Derleyicisinin Önemi
 

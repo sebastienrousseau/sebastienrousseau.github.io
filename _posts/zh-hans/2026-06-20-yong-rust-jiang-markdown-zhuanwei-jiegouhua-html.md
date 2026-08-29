@@ -112,7 +112,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>01. 2026 年可访问性优先 HTML 编译器为何至关重要。</strong> EAA 和 ADA Title III 已将可访问性从工程卫生要求升级为受托责任。</li>
   <li><strong>02. HTML Generator 2026 年架构视角。</strong> 从原始 Markdown 到强化 HTML 输出的多阶段编译门控管道。</li>
 </ul>
-<p class="post-lead-related"><strong>相关阅读：</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">2026 年 AI、MCP 与金融基础设施为何需要更安全的 Rust YAML 栈</a>，<a href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026">2026 年 AI 时代发布的安全默认 Static Site Generator</a>，<a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN：2026 年云原生边缘的开源蓝图</a>。</p>
+<p class="post-lead-related"><strong>相关阅读：</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">2026 年 AI、MCP 与金融基础设施为何需要更安全的 Rust YAML 栈</a>，2026 年 AI 时代发布的安全默认 Static Site Generator，<a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN：2026 年云原生边缘的开源蓝图</a>。</p>
 </aside>
 <!-- lead-end -->
 
@@ -134,7 +134,7 @@ Markdown 渲染看似简单。生产级 HTML 是一个合规问题。2026 年 6 
 - **WebAssembly 沙盒隔离。** 解析不可信 Markdown 是安全风险。通过支持 [WASM](https://webassembly.org/) 目标，HTML Generator 在与宿主服务器隔离的沙盒内执行，防止任意代码执行并保护宿主系统——直接满足 [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554) ICT 安全义务。
 - **为董事会提供受托保护。** 技术违规已进入董事会议程。采用编译门控 HTML 引擎作为标准，使董事和高级管理层免于承担 DORA、EAA 和 ADA Title III 下的个人民事及监管责任。
 
-**相关阅读：** [2026 年 AI、MCP 与金融基础设施为何需要更安全的 Rust YAML 栈](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/)，[2026 年 AI 时代发布的安全默认 Static Site Generator](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/)，[CloudCDN：2026 年云原生边缘的开源蓝图](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/)。
+**相关阅读：** [2026 年 AI、MCP 与金融基础设施为何需要更安全的 Rust YAML 栈](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/)，2026 年 AI 时代发布的安全默认 Static Site Generator，[CloudCDN：2026 年云原生边缘的开源蓝图](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/)。
 
 ## 01. 2026 年可访问性优先 HTML 编译器为何至关重要
 

@@ -112,7 +112,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>01. 2026 में accessibility-first HTML compiler क्यों मायने रखता है।</strong> EAA और ADA Title III ने accessibility को engineering hygiene से fiduciary liability में बदल दिया है।</li>
   <li><strong>02. HTML Generator 2026 आर्किटेक्चर लेंस।</strong> raw Markdown से hardened HTML output तक एक multi-stage, compiler-gated pipeline।</li>
 </ul>
-<p class="post-lead-related"><strong>संबंधित पठन:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">2026 में AI, MCP, और Financial Infrastructure के लिए YAML को एक सुरक्षित Rust Stack की आवश्यकता क्यों है</a>, <a href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026">2026 में AI-Era Publishing के लिए एक Secure-by-Default Static Site Generator</a>, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: 2026 में AI-Native Edge के लिए एक Open-Source Blueprint</a>।</p>
+<p class="post-lead-related"><strong>संबंधित पठन:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">2026 में AI, MCP, और Financial Infrastructure के लिए YAML को एक सुरक्षित Rust Stack की आवश्यकता क्यों है</a>, 2026 में AI-Era Publishing के लिए एक Secure-by-Default Static Site Generator, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: 2026 में AI-Native Edge के लिए एक Open-Source Blueprint</a>।</p>
 </aside>
 <!-- lead-end -->
 
@@ -134,7 +134,7 @@ Markdown rendering सरल लगती है। Publishing-grade HTML एक
 - **WebAssembly sandboxing।** Untrusted Markdown को parse करना एक security risk है। [WASM](https://webassembly.org/) को target करके, HTML Generator एक isolated sandbox के भीतर execute होता है जो arbitrary code execution को रोकता है और host system को protect करता है — [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554) ICT-security obligations को सीधे satisfy करता है।
 - **Boards के लिए fiduciary protection।** Technical non-compliance boardroom में पहुंच गई है। एक compiler-gated HTML engine पर standardise करना DORA, EAA, और ADA Title III के तहत directors और senior management को personal civil और regulatory exposure से बचाता है।
 
-**संबंधित पठन:** [2026 में AI, MCP, और Financial Infrastructure के लिए YAML को एक सुरक्षित Rust Stack की आवश्यकता क्यों है](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), [2026 में AI-Era Publishing के लिए एक Secure-by-Default Static Site Generator](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/), [CloudCDN: 2026 में AI-Native Edge के लिए एक Open-Source Blueprint](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/)।
+**संबंधित पठन:** [2026 में AI, MCP, और Financial Infrastructure के लिए YAML को एक सुरक्षित Rust Stack की आवश्यकता क्यों है](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), 2026 में AI-Era Publishing के लिए एक Secure-by-Default Static Site Generator, [CloudCDN: 2026 में AI-Native Edge के लिए एक Open-Source Blueprint](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/)।
 
 ## 01. 2026 में Accessibility-First HTML Compiler क्यों मायने रखता है
 

@@ -112,7 +112,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>01. لماذا يُهمّ مُحرِّل HTML أولوياتي إمكانية الوصول في 2026.</strong> جعل قانون EAA وADA Title III إمكانيةَ الوصول مسؤولية قانونية تقع على عاتق مجالس الإدارة.</li>
   <li><strong>02. عدسة هندسة HTML Generator لعام 2026.</strong> خط أنابيب متعدد المراحل مُحكَم البناء يُحوِّل Markdown الخام إلى مخرجات HTML مُصلَّبة.</li>
 </ul>
-<p class="post-lead-related"><strong>قراءات ذات صلة:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">لماذا يحتاج YAML إلى مكدّس Rust أكثر أماناً للذكاء الاصطناعي وMCP والبنية التحتية المالية في 2026</a>، <a href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026">مولِّد مواقع ثابتة آمن بالافتراضي لنشر عصر الذكاء الاصطناعي في 2026</a>، <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: مخطط مفتوح المصدر للحافة السحابية الأصيلة في 2026</a>.</p>
+<p class="post-lead-related"><strong>قراءات ذات صلة:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">لماذا يحتاج YAML إلى مكدّس Rust أكثر أماناً للذكاء الاصطناعي وMCP والبنية التحتية المالية في 2026</a>، مولِّد مواقع ثابتة آمن بالافتراضي لنشر عصر الذكاء الاصطناعي في 2026، <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: مخطط مفتوح المصدر للحافة السحابية الأصيلة في 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -134,7 +134,7 @@ site_software: "Static Site Generator, Rust"
 - **العزل في بيئة WebAssembly.** تحليل Markdown غير الموثوق خطر أمني. من خلال استهداف [WASM](https://webassembly.org/)، يعمل HTML Generator داخل بيئة معزولة تمنع تنفيذ الكود الاعتباطي وتحمي نظام المضيف — مُستوفيةً مباشرةً التزامات أمن تقنية المعلومات بموجب [DORA المادة 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).
 - **الحماية الائتمانية لمجالس الإدارة.** انتقل عدم الامتثال التقني إلى قاعة مجلس الإدارة. يُحصِّن التوحيد القياسي على محرّك HTML مُحكَم البناء المديرين وكبار المسؤولين من التعرض المدني والتنظيمي الشخصي بموجب DORA وEAA وADA Title III.
 
-**قراءات ذات صلة:** [لماذا يحتاج YAML إلى مكدّس Rust أكثر أماناً للذكاء الاصطناعي وMCP والبنية التحتية المالية في 2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/)، [مولِّد مواقع ثابتة آمن بالافتراضي لنشر عصر الذكاء الاصطناعي في 2026](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/)، [CloudCDN: مخطط مفتوح المصدر للحافة السحابية الأصيلة في 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
+**قراءات ذات صلة:** [لماذا يحتاج YAML إلى مكدّس Rust أكثر أماناً للذكاء الاصطناعي وMCP والبنية التحتية المالية في 2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/)، مولِّد مواقع ثابتة آمن بالافتراضي لنشر عصر الذكاء الاصطناعي في 2026، [CloudCDN: مخطط مفتوح المصدر للحافة السحابية الأصيلة في 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
 
 ## 01. لماذا يُهمّ مُحرِّل HTML أولوياتي إمكانية الوصول في 2026
 

@@ -276,6 +276,45 @@ def test_rewrite_en_urls_no_known_slug_passthrough():
     assert _maps.rewrite_en_urls(html) == html
 
 
+def test_rewrite_en_urls_absorbs_an_existing_locale_prefix():
+    """A link that already carries the locale prefix must not gain a second.
+
+    The origin group is optional and the pattern unanchored, so on
+    "…com/fr/<slug>" the origin matched empty right after "/fr" and the
+    replacement re-added the prefix, emitting "/fr/fr/…". 103 links across
+    the site 404'd on it — invisible to the internal audit, which treats an
+    absolute self-link as external.
+    """
+    en = next(iter(st.EN_TO_FR))
+    fr = st.EN_TO_FR[en]
+    for href in (
+        f"https://sebastienrousseau.com/fr/{en}/",
+        f"/fr/{en}/",
+        f"/fr/{en}/index.html",
+    ):
+        out = _maps.rewrite_en_urls(f'<a href="{href}">x</a>')
+        assert "/fr/fr/" not in out, href
+        assert f"/fr/{fr}/" in out, href
+
+
+def test_rewrite_en_urls_repoints_another_locales_prefix():
+    """A link to some other locale is routed to the current one, once."""
+    en = next(iter(st.EN_TO_FR))
+    fr = st.EN_TO_FR[en]
+    out = _maps.rewrite_en_urls(f'<a href="https://sebastienrousseau.com/ar/{en}/">x</a>')
+    assert f"/fr/{fr}/" in out
+    assert "/ar/" not in out
+
+
+def test_rewrite_en_urls_keeps_the_origin_shape():
+    """Absolute stays absolute, root-relative stays root-relative."""
+    en = next(iter(st.EN_TO_FR))
+    absolute = _maps.rewrite_en_urls(f'<a href="https://sebastienrousseau.com/{en}/">x</a>')
+    relative = _maps.rewrite_en_urls(f'<a href="/{en}/">x</a>')
+    assert "https://sebastienrousseau.com/fr/" in absolute
+    assert 'href="/fr/' in relative
+
+
 def test_eyebrow_from_locale_tags_prefers_first_tag():
     out = _maps._eyebrow_from_locale_tags("payments, iso 20022")
     assert out  # non-empty label derived from the first tag

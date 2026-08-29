@@ -112,7 +112,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>01. Idi tí ẹ̀rọ-àkójọ HTML tí ó fi ìráàyèsí ṣáájú ṣe pàtàkì ní 2026.</strong> EAA àti ADA Title III ti yí ìráàyèsí padà láti ìmọ̀ẹ̀rọ ìmọtara-ẹni-nìkan sí ojúṣe àjọ-ìdarí.</li>
   <li><strong>02. Ojú ìwò àkójọ HTML Generator 2026.</strong> Ẹ̀rọ ìtumọ̀ onírúurú-ìpele, compile-gated, láti Markdown ọrọ gọ́gọ́ sí ìṣípò HTML tí ó mú ìlera wa.</li>
 </ul>
-<p class="post-lead-related"><strong>Kíkà tí ó jọmọ:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">Idi tí YAML Nílò Ọ̀nà Rust Tí Ó Ní Ààbò Jù Fún AI, MCP, àti Àkọsílẹ̀ Ìnáwó ní 2026</a>, <a href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026">Static Site Generator Tí Ó Ní Ààbò Gẹ́gẹ́ bí Ìpìlẹ̀ Fún Àgbéjáde Àkókò AI ní 2026</a>, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: Ètò Open-Source Fún Ẹ̀gbẹ́ AI-Native ní 2026</a>.</p>
+<p class="post-lead-related"><strong>Kíkà tí ó jọmọ:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">Idi tí YAML Nílò Ọ̀nà Rust Tí Ó Ní Ààbò Jù Fún AI, MCP, àti Àkọsílẹ̀ Ìnáwó ní 2026</a>, Static Site Generator Tí Ó Ní Ààbò Gẹ́gẹ́ bí Ìpìlẹ̀ Fún Àgbéjáde Àkókò AI ní 2026, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: Ètò Open-Source Fún Ẹ̀gbẹ́ AI-Native ní 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -134,7 +134,7 @@ Ní 2026, àwọn akoonu wẹ́ẹ̀bù ni a ń lo gẹ́gẹ́ bí AI ṣe ń w
 - **Ìsọ̀ di àpótí ìfipamọ́ WebAssembly.** Ìsọ̀ Markdown tí kò ní ìgbẹ̀kẹ̀lé jẹ́ ewu ààbò. Nípa fojú [WASM](https://webassembly.org/), HTML Generator ń ṣiṣẹ́ nínú sandbox tí ó ya sọ́tọ̀ tí ó ń dáàbò bò ìṣẹ̀dá kóòdù lásán àti tí ó ń dáàbò bò ẹ̀rọ gbé — tí ó ń ṣe ìrẹ́pọ̀ tóótọ́ pẹ̀lú àwọn ojúṣe ààbò ICT [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).
 - **Ìdáàbò fídúṣierì fún àwọn bọọ̀dù.** Kíkúnà ìmọ̀-ẹ̀rọ ti gba yàrá ìjókòó bọọ̀dù. Ìsọ̀di àbáwọlé lórí ẹ̀rọ-àkójọ HTML compile-gated ń dáàbò bò àwọn olùdarí àti ìjóba gíga láti ewu ara ẹni òfin àti ìtọ́sọ́nà labẹ̀ DORA, EAA, àti ADA Title III.
 
-**Kíkà tí ó jọmọ:** [Idi tí YAML Nílò Ọ̀nà Rust Tí Ó Ní Ààbò Jù Fún AI, MCP, àti Àkọsílẹ̀ Ìnáwó ní 2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), [Static Site Generator Tí Ó Ní Ààbò Gẹ́gẹ́ bí Ìpìlẹ̀ Fún Àgbéjáde Àkókò AI ní 2026](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/), [CloudCDN: Ètò Open-Source Fún Ẹ̀gbẹ́ AI-Native ní 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
+**Kíkà tí ó jọmọ:** [Idi tí YAML Nílò Ọ̀nà Rust Tí Ó Ní Ààbò Jù Fún AI, MCP, àti Àkọsílẹ̀ Ìnáwó ní 2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), Static Site Generator Tí Ó Ní Ààbò Gẹ́gẹ́ bí Ìpìlẹ̀ Fún Àgbéjáde Àkókò AI ní 2026, [CloudCDN: Ètò Open-Source Fún Ẹ̀gbẹ́ AI-Native ní 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
 
 ## 01. Idi Tí Ẹ̀rọ-Àkójọ HTML Tí Ó Fi Ìráàyèsí Ṣáájú Ṣe Pàtàkì ní 2026
 

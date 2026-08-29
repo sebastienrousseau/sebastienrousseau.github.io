@@ -31,7 +31,7 @@ Markdown रेंडरिंग साधे वाटते. प्रका�
 - **WebAssembly sandboxing.** अविश्वासार्ह Markdown पार्स करणे ही सुरक्षा जोखीम आहे. [WASM](https://webassembly.org/) ला target करून, HTML Generator एका विलगित sandbox च्या आत चालते जे अनियंत्रित कोड अंमलबजावणी रोखते आणि host प्रणालीचे संरक्षण करते — थेट [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554) ICT-सुरक्षा बंधने पूर्ण करते.
 - **मंडळांसाठी fiduciary संरक्षण.** तांत्रिक अनुपालन-अभाव आता boardroom मध्ये पोहोचला आहे. Compiler-gated HTML engine वर मानकीकरण केल्याने संचालक आणि वरिष्ठ व्यवस्थापन यांना DORA, EAA आणि ADA Title III अंतर्गत वैयक्तिक नागरी आणि नियामक जोखमीपासून संरक्षण मिळते.
 
-**संबंधित वाचन:** [Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), [A Secure-by-Default Static Site Generator for AI-Era Publishing in 2026](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/), [CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
+**संबंधित वाचन:** [Why YAML Needs a Safer Rust Stack for AI, MCP, and Financial Infrastructure in 2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), A Secure-by-Default Static Site Generator for AI-Era Publishing in 2026, [CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
 
 ## 01. 2026 मध्ये Accessibility-First HTML Compiler का महत्त्वाचा आहे
 

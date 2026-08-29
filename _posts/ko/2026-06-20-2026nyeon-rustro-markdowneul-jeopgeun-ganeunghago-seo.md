@@ -112,7 +112,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>01. 2026년에 접근성 우선 HTML 컴파일러가 중요한 이유.</strong> EAA(유럽 접근성 법)와 ADA Title III는 접근성을 엔지니어링 위생 관리에서 수탁자 책임으로 격상시켰습니다.</li>
   <li><strong>02. HTML Generator 2026 아키텍처 분석.</strong> 원시 Markdown에서 강화된 HTML 출력까지 이어지는 다단계 컴파일러 게이트 파이프라인.</li>
 </ul>
-<p class="post-lead-related"><strong>관련 자료:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">2026년 AI, MCP, 금융 인프라를 위해 YAML에 더 안전한 Rust 스택이 필요한 이유</a>, <a href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026">2026년 AI 시대 퍼블리싱을 위한 기본 보안 정적 사이트 생성기</a>, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: 2026년 AI 네이티브 엣지를 위한 오픈소스 청사진</a>.</p>
+<p class="post-lead-related"><strong>관련 자료:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">2026년 AI, MCP, 금융 인프라를 위해 YAML에 더 안전한 Rust 스택이 필요한 이유</a>, 2026년 AI 시대 퍼블리싱을 위한 기본 보안 정적 사이트 생성기, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: 2026년 AI 네이티브 엣지를 위한 오픈소스 청사진</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -134,7 +134,7 @@ Markdown 렌더링은 단순해 보입니다. 그러나 퍼블리싱 수준의 H
 - **WebAssembly 샌드박싱.** 신뢰할 수 없는 Markdown 파싱은 보안 위험입니다. [WASM](https://webassembly.org/)을 대상으로 함으로써, HTML Generator는 임의 코드 실행을 방지하고 호스트 시스템을 보호하는 격리된 샌드박스 내에서 실행됩니다 — [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554) ICT 보안 의무를 직접 충족합니다.
 - **이사회를 위한 수탁자 보호.** 기술적 규정 위반은 이사회 안건으로 부상했습니다. 컴파일러 게이트 HTML 엔진을 표준화함으로써 이사와 고위 경영진은 DORA, EAA, ADA Title III 하에서의 개인 민사 및 규제 노출로부터 보호받습니다.
 
-**관련 자료:** [2026년 AI, MCP, 금융 인프라를 위해 YAML에 더 안전한 Rust 스택이 필요한 이유](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), [2026년 AI 시대 퍼블리싱을 위한 기본 보안 정적 사이트 생성기](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/), [CloudCDN: 2026년 AI 네이티브 엣지를 위한 오픈소스 청사진](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
+**관련 자료:** [2026년 AI, MCP, 금융 인프라를 위해 YAML에 더 안전한 Rust 스택이 필요한 이유](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), 2026년 AI 시대 퍼블리싱을 위한 기본 보안 정적 사이트 생성기, [CloudCDN: 2026년 AI 네이티브 엣지를 위한 오픈소스 청사진](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
 
 ## 01. 2026년에 접근성 우선 HTML 컴파일러가 중요한 이유
 

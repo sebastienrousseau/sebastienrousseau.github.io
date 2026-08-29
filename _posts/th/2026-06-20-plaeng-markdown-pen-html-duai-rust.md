@@ -112,7 +112,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>01. เหตุใดคอมไพเลอร์ HTML ที่เน้น accessibility จึงมีความสำคัญในปี 2026.</strong> EAA และ ADA Title III ได้ยกระดับ accessibility จากสุขอนามัยทางวิศวกรรมให้กลายเป็นความรับผิดชอบทางกฎหมายในระดับกรรมการบริษัท</li>
   <li><strong>02. มุมมองสถาปัตยกรรม HTML Generator ปี 2026.</strong> ท่อประมวลผลแบบ compile-gated หลายขั้นตอน จาก Markdown ดิบสู่เอาต์พุต HTML ที่ผ่านการเสริมความแข็งแกร่ง</li>
 </ul>
-<p class="post-lead-related"><strong>อ่านเพิ่มเติม:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">ทำไม YAML จึงต้องการ Rust Stack ที่ปลอดภัยกว่าสำหรับ AI, MCP และโครงสร้างพื้นฐานการเงินในปี 2026</a>, <a href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026">Static Site Generator ที่ปลอดภัยโดยค่าเริ่มต้นสำหรับการเผยแพร่ในยุค AI ปี 2026</a>, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: แผนผังโอเพนซอร์สสำหรับ Edge ที่รองรับ AI-Native ในปี 2026</a>.</p>
+<p class="post-lead-related"><strong>อ่านเพิ่มเติม:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">ทำไม YAML จึงต้องการ Rust Stack ที่ปลอดภัยกว่าสำหรับ AI, MCP และโครงสร้างพื้นฐานการเงินในปี 2026</a>, Static Site Generator ที่ปลอดภัยโดยค่าเริ่มต้นสำหรับการเผยแพร่ในยุค AI ปี 2026, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: แผนผังโอเพนซอร์สสำหรับ Edge ที่รองรับ AI-Native ในปี 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -134,7 +134,7 @@ site_software: "Static Site Generator, Rust"
 - **WebAssembly sandboxing.** การประมวลผล Markdown ที่ไม่น่าเชื่อถือคือความเสี่ยงด้านความปลอดภัย ด้วยการกำหนดเป้าหมายเป็น [WASM](https://webassembly.org/), HTML Generator ทำงานภายใน sandbox แยกที่ป้องกันการประมวลผลโค้ดโดยอำเภอใจและปกป้องระบบโฮสต์ — ตอบสนองพันธกรณีความปลอดภัย ICT ตาม DORA Article 6 โดยตรง
 - **การปกป้องในระดับ fiduciary สำหรับกรรมการบริษัท.** การไม่ปฏิบัติตามกฎระเบียบทางเทคนิคได้เข้าสู่ห้องประชุมกรรมการแล้ว การกำหนดมาตรฐานบน HTML engine แบบ compile-gated ปกป้องกรรมการและผู้บริหารระดับสูงจากความเสี่ยงทางแพ่งและกฎระเบียบส่วนตัวภายใต้ DORA, EAA และ ADA Title III
 
-**อ่านเพิ่มเติม:** [ทำไม YAML จึงต้องการ Rust Stack ที่ปลอดภัยกว่าสำหรับ AI, MCP และโครงสร้างพื้นฐานการเงินในปี 2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), [Static Site Generator ที่ปลอดภัยโดยค่าเริ่มต้นสำหรับการเผยแพร่ในยุค AI ปี 2026](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/), [CloudCDN: แผนผังโอเพนซอร์สสำหรับ Edge ที่รองรับ AI-Native ในปี 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
+**อ่านเพิ่มเติม:** [ทำไม YAML จึงต้องการ Rust Stack ที่ปลอดภัยกว่าสำหรับ AI, MCP และโครงสร้างพื้นฐานการเงินในปี 2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), Static Site Generator ที่ปลอดภัยโดยค่าเริ่มต้นสำหรับการเผยแพร่ในยุค AI ปี 2026, [CloudCDN: แผนผังโอเพนซอร์สสำหรับ Edge ที่รองรับ AI-Native ในปี 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
 
 ## 01. เหตุใดคอมไพเลอร์ HTML ที่เน้น Accessibility จึงมีความสำคัญในปี 2026
 

@@ -134,9 +134,9 @@ site_software: "Static Site Generator, Rust"
 
 **FHE**는 평문을 노출하지 않고 사이버 복구 볼트 내부의 암호화된 트레저리 포지션을 계산할 수 있게 합니다. 운영 환경이 의심스러울 때, 분석·정합성 점검·사전 거래 검사는 암호화된 사본 위에서 계속될 수 있습니다. [BIS 보고서 "Project Leap: quantum-proofing the financial system"](https://www.bis.org/publ/bppdf/bispap158.htm "BIS Papers No 158 — Project Leap")은 운영적 근거를 직접 제시합니다 — 기밀성 통제와 회복탄력성 통제가 같은 프리미티브로 수렴하고 있다는 점입니다.
 
-**QKD**는 상시 가동 워크로드를 운반하는 데이터센터 사이에 정보 이론적 키 분배를 제공합니다. PQC의 대체재가 아닙니다. 물리적 키 교환 보증이 비용을 정당화하는 소수 링크에 대한 보완 계층입니다. 저자의 이전 글 — [도매 은행의 QKD: 물리학 등급 키가 실제로 결실을 맺는 곳](https://sebastienrousseau.com/2026-04-18-qkd-wholesale-banking-physics-grade-keys-2026 "도매 은행의 QKD") — 이 그 경계를 설정합니다.
+**QKD**는 상시 가동 워크로드를 운반하는 데이터센터 사이에 정보 이론적 키 분배를 제공합니다. PQC의 대체재가 아닙니다. 물리적 키 교환 보증이 비용을 정당화하는 소수 링크에 대한 보완 계층입니다. 저자의 이전 글 — [도매 은행의 QKD: 물리학 등급 키가 실제로 결실을 맺는 곳](https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026) — 이 그 경계를 설정합니다.
 
-**PQC**, 구체적으로 [FIPS 203](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf "FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism")과 [FIPS 204](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf "FIPS 204 — Module-Lattice-Based Digital Signature Standard")는 이제 대체 레일 매니페스트, 사이버 복구 볼트 스냅샷, 1차 참가자와 컨틴전시 참가자 사이의 도메인 간 신뢰 체인에 서명합니다. 2026년 CIB가 페일오버 산출물에 고전적 RSA로 서명하고 있다면, 규제 기관에 결함을 보고하고 있는 셈입니다. [뱅킹 분석의 FHE](https://sebastienrousseau.com/2026-05-29-fhe-banking-analytics-confidential-compute-2026 "뱅킹 분석의 FHE") 글은 분석 영역에서 같은 주장을 했습니다 — 회복탄력성 논거는 이를 복구 영역으로 깔끔하게 확장합니다.
+**PQC**, 구체적으로 [FIPS 203](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf "FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism")과 [FIPS 204](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf "FIPS 204 — Module-Lattice-Based Digital Signature Standard")는 이제 대체 레일 매니페스트, 사이버 복구 볼트 스냅샷, 1차 참가자와 컨틴전시 참가자 사이의 도메인 간 신뢰 체인에 서명합니다. 2026년 CIB가 페일오버 산출물에 고전적 RSA로 서명하고 있다면, 규제 기관에 결함을 보고하고 있는 셈입니다. [뱅킹 분석의 FHE](https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era) 글은 분석 영역에서 같은 주장을 했습니다 — 회복탄력성 논거는 이를 복구 영역으로 깔끔하게 확장합니다.
 
 ## 03. 대체 레일 설계 패턴 — RTGS, 인스턴트, 토큰화, 외부 네트워크 전반의 ISO 20022
 

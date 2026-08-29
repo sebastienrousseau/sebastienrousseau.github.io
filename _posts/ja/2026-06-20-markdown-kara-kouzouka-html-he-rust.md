@@ -112,7 +112,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>01. 2026年にアクセシビリティ・ファーストのHTMLコンパイラが重要な理由。</strong> EAAとADA Title IIIにより、アクセシビリティはエンジニアリングの衛生管理から受託者責任上の義務へと移行しました。</li>
   <li><strong>02. HTML Generator 2026年のアーキテクチャ概観。</strong> 生のMarkdownから堅牢化されたHTML出力までの、マルチステージ・コンパイラ制御型パイプライン。</li>
 </ul>
-<p class="post-lead-related"><strong>関連記事：</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">2026年のAI、MCP、金融インフラにYAMLが安全なRustスタックを必要とする理由</a>、<a href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026">AI時代のパブリッシングにおけるセキュア・バイ・デフォルトの静的サイトジェネレーター（2026年）</a>、<a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN：2026年のAIネイティブ・エッジのためのオープンソース・ブループリント</a>。</p>
+<p class="post-lead-related"><strong>関連記事：</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">2026年のAI、MCP、金融インフラにYAMLが安全なRustスタックを必要とする理由</a>、AI時代のパブリッシングにおけるセキュア・バイ・デフォルトの静的サイトジェネレーター（2026年）、<a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN：2026年のAIネイティブ・エッジのためのオープンソース・ブループリント</a>。</p>
 </aside>
 <!-- lead-end -->
 
@@ -134,7 +134,7 @@ Markdownのレンダリングは一見単純に見えます。しかしパブリ
 - **WebAssemblyサンドボックス化。** 信頼されていないMarkdownのパーシングはセキュリティ上のリスクです。[WASM](https://webassembly.org/)をターゲットとすることで、HTML Generatorはホスト・システムから分離されたサンドボックス内で実行され、任意のコード実行を防止します。これは[DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554)のICTセキュリティ要件を直接満たします。
 - **取締役会のための受託者的保護。** 技術的な不準拠は取締役会レベルの問題となっています。コンパイラ制御型のHTMLエンジンを標準化することで、DORA、EAA、ADA Title IIIの下での取締役および上級管理職の個人的な民事・規制上のリスクを軽減します。
 
-**関連記事：** [2026年のAI、MCP、金融インフラにYAMLが安全なRustスタックを必要とする理由](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/)、[AI時代のパブリッシングにおけるセキュア・バイ・デフォルトの静的サイトジェネレーター（2026年）](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/)、[CloudCDN：2026年のAIネイティブ・エッジのためのオープンソース・ブループリント](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/)。
+**関連記事：** [2026年のAI、MCP、金融インフラにYAMLが安全なRustスタックを必要とする理由](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/)、AI時代のパブリッシングにおけるセキュア・バイ・デフォルトの静的サイトジェネレーター（2026年）、[CloudCDN：2026年のAIネイティブ・エッジのためのオープンソース・ブループリント](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/)。
 
 ## 01. 2026年にアクセシビリティ・ファーストのHTMLコンパイラが重要な理由
 
