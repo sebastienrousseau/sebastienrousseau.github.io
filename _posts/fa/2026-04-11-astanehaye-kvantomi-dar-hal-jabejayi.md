@@ -125,7 +125,7 @@ keywords: "محاسبات کوانتومی، الگوریتم شور، ۱۰۰۰�
 
 - سباستین روسو، (۲۰۲۵). [پرداخت‌های امن در برابر کوانتوم: چرا صنعت پرداخت باید همین حالا اقدام کند](https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/index.html "پرداخت‌های امن در برابر کوانتوم: چرا صنعت پرداخت باید همین حالا اقدام کند").
 - سباستین روسو، (۲۰۲۳). [توزیع کلید کوانتومی: انقلابی در امنیت بانکداری](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "توزیع کلید کوانتومی: انقلابی در امنیت بانکداری").
-- سباستین روسو، (۲۰۲۳). [[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): الگوریتم پاسدار در عصر کوانتومی](https://sebastienrousseau.com/2023-11-19-[crystals-kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)-the-safeguarding-algorithm-in-a-quantum-age/index.html "
+- سباستین روسو، (۲۰۲۳). [[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): الگوریتم پاسدار در عصر کوانتومی](https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "
 [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): الگوریتم پاسدار در عصر کوانتومی").
 - ناشناس، (۲۰۲۶). [الگوریتم شور تنها با ۱۰٬۰۰۰ کیوبیت اتمی بازپیکربندی‌پذیر ممکن است ⧉](https://arxiv.org/abs/2603.28627 "الگوریتم شور تنها با ۱۰٬۰۰۰ کیوبیت اتمی بازپیکربندی‌پذیر ممکن است"). پیش‌چاپ arXiv با شناسه arXiv:2603.28627.
 - Castelvecchi, D. (۲۰۲۶). [دستاوردهای محاسبات کوانتومی خطراتی برای رمزنگاری ایجاد می‌کنند ⧉](https://www.nature.com/articles/d41586-026-01054-1 "دستاوردهای محاسبات کوانتومی خطراتی برای رمزنگاری ایجاد می‌کنند"). Nature.

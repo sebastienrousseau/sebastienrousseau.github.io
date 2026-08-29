@@ -95,3 +95,30 @@ def test_min_words_fallback():
 
 def test_unknown_locale_passes_through():
     assert slugify("Plain English Title", "xx") == "plain-english-title"
+
+
+def test_an_unbroken_hangul_run_is_bounded():
+    """Found by fuzzing: 60 repeated syllables produced a 180-char slug.
+
+    Dropping words cannot go below min_words, and a long hangul or CJK run
+    romanises to one enormous token with no word boundary to cut at. The slug
+    becomes a filename and a URL, so the bound is hard.
+    """
+    out = derive_slug("잉" * 60, "ko", "2026")
+    assert len(out) <= 79, len(out)
+    assert not out.endswith("-")
+    assert "--" not in out
+
+
+def test_an_unromanisable_title_yields_no_slug():
+    """Returning the bare suffix would give "-tw", and the caller would build
+    "2026-07-03--tw" from it."""
+    assert derive_slug("!!!", "ko", "2026") == ""
+    assert derive_slug("", "zh-hant", "2026") == ""
+    assert not derive_slug("银" * 80, "zh-hant", "2026").startswith("-")
+
+
+def test_a_real_zh_hant_title_still_derives():
+    """The bound and the empty-body guard must not touch normal input."""
+    out = derive_slug("讀懂銀行的新興技術風險地平線", "zh-hant", "2026")
+    assert out == "dudong-yinhang-xinxing-jishu-fengxian-dipingxian-tw"

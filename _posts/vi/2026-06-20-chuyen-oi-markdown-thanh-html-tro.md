@@ -112,7 +112,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>01. Tại sao trình biên dịch HTML ưu tiên trợ năng quan trọng năm 2026.</strong> EAA và ADA Title III đã nâng trợ năng từ yêu cầu kỹ thuật lên trách nhiệm pháp lý ủy thác.</li>
   <li><strong>02. Góc nhìn kiến trúc HTML Generator 2026.</strong> Pipeline biên dịch đa giai đoạn, kiểm soát tại biên dịch, từ Markdown thô đến đầu ra HTML đã được gia cố.</li>
 </ul>
-<p class="post-lead-related"><strong>Đọc thêm:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">Tại Sao YAML Cần Stack Rust An Toàn Hơn Cho AI, MCP và Hạ Tầng Tài Chính Năm 2026</a>, <a href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026">Static Site Generator Bảo Mật Mặc Định Cho Xuất Bản Trong Kỷ Nguyên AI Năm 2026</a>, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: Thiết Kế Mã Nguồn Mở Cho Edge AI-Native Năm 2026</a>.</p>
+<p class="post-lead-related"><strong>Đọc thêm:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">Tại Sao YAML Cần Stack Rust An Toàn Hơn Cho AI, MCP và Hạ Tầng Tài Chính Năm 2026</a>, Static Site Generator Bảo Mật Mặc Định Cho Xuất Bản Trong Kỷ Nguyên AI Năm 2026, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: Thiết Kế Mã Nguồn Mở Cho Edge AI-Native Năm 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -134,7 +134,7 @@ Kết xuất Markdown trông có vẻ đơn giản. HTML đạt chuẩn xuất b
 - **Sandbox WebAssembly.** Phân tích cú pháp Markdown không tin cậy là rủi ro bảo mật. Bằng cách nhắm đích [WASM](https://webassembly.org/), HTML Generator thực thi trong sandbox cô lập, ngăn chặn việc thực thi mã tùy ý và bảo vệ hệ thống máy chủ — đáp ứng trực tiếp nghĩa vụ bảo mật ICT theo [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).
 - **Bảo vệ nghĩa vụ ủy thác cho hội đồng quản trị.** Vi phạm kỹ thuật đã leo thang vào phòng họp hội đồng. Chuẩn hóa trên engine HTML được kiểm định tại biên dịch bảo vệ giám đốc và ban lãnh đạo cấp cao khỏi trách nhiệm dân sự và pháp lý cá nhân theo DORA, EAA và ADA Title III.
 
-**Đọc thêm:** [Tại Sao YAML Cần Stack Rust An Toàn Hơn Cho AI, MCP và Hạ Tầng Tài Chính Năm 2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), [Static Site Generator Bảo Mật Mặc Định Cho Xuất Bản Trong Kỷ Nguyên AI Năm 2026](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/), [CloudCDN: Thiết Kế Mã Nguồn Mở Cho Edge AI-Native Năm 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
+**Đọc thêm:** [Tại Sao YAML Cần Stack Rust An Toàn Hơn Cho AI, MCP và Hạ Tầng Tài Chính Năm 2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), Static Site Generator Bảo Mật Mặc Định Cho Xuất Bản Trong Kỷ Nguyên AI Năm 2026, [CloudCDN: Thiết Kế Mã Nguồn Mở Cho Edge AI-Native Năm 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
 
 ## 01. Tại Sao Trình Biên Dịch HTML Ưu Tiên Trợ Năng Quan Trọng Năm 2026
 

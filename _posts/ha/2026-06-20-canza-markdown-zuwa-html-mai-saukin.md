@@ -112,7 +112,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>01. Me yasa mai-sarrafa HTML na farko-sauƙin-isa ya yi muhimmanci a 2026.</strong> EAA da ADA Title III sun matsar da sauƙin isa daga tsaftar injiniyanci zuwa haɗarin kuɗaɗen amana.</li>
   <li><strong>02. Madubin tsarin HTML Generator na 2026.</strong> Bututun sarrafa mai-zangon-da-yawa, da aka kebe ta matakin mai-sarrafa, daga raw Markdown zuwa fitarwar HTML mai ƙarfi.</li>
 </ul>
-<p class="post-lead-related"><strong>Karatu masu alaƙa:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">Me yasa YAML ke Buƙatar Tari mafi Aminci na Rust don AI, MCP, da Ababen More Rayuwa na Kuɗi a 2026</a>, <a href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026">Static Site Generator mai-Aminci-ta-Asali don Buga a Zamanin AI a 2026</a>, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: Tsarin Buɗaɗɗen Tushe don Kiyayen AI-Native a 2026</a>.</p>
+<p class="post-lead-related"><strong>Karatu masu alaƙa:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">Me yasa YAML ke Buƙatar Tari mafi Aminci na Rust don AI, MCP, da Ababen More Rayuwa na Kuɗi a 2026</a>, Static Site Generator mai-Aminci-ta-Asali don Buga a Zamanin AI a 2026, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: Tsarin Buɗaɗɗen Tushe don Kiyayen AI-Native a 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -134,7 +134,7 @@ Nuna Markdown yana da sauƙi a zahiri. HTML na matakin buga kamfani matsala ce t
 - **Keɓewa na WebAssembly.** Sarrafa Markdown marasa amana haɗari ne na tsaro. Ta hanyar niyya da [WASM](https://webassembly.org/), HTML Generator yana aiwatarwa a cikin sandbox mai keɓe wanda yake hana aiwatar lambar ta sabani kuma yana kare tsarin mai masaukin baki — yana cika tilas na tsaron ICT na DORA Article 6 kai tsaye.
 - **Kariya ta amana don kwamitocin gudanarwa.** Rashin bin ƙa'idodi na fasaha ya shiga zauren kwamiti. Yin amfani da injin HTML da aka kebe ta matakin mai-sarrafa yana kare daraktoci da manajan manajoji daga haɗarin farar hula da tsari na sirri a ƙarƙashin DORA, EAA, da ADA Title III.
 
-**Karatu masu alaƙa:** [Me yasa YAML ke Buƙatar Tari mafi Aminci na Rust don AI, MCP, da Ababen More Rayuwa na Kuɗi a 2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), [Static Site Generator mai-Aminci-ta-Asali don Buga a Zamanin AI a 2026](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/), [CloudCDN: Tsarin Buɗaɗɗen Tushe don Kiyayen AI-Native a 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
+**Karatu masu alaƙa:** [Me yasa YAML ke Buƙatar Tari mafi Aminci na Rust don AI, MCP, da Ababen More Rayuwa na Kuɗi a 2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), Static Site Generator mai-Aminci-ta-Asali don Buga a Zamanin AI a 2026, [CloudCDN: Tsarin Buɗaɗɗen Tushe don Kiyayen AI-Native a 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
 
 ## 01. Me yasa Mai-Sarrafa HTML na Farko-Sauƙin-Isa Ya Yi Muhimmanci a 2026
 

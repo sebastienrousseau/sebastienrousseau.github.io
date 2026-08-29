@@ -144,6 +144,40 @@ def _audit_external(external: list[str]) -> list[tuple[str, int | str]]:
     return broken
 
 
+SELF_ORIGINS = ("https://sebastienrousseau.com", "http://sebastienrousseau.com")
+
+
+def is_self_link(href: str) -> bool:
+    """Whether an absolute href points back at this site."""
+    return href.startswith(SELF_ORIGINS)
+
+
+def _self_path(href: str) -> str:
+    """The root-relative path of an absolute self-link."""
+    for origin in SELF_ORIGINS:
+        if href.startswith(origin):
+            return href[len(origin) :] or "/"
+    return href  # pragma: no cover - guarded by is_self_link
+
+
+def partition_hrefs(hrefs: set[str]) -> tuple[list[str], list[str]]:
+    """Split hrefs into internal and external.
+
+    A link to our own origin is internal however it is written. Treating an
+    absolute self-link as external meant 113 of them could 404 while the
+    internal audit reported "0 broken", and only a network run that is not
+    part of CI would ever have noticed.
+    """
+    internal = {h for h in hrefs if h.startswith("/")}
+    internal |= {_self_path(h) for h in hrefs if is_self_link(h)}
+    external = {
+        h
+        for h in hrefs
+        if h.startswith(("http://", "https://")) and "127.0.0.1" not in h and not is_self_link(h)
+    }
+    return sorted(internal), sorted(external)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--base-dir", default="public")
@@ -152,11 +186,7 @@ def main() -> int:
     args = ap.parse_args()
 
     public = Path(args.base_dir)
-    hrefs = collect_hrefs(public)
-    internal = sorted(h for h in hrefs if h.startswith("/"))
-    external = sorted(
-        h for h in hrefs if h.startswith(("http://", "https://")) and "127.0.0.1" not in h
-    )
+    internal, external = partition_hrefs(collect_hrefs(public))
 
     int_broken = _audit_internal(internal, public)
     if args.check_external:

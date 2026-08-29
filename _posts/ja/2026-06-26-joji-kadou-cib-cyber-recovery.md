@@ -134,9 +134,9 @@ site_software: "Static Site Generator, Rust"
 
 **FHE** は、銀行がサイバーリカバリ・ボールトの中で、平文を露出させずに暗号化されたトレジャリー・ポジション上で計算を行うことを可能にします。本番環境が疑わしいとき、分析、照合、約定前チェックは暗号化されたコピー上で継続できます。[BIS のペーパー「Project Leap:金融システムの量子耐性化」](https://www.bis.org/publ/bppdf/bispap158.htm "BIS Papers No 158 — Project Leap")は、運用上の論拠を直接示しています — 機密性コントロールとレジリエンス・コントロールは同じプリミティブに収束しつつあります。
 
-**QKD** は、常時稼働ワークロードを運ぶデータセンター間に情報理論的な鍵配送を提供します。これは PQC の代替ではありません。物理的な鍵交換保証がコストに見合う数少ないリンクのための補完的なレイヤーです。著者の以前の記事 — [ホールセールバンキングにおける QKD:物理グレードの鍵が実際に効くところ](https://sebastienrousseau.com/2026-04-18-qkd-wholesale-banking-physics-grade-keys-2026 "QKD in wholesale banking") — がその境界を定めています。
+**QKD** は、常時稼働ワークロードを運ぶデータセンター間に情報理論的な鍵配送を提供します。これは PQC の代替ではありません。物理的な鍵交換保証がコストに見合う数少ないリンクのための補完的なレイヤーです。著者の以前の記事 — [ホールセールバンキングにおける QKD:物理グレードの鍵が実際に効くところ](https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026) — がその境界を定めています。
 
-**PQC**、具体的には [FIPS 203](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf "FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism") および [FIPS 204](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf "FIPS 204 — Module-Lattice-Based Digital Signature Standard") は、いまやフォールバックレールのマニフェスト、サイバーリカバリ・ボールトのスナップショット、主系とコンティンジェンシー参加者の間のドメイン間信頼チェーンに署名します。フェイルオーバー・アーティファクトに古典 RSA で署名する 2026 年の CIB は、規制当局に対して指摘事項を報告していることになります。[銀行分析における FHE](https://sebastienrousseau.com/2026-05-29-fhe-banking-analytics-confidential-compute-2026 "FHE in banking analytics") の記事は分析領域で同じ主張をしました — レジリエンスの論拠はそれをそのまま復旧へと拡張します。
+**PQC**、具体的には [FIPS 203](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf "FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism") および [FIPS 204](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf "FIPS 204 — Module-Lattice-Based Digital Signature Standard") は、いまやフォールバックレールのマニフェスト、サイバーリカバリ・ボールトのスナップショット、主系とコンティンジェンシー参加者の間のドメイン間信頼チェーンに署名します。フェイルオーバー・アーティファクトに古典 RSA で署名する 2026 年の CIB は、規制当局に対して指摘事項を報告していることになります。[銀行分析における FHE](https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era) の記事は分析領域で同じ主張をしました — レジリエンスの論拠はそれをそのまま復旧へと拡張します。
 
 ## 03. フォールバックレールの設計パターン — RTGS、インスタント、トークン化、外部ネットワークを横断する ISO 20022
 

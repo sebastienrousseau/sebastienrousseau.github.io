@@ -12,6 +12,8 @@ import html as _html
 import re
 from pathlib import Path
 
+import _lang_registry
+
 from . import _state as st
 from ._fm import parse_frontmatter
 
@@ -19,7 +21,17 @@ from ._fm import parse_frontmatter
 # EN-URL → locale-URL rewriting
 # ---------------------------------------------------------------------------
 
-_EN_URL_PATTERN_TMPL = r"(https?://sebastienrousseau\.com)?/(?P<slug>{slugs})(/(?:index\.html)?)?"
+# The locale prefix is *absorbed* rather than merely tolerated. The origin
+# group is optional and the pattern is unanchored, so on a URL that already
+# carries one — "…com/ar/2026-05-26-slug" — the origin matched empty at the
+# position after "/ar", the slug matched, and repl re-added "/ar/", emitting
+# "/ar/ar/…". 103 links across the site 404'd because of it, invisible to the
+# internal link audit because an absolute self-link is classified as external.
+_EN_URL_PATTERN_TMPL = (
+    r"(https?://sebastienrousseau\.com)?"
+    r"(?:/(?:{locales}))?"
+    r"/(?P<slug>{slugs})(/(?:index\.html)?)?"
+)
 
 
 def _build_en_url_rewriter() -> re.Pattern[str]:
@@ -29,7 +41,11 @@ def _build_en_url_rewriter() -> re.Pattern[str]:
     slugs = "|".join(re.escape(s) for s in sorted(st.EN_TO_FR.keys(), key=len, reverse=True))
     if not slugs:
         return re.compile(r"(?!)")
-    return re.compile(_EN_URL_PATTERN_TMPL.format(slugs=slugs))
+    locales = "|".join(
+        re.escape(lang.code)
+        for lang in sorted(_lang_registry.LANGUAGES, key=lambda x: len(x.code), reverse=True)
+    )
+    return re.compile(_EN_URL_PATTERN_TMPL.format(slugs=slugs, locales=locales))
 
 
 _EN_URL_RE_CACHE: dict[str, re.Pattern[str]] = {}

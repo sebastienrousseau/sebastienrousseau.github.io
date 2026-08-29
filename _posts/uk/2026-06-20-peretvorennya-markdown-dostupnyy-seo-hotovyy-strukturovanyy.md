@@ -112,7 +112,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>01. Чому компілятор HTML з пріоритетом доступності важливий у 2026 році.</strong> EAA та ADA Title III перемістили доступність з інженерної гігієни у сферу фідуціарної відповідальності.</li>
   <li><strong>02. Архітектурна призма HTML Generator 2026.</strong> Багатоетапний, компілятивно-контрольований конвеєр від необробленого Markdown до захищеного HTML-виводу.</li>
 </ul>
-<p class="post-lead-related"><strong>Суміжні матеріали:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">Чому YAML потребує безпечнішого стеку Rust для ШІ, MCP та фінансової інфраструктури у 2026 році</a>, <a href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026">Безпечний за замовчуванням Static Site Generator для видання в епоху ШІ у 2026 році</a>, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: відкритий план для AI-нативної периферії у 2026 році</a>.</p>
+<p class="post-lead-related"><strong>Суміжні матеріали:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">Чому YAML потребує безпечнішого стеку Rust для ШІ, MCP та фінансової інфраструктури у 2026 році</a>, Безпечний за замовчуванням Static Site Generator для видання в епоху ШІ у 2026 році, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: відкритий план для AI-нативної периферії у 2026 році</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -134,7 +134,7 @@ site_software: "Static Site Generator, Rust"
 - **Ізоляція WebAssembly.** Парсинг ненадійного Markdown є ризиком безпеки. Завдяки орієнтуванню на [WASM](https://webassembly.org/), HTML Generator виконується у ізольованій пісочниці, що запобігає довільному виконанню коду та захищає хост-систему — безпосередньо виконуючи зобов'язання ІКТ-безпеки відповідно до [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).
 - **Фідуціарний захист для рад директорів.** Технічна невідповідність вийшла на рівень залу засідань. Стандартизація на компілятивно-контрольованому HTML-рушії захищає директорів та вище керівництво від особистої цивільно-правової та регуляторної відповідальності відповідно до DORA, EAA та ADA Title III.
 
-**Суміжні матеріали:** [Чому YAML потребує безпечнішого стеку Rust для ШІ, MCP та фінансової інфраструктури у 2026 році](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), [Безпечний за замовчуванням Static Site Generator для видання в епоху ШІ у 2026 році](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/), [CloudCDN: відкритий план для AI-нативної периферії у 2026 році](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
+**Суміжні матеріали:** [Чому YAML потребує безпечнішого стеку Rust для ШІ, MCP та фінансової інфраструктури у 2026 році](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), Безпечний за замовчуванням Static Site Generator для видання в епоху ШІ у 2026 році, [CloudCDN: відкритий план для AI-нативної периферії у 2026 році](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
 
 ## 01. Чому компілятор HTML з пріоритетом доступності важливий у 2026 році
 

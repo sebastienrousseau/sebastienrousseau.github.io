@@ -892,14 +892,25 @@ def _trim_tail(kept: list[str], stop: set[str], min_words: int) -> None:
         kept.pop()
 
 
+_MAX_SLUG = 76  # 76 + the 11-character date prefix stays under 90
+
+
 def _shorten(kept: list[str], stop: set[str], min_words: int) -> str:
     """Trim the tail, then drop words until the slug fits the length bound."""
     _trim_tail(kept, stop, min_words)
     out = "-".join(kept)
-    while len(out) > 76 and len(kept) > min_words:  # 76 + 11-char date prefix < 90
+    while len(out) > _MAX_SLUG and len(kept) > min_words:
         kept.pop()
         _trim_tail(kept, stop, min_words)
         out = "-".join(kept)
+    if len(out) > _MAX_SLUG:
+        # Dropping words cannot go below min_words, and the survivors can
+        # exceed the bound on their own: a long unbroken hangul or CJK run
+        # romanises to one enormous token with no word boundary to cut at.
+        # Found by fuzzing — 60 repeated hangul syllables produced a
+        # 180-character slug. The slug becomes a filename and a URL, so the
+        # bound is hard rather than best-effort.
+        out = out[:_MAX_SLUG].rstrip("-")
     return out
 
 
@@ -969,6 +980,11 @@ def derive_slug(title: str, code: str, year: str | None = None) -> str:
     the filename prefix, giving ``2026-07-03-2026-...``.
     """
     body = slugify(title, code, skip=frozenset({year}) if year else frozenset())
+    if not body:
+        # Nothing romanisable in the title. Returning the bare suffix would
+        # give "-tw", which the caller turns into "2026-07-03--tw"; an empty
+        # slug is the truthful answer and the caller can reject it.
+        return ""
     suffix = _SUFFIX.get(code, "")
     if suffix and not body.endswith(suffix):
         body += suffix

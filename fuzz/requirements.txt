@@ -1,0 +1,2 @@
+# Coverage-guided fuzzing engine for the targets in this directory.
+atheris==3.0.0

@@ -112,7 +112,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>01. Mengapa kompiler HTML yang mengutamakan aksesibilitas penting di 2026.</strong> EAA dan ADA Title III telah mengubah aksesibilitas dari kebersihan rekayasa menjadi kewajiban fidusia.</li>
   <li><strong>02. Lensa arsitektur HTML Generator 2026.</strong> Pipeline kompilasi multi-tahap yang dikontrol kompiler dari Markdown mentah hingga output HTML yang diperkuat.</li>
 </ul>
-<p class="post-lead-related"><strong>Bacaan terkait:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">Mengapa YAML Membutuhkan Stack Rust yang Lebih Aman untuk AI, MCP, dan Infrastruktur Keuangan di 2026</a>, <a href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026">Static Site Generator Aman-secara-Default untuk Penerbitan Era AI di 2026</a>, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: Cetak Biru Open-Source untuk Edge Native AI di 2026</a>.</p>
+<p class="post-lead-related"><strong>Bacaan terkait:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">Mengapa YAML Membutuhkan Stack Rust yang Lebih Aman untuk AI, MCP, dan Infrastruktur Keuangan di 2026</a>, Static Site Generator Aman-secara-Default untuk Penerbitan Era AI di 2026, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: Cetak Biru Open-Source untuk Edge Native AI di 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -134,7 +134,7 @@ Rendering Markdown tampak sepele. HTML bermutu penerbitan adalah masalah kepatuh
 - **Sandboxing WebAssembly.** Mengurai Markdown yang tidak tepercaya adalah risiko keamanan. Dengan menargetkan [WASM](https://webassembly.org/), HTML Generator mengeksekusi di dalam sandbox terisolasi yang mencegah eksekusi kode arbitrer dan melindungi sistem host — secara langsung memenuhi kewajiban keamanan TIK [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).
 - **Perlindungan fidusia bagi dewan direksi.** Ketidakpatuhan teknis telah masuk ke ruang dewan. Standarisasi pada mesin HTML yang dikontrol kompiler melindungi direktur dan manajemen senior dari eksposur perdata dan regulasi pribadi berdasarkan DORA, EAA, dan ADA Title III.
 
-**Bacaan terkait:** [Mengapa YAML Membutuhkan Stack Rust yang Lebih Aman untuk AI, MCP, dan Infrastruktur Keuangan di 2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), [Static Site Generator Aman-secara-Default untuk Penerbitan Era AI di 2026](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/), [CloudCDN: Cetak Biru Open-Source untuk Edge Native AI di 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
+**Bacaan terkait:** [Mengapa YAML Membutuhkan Stack Rust yang Lebih Aman untuk AI, MCP, dan Infrastruktur Keuangan di 2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), Static Site Generator Aman-secara-Default untuk Penerbitan Era AI di 2026, [CloudCDN: Cetak Biru Open-Source untuk Edge Native AI di 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
 
 ## 01. Mengapa Kompiler HTML yang Mengutamakan Aksesibilitas Penting di 2026
 

@@ -134,9 +134,9 @@ site_software: "Static Site Generator, Rust"
 
 **FHE** 讓銀行在網路復原保險庫內,於加密狀態下對財務頭寸進行運算,而不暴露明文。當正式環境疑似受危時,分析、對帳與交易前檢查得以於加密副本上持續執行。[BIS 論文「Project Leap:讓金融系統具備抗量子能力」](https://www.bis.org/publ/bppdf/bispap158.htm "BIS Papers No 158 — Project Leap")直接點出此一營運論據——機密性控管與韌性控管,正匯聚於相同的原語之上。
 
-**QKD** 為承載持續不停機工作負載的資料中心之間,提供資訊論等級的金鑰分配。它並非 PQC 的替代品,而是少數鏈路上、值得為物理級金鑰交換保證付出成本的互補層。作者先前的文章——[批發銀行業的 QKD:物理級金鑰真正帶來回報之處](https://sebastienrousseau.com/2026-04-18-qkd-wholesale-banking-physics-grade-keys-2026 "QKD in wholesale banking")——明確劃定了邊界。
+**QKD** 為承載持續不停機工作負載的資料中心之間,提供資訊論等級的金鑰分配。它並非 PQC 的替代品,而是少數鏈路上、值得為物理級金鑰交換保證付出成本的互補層。作者先前的文章——[批發銀行業的 QKD:物理級金鑰真正帶來回報之處](https://sebastienrousseau.com/2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026)——明確劃定了邊界。
 
-**PQC**,特別是 [FIPS 203](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf "FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism") 與 [FIPS 204](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf "FIPS 204 — Module-Lattice-Based Digital Signature Standard"),如今簽署備援軌道清單、網路復原保險庫快照,以及主要與應變參與者之間的跨域信任鏈。2026 年若有 CIB 仍以傳統 RSA 簽署故障切換產物,等於向監理機關自承缺失。[FHE 於銀行分析](https://sebastienrousseau.com/2026-05-29-fhe-banking-analytics-confidential-compute-2026 "FHE in banking analytics")一文在分析領域已提出相同主張——韌性論點,將其乾淨延伸至復原領域。
+**PQC**,特別是 [FIPS 203](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf "FIPS 203 — Module-Lattice-Based Key-Encapsulation Mechanism") 與 [FIPS 204](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf "FIPS 204 — Module-Lattice-Based Digital Signature Standard"),如今簽署備援軌道清單、網路復原保險庫快照,以及主要與應變參與者之間的跨域信任鏈。2026 年若有 CIB 仍以傳統 RSA 簽署故障切換產物,等於向監理機關自承缺失。[FHE 於銀行分析](https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era)一文在分析領域已提出相同主張——韌性論點,將其乾淨延伸至復原領域。
 
 ## 03. 備援軌道設計模式——跨 RTGS、即時、代幣化與外部網路的 ISO 20022
 

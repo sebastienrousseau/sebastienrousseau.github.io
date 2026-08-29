@@ -112,7 +112,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>01. 無障礙優先的 HTML 編譯器為何在 2026 年舉足輕重。</strong> EAA 與 ADA Title III 已將無障礙從工程衛生提升為受信託責任約束的法律義務。</li>
   <li><strong>02. HTML Generator 2026 架構視角。</strong> 從原始 Markdown 到強化 HTML 輸出的多階段編譯閘控管線。</li>
 </ul>
-<p class="post-lead-related"><strong>延伸閱讀：</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">2026 年 AI、MCP 與金融基礎設施為何需要更安全的 Rust YAML 堆疊</a>，<a href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026">2026 年 AI 時代發布的預設安全靜態網站產生器</a>，<a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN：2026 年 AI 原生邊緣的開放原始碼藍圖</a>。</p>
+<p class="post-lead-related"><strong>延伸閱讀：</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">2026 年 AI、MCP 與金融基礎設施為何需要更安全的 Rust YAML 堆疊</a>，2026 年 AI 時代發布的預設安全靜態網站產生器，<a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN：2026 年 AI 原生邊緣的開放原始碼藍圖</a>。</p>
 </aside>
 <!-- lead-end -->
 
@@ -134,7 +134,7 @@ Markdown 渲染看似簡單。達到發布級 HTML 的品質實為合規問題�
 - **WebAssembly 沙盒化。** 解析不受信任的 Markdown 是安全風險。透過以 [WASM](https://webassembly.org/) 為目標，HTML Generator 在隔離沙盒中執行，防止任意程式碼執行並保護宿主系統——直接滿足 [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554) 的資訊安全義務。
 - **保護董事會的受信義務。** 技術不合規已進入董事會議程。採用編譯閘控 HTML 引擎作為標準，可保護董事與高級管理層免於 DORA、EAA 及 ADA Title III 下的個人民事與法規責任。
 
-**延伸閱讀：** [2026 年 AI、MCP 與金融基礎設施為何需要更安全的 Rust YAML 堆疊](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/)，[2026 年 AI 時代發布的預設安全靜態網站產生器](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/)，[CloudCDN：2026 年 AI 原生邊緣的開放原始碼藍圖](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/)。
+**延伸閱讀：** [2026 年 AI、MCP 與金融基礎設施為何需要更安全的 Rust YAML 堆疊](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/)，2026 年 AI 時代發布的預設安全靜態網站產生器，[CloudCDN：2026 年 AI 原生邊緣的開放原始碼藍圖](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/)。
 
 ## 01. 無障礙優先的 HTML 編譯器為何在 2026 年舉足輕重
 

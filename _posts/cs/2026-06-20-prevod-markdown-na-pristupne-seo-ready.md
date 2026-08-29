@@ -112,7 +112,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>01. Proč záleží na kompilátoru HTML zaměřeném na přístupnost v roce 2026.</strong> EAA a ADA Title III posunuly přístupnost z technické hygieny na fiduciární odpovědnost.</li>
   <li><strong>02. Architektura HTML Generator v roce 2026.</strong> Vícestupňový, kompilátorem řízený pipeline od surového Markdown po zabezpečený HTML výstup.</li>
 </ul>
-<p class="post-lead-related"><strong>Související čtení:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">Proč YAML potřebuje bezpečnější Rust stack pro AI, MCP a finanční infrastrukturu v roce 2026</a>, <a href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026">Bezpečný Static Site Generator pro publikování v éře AI v roce 2026</a>, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: Open-source plán pro AI-nativní edge v roce 2026</a>.</p>
+<p class="post-lead-related"><strong>Související čtení:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">Proč YAML potřebuje bezpečnější Rust stack pro AI, MCP a finanční infrastrukturu v roce 2026</a>, Bezpečný Static Site Generator pro publikování v éře AI v roce 2026, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: Open-source plán pro AI-nativní edge v roce 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -134,7 +134,7 @@ Renderování Markdown vypadá triviálně. HTML vhodné pro profesionální pub
 - **Sandboxování přes WebAssembly.** Parsování nedůvěryhodného Markdown je bezpečnostní riziko. Nasměrováním na [WASM](https://webassembly.org/) se HTML Generator spouští uvnitř izolovaného sandboxu, který brání spuštění libovolného kódu a chrání hostitelský systém — což přímo naplňuje povinnosti v oblasti bezpečnosti ICT podle [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).
 - **Fiduciární ochrana pro představenstvo.** Technická nesoulad s předpisy se přesunul do zasedacích místností. Standardizace na kompilátorem řízeném HTML engine chrání ředitele a vrcholový management před osobní občanskoprávní a regulatorní expozicí podle DORA, EAA a ADA Title III.
 
-**Související čtení:** [Proč YAML potřebuje bezpečnější Rust stack pro AI, MCP a finanční infrastrukturu v roce 2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), [Bezpečný Static Site Generator pro publikování v éře AI v roce 2026](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/), [CloudCDN: Open-source plán pro AI-nativní edge v roce 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
+**Související čtení:** [Proč YAML potřebuje bezpečnější Rust stack pro AI, MCP a finanční infrastrukturu v roce 2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), Bezpečný Static Site Generator pro publikování v éře AI v roce 2026, [CloudCDN: Open-source plán pro AI-nativní edge v roce 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
 
 ## 01. Proč záleží na kompilátoru HTML zaměřeném na přístupnost v roce 2026
 

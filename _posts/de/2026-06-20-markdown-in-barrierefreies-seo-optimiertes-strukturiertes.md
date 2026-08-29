@@ -112,7 +112,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>01. Warum ein auf Barrierefreiheit ausgelegter HTML-Compiler 2026 entscheidend ist.</strong> EAA und ADA Title III haben Barrierefreiheit von technischer Hygiene zur treuhänderischen Haftung gemacht.</li>
   <li><strong>02. Die Architekturperspektive von HTML Generator 2026.</strong> Eine mehrstufige, compile-gesteuerte Pipeline vom rohen Markdown bis zum gehärteten HTML-Output.</li>
 </ul>
-<p class="post-lead-related"><strong>Weiterführende Lektüre:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">Warum YAML 2026 einen sichereren Rust-Stack für KI, MCP und Finanzinfrastruktur benötigt</a>, <a href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026">Ein sicherer Static Site Generator für das KI-Zeitalter 2026</a>, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: Ein Open-Source-Blueprint für den KI-nativen Edge 2026</a>.</p>
+<p class="post-lead-related"><strong>Weiterführende Lektüre:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">Warum YAML 2026 einen sichereren Rust-Stack für KI, MCP und Finanzinfrastruktur benötigt</a>, Ein sicherer Static Site Generator für das KI-Zeitalter 2026, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: Ein Open-Source-Blueprint für den KI-nativen Edge 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -134,7 +134,7 @@ Markdown-Rendering wirkt trivial. Publishing-gerechtes HTML ist ein Compliance-P
 - **WebAssembly-Sandboxing.** Das Parsen nicht vertrauenswürdigen Markdowns ist ein Sicherheitsrisiko. Durch die Ausrichtung auf [WASM](https://webassembly.org/) läuft HTML Generator in einer isolierten Sandbox, die willkürliche Codeausführung verhindert und das Hostsystem schützt – und damit direkt [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554)-Pflichten zur ICT-Sicherheit erfüllt.
 - **Treuhänderischer Schutz für Vorstände.** Technische Non-Compliance ist im Vorstandsbereich angekommen. Die Standardisierung auf einen compile-gesteuerten HTML-Engine schützt Direktoren und Führungskräfte vor persönlicher zivilrechtlicher und regulatorischer Haftung unter DORA, EAA und ADA Title III.
 
-**Weiterführende Lektüre:** [Warum YAML 2026 einen sichereren Rust-Stack für KI, MCP und Finanzinfrastruktur benötigt](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), [Ein sicherer Static Site Generator für das KI-Zeitalter 2026](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/), [CloudCDN: Ein Open-Source-Blueprint für den KI-nativen Edge 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
+**Weiterführende Lektüre:** [Warum YAML 2026 einen sichereren Rust-Stack für KI, MCP und Finanzinfrastruktur benötigt](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), Ein sicherer Static Site Generator für das KI-Zeitalter 2026, [CloudCDN: Ein Open-Source-Blueprint für den KI-nativen Edge 2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
 
 ## 01. Warum ein auf Barrierefreiheit ausgelegter HTML-Compiler 2026 entscheidend ist
 

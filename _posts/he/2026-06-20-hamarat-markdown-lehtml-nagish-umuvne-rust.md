@@ -112,7 +112,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>01. מדוע קומפיילר HTML מונחה-נגישות חשוב ב-2026.</strong> ה-EAA ו-ADA Title III העבירו את הנגישות מהיגיינת הנדסה לחבות נאמנות.</li>
   <li><strong>02. עדשת הארכיטקטורה של HTML Generator 2026.</strong> צינור קומפילציה רב-שלבי ומבוקר, מ-Markdown גולמי לפלט HTML מוגן.</li>
 </ul>
-<p class="post-lead-related"><strong>קריאה נוספת:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">מדוע YAML זקוק לסטק Rust בטוח יותר עבור AI, MCP ותשתיות פיננסיות ב-2026</a>, <a href="https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026">Static Site Generator מאובטח-כברירת-מחדל לפרסום בעידן ה-AI ב-2026</a>, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: תכנית פתוחה לקצה AI-נטיב ב-2026</a>.</p>
+<p class="post-lead-related"><strong>קריאה נוספת:</strong> <a href="https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026">מדוע YAML זקוק לסטק Rust בטוח יותר עבור AI, MCP ותשתיות פיננסיות ב-2026</a>, Static Site Generator מאובטח-כברירת-מחדל לפרסום בעידן ה-AI ב-2026, <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: תכנית פתוחה לקצה AI-נטיב ב-2026</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -134,7 +134,7 @@ site_software: "Static Site Generator, Rust"
 - **בידוד WebAssembly.** ניתוח Markdown לא מהימן הוא סיכון אבטחה. על-ידי מיקוד ל-[WASM](https://webassembly.org/), HTML Generator מבצע בתוך סביבה מבודדת המונעת ביצוע קוד שרירותי ומגינה על מערכת המארח — ומספק ישירות את חובות אבטחת ICT לפי [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).
 - **הגנה נאמנותית לדירקטוריונים.** אי-תאימות טכנית עברה לחדר הדירקטורים. אימוץ מנוע HTML מבוקר-קומפילציה כמניין מגן על דירקטורים ועל ההנהלה הבכירה מחשיפה אישית אזרחית ורגולטורית תחת DORA, EAA ו-ADA Title III.
 
-**קריאה נוספת:** [מדוע YAML זקוק לסטק Rust בטוח יותר עבור AI, MCP ותשתיות פיננסיות ב-2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), [Static Site Generator מאובטח-כברירת-מחדל לפרסום בעידן ה-AI ב-2026](https://sebastienrousseau.com/2026-06-17-static-site-generator-secure-default-ai-era-publishing-2026/), [CloudCDN: תכנית פתוחה לקצה AI-נטיב ב-2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
+**קריאה נוספת:** [מדוע YAML זקוק לסטק Rust בטוח יותר עבור AI, MCP ותשתיות פיננסיות ב-2026](https://sebastienrousseau.com/2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026/), Static Site Generator מאובטח-כברירת-מחדל לפרסום בעידן ה-AI ב-2026, [CloudCDN: תכנית פתוחה לקצה AI-נטיב ב-2026](https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026/).
 
 ## 01. מדוע קומפיילר HTML מונחה-נגישות חשוב ב-2026
 

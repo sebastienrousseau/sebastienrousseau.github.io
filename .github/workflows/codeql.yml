@@ -5,23 +5,16 @@ name: codeql
 # fail content PRs. Path-filtered so markdown-only PRs don't pay the cost.
 # improvement-plan-2026.md Phase 2.3 / ADR-0005.
 
+# Runs on every push and PR to main, not only on code paths. The path
+# filter meant a markdown-only change — most of this repo's commits — never
+# triggered CodeQL, so OpenSSF Scorecard measured 15 of the last 30 commits
+# as unscanned and scored SAST 8/10. A content PR now pays a few minutes of
+# CodeQL; the alternative is a SAST gate with holes in it.
 on:
   push:
     branches: [main]
-    paths:
-      - 'scripts/**'
-      - 'workers/**'
-      - '_layouts/**'
-      - 'labs/**'
-      - '.github/workflows/codeql.yml'
   pull_request:
     branches: [main]
-    paths:
-      - 'scripts/**'
-      - 'workers/**'
-      - '_layouts/**'
-      - 'labs/**'
-      - '.github/workflows/codeql.yml'
   schedule:
     - cron: '37 3 * * 1'
 
