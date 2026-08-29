@@ -57,12 +57,22 @@ WORKER_ROUTES: tuple[str, ...] = (
 )
 
 
+# The query string is kept. It used to be discarded along with the fragment,
+# which is right for an internal link — the file on disk is found by path —
+# and wrong for an external one, where the query often *is* the resource.
+# Every EUR-Lex citation on the site is
+# /legal-content/EN/TXT/?uri=CELEX:32022R2554; stripping the query left a bare
+# /legal-content/EN/TXT/ that legitimately 404s, so 11 working citations were
+# reported broken. False positives on that scale are how a real dead link goes
+# unnoticed.
+_HREF_RE = re.compile(r'href="([^"]+)"|href=([^ >]+)')
+
+
 def collect_hrefs(public: Path) -> set[str]:
-    pat = re.compile(r'href="([^"#?]+)(?:[#?][^"]*)?"|href=([^ >#?]+)(?:[#?][^ >]*)?')
     links: set[str] = set()
     for html in public.rglob("*.html"):
-        for a, b in pat.findall(html.read_text(errors="ignore")):
-            h = a or b
+        for a, b in _HREF_RE.findall(html.read_text(errors="ignore")):
+            h = (a or b).split("#", 1)[0]  # a fragment never changes what is fetched
             if not h or h.startswith(("mailto:", "tel:", "javascript:", "data:")):
                 continue
             links.add(h)
@@ -72,6 +82,7 @@ def collect_hrefs(public: Path) -> set[str]:
 def check_internal(href: str, public: Path) -> bool:
     if not href.startswith("/"):
         return True  # leave non-absolute alone here
+    href = href.split("?", 1)[0]  # a static file is found by path, not query
     if any(href.startswith(p) for p in WORKER_ROUTES):
         return True  # served by lang-router worker at request time
     target = public / href.lstrip("/")
