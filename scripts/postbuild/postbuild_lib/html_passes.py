@@ -8,12 +8,14 @@ module; the rest only calls the staying _is_french).
 
 from __future__ import annotations
 
+import functools as _functools
 import json as _json
 import re
 from html import escape as _esc
 from html import unescape as _unesc
 from pathlib import Path
 
+import _lang_registry
 from postbuild_lib.article_furniture import (
     _BODY_H1_RE,
     _H1_RE,
@@ -242,3 +244,137 @@ def hoist_body_link_stylesheets(html: str) -> tuple[str, int]:
         extracted.insert(0, _sanitize_link_tag(m.group(0)))
         new_body = new_body[: m.start()] + new_body[m.end() :]
     return head + "".join(extracted) + new_body, len(extracted)
+
+
+# ---------------------------------------------------------------------------
+# Localised listing titles — 2154 of the 7004 non-EN pages served a <title>
+# byte-identical to an English page's, from four templates repeated across all
+# 34 locales: the article listing, its year archives, the six editorial-pillar
+# pages and the tag landings. Each of those pages is self-canonical and
+# declares its own language, so the strongest on-page signal a search engine
+# has was in the wrong one, and up to 35 pages shared a single string.
+#
+# The frames live in labels.json and the pillar names already existed in
+# listings.json; only the wiring was missing. Done here rather than in the
+# four generators that emit these pages because each forks its locale
+# variants separately, and a render pass covers all of them uniformly.
+# ---------------------------------------------------------------------------
+
+_EN_PILLARS = {
+    "Applied AI": "ai",
+    "Payments &amp; money": "payments",
+    "Payments & money": "payments",
+    "Infrastructure &amp; cryptography": "infra",
+    "Infrastructure & cryptography": "infra",
+    "Policy &amp; resilience": "policy",
+    "Policy & resilience": "policy",
+    "Open source": "open-source",
+    "Banking leadership": "leadership",
+}
+_YEAR_TITLE_RE = re.compile(r"^Articles &mdash; (\d{4})$|^Articles — (\d{4})$")
+_LISTINGS_CACHE: dict[str, dict] = {}
+
+
+def _pillars_for(locale: str) -> dict[str, str]:
+    if locale not in _LISTINGS_CACHE:
+        path = Path("_data") / "i18n" / locale / "listings.json"
+        try:
+            _LISTINGS_CACHE[locale] = _json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            _LISTINGS_CACHE[locale] = {}
+    return _LISTINGS_CACHE[locale].get("pillars", {})
+
+
+def localised_listing_title(title: str, locale: str, labels: dict[str, str]) -> str:
+    """Translate one of the four listing title templates, or return it as-is."""
+    articles = labels.get("Articles")
+    if not articles:
+        return title
+    if title == "Articles":
+        return articles
+    year = _YEAR_TITLE_RE.match(title)
+    if year:
+        return f"{articles} — {year.group(1) or year.group(2)}"
+    for suffix, key in (
+        (" — Editorial pillar", "Editorial pillar"),
+        (" — Articles by topic", "Articles by topic"),
+    ):
+        if not title.endswith(suffix):
+            continue
+        frame = labels.get(key)
+        if not frame:
+            return title
+        head = title[: -len(suffix)]
+        if key == "Editorial pillar":
+            # The pillar name is translated; a tag name is a canonical
+            # taxonomy label and stays as it is.
+            head = _pillars_for(locale).get(_EN_PILLARS.get(head, ""), head)
+        return f"{head} — {frame}"
+    return title
+
+
+_LOCALE_LABELS_CACHE: dict[str, dict[str, str]] = {}
+_PAGE_TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)
+_OG_TITLE_ATTR_RE = re.compile(r'(<meta[^>]+property="og:title"[^>]+content=")([^"]*)(")')
+_TW_TITLE_ATTR_RE = re.compile(r'(<meta[^>]+name="twitter:title"[^>]+content=")([^"]*)(")')
+
+
+def _labels_for(locale: str) -> dict[str, str]:
+    if locale not in _LOCALE_LABELS_CACHE:
+        path = Path("_data") / "i18n" / locale / "labels.json"
+        try:
+            _LOCALE_LABELS_CACHE[locale] = _json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            _LOCALE_LABELS_CACHE[locale] = {}
+    return _LOCALE_LABELS_CACHE[locale]
+
+
+@_functools.cache
+def _active_locales() -> frozenset[str]:
+    return frozenset(lang.code for lang in _lang_registry.LANGUAGES if lang.code != "en")
+
+
+def localise_listing_titles(page: Path, html: str) -> str:
+    """Put a locale listing page's title into its own language.
+
+    Rewrites <title>, og:title, twitter:title and the hero H1 together, so the
+    page cannot end up saying one thing to a reader and another to a crawler.
+    """
+    locales = _active_locales()
+    locale = next((p for p in page.parts[:2] if p in locales), None)
+    if locale is None:
+        return html
+    match = _PAGE_TITLE_RE.search(html)
+    if match is None:
+        return html
+    old = match.group(1).strip()
+    new = localised_listing_title(old, locale, _labels_for(locale))
+    if new == old:
+        return html
+    out = _PAGE_TITLE_RE.sub(lambda _m: f"<title>{new}</title>", html, count=1)
+    out = _OG_TITLE_ATTR_RE.sub(
+        lambda m: m.group(1) + new + m.group(3) if m.group(2).strip() == old else m.group(0), out
+    )
+    out = _TW_TITLE_ATTR_RE.sub(
+        lambda m: m.group(1) + new + m.group(3) if m.group(2).strip() == old else m.group(0), out
+    )
+    out = re.sub(
+        r"(<h1[^>]*>)" + re.escape(old) + r"(</h1>)",
+        lambda m: m.group(1) + new + m.group(2),
+        out,
+        count=1,
+    )
+    # A pillar page's H1 is the bare pillar name, not the full title, so the
+    # rewrite above does not reach it: the title read Arabic while the visible
+    # heading still read "Infrastructure &amp; cryptography".
+    head = old.removesuffix(" — Editorial pillar")
+    if head != old:
+        translated = _pillars_for(locale).get(_EN_PILLARS.get(head, ""), head)
+        if translated != head:
+            out = re.sub(
+                r"(<h1[^>]*>)" + re.escape(head) + r"(</h1>)",
+                lambda m: m.group(1) + translated + m.group(2),
+                out,
+                count=1,
+            )
+    return out

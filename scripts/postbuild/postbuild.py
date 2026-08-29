@@ -236,6 +236,7 @@ from postbuild_lib.html_passes import (
     hoist_body_link_stylesheets,
     inject_sigstore_attestation,
     inject_table_labels,
+    localise_listing_titles,
     strip_duplicate_body_h1,
 )
 from postbuild_lib.index_scorecard import inject_index_scorecard
@@ -352,6 +353,7 @@ class _PostbuildCounters:
         "lastmod_meta_patched",
         "lcp_preloaded",
         "link_hoisted",
+        "listing_title_localised",
         "localhost_patched",
         "mermaid_patched",
         "nav_patched",
@@ -553,6 +555,10 @@ def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str
     out = _bump(inject_anchor_links_and_toc, out, ctr, "anchor_patched")
     out = _bump(inject_section_rules, out, ctr, "section_rules_set")
     out = _bump(strip_duplicate_body_h1, out, ctr, "body_h1_stripped")
+    prev = out
+    out = localise_listing_titles(page, out)
+    if out != prev:
+        ctr.listing_title_localised += 1
     out = _convert_faq_to_qa(out)
     out = _bump(inject_pullquotes, out, ctr, "pullquotes_set")
     out = _bump(inject_citations, out, ctr, "citation_patched")
@@ -927,6 +933,7 @@ def main() -> None:
         f"{c.itemlist_patched} got ItemList JSON-LD, "
         f"{c.techarticle_patched} got TechArticle, "
         f"{c.dataset_patched} got Dataset, "
+        f"{c.listing_title_localised} got a localised listing title, "
         f"{c.article_identity_aligned} had Article identity aligned to canonical, "
         f"{c.faq_schema_patched} got FAQPage, "
         f"{c.analytics_injected} got the analytics beacon, "
