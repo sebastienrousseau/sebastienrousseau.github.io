@@ -29,11 +29,13 @@ Usage:  python3 scripts/seo_and_audit/verify_deploy.py [--base URL]
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 import time
 import urllib.error
 import urllib.request
+from pathlib import Path
 from urllib.parse import urljoin
 
 DEFAULT_BASE = "https://sebastienrousseau.com"
@@ -60,6 +62,28 @@ REQUIRED_PATHS = (
     "/.well-known/security.txt",
     "/.well-known/ai.txt",
 )
+
+# The index and scorecard articles publish Dataset JSON-LD whose
+# distribution.contentUrl points at these files. A Dataset advertising a URL
+# that 404s is worse than publishing no Dataset at all — it is a broken
+# promise to the exact consumers the markup is for — and it is the same
+# present-in-the-build-missing-in-production failure this script was written
+# for. Derived from the manifest, so adding a dataset extends the check
+# without anyone remembering to.
+DATASETS_MANIFEST = Path(__file__).resolve().parents[2] / "_data" / "datasets.json"
+
+
+def dataset_paths() -> set[str]:
+    """The JSON and CSV distribution path of every declared dataset."""
+    if not DATASETS_MANIFEST.is_file():
+        return set()
+    manifest = json.loads(DATASETS_MANIFEST.read_text(encoding="utf-8"))
+    return {
+        f"/data/{entry['slug']}.{ext}"
+        for entry in manifest.get("datasets", [])
+        for ext in ("json", "csv")
+    }
+
 
 _SITEMAP_LINE_RE = re.compile(r"^Sitemap:\s*(\S+)", re.MULTILINE | re.IGNORECASE)
 _ADVERTISED_URL_RE = re.compile(r"https://[^\s\)\]<>\"]+")
@@ -185,7 +209,8 @@ def main(argv: list[str] | None = None) -> int:
     for attempt in range(1, attempts + 1):
         problems = []
         try:
-            paths = {urljoin(base + "/", p) for p in REQUIRED_PATHS} | advertised_paths(base)
+            required = set(REQUIRED_PATHS) | dataset_paths()
+            paths = {urljoin(base + "/", p) for p in required} | advertised_paths(base)
             problems += check_paths(base, paths)
             problems += check_home_description(base)
             if not args.skip_csp:
