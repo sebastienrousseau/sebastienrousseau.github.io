@@ -861,3 +861,77 @@ def inject_faq_schema(page: Path, html: str) -> str:
     payload = _json.dumps(graph, separators=(",", ":"), ensure_ascii=False)
     block = f'<script type="application/ld+json">{payload}</script>'
     return re.sub(r"(?i)</body>", block + "</body>", html, count=1)
+
+
+# ---------------------------------------------------------------------------
+# Dataset — the index and scorecard articles carry the scoring framework that
+# earns the name, and it lived in HTML tables only. Dataset is the type Google
+# Dataset Search indexes and the one an answer engine can attribute, so
+# publishing it is what makes the index citable rather than merely readable.
+# ---------------------------------------------------------------------------
+
+_DATASETS_PATH = Path("_data") / "datasets.json"
+_DATASETS: dict[str, dict] | None = None
+
+
+def _datasets() -> dict[str, dict]:
+    """Manifest written by scripts/generators/build_datasets.py, by slug."""
+    global _DATASETS
+    if _DATASETS is None:
+        if _DATASETS_PATH.is_file():
+            raw = _json.loads(_DATASETS_PATH.read_text(encoding="utf-8"))
+            _DATASETS = {d["slug"]: d for d in raw.get("datasets", [])}
+        else:
+            _DATASETS = {}
+    return _DATASETS
+
+
+def _dataset_graph(entry: dict) -> dict:
+    slug = entry["slug"]
+    page = f"{SITE}/{slug}"
+    return {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "@id": f"{page}#dataset",
+        "name": entry["name"],
+        "description": entry["description"],
+        "url": page,
+        "isAccessibleForFree": True,
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "creator": {"@id": f"{SITE}/#person"},
+        "publisher": {"@id": f"{SITE}/#organization"},
+        "isPartOf": {"@id": f"{page}#article"},
+        "keywords": [k.strip() for k in entry.get("keywords", "").split(",") if k.strip()],
+        "temporalCoverage": entry.get("date", ""),
+        # The frameworks are qualitative, so what the index *measures* is the
+        # honest representation. A ranked ItemList would assert a leaderboard
+        # the articles do not publish.
+        "variableMeasured": [
+            {"@type": "PropertyValue", "name": v["name"], "description": v["description"]}
+            for v in entry["variables"]
+        ],
+        "distribution": [
+            {
+                "@type": "DataDownload",
+                "encodingFormat": fmt,
+                "contentUrl": f"{SITE}/data/{slug}.{ext}",
+            }
+            for ext, fmt in (("json", "application/json"), ("csv", "text/csv"))
+        ],
+    }
+
+
+def inject_dataset(page: Path, html: str) -> str:
+    """Add a Dataset block to an article that declares an index table.
+
+    Idempotent — skipped when the page already carries one, or when the slug
+    is not in the manifest.
+    """
+    if '"@type":"Dataset"' in html or '"@type": "Dataset"' in html:
+        return html
+    entry = _datasets().get(page.parent.name)
+    if entry is None:
+        return html
+    payload = _json.dumps(_dataset_graph(entry), separators=(",", ":"), ensure_ascii=False)
+    block = f'<script type="application/ld+json">{payload}</script>'
+    return re.sub(r"(?i)</body>", block + "</body>", html, count=1)

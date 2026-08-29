@@ -111,6 +111,7 @@ The Rust tool reads the `_posts_build` markdown and `_layouts/` and writes the E
 13. **`scripts/generators/build_lang_feeds.py`** — RSS, Atom, news-sitemap, and JSON feeds per language.
 14. **`scripts/generators/build_agent_api.py`** — JSON endpoints exposing articles/topics for AI and search clients.
 15. **`scripts/generators/build_lead_magnets.py`** — compiles source files into PDF resources (checklists, etc.).
+16. **`scripts/generators/build_datasets.py`** — publishes the index and scorecard articles as machine-readable data. Each declares its index table in front-matter (`dataset_table`) rather than the table being inferred; the generator writes `public/data/<slug>.json` and `.csv` plus the `_data/datasets.json` manifest that the postbuild `Dataset` JSON-LD pass reads. Runs before `postbuild.py`.
 16. **`scripts/generators/build_news_sitemap.py`** — the Google News sitemap.
 
 ### Phase D — postbuild + finalisation

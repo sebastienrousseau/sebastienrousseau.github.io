@@ -456,6 +456,7 @@ python3 scripts/generators/build_trust.py
 # /changelog/ + /status/ pages are picked up by the sitemap-augment pass and
 # their inline JSON-LD is hashed into the per-page CSP. Deterministic:
 # derives from committed dated-post front matter, no wall-clock time.
+python3 scripts/generators/build_datasets.py
 python3 scripts/generators/build_changelog.py
 python3 scripts/postbuild/postbuild.py
 # RAG-ready corpus export — JSONL one-object-per-article + per-tag
