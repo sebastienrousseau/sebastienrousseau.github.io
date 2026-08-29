@@ -1,0 +1,64 @@
+name: fuzz
+
+# Coverage-guided fuzzing (atheris/libFuzzer) of the parsers that consume
+# input the author does not fully control: article front-matter and the
+# romanisation tables that turn a translated title into a live URL.
+#
+# Bounded so it is a gate, not a research run: each target gets a fixed
+# number of runs on a pull request, longer on the nightly schedule. A crash
+# reproducer is uploaded so the failure can be replayed exactly.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '17 4 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fuzz-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  fuzz:
+    name: fuzz ${{ matrix.target }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        target: [fuzz_slugify, fuzz_frontmatter]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Setup Python
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d5156d7c80228075 # v6
+        with:
+          python-version: '3.12'
+
+      - name: Install atheris
+        run: pip install --quiet --require-hashes -r fuzz/requirements.lock
+
+      - name: Run ${{ matrix.target }}
+        env:
+          # A nightly run explores far more than a PR can afford to.
+          RUNS: ${{ github.event_name == 'schedule' && '2000000' || '50000' }}
+        run: |
+          mkdir -p fuzz/artifacts
+          python3 "fuzz/${{ matrix.target }}.py" \
+            -atheris_runs="$RUNS" \
+            -artifact_prefix=fuzz/artifacts/ \
+            -print_final_stats=1
+
+      - name: Upload crash reproducer
+        if: failure()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: fuzz-crash-${{ matrix.target }}
+          path: fuzz/artifacts/
+          retention-days: 7
+          if-no-files-found: ignore

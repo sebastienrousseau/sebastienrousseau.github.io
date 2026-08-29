@@ -1,0 +1,5 @@
+# Pinned + hashed so the fuzz job matches the rest of CI (see
+# requirements.lock / requirements-dev.lock). atheris declares no runtime
+# dependencies, so this is the complete closure.
+atheris==3.0.0 \
+    --hash=sha256:1f0929c7bc3040f3fe4102e557718734190cf2d7718bbb8e3ce6d3eb56ef5bb3
