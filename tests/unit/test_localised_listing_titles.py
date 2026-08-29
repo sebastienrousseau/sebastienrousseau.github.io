@@ -84,3 +84,41 @@ def test_a_pillar_pages_h1_is_translated_too():
     out = localise_listing_titles(Path("ar/categories/infra/index.html"), html)
     assert "<h1>البنية التحتية والتشفير</h1>" in out
     assert "Infrastructure &amp; cryptography</h1>" not in out
+
+
+def test_a_locale_without_the_frames_is_left_alone():
+    """A labels.json missing the keys must not produce a half-translated
+    title; the page keeps the English one until the key is added."""
+    assert localised_listing_title("Articles", "ja", {}) == "Articles"
+    assert (
+        localised_listing_title("Research — Articles by topic", "ja", {"Articles": "記事"})
+        == "Research — Articles by topic"
+    )
+
+
+def test_a_missing_labels_file_is_not_an_error(tmp_path, monkeypatch):
+    """A locale directory without labels.json must not break the build."""
+    from postbuild_lib import html_passes
+
+    monkeypatch.setattr(html_passes, "_LOCALE_LABELS_CACHE", {})
+    monkeypatch.setattr(html_passes, "_LISTINGS_CACHE", {})
+    monkeypatch.chdir(tmp_path)
+    html = "<html><head><title>Articles</title></head><body></body></html>"
+    assert localise_listing_titles(Path("ja/kiji/index.html"), html) == html
+
+
+def test_an_unknown_pillar_name_is_kept(tmp_path):
+    """A pillar the EN map does not know stays as it is rather than vanishing."""
+    got = localised_listing_title("Some New Pillar — Editorial pillar", "ja", JA)
+    assert got == "Some New Pillar — 編集の柱"
+
+
+def test_a_missing_listings_file_leaves_the_pillar_name(tmp_path, monkeypatch):
+    """listings.json holds the translated pillar names. Without it the frame
+    is still translated and the name kept, rather than the build failing."""
+    from postbuild_lib import html_passes
+
+    monkeypatch.setattr(html_passes, "_LISTINGS_CACHE", {})
+    monkeypatch.chdir(tmp_path)
+    got = localised_listing_title("Applied AI — Editorial pillar", "ja", JA)
+    assert got == "Applied AI — 編集の柱"
