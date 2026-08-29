@@ -36,9 +36,13 @@ def one_input(data: bytes) -> None:
     assert "--" not in slug, f"double dash in {slug!r}"
     assert not slug.endswith("-"), f"trailing dash in {slug!r}"
 
+    # An empty result is legitimate: a title with nothing romanisable in it
+    # has no slug, and the caller rejects it rather than building "…--tw".
     full = derive_slug(title, locale, "2026")
     assert _SAFE.match(full), f"unsafe derived slug {full!r}"
     assert len(full) <= 100, f"slug too long ({len(full)}): {full!r}"
+    assert not full.startswith("-"), f"leading dash in {full!r}"
+    assert "--" not in full, f"double dash in {full!r}"
 
 
 def main() -> None:
