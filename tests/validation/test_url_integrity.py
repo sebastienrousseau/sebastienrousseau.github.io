@@ -49,6 +49,23 @@ BAD_HOSTS = (
 # Legitimately non-ASCII URLs, if one is ever needed. Empty today.
 ALLOW: frozenset[str] = frozenset()
 
+# The same rewrite in Latin script, which the non-ASCII rule cannot see: the
+# /en/ path segment translated into the locale's own word — "em" (pt-br, it),
+# "in" (id, ms). Host-scoped on purpose. linkedin.com/in/<profile> is a real
+# path, and a blanket /in/ rule proposed rewriting 1798 correct URLs
+# including every LinkedIn link on the site.
+_EN_SEGMENT_HOSTS = (
+    "banking.vision",
+    "informedclearly.com",
+    "mambu.com",
+    "www.cgi.com",
+    "www.deloitte.com",
+    "www.sc.com",
+    "www.tsinghua.edu.cn",
+    "www.ingwb.com",
+)
+_MANGLED_SEGMENT = re.compile(r"/(?:em|in)/")
+
 
 def offences(text: str) -> list[str]:
     found = []
@@ -60,6 +77,8 @@ def offences(text: str) -> list[str]:
             found.append(f"non-ASCII in URL: {url}")
         elif any(bad in url for bad in BAD_HOSTS):
             found.append(f"host rewritten by translation: {url}")
+        elif any(h in url for h in _EN_SEGMENT_HOSTS) and _MANGLED_SEGMENT.search(url):
+            found.append(f"/en/ path segment rewritten by translation: {url}")
     return found
 
 

@@ -47,3 +47,28 @@ def test_the_allow_list_exempts_a_url():
         assert gate.offences(url) == []
     finally:
         gate.ALLOW = frozenset()
+
+
+def test_a_translated_en_path_segment_fails():
+    """The same rewrite in Latin script, invisible to the non-ASCII rule:
+    /en/ became "em" (pt-br, it) and "in" (id, ms)."""
+    for url in (
+        "https://banking.vision/em/the-year-of-quantum-computing/",
+        "https://mambu.com/in/insights/articles/cbpr-is-live",
+        "https://www.deloitte.com/us/em/insights/industry/financial-services/x.html",
+    ):
+        out = gate.offences(url)
+        assert out, url
+        assert "path segment rewritten" in out[0]
+
+
+def test_the_en_form_on_those_hosts_passes():
+    assert gate.offences("https://banking.vision/en/the-year-of-quantum-computing/") == []
+    assert gate.offences("https://mambu.com/en/insights/articles/cbpr-is-live") == []
+
+
+def test_the_rule_is_host_scoped():
+    """A blanket /in/ rule proposed rewriting every LinkedIn profile link —
+    1798 correct URLs — so it only applies to the hosts known to be hit."""
+    assert gate.offences("https://www.linkedin.com/in/sebastienrousseau/") == []
+    assert gate.offences("https://example.test/in/anything") == []
