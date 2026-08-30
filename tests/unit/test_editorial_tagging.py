@@ -281,3 +281,206 @@ def test_locales_needing_ignores_a_field_the_locale_does_not_declare(
     monkeypatch.setattr(tf, "_find_locale_file", lambda slug, lang: fr)
     needing, _ = tf._locales_needing("slug", {tf.FIELDS[0]: "English value"}, ["fr"])
     assert needing == {}
+
+
+# ---------------------------------------------------------------------------
+# automate_tags — writing the tags line back
+# ---------------------------------------------------------------------------
+
+
+def _md(tmp: Path, name: str, body: str) -> Path:
+    p = tmp / name
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(body, encoding="utf-8")
+    return p
+
+
+def test_update_tags_replaces_an_existing_line(tmp_path: Path) -> None:
+    p = _md(tmp_path, "a.md", '---\ntitle: "T"\ntags: "old, tags"\n---\nbody\n')
+    assert at.update_tags_in_file(p, ["new", "set"]) is True
+    assert 'tags: "new, set"' in p.read_text(encoding="utf-8")
+
+
+def test_update_tags_preserves_the_other_lines(tmp_path: Path) -> None:
+    p = _md(tmp_path, "a.md", '---\ntitle: "T"\ntags: "old"\nbanner: "b.webp"\n---\nbody\n')
+    at.update_tags_in_file(p, ["new"])
+    text = p.read_text(encoding="utf-8")
+    assert 'title: "T"' in text
+    assert 'banner: "b.webp"' in text
+    assert text.endswith("body\n")
+
+
+def test_update_tags_handles_single_quotes_and_bare_values(tmp_path: Path) -> None:
+    for raw in ("tags: 'old'", "tags: old, bare"):
+        p = _md(tmp_path, "a.md", f'---\ntitle: "T"\n{raw}\n---\nbody\n')
+        assert at.update_tags_in_file(p, ["new"]) is True
+        assert 'tags: "new"' in p.read_text(encoding="utf-8")
+
+
+def test_update_tags_injects_after_the_title_when_absent(tmp_path: Path) -> None:
+    p = _md(tmp_path, "a.md", '---\ntitle: "T"\nbanner: "b"\n---\nbody\n')
+    assert at.update_tags_in_file(p, ["new"]) is True
+    lines = p.read_text(encoding="utf-8").splitlines()
+    assert lines[lines.index('title: "T"') + 1] == 'tags: "new"'
+
+
+def test_update_tags_is_a_no_op_when_the_value_is_unchanged(tmp_path: Path) -> None:
+    """Rewriting an identical file would churn mtimes for nothing."""
+    p = _md(tmp_path, "a.md", '---\ntitle: "T"\ntags: "same"\n---\nbody\n')
+    before = p.stat().st_mtime_ns
+    assert at.update_tags_in_file(p, ["same"]) is False
+    assert p.stat().st_mtime_ns == before
+
+
+def test_update_tags_returns_false_without_tags_or_title(tmp_path: Path) -> None:
+    """Nowhere to put them; the file must be left exactly as it was."""
+    p = _md(tmp_path, "a.md", '---\nbanner: "b"\n---\nbody\n')
+    original = p.read_text(encoding="utf-8")
+    assert at.update_tags_in_file(p, ["new"]) is False
+    assert p.read_text(encoding="utf-8") == original
+
+
+# ---------------------------------------------------------------------------
+# automate_tags — translation catalogue
+# ---------------------------------------------------------------------------
+
+
+def test_load_translations_is_empty_without_the_file(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setattr(at, "TRANSLATIONS_FILE", tmp_path / "absent.json")
+    assert at.load_translations() == {}
+
+
+def test_load_translations_reads_the_catalogue(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    f = tmp_path / "t.json"
+    f.write_text('{"payments": {"fr": "paiements"}}', encoding="utf-8")
+    monkeypatch.setattr(at, "TRANSLATIONS_FILE", f)
+    assert at.load_translations()["payments"]["fr"] == "paiements"
+
+
+def test_load_translations_degrades_on_malformed_json(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    """A broken catalogue must not stop the run; it just translates nothing."""
+    f = tmp_path / "t.json"
+    f.write_text("{not json", encoding="utf-8")
+    monkeypatch.setattr(at, "TRANSLATIONS_FILE", f)
+    assert at.load_translations() == {}
+    assert "Error loading" in capsys.readouterr().out
+
+
+# ---------------------------------------------------------------------------
+# automate_tags — post discovery
+# ---------------------------------------------------------------------------
+
+
+def test_english_posts_exclude_the_index_pages(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """tags.md, articles.md and friends are listings, not articles."""
+    for name in ("2026-01-01-real.md", "tags.md", "articles.md", "privacy.md", "notes.txt"):
+        _md(tmp_path, name, "x")
+    monkeypatch.setattr(at, "POSTS_DIR", tmp_path)
+    assert at.get_english_posts() == ["2026-01-01-real.md"]
+
+
+def test_english_drafts_are_empty_without_the_directory(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setattr(at, "DRAFTS_DIR", tmp_path / "absent")
+    assert at.get_english_drafts() == []
+
+
+def test_english_drafts_lists_markdown_only(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    for name in ("draft.md", "index.md", "notes.txt"):
+        _md(tmp_path, name, "x")
+    monkeypatch.setattr(at, "DRAFTS_DIR", tmp_path)
+    assert at.get_english_drafts() == ["draft.md"]
+
+
+def test_declared_tags_splits_and_strips() -> None:
+    assert at._declared_tags({"tags": " a , b ,, c "}) == ["a", "b", "c"]
+    assert at._declared_tags({}) == []
+
+
+# ---------------------------------------------------------------------------
+# automate_tags — the English pass and locale propagation
+# ---------------------------------------------------------------------------
+
+
+def test_optimise_english_returns_tags_even_when_nothing_is_written(
+    tmp_path: Path,
+) -> None:
+    """Locale copies propagate from the returned list, so it must be
+    returned whether or not the English file needed a rewrite."""
+    p = _md(tmp_path, "a.md", '---\ntitle: "T"\ntags: "payments"\n---\nbody\n')
+    tags, written = at._optimise_english(p, "EN")
+    assert tags == at.clean_tags(["payments"])
+    assert written == 0
+
+
+def test_optimise_english_writes_and_counts_an_inferred_tag(tmp_path: Path) -> None:
+    p = _md(tmp_path, "a.md", '---\ntitle: "T"\ntags: "payments"\n---\nWe emit pain.001 files.\n')
+    tags, written = at._optimise_english(p, "EN")
+    assert "ISO 20022" in tags
+    assert written == 1
+
+
+def test_propagate_skips_a_locale_without_the_post(tmp_path: Path, monkeypatch) -> None:
+    monkeypatch.setattr(at, "POSTS_DIR", tmp_path)
+    assert at._propagate_to_locale("missing.md", "fr", ["payments"], {}) == 0
+
+
+def test_propagate_translates_and_writes_the_locale_copy(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    _md(tmp_path, "fr/a.md", '---\ntitle: "T"\ntags: "old"\n---\nbody\n')
+    monkeypatch.setattr(at, "POSTS_DIR", tmp_path)
+    n = at._propagate_to_locale("a.md", "fr", ["payments"], {"payments": {"fr": "paiements"}})
+    assert n == 1
+    assert "paiements" in (tmp_path / "fr" / "a.md").read_text(encoding="utf-8")
+
+
+def test_propagate_is_a_no_op_when_the_locale_already_matches(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    _md(tmp_path, "fr/a.md", '---\ntitle: "T"\ntags: "paiements"\n---\nbody\n')
+    monkeypatch.setattr(at, "POSTS_DIR", tmp_path)
+    n = at._propagate_to_locale("a.md", "fr", ["payments"], {"payments": {"fr": "paiements"}})
+    assert n == 0
+
+
+def test_process_single_post_counts_english_plus_locales(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    _md(tmp_path, "a.md", '---\ntitle: "T"\ntags: "payments"\n---\nWe emit pain.001 files.\n')
+    _md(tmp_path, "fr/a.md", '---\ntitle: "T"\ntags: "old"\n---\nbody\n')
+    monkeypatch.setattr(at, "POSTS_DIR", tmp_path)
+    assert at.process_single_post("a.md", ["fr"], {}) == 2
+
+
+# ---------------------------------------------------------------------------
+# automate_tags — the tags index page
+# ---------------------------------------------------------------------------
+
+
+def test_optimise_tags_page_is_a_no_op_when_absent(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setattr(at, "POSTS_DIR", tmp_path)
+    at._optimise_tags_page()  # must not raise
+
+
+def test_optimise_tags_page_sets_the_canonical_title(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    _md(tmp_path, "tags.md", '---\ntitle: "Something else"\n---\nbody\n')
+    monkeypatch.setattr(at, "POSTS_DIR", tmp_path)
+    at._optimise_tags_page()
+    assert "Tags Index" in (tmp_path / "tags.md").read_text(encoding="utf-8")
+    capsys.readouterr()
