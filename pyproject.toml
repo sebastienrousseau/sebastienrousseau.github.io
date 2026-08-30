@@ -81,7 +81,28 @@ warn_unused_ignores = true
 warn_redundant_casts = true
 exclude = '^(docs|public|audits)/'
 
+[tool.coverage.run]
+# Ported verbatim from a .coveragerc that was gitignored and untracked, so
+# every setting below applied on one machine and none of them reached CI.
+# pyproject.toml is the single source of truth: coverage reads exactly one
+# config file (.coveragerc, setup.cfg, tox.ini, then pyproject.toml) and does
+# NOT merge them, so a stray .coveragerc silently shadows all of this.
+source = ["scripts"]
+omit = [
+    "scripts/__pycache__/*",
+    "scripts/postbuild_lib/__pycache__/*",
+]
+parallel = true
+
+[tool.coverage.paths]
+# Maps a sandboxed copy of the tree back onto the real paths, so coverage
+# from tests that run inside tests/unit/conftest.py's disposable clone is
+# attributed to scripts/ rather than to a tmp directory.
+source = ["scripts", "*/scripts"]
+
 [tool.coverage.report]
+show_missing = true
+skip_empty = true
 # Structural boilerplate, excluded rather than tested. Reaching an
 # `if __name__ == "__main__":` block from inside pytest needs runpy tricks or
 # a subprocess, both of which exercise Python's module loader rather than any

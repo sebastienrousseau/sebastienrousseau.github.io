@@ -68,7 +68,6 @@ dist
 coverage
 .coverage
 .coverage.*
-.coveragerc
 .nyc_output
 .benchmarks/
 .pytest_cache/
