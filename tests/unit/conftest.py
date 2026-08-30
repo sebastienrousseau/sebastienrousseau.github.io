@@ -184,6 +184,13 @@ def pytest_unconfigure(config: pytest.Config) -> None:
 # ---------------------------------------------------------------------------
 
 
+# Files the operating system writes into public/ on its own. No test can
+# produce one, so a change to them is never the mutation this guard hunts.
+# macOS Finder drops .DS_Store into any directory it displays, which on a
+# 40-minute run means the guard fails for browsing the tree in another window.
+_OS_DEBRIS = frozenset({".DS_Store", "Thumbs.db", "desktop.ini"})
+
+
 def _public_manifest() -> dict[str, tuple[int, int]]:
     """(size, mtime_ns) per file. stat only — hashing 24k files would
     cost more than the suite it guards."""
@@ -191,7 +198,7 @@ def _public_manifest() -> dict[str, tuple[int, int]]:
         return {}
     out: dict[str, tuple[int, int]] = {}
     for p in PUBLIC.rglob("*"):
-        if p.is_file():
+        if p.is_file() and p.name not in _OS_DEBRIS:
             st = p.stat()
             out[str(p.relative_to(PUBLIC))] = (st.st_size, st.st_mtime_ns)
     return out
