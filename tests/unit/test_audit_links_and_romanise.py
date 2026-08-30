@@ -141,7 +141,7 @@ def test_a_malformed_url_is_reported_not_raised(monkeypatch: pytest.MonkeyPatch)
         raise http.client.InvalidURL("space in path")
 
     monkeypatch.setattr(al, "_fetch", fake)
-    url, code = al.check_external("https://x/a b")
+    _url, code = al.check_external("https://x/a b")
     assert isinstance(code, str)
     assert "InvalidURL" in code
 
