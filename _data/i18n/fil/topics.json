@@ -1,7 +1,7 @@
 {
   "_comment": "Filipino topic-cluster titles + ledes — DRAFT pending native review. Five topic clusters; identical EN slugs.",
   "post-quantum-cryptography": {
-    "title": "Post-Quantum Cryptography",
+    "title": "Post-quantum na kriptograpiya",
     "lede": "Lattice-based cryptography, mga NIST PQC standard, quantum-safe payments, at banta ng \"harvest now, decrypt later\". Mga research note, open-source library at migration playbook para sa mga security team sa financial services."
   },
   "iso-20022-payments": {

@@ -13,11 +13,11 @@
     "lede": "Generative KI, multimodale LLMs, Sprach- und Stimmmodelle — und wie sie Bankoperationen, Kundenservice und Produkt-Engineering bei Tier-1-Instituten neu gestalten."
   },
   "rust-open-source": {
-    "title": "Rust & Open Source",
+    "title": "Rust und Open Source",
     "lede": "Open-Source-Rust-Bibliotheken, die ich pflege: Logging, Code-Generierung, Datum/Zeit, kryptografische Primitive, Kyber-basierter KEM und ein Rust-Static-Site-Generator."
   },
   "blockchain-digital-assets": {
-    "title": "Blockchain & Digital Assets",
+    "title": "Blockchain & digitale Vermögenswerte",
     "lede": "Blockchain und digitale Vermögenswerte: Tokenisierung, ERC-20, Stablecoins, Kryptowährungs-Infrastruktur und der regulatorische Rahmen, der sie prägt."
   },
   "cloud-native-banking": {
