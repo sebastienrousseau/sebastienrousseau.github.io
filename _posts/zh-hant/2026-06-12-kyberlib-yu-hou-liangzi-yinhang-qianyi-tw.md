@@ -256,7 +256,7 @@ G-SIB 背負大量傳統交易系統,其關鍵瓶頸在於發現:確切知道非
 ## 參考資料
 
 - National Institute of Standards and Technology, (2024). [FIPS 203:模組晶格金鑰封裝機制標準 ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "NIST FIPS 203 公告").
-- Board of Governors of the Federal Reserve System, (2011). [模型風險管理監理指引(SR Letter 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
+- Board of Governors of the Federal Reserve System, (2011). [模型風險管理監理指引(SR Letter 11-7) ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
 - European Parliament and Council of the European Union, (2022). [歐盟金融部門數位營運韌性規則(EU)2022/2554(DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA 規則").
 - NIST National Cybersecurity Center of Excellence, (2025). [後量子密碼學遷移(NIST SP 1800-38) ⧉](https://www.nccoe.nist.gov/projects/migration-post-quantum-cryptography "NIST SP 1800-38").
 - GitHub, (2026). [kyberlib 開源程式庫 ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib 程式庫").

@@ -259,7 +259,7 @@ Depinde de volumul participantului. O bancă ce vede un vârf orar de ieșiri de
 - ISO 20022, (2024). [pacs.008.001.10 — Definiția mesajului FIToFI Customer Credit Transfer ⧉](https://www.iso20022.org/catalogue-messages/iso-20022-messages-archive "ISO 20022 message catalogue").
 - NACHA, (2026). [Regulile și ghidurile de operare ACH ⧉](https://www.nacha.org/rules "NACHA Operating Rules").
 - BIS Committee on Payments and Market Infrastructures, (2025). [Plățile rapide și viitorul sistemului financiar ⧉](https://www.bis.org/cpmi/publ/d228.htm "CPMI fast payments report").
-- Open Banking Limited, (2026). [Specificația Variable Recurring Payments ⧉](https://www.openbanking.org.uk/vrp/ "Open Banking VRP").
+- Open Banking Limited, (2026). [Specificația Variable Recurring Payments ⧉](https://www.openbanking.org.uk/glossary/variable-recurring-payment/ "Open Banking VRP").
 - Circle Internet Financial, (2026). [Trezoreria și rezervele USDC ⧉](https://www.circle.com/transparency "Circle transparency").
 
 <!-- enrich-start -->

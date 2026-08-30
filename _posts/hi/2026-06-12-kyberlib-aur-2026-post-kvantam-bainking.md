@@ -256,7 +256,7 @@ G-SIB लेगेसी-बहुल लेन-देन संपदाएँ 
 ## संदर्भ
 
 - National Institute of Standards and Technology, (2024). [FIPS 203: मॉड्यूल-लैटिस-आधारित कुंजी-एनकैप्सुलेशन मैकेनिज़्म मानक ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "NIST FIPS 203 घोषणा").
-- Board of Governors of the Federal Reserve System, (2011). [मॉडल जोखिम प्रबंधन पर पर्यवेक्षी मार्गदर्शन (SR Letter 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
+- Board of Governors of the Federal Reserve System, (2011). [मॉडल जोखिम प्रबंधन पर पर्यवेक्षी मार्गदर्शन (SR Letter 11-7) ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
 - European Parliament and Council of the European Union, (2022). [वित्तीय क्षेत्र के लिए डिजिटल परिचालन लचीलेपन पर विनियमन (EU) 2022/2554 (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA विनियमन").
 - NIST National Cybersecurity Center of Excellence, (2025). [पोस्ट-क्वांटम क्रिप्टोग्राफी की ओर माइग्रेशन (NIST SP 1800-38) ⧉](https://www.nccoe.nist.gov/projects/migration-post-quantum-cryptography "NIST SP 1800-38").
 - GitHub, (2026). [kyberlib ओपन सोर्स भंडार ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib भंडार").

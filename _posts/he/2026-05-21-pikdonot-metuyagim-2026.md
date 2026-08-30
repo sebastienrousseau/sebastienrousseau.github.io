@@ -111,7 +111,7 @@ excerpt: "שירותי הפיקדונות המתויגים ב-2026 עוברים 
 > **תקציר מנהלים / עיקרי הדברים**
 >
 > - **סטטוס השוק.** פיקדונות מתויגים ב-2026 הם טרום-קנה-מידה אך כבר אינם תיאורטיים: פיילוטים פעילים, הצעות בנקאיות מתעצבות, והתוכנית הבריטית הרב-בנקאית פועלת עד אמצע 2026 עם HSBC, NatWest, Lloyds, Barclays, Nationwide ו-Santander, הבוחנות תשלומי שווקים, מימון מחדש של משכנתאות וסילוק נכסים דיגיטליים ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
-> - **לחץ תחרותי.** סטייבלקוינים גדולים ומתרחבים (BIS מעריכה שווי שוק של כ-315 מיליארד דולר, כ-98% נקובים בדולר אמריקני בתחילת אפריל 2026) והם כופים את לוח הזמנים לאסימוני פיקדון. הם מנצחים בהיקף האקוסיסטם הפתוח, בנזילות מקורית-לקריפטו ובקמעונאות גלובלית; פיקדונות מתויגים מנצחים בנוחות רגולטורית, בביטוח פיקדונות ובתהליכי עבודה של גזברות ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+> - **לחץ תחרותי.** סטייבלקוינים גדולים ומתרחבים (BIS מעריכה שווי שוק של כ-315 מיליארד דולר, כ-98% נקובים בדולר אמריקני בתחילת אפריל 2026) והם כופים את לוח הזמנים לאסימוני פיקדון. הם מנצחים בהיקף האקוסיסטם הפתוח, בנזילות מקורית-לקריפטו ובקמעונאות גלובלית; פיקדונות מתויגים מנצחים בנוחות רגולטורית, בביטוח פיקדונות ובתהליכי עבודה של גזברות ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")).
 > - **גבולות רגולטוריים.** הצעת FDIC לשנת 2026 מסווגת פיקדונות מתויגים כהתחייבויות פיקדון הנרשמות על DLT ומבדילה אותם מפורשות מסטייבלקוינים לתשלום, מקשיחה את ההיקף האמריקני ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 > - **תוכניות בנקאיות מובילות.** JPM Coin של JPMorgan על Kinexys מטפלת בכ-2 מיליארד דולר בסילוק סיטונאי יומי והיא בעלת המסלול הוותיק ביותר של אסימוני פיקדון. ל-HSBC המערך הרב-מסלולי השלם ביותר: TDS על פני HK, SG, UK, LU, US ב-USD/GBP/EUR/HKD/SGD; HSBC Orion מהווה תשתית לפיילוט Digital Gilt Instrument (DIGIT) של בריטניה; HSBC Gold Token מתייג מטילי זהב מוקצים; סילוק אטומי חוצה-רשתות נוסה על Canton + Project Ensemble; PQC יושמה עם Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
 > - **בחירות תכן שמכריעות הכל.** שלושה דפוסי פנקס-ומשפט שולטים: האסימון *הוא* הפיקדון (סילוק אטומי הנקי ביותר, זמינות הקשה ביותר), האסימון *מייצג* פיקדון קונבנציונלי (פשוט יותר משפטית, נטל התאמה — מה ש-JPM Coin ו-HSBC TDS דומים לו), או האסימון הוא שכבת *הוראות* מעל הסקות קונבנציונליות (התביעה החלשה ביותר לתכנותיות).
@@ -144,13 +144,13 @@ Lloyds מציינת כי היא מפתחת ארנקים ללקוחות תאגי�
 
 ### 3. סטייבלקוינים מאיצים את הדחיפות אך גם מבהירים סיכון
 
-נאומה של BIS באפריל 2026 מקנה לסטייבלקוינים זכות על תכונות טכנולוגיות כמו תכנותיות חוזים חכמים וסילוק אטומי, אך מדגיש גם סיכונים סביב אחידות הכסף, פגיעות לריצה, יושרה פיננסית, ריבונות מוניטרית וסילוק מחוץ לכספי הבנק המרכזי ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+נאומה של BIS באפריל 2026 מקנה לסטייבלקוינים זכות על תכונות טכנולוגיות כמו תכנותיות חוזים חכמים וסילוק אטומי, אך מדגיש גם סיכונים סביב אחידות הכסף, פגיעות לריצה, יושרה פיננסית, ריבונות מוניטרית וסילוק מחוץ לכספי הבנק המרכזי ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")).
 
 ביקורת זו היא בדיוק הסיבה לחשיבות הפיקדונות המתויגים. הם מנסים לייבא את התכנותיות המועילה של כסף מתויג אל מסגרת מפוקחת של כספי בנקים מסחריים.
 
 ### 4. Project Agorá והפנקס המאוחד מעצבים את שאלת הסיטונאי
 
-BIS ממסגרת את Project Agorá כעבודה עם בנקים מרכזיים והמגזר הפרטי לחקירת תיוג עבור תשלומים חוצי-גבולות, וקושרת את הכיוון הרחב לחזון הפנקס המאוחד ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). גם Deutsche Bank מצביע על Project Agorá ועל Partior כחלק מתשתית הסילוק והתשלומים חוצי-הגבולות של הדור הבא ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
+BIS ממסגרת את Project Agorá כעבודה עם בנקים מרכזיים והמגזר הפרטי לחקירת תיוג עבור תשלומים חוצי-גבולות, וקושרת את הכיוון הרחב לחזון הפנקס המאוחד ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")). גם Deutsche Bank מצביע על Project Agorá ועל Partior כחלק מתשתית הסילוק והתשלומים חוצי-הגבולות של הדור הבא ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 
 כאן הופכים פיקדונות מתויגים לתשתית סיטונאית. השאלה המרכזית היא כיצד כספי בנקים מסחריים, כספי בנק מרכזי ונכסים מתויגים מסולקים יחדיו מבלי לפגוע בסופיות משפטית, בבקרות נזילות או באחידות הכסף.
 
@@ -215,13 +215,13 @@ HSBC לא התעלם כליל ממסלול הסטייבלקוינים. הבנק 
 | מכשיר | סוג תביעה | שימוש מיטבי | סטטוס 2026 | סיכון מרכזי |
 |---|---|---|---|---|
 | **פיקדונות מתויגים** | פיקדון בנק מסחרי או ייצוג שלו | תשלומים בני-תכנות בהובלת הבנק, גזברות, סילוק נכסים מתויגים | פיילוטים ועיצוב מוצר מוסדי מוקדם ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")) | אינטראופרביליות ועקביות משפטית |
-| **סטייבלקוינים** | תביעה כלפי מנפיק/מבנה רזרבה | נזילות קריפטו, ניסוי חוצה-גבולות, נזילות דולרית | גדולים וגדלים, BIS מעריך שווי שוק של כ-315 מיליארד דולר בתחילת אפריל 2026 ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")) | ריצות, יושרה פיננסית, ריבונות מוניטרית |
+| **סטייבלקוינים** | תביעה כלפי מנפיק/מבנה רזרבה | נזילות קריפטו, ניסוי חוצה-גבולות, נזילות דולרית | גדולים וגדלים, BIS מעריך שווי שוק של כ-315 מיליארד דולר בתחילת אפריל 2026 ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")) | ריצות, יושרה פיננסית, ריבונות מוניטרית |
 | **CBDC סיטונאי** | כספי בנק מרכזי | סילוק בין-בנקאי ותשתית שווקים מתויגים | חקירה פעילה דרך פרויקטים של בנקים מרכזיים | תכן, פרטיות, גדלות, מנדט פוליטי |
 | **CBDC קמעונאי** | כספי בנק מרכזי לשימוש הציבור | חלופת מזומן דיגיטלית לציבור | התקדמות עולמית מעורבת | אימוץ, פרטיות, חוסר-תיווך בנקאי |
 
 ### היכן פיקדונות מתויגים מנצחים
 
-כספי בנקים מסחריים במאזן נושאים את הנוחות הרגולטורית שסטייבלקוינים עוד צריכים להרוויח. פיקדונות מתויגים יורשים ביטוח פיקדונות, טיפול פרודנציאלי בהון ובקרות AML/סנקציות קיימות. בעבור גזבר תאגידי, זה אומר אין סיכון צד-נגד חדש ואין ביקורת רזרבה חדשה לחקור. הם גם מתחילים מחשבון הבנק שיש לתאגיד כבר — אין בורסה, אין מנפיק רזרבה, אין חידוש משמורת. גם BIS וגם FDIC נשענים על נקודה זו: אחידות הכסף מתקיימת כאשר התביעה נמצאת היכן שהמסגרת המשפטית הקיימת כבר מבינה אותה ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate"); [FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+כספי בנקים מסחריים במאזן נושאים את הנוחות הרגולטורית שסטייבלקוינים עוד צריכים להרוויח. פיקדונות מתויגים יורשים ביטוח פיקדונות, טיפול פרודנציאלי בהון ובקרות AML/סנקציות קיימות. בעבור גזבר תאגידי, זה אומר אין סיכון צד-נגד חדש ואין ביקורת רזרבה חדשה לחקור. הם גם מתחילים מחשבון הבנק שיש לתאגיד כבר — אין בורסה, אין מנפיק רזרבה, אין חידוש משמורת. גם BIS וגם FDIC נשענים על נקודה זו: אחידות הכסף מתקיימת כאשר התביעה נמצאת היכן שהמסגרת המשפטית הקיימת כבר מבינה אותה ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate"); [FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 ### היכן סטייבלקוינים עדיין מנצחים
 
@@ -297,7 +297,7 @@ HSBC לא התעלם כליל ממסלול הסטייבלקוינים. הבנק 
 
 **האם פיקדונות מתויגים זהים לסטייבלקוינים?**
 
-לא. שניהם מציעים כסף דיגיטלי בר-תכנות 24/7, אך הם משתמשים במבנים משפטיים ובמבני תביעה שונים לחלוטין. סטייבלקוין הוא תביעה כלפי נכס רזרבה של מנפיק פרטי או כלפי מבנה תאגידי, הפועלים מחוץ למאזן הבנק המרכזי ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). פיקדון מתויג הוא התחייבות ישירה של בנק מסחרי היורשת את הרגולציה הבנקאית הקיימת, את בקרות מניעת הלבנת הון/סנקציות ואת היקף ביטוח הפיקדונות ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+לא. שניהם מציעים כסף דיגיטלי בר-תכנות 24/7, אך הם משתמשים במבנים משפטיים ובמבני תביעה שונים לחלוטין. סטייבלקוין הוא תביעה כלפי נכס רזרבה של מנפיק פרטי או כלפי מבנה תאגידי, הפועלים מחוץ למאזן הבנק המרכזי ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")). פיקדון מתויג הוא התחייבות ישירה של בנק מסחרי היורשת את הרגולציה הבנקאית הקיימת, את בקרות מניעת הלבנת הון/סנקציות ואת היקף ביטוח הפיקדונות ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 **מהם מקרי השימוש המובילים בבריטניה?**
 
@@ -320,7 +320,7 @@ HSBC לא התעלם כליל ממסלול הסטייבלקוינים. הבנק 
 - Lloyds Banking Group, (2026). [נכסים דיגיטליים ב-2026: בניית עתיד הפיננסים בבריטניה ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
 - HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
 - JPMorgan, (2026). [Kinexys (לשעבר Onyx) פלטפורמת נכסים דיגיטליים ⧉](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan").
-- BIS, (2026). [סטייבלקוינים: מסגור הדיון ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
+- BIS, (2026). [סטייבלקוינים: מסגור הדיון ⧉](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [כסף דיגיטלי — נקודת מבט על סטייבלקוינים, פיקדונות מתויגים ו-CBDC ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [דרישות וסטנדרטים של חוק GENIUS — הצעת רגולציה ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").
 - Cambridge Centre for Alternative Finance, (2026). [כסף מתויג: מקרי שימוש, אינטראופרביליות ורגולציה ⧉](https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf "Tokenised money report").

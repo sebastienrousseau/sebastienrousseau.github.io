@@ -96,7 +96,7 @@ excerpt: "תשלומי הסיטונאות ב-2026 אינם עוד אינסטלצ
 > - **ISO 20022 הוא כיום השפה המשותפת של מודרניזציית תשלומי הסיטונאות.** ה-BIS CPMI מציין כי התקן מתמודד עם תקשורת מסרים מפוצלת, קיטוע נתונים, חולשה בעיבוד הישיר וחיכוכי ציות ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "עתיד תקשורת המסרים הפיננסית: ניווט במסע ההגירה ל-ISO 20022")).
 > - **מפת הדרכים של G20 עדיין מפגרת אחר היעדים.** עדכון ה-FSB (הוועד ליציבות פיננסית) ממרץ 2026 קובע כי ההתקדמות אמיתית אך יעדי 2027 טרם במסלול ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "רפורמה בתשלומים חוצי-גבולות")).
 > - **שעות הפעילות והגישה ב-RTGS הן מנופים כלכליים.** ה-FSB מציין כי יותר ממחצית מתחומי השיפוט הרחיבו את שעות ה-RTGS או מתכננים הרחבות, בעוד גישה ישירה לספקים חוץ-בנקאיים גדלה במערכות התשלומים ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "רפורמה בתשלומים חוצי-גבולות")).
-> - **שירות ה-RTGS המחודש של בנק אנגליה (Bank of England) מבהיר את החוסן ויכולת הפעולה ההדדית.** השירות המחודש נועד לתמוך ביציבות מוניטרית ופיננסית דרך חוסן, גישה, יכולת פעולה הדדית ופונקציונליות ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "שירות ה-RTGS המחודש — יתרונות מרכזיים")).
+> - **שירות ה-RTGS המחודש של בנק אנגליה (Bank of England) מבהיר את החוסן ויכולת הפעולה ההדדית.** השירות המחודש נועד לתמוך ביציבות מוניטרית ופיננסית דרך חוסן, גישה, יכולת פעולה הדדית ופונקציונליות ([Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "שירות ה-RTGS המחודש — יתרונות מרכזיים")).
 > - **הפיצול הוא הסיכון המאקרו.** ה-Atlantic Council מזהיר כי פיצול מערכות התשלומים עלול להעלות עלויות, להאט את הסילוק, להפחית שקיפות ולהחליש את האינטגרציה הפיננסית העולמית ([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "מערכות התשלומים העולמיות מתפצלות")).
 > - **פיילוטים של DLT הם כיום ניסויי תשתית, ולא תיאטרון קריפטו.** עבודות הקשורות ל-BIS כגון Project Agorá ופיילוטים אירופיים לסילוק סיטונאי בוחנים האם כסף בנקאי מסחרי מתומרץ (tokenised) וכסף של בנק מרכזי יכולים לשפר את הסילוק הסיטונאי חוצה-הגבולות בערכים גבוהים ([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "מערכות התשלומים העולמיות מתפצלות")).
 > - **הכלכלה היא תפעולית.** תשלום חוצה-גבולות נכשל כלכלית כאשר נתונים עשירים אובדים, בקרות הציות הופכות ידניות, הנזילות נכלאת באזורי זמן ובדיקות דורשות תיקון אנושי.
@@ -121,7 +121,7 @@ excerpt: "תשלומי הסיטונאות ב-2026 אינם עוד אינסטלצ
 
 חלון הסילוק חשוב משום שתשלומי סיטונאות גלובליים חוצים אזורי זמן. נאומו של פאביו פאנטה (Fabio Panetta) ב-BIS במאי 2026 מציג את תשתית התשלומים הלאומית כצמתי רפורמה, לרבות חלונות סילוק רחבים יותר ואימוץ מלא של ISO 20022 ([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "מיזוג בין-מערכתי לטובת ייצוב: תשלומים חוצי-גבולות בעולם מתפצל")).
 
-שירות ה-RTGS המחודש של בנק אנגליה הולך באותו כיוון. הוא מדגיש חוסן, גישה רחבה יותר, יכולת פעולה הדדית וממשק סילוק מסונכרן המסוגל לפעול בשיתוף עם פנקסים אחרים ולצמצם את סיכון הסילוק ועלויות הנזילות ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "שירות ה-RTGS המחודש — יתרונות מרכזיים")).
+שירות ה-RTGS המחודש של בנק אנגליה הולך באותו כיוון. הוא מדגיש חוסן, גישה רחבה יותר, יכולת פעולה הדדית וממשק סילוק מסונכרן המסוגל לפעול בשיתוף עם פנקסים אחרים ולצמצם את סיכון הסילוק ועלויות הנזילות ([Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "שירות ה-RTGS המחודש — יתרונות מרכזיים")).
 
 ### 3. גישת גופים חוץ-בנקאיים משנה את המבנה התחרותי
 
@@ -202,7 +202,7 @@ excerpt: "תשלומי הסיטונאות ב-2026 אינם עוד אינסטלצ
 
 **מהו תפקיד חידוש ה-RTGS?**
 
-חידוש ה-RTGS משפר את החוסן, הגישה, יכולת הפעולה ההדדית ופונקציונליות הסילוק. בנק אנגליה מדגיש גם ממשקי סילוק מסונכרנים ואת ISO 20022 כמנגנונים לצמצום סיכון הסילוק ועלויות הנזילות ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "שירות ה-RTGS המחודש — יתרונות מרכזיים")).
+חידוש ה-RTGS משפר את החוסן, הגישה, יכולת הפעולה ההדדית ופונקציונליות הסילוק. בנק אנגליה מדגיש גם ממשקי סילוק מסונכרנים ואת ISO 20022 כמנגנונים לצמצום סיכון הסילוק ועלויות הנזילות ([Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "שירות ה-RTGS המחודש — יתרונות מרכזיים")).
 
 **האם מטבעות יציבים (stablecoins) מחליפים תשלומי סיטונאות?**
 
@@ -213,5 +213,5 @@ excerpt: "תשלומי הסיטונאות ב-2026 אינם עוד אינסטלצ
 - BIS CPMI, (2026). [עתיד תקשורת המסרים הפיננסית: ניווט במסע ההגירה ל-ISO 20022 ⧉](https://www.bis.org/cpmi/publ/brief11.htm "BIS CPMI Brief No 11").
 - FSB, (2026). [רפורמה בתשלומים חוצי-גבולות — נאום פתיחה ב-FSB Payments Summit ⧉](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "FSB").
 - BIS, (2026). [מיזוג בין-מערכתי לטובת ייצוב: תשלומים חוצי-גבולות בעולם מתפצל ⧉](https://www.bis.org/cpmi/speeches/sp260505.pdf "נאומו של פאביו פאנטה").
-- Bank of England, (2026). [שירות ה-RTGS המחודש — יתרונות מרכזיים ⧉](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Bank of England").
+- Bank of England, (2026). [שירות ה-RTGS המחודש — יתרונות מרכזיים ⧉](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Bank of England").
 - Atlantic Council, (2026). [מערכות התשלומים העולמיות מתפצלות — הנה מה ש-G20 יכול לעשות ⧉](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "Atlantic Council").

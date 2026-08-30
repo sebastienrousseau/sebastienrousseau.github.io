@@ -163,7 +163,7 @@ Představenstva dnes pokládají pět otázek a očekávají číselné odpověd
 4. **Jaké je pokrytí podpisu PQC nad obnovovacími artefakty?** Procento snapshotů trezoru, manifestů a kotev důvěry mezi doménami podepsaných podle FIPS 203 / FIPS 204.
 5. **Jaké jsou náklady na kontingenční kapitál (Cost of Contingency Capital, CoCC)?** Denní oportunitní cena nečinné intraday likvidity uvězněné v sekundárních zúčtovacích účtech, teplých zůstatcích u korespondentů a předpřipravených tokenizovaných pozicích, měřená proti overnight sazbě. Představenstvo musí vidět přesnou cenu pojistky odolnosti banky a provozní výbor musí obhájit kompromis mezi uvězněným kapitálem a tolerancí výpadku — obnovované minimálně čtvrtletně.
 
-To jsou metriky, které se čistě mapují na důkazy podle článku 6 DORA, na prohlášení o odpovědnosti vrcholového manažera podle SM&CR a na řízení modelového rizika podle [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Pokyny k řízení modelového rizika") nad směrovací logikou rozhodující, která kolej vyhraje. Představenstvo nepotřebuje narativ; potřebuje čtvrtletní graf s pevnou spodní hranicí.
+To jsou metriky, které se čistě mapují na důkazy podle článku 6 DORA, na prohlášení o odpovědnosti vrcholového manažera podle SM&CR a na řízení modelového rizika podle [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Pokyny k řízení modelového rizika") nad směrovací logikou rozhodující, která kolej vyhraje. Představenstvo nepotřebuje narativ; potřebuje čtvrtletní graf s pevnou spodní hranicí.
 
 ## Závěr
 

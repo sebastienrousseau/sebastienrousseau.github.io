@@ -163,7 +163,7 @@ Besturen stellen nu vijf vragen en verwachten numerieke antwoorden.
 4. **Hoe groot is de PQC-ondertekeningsdekking op herstelartefacten?** Percentage kluis-snapshots, manifesten en inter-domein vertrouwensankers ondertekend onder FIPS 203 / FIPS 204.
 5. **Wat zijn de Cost of Contingency Capital (CoCC)?** De dagelijkse opportunity cost van de inactieve intraday-liquiditeit die vastzit in secundaire clearingrekeningen, warme correspondent-saldi en vooraf gepositioneerde tokenised-posities, afgemeten aan de overnight rate. Het bestuur moet de exacte prijs van de veerkrachtverzekering van de bank zien, en het operating committee moet de afweging tussen gevangen kapitaal en uitvaltolerantie verdedigen — minstens elk kwartaal ververst.
 
-Dit zijn de metrieken die schoon koppelen aan het bewijs onder DORA Artikel 6, aan de SM&CR statements of responsibility van senior managers, en aan [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") modelrisicobestuur over de routinglogica die beslist welke rail wint. Het bestuur heeft geen verhaal nodig; het heeft een kwartaalgrafiek met een harde ondergrens nodig.
+Dit zijn de metrieken die schoon koppelen aan het bewijs onder DORA Artikel 6, aan de SM&CR statements of responsibility van senior managers, en aan [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") modelrisicobestuur over de routinglogica die beslist welke rail wint. Het bestuur heeft geen verhaal nodig; het heeft een kwartaalgrafiek met een harde ondergrens nodig.
 
 ## Conclusie
 

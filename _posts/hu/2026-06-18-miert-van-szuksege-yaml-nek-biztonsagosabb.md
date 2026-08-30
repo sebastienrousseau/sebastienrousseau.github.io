@@ -72,7 +72,7 @@ Az abszolút biztonság fenntartásához a fejlesztési és üzemeltetési terü
 | **Memóriabiztonsági profil** | Zero `unsafe` Rust blokk az elemző és a szerializáló függőségeiben. | DORA 30. cikk (ellátási lánc) | Automatizált fordítói ellenőrzések ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)) a cargo buildekben. |
 | **Sémavalidáció** | Az elemzett konfigurációs fájlok 100%-a érvényes [JSON Schema](https://json-schema.org/) modellekkel ellenőrizve. | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Valós idejű validációs kapu, amely sémasértés esetén leállítja a build folyamatokat. |
 | **Konfigurációelcsúszás** | A helyi konfigurációs fájlok valós idejű észlelése és visszaállítása a git-verziózott állapotba. | Ellenállóképességi megtérülés (RoR) | Folyamatos telemetria, amely naplózza az összes helyi fájlmódosítást. |
-| **Ügynök-hozzáférés-vezérlés** | Korlátozott, csak olvasható jogosultságok az MCP konfigurációkon keresztül működő helyi MI-eszközök számára. | Modellkockázat-kezelés ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | MCP szerverhatárok, amelyek az ügynökműveleteket jóváhagyott könyvtárakra korlátozzák. |
+| **Ügynök-hozzáférés-vezérlés** | Korlátozott, csak olvasható jogosultságok az MCP konfigurációkon keresztül működő helyi MI-eszközök számára. | Modellkockázat-kezelés ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | MCP szerverhatárok, amelyek az ügynökműveleteket jóváhagyott könyvtárakra korlátozzák. |
 
 ## 04. Az átláthatatlan konfigurációelemzés tévedése
 

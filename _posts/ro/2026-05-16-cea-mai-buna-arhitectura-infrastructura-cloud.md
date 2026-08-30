@@ -397,12 +397,12 @@ Un **cloud consumer** achiziționează cei șase piloni de la hyperscaler-uri cu
 - Sebastien Rousseau, (2026). [CloudCDN pe GitHub ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "sebastienrousseau/cloudcdn.pro"). GitHub.
 - Constellation Energy, (2025). [Acordul de repornire Three Mile Island cu Microsoft pentru energia centrelor de date IA ⧉](https://www.constellationenergy.com/newsroom.html "Sala de presă Constellation Energy"). Constellation Energy.
 - Amazon Web Services, (2025). [Investiția AWS în X-Energy și achiziția Talen / Cumulus a centrului de date adiacent nuclear ⧉](https://aws.amazon.com/blogs/aws/ "AWS News Blog"). AWS.
-- Kairos Power, (2025). [Acordul de cumpărare a energiei SMR Google Kairos Power ⧉](https://kairospower.com/news/ "Știri Kairos Power"). Kairos Power.
+- Kairos Power, (2025). Acordul de cumpărare a energiei SMR Google Kairos Power. Kairos Power.
 - Banca pentru Decontări Internaționale, (2025). [Project Agora: CBDC wholesale și depozite tokenizate ale băncilor comerciale ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agora — BIS Innovation Hub"). BIS Innovation Hub.
 - Banca Centrală Europeană, (2025). [Proiectul euro digital — actualizarea fazei de pregătire ⧉](https://www.ecb.europa.eu/paym/digital_euro/html/index.en.html "Euro digital — BCE"). BCE.
-- Amazon Web Services, (2025). [AWS European Sovereign Cloud — Prezentare generală a programului ⧉](https://aws.amazon.com/government-education/european-sovereign-cloud/ "AWS European Sovereign Cloud"). AWS.
+- Amazon Web Services, (2025). [AWS European Sovereign Cloud — Prezentare generală a programului ⧉](https://aws.amazon.com/compliance/europe-digital-sovereignty/ "AWS European digital sovereignty"). AWS.
 - Meta AI, (2026). [Anunțul lansării Llama 4 — variantele Maverick, Scout și Behemoth ⧉](https://ai.meta.com/blog/llama-4-multimodal-intelligence/ "Lansarea Llama 4"). Meta.
-- Toshiba / BT, (2025). [Implementarea rețelei QKD comerciale în zona metropolitană Londra ⧉](https://www.toshiba.eu/quantum-technology/ "Tehnologia cuantică Toshiba"). Toshiba Europa.
+- Toshiba / BT, (2025). [Implementarea rețelei QKD comerciale în zona metropolitană Londra ⧉](https://www.global.toshiba/ww/products-solutions/security-ict/qkd.html "Tehnologia cuantică Toshiba"). Toshiba Europa.
 - NVIDIA, (2025). [Spectrum-X Photonics și Quantum-X Photonics — rețelistică optică co-împachetată pentru fabricile IA ⧉](https://nvidianews.nvidia.com/news/spectrum-x-quantum-x-photonics "Anunțul NVIDIA Photonics la GTC 2025"). NVIDIA.
 - Supravegherea Bancară a Băncii Centrale Europene, (2025). [Externalizarea cloud și riscul de concentrare — așteptările de supraveghere ⧉](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.outsourcingcloud.en.html "Supravegherea Bancară a BCE privind externalizarea cloud"). BCE.
 - Zou, W. et al. (2024). [PoisonedRAG: Atacuri de corupere a cunoștințelor asupra generării augmentate prin regăsire a modelelor lingvistice mari ⧉](https://arxiv.org/abs/2402.07867 "PoisonedRAG"). arXiv.

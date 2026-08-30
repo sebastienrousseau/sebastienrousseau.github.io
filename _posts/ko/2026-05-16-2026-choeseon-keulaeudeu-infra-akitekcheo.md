@@ -397,12 +397,12 @@ CloudCDN([cloudcdn.pro](https://cloudcdn.pro/ "CloudCDN"))은 엣지 에이전�
 - Sebastien Rousseau, (2026). [GitHub의 CloudCDN ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "sebastienrousseau/cloudcdn.pro"). GitHub.
 - Constellation Energy, (2025). [AI 데이터센터 전력을 위한 Microsoft와의 Three Mile Island 재시작 협정 ⧉](https://www.constellationenergy.com/newsroom.html "Constellation Energy 뉴스룸"). Constellation Energy.
 - Amazon Web Services, (2025). [X-Energy에 대한 AWS 투자 및 Talen / Cumulus 원자력 인접 데이터센터 인수 ⧉](https://aws.amazon.com/blogs/aws/ "AWS News Blog"). AWS.
-- Kairos Power, (2025). [Google Kairos Power SMR 전력 구매 협정 ⧉](https://kairospower.com/news/ "Kairos Power News"). Kairos Power.
+- Kairos Power, (2025). Google Kairos Power SMR 전력 구매 협정. Kairos Power.
 - 국제결제은행, (2025). [Project Agora: 도매 CBDC와 토큰화된 상업 은행 예금 ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agora — BIS Innovation Hub"). BIS Innovation Hub.
 - 유럽중앙은행, (2025). [디지털 유로 프로젝트 — 준비 단계 업데이트 ⧉](https://www.ecb.europa.eu/paym/digital_euro/html/index.en.html "디지털 유로 — ECB"). ECB.
-- Amazon Web Services, (2025). [AWS European Sovereign Cloud — 프로그램 개요 ⧉](https://aws.amazon.com/government-education/european-sovereign-cloud/ "AWS European Sovereign Cloud"). AWS.
+- Amazon Web Services, (2025). [AWS European Sovereign Cloud — 프로그램 개요 ⧉](https://aws.amazon.com/compliance/europe-digital-sovereignty/ "AWS European digital sovereignty"). AWS.
 - Meta AI, (2026). [Llama 4 출시 발표 — Maverick, Scout, Behemoth 변형 ⧉](https://ai.meta.com/blog/llama-4-multimodal-intelligence/ "Llama 4 출시"). Meta.
-- Toshiba / BT, (2025). [런던 대도시 지역의 상업용 QKD 네트워크 배포 ⧉](https://www.toshiba.eu/quantum-technology/ "Toshiba 양자 기술"). Toshiba Europe.
+- Toshiba / BT, (2025). [런던 대도시 지역의 상업용 QKD 네트워크 배포 ⧉](https://www.global.toshiba/ww/products-solutions/security-ict/qkd.html "Toshiba 양자 기술"). Toshiba Europe.
 - NVIDIA, (2025). [Spectrum-X Photonics 및 Quantum-X Photonics — AI 팩토리를 위한 공동 패키지 광학 네트워킹 ⧉](https://nvidianews.nvidia.com/news/spectrum-x-quantum-x-photonics "GTC 2025에서의 NVIDIA Photonics 발표"). NVIDIA.
 - 유럽중앙은행 은행 감독, (2025). [클라우드 아웃소싱 및 집중 위험 — 감독 기대 ⧉](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.outsourcingcloud.en.html "클라우드 아웃소싱에 대한 ECB 은행 감독"). ECB.
 - Zou, W. et al. (2024). [PoisonedRAG: 대규모 언어 모델의 검색 증강 생성에 대한 지식 손상 공격 ⧉](https://arxiv.org/abs/2402.07867 "PoisonedRAG"). arXiv.

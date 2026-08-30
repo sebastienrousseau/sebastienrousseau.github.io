@@ -126,7 +126,7 @@ site_software: "Static Site Generator, Rust"
 
 HNDL은 통상의 암호 타임라인을 뒤집습니다. 일반적인 위험 평가는 위협이 언제 현실화되는지를 묻습니다. HNDL은 오늘 포획된 데이터가 공격자에게 언제 유용해지는지를 묻습니다. 결제 메시지의 경우 수취인 신원, 계좌 번호, 구조화 송금 데이터, 제재 스크리닝 페이로드, 은행 내부 결제 지시 모두에서 민감도의 시간 창은 수년에서 수십 년에 이릅니다. 그 트래픽의 대부분은 지금 어딘가에 기록되고 있습니다.
 
-[NSA의 CNSA 2.0 타임라인 ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "Commercial National Security Algorithm Suite 2.0")은 국가 안보 시스템에 2035년까지 전환을 완료할 시간을 줍니다. 금융 감독 당국은 더 빠른 일정으로 움직입니다. [PRA의 운영 회복력 기대치 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21")는 암호 민첩성을 제3자 집중 위험으로 다룹니다. 2026년의 기대치는 핵심 결제 레일이 회복력 자기 증빙에 PQC 마이그레이션 계획을 게시하는 것입니다.
+[NSA의 CNSA 2.0 타임라인 ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "Commercial National Security Algorithm Suite 2.0")은 국가 안보 시스템에 2035년까지 전환을 완료할 시간을 줍니다. 금융 감독 당국은 더 빠른 일정으로 움직입니다. [PRA의 운영 회복력 기대치 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2021/march/operational-resilience-impact-tolerances-for-important-business-services-ss "PRA SS1/21")는 암호 민첩성을 제3자 집중 위험으로 다룹니다. 2026년의 기대치는 핵심 결제 레일이 회복력 자기 증빙에 PQC 마이그레이션 계획을 게시하는 것입니다.
 
 HNDL 공격자는 오늘 CRQC가 필요하지 않습니다. 공격자에게 필요한 것은 다음과 같습니다.
 
@@ -261,7 +261,7 @@ SLH-DSA(SPHINCS+의 표준화 버전)는 해시 기반이며 따라서 가장 �
 - NIST, (2024). [FIPS 205 — Stateless Hash-Based Digital Signature Standard ⧉](https://csrc.nist.gov/pubs/fips/205/final "FIPS 205").
 - NSA, (2022). [Commercial National Security Algorithm Suite 2.0 ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "CNSA 2.0").
 - BIS, (2024). [Working Paper No. 1208 — Project Leap: Quantum-proofing the financial system ⧉](https://www.bis.org/publ/work1208.htm "BIS Working Paper 1208").
-- Bank of England (PRA), (2024). [SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").
+- Bank of England (PRA), (2024). [SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2021/march/operational-resilience-impact-tolerances-for-important-business-services-ss "PRA SS1/21").
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 인물 사진" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 마이그레이션, 금융 서비스용 양자내성 암호, 도매 결제의 구조적 전환에 관해 집필하는 시니어 뱅킹 기술 전문가입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group을 아우르는 20년 이상의 경력. <a href="/about/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>

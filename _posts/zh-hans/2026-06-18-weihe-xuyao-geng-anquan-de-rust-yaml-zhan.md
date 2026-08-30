@@ -163,7 +163,7 @@ NoyaLib 生态作为一套安全、无损的配置解析器运行。每一份本
 | **内存安全画像** | 解析器与序列化依赖中零 `unsafe` Rust 块。 | DORA 第 30 条（供应链） | cargo 构建中的自动化编译器检查（[`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)）。 |
 | **模式校验** | 100% 已解析的配置文件均针对有效 [JSON Schema](https://json-schema.org/) 模型完成校验。 | [NIST CSF 2.0](https://www.nist.gov/cyberframework)（PR.DS-01） | 实时校验门，在模式违例时中断构建流水线。 |
 | **配置漂移** | 实时检测并恢复本地配置文件至 git 版本化状态。 | 韧性回报（RoR） | 持续遥测记录所有本地文件修改。 |
-| **代理访问控制** | 通过 MCP 配置运行的本地 AI 工具仅获受限的只读权限。 | 模型风险管理（[SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)） | MCP 服务器边界把代理操作限制在经批准的目录范围内。 |
+| **代理访问控制** | 通过 MCP 配置运行的本地 AI 工具仅获受限的只读权限。 | 模型风险管理（[SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)） | MCP 服务器边界把代理操作限制在经批准的目录范围内。 |
 
 ## 04. 不透明配置解析的谬误
 

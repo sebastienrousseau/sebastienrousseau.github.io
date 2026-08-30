@@ -163,7 +163,7 @@ site_software: "Static Site Generator, Rust"
 4. **恢复工件的 PQC 签名覆盖率是多少？** 在 FIPS 203 / FIPS 204 之下完成签名的保险库快照、清单与跨域信任锚的百分比。
 5. **应急资本成本（Cost of Contingency Capital，CoCC）是多少？** 即被困在次级清算账户、热备代理行余额与预先部署的代币化头寸中的闲置日内流动性，以隔夜利率为基准衡量的每日机会成本。董事会必须看到该行韧性保险的精确价格，运营委员会则必须为被困资本与中断容忍度之间的取舍做出辩护——并至少按季度刷新。
 
-这些指标可以干净地映射到 DORA 第 6 条的证据要求、SM&CR 高级管理人员的责任声明，以及 [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7——模型风险管理指引")针对“哪条轨道胜出”的路由逻辑所要求的模型风险治理。董事会不需要一段叙述；它需要一张带有硬下限的季度图表。
+这些指标可以干净地映射到 DORA 第 6 条的证据要求、SM&CR 高级管理人员的责任声明，以及 [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7——模型风险管理指引")针对“哪条轨道胜出”的路由逻辑所要求的模型风险治理。董事会不需要一段叙述；它需要一张带有硬下限的季度图表。
 
 ## 结论
 

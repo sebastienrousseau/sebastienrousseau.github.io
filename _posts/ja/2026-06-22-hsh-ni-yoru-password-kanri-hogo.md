@@ -323,7 +323,7 @@ hsh はパスワードおよびシークレットのハッシュフレームワ�
 
 ## 参考文献
 
-バーゼル銀行監督委員会 (2011)。*Basel III:より強靱な銀行および銀行システムのためのグローバル規制フレームワーク*。国際決済銀行。入手先: [https://www.bis.org/publ/bcbs189.pdf](https://www.bis.org/publ/bcbs189.pdf "Basel III: A global regulatory framework for more resilient banks and banking systems")
+バーゼル銀行監督委員会 (2011)。*Basel III:より強靱な銀行および銀行システムのためのグローバル規制フレームワーク*。国際決済銀行。入手先: [https://www.bis.org/publ/bcbs189.htm](https://www.bis.org/publ/bcbs189.htm "Basel III: A global regulatory framework for more resilient banks and banking systems")
 
 Biryukov, A., Dinu, D., Khovratovich, D., および Josefsson, S. (2021)。*RFC 9106: Argon2 Memory-Hard Function for Password Hashing and Proof-of-Work Applications*。Internet Engineering Task Force。入手先: [https://datatracker.ietf.org/doc/html/rfc9106](https://datatracker.ietf.org/doc/html/rfc9106 "RFC 9106 — Argon2 Memory-Hard Function for Password Hashing")
 

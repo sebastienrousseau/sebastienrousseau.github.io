@@ -163,7 +163,7 @@ Om absolute beveiliging in het volledige development- en operations-landschap te
 | **Geheugenveiligheidsprofiel** | Geen `unsafe` Rust-blocks in parser en serializer-afhankelijkheden. | DORA Artikel 30 (supply chain) | Geautomatiseerde compilerchecks ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)) in cargo-builds. |
 | **Schemavalidatie** | 100% van de geparseerde configuratiebestanden geverifieerd tegen geldige [JSON Schema](https://json-schema.org/)-modellen. | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Realtime validatiepoort die buildpijplijnen stopzet bij schemaschendingen. |
 | **Configuratiedrift** | Realtime detectie en herstel van lokale configuratiebestanden naar de in git versie-beheerde staat. | Return on Resilience (RoR) | Continue telemetrie die alle lokale bestandswijzigingen logt. |
-| **Toegangscontrole voor agenten** | Begrensde, alleen-lezen rechten voor lokale AI-tools die via MCP-configuraties opereren. | Modelrisicomanagement ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | MCP-servergrenzen die agentoperaties beperken tot goedgekeurde mappen. |
+| **Toegangscontrole voor agenten** | Begrensde, alleen-lezen rechten voor lokale AI-tools die via MCP-configuraties opereren. | Modelrisicomanagement ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | MCP-servergrenzen die agentoperaties beperken tot goedgekeurde mappen. |
 
 ## 04. De drogreden van ondoorzichtig configuratie-parsen
 

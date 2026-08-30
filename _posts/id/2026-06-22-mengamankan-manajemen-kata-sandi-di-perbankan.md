@@ -323,7 +323,7 @@ Hashing kata sandi deploy-and-forget sudah usai. DORA telah memindahkan kepasifa
 
 ## Referensi
 
-Basel Committee on Banking Supervision (2011). *Basel III: A global regulatory framework for more resilient banks and banking systems*. Bank for International Settlements. Tersedia di: [https://www.bis.org/publ/bcbs189.pdf](https://www.bis.org/publ/bcbs189.pdf "Basel III: Kerangka regulasi global untuk bank dan sistem perbankan yang lebih tangguh")
+Basel Committee on Banking Supervision (2011). *Basel III: A global regulatory framework for more resilient banks and banking systems*. Bank for International Settlements. Tersedia di: [https://www.bis.org/publ/bcbs189.htm](https://www.bis.org/publ/bcbs189.htm "Basel III: Kerangka regulasi global untuk bank dan sistem perbankan yang lebih tangguh")
 
 Biryukov, A., Dinu, D., Khovratovich, D., dan Josefsson, S. (2021). *RFC 9106: Argon2 Memory-Hard Function for Password Hashing and Proof-of-Work Applications*. Internet Engineering Task Force. Tersedia di: [https://datatracker.ietf.org/doc/html/rfc9106](https://datatracker.ietf.org/doc/html/rfc9106 "RFC 9106 — Fungsi Memory-Hard Argon2 untuk Hashing Kata Sandi")
 

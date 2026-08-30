@@ -120,7 +120,7 @@ API యొక్క బ్యాంకు వైపు కానానికల�
 
 ## ముగింపు
 
-నవంబర్ 2026 గడువు తేలికైన భాగం. కష్టమైన భాగం గడువు ఏమి బలవంతం చేస్తుందో. pain.001ను ఇంకా ఒక అనువాద సమస్యగా భావిస్తూ సకాలంలో చేరుకునే బ్యాంకులు తమ ట్రెజరీ డేటా నమూనాను వైర్ నుండి లోపలికి పునర్నిర్మించడంలో వచ్చే దశాబ్దాన్ని గడుపుతాయి. ISO-మొదటి కానానికల్ స్కీమాతో, డిఫాల్ట్‌గా నిర్మాణాత్మక చిరునామాలతో, మరియు pacs.008ను నేరుగా వినియోగించే ఒక ప్రోగ్రామబుల్ ద్రవ్యత నియంత్రణ తలంతో చేరుకునే బ్యాంకులు DORA ఆర్టికల్ 5 బోర్డు జవాబుదారీ, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") కార్యాచరణ-రిస్క్ క్రమశిక్షణ, మరియు [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management") మోడల్ పాలన కింద ఏజెంటిక్ ట్రెజరీను నడుపుతాయి.
+నవంబర్ 2026 గడువు తేలికైన భాగం. కష్టమైన భాగం గడువు ఏమి బలవంతం చేస్తుందో. pain.001ను ఇంకా ఒక అనువాద సమస్యగా భావిస్తూ సకాలంలో చేరుకునే బ్యాంకులు తమ ట్రెజరీ డేటా నమూనాను వైర్ నుండి లోపలికి పునర్నిర్మించడంలో వచ్చే దశాబ్దాన్ని గడుపుతాయి. ISO-మొదటి కానానికల్ స్కీమాతో, డిఫాల్ట్‌గా నిర్మాణాత్మక చిరునామాలతో, మరియు pacs.008ను నేరుగా వినియోగించే ఒక ప్రోగ్రామబుల్ ద్రవ్యత నియంత్రణ తలంతో చేరుకునే బ్యాంకులు DORA ఆర్టికల్ 5 బోర్డు జవాబుదారీ, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") కార్యాచరణ-రిస్క్ క్రమశిక్షణ, మరియు [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management") మోడల్ పాలన కింద ఏజెంటిక్ ట్రెజరీను నడుపుతాయి.
 
 స్వయంచాలక నాడీ వ్యవస్థ చిత్రీకరణ అలంకరణ కాదు. ట్రెజరీ తాను చూడలేని ద్రవ్యత గురించి తార్కికం చేయలేదు. ఏజెంట్లు తాము పార్స్ చేయలేని డేటాపై చర్య తీసుకోలేరు. ISO 20022 అనేది 2026లో CIB ట్రెజరీ యొక్క వైరింగ్ — నిర్మాణాత్మక సందేశమే చర్య సామర్థ్యం, స్కీమాయే తదుపరి సంఘటన మరుసటి ఉదయం నియంత్రకుడు కోరే ఆడిట్ ఆనవాలు.
 
@@ -136,7 +136,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. ఇక్కడ లభ్యం: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF Recommendations")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. ఇక్కడ లభ్యం: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. ఇక్కడ లభ్యం: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. ఇక్కడ లభ్యం: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Universal financial industry message scheme")
 

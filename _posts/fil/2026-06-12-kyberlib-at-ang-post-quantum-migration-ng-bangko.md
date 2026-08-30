@@ -257,7 +257,7 @@ Hinahango ng mga hybrid na envelope ang session key mula sa parehong classical a
 ## Mga Sanggunian
 
 - National Institute of Standards and Technology, (2024). [FIPS 203: Pamantayan ng Module-Lattice-Based Key-Encapsulation Mechanism ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "Anunsyo ng NIST FIPS 203").
-- Board of Governors of the Federal Reserve System, (2011). [Supervisory Guidance on Model Risk Management (SR Letter 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
+- Board of Governors of the Federal Reserve System, (2011). [Supervisory Guidance on Model Risk Management (SR Letter 11-7) ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
 - European Parliament and Council of the European Union, (2022). [Regulation (EU) 2022/2554 tungkol sa digital operational resilience para sa sektor ng pananalapi (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Regulasyon ng DORA").
 - NIST National Cybersecurity Center of Excellence, (2025). [Migration patungong Post-Quantum Cryptography (NIST SP 1800-38) ⧉](https://www.nccoe.nist.gov/projects/migration-post-quantum-cryptography "NIST SP 1800-38").
 - GitHub, (2026). [Open-source na repository ng kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "Repository ng kyberlib").

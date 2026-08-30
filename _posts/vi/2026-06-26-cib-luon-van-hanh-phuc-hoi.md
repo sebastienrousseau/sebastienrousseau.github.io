@@ -163,7 +163,7 @@ Các hội đồng quản trị nay đặt năm câu hỏi và mong đợi các 
 4. **Mức độ phủ ký PQC trên các tạo phẩm khôi phục là bao nhiêu?** Tỷ lệ phần trăm các snapshot kho, bảng kê khai và các neo tin cậy liên miền được ký theo FIPS 203 / FIPS 204.
 5. **Cost of Contingency Capital (CoCC) là bao nhiêu?** Chi phí cơ hội hàng ngày của thanh khoản trong ngày nhàn rỗi bị mắc kẹt trong các tài khoản bù trừ thứ cấp, số dư đại lý ấm và các vị thế token hoá đã chuẩn bị trước, đo lường so với lãi suất qua đêm. Hội đồng quản trị phải nhìn thấy mức giá chính xác của bảo hiểm khả năng chống chịu của ngân hàng, và uỷ ban điều hành phải bảo vệ sự đánh đổi giữa vốn bị mắc kẹt và mức dung sai sự cố — làm mới ít nhất hàng quý.
 
-Đây là các chỉ số ánh xạ gọn gàng tới bằng chứng DORA Điều 6, tới các tuyên bố trách nhiệm của nhà quản lý cấp cao SM&CR, và tới quản trị rủi ro mô hình [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Hướng dẫn về quản lý rủi ro mô hình") đối với logic định tuyến quyết định đường ray nào thắng. Hội đồng quản trị không cần một câu chuyện; họ cần một biểu đồ hàng quý với một sàn cứng.
+Đây là các chỉ số ánh xạ gọn gàng tới bằng chứng DORA Điều 6, tới các tuyên bố trách nhiệm của nhà quản lý cấp cao SM&CR, và tới quản trị rủi ro mô hình [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Hướng dẫn về quản lý rủi ro mô hình") đối với logic định tuyến quyết định đường ray nào thắng. Hội đồng quản trị không cần một câu chuyện; họ cần một biểu đồ hàng quý với một sàn cứng.
 
 ## Kết luận
 

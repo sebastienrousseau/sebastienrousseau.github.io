@@ -58,7 +58,7 @@ Lembaga kini bertanya lima soalan dan mengharapkan jawapan berangka.
 4. **Apakah liputan penandatanganan PQC pada artifak pemulihan?** Peratusan syot kilat bilik kebal, manifes dan sauh kepercayaan antara-domain yang ditandatangani di bawah FIPS 203 / FIPS 204.
 5. **Apakah Kos Modal Luar Jangka (CoCC)?** Kos peluang harian bagi kecairan intraday terbiar yang terperangkap dalam akaun penjelasan sekunder, baki koresponden panas dan kedudukan bertoken pra-pentas, diukur terhadap kadar semalaman. Lembaga mesti melihat harga tepat insurans daya tahan bank, dan jawatankuasa operasi mesti mempertahankan pertukaran antara modal terperangkap dan toleransi gangguan — disegar semula sekurang-kurangnya setiap suku tahun.
 
-Inilah metrik yang dipetakan dengan kemas kepada bukti Artikel 6 DORA, kepada penyata tanggungjawab pengurus-kanan SM&CR, dan kepada tadbir urus risiko-model [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") ke atas logik penghalaan yang menentukan landasan mana yang menang. Lembaga tidak memerlukan naratif; ia memerlukan carta suku tahunan dengan lantai yang tegas.
+Inilah metrik yang dipetakan dengan kemas kepada bukti Artikel 6 DORA, kepada penyata tanggungjawab pengurus-kanan SM&CR, dan kepada tadbir urus risiko-model [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") ke atas logik penghalaan yang menentukan landasan mana yang menang. Lembaga tidak memerlukan naratif; ia memerlukan carta suku tahunan dengan lantai yang tegas.
 
 ## Kesimpulan
 

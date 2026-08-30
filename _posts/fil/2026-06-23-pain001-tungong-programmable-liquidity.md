@@ -225,7 +225,7 @@ Sapat ang limang buwan upang maglunsad ng isang stricter-than-CBPR+ message prof
 
 ## Konklusyon
 
-Ang deadline sa Nobyembre 2026 ang madaling bahagi. Ang mahirap ay ang ipinipilit ng deadline. Ang mga bangkong dadating sa oras pero itinuturing pa rin ang pain.001 bilang translation problem ay gugugulin ang susunod na dekada sa pagbuo muli ng kanilang treasury data model mula wire papasok. Ang mga bangkong dadating na may ISO-first canonical schema, structured address by default, at programmable liquidity control plane na direktang kumokonsumo ng pacs.008 ay magpapatakbo ng agentic treasury sa ilalim ng DORA Article 5 board accountability, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") operational-risk discipline, at [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management") model governance.
+Ang deadline sa Nobyembre 2026 ang madaling bahagi. Ang mahirap ay ang ipinipilit ng deadline. Ang mga bangkong dadating sa oras pero itinuturing pa rin ang pain.001 bilang translation problem ay gugugulin ang susunod na dekada sa pagbuo muli ng kanilang treasury data model mula wire papasok. Ang mga bangkong dadating na may ISO-first canonical schema, structured address by default, at programmable liquidity control plane na direktang kumokonsumo ng pacs.008 ay magpapatakbo ng agentic treasury sa ilalim ng DORA Article 5 board accountability, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") operational-risk discipline, at [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management") model governance.
 
 Hindi pang-dekorasyon ang autonomic nervous system na framing. Hindi maaaring mangatwiran ang treasury hinggil sa liquidity na hindi nito nakikita. Hindi maaaring kumilos ang mga agent sa datos na hindi nila ma-parse. Ang ISO 20022 ang wiring ng CIB treasury sa 2026 — ang structured message ang action potential, ang schema ang audit trail na hihingiin ng regulator sa umaga matapos ang susunod na insidente.
 
@@ -241,7 +241,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. Available at: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF Recommendations")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Available at: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Available at: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. Available at: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Universal financial industry message scheme")
 

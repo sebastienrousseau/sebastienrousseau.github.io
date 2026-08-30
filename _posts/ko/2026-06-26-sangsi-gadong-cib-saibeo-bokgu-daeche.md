@@ -163,7 +163,7 @@ site_software: "Static Site Generator, Rust"
 4. **복구 산출물의 PQC 서명 적용률은 얼마인가?** FIPS 203 / FIPS 204 아래 서명된 볼트 스냅샷, 매니페스트, 도메인 간 신뢰 앵커의 비율.
 5. **컨틴전시 자본 비용(CoCC)은 얼마인가?** 2차 청산 계좌, 따뜻한 코레스 잔액, 사전 배치된 토큰화 포지션에 갇힌 유휴 일중 유동성의 일일 기회비용을 익일물 금리에 대비해 측정한 값입니다. 이사회는 은행의 회복탄력성 보험에 대한 정확한 가격을 보아야 하며, 운영 위원회는 갇힌 자본과 가동 중단 허용도 사이의 트레이드오프를 방어해야 합니다 — 최소 분기마다 갱신됩니다.
 
-이것이 DORA 6조 증거, SM&CR 고위 경영자 책임 진술서, 그리고 어느 레일이 이기는지를 결정하는 라우팅 로직에 대한 [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") 모델 리스크 거버넌스에 깔끔하게 매핑되는 지표입니다. 이사회는 서술이 아니라 단단한 하한선을 가진 분기별 차트를 필요로 합니다.
+이것이 DORA 6조 증거, SM&CR 고위 경영자 책임 진술서, 그리고 어느 레일이 이기는지를 결정하는 라우팅 로직에 대한 [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") 모델 리스크 거버넌스에 깔끔하게 매핑되는 지표입니다. 이사회는 서술이 아니라 단단한 하한선을 가진 분기별 차트를 필요로 합니다.
 
 ## 결론
 

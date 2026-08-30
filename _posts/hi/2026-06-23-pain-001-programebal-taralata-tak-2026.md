@@ -225,7 +225,7 @@ CBPR+ सत्यापन नियम स्वयं ग़ैर-समझ�
 
 ## निष्कर्ष
 
-नवंबर 2026 की समय-सीमा आसान हिस्सा है। कठिन हिस्सा वह है जो समय-सीमा मजबूर करती है। समय पर पहुँचने वाले जो बैंक अभी भी pain.001 को अनुवाद समस्या के रूप में मानते हैं, वे अगले दशक तक अपने ट्रेज़री डेटा मॉडल को वायर से अंदर की ओर पुनर्निर्मित करने में बिताएँगे। ISO-प्रथम कैनोनिकल स्कीमा, डिफ़ॉल्ट रूप से संरचित पते, और pacs.008 को सीधे ग्रहण करने वाले प्रोग्रामेबल तरलता नियंत्रण तल के साथ पहुँचने वाले बैंक — DORA Article 5 बोर्ड जवाबदेही, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") परिचालन-जोखिम अनुशासन और [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management") मॉडल शासन के तहत एजेंटिक ट्रेज़री चलाएँगे।
+नवंबर 2026 की समय-सीमा आसान हिस्सा है। कठिन हिस्सा वह है जो समय-सीमा मजबूर करती है। समय पर पहुँचने वाले जो बैंक अभी भी pain.001 को अनुवाद समस्या के रूप में मानते हैं, वे अगले दशक तक अपने ट्रेज़री डेटा मॉडल को वायर से अंदर की ओर पुनर्निर्मित करने में बिताएँगे। ISO-प्रथम कैनोनिकल स्कीमा, डिफ़ॉल्ट रूप से संरचित पते, और pacs.008 को सीधे ग्रहण करने वाले प्रोग्रामेबल तरलता नियंत्रण तल के साथ पहुँचने वाले बैंक — DORA Article 5 बोर्ड जवाबदेही, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") परिचालन-जोखिम अनुशासन और [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management") मॉडल शासन के तहत एजेंटिक ट्रेज़री चलाएँगे।
 
 स्वायत्त तंत्रिका तंत्र की रूपरेखा सजावटी नहीं है। ट्रेज़री ऐसी तरलता के बारे में तर्क नहीं कर सकती जिसे वह देख न सके। एजेंट ऐसे डेटा पर कार्य नहीं कर सकते जिसे वे पार्स न कर सकें। ISO 20022 2026 में CIB ट्रेज़री की वायरिंग है — संरचित संदेश क्रिया क्षमता है, स्कीमा वह ऑडिट ट्रेल है जिसकी माँग नियामक अगली घटना के अगले दिन सुबह करेगा।
 
@@ -241,7 +241,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. उपलब्ध: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF Recommendations")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. उपलब्ध: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. उपलब्ध: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. उपलब्ध: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Universal financial industry message scheme")
 

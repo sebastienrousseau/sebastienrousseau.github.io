@@ -230,7 +230,7 @@ DORA 제5조에 따라 은행 이사회는 기술 회복력에 대해 직접적 
 ## 09. 참고 문헌
 
 * 바젤 은행감독위원회(BCBS), 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. 바젤: 국제결제은행. 이용 가능: [https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
-* Committee on Payments and Market Infrastructures 및 Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. 바젤: 국제결제은행. 이용 가능: [https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
+* Committee on Payments and Market Infrastructures 및 Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. 바젤: 국제결제은행. 이용 가능: [https://www.bis.org/cpmi/publ/d101.htm](https://www.bis.org/cpmi/publ/d101.htm).  
 * 유럽은행감독청(EBA), 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. 파리: EBA. 이용 가능: [https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
 * 유럽의회 및 유럽연합이사회, 2022. *금융 부문의 디지털 운영 회복력에 관한 규정 (EU) 2022/2554 (DORA)*. 브뤼셀: 유럽연합 관보. 이용 가능: [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).  
 * ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. 제네바: 국제표준화기구. 이용 가능: [https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  

@@ -163,7 +163,7 @@ Hệ sinh thái NoyaLib hoạt động như một trình phân tích cấu hình
 | **Hồ sơ an toàn bộ nhớ** | Không có khối Rust `unsafe` nào trong các phụ thuộc trình phân tích và serializer. | DORA Điều 30 (chuỗi cung ứng) | Kiểm tra trình biên dịch tự động ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)) trong các bản build cargo. |
 | **Xác thực schema** | 100% file cấu hình đã phân tích được kiểm chứng với mô hình [JSON Schema](https://json-schema.org/) hợp lệ. | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Cổng xác thực thời gian thực dừng pipeline build khi vi phạm schema. |
 | **Trôi cấu hình** | Phát hiện thời gian thực và khôi phục các file cấu hình cục bộ về trạng thái phiên bản hoá git. | Lợi tức Khả năng chống chịu (RoR) | Telemetry liên tục ghi nhận mọi thay đổi file cục bộ. |
-| **Kiểm soát truy cập tác nhân** | Quyền hạn giới hạn, chỉ đọc cho các công cụ AI cục bộ vận hành qua cấu hình MCP. | Quản lý rủi ro mô hình ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Ranh giới máy chủ MCP giới hạn các thao tác tác nhân trong các thư mục được duyệt. |
+| **Kiểm soát truy cập tác nhân** | Quyền hạn giới hạn, chỉ đọc cho các công cụ AI cục bộ vận hành qua cấu hình MCP. | Quản lý rủi ro mô hình ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Ranh giới máy chủ MCP giới hạn các thao tác tác nhân trong các thư mục được duyệt. |
 
 ## 04. Sự nguỵ biện của phân tích cấu hình mờ đục
 

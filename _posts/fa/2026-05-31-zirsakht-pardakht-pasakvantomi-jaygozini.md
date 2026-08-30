@@ -36,7 +36,7 @@ keywords: "رمزنگاری پساکوانتومی، پرداخت‌های PQC،
 
 HNDL جدول زمانی معمول رمزنگاری را وارونه می‌کند. ارزیابی ریسک متعارف می‌پرسد تهدید کِی محقق می‌شود. HNDL می‌پرسد داده‌ی ضبط‌شده‌ی امروز کِی برای یک دشمن سودمند می‌شود. برای پیام‌های پرداخت — هویت ذی‌نفعان، شماره‌حساب‌ها، داده‌های ساختاریافته‌ی حواله، بارهای غربالگری تحریم، دستورهای تسویه‌ی درون‌بانکی — پنجره‌ی حساسیت سال‌ها تا دهه‌هاست. بیشتر این ترافیک هم‌اکنون جایی ضبط می‌شود.
 
-[جدول زمانی CNSA 2.0 آژانس امنیت ملی (NSA) ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "مجموعه‌ی الگوریتم‌های امنیت ملی تجاری 2.0") به سامانه‌های امنیت ملی تا 2035 مهلت می‌دهد تا گذار را کامل کنند. ناظران مالی با برنامه‌های سریع‌تری پیش می‌روند — [انتظارات PRA درباره‌ی تاب‌آوری عملیاتی ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21") چابکی رمزنگاری را به‌عنوان ریسک تمرکز شخص ثالث تلقی می‌کند. انتظار در 2026 این است که ریل‌های پرداخت بااهمیت، طرح مهاجرت PQC خود را در خوداظهاری تاب‌آوری‌شان منتشر کنند.
+[جدول زمانی CNSA 2.0 آژانس امنیت ملی (NSA) ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "مجموعه‌ی الگوریتم‌های امنیت ملی تجاری 2.0") به سامانه‌های امنیت ملی تا 2035 مهلت می‌دهد تا گذار را کامل کنند. ناظران مالی با برنامه‌های سریع‌تری پیش می‌روند — [انتظارات PRA درباره‌ی تاب‌آوری عملیاتی ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2021/march/operational-resilience-impact-tolerances-for-important-business-services-ss "PRA SS1/21") چابکی رمزنگاری را به‌عنوان ریسک تمرکز شخص ثالث تلقی می‌کند. انتظار در 2026 این است که ریل‌های پرداخت بااهمیت، طرح مهاجرت PQC خود را در خوداظهاری تاب‌آوری‌شان منتشر کنند.
 
 دشمنِ HNDL امروز به یک CRQC نیاز ندارد. دشمن به این‌ها نیاز دارد:
 
@@ -171,4 +171,4 @@ SLH-DSA (نسخه‌ی استانداردشده‌ی SPHINCS+) مبتنی بر �
 - NIST، (2024). [FIPS 205 — استاندارد امضای دیجیتال بی‌حالتِ مبتنی بر درهم‌سازی ⧉](https://csrc.nist.gov/pubs/fips/205/final "FIPS 205").
 - NSA، (2022). [مجموعه‌ی الگوریتم‌های امنیت ملی تجاری 2.0 ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "CNSA 2.0").
 - BIS، (2024). [سند کاری شماره‌ی 1208 — پروژه‌ی Leap: کوانتوم‌مقاوم‌سازی سیستم مالی ⧉](https://www.bis.org/publ/work1208.htm "BIS Working Paper 1208").
-- بانک انگلستان (PRA)، (2024). [SS1/21 — تاب‌آوری عملیاتی: تحمل‌های اثر برای خدمات کسب‌وکاری مهم ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").
+- بانک انگلستان (PRA)، (2024). [SS1/21 — تاب‌آوری عملیاتی: تحمل‌های اثر برای خدمات کسب‌وکاری مهم ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2021/march/operational-resilience-impact-tolerances-for-important-business-services-ss "PRA SS1/21").

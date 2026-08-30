@@ -323,7 +323,7 @@ Le [code source hsh](https://github.com/sebastienrousseau/hsh "hsh — framework
 
 ## References
 
-Comité de Bâle sur le contrôle bancaire (2011). *Bâle III : un cadre réglementaire mondial pour des banques et des systèmes bancaires plus résilients*. Banque des règlements internationaux. Disponible sur : [https://www.bis.org/publ/bcbs189.pdf](https://www.bis.org/publ/bcbs189.pdf "Bâle III : un cadre réglementaire mondial pour des banques et des systèmes bancaires plus résilients")
+Comité de Bâle sur le contrôle bancaire (2011). *Bâle III : un cadre réglementaire mondial pour des banques et des systèmes bancaires plus résilients*. Banque des règlements internationaux. Disponible sur : [https://www.bis.org/publ/bcbs189.htm](https://www.bis.org/publ/bcbs189.htm "Bâle III : un cadre réglementaire mondial pour des banques et des systèmes bancaires plus résilients")
 
 Biryukov, A., Dinu, D., Khovratovich, D., et Josefsson, S. (2021). *RFC 9106 : Argon2, fonction à mémoire dure pour le hachage de mots de passe et les applications de preuve de travail*. Internet Engineering Task Force. Disponible sur : [https://datatracker.ietf.org/doc/html/rfc9106](https://datatracker.ietf.org/doc/html/rfc9106 "RFC 9106 — Argon2, fonction à mémoire dure pour le hachage de mots de passe")
 

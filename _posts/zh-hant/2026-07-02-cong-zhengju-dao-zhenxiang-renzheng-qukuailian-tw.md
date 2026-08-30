@@ -230,7 +230,7 @@ sequenceDiagram
 ## 09. 參考文獻
 
 * 巴塞爾銀行監理委員會（BCBS），2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. 巴塞爾：國際清算銀行。可存取：[https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf)。  
-* Committee on Payments and Market Infrastructures 與 Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO)，2012. *Principles for financial market infrastructures*. 巴塞爾：國際清算銀行。可存取：[https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf)。  
+* Committee on Payments and Market Infrastructures 與 Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO)，2012. *Principles for financial market infrastructures*. 巴塞爾：國際清算銀行。可存取：[https://www.bis.org/cpmi/publ/d101.htm](https://www.bis.org/cpmi/publ/d101.htm)。  
 * 歐洲銀行管理局（EBA），2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. 巴黎：EBA。可存取：[https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements)。  
 * 歐洲議會與歐盟理事會，2022. *關於金融部門數位營運韌性的條例（EU）2022/2554（DORA）*. 布魯塞爾：歐盟官方公報。可存取：[https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554)。  
 * ISO/IEC JTC 1/SC 42，2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. 日內瓦：國際標準化組織。可存取：[https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html)。  

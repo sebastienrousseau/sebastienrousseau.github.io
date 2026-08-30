@@ -102,7 +102,7 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-2026 年的云原生银行身处 DORA 审计阶段。[第 (EU) 2022/2554 号条例 ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA — 数字运营韧性法案")自 2025 年 1 月 17 日起生效。依据第 28 至 44 条的关键第三方提供商(CTPP)指定机制在 2025-2026 年间陆续开启,AWS、Microsoft(Azure)、Google(GCP)与 Salesforce 均处于或贴近指定边界。欧洲监管局(EBA、EIOPA、ESMA)于 2024 年发布了关于[信息登记 ⧉](https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf "ESAs 关于 DORA 信息登记的 ITS")的最终 RTS 与 ITS。欧洲央行银行监管团队在[2026-28 监管优先事项 ⧉](https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html "2026-28 监管优先事项")中明确列出了云服务中断准备度与威胁导向渗透测试两个专项。机构层面的问题,不再是"是否要把云战略与 DORA 对齐"——这一步已成定局——而是机构的平台工程基础组件能否以部署流水线的节奏产出证据,而不是在考前一周临时拼凑一沓 PDF。
+2026 年的云原生银行身处 DORA 审计阶段。[第 (EU) 2022/2554 号条例 ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA — 数字运营韧性法案")自 2025 年 1 月 17 日起生效。依据第 28 至 44 条的关键第三方提供商(CTPP)指定机制在 2025-2026 年间陆续开启,AWS、Microsoft(Azure)、Google(GCP)与 Salesforce 均处于或贴近指定边界。欧洲监管局(EBA、EIOPA、ESMA)于 2024 年发布了关于[信息登记 ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "ESAs 关于 DORA 信息登记的 ITS")的最终 RTS 与 ITS。欧洲央行银行监管团队在[2026-28 监管优先事项 ⧉](https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html "2026-28 监管优先事项")中明确列出了云服务中断准备度与威胁导向渗透测试两个专项。机构层面的问题,不再是"是否要把云战略与 DORA 对齐"——这一步已成定局——而是机构的平台工程基础组件能否以部署流水线的节奏产出证据,而不是在考前一周临时拼凑一沓 PDF。
 
 ---
 
@@ -273,7 +273,7 @@ DORA 云韧性已进入审计阶段。2024-2025 年间所做的平台工程取�
 - 欧盟,(2022)。[第 (EU) 2022/2554 号条例 — 数字运营韧性法案(DORA)⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA")。
 - 欧洲银行管理局,(2019)。[EBA/GL/2019/02 — 关于外包安排的指引 ⧉](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements "EBA 外包指引")。
 - 欧洲银行管理局,(2026)。[数字运营韧性法案 ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "EBA — DORA 直接监督与监管")。
-- 欧洲监管局,(2024)。[关于 DORA 信息登记 ITS 的最终报告 ⧉](https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf "ESAs ITS")。
+- 欧洲监管局,(2024)。[关于 DORA 信息登记 ITS 的最终报告 ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "ESAs ITS")。
 - 欧洲央行银行监管,(2025)。[2026-28 监管优先事项 ⧉](https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html "ECB 2026-28 优先事项")。
 - 欧洲中央银行,(2024)。[TIBER-EU 框架 ⧉](https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html "TIBER-EU")。
 - ENISA,(2024)。[欧盟云服务网络安全方案(EUCS)⧉](https://www.enisa.europa.eu/publications/eucs-cloud-service-scheme "EUCS")。

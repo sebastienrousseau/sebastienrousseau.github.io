@@ -397,12 +397,12 @@ Sebuah **cloud consumer** membeli enam pilar dari hyperscaler dengan rekayasa pl
 - Sebastien Rousseau, (2026). [CloudCDN on GitHub ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "sebastienrousseau/cloudcdn.pro"). GitHub.
 - Constellation Energy, (2025). [Three Mile Island restart agreement with Microsoft for AI data-centre power ⧉](https://www.constellationenergy.com/newsroom.html "Constellation Energy newsroom"). Constellation Energy.
 - Amazon Web Services, (2025). [AWS investment in X-Energy and Talen / Cumulus nuclear-adjacent data-centre acquisition ⧉](https://aws.amazon.com/blogs/aws/ "AWS News Blog"). AWS.
-- Kairos Power, (2025). [Google Kairos Power SMR power-purchase agreement ⧉](https://kairospower.com/news/ "Kairos Power News"). Kairos Power.
+- Kairos Power, (2025). Google Kairos Power SMR power-purchase agreement. Kairos Power.
 - Bank for International Settlements, (2025). [Project Agora: wholesale CBDC and tokenised commercial-bank deposits ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agora — BIS Innovation Hub"). BIS Innovation Hub.
 - European Central Bank, (2025). [Digital euro project — preparation phase update ⧉](https://www.ecb.europa.eu/paym/digital_euro/html/index.en.html "Digital euro — ECB"). ECB.
-- Amazon Web Services, (2025). [AWS European Sovereign Cloud — Programme Overview ⧉](https://aws.amazon.com/government-education/european-sovereign-cloud/ "AWS European Sovereign Cloud"). AWS.
+- Amazon Web Services, (2025). [AWS European digital sovereignty ⧉](https://aws.amazon.com/compliance/europe-digital-sovereignty/ "AWS European digital sovereignty"). AWS.
 - Meta AI, (2026). [Llama 4 release announcement — Maverick, Scout, and Behemoth variants ⧉](https://ai.meta.com/blog/llama-4-multimodal-intelligence/ "Llama 4 release"). Meta.
-- Toshiba / BT, (2025). [Commercial QKD network deployment in the London metropolitan area ⧉](https://www.toshiba.eu/quantum-technology/ "Toshiba Quantum Technology"). Toshiba Europe.
+- Toshiba / BT, (2025). [Toshiba quantum key distribution (QKD) ⧉](https://www.global.toshiba/ww/products-solutions/security-ict/qkd.html "Toshiba quantum key distribution (QKD)"). Toshiba Europe.
 - NVIDIA, (2025). [Spectrum-X Photonics and Quantum-X Photonics — co-packaged optical networking for AI factories ⧉](https://nvidianews.nvidia.com/news/spectrum-x-quantum-x-photonics "NVIDIA Photonics announcement at GTC 2025"). NVIDIA.
 - European Central Bank Banking Supervision, (2025). [Cloud outsourcing and concentration risk — supervisory expectations ⧉](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.outsourcingcloud.en.html "ECB Banking Supervision on cloud outsourcing"). ECB.
 - Zou, W. et al. (2024). [PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models ⧉](https://arxiv.org/abs/2402.07867 "PoisonedRAG"). arXiv.

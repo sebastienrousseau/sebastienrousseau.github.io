@@ -163,7 +163,7 @@ Um absolute Sicherheit über das Entwicklungs- und Betriebsumfeld hinweg aufrech
 | **Speichersicherheits-Profil** | Null `unsafe`-Rust-Blöcke in den Parser- und Serializer-Abhängigkeiten. | DORA Artikel 30 (Lieferkette) | Automatisierte Compiler-Checks ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)) in den Cargo-Builds. |
 | **Schema-Validierung** | 100 % der geparsten Konfigurationsdateien gegen gültige [JSON-Schema](https://json-schema.org/)-Modelle verifiziert. | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Echtzeit-Validierungs-Gate hält Build-Pipelines bei Schema-Verstößen an. |
 | **Konfigurations-Drift** | Echtzeit-Erkennung und Wiederherstellung lokaler Konfigurationsdateien auf den git-versionierten Zustand. | Return on Resilience (RoR) | Kontinuierliche Telemetrie protokolliert alle lokalen Dateiänderungen. |
-| **Agenten-Zugriffskontrolle** | Begrenzte, schreibgeschützte Berechtigungen für lokale KI-Werkzeuge, die über MCP-Konfigurationen arbeiten. | Modellrisikomanagement ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | MCP-Server-Grenzen schränken Agenten-Operationen auf freigegebene Verzeichnisse ein. |
+| **Agenten-Zugriffskontrolle** | Begrenzte, schreibgeschützte Berechtigungen für lokale KI-Werkzeuge, die über MCP-Konfigurationen arbeiten. | Modellrisikomanagement ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | MCP-Server-Grenzen schränken Agenten-Operationen auf freigegebene Verzeichnisse ein. |
 
 ## 04. Der Trugschluss des undurchsichtigen Konfigurations-Parsings
 

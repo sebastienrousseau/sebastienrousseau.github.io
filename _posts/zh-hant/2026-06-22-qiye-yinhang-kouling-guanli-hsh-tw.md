@@ -323,7 +323,7 @@ hsh 是密碼與秘密雜湊框架,並非金鑰封裝或簽章基元。[NIST IR 
 
 ## 參考文獻
 
-巴塞爾銀行監理委員會(2011)。《Basel III:更具韌性的銀行與銀行體系全球監理框架》。國際清算銀行。取自:[https://www.bis.org/publ/bcbs189.pdf](https://www.bis.org/publ/bcbs189.pdf "Basel III: A global regulatory framework for more resilient banks and banking systems")
+巴塞爾銀行監理委員會(2011)。《Basel III:更具韌性的銀行與銀行體系全球監理框架》。國際清算銀行。取自:[https://www.bis.org/publ/bcbs189.htm](https://www.bis.org/publ/bcbs189.htm "Basel III: A global regulatory framework for more resilient banks and banking systems")
 
 Biryukov, A.、Dinu, D.、Khovratovich, D. 與 Josefsson, S.(2021)。《RFC 9106:用於密碼雜湊與工作量證明應用的 Argon2 記憶體高耗函式》。網際網路工程任務組。取自:[https://datatracker.ietf.org/doc/html/rfc9106](https://datatracker.ietf.org/doc/html/rfc9106 "RFC 9106 — Argon2 Memory-Hard Function for Password Hashing")
 

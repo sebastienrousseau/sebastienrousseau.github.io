@@ -120,7 +120,7 @@ CBPR+-ஐ விட கடுமையான செய்தி விவரக�
 
 ## முடிவுரை
 
-நவம்பர் 2026 காலக்கெடு எளிதான பகுதி. கடினமான பகுதி காலக்கெடு எதை வலியுறுத்துகிறது என்பதுதான். சரியான நேரத்தில் வந்தடைந்தும் pain.001-ஐ இன்னும் ஒரு மொழிபெயர்ப்பு சிக்கலாகக் கருதும் வங்கிகள் அடுத்த தசாப்தத்தை தங்கள் கருவூலத் தரவு மாதிரியை வயரிலிருந்து உள்நோக்கி மீளக் கட்டமைப்பதில் செலவழிப்பார்கள். ISO-முதன்மை நியமன ஸ்கீமா, இயல்பாகவே கட்டமைக்கப்பட்ட முகவரிகள், மற்றும் pacs.008-ஐ நேரடியாக நுகரும் ஒரு நிரலாக்கக்கூடிய பணப்புழக்க கட்டுப்பாட்டுத் தளத்துடன் வந்தடையும் வங்கிகள், DORA பிரிவு 5 வாரியப் பொறுப்பு, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: நெருக்கடிக்குப் பிந்தைய சீர்திருத்தங்களை இறுதி செய்தல்") செயல்பாட்டு-இடர் ஒழுக்கம், மற்றும் [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 மாதிரி இடர் நிர்வாகம் குறித்த வழிகாட்டல்") மாதிரி நிர்வாகத்தின் கீழ் ஏஜென்டிக் கருவூலத்தை இயக்குவார்கள்.
+நவம்பர் 2026 காலக்கெடு எளிதான பகுதி. கடினமான பகுதி காலக்கெடு எதை வலியுறுத்துகிறது என்பதுதான். சரியான நேரத்தில் வந்தடைந்தும் pain.001-ஐ இன்னும் ஒரு மொழிபெயர்ப்பு சிக்கலாகக் கருதும் வங்கிகள் அடுத்த தசாப்தத்தை தங்கள் கருவூலத் தரவு மாதிரியை வயரிலிருந்து உள்நோக்கி மீளக் கட்டமைப்பதில் செலவழிப்பார்கள். ISO-முதன்மை நியமன ஸ்கீமா, இயல்பாகவே கட்டமைக்கப்பட்ட முகவரிகள், மற்றும் pacs.008-ஐ நேரடியாக நுகரும் ஒரு நிரலாக்கக்கூடிய பணப்புழக்க கட்டுப்பாட்டுத் தளத்துடன் வந்தடையும் வங்கிகள், DORA பிரிவு 5 வாரியப் பொறுப்பு, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: நெருக்கடிக்குப் பிந்தைய சீர்திருத்தங்களை இறுதி செய்தல்") செயல்பாட்டு-இடர் ஒழுக்கம், மற்றும் [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 மாதிரி இடர் நிர்வாகம் குறித்த வழிகாட்டல்") மாதிரி நிர்வாகத்தின் கீழ் ஏஜென்டிக் கருவூலத்தை இயக்குவார்கள்.
 
 தன்னியக்க நரம்பு மண்டல வடிவமைப்பு அலங்காரமானது அல்ல. கருவூலம் தான் காண முடியாத பணப்புழக்கத்தைப் பற்றி பகுத்தறிய முடியாது. ஏஜென்ட்கள் தாம் பாகுபடுத்த முடியாத தரவின் மீது செயல்பட முடியாது. 2026-இல் CIB கருவூலத்தின் கம்பியிணைப்பு ISO 20022 — கட்டமைக்கப்பட்ட செய்தி செயல் திறன், ஸ்கீமா என்பது அடுத்த சம்பவத்தின் மறுநாள் காலை ஒழுங்குமுறையாளர் கோரும் தணிக்கைத் தடம்.
 
@@ -136,7 +136,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. கிடைக்குமிடம்: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF Recommendations")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. கிடைக்குமிடம்: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. கிடைக்குமிடம்: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. கிடைக்குமிடம்: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Universal financial industry message scheme")
 

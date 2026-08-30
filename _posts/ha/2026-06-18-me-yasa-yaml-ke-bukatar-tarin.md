@@ -163,7 +163,7 @@ Don kiyaye cikakken tsaro a fadin haɓakawa da gidan ayyuka, Chief Information S
 | **Tarihin tsaron ƙwaƙwalwa** | Sifili na `unsafe` Rust blocks a cikin parser da serializer dependencies. | DORA Article 30 (jerin samar da kayayyaki) | Binciken compiler na atomatik ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)) a cikin cargo builds. |
 | **Schema validation** | 100% na fayilolin tsari da aka yi parse an tabbatar da su akan samfuran [JSON Schema](https://json-schema.org/) masu inganci. | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Ƙofar validation a ainihin lokaci tana dakatar da bututun ginawa akan ketare schema. |
 | **Motsi na tsari** | Gano da farfaɗo a ainihin lokaci na fayilolin tsari na cikin gida zuwa yanayin sigar git. | Return on Resilience (RoR) | Telemetry na ci gaba yana shigar da dukan canjin fayil na cikin gida. |
-| **Sarrafa shiga na wakili** | Iyaka, izinin karatu kawai don kayan aikin AI na cikin gida da ke aiki ta tsarin MCP. | Sarrafa haɗarin samfuri ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Iyakokin server na MCP suna takura ayyukan wakili zuwa kundayen adireshi da aka amince da su. |
+| **Sarrafa shiga na wakili** | Iyaka, izinin karatu kawai don kayan aikin AI na cikin gida da ke aiki ta tsarin MCP. | Sarrafa haɗarin samfuri ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Iyakokin server na MCP suna takura ayyukan wakili zuwa kundayen adireshi da aka amince da su. |
 
 ## 04. Karya na Parsing na Tsari mai Duhu
 

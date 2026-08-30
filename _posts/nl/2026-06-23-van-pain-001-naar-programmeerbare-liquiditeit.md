@@ -225,7 +225,7 @@ Vijf maanden is genoeg tijd om een strikter-dan-CBPR+-berichtprofiel en reject-o
 
 ## Conclusie
 
-De deadline van november 2026 is het makkelijke deel. Het moeilijke deel is wat de deadline afdwingt. Banken die op tijd arriveren maar pain.001 nog steeds als een vertaalprobleem behandelen, besteden het volgende decennium aan het herbouwen van hun treasury-datamodel vanaf de lijn naar binnen. Banken die arriveren met een ISO-first canoniek schema, standaard gestructureerde adressen en een programmeerbaar liquiditeitscontrolevlak dat pacs.008 rechtstreeks verbruikt, draaien agentic treasury onder DORA Artikel 5-bestuurverantwoordelijkheid, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms")-discipline voor operationeel risico en [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")-modelbeheer.
+De deadline van november 2026 is het makkelijke deel. Het moeilijke deel is wat de deadline afdwingt. Banken die op tijd arriveren maar pain.001 nog steeds als een vertaalprobleem behandelen, besteden het volgende decennium aan het herbouwen van hun treasury-datamodel vanaf de lijn naar binnen. Banken die arriveren met een ISO-first canoniek schema, standaard gestructureerde adressen en een programmeerbaar liquiditeitscontrolevlak dat pacs.008 rechtstreeks verbruikt, draaien agentic treasury onder DORA Artikel 5-bestuurverantwoordelijkheid, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms")-discipline voor operationeel risico en [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")-modelbeheer.
 
 De aanduiding 'autonoom zenuwstelsel' is geen decoratie. Treasury kan niet redeneren over liquiditeit die het niet kan zien. Agenten kunnen niet handelen op data die zij niet kunnen parsen. ISO 20022 is in 2026 de bedrading van CIB-treasury — het gestructureerde bericht is de actiepotentiaal, het schema is het audit trail dat de toezichthouder zal eisen de ochtend na het volgende incident.
 
@@ -241,7 +241,7 @@ Europees Parlement en Raad (2022). *Verordening (EU) 2022/2554 betreffende digit
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. Beschikbaar op: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF Recommendations")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Beschikbaar op: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Beschikbaar op: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. Beschikbaar op: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Universal financial industry message scheme")
 

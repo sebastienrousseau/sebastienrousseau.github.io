@@ -257,7 +257,7 @@ sequenceDiagram
 ## المراجع
 
 - National Institute of Standards and Technology, (2024). [FIPS 203: معيار آلية تغليف المفاتيح القائمة على الشبيكات المعيارية ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "إعلان NIST عن FIPS 203").
-- Board of Governors of the Federal Reserve System, (2011). [الإرشادات الإشرافية لإدارة مخاطر النماذج (SR Letter 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 الصادر عن الاحتياطي الفيدرالي").
+- Board of Governors of the Federal Reserve System, (2011). [الإرشادات الإشرافية لإدارة مخاطر النماذج (SR Letter 11-7) ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 الصادر عن الاحتياطي الفيدرالي").
 - European Parliament and Council of the European Union, (2022). [اللائحة (EU) 2022/2554 بشأن المرونة التشغيلية الرقمية للقطاع المالي (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "لائحة DORA").
 - NIST National Cybersecurity Center of Excellence, (2025). [الترحيل إلى التشفير ما بعد الكمي (NIST SP 1800-38) ⧉](https://www.nccoe.nist.gov/projects/migration-post-quantum-cryptography "NIST SP 1800-38").
 - GitHub, (2026). [مستودع kyberlib مفتوح المصدر ⧉](https://github.com/sebastienrousseau/kyberlib "مستودع kyberlib").

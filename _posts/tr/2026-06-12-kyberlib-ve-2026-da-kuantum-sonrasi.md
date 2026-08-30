@@ -257,7 +257,7 @@ Hibrit zarflar, oturum anahtarını hem klasik hem de kuantum sonrası bir sırd
 ## Kaynakça
 
 - National Institute of Standards and Technology, (2024). [FIPS 203: Modül-Kafes Tabanlı Anahtar Kapsülleme Mekanizması Standardı ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "NIST FIPS 203 duyurusu").
-- Board of Governors of the Federal Reserve System, (2011). [Model Risk Yönetimine İlişkin Denetim Rehberi (SR Letter 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
+- Board of Governors of the Federal Reserve System, (2011). [Model Risk Yönetimine İlişkin Denetim Rehberi (SR Letter 11-7) ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
 - European Parliament and Council of the European Union, (2022). [Finansal sektör için dijital operasyonel dayanıklılığa ilişkin (AB) 2022/2554 sayılı Tüzük (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA Tüzüğü").
 - NIST National Cybersecurity Center of Excellence, (2025). [Kuantum Sonrası Kriptografiye Geçiş (NIST SP 1800-38) ⧉](https://www.nccoe.nist.gov/projects/migration-post-quantum-cryptography "NIST SP 1800-38").
 - GitHub, (2026). [kyberlib açık kaynak deposu ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib deposu").

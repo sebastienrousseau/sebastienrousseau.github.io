@@ -140,7 +140,7 @@ site_software: "Static Site Generator, Rust"
 
 2026 年的生产级司库副驾有三层，按此顺序：
 
-**数据。**智能体读取 ISO 20022 报文——`camt.052`（日间报表）、`camt.053`（日终报表）、`camt.054`（借/贷通知）——以及在银行支付通道中流转的 pacs.008 客户信贷转账。智能体读取结构化报文并与总账核对。[Elire 的 2026 年司库 AI 手册](https://elire.com/treasurys-ai-playbook-ete-2025/ "Elire — Treasury's AI playbook 2025-2026") 把这一步定为前提：如果智能体读不了结构化的 ISO 20022 数据，那么下游一切关于预测精度的说法都是营销。
+**数据。**智能体读取 ISO 20022 报文——`camt.052`（日间报表）、`camt.053`（日终报表）、`camt.054`（借/贷通知）——以及在银行支付通道中流转的 pacs.008 客户信贷转账。智能体读取结构化报文并与总账核对。[Elire 的 2026 年司库 AI 手册](https://web.archive.org/web/20260124183820/https://elire.com/treasurys-ai-playbook-ete-2025/ "Elire — Treasury's AI playbook 2025-2026") 把这一步定为前提：如果智能体读不了结构化的 ISO 20022 数据，那么下游一切关于预测精度的说法都是营销。
 
 **推理。**一个受约束的基础模型——通常是内部前沿模型加上微调后的司库政策适配器——把 ISO 20022 现实转化为拟议动作。推理这一步从不触及支付通道，它输出一份结构化的工具调用请求："14:30 之前从 BoE 同业级交易对手 X 的欧元 nostro 账户向 RTGS 英镑账户 Y 清扫 1.8 亿英镑，以保持英镑日间缓冲高于政策下限。"
 
@@ -164,7 +164,7 @@ site_software: "Static Site Generator, Rust"
 
 智能体司库首先是一个模型风险问题，其次才是生产力故事。
 
-**SR 11-7 与 MRM。**根据美联储 [SR 11-7 模型风险管理指引](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve — SR 11-7 model risk management")，任何对财务决策产生实质性影响的模型都需要有文件化的开发、独立验证与持续性能监控。司库副驾在 SR 11-7 下就是模型。MRM 负责存量入册，验证团队负责挑战者测试（智能体的预测在留出窗口上是否打败回归基线？），生产团队负责漂移监控。把副驾当作"只是工具"的银行是在把风险错分类。
+**SR 11-7 与 MRM。**根据美联储 [SR 11-7 模型风险管理指引](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve — SR 11-7 model risk management")，任何对财务决策产生实质性影响的模型都需要有文件化的开发、独立验证与持续性能监控。司库副驾在 SR 11-7 下就是模型。MRM 负责存量入册，验证团队负责挑战者测试（智能体的预测在留出窗口上是否打败回归基线？），生产团队负责漂移监控。把副驾当作"只是工具"的银行是在把风险错分类。
 
 **DORA。**[Regulation (EU) 2022/2554（DORA）](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA — Digital Operational Resilience Act") 第 5 条把 ICT 风险的最终问责落到董事会。司库副驾是支持关键职能的 ICT 系统——董事会必须签核风险框架、第三方供应商集中度与退出方案。紧急关停开关（在数分钟内撤销 MCP 工具访问并回滚至仅人工操作）是 DORA 控制项，不是可选项。
 

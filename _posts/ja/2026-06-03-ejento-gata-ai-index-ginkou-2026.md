@@ -121,7 +121,7 @@ site_software: "Static Site Generator, Rust"
 
 採用と並行して、2 つの変化が起こりました。
 
-第一に、規制当局は LLM を目新しいものとして扱うのをやめました。FRB は、LLM が内部でモデルとして分類されているか否かに関わらず、LLM ベースの意思決定には [SR 11-7 ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: Guidance on Model Risk Management") が適用されると明確化しました。PRA の [SS1/23 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "Supervisory Statement SS1/23") は、もともとそれらを捕捉するのに十分な広さでした。EU AI Act の高リスク分類は、金融サービスにおける LLM 用途のほとんどを覆います。「これが対象に当たるかどうか分からない」という議論はもう残っていません。
+第一に、規制当局は LLM を目新しいものとして扱うのをやめました。FRB は、LLM が内部でモデルとして分類されているか否かに関わらず、LLM ベースの意思決定には [SR 11-7 ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: Guidance on Model Risk Management") が適用されると明確化しました。PRA の [SS1/23 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "Supervisory Statement SS1/23") は、もともとそれらを捕捉するのに十分な広さでした。EU AI Act の高リスク分類は、金融サービスにおける LLM 用途のほとんどを覆います。「これが対象に当たるかどうか分からない」という議論はもう残っていません。
 
 第二に、ベンチマークの現実が追いつきました。Stanford HAI の 2026 AI Index は、エンタープライズの実際のツール利用に最も近い利用可能なベンチマークである OSWorld を 66.3% の精度と報告しています([Stanford HAI ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance "Technical Performance chapter"))。構造化タスクの 3 件に 1 件は依然として失敗しています。この数字が 2026 年の自律性の技術的天井を設定します。HITL 監督下での境界付き Level-3 展開を正当化するには十分な高さですが、顧客資金に触れるあらゆる API に対する無監督実行を正当化するには不十分です。
 
@@ -259,7 +259,7 @@ LLM の出力と API の間に決定論的なガードレールを置かずに�
 - Stanford HAI, (2026). [The 2026 AI Index Report ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report "The 2026 AI Index Report").
 - Stanford HAI, (2026). [Technical Performance チャプター ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance "Technical Performance チャプター").
 - Cambridge Centre for Alternative Finance, (2026). [2026 Global AI in Financial Services Report ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 Global AI in Financial Services Report").
-- Federal Reserve, (2011). [SR 11-7: モデルリスク管理ガイダンス ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: モデルリスク管理ガイダンス").
+- Federal Reserve, (2011). [SR 11-7: モデルリスク管理ガイダンス ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: モデルリスク管理ガイダンス").
 - Prudential Regulation Authority, (2023). [Supervisory Statement SS1/23: 銀行向けモデルリスク管理原則 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "SS1/23: 銀行向けモデルリスク管理原則").
 - European Commission, (2024). [Regulation (EU) 2024/1689 — AI Act ⧉](https://eur-lex.europa.eu/eli/reg/2024/1689/oj "Regulation (EU) 2024/1689 — EU AI Act").
 - NVIDIA, (2024). [NeMo Guardrails フレームワーク ⧉](https://github.com/NVIDIA/NeMo-Guardrails "NeMo Guardrails — LLM ベースの会話システムにプログラマブルなガードレールを追加するためのオープンソースツールキット").

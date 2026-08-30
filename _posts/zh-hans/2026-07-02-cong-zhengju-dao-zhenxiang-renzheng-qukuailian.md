@@ -230,7 +230,7 @@ sequenceDiagram
 ## 09. 参考文献
 
 * 巴塞尔银行监管委员会（BCBS），2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. 巴塞尔：国际清算银行。可访问：[https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf)。  
-* Committee on Payments and Market Infrastructures 与 Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO)，2012. *Principles for financial market infrastructures*. 巴塞尔：国际清算银行。可访问：[https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf)。  
+* Committee on Payments and Market Infrastructures 与 Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO)，2012. *Principles for financial market infrastructures*. 巴塞尔：国际清算银行。可访问：[https://www.bis.org/cpmi/publ/d101.htm](https://www.bis.org/cpmi/publ/d101.htm)。  
 * 欧洲银行管理局（EBA），2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. 巴黎：EBA。可访问：[https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements)。  
 * 欧洲议会与欧盟理事会，2022. *关于金融部门数字运营韧性的条例（EU）2022/2554（DORA）*. 布鲁塞尔：欧盟官方公报。可访问：[https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554)。  
 * ISO/IEC JTC 1/SC 42，2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. 日内瓦：国际标准化组织。可访问：[https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html)。  

@@ -323,7 +323,7 @@ hsh — каркас хеширования паролей и секретов, 
 
 ## Ссылки
 
-Базельский комитет по банковскому надзору (2011). *Basel III: A global regulatory framework for more resilient banks and banking systems*. Банк международных расчётов. Доступно по адресу: [https://www.bis.org/publ/bcbs189.pdf](https://www.bis.org/publ/bcbs189.pdf "Basel III: глобальный регуляторный каркас для более устойчивых банков и банковских систем")
+Базельский комитет по банковскому надзору (2011). *Basel III: A global regulatory framework for more resilient banks and banking systems*. Банк международных расчётов. Доступно по адресу: [https://www.bis.org/publ/bcbs189.htm](https://www.bis.org/publ/bcbs189.htm "Basel III: глобальный регуляторный каркас для более устойчивых банков и банковских систем")
 
 Бирюков А., Дину Д., Ховратович Д., Йозефссон С. (2021). *RFC 9106: Argon2 Memory-Hard Function for Password Hashing and Proof-of-Work Applications*. Internet Engineering Task Force. Доступно по адресу: [https://datatracker.ietf.org/doc/html/rfc9106](https://datatracker.ietf.org/doc/html/rfc9106 "RFC 9106 — функция Argon2 с высокой памятью для хеширования паролей")
 

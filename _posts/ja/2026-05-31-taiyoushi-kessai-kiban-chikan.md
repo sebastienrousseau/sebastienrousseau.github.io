@@ -126,7 +126,7 @@ site_software: "Static Site Generator, Rust"
 
 HNDL は、通常の暗号タイムラインを反転させます。一般的なリスク評価は、脅威がいつ顕在化するかを問います。HNDL は、本日捕捉されたデータがいつ攻撃者にとって有用になるかを問います。決済メッセージ — 受益者の身元、口座番号、構造化された送金データ、制裁スクリーニングのペイロード、行内決済指示 — の機微性ウィンドウは数年から数十年に及びます。そのトラフィックの大半は、現時点でどこかに記録されています。
 
-[NSA の CNSA 2.0 タイムライン ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "Commercial National Security Algorithm Suite 2.0")は、国家安全保障システムに対し 2035 年までの移行完了を求めています。金融監督当局はより速いスケジュールで動いています。[PRA の業務継続耐性に関する期待 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21")は、暗号アジリティをサードパーティ集中リスクとして扱っています。2026 年の期待は、主要決済レールが業務継続耐性の自己宣言の中で PQC 移行計画を公表することです。
+[NSA の CNSA 2.0 タイムライン ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "Commercial National Security Algorithm Suite 2.0")は、国家安全保障システムに対し 2035 年までの移行完了を求めています。金融監督当局はより速いスケジュールで動いています。[PRA の業務継続耐性に関する期待 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2021/march/operational-resilience-impact-tolerances-for-important-business-services-ss "PRA SS1/21")は、暗号アジリティをサードパーティ集中リスクとして扱っています。2026 年の期待は、主要決済レールが業務継続耐性の自己宣言の中で PQC 移行計画を公表することです。
 
 HNDL の攻撃者は、本日 CRQC を必要としません。必要なのは次のとおりです。
 
@@ -261,7 +261,7 @@ SLH-DSA(SPHINCS+ の標準化版)はハッシュベースであり、利用で�
 - NIST, (2024). [FIPS 205 — ステートレス・ハッシュベース・デジタル署名標準 ⧉](https://csrc.nist.gov/pubs/fips/205/final "FIPS 205").
 - NSA, (2022). [商用国家安全保障アルゴリズム・スイート 2.0 ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "CNSA 2.0").
 - BIS, (2024). [ワーキングペーパー No. 1208 — Project Leap: 金融システムの耐量子化 ⧉](https://www.bis.org/publ/work1208.htm "BIS Working Paper 1208").
-- Bank of England(PRA), (2024). [SS1/21 — 業務継続耐性:重要業務サービスの影響許容度 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21").
+- Bank of England(PRA), (2024). [SS1/21 — 業務継続耐性:重要業務サービスの影響許容度 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2021/march/operational-resilience-impact-tolerances-for-important-business-services-ss "PRA SS1/21").
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="著者について"><img alt="Sebastien Rousseau のポートレート" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">応用 AI、ISO 20022 移行、金融サービスにおけるポスト量子暗号、ホールセール決済の構造的変革について執筆するシニア銀行テクノロジスト。</span><span class="author-credentials">HSBC コマーシャル&amp;インベストメントバンク、PayPal、Barclays、Shazam、AKQA、Virgin Group を横断する 20 年以上の経験。<a href="/about/index.html">プロフィール全体</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>

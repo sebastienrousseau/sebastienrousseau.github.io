@@ -126,7 +126,7 @@ site_software: "Static Site Generator, Rust"
 
 HNDL 颠倒了通常的密码学时间线。常规风险评估问的是威胁何时落地。HNDL 问的是今天截获的数据何时对对手有用。对支付报文而言——收款人身份、账号、结构化汇款数据、制裁筛查载荷、行内结算指令——敏感窗口以年到几十年计。这类流量大多此刻已经在某个地方被录下。
 
-[NSA 的 CNSA 2.0 时间表 ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "Commercial National Security Algorithm Suite 2.0") 给国家安全系统的过渡截止设在 2035 年。金融监管者走得更快——[PRA 关于运营韧性的预期 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21") 已把密码敏捷性视为第三方集中度风险。2026 年的预期是,重要支付通道在韧性自评中公布其 PQC 迁移计划。
+[NSA 的 CNSA 2.0 时间表 ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "Commercial National Security Algorithm Suite 2.0") 给国家安全系统的过渡截止设在 2035 年。金融监管者走得更快——[PRA 关于运营韧性的预期 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2021/march/operational-resilience-impact-tolerances-for-important-business-services-ss "PRA SS1/21") 已把密码敏捷性视为第三方集中度风险。2026 年的预期是,重要支付通道在韧性自评中公布其 PQC 迁移计划。
 
 HNDL 对手今天并不需要 CRQC。对手需要的是:
 
@@ -261,7 +261,7 @@ SLH-DSA(SPHINCS+ 的标准化版本)是基于哈希的,因此只依赖哈希函�
 - NIST,(2024)。[FIPS 205 — Stateless Hash-Based Digital Signature Standard ⧉](https://csrc.nist.gov/pubs/fips/205/final "FIPS 205")。
 - NSA,(2022)。[Commercial National Security Algorithm Suite 2.0 ⧉](https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF "CNSA 2.0")。
 - BIS,(2024)。[Working Paper No. 1208 — Project Leap: Quantum-proofing the financial system ⧉](https://www.bis.org/publ/work1208.htm "BIS Working Paper 1208")。
-- Bank of England(PRA),(2024)。[SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2024/march/operational-resilience-impact-tolerances-for-important-business-services "PRA SS1/21")。
+- Bank of England(PRA),(2024)。[SS1/21 — Operational resilience: Impact tolerances for important business services ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2021/march/operational-resilience-impact-tolerances-for-important-business-services-ss "PRA SS1/21")。
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家,撰写关于应用型人工智能、ISO 20022 迁移、金融服务后量子密码学,以及批发支付结构性转型的文章。</span><span class="author-credentials">在 HSBC 商业与投资银行、PayPal、Barclays、Shazam、AKQA、Virgin 集团积累二十余年经验。<a href="/about/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>

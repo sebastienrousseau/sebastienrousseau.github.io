@@ -187,7 +187,7 @@ To maintain absolute security across the development and operations estate, Chie
 | **Memory safety profile** | Zero `unsafe` Rust blocks inside the parser and serializer dependencies. | DORA Article 30 (supply chain) | Automated compiler checks ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)) in cargo builds. |
 | **Schema validation** | 100 % of parsed configuration files verified against valid [JSON Schema](https://json-schema.org/) models. | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Real-time validation gate halting build pipelines on schema violations. |
 | **Configuration drift** | Real-time detection and recovery of local configuration files to the git-versioned state. | Return on Resilience (RoR) | Continuous telemetry logging all local file modifications. |
-| **Agent access control** | Bounded, read-only permissions for local AI tools operating via MCP configurations. | Model risk management ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | MCP server boundaries restricting agent operations to approved directories. |
+| **Agent access control** | Bounded, read-only permissions for local AI tools operating via MCP configurations. | Model risk management ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | MCP server boundaries restricting agent operations to approved directories. |
 
 ## 04. The Fallacy of Opaque Configuration Parsing
 

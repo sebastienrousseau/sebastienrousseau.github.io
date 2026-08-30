@@ -257,7 +257,7 @@ Ambulan cakuda na samar da makullin zama daga sirrin gargajiya da na bayan ƙidi
 ## Bayanai
 
 - National Institute of Standards and Technology, (2024). [FIPS 203: Matakin Hanyar Kunshe Makullai mai Tushen Module-Lattice ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "Sanarwar NIST FIPS 203").
-- Board of Governors of the Federal Reserve System, (2011). [Jagorancin Sa-ido kan Gudanar da Haɗarin Model (SR Letter 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
+- Board of Governors of the Federal Reserve System, (2011). [Jagorancin Sa-ido kan Gudanar da Haɗarin Model (SR Letter 11-7) ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
 - European Parliament and Council of the European Union, (2022). [Dokar (EU) 2022/2554 kan juriyar aiki ta dijital ga fannin kuɗi (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Dokar DORA").
 - NIST National Cybersecurity Center of Excellence, (2025). [Ƙaura zuwa Ɓoyewar Bayan Ƙididdiga (NIST SP 1800-38) ⧉](https://www.nccoe.nist.gov/projects/migration-post-quantum-cryptography "NIST SP 1800-38").
 - GitHub, (2026). [Ma'ajiyar buɗaɗɗen tushe ta kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "Ma'ajiyar kyberlib").

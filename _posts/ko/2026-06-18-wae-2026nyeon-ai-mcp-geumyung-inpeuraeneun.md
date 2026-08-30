@@ -163,7 +163,7 @@ NoyaLib 생태계는 안전하고 무손실인 구성 파서로 동작합니다.
 | **메모리 안전성 프로필** | 파서 및 직렬화 종속성 내부에 `unsafe` Rust 블록 0개. | DORA Article 30 (공급망) | cargo 빌드의 자동 컴파일러 검사 ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)). |
 | **스키마 검증** | 파싱된 구성 파일의 100%가 유효한 [JSON Schema](https://json-schema.org/) 모델 대비 검증. | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | 스키마 위반 시 빌드 파이프라인을 중단시키는 실시간 검증 게이트. |
 | **구성 표류** | 로컬 구성 파일의 git 버전 관리 상태로의 실시간 감지 및 복구. | Return on Resilience (RoR) | 모든 로컬 파일 수정을 기록하는 지속적 텔레메트리. |
-| **에이전트 접근 제어** | MCP 구성을 통해 동작하는 로컬 AI 도구를 위한 경계가 명확한 읽기 전용 권한. | 모델 리스크 관리 ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | 에이전트 작업을 승인된 디렉터리로 제한하는 MCP 서버 경계. |
+| **에이전트 접근 제어** | MCP 구성을 통해 동작하는 로컬 AI 도구를 위한 경계가 명확한 읽기 전용 권한. | 모델 리스크 관리 ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | 에이전트 작업을 승인된 디렉터리로 제한하는 MCP 서버 경계. |
 
 ## 04. 불투명한 구성 파싱의 오류
 

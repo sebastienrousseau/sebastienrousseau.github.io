@@ -163,7 +163,7 @@ Pro udržení absolutní bezpečnosti napříč vývojářským a provozním maj
 | **Profil paměťové bezpečnosti** | Nulové bloky `unsafe` Rustu uvnitř parseru a serializačních závislostí. | DORA článek 30 (dodavatelský řetězec) | Automatizované kontroly kompilátoru ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)) v cargo buildech. |
 | **Validace schématu** | 100 % parsovaných konfiguračních souborů ověřeno proti platným modelům [JSON Schema](https://json-schema.org/). | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Real-time validační brána zastavující build pipeline při porušení schématu. |
 | **Konfigurační drift** | Real-time detekce a obnova lokálních konfiguračních souborů do stavu verzovaného v gitu. | Return on Resilience (RoR) | Kontinuální telemetrie logující všechny modifikace lokálních souborů. |
-| **Řízení přístupu agentů** | Omezená, read-only oprávnění pro lokální AI nástroje operující přes konfigurace MCP. | Řízení modelového rizika ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Hranice MCP serveru omezující operace agentů na schválené adresáře. |
+| **Řízení přístupu agentů** | Omezená, read-only oprávnění pro lokální AI nástroje operující přes konfigurace MCP. | Řízení modelového rizika ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Hranice MCP serveru omezující operace agentů na schválené adresáře. |
 
 ## 04. Falešná představa neprůhledného parsování konfigurací
 

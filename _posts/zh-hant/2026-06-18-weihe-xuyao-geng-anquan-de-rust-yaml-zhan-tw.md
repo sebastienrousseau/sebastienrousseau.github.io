@@ -163,7 +163,7 @@ NoyaLib 生態系扮演安全、無損的組態解析器角色。每一份本地
 | **記憶體安全輪廓** | 解析器與序列化相依套件內零 `unsafe` Rust 區塊。 | DORA 第 30 條(供應鏈) | cargo 建置中的自動化編譯檢查([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute))。 |
 | **結構驗證** | 100% 已解析的組態檔皆已對應有效的 [JSON Schema](https://json-schema.org/) 模型完成驗證。 | [NIST CSF 2.0](https://www.nist.gov/cyberframework)(PR.DS-01) | 即時驗證關卡於發現結構違規時中止建置管線。 |
 | **組態漂移** | 即時偵測本地組態檔,並還原至 git 版本化狀態。 | 韌性回報(RoR) | 持續遙測,記錄所有本地檔案異動。 |
-| **代理存取控制** | 對透過 MCP 組態運作的本地 AI 工具,給予有界、唯讀的權限。 | 模型風險管理([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | MCP 伺服器邊界限制代理作業僅能於核准目錄內執行。 |
+| **代理存取控制** | 對透過 MCP 組態運作的本地 AI 工具,給予有界、唯讀的權限。 | 模型風險管理([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | MCP 伺服器邊界限制代理作業僅能於核准目錄內執行。 |
 
 ## 04. 不透明組態解析的謬誤
 

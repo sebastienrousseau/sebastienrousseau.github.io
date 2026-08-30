@@ -49,7 +49,7 @@ keywords: "DORA 2026, EU AI Act 2026, డేటా సార్వభౌమత�
 
 ### ఆర్టికల్ 8 — సమాచార రిజిస్టర్ (మూడవ-పక్ష ICT)
 
-రిజిస్టర్‌లో ICT సేవల వినియోగంపై ప్రతి ఒప్పంద ఏర్పాటు ఉండాలి. [ITS on the register of information ⧉](https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf "ESAs ITS on Register of Information") ప్రకారం తప్పనిసరి ఫీల్డ్‌లలో మద్దతు ఇచ్చే ఫంక్షన్, కీలకత వర్గీకరణ, డేటా ప్రాసెసింగ్ మరియు నిల్వ స్థానం, ఉప-ఔట్‌సోర్సింగ్ గొలుసు, మరియు నిష్క్రమణ-వ్యూహ అంచనా ఉంటాయి. ఆర్టికల్ 31 కింద CTPP హోదా వ్యవస్థ EU అంతటా రిజిస్టర్‌లను చదివి ఏ మూడవ పక్షాలు దైహిక పరిమితిని దాటుతున్నాయో గుర్తిస్తుంది. అసంపూర్ణ లేదా అస్థిర ఆర్టికల్ 8 రిజిస్టర్ ఇప్పుడు వ్యక్తిగత ఫలితం మరియు CTPP-పరిధి సమగ్రత ప్రమాదం రెండూ.
+రిజిస్టర్‌లో ICT సేవల వినియోగంపై ప్రతి ఒప్పంద ఏర్పాటు ఉండాలి. [ITS on the register of information ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "ESAs ITS on Register of Information") ప్రకారం తప్పనిసరి ఫీల్డ్‌లలో మద్దతు ఇచ్చే ఫంక్షన్, కీలకత వర్గీకరణ, డేటా ప్రాసెసింగ్ మరియు నిల్వ స్థానం, ఉప-ఔట్‌సోర్సింగ్ గొలుసు, మరియు నిష్క్రమణ-వ్యూహ అంచనా ఉంటాయి. ఆర్టికల్ 31 కింద CTPP హోదా వ్యవస్థ EU అంతటా రిజిస్టర్‌లను చదివి ఏ మూడవ పక్షాలు దైహిక పరిమితిని దాటుతున్నాయో గుర్తిస్తుంది. అసంపూర్ణ లేదా అస్థిర ఆర్టికల్ 8 రిజిస్టర్ ఇప్పుడు వ్యక్తిగత ఫలితం మరియు CTPP-పరిధి సమగ్రత ప్రమాదం రెండూ.
 
 ### ఆర్టికల్ 18 — ICT-సంబంధిత సంఘటన నివేదన
 
@@ -180,7 +180,7 @@ DORA-ఉత్పన్న నిబంధనలకు వ్యతిరేక�
 - European Union, (2022). [Regulation (EU) 2022/2554 — Digital Operational Resilience Act (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA").
 - European Union, (2024). [Regulation (EU) 2024/1689 — Artificial Intelligence Act ⧉](https://eur-lex.europa.eu/eli/reg/2024/1689/oj "EU AI Act").
 - European Banking Authority, (2019). [EBA/GL/2019/02 — Guidelines on outsourcing arrangements ⧉](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements "EBA Outsourcing Guidelines").
-- European Supervisory Authorities, (2024). [Final Report on the ITS on the Register of Information under DORA ⧉](https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf "ESAs ITS").
+- European Supervisory Authorities, (2024). [Final Report on the ITS on the Register of Information under DORA ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "ESAs ITS").
 - European Central Bank, (2024). [TIBER-EU framework ⧉](https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html "TIBER-EU").
 - European Data Protection Board, (2020). [Recommendations 01/2020 on supplementary measures ⧉](https://www.edpb.europa.eu/our-work-tools/our-documents/recommendations/recommendations-012020-measures-supplement-transfer_en "EDPB Recommendations 01/2020").
 - US Department of Commerce, (2023). [EU-US Data Privacy Framework ⧉](https://www.dataprivacyframework.gov/list "DPF participant list").

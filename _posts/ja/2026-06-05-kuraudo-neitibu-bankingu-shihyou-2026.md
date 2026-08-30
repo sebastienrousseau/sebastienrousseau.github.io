@@ -102,7 +102,7 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-2026 年のクラウドネイティブバンキングは DORA 監査フェーズにあります。[規則(EU)2022/2554 ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA — デジタル運用レジリエンス法")は 2025 年 1 月 17 日に発効しています。第 28-44 条に基づく重要第三者プロバイダー(CTPP)指定制度は 2025-2026 年を通じて開始されており、AWS、Microsoft(Azure)、Google(GCP)、Salesforce が指定境界の内側または近傍に位置します。欧州監督機関(EBA、EIOPA、ESMA)は 2024 年に[情報レジスター ⧉](https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf "DORA に基づく情報レジスターの ESAs ITS")に関する最終 RTS および ITS を公表しました。ECB 銀行監督チームは[2026-28 年監督上の優先事項 ⧉](https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html "監督上の優先事項 2026-28")の中で、クラウド障害への備えと脅威主導型ペネトレーションテストに関する明示的なプログラムを持っています。機関の問いは、クラウド戦略を DORA に整合させるか否か(これは決着済み)ではなく、機関のプラットフォームエンジニアリングのプリミティブが、試験前週に組み立てる PDF ではなく、デプロイパイプラインの速度でエビデンスを産出するかどうかです。
+2026 年のクラウドネイティブバンキングは DORA 監査フェーズにあります。[規則(EU)2022/2554 ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA — デジタル運用レジリエンス法")は 2025 年 1 月 17 日に発効しています。第 28-44 条に基づく重要第三者プロバイダー(CTPP)指定制度は 2025-2026 年を通じて開始されており、AWS、Microsoft(Azure)、Google(GCP)、Salesforce が指定境界の内側または近傍に位置します。欧州監督機関(EBA、EIOPA、ESMA)は 2024 年に[情報レジスター ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "DORA に基づく情報レジスターの ESAs ITS")に関する最終 RTS および ITS を公表しました。ECB 銀行監督チームは[2026-28 年監督上の優先事項 ⧉](https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html "監督上の優先事項 2026-28")の中で、クラウド障害への備えと脅威主導型ペネトレーションテストに関する明示的なプログラムを持っています。機関の問いは、クラウド戦略を DORA に整合させるか否か(これは決着済み)ではなく、機関のプラットフォームエンジニアリングのプリミティブが、試験前週に組み立てる PDF ではなく、デプロイパイプラインの速度でエビデンスを産出するかどうかです。
 
 ---
 
@@ -273,7 +273,7 @@ ESAs はウェブサイトで指定決定を公表しています。2026 年に�
 - European Union, (2022). [規則(EU)2022/2554 — デジタル運用レジリエンス法(DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA").
 - European Banking Authority, (2019). [EBA/GL/2019/02 — アウトソーシング契約に関するガイドライン ⧉](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements "EBA アウトソーシングガイドライン").
 - European Banking Authority, (2026). [デジタル運用レジリエンス法 ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "EBA — DORA 直接監督・監視").
-- European Supervisory Authorities, (2024). [DORA に基づく情報レジスター ITS 最終報告書 ⧉](https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf "ESAs ITS").
+- European Supervisory Authorities, (2024). [DORA に基づく情報レジスター ITS 最終報告書 ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "ESAs ITS").
 - ECB Banking Supervision, (2025). [監督上の優先事項 2026-28 ⧉](https://www.bankingsupervision.europa.eu/framework/priorities/html/ssm.supervisory_priorities202511.en.html "ECB 優先事項 2026-28").
 - European Central Bank, (2024). [TIBER-EU フレームワーク ⧉](https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html "TIBER-EU").
 - ENISA, (2024). [クラウドサービス向け EU サイバーセキュリティスキーム(EUCS) ⧉](https://www.enisa.europa.eu/publications/eucs-cloud-service-scheme "EUCS").

@@ -207,7 +207,7 @@ CloudCDN 用一个完全可审计的开源信任模型取代这种不对称，�
 
 CloudCDN 按全球金融行业的合规标准设计，把技术性边缘操作直接映射到监管机构实际检查的框架：
 
-- **模型风险管理（[美联储 SR 11-7 ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "模型风险管理监管指引") / 英国 PRA SS1/23）。** 执行运营任务的自主模型纳入模型风险治理。CloudCDN 的 MCP 网关把智能体工具当作量化模型对待：严格的策略边界、实时日志，以及对高影响操作强制的人工介入复核。
+- **模型风险管理（[美联储 SR 11-7 ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "模型风险管理监管指引") / 英国 PRA SS1/23）。** 执行运营任务的自主模型纳入模型风险治理。CloudCDN 的 MCP 网关把智能体工具当作量化模型对待：严格的策略边界、实时日志，以及对高影响操作强制的人工介入复核。
 - **BCBS 239（风险数据汇总）。** 通过在边缘捕获、打标并结构化交易数据，运营指标得以实时生成——符合 BCBS 239 对数据完整性、及时性与监管可追溯性的要求。
 - **DORA 第 5 条（董事会问责）。** 董事会对运营韧性承担最终个人责任。CloudCDN 把边缘遥测转化为量化、可验证的证据，非技术背景的董事也能将其带入个人责任审计。
 - **Basel III 操作风险资本。** 银行须为操作风险持有监管资本。自动化灾备切换与 SLSA Level 3 溯源降低机构的操作风险水平——在资产负债表上保全资本，而不只是应付一次审计。
@@ -259,7 +259,7 @@ G-SIB 在多个司法辖区处理巨量交易。优先事项是用单一、统�
 
 - 欧洲议会与欧盟理事会, (2022). [关于金融部门数字运营韧性的 (EU) 2022/2554 号条例（DORA） ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "关于金融部门数字运营韧性的 (EU) 2022/2554 号条例（DORA）"). 布鲁塞尔: 欧盟官方公报.
 - 巴塞尔银行监管委员会 (BCBS), (2013). [有效风险数据汇总与风险报告原则（BCBS 239） ⧉](https://www.bis.org/publ/bcbs239.htm "有效风险数据汇总与风险报告原则（BCBS 239）"). 巴塞尔: 国际清算银行.
-- 美联储理事会, (2011). [模型风险管理监管指引（SR Letter 11-7） ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "模型风险管理监管指引（SR Letter 11-7）"). 华盛顿特区: 美联储.
+- 美联储理事会, (2011). [模型风险管理监管指引（SR Letter 11-7） ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "模型风险管理监管指引（SR Letter 11-7）"). 华盛顿特区: 美联储.
 - Cloudflare, (2026). [Durable Objects 文档：有状态边缘协调 ⧉](https://developers.cloudflare.com/durable-objects/ "Durable Objects 文档"). 旧金山: Cloudflare.
 - Cloudflare, (2026). [使用 MCP、认证与 Durable Objects 构建 AI 智能体 ⧉](https://blog.cloudflare.com/building-ai-agents-with-mcp-authn-authz-and-durable-objects/ "使用 MCP、认证与 Durable Objects 构建 AI 智能体").
 - GitHub, (2026). [cloudcdn.pro 仓库 ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "cloudcdn.pro 仓库").

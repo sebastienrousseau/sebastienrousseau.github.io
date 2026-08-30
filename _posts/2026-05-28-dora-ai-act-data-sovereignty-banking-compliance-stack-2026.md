@@ -173,7 +173,7 @@ The framework must be documented, approved by the management body, reviewed at l
 
 ### Article 8 — Register of Information (Third-Party ICT)
 
-The register must contain every contractual arrangement on the use of ICT services. Mandatory fields per the [ITS on the register of information ⧉](https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf "ESAs ITS on Register of Information") include the function supported, criticality classification, location of data processing and storage, sub-outsourcing chain, and exit-strategy assessment. The CTPP designation regime under Article 31 reads the registers across the EU to identify which third parties cross the systemic threshold. An incomplete or inconsistent Article 8 register is now both an individual finding and a CTPP-perimeter integrity risk.
+The register must contain every contractual arrangement on the use of ICT services. Mandatory fields per the [ITS on the register of information ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "ESAs ITS on Register of Information") include the function supported, criticality classification, location of data processing and storage, sub-outsourcing chain, and exit-strategy assessment. The CTPP designation regime under Article 31 reads the registers across the EU to identify which third parties cross the systemic threshold. An incomplete or inconsistent Article 8 register is now both an individual finding and a CTPP-perimeter integrity risk.
 
 ### Article 18 — ICT-Related Incident Reporting
 
@@ -304,7 +304,7 @@ Yes — under Articles 28-44. The CTPP designation regime gives the European Sup
 - European Union, (2022). [Regulation (EU) 2022/2554 — Digital Operational Resilience Act (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA").
 - European Union, (2024). [Regulation (EU) 2024/1689 — Artificial Intelligence Act ⧉](https://eur-lex.europa.eu/eli/reg/2024/1689/oj "EU AI Act").
 - European Banking Authority, (2019). [EBA/GL/2019/02 — Guidelines on outsourcing arrangements ⧉](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements "EBA Outsourcing Guidelines").
-- European Supervisory Authorities, (2024). [Final Report on the ITS on the Register of Information under DORA ⧉](https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf "ESAs ITS").
+- European Supervisory Authorities, (2024). [Final Report on the ITS on the Register of Information under DORA ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "ESAs ITS").
 - European Central Bank, (2024). [TIBER-EU framework ⧉](https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html "TIBER-EU").
 - European Data Protection Board, (2020). [Recommendations 01/2020 on supplementary measures ⧉](https://www.edpb.europa.eu/our-work-tools/our-documents/recommendations/recommendations-012020-measures-supplement-transfer_en "EDPB Recommendations 01/2020").
 - US Department of Commerce, (2023). [EU-US Data Privacy Framework ⧉](https://www.dataprivacyframework.gov/list "DPF participant list").

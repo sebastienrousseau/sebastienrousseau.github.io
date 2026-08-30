@@ -96,7 +96,7 @@ excerpt: "2026년 거액결제는 더 이상 단순한 은행 인프라가 아�
 > - **ISO 20022는 이제 거액결제 현대화의 공통 언어이다.** BIS CPMI는 동 표준이 분절된 메시징, 데이터 절단, 취약한 STP, 그리고 컴플라이언스 마찰 문제를 다룬다고 평가한다([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "금융 메시징의 미래: ISO 20022 이행 여정")).
 > - **G20 로드맵은 여전히 목표에 뒤처져 있다.** FSB(금융안정위원회)의 2026년 3월 업데이트는 진전은 실재하지만 2027년 목표 달성은 아직 궤도에 오르지 않았다고 밝힌다([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "국경 간 결제 개혁")).
 > - **RTGS 운영시간과 접근권은 경제적 수단이다.** FSB는 절반 이상의 관할권이 RTGS 운영시간을 확대했거나 확대를 계획하고 있으며, 비은행 사업자에 대한 직접 접근권이 결제시스템 전반에서 증가하고 있다고 지적한다([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "국경 간 결제 개혁")).
-> - **잉글랜드은행(Bank of England)의 재구축된 RTGS 서비스는 회복력과 상호운용성을 명시적으로 제시한다.** 재구축된 서비스는 회복력, 접근성, 상호운용성, 기능성을 통해 통화 및 금융 안정을 뒷받침하도록 설계되었다([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "재구축된 RTGS 서비스 — 주요 이점")).
+> - **잉글랜드은행(Bank of England)의 재구축된 RTGS 서비스는 회복력과 상호운용성을 명시적으로 제시한다.** 재구축된 서비스는 회복력, 접근성, 상호운용성, 기능성을 통해 통화 및 금융 안정을 뒷받침하도록 설계되었다([Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "재구축된 RTGS 서비스 — 주요 이점")).
 > - **분절화는 거시 리스크이다.** Atlantic Council은 결제시스템 분절화가 비용을 증가시키고 결제를 지연시키며 투명성을 저해하고 글로벌 금융 통합을 약화시킬 수 있다고 경고한다([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "글로벌 결제시스템의 분절화")).
 > - **DLT(분산원장기술) 시범사업은 이제 인프라 실험이며, 크립토 쇼가 아니다.** Project Agorá와 같은 BIS 연계 작업과 유럽의 거액결제 시범사업은 토큰화된 상업은행 화폐와 중앙은행 화폐가 고액 국경 간 결제를 개선할 수 있는지를 시험하고 있다([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "글로벌 결제시스템의 분절화")).
 > - **경제는 운영의 문제이다.** 국경 간 결제는 풍부한 데이터가 손실되고 컴플라이언스 점검이 수기(手記)로 전환되며 시간대에 의해 유동성이 묶이고 조사에 사람의 수작업이 필요해질 때 경제적으로 실패한다.
@@ -121,7 +121,7 @@ BIS CPMI의 2026년 4월 보고서는 ISO 20022를 결제·증권·자금관리 
 
 결제 창구는 글로벌 거액결제가 시간대를 넘나들기 때문에 중요하다. Fabio Panetta의 2026년 5월 BIS 연설은 국가 결제 인프라를 개혁의 좌표로 제시하면서 결제 창구 확대와 완전한 ISO 20022 도입을 포함한다([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "안정화를 위한 상호연결: 분절화되는 세계 속의 국경 간 결제")).
 
-잉글랜드은행의 재구축된 RTGS 서비스 역시 같은 방향을 가리킨다. 회복력, 접근 확대, 상호운용성, 그리고 다른 원장과 상호운용할 수 있고 결제 리스크와 유동성 비용을 줄일 수 있는 동기화 결제 인터페이스를 강조한다([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "재구축된 RTGS 서비스 — 주요 이점")).
+잉글랜드은행의 재구축된 RTGS 서비스 역시 같은 방향을 가리킨다. 회복력, 접근 확대, 상호운용성, 그리고 다른 원장과 상호운용할 수 있고 결제 리스크와 유동성 비용을 줄일 수 있는 동기화 결제 인터페이스를 강조한다([Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "재구축된 RTGS 서비스 — 주요 이점")).
 
 ### 3. 비은행 접근, 경쟁 구조를 바꾸다
 
@@ -202,7 +202,7 @@ FSB는 진전이 있었으나 2027년 목표는 아직 궤도에 오르지 않�
 
 **RTGS 재구축의 역할은 무엇인가?**
 
-RTGS 재구축은 회복력, 접근성, 상호운용성, 그리고 결제 기능성을 개선한다. 잉글랜드은행은 또한 동기화 결제 인터페이스와 ISO 20022를 결제 리스크와 유동성 비용을 줄이는 메커니즘으로 강조한다([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "재구축된 RTGS 서비스 — 주요 이점")).
+RTGS 재구축은 회복력, 접근성, 상호운용성, 그리고 결제 기능성을 개선한다. 잉글랜드은행은 또한 동기화 결제 인터페이스와 ISO 20022를 결제 리스크와 유동성 비용을 줄이는 메커니즘으로 강조한다([Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "재구축된 RTGS 서비스 — 주요 이점")).
 
 **스테이블코인이 거액결제를 대체하는가?**
 
@@ -213,5 +213,5 @@ RTGS 재구축은 회복력, 접근성, 상호운용성, 그리고 결제 기능
 - BIS CPMI, (2026). [금융 메시징의 미래: ISO 20022 이행 여정 ⧉](https://www.bis.org/cpmi/publ/brief11.htm "BIS CPMI Brief No 11").
 - FSB, (2026). [국경 간 결제 개혁 — FSB 결제 정상회의 기조연설 ⧉](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "FSB").
 - BIS, (2026). [안정화를 위한 상호연결: 분절화되는 세계 속의 국경 간 결제 ⧉](https://www.bis.org/cpmi/speeches/sp260505.pdf "Fabio Panetta 연설").
-- Bank of England, (2026). [재구축된 RTGS 서비스 — 주요 이점 ⧉](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Bank of England").
+- Bank of England, (2026). [재구축된 RTGS 서비스 — 주요 이점 ⧉](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Bank of England").
 - Atlantic Council, (2026). [글로벌 결제시스템의 분절화 — G20이 할 수 있는 일 ⧉](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "Atlantic Council").

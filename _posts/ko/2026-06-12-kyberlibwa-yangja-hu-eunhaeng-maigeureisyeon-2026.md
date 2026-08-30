@@ -257,7 +257,7 @@ G-SIB는 레거시가 두터운 거래 시스템 자산을 운영하므로, 결�
 ## 참고 자료
 
 - National Institute of Standards and Technology, (2024). [FIPS 203: 모듈 격자 기반 키 캡슐화 메커니즘 표준 ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "NIST FIPS 203 발표").
-- Board of Governors of the Federal Reserve System, (2011). [모형 리스크 관리에 관한 감독 지침(SR Letter 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "연방준비제도 SR 11-7").
+- Board of Governors of the Federal Reserve System, (2011). [모형 리스크 관리에 관한 감독 지침(SR Letter 11-7) ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "연방준비제도 SR 11-7").
 - European Parliament and Council of the European Union, (2022). [금융 부문 디지털 운영 복원력에 관한 규정 (EU) 2022/2554 (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA 규정").
 - NIST National Cybersecurity Center of Excellence, (2025). [양자 후 암호로의 마이그레이션(NIST SP 1800-38) ⧉](https://www.nccoe.nist.gov/projects/migration-post-quantum-cryptography "NIST SP 1800-38").
 - GitHub, (2026). [kyberlib 오픈 소스 저장소 ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib 저장소").

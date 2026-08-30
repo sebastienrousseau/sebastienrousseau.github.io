@@ -225,7 +225,7 @@ Cinco meses dão tempo para entregar um perfil de mensagem mais rígido do que C
 
 ## Conclusão
 
-O prazo de novembro de 2026 é a parte fácil. A parte difícil é o que o prazo força. Bancos que chegarem a tempo ainda tratando pain.001 como problema de tradução vão passar a próxima década reconstruindo o modelo de dados da tesouraria do fio para dentro. Bancos que chegarem com schema canônico ISO-first, endereços estruturados por padrão e plano de controle de liquidez programável que consome pacs.008 diretamente vão rodar tesouraria agentic sob a accountability do conselho do DORA Artigo 5, sob a disciplina de risco operacional do [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") e sob a governança de modelo do [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management").
+O prazo de novembro de 2026 é a parte fácil. A parte difícil é o que o prazo força. Bancos que chegarem a tempo ainda tratando pain.001 como problema de tradução vão passar a próxima década reconstruindo o modelo de dados da tesouraria do fio para dentro. Bancos que chegarem com schema canônico ISO-first, endereços estruturados por padrão e plano de controle de liquidez programável que consome pacs.008 diretamente vão rodar tesouraria agentic sob a accountability do conselho do DORA Artigo 5, sob a disciplina de risco operacional do [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") e sob a governança de modelo do [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management").
 
 O enquadramento de sistema nervoso autônomo não é decorativo. A tesouraria não consegue raciocinar sobre liquidez que não vê. Os agentes não conseguem agir sobre dados que não conseguem parsear. ISO 20022 é a fiação da tesouraria CIB em 2026 — a mensagem estruturada é o potencial de ação, o schema é a trilha de auditoria que o regulador vai exigir na manhã seguinte ao próximo incidente.
 
@@ -241,7 +241,7 @@ Parlamento Europeu e Conselho (2022). *Regulamento (UE) 2022/2554 sobre resiliê
 
 Grupo de Ação Financeira contra a Lavagem de Dinheiro (2023). *Padrões internacionais de combate à lavagem de dinheiro e ao financiamento do terrorismo — Recomendação 16 sobre transferências eletrônicas*. Disponível em: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "Recomendações do GAFI")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Disponível em: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Disponível em: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
 
 Organização Internacional de Normalização (2022). *ISO 20022 Serviços financeiros — Esquema universal de mensagens para o setor financeiro*. Disponível em: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Esquema universal de mensagens para o setor financeiro")
 

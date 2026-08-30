@@ -230,7 +230,7 @@ DORA第5条の下、銀行の取締役会は技術的レジリエンスについ
 ## 09. 参考文献
 
 * バーゼル銀行監督委員会（BCBS）, 2013. *Principles for effective risk data aggregation and reporting (BCBS 239)*. バーゼル：国際決済銀行. 入手先：[https://www.bis.org/publ/bcbs239.pdf](https://www.bis.org/publ/bcbs239.pdf).  
-* Committee on Payments and Market Infrastructures および Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. バーゼル：国際決済銀行. 入手先：[https://www.bis.org/cpmi/publ/d101a.pdf](https://www.bis.org/cpmi/publ/d101a.pdf).  
+* Committee on Payments and Market Infrastructures および Technical Committee of the International Organization of Securities Commissions (CPMI-IOSCO), 2012. *Principles for financial market infrastructures*. バーゼル：国際決済銀行. 入手先：[https://www.bis.org/cpmi/publ/d101.htm](https://www.bis.org/cpmi/publ/d101.htm).  
 * 欧州銀行監督機構（EBA）, 2019. *EBA/GL/2019/02 — Guidelines on outsourcing arrangements*. パリ：EBA. 入手先：[https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements).  
 * 欧州議会および欧州連合理事会, 2022. *金融セクターのデジタル・オペレーショナル・レジリエンスに関する規則（EU）2022/2554（DORA）*. ブリュッセル：欧州連合官報. 入手先：[https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554).  
 * ISO/IEC JTC 1/SC 42, 2023. *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. ジュネーブ：国際標準化機構. 入手先：[https://www.iso.org/standard/81230.html](https://www.iso.org/standard/81230.html).  

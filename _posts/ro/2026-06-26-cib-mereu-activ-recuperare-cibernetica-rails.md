@@ -163,7 +163,7 @@ Consiliile pun acum cinci întrebări și așteaptă răspunsuri numerice.
 4. **Care este acoperirea semnării PQC pe artefactele de recuperare?** Procentul de instantanee de seif, manifeste și ancore de încredere inter-domeniu semnate sub FIPS 203 / FIPS 204.
 5. **Care este Cost of Contingency Capital (CoCC)?** Costul zilnic de oportunitate al lichidității intraday inactive blocate în conturi de compensare secundare, solduri calde la corespondenți și poziții tokenizate pre-pregătite, măsurat față de rata overnight. Consiliul trebuie să vadă prețul exact al asigurării de reziliență a băncii, iar comitetul de operațiuni trebuie să apere compromisul între capitalul blocat și toleranța la întrerupere — reîmprospătat cel puțin trimestrial.
 
-Acestea sunt metricile care se mapează curat la dovezile DORA Articolul 6, la declarațiile de responsabilitate ale managerilor seniori SM&CR și la guvernanța riscului de model [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") asupra logicii de rutare care decide ce rail câștigă. Consiliul nu are nevoie de o narațiune; are nevoie de un grafic trimestrial cu un prag dur.
+Acestea sunt metricile care se mapează curat la dovezile DORA Articolul 6, la declarațiile de responsabilitate ale managerilor seniori SM&CR și la guvernanța riscului de model [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") asupra logicii de rutare care decide ce rail câștigă. Consiliul nu are nevoie de o narațiune; are nevoie de un grafic trimestrial cu un prag dur.
 
 ## Concluzie
 

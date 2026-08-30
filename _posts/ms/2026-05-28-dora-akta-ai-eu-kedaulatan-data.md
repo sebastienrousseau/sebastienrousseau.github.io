@@ -49,7 +49,7 @@ Rangka kerja mesti didokumenkan, diluluskan oleh badan pengurusan, disemak sekur
 
 ### Perkara 8 — Daftar Maklumat (ICT Pihak Ketiga)
 
-Daftar mesti mengandungi setiap perkiraan kontraktual mengenai penggunaan perkhidmatan ICT. Medan wajib menurut [ITS mengenai daftar maklumat ⧉](https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf "ESAs ITS on Register of Information") termasuk fungsi yang disokong, pengelasan kekritikalan, lokasi pemprosesan dan penyimpanan data, rantaian sub-penyumberluaran, dan penilaian strategi keluar. Rejim penetapan CTPP di bawah Perkara 31 membaca daftar-daftar di seluruh EU untuk mengenal pasti pihak ketiga yang melepasi ambang sistemik. Daftar Perkara 8 yang tidak lengkap atau tidak konsisten kini merupakan kedua-dua penemuan individu dan risiko integriti perimeter CTPP.
+Daftar mesti mengandungi setiap perkiraan kontraktual mengenai penggunaan perkhidmatan ICT. Medan wajib menurut [ITS mengenai daftar maklumat ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "ESAs ITS on Register of Information") termasuk fungsi yang disokong, pengelasan kekritikalan, lokasi pemprosesan dan penyimpanan data, rantaian sub-penyumberluaran, dan penilaian strategi keluar. Rejim penetapan CTPP di bawah Perkara 31 membaca daftar-daftar di seluruh EU untuk mengenal pasti pihak ketiga yang melepasi ambang sistemik. Daftar Perkara 8 yang tidak lengkap atau tidak konsisten kini merupakan kedua-dua penemuan individu dan risiko integriti perimeter CTPP.
 
 ### Perkara 18 — Pelaporan Insiden Berkaitan ICT
 
@@ -180,7 +180,7 @@ Ya, di bawah Perkara 28-44. Rejim penetapan CTPP memberi Pihak Berkuasa Penyelia
 - European Union, (2022). [Regulation (EU) 2022/2554 — Digital Operational Resilience Act (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA").
 - European Union, (2024). [Regulation (EU) 2024/1689 — Artificial Intelligence Act ⧉](https://eur-lex.europa.eu/eli/reg/2024/1689/oj "EU AI Act").
 - European Banking Authority, (2019). [EBA/GL/2019/02 — Guidelines on outsourcing arrangements ⧉](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements "EBA Outsourcing Guidelines").
-- European Supervisory Authorities, (2024). [Final Report on the ITS on the Register of Information under DORA ⧉](https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf "ESAs ITS").
+- European Supervisory Authorities, (2024). [Final Report on the ITS on the Register of Information under DORA ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "ESAs ITS").
 - European Central Bank, (2024). [TIBER-EU framework ⧉](https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html "TIBER-EU").
 - European Data Protection Board, (2020). [Recommendations 01/2020 on supplementary measures ⧉](https://www.edpb.europa.eu/our-work-tools/our-documents/recommendations/recommendations-012020-measures-supplement-transfer_en "EDPB Recommendations 01/2020").
 - US Department of Commerce, (2023). [EU-US Data Privacy Framework ⧉](https://www.dataprivacyframework.gov/list "DPF participant list").

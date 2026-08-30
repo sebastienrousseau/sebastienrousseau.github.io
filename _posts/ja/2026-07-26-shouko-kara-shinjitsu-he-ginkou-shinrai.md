@@ -250,9 +250,9 @@ DORA Article 5のもとで、銀行の取締役会は技術のレジリエンス
 ## 参考文献
 
 * バーゼル銀行監督委員会(BCBS)、2013年。 *実効的なリスクデータ集約とリスク報告のための諸原則(BCBS 239)*。バーゼル:国際決済銀行。入手先:[バーゼル銀行監督委員会(BCBS)、2013年。](https://www.bis.org/publ/bcbs239.pdf "バーゼル銀行監督委員会(BCBS)、2013年。")。  
-* 決済・市場インフラ委員会および証券監督者国際機構専門委員会(CPMI-IOSCO)、2012年。 *金融市場インフラのための諸原則*。バーゼル:国際決済銀行。入手先:[決済・市場インフラ委員会および証券監督者国際機構専門委員会(CPMI-IOSCO)、2012年。](https://www.bis.org/cpmi/publ/d101a.pdf "決済・市場インフラ委員会および証券監督者国際機構専門委員会(CPMI-IOSCO)、2012年。")。  
+* 決済・市場インフラ委員会および証券監督者国際機構専門委員会(CPMI-IOSCO)、2012年。 *金融市場インフラのための諸原則*。バーゼル:国際決済銀行。入手先:[決済・市場インフラ委員会および証券監督者国際機構専門委員会(CPMI-IOSCO)、2012年。](https://www.bis.org/cpmi/publ/d101.htm "決済・市場インフラ委員会および証券監督者国際機構専門委員会(CPMI-IOSCO)、2012年。")。  
 * 欧州銀行監督機構(EBA)、2019年。 *EBA/GL/2019/02、アウトソーシング契約に関するガイドライン*。パリ:EBA。入手先:[欧州銀行監督機構(EBA)、2019年。](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements "欧州銀行監督機構(EBA)、2019年。")。  
 * 欧州議会および欧州連合理事会、2022年。 *金融セクターのデジタル・オペレーショナル・レジリエンスに関する規則(EU)2022/2554(DORA)*。ブリュッセル:欧州連合官報。入手先:[欧州議会および欧州連合理事会、2022年。](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "欧州議会および欧州連合理事会、2022年。")。  
 * ISO/IEC JTC 1/SC 42、2023年。 *ISO/IEC 42001:2023、情報技術、人工知能、マネジメントシステム*。ジュネーブ:国際標準化機構。入手先:[ISO/IEC JTC 1/SC 42、2023年。](https://www.iso.org/standard/81230.html "ISO/IEC JTC 1/SC 42、2023年。")。  
 * ISO/IEC専門委員会307、2020年。 *ISO/IEC 22739:2020、ブロックチェーンおよび分散型台帳技術、語彙*。ジュネーブ:国際標準化機構。入手先:[ISO/IEC専門委員会307、2020年。](https://www.iso.org/standard/73771.html "ISO/IEC専門委員会307、2020年。")。  
-* 米国国立標準技術研究所(NIST)、2026年。 *最初に確定した3つのポスト量子暗号標準(FIPS 203、204、205)*。ゲイサーズバーグ:米国商務省。入手先:[米国国立標準技術研究所(NIST)、2026年。](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalised-post-quantum-encryption-standards "米国国立標準技術研究所(NIST)、2026年。")。
+* 米国国立標準技術研究所(NIST)、2026年。 *最初に確定した3つのポスト量子暗号標準(FIPS 203、204、205)*。ゲイサーズバーグ:米国商務省。入手先:[米国国立標準技術研究所(NIST)、2026年。](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "米国国立標準技術研究所(NIST)、2026年。")。

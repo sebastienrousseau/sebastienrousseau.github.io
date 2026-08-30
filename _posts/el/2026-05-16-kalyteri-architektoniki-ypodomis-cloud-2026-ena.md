@@ -308,12 +308,12 @@ keywords: "αρχιτεκτονική cloud 2026, AI-native υποδομή, mult
 - Sebastien Rousseau, (2026). [Το CloudCDN στο GitHub ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "sebastienrousseau/cloudcdn.pro"). GitHub.
 - Constellation Energy, (2025). [Συμφωνία επανεκκίνησης του Three Mile Island με τη Microsoft για ισχύ κέντρων δεδομένων AI ⧉](https://www.constellationenergy.com/newsroom.html "Constellation Energy newsroom"). Constellation Energy.
 - Amazon Web Services, (2025). [Επένδυση της AWS στην X-Energy και εξαγορά του παρακείμενου σε πυρηνικό σταθμό κέντρου δεδομένων Talen / Cumulus ⧉](https://aws.amazon.com/blogs/aws/ "AWS News Blog"). AWS.
-- Kairos Power, (2025). [Συμφωνία αγοράς ενέργειας SMR μεταξύ Google και Kairos Power ⧉](https://kairospower.com/news/ "Kairos Power News"). Kairos Power.
+- Kairos Power, (2025). Συμφωνία αγοράς ενέργειας SMR μεταξύ Google και Kairos Power. Kairos Power.
 - Bank for International Settlements, (2025). [Project Agora: χονδρικό CBDC και tokenised καταθέσεις εμπορικών τραπεζών ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agora - BIS Innovation Hub"). BIS Innovation Hub.
 - European Central Bank, (2025). [Έργο ψηφιακού ευρώ, ενημέρωση φάσης προετοιμασίας ⧉](https://www.ecb.europa.eu/paym/digital_euro/html/index.en.html "Digital euro - ECB"). ECB.
-- Amazon Web Services, (2025). [AWS European Sovereign Cloud, επισκόπηση προγράμματος ⧉](https://aws.amazon.com/government-education/european-sovereign-cloud/ "AWS European Sovereign Cloud"). AWS.
+- Amazon Web Services, (2025). [AWS European Sovereign Cloud, επισκόπηση προγράμματος ⧉](https://aws.amazon.com/compliance/europe-digital-sovereignty/ "AWS European digital sovereignty"). AWS.
 - Meta AI, (2026). [Ανακοίνωση κυκλοφορίας του Llama 4, παραλλαγές Maverick, Scout και Behemoth ⧉](https://ai.meta.com/blog/llama-4-multimodal-intelligence/ "Llama 4 release"). Meta.
-- Toshiba / BT, (2025). [Ανάπτυξη εμπορικού δικτύου QKD στη μητροπολιτική περιοχή του Λονδίνου ⧉](https://www.toshiba.eu/quantum-technology/ "Toshiba Quantum Technology"). Toshiba Europe.
+- Toshiba / BT, (2025). [Ανάπτυξη εμπορικού δικτύου QKD στη μητροπολιτική περιοχή του Λονδίνου ⧉](https://www.global.toshiba/ww/products-solutions/security-ict/qkd.html "Toshiba quantum key distribution (QKD)"). Toshiba Europe.
 - NVIDIA, (2025). [Spectrum-X Photonics και Quantum-X Photonics, co-packaged οπτική δικτύωση για εργοστάσια AI ⧉](https://nvidianews.nvidia.com/news/spectrum-x-quantum-x-photonics "NVIDIA Photonics announcement at GTC 2025"). NVIDIA.
 - European Central Bank Banking Supervision, (2025). [Εξωτερική ανάθεση cloud και κίνδυνος συγκέντρωσης, εποπτικές προσδοκίες ⧉](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.outsourcingcloud.en.html "ECB Banking Supervision on cloud outsourcing"). ECB.
 - Zou, W. et al. (2024). [PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models ⧉](https://arxiv.org/abs/2402.07867 "PoisonedRAG"). arXiv.

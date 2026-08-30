@@ -259,7 +259,7 @@ pacs.008 メッセージは少なくとも次を含みます。
 - ISO 20022、(2024)。[pacs.008.001.10 — FIToFI Customer Credit Transfer message definition ⧉](https://www.iso20022.org/catalogue-messages/iso-20022-messages-archive "ISO 20022 message catalogue")。
 - NACHA、(2026)。[ACH Operating Rules and Guidelines ⧉](https://www.nacha.org/rules "NACHA Operating Rules")。
 - BIS Committee on Payments and Market Infrastructures、(2025)。[Fast payments and the future of the financial system ⧉](https://www.bis.org/cpmi/publ/d228.htm "CPMI fast payments report")。
-- Open Banking Limited、(2026)。[Variable Recurring Payments specification ⧉](https://www.openbanking.org.uk/vrp/ "Open Banking VRP")。
+- Open Banking Limited、(2026)。[Variable Recurring Payments ⧉](https://www.openbanking.org.uk/glossary/variable-recurring-payment/ "Open Banking VRP")。
 - Circle Internet Financial、(2026)。[USDC Treasury & Reserves ⧉](https://www.circle.com/transparency "Circle transparency")。
 
 <!-- enrich-start -->

@@ -31,7 +31,7 @@ keywords: "ISO 20022 2026, संरचित पत्ता, CBPR+, पेम�
 
 ## नोव्हेंबर 2025 मध्ये काय बंद झाले आणि काय झाले नाही
 
-22 नोव्हेंबर 2025 रोजीच्या सीमापार SWIFT कटओव्हरने मूल्य-वाहक सीमापार वापरासाठी MT 103, MT 202, MT 202COV, MT 205 आणि MT 205COV निवृत्त केले. SWIFT FINplus — ISO 20022 MX वाहून नेणारी InterAct-आधारित सेवा — त्या प्रवाहांसाठी एकमेव मार्ग बनली. त्याच खिडकीत CBPR+ फेज 1 अनिवार्य झाला. ECB मधील ESMIG ऑपरेटरने T2 आणि T2S साठी संबंधित स्थलांतराची पुष्टी केली आहे; [Bank of England च्या CHAPS सेवेने ⧉](https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS — Bank of England") जून 2023 मध्ये संपूर्ण MX वर स्थिरता आणली; Federal Reserve ने मार्च 2025 मध्ये Fedwire Funds Service स्थलांतर पूर्ण केले.
+22 नोव्हेंबर 2025 रोजीच्या सीमापार SWIFT कटओव्हरने मूल्य-वाहक सीमापार वापरासाठी MT 103, MT 202, MT 202COV, MT 205 आणि MT 205COV निवृत्त केले. SWIFT FINplus — ISO 20022 MX वाहून नेणारी InterAct-आधारित सेवा — त्या प्रवाहांसाठी एकमेव मार्ग बनली. त्याच खिडकीत CBPR+ फेज 1 अनिवार्य झाला. ECB मधील ESMIG ऑपरेटरने T2 आणि T2S साठी संबंधित स्थलांतराची पुष्टी केली आहे; [Bank of England च्या CHAPS सेवेने ⧉](https://web.archive.org/web/20260610035348/https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS — Bank of England") जून 2023 मध्ये संपूर्ण MX वर स्थिरता आणली; Federal Reserve ने मार्च 2025 मध्ये Fedwire Funds Service स्थलांतर पूर्ण केले.
 
 काय बंद झाले नाही:
 
@@ -167,7 +167,7 @@ CBPR+ फेज 2 `<PstlAdr>` चे संरचित स्वरूप अ�
 
 - SWIFT, (2025). [2025 ISO 20022 प्रगती ⧉](https://www.swift.com/news-events/news/2025-iso-20022-progress "SWIFT 2025 progress").
 - SWIFT, (2025). [MyStandards वरील CBPR+ वापर मार्गदर्शक तत्त्वे ⧉](https://www2.swift.com/mystandards/CBPR+/ "MyStandards CBPR+").
-- Bank of England, (2023). [CHAPS — Bank of England ⧉](https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS").
+- Bank of England, (2023). [CHAPS — Bank of England ⧉](https://web.archive.org/web/20260610035348/https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS").
 - European Central Bank, (2023). [TARGET सेवा एकत्रीकरण ⧉](https://www.ecb.europa.eu/paym/target/consolidation/html/index.en.html "T2 / T2S consolidation").
 - Federal Reserve, (2025). [Fedwire Funds Service ISO 20022 अंमलबजावणी ⧉](https://www.frbservices.org/resources/financial-services/wires/iso-20022-implementation-center "Fedwire ISO 20022").
 - ISO, (2024). [ISO 20022 संदेश सूची ⧉](https://www.iso20022.org/iso-20022-message-definitions "ISO 20022 message definitions").

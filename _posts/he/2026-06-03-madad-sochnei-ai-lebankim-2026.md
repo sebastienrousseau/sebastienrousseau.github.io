@@ -121,7 +121,7 @@ site_software: "Static Site Generator, Rust"
 
 שני דברים השתנו במקביל לאימוץ.
 
-ראשית, הרגולטורים הפסיקו להתייחס ל-LLMs כחידוש. הפדרל ריזרב הבהיר ש-[SR 11-7 ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: הנחיות לניהול סיכוני מודל") חל על קבלת החלטות מבוססת-LLM ללא קשר לסיווג הפנימי של ה-LLM כמודל. ה-[SS1/23 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "הצהרה פיקוחית SS1/23") של ה-PRA היה תמיד רחב מספיק כדי לכלול אותם. סיווג הסיכון הגבוה של חוק ה-AI של האיחוד האירופי מכסה את רוב השימושים ב-LLM בשירותים פיננסיים. אין יותר טיעון של "אנחנו לא בטוחים אם זה נספר".
+ראשית, הרגולטורים הפסיקו להתייחס ל-LLMs כחידוש. הפדרל ריזרב הבהיר ש-[SR 11-7 ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: הנחיות לניהול סיכוני מודל") חל על קבלת החלטות מבוססת-LLM ללא קשר לסיווג הפנימי של ה-LLM כמודל. ה-[SS1/23 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "הצהרה פיקוחית SS1/23") של ה-PRA היה תמיד רחב מספיק כדי לכלול אותם. סיווג הסיכון הגבוה של חוק ה-AI של האיחוד האירופי מכסה את רוב השימושים ב-LLM בשירותים פיננסיים. אין יותר טיעון של "אנחנו לא בטוחים אם זה נספר".
 
 שנית, מציאות אמות המידה הגיעה. מדד ה-AI של Stanford HAI לשנת 2026 מדווח על OSWorld — אמת המידה הזמינה הקרובה ביותר לשימוש כלים ארגוני אמיתי — בדיוק של 66.3% ([Stanford HAI ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance "פרק ביצועים טכניים")). אחת מכל שלוש משימות מובנות עדיין נכשלת. מספר זה קובע את התקרה הטכנית לאוטונומיה ב-2026. גבוה מספיק כדי להצדיק פריסות מוגבלות של רמה-3 תחת פיקוח HITL; לא גבוה מספיק כדי להצדיק ביצוע ללא פיקוח כנגד כל API שנוגע בכספי לקוחות.
 
@@ -259,7 +259,7 @@ API של כפתור אדום שמבטל את כל הפעלות הסוכן בתע
 - Stanford HAI, (2026). [דוח מדד ה-AI לשנת 2026 ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report "דוח מדד ה-AI לשנת 2026").
 - Stanford HAI, (2026). [פרק ביצועים טכניים ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance "פרק ביצועים טכניים").
 - Cambridge Centre for Alternative Finance, (2026). [דוח גלובלי לשנת 2026: AI בשירותים פיננסיים ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "דוח גלובלי לשנת 2026: AI בשירותים פיננסיים").
-- Federal Reserve, (2011). [SR 11-7: הנחיות לניהול סיכוני מודל ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: הנחיות לניהול סיכוני מודל").
+- Federal Reserve, (2011). [SR 11-7: הנחיות לניהול סיכוני מודל ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: הנחיות לניהול סיכוני מודל").
 - Prudential Regulation Authority, (2023). [הצהרה פיקוחית SS1/23: עקרונות ניהול סיכוני מודל לבנקים ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "SS1/23: עקרונות ניהול סיכוני מודל לבנקים").
 - European Commission, (2024). [תקנה (EU) 2024/1689 — חוק ה-AI ⧉](https://eur-lex.europa.eu/eli/reg/2024/1689/oj "תקנה (EU) 2024/1689 — חוק ה-AI של האיחוד האירופי").
 - NVIDIA, (2024). [מסגרת NeMo Guardrails ⧉](https://github.com/NVIDIA/NeMo-Guardrails "NeMo Guardrails — ערכת כלים בקוד פתוח להוספת מעקפי בטיחות לתכנות למערכות שיחה מבוססות-LLM").

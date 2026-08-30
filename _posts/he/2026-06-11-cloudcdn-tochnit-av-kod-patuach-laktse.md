@@ -211,7 +211,7 @@ CloudCDN מחליפה את האסימטריה הזו במודל אמון בקו�
 
 CloudCDN מהונדסת לעמוד בתקני הציות של המגזר הפיננסי הגלובלי, וממפה פעולות קצה טכניות ישירות למסגרות שהמפקחים אכן בוחנים:
 
-- **ניהול סיכוני מודל ([SR 11-7 של הפדרל ריזרב האמריקאי ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Supervisory Guidance on Model Risk Management") / SS1/23 של ה-PRA הבריטי).** מודלים אוטונומיים המבצעים משימות תפעוליות כפופים לממשל סיכוני מודל. שער ה-MCP של CloudCDN מתייחס לכלים סוכניים כאל מודלים כמותיים: גבולות מדיניות קשיחים, רישום בזמן אמת ועקיפות חובה עם אדם-בלולאה לפעולות בעלות השפעה גבוהה.
+- **ניהול סיכוני מודל ([SR 11-7 של הפדרל ריזרב האמריקאי ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Supervisory Guidance on Model Risk Management") / SS1/23 של ה-PRA הבריטי).** מודלים אוטונומיים המבצעים משימות תפעוליות כפופים לממשל סיכוני מודל. שער ה-MCP של CloudCDN מתייחס לכלים סוכניים כאל מודלים כמותיים: גבולות מדיניות קשיחים, רישום בזמן אמת ועקיפות חובה עם אדם-בלולאה לפעולות בעלות השפעה גבוהה.
 - **BCBS 239 (אגרגציה של נתוני סיכון).** לכידה, תיוג והבניה של נתוני עסקאות בקצה מפיקות מדדים תפעוליים בזמן אמת — בהלימה לדרישות BCBS 239 לשלמות נתונים, לעדכניות ולעקיבות רגולטורית.
 - **סעיף 5 ל-DORA (אחריות הדירקטוריון).** הדירקטוריון נושא באחריות אישית סופית לחוסן התפעולי. CloudCDN מתרגמת טלמטריית קצה לראיות מכומתות וניתנות לאימות שדירקטורים לא-טכניים יכולים להביא לביקורת הנושאת אחריות אישית.
 - **הון לסיכון תפעולי לפי Basel III.** בנקים מחזיקים הון רגולטורי כנגד סיכון תפעולי. התאוששות מאסון אוטומטית ומקור SLSA Level 3 מקטינים את פרופיל הסיכון התפעולי של המוסד — ושומרים הון במאזן, לא רק מספקים ביקורת.
@@ -263,7 +263,7 @@ CloudCDN מהונדסת לעמוד בתקני הציות של המגזר הפי�
 
 - הפרלמנט האירופי ומועצת האיחוד האירופי, (2022). [תקנה (EU) 2022/2554 בדבר חוסן תפעולי דיגיטלי במגזר הפיננסי (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "תקנה (EU) 2022/2554 בדבר חוסן תפעולי דיגיטלי במגזר הפיננסי (DORA)"). בריסל: העיתון הרשמי של האיחוד האירופי.
 - ועדת באזל לפיקוח על הבנקים (BCBS), (2013). [עקרונות לאגרגציה אפקטיבית של נתוני סיכון ולדיווח סיכונים (BCBS 239) ⧉](https://www.bis.org/publ/bcbs239.htm "עקרונות לאגרגציה אפקטיבית של נתוני סיכון ולדיווח סיכונים (BCBS 239)"). באזל: הבנק להסדרים בינלאומיים.
-- Board of Governors of the Federal Reserve System, (2011). [Supervisory Guidance on Model Risk Management (SR Letter 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Supervisory Guidance on Model Risk Management (SR Letter 11-7)"). וושינגטון הבירה: הפדרל ריזרב.
+- Board of Governors of the Federal Reserve System, (2011). [Supervisory Guidance on Model Risk Management (SR Letter 11-7) ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Supervisory Guidance on Model Risk Management (SR Letter 11-7)"). וושינגטון הבירה: הפדרל ריזרב.
 - Cloudflare, (2026). [תיעוד Durable Objects: תיאום מצב בקצה ⧉](https://developers.cloudflare.com/durable-objects/ "תיעוד Durable Objects"). סן פרנסיסקו: Cloudflare.
 - Cloudflare, (2026). [בניית סוכני AI עם MCP, אימות ו-Durable Objects ⧉](https://blog.cloudflare.com/building-ai-agents-with-mcp-authn-authz-and-durable-objects/ "בניית סוכני AI עם MCP, אימות ו-Durable Objects").
 - GitHub, (2026). [מאגר cloudcdn.pro ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "מאגר cloudcdn.pro").

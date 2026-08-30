@@ -163,7 +163,7 @@ Pentru a menține securitatea absolută în întreaga moșie de dezvoltare și o
 | **Profil de siguranță a memoriei** | Zero blocuri `unsafe` Rust în dependențele parserului și serializatorului. | DORA Articolul 30 (lanț de aprovizionare) | Verificări automate ale compilatorului ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)) în build-urile cargo. |
 | **Validare de schemă** | 100 % din fișierele de configurație parsate verificate față de modele [JSON Schema](https://json-schema.org/) valide. | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Poartă de validare în timp real care oprește pipeline-urile de build la încălcările de schemă. |
 | **Deviație de configurație** | Detectare și recuperare în timp real a fișierelor locale de configurație la starea versionată git. | Return on Resilience (RoR) | Telemetrie continuă care înregistrează toate modificările fișierelor locale. |
-| **Control acces agent** | Permisiuni delimitate, doar pentru citire, pentru instrumentele AI locale care operează prin configurații MCP. | Managementul riscului de model ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Limitele serverului MCP restricționează operațiunile agenților la directoarele aprobate. |
+| **Control acces agent** | Permisiuni delimitate, doar pentru citire, pentru instrumentele AI locale care operează prin configurații MCP. | Managementul riscului de model ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Limitele serverului MCP restricționează operațiunile agenților la directoarele aprobate. |
 
 ## 04. Eroarea parsării opace a configurației
 

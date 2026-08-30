@@ -259,7 +259,7 @@ Zależy od wolumenu uczestnika. Bank obserwujący szczyt godzinowy wypływu pła
 - ISO 20022, (2024). [pacs.008.001.10 — definicja komunikatu FIToFI Customer Credit Transfer ⧉](https://www.iso20022.org/catalogue-messages/iso-20022-messages-archive "ISO 20022 message catalogue").
 - NACHA, (2026). [Zasady i wytyczne operacyjne ACH ⧉](https://www.nacha.org/rules "NACHA Operating Rules").
 - BIS Committee on Payments and Market Infrastructures, (2025). [Płatności szybkie a przyszłość systemu finansowego ⧉](https://www.bis.org/cpmi/publ/d228.htm "CPMI fast payments report").
-- Open Banking Limited, (2026). [Specyfikacja Variable Recurring Payments ⧉](https://www.openbanking.org.uk/vrp/ "Open Banking VRP").
+- Open Banking Limited, (2026). [Specyfikacja Variable Recurring Payments ⧉](https://www.openbanking.org.uk/glossary/variable-recurring-payment/ "Open Banking VRP").
 - Circle Internet Financial, (2026). [USDC — skarb i rezerwy ⧉](https://www.circle.com/transparency "Circle transparency").
 
 <!-- enrich-start -->

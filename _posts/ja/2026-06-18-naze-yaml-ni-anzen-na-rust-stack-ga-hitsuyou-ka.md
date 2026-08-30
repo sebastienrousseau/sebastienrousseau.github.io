@@ -163,7 +163,7 @@ NoyaLib エコシステムは、安全でロスレスな構成パーサーとし
 | **メモリ安全性プロファイル** | パーサーおよびシリアライザー依存関係内で `unsafe` Rust ブロックがゼロ。 | DORA 第 30 条 (サプライチェーン) | cargo ビルドにおける自動コンパイラチェック ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute))。 |
 | **Schema 検証** | パース済み構成ファイルの 100% が有効な [JSON Schema](https://json-schema.org/) モデルに対して検証済み。 | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Schema 違反時にビルドパイプラインを停止するリアルタイム検証ゲート。 |
 | **構成ドリフト** | ローカル構成ファイルを git で版管理された状態へリアルタイムに検出・回復。 | Return on Resilience (RoR) | すべてのローカルファイル変更を記録する継続的テレメトリ。 |
-| **エージェントアクセス制御** | MCP 構成を通じて動作するローカル AI ツールへの境界付き読み取り専用権限。 | モデルリスク管理 ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | エージェント操作を承認済みディレクトリに制限する MCP サーバー境界。 |
+| **エージェントアクセス制御** | MCP 構成を通じて動作するローカル AI ツールへの境界付き読み取り専用権限。 | モデルリスク管理 ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | エージェント操作を承認済みディレクトリに制限する MCP サーバー境界。 |
 
 ## 04. 不透明な構成パースの誤謬
 

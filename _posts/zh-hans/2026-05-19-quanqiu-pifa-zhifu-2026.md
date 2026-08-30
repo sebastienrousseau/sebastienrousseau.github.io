@@ -96,7 +96,7 @@ excerpt: "2026年的批发支付不再只是银行管道。它们已成为宏观
 > - **ISO 20022现已成为批发支付现代化的共同语言。** BIS CPMI指出，该标准应对的是报文碎片化、数据截断、直通处理薄弱以及合规摩擦等问题（[BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "金融报文的未来：导航ISO 20022迁移之旅")）。
 > - **G20路线图仍落后于目标。** FSB（金融稳定理事会）2026年3月的更新指出，进展是真实的，但2027年的目标尚未步入正轨（[FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "改革跨境支付")）。
 > - **RTGS运行时间与准入是经济杠杆。** FSB指出，超过半数司法管辖区已延长RTGS运行时间或计划延长，同时非银行服务提供商的直接准入在各支付系统中不断扩大（[FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "改革跨境支付")）。
-> - **英格兰银行更新后的RTGS服务明确强调了韧性与互操作性。** 更新后的服务旨在通过韧性、准入、互操作性与功能性来支持货币与金融稳定（[Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "更新后的RTGS服务——主要优势")）。
+> - **英格兰银行更新后的RTGS服务明确强调了韧性与互操作性。** 更新后的服务旨在通过韧性、准入、互操作性与功能性来支持货币与金融稳定（[Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "更新后的RTGS服务——主要优势")）。
 > - **碎片化是宏观风险。** 大西洋理事会警告，支付系统碎片化可能推高成本、延缓结算、降低透明度并削弱全球金融一体化（[Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "全球支付系统正在碎片化")）。
 > - **DLT试点如今是基础设施实验，而非加密表演。** 与BIS相关的工作如Project Agorá以及欧洲批发结算试点正在测试代币化的商业银行货币与中央银行货币能否改善大额跨境结算（[Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "全球支付系统正在碎片化")）。
 > - **其经济学是运营层面的。** 当丰富的数据丢失、合规检查变为人工、流动性被时区困住以及调查需要人工修复时，跨境支付在经济上即告失败。
@@ -121,7 +121,7 @@ BIS CPMI 2026年4月的简报将ISO 20022描述为一种跨支付、证券与资
 
 结算窗口之所以重要，是因为全球批发支付跨越时区。Fabio Panetta 2026年5月在BIS的演讲将国家支付基础设施定位为改革的坐标，包括更宽的结算窗口和ISO 20022的全面采用（[BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "互联以求稳定：碎片化世界中的跨境支付")）。
 
-英格兰银行更新后的RTGS服务方向与此一致。它强调韧性、更广准入、互操作性以及可与其他账本互操作的同步结算接口，以降低结算风险与流动性成本（[Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "更新后的RTGS服务——主要优势")）。
+英格兰银行更新后的RTGS服务方向与此一致。它强调韧性、更广准入、互操作性以及可与其他账本互操作的同步结算接口，以降低结算风险与流动性成本（[Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "更新后的RTGS服务——主要优势")）。
 
 ### 3. 非银行准入改变竞争格局
 
@@ -202,7 +202,7 @@ FSB指出，已取得进展，但2027年的目标尚未步入正轨，仍需公�
 
 **RTGS更新的作用是什么？**
 
-RTGS更新改进了结算的韧性、准入、互操作性与功能性。英格兰银行还强调，同步结算接口与ISO 20022是降低结算风险与流动性成本的机制（[Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "更新后的RTGS服务——主要优势")）。
+RTGS更新改进了结算的韧性、准入、互操作性与功能性。英格兰银行还强调，同步结算接口与ISO 20022是降低结算风险与流动性成本的机制（[Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "更新后的RTGS服务——主要优势")）。
 
 **稳定币是否在取代批发支付？**
 
@@ -213,5 +213,5 @@ RTGS更新改进了结算的韧性、准入、互操作性与功能性。英格�
 - BIS CPMI, (2026). [金融报文的未来：导航ISO 20022迁移之旅 ⧉](https://www.bis.org/cpmi/publ/brief11.htm "BIS CPMI Brief No 11").
 - FSB, (2026). [改革跨境支付——FSB支付峰会主旨演讲 ⧉](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "FSB").
 - BIS, (2026). [互联以求稳定：碎片化世界中的跨境支付 ⧉](https://www.bis.org/cpmi/speeches/sp260505.pdf "Fabio Panetta演讲").
-- Bank of England, (2026). [更新后的RTGS服务——主要优势 ⧉](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Bank of England").
+- Bank of England, (2026). [更新后的RTGS服务——主要优势 ⧉](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Bank of England").
 - Atlantic Council, (2026). [全球支付系统正在碎片化——G20可以做什么 ⧉](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "Atlantic Council").

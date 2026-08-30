@@ -397,12 +397,12 @@ CloudCDN([cloudcdn.pro](https://cloudcdn.pro/ "CloudCDN"))は、エッジエー�
 - Sebastien Rousseau, (2026). [CloudCDN on GitHub ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "sebastienrousseau/cloudcdn.pro"). GitHub.
 - Constellation Energy, (2025). [AIデータセンター電力のためのMicrosoftとのスリーマイル島再稼働契約 ⧉](https://www.constellationenergy.com/newsroom.html "Constellation Energy newsroom"). Constellation Energy.
 - Amazon Web Services, (2025). [AWS X-Energyへの投資およびTalen / Cumulus原子力隣接データセンター取得 ⧉](https://aws.amazon.com/blogs/aws/ "AWS News Blog"). AWS.
-- Kairos Power, (2025). [Google Kairos Power SMR電力購入契約 ⧉](https://kairospower.com/news/ "Kairos Power News"). Kairos Power.
+- Kairos Power, (2025). Google Kairos Power SMR電力購入契約. Kairos Power.
 - Bank for International Settlements, (2025). [Project Agora:ホールセールCBDCおよびトークン化された商業銀行預金 ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agora — BIS Innovation Hub"). BIS Innovation Hub.
 - European Central Bank, (2025). [デジタルユーロプロジェクト — 準備フェーズ更新 ⧉](https://www.ecb.europa.eu/paym/digital_euro/html/index.en.html "Digital euro — ECB"). ECB.
-- Amazon Web Services, (2025). [AWS European Sovereign Cloud — プログラム概要 ⧉](https://aws.amazon.com/government-education/european-sovereign-cloud/ "AWS European Sovereign Cloud"). AWS.
+- Amazon Web Services, (2025). [AWS European Sovereign Cloud — プログラム概要 ⧉](https://aws.amazon.com/compliance/europe-digital-sovereignty/ "AWS European digital sovereignty"). AWS.
 - Meta AI, (2026). [Llama 4リリース発表 — Maverick、Scout、Behemothバリアント ⧉](https://ai.meta.com/blog/llama-4-multimodal-intelligence/ "Llama 4 release"). Meta.
-- Toshiba / BT, (2025). [ロンドン都市圏での商用QKDネットワーク展開 ⧉](https://www.toshiba.eu/quantum-technology/ "Toshiba Quantum Technology"). Toshiba Europe.
+- Toshiba / BT, (2025). [ロンドン都市圏での商用QKDネットワーク展開 ⧉](https://www.global.toshiba/ww/products-solutions/security-ict/qkd.html "Toshiba quantum key distribution (QKD)"). Toshiba Europe.
 - NVIDIA, (2025). [Spectrum-X PhotonicsおよびQuantum-X Photonics — AIファクトリのための共パッケージ光学ネットワーキング ⧉](https://nvidianews.nvidia.com/news/spectrum-x-quantum-x-photonics "NVIDIA Photonics announcement at GTC 2025"). NVIDIA.
 - European Central Bank Banking Supervision, (2025). [クラウドアウトソーシングと集中リスク — 監督期待 ⧉](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.outsourcingcloud.en.html "ECB Banking Supervision on cloud outsourcing"). ECB.
 - Zou, W. et al. (2024). [PoisonedRAG:大規模言語モデルの検索拡張生成への知識破損攻撃 ⧉](https://arxiv.org/abs/2402.07867 "PoisonedRAG"). arXiv.

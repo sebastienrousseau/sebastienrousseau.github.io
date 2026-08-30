@@ -121,7 +121,7 @@ Iyípadà láti chat sí àwọn bounded workflow ni ohun kan ṣoṣo tí ó �
 
 Àwọn ohun méjì yí padà pẹ̀lú lílò.
 
-Kíní, àwọn alábojútó dáwọ́ pípe LLM gẹ́gẹ́ bí ohun tuntun dúró. Federal Reserve ti ṣàlàyé pé [SR 11-7 ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: Ìtọ́ni lórí Ìṣàkóso Ewu Àwòrán") wà fún ìpinnu tí ó dá lórí LLM láìbìkítà bóyá a kà LLM gẹ́gẹ́ bí àwòrán ní ti inú. [SS1/23 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "Gbólóhùn Ìbójútó SS1/23") ti PRA fẹ̀ tó láti ká wọn. Ìṣèpín ewu giga ti òfin AI ti EU ká ọ̀pọ̀ lílò LLM iṣẹ́-ìnáwó. Kò sí ìjiyàn "a ò mọ̀ bóyá èyí ká" mọ́.
+Kíní, àwọn alábojútó dáwọ́ pípe LLM gẹ́gẹ́ bí ohun tuntun dúró. Federal Reserve ti ṣàlàyé pé [SR 11-7 ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: Ìtọ́ni lórí Ìṣàkóso Ewu Àwòrán") wà fún ìpinnu tí ó dá lórí LLM láìbìkítà bóyá a kà LLM gẹ́gẹ́ bí àwòrán ní ti inú. [SS1/23 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "Gbólóhùn Ìbójútó SS1/23") ti PRA fẹ̀ tó láti ká wọn. Ìṣèpín ewu giga ti òfin AI ti EU ká ọ̀pọ̀ lílò LLM iṣẹ́-ìnáwó. Kò sí ìjiyàn "a ò mọ̀ bóyá èyí ká" mọ́.
 
 Èkejì, òtítọ́ ìwọ̀n ti dé. Atọ́ka AI 2026 ti Stanford HAI ròyìn OSWorld — ìwọ̀n tí ó súnmọ́ jùlọ sí lílo irinṣẹ́ ilé-iṣẹ́ tòótọ́ — ní ìpé 66.3% ([Stanford HAI ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance "Orí Iṣẹ́ Onímọ̀-ẹ̀rọ")). Iṣẹ́-ṣíṣe kan nínú mẹ́ta ṣì ń ṣàṣìṣe. Nọ́ńbà yẹn ń gbé àjà onímọ̀-ẹ̀rọ kalẹ̀ lórí ìṣọmọ̀dáṣe ní 2026. Ó gbẹ̀ tó láti dá àwọn ìjáfáfá Ipele-3 onílàálà láàárín ìbójútó HITL láre; kò gbẹ̀ tó láti dá ìṣiṣẹ́ láìfẹ̀ẹ́sí láre lórí API kankan tí ó kàn àkáǹtì àwọn ará-òde.
 
@@ -259,7 +259,7 @@ Nọ́ńbà mẹ́rin fún workflow kọ̀ọ̀kan: ipele ìṣọmọ̀dáṣe,
 - Stanford HAI, (2026). [Ìròyìn Atọ́ka AI 2026 ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report "Ìròyìn Atọ́ka AI 2026").
 - Stanford HAI, (2026). [Orí Iṣẹ́ Onímọ̀-ẹ̀rọ ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance "Orí Iṣẹ́ Onímọ̀-ẹ̀rọ").
 - Cambridge Centre for Alternative Finance, (2026). [Ìròyìn Àgbáyé AI nínú Iṣẹ́ Ìnáwó 2026 ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "Ìròyìn Àgbáyé AI nínú Iṣẹ́ Ìnáwó 2026").
-- Federal Reserve, (2011). [SR 11-7: Ìtọ́ni lórí Ìṣàkóso Ewu Àwòrán ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: Ìtọ́ni lórí Ìṣàkóso Ewu Àwòrán").
+- Federal Reserve, (2011). [SR 11-7: Ìtọ́ni lórí Ìṣàkóso Ewu Àwòrán ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: Ìtọ́ni lórí Ìṣàkóso Ewu Àwòrán").
 - Prudential Regulation Authority, (2023). [Gbólóhùn Ìbójútó SS1/23: Àwọn ìpìlẹ̀ ìṣàkóso ewu àwòrán fún àwọn bánkì ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "SS1/23: Àwọn ìpìlẹ̀ ìṣàkóso ewu àwòrán fún àwọn bánkì").
 - European Commission, (2024). [Òfin (EU) 2024/1689 — Òfin AI ⧉](https://eur-lex.europa.eu/eli/reg/2024/1689/oj "Òfin (EU) 2024/1689 — Òfin AI EU").
 - NVIDIA, (2024). [Àwòrán NeMo Guardrails ⧉](https://github.com/NVIDIA/NeMo-Guardrails "NeMo Guardrails — irinṣẹ́ orísun-ìmọ́ fún ìfikún àwọn guardrails tí a lè ṣètò sí àwọn ètò ìjíròrò tí ó dá lórí LLM").

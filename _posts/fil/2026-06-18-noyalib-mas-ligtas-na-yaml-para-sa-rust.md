@@ -163,7 +163,7 @@ Upang mapanatili ang absolute security sa buong development at operations estate
 | **Memory safety profile** | Zero `unsafe` Rust block sa loob ng parser at serializer dependency. | DORA Article 30 (supply chain) | Automated compiler check ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)) sa cargo build. |
 | **Schema validation** | 100% ng mga parsed configuration file ay na-verify laban sa valid na mga [JSON Schema](https://json-schema.org/) model. | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Real-time validation gate na pinipigilan ang mga build pipeline sa schema violation. |
 | **Configuration drift** | Real-time na pagtuklas at pagbawi ng mga local configuration file pabalik sa git-versioned state. | Return on Resilience (RoR) | Continuous telemetry na nagla-log sa lahat ng local file modification. |
-| **Agent access control** | Bounded at read-only na mga permission para sa mga local AI tool na umaandar sa pamamagitan ng MCP configuration. | Model risk management ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | MCP server boundary na naglilimita sa agent operation sa mga aprubadong directory. |
+| **Agent access control** | Bounded at read-only na mga permission para sa mga local AI tool na umaandar sa pamamagitan ng MCP configuration. | Model risk management ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | MCP server boundary na naglilimita sa agent operation sa mga aprubadong directory. |
 
 ## 04. Ang Pagkakamali ng Opaque Configuration Parsing
 

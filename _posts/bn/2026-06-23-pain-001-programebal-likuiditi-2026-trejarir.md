@@ -225,7 +225,7 @@ CBPR+ যাচাই নিয়ম নিজেরাই অনালোচ�
 
 ## উপসংহার
 
-২০২৬-এর নভেম্বরের সময়সীমা সহজ অংশ। কঠিন অংশ হল সময়সীমা যা বাধ্য করে। যেসব ব্যাংক pain.001-কে অনুবাদ সমস্যা হিসেবে দেখে সময়মতো পৌঁছাবে, তারা পরবর্তী দশক ওয়্যার থেকে ভেতরের দিকে ট্রেজারি ডেটা মডেল পুনর্নির্মাণ করতে কাটাবে। যেসব ব্যাংক ISO-ফার্স্ট ক্যানোনিকাল স্কিমা, ডিফল্টরূপে কাঠামোগত ঠিকানা ও pacs.008 সরাসরি গ্রহণকারী প্রোগ্রামেবল লিকুইডিটি কন্ট্রোল প্লেন নিয়ে পৌঁছাবে, তারা DORA Article 5 বোর্ড জবাবদিহিতা, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") অপারেশনাল-ঝুঁকি শৃঙ্খলা ও [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management") মডেল গভর্নেন্সের অধীনে এজেন্টিক ট্রেজারি চালাবে।
+২০২৬-এর নভেম্বরের সময়সীমা সহজ অংশ। কঠিন অংশ হল সময়সীমা যা বাধ্য করে। যেসব ব্যাংক pain.001-কে অনুবাদ সমস্যা হিসেবে দেখে সময়মতো পৌঁছাবে, তারা পরবর্তী দশক ওয়্যার থেকে ভেতরের দিকে ট্রেজারি ডেটা মডেল পুনর্নির্মাণ করতে কাটাবে। যেসব ব্যাংক ISO-ফার্স্ট ক্যানোনিকাল স্কিমা, ডিফল্টরূপে কাঠামোগত ঠিকানা ও pacs.008 সরাসরি গ্রহণকারী প্রোগ্রামেবল লিকুইডিটি কন্ট্রোল প্লেন নিয়ে পৌঁছাবে, তারা DORA Article 5 বোর্ড জবাবদিহিতা, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") অপারেশনাল-ঝুঁকি শৃঙ্খলা ও [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management") মডেল গভর্নেন্সের অধীনে এজেন্টিক ট্রেজারি চালাবে।
 
 স্বায়ত্ত স্নায়ুতন্ত্রের ফ্রেমিং সাজসজ্জা নয়। ট্রেজারি যে লিকুইডিটি দেখতে পায় না সে সম্পর্কে যুক্তি দিতে পারে না। এজেন্ট যে ডেটা পার্স করতে পারে না সেটির ওপর কাজ করতে পারে না। ২০২৬-এ ISO 20022 হল CIB ট্রেজারির তার — কাঠামোগত বার্তা হল অ্যাকশন পটেনশিয়াল, স্কিমা হল সেই অডিট ট্রেইল যা পরবর্তী ঘটনার পরের সকালে নিয়ন্ত্রক দাবি করবে।
 
@@ -241,7 +241,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. Available at: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF Recommendations")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Available at: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Available at: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. Available at: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Universal financial industry message scheme")
 

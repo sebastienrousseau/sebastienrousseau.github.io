@@ -31,7 +31,7 @@ Az [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-
 
 ## Mi zárult le 2025 novemberében, és mi nem
 
-A 2025. november 22-i határon átnyúló SWIFT-átállás nyugdíjazta az MT 103, MT 202, MT 202COV, MT 205 és MT 205COV üzeneteket az értékhordozó, határon átnyúló használatra. A SWIFT FINplus, az ISO 20022 MX-et hordozó, InterAct-alapú szolgáltatás lett az egyetlen útvonal ezekhez a folyamatokhoz. A CBPR+ 1. fázisa ugyanebben az időablakban vált kötelezővé. Az EKB-nál működő ESMIG-üzemeltető megerősítette a T2 és a T2S megfelelő migrációját; a [Bank of England CHAPS szolgáltatása ⧉](https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS, Bank of England") 2023 júniusában állt át a teljes MX-re; a Federal Reserve 2025 márciusában fejezte be a Fedwire Funds Service migrációját.
+A 2025. november 22-i határon átnyúló SWIFT-átállás nyugdíjazta az MT 103, MT 202, MT 202COV, MT 205 és MT 205COV üzeneteket az értékhordozó, határon átnyúló használatra. A SWIFT FINplus, az ISO 20022 MX-et hordozó, InterAct-alapú szolgáltatás lett az egyetlen útvonal ezekhez a folyamatokhoz. A CBPR+ 1. fázisa ugyanebben az időablakban vált kötelezővé. Az EKB-nál működő ESMIG-üzemeltető megerősítette a T2 és a T2S megfelelő migrációját; a [Bank of England CHAPS szolgáltatása ⧉](https://web.archive.org/web/20260610035348/https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS, Bank of England") 2023 júniusában állt át a teljes MX-re; a Federal Reserve 2025 márciusában fejezte be a Fedwire Funds Service migrációját.
 
 Ami nem zárult le:
 
@@ -167,7 +167,7 @@ Igen. Az UETR fennmarad; a gpi tracker közvetlenül olvassa a pacs.002, pacs.00
 
 - SWIFT, (2025). [2025 ISO 20022 előrehaladás ⧉](https://www.swift.com/news-events/news/2025-iso-20022-progress "SWIFT 2025 előrehaladás").
 - SWIFT, (2025). [CBPR+ használati útmutatók a MyStandards oldalon ⧉](https://www2.swift.com/mystandards/CBPR+/ "MyStandards CBPR+").
-- Bank of England, (2023). [CHAPS, Bank of England ⧉](https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS").
+- Bank of England, (2023). [CHAPS, Bank of England ⧉](https://web.archive.org/web/20260610035348/https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS").
 - European Central Bank, (2023). [TARGET Services konszolidáció ⧉](https://www.ecb.europa.eu/paym/target/consolidation/html/index.en.html "T2 / T2S konszolidáció").
 - Federal Reserve, (2025). [Fedwire Funds Service ISO 20022 bevezetés ⧉](https://www.frbservices.org/resources/financial-services/wires/iso-20022-implementation-center "Fedwire ISO 20022").
 - ISO, (2024). [ISO 20022 üzenetkatalógus ⧉](https://www.iso20022.org/iso-20022-message-definitions "ISO 20022 üzenetdefiníciók").

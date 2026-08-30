@@ -163,7 +163,7 @@ Hukumomi yanzu suna tambayar tambayoyi biyar kuma suna sa ran amsoshin lambobi.
 4. **Menene rufin sa hannu na PQC akan artefacts na dawowa?** Kashi na snapshots na vault, manifests da inter-domain trust anchors da aka sa hannu a ƙarƙashin FIPS 203 / FIPS 204.
 5. **Menene Cost of Contingency Capital (CoCC)?** Kuɗin damar yau da kullum na liquidity na intraday da aka kama a cikin asusun share na sakandare, ma'aunin correspondent masu dumi da matsayin tokenised da aka riga aka shirya, ana auna shi da rate na dare. Hukumar dole ne ta ga ainihin farashin inshorar juriya na banki, kuma kwamitin aiki dole ne ya kare cinikin tsakanin babbar jari da aka kama da haƙurin fitar da hidima — ana sabunta shi aƙalla kowace kwata.
 
-Waɗannan su ne ma'aunai da suka taswira cikin sauƙi zuwa shaidar DORA Article 6, zuwa maganganun nauyi na manyan manajoji na SM&CR, da kuma mulkin haɗarin model na [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") akan logic na tafiya wanda ke yanke shawarar wane rail ya yi nasara. Hukumar ba ta buƙatar ba da labari ba; tana buƙatar zane na kwata-kwata tare da ƙasa mai tsayi.
+Waɗannan su ne ma'aunai da suka taswira cikin sauƙi zuwa shaidar DORA Article 6, zuwa maganganun nauyi na manyan manajoji na SM&CR, da kuma mulkin haɗarin model na [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") akan logic na tafiya wanda ke yanke shawarar wane rail ya yi nasara. Hukumar ba ta buƙatar ba da labari ba; tana buƙatar zane na kwata-kwata tare da ƙasa mai tsayi.
 
 ## Kammalawa
 

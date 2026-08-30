@@ -225,7 +225,7 @@ FATF 勧告 16 と CBPR+ フェーズ 3 のいずれもが、クロスボーダ�
 
 ## 結論
 
-2026 年 11 月の期限は簡単な部分です。難しいのは、その期限が何を強制するかです。期限に間に合っても、pain.001 を依然として変換問題として扱っている銀行は、次の 10 年をワイヤから内側に向けてトレジャリーデータモデルを再構築することに費やすことになります。ISO ファーストの正典スキーマ、既定の構造化アドレス、pacs.008 を直接消費するプログラマブル流動性コントロールプレーンを携えて到着する銀行は、DORA 第 5 条の取締役会アカウンタビリティ、[Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") のオペレーショナルリスク規律、[SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management") のモデルガバナンスの下で、エージェント型トレジャリーを運用することになります。
+2026 年 11 月の期限は簡単な部分です。難しいのは、その期限が何を強制するかです。期限に間に合っても、pain.001 を依然として変換問題として扱っている銀行は、次の 10 年をワイヤから内側に向けてトレジャリーデータモデルを再構築することに費やすことになります。ISO ファーストの正典スキーマ、既定の構造化アドレス、pacs.008 を直接消費するプログラマブル流動性コントロールプレーンを携えて到着する銀行は、DORA 第 5 条の取締役会アカウンタビリティ、[Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") のオペレーショナルリスク規律、[SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management") のモデルガバナンスの下で、エージェント型トレジャリーを運用することになります。
 
 自律神経系というフレーミングは装飾ではありません。トレジャリーは、見えない流動性について推論することはできません。エージェントは、解釈できないデータに基づいて行動することはできません。ISO 20022 は 2026 年の CIB トレジャリーの配線です — 構造化メッセージは活動電位であり、スキーマは、次のインシデントの翌朝に規制当局が要求する監査証跡です。
 
@@ -241,7 +241,7 @@ FATF 勧告 16 と CBPR+ フェーズ 3 のいずれもが、クロスボーダ�
 
 金融活動作業部会 (2023). *マネー・ローンダリングおよびテロ資金供与対策に関する国際基準 — 電信送金に関する勧告 16*. 入手先: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF Recommendations")
 
-連邦準備制度 (2011). *SR 11-7 モデルリスクマネジメントに関するガイダンス*. 入手先: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
+連邦準備制度 (2011). *SR 11-7 モデルリスクマネジメントに関するガイダンス*. 入手先: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
 
 国際標準化機構 (2022). *ISO 20022 金融サービス — ユニバーサル金融業界メッセージスキーム*. 入手先: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Universal financial industry message scheme")
 

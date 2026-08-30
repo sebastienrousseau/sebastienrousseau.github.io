@@ -111,7 +111,7 @@ excerpt: "Iṣẹ́ àdéposito tokenized ní 2026 ń kúrò ní ìpele ìwádì
 > **Ìsọnísókí Àwọn Olùdarí / Àwọn Kókó Pàtàkì**
 >
 > - **Ipò ọjà.** Àdéposito tokenized ní 2026 wà níwájú gbígbòòrò ṣùgbọ́n kò sí mọ́ ní ti ìmọ̀ọ́yàn: pilots ń ṣiṣẹ́, àwọn àbá báńkì ń dàgbà, ètò multi-bank ti United Kingdom sì ń ṣiṣẹ́ títí di àárín 2026 pẹ̀lú HSBC, NatWest, Lloyds, Barclays, Nationwide, àti Santander ń ṣàyẹ̀wò ìsanwó marketplace, sísanpadà ti owó ilé, àti settlement ti dukia dígítà ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
-> - **Ìfunpá ìdíje.** Stablecoins tó tóbi ó sì ń dàgbà (BIS gbéro ìpakà market kan tó tó ~$315 bílíọ̀nù, ~98% denominated ní USD ní ìbẹ̀rẹ̀ April 2026) wọ́n sì ń fipá mú àkókò ti deposit-token. Wọ́n borí lórí àyè ecosystem ṣíṣí, liquidity crypto-native, àti retail àgbáyé; àdéposito tokenized borí lórí ìtùnú ìlànà, inṣòra ti àdéposito, àti iṣàn iṣẹ́ ti treasury ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+> - **Ìfunpá ìdíje.** Stablecoins tó tóbi ó sì ń dàgbà (BIS gbéro ìpakà market kan tó tó ~$315 bílíọ̀nù, ~98% denominated ní USD ní ìbẹ̀rẹ̀ April 2026) wọ́n sì ń fipá mú àkókò ti deposit-token. Wọ́n borí lórí àyè ecosystem ṣíṣí, liquidity crypto-native, àti retail àgbáyé; àdéposito tokenized borí lórí ìtùnú ìlànà, inṣòra ti àdéposito, àti iṣàn iṣẹ́ ti treasury ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")).
 > - **Àwọn ààlà ìlànà.** Àbá FDIC ti 2026 fi àdéposito tokenized sí ipò gbèsè àdéposito tí a kọ sí lórí DLT ó sì yà wọ́n sọ́tọ̀ pátápátá kúrò lọ́dọ̀ payment stablecoins, ó sì mu àwòkọ́ṣe AMẸRÍKÀ lágbára ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 > - **Àwọn ètò báńkì tí ó ga jùlọ.** JPM Coin ti JPMorgan lórí Kinexys ń ṣàkóso nǹkan bíi $2 bílíọ̀nù ní settlement wholesale ojoojúmọ́ ó sì ní àkọsílẹ̀ deposit-token tí ó pẹ́ jùlọ ní live. HSBC ní ìtò multi-track tí ó kún jùlọ: TDS ní HK, SG, UK, LU, US ní USD/GBP/EUR/HKD/SGD; HSBC Orion gbé pilot UK Digital Gilt Instrument (DIGIT) lórí; HSBC Gold Token ń tokenize wúrà tí a pin; atomic settlement láàrín nẹ́tíwọ́ọ̀kì ni a ṣàyẹ̀wò lórí Canton + Project Ensemble; PQC ni a ṣe pẹ̀lú Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
 > - **Àwọn àṣàyàn ìṣapẹẹrẹ tí ó pinnu gbogbo nǹkan.** Àwòṣe ledger-and-legal mẹ́ta ní ó borí: token *jẹ́* àdéposito (atomic settlement tí ó dára jùlọ, uptime tí ó le jùlọ), token *ṣe àṣojú* àdéposito ìbílẹ̀ (rọrùn ní òfin, owó-ọya reconciliation, èyí tí JPM Coin àti HSBC TDS dà bí), tàbí token gẹ́gẹ́ bí *ìpele ìtọ́ni* lórí àwọn rails ìbílẹ̀ (ẹ̀tọ́ programmability tí ó rẹ̀wẹ̀sì jùlọ).
@@ -144,13 +144,13 @@ Lloyds sọ pé ó ń kọ́ wallets fún àwọn aládàámọ̀rán ilé-iṣ�
 
 ### 3. Stablecoins Ń Fipá Mú Ìkánjú ṣùgbọ́n Ó tún Ṣe Kedere Ewu
 
-Ọ̀rọ̀ April 2026 ti BIS fún stablecoins ní iyì fún àwọn ẹ̀yà ìmọ̀-ẹ̀rọ bíi smart-contract programmability àti atomic settlement, ṣùgbọ́n ó tún tẹnumọ́ àwọn ewu nípa àtọkàn-ọkàn ti owó, àìlera ti run, ìwà-rere owó, ìpinlẹ̀ owó, àti settlement níta owó báńkì àárín ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+Ọ̀rọ̀ April 2026 ti BIS fún stablecoins ní iyì fún àwọn ẹ̀yà ìmọ̀-ẹ̀rọ bíi smart-contract programmability àti atomic settlement, ṣùgbọ́n ó tún tẹnumọ́ àwọn ewu nípa àtọkàn-ọkàn ti owó, àìlera ti run, ìwà-rere owó, ìpinlẹ̀ owó, àti settlement níta owó báńkì àárín ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")).
 
 Ìbáwí yẹn jẹ́ àìṣe-àìṣe ìdí tí àdéposito tokenized ṣe pàtàkì. Wọ́n gbìyànjú láti gbé programmability tí ó wúlò ti owó tokenized wọlé sí ètò òfin ti owó báńkì oníṣòwò.
 
 ### 4. Project Agorá àti Unified Ledger Ń Ṣàpèjúwe Ìbéèrè Wholesale
 
-BIS fi Project Agorá sípò gẹ́gẹ́ bí iṣẹ́ pẹ̀lú àwọn báńkì àárín àti ẹka aládàáni láti ṣàwárí tokenization fún ìsanwó láàrín àwọn orílẹ̀-èdè, ó sì so ìtọ́sọ́nà tí ó gbòòrò mọ́ ìran unified ledger ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Deutsche Bank pẹ̀lú tọ́ka sí Project Agorá àti Partior gẹ́gẹ́ bí apá kan settlement àti ọ̀nà ìpilẹ̀ṣẹ̀ ìran tí ó ń bọ̀ àti ti àwọn orílẹ̀-èdè ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
+BIS fi Project Agorá sípò gẹ́gẹ́ bí iṣẹ́ pẹ̀lú àwọn báńkì àárín àti ẹka aládàáni láti ṣàwárí tokenization fún ìsanwó láàrín àwọn orílẹ̀-èdè, ó sì so ìtọ́sọ́nà tí ó gbòòrò mọ́ ìran unified ledger ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")). Deutsche Bank pẹ̀lú tọ́ka sí Project Agorá àti Partior gẹ́gẹ́ bí apá kan settlement àti ọ̀nà ìpilẹ̀ṣẹ̀ ìran tí ó ń bọ̀ àti ti àwọn orílẹ̀-èdè ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 
 Èyí ni ibi tí àdéposito tokenized di ọ̀nà ìpilẹ̀ṣẹ̀ wholesale. Ìbéèrè pàtàkì ni báwo ni owó báńkì oníṣòwò, owó báńkì àárín, àti dukia tokenized ṣe ṣe settlement papọ̀ láìfọ́ ìparí òfin, àwọn ìṣàkóso liquidity, tàbí àtọkàn-ọkàn ti owó.
 
@@ -215,13 +215,13 @@ Ohun-èlò mẹ́ta ń dije fún ipa kan náà — owó dígítà tí a le túm�
 | Ohun-èlò | Irú Ẹ̀tọ́ | Lílò Tó Dára Jùlọ | Ipò 2026 | Ewu Pàtàkì |
 |---|---|---|---|---|
 | **Àdéposito tokenized** | Àdéposito báńkì oníṣòwò tàbí àpẹẹrẹ | Ìsanwó tí ó le túmọ̀ síi tí báńkì ń darí, treasury, settlement dukia tokenized | Pilots àti àkọ́kọ́ àpẹẹrẹ ọjà ti àjọ ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")) | Interoperability àti ìbámu òfin |
-| **Stablecoins** | Ẹ̀tọ́ lórí olùpèsè/ètò ìpamọ́ | Liquidity ti crypto, ìdánwò láàrín àwọn orílẹ̀-èdè, liquidity ti dọ́là | Tó gbòòrò tí ó sì ń dàgbà, pẹ̀lú BIS tí ó gbéro nǹkan bíi bílíọ̀nù dọ́là 315 nínú ìpakà market ní ìbẹ̀rẹ̀ April 2026 ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")) | Runs, ìwà-rere owó, ìpinlẹ̀ owó |
+| **Stablecoins** | Ẹ̀tọ́ lórí olùpèsè/ètò ìpamọ́ | Liquidity ti crypto, ìdánwò láàrín àwọn orílẹ̀-èdè, liquidity ti dọ́là | Tó gbòòrò tí ó sì ń dàgbà, pẹ̀lú BIS tí ó gbéro nǹkan bíi bílíọ̀nù dọ́là 315 nínú ìpakà market ní ìbẹ̀rẹ̀ April 2026 ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")) | Runs, ìwà-rere owó, ìpinlẹ̀ owó |
 | **Wholesale CBDC** | Owó báńkì àárín | Settlement láàrín báńkì àti ọ̀nà ìpilẹ̀ṣẹ̀ ọjà tokenized | Àyẹ̀wò tó ń ṣiṣẹ́ nípasẹ̀ àwọn iṣẹ́ báńkì àárín | Àpẹẹrẹ, àṣírí, gbígbòòrò, àṣẹ òṣèlú |
 | **Retail CBDC** | Owó báńkì àárín fún ìlò gbangba | Yíyàn dígítà ti owó tẹ́lẹ̀ fún àwùjọ | Ìlọsíwájú àgbáyé tí ó dà gbà | Gbígbà, àṣírí, ìpinya-báńkì |
 
 ### Ibi tí Àdéposito Tokenized ti Ń Borí
 
-Owó báńkì oníṣòwò tí ó wà lórí balance-sheet ní ìtùnú ìlànà tí stablecoins ṣì ń ní láti gba. Àdéposito tokenized jogún inṣòra àdéposito, ìtọ́jú olú prudential, àti àwọn ìṣàkóso AML/sanctions tí ó wà. Fún olùtọ́jú owó ilé-iṣẹ́, èyí túmọ̀ sí pé kò sí ewu counterparty tuntun àti kò sí audit ìpamọ́ tuntun láti ṣàyẹ̀wò. Wọ́n tún ń bẹ̀rẹ̀ on-ramp láti àkántì báńkì tí ilé-iṣẹ́ tẹ́lẹ̀ ní — kò sí kasuwa, kò sí olùpèsè ìpamọ́, kò sí ohun tuntun ti custody. BIS àti FDIC sì gbára lé lórí èyí: àtọkàn-ọkàn ti owó dúró nígbà tí ẹ̀tọ́ bá jókòó níbi tí ètò òfin tí ó wà ti ní òye rẹ̀ tẹ́lẹ̀ ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate"); [FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+Owó báńkì oníṣòwò tí ó wà lórí balance-sheet ní ìtùnú ìlànà tí stablecoins ṣì ń ní láti gba. Àdéposito tokenized jogún inṣòra àdéposito, ìtọ́jú olú prudential, àti àwọn ìṣàkóso AML/sanctions tí ó wà. Fún olùtọ́jú owó ilé-iṣẹ́, èyí túmọ̀ sí pé kò sí ewu counterparty tuntun àti kò sí audit ìpamọ́ tuntun láti ṣàyẹ̀wò. Wọ́n tún ń bẹ̀rẹ̀ on-ramp láti àkántì báńkì tí ilé-iṣẹ́ tẹ́lẹ̀ ní — kò sí kasuwa, kò sí olùpèsè ìpamọ́, kò sí ohun tuntun ti custody. BIS àti FDIC sì gbára lé lórí èyí: àtọkàn-ọkàn ti owó dúró nígbà tí ẹ̀tọ́ bá jókòó níbi tí ètò òfin tí ó wà ti ní òye rẹ̀ tẹ́lẹ̀ ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate"); [FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 ### Ibi tí Stablecoins Ṣì Ń Borí
 
@@ -297,7 +297,7 @@ Báńkì UK ní àǹfààní ìṣètò àkọ́kọ́ tí ó gbára lé nípas�
 
 **Ǹjẹ́ àdéposito tokenized jẹ́ kan náà bíi stablecoins?**
 
-Bẹ́ẹ̀kọ́. Méjèèjì ń pèsè owó dígítà tí a le túmọ̀ síi, 24/7, ṣùgbọ́n wọ́n ń lo àwọn ìṣètò òfin àti ti ẹ̀tọ́ tí ó yàtọ̀ pátápátá. Stablecoin jẹ́ ẹ̀tọ́ lórí dukia ìpamọ́ tàbí ìṣètò ile-iṣẹ́ ti olùpèsè aládàáni, tí ó ń ṣiṣẹ́ níta balance sheet ti báńkì àárín ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Àdéposito tokenized jẹ́ gbèsè tààrà ti báńkì oníṣòwò tí ó jogún ìlànà báńkì tí ó wà, ìṣàkóso AML/sanctions, àti ààlà inṣòra àdéposito ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+Bẹ́ẹ̀kọ́. Méjèèjì ń pèsè owó dígítà tí a le túmọ̀ síi, 24/7, ṣùgbọ́n wọ́n ń lo àwọn ìṣètò òfin àti ti ẹ̀tọ́ tí ó yàtọ̀ pátápátá. Stablecoin jẹ́ ẹ̀tọ́ lórí dukia ìpamọ́ tàbí ìṣètò ile-iṣẹ́ ti olùpèsè aládàáni, tí ó ń ṣiṣẹ́ níta balance sheet ti báńkì àárín ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")). Àdéposito tokenized jẹ́ gbèsè tààrà ti báńkì oníṣòwò tí ó jogún ìlànà báńkì tí ó wà, ìṣàkóso AML/sanctions, àti ààlà inṣòra àdéposito ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 **Kí ni àwọn àpẹẹrẹ ìlò pàtàkì UK?**
 
@@ -320,7 +320,7 @@ Adé tí a pín. JPMorgan ni olórí lórí ìwọ̀n samarwa, pẹ̀lú Kinexys
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
 - HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
 - JPMorgan, (2026). [Kinexys (formerly Onyx) digital assets platform ⧉](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan").
-- BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
+- BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").
 - Cambridge Centre for Alternative Finance, (2026). [Tokenised money: Use cases, interoperability and regulation ⧉](https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf "Tokenised money report").

@@ -163,7 +163,7 @@ site_software: "Static Site Generator, Rust"
 4. **復旧アーティファクト上の PQC 署名カバレッジはどれだけか。**FIPS 203 / FIPS 204 の下で署名されたボールトのスナップショット、マニフェスト、ドメイン間信頼アンカーの割合。
 5. **Cost of Contingency Capital (CoCC) は何か。**副系クリアリング口座、ウォーム・コルレス残高、事前ステージングされたトークン化ポジションに閉じ込められた遊休イントラデイ流動性の日次機会費用を、オーバーナイト金利に対して測定したもの。取締役会は銀行のレジリエンス保険の正確な価格を見なければならず、運営委員会はトラップド・キャピタルとアウテージ許容度の間のトレードオフを擁護しなければなりません — 少なくとも四半期ごとに更新します。
 
-これらが、DORA 第 6 条のエビデンス、SM&CR の上級管理者責任声明、そしてどのレールが勝つかを決めるルーティングロジックに対する [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") モデルリスク・ガバナンスにクリーンにマッピングする指標です。取締役会には語り口は必要ありません。必要なのは固い下限値を持つ四半期チャートです。
+これらが、DORA 第 6 条のエビデンス、SM&CR の上級管理者責任声明、そしてどのレールが勝つかを決めるルーティングロジックに対する [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") モデルリスク・ガバナンスにクリーンにマッピングする指標です。取締役会には語り口は必要ありません。必要なのは固い下限値を持つ四半期チャートです。
 
 ## 結論
 

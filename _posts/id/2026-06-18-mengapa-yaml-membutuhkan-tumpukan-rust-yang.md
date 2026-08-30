@@ -163,7 +163,7 @@ Untuk menjaga keamanan mutlak di seluruh estat pengembangan dan operasi, Chief I
 | **Profil keamanan memori** | Nol blok `unsafe` Rust di dalam parser dan dependensi serializer. | DORA Pasal 30 (rantai pasok) | Pemeriksaan kompiler otomatis ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)) dalam build cargo. |
 | **Validasi skema** | 100% berkas konfigurasi yang di-parse diverifikasi terhadap model [JSON Schema](https://json-schema.org/) yang valid. | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Gerbang validasi waktu-nyata menghentikan pipeline build pada pelanggaran skema. |
 | **Pergeseran konfigurasi** | Deteksi dan pemulihan waktu-nyata berkas konfigurasi lokal ke status terversi-git. | Return on Resilience (RoR) | Telemetri berkelanjutan mencatat semua modifikasi berkas lokal. |
-| **Kendali akses agen** | Izin terbatas dan hanya-baca untuk perkakas AI lokal yang beroperasi melalui konfigurasi MCP. | Manajemen risiko model ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Batas server MCP membatasi operasi agen pada direktori yang disetujui. |
+| **Kendali akses agen** | Izin terbatas dan hanya-baca untuk perkakas AI lokal yang beroperasi melalui konfigurasi MCP. | Manajemen risiko model ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Batas server MCP membatasi operasi agen pada direktori yang disetujui. |
 
 ## 04. Kekeliruan Parsing Konfigurasi yang Tidak Transparan
 

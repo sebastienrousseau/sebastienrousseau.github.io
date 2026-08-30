@@ -96,7 +96,7 @@ excerpt: "2026年のホールセール決済は、もはや単なる銀行の配
 > - **ISO 20022は現在、ホールセール決済の近代化における共通言語である。** BIS CPMIは、本標準が断片化したメッセージング、データの切り捨て、脆弱なストレート・スルー・プロセッシング、そしてコンプライアンス上の摩擦に対処すると述べている（[BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "金融メッセージングの将来：ISO 20022移行の道のりをナビゲートする")）。
 > - **G20ロードマップは依然として目標から後れを取っている。** FSB（金融安定理事会）の2026年3月の更新では、進捗は現実のものであるが、2027年の目標は未だ軌道に乗っていないとされている（[FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "クロスボーダー決済の改革")）。
 > - **RTGS（即時グロス決済）の稼働時間とアクセスは経済的な梃子である。** FSBは、半数を超える法域がRTGSの稼働時間を延長したか延長を計画していること、また決済システム全般でノンバンク・プロバイダー向けの直接アクセスが拡大していることを指摘している（[FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "クロスボーダー決済の改革")）。
-> - **イングランド銀行の刷新されたRTGSサービスは、レジリエンスと相互運用性を明示している。** 刷新されたサービスは、レジリエンス、アクセス、相互運用性、機能性を通じて、金融および通貨の安定を支えるように設計されている（[Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "刷新されたRTGSサービス — 主要な便益")）。
+> - **イングランド銀行の刷新されたRTGSサービスは、レジリエンスと相互運用性を明示している。** 刷新されたサービスは、レジリエンス、アクセス、相互運用性、機能性を通じて、金融および通貨の安定を支えるように設計されている（[Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "刷新されたRTGSサービス — 主要な便益")）。
 > - **分断はマクロのリスクである。** Atlantic Councilは、決済システムの分断がコストの上昇、決済の遅延、透明性の低下、そしてグローバルな金融統合の弱体化を招き得ると警告している（[Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "グローバル決済システムは分断しつつある")）。
 > - **DLT（分散型台帳技術）のパイロットは現在、暗号資産の演出ではなくインフラの実証実験である。** Project AgoráなどBIS関連の取り組みや欧州のホールセール決済パイロットは、トークン化された商業銀行マネーと中央銀行マネーが高額クロスボーダー決済を改善し得るかを検証している（[Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "グローバル決済システムは分断しつつある")）。
 > - **経済性は運用上のものである。** クロスボーダー決済は、リッチデータが失われ、コンプライアンス・チェックが手作業となり、流動性がタイムゾーンによって滞留し、調査に人手による修復が必要となったとき、経済的に失敗する。
@@ -121,7 +121,7 @@ BIS CPMIの2026年4月のブリーフは、ISO 20022を、決済・証券・財�
 
 決済ウィンドウが重要なのは、グローバルなホールセール決済がタイムゾーンを跨ぐためである。ファビオ・パネッタ氏の2026年5月のBIS講演は、より広い決済ウィンドウやISO 20022の完全採用を含む、各国の決済インフラを改革の座標軸として位置付けている（[BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "安定化のための相互接続：分断する世界におけるクロスボーダー決済")）。
 
-イングランド銀行の刷新されたRTGSサービスも同じ方向を指している。レジリエンス、より広範なアクセス、相互運用性、そして他の台帳と相互運用可能で決済リスクと流動性コストを削減し得る同期決済インターフェースが強調されている（[Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "刷新されたRTGSサービス — 主要な便益")）。
+イングランド銀行の刷新されたRTGSサービスも同じ方向を指している。レジリエンス、より広範なアクセス、相互運用性、そして他の台帳と相互運用可能で決済リスクと流動性コストを削減し得る同期決済インターフェースが強調されている（[Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "刷新されたRTGSサービス — 主要な便益")）。
 
 ### 3. ノンバンクのアクセスは競争構造を変える
 
@@ -202,7 +202,7 @@ FSBは、進捗は得られているものの、2027年の目標は未だ軌道�
 
 **RTGS刷新の役割とは何か。**
 
-RTGS刷新は、レジリエンス、アクセス、相互運用性、そして決済機能を改善する。イングランド銀行はまた、決済リスクと流動性コストを低減する仕組みとして、同期決済インターフェースとISO 20022を強調している（[Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "刷新されたRTGSサービス — 主要な便益")）。
+RTGS刷新は、レジリエンス、アクセス、相互運用性、そして決済機能を改善する。イングランド銀行はまた、決済リスクと流動性コストを低減する仕組みとして、同期決済インターフェースとISO 20022を強調している（[Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "刷新されたRTGSサービス — 主要な便益")）。
 
 **ステーブルコインはホールセール決済を代替するか。**
 
@@ -213,5 +213,5 @@ RTGS刷新は、レジリエンス、アクセス、相互運用性、そして�
 - BIS CPMI, (2026). [金融メッセージングの将来：ISO 20022移行の道のりをナビゲートする ⧉](https://www.bis.org/cpmi/publ/brief11.htm "BIS CPMI Brief No 11").
 - FSB, (2026). [クロスボーダー決済の改革 — FSB決済サミットにおける基調講演 ⧉](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "FSB").
 - BIS, (2026). [安定化のための相互接続：分断する世界におけるクロスボーダー決済 ⧉](https://www.bis.org/cpmi/speeches/sp260505.pdf "ファビオ・パネッタ氏の講演").
-- Bank of England, (2026). [刷新されたRTGSサービス — 主要な便益 ⧉](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Bank of England").
+- Bank of England, (2026). [刷新されたRTGSサービス — 主要な便益 ⧉](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Bank of England").
 - Atlantic Council, (2026). [グローバル決済システムは分断しつつある — G20に何ができるか ⧉](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "Atlantic Council").

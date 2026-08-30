@@ -323,7 +323,7 @@ hsh إطار لتجزئة كلمات المرور والأسرار، لا بدا
 
 ## المراجع
 
-لجنة بازل للرقابة المصرفية (2011). *Basel III: إطار تنظيمي عالمي لمصارف وأنظمة مصرفية أكثر صموداً*. بنك التسويات الدولية. متاح في: [https://www.bis.org/publ/bcbs189.pdf](https://www.bis.org/publ/bcbs189.pdf "Basel III: إطار تنظيمي عالمي لمصارف وأنظمة مصرفية أكثر صموداً")
+لجنة بازل للرقابة المصرفية (2011). *Basel III: إطار تنظيمي عالمي لمصارف وأنظمة مصرفية أكثر صموداً*. بنك التسويات الدولية. متاح في: [https://www.bis.org/publ/bcbs189.htm](https://www.bis.org/publ/bcbs189.htm "Basel III: إطار تنظيمي عالمي لمصارف وأنظمة مصرفية أكثر صموداً")
 
 Biryukov, A., Dinu, D., Khovratovich, D., and Josefsson, S. (2021). *RFC 9106: دالة Argon2 الصعبة الذاكرة لتجزئة كلمات المرور وتطبيقات إثبات العمل*. فريق هندسة الإنترنت. متاح في: [https://datatracker.ietf.org/doc/html/rfc9106](https://datatracker.ietf.org/doc/html/rfc9106 "RFC 9106 — دالة Argon2 الصعبة الذاكرة لتجزئة كلمات المرور")
 

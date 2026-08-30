@@ -259,7 +259,7 @@ Cela dépend du volume du participant. Une banque voyant un pic horaire de sorti
 - ISO 20022, (2024). [pacs.008.001.10 — Définition du message de virement client FIToFI ⧉](https://www.iso20022.org/catalogue-messages/iso-20022-messages-archive "Catalogue des messages ISO 20022").
 - NACHA, (2026). [Règles et lignes directrices d'exploitation ACH ⧉](https://www.nacha.org/rules "Règles d'exploitation NACHA").
 - BIS Committee on Payments and Market Infrastructures, (2025). [Paiements rapides et avenir du système financier ⧉](https://www.bis.org/cpmi/publ/d228.htm "Rapport CPMI sur les paiements rapides").
-- Open Banking Limited, (2026). [Spécification Variable Recurring Payments ⧉](https://www.openbanking.org.uk/vrp/ "Open Banking VRP").
+- Open Banking Limited, (2026). [Spécification Variable Recurring Payments ⧉](https://www.openbanking.org.uk/glossary/variable-recurring-payment/ "Open Banking VRP").
 - Circle Internet Financial, (2026). [Trésorerie et réserves USDC ⧉](https://www.circle.com/transparency "Transparence Circle").
 
 <!-- enrich-start -->

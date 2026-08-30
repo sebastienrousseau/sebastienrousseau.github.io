@@ -163,7 +163,7 @@ I consigli pongono ora cinque domande e si aspettano risposte numeriche.
 4. **Qual è la copertura di firma PQC sugli artefatti di ripristino?** Percentuale di snapshot del vault, manifest e ancore di fiducia inter-dominio firmati sotto FIPS 203 / FIPS 204.
 5. **Qual è il Cost of Contingency Capital (CoCC)?** Il costo opportunità giornaliero della liquidità intraday inattiva intrappolata nei conti di clearing secondari, nei saldi caldi presso le banche corrispondenti e nelle posizioni tokenizzate pre-allestite, misurato rispetto al tasso overnight. Il consiglio deve vedere il prezzo esatto dell'assicurazione di resilienza della banca, e il comitato operativo deve difendere il trade-off tra capitale intrappolato e tolleranza all'outage — aggiornato almeno con cadenza trimestrale.
 
-Sono le metriche che mappano in modo pulito sulle evidenze dell'Articolo 6 di DORA, sulle dichiarazioni di responsabilità del senior manager sotto SM&CR e sulla governance di model risk [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") sopra la logica di routing che decide quale binario vince. Al consiglio non serve una narrazione; serve un grafico trimestrale con un floor rigido.
+Sono le metriche che mappano in modo pulito sulle evidenze dell'Articolo 6 di DORA, sulle dichiarazioni di responsabilità del senior manager sotto SM&CR e sulla governance di model risk [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") sopra la logica di routing che decide quale binario vince. Al consiglio non serve una narrazione; serve un grafico trimestrale con un floor rigido.
 
 ## Conclusione
 
