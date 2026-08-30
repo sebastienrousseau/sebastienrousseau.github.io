@@ -34,6 +34,7 @@ because several other modules invoke the same entry points.
 
 from __future__ import annotations
 
+import contextlib
 import hashlib
 import shutil
 import subprocess
@@ -398,3 +399,150 @@ def test_build_changelog_main_runs(monkeypatch, tmp_path):
 
     rc = build_changelog.main()
     assert rc in (None, 0)
+
+
+# ---------------------------------------------------------------------------
+# Audit / maintenance entry points. Same contract and isolation as the block
+# above; every one of these reads and writes only local files — no network,
+# no subprocess — so a main() call is safe inside a private tree.
+#
+# Their argparse mains read sys.argv, which under pytest holds pytest's own
+# arguments, so argv is blanked as well.
+# ---------------------------------------------------------------------------
+
+
+@SKIP_IF_NO_BUILD
+def test_check_taxonomy_main_runs(monkeypatch, tmp_path):
+    """Structural validation of the canonical tag vocabulary."""
+    import check_taxonomy
+
+    _sandbox_module(check_taxonomy, monkeypatch, _isolated_tree(tmp_path))
+    monkeypatch.setattr(sys, "argv", ["check_taxonomy"])
+    rc = check_taxonomy.main()
+    assert rc in (None, 0)
+
+
+@SKIP_IF_NO_BUILD
+def test_audit_translations_main_runs(monkeypatch, tmp_path):
+    """Scans every locale post for untranslated-stub markers."""
+    import audit_translations
+
+    _sandbox_module(audit_translations, monkeypatch, _isolated_tree(tmp_path))
+    monkeypatch.setattr(sys, "argv", ["audit_translations"])
+    rc = audit_translations.main()
+    assert rc in (None, 0, 1)  # non-zero simply means defects were found
+
+
+@SKIP_IF_NO_BUILD
+def test_regen_homepage_main_runs(monkeypatch, tmp_path):
+    import regen_homepage
+
+    _sandbox_module(regen_homepage, monkeypatch, _isolated_tree(tmp_path))
+    monkeypatch.setattr(sys, "argv", ["regen_homepage"])
+    rc = regen_homepage.main()
+    assert rc in (None, 0)
+
+
+@SKIP_IF_NO_BUILD
+def test_regen_slug_maps_main_runs(monkeypatch, tmp_path):
+    import regen_slug_maps
+
+    _sandbox_module(regen_slug_maps, monkeypatch, _isolated_tree(tmp_path))
+    rc = regen_slug_maps.main()
+    assert rc in (None, 0)
+
+
+@SKIP_IF_NO_BUILD
+def test_fix_lang_switcher_main_runs(monkeypatch, tmp_path):
+    import fix_lang_switcher
+
+    _sandbox_module(fix_lang_switcher, monkeypatch, _isolated_tree(tmp_path))
+    rc = fix_lang_switcher.main()
+    assert rc in (None, 0)
+
+
+@SKIP_IF_NO_BUILD
+def test_build_rag_corpus_main_runs(monkeypatch, tmp_path):
+    """Emits the JSONL corpus and per-tag shards the MCP server serves."""
+    import build_rag_corpus
+
+    _sandbox_module(build_rag_corpus, monkeypatch, _isolated_tree(tmp_path))
+    rc = build_rag_corpus.main()
+    assert rc in (None, 0)
+
+
+@SKIP_IF_NO_BUILD
+def test_build_worker_assets_main_runs(monkeypatch, tmp_path):
+    import build_worker_assets
+
+    _sandbox_module(build_worker_assets, monkeypatch, _isolated_tree(tmp_path))
+    rc = build_worker_assets.main()
+    assert rc in (None, 0)
+
+
+@SKIP_IF_NO_BUILD
+def test_check_voice_main_runs_offline(monkeypatch, tmp_path):
+    """The editorial gate, driven through its CLI with the network disabled.
+
+    --no-network is passed rather than stubbed: it is the flag a maintainer
+    uses when drafting offline, so exercising it here also proves the flag
+    still reaches check_article.
+    """
+    import check_voice
+
+    tree = _isolated_tree(tmp_path)
+    _sandbox_module(check_voice, monkeypatch, tree)
+    post = next(iter(sorted((tree / "_posts").glob("20*.md"))), None)
+    if post is None:  # pragma: no cover - the fixture tree always has posts
+        pytest.skip("no dated post in the tree")
+    monkeypatch.setattr(sys, "argv", ["check_voice", str(post), "--no-network", "--no-date-check"])
+    rc = check_voice.main()
+    assert rc in (0, 1)  # 1 simply means the article has defects
+
+
+@SKIP_IF_NO_BUILD
+def test_check_voice_main_reports_a_missing_path(monkeypatch, tmp_path):
+    import check_voice
+
+    _sandbox_module(check_voice, monkeypatch, _isolated_tree(tmp_path))
+    monkeypatch.setattr(sys, "argv", ["check_voice", "no-such-file.md", "--no-network"])
+    assert check_voice.main() == 1
+
+
+@SKIP_IF_NO_BUILD
+def test_check_voice_main_prints_help_without_a_target(monkeypatch, tmp_path):
+    import check_voice
+
+    _sandbox_module(check_voice, monkeypatch, _isolated_tree(tmp_path))
+    monkeypatch.setattr(sys, "argv", ["check_voice"])
+    assert check_voice.main() == 2
+
+
+@SKIP_IF_NO_BUILD
+def test_pick_banner_main_lists(monkeypatch, tmp_path):
+    import pick_banner
+
+    _sandbox_module(pick_banner, monkeypatch, _isolated_tree(tmp_path))
+    monkeypatch.setattr(sys, "argv", ["pick_banner", "list", "--limit", "3"])
+    with contextlib.suppress(SystemExit):
+        pick_banner.main()
+
+
+@SKIP_IF_NO_BUILD
+def test_automate_tags_main_runs(monkeypatch, tmp_path):
+    """Rewrites the tags line across every post and locale — in a private tree."""
+    import automate_tags
+
+    _sandbox_module(automate_tags, monkeypatch, _isolated_tree(tmp_path))
+    with contextlib.suppress(SystemExit):
+        automate_tags.main()
+
+
+@SKIP_IF_NO_BUILD
+def test_backfill_locale_frontmatter_main_runs(monkeypatch, tmp_path):
+    import backfill_locale_frontmatter
+
+    _sandbox_module(backfill_locale_frontmatter, monkeypatch, _isolated_tree(tmp_path))
+    monkeypatch.setattr(sys, "argv", ["backfill_locale_frontmatter"])
+    with contextlib.suppress(SystemExit):
+        backfill_locale_frontmatter.main()
