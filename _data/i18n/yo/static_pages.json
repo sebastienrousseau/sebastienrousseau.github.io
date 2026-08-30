@@ -20,52 +20,45 @@
   "_comment": "Yorùbá (yo) static-page metadata — DRAFT pending native review.",
   "404": {
     "title": "404 — Sebastien Rousseau",
-    "subtitle": "Page not found.",
-    "description": "The requested page could not be found.",
-    "keywords": "404, not found",
-    "_draft": true
+    "subtitle": "A kò rí ojú-ìwé náà.",
+    "description": "A kò rí ojú-ìwé tí o béèrè fún, tàbí kò sí mọ́.",
+    "keywords": "404, a kò rí ojú-ìwé"
   },
   "about": {
-    "title": "About — Sebastien Rousseau",
-    "subtitle": "Shaping the future of banking and financial services through the strategic integration of AI, post-quantum cryptography and blockchain technology.",
-    "description": "Sebastien Rousseau, senior banking technologist: applied AI, ISO 20022 migration, post-quantum cryptography, structural transformation of wholesale payments.",
-    "keywords": "Sebastien Rousseau, biography, banking, payments, AI, ISO 20022, post-quantum cryptography, HSBC, PayPal, Barclays",
-    "_draft": true
+    "title": "Nípa mi — Sebastien Rousseau",
+    "subtitle": "Ń ṣe àgbékalẹ̀ ọjọ́ iwájú báńkì àti àwọn iṣẹ́ ìnáwó nípasẹ̀ ìsopọ̀ ọgbọ́n-ètò ti AI, kírípítógíráfì lẹ́yìn-kuántọ́mù àti ìmọ̀-ẹ̀rọ blockchain.",
+    "description": "Sebastien Rousseau, onímọ̀-ẹ̀rọ báńkì àgbà: AI ìlò, ìṣílọ ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, ìyípadà ìpìlẹ̀ àwọn ìsanwó ńlá.",
+    "keywords": "Sebastien Rousseau, ìtàn ìgbésí ayé, báńkì, ìsanwó, AI, ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, HSBC, PayPal, Barclays"
   },
   "accessibility": {
-    "title": "Accessibility — Sebastien Rousseau",
-    "subtitle": "Committed to digital accessibility for people with disabilities.",
-    "description": "Accessibility statement: WCAG 2.2 AA compliance, inclusive principles, feedback and contact details for reporting issues.",
-    "keywords": "accessibility, WCAG, compliance, digital inclusion, audit",
-    "_draft": true
+    "title": "Ìráyèsí — Sebastien Rousseau",
+    "subtitle": "A pinnu láti rí i pé àwọn ènìyàn tí ó ní àìlera lè lo ojú-òpó yìí.",
+    "description": "Ọ̀rọ̀ nípa ìráyèsí: ìbámu WCAG 2.2 AA, àwọn ìlànà ìfisínú, èsì àti àwọn ọ̀nà ìbánisọ̀rọ̀ láti ròyìn ìṣòro.",
+    "keywords": "ìráyèsí, WCAG, ìbámu, ìfisínú oníńọ́mbà, àyẹ̀wò"
   },
   "contact": {
-    "title": "Contact — Sebastien Rousseau",
-    "subtitle": "Have a question or need advice? Get in touch.",
-    "description": "Contact Sebastien Rousseau for consulting on payments transformation, ISO 20022 migration or post-quantum strategy.",
-    "keywords": "contact, consulting, payments, ISO 20022, post-quantum cryptography",
-    "_draft": true
+    "title": "Ìbánisọ̀rọ̀ — Sebastien Rousseau",
+    "subtitle": "Ṣé o ní ìbéèrè tàbí o nílò ìmọ̀ràn? Kàn sí mi.",
+    "description": "Kàn sí Sebastien Rousseau fún ìmọ̀ràn lórí ìyípadà ìsanwó, ìṣílọ ISO 20022 tàbí ètò lẹ́yìn-kuántọ́mù.",
+    "keywords": "ìbánisọ̀rọ̀, ìmọ̀ràn, ìsanwó, ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù"
   },
   "made-with-static-site-generator": {
-    "title": "Made with Static Site Generator — Sebastien Rousseau",
-    "subtitle": "Discover the next-generation static site generator.",
-    "description": "This site is generated with Static Site Generator, a fast Rust-based static site generator.",
-    "keywords": "Static Site Generator, static site generator, Rust, performance",
-    "_draft": true
+    "title": "Tí a fi Static Site Generator ṣe — Sebastien Rousseau",
+    "subtitle": "Ṣàwárí static site generator ìran tuntun.",
+    "description": "A fi Static Site Generator ṣe ojú-òpó yìí, static site generator yíyára tí a kọ ní Rust.",
+    "keywords": "Static Site Generator, static site generator, Rust, iṣẹ́ ṣíṣe"
   },
   "offline": {
-    "title": "Offline — Sebastien Rousseau",
-    "subtitle": "Check your connection and try again.",
-    "description": "You are offline. Please reconnect to access the content.",
-    "keywords": "offline, PWA",
-    "_draft": true
+    "title": "Kò sí lórí ayélujára — Sebastien Rousseau",
+    "subtitle": "Ṣàyẹ̀wò ìsopọ̀ rẹ kí o sì tún gbìyànjú.",
+    "description": "O kò sí lórí ayélujára. Jọ̀wọ́ tún sopọ̀ láti wo àkóónú náà.",
+    "keywords": "kò sí lórí ayélujára, PWA"
   },
   "papers": {
-    "title": "Papers — Sebastien Rousseau",
-    "subtitle": "Industry white papers and applied research for senior leaders in payments and security.",
-    "description": "Articles, reports and publications by Sebastien Rousseau on AI, ISO 20022 payments and post-quantum cryptography.",
-    "keywords": "papers, publications, reports, research, ISO 20022, AI, post-quantum cryptography",
-    "_draft": true
+    "title": "Àwọn ìwé — Sebastien Rousseau",
+    "subtitle": "Àwọn ìwé funfun ilé-iṣẹ́ àti ìwádìí ìlò fún àwọn olórí àgbà nínú ìsanwó àti ààbò.",
+    "description": "Àwọn àpilẹ̀kọ, ìròyìn àti ìtẹ̀jáde láti ọwọ́ Sebastien Rousseau lórí AI, ìsanwó ISO 20022 àti kírípítógíráfì lẹ́yìn-kuántọ́mù.",
+    "keywords": "àwọn ìwé, ìtẹ̀jáde, ìròyìn, ìwádìí, ISO 20022, AI, kírípítógíráfì lẹ́yìn-kuántọ́mù"
   },
   "playlists": {
     "title": "Àkójọ orin 39 fún ìdojúkọ àti iṣẹ́ jíjìn — Sebastien Rousseau",
@@ -74,39 +67,34 @@
     "keywords": "àkójọ orin ìdojúkọ, orin iṣẹ́ jíjìn, àkójọ orin iṣẹ́, àkójọ orin ìkẹ́kọ̀ọ́, àkójọ neo soul, àkójọ nu jazz, àkójọ jazz funk, àkójọ boom bap, àkójọ jazz rap, àkójọ French touch, àkójọ deep house, lo-fi fún ìkẹ́kọ̀ọ́, àkójọ afrobeat, àkójọ disco house, àkójọ downtempo, àkójọ trip-hop, àkójọ orin Spotify, àkójọ orin Apple Music, àkójọ orin àyànfẹ́, orin fún kíkọ kóòdù"
   },
   "privacy": {
-    "title": "Privacy Policy — Sebastien Rousseau",
-    "subtitle": "Your privacy matters.",
-    "description": "How this site collects, uses and protects your data. Anonymous analytics, cookies, hosting and GDPR rights.",
-    "keywords": "privacy, GDPR, cookies, personal data, analytics",
-    "_draft": true
+    "title": "Ìlànà ìpamọ́ — Sebastien Rousseau",
+    "subtitle": "Ìpamọ́ rẹ ṣe pàtàkì.",
+    "description": "Bí ojú-òpó yìí ṣe ń kó, lò àti dáàbò bo dátà rẹ. Ìtúpalẹ̀ aláìlórúkọ, kúkì, ìgbàlejò àti ẹ̀tọ́ GDPR.",
+    "keywords": "ìpamọ́, GDPR, kúkì, dátà ara ẹni, ìtúpalẹ̀"
   },
   "projects": {
-    "title": "Projects — Sebastien Rousseau",
-    "subtitle": "Open-source projects in Python, Rust and JavaScript for the future of finance.",
-    "description": "Portfolio of open-source libraries Sebastien Rousseau maintains for payments, cross-border settlement and quantum-resistant cryptography.",
-    "keywords": "open-source projects, Python, Rust, payments, ISO 20022, post-quantum cryptography",
-    "_draft": true
+    "title": "Àwọn iṣẹ́ àkànṣe — Sebastien Rousseau",
+    "subtitle": "Àwọn iṣẹ́ àkànṣe orísun ṣíṣí ní Python, Rust àti JavaScript fún ọjọ́ iwájú ìnáwó.",
+    "description": "Àkójọ àwọn ilé-ìkàwé orísun ṣíṣí tí Sebastien Rousseau ń tọ́jú fún ìsanwó, ìsanwó ààlà-ìkọjá àti kírípítógíráfì tí ó lè kojú kuántọ́mù.",
+    "keywords": "àwọn iṣẹ́ àkànṣe orísun ṣíṣí, Python, Rust, ìsanwó, ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù"
   },
   "tags": {
-    "title": "Tags — Sebastien Rousseau",
-    "subtitle": "Browse the site by topic: AI, payments, post-quantum cryptography, open source.",
-    "description": "Browse articles by tag: AI, ISO 20022, blockchain, post-quantum cryptography and more.",
-    "keywords": "tags, browse by topic",
-    "_draft": true
+    "title": "Àwọn àmì — Sebastien Rousseau",
+    "subtitle": "Ṣàwárí ojú-òpó nípa kókó: AI, ìsanwó, kírípítógíráfì lẹ́yìn-kuántọ́mù, orísun ṣíṣí.",
+    "description": "Ṣàwárí àwọn àpilẹ̀kọ nípa àmì: AI, ISO 20022, blockchain, kírípítógíráfì lẹ́yìn-kuántọ́mù àti bẹ́ẹ̀ bẹ́ẹ̀ lọ.",
+    "keywords": "àwọn àmì, ṣàwárí nípa kókó"
   },
   "terms": {
-    "title": "Terms of Use — Sebastien Rousseau",
-    "subtitle": "General terms of use of the site.",
-    "description": "General terms of use for sebastienrousseau.com: content licence, restrictions, trademarks and jurisdiction.",
-    "keywords": "terms, legal notice, licence, copyright",
-    "_draft": true
+    "title": "Àwọn òfin ìlò — Sebastien Rousseau",
+    "subtitle": "Àwọn òfin gbogbogbò fún lílo ojú-òpó yìí.",
+    "description": "Àwọn òfin gbogbogbò fún lílo sebastienrousseau.com: ìwé-àṣẹ àkóónú, ìdíwọ́, àmì-òwò àti agbègbè òfin.",
+    "keywords": "àwọn òfin, ìkìlọ̀ òfin, ìwé-àṣẹ, ẹ̀tọ́ àdàkọ"
   },
   "thanks": {
-    "title": "Thanks — Sebastien Rousseau",
-    "subtitle": "Thank you for getting in touch!",
-    "description": "Thank you for your message. I will reply very soon.",
-    "keywords": "thanks",
-    "_draft": true
+    "title": "Ẹ ṣé — Sebastien Rousseau",
+    "subtitle": "Ẹ ṣé fún kíkàn sí mi!",
+    "description": "Ẹ ṣé fún ìránṣẹ́ rẹ. Èmi yóò dáhùn láìpẹ́.",
+    "keywords": "ẹ ṣé"
   },
   "topics": {
     "title": "Àwọn Kókó — Sebastien Rousseau",
