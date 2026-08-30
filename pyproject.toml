@@ -80,3 +80,20 @@ disallow_incomplete_defs = true
 warn_unused_ignores = true
 warn_redundant_casts = true
 exclude = '^(docs|public|audits)/'
+
+[tool.coverage.report]
+# Structural boilerplate, excluded rather than tested. Reaching an
+# `if __name__ == "__main__":` block from inside pytest needs runpy tricks or
+# a subprocess, both of which exercise Python's module loader rather than any
+# logic here — every main() worth running is called directly by
+# tests/unit/test_builder_main_smoke.py instead.
+#
+# `exclude_also` ADDS to coverage's defaults (unlike `exclude_lines`, which
+# replaces them), so `# pragma: no cover` keeps working alongside this.
+#
+# This lives in pyproject.toml, not .coveragerc: that file is gitignored, so
+# it never reaches CI and any rule written there would apply locally only —
+# which is exactly how a local measurement drifts from the gate.
+exclude_also = [
+    '^if __name__ == .__main__.:$',
+]
