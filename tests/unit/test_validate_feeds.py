@@ -297,11 +297,15 @@ def test_a_complete_news_block_is_clean() -> None:
 @pytest.mark.parametrize(
     "item",
     [
-        "<item><title>T</title><link>https://sebastienrousseau.com/a/</link>"
-        "<description>tiny</description></item>",
+        (
+            "<item><title>T</title><link>https://sebastienrousseau.com/a/</link>"
+            + "<description>tiny</description></item>"
+        ),
         f"<item><title>{'t' * 250}</title><link>https://sebastienrousseau.com/a/</link></item>",
-        "<item><title>T</title><link>https://sebastienrousseau.com/a/</link>"
-        "<pubDate>nonsense</pubDate></item>",
+        (
+            "<item><title>T</title><link>https://sebastienrousseau.com/a/</link>"
+            + "<pubDate>nonsense</pubDate></item>"
+        ),
     ],
 )
 def test_content_quality_issues_never_become_errors(item: str) -> None:

@@ -57,7 +57,7 @@ def test_boolean_scorer() -> None:
 
 
 def _metric(value: object = qs.UNMEASURED, fn=None) -> qs.Metric:
-    return qs.Metric(key="k", label="l", how="h", score_fn=fn or (lambda v: float(v)), value=value)
+    return qs.Metric(key="k", label="l", how="h", score_fn=fn or float, value=value)
 
 
 def test_unmeasured_never_scores() -> None:
