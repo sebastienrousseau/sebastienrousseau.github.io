@@ -33,7 +33,7 @@
 - [Pipeline overview](#pipeline-overview) — source → compile → generate → postbuild → CI
 - [Build stages](#build-stages) — the six generator steps
 - [Postbuild passes](#postbuild-passes) — per-page transforms
-- [Internationalisation](#internationalisation) — 28 locales, translation pipeline, parity gates
+- [Internationalisation](#internationalisation) — 34 locales, translation pipeline, parity gates
 
 **Platform**
 
@@ -74,7 +74,7 @@ dev tools:
 git clone https://github.com/sebastienrousseau/sebastienrousseau.github.io.git
 cd sebastienrousseau.github.io
 make bootstrap   # provision the pinned toolchain + dependencies (idempotent)
-make build       # emits public/ across 28 locales — first build target: under 10 min
+make build       # emits public/ across 34 locales — first build target: under 10 min
 ```
 
 `make serve` builds and serves on <http://127.0.0.1:8000>. Ensure your
@@ -86,7 +86,7 @@ commit-signing key is active before committing.
 ```bash
 cargo install ssg --locked                    # Rust SSG compiler (tracks latest — ADR-0002)
 pip install -r requirements.txt               # Python build dependencies
-./build.sh                                     # emits public/ across 28 locales
+./build.sh                                     # emits public/ across 34 locales
 ```
 
 </details>
@@ -286,6 +286,16 @@ Pushing to `main` triggers CI, which builds the site, uploads `public/` as a Pag
 The pipeline works for a single-language site by disabling the active locales in the language registry; the translation scripts can then be removed. Customise `_layouts/` and the CSS to rebrand.
 
 ## Companion docs
+
+**Project**
+
+- [Governance](GOVERNANCE.md) — roles, decision-making, bus factor, continuity
+- [Roadmap](ROADMAP.md) — what the next year holds, and what it deliberately does not
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Contributing](CONTRIBUTING.md)
+- [Security policy](SECURITY.md)
+
+**Technical**
 
 - [Architecture](project-docs/architecture.md)
 - [CI Gates](project-docs/ci.md)
