@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit tests for postbuild_assets.normalise_csp.
 
 ssg generates its own listing pages (tag indexes) without going through our

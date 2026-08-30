@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Pick a banner image from the local CDN inventory and emit the
 CloudCDN transform URL.
 

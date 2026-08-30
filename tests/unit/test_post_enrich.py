@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for post_enrich text helpers — Phase 1.3.
 
 post_enrich.py auto-derives each post's lead block (TL;DR + key takeaways) from

@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Audit every <a href> inside built HTML pages.
 
 Internal links (absolute paths starting with '/') are resolved against ``public/``

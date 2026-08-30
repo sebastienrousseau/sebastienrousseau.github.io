@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit tests for scripts/generators/build_news_sitemap.py."""
 
 from __future__ import annotations

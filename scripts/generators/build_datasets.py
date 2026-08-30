@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Publish the index and scorecard articles as machine-readable datasets.
 
 Eleven articles are named as an Index or a Scorecard and carry the scoring

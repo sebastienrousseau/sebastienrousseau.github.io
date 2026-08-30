@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Tests for scripts/lib/_frontmatter.py.
 
 Covers the canonical ``parse_frontmatter`` (now the single parser behind

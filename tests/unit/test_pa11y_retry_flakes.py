@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit tests for scripts/seo_and_audit/pa11y_retry_flakes.py.
 
 We don't actually exercise the subprocess retry here — that needs the

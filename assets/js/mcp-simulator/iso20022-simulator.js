@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 // <iso20022-simulator> - the /iso20022-mcp/ hub's interactive tool-call
 // simulator, mirroring the <index-scorecard> architecture (ADR-0011):
 //

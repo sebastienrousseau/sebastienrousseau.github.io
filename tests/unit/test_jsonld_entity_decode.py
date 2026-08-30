@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """JSON-LD payloads must carry decoded text, not HTML entities.
 
 A ``<script type="application/ld+json">`` body is not HTML-parsed, so an

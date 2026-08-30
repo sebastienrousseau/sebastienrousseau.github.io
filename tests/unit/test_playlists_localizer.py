@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Fallback paths in the /playlists/ localizer.
 
 The happy path — 34 complete catalogues swapped into 34 forked English

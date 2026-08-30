@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Verify the WCAG 2.2 criteria ssg cannot check statically.
 
 `wcag-compliance.json` classifies each criterion as automated / runtime /

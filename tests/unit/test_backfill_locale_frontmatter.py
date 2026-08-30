@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Coverage for backfill_locale_frontmatter — Phase 1.3 + Phase 4.1 guard.
 
 The 500-line per-locale stop-word table was extracted to

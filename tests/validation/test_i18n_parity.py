@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Smoke test: every active non-EN language has a 1:1 slug map vs English.
 
 This is the parity gate for the multi-language rollout. For every

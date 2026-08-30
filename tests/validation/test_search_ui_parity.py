@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Guards for the Phase-2 client-side search (ADR-0010).
 
 Pins the contract between the search runtime and the rest of the build so a

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Per-page social furniture: share rail, syndication (LinkedIn) panel, reuse
 panel, action rail, oEmbed link, and byline strap.
 

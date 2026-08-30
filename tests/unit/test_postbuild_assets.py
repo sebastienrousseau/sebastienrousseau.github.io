@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Tests for the postbuild asset passes — stylesheet sanitising,
 image dimensions, asset fingerprints, speculation rules, and the
 hero banner.

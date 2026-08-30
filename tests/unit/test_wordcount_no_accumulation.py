@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """``inject_word_count`` must set wordCount, not add another copy.
 
 The pass carried a comment saying the key was inserted "if not already

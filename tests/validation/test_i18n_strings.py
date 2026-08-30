@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Smoke test: every UI-strings JSON has the same key set as English.
 
 The English file at ``_data/i18n/en/strings.json`` is the canonical

@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Generate the 10 non-index layouts from the new index.html shell.
 
 The shared shell is everything except the body's `<section class="ap-hero">…</section>`,

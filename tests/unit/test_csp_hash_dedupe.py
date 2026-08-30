@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """`script-src` must not accumulate duplicate inline-script hashes.
 
 inject_jsonld_hashes prepends the page's hashes into script-src, and runs

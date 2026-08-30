@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """The ssg version policy must have exactly one value across the repo.
 
 `.github/workflows/ci.yml` is the single source of truth (ADR-0002): it is

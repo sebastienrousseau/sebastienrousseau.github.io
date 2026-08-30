@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Collapse byte-identical ``/_csp/`` assets onto one URL.
 
 Every layout embeds the site stylesheet inline, and ssg extracts each layout's

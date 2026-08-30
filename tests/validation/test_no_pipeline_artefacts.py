@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """No translation-pipeline artefacts may reach a post.
 
 Articles are drafted and translated through tooling, and four of its

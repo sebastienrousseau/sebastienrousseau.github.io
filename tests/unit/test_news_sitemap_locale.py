@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Per-locale news sitemaps: 48-hour window and a real publication name.
 
 `/fr/news-sitemap.xml` shipped 84 KB of months-old entries naming the

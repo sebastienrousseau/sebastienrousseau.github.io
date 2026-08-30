@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Absolute self-links are internal links.
 
 Classifying them as external meant 113 of them could 404 while the internal

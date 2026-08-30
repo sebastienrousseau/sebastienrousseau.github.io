@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit tests for the postbuild SEO meta passes added in the brand-pivot
 work: clean_meta_description, normalize_canonical, fix_article_og_type,
 inject_kpi_metrics, and align_jsonld_inlanguage (plus their helpers).

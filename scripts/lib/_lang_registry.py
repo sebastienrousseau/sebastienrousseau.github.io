@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Single source of truth for the languages this site publishes.
 
 Every i18n-aware part of the build pipeline (translation renderer,

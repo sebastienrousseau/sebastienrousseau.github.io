@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit tests for tests/validation/test_sitemap_completeness.py.
 
 The gate reads the *root* sitemap and follows sitemap indexes. It must not

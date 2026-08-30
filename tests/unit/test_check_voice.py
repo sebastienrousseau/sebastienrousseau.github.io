@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for the publishing voice/structure gate — Phase 1.3.
 
 `scripts/editorial/check_voice.py` gates every article before the 27-locale

@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """A localised page must not serve an English <title>.
 
 Every locale page is self-canonical and declares its own ``lang`` — ``ms``

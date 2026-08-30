@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Every pinned requirement must equal what its lock actually installs.
 
 CI installs with `pip install --require-hashes -r requirements-dev.lock`, so

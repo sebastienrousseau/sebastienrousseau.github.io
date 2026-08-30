@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Assert the deployed site actually serves what the build produced.
 
 Every gate in this repo runs against ``public/`` on a runner. Nothing checked

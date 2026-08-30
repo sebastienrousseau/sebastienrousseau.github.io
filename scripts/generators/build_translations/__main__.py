@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """CLI entry point — ``python3 scripts/generators/build_translations/__main__.py``
 (direct-file invocation from build.sh) or ``python3 -m build_translations``.
 """

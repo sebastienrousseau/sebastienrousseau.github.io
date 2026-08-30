@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Golden-file snapshot tests for the listing generators' pure render
 functions — improvement-plan-2026 Phase 1.4.
 

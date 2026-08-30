@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Case-study render components (leaf): reusable sub-renderers — breadcrumb,
 meta bars, side panels, share rail, inline outcome/rigour/validation blocks,
 pull-quotes, related-article links, and the _esc/_json_ld_block helpers.

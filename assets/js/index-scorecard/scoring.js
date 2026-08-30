@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 // Index-scorecard scoring core — pure, DOM-free ES module.
 //
 // This module is the single source of truth for how a reader's per-dimension

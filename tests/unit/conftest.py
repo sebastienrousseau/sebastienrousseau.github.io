@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """pytest collection hook: wire scripts/ subpackages into sys.path so
 test files can ``import postbuild``, ``import translate_post``, etc.
 unchanged after the scripts/ reorg into domain subdirs.

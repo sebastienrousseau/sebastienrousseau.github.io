@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Shared inline SVG glyphs for per-card share rails.
 
 Six monochrome 16x16 icons (X, LinkedIn, Facebook, WhatsApp, email, copy-link)

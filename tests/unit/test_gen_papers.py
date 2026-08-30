@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for gen_papers render helpers — Phase 1.3.
 
 gen_papers.py builds the /papers newsroom page. It was untested. Cover the

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Tests for scripts/_lang_registry.py.
 
 Covers the loaders + slug-resolution helpers used by every i18n

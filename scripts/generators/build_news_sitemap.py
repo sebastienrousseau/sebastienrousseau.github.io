@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Generate a Google News XML sitemap at ``public/news-sitemap.xml``.
 
 Google News sitemaps must only contain articles published in the last 48 hours.

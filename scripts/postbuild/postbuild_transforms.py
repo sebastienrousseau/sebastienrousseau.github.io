@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Page-level HTML transform passes: ItemList JSON-LD, comprehensive
 last-modified stamping, home/topic hreflang blocks, localhost-URL scrubbing,
 redundant link-title stripping, theme-init inlining, and persisted-transform

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit tests for scripts/editorial/translate_post.py — the per-locale stub
 scaffolder used by the daily-publishing flow. Body translation itself
 runs in Claude Code; this script does the deterministic part

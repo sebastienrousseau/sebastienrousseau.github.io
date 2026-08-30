@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for gen_projects render helpers — Phase 1.3.
 
 gen_projects.py builds the /projects newsroom page. It was untested. Cover the

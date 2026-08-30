@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Every locale post's `date:` must equal its English counterpart's.
 
 An earlier translation pass localised the field ("28 juin 2026",

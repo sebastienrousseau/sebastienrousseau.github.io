@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for check_taxonomy validators — Phase 1.3.
 
 check_taxonomy.py validates _data/taxonomy.yml (required fields, allowed

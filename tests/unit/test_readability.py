@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for readability — Phase 1.3.
 
 readability.py scores article prose (Flesch Reading Ease + Flesch-Kincaid grade)

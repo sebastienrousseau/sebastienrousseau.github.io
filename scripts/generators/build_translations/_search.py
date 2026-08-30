@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Search index (per-language) — walks the rendered language tree and
 builds the entries consumed by the Static Site Generator search palette."""
 

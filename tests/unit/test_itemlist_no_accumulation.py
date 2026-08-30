@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """``inject_itemlist`` must set the listing graph, not append another.
 
 Postbuild is re-run over built pages. This pass inserted a fresh

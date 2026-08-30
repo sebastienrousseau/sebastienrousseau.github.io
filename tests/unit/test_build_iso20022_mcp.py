@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for build_iso20022_mcp (+ the shared _swap_into_shell it
 uses from build_case_studies).
 

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Coverage for postbuild_lib/_i18n — the shared i18n foundation (Phase 4.1).
 
 _i18n was extracted from article_furniture as a base module (breaking the

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """A page must not high-priority-fetch an image it never renders.
 
 `/projects/` scored 0.93 against a 0.94 Lighthouse floor — identical across

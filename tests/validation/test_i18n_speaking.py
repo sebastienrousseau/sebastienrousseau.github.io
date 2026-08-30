@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Per-locale /speaking/ overlays must stay aligned with the English source.
 
 ``build_speaking._load_overlay`` merges ``_data/proof/i18n/<lang>/speaking.md``

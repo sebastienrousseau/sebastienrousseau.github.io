@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """`build.sh` must pin the build clock, or the output is not reproducible.
 
 ssg stamps `metadata.timestamp` into `sbom.cdx.json` from the wall clock

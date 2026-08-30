@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit tests for the index-scorecard postbuild injection pass.
 
 Covers every branch of ``postbuild_lib.index_scorecard`` (the build gates the

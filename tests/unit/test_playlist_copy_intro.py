@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """``_playlist_copy.INTRO_PARAGRAPHS`` must mirror ``_posts/playlists.md``.
 
 The /playlists/ intro is authored as the markdown body of

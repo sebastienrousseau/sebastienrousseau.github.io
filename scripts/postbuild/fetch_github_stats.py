@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Fetch per-repository GitHub stats and persist to ``public/_data/gh-stats.json``.
 
 Build-time fetch beats an Edge Function for a static site: same freshness

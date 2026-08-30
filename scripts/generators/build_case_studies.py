@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Generate outcome-led case-study pages under ``public/case-studies/``.
 
 Phase 1 of the Authority Playbook (see plan §1). Each case study is a

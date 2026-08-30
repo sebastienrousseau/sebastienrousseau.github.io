@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """The home page's social card comes from its authored banner (F-02).
 
 The home page uses the ``index`` layout, which emits no ``banner-src`` marker

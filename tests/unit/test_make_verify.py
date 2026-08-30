@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Guard for the `make verify` repo-integrity regression suite — Phase 1.
 
 `make verify` is the single command that must exercise every integrity gate

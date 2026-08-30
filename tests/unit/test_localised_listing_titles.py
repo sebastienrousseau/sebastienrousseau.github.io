@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Locale listing titles are put into their own language.
 
 2154 of the 7004 non-EN pages served a <title> byte-identical to an English

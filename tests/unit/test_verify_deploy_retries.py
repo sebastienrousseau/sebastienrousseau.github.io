@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """A post-deploy probe must not race the CDN.
 
 `verify_deploy` runs immediately after the deploy step. GitHub Pages answers

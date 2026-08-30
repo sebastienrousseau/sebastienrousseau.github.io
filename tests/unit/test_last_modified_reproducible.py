@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """`update_last_modified_date` is what made the rebuild non-identical.
 
 A page with a `last_reviewed` date in frontmatter gets that date. A page

@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Translate incomplete locale posts with the Gemini API.
 
 This backend is intended for long-form posts that exceed practical Ollama

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for build_case_studies — Phase 1.3 / de-risks Phase 4.1.
 
 build_case_studies.py (1.5k LOC, a Phase 4.1 split target) generates the

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Every counter name used in postbuild must exist in `__slots__`.
 
 `_PostbuildCounters` declares `__slots__`, so assigning a name that is not

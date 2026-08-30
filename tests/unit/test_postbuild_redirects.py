@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for postbuild_lib.redirects — the /papers -> /research
 legacy-URL conversion (5-item nav re-architecture).
 

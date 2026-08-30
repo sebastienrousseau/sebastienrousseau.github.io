@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Article renderer — one French page from English shell + French
 frontmatter + body, plus the lead-aside / takeaway / author-card
 furniture that goes with it."""

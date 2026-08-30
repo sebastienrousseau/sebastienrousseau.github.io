@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Per-language mutable state shared by every renderer module.
 
 ``main()`` drives one language at a time: ``bind_lang(code)`` rebinds

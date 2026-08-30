@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Scaffold per-locale stubs + slug-map entries for a newly-promoted
 EN post. *Body translation is intentionally NOT done here* — that step
 runs inside Claude Code on your laptop, using your Claude subscription,

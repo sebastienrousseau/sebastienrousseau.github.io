@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Asset-processing passes (leaf): JS/CSS minification, subresource-integrity
 hashes, asset fingerprinting, CDN image-transform rewriting, and LCP preload
 injection. Split from postbuild (Phase 4.1).

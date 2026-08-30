@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Tests for the postbuild structured-data passes — word count,
 about/mentions graph, HowTo JSON-LD, and FAQ-to-QAPage conversion.
 

@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Backfill ``news_publication_date:`` into build-copy posts that lack one.
 
 Why: ssg's news-sitemap generator reads ``news_publication_date`` and, when

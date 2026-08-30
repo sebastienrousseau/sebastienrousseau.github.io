@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Generate static oEmbed JSON per article — ``/oembed/<slug>.json``.
 
 oEmbed lets services like Notion, Discord, Slack, WordPress, Hugo and

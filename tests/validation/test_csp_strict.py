@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """CSP regression test — keep the Content-Security-Policy tight.
 
 The policy is shipped via `<meta http-equiv="Content-Security-Policy">`

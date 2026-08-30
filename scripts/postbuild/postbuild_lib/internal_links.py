@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Contextual in-prose internal linking across the article corpus.
 
 The site had 105 dated articles on six coherent pillars and almost nothing

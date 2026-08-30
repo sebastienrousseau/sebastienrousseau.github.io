@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Lightweight structured-data + feed validator for the built tree.
 
 Two passes, both surfacing the exact failure modes we've already hit on

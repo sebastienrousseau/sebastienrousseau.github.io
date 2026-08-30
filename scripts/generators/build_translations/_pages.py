@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Listing / static-page renderers: articles hub, home page, static-page
 mirrors and topic sub-pages."""
 

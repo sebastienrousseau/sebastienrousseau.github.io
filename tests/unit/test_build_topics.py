@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for build_topics — Phase 1.3.
 
 build_topics.py generates the /topics/ hub + per-topic cluster pages. It was

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for case_studies_schema — Phase 4.1 + 1.3.
 
 Leaf module split from build_case_studies: URL builders + JSON-LD (Article,

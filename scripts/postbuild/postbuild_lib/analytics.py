@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Privacy-preserving traffic measurement, off by default until configured.
 
 Nothing measured the site. No Plausible, Umami, Fathom, GA4 or Cloudflare

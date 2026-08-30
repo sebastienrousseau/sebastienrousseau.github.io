@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Run one pa11y shard in bounded chunks so a wedged Chrome costs minutes.
 
 A headless-Chrome process that stops responding hangs pa11y-ci on the URL it

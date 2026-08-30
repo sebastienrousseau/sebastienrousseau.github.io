@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Smoke test: every author-card JSON has the same key set as English.
 
 EN file at ``_data/i18n/en/author.json`` is the canonical reference.

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Dataset distributions are asserted by the deploy check.
 
 A Dataset advertising a distribution.contentUrl that 404s is worse than

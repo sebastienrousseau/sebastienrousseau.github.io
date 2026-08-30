@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Guard for the case-study i18n data extraction — Phase 4.1.
 
 The per-locale case-study UI labels were moved out of build_case_studies.py

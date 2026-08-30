@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 // ISO 20022 MCP simulator data module. GENERATED from real captured MCP
 // stdio transcripts; do not hand-edit the args/result payloads.
 //

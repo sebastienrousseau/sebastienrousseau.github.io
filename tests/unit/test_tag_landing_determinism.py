@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """The tag landings must not depend on Python's per-process hash seed.
 
 `_ingest_post` built its co-occurrence counter by iterating a `set`, whose

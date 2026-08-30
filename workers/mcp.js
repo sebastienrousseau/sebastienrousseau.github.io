@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 /**
  * MCP (Model Context Protocol) server routes for sebastienrousseau.com.
  *
