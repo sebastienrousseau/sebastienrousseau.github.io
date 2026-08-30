@@ -31,6 +31,7 @@ Usage:  python3 tests/validation/test_localised_titles.py [--strict]
 from __future__ import annotations
 
 import argparse
+import functools
 import json
 import re
 import sys
@@ -38,8 +39,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts" / "lib"))
+sys.path.insert(0, str(ROOT / "scripts" / "postbuild"))
 
 import _lang_registry  # type: ignore[import-not-found]
+from postbuild_lib.html_passes import localised_listing_title
 
 PUBLIC = ROOT / "public"
 FROZEN = Path(__file__).with_name("localised-titles-frozen.json")
@@ -70,8 +73,46 @@ def scan() -> tuple[set[str], dict[str, str]]:
             english.add(title)
         else:
             localised.append((str(rel), locale, title))
-    offenders = {path: title for path, _loc, title in localised if title in english}
+    # A title matching an English one is not necessarily untranslated:
+    # "Articles" is the correct French word, and fr pages were reported as
+    # offenders for using it. So a title is excused only when it is one of
+    # the listing templates *and* that locale's translation of it is the same
+    # string. A title the pass does not recognise is never excused — that
+    # would quietly pardon the locale home pages, which really are English.
+    offenders = {}
+    for path, locale, title in localised:
+        if title not in english:
+            continue
+        labels = _labels(locale)
+        if (
+            labels
+            and _is_template(title)
+            and localised_listing_title(title, locale, labels) == title
+        ):
+            continue
+        offenders[path] = title
     return english, offenders
+
+
+_TEMPLATE_SUFFIXES = (" — Editorial pillar", " — Articles by topic")
+
+
+def _is_template(title: str) -> bool:
+    """Whether the title is one of the four listing templates."""
+    return (
+        title == "Articles"
+        or re.fullmatch(r"Articles — \d{4}", title) is not None
+        or title.endswith(_TEMPLATE_SUFFIXES)
+    )
+
+
+@functools.cache
+def _labels(locale: str) -> dict:
+    path = ROOT / "_data" / "i18n" / locale / "labels.json"
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
 
 
 def load_frozen() -> set[str]:
