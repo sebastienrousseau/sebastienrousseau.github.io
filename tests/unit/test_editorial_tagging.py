@@ -16,6 +16,8 @@ without corrupting the quoting.
 
 from __future__ import annotations
 
+import json
+import subprocess
 from pathlib import Path
 
 import automate_tags as at
@@ -484,3 +486,181 @@ def test_optimise_tags_page_sets_the_canonical_title(
     at._optimise_tags_page()
     assert "Tags Index" in (tmp_path / "tags.md").read_text(encoding="utf-8")
     capsys.readouterr()
+
+
+# ---------------------------------------------------------------------------
+# translate_frontmatter — the translator call and its retry policy.
+#
+# `claude -p` is stubbed at the subprocess boundary; nothing is executed.
+# What these cover is the failure policy: a translation that cannot be
+# produced must not abort a run that is part-way through 34 locales, and a
+# reply that arrives malformed must not be written as if it were a
+# translation.
+# ---------------------------------------------------------------------------
+
+
+class _Proc:
+    def __init__(self, stdout: str = "", stderr: str = "") -> None:
+        self.stdout = stdout
+        self.stderr = stderr
+
+
+def test_invoke_translator_parses_a_json_reply(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(
+        tf.subprocess, "run", lambda *a, **k: _Proc('{"fr": {"title": "Le titre"}}')
+    )
+    assert tf._invoke_translator("p")["fr"]["title"] == "Le titre"
+
+
+def test_invoke_translator_strips_a_markdown_fence(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Models wrap JSON in ```json fences; the parse must survive that."""
+    monkeypatch.setattr(
+        tf.subprocess, "run", lambda *a, **k: _Proc('```json\n{"fr": {"title": "T"}}\n```')
+    )
+    assert tf._invoke_translator("p") == {"fr": {"title": "T"}}
+
+
+def test_invoke_translator_raises_on_an_empty_reply(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Empty is not an empty translation — it is a failed call, and the
+    retry loop above needs to see the difference."""
+    monkeypatch.setattr(tf.subprocess, "run", lambda *a, **k: _Proc("", "boom"))
+    with pytest.raises(ValueError, match="Empty response"):
+        tf._invoke_translator("p")
+
+
+def test_invoke_translator_raises_on_unparseable_output(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setattr(tf.subprocess, "run", lambda *a, **k: _Proc("not json at all"))
+    with pytest.raises(json.JSONDecodeError):
+        tf._invoke_translator("p")
+
+
+def test_translate_batch_short_circuits_with_nothing_to_do(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    def must_not_run(*_a, **_k):
+        raise AssertionError("called the translator with no locales needing work")
+
+    monkeypatch.setattr(tf, "_invoke_translator", must_not_run)
+    assert tf._translate_batch({"title": "T"}, {}) == {}
+
+
+def test_translate_batch_returns_the_first_successful_attempt(
+    monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    calls = {"n": 0}
+
+    def flaky(_prompt):
+        calls["n"] += 1
+        if calls["n"] == 1:
+            raise json.JSONDecodeError("bad", "", 0)
+        return {"fr": {"title": "Le titre"}}
+
+    monkeypatch.setattr(tf, "_invoke_translator", flaky)
+    monkeypatch.setattr(tf.time, "sleep", lambda _s: None)
+    assert tf._translate_batch({"title": "T"}, {"fr": ["title"]}) == {"fr": {"title": "Le titre"}}
+    assert calls["n"] == 2
+    capsys.readouterr()
+
+
+def test_translate_batch_gives_up_after_three_attempts_without_raising(
+    monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    """The behaviour that matters: a failed translation returns {} so the
+    run continues. Raising here would abandon every locale still queued."""
+    calls = {"n": 0}
+
+    def always_fails(_prompt):
+        calls["n"] += 1
+        raise json.JSONDecodeError("bad", "", 0)
+
+    monkeypatch.setattr(tf, "_invoke_translator", always_fails)
+    monkeypatch.setattr(tf.time, "sleep", lambda _s: None)
+    assert tf._translate_batch({"title": "T"}, {"fr": ["title"]}) == {}
+    assert calls["n"] == 3, "exactly three attempts, then give up"
+    capsys.readouterr()
+
+
+@pytest.mark.parametrize(
+    "exc",
+    [
+        subprocess.TimeoutExpired(cmd="claude", timeout=300),
+        OSError("claude: command not found"),
+        ValueError("Empty response"),
+    ],
+)
+def test_translate_batch_retries_every_expected_failure(
+    monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str], exc: Exception
+) -> None:
+    """A missing binary, a timeout and an empty reply are all retryable —
+    none of them may escape as a traceback mid-run."""
+
+    def boom(_prompt):
+        raise exc
+
+    monkeypatch.setattr(tf, "_invoke_translator", boom)
+    monkeypatch.setattr(tf.time, "sleep", lambda _s: None)
+    assert tf._translate_batch({"title": "T"}, {"fr": ["title"]}) == {}
+    capsys.readouterr()
+
+
+def test_translate_batch_lets_an_unexpected_error_traceback(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Only the named failure modes are swallowed; anything else is a bug
+    worth surfacing rather than retrying blindly."""
+
+    def boom(_prompt):
+        raise KeyboardInterrupt
+
+    monkeypatch.setattr(tf, "_invoke_translator", boom)
+    with pytest.raises(KeyboardInterrupt):
+        tf._translate_batch({"title": "T"}, {"fr": ["title"]})
+
+
+# ---------------------------------------------------------------------------
+# translate_frontmatter — writing the translated fields back
+# ---------------------------------------------------------------------------
+
+
+def _fm_file(tmp_path: Path, body: str) -> Path:
+    """A bare front-matter fragment for the apply-path tests.
+
+    Named distinctly from _locale_file above, which builds a locale-directory
+    post for the _locales_needing tests — shadowing it silently broke three
+    of those.
+    """
+    p = tmp_path / "post.md"
+    p.write_text(body, encoding="utf-8")
+    return p
+
+
+def test_apply_translations_writes_and_reports_the_fields(tmp_path: Path) -> None:
+    p = _fm_file(tmp_path, 'title: "English"\ndescription: "English desc"\n')
+    applied = tf._apply_translations(p, {"title": "Le titre", "description": "La description"})
+    assert set(applied) == {"title", "description"}
+    assert "Le titre" in p.read_text(encoding="utf-8")
+
+
+def test_apply_translations_skips_an_empty_or_non_string_value(tmp_path: Path) -> None:
+    """A model can return null or a nested object for a field; neither is a
+    translation, and writing one would corrupt the front matter."""
+    p = _fm_file(tmp_path, 'title: "English"\n')
+    before = p.read_text(encoding="utf-8")
+    assert tf._apply_translations(p, {"title": ""}) == []
+    assert tf._apply_translations(p, {"title": None}) == []
+    assert tf._apply_translations(p, {"title": {"nested": "x"}}) == []
+    assert p.read_text(encoding="utf-8") == before
+
+
+def test_apply_translations_does_not_write_when_nothing_changes(tmp_path: Path) -> None:
+    p = _fm_file(tmp_path, 'title: "Le titre"\n')
+    before = p.stat().st_mtime_ns
+    assert tf._apply_translations(p, {"title": "Le titre"}) == []
+    assert p.stat().st_mtime_ns == before, "an identical value must not rewrite the file"
+
+
+def test_apply_translations_ignores_a_field_absent_from_the_file(tmp_path: Path) -> None:
+    p = _fm_file(tmp_path, 'title: "English"\n')
+    assert tf._apply_translations(p, {"subtitle": "Sous-titre"}) == []
