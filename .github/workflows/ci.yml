@@ -223,6 +223,19 @@ jobs:
         # step above; here we only run it against the runtime deps.
         run: pip-audit --strict -r requirements.txt
 
+      - name: Whole-tree coverage ratchet (scripts/ >= 70 %)
+        # A second, separate gate from the postbuild_lib one below: that gate
+        # holds two packages at 100 %, this one stops the *rest* of scripts/
+        # sliding backwards. It is a ratchet, not a target — raise the floor
+        # when the number rises, never lower it to make a change fit. The
+        # figure was 67 % when utilities like quality_scorecard and
+        # build_tag_landings had no tests at all. Goal is 80 % (the OpenSSF
+        # Best Practices silver criterion test_statement_coverage80).
+        run: |
+          pytest tests/unit/ -q \
+            --cov=scripts \
+            --cov-fail-under=70
+
       - name: Unit tests + coverage gate (postbuild_lib 100 %)
         # Single pre-build pytest run with the postbuild_lib coverage gate.
         # build_translations is gated post-build below: its smoke suites are
