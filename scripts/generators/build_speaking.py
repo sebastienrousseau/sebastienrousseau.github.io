@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Generate the ``/speaking/`` speaker page from ``_data/proof/speaking.md``.
 
 All copy lives in the markdown source (frontmatter for the structured

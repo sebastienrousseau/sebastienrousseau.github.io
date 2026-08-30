@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Hash-cache layer in front of pa11y-ci.
 
 The full WCAG2AAA sweep of 1990 built pages takes ~37 min on a GitHub-

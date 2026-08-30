@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """The empty-map sentinel regex must never match — Phase 4 (CodeQL).
 
 `scripts/generators/build_translations/_maps.py` returns a "match nothing"

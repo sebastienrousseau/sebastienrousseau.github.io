@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Guard: ADR hygiene — improvement-plan-2026 Phase 5.1.
 
 Keeps the architecture-decision record honest as it grows:

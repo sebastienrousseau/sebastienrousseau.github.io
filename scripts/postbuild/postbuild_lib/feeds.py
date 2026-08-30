@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """XML feed / sitemap post-processing for the built site.
 
 Repairs and de-duplicates the ssg-emitted RSS/Atom/JSON feeds, the news-

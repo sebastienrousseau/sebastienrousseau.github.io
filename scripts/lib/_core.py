@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Shared utilities used across the build pipeline.
 
 Before this module existed there were three different bespoke YAML

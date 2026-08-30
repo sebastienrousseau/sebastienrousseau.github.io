@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 // Golden-file + edge-case unit test for the ISO 20022 MCP simulator core
 // (mirrors tests/unit/index-scorecard/scoring.test.mjs).
 //

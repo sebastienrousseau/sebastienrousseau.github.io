@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for render_mcp_reference (the generated MCP tool catalog).
 
 The reference page's tool catalog is generated from the captured

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Slug derivation — scripts/lib/_romanise.py (ADR-0012)."""
 
 from __future__ import annotations

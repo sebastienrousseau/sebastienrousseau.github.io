@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """A 4xx from HEAD is a question, not an answer.
 
 Plenty of servers answer HEAD with 4xx and GET with 200 — csrc.nist.gov and

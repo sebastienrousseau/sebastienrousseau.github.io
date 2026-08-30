@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Generate topic-cluster pillar pages under ``public/topics/{slug}/``.
 
 A pillar page bundles a curated set of dated posts under a named topic

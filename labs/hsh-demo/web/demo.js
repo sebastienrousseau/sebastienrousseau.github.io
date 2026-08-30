@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 // In-browser driver for the hsh WASM demo. Loads the wasm-bindgen-generated
 // module, then wires the SHA-256 / BLAKE3 text fields to live keystrokes and
 // the Argon2id field to an explicit button (Argon2id is intentionally slow —

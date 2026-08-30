@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """The /projects/ body catalogue must stay aligned with the English page.
 
 ``build_translations/_projects.py`` reads its English reference from the

@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Gate: every active language ships a complete /playlists/ catalogue.
 
 The /playlists/ page is generated from ``scripts/lib/_playlist_copy.py``

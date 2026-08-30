@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Standalone-run sys.path wiring shared by test modules.
 
 Mirrors tests/unit/conftest.py: puts the scripts/ domain subdirs on

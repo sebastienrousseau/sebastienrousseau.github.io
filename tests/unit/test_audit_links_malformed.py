@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """A malformed URL must be reported, not abort the audit.
 
 http.client.InvalidURL derives from HTTPException, not from OSError or

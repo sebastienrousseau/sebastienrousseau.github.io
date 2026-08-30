@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Smoke test: every takeaway-labels JSON has the same key set as EN.
 
 The English file at ``_data/i18n/en/takeaway_labels.json`` is the

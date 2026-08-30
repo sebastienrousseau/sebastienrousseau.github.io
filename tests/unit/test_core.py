@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for scripts/lib/_core.py — Phase 1.3 / Phase 4.2.
 
 `_core` is the highest-blast-radius shared module: it holds the canonical

@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 // <index-scorecard> — a reusable, data-driven self-assessment Web Component.
 //
 // Progressive enhancement contract (see ADR 0001):

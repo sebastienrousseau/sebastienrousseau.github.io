@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Delete the per-directory sitemap copies ssg scatters through ``public/``.
 
 ssg writes a full copy of ``sitemap.xml`` and ``news-sitemap.xml`` into every

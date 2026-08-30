@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """GitHub repo-stats badge injection.
 
 Reads ``_data/gh-stats.json`` (refreshed nightly by the

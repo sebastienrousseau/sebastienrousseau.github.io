@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """The hreflang strip must match the links the same pass emits.
 
 Three passes strip hreflang before re-emitting it, and each had grown its

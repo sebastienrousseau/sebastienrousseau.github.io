@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Locale text maps + EN→locale substitution passes.
 
 Builds the per-language ``en_slug → title / description / excerpt /

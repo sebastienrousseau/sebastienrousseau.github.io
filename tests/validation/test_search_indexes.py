@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Smoke test: EN + FR search indexes must have the same entry shape.
 
 Regression we are guarding: the search widget reads

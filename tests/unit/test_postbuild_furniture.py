@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Tests for the postbuild article-furniture passes — badges, meta
 bar, anchors/ToC, citations, mermaid, sigstore, GitHub stats,
 prev/next nav, nav-active, and the language switcher.

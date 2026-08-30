@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 /* Theme bootstrap. Runs synchronously in <head> before paint to avoid a flash
  * of the wrong colour scheme. Reads the saved preference, falling back to the
  * user's OS-level setting. */

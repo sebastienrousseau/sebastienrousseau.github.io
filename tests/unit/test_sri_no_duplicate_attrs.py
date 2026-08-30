@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """`fix_sri` must leave exactly one `integrity` attribute per tag.
 
 ssg writes its own `integrity` on the stylesheet link it emits, using the

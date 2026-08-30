@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Rewrite legacy kura.pro / cloudcdn.pro URLs to the current cloudcdn.pro layout.
 
 For every ``https://kura.pro/...`` or ``https://cloudcdn.pro/...`` URL discovered

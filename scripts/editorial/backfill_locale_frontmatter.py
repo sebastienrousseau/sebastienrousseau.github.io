@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Backfill ``title:``, ``excerpt:``, ``subtitle:`` and ``tags:`` in
 ``_posts/<lang>/<slug>.md`` from the article body when the frontmatter
 is still English **and** the body is in the target locale.

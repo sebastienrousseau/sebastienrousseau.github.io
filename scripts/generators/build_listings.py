@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Paged article listing generator — `/articles/`, `/articles/page/N/`.
 
 Runs after ssg, before build_translations + postbuild. Reads all

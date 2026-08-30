@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Emit static JSON assets the lang-router Worker reads at runtime.
 
 Cloudflare KV Free tier allows 1,000 writes/day. To avoid running into that

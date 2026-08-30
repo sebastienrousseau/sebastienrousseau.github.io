@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Case-study HTML rendering (hero, stages, body, index, share, rails).
 
 Leaf render module split from build_case_studies (Phase 4.1). Imports the URL +

@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Rewrite _posts/research.md body into Apple-Newsroom-style markup.
 
 The publications hub moved from /papers to /research in the 5-item nav

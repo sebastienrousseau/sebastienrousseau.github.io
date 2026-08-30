@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Measure the repository against a fixed rubric and emit a scorecard.
 
 A rating is only worth having if it is *measured*. The failure this repo

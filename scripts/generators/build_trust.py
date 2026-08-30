@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Generate the ``/trust/`` enterprise-governance page.
 
 Assembles the provenance evidence the platform already produces (SBOM,

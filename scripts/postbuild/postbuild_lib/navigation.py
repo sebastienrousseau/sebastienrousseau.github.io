@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Per-page navigation furniture: anchor links + table of contents,
 breadcrumbs, active-nav marking, and prev/next pagination (with the
 post-nav index it walks).

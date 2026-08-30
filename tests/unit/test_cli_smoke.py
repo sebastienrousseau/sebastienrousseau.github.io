@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Smoke tests for every CLI build script under ``scripts/``.
 
 Each test imports the module and invokes its ``main()`` function against

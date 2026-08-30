@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Emit per-language XML + JSON Feed 1.1 feeds under ``public/<lang>/``.
 
 Static Site Generator's main ``rss.xml`` / ``atom.xml`` / ``news-sitemap.xml`` only

@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Generate /api/agents/ — a structured, robots-friendly JSON API for AI
 crawlers and downstream agent toolchains.
 

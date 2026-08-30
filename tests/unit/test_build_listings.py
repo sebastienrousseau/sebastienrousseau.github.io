@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for the /articles/ listing generator — Phase 1.3.
 
 `scripts/generators/build_listings.py` builds the article index that

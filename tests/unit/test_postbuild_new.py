@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit tests for the postbuild passes added in the
 "100% compliance with WAVE / axe / Lighthouse / WebPageTest / GTmetrix"
 PR — JS+CSS minification, theme-init inlining, LCP preload, extended

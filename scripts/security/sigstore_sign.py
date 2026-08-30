@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Sign every rendered article with Sigstore (cosign sign-blob).
 
 Each ``public/<slug>/index.html`` for a dated article gets a detached

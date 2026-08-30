@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+// SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 /**
  * Tests for workers/write-coalescer.js — Durable Object that absorbs
  * KV write bursts into one PUT per logical key per flush window.

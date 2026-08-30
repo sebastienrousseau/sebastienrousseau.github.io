@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """``fetch_metrics`` must be able to leave the committed snapshot alone.
 
 Every figure in _data/proof/metrics.json is fetched live — pypistats,

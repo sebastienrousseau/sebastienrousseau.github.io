@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Changelog + "what's new" + status generator — Phase 5 (freshness signals).
 
 Runs after ``ssg`` (and after ``build_translations`` so the homepage

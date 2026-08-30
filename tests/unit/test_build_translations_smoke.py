@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Integration smoke for scripts/build_translations.py.
 
 The script is 1100+ lines of per-language rendering, slug substitution,

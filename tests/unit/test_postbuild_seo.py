@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Tests for the postbuild SEO passes — feeds, sitemaps, hreflang,
 OG/social images, robots.txt, and localhost scrubbing.
 

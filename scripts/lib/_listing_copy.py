@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """English source copy for generator-emitted listing bodies.
 
 ``build_listings`` and its siblings fork the English shell and run

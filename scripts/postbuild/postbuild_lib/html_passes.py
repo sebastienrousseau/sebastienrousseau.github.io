@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Standalone HTML finishing passes: Sigstore attestation badge, body-link
 stylesheet hoisting, duplicate-H1 stripping, and data-table label wrapping.
 

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Re-run pa11y-ci against URLs that hit the Puppeteer
 "Execution context was destroyed" navigation race.
 

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Shared i18n foundation: page-language detection, per-locale UI labels,
 and slug-map lookups. Extracted from article_furniture (Phase 4.1) as a base
 both article_furniture and hreflang import — breaking their former cycle.

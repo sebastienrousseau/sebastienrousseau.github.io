@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Contextual internal linking (F-05).
 
 The corpus had a median of 2 unique internal links per article inside

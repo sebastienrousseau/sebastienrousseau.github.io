@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Translate English frontmatter SEO/metadata fields in all locale posts.
 
 One Claude API call per English article → translates all 27 locales in batch.

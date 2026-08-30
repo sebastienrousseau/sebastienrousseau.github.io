@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit tests for scripts/sigstore_sign.py.
 
 The script no-ops in three branches (no config / no cosign / no public),

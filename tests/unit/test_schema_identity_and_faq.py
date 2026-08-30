@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Article identity alignment (F-08) and FAQPage emission (F-12)."""
 
 from __future__ import annotations

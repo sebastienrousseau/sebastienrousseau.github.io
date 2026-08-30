@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """scripts/postbuild package — replaces itself in sys.modules with the
 postbuild.py module so legacy ``import postbuild`` returns the real
 module (with all public + underscore-prefixed names + editable

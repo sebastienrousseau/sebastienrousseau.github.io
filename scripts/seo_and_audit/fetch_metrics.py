@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Fetch authority-proof metrics at build time and write
 ``_data/proof/metrics.json`` so the homepage + case-study templates
 can render aggregate-not-vanity numbers.

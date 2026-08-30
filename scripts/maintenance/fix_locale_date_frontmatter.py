@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Restore locale `date:` frontmatter from its English counterpart.
 
 An earlier translation pass localised the `date:` field ("28 juin 2026",

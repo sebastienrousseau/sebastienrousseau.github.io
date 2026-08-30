@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Localized static pages must not ship the English ``<main>`` body.
 
 ``test_lang_no_leakage`` deliberately scopes to chrome — everything

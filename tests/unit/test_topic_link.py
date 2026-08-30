@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Tests for scripts/topic_link.py — the internal topic-cluster linker."""
 
 from __future__ import annotations

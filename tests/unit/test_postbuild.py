@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Tests for scripts/postbuild.py — the SRI + CSP + feed-repair pass.
 
 Each test exercises one of the postbuild transforms in isolation. We use

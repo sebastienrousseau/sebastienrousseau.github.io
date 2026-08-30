@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Tests for scripts/validate_jsonld.py — structured-data + feed validator.
 
 We exercise the specific regression classes the validator was built to

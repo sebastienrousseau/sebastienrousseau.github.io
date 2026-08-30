@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for regen_slug_maps — Phase 1.3.
 
 regen_slug_maps.py derives each locale's article slug map from on-disk

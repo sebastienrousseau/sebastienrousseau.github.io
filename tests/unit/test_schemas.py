@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Tests for postbuild_lib.schemas — TechArticle + SoftwareSourceCode injectors.
 
 The coverage gate requires 100% of postbuild_lib/. These tests exercise

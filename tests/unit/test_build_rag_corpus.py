@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for build_rag_corpus — Phase 1.3.
 
 build_rag_corpus.py emits the RAG/MCP corpus (/feed.jsonl + per-tag feeds +

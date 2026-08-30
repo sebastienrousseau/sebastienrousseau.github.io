@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Chunked pa11y shard runner — scripts/seo_and_audit/pa11y_run_shard.py."""
 
 from __future__ import annotations

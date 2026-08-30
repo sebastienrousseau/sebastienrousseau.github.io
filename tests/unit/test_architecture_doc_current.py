@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Guard: every generator/postbuild script `build.sh` runs must be documented
 in `project-docs/architecture.md` — improvement-plan-2026 Phase 5.4.
 

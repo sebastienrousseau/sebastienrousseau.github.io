@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Site-level output emitters: robots.txt, llms.txt, llms-full.txt,
 JSON Feed, XML feed URL fix, XML feed entity-escape, sitemap lastmod
 refresh + per-language sitemap splice.

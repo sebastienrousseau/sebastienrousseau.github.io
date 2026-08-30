@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Rewrite the body of _posts/articles.md into Apple-Newsroom-style markup.
 
 Featured (most recent) story sits in a 1:1 split-card; the rest fill a 3-col grid.

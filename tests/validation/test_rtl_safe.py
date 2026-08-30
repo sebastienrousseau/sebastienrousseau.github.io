@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Smoke test: layouts must use CSS logical properties, not physical.
 
 Right-to-left languages (`ar`, `he`) need the layout to mirror

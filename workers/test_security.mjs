@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+// SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 /**
  * Tests for workers/security.js — UA/ASN pre-filter that guards any
  * future KV-write endpoint.

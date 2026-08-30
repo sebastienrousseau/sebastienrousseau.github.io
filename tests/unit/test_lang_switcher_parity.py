@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Language-switcher parity gate.
 
 Every ACTIVE locale in the registry must appear in the header language

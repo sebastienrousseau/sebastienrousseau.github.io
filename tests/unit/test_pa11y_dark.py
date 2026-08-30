@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit tests for the dark-mode pa11y sweep config.
 
 Covers the ``build_dark_config`` generation in ``pa11y_cache.py`` and

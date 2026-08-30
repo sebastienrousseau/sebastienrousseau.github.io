@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """`news_publication_date` must be derived, never left to the clock.
 
 ssg's news-sitemap generator falls back to the CURRENT TIME when the field is

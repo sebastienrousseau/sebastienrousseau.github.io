@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Rewrite the body of _posts/projects.md into Apple-Newsroom-style markup.
 
 Featured project at the top, then category sections (AI, Quantum, Rust, …) each as

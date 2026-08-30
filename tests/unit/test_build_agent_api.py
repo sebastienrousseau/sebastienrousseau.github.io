@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for build_agent_api — Phase 1.3.
 
 build_agent_api.py emits the static JSON agent/crawler API (post + topic graph)

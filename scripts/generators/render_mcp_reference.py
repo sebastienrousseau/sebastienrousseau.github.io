@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Render the ISO 20022 MCP tool catalog into ``_posts/iso20022-mcp-reference.md``.
 
 The catalog between the ``BEGIN GENERATED: mcp-tool-catalog`` and

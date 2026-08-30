@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """No post may contain a URL the translation pipeline has rewritten.
 
 Translating an article translated words *inside* its URLs. 73 URLs across 18

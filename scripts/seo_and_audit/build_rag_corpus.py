@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Emit `/feed.jsonl` + `/tags/<slug>/feed.jsonl` — RAG-ready corpus.
 
 JSONL (newline-delimited JSON, one object per article) is the

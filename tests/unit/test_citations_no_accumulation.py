@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """``inject_citations`` must set the citation array, not append another.
 
 Postbuild is re-run over an already-built tree — by the builder smoke

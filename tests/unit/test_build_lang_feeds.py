@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for build_lang_feeds — Phase 1.3.
 
 build_lang_feeds.py emits per-language RSS/Atom/news-sitemap/JSON feeds. It was

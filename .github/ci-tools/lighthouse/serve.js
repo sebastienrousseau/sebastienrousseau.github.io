@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 // Zero-dependency static server for the Lighthouse CI fixture.
 //
 // The default lhci `staticDistDir` server (and a plain `http-server`) send

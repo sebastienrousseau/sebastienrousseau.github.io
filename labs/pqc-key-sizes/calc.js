@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 // PQC key-size estimator — vanilla ES module, no framework, no network.
 // Sources:
 //   FIPS 203 §4         — ML-KEM parameter sets

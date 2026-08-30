@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Emit per-locale ``search-ui.json`` for the client-side search runtime.
 
 Phase 2 of the Developer-Experience plan ships a lazy-loaded, dependency-free

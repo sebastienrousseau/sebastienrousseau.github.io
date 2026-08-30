@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """One place that decides what "today" means during a build.
 
 A page that stamps the wall clock cannot be rebuilt byte-identically. The

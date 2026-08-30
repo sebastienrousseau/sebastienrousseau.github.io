@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Render manual French translations under ``public/fr/{slug}/``.
 
 Translation sources live in ``_posts/fr/*.md``. For each translation,

@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Rewrite the in-page language switcher so each ``.ap-lang-item`` link
 points to **the localised URL of the current page** instead of the
 locale homepage.

@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Regenerate the homepage's 6-card "latest news" grid in
 ``_posts/index.md`` from the top-6 most recent dated EN posts.
 

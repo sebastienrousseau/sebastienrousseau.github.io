@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Tone-of-voice + style + structure gate for daily-publishing articles.
 
 Run against `_posts/<today>-*.md` *before* the translation + build

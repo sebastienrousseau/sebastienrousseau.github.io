@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Unit coverage for fetch_github_stats — Phase 1.3.
 
 fetch_github_stats.py fetches per-repo GitHub metrics into gh-stats.json

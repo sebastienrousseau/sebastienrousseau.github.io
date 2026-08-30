@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Backfill a ``permalink:`` front-matter field into any post that lacks
 one, at build time, inside the temporary build directory.
 

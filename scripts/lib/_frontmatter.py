@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Shared frontmatter helpers — the ONE canonical parser for the repo.
 
 Posts in ``_posts/`` carry a YAML frontmatter block delimited by ``---``

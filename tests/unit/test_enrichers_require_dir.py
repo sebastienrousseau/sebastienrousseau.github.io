@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Guard: the in-place enrichers MUST refuse to run without an explicit
 ``--dir`` (ADR-0003). A bare invocation previously defaulted to ``_posts``
 and silently rewrote committed source — this test locks that door.

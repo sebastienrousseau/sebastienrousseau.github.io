@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Coverage tests for postbuild.py orchestration paths.
 
 The unit tests in tests/test_postbuild.py + tests/test_postbuild_new.py

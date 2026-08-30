@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Per-page citation furniture: citation graph JSON-LD, cite popovers, and the
 visible sources list. Split from article_furniture (Phase 4.1). Imports the
 shared article-metadata helper + a few regexes from article_furniture

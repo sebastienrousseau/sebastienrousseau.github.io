@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """A localized page must not carry another language's script.
 
 _data/i18n/fil/ and _data/i18n/he/ were forked from _data/i18n/ar/ and

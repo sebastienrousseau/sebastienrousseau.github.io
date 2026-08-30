@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Coverage for search-index text extraction — Phase 1.3.
 
 `_extract_visible_text` builds the plain-text search index from a page's

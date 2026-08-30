@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 /**
  * Pre-filter for any future mutating endpoint that would otherwise be a
  * KV-write target for scrapers and bots. Free-tier defence in depth:

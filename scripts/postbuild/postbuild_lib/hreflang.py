@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Per-page i18n injection: hreflang alternates + language switcher.
 
 Split from article_furniture (Phase 4.1, step 2) atop the _i18n base. Imports

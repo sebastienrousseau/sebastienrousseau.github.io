@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Romanisation and slug derivation for locale article slugs — ADR-0012.
 
 Every locale localises its article slug, following the translated title

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Case-study URLs + structured data (JSON-LD).
 
 Leaf module split from build_case_studies (Phase 4.1): owns the site base URL,

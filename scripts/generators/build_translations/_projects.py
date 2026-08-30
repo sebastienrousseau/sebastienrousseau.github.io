@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Localize the /projects/ page body.
 
 /projects/ carries 1,583 visible words in its ``<main>``: a KPI rail, six

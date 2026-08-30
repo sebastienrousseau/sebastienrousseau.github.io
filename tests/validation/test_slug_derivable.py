@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Locale slugs must be *derivable* from their translated title.
 
 ADR-0012 says every locale localises its article slug, following the

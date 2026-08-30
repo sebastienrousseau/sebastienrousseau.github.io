@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 """Regression: quote-agnostic frontmatter field extraction (P1-1).
 
 The ``_*_FM_RE`` field regexes in ``listing_common`` only strip a
