@@ -199,7 +199,12 @@ def test_replace_field_escapes_quotes_in_the_new_value() -> None:
 
 
 def test_replace_field_round_trips_a_backslash() -> None:
+    """Round-trips *and* stores the escaped form. It used to round-trip by
+    accident: re.sub collapsed the doubled backslash on write and _read_field
+    unescaped nothing on read, so the file held a lone backslash inside a
+    YAML double-quoted scalar."""
     out = tf._replace_field('title: "Old"\n', "title", r"back\slash")
+    assert r'title: "back\\slash"' in out
     assert tf._read_field(out, "title") == r"back\slash"
 
 

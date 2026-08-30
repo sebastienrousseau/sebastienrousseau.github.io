@@ -112,7 +112,12 @@ def _replace_field(text: str, field: str, new_value: str) -> str:
     escaped = new_value.replace("\\", "\\\\").replace('"', '\\"')
     return re.sub(
         rf'(^{re.escape(field)}:\s*)"(?:[^"\\]|\\.)*"',
-        rf'\g<1>"{escaped}"',
+        # A callable replacement: re.sub processes backslash escapes in a
+        # *string* replacement, which silently undid the doubling above and
+        # wrote a lone backslash into a YAML double-quoted scalar (where \\b
+        # means backspace). No value in _posts carries one today, so this was
+        # latent rather than live.
+        lambda m: f'{m.group(1)}"{escaped}"',
         text,
         count=1,
         flags=re.MULTILINE,
