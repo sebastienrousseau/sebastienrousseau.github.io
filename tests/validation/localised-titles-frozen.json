@@ -1,17 +1,4 @@
 {
-  "$comment": "Locale pages still serving an English <title>. Frozen so the backlog is enumerable and cannot grow; closing it is a translation job, not a code change. A page that gets a translated title must be removed from this list \u2014 the gate fails on a stale entry, so the set can only shrink.",
-  "pages": [
-    "de/themen/blockchain-digital-assets/index.html",
-    "de/themen/rust-open-source/index.html",
-    "el/index.html",
-    "fa/index.html",
-    "fil/mga-paksa/post-quantum-cryptography/index.html",
-    "fr/sujets/rust-open-source/index.html",
-    "mr/index.html",
-    "ms/index.html",
-    "ro/subiecte/rust-open-source/index.html",
-    "ta/index.html",
-    "te/index.html",
-    "yo/awon-koko/index.html"
-  ]
+  "$comment": "Locale pages still serving an English <title>. Frozen so the backlog is enumerable and cannot grow; closing it is a translation job, not a code change. A page that gets a translated title must be removed from this list — the gate fails on a stale entry, so the set can only shrink. Now empty: the last 12 (six locale home pages, five topic hubs and the Yoruba topics index) were closed by translating them.",
+  "pages": []
 }

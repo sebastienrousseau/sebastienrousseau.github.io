@@ -89,6 +89,12 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
         "uk": "Себастьєн Руссо: ШІ, платежі та квантова криптографія",
         "vi": "Sebastien Rousseau: AI, thanh toán và mật mã lượng tử",
         "yo": "Sebastien Rousseau: AI, ìsanwó àti quantum cryptography",
+        "el": "Sebastien Rousseau: Τεχνητή νοημοσύνη, πληρωμές και κβαντική κρυπτογραφία",
+        "fa": "Sebastien Rousseau: هوش مصنوعی، پرداخت‌ها و رمزنگاری کوانتومی",
+        "mr": "Sebastien Rousseau: एआय, पेमेंट्स आणि क्वांटम क्रिप्टोग्राफी",
+        "ms": "Sebastien Rousseau: AI, pembayaran dan kriptografi kuantum",
+        "ta": "Sebastien Rousseau: செயற்கை நுண்ணறிவு, கட்டணங்கள், குவாண்டம் குறியாக்கவியல்",
+        "te": "Sebastien Rousseau: ఏఐ, చెల్లింపులు, క్వాంటం క్రిప్టోగ్రఫీ",
         "zh-hans": "Sebastien Rousseau：AI、支付与量子密码学",
         "zh-hant": "Sebastien Rousseau：AI、支付與量子密碼學",
     }
@@ -223,6 +229,37 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
             "Ọjọ́ iwájú ilé-ìfowópamọ́ nípasẹ̀ AI alámùúlò, ìsanwó àti ààbò tí ó "
             "lè dojú kọ kọ̀mpútà quantum. Ìwádìí, àwọn ibi ìkówèésí orísun-ṣíṣí "
             "àti ìgbani-nímọ̀ràn ọjà fún àwọn iṣẹ́ ìnáwó."
+        ),
+        "el": (
+            "Το μέλλον των τραπεζών μέσα από την εφαρμοσμένη τεχνητή νοημοσύνη, "
+            "τις πληρωμές και την ασφάλεια που αντέχει στους κβαντικούς "
+            "υπολογιστές. Έρευνα, βιβλιοθήκες ανοιχτού κώδικα και συμβουλευτική "
+            "προϊόντος για τις χρηματοοικονομικές υπηρεσίες."
+        ),
+        "fa": (
+            "آیندهٔ بانکداری از رهگذر هوش مصنوعی کاربردی، پرداخت‌ها و امنیت مقاوم "
+            "در برابر رایانش کوانتومی. پژوهش، کتابخانه‌های متن‌باز و مشاورهٔ محصول "
+            "برای خدمات مالی."
+        ),
+        "mr": (
+            "उपयोजित एआय, पेमेंट्स आणि क्वांटम-प्रतिरोधक सुरक्षेच्या माध्यमातून "
+            "बँकिंगचे भविष्य. वित्तीय सेवांसाठी संशोधन, ओपन-सोर्स लायब्ररी आणि "
+            "उत्पादन सल्लागारी."
+        ),
+        "ms": (
+            "Masa depan perbankan menerusi AI gunaan, pembayaran dan keselamatan "
+            "kalis kuantum. Penyelidikan, pustaka sumber terbuka dan perundingan "
+            "produk untuk perkhidmatan kewangan."
+        ),
+        "ta": (
+            "பயன்பாட்டுச் செயற்கை நுண்ணறிவு, கட்டணங்கள், குவாண்டம்-எதிர்ப்புப் "
+            "பாதுகாப்பு வழியாக வங்கியியலின் எதிர்காலம். நிதிச் சேவைகளுக்கான "
+            "ஆராய்ச்சி, திறந்த மூல நூலகங்கள், தயாரிப்பு ஆலோசனை."
+        ),
+        "te": (
+            "అనువర్తిత ఏఐ, చెల్లింపులు, క్వాంటం-నిరోధక భద్రత ద్వారా బ్యాంకింగ్ "
+            "భవిష్యత్తు. ఆర్థిక సేవల కోసం పరిశోధన, ఓపెన్-సోర్స్ లైబ్రరీలు, "
+            "ఉత్పత్తి సలహా సేవలు."
         ),
         "zh-hans": (
             "以应用 AI、支付与抗量子安全塑造银行业的未来。面向金融服务的研究、开源库与产品咨询。"

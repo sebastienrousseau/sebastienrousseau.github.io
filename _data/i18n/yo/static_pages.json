@@ -109,10 +109,9 @@
     "_draft": true
   },
   "topics": {
-    "title": "Topics — Sebastien Rousseau",
-    "subtitle": "Articles on AI, post-quantum cryptography, ISO 20022 and the future of payments.",
-    "description": "Explore analyses by theme: applied AI, ISO 20022 payments, post-quantum cryptography and transformation of wholesale payments.",
-    "keywords": "topics, themes, AI, payments, ISO 20022, post-quantum cryptography",
-    "_draft": true
+    "title": "Àwọn Kókó — Sebastien Rousseau",
+    "subtitle": "Àwọn àpilẹ̀kọ lórí AI, cryptography lẹ́yìn-kúáńtọ̀mù, ISO 20022 àti ọjọ́ iwájú ìsanwó.",
+    "description": "Ṣàwárí àwọn ìtúpalẹ̀ nípa àkòrí: AI tí a ń lò, ìsanwó ISO 20022, cryptography lẹ́yìn-kúáńtọ̀mù, àti ìyípadà àwọn ìsanwó ńláńlá.",
+    "keywords": "àwọn kókó, àkòrí, AI, ìsanwó, ISO 20022, cryptography lẹ́yìn-kúáńtọ̀mù"
   }
 }
