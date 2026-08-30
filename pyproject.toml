@@ -50,8 +50,12 @@ ignore = [
 
 [tool.ruff.lint.per-file-ignores]
 # Build scripts use top-level expressions extensively. Tests use asserts.
+# S311 in tests: a *seeded* random.Random is how a test pins a picker's
+# choice so the assertion is deterministic. That is the opposite of the
+# weak-randomness risk S311 exists to catch, and it never reaches security
+# code — the picker chooses a banner image.
 "scripts/*"      = ["S603", "S607"]
-"tests/*"        = ["S101", "S603", "S607", "PLR2004"]
+"tests/*"        = ["S101", "S603", "S607", "PLR2004", "S311"]
 
 [tool.ruff.lint.mccabe]
 max-complexity = 12

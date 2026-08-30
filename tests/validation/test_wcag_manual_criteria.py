@@ -89,7 +89,7 @@ def check_3_2_6_consistent_help(pages: list[Path], slugs: dict[str, str]) -> lis
     place. Checked as: every page carries a footer link to its own locale's
     contact page."""
     # Fixed seed so two runs on the same tree agree. Not a security context.
-    rng = random.Random(SEED)  # noqa: S311
+    rng = random.Random(SEED)
     sample = rng.sample(pages, min(len(pages), SAMPLE))
     missing: list[str] = []
     for p in sample:
