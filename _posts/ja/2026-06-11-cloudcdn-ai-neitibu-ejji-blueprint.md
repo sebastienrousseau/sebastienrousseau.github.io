@@ -207,7 +207,7 @@ CloudCDN はこの非対称性を、3 つのメカニズムの上に構築され
 
 CloudCDN は、グローバル金融セクターのコンプライアンス基準を満たすよう設計されており、技術的なエッジ運用を、監督当局が実際に審査するフレームワークへ直接マッピングします:
 
-- **モデルリスク管理([米 FRB SR 11-7 ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "モデルリスク管理に関する監督ガイダンス") / 英 PRA SS1/23)。**業務タスクを実行する自律型モデルは、モデルリスク・ガバナンスの対象です。CloudCDN の MCP ゲートウェイは、エージェント型ツールを定量モデルとして扱います。厳格なポリシー境界、リアルタイムのロギング、そして影響の大きいアクションに対する必須のヒューマン・イン・ザ・ループによるオーバーライドです。
+- **モデルリスク管理([米 FRB SR 11-7 ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "モデルリスク管理に関する監督ガイダンス") / 英 PRA SS1/23)。**業務タスクを実行する自律型モデルは、モデルリスク・ガバナンスの対象です。CloudCDN の MCP ゲートウェイは、エージェント型ツールを定量モデルとして扱います。厳格なポリシー境界、リアルタイムのロギング、そして影響の大きいアクションに対する必須のヒューマン・イン・ザ・ループによるオーバーライドです。
 - **BCBS 239(リスクデータ集計)。**トランザクション・データをエッジで捕捉、タグ付け、構造化することにより、オペレーション指標がリアルタイムに生成され、データの完全性、適時性、規制上のトレーサビリティに関する BCBS 239 の要件に適合します。
 - **DORA 第5条(取締役会の説明責任)。**取締役会は、オペレーショナル・レジリエンスについて最終的な個人責任を負います。CloudCDN は、エッジのテレメトリーを、非技術系の取締役が個人責任監査に持ち込める、定量化され検証可能なエビデンスへと変換します。
 - **Basel III のオペレーショナル・リスク資本。**銀行はオペレーショナル・リスクに対して規制資本を保有します。自動化された DR フェイルオーバーと SLSA Level 3 の来歴は、金融機関のオペレーショナル・リスク・プロファイルを低減します。監査を満たすだけでなく、バランスシート上の資本を保全するのです。
@@ -259,7 +259,7 @@ MCP 制御の運用とエージェント認識型の制御モデルです。イ�
 
 - European Parliament and Council of the European Union, (2022). [金融セクターのデジタル・オペレーショナル・レジリエンスに関する規則 (EU) 2022/2554(DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "金融セクターのデジタル・オペレーショナル・レジリエンスに関する規則 (EU) 2022/2554(DORA)"). Brussels: Official Journal of the European Union.
 - Basel Committee on Banking Supervision (BCBS), (2013). [実効的なリスクデータ集計とリスク報告に関する諸原則(BCBS 239) ⧉](https://www.bis.org/publ/bcbs239.htm "実効的なリスクデータ集計とリスク報告に関する諸原則(BCBS 239)"). Basel: Bank for International Settlements.
-- Board of Governors of the Federal Reserve System, (2011). [モデルリスク管理に関する監督ガイダンス(SR Letter 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "モデルリスク管理に関する監督ガイダンス(SR Letter 11-7)"). Washington D.C.: Federal Reserve.
+- Board of Governors of the Federal Reserve System, (2011). [モデルリスク管理に関する監督ガイダンス(SR Letter 11-7) ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "モデルリスク管理に関する監督ガイダンス(SR Letter 11-7)"). Washington D.C.: Federal Reserve.
 - Cloudflare, (2026). [Durable Objects ドキュメント:ステートフルなエッジ協調 ⧉](https://developers.cloudflare.com/durable-objects/ "Durable Objects ドキュメント"). San Francisco: Cloudflare.
 - Cloudflare, (2026). [MCP、認証、Durable Objects による AI エージェントの構築 ⧉](https://blog.cloudflare.com/building-ai-agents-with-mcp-authn-authz-and-durable-objects/ "MCP、認証、Durable Objects による AI エージェントの構築").
 - GitHub, (2026). [cloudcdn.pro リポジトリ ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "cloudcdn.pro リポジトリ").

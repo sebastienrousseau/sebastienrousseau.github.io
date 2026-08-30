@@ -49,7 +49,7 @@ keywords: "DORA ۲۰۲۶، قانون هوش مصنوعی اتحادیه ارو�
 
 ### مادهٔ ۸ — دفتر اطلاعات (فناوری اطلاعات و ارتباطات شخص ثالث)
 
-دفتر باید هر ترتیب قراردادی دربارهٔ استفاده از خدمات فناوری اطلاعات و ارتباطات را دربر بگیرد. فیلدهای الزامی بر پایهٔ [ITS دربارهٔ دفتر اطلاعات ⧉](https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf "ITS مقامات نظارتی اروپا دربارهٔ دفتر اطلاعات") شامل کارکردِ پشتیبانی‌شده، طبقه‌بندی حیاتی‌بودن، محل پردازش و ذخیره‌سازی داده، زنجیرهٔ برون‌سپاری فرعی و ارزیابی راهبرد خروج است. رژیم تعیین CTPP بر پایهٔ مادهٔ ۳۱، دفترها را در سراسر اتحادیه اروپا می‌خواند تا تشخیص دهد کدام اشخاص ثالث از آستانهٔ سیستمی عبور می‌کنند. یک دفتر مادهٔ ۸ ناقص یا ناسازگار اکنون هم یک یافتهٔ فردی است و هم یک ریسک برای یکپارچگی محیط CTPP.
+دفتر باید هر ترتیب قراردادی دربارهٔ استفاده از خدمات فناوری اطلاعات و ارتباطات را دربر بگیرد. فیلدهای الزامی بر پایهٔ [ITS دربارهٔ دفتر اطلاعات ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "ITS مقامات نظارتی اروپا دربارهٔ دفتر اطلاعات") شامل کارکردِ پشتیبانی‌شده، طبقه‌بندی حیاتی‌بودن، محل پردازش و ذخیره‌سازی داده، زنجیرهٔ برون‌سپاری فرعی و ارزیابی راهبرد خروج است. رژیم تعیین CTPP بر پایهٔ مادهٔ ۳۱، دفترها را در سراسر اتحادیه اروپا می‌خواند تا تشخیص دهد کدام اشخاص ثالث از آستانهٔ سیستمی عبور می‌کنند. یک دفتر مادهٔ ۸ ناقص یا ناسازگار اکنون هم یک یافتهٔ فردی است و هم یک ریسک برای یکپارچگی محیط CTPP.
 
 ### مادهٔ ۱۸ — گزارش‌دهی حوادث مرتبط با فناوری اطلاعات و ارتباطات
 
@@ -180,7 +180,7 @@ TLPT بر نهادهای مالی تعیین‌شده توسط مقام صلاح
 - European Union, (2022). [مقررات (EU) 2022/2554 — قانون تاب‌آوری عملیاتی دیجیتال (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA").
 - European Union, (2024). [مقررات (EU) 2024/1689 — قانون هوش مصنوعی ⧉](https://eur-lex.europa.eu/eli/reg/2024/1689/oj "قانون هوش مصنوعی اتحادیه اروپا").
 - European Banking Authority, (2019). [EBA/GL/2019/02 — رهنمودهای مربوط به ترتیبات برون‌سپاری ⧉](https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-on-outsourcing-arrangements "رهنمودهای برون‌سپاری EBA").
-- European Supervisory Authorities, (2024). [گزارش نهایی دربارهٔ ITS مربوط به دفتر اطلاعات زیر DORA ⧉](https://www.eba.europa.eu/sites/default/files/2024-01/0e155f7a-9b09-4dba-89cb-37f7e8e1c540/JC%202023%2086%20-%20Final%20report%20on%20draft%20ITS%20on%20Register%20of%20information%20under%20DORA.pdf "ITS مقامات نظارتی اروپا").
+- European Supervisory Authorities, (2024). [گزارش نهایی دربارهٔ ITS مربوط به دفتر اطلاعات زیر DORA ⧉](https://www.eba.europa.eu/activities/direct-supervision-and-oversight/digital-operational-resilience-act "ITS مقامات نظارتی اروپا").
 - European Central Bank, (2024). [چارچوب TIBER-EU ⧉](https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html "TIBER-EU").
 - European Data Protection Board, (2020). [توصیه‌های ۰۱/۲۰۲۰ دربارهٔ اقدامات تکمیلی ⧉](https://www.edpb.europa.eu/our-work-tools/our-documents/recommendations/recommendations-012020-measures-supplement-transfer_en "توصیه‌های EDPB ۰۱/۲۰۲۰").
 - US Department of Commerce, (2023). [چارچوب حریم خصوصی دادهٔ اتحادیه اروپا-ایالات متحده ⧉](https://www.dataprivacyframework.gov/list "فهرست مشارکت‌کنندگان DPF").

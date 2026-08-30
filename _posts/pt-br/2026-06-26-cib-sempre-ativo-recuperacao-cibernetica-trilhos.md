@@ -163,7 +163,7 @@ Os conselhos agora fazem cinco perguntas e esperam respostas numéricas.
 4. **Qual é a cobertura de assinatura PQC sobre artefatos de recuperação?** Percentual de snapshots de cofre, manifests e âncoras de confiança entre domínios assinados sob FIPS 203 / FIPS 204.
 5. **Qual é o Cost of Contingency Capital (CoCC)?** O custo de oportunidade diário da liquidez intradiária ociosa aprisionada em contas secundárias de clearing, saldos aquecidos em correspondentes e posições tokenizadas pré-alocadas, medido contra a taxa overnight. O conselho precisa ver o preço exato do seguro de resiliência do banco, e o comitê operacional precisa defender o trade-off entre capital aprisionado e tolerância à indisponibilidade — atualizado pelo menos trimestralmente.
 
-Essas são as métricas que mapeiam de forma limpa para a evidência do Artigo 6 da DORA, para as senior-manager statements of responsibility do SM&CR, e para a governança de risco de modelo [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") sobre a lógica de roteamento que decide qual trilho vence. O conselho não precisa de uma narrativa; precisa de um gráfico trimestral com um piso rígido.
+Essas são as métricas que mapeiam de forma limpa para a evidência do Artigo 6 da DORA, para as senior-manager statements of responsibility do SM&CR, e para a governança de risco de modelo [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") sobre a lógica de roteamento que decide qual trilho vence. O conselho não precisa de uma narrativa; precisa de um gráfico trimestral com um piso rígido.
 
 ## Conclusão
 

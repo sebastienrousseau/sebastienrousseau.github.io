@@ -225,7 +225,7 @@ site_software: "Static Site Generator, Rust"
 
 ## الخاتمة
 
-موعد نوفمبر 2026 النهائي هو الجزء السهل. الجزء الصعب هو ما يفرضه الموعد. البنوك التي تصل في الوقت وهي لا تزال تتعامل مع pain.001 بوصفه مشكلة ترجمة ستقضي العقد التالي في إعادة بناء نموذج بيانات الخزينة من السلك إلى الداخل. البنوك التي تصل بمخطط قانوني على نهج ISO-first، وعناوين مُهيكَلة افتراضياً، ومستوى تحكم في السيولة القابلة للبرمجة يستهلك pacs.008 مباشرةً، ستُشغِّل خزينة وكيلية تحت مساءلة مجلس الإدارة وفق المادة 5 من DORA، وانضباط المخاطر التشغيلية وفق [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: استكمال إصلاحات ما بعد الأزمة")، وحوكمة النماذج وفق [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "إرشاد SR 11-7 لإدارة مخاطر النماذج").
+موعد نوفمبر 2026 النهائي هو الجزء السهل. الجزء الصعب هو ما يفرضه الموعد. البنوك التي تصل في الوقت وهي لا تزال تتعامل مع pain.001 بوصفه مشكلة ترجمة ستقضي العقد التالي في إعادة بناء نموذج بيانات الخزينة من السلك إلى الداخل. البنوك التي تصل بمخطط قانوني على نهج ISO-first، وعناوين مُهيكَلة افتراضياً، ومستوى تحكم في السيولة القابلة للبرمجة يستهلك pacs.008 مباشرةً، ستُشغِّل خزينة وكيلية تحت مساءلة مجلس الإدارة وفق المادة 5 من DORA، وانضباط المخاطر التشغيلية وفق [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: استكمال إصلاحات ما بعد الأزمة")، وحوكمة النماذج وفق [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "إرشاد SR 11-7 لإدارة مخاطر النماذج").
 
 استعارة الجهاز العصبي اللاإرادي ليست زخرفاً. لا يمكن للخزينة أن تستدل على سيولة لا تراها. ولا يمكن للوكلاء أن يعملوا على بيانات لا يستطيعون تحليلها. ISO 20022 هو أسلاك خزينة CIB في 2026 — الرسالة المُهيكَلة هي جهد الفعل، والمخطط هو سجل التدقيق الذي ستطلبه الجهة التنظيمية صباح اليوم التالي للحادثة المقبلة.
 
@@ -241,7 +241,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. متاح على: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF Recommendations")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. متاح على: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. متاح على: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. متاح على: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Universal financial industry message scheme")
 

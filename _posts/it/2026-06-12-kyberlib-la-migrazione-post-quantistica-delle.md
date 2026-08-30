@@ -257,7 +257,7 @@ Le buste ibride derivano la chiave di sessione sia da un segreto classico sia da
 ## Riferimenti
 
 - National Institute of Standards and Technology, (2024). [FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "Annuncio NIST FIPS 203").
-- Board of Governors of the Federal Reserve System, (2011). [Supervisory Guidance on Model Risk Management (SR Letter 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
+- Board of Governors of the Federal Reserve System, (2011). [Supervisory Guidance on Model Risk Management (SR Letter 11-7) ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
 - Parlamento europeo e Consiglio dell'Unione europea, (2022). [Regolamento (UE) 2022/2554 sulla resilienza operativa digitale per il settore finanziario (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Regolamento DORA").
 - NIST National Cybersecurity Center of Excellence, (2025). [Migration to Post-Quantum Cryptography (NIST SP 1800-38) ⧉](https://www.nccoe.nist.gov/projects/migration-post-quantum-cryptography "NIST SP 1800-38").
 - GitHub, (2026). [Repository open source kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "Repository kyberlib").

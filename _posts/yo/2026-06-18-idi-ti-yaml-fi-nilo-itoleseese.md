@@ -163,7 +163,7 @@ Láti tọ́jú ààbò pípé kọjá ohun ìní ìdàgbàsókè àti ìṣiṣ
 | **Àkọsílẹ̀ ìpamọ́-ìrántí** | Odo bulọ́ọ̀kì Rust `unsafe` nínú parser àti àwọn ìgbáralé serializer. | DORA Article 30 (ẹ̀wọ̀n ìpèsè) | Àwọn àyẹ̀wò compiler aládàṣe ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)) nínú àwọn cargo build. |
 | **Ìfọwọ́sí àpẹẹrẹ** | 100% àwọn faili ìṣètò tí a parse ní a fọwọ́sí lòdì sí àwọn àpẹẹrẹ [JSON Schema](https://json-schema.org/) tó tọ́. | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Ìbódè ìfọwọ́sí àkókò-gidi tó ń dáwọ́ àwọn ìṣàn ìṣẹ̀dá dúró lórí àwọn ìrúfìn àpẹẹrẹ. |
 | **Ìyípadà ìṣètò** | Àwárí àti àbó àkókò-gidi ti àwọn faili ìṣètò àdúgbò sí ìpò tí git ti ṣe ìfìmúró rẹ̀. | Return on Resilience (RoR) | Telemetry tó ń tẹ̀síwájú láti ṣe àkọsílẹ̀ gbogbo ìyípadà faili àdúgbò. |
-| **Ìṣàkóso àyẹ̀wò aṣojú** | Àwọn ìyọ̀nda kíkà-nìkan tó dájú fún àwọn irinṣẹ́ AI àdúgbò tó ń ṣiṣẹ́ nípasẹ̀ àwọn ìṣètò MCP. | Ìṣàkóso ewu mọ́dẹ̀lì ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Àwọn ààlà olùpèsè MCP tó ń dín àwọn iṣẹ́ aṣojú kù sí àwọn ìtọ́kasí tó gba ìfọwọ́sí. |
+| **Ìṣàkóso àyẹ̀wò aṣojú** | Àwọn ìyọ̀nda kíkà-nìkan tó dájú fún àwọn irinṣẹ́ AI àdúgbò tó ń ṣiṣẹ́ nípasẹ̀ àwọn ìṣètò MCP. | Ìṣàkóso ewu mọ́dẹ̀lì ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Àwọn ààlà olùpèsè MCP tó ń dín àwọn iṣẹ́ aṣojú kù sí àwọn ìtọ́kasí tó gba ìfọwọ́sí. |
 
 ## 04. Àṣìṣe Ìṣètò Parsing Aláìmọ́
 

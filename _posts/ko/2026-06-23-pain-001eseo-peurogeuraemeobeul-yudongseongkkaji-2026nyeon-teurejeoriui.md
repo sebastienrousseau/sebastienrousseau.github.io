@@ -225,7 +225,7 @@ FATF 권고 16과 CBPR+ 3단계 모두가 크로스보더 발신인·수취인 �
 
 ## 결론
 
-2026년 11월 마감은 쉬운 부분입니다. 어려운 부분은 그 마감이 강제하는 일입니다. 시한에 맞춰 도착하면서도 여전히 pain.001을 변환 문제로 다루는 은행은, 앞으로 10년을 와이어에서 안쪽으로 트레저리 데이터 모델을 다시 짓는 데 쏟게 됩니다. ISO 우선 정본 스키마, 기본값으로서의 구조화 주소, 그리고 pacs.008을 직접 소비하는 프로그래머블 유동성 통제 평면을 갖춰 도착하는 은행은, DORA Article 5 이사회 책임, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") 운영 리스크 규율, 그리고 [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management") 모델 거버넌스 아래에서 에이전틱 트레저리를 운영하게 됩니다.
+2026년 11월 마감은 쉬운 부분입니다. 어려운 부분은 그 마감이 강제하는 일입니다. 시한에 맞춰 도착하면서도 여전히 pain.001을 변환 문제로 다루는 은행은, 앞으로 10년을 와이어에서 안쪽으로 트레저리 데이터 모델을 다시 짓는 데 쏟게 됩니다. ISO 우선 정본 스키마, 기본값으로서의 구조화 주소, 그리고 pacs.008을 직접 소비하는 프로그래머블 유동성 통제 평면을 갖춰 도착하는 은행은, DORA Article 5 이사회 책임, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") 운영 리스크 규율, 그리고 [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management") 모델 거버넌스 아래에서 에이전틱 트레저리를 운영하게 됩니다.
 
 자율신경계라는 표현은 장식이 아닙니다. 트레저리는 보이지 않는 유동성에 대해 추론할 수 없습니다. 에이전트는 파싱할 수 없는 데이터에 대해 행동할 수 없습니다. ISO 20022는 2026년 CIB 트레저리의 배선입니다 — 구조화된 메시지는 활동 전위이고, 스키마는 다음 사고 다음 날 아침 규제 당국이 요구할 감사 추적입니다.
 
@@ -241,7 +241,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. 출처: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF Recommendations")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. 출처: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. 출처: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. 출처: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Universal financial industry message scheme")
 

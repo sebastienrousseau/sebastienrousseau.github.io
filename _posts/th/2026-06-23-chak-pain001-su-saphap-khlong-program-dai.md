@@ -225,7 +225,7 @@ site_software: "Static Site Generator, Rust"
 
 ## บทสรุป
 
-เส้นตายเดือนพฤศจิกายน 2026 คือส่วนที่ง่าย ส่วนที่ยากคือสิ่งที่เส้นตายบังคับ ธนาคารที่มาถึงทันเวลาแต่ยังปฏิบัติต่อ pain.001 เป็นปัญหาการแปล จะใช้เวลาทศวรรษถัดไปสร้างโมเดลข้อมูลคลังเงินของพวกเขาขึ้นใหม่จากสายส่งย้อนเข้ามา ธนาคารที่มาถึงพร้อมสคีมามาตรฐาน ISO-first ที่อยู่แบบมีโครงสร้างโดยปริยาย และระนาบควบคุมสภาพคล่องโปรแกรมได้ที่บริโภค pacs.008 โดยตรง จะดำเนินการคลังเงินเชิงเอเจนต์ภายใต้ความรับผิดของคณะกรรมการตามมาตรา 5 ของ DORA วินัยความเสี่ยงปฏิบัติการ [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: การปฏิรูปหลังวิกฤตที่สมบูรณ์") และการกำกับแบบจำลอง [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 แนวทางการจัดการความเสี่ยงของแบบจำลอง")
+เส้นตายเดือนพฤศจิกายน 2026 คือส่วนที่ง่าย ส่วนที่ยากคือสิ่งที่เส้นตายบังคับ ธนาคารที่มาถึงทันเวลาแต่ยังปฏิบัติต่อ pain.001 เป็นปัญหาการแปล จะใช้เวลาทศวรรษถัดไปสร้างโมเดลข้อมูลคลังเงินของพวกเขาขึ้นใหม่จากสายส่งย้อนเข้ามา ธนาคารที่มาถึงพร้อมสคีมามาตรฐาน ISO-first ที่อยู่แบบมีโครงสร้างโดยปริยาย และระนาบควบคุมสภาพคล่องโปรแกรมได้ที่บริโภค pacs.008 โดยตรง จะดำเนินการคลังเงินเชิงเอเจนต์ภายใต้ความรับผิดของคณะกรรมการตามมาตรา 5 ของ DORA วินัยความเสี่ยงปฏิบัติการ [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: การปฏิรูปหลังวิกฤตที่สมบูรณ์") และการกำกับแบบจำลอง [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 แนวทางการจัดการความเสี่ยงของแบบจำลอง")
 
 การวางกรอบระบบประสาทอัตโนมัติไม่ใช่สิ่งประดับ คลังเงินไม่อาจคิดเรื่องสภาพคล่องที่มันมองไม่เห็น เอเจนต์ไม่อาจกระทำกับข้อมูลที่มันแยกวิเคราะห์ไม่ได้ ISO 20022 คือสายไฟของคลังเงิน CIB ในปี 2026 — ข้อความที่มีโครงสร้างคือศักย์การกระทำ สคีมาคือเส้นทางการตรวจสอบที่หน่วยกำกับดูแลจะเรียกร้องในเช้าวันถัดจากเหตุการณ์ครั้งต่อไป
 
@@ -241,7 +241,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. เข้าถึงได้ที่: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "คำแนะนำ FATF")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. เข้าถึงได้ที่: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 แนวทางการจัดการความเสี่ยงของแบบจำลอง")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. เข้าถึงได้ที่: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 แนวทางการจัดการความเสี่ยงของแบบจำลอง")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. เข้าถึงได้ที่: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — รูปแบบข้อความอุตสาหกรรมการเงินสากล")
 

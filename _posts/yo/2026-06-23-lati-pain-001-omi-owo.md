@@ -225,7 +225,7 @@ Oṣù márùn-ún tó láti gbé àpẹẹrẹ ìránṣẹ́ tí ó le ju CBPR
 
 ## Ìparí
 
-Ọjọ́ Oṣù Kọkànlá 2026 ni apá tí ó rọrùn. Apá tí ó le ni ohun tí ọjọ́ náà fipá mú. Àwọn báńkì tí yóò dé ní àkókò tí wọ́n sì ń tún ka pain.001 sí ìṣòro ìtúmọ̀ ni yóò lo ọdún mẹ́wàá tí ó ń bọ̀ láti kọ́ àpẹẹrẹ data ìṣúra wọn padà láti wáyà sínú. Àwọn báńkì tí yóò dé pẹ̀lú àpẹẹrẹ kanan ISO-akọ́kọ́, àwọn àdírẹ́sì ti a tò gẹ́gẹ́ bí ìpilẹ̀, àti pẹpẹ ìṣàkóso omi owó tí a lè ṣàṣàlọ́ṣẹ́ tí ó ń jẹ pacs.008 tààrà yóò ṣiṣẹ́ ìṣúra aṣojú lábẹ́ ojúṣe àjọ DORA Abala 5, ìbáwí ewu ìṣiṣẹ́ [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: ìparí àwọn àtúnṣe lẹ́yìn ìṣẹ̀mí"), àti ìṣàkóso àpẹẹrẹ [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Ìtọ́sọ́nà SR 11-7 lórí Ìṣàkóso Ewu Àpẹẹrẹ").
+Ọjọ́ Oṣù Kọkànlá 2026 ni apá tí ó rọrùn. Apá tí ó le ni ohun tí ọjọ́ náà fipá mú. Àwọn báńkì tí yóò dé ní àkókò tí wọ́n sì ń tún ka pain.001 sí ìṣòro ìtúmọ̀ ni yóò lo ọdún mẹ́wàá tí ó ń bọ̀ láti kọ́ àpẹẹrẹ data ìṣúra wọn padà láti wáyà sínú. Àwọn báńkì tí yóò dé pẹ̀lú àpẹẹrẹ kanan ISO-akọ́kọ́, àwọn àdírẹ́sì ti a tò gẹ́gẹ́ bí ìpilẹ̀, àti pẹpẹ ìṣàkóso omi owó tí a lè ṣàṣàlọ́ṣẹ́ tí ó ń jẹ pacs.008 tààrà yóò ṣiṣẹ́ ìṣúra aṣojú lábẹ́ ojúṣe àjọ DORA Abala 5, ìbáwí ewu ìṣiṣẹ́ [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: ìparí àwọn àtúnṣe lẹ́yìn ìṣẹ̀mí"), àti ìṣàkóso àpẹẹrẹ [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Ìtọ́sọ́nà SR 11-7 lórí Ìṣàkóso Ewu Àpẹẹrẹ").
 
 Ìṣàpẹẹrẹ ètò iṣan ara aládàáṣiṣẹ́ kì í ṣe ohun ọ̀ṣọ́. Ìṣúra kò lè ronú nípa omi owó tí kò lè rí. Àwọn aṣojú kò lè ṣe lórí data tí wọn kò lè túmọ̀. ISO 20022 ni wáyà ti ìṣúra CIB ní 2026 — ìránṣẹ́ ti a tò ni agbára ìṣe, àpẹẹrẹ ni àtọpinpin ìṣàkóso tí olùṣàkóso yóò béèrè fún ní àárọ̀ lẹ́yìn ìṣẹ̀lẹ̀ tó kàn.
 
@@ -241,7 +241,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. Wà ní: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF Recommendations")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Wà ní: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Wà ní: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. Wà ní: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Universal financial industry message scheme")
 

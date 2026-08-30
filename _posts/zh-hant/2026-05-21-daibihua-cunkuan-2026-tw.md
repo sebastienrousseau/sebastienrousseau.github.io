@@ -114,7 +114,7 @@ excerpt: "2026年的代幣化存款服務正從研究階段邁向銀行試點與
 > **執行摘要／主要重點**
 >
 > - **市場現況。** 2026年的代幣化存款仍處於規模化之前，但已非停留在理論：試點已上線，銀行方案正在成形，英國的多銀行計畫運行至2026年中期，HSBC、NatWest、Lloyds、Barclays、Nationwide與Santander正在測試市場支付、再抵押貸款與數位資產結算（[Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")）。
-> - **競爭壓力。** 穩定幣規模龐大且持續成長（BIS估計2026年4月初市值約3,150億美元，約98%以USD計價），加快了存款代幣的時程。穩定幣在開放生態觸達、加密原生流動性與全球零售層面占優；代幣化存款則在監管確定性、存款保險與司庫工作流方面占優（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")）。
+> - **競爭壓力。** 穩定幣規模龐大且持續成長（BIS估計2026年4月初市值約3,150億美元，約98%以USD計價），加快了存款代幣的時程。穩定幣在開放生態觸達、加密原生流動性與全球零售層面占優；代幣化存款則在監管確定性、存款保險與司庫工作流方面占優（[BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")）。
 > - **監管邊界。** FDIC在2026年的提案將代幣化存款界定為以DLT記錄的存款負債，並明確將其與支付型穩定幣加以區分，藉此強化美國的監管邊界（[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。
 > - **領先的銀行專案。** JPMorgan的JPM Coin在Kinexys上每日處理約20億美元的批發結算，擁有最長的存款代幣生產紀錄。HSBC擁有最完整的多軌堆疊：TDS覆蓋HK、SG、UK、LU、US，支援USD/GBP/EUR/HKD/SGD；HSBC Orion支撐英國Digital Gilt Instrument（DIGIT）試點；HSBC Gold Token將已分配實物金條代幣化；在Canton + Project Ensemble上試行跨網路原子結算；與Quantinuum合作實施PQC（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。
 > - **決定一切的設計選擇。** 三種帳本-法律模式占主導地位：代幣*即*存款（最乾淨的原子結算，最難的正常運行時間）、代幣*表徵*傳統存款（法律上更簡單、對帳負擔、JPM Coin與HSBC TDS接近此類），或代幣作為傳統軌道之上的*指令層*（可程式化主張最弱）。
@@ -147,13 +147,13 @@ Lloyds表示正在為企業及機構客戶開發與傳統交易銀行介面並�
 
 ### 3. 穩定幣既製造緊迫感，也使風險更清晰
 
-BIS在2026年4月的演講中肯定了穩定幣在智能合約可程式化與原子結算等技術特性方面的價值，但也強調了圍繞貨幣單一性、擠兌脆弱性、金融完整性、貨幣主權以及在中央銀行貨幣之外完成結算的風險（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")）。
+BIS在2026年4月的演講中肯定了穩定幣在智能合約可程式化與原子結算等技術特性方面的價值，但也強調了圍繞貨幣單一性、擠兌脆弱性、金融完整性、貨幣主權以及在中央銀行貨幣之外完成結算的風險（[BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")）。
 
 這一批評正是代幣化存款的重要性所在。代幣化存款試圖將代幣化貨幣有用的可程式化引入受監管的商業銀行貨幣架構。
 
 ### 4. Project Agorá與統一帳本塑造批發問題
 
-BIS將Project Agorá定位為與中央銀行和私營部門合作探索跨境支付代幣化的工作，並將更廣泛的方向與統一帳本願景連結起來（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")）。Deutsche Bank亦將Project Agorá與Partior視為下一代結算與跨境基礎設施的組成部分（[Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")）。
+BIS將Project Agorá定位為與中央銀行和私營部門合作探索跨境支付代幣化的工作，並將更廣泛的方向與統一帳本願景連結起來（[BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")）。Deutsche Bank亦將Project Agorá與Partior視為下一代結算與跨境基礎設施的組成部分（[Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")）。
 
 這正是代幣化存款成為批發基礎設施之處。核心問題在於商業銀行貨幣、中央銀行貨幣與代幣化資產如何在不破壞法律最終性、流動性管控或貨幣單一性的前提下共同完成結算。
 
@@ -218,13 +218,13 @@ HSBC並未完全忽視穩定幣這一方向。該行已取得HKMA許可，試點
 | 工具 | 債權類型 | 最佳用途 | 2026年現況 | 主要風險 |
 |---|---|---|---|---|
 | **代幣化存款** | 商業銀行存款或其表徵 | 銀行主導的可程式化支付、資金管理、代幣化資產結算 | 試點及早期機構產品設計（[Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")） | 互通性與法律一致性 |
-| **穩定幣** | 對發行方／準備金結構的債權 | 加密流動性、跨境實驗、美元流動性 | 規模龐大且不斷成長，BIS估計2026年4月初市值約為3,150億美元（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")） | 擠兌、金融完整性、貨幣主權 |
+| **穩定幣** | 對發行方／準備金結構的債權 | 加密流動性、跨境實驗、美元流動性 | 規模龐大且不斷成長，BIS估計2026年4月初市值約為3,150億美元（[BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")） | 擠兌、金融完整性、貨幣主權 |
 | **批發型CBDC** | 中央銀行貨幣 | 銀行間結算與代幣化市場基礎設施 | 透過中央銀行專案積極探索 | 設計、隱私、可擴展性、政治授權 |
 | **零售型CBDC** | 供公眾使用的中央銀行貨幣 | 公共數位現金替代品 | 全球進展不一 | 採納率、隱私、銀行脫媒 |
 
 ### 代幣化存款勝出之處
 
-資產負債表內的商業銀行貨幣享有穩定幣尚需贏得的監管確定性。代幣化存款承襲存款保險、審慎資本處理以及現行的AML/制裁管控。對企業司庫而言，這意味著無需面對新的交易對手風險，也無需評估新的準備金審計。它們還從企業既有的銀行帳戶上鏈——無需交易所、無需準備金發行方、無需新的託管方。BIS與FDIC都強調了這一點：當債權位於現行法律架構已經理解的位置時，貨幣單一性得以維繫（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")；[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。
+資產負債表內的商業銀行貨幣享有穩定幣尚需贏得的監管確定性。代幣化存款承襲存款保險、審慎資本處理以及現行的AML/制裁管控。對企業司庫而言，這意味著無需面對新的交易對手風險，也無需評估新的準備金審計。它們還從企業既有的銀行帳戶上鏈——無需交易所、無需準備金發行方、無需新的託管方。BIS與FDIC都強調了這一點：當債權位於現行法律架構已經理解的位置時，貨幣單一性得以維繫（[BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")；[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。
 
 ### 穩定幣仍然勝出之處
 
@@ -300,7 +300,7 @@ FDIC在2026年的擬議規則中明確將前兩種認定為以分散式帳本技
 
 **代幣化存款與穩定幣相同嗎？**
 
-不同。兩者皆提供可程式化、24/7數位貨幣，但其法律與債權結構完全不同。穩定幣是對私人發行方準備金資產或法人結構的債權，運行於央行資產負債表之外（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")）。代幣化存款則是商業銀行的直接負債，承襲既有銀行監管、AML/制裁管控與存款保險邊界（[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。
+不同。兩者皆提供可程式化、24/7數位貨幣，但其法律與債權結構完全不同。穩定幣是對私人發行方準備金資產或法人結構的債權，運行於央行資產負債表之外（[BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")）。代幣化存款則是商業銀行的直接負債，承襲既有銀行監管、AML/制裁管控與存款保險邊界（[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。
 
 **英國的主要應用場景是什麼？**
 
@@ -323,7 +323,7 @@ FDIC在2026年的擬議規則中明確將前兩種認定為以分散式帳本技
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
 - HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
 - JPMorgan, (2026). [Kinexys (formerly Onyx) digital assets platform ⧉](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan").
-- BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
+- BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").
 - Cambridge Centre for Alternative Finance, (2026). [Tokenised money: Use cases, interoperability and regulation ⧉](https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf "Tokenised money report").

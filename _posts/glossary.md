@@ -201,7 +201,7 @@ thanks: "Thanks for reading!"
       "alternateName": "Real-Time Gross Settlement",
       "description": "An interbank payment system that settles each transfer individually and irrevocably in central-bank money at the moment it is processed, with no netting. Examples: Fedwire (US), CHAPS (UK), T2 (eurozone), CHATS (Hong Kong). The settlement layer for wholesale payments above retail thresholds.",
       "inDefinedTermSet": {"@id": "https://sebastienrousseau.com/glossary/#termset"},
-      "sameAs": "https://www.bis.org/cpmi/publ/d101a.pdf"
+      "sameAs": "https://www.bis.org/cpmi/publ/d101.htm"
     },
     {
       "@type": "DefinedTerm",
@@ -276,7 +276,7 @@ Specification: [swift.com/our-solutions/swift-gpi](https://www.swift.com/our-sol
 
 An interbank payment system that settles each transfer **individually** and **irrevocably** in central-bank money at the moment it is processed, with no netting. The settlement layer for wholesale payments above retail thresholds. Examples: Fedwire (US), CHAPS (UK), T2 (eurozone), CHATS (Hong Kong), CNAPS (mainland China).
 
-The canonical reference is BIS CPMI's [*Principles for Financial Market Infrastructures*](https://www.bis.org/cpmi/publ/d101a.pdf) (PFMI), 2012.
+The canonical reference is BIS CPMI's [*Principles for Financial Market Infrastructures*](https://www.bis.org/cpmi/publ/d101.htm) (PFMI), 2012.
 
 ### FedNow
 

@@ -225,7 +225,7 @@ Fem månader är tillräckligt med tid för att leverera en strängare-än-CBPR+
 
 ## Slutsats
 
-Deadlinen den 22 november 2026 är den lätta delen. Den svåra delen är vad deadlinen tvingar fram. Banker som kommer fram i tid men fortfarande behandlar pain.001 som ett översättningsproblem kommer att tillbringa nästa årtionde med att bygga om sin treasury-datamodell från ledningen och inåt. Banker som kommer fram med ett ISO-först kanoniskt schema, strukturerade adresser som standard och ett styrplan för programmerbar likviditet som konsumerar pacs.008 direkt kommer att driva agentisk treasury under DORA Artikel 5-ansvar på styrelsenivå, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: slutförande av reformer efter krisen")-disciplin för operativ risk och [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7-vägledning om modellriskhantering")-modellstyrning.
+Deadlinen den 22 november 2026 är den lätta delen. Den svåra delen är vad deadlinen tvingar fram. Banker som kommer fram i tid men fortfarande behandlar pain.001 som ett översättningsproblem kommer att tillbringa nästa årtionde med att bygga om sin treasury-datamodell från ledningen och inåt. Banker som kommer fram med ett ISO-först kanoniskt schema, strukturerade adresser som standard och ett styrplan för programmerbar likviditet som konsumerar pacs.008 direkt kommer att driva agentisk treasury under DORA Artikel 5-ansvar på styrelsenivå, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: slutförande av reformer efter krisen")-disciplin för operativ risk och [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7-vägledning om modellriskhantering")-modellstyrning.
 
 Inramningen som autonomt nervsystem är inte dekorativ. Treasury kan inte resonera om likviditet den inte ser. Agenter kan inte agera på data de inte kan parsa. ISO 20022 är ledningen i CIB-treasury 2026 — det strukturerade meddelandet är aktionspotentialen, schemat är det revisionsspår tillsynsmyndigheten kommer att kräva morgonen efter nästa incident.
 
@@ -241,7 +241,7 @@ Europaparlamentet och rådet (2022). *Förordning (EU) 2022/2554 om digital oper
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. Tillgänglig på: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF Recommendations")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Tillgänglig på: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7-vägledning om modellriskhantering")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Tillgänglig på: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7-vägledning om modellriskhantering")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. Tillgänglig på: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Universal financial industry message scheme")
 

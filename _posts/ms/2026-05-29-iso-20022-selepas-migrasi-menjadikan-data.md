@@ -31,7 +31,7 @@ keywords: "ISO 20022 2026, alamat berstruktur, CBPR+, produk data pembayaran, ko
 
 ## Apa yang Ditutup pada November 2025 dan Apa yang Tidak
 
-Peralihan SWIFT rentas sempadan pada 22 November 2025 menyingkirkan MT 103, MT 202, MT 202COV, MT 205 dan MT 205COV untuk penggunaan rentas sempadan yang membawa nilai. SWIFT FINplus — perkhidmatan berasaskan InterAct yang membawa ISO 20022 MX — menjadi satu-satunya laluan untuk aliran tersebut. CBPR+ Fasa 1 menjadi mandatori dalam tingkap yang sama. Pengendali ESMIG di ECB telah mengesahkan migrasi sepadan untuk T2 dan T2S; [perkhidmatan CHAPS Bank of England ⧉](https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS — Bank of England") diselesaikan pada MX penuh pada Jun 2023; Rizab Persekutuan menyiapkan migrasi Fedwire Funds Service pada Mac 2025.
+Peralihan SWIFT rentas sempadan pada 22 November 2025 menyingkirkan MT 103, MT 202, MT 202COV, MT 205 dan MT 205COV untuk penggunaan rentas sempadan yang membawa nilai. SWIFT FINplus — perkhidmatan berasaskan InterAct yang membawa ISO 20022 MX — menjadi satu-satunya laluan untuk aliran tersebut. CBPR+ Fasa 1 menjadi mandatori dalam tingkap yang sama. Pengendali ESMIG di ECB telah mengesahkan migrasi sepadan untuk T2 dan T2S; [perkhidmatan CHAPS Bank of England ⧉](https://web.archive.org/web/20260610035348/https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS — Bank of England") diselesaikan pada MX penuh pada Jun 2023; Rizab Persekutuan menyiapkan migrasi Fedwire Funds Service pada Mac 2025.
 
 Apa yang tidak ditutup:
 
@@ -167,7 +167,7 @@ Ya. UETR berterusan; penjejak gpi membaca pacs.002, pacs.004 dan pacs.028 secara
 
 - SWIFT, (2025). [Kemajuan ISO 20022 2025 ⧉](https://www.swift.com/news-events/news/2025-iso-20022-progress "Kemajuan SWIFT 2025").
 - SWIFT, (2025). [Garis panduan penggunaan CBPR+ di MyStandards ⧉](https://www2.swift.com/mystandards/CBPR+/ "MyStandards CBPR+").
-- Bank of England, (2023). [CHAPS — Bank of England ⧉](https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS").
+- Bank of England, (2023). [CHAPS — Bank of England ⧉](https://web.archive.org/web/20260610035348/https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS").
 - European Central Bank, (2023). [Konsolidasi TARGET Services ⧉](https://www.ecb.europa.eu/paym/target/consolidation/html/index.en.html "Konsolidasi T2 / T2S").
 - Federal Reserve, (2025). [Pelaksanaan ISO 20022 Fedwire Funds Service ⧉](https://www.frbservices.org/resources/financial-services/wires/iso-20022-implementation-center "Fedwire ISO 20022").
 - ISO, (2024). [Katalog mesej ISO 20022 ⧉](https://www.iso20022.org/iso-20022-message-definitions "Takrifan mesej ISO 20022").

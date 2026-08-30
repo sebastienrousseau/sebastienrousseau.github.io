@@ -225,7 +225,7 @@ CBPR+ 校验规则本身没有商量余地。结构化的 `<PstlAdr>`，含 `<Ct
 
 ## 结论
 
-2026 年 11 月的截止日期只是容易的部分。难的是这个截止日期所迫使的变革。准时抵达却仍把 pain.001 视为翻译问题的银行，将用未来十年从电文向内重建司库数据模型。带着 ISO 优先的规范模式、默认结构化地址，以及直接消费 pacs.008 的可编程流动性控制平面准时抵达的银行，将在 DORA 第 5 条董事会问责、[Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III：完成后危机改革") 操作风险纪律与[SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 模型风险管理指引") 模型治理之下运营智能体司库。
+2026 年 11 月的截止日期只是容易的部分。难的是这个截止日期所迫使的变革。准时抵达却仍把 pain.001 视为翻译问题的银行，将用未来十年从电文向内重建司库数据模型。带着 ISO 优先的规范模式、默认结构化地址，以及直接消费 pacs.008 的可编程流动性控制平面准时抵达的银行，将在 DORA 第 5 条董事会问责、[Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III：完成后危机改革") 操作风险纪律与[SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 模型风险管理指引") 模型治理之下运营智能体司库。
 
 自主神经系统这一框架并非装饰。司库无法对它看不见的流动性进行推理。智能体无法对它无法解析的数据采取行动。ISO 20022 是 2026 年 CIB 司库的线路——结构化报文是动作电位，模式是下一次事故次日清晨监管机构索要的审计轨迹。
 
@@ -241,7 +241,7 @@ CBPR+ 校验规则本身没有商量余地。结构化的 `<PstlAdr>`，含 `<Ct
 
 金融行动特别工作组（2023）。*International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*。来源：[https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF 建议")
 
-美国联邦储备委员会（2011）。*SR 11-7 Guidance on Model Risk Management*。来源：[https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 模型风险管理指引")
+美国联邦储备委员会（2011）。*SR 11-7 Guidance on Model Risk Management*。来源：[https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 模型风险管理指引")
 
 国际标准化组织（2022）。*ISO 20022 Financial services — Universal financial industry message scheme*。来源：[https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — 通用金融行业报文方案")
 

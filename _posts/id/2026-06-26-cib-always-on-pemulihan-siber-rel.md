@@ -163,7 +163,7 @@ Dewan kini mengajukan lima pertanyaan dan menuntut jawaban numerik.
 4. **Berapa cakupan penandatanganan PQC pada artefak pemulihan?** Persentase snapshot brankas, manifes, dan anchor kepercayaan antar-domain yang ditandatangani di bawah FIPS 203 / FIPS 204.
 5. **Berapa Cost of Contingency Capital (CoCC)?** Biaya peluang harian dari likuiditas intraday menganggur yang terjebak di rekening kliring sekunder, saldo koresponden hangat, dan posisi tertokenisasi yang sudah di-staging, diukur terhadap suku bunga overnight. Dewan harus melihat harga pasti dari asuransi ketahanan bank, dan komite operasi harus mempertahankan trade-off antara modal terjebak dan toleransi pemadaman — disegarkan setidaknya per kuartal.
 
-Inilah metrik yang memetakan rapi ke bukti DORA Pasal 6, ke pernyataan tanggung jawab senior manager SM&CR, dan ke tata kelola risiko model [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") atas logika perutean yang memutuskan rel mana yang menang. Dewan tidak butuh narasi; dewan butuh grafik kuartalan dengan lantai yang keras.
+Inilah metrik yang memetakan rapi ke bukti DORA Pasal 6, ke pernyataan tanggung jawab senior manager SM&CR, dan ke tata kelola risiko model [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") atas logika perutean yang memutuskan rel mana yang menang. Dewan tidak butuh narasi; dewan butuh grafik kuartalan dengan lantai yang keras.
 
 ## Kesimpulan
 

@@ -163,7 +163,7 @@ För att upprätthålla absolut säkerhet i utvecklings- och driftsbeståndet m�
 | **Minnessäkerhetsprofil** | Noll `unsafe` Rust-block i parserns och serialiserarens beroenden. | DORA Artikel 30 (leveranskedja) | Automatiserade kompilatorkontroller ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)) i cargo-bygget. |
 | **Schemavalidering** | 100 % av parsade konfigurationsfiler verifieras mot giltiga [JSON Schema](https://json-schema.org/)-modeller. | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Realtidsgrind för validering som stoppar bygg-pipelines vid schemaöverträdelser. |
 | **Konfigurationsdrift** | Realtidsdetektion och återställning av lokala konfigurationsfiler till git-versionerat tillstånd. | Return on Resilience (RoR) | Kontinuerlig telemetri som loggar alla lokala filändringar. |
-| **Behörighetskontroll för agenter** | Avgränsade behörigheter med endast läsåtkomst för lokala AI-verktyg som verkar via MCP-konfigurationer. | Modellriskhantering ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | MCP-servergränser begränsar agentoperationer till godkända kataloger. |
+| **Behörighetskontroll för agenter** | Avgränsade behörigheter med endast läsåtkomst för lokala AI-verktyg som verkar via MCP-konfigurationer. | Modellriskhantering ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | MCP-servergränser begränsar agentoperationer till godkända kataloger. |
 
 ## 04. Felslutet med opak konfigurationsparsning
 

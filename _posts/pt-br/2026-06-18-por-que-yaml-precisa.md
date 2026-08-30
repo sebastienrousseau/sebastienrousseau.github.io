@@ -163,7 +163,7 @@ Para manter segurança absoluta em todo o parque de desenvolvimento e operaçõe
 | **Perfil de segurança de memória** | Zero blocos `unsafe` de Rust nas dependências de parser e serializador. | DORA Artigo 30 (cadeia de suprimentos) | Verificações automatizadas do compilador ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)) em builds cargo. |
 | **Validação de schema** | 100% dos arquivos de configuração parseados verificados contra modelos válidos de [JSON Schema](https://json-schema.org/). | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Portão de validação em tempo real que interrompe pipelines de build em violações de schema. |
 | **Drift de configuração** | Detecção e recuperação em tempo real de arquivos de configuração locais ao estado versionado em git. | Return on Resilience (RoR) | Telemetria contínua registrando todas as modificações de arquivos locais. |
-| **Controle de acesso de agente** | Permissões limitadas e somente leitura para ferramentas de AI locais operando via configurações MCP. | Gestão de risco de modelo ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Fronteiras de servidor MCP restringindo operações de agente a diretórios aprovados. |
+| **Controle de acesso de agente** | Permissões limitadas e somente leitura para ferramentas de AI locais operando via configurações MCP. | Gestão de risco de modelo ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Fronteiras de servidor MCP restringindo operações de agente a diretórios aprovados. |
 
 ## 04. A falácia do parsing opaco de configuração
 

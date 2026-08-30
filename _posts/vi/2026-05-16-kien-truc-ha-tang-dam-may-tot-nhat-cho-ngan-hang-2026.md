@@ -311,12 +311,12 @@ Một **người tiêu thụ đám mây** mua sáu trụ cột từ các hypersc
 - Sebastien Rousseau, (2026). [CloudCDN trên GitHub ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "sebastienrousseau/cloudcdn.pro"). GitHub.
 - Constellation Energy, (2025). [Thoả thuận khởi động lại Three Mile Island với Microsoft cho điện trung tâm dữ liệu AI ⧉](https://www.constellationenergy.com/newsroom.html "Phòng tin Constellation Energy"). Constellation Energy.
 - Amazon Web Services, (2025). [Đầu tư AWS vào X-Energy và mua trung tâm dữ liệu liền-kề-hạt-nhân Talen / Cumulus ⧉](https://aws.amazon.com/blogs/aws/ "AWS News Blog"). AWS.
-- Kairos Power, (2025). [Thoả thuận mua điện SMR Google Kairos Power ⧉](https://kairospower.com/news/ "Tin tức Kairos Power"). Kairos Power.
+- Kairos Power, (2025). Thoả thuận mua điện SMR Google Kairos Power. Kairos Power.
 - Ngân hàng Thanh toán Quốc tế, (2025). [Project Agora: CBDC bán buôn và các khoản tiền gửi ngân hàng thương mại được token hoá ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agora — BIS Innovation Hub"). BIS Innovation Hub.
 - Ngân hàng Trung ương châu Âu, (2025). [Dự án euro kỹ thuật số — cập nhật giai đoạn chuẩn bị ⧉](https://www.ecb.europa.eu/paym/digital_euro/html/index.en.html "Euro kỹ thuật số — ECB"). ECB.
-- Amazon Web Services, (2025). [AWS European Sovereign Cloud — Tổng quan Chương trình ⧉](https://aws.amazon.com/government-education/european-sovereign-cloud/ "AWS European Sovereign Cloud"). AWS.
+- Amazon Web Services, (2025). [AWS European Sovereign Cloud — Tổng quan Chương trình ⧉](https://aws.amazon.com/compliance/europe-digital-sovereignty/ "AWS European digital sovereignty"). AWS.
 - Meta AI, (2026). [Công bố phát hành Llama 4 — các biến thể Maverick, Scout và Behemoth ⧉](https://ai.meta.com/blog/llama-4-multimodal-intelligence/ "Phát hành Llama 4"). Meta.
-- Toshiba / BT, (2025). [Triển khai mạng QKD thương mại trong khu vực đô thị London ⧉](https://www.toshiba.eu/quantum-technology/ "Công nghệ Lượng tử Toshiba"). Toshiba Europe.
+- Toshiba / BT, (2025). [Triển khai mạng QKD thương mại trong khu vực đô thị London ⧉](https://www.global.toshiba/ww/products-solutions/security-ict/qkd.html "Công nghệ Lượng tử Toshiba"). Toshiba Europe.
 - NVIDIA, (2025). [Spectrum-X Photonics và Quantum-X Photonics — mạng quang đồng gói cho các nhà máy AI ⧉](https://nvidianews.nvidia.com/news/spectrum-x-quantum-x-photonics "Công bố Photonics của NVIDIA tại GTC 2025"). NVIDIA.
 - Giám sát Ngân hàng Ngân hàng Trung ương châu Âu, (2025). [Thuê ngoài đám mây và rủi ro tập trung — các kỳ vọng giám sát ⧉](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.outsourcingcloud.en.html "Giám sát Ngân hàng ECB về thuê ngoài đám mây"). ECB.
 - Zou, W. et al. (2024). [PoisonedRAG: Các Cuộc tấn công Tham nhũng Tri thức vào Tạo sinh Được Tăng cường Truy xuất của các Mô hình Ngôn ngữ Lớn ⧉](https://arxiv.org/abs/2402.07867 "PoisonedRAG"). arXiv.

@@ -121,7 +121,7 @@ site_software: "Static Site Generator, Rust"
 
 採用率攀升的同時,有兩件事一併發生變化。
 
-第一,監理機關不再把 LLM 當作新鮮玩意。聯準會已澄清:[SR 11-7 ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7:模型風險管理指引")適用於以 LLM 為基礎的決策流程,無論該 LLM 在機構內部是否被歸類為「模型」。PRA 的 [SS1/23 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "監理聲明 SS1/23") 從一開始的範圍就足以納入。歐盟 AI Act 的「高風險」分類涵蓋金融服務業大多數 LLM 用例。「我們不確定這算不算」這種說法,已經沒有立足之地。
+第一,監理機關不再把 LLM 當作新鮮玩意。聯準會已澄清:[SR 11-7 ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7:模型風險管理指引")適用於以 LLM 為基礎的決策流程,無論該 LLM 在機構內部是否被歸類為「模型」。PRA 的 [SS1/23 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "監理聲明 SS1/23") 從一開始的範圍就足以納入。歐盟 AI Act 的「高風險」分類涵蓋金融服務業大多數 LLM 用例。「我們不確定這算不算」這種說法,已經沒有立足之地。
 
 第二,基準測試的現實追了上來。史丹佛 HAI 的 2026 年 AI 指數報告指出,OSWorld —— 目前最接近真實企業工具呼叫場景的基準 —— 準確率為 66.3%([Stanford HAI ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance "技術效能章節"))。結構化任務仍有三分之一會失敗。這個數字定義了 2026 年自主性的技術天花板。它高到足以支持在 HITL 監督下進行有界的 Level-3 佈署;但不足以支持對任何沾到客戶資金的 API 進行非監督執行。
 
@@ -259,7 +259,7 @@ Open Policy Agent(或同等品)坐在驗證器與 API 之間。策略以 Git 版
 - Stanford HAI, (2026). [2026 年 AI 指數報告 ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report "2026 年 AI 指數報告").
 - Stanford HAI, (2026). [技術效能章節 ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance "技術效能章節").
 - Cambridge Centre for Alternative Finance, (2026). [2026 全球金融服務業 AI 報告 ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 全球金融服務業 AI 報告").
-- Federal Reserve, (2011). [SR 11-7:模型風險管理指引 ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7:模型風險管理指引").
+- Federal Reserve, (2011). [SR 11-7:模型風險管理指引 ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7:模型風險管理指引").
 - Prudential Regulation Authority, (2023). [監理聲明 SS1/23:銀行模型風險管理原則 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "SS1/23:銀行模型風險管理原則").
 - European Commission, (2024). [規則 (EU) 2024/1689 —— AI Act ⧉](https://eur-lex.europa.eu/eli/reg/2024/1689/oj "規則 (EU) 2024/1689 —— 歐盟 AI Act").
 - NVIDIA, (2024). [NeMo Guardrails 框架 ⧉](https://github.com/NVIDIA/NeMo-Guardrails "NeMo Guardrails —— 為以 LLM 為基礎的對話系統加上可程式化護欄機制的開源工具組").

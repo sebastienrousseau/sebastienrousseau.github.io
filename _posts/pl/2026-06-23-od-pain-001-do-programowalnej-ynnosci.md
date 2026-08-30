@@ -225,7 +225,7 @@ Pięć miesięcy wystarczy, aby wdrożyć profil komunikatu surowszy niż CBPR+ 
 
 ## Podsumowanie
 
-Termin listopada 2026 to łatwa część. Trudna część to to, co ten termin wymusza. Banki, które dotrą na czas nadal traktując pain.001 jako problem tłumaczeniowy, spędzą następną dekadę przebudowując swój model danych treasury od drutu do środka. Banki, które dotrą z kanonicznym schematem ISO-first, ustrukturyzowanymi adresami domyślnie i płaszczyzną kontroli programowalnej płynności konsumującą pacs.008 bezpośrednio, będą prowadzić agentowy treasury pod odpowiedzialnością zarządu z artykułu 5 DORA, dyscypliną ryzyka operacyjnego [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalizacja reform pokryzysowych") oraz ładem modeli [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Wytyczne SR 11-7 dotyczące zarządzania ryzykiem modeli").
+Termin listopada 2026 to łatwa część. Trudna część to to, co ten termin wymusza. Banki, które dotrą na czas nadal traktując pain.001 jako problem tłumaczeniowy, spędzą następną dekadę przebudowując swój model danych treasury od drutu do środka. Banki, które dotrą z kanonicznym schematem ISO-first, ustrukturyzowanymi adresami domyślnie i płaszczyzną kontroli programowalnej płynności konsumującą pacs.008 bezpośrednio, będą prowadzić agentowy treasury pod odpowiedzialnością zarządu z artykułu 5 DORA, dyscypliną ryzyka operacyjnego [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalizacja reform pokryzysowych") oraz ładem modeli [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Wytyczne SR 11-7 dotyczące zarządzania ryzykiem modeli").
 
 Rama autonomicznego układu nerwowego nie jest dekoracyjna. Treasury nie potrafi rozumować o płynności, której nie widzi. Agenci nie potrafią działać na danych, których nie umieją sparsować. ISO 20022 jest okablowaniem treasury CIB w 2026 — ustrukturyzowany komunikat jest potencjałem czynnościowym, schemat jest śladem audytowym, którego regulator zażąda rano po następnym incydencie.
 
@@ -241,7 +241,7 @@ Parlament Europejski i Rada (2022). *Rozporządzenie (UE) 2022/2554 w sprawie op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. Dostępne pod adresem: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "Rekomendacje FATF")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Dostępne pod adresem: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Wytyczne SR 11-7 dotyczące zarządzania ryzykiem modeli")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Dostępne pod adresem: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Wytyczne SR 11-7 dotyczące zarządzania ryzykiem modeli")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. Dostępne pod adresem: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Powszechny schemat komunikatów branży finansowej")
 

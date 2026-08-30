@@ -225,7 +225,7 @@ Beş ay, CBPR+'tan daha katı bir mesaj profili ve ayrıştırmada-reddet giriş
 
 ## Sonuç
 
-Kasım 2026 son tarihi kolay kısımdır. Zor kısım, son tarihin neyi zorladığıdır. Zamanında ulaşan ancak hâlâ pain.001'i bir çeviri sorunu olarak ele alan bankalar, önümüzdeki on yılı hazine veri modellerini telden içeri doğru yeniden inşa ederek geçirecek. ISO-öncelikli kanonik bir şema, varsayılan olarak yapılandırılmış adresler ve pacs.008'i doğrudan tüketen programlanabilir bir likidite kontrol düzlemiyle ulaşan bankalar, DORA Madde 5 yönetim kurulu hesap verebilirliği, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: kriz sonrası reformların tamamlanması") operasyonel risk disiplini ve [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Model Risk Yönetimi Rehberi") model yönetişimi altında ajansal hazine yürütecek.
+Kasım 2026 son tarihi kolay kısımdır. Zor kısım, son tarihin neyi zorladığıdır. Zamanında ulaşan ancak hâlâ pain.001'i bir çeviri sorunu olarak ele alan bankalar, önümüzdeki on yılı hazine veri modellerini telden içeri doğru yeniden inşa ederek geçirecek. ISO-öncelikli kanonik bir şema, varsayılan olarak yapılandırılmış adresler ve pacs.008'i doğrudan tüketen programlanabilir bir likidite kontrol düzlemiyle ulaşan bankalar, DORA Madde 5 yönetim kurulu hesap verebilirliği, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: kriz sonrası reformların tamamlanması") operasyonel risk disiplini ve [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Model Risk Yönetimi Rehberi") model yönetişimi altında ajansal hazine yürütecek.
 
 Otonom sinir sistemi çerçevelemesi dekoratif değildir. Hazine, göremediği likidite üzerinde muhakeme edemez. Ajanlar, ayrıştıramadıkları veri üzerinde hareket edemez. ISO 20022, 2026'da CIB hazinesinin kablolamasıdır — yapılandırılmış mesaj aksiyon potansiyelidir, şema ise düzenleyicinin bir sonraki olayın ertesi sabahı talep edeceği denetim izidir.
 
@@ -241,7 +241,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. Erişim: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF Tavsiyeleri")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Erişim: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Model Risk Yönetimi Rehberi")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Erişim: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Model Risk Yönetimi Rehberi")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. Erişim: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Evrensel finansal sektör mesaj şeması")
 

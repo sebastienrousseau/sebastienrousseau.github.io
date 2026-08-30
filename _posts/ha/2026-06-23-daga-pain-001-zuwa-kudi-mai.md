@@ -225,7 +225,7 @@ Watanni biyar ya isa lokaci don aikawa da bayanin saƙo mafi tsanani-da-CBPR+ da
 
 ## Ƙarshe
 
-Wa'adin Nuwamba 2026 shi ne sashin sauƙi. Sashin mai wuya shi ne abin da wa'adin ke tilastawa. Bankunan da suka isa cikin lokaci har yanzu suna ɗaukar pain.001 a matsayin matsalar fassara za su shafe shekaru goma masu zuwa suna sake gina samfurin bayanan baitulmalin su daga waya zuwa ciki. Bankunan da suka isa da tsarin canonical na ISO-na-farko, adireshin tsararru ta tsohuwa, da filin sarrafa kuɗi mai shirye-shirye wanda ke cinye pacs.008 kai tsaye za su gudanar da baitulmalin wakilci a ƙarƙashin lissafin kwamiti na Mataki na 5 na DORA, horon haɗarin gudanarwa na [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: kammala gyare-gyaren bayan rikicin"), da gudanar da samfurin [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Jagora akan Gudanar da Haɗarin Samfurin").
+Wa'adin Nuwamba 2026 shi ne sashin sauƙi. Sashin mai wuya shi ne abin da wa'adin ke tilastawa. Bankunan da suka isa cikin lokaci har yanzu suna ɗaukar pain.001 a matsayin matsalar fassara za su shafe shekaru goma masu zuwa suna sake gina samfurin bayanan baitulmalin su daga waya zuwa ciki. Bankunan da suka isa da tsarin canonical na ISO-na-farko, adireshin tsararru ta tsohuwa, da filin sarrafa kuɗi mai shirye-shirye wanda ke cinye pacs.008 kai tsaye za su gudanar da baitulmalin wakilci a ƙarƙashin lissafin kwamiti na Mataki na 5 na DORA, horon haɗarin gudanarwa na [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: kammala gyare-gyaren bayan rikicin"), da gudanar da samfurin [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Jagora akan Gudanar da Haɗarin Samfurin").
 
 Tsarin tsarin jijiya mai aiki da kansa ba ado ba ne. Baitulmali ba zai iya yin tunani game da kuɗin da ba zai iya gani ba. Wakilai ba za su iya yin aiki akan bayanan da ba za su iya rarrabewa ba. ISO 20022 shi ne wayoyin baitulmalin CIB a 2026 — saƙon tsararru shi ne yiwuwar aiki, tsarin shi ne hanyar binciken da mai gudanarwa zai bukata da safe bayan abin da ya faru na gaba.
 
@@ -241,7 +241,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. Akwai a: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "Shawarwarin FATF")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Akwai a: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Jagora akan Gudanar da Haɗarin Samfurin")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Akwai a: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Jagora akan Gudanar da Haɗarin Samfurin")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. Akwai a: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Tsarin saƙon masana'antar kuɗi na duniya")
 

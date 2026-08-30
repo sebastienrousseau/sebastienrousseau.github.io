@@ -121,7 +121,7 @@ site_software: "Static Site Generator, Rust"
 
 伴随采用率上行,还有两件事在同步发生。
 
-第一,监管者不再把 LLM 当作新鲜事物。美联储已经明确指出,[SR 11-7 ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: Guidance on Model Risk Management") 适用于基于 LLM 的决策流程,无论这家银行内部是否把 LLM 归类为模型。PRA 的 [SS1/23 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "Supervisory Statement SS1/23") 一向覆盖面足够宽,把它们囊括进来不成问题。欧盟《AI 法案》的高风险分类涵盖了金融服务领域绝大多数 LLM 用例。"我们不太确定它算不算"的说法,已经没有立足之地。
+第一,监管者不再把 LLM 当作新鲜事物。美联储已经明确指出,[SR 11-7 ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: Guidance on Model Risk Management") 适用于基于 LLM 的决策流程,无论这家银行内部是否把 LLM 归类为模型。PRA 的 [SS1/23 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "Supervisory Statement SS1/23") 一向覆盖面足够宽,把它们囊括进来不成问题。欧盟《AI 法案》的高风险分类涵盖了金融服务领域绝大多数 LLM 用例。"我们不太确定它算不算"的说法,已经没有立足之地。
 
 第二,基准的现实跟上来了。斯坦福 HAI 的 2026 年 AI 指数报告显示,OSWorld——目前最接近真实企业级工具使用的基准——准确率为 66.3%([Stanford HAI ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance "Technical Performance chapter"))。结构化任务里仍有三分之一在失败。这个数字给 2026 年的自主性设定了技术天花板:足够高,可以在 HITL 监督下支撑有界的 L3 部署;不够高,无法支撑任何接触客户资金 API 的无人监督执行。
 
@@ -259,7 +259,7 @@ ROI 最高的工作流是支付修复、KYC 文档抽取、司库服务 FAQ 拦�
 - Stanford HAI, (2026). [2026 年 AI 指数报告 ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report "2026 年 AI 指数报告")。
 - Stanford HAI, (2026). [技术性能章节 ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance "技术性能章节")。
 - 剑桥替代金融研究中心, (2026). [2026 年全球金融服务 AI 报告 ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 年全球金融服务 AI 报告")。
-- 美联储, (2011). [SR 11-7:模型风险管理指引 ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7:模型风险管理指引")。
+- 美联储, (2011). [SR 11-7:模型风险管理指引 ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7:模型风险管理指引")。
 - 英国审慎监管局, (2023). [监管声明 SS1/23:银行模型风险管理原则 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "SS1/23:银行模型风险管理原则")。
 - 欧盟委员会, (2024). [(EU) 2024/1689 号条例——AI 法案 ⧉](https://eur-lex.europa.eu/eli/reg/2024/1689/oj "(EU) 2024/1689 号条例——欧盟 AI 法案")。
 - NVIDIA, (2024). [NeMo Guardrails 框架 ⧉](https://github.com/NVIDIA/NeMo-Guardrails "NeMo Guardrails——为基于 LLM 的对话系统添加可编程护栏机制的开源工具包")。

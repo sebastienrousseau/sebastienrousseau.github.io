@@ -323,7 +323,7 @@ hsh 是口令与秘密哈希框架，并非密钥封装或签名原语。[NIST I
 
 ## 参考文献
 
-巴塞尔银行监管委员会（2011）。《Basel III: A global regulatory framework for more resilient banks and banking systems》。国际清算银行。可访问：[https://www.bis.org/publ/bcbs189.pdf](https://www.bis.org/publ/bcbs189.pdf "Basel III：更具韧性银行与银行体系的全球监管框架")
+巴塞尔银行监管委员会（2011）。《Basel III: A global regulatory framework for more resilient banks and banking systems》。国际清算银行。可访问：[https://www.bis.org/publ/bcbs189.htm](https://www.bis.org/publ/bcbs189.htm "Basel III：更具韧性银行与银行体系的全球监管框架")
 
 Biryukov, A.、Dinu, D.、Khovratovich, D. 与 Josefsson, S.（2021）。《RFC 9106: Argon2 Memory-Hard Function for Password Hashing and Proof-of-Work Applications》。互联网工程任务组。可访问：[https://datatracker.ietf.org/doc/html/rfc9106](https://datatracker.ietf.org/doc/html/rfc9106 "RFC 9106——用于口令哈希的 Argon2 内存困难函数")
 

@@ -96,7 +96,7 @@ excerpt: "2026 में थोक भुगतान अब केवल बै
 > - **ISO 20022 अब थोक भुगतान आधुनिकीकरण की साझा भाषा है।** BIS CPMI के अनुसार यह मानक खंडित संदेश-व्यवस्था, डेटा संक्षेपन, कमज़ोर सीधा-थ्रू प्रसंस्करण और अनुपालन घर्षण को संबोधित करता है ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "वित्तीय संदेश-व्यवस्था का भविष्य: ISO 20022 प्रवास यात्रा")).
 > - **G20 रोडमैप अब भी अपने लक्ष्यों से पीछे है।** FSB (वित्तीय स्थिरता बोर्ड) की मार्च 2026 की समीक्षा कहती है कि प्रगति वास्तविक है किंतु 2027 के लक्ष्य अभी तक राह पर नहीं हैं ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "सीमा-पार भुगतानों में सुधार")).
 > - **RTGS (वास्तविक समय सकल निपटान) के परिचालन घंटे एवं पहुँच आर्थिक उत्तोलक हैं।** FSB नोट करता है कि आधे से अधिक क्षेत्राधिकारों ने RTGS घंटों का विस्तार किया है या विस्तार की योजना बना रहे हैं, जबकि भुगतान प्रणालियों में गैर-बैंक प्रदाताओं के लिए प्रत्यक्ष पहुँच बढ़ रही है ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "सीमा-पार भुगतानों में सुधार")).
-> - **Bank of England की नवीनीकृत RTGS सेवा प्रत्यास्थता एवं अंतर-संचालनीयता को स्पष्ट करती है।** नवीनीकृत सेवा प्रत्यास्थता, पहुँच, अंतर-संचालनीयता और कार्यक्षमता के माध्यम से मौद्रिक एवं वित्तीय स्थिरता का समर्थन करने हेतु अभिकल्पित है ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "नवीनीकृत RTGS सेवा — मुख्य लाभ")).
+> - **Bank of England की नवीनीकृत RTGS सेवा प्रत्यास्थता एवं अंतर-संचालनीयता को स्पष्ट करती है।** नवीनीकृत सेवा प्रत्यास्थता, पहुँच, अंतर-संचालनीयता और कार्यक्षमता के माध्यम से मौद्रिक एवं वित्तीय स्थिरता का समर्थन करने हेतु अभिकल्पित है ([Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "नवीनीकृत RTGS सेवा — मुख्य लाभ")).
 > - **विखंडन ही समष्टि-स्तरीय जोखिम है।** Atlantic Council चेतावनी देता है कि भुगतान-प्रणाली विखंडन लागत बढ़ा सकता है, निपटान को धीमा कर सकता है, पारदर्शिता घटा सकता है और वैश्विक वित्तीय एकीकरण को कमज़ोर कर सकता है ([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "वैश्विक भुगतान प्रणालियाँ विखंडित हो रही हैं")).
 > - **DLT पायलट अब अवसंरचना प्रयोग हैं, क्रिप्टो प्रदर्शन नहीं।** BIS से सम्बद्ध कार्य जैसे Project Agorá और यूरोपीय थोक निपटान पायलट यह परीक्षण कर रहे हैं कि क्या टोकनीकृत वाणिज्यिक बैंक मुद्रा एवं केंद्रीय बैंक मुद्रा उच्च-मूल्य सीमा-पार निपटान को बेहतर कर सकती हैं ([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "वैश्विक भुगतान प्रणालियाँ विखंडित हो रही हैं")).
 > - **अर्थशास्त्र परिचालनात्मक है।** सीमा-पार भुगतान आर्थिक रूप से तब विफल होता है जब समृद्ध डेटा खो जाता है, अनुपालन जाँच मैनुअल हो जाती है, तरलता समय-क्षेत्रों में फँस जाती है और जाँच के लिए मानवीय सुधार की आवश्यकता होती है।
@@ -121,7 +121,7 @@ BIS CPMI का अप्रैल 2026 ब्रीफ़ ISO 20022 का व�
 
 निपटान विंडो इसलिए महत्त्वपूर्ण है क्योंकि वैश्विक थोक भुगतान समय-क्षेत्रों को पार करते हैं। Fabio Panetta का मई 2026 का BIS भाषण राष्ट्रीय भुगतान अवसंरचना को सुधार के एक निर्देशांक के रूप में प्रस्तुत करता है, जिसमें विस्तृत निपटान विंडो और पूर्ण ISO 20022 अंगीकरण शामिल हैं ([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "स्थिरीकरण हेतु अंतर-संयोजन: विखंडित होती दुनिया में सीमा-पार भुगतान")).
 
-Bank of England की नवीनीकृत RTGS सेवा भी उसी दिशा में है। यह प्रत्यास्थता, व्यापक पहुँच, अंतर-संचालनीयता और एक तुल्यकालित निपटान इंटरफ़ेस पर बल देती है जो अन्य खाता-बहियों के साथ अंतर-संचालन कर सकता है तथा निपटान जोखिम एवं तरलता लागत को घटा सकता है ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "नवीनीकृत RTGS सेवा — मुख्य लाभ")).
+Bank of England की नवीनीकृत RTGS सेवा भी उसी दिशा में है। यह प्रत्यास्थता, व्यापक पहुँच, अंतर-संचालनीयता और एक तुल्यकालित निपटान इंटरफ़ेस पर बल देती है जो अन्य खाता-बहियों के साथ अंतर-संचालन कर सकता है तथा निपटान जोखिम एवं तरलता लागत को घटा सकता है ([Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "नवीनीकृत RTGS सेवा — मुख्य लाभ")).
 
 ### 3. गैर-बैंक पहुँच प्रतिस्पर्धी संरचना को बदलती है
 
@@ -202,7 +202,7 @@ FSB का कहना है कि प्रगति हुई है, प�
 
 **RTGS नवीनीकरण की भूमिका क्या है?**
 
-RTGS नवीनीकरण प्रत्यास्थता, पहुँच, अंतर-संचालनीयता और निपटान कार्यक्षमता को बेहतर बनाता है। Bank of England तुल्यकालित निपटान इंटरफ़ेस और ISO 20022 को भी निपटान जोखिम एवं तरलता लागत घटाने के तंत्र के रूप में रेखांकित करता है ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "नवीनीकृत RTGS सेवा — मुख्य लाभ")).
+RTGS नवीनीकरण प्रत्यास्थता, पहुँच, अंतर-संचालनीयता और निपटान कार्यक्षमता को बेहतर बनाता है। Bank of England तुल्यकालित निपटान इंटरफ़ेस और ISO 20022 को भी निपटान जोखिम एवं तरलता लागत घटाने के तंत्र के रूप में रेखांकित करता है ([Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "नवीनीकृत RTGS सेवा — मुख्य लाभ")).
 
 **क्या स्टेबलकॉइन्स थोक भुगतान का स्थान ले रहे हैं?**
 
@@ -213,5 +213,5 @@ RTGS नवीनीकरण प्रत्यास्थता, पहुँ
 - BIS CPMI, (2026). [वित्तीय संदेश-व्यवस्था का भविष्य: ISO 20022 प्रवास यात्रा ⧉](https://www.bis.org/cpmi/publ/brief11.htm "BIS CPMI Brief No 11").
 - FSB, (2026). [सीमा-पार भुगतानों में सुधार — FSB Payments Summit मुख्य भाषण ⧉](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "FSB").
 - BIS, (2026). [स्थिरीकरण हेतु अंतर-संयोजन: विखंडित होती दुनिया में सीमा-पार भुगतान ⧉](https://www.bis.org/cpmi/speeches/sp260505.pdf "Fabio Panetta का भाषण").
-- Bank of England, (2026). [नवीनीकृत RTGS सेवा — मुख्य लाभ ⧉](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Bank of England").
+- Bank of England, (2026). [नवीनीकृत RTGS सेवा — मुख्य लाभ ⧉](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Bank of England").
 - Atlantic Council, (2026). [वैश्विक भुगतान प्रणालियाँ विखंडित हो रही हैं — G20 क्या कर सकता है ⧉](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "Atlantic Council").

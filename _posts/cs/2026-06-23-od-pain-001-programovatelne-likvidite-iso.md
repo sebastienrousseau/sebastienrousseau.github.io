@@ -225,7 +225,7 @@ Pět měsíců stačí dodat profil zpráv přísnější než CBPR+ a vstup s o
 
 ## Závěr
 
-Listopadový termín 2026 je tou snadnou částí. Tvrdou částí je to, co termín vynutí. Banky, které dorazí včas a stále budou pain.001 řešit jako problém překladu, stráví příští dekádu přestavbou svého datového modelu treasury z drátu dovnitř. Banky, které dorazí s ISO-first kanonickým schématem, strukturovanými adresami ve výchozím nastavení a control plane programovatelné likvidity, který konzumuje pacs.008 přímo, budou provozovat agentní treasury pod odpovědností představenstva podle článku 5 DORA, provozně-rizikovou disciplínou [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalizace pokrizových reforem") a řízením modelového rizika [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 pokyny k řízení modelového rizika").
+Listopadový termín 2026 je tou snadnou částí. Tvrdou částí je to, co termín vynutí. Banky, které dorazí včas a stále budou pain.001 řešit jako problém překladu, stráví příští dekádu přestavbou svého datového modelu treasury z drátu dovnitř. Banky, které dorazí s ISO-first kanonickým schématem, strukturovanými adresami ve výchozím nastavení a control plane programovatelné likvidity, který konzumuje pacs.008 přímo, budou provozovat agentní treasury pod odpovědností představenstva podle článku 5 DORA, provozně-rizikovou disciplínou [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalizace pokrizových reforem") a řízením modelového rizika [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 pokyny k řízení modelového rizika").
 
 Rámec autonomní nervové soustavy není dekorativní. Treasury nemůže uvažovat o likviditě, kterou nevidí. Agenti nemohou jednat na základě dat, která nedokážou parsovat. ISO 20022 je v roce 2026 zapojením CIB treasury — strukturovaná zpráva je akční potenciál, schéma je auditní stopa, kterou bude regulátor požadovat ráno po dalším incidentu.
 
@@ -241,7 +241,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. Dostupné na: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "Doporučení FATF")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Dostupné na: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 pokyny k řízení modelového rizika")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Dostupné na: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 pokyny k řízení modelového rizika")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. Dostupné na: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — univerzální zpráva pro finanční sektor")
 

@@ -72,7 +72,7 @@ Untuk mengekalkan keselamatan mutlak merentas estet pembangunan dan operasi, Ket
 | **Profil keselamatan memori** | Sifar blok `unsafe` Rust dalam kebergantungan penghurai dan penyiri. | DORA Article 30 (rantaian bekalan) | Pemeriksaan pengkompil automatik ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)) dalam binaan cargo. |
 | **Pengesahan skema** | 100 % fail konfigurasi terhurai disahkan terhadap model [JSON Schema](https://json-schema.org/) yang sah. | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Get pengesahan masa nyata menghentikan saluran paip binaan apabila berlaku pelanggaran skema. |
 | **Hanyutan konfigurasi** | Pengesanan masa nyata dan pemulihan fail konfigurasi tempatan kepada keadaan berversi-git. | Pulangan atas Daya Tahan (RoR) | Telemetri berterusan mengelog semua pengubahsuaian fail tempatan. |
-| **Kawalan akses ejen** | Kebenaran terbatas dan baca-sahaja untuk alat AI tempatan yang beroperasi melalui konfigurasi MCP. | Pengurusan risiko model ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Sempadan pelayan MCP menyekat operasi ejen kepada direktori yang diluluskan. |
+| **Kawalan akses ejen** | Kebenaran terbatas dan baca-sahaja untuk alat AI tempatan yang beroperasi melalui konfigurasi MCP. | Pengurusan risiko model ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Sempadan pelayan MCP menyekat operasi ejen kepada direktori yang diluluskan. |
 
 ## 04. Kesilapan Penghuraian Konfigurasi Legap
 

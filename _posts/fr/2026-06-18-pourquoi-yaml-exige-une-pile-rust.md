@@ -163,7 +163,7 @@ Pour maintenir une sécurité absolue à travers le parc de développement et d'
 | **Profil de sécurité mémoire** | Zéro bloc `unsafe` Rust dans les dépendances de parseur et de sérialiseur. | DORA article 30 (chaîne d'approvisionnement) | Vérifications automatisées du compilateur ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)) dans les builds cargo. |
 | **Validation de schéma** | 100 % des fichiers de configuration parsés vérifiés contre des modèles [JSON Schema](https://json-schema.org/) valides. | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Porte de validation temps réel stoppant les pipelines de build en cas de violation de schéma. |
 | **Dérive de configuration** | Détection et restauration temps réel des fichiers de configuration locaux vers l'état git versionné. | Return on Resilience (RoR) | Télémétrie continue consignant toutes les modifications de fichiers locaux. |
-| **Contrôle d'accès des agents** | Permissions bornées et en lecture seule pour les outils IA locaux opérant via des configurations MCP. | Gestion du risque modèle ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Frontières des serveurs MCP restreignant les opérations des agents aux répertoires approuvés. |
+| **Contrôle d'accès des agents** | Permissions bornées et en lecture seule pour les outils IA locaux opérant via des configurations MCP. | Gestion du risque modèle ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Frontières des serveurs MCP restreignant les opérations des agents aux répertoires approuvés. |
 
 ## 04. Le sophisme du parsing de configuration opaque
 

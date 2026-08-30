@@ -257,7 +257,7 @@ G-SIB-গুলি লিগ্যাসি-ভারী লেনদেন এ�
 ## তথ্যসূত্র
 
 - National Institute of Standards and Technology, (2024). [FIPS 203: মডিউল-ল্যাটিস-ভিত্তিক কী-এনক্যাপসুলেশন মেকানিজম মানদণ্ড ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "NIST FIPS 203 ঘোষণা")।
-- Board of Governors of the Federal Reserve System, (2011). [মডেল ঝুঁকি ব্যবস্থাপনা বিষয়ে তদারকি নির্দেশিকা (SR Letter 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7")।
+- Board of Governors of the Federal Reserve System, (2011). [মডেল ঝুঁকি ব্যবস্থাপনা বিষয়ে তদারকি নির্দেশিকা (SR Letter 11-7) ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7")।
 - European Parliament and Council of the European Union, (2022). [আর্থিক খাতের ডিজিটাল পরিচালন স্থিতিস্থাপকতা বিষয়ক রেগুলেশন (EU) 2022/2554 (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA রেগুলেশন")।
 - NIST National Cybersecurity Center of Excellence, (2025). [পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফিতে মাইগ্রেশন (NIST SP 1800-38) ⧉](https://www.nccoe.nist.gov/projects/migration-post-quantum-cryptography "NIST SP 1800-38")।
 - GitHub, (2026). [kyberlib ওপেন সোর্স রিপোজিটরি ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib রিপোজিটরি")।

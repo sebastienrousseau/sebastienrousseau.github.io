@@ -225,7 +225,7 @@ Năm tháng là đủ thời gian để vận chuyển một profile thông đi�
 
 ## Kết luận
 
-Thời hạn tháng 11 năm 2026 là phần dễ. Phần khó là cái mà thời hạn buộc phải làm. Các ngân hàng đến đúng hạn nhưng vẫn coi pain.001 như một vấn đề dịch sẽ dành thập kỷ tới dựng lại mô hình dữ liệu kho bạc của họ từ đường truyền vào trong. Các ngân hàng đến với một schema canonical ưu tiên ISO, địa chỉ có cấu trúc theo mặc định và một mặt phẳng điều khiển thanh khoản lập trình được tiêu thụ pacs.008 trực tiếp sẽ vận hành kho bạc tác nhân dưới trách nhiệm hội đồng quản trị theo DORA Điều 5, kỷ luật rủi ro vận hành [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: hoàn tất các cải cách hậu khủng hoảng") và quản trị mô hình [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Hướng dẫn quản lý rủi ro mô hình").
+Thời hạn tháng 11 năm 2026 là phần dễ. Phần khó là cái mà thời hạn buộc phải làm. Các ngân hàng đến đúng hạn nhưng vẫn coi pain.001 như một vấn đề dịch sẽ dành thập kỷ tới dựng lại mô hình dữ liệu kho bạc của họ từ đường truyền vào trong. Các ngân hàng đến với một schema canonical ưu tiên ISO, địa chỉ có cấu trúc theo mặc định và một mặt phẳng điều khiển thanh khoản lập trình được tiêu thụ pacs.008 trực tiếp sẽ vận hành kho bạc tác nhân dưới trách nhiệm hội đồng quản trị theo DORA Điều 5, kỷ luật rủi ro vận hành [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: hoàn tất các cải cách hậu khủng hoảng") và quản trị mô hình [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Hướng dẫn quản lý rủi ro mô hình").
 
 Cách đóng khung hệ thần kinh tự chủ không phải để trang trí. Kho bạc không thể suy luận về thanh khoản nó không nhìn thấy. Tác nhân không thể hành động trên dữ liệu nó không thể phân tích cú pháp. ISO 20022 là hệ thống dây dẫn của kho bạc CIB trong năm 2026 — thông điệp có cấu trúc là điện thế hành động, schema là dấu vết kiểm toán mà cơ quan quản lý sẽ đòi vào sáng hôm sau sự cố tiếp theo.
 
@@ -241,7 +241,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. Available at: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF Recommendations")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Available at: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Available at: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. Available at: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Universal financial industry message scheme")
 

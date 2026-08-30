@@ -257,7 +257,7 @@ Hybridní obálky odvozují klíč relace z klasického i postkvantového tajems
 ## Reference
 
 - National Institute of Standards and Technology, (2024). [FIPS 203: standard mechanismu zapouzdření klíčů na bázi modulových mřížek ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "Oznámení NIST FIPS 203").
-- Board of Governors of the Federal Reserve System, (2011). [Dohledová vodítka k řízení modelového rizika (SR Letter 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
+- Board of Governors of the Federal Reserve System, (2011). [Dohledová vodítka k řízení modelového rizika (SR Letter 11-7) ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
 - Evropský parlament a Rada Evropské unie, (2022). [Nařízení (EU) 2022/2554 o digitální provozní odolnosti finančního sektoru (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Nařízení DORA").
 - NIST National Cybersecurity Center of Excellence, (2025). [Migrace na postkvantovou kryptografii (NIST SP 1800-38) ⧉](https://www.nccoe.nist.gov/projects/migration-post-quantum-cryptography "NIST SP 1800-38").
 - GitHub, (2026). [Open source repozitář kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "Repozitář kyberlib").

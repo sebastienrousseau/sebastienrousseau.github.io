@@ -323,7 +323,7 @@ Hashing-ul de parolă de tip „deploy-and-forget" s-a încheiat. DORA a mutat p
 
 ## Referințe
 
-Basel Committee on Banking Supervision (2011). *Basel III: A global regulatory framework for more resilient banks and banking systems*. Bank for International Settlements. Disponibil la: [https://www.bis.org/publ/bcbs189.pdf](https://www.bis.org/publ/bcbs189.pdf "Basel III: cadrul global de reglementare pentru bănci și sisteme bancare mai reziliente")
+Basel Committee on Banking Supervision (2011). *Basel III: A global regulatory framework for more resilient banks and banking systems*. Bank for International Settlements. Disponibil la: [https://www.bis.org/publ/bcbs189.htm](https://www.bis.org/publ/bcbs189.htm "Basel III: cadrul global de reglementare pentru bănci și sisteme bancare mai reziliente")
 
 Biryukov, A., Dinu, D., Khovratovich, D., și Josefsson, S. (2021). *RFC 9106: Argon2 Memory-Hard Function for Password Hashing and Proof-of-Work Applications*. Internet Engineering Task Force. Disponibil la: [https://datatracker.ietf.org/doc/html/rfc9106](https://datatracker.ietf.org/doc/html/rfc9106 "RFC 9106 — Funcția Argon2 dură la memorie pentru hashing de parole")
 

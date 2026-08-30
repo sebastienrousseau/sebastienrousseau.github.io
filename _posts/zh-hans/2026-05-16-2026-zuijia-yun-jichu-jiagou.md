@@ -425,12 +425,12 @@ CloudCDN（[cloudcdn.pro](https://cloudcdn.pro/ "CloudCDN")）是本作者发布
 - Sebastien Rousseau, (2026). [GitHub 上的 CloudCDN ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "sebastienrousseau/cloudcdn.pro")。GitHub。
 - Constellation Energy, (2025). [与 Microsoft 关于 AI 数据中心电力的 Three Mile Island 重启协议 ⧉](https://www.constellationenergy.com/newsroom.html "Constellation Energy newsroom")。Constellation Energy。
 - Amazon Web Services, (2025). [AWS 对 X-Energy 的投资以及 Talen / Cumulus 核电相邻数据中心收购 ⧉](https://aws.amazon.com/blogs/aws/ "AWS News Blog")。AWS。
-- Kairos Power, (2025). [Google Kairos Power SMR 购电协议 ⧉](https://kairospower.com/news/ "Kairos Power News")。Kairos Power。
+- Kairos Power, (2025). Google Kairos Power SMR 购电协议。Kairos Power。
 - Bank for International Settlements, (2025). [BIS Project Agora：批发 CBDC 和代币化商业银行存款 ⧉](https://www.bis.org/about/bisih/topics/fmis/agora.htm "Project Agora — BIS Innovation Hub")。BIS Innovation Hub。
 - European Central Bank, (2025). [数字欧元项目——准备阶段更新 ⧉](https://www.ecb.europa.eu/paym/digital_euro/html/index.en.html "Digital euro — ECB")。ECB。
-- Amazon Web Services, (2025). [AWS European Sovereign Cloud — 计划概述 ⧉](https://aws.amazon.com/government-education/european-sovereign-cloud/ "AWS European Sovereign Cloud")。AWS。
+- Amazon Web Services, (2025). [AWS European Sovereign Cloud — 计划概述 ⧉](https://aws.amazon.com/compliance/europe-digital-sovereignty/ "AWS European digital sovereignty")。AWS。
 - Meta AI, (2026). [Llama 4 发布公告 —— Maverick、Scout 和 Behemoth 变体 ⧉](https://ai.meta.com/blog/llama-4-multimodal-intelligence/ "Llama 4 release")。Meta。
-- Toshiba / BT, (2025). [伦敦城域商用 QKD 网络部署 ⧉](https://www.toshiba.eu/quantum-technology/ "Toshiba Quantum Technology")。Toshiba Europe。
+- Toshiba / BT, (2025). [伦敦城域商用 QKD 网络部署 ⧉](https://www.global.toshiba/ww/products-solutions/security-ict/qkd.html "Toshiba quantum key distribution (QKD)")。Toshiba Europe。
 - NVIDIA, (2025). [Spectrum-X Photonics 和 Quantum-X Photonics —— 用于 AI 工厂的共封装光网络 ⧉](https://nvidianews.nvidia.com/news/spectrum-x-quantum-x-photonics "NVIDIA Photonics announcement at GTC 2025")。NVIDIA。
 - European Central Bank Banking Supervision, (2025). [云外包和集中风险 —— 监管期望 ⧉](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.outsourcingcloud.en.html "ECB Banking Supervision on cloud outsourcing")。ECB。
 - Zou, W. et al. (2024). [PoisonedRAG：对大型语言模型检索增强生成的知识损坏攻击 ⧉](https://arxiv.org/abs/2402.07867 "PoisonedRAG")。arXiv。

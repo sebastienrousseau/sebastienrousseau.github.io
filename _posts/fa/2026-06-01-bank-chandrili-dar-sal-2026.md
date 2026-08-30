@@ -169,5 +169,5 @@ keywords: "لایهٔ هماهنگ‌سازی پرداخت، FedNow در برا�
 - ISO 20022، (۲۰۲۴). [pacs.008.001.10 — تعریف پیام انتقال اعتباری مشتری FIToFI ⧉](https://www.iso20022.org/catalogue-messages/iso-20022-messages-archive "کاتالوگ پیام‌های ISO 20022").
 - NACHA، (۲۰۲۶). [قواعد و رهنمودهای عملیاتی ACH ⧉](https://www.nacha.org/rules "قواعد عملیاتی NACHA").
 - کمیتهٔ پرداخت‌ها و زیرساخت‌های بازار BIS، (۲۰۲۵). [پرداخت‌های سریع و آیندهٔ نظام مالی ⧉](https://www.bis.org/cpmi/publ/d228.htm "گزارش پرداخت‌های سریع CPMI").
-- Open Banking Limited، (۲۰۲۶). [مشخصات پرداخت‌های مکرر متغیر ⧉](https://www.openbanking.org.uk/vrp/ "Open Banking VRP").
+- Open Banking Limited، (۲۰۲۶). [مشخصات پرداخت‌های مکرر متغیر ⧉](https://www.openbanking.org.uk/glossary/variable-recurring-payment/ "Open Banking VRP").
 - Circle Internet Financial، (۲۰۲۶). [خزانه و ذخایر USDC ⧉](https://www.circle.com/transparency "شفافیت Circle").

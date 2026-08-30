@@ -225,7 +225,7 @@ CBPR+ 驗證規則本身不容協商。結構化的 `<PstlAdr>`,其中 `<Ctry>` 
 
 ## 結論
 
-2026 年 11 月的截止期限是容易的部分。困難的是截止期限所迫使的事。屆時準時抵達卻仍把 pain.001 當作轉譯問題的銀行,將花上下一個十年從線路向內重建國庫資料模型。屆時帶著 ISO 為先的規範結構、預設結構化地址,以及直接消費 pacs.008 的可程式化流動性控制平面抵達的銀行,將在 DORA 第 5 條董事會問責、[Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III:完成後危機改革") 營運風險紀律與 [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 模型風險管理指引") 模型治理之下運行代理式國庫。
+2026 年 11 月的截止期限是容易的部分。困難的是截止期限所迫使的事。屆時準時抵達卻仍把 pain.001 當作轉譯問題的銀行,將花上下一個十年從線路向內重建國庫資料模型。屆時帶著 ISO 為先的規範結構、預設結構化地址,以及直接消費 pacs.008 的可程式化流動性控制平面抵達的銀行,將在 DORA 第 5 條董事會問責、[Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III:完成後危機改革") 營運風險紀律與 [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 模型風險管理指引") 模型治理之下運行代理式國庫。
 
 自律神經系統的框架並非裝飾。國庫無法推理它看不見的流動性。代理無法對它無法解析的資料採取行動。ISO 20022 是 2026 年 CIB 國庫的線路——結構化的訊息是動作電位,結構則是下一次事件發生隔日,監理機關必然要求的稽核軌跡。
 
@@ -241,7 +241,7 @@ CBPR+ 驗證規則本身不容協商。結構化的 `<PstlAdr>`,其中 `<Ctry>` 
 
 防制洗錢金融行動工作組織(2023)。《打擊洗錢與資恐國際標準——第 16 號電匯建議》。取自:[https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF 建議")
 
-美國聯邦準備理事會(2011)。《SR 11-7 模型風險管理指引》。取自:[https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 模型風險管理指引")
+美國聯邦準備理事會(2011)。《SR 11-7 模型風險管理指引》。取自:[https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 模型風險管理指引")
 
 國際標準化組織(2022)。《ISO 20022 金融服務——通用金融產業訊息架構》。取自:[https://www.iso20022.org](https://www.iso20022.org "ISO 20022——通用金融產業訊息架構")
 

@@ -163,7 +163,7 @@ Limang tanong na ang itinatanong ng boards at numerical answers ang inaasahan.
 4. **Ano ang PQC signing coverage sa recovery artefacts?** Porsyento ng vault snapshots, manifests at inter-domain trust anchors na pinirmahan sa ilalim ng FIPS 203 / FIPS 204.
 5. **Ano ang Cost of Contingency Capital (CoCC)?** Ang pang-araw-araw na opportunity cost ng idle intraday liquidity na nakakulong sa mga secondary clearing account, warm correspondent balances at pre-staged tokenised positions, sinukat laban sa overnight rate. Kailangang makita ng board ang eksaktong presyo ng resilience insurance ng bangko, at kailangang ipagtanggol ng operating committee ang trade-off sa pagitan ng trapped capital at outage tolerance — niri-refresh nang hindi bababa sa kada quarter.
 
-Ito ang mga metrics na malinis na umaayon sa DORA Article 6 evidence, sa SM&CR senior-manager statements of responsibility, at sa [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") model-risk governance sa routing logic na nagpapasya kung aling rail ang nananalo. Hindi narrative ang kailangan ng board; quarterly chart ang kailangan nito na may hard floor.
+Ito ang mga metrics na malinis na umaayon sa DORA Article 6 evidence, sa SM&CR senior-manager statements of responsibility, at sa [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") model-risk governance sa routing logic na nagpapasya kung aling rail ang nananalo. Hindi narrative ang kailangan ng board; quarterly chart ang kailangan nito na may hard floor.
 
 ## Konklusyon
 

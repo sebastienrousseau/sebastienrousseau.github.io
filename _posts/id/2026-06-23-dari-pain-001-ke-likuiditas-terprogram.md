@@ -225,7 +225,7 @@ Lima bulan cukup untuk mengirimkan profil pesan lebih ketat dari CBPR+ dan ingre
 
 ## Kesimpulan
 
-Tenggat November 2026 adalah bagian yang mudah. Bagian sulit adalah apa yang dipaksakan tenggat itu. Bank yang tiba tepat waktu masih memperlakukan pain.001 sebagai masalah terjemahan akan menghabiskan dekade berikutnya membangun ulang model data treasury mereka dari kawat ke dalam. Bank yang tiba dengan skema kanonik ISO-first, alamat terstruktur secara default, dan bidang kendali likuiditas terprogram yang mengonsumsi pacs.008 secara langsung akan menjalankan treasury agentik di bawah akuntabilitas dewan DORA Pasal 5, disiplin risiko operasional [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalisasi reformasi pasca-krisis"), dan tata kelola model [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Panduan SR 11-7 tentang Manajemen Risiko Model").
+Tenggat November 2026 adalah bagian yang mudah. Bagian sulit adalah apa yang dipaksakan tenggat itu. Bank yang tiba tepat waktu masih memperlakukan pain.001 sebagai masalah terjemahan akan menghabiskan dekade berikutnya membangun ulang model data treasury mereka dari kawat ke dalam. Bank yang tiba dengan skema kanonik ISO-first, alamat terstruktur secara default, dan bidang kendali likuiditas terprogram yang mengonsumsi pacs.008 secara langsung akan menjalankan treasury agentik di bawah akuntabilitas dewan DORA Pasal 5, disiplin risiko operasional [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalisasi reformasi pasca-krisis"), dan tata kelola model [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Panduan SR 11-7 tentang Manajemen Risiko Model").
 
 Bingkai sistem saraf otonom bukanlah dekoratif. Treasury tidak dapat memikirkan likuiditas yang tidak dapat dilihatnya. Agen tidak dapat bertindak pada data yang tidak dapat diurai. ISO 20022 adalah pengkabelan treasury CIB pada 2026 — pesan terstruktur adalah potensi aksi, skema adalah jejak audit yang akan dituntut regulator pada pagi setelah insiden berikutnya.
 
@@ -241,7 +241,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. Tersedia di: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "Rekomendasi FATF")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Tersedia di: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Panduan SR 11-7 tentang Manajemen Risiko Model")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Tersedia di: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Panduan SR 11-7 tentang Manajemen Risiko Model")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. Tersedia di: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Skema pesan industri keuangan universal")
 

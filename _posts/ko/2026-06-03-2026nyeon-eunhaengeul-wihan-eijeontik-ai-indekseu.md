@@ -121,7 +121,7 @@ site_software: "Static Site Generator, Rust"
 
 도입과 함께 두 가지가 변화했습니다.
 
-첫째, 규제 당국이 LLM을 신기한 신문물로 다루기를 멈췄습니다. 연준은 [SR 11-7 ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: 모델 리스크 관리 지침") 이 LLM을 내부적으로 모델로 분류하든 그렇지 않든, LLM 기반 의사결정에도 적용된다는 점을 명확히 했습니다. PRA의 [SS1/23 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "감독 성명 SS1/23") 은 처음부터 이를 포괄할 만큼 광범위했습니다. EU AI Act의 고위험 분류는 대부분의 금융 서비스 LLM 활용을 다룹니다. "이게 해당되는지 확실치 않다"는 식의 변명은 더 이상 통하지 않습니다.
+첫째, 규제 당국이 LLM을 신기한 신문물로 다루기를 멈췄습니다. 연준은 [SR 11-7 ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: 모델 리스크 관리 지침") 이 LLM을 내부적으로 모델로 분류하든 그렇지 않든, LLM 기반 의사결정에도 적용된다는 점을 명확히 했습니다. PRA의 [SS1/23 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "감독 성명 SS1/23") 은 처음부터 이를 포괄할 만큼 광범위했습니다. EU AI Act의 고위험 분류는 대부분의 금융 서비스 LLM 활용을 다룹니다. "이게 해당되는지 확실치 않다"는 식의 변명은 더 이상 통하지 않습니다.
 
 둘째, 벤치마크 현실이 따라잡았습니다. Stanford HAI의 2026 AI Index는 OSWorld — 실제 엔터프라이즈 도구 활용에 가장 근접한 가용 벤치마크 — 의 정확도를 66.3%로 보고합니다 ([Stanford HAI ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance "Technical Performance 챕터")). 구조화된 작업 세 건 중 한 건은 여전히 실패합니다. 이 수치가 2026년 자율성의 기술적 천장을 결정합니다. HITL 감독 하에서 경계가 설정된 Level-3 배포를 정당화하기에는 충분히 높지만, 고객 자금에 닿는 어떤 API에 대해서도 무감독 실행을 정당화하기에는 충분히 높지 않습니다.
 
@@ -259,7 +259,7 @@ LLM 출력과 API 사이에 결정론적 가드레일 없이 에이전트가 프
 - Stanford HAI, (2026). [The 2026 AI Index Report ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report "2026 AI 인덱스 보고서").
 - Stanford HAI, (2026). [Technical Performance 챕터 ⧉](https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance "Technical Performance 챕터").
 - Cambridge Centre for Alternative Finance, (2026). [2026 글로벌 금융 서비스 AI 보고서 ⧉](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/ "2026 글로벌 금융 서비스 AI 보고서").
-- Federal Reserve, (2011). [SR 11-7: 모델 리스크 관리 지침 ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: 모델 리스크 관리 지침").
+- Federal Reserve, (2011). [SR 11-7: 모델 리스크 관리 지침 ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7: 모델 리스크 관리 지침").
 - Prudential Regulation Authority, (2023). [감독 성명 SS1/23: 은행을 위한 모델 리스크 관리 원칙 ⧉](https://www.bankofengland.co.uk/prudential-regulation/publication/2023/may/model-risk-management-principles-for-banks-ss "SS1/23: 은행을 위한 모델 리스크 관리 원칙").
 - European Commission, (2024). [규정 (EU) 2024/1689 — AI Act ⧉](https://eur-lex.europa.eu/eli/reg/2024/1689/oj "규정 (EU) 2024/1689 — EU AI Act").
 - NVIDIA, (2024). [NeMo Guardrails 프레임워크 ⧉](https://github.com/NVIDIA/NeMo-Guardrails "NeMo Guardrails — LLM 기반 대화 시스템에 프로그램 가능한 가드레일을 추가하는 오픈소스 툴킷").

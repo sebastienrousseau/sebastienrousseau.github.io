@@ -114,7 +114,7 @@ excerpt: "2026년의 토큰화 예금 서비스는 연구 단계에서 은행의
 > **임원 요약 / 핵심 요점**
 >
 > - **시장 현황.** 2026년 토큰화 예금은 대규모 확산 이전이지만 더 이상 이론적이지 않습니다. 시범 사업이 가동 중이고, 은행 제안이 형성되고 있으며, 영국 멀티뱅크 프로그램은 HSBC, NatWest, Lloyds, Barclays, Nationwide, Santander가 마켓플레이스 결제, 모기지 재대출, 디지털 자산 결제를 시험하면서 2026년 중반까지 운영됩니다([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
-> - **경쟁 압력.** 스테이블코인은 대규모이고 성장 중이며(BIS는 2026년 4월 초 시가총액을 약 3,150억 달러, 약 98%가 USD로 추정), 예금 토큰의 일정을 가속화시킵니다. 스테이블코인은 개방형 생태계 도달 범위, 암호자산 네이티브 유동성, 글로벌 리테일에서 우세하고, 토큰화 예금은 규제상 편안함, 예금 보험, 트레저리 워크플로에서 우세합니다([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+> - **경쟁 압력.** 스테이블코인은 대규모이고 성장 중이며(BIS는 2026년 4월 초 시가총액을 약 3,150억 달러, 약 98%가 USD로 추정), 예금 토큰의 일정을 가속화시킵니다. 스테이블코인은 개방형 생태계 도달 범위, 암호자산 네이티브 유동성, 글로벌 리테일에서 우세하고, 토큰화 예금은 규제상 편안함, 예금 보험, 트레저리 워크플로에서 우세합니다([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")).
 > - **규제 경계.** FDIC의 2026년 제안은 토큰화 예금을 DLT에 기록된 예금 부채로 분류하고 결제용 스테이블코인과 명시적으로 구분하여 미국의 규제 경계를 강화하였습니다([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 > - **선도 은행 프로그램.** JPMorgan의 JPM Coin은 Kinexys에서 매일 약 20억 달러의 도매 결제를 처리하며 가장 오래된 예금 토큰 본번 실적을 보유하고 있습니다. HSBC는 가장 완성도 높은 멀티트랙 스택을 구축: TDS는 HK, SG, UK, LU, US에서 USD/GBP/EUR/HKD/SGD를 지원; HSBC Orion은 영국 Digital Gilt Instrument(DIGIT) 시범의 기반; HSBC Gold Token은 할당된 금괴를 토큰화; Canton과 Project Ensemble에서 네트워크 간 원자적 결제 시험; Quantinuum과의 PQC 구현([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
 > - **모든 것을 결정하는 설계 선택.** 세 가지 원장-법적 패턴이 지배적입니다. 토큰*이* 예금 자체(가장 깔끔한 원자적 결제, 가장 어려운 가동시간), 토큰이 전통적 예금을 *표상함*(법적으로 더 단순, 정합 부담, JPM Coin과 HSBC TDS가 해당), 또는 토큰이 전통적 레일에 대한 *지시 계층*(프로그래밍 가능성 주장이 가장 약함).
@@ -147,13 +147,13 @@ Lloyds는 전통적인 거래은행 화면과 나란히 위치하며 토큰화 �
 
 ### 3. 스테이블코인은 시급성을 강요하지만 동시에 리스크를 명확히 한다
 
-BIS의 2026년 4월 연설은 스마트 컨트랙트 프로그래밍 가능성과 원자적 결제와 같은 기술적 특성에 대해 스테이블코인을 인정하면서도, 화폐의 단일성, 뱅크런 취약성, 금융 건전성, 통화 주권, 중앙은행 화폐 외부에서의 결제에 관한 리스크를 강조합니다([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+BIS의 2026년 4월 연설은 스마트 컨트랙트 프로그래밍 가능성과 원자적 결제와 같은 기술적 특성에 대해 스테이블코인을 인정하면서도, 화폐의 단일성, 뱅크런 취약성, 금융 건전성, 통화 주권, 중앙은행 화폐 외부에서의 결제에 관한 리스크를 강조합니다([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")).
 
 바로 이 비판이 토큰화 예금이 중요한 이유입니다. 토큰화 예금은 토큰화된 화폐의 유용한 프로그래밍 가능성을 규제된 상업은행 화폐 체계에 들여오려는 시도입니다.
 
 ### 4. Project Agorá와 통합원장이 도매 부문의 질문을 형성한다
 
-BIS는 Project Agorá를 국경 간 결제에 대한 토큰화를 탐구하기 위해 중앙은행과 민간 부문이 협력하는 작업으로 규정하며, 더 넓은 방향성을 통합원장 비전과 연결합니다([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Deutsche Bank 또한 Project Agorá와 Partior를 차세대 결제 및 국경 간 인프라의 일부로 지적합니다([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
+BIS는 Project Agorá를 국경 간 결제에 대한 토큰화를 탐구하기 위해 중앙은행과 민간 부문이 협력하는 작업으로 규정하며, 더 넓은 방향성을 통합원장 비전과 연결합니다([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")). Deutsche Bank 또한 Project Agorá와 Partior를 차세대 결제 및 국경 간 인프라의 일부로 지적합니다([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 
 여기서 토큰화 예금은 도매 인프라가 됩니다. 핵심 질문은 상업은행 화폐, 중앙은행 화폐, 토큰화된 자산이 법적 종결성, 유동성 통제, 화폐의 단일성을 깨뜨리지 않으면서 어떻게 함께 결제되는가입니다.
 
@@ -218,13 +218,13 @@ JPMorgan과 HSBC 외에도 공개 공시는 빈약하지만 네트워크 전체 
 | 수단 | 청구권 유형 | 최적 용도 | 2026년 현황 | 주요 리스크 |
 |---|---|---|---|---|
 | **토큰화 예금** | 상업은행 예금 또는 그 표상 | 은행 주도 프로그래밍 가능 결제, 트레저리, 토큰화 자산 결제 | 시범 사업 및 초기 기관 제품 설계([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")) | 상호운용성 및 법적 일관성 |
-| **스테이블코인** | 발행자/준비금 구조에 대한 청구권 | 암호자산 유동성, 국경 간 실험, 달러 유동성 | 대규모이고 성장 중, BIS는 2026년 4월 초 시가총액을 약 3,150억 달러로 추정([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")) | 뱅크런, 금융 건전성, 통화 주권 |
+| **스테이블코인** | 발행자/준비금 구조에 대한 청구권 | 암호자산 유동성, 국경 간 실험, 달러 유동성 | 대규모이고 성장 중, BIS는 2026년 4월 초 시가총액을 약 3,150억 달러로 추정([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")) | 뱅크런, 금융 건전성, 통화 주권 |
 | **도매 CBDC** | 중앙은행 화폐 | 은행 간 결제 및 토큰화 시장 인프라 | 중앙은행 프로젝트를 통한 활발한 탐색 | 설계, 프라이버시, 확장성, 정치적 위임 |
 | **소매 CBDC** | 공공 사용을 위한 중앙은행 화폐 | 공공 디지털 현금 대안 | 전 세계적으로 진척이 엇갈림 | 채택, 프라이버시, 은행 탈중개화 |
 
 ### 토큰화 예금이 우세한 영역
 
-대차대조표상의 상업은행 화폐는 스테이블코인이 여전히 획득해야 할 규제상의 편안함을 갖고 있습니다. 토큰화 예금은 예금 보험, 건전성 자본 처리, 그리고 기존 AML/제재 통제를 계승합니다. 법인 트레저러에게 이것은 새로운 거래상대방 위험이 없고, 검증해야 할 새로운 준비금 감사도 없음을 의미합니다. 또한 법인이 이미 보유한 은행 계좌에서 온램프합니다——거래소도, 준비금 발행자도, 신규 수탁도 없습니다. BIS와 FDIC 모두 이 점을 강조합니다. 청구권이 기존 법적 체계가 이미 이해하는 곳에 있을 때 화폐의 단일성이 유지됩니다([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate"); [FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+대차대조표상의 상업은행 화폐는 스테이블코인이 여전히 획득해야 할 규제상의 편안함을 갖고 있습니다. 토큰화 예금은 예금 보험, 건전성 자본 처리, 그리고 기존 AML/제재 통제를 계승합니다. 법인 트레저러에게 이것은 새로운 거래상대방 위험이 없고, 검증해야 할 새로운 준비금 감사도 없음을 의미합니다. 또한 법인이 이미 보유한 은행 계좌에서 온램프합니다——거래소도, 준비금 발행자도, 신규 수탁도 없습니다. BIS와 FDIC 모두 이 점을 강조합니다. 청구권이 기존 법적 체계가 이미 이해하는 곳에 있을 때 화폐의 단일성이 유지됩니다([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate"); [FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 ### 스테이블코인이 여전히 우세한 영역
 
@@ -300,7 +300,7 @@ FDIC의 2026년 제안 규정은 처음 두 가지를 분산원장기술로 기�
 
 **토큰화 예금은 스테이블코인과 동일합니까?**
 
-아닙니다. 둘 다 프로그래밍 가능한 24/7 디지털 화폐를 제공하지만 법적 구조와 청구권 구조가 완전히 다릅니다. 스테이블코인은 민간 발행자의 준비자산 또는 법인 구조에 대한 청구권이며 중앙은행 대차대조표 외부에서 운영됩니다([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). 토큰화 예금은 상업은행의 직접적인 부채로서 기존 은행 규제, AML/제재 통제, 그리고 예금 보험 경계를 그대로 계승합니다([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+아닙니다. 둘 다 프로그래밍 가능한 24/7 디지털 화폐를 제공하지만 법적 구조와 청구권 구조가 완전히 다릅니다. 스테이블코인은 민간 발행자의 준비자산 또는 법인 구조에 대한 청구권이며 중앙은행 대차대조표 외부에서 운영됩니다([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")). 토큰화 예금은 상업은행의 직접적인 부채로서 기존 은행 규제, AML/제재 통제, 그리고 예금 보험 경계를 그대로 계승합니다([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 **영국의 주요 유스케이스는 무엇입니까?**
 
@@ -323,7 +323,7 @@ FDIC의 2026년 제안 규정은 처음 두 가지를 분산원장기술로 기�
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
 - HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
 - JPMorgan, (2026). [Kinexys (formerly Onyx) digital assets platform ⧉](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan").
-- BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
+- BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").
 - Cambridge Centre for Alternative Finance, (2026). [Tokenised money: Use cases, interoperability and regulation ⧉](https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf "Tokenised money report").

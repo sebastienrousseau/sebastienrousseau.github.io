@@ -166,7 +166,7 @@ G-SIBها استیت‌های تراکنشیِ سنگین از میراث قدی
 ## منابع
 
 - مؤسسه ملی استانداردها و فناوری، (۲۰۲۴). [FIPS 203: استاندارد سازوکار کپسوله‌سازی کلید مبتنی بر شبکه ماژولی ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "NIST FIPS 203 announcement").
-- هیئت مدیران سامانه فدرال رزرو، (۲۰۱۱). [راهنمای نظارتی درباره مدیریت ریسک مدل (نامه نظارتی SR 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
+- هیئت مدیران سامانه فدرال رزرو، (۲۰۱۱). [راهنمای نظارتی درباره مدیریت ریسک مدل (نامه نظارتی SR 11-7) ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
 - پارلمان اروپا و شورای اتحادیه اروپا، (۲۰۲۲). [مقررات (EU) 2022/2554 درباره تاب‌آوری عملیاتیِ دیجیتال برای بخش مالی (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA Regulation").
 - مرکز ملی برتری امنیت سایبری NIST، (۲۰۲۵). [مهاجرت به رمزنگاری پساکوانتومی (NIST SP 1800-38) ⧉](https://www.nccoe.nist.gov/projects/migration-post-quantum-cryptography "NIST SP 1800-38").
 - گیت‌هاب، (۲۰۲۶). [مخزن متن‌باز kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib repository").

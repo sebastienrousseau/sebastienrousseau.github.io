@@ -225,7 +225,7 @@ site_software: "Static Site Generator, Rust"
 
 ## סיכום
 
-המועד הסופי של נובמבר 2026 הוא החלק הקל. החלק הקשה הוא מה שהמועד הסופי כופה. בנקים שיגיעו בזמן ועדיין יתייחסו ל-pain.001 כבעיית תרגום יבזבזו את העשור הבא בבניית מחדש של מודל נתוני האוצרות שלהם מהתיל פנימה. בנקים שיגיעו עם סכמה קנונית ISO-ראשון, כתובות מובנות כברירת מחדל ומישור בקרת נזילות תכנותית שצורך pacs.008 ישירות יפעילו אוצרות סוכני תחת אחריות דירקטוריון לפי DORA סעיף 5, משמעת סיכון תפעולי של [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: השלמת הרפורמות שלאחר המשבר"), וממשל מודלים של [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 הנחיה על ניהול סיכון מודלים").
+המועד הסופי של נובמבר 2026 הוא החלק הקל. החלק הקשה הוא מה שהמועד הסופי כופה. בנקים שיגיעו בזמן ועדיין יתייחסו ל-pain.001 כבעיית תרגום יבזבזו את העשור הבא בבניית מחדש של מודל נתוני האוצרות שלהם מהתיל פנימה. בנקים שיגיעו עם סכמה קנונית ISO-ראשון, כתובות מובנות כברירת מחדל ומישור בקרת נזילות תכנותית שצורך pacs.008 ישירות יפעילו אוצרות סוכני תחת אחריות דירקטוריון לפי DORA סעיף 5, משמעת סיכון תפעולי של [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: השלמת הרפורמות שלאחר המשבר"), וממשל מודלים של [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 הנחיה על ניהול סיכון מודלים").
 
 מסגור מערכת העצבים האוטונומית אינו דקורטיבי. אוצרות אינו יכול לחשוב על נזילות שהוא אינו יכול לראות. סוכנים אינם יכולים לפעול על נתונים שאינם יכולים לפענח. ISO 20022 הוא החיווט של אוצרות CIB ב-2026 — ההודעה המובנית היא פוטנציאל הפעולה, הסכמה היא שובל הביקורת שהרגולטור ידרוש בבוקר שאחרי האירוע הבא.
 
@@ -241,7 +241,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. זמין ב-: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF Recommendations")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. זמין ב-: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. זמין ב-: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. זמין ב-: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Universal financial industry message scheme")
 

@@ -163,7 +163,7 @@ Boards now ask five questions and expect numerical answers.
 4. **What is the PQC signing coverage on recovery artefacts?** Percentage of vault snapshots, manifests and inter-domain trust anchors signed under FIPS 203 / FIPS 204.
 5. **What is the Cost of Contingency Capital (CoCC)?** The daily opportunity cost of the idle intraday liquidity trapped in secondary clearing accounts, warm correspondent balances and pre-staged tokenised positions, measured against the overnight rate. The board must see the exact price of the bank's resilience insurance, and the operating committee must defend the trade-off between trapped capital and outage tolerance — refreshed at least quarterly.
 
-These are the metrics that map cleanly to DORA Article 6 evidence, to SM&CR senior-manager statements of responsibility, and to [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") model-risk governance over the routing logic that decides which rail wins. The board does not need a narrative; it needs a quarterly chart with a hard floor.
+These are the metrics that map cleanly to DORA Article 6 evidence, to SM&CR senior-manager statements of responsibility, and to [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") model-risk governance over the routing logic that decides which rail wins. The board does not need a narrative; it needs a quarterly chart with a hard floor.
 
 ## Conclusion
 

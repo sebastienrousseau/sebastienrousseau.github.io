@@ -225,7 +225,7 @@ site_software: "Static Site Generator, Rust"
 
 ## Висновок
 
-Дедлайн листопада 2026 — це проста частина. Складна — те, що цей дедлайн змушує зробити. Банки, які прийдуть вчасно, продовжуючи трактувати pain.001 як задачу перекладу, проведуть наступне десятиліття, перебудовуючи свою казначейську модель даних з дроту всередину. Банки, які прийдуть з канонічною ISO-first схемою, структурованими адресами за замовчуванням і контрольною площиною програмованої ліквідності, що споживає pacs.008 напряму, керуватимуть агентним казначейством під підзвітністю ради за Статтею 5 DORA, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: завершення посткризових реформ") операційно-ризиковою дисципліною та модельним управлінням [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 настанови з управління модельним ризиком").
+Дедлайн листопада 2026 — це проста частина. Складна — те, що цей дедлайн змушує зробити. Банки, які прийдуть вчасно, продовжуючи трактувати pain.001 як задачу перекладу, проведуть наступне десятиліття, перебудовуючи свою казначейську модель даних з дроту всередину. Банки, які прийдуть з канонічною ISO-first схемою, структурованими адресами за замовчуванням і контрольною площиною програмованої ліквідності, що споживає pacs.008 напряму, керуватимуть агентним казначейством під підзвітністю ради за Статтею 5 DORA, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: завершення посткризових реформ") операційно-ризиковою дисципліною та модельним управлінням [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 настанови з управління модельним ризиком").
 
 Метафора автономної нервової системи не є декоративною. Казначейство не може міркувати про ліквідність, якої не бачить. Агенти не можуть діяти на даних, які не можуть розібрати. ISO 20022 — це проводка казначейства CIB у 2026 році: структуроване повідомлення — потенціал дії, схема — аудиторський слід, який регулятор вимагатиме наступного ранку після наступного інциденту.
 
@@ -241,7 +241,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. Доступно за адресою: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "Рекомендації FATF")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Доступно за адресою: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 настанови з управління модельним ризиком")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Доступно за адресою: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 настанови з управління модельним ризиком")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. Доступно за адресою: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — універсальна схема повідомлень фінансової індустрії")
 

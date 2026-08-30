@@ -259,7 +259,7 @@ site_software: "Static Site Generator, Rust"
 - ISO 20022, (2024). [pacs.008.001.10 — تعريف رسالة تحويل ائتمان العميل من مؤسسة مالية إلى مؤسسة مالية ⧉](https://www.iso20022.org/catalogue-messages/iso-20022-messages-archive "ISO 20022 message catalogue").
 - NACHA, (2026). [قواعد ACH التشغيلية والإرشادات ⧉](https://www.nacha.org/rules "NACHA Operating Rules").
 - BIS Committee on Payments and Market Infrastructures, (2025). [المدفوعات السريعة ومستقبل النظام المالي ⧉](https://www.bis.org/cpmi/publ/d228.htm "CPMI fast payments report").
-- Open Banking Limited, (2026). [مواصفة المدفوعات المتكررة المتغيرة ⧉](https://www.openbanking.org.uk/vrp/ "Open Banking VRP").
+- Open Banking Limited, (2026). [مواصفة المدفوعات المتكررة المتغيرة ⧉](https://www.openbanking.org.uk/glossary/variable-recurring-payment/ "Open Banking VRP").
 - Circle Internet Financial, (2026). [خزينة واحتياطيات USDC ⧉](https://www.circle.com/transparency "Circle transparency").
 
 <!-- enrich-start -->

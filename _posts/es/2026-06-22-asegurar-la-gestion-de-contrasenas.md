@@ -323,7 +323,7 @@ El [código fuente de hsh](https://github.com/sebastienrousseau/hsh "hsh — mar
 
 ## Referencias
 
-Basel Committee on Banking Supervision (2011). *Basel III: marco regulatorio global para bancos y sistemas bancarios más resilientes*. Banco de Pagos Internacionales. Disponible en: [https://www.bis.org/publ/bcbs189.pdf](https://www.bis.org/publ/bcbs189.pdf "Basel III: marco regulatorio global para bancos y sistemas bancarios más resilientes")
+Basel Committee on Banking Supervision (2011). *Basel III: marco regulatorio global para bancos y sistemas bancarios más resilientes*. Banco de Pagos Internacionales. Disponible en: [https://www.bis.org/publ/bcbs189.htm](https://www.bis.org/publ/bcbs189.htm "Basel III: marco regulatorio global para bancos y sistemas bancarios más resilientes")
 
 Biryukov, A., Dinu, D., Khovratovich, D. y Josefsson, S. (2021). *RFC 9106: función memory-hard Argon2 para hashing de contraseñas y aplicaciones de proof-of-work*. Internet Engineering Task Force. Disponible en: [https://datatracker.ietf.org/doc/html/rfc9106](https://datatracker.ietf.org/doc/html/rfc9106 "RFC 9106 — función memory-hard Argon2 para hashing de contraseñas")
 

@@ -163,7 +163,7 @@ Styrelser ställer nu fem frågor och förväntar sig numeriska svar.
 4. **Vilken är PQC-signeringstäckningen på återhämtningsartefakter?** Andel av valv-ögonblicksbilder, manifest och förtroendeankare mellan domäner som är signerade under FIPS 203 / FIPS 204.
 5. **Vilken är Cost of Contingency Capital (CoCC)?** Den dagliga alternativkostnaden för den vilande intradagliga likviditet som är fastlåst i sekundära clearingkonton, varma korrespondentsaldon och förpositionerade tokeniserade positioner, mätt mot dagslåneräntan. Styrelsen måste se det exakta priset för bankens motståndskraftsförsäkring, och driftskommittén måste försvara avvägningen mellan fastlåst kapital och avbrottstolerans — minst kvartalsvis uppdaterat.
 
-Det är de måtten som kartläggs rent mot DORA Artikel 6-evidens, mot SM&CR:s ansvarsutlåtanden för seniora chefer och mot [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") modellriskstyrning över den dirigeringslogik som avgör vilken skena som vinner. Styrelsen behöver inget narrativ; den behöver ett kvartalsdiagram med ett hårt golv.
+Det är de måtten som kartläggs rent mot DORA Artikel 6-evidens, mot SM&CR:s ansvarsutlåtanden för seniora chefer och mot [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") modellriskstyrning över den dirigeringslogik som avgör vilken skena som vinner. Styrelsen behöver inget narrativ; den behöver ett kvartalsdiagram med ett hårt golv.
 
 ## Slutsats
 

@@ -256,7 +256,7 @@ Phong bì lai dẫn xuất khóa phiên từ cả bí mật cổ điển lẫn b
 ## Tham khảo
 
 - National Institute of Standards and Technology, (2024). [FIPS 203: Tiêu chuẩn Cơ chế Đóng gói Khóa dựa trên Lưới Mô-đun ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "Thông báo NIST FIPS 203").
-- Board of Governors of the Federal Reserve System, (2011). [Hướng dẫn giám sát về quản lý rủi ro mô hình (SR Letter 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
+- Board of Governors of the Federal Reserve System, (2011). [Hướng dẫn giám sát về quản lý rủi ro mô hình (SR Letter 11-7) ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7").
 - European Parliament and Council of the European Union, (2022). [Quy định (EU) 2022/2554 về khả năng phục hồi vận hành số cho khu vực tài chính (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Quy định DORA").
 - NIST National Cybersecurity Center of Excellence, (2025). [Di chuyển sang mật mã hậu lượng tử (NIST SP 1800-38) ⧉](https://www.nccoe.nist.gov/projects/migration-post-quantum-cryptography "NIST SP 1800-38").
 - GitHub, (2026). [Kho mã nguồn mở kyberlib ⧉](https://github.com/sebastienrousseau/kyberlib "Kho kyberlib").

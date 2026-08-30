@@ -96,7 +96,7 @@ excerpt: "لم تعد المدفوعات بالجملة في 2026 مجرد سب�
 > - **أصبحت ISO 20022 اللغة المشتركة لتحديث المدفوعات بالجملة.** تقول BIS CPMI إن المعيار يعالج تجزؤ المراسلات وبتر البيانات وضعف المعالجة المباشرة واحتكاكات الامتثال ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "مستقبل المراسلات المالية: التنقّل في رحلة الهجرة إلى ISO 20022")).
 > - **لا تزال خارطة طريق مجموعة العشرين متأخرة عن أهدافها.** يفيد تحديث مجلس الاستقرار المالي FSB (مجلس الاستقرار المالي) لمارس 2026 بأن التقدّم حقيقي لكن أهداف 2027 ليست على المسار الصحيح بعد ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "إصلاح المدفوعات العابرة للحدود")).
 > - **ساعات تشغيل RTGS وإتاحة الوصول رافعتان اقتصاديتان.** يلاحظ FSB أن أكثر من نصف الولايات القضائية مدّدت ساعات RTGS أو تخطّط لتمديدها، فيما يتزايد الوصول المباشر لمزوّدي الخدمات غير المصرفيين عبر أنظمة المدفوعات ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "إصلاح المدفوعات العابرة للحدود")).
-> - **تُبرز خدمة RTGS المجدَّدة لبنك إنجلترا المرونةَ وقابلية التشغيل البيني بوضوح.** صُمِّمت الخدمة المجدَّدة لدعم الاستقرار النقدي والمالي عبر المرونة وإتاحة الوصول وقابلية التشغيل البيني والوظائفية ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "خدمة RTGS المجدَّدة — المزايا الرئيسية")).
+> - **تُبرز خدمة RTGS المجدَّدة لبنك إنجلترا المرونةَ وقابلية التشغيل البيني بوضوح.** صُمِّمت الخدمة المجدَّدة لدعم الاستقرار النقدي والمالي عبر المرونة وإتاحة الوصول وقابلية التشغيل البيني والوظائفية ([Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "خدمة RTGS المجدَّدة — المزايا الرئيسية")).
 > - **التشظّي هو المخاطرة الكلية.** يحذّر المجلس الأطلسي من أن تشظّي أنظمة المدفوعات قد يرفع الكلفة ويُبطئ التسوية ويُقلّل الشفافية ويُضعف التكامل المالي العالمي ([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "أنظمة المدفوعات العالمية تتشظّى")).
 > - **أصبحت تجارب DLT تجاربَ بنية تحتية، لا مسرحاً للعملات المشفّرة.** تختبر الأعمال المرتبطة بـ BIS مثل Project Agorá والتجارب الأوروبية للتسوية بالجملة ما إذا كانت أموال البنوك التجارية المُرمَّزة وأموال البنوك المركزية قادرة على تحسين التسوية العابرة للحدود ذات القيمة العالية ([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "أنظمة المدفوعات العالمية تتشظّى")).
 > - **الاقتصاد تشغيلي.** يفشل الدفع العابر للحدود اقتصادياً عندما تُفقد البيانات الغنية وتُصبح فحوصات الامتثال يدوية وتُحجز السيولة بفعل المناطق الزمنية وتتطلّب التحقيقات تدخّلاً بشرياً.
@@ -121,7 +121,7 @@ excerpt: "لم تعد المدفوعات بالجملة في 2026 مجرد سب�
 
 تكتسب نافذة التسوية أهميتها لأن المدفوعات بالجملة العالمية تعبر المناطق الزمنية. ويُؤطّر خطاب فابيو بانيتا في BIS في مايو 2026 البنية التحتية الوطنية للمدفوعات بوصفها إحداثيةً للإصلاح، بما في ذلك نوافذ تسوية أوسع والاعتماد الكامل لـ ISO 20022 ([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "الربط البيني من أجل الاستقرار: المدفوعات العابرة للحدود في عالم متشظٍّ")).
 
-تسير خدمة RTGS المجدَّدة لبنك إنجلترا في الاتجاه نفسه. فهي تُؤكّد على المرونة وتوسيع الوصول وقابلية التشغيل البيني وواجهة تسوية متزامنة قادرة على التشغيل البيني مع سجلات أخرى وعلى تقليص مخاطر التسوية وتكاليف السيولة ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "خدمة RTGS المجدَّدة — المزايا الرئيسية")).
+تسير خدمة RTGS المجدَّدة لبنك إنجلترا في الاتجاه نفسه. فهي تُؤكّد على المرونة وتوسيع الوصول وقابلية التشغيل البيني وواجهة تسوية متزامنة قادرة على التشغيل البيني مع سجلات أخرى وعلى تقليص مخاطر التسوية وتكاليف السيولة ([Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "خدمة RTGS المجدَّدة — المزايا الرئيسية")).
 
 ### 3. وصول الجهات غير المصرفية يُغيّر البنية التنافسية
 
@@ -202,7 +202,7 @@ excerpt: "لم تعد المدفوعات بالجملة في 2026 مجرد سب�
 
 **ما دور تجديد RTGS؟**
 
-يُحسّن تجديد RTGS المرونة والوصول وقابلية التشغيل البيني ووظائف التسوية. كما يُبرز بنك إنجلترا واجهات التسوية المتزامنة و ISO 20022 آليتين لتقليص مخاطر التسوية وتكاليف السيولة ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "خدمة RTGS المجدَّدة — المزايا الرئيسية")).
+يُحسّن تجديد RTGS المرونة والوصول وقابلية التشغيل البيني ووظائف التسوية. كما يُبرز بنك إنجلترا واجهات التسوية المتزامنة و ISO 20022 آليتين لتقليص مخاطر التسوية وتكاليف السيولة ([Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "خدمة RTGS المجدَّدة — المزايا الرئيسية")).
 
 **هل تحلّ العملات المستقرة محلّ المدفوعات بالجملة؟**
 
@@ -213,5 +213,5 @@ excerpt: "لم تعد المدفوعات بالجملة في 2026 مجرد سب�
 - BIS CPMI, (2026). [مستقبل المراسلات المالية: التنقّل في رحلة الهجرة إلى ISO 20022 ⧉](https://www.bis.org/cpmi/publ/brief11.htm "BIS CPMI Brief No 11").
 - FSB, (2026). [إصلاح المدفوعات العابرة للحدود — كلمة رئيسية في قمة FSB للمدفوعات ⧉](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "FSB").
 - BIS, (2026). [الربط البيني من أجل الاستقرار: المدفوعات العابرة للحدود في عالم متشظٍّ ⧉](https://www.bis.org/cpmi/speeches/sp260505.pdf "خطاب فابيو بانيتا").
-- Bank of England, (2026). [خدمة RTGS المجدَّدة — المزايا الرئيسية ⧉](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Bank of England").
+- Bank of England, (2026). [خدمة RTGS المجدَّدة — المزايا الرئيسية ⧉](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Bank of England").
 - Atlantic Council, (2026). [أنظمة المدفوعات العالمية تتشظّى — وهذا ما يستطيع G20 فعله ⧉](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "Atlantic Council").

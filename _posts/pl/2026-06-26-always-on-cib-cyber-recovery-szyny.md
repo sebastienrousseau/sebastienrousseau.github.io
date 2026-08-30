@@ -163,7 +163,7 @@ Zarządy zadają dziś pięć pytań i oczekują odpowiedzi liczbowych.
 4. **Jakie jest pokrycie podpisem PQC na artefaktach recovery?** Procent snapshotów skarbca, manifestów i kotwic zaufania między domenami podpisanych pod FIPS 203 / FIPS 204.
 5. **Jaki jest Cost of Contingency Capital (CoCC)?** Dzienny koszt alternatywny bezczynnej płynności śróddziennej uwięzionej na drugorzędnych rachunkach rozliczeniowych, w ciepłych saldach korespondenckich i we wstępnie przygotowanych pozycjach tokenizowanych, mierzony względem stopy overnight. Zarząd musi widzieć dokładną cenę polisy odporności banku, a komitet operacyjny musi bronić kompromisu między uwięzionym kapitałem a tolerancją awarii — odświeżanego co najmniej kwartalnie.
 
-Są to metryki, które mapują się czysto na dowody DORA art. 6, na oświadczenia odpowiedzialności senior managerów w ramach SM&CR oraz na nadzór nad ryzykiem modeli [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") nad logiką routingu rozstrzygającą, która szyna wygrywa. Zarząd nie potrzebuje narracji; potrzebuje kwartalnego wykresu z twardym progiem.
+Są to metryki, które mapują się czysto na dowody DORA art. 6, na oświadczenia odpowiedzialności senior managerów w ramach SM&CR oraz na nadzór nad ryzykiem modeli [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") nad logiką routingu rozstrzygającą, która szyna wygrywa. Zarząd nie potrzebuje narracji; potrzebuje kwartalnego wykresu z twardym progiem.
 
 ## Wnioski
 

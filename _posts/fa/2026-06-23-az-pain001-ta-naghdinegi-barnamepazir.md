@@ -120,7 +120,7 @@ MX را از میان بردارید و عامل‌ها کور می‌شوند.
 
 ## نتیجه‌گیری
 
-مهلت نوامبر ۲۰۲۶ بخش آسان است. بخش دشوار همان چیزی است که مهلت آن را تحمیل می‌کند. بانک‌هایی که به‌موقع می‌رسند اما همچنان با pain.001 مانند یک مسئله ترجمه برخورد می‌کنند، دهه بعدی را صرف بازسازی مدل داده خزانه‌داری خود از سیم به‌سمت درون خواهند کرد. بانک‌هایی که با یک شِمای کانونیِ ISO-first، نشانی‌های ساختاریافته به‌طور پیش‌فرض، و یک صفحه کنترلیِ نقدینگی برنامه‌پذیر که مستقیماً pacs.008 را مصرف می‌کند می‌رسند، خزانه‌داری عاملی را تحت پاسخگویی هیئت‌مدیره ماده ۵ DORA، نظم ریسک عملیاتیِ [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: نهایی‌سازی اصلاحات پساـبحران") و حاکمیت مدل [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 راهنمای مدیریت ریسک مدل") اجرا خواهند کرد.
+مهلت نوامبر ۲۰۲۶ بخش آسان است. بخش دشوار همان چیزی است که مهلت آن را تحمیل می‌کند. بانک‌هایی که به‌موقع می‌رسند اما همچنان با pain.001 مانند یک مسئله ترجمه برخورد می‌کنند، دهه بعدی را صرف بازسازی مدل داده خزانه‌داری خود از سیم به‌سمت درون خواهند کرد. بانک‌هایی که با یک شِمای کانونیِ ISO-first، نشانی‌های ساختاریافته به‌طور پیش‌فرض، و یک صفحه کنترلیِ نقدینگی برنامه‌پذیر که مستقیماً pacs.008 را مصرف می‌کند می‌رسند، خزانه‌داری عاملی را تحت پاسخگویی هیئت‌مدیره ماده ۵ DORA، نظم ریسک عملیاتیِ [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: نهایی‌سازی اصلاحات پساـبحران") و حاکمیت مدل [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 راهنمای مدیریت ریسک مدل") اجرا خواهند کرد.
 
 قابِ سیستم عصبی خودمختار تزئینی نیست. خزانه‌داری نمی‌تواند درباره نقدینگی‌ای که نمی‌بیند استدلال کند. عامل‌ها نمی‌توانند بر داده‌ای که نمی‌توانند تجزیه کنند عمل کنند. ISO 20022 سیم‌کشی خزانه‌داری CIB در سال ۲۰۲۶ است — پیام ساختاریافته پتانسیل کنش است، و شِما همان مسیر ممیزی‌ای است که رگولاتور صبح روز پس از حادثه بعدی آن را طلب خواهد کرد.
 
@@ -136,7 +136,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. Available at: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF Recommendations")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Available at: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Available at: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. Available at: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Universal financial industry message scheme")
 

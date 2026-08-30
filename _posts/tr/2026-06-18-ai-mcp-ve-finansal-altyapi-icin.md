@@ -163,7 +163,7 @@ Geliştirme ve operasyon ortamı genelinde mutlak güvenliği korumak için Bilg
 | **Bellek güvenliği profili** | Ayrıştırıcı ve serileştirici bağımlılıklarında sıfır `unsafe` Rust bloğu. | DORA Madde 30 (tedarik zinciri) | Cargo derlemelerinde otomatik derleyici denetimleri ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)). |
 | **Şema doğrulama** | Ayrıştırılan yapılandırma dosyalarının yüzde 100'ü geçerli [JSON Schema](https://json-schema.org/) modellerine karşı doğrulanır. | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Şema ihlallerinde derleme işlem hatlarını durduran gerçek zamanlı doğrulama kapısı. |
 | **Yapılandırma kayması** | Yerel yapılandırma dosyalarının git sürümlü duruma gerçek zamanlı algılanması ve kurtarılması. | Dayanıklılık Getirisi (RoR) | Tüm yerel dosya değişikliklerini günlüğe kaydeden sürekli telemetri. |
-| **Ajan erişim kontrolü** | MCP yapılandırmaları aracılığıyla çalışan yerel AI araçları için sınırlı, salt okunur izinler. | Model risk yönetimi ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Ajan operasyonlarını onaylı dizinlerle sınırlayan MCP sunucu sınırları. |
+| **Ajan erişim kontrolü** | MCP yapılandırmaları aracılığıyla çalışan yerel AI araçları için sınırlı, salt okunur izinler. | Model risk yönetimi ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Ajan operasyonlarını onaylı dizinlerle sınırlayan MCP sunucu sınırları. |
 
 ## 04. Şeffaf Olmayan Yapılandırma Ayrıştırmasının Yanılgısı
 

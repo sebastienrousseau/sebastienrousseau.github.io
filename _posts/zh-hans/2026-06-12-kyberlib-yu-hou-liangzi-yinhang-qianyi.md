@@ -256,7 +256,7 @@ G-SIB 运营着以遗留系统为主的交易资产，其约束瓶颈在于发�
 ## 参考资料
 
 - National Institute of Standards and Technology, (2024). [FIPS 203：基于模格的密钥封装机制标准 ⧉](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "NIST FIPS 203 发布公告").
-- Board of Governors of the Federal Reserve System, (2011). [模型风险管理监管指引（SR Letter 11-7）⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "美联储 SR 11-7").
+- Board of Governors of the Federal Reserve System, (2011). [模型风险管理监管指引（SR Letter 11-7）⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "美联储 SR 11-7").
 - European Parliament and Council of the European Union, (2022). [关于金融部门数字运营韧性的（EU）2022/2554 号条例（DORA）⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA 条例").
 - NIST National Cybersecurity Center of Excellence, (2025). [向后量子密码学迁移（NIST SP 1800-38）⧉](https://www.nccoe.nist.gov/projects/migration-post-quantum-cryptography "NIST SP 1800-38").
 - GitHub, (2026). [kyberlib 开源仓库 ⧉](https://github.com/sebastienrousseau/kyberlib "kyberlib 仓库").

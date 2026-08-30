@@ -163,7 +163,7 @@ ISO 20022 之所以讓這一切能以架構而非即興方式運作,關鍵在此
 4. **復原產物的 PQC 簽章覆蓋率為何?**已於 FIPS 203 / FIPS 204 下簽章的保險庫快照、清單與跨域信任錨點之百分比。
 5. **應急資本成本(CoCC)為何?**閒置於次要清算帳戶、暖待命代理行餘額與預先部署代幣化頭寸中的日內流動性,所對應的每日機會成本,並以隔夜利率為基準衡量。董事會必須看到銀行韌性保險的確切定價,營運委員會必須為「閒置資本」與「中斷容忍度」之間的取捨進行答辯——至少每季更新一次。
 
-這些指標乾淨對應至 DORA 第 6 條的舉證、SM&CR 高階管理人的職責聲明,以及[SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management")對決定哪條軌道勝出之路由邏輯的模型風險治理。董事會不需要敘事;需要的是一張每季的圖表,連同一條硬地板。
+這些指標乾淨對應至 DORA 第 6 條的舉證、SM&CR 高階管理人的職責聲明,以及[SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management")對決定哪條軌道勝出之路由邏輯的模型風險治理。董事會不需要敘事;需要的是一張每季的圖表,連同一條硬地板。
 
 ## 結論
 

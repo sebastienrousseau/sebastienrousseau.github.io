@@ -22,7 +22,7 @@ keywords: "टोकनाइज्ड ठेवी 2026, tokenized deposits ban
 > **कार्यकारी सारांश / महत्त्वाचे मुद्दे**
 >
 > - **बाजार स्थिती.** 2026 मधील टोकनाइज्ड ठेवी पूर्ण-प्रमाणापूर्वीच्या आहेत पण यापुढे केवळ सैद्धांतिक राहिलेल्या नाहीत: पायलट कार्यरत आहेत, बँक प्रस्ताव आकार घेत आहेत आणि यूके बहु-बँक कार्यक्रम 2026 च्या मध्यापर्यंत चालतो, ज्यात HSBC, NatWest, Lloyds, Barclays, Nationwide आणि Santander मार्केटप्लेस पेमेंट, रीमॉर्टगेजिंग आणि डिजिटल-मालमत्ता सेटलमेंटची चाचणी घेत आहेत ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
-> - **स्पर्धात्मक दबाव.** स्टेबलकॉइन मोठे आहेत आणि वाढत आहेत (BIS चा अंदाज ~$315 अब्ज बाजार-भांडवल, एप्रिल 2026 च्या सुरुवातीला ~98% USD-मूल्यांकित) आणि ते ठेव-टोकनाच्या वेळापत्रकाला भाग पाडतात. ते खुल्या-परिसंस्थेतील पोहोच, क्रिप्टो-मूळ तरलता आणि जागतिक किरकोळ बाजारावर जिंकतात; टोकनाइज्ड ठेवी नियामक स्वस्थता, ठेव विमा आणि ट्रेझरी वर्कफ्लोवर जिंकतात ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+> - **स्पर्धात्मक दबाव.** स्टेबलकॉइन मोठे आहेत आणि वाढत आहेत (BIS चा अंदाज ~$315 अब्ज बाजार-भांडवल, एप्रिल 2026 च्या सुरुवातीला ~98% USD-मूल्यांकित) आणि ते ठेव-टोकनाच्या वेळापत्रकाला भाग पाडतात. ते खुल्या-परिसंस्थेतील पोहोच, क्रिप्टो-मूळ तरलता आणि जागतिक किरकोळ बाजारावर जिंकतात; टोकनाइज्ड ठेवी नियामक स्वस्थता, ठेव विमा आणि ट्रेझरी वर्कफ्लोवर जिंकतात ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")).
 > - **नियामक सीमा.** FDIC च्या 2026 प्रस्तावात टोकनाइज्ड ठेवींना DLT वर नोंदवलेल्या ठेव-दायित्वांच्या वर्गात ठेवले आहे आणि त्यांना पेमेंट स्टेबलकॉइनपासून स्पष्टपणे वेगळे केले आहे, ज्यामुळे अमेरिकन परिघ अधिक कठोर होतो ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 > - **आघाडीचे बँक कार्यक्रम.** Kinexys वरील JPMorgan चे JPM Coin दररोज ~$2 अब्ज घाऊक सेटलमेंट हाताळते आणि तो सर्वात दीर्घकाळचा कार्यरत ठेव-टोकन ट्रॅक-रेकॉर्ड आहे. HSBC कडे सर्वात संपूर्ण बहु-मार्गी स्टॅक आहे: HK, SG, UK, LU, US मध्ये USD/GBP/EUR/HKD/SGD मधील TDS; HSBC Orion यूके Digital Gilt Instrument (DIGIT) पायलटला आधार देते; HSBC Gold Token वाटपकृत सोने टोकनाइज्ड करते; Canton + Project Ensemble वर आंतर-नेटवर्क अणु-सेटलमेंटची चाचणी; Quantinuum सोबत PQC अंमलबजावणी ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
 > - **सर्व काही ठरवणारे रचना-निर्णय.** तीन खतावणी-आणि-कायदेशीर नमुने प्रबळ आहेत: टोकन *म्हणजेच* ठेव (सर्वात स्वच्छ अणु-सेटलमेंट, सर्वात कठीण अपटाइम), टोकन एका पारंपरिक ठेवीचे *प्रतिनिधित्व* करते (कायदेशीरदृष्ट्या सोपे, समेटाचा भार, JPM Coin व HSBC TDS ज्याच्यासारखे आहेत), किंवा टोकन पारंपरिक रेल्सवरील *सूचना स्तर* आहे (सर्वात कमकुवत प्रोग्रामेबिलिटी दावा).
@@ -55,13 +55,13 @@ Lloyds म्हणते की ती कॉर्पोरेट व सं�
 
 ### 3. स्टेबलकॉइन तातडी लादतात पण जोखीमही स्पष्ट करतात
 
-BIS चे एप्रिल 2026 चे भाषण स्टेबलकॉइनना स्मार्ट-कॉन्ट्रॅक्ट प्रोग्रामेबिलिटी व अणु-सेटलमेंट यांसारख्या तांत्रिक वैशिष्ट्यांचे श्रेय देते, पण ते पैशाचे एकत्व, धाव-असुरक्षितता, आर्थिक अखंडता, चलनविषयक सार्वभौमत्व आणि मध्यवर्ती बँक पैशाबाहेरील सेटलमेंट यांच्याभोवतीच्या जोखमींवरही भर देते ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+BIS चे एप्रिल 2026 चे भाषण स्टेबलकॉइनना स्मार्ट-कॉन्ट्रॅक्ट प्रोग्रामेबिलिटी व अणु-सेटलमेंट यांसारख्या तांत्रिक वैशिष्ट्यांचे श्रेय देते, पण ते पैशाचे एकत्व, धाव-असुरक्षितता, आर्थिक अखंडता, चलनविषयक सार्वभौमत्व आणि मध्यवर्ती बँक पैशाबाहेरील सेटलमेंट यांच्याभोवतीच्या जोखमींवरही भर देते ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")).
 
 हीच टीका नेमकी टोकनाइज्ड ठेवी का महत्त्वाच्या आहेत हे दर्शवते. त्या टोकनाइज्ड पैशाची उपयुक्त प्रोग्रामेबिलिटी नियमित व्यावसायिक-बँक-पैसे चौकटीत आणण्याचा प्रयत्न करतात.
 
 ### 4. Project Agorá आणि युनिफाइड लेजर घाऊक प्रश्नाला आकार देतात
 
-BIS Project Agorá ला मध्यवर्ती बँका व खासगी क्षेत्रासोबतचे काम म्हणून मांडते ज्याद्वारे सीमापार पेमेंटसाठी टोकनायझेशनचा शोध घेतला जातो, आणि ती व्यापक दिशा युनिफाइड लेजर दृष्टीकोनाशी जोडते ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Deutsche Bank देखील Project Agorá व Partior यांना पुढील-पिढीच्या सेटलमेंट व सीमापार पायाभूत सुविधांचा भाग म्हणून दर्शवते ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
+BIS Project Agorá ला मध्यवर्ती बँका व खासगी क्षेत्रासोबतचे काम म्हणून मांडते ज्याद्वारे सीमापार पेमेंटसाठी टोकनायझेशनचा शोध घेतला जातो, आणि ती व्यापक दिशा युनिफाइड लेजर दृष्टीकोनाशी जोडते ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")). Deutsche Bank देखील Project Agorá व Partior यांना पुढील-पिढीच्या सेटलमेंट व सीमापार पायाभूत सुविधांचा भाग म्हणून दर्शवते ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 
 येथेच टोकनाइज्ड ठेवी घाऊक पायाभूत सुविधा बनतात. मुख्य प्रश्न असा आहे की व्यावसायिक बँक पैसा, मध्यवर्ती बँक पैसा आणि टोकनाइज्ड मालमत्ता कायदेशीर अंतिमता, तरलता नियंत्रणे किंवा चलनविषयक एकत्व न मोडता एकत्र कशी सेटल होतात.
 
@@ -126,13 +126,13 @@ JPMorgan आणि HSBC पलीकडे, अनेक कार्यक्�
 | साधन | दावा प्रकार | सर्वोत्तम वापर | 2026 स्थिती | प्रमुख जोखीम |
 |---|---|---|---|---|
 | **टोकनाइज्ड ठेवी** | व्यावसायिक बँक ठेव किंवा प्रतिनिधित्व | बँक-नेतृत्वातील प्रोग्रामेबल पेमेंट, ट्रेझरी, टोकनाइज्ड मालमत्ता सेटलमेंट | पायलट आणि सुरुवातीची संस्थात्मक उत्पादन-रचना ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")) | आंतरकार्यक्षमता आणि कायदेशीर सुसंगती |
-| **स्टेबलकॉइन** | जारीकर्ता/राखीव रचनेवरील दावा | क्रिप्टो तरलता, सीमापार प्रयोग, डॉलर तरलता | मोठे आणि वाढणारे, BIS चा अंदाज एप्रिल 2026 च्या सुरुवातीला सुमारे $315 अब्ज बाजार-भांडवल ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")) | धाव, आर्थिक अखंडता, चलनविषयक सार्वभौमत्व |
+| **स्टेबलकॉइन** | जारीकर्ता/राखीव रचनेवरील दावा | क्रिप्टो तरलता, सीमापार प्रयोग, डॉलर तरलता | मोठे आणि वाढणारे, BIS चा अंदाज एप्रिल 2026 च्या सुरुवातीला सुमारे $315 अब्ज बाजार-भांडवल ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")) | धाव, आर्थिक अखंडता, चलनविषयक सार्वभौमत्व |
 | **घाऊक CBDC** | मध्यवर्ती बँक पैसा | आंतर-बँक सेटलमेंट आणि टोकनाइज्ड बाजार पायाभूत सुविधा | मध्यवर्ती बँक प्रकल्पांद्वारे सक्रिय शोध | रचना, गोपनीयता, विस्तारक्षमता, राजकीय अधिकार |
 | **किरकोळ CBDC** | सार्वजनिक वापरासाठी मध्यवर्ती बँक पैसा | सार्वजनिक डिजिटल रोकड पर्याय | जागतिक स्तरावर संमिश्र प्रगती | स्वीकार, गोपनीयता, बँकिंग विघटन |
 
 ### टोकनाइज्ड ठेवी कुठे जिंकतात
 
-ताळेबंदावरील व्यावसायिक बँक पैसा ती नियामक स्वस्थता वाहतो जी स्टेबलकॉइनना अजूनही कमवायची आहे. टोकनाइज्ड ठेवी ठेव विमा, विवेकी भांडवल हाताळणी आणि विद्यमान AML/निर्बंध नियंत्रणे वारशाने मिळवतात. कॉर्पोरेट ट्रेझररसाठी याचा अर्थ नवीन प्रतिपक्ष जोखीम नाही आणि तपासण्यासाठी नवीन राखीव लेखापरीक्षण नाही. त्या कॉर्पोरेटकडे आधीच असलेल्या बँक खात्यातूनच ऑन-रॅम्प होतात — कोणतेही एक्सचेंज नाही, कोणताही राखीव जारीकर्ता नाही, कोणतीही कस्टडी नवलाई नाही. BIS आणि FDIC दोघेही या मुद्द्यावर भर देतात: दावा जिथे विद्यमान कायदेशीर चौकट आधीच समजते तिथे बसतो तेव्हा पैशाचे एकत्व टिकते ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate"); [FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+ताळेबंदावरील व्यावसायिक बँक पैसा ती नियामक स्वस्थता वाहतो जी स्टेबलकॉइनना अजूनही कमवायची आहे. टोकनाइज्ड ठेवी ठेव विमा, विवेकी भांडवल हाताळणी आणि विद्यमान AML/निर्बंध नियंत्रणे वारशाने मिळवतात. कॉर्पोरेट ट्रेझररसाठी याचा अर्थ नवीन प्रतिपक्ष जोखीम नाही आणि तपासण्यासाठी नवीन राखीव लेखापरीक्षण नाही. त्या कॉर्पोरेटकडे आधीच असलेल्या बँक खात्यातूनच ऑन-रॅम्प होतात — कोणतेही एक्सचेंज नाही, कोणताही राखीव जारीकर्ता नाही, कोणतीही कस्टडी नवलाई नाही. BIS आणि FDIC दोघेही या मुद्द्यावर भर देतात: दावा जिथे विद्यमान कायदेशीर चौकट आधीच समजते तिथे बसतो तेव्हा पैशाचे एकत्व टिकते ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate"); [FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 ### स्टेबलकॉइन अजूनही कुठे जिंकतात
 
@@ -208,7 +208,7 @@ FDIC च्या 2026 प्रस्तावित नियमात पह�
 
 **टोकनाइज्ड ठेवी स्टेबलकॉइनसारख्याच आहेत का?**
 
-नाही. दोन्ही प्रोग्रामेबल, 24/7 डिजिटल पैसा देतात, पण ते पूर्णपणे वेगळ्या कायदेशीर व दावा रचना वापरतात. स्टेबलकॉइन हा खासगी जारीकर्त्याच्या राखीव मालमत्तेवर किंवा कॉर्पोरेट रचनेवरील दावा असतो, जो मध्यवर्ती बँक ताळेबंदाबाहेर कार्यरत असतो ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). टोकनाइज्ड ठेव हे थेट व्यावसायिक बँक दायित्व आहे जे विद्यमान बँकिंग नियमन, AML/निर्बंध नियंत्रणे आणि ठेव-विमा परिघ वारशाने मिळवते ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+नाही. दोन्ही प्रोग्रामेबल, 24/7 डिजिटल पैसा देतात, पण ते पूर्णपणे वेगळ्या कायदेशीर व दावा रचना वापरतात. स्टेबलकॉइन हा खासगी जारीकर्त्याच्या राखीव मालमत्तेवर किंवा कॉर्पोरेट रचनेवरील दावा असतो, जो मध्यवर्ती बँक ताळेबंदाबाहेर कार्यरत असतो ([BIS](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate")). टोकनाइज्ड ठेव हे थेट व्यावसायिक बँक दायित्व आहे जे विद्यमान बँकिंग नियमन, AML/निर्बंध नियंत्रणे आणि ठेव-विमा परिघ वारशाने मिळवते ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 **आघाडीची यूके वापर-प्रकरणे कोणती आहेत?**
 
@@ -231,7 +231,7 @@ FDIC च्या 2026 प्रस्तावित नियमात पह�
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
 - HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
 - JPMorgan, (2026). [Kinexys (formerly Onyx) digital assets platform ⧉](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan").
-- BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
+- BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.htm "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").
 - Cambridge Centre for Alternative Finance, (2026). [Tokenised money: Use cases, interoperability and regulation ⧉](https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf "Tokenised money report").

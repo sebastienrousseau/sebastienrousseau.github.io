@@ -163,7 +163,7 @@ ISO 20022 ni ohun tí ó jẹ́ kí èyí ṣiṣẹ́ gẹ́gẹ́ bí àkàn�
 4. **Kí ni ìbo PQC ìfọwọ́sí lórí àwọn ohun-èlò ìmúpadàbọ̀sípò?** Ìdá àwọn snapshot ihò, manifest àti ìdúró ìgbẹ́kẹ̀lé inter-domain tí a fọwọ́sí lábẹ́ FIPS 203 / FIPS 204.
 5. **Kí ni Cost of Contingency Capital (CoCC)?** Iye owó àǹfààní ojoojúmọ́ ti owó-ìṣàn ọjọ́-inú tí kò ṣiṣẹ́ tí ó dí mọ́lẹ̀ nínú àwọn àkántì ìpari kejì, àwọn ìṣírò alábàákẹ́gbẹ́ aláàbò gbígbóná àti àwọn ipo tokenised tí a ti gbé kalẹ̀-ṣáájú, tí a wọ̀n lòdì sí ìwọ̀n alẹ́. Bọ́ọ̀dù gbọ́dọ̀ rí iye gangan ti ìdánilójú agbára iṣẹ́ báńkì, ìgbìmọ̀ ìṣiṣẹ́ sì gbọ́dọ̀ dáàbò bo ìpinnu láàrín olú-ọrọ̀ tí ó dí mọ́lẹ̀ àti ìfaradà fún ìjáde — tí a sì n tún ṣe ní ó kéré tán ní gbogbo oṣù mẹ́ta.
 
-Àwọn wọ̀nyí ni àwọn mítíríìkì tí ó so mọ́ ẹ̀rí DORA Article 6 dáadáa, sí àwọn àlàyé ojúṣe olùṣàkóso àgbà SM&CR, àti sí ìṣàkóso ewu àpẹẹrẹ [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") lórí ìṣàlàyé ìdarí tó ń pinnu ọ̀nà wo ni ó ń bori. Bọ́ọ̀dù kò nílò àlàyé; ó nílò àwòrán mẹ́ẹ̀ẹ́dógún pẹ̀lú ilẹ̀-ààlà tí ó nípọn.
+Àwọn wọ̀nyí ni àwọn mítíríìkì tí ó so mọ́ ẹ̀rí DORA Article 6 dáadáa, sí àwọn àlàyé ojúṣe olùṣàkóso àgbà SM&CR, àti sí ìṣàkóso ewu àpẹẹrẹ [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Guidance on Model Risk Management") lórí ìṣàlàyé ìdarí tó ń pinnu ọ̀nà wo ni ó ń bori. Bọ́ọ̀dù kò nílò àlàyé; ó nílò àwòrán mẹ́ẹ̀ẹ́dógún pẹ̀lú ilẹ̀-ààlà tí ó nípọn.
 
 ## Ìparí
 

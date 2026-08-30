@@ -163,7 +163,7 @@ Aby utrzymać absolutne bezpieczeństwo w obszarze rozwoju i operacji, Chief Inf
 | **Profil bezpieczeństwa pamięci** | Zero bloków `unsafe` Rust w parserze i zależnościach serializatora. | DORA art. 30 (łańcuch dostaw) | Automatyczne kontrole kompilatora ([`forbid(unsafe_code)`](https://doc.rust-lang.org/reference/attributes/diagnostics.html#the-forbid-attribute)) w buildach cargo. |
 | **Walidacja schematu** | 100% sparsowanych plików konfiguracji zweryfikowanych względem prawidłowych modeli [JSON Schema](https://json-schema.org/). | [NIST CSF 2.0](https://www.nist.gov/cyberframework) (PR.DS-01) | Bramka walidacji w czasie rzeczywistym wstrzymująca pipeline'y build przy naruszeniach schematu. |
 | **Dryf konfiguracji** | Wykrywanie w czasie rzeczywistym i przywracanie lokalnych plików konfiguracji do stanu zwersjonowanego w git. | Return on Resilience (RoR) | Ciągła telemetria logująca wszystkie modyfikacje plików lokalnych. |
-| **Kontrola dostępu agenta** | Ograniczone, tylko do odczytu uprawnienia dla lokalnych narzędzi AI operujących przez konfiguracje MCP. | Zarządzanie ryzykiem modelu ([SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Granice serwera MCP ograniczające operacje agenta do zatwierdzonych katalogów. |
+| **Kontrola dostępu agenta** | Ograniczone, tylko do odczytu uprawnienia dla lokalnych narzędzi AI operujących przez konfiguracje MCP. | Zarządzanie ryzykiem modelu ([SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm)) | Granice serwera MCP ograniczające operacje agenta do zatwierdzonych katalogów. |
 
 ## 04. Złudzenie nieprzejrzystego parsowania konfiguracji
 

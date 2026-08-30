@@ -207,7 +207,7 @@ CloudCDN 以建立在三項機制上、可完整稽核的開源信任模式,取�
 
 CloudCDN 以符合全球金融部門法遵標準為工程目標,把技術性邊緣操作直接對應到監理機關實際檢查的框架:
 
-- **模型風險管理([美國聯準會 SR 11-7 ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "模型風險管理監理指引")/英國 PRA SS1/23)。**執行操作任務的自主模型落入模型風險治理範圍。CloudCDN 的 MCP 閘道把智能體工具當作量化模型對待:嚴格的政策邊界、即時日誌,以及高影響動作的強制人工覆核。
+- **模型風險管理([美國聯準會 SR 11-7 ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "模型風險管理監理指引")/英國 PRA SS1/23)。**執行操作任務的自主模型落入模型風險治理範圍。CloudCDN 的 MCP 閘道把智能體工具當作量化模型對待:嚴格的政策邊界、即時日誌,以及高影響動作的強制人工覆核。
 - **BCBS 239(風險資料彙總)。**透過在邊緣擷取、標記並結構化交易資料,營運指標得以即時產生——符合 BCBS 239 對資料完整性、即時性與監理可追溯性的要求。
 - **DORA 第 5 條(董事會問責)。**董事會對營運韌性負最終個人責任。CloudCDN 把邊緣遙測轉為量化、可驗證的證據,讓非技術背景的董事也能帶進個人責任稽核。
 - **Basel III 作業風險資本。**銀行需就作業風險持有監理資本。自動化災難復原切換與 SLSA Level 3 來源證明降低機構的作業風險輪廓——在資產負債表上保全資本,而不只是通過稽核。
@@ -259,7 +259,7 @@ G-SIB 在多個司法管轄區運行龐大的交易量。優先事項是以單�
 
 - European Parliament and Council of the European Union, (2022). [歐盟金融部門數位營運韌性法規 (EU) 2022/2554(DORA)⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "歐盟金融部門數位營運韌性法規 (EU) 2022/2554(DORA)"). 布魯塞爾:歐盟官方公報。
 - Basel Committee on Banking Supervision (BCBS), (2013). [有效風險資料彙總與風險報告原則(BCBS 239)⧉](https://www.bis.org/publ/bcbs239.htm "有效風險資料彙總與風險報告原則(BCBS 239)"). 巴塞爾:國際清算銀行。
-- Board of Governors of the Federal Reserve System, (2011). [模型風險管理監理指引(SR Letter 11-7)⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "模型風險管理監理指引(SR Letter 11-7)"). 華盛頓特區:聯邦準備理事會。
+- Board of Governors of the Federal Reserve System, (2011). [模型風險管理監理指引(SR Letter 11-7)⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "模型風險管理監理指引(SR Letter 11-7)"). 華盛頓特區:聯邦準備理事會。
 - Cloudflare, (2026). [Durable Objects 文件:有狀態邊緣協調 ⧉](https://developers.cloudflare.com/durable-objects/ "Durable Objects 文件"). 舊金山:Cloudflare。
 - Cloudflare, (2026). [以 MCP、驗證授權與 Durable Objects 建構 AI 智能體 ⧉](https://blog.cloudflare.com/building-ai-agents-with-mcp-authn-authz-and-durable-objects/ "以 MCP、驗證授權與 Durable Objects 建構 AI 智能體").
 - GitHub, (2026). [cloudcdn.pro 儲存庫 ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "cloudcdn.pro 儲存庫").

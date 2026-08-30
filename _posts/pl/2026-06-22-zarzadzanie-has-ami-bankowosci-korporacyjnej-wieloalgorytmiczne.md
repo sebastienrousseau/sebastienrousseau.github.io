@@ -323,7 +323,7 @@ Hashowanie haseł w trybie wdróż-i-zapomnij się skończyło. DORA przeniosła
 
 ## Bibliografia
 
-Bazylejski Komitet Nadzoru Bankowego (2011). *Basel III: A global regulatory framework for more resilient banks and banking systems*. Bank Rozrachunków Międzynarodowych. Dostępne pod adresem: [https://www.bis.org/publ/bcbs189.pdf](https://www.bis.org/publ/bcbs189.pdf "Basel III: globalne ramy regulacyjne dla bardziej odpornych banków i systemów bankowych")
+Bazylejski Komitet Nadzoru Bankowego (2011). *Basel III: A global regulatory framework for more resilient banks and banking systems*. Bank Rozrachunków Międzynarodowych. Dostępne pod adresem: [https://www.bis.org/publ/bcbs189.htm](https://www.bis.org/publ/bcbs189.htm "Basel III: globalne ramy regulacyjne dla bardziej odpornych banków i systemów bankowych")
 
 Biryukov, A., Dinu, D., Khovratovich, D., i Josefsson, S. (2021). *RFC 9106: Argon2 Memory-Hard Function for Password Hashing and Proof-of-Work Applications*. Internet Engineering Task Force. Dostępne pod adresem: [https://datatracker.ietf.org/doc/html/rfc9106](https://datatracker.ietf.org/doc/html/rfc9106 "RFC 9106 — funkcja Argon2 twarda pamięciowo do hashowania haseł")
 

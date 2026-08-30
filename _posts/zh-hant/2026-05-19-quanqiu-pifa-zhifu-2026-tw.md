@@ -96,7 +96,7 @@ excerpt: "2026 年的大額支付不再只是銀行的後台管道。它們是�
 > - **ISO 20022 現已成為大額支付現代化的共通語言。** BIS CPMI 表示,該標準解決了訊息傳遞碎片化、資料截斷、直通處理薄弱以及合規摩擦等問題([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "金融訊息傳遞的未來:駕馭 ISO 20022 遷移之旅"))。
 > - **G20 路線圖仍落後於目標。** FSB(金融穩定理事會)2026 年 3 月的更新指出,進展是真實的,但 2027 年的目標尚未步入正軌([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "改革跨境支付"))。
 > - **RTGS(即時總額清算)營運時間與准入是經濟槓桿。** FSB 指出,超過半數的司法管轄區已延長 RTGS 時間或計劃延長,同時非銀行業者的直接准入也在各支付體系中逐步上升([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "改革跨境支付"))。
-> - **英格蘭銀行翻新的 RTGS 服務明確強調韌性與互通性。** 翻新後的服務旨在透過韌性、准入、互通性與功能性,支持貨幣與金融穩定([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "翻新的 RTGS 服務——關鍵效益"))。
+> - **英格蘭銀行翻新的 RTGS 服務明確強調韌性與互通性。** 翻新後的服務旨在透過韌性、准入、互通性與功能性,支持貨幣與金融穩定([Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "翻新的 RTGS 服務——關鍵效益"))。
 > - **分裂是宏觀風險。** 大西洋理事會警告,支付體系的分裂可能增加成本、減慢結算速度、降低透明度,並削弱全球金融的整合([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "全球支付體系正在分裂"))。
 > - **DLT(分散式帳本技術)試點現在是基礎設施實驗,而非加密貨幣表演。** 與 BIS 相關的工作,例如 Project Agorá 以及歐洲大額結算試點,正在測試代幣化的商業銀行貨幣與中央銀行貨幣,能否改善高金額的跨境結算([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "全球支付體系正在分裂"))。
 > - **經濟學是運營層面的。** 當豐富的資料遺失、合規檢查變為人工作業、流動性被時區困住、調查需要人工修補時,跨境支付在經濟上就會失敗。
@@ -121,7 +121,7 @@ BIS CPMI 在 2026 年 4 月的簡報中,將 ISO 20022 描述為一種跨支付�
 
 結算窗口之所以重要,是因為全球大額支付要跨越時區。Fabio Panetta 在 2026 年 5 月於 BIS 的演講,將國家支付基礎設施定位為改革的座標,包括擴大結算窗口與全面採用 ISO 20022([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "互聯互通以求穩定:分裂世界中的跨境支付"))。
 
-英格蘭銀行翻新的 RTGS 服務指向同一方向。它強調韌性、更廣泛的准入、互通性,以及一個可與其他帳本互通、能降低結算風險與流動性成本的同步結算介面([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "翻新的 RTGS 服務——關鍵效益"))。
+英格蘭銀行翻新的 RTGS 服務指向同一方向。它強調韌性、更廣泛的准入、互通性,以及一個可與其他帳本互通、能降低結算風險與流動性成本的同步結算介面([Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "翻新的 RTGS 服務——關鍵效益"))。
 
 ### 3. 非銀行准入改變競爭結構
 
@@ -202,7 +202,7 @@ FSB 表示,已取得進展,但 2027 年的目標尚未步入正軌,仍需公部�
 
 **RTGS 翻新的角色為何?**
 
-RTGS 翻新提升了韌性、准入、互通性與結算功能。英格蘭銀行亦強調,同步結算介面與 ISO 20022 是降低結算風險與流動性成本的機制([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "翻新的 RTGS 服務——關鍵效益"))。
+RTGS 翻新提升了韌性、准入、互通性與結算功能。英格蘭銀行亦強調,同步結算介面與 ISO 20022 是降低結算風險與流動性成本的機制([Bank of England](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "翻新的 RTGS 服務——關鍵效益"))。
 
 **穩定幣會取代大額支付嗎?**
 
@@ -213,5 +213,5 @@ RTGS 翻新提升了韌性、准入、互通性與結算功能。英格蘭銀行
 - BIS CPMI,(2026)。[金融訊息傳遞的未來:駕馭 ISO 20022 遷移之旅 ⧉](https://www.bis.org/cpmi/publ/brief11.htm "BIS CPMI Brief No 11")。
 - FSB,(2026)。[改革跨境支付——FSB Payments Summit 主題演講 ⧉](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "FSB")。
 - BIS,(2026)。[互聯互通以求穩定:分裂世界中的跨境支付 ⧉](https://www.bis.org/cpmi/speeches/sp260505.pdf "Fabio Panetta 演講")。
-- Bank of England,(2026)。[翻新的 RTGS 服務——關鍵效益 ⧉](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Bank of England")。
+- Bank of England,(2026)。[翻新的 RTGS 服務——關鍵效益 ⧉](https://web.archive.org/web/20260610190607/https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Bank of England")。
 - Atlantic Council,(2026)。[全球支付體系正在分裂——G20 可以做什麼 ⧉](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "Atlantic Council")。

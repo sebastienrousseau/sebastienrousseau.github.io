@@ -225,7 +225,7 @@ Cinci luni sunt suficiente pentru a livra un profil de mesaj mai strict decât C
 
 ## Concluzie
 
-Termenul din noiembrie 2026 este partea ușoară. Partea grea este ceea ce forțează termenul. Băncile care ajung la timp tratând încă pain.001 ca pe o problemă de traducere își vor petrece următorul deceniu reconstruind modelul lor de date de trezorerie de la fir înspre interior. Băncile care ajung cu o schemă canonică ISO-first, adrese structurate implicit și un plan de control al lichidității programabile care consumă pacs.008 direct vor opera trezorerie agentică sub răspunderea consiliului prevăzută la DORA Articolul 5, disciplina riscului operațional [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalizarea reformelor post-criză") și guvernanța de model [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Ghidul SR 11-7 privind managementul riscului de model").
+Termenul din noiembrie 2026 este partea ușoară. Partea grea este ceea ce forțează termenul. Băncile care ajung la timp tratând încă pain.001 ca pe o problemă de traducere își vor petrece următorul deceniu reconstruind modelul lor de date de trezorerie de la fir înspre interior. Băncile care ajung cu o schemă canonică ISO-first, adrese structurate implicit și un plan de control al lichidității programabile care consumă pacs.008 direct vor opera trezorerie agentică sub răspunderea consiliului prevăzută la DORA Articolul 5, disciplina riscului operațional [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalizarea reformelor post-criză") și guvernanța de model [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Ghidul SR 11-7 privind managementul riscului de model").
 
 Încadrarea ca sistem nervos autonom nu este decorativă. Trezoreria nu poate raționa asupra lichidității pe care nu o poate vedea. Agenții nu pot acționa asupra datelor pe care nu le pot parsa. ISO 20022 este cablajul trezoreriei CIB în 2026 — mesajul structurat este potențialul de acțiune, schema este pista de audit pe care reglementatorul o va cere dimineața după următorul incident.
 
@@ -241,7 +241,7 @@ Parlamentul European și Consiliul (2022). *Regulamentul (UE) 2022/2554 privind 
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. Disponibil la: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "Recomandările FATF")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Disponibil la: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Ghidul SR 11-7 privind managementul riscului de model")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Disponibil la: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Ghidul SR 11-7 privind managementul riscului de model")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. Disponibil la: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Schema universală de mesaje pentru industria financiară")
 

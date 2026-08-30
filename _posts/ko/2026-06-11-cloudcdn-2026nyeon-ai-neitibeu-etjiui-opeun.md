@@ -204,7 +204,7 @@ CloudCDN은 그 비대칭을 세 가지 메커니즘 위에 구축된, 완전히
 
 CloudCDN은 글로벌 금융 부문의 컴플라이언스 기준을 충족하도록 설계되었으며, 기술적 엣지 운영을 감독기관이 실제로 검사하는 프레임워크에 직접 매핑합니다:
 
-- **모델 리스크 관리 ([미 연준 SR 11-7 ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "모델 리스크 관리에 관한 감독 지침") / 영국 PRA SS1/23).** 운영 업무를 실행하는 자율 모델은 모델 리스크 거버넌스의 적용 대상입니다. CloudCDN의 MCP 게이트웨이는 에이전틱 도구를 정량 모델처럼 다룹니다. 엄격한 정책 경계, 실시간 로깅, 고영향 작업에 대한 필수 휴먼 인 더 루프 승인이 그것입니다.
+- **모델 리스크 관리 ([미 연준 SR 11-7 ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "모델 리스크 관리에 관한 감독 지침") / 영국 PRA SS1/23).** 운영 업무를 실행하는 자율 모델은 모델 리스크 거버넌스의 적용 대상입니다. CloudCDN의 MCP 게이트웨이는 에이전틱 도구를 정량 모델처럼 다룹니다. 엄격한 정책 경계, 실시간 로깅, 고영향 작업에 대한 필수 휴먼 인 더 루프 승인이 그것입니다.
 - **BCBS 239 (리스크 데이터 집계).** 트랜잭션 데이터를 엣지에서 수집·태깅·구조화함으로써 운영 지표가 실시간으로 생성됩니다. 이는 데이터 무결성, 적시성, 규제 추적 가능성에 대한 BCBS 239 요구사항에 부합합니다.
 - **DORA 제5조 (이사회 책임).** 이사회는 운영 회복탄력성에 대해 최종적인 개인 책임을 집니다. CloudCDN은 엣지 텔레메트리를 비기술 이사도 개인 책임 감사에 가져갈 수 있는 정량화되고 검증 가능한 증거로 전환합니다.
 - **Basel III 운영 리스크 자본.** 은행은 운영 리스크에 대해 규제 자본을 적립합니다. 자동화된 재해 복구 페일오버와 SLSA Level 3 출처 증명은 기관의 운영 리스크 프로파일을 낮춥니다. 감사를 통과하는 데 그치지 않고, 대차대조표 위의 자본을 보존하는 것입니다.
@@ -256,7 +256,7 @@ MCP로 제어되는 운영과 에이전트 인식형 통제 모델입니다. 인
 
 - European Parliament and Council of the European Union, (2022). [금융 부문 디지털 운영 회복탄력성에 관한 규정 (EU) 2022/2554 (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "금융 부문 디지털 운영 회복탄력성에 관한 규정 (EU) 2022/2554 (DORA)"). 브뤼셀: 유럽연합 관보.
 - Basel Committee on Banking Supervision (BCBS), (2013). [효과적인 리스크 데이터 집계 및 리스크 보고 원칙 (BCBS 239) ⧉](https://www.bis.org/publ/bcbs239.htm "효과적인 리스크 데이터 집계 및 리스크 보고 원칙 (BCBS 239)"). 바젤: 국제결제은행.
-- Board of Governors of the Federal Reserve System, (2011). [모델 리스크 관리에 관한 감독 지침 (SR Letter 11-7) ⧉](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "모델 리스크 관리에 관한 감독 지침 (SR Letter 11-7)"). 워싱턴 D.C.: 연방준비제도.
+- Board of Governors of the Federal Reserve System, (2011). [모델 리스크 관리에 관한 감독 지침 (SR Letter 11-7) ⧉](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "모델 리스크 관리에 관한 감독 지침 (SR Letter 11-7)"). 워싱턴 D.C.: 연방준비제도.
 - Cloudflare, (2026). [Durable Objects 문서: 상태 기반 엣지 조율 ⧉](https://developers.cloudflare.com/durable-objects/ "Durable Objects 문서"). 샌프란시스코: Cloudflare.
 - Cloudflare, (2026). [MCP, 인증, Durable Objects로 AI 에이전트 구축하기 ⧉](https://blog.cloudflare.com/building-ai-agents-with-mcp-authn-authz-and-durable-objects/ "MCP, 인증, Durable Objects로 AI 에이전트 구축하기").
 - GitHub, (2026). [cloudcdn.pro 저장소 ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "cloudcdn.pro 저장소").

@@ -31,7 +31,7 @@ keywords: "ISO 20022 2026, నిర్మాణాత్మక చిరున�
 
 ## నవంబర్ 2025లో ఏమి మూసివేయబడింది మరియు ఏమి మూసివేయబడలేదు
 
-22 నవంబర్ 2025న సరిహద్దు-దాటి SWIFT కటోవర్ విలువ-మోసే సరిహద్దు-దాటి వినియోగం కోసం MT 103, MT 202, MT 202COV, MT 205 మరియు MT 205COVను ఉపసంహరించింది. SWIFT FINplus — ISO 20022 MXను మోసే InterAct-ఆధారిత సేవ — ఆ ప్రవాహాలకు ఏకైక మార్గంగా మారింది. అదే విండోలో CBPR+ దశ 1 తప్పనిసరి అయింది. ECB వద్ద ESMIG ఆపరేటర్ T2 మరియు T2S కోసం సంబంధిత మైగ్రేషన్‌లను ధృవీకరించింది; [బ్యాంక్ ఆఫ్ ఇంగ్లండ్ యొక్క CHAPS సేవ ⧉](https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS — Bank of England") జూన్ 2023లో పూర్తి MXపై స్థిరపడింది; ఫెడరల్ రిజర్వ్ మార్చి 2025లో Fedwire Funds Service మైగ్రేషన్‌ను పూర్తి చేసింది.
+22 నవంబర్ 2025న సరిహద్దు-దాటి SWIFT కటోవర్ విలువ-మోసే సరిహద్దు-దాటి వినియోగం కోసం MT 103, MT 202, MT 202COV, MT 205 మరియు MT 205COVను ఉపసంహరించింది. SWIFT FINplus — ISO 20022 MXను మోసే InterAct-ఆధారిత సేవ — ఆ ప్రవాహాలకు ఏకైక మార్గంగా మారింది. అదే విండోలో CBPR+ దశ 1 తప్పనిసరి అయింది. ECB వద్ద ESMIG ఆపరేటర్ T2 మరియు T2S కోసం సంబంధిత మైగ్రేషన్‌లను ధృవీకరించింది; [బ్యాంక్ ఆఫ్ ఇంగ్లండ్ యొక్క CHAPS సేవ ⧉](https://web.archive.org/web/20260610035348/https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS — Bank of England") జూన్ 2023లో పూర్తి MXపై స్థిరపడింది; ఫెడరల్ రిజర్వ్ మార్చి 2025లో Fedwire Funds Service మైగ్రేషన్‌ను పూర్తి చేసింది.
 
 ఏమి మూసివేయబడలేదు:
 
@@ -167,7 +167,7 @@ CBPR+ దశ 2 `<PstlAdr>` యొక్క నిర్మాణాత్మక 
 
 - SWIFT, (2025). [2025 ISO 20022 progress ⧉](https://www.swift.com/news-events/news/2025-iso-20022-progress "SWIFT 2025 progress").
 - SWIFT, (2025). [CBPR+ usage guidelines on MyStandards ⧉](https://www2.swift.com/mystandards/CBPR+/ "MyStandards CBPR+").
-- Bank of England, (2023). [CHAPS — Bank of England ⧉](https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS").
+- Bank of England, (2023). [CHAPS — Bank of England ⧉](https://web.archive.org/web/20260610035348/https://www.bankofengland.co.uk/payment-and-settlement/chaps "CHAPS").
 - European Central Bank, (2023). [TARGET Services consolidation ⧉](https://www.ecb.europa.eu/paym/target/consolidation/html/index.en.html "T2 / T2S consolidation").
 - Federal Reserve, (2025). [Fedwire Funds Service ISO 20022 implementation ⧉](https://www.frbservices.org/resources/financial-services/wires/iso-20022-implementation-center "Fedwire ISO 20022").
 - ISO, (2024). [ISO 20022 message catalogue ⧉](https://www.iso20022.org/iso-20022-message-definitions "ISO 20022 message definitions").

@@ -227,7 +227,7 @@ Five months is enough time to ship a stricter-than-CBPR+ message profile and rej
 
 ## Conclusion
 
-The November 2026 deadline is the easy part. The hard part is what the deadline forces. Banks that arrive on time still treating pain.001 as a translation problem will spend the next decade rebuilding their treasury data model from the wire inwards. Banks that arrive with an ISO-first canonical schema, structured addresses by default, and a programmable liquidity control plane that consumes pacs.008 directly will run agentic treasury under DORA Article 5 board accountability, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") operational-risk discipline, and [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management") model governance.
+The November 2026 deadline is the easy part. The hard part is what the deadline forces. Banks that arrive on time still treating pain.001 as a translation problem will spend the next decade rebuilding their treasury data model from the wire inwards. Banks that arrive with an ISO-first canonical schema, structured addresses by default, and a programmable liquidity control plane that consumes pacs.008 directly will run agentic treasury under DORA Article 5 board accountability, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") operational-risk discipline, and [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management") model governance.
 
 The autonomic nervous system framing is not decorative. Treasury cannot reason about liquidity it cannot see. Agents cannot act on data they cannot parse. ISO 20022 is the wiring of CIB treasury in 2026 — the structured message is the action potential, the schema is the audit trail the regulator will demand the morning after the next incident.
 
@@ -243,7 +243,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. Available at: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF Recommendations")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Available at: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. Available at: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. Available at: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Universal financial industry message scheme")
 

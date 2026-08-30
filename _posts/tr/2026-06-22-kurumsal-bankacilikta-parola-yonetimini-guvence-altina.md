@@ -323,7 +323,7 @@ Konuşlandır-ve-unut parola özetleme bitti. DORA, kriptografik pasifliği tekn
 
 ## Kaynaklar
 
-Basel Bankacılık Denetim Komitesi (2011). *Basel III: Daha dayanıklı bankalar ve bankacılık sistemleri için küresel bir düzenleyici çerçeve*. Uluslararası Ödemeler Bankası. Erişim: [https://www.bis.org/publ/bcbs189.pdf](https://www.bis.org/publ/bcbs189.pdf "Basel III: Daha dayanıklı bankalar ve bankacılık sistemleri için küresel bir düzenleyici çerçeve")
+Basel Bankacılık Denetim Komitesi (2011). *Basel III: Daha dayanıklı bankalar ve bankacılık sistemleri için küresel bir düzenleyici çerçeve*. Uluslararası Ödemeler Bankası. Erişim: [https://www.bis.org/publ/bcbs189.htm](https://www.bis.org/publ/bcbs189.htm "Basel III: Daha dayanıklı bankalar ve bankacılık sistemleri için küresel bir düzenleyici çerçeve")
 
 Biryukov, A., Dinu, D., Khovratovich, D. ve Josefsson, S. (2021). *RFC 9106: Parola Özetleme ve İş Kanıtı Uygulamaları için Argon2 Bellek-Zor İşlevi*. Internet Engineering Task Force. Erişim: [https://datatracker.ietf.org/doc/html/rfc9106](https://datatracker.ietf.org/doc/html/rfc9106 "RFC 9106 — Parola Özetleme için Argon2 Bellek-Zor İşlevi")
 

@@ -163,7 +163,7 @@ Yönetim kurulları artık beş soru sorar ve sayısal yanıt bekler.
 4. **Kurtarma eserlerinde PQC imzalama kapsamı nedir?** FIPS 203 / FIPS 204 altında imzalanan kasa anlık görüntülerinin, manifestlerin ve alanlar arası güven çapalarının yüzdesi.
 5. **Acil Durum Sermayesi Maliyeti (CoCC) nedir?** İkincil takas hesaplarında, sıcak muhabir bakiyelerinde ve önceden konumlandırılmış tokenleştirilmiş pozisyonlarda sıkışan atıl gün içi likiditenin günlük fırsat maliyeti; gecelik orana karşı ölçülür. Yönetim kurulu, bankanın dayanıklılık sigortasının kesin fiyatını görmeli ve işletim komitesi, sıkışmış sermaye ile kesinti toleransı arasındaki ödünleşimi savunmalıdır — en az üç ayda bir yenilenir.
 
-Bunlar, DORA Madde 6 kanıtına, SM&CR üst yönetici sorumluluk beyanlarına ve hangi rayın kazanacağına karar veren yönlendirme mantığı üzerindeki [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Model Risk Yönetimi Rehberi") model risk yönetişimine temiz biçimde eşlenen metriklerdir. Yönetim kurulu bir anlatıya değil; sabit bir tabanı olan üç aylık bir grafiğe ihtiyaç duyar.
+Bunlar, DORA Madde 6 kanıtına, SM&CR üst yönetici sorumluluk beyanlarına ve hangi rayın kazanacağına karar veren yönlendirme mantığı üzerindeki [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 — Model Risk Yönetimi Rehberi") model risk yönetişimine temiz biçimde eşlenen metriklerdir. Yönetim kurulu bir anlatıya değil; sabit bir tabanı olan üç aylık bir grafiğe ihtiyaç duyar.
 
 ## Sonuç
 

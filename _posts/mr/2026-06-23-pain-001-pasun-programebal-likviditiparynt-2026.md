@@ -120,7 +120,7 @@ CBPR+ प्रमाणीकरण नियम स्वतःच अटळ �
 
 ## निष्कर्ष
 
-नोव्हेंबर 2026 ची मुदत हा सोपा भाग आहे. अवघड भाग म्हणजे ती मुदत कशाची सक्ती करते. ज्या बँका वेळेवर पोहोचूनही अजून pain.001 ला भाषांतर-समस्या मानतात त्या पुढील दशक आपले ट्रेझरी डेटा-मॉडेल वायरपासून आतल्या बाजूला पुन्हा उभारण्यात घालवतील. ज्या बँका ISO-प्रथम कॅनोनिकल स्कीमा, डिफॉल्टने संरचित पत्ते आणि pacs.008 थेट वापरणारे प्रोग्रामेबल लिक्विडिटी नियंत्रण-तल घेऊन पोहोचतात त्या एजेंटिक ट्रेझरी DORA अनुच्छेद 5 मंडळ-जबाबदारी, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") परिचालन-जोखीम शिस्त आणि [SR 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management") मॉडेल-प्रशासनाखाली चालवतील.
+नोव्हेंबर 2026 ची मुदत हा सोपा भाग आहे. अवघड भाग म्हणजे ती मुदत कशाची सक्ती करते. ज्या बँका वेळेवर पोहोचूनही अजून pain.001 ला भाषांतर-समस्या मानतात त्या पुढील दशक आपले ट्रेझरी डेटा-मॉडेल वायरपासून आतल्या बाजूला पुन्हा उभारण्यात घालवतील. ज्या बँका ISO-प्रथम कॅनोनिकल स्कीमा, डिफॉल्टने संरचित पत्ते आणि pacs.008 थेट वापरणारे प्रोग्रामेबल लिक्विडिटी नियंत्रण-तल घेऊन पोहोचतात त्या एजेंटिक ट्रेझरी DORA अनुच्छेद 5 मंडळ-जबाबदारी, [Basel III](https://www.bis.org/bcbs/publ/d424.htm "Basel III: finalising post-crisis reforms") परिचालन-जोखीम शिस्त आणि [SR 11-7](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management") मॉडेल-प्रशासनाखाली चालवतील.
 
 स्वायत्त मज्जासंस्थेची चौकट सजावटीसाठी नाही. ट्रेझरी जी लिक्विडिटी पाहू शकत नाही तिच्याबद्दल तर्क करू शकत नाही. एजंट जो डेटा पार्स करू शकत नाही त्यावर कृती करू शकत नाहीत. 2026 मध्ये ISO 20022 हे CIB ट्रेझरीचे तारांचे जाळे आहे — संरचित संदेश ही क्रिया-क्षमता आहे, स्कीमा हा तो ऑडिट-माग आहे जो पुढच्या घटनेच्या दुसऱ्या सकाळी नियामक मागेल.
 
@@ -136,7 +136,7 @@ European Parliament and Council (2022). *Regulation (EU) 2022/2554 on digital op
 
 Financial Action Task Force (2023). *International standards on combating money laundering and the financing of terrorism — Recommendation 16 on wire transfers*. येथे उपलब्ध: [https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html "FATF Recommendations")
 
-Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. येथे उपलब्ध: [https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
+Federal Reserve (2011). *SR 11-7 Guidance on Model Risk Management*. येथे उपलब्ध: [https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm](https://web.archive.org/web/20260414150921/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "SR 11-7 Guidance on Model Risk Management")
 
 International Organization for Standardization (2022). *ISO 20022 Financial services — Universal financial industry message scheme*. येथे उपलब्ध: [https://www.iso20022.org](https://www.iso20022.org "ISO 20022 — Universal financial industry message scheme")
 
