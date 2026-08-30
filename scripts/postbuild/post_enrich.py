@@ -36,11 +36,12 @@ from pathlib import Path as _Path
 _sys.path.insert(0, str(_Path(__file__).resolve().parents[1] / "lib"))
 
 import re
-from datetime import date
 from pathlib import Path
 
+from _build_clock import build_today_iso
+
 POSTS = Path("_posts")
-TODAY = date.today().isoformat()
+TODAY = build_today_iso()
 DATED = re.compile(r"^\d{4}-\d{2}-\d{2}-.+\.md$")
 
 # H2 titles that are structural rather than substantive; skipped when

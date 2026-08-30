@@ -56,9 +56,9 @@ def _set_html_lang(shell: str) -> str:
 
 
 def _date_today() -> str:
-    from datetime import datetime as _dt
+    from _build_clock import build_today_iso
 
-    return _dt.now().strftime("%Y-%m-%d")
+    return build_today_iso()
 
 
 def translate_chrome(html: str) -> str:

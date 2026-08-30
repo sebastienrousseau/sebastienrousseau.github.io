@@ -40,6 +40,8 @@ import json as _json
 import re
 from pathlib import Path
 
+from _build_clock import build_now
+
 PUBLIC = Path("public")
 SITE = "https://sebastienrousseau.com"
 
@@ -386,7 +388,7 @@ def inject_news_article(
     if '"@type":"NewsArticle"' in html or '"@type": "NewsArticle"' in html:
         return html
     if now is None:
-        now = _dt.datetime.now(_dt.UTC)
+        now = build_now()
     graph = _news_article_graph(html, page, now)
     if graph is None:
         return html
