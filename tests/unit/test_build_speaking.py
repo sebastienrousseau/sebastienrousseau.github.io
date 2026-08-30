@@ -266,3 +266,141 @@ def test_breadcrumbs_jsonld_is_well_formed() -> None:
     payload = json.loads(out.split(">", 1)[1].rsplit("</script>", 1)[0])
     assert payload["@type"] == "BreadcrumbList"
     assert len(payload["itemListElement"]) >= 2
+
+
+# ---------------------------------------------------------------------------
+# The empty-section contract, for the stages not already covered above.
+#
+# Same rule as the case-study stages: absent data renders nothing. A section
+# with a heading and no content reads as missing data rather than data that
+# does not apply.
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.parametrize(
+    ("name", "call"),
+    [
+        ("work", lambda: bs._work({})),
+        ("media", lambda: bs._media({}, "/contact/")),
+        ("bios", lambda: bs._bios({})),
+        ("faq", lambda: bs._faq({})),
+        ("keynotes", lambda: bs._keynotes({}, "/contact/")),
+        ("final_cta", lambda: bs._final_cta({}, "/contact/")),
+    ],
+)
+def test_every_remaining_section_renders_nothing_when_its_data_is_absent(name, call) -> None:
+    """Each call is written out rather than guessed from the signature.
+
+    A first version caught TypeError and retried with an extra argument,
+    which fed "/contact/" to _biography as its BODY HTML — the section then
+    rendered, and the test failed for a reason that had nothing to do with
+    the contract it was checking.
+    """
+    assert call() == "", name
+
+
+def test_booking_renders_nothing_without_its_block() -> None:
+    assert bs._booking({}, "/contact/") == ""
+
+
+def test_biography_renders_nothing_without_body_html() -> None:
+    assert bs._biography({}, "") == ""
+
+
+# ---------------------------------------------------------------------------
+# Head patching — every mutation verifies it matched, and fails the build if
+# not. These guards exist because the shell is a fork of the articles hub: if
+# that markup changes, the page would otherwise ship with the articles hub's
+# title and social copy and nothing would say so.
+# ---------------------------------------------------------------------------
+
+
+_SHELL_HEAD = (
+    "<html><head>"
+    "<title>Articles</title>"
+    '<meta name="description" content="old">'
+    '<meta name="viewport" content="width=device-width">'
+    '<meta name="twitter:title" content="Articles">'
+    '<meta name="twitter:description" content="old">'
+    '<meta name="apple-mobile-web-app-title" content="Articles">'
+    "</head><body>b</body></html>"
+)
+
+
+def test_patch_head_rewrites_title_and_social_copy() -> None:
+    out = bs._patch_head(_SHELL_HEAD, "Speaking", "Speaking — SEO", "A description")
+    assert "<title>Speaking</title>" in out
+    assert 'content="Speaking — SEO"' in out
+    assert "A description" in out
+    assert "<body>b</body>" in out, "the body must be returned untouched"
+
+
+def test_patch_head_fails_loudly_without_a_head() -> None:
+    with pytest.raises(SystemExit, match="no </head>"):
+        bs._patch_head("<html><body>b</body></html>", "T", "S", "D")
+
+
+def test_patch_head_fails_loudly_without_a_title() -> None:
+    shell = _SHELL_HEAD.replace("<title>Articles</title>", "")
+    with pytest.raises(SystemExit, match="<title> not found"):
+        bs._patch_head(shell, "T", "S", "D")
+
+
+def test_patch_head_fails_loudly_without_twitter_title() -> None:
+    shell = _SHELL_HEAD.replace('<meta name="twitter:title" content="Articles">', "")
+    with pytest.raises(SystemExit, match="twitter:title not found"):
+        bs._patch_head(shell, "T", "S", "D")
+
+
+def test_patch_head_fails_loudly_without_twitter_description() -> None:
+    shell = _SHELL_HEAD.replace('<meta name="twitter:description" content="old">', "")
+    with pytest.raises(SystemExit, match="twitter:description not found"):
+        bs._patch_head(shell, "T", "S", "D")
+
+
+def test_patch_head_fails_loudly_if_stale_articles_copy_survives() -> None:
+    """The last-resort check: if the hub's marketing line is still in the
+    head after every rewrite, something upstream changed and the page would
+    ship advertising the wrong thing."""
+    shell = _SHELL_HEAD.replace(
+        "</head>", '<meta name="x" content="Discover How Technology"></head>'
+    )
+    with pytest.raises(SystemExit, match="stale articles copy"):
+        bs._patch_head(shell, "T", "S", "D")
+
+
+def test_patch_head_replaces_the_stale_web_app_title() -> None:
+    out = bs._patch_head(_SHELL_HEAD, "T", "S", "D")
+    assert 'name="apple-mobile-web-app-title" content="Sebastien Rousseau"' in out
+
+
+def test_patch_head_tolerates_an_absent_web_app_title() -> None:
+    """Absence means nothing stale to fix — not a reason to fail the build."""
+    shell = _SHELL_HEAD.replace('<meta name="apple-mobile-web-app-title" content="Articles">', "")
+    assert bs._patch_head(shell, "T", "S", "D")
+
+
+def test_patch_head_leaves_exactly_one_description_and_viewport() -> None:
+    shell = _SHELL_HEAD.replace(
+        "</head>",
+        '<meta name="description" content="dupe"><meta name="viewport" content="dupe"></head>',
+    )
+    out = bs._patch_head(shell, "T", "S", "D")
+    head = out[: out.find("</head>")]
+    assert head.count('name="description"') == 1
+    assert head.count('name="viewport"') == 1
+
+
+def test_patch_head_keeps_one_theme_color_per_media_condition() -> None:
+    """The light/dark pair is one set, not a duplicate — collapsing it to a
+    single tag would break the dark-mode colour."""
+    shell = _SHELL_HEAD.replace(
+        "</head>",
+        '<meta name="theme-color" content="#fff" media="(prefers-color-scheme: light)">'
+        '<meta name="theme-color" content="#000" media="(prefers-color-scheme: dark)">'
+        '<meta name="theme-color" content="#fff" media="(prefers-color-scheme: light)">'
+        "</head>",
+    )
+    out = bs._patch_head(shell, "T", "S", "D")
+    head = out[: out.find("</head>")]
+    assert head.count('name="theme-color"') == 2
