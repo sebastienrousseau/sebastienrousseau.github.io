@@ -649,9 +649,13 @@ def test_parse_iso_date_treats_naive_date_as_utc():
 
 
 def test_inject_news_article_defaults_now_to_wallclock(monkeypatch):
-    """When called without `now`, the injector falls back to the
-    real wall-clock so production calls don't have to thread time
-    through. Patch `datetime.now` so the test stays deterministic."""
+    """When called without `now`, the injector falls back to the build
+    clock so production calls don't have to thread time through.
+
+    The clock reads the wall clock unless SOURCE_DATE_EPOCH pins it, so
+    patch it there — a NewsArticle block that appears or disappears with
+    the hour is the same class of non-determinism that broke the
+    byte-identical rebuild. See scripts/lib/_build_clock.py."""
     page = sc.PUBLIC / "2026-06-02-x" / "index.html"
     html = _news_html(
         pub="2026-06-02T05:00:00+00:00",
@@ -664,7 +668,8 @@ def test_inject_news_article_defaults_now_to_wallclock(monkeypatch):
         def now(cls, tz=None):
             return pinned
 
-    monkeypatch.setattr(sc._dt, "datetime", _FrozenDatetime)
+    monkeypatch.delenv("SOURCE_DATE_EPOCH", raising=False)
+    monkeypatch.setattr("_build_clock.datetime", _FrozenDatetime)
     out = sc.inject_news_article(page, html)
     data = _extract_article_block(out, "NewsArticle")
     assert data["@type"] == "NewsArticle"

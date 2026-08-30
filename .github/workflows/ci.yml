@@ -512,6 +512,15 @@ jobs:
         # that is not idempotent; without this it measured the network.
         env:
           SKIP_METRICS_FETCH: '1'
+          # Pages with no `last_reviewed` in frontmatter — the category,
+          # topic, case-study and speaking listings — stamp today's date.
+          # Two builds that straddle midnight UTC therefore disagree, and
+          # this job failed exactly once that way (run 33281416595, built
+          # 23:37:39Z to 00:09:41Z) after passing on the same commit hours
+          # earlier. Pinning the build clock removes the wall clock as a
+          # variable so a real idempotence break is the only thing left
+          # that can fail here. See scripts/lib/_build_clock.py.
+          SOURCE_DATE_EPOCH: '1750000000'
         run: |
           ./build.sh >/dev/null
           mv public public.first

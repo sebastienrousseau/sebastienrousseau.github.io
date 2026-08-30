@@ -21,6 +21,8 @@ from typing import Any
 import rjsmin
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "lib"))
+from _build_clock import build_today_iso
 from postbuild_assets import _CDN_HOST, _build_cdn_transform_url
 from postbuild_lib._i18n import _all_active_non_en_langs, _slug_maps
 from postbuild_lib.hreflang import HREFLANG_LINK_RE, _resolve_en_slug
@@ -328,8 +330,6 @@ def build_comprehensive_lastmod_index() -> dict[str, str]:
 def update_last_modified_date(html: str, page: Path, ctx: Any) -> str:
     """Update `<meta itemprop="dateModified" content="..." id="last-modified" />`
     to the dynamic `last_reviewed` date from the source page's frontmatter."""
-    from datetime import date
-
     rel_parts = page.relative_to(PUBLIC).parts
     if len(rel_parts) > 1 and rel_parts[0] in ctx.translated_per_lang:
         lang = rel_parts[0]
@@ -344,7 +344,7 @@ def update_last_modified_date(html: str, page: Path, ctx: Any) -> str:
 
     new_date = ctx.last_reviewed_index.get(en_slug, "")
     if not new_date:
-        new_date = date.today().isoformat()
+        new_date = build_today_iso()
 
     return _LAST_MODIFIED_META_RE.sub(
         rf"\g<1>{new_date}\g<3>",
