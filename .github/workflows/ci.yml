@@ -223,7 +223,7 @@ jobs:
         # step above; here we only run it against the runtime deps.
         run: pip-audit --strict -r requirements.txt
 
-      - name: Whole-tree coverage ratchet (scripts/ >= 72 %)
+      - name: Whole-tree coverage ratchet (scripts/ >= 73 %)
         # A second, separate gate from the postbuild_lib one below: that gate
         # holds two packages at 100 %, this one stops the *rest* of scripts/
         # sliding backwards. It is a ratchet, not a target — raise the floor
@@ -234,7 +234,7 @@ jobs:
         run: |
           pytest tests/unit/ -q \
             --cov=scripts \
-            --cov-fail-under=72
+            --cov-fail-under=73
 
       - name: Unit tests + coverage gate (postbuild_lib 100 %)
         # Single pre-build pytest run with the postbuild_lib coverage gate.
