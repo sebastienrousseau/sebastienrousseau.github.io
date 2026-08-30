@@ -570,3 +570,206 @@ def test_collect_returns_every_rubric_category(monkeypatch: pytest.MonkeyPatch) 
     monkeypatch.setattr(qs, "run", lambda *a, **k: (0, ""))
     cats = qs.collect()
     assert [c.key for c in cats] == [c.key for c in qs.rubric()]
+
+
+# ---------------------------------------------------------------------------
+# measure_seo / measure_ux / measure_security — the page-walking measurements.
+#
+# These take a page list, so synthetic pages are enough; no build required.
+# Every subprocess is stubbed, including npm audit, so nothing shells out.
+# ---------------------------------------------------------------------------
+
+
+def _html(tmp: Path, rel: str, body: str) -> Path:
+    p = tmp / rel
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(body, encoding="utf-8")
+    return p
+
+
+GOOD_META = (
+    '<meta name="description" content="'
+    + "d" * 40
+    + '"><link rel="canonical" href="/"><meta property="og:title" content="t">'
+)
+
+
+def test_measure_seo_records_meta_coverage(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(qs, "PUBLIC", tmp_path)
+    monkeypatch.setattr(qs, "run", lambda *a, **k: (0, ""))
+    pages = [_html(tmp_path, "a/index.html", GOOD_META), _html(tmp_path, "b/index.html", "<html>")]
+    cat = _by_key("seo")
+    qs.measure_seo(cat, pages)
+    assert cat.metrics[0].value == 50.0  # description
+    assert cat.metrics[1].value == 50.0  # canonical
+    assert cat.metrics[2].value == 50.0  # og:title
+
+
+def test_measure_seo_parses_the_validator_and_link_audit_output(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """Both figures come from another tool's stdout, so the parse is the risk."""
+
+    def fake_run(cmd, cwd=None):
+        if "validate_jsonld.py" in " ".join(cmd):
+            return 0, "7 with structured-data errors"
+        return 0, "1234 checked, 5 broken"
+
+    monkeypatch.setattr(qs, "PUBLIC", tmp_path)
+    monkeypatch.setattr(qs, "run", fake_run)
+    cat = _by_key("seo")
+    qs.measure_seo(cat, [_html(tmp_path, "a/index.html", GOOD_META)])
+    assert cat.metrics[4].value == 7
+    assert cat.metrics[6].value == 5
+
+
+def test_measure_seo_leaves_metrics_unmeasured_when_output_is_unparseable(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """A changed output format must not invent a number."""
+    monkeypatch.setattr(qs, "PUBLIC", tmp_path)
+    monkeypatch.setattr(qs, "run", lambda *a, **k: (0, "unexpected output"))
+    cat = _by_key("seo")
+    qs.measure_seo(cat, [_html(tmp_path, "a/index.html", GOOD_META)])
+    assert cat.metrics[4].value == qs.UNMEASURED
+    assert cat.metrics[6].value == qs.UNMEASURED
+
+
+def test_measure_seo_reports_the_english_internal_link_median(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setattr(qs, "PUBLIC", tmp_path)
+    monkeypatch.setattr(qs, "run", lambda *a, **k: (0, ""))
+    pages = [
+        _html(
+            tmp_path,
+            f"2026-01-0{i}-post/index.html",
+            "<main>"
+            + "".join(f'<a href="/2026-02-0{j}-other/">x</a>' for j in range(1, 5))
+            + "</main>",
+        )
+        for i in (1, 2)
+    ]
+    cat = _by_key("seo")
+    qs.measure_seo(cat, pages)
+    assert cat.metrics[5].value == 4
+    assert "EN articles" in cat.metrics[5].detail
+    assert cat.metrics[7].value == 100.0  # both reached the >=4 threshold
+
+
+def test_measure_seo_declines_without_pages() -> None:
+    cat = _by_key("seo")
+    qs.measure_seo(cat, [])
+    assert all(m.value == qs.UNMEASURED for m in cat.metrics)
+
+
+def test_measure_ux_measures_compressed_not_raw_bytes(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """Raw bytes are not a quantity any reader experiences — production
+    serves gzip, and scoring uncompressed size is actively inverted."""
+    import gzip
+
+    body = "<html>" + ("a" * 50_000) + "</html>"
+    pages = [_html(tmp_path, f"p{i}/index.html", body) for i in range(3)]
+    monkeypatch.setattr(qs, "ROOT", tmp_path)
+    cat = _by_key("ux")
+    qs.measure_ux(cat, pages)
+    gz_kb = round(len(gzip.compress(body.encode(), 6)) / 1024, 1)
+    assert cat.metrics[0].value == gz_kb
+    assert cat.metrics[0].value < len(body) / 1024, "must be smaller than raw"
+    assert "gzip" in cat.metrics[0].detail
+
+
+def test_measure_ux_is_deterministic_across_runs(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """The sample uses a fixed seed so two runs on one tree agree."""
+    pages = [
+        _html(tmp_path, f"p{i}/index.html", f"<html>{'x' * (i * 100)}</html>") for i in range(20)
+    ]
+    monkeypatch.setattr(qs, "ROOT", tmp_path)
+    first, second = _by_key("ux"), _by_key("ux")
+    qs.measure_ux(first, pages)
+    qs.measure_ux(second, pages)
+    assert first.metrics[0].value == second.metrics[0].value
+
+
+def test_measure_ux_reports_shared_stylesheet_reach(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    pages = [
+        _html(tmp_path, "a/index.html", '<link href="/_csp/abc123.css">'),
+        _html(tmp_path, "b/index.html", '<link href="/_csp/abc123.css">'),
+        _html(tmp_path, "c/index.html", '<link href="/_csp/def456.css">'),
+    ]
+    monkeypatch.setattr(qs, "ROOT", tmp_path)
+    cat = _by_key("ux")
+    qs.measure_ux(cat, pages)
+    assert cat.metrics[2].value == round(100 * 2 / 3, 1)
+
+
+def test_measure_ux_checks_the_font_stylesheet(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    (tmp_path / "fonts").mkdir()
+    (tmp_path / "fonts" / "fonts.css").write_text(
+        "@font-face{font-display: swap; size-adjust: 100%;}", encoding="utf-8"
+    )
+    monkeypatch.setattr(qs, "ROOT", tmp_path)
+    cat = _by_key("ux")
+    qs.measure_ux(cat, [_html(tmp_path, "a/index.html", "<html>")])
+    assert cat.metrics[3].value is True
+
+
+def test_measure_security_counts_unsafe_inline_and_sri(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    pages = [
+        _html(tmp_path, "a/index.html", "<meta content=\"script-src 'unsafe-inline'\">"),
+        _html(tmp_path, "b/index.html", '<link rel="stylesheet" integrity="sha256-x">'),
+    ]
+    monkeypatch.setattr(qs, "PUBLIC", tmp_path)
+    monkeypatch.setattr(qs, "run", lambda *a, **k: (0, ""))
+    cat = _by_key("security")
+    qs.measure_security(cat, pages)
+    assert cat.metrics[0].value == 1  # one page with unsafe-inline
+    assert cat.metrics[1].value == 50.0  # one of two carries SRI
+
+
+def test_measure_security_counts_duplicate_integrity_attributes(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """A doubled integrity attribute is a real postbuild regression shape."""
+    page = _html(tmp_path, "a/index.html", '<link integrity="sha256-a" integrity="sha256-b">')
+    monkeypatch.setattr(qs, "PUBLIC", tmp_path)
+    monkeypatch.setattr(qs, "run", lambda *a, **k: (0, ""))
+    cat = _by_key("security")
+    qs.measure_security(cat, [page])
+    assert cat.metrics[2].value == 1
+
+
+def test_measure_security_notes_a_missing_sbom(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setattr(qs, "PUBLIC", tmp_path)
+    monkeypatch.setattr(qs, "run", lambda *a, **k: (0, ""))
+    cat = _by_key("security")
+    qs.measure_security(cat, [_html(tmp_path, "a/index.html", "<html>")])
+    assert cat.metrics[3].value is False
+    (tmp_path / "sbom.cdx.json").write_text("{}", encoding="utf-8")
+    cat2 = _by_key("security")
+    qs.measure_security(cat2, [_html(tmp_path, "a/index.html", "<html>")])
+    assert cat2.metrics[3].value is True
+
+
+def test_measure_security_counts_failing_npm_audits(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """Three ci-tools lockfiles are audited; a non-zero exit counts as one."""
+    monkeypatch.setattr(qs, "PUBLIC", tmp_path)
+    monkeypatch.setattr(qs, "run", lambda cmd, cwd=None: (1, "") if cmd[0] == "npm" else (0, ""))
+    cat = _by_key("security")
+    qs.measure_security(cat, [_html(tmp_path, "a/index.html", "<html>")])
+    assert cat.metrics[4].value == 3
+    assert "npm audit" in cat.metrics[4].detail

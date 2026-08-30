@@ -26,6 +26,7 @@ from __future__ import annotations
 import http.client
 import io
 import json
+import sys
 import urllib.error
 from pathlib import Path
 
@@ -446,3 +447,168 @@ def test_gemini_generate_returns_the_extracted_translation(
     )
     monkeypatch.setattr(gem, "_post_with_retries", lambda *a, **k: body)
     assert gem.gemini_generate("m", "p", 5, "KEY") == "bonjour"
+
+
+# ---------------------------------------------------------------------------
+# main() for both translators.
+#
+# Only the model call is stubbed. defect_paths, english_source_for, validate
+# and the file writes all run for real against a tmp tree, so what these
+# cover is the loop that decides which files to touch and what to write —
+# the part that can quietly translate the wrong file or write over a good
+# translation.
+# ---------------------------------------------------------------------------
+
+
+TRANSLATED = '---\ntitle: "Le titre"\n---\n\nLe corps traduit.\n'
+
+
+def _tree(tmp: Path, monkeypatch: pytest.MonkeyPatch, mod, *, defective: bool = True):
+    """A repo-shaped tmp tree with one English post and one locale stub."""
+    posts = tmp / "_posts"
+    (posts / "fr").mkdir(parents=True)
+    (posts / "2026-01-01-en.md").write_text(
+        '---\ntitle: "The Title"\n---\n\nThe English body.\n', encoding="utf-8"
+    )
+    body = "Translation pending" if defective else "Le corps."
+    (posts / "fr" / "2026-01-01-fr.md").write_text(
+        f'---\ntitle: "T"\n---\n\n{body}\n', encoding="utf-8"
+    )
+    monkeypatch.setattr(mod, "ROOT", tmp)
+    monkeypatch.setattr(olla, "ROOT", tmp)
+    monkeypatch.setattr(olla, "POSTS", posts)
+    monkeypatch.setattr(olla.audit_translations, "POSTS", posts)
+    monkeypatch.setattr(olla, "reverse_slug_map", lambda lang: {"2026-01-01-fr": "2026-01-01-en"})
+    return posts / "fr" / "2026-01-01-fr.md"
+
+
+def test_ollama_main_translates_a_defective_file(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    target = _tree(tmp_path, monkeypatch, olla)
+    monkeypatch.setattr(olla, "ollama_translate", lambda *a, **k: TRANSLATED)
+    monkeypatch.setattr(sys, "argv", ["translate_stubs_ollama", "--model", "m"])
+    assert olla.main() == 0
+    assert "Le corps traduit." in target.read_text(encoding="utf-8")
+    capsys.readouterr()
+
+
+def test_ollama_main_reports_when_nothing_matches(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    """A clean tree is a success, not an error."""
+    _tree(tmp_path, monkeypatch, olla, defective=False)
+    monkeypatch.setattr(sys, "argv", ["translate_stubs_ollama", "--model", "m"])
+    assert olla.main() == 0
+    assert "No incomplete locale posts" in capsys.readouterr().out
+
+
+def test_ollama_dry_run_writes_nothing(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    target = _tree(tmp_path, monkeypatch, olla)
+    before = target.read_text(encoding="utf-8")
+
+    def must_not_run(*_a, **_k):
+        raise AssertionError("--dry-run called the model")
+
+    monkeypatch.setattr(olla, "ollama_translate", must_not_run)
+    monkeypatch.setattr(sys, "argv", ["translate_stubs_ollama", "--model", "m", "--dry-run"])
+    assert olla.main() == 0
+    assert target.read_text(encoding="utf-8") == before
+    capsys.readouterr()
+
+
+def test_ollama_main_refuses_to_write_output_that_is_still_defective(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    """The whole point of validate(): a stub must not be laundered back in
+    with a fresh timestamp, looking like finished work."""
+    target = _tree(tmp_path, monkeypatch, olla)
+    before = target.read_text(encoding="utf-8")
+    monkeypatch.setattr(
+        olla, "ollama_translate", lambda *a, **k: '---\ntitle: "x"\n---\n\nTranslation pending\n'
+    )
+    monkeypatch.setattr(sys, "argv", ["translate_stubs_ollama", "--model", "m"])
+    with pytest.raises(ValueError, match="model output still contains"):
+        olla.main()
+    assert target.read_text(encoding="utf-8") == before
+    capsys.readouterr()
+
+
+def test_ollama_main_honours_the_limit(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    posts = tmp_path / "_posts"
+    _tree(tmp_path, monkeypatch, olla)
+    (posts / "fr" / "2026-02-02-fr.md").write_text(
+        '---\ntitle: "T"\n---\n\nTranslation pending\n', encoding="utf-8"
+    )
+    (posts / "2026-02-02-en.md").write_text('---\ntitle: "T"\n---\n\nBody.\n', encoding="utf-8")
+    monkeypatch.setattr(
+        olla,
+        "reverse_slug_map",
+        lambda lang: {"2026-01-01-fr": "2026-01-01-en", "2026-02-02-fr": "2026-02-02-en"},
+    )
+    calls = {"n": 0}
+
+    def counting(*_a, **_k):
+        calls["n"] += 1
+        return TRANSLATED
+
+    monkeypatch.setattr(olla, "ollama_translate", counting)
+    monkeypatch.setattr(sys, "argv", ["translate_stubs_ollama", "--model", "m", "--limit", "1"])
+    assert olla.main() == 0
+    assert calls["n"] == 1
+    capsys.readouterr()
+
+
+def test_gemini_main_requires_a_key_unless_dry_running(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    _tree(tmp_path, monkeypatch, gem)
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.delenv("GEMINI_API_KEY_FILE", raising=False)
+    monkeypatch.setattr(sys, "argv", ["translate_stubs_gemini"])
+    with pytest.raises(SystemExit, match="GEMINI_API_KEY"):
+        gem.main()
+
+
+def test_gemini_dry_run_needs_no_key(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    _tree(tmp_path, monkeypatch, gem)
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.delenv("GEMINI_API_KEY_FILE", raising=False)
+    monkeypatch.setattr(sys, "argv", ["translate_stubs_gemini", "--dry-run"])
+    assert gem.main() == 0
+    capsys.readouterr()
+
+
+def test_gemini_main_writes_to_out_dir_without_touching_the_source(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    """--out-dir exists so a run can be reviewed before it overwrites work."""
+    target = _tree(tmp_path, monkeypatch, gem)
+    before = target.read_text(encoding="utf-8")
+    out = tmp_path / "out"
+    monkeypatch.setenv("GEMINI_API_KEY", "k")
+    monkeypatch.setattr(gem, "gemini_generate", lambda *a, **k: TRANSLATED)
+    monkeypatch.setattr(sys, "argv", ["translate_stubs_gemini", "--out-dir", str(out)])
+    assert gem.main() == 0
+    assert target.read_text(encoding="utf-8") == before, "source must be untouched"
+    written = list(out.rglob("*.md"))
+    assert written and "Le corps traduit." in written[0].read_text(encoding="utf-8")
+    capsys.readouterr()
+
+
+def test_gemini_main_overwrites_in_place_without_out_dir(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    target = _tree(tmp_path, monkeypatch, gem)
+    monkeypatch.setenv("GEMINI_API_KEY", "k")
+    monkeypatch.setattr(gem, "gemini_generate", lambda *a, **k: TRANSLATED)
+    monkeypatch.setattr(sys, "argv", ["translate_stubs_gemini"])
+    assert gem.main() == 0
+    assert "Le corps traduit." in target.read_text(encoding="utf-8")
+    capsys.readouterr()
