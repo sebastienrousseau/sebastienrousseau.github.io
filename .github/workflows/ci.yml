@@ -250,7 +250,7 @@ jobs:
             --cov=scripts/generators/build_translations \
             --cov-fail-under=100
 
-      - name: Whole-tree coverage ratchet (scripts/ >= 88 %)
+      - name: Whole-tree coverage ratchet (scripts/ >= 94 %)
         # Deliberately AFTER the build. A pre-build run skips every
         # SKIP_IF_NO_BUILD smoke test — 70 of them — so it measured 74 % while
         # the real figure with the build present is 88 %. Gating the pre-build
@@ -261,10 +261,17 @@ jobs:
         # perfect, this one stops the rest of scripts/ sliding back. A
         # ratchet, not a target — raise the floor when the number rises,
         # never lower it to make a change fit.
+        #
+        # 88 -> 94. Measured at 95 % over the full post-build suite; the floor
+        # sits one point under so an unrelated change does not fail on
+        # rounding. Do not read the gap as room to spend: the remaining 680
+        # statements are mostly network and subprocess orchestration, and the
+        # last few points would cost more in fixture machinery than they
+        # return in caught defects.
         run: |
           pytest tests/unit/ -q \
             --cov=scripts \
-            --cov-fail-under=88
+            --cov-fail-under=94
 
       - name: Internal-link audit
         run: python3 scripts/seo_and_audit/audit_links.py --base-dir public --strict-internal
