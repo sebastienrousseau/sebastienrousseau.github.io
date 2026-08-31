@@ -50,8 +50,12 @@ ignore = [
 
 [tool.ruff.lint.per-file-ignores]
 # Build scripts use top-level expressions extensively. Tests use asserts.
+# S311 in tests: a *seeded* random.Random is how a test pins a picker's
+# choice so the assertion is deterministic. That is the opposite of the
+# weak-randomness risk S311 exists to catch, and it never reaches security
+# code — the picker chooses a banner image.
 "scripts/*"      = ["S603", "S607"]
-"tests/*"        = ["S101", "S603", "S607", "PLR2004"]
+"tests/*"        = ["S101", "S603", "S607", "PLR2004", "S311"]
 
 [tool.ruff.lint.mccabe]
 max-complexity = 12
@@ -76,3 +80,41 @@ disallow_incomplete_defs = true
 warn_unused_ignores = true
 warn_redundant_casts = true
 exclude = '^(docs|public|audits)/'
+
+[tool.coverage.run]
+# Ported verbatim from a .coveragerc that was gitignored and untracked, so
+# every setting below applied on one machine and none of them reached CI.
+# pyproject.toml is the single source of truth: coverage reads exactly one
+# config file (.coveragerc, setup.cfg, tox.ini, then pyproject.toml) and does
+# NOT merge them, so a stray .coveragerc silently shadows all of this.
+source = ["scripts"]
+omit = [
+    "scripts/__pycache__/*",
+    "scripts/postbuild_lib/__pycache__/*",
+]
+parallel = true
+
+[tool.coverage.paths]
+# Maps a sandboxed copy of the tree back onto the real paths, so coverage
+# from tests that run inside tests/unit/conftest.py's disposable clone is
+# attributed to scripts/ rather than to a tmp directory.
+source = ["scripts", "*/scripts"]
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true
+# Structural boilerplate, excluded rather than tested. Reaching an
+# `if __name__ == "__main__":` block from inside pytest needs runpy tricks or
+# a subprocess, both of which exercise Python's module loader rather than any
+# logic here — every main() worth running is called directly by
+# tests/unit/test_builder_main_smoke.py instead.
+#
+# `exclude_also` ADDS to coverage's defaults (unlike `exclude_lines`, which
+# replaces them), so `# pragma: no cover` keeps working alongside this.
+#
+# This lives in pyproject.toml, not .coveragerc: that file is gitignored, so
+# it never reaches CI and any rule written there would apply locally only —
+# which is exactly how a local measurement drifts from the gate.
+exclude_also = [
+    '^if __name__ == .__main__.:$',
+]
