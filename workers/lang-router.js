@@ -130,7 +130,11 @@ export const CSP_DIRECTIVES = [
   "script-src 'self' 'unsafe-inline' 'inline-speculation-rules' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com",
   "frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com",
   "connect-src 'self' https://cloudcdn.pro https://www.google.com https://open.spotify.com",
-  "img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co",
+  // https://img.shields.io serves the status badges in the README that the
+  // /draft/ documentation site renders on its landing page. Without it the
+  // markup is correct and the images return 200, but the browser refuses to
+  // load them and the badges show as empty space with no server-side error.
+  "img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co https://img.shields.io",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com",
   "media-src 'self' https://p.scdn.co https://*.scdn.co",
@@ -275,7 +279,7 @@ import { tryPDF } from './pdf-proxy.js';
 //   * 2023-10-09 article: ``/(<lang>/)?2023-10-09-shokunin-<rest>``
 //     redirects to the same path with the ``shokunin-`` segment
 //     dropped (matches the rename in PR #N).
-//   * ``made-with-shokunin`` credit page + its 27 localized slug
+//   * ``made-with-ssg`` credit page + its 27 localized slug
 //     variants (each suffixed with ``-shokunin``) redirect to the
 //     ``-static-site-generator`` equivalent.
 export function trySlugRedirects(url) {
@@ -288,11 +292,11 @@ export function trySlugRedirects(url) {
     redirected.pathname = path.replace("2023-10-09-shokunin-", "2023-10-09-");
     return Response.redirect(redirected.toString(), 301);
   }
-  // ``made-with-shokunin`` (EN) and any localized variant ending in
+  // ``made-with-ssg`` (EN) and any localized variant ending in
   // ``-shokunin`` or ``-shokunin/`` (e.g. ``concu-avec-shokunin``,
   // ``gemaakt-met-shokunin``, ``hecho-con-shokunin``) redirect to
   // the ``-static-site-generator`` form.
-  if (path === "/made-with-shokunin" || path === "/made-with-shokunin/") {
+  if (path === "/made-with-ssg" || path === "/made-with-ssg/") {
     const redirected = new URL(url);
     redirected.pathname = "/made-with-static-site-generator/";
     return Response.redirect(redirected.toString(), 301);

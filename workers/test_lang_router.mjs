@@ -357,6 +357,11 @@ test('CSP header allows formspree submissions (the bug this PR fixes)', () => {
   assert.match(header, /form-action 'self' https:\/\/formspree\.io/);
 });
 
+test('CSP header allows shields.io badges (the /draft/ manual renders them)', () => {
+  const header = buildCspHeader();
+  assert.match(header, /img-src [^;]*https:\/\/img\.shields\.io/);
+});
+
 test('CSP header includes frame-ancestors none', () => {
   const header = buildCspHeader();
   assert.match(header, /frame-ancestors 'none'/);
@@ -745,8 +750,8 @@ test('trySlugRedirects: locale-prefixed 2023-10-09 article redirects', () => {
   );
 });
 
-test('trySlugRedirects: /made-with-shokunin/ → /made-with-static-site-generator/', () => {
-  const res = trySlugRedirects(new URL('https://x.example/made-with-shokunin/'));
+test('trySlugRedirects: /made-with-ssg/ → /made-with-static-site-generator/', () => {
+  const res = trySlugRedirects(new URL('https://x.example/made-with-ssg/'));
   assert.equal(res.status, 301);
   assert.equal(
     new URL(res.headers.get('location')).pathname,
@@ -754,8 +759,8 @@ test('trySlugRedirects: /made-with-shokunin/ → /made-with-static-site-generato
   );
 });
 
-test('trySlugRedirects: bare /made-with-shokunin (no trailing slash) also redirects', () => {
-  const res = trySlugRedirects(new URL('https://x.example/made-with-shokunin'));
+test('trySlugRedirects: bare /made-with-ssg (no trailing slash) also redirects', () => {
+  const res = trySlugRedirects(new URL('https://x.example/made-with-ssg'));
   assert.equal(res.status, 301);
   assert.equal(
     new URL(res.headers.get('location')).pathname,
@@ -783,7 +788,7 @@ test('trySlugRedirects: unrelated paths pass through (null)', () => {
 
 test('handler: shokunin URL redirects via the rebrand layer', async () => {
   resetLog();
-  const res = await callHandler(makeRequest('https://sebastienrousseau.com/made-with-shokunin/'));
+  const res = await callHandler(makeRequest('https://sebastienrousseau.com/made-with-ssg/'));
   assert.equal(res.status, 301);
   assert.equal(
     new URL(res.headers.get('location')).pathname,
