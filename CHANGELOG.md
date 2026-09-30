@@ -10,6 +10,16 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
+## [1.2.1] — Unreleased
+
+### Added
+
+- `GET /api/clock/hero-<light|dark>.svg` on the lang-router Worker
+  (`workers/clock.js`): serves the GitHub profile's hero SVG with its
+  wall clock set to London time and running, uncached so GitHub's
+  image proxy refetches it on each view. Falls back to a 302 to the
+  static SVG if the profile repository is unreachable.
+
 ## [1.2.0] — 2026-06-02
 
 Phase 1 Week 3 + Google News readiness + template hygiene.
