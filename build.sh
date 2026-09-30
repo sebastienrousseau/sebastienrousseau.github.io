@@ -146,8 +146,11 @@ python3 scripts/postbuild/backfill_permalink.py --dir _posts_build
 # it stays deterministic for the byte-identical rebuild gate.
 python3 scripts/postbuild/backfill_news_date.py --dir _posts_build
 
-# Compile the site from the temporary directory instead of _posts
-ssg --no-tag-pages -n=docs -c=_posts_build -t=_layouts -o=public
+# Compile the site from the temporary directory instead of _posts.
+# No `-n/--new`: until ssg 0.0.62 it only set an unrendered site_name, but
+# from 0.0.63 `--new NAME` scaffolds a fresh project and exits, so
+# `-n=docs` built nothing into public/.
+ssg --no-tag-pages -c=_posts_build -t=_layouts -o=public
 
 # Clean up the temporary directory
 rm -rf _posts_build
