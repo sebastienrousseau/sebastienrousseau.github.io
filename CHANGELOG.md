@@ -20,6 +20,14 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
   image proxy refetches it on each view. Falls back to a 302 to the
   static SVG if the profile repository is unreachable.
 
+### Security
+
+- `basic-ftp` in the Lighthouse CI tool is pinned to `^6.2.1` through an
+  npm override, clearing GHSA-c475-qrg2-pj4r (high: quadratic-time CPU
+  denial of service in `Client.list()`). It arrives through
+  `get-uri`, whose latest release still asks for 5.x; the `Client`
+  methods `get-uri` calls are unchanged in 6.x.
+
 ## [1.2.0] — 2026-06-02
 
 Phase 1 Week 3 + Google News readiness + template hygiene.
