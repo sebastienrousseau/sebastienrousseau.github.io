@@ -269,6 +269,9 @@ import { tryMCP } from './mcp.js';
 // service. Edge-cache immutable for 24h so repeat reads never touch
 // Fly. Falls back to client-side window.print() when 503.
 import { tryPDF } from './pdf-proxy.js';
+// Live wall clock for the GitHub profile README: /api/clock/hero-<theme>.svg
+// returns the profile's hero SVG with its hands set to London time.
+import { tryClock } from './clock.js';
 
 // Permanent slug redirects shipped with the Shokunin → Static Site
 // Generator rebrand. Returns a 301 Response when the URL matches the
@@ -350,6 +353,9 @@ export default {
     // Edge cached immutable for 24h.
     const pdfResponse = await tryPDF(request);
     if (pdfResponse) return pdfResponse;
+    // Profile clock — /api/clock/hero-<theme>.svg, uncached so it keeps time.
+    const clockResponse = await tryClock(request);
+    if (clockResponse) return clockResponse;
     // Permanent slug redirects from the Shokunin → Static Site
     // Generator rebrand. Runs before locale routing so the redirect
     // target hits the language flow on the new path.

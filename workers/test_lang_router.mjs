@@ -113,6 +113,25 @@ test('PDF /api/pdf/<slug>.pdf short-circuits locale routing', async () => {
   }
 });
 
+test('Clock /api/clock/hero-<theme>.svg short-circuits locale routing', async () => {
+  const realF = globalThis.fetch;
+  globalThis.fetch = async (input) => {
+    const url = typeof input === 'string' ? input : input.url;
+    if (url.endsWith('/assets/hero-light.svg')) {
+      return new Response('<svg><style>/*clock*/</style></svg>', { status: 200 });
+    }
+    return new Response('', { status: 502 });
+  };
+  try {
+    const res = await callHandler(new Request('https://sebastienrousseau.com/api/clock/hero-light.svg'));
+    assert.equal(res.status, 200);
+    assert.equal(res.headers.get('Content-Type'), 'image/svg+xml; charset=utf-8');
+    assert.match(await res.text(), /animation-play-state:running/);
+  } finally {
+    globalThis.fetch = realF;
+  }
+});
+
 // ---------------------------------------------------------------------------
 // isPageNavigation
 // ---------------------------------------------------------------------------

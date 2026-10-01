@@ -1,0 +1,7 @@
+# Standalone Worker for the GitHub profile clock (profile-clock.js).
+# Independent of lang-router: no routes on sebastienrousseau.com, no
+# bindings. It is reachable at https://profile-clock.<subdomain>.workers.dev.
+name = "profile-clock"
+main = "profile-clock.js"
+compatibility_date = "2026-05-16"
+workers_dev = true

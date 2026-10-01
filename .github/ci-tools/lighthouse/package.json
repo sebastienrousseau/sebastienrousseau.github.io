@@ -8,10 +8,11 @@
   },
   "overrides": {
     "@puppeteer/browsers": "^3.0.2",
-    "brace-expansion": "^5.0.9",
+    "brace-expansion": "^5.0.12",
     "cookie": "0.7.0",
-    "ip-address": "^10.3.1",
-    "js-yaml": "^3.15.1",
+    "ip-address": "^10.7.2",
+    "js-yaml": "^3.15.2",
+    "qs": "^6.16.0",
     "tmp": "0.2.7",
     "uuid": "11.1.1"
   }
