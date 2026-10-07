@@ -100,6 +100,6 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-![A white and blue building with blue windows](https://cloudcdn.pro/stocks/images/marek-piwnicki-11829333.webp).class=\"img-fluid clearfix\"
+<img alt="A white and blue building with blue windows" src="https://cloudcdn.pro/stocks/images/marek-piwnicki-11829333.webp" width="2584" height="1597" class="img-fluid clearfix" loading="lazy" decoding="async" />
 
 [[content]]

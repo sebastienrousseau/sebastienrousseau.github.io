@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid cat-grid">
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/euxis" title="Euxis"><img alt="Euxis logo" src="https://cloudcdn.pro/clients/euxis/v1/logos/euxis.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/euxis" title="Euxis" aria-label="Euxis"><img alt="Euxis logo" src="https://cloudcdn.pro/clients/euxis/v1/logos/euxis.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
 <h3><a href="https://github.com/sebastienrousseau/euxis" title="Euxis">Euxis</a></h3>
 <p class="newsroom-excerpt">A code security scanner for eight languages, combining static analysis, taint analysis, and LLM verification. Outputs Sigstore-signed SARIF, SBOM, and OpenVEX bundles for supply-chain review.</p>
@@ -114,7 +114,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/noyalib" title="noyalib"><img alt="noyalib logo" src="https://cloudcdn.pro/clients/noyalib/v1/logos/noyalib.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/noyalib" title="noyalib" aria-label="noyalib"><img alt="noyalib logo" src="https://cloudcdn.pro/clients/noyalib/v1/logos/noyalib.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
 <h3><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib">noyalib</a></h3>
 <p class="newsroom-excerpt">A pure-Rust YAML 1.2 implementation with zero unsafe code, serde support, and JSON-Schema validation.</p>
@@ -123,7 +123,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/static-site-generator" title="Static Site Generator"><img alt="Static Site Generator logo" src="https://cloudcdn.pro/clients/static-site-generator/v1/logos/static-site-generator.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/static-site-generator" title="Static Site Generator" aria-label="Static Site Generator"><img alt="Static Site Generator logo" src="https://cloudcdn.pro/clients/static-site-generator/v1/logos/static-site-generator.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
 <h3><a href="https://github.com/sebastienrousseau/static-site-generator" title="Static Site Generator">Static Site Generator</a></h3>
 <p class="newsroom-excerpt">The generator that builds this site, with WCAG AAA validation and CSP and SRI hardening.</p>
@@ -132,7 +132,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/libmake" title="LibMake"><img alt="LibMake logo" src="https://cloudcdn.pro/clients/libmake/v1/logos/libmake.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/libmake" title="LibMake" aria-label="LibMake"><img alt="LibMake logo" src="https://cloudcdn.pro/clients/libmake/v1/logos/libmake.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
 <h3><a href="https://github.com/sebastienrousseau/libmake" title="LibMake">LibMake</a></h3>
 <p class="newsroom-excerpt">A scaffold generator for Rust libraries, emitting tests, benchmarks, and CI configuration.</p>
@@ -141,7 +141,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://rustlogs.com/" title="RustLogs (RLG)"><img alt="RustLogs (RLG) logo" src="https://cloudcdn.pro/clients/rlg/v1/logos/rlg.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<a class="newsroom-card-media logo" href="https://rustlogs.com/" title="RustLogs (RLG)" aria-label="RustLogs (RLG)"><img alt="RustLogs (RLG) logo" src="https://cloudcdn.pro/clients/rlg/v1/logos/rlg.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
 <h3><a href="https://rustlogs.com/" title="RustLogs (RLG)">RustLogs (RLG)</a></h3>
 <p class="newsroom-excerpt">A logging library for Rust with structured formats and asynchronous logging.</p>
@@ -150,7 +150,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://serdeyml.com/" title="Serde YML"><img alt="Serde YML logo" src="https://cloudcdn.pro/clients/serde_yml/v1/logos/serde_yml.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<a class="newsroom-card-media logo" href="https://serdeyml.com/" title="Serde YML" aria-label="Serde YML"><img alt="Serde YML logo" src="https://cloudcdn.pro/clients/serde_yml/v1/logos/serde_yml.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
 <h3><a href="https://serdeyml.com/" title="Serde YML">Serde YML</a></h3>
 <p class="newsroom-excerpt">YAML serialisation and deserialisation for Rust data structures, built on Serde.</p>
@@ -159,7 +159,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/dtt" title="DateTime (DTT)"><img alt="DateTime (DTT) logo" src="https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/dtt" title="DateTime (DTT)" aria-label="DateTime (DTT)"><img alt="DateTime (DTT) logo" src="https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
 <h3><a href="https://github.com/sebastienrousseau/dtt" title="DateTime (DTT)">DateTime (DTT)</a></h3>
 <p class="newsroom-excerpt">A date and time library for Rust: ISO 8601 formatting and time-zone handling.</p>

@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid cat-grid">
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://kyberlib.com/" title="KyberLib"><img alt="KyberLib logo" src="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<a class="newsroom-card-media logo" href="https://kyberlib.com/" title="KyberLib" aria-label="KyberLib"><img alt="KyberLib logo" src="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
 <h3><a href="https://kyberlib.com/" title="KyberLib">KyberLib</a></h3>
 <p class="newsroom-excerpt">A Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for post-quantum key encapsulation.</p>
@@ -114,7 +114,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/hsh" title="Hash (HSH)"><img alt="Hash (HSH) logo" src="https://cloudcdn.pro/clients/hsh/v1/logos/hsh.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/hsh" title="Hash (HSH)" aria-label="Hash (HSH)"><img alt="Hash (HSH) logo" src="https://cloudcdn.pro/clients/hsh/v1/logos/hsh.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
 <h3><a href="https://github.com/sebastienrousseau/hsh" title="Hash (HSH)">Hash (HSH)</a></h3>
 <p class="newsroom-excerpt">Hash and digest algorithms for password storage and verification, written with a quantum-resistant posture in mind.</p>
@@ -123,7 +123,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://password-generator.pro" title="Password Generator Pro"><img alt="Password Generator Pro logo" src="https://cloudcdn.pro/clients/password-generator-pro/v1/logos/password-generator-pro.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<a class="newsroom-card-media logo" href="https://password-generator.pro" title="Password Generator Pro" aria-label="Password Generator Pro"><img alt="Password Generator Pro logo" src="https://cloudcdn.pro/clients/password-generator-pro/v1/logos/password-generator-pro.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
 <h3><a href="https://password-generator.pro" title="Password Generator Pro">Password Generator Pro</a></h3>
 <p class="newsroom-excerpt">A command-line tool for generating random passwords, backed by audited cryptographic primitives.</p>
@@ -132,7 +132,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/mini-functions" title="Mini Functions"><img alt="Mini Functions logo" src="https://cloudcdn.pro/clients/mini-functions/v1/logos/mini-functions.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/mini-functions" title="Mini Functions" aria-label="Mini Functions"><img alt="Mini Functions logo" src="https://cloudcdn.pro/clients/mini-functions/v1/logos/mini-functions.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
 <h3><a href="https://github.com/sebastienrousseau/mini-functions" title="Mini Functions">Mini Functions</a></h3>
 <p class="newsroom-excerpt">A utility and wrapper-function library for Rust, including hashing and claims primitives.</p>

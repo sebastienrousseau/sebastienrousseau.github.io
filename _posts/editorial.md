@@ -139,7 +139,7 @@ thanks: "Thanks for reading!"
 }
 </script>
 
-# Editorial standards
+## Editorial standards
 
 This page is the operative editorial policy for every article published on `sebastienrousseau.com`. It applies in every locale (`/fr/`, `/es/`, `/de/`, …) and remains in force until superseded by a dated revision. Every article links back here from its footer.
 

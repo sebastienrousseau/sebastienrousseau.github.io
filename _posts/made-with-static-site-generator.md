@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-<img alt="The Static Site Generator Banner" src="https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-static-site-generator.svg" class="w-50 p-3 me-3 float-end" />
+<img alt="The Static Site Generator Banner" src="https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-static-site-generator.svg" width="2128" height="628" class="w-50 p-3 me-3 float-end" />
 
 ## Embrace Static Site Generator for Effortless Website Creation
 

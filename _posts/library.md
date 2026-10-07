@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid newsroom-grid-tight">
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/topics/index.html" title="Banking topics">
+<a class="newsroom-card-media" href="/topics/index.html" title="Banking topics" aria-label="Banking topics">
 <img alt="Network nodes in a digital blue space" src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
@@ -119,7 +119,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/playlists/index.html" title="Playlists">
+<a class="newsroom-card-media" href="/playlists/index.html" title="Playlists" aria-label="Playlists">
 <img alt="A record player sitting on top of a table" src="https://cloudcdn.pro/stocks/images/tiachen-aier-d4ab9H_2WNA.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
@@ -130,7 +130,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/projects/index.html" title="Open source projects">
+<a class="newsroom-card-media" href="/projects/index.html" title="Open source projects" aria-label="Open source projects">
 <img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/declan-sun-pYLuh6fRdhw.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">

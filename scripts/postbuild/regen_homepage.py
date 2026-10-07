@@ -241,7 +241,7 @@ def _render_card(slug: str, year: int, month: int, day: int, fm: dict[str, str])
     tldr = _tldr_for(fm)
     return (
         f'<article class="newsroom-card">\n'
-        f'<a class="newsroom-card-media" href="{href}" title="{_esc(title)}">\n'
+        f'<a class="newsroom-card-media" href="{href}" title="{_esc(title)}" aria-label="{_esc(title)}">\n'
         f'<img alt="{_esc(banner_alt)}" src="{banner}" loading="lazy" decoding="async" width="600" height="600" />\n'
         f"</a>\n"
         f'<div class="newsroom-card-body">\n'

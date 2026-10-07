@@ -420,14 +420,18 @@ function fallbackCopy(text, done) {
 })();
 
 /**
- * Light / dark theme toggle.
- * The initial theme is set in <head> by theme-init.js before paint. This handler
- * flips the data-theme attribute and persists the choice in localStorage. We
- * also sync the meta[name="theme-color"] tag so iOS/macOS Safari recolours the
- * status bar.
+ * Colour-scheme control: three states, not two. "system" is the absence of
+ * data-theme, so a visitor can hand the choice back to the operating system;
+ * light and dark are set explicitly and persisted. theme-init.js restores a
+ * persisted choice in <head> before paint. The control is #mode-toggle with
+ * a #mode-state text that announces the current state; the icon is drawn by
+ * CSS so its box exists before this deferred script runs. The
+ * meta[name="theme-color"] tags are media-scoped, so no sync is needed.
  */
 (function () {
     "use strict";
+
+    var ORDER = ["system", "light", "dark"];
 
     function announce(message) {
         var live = document.getElementById("ap-live");
@@ -437,9 +441,7 @@ function fallbackCopy(text, done) {
             live.setAttribute("role", "status");
             live.setAttribute("aria-live", "polite");
             live.setAttribute("aria-atomic", "true");
-            live.style.cssText =
-                "position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;" +
-                "overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap";
+            live.className = "visually-hidden";
             document.body.appendChild(live);
         }
         // Clear then set, so the same message is re-announced on repeat toggles.
@@ -449,62 +451,68 @@ function fallbackCopy(text, done) {
         }, 16);
     }
 
-    function applyTheme(theme) {
-        var previous = document.documentElement.getAttribute("data-theme");
-        document.documentElement.setAttribute("data-theme", theme);
-        var meta = document.querySelector('meta[name="theme-color"]');
-        if (meta) {
-            meta.setAttribute("content", theme === "dark" ? "#000000" : "#fbfbfd");
-        }
-        document.querySelectorAll(".theme-toggle").forEach(function (btn) {
-            btn.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
-            btn.setAttribute(
-                "aria-label",
-                theme === "dark" ? "Switch to light theme" : "Switch to dark theme"
-            );
-        });
-        if (previous && previous !== theme) {
-            announce(theme === "dark" ? "Dark theme on." : "Light theme on.");
-        }
+    function currentMode() {
+        var set = document.documentElement.getAttribute("data-theme");
+        return set === "light" || set === "dark" ? set : "system";
     }
 
-    function currentTheme() {
-        return document.documentElement.getAttribute("data-theme") || "light";
+    function labelFor(mode, btn, state) {
+        if (mode === "system") {
+            return (state && state.getAttribute("data-label-system")) || "System";
+        }
+        return btn.getAttribute("data-label-" + mode) || (mode === "light" ? "Light theme" : "Dark theme");
     }
+
+    function setMode(mode, announceIt) {
+        if (mode === "system") {
+            document.documentElement.removeAttribute("data-theme");
+            try { localStorage.removeItem("theme"); } catch (e) { /* storage disabled */ }
+        } else {
+            document.documentElement.setAttribute("data-theme", mode);
+            try { localStorage.setItem("theme", mode); } catch (e) { /* storage disabled */ }
+        }
+        var btn = document.getElementById("mode-toggle");
+        if (!btn) return;
+        var state = document.getElementById("mode-state");
+        var label = labelFor(mode, btn, state);
+        if (state) state.textContent = label;
+        btn.setAttribute("aria-label", "Colour scheme: " + label);
+        if (announceIt) announce(label + " on.");
+    }
+
+    setMode(currentMode(), false);
 
     document.addEventListener("click", function (event) {
-        var btn = event.target.closest(".theme-toggle");
+        var btn = event.target.closest("#mode-toggle");
         if (!btn) return;
         event.preventDefault();
-        var next = currentTheme() === "dark" ? "light" : "dark";
-        try {
-            localStorage.setItem("theme", next);
-        } catch (e) {
-            /* ignore quota / disabled */
-        }
-        applyTheme(next);
+        setMode(ORDER[(ORDER.indexOf(currentMode()) + 1) % ORDER.length], true);
     });
+})();
 
-    // Sync once at boot so the toggle reflects whatever theme-init.js set.
-    applyTheme(currentTheme());
-
-    // Track OS-level changes when the user hasn't expressed a preference.
-    if (window.matchMedia) {
-        var media = window.matchMedia("(prefers-color-scheme: dark)");
-        var handler = function (e) {
-            try {
-                if (localStorage.getItem("theme")) return;
-            } catch (err) {
-                /* ignore */
-            }
-            applyTheme(e.matches ? "dark" : "light");
-        };
-        if (media.addEventListener) {
-            media.addEventListener("change", handler);
-        } else if (media.addListener) {
-            media.addListener(handler);
-        }
-    }
+/**
+ * Spotify players load on request. The playlist layout ships a link per
+ * player (the playlist on Spotify, usable without JavaScript); a click swaps
+ * it for the embed it describes, so the page carries no third-party frame
+ * until the visitor asks for one.
+ */
+(function () {
+    "use strict";
+    document.addEventListener("click", function (event) {
+        var link = event.target.closest(".pl-frame-load");
+        if (!link || !link.getAttribute("data-src")) return;
+        event.preventDefault();
+        var frame = document.createElement("iframe");
+        frame.className = "pl-frame";
+        frame.src = link.getAttribute("data-src");
+        frame.width = "100%";
+        frame.height = link.getAttribute("data-height") || "152";
+        frame.title = link.getAttribute("data-title") || "Spotify player";
+        frame.setAttribute("allow", link.getAttribute("data-allow") || "");
+        frame.setAttribute("loading", "lazy");
+        link.replaceWith(frame);
+        frame.focus();
+    });
 })();
 
 /**
@@ -784,16 +792,16 @@ function fallbackCopy(text, done) {
             // SVG with stale colors. CSS overrides using --ink / --bg-alt /
             // --border / --card / --accent follow the theme variable
             // switching at paint time and stay readable in either mode.
-            "[data-theme='dark'] pre.mermaid svg .actor rect, html:not([data-theme='light']) pre.mermaid svg .actor rect { fill: #161617 !important; stroke: #3a3a3c !important; }",
-            "[data-theme='dark'] pre.mermaid svg .actor text, [data-theme='dark'] pre.mermaid svg .actor tspan, html:not([data-theme='light']) pre.mermaid svg .actor text, html:not([data-theme='light']) pre.mermaid svg .actor tspan { fill: #f5f5f7 !important; }",
-            "[data-theme='dark'] pre.mermaid svg .actor-line, html:not([data-theme='light']) pre.mermaid svg .actor-line { stroke: #3a3a3c !important; }",
-            "[data-theme='dark'] pre.mermaid svg .messageLine0, [data-theme='dark'] pre.mermaid svg .messageLine1, html:not([data-theme='light']) pre.mermaid svg .messageLine0, html:not([data-theme='light']) pre.mermaid svg .messageLine1 { stroke: #b0b0b8 !important; fill: none !important; }",
-            "[data-theme='dark'] pre.mermaid svg .messageText, html:not([data-theme='light']) pre.mermaid svg .messageText { fill: #f5f5f7 !important; }",
-            "[data-theme='dark'] pre.mermaid svg .labelBox, html:not([data-theme='light']) pre.mermaid svg .labelBox { fill: #161617 !important; stroke: #3a3a3c !important; }",
-            "[data-theme='dark'] pre.mermaid svg .labelText, [data-theme='dark'] pre.mermaid svg .labelText tspan, html:not([data-theme='light']) pre.mermaid svg .labelText, html:not([data-theme='light']) pre.mermaid svg .labelText tspan { fill: #f5f5f7 !important; }",
-            "[data-theme='dark'] pre.mermaid svg .note rect, html:not([data-theme='light']) pre.mermaid svg .note rect { fill: #1d1d1f !important; stroke: #3a3a3c !important; }",
-            "[data-theme='dark'] pre.mermaid svg .note text, [data-theme='dark'] pre.mermaid svg .note tspan, html:not([data-theme='light']) pre.mermaid svg .note text, html:not([data-theme='light']) pre.mermaid svg .note tspan { fill: #f5f5f7 !important; }",
-            "[data-theme='dark'] pre.mermaid svg marker path, [data-theme='dark'] pre.mermaid svg marker polygon, html:not([data-theme='light']) pre.mermaid svg marker path, html:not([data-theme='light']) pre.mermaid svg marker polygon { fill: #b0b0b8 !important; stroke: #b0b0b8 !important; }",
+            "[data-theme='dark'] pre.mermaid svg .actor rect { fill: #161617 !important; stroke: #3a3a3c !important; }",
+            "[data-theme='dark'] pre.mermaid svg .actor text, [data-theme='dark'] pre.mermaid svg .actor tspan { fill: #f5f5f7 !important; }",
+            "[data-theme='dark'] pre.mermaid svg .actor-line { stroke: #3a3a3c !important; }",
+            "[data-theme='dark'] pre.mermaid svg .messageLine0, [data-theme='dark'] pre.mermaid svg .messageLine1 { stroke: #b0b0b8 !important; fill: none !important; }",
+            "[data-theme='dark'] pre.mermaid svg .messageText { fill: #f5f5f7 !important; }",
+            "[data-theme='dark'] pre.mermaid svg .labelBox { fill: #161617 !important; stroke: #3a3a3c !important; }",
+            "[data-theme='dark'] pre.mermaid svg .labelText, [data-theme='dark'] pre.mermaid svg .labelText tspan { fill: #f5f5f7 !important; }",
+            "[data-theme='dark'] pre.mermaid svg .note rect { fill: #1d1d1f !important; stroke: #3a3a3c !important; }",
+            "[data-theme='dark'] pre.mermaid svg .note text, [data-theme='dark'] pre.mermaid svg .note tspan { fill: #f5f5f7 !important; }",
+            "[data-theme='dark'] pre.mermaid svg marker path, [data-theme='dark'] pre.mermaid svg marker polygon { fill: #b0b0b8 !important; stroke: #b0b0b8 !important; }",
             "@media (prefers-color-scheme: dark) { html:not([data-theme='light']) pre.mermaid svg .actor rect { fill: #161617 !important; stroke: #3a3a3c !important; } html:not([data-theme='light']) pre.mermaid svg .actor text, html:not([data-theme='light']) pre.mermaid svg .actor tspan { fill: #f5f5f7 !important; } html:not([data-theme='light']) pre.mermaid svg .messageText { fill: #f5f5f7 !important; } html:not([data-theme='light']) pre.mermaid svg .note rect { fill: #1d1d1f !important; stroke: #3a3a3c !important; } html:not([data-theme='light']) pre.mermaid svg .note text, html:not([data-theme='light']) pre.mermaid svg .note tspan { fill: #f5f5f7 !important; } html:not([data-theme='light']) pre.mermaid svg marker path { fill: #b0b0b8 !important; stroke: #b0b0b8 !important; } html:not([data-theme='light']) pre.mermaid svg .messageLine0, html:not([data-theme='light']) pre.mermaid svg .messageLine1 { stroke: #b0b0b8 !important; fill: none !important; } }",
             "pre.mermaid svg .actor rect { fill: var(--bg-alt, #fafafc) !important; stroke: var(--border, #3a3a3e) !important; }",
             "pre.mermaid svg .actor text, pre.mermaid svg .actor tspan { fill: var(--ink, #111111) !important; }",

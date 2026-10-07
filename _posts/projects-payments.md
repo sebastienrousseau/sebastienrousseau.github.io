@@ -105,7 +105,7 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid cat-grid">
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://pain001.com" title="pain001"><img alt="pain001 logo" src="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<a class="newsroom-card-media logo" href="https://pain001.com" title="pain001" aria-label="pain001"><img alt="pain001 logo" src="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
 <h3><a href="https://pain001.com" title="pain001">pain001</a></h3>
 <p class="newsroom-excerpt">Generates ISO 20022 pain.001 initiation files from CSV or SQLite. Includes an XLSX loader, an editor language server, and an MCP server.</p>
@@ -114,7 +114,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://pacs008.com/" title="pacs008"><img alt="pacs008 logo" src="https://cloudcdn.pro/clients/pacs008/v1/logos/pacs008.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<a class="newsroom-card-media logo" href="https://pacs008.com/" title="pacs008" aria-label="pacs008"><img alt="pacs008 logo" src="https://cloudcdn.pro/clients/pacs008/v1/logos/pacs008.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
 <h3><a href="https://pacs008.com/" title="pacs008">pacs008</a></h3>
 <p class="newsroom-excerpt">Generates, validates, parses, and audits pacs.008 bank-to-bank transfers, with JSON Schema and XSD validation and IBAN checks across 75 countries.</p>
@@ -123,7 +123,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/camt053" title="camt053"><img alt="camt053 logo" src="https://cloudcdn.pro/clients/camt053/v1/logos/camt053.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/camt053" title="camt053" aria-label="camt053"><img alt="camt053 logo" src="https://cloudcdn.pro/clients/camt053/v1/logos/camt053.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
 <h3><a href="https://github.com/sebastienrousseau/camt053" title="camt053">camt053</a></h3>
 <p class="newsroom-excerpt">Reads camt.053 bank-to-customer statements into structured data. Includes MT940 loading and XLSX export.</p>
@@ -132,7 +132,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/acmt001" title="acmt001"><img alt="acmt001 logo" src="https://cloudcdn.pro/clients/acmt001/v1/logos/acmt001.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/acmt001" title="acmt001" aria-label="acmt001"><img alt="acmt001 logo" src="https://cloudcdn.pro/clients/acmt001/v1/logos/acmt001.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
 <h3><a href="https://github.com/sebastienrousseau/acmt001" title="acmt001">acmt001</a></h3>
 <p class="newsroom-excerpt">Opens, maintains, closes, switches, and verifies bank accounts from plain data files.</p>
@@ -141,7 +141,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://bankstatementparser.com/" title="Bank Statement Parser"><img alt="Bank Statement Parser logo" src="https://cloudcdn.pro/clients/bankstatementparser/v1/logos/bankstatementparser.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
+<a class="newsroom-card-media logo" href="https://bankstatementparser.com/" title="Bank Statement Parser" aria-label="Bank Statement Parser"><img alt="Bank Statement Parser logo" src="https://cloudcdn.pro/clients/bankstatementparser/v1/logos/bankstatementparser.svg" loading="lazy" decoding="async" width="600" height="600" /></a>
 <div class="newsroom-card-body">
 <h3><a href="https://bankstatementparser.com/" title="Bank Statement Parser">Bank Statement Parser</a></h3>
 <p class="newsroom-excerpt">Turns bank statements in several formats, including PDFs, into one structured output for review.</p>
