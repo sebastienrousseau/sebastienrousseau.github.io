@@ -13,9 +13,13 @@ the test fixtures stable.
 
 from __future__ import annotations
 
+import importlib.abc
+import importlib.machinery
 import shutil
 import subprocess
 import sys
+import types
+import weakref
 from pathlib import Path
 
 import pytest
@@ -72,7 +76,10 @@ if str(SCRIPTS) not in sys.path:
 PUBLIC = ROOT / "public"
 _CLONED = ("public", "_posts", "_data", "_layouts")
 _sandbox: Path | None = None
-_repointed: set[str] = set()
+# Keyed by module object, not name: ``test_cli_smoke._import_fresh`` pops
+# and re-imports a module, and the fresh object must be repointed again.
+_repointed: weakref.WeakSet[types.ModuleType] = weakref.WeakSet()
+_sandbox_mp: pytest.MonkeyPatch | None = None
 
 
 def _clone_tree(src: Path, dst: Path) -> None:
@@ -108,6 +115,55 @@ def _repoint(mod: object, sandbox: Path, mp: pytest.MonkeyPatch) -> None:
         mp.setattr(mod, attr, sandbox if rel == Path(".") else sandbox / rel, raising=False)
 
 
+def _repoint_once(mod: types.ModuleType) -> None:
+    """Repoint a ``scripts/`` module the first time this object is seen."""
+    if _sandbox is None or _sandbox_mp is None or mod in _repointed:
+        return
+    f = getattr(mod, "__file__", None)
+    if not f or not f.startswith(str(SCRIPTS)):
+        return
+    _repointed.add(mod)
+    _repoint(mod, _sandbox, _sandbox_mp)
+
+
+class _RepointingLoader(importlib.abc.Loader):
+    """Runs a module, then repoints it before the importer gets it back.
+
+    Repointing at the next test's setup was too late for a module imported
+    and run inside one test body: ``gen_layouts.main()`` wrote into the real
+    ``_layouts/`` before any hook saw the module.
+    """
+
+    def __init__(self, inner: importlib.abc.Loader) -> None:
+        self._inner = inner
+
+    def create_module(self, spec):  # type: ignore[no-untyped-def]
+        return self._inner.create_module(spec)
+
+    def exec_module(self, module: types.ModuleType) -> None:
+        self._inner.exec_module(module)
+        _repoint_once(module)
+
+    def __getattr__(self, name: str):  # type: ignore[no-untyped-def]
+        return getattr(self._inner, name)
+
+
+class _RepointOnImport(importlib.abc.MetaPathFinder):
+    """Wraps the loader of every ``scripts/`` module imported in the session."""
+
+    def find_spec(self, fullname, path, target=None):  # type: ignore[no-untyped-def]
+        if _sandbox is None:
+            return None
+        spec = importlib.machinery.PathFinder.find_spec(fullname, path, target)
+        if spec is None or spec.loader is None or not (spec.origin or "").startswith(str(SCRIPTS)):
+            return None
+        spec.loader = _RepointingLoader(spec.loader)
+        return spec
+
+
+_FINDER = _RepointOnImport()
+
+
 @pytest.fixture(scope="session", autouse=True)
 def _sandboxed_working_tree(tmp_path_factory):
     """Run the whole unit session inside a disposable clone of the tree."""
@@ -123,9 +179,11 @@ def _sandboxed_working_tree(tmp_path_factory):
     mp = pytest.MonkeyPatch()
     mp.chdir(sandbox)
     _sandbox = sandbox
+    sys.meta_path.insert(0, _FINDER)
     try:
         yield sandbox
     finally:
+        sys.meta_path.remove(_FINDER)
         _sandbox = None
         _repointed.clear()
         mp.undo()
@@ -133,28 +191,24 @@ def _sandboxed_working_tree(tmp_path_factory):
 
 @pytest.hookimpl(trylast=True)
 def pytest_runtest_setup(item: pytest.Item) -> None:
-    """Repoint any ``scripts/`` module imported since the last test.
+    """Safety net: repoint any ``scripts/`` module not yet seen.
 
-    Modules are imported lazily inside tests, so this cannot be done once up
-    front. Each module is processed only on the run in which it first
-    appears, so the cost is bounded by the number of modules, not tests.
+    The import hook repoints a module as it is imported; this catches one
+    that was already in ``sys.modules`` before the sandbox started. Each
+    module object is processed once, so the cost is bounded by modules, not
+    tests.
     """
     if _sandbox is None:
         return
-    scripts_dir = str(SCRIPTS)
-    mp = item.config._sandbox_mp  # type: ignore[attr-defined]
-    for name, mod in list(sys.modules.items()):
-        if name in _repointed or mod is None:
-            continue
-        f = getattr(mod, "__file__", None)
-        if not f or not f.startswith(scripts_dir):
-            continue
-        _repointed.add(name)
-        _repoint(mod, _sandbox, mp)
+    for mod in list(sys.modules.values()):
+        if mod is not None:
+            _repoint_once(mod)
 
 
 def pytest_configure(config: pytest.Config) -> None:
-    config._sandbox_mp = pytest.MonkeyPatch()  # type: ignore[attr-defined]
+    global _sandbox_mp
+    _sandbox_mp = pytest.MonkeyPatch()
+    config._sandbox_mp = _sandbox_mp  # type: ignore[attr-defined]
 
 
 def pytest_unconfigure(config: pytest.Config) -> None:
