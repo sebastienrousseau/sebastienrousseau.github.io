@@ -53,6 +53,13 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
   `html_passes`, `schemas`, `navigation` and `redirects` lose their
   leading underscore (they are a cross-module API, not private state),
   and `build_translations/_pages.py` drops an `_LDJSON_RE` it never used.
+- lang-router Worker: a `pref-lang` cookie whose value is not valid
+  percent-encoding (`pref-lang=%`) made `decodeURIComponent` throw out of
+  the fetch handler, so every page navigation answered HTTP 500 for as long
+  as the 30-day cookie lived (reproduced live on 2026-10-06). An
+  undecodable cookie is now treated as unset and the canonical EN page is
+  served; `workers/test_lang_router.mjs` pins both the helper and the
+  handler path.
 
 ## [1.2.0] — 2026-06-02
 

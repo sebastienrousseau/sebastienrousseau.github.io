@@ -224,7 +224,18 @@ export function getCookie(cookieHeader, name) {
   if (!cookieHeader) return null;
   for (const part of cookieHeader.split(';')) {
     const [k, ...v] = part.trim().split('=');
-    if (k === name) return decodeURIComponent(v.join('='));
+    if (k !== name) continue;
+    // A cookie value is attacker- and accident-controlled input. A bare or
+    // truncated percent-escape (`pref-lang=%`, `%E0%A4%A`) makes
+    // decodeURIComponent throw URIError, which propagated out of fetch()
+    // and turned every page navigation into a Cloudflare 1101 / HTTP 500
+    // for as long as the 30-day cookie lived. Treat undecodable as unset:
+    // the visitor gets the canonical EN site, never an error page.
+    try {
+      return decodeURIComponent(v.join('='));
+    } catch {
+      return null;
+    }
   }
   return null;
 }

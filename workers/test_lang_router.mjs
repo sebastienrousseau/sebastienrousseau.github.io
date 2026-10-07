@@ -187,6 +187,31 @@ test('getCookie: missing name → null', () => {
   assert.equal(getCookie('other=value', 'pref-lang'), null);
 });
 
+test('getCookie: undecodable percent-escape → null, never throws', () => {
+  // Regression: decodeURIComponent('%') throws URIError, which escaped the
+  // fetch handler and served HTTP 500 to any visitor carrying such a cookie.
+  assert.equal(getCookie('pref-lang=%', 'pref-lang'), null);
+  assert.equal(getCookie('pref-lang=%E0%A4%A', 'pref-lang'), null);
+  // A well-formed escape on the same code path still decodes.
+  assert.equal(getCookie('pref-lang=zh%2Dhans', 'pref-lang'), 'zh-hans');
+});
+
+test('fetch: malformed pref-lang cookie serves the EN page, no 500', async () => {
+  const realF = globalThis.fetch;
+  globalThis.fetch = async () => new Response('ok', { status: 200 });
+  try {
+    const req = new Request('https://sebastienrousseau.com/about/', {
+      headers: { Cookie: 'pref-lang=%' },
+    });
+    const res = await handler.fetch(req, {}, { waitUntil() {} });
+    assert.equal(res.status, 200);
+    assert.equal(res.headers.get('Location'), null);
+    assert.ok(res.headers.get('Content-Security-Policy'));
+  } finally {
+    globalThis.fetch = realF;
+  }
+});
+
 test('getCookie: tolerates "=" inside cookie value', () => {
   assert.equal(getCookie('pref-lang=a=b', 'pref-lang'), 'a=b');
 });
