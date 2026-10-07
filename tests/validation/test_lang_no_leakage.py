@@ -50,6 +50,14 @@ _SCRIPT_RE = re.compile(r"<script\b[\s\S]*?</script>", re.IGNORECASE)
 _STYLE_RE = re.compile(r"<style\b[\s\S]*?</style>", re.IGNORECASE)
 _COMMENT_RE = re.compile(r"<!--[\s\S]*?-->")
 _LINK_LANG_MENU_RE = re.compile(r'<div class=["\']?ap-lang-menu[\s\S]*?</div>', re.IGNORECASE)
+# The breadcrumb's last item is the page's own title (content, like <title>
+# and og:title, which are already excluded); the earlier crumbs stay in scope.
+_CRUMB_CURRENT_RE = re.compile(r'<a href="[^"]*" aria-current="page">[\s\S]*?</a>', re.IGNORECASE)
+# The hero <h1> is the page title rendered outside <main>; content, like <title>.
+_H1_RE = re.compile(r"<h1\b[^>]*>[\s\S]*?</h1>", re.IGNORECASE)
+# The banner's alt text is "Banner for: <page title>"; the title is content,
+# the prefix is chrome and stays in scope.
+_BANNER_ALT_TITLE_RE = re.compile(r'(alt="Banner for:)[^"]*"', re.IGNORECASE)
 
 # Strings that legitimately appear in EN form in every language's
 # chrome — brand names, technical terms, proper nouns. These are
@@ -101,11 +109,20 @@ def _strip_chrome_noise(html: str) -> str:
     are content-driven and can legitimately contain EN technical
     terms ("Large Language Models", "Post-Quantum Cryptography", …)
     as substrings of phrases."""
+    # Comments first. The head comment that documents the CSP quotes a
+    # literal `<script type="application/ld+json">`; with scripts stripped
+    # first, that quoted tag opened a match running to the next real
+    # `</script>` and silently removed the rest of the head (about 10 KB of
+    # chrome per page) from the scan. Measured on 2026-10-06: 7,078 bytes
+    # scanned with the comment present against 17,405 without it.
+    html = _COMMENT_RE.sub("", html)
     html = _MAIN_RE.sub("", html)
     html = _SCRIPT_RE.sub("", html)
     html = _STYLE_RE.sub("", html)
-    html = _COMMENT_RE.sub("", html)
     html = _LINK_LANG_MENU_RE.sub("", html)
+    html = _CRUMB_CURRENT_RE.sub("", html)
+    html = _H1_RE.sub("", html)
+    html = _BANNER_ALT_TITLE_RE.sub(r'\1"', html)
     # Strip per-page content metadata
     html = _META_DESC_RE.sub("", html)
     html = _META_KEYWORDS_RE.sub("", html)
