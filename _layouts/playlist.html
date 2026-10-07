@@ -20,7 +20,7 @@
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
-    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+    <!-- Strict CSP. Inline JSON-LD script blocks
          are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
          of each block at build time and injects the 'sha256-<base64>' tokens
          into script-src below before the file is served. Browsers will then
@@ -2388,7 +2388,7 @@
 
       <main id="main" class="content ap-section">
         <div class="wrap">
-          <div class="playlist-intro" data-reveal>{{content}}</div>
+          <div class="playlist-intro" data-reveal>{{!content}}</div>
           <div class="playlist-platforms" data-reveal>
 <p class="playlist-platforms-label">The full collection is on Apple Music too</p>
 <a class="pl-badge playlist-platform-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="me noopener" aria-label="Listen on Apple Music">
@@ -3165,7 +3165,7 @@ playlists arrive on their own.</p>
       "description": "AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.",
       "publisher": {"@id": "https://sebastienrousseau.com/#organization"},
       "author": {"@id": "https://sebastienrousseau.com/#person"},
-      "inLanguage": "en-GB"
+      "inLanguage": "{{language}}"
     },
     {
       "@type": "ProfilePage",
@@ -3173,7 +3173,7 @@ playlists arrive on their own.</p>
       "mainEntity": {"@id": "https://sebastienrousseau.com/#person"},
       "name": "Sebastien Rousseau: AI, Banking & Financial Services Expert",
       "url": "https://sebastienrousseau.com/",
-      "inLanguage": "en-GB"
+      "inLanguage": "{{language}}"
     }
   ]
 }

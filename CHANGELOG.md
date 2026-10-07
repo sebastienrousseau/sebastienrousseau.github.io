@@ -45,6 +45,12 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
   actually moves (the Dependabot PR bumped only `requirements-dev.txt`
   and failed the lock-consistency test).
 - GitHub Actions: `github/codeql-action` 4.37.9 -> 4.38.2 (Dependabot #491).
+- The twelve layouts now come from the `sebastienrousseau` theme in
+  ssg-themes.github.io, flattened with `make theme-sync` (ADR-0014). Two
+  template-level changes, `{{!content}}` for `{{content}}` and
+  `{{language}}` for the hard-coded JSON-LD `en-GB`, leave every rendered
+  page identical; the head comment that documents the CSP no longer quotes
+  a literal script tag that three comment-blind scanners read as a block.
 
 ### Fixed
 

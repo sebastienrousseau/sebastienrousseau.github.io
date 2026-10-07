@@ -1,4 +1,4 @@
-.PHONY: bootstrap build serve regenerate audit audit-external validate test-search-index test-i18n clean test lint typecheck sbom coverage publish-today verify
+.PHONY: bootstrap build serve theme-sync regenerate audit audit-external validate test-search-index test-i18n clean test lint typecheck sbom coverage publish-today verify
 
 # Single source of truth for the ssg pin, parsed straight out of the CI
 # workflow so `make bootstrap` can never install a version CI would reject.
@@ -15,7 +15,17 @@ build:
 serve:
 	@./build.sh --serve
 
+# Refresh _layouts/ from the theme (ADR-0014). THEME_DIR points at a checkout
+# of ssg-themes.github.io; the flattened files are committed here so a build
+# never needs that checkout.
+THEME_DIR ?= ../ssg-themes.github.io/themes/sebastienrousseau
+theme-sync:
+	@test -d "$(THEME_DIR)/_layouts" || { echo "theme not found at $(THEME_DIR) (set THEME_DIR)"; exit 1; }
+	@python3 "$(THEME_DIR)/tools/flatten.py" --site "$(THEME_DIR)/_layouts" _layouts
+	@git --no-pager diff --stat -- _layouts
+
 # Re-emit generator output (layouts, articles, projects) then rebuild.
+# gen_layouts.py is superseded by `make theme-sync` (ADR-0014).
 regenerate:
 	@python3 scripts/generators/gen_layouts.py
 	@perl -i -pe 's|<h4>Sebastien Rousseau</h4>|<h2 class="ap-foot-title">Sebastien Rousseau</h2>|g; s|<h4>Writing</h4>|<h2 class="ap-foot-title">Writing</h2>|g; s|<h4>Work</h4>|<h2 class="ap-foot-title">Work</h2>|g; s|<h4>Reach</h4>|<h2 class="ap-foot-title">Reach</h2>|g' _layouts/*.html

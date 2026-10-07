@@ -20,7 +20,7 @@
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
-    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+    <!-- Strict CSP. Inline JSON-LD script blocks
          are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
          of each block at build time and injects the 'sha256-<base64>' tokens
          into script-src below before the file is served. Browsers will then
@@ -2154,7 +2154,7 @@
     </section>
 
     <main id="main" class="content ap-section">
-      <div class="wrap">{{content}}</div>
+      <div class="wrap">{{!content}}</div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -2352,7 +2352,7 @@
       "description": "AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.",
       "publisher": {"@id": "https://sebastienrousseau.com/#organization"},
       "author": {"@id": "https://sebastienrousseau.com/#person"},
-      "inLanguage": "en-GB"
+      "inLanguage": "{{language}}"
     },
     {
       "@type": "ProfilePage",
@@ -2360,7 +2360,7 @@
       "mainEntity": {"@id": "https://sebastienrousseau.com/#person"},
       "name": "Sebastien Rousseau: AI, Banking & Financial Services Expert",
       "url": "https://sebastienrousseau.com/",
-      "inLanguage": "en-GB"
+      "inLanguage": "{{language}}"
     }
   ]
 }
