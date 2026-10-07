@@ -63,7 +63,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 import _lang_registry as _lr
 from postbuild_lib._i18n import _all_active_non_en_langs
-from postbuild_lib.article_furniture import _BASE_URL, PUBLIC
+from postbuild_lib.article_furniture import BASE_URL, PUBLIC
 
 # EN slug pairs: source page -> canonical target. Locale forks are derived
 # from the per-locale slug maps at run time.
@@ -98,7 +98,7 @@ def _redirect_pairs(public: Path) -> list[tuple[Path, str]]:
     every active non-EN locale fork that exists on disk."""
     pairs: list[tuple[Path, str]] = []
     for en_src, en_dst in REDIRECTS.items():
-        pairs.append((public / en_src / "index.html", f"{_BASE_URL}/{en_dst}/"))
+        pairs.append((public / en_src / "index.html", f"{BASE_URL}/{en_dst}/"))
         for code in _all_active_non_en_langs():
             statics = _lr.load_slugs(code).get("static", {})
             src_slug = statics.get(en_src, en_src)
@@ -106,7 +106,7 @@ def _redirect_pairs(public: Path) -> list[tuple[Path, str]]:
             pairs.append(
                 (
                     public / code / src_slug / "index.html",
-                    f"{_BASE_URL}/{code}/{dst_slug}/",
+                    f"{BASE_URL}/{code}/{dst_slug}/",
                 )
             )
     return [(p, t) for p, t in pairs if p.is_file()]
@@ -187,7 +187,7 @@ def _article_redirect_pairs(public: Path) -> list[tuple[Path, Path, str]]:
         for dead, target in mapping.items():
             src, tgt = root / dead / "index.html", root / target / "index.html"
             if tgt.is_file() and not src.exists():
-                pairs.append((src, tgt, f"{_BASE_URL}/{prefix}{target}/"))
+                pairs.append((src, tgt, f"{BASE_URL}/{prefix}{target}/"))
     return pairs
 
 
@@ -229,6 +229,6 @@ def apply_redirect_pages(public: Path = PUBLIC) -> tuple[int, int]:
     sources: set[str] = set()
     for page, _target in pairs:
         rel = page.relative_to(public).as_posix()
-        sources.add(f"{_BASE_URL}/{rel}")
+        sources.add(f"{BASE_URL}/{rel}")
     purged = _purge_from_sitemaps(public, sources)
     return converted, purged

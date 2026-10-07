@@ -23,10 +23,10 @@ from postbuild_lib.article_furniture import (
     _BODY_H1_RE,
     _H1_RE,
     _TABLE_OPEN_RE,
-    _TAG_STRIP_RE,
     _TH_TEXT_RE,
     _TR_RE,
     PUBLIC,
+    TAG_STRIP_RE,
     _is_french,
 )
 
@@ -78,7 +78,7 @@ def _card_label_table(table: str) -> str:
     # th text arrives entity-encoded from ssg; unescape before re-escaping
     # so CSS attr() renders "Q&A", not a raw "&amp;" entity.
     headers = [
-        _esc(_unesc(_TAG_STRIP_RE.sub("", m.group(1)).strip()), quote=True)
+        _esc(_unesc(TAG_STRIP_RE.sub("", m.group(1)).strip()), quote=True)
         for m in _TH_TEXT_RE.finditer(head_m.group(0))
     ]
     if not any(headers):

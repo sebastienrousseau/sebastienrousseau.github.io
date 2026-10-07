@@ -35,10 +35,8 @@ from postbuild_lib._i18n import _labels
 from postbuild_lib.article_furniture import (
     _AUTHOR_FIRST,
     _AUTHOR_LAST,
-    _BASE_URL,
     _CANONICAL_RE,
     _DESCRIPTION_RE,
-    _LI_CONTENT_RE,
     _LICENSE_DEFAULT,
     _LICENSE_URLS,
     _MAIN_RE,
@@ -49,6 +47,8 @@ from postbuild_lib.article_furniture import (
     _WRAP_CLOSE_RE,
     AUTHOR_NAME,
     AUTHOR_URL,
+    BASE_URL,
+    LI_CONTENT_RE,
     _is_french,
 )
 from postbuild_lib.seo import _keywords_re
@@ -86,7 +86,7 @@ def inject_oembed_link(html: str) -> str:
     if not (_OEMBED_DIR / f"{bare}.json").is_file():
         return html
     title = _unesc(title_m.group(1))
-    oembed_href = f"{_BASE_URL}/oembed/{bare}.json"
+    oembed_href = f"{BASE_URL}/oembed/{bare}.json"
     link = (
         f'<link rel="alternate" type="application/json+oembed" '
         f'href="{_esc(oembed_href, quote=True)}" '
@@ -149,7 +149,7 @@ def _extract_lead_takeaways_text(html: str) -> list[str]:
     if not m:
         return []
     items = []
-    for li in _LI_CONTENT_RE.findall(m.group(1)):
+    for li in LI_CONTENT_RE.findall(m.group(1)):
         text = _strip_html_tags(li)
         if text:
             items.append(text)

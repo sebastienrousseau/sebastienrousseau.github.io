@@ -41,8 +41,6 @@ from ._projects import localize_projects_page
 # Hub: /fr/articles/
 # ---------------------------------------------------------------------------
 
-_LDJSON_RE = re.compile(r'<script type="application/ld\+json">[\s\S]*?</script>', re.IGNORECASE)
-
 
 def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork end-to-end
     """Fork ``public/index.html`` (the EN home) to produce

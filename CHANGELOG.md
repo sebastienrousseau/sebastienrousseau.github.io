@@ -27,6 +27,32 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
   denial of service in `Client.list()`). It arrives through
   `get-uri`, whose latest release still asks for 5.x; the `Client`
   methods `get-uri` calls are unchanged in 6.x.
+- `compression` (`^1.8.2`) and `proxy-addr` (`^2.0.8`) in the Lighthouse
+  CI tool are pinned through npm overrides, clearing GHSA-vc2v-76pw-4v95
+  (high: memory leak on premature response close) and GHSA-jqcg-44mw-7w3h
+  (critical: IP spoofing through an IPv4-mapped IPv6 trust subnet). Both
+  sit under `@lhci/cli`'s Express server, which only ever serves the local
+  fixture; the `npm audit --audit-level=high` gate in `ci.yml` would
+  otherwise fail every pull request. The remaining moderate chain
+  (`js-yaml` 3 -> `argparse` 1 -> `sprintf-js`, GHSA-hp3w-g68c-fv3c) has no
+  fixed release of `sprintf-js` and stays below the gate.
+
+### Changed
+
+- Dev toolchain: `ruff` 0.16.8 -> 0.16.10, `mypy` 2.3.1 -> 2.4.0,
+  `cyclonedx-bom` 7.4.0 -> 7.5.0 (Dependabot #490), with
+  `requirements-dev.lock` regenerated so the hash-pinned install CI uses
+  actually moves (the Dependabot PR bumped only `requirements-dev.txt`
+  and failed the lock-consistency test).
+- GitHub Actions: `github/codeql-action` 4.37.9 -> 4.38.2 (Dependabot #491).
+
+### Fixed
+
+- Eight CodeQL `py/unused-global-variable` notes: the constants
+  `article_furniture` shares with `content_blocks`, `sharing`,
+  `html_passes`, `schemas`, `navigation` and `redirects` lose their
+  leading underscore (they are a cross-module API, not private state),
+  and `build_translations/_pages.py` drops an `_LDJSON_RE` it never used.
 
 ## [1.2.0] — 2026-06-02
 

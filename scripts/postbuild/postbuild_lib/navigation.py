@@ -22,19 +22,19 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "lib"))
 from _core import DATED_SLUG_RE as _DATED_SLUG_RE
 from postbuild_lib._i18n import _all_active_non_en_langs, _labels, _slug_maps
 from postbuild_lib.article_furniture import (
-    _BASE_URL,
     _H1_RE,
     _HEADING_RE,
     _LDJSON_BLOCK_RE,
     _MAIN_RE,
+    BASE_URL,
     PUBLIC,
     slugify,
 )
 
 
 def _relativize(url: str) -> str:
-    if url.startswith(_BASE_URL):
-        return url[len(_BASE_URL) :] or "/"
+    if url.startswith(BASE_URL):
+        return url[len(BASE_URL) :] or "/"
     return url
 
 
