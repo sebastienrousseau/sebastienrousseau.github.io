@@ -164,7 +164,12 @@ jobs:
   build:
     name: Build + smoke tests + partition
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    # 120, not 90. The last green main run (36963431804) used 72 of 90
+    # minutes; on #492 a slower runner took 18.5 min to build (12.6 on
+    # main) and 36.5 for the post-build suites (27), and the coverage
+    # ratchet was cancelled at the limit. Every step was slower by the
+    # same factor, so the runner, not the code, set the pace.
+    timeout-minutes: 120
     outputs:
       pa11y-needed: ${{ steps.partition.outputs.pa11y-needed }}
     steps:
@@ -183,7 +188,7 @@ jobs:
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg-${{ env.SSG_VERSION }}
 
       - name: Add cargo bin to PATH
-        run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+        run: echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
 
       - name: Install Static Site Generator (ssg)
         uses: ./.github/actions/setup-ssg
@@ -498,7 +503,7 @@ jobs:
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg-${{ env.SSG_VERSION }}
 
       - name: Add cargo bin to PATH
-        run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+        run: echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
 
       - name: Install Static Site Generator (ssg)
         uses: ./.github/actions/setup-ssg
