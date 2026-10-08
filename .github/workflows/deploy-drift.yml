@@ -29,7 +29,7 @@ concurrency:
 
 jobs:
   check:
-    name: main HEAD vs deployed commit
+    name: main HEAD vs deployed commit, and no shadowed paths
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -37,6 +37,25 @@ jobs:
         with:
           ref: main
           fetch-depth: 50
+
+      # A repository of this owner with GitHub Pages enabled is served at
+      # <site>/<repo>/ ahead of this site. On 2026-10-07 that took
+      # /iso20022-mcp/ down ("Site not found") while every build and deploy
+      # check stayed green. Checked hourly against the live sitemap.
+      - name: No project Pages site shadows a published path
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OWNER: ${{ github.repository_owner }}
+          SELF: ${{ github.event.repository.name }}
+        run: |
+          set -euo pipefail
+          gh api --paginate "users/${OWNER}/repos?per_page=100&type=owner" \
+            --jq '.[] | select(.has_pages) | .name' > "$RUNNER_TEMP/pages-repos.txt"
+          curl -fsS --max-time 60 -o "$RUNNER_TEMP/sitemap.xml" https://sebastienrousseau.com/sitemap.xml
+          python3 scripts/seo_and_audit/check_pages_shadowing.py \
+            --repos "$RUNNER_TEMP/pages-repos.txt" \
+            --sitemap "$RUNNER_TEMP/sitemap.xml" \
+            --self "$SELF"
 
       - name: Compare deployed commit with main
         env:
