@@ -498,17 +498,23 @@ function fallbackCopy(text, done) {
  */
 (function () {
     "use strict";
+    // Only a Spotify playlist id is taken from the page; the embed URL is
+    // built from a fixed origin, so no attribute value ever becomes a frame
+    // source (a javascript: or foreign URL in the markup cannot load).
+    var PLAYLIST = /^https:\/\/open\.spotify\.com\/playlist\/([A-Za-z0-9]{22})$/;
     document.addEventListener("click", function (event) {
         var link = event.target.closest(".pl-frame-load");
-        if (!link || !link.getAttribute("data-src")) return;
+        if (!link) return;
+        var match = PLAYLIST.exec(link.getAttribute("href") || "");
+        if (!match) return;
         event.preventDefault();
         var frame = document.createElement("iframe");
         frame.className = "pl-frame";
-        frame.src = link.getAttribute("data-src");
+        frame.src = "https://open.spotify.com/embed/playlist/" + match[1] + "?utm_source=generator&theme=0";
         frame.width = "100%";
         frame.height = link.getAttribute("data-height") || "152";
         frame.title = link.getAttribute("data-title") || "Spotify player";
-        frame.setAttribute("allow", link.getAttribute("data-allow") || "");
+        frame.setAttribute("allow", "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture");
         frame.setAttribute("loading", "lazy");
         link.replaceWith(frame);
         frame.focus();
