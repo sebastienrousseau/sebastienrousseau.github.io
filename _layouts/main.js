@@ -686,6 +686,15 @@ function fallbackCopy(text, done) {
     "use strict";
     var box = document.querySelector(".g-recaptcha");
     if (!box) return;
+    // A site key is 40 characters starting "6L". A copy of the theme ships a
+    // placeholder, for which Google can only render an error widget.
+    if (!/^6L[0-9A-Za-z_-]{38}$/.test(box.getAttribute("data-sitekey") || "")) return;
+    // Tab moves focus into the widget's cross-origin frame, and the browser
+    // does not scroll this page for that, so a widget below the fold took
+    // focus out of sight (WCAG 2.4.11). Bring it into view on focus.
+    box.addEventListener("focusin", function () {
+        box.scrollIntoView({ block: "nearest" });
+    });
     var form = box.closest("form") || document;
     var loaded = false;
     var load = function () {
