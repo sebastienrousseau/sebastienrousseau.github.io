@@ -1109,7 +1109,7 @@
       @media (max-width:600px){.ap-lang-toggle{padding:.4rem .7rem;font-size:.8rem}.ap-lang-menu-grid{grid-template-columns:repeat(2,1fr);min-width:0}}
 
       /* Theme toggle (sun/moon). Sits inline in the nav */
-      :root{--pill-ink:#ffffff;--mode-ctl-border:#878d9b;--mode-ctl-bg:#f3f4f6;--mode-ctl-ink:#090a0f;--mode-ctl-border-dark:#5d6375;--mode-ctl-bg-dark:#151928;--mode-ctl-ink-dark:#ffffff}
+      :root{--pill-ink:#ffffff;--story-sub-ink:#ffffff;--mode-ctl-border:#878d9b;--mode-ctl-bg:#f3f4f6;--mode-ctl-ink:#090a0f;--mode-ctl-border-dark:#5d6375;--mode-ctl-bg-dark:#151928;--mode-ctl-ink-dark:#ffffff}
       #mode-toggle.theme-toggle{appearance:none;display:flex;flex:0 0 44px;align-items:center;justify-content:center;width:44px;height:44px;min-width:44px;min-height:44px;padding:0;border:1px solid var(--mode-ctl-border-dark);border-radius:50%;background:var(--mode-ctl-bg-dark);color:var(--mode-ctl-ink-dark);box-shadow:none;cursor:pointer;font-size:1.2rem;line-height:1}
             #mode-toggle .theme-icon{line-height:1}
       #mode-toggle .theme-icon::before{content:"🖥️";font-size:1.2rem}
@@ -1718,11 +1718,13 @@
       /* story subpages (/projects-*): apple.com/government-style image hero */
       .story-hero{position:relative;width:100%;min-height:calc(100vh - var(--nav-h));min-height:calc(100svh - var(--nav-h));display:flex;align-items:center;justify-content:center;overflow:hidden;isolation:isolate;margin-block:0 clamp(36px,5vw,64px);background-color:#14161c}
       .story-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;animation:story-zoom 1.5s cubic-bezier(.2,.6,.2,1) both}
-      .story-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.52),rgba(0,0,0,.3) 45%,rgba(0,0,0,.52));z-index:-1}
+      /* The scrim keeps white text at AAA over the brightest photograph: the
+         old 30% band behind the title measured 2.75:1 from rendered pixels. */
+      .story-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.62),rgba(0,0,0,.66) 45%,rgba(0,0,0,.7));z-index:-1}
       @media (max-width:1023px){.story-hero{display:block;min-height:0}.story-hero-img{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:16/10;z-index:0}}
       .story-hero-inner{max-width:1000px;padding:clamp(2rem,6vw,4rem) 1.25rem;text-align:center;color:#fff}
       .story-hero-inner h1{color:#fff;max-width:none;font-size:clamp(40px,6vw,76px);line-height:1.04;letter-spacing:-.02em;margin:0 0 .26em;text-shadow:0 1px 30px rgba(0,0,0,.35);animation:ap-fade-up .7s cubic-bezier(.2,.6,.2,1) both}
-      .story-hero-sub{color:rgba(255,255,255,.92);max-width:46ch;margin:0 auto;font-size:clamp(18px,1.8vw,24px);line-height:1.4;text-shadow:0 1px 18px rgba(0,0,0,.4);animation:ap-fade-up .7s cubic-bezier(.2,.6,.2,1) .1s both}
+      .story-hero-sub{color:var(--story-sub-ink);max-width:46ch;margin:0 auto;font-size:clamp(18px,1.8vw,24px);line-height:1.4;text-shadow:0 1px 18px rgba(0,0,0,.4);animation:ap-fade-up .7s cubic-bezier(.2,.6,.2,1) .1s both}
       @keyframes story-zoom{from{opacity:.55}to{opacity:1}}
       /* home "what I build": JPM-style image-left + cards-right offer block */
       .offer-grid{display:grid;grid-template-columns:38% 1fr;align-items:center;max-width:var(--max-wide);margin-inline:auto;gap:0}
