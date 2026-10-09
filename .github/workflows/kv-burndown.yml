@@ -79,7 +79,8 @@ jobs:
           PEAK: ${{ steps.query.outputs.max }}
         run: |
           set -euo pipefail
-          body=$(printf '### KV burndown — week of %s\n\nPeak day in trailing 7 d: **%s writes**\n\nBudget: 1,000 / day. Alert threshold: 700 / day.\n\nADR: [`project-docs/adr/0001-kv-free-tier-policy.md`](../blob/main/project-docs/adr/0001-kv-free-tier-policy.md)\n' "$(date -u +%Y-%m-%d)" "$PEAK")
+          adr="\`project-docs/adr/0001-kv-free-tier-policy.md\`"
+          body=$(printf '### KV burndown — week of %s\n\nPeak day in trailing 7 d: **%s writes**\n\nBudget: 1,000 / day. Alert threshold: 700 / day.\n\nADR: [%s](../blob/main/project-docs/adr/0001-kv-free-tier-policy.md)\n' "$(date -u +%Y-%m-%d)" "$PEAK" "$adr")
           gh issue comment "$ISSUE" --body "$body"
 
       - name: Enforce 70 % budget
