@@ -18,15 +18,15 @@ from html import unescape as _unesc
 from postbuild_lib._i18n import _labels
 from postbuild_lib.article_furniture import (
     _BANNER_ALT_FRONTMATTER_RE,
-    _BANNER_FALLBACK_HEIGHT,
-    _BANNER_FALLBACK_WIDTH,
-    _FOOTNOTE_DEF_RE,
     _H1_RE,
     _HEAD_END_RE,
     _HERO_BANNER_INSERT_RE,
-    _MIN_H2_FOR_RULES,
     _OG_IMAGE_ALT_RE,
     _WRAP_CLOSE_RE,
+    BANNER_FALLBACK_HEIGHT,
+    BANNER_FALLBACK_WIDTH,
+    FOOTNOTE_DEF_RE,
+    MIN_H2_FOR_RULES,
     _csp_tag_re,
     _is_french,
 )
@@ -69,7 +69,7 @@ def inject_section_rules(html: str) -> str:
     if 'class="section-rule"' in html:
         return html
     headings = list(_H2_WITH_ID_RE.finditer(html))
-    if len(headings) < _MIN_H2_FOR_RULES:
+    if len(headings) < MIN_H2_FOR_RULES:
         return html
     rule = '<hr class="section-rule" aria-hidden="true">'
     out = html
@@ -105,12 +105,12 @@ def inject_footnotes(html: str) -> str:
         return html
     if "[^" not in html:
         return html
-    definitions = _FOOTNOTE_DEF_RE.findall(html)
+    definitions = FOOTNOTE_DEF_RE.findall(html)
     if not definitions:
         return html
     # Strip the literal "[^n]: definition" lines from the body — they're
     # about to be moved into the <section class="footnotes"> block.
-    body_no_defs = _FOOTNOTE_DEF_RE.sub("", html)
+    body_no_defs = FOOTNOTE_DEF_RE.sub("", html)
 
     # Wrap remaining "[^n]" markers in <sup><a> superscript links.
     def _sup(m: re.Match[str]) -> str:
@@ -165,7 +165,7 @@ def _banner_dimensions(html: str) -> tuple[int, int]:
         h = int(h_m.group(1))
         if w > 0 and h > 0:
             return w, h
-    return _BANNER_FALLBACK_WIDTH, _BANNER_FALLBACK_HEIGHT
+    return BANNER_FALLBACK_WIDTH, BANNER_FALLBACK_HEIGHT
 
 
 def _banner_path(banner_url: str) -> str | None:

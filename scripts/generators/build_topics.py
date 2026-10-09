@@ -494,7 +494,7 @@ def render_card(slug: str, fm: dict[str, str]) -> str:
     e_eyebrow = html.escape(eyebrow)
     return (
         '<article class="newsroom-card">'
-        f'<a class="newsroom-card-media" href="{url}" title="{e_title}">'
+        f'<a class="newsroom-card-media" href="{url}" title="{e_title}" aria-label="{e_title}">'
         f'<img alt="{e_alt}" src="{banner}" loading="lazy" decoding="async" width="600" height="600" />'
         "</a>"
         '<div class="newsroom-card-body">'

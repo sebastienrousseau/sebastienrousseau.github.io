@@ -110,3 +110,38 @@ def test_unmatched_anchors_are_reported_as_a_build_warning(monkeypatch, capsys) 
     out = capsys.readouterr().out
     assert "playlists[fr]" in out
     assert "1 anchor(s) not found" in out
+
+
+def test_the_on_request_player_link_is_named_in_the_page_language() -> None:
+    """The Spotify player loads on request from a link whose accessible
+    name is the catalogue's frame title. Its ``aria-label`` must be
+    translated like the iframe ``title`` it stands in for, or every
+    localized playlists page names 40 controls in English."""
+    st.bind_lang("fr")
+    import _playlist_copy as pl  # type: ignore[import-not-found]
+
+    title = pl.PLAYLISTS_FEATURED[0]
+    en_name = pl.FRAME_TITLE.format(title=title)
+    shell = (
+        f'<a class="pl-frame pl-frame-load" href="#" data-title="{en_name}" '
+        f'aria-label="{en_name}">{title}</a>'
+    )
+    out, _ = localize_playlists_page(shell, "fr")
+    assert f'aria-label="{en_name}"' not in out
+    assert f'data-title="{en_name}"' not in out
+    assert out.count(title) >= 3  # the proper noun survives in name, data and text
+
+
+def test_the_device_aside_is_swapped_after_minification_collapses_its_line_breaks() -> None:
+    """The English aside body is authored with line breaks, which the
+    build's minifier collapses to single spaces before the forker runs.
+    An anchor that kept the newlines never matched, so the paragraph
+    stayed English on every localized playlists page."""
+    st.bind_lang("fr")
+    import _playlist_copy as pl  # type: ignore[import-not-found]
+
+    built = "<p>" + " ".join(pl.EVERYWHERE_BODY.split()) + "</p>"
+    out, missed = localize_playlists_page(built, "fr")
+    assert built not in out
+    assert "Chaque playlist" in out
+    assert not any(m.startswith("<p>Every playlist plays in the browser") for m in missed)

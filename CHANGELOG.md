@@ -27,6 +27,69 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
   denial of service in `Client.list()`). It arrives through
   `get-uri`, whose latest release still asks for 5.x; the `Client`
   methods `get-uri` calls are unchanged in 6.x.
+- `compression` (`^1.8.2`) and `proxy-addr` (`^2.0.8`) in the Lighthouse
+  CI tool are pinned through npm overrides, clearing GHSA-vc2v-76pw-4v95
+  (high: memory leak on premature response close) and GHSA-jqcg-44mw-7w3h
+  (critical: IP spoofing through an IPv4-mapped IPv6 trust subnet). Both
+  sit under `@lhci/cli`'s Express server, which only ever serves the local
+  fixture; the `npm audit --audit-level=high` gate in `ci.yml` would
+  otherwise fail every pull request. The remaining moderate chain
+  (`js-yaml` 3 -> `argparse` 1 -> `sprintf-js`, GHSA-hp3w-g68c-fv3c) has no
+  fixed release of `sprintf-js` and stays below the gate.
+
+### Changed
+
+- Dev toolchain: `ruff` 0.16.8 -> 0.16.10, `mypy` 2.3.1 -> 2.4.0,
+  `cyclonedx-bom` 7.4.0 -> 7.5.0 (Dependabot #490), with
+  `requirements-dev.lock` regenerated so the hash-pinned install CI uses
+  actually moves (the Dependabot PR bumped only `requirements-dev.txt`
+  and failed the lock-consistency test).
+- GitHub Actions: `github/codeql-action` 4.37.9 -> 4.38.2 (Dependabot #491).
+- The twelve layouts now come from the `sebastienrousseau` theme in
+  ssg-themes.github.io, flattened with `make theme-sync` (ADR-0014). Two
+  template-level changes, `{{!content}}` for `{{content}}` and
+  `{{language}}` for the hard-coded JSON-LD `en-GB`, leave every rendered
+  page identical; the head comment that documents the CSP no longer quotes
+  a literal script tag that three comment-blind scanners read as a block.
+- The theme now meets every gate the ssg-themes gallery runs, and the
+  site adopts the design through it: the colour-scheme control has three
+  states (system, light, dark; "system" is no `data-theme` attribute and
+  the page follows the operating system), every navigation, footer, card,
+  chip, breadcrumb and credential link is a 44 px target, prose links
+  never wrap across two lines, card and featured frames are 3:2, the
+  story hero becomes a natural-aspect banner below 1024 px, titles and
+  excerpts are no longer line-clamped, table headers are 12 px, dark mode
+  gives the pills dark ink on the light-blue accent, Spotify players load
+  on request from a link that works without JavaScript, and code blocks
+  wrap instead of scrolling sideways. Image-only card links carry their
+  title as an accessible name, the editorial page has one h1, the ISO
+  20022 MCP docs page's card headings are no longer `<header>` banners,
+  and the French contact page no longer renders a second form with the
+  same ids. The pa11y dark shard clicks the control twice before
+  asserting dark mode.
+
+### Fixed
+
+- Eight CodeQL `py/unused-global-variable` notes: the constants
+  `article_furniture` shares with `content_blocks`, `sharing`,
+  `html_passes`, `schemas`, `navigation` and `redirects` lose their
+  leading underscore (they are a cross-module API, not private state),
+  and `build_translations/_pages.py` drops an `_LDJSON_RE` it never used.
+- lang-router Worker: a `pref-lang` cookie whose value is not valid
+  percent-encoding (`pref-lang=%`) made `decodeURIComponent` throw out of
+  the fetch handler, so every page navigation answered HTTP 500 for as long
+  as the 30-day cookie lived (reproduced live on 2026-10-06). An
+  undecodable cookie is now treated as unset and the canonical EN page is
+  served; `workers/test_lang_router.mjs` pins both the helper and the
+  handler path.
+- /playlists/: the "Listen on every device" paragraph is translated on
+  all 34 locales. The forker's anchor kept the source's line breaks, which
+  the minifier collapses first, so it never matched (every build warned
+  "1 anchor(s) not found" for every locale).
+- Unit sandbox: a `scripts/` module imported inside a test body, or
+  force-reimported, kept its real paths, so `gen_layouts.main()` wrote
+  into the real `_layouts/`. Modules are now repointed as they are
+  imported, keyed by module object.
 
 ## [1.2.0] — 2026-06-02
 

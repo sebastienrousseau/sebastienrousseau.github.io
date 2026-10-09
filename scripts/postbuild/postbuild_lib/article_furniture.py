@@ -361,13 +361,13 @@ _LDJSON_BLOCK_RE = re.compile(
     r'<script type="application/ld\+json"[^>]*>([\s\S]*?)</script>',
     re.IGNORECASE,
 )
-_BASE_URL = "https://sebastienrousseau.com"
+BASE_URL = "https://sebastienrousseau.com"
 
 
 _TH_TEXT_RE = re.compile(r"<th\b[^>]*>([\s\S]*?)</th>", re.IGNORECASE)
 _TR_RE = re.compile(r"<tr\b[\s\S]*?</tr>", re.IGNORECASE)
 _TABLE_OPEN_RE = re.compile(r"<table\b([^>]*)>", re.IGNORECASE)
-_TAG_STRIP_RE = re.compile(r"<[^>]+>")
+TAG_STRIP_RE = re.compile(r"<[^>]+>")
 
 
 # ---------------------------------------------------------------------------
@@ -384,7 +384,7 @@ _CANONICAL_RE = re.compile(r'<link\s+rel="canonical"\s+href="([^"]+)"', re.IGNOR
 _OG_TITLE_RE = re.compile(r'<meta\s+property="og:title"\s+content="([^"]+)"', re.IGNORECASE)
 _DESCRIPTION_RE = re.compile(r'<meta\s+name="description"\s+content="([^"]+)"', re.IGNORECASE)
 _AP_HERO_OPEN_RE = re.compile(r'(<section class="ap-hero">)(\s*)(<h1>)', re.IGNORECASE)
-_LI_CONTENT_RE = re.compile(r"<li>(.*?)</li>", re.IGNORECASE | re.DOTALL)
+LI_CONTENT_RE = re.compile(r"<li>(.*?)</li>", re.IGNORECASE | re.DOTALL)
 _SUB_PARA_RE = re.compile(r'<p class="sub">', re.IGNORECASE)
 _WRAP_CLOSE_RE = re.compile(r"(</div>\s*</main>)", re.IGNORECASE)
 
@@ -448,8 +448,8 @@ def inject_deck(html: str) -> str:
 # inject_anchor_links_and_toc stamps id="h2-..." on every PROSE h2
 # (the ones with slugified anchors). The ToC / Lead / Sources asides
 # use bare <h2> with no id, so this scoped regex naturally skips them.
-_MIN_H2_FOR_RULES = 6
-_FOOTNOTE_DEF_RE = re.compile(r"\[\^(\d+)\]:\s*([^\n<]+)")
+MIN_H2_FOR_RULES = 6
+FOOTNOTE_DEF_RE = re.compile(r"\[\^(\d+)\]:\s*([^\n<]+)")
 
 
 # ---------------------------------------------------------------------------
@@ -487,8 +487,8 @@ _BANNER_ALT_FRONTMATTER_RE = re.compile(
 # meta tags. Picked at 16:9 because that's the canonical hero aspect for
 # CDN-transform URLs that don't carry a height. Used only as a last resort
 # — every article since 2026-06-02 ships with explicit og:image dimensions.
-_BANNER_FALLBACK_WIDTH = 1200
-_BANNER_FALLBACK_HEIGHT = 675
+BANNER_FALLBACK_WIDTH = 1200
+BANNER_FALLBACK_HEIGHT = 675
 
 
 # Insertion anchor: the close of <section class="ap-hero"> immediately

@@ -477,7 +477,7 @@ def card_block(
     href: str,
 ) -> str:
     return f"""<article class="newsroom-card">
-<a class="newsroom-card-media" href="{href}" title="{title}">
+<a class="newsroom-card-media" href="{href}" title="{title}" aria-label="{title}">
 <img alt="{alt}" src="{image}" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">

@@ -206,7 +206,7 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/index.html" title="DORA Spared You From NIS2. It Will Not Spare You From the CRA.">
+<a class="newsroom-card-media" href="/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/index.html" title="DORA Spared You From NIS2. It Will Not Spare You From the CRA." aria-label="DORA Spared You From NIS2. It Will Not Spare You From the CRA.">
 <img alt="Layered mountain ridges receding into pale haze, each ridge fainter than the one before it, seen from above the cloud line." src="https://cloudcdn.pro/stocks/images/paul-earle-wVjd0eWNqI8.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
@@ -218,7 +218,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026/index.html" title="Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.">
+<a class="newsroom-card-media" href="/2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026/index.html" title="Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not." aria-label="Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.">
 <img alt="A white and blue building facade filled with rows of blue glass windows, seen straight on so the glazing reads as a continuous reflective surface." src="https://cloudcdn.pro/stocks/images/marek-piwnicki-11829333.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
@@ -230,7 +230,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-08-01-eudi-wallet-eidas-2-banks-relying-party-2026/index.html" title="The Wallet Ships in December. Banks Must Accept It a Year Later.">
+<a class="newsroom-card-media" href="/2026-08-01-eudi-wallet-eidas-2-banks-relying-party-2026/index.html" title="The Wallet Ships in December. Banks Must Accept It a Year Later." aria-label="The Wallet Ships in December. Banks Must Accept It a Year Later.">
 <img alt="A covered pedestrian passage between office towers in a financial district, lit from the far end, with the walkway narrowing toward a single controlled opening." src="https://cloudcdn.pro/stocks/images/jez-timms-4xLteCXh6X0.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
@@ -242,7 +242,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-07-31-fida-open-finance-data-sharing-schemes-banks-2026/index.html" title="PSD2 Made Banks Build an API. FiDA Makes Them Join a Market.">
+<a class="newsroom-card-media" href="/2026-07-31-fida-open-finance-data-sharing-schemes-banks-2026/index.html" title="PSD2 Made Banks Build an API. FiDA Makes Them Join a Market." aria-label="PSD2 Made Banks Build an API. FiDA Makes Them Join a Market.">
 <img alt="A dense city grid photographed from directly above at night, thousands of lit buildings and intersecting streets extending to every edge of the frame." src="https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
@@ -254,7 +254,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-07-30-model-risk-management-generative-ai-out-of-scope-2026/index.html" title="Out of Scope Is Not Out of Risk: The 2026 Model-Risk Rewrite Left Out the Models Banks Are Actually Deploying">
+<a class="newsroom-card-media" href="/2026-07-30-model-risk-management-generative-ai-out-of-scope-2026/index.html" title="Out of Scope Is Not Out of Risk: The 2026 Model-Risk Rewrite Left Out the Models Banks Are Actually Deploying" aria-label="Out of Scope Is Not Out of Risk: The 2026 Model-Risk Rewrite Left Out the Models Banks Are Actually Deploying">
 <img alt="A long dark bench on a vast paved plaza seen from directly above, with a single seated figure at the far right edge and open ground stretching away from them." src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
@@ -266,7 +266,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-07-29-threat-led-penetration-testing-dora-tlpt-banks-2026/index.html" title="The Red Team Became a Supervised Supply Chain: What DORA's TLPT Regime Actually Demands">
+<a class="newsroom-card-media" href="/2026-07-29-threat-led-penetration-testing-dora-tlpt-banks-2026/index.html" title="The Red Team Became a Supervised Supply Chain: What DORA's TLPT Regime Actually Demands" aria-label="The Red Team Became a Supervised Supply Chain: What DORA's TLPT Regime Actually Demands">
 <img alt="The corner of a building clad in a finely perforated white screen, photographed from below against a bright sky." src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">

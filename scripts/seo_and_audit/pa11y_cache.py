@@ -387,12 +387,13 @@ def build_pa11yci_config(urls: list[str], hide_elements: str) -> dict[str, Any]:
 #   * ``--force-dark-mode`` — forces the browser-side dark theme, which
 #     also reports prefers-color-scheme: dark on current Chromium.
 #
-# NOTE deliberately NOT click-based: clicking ``.theme-toggle`` merely
-# flips whatever theme the host booted, so on a dark-mode host it would
-# land on LIGHT. The single ``wait for element html[data-theme="dark"]``
-# action below is an assertion, not a mutation — if a future Chromium
-# drops either flag the wait times out and the shard fails loudly
-# instead of silently auditing light mode. The ``#dark`` URL fragment is
+# NOTE click-based since the three-state control (v1.2.1): the page
+# boots in "system" (no ``data-theme``; the stylesheet follows the OS via
+# ``prefers-color-scheme``), and ``#mode-toggle`` cycles system, light,
+# dark deterministically, so two clicks land on dark whatever the host
+# prefers. The ``wait for element html[data-theme="dark"]`` that follows
+# is the assertion — if the control or the cycle changes, the wait times
+# out and the shard fails loudly instead of silently auditing light mode. The ``#dark`` URL fragment is
 # a human-readable marker in reports/logs only — it does not affect
 # navigation.
 #
@@ -413,6 +414,8 @@ DARK_CHROME_ARGS: list[str] = [
 ]
 
 DARK_THEME_ACTIONS: list[str] = [
+    "click element #mode-toggle",
+    "click element #mode-toggle",
     'wait for element html[data-theme="dark"] to be visible',
 ]
 

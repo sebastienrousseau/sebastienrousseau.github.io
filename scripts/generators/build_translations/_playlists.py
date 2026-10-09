@@ -174,12 +174,25 @@ def localize_playlists_page(shell: str, code: str) -> tuple[str, list[str]]:
             f'title="{ui["frameTitle"].format(title=title)}"',
             count=-1,
         )
+        # The player loads on request from a link named by the same frame
+        # title (its ``data-title`` is covered by the swap above, which
+        # matches the attribute's ``title="`` suffix).
+        sw.swap(
+            f'aria-label="{en["ui"]["frameTitle"].format(title=title)}"',
+            f'aria-label="{ui["frameTitle"].format(title=title)}"',
+            count=-1,
+        )
 
     # The featured band reuses the newest playlist's frame title.
     feat_title = _pl.PLAYLISTS_FEATURED[0]
     sw.swap(
         f'title="{en["ui"]["frameTitle"].format(title=feat_title)}"',
         f'title="{ui["frameTitle"].format(title=feat_title)}"',
+        count=-1,
+    )
+    sw.swap(
+        f'aria-label="{en["ui"]["frameTitle"].format(title=feat_title)}"',
+        f'aria-label="{ui["frameTitle"].format(title=feat_title)}"',
         count=-1,
     )
 
@@ -214,7 +227,10 @@ def localize_playlists_page(shell: str, code: str) -> tuple[str, list[str]]:
     ev_en = en["everywhere"]
     ev = {**ev_en, **cat.get("everywhere", {})}
     sw.swap(f"<h2>{ev_en['heading']}</h2>", f"<h2>{ev['heading']}</h2>")
-    sw.swap(f"<p>{ev_en['body']}</p>", f"<p>{ev['body']}</p>")
+    # The English body is authored with line breaks; the build's minifier
+    # collapses them to single spaces before this pass sees the page, so the
+    # anchor is matched in that collapsed form.
+    sw.swap(f"<p>{' '.join(ev_en['body'].split())}</p>", f"<p>{' '.join(ev['body'].split())}</p>")
     for src, dst in zip(ev_en["devices"], ev.get("devices", []), strict=False):
         sw.swap(f"<li>{src}</li>", f"<li>{dst}</li>")
 

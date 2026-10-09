@@ -103,6 +103,10 @@ async function newConfiguredPage(browser, baseHost) {
   // this screenshot harness, never the shipped pages.
   await page.setBypassCSP(true);
   await page.setViewport(VIEWPORT);
+  // The baselines are light-mode captures. Pin the OS preference rather
+  // than inherit the runner's: since v1.2.1 a first visit is in "system"
+  // mode (no data-theme attribute) and follows prefers-color-scheme.
+  await page.emulateMediaFeatures([{ name: 'prefers-color-scheme', value: 'light' }]);
   // Hermetic rendering: block every request that does not target the
   // local fixture server. Remote CDN images (cloudcdn.pro banners,
   // card art) load non-deterministically — measured 8.6% pixel churn
@@ -148,10 +152,16 @@ async function capturePage(page, name, url, out) {
     });
   });
   await new Promise((r) => setTimeout(r, 400));
-  const theme = await page.evaluate(() =>
-    document.documentElement.getAttribute('data-theme'));
-  if (theme !== 'light') {
-    throw new Error(`${url}: expected light theme, got ${theme}`);
+  // What renders, not which attribute is set: an explicit data-theme="light",
+  // or system mode (no attribute) under a light preference. Anything that
+  // would render dark fails the capture rather than poisoning a baseline.
+  const theme = await page.evaluate(() => {
+    const set = document.documentElement.getAttribute('data-theme');
+    if (set) return set;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'system-dark' : 'system-light';
+  });
+  if (theme !== 'light' && theme !== 'system-light') {
+    throw new Error(`${url}: expected a light render, got ${theme}`);
   }
   await page.screenshot({ path: join(out, `${name}.png`), fullPage: true });
   console.log(`shot ${name} <- ${url} (theme=${theme})`);

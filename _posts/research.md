@@ -133,7 +133,7 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid newsroom-grid-tight">
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-04-11-quantum-thresholds-are-moving-again/index.html" title="Quantum Thresholds Are Moving Again">
+<a class="newsroom-card-media" href="/2026-04-11-quantum-thresholds-are-moving-again/index.html" title="Quantum Thresholds Are Moving Again" aria-label="Quantum Thresholds Are Moving Again">
 <img alt="Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
@@ -145,7 +145,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" title="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto">
+<a class="newsroom-card-media" href="/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" title="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto" aria-label="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto">
 <img alt="Network of digital nodes in red and blue hues" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
@@ -157,7 +157,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html" title="Quantum Algorithm Challenges Lattice-Based Cryptography">
+<a class="newsroom-card-media" href="/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html" title="Quantum Algorithm Challenges Lattice-Based Cryptography" aria-label="Quantum Algorithm Challenges Lattice-Based Cryptography">
 <img alt="Network nodes in a digital blue space" src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
@@ -169,7 +169,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html" title="Fully Homomorphic Encryption (FHE) in a Banking Quantum Era">
+<a class="newsroom-card-media" href="/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html" title="Fully Homomorphic Encryption (FHE) in a Banking Quantum Era" aria-label="Fully Homomorphic Encryption (FHE) in a Banking Quantum Era">
 <img alt="Banner for Fully Homomorphic Encryption" src="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
@@ -181,7 +181,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html" title="Advancing AI with Multimodal LLMs: Insights from MM1">
+<a class="newsroom-card-media" href="/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html" title="Advancing AI with Multimodal LLMs: Insights from MM1" aria-label="Advancing AI with Multimodal LLMs: Insights from MM1">
 <img alt="Banner for Apple's MM1 multimodal LLM research" src="https://cloudcdn.pro/stocks/images/mm1-visual.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
@@ -193,7 +193,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html" title="Qiskit and Quantum Fourier Transform for Credit Ratio Analysis">
+<a class="newsroom-card-media" href="/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html" title="Qiskit and Quantum Fourier Transform for Credit Ratio Analysis" aria-label="Qiskit and Quantum Fourier Transform for Credit Ratio Analysis">
 <img alt="A quantum computer room" src="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
@@ -205,7 +205,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html" title="Revolutionising Finance with AI-Enhanced Quantum Algorithms">
+<a class="newsroom-card-media" href="/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html" title="Revolutionising Finance with AI-Enhanced Quantum Algorithms" aria-label="Revolutionising Finance with AI-Enhanced Quantum Algorithms">
 <img alt="A circuit board cityscape" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
@@ -217,7 +217,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" title="Quantum Key Distribution: Revolutionising Security in Banking">
+<a class="newsroom-card-media" href="/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" title="Quantum Key Distribution: Revolutionising Security in Banking" aria-label="Quantum Key Distribution: Revolutionising Security in Banking">
 <img alt="HSBC headquarter in London Canary Wharf docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
@@ -229,7 +229,7 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" title="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">
+<a class="newsroom-card-media" href="/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" title="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age" aria-label="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">
 <img alt="A complex quantum computer architecture" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">

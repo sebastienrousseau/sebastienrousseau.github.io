@@ -754,7 +754,7 @@ _FAQ_HEADING_RE = re.compile(
     re.IGNORECASE | re.DOTALL,
 )
 _NEXT_H2_RE = re.compile(r"<h2\b", re.IGNORECASE)
-_TAG_STRIP_RE = re.compile(r"<[^>]+>")
+TAG_STRIP_RE = re.compile(r"<[^>]+>")
 _WS_COLLAPSE_RE = re.compile(r"\s+")
 
 # 1 + 2: a <p> opening with <strong>…</strong>. The remainder of that <p> is
@@ -778,7 +778,7 @@ _MIN_ANSWER_CHARS = 20
 
 
 def _plain_text(fragment: str) -> str:
-    return _WS_COLLAPSE_RE.sub(" ", _html.unescape(_TAG_STRIP_RE.sub(" ", fragment))).strip()
+    return _WS_COLLAPSE_RE.sub(" ", _html.unescape(TAG_STRIP_RE.sub(" ", fragment))).strip()
 
 
 def _faq_section(html: str) -> str | None:

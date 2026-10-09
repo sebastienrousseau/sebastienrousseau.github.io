@@ -44,7 +44,11 @@ env:
 jobs:
   summary:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # Measured: successful runs took 15 to 19.5 minutes end to end
+    # (./build.sh alone 10 to 16), and two of the five runs on #492 were
+    # cancelled at the old 20-minute limit mid-build. 35 is about 1.8x
+    # the slowest success, the margin the build job's limit also uses.
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
@@ -61,7 +65,7 @@ jobs:
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg-${{ env.SSG_VERSION }}
 
       - name: Add cargo bin to PATH
-        run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+        run: echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
 
       - name: Install Static Site Generator (ssg)
         uses: ./.github/actions/setup-ssg
