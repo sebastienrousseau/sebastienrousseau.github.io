@@ -53,6 +53,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "libraries, and migration playbooks for financial-services security teams."
         ),
         "slugs": [
+            "2026-09-15-two-nuclear-clocks-vienna-and-beijing-haven-t-beaten-atomic-clocks-yet",
             "2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026",
             "2026-05-18-quantum-cryptography-standards-developments-2026",
             "2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance",
@@ -104,6 +105,8 @@ TOPICS: dict[str, dict[str, object]] = {
             "ship critical services under supervision."
         ),
         "slugs": [
+            "2026-10-13-moving-past-moores-law-in-memory-compute-edge-robotics",
+            "2026-09-20-cloudflare-wants-to-issue-its-own-certificates-free-ca-concentration",
             "2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026",
             "2026-05-20-cloud-native-banking-financial-institutions-2026",
             "2026-05-16-best-cloud-infrastructure-architecture-2026",
@@ -118,6 +121,12 @@ TOPICS: dict[str, dict[str, object]] = {
             "at Tier-1 institutions."
         ),
         "slugs": [
+            "2026-10-13-physical-ai-robotics-workforce-governance-industrial-operations",
+            "2026-10-13-open-source-physical-ai-lerobot-end-to-end-robotics",
+            "2026-10-13-moving-past-moores-law-in-memory-compute-edge-robotics",
+            "2026-10-13-humanoid-functional-robotics-manufacturing-automation",
+            "2026-09-30-detector-reads-probabilities-instead-of-verdicts-44-benchmarks",
+            "2026-09-25-when-technology-lands-before-institutions-adapt-mit-ai-committee",
             "2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026",
             "2026-05-17-agentic-engineering-banks-blueprint-2026",
             "2026-05-11-lucy-besson-knowledge-transfer-ai-quantum",
@@ -146,6 +155,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "and a Rust static site generator."
         ),
         "slugs": [
+            "2026-10-13-open-source-physical-ai-lerobot-end-to-end-robotics",
             "2026-07-22-ssg-enterprise-strategic-deep-dive-architectural-roadmap",
             "2024-03-08-rustlogs-advanced-logging-library-for-rust-applications",
             "2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library",
@@ -184,6 +194,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "lens that turns autonomous workflows into supervisory-ready evidence."
         ),
         "slugs": [
+            "2026-10-13-humanoid-functional-robotics-manufacturing-automation",
             "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026",
             "2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026",
             "2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026",
@@ -219,6 +230,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "into a supervisor-ready scoreboard."
         ),
         "slugs": [
+            "2026-09-20-cloudflare-wants-to-issue-its-own-certificates-free-ca-concentration",
             "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026",
             "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026",
             "2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026",
@@ -255,6 +267,9 @@ TOPICS: dict[str, dict[str, object]] = {
             "banks can build inside their own data perimeter."
         ),
         "slugs": [
+            "2026-10-10-what-a-machine-learning-textbook-s-contents-page-says-about-the-field",
+            "2026-10-05-internal-openai-model-pins-down-exact-decay-rate-cohn-elkies-sphere-packing",
+            "2026-09-30-detector-reads-probabilities-instead-of-verdicts-44-benchmarks",
             "2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1",
             "2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai",
             "2024-02-26-google-gemma-ai-transforming-open-source-ai-development",
@@ -288,6 +303,8 @@ TOPICS: dict[str, dict[str, object]] = {
             "AI inside Tier-1 banks."
         ),
         "slugs": [
+            "2026-10-13-physical-ai-robotics-workforce-governance-industrial-operations",
+            "2026-09-25-when-technology-lands-before-institutions-adapt-mit-ai-committee",
             "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026",
             "2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026",
             "2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026",

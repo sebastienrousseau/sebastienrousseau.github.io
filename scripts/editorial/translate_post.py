@@ -62,6 +62,7 @@ STUB_MARKER = "<!-- translation-stub: replace this body in Claude Code -->"
 sys.path.insert(0, str(ROOT / "scripts"))
 import _lang_registry
 from _frontmatter import parse_frontmatter  # canonical shared parser (lib/_frontmatter)
+from _romanise import derive_slug
 
 
 def active_non_en_locales() -> list[str]:
@@ -211,7 +212,8 @@ def scaffold_one(
     if not fm:
         raise SystemExit(f"could not parse frontmatter of {en_slug}")
 
-    target_slug = localized_slug(en_slug, lang_code)
+    date = en_slug[:10]
+    target_slug = f"{date}-{derive_slug(fm.get('title', ''), lang_code, date[:4])}"
     out_path = POSTS / lang_code / f"{target_slug}.md"
     slugs_json = I18N / lang_code / "slugs.json"
 
