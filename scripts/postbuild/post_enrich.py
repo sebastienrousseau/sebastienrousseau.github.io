@@ -352,14 +352,14 @@ def _overlap_via_index(
     the post dicts are unhashable and identity is what distinguishes them.
     """
     overlap: dict[int, tuple[int, dict[str, object]]] = {}
-    for tag in own_tags:
+    for tag in sorted(own_tags):
         for other in tag_index.get(tag, ()):
             if other["path"] == own_path:
                 continue
             oid = id(other)
             score = overlap[oid][0] + 1 if oid in overlap else 1
             overlap[oid] = (score, other)
-    return [(score, other["date_iso"], other) for score, other in overlap.values()]
+    return [(score, str(other["date_iso"]), other) for score, other in overlap.values()]
 
 
 def _overlap_via_scan(
@@ -372,7 +372,7 @@ def _overlap_via_scan(
             continue
         score = len(own_tags & {t.lower() for t in other["tags"]})
         if score:
-            out.append((score, other["date_iso"], other))
+            out.append((score, str(other["date_iso"]), other))
     return out
 
 
@@ -383,8 +383,9 @@ def _related_posts(
 ) -> list[dict[str, object]]:
     """Stage 2: topic-cluster related posts via tag-overlap score.
 
-    Ranked by shared-tag count, then recency. Capped at three: the lead block
-    is a pointer, not an index.
+    Ranked by shared-tag count, then recency, then filename stem so ties on
+    same-date posts never depend on set iteration order across processes.
+    Capped at three: the lead block is a pointer, not an index.
     """
     own_tags = {t.lower() for t in post["tags"]}
     own_path = post["path"]
@@ -393,7 +394,7 @@ def _related_posts(
         if tag_index is not None
         else _overlap_via_scan(own_tags, own_path, all_posts)
     )
-    candidates.sort(key=lambda x: (-x[0], -int(x[1].replace("-", ""))))
+    candidates.sort(key=lambda x: (-x[0], -int(x[1].replace("-", "")), str(x[2]["path"].name)))
     return [o for _, _, o in candidates[:3]]
 
 
