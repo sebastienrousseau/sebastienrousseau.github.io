@@ -190,16 +190,11 @@ def test_scaffold_one_dry_run_reports_without_writing(fake_repo):
 
 def test_scaffold_one_skips_existing_real_translation(fake_repo):
     _seed_en(fake_repo)
-    target = fake_repo / "_posts" / "fr" / "2026-05-19-sample.md"
-    target.parent.mkdir(parents=True, exist_ok=True)
-    # Use the EN-fallback slug so we don't need to predict the FR slug.
-    real_body = "---\nlanguage: 'fr'\n---\n\nreal translated body"
-    target.write_text(real_body, encoding="utf-8")
-    # The scaffolder uses the localized slug for FR, so this file at
-    # the EN slug doesn't collide. Use DE (which has no slug-dict
-    # entry for 'sample') so the path matches.
-    target_de = fake_repo / "_posts" / "de" / "2026-05-19-sample.md"
+    # The scaffolder uses the localized slug derived from the title ("Sample headline")
+    # which resolves to "2026-05-19-sample-headline.md".
+    target_de = fake_repo / "_posts" / "de" / "2026-05-19-sample-headline.md"
     target_de.parent.mkdir(parents=True, exist_ok=True)
+    real_body = "---\nlanguage: 'de'\n---\n\nreal translated body"
     target_de.write_text(real_body, encoding="utf-8")
     status = tp.scaffold_one(
         "2026-05-19-sample",
