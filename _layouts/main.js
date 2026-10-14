@@ -1122,3 +1122,84 @@ function fallbackCopy(text, done) {
     sync();
     toggle.addEventListener("change", sync);
 })();
+
+// ---------------------------------------------------------------------------
+// Homepage hero ML-KEM lattice clock — synchronise hands and odometer drums
+// to live Europe/London wall-clock time via SVG transform attributes (no
+// inline CSS styles so strict style-src 'self' CSP is preserved).
+// ---------------------------------------------------------------------------
+(function () {
+    "use strict";
+    var hh = document.getElementById("hero-clock-hh");
+    var hhUn = document.getElementById("hero-clock-hh-un");
+    var hhRoll = document.getElementById("hero-clock-hh-roll");
+    var mm = document.getElementById("hero-clock-mm");
+    var mmUn = document.getElementById("hero-clock-mm-un");
+    var mmRoll = document.getElementById("hero-clock-mm-roll");
+    var ss = document.getElementById("hero-clock-ss");
+    if (!hh || !hhUn || !hhRoll || !mm || !mmUn || !mmRoll || !ss) return;
+
+    var fmt = null;
+    try {
+        fmt = new Intl.DateTimeFormat("en-GB", {
+            timeZone: "Europe/London",
+            hourCycle: "h23",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit"
+        });
+    } catch (_) {
+        fmt = null;
+    }
+
+    var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion:\x20reduce)").matches;
+
+    function easeInOut(t) {
+        return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+    }
+
+    function updateClock() {
+        var now = new Date();
+        var h = now.getUTCHours();
+        var m = now.getUTCMinutes();
+        var s = now.getUTCSeconds();
+        if (fmt && fmt.formatToParts) {
+            var parts = fmt.formatToParts(now);
+            for (var i = 0; i < parts.length; i++) {
+                if (parts[i].type === "hour") h = parseInt(parts[i].value, 10) || 0;
+                else if (parts[i].type === "minute") m = parseInt(parts[i].value, 10) || 0;
+                else if (parts[i].type === "second") s = parseInt(parts[i].value, 10) || 0;
+            }
+        }
+        var frac = reduced ? 0 : now.getMilliseconds() / 1000;
+        var h12 = h % 12;
+        var sub = m * 60 + s + frac;
+        var sec = h12 * 3600 + sub;
+        var hDeg = (sec / 43200) * 360;
+        var mDeg = (sub / 3600) * 360;
+        var sDeg = ((s + frac) / 60) * 360;
+
+        var mRoll = m;
+        if (!reduced && s === 59 && frac > 0.45) {
+            mRoll = m + easeInOut((frac - 0.45) / 0.55);
+        }
+        var hRoll = h12;
+        if (!reduced && m === 59 && s === 59 && frac > 0.45) {
+            hRoll = h12 + easeInOut((frac - 0.45) / 0.55);
+        }
+
+        hh.setAttribute("transform", "rotate(" + hDeg.toFixed(3) + ",1038,300)");
+        hhUn.setAttribute("transform", "rotate(" + (-hDeg).toFixed(3) + ",1038,174)");
+        hhRoll.setAttribute("transform", "translate(0," + (-hRoll * 54).toFixed(2) + ")");
+        mm.setAttribute("transform", "rotate(" + mDeg.toFixed(3) + ",1038,300)");
+        mmUn.setAttribute("transform", "rotate(" + (-mDeg).toFixed(3) + ",1038,116)");
+        mmRoll.setAttribute("transform", "translate(0," + (-mRoll * 54).toFixed(2) + ")");
+        ss.setAttribute("transform", "rotate(" + sDeg.toFixed(2) + ",1038,300)");
+    }
+
+    updateClock();
+    setInterval(function () {
+        if (!document.hidden) updateClock();
+    }, reduced ? 10000 : 100);
+})();
+

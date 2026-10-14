@@ -101,6 +101,9 @@
         --ink-faint:#4f4f54;       /* 8.14:1 vs --bg. AAA all sizes. */
         --bg:#ffffff;
         --bg-alt:#f1f1f3;
+        --hero-bg:#f5f5f7;
+        --hero-glow:#4f8dff;
+        --hero-badge-bg:#f5f5f7;
         --card:#ffffff;
         --border:#d2d2d7;
         --shadow:0 1px 0 rgba(0,0,0,.06);
@@ -154,6 +157,9 @@
         --accent:#8cc0ff;          /* 11.1:1 vs --bg (#000). AAA. */
         --bg:#000000;
         --bg-alt:#1d1d1f;
+        --hero-bg:#000000;
+        --hero-glow:#2f6fe0;
+        --hero-badge-bg:#000000;
         --card:#161617;
         --border:#3a3a3c;
         --shadow:0 1px 0 rgba(255,255,255,.05);
@@ -177,6 +183,9 @@
           --accent:#8cc0ff;
           --bg:#000000;
           --bg-alt:#1d1d1f;
+          --hero-bg:#000000;
+          --hero-glow:#2f6fe0;
+          --hero-badge-bg:#000000;
           --card:#161617;
           --border:#3a3a3c;
           --paper:#0b0b0d;
@@ -1893,6 +1902,20 @@
       .feat-sub.center{margin-inline:auto}
       .feat-sub strong,.feat-headline strong{display:inline;font-weight:600}
       .feat-cta{display:inline-flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-top:8px}
+      .feat-hero{background:var(--hero-bg);padding:clamp(56px,7vw,96px) var(--pad-x);border-bottom:1px solid var(--border)}
+      .feat-hero .wrap.feat-hero-grid{max-width:var(--max-wide);display:grid;grid-template-columns:minmax(0,1.12fr) minmax(320px,.88fr);align-items:center;gap:clamp(32px,4vw,56px);text-align:start}
+      .feat-hero-copy{position:relative;z-index:2;display:flex;flex-direction:column;align-items:flex-start;text-align:start}
+      .feat-hero .hero-portrait{margin:0 0 20px}
+      .feat-hero .feat-headline.center{margin-inline:0;text-align:start;font-size:clamp(36px,4.4vw,60px);line-height:1.05;letter-spacing:-.028em}
+      .feat-hero .feat-sub.center{margin-inline:0;text-align:start;max-width:54ch}
+      .feat-hero .feat-cta{justify-content:flex-start}
+      .feat-hero-stage{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;width:100%;max-width:500px;margin-inline:auto}
+      .hero-lattice-clock{width:100%;height:auto;overflow:visible;color:var(--accent);display:block;user-select:none;-webkit-user-select:none;pointer-events:none}
+      .hero-glow-stop{stop-color:var(--hero-glow)}
+      .hero-clock-badge{fill:var(--hero-badge-bg);stroke:var(--accent);stroke-width:2.5}
+      .hero-clock-num{fill:var(--ink);font-family:var(--type-body);font-size:22px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+      .hero-clock-pivot{fill:var(--hero-bg)}
+      @media (max-width:959px){.feat-hero .wrap.feat-hero-grid{grid-template-columns:1fr;text-align:center}.feat-hero-copy{align-items:center;text-align:center}.feat-hero .hero-portrait{margin:0 auto 20px}.feat-hero .feat-headline.center,.feat-hero .feat-sub.center{margin-inline:auto;text-align:center}.feat-hero .feat-cta{justify-content:center}.feat-hero-stage{max-width:380px;margin-top:12px}}
       /* 3-column feature grid */
       .feat-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:64px;margin-top:64px;text-align:start}
       @media (max-width:833px){.feat-cols{grid-template-columns:1fr;gap:40px;margin-top:48px}}
@@ -2173,14 +2196,75 @@
 
     <!-- gen-layouts:hero-start -->
     <section class="feat feat-hero" aria-labelledby="hero-headline">
-      <div class="wrap">
-        <img class="hero-portrait" src="{{image}}" alt="{{image_alt}}" width="96" height="96" loading="eager" fetchpriority="high" decoding="async" />
-        <p class="feat-eyebrow"><a href="/about/index.html">{{name}}</a></p>
-        <h1 id="hero-headline" class="feat-headline center" itemprop="headline">Securing the future of banking<br />with agentic AI<br />and post-quantum cryptography.</h1>
-        <p class="feat-sub center">Open-source payments, post-quantum security, and applied AI for financial services.</p>
-        <div class="feat-cta">
-          <a class="pill" href="/articles/index.html">Read latest research</a>
-          <a class="pill ghost" href="/contact/index.html">Get in touch</a>
+      <div class="wrap feat-hero-grid">
+        <div class="feat-hero-copy">
+          <img class="hero-portrait" src="{{image}}" alt="{{image_alt}}" width="96" height="96" loading="eager" fetchpriority="high" decoding="async" />
+          <p class="feat-eyebrow"><a href="/about/index.html">{{name}}</a></p>
+          <h1 id="hero-headline" class="feat-headline center" itemprop="headline">Securing the future of banking<br />with agentic AI<br />and post-quantum cryptography.</h1>
+          <p class="feat-sub center">Open-source payments, post-quantum security, and applied AI for financial services.</p>
+          <div class="feat-cta">
+            <a class="pill" href="/articles/index.html">Read latest research</a>
+            <a class="pill ghost" href="/contact/index.html">Get in touch</a>
+          </div>
+        </div>
+        <div class="feat-hero-stage" aria-hidden="true">
+          <svg class="hero-lattice-clock" viewBox="778 40 520 520" width="520" height="520" aria-hidden="true" focusable="false">
+            <defs>
+              <radialGradient id="hero-g0" cx="1060" cy="300" r="520" gradientUnits="userSpaceOnUse">
+                <stop offset="0" class="hero-glow-stop" stop-opacity=".28"/>
+                <stop offset="1" class="hero-glow-stop" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="hero-fade-g" x1="560" y1="0" x2="1280" y2="0" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="white" stop-opacity="0"/>
+                <stop offset=".38" stop-color="white"/>
+              </linearGradient>
+              <mask id="hero-fade" maskUnits="userSpaceOnUse" x="500" y="-60" width="840" height="720">
+                <rect x="500" y="-60" width="840" height="720" fill="url(#hero-fade-g)"/>
+              </mask>
+              <filter id="hero-bsh" x="-30%" y="-30%" width="160%" height="160%">
+                <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="black" flood-opacity=".18"/>
+              </filter>
+              <clipPath id="hero-hclip"><circle cx="1038" cy="174" r="25"/></clipPath>
+              <clipPath id="hero-mclip"><circle cx="1038" cy="116" r="25"/></clipPath>
+            </defs>
+            <circle cx="1060" cy="300" r="520" fill="url(#hero-g0)"/>
+            <g fill="currentColor" mask="url(#hero-fade)">
+              <circle cx="576" cy="596" r="2.6" opacity=".17"/><circle cx="602" cy="364" r="1.5" opacity=".22"/><circle cx="612" cy="398" r="1.5" opacity=".22"/><circle cx="622" cy="432" r="1.5" opacity=".22"/><circle cx="632" cy="466" r="1.5" opacity=".21"/><circle cx="642" cy="500" r="2.6" opacity=".21"/><circle cx="652" cy="534" r="1.5" opacity=".2"/><circle cx="662" cy="568" r="1.5" opacity=".19"/><circle cx="672" cy="602" r="1.5" opacity=".18"/><circle cx="618" cy="98" r="1.5" opacity=".2"/><circle cx="628" cy="132" r="1.5" opacity=".21"/><circle cx="638" cy="166" r="1.5" opacity=".23"/><circle cx="648" cy="200" r="1.5" opacity=".25"/><circle cx="658" cy="234" r="2.6" opacity=".26"/><circle cx="668" cy="268" r="1.5" opacity=".27"/><circle cx="678" cy="302" r="1.5" opacity=".28"/><circle cx="688" cy="336" r="1.5" opacity=".28"/><circle cx="698" cy="370" r="2.6" opacity=".29"/><circle cx="708" cy="404" r="1.5" opacity=".29"/><circle cx="718" cy="438" r="1.5" opacity=".29"/><circle cx="728" cy="472" r="1.5" opacity=".28"/><circle cx="738" cy="506" r="2.6" opacity=".27"/><circle cx="748" cy="540" r="1.5" opacity=".26"/><circle cx="758" cy="574" r="1.5" opacity=".25"/><circle cx="694" cy="4" r="2.6" opacity=".2"/><circle cx="704" cy="38" r="1.5" opacity=".22"/><circle cx="714" cy="72" r="1.5" opacity=".25"/><circle cx="724" cy="106" r="1.5" opacity=".27"/><circle cx="734" cy="140" r="2.6" opacity=".29"/><circle cx="744" cy="174" r="1.5" opacity=".31"/><circle cx="754" cy="208" r="1.5" opacity=".33"/><circle cx="764" cy="242" r="1.5" opacity=".34"/><circle cx="774" cy="276" r="2.6" opacity=".35"/><circle cx="784" cy="310" r="1.5" opacity=".36"/><circle cx="794" cy="344" r="1.5" opacity=".36"/><circle cx="804" cy="378" r="1.5" opacity=".36"/><circle cx="814" cy="412" r="2.6" opacity=".36"/><circle cx="824" cy="446" r="1.5" opacity=".36"/><circle cx="834" cy="480" r="1.5" opacity=".35"/><circle cx="844" cy="514" r="1.5" opacity=".33"/><circle cx="854" cy="548" r="2.6" opacity=".32"/><circle cx="864" cy="582" r="1.5" opacity=".3"/><circle cx="800" cy="12" r="1.5" opacity=".27"/><circle cx="810" cy="46" r="1.5" opacity=".3"/><circle cx="820" cy="80" r="1.5" opacity=".32"/><circle cx="830" cy="114" r="2.6" opacity=".34"/><circle cx="840" cy="148" r="1.5" opacity=".36"/><circle cx="850" cy="182" r="1.5" opacity=".38"/><circle cx="860" cy="216" r="1.5" opacity=".4"/><circle cx="870" cy="250" r="2.6" opacity=".42"/><circle cx="880" cy="284" r="1.5" opacity=".43"/><circle cx="890" cy="318" r="1.5" opacity=".44"/><circle cx="900" cy="352" r="1.5" opacity=".44"/><circle cx="910" cy="386" r="2.6" opacity=".43"/><circle cx="920" cy="420" r="1.5" opacity=".42"/><circle cx="930" cy="454" r="1.5" opacity=".41"/><circle cx="940" cy="488" r="1.5" opacity=".39"/><circle cx="950" cy="522" r="2.6" opacity=".37"/><circle cx="960" cy="556" r="1.5" opacity=".35"/><circle cx="970" cy="590" r="1.5" opacity=".33"/><circle cx="906" cy="20" r="2.6" opacity=".32"/><circle cx="916" cy="54" r="1.5" opacity=".34"/><circle cx="926" cy="88" r="1.5" opacity=".37"/><circle cx="936" cy="122" r="1.5" opacity=".4"/><circle cx="946" cy="156" r="2.6" opacity=".42"/><circle cx="956" cy="190" r="1.5" opacity=".45"/><circle cx="966" cy="224" r="1.5" opacity=".47"/><circle cx="976" cy="258" r="1.5" opacity=".49"/><circle cx="986" cy="292" r="2.6" opacity=".51"/><circle cx="996" cy="326" r="1.5" opacity=".51"/><circle cx="1006" cy="360" r="1.5" opacity=".5"/><circle cx="1016" cy="394" r="1.5" opacity=".48"/><circle cx="1026" cy="428" r="2.6" opacity=".45"/><circle cx="1036" cy="462" r="1.5" opacity=".43"/><circle cx="1046" cy="496" r="1.5" opacity=".4"/><circle cx="1056" cy="530" r="1.5" opacity=".38"/><circle cx="1066" cy="564" r="2.6" opacity=".35"/><circle cx="1076" cy="598" r="1.5" opacity=".32"/><circle cx="1002" cy="-6" r="1.5" opacity=".32"/><circle cx="1012" cy="28" r="1.5" opacity=".35"/><circle cx="1022" cy="62" r="2.6" opacity=".37"/><circle cx="1032" cy="96" r="1.5" opacity=".4"/><circle cx="1042" cy="130" r="1.5" opacity=".42"/><circle cx="1052" cy="164" r="1.5" opacity=".45"/><circle cx="1062" cy="198" r="2.6" opacity=".47"/><circle cx="1072" cy="232" r="1.5" opacity=".49"/><circle cx="1082" cy="266" r="1.5" opacity=".51"/><circle cx="1092" cy="300" r="1.5" opacity=".51"/><circle cx="1102" cy="334" r="2.6" opacity=".5"/><circle cx="1112" cy="368" r="1.5" opacity=".47"/><circle cx="1122" cy="402" r="1.5" opacity=".45"/><circle cx="1132" cy="436" r="1.5" opacity=".43"/><circle cx="1142" cy="470" r="2.6" opacity=".4"/><circle cx="1152" cy="504" r="1.5" opacity=".38"/><circle cx="1162" cy="538" r="1.5" opacity=".35"/><circle cx="1172" cy="572" r="1.5" opacity=".32"/><circle cx="1182" cy="606" r="2.6" opacity=".3"/><circle cx="1108" cy="2" r="1.5" opacity=".32"/><circle cx="1118" cy="36" r="1.5" opacity=".34"/><circle cx="1128" cy="70" r="1.5" opacity=".36"/><circle cx="1138" cy="104" r="2.6" opacity=".38"/><circle cx="1148" cy="138" r="1.5" opacity=".4"/><circle cx="1158" cy="172" r="1.5" opacity=".42"/><circle cx="1168" cy="206" r="1.5" opacity=".43"/><circle cx="1178" cy="240" r="2.6" opacity=".44"/><circle cx="1188" cy="274" r="1.5" opacity=".43"/><circle cx="1198" cy="308" r="1.5" opacity=".43"/><circle cx="1208" cy="342" r="1.5" opacity=".42"/><circle cx="1218" cy="376" r="2.6" opacity=".4"/><circle cx="1228" cy="410" r="1.5" opacity=".39"/><circle cx="1238" cy="444" r="1.5" opacity=".37"/><circle cx="1248" cy="478" r="1.5" opacity=".35"/><circle cx="1258" cy="512" r="2.6" opacity=".32"/><circle cx="1268" cy="546" r="1.5" opacity=".3"/><circle cx="1278" cy="580" r="1.5" opacity=".28"/><circle cx="1214" cy="10" r="2.6" opacity=".29"/><circle cx="1224" cy="44" r="1.5" opacity=".31"/><circle cx="1234" cy="78" r="1.5" opacity=".33"/><circle cx="1244" cy="112" r="1.5" opacity=".34"/><circle cx="1254" cy="146" r="2.6" opacity=".35"/><circle cx="1264" cy="180" r="1.5" opacity=".36"/><circle cx="1274" cy="214" r="1.5" opacity=".36"/><circle cx="1284" cy="248" r="1.5" opacity=".36"/>
+            </g>
+            <circle cx="1038" cy="300" r="184" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 8" opacity=".18"/>
+            <circle cx="1038" cy="300" r="126" fill="none" stroke="currentColor" stroke-width="1" opacity=".1"/>
+            <g fill="currentColor">
+              <circle cx="1038.0" cy="116.0" r="3" opacity=".55"/><circle cx="1130.0" cy="140.7" r="1.8" opacity=".28"/><circle cx="1197.3" cy="208.0" r="1.8" opacity=".28"/><circle cx="1222.0" cy="300.0" r="3" opacity=".55"/><circle cx="1197.3" cy="392.0" r="1.8" opacity=".28"/><circle cx="1130.0" cy="459.3" r="1.8" opacity=".28"/><circle cx="1038.0" cy="484.0" r="3" opacity=".55"/><circle cx="946.0" cy="459.3" r="1.8" opacity=".28"/><circle cx="878.7" cy="392.0" r="1.8" opacity=".28"/><circle cx="854.0" cy="300.0" r="3" opacity=".55"/><circle cx="878.7" cy="208.0" r="1.8" opacity=".28"/><circle cx="946.0" cy="140.7" r="1.8" opacity=".28"/>
+            </g>
+            <g id="hero-clock-hh" transform="rotate(304.75,1038,300)">
+              <line x1="1038" y1="300" x2="1038" y2="202" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <g id="hero-clock-hh-un" transform="rotate(-304.75,1038,174)">
+                <circle cx="1038" cy="174" r="28" class="hero-clock-badge" filter="url(#hero-bsh)"/>
+                <g clip-path="url(#hero-hclip)">
+                  <g id="hero-clock-hh-roll" class="hero-clock-num" text-anchor="middle" transform="translate(0,-540)">
+                    <text x="1038" y="182">12</text><text x="1038" y="236">1</text><text x="1038" y="290">2</text><text x="1038" y="344">3</text><text x="1038" y="398">4</text><text x="1038" y="452">5</text><text x="1038" y="506">6</text><text x="1038" y="560">7</text><text x="1038" y="614">8</text><text x="1038" y="668">9</text><text x="1038" y="722">10</text><text x="1038" y="776">11</text><text x="1038" y="830">12</text>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <g id="hero-clock-mm" transform="rotate(57,1038,300)">
+              <line x1="1038" y1="300" x2="1038" y2="144" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <g id="hero-clock-mm-un" transform="rotate(-57,1038,116)">
+                <circle cx="1038" cy="116" r="28" class="hero-clock-badge" filter="url(#hero-bsh)"/>
+                <g clip-path="url(#hero-mclip)">
+                  <g id="hero-clock-mm-roll" class="hero-clock-num" text-anchor="middle" transform="translate(0,-486)">
+                    <text x="1038" y="124">00</text><text x="1038" y="178">01</text><text x="1038" y="232">02</text><text x="1038" y="286">03</text><text x="1038" y="340">04</text><text x="1038" y="394">05</text><text x="1038" y="448">06</text><text x="1038" y="502">07</text><text x="1038" y="556">08</text><text x="1038" y="610">09</text><text x="1038" y="664">10</text><text x="1038" y="718">11</text><text x="1038" y="772">12</text><text x="1038" y="826">13</text><text x="1038" y="880">14</text><text x="1038" y="934">15</text><text x="1038" y="988">16</text><text x="1038" y="1042">17</text><text x="1038" y="1096">18</text><text x="1038" y="1150">19</text><text x="1038" y="1204">20</text><text x="1038" y="1258">21</text><text x="1038" y="1312">22</text><text x="1038" y="1366">23</text><text x="1038" y="1420">24</text><text x="1038" y="1474">25</text><text x="1038" y="1528">26</text><text x="1038" y="1582">27</text><text x="1038" y="1636">28</text><text x="1038" y="1690">29</text><text x="1038" y="1744">30</text><text x="1038" y="1798">31</text><text x="1038" y="1852">32</text><text x="1038" y="1906">33</text><text x="1038" y="1960">34</text><text x="1038" y="2014">35</text><text x="1038" y="2068">36</text><text x="1038" y="2122">37</text><text x="1038" y="2176">38</text><text x="1038" y="2230">39</text><text x="1038" y="2284">40</text><text x="1038" y="2338">41</text><text x="1038" y="2392">42</text><text x="1038" y="2446">43</text><text x="1038" y="2500">44</text><text x="1038" y="2554">45</text><text x="1038" y="2608">46</text><text x="1038" y="2662">47</text><text x="1038" y="2716">48</text><text x="1038" y="2770">49</text><text x="1038" y="2824">50</text><text x="1038" y="2878">51</text><text x="1038" y="2932">52</text><text x="1038" y="2986">53</text><text x="1038" y="3040">54</text><text x="1038" y="3094">55</text><text x="1038" y="3148">56</text><text x="1038" y="3202">57</text><text x="1038" y="3256">58</text><text x="1038" y="3310">59</text><text x="1038" y="3364">00</text>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <g id="hero-clock-ss" transform="rotate(180,1038,300)">
+              <line x1="1038" y1="322" x2="1038" y2="132" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity=".45"/>
+              <circle cx="1038" cy="132" r="3.5" fill="currentColor" opacity=".75"/>
+            </g>
+            <circle cx="1038" cy="300" r="7" fill="currentColor"/>
+            <circle cx="1038" cy="300" r="3" class="hero-clock-pivot"/>
+          </svg>
         </div>
       </div>
     </section>

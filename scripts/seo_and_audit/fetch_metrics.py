@@ -109,14 +109,22 @@ def _crates_downloads_all() -> int:
 
 
 def _github_repos() -> tuple[int, int]:
-    """Sum stars + forks across the user's repos. (0, 0) on failure."""
-    data = _http_get_json(
-        f"https://api.github.com/users/{GITHUB_USER}/repos?per_page=100&type=owner&sort=updated"
-    )
-    if not isinstance(data, list):
-        return 0, 0
-    stars = sum(int(r.get("stargazers_count") or 0) for r in data)
-    forks = sum(int(r.get("forks_count") or 0) for r in data)
+    """Sum stars + forks across the user's owned non-fork repos across all pages."""
+    stars = 0
+    forks = 0
+    for page in range(1, 11):
+        data = _http_get_json(
+            f"https://api.github.com/users/{GITHUB_USER}/repos?per_page=100&type=owner&sort=updated&page={page}"
+        )
+        if not isinstance(data, list) or not data:
+            break
+        for r in data:
+            if r.get("fork"):
+                continue
+            stars += int(r.get("stargazers_count") or 0)
+            forks += int(r.get("forks_count") or 0)
+        if len(data) < 100:
+            break
     return stars, forks
 
 
@@ -195,6 +203,8 @@ def main() -> int:
     pypi_total = sum(_pypi_downloads(p) for p in PYPI_PACKAGES)
     crates_total = _crates_downloads_all()
     downloads_total = _max_value("downloads_total", pypi_total + crates_total, fallback)
+    downloads_30d = _max_value("downloads_30d", pypi_total, fallback)
+    packages_published = _max_value("packages_published", len(PYPI_PACKAGES), fallback)
 
     stars, forks = _github_repos()
     stars_total = _max_value("github_stars", stars, fallback)
@@ -222,10 +232,17 @@ def main() -> int:
             },
             {
                 "key": "downloads_total",
-                "label": "Open-source package downloads (PyPI + crates.io)",
+                "label": "All-time open-source package downloads (crates.io + PyPI + npm)",
                 "value": downloads_total,
                 "format": "compact",
-                "source": "pypistats.org + crates.io",
+                "source": "crates.io + clickpy.clickhouse.com + api.npmjs.org",
+            },
+            {
+                "key": "downloads_30d",
+                "label": "Downloads in the last 30 days (crates.io + PyPI + npm)",
+                "value": downloads_30d,
+                "format": "compact",
+                "source": "crates.io + clickpy.clickhouse.com + api.npmjs.org",
             },
             {
                 "key": "github_stars",
@@ -233,6 +250,13 @@ def main() -> int:
                 "value": stars_total,
                 "format": "compact",
                 "source": "api.github.com/users/sebastienrousseau/repos",
+            },
+            {
+                "key": "packages_published",
+                "label": "Packages published across crates.io, PyPI, and npm",
+                "value": packages_published,
+                "format": "compact",
+                "source": "crates.io + pypi.org + npmjs.com",
             },
             {
                 "key": "github_forks",

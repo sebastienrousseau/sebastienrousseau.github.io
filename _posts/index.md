@@ -157,20 +157,20 @@ site_software: "Static Site Generator, Rust"
 <h2 id="proof" class="feat-headline center">By the numbers.</h2>
 <section class="proof-rail" aria-label="Open source by the numbers">
 <div class="kpi-cell">
-  <span class="kpi-cell-value" data-kpi="downloads_total">42.1M</span>
-  <span class="kpi-cell-label">Open-source downloads</span>
+  <span class="kpi-cell-value" data-kpi="downloads_total">51.2M</span>
+  <span class="kpi-cell-label">All-time downloads</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value" data-kpi="github_stars">672</span>
+  <span class="kpi-cell-value" data-kpi="downloads_30d">3.7M</span>
+  <span class="kpi-cell-label">Downloads, last 30 days</span>
+</div>
+<div class="kpi-cell">
+  <span class="kpi-cell-value" data-kpi="github_stars">694</span>
   <span class="kpi-cell-label">GitHub stars</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value" data-kpi="articles_signed">96</span>
-  <span class="kpi-cell-label">Sigstore-signed articles</span>
-</div>
-<div class="kpi-cell">
-  <span class="kpi-cell-value" data-kpi="years_payments">19</span>
-  <span class="kpi-cell-label">Years in payments and banking</span>
+  <span class="kpi-cell-value" data-kpi="packages_published">179</span>
+  <span class="kpi-cell-label">Packages published</span>
 </div>
 </section>
 <div class="brands">
