@@ -272,6 +272,18 @@ def test_find_stub_locales_skips_missing_files(fake_repo):
     assert tp.find_stub_locales("2026-05-19-sample") == []
 
 
+def test_find_stub_locales_warns_on_malformed_slugs_json(fake_repo, capsys):
+    _seed_en(fake_repo)
+    tp.scaffold_one("2026-05-19-sample", _EN_SAMPLE, "fr", dry_run=False)
+    (fake_repo / "_data" / "i18n" / "fr" / "slugs.json").write_text(
+        "{invalid json",
+        encoding="utf-8",
+    )
+    pending = tp.find_stub_locales("2026-05-19-sample")
+    assert {lang for lang, _ in pending} == {"fr"}
+    assert "warning: failed to read slug map" in capsys.readouterr().err
+
+
 # ---------------------------------------------------------------------------
 # CLI entry point
 # ---------------------------------------------------------------------------

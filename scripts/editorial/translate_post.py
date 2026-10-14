@@ -274,8 +274,11 @@ def find_stub_locales(en_slug: str) -> list[tuple[str, Path]]:
             try:
                 data = json.loads(slugs_json.read_text(encoding="utf-8"))
                 target_slug = data.get("articles", {}).get(en_slug)
-            except (json.JSONDecodeError, OSError):
-                pass
+            except (json.JSONDecodeError, OSError) as exc:
+                print(
+                    f"warning: failed to read slug map {slugs_json}: {exc}",
+                    file=sys.stderr,
+                )
         if not target_slug:
             if title:
                 target_slug = f"{date}-{derive_slug(title, lang, date[:4])}"

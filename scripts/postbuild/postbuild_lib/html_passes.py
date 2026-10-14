@@ -22,10 +22,10 @@ import _lang_registry
 from postbuild_lib.article_furniture import (
     _BODY_H1_RE,
     _H1_RE,
-    _TABLE_OPEN_RE,
     _TH_TEXT_RE,
     _TR_RE,
     PUBLIC,
+    TABLE_OPEN_RE,
     TAG_STRIP_RE,
     _is_french,
 )
@@ -104,7 +104,7 @@ def _card_label_table(table: str) -> str:
             return f"<table{attrs}>".replace('class="', 'class="table--cards ', 1)
         return f'<table{attrs} class="table--cards">'
 
-    head = _TABLE_OPEN_RE.sub(add_class, table[: head_m.end()], count=1)
+    head = TABLE_OPEN_RE.sub(add_class, table[: head_m.end()], count=1)
     return head + body
 
 
