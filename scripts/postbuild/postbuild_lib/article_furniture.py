@@ -364,8 +364,8 @@ _LDJSON_BLOCK_RE = re.compile(
 BASE_URL = "https://sebastienrousseau.com"
 
 
-_TH_TEXT_RE = re.compile(r"<th\b[^>]*>([\s\S]*?)</th>", re.IGNORECASE)
-_TR_RE = re.compile(r"<tr\b[\s\S]*?</tr>", re.IGNORECASE)
+TH_TEXT_RE = re.compile(r"<th\b[^>]*>([\s\S]*?)</th>", re.IGNORECASE)
+TR_RE = re.compile(r"<tr\b[\s\S]*?</tr>", re.IGNORECASE)
 TABLE_OPEN_RE = re.compile(r"<table\b([^>]*)>", re.IGNORECASE)
 TAG_STRIP_RE = re.compile(r"<[^>]+>")
 

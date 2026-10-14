@@ -280,23 +280,23 @@
          ul scope, default disc bullets showed through. */
       .share-rail{margin:0 0 24px}
       .share-rail>ul{display:flex;gap:8px;padding:0;margin:0;list-style:none}
-      .share-rail li{margin:0;list-style:none}
-      .share-rail a,.share-rail button{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--border);background:var(--paper);color:var(--ink-mute);cursor:pointer;text-decoration:none;transition:color .2s ease,border-color .2s ease,background .2s ease}
-      .share-rail a:hover,.share-rail button:hover{color:var(--ink-deep);border-color:var(--ink-deep);background:var(--bg);opacity:1}
-      .share-rail svg{width:16px;height:16px;display:block;fill:currentColor}
+      .share-rail li{margin:0;padding:0;list-style:none;line-height:0}
+      .share-rail a,.share-rail button,main.prose .share-rail li>a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;min-width:44px;min-height:44px;padding:0;line-height:1;box-sizing:border-box;border-radius:50%;border:1px solid var(--border);background:var(--paper);color:var(--ink-mute);cursor:pointer;text-decoration:none;transition:color .2s ease,border-color .2s ease,background .2s ease}
+      .share-rail a:hover,.share-rail button:hover,main.prose .share-rail li>a:hover{color:var(--ink-deep);border-color:var(--ink-deep);background:var(--bg);opacity:1}
+      .share-rail svg{width:18px;height:18px;display:block;margin:auto;flex-shrink:0;fill:currentColor}
       @media (min-width:64em){
         .share-rail--sticky{position:fixed;inset-inline-start:24px;top:calc(var(--nav-h) + 96px);z-index:50;margin:0}
         .share-rail--sticky>ul{flex-direction:column}
       }
-      .share-rail--card a,.share-rail--card button{min-width:44px;min-height:44px;color:var(--paper);border-color:transparent;background:transparent}
-      .share-rail--card a:hover,.share-rail--card button:hover{color:var(--paper);border-color:var(--paper);background:transparent}
-      .share-rail--card svg{width:14px;height:14px}
+      .share-rail--card a,.share-rail--card button,main.prose .share-rail--card li>a{min-width:44px;min-height:44px;color:var(--paper);border-color:transparent;background:transparent}
+      .share-rail--card a:hover,.share-rail--card button:hover,main.prose .share-rail--card li>a:hover{color:var(--paper);border-color:var(--paper);background:transparent}
+      .share-rail--card svg{width:16px;height:16px}
       .action-rail{margin:0 0 24px}
       .action-rail>ul{display:flex;gap:8px;padding:0;margin:0;list-style:none}
-      .action-rail li{margin:0;list-style:none}
-      .action-rail a,.action-rail button{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:12px 18px;min-height:44px;min-width:44px;border:1px solid var(--border);background:var(--paper);color:var(--ink-deep);border-radius:999px;text-decoration:none;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;font-family:var(--type-body);transition:border-color .2s ease,background .2s ease,color .2s ease}
-      .action-rail a:hover,.action-rail button:hover{border-color:var(--ink-deep);background:var(--ink-deep);color:var(--paper);opacity:1}
-      .action-rail svg{width:14px;height:14px;display:block;fill:currentColor}
+      .action-rail li{margin:0;padding:0;list-style:none}
+      .action-rail a,.action-rail button,main.prose .action-rail li>a{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:12px 18px;min-height:44px;min-width:44px;box-sizing:border-box;border:1px solid var(--border);background:var(--paper);color:var(--ink-deep);border-radius:999px;text-decoration:none;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;font-family:var(--type-body);transition:border-color .2s ease,background .2s ease,color .2s ease}
+      .action-rail a:hover,.action-rail button:hover,main.prose .action-rail li>a:hover{border-color:var(--ink-deep);background:var(--ink-deep);color:var(--paper);opacity:1}
+      .action-rail svg{width:14px;height:14px;display:block;flex-shrink:0;fill:currentColor}
       @media (min-width:64em){
         .action-rail--sticky{position:fixed;inset-inline-end:24px;top:calc(var(--nav-h) + 96px);z-index:50;margin:0}
         .action-rail--sticky>ul{flex-direction:column}
@@ -2084,7 +2084,7 @@
       .ap-form textarea{min-height:160px;resize:vertical}
       .ap-form input:focus,.ap-form select:focus,.ap-form textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(var(--accent-rgb),.15)}
       .ap-form-actions{align-items:flex-start;margin-top:8px}
-      .ap-form button.pill{font-size:16px;padding:14px 28px;border:1px solid transparent;cursor:pointer}
+      .ap-form button.pill{font-size:16px;padding:14px 28px;border:none;cursor:pointer}
       .contact-aside{padding:28px 28px 32px;background:var(--card);border:1px solid var(--rule);border-radius:var(--radius);position:sticky;top:calc(var(--nav-h) + 24px)}
       .contact-aside-title{font-family:var(--type-body);font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute);margin:0 0 18px}
       .contact-aside-list{list-style:none;margin:0 0 20px;padding:0;display:flex;flex-direction:column;gap:18px}
@@ -2216,11 +2216,11 @@
       <div class="kpi-cell"><span class="kpi-cell-value">Tier-1</span><span class="kpi-cell-label">Banking · payments · post-quantum</span></div>
     </section>
 
-    <main id="main" class="content ap-section prose">
+    <main id="main" class="content ap-section">
       <div class="wrap contact-wrap">
         <div class="contact-layout" data-reveal>
           <div class="contact-form-col">
-            <p class="lede">{{!content}}</p>
+            <p class="lede">{{content}}</p>
             <form class="ap-form" action="https://formspree.io/f/{{form-id}}" method="POST">
               <fieldset>
               <legend class="visually-hidden">Send a message</legend>

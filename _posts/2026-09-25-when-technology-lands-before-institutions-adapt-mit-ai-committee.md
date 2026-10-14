@@ -3,10 +3,10 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "An illustration representing when the technology lands before the institution can adapt: what mit's ai committee says about teaching and learning."
+banner_alt: "White vaulted architectural corridor: institutional governance and MIT AI committee findings on generative AI in higher education."
 banner_height: "1280"
 banner_width: "1920"
-banner: "https://cloudcdn.pro/stocks/images/when-the-technology-lands-before-the-institution-can-adapt-what-mit-s-ai-committee-says-ab.webp"
+banner: "https://cloudcdn.pro/stocks/images/gdtography-911758.webp"
 cdn: "https://cloudcdn.pro"
 changefreq: "weekly"
 charset: "UTF-8"

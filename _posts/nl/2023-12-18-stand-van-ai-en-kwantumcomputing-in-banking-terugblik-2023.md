@@ -156,7 +156,7 @@ Vielen Dank nochmals voor uw Zeit — ich freue mich darauf, van u tot hören!
 [18]: https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023 "The Bletchley Declaration"
 [19]: https://www.spwereldwijd.com/en/research-insights/featured/special-editorial/the-ai-governance-challenge "The AI Governance Challenge"
 [20]: https://news.met.edu/2023/met-group-releases-white-papers-governance-ai-1211 "MIT group releases white papers on governance of AI"
-[21]: https://cloudcdn.pro/stocks/diagrams/ai-svaakware-market-revenue-2018-2025-professional.svg "AI Svaakware Market's Surging Revenue: A Visualization of Growth"
+[21]: https://cloudcdn.pro/stocks/diagrams/ai-software-market-revenue-2018-2025-professional.svg "AI Svaakware Market's Surging Revenue: A Visualization of Growth"
 [22]: https://cloudcdn.pro/stocks/diagrams/rise-of-open-source-ai-models-bar-chart.svg "Explosive Growth of open source AI Models in 2023"
 [23]: https://www.whitehouse.gov/ostp/ "Office of Science and Technology Policy"
 [24]: https://www.youtube.com/@bankingOnQuantum "banking on Quantum YouTube Channel"

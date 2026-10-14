@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "An illustration representing cloudflare wants to issue its own certificates, and its plan rests on a free-ca concentration problem."
+banner_alt: "Illuminated blue fibre-optic network strands: Cloudflare Bootstrap CA, Let's Encrypt and WebPKI certificate authority concentration."
 banner_height: "1280"
 banner_width: "1920"
-banner: "https://cloudcdn.pro/stocks/images/cloudflare-wants-to-issue-its-own-certificates-and-its-plan-rests-on-a-free-ca-concentrati.webp"
+banner: "https://cloudcdn.pro/stocks/images/sander-weeteling-KABfjuSOx74.webp"
 cdn: "https://cloudcdn.pro"
 changefreq: "weekly"
 charset: "UTF-8"

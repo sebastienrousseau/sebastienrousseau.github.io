@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "An illustration representing a detector that reads probabilities instead of emitting verdicts: what 44 benchmarks say about jev."
+banner_alt: "Matrix of floating-point numerical probabilities: Binoculars token cross-perplexity LLM text detection across 44 benchmarks."
 banner_height: "1280"
 banner_width: "1920"
-banner: "https://cloudcdn.pro/stocks/images/a-detector-that-reads-probabilities-instead-of-writing-verdicts-what-44-benchmarks-say-abo.webp"
+banner: "https://cloudcdn.pro/stocks/images/mika-baumeister-Wpnoqo2plFA.webp"
 cdn: "https://cloudcdn.pro"
 changefreq: "weekly"
 charset: "UTF-8"

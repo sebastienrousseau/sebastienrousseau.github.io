@@ -1,9 +1,9 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "An illustration representing what a machine learning textbook's contents page says about the field."
+banner_alt: "Three-dimensional statistical learning manifold and lattice: Foundations of Machine Learning, PAC learning, Rademacher complexity and VC-dimension."
 banner_height: "1280"
 banner_width: "1920"
-banner: "https://cloudcdn.pro/stocks/images/what-a-machine-learning-textbook-s-contents-page-says-about-the-field.webp"
+banner: "https://cloudcdn.pro/stocks/images/sebastien-rousseau-20260617-ai-9.webp"
 cdn: "https://cloudcdn.pro"
 changefreq: "weekly"
 charset: "UTF-8"

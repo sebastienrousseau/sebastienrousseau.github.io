@@ -3,10 +3,10 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "An illustration representing two nuclear clocks, built separately in vienna and beijing, haven't beaten atomic clocks yet."
+banner_alt: "Optical glass prism refracting laser light: thorium-229 calcium fluoride crystal nuclear clock spectroscopy in Vienna and Beijing."
 banner_height: "1280"
 banner_width: "1920"
-banner: "https://cloudcdn.pro/stocks/images/two-nuclear-clocks-built-separately-in-vienna-and-beijing-haven-t-beaten-atomic-clocks-yet.webp"
+banner: "https://cloudcdn.pro/stocks/images/michael-dziedzic--LFxVNhopfs.webp"
 cdn: "https://cloudcdn.pro"
 changefreq: "weekly"
 charset: "UTF-8"

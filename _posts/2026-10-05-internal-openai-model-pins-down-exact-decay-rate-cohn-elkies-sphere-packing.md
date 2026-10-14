@@ -3,10 +3,10 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "An illustration representing an internal openai model pins down the exact decay rate of the cohn-elkies sphere-packing program."
+banner_alt: "Concentric glowing three-dimensional light spheres: exact asymptotic decay rate of the Cohn-Elkies sphere-packing linear programming bound."
 banner_height: "1280"
 banner_width: "1920"
-banner: "https://cloudcdn.pro/stocks/images/an-internal-openai-model-pins-down-the-exact-decay-rate-of-the-cohn-elkies-sphere-packing.webp"
+banner: "https://cloudcdn.pro/stocks/images/daniele-franchi-Vl6YuVBLEys.webp"
 cdn: "https://cloudcdn.pro"
 changefreq: "weekly"
 charset: "UTF-8"
