@@ -99,15 +99,18 @@ Foundations of Machine Learning (second edition, MIT Press, 2018) by Mehryar Moh
 
 ---
 
+<!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead">
-> **Key Takeaways**
->
-> - **Data comes first.** The quality and size of the data are crucial to the success of the learner's predictions.
-> - **Sample complexity is a first-class measure.** Time and space complexity matter here as they do elsewhere in computer science, and machine learning adds the sample size an algorithm needs to learn a family of concepts.
-> - **Guarantees are the organising idea.** Theoretical learning guarantees depend on the complexity of the concept classes and the size of the training sample.
-> - **Omissions are stated.** Graphical models and neural networks are left out for brevity and because of the current lack of solid theoretical guarantees for some methods.
-> - **The second edition widens the theory.** It adds a full chapter on model selection, two chapters on Maximum Entropy models, a section on Fenchel duality and an appendix on information theory.
+<aside class="post-lead" aria-label="Shrnutí článku">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Foundations of Machine Learning, second edition, defines learning as using experience to make accurate predictions, and then builds a whole curriculum around the quantities that decide whether it works: data,...</p>
+<p class="post-lead-heading"><strong>Key Takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Data comes first:</strong> The quality and size of the data are crucial to the success of the learner's predictions.</li>
+  <li><strong>Sample complexity is a first-class measure:</strong> Time and space complexity matter here as they do elsewhere in computer science, and machine learning adds the sample size an algorithm needs to learn a family of concepts.</li>
+  <li><strong>Guarantees are the organising idea:</strong> Theoretical learning guarantees depend on the complexity of the concept classes and the size of the training sample.</li>
+  <li><strong>Omissions are stated:</strong> Graphical models and neural networks are left out for brevity and because of the current lack of solid theoretical guarantees for some methods.</li>
+  <li><strong>The second edition widens the theory:</strong> It adds a full chapter on model selection, two chapters on Maximum Entropy models, a section on Fenchel duality and an appendix on information theory.</li>
+</ul>
 </aside>
 <!-- lead-end -->
 

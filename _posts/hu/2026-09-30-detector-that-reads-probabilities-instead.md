@@ -96,15 +96,18 @@ A detector for alignment failures that answers many typed questions in one call,
 
 ---
 
+<!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead">
-> **Key Takeaways**
->
-> - **Ranking is strong and cheap.** One generic question, read as P(yes), reaches a median AUROC of 0.886 zero-shot, and a pass over the 19 judge-scored benchmarks costs $0.30.
-> - **Wording barely matters.** Targeted wording adds +0.006 [−0.004, +0.015] AUROC out of sample, an interval that includes zero.
-> - **The state matters a lot.** References that define the label give the large gains, such as PrivacyLens's list of secret items (0.79→0.95).
-> - **Thresholds don't travel.** Jev's mean probability misses each benchmark's base rate, so a threshold fitted on ten labelled items is part of the recipe.
-> - **Disagreement is informative.** Jev's confident disagreements exposed label-changing defects in three benchmarks and labels the state cannot reveal in four more.
+<aside class="post-lead" aria-label="A cikk összefoglalója">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> A detector for alignment failures that answers many typed questions in one call, with calibrated probabilities, ranks failures well and costs 63× less than LLM-judge scorers. But those probabilities don't transfer...</p>
+<p class="post-lead-heading"><strong>Key Takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Ranking is strong and cheap:</strong> One generic question, read as P(yes), reaches a median AUROC of 0.886 zero-shot, and a pass over the 19 judge-scored benchmarks costs $0.30.</li>
+  <li><strong>Wording barely matters:</strong> Targeted wording adds +0.006 [−0.004, +0.015] AUROC out of sample, an interval that includes zero.</li>
+  <li><strong>The state matters a lot:</strong> References that define the label give the large gains, such as PrivacyLens's list of secret items (0.79→0.95).</li>
+  <li><strong>Thresholds don't travel:</strong> Jev's mean probability misses each benchmark's base rate, so a threshold fitted on ten labelled items is part of the recipe.</li>
+  <li><strong>Disagreement is informative:</strong> Jev's confident disagreements exposed label-changing defects in three benchmarks and labels the state cannot reveal in four more.</li>
+</ul>
 </aside>
 <!-- lead-end -->
 

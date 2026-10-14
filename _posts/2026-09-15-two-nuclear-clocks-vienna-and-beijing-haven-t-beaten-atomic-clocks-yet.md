@@ -109,15 +109,14 @@ The first two operating nuclear clocks arrived together, from teams that didn't 
 
 ---
 
+<!-- lead-start -->
+<!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead">
-> **Key Takeaways**
->
-> - **Two clocks, one isotope.** A team under Thorsten Schumm at TU Wien and a team under Shiqian Ding at Tsinghua University reached operating thorium-229 nuclear clocks at the same time, using different experimental approaches.
-> - **The physics changes.** Conventional atomic clocks make electrons jump between energy levels. These clocks use lasers to make protons and neutrons jump between energy levels inside the nucleus.
-> - **Accuracy is still ahead.** The teams said nuclear clocks have the potential to outperform the best conventional atomic clocks but do not do so yet, and Schumm said the Vienna clock is still far from its target performance.
-> - **The components complement each other.** According to Schumm, Vienna has slightly better crystals and Beijing has a stronger laser, so combining them could build a significantly better clock.
-> - **Applications are proposed, not delivered.** Navigation, data synchronisation, probing dark matter and testing whether fundamental constants vary over space and time are possible uses, not demonstrated ones.
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> The first two operating nuclear clocks arrived together, from teams that didn't coordinate, and neither beats the best atomic clock. The independence of the two results is the more important fact, because it suggests...</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+</ul>
 </aside>
 <!-- lead-end -->
 

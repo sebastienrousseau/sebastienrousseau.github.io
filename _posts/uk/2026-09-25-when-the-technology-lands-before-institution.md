@@ -96,15 +96,18 @@ MIT's ad hoc committee on AI doesn't treat generative AI as a tooling problem to
 
 ---
 
+<!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead">
-> **Key Takeaways**
->
-> - **Speed is the distinguishing feature.** Public engagement with generative AI is less than four years old, and the source says it has amassed more than a billion users in that time.
-> - **Practice is divided.** Students use AI pervasively with mixed feelings, and instructors' attitudes run from enthusiastic exploration to "AI refusal".
-> - **The pressure points are specific.** The p-set, the take-home exam, UROPs, office hours and the study group are all named as places where there are signs of disruption.
-> - **Clarity is what students are asking for.** They're confused and concerned about a lack of clarity, consistency and justification about AI use.
-> - **The stance is humble but not passive.** Course corrections, perhaps major ones, are expected, yet the committee says uncertainty can't excuse inaction.
+<aside class="post-lead" aria-label="Стислий зміст статті">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> MIT's ad hoc committee on AI doesn't treat generative AI as a tooling problem to be patched with a policy. Its report treats it as a pressure test on what an MIT education is for, and argues that uncertainty can't be...</p>
+<p class="post-lead-heading"><strong>Key Takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Speed is the distinguishing feature:</strong> Public engagement with generative AI is less than four years old, and the source says it has amassed more than a billion users in that time.</li>
+  <li><strong>Practice is divided:</strong> Students use AI pervasively with mixed feelings, and instructors' attitudes run from enthusiastic exploration to "AI refusal".</li>
+  <li><strong>The pressure points are specific:</strong> The p-set, the take-home exam, UROPs, office hours and the study group are all named as places where there are signs of disruption.</li>
+  <li><strong>Clarity is what students are asking for:</strong> They're confused and concerned about a lack of clarity, consistency and justification about AI use.</li>
+  <li><strong>The stance is humble but not passive:</strong> Course corrections, perhaps major ones, are expected, yet the committee says uncertainty can't excuse inaction.</li>
+</ul>
 </aside>
 <!-- lead-end -->
 

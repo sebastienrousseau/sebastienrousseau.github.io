@@ -96,14 +96,17 @@ Cloudflare has relied on 16 partner public CAs for years without ever issuing a 
 
 ---
 
+<!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead">
-> **Key Takeaways**
->
-> - **Buying a root beats waiting for one.** The source says a brand-new root isn't widely useful for years, while the GlobalSign root has been trusted across browsers, operating systems and devices since 2012.
-> - **Concentration is the stated risk.** Let's Encrypt issues on the order of ten million certificates a day, and the source suggests much of the web would have no comparable free, automated alternative if it had a bad week.
-> - **Renewal is a protocol, not a cron job.** Cloudflare says it will only issue to clients that support ACME Renewal Information (ARI), standardised in RFC 9773.
-> - **One CA, two certificate types.** The design is meant to carry classic certificates and Merkle Tree Certificates together, so customers can move at their own pace.
+<aside class="post-lead" aria-label="Àkópọ̀ àpilẹ̀kọ">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Cloudflare has relied on 16 partner public CAs for years without ever issuing a publicly trusted certificate itself. It now intends to become one, and the interesting part is the design: classic certificates and...</p>
+<p class="post-lead-heading"><strong>Key Takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Buying a root beats waiting for one:</strong> The source says a brand-new root isn't widely useful for years, while the GlobalSign root has been trusted across browsers, operating systems and devices since 2012.</li>
+  <li><strong>Concentration is the stated risk:</strong> Let's Encrypt issues on the order of ten million certificates a day, and the source suggests much of the web would have no comparable free, automated alternative if it had a bad week.</li>
+  <li><strong>Renewal is a protocol, not a cron job:</strong> Cloudflare says it will only issue to clients that support ACME Renewal Information (ARI), standardised in RFC 9773.</li>
+  <li><strong>One CA, two certificate types:</strong> The design is meant to carry classic certificates and Merkle Tree Certificates together, so customers can move at their own pace.</li>
+</ul>
 </aside>
 <!-- lead-end -->
 

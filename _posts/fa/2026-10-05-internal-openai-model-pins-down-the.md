@@ -96,15 +96,18 @@ A collection of mathematical results from an internal OpenAI model settles the a
 
 ---
 
+<!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead">
-> **Key Takeaways**
->
-> - **Exact rate.** The asymptotic strength of the Cohn-Elkies linear program is determined exactly, and a matching lower bound shows that no Cohn-Elkies auxiliary function can improve the resulting exponent.
-> - **Beyond the classical exponent.** The Kabatianskii–Levenshtein exponent of 0.59905576... stood as the general sphere-packing exponent until this result, and later spherical-code work had improved only lower-order factors.
-> - **Codes improve too.** Classical upper bounds for fixed-distance binary and spherical codes improve by exponential factors for all parameters.
-> - **Breadth.** The collection also covers group theory, operator algebras, arithmetic complexity, quantum games, lattice hardness, convex geometry and extremal combinatorics.
-> - **Method.** The sign-uncertainty half of the argument rests on rotational averaging, a vanishing condition at the origin, and a Mellin-transform picture of the radial Fourier transform.
+<aside class="post-lead" aria-label="خلاصهٔ مقاله">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> A collection of results from an internal OpenAI model spans mathematics and theoretical computer science, and its sharpest result is exact: the asymptotic strength of the Cohn-Elkies linear program is now known,...</p>
+<p class="post-lead-heading"><strong>Key Takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Exact rate:</strong> The asymptotic strength of the Cohn-Elkies linear program is determined exactly, and a matching lower bound shows that no Cohn-Elkies auxiliary function can improve the resulting exponent.</li>
+  <li><strong>Beyond the classical exponent:</strong> The Kabatianskii–Levenshtein exponent of 0.59905576... stood as the general sphere-packing exponent until this result, and later spherical-code work had improved only lower-order factors.</li>
+  <li><strong>Codes improve too:</strong> Classical upper bounds for fixed-distance binary and spherical codes improve by exponential factors for all parameters.</li>
+  <li><strong>Breadth:</strong> The collection also covers group theory, operator algebras, arithmetic complexity, quantum games, lattice hardness, convex geometry and extremal combinatorics.</li>
+  <li><strong>Method:</strong> The sign-uncertainty half of the argument rests on rotational averaging, a vanishing condition at the origin, and a Mellin-transform picture of the radial Fourier transform.</li>
+</ul>
 </aside>
 <!-- lead-end -->
 

@@ -95,15 +95,18 @@ At the Economist Enterprise Physical AI and Robotics Summit held at Convene 200 
 
 ---
 
+<!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead">
-> **Key Takeaways**
->
-> - **Anthropomorphic bias vs functional physics**: Equipping robots with bipedal legs and five-fingered hands introduces mechanical fragility, complex control loops, and unnecessary mass. Where sub-millimetre precision and rigidity are required, purpose-built kinematics (gantry systems, articulated arms, and automated guided vehicles) consistently outperform human mimics.
-> - **The fallacy of 100% lights-out automation**: Early-stage aerospace structural assembly remains only 25% automated due to the physical unpredictability of flexible components, blind fastening, and cable harness routing. Striving for total automation leads to brittle, capital-intensive line stoppages; pursuing incremental 10% efficiency dividends through human-in-the-loop assistance delivers immediate cash returns.
-> - **Brownfield factory ergonomics**: Modern manufacturing facilities are historically configured around human walking paths, stairs, and manual workstations. While this provides a theoretical pretext for bipedal mobility, wheeled bases with telescoping masts achieve superior payload stability and energy efficiency in 98% of industrial shop floors without bipedal balance overheads.
-> - **The "analogical flex" hybrid layer**: Rather than waiting for unproven general-purpose humanoids, tier-one manufacturers are deploying hybrid cobots that interface between established legacy assembly jigs and cloud-orchestrated planning models, keeping human operators in the loop for complex tactile verification.
-> - **Pragmatic ROI over venture spectacle**: Lessons from high-rate manufacturing in China and European aerospace indicate that production cadence scales through modular, task-specific automation integrated into existing quality management workflows, not generalist mechanical androids.
+<aside class="post-lead" aria-label="Sintesi dell'articolo">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> At the Economist Enterprise Physical AI and Robotics Summit in London, aerospace and manufacturing leaders dismantled the silicon-valley narrative of the general-purpose humanoid robot. While venture capital pours billions into bipedal forms, industrial reality proves that form must strictly follow function.</p>
+<p class="post-lead-heading"><strong>Key Takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Anthropomorphic bias vs functional physics:</strong> Equipping robots with bipedal legs and five-fingered hands introduces mechanical fragility, complex control loops, and unnecessary mass. Where sub-millimetre precision and rigidity are required, purpose-built kinematics (gantry systems, articulated arms, and automated guided vehicles) consistently outperform human mimics.</li>
+  <li><strong>The fallacy of 100% lights-out automation:</strong> Early-stage aerospace structural assembly remains only 25% automated due to the physical unpredictability of flexible components, blind fastening, and cable harness routing. Striving for total automation leads to brittle, capital-intensive line stoppages; pursuing incremental 10% efficiency dividends through human-in-the-loop assistance delivers immediate cash returns.</li>
+  <li><strong>Brownfield factory ergonomics:</strong> Modern manufacturing facilities are historically configured around human walking paths, stairs, and manual workstations. While this provides a theoretical pretext for bipedal mobility, wheeled bases with telescoping masts achieve superior payload stability and energy efficiency in 98% of industrial shop floors without bipedal balance overheads.</li>
+  <li><strong>The "analogical flex" hybrid layer:</strong> Rather than waiting for unproven general-purpose humanoids, tier-one manufacturers are deploying hybrid cobots that interface between established legacy assembly jigs and cloud-orchestrated planning models, keeping human operators in the loop for complex tactile verification.</li>
+  <li><strong>Pragmatic ROI over venture spectacle:</strong> Lessons from high-rate manufacturing in China and European aerospace indicate that production cadence scales through modular, task-specific automation integrated into existing quality management workflows, not generalist mechanical androids.</li>
+</ul>
 </aside>
 <!-- lead-end -->
 

@@ -95,15 +95,18 @@ When enterprise software fails, it corrupts a database, drops a network connecti
 
 ---
 
+<!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead">
-> **Key Takeaways**
->
-> - **The physical embodiment paradox**: Combining cognitive generative AI with physical embodiment triggers profound workforce anxiety. While enterprise software automation threatens desk-bound white-collar workers, physical AI machines enter the worker's personal kinesphere, creating visceral fears of simultaneous physical displacement and bodily hazard.
-> - **The hazard of "dark side autonomy"**: In supervised autonomous operations, relying on human workers as passive safety backups is structurally flawed. As automation reliability increases, human cognitive vigilance rapidly degrades; when an edge-case failure abruptly occurs, operators cannot instantly re-acquire situational awareness, leading to catastrophic handover delays.
-> - **Redesigning work from toil to supervision**: Frontline operational leaders, such as Kier Group in construction and civil infrastructure, are proving that successful adoption depends on transparent communication: framing robotics not as a labour replacement tool, but as a mechanism to eliminate dirty, dangerous, and backbreaking toil while upskilling workers into fleet managers and digital coordinators.
-> - **Three-tiered contractual liability**: Legal accountability in physical AI cannot be dumped on the frontline operator. Robust governance distributes risk across three distinct contractual tiers: foundation model suppliers (baseline safety envelopes), systems integrators (site-specific fine-tuning and calibration), and operating enterprises (environmental geofencing and override authority).
-> - **Standards convergence**: The British Standards Institution (BSI) and international bodies (ISO 10218, ISO/TS 15066) are aligning with the EU AI Act High-Risk Physical Systems requirements, establishing audited pre-incident safety verifications rather than relying on post-accident litigation.
+<aside class="post-lead" aria-label="Краткое содержание статьи">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Deploying autonomous physical machines alongside human workforces introduces acute psychological and legal hazards that pure software never encountered. At the Economist Enterprise Physical AI and Robotics Summit, leaders from Kier Group and the British Standards Institution (BSI) established the governance blueprint for physical AI.</p>
+<p class="post-lead-heading"><strong>Key Takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>The physical embodiment paradox:</strong> Combining cognitive generative AI with physical embodiment triggers profound workforce anxiety. While enterprise software automation threatens desk-bound white-collar workers, physical AI machines enter the worker's personal kinesphere, creating visceral fears of simultaneous physical displacement and bodily hazard.</li>
+  <li><strong>The hazard of "dark side autonomy":</strong> In supervised autonomous operations, relying on human workers as passive safety backups is structurally flawed. As automation reliability increases, human cognitive vigilance rapidly degrades; when an edge-case failure abruptly occurs, operators cannot instantly re-acquire situational awareness, leading to catastrophic handover delays.</li>
+  <li><strong>Redesigning work from toil to supervision:</strong> Frontline operational leaders, such as Kier Group in construction and civil infrastructure, are proving that successful adoption depends on transparent communication: framing robotics not as a labour replacement tool, but as a mechanism to eliminate dirty, dangerous, and backbreaking toil while upskilling workers into fleet managers and digital coordinators.</li>
+  <li><strong>Three-tiered contractual liability:</strong> Legal accountability in physical AI cannot be dumped on the frontline operator. Robust governance distributes risk across three distinct contractual tiers: foundation model suppliers (baseline safety envelopes), systems integrators (site-specific fine-tuning and calibration), and operating enterprises (environmental geofencing and override authority).</li>
+  <li><strong>Standards convergence:</strong> The British Standards Institution (BSI) and international bodies (ISO 10218, ISO/TS 15066) are aligning with the EU AI Act High-Risk Physical Systems requirements, establishing audited pre-incident safety verifications rather than relying on post-accident litigation.</li>
+</ul>
 </aside>
 <!-- lead-end -->
 

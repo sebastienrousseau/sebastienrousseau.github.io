@@ -95,15 +95,18 @@ For six decades, industrial robotics has operated under an unforgiving paradigm:
 
 ---
 
+<!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead">
-> **Key Takeaways**
->
-> - **From procedural code to experiential learning**: Classical industrial robotics relies on explicit inverse kinematics, path planning, and hardcoded state machines that fail under environmental variation. Modern physical AI replaces this stack with end-to-end imitation learning models that translate visual observation and natural language instructions directly into continuous motor actions.
-> - **The democratised hardware stack**: High-end industrial arms costing £50,000 to £250,000 are no longer a prerequisite for robotics research and flexible light assembly. The open-source community, catalysed by Hugging Face LeRobot, has standardized sub-$200 3D-printable robotic manipulators (such as the SO-100 and Koch arm v1.1) capable of training production-grade behavioural policies.
-> - **The multi-modal VLA pipeline**: The state of the art in open-source physical AI integrates frozen vision encoders (SigLIP 400M), joint state vectors, and natural language prompts through cross-attention into a compact Vision-Language Model (Gemma 2B), feeding a 300M-parameter flow-matching Action Expert that outputs 30 chunked motor commands at 50Hz.
-> - **Standardized dataset infrastructure**: The primary bottleneck in physical AI is no longer model architecture, but demonstration data. LeRobot's open Parquet-based dataset standard and distributed teleoperation tools enable researchers and industrial practitioners to pool real-world manipulation datasets across global repositories.
-> - **World models and closed-loop execution**: Bridging the gap between simulation and real-world compliance requires closed-loop sensorimotor pipelines that continuously correct for tactile slippage, visual occlusion, and external disturbances in real time.
+<aside class="post-lead" aria-label="Artikelzusammenfassung">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Robotics development has historically been gated behind six-figure hardware and brittle, hand-crafted kinematics. At the Economist Enterprise Physical AI and Robotics Summit, Hugging Face LeRobot lead Pepijn Kooijmans demonstrated how open-source foundation models and $200 hardware are breaking the industry wide open.</p>
+<p class="post-lead-heading"><strong>Key Takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>From procedural code to experiential learning:</strong> Classical industrial robotics relies on explicit inverse kinematics, path planning, and hardcoded state machines that fail under environmental variation. Modern physical AI replaces this stack with end-to-end imitation learning models that translate visual observation and natural language instructions directly into continuous motor actions.</li>
+  <li><strong>The democratised hardware stack:</strong> High-end industrial arms costing £50,000 to £250,000 are no longer a prerequisite for robotics research and flexible light assembly. The open-source community, catalysed by Hugging Face LeRobot, has standardized sub-$200 3D-printable robotic manipulators (such as the SO-100 and Koch arm v1.1) capable of training production-grade behavioural policies.</li>
+  <li><strong>The multi-modal VLA pipeline:</strong> The state of the art in open-source physical AI integrates frozen vision encoders (SigLIP 400M), joint state vectors, and natural language prompts through cross-attention into a compact Vision-Language Model (Gemma 2B), feeding a 300M-parameter flow-matching Action Expert that outputs 30 chunked motor commands at 50Hz.</li>
+  <li><strong>Standardized dataset infrastructure:</strong> The primary bottleneck in physical AI is no longer model architecture, but demonstration data. LeRobot's open Parquet-based dataset standard and distributed teleoperation tools enable researchers and industrial practitioners to pool real-world manipulation datasets across global repositories.</li>
+  <li><strong>World models and closed-loop execution:</strong> Bridging the gap between simulation and real-world compliance requires closed-loop sensorimotor pipelines that continuously correct for tactile slippage, visual occlusion, and external disturbances in real time.</li>
+</ul>
 </aside>
 <!-- lead-end -->
 

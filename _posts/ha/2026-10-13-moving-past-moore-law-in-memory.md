@@ -95,15 +95,18 @@ For more than half a century, computing progress obeyed Moore's Law: cramming tw
 
 ---
 
+<!-- lead-start -->
 <!-- lead-start: manual -->
-<aside class="post-lead">
-> **Key Takeaways**
->
-> - **The Von Neumann memory wall in physical AI**: Over 85% to 90% of the energy consumed during neural network inference on conventional GPU and CPU architectures is squandered moving weight matrices between off-chip DRAM (or high-bandwidth memory) and arithmetic logic units (ALUs). In battery-constrained mobile robots, this energy waste severely limits operational endurance and thermal ceilings.
-> - **"The memory is the computer"**: Analog Compute-In-Memory (CIM) collapses data movement entirely. By performing matrix multiplication directly inside flash or SRAM memory arrays at the single-transistor level using fundamental physical laws (Ohm's Law and Kirchhoff's Current Law), in-memory chips execute millions of multiply-accumulate (MAC) operations in parallel with zero DRAM bus latency.
-> - **10x to 1000x energy efficiency multiplier**: In-memory architectures achieve an energy efficiency multiplier of 10x to 1,000x compared to legacy GPU architectures, operating within a compact 10W to 20W power envelope while targeting bill-of-materials (BOM) costs in the "tens of dollars" range.
-> - **Modular chiplet topology**: Rather than printing massive, monolithic, low-yield silicon dies, modern edge platforms adopt modular chiplet strategies. Standardized high-speed die-to-die interfaces and universal compilation layers map deep learning workloads across variable topologies, scaling from low-power edge sensor pods to data-centre acceleration cards.
-> - **Commercial anchor deployments**: Mythic AI's architecture is anchored by major strategic corporate partnerships: Lockheed Martin for tactical defence robotics and autonomous drone swarms requiring extended flight times, and Honda Motor for high-volume, cost-sensitive automotive situational awareness and in-cabin perception.
+<aside class="post-lead" aria-label="Taƙaitaccen labari">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Physical AI cannot scale on 700W data-centre GPUs. At the Economist Enterprise Physical AI and Robotics Summit, Mythic AI Chairman and CEO Taner Ozcelik demonstrated how in-memory compute and chiplet modularity collapse the Von Neumann memory wall to deliver biological-grade efficiency at the physical edge.</p>
+<p class="post-lead-heading"><strong>Key Takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>The Von Neumann memory wall in physical AI:</strong> Over 85% to 90% of the energy consumed during neural network inference on conventional GPU and CPU architectures is squandered moving weight matrices between off-chip DRAM (or high-bandwidth memory) and arithmetic logic units (ALUs). In battery-constrained mobile robots, this energy waste severely limits operational endurance and thermal ceilings.</li>
+  <li><strong>"The memory is the computer":</strong> Analog Compute-In-Memory (CIM) collapses data movement entirely. By performing matrix multiplication directly inside flash or SRAM memory arrays at the single-transistor level using fundamental physical laws (Ohm's Law and Kirchhoff's Current Law), in-memory chips execute millions of multiply-accumulate (MAC) operations in parallel with zero DRAM bus latency.</li>
+  <li><strong>10x to 1000x energy efficiency multiplier:</strong> In-memory architectures achieve an energy efficiency multiplier of 10x to 1,000x compared to legacy GPU architectures, operating within a compact 10W to 20W power envelope while targeting bill-of-materials (BOM) costs in the "tens of dollars" range.</li>
+  <li><strong>Modular chiplet topology:</strong> Rather than printing massive, monolithic, low-yield silicon dies, modern edge platforms adopt modular chiplet strategies. Standardized high-speed die-to-die interfaces and universal compilation layers map deep learning workloads across variable topologies, scaling from low-power edge sensor pods to data-centre acceleration cards.</li>
+  <li><strong>Commercial anchor deployments:</strong> Mythic AI's architecture is anchored by major strategic corporate partnerships: Lockheed Martin for tactical defence robotics and autonomous drone swarms requiring extended flight times, and Honda Motor for high-volume, cost-sensitive automotive situational awareness and in-cabin perception.</li>
+</ul>
 </aside>
 <!-- lead-end -->
 
