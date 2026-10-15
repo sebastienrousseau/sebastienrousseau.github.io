@@ -22,7 +22,7 @@
       "id=practice>Відкритий код для<br>майбутнього фінансів.</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">Відкритий код для майбутнього фінансів.<"
     ],
     [
@@ -166,7 +166,7 @@
       "<a class=pill href=\"/uk/statti/index.html\">Читати останні дослідження</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/uk/kontakt/index.html\">Зв’язатися зі мною</a>"
     ],
     [
@@ -350,7 +350,7 @@
       ">У цифрах.</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">Відкритий код для майбутнього банкінгу та фінансів.</h2>"
     ],
     [

@@ -22,7 +22,7 @@
       "id=practice>Finansın geleceği için<br>açık kaynak.</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">Finansın geleceği için açık kaynak.<"
     ],
     [
@@ -166,7 +166,7 @@
       "<a class=pill href=\"/tr/makaleler/index.html\">Güncel araştırmaları oku</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/tr/iletisim/index.html\">İletişime geç</a>"
     ],
     [
@@ -350,7 +350,7 @@
       ">Rakamlarla.</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">Bankacılık ve finansın geleceği için açık kaynak.</h2>"
     ],
     [

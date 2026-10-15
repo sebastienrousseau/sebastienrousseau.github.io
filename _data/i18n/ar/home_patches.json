@@ -22,7 +22,7 @@
       "id=practice>برمجيات مفتوحة المصدر<br>لمستقبل التمويل.</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">برمجيات مفتوحة المصدر لمستقبل التمويل.<"
     ],
     [
@@ -166,7 +166,7 @@
       "<a class=pill href=\"/ar/articles/index.html\">اقرأ أحدث الأبحاث</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/ar/contact/index.html\">تواصل معي</a>"
     ],
     [
@@ -350,7 +350,7 @@
       ">بالأرقام.</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">برمجيات مفتوحة المصدر لمستقبل الصيرفة والتمويل.</h2>"
     ],
     [

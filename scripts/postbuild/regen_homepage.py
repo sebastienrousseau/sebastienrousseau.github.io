@@ -186,7 +186,51 @@ _ACRONYMS = {
     "BRSRV",
     "BSTBL",
     "MMF",
+    "CRA",
+    "ENISA",
+    "CBOM",
+    "EUDI",
+    "FIDA",
+    "TLPT",
+    "VOP",
+    "IPR",
 }
+
+_PILLAR_TAGS = {
+    "banking",
+    "payments",
+    "iso 20022",
+    "iso-20022",
+    "post-quantum cryptography",
+    "post-quantum-cryptography",
+    "pqc",
+    "quantum-safe",
+    "dora",
+    "swift",
+    "sepa",
+    "cbdc",
+    "wholesale payments",
+    "treasury",
+    "open banking",
+    "open finance",
+    "fida",
+    "eidas 2",
+    "model risk",
+    "cyber resilience act",
+    "eu ai act",
+    "eu data act",
+}
+
+
+def _is_pillar_post(fm: dict[str, str]) -> bool:
+    """Return True when a post belongs to the core banking, payments,
+    post-quantum cryptography, or financial-regulation pillars and uses
+    an editorial banner without cropped stage/slide text."""
+    banner = fm.get("banner", "").lower()
+    if "summit" in banner:
+        return False
+    tags = {t.strip().lower() for t in fm.get("tags", "").split(",") if t.strip()}
+    return bool(tags & _PILLAR_TAGS)
 
 
 def _smart_title(token: str) -> str:
@@ -255,10 +299,12 @@ def _render_card(slug: str, year: int, month: int, day: int, fm: dict[str, str])
 
 
 def _collect_top_six() -> list[tuple[str, int, int, int, dict[str, str]]]:
-    """Top 3 by date descending. Returns ``(slug, y, m, d, frontmatter)``.
+    """Top 3 pillar posts by date descending. Returns ``(slug, y, m, d, frontmatter)``.
 
-    The home page keeps a single, minimal row of the three newest pieces;
-    the full archive lives at /articles/."""
+    The home page keeps a single, minimal row of the three newest pillar
+    pieces (banking, payments, post-quantum cryptography, and financial
+    regulation); off-pillar side-track articles remain in the full archive
+    at /articles/ and /changelog/."""
     rows: list[tuple[str, int, int, int, dict[str, str]]] = []
     for md in POSTS.glob("*.md"):
         m = _DATED_RE.match(md.name)
@@ -271,7 +317,7 @@ def _collect_top_six() -> list[tuple[str, int, int, int, dict[str, str]]]:
             # No title means the article isn't fit to advertise.
             continue
         rows.append((slug, y, mo, d, fm))
-    rows.sort(key=lambda r: (r[1], r[2], r[3]), reverse=True)
+    rows.sort(key=lambda r: (_is_pillar_post(r[4]), r[1], r[2], r[3], r[0]), reverse=True)
     return rows[:3]
 
 

@@ -22,7 +22,7 @@
       "id=practice>Sumber terbuka untuk<br>masa depan keuangan.</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">Sumber terbuka untuk masa depan keuangan.<"
     ],
     [
@@ -166,7 +166,7 @@
       "<a class=pill href=\"/id/artikel/index.html\">Baca riset terbaru</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/id/kontak/index.html\">Hubungi saya</a>"
     ],
     [
@@ -350,7 +350,7 @@
       ">Dalam angka.</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">Sumber terbuka untuk masa depan perbankan dan keuangan.</h2>"
     ],
     [

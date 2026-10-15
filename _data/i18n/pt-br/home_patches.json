@@ -22,7 +22,7 @@
       "id=practice>Código aberto para o<br>futuro das finanças.</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">Código aberto para o futuro das finanças.<"
     ],
     [
@@ -166,7 +166,7 @@
       "<a class=pill href=\"/pt-br/artigos/index.html\">Ler as pesquisas recentes</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/pt-br/contato/index.html\">Entrar em contato</a>"
     ],
     [
@@ -350,7 +350,7 @@
       ">Em números.</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">Código aberto para o futuro dos bancos e das finanças.</h2>"
     ],
     [

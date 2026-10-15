@@ -21,7 +21,7 @@
       "id=practice>ఫైనాన్స్ భవిష్యత్తు కోసం<br>ఓపెన్ సోర్స్.</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">ఫైనాన్స్ భవిష్యత్తు కోసం ఓపెన్ సోర్స్.<"
     ],
     [
@@ -165,7 +165,7 @@
       "<a class=pill href=\"/te/articles/index.html\">తాజా పరిశోధనను చదవండి</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/te/contact/index.html\">సంప్రదించండి</a>"
     ],
     [
@@ -349,7 +349,7 @@
       ">సంఖ్యల్లో.</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">బ్యాంకింగ్ మరియు ఫైనాన్స్ భవిష్యత్తు కోసం ఓపెన్ సోర్స్.</h2>"
     ],
     [

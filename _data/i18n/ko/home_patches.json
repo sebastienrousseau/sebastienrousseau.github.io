@@ -22,7 +22,7 @@
       "id=practice>금융의 미래를 위한<br>오픈소스.</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">금융의 미래를 위한 오픈소스.<"
     ],
     [
@@ -166,7 +166,7 @@
       "<a class=pill href=\"/ko/gisa/index.html\">최신 연구 읽기</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/ko/munui/index.html\">문의하기</a>"
     ],
     [
@@ -350,7 +350,7 @@
       ">숫자로 보다.</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">은행업과 금융의 미래를 위한 오픈소스.</h2>"
     ],
     [

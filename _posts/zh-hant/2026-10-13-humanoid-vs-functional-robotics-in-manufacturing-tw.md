@@ -89,7 +89,7 @@ last_reviewed: "2026-10-13"
 
 <!-- translation-stub: replace this body in Claude Code -->
 
-> _Translation pending — read the [English original](/2026-10-13-humanoid-vs-functional-robotics-manufacturing-automation/) while we localise._
+> _Translation pending — read the [English original](/2026-10-13-humanoid-functional-robotics-manufacturing-automation/) while we localise._
 
 At the Economist Enterprise Physical AI and Robotics Summit held at Convene 200 Aldersgate in London on 13 October 2026, manufacturing executives, aerospace engineers, and roboticists gathered to address a fundamental schism in modern automation: should robots mimic the human body, or should mechanical morphology strictly follow industrial physics? While venture capital continues to pour billions into bipedal humanoid forms promising universal labour substitution, shop-floor practitioners from Airbus, Leonardo, and academic research delivered a stark, empirical reality check.
 

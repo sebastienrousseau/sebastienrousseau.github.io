@@ -22,7 +22,7 @@
       "id=practice>โอเพนซอร์สเพื่อ<br>อนาคตของการเงิน</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">โอเพนซอร์สเพื่ออนาคตของการเงิน<"
     ],
     [
@@ -166,7 +166,7 @@
       "<a class=pill href=\"/th/bot-khwam/index.html\">อ่านงานวิจัยล่าสุด</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/th/tit-to/index.html\">ติดต่อ</a>"
     ],
     [
@@ -350,7 +350,7 @@
       ">ในเชิงตัวเลข</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">โอเพนซอร์สเพื่ออนาคตของการธนาคารและการเงิน</h2>"
     ],
     [

@@ -21,7 +21,7 @@
       "id=practice>Nyílt forráskód<br>a pénzügyek jövőjéért.</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">Nyílt forráskód a pénzügyek jövőjéért.<"
     ],
     [
@@ -165,7 +165,7 @@
       "<a class=pill href=\"/hu/articles/index.html\">Legfrissebb kutatások olvasása</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/hu/contact/index.html\">Kapcsolatfelvétel</a>"
     ],
     [
@@ -349,7 +349,7 @@
       ">Számokban.</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">Nyílt forráskód a bankolás és a pénzügyek jövőjéért.</h2>"
     ],
     [

@@ -22,7 +22,7 @@
       "id=practice>קוד פתוח<br>לעתיד הפיננסים.</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">קוד פתוח לעתיד הפיננסים.<"
     ],
     [
@@ -166,7 +166,7 @@
       "<a class=pill href=\"/he/ma-amarim/index.html\">קראו את המחקר האחרון</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/he/tsor-kesher/index.html\">צרו קשר</a>"
     ],
     [
@@ -350,7 +350,7 @@
       ">במספרים.</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">קוד פתוח לעתיד הבנקאות והפיננסים.</h2>"
     ],
     [

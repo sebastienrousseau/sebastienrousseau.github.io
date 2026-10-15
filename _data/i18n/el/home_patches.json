@@ -21,7 +21,7 @@
       "id=practice>Ανοιχτός κώδικας για<br>το μέλλον των χρηματοοικονομικών.</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">Ανοιχτός κώδικας για το μέλλον των χρηματοοικονομικών.<"
     ],
     [
@@ -165,7 +165,7 @@
       "<a class=pill href=\"/el/articles/index.html\">Διαβάστε την πρόσφατη έρευνα</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/el/contact/index.html\">Επικοινωνήστε</a>"
     ],
     [
@@ -349,7 +349,7 @@
       ">Με αριθμούς.</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">Ανοιχτός κώδικας για το μέλλον της τραπεζικής και των χρηματοοικονομικών.</h2>"
     ],
     [

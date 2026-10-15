@@ -22,7 +22,7 @@
       "id=practice>Open source para sa<br>kinabukasan ng finance.</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">Open source para sa kinabukasan ng finance.<"
     ],
     [
@@ -166,7 +166,7 @@
       "<a class=pill href=\"/fil/mga-artikulo/index.html\">Basahin ang pinakabagong research</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/fil/makipag-ugnayan/index.html\">Makipag-ugnayan</a>"
     ],
     [
@@ -350,7 +350,7 @@
       ">Sa mga numero.</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">Open source para sa kinabukasan ng banking at finance.</h2>"
     ],
     [

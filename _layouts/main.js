@@ -932,13 +932,24 @@ function fallbackCopy(text, done) {
     if (!home) return;
 
     // Only these three lenses are honoured — everything else (including a
-    // crafted ?read= value) falls back to the authored "Everyone" order,
-    // so a hostile query string can never drive the DOM.
+    // crafted ?for= or ?read= value) falls back to the authored "Everyone"
+    // order, so a hostile query string can never drive the DOM.
     var ALLOWED = ["boards", "engineers", "regulators"];
     var STORE_KEY = "read-as";
     var buttons = Array.prototype.slice.call(root.querySelectorAll(".read-as-btn"));
     var status = root.querySelector("[data-read-status]");
+    var summaryEl = root.querySelector("[data-read-summary]");
     var announce = root.getAttribute("data-announce") || "";
+    var heroSub = document.querySelector(".feat-hero .feat-sub");
+    var heroSubDefault = heroSub ? heroSub.textContent : "";
+    var isEn = (document.documentElement.getAttribute("lang") || "en")
+        .toLowerCase()
+        .indexOf("en") === 0;
+    var HERO_SUB_LENS = {
+        boards: "Fiduciary risk, capital resilience, and board-level governance for AI and post-quantum migration.",
+        engineers: "Zero-unsafe Rust crates, ISO 20022 message schemas, and NIST FIPS 203 ML-KEM primitives ready to ship.",
+        regulators: "Supervisory evidence, DORA and Cyber Resilience Act alignment, and quantum-safe wholesale payment rails."
+    };
 
     // Snapshot the authored section order once so "Everyone" restores it.
     // Not `:scope >`: the build can wrap the authored sections in an extra
@@ -949,11 +960,15 @@ function fallbackCopy(text, done) {
     );
     if (!sections.length) return;
     var container = sections[0].parentNode;
-    // One shared parent only: a split container would make appendChild
+    // One shared parent only: a split container would make insertBefore
     // teleport sections between wrappers, so bail to the authored order.
     for (var si = 1; si < sections.length; si++) {
         if (sections[si].parentNode !== container) return;
     }
+    var tailAnchor = sections[sections.length - 1].nextSibling;
+    var cards = Array.prototype.slice.call(
+        home.querySelectorAll(".offer-card[data-audience-card]")
+    );
 
     function sanitize(v) {
         return ALLOWED.indexOf(v) !== -1 ? v : "";
@@ -974,7 +989,7 @@ function fallbackCopy(text, done) {
             }
         });
         lead.concat(rest).forEach(function (sec) {
-            container.appendChild(sec);
+            container.insertBefore(sec, tailAnchor);
         });
     }
 
@@ -995,6 +1010,19 @@ function fallbackCopy(text, done) {
             var on = (b.getAttribute("data-read") || "") === aud;
             b.setAttribute("aria-pressed", on ? "true" : "false");
         });
+        cards.forEach(function (c) {
+            var match = Boolean(aud && (c.getAttribute("data-audience-card") || "").split(/\s+/).indexOf(aud) !== -1);
+            c.classList.toggle("is-lens-match", match);
+        });
+        if (heroSub && isEn && heroSubDefault) {
+            heroSub.textContent = (aud && HERO_SUB_LENS[aud]) ? HERO_SUB_LENS[aud] : heroSubDefault;
+        }
+        if (summaryEl) {
+            var customSummary = summaryEl.getAttribute("data-summary-" + (aud || "default"));
+            if (customSummary) {
+                summaryEl.textContent = customSummary;
+            }
+        }
         if (status && opts.speak) {
             status.textContent = (announce ? announce + ": " : "") + labelFor(aud);
         }
@@ -1005,8 +1033,9 @@ function fallbackCopy(text, done) {
             } catch (e) { /* private mode — non-fatal */ }
             try {
                 var url = new URL(window.location.href);
-                if (aud) url.searchParams.set("read", aud);
-                else url.searchParams.delete("read");
+                url.searchParams.delete("read");
+                if (aud) url.searchParams.set("for", aud);
+                else url.searchParams.delete("for");
                 window.history.replaceState(null, "", url.toString());
             } catch (e2) { /* older engine — non-fatal */ }
         }
@@ -1021,10 +1050,11 @@ function fallbackCopy(text, done) {
         });
     });
 
-    // Initial lens: URL param wins (shared link), else stored preference.
+    // Initial lens: URL param (?for= or ?read=) wins (shared link), else stored preference.
     var initial = "";
     try {
-        initial = new URL(window.location.href).searchParams.get("read") || "";
+        var sp = new URL(window.location.href).searchParams;
+        initial = sp.get("for") || sp.get("read") || "";
     } catch (e) { /* no URL support — stays "" */ }
     if (!initial) {
         try { initial = localStorage.getItem(STORE_KEY) || ""; } catch (e3) {}

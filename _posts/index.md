@@ -39,7 +39,7 @@ promo_banner_alt: "Turned off laptop computer on top of brown wooden table"
 promo_banner_height: "571"
 promo_banner_width: "1425"
 promo_banner: "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp"
-promo_banner_title: "Open source for the future of banking and finance."
+promo_banner_title: "Planning an ISO 20022 or post-quantum migration?"
 promo_banner_url: "https://sebastienrousseau.com"
 rating: "general"
 referrer: "no-referrer"
@@ -106,8 +106,9 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-<section class="read-as" data-announce="Now showing content for" aria-labelledby="read-as-label" hidden>
+<section class="read-as" data-announce="Now showing content for" aria-labelledby="read-as-label">
 <div class="read-as-inner">
+<div class="read-as-controls">
 <span class="read-as-label" id="read-as-label">Read as…</span>
 <div class="read-as-group" role="group" aria-label="Choose your reading lens">
 <button type="button" class="read-as-btn" data-read="" aria-pressed="true">Everyone</button>
@@ -116,31 +117,54 @@ site_software: "Static Site Generator, Rust"
 <button type="button" class="read-as-btn" data-read="regulators" aria-pressed="false">Regulators</button>
 </div>
 </div>
+<p class="read-as-summary" data-read-summary data-summary-default="Tailor the page order and highlights for your role." data-summary-boards="Prioritising board-level proof, fiduciary risk, and post-quantum governance." data-summary-engineers="Prioritising open-source Rust and Python libraries, ISO 20022 schemas, and FIPS 203 ML-KEM." data-summary-regulators="Prioritising the EPAA quantum-safe payments paper, DORA, CRA, and supervisory compliance.">Tailor the page order and highlights for your role.</p>
+</div>
 <p class="visually-hidden" data-read-status role="status" aria-live="polite"></p>
 </section>
 
 <section class="feat offer reveal" aria-labelledby="what-i-build" data-audience="engineers">
 <div class="offer-grid">
-<figure class="offer-media">
-<img alt="Soft natural light over a modern architectural space, representing dependable financial infrastructure." src="https://cloudcdn.pro/stocks/images/toa-heftiba-sinca-940295-1920.webp" loading="lazy" decoding="async" width="900" height="1100" />
+<figure class="offer-media offer-artefact" aria-label="Signed ISO 20022 and NIST FIPS 203 ML-KEM verification pipeline">
+<div class="artefact-chrome" aria-hidden="true">
+<span class="artefact-dots"><i></i><i></i><i></i></span>
+<span class="artefact-title">pacs.008.001.10 · ML-KEM-768 · Sigstore</span>
+<span class="artefact-badge">VERIFIED</span>
+</div>
+<pre class="artefact-code"><code><span class="artefact-comment"># 1. Validate CBPR+ pacs.008 structured address &amp; XSD</span>
+<span class="artefact-cmd">$ pain001-verify --schema pacs.008.001.10 --cbpr-plus tx.xml</span>
+<span class="artefact-ok">✓ XSD + structured postal address (Nov 2026 CBPR+ rule)</span>
+<span class="artefact-ok">✓ IBAN &amp; BIC routing verified · PII masked (GDPR/PCI)</span>
+
+<span class="artefact-comment"># 2. Encapsulate settlement payload with NIST FIPS 203</span>
+<span class="artefact-cmd">$ kyberlib encapsulate --alg ML-KEM-768 --in tx.xml</span>
+<span class="artefact-ok">✓ Ciphertext: 1,088 B · Shared secret: 256-bit SHA3-256</span>
+
+<span class="artefact-comment"># 3. Attest release &amp; CycloneDX 1.6 SBOM via Sigstore</span>
+<span class="artefact-cmd">$ cosign verify-blob --bundle release.sigstore.json sbom.cdx.json</span>
+<span class="artefact-ok">✓ Rekor tlog #142891042 · 0 unsafe · 100% test gate</span></code></pre>
+<figcaption class="artefact-foot">
+<span>ISO 20022 · SWIFT CBPR+</span>
+<span>NIST FIPS 203 (ML-KEM)</span>
+<span>CycloneDX 1.6 + Sigstore</span>
+</figcaption>
 </figure>
 <div class="offer-panel">
 <p class="offer-eyebrow">What I build</p>
-<h2 id="what-i-build" class="offer-headline">Open source for the future of finance.</h2>
+<h2 id="what-i-build" class="offer-headline">Open-source foundations for wholesale finance.</h2>
 <div class="offer-cards">
-<article class="offer-card">
+<article class="offer-card" data-audience-card="boards engineers">
 <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h13l-3-3m3 3-3 3"/><path d="M20 17H7l3-3m-3 3 3 3"/></svg>
 <h3>Payments</h3>
 <p>ISO 20022, end to end: pain.001, pacs.008, camt.053, and acmt.001. Adopt one library at a time.</p>
 <a class="offer-link" href="/projects-payments/index.html">Learn more <span aria-hidden="true">&rsaquo;</span></a>
 </article>
-<article class="offer-card">
+<article class="offer-card" data-audience-card="boards engineers regulators">
 <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5c0 4 3 7 7 8 4-1 7-4 7-8V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
 <h3>Security</h3>
 <p>Post-quantum primitives: ML-KEM (CRYSTALS-Kyber, NIST FIPS 203) and hashing, ready to pilot today.</p>
 <a class="offer-link" href="/projects-post-quantum/index.html">Learn more <span aria-hidden="true">&rsaquo;</span></a>
 </article>
-<article class="offer-card">
+<article class="offer-card" data-audience-card="engineers regulators">
 <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
 <h3>Tooling</h3>
 <p>Audited Rust libraries and a code security scanner, signed and shipped with a software bill of materials.</p>
@@ -173,14 +197,22 @@ site_software: "Static Site Generator, Rust"
   <span class="kpi-cell-label">Packages published</span>
 </div>
 </section>
-<div class="brands">
-<img alt="HSBC logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
-<img alt="PayPal logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/paypal.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
-<img alt="Barclays logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/barclays.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
-<img alt="Shazam logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/shazam.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
-<img alt="AKQA logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/akqa.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
-<img alt="Virgin logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/virgin.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<p class="proof-note">Most downloads come from transitive dependencies in CI/CD pipelines and production services across PyPI, crates.io, and npm.</p>
+<div class="brands" aria-label="Organisations across my career">
+<img alt="HSBC logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
+<img alt="PayPal logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/paypal.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
+<img alt="Barclays logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/barclays.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
+<img alt="Shazam logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/shazam.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
+<img alt="AKQA logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/akqa.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
+<img alt="Virgin logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/virgin.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
 </div>
+<ul class="proof-credibility" aria-label="Institutional credentials and standards">
+<li><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf">EPAA White Paper (Sep 2025)</a></li>
+<li><a href="/speaking/index.html">Economist Impact Speaker</a></li>
+<li><a href="/projects-post-quantum/index.html">NIST FIPS 203 ML-KEM</a></li>
+<li><a href="/iso20022-mcp/index.html">SWIFT CBPR+ / ISO 20022</a></li>
+<li><a href="/trust/index.html">Sigstore &amp; CycloneDX SBOM</a></li>
+</ul>
 </div>
 </section>
 
@@ -206,14 +238,26 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026/index.html" title="Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January." aria-label="Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January.">
+<img alt="A white curved concrete canopy opening onto clear blue sky, its edge sweeping away from the viewer toward a single unobstructed gap." src="https://cloudcdn.pro/stocks/images/matheus-natan-3297593.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">EU Data Act · Cloud Switching · DORA</span>
+<h3><a href="/2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026/index.html">Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January.</a></h3>
+<p class="newsroom-meta"><time datetime="2026-08-04">August 4, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> From 12 January 2027 cloud switching charges are abolished, egress included. The cost defence that kept DORA exit plans theoretical expires with them.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/index.html" title="DORA Spared You From NIS2. It Will Not Spare You From the CRA." aria-label="DORA Spared You From NIS2. It Will Not Spare You From the CRA.">
 <img alt="Layered mountain ridges receding into pale haze, each ridge fainter than the one before it, seen from above the cloud line." src="https://cloudcdn.pro/stocks/images/paul-earle-wVjd0eWNqI8.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Cyber Resilience Act · Article 14 · Incident Reporting</span>
+<span class="newsroom-eyebrow">Cyber Resilience Act · CRA · DORA</span>
 <h3><a href="/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/index.html">DORA Spared You From NIS2. It Will Not Spare You From the CRA.</a></h3>
 <p class="newsroom-meta"><time datetime="2026-08-03">August 3, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> CRA Article 14 starts a 24-hour reporting clock on 11 September 2026. It attaches to products rather than entities, so the NIS2 deferral to DORA that spares banks has nothing to displace — and the trigger is exploitation, not severity.</p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> On 11 September the CRA starts a 24-hour reporting clock. It attaches to products, so the DORA carve-out that spares banks from NIS2 never reaches it.</p>
 </div>
 </article>
 
@@ -225,62 +269,33 @@ site_software: "Static Site Generator, Rust"
 <span class="newsroom-eyebrow">EU AI Act · Article 50 · AI Governance</span>
 <h3><a href="/2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026/index.html">Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.</a></h3>
 <p class="newsroom-meta"><time datetime="2026-08-02">August 2, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> The AI Omnibus deferred Annex III high-risk to December 2027 but left Article 50 untouched, applicable today. The obligation that bites now sits in digital channels and marketing, not with the model-risk team holding the deferred file.</p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> The AI Omnibus moved the high-risk deadline to December 2027. It did not move Article 50. Transparency obligations apply from today, and they land on the chatbot.</p>
 </div>
 </article>
 
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-08-01-eudi-wallet-eidas-2-banks-relying-party-2026/index.html" title="The Wallet Ships in December. Banks Must Accept It a Year Later." aria-label="The Wallet Ships in December. Banks Must Accept It a Year Later.">
-<img alt="A covered pedestrian passage between office towers in a financial district, lit from the far end, with the walkway narrowing toward a single controlled opening." src="https://cloudcdn.pro/stocks/images/jez-timms-4xLteCXh6X0.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Digital Identity · eIDAS 2 · Authentication</span>
-<h3><a href="/2026-08-01-eudi-wallet-eidas-2-banks-relying-party-2026/index.html">The Wallet Ships in December. Banks Must Accept It a Year Later.</a></h3>
-<p class="newsroom-meta"><time datetime="2026-08-01">August 1, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> Member States must ship an EU Digital Identity Wallet by December 2026; banks must accept it by December 2027. The bank becomes a registered relying party, and the hardest part is binding a state identity to a customer record opened a decade ago.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-07-31-fida-open-finance-data-sharing-schemes-banks-2026/index.html" title="PSD2 Made Banks Build an API. FiDA Makes Them Join a Market." aria-label="PSD2 Made Banks Build an API. FiDA Makes Them Join a Market.">
-<img alt="A dense city grid photographed from directly above at night, thousands of lit buildings and intersecting streets extending to every edge of the frame." src="https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Open Finance · FiDA · Data Strategy</span>
-<h3><a href="/2026-07-31-fida-open-finance-data-sharing-schemes-banks-2026/index.html">PSD2 Made Banks Build an API. FiDA Makes Them Join a Market.</a></h3>
-<p class="newsroom-meta"><time datetime="2026-07-31">July 31, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> Compliance runs through a scheme you must join, not an interface you build alone. Access acquires a price, and the scope reaches the products banks actually earn on. The terms are being negotiated now.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-07-30-model-risk-management-generative-ai-out-of-scope-2026/index.html" title="Out of Scope Is Not Out of Risk: The 2026 Model-Risk Rewrite Left Out the Models Banks Are Actually Deploying" aria-label="Out of Scope Is Not Out of Risk: The 2026 Model-Risk Rewrite Left Out the Models Banks Are Actually Deploying">
-<img alt="A long dark bench on a vast paved plaza seen from directly above, with a single seated figure at the far right edge and open ground stretching away from them." src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Model Risk · Generative AI · Supervision</span>
-<h3><a href="/2026-07-30-model-risk-management-generative-ai-out-of-scope-2026/index.html">Out of Scope Is Not Out of Risk: The 2026 Model-Risk Rewrite Left Out the Models Banks Are Actually Deploying</a></h3>
-<p class="newsroom-meta"><time datetime="2026-07-30">July 30, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> The April 2026 rewrite superseded fifteen years of model-risk doctrine and expressly excluded generative and agentic AI. Out of scope is not out of risk — and the UK's technology-neutral statement pulls the same models back in.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-07-29-threat-led-penetration-testing-dora-tlpt-banks-2026/index.html" title="The Red Team Became a Supervised Supply Chain: What DORA's TLPT Regime Actually Demands" aria-label="The Red Team Became a Supervised Supply Chain: What DORA's TLPT Regime Actually Demands">
-<img alt="The corner of a building clad in a finely perforated white screen, photographed from below against a bright sky." src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">DORA · Red Teaming · Operational Resilience</span>
-<h3><a href="/2026-07-29-threat-led-penetration-testing-dora-tlpt-banks-2026/index.html">The Red Team Became a Supervised Supply Chain: What DORA's TLPT Regime Actually Demands</a></h3>
-<p class="newsroom-meta"><time datetime="2026-07-29">July 29, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> DORA turned adversary simulation into a supervised obligation on a three-year cadence. The constraints that bind are the accredited tester market, threat intelligence that must come from outside every time, and third parties pulled into scope.</p>
-</div>
-</article>
 
 </div>
 
 <div class="feat-cta-row">
 <a class="pill ghost" href="/articles/index.html">See all articles</a>
+<a class="feat-secondary-link" href="/changelog/index.html">Browse the changelog <span aria-hidden="true">&rsaquo;</span></a>
 </div>
+</div>
+</section>
+
+<section class="feat alt reveal newsletter-band" aria-labelledby="newsletter-h">
+<div class="wrap newsletter-band-inner">
+<p class="feat-eyebrow">Newsletter · Banking On Quantum</p>
+<h2 id="newsletter-h" class="feat-headline center">Monthly briefings for senior banking architects.</h2>
+<p class="feat-sub center">Research notes on applied AI, ISO 20022 migration, and post-quantum cryptography across wholesale payment rails. No spam, unsubscribe in one click.</p>
+<form class="ap-newsletter" action="/contact/" method="get" aria-label="Newsletter signup">
+<label for="home-newsletter-email" class="visually-hidden">Work email address</label>
+<div class="ap-newsletter-row">
+<input id="home-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />
+<input type="hidden" name="subject" value="newsletter" />
+<input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+<button type="submit">Subscribe</button>
+</div>
+</form>
 </div>
 </section>
