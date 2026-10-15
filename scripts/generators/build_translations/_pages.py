@@ -57,11 +57,11 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
     # Cryptography" and its description. Every active locale must have an
     # entry here; locales missing from the map fall back to English, never
     # to another translation.
-    _en_home_title = "Sebastien Rousseau: AI, Payments & Quantum Cryptography"
+    _en_home_title = "Sebastien Rousseau · Post-Quantum & ISO 20022 for Banking"
     _en_home_desc = (
-        "The future of banking through applied AI, payments and quantum-resistant "
-        "security. Research, open-source libraries and product consulting for "
-        "financial services."
+        "Open-source ISO 20022 and post-quantum cryptography for banks: "
+        "179 audited packages, 51M+ downloads, and research for wholesale "
+        "payments leaders."
     )
     _home_titles = {
         "ar": "سيباستيان روسو: الذكاء الاصطناعي والمدفوعات والتشفير الكمومي",

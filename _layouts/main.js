@@ -1105,14 +1105,32 @@ function fallbackCopy(text, done) {
         });
     });
 
-    // Privacy-friendly, cookie-free interaction hooks for hero CTAs and newsletter signup.
+    // Privacy-friendly, cookie-free interaction hooks for hero CTAs, white paper, and newsletter signup.
     Array.prototype.slice
         .call(document.querySelectorAll(".feat-hero\x20.feat-cta\x20a,\x20.feat-finale\x20.feat-cta\x20a,\x20.ap-cta-mini"))
         .forEach(function (link) {
             link.addEventListener("click", function () {
+                var href = link.getAttribute("href") || "";
                 emitTrack("cta_click", {
-                    href: link.getAttribute("href") || "",
+                    href: href,
                     label: (link.textContent || "").trim()
+                });
+                if (href.indexOf("contact") !== -1) {
+                    var loc = link.classList.contains("ap-cta-mini")
+                        ? "header"
+                        : link.closest(".feat-hero")
+                        ? "hero"
+                        : "band";
+                    emitTrack("cta_get_in_touch", { location: loc });
+                }
+            });
+        });
+    Array.prototype.slice
+        .call(document.querySelectorAll('a[href*="Quantum-Safe-Payments"]'))
+        .forEach(function (link) {
+            link.addEventListener("click", function () {
+                emitTrack("paper_download", {
+                    paper: "epaa-quantum-safe-payments-2025"
                 });
             });
         });
@@ -1304,8 +1322,24 @@ function fallbackCopy(text, done) {
     }
 
     updateClock();
-    setInterval(function () {
-        if (!document.hidden) updateClock();
-    }, reduced ? 10000 : 100);
+    if (reduced) return;
+
+    var inView = true;
+    var stage = hh.closest ? hh.closest(".feat-hero-stage") : null;
+    if (stage && "IntersectionObserver" in window) {
+        var io = new IntersectionObserver(function (entries) {
+            for (var i = 0; i < entries.length; i++) {
+                inView = entries[i].isIntersecting;
+            }
+        });
+        io.observe(stage);
+    }
+
+    var boot = window.requestIdleCallback || function (fn) { return setTimeout(fn, 200); };
+    boot(function () {
+        setInterval(function () {
+            if (!document.hidden && inView) updateClock();
+        }, 100);
+    });
 })();
 

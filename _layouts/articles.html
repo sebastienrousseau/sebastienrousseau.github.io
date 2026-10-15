@@ -52,6 +52,9 @@
          it above the fold so the preload triggered a console warning on
          every dated article. -->
     <link rel="canonical" href="{{url}}" />
+    <link rel="me" href="https://github.com/sebastienrousseau" />
+    <link rel="me" href="https://www.linkedin.com/in/sebastienrousseau/" />
+    <link rel="me" href="https://orcid.org/0009-0005-1434-284X" />
     <link rel="icon" type="image/x-icon" href="{{cdn}}/{{short_name}}/favicon.ico" sizes="16x16 32x32" />
     <link rel="apple-touch-icon" href="{{cdn}}/{{short_name}}/v1/icons/{{apple_touch_icon_sizes}}.png" sizes="{{apple_touch_icon_sizes}}" />
     <link rel="manifest" href="/manifest.json" />
@@ -1505,7 +1508,7 @@
       .ap-foot .legal a{margin:0;padding:0 6px}
       .ap-foot .social{display:inline-flex;gap:12px;align-items:center}
       .ap-foot .social a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;min-width:44px}
-      .ap-foot .social img{width:18px;height:18px;opacity:.65;transition:opacity .15s}
+      .ap-foot .social img{width:18px;height:18px;opacity:.82;transition:opacity .15s}[data-theme="dark"] .ap-foot .social img{filter:invert(1);opacity:.88}@media (prefers-color-scheme:dark){html:not([data-theme="light"]) .ap-foot .social img{filter:invert(1);opacity:.88}}
       .ap-foot .social a:hover img{opacity:1}
 
       :focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px;box-shadow:0 0 0 6px color-mix(in srgb,var(--accent) 18%,transparent)}
@@ -1747,7 +1750,7 @@
       .artefact-code{margin:0;padding:20px 22px;font-size:13px;line-height:1.55;color:var(--art-fg);background:transparent;overflow-x:auto;white-space:pre-wrap;flex:1}
       .artefact-code code{background:transparent;padding:0;color:inherit;font-size:inherit}
       .artefact-comment{color:var(--art-mute);display:block}
-      .artefact-cmd{color:var(--art-cmd);font-weight:600;display:block}
+      .artefact-cmd{color:var(--art-cmd);font-weight:600;display:block}.artefact-prompt{user-select:none;-webkit-user-select:none}
       .artefact-ok{color:var(--art-ok);display:block;margin-bottom:6px}
       .artefact-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding:12px 20px;background:var(--art-chrome);border-top:1px solid var(--art-border);font-size:12px;color:var(--art-mute)}
       .offer-panel{padding:clamp(8px,1.5vw,20px) 0;text-align:start;display:flex;flex-direction:column;justify-content:center}
@@ -1907,7 +1910,7 @@
       .feat.wide .wrap{max-width:var(--max-wide)}
       .feat.alt{background:var(--bg-alt)}
       .feat.dark{background:var(--bg-dark,#000);color:#f5f5f7}
-      .feat.dark .feat-headline,.feat.dark .feat-sub,.feat.dark .feat-card h3{color:#f5f5f7}
+      .feat.dark .feat-headline,.feat.dark .feat-sub,.feat.dark .feat-card h3,.feat.dark .feat-card-title{color:#f5f5f7}
       .feat.dark .feat-sub{--feat-dark-sub:#d4d4d9;color:var(--feat-dark-sub)}
       .feat-eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.08em;color:var(--accent);text-transform:uppercase;margin:0 0 14px}
       .feat.dark .feat-eyebrow{color:#5ac8fa}
@@ -1973,10 +1976,10 @@
       .feat-card-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
       .feat-card-body{padding:48px 52px;display:flex;flex-direction:column;justify-content:center}
       @media (max-width:833px){.feat-card-body{padding:36px 28px}}
-      .feat-card h3{font-size:clamp(28px,3vw,40px);line-height:1.1;font-weight:600;letter-spacing:-.015em;margin:0 0 16px;color:var(--ink)}
+      .feat-card h3,.feat-card-title{font-size:clamp(28px,3vw,40px);line-height:1.1;font-weight:600;letter-spacing:-.015em;margin:0 0 16px;color:var(--ink)}
       .feat-card p{font-size:17px;line-height:1.55;color:var(--ink-soft);margin:0 0 24px}
       /* Proof caption + credibility row + newsletter band */
-      .proof-note{font-size:15px;line-height:1.5;color:var(--ink-soft);margin:18px auto 0;max-width:68ch;text-align:center}
+      .proof-note{font-size:15px;line-height:1.5;color:var(--ink-soft);margin:18px auto 0;max-width:78ch;text-align:center}
       .proof-credibility{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 14px;margin:20px auto 0;padding:0;list-style:none;max-width:980px}
       .proof-credibility li{display:inline-flex;align-items:center;padding:6px 14px;border-radius:999px;background:var(--card);border:1px solid var(--border);font-size:13px;font-weight:600;color:var(--ink-soft)}
       .newsletter-band .wrap{max-width:760px}
@@ -2089,10 +2092,15 @@
       main.content blockquote li strong{color:var(--ink)}
 
       .brands{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:clamp(24px,4vw,52px);margin:40px 0 16px;padding:32px 28px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+      .brands.worked-with{gap:10px 18px;min-height:94px;font-family:var(--type-body);color:var(--ink-mute)}
+      .feat-finale .feat-sub{max-width:780px}
+      .worked-with-label{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-inline-end:6px}
+      .worked-with-item{font-size:16px;font-weight:600;letter-spacing:.01em;color:var(--ink-mute);line-height:28px}
+      .worked-with-sep{font-size:16px;color:var(--ink-mute);line-height:28px}
       .brand-logo{height:28px;width:auto;max-width:140px;flex:0 0 auto;filter:grayscale(100%) contrast(1.1);opacity:.88;transition:opacity .25s ease,filter .25s ease;object-fit:contain}
       .brand-logo:hover{filter:grayscale(0);opacity:1}
-      html[data-theme="dark"] .brands{--brands-dark-bg:#f5f5f7;background:var(--brands-dark-bg);border-radius:16px;border-color:rgba(255,255,255,.12)}
-      @media (prefers-color-scheme:dark){html:not([data-theme="light"]) .brands{--brands-dark-bg:#f5f5f7;background:var(--brands-dark-bg);border-radius:16px;border-color:rgba(255,255,255,.12)}}
+      html[data-theme="dark"] .brands:not(.worked-with){--brands-dark-bg:#f5f5f7;background:var(--brands-dark-bg);border-radius:16px;border-color:rgba(255,255,255,.12)}
+      @media (prefers-color-scheme:dark){html:not([data-theme="light"]) .brands:not(.worked-with){--brands-dark-bg:#f5f5f7;background:var(--brands-dark-bg);border-radius:16px;border-color:rgba(255,255,255,.12)}}
       @media (max-width:600px){.brands{gap:20px 28px;padding:24px 18px}.brand-logo{height:22px}}
 
       /* Static Site Generator auto-injected search widget. Apple-clean override:
@@ -2660,7 +2668,6 @@
               <li><a href="/about/index.html">About</a></li>
               <li><a href="/contact/index.html">Contact</a></li>
               <li><a href="/speaking/index.html">Speaking</a></li>
-              <li><a href="/playlists/index.html">Playlists</a></li>
             </ul>
           </div>
           <div>
@@ -2688,6 +2695,7 @@
               <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
               <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
               <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+              <li><a href="/playlists/index.html">Playlists</a></li>
             </ul>
           </div>
         </div>
@@ -2817,7 +2825,9 @@
         "https://www.linkedin.com/in/sebastienrousseau/",
         "https://medium.com/@BankingOnQuantum",
         "https://www.youtube.com/@BankingOnQuantum",
-        "https://github.com/sebastienrousseau"
+        "https://github.com/sebastienrousseau",
+        "https://crates.io/users/sebastienrousseau",
+        "https://pypi.org/user/sebastienrousseau/"
       ]
     },
     {
@@ -2860,8 +2870,10 @@
       "@type": "ProfilePage",
       "@id": "https://sebastienrousseau.com/#profile",
       "mainEntity": {"@id": "https://sebastienrousseau.com/#person"},
-      "name": "Sebastien Rousseau: AI, Banking & Financial Services Expert",
+      "isPartOf": {"@id": "https://sebastienrousseau.com/#website"},
+      "name": "Sebastien Rousseau · Post-Quantum & ISO 20022 for Banking",
       "url": "https://sebastienrousseau.com/",
+      "dateModified": "2026-10-15",
       "inLanguage": "{{language}}"
     },
     {
@@ -2881,6 +2893,32 @@
         "url": "https://emergingpaymentsasia.org/"
       },
       "inLanguage": "{{language}}"
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://sebastienrousseau.com/#latest-articles",
+      "name": "From the desk",
+      "numberOfItems": 3,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January.",
+          "url": "https://sebastienrousseau.com/2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "DORA Spared You From NIS2. It Will Not Spare You From the CRA.",
+          "url": "https://sebastienrousseau.com/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.",
+          "url": "https://sebastienrousseau.com/2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026/"
+        }
+      ]
     }
   ]
 }
