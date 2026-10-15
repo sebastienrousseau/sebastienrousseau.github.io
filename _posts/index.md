@@ -187,13 +187,13 @@ site_software: "Static Site Generator, Rust"
 </div>
 </section>
 <p class="proof-note">Most downloads come from transitive dependencies in CI/CD pipelines and production services across PyPI, crates.io, and npm &middot; <span class="proof-updated">Updated <time datetime="2026-10-15">15 Oct 2026</time>.</span></p>
-<div class="brands worked-with" aria-label="Organisations across my career">
-<span class="worked-with-label">Worked with</span>
-<span class="worked-with-item">HSBC</span>
-<span class="worked-with-sep" aria-hidden="true">&middot;</span>
-<span class="worked-with-item">Barclays</span>
-<span class="worked-with-sep" aria-hidden="true">&middot;</span>
-<span class="worked-with-item">PayPal</span>
+<div class="brands" aria-label="Organisations across my career">
+<img alt="HSBC logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
+<img alt="PayPal logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/paypal.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
+<img alt="Barclays logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/barclays.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
+<img alt="Shazam logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/shazam.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
+<img alt="AKQA logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/akqa.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
+<img alt="Virgin logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/virgin.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
 </div>
 <ul class="proof-credibility" aria-label="Institutional credentials and standards">
 <li><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf">EPAA White Paper (Sep 2025, PDF)</a></li>
