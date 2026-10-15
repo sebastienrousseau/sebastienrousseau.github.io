@@ -1,172 +1,262 @@
-<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- SPDX-License-Identifier: Apache-2.0 OR MIT -->
 
 # Changelog
 
 All notable changes to this repository (schema, build pipeline, security, accessibility, and crawler-facing surface) are recorded here.
 
-This site follows [Semantic Versioning](https://semver.org/) for the **build pipeline + schema graph**; content (articles, translations) lands continuously between tags and isn't versioned here. Editorial revision history per article lives in each post's `last_reviewed` frontmatter field.
+This site follows [Semantic Versioning](https://semver.org/) in a `0.0.x` series (incrementing strictly by `0.0.1` from `v0.0.1`) for the **build pipeline + schema graph**; content (articles, translations) lands continuously between tags and is not versioned here. Editorial revision history per article lives in each post's `last_reviewed` frontmatter field.
 
-The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-## [1.2.1] - Unreleased
-
-### Added
-
-- `GET /api/clock/hero-<light|dark>.svg` on the lang-router Worker
-  (`workers/clock.js`): serves the GitHub profile's hero SVG with its
-  wall clock set to London time and running, uncached so GitHub's
-  image proxy refetches it on each view. Falls back to a 302 to the
-  static SVG if the profile repository is unreachable.
-
-### Security
-
-- `basic-ftp` in the Lighthouse CI tool is pinned to `^6.2.1` through an
-  npm override, clearing GHSA-c475-qrg2-pj4r (high: quadratic-time CPU
-  denial of service in `Client.list()`). It arrives through
-  `get-uri`, whose latest release still asks for 5.x; the `Client`
-  methods `get-uri` calls are unchanged in 6.x.
-- `compression` (`^1.8.2`) and `proxy-addr` (`^2.0.8`) in the Lighthouse
-  CI tool are pinned through npm overrides, clearing GHSA-vc2v-76pw-4v95
-  (high: memory leak on premature response close) and GHSA-jqcg-44mw-7w3h
-  (critical: IP spoofing through an IPv4-mapped IPv6 trust subnet). Both
-  sit under `@lhci/cli`'s Express server, which only ever serves the local
-  fixture; the `npm audit --audit-level=high` gate in `ci.yml` would
-  otherwise fail every pull request. The remaining moderate chain
-  (`js-yaml` 3 -> `argparse` 1 -> `sprintf-js`, GHSA-hp3w-g68c-fv3c) has no
-  fixed release of `sprintf-js` and stays below the gate.
+## [0.0.22] - Unreleased
 
 ### Changed
 
-- Dev toolchain: `ruff` 0.16.8 -> 0.16.10, `mypy` 2.3.1 -> 2.4.0,
-  `cyclonedx-bom` 7.4.0 -> 7.5.0 (Dependabot #490), with
-  `requirements-dev.lock` regenerated so the hash-pinned install CI uses
-  actually moves (the Dependabot PR bumped only `requirements-dev.txt`
-  and failed the lock-consistency test).
-- GitHub Actions: `github/codeql-action` 4.37.9 -> 4.38.2 (Dependabot #491).
-- The twelve layouts now come from the `sebastienrousseau` theme in
-  ssg-themes.github.io, flattened with `make theme-sync` (ADR-0014). Two
-  template-level changes, `{{!content}}` for `{{content}}` and
-  `{{language}}` for the hard-coded JSON-LD `en-GB`, leave every rendered
-  page identical; the head comment that documents the CSP no longer quotes
-  a literal script tag that three comment-blind scanners read as a block.
-- The theme now meets every gate the ssg-themes gallery runs, and the
-  site adopts the design through it: the colour-scheme control has three
-  states (system, light, dark; "system" is no `data-theme` attribute and
-  the page follows the operating system), every navigation, footer, card,
-  chip, breadcrumb and credential link is a 44 px target, prose links
-  never wrap across two lines, card and featured frames are 3:2, the
-  story hero becomes a natural-aspect banner below 1024 px, titles and
-  excerpts are no longer line-clamped, table headers are 12 px, dark mode
-  gives the pills dark ink on the light-blue accent, Spotify players load
-  on request from a link that works without JavaScript, and code blocks
-  wrap instead of scrolling sideways. Image-only card links carry their
-  title as an accessible name, the editorial page has one h1, the ISO
-  20022 MCP docs page's card headings are no longer `<header>` banners,
-  and the French contact page no longer renders a second form with the
-  same ids. The pa11y dark shard clicks the control twice before
-  asserting dark mode.
+- **Homepage 10/10 design and editorial overhaul ([#496])**: Replaces the hero lead with a clear executive credential band, restores the six institution brand logos (`HSBC`, `PayPal`, `Barclays`, `Shazam`, `AKQA`, `Virgin`), promotes three flagship production repositories (`Static Site Generator`, `Pain001`, `ISO 20022 Rust Ecosystem`) into proof cards, consolidates the three domain pillars into scannable cards, and translates the updated structure across all 34 non-English locales.
 
 ### Fixed
 
-- Eight CodeQL `py/unused-global-variable` notes: the constants
-  `article_furniture` shares with `content_blocks`, `sharing`,
-  `html_passes`, `schemas`, `navigation` and `redirects` lose their
-  leading underscore (they are a cross-module API, not private state),
-  and `build_translations/_pages.py` drops an `_LDJSON_RE` it never used.
-- lang-router Worker: a `pref-lang` cookie whose value is not valid
-  percent-encoding (`pref-lang=%`) made `decodeURIComponent` throw out of
-  the fetch handler, so every page navigation answered HTTP 500 for as long
-  as the 30-day cookie lived (reproduced live on 2026-10-06). An
-  undecodable cookie is now treated as unset and the canonical EN page is
-  served; `workers/test_lang_router.mjs` pins both the helper and the
-  handler path.
-- /playlists/: the "Listen on every device" paragraph is translated on
-  all 34 locales. The forker's anchor kept the source's line breaks, which
-  the minifier collapses first, so it never matched (every build warned
-  "1 anchor(s) not found" for every locale).
-- Unit sandbox: a `scripts/` module imported inside a test body, or
-  force-reimported, kept its real paths, so `gen_layouts.main()` wrote
-  into the real `_layouts/`. Modules are now repointed as they are
-  imported, keyed by module object.
-
-## [1.2.0] - 2026-06-02
-
-Phase 1 Week 3 + Google News readiness + template hygiene.
-
-### Added
-
-- **`NewsArticle` JSON-LD on fresh posts ([#165])**: `inject_news_article` in `schemas.py` reshapes the existing `BlogPosting` graph into a Google-News-spec-compliant `NewsArticle` node (with `author` / `publisher` refs to `#person` / `#organization`, `speakable`, image, article section) on posts within 48 hours of `datePublished`. Stale posts stay indexed via `TechArticle` / `ScholarlyArticle` / `BlogPosting`. New `NEWS_FRESHNESS_HOURS = 48` constant. Liberal ISO 8601 parser handles `+HH:MM` offsets, `Z` suffix, bare `YYYY-MM-DD` (stamped UTC).
-- **Editorial standards page ([#163])**: new `/editorial/` page with full `EditorialPolicy` + `CorrectionsPolicy` JSON-LD. Sections: sourcing (5-tier primary-source hierarchy), 48-hour corrections clause (IFCN-aligned), AI assistance disclosure (Claude + Copilot: explicit boundary on claim verification / source citation / author voice), conflict-of-interest disclosure (HSBC employment, past employers, no paid placements), CC BY-4.0 republication terms, accountability table with sigstore verification command. The single highest-leverage Google News reviewer signal the site was missing.
-- **`Organization` graph extended with policy refs ([#163])**: `editorialPolicy` / `correctionsPolicy` / `ethicsPolicy` / `diversityPolicy` properties added to the `#organization` node across all 11 layouts. All four point at `/editorial/` (corrections has its own anchor). These are the `NewsMediaOrganization` fields Google News reviewers and Article Search Result enhancers look for.
-- **Named typography abstraction layer ([#162])**: three CSS custom properties in every layout's `:root`: `--type-display` (display / headings), `--type-body` (body / nav / UI), `--type-mono` (code). Values are system-font stacks for now; the abstraction lets a follow-up swap in self-hosted Inter + Newsreader + JetBrains Mono with size-adjust fallback metrics in three lines per layout without touching any other CSS.
-- **`/about/` ORCID iD published**: `0009-0005-1434-284X` replaces the `Pending registration` placeholder, and is also surfaced in the editorial page's accountability table.
-
-### Fixed
-
-- **Idempotent TOC injection ([#166])**: `inject_anchor_links_and_toc` was non-idempotent. Every rerun on already-processed HTML re-anchored existing H2s (extracting the prior `#` as part of the heading text) and appended a fresh `<aside class="article-toc">`. Today's article had **5 stacked TOCs and 5 anchor links per H2**; every H2 in the TOC ended ` # # # #`. The whole deployed back catalogue carried the same artefacts. Top-of-function guard now returns html unchanged when `class="article-toc"` or `class="heading-anchor"` is already present inside `<main>`. Defensive `_HEADING_ANCHOR_RE` also strips prior anchor markup from inner content so narrow regression paths (hand-crafted partial state in tests) still degrade safely.
-- **Duplicate `<h1>` on every article page ([#166])**: every dated article had two `<h1>` tags with identical text: one from the layout's hero band, one from the markdown body's `# Title`. WCAG 1.3.1 / 2.4.6 violation + structural noise. New `strip_duplicate_body_h1` postbuild pass removes the first H1 inside `<main>` when its text matches the hero H1. `check_voice` still requires exactly one H1 in the markdown source.
-
-### Verification
-
-- 388 / 388 unit tests pass (39 new)
-- 100 % `postbuild_lib` coverage held
-- `radon cc -n C` clean (no C-grade complexity)
-- `ruff` clean
-- Verified on the deployed back catalogue: H1 count 2 → 1, TOC count 5 → 1, TOC labels clean
-- Lighthouse (audit-level CWV gates) + pa11y WCAG2AAA + JSON-LD validate all green on every PR
+- **Homepage frontmatter ampersand encoding ([#496])**: Uses literal `&` instead of `&amp;` in `_posts/index.md` `item_title` and `apple-mobile-web-app-title` so `ssg 0.0.68` does not emit double-encoded `&amp;amp;` in `<meta name="apple-mobile-web-app-title">` across the 35 homepage editions.
 
 ---
 
-## [1.1.0] - 2026-06-01
+## [0.0.21] - 2026-10-15
 
-Phase 1 Week 2: performance gates + crawler policy + inline language switcher.
+### Highlights
 
-### Added
-
-- **INP-aware Core Web Vitals lighthouse-ci gates ([#159])**: audit-level assertions added on top of category scores: `total-blocking-time` ≤ 200 ms (lab proxy for real-user INP < 200 ms p75), `largest-contentful-paint` ≤ 2500 ms, `cumulative-layout-shift` ≤ 0.1 (all error); `first-contentful-paint` ≤ 1800 ms (warn). lhci's default `interaction-to-next-paint` `auditRan` assertion explicitly disabled because INP is field-only on static pages. `.github/workflows/ci.yml` bumped from `@lhci/cli@^0.13` to `0.14.x` for Lighthouse-12 audit parity with the `lighthouse.yml` workflow.
-- **`/llms-ctx.txt` ([#160])**: compact agent-context companion to `llms.txt`. URL + one-line description pairs grouped into Content / Feeds / JSON API / Author / Bot policy. Stays under 80 lines so it fits inside the smallest reasonable LLM context budget.
-- **Per-category `robots.txt` taxonomy ([#160])**: same all-Allow stance, but the 30+ `User-agent` blocks are now grouped under five explicit category headers: Web search · Social / link-preview · SEO audit · AI retrieval (cite-on-query) · AI training (broad ingest) · Specialised indexers. Newly added: `Claude-User`, `Claude-SearchBot` (Anthropic split these from a single UA in late 2025).
-- **Human-readable bot policy ([#160])**: new `/about/#bot-policy` section enumerates each crawler category, states the CC BY-4.0 licence, links every machine-readable surface (`/llms.txt`, `/llms-ctx.txt`, `/llms-full.txt`, `/api/agents/`, `/robots.txt`), and tells operators how to request a per-bot rule change.
-- **Per-article inline language switcher ([#161])**: surfaces the 28-locale advantage to readers as content, not chrome. Rendered as a bordered band between the article hero and `<main>`. Native-script labels (`Français · 日本語 · العربية · 简体中文 · …`) localised lead-in per page locale (`Cet article est aussi disponible en…` / `この記事は次の言語でもご覧いただけます…`). Each link carries `lang` + `hreflang` + `rel="alternate"`; Arabic + Hebrew get `dir="rtl"`.
-
-### Verification
-
-- 372 / 372 unit tests pass
-- 100 % `postbuild_lib` coverage held
-- `radon cc -n C` clean
-- 7 new test cases for the language switcher; 4 for the per-category `robots.txt`
+- **Live profile clock Worker route and cookie resilience ([#488], [#492])**: Adds `GET /api/clock/hero-<light|dark>.svg` on the Cloudflare Worker and handles undecodable `pref-lang` cookies gracefully instead of returning HTTP 500.
+- **`ssg-themes` layout synchronisation and three-state theme control ([#492])**: Synchronises all 12 layouts from `ssg-themes.github.io` (`make theme-sync`, ADR-0014) with a three-state colour-scheme control (`system`, `light`, `dark`), 44 px tap targets, and on-demand Spotify embeds.
+- **Documentation consolidation and release version gate ([#493])**: Consolidates `project-docs/` into `docs/`, adds `AGENTS.md`, `DEVELOPMENT.md`, `SUPPORT.md`, and `CITATION.cff`, and enforces version agreement via `scripts/security/verify-release-versions.sh`.
 
 ---
 
-## [1.0.0] - 2026-06-01
+## [0.0.20] - 2026-09-03
 
-Phase 1 Week 1: schema baseline. First tagged release.
+### Highlights
 
-### Added
-
-- **`Person` graph overhaul ([#158])**: ORCID `0009-0005-1434-284X` added as `PropertyValue` `identifier` and prepended to `sameAs`. Three `EducationalOccupationalCredential` `hasCredential` entries (HSBC professional experience, ISO 20022 / SWIFT, NIST Post-Quantum Cryptography). 12-entry `knowsAbout` migrated from plain strings to `DefinedTerm` objects with `sameAs` to Wikipedia / NIST CSRC / SWIFT / Federal Reserve / TCH / ECB - the entity graph AI engines walk. `alumniOf` entries now carry `url`.
-- **`Organization` graph node ([#158])**: new standalone `Organization` + `Brand` node with `@id` `#organization`, `logo`, `founder` → `#person`, `sameAs` to GitHub / Twitter / LinkedIn / Medium. `WebSite.publisher` rewired to `#organization`; `WebSite.author` added pointing at `#person`.
-- **`TechArticle` / `ScholarlyArticle` article subtypes ([#158])**: `inject_tech_article` generalised to fire on every dated post. Auto-upgrades to `ScholarlyArticle` when the rendered body cites ≥ 6 distinct primary-source authority domains (NIST, ISO, BIS, IETF, SWIFT, ECB, Treasury, …). `ScholarlyArticle` carries the `citation` array natively. `BlogPosting` left untouched so the 30+ downstream gates (`article_furniture`, `seo`, `build_translations`, `validate_jsonld`) keep matching.
-- **`/api/agents/organization.json` ([#158])**: new endpoint exposing the `Organization` + `Brand` graph as static JSON.
-
-### Why this matters
-
-Post-March-2026 Google core update moved E-E-A-T to an active filter (r = 0.81 correlation with AI Overview citation; 96 % of AI Overview citations now come from high-E-E-A-T sources). Domain Authority correlation collapsed to r = 0.18. Authority is now individuated and credential-graph-driven, not domain-wide, so the load-bearing schema work is at the `Person` / `Organization` / `Article-subtype` layer with ORCID + `hasCredential` + `DefinedTerm`.
-
-### Verification
-
-- 102 / 102 schema + postbuild orchestration tests pass
-- JSON-LD structural validation passes
-- Lighthouse + accessibility + diff + build CI gates all green
+- **`Apache-2.0 OR MIT` dual licensing and DCO governance ([#442], [#476], [#477], [#478])**: Dual-licenses the repository under `Apache-2.0 OR MIT` with SPDX headers on every source file, adds `GOVERNANCE.md`, `ROADMAP.md`, and `CODE_OF_CONDUCT.md`, and enforces DCO sign-off.
+- **100% 34-locale body and slug localisation ([#441], [#445], [#449], [#451], [#454], [#474])**: Empties the body-translation and English-title backlogs across all 34 non-English locales, localises every article URL slug, and restores 128 retired URLs as redirect pages.
+- **Schema.org `Dataset` distributions and byte-identical builds ([#458], [#462], [#472], [#479])**: Publishes index articles as `Dataset` entities advertised in `llms.txt`, pins the build clock for reproducible builds, and raises `scripts/` test coverage to 95% (94% floor).
 
 ---
 
-[1.2.0]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v1.2.0
-[1.1.0]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v1.1.0
-[1.0.0]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v1.0.0
+## [0.0.19] - 2026-08-21
 
+### Highlights
+
+- **Zero Dependabot alerts and 6-shard `pa11y` CI ([#387], [#408], [#411], [#419])**: Clears all open npm and Python Dependabot advisories across CI tooling and fans `pa11y` out across 6 light shards with per-shard timeouts.
+- **178 locale re-translations and canonical internal links ([#400], [#407])**: Re-translates 178 articles into their target locales and canonicalises internal links across all templates and posts.
+- **`ssg 0.0.50` drift tracking and full site audit closure ([#425], [#430], [#436])**: Enforces the pinned `ssg` version in CI, derives `robots.txt` sitemaps and article counts from build data, and closes 19 findings from the full site audit.
+
+---
+
+## [0.0.18] - 2026-07-18
+
+### Highlights
+
+- **35-locale expansion ([#363], [#364], [#365], [#367])**: Scaffolds and activates Persian (`fa`), Marathi (`mr`), Tamil (`ta`), Telugu (`te`), Malay (`ms`), Greek (`el`), and Hungarian (`hu`) with self-hosted Noto Sans Tamil and Telugu fonts.
+- **Enterprise ISO 20022 MCP hub and interactive simulator ([#374], [#377], [#378], [#379])**: Ships `/mcp/` with a multi-client configuration grid, enterprise trust pack, schema viewer, and interactive ISO 20022 message simulator.
+- **0.95 Lighthouse performance gate and 35-locale switcher ([#361], [#380], [#384])**: Promotes the Lighthouse performance threshold to 0.95 and resolves audit-driven localisation, SEO, and accessibility gaps across all 35 locales.
+
+---
+
+## [0.0.17] - 2026-07-08
+
+### Highlights
+
+- **Interactive DX tools ([#338], [#339], [#340], [#341])**: Launches the audience path selector (boards, engineers, regulators), client-side on-site search, `/changelog/` and `/status/` endpoints, and interactive self-assessment index scorecards.
+- **Institutional brand pivot (`/speaking/` and `/trust/`) ([#351])**: Adds dedicated `/speaking/` and `/trust/` pages with credential graphs, live KPI metrics, and Apple-Newsroom homepage 'What's new' styling.
+- **Formal threat model and structured-data CI gate ([#357], [#358], [#359])**: Adds `CONTRIBUTING.md`, a STRIDE threat model, gzipped Lighthouse CI fixtures, and automated JSON-LD validation across all locales.
+
+---
+
+## [0.0.16] - 2026-07-03
+
+### Highlights
+
+- **`make verify` repository-integrity suite ([#291])**: Chains lint, strict typecheck, build, unit tests, JSON-LD validation, internal link audit, and CycloneDX SBOM generation into a single pre-deploy gate.
+- **Modular `postbuild_lib` decomposition (<800 LOC per file)**: Extracts `feeds`, `_i18n`, `hreflang`, `citations`, `sharing`, `navigation`, `content_blocks`, `html_passes`, `postbuild_assets`, and `postbuild_transforms` with comprehensive unit test suites.
+- **244 backlog translations across 6 locales ([#294])**: Completes full article body translations across Indonesian, Ukrainian, Bengali, Hausa, Romanian, and Yoruba.
+
+---
+
+## [0.0.15] - 2026-06-30
+
+### Highlights
+
+- **Pinned toolchains and one-command `make bootstrap` ([#261], [#278])**: Pins Python, Node, Rust, and `ssg` toolchains via `mise.toml`, hash-pins all Python and npm lockfiles, and SHA-pins every GitHub Actions workflow.
+- **Strict `mypy` typecheck gate and operations runbooks ([#262], [#276])**: Enables `mypy --check-untyped-defs` on the type-clean tier and adds rollback, CI-flake triage, and incident-response runbooks.
+- **CodeQL and OpenSSF Scorecard remediation ([#281], [#282], [#286])**: Resolves SSRF, regex sentinel, DOM XSS, and tag-filter CodeQL alerts and scopes CI token permissions per job.
+
+---
+
+## [0.0.14] - 2026-06-21
+
+### Highlights
+
+- **Authority playbook and case studies ([#212], [#213])**: Adds `/case-studies/` with independent evaluation benchmarks, tactile Problem-Approach-Outcome project cards across 27 locales, and expanded 14-cluster `/topics/` taxonomy.
+- **4-way matrix-sharded `pa11y` CI with semantic cache ([#224], [#230])**: Normalises CSP hashes in the `pa11y` cache and shards accessibility sweeps across 4 CI runners.
+- **Cloudflare Worker KV free-tier policy**: Adds write-coalescing, binding audits, and free-tier quota guards for Cloudflare Worker KV storage.
+
+---
+
+## [0.0.13] - 2026-06-15
+
+### Highlights
+
+- **FT-Professional editorial overhaul ([#201])**: Redesigns article typography, executive summaries, and citation blocks across the publication catalogue.
+- **End-to-end Mermaid v10 diagram engine ([#198])**: Supports dark and light themes in all Mermaid diagrams with static hex palette initialisation.
+- **`build_translations` package at 100% coverage**: Splits `build_translations.py` into a tested package at 100% coverage, makes `scripts/lib/_frontmatter.py` the canonical frontmatter parser, and adds per-locale PR translation summary comments.
+
+---
+
+## [0.0.12] - 2026-06-07
+
+### Highlights
+
+- **Self-hosted variable fonts and CLS-safe metrics ([#169])**: Self-hosts Inter, Newsreader, and JetBrains Mono with size-adjusted fallback metrics and reads actual `og:image` dimensions to keep CLS below 0.1.
+- **ActivityPub actor and PQC key-size WASM lab ([#171], [#172])**: Ships WebFinger, actor, inbox, and outbox endpoints on the Cloudflare Worker and launches the interactive `/labs/pqc-key-sizes/` estimator.
+- **`ssg v0.0.40` migration and naming convention linter**: Upgrades the build pipeline to `ssg v0.0.40`, unifies the repository structure, and enforces file and script naming conventions in `make lint`.
+
+---
+
+## [0.0.11] - 2026-06-02
+
+### Highlights
+
+- **Google News `NewsArticle` JSON-LD ([#165])**: Reshapes posts within 48 hours of publication into Google-News-compliant `NewsArticle` nodes linked to `#person` and `#organization`.
+- **Editorial standards and accountability page ([#163])**: Launches `/editorial/` with `EditorialPolicy` and `CorrectionsPolicy` schemas, a 5-tier primary-source hierarchy, 48-hour corrections clause, and Sigstore verification instructions.
+- **Named typography tokens and idempotent TOC injection ([#162], [#166])**: Introduces `--type-display`, `--type-body`, and `--type-mono` CSS custom properties, makes H2 anchor and TOC injection idempotent, and strips duplicate body H1 headings.
+
+---
+
+## [0.0.10] - 2026-06-01
+
+### Highlights
+
+- **INP-aware Core Web Vitals Lighthouse gates ([#159])**: Enforces `total-blocking-time <= 200 ms`, `largest-contentful-paint <= 2500 ms`, and `cumulative-layout-shift <= 0.1` as hard CI assertions under Lighthouse 12.
+- **`/llms-ctx.txt` and per-category `robots.txt` ([#160])**: Adds a compact 80-line LLM context file, groups 30+ `User-agent` rules into five crawler categories in `robots.txt`, and documents the CC BY-4.0 bot policy at `/about/#bot-policy`.
+- **Per-article inline language switcher ([#161])**: Renders native-script locale links with `lang`, `hreflang`, `rel="alternate"`, and RTL directionality directly below each article hero.
+
+---
+
+## [0.0.9] - 2026-06-01
+
+### Highlights
+
+- **`Person` and `Organization` entity graph ([#158])**: Adds ORCID `0009-0005-1434-284X`, three `EducationalOccupationalCredential` entries, 12 `DefinedTerm` authority nodes, and a standalone `#organization` node exposed at `/api/agents/organization.json`.
+- **`TechArticle` and `ScholarlyArticle` auto-promotion ([#158])**: Upgrades dated research posts citing 6 or more primary-source authority domains (NIST, ISO, BIS, IETF, SWIFT, ECB) to `ScholarlyArticle` with native `citation` arrays.
+- **Additive daily publishing and localized switcher SSR**: Auto-regenerates slug maps and homepage cards from `_posts/` on every build and server-renders localised article URLs into the language switcher.
+
+---
+
+## [0.0.8] - 2026-05-19
+
+### Highlights
+
+- **Minified assets and dual-digest SRI**: Minifies JS and CSS assets, preloads the homepage LCP portrait, and emits dual SHA-384 Subresource Integrity digests so Cloudflare Pages newline normalisation never breaks integrity checks.
+- **Sigstore cryptographic article signing**: Publishes the repository cosign public key and activates per-article `.sigstore.json` bundle signing across all 46 dated research posts.
+- **Privacy-first telemetry and contact forms**: Replaces Google Analytics with Cloudflare Web Analytics and routes contact and newsletter submissions through tracker-safe AJAX endpoints.
+
+---
+
+## [0.0.7] - 2026-05-16
+
+### Highlights
+
+- **28-locale internationalisation**: Expands the language-parametric translation pipeline (`build_translations.py`) from 2 to 28 live locales, including German, Arabic, Hebrew (RTL), Spanish, Simplified and Traditional Chinese, Japanese, Korean, Hindi, and Ukrainian.
+- **Modular `postbuild_lib` at 100% test coverage**: Splits the postbuild monolith into focused domain modules (`seo`, `article_furniture`, `output`, `github_stats`) gated at 100% unit test coverage and McCabe complexity B or below.
+- **Edge security Worker and AI discovery surfaces**: Adds the Cloudflare `lang-router` Worker, `TechArticle` and `SoftwareSourceCode` schemas, OpenPGP WKD, and curated AI discovery files.
+
+---
+
+## [0.0.6] - 2026-05-14
+
+### Highlights
+
+- **Apple Books-style `/papers/` and redesigned `/projects/`**: Introduces the `/papers/` publication showcase with the Enterprise Payment Automation Architecture (EPAA) white paper and a 5-section `/projects/` catalogue.
+- **Automated JSON-LD, XML feed, and strict CSP validators**: Wires Schema.org JSON-LD validation, RSS/Atom/sitemap XML validation, and per-page Content Security Policy gates into the build pipeline.
+- **Full French (`fr`) edition**: Ships the complete `/fr/` localised site with 42 translated articles, French URL slugs, localised navigation and footer chrome, and French XML feeds.
+- **WCAG AAA contrast and self-hosted Skeletonic CSS**: Self-hosts Skeletonic CSS to eliminate cross-origin render blocking and brings light and dark themes to WCAG AAA (7:1+) contrast.
+
+---
+
+## [0.0.5] - 2024-05-12
+
+### Highlights
+
+- **`RustLogs (RLG)` and `Serde YML`**: Adds open-source project showcases and technical articles for `RustLogs (RLG)` and `Serde YML`.
+- **Multimodal LLM (`MM1`) research and `TETRA` playlist**: Publishes research on multimodal LLMs (`MM1`) and adds the curated `TETRA` playlist.
+- **`ssg v0.0.27` migration and PDF research archive**: Upgrades the static site compiler to `ssg v0.0.27`, repairs sitemap URL generation, and publishes 26 downloadable PDF research briefings.
+
+---
+
+## [0.0.4] - 2024-03-02
+
+### Highlights
+
+- **Audio Analyser and Àkàndé Voice Assistant**: Launches project pages and technical articles for Audio Analyser (`audioanalyser.co`) and the Àkàndé voice assistant.
+- **Project index redesign**: Refactors the `/projects/` showcase UI and responsive card layout.
+- **RSS validation and `ssg v0.0.26`**: Fixes RSS feed validation issues, cleans up WAVE accessibility attributes, and migrates the site to `ssg v0.0.26`.
+
+---
+
+## [0.0.3] - 2024-01-16
+
+### Highlights
+
+- **Post-quantum cryptography and Rust libraries**: Adds project pages and technical deep dives for `KyberLib`, `CRYSTALS-Kyber`, `DateTime (DTT)`, and the Quantum Fourier Transform.
+- **Banking AI and quantum computing research**: Publishes the 2023 review of AI and quantum computing in banking and integrates Google Gemini LLM coverage.
+- **WAVE accessibility and `ssg v0.0.23`**: Resolves WAVE web accessibility evaluation findings, integrates Google reCAPTCHA v2 on the contact flow, and upgrades to `ssg v0.0.23`.
+
+---
+
+## [0.0.2] - 2023-11-05
+
+### Highlights
+
+- **Articles hub and product showcase**: Adds the `/articles/` index, contact and thank-you flows, and product pages for Kaishi, AudioTextPro, and Skeletonic.
+- **Hash Library (`HSH`) and `ssg v0.0.20`**: Publishes the quantum-resistant Hash Library (`HSH`) showcase and migrates the build pipeline to `ssg v0.0.20`.
+- **Feed, canonical URL, and CSP hardening**: Repairs RSS XML generation, normalises W3C datetime metadata and canonical URLs, and removes inline `eval()` script execution under Content Security Policy.
+
+---
+
+## [0.0.1] - 2023-09-27
+
+### Highlights
+
+- **Initial static site foundation**: Establishes the repository structure, Markdown content pipeline, and custom layouts compiled with `ssg` (`v0.0.18`).
+- **Core engineering library articles**: Publishes foundational technical articles on the Common (`CMN`) library, `LibMake` code generation, and password security.
+- **Structured data and CSS validation**: Adds Schema.org JSON-LD structured data, metadata timestamps, and W3C CSS validation fixes across all templates.
+
+---
+
+[0.0.22]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.21...HEAD
+[0.0.21]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.21
+[0.0.20]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.20
+[0.0.19]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.19
+[0.0.18]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.18
+[0.0.17]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.17
+[0.0.16]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.16
+[0.0.15]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.15
+[0.0.14]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.14
+[0.0.13]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.13
+[0.0.12]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.12
+[0.0.11]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.11
+[0.0.10]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.10
+[0.0.9]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.9
+[0.0.8]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.8
+[0.0.7]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.7
+[0.0.6]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.6
+[0.0.5]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.5
+[0.0.4]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.4
+[0.0.3]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.3
+[0.0.2]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.2
+[0.0.1]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.1
+
+[#496]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/496
 [#158]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/158
 [#159]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/159
 [#160]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/160
@@ -175,3 +265,66 @@ Post-March-2026 Google core update moved E-E-A-T to an active filter (r = 0.81 c
 [#163]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/163
 [#165]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/165
 [#166]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/166
+[#169]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/169
+[#171]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/171
+[#172]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/172
+[#198]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/198
+[#201]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/201
+[#212]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/212
+[#213]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/213
+[#224]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/224
+[#230]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/230
+[#261]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/261
+[#262]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/262
+[#276]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/276
+[#278]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/278
+[#281]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/281
+[#282]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/282
+[#286]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/286
+[#291]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/291
+[#294]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/294
+[#338]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/338
+[#339]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/339
+[#340]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/340
+[#341]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/341
+[#351]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/351
+[#357]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/357
+[#358]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/358
+[#359]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/359
+[#361]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/361
+[#363]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/363
+[#364]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/364
+[#365]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/365
+[#367]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/367
+[#374]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/374
+[#377]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/377
+[#378]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/378
+[#379]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/379
+[#380]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/380
+[#384]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/384
+[#387]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/387
+[#400]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/400
+[#407]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/407
+[#408]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/408
+[#411]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/411
+[#419]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/419
+[#425]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/425
+[#430]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/430
+[#436]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/436
+[#441]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/441
+[#442]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/442
+[#445]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/445
+[#449]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/449
+[#451]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/451
+[#454]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/454
+[#458]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/458
+[#462]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/462
+[#472]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/472
+[#474]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/474
+[#476]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/476
+[#477]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/477
+[#478]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/478
+[#479]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/479
+[#488]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/488
+[#492]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/492
+[#493]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/493
