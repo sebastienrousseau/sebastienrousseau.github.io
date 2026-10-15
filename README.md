@@ -1,4 +1,4 @@
-<!-- SPDX-License-Identifier: Apache-2.0 OR MIT>
+<!-- SPDX-License-Identifier: Apache-2.0 OR MIT -->
 
 <p align="center">
   <img src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" alt="sebastienrousseau.com logo" width="128" />
@@ -8,14 +8,19 @@
 
 <p align="center">
   A secure, 28-language static-site pipeline for research on applied AI,
-  payments, and post-quantum cryptography — a Rust SSG core with automated
+  wholesale payments, and post-quantum cryptography: a Rust SSG core with automated
   Python generators and postbuild passes.
 </p>
 
 <p align="center">
-  <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/actions"><img src="https://img.shields.io/github/actions/workflow/status/sebastienrousseau/sebastienrousseau.github.io/ci.yml?style=for-the-badge&logo=github" alt="Build" /></a>
-  <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-66c2a5?style=for-the-badge" alt="License" /></a>
-  <a href="https://scorecard.dev/viewer/?uri=github.com/sebastienrousseau/sebastienrousseau.github.io"><img src="https://img.shields.io/ossf-scorecard/github.com/sebastienrousseau/sebastienrousseau.github.io?style=for-the-badge&label=OpenSSF%20Scorecard&logo=openssf" alt="OpenSSF Scorecard" /></a>
+  <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/actions"><img src="https://img.shields.io/github/actions/workflow/status/sebastienrousseau/sebastienrousseau.github.io/ci.yml?style=for-the-badge&logo=github" alt="Build" height="28" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0%20OR%20MIT-blue.svg?style=for-the-badge" alt="License: Apache-2.0 OR MIT" height="28" /></a>
+  <a href="https://scorecard.dev/viewer/?uri=github.com/sebastienrousseau/sebastienrousseau.github.io"><img src="https://img.shields.io/ossf-scorecard/github.com/sebastienrousseau/sebastienrousseau.github.io?style=for-the-badge&label=OpenSSF%20Scorecard&logo=openssf" alt="OpenSSF Scorecard" height="28" /></a>
+  <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/docs/POLICIES.md"><img src="https://img.shields.io/badge/python-3.12+-93450a.svg?style=for-the-badge&logo=python" alt="Python 3.12+" height="28" /></a>
+</p>
+
+<p align="center">
+  <img src=".github/demo.gif" alt="sebastienrousseau.com demo" width="100%" />
 </p>
 
 ---
@@ -24,30 +29,33 @@
 
 **Getting started**
 
-- [Install](#install) — toolchain prerequisites
-- [Quick Start](#quick-start) — clone, build, serve
-- [Layout](#layout) — repository folder map
+- [Install](#install) - toolchain prerequisites
+- [Quick Start](#quick-start) - clone, build, serve
+- [Layout](#layout) - repository folder map
 
 **Pipeline**
 
-- [Pipeline overview](#pipeline-overview) — source → compile → generate → postbuild → CI
-- [Build stages](#build-stages) — the six generator steps
-- [Postbuild passes](#postbuild-passes) — per-page transforms
-- [Internationalisation](#internationalisation) — 34 locales, translation pipeline, parity gates
+- [Pipeline overview](#pipeline-overview) - source -> compile -> generate -> postbuild -> CI
+- [Build stages](#build-stages) - the six generator steps
+- [Postbuild passes](#postbuild-passes) - per-page transforms
+- [Internationalisation](#internationalisation) - 34 locales, translation pipeline, parity gates
 
 **Platform**
 
-- [Security](#security) — CSP/SRI, PQC transport, signed commits, threat model
-- [Edge routing Worker](#edge-routing-worker) — Cloudflare language routing
-- [WASM labs](#wasm-labs) — Rust → WebAssembly demos
-- [Discovery](#discovery) — Schema.org + AI/agent endpoints
+- [Security](#security) - CSP/SRI, PQC transport, signed commits, threat model
+- [Edge routing Worker](#edge-routing-worker) - Cloudflare language routing
+- [WASM labs](#wasm-labs) - Rust -> WebAssembly demos
+- [Discovery](#discovery) - Schema.org + AI/agent endpoints
 
 **Operational**
 
-- [Development](#development) — local build + test loop
-- [CI gates](#ci-gates) — what blocks a merge
-- [Deployment](#deployment) — GitHub Pages + Cloudflare
-- [Reuse](#reuse) — adapting the pipeline for your own site
+- [When not to use sebastienrousseau.com](#when-not-to-use-sebastienrousseaucom) - architectural boundaries
+- [Development](#development) - local build + test loop
+- [CI gates](#ci-gates) - what blocks a merge
+- [Deployment](#deployment) - GitHub Pages + Cloudflare
+- [Documentation](#documentation) - reference manuals and guides
+- [Stability guarantees](#stability-guarantees) - SemVer axis and compatibility
+- [Reuse](#reuse) - adapting the pipeline for your own site
 - [Companion docs](#companion-docs)
 - [License](#license)
 
@@ -74,7 +82,7 @@ dev tools:
 git clone https://github.com/sebastienrousseau/sebastienrousseau.github.io.git
 cd sebastienrousseau.github.io
 make bootstrap   # provision the pinned toolchain + dependencies (idempotent)
-make build       # emits public/ across 34 locales — first build target: under 10 min
+make build       # emits public/ across 34 locales - first build target: under 10 min
 ```
 
 `make serve` builds and serves on <http://127.0.0.1:8000>. Ensure your
@@ -84,7 +92,7 @@ commit-signing key is active before committing.
 <summary>Manual setup (without mise)</summary>
 
 ```bash
-cargo install ssg --locked                    # Rust SSG compiler (tracks latest — ADR-0002)
+cargo install ssg --locked                    # Rust SSG compiler (tracks latest: ADR-0002)
 pip install -r requirements.txt               # Python build dependencies
 ./build.sh                                     # emits public/ across 34 locales
 ```
@@ -102,13 +110,13 @@ pip install -r requirements.txt               # Python build dependencies
 | `tests/` | Unit + validation suites |
 | `docs/` | Architecture, CI, security, publishing guides |
 | `workers/` | Cloudflare edge router |
-| `labs/` | Rust → WebAssembly demos |
+| `labs/` | Rust -> WebAssembly demos |
 | `public/` | Build output (gitignored; deployed as a CI artifact) |
 | `sigstore-bundles/` | Committed article signature bundles |
 
 ## Pipeline overview
 
-Source files compile, translate, and pass security checks in a linear order of stages — markdown and locale strings in, optimised HTML, sitemaps, and feeds out.
+Source files compile, translate, and pass security checks in a linear order of stages: markdown and locale strings in, optimised HTML, sitemaps, and feeds out.
 
 ```mermaid
 %%{init: {'theme':'neutral'} }%%
@@ -158,12 +166,12 @@ flowchart TB
 
 Six generator steps turn English source drafts into fully translated pages:
 
-1. **Compile** — `ssg` renders the English pages from templates.
-2. **Topics** — `build_topics.py` generates topic landing pages.
-3. **Translate** — `build_translations.py` renders every active locale.
-4. **Feeds** — `build_lang_feeds.py` writes RSS and Atom feeds.
-5. **Agent API** — `build_agent_api.py` emits JSON feeds for crawlers and search tools.
-6. **Postbuild** — `postbuild.py` runs the final per-page passes.
+1. **Compile**: `ssg` renders the English pages from templates.
+2. **Topics**: `build_topics.py` generates topic landing pages.
+3. **Translate**: `build_translations.py` renders every active locale.
+4. **Feeds**: `build_lang_feeds.py` writes RSS and Atom feeds.
+5. **Agent API**: `build_agent_api.py` emits JSON feeds for crawlers and search tools.
+6. **Postbuild**: `postbuild.py` runs the final per-page passes.
 
 ## Postbuild passes
 
@@ -190,7 +198,7 @@ sequenceDiagram
  BT->>LR: load_languages()
  loop for each active non-EN lang
  BT->>J: load strings, labels, …
- BT->>BT: build_chrome_patches(lang) — auto-gen 30+ patches from strings.json
+ BT->>BT: build_chrome_patches(lang): auto-gen 30+ patches from strings.json
  BT->>FS: Read EN page shell
  BT->>BT: apply auto-gen + manual chrome patches
  BT->>BT: apply body patches (home or static)
@@ -246,8 +254,16 @@ Every page carries Schema.org JSON-LD (author, article type, breadcrumbs, FAQ en
 `llms.txt` is published but is not treated as a distribution channel: 2026
 field data shows AI crawlers overwhelmingly skip it and fetch HTML directly,
 and Google stated in June 2026 that it is not required for Search. The
-surfaces that are demonstrably fetched — clean HTML, structured data, the
-JSONL corpus and the per-article oEmbed endpoints — are where the effort goes.
+surfaces that are demonstrably fetched: clean HTML, structured data, the
+JSONL corpus and the per-article oEmbed endpoints, are where the effort goes.
+
+## When not to use sebastienrousseau.com
+
+This repository is designed specifically as a high-integrity research publication and static verification pipeline. Do not use this architecture for:
+
+- **Dynamic Content Management**: If your site requires real-time editorial collaboration, inline drafting workflows, or user-submitted comments stored in a database, a static-site generator pipeline requires pre-compilation rather than request-time execution.
+- **Client-Rendered Single-Page Apps**: The site delivers pre-rendered semantic HTML across 28+ languages rather than hydrating dynamic client-side application states.
+- **Private Authenticated Portals**: All assets are served through public content delivery networks (Cloudflare and GitHub Pages); user session stores and private relational databases require dedicated application backends.
 
 ## Development
 
@@ -264,7 +280,7 @@ Build, serve, inspect in the browser, and confirm the tests are green before pus
 the complexity ratchet, the full build with its in-build gates (CSP, SRI, i18n
 parity/hreflang, slug policy, search-index), the unit suite against the
 freshly-built tree, then JSON-LD validation, a strict internal-link audit, and
-SBOM generation — the same set CI enforces before deploy.
+SBOM generation: the same set CI enforces before deploy.
 
 The build cleans `public/` first, so a local build and a CI build produce the
 same tree; `make verify` therefore measures what CI measures. Run it after `make bootstrap` (which installs the current `ssg`).
@@ -281,6 +297,21 @@ on anything new and on a stale entry, so the list cannot rot.
 
 Pushing to `main` triggers CI, which builds the site, uploads `public/` as a Pages artifact, and publishes it with `actions/deploy-pages`. Cloudflare sits in front of the GitHub Pages origin as the CDN and edge-security layer.
 
+## Documentation
+
+Comprehensive guides and technical documentation:
+
+- [User Guide](docs/daily-publishing.md): Daily publishing and editorial workflow.
+- [Architecture](docs/architecture.md): Static compiler, generator stages, postbuild passes, and edge routing.
+- [Development](DEVELOPMENT.md): Local toolchain setup, testing loops, and CI reproduction.
+- [Security & Policies](SECURITY.md): Vulnerability reporting, security posture, and compliance.
+
+## Stability guarantees
+
+- **Semantic Versioning**: The build pipeline, generator interfaces, and JSON schema graphs adhere strictly to [Semantic Versioning 2.0.0](https://semver.org/).
+- **Output Stability**: Generating the site from the same source tree with pinned toolchains produces byte-reproducible HTML and metadata, verified by CI's byte-identical rebuild check.
+- **Toolchain Floor**: Pinned to Python 3.12, Node.js 22 LTS, and the pinned `ssg` compiler recorded in `.github/workflows/ci.yml`. Minimum supported versions are deprecated only across minor releases with a 30-day advance notice.
+
 ## Reuse
 
 The pipeline works for a single-language site by disabling the active locales in the language registry; the translation scripts can then be removed. Customise `_layouts/` and the CSS to rebrand.
@@ -289,8 +320,8 @@ The pipeline works for a single-language site by disabling the active locales in
 
 **Project**
 
-- [Governance](GOVERNANCE.md) — roles, decision-making, bus factor, continuity
-- [Roadmap](ROADMAP.md) — what the next year holds, and what it deliberately does not
+- [Governance](GOVERNANCE.md): roles, decision-making, bus factor, continuity
+- [Roadmap](ROADMAP.md): what the next year holds, and what it deliberately does not
 - [Code of Conduct](CODE_OF_CONDUCT.md)
 - [Contributing](CONTRIBUTING.md)
 - [Security policy](SECURITY.md)
@@ -300,6 +331,7 @@ The pipeline works for a single-language site by disabling the active locales in
 - [Architecture](docs/architecture.md)
 - [CI Gates](docs/ci.md)
 - [Internationalisation](docs/i18n.md)
+- [Packaging and Supply Chain](docs/packaging.md)
 - [Postbuild Passes](docs/postbuild.md)
 - [Publishing](docs/publishing.md)
 - [Schemas](docs/schemas.md)
@@ -310,6 +342,6 @@ The pipeline works for a single-language site by disabling the active locales in
 
 ## License
 
-Licensed under [Apache-2.0](LICENSE). See [CHANGELOG.md](CHANGELOG.md) for release history.
+Licensed under [Apache-2.0 OR MIT](LICENSE). See [CHANGELOG.md](CHANGELOG.md) for release history.
 
 <p align="right"><a href="#contents">Back to Top</a></p>
