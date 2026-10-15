@@ -62,7 +62,7 @@ item_description: "AI, banking and financial services expert. Senior payments le
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
 item_pub_date: "Mon, 15 Apr 2024 06:06:06 +0000"
-item_title: "Sebastien Rousseau: AI, Banking &amp; Financial Services Expert"
+item_title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
 last_build_date: "Mon, 15 Apr 2024 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Mon, 15 Apr 2024 06:06:06 +0000"
@@ -76,7 +76,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Sebastien Rousseau: AI, Banking &amp; Financial Services Expert"
+apple-mobile-web-app-title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
