@@ -130,18 +130,7 @@ site_software: "Static Site Generator, Rust"
 <span class="artefact-title">pacs.008.001.10 · ML-KEM-768 · Sigstore</span>
 <span class="artefact-badge">VERIFIED</span>
 </div>
-<pre class="artefact-code"><code><span class="artefact-comment"># 1. Validate CBPR+ pacs.008 structured address &amp; XSD</span>
-<span class="artefact-cmd">$ pain001-verify --schema pacs.008.001.10 --cbpr-plus tx.xml</span>
-<span class="artefact-ok">✓ XSD + structured postal address (Nov 2026 CBPR+ rule)</span>
-<span class="artefact-ok">✓ IBAN &amp; BIC routing verified · PII masked (GDPR/PCI)</span>
-
-<span class="artefact-comment"># 2. Encapsulate settlement payload with NIST FIPS 203</span>
-<span class="artefact-cmd">$ kyberlib encapsulate --alg ML-KEM-768 --in tx.xml</span>
-<span class="artefact-ok">✓ Ciphertext: 1,088 B · Shared secret: 256-bit SHA3-256</span>
-
-<span class="artefact-comment"># 3. Attest release &amp; CycloneDX 1.6 SBOM via Sigstore</span>
-<span class="artefact-cmd">$ cosign verify-blob --bundle release.sigstore.json sbom.cdx.json</span>
-<span class="artefact-ok">✓ Rekor tlog #142891042 · 0 unsafe · 100% test gate</span></code></pre>
+<pre class="artefact-code"><code><span class="artefact-comment"># 1. Validate CBPR+ pacs.008 structured address &amp; XSD</span>&#10;<span class="artefact-cmd">$ pain001-verify --schema pacs.008.001.10 --cbpr-plus tx.xml</span>&#10;<span class="artefact-ok">✓ XSD + structured postal address (Nov 2026 CBPR+ rule)</span>&#10;<span class="artefact-ok">✓ IBAN &amp; BIC routing verified · PII masked (GDPR/PCI)</span>&#10;&#10;<span class="artefact-comment"># 2. Encapsulate settlement payload with NIST FIPS 203</span>&#10;<span class="artefact-cmd">$ kyberlib encapsulate --alg ML-KEM-768 --in tx.xml</span>&#10;<span class="artefact-ok">✓ Ciphertext: 1,088 B · Shared secret: 256-bit SHA3-256</span>&#10;&#10;<span class="artefact-comment"># 3. Attest release &amp; CycloneDX 1.6 SBOM via Sigstore</span>&#10;<span class="artefact-cmd">$ cosign verify-blob --bundle release.sigstore.json sbom.cdx.json</span>&#10;<span class="artefact-ok">✓ Rekor tlog #142891042 · 0 unsafe · 100% test gate</span></code></pre>
 <figcaption class="artefact-foot">
 <span>ISO 20022 · SWIFT CBPR+</span>
 <span>NIST FIPS 203 (ML-KEM)</span>

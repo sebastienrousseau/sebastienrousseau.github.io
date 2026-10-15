@@ -940,8 +940,12 @@ function fallbackCopy(text, done) {
     var status = root.querySelector("[data-read-status]");
     var summaryEl = root.querySelector("[data-read-summary]");
     var announce = root.getAttribute("data-announce") || "";
-    var heroSub = document.querySelector(".feat-hero .feat-sub");
+    var heroSub = document.querySelector(".feat-hero\x20.feat-sub");
     var heroSubDefault = heroSub ? heroSub.textContent : "";
+    var defaultTitle = document.title || "";
+    var metaDesc = document.querySelector('meta[name="description"]');
+    var ogDesc = document.querySelector('meta[property="og:description"]');
+    var defaultDesc = metaDesc ? (metaDesc.getAttribute("content") || "") : "";
     var isEn = (document.documentElement.getAttribute("lang") || "en")
         .toLowerCase()
         .indexOf("en") === 0;
@@ -950,6 +954,28 @@ function fallbackCopy(text, done) {
         engineers: "Zero-unsafe Rust crates, ISO 20022 message schemas, and NIST FIPS 203 ML-KEM primitives ready to ship.",
         regulators: "Supervisory evidence, DORA and Cyber Resilience Act alignment, and quantum-safe wholesale payment rails."
     };
+    var TITLE_LENS = {
+        boards: "Sebastien Rousseau · For Boards: AI & Post-Quantum Banking Governance",
+        engineers: "Sebastien Rousseau · For Engineers: ISO 20022 & FIPS 203 Open Source",
+        regulators: "Sebastien Rousseau · For Regulators: Quantum-Safe Payments & DORA"
+    };
+
+    function emitTrack(eventName, props) {
+        try {
+            document.dispatchEvent(
+                new CustomEvent("sr:track", {
+                    detail: { event: eventName, props: props || {} }
+                })
+            );
+        } catch (_) {}
+        try {
+            if (typeof window.plausible === "function") {
+                window.plausible(eventName, { props: props || {} });
+            } else if (window.umami && typeof window.umami.track === "function") {
+                window.umami.track(eventName, props || {});
+            }
+        } catch (_) {}
+    }
 
     // Snapshot the authored section order once so "Everyone" restores it.
     // Not `:scope >`: the build can wrap the authored sections in an extra
@@ -1014,8 +1040,19 @@ function fallbackCopy(text, done) {
             var match = Boolean(aud && (c.getAttribute("data-audience-card") || "").split(/\s+/).indexOf(aud) !== -1);
             c.classList.toggle("is-lens-match", match);
         });
-        if (heroSub && isEn && heroSubDefault) {
-            heroSub.textContent = (aud && HERO_SUB_LENS[aud]) ? HERO_SUB_LENS[aud] : heroSubDefault;
+        if (isEn) {
+            var nextSub = (aud && HERO_SUB_LENS[aud]) ? HERO_SUB_LENS[aud] : heroSubDefault;
+            if (heroSub && heroSubDefault) {
+                heroSub.textContent = nextSub;
+            }
+            if (defaultTitle) {
+                document.title = (aud && TITLE_LENS[aud]) ? TITLE_LENS[aud] : defaultTitle;
+            }
+            if (defaultDesc) {
+                var nextDesc = (aud && HERO_SUB_LENS[aud]) ? HERO_SUB_LENS[aud] : defaultDesc;
+                if (metaDesc) metaDesc.setAttribute("content", nextDesc);
+                if (ogDesc) ogDesc.setAttribute("content", nextDesc);
+            }
         }
         if (summaryEl) {
             var customSummary = summaryEl.getAttribute("data-summary-" + (aud || "default"));
@@ -1038,17 +1075,56 @@ function fallbackCopy(text, done) {
                 else url.searchParams.delete("for");
                 window.history.replaceState(null, "", url.toString());
             } catch (e2) { /* older engine — non-fatal */ }
+            emitTrack("read_as_select", { lens: aud || "everyone" });
         }
     }
 
     // Reveal the control now that it's wired (was [hidden] for JS-off).
     root.removeAttribute("hidden");
 
-    buttons.forEach(function (b) {
+    buttons.forEach(function (b, idx) {
         b.addEventListener("click", function () {
             apply(b.getAttribute("data-read") || "", { persist: true, speak: true });
         });
+        b.addEventListener("keydown", function (e) {
+            var nextIdx = -1;
+            if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+                nextIdx = (idx + 1) % buttons.length;
+            } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+                nextIdx = (idx - 1 + buttons.length) % buttons.length;
+            } else if (e.key === "Home") {
+                nextIdx = 0;
+            } else if (e.key === "End") {
+                nextIdx = buttons.length - 1;
+            }
+            if (nextIdx !== -1) {
+                e.preventDefault();
+                buttons[nextIdx].focus();
+                apply(buttons[nextIdx].getAttribute("data-read") || "", { persist: true, speak: true });
+            }
+        });
     });
+
+    // Privacy-friendly, cookie-free interaction hooks for hero CTAs and newsletter signup.
+    Array.prototype.slice
+        .call(document.querySelectorAll(".feat-hero\x20.feat-cta\x20a,\x20.feat-finale\x20.feat-cta\x20a,\x20.ap-cta-mini"))
+        .forEach(function (link) {
+            link.addEventListener("click", function () {
+                emitTrack("cta_click", {
+                    href: link.getAttribute("href") || "",
+                    label: (link.textContent || "").trim()
+                });
+            });
+        });
+    Array.prototype.slice
+        .call(document.querySelectorAll("form.ap-newsletter"))
+        .forEach(function (form) {
+            form.addEventListener("submit", function () {
+                emitTrack("newsletter_submit", {
+                    source: form.closest(".newsletter-band") ? "homepage_band" : "footer"
+                });
+            });
+        });
 
     // Initial lens: URL param (?for= or ?read=) wins (shared link), else stored preference.
     var initial = "";
