@@ -256,7 +256,7 @@ Un **consumidor का cloud** aprovisiona वे seis pilares में वे 
 - Sebastien Rousseau, (2026). [Los umbrales क्वांटम vuelven को moverse](https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/index.html "Quantum Thresholds Are Moving Again").
 - Sebastien Rousseau, (2026). [CloudCDN ⧉](https://cloudcdn.pro/ "CloudCDN — Global Edge Content Delivery"). cloudcdn.pro.
 - Sebastien Rousseau, (2026). [CloudCDN on GitHub ⧉](https://github.com/sebastienrousseau/cloudcdn.pro "sebastienrousseau/cloudcdn.pro"). GitHub.
-- Qentelli, (2026). [Revolutionising Banking: How Cloud and DevOps Are Powering the Future of Financial Services ⧉](https://qentelli.com/thought-leadership/insights/revolutionizing-banking-how-cloud-and-devops-are-powering-the-future-of-financial-services "Qentelli — Cloud and DevOps in Banking"). Qentelli.
+- Qentelli, (2026). Revolutionising Banking: How Cloud and DevOps Are Powering the Future of Financial Services. Qentelli.
 - Built In Chicago, (2025). [JPMorgan Chase's Multi-Cloud Strategy Is Key to Continuous Transformation ⧉](https://www.builtinchicago.org/articles/jpmorganchase-multi-cloud-strategy-key-continuous-transformation "JPMorgan's Multi-Cloud Strategy"). Built In.
 - CIO Dive, (2024). [JPMorgan Chase CEO Wants More Cloud to Fuel AI, Analytics ⧉](https://www.ciodive.com/news/jpmorgan-jamie-dimon-cloud-generative-ai-strategy/713093/ "JPMorgan Chase CEO Wants More Cloud"). CIO Dive.
 - Fierce Network, (2024). [J.P. Morgan Payments Exec: Days of Being 'Just को Bank' Are Over Due to Cloud, APIs ⧉](https://www.fierce-network.com/cloud/jp-morgan-payments-exec-talks-cloud-tech-talent-and-apis "J.P. Morgan Payments Exec on Cloud"). Fierce Network.

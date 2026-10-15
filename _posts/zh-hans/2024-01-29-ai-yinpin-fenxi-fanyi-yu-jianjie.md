@@ -137,4 +137,4 @@ Microsoft Azure 内的先进人工智能是 **Audio Analyser** 能力的驱动�
 ![分隔线][divider].class=\"m-10 w-100\"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "分隔线"
-[00]: https://audioanalyser.co/ "从音频数据中解锁可执行洞察以提升 CX/EX"
+[00]: https://github.com/sebastienrousseau/audioanalyser.github.io "从音频数据中解锁可执行洞察以提升 CX/EX"

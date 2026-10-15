@@ -243,7 +243,7 @@ Vă mulțumesc din nou pentru timpul acordat și aștept cu nerăbdare să ne au
 [01]: https://www.hsbc.com/news-and-views/news/media-releases/2023/hsbc-pioneers-quantum-protection-for-ai-powered-fx-trading "Integrarea Calculului Cuantic în Operațiunile Bancare ale HSBC"
 [02]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau pe LinkedIn"
 [03]: https://sebastienrousseau.com/contact/index.html "Contactați-l pe Sebastien Rousseau"
-[05]: http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm "Măsuri Provizorii pentru Gestionarea Serviciilor de Inteligență Artificială Generativă"
+[05]: https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm "Măsuri Provizorii pentru Gestionarea Serviciilor de Inteligență Artificială Generativă"
 [06]: https://www.fmprc.gov.cn/mfa_eng/wjdt_665385/2649_665393/202310/t20231020_11164834.html "Inițiativa Globală de Guvernanță a AI"
 [07]: https://github.com/nlpxucan/WizardLM "WizardLM"
 [08]: https://ai.meta.com/llama/ "LLaMA 2"

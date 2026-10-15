@@ -157,12 +157,12 @@ NIST, криптографічна спільнота та компанії ма
 - Kuperberg, G. (2005). [Субекспоненціальний за часом квантовий алгоритм для діедральної задачі прихованої підгрупи. ⧉][03] SIAM Journal on Computing, 35(1), 170-188.
 
 [00]: https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html "Виклики квантових алгоритмів для криптографії на основі ґраток"
-[01]: https://eprint.iacr.org/2024/555.pdf "Квантові алгоритми для граткових задач: нова ера в криптографії"
+[01]: https://eprint.iacr.org/2024/555 "Квантові алгоритми для граткових задач: нова ера в криптографії"
 [02]: https://nigelsmart.github.io/LWE.html "Навчання з помилками"
 [03]: https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization "Стандартизація постквантової криптографії"
 [04]: https://pq-crystals.org/kyber/ "Kyber"
 [05]: https://pq-crystals.org/dilithium/ "Dilithium"
-[06]: https://www.inferati.com/blog/fhe-schemes-bgv "BGV"
+[06]: https://web.archive.org/web/20250512205935/https://www.inferati.com/blog/fhe-schemes-bgv "BGV"
 [07]: https://tfhe.github.io/tfhe/ "TFHE"
 
 <!-- enrich-start -->

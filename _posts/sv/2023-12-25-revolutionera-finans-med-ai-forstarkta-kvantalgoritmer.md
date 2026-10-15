@@ -111,4 +111,4 @@ Integrationen av AI med kvantalgoritmdesign utgör ett avgörande ögonblick fö
 [04]: https://web.archive.org/web/2*/https://www.santander.com/en/press-room/press-releases/santander-and-d-wave-to-explore-the-use-of-quantum-computing-in-the-banking-industry "Santander och D-Wave utforskar användningen av kvantdatorer i bankbranschen (arkiverad)"
 [05]: https://www.terraquantum.swiss/ "TerraQuantum"
 [06]: https://web.archive.org/web/2*/https://zapata.ai/bbva-monte-carlo-simulation-finance-case-study/ "BBVA-fallstudie om Monte Carlo-simulering inom finans (Zapata Computing, arkiverad)"
-[07]: https://www.goldmansachs.com/intelligence/pages/gs-research/euv-3.0/report.pdf "Europe Technology Hardware EUV 3.0 High NA a prime Digital Enabler for the next decade with deep competitive moat"
+[07]: https://web.archive.org/web/20240617003616/https://www.goldmansachs.com/intelligence/pages/gs-research/euv-3.0/report.pdf "Europe Technology Hardware EUV 3.0 High NA a prime Digital Enabler for the next decade with deep competitive moat"

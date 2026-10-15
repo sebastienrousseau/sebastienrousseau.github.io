@@ -116,7 +116,7 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-ในปี 2026 เนื้อหาเว็บถูกบริโภคโดยโปรแกรมรวบรวมข้อมูลของ AI เครื่องมือค้นหาที่ขับเคลื่อนด้วย LLM และท่อประมวลผล Retrieval-Augmented Generation (RAG) มากพอๆ กับผู้อ่านที่เป็นมนุษย์ HTML ที่แบนหรือผิดรูปแบบทำลายการค้นพบโดยเครื่องจักร ขณะที่ความล้มเหลวในการปฏิบัติตามกฎระเบียบระดับโลกที่เข้มงวด เช่น [European Accessibility Act (EAA)](https://www.accessibility-act.eu/) และ [US ADA Title III](https://www.ada.gov/topics/title-iii/) ปัจจุบันถือเป็นความรับผิดชอบทางแพ่งที่ชัดเจน [HTML Generator](https://github.com/sebastienrousseau/html-generator) คือไลบรารี Rust สมรรถนะสูงที่ออกแบบมาเพื่อปิดช่องว่างเหล่านั้น — ที่ระดับคอมไพเลอร์ ไม่ใช่ในแพตช์หลังการนำใช้งาน
+ในปี 2026 เนื้อหาเว็บถูกบริโภคโดยโปรแกรมรวบรวมข้อมูลของ AI เครื่องมือค้นหาที่ขับเคลื่อนด้วย LLM และท่อประมวลผล Retrieval-Augmented Generation (RAG) มากพอๆ กับผู้อ่านที่เป็นมนุษย์ HTML ที่แบนหรือผิดรูปแบบทำลายการค้นพบโดยเครื่องจักร ขณะที่ความล้มเหลวในการปฏิบัติตามกฎระเบียบระดับโลกที่เข้มงวด เช่น [European Accessibility Act (EAA)](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) และ [US ADA Title III](https://www.ada.gov/topics/title-iii/) ปัจจุบันถือเป็นความรับผิดชอบทางแพ่งที่ชัดเจน [HTML Generator](https://github.com/sebastienrousseau/html-generator) คือไลบรารี Rust สมรรถนะสูงที่ออกแบบมาเพื่อปิดช่องว่างเหล่านั้น — ที่ระดับคอมไพเลอร์ ไม่ใช่ในแพตช์หลังการนำใช้งาน
 
 ## คำตอบเร็ว
 
@@ -124,7 +124,7 @@ site_software: "Static Site Generator, Rust"
 
 ## บทสรุปผู้บริหาร
 
-การเรนเดอร์ Markdown ดูเหมือนง่าย แต่ HTML ระดับการเผยแพร่จริงคือปัญหาความสอดคล้องกับกฎระเบียบ ในเดือนมิถุนายน 2026 ทุกจุดสัมผัสขององค์กร — พอร์ทัลนักลงทุน รายงานกำกับดูแล เอกสารลูกค้า ข้อมูลอ้างอิง API ทรัพย์สินทางการตลาด — ถูกประมวลผลโดยทั้งมนุษย์และเครื่องจักร แรงกดดันสองประการมาบรรจบกันในทุกหน้า: [EAA](https://www.accessibility-act.eu/) และ [ADA Title III](https://www.ada.gov/topics/title-iii/) ทำให้ accessibility กลายเป็นความเสี่ยงทางกฎหมายระดับกรรมการบริษัท ขณะที่การรับข้อมูลโดย AI และท่อประมวลผล RAG ให้รางวัลกับเอาต์พุตที่มีโครงสร้างและอ่านได้ด้วยเครื่อง ไลบรารี Markdown มาตรฐานผลิต HTML แบบแบนที่ล้มเหลวในทั้งสองด้าน HTML Generator จัดการกับการสร้างเอกสารเป็นท่อประมวลผลแบบ compile-gated: การตรวจสอบ WCAG ถือเป็น build error, JSON-LD มาจาก YAML front matter โดยไม่ต้องประทับตราด้วยมือ, MathML และ Mermaid เรนเดอร์ได้อย่างเข้าถึงได้ และเอนจินทั้งหมดส่งมอบในรูปแบบ WebAssembly target เพื่อให้การประมวลผลเอกสารที่ไม่น่าเชื่อถืออยู่ภายใน sandbox แยกจากโฮสต์
+การเรนเดอร์ Markdown ดูเหมือนง่าย แต่ HTML ระดับการเผยแพร่จริงคือปัญหาความสอดคล้องกับกฎระเบียบ ในเดือนมิถุนายน 2026 ทุกจุดสัมผัสขององค์กร — พอร์ทัลนักลงทุน รายงานกำกับดูแล เอกสารลูกค้า ข้อมูลอ้างอิง API ทรัพย์สินทางการตลาด — ถูกประมวลผลโดยทั้งมนุษย์และเครื่องจักร แรงกดดันสองประการมาบรรจบกันในทุกหน้า: [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) และ [ADA Title III](https://www.ada.gov/topics/title-iii/) ทำให้ accessibility กลายเป็นความเสี่ยงทางกฎหมายระดับกรรมการบริษัท ขณะที่การรับข้อมูลโดย AI และท่อประมวลผล RAG ให้รางวัลกับเอาต์พุตที่มีโครงสร้างและอ่านได้ด้วยเครื่อง ไลบรารี Markdown มาตรฐานผลิต HTML แบบแบนที่ล้มเหลวในทั้งสองด้าน HTML Generator จัดการกับการสร้างเอกสารเป็นท่อประมวลผลแบบ compile-gated: การตรวจสอบ WCAG ถือเป็น build error, JSON-LD มาจาก YAML front matter โดยไม่ต้องประทับตราด้วยมือ, MathML และ Mermaid เรนเดอร์ได้อย่างเข้าถึงได้ และเอนจินทั้งหมดส่งมอบในรูปแบบ WebAssembly target เพื่อให้การประมวลผลเอกสารที่ไม่น่าเชื่อถืออยู่ภายใน sandbox แยกจากโฮสต์
 
 ## ประเด็นสำคัญ
 
@@ -142,7 +142,7 @@ site_software: "Static Site Generator, Rust"
 
 ประการแรกคือ **การรับข้อมูลโดย AI และการค้นพบ** เนื้อหาถูกประมวลผลมากขึ้นเรื่อยๆ โดย large language models และท่อประมวลผล Retrieval-Augmented Generation HTML ที่แบนหรือผิดรูปแบบทำให้โปรแกรมรวบรวมข้อมูลสับสน ทำให้การวิจัยและเอกสารขององค์กรมองไม่เห็นในกระบวนทัศน์การค้นหาสมัยใหม่ — รวมถึง [Google Search Generative Experience](https://blog.google/products/search/generative-ai-search/), การเรียกดู [ChatGPT](https://chat.openai.com/) และ RAG agents ระดับองค์กร
 
-ประการที่สองคือ **กฎหมาย accessibility ระดับโลกที่เข้มงวด** ภายใต้ [European Accessibility Act](https://www.accessibility-act.eu/) (บังคับใช้อย่างสมบูรณ์ตั้งแต่มิถุนายน 2025) และ [US ADA Title III](https://www.ada.gov/topics/title-iii/) แพลตฟอร์มการเผยแพร่ขององค์กรต้องรับประกัน accessibility ดิจิทัลอย่างสมบูรณ์ ความล้มเหลวในการปฏิบัติตาม [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) ไม่ใช่แค่ความผิดพลาดทางวิศวกรรมอีกต่อไป แต่เป็นความรับผิดชอบทางแพ่งและกฎระเบียบที่นำไปสู่การยุติคดีมูลค่าหลายล้านดอลลาร์
+ประการที่สองคือ **กฎหมาย accessibility ระดับโลกที่เข้มงวด** ภายใต้ [European Accessibility Act](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) (บังคับใช้อย่างสมบูรณ์ตั้งแต่มิถุนายน 2025) และ [US ADA Title III](https://www.ada.gov/topics/title-iii/) แพลตฟอร์มการเผยแพร่ขององค์กรต้องรับประกัน accessibility ดิจิทัลอย่างสมบูรณ์ ความล้มเหลวในการปฏิบัติตาม [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) ไม่ใช่แค่ความผิดพลาดทางวิศวกรรมอีกต่อไป แต่เป็นความรับผิดชอบทางแพ่งและกฎระเบียบที่นำไปสู่การยุติคดีมูลค่าหลายล้านดอลลาร์
 
 [HTML Generator](https://github.com/sebastienrousseau/html-generator) แก้ไขแรงกดดันทั้งสองอย่างโดยตรง เป็นไลบรารี Rust ที่ thread-safe ออกแบบมาเพื่อแปลง Markdown เป็น HTML ที่เข้าถึงได้ รองรับ SEO และมีโครงสร้าง ด้วยการจัดการกับการสร้างเอกสารเป็นท่อประมวลผลแบบ compile-gated เอนจินส่งมอบ **Return on Resilience (RoR)** สูง — ปกป้องงบดุลจากการฟ้องร้องด้าน accessibility ขณะที่เพิ่มการอ่านได้ด้วยเครื่องสูงสุดเพื่อการค้นพบโดย AI
 
@@ -168,7 +168,7 @@ site_software: "Static Site Generator, Rust"
 
 | สัญญาณ | ตัวชี้วัด / มาตรฐานการดำเนินงาน | อ้างอิง EAA / DORA / W3C | การนำไปใช้ทางเทคนิค |
 | ---- | ---- | ---- | ---- |
-| **ความสอดคล้องด้าน accessibility** | 100% ของหน้าที่คอมไพล์ตรวจสอบตาม WCAG 2.1 AA | [EAA](https://www.accessibility-act.eu/) และ [ADA Title III](https://www.ada.gov/topics/title-iii/) | ตัวประมวลผล HTML AST ขณะ build ประเมิน image alt tags และ semantic landmarks |
+| **ความสอดคล้องด้าน accessibility** | 100% ของหน้าที่คอมไพล์ตรวจสอบตาม WCAG 2.1 AA | [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) และ [ADA Title III](https://www.ada.gov/topics/title-iii/) | ตัวประมวลผล HTML AST ขณะ build ประเมิน image alt tags และ semantic landmarks |
 | **WASM execution sandbox** | 100% ของ Markdown อินพุตที่ไม่น่าเชื่อถือคอมไพล์ใน WebAssembly runtime แบบแยก | [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554) (ความปลอดภัย ICT) | การแยกสภาพแวดล้อมการประมวลผลออกจากเซิร์ฟเวอร์โฮสต์ |
 | **ครอบคลุม structured metadata** | 100% ของบทความที่เผยแพร่บรรจุ JSON-LD headers ที่ถูกต้องและสอดคล้องกับ schema | ข้อกำหนด [Schema.org](https://schema.org/) | การประมวลผล front matter อัตโนมัติและแปลงเป็น JSON-LD objects |
 | **ปริมาณงานการ compile** | เป้าหมายจำนวนหน้าต่อวินาทีเกิน 10,000 บนฮาร์ดแวร์ทั่วไป | Return on Resilience (RoR) | คอมไพเลอร์ Rust AST ที่ทำงานแบบขนานสูง |
@@ -276,7 +276,7 @@ G-SIBs ดำเนินการทรัพย์สินสาธารณ�
 - World Wide Web Consortium (W3C), 2024. [Web Content Accessibility Guidelines (WCAG) 2.1 ⧉](https://www.w3.org/TR/WCAG21/ "Web Content Accessibility Guidelines 2.1").
 - Schema.org, 2026. [ข้อกำหนด structured-data ของ Schema.org ⧉](https://schema.org/ "Schema.org structured-data specifications").
 - European Parliament and Council of the European Union, 2022. [Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA Regulation").
-- European Commission, 2025. [European Accessibility Act ⧉](https://www.accessibility-act.eu/ "European Accessibility Act").
+- European Commission, 2025. [European Accessibility Act ⧉](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en "European Accessibility Act").
 - US Department of Justice, 2024. [ADA Title III ⧉](https://www.ada.gov/topics/title-iii/ "ADA Title III").
 - WebAssembly Community Group, 2026. [ข้อกำหนด WebAssembly ⧉](https://webassembly.org/ "WebAssembly").
 - GitHub, 2026. [HTML Generator repository ⧉](https://github.com/sebastienrousseau/html-generator "HTML Generator open-source repository").

@@ -169,12 +169,12 @@ LWE সমস্যা সমাধানের জন্য ইলেই চে
 - কুপারবার্গ, জি. (২০০৫)। [ডাইহেড্রাল হিডেন সাবগ্রুপ সমস্যার জন্য একটি সাবএক্সপোনেনশিয়াল-টাইম কোয়ান্টাম অ্যালগরিদম। ⧉][03] SIAM Journal on Computing, 35(1), 170-188.
 
 [00]: https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html "ল্যাটিস-ভিত্তিক ক্রিপ্টোগ্রাফির জন্য কোয়ান্টাম অ্যালগরিদমের চ্যালেঞ্জসমূহ"
-[01]: https://eprint.iacr.org/2024/555.pdf "ল্যাটিস সমস্যার জন্য কোয়ান্টাম অ্যালগরিদম: ক্রিপ্টোগ্রাফিতে একটি নতুন যুগ"
+[01]: https://eprint.iacr.org/2024/555 "ল্যাটিস সমস্যার জন্য কোয়ান্টাম অ্যালগরিদম: ক্রিপ্টোগ্রাফিতে একটি নতুন যুগ"
 [02]: https://nigelsmart.github.io/LWE.html "লার্নিং উইথ এররস"
 [03]: https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি মানককরণ"
 [04]: https://pq-crystals.org/kyber/ "Kyber"
 [05]: https://pq-crystals.org/dilithium/ "Dilithium"
-[06]: https://www.inferati.com/blog/fhe-schemes-bgv "BGV"
+[06]: https://web.archive.org/web/20250512205935/https://www.inferati.com/blog/fhe-schemes-bgv "BGV"
 [07]: https://tfhe.github.io/tfhe/ "TFHE"
 
 <!-- enrich-start -->

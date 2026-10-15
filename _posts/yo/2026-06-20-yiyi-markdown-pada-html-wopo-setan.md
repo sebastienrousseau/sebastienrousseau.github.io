@@ -116,7 +116,7 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-Ní 2026, àwọn akoonu wẹ́ẹ̀bù ni a ń lo gẹ́gẹ́ bí AI ṣe ń wákiri, àwọn ẹ̀rọ àwárí tí LLM ń ṣe àtìlẹ́yìn rẹ̀, àti àwọn ẹ̀rọ Retrieval-Augmented Generation (RAG) tí ó tó iye àwọn ẹ̀dá ènìyàn tí ó ń ka wọn. HTML tí ó papọ̀ tàbí tí ó jẹ́ aṣiṣe ń dáàbò bò ìrí àwọn ẹ̀rọ àwárí, nígbà tí kíkúnà láti ní ibamu pẹ̀lú àwọn òfin àgbáyé tí ó mú ní [European Accessibility Act (EAA)](https://www.accessibility-act.eu/) àti [US ADA Title III](https://www.ada.gov/topics/title-iii/) ti di ojúṣe òfin tí kò sí iyèméjì. [HTML Generator](https://github.com/sebastienrousseau/html-generator) jẹ́ ìwé-iṣẹ́ Rust gíga-ìṣẹ́ tí a ṣe àgbékalẹ̀ láti pa àwọn àáárò wọ̀nyẹn dúró — ní ẹ̀rọ-àkójọ, kì í ṣe nínú àwọn ìtúnṣe lẹ́yìn ìmúlò.
+Ní 2026, àwọn akoonu wẹ́ẹ̀bù ni a ń lo gẹ́gẹ́ bí AI ṣe ń wákiri, àwọn ẹ̀rọ àwárí tí LLM ń ṣe àtìlẹ́yìn rẹ̀, àti àwọn ẹ̀rọ Retrieval-Augmented Generation (RAG) tí ó tó iye àwọn ẹ̀dá ènìyàn tí ó ń ka wọn. HTML tí ó papọ̀ tàbí tí ó jẹ́ aṣiṣe ń dáàbò bò ìrí àwọn ẹ̀rọ àwárí, nígbà tí kíkúnà láti ní ibamu pẹ̀lú àwọn òfin àgbáyé tí ó mú ní [European Accessibility Act (EAA)](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) àti [US ADA Title III](https://www.ada.gov/topics/title-iii/) ti di ojúṣe òfin tí kò sí iyèméjì. [HTML Generator](https://github.com/sebastienrousseau/html-generator) jẹ́ ìwé-iṣẹ́ Rust gíga-ìṣẹ́ tí a ṣe àgbékalẹ̀ láti pa àwọn àáárò wọ̀nyẹn dúró — ní ẹ̀rọ-àkójọ, kì í ṣe nínú àwọn ìtúnṣe lẹ́yìn ìmúlò.
 
 ## Ìdáhùn kíákíá
 
@@ -124,7 +124,7 @@ Ní 2026, àwọn akoonu wẹ́ẹ̀bù ni a ń lo gẹ́gẹ́ bí AI ṣe ń w
 
 ## Àkópọ̀ ìpínlẹ̀
 
-Ìṣiṣẹ́ Markdown dàbí ohun tí ó rọrùn. HTML tí ó yẹ fún àgbéjáde jẹ́ ìṣòro ibamu. Ní Okudu 2026, gbogbo ojú-ọnà àjọ — àwọn ẹ̀bùn ìdókòwò, àwọn fáìlì ìtọ́sọ́nà, àkọsílẹ̀ aléṣe, àwọn ìtọ́kasí API, àwọn ohun-ìní tẹẹ — ni àwọn ẹ̀dá ènìyàn àti àwọn ẹ̀rọ ń ṣe ìtúpalẹ̀. Ìtẹ̀síwájú méjì ń pàdé ara wọn lórí gbogbo ojú-ewé: [EAA](https://www.accessibility-act.eu/) àti [ADA Title III](https://www.ada.gov/topics/title-iii/) ti mú ìráàyèsí di ewu òfin ní ìpele bọọ̀dù, nígbà tí ìgbàwọ AI àti àwọn ẹ̀rọ RAG ń san àwọn àbájáde tí ó ní ètò, tí ó ṣe kíkà ẹ̀rọ. Àwọn ìwé-iṣẹ́ Markdown àṣà ń ṣe HTML papọ̀ tí ó kúnfailẹ̀ àwọn ẹnu-ọ̀nà méjì. HTML Generator ń wo ìgbéjáde ìwé gẹ́gẹ́ bí ẹ̀rọ compile-gated: Ìfọwọ́sí WCAG jẹ́ aṣiṣe àkókò kíkọ́, JSON-LD wá láti YAML front matter láìsí àmì ọwọ́, MathML àti Mermaid ń ṣe ìfihàn tí ó wọ́pọ̀, àti gbogbo ẹ̀rọ náà ń gba gbé gẹ́gẹ́ bí fojú WebAssembly kí ìsọ̀ di àpótí ìfipamọ́ ti àwọn ìwé tí kò ní ìgbẹ̀kẹ̀lé dúró sínú.
+Ìṣiṣẹ́ Markdown dàbí ohun tí ó rọrùn. HTML tí ó yẹ fún àgbéjáde jẹ́ ìṣòro ibamu. Ní Okudu 2026, gbogbo ojú-ọnà àjọ — àwọn ẹ̀bùn ìdókòwò, àwọn fáìlì ìtọ́sọ́nà, àkọsílẹ̀ aléṣe, àwọn ìtọ́kasí API, àwọn ohun-ìní tẹẹ — ni àwọn ẹ̀dá ènìyàn àti àwọn ẹ̀rọ ń ṣe ìtúpalẹ̀. Ìtẹ̀síwájú méjì ń pàdé ara wọn lórí gbogbo ojú-ewé: [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) àti [ADA Title III](https://www.ada.gov/topics/title-iii/) ti mú ìráàyèsí di ewu òfin ní ìpele bọọ̀dù, nígbà tí ìgbàwọ AI àti àwọn ẹ̀rọ RAG ń san àwọn àbájáde tí ó ní ètò, tí ó ṣe kíkà ẹ̀rọ. Àwọn ìwé-iṣẹ́ Markdown àṣà ń ṣe HTML papọ̀ tí ó kúnfailẹ̀ àwọn ẹnu-ọ̀nà méjì. HTML Generator ń wo ìgbéjáde ìwé gẹ́gẹ́ bí ẹ̀rọ compile-gated: Ìfọwọ́sí WCAG jẹ́ aṣiṣe àkókò kíkọ́, JSON-LD wá láti YAML front matter láìsí àmì ọwọ́, MathML àti Mermaid ń ṣe ìfihàn tí ó wọ́pọ̀, àti gbogbo ẹ̀rọ náà ń gba gbé gẹ́gẹ́ bí fojú WebAssembly kí ìsọ̀ di àpótí ìfipamọ́ ti àwọn ìwé tí kò ní ìgbẹ̀kẹ̀lé dúró sínú.
 
 ## Àwọn ohun pàtàkì
 
@@ -142,7 +142,7 @@ Ní 2026, àwọn akoonu wẹ́ẹ̀bù ni a ń lo gẹ́gẹ́ bí AI ṣe ń w
 
 Èkíní ni **ìgbàwọ àti ìrí AI**. Akoonu ń ní ìtúpalẹ̀ díẹ̀díẹ̀ nípa àwọn àwòṣe ède ńlá àti àwọn ẹ̀rọ Retrieval-Augmented Generation. HTML papọ̀ tàbí tí ó jẹ́ aṣiṣe ń dáàmu ìsọ̀ alatakun, tí ó fi akoonu àjọ àti àkọsílẹ̀ silẹ̀ tí kò ṣe àfihàn fún àwọn àpẹẹrẹ àwárí tuntun — pẹ̀lú [Google Search Generative Experience](https://blog.google/products/search/generative-ai-search/), títé àwárí [ChatGPT](https://chat.openai.com/), àti àwọn aṣòfin RAG àjọ.
 
-Èkejì ni **òfin ìráàyèsí àgbáyé tí ó gbóná**. Labẹ̀ [European Accessibility Act](https://www.accessibility-act.eu/) (tí ó wọ́ ní pípé láti Okudu 2025) àti [US ADA Title III](https://www.ada.gov/topics/title-iii/), àwọn ẹ̀rọ àgbéjáde àjọ gbọdọ̀ ṣe ìdánilójú ìráàyèsí oníbára kíkún. Kíkúnà láti pàdé [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) kì í ṣe àṣìṣe ìmọ̀ẹ̀rọ mọ́; o jẹ́ ojúṣe àjọ àti ìtọ́sọ́nà tí ó ti ṣe àwọn ìgbékalẹ̀ àwọn mílíọ̀nù dọ́là.
+Èkejì ni **òfin ìráàyèsí àgbáyé tí ó gbóná**. Labẹ̀ [European Accessibility Act](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) (tí ó wọ́ ní pípé láti Okudu 2025) àti [US ADA Title III](https://www.ada.gov/topics/title-iii/), àwọn ẹ̀rọ àgbéjáde àjọ gbọdọ̀ ṣe ìdánilójú ìráàyèsí oníbára kíkún. Kíkúnà láti pàdé [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) kì í ṣe àṣìṣe ìmọ̀ẹ̀rọ mọ́; o jẹ́ ojúṣe àjọ àti ìtọ́sọ́nà tí ó ti ṣe àwọn ìgbékalẹ̀ àwọn mílíọ̀nù dọ́là.
 
 [HTML Generator](https://github.com/sebastienrousseau/html-generator) ń tọka sí àwọn ìtẹ̀síwájú méjì ní tààrà. O jẹ́ ìwé-iṣẹ́ Rust tí ó ní ìfúnniilẹ̀ tí a ṣe àgbékalẹ̀ láti yí Markdown padà sí HTML tí ó wọ́pọ̀, tí ó ṣetán fún SEO, tí ó ní ètò. Nípa wíwo ìgbéjáde ìwé gẹ́gẹ́ bí ẹ̀rọ compile-gated, ẹ̀rọ náà ń pèsè **Return on Resilience (RoR)** gíga — tí ó ń dáàbò bò àwọn balẹ̀ ìnáwó láti ìgbéjọ́ ìráàyèsí nígbà tí ó ń ṣàyọ ìrípadà àwọn ẹ̀rọ àwárí AI.
 
@@ -168,7 +168,7 @@ Láti ṣe ìdánilójú pé àwọn ohun-ìní àgbéjáde ojú-àwùjọ-pọ�
 
 | Àmì | Ìwọ̀n / Àwọn ifojúsọ́nà iṣẹ́ | Ìtọ́kasí EAA / DORA / W3C | Ìmúlò ìmọ̀-ẹ̀rọ |
 | ---- | ---- | ---- | ---- |
-| **Ìjẹ́ṣírí ìráàyèsí** | 100% ti àwọn ojú-ewé tí a kọ́ tí a fọwọ́sí lòdì àwọn òfin WCAG 2.1 AA. | [EAA](https://www.accessibility-act.eu/) àti [ADA Title III](https://www.ada.gov/topics/title-iii/) | Àtúpalẹ̀ HTML ní àkókò kíkọ́ tí ó ń ṣe ìyẹ̀wò àwọn àmì alt àwòrán àti àwọn ami ìlà ètò. |
+| **Ìjẹ́ṣírí ìráàyèsí** | 100% ti àwọn ojú-ewé tí a kọ́ tí a fọwọ́sí lòdì àwọn òfin WCAG 2.1 AA. | [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) àti [ADA Title III](https://www.ada.gov/topics/title-iii/) | Àtúpalẹ̀ HTML ní àkókò kíkọ́ tí ó ń ṣe ìyẹ̀wò àwọn àmì alt àwòrán àti àwọn ami ìlà ètò. |
 | **Sandbox ìṣiṣẹ́ WASM** | 100% ti àwọn ìgbàwọ Markdown tí kò ní ìgbẹ̀kẹ̀lé tí a kọ́ nínú àkókò ìṣiṣẹ́ WebAssembly tí ó ya sọ́tọ̀. | [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554) (ààbò ICT) | Ìya sọ́tọ̀ àyíká ìsọ̀ láti sáfá gbé. |
 | **Ẹ̀bùn metadata tí ó ní ètò** | 100% ti àwọn àpilẹ̀kọ tí a tẹ̀jáde tí a fi àwọn àkọsọ JSON-LD tí ó fọwọ́sí, tí ó ní ibamu schema sínú. | Àwọn pípínlẹ̀ [Schema.org](https://schema.org/) | Ìsọ̀ front-matter àdásílẹ̀ àti ìyípadà sí àwọn ohun JSON-LD. |
 | **Ìwọ̀n ìgbéjáde** | Fojú ojú-ewé-ní-ìṣẹ́jú lórí ohun ẹ̀rọ tí ó wọ́pọ̀ ju 10,000. | Return on Resilience (RoR) | Ẹ̀rọ-àkójọ AST Rust tí ó ní ìpàáájú gíga. |
@@ -276,7 +276,7 @@ Láti dáàbò bò àwọn ojú-ọnà oníbára oníbára àti dáàbò bò àw
 - World Wide Web Consortium (W3C), 2024. [Web Content Accessibility Guidelines (WCAG) 2.1 ⧉](https://www.w3.org/TR/WCAG21/ "Web Content Accessibility Guidelines 2.1").
 - Schema.org, 2026. [Àwọn pípínlẹ̀ àdàkọ tí ó ní ètò Schema.org ⧉](https://schema.org/ "Schema.org structured-data specifications").
 - European Parliament and Council of the European Union, 2022. [Regulation (EU) 2022/2554 lórí ìdúró ìṣiṣẹ́ oníbára fún ẹ̀ka ìnáwó (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA Regulation").
-- European Commission, 2025. [European Accessibility Act ⧉](https://www.accessibility-act.eu/ "European Accessibility Act").
+- European Commission, 2025. [European Accessibility Act ⧉](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en "European Accessibility Act").
 - US Department of Justice, 2024. [ADA Title III ⧉](https://www.ada.gov/topics/title-iii/ "ADA Title III").
 - WebAssembly Community Group, 2026. [Pípínlẹ̀ WebAssembly ⧉](https://webassembly.org/ "WebAssembly").
 - GitHub, 2026. [Ìpamọ́ HTML Generator ⧉](https://github.com/sebastienrousseau/html-generator "HTML Generator open-source repository").

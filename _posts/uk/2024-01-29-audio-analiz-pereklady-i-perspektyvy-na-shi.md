@@ -282,7 +282,7 @@ API пакетної транскрипції Azure підтримує файл�
 3. Microsoft. *What is Azure AI Language?* Microsoft Learn, 2024. <https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview>
 4. Microsoft. *Azure AI Translator — Supported languages*. Microsoft Learn, 2024. <https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support>
 
-[00]: https://audioanalyser.co/ "Audio Analyser — інструмент аналізу мовлення на базі Azure"
+[00]: https://github.com/sebastienrousseau/audioanalyser.github.io "Audio Analyser — інструмент аналізу мовлення на базі Azure"
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="Про автора"><img alt="Портрет Себастьяна Руссо" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Себастьян Руссо</a></strong><span class="author-card-bio">Старший спеціаліст із банківських технологій, який пише про прикладний ШІ, міграцію на ISO 20022, постквантову криптографію для фінансових послуг та структурну трансформацію оптових платежів.</span><span class="author-credentials">20+ років досвіду в HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>

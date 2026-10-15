@@ -26,7 +26,7 @@ EPOCH = "1750000000"
 def test_unset_uses_the_wall_clock(monkeypatch: pytest.MonkeyPatch) -> None:
     """A normal build is unaffected: no env var, no behaviour change."""
     monkeypatch.delenv("SOURCE_DATE_EPOCH", raising=False)
-    assert build_today() == dt.date.today()
+    assert build_today() == dt.datetime.now(dt.UTC).date()
 
 
 def test_set_pins_the_date(monkeypatch: pytest.MonkeyPatch) -> None:
@@ -38,7 +38,7 @@ def test_set_pins_the_date(monkeypatch: pytest.MonkeyPatch) -> None:
 def test_empty_value_falls_back(monkeypatch: pytest.MonkeyPatch) -> None:
     """An empty var is 'unset', not 'malformed' — CI can export a blank."""
     monkeypatch.setenv("SOURCE_DATE_EPOCH", "")
-    assert build_today() == dt.date.today()
+    assert build_today() == dt.datetime.now(dt.UTC).date()
 
 
 @pytest.mark.parametrize("bad", ["not-a-number", "2026-08-30", "1e9", "9" * 40])

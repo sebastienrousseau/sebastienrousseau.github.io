@@ -141,7 +141,7 @@ MIT 的領袖與學者釋出了一組關於 AI 治理的政策簡報，以幫助
 [01]: https://www.hsbc.com/news-and-views/news/media-releases/2023/hsbc-pioneers-quantum-protection-for-ai-powered-fx-trading "滙豐將量子計算融入銀行運營"
 [02]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau 的 LinkedIn"
 [03]: https://sebastienrousseau.com/contact/index.html "聯絡 Sebastien Rousseau"
-[05]: http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm "生成式人工智慧服務管理暫行辦法"
+[05]: https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm "生成式人工智慧服務管理暫行辦法"
 [06]: https://www.fmprc.gov.cn/mfa_eng/wjdt_665385/2649_665393/202310/t20231020_11164834.html "全球人工智慧治理倡議"
 [07]: https://github.com/nlpxucan/WizardLM "WizardLM"
 [08]: https://ai.meta.com/llama/ "LLaMA 2"

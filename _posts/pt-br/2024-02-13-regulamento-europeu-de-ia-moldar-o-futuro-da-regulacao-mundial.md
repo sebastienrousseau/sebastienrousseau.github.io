@@ -51,4 +51,4 @@ El Artificial Intelligence Act de a UE representa uma etapa crítica para navega
 ![divider][divider].class=\"m-10 w-100\"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-[00]: https://www.europarl.europa.eu/news/em/press-room/20240212IPR17618/artificial-intelligence-act-committees-confirm-landmark-agreement "AI Act: committees confirm landmark agreement"
+[00]: https://www.europarl.europa.eu/news/en/press-room/20240212IPR17618/artificial-intelligence-act-committees-confirm-landmark-agreement "AI Act: committees confirm landmark agreement"

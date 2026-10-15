@@ -107,5 +107,5 @@ OpenVoice markiert een wegweisenden Punkt in de ontwikkeling de voice-cloning-Te
 [00]: https://arxiv.org/abs/2312.01479 "Paper of OpenVoice: Versatile Instant Voice Cloning"
 [01]: https://research.myshell.ai/open-voice "OpenVoice: Versatile Instant Voice Cloning"
 [02]: https://openai.com/blog/navigating-the-challenges-and-opportunities-of-synthetic-voices "Navigating the Challenges and Opportunities of Synthetic Voices"
-[03]: https://www.met.edu/ "Massachusetts Institute of Technology"
+[03]: https://www.mit.edu/ "Massachusetts Institute of Technology"
 [04]: https://www.tsinghua.edu.cn/en/ "Tsinghua University"

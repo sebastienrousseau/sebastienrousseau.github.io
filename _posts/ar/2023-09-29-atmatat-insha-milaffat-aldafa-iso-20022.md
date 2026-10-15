@@ -266,7 +266,7 @@ create_xml_v9(
 
 ## المراجع
 
-1. European Payments Council. *إرشادات تنفيذ مخطط SEPA Credit Transfer من العميل إلى البنك (v1.1)*. EPC، 2023. https://www.europeanpaymentscouncil.eu/document-library/implementation-guidelines/sepa-credit-transfer-scheme-customer-bank
+1. European Payments Council. *إرشادات تنفيذ مخطط SEPA Credit Transfer من العميل إلى البنك (v1.1)*. EPC، 2023. https://www.europeanpaymentscouncil.eu/sites/default/files/kb/file/2025-10/EPC132-08%20SCT%20C2PSP%20IG%202025%20V1.0.pdf
 2. SWIFT. *إرشادات استخدام CBPR+ — بدء التحويل الائتماني للعميل (pain.001)*. SWIFT Standards، 2023. https://www.swift.com/standards/iso-20022/cbpr-plus-usage-guidelines
 3. ISO. *ISO 20022 — الخدمات المالية — مخطط الرسائل العالمي للقطاع المالي*. ISO.org، 2023. https://www.iso20022.org/
 4. Rousseau, S. *pain001 — مولد ملفات دفع ISO 20022*. GitHub، 2023. https://github.com/sebastienrousseau/pain001

@@ -88,4 +88,4 @@ Darüber uit wordt het Eingehen de richtigen Partnerschaften doorslaggevend zijn
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 
 [00]: https://www.aboutamazon.com/news/retail/amazon-rufus "Amazon Rufus - AI experience comes to the Amazon Shopping app"
-[01]: https://www.facebook.com/business/news/generatieve-ai-features-for-ads-coming-to-all-advertisers "Generative AI features for ads coming to all advertisers"
+[01]: https://www.facebook.com/business/news/generative-ai-features-for-ads-coming-to-all-advertisers "Generative AI features for ads coming to all advertisers"

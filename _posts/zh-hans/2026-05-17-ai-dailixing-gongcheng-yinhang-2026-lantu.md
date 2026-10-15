@@ -89,7 +89,7 @@ keywords: "代理式工程, 规范驱动开发, 银行, 金融服务, AI 治理,
 与 AI 法案并存：
 
 - **DORA**（数字运营韧性法案）自 2025 年 1 月起生效，创建明确涵盖关键金融功能中使用的 AI 系统的 22 项 ICT 风险管理义务。
-- **SR 11-7**——美联储和 OCC 的模型风险管理指南，最初于 2011 年编写——已 [在监管实践中扩展 ⧉](https://aegisaicompliance.com/ai-governance-for-banks/) 以涵盖 LLM 和代理式系统。
+- **SR 11-7**——美联储和 OCC 的模型风险管理指南，最初于 2011 年编写——已 [在监管实践中扩展 ⧉](https://web.archive.org/web/20260208023003/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7 Guidance on Model Risk Management") 以涵盖 LLM 和代理式系统。
 - **NIST AI RMF**（1.0，2023 年 1 月）在美国是自愿的，但被联邦监管机构引用为基线。
 - **ISO/IEC 42001**（2023 年 12 月发布）是首个可认证的 AI 管理系统标准。
 - **英国 SM&CR 和 Consumer Duty**——高级经理与认证制度现在要求为每个高风险 AI 系统指定问责。
@@ -222,7 +222,7 @@ HITL 意味着代理未经明确人类批准不能执行后果行动。HOTL 意�
 - Flashpoint, (2026). [2026 全球威胁情报报告 ⧉](https://www.hstoday.us/subject-matter-areas/cybersecurity/2026-global-threat-intelligence-report-highlights-rise-in-agentic-ai-cybercrime/)。HSToday / Flashpoint.
 - 欧盟委员会, (2024). 关于人工智能的欧盟法规 (EU) 2024/1689（欧盟 AI 法案）。
 - Regulativ, (2026). [欧盟 AI 法案 2026 年 8 月截止日期 ⧉](https://www.finextra.com/blogposting/31653/the-eu-ai-acts-august-2026-deadline-what-financial-services-firms-must-do-now)。Finextra.
-- AegisAI Compliance, (2026). [银行 AI 治理：SR 11-7 和欧盟 AI 法案合规指南 ⧉](https://aegisaicompliance.com/ai-governance-for-banks/)。AegisAI.
+- AegisAI Compliance, (2026). 银行 AI 治理：SR 11-7 和欧盟 AI 法案合规指南。AegisAI.
 - The Financial Brand, (2026). [自主 AI 代理将如何真正重新定义银行业增长 ⧉](https://thefinancialbrand.com/news/artificial-intelligence-banking/autonomous-ai-agents-redefine-banking-growth-196646)。The Financial Brand.
 - Computer Weekly, (2026). [AI 帮助大型机在 2026 年保持业务关键 ⧉](https://www.computerweekly.com/opinion/AI-to-help-mainframes-remain-business-critical-in-2026)。Computer Weekly.
 - CIO Magazine, (2025). [使用 AI 现代化大型机 ⧉](https://www.cio.com/article/4085184/using-ai-to-modernize-mainframes-turning-legacy-tech-into-a-strategic-advantage.html)。CIO Magazine.

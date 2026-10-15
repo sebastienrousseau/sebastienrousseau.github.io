@@ -211,7 +211,7 @@ Regev, O. (2005). [**Akan lattices, learning with errors, random linear codes, d
 
 Kuperberg, G. (2005). [**Algorithm na quantum na subexponential-time don matsalar dihedral hidden subgroup. ⧉**][02] *SIAM Journal on Computing*, 35(1), 170-188.
 
-[00]: https://eprint.iacr.org/2024/555.pdf "Quantum Algorithms don Matsalolin Lattice: Sabon Zamanin Cryptography"
+[00]: https://eprint.iacr.org/2024/555 "Quantum Algorithms don Matsalolin Lattice: Sabon Zamanin Cryptography"
 [01]: https://arxiv.org/abs/2401.03703 "Akan Lattices, Learning with Errors, Random Linear Codes, da Cryptography"
 [02]: https://arxiv.org/abs/quant-ph/0302112 "Algorithm na quantum na subexponential-time don matsalar dihedral hidden subgroup"
 

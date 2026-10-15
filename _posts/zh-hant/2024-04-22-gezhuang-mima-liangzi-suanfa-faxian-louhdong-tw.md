@@ -60,10 +60,10 @@ NIST PQC 標準化過程是朝該方向邁出的重要一步，但僅是開始�
 - Kuperberg, G. (2005). [二面體隱藏子群問題的亞指數時間量子演算法。⧉][03] SIAM Journal on Computing, 35(1), 170-188.
 
 [00]: https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html "格基密碼學量子演算法挑戰"
-[01]: https://eprint.iacr.org/2024/555.pdf "格問題的量子演算法：密碼學的新時代"
+[01]: https://eprint.iacr.org/2024/555 "格問題的量子演算法：密碼學的新時代"
 [02]: https://nigelsmart.github.io/LWE.html "Learning with Errors"
 [03]: https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization "後量子密碼學標準化"
 [04]: https://pq-crystals.org/kyber/ "Kyber"
 [05]: https://pq-crystals.org/dilithium/ "Dilithium"
-[06]: https://www.inferati.com/blog/fhe-schemes-bgv "BGV"
+[06]: https://web.archive.org/web/20250512205935/https://www.inferati.com/blog/fhe-schemes-bgv "BGV"
 [07]: https://tfhe.github.io/tfhe/ "TFHE"

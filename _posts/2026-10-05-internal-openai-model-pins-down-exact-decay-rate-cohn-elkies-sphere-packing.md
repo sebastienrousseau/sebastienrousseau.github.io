@@ -293,7 +293,7 @@ No. While the theorem sharpens upper bounds on how densely spheres can pack in h
 - Henry Cohn and Noam Elkies, (2003). [New upper bounds on sphere packings I ⧉](https://annals.math.princeton.edu "New upper bounds on sphere packings I"). Annals of Mathematics.
 - Henry Cohn and Felipe Gonçalves, (2019). [An optimal uncertainty principle in Fourier analysis ⧉](https://www.pnas.org "An optimal uncertainty principle in Fourier analysis"). PNAS.
 - Henry Cohn and Yufei Zhao, (2014). [Sphere packing bounds via spherical codes ⧉](https://projecteuclid.org "Sphere packing bounds via spherical codes"). Duke Mathematical Journal.
-- G. A. Kabatianskii and V. I. Levenshtein, (1978). [Bounds for packings on a sphere and in space ⧉](http://www.mathnet.ru "Bounds for packings on a sphere and in space"). Problems of Information Transmission.
+- G. A. Kabatianskii and V. I. Levenshtein, (1978). [Bounds for packings on a sphere and in space ⧉](https://link.springer.com/article/10.1007/BF02427848 "Bounds for packings on a sphere and in space"). Problems of Information Transmission.
 - Maryna S. Viazovska, (2017). [The sphere packing problem in dimension 8 ⧉](https://annals.math.princeton.edu "The sphere packing problem in dimension 8"). Annals of Mathematics.
 
 <!-- enrich-start -->

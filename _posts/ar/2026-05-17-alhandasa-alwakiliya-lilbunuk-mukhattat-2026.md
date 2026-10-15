@@ -100,7 +100,7 @@ Andrej Karpathy، الذي [صاغ مصطلح "vibe coding" في فبراير 20
 تجلس بجانب AI Act:
 
 - **DORA** (Digital Operational Resilience Act) نافذة منذ يناير 2025 وتُنشئ 22 التزاماً لإدارة مخاطر ICT يُغطّي صراحةً أنظمة AI المُستخدَمة في وظائف الخدمات المالية الحرجة.
-- **SR 11-7** — إرشاد إدارة مخاطر النموذج لـ Federal Reserve و OCC، المكتوب أصلاً في 2011 — جرى [تمديده في الممارسة التنظيمية ⧉](https://aegisaicompliance.com/ai-governance-for-banks/ "AI Governance for Banks: SR 11-7 & EU AI Act Compliance Guide") ليُغطّي LLMs والأنظمة الوكيلية.
+- **SR 11-7** — إرشاد إدارة مخاطر النموذج لـ Federal Reserve و OCC، المكتوب أصلاً في 2011 — جرى [تمديده في الممارسة التنظيمية ⧉](https://web.archive.org/web/20260208023003/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7 Guidance on Model Risk Management") ليُغطّي LLMs والأنظمة الوكيلية.
 - **NIST AI RMF** (1.0، يناير 2023) طوعي في الولايات المتحدة لكنه يُشار إليه كخطّ أساس من الجهات التنظيمية الفيدرالية.
 - **ISO/IEC 42001** (المنشورة في ديسمبر 2023) هو معيار أنظمة إدارة AI القابل للاعتماد الأول.
 - **UK SM&CR و Consumer Duty** — يتطلب نظام Senior Managers and Certification الآن المساءلة المسمّاة لكلّ نظام AI عالي المخاطر.
@@ -240,4 +240,4 @@ HITL يعني أن الوكيل لا يستطيع تنفيذ إجراءاتٍ ت
 - Anthropic, (2025). [Disrupting the first reported AI-orchestrated cyber espionage campaign ⧉](https://www.anthropic.com/news/disrupting-AI-espionage "Disrupting AI espionage"). Anthropic.
 - Flashpoint, (2026). [2026 Global Threat Intelligence Report ⧉](https://www.hstoday.us/subject-matter-areas/cybersecurity/2026-global-threat-intelligence-report-highlights-rise-in-agentic-ai-cybercrime/ "GTIR 2026"). HSToday.
 - European Commission, (2024). Regulation (EU) 2024/1689 on Artificial Intelligence (EU AI Act).
-- AegisAI Compliance, (2026). [AI Governance for Banks: SR 11-7 & EU AI Act ⧉](https://aegisaicompliance.com/ai-governance-for-banks/ "AI Governance for Banks"). AegisAI.
+- AegisAI Compliance, (2026). AI Governance for Banks: SR 11-7 & EU AI Act. AegisAI.

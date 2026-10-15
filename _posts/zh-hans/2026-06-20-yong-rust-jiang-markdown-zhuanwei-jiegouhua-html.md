@@ -116,7 +116,7 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-2026 年，网络内容被 AI 搜索爬虫、LLM 驱动的搜索引擎和检索增强生成（RAG）管道消费的频率与人类读者不相上下。扁平或格式错误的 HTML 会干扰机器解析，使企业研究和文档在现代搜索范式中不可见——包括 [Google Search Generative Experience](https://blog.google/products/search/generative-ai-search/)、[ChatGPT](https://chat.openai.com/) 浏览以及企业 RAG 智能体。与此同时，未能遵守 [《欧洲无障碍法案》（EAA）](https://www.accessibility-act.eu/) 和 [美国 ADA Title III](https://www.ada.gov/topics/title-iii/) 等严格全球法规，现已构成明确的民事责任。[HTML Generator](https://github.com/sebastienrousseau/html-generator) 是一个高性能 Rust 库，专为在编译器层面弥合这两类差距而设计——而非依赖部署后补丁。
+2026 年，网络内容被 AI 搜索爬虫、LLM 驱动的搜索引擎和检索增强生成（RAG）管道消费的频率与人类读者不相上下。扁平或格式错误的 HTML 会干扰机器解析，使企业研究和文档在现代搜索范式中不可见——包括 [Google Search Generative Experience](https://blog.google/products/search/generative-ai-search/)、[ChatGPT](https://chat.openai.com/) 浏览以及企业 RAG 智能体。与此同时，未能遵守 [《欧洲无障碍法案》（EAA）](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) 和 [美国 ADA Title III](https://www.ada.gov/topics/title-iii/) 等严格全球法规，现已构成明确的民事责任。[HTML Generator](https://github.com/sebastienrousseau/html-generator) 是一个高性能 Rust 库，专为在编译器层面弥合这两类差距而设计——而非依赖部署后补丁。
 
 ## 一句话解答
 
@@ -124,7 +124,7 @@ site_software: "Static Site Generator, Rust"
 
 ## 执行摘要
 
-Markdown 渲染看似简单。生产级 HTML 是一个合规问题。2026 年 6 月，每个企业触点——投资者关系门户、监管文件、客户文档、API 参考、营销资产——都由人类和机器共同解析。每个页面都面临两重压力：[EAA](https://www.accessibility-act.eu/) 和 [ADA Title III](https://www.ada.gov/topics/title-iii/) 使可访问性成为董事会级法律风险，而 AI 摄取和 RAG 管道则青睐结构化、机器可读的输出。标准 Markdown 库生成扁平 HTML，两项标准均无法通过。HTML Generator 将文档生成视为编译门控管道：WCAG 验证是构建错误，JSON-LD 从 YAML 前置元数据自动注入无需手动标注，MathML 和 Mermaid 以可访问方式渲染，整个引擎支持 WebAssembly 目标，使不可信文档的解析与宿主环境完全隔离。
+Markdown 渲染看似简单。生产级 HTML 是一个合规问题。2026 年 6 月，每个企业触点——投资者关系门户、监管文件、客户文档、API 参考、营销资产——都由人类和机器共同解析。每个页面都面临两重压力：[EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) 和 [ADA Title III](https://www.ada.gov/topics/title-iii/) 使可访问性成为董事会级法律风险，而 AI 摄取和 RAG 管道则青睐结构化、机器可读的输出。标准 Markdown 库生成扁平 HTML，两项标准均无法通过。HTML Generator 将文档生成视为编译门控管道：WCAG 验证是构建错误，JSON-LD 从 YAML 前置元数据自动注入无需手动标注，MathML 和 Mermaid 以可访问方式渲染，整个引擎支持 WebAssembly 目标，使不可信文档的解析与宿主环境完全隔离。
 
 ## 核心要点
 
@@ -142,7 +142,7 @@ Markdown 渲染看似简单。生产级 HTML 是一个合规问题。2026 年 6 
 
 第一是 **AI 摄取与可发现性**。内容正越来越多地由大语言模型和检索增强生成管道处理。扁平或格式错误的 HTML 会干扰爬虫解析，使企业研究和文档在现代搜索范式中不可见——包括 [Google Search Generative Experience](https://blog.google/products/search/generative-ai-search/)、[ChatGPT](https://chat.openai.com/) 浏览以及企业 RAG 智能体。
 
-第二是 **严格的全球可访问性法规**。根据 [《欧洲无障碍法案》](https://www.accessibility-act.eu/)（自 2025 年 6 月起全面适用）和 [美国 ADA Title III](https://www.ada.gov/topics/title-iii/)，企业发布平台必须保证完整的数字可访问性。未能满足 [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) 不再是工程疏失，而是已产生数百万美元和解赔偿的民事和监管责任。
+第二是 **严格的全球可访问性法规**。根据 [《欧洲无障碍法案》](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en)（自 2025 年 6 月起全面适用）和 [美国 ADA Title III](https://www.ada.gov/topics/title-iii/)，企业发布平台必须保证完整的数字可访问性。未能满足 [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) 不再是工程疏失，而是已产生数百万美元和解赔偿的民事和监管责任。
 
 [HTML Generator](https://github.com/sebastienrousseau/html-generator) 直接应对这两重压力。它是一个线程安全的 Rust 库，专为将 Markdown 转换为可访问、SEO 就绪的结构化 HTML 而设计。通过将文档生成视为编译门控管道，该引擎提供高 **韧性回报（RoR）**——保护资产负债表免受可访问性诉讼冲击，同时最大化 AI 发现的机器可读性。
 
@@ -168,7 +168,7 @@ Markdown 渲染看似简单。生产级 HTML 是一个合规问题。2026 年 6 
 
 | 信号 | 指标/运营基准 | EAA / DORA / W3C 参考 | 技术实现 |
 | ---- | ---- | ---- | ---- |
-| **可访问性合规** | 100% 已编译页面经 WCAG 2.1 AA 规则验证。 | [EAA](https://www.accessibility-act.eu/) 和 [ADA Title III](https://www.ada.gov/topics/title-iii/) | 构建时 HTML 解析器评估图片替代文本和语义地标。 |
+| **可访问性合规** | 100% 已编译页面经 WCAG 2.1 AA 规则验证。 | [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) 和 [ADA Title III](https://www.ada.gov/topics/title-iii/) | 构建时 HTML 解析器评估图片替代文本和语义地标。 |
 | **WASM 执行沙盒** | 100% 不可信 Markdown 输入在隔离 WebAssembly 运行时中编译。 | [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554)（ICT 安全） | 解析环境与宿主服务器的隔离。 |
 | **结构化元数据覆盖** | 100% 已发布文章注入有效、符合 Schema.org 规范的 JSON-LD 头部。 | [Schema.org](https://schema.org/) 规范 | 自动解析前置元数据并转换为 JSON-LD 对象。 |
 | **编译吞吐量** | 在商用硬件上每秒页面数目标超过 10,000。 | 韧性回报（RoR） | 高度并行化的 Rust AST 编译器。 |
@@ -276,7 +276,7 @@ G-SIBs 运营着庞大的多语言公共资产，在多个司法管辖区发布�
 - World Wide Web Consortium (W3C), 2024. [Web Content Accessibility Guidelines (WCAG) 2.1 ⧉](https://www.w3.org/TR/WCAG21/ "网页内容无障碍指南 2.1").
 - Schema.org, 2026. [Schema.org 结构化数据规范 ⧉](https://schema.org/ "Schema.org 结构化数据规范").
 - European Parliament and Council of the European Union, 2022. [Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA 法规").
-- European Commission, 2025. [European Accessibility Act ⧉](https://www.accessibility-act.eu/ "欧洲无障碍法案").
+- European Commission, 2025. [European Accessibility Act ⧉](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en "欧洲无障碍法案").
 - US Department of Justice, 2024. [ADA Title III ⧉](https://www.ada.gov/topics/title-iii/ "ADA Title III").
 - WebAssembly Community Group, 2026. [WebAssembly specification ⧉](https://webassembly.org/ "WebAssembly").
 - GitHub, 2026. [HTML Generator repository ⧉](https://github.com/sebastienrousseau/html-generator "HTML Generator 开源仓库").

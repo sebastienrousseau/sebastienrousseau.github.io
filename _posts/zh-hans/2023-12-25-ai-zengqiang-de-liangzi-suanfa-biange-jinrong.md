@@ -111,4 +111,4 @@ AI 与量子算法设计的融合代表金融领域的关键时刻。借助 QFT 
 [04]: https://web.archive.org/web/2*/https://www.santander.com/en/press-room/press-releases/santander-and-d-wave-to-explore-the-use-of-quantum-computing-in-the-banking-industry "桑坦德与 D-Wave 探索量子计算在银行业的应用（存档）"
 [05]: https://www.terraquantum.swiss/ "TerraQuantum"
 [06]: https://web.archive.org/web/2*/https://zapata.ai/bbva-monte-carlo-simulation-finance-case-study/ "BBVA 蒙特卡洛模拟金融案例研究（Zapata Computing，存档）"
-[07]: https://www.goldmansachs.com/intelligence/pages/gs-research/euv-3.0/report.pdf "欧洲技术硬件 EUV 3.0：未来十年深护城河的数字使能者"
+[07]: https://web.archive.org/web/20240617003616/https://www.goldmansachs.com/intelligence/pages/gs-research/euv-3.0/report.pdf "欧洲技术硬件 EUV 3.0：未来十年深护城河的数字使能者"

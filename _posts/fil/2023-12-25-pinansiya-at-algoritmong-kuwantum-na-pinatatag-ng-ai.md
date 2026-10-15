@@ -113,4 +113,4 @@ Kumakatawan ang pagsasama ng AI sa disenyo ng algoritmong kuwantum sa isang maha
 [04]: https://web.archive.org/web/2*/https://www.santander.com/en/press-room/press-releases/santander-and-d-wave-to-explore-the-use-of-quantum-computing-in-the-banking-industry "Santander and D-Wave to explore the use of quantum computing in the banking industry (archived)"
 [05]: https://www.terraquantum.swiss/ "TerraQuantum"
 [06]: https://web.archive.org/web/2*/https://zapata.ai/bbva-monte-carlo-simulation-finance-case-study/ "BBVA Monte Carlo Simulation Finance Case Study (Zapata Computing, archived)"
-[07]: https://www.goldmansachs.com/intelligence/pages/gs-research/euv-3.0/report.pdf "Europe Technology Hardware EUV 3.0 High NA a prime Digital Enabler for the next decade with deep competitive moat"
+[07]: https://web.archive.org/web/20240617003616/https://www.goldmansachs.com/intelligence/pages/gs-research/euv-3.0/report.pdf "Europe Technology Hardware EUV 3.0 High NA a prime Digital Enabler for the next decade with deep competitive moat"

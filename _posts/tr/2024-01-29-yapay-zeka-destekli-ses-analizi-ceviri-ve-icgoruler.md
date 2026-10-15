@@ -171,4 +171,4 @@ Evet. Çeviri, `--target-lang` CLI bayrağı veya web kullanıcı arayüzündeki
 3. Microsoft. *What is Azure AI Language?* Microsoft Learn, 2024. <https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview>
 4. Microsoft. *Azure AI Translator — Supported languages*. Microsoft Learn, 2024. <https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support>
 
-[00]: https://audioanalyser.co/ "Audio Analyser: Azure destekli konuşma analizi aracı"
+[00]: https://github.com/sebastienrousseau/audioanalyser.github.io "Audio Analyser: Azure destekli konuşma analizi aracı"

@@ -432,10 +432,10 @@ CloudCDN（[cloudcdn.pro](https://cloudcdn.pro/ "CloudCDN")）是本作者发布
 - Meta AI, (2026). [Llama 4 发布公告 —— Maverick、Scout 和 Behemoth 变体 ⧉](https://ai.meta.com/blog/llama-4-multimodal-intelligence/ "Llama 4 release")。Meta。
 - Toshiba / BT, (2025). [伦敦城域商用 QKD 网络部署 ⧉](https://www.global.toshiba/ww/products-solutions/security-ict/qkd.html "Toshiba quantum key distribution (QKD)")。Toshiba Europe。
 - NVIDIA, (2025). [Spectrum-X Photonics 和 Quantum-X Photonics —— 用于 AI 工厂的共封装光网络 ⧉](https://nvidianews.nvidia.com/news/spectrum-x-quantum-x-photonics "NVIDIA Photonics announcement at GTC 2025")。NVIDIA。
-- European Central Bank Banking Supervision, (2025). [云外包和集中风险 —— 监管期望 ⧉](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.outsourcingcloud.en.html "ECB Banking Supervision on cloud outsourcing")。ECB。
+- European Central Bank Banking Supervision, (2025). [云外包和集中风险 —— 监管期望 ⧉](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.supervisory_guides202507.en.pdf "ECB Banking Supervision on cloud outsourcing")。ECB。
 - Zou, W. et al. (2024). [PoisonedRAG：对大型语言模型检索增强生成的知识损坏攻击 ⧉](https://arxiv.org/abs/2402.07867 "PoisonedRAG")。arXiv。
 - Cilium / Tetragon Project, (2025). [面向云原生和 Wasm 工作负载的基于 eBPF 的运行时安全与可观察性 ⧉](https://cilium.io/blog/ "Cilium blog")。Isovalent / Cilium。
-- Qentelli, (2026). [银行业革新：云和 DevOps 如何驱动金融服务的未来 ⧉](https://qentelli.com/thought-leadership/insights/revolutionizing-banking-how-cloud-and-devops-are-powering-the-future-of-financial-services "Qentelli — Cloud and DevOps in Banking")。Qentelli。
+- Qentelli, (2026). 银行业革新：云和 DevOps 如何驱动金融服务的未来。Qentelli。
 - Built In Chicago, (2025). [摩根大通的多云策略是持续转型的关键 ⧉](https://www.builtinchicago.org/articles/jpmorganchase-multi-cloud-strategy-key-continuous-transformation "JPMorgan's Multi-Cloud Strategy")。Built In。
 - CIO Dive, (2024). [摩根大通 CEO 希望更多云驱动 AI、分析 ⧉](https://www.ciodive.com/news/jpmorgan-jamie-dimon-cloud-generative-ai-strategy/713093/ "JPMorgan Chase CEO Wants More Cloud")。CIO Dive。
 - Fierce Network, (2024). [J.P. Morgan 支付高管：由于云、API"仅是银行"的日子已经结束 ⧉](https://www.fierce-network.com/cloud/jp-morgan-payments-exec-talks-cloud-tech-talent-and-apis "J.P. Morgan Payments Exec on Cloud")。Fierce Network。
