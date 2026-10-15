@@ -12,7 +12,7 @@
 #     (caches.default.put / state.storage.put / ctx.storage.put).
 #   - Accepts a `.put(` call if the preceding non-blank line matches `// adr:`.
 #
-# Policy: project-docs/adr/0001-kv-free-tier-policy.md
+# Policy: docs/adr/0001-kv-free-tier-policy.md
 #
 # Run locally: scripts/dev/check_kv_writes.sh
 set -euo pipefail
@@ -42,8 +42,8 @@ violations=$(find workers -type f \
 
 if [ -n "$violations" ]; then
   echo "::error::KV write without an ADR opt-in comment found."
-  echo "Policy: project-docs/adr/0001-kv-free-tier-policy.md"
-  echo "Fix: add '// adr: <ADR-NN> — <one-line reason>' above each .put() call."
+  echo "Policy: docs/adr/0001-kv-free-tier-policy.md"
+  echo "Fix: add '// adr: <ADR-NN>: <one-line reason>' above each .put() call."
   echo
   printf '%s\n' "$violations"
   exit 1

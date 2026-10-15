@@ -427,7 +427,7 @@ python3 scripts/generators/build_translations/__main__.py
 # (non-dated-aware) Python localiser skips, leaving unlocalised English that
 # trips test_lang_no_leakage / test_jsonld_localized. Dropping them keeps the
 # page EN-only as its front matter declares. See
-# project-docs/operations/ci-flake-triage.md §4.
+# docs/operations/ci-flake-triage.md §4.
 #
 # NB: this previously read "has no locale translation sources". That was
 # wrong — 27 are committed under _posts/<lang>/. They are deliberately not

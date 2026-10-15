@@ -13,7 +13,7 @@ The `workers/wrangler.toml` declares three bindings the
 so partial activation is safe. But you'll want all three live before
 the AE telemetry shows up in the dashboard.
 
-Policy: `project-docs/adr/0001-kv-free-tier-policy.md`
+Policy: `docs/adr/0001-kv-free-tier-policy.md`
 
 ---
 

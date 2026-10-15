@@ -1,13 +1,13 @@
 # SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
-"""Coverage for search-index text extraction — Phase 1.3.
+"""Coverage for search-index text extraction: Phase 1.3.
 
 `_extract_visible_text` builds the plain-text search index from a page's
 <main>: it drops <script>/<style>/comments and all tags, leaving readable
 text. (The regex operates only on our own build-generated HTML; the
-py/bad-tag-filter alerts on it are dismissed as not-reachable — see
-project-docs/security.md.)
+py/bad-tag-filter alerts on it are dismissed as not-reachable: see
+docs/security.md.)
 """
 
 from __future__ import annotations

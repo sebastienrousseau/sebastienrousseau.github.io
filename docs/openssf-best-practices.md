@@ -31,8 +31,8 @@ badge ID to `README.md`; Scorecard picks it up from the API on its next run.
 | `license_location` | Met | `LICENSE`, `LICENSE-APACHE`, `LICENSE-MIT` at the repository root |
 | `floss_license` | Met | Apache-2.0 OR MIT (`SPDX-License-Identifier` in `LICENSE`) |
 | `floss_license_osi` | Met | both are OSI-approved |
-| `documentation_basics` | Met | `README.md`, `project-docs/architecture.md` |
-| `documentation_interface` | Met | `project-docs/architecture.md` documents every build-pipeline script; `test_architecture_doc_current.py` fails the build if one is undocumented |
+| `documentation_basics` | Met | `README.md`, `docs/architecture.md` |
+| `documentation_interface` | Met | `docs/architecture.md` documents every build-pipeline script; `test_architecture_doc_current.py` fails the build if one is undocumented |
 | `english` | Met | repository, issues and commits are in English |
 
 ## Change control
@@ -82,7 +82,7 @@ badge ID to `README.md`; Scorecard picks it up from the API on its next run.
 
 | Criterion | Answer | Evidence |
 | --- | --- | --- |
-| `know_secure_design` | Met | `project-docs/architecture.md`, the ADR series |
+| `know_secure_design` | Met | `docs/architecture.md`, the ADR series |
 | `know_common_errors` | Met | as above |
 | `crypto_published` | Met | no bespoke cryptography; the published libraries use NIST-standard primitives |
 | `crypto_call` | Met | no bespoke cryptography in this repository |

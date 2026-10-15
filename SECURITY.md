@@ -22,4 +22,4 @@ Please do **not** open a public GitHub issue for a suspected vulnerability: emai
 | Cloudflare Edge Workers | Supported | Latest release in `workers/` |
 | Fly.io PDF Render Container | Supported | Latest release in `fly/pdf-render/` |
 
-The detailed threat model, architectural safeguards, and past vulnerability disclosures are documented in [`project-docs/security.md`](project-docs/security.md) and [`project-docs/threat-model.md`](project-docs/threat-model.md). See [`/about/#security`](https://sebastienrousseau.com/about/#security) for public acknowledgements.
+The detailed threat model, architectural safeguards, and past vulnerability disclosures are documented in [`docs/security.md`](docs/security.md) and [`docs/threat-model.md`](docs/threat-model.md). See [`/about/#security`](https://sebastienrousseau.com/about/#security) for public acknowledgements.

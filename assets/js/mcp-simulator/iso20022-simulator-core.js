@@ -11,7 +11,7 @@
 //   2. the Node unit test (tests/unit/mcp-simulator/simulator-core.test.mjs),
 // which the build gates at 100% line/branch/function coverage - the same
 // contract as the index-scorecard scoring core (see build.sh and
-// project-docs/adr/0011-index-scorecard-architecture.md for the precedent).
+// docs/adr/0011-index-scorecard-architecture.md for the precedent).
 //
 // Design invariants:
 //   - Everything is derived from the baked data; nothing here fabricates a

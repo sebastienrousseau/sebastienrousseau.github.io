@@ -100,7 +100,7 @@ pip install -r requirements.txt               # Python build dependencies
 | `_data/` | Locale strings + taxonomy |
 | `scripts/` | Build, generator, postbuild, and audit tooling |
 | `tests/` | Unit + validation suites |
-| `project-docs/` | Architecture, CI, security, publishing guides |
+| `docs/` | Architecture, CI, security, publishing guides |
 | `workers/` | Cloudflare edge router |
 | `labs/` | Rust → WebAssembly demos |
 | `public/` | Build output (gitignored; deployed as a CI artifact) |
@@ -167,7 +167,7 @@ Six generator steps turn English source drafts into fully translated pages:
 
 ## Postbuild passes
 
-`postbuild.py` runs ~25 single-page passes that add author metadata, image dimensions, citation lists, sitemaps, and per-page CSP script hashes. See [Postbuild Passes](project-docs/postbuild.md) for each pass.
+`postbuild.py` runs ~25 single-page passes that add author metadata, image dimensions, citation lists, sitemaps, and per-page CSP script hashes. See [Postbuild Passes](docs/postbuild.md) for each pass.
 
 ## Internationalisation
 
@@ -205,7 +205,7 @@ sequenceDiagram
 
 ## Security
 
-The site ships hybrid post-quantum TLS, a strict per-page Content-Security-Policy, Subresource Integrity on every asset, and signed Git commits. Inline scripts are allowed only by a build-time SHA-256 hash; supply-chain integrity rests on a CycloneDX SBOM and asset hashes; the edge preloads HSTS to block downgrades. See [Security](project-docs/security.md).
+The site ships hybrid post-quantum TLS, a strict per-page Content-Security-Policy, Subresource Integrity on every asset, and signed Git commits. Inline scripts are allowed only by a build-time SHA-256 hash; supply-chain integrity rests on a CycloneDX SBOM and asset hashes; the edge preloads HSTS to block downgrades. See [Security](docs/security.md).
 
 ```mermaid
 %%{init: {'theme':'neutral'} }%%
@@ -271,7 +271,7 @@ same tree; `make verify` therefore measures what CI measures. Run it after `make
 
 ## CI gates
 
-Static analysis (ruff, mypy, complexity, duplication), the unit + validation suites, an internal-link audit, JSON-LD validation, a 7-shard Pa11y accessibility pass, visual regression, a byte-identical rebuild check, and Lighthouse all run on every pull request. A failing gate blocks the merge. On `main`, a post-deploy check asserts the live origin serves what the build produced. See [CI Gates](project-docs/ci.md).
+Static analysis (ruff, mypy, complexity, duplication), the unit + validation suites, an internal-link audit, JSON-LD validation, a 7-shard Pa11y accessibility pass, visual regression, a byte-identical rebuild check, and Lighthouse all run on every pull request. A failing gate blocks the merge. On `main`, a post-deploy check asserts the live origin serves what the build produced. See [CI Gates](docs/ci.md).
 
 The complexity gate covers all of `scripts/` and ratchets: current debt is
 enumerated in `scripts/dev/complexity-allowlist.txt`, and the gate fails both
@@ -297,16 +297,16 @@ The pipeline works for a single-language site by disabling the active locales in
 
 **Technical**
 
-- [Architecture](project-docs/architecture.md)
-- [CI Gates](project-docs/ci.md)
-- [Internationalisation](project-docs/i18n.md)
-- [Postbuild Passes](project-docs/postbuild.md)
-- [Publishing](project-docs/publishing.md)
-- [Schemas](project-docs/schemas.md)
-- [Security](project-docs/security.md)
-- [Sigstore](project-docs/sigstore.md)
-- [Daily Publishing](project-docs/daily-publishing.md)
-- [SEO Spec](project-docs/web-performance-seo-spec.md)
+- [Architecture](docs/architecture.md)
+- [CI Gates](docs/ci.md)
+- [Internationalisation](docs/i18n.md)
+- [Postbuild Passes](docs/postbuild.md)
+- [Publishing](docs/publishing.md)
+- [Schemas](docs/schemas.md)
+- [Security](docs/security.md)
+- [Sigstore](docs/sigstore.md)
+- [Daily Publishing](docs/daily-publishing.md)
+- [SEO Spec](docs/web-performance-seo-spec.md)
 
 ## License
 

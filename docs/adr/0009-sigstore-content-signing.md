@@ -31,7 +31,7 @@ ADR-0007 / architecture.md):
   which are then committed (the one generated artefact ADR-0007 allows in a
   commit).
 - The verification workflow (how to check a signature, what each bundle
-  contains) is documented in the runbook `project-docs/sigstore.md`.
+  contains) is documented in the runbook `docs/sigstore.md`.
 
 ## Consequences
 

@@ -140,14 +140,14 @@ ok "$n signed bundle(s) in sigstore-bundles/"
 
 say "Ready to commit"
 echo "  Files staged for review:"
-git status --short sigstore-bundles/ _data/sigstore/.gitignore _data/sigstore/config.example.json project-docs/sigstore.md 2>/dev/null | sed 's/^/    /'
+git status --short sigstore-bundles/ _data/sigstore/.gitignore _data/sigstore/config.example.json docs/sigstore.md 2>/dev/null | sed 's/^/    /'
 echo
 echo "  To publish:"
-echo "    git add sigstore-bundles/ _data/sigstore/.gitignore _data/sigstore/config.example.json project-docs/sigstore.md"
-echo "    git commit -m 'chore(sigstore): activate signing — per-article bundles'"
+echo "    git add sigstore-bundles/ _data/sigstore/.gitignore _data/sigstore/config.example.json docs/sigstore.md"
+echo "    git commit -m 'chore(sigstore): activate signing: per-article bundles'"
 echo "    git push"
 echo
-echo "  Then run scripts/security/sigstore-setup.sh again any time you rebuild — it's idempotent."
+echo "  Then run scripts/security/sigstore-setup.sh again any time you rebuild: it's idempotent."
 
 unset COSIGN_PASSWORD
 ok "passphrase scrubbed from shell env"

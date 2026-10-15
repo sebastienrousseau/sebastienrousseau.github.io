@@ -4,7 +4,7 @@
 **Author:** Sebastien Rousseau
 **Status:** Accepted
 **Date:** 2026-07-03
-**Related:** [Developer-Experience Plan 2026](../../project-docs/developer-experience-plan-2026.md) Phase 1; [ADR-0002](0002-pin-build-toolchains.md) (pinned toolchains); [ADR-0003](0003-build-copy-pipeline.md) (build copy pipeline)
+**Related:** [Developer-Experience Plan 2026](../../docs/developer-experience-plan-2026.md) Phase 1; [ADR-0002](0002-pin-build-toolchains.md) (pinned toolchains); [ADR-0003](0003-build-copy-pipeline.md) (build copy pipeline)
 
 ---
 

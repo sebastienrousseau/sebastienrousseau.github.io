@@ -523,7 +523,7 @@ def test_measure_ops_reads_workflow_features_and_adr_count(
         "name: Reproducible build\n",
         encoding="utf-8",
     )
-    adr = tmp_path / "project-docs" / "adr"
+    adr = tmp_path / "docs" / "adr"
     adr.mkdir(parents=True)
     (adr / "0001-x.md").write_text("x", encoding="utf-8")
     (adr / "0002-y.md").write_text("y", encoding="utf-8")

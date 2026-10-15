@@ -9,7 +9,7 @@
  * *before* the mutating codepath so an undeclared scraper never touches
  * `env.KV.put()` or the `WriteCoalescer` DO.
  *
- * Policy: project-docs/adr/0001-kv-free-tier-policy.md (Part 4)
+ * Policy: docs/adr/0001-kv-free-tier-policy.md (Part 4)
  *
  * Strategy:
  *   - Match on User-Agent against a curated denylist (AI scrapers,

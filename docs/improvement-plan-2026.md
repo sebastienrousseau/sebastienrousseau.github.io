@@ -8,7 +8,7 @@
 
 This is a living roadmap. Each item carries an acceptance criterion so "10/10"
 is *measured*, not asserted. Progress is tracked against the baseline captured
-in `project-docs/audits/baseline-2026-06.md` (Phase −1) via `make metrics`.
+in `docs/audits/baseline-2026-06.md` (Phase −1) via `make metrics`.
 
 ---
 
@@ -28,7 +28,7 @@ in `project-docs/audits/baseline-2026-06.md` (Phase −1) via `make metrics`.
 ---
 
 ## Phase −1 — Baseline & instrumentation
-- Capture CI per-job p50, full `build.sh` wall-time (ssg vs post-processing vs validation), repo-wide coverage %, `radon` average, `jscpd` %, Lighthouse scores, untested-module count, mypy error count → `project-docs/audits/baseline-2026-06.md`.
+- Capture CI per-job p50, full `build.sh` wall-time (ssg vs post-processing vs validation), repo-wide coverage %, `radon` average, `jscpd` %, Lighthouse scores, untested-module count, mypy error count → `docs/audits/baseline-2026-06.md`.
 - Add `make metrics` to regenerate those numbers.
 
 ## Phase 0 — Stop the bleeding (safety & reliability) — IN PROGRESS
@@ -65,7 +65,7 @@ in `project-docs/audits/baseline-2026-06.md` (Phase −1) via `make metrics`.
 ## Phase 5 — DX, docs & governance to 10/10
 - **5.1 — DONE.** ADR discipline: build-copy pipeline already ADR-0003; backfilled the rest — ADR-0007 (docs→public deploy), ADR-0008 (pa11y sharding+cache), ADR-0009 (Sigstore content signing). `tests/unit/test_adr_hygiene.py` enforces contiguous numbering, required Status/Date headers, and Context/Decision/Consequences sections (0001 exempt as a pre-template implementation plan), so future structural decisions can't skip the template.
 - **5.2 — DONE.** `make bootstrap` one-command onboarding (mise-first: provisions the pinned toolchain + Python build/dev deps + `ssg` 0.0.44, idempotent; ADR-0002). README Quick Start leads with `make bootstrap` → `make build` (first-build target: under 10 min), with a manual no-mise fallback.
-- **5.3 — DONE.** Runbooks in `project-docs/operations/`: rollback, CI-flake triage, incident response (publish already covered by `publishing.md` / `daily-publishing.md`), plus an `operations/README.md` index. Grounded in real operational experience: `main`-is-the-deploy, Cloudflare edge-cache staleness, pa11y 50-min hang re-runs, the local-0.0.45 lang-leakage artifact, and the locale-slug-identity broken-link class.
+- **5.3 — DONE.** Runbooks in `docs/operations/`: rollback, CI-flake triage, incident response (publish already covered by `publishing.md` / `daily-publishing.md`), plus an `operations/README.md` index. Grounded in real operational experience: `main`-is-the-deploy, Cloudflare edge-cache staleness, pa11y 50-min hang re-runs, the local-0.0.45 lang-leakage artifact, and the locale-slug-identity broken-link class.
 - **5.4 — DONE.** `architecture.md` "build pipeline" section rewritten from the real `build.sh` order (19 generator/postbuild scripts across 4 phases, was a stale "seven stages"). Guard test `tests/unit/test_architecture_doc_current.py` parses `build.sh` for `python3 scripts/...py` steps and fails if any is undocumented — so adding a generator without a doc entry breaks CI.
 
 ---

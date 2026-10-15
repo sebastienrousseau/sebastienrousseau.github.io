@@ -85,11 +85,6 @@ stats.html
 # --- Static Site Generator build output (deployed as a CI Pages artifact, never tracked) ---
 public/
 
-# --- legacy GitHub Pages mirror, retired 2026-06-10 ---
-# Deploys come from the public/ artifact (.github/workflows/ci.yml);
-# sigstore bundles moved to sigstore-bundles/. Local docs/ dirs are stale.
-docs/
-
 # --- intermediate build snapshot (build.sh) ---
 _posts_build/
 
@@ -105,7 +100,7 @@ jscpd-report/
 
 # --- local audit artefacts ---
 audits/lh/
-project-docs/audits/*.md
+docs/audits/*.md
 
 # --- Cloudflare Worker local state + generated bundle ---
 workers/.wrangler/

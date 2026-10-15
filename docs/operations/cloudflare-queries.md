@@ -4,7 +4,7 @@ Reference queries for Cloudflare KV write-budget monitoring, Workers
 Analytics Engine (AE) telemetry, and DO storage health. Pair with the
 weekly `.github/workflows/kv-burndown.yml` automation.
 
-Policy: `project-docs/adr/0001-kv-free-tier-policy.md`
+Policy: `docs/adr/0001-kv-free-tier-policy.md`
 
 ---
 
@@ -136,7 +136,7 @@ ORDER BY bucket ASC;
 ### Self-instrumented KV writes (if any get added)
 
 When a feature eventually wires `WriteCoalescer` → KV, the policy in
-`project-docs/adr/0001-kv-free-tier-policy.md` (§3.3) requires also
+`docs/adr/0001-kv-free-tier-policy.md` (§3.3) requires also
 emitting a data point on every successful flush:
 
 ```sql
@@ -208,7 +208,7 @@ Failure modes:
 ## 6. Capacity-planning shortcuts
 
 Quick mental-model formulae (full version in
-`project-docs/adr/0001-kv-free-tier-policy.md` Appendix A):
+`docs/adr/0001-kv-free-tier-policy.md` Appendix A):
 
 ```
 KV writes/day ≈ unique_keys_per_window × windows_per_day × write_probability

@@ -487,7 +487,7 @@ over four PRs so each ships independently if priorities shift.
 
 ### Phase 1 — Lock in the baseline (PR 1, ~30 min)
 
-- Add this plan to `project-docs/adr/0001-kv-free-tier-policy.md` (renamed from
+- Add this plan to `docs/adr/0001-kv-free-tier-policy.md` (renamed from
   `~/Drop/sr-kv.md`).
 - Add CI audit step (§3.4).
 - Add the three anti-patterns to `CLAUDE.md` and `CONTRIBUTING.md`.
@@ -517,7 +517,7 @@ modification; new test asserts the asset bundle loads.
 - Add `env.AE.writeDataPoint(...)` call in the redirect path of
   `lang-router.js` — one data point per locale redirect: `[country, fromLang,
   toLang]` blobs.
-- Add SQL queries to `project-docs/operations/cloudflare-queries.md`.
+- Add SQL queries to `docs/operations/cloudflare-queries.md`.
 
 **Acceptance:** AE dashboard shows a non-zero count of locale redirects
 within an hour of deploy.

@@ -15,7 +15,7 @@ compatibility_date = "2026-05-16"
 # ----------------------------------------------------------------------------
 # Bindings — Cloudflare KV Free-tier strategy
 # ----------------------------------------------------------------------------
-# Policy: project-docs/adr/0001-kv-free-tier-policy.md
+# Policy: docs/adr/0001-kv-free-tier-policy.md
 #
 # Storage-tier picker (first "yes" wins):
 #   1. Deploy-time computable → [assets]                (zero runtime cost)

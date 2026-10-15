@@ -21,7 +21,7 @@ Decisions are made in the open:
 - Substantive changes land through pull requests on `main`, never by direct
   push. Branch protection enforces this.
 - Design decisions with long-term consequences are recorded as numbered
-  Architecture Decision Records under [`project-docs/adr/`](project-docs/adr/).
+  Architecture Decision Records under [`docs/adr/`](docs/adr/).
   An ADR states the context, the decision, and the consequences — including the
   ones that turned out badly.
 - Disagreement is resolved in the pull request or issue thread. If consensus is
@@ -77,7 +77,7 @@ What reduces the damage if that person disappears:
 - **The build has no proprietary dependency.** Every build tool is FLOSS, every
   Python dependency is hash-pinned in a committed lock file, and every GitHub
   Action is pinned to a commit SHA. A fork can reproduce the build years later.
-- **The decisions are written down.** The ADR series, `project-docs/`, and the
+- **The decisions are written down.** The ADR series, `docs/`, and the
   commit history record *why* things are the way they are, not just what they
   are. A successor does not have to reverse-engineer intent.
 - **The gates encode the standards.** Someone taking over does not need to know
