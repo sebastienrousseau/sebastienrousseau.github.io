@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you cite the research, benchmarks, or pipeline architecture from this repository, please cite it as below."
+authors:
+  - family-names: "Rousseau"
+    given-names: "Sebastien"
+title: "sebastienrousseau.com: Research on Applied AI, Wholesale Payments, and Post-Quantum Cryptography"
+version: 1.2.1
+date-released: 2026-10-15
+url: "https://sebastienrousseau.com"
+repository-code: "https://github.com/sebastienrousseau/sebastienrousseau.github.io"
+license: "Apache-2.0 OR MIT"
+keywords:
+  - "artificial-intelligence"
+  - "post-quantum-cryptography"
+  - "payments"
+  - "iso-20022"
+  - "static-site-generator"
+  - "rust"
+  - "webassembly"
