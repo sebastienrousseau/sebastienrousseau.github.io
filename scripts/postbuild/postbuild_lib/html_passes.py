@@ -22,11 +22,11 @@ import _lang_registry
 from postbuild_lib.article_furniture import (
     _BODY_H1_RE,
     _H1_RE,
-    _TABLE_OPEN_RE,
-    _TH_TEXT_RE,
-    _TR_RE,
     PUBLIC,
+    TABLE_OPEN_RE,
     TAG_STRIP_RE,
+    TH_TEXT_RE,
+    TR_RE,
     _is_french,
 )
 
@@ -79,7 +79,7 @@ def _card_label_table(table: str) -> str:
     # so CSS attr() renders "Q&A", not a raw "&amp;" entity.
     headers = [
         _esc(_unesc(TAG_STRIP_RE.sub("", m.group(1)).strip()), quote=True)
-        for m in _TH_TEXT_RE.finditer(head_m.group(0))
+        for m in TH_TEXT_RE.finditer(head_m.group(0))
     ]
     if not any(headers):
         return table
@@ -96,7 +96,7 @@ def _card_label_table(table: str) -> str:
 
         return _TD_OPEN_RE.sub(label_td, row_m.group(0))
 
-    body = _TR_RE.sub(label_row, table[head_m.end() :])
+    body = TR_RE.sub(label_row, table[head_m.end() :])
 
     def add_class(open_m: re.Match[str]) -> str:
         attrs = open_m.group(1)
@@ -104,7 +104,7 @@ def _card_label_table(table: str) -> str:
             return f"<table{attrs}>".replace('class="', 'class="table--cards ', 1)
         return f'<table{attrs} class="table--cards">'
 
-    head = _TABLE_OPEN_RE.sub(add_class, table[: head_m.end()], count=1)
+    head = TABLE_OPEN_RE.sub(add_class, table[: head_m.end()], count=1)
     return head + body
 
 

@@ -23,15 +23,25 @@ ALLOWED_ROOT_UPPERCASE = {
     "DEPLOY.md",
     # Default Makefile target entrypoint for GNU Make toolchain orchestration
     "Makefile",
+    # Canonical repository governance and development files
+    "AGENTS.md",
+    "CITATION.cff",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "DEVELOPMENT.md",
+    "GOVERNANCE.md",
+    "KEYS.asc",
+    "ROADMAP.md",
+    "SUPPORT.md",
 }
 
 
 def validate_directory_part(part: str, file_path: str) -> bool:
     """Validates that a directory name complies with lowercase conventions."""
-    # Hidden/dot config directories are exempted from naming checks as they
-    # contain standard config payloads. E.g., .github/ for CI workflows and
-    # .well-known/ for RFC-defined protocols (WKD keys, security contacts).
-    if part.startswith("."):
+    # Hidden/dot config directories and their subtrees are exempted from naming checks
+    # as they contain platform standard payloads (e.g. .github/ISSUE_TEMPLATE/,
+    # .well-known/ for RFC-defined protocols, .devcontainer/).
+    if part.startswith(".") or file_path.startswith("."):
         return True
 
     # SSG source directories starting with underscore (e.g. _layouts, _posts)

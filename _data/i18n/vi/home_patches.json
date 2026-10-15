@@ -22,7 +22,7 @@
       "id=practice>Mã nguồn mở cho<br>tương lai của tài chính.</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">Mã nguồn mở cho tương lai của tài chính.<"
     ],
     [
@@ -166,7 +166,7 @@
       "<a class=pill href=\"/vi/bai-viet/index.html\">Đọc nghiên cứu mới nhất</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/vi/lien-he/index.html\">Liên hệ với tôi</a>"
     ],
     [
@@ -350,7 +350,7 @@
       ">Qua những con số.</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">Mã nguồn mở cho tương lai của ngân hàng và tài chính.</h2>"
     ],
     [

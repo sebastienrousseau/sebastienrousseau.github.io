@@ -22,7 +22,7 @@
       "id=practice>金融の未来のための<br>オープンソース。</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">金融の未来のためのオープンソース。<"
     ],
     [
@@ -166,7 +166,7 @@
       "<a class=pill href=\"/ja/kiji/index.html\">最新のリサーチを読む</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/ja/otoiawase/index.html\">お問い合わせ</a>"
     ],
     [
@@ -350,7 +350,7 @@
       ">数字で見る。</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">銀行業と金融の未来のためのオープンソース。</h2>"
     ],
     [

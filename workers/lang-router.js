@@ -37,7 +37,7 @@
  *     registry.json, emitted by scripts/build_worker_assets.py).
  *   - Locale-redirect telemetry goes to Workers Analytics Engine via the
  *     `AE` binding when present. Never to KV — see banned anti-patterns in
- *     project-docs/adr/0001-kv-free-tier-policy.md.
+ *     docs/adr/0001-kv-free-tier-policy.md.
  *
  * Deploy: Cloudflare dashboard → Workers & Pages → create application →
  * paste this file → routes:
@@ -265,7 +265,7 @@ export function isPageNavigation(pathname) {
 // WriteCoalescer Durable Object — re-exported so the COALESCER binding
 // declared in wrangler.toml resolves to this script. No caller wired yet;
 // the export is the contract the DO runtime needs to find the class.
-// See project-docs/adr/0001-kv-free-tier-policy.md §2.3.
+// See docs/adr/0001-kv-free-tier-policy.md §2.3.
 export { WriteCoalescer } from './write-coalescer.js';
 
 // ActivityPub routes (webfinger / actor / inbox / outbox) live in a
@@ -331,7 +331,7 @@ export function trySlugRedirects(url) {
  * blocks the response. No-op when env.AE or ctx.waitUntil is missing
  * (tests, local dev, unconfigured Worker). Per Free-tier policy this
  * REPLACES any KV-based pageview counter — see
- * project-docs/adr/0001-kv-free-tier-policy.md.
+ * docs/adr/0001-kv-free-tier-policy.md.
  */
 export function recordRedirect(request, env, ctx, fromLang, toLang) {
   if (!env || !env.AE || typeof env.AE.writeDataPoint !== 'function') return;

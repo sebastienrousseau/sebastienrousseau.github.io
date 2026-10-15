@@ -21,7 +21,7 @@
       "id=practice>Open source<br>நிதியின் எதிர்காலத்திற்காக.</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">நிதியின் எதிர்காலத்திற்கான Open source.<"
     ],
     [
@@ -165,7 +165,7 @@
       "<a class=pill href=\"/ta/articles/index.html\">சமீபத்திய ஆராய்ச்சியைப் படிக்கவும்</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/ta/contact/index.html\">தொடர்பு கொள்ளுங்கள்</a>"
     ],
     [
@@ -349,7 +349,7 @@
       ">எண்களில்.</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">வங்கியியல் மற்றும் நிதியின் எதிர்காலத்திற்கான Open source.</h2>"
     ],
     [

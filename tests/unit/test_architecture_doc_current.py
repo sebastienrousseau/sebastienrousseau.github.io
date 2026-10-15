@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
 """Guard: every generator/postbuild script `build.sh` runs must be documented
-in `project-docs/architecture.md` — improvement-plan-2026 Phase 5.4.
+in `docs/architecture.md`: improvement-plan-2026 Phase 5.4.
 
 The architecture doc had drifted (it described "seven build stages" while
 `build.sh` actually runs nineteen generator/postbuild scripts). This test
@@ -21,7 +21,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 BUILD_SH = ROOT / "build.sh"
-ARCH_DOC = ROOT / "project-docs" / "architecture.md"
+ARCH_DOC = ROOT / "docs" / "architecture.md"
 
 _INVOCATION = re.compile(r"python3 scripts/(\S+\.py)")
 
@@ -52,5 +52,5 @@ def test_every_build_script_is_documented() -> None:
     assert not missing, (
         "architecture.md is missing build-pipeline scripts (Phase 5.4): "
         + ", ".join(missing)
-        + ". Document each in project-docs/architecture.md."
+        + ". Document each in docs/architecture.md."
     )

@@ -22,7 +22,7 @@
       "id=practice>面向金融未來的<br>開源。</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">面向金融未來的開源。<"
     ],
     [
@@ -166,7 +166,7 @@
       "<a class=pill href=\"/zh-hant/wenzhang-tw/index.html\">閱讀最新研究</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/zh-hant/lianxi-tw/index.html\">聯絡我</a>"
     ],
     [
@@ -350,7 +350,7 @@
       ">用數字說話。</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">面向銀行業與金融未來的開源。</h2>"
     ],
     [

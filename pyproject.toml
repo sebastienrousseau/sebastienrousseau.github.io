@@ -1,10 +1,10 @@
 [project]
-# This repo isn't a published Python package — it's a static site build
+# This repo isn't a published Python package: it's a static site build
 # pipeline whose scripts/ directory happens to be Python. pyproject.toml
 # exists so ruff + pytest + uv pick up the same configuration in CI and
 # locally, not for distribution metadata.
 name = "sebastienrousseau-com-build"
-version = "1.2.0"
+version = "1.2.1"
 description = "Build + validate pipeline for sebastienrousseau.com"
 requires-python = ">=3.11"
 
@@ -23,7 +23,7 @@ extend-exclude = [
 # omissions explained inline.
 select = [
     "E",      # pycodestyle errors
-    "F",      # pyflakes (unused imports, undefined names — real bugs)
+    "F",      # pyflakes (unused imports, undefined names: real bugs)
     "I",      # isort (import ordering)
     "B",      # flake8-bugbear (likely-bugs)
     "UP",     # pyupgrade (modern syntax)
@@ -35,12 +35,12 @@ select = [
     "RET",    # flake8-return
 ]
 ignore = [
-    "E501",   # line-length — keep loose; long URL/SQL lines are normal
+    "E501",   # line-length: keep loose; long URL/SQL lines are normal
     "S101",   # assert allowed in tests
     "S314",   # ET.parse on our own controlled XML is fine
     "S310",   # urllib.urlopen for the link-audit tool is the point
-    "RET504", # unnecessary assignment before return — sometimes clearer
-    "RUF013", # implicit Optional — handled by mypy where it matters
+    "RET504", # unnecessary assignment before return: sometimes clearer
+    "RUF013", # implicit Optional: handled by mypy where it matters
     "E402",   # `import sys` is intentionally placed below `sys.path.insert()`
               # in scripts that import shared modules from scripts/_frontmatter.py
     "RUF001", # `›`, `–` etc. in user-facing strings is intentional typography
@@ -53,7 +53,7 @@ ignore = [
 # S311 in tests: a *seeded* random.Random is how a test pins a picker's
 # choice so the assertion is deterministic. That is the opposite of the
 # weak-randomness risk S311 exists to catch, and it never reaches security
-# code — the picker chooses a banner image.
+# code: the picker chooses a banner image.
 "scripts/*"      = ["S603", "S607"]
 "tests/*"        = ["S101", "S603", "S607", "PLR2004", "S311"]
 
@@ -66,7 +66,7 @@ addopts = "-ra --tb=short"
 pythonpath = ["scripts"]
 
 [tool.mypy]
-# Real type-checking — see improvement-plan-2026.md Phase 1.2. The strict
+# Real type-checking: see improvement-plan-2026.md Phase 1.2. The strict
 # settings below apply to whatever is passed to mypy; the GATE (which dirs
 # must stay green) is curated in scripts/typecheck.sh, ratcheting outward as
 # modules are cleaned. `check_untyped_defs` is the switch that makes mypy
@@ -106,14 +106,14 @@ skip_empty = true
 # Structural boilerplate, excluded rather than tested. Reaching an
 # `if __name__ == "__main__":` block from inside pytest needs runpy tricks or
 # a subprocess, both of which exercise Python's module loader rather than any
-# logic here — every main() worth running is called directly by
+# logic here: every main() worth running is called directly by
 # tests/unit/test_builder_main_smoke.py instead.
 #
 # `exclude_also` ADDS to coverage's defaults (unlike `exclude_lines`, which
 # replaces them), so `# pragma: no cover` keeps working alongside this.
 #
 # This lives in pyproject.toml, not .coveragerc: that file is gitignored, so
-# it never reaches CI and any rule written there would apply locally only —
+# it never reaches CI and any rule written there would apply locally only -
 # which is exactly how a local measurement drifts from the gate.
 exclude_also = [
     '^if __name__ == .__main__.:$',

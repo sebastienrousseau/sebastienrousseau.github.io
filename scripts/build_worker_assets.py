@@ -10,12 +10,12 @@ limit, anything that can be computed at deploy time goes into the Worker's
 no KV touch and no Worker compute beyond a single fetch.
 
 Currently emitted:
-  - lang-registry.json  — active locale codes the lang-router routes to.
+  - lang-registry.json: active locale codes the lang-router routes to.
 
 Adding a new asset:
   1. Add a builder function below.
   2. Call it from ``main()``.
-  3. Update ``project-docs/adr/0001-kv-free-tier-policy.md`` if the new
+  3. Update ``docs/adr/0001-kv-free-tier-policy.md`` if the new
      asset replaces a runtime KV read.
 
 Run from repo root: ``python3 scripts/build_worker_assets.py``.

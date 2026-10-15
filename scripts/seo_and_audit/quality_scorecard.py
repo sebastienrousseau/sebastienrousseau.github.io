@@ -425,7 +425,7 @@ def measure_ops(cat: Category) -> None:
                 bounded = sum(1 for j in jobs.values() if j.get("timeout-minutes"))
                 cat.metrics[3].value = round(100 * bounded / len(jobs), 1)
                 cat.metrics[3].detail = f"{bounded}/{len(jobs)} CI jobs bounded"
-    adr = ROOT / "project-docs" / "adr"
+    adr = ROOT / "docs" / "adr"
     if adr.is_dir():
         cat.metrics[4].value = len(list(adr.glob("*.md")))
 
@@ -681,7 +681,7 @@ def rubric() -> list[Category]:
                 Metric(
                     "adrs",
                     "architecture decision records",
-                    "project-docs/adr/",
+                    "docs/adr/",
                     band([(12, 10), (8, 9), (5, 7), (2, 5)]),
                 ),
             ],

@@ -21,7 +21,7 @@
       "id=practice>متن‌باز برای<br>آیندهٔ مالیه.</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">متن‌باز برای آیندهٔ مالیه.<"
     ],
     [
@@ -165,7 +165,7 @@
       "<a class=pill href=\"/fa/articles/index.html\">خواندن پژوهش‌های اخیر</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/fa/contact/index.html\">تماس با من</a>"
     ],
     [
@@ -349,7 +349,7 @@
       ">به روایت اعداد.</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">متن‌باز برای آیندهٔ بانکداری و مالیه.</h2>"
     ],
     [

@@ -22,7 +22,7 @@
       "id=practice>Öppen källkod para el<br>futuro de las finanzas.</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">Öppen källkod para el futuro de las finanzas.<"
     ],
     [
@@ -166,7 +166,7 @@
       "<a class=pill href=\"/sv/artiklar/index.html\">Läs senaste forskningen</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/sv/kontakt/index.html\">Ta kontakt</a>"
     ],
     [
@@ -350,7 +350,7 @@
       ">I siffror.</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">Öppen källkod för framtidens bankverksamhet och finans.</h2>"
     ],
     [

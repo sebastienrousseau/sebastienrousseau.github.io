@@ -7,7 +7,7 @@
  * window. The canonical 2026 primitive for staying under the 1,000
  * writes/day Free-tier budget when a feature needs runtime mutation.
  *
- * Policy: project-docs/adr/0001-kv-free-tier-policy.md
+ * Policy: docs/adr/0001-kv-free-tier-policy.md
  *
  * Design:
  *   1. Writers POST { key, value } to the DO via fetch.

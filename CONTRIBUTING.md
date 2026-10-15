@@ -11,7 +11,7 @@ conventions a change has to satisfy before it can merge.
 ## Toolchain
 
 Tool versions are pinned so local builds match CI (see
-[`project-docs/adr/0002-pin-build-toolchains.md`](project-docs/adr/0002-pin-build-toolchains.md)).
+[`docs/adr/0002-pin-build-toolchains.md`](docs/adr/0002-pin-build-toolchains.md)).
 Use [`mise`](https://mise.jdx.dev/) to install them:
 
 ```bash
@@ -22,7 +22,7 @@ pip install -r requirements-dev.txt
 Do not upgrade a pinned toolchain in a feature PR. The `ssg` version in
 particular is load-bearing for every page; changing it is a dedicated,
 separately-validated migration (see
-[`project-docs/ssg-fixes-and-native-migration-spec.md`](project-docs/ssg-fixes-and-native-migration-spec.md)).
+[`docs/ssg-fixes-and-native-migration-spec.md`](docs/ssg-fixes-and-native-migration-spec.md)).
 
 ## Repository layout
 
@@ -35,12 +35,12 @@ separately-validated migration (see
 | `scripts/postbuild/` | Postbuild passes over `public/` (SEO, CSP, citations, enrich, …). |
 | `workers/` | Cloudflare Workers (lang router, CSP header). |
 | `tests/` | 1,175+ tests: `unit/`, `validation/` (18 build gates), smoke. |
-| `project-docs/` | Architecture, ADRs, specs, plans. |
+| `docs/` | Architecture, ADRs, specs, plans. |
 
 ## The build model — read this before editing
 
 The build is **copy-based and source-mutation-safe**
-([`project-docs/adr/0003-build-copy-pipeline.md`](project-docs/adr/0003-build-copy-pipeline.md)).
+([`docs/adr/0003-build-copy-pipeline.md`](docs/adr/0003-build-copy-pipeline.md)).
 `build.sh` copies `_posts/` into `_posts_build/`, runs `ssg` + the generators +
 postbuild against the **copy**, and validates `public/`. Your committed source
 is never mutated by a normal build.
@@ -64,12 +64,12 @@ The pinned `ssg` 0.0.x emits some known-benign local warnings (YAML
 "double-quoted continuation", lang-leakage) that do not reproduce in CI. When a
 local build disagrees with CI, **trust CI** — it is the source of truth for
 merge readiness. See
-[`project-docs/ci.md`](project-docs/ci.md).
+[`docs/ci.md`](docs/ci.md).
 
 ## Publishing an article
 
 The daily flow is documented in
-[`project-docs/daily-publishing.md`](project-docs/daily-publishing.md) and
+[`docs/daily-publishing.md`](docs/daily-publishing.md) and
 automated by the `publish-today` command: promote the draft, pass the editorial
 gate (`scripts/editorial/check_voice.py`), pick a banner, scaffold + translate
 27 locale stubs, refresh listings + feeds, build, and open a `feat/<slug>` PR.
@@ -81,7 +81,7 @@ gate (`scripts/editorial/check_voice.py`), pick a banner, scaffold + translate
   GPG-signed **and signed off** (`git commit -S -s`). Content commits use
   `feat(content): <date> — <title>`. See [Sign-off (DCO)](#sign-off-dco).
 - **Never** commit `public/` or `docs/` build output — CI builds and deploys
-  `public/` fresh ([`project-docs/adr/0007-docs-to-public-deploy.md`](project-docs/adr/0007-docs-to-public-deploy.md)).
+  `public/` fresh ([`docs/adr/0007-docs-to-public-deploy.md`](docs/adr/0007-docs-to-public-deploy.md)).
 - **Never** add `ANTHROPIC_API_KEY` or other secrets to CI, env files, or
   workflows.
 - **Never** invent statistics or sources in content.
@@ -164,7 +164,7 @@ Every PR runs the full gate set; all are required:
   (i18n leakage, hreflang, CSP, RTL, sitemap, news-sitemap, JSON-LD, canonical,
   meta-description).
 - **pa11y** ×4 shards at WCAG2AAA
-  ([`project-docs/adr/0008-pa11y-sharding-and-cache.md`](project-docs/adr/0008-pa11y-sharding-and-cache.md)).
+  ([`docs/adr/0008-pa11y-sharding-and-cache.md`](docs/adr/0008-pa11y-sharding-and-cache.md)).
 - **Lighthouse** — performance, accessibility, best-practices, SEO all gated.
 - **CodeQL + OpenSSF Scorecard.**
 
@@ -174,5 +174,5 @@ Fix the root cause of a gate failure; never skip a gate.
 
 Report vulnerabilities per [`SECURITY.md`](SECURITY.md). The security posture —
 hash-strict CSP, SRI, sigstore-signed builds, SBOMs, and the scanning suite — is
-described in [`project-docs/security.md`](project-docs/security.md) and
-[`project-docs/threat-model.md`](project-docs/threat-model.md).
+described in [`docs/security.md`](docs/security.md) and
+[`docs/threat-model.md`](docs/threat-model.md).

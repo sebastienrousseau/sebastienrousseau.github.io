@@ -97,8 +97,8 @@
     "2026-06-16-ai-aware-dotfiles-secure-reproducible-workstation-2026": "2026-06-16-mi-tudatos-dotfiles-2026-ban-biztonsagos",
     "2026-06-17-economist-commercialising-quantum-summit-2026": "2026-06-17-kubitektol-profitig-strategiai-tanulsagok-economist-5",
     "2026-06-18-noyalib-safe-yaml-rust-ai-mcp-financial-infrastructure-2026": "2026-06-18-miert-van-szuksege-yaml-nek-biztonsagosabb",
-    "2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026": "2026-06-20-markdown-alakitasa-akadalymentes-seo-kesz-strukturalt",
-    "2026-06-20-http-handle-zero-dependency-edge-ingress-banking-rust-2026": "2026-06-20-http-handle-nagy-teljesitmenyu-fuggosegmentes-peremhalozati",
+    "2026-06-20-html-generator-accessible-seo-structured-markdown-rust-2026": "2026-06-20-http-handle-nagy-teljesitmenyu-fuggosegmentes-peremhalozati",
+    "2026-06-20-http-handle-zero-dependency-edge-ingress-banking-rust-2026": "2026-06-20-markdown-alakitasa-akadalymentes-seo-kesz-strukturalt",
     "2026-06-21-banking-architecture-whitepaper": "2026-06-21-2026-os-banki-architektura-keretrendszer-mukodesi",
     "2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026": "2026-06-22-jelszokezeles-biztonsagossa-tetele-vallalati-bankszektorban-tobbalgoritmusos",
     "2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026": "2026-06-23-pain-001-tol-programozhato-likviditasig-iso",
@@ -126,6 +126,16 @@
     "2026-08-01-eudi-wallet-eidas-2-banks-relying-party-2026": "2026-08-01-tarca-decemberben-indul-bankoknak-ev-mulva",
     "2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026": "2026-08-02-magas-kockazatu-hatarideje-2027-decemberere-csuszott",
     "2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026": "2026-08-03-dora-megkimelte-onoket-nis2-tol-cra",
-    "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-dora-szerinti-kilepesi-tervuket-bearaztak-megterveztek"
+    "2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026": "2026-08-04-dora-szerinti-kilepesi-tervuket-bearaztak-megterveztek",
+    "2026-09-15-two-nuclear-clocks-vienna-and-beijing-haven-t-beaten-atomic-clocks-yet": "2026-09-15-two-nuclear-clocks-built-separately",
+    "2026-09-20-cloudflare-wants-to-issue-its-own-certificates-free-ca-concentration": "2026-09-20-cloudflare-wants-to-issue-its-own",
+    "2026-09-25-when-technology-lands-before-institutions-adapt-mit-ai-committee": "2026-09-25-when-the-technology-lands-before-institution",
+    "2026-09-30-detector-reads-probabilities-instead-of-verdicts-44-benchmarks": "2026-09-30-detector-that-reads-probabilities-instead",
+    "2026-10-05-internal-openai-model-pins-down-exact-decay-rate-cohn-elkies-sphere-packing": "2026-10-05-internal-openai-model-pins-down-the",
+    "2026-10-10-what-a-machine-learning-textbook-s-contents-page-says-about-the-field": "2026-10-10-what-machine-learning-textbook-contents-page",
+    "2026-10-13-humanoid-functional-robotics-manufacturing-automation": "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing",
+    "2026-10-13-moving-past-moores-law-in-memory-compute-edge-robotics": "2026-10-13-moving-past-moore-law-in-memory",
+    "2026-10-13-open-source-physical-ai-lerobot-end-to-end-robotics": "2026-10-13-open-source-physical-ai-how-hugging",
+    "2026-10-13-physical-ai-robotics-workforce-governance-industrial-operations": "2026-10-13-physical-ai-and-workforce-governance-trust"
   }
 }

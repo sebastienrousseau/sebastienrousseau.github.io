@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
-"""Guard for the `make verify` repo-integrity regression suite — Phase 1.
+"""Guard for the `make verify` repo-integrity regression suite: Phase 1.
 
 `make verify` is the single command that must exercise every integrity gate
 before a deploy. If a gate is silently dropped from the recipe the suite would
@@ -44,7 +44,7 @@ def test_verify_target_is_phony() -> None:
 def test_verify_chains_every_gate() -> None:
     text = _makefile_text()
     # Isolate the verify recipe block (from `verify:` to the next top-level target).
-    m = re.search(r"(?ms)^verify:\n(.*?)(?=^\S)", text)
+    m = re.search(r"(?ms)^verify:[^\n]*\n(.*?)(?=^\S)", text)
     assert m, "could not locate the verify recipe body"
     recipe = m.group(1)
     for stage in EXPECTED_STAGES:

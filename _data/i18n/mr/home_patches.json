@@ -21,7 +21,7 @@
       "id=practice>ओपन सोर्स<br>वित्ताच्या भविष्यासाठी.</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">ओपन सोर्स वित्ताच्या भविष्यासाठी.<"
     ],
     [
@@ -165,7 +165,7 @@
       "<a class=pill href=\"/mr/articles/index.html\">अलीकडील संशोधन वाचा</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/mr/contact/index.html\">संपर्क साधा</a>"
     ],
     [
@@ -349,7 +349,7 @@
       ">आकड्यांमध्ये.</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">बँकिंग आणि वित्ताच्या भविष्यासाठी ओपन सोर्स.</h2>"
     ],
     [

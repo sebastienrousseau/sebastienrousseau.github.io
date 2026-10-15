@@ -255,3 +255,24 @@ def test_render_card_escapes_the_title() -> None:
 
 def test_render_card_has_a_default_eyebrow() -> None:
     assert "Banking · Technology" in _card(tags="")
+
+
+def test_is_pillar_post_matches_banking_and_excludes_summit_banners() -> None:
+    assert rh._is_pillar_post(
+        {
+            "tags": "EU Data Act, DORA, banking",
+            "banner": "https://cloudcdn.pro/stocks/images/matheus-natan-3297593.webp",
+        }
+    )
+    assert not rh._is_pillar_post(
+        {
+            "tags": "open-source, ai, agentic-ai",
+            "banner": "https://cloudcdn.pro/stocks/images/pepijn-kooijmans-economist-physical-ai-summit-2026-1200.webp",
+        }
+    )
+    assert not rh._is_pillar_post(
+        {
+            "tags": "banking, ai",
+            "banner": "https://cloudcdn.pro/stocks/images/economist-physical-ai-summit-2026.webp",
+        }
+    )

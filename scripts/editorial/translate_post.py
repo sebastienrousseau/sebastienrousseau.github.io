@@ -62,6 +62,7 @@ STUB_MARKER = "<!-- translation-stub: replace this body in Claude Code -->"
 sys.path.insert(0, str(ROOT / "scripts"))
 import _lang_registry
 from _frontmatter import parse_frontmatter  # canonical shared parser (lib/_frontmatter)
+from _romanise import derive_slug
 
 
 def active_non_en_locales() -> list[str]:
@@ -211,7 +212,8 @@ def scaffold_one(
     if not fm:
         raise SystemExit(f"could not parse frontmatter of {en_slug}")
 
-    target_slug = localized_slug(en_slug, lang_code)
+    date = en_slug[:10]
+    target_slug = f"{date}-{derive_slug(fm.get('title', ''), lang_code, date[:4])}"
     out_path = POSTS / lang_code / f"{target_slug}.md"
     slugs_json = I18N / lang_code / "slugs.json"
 
@@ -258,8 +260,30 @@ def find_stub_locales(en_slug: str) -> list[tuple[str, Path]]:
     carries the stub marker. Used by Claude-Code-driven translation
     passes to know what's still pending."""
     pending: list[tuple[str, Path]] = []
+    en_path = POSTS / f"{en_slug}.md"
+    title = ""
+    if en_path.is_file():
+        fm, _ = parse_frontmatter(en_path.read_text(encoding="utf-8"))
+        title = fm.get("title", "")
+    date = en_slug[:10]
+
     for lang in active_non_en_locales():
-        target_slug = localized_slug(en_slug, lang)
+        target_slug = None
+        slugs_json = I18N / lang / "slugs.json"
+        if slugs_json.is_file():
+            try:
+                data = json.loads(slugs_json.read_text(encoding="utf-8"))
+                target_slug = data.get("articles", {}).get(en_slug)
+            except (json.JSONDecodeError, OSError) as exc:
+                print(
+                    f"warning: failed to read slug map {slugs_json}: {exc}",
+                    file=sys.stderr,
+                )
+        if not target_slug:
+            if title:
+                target_slug = f"{date}-{derive_slug(title, lang, date[:4])}"
+            else:
+                target_slug = localized_slug(en_slug, lang)
         p = POSTS / lang / f"{target_slug}.md"
         if p.is_file() and STUB_MARKER in p.read_text(encoding="utf-8"):
             pending.append((lang, p))

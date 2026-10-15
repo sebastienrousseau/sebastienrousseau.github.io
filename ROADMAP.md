@@ -7,9 +7,9 @@ What this project intends to do, and deliberately not do, over the next year
 section is when it was last revised.
 
 The detailed plans behind these headings live in
-[`project-docs/improvement-plan-2026.md`](project-docs/improvement-plan-2026.md)
+[`docs/improvement-plan-2026.md`](docs/improvement-plan-2026.md)
 and
-[`project-docs/developer-experience-plan-2026.md`](project-docs/developer-experience-plan-2026.md).
+[`docs/developer-experience-plan-2026.md`](docs/developer-experience-plan-2026.md).
 
 *Last revised: 2026-08-30.*
 

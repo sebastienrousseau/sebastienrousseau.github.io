@@ -22,7 +22,7 @@
       "id=practice>Open source для<br>будущего финансов.</h2>"
     ],
     [
-      ">Open source for the future of finance\\.<",
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
       ">Open source для будущего финансов.<"
     ],
     [
@@ -166,7 +166,7 @@
       "<a class=pill href=\"/ru/stati/index.html\">Читать последние исследования</a>"
     ],
     [
-      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
       "<a class=\"pill ghost\" href=\"/ru/kontakty/index.html\">Связаться со мной</a>"
     ],
     [
@@ -350,7 +350,7 @@
       ">В цифрах.</h2>"
     ],
     [
-      ">Open source for the future of banking and finance\\.</h2>",
+      ">(?:Open source for the future of banking and finance\\.|Planning an ISO 20022 or post-quantum migration\\?)</h2>",
       ">Open source для будущего банковского дела и финансов.</h2>"
     ],
     [

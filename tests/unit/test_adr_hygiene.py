@@ -18,7 +18,7 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
-ADR_DIR = Path(__file__).resolve().parents[2] / "project-docs" / "adr"
+ADR_DIR = Path(__file__).resolve().parents[2] / "docs" / "adr"
 
 # 0001 predates the ADR template (it is an implementation plan, not a
 # Context/Decision/Consequences record). Header checks still apply to it.

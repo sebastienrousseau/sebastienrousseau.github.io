@@ -525,20 +525,11 @@ def main() -> int:
     (PUBLIC / "changelog").mkdir(parents=True, exist_ok=True)
     (PUBLIC / "changelog" / "index.html").write_text(page, encoding="utf-8")
 
-    # 2. Homepage "what's new" strip (EN homepage only).
-    home_path = PUBLIC / "index.html"
+    # 2. Homepage "what's new" strip was merged into "From the desk" (#latest)
+    # per the 10/10 homepage restructure so the page no longer renders two
+    # competing article feeds. render_whats_new_section and inject_whats_new
+    # remain available as pure helpers.
     injected = False
-    if home_path.is_file():
-        home = home_path.read_text(encoding="utf-8")
-        section = render_whats_new_section(entries, strings)
-        home, injected = inject_whats_new(home, section)
-        if injected:
-            home_path.write_text(home, encoding="utf-8")
-        else:
-            print(
-                "build_changelog: warning — homepage anchor not found; strip skipped",
-                file=sys.stderr,
-            )
 
     # 3. /status/ + status.json + badge.
     st_title = strings.get("status.title") or "Status"
@@ -558,7 +549,7 @@ def main() -> int:
     print(
         f"build_changelog: {len(entries)} entries, "
         f"{len(group_by_month(entries))} months, {len(prs)} PR link(s); "
-        f"what's-new strip {'injected' if injected else 'skipped'}"
+        f"what's-new strip {'injected' if injected else 'merged-into-desk'}"
     )
     return 0
 

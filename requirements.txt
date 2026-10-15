@@ -13,8 +13,8 @@
 # That reported four phantom CVEs (PyYAML <5.4/<5.1, markdown-it-py <2.2)
 # against versions we have never used. Bump these together with the lock.
 markdown-it-py==4.2.0
-rjsmin==1.2.5
-rcssmin==1.2.2
+rjsmin==1.3.0
+rcssmin==1.3.0
 # Canonical taxonomy (_data/taxonomy.yml) drives build_tags + the per-tag
 # landings, paged listings, RAG corpus, and the editorial check_taxonomy
 # audit. PyYAML is the only YAML parser these generators need.
