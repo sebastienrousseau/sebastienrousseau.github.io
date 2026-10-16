@@ -102,8 +102,31 @@ def _url_names(chunk: list) -> list[str]:
     return [u if isinstance(u, str) else u.get("url", "?") for u in chunk]
 
 
+def _isolate_chunk(cfg: Path, chunk: list, timeout_s: int) -> tuple[dict, list[str], bool]:
+    """Re-run a twice-wedged multi-URL chunk one URL at a time."""
+    base = json.loads(cfg.read_text(encoding="utf-8"))
+    results: dict = {}
+    unchecked: list[str] = []
+    crashed = False
+    per_url_timeout = min(timeout_s, 120)
+    print(f"pa11y: chunk wedged again; isolating {len(chunk)} URL(s) individually")
+    for entry in chunk:
+        _kill_chrome()
+        cfg.write_text(json.dumps({**base, "urls": [entry]}), encoding="utf-8")
+        rc, report = _run_chunk(cfg, per_url_timeout)
+        if rc in TIMED_OUT:
+            unchecked.extend(_url_names([entry]))
+            _kill_chrome()
+        else:
+            crashed = crashed or (not report and rc not in (0, 1, 2))
+            results.update(report.get("results", {}))
+    if unchecked:
+        print(f"pa11y: chunk wedged again — unchecked: {', '.join(unchecked)}")
+    return results, unchecked, crashed
+
+
 def _attempt_chunk(cfg: Path, chunk: list, timeout_s: int) -> tuple[dict, list[str], bool]:
-    """Run one chunk, retrying once if it wedges.
+    """Run one chunk, retrying once if it wedges and isolating URL-by-URL if needed.
 
     Returns (results, unchecked_urls, crashed).
     """
@@ -113,6 +136,8 @@ def _attempt_chunk(cfg: Path, chunk: list, timeout_s: int) -> tuple[dict, list[s
         _kill_chrome()
         rc, report = _run_chunk(cfg, timeout_s)
         if rc in TIMED_OUT:
+            if len(chunk) > 1:
+                return _isolate_chunk(cfg, chunk, timeout_s)
             names = _url_names(chunk)
             print(f"pa11y: chunk wedged again — unchecked: {', '.join(names)}")
             _kill_chrome()

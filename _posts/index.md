@@ -187,6 +187,9 @@ site_software: "Static Site Generator, Rust"
 </div>
 </section>
 <p class="proof-note">Most downloads come from transitive dependencies in CI/CD pipelines and production services across PyPI, crates.io, and npm &middot; <span class="proof-updated">Updated <time datetime="2026-10-15">15 Oct 2026</time>.</span></p>
+<p class="feat-eyebrow">Career</p>
+<h3 id="trusted" class="feat-headline center">Where I've worked.</h3>
+<p class="feat-sub center">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group.</p>
 <div class="brands" aria-label="Organisations across my career">
 <img alt="HSBC logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
 <img alt="PayPal logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/paypal.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />

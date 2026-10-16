@@ -83,7 +83,7 @@ def test_a_wedged_chunk_is_retried_once(tmp_path, monkeypatch):
 
 
 def test_a_chunk_wedged_twice_fails_the_shard_but_keeps_the_rest(tmp_path, monkeypatch, capsys):
-    """The whole point: one stuck chunk must not cost the other results."""
+    """One stuck URL is isolated so every other URL in its chunk and shard still reports."""
 
     def fake(cfg, timeout_s):
         urls = json.loads(cfg.read_text())["urls"]
@@ -96,8 +96,26 @@ def test_a_chunk_wedged_twice_fails_the_shard_but_keeps_the_rest(tmp_path, monke
     out = tmp_path / "out.json"
     assert runner.run(_config(tmp_path, 6), out, chunk_size=3, timeout_s=1) == 1
     report = json.loads(out.read_text())
-    assert report["total"] == 3  # the surviving chunk still reported
-    assert "unchecked" in capsys.readouterr().out
+    assert report["total"] == 5  # the 2 sibling URLs in chunk 0 + 3 in chunk 1 survived
+    assert "unchecked: http://x/0" in capsys.readouterr().out
+
+
+def test_a_chunk_wedged_twice_recovers_when_urls_pass_individually(tmp_path, monkeypatch):
+    """A multi-URL batch that times out twice recovers if each URL passes on its own."""
+
+    def fake(cfg, timeout_s):
+        urls = json.loads(cfg.read_text())["urls"]
+        if len(urls) > 1:
+            return runner.WEDGED, {}
+        return 0, {"results": {u: [] for u in urls}}
+
+    monkeypatch.setattr(runner, "_run_chunk", fake)
+    monkeypatch.setattr(runner, "_kill_chrome", lambda: None)
+    out = tmp_path / "out.json"
+    assert runner.run(_config(tmp_path, 4), out, chunk_size=4, timeout_s=1) == 0
+    report = json.loads(out.read_text())
+    assert report["total"] == 4
+    assert report["passes"] == 4
 
 
 def test_sigkill_is_treated_as_a_wedge(tmp_path, monkeypatch):
