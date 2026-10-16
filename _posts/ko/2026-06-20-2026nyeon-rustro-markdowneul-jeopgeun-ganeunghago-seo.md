@@ -116,7 +116,7 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-2026년, 웹 콘텐츠는 인간 독자만큼이나 AI 검색 크롤러, LLM 기반 검색 엔진, 검색 증강 생성(RAG) 파이프라인에 의해 소비됩니다. 평탄하거나 형식이 잘못된 HTML은 기계의 탐색 가능성을 저해하고, [유럽 접근성 법(EAA)](https://www.accessibility-act.eu/) 및 [미국 ADA Title III](https://www.ada.gov/topics/title-iii/)와 같은 엄격한 글로벌 규정 준수 실패는 이제 명백한 민사 책임입니다. [HTML Generator](https://github.com/sebastienrousseau/html-generator)는 이러한 격차를 해소하기 위해 설계된 고성능 Rust 라이브러리로, 배포 후 패치가 아닌 컴파일러 단계에서 문제를 처리합니다.
+2026년, 웹 콘텐츠는 인간 독자만큼이나 AI 검색 크롤러, LLM 기반 검색 엔진, 검색 증강 생성(RAG) 파이프라인에 의해 소비됩니다. 평탄하거나 형식이 잘못된 HTML은 기계의 탐색 가능성을 저해하고, [유럽 접근성 법(EAA)](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) 및 [미국 ADA Title III](https://www.ada.gov/topics/title-iii/)와 같은 엄격한 글로벌 규정 준수 실패는 이제 명백한 민사 책임입니다. [HTML Generator](https://github.com/sebastienrousseau/html-generator)는 이러한 격차를 해소하기 위해 설계된 고성능 Rust 라이브러리로, 배포 후 패치가 아닌 컴파일러 단계에서 문제를 처리합니다.
 
 ## 빠른 답변
 
@@ -124,7 +124,7 @@ site_software: "Static Site Generator, Rust"
 
 ## 경영진 요약
 
-Markdown 렌더링은 단순해 보입니다. 그러나 퍼블리싱 수준의 HTML은 규정 준수 문제입니다. 2026년 6월 현재, 모든 기업 접점 — 투자자 관계 포털, 규제 문서, 고객 문서, API 레퍼런스, 마케팅 자산 — 은 인간과 기계 모두에 의해 파싱됩니다. 모든 페이지에서 두 가지 압력이 충돌합니다: [EAA](https://www.accessibility-act.eu/)와 [ADA Title III](https://www.ada.gov/topics/title-iii/)는 접근성을 이사회 수준의 법적 노출 위험으로 만들고, AI 수집과 RAG 파이프라인은 구조화된 기계 가독성 출력에 대한 보상을 제공합니다. 표준 Markdown 라이브러리는 두 가지 요건을 모두 충족하지 못하는 평탄한 HTML을 생성합니다. HTML Generator는 문서 생성을 컴파일 게이트 파이프라인으로 처리합니다: WCAG 유효성 검사는 빌드 오류이고, JSON-LD는 수동 스탬핑 없이 YAML 프론트 매터에서 생성되며, MathML과 Mermaid는 접근 가능하게 렌더링되고, 전체 엔진은 WebAssembly 대상으로 제공되어 신뢰할 수 없는 문서 파싱이 호스트와 격리된 샌드박스 내에서 유지됩니다.
+Markdown 렌더링은 단순해 보입니다. 그러나 퍼블리싱 수준의 HTML은 규정 준수 문제입니다. 2026년 6월 현재, 모든 기업 접점 — 투자자 관계 포털, 규제 문서, 고객 문서, API 레퍼런스, 마케팅 자산 — 은 인간과 기계 모두에 의해 파싱됩니다. 모든 페이지에서 두 가지 압력이 충돌합니다: [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en)와 [ADA Title III](https://www.ada.gov/topics/title-iii/)는 접근성을 이사회 수준의 법적 노출 위험으로 만들고, AI 수집과 RAG 파이프라인은 구조화된 기계 가독성 출력에 대한 보상을 제공합니다. 표준 Markdown 라이브러리는 두 가지 요건을 모두 충족하지 못하는 평탄한 HTML을 생성합니다. HTML Generator는 문서 생성을 컴파일 게이트 파이프라인으로 처리합니다: WCAG 유효성 검사는 빌드 오류이고, JSON-LD는 수동 스탬핑 없이 YAML 프론트 매터에서 생성되며, MathML과 Mermaid는 접근 가능하게 렌더링되고, 전체 엔진은 WebAssembly 대상으로 제공되어 신뢰할 수 없는 문서 파싱이 호스트와 격리된 샌드박스 내에서 유지됩니다.
 
 ## 핵심 요점
 
@@ -142,7 +142,7 @@ Markdown 렌더링은 단순해 보입니다. 그러나 퍼블리싱 수준의 H
 
 첫 번째는 **AI 수집 및 탐색 가능성**입니다. 콘텐츠는 점점 더 대규모 언어 모델과 검색 증강 생성(RAG) 파이프라인에 의해 처리되고 있습니다. 평탄하거나 형식이 잘못된 HTML은 크롤러 파싱을 혼란스럽게 하여 기업 리서치 및 문서가 현대 검색 패러다임 — [Google Search Generative Experience](https://blog.google/products/search/generative-ai-search/), [ChatGPT](https://chat.openai.com/) 브라우징, 엔터프라이즈 RAG 에이전트를 포함한 — 에서 보이지 않게 만듭니다.
 
-두 번째는 **엄격한 글로벌 접근성 법률**입니다. [유럽 접근성 법(EAA)](https://www.accessibility-act.eu/) (2025년 6월부터 완전 적용)과 [미국 ADA Title III](https://www.ada.gov/topics/title-iii/) 하에서, 기업 퍼블리싱 플랫폼은 완전한 디지털 접근성을 보장해야 합니다. [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) 미충족은 더 이상 엔지니어링 관리 소홀이 아닙니다; 수백만 달러의 합의금을 초래한 민사 및 규제 책임입니다.
+두 번째는 **엄격한 글로벌 접근성 법률**입니다. [유럽 접근성 법(EAA)](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) (2025년 6월부터 완전 적용)과 [미국 ADA Title III](https://www.ada.gov/topics/title-iii/) 하에서, 기업 퍼블리싱 플랫폼은 완전한 디지털 접근성을 보장해야 합니다. [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) 미충족은 더 이상 엔지니어링 관리 소홀이 아닙니다; 수백만 달러의 합의금을 초래한 민사 및 규제 책임입니다.
 
 [HTML Generator](https://github.com/sebastienrousseau/html-generator)는 두 가지 압력을 직접 해결합니다. Markdown을 접근 가능하고 SEO 최적화된 구조적 HTML로 변환하도록 설계된 스레드 안전 Rust 라이브러리입니다. 문서 생성을 컴파일러 게이트 파이프라인으로 처리함으로써, 엔진은 높은 **회복탄력성 수익률(RoR)** 을 제공합니다 — 접근성 소송으로부터 재무제표를 보호하면서 AI 탐색을 위한 기계 가독성을 극대화합니다.
 
@@ -168,7 +168,7 @@ Markdown 렌더링은 단순해 보입니다. 그러나 퍼블리싱 수준의 H
 
 | 신호 | 지표 / 운영 벤치마크 | EAA / DORA / W3C 참조 | 기술 구현 |
 | ---- | ---- | ---- | ---- |
-| **접근성 준수** | 컴파일된 페이지의 100%가 WCAG 2.1 AA 규칙에 대해 유효성 검사됨. | [EAA](https://www.accessibility-act.eu/) 및 [ADA Title III](https://www.ada.gov/topics/title-iii/) | 이미지 alt 태그 및 시맨틱 랜드마크를 평가하는 빌드 시점 HTML 파서. |
+| **접근성 준수** | 컴파일된 페이지의 100%가 WCAG 2.1 AA 규칙에 대해 유효성 검사됨. | [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) 및 [ADA Title III](https://www.ada.gov/topics/title-iii/) | 이미지 alt 태그 및 시맨틱 랜드마크를 평가하는 빌드 시점 HTML 파서. |
 | **WASM 실행 샌드박스** | 신뢰할 수 없는 Markdown 입력의 100%가 격리된 WebAssembly 런타임에서 컴파일됨. | [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554) (ICT 보안) | 호스트 서버로부터 파싱 환경 격리. |
 | **구조화 메타데이터 적용 범위** | 게시된 아티클의 100%에 유효한 스키마 준수 JSON-LD 헤더가 주입됨. | [Schema.org](https://schema.org/) 사양 | 자동 프론트 매터 파싱 및 JSON-LD 객체 변환. |
 | **컴파일 처리량** | 일반 하드웨어에서 초당 10,000 페이지 이상의 목표. | 회복탄력성 수익률(RoR) | 고도로 병렬화된 Rust AST 컴파일러. |
@@ -276,7 +276,7 @@ G-SIB는 여러 관할권에 걸쳐 수천 편의 리서치 논문, 규제 공�
 - World Wide Web Consortium (W3C), 2024. [웹 콘텐츠 접근성 지침(WCAG) 2.1 ⧉](https://www.w3.org/TR/WCAG21/ "Web Content Accessibility Guidelines 2.1").
 - Schema.org, 2026. [Schema.org 구조화 데이터 사양 ⧉](https://schema.org/ "Schema.org structured-data specifications").
 - European Parliament and Council of the European Union, 2022. [금융 부문의 디지털 운영 회복탄력성에 관한 규정(EU) 2022/2554 (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA Regulation").
-- European Commission, 2025. [유럽 접근성 법 ⧉](https://www.accessibility-act.eu/ "European Accessibility Act").
+- European Commission, 2025. [유럽 접근성 법 ⧉](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en "European Accessibility Act").
 - US Department of Justice, 2024. [ADA Title III ⧉](https://www.ada.gov/topics/title-iii/ "ADA Title III").
 - WebAssembly Community Group, 2026. [WebAssembly 사양 ⧉](https://webassembly.org/ "WebAssembly").
 - GitHub, 2026. [HTML Generator 저장소 ⧉](https://github.com/sebastienrousseau/html-generator "HTML Generator open-source repository").

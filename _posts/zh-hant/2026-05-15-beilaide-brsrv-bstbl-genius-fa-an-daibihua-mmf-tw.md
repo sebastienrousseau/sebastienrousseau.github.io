@@ -57,11 +57,11 @@ OCC 2026 年 3 月的 [擬議規則 ⧉](https://www.nixonpeabody.com/insights/a
 
 第二份檔案在操作上更有趣，在架構上更重要。BSTBL——貝萊德現有 Select Treasury Based Liquidity Fund 的鏈上份額類別——不是新基金。它是層疊到已管理約 60-70 億美元資產的貨幣市場產品上的新份額類別，2025 年 10 月 [被改裝為 GENIUS 合規配置 ⧉](https://www.theblock.co/post/399812/blackrock-urges-occ-to-drop-tokenized-reserve-cap-idea-expand-eligible-assets-in-genius-act-comment-letter)，截止下午 5 點東部時間交易，並具有國債主導授權，現在作為 ERC-20 代幣擴充套件到以太坊上。
 
-該份額類別的過戶代理是 [BNY Mellon Investment Servicing ⧉](https://www.mexc.com/news/1080472)，它將使用 ERC-20 標準在以太坊上維護官方股東記錄。與 BRSRV 的實質區別是鏈（以太坊，公共，ERC-20 代幣作為份額表示）和過戶代理（BNY 而非 Securitize）——以及這是首次在貝萊德現有貨幣市場基金上加裝公開以太坊份額類別。
+該份額類別的過戶代理是 [BNY Mellon Investment Servicing ⧉](https://web.archive.org/web/20260511120731/https://www.mexc.com/news/1080472)，它將使用 ERC-20 標準在以太坊上維護官方股東記錄。與 BRSRV 的實質區別是鏈（以太坊，公共，ERC-20 代幣作為份額表示）和過戶代理（BNY 而非 Securitize）——以及這是首次在貝萊德現有貨幣市場基金上加裝公開以太坊份額類別。
 
 那最後細節值得駐足。貝萊德之前的代幣化產品——最著名的 BUIDL——結構為具有鏈上原生架構的新基金。BSTBL 採取不同且可能更具影響的方法：透過新增新份額類別將現有的、大型的、傳統的貨幣市場產品代幣化，而不是構建並行結構。意義是任何現有貝萊德 MMF 原則上都可以遵循相同模式。任何現有競爭對手 MMF 也可以——Vanguard 的、Fidelity 的、摩根大通的、State Street 的。
 
-行業背景：代幣化美國國債已從約 20 億美元增長到 [2026 年 5 月的 140 億美元 ⧉](https://www.mexc.com/news/1080472)，貝萊德的 BUIDL 約佔 40% 市場份額，富蘭克林鄧普頓的 BENJI/FOBXX 為 8.5 億美元，Ondo Finance 的 OUSG 和 USDY 產品綜合居第二。下一波 500-1000 億美元可能已經透過 BSTBL 等檔案在運動中。
+行業背景：代幣化美國國債已從約 20 億美元增長到 [2026 年 5 月的 140 億美元 ⧉](https://web.archive.org/web/20260511120731/https://www.mexc.com/news/1080472)，貝萊德的 BUIDL 約佔 40% 市場份額，富蘭克林鄧普頓的 BENJI/FOBXX 為 8.5 億美元，Ondo Finance 的 OUSG 和 USDY 產品綜合居第二。下一波 500-1000 億美元可能已經透過 BSTBL 等檔案在運動中。
 
 ## 支付穩定幣 vs 代幣化貨幣市場基金：重要的區別
 
@@ -156,5 +156,5 @@ OCC 2026 年 3 月的提案漂浮了對穩定幣發行方儲備多少可以代�
 - Nixon Peabody, (2026). [GENIUS 法案下支付穩定幣的擬議 OCC 法規 ⧉](https://www.nixonpeabody.com/insights/alerts/2026/04/02/proposed-occ-regulations-for-payment-stablecoins-under-the-genius-act)。Nixon Peabody LLP.
 - Morgan Lewis, (2026). [穩定幣監管：GENIUS 法案下的 OCC 提案 ⧉](https://www.morganlewis.com/pubs/2026/04/occs-genius-act-proposal-what-prospective-issuers-need-to-know)。Morgan Lewis.
 - 國會研究服務, (2026). [穩定幣收益辯論 ⧉](https://www.congress.gov/crs-product/IF13174)。Congress.gov.
-- MEXC News, (2026). [貝萊德為兩個新代幣化基金向 SEC 提交申請 ⧉](https://www.mexc.com/news/1080472)。MEXC News.
+- MEXC News, (2026). [貝萊德為兩個新代幣化基金向 SEC 提交申請 ⧉](https://web.archive.org/web/20260511120731/https://www.mexc.com/news/1080472)。MEXC News.
 - Stellar 基金會, (2026). [富蘭克林鄧普頓 BENJI 五週年 ⧉](https://stellar.org/press/franklin-templeton-stellar-development-foundation-mark-five-years-of-benji-the-first-u-s-registered-tokenized-money-market-fund)。Stellar Development Foundation.

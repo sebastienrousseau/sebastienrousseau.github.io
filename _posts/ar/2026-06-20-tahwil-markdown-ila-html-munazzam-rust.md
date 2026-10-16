@@ -116,7 +116,7 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-في عام 2026، يستهلك المحتوى على الويب زواحف البحث المدعومة بالذكاء الاصطناعي، ومحركات البحث المبنية على النماذج اللغوية الكبيرة (LLM)، وخطوط أنابيب توليد المعزَّز بالاسترجاع (RAG) بقدر لا يقلّ عمّا يستهلكه القرّاء البشر. يُضعف HTML المسطَّح أو المشوَّه إمكانية الاكتشاف الآلي، فيما بات التقصير في الامتثال للوائح العالمية الصارمة كـ[قانون إمكانية الوصول الأوروبي (EAA)](https://www.accessibility-act.eu/) و[ADA Title III الأمريكي](https://www.ada.gov/topics/title-iii/) مسؤولية مدنية لا لبس فيها. [HTML Generator](https://github.com/sebastienrousseau/html-generator) مكتبة Rust عالية الأداء مُصمَّمة لسد هذه الثغرات — على مستوى المُحرِّل، لا من خلال تصحيحات ما بعد النشر.
+في عام 2026، يستهلك المحتوى على الويب زواحف البحث المدعومة بالذكاء الاصطناعي، ومحركات البحث المبنية على النماذج اللغوية الكبيرة (LLM)، وخطوط أنابيب توليد المعزَّز بالاسترجاع (RAG) بقدر لا يقلّ عمّا يستهلكه القرّاء البشر. يُضعف HTML المسطَّح أو المشوَّه إمكانية الاكتشاف الآلي، فيما بات التقصير في الامتثال للوائح العالمية الصارمة كـ[قانون إمكانية الوصول الأوروبي (EAA)](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) و[ADA Title III الأمريكي](https://www.ada.gov/topics/title-iii/) مسؤولية مدنية لا لبس فيها. [HTML Generator](https://github.com/sebastienrousseau/html-generator) مكتبة Rust عالية الأداء مُصمَّمة لسد هذه الثغرات — على مستوى المُحرِّل، لا من خلال تصحيحات ما بعد النشر.
 
 ## الإجابة السريعة
 
@@ -124,7 +124,7 @@ site_software: "Static Site Generator, Rust"
 
 ## الملخص التنفيذي
 
-تحويل Markdown يبدو بسيطاً. إنتاج HTML بجودة النشر مسألة امتثال. في يونيو 2026، تُحلِّل كل نقطة تواصل مؤسسية — بوابات علاقات المستثمرين، والإيداعات التنظيمية، وتوثيق العملاء، ومراجع واجهات برمجية API، وأصول التسويق — من قِبَل البشر والآلات على حدٍّ سواء. ضغطان يتصادمان على كل صفحة: يجعل [EAA](https://www.accessibility-act.eu/) و[ADA Title III](https://www.ada.gov/topics/title-iii/) إمكانيةَ الوصول تعرُّضاً قانونياً على مستوى مجلس الإدارة، فيما تكافئ خطوط أنابيب استيعاب الذكاء الاصطناعي وRAG المخرجاتِ المنظَّمة وقابلة القراءة آلياً. تُنتج مكتبات Markdown القياسية HTML مسطَّحاً يفشل في كلا البوّابتين. يتعامل HTML Generator مع توليد المستندات بوصفه خطَّ أنابيب مُحكَم البناء: التحقق من صحة WCAG خطأ في البناء، وJSON-LD مستخرَج من front matter بتنسيق YAML دون ختم يدوي، وMathML وMermaid مُصيَّران بشكل شامل، والمحرّك بأكمله يُشحَن كهدف WebAssembly حتى يظل تحليل المستندات غير الموثوقة معزولاً عن المضيف.
+تحويل Markdown يبدو بسيطاً. إنتاج HTML بجودة النشر مسألة امتثال. في يونيو 2026، تُحلِّل كل نقطة تواصل مؤسسية — بوابات علاقات المستثمرين، والإيداعات التنظيمية، وتوثيق العملاء، ومراجع واجهات برمجية API، وأصول التسويق — من قِبَل البشر والآلات على حدٍّ سواء. ضغطان يتصادمان على كل صفحة: يجعل [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) و[ADA Title III](https://www.ada.gov/topics/title-iii/) إمكانيةَ الوصول تعرُّضاً قانونياً على مستوى مجلس الإدارة، فيما تكافئ خطوط أنابيب استيعاب الذكاء الاصطناعي وRAG المخرجاتِ المنظَّمة وقابلة القراءة آلياً. تُنتج مكتبات Markdown القياسية HTML مسطَّحاً يفشل في كلا البوّابتين. يتعامل HTML Generator مع توليد المستندات بوصفه خطَّ أنابيب مُحكَم البناء: التحقق من صحة WCAG خطأ في البناء، وJSON-LD مستخرَج من front matter بتنسيق YAML دون ختم يدوي، وMathML وMermaid مُصيَّران بشكل شامل، والمحرّك بأكمله يُشحَن كهدف WebAssembly حتى يظل تحليل المستندات غير الموثوقة معزولاً عن المضيف.
 
 ## النقاط الرئيسية
 
@@ -142,7 +142,7 @@ site_software: "Static Site Generator, Rust"
 
 الأول هو **استيعاب الذكاء الاصطناعي وقابلية الاكتشاف**. يتزايد معالجة المحتوى من قِبَل النماذج اللغوية الكبيرة وخطوط أنابيب توليد المعزَّز بالاسترجاع. يُربِك HTML المسطَّح أو المشوَّه تحليل الزواحف، مما يجعل أبحاث الشركات ووثائقها غير مرئية لنماذج البحث الحديثة — بما فيها [Google Search Generative Experience](https://blog.google/products/search/generative-ai-search/) وتصفُّح [ChatGPT](https://chat.openai.com/) ووكلاء RAG المؤسسيين.
 
-الثاني هو **قانون إمكانية الوصول العالمي الصارم**. بموجب [قانون إمكانية الوصول الأوروبي](https://www.accessibility-act.eu/) (الساري بالكامل منذ يونيو 2025) و[ADA Title III الأمريكي](https://www.ada.gov/topics/title-iii/)، يجب أن تضمن منصات النشر المؤسسي إمكانية وصول رقمية كاملة. لم يعد الإخفاق في استيفاء معيار [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) إغفالاً هندسياً؛ بل هو مسؤولية مدنية وتنظيمية أفرزت تسويات بالملايين.
+الثاني هو **قانون إمكانية الوصول العالمي الصارم**. بموجب [قانون إمكانية الوصول الأوروبي](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) (الساري بالكامل منذ يونيو 2025) و[ADA Title III الأمريكي](https://www.ada.gov/topics/title-iii/)، يجب أن تضمن منصات النشر المؤسسي إمكانية وصول رقمية كاملة. لم يعد الإخفاق في استيفاء معيار [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) إغفالاً هندسياً؛ بل هو مسؤولية مدنية وتنظيمية أفرزت تسويات بالملايين.
 
 يُعالج [HTML Generator](https://github.com/sebastienrousseau/html-generator) كلا الضغطين مباشرةً. إنه مكتبة Rust آمنة للخيوط مُصمَّمة لتحويل Markdown إلى HTML شامل ومُحسَّن لمحركات البحث ومنظَّم البنية. من خلال معاملة توليد المستندات كخط أنابيب مُحكَم البناء، يُحقِّق المحرّك **عائداً على المرونة (RoR)** مرتفعاً — يحمي الميزانيات العمومية من دعاوى إمكانية الوصول مع تعظيم قابلية القراءة الآلية لاكتشاف الذكاء الاصطناعي.
 
@@ -168,7 +168,7 @@ site_software: "Static Site Generator, Rust"
 
 | الإشارة | المقياس / المعيار التشغيلي | مرجع EAA / DORA / W3C | التنفيذ التقني |
 | ---- | ---- | ---- | ---- |
-| **مطابقة إمكانية الوصول** | 100% من الصفحات المُصرَّفة مُتحقَّق منها وفق قواعد WCAG 2.1 AA. | [EAA](https://www.accessibility-act.eu/) و[ADA Title III](https://www.ada.gov/topics/title-iii/) | محلِّل HTML عند وقت البناء يُقيِّم وسوم alt للصور والمعالم الدلالية. |
+| **مطابقة إمكانية الوصول** | 100% من الصفحات المُصرَّفة مُتحقَّق منها وفق قواعد WCAG 2.1 AA. | [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) و[ADA Title III](https://www.ada.gov/topics/title-iii/) | محلِّل HTML عند وقت البناء يُقيِّم وسوم alt للصور والمعالم الدلالية. |
 | **بيئة تنفيذ WASM المعزولة** | 100% من مدخلات Markdown غير الموثوقة مُصرَّفة في بيئة WebAssembly معزولة. | [DORA المادة 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554) (أمن تقنية المعلومات) | عزل بيئة التحليل عن الخادم المضيف. |
 | **تغطية البيانات الوصفية المنظَّمة** | 100% من المقالات المنشورة مُضمَّنة برؤوس JSON-LD صحيحة ومتوافقة مع المخطط. | مواصفات [Schema.org](https://schema.org/) | تحليل front matter تلقائياً وتحويله إلى كائنات JSON-LD. |
 | **معدل نقل التصريف** | هدف صفحات في الثانية فوق 10,000 على عتاد تجاري. | العائد على المرونة (RoR) | مُحرِّل Rust AST متوازٍ عالياً. |
@@ -276,7 +276,7 @@ graph TD
 - اتحاد الشبكة العالمية (W3C)، 2024. [إرشادات إمكانية الوصول لمحتوى الويب (WCAG) 2.1 ⧉](https://www.w3.org/TR/WCAG21/ "Web Content Accessibility Guidelines 2.1").
 - Schema.org، 2026. [مواصفات البيانات المنظَّمة لـ Schema.org ⧉](https://schema.org/ "Schema.org structured-data specifications").
 - البرلمان الأوروبي ومجلس الاتحاد الأوروبي، 2022. [اللائحة (EU) 2022/2554 بشأن المرونة التشغيلية الرقمية للقطاع المالي (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA Regulation").
-- المفوضية الأوروبية، 2025. [قانون إمكانية الوصول الأوروبي ⧉](https://www.accessibility-act.eu/ "European Accessibility Act").
+- المفوضية الأوروبية، 2025. [قانون إمكانية الوصول الأوروبي ⧉](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en "European Accessibility Act").
 - وزارة العدل الأمريكية، 2024. [ADA Title III ⧉](https://www.ada.gov/topics/title-iii/ "ADA Title III").
 - مجموعة مجتمع WebAssembly، 2026. [مواصفات WebAssembly ⧉](https://webassembly.org/ "WebAssembly").
 - GitHub، 2026. [مستودع HTML Generator ⧉](https://github.com/sebastienrousseau/html-generator "HTML Generator open-source repository").

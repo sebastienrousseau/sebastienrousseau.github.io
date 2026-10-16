@@ -38,15 +38,32 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 POSTS = ROOT / "_posts"
 
-_URL = re.compile(r'https?://[^\s\)\]"\'<>]+')
+_URL = re.compile(r"https?://[^\s\)\]\"'<>]+")
 
 # Hosts produced by translating a real host. Punycode here is never
 # legitimate: it is the pipeline having translated a subdomain.
 BAD_HOSTS = (
     "microsvaak",
+    "prowidesvaakware",
+    "nieuwrons-lab",
+    "spwereldwijd",
+    "news.met.edu",
+    "www.met.edu",
     "xn--",
     "em.wikipedia.org",
     "in.wikipedia.org",
+)
+
+# Path tokens produced by translating English words inside a URL slug.
+BAD_PATH_TOKENS = (
+    "internationaal",
+    "financial-settore",
+    "casuoudy",
+    "generatieve-ai",
+    "2026-globale-threat",
+    "2026-wereldwijd-threat",
+    "cap-ideia-expand",
+    "first-o-s-registered",
 )
 
 # Legitimately non-ASCII URLs, if one is ever needed. Empty today.
@@ -54,7 +71,7 @@ ALLOW: frozenset[str] = frozenset()
 
 # The same rewrite in Latin script, which the non-ASCII rule cannot see: the
 # /en/ path segment translated into the locale's own word — "em" (pt-br, it),
-# "in" (id, ms). Host-scoped on purpose. linkedin.com/in/<profile> is a real
+# "in" (id, ms, it). Host-scoped on purpose. linkedin.com/in/<profile> is a real
 # path, and a blanket /in/ rule proposed rewriting 1798 correct URLs
 # including every LinkedIn link on the site.
 _EN_SEGMENT_HOSTS = (
@@ -62,12 +79,17 @@ _EN_SEGMENT_HOSTS = (
     "informedclearly.com",
     "mambu.com",
     "www.cgi.com",
+    "www.cov.com",
     "www.deloitte.com",
-    "www.sc.com",
-    "www.tsinghua.edu.cn",
+    "www.europarl.europa.eu",
     "www.ingwb.com",
+    "www.lw.com",
+    "www.santander.com",
+    "www.sc.com",
+    "www.spglobal.com",
+    "www.tsinghua.edu.cn",
 )
-_MANGLED_SEGMENT = re.compile(r"/(?:em|in)/")
+_MANGLED_SEGMENT = re.compile(r"/(?:em|in)(?:-gb)?/")
 
 
 def offences(text: str) -> list[str]:
@@ -80,6 +102,8 @@ def offences(text: str) -> list[str]:
             found.append(f"non-ASCII in URL: {url}")
         elif any(bad in url for bad in BAD_HOSTS):
             found.append(f"host rewritten by translation: {url}")
+        elif any(tok in url for tok in BAD_PATH_TOKENS):
+            found.append(f"path token rewritten by translation: {url}")
         elif any(h in url for h in _EN_SEGMENT_HOSTS) and _MANGLED_SEGMENT.search(url):
             found.append(f"/en/ path segment rewritten by translation: {url}")
     return found

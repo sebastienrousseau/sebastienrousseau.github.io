@@ -304,13 +304,13 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://audioanalyser.co/" title="Audio Analyser" aria-label="Audio Analyser">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/audioanalyser.github.io" title="Audio Analyser" aria-label="Audio Analyser">
 <img alt="Banner for Audio Analyser" src="https://cloudcdn.pro/clients/audioanalyser/v1/logos/audioanalyser.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<h3><a href="https://audioanalyser.co/" title="Audio Analyser">Audio Analyser</a></h3>
+<h3><a href="https://github.com/sebastienrousseau/audioanalyser.github.io" title="Audio Analyser">Audio Analyser</a></h3>
 <p class="newsroom-excerpt">Converts audio to text in real time using AI speech recognition. Aimed at analysing recorded conversations and meetings.</p>
-<p class="newsroom-more"><a href="https://audioanalyser.co/" title="Audio Analyser">Learn more <span aria-hidden="true">›</span></a></p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/audioanalyser.github.io" title="Audio Analyser">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -420,13 +420,13 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="http://minifunctions.com/" title="Mini Functions" aria-label="Mini Functions">
+<a class="newsroom-card-media logo" href="https://minifunctions.com/" title="Mini Functions" aria-label="Mini Functions">
 <img alt="Banner for the Mini Functions Rust library" src="https://cloudcdn.pro/clients/mini-functions/v1/logos/mini-functions.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<h3><a href="http://minifunctions.com/" title="Mini Functions">Mini Functions</a></h3>
+<h3><a href="https://minifunctions.com/" title="Mini Functions">Mini Functions</a></h3>
 <p class="newsroom-excerpt">A utility and wrapper-function library for Rust.</p>
-<p class="newsroom-more"><a href="http://minifunctions.com/" title="Mini Functions">Learn more <span aria-hidden="true">›</span></a></p>
+<p class="newsroom-more"><a href="https://minifunctions.com/" title="Mini Functions">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 
@@ -437,13 +437,13 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid cat-grid">
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/kaishi.github.io" title="Kaishi" aria-label="Kaishi">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/static-site-generator" title="Kaishi" aria-label="Kaishi">
 <img alt="Banner for Kaishi, a starter template" src="https://cloudcdn.pro/clients/kaishi/v1/logos/kaishi.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<h3><a href="https://github.com/sebastienrousseau/kaishi.github.io" title="Kaishi">Kaishi</a></h3>
+<h3><a href="https://github.com/sebastienrousseau/static-site-generator" title="Kaishi">Kaishi</a></h3>
 <p class="newsroom-excerpt">A starter template for the Static Site Generator, set up for clean and accessible sites. The template I use when starting a new site.</p>
-<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/kaishi.github.io" title="Kaishi">Learn more <span aria-hidden="true">›</span></a></p>
+<p class="newsroom-more"><a href="https://github.com/sebastienrousseau/static-site-generator" title="Kaishi">Learn more <span aria-hidden="true">›</span></a></p>
 </div>
 </article>
 

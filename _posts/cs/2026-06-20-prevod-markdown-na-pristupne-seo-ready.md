@@ -116,7 +116,7 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-V roce 2026 spotřebovávají webový obsah stejnou měrou AI vyhledávací crawlery, vyhledávací nástroje s LLM a Retrieval-Augmented Generation (RAG) pipeline jako lidští čtenáři. Plochý nebo chybně sestavený HTML komplikuje strojové vyhledávání, zatímco nesplnění přísných globálních předpisů, jako jsou [Evropský akt o přístupnosti (EAA)](https://www.accessibility-act.eu/) a [americký ADA Title III](https://www.ada.gov/topics/title-iii/), představuje dnes jednoznačnou občanskoprávní odpovědnost. [HTML Generator](https://github.com/sebastienrousseau/html-generator) je vysokovýkonná Rust knihovna navržená k odstranění těchto nedostatků — na úrovni kompilátoru, nikoli v záplatkách po nasazení.
+V roce 2026 spotřebovávají webový obsah stejnou měrou AI vyhledávací crawlery, vyhledávací nástroje s LLM a Retrieval-Augmented Generation (RAG) pipeline jako lidští čtenáři. Plochý nebo chybně sestavený HTML komplikuje strojové vyhledávání, zatímco nesplnění přísných globálních předpisů, jako jsou [Evropský akt o přístupnosti (EAA)](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) a [americký ADA Title III](https://www.ada.gov/topics/title-iii/), představuje dnes jednoznačnou občanskoprávní odpovědnost. [HTML Generator](https://github.com/sebastienrousseau/html-generator) je vysokovýkonná Rust knihovna navržená k odstranění těchto nedostatků — na úrovni kompilátoru, nikoli v záplatkách po nasazení.
 
 ## Stručná odpověď
 
@@ -124,7 +124,7 @@ V roce 2026 spotřebovávají webový obsah stejnou měrou AI vyhledávací craw
 
 ## Shrnutí pro vedení
 
-Renderování Markdown vypadá triviálně. HTML vhodné pro profesionální publikování je problém souladu s předpisy. V červnu 2026 každý firemní bod kontaktu — portály pro investory, regulatorní výkazy, zákaznická dokumentace, reference API, marketingové weby — parsují jak lidé, tak stroje. Každou stránku svírají dva tlaky: [EAA](https://www.accessibility-act.eu/) a [ADA Title III](https://www.ada.gov/topics/title-iii/) mění přístupnost v právní expozici na úrovni představenstva, zatímco AI zpracování a RAG pipeline odměňují strukturovaný, strojově čitelný výstup. Standardní Markdown knihovny produkují plochý HTML, který selže na obou branách. HTML Generator přistupuje ke generování dokumentů jako ke kompilátorem řízenému pipeline: validace WCAG je chybou sestavení, JSON-LD pochází z YAML front matter bez ručního označování, MathML a Mermaid se renderují přístupně a celý engine je dodáván jako WebAssembly cíl, takže parsování nedůvěryhodných dokumentů zůstává v sandboxu odděleném od hostitele.
+Renderování Markdown vypadá triviálně. HTML vhodné pro profesionální publikování je problém souladu s předpisy. V červnu 2026 každý firemní bod kontaktu — portály pro investory, regulatorní výkazy, zákaznická dokumentace, reference API, marketingové weby — parsují jak lidé, tak stroje. Každou stránku svírají dva tlaky: [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) a [ADA Title III](https://www.ada.gov/topics/title-iii/) mění přístupnost v právní expozici na úrovni představenstva, zatímco AI zpracování a RAG pipeline odměňují strukturovaný, strojově čitelný výstup. Standardní Markdown knihovny produkují plochý HTML, který selže na obou branách. HTML Generator přistupuje ke generování dokumentů jako ke kompilátorem řízenému pipeline: validace WCAG je chybou sestavení, JSON-LD pochází z YAML front matter bez ručního označování, MathML a Mermaid se renderují přístupně a celý engine je dodáván jako WebAssembly cíl, takže parsování nedůvěryhodných dokumentů zůstává v sandboxu odděleném od hostitele.
 
 ## Klíčové poznatky
 
@@ -142,7 +142,7 @@ Firemní webové prostředí, knihovny dokumentace a střediska nápovědy k pro
 
 Prvním je **AI zpracování a vyhledatelnost**. Obsah stále více zpracovávají velké jazykové modely a Retrieval-Augmented Generation pipeline. Plochý nebo chybně sestavený HTML mate parsování crawlerů, čímž firemní výzkum a dokumentace zůstávají neviditelné pro moderní vyhledávací paradigmata — včetně [Google Search Generative Experience](https://blog.google/products/search/generative-ai-search/), prohlížení [ChatGPT](https://chat.openai.com/) a enterprise RAG agentů.
 
-Druhým je **přísná globální legislativa o přístupnosti**. Podle [Evropského aktu o přístupnosti](https://www.accessibility-act.eu/) (plně platného od června 2025) a [amerického ADA Title III](https://www.ada.gov/topics/title-iii/) musí firemní publikační platformy zaručovat úplnou digitální přístupnost. Nesplnění [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) již není technickým pochybením; je to občanskoprávní a regulatorní odpovědnost, která vyústila v víceciferné milionové dolarové vypořádání.
+Druhým je **přísná globální legislativa o přístupnosti**. Podle [Evropského aktu o přístupnosti](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) (plně platného od června 2025) a [amerického ADA Title III](https://www.ada.gov/topics/title-iii/) musí firemní publikační platformy zaručovat úplnou digitální přístupnost. Nesplnění [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) již není technickým pochybením; je to občanskoprávní a regulatorní odpovědnost, která vyústila v víceciferné milionové dolarové vypořádání.
 
 [HTML Generator](https://github.com/sebastienrousseau/html-generator) se oběma tlakům věnuje přímo. Jde o vlákno-bezpečnou Rust knihovnu navrženou pro transformaci Markdown na přístupný, SEO-ready a strukturovaný HTML. Tím, že zachází s generováním dokumentů jako s kompilátorem řízeným pipeline, dosahuje engine vysoké **návratnosti odolnosti (RoR)** — chrání bilance před soudními spory o přístupnost a maximalizuje strojovou čitelnost pro AI vyhledávání.
 
@@ -168,7 +168,7 @@ Aby vrcholoví technologičtí manažeři ověřili, že veřejně přístupná 
 
 | Signál | Metrika / provozní benchmark | Reference EAA / DORA / W3C | Technická implementace |
 | ---- | ---- | ---- | ---- |
-| **Shoda s přístupností** | 100 % kompilovaných stránek validováno podle pravidel WCAG 2.1 AA. | [EAA](https://www.accessibility-act.eu/) a [ADA Title III](https://www.ada.gov/topics/title-iii/) | HTML parser při sestavení vyhodnocující alt tagy obrázků a sémantické orientační body. |
+| **Shoda s přístupností** | 100 % kompilovaných stránek validováno podle pravidel WCAG 2.1 AA. | [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) a [ADA Title III](https://www.ada.gov/topics/title-iii/) | HTML parser při sestavení vyhodnocující alt tagy obrázků a sémantické orientační body. |
 | **Sandbox pro WASM spouštění** | 100 % nedůvěryhodných Markdown vstupů kompilováno v izolovaném WebAssembly runtime. | [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554) (bezpečnost ICT) | Izolace parsovacího prostředí od hostitelského serveru. |
 | **Pokrytí strukturovanými metadaty** | 100 % publikovaných článků vloženo s platnými, schéma-konformními JSON-LD hlavičkami. | Specifikace [Schema.org](https://schema.org/) | Automatické parsování front matter a konverze na JSON-LD objekty. |
 | **Propustnost kompilace** | Cíl stránek za sekundu nad 10 000 na běžném hardwaru. | Návratnost odolnosti (RoR) | Vysoce paralelizovaný Rust AST kompilátor. |
@@ -276,7 +276,7 @@ Tvůrcům statických webů, dokumentačním týmům, technickým autorům, Rust
 - World Wide Web Consortium (W3C), 2024. [Web Content Accessibility Guidelines (WCAG) 2.1 ⧉](https://www.w3.org/TR/WCAG21/ "Web Content Accessibility Guidelines 2.1").
 - Schema.org, 2026. [Specifikace strukturovaných dat Schema.org ⧉](https://schema.org/ "Specifikace strukturovaných dat Schema.org").
 - Evropský parlament a Rada Evropské unie, 2022. [Nařízení (EU) 2022/2554 o digitální provozní odolnosti finančního sektoru (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Nařízení DORA").
-- Evropská komise, 2025. [Evropský akt o přístupnosti ⧉](https://www.accessibility-act.eu/ "Evropský akt o přístupnosti").
+- Evropská komise, 2025. [Evropský akt o přístupnosti ⧉](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en "Evropský akt o přístupnosti").
 - Ministerstvo spravedlnosti USA, 2024. [ADA Title III ⧉](https://www.ada.gov/topics/title-iii/ "ADA Title III").
 - WebAssembly Community Group, 2026. [Specifikace WebAssembly ⧉](https://webassembly.org/ "WebAssembly").
 - GitHub, 2026. [Repozitář HTML Generator ⧉](https://github.com/sebastienrousseau/html-generator "Open-source repozitář HTML Generator").

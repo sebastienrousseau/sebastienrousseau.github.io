@@ -243,7 +243,7 @@ Mythic AI's in-memory compute platform is currently anchored by two major corpor
 - Economist Enterprise, (2026). [Physical AI & Robotics Summit: Operational advantage through autonomous systems ⧉](https://events.economistenterprise.com/physical-ai-and-robotics-summit/ "Physical AI & Robotics Summit"). Economist Enterprise.
 - Ozcelik, T., (2026). [Moving past Moore’s law: the power behind high-performance robotics ⧉](https://mythic.ai/ "Mythic AI"). Mythic AI.
 - Cukier, K., (2026). [The Thermodynamic Ceilings on Autonomous Intelligence ⧉](https://www.economist.com/ "The Economist"). The Economist.
-- Marković, D., Dennler, N., & Galluppi, F., (2024). [Physics-driven in-memory computing for energy-efficient edge intelligence ⧉](https://www.nature.com/articles/s41565-024-01600-0 "Nature Nanotechnology"). Nature Nanotechnology.
+- Marković, D., Mizrahi, A., Querlioz, D., & Grollier, J., (2020). [Physics for neuromorphic computing ⧉](https://www.nature.com/articles/s42254-020-0208-2 "Nature Reviews Physics"). Nature Reviews Physics, 2, 499-510.
 - Universal Chiplet Interconnect Express, (2025). [UCIe Specification 2.0: Die-to-Die Interconnect Standard ⧉](https://www.uciexpress.org/ "UCIe Specification"). UCIe Consortium.
 - IEEE, (2026). [International Roadmap for Devices and Systems (IRDS): Beyond CMOS and Compute-in-Memory ⧉](https://irds.ieee.org/ "IEEE IRDS"). IEEE Standards Association.
 

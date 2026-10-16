@@ -274,8 +274,8 @@
       "html_url": "https://github.com/sebastienrousseau/crypto-service"
     },
     {
-      "slug": "sebastienrousseau/kaishi.github.io",
-      "name": "kaishi.github.io",
+      "slug": "sebastienrousseau/static-site-generator",
+      "name": "static-site-generator",
       "description": "Make beautiful websites with Kaishi, a Shokunin (職人) Static Site Generator starter template.",
       "homepage": "http://kaishi.one/",
       "stars": 1,
@@ -288,7 +288,7 @@
       "pushed_at": "2023-11-05T20:32:49Z",
       "created_at": "2023-05-27T21:19:31Z",
       "archived": false,
-      "html_url": "https://github.com/sebastienrousseau/kaishi.github.io"
+      "html_url": "https://github.com/sebastienrousseau/static-site-generator"
     },
     {
       "slug": "sebastienrousseau/skeletonic-stylus",
@@ -345,7 +345,7 @@
       "slug": "sebastienrousseau/mini-functions",
       "name": "mini-functions",
       "description": "A a highly performant utility and wrapper functions library for Rust that has been carefully designed with optimization and efficiency in mind. 🦀",
-      "homepage": "http://minifunctions.com/",
+      "homepage": "https://minifunctions.com/",
       "stars": 14,
       "forks": 2,
       "watchers": 1,

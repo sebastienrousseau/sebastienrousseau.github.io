@@ -404,10 +404,10 @@ CloudCDN([cloudcdn.pro](https://cloudcdn.pro/ "CloudCDN"))은 엣지 에이전�
 - Meta AI, (2026). [Llama 4 출시 발표 — Maverick, Scout, Behemoth 변형 ⧉](https://ai.meta.com/blog/llama-4-multimodal-intelligence/ "Llama 4 출시"). Meta.
 - Toshiba / BT, (2025). [런던 대도시 지역의 상업용 QKD 네트워크 배포 ⧉](https://www.global.toshiba/ww/products-solutions/security-ict/qkd.html "Toshiba 양자 기술"). Toshiba Europe.
 - NVIDIA, (2025). [Spectrum-X Photonics 및 Quantum-X Photonics — AI 팩토리를 위한 공동 패키지 광학 네트워킹 ⧉](https://nvidianews.nvidia.com/news/spectrum-x-quantum-x-photonics "GTC 2025에서의 NVIDIA Photonics 발표"). NVIDIA.
-- 유럽중앙은행 은행 감독, (2025). [클라우드 아웃소싱 및 집중 위험 — 감독 기대 ⧉](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.outsourcingcloud.en.html "클라우드 아웃소싱에 대한 ECB 은행 감독"). ECB.
+- 유럽중앙은행 은행 감독, (2025). [클라우드 아웃소싱 및 집중 위험 — 감독 기대 ⧉](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.supervisory_guides202507.en.pdf "클라우드 아웃소싱에 대한 ECB 은행 감독"). ECB.
 - Zou, W. et al. (2024). [PoisonedRAG: 대규모 언어 모델의 검색 증강 생성에 대한 지식 손상 공격 ⧉](https://arxiv.org/abs/2402.07867 "PoisonedRAG"). arXiv.
 - Cilium / Tetragon Project, (2025). [클라우드 네이티브 및 Wasm 워크로드를 위한 eBPF 기반 런타임 보안 및 관찰가능성 ⧉](https://cilium.io/blog/ "Cilium 블로그"). Isovalent / Cilium.
-- Qentelli, (2026). [은행 혁신: 클라우드와 DevOps가 어떻게 금융 서비스의 미래를 주도하는가 ⧉](https://qentelli.com/thought-leadership/insights/revolutionizing-banking-how-cloud-and-devops-are-powering-the-future-of-financial-services "Qentelli — 은행에서의 클라우드와 DevOps"). Qentelli.
+- Qentelli, (2026). 은행 혁신: 클라우드와 DevOps가 어떻게 금융 서비스의 미래를 주도하는가. Qentelli.
 - Built In Chicago, (2025). [JPMorgan Chase의 멀티클라우드 전략이 지속적인 변환의 핵심 ⧉](https://www.builtinchicago.org/articles/jpmorganchase-multi-cloud-strategy-key-continuous-transformation "JPMorgan의 멀티클라우드 전략"). Built In.
 - CIO Dive, (2024). [JPMorgan Chase CEO는 AI, 분석을 주도하기 위해 더 많은 클라우드를 원합니다 ⧉](https://www.ciodive.com/news/jpmorgan-jamie-dimon-cloud-generative-ai-strategy/713093/ "JPMorgan Chase CEO는 더 많은 클라우드를 원합니다"). CIO Dive.
 - Fierce Network, (2024). [J.P. Morgan 결제 임원: 클라우드, API로 인해 '단순한 은행'이 되는 시대는 끝났다 ⧉](https://www.fierce-network.com/cloud/jp-morgan-payments-exec-talks-cloud-tech-talent-and-apis "클라우드에 대한 J.P. Morgan 결제 임원"). Fierce Network.

@@ -242,7 +242,7 @@ Oṣẹ́ pupọ̀ fún àkókò rẹ, mo sì ń retí láti gbọ́ láti ọ̀
 [01]: https://www.hsbc.com/news-and-views/news/media-releases/2023/hsbc-pioneers-quantum-protection-for-ai-powered-fx-trading "Fífikún Quantum Computing Mọ́ Àwọn Iṣẹ́ Ilé-ifowopamọ́ ti HSBC"
 [02]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau lórí LinkedIn"
 [03]: https://sebastienrousseau.com/contact/index.html "Kàn sí Sebastien Rousseau"
-[05]: http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm "Àwọn Ìgbésẹ̀ Ìgbàdíẹ̀ fún Ìṣàkóso Iṣẹ́ Imọ̀ Ẹ̀rọ Aláfọwọ́dá Generative"
+[05]: https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm "Àwọn Ìgbésẹ̀ Ìgbàdíẹ̀ fún Ìṣàkóso Iṣẹ́ Imọ̀ Ẹ̀rọ Aláfọwọ́dá Generative"
 [06]: https://www.fmprc.gov.cn/mfa_eng/wjdt_665385/2649_665393/202310/t20231020_11164834.html "Global AI Governance Initiative"
 [07]: https://github.com/nlpxucan/WizardLM "WizardLM"
 [08]: https://ai.meta.com/llama/ "LLaMA 2"

@@ -100,7 +100,7 @@ Ang perimetro ng regulasyon para sa 2026 hinggil sa AI sa bangko ay hindi na isa
 At nakaupo katabi ng AI Act ang mga sumusunod:
 
 - **Ang DORA** (ang Digital Operational Resilience Act) ay ipinatutupad na mula pa noong Enero 2025 at lumilikha ito ng 22 obligasyon para sa pamamahala sa panganib ng ICT na hayagang sumasaklaw sa sistema ng AI na ginagamit sa mahalagang tungkulin ng serbisyong pinansiyal.
-- **Ang SR 11-7** — ang gabay sa pamamahala sa panganib ng modelo ng Federal Reserve at ng OCC, na orihinal na isinulat noong 2011 — ay [pinalawig sa gawing regulatoryo ⧉](https://aegisaicompliance.com/ai-governance-for-banks/ "AI Governance for Banks: SR 11-7 & EU AI Act Compliance Guide") upang saklawin ang LLM at ang ahensiyal na sistema.
+- **Ang SR 11-7** — ang gabay sa pamamahala sa panganib ng modelo ng Federal Reserve at ng OCC, na orihinal na isinulat noong 2011 — ay [pinalawig sa gawing regulatoryo ⧉](https://web.archive.org/web/20260208023003/https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm "Federal Reserve SR 11-7 Guidance on Model Risk Management") upang saklawin ang LLM at ang ahensiyal na sistema.
 - **Ang NIST AI RMF** (1.0, Enero 2023) ay boluntaryo sa Estados Unidos ngunit sinasangguni ito bilang batayan ng ahensiyang pederal.
 - **Ang ISO/IEC 42001** (na inilathala noong Disyembre 2023) ang unang maaaring akreditahing pamantayan ng sistema ng pamamahala ng AI.
 - **Ang UK SM&CR at ang Consumer Duty** — hinihingi na ngayon ng rehimeng Senior Managers and Certification ang pinangalanang pananagutan para sa bawat sistema ng AI na mataas ang panganib.
@@ -240,4 +240,4 @@ Tatlong bagay, sa pagkakasunod. Una, likhain ang AI Bill of Materials. Ikalawa, 
 - Anthropic, (2025). [Disrupting the first reported AI-orchestrated cyber espionage campaign ⧉](https://www.anthropic.com/news/disrupting-AI-espionage "Disrupting AI espionage"). Anthropic.
 - Flashpoint, (2026). [2026 Global Threat Intelligence Report ⧉](https://www.hstoday.us/subject-matter-areas/cybersecurity/2026-global-threat-intelligence-report-highlights-rise-in-agentic-ai-cybercrime/ "GTIR 2026"). HSToday.
 - European Commission, (2024). Regulation (EU) 2024/1689 on Artificial Intelligence (EU AI Act).
-- AegisAI Compliance, (2026). [AI Governance for Banks: SR 11-7 & EU AI Act ⧉](https://aegisaicompliance.com/ai-governance-for-banks/ "AI Governance for Banks"). AegisAI.
+- AegisAI Compliance, (2026). AI Governance for Banks: SR 11-7 & EU AI Act. AegisAI.

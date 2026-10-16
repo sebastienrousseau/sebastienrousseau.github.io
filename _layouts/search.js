@@ -404,6 +404,40 @@
     }
   };
 
+  // ---- contextual sample queries (meta[property="asi:sampleQuery"]) ---------
+
+  function sampleQueries() {
+    var nodes = document.querySelectorAll('meta[property="asi:sampleQuery"]');
+    var out = [];
+    for (var i = 0; i < nodes.length; i++) {
+      var c = (nodes[i].getAttribute("content") || "").trim();
+      if (c && out.indexOf(c) === -1) out.push(c);
+    }
+    return out;
+  }
+
+  function buildSampleChips(input, clearBtn, view) {
+    var samples = sampleQueries();
+    var wrap = makeEl("div", "ss-samples");
+    if (!samples.length) {
+      wrap.hidden = true;
+      return wrap;
+    }
+    samples.forEach(function (q) {
+      var chip = makeEl("button", "ss-sample-chip", { type: "button" });
+      chip.textContent = q;
+      chip.addEventListener("click", function () {
+        input.value = q;
+        if (clearBtn) clearBtn.hidden = false;
+        wrap.hidden = true;
+        view.query(q);
+        input.focus();
+      });
+      wrap.appendChild(chip);
+    });
+    return wrap;
+  }
+
   // ---- overlay (command palette) -------------------------------------------
 
   var overlay = null; // { root, view, lastFocus }
@@ -473,15 +507,6 @@
     var hint = makeEl("div", "ss-hint");
     hint.textContent = ui.ui.hint || "";
 
-    panel.appendChild(row);
-    panel.appendChild(toolbar);
-    panel.appendChild(list);
-    panel.appendChild(empty);
-    panel.appendChild(hint);
-    root.appendChild(backdrop);
-    root.appendChild(panel);
-    document.body.appendChild(root);
-
     var view = new ResultsView({
       ui: ui,
       input: input,
@@ -495,14 +520,28 @@
       },
     });
 
+    var samplesWrap = buildSampleChips(input, clearBtn, view);
+
+    panel.appendChild(row);
+    panel.appendChild(toolbar);
+    panel.appendChild(samplesWrap);
+    panel.appendChild(list);
+    panel.appendChild(empty);
+    panel.appendChild(hint);
+    root.appendChild(backdrop);
+    root.appendChild(panel);
+    document.body.appendChild(root);
+
     clearBtn.addEventListener("click", function () {
       input.value = "";
       clearBtn.hidden = true;
+      samplesWrap.hidden = !sampleQueries().length;
       view.query("");
       input.focus();
     });
     input.addEventListener("input", function () {
       clearBtn.hidden = !input.value;
+      samplesWrap.hidden = Boolean(input.value.trim()) || !sampleQueries().length;
     });
 
     // Close affordances.
@@ -609,12 +648,6 @@
       });
       var empty = makeEl("div", "ss-empty", { hidden: "" });
 
-      live.appendChild(row);
-      live.appendChild(toolbar);
-      live.appendChild(list);
-      live.appendChild(empty);
-      mount.appendChild(live);
-
       var view = new ResultsView({
         ui: ui,
         input: input,
@@ -628,11 +661,21 @@
         },
       });
 
+      var samplesWrap = buildSampleChips(input, null, view);
+
+      live.appendChild(row);
+      live.appendChild(toolbar);
+      live.appendChild(samplesWrap);
+      live.appendChild(list);
+      live.appendChild(empty);
+      mount.appendChild(live);
+
       // Deep-link / prefill from ?q=
       var params = new URLSearchParams(location.search);
       var q = params.get("q") || "";
       if (q) {
         input.value = q;
+        samplesWrap.hidden = true;
         view.query(q);
       } else {
         view.setStatus(ui.ui.hint || "");
@@ -642,6 +685,7 @@
         var u = new URL(location.href);
         if (input.value) u.searchParams.set("q", input.value);
         else u.searchParams.delete("q");
+        samplesWrap.hidden = Boolean(input.value.trim()) || !sampleQueries().length;
         history.replaceState(null, "", u);
       });
       input.focus();

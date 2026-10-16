@@ -306,7 +306,7 @@ CloudCDN ([cloudcdn.pro](https://cloudcdn.pro/ "CloudCDN")) — це відкр�
 - Meta AI, (2026). [Llama 4 release announcement — Maverick, Scout, and Behemoth variants ⧉](https://ai.meta.com/blog/llama-4-multimodal-intelligence/ "Llama 4 release"). Meta.
 - Toshiba / BT, (2025). [Toshiba quantum key distribution (QKD) ⧉](https://www.global.toshiba/ww/products-solutions/security-ict/qkd.html "Toshiba quantum key distribution (QKD)"). Toshiba Europe.
 - NVIDIA, (2025). [Spectrum-X Photonics and Quantum-X Photonics — co-packaged optical networking for AI factories ⧉](https://nvidianews.nvidia.com/news/spectrum-x-quantum-x-photonics "NVIDIA Photonics announcement at GTC 2025"). NVIDIA.
-- European Central Bank Banking Supervision, (2025). [Cloud outsourcing and concentration risk — supervisory expectations ⧉](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.outsourcingcloud.en.html "ECB Banking Supervision on cloud outsourcing"). ECB.
+- European Central Bank Banking Supervision, (2025). [Cloud outsourcing and concentration risk — supervisory expectations ⧉](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.supervisory_guides202507.en.pdf "ECB Banking Supervision on cloud outsourcing"). ECB.
 - Zou, W. et al. (2024). [PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models ⧉](https://arxiv.org/abs/2402.07867 "PoisonedRAG"). arXiv.
 - Cilium / Tetragon Project, (2025). [eBPF-based runtime security and observability for cloud-native and Wasm workloads ⧉](https://cilium.io/blog/ "Cilium blog"). Isovalent / Cilium.
 - Bank for International Settlements, (2025). [Project Leap: Quantum-Proofing the Financial System ⧉](https://www.bis.org/about/bisih/topics/cyber_security/leap.htm "Project Leap"). BIS.

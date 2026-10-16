@@ -116,7 +116,7 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-ב-2026, תוכן אינטרנטי נצרך לא פחות על-ידי סורקי חיפוש המבוססים על AI, מנועי חיפוש מגובי LLM וצינורות Retrieval-Augmented Generation (RAG) — מאשר על-ידי קוראים אנושיים. HTML שטוח או בלתי-תקני פוגע ביכולת הגילוי המכאני, בעוד שאי-עמידה בתקנות גלובליות מחמירות כגון [חוק הנגישות האירופי (EAA)](https://www.accessibility-act.eu/) ו-[ADA Title III האמריקאי](https://www.ada.gov/topics/title-iii/) היא כיום חבות אזרחית חד-משמעית. [HTML Generator](https://github.com/sebastienrousseau/html-generator) היא ספריית Rust בעלת ביצועים גבוהים, שנועדה לסגור פערים אלה — ברמת הקומפיילר, לא בתיקונים שלאחר הפריסה.
+ב-2026, תוכן אינטרנטי נצרך לא פחות על-ידי סורקי חיפוש המבוססים על AI, מנועי חיפוש מגובי LLM וצינורות Retrieval-Augmented Generation (RAG) — מאשר על-ידי קוראים אנושיים. HTML שטוח או בלתי-תקני פוגע ביכולת הגילוי המכאני, בעוד שאי-עמידה בתקנות גלובליות מחמירות כגון [חוק הנגישות האירופי (EAA)](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) ו-[ADA Title III האמריקאי](https://www.ada.gov/topics/title-iii/) היא כיום חבות אזרחית חד-משמעית. [HTML Generator](https://github.com/sebastienrousseau/html-generator) היא ספריית Rust בעלת ביצועים גבוהים, שנועדה לסגור פערים אלה — ברמת הקומפיילר, לא בתיקונים שלאחר הפריסה.
 
 ## תשובה מהירה
 
@@ -124,7 +124,7 @@ site_software: "Static Site Generator, Rust"
 
 ## סיכום מנהלים
 
-רינדור Markdown נראה טריוויאלי. HTML ברמת פרסום הוא בעיית תאימות. ביוני 2026, כל נקודת מגע ארגונית — פורטלי יחסי משקיעים, הגשות רגולטוריות, תיעוד לקוחות, תיעוד API, נכסי שיווק — מנותחת הן על-ידי בני אדם והן על-ידי מכונות. שתי לחצים מתנגשים בכל עמוד: [EAA](https://www.accessibility-act.eu/) ו-[ADA Title III](https://www.ada.gov/topics/title-iii/) הופכים את הנגישות לחשיפה משפטית ברמת הדירקטוריון, בעוד שעיבוד AI וצינורות RAG מתגמלים פלט מובנה וקריא-מכונה. ספריות Markdown סטנדרטיות מייצרות HTML שטוח שנכשל בשני השערים. HTML Generator מתייחס לייצור מסמכים כצינור קומפילציה מבוקר: אימות WCAG הוא שגיאת בנייה, JSON-LD מגיע מחזית YAML ללא חותמת ידנית, MathML ו-Mermaid מרונדרים בצורה נגישה, והמנוע כולו נשלח כיעד WebAssembly כך שניתוח מסמכים לא מהימנים נשאר מבודד מהמארח.
+רינדור Markdown נראה טריוויאלי. HTML ברמת פרסום הוא בעיית תאימות. ביוני 2026, כל נקודת מגע ארגונית — פורטלי יחסי משקיעים, הגשות רגולטוריות, תיעוד לקוחות, תיעוד API, נכסי שיווק — מנותחת הן על-ידי בני אדם והן על-ידי מכונות. שתי לחצים מתנגשים בכל עמוד: [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) ו-[ADA Title III](https://www.ada.gov/topics/title-iii/) הופכים את הנגישות לחשיפה משפטית ברמת הדירקטוריון, בעוד שעיבוד AI וצינורות RAG מתגמלים פלט מובנה וקריא-מכונה. ספריות Markdown סטנדרטיות מייצרות HTML שטוח שנכשל בשני השערים. HTML Generator מתייחס לייצור מסמכים כצינור קומפילציה מבוקר: אימות WCAG הוא שגיאת בנייה, JSON-LD מגיע מחזית YAML ללא חותמת ידנית, MathML ו-Mermaid מרונדרים בצורה נגישה, והמנוע כולו נשלח כיעד WebAssembly כך שניתוח מסמכים לא מהימנים נשאר מבודד מהמארח.
 
 ## נקודות מפתח
 
@@ -142,7 +142,7 @@ site_software: "Static Site Generator, Rust"
 
 הראשון הוא **עיבוד וגילוי על-ידי AI**. תוכן מעובד יותר ויותר על-ידי מודלים של שפה גדולים וצינורות Retrieval-Augmented Generation. HTML שטוח או בלתי-תקני מבלבל את ניתוח הסורקים, והופך מחקר ותיעוד ארגוני לבלתי-נראה לפרדיגמות חיפוש מודרניות — כולל [Google Search Generative Experience](https://blog.google/products/search/generative-ai-search/), גלישה של [ChatGPT](https://chat.openai.com/) וסוכני RAG ארגוניים.
 
-השני הוא **חוקי נגישות גלובליים מחמירים**. תחת [חוק הנגישות האירופי](https://www.accessibility-act.eu/) (שחל במלואו מיוני 2025) ו-[ADA Title III האמריקאי](https://www.ada.gov/topics/title-iii/), פלטפורמות פרסום ארגוניות חייבות להבטיח נגישות דיגיטלית מלאה. אי-עמידה ב-[WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) אינה עוד רשלנות הנדסית; היא חבות אזרחית ורגולטורית שהניבה פסקי דין בסך מיליוני דולרים.
+השני הוא **חוקי נגישות גלובליים מחמירים**. תחת [חוק הנגישות האירופי](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) (שחל במלואו מיוני 2025) ו-[ADA Title III האמריקאי](https://www.ada.gov/topics/title-iii/), פלטפורמות פרסום ארגוניות חייבות להבטיח נגישות דיגיטלית מלאה. אי-עמידה ב-[WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) אינה עוד רשלנות הנדסית; היא חבות אזרחית ורגולטורית שהניבה פסקי דין בסך מיליוני דולרים.
 
 [HTML Generator](https://github.com/sebastienrousseau/html-generator) מתמודד עם שני הלחצים ישירות. זוהי ספריית Rust בטוחה לתהליכים מרובים, שנועדה להמיר Markdown ל-HTML נגיש, מוכן ל-SEO ומובנה. על-ידי התייחסות לייצור מסמכים כצינור קומפילציה מבוקר, המנוע מספק **החזר גבוה על עמידות (RoR)** — מגן על מאזנים מתביעות נגישות תוך מיקסום קריאות-מכונה לגילוי AI.
 
@@ -168,7 +168,7 @@ site_software: "Static Site Generator, Rust"
 
 | אות | מדד / ספסל תפעולי | הפניה ל-EAA / DORA / W3C | יישום טכני |
 | ---- | ---- | ---- | ---- |
-| **תאימות נגישות** | 100% מהעמודים המקומפלים מאומתים מול כללי WCAG 2.1 AA. | [EAA](https://www.accessibility-act.eu/) ו-[ADA Title III](https://www.ada.gov/topics/title-iii/) | מנתח HTML בזמן בנייה המעריך תגי alt לתמונות וציוני דרך סמנטיים. |
+| **תאימות נגישות** | 100% מהעמודים המקומפלים מאומתים מול כללי WCAG 2.1 AA. | [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) ו-[ADA Title III](https://www.ada.gov/topics/title-iii/) | מנתח HTML בזמן בנייה המעריך תגי alt לתמונות וציוני דרך סמנטיים. |
 | **סביבת ביצוע WASM** | 100% מקלטי Markdown הלא-מהימנים מקומפלים בזמן-ריצה מבודד של WebAssembly. | [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554) (אבטחת ICT) | בידוד סביבת הניתוח משרת המארח. |
 | **כיסוי מטא-נתונים מובנים** | 100% ממאמרים שפורסמו הוחדר להם כותרות JSON-LD תקינות ותואמות-סכמה. | מפרטי [Schema.org](https://schema.org/) | ניתוח חזית אוטומטי והמרה לאובייקטי JSON-LD. |
 | **תפוקת קומפילציה** | יעד עמודים-לשנייה מעל 10,000 על חומרה סחורתית. | החזר על עמידות (RoR) | קומפיילר Rust AST מקבילי ביותר. |
@@ -276,7 +276,7 @@ G-SIBs מפעילים נכסי ציבור רב-לשוניים עצומים המ�
 - קונסורציום האינטרנט העולמי (W3C), 2024. [הנחיות לנגישות תוכן אינטרנט (WCAG) 2.1 ⧉](https://www.w3.org/TR/WCAG21/ "Web Content Accessibility Guidelines 2.1").
 - Schema.org, 2026. [מפרטי נתונים מובנים של Schema.org ⧉](https://schema.org/ "Schema.org structured-data specifications").
 - הפרלמנט האירופי ומועצת האיחוד האירופי, 2022. [תקנה (EU) 2022/2554 בדבר עמידות תפעולית דיגיטלית לסקטור הפיננסי (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA Regulation").
-- הנציבות האירופית, 2025. [חוק הנגישות האירופי ⧉](https://www.accessibility-act.eu/ "European Accessibility Act").
+- הנציבות האירופית, 2025. [חוק הנגישות האירופי ⧉](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en "European Accessibility Act").
 - משרד המשפטים האמריקאי, 2024. [ADA Title III ⧉](https://www.ada.gov/topics/title-iii/ "ADA Title III").
 - קבוצת הקהילה של WebAssembly, 2026. [מפרט WebAssembly ⧉](https://webassembly.org/ "WebAssembly").
 - GitHub, 2026. [מאגר HTML Generator ⧉](https://github.com/sebastienrousseau/html-generator "HTML Generator open-source repository").

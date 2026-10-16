@@ -142,7 +142,7 @@ LLMهای متن‌باز، همچون [**WizardLM** ⧉][07] و [**LLaMA 2** �
 [01]: https://www.hsbc.com/news-and-views/news/media-releases/2023/hsbc-pioneers-quantum-protection-for-ai-powered-fx-trading "یکپارچه‌سازی محاسبات کوانتومی توسط HSBC در عملیات بانکی"
 [02]: https://www.linkedin.com/in/sebastienrousseau/ "سباستین روسو در LinkedIn"
 [03]: https://sebastienrousseau.com/contact/index.html "تماس با سباستین روسو"
-[05]: http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm "تدابیر موقت برای مدیریت خدمات هوش مصنوعی مولد"
+[05]: https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm "تدابیر موقت برای مدیریت خدمات هوش مصنوعی مولد"
 [06]: https://www.fmprc.gov.cn/mfa_eng/wjdt_665385/2649_665393/202310/t20231020_11164834.html "ابتکار جهانی حاکمیت هوش مصنوعی"
 [07]: https://github.com/nlpxucan/WizardLM "WizardLM"
 [08]: https://ai.meta.com/llama/ "LLaMA 2"

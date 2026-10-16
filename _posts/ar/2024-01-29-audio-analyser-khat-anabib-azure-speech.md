@@ -267,7 +267,7 @@ cherrypy.quickstart(AudioAnalyserApp(), "/", conf)
 3. Microsoft. *ما هو Azure AI Language؟* Microsoft Learn، 2024. <https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview>
 4. Microsoft. *Azure AI Translator — اللغات المدعومة*. Microsoft Learn، 2024. <https://learn.microsoft.com/en-us/azure/ai-services/translator/language-support>
 
-[00]: https://audioanalyser.co/ "Audio Analyser — أداة تحليل الكلام المدعومة بـ Azure"
+[00]: https://github.com/sebastienrousseau/audioanalyser.github.io "Audio Analyser — أداة تحليل الكلام المدعومة بـ Azure"
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>

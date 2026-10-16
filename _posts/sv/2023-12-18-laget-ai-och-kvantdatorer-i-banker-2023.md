@@ -141,7 +141,7 @@ Tack än en gång för din tid, jag ser fram emot att höra från dig!
 [01]: https://www.hsbc.com/news-and-views/news/media-releases/2023/hsbc-pioneers-quantum-protection-for-ai-powered-fx-trading "HSBC:s integrering av kvantdatorer i bankverksamheten"
 [02]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau på LinkedIn"
 [03]: https://sebastienrousseau.com/contact/index.html "Kontakta Sebastien Rousseau"
-[05]: http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm "Interim Measures for Generative Artificial Intelligence Service Management"
+[05]: https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm "Interim Measures for Generative Artificial Intelligence Service Management"
 [06]: https://www.fmprc.gov.cn/mfa_eng/wjdt_665385/2649_665393/202310/t20231020_11164834.html "Global AI Governance Initiative"
 [07]: https://github.com/nlpxucan/WizardLM "WizardLM"
 [08]: https://ai.meta.com/llama/ "LLaMA 2"

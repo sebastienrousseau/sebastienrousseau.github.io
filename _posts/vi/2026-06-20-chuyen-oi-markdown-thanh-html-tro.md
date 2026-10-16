@@ -116,7 +116,7 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-Năm 2026, nội dung web được tiêu thụ không kém bởi các trình thu thập tìm kiếm AI, công cụ tìm kiếm hỗ trợ LLM và pipeline Retrieval-Augmented Generation (RAG) so với người đọc thông thường. HTML phẳng hoặc bị lỗi cấu trúc cản trở khả năng nhận diện của máy, trong khi việc không tuân thủ các quy định toàn cầu nghiêm ngặt như [Đạo luật Trợ năng Châu Âu (EAA)](https://www.accessibility-act.eu/) và [ADA Title III của Hoa Kỳ](https://www.ada.gov/topics/title-iii/) hiện đã là trách nhiệm dân sự rõ ràng. [HTML Generator](https://github.com/sebastienrousseau/html-generator) là thư viện Rust hiệu năng cao được thiết kế để lấp những lỗ hổng đó — tại trình biên dịch, không phải bằng bản vá sau triển khai.
+Năm 2026, nội dung web được tiêu thụ không kém bởi các trình thu thập tìm kiếm AI, công cụ tìm kiếm hỗ trợ LLM và pipeline Retrieval-Augmented Generation (RAG) so với người đọc thông thường. HTML phẳng hoặc bị lỗi cấu trúc cản trở khả năng nhận diện của máy, trong khi việc không tuân thủ các quy định toàn cầu nghiêm ngặt như [Đạo luật Trợ năng Châu Âu (EAA)](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) và [ADA Title III của Hoa Kỳ](https://www.ada.gov/topics/title-iii/) hiện đã là trách nhiệm dân sự rõ ràng. [HTML Generator](https://github.com/sebastienrousseau/html-generator) là thư viện Rust hiệu năng cao được thiết kế để lấp những lỗ hổng đó — tại trình biên dịch, không phải bằng bản vá sau triển khai.
 
 ## Câu trả lời nhanh
 
@@ -124,7 +124,7 @@ Năm 2026, nội dung web được tiêu thụ không kém bởi các trình thu
 
 ## Tóm tắt điều hành
 
-Kết xuất Markdown trông có vẻ đơn giản. HTML đạt chuẩn xuất bản doanh nghiệp là bài toán tuân thủ. Tháng 6 năm 2026, mọi điểm tiếp xúc doanh nghiệp — cổng quan hệ nhà đầu tư, hồ sơ quy định, tài liệu khách hàng, tài liệu tham chiếu API, kho marketing — đều được phân tích bởi cả người và máy. Hai áp lực va chạm trên mỗi trang: [EAA](https://www.accessibility-act.eu/) và [ADA Title III](https://www.ada.gov/topics/title-iii/) biến trợ năng thành rủi ro pháp lý cấp hội đồng quản trị, trong khi ingestion AI và pipeline RAG ưu tiên đầu ra có cấu trúc, có thể đọc bằng máy. Các thư viện Markdown tiêu chuẩn tạo ra HTML phẳng, không vượt qua được cả hai cổng kiểm soát này. HTML Generator xử lý việc tạo tài liệu như một pipeline được kiểm định tại biên dịch: xác thực WCAG là lỗi biên dịch, JSON-LD đến từ YAML front matter mà không cần đánh dấu thủ công, MathML và Mermaid kết xuất có trợ năng, và toàn bộ engine được phát hành dưới dạng đích WebAssembly để phân tích tài liệu không tin cậy luôn được sandbox khỏi máy chủ.
+Kết xuất Markdown trông có vẻ đơn giản. HTML đạt chuẩn xuất bản doanh nghiệp là bài toán tuân thủ. Tháng 6 năm 2026, mọi điểm tiếp xúc doanh nghiệp — cổng quan hệ nhà đầu tư, hồ sơ quy định, tài liệu khách hàng, tài liệu tham chiếu API, kho marketing — đều được phân tích bởi cả người và máy. Hai áp lực va chạm trên mỗi trang: [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) và [ADA Title III](https://www.ada.gov/topics/title-iii/) biến trợ năng thành rủi ro pháp lý cấp hội đồng quản trị, trong khi ingestion AI và pipeline RAG ưu tiên đầu ra có cấu trúc, có thể đọc bằng máy. Các thư viện Markdown tiêu chuẩn tạo ra HTML phẳng, không vượt qua được cả hai cổng kiểm soát này. HTML Generator xử lý việc tạo tài liệu như một pipeline được kiểm định tại biên dịch: xác thực WCAG là lỗi biên dịch, JSON-LD đến từ YAML front matter mà không cần đánh dấu thủ công, MathML và Mermaid kết xuất có trợ năng, và toàn bộ engine được phát hành dưới dạng đích WebAssembly để phân tích tài liệu không tin cậy luôn được sandbox khỏi máy chủ.
 
 ## Điểm cốt yếu
 
@@ -142,7 +142,7 @@ Kho web doanh nghiệp, thư viện tài liệu và trung tâm hỗ trợ sản 
 
 Áp lực thứ nhất là **ingestion AI và khả năng khám phá**. Nội dung ngày càng được xử lý bởi các mô hình ngôn ngữ lớn và pipeline Retrieval-Augmented Generation. HTML phẳng hoặc bị lỗi cấu trúc gây nhầm lẫn cho trình thu thập, khiến nghiên cứu và tài liệu doanh nghiệp trở nên vô hình với các mô hình tìm kiếm hiện đại — bao gồm [Google Search Generative Experience](https://blog.google/products/search/generative-ai-search/), duyệt web [ChatGPT](https://chat.openai.com/) và các agent RAG doanh nghiệp.
 
-Áp lực thứ hai là **luật trợ năng toàn cầu nghiêm ngặt**. Theo [Đạo luật Trợ năng Châu Âu](https://www.accessibility-act.eu/) (áp dụng đầy đủ từ tháng 6 năm 2025) và [ADA Title III của Hoa Kỳ](https://www.ada.gov/topics/title-iii/), các nền tảng xuất bản doanh nghiệp phải đảm bảo trợ năng kỹ thuật số hoàn chỉnh. Không đáp ứng [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) không còn là lỗi kỹ thuật; đó là trách nhiệm dân sự và pháp lý đã tạo ra các khoản giải quyết hàng triệu đô la.
+Áp lực thứ hai là **luật trợ năng toàn cầu nghiêm ngặt**. Theo [Đạo luật Trợ năng Châu Âu](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) (áp dụng đầy đủ từ tháng 6 năm 2025) và [ADA Title III của Hoa Kỳ](https://www.ada.gov/topics/title-iii/), các nền tảng xuất bản doanh nghiệp phải đảm bảo trợ năng kỹ thuật số hoàn chỉnh. Không đáp ứng [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) không còn là lỗi kỹ thuật; đó là trách nhiệm dân sự và pháp lý đã tạo ra các khoản giải quyết hàng triệu đô la.
 
 [HTML Generator](https://github.com/sebastienrousseau/html-generator) giải quyết cả hai áp lực trực tiếp. Đây là thư viện Rust thread-safe được thiết kế để chuyển đổi Markdown thành HTML trợ năng, tối ưu SEO và có cấu trúc. Bằng cách xử lý việc tạo tài liệu như một pipeline được kiểm định tại biên dịch, engine mang lại **Return on Resilience (RoR)** cao — bảo vệ bảng cân đối kế toán khỏi kiện tụng về trợ năng trong khi tối đa hóa khả năng đọc bằng máy cho khám phá AI.
 
@@ -168,7 +168,7 @@ Framework được thiết kế như một pipeline biên dịch an toàn, đa g
 
 | Tín hiệu | Chỉ số / chuẩn vận hành | Tham chiếu EAA / DORA / W3C | Triển khai kỹ thuật |
 | ---- | ---- | ---- | ---- |
-| **Tuân thủ trợ năng** | 100% trang được biên dịch xác thực theo quy tắc WCAG 2.1 AA. | [EAA](https://www.accessibility-act.eu/) và [ADA Title III](https://www.ada.gov/topics/title-iii/) | Bộ phân tích HTML tại thời điểm biên dịch đánh giá thẻ alt hình ảnh và các mốc ngữ nghĩa. |
+| **Tuân thủ trợ năng** | 100% trang được biên dịch xác thực theo quy tắc WCAG 2.1 AA. | [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) và [ADA Title III](https://www.ada.gov/topics/title-iii/) | Bộ phân tích HTML tại thời điểm biên dịch đánh giá thẻ alt hình ảnh và các mốc ngữ nghĩa. |
 | **Sandbox thực thi WASM** | 100% đầu vào Markdown không tin cậy được biên dịch trong runtime WebAssembly cô lập. | [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554) (bảo mật ICT) | Cô lập môi trường phân tích khỏi máy chủ. |
 | **Độ phủ metadata có cấu trúc** | 100% bài viết được xuất bản nhúng tiêu đề JSON-LD hợp lệ, tuân thủ schema. | Thông số kỹ thuật [Schema.org](https://schema.org/) | Phân tích front matter tự động và chuyển đổi sang đối tượng JSON-LD. |
 | **Thông lượng biên dịch** | Mục tiêu trang/giây trên 10.000 trên phần cứng thông thường. | Return on Resilience (RoR) | Trình biên dịch AST Rust song song hóa cao. |
@@ -276,7 +276,7 @@ Người xây dựng trang web tĩnh, đội ngũ tài liệu, người viết k
 - World Wide Web Consortium (W3C), 2024. [Web Content Accessibility Guidelines (WCAG) 2.1 ⧉](https://www.w3.org/TR/WCAG21/ "Hướng dẫn Trợ năng Nội dung Web 2.1").
 - Schema.org, 2026. [Thông số kỹ thuật dữ liệu có cấu trúc Schema.org ⧉](https://schema.org/ "Thông số kỹ thuật dữ liệu có cấu trúc Schema.org").
 - European Parliament and Council of the European Union, 2022. [Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "Quy định DORA").
-- European Commission, 2025. [Đạo luật Trợ năng Châu Âu ⧉](https://www.accessibility-act.eu/ "Đạo luật Trợ năng Châu Âu").
+- European Commission, 2025. [Đạo luật Trợ năng Châu Âu ⧉](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en "Đạo luật Trợ năng Châu Âu").
 - US Department of Justice, 2024. [ADA Title III ⧉](https://www.ada.gov/topics/title-iii/ "ADA Title III").
 - WebAssembly Community Group, 2026. [Thông số kỹ thuật WebAssembly ⧉](https://webassembly.org/ "WebAssembly").
 - GitHub, 2026. [Kho lưu trữ HTML Generator ⧉](https://github.com/sebastienrousseau/html-generator "Kho lưu trữ mã nguồn mở HTML Generator").

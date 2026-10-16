@@ -404,10 +404,10 @@ CloudCDN([cloudcdn.pro](https://cloudcdn.pro/ "CloudCDN"))是由本作者發布�
 - Meta AI, (2026). [Llama 4 發布公告 — Maverick、Scout 與 Behemoth 變體 ⧉](https://ai.meta.com/blog/llama-4-multimodal-intelligence/ "Llama 4 release")。Meta。
 - Toshiba / BT, (2025). [倫敦都會區商用 QKD 網路部署 ⧉](https://www.global.toshiba/ww/products-solutions/security-ict/qkd.html "Toshiba quantum key distribution (QKD)")。Toshiba Europe。
 - NVIDIA, (2025). [Spectrum-X Photonics 與 Quantum-X Photonics — AI 工廠的共封裝光學網路 ⧉](https://nvidianews.nvidia.com/news/spectrum-x-quantum-x-photonics "NVIDIA Photonics announcement at GTC 2025")。NVIDIA。
-- European Central Bank Banking Supervision, (2025). [雲端外包與集中風險 — 監理期望 ⧉](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.outsourcingcloud.en.html "ECB Banking Supervision on cloud outsourcing")。ECB。
+- European Central Bank Banking Supervision, (2025). [雲端外包與集中風險 — 監理期望 ⧉](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.supervisory_guides202507.en.pdf "ECB Banking Supervision on cloud outsourcing")。ECB。
 - Zou, W. et al. (2024). [PoisonedRAG:對大型語言模型檢索增強生成的知識破壞攻擊 ⧉](https://arxiv.org/abs/2402.07867 "PoisonedRAG")。arXiv。
 - Cilium / Tetragon Project, (2025). [基於 eBPF 的雲端原生與 Wasm 工作負載執行階段安全與可觀測性 ⧉](https://cilium.io/blog/ "Cilium blog")。Isovalent / Cilium。
-- Qentelli, (2026). [革新銀行業:雲端與 DevOps 如何驅動金融服務的未來 ⧉](https://qentelli.com/thought-leadership/insights/revolutionizing-banking-how-cloud-and-devops-are-powering-the-future-of-financial-services "Qentelli — Cloud and DevOps in Banking")。Qentelli。
+- Qentelli, (2026). 革新銀行業:雲端與 DevOps 如何驅動金融服務的未來。Qentelli。
 - Built In Chicago, (2025). [摩根大通的多雲策略是持續轉型的關鍵 ⧉](https://www.builtinchicago.org/articles/jpmorganchase-multi-cloud-strategy-key-continuous-transformation "JPMorgan's Multi-Cloud Strategy")。Built In。
 - CIO Dive, (2024). [摩根大通執行長想要更多雲端以驅動 AI、分析 ⧉](https://www.ciodive.com/news/jpmorgan-jamie-dimon-cloud-generative-ai-strategy/713093/ "JPMorgan Chase CEO Wants More Cloud")。CIO Dive。
 - Fierce Network, (2024). [J.P. Morgan Payments 高層:由於雲端與 API,『單純當銀行』的時代已過 ⧉](https://www.fierce-network.com/cloud/jp-morgan-payments-exec-talks-cloud-tech-talent-and-apis "J.P. Morgan Payments Exec on Cloud")。Fierce Network。

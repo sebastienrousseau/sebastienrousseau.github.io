@@ -98,6 +98,6 @@ Regev, O. (2005). [**關於格、Learning With Errors、隨機線性碼與密碼
 
 Kuperberg, G. (2005). [**二面體隱藏子群問題的亞指數時間量子演算法。⧉**][02] *SIAM Journal on Computing*, 35(1), 170-188.
 
-[00]: https://eprint.iacr.org/2024/555.pdf "格問題的量子演算法：密碼學的新時代"
+[00]: https://eprint.iacr.org/2024/555 "格問題的量子演算法：密碼學的新時代"
 [01]: https://arxiv.org/abs/2401.03703 "關於格、Learning With Errors、隨機線性碼與密碼學"
 [02]: https://arxiv.org/abs/quant-ph/0302112 "二面體隱藏子群問題的亞指數時間量子演算法"

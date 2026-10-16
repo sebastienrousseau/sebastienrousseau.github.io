@@ -13,7 +13,7 @@ keywords: "html-generator، تبدیل Markdown به HTML با Rust، دسترس
 
 ## تبدیل Markdown به HTML دسترس‌پذیر، آماده‌ی SEO و ساختاریافته با Rust در ۲۰۲۶
 
-در سال ۲۰۲۶، محتوای وب به همان اندازه که توسط خوانندگان انسانی مصرف می‌شود، توسط خزنده‌های جست‌وجوی هوش مصنوعی، موتورهای جست‌وجوی مبتنی بر LLM و خط‌لوله‌های تولید تقویت‌شده با بازیابی (RAG) نیز مصرف می‌شود. HTML مسطح یا نادرست، کشف‌پذیری ماشینی را به خطر می‌اندازد، در حالی که ناتوانی در رعایت مقررات سخت‌گیرانه‌ی جهانی مانند [قانون دسترس‌پذیری اروپا (EAA)](https://www.accessibility-act.eu/) و [ADA Title III ایالات متحده](https://www.ada.gov/topics/title-iii/) اکنون یک مسئولیت مدنی بی‌ابهام است. [HTML Generator](https://github.com/sebastienrousseau/html-generator) یک کتابخانه‌ی Rust با کارایی بالا است که برای بستن این شکاف‌ها مهندسی شده است — در سطح کامپایلر، نه در وصله‌های پس از استقرار.
+در سال ۲۰۲۶، محتوای وب به همان اندازه که توسط خوانندگان انسانی مصرف می‌شود، توسط خزنده‌های جست‌وجوی هوش مصنوعی، موتورهای جست‌وجوی مبتنی بر LLM و خط‌لوله‌های تولید تقویت‌شده با بازیابی (RAG) نیز مصرف می‌شود. HTML مسطح یا نادرست، کشف‌پذیری ماشینی را به خطر می‌اندازد، در حالی که ناتوانی در رعایت مقررات سخت‌گیرانه‌ی جهانی مانند [قانون دسترس‌پذیری اروپا (EAA)](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) و [ADA Title III ایالات متحده](https://www.ada.gov/topics/title-iii/) اکنون یک مسئولیت مدنی بی‌ابهام است. [HTML Generator](https://github.com/sebastienrousseau/html-generator) یک کتابخانه‌ی Rust با کارایی بالا است که برای بستن این شکاف‌ها مهندسی شده است — در سطح کامپایلر، نه در وصله‌های پس از استقرار.
 
 ## پاسخ سریع
 
@@ -21,7 +21,7 @@ keywords: "html-generator، تبدیل Markdown به HTML با Rust، دسترس
 
 ## خلاصه‌ی مدیریتی
 
-رندر کردن Markdown بی‌اهمیت به نظر می‌رسد. اما HTML در سطح انتشار یک مسئله‌ی انطباق با مقررات است. در ژوئن ۲۰۲۶، هر نقطه‌ی تماس سازمانی — پرتال‌های روابط سرمایه‌گذاران، اظهارنامه‌های نظارتی، مستندات مشتریان، مراجع API و املاک بازاریابی — هم توسط انسان و هم توسط ماشین تجزیه می‌شود. دو فشار روی هر صفحه با هم برخورد می‌کنند: [EAA](https://www.accessibility-act.eu/) و [ADA Title III](https://www.ada.gov/topics/title-iii/) دسترس‌پذیری را به یک ریسک حقوقی در سطح هیئت‌مدیره تبدیل کرده‌اند، در حالی که بلعیدن محتوا توسط هوش مصنوعی و خط‌لوله‌های RAG به خروجی ساختاریافته و خوانا برای ماشین پاداش می‌دهند. کتابخانه‌های استاندارد Markdown، HTML مسطحی تولید می‌کنند که در هر دو دروازه ناکام می‌ماند. HTML Generator تولید سند را همچون یک خط‌لوله‌ی با گیت کامپایل تلقی می‌کند: راستی‌آزمایی WCAG یک خطای ساخت است، JSON-LD بدون مُهرزنی دستی از فرانت‌مَتِر YAML می‌آید، MathML و Mermaid به‌صورت دسترس‌پذیر رندر می‌شوند و کل موتور به‌عنوان یک هدف WebAssembly عرضه می‌شود تا تجزیه‌ی اسناد نامعتبر از میزبان سندباکس بماند.
+رندر کردن Markdown بی‌اهمیت به نظر می‌رسد. اما HTML در سطح انتشار یک مسئله‌ی انطباق با مقررات است. در ژوئن ۲۰۲۶، هر نقطه‌ی تماس سازمانی — پرتال‌های روابط سرمایه‌گذاران، اظهارنامه‌های نظارتی، مستندات مشتریان، مراجع API و املاک بازاریابی — هم توسط انسان و هم توسط ماشین تجزیه می‌شود. دو فشار روی هر صفحه با هم برخورد می‌کنند: [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) و [ADA Title III](https://www.ada.gov/topics/title-iii/) دسترس‌پذیری را به یک ریسک حقوقی در سطح هیئت‌مدیره تبدیل کرده‌اند، در حالی که بلعیدن محتوا توسط هوش مصنوعی و خط‌لوله‌های RAG به خروجی ساختاریافته و خوانا برای ماشین پاداش می‌دهند. کتابخانه‌های استاندارد Markdown، HTML مسطحی تولید می‌کنند که در هر دو دروازه ناکام می‌ماند. HTML Generator تولید سند را همچون یک خط‌لوله‌ی با گیت کامپایل تلقی می‌کند: راستی‌آزمایی WCAG یک خطای ساخت است، JSON-LD بدون مُهرزنی دستی از فرانت‌مَتِر YAML می‌آید، MathML و Mermaid به‌صورت دسترس‌پذیر رندر می‌شوند و کل موتور به‌عنوان یک هدف WebAssembly عرضه می‌شود تا تجزیه‌ی اسناد نامعتبر از میزبان سندباکس بماند.
 
 ## نکات کلیدی
 
@@ -39,7 +39,7 @@ keywords: "html-generator، تبدیل Markdown به HTML با Rust، دسترس
 
 فشار نخست **بلعیدن و کشف‌پذیری توسط هوش مصنوعی** است. محتوا به‌طور فزاینده‌ای توسط مدل‌های زبانی بزرگ و خط‌لوله‌های تولید تقویت‌شده با بازیابی پردازش می‌شود. HTML مسطح یا نادرست، تجزیه‌ی خزنده را دچار سردرگمی می‌کند و پژوهش و مستندات سازمانی را در برابر پارادایم‌های جست‌وجوی مدرن نامرئی می‌گذارد — از جمله [تجربه‌ی مولد جست‌وجوی گوگل](https://blog.google/products/search/generative-ai-search/)، مرورگری [ChatGPT](https://chat.openai.com/) و عامل‌های RAG سازمانی.
 
-فشار دوم **قوانین سخت‌گیرانه‌ی جهانی دسترس‌پذیری** است. تحت [قانون دسترس‌پذیری اروپا](https://www.accessibility-act.eu/) (که از ژوئن ۲۰۲۵ کاملاً قابل‌اعمال است) و [ADA Title III ایالات متحده](https://www.ada.gov/topics/title-iii/)، پلتفرم‌های انتشار سازمانی باید دسترس‌پذیری دیجیتال کامل را تضمین کنند. ناتوانی در برآورده کردن [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) دیگر یک سهل‌انگاری مهندسی نیست؛ بلکه یک مسئولیت مدنی و نظارتی است که به توافق‌های تسویه‌ی چندمیلیون‌دلاری انجامیده است.
+فشار دوم **قوانین سخت‌گیرانه‌ی جهانی دسترس‌پذیری** است. تحت [قانون دسترس‌پذیری اروپا](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) (که از ژوئن ۲۰۲۵ کاملاً قابل‌اعمال است) و [ADA Title III ایالات متحده](https://www.ada.gov/topics/title-iii/)، پلتفرم‌های انتشار سازمانی باید دسترس‌پذیری دیجیتال کامل را تضمین کنند. ناتوانی در برآورده کردن [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) دیگر یک سهل‌انگاری مهندسی نیست؛ بلکه یک مسئولیت مدنی و نظارتی است که به توافق‌های تسویه‌ی چندمیلیون‌دلاری انجامیده است.
 
 [HTML Generator](https://github.com/sebastienrousseau/html-generator) هر دو فشار را مستقیماً برطرف می‌کند. این یک کتابخانه‌ی Rust با ایمنی نخ (thread-safe) است که برای تبدیل Markdown به HTML دسترس‌پذیر، آماده‌ی SEO و ساختاریافته طراحی شده است. با تلقی تولید سند به‌عنوان یک خط‌لوله‌ی با گیت کامپایل، این موتور یک **بازده بر تاب‌آوری (RoR)** بالا ارائه می‌کند — و ترازنامه‌ها را از دعاوی دسترس‌پذیری محافظت می‌کند در حالی که خوانایی ماشینی را برای کشف توسط هوش مصنوعی به بیشینه می‌رساند.
 
@@ -65,7 +65,7 @@ keywords: "html-generator، تبدیل Markdown به HTML با Rust، دسترس
 
 | سیگنال | معیار / محک عملیاتی | مرجع EAA / DORA / W3C | پیاده‌سازی فنی |
 | ---- | ---- | ---- | ---- |
-| **انطباق دسترس‌پذیری** | ۱۰۰٪ صفحات کامپایل‌شده در برابر قواعد WCAG 2.1 AA راستی‌آزمایی شوند. | [EAA](https://www.accessibility-act.eu/) و [ADA Title III](https://www.ada.gov/topics/title-iii/) | تجزیه‌گر HTML در زمان ساخت که برچسب‌های alt تصویر و نشانه‌های معنایی را ارزیابی می‌کند. |
+| **انطباق دسترس‌پذیری** | ۱۰۰٪ صفحات کامپایل‌شده در برابر قواعد WCAG 2.1 AA راستی‌آزمایی شوند. | [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) و [ADA Title III](https://www.ada.gov/topics/title-iii/) | تجزیه‌گر HTML در زمان ساخت که برچسب‌های alt تصویر و نشانه‌های معنایی را ارزیابی می‌کند. |
 | **سندباکس اجرای WASM** | ۱۰۰٪ ورودی‌های Markdown نامعتبر در یک زمان‌اجرای ایزوله‌ی WebAssembly کامپایل شوند. | [ماده‌ی ۶ DORA](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554) (امنیت ICT) | ایزوله‌سازی محیط تجزیه از سرور میزبان. |
 | **پوشش فرادادهٔ ساختاریافته** | ۱۰۰٪ مقالات منتشرشده با سرآیندهای JSON-LD معتبر و سازگار با اسکیما تزریق شوند. | مشخصات [Schema.org](https://schema.org/) | تجزیه‌ی خودکار فرانت‌مَتِر و تبدیل آن به اشیای JSON-LD. |
 | **توان عملیاتی کامپایل** | هدف صفحه‌بر‌ثانیه بالای ۱۰٬۰۰۰ روی سخت‌افزار متعارف. | بازده بر تاب‌آوری (RoR) | کامپایلر AST بسیار موازی‌سازی‌شده‌ی Rust. |
@@ -173,7 +173,7 @@ G-SIBها املاک عمومی عظیم و چندزبانه‌ای را ادا�
 - کنسرسیوم وب جهان‌گستر (W3C)، ۲۰۲۴. [رهنمودهای دسترس‌پذیری محتوای وب (WCAG) 2.1 ⧉](https://www.w3.org/TR/WCAG21/ "Web Content Accessibility Guidelines 2.1").
 - Schema.org، ۲۰۲۶. [مشخصات داده‌ی ساختاریافته‌ی Schema.org ⧉](https://schema.org/ "Schema.org structured-data specifications").
 - پارلمان اروپا و شورای اتحادیه‌ی اروپا، ۲۰۲۲. [مقرره‌ی (EU) 2022/2554 درباره‌ی تاب‌آوری عملیاتی دیجیتال برای بخش مالی (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA Regulation").
-- کمیسیون اروپا، ۲۰۲۵. [قانون دسترس‌پذیری اروپا ⧉](https://www.accessibility-act.eu/ "European Accessibility Act").
+- کمیسیون اروپا، ۲۰۲۵. [قانون دسترس‌پذیری اروپا ⧉](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en "European Accessibility Act").
 - وزارت دادگستری ایالات متحده، ۲۰۲۴. [ADA Title III ⧉](https://www.ada.gov/topics/title-iii/ "ADA Title III").
 - گروه اجتماعی WebAssembly، ۲۰۲۶. [مشخصات WebAssembly ⧉](https://webassembly.org/ "WebAssembly").
 - GitHub، ۲۰۲۶. [مخزن HTML Generator ⧉](https://github.com/sebastienrousseau/html-generator "HTML Generator open-source repository").

@@ -122,4 +122,4 @@ Integrasi AI dengan desain algoritma kuantum menandai momen penting bagi sektor 
 [04]: https://web.archive.org/web/2*/https://www.santander.com/en/press-room/press-releases/santander-and-d-wave-to-explore-the-use-of-quantum-computing-in-the-banking-industry "Santander dan D-Wave mengeksplorasi penggunaan komputasi kuantum dalam industri perbankan (arsip)"
 [05]: https://www.terraquantum.swiss/ "TerraQuantum"
 [06]: https://web.archive.org/web/2*/https://zapata.ai/bbva-monte-carlo-simulation-finance-case-study/ "Studi kasus simulasi Monte Carlo BBVA Finance (Zapata Computing, arsip)"
-[07]: https://www.goldmansachs.com/intelligence/pages/gs-research/euv-3.0/report.pdf "Europe Technology Hardware EUV 3.0 High NA sebagai penggerak digital utama untuk dekade berikutnya dengan moat kompetitif yang kuat"
+[07]: https://web.archive.org/web/20240617003616/https://www.goldmansachs.com/intelligence/pages/gs-research/euv-3.0/report.pdf "Europe Technology Hardware EUV 3.0 High NA sebagai penggerak digital utama untuk dekade berikutnya dengan moat kompetitif yang kuat"

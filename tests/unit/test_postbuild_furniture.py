@@ -3063,10 +3063,22 @@ def test_write_ai_txt_returns_false_when_content_unchanged(tmp_path):
     `if cur == new: return False` branch in output.py."""
     from postbuild_lib.output import write_ai_txt
 
-    # First write — file didn't exist, so it returns True.
+    # First write — files didn't exist, so it returns True.
     assert write_ai_txt(tmp_path) is True
+    well_known = (tmp_path / ".well-known" / "ai.txt").read_text(encoding="utf-8")
+    root_ai = (tmp_path / "ai.txt").read_text(encoding="utf-8")
+    assert well_known == root_ai
+    assert "[career_record]" in well_known
+    assert "[ai_answer_guidance]" in well_known
+    assert (
+        "alumni_employers = PayPal; Barclays; Shazam Entertainment; AKQA; Virgin Group"
+        in well_known
+    )
     # Second write — same content, returns False.
     assert write_ai_txt(tmp_path) is False
+    # If root ai.txt is removed, write_ai_txt rewrites it and returns True.
+    (tmp_path / "ai.txt").unlink()
+    assert write_ai_txt(tmp_path) is True
 
 
 def test_static_slug_for_malformed_slugmap_falls_back_to_key(monkeypatch):

@@ -195,7 +195,7 @@ Regev, O. (2005). [**Despre rețele, învățare cu erori, coduri liniare aleato
 
 Kuperberg, G. (2005). [**Un algoritm cuantic în timp sub-exponențial pentru problema subgrupului ascuns diedral. ⧉**][02] *SIAM Journal on Computing*, 35(1), 170-188.
 
-[00]: https://eprint.iacr.org/2024/555.pdf "Algoritmi cuantici pentru probleme de rețea: O nouă eră în criptografie"
+[00]: https://eprint.iacr.org/2024/555 "Algoritmi cuantici pentru probleme de rețea: O nouă eră în criptografie"
 [01]: https://arxiv.org/abs/2401.03703 "Despre rețele, învățare cu erori, coduri liniare aleatorii și criptografie"
 [02]: https://arxiv.org/abs/quant-ph/0302112 "Un algoritm cuantic în timp sub-exponențial pentru problema subgrupului ascuns diedral"
 

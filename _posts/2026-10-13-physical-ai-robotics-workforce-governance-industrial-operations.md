@@ -236,7 +236,7 @@ The primary standards include ISO 10218-1 and ISO 10218-2 (safety requirements f
 - Bishop, L., (2026). [Human Factors, Psychological Safety, and Governance in Autonomous Systems ⧉](https://www.bsigroup.com/ "British Standards Institution"). British Standards Institution (BSI).
 - British Standards Institution, (2025). [BSI PAS 2025: Governance and ethical deployment of autonomous mobile systems in industrial environments ⧉](https://www.bsigroup.com/standards/ "BSI Standards"). BSI.
 - European Parliament and Council, (2024). [Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) ⧉](https://eur-lex.europa.eu/eli/reg/2024/1689/oj "EU AI Act"). Official Journal of the European Union.
-- Bainbridge, L., (1983). [Ironies of Automation ⧉](https://doi.org/10.1016/S1474-6670(17)62877-6 "Ironies of Automation"). Automatica, 19(6), 775-779.
+- Bainbridge, L., (1983). [Ironies of Automation ⧉](https://doi.org/10.1016/0005-1098%2883%2990046-8 "Ironies of Automation"). Automatica, 19(6), 775-779.
 - International Organization for Standardization, (2026). [ISO/TS 15066:2026 Robots and robotic devices - Collaborative robots ⧉](https://www.iso.org/standard/iso-ts-15066.html "ISO/TS 15066"). ISO.
 
 <!-- enrich-start -->

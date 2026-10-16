@@ -147,7 +147,7 @@ CATEGORIES = [
                 "https://cloudcdn.pro/clients/audioanalyser/v1/logos/audioanalyser.svg",
                 "Banner for Audio Analyser",
                 "Converts audio to text in real time using AI speech recognition. Aimed at analysing recorded conversations and meetings.",
-                "https://audioanalyser.co/",
+                "https://github.com/sebastienrousseau/audioanalyser.github.io",
             ),
             P(
                 "JavaScript · Security",
@@ -234,7 +234,7 @@ CATEGORIES = [
                 "https://cloudcdn.pro/clients/mini-functions/v1/logos/mini-functions.svg",
                 "Banner for the Mini Functions Rust library",
                 "A utility and wrapper-function library for Rust.",
-                "http://minifunctions.com/",
+                "https://minifunctions.com/",
             ),
         ],
     },
@@ -249,7 +249,7 @@ CATEGORIES = [
                 "https://cloudcdn.pro/clients/kaishi/v1/logos/kaishi.svg",
                 "Banner for Kaishi, a starter template",
                 "A starter template for the Static Site Generator, set up for clean and accessible sites. The template I use when starting a new site.",
-                "https://github.com/sebastienrousseau/kaishi.github.io",
+                "https://github.com/sebastienrousseau/static-site-generator",
             ),
             P(
                 "CSS · Stylus",

@@ -243,7 +243,7 @@ AI প্রযুক্তির এই গণতান্ত্রিকীক
 [01]: https://www.hsbc.com/news-and-views/news/media-releases/2023/hsbc-pioneers-quantum-protection-for-ai-powered-fx-trading "ব্যাংকিং কার্যক্রমে কোয়ান্টাম কম্পিউটিংয়ের HSBC-এর একত্রীকরণ"
 [02]: https://www.linkedin.com/in/sebastienrousseau/ "লিঙ্কডইন-এ সেবাস্তিয়ান রুসো"
 [03]: https://sebastienrousseau.com/contact/index.html "সেবাস্তিয়ান রুসোর সাথে যোগাযোগ"
-[05]: http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm "জেনারেটিভ আর্টিফিশিয়াল ইন্টেলিজেন্স সার্ভিস ম্যানেজমেন্টের অন্তর্বর্তীকালীন ব্যবস্থা"
+[05]: https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm "জেনারেটিভ আর্টিফিশিয়াল ইন্টেলিজেন্স সার্ভিস ম্যানেজমেন্টের অন্তর্বর্তীকালীন ব্যবস্থা"
 [06]: https://www.fmprc.gov.cn/mfa_eng/wjdt_665385/2649_665393/202310/t20231020_11164834.html "গ্লোবাল AI গভর্ন্যান্স ইনিশিয়েটিভ"
 [07]: https://github.com/nlpxucan/WizardLM "WizardLM"
 [08]: https://ai.meta.com/llama/ "LLaMA 2"

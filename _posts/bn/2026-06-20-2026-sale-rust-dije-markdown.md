@@ -116,7 +116,7 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-২০২৬ সালে, ওয়েব কন্টেন্ট মানব পাঠকদের মতো সমানভাবে AI সার্চ ক্রলার, LLM-চালিত সার্চ ইঞ্জিন এবং Retrieval-Augmented Generation (RAG) পাইপলাইন দ্বারাও গৃহীত হচ্ছে। সমতল বা ত্রুটিযুক্ত HTML মেশিন আবিষ্কারযোগ্যতাকে ক্ষতিগ্রস্ত করে, আর [ইউরোপীয় অ্যাক্সেসিবিলিটি অ্যাক্ট (EAA)](https://www.accessibility-act.eu/) এবং [মার্কিন ADA Title III](https://www.ada.gov/topics/title-iii/)-এর মতো কঠোর বৈশ্বিক বিধিবিধান মেনে না চলা এখন স্পষ্ট দেওয়ানি দায়বদ্ধতা। [HTML Generator](https://github.com/sebastienrousseau/html-generator) হল একটি উচ্চ-কার্যক্ষমতাসম্পন্ন Rust লাইব্রেরি যা এই ফাঁকগুলো পূরণ করতে তৈরি — কম্পাইলারে, ডিপ্লয়মেন্ট-পরবর্তী প্যাচে নয়।
+২০২৬ সালে, ওয়েব কন্টেন্ট মানব পাঠকদের মতো সমানভাবে AI সার্চ ক্রলার, LLM-চালিত সার্চ ইঞ্জিন এবং Retrieval-Augmented Generation (RAG) পাইপলাইন দ্বারাও গৃহীত হচ্ছে। সমতল বা ত্রুটিযুক্ত HTML মেশিন আবিষ্কারযোগ্যতাকে ক্ষতিগ্রস্ত করে, আর [ইউরোপীয় অ্যাক্সেসিবিলিটি অ্যাক্ট (EAA)](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) এবং [মার্কিন ADA Title III](https://www.ada.gov/topics/title-iii/)-এর মতো কঠোর বৈশ্বিক বিধিবিধান মেনে না চলা এখন স্পষ্ট দেওয়ানি দায়বদ্ধতা। [HTML Generator](https://github.com/sebastienrousseau/html-generator) হল একটি উচ্চ-কার্যক্ষমতাসম্পন্ন Rust লাইব্রেরি যা এই ফাঁকগুলো পূরণ করতে তৈরি — কম্পাইলারে, ডিপ্লয়মেন্ট-পরবর্তী প্যাচে নয়।
 
 ## সংক্ষিপ্ত উত্তর
 
@@ -124,7 +124,7 @@ site_software: "Static Site Generator, Rust"
 
 ## নির্বাহী সারসংক্ষেপ
 
-Markdown রেন্ডারিং তুচ্ছ মনে হয়। পাবলিশিং-গ্রেড HTML একটি কমপ্লায়েন্স সমস্যা। ২০২৬ সালের জুনে, প্রতিটি কর্পোরেট টাচপয়েন্ট — বিনিয়োগকারী সম্পর্ক পোর্টাল, নিয়ন্ত্রক দাখিলপত্র, গ্রাহক ডকুমেন্টেশন, API রেফারেন্স, মার্কেটিং সম্পদ — মানুষ এবং মেশিন উভয় দ্বারাই পার্স করা হচ্ছে। প্রতিটি পাতায় দুটি চাপ সংঘর্ষ করছে: [EAA](https://www.accessibility-act.eu/) এবং [ADA Title III](https://www.ada.gov/topics/title-iii/) অ্যাক্সেসিবিলিটিকে বোর্ড-স্তরের আইনি ঝুঁকিতে পরিণত করেছে, আর AI ইনজেশন এবং RAG পাইপলাইন কাঠামোবদ্ধ, মেশিন-পাঠযোগ্য আউটপুটকে পুরস্কৃত করে। মানক Markdown লাইব্রেরি সমতল HTML তৈরি করে যা উভয় গেটেই ব্যর্থ হয়। HTML Generator ডকুমেন্ট জেনারেশনকে একটি কম্পাইল-গেটেড পাইপলাইন হিসেবে ব্যবহার করে: WCAG যাচাইকরণ একটি বিল্ড এরর, JSON-LD YAML ফ্রন্ট ম্যাটার থেকে ম্যানুয়াল স্ট্যাম্পিং ছাড়াই আসে, MathML ও Mermaid অ্যাক্সেসিবলভাবে রেন্ডার করে, এবং সম্পূর্ণ ইঞ্জিন একটি WebAssembly টার্গেট হিসেবে পাঠানো হয় যাতে অবিশ্বস্ত ডকুমেন্ট পার্সিং হোস্ট থেকে স্যান্ডবক্সড থাকে।
+Markdown রেন্ডারিং তুচ্ছ মনে হয়। পাবলিশিং-গ্রেড HTML একটি কমপ্লায়েন্স সমস্যা। ২০২৬ সালের জুনে, প্রতিটি কর্পোরেট টাচপয়েন্ট — বিনিয়োগকারী সম্পর্ক পোর্টাল, নিয়ন্ত্রক দাখিলপত্র, গ্রাহক ডকুমেন্টেশন, API রেফারেন্স, মার্কেটিং সম্পদ — মানুষ এবং মেশিন উভয় দ্বারাই পার্স করা হচ্ছে। প্রতিটি পাতায় দুটি চাপ সংঘর্ষ করছে: [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) এবং [ADA Title III](https://www.ada.gov/topics/title-iii/) অ্যাক্সেসিবিলিটিকে বোর্ড-স্তরের আইনি ঝুঁকিতে পরিণত করেছে, আর AI ইনজেশন এবং RAG পাইপলাইন কাঠামোবদ্ধ, মেশিন-পাঠযোগ্য আউটপুটকে পুরস্কৃত করে। মানক Markdown লাইব্রেরি সমতল HTML তৈরি করে যা উভয় গেটেই ব্যর্থ হয়। HTML Generator ডকুমেন্ট জেনারেশনকে একটি কম্পাইল-গেটেড পাইপলাইন হিসেবে ব্যবহার করে: WCAG যাচাইকরণ একটি বিল্ড এরর, JSON-LD YAML ফ্রন্ট ম্যাটার থেকে ম্যানুয়াল স্ট্যাম্পিং ছাড়াই আসে, MathML ও Mermaid অ্যাক্সেসিবলভাবে রেন্ডার করে, এবং সম্পূর্ণ ইঞ্জিন একটি WebAssembly টার্গেট হিসেবে পাঠানো হয় যাতে অবিশ্বস্ত ডকুমেন্ট পার্সিং হোস্ট থেকে স্যান্ডবক্সড থাকে।
 
 ## মূল বিষয়সমূহ
 
@@ -142,7 +142,7 @@ Markdown রেন্ডারিং তুচ্ছ মনে হয়। প�
 
 প্রথমটি হল **AI ইনজেশন এবং আবিষ্কারযোগ্যতা**। কন্টেন্ট ক্রমশ বৃহৎ ভাষা মডেল এবং Retrieval-Augmented Generation পাইপলাইন দ্বারা প্রক্রিয়াকৃত হচ্ছে। সমতল বা ত্রুটিযুক্ত HTML ক্রলার পার্সিংকে বিভ্রান্ত করে, কর্পোরেট গবেষণা ও ডকুমেন্টেশনকে আধুনিক সার্চ প্যারাডাইমের কাছে অদৃশ্য করে — [Google Search Generative Experience](https://blog.google/products/search/generative-ai-search/), [ChatGPT](https://chat.openai.com/) ব্রাউজিং এবং এন্টারপ্রাইজ RAG এজেন্ট সহ।
 
-দ্বিতীয়টি হল **কঠোর বৈশ্বিক অ্যাক্সেসিবিলিটি আইন**। [ইউরোপীয় অ্যাক্সেসিবিলিটি অ্যাক্ট](https://www.accessibility-act.eu/) (জুন ২০২৫ থেকে সম্পূর্ণরূপে প্রযোজ্য) এবং [মার্কিন ADA Title III](https://www.ada.gov/topics/title-iii/)-এর অধীনে, কর্পোরেট পাবলিশিং প্ল্যাটফর্মকে সম্পূর্ণ ডিজিটাল অ্যাক্সেসিবিলিটি নিশ্চিত করতে হবে। [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) পূরণ করতে ব্যর্থতা আর ইঞ্জিনিয়ারিং গাফিলতি নয়; এটি একটি দেওয়ানি ও নিয়ন্ত্রক দায় যা বহু মিলিয়ন ডলারের নিষ্পত্তি তৈরি করেছে।
+দ্বিতীয়টি হল **কঠোর বৈশ্বিক অ্যাক্সেসিবিলিটি আইন**। [ইউরোপীয় অ্যাক্সেসিবিলিটি অ্যাক্ট](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) (জুন ২০২৫ থেকে সম্পূর্ণরূপে প্রযোজ্য) এবং [মার্কিন ADA Title III](https://www.ada.gov/topics/title-iii/)-এর অধীনে, কর্পোরেট পাবলিশিং প্ল্যাটফর্মকে সম্পূর্ণ ডিজিটাল অ্যাক্সেসিবিলিটি নিশ্চিত করতে হবে। [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) পূরণ করতে ব্যর্থতা আর ইঞ্জিনিয়ারিং গাফিলতি নয়; এটি একটি দেওয়ানি ও নিয়ন্ত্রক দায় যা বহু মিলিয়ন ডলারের নিষ্পত্তি তৈরি করেছে।
 
 [HTML Generator](https://github.com/sebastienrousseau/html-generator) উভয় চাপ সরাসরি মোকাবেলা করে। এটি একটি থ্রেড-নিরাপদ Rust লাইব্রেরি যা Markdown-কে অ্যাক্সেসিবল, SEO-প্রস্তুত, কাঠামোবদ্ধ HTML-এ রূপান্তরিত করতে ডিজাইন করা হয়েছে। ডকুমেন্ট জেনারেশনকে একটি কম্পাইলার-গেটেড পাইপলাইন হিসেবে ব্যবহার করে, ইঞ্জিন একটি উচ্চ **Return on Resilience (RoR)** প্রদান করে — অ্যাক্সেসিবিলিটি মামলা থেকে ব্যালেন্স শিট রক্ষা করে এবং AI আবিষ্কারের জন্য মেশিন-পাঠযোগ্যতা সর্বাধিক করে।
 
@@ -168,7 +168,7 @@ Markdown রেন্ডারিং তুচ্ছ মনে হয়। প�
 
 | সংকেত | মেট্রিক / অপারেশনাল বেঞ্চমার্ক | EAA / DORA / W3C রেফারেন্স | প্রযুক্তিগত বাস্তবায়ন |
 | ---- | ---- | ---- | ---- |
-| **অ্যাক্সেসিবিলিটি সম্মতি** | কম্পাইল করা পাতার ১০০% WCAG 2.1 AA নিয়মের বিপরীতে যাচাইকৃত। | [EAA](https://www.accessibility-act.eu/) এবং [ADA Title III](https://www.ada.gov/topics/title-iii/) | বিল্ড-টাইম HTML পার্সার ছবির alt ট্যাগ ও সিমান্টিক ল্যান্ডমার্ক মূল্যায়ন করছে। |
+| **অ্যাক্সেসিবিলিটি সম্মতি** | কম্পাইল করা পাতার ১০০% WCAG 2.1 AA নিয়মের বিপরীতে যাচাইকৃত। | [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) এবং [ADA Title III](https://www.ada.gov/topics/title-iii/) | বিল্ড-টাইম HTML পার্সার ছবির alt ট্যাগ ও সিমান্টিক ল্যান্ডমার্ক মূল্যায়ন করছে। |
 | **WASM এক্সিকিউশন স্যান্ডবক্স** | একটি আইসোলেটেড WebAssembly রানটাইমে কম্পাইল করা অবিশ্বস্ত Markdown ইনপুটের ১০০%। | [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554) (ICT নিরাপত্তা) | হোস্ট সার্ভার থেকে পার্সিং পরিবেশ আইসোলেশন। |
 | **কাঠামোবদ্ধ-মেটাডেটা কভারেজ** | বৈধ, স্কিমা-সম্মত JSON-LD হেডার সহ প্রকাশিত নিবন্ধের ১০০%। | [Schema.org](https://schema.org/) স্পেসিফিকেশন | স্বয়ংক্রিয় ফ্রন্ট-ম্যাটার পার্সিং এবং JSON-LD অবজেক্টে রূপান্তর। |
 | **কম্পাইলেশন থ্রুপুট** | কমোডিটি হার্ডওয়্যারে প্রতি-সেকেন্ড ১০,০০০-এর বেশি পাতার লক্ষ্যমাত্রা। | Return on Resilience (RoR) | উচ্চ-সমান্তরাল Rust AST কম্পাইলার। |
@@ -276,7 +276,7 @@ G-SIBs বিশাল, বহুভাষিক পাবলিক এস্ট
 - World Wide Web Consortium (W3C), 2024. [Web Content Accessibility Guidelines (WCAG) 2.1 ⧉](https://www.w3.org/TR/WCAG21/ "Web Content Accessibility Guidelines 2.1")।
 - Schema.org, 2026. [Schema.org কাঠামোবদ্ধ-ডেটা স্পেসিফিকেশন ⧉](https://schema.org/ "Schema.org structured-data specifications")।
 - European Parliament and Council of the European Union, 2022. [আর্থিক খাতে ডিজিটাল অপারেশনাল স্থিতিস্থাপকতা সংক্রান্ত প্রবিধান (EU) 2022/2554 (DORA) ⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA Regulation")।
-- European Commission, 2025. [ইউরোপীয় অ্যাক্সেসিবিলিটি অ্যাক্ট ⧉](https://www.accessibility-act.eu/ "European Accessibility Act")।
+- European Commission, 2025. [ইউরোপীয় অ্যাক্সেসিবিলিটি অ্যাক্ট ⧉](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en "European Accessibility Act")।
 - US Department of Justice, 2024. [ADA Title III ⧉](https://www.ada.gov/topics/title-iii/ "ADA Title III")।
 - WebAssembly Community Group, 2026. [WebAssembly স্পেসিফিকেশন ⧉](https://webassembly.org/ "WebAssembly")।
 - GitHub, 2026. [HTML Generator রিপোজিটরি ⧉](https://github.com/sebastienrousseau/html-generator "HTML Generator open-source repository")।

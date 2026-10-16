@@ -61,10 +61,10 @@ NIST आपली PQC मानकीकरण प्रक्रिया स�
 - Kuperberg, G. (2005). [dihedral hidden subgroup समस्येसाठी उप-घातांकीय-वेळ (subexponential-time) क्वांटम अल्गोरिदम. ⧉][03] SIAM Journal on Computing, 35(1), 170-188.
 
 [00]: https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html "लॅटिस-आधारित क्रिप्टोग्राफीसाठीच्या क्वांटम अल्गोरिदममधील आव्हाने"
-[01]: https://eprint.iacr.org/2024/555.pdf "लॅटिस समस्यांसाठी क्वांटम अल्गोरिदम: क्रिप्टोग्राफीतील एक नवे युग"
+[01]: https://eprint.iacr.org/2024/555 "लॅटिस समस्यांसाठी क्वांटम अल्गोरिदम: क्रिप्टोग्राफीतील एक नवे युग"
 [02]: https://nigelsmart.github.io/LWE.html "लर्निंग विथ एरर्स"
 [03]: https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization "पोस्ट-क्वांटम क्रिप्टोग्राफी मानकीकरण"
 [04]: https://pq-crystals.org/kyber/ "Kyber"
 [05]: https://pq-crystals.org/dilithium/ "Dilithium"
-[06]: https://www.inferati.com/blog/fhe-schemes-bgv "BGV"
+[06]: https://web.archive.org/web/20250512205935/https://www.inferati.com/blog/fhe-schemes-bgv "BGV"
 [07]: https://tfhe.github.io/tfhe/ "TFHE"

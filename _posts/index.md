@@ -13,7 +13,7 @@ cdn: "https://cloudcdn.pro/clients"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Apr 01, 2024"
-description: "AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography."
+description: "Open-source ISO 20022 and post-quantum cryptography for banks: 179 audited packages, 51M+ downloads, and research for wholesale payments leaders."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -23,7 +23,7 @@ image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "banking, financial services, artificial intelligence, post-quantum cryptography, blockchain technology, transformation, innovation, technology, future, Sebastien Rousseau"
-last_reviewed: "2026-05-14"
+last_reviewed: "2026-10-15"
 language: "en-GB"
 layout: "index"
 locale: "en_GB"
@@ -49,7 +49,7 @@ short_name: "sebastienrousseau"
 subtitle: "AI, Banking & Financial Services Expert · Senior Product Manager – Wholesale Payments & API at HSBC Commercial & Investment Bank · Applied AI · ISO 20022 · Post-Quantum Cryptography"
 tags: "banking, financial services, artificial intelligence, post-quantum cryptography, blockchain technology, transformation, innovation, technology, future, Sebastien Rousseau"
 theme-color: "0, 67, 165"
-title: "Sebastien Rousseau: AI, Payments & Quantum Cryptography"
+title: "Sebastien Rousseau · Post-Quantum & ISO 20022 for Banking"
 url: "https://sebastienrousseau.com"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -62,7 +62,7 @@ item_description: "AI, banking and financial services expert. Senior payments le
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
 item_pub_date: "Mon, 15 Apr 2024 06:06:06 +0000"
-item_title: "Sebastien Rousseau: AI, Banking &amp; Financial Services Expert"
+item_title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
 last_build_date: "Mon, 15 Apr 2024 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Mon, 15 Apr 2024 06:06:06 +0000"
@@ -76,7 +76,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Sebastien Rousseau: AI, Banking &amp; Financial Services Expert"
+apple-mobile-web-app-title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -87,11 +87,11 @@ msapplication-navbutton-color: "0, 67, 165"
 
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "AI, banking and financial services expert. Senior payments leader with nearly two decades across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services."
+twitter_description: "Open-source ISO 20022 and post-quantum cryptography for banks: 179 audited packages, 51M+ downloads, and research for wholesale payments leaders."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Sebastien Rousseau: AI, Banking &amp; Financial Services Expert"
+twitter_title: "Sebastien Rousseau · Post-Quantum & ISO 20022 for Banking"
 twitter_url: "https://sebastienrousseau.com"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -99,7 +99,7 @@ author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2024-04-15"
+site_last_updated: "2026-10-15"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
@@ -130,7 +130,7 @@ site_software: "Static Site Generator, Rust"
 <span class="artefact-title">pacs.008.001.10 · ML-KEM-768 · Sigstore</span>
 <span class="artefact-badge">VERIFIED</span>
 </div>
-<pre class="artefact-code"><code><span class="artefact-comment"># 1. Validate ISO 20022 pacs.008.001.10 (pip install pacs008)</span>&#10;<span class="artefact-cmd">$ pacs008 -t pacs.008.001.10 -m template.xml -s schema.xsd -d payments.csv --dry-run</span>&#10;<span class="artefact-ok">✓ Schema validation passed</span>&#10;<span class="artefact-ok">✓ Data validation passed (1 payment records)</span>&#10;&#10;<span class="artefact-comment"># 2. Verify NIST FIPS 203 ML-KEM-768 KEM (cargo add kyberlib)</span>&#10;<span class="artefact-cmd">$ cargo test -p kyberlib --test test_kem</span>&#10;<span class="artefact-ok">✓ test keypair_encap_decap ... ok</span>&#10;<span class="artefact-ok">✓ test result: ok. 9 passed; 0 failed; finished in 0.01s</span>&#10;&#10;<span class="artefact-comment"># 3. Verify live CycloneDX SBOM provenance (SLSA / Sigstore)</span>&#10;<span class="artefact-cmd">$ curl -sSLO https://sebastienrousseau.com/sbom.cdx.json &amp;&amp; gh attestation verify sbom.cdx.json --owner sebastienrousseau</span>&#10;<span class="artefact-ok">✓ Loaded 1 attestation from GitHub API (slsa.dev/provenance/v1)</span>&#10;<span class="artefact-ok">✓ Verification succeeded!</span></code></pre>
+<pre class="artefact-code" tabindex="0" aria-label="Verified CLI commands for pacs008, kyberlib, and Sigstore SBOM attestation"><code><span class="artefact-comment"># 1. Validate ISO 20022 pacs.008.001.10 (pip install pacs008)</span>&#10;<span class="artefact-cmd"><span class="artefact-prompt" aria-hidden="true">$ </span>pacs008 -t pacs.008.001.10 -m template.xml -s schema.xsd -d payments.csv --dry-run</span>&#10;<span class="artefact-ok">✓ Schema validation passed</span>&#10;<span class="artefact-ok">✓ Data validation passed (1 payment records)</span>&#10;&#10;<span class="artefact-comment"># 2. Verify NIST FIPS 203 ML-KEM-768 KEM (cargo add kyberlib)</span>&#10;<span class="artefact-cmd"><span class="artefact-prompt" aria-hidden="true">$ </span>cargo test -p kyberlib --test test_kem</span>&#10;<span class="artefact-ok">✓ test keypair_encap_decap ... ok</span>&#10;<span class="artefact-ok">✓ test result: ok. 9 passed; 0 failed; finished in 0.01s</span>&#10;&#10;<span class="artefact-comment"># 3. Verify live CycloneDX SBOM provenance (SLSA / Sigstore)</span>&#10;<span class="artefact-cmd"><span class="artefact-prompt" aria-hidden="true">$ </span>curl -sSLO https://sebastienrousseau.com/sbom.cdx.json &amp;&amp; gh attestation verify sbom.cdx.json --owner sebastienrousseau</span>&#10;<span class="artefact-ok">✓ Loaded 1 attestation from GitHub API (slsa.dev/provenance/v1)</span>&#10;<span class="artefact-ok">✓ Verification succeeded!</span></code></pre>
 <figcaption class="artefact-foot">
 <span>ISO 20022 · SWIFT CBPR+</span>
 <span>NIST FIPS 203 (ML-KEM)</span>
@@ -145,19 +145,19 @@ site_software: "Static Site Generator, Rust"
 <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h13l-3-3m3 3-3 3"/><path d="M20 17H7l3-3m-3 3 3 3"/></svg>
 <h3>Payments</h3>
 <p>ISO 20022, end to end: pain.001, pacs.008, camt.053, and acmt.001. Adopt one library at a time.</p>
-<a class="offer-link" href="/projects-payments/index.html">Learn more <span aria-hidden="true">&rsaquo;</span></a>
+<a class="offer-link" href="/projects-payments/index.html">Explore the ISO 20022 libraries <span aria-hidden="true">&rsaquo;</span></a>
 </article>
 <article class="offer-card" data-audience-card="boards engineers regulators">
 <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5c0 4 3 7 7 8 4-1 7-4 7-8V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
 <h3>Security</h3>
 <p>Post-quantum primitives: ML-KEM (CRYSTALS-Kyber, NIST FIPS 203) and hashing, ready to pilot today.</p>
-<a class="offer-link" href="/projects-post-quantum/index.html">Learn more <span aria-hidden="true">&rsaquo;</span></a>
+<a class="offer-link" href="/projects-post-quantum/index.html">See the post-quantum primitives <span aria-hidden="true">&rsaquo;</span></a>
 </article>
 <article class="offer-card" data-audience-card="engineers regulators">
 <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
 <h3>Tooling</h3>
 <p>Audited Rust libraries and a code security scanner, signed and shipped with a software bill of materials.</p>
-<a class="offer-link" href="/projects-developer-platform/index.html">Learn more <span aria-hidden="true">&rsaquo;</span></a>
+<a class="offer-link" href="/projects-developer-platform/index.html">View the tooling <span aria-hidden="true">&rsaquo;</span></a>
 </article>
 </div>
 </div>
@@ -186,7 +186,10 @@ site_software: "Static Site Generator, Rust"
   <span class="kpi-cell-label">Packages published</span>
 </div>
 </section>
-<p class="proof-note">Most downloads come from transitive dependencies in CI/CD pipelines and production services across PyPI, crates.io, and npm.</p>
+<p class="proof-note">Most downloads come from transitive dependencies in CI/CD pipelines and production services across PyPI, crates.io, and npm &middot; <span class="proof-updated">Updated <time datetime="2026-10-15">15 Oct 2026</time>.</span></p>
+<p class="feat-eyebrow">Career</p>
+<h3 id="trusted" class="feat-headline center">Where I've worked.</h3>
+<p class="feat-sub center">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group.</p>
 <div class="brands" aria-label="Organisations across my career">
 <img alt="HSBC logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
 <img alt="PayPal logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/paypal.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
@@ -196,8 +199,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="Virgin logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/virgin.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
 </div>
 <ul class="proof-credibility" aria-label="Institutional credentials and standards">
-<li><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf">EPAA White Paper (Sep 2025)</a></li>
-<li><a href="/speaking/index.html">Economist Impact Speaker</a></li>
+<li><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf">EPAA White Paper (Sep 2025, PDF)</a></li>
 <li><a href="/projects-post-quantum/index.html">NIST FIPS 203 ML-KEM</a></li>
 <li><a href="/iso20022-mcp/index.html">SWIFT CBPR+ / ISO 20022</a></li>
 <li><a href="/trust/index.html">Sigstore &amp; CycloneDX SBOM</a></li>
@@ -212,9 +214,9 @@ site_software: "Static Site Generator, Rust"
 </div>
 <div class="feat-card-body">
 <p class="feat-eyebrow">EPAA · September 2025</p>
-<h3 id="paper">Why the payments industry must act now.</h3>
+<h2 id="paper" class="feat-card-title">Why the payments industry must act now.</h2>
 <p>Regulators are treating harvest-now-decrypt-later as a credible present risk. This paper, produced for the Emerging Payments Association Asia, sets out the structural threat and the case for coordinated action across wholesale payment rails.</p>
-<p><a class="pill" href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" title="EPAA Quantum-Safe Payments White Paper">Read the white paper</a></p>
+<p><a class="pill" href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" title="EPAA Quantum-Safe Payments White Paper (PDF)">Read the white paper (PDF)</a></p>
 </div>
 </article>
 </section>

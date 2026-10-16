@@ -116,7 +116,7 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-2026 年，網路內容被 AI 搜尋爬蟲、LLM 驅動的搜尋引擎與檢索增強生成（RAG）管線消費的比例，已與人類讀者相當。扁平或格式錯誤的 HTML 會干擾機器探索，而未能遵守[歐洲無障礙法（EAA）](https://www.accessibility-act.eu/)與[美國 ADA Title III](https://www.ada.gov/topics/title-iii/)等嚴格全球法規，現在是明確的民事責任。[HTML Generator](https://github.com/sebastienrousseau/html-generator) 是一個高效能 Rust 函式庫，專為在編譯器層面彌補這些缺口而設計——而非靠部署後的補丁。
+2026 年，網路內容被 AI 搜尋爬蟲、LLM 驅動的搜尋引擎與檢索增強生成（RAG）管線消費的比例，已與人類讀者相當。扁平或格式錯誤的 HTML 會干擾機器探索，而未能遵守[歐洲無障礙法（EAA）](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en)與[美國 ADA Title III](https://www.ada.gov/topics/title-iii/)等嚴格全球法規，現在是明確的民事責任。[HTML Generator](https://github.com/sebastienrousseau/html-generator) 是一個高效能 Rust 函式庫，專為在編譯器層面彌補這些缺口而設計——而非靠部署後的補丁。
 
 ## 快速解答
 
@@ -124,7 +124,7 @@ site_software: "Static Site Generator, Rust"
 
 ## 執行摘要
 
-Markdown 渲染看似簡單。達到發布級 HTML 的品質實為合規問題。2026 年 6 月，每個企業數位接觸點——投資人關係入口、法規申報、客戶文件、API 參考、行銷平台——都由人類與機器共同解析。每個頁面都承受兩股壓力：[EAA](https://www.accessibility-act.eu/) 與 [ADA Title III](https://www.ada.gov/topics/title-iii/) 使無障礙成為董事會層級的法律風險，而 AI 擷取與 RAG 管線則獎勵結構化、機器可讀的輸出。標準 Markdown 函式庫產生的扁平 HTML 同時在這兩道關卡落敗。HTML Generator 將文件生成視為編譯閘控管線：WCAG 驗證是建置錯誤，JSON-LD 從 YAML 前置資料自動生成無需手動標記，MathML 與 Mermaid 以無障礙方式渲染，整個引擎支援 WebAssembly 目標，確保不受信任文件的解析與宿主隔離。
+Markdown 渲染看似簡單。達到發布級 HTML 的品質實為合規問題。2026 年 6 月，每個企業數位接觸點——投資人關係入口、法規申報、客戶文件、API 參考、行銷平台——都由人類與機器共同解析。每個頁面都承受兩股壓力：[EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) 與 [ADA Title III](https://www.ada.gov/topics/title-iii/) 使無障礙成為董事會層級的法律風險，而 AI 擷取與 RAG 管線則獎勵結構化、機器可讀的輸出。標準 Markdown 函式庫產生的扁平 HTML 同時在這兩道關卡落敗。HTML Generator 將文件生成視為編譯閘控管線：WCAG 驗證是建置錯誤，JSON-LD 從 YAML 前置資料自動生成無需手動標記，MathML 與 Mermaid 以無障礙方式渲染，整個引擎支援 WebAssembly 目標，確保不受信任文件的解析與宿主隔離。
 
 ## 重點摘要
 
@@ -142,7 +142,7 @@ Markdown 渲染看似簡單。達到發布級 HTML 的品質實為合規問題�
 
 第一股是 **AI 擷取與可探索性**。內容越來越多地被大型語言模型與檢索增強生成管線處理。扁平或格式錯誤的 HTML 會干擾爬蟲解析，使企業研究與文件在現代搜尋典範中不可見——包括 [Google 搜尋生成式體驗](https://blog.google/products/search/generative-ai-search/)、[ChatGPT](https://chat.openai.com/) 瀏覽以及企業 RAG 智能體。
 
-第二股是 **嚴格的全球無障礙法律**。依據[歐洲無障礙法](https://www.accessibility-act.eu/)（自 2025 年 6 月起全面適用）及[美國 ADA Title III](https://www.ada.gov/topics/title-iii/)，企業發布平台必須保證完整的數位無障礙性。未達 [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) 不再是工程疏失；這是已導致數百萬美元和解金的民事與法規責任。
+第二股是 **嚴格的全球無障礙法律**。依據[歐洲無障礙法](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en)（自 2025 年 6 月起全面適用）及[美國 ADA Title III](https://www.ada.gov/topics/title-iii/)，企業發布平台必須保證完整的數位無障礙性。未達 [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/) 不再是工程疏失；這是已導致數百萬美元和解金的民事與法規責任。
 
 [HTML Generator](https://github.com/sebastienrousseau/html-generator) 直接應對這兩股壓力。它是一個執行緒安全的 Rust 函式庫，設計用於將 Markdown 轉換為無障礙、SEO 就緒的結構化 HTML。透過將文件生成視為編譯閘控管線，該引擎提供高度的**韌性回報（RoR）**——在保護資產負債表免受無障礙訴訟的同時，最大化 AI 探索的機器可讀性。
 
@@ -168,7 +168,7 @@ Markdown 渲染看似簡單。達到發布級 HTML 的品質實為合規問題�
 
 | 指標 | 衡量標準 / 運營基準 | EAA / DORA / W3C 參考 | 技術實作 |
 | ---- | ---- | ---- | ---- |
-| **無障礙合規性** | 100% 的編譯頁面通過 WCAG 2.1 AA 規則驗證。 | [EAA](https://www.accessibility-act.eu/) 與 [ADA Title III](https://www.ada.gov/topics/title-iii/) | 建置時 HTML 解析器評估圖片替代文字與語意地標。 |
+| **無障礙合規性** | 100% 的編譯頁面通過 WCAG 2.1 AA 規則驗證。 | [EAA](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) 與 [ADA Title III](https://www.ada.gov/topics/title-iii/) | 建置時 HTML 解析器評估圖片替代文字與語意地標。 |
 | **WASM 執行沙盒** | 100% 的不受信任 Markdown 輸入在隔離的 WebAssembly 執行環境中編譯。 | [DORA Article 6](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554)（資訊安全） | 將解析環境與宿主伺服器隔離。 |
 | **結構化元資料覆蓋率** | 100% 的發布文章注入有效且符合 Schema.org 規範的 JSON-LD 標頭。 | [Schema.org](https://schema.org/) 規範 | 自動解析前置資料並轉換為 JSON-LD 物件。 |
 | **編譯吞吐量** | 在一般硬體上每秒頁面數目標超過 10,000。 | 韌性回報（RoR） | 高度並行化的 Rust AST 編譯器。 |
@@ -276,7 +276,7 @@ G-SIBs 管理龐大的多語言公開資產，在多個司法管轄區發布數�
 - 全球資訊網協會（W3C），2024年。[網路內容無障礙指引（WCAG）2.1 ⧉](https://www.w3.org/TR/WCAG21/ "Web Content Accessibility Guidelines 2.1")。
 - Schema.org，2026年。[Schema.org 結構化資料規範 ⧉](https://schema.org/ "Schema.org structured-data specifications")。
 - 歐洲議會與歐盟理事會，2022年。[歐盟法規 2022/2554——金融部門數位運營韌性（DORA）⧉](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2554 "DORA Regulation")。
-- 歐盟委員會，2025年。[歐洲無障礙法 ⧉](https://www.accessibility-act.eu/ "European Accessibility Act")。
+- 歐盟委員會，2025年。[歐洲無障礙法 ⧉](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en "European Accessibility Act")。
 - 美國司法部，2024年。[ADA Title III ⧉](https://www.ada.gov/topics/title-iii/ "ADA Title III")。
 - WebAssembly 社群工作組，2026年。[WebAssembly 規範 ⧉](https://webassembly.org/ "WebAssembly")。
 - GitHub，2026年。[HTML Generator 儲存庫 ⧉](https://github.com/sebastienrousseau/html-generator "HTML Generator open-source repository")。

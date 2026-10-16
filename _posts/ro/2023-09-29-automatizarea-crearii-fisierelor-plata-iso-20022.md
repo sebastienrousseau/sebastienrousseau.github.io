@@ -266,7 +266,7 @@ pain001 ridică un `pain001.exceptions.ValidationError` cu mesajul de validare l
 
 ## Referințe
 
-1. European Payments Council. *SEPA Credit Transfer Scheme Customer-to-Bank Implementation Guidelines (v1.1)*. EPC, 2023. https://www.europeanpaymentscouncil.eu/document-library/implementation-guidelines/sepa-credit-transfer-scheme-customer-bank
+1. European Payments Council. *SEPA Credit Transfer Scheme Customer-to-Bank Implementation Guidelines (v1.1)*. EPC, 2023. https://www.europeanpaymentscouncil.eu/sites/default/files/kb/file/2025-10/EPC132-08%20SCT%20C2PSP%20IG%202025%20V1.0.pdf
 2. SWIFT. *CBPR+ Usage Guidelines — Customer Credit Transfer Initiation (pain.001)*. SWIFT Standards, 2023. https://www.swift.com/standards/iso-20022/cbpr-plus-usage-guidelines
 3. ISO. *ISO 20022 — servicii financiare — schema universală de mesaje pentru industria financiară*. ISO.org, 2023. https://www.iso20022.org/
 4. Rousseau, S. *pain001 — generator de fișiere de plată ISO 20022*. GitHub, 2023. https://github.com/sebastienrousseau/pain001

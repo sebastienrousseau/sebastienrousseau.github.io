@@ -404,10 +404,10 @@ CloudCDN([cloudcdn.pro](https://cloudcdn.pro/ "CloudCDN"))は、エッジエー�
 - Meta AI, (2026). [Llama 4リリース発表 — Maverick、Scout、Behemothバリアント ⧉](https://ai.meta.com/blog/llama-4-multimodal-intelligence/ "Llama 4 release"). Meta.
 - Toshiba / BT, (2025). [ロンドン都市圏での商用QKDネットワーク展開 ⧉](https://www.global.toshiba/ww/products-solutions/security-ict/qkd.html "Toshiba quantum key distribution (QKD)"). Toshiba Europe.
 - NVIDIA, (2025). [Spectrum-X PhotonicsおよびQuantum-X Photonics — AIファクトリのための共パッケージ光学ネットワーキング ⧉](https://nvidianews.nvidia.com/news/spectrum-x-quantum-x-photonics "NVIDIA Photonics announcement at GTC 2025"). NVIDIA.
-- European Central Bank Banking Supervision, (2025). [クラウドアウトソーシングと集中リスク — 監督期待 ⧉](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.outsourcingcloud.en.html "ECB Banking Supervision on cloud outsourcing"). ECB.
+- European Central Bank Banking Supervision, (2025). [クラウドアウトソーシングと集中リスク — 監督期待 ⧉](https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.supervisory_guides202507.en.pdf "ECB Banking Supervision on cloud outsourcing"). ECB.
 - Zou, W. et al. (2024). [PoisonedRAG:大規模言語モデルの検索拡張生成への知識破損攻撃 ⧉](https://arxiv.org/abs/2402.07867 "PoisonedRAG"). arXiv.
 - Cilium / Tetragon Project, (2025). [クラウドネイティブおよびWasmワークロードのためのeBPFベースのランタイムセキュリティと可観測性 ⧉](https://cilium.io/blog/ "Cilium blog"). Isovalent / Cilium.
-- Qentelli, (2026). [銀行を革新する:クラウドとDevOpsが金融サービスの未来を動かす方法 ⧉](https://qentelli.com/thought-leadership/insights/revolutionizing-banking-how-cloud-and-devops-are-powering-the-future-of-financial-services "Qentelli — Cloud and DevOps in Banking"). Qentelli.
+- Qentelli, (2026). 銀行を革新する:クラウドとDevOpsが金融サービスの未来を動かす方法. Qentelli.
 - Built In Chicago, (2025). [JPMorgan Chaseのマルチクラウド戦略は継続的変革の鍵 ⧉](https://www.builtinchicago.org/articles/jpmorganchase-multi-cloud-strategy-key-continuous-transformation "JPMorgan's Multi-Cloud Strategy"). Built In.
 - CIO Dive, (2024). [JPMorgan Chase CEOはAI、アナリティクスの推進力としてさらなるクラウドを求める ⧉](https://www.ciodive.com/news/jpmorgan-jamie-dimon-cloud-generative-ai-strategy/713093/ "JPMorgan Chase CEO Wants More Cloud"). CIO Dive.
 - Fierce Network, (2024). [J.P. Morgan Paymentsエグゼクティブ:クラウド、APIによって「単なる銀行」の時代は終わった ⧉](https://www.fierce-network.com/cloud/jp-morgan-payments-exec-talks-cloud-tech-talent-and-apis "J.P. Morgan Payments Exec on Cloud"). Fierce Network.

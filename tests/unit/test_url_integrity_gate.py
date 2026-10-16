@@ -75,3 +75,13 @@ def test_the_rule_is_host_scoped():
     1798 correct URLs — so it only applies to the hosts known to be hit."""
     assert gate.offences("https://www.linkedin.com/in/sebastienrousseau/") == []
     assert gate.offences("https://example.test/in/anything") == []
+
+
+def test_a_translated_path_token_fails():
+    for url in (
+        "https://pqcc.org/internationaal-pqc-requirements/",
+        "https://www.cnbc.com/2026/02/23/ibm-is-the-latest-ai-casuoudy-shares-are-tanking-on-anthropic-cobol-threat.html",
+        "https://www.cgi.com/uk/em-gb/blog/banking-and-financial-markets/2026-defining-year-iso-20022-and-structured-data-enforcement",
+        "https://www.prowidesvaakware.com/development-tools/iso20022",
+    ):
+        assert gate.offences(url), url
