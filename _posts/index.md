@@ -200,7 +200,6 @@ site_software: "Static Site Generator, Rust"
 </div>
 <ul class="proof-credibility" aria-label="Institutional credentials and standards">
 <li><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf">EPAA White Paper (Sep 2025, PDF)</a></li>
-<li><a href="/speaking/index.html">Economist Impact Speaker</a></li>
 <li><a href="/projects-post-quantum/index.html">NIST FIPS 203 ML-KEM</a></li>
 <li><a href="/iso20022-mcp/index.html">SWIFT CBPR+ / ISO 20022</a></li>
 <li><a href="/trust/index.html">Sigstore &amp; CycloneDX SBOM</a></li>

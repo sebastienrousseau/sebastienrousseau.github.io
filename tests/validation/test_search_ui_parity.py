@@ -101,6 +101,15 @@ def _problems() -> list[str]:
         for needle in ("SiteSearch", "ensureSearch", "search-page")
         if needle not in main_js
     )
+    search_js = (ROOT / "_layouts" / "search.js").read_text(encoding="utf-8")
+    out.extend(
+        f"search.js missing sample-query token: {needle!r}"
+        for needle in ("asi:sampleQuery", "ss-sample-chip", "buildSampleChips")
+        if needle not in search_js
+    )
+    search_css = (ROOT / "_layouts" / "search.css").read_text(encoding="utf-8")
+    if ".ss-sample-chip" not in search_css:
+        out.append("search.css missing .ss-sample-chip styling")
 
     return out
 

@@ -80,8 +80,9 @@ _STYLE_BLOCK_RE = re.compile(r"<style\b[^>]*>(.*?)</style>", re.IGNORECASE | re.
 _HEX_RE = re.compile(r"#(?:[0-9a-fA-F]{8}|[0-9a-fA-F]{6}|[0-9a-fA-F]{3,4})(?![0-9a-zA-Z_-])")
 
 # A hex literal is a *token definition* when its declaration starts
-# with a custom property name: ``--foo: … #hex …;``.
-_TOKEN_DECL_RE = re.compile(r"^\s*--[\w-]+\s*:")
+# with a custom property name (``--foo: … #hex …;``) or is the
+# ``initial-value`` inside a CSS ``@property --foo { … }`` registration.
+_TOKEN_DECL_RE = re.compile(r"^\s*(?:--[\w-]+|initial-value)\s*:")
 
 
 def _is_token_definition(css: str, match_start: int) -> bool:
