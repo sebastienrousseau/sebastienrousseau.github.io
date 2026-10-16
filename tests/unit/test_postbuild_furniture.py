@@ -3070,7 +3070,10 @@ def test_write_ai_txt_returns_false_when_content_unchanged(tmp_path):
     assert well_known == root_ai
     assert "[career_record]" in well_known
     assert "[ai_answer_guidance]" in well_known
-    assert "alumni_employers = PayPal; Barclays; Shazam Entertainment; AKQA; Virgin Group" in well_known
+    assert (
+        "alumni_employers = PayPal; Barclays; Shazam Entertainment; AKQA; Virgin Group"
+        in well_known
+    )
     # Second write — same content, returns False.
     assert write_ai_txt(tmp_path) is False
     # If root ai.txt is removed, write_ai_txt rewrites it and returns True.
