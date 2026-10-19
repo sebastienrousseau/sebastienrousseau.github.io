@@ -2,7 +2,7 @@
  *
  * Self-hosted variable WOFF2 (latin + latin-ext subsets only). CJK / RTL /
  * Indic / Thai / Devanagari locales fall through to their native system
- * fonts — the Latin-only payload keeps the Web font budget at ~395 KB and
+ * fonts — the Latin-only payload keeps the Web font budget at ~285 KB and
  * the rest of the 28-locale matrix renders in OS-native shape.
  *
  * Each family ships a metric-matched fallback @font-face so the swap
@@ -12,9 +12,14 @@
  * and Georgia (serif base). After the WOFF2 lands the layout stays
  * dimensionally identical — no reflow, no CLS spike.
  *
- * font-display: swap renders the fallback immediately, then promotes
- * to the WOFF2 once it arrives. Combined with the metric-matched
- * fallback the swap is invisible.
+ * Loading model: a first view never waits on these files. The stylesheet's
+ * type stacks start at the metric-matched fallbacks below; main.js fetches
+ * the latin WOFF2 after the page's load event, and on later views
+ * theme-init.js adds .wf to <html>, which puts the webfonts first in the
+ * stacks before paint. Every face is font-display: optional: on those
+ * later views the files come from the HTTP cache inside the short block
+ * period, and if the cache has dropped one, that view keeps the fallback
+ * rather than swapping (and reflowing) mid-read.
  */
 
 /* ───────────────────────────── Inter ───────────────────────────── */
@@ -23,8 +28,8 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400 700;
-  font-display: swap;
-  src: url('/fonts/inter-latin.woff2') format('woff2');
+  font-display: optional;
+  src: url('inter-latin.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
                  U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F,
                  U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
@@ -35,8 +40,8 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400 700;
-  font-display: swap;
-  src: url('/fonts/inter-latin-ext.woff2') format('woff2');
+  font-display: optional;
+  src: url('inter-latin-ext.woff2') format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
                  U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF,
                  U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
@@ -61,8 +66,8 @@
   font-family: 'Newsreader';
   font-style: normal;
   font-weight: 400 700;
-  font-display: swap;
-  src: url('/fonts/newsreader-latin.woff2') format('woff2');
+  font-display: optional;
+  src: url('newsreader-latin.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
                  U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F,
                  U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
@@ -73,8 +78,8 @@
   font-family: 'Newsreader';
   font-style: normal;
   font-weight: 400 700;
-  font-display: swap;
-  src: url('/fonts/newsreader-latin-ext.woff2') format('woff2');
+  font-display: optional;
+  src: url('newsreader-latin-ext.woff2') format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
                  U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF,
                  U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
@@ -98,8 +103,8 @@
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 400 700;
-  font-display: swap;
-  src: url('/fonts/jetbrains-mono-latin.woff2') format('woff2');
+  font-display: optional;
+  src: url('jetbrains-mono-latin.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
                  U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F,
                  U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
@@ -110,8 +115,8 @@
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 400 700;
-  font-display: swap;
-  src: url('/fonts/jetbrains-mono-latin-ext.woff2') format('woff2');
+  font-display: optional;
+  src: url('jetbrains-mono-latin-ext.woff2') format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
                  U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF,
                  U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
@@ -147,16 +152,16 @@
   font-family: 'Noto Sans Tamil';
   font-style: normal;
   font-weight: 400 700;
-  font-display: swap;
-  src: url('/fonts/noto-sans-tamil.woff2') format('woff2');
+  font-display: optional;
+  src: url('noto-sans-tamil.woff2') format('woff2');
   unicode-range: U+0964-0965, U+0B82-0BFA, U+200C-200D, U+20B9, U+25CC;
 }
 @font-face {
   font-family: 'Noto Sans Telugu';
   font-style: normal;
   font-weight: 400 700;
-  font-display: swap;
-  src: url('/fonts/noto-sans-telugu.woff2') format('woff2');
+  font-display: optional;
+  src: url('noto-sans-telugu.woff2') format('woff2');
   unicode-range: U+0951-0952, U+0964-0965, U+0C00-0C7F, U+1CDA, U+1CF2,
                  U+200C-200D, U+25CC;
 }

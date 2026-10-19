@@ -61,7 +61,6 @@
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
     <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
     <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
-    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
     <link rel="stylesheet" href="/fonts/fonts.css" />
     <!-- Preload the LCP hero portrait so it doesn't compete with the
          render-blocking JS bundle on throttled mobile connections.
@@ -142,11 +141,17 @@
         --measure-article:62ch;
         --leading-article:1.65;
         color-scheme: light dark;
-        /* Named typography abstraction — every font-family in the
-           stylesheet reads from these three vars. Values are system
-           fonts only for now; a follow-up PR will swap in self-hosted
-           WOFF2 (Inter / Newsreader / JetBrains Mono) with size-adjust
-           fallback metrics so CLS stays under 0.1 during font swap. */
+        /* Named typography abstraction: every font-family in the
+           stylesheet reads from these three vars. A first view renders
+           in the metric-matched system faces (fonts.css), so no webfont
+           sits on the path to first paint; main.js fetches the webfonts
+           after load, and theme-init.js adds .wf to <html> on later
+           views, which switches the stacks below to them before paint. */
+        --type-display: "Newsreader Fallback", Georgia, Cambria, "Times New Roman", Times, serif;
+        --type-body: "Inter Fallback", "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        --type-mono: "JetBrains Mono Fallback", ui-monospace, SFMono-Regular, Menlo, monospace;
+      }
+      :root.wf{
         --type-display: "Newsreader", "Newsreader Fallback", Georgia, Cambria, "Times New Roman", Times, serif;
         --type-body: "Inter", "Inter Fallback", "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
         --type-mono: "JetBrains Mono", "JetBrains Mono Fallback", ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -2241,7 +2246,7 @@
       .ref-capture{font-family:var(--type-mono,ui-monospace,monospace);font-size:12.5px;line-height:1.7;color:var(--ink-mute);margin:8px 0 20px}
       .ref-capture code{font-family:inherit;font-size:inherit;background:transparent;padding:0;border:0}
       .ref-tools{margin:0 0 8px}
-      .ref-tool > summary .ref-tool-name{flex:none}
+      .ref-tool > summary .ref-tool-name{flex:0 1 auto;min-width:0;max-width:100%;overflow-wrap:anywhere}
       .ref-tool > summary .ref-tool-name code{font-family:var(--type-mono,ui-monospace,monospace);font-size:15px;color:inherit;background:transparent;padding:0;border:0}
       .ref-tool-brief{flex:1;min-width:0;font-size:14px;font-weight:400;color:var(--ink-soft);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
       .ref-tool-brief code,.ref-tool-desc code{background:transparent;padding:0;border:0}
@@ -2251,7 +2256,7 @@
       .ref-noparams{margin:0;font-size:14px;color:var(--ink-mute)}
       .ref-params-wrap{overflow-x:auto}
       .ref-params{width:100%;border-collapse:collapse;font-size:14px;line-height:1.55}
-      .ref-params th{font-family:var(--type-mono,ui-monospace,monospace);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute);text-align:start;padding:8px 16px 8px 0;border-bottom:1px solid var(--border)}
+      .ref-params th{font-family:var(--type-mono,ui-monospace,monospace);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);text-align:start;padding:8px 16px 8px 0;border-bottom:1px solid var(--border)}
       .ref-params td{padding:10px 16px 10px 0;border-bottom:1px solid var(--rule);color:var(--ink-soft);vertical-align:top}
       .ref-params td code{background:transparent;padding:0;border:0;font-size:13px}
       .ref-req{font-family:var(--type-mono,ui-monospace,monospace);font-size:11px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
@@ -2431,15 +2436,15 @@
     </header>
 
         <section class="story-hero">
-      <img class="story-hero-img" src="{{banner}}" alt="{{banner_alt}}" loading="eager" fetchpriority="high" decoding="async" />
+      <img class="story-hero-img" src="{{banner}}" alt="{{banner_alt}}" width="1920" height="1200" loading="eager" fetchpriority="high" decoding="async" />
       <div class="story-hero-inner">
         <h1>{{name}}</h1>
         <p class="story-hero-sub">{{subtitle}}</p>
       </div>
     </section>
 
-    <main id="main" class="content ap-section">
-      <div class="wrap">{{content}}</div>
+    <main id="main" class="content ap-section prose">
+      <div class="wrap">{{!content}}</div>
     </main>
 
 <!-- gen-layouts:footer-start -->

@@ -61,7 +61,6 @@
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
     <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
     <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
-    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
     <link rel="stylesheet" href="/fonts/fonts.css" />
     <!-- Preload the LCP hero portrait so it doesn't compete with the
          render-blocking JS bundle on throttled mobile connections.
@@ -142,11 +141,17 @@
         --measure-article:62ch;
         --leading-article:1.65;
         color-scheme: light dark;
-        /* Named typography abstraction — every font-family in the
-           stylesheet reads from these three vars. Values are system
-           fonts only for now; a follow-up PR will swap in self-hosted
-           WOFF2 (Inter / Newsreader / JetBrains Mono) with size-adjust
-           fallback metrics so CLS stays under 0.1 during font swap. */
+        /* Named typography abstraction: every font-family in the
+           stylesheet reads from these three vars. A first view renders
+           in the metric-matched system faces (fonts.css), so no webfont
+           sits on the path to first paint; main.js fetches the webfonts
+           after load, and theme-init.js adds .wf to <html> on later
+           views, which switches the stacks below to them before paint. */
+        --type-display: "Newsreader Fallback", Georgia, Cambria, "Times New Roman", Times, serif;
+        --type-body: "Inter Fallback", "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        --type-mono: "JetBrains Mono Fallback", ui-monospace, SFMono-Regular, Menlo, monospace;
+      }
+      :root.wf{
         --type-display: "Newsreader", "Newsreader Fallback", Georgia, Cambria, "Times New Roman", Times, serif;
         --type-body: "Inter", "Inter Fallback", "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
         --type-mono: "JetBrains Mono", "JetBrains Mono Fallback", ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -2337,8 +2342,8 @@
       <p class="sub">{{subtitle}}</p>
     </section>
 
-    <main id="main" class="content ap-section">
-      <div class="wrap">{{content}}</div>
+    <main id="main" class="content ap-section prose">
+      <div class="wrap">{{!content}}</div>
     </main>
 
 <!-- gen-layouts:footer-start -->
