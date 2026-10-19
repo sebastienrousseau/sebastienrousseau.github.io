@@ -39,6 +39,11 @@ class ServiceWorkerSetup {
      * Also checks for a new service worker installation and triggers an update if found.
      */
     registerServiceWorker() {
+        // Whether a worker already controlled this page before registration.
+        // A first visit has none; the worker that installs then claims the
+        // page, which fires controllerchange, and reloading for that would
+        // load every first view twice. Only a replaced worker warrants it.
+        const hadController = Boolean(navigator.serviceWorker.controller);
         navigator.serviceWorker.register("/sw.js", {scope: './'})
             .then(registration => {
                 console.log("ServiceWorker registration successful with scope: ", registration.scope);
@@ -74,7 +79,7 @@ class ServiceWorkerSetup {
         // This works around a bug in "force update on reload".
         let refreshing;
         navigator.serviceWorker.addEventListener('controllerchange', () => {
-            if (refreshing) return;
+            if (refreshing || !hadController) return;
             window.location.reload();
             refreshing = true;
         });
