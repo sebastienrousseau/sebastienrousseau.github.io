@@ -15,10 +15,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Changed
 
 - **Homepage 10/10 design and editorial overhaul ([#496])**: Replaces the hero lead with a clear executive credential band, restores the six institution brand logos (`HSBC`, `PayPal`, `Barclays`, `Shazam`, `AKQA`, `Virgin`), promotes three flagship production repositories (`Static Site Generator`, `Pain001`, `ISO 20022 Rust Ecosystem`) into proof cards, consolidates the three domain pillars into scannable cards, and translates the updated structure across all 34 non-English locales.
+- **Layouts re-synchronised with the `ssg-themes` theme (`make theme-sync`, ADR-0014)**: Brings the theme's gallery-gate work back to the site. A first view paints in the metric-matched system faces and no webfont sits on the path to first paint: `main.js` fetches the webfonts after `load`, and `theme-init.js` switches to them on later views (`font-display: optional`, no swap). Also AAA contrast on the playlist hero (opaque text tints and a scrim), wider reference-table labels, `prose` on long-form pages, and explicit dimensions on the story hero image.
+- **Webfonts trimmed to their declared weights**: The eight WOFF2 files drop unused variable-axis ranges, 569 KB to 387 KB in total (`newsreader-latin.woff2` 131,848 to 95,032 bytes).
+- **Client logos served at display size**: The six homepage and About logos come from `/_csp/logo-*.webp` at 190 x 64 (2 to 8 KB each) instead of the CDN originals (80 to 547 KB each, about 1.5 MB together), and the homepage rail loads them lazily.
 
 ### Fixed
 
 - **Homepage frontmatter ampersand encoding ([#496])**: Uses literal `&` instead of `&amp;` in `_posts/index.md` `item_title` and `apple-mobile-web-app-title` so `ssg 0.0.68` does not emit double-encoded `&amp;amp;` in `<meta name="apple-mobile-web-app-title">` across the 35 homepage editions.
+- **First visits loaded the page twice**: The service worker claims the page on its first install, which fires `controllerchange`, and `main.js` reloaded on every such event. It now reloads only when a worker replaces an earlier one. Mobile Lighthouse on the homepage moves from 0.81 to 0.91 to 1.0 in four runs of five.
+- **Client logos in dark mode**: The rail took the light surface while each tile stayed dark, so the gaps showed as white bars and dark wordmarks sat on dark tiles. Each tile now takes the light surface, Barclays and Virgin are darkened to match the other wordmarks, and on phones the tiles keep room for the image (a 22 px height under 18 px of padding left none).
 
 ---
 
