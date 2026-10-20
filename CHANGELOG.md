@@ -25,6 +25,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - **Homepage frontmatter ampersand encoding ([#496])**: Uses literal `&` instead of `&amp;` in `_posts/index.md` `item_title` and `apple-mobile-web-app-title` so `ssg 0.0.68` does not emit double-encoded `&amp;amp;` in `<meta name="apple-mobile-web-app-title">` across the 35 homepage editions.
 - **First visits loaded the page twice**: The service worker claims the page on its first install, which fires `controllerchange`, and `main.js` reloaded on every such event. It now reloads only when a worker replaces an earlier one. Mobile Lighthouse on the homepage moves from 0.81 to 0.91 to 1.0 in four runs of five.
 - **Client logos in dark mode**: The rail took the light surface while each tile stayed dark, so the gaps showed as white bars and dark wordmarks sat on dark tiles. Each tile now takes the light surface, Barclays and Virgin are darkened to match the other wordmarks, and on phones the tiles keep room for the image (a 22 px height under 18 px of padding left none).
+- **Multi-line links in grid rows**: Links inside `main.prose` text are inline blocks (so a wrapped link never overlaps the line below), and an inline block's baseline is its last line. In the /trust/ records the title link wraps to three lines, and the row's baseline alignment pushed the organisation, date and role 44 px down to that last line. The links now align to the top of their line, so a row aligns on the title's first line.
 
 ---
 
