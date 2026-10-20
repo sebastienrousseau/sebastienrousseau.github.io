@@ -1062,7 +1062,8 @@
       .qa-q,.qa-q code{overflow-wrap:anywhere;white-space:normal}
       .newsroom-card-body h3 a,.newsroom-card-body h2 a,.offer-link,.pl-chip,.feat-eyebrow a,.book-title a{display:inline-flex;align-items:center;min-height:44px}
       main table thead,main table th{background-color:var(--bg-alt)}
-      .prose :is(p,ul,ol,pre,table,blockquote)+p{margin-block-start:1.5lh!important}
+      /* 1.4.8 (AAA): paragraph spacing for running text. Classed paragraphs are component parts (a card date, a button row) and keep their own spacing. */
+      .prose :is(p,ul,ol,pre,table,blockquote)+p:not([class]){margin-block-start:1.5lh!important}
       .skip,.skip-link{position:absolute;left:-9999px;top:-9999px;display:inline-flex;align-items:center;min-height:44px;min-width:44px}
       .skip:focus,.skip-link:focus{left:12px;top:12px;background:var(--ink);color:#fff;padding:10px 16px;z-index:300;border-radius:8px}
 
