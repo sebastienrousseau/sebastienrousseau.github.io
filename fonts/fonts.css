@@ -86,12 +86,15 @@
                  U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
-/* Metric-matched fallback — Georgia as the serif base. Approximate
- * Newsreader cap-height + x-height match. */
+/* Metric-matched fallback — Georgia as the serif base. size-adjust
+ * matches advance width: on the site's 192 Newsreader headings (weights
+ * 500 and 600), Georgia at 97.6% and 100.4% sets the same line length,
+ * so 99%. At 104% headings ran 4 to 6% wider and some wrapped onto an
+ * extra line in a first view, which paints in this face. */
 @font-face {
   font-family: 'Newsreader Fallback';
   src: local('Georgia');
-  size-adjust: 104%;
+  size-adjust: 99%;
   ascent-override: 95%;
   descent-override: 22%;
   line-gap-override: 0%;
@@ -123,10 +126,12 @@
                  U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
-/* Metric-matched fallback — Menlo as the mono base. */
+/* Metric-matched fallback — Menlo as the mono base. local() matches a
+ * face's full or PostScript name: Chrome does not resolve local('Menlo'),
+ * which left this face unloaded. */
 @font-face {
   font-family: 'JetBrains Mono Fallback';
-  src: local('Menlo');
+  src: local('Menlo Regular'), local('Menlo-Regular'), local('Menlo');
   size-adjust: 100%;
   ascent-override: 90%;
   descent-override: 22%;
