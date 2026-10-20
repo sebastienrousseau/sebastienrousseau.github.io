@@ -2318,7 +2318,7 @@
         .docs-split .story-why{margin-block:0}
       }
       /* informational bullet lists as card grids (2x2, or 3-across) */
-      .docs-cardlist .story-why-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.6vw,20px)}
+      .docs-cardlist .story-why-list{max-width:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.6vw,20px)}
       .docs-cards-3 .story-why-list{grid-template-columns:repeat(3,minmax(0,1fr))}
       .docs-cardlist .story-why-list li{background:var(--bg-alt);border-radius:16px;padding:clamp(20px,2vw,26px);padding-inline-start:clamp(20px,2vw,26px);max-width:none;font-size:15px;line-height:1.6;min-width:0}
       .docs-cardlist .story-why-list li::before{content:none}
