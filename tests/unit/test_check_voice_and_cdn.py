@@ -15,6 +15,7 @@ already-correct URL is never rewritten — and that ordering had no test.
 from __future__ import annotations
 
 import datetime as dt
+import re
 from pathlib import Path
 
 import check_voice as cv
@@ -230,6 +231,14 @@ def test_client_rewrite_maps_a_project_images_path() -> None:
 def test_client_rewrite_preserves_an_explicit_version() -> None:
     project = next(iter(cdn.PROJECT_PREFIXES))
     assert f"clients/{project}/v3/a.webp" in cdn._client_rewrites(f"{project}/v3/a.webp")
+
+
+def test_every_project_prefix_is_a_path_segment() -> None:
+    # The rewrites match the prefix with [A-Za-z0-9_-]+, so an entry with
+    # any other character can never match. The tests above pick one entry
+    # by set order, which follows the per-process string hash.
+    bad = sorted(p for p in cdn.PROJECT_PREFIXES if not re.fullmatch(r"[A-Za-z0-9_-]+", p))
+    assert bad == []
 
 
 def test_client_rewrite_ignores_an_unknown_project() -> None:

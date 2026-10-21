@@ -92,7 +92,7 @@ PROJECT_PREFIXES = {
     "rustdev",
     "sebastienrousseau",
     "serde_yml",
-    "Static Site Generator",
+    "shokunin",
     "sinewavegenerator",
     "sitemap-gen",
     "skeletonic",

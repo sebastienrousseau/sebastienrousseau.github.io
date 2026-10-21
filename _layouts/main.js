@@ -13,6 +13,15 @@ class ServiceWorkerSetup {
      * If not, logs a warning to the console.
      */
     constructor() {
+        // The worker precaches host-root paths (/, /offline/index.html, the
+        // _csp/ assets), so it only works where this script is served from
+        // the host root. A copy served under a sub-path, such as the theme
+        // gallery's demo, skips registration instead of requesting a /sw.js
+        // that host does not have. Read while this script is executing:
+        // document.currentScript is null once the load event fires.
+        const script = document.currentScript;
+        this.rootServed = !script || new URL("sw.js", script.src).pathname === "/sw.js";
+        if (!this.rootServed) return;
         if ("serviceWorker" in navigator) {
             // Deferring service worker registration until after the page has loaded.
             window.addEventListener('load', () => {
@@ -30,6 +39,11 @@ class ServiceWorkerSetup {
      * Also checks for a new service worker installation and triggers an update if found.
      */
     registerServiceWorker() {
+        // Whether a worker already controlled this page before registration.
+        // A first visit has none; the worker that installs then claims the
+        // page, which fires controllerchange, and reloading for that would
+        // load every first view twice. Only a replaced worker warrants it.
+        const hadController = Boolean(navigator.serviceWorker.controller);
         navigator.serviceWorker.register("/sw.js", {scope: './'})
             .then(registration => {
                 console.log("ServiceWorker registration successful with scope: ", registration.scope);
@@ -65,7 +79,7 @@ class ServiceWorkerSetup {
         // This works around a bug in "force update on reload".
         let refreshing;
         navigator.serviceWorker.addEventListener('controllerchange', () => {
-            if (refreshing) return;
+            if (refreshing || !hadController) return;
             window.location.reload();
             refreshing = true;
         });
@@ -97,6 +111,46 @@ class ServiceWorkerSetup {
 // Create an instance of the ServiceWorkerSetup class and attach it to the global window object.
 // This makes the instance accessible from anywhere in your code that has access to the global scope.
 window.serviceWorkerSetup = new ServiceWorkerSetup();
+
+/**
+ * Fetches the webfonts once a page has loaded, for the views after it.
+ *
+ * A first view paints in the metric-matched system faces, so no font
+ * download sits between the visitor and the first paint. After `load`,
+ * this asks the browser for the three families (the latin files, the
+ * ones every page uses), and once all three are in the HTTP cache it
+ * records "wf"; theme-init.js then adds .wf to <html> before the next
+ * page paints, and the stylesheet switches to the webfonts there. The
+ * current page is never switched, so nothing reflows under the reader.
+ */
+(function warmWebfonts() {
+    var root = document.documentElement;
+    if (root.classList.contains("wf") || !document.fonts || !document.fonts.load) {
+        return;
+    }
+    function warm() {
+        Promise.all([
+            document.fonts.load('400 1em "Newsreader"'),
+            document.fonts.load('400 1em "Inter"'),
+            document.fonts.load('400 1em "JetBrains Mono"')
+        ]).then(function (sets) {
+            var all = sets.every(function (faces) { return faces.length > 0; });
+            if (!all) return;
+            try {
+                localStorage.setItem("wf", "1");
+            } catch (e) {
+                /* Storage disabled: every view stays in the system faces. */
+            }
+        }).catch(function () {
+            /* Offline or blocked: stay in the system faces. */
+        });
+    }
+    if (document.readyState === "complete") {
+        warm();
+    } else {
+        window.addEventListener("load", warm);
+    }
+})();
 
 /**
  * On-site search bootstrap (DX plan Phase 2, ADR-0010).
@@ -193,20 +247,19 @@ document.addEventListener("change", function (event) {
         // (js/xss-through-dom). Either failing its check falls back to the
         // safe default listing.
         var base = target.getAttribute("data-navigate-base") || "/articles";
-        // Must be a single-slash site-relative path whose first character is
+        var v = target.value;
+        // Each DOM value is used only inside the branch where its allow-list
+        // test passed, so no unchecked text can reach the URL. The base must
+        // be a single-slash site-relative path whose first character is
         // alphanumeric: this rejects protocol-relative ("//host") and scheme
         // ("javascript:") URLs that the previous ^\/[a-z0-9/-]+$ allowed.
-        if (!/^\/[a-z0-9][a-z0-9/-]*$/.test(base)) {
-            base = "/articles";
+        var dest = "/articles/";
+        if (/^\/[a-z0-9][a-z0-9/-]*$/.test(base)) {
+            dest = base + "/";
         }
-        var v = target.value;
-        if (v && !/^[a-z0-9-]+$/.test(v)) {
-            v = "";
+        if (/^[a-z0-9-]+$/.test(v)) {
+            dest += v + "/";
         }
-        // base and v are both validated against strict allow-lists above and
-        // encodeURIComponent-clean by construction, so the assembled path is a
-        // safe same-origin relative URL (js/xss-through-dom false positive).
-        var dest = v ? base + "/" + encodeURIComponent(v) + "/" : base + "/";
         window.location.assign(dest);
         return;
     }

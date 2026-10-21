@@ -202,6 +202,15 @@ if [[ -f assets/img/listen-on-apple-music.svg ]]; then
   cp -f assets/img/listen-on-apple-music.svg public/_csp/listen-on-apple-music.svg
 fi
 
+# Client logos at their display size (at most 176 px wide in the rail).
+# The CDN originals are 80 to 547 KB each, about 1.5 MB for the six,
+# for tiles a few KB covers. Same staging as above: public/_csp/ before
+# postbuild, so the asset pipeline fingerprints them.
+mkdir -p public/_csp
+for logo in assets/img/logo-*.webp; do
+  cp -f "${logo}" "public/_csp/$(basename "${logo}")"
+done
+
 if [[ -d assets/js/mcp-simulator ]]; then
   mkdir -p public/_csp
   cp -f assets/js/mcp-simulator/iso20022-simulator-core.js public/_csp/iso20022-simulator-core.js

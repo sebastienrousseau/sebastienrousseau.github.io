@@ -61,7 +61,6 @@
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
     <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
     <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
-    <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin.woff2" crossorigin />
     <link rel="stylesheet" href="/fonts/fonts.css" />
     <!-- Preload the LCP hero portrait so it doesn't compete with the
          render-blocking JS bundle on throttled mobile connections.
@@ -142,11 +141,17 @@
         --measure-article:62ch;
         --leading-article:1.65;
         color-scheme: light dark;
-        /* Named typography abstraction — every font-family in the
-           stylesheet reads from these three vars. Values are system
-           fonts only for now; a follow-up PR will swap in self-hosted
-           WOFF2 (Inter / Newsreader / JetBrains Mono) with size-adjust
-           fallback metrics so CLS stays under 0.1 during font swap. */
+        /* Named typography abstraction: every font-family in the
+           stylesheet reads from these three vars. A first view renders
+           in the metric-matched system faces (fonts.css), so no webfont
+           sits on the path to first paint; main.js fetches the webfonts
+           after load, and theme-init.js adds .wf to <html> on later
+           views, which switches the stacks below to them before paint. */
+        --type-display: "Newsreader Fallback", Georgia, Cambria, "Times New Roman", Times, serif;
+        --type-body: "Inter Fallback", "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        --type-mono: "JetBrains Mono Fallback", ui-monospace, SFMono-Regular, Menlo, monospace;
+      }
+      :root.wf{
         --type-display: "Newsreader", "Newsreader Fallback", Georgia, Cambria, "Times New Roman", Times, serif;
         --type-body: "Inter", "Inter Fallback", "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
         --type-mono: "JetBrains Mono", "JetBrains Mono Fallback", ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -1052,12 +1057,13 @@
       }
 
       details:not([open])>*:not(summary){visibility:hidden!important}
-      main.prose :is(p,li,dd,dt,td,th,figcaption,blockquote,span,small,em,strong)>a{display:inline-block;max-width:100%;min-height:24px}
+      main.prose :is(p,li,dd,dt,td,th,figcaption,blockquote,span,small,em,strong)>a{display:inline-block;vertical-align:top;max-width:100%;min-height:24px}
       main.prose .author-ids a,main.prose .author-card-name a,main.prose .author-credentials a{display:inline-flex;align-items:center;min-height:44px;padding:0 4px}
       .qa-q,.qa-q code{overflow-wrap:anywhere;white-space:normal}
       .newsroom-card-body h3 a,.newsroom-card-body h2 a,.offer-link,.pl-chip,.feat-eyebrow a,.book-title a{display:inline-flex;align-items:center;min-height:44px}
       main table thead,main table th{background-color:var(--bg-alt)}
-      .prose :is(p,ul,ol,pre,table,blockquote)+p{margin-block-start:1.5lh!important}
+      /* 1.4.8 (AAA): paragraph spacing for running text. Classed paragraphs are component parts (a card date, a button row) and keep their own spacing. */
+      .prose :is(p,ul,ol,pre,table,blockquote)+p:not([class]){margin-block-start:1.5lh!important}
       .skip,.skip-link{position:absolute;left:-9999px;top:-9999px;display:inline-flex;align-items:center;min-height:44px;min-width:44px}
       .skip:focus,.skip-link:focus{left:12px;top:12px;background:var(--ink);color:#fff;padding:10px 16px;z-index:300;border-radius:8px}
 
@@ -2201,9 +2207,15 @@
       .worked-with-sep{font-size:16px;color:var(--ink-mute);line-height:28px}
       .brand-logo{width:100%;height:76px;max-width:176px;padding:18px 22px;background:var(--card);border:1px solid var(--border);border-radius:18px;box-shadow:0 10px 26px -16px rgba(0,0,0,.08);filter:grayscale(100%) contrast(1.12);opacity:.92;transition:opacity .32s var(--ease-editorial),filter .32s var(--ease-editorial),transform .32s var(--ease-editorial),border-color .32s var(--ease-editorial),box-shadow .32s var(--ease-editorial);object-fit:contain}
       .brand-logo:hover{filter:grayscale(0);opacity:1;transform:translateY(-4px);border-color:var(--accent);box-shadow:0 18px 36px -16px rgba(0,0,0,.15)}
-      html[data-theme="dark"] .brands:not(.worked-with){--brands-dark-bg:#f5f5f7;background:var(--brands-dark-bg);border-radius:16px;border-color:rgba(255,255,255,.12)}
-      @media (prefers-color-scheme:dark){html:not([data-theme="light"]) .brands:not(.worked-with){--brands-dark-bg:#f5f5f7;background:var(--brands-dark-bg);border-radius:16px;border-color:rgba(255,255,255,.12)}}
-      @media (max-width:600px){.brands{gap:20px 28px;padding:24px 18px}.brand-logo{height:22px}}
+      /* Dark mode: the logos are dark wordmarks on transparent ground, so
+         each tile, not the rail, takes the light surface. A light rail
+         behind dark --card tiles showed only its gaps, as white bars, and
+         left the wordmarks dark on dark. */
+      html[data-theme="dark"] .brand-logo{--brands-dark-bg:#f5f5f7;background:var(--brands-dark-bg);border-color:rgba(255,255,255,.12)}
+      @media (prefers-color-scheme:dark){html:not([data-theme="light"]) .brand-logo{--brands-dark-bg:#f5f5f7;background:var(--brands-dark-bg);border-color:rgba(255,255,255,.12)}}
+      /* Phones: a shorter tile with less padding. A 22px height under the
+         tile's 18px block padding left the image no height to render in. */
+      @media (max-width:600px){.brands{gap:12px}.brand-logo{height:56px;padding:12px 14px}}
 
       /* Static Site Generator auto-injected search widget. Apple-clean override:
          keep just the magnifier glyph as a discreet circular icon top-right. */
@@ -2241,7 +2253,7 @@
       .ref-capture{font-family:var(--type-mono,ui-monospace,monospace);font-size:12.5px;line-height:1.7;color:var(--ink-mute);margin:8px 0 20px}
       .ref-capture code{font-family:inherit;font-size:inherit;background:transparent;padding:0;border:0}
       .ref-tools{margin:0 0 8px}
-      .ref-tool > summary .ref-tool-name{flex:none}
+      .ref-tool > summary .ref-tool-name{flex:0 1 auto;min-width:0;max-width:100%;overflow-wrap:anywhere}
       .ref-tool > summary .ref-tool-name code{font-family:var(--type-mono,ui-monospace,monospace);font-size:15px;color:inherit;background:transparent;padding:0;border:0}
       .ref-tool-brief{flex:1;min-width:0;font-size:14px;font-weight:400;color:var(--ink-soft);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
       .ref-tool-brief code,.ref-tool-desc code{background:transparent;padding:0;border:0}
@@ -2251,7 +2263,7 @@
       .ref-noparams{margin:0;font-size:14px;color:var(--ink-mute)}
       .ref-params-wrap{overflow-x:auto}
       .ref-params{width:100%;border-collapse:collapse;font-size:14px;line-height:1.55}
-      .ref-params th{font-family:var(--type-mono,ui-monospace,monospace);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute);text-align:start;padding:8px 16px 8px 0;border-bottom:1px solid var(--border)}
+      .ref-params th{font-family:var(--type-mono,ui-monospace,monospace);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);text-align:start;padding:8px 16px 8px 0;border-bottom:1px solid var(--border)}
       .ref-params td{padding:10px 16px 10px 0;border-bottom:1px solid var(--rule);color:var(--ink-soft);vertical-align:top}
       .ref-params td code{background:transparent;padding:0;border:0;font-size:13px}
       .ref-req{font-family:var(--type-mono,ui-monospace,monospace);font-size:11px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
@@ -2306,7 +2318,7 @@
         .docs-split .story-why{margin-block:0}
       }
       /* informational bullet lists as card grids (2x2, or 3-across) */
-      .docs-cardlist .story-why-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.6vw,20px)}
+      .docs-cardlist .story-why-list{max-width:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.6vw,20px)}
       .docs-cards-3 .story-why-list{grid-template-columns:repeat(3,minmax(0,1fr))}
       .docs-cardlist .story-why-list li{background:var(--bg-alt);border-radius:16px;padding:clamp(20px,2vw,26px);padding-inline-start:clamp(20px,2vw,26px);max-width:none;font-size:15px;line-height:1.6;min-width:0}
       .docs-cardlist .story-why-list li::before{content:none}
@@ -2431,15 +2443,15 @@
     </header>
 
         <section class="story-hero">
-      <img class="story-hero-img" src="{{banner}}" alt="{{banner_alt}}" loading="eager" fetchpriority="high" decoding="async" />
+      <img class="story-hero-img" src="{{banner}}" alt="{{banner_alt}}" width="1920" height="1200" loading="eager" fetchpriority="high" decoding="async" />
       <div class="story-hero-inner">
         <h1>{{name}}</h1>
         <p class="story-hero-sub">{{subtitle}}</p>
       </div>
     </section>
 
-    <main id="main" class="content ap-section">
-      <div class="wrap">{{content}}</div>
+    <main id="main" class="content ap-section prose">
+      <div class="wrap">{{!content}}</div>
     </main>
 
 <!-- gen-layouts:footer-start -->

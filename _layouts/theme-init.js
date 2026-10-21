@@ -14,4 +14,16 @@
   } catch (e) {
     /* localStorage disabled. Fall through, the page follows the system. */
   }
+  /* Webfonts on later views only. main.js records "wf" once the fonts
+   * have been fetched after a page's load; from then on they come from
+   * the HTTP cache inside font-display: optional's block period, so the
+   * page paints in them with no swap. Without the record (a first view,
+   * or storage disabled) the page stays in its system faces. */
+  try {
+    if (localStorage.getItem("wf") === "1") {
+      document.documentElement.classList.add("wf");
+    }
+  } catch (e) {
+    /* localStorage disabled: system faces. */
+  }
 })();

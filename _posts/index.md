@@ -191,12 +191,12 @@ site_software: "Static Site Generator, Rust"
 <h3 id="trusted" class="feat-headline center">Where I've worked.</h3>
 <p class="feat-sub center">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group.</p>
 <div class="brands" aria-label="Organisations across my career">
-<img alt="HSBC logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
-<img alt="PayPal logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/paypal.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
-<img alt="Barclays logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/barclays.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
-<img alt="Shazam logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/shazam.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
-<img alt="AKQA logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/akqa.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
-<img alt="Virgin logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/virgin.webp" class="brand-logo" loading="eager" decoding="async" width="120" height="32" />
+<img alt="HSBC logo" src="/_csp/logo-hsbc.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="PayPal logo" src="/_csp/logo-paypal.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="Barclays logo" src="/_csp/logo-barclays.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="Shazam logo" src="/_csp/logo-shazam.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="AKQA logo" src="/_csp/logo-akqa.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="Virgin logo" src="/_csp/logo-virgin.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
 </div>
 <ul class="proof-credibility" aria-label="Institutional credentials and standards">
 <li><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf">EPAA White Paper (Sep 2025, PDF)</a></li>

@@ -173,12 +173,12 @@ site_software: "Static Site Generator, Rust"
 <section class="about-brand-rail" aria-label="Brands Sebastien has worked with" data-reveal>
   <p class="about-brand-rail-label">Trusted across</p>
   <div class="brands">
-    <img alt="HSBC logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.webp" width="120" />
-    <img alt="PayPal logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/paypal.webp" width="120" />
-    <img alt="Barclays logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/barclays.webp" width="120" />
-    <img alt="Shazam logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/shazam.webp" width="120" />
-    <img alt="AKQA logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/akqa.webp" width="120" />
-    <img alt="Virgin logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/virgin.webp" width="120" />
+    <img alt="HSBC logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="/_csp/logo-hsbc.webp" width="120" />
+    <img alt="PayPal logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="/_csp/logo-paypal.webp" width="120" />
+    <img alt="Barclays logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="/_csp/logo-barclays.webp" width="120" />
+    <img alt="Shazam logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="/_csp/logo-shazam.webp" width="120" />
+    <img alt="AKQA logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="/_csp/logo-akqa.webp" width="120" />
+    <img alt="Virgin logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="/_csp/logo-virgin.webp" width="120" />
   </div>
 </section>
 
