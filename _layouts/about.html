@@ -1061,7 +1061,7 @@
       main.prose :is(p,li,dd,dt,td,th,figcaption,blockquote,span,small,em,strong)>a{display:inline-block;vertical-align:top;max-width:100%;min-height:24px}
       main.prose .author-ids a,main.prose .author-card-name a,main.prose .author-credentials a{display:inline-flex;align-items:center;min-height:44px;padding:0 4px}
       .qa-q,.qa-q code{overflow-wrap:anywhere;white-space:normal}
-      .newsroom-card-body h3 a,.newsroom-card-body h2 a,.offer-link,.pl-chip,.feat-eyebrow a,.book-title a{display:inline-flex;align-items:center;min-height:44px}
+      .newsroom-card-body h3 a,.newsroom-card-body h2 a,.offer-link,.pl-chip,.feat-eyebrow a,.book-title a{display:inline-flex;align-items:center;min-height:44px;min-width:44px}
       main table thead,main table th{background-color:var(--bg-alt)}
       /* 1.4.8 (AAA): paragraph spacing for running text. Classed paragraphs are component parts (a card date, a button row) and keep their own spacing. */
       .prose :is(p,ul,ol,pre,table,blockquote)+p:not([class]){margin-block-start:1.5lh!important}
@@ -1990,7 +1990,7 @@
       .feat-hero .feat-eyebrow a{color:inherit;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
       .feat-hero .feat-eyebrow a:hover{border-bottom-color:currentColor;opacity:1}
       .feat-credentials{font-size:14px;line-height:1.5;color:var(--ink-soft);margin:0 0 18px;max-width:64ch;font-weight:500}
-      .feat-credentials a{color:var(--accent);text-decoration:underline;text-underline-offset:3px;min-height:24px;display:inline}
+      .feat-credentials a{color:var(--accent);text-decoration:underline;text-underline-offset:3px;min-height:24px;display:inline-block}
       .feat .wrap{max-width:1180px;margin:0 auto}
       .feat.wide .wrap{max-width:var(--max-wide)}
       .feat.alt{background:var(--bg-alt)}
@@ -2090,9 +2090,9 @@
       .feat-finale::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(90,200,250,.18) 0%,transparent 62%);z-index:-1;pointer-events:none}
       .feat-finale .feat-headline{margin-inline:auto}
       .finale-ai-verify{margin:36px auto 0;padding-top:28px;border-top:1px solid rgba(255,255,255,.16);max-width:680px;display:flex;flex-direction:column;align-items:center;gap:14px}
-      .finale-ai-kicker{--feat-dark-sub:#d4d4d9;font-family:var(--type-mono);font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--feat-dark-sub);margin:0}
+      .finale-ai-kicker{--feat-dark-sub:#d4d4d9;font-family:var(--type-mono);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--feat-dark-sub);margin:0}
       .finale-ai-pills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
-      .finale-ai-pill{--sec-link-dark:#fff;--ai-pill-bg:#141414;display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;background:var(--ai-pill-bg);border:1px solid rgba(255,255,255,.24);color:var(--sec-link-dark);font-size:13.5px;font-weight:600;text-decoration:none;transition:background .25s var(--ease-editorial),border-color .25s var(--ease-editorial),transform .25s var(--ease-editorial)}
+      .finale-ai-pill{--sec-link-dark:#fff;--ai-pill-bg:#141414;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 18px;border-radius:999px;background:var(--ai-pill-bg);border:1px solid rgba(255,255,255,.24);color:var(--sec-link-dark);font-size:13.5px;font-weight:600;text-decoration:none;transition:background .25s var(--ease-editorial),border-color .25s var(--ease-editorial),transform .25s var(--ease-editorial)}
       .finale-ai-pill:hover,.finale-ai-pill:focus-visible{--ai-pill-bg-hover:#242426;background:var(--ai-pill-bg-hover);border-color:var(--sec-link-dark);transform:translateY(-2px);text-decoration:none}
       .finale-ai-pill svg{width:15px;height:15px;flex:none;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
       .feat-latest-grid{margin-top:36px}
