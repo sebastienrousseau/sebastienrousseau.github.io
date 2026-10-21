@@ -94,7 +94,7 @@ function arg(name, fallback) {
 // and safe to retry from a clean navigation; they must NOT be confused
 // with a real regression (a pixel diff or a wrong-theme assertion).
 const TRANSIENT_ERROR =
-  /Execution context was destroyed|Cannot find context|Target closed|Session closed|frame (?:was )?detached|Navigating frame/i;
+  /Execution context was destroyed|Cannot find context|Target closed|Session closed|frame (?:was )?detached|Navigating frame|screenshot height/i;
 
 async function newConfiguredPage(browser, baseHost) {
   const page = await browser.newPage();
@@ -126,6 +126,36 @@ async function newConfiguredPage(browser, baseHost) {
     else req.abort('blockedbyclient');
   });
   return page;
+}
+
+// Chrome sizes a full-page capture from its own reading of the document
+// height, and on the CI runner that reading is sometimes off: one commit
+// gave /iso20022-mcp-docs/ at 13,440 and 13,641 px (the shorter one with
+// the footer cut) and /research/ at 4,499 and 4,518 px. Wait for the
+// height to settle, then check the PNG against it, so a short or padded
+// capture is retried instead of failing the gate or becoming a baseline.
+async function settledHeight(page) {
+  let last = -1;
+  let same = 0;
+  for (let i = 0; i < 50 && same < 3; i++) {
+    await new Promise((r) => setTimeout(r, 100));
+    const h = await page.evaluate(() => document.documentElement.scrollHeight);
+    same = h === last ? same + 1 : 0;
+    last = h;
+  }
+  if (same < 3) throw new Error(`page height did not settle (last ${last} px)`);
+  return last;
+}
+
+async function screenshotFullPage(page, path) {
+  const expected = await settledHeight(page);
+  const png = Buffer.from(await page.screenshot({ fullPage: true }));
+  // A PNG's height is the big-endian uint32 at byte 20, inside IHDR.
+  const height = png.readUInt32BE(20);
+  if (height !== expected) {
+    throw new Error(`screenshot height ${height} px, page height ${expected} px`);
+  }
+  writeFileSync(path, png);
 }
 
 async function capturePage(page, name, url, out) {
@@ -163,7 +193,7 @@ async function capturePage(page, name, url, out) {
   if (theme !== 'light' && theme !== 'system-light') {
     throw new Error(`${url}: expected a light render, got ${theme}`);
   }
-  await page.screenshot({ path: join(out, `${name}.png`), fullPage: true });
+  await screenshotFullPage(page, join(out, `${name}.png`));
   console.log(`shot ${name} <- ${url} (theme=${theme})`);
 }
 
