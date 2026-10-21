@@ -96,8 +96,8 @@ function arg(name, fallback) {
 const TRANSIENT_ERROR =
   /Execution context was destroyed|Cannot find context|Target closed|Session closed|frame (?:was )?detached|Navigating frame|screenshot height/i;
 
-async function newConfiguredPage(browser, baseHost) {
-  const page = await browser.newPage();
+async function newConfiguredPage(context, baseHost) {
+  const page = await context.newPage();
   // The site ships a strict CSP (hash-pinned style-src) that would
   // reject the FREEZE_CSS injection. Bypassing CSP here only affects
   // this screenshot harness, never the shipped pages.
@@ -195,6 +195,15 @@ async function capturePage(page, name, url, out) {
   }
   await screenshotFullPage(page, join(out, `${name}.png`));
   console.log(`shot ${name} <- ${url} (theme=${theme})`);
+  // The layout numbers behind the shot, so a height change on the runner
+  // can be told apart from a capture problem without a local repro.
+  const m = await page.evaluate(() => {
+    const foot = document.querySelector('body > footer, footer');
+    const r = (el) => (el ? Math.round(el.getBoundingClientRect().bottom + window.scrollY) : -1);
+    const loaded = [...document.fonts].filter((f) => f.status === 'loaded').length;
+    return `doc=${document.documentElement.scrollHeight} body=${r(document.body)} footer=${r(foot)} vh=${window.innerHeight} html="${document.documentElement.className}" fonts=${loaded}/${document.fonts.size}`;
+  });
+  console.log(`  metrics ${name}: ${m}`);
 }
 
 async function shoot() {
@@ -215,7 +224,14 @@ async function shoot() {
       // and rethrows on the first attempt, so the gate still fails fast.
       const MAX_ATTEMPTS = 3;
       for (let attempt = 1; ; attempt++) {
-        const page = await newConfiguredPage(browser, baseHost);
+        // Each page gets its own browser context, so it renders as a first
+        // visit: no cached webfonts and no stored `wf` flag from the page
+        // before. Shared state let a later page take a webfont or its
+        // fallback depending on how fast the font was ready
+        // (font-display: optional), and the same commit rendered at
+        // different heights from run to run.
+        const context = await browser.createBrowserContext();
+        const page = await newConfiguredPage(context, baseHost);
         try {
           await capturePage(page, name, url, out);
           break;
@@ -226,7 +242,7 @@ async function shoot() {
             `retry ${name} (attempt ${attempt}/${MAX_ATTEMPTS - 1} after: ${msg.split('\n')[0]})`,
           );
         } finally {
-          await page.close().catch(() => {});
+          await context.close().catch(() => {});
         }
       }
     }
