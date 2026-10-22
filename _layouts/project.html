@@ -1273,7 +1273,7 @@
          and fade in when the IntersectionObserver in main.js adds
          .is-revealed. Reduced-motion users skip the animation. ---------- */
       [data-reveal]{opacity:0;filter:blur(4px);transform:translateY(14px);transition:opacity .65s var(--ease-editorial,cubic-bezier(.2,.65,.3,1)),filter .65s var(--ease-editorial,cubic-bezier(.2,.65,.3,1)),transform .65s var(--ease-editorial,cubic-bezier(.2,.65,.3,1));will-change:opacity,filter,transform}
-      [data-reveal].is-revealed{opacity:1;filter:blur(0);transform:none;will-change:auto}
+      [data-reveal].is-revealed{opacity:1;filter:none;transform:none;will-change:auto}
       @media (prefers-reduced-motion:reduce){[data-reveal]{opacity:1;filter:none;transform:none;transition:none}}
 
       /* ---------- Topics hub: pillar grouping + chip nav ---------- */
@@ -1584,10 +1584,10 @@
          Upgraded to AKQA optical pull-focus (blur(5px) -> blur(0)) with
          --ease-editorial (cubic-bezier(0.2, 0.65, 0.3, 1)). */
       .reveal{opacity:0;filter:blur(5px);transform:translateY(18px);transition:opacity .68s var(--ease-editorial,cubic-bezier(.2,.65,.3,1)),filter .68s var(--ease-editorial,cubic-bezier(.2,.65,.3,1)),transform .68s var(--ease-editorial,cubic-bezier(.2,.65,.3,1));will-change:opacity,filter,transform}
-      .reveal.is-in{opacity:1;filter:blur(0);transform:translateY(0);will-change:auto}
+      .reveal.is-in{opacity:1;filter:none;transform:none;will-change:auto}
       /* AKQA-style staggered child reveal: cards fade up in sequence once the section enters */
       .reveal :is(.offer-card,.newsroom-card,.kpi-cell,.area-card,.brand-era-card,.hcard){opacity:0;filter:blur(4px);transform:translateY(18px);transition:opacity .58s var(--ease-editorial,cubic-bezier(.2,.65,.3,1)),filter .58s var(--ease-editorial,cubic-bezier(.2,.65,.3,1)),transform .58s var(--ease-editorial,cubic-bezier(.2,.65,.3,1))}
-      .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card,.brand-era-card,.hcard){opacity:1;filter:blur(0);transform:none}
+      .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card,.brand-era-card,.hcard){opacity:1;filter:none;transform:none}
       .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card,.brand-era-card,.hcard):nth-child(2){transition-delay:.08s}
       .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card,.brand-era-card,.hcard):nth-child(3){transition-delay:.16s}
       .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card,.brand-era-card,.hcard):nth-child(4){transition-delay:.24s}
