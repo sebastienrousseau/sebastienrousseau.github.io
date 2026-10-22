@@ -1301,6 +1301,57 @@ function fallbackCopy(text, done) {
 })();
 
 // ---------------------------------------------------------------------------
+// Homepage hero lattice clock: the background dots and the odometer digits.
+// They are 197 elements of decoration, and shipped in the page they took the
+// homepage past the first TCP window (about 14.6 KB gzipped), which costs a
+// round trip before first paint on a slow connection. Generated here instead,
+// from the same values, before the clock script below first sets the time.
+// ---------------------------------------------------------------------------
+(function () {
+    "use strict";
+    var SVG_NS = "http://www.w3.org/2000/svg";
+    // One dot per entry: cx,cy,opacity digits; a leading "b" marks r=2.6.
+    var DOTS = "576,596,b17 602,364,22 612,398,22 622,432,22 632,466,21 642,500,b21 652,534,2 662,568,19 672,602,18 618,98,2 628,132,21 638,166,23 648,200,25 658,234,b26 668,268,27 678,302,28 688,336,28 698,370,b29 708,404,29 718,438,29 728,472,28 738,506,b27 748,540,26 758,574,25 694,4,b2 704,38,22 714,72,25 724,106,27 734,140,b29 744,174,31 754,208,33 764,242,34 774,276,b35 784,310,36 794,344,36 804,378,36 814,412,b36 824,446,36 834,480,35 844,514,33 854,548,b32 864,582,3 800,12,27 810,46,3 820,80,32 830,114,b34 840,148,36 850,182,38 860,216,4 870,250,b42 880,284,43 890,318,44 900,352,44 910,386,b43 920,420,42 930,454,41 940,488,39 950,522,b37 960,556,35 970,590,33 906,20,b32 916,54,34 926,88,37 936,122,4 946,156,b42 956,190,45 966,224,47 976,258,49 986,292,b51 996,326,51 1006,360,5 1016,394,48 1026,428,b45 1036,462,43 1046,496,4 1056,530,38 1066,564,b35 1076,598,32 1002,-6,32 1012,28,35 1022,62,b37 1032,96,4 1042,130,42 1052,164,45 1062,198,b47 1072,232,49 1082,266,51 1092,300,51 1102,334,b5 1112,368,47 1122,402,45 1132,436,43 1142,470,b4 1152,504,38 1162,538,35 1172,572,32 1182,606,b3 1108,2,32 1118,36,34 1128,70,36 1138,104,b38 1148,138,4 1158,172,42 1168,206,43 1178,240,b44 1188,274,43 1198,308,43 1208,342,42 1218,376,b4 1228,410,39 1238,444,37 1248,478,35 1258,512,b32 1268,546,3 1278,580,28 1214,10,b29 1224,44,31 1234,78,33 1244,112,34 1254,146,b35 1264,180,36 1274,214,36 1284,248,36";
+
+    function add(parent, name, attrs) {
+        var el = document.createElementNS(SVG_NS, name);
+        for (var k in attrs) el.setAttribute(k, attrs[k]);
+        parent.appendChild(el);
+        return el;
+    }
+
+    function fillDots(group) {
+        var dots = DOTS.split(" ");
+        for (var i = 0; i < dots.length; i++) {
+            var d = dots[i].split(",");
+            var big = d[2].charAt(0) === "b";
+            add(group, "circle", {
+                cx: d[0], cy: d[1], r: big ? "2.6" : "1.5",
+                opacity: "." + (big ? d[2].slice(1) : d[2])
+            });
+        }
+    }
+
+    // One label every 54 units down the column; the clock script scrolls it.
+    function fillDigits(group, y0, labels) {
+        for (var i = 0; i < labels.length; i++) {
+            add(group, "text", { x: "1038", y: String(y0 + 54 * i) }).textContent = labels[i];
+        }
+    }
+
+    var dots = document.getElementById("hero-lattice-dots");
+    var hhRoll = document.getElementById("hero-clock-hh-roll");
+    var mmRoll = document.getElementById("hero-clock-mm-roll");
+    if (!dots || !hhRoll || !mmRoll) return;
+    var hours = ["12"], minutes = [];
+    for (var h = 1; h <= 12; h++) hours.push(String(h));
+    for (var m = 0; m <= 60; m++) minutes.push(m % 60 < 10 ? "0" + (m % 60) : String(m % 60));
+    fillDots(dots);
+    fillDigits(hhRoll, 182, hours);
+    fillDigits(mmRoll, 124, minutes);
+})();
+
+// ---------------------------------------------------------------------------
 // Homepage hero ML-KEM lattice clock — synchronise hands and odometer drums
 // to live Europe/London wall-clock time via SVG transform attributes (no
 // inline CSS styles so strict style-src 'self' CSP is preserved).
