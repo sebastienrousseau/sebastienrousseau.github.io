@@ -444,12 +444,14 @@ def wrap_cdn_images_in_transform(html: str) -> tuple[str, int]:
     return out, n
 
 
-# Only large content/hero images get a responsive srcset. Avatars, social
-# icons, and logo rails (declared width < this) keep their single src so a
-# 36px avatar never pulls a 320w file. AVIF is intentionally NOT emitted —
-# the CDN has no .avif variants (probed 2026-07: /stocks/*.avif → 404); only
-# the four pre-generated WebP widths exist.
-_SRCSET_MIN_WIDTH = 800
+# Content images get a responsive srcset; avatars, social icons and logo
+# rails (declared width < this) keep their single src so a 36px avatar
+# never pulls a 320w file. 400, not 800: cards (600) and inline photos
+# (480-640) shipped a -1200 or -1920 variant to phones, which Lighthouse
+# mobile flagged as "Properly size images". AVIF is intentionally NOT
+# emitted: the CDN has no .avif variants (probed 2026-07: /stocks/*.avif
+# → 404); only the four pre-generated WebP widths exist.
+_SRCSET_MIN_WIDTH = 400
 _STOCKS_PREFIX = "/stocks/images/"
 
 
@@ -474,24 +476,35 @@ def add_responsive_srcset(html: str) -> tuple[str, int]:
     ``wrap_cdn_images_in_transform`` so ``src`` is already a variant, and is
     idempotent (skips tags that already carry a ``srcset``)."""
     n = 0
+    preloaded = {
+        href for m in _LINK_PRELOAD_IMAGE_RE.finditer(html) if (href := _link_attr_href(m.group(1)))
+    }
 
     def patch(match: re.Match[str]) -> str:
         nonlocal n
         attrs = match.group(1)
-        # Skip already-responsive tags and the LCP hero: the hero carries a
-        # width-matched <link rel=preload> and adding a plain srcset would let
-        # the browser pick a different variant, wasting the preload (LCP
-        # regression). Leave the tuned hero path untouched.
-        if "srcset=" in attrs.lower() or _img_is_high_priority(attrs):
-            return match.group(0)
         src = _img_attr_src(attrs)
+        # Skip already-responsive tags and a preloaded LCP hero: its
+        # <link rel=preload> names one file, and a srcset would let the
+        # browser pick a different variant, wasting the preload (LCP
+        # regression). A hero with no preload has nothing to waste.
+        if "srcset=" in attrs.lower() or (_img_is_high_priority(attrs) and src in preloaded):
+            return match.group(0)
         if not src or (_img_attr_width(attrs) or 0) < _SRCSET_MIN_WIDTH:
             return match.group(0)
         srcset = _responsive_srcset(src)
         if not srcset:
             return match.group(0)
         n += 1
-        return f'<img{attrs} srcset="{srcset}" sizes="(max-width: 1100px) 100vw, 1100px">'
+        # The capture keeps a self-closing slash; the new attributes go
+        # before it, not after.
+        body = attrs.rstrip()
+        slash = " /" if body.endswith("/") else ""
+        body = body.removesuffix("/").rstrip()
+        # A hero runs full-bleed, so it may need more than the 1100px
+        # content column; never under-serve it.
+        sizes = "100vw" if _img_is_high_priority(attrs) else "(max-width: 1100px) 100vw, 1100px"
+        return f'<img{body} srcset="{srcset}" sizes="{sizes}"{slash}>'
 
     return _IMG_TAG_TRANSFORM_RE.sub(patch, html), n
 
