@@ -116,6 +116,7 @@ The Rust tool reads the `_posts_build` markdown and `_layouts/` and writes the E
 
 ### Phase D — postbuild + finalisation
 
+- **`scripts/postbuild/mark_untranslated_english.py`** — gives `lang="en"` to English left untranslated in `<main>` of translated pages (WCAG 3.1.2): any text node of three or more words that appears verbatim on an English page. Runs after every locale generator and before `postbuild.py`; idempotent.
 17. **`scripts/postbuild/postbuild.py`** — the per-page optimisation pass: real SRI hashes, per-page CSP JSON-LD hashes, structured data, og/twitter tags, image width/height stamping, asset fingerprinting, breadcrumbs, and the rest of the page furniture.
 18. **`scripts/seo_and_audit/build_rag_corpus.py`** — the RAG/LLM corpus (`feed.jsonl`, per-tag JSONL, MCP resources).
 19. **`scripts/postbuild/prune_duplicate_sitemaps.py`** — deletes the per-directory `sitemap.xml` / `news-sitemap.xml` copies ssg writes into every output directory (~7,400 files, 17 MB, full of malformed double-slash URLs). They are crawlable: `/fr/news-sitemap.xml` was served in production as one of these stale copies. Keeps the root sitemap, the root news sitemap, and the per-locale news sitemaps `build_lang_feeds.py` writes deliberately. Runs after every sitemap writer; idempotent.
