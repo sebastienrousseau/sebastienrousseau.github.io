@@ -43,7 +43,7 @@ schema: "FAQPage, Article"
 seo_title: "A Detector That Reads Probabilities Instead of Writing Verdicts: What 44 Benchmarks Say About Jev"
 short_name: "sebastienrousseau"
 subtitle: "A detector for alignment failures that answers many typed questions in one call, with calibrated probabilities, ranks failures well and costs 63× less than LLM-judge scorers. But those probabilities don't transfer as thresholds, and the label and its reference matter far more than the question's wording."
-tags: "ai, generative-ai, llm, ai-governance, research, technology-strategy, AI detection, probabilistic detection, benchmark evaluation, calibration"
+tags: "AI, generative-ai, LLM, ai-governance, research, technology-strategy, AI detection, probabilistic detection, benchmark evaluation, calibration"
 topic_clusters: "generative-ai-llms, applied-ai-banking"
 theme-color: "0, 83, 191"
 title: "A Detector That Reads Probabilities Instead of Writing Verdicts: What 44 Benchmarks Say About Jev"
@@ -340,5 +340,3 @@ While RLCD models excel at ranking interactions by failure likelihood (achieving
 </div>
 </aside>
 <!-- enrich-end -->
-
-

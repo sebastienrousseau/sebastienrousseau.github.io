@@ -41,7 +41,7 @@ robots: "index, follow"
 schema: "FAQPage, Article"
 short_name: "sebastienrousseau"
 subtitle: "How Hugging Face LeRobot, end-to-end multi-modal foundation models, and democratised hardware are shifting robotics from procedural code to experiential imitation learning."
-tags: "open-source, ai, agentic-ai, platform-engineering, technology-strategy, innovation, Physical AI, Robotics, Machine Learning, Hugging Face, LeRobot, PyTorch, Edge AI, Economist Summit"
+tags: "open source, AI, agentic-ai, platform engineering, technology-strategy, innovation, Physical AI, Robotics, Machine Learning, Hugging Face, LeRobot, PyTorch, Edge AI, Economist Summit"
 topic_clusters: "applied-ai-banking, rust-open-source"
 theme-color: "0, 67, 165"
 title: "Open-Source Physical AI: How Hugging Face LeRobot and End-to-End Imitation Learning Are Democratising Robotics"
@@ -140,7 +140,7 @@ During his talk, Kooijmans revealed the detailed end-to-end neural network pipel
 The architecture operates as a tightly integrated multi-modal sensorimotor pipeline:
 
 ### 1. Perceptual Multi-Stream Ingestion
-The robot observes its workspace through multiple synchronized camera streams (typically an overhead base camera providing spatial context, alongside wrist-mounted cameras on the left and right manipulators for fine-grained contact tracking). 
+The robot observes its workspace through multiple synchronized camera streams (typically an overhead base camera providing spatial context, alongside wrist-mounted cameras on the left and right manipulators for fine-grained contact tracking).
 
 These raw pixel streams are passed into a frozen **SigLIP (400M parameter)** vision transformer, which converts the video frames into high-density visual tokens without requiring computationally prohibitive end-to-end gradient updates through the vision backbone during policy fine-tuning.
 
@@ -157,7 +157,7 @@ The output of this fused foundation model is a dense representation of VLM task 
 ### 4. The Action Expert: Flow Matching and Diffusion Policies
 The VLM features are fed directly into an **Action Expert (300M parameters)** operating on flow-matching principles. Unlike early imitation learning approaches that relied on naive mean squared error (MSE) regression (which causes models to output the average of conflicting demonstrations, leading to indecisive, frozen robots), flow matching models the multi-modal distribution of human action trajectories.
 
-Using rectified flow differential equations solved across ten numerical integration steps, the Action Expert denoises Gaussian noise into a coherent trajectory of **30 future actions** at a 50Hz control frequency. 
+Using rectified flow differential equations solved across ten numerical integration steps, the Action Expert denoises Gaussian noise into a coherent trajectory of **30 future actions** at a 50Hz control frequency.
 
 ### 5. Action Chunking with Temporal Ensembling
 By predicting 30 consecutive timesteps (an approach known as Action Chunking), the policy eliminates high-frequency jerking and latency bottlenecks. The robot executes the initial chunk of actions while computing the subsequent plan in the background, achieving smooth, compliant, and continuous biological-grade motion.

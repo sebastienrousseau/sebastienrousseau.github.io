@@ -529,7 +529,7 @@
          immediately on arrival. Visible by default; main.js wires interactive
          reordering, hero subline swapping, capability-card highlighting, and
          ?for=<audience> URL persistence. All colours clear WCAG 2.2 AAA. */
-      .read-as{background:var(--bg-alt);border-bottom:1px solid var(--border);padding:14px var(--pad-x)}
+      .read-as{background:var(--bg-alt);border-bottom:1px solid var(--border);padding:14px var(--pad-x) 32px}
       .read-as-inner{max-width:var(--max-wide);margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px}
       .read-as-controls{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
       .read-as-label{font-family:var(--type-body);font-size:.8125rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
@@ -1060,7 +1060,7 @@
       main.prose :is(p,li,dd,dt,td,th,figcaption,blockquote,span,small,em,strong)>a{display:inline-block;vertical-align:top;max-width:100%;min-height:24px}
       main.prose .author-ids a,main.prose .author-card-name a,main.prose .author-credentials a{display:inline-flex;align-items:center;min-height:44px;padding:0 4px}
       .qa-q,.qa-q code{overflow-wrap:anywhere;white-space:normal}
-      .newsroom-card-body h3 a,.newsroom-card-body h2 a,.offer-link,.pl-chip,.feat-eyebrow a,.book-title a{display:inline-flex;align-items:center;min-height:44px}
+      .newsroom-card-body h3 a,.newsroom-card-body h2 a,.offer-link,.pl-chip,.feat-eyebrow a,.book-title a{display:inline-flex;align-items:center;min-height:44px;min-width:44px}
       main table thead,main table th{background-color:var(--bg-alt)}
       /* 1.4.8 (AAA): paragraph spacing for running text. Classed paragraphs are component parts (a card date, a button row) and keep their own spacing. */
       .prose :is(p,ul,ol,pre,table,blockquote)+p:not([class]){margin-block-start:1.5lh!important}
@@ -1273,7 +1273,7 @@
          and fade in when the IntersectionObserver in main.js adds
          .is-revealed. Reduced-motion users skip the animation. ---------- */
       [data-reveal]{opacity:0;filter:blur(4px);transform:translateY(14px);transition:opacity .65s var(--ease-editorial,cubic-bezier(.2,.65,.3,1)),filter .65s var(--ease-editorial,cubic-bezier(.2,.65,.3,1)),transform .65s var(--ease-editorial,cubic-bezier(.2,.65,.3,1));will-change:opacity,filter,transform}
-      [data-reveal].is-revealed{opacity:1;filter:blur(0);transform:none;will-change:auto}
+      [data-reveal].is-revealed{opacity:1;filter:none;transform:none;will-change:auto}
       @media (prefers-reduced-motion:reduce){[data-reveal]{opacity:1;filter:none;transform:none;transition:none}}
 
       /* ---------- Topics hub: pillar grouping + chip nav ---------- */
@@ -1584,10 +1584,10 @@
          Upgraded to AKQA optical pull-focus (blur(5px) -> blur(0)) with
          --ease-editorial (cubic-bezier(0.2, 0.65, 0.3, 1)). */
       .reveal{opacity:0;filter:blur(5px);transform:translateY(18px);transition:opacity .68s var(--ease-editorial,cubic-bezier(.2,.65,.3,1)),filter .68s var(--ease-editorial,cubic-bezier(.2,.65,.3,1)),transform .68s var(--ease-editorial,cubic-bezier(.2,.65,.3,1));will-change:opacity,filter,transform}
-      .reveal.is-in{opacity:1;filter:blur(0);transform:translateY(0);will-change:auto}
+      .reveal.is-in{opacity:1;filter:none;transform:none;will-change:auto}
       /* AKQA-style staggered child reveal: cards fade up in sequence once the section enters */
       .reveal :is(.offer-card,.newsroom-card,.kpi-cell,.area-card,.brand-era-card,.hcard){opacity:0;filter:blur(4px);transform:translateY(18px);transition:opacity .58s var(--ease-editorial,cubic-bezier(.2,.65,.3,1)),filter .58s var(--ease-editorial,cubic-bezier(.2,.65,.3,1)),transform .58s var(--ease-editorial,cubic-bezier(.2,.65,.3,1))}
-      .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card,.brand-era-card,.hcard){opacity:1;filter:blur(0);transform:none}
+      .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card,.brand-era-card,.hcard){opacity:1;filter:none;transform:none}
       .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card,.brand-era-card,.hcard):nth-child(2){transition-delay:.08s}
       .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card,.brand-era-card,.hcard):nth-child(3){transition-delay:.16s}
       .reveal.is-in :is(.offer-card,.newsroom-card,.kpi-cell,.area-card,.brand-era-card,.hcard):nth-child(4){transition-delay:.24s}
@@ -1989,7 +1989,7 @@
       .feat-hero .feat-eyebrow a{color:inherit;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
       .feat-hero .feat-eyebrow a:hover{border-bottom-color:currentColor;opacity:1}
       .feat-credentials{font-size:14px;line-height:1.5;color:var(--ink-soft);margin:0 0 18px;max-width:64ch;font-weight:500}
-      .feat-credentials a{color:var(--accent);text-decoration:underline;text-underline-offset:3px;min-height:24px;display:inline}
+      .feat-credentials a{color:var(--accent);text-decoration:underline;text-underline-offset:3px;min-height:24px;display:inline-block}
       .feat .wrap{max-width:1180px;margin:0 auto}
       .feat.wide .wrap{max-width:var(--max-wide)}
       .feat.alt{background:var(--bg-alt)}
@@ -1997,7 +1997,7 @@
       .feat.dark .feat-headline,.feat.dark .feat-sub,.feat.dark .feat-card h3,.feat.dark .feat-card-title{color:#f5f5f7}
       .feat.dark .feat-sub{--feat-dark-sub:#d4d4d9;color:var(--feat-dark-sub)}
       .feat-eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.08em;color:var(--accent);text-transform:uppercase;margin:0 0 14px}
-      .feat.dark .feat-eyebrow{color:#5ac8fa}
+      .feat.dark .feat-eyebrow{--eyebrow-dark:#9adcff;color:var(--eyebrow-dark)}
       .feat-headline{font-size:clamp(34px,4.5vw,56px);font-weight:700;letter-spacing:-.022em;line-height:1.06;margin:0 0 20px;color:var(--ink);max-width:24ch}
       .feat-hero .feat-headline{max-width:none}
       .feat-headline.center{margin-inline:auto}
@@ -2089,9 +2089,9 @@
       .feat-finale::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(90,200,250,.18) 0%,transparent 62%);z-index:-1;pointer-events:none}
       .feat-finale .feat-headline{margin-inline:auto}
       .finale-ai-verify{margin:36px auto 0;padding-top:28px;border-top:1px solid rgba(255,255,255,.16);max-width:680px;display:flex;flex-direction:column;align-items:center;gap:14px}
-      .finale-ai-kicker{--feat-dark-sub:#d4d4d9;font-family:var(--type-mono);font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--feat-dark-sub);margin:0}
+      .finale-ai-kicker{--feat-dark-sub:#d4d4d9;font-family:var(--type-mono);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--feat-dark-sub);margin:0}
       .finale-ai-pills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
-      .finale-ai-pill{--sec-link-dark:#fff;--ai-pill-bg:#141414;display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;background:var(--ai-pill-bg);border:1px solid rgba(255,255,255,.24);color:var(--sec-link-dark);font-size:13.5px;font-weight:600;text-decoration:none;transition:background .25s var(--ease-editorial),border-color .25s var(--ease-editorial),transform .25s var(--ease-editorial)}
+      .finale-ai-pill{--sec-link-dark:#fff;--ai-pill-bg:#141414;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 18px;border-radius:999px;background:var(--ai-pill-bg);border:1px solid rgba(255,255,255,.24);color:var(--sec-link-dark);font-size:13.5px;font-weight:600;text-decoration:none;transition:background .25s var(--ease-editorial),border-color .25s var(--ease-editorial),transform .25s var(--ease-editorial)}
       .finale-ai-pill:hover,.finale-ai-pill:focus-visible{--ai-pill-bg-hover:#242426;background:var(--ai-pill-bg-hover);border-color:var(--sec-link-dark);transform:translateY(-2px);text-decoration:none}
       .finale-ai-pill svg{width:15px;height:15px;flex:none;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
       .feat-latest-grid{margin-top:36px}
@@ -2378,9 +2378,7 @@
               <clipPath id="hero-mclip"><circle cx="1038" cy="116" r="25"/></clipPath>
             </defs>
             <circle cx="1060" cy="300" r="520" fill="url(#hero-g0)"/>
-            <g fill="currentColor" mask="url(#hero-fade)">
-              <circle cx="576" cy="596" r="2.6" opacity=".17"/><circle cx="602" cy="364" r="1.5" opacity=".22"/><circle cx="612" cy="398" r="1.5" opacity=".22"/><circle cx="622" cy="432" r="1.5" opacity=".22"/><circle cx="632" cy="466" r="1.5" opacity=".21"/><circle cx="642" cy="500" r="2.6" opacity=".21"/><circle cx="652" cy="534" r="1.5" opacity=".2"/><circle cx="662" cy="568" r="1.5" opacity=".19"/><circle cx="672" cy="602" r="1.5" opacity=".18"/><circle cx="618" cy="98" r="1.5" opacity=".2"/><circle cx="628" cy="132" r="1.5" opacity=".21"/><circle cx="638" cy="166" r="1.5" opacity=".23"/><circle cx="648" cy="200" r="1.5" opacity=".25"/><circle cx="658" cy="234" r="2.6" opacity=".26"/><circle cx="668" cy="268" r="1.5" opacity=".27"/><circle cx="678" cy="302" r="1.5" opacity=".28"/><circle cx="688" cy="336" r="1.5" opacity=".28"/><circle cx="698" cy="370" r="2.6" opacity=".29"/><circle cx="708" cy="404" r="1.5" opacity=".29"/><circle cx="718" cy="438" r="1.5" opacity=".29"/><circle cx="728" cy="472" r="1.5" opacity=".28"/><circle cx="738" cy="506" r="2.6" opacity=".27"/><circle cx="748" cy="540" r="1.5" opacity=".26"/><circle cx="758" cy="574" r="1.5" opacity=".25"/><circle cx="694" cy="4" r="2.6" opacity=".2"/><circle cx="704" cy="38" r="1.5" opacity=".22"/><circle cx="714" cy="72" r="1.5" opacity=".25"/><circle cx="724" cy="106" r="1.5" opacity=".27"/><circle cx="734" cy="140" r="2.6" opacity=".29"/><circle cx="744" cy="174" r="1.5" opacity=".31"/><circle cx="754" cy="208" r="1.5" opacity=".33"/><circle cx="764" cy="242" r="1.5" opacity=".34"/><circle cx="774" cy="276" r="2.6" opacity=".35"/><circle cx="784" cy="310" r="1.5" opacity=".36"/><circle cx="794" cy="344" r="1.5" opacity=".36"/><circle cx="804" cy="378" r="1.5" opacity=".36"/><circle cx="814" cy="412" r="2.6" opacity=".36"/><circle cx="824" cy="446" r="1.5" opacity=".36"/><circle cx="834" cy="480" r="1.5" opacity=".35"/><circle cx="844" cy="514" r="1.5" opacity=".33"/><circle cx="854" cy="548" r="2.6" opacity=".32"/><circle cx="864" cy="582" r="1.5" opacity=".3"/><circle cx="800" cy="12" r="1.5" opacity=".27"/><circle cx="810" cy="46" r="1.5" opacity=".3"/><circle cx="820" cy="80" r="1.5" opacity=".32"/><circle cx="830" cy="114" r="2.6" opacity=".34"/><circle cx="840" cy="148" r="1.5" opacity=".36"/><circle cx="850" cy="182" r="1.5" opacity=".38"/><circle cx="860" cy="216" r="1.5" opacity=".4"/><circle cx="870" cy="250" r="2.6" opacity=".42"/><circle cx="880" cy="284" r="1.5" opacity=".43"/><circle cx="890" cy="318" r="1.5" opacity=".44"/><circle cx="900" cy="352" r="1.5" opacity=".44"/><circle cx="910" cy="386" r="2.6" opacity=".43"/><circle cx="920" cy="420" r="1.5" opacity=".42"/><circle cx="930" cy="454" r="1.5" opacity=".41"/><circle cx="940" cy="488" r="1.5" opacity=".39"/><circle cx="950" cy="522" r="2.6" opacity=".37"/><circle cx="960" cy="556" r="1.5" opacity=".35"/><circle cx="970" cy="590" r="1.5" opacity=".33"/><circle cx="906" cy="20" r="2.6" opacity=".32"/><circle cx="916" cy="54" r="1.5" opacity=".34"/><circle cx="926" cy="88" r="1.5" opacity=".37"/><circle cx="936" cy="122" r="1.5" opacity=".4"/><circle cx="946" cy="156" r="2.6" opacity=".42"/><circle cx="956" cy="190" r="1.5" opacity=".45"/><circle cx="966" cy="224" r="1.5" opacity=".47"/><circle cx="976" cy="258" r="1.5" opacity=".49"/><circle cx="986" cy="292" r="2.6" opacity=".51"/><circle cx="996" cy="326" r="1.5" opacity=".51"/><circle cx="1006" cy="360" r="1.5" opacity=".5"/><circle cx="1016" cy="394" r="1.5" opacity=".48"/><circle cx="1026" cy="428" r="2.6" opacity=".45"/><circle cx="1036" cy="462" r="1.5" opacity=".43"/><circle cx="1046" cy="496" r="1.5" opacity=".4"/><circle cx="1056" cy="530" r="1.5" opacity=".38"/><circle cx="1066" cy="564" r="2.6" opacity=".35"/><circle cx="1076" cy="598" r="1.5" opacity=".32"/><circle cx="1002" cy="-6" r="1.5" opacity=".32"/><circle cx="1012" cy="28" r="1.5" opacity=".35"/><circle cx="1022" cy="62" r="2.6" opacity=".37"/><circle cx="1032" cy="96" r="1.5" opacity=".4"/><circle cx="1042" cy="130" r="1.5" opacity=".42"/><circle cx="1052" cy="164" r="1.5" opacity=".45"/><circle cx="1062" cy="198" r="2.6" opacity=".47"/><circle cx="1072" cy="232" r="1.5" opacity=".49"/><circle cx="1082" cy="266" r="1.5" opacity=".51"/><circle cx="1092" cy="300" r="1.5" opacity=".51"/><circle cx="1102" cy="334" r="2.6" opacity=".5"/><circle cx="1112" cy="368" r="1.5" opacity=".47"/><circle cx="1122" cy="402" r="1.5" opacity=".45"/><circle cx="1132" cy="436" r="1.5" opacity=".43"/><circle cx="1142" cy="470" r="2.6" opacity=".4"/><circle cx="1152" cy="504" r="1.5" opacity=".38"/><circle cx="1162" cy="538" r="1.5" opacity=".35"/><circle cx="1172" cy="572" r="1.5" opacity=".32"/><circle cx="1182" cy="606" r="2.6" opacity=".3"/><circle cx="1108" cy="2" r="1.5" opacity=".32"/><circle cx="1118" cy="36" r="1.5" opacity=".34"/><circle cx="1128" cy="70" r="1.5" opacity=".36"/><circle cx="1138" cy="104" r="2.6" opacity=".38"/><circle cx="1148" cy="138" r="1.5" opacity=".4"/><circle cx="1158" cy="172" r="1.5" opacity=".42"/><circle cx="1168" cy="206" r="1.5" opacity=".43"/><circle cx="1178" cy="240" r="2.6" opacity=".44"/><circle cx="1188" cy="274" r="1.5" opacity=".43"/><circle cx="1198" cy="308" r="1.5" opacity=".43"/><circle cx="1208" cy="342" r="1.5" opacity=".42"/><circle cx="1218" cy="376" r="2.6" opacity=".4"/><circle cx="1228" cy="410" r="1.5" opacity=".39"/><circle cx="1238" cy="444" r="1.5" opacity=".37"/><circle cx="1248" cy="478" r="1.5" opacity=".35"/><circle cx="1258" cy="512" r="2.6" opacity=".32"/><circle cx="1268" cy="546" r="1.5" opacity=".3"/><circle cx="1278" cy="580" r="1.5" opacity=".28"/><circle cx="1214" cy="10" r="2.6" opacity=".29"/><circle cx="1224" cy="44" r="1.5" opacity=".31"/><circle cx="1234" cy="78" r="1.5" opacity=".33"/><circle cx="1244" cy="112" r="1.5" opacity=".34"/><circle cx="1254" cy="146" r="2.6" opacity=".35"/><circle cx="1264" cy="180" r="1.5" opacity=".36"/><circle cx="1274" cy="214" r="1.5" opacity=".36"/><circle cx="1284" cy="248" r="1.5" opacity=".36"/>
-            </g>
+            <g id="hero-lattice-dots" fill="currentColor" mask="url(#hero-fade)"></g>
             <circle cx="1038" cy="300" r="184" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 8" opacity=".18"/>
             <circle cx="1038" cy="300" r="126" fill="none" stroke="currentColor" stroke-width="1" opacity=".1"/>
             <g fill="currentColor">
@@ -2391,9 +2389,7 @@
               <g id="hero-clock-hh-un" transform="rotate(-304.75,1038,174)">
                 <circle cx="1038" cy="174" r="28" class="hero-clock-badge" filter="url(#hero-bsh)"/>
                 <g clip-path="url(#hero-hclip)">
-                  <g id="hero-clock-hh-roll" class="hero-clock-num" text-anchor="middle" transform="translate(0,-540)">
-                    <text x="1038" y="182">12</text><text x="1038" y="236">1</text><text x="1038" y="290">2</text><text x="1038" y="344">3</text><text x="1038" y="398">4</text><text x="1038" y="452">5</text><text x="1038" y="506">6</text><text x="1038" y="560">7</text><text x="1038" y="614">8</text><text x="1038" y="668">9</text><text x="1038" y="722">10</text><text x="1038" y="776">11</text><text x="1038" y="830">12</text>
-                  </g>
+                  <g id="hero-clock-hh-roll" class="hero-clock-num" text-anchor="middle" transform="translate(0,-540)"></g>
                 </g>
               </g>
             </g>
@@ -2402,9 +2398,7 @@
               <g id="hero-clock-mm-un" transform="rotate(-57,1038,116)">
                 <circle cx="1038" cy="116" r="28" class="hero-clock-badge" filter="url(#hero-bsh)"/>
                 <g clip-path="url(#hero-mclip)">
-                  <g id="hero-clock-mm-roll" class="hero-clock-num" text-anchor="middle" transform="translate(0,-486)">
-                    <text x="1038" y="124">00</text><text x="1038" y="178">01</text><text x="1038" y="232">02</text><text x="1038" y="286">03</text><text x="1038" y="340">04</text><text x="1038" y="394">05</text><text x="1038" y="448">06</text><text x="1038" y="502">07</text><text x="1038" y="556">08</text><text x="1038" y="610">09</text><text x="1038" y="664">10</text><text x="1038" y="718">11</text><text x="1038" y="772">12</text><text x="1038" y="826">13</text><text x="1038" y="880">14</text><text x="1038" y="934">15</text><text x="1038" y="988">16</text><text x="1038" y="1042">17</text><text x="1038" y="1096">18</text><text x="1038" y="1150">19</text><text x="1038" y="1204">20</text><text x="1038" y="1258">21</text><text x="1038" y="1312">22</text><text x="1038" y="1366">23</text><text x="1038" y="1420">24</text><text x="1038" y="1474">25</text><text x="1038" y="1528">26</text><text x="1038" y="1582">27</text><text x="1038" y="1636">28</text><text x="1038" y="1690">29</text><text x="1038" y="1744">30</text><text x="1038" y="1798">31</text><text x="1038" y="1852">32</text><text x="1038" y="1906">33</text><text x="1038" y="1960">34</text><text x="1038" y="2014">35</text><text x="1038" y="2068">36</text><text x="1038" y="2122">37</text><text x="1038" y="2176">38</text><text x="1038" y="2230">39</text><text x="1038" y="2284">40</text><text x="1038" y="2338">41</text><text x="1038" y="2392">42</text><text x="1038" y="2446">43</text><text x="1038" y="2500">44</text><text x="1038" y="2554">45</text><text x="1038" y="2608">46</text><text x="1038" y="2662">47</text><text x="1038" y="2716">48</text><text x="1038" y="2770">49</text><text x="1038" y="2824">50</text><text x="1038" y="2878">51</text><text x="1038" y="2932">52</text><text x="1038" y="2986">53</text><text x="1038" y="3040">54</text><text x="1038" y="3094">55</text><text x="1038" y="3148">56</text><text x="1038" y="3202">57</text><text x="1038" y="3256">58</text><text x="1038" y="3310">59</text><text x="1038" y="3364">00</text>
-                  </g>
+                  <g id="hero-clock-mm-roll" class="hero-clock-num" text-anchor="middle" transform="translate(0,-486)"></g>
                 </g>
               </g>
             </g>

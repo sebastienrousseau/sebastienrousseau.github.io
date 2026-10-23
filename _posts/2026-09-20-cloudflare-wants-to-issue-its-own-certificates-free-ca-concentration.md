@@ -43,7 +43,7 @@ schema: "FAQPage, Article"
 seo_title: "Cloudflare Wants to Issue Its Own Certificates, and Its Plan Rests on a Free-CA Concentration Problem"
 short_name: "sebastienrousseau"
 subtitle: "Cloudflare has relied on 16 partner public CAs for years without ever issuing a publicly trusted certificate itself. It now intends to become one, and the interesting part is the design: classic certificates and Merkle Tree Certificates under one CA, with failure containment built in from the start."
-tags: "cybersecurity, cryptography, platform-engineering, open-source, operational-resilience, third-party-risk, technology-strategy, Cloudflare, certificate authority, WebPKI, TLS certificates, Let's Encrypt"
+tags: "cybersecurity, cryptography, platform engineering, open source, operational-resilience, third-party-risk, technology-strategy, Cloudflare, certificate authority, WebPKI, TLS certificates, Let's Encrypt"
 topic_clusters: "operational-resilience-dora, cloud-native-banking"
 theme-color: "0, 83, 191"
 title: "Cloudflare Wants to Issue Its Own Certificates, and Its Plan Rests on a Free-CA Concentration Problem"
@@ -277,5 +277,3 @@ MTCs replace traditional individual cryptographic signatures with Merkle inclusi
 </div>
 </aside>
 <!-- enrich-end -->
-
-

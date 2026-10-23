@@ -98,39 +98,39 @@ def test_clean_tags_on_an_empty_list() -> None:
 
 
 # ---------------------------------------------------------------------------
-# automate_tags — inference
+# automate_tags: the author's tags are cleaned, never extended
 # ---------------------------------------------------------------------------
 
 
-def test_infer_tags_keeps_the_existing_tags() -> None:
-    assert at.infer_tags("nothing to match here", ["existing"])[0] == "existing"
+_KEYWORD_HEAVY_BODY = (
+    "We generate pain.001 files over SWIFT, plan a PQC migration under DORA,\n"
+    "and let an agentic AI reconcile stablecoins and tokenised deposits.\n"
+)
 
 
-def test_infer_tags_adds_iso_20022_from_a_message_name() -> None:
-    """pain.001 in the prose is enough; the tag need not be written out."""
-    assert "ISO 20022" in at.infer_tags("We generate pain.001 files nightly.", [])
+def test_optimise_english_adds_no_tag_the_author_did_not_write(tmp_path: Path) -> None:
+    """Keywords in the prose must not become tags.
+
+    Matching \\bai\\b or 'resilience' tagged a thank-you page with DORA and
+    post-quantum cryptography; a tag is an editorial claim about the post.
+    """
+    post = _post(
+        tmp_path, f'---\ntitle: "T"\ntags: "payments, treasury"\n---\n{_KEYWORD_HEAVY_BODY}'
+    )
+    tags, written = at._optimise_english(post, "EN post: post.md")
+    assert tags == ["payments", "treasury"]
+    assert written == 0
+    assert 'tags: "payments, treasury"' in post.read_text(encoding="utf-8")
 
 
-def test_infer_tags_adds_post_quantum_from_an_abbreviation() -> None:
-    assert "post-quantum cryptography" in at.infer_tags("A PQC migration plan.", [])
-
-
-def test_infer_tags_matches_case_insensitively() -> None:
-    assert "ISO 20022" in at.infer_tags("ISO 20022 and iso 20022 alike.", [])
-
-
-def test_infer_tags_respects_word_boundaries() -> None:
-    """`\\bdora\\b` must not fire on 'Pandora' or 'fedora'."""
-    assert "DORA" not in at.infer_tags("Opening Pandora's box wearing a fedora.", [])
-
-
-def test_infer_tags_adds_nothing_for_unrelated_prose() -> None:
-    assert at.infer_tags("A quiet walk by the river on Sunday.", []) == []
-
-
-def test_infer_tags_never_duplicates_an_existing_tag() -> None:
-    inferred = at.infer_tags("We generate pain.001 files nightly.", ["ISO 20022"])
-    assert inferred.count("ISO 20022") == 1
+def test_optimise_english_still_canonicalises_the_declared_tags(tmp_path: Path) -> None:
+    post = _post(
+        tmp_path, f'---\ntitle: "T"\ntags: "ai, Payments, payments"\n---\n{_KEYWORD_HEAVY_BODY}'
+    )
+    tags, written = at._optimise_english(post, "EN post: post.md")
+    assert tags == ["AI", "payments"]
+    assert written == 1
+    assert 'tags: "AI, payments"' in post.read_text(encoding="utf-8")
 
 
 # ---------------------------------------------------------------------------
@@ -426,13 +426,6 @@ def test_optimise_english_returns_tags_even_when_nothing_is_written(
     assert written == 0
 
 
-def test_optimise_english_writes_and_counts_an_inferred_tag(tmp_path: Path) -> None:
-    p = _md(tmp_path, "a.md", '---\ntitle: "T"\ntags: "payments"\n---\nWe emit pain.001 files.\n')
-    tags, written = at._optimise_english(p, "EN")
-    assert "ISO 20022" in tags
-    assert written == 1
-
-
 def test_propagate_skips_a_locale_without_the_post(tmp_path: Path, monkeypatch) -> None:
     monkeypatch.setattr(at, "POSTS_DIR", tmp_path)
     assert at._propagate_to_locale("missing.md", "fr", ["payments"], {}) == 0
@@ -460,7 +453,7 @@ def test_propagate_is_a_no_op_when_the_locale_already_matches(
 def test_process_single_post_counts_english_plus_locales(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
-    _md(tmp_path, "a.md", '---\ntitle: "T"\ntags: "payments"\n---\nWe emit pain.001 files.\n')
+    _md(tmp_path, "a.md", '---\ntitle: "T"\ntags: "ai, payments"\n---\nbody\n')
     _md(tmp_path, "fr/a.md", '---\ntitle: "T"\ntags: "old"\n---\nbody\n')
     monkeypatch.setattr(at, "POSTS_DIR", tmp_path)
     assert at.process_single_post("a.md", ["fr"], {}) == 2

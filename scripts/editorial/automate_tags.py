@@ -6,7 +6,8 @@
 
 This script:
   1. Standardizes all tags in English articles to their canonical forms (correct casing, spelling, acronyms).
-  2. Automatically infers missing tags based on content analysis (keywords in title, description, content).
+  2. Never adds a tag the author did not write: a tag is an editorial claim
+     about the post, and keyword matching over the prose made false ones.
   3. Propagates the optimized tags to all 27 translated locales by mapping them to their correct localized versions.
   4. Keeps tag indices clean, sorted, deduplicated, and in sync.
 """
@@ -32,7 +33,6 @@ CANONICAL_MAP = {
     "generative ai": "generative AI",
     "generative": "generative AI",
     "agentic ai": "agentic AI",
-    "agentic commerce": "agentic AI",
     "agentic engineering": "agentic AI",
     "autonomous agents": "agentic AI",
     "agentic payments": "agentic payments",
@@ -71,7 +71,6 @@ CANONICAL_MAP = {
     "cryptographic hash": "cryptography",
     "cryptographic library": "cryptography",
     "cybersecurity": "cybersecurity",
-    "security": "cybersecurity",
     "banking security": "cybersecurity",
     "quantum computing": "quantum computing",
     "quantum algorithms": "quantum algorithms",
@@ -79,7 +78,6 @@ CANONICAL_MAP = {
     "blockchain": "blockchain",
     "blockchain payments": "blockchain",
     "blockchain technology": "blockchain",
-    "distributed ledger": "blockchain",
     "stablecoin": "stablecoins",
     "stablecoins": "stablecoins",
     "tokenised deposits": "tokenised deposits",
@@ -115,70 +113,6 @@ CANONICAL_MAP = {
     "large language models": "LLM",
     "prompt engineering": "prompt engineering",
     "promptengineering": "prompt engineering",
-}
-
-# Regex rules to automatically infer/add tags if present in the post
-INFERENCE_RULES = {
-    "ISO 20022": [
-        r"\biso\s*20022\b",
-        r"\bpain\.001\b",
-        r"\bpacs\.008\b",
-        r"\bcbpr\+\b",
-        r"\bswift\b",
-    ],
-    "DORA": [
-        r"\bdora\b",
-        r"\bresilience\b",
-        r"\bthird-party\s*risk\b",
-        r"\bconcentration\s*risk\b",
-    ],
-    "post-quantum cryptography": [
-        r"\bpost-quantum\b",
-        r"\bpqc\b",
-        r"\bquantum-safe\b",
-        r"\bquantum-resistant\b",
-        r"\bkyber\b",
-        r"\bml-kem\b",
-        r"\bml-dsa\b",
-    ],
-    "quantum computing": [
-        r"\bquantum\s*computing\b",
-        r"\bquantum\s*algorithm\b",
-        r"\bqubit\b",
-        r"\bshor's\b",
-    ],
-    "AI": [
-        r"\bai\b",
-        r"\bartificial\s*intelligence\b",
-        r"\bgenerative\s*ai\b",
-        r"\bllm\b",
-        r"\bprompt\s*engineering\b",
-        r"\bagentic\b",
-    ],
-    "stablecoins": [r"\bstablecoin\b", r"\bstablecoins\b", r"\busdc\b", r"\busdt\b"],
-    "tokenised deposits": [
-        r"\btokenised\s*deposit\b",
-        r"\btokenised\s*deposits\b",
-        r"\btokenized\s*deposits\b",
-        r"\bdeposit\s*tokens\b",
-    ],
-    "Rust": [
-        r"\brust\b",
-        r"\bcargo\b",
-        r"\bstatic-site-generator\b",
-        r"\blibmake\b",
-        r"\brustlogs\b",
-    ],
-    "open source": [r"\bopen\s*source\b", r"\bopen-source\b", r"\boss\b"],
-    "platform engineering": [
-        r"\bplatform\s*engineering\b",
-        r"\bkubernetes\b",
-        r"\bargocd\b",
-        r"\bgitops\b",
-    ],
-    "sovereign cloud": [r"\bsovereign\s*cloud\b", r"\bcloud\s*sovereignty\b"],
-    "cloud native banking": [r"\bcloud\s*native\b", r"\bcloud-native\b"],
-    "cross-border payments": [r"\bcross-border\b", r"\bcross-border\s*payments\b"],
 }
 
 
@@ -232,19 +166,6 @@ def clean_tags(tags: list[str]) -> list[str]:
             seen.add(canonical.lower())
             cleaned.append(canonical)
     return cleaned
-
-
-def infer_tags(content: str, current_tags: list[str]) -> list[str]:
-    """Scan content for keywords and add relevant tags if missing."""
-    inferred = list(current_tags)
-    for tag, patterns in INFERENCE_RULES.items():
-        if tag in inferred:
-            continue
-        for pattern in patterns:
-            if re.search(pattern, content, re.IGNORECASE):
-                inferred.append(tag)
-                break
-    return inferred
 
 
 def update_tags_in_file(file_path: Path, new_tags: list[str]) -> bool:
@@ -315,15 +236,14 @@ def _declared_tags(fm_dict: dict[str, str]) -> list[str]:
 
 
 def _optimise_english(path: Path, label: str) -> tuple[list[str], int]:
-    """Clean + infer tags for one English file; return them and 1 if written.
+    """Clean the declared tags of one English file; return them and 1 if written.
 
     The returned tag list is what locale copies get propagated from, so it is
     returned even when the file was already correct and nothing was written.
     """
-    fm_dict, _, body = extract_frontmatter_and_content(path)
+    fm_dict, _, _ = extract_frontmatter_and_content(path)
     current = _declared_tags(fm_dict)
-    search_text = f"{fm_dict.get('title', '')} {fm_dict.get('description', '')} {body}"
-    final_tags = infer_tags(search_text, clean_tags(current))
+    final_tags = clean_tags(current)
     if final_tags != current and update_tags_in_file(path, final_tags):
         print(f"Optimized {label} -> tags: {final_tags}")
         return final_tags, 1

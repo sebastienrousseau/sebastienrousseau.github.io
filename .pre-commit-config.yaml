@@ -8,6 +8,9 @@ repos:
     rev: v4.6.0
     hooks:
       - id: trailing-whitespace
+        # Keep Markdown hard line breaks (two trailing spaces): FAQ
+        # questions use them to put the answer on its own line.
+        args: [--markdown-linebreak-ext=md]
       - id: end-of-file-fixer
       - id: check-yaml
       - id: check-json
@@ -15,11 +18,16 @@ repos:
       - id: check-added-large-files
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.4.4
+    # Same version as requirements-dev.lock (ADR-0002), so the hook and
+    # CI agree on formatting. Python only, as in CI: newer ruff also
+    # formats code blocks in Markdown, which would rewrite article samples.
+    rev: v0.17.1
     hooks:
-      - id: ruff
+      - id: ruff-check
         args: [ --fix ]
+        types_or: [python, pyi]
       - id: ruff-format
+        types_or: [python, pyi]
 
   - repo: local
     hooks:

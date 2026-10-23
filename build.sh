@@ -470,6 +470,12 @@ python3 scripts/generators/build_trust.py
 # derives from committed dated-post front matter, no wall-clock time.
 python3 scripts/generators/build_datasets.py
 python3 scripts/generators/build_changelog.py
+# Mark English left untranslated on locale pages as lang="en" (WCAG 3.1.2).
+# ssg 0.0.69 no longer wraps every Markdown body in <div lang="en">, which
+# also mislabelled translated bodies; this marks only the English parts. Runs
+# after every generator that writes locale pages and before postbuild, so
+# the later passes see the final HTML.
+python3 scripts/postbuild/mark_untranslated_english.py
 python3 scripts/postbuild/postbuild.py
 # RAG-ready corpus export — JSONL one-object-per-article + per-tag
 # subsets. Consumed by Claude / ChatGPT / Perplexity / LangChain etc.

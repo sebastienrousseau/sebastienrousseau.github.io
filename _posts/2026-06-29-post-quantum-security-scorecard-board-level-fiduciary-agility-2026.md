@@ -39,7 +39,7 @@ schema: "FAQPage, Article"
 seo_title: "The 2026 Post-Quantum Security Scorecard: A Board-Level Framework"
 short_name: "sebastienrousseau"
 subtitle: "How boards must measure and govern the migration to NIST FIPS 203 and 204, tracking CBOM completeness and mitigating Harvest-Now-Decrypt-Later (HNDL) exposure in corporate treasury."
-tags: "post-quantum, cryptography, banking, governance, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
+tags: "post-quantum cryptography, cryptography, banking, governance, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
 theme-color: "0, 83, 191"
 title: "The 2026 Post-Quantum Security Scorecard: A Board-Level Metric Framework"
 url: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
@@ -107,7 +107,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib and the Post-Quantum Banking Migration in 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>.</p>
 </aside>
-Post-quantum security is no longer a research project. The "supervisory clock" is ticking toward late-2020s enforcement deadlines. The finalisation of [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) and [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) has codified the standards for key encapsulation and digital signatures. 
+Post-quantum security is no longer a research project. The "supervisory clock" is ticking toward late-2020s enforcement deadlines. The finalisation of [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) and [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) has codified the standards for key encapsulation and digital signatures.
 
 Regulatory bodies now expect Tier-1 banks to move beyond pilot programmes. In 2026, the focus has shifted to the industrialisation of these standards. Failure to demonstrate a clear migration path carries significant regulatory penalties under the [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) and potential personal liability for directors who ignore the foreseeable threat of quantum-enabled decryption.
 

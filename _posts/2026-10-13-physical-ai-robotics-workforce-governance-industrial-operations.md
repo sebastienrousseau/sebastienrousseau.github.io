@@ -41,7 +41,7 @@ robots: "index, follow"
 schema: "FAQPage, Article"
 short_name: "sebastienrousseau"
 subtitle: "Trust, liability, and the redesign of frontline work: how heavy industry, construction, and standards bodies are establishing governance frameworks for kinetic autonomous systems."
-tags: "ai-governance, ai, operational-resilience, third-party-risk, technology-strategy, innovation, Workforce Governance, Physical AI, Robotics, Industrial Safety, Construction, Kier Group, Risk Management, Labour Economics, Economist Summit"
+tags: "ai-governance, AI, operational-resilience, third-party-risk, technology-strategy, innovation, Workforce Governance, Physical AI, Robotics, Industrial Safety, Construction, Kier Group, Risk Management, Labour Economics, Economist Summit"
 topic_clusters: "ai-governance-regulation, applied-ai-banking"
 theme-color: "0, 67, 165"
 title: "Physical AI and Workforce Governance: Trust, Liability, and the Redesign of Frontline Operations"
@@ -167,7 +167,7 @@ The operational, safety, and legal redesign of work is being enacted differently
 ### Heavy Construction and Infrastructure
 In civil infrastructure, workforce shortages, aging demographics, and extreme safety risks create an urgent need for automation. Construction remains one of the most hazardous industries globally, responsible for thousands of severe injuries and fatalities annually from falls from height, structural collapses, and heavy plant strikes.
 
-Louisa Finlay outlined how Kier Group is redesigning frontline operations by automating dangerous physical toil. Autonomous robotic pile-driving, automated compaction rollers, and drone-based volumetric surveying remove human workers from hazardous trench edges and active haul roads. 
+Louisa Finlay outlined how Kier Group is redesigning frontline operations by automating dangerous physical toil. Autonomous robotic pile-driving, automated compaction rollers, and drone-based volumetric surveying remove human workers from hazardous trench edges and active haul roads.
 
 Crucially, the plant operators who previously spent eight hours in vibrating diesel cabs exposed to dust and noise are being retrained as digital site managers. Operating from air-conditioned site control cabins or remote operations centres, these workers oversee multiple semi-autonomous machines simultaneously, using high-definition video feeds and digital twin telemetry. Workforce satisfaction increases because physical fatigue and injury risks decline while compensation aligns with higher technical skill levels.
 

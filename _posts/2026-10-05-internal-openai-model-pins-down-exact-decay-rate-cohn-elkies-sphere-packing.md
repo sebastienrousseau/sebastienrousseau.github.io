@@ -43,7 +43,7 @@ schema: "FAQPage, Article"
 seo_title: "An internal OpenAI model pins down the exact decay rate of the Cohn-Elkies sphere-packing program"
 short_name: "sebastienrousseau"
 subtitle: "A collection of results from an internal OpenAI model spans mathematics and theoretical computer science, and its sharpest result is exact: the asymptotic strength of the Cohn-Elkies linear program is now known, and the answer closes a question that had stayed open since the framework's high-dimensional behaviour was first conjectured."
-tags: "ai, research, cryptography, quantum-computing, innovation, technology-strategy, OpenAI, sphere packing, Cohn-Elkies, linear programming bounds, lattice problems"
+tags: "AI, research, cryptography, quantum-computing, innovation, technology-strategy, OpenAI, sphere packing, Cohn-Elkies, linear programming bounds, lattice problems"
 topic_clusters: "generative-ai-llms"
 theme-color: "0, 83, 191"
 title: "An internal OpenAI model pins down the exact decay rate of the Cohn-Elkies sphere-packing program"
@@ -308,5 +308,3 @@ No. While the theorem sharpens upper bounds on how densely spheres can pack in h
 </div>
 </aside>
 <!-- enrich-end -->
-
-
