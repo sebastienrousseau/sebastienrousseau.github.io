@@ -63,7 +63,7 @@ _HERO_RE = re.compile(
     r")(</section>)",
     re.IGNORECASE,
 )
-_MAIN_RE = re.compile(
+MAIN_RE = re.compile(
     r'(<main\b[^>]*>\s*<div class="wrap[^"]*">)([\s\S]*?)(</div>\s*</main>)',
     re.IGNORECASE,
 )
@@ -71,7 +71,7 @@ _BLOGPOSTING_DATES_RE = re.compile(
     r'"datePublished":"([^"]+)"[^"]*"dateModified":"([^"]+)"',
 )
 _WORDCOUNT_RE = re.compile(r'"wordCount":(\d+)')
-_HEADING_RE = re.compile(r'<(h[23])(?:\s+id="[^"]*")?>([\s\S]*?)</\1>', re.IGNORECASE)
+HEADING_RE = re.compile(r'<(h[23])(?:\s+id="[^"]*")?>([\s\S]*?)</\1>', re.IGNORECASE)
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "lib"))
 from postbuild_lib._i18n import (  # noqa: F401 — i18n base; several are re-exports
     _HTML_LANG_DETECT_RE,
@@ -351,7 +351,7 @@ def inject_article_furniture(html: str) -> str:
     return _HERO_RE.sub(rf"\1{fragment}\2", html, count=1)
 
 
-_LDJSON_BLOCK_RE = re.compile(
+LDJSON_BLOCK_RE = re.compile(
     r'<script type="application/ld\+json"[^>]*>([\s\S]*?)</script>',
     re.IGNORECASE,
 )
@@ -374,16 +374,16 @@ TAG_STRIP_RE = re.compile(r"<[^>]+>")
 # strips each tag from EN shells before locale re-render so locale pages
 # get re-injected with locale-correct strings, not EN leaks.
 
-_CANONICAL_RE = re.compile(r'<link\s+rel="canonical"\s+href="([^"]+)"', re.IGNORECASE)
-_OG_TITLE_RE = re.compile(r'<meta\s+property="og:title"\s+content="([^"]+)"', re.IGNORECASE)
-_DESCRIPTION_RE = re.compile(r'<meta\s+name="description"\s+content="([^"]+)"', re.IGNORECASE)
+CANONICAL_RE = re.compile(r'<link\s+rel="canonical"\s+href="([^"]+)"', re.IGNORECASE)
+OG_TITLE_RE = re.compile(r'<meta\s+property="og:title"\s+content="([^"]+)"', re.IGNORECASE)
+DESCRIPTION_RE = re.compile(r'<meta\s+name="description"\s+content="([^"]+)"', re.IGNORECASE)
 _AP_HERO_OPEN_RE = re.compile(r'(<section class="ap-hero">)(\s*)(<h1>)', re.IGNORECASE)
 LI_CONTENT_RE = re.compile(r"<li>(.*?)</li>", re.IGNORECASE | re.DOTALL)
 _SUB_PARA_RE = re.compile(r'<p class="sub">', re.IGNORECASE)
-_WRAP_CLOSE_RE = re.compile(r"(</div>\s*</main>)", re.IGNORECASE)
+WRAP_CLOSE_RE = re.compile(r"(</div>\s*</main>)", re.IGNORECASE)
 
 # 16x16 monochrome SVG glyphs — currentColor so .share-rail can theme them.
-_SVG_WA = (
+SVG_WA = (
     '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
     '<path d="M8 1C4.13 1 1 4.13 1 8c0 1.27.34 2.46.93 3.5L1 15l3.6-.93C5.62 14.66 6.79 15 8 15c3'
     ".87 0 7-3.13 7-7s-3.13-7-7-7zm0 12.7c-1.06 0-2.05-.29-2.9-.78l-.2-.12-2.13.56.57-2.08-.13-.21"
@@ -395,7 +395,7 @@ _SVG_WA = (
     "2.57.41.18.72.28.97.36.4.13.78.11 1.07.07.33-.05 1-.41 1.14-.8.14-.4.14-.74.1-.81-.04-.07-.16"
     '-.11-.32-.19z"/></svg>'
 )
-_SVG_BLUESKY = (
+SVG_BLUESKY = (
     '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
     '<path d="M3.2 2.5c1.5.6 3.2 1.9 4.3 4.3c.3.7.6 1.5.8 2.1c.2-.7.5-1.4.8-2.1c1.1-2.4 2.8-3.7 4.3-4.3'
     "c1.7-.7 2.5.2 2.5 2.6c0 1.4-.5 4.2-.8 5.1c-.4 1.2-1.4 1.5-2.4 1.4c1.6.3 2 1.2 1 2.1c-1.9 1.7-2.7-.4-2.9"
@@ -450,30 +450,30 @@ FOOTNOTE_DEF_RE = re.compile(r"\[\^(\d+)\]:\s*([^\n<]+)")
 # WS2 — action rail, cite popover, reuse / republish panel
 # ---------------------------------------------------------------------------
 
-_LICENSE_DEFAULT = "CC-BY-4.0"
-_LICENSE_URLS: dict[str, str] = {
+LICENSE_DEFAULT = "CC-BY-4.0"
+LICENSE_URLS: dict[str, str] = {
     "CC-BY-4.0": "https://creativecommons.org/licenses/by/4.0/",
     "CC-BY-SA-4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
     "CC-BY-NC-SA-4.0": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "CC-BY-ND-4.0": "https://creativecommons.org/licenses/by-nd/4.0/",
 }
 
-_AUTHOR_LAST = "Rousseau"
-_AUTHOR_FIRST = "Sebastien"
+AUTHOR_LAST = "Rousseau"
+AUTHOR_FIRST = "Sebastien"
 
 # 14x14 monochrome SVG glyphs (currentColor fill) for the action rail.
-_SVG_DOWNLOAD = (
+SVG_DOWNLOAD = (
     '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
     '<path d="M7.3 1.5h1.4v6l1.95-1.95.99.99L8 9.18 4.36 5.54l.99-.99L7.3 6.5v-5zM2 13h12v1.5H2V13z"/>'
     "</svg>"
 )
 
 
-_OG_IMAGE_ALT_RE = re.compile(
+OG_IMAGE_ALT_RE = re.compile(
     r'<meta\s+(?:property|name)="og:image:alt"\s+content="([^"]+)"',
     re.IGNORECASE,
 )
-_BANNER_ALT_FRONTMATTER_RE = re.compile(
+BANNER_ALT_FRONTMATTER_RE = re.compile(
     r'<meta\s+name="twitter:image:alt"\s+content="([^"]+)"',
     re.IGNORECASE,
 )
@@ -488,7 +488,7 @@ BANNER_FALLBACK_HEIGHT = 675
 # Insertion anchor: the close of <section class="ap-hero"> immediately
 # followed by the next sibling. Matches the same shape as the lang-switch
 # anchor (which runs later in the pipeline).
-_HERO_BANNER_INSERT_RE = re.compile(
+HERO_BANNER_INSERT_RE = re.compile(
     r'(</section>)(\s*<(?!figure class="article-banner")[a-z])',
     re.IGNORECASE,
 )
@@ -507,13 +507,13 @@ BODY_H1_RE = re.compile(
 
 # Local copies of the CSP-meta regexes (kept in postbuild.py too — both
 # modules patch the same tag from different injection passes).
-_csp_tag_re = re.compile(
+CSP_TAG_RE = re.compile(
     r'<meta\b[^>]*?http-equiv=["\']?Content-Security-Policy["\']?[^>]*?>',
     re.IGNORECASE,
 )
 
 
-_HEAD_END_RE = re.compile(r"</head>", re.IGNORECASE)
+HEAD_END_RE = re.compile(r"</head>", re.IGNORECASE)
 # Match a <link rel="alternate" hreflang=…> tag with any attribute order
 # and either HTML5 (``>``) or XHTML (``/>``) self-close. The previous form
 # required ``[^/]*/>`` which can never match real URLs (every ``https://``

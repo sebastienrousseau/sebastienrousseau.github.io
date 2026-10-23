@@ -575,7 +575,7 @@ def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str
     out = inject_index_scorecard(out)
     out = _bump(inject_share_rail, out, ctr, "share_rails_set")
     out = _bump(inject_action_rail, out, ctr, "action_rails_set")
-    # Wrap-foot stack — order matters: each _WRAP_CLOSE_RE.sub inserts
+    # Wrap-foot stack — order matters: each WRAP_CLOSE_RE.sub inserts
     # BEFORE </div></main>, so the LAST pass ends up closest to it.
     # We want: syndicate (top) → cite → reuse → byline (bottom).
     out = _bump(inject_oembed_link, out, ctr, "oembed_links_set")
