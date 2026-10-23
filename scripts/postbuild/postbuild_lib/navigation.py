@@ -22,11 +22,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "lib"))
 from _core import DATED_SLUG_RE as _DATED_SLUG_RE
 from postbuild_lib._i18n import _all_active_non_en_langs, _labels, _slug_maps
 from postbuild_lib.article_furniture import (
-    _H1_RE,
     _HEADING_RE,
     _LDJSON_BLOCK_RE,
     _MAIN_RE,
     BASE_URL,
+    H1_RE,
     PUBLIC,
     slugify,
 )
@@ -203,7 +203,7 @@ def build_post_nav_index(
         html = p.read_text(encoding="utf-8", errors="ignore")
         if '"@type":"BlogPosting"' not in html:
             continue
-        m = _H1_RE.search(html)
+        m = H1_RE.search(html)
         title = m.group(1).strip() if m else slug
         dated.append((slug[:10], slug, title))
     dated.sort(key=lambda t: t[0])
