@@ -5,8 +5,9 @@ name: fuzz
 # romanisation tables that turn a translated title into a live URL.
 #
 # Bounded so it is a gate, not a research run: each target gets a fixed
-# number of runs on a pull request, longer on the nightly schedule. A crash
-# reproducer is uploaded so the failure can be replayed exactly.
+# number of runs on a pull request, longer on the nightly schedule, and at
+# most MAX_TOTAL_TIME seconds either way. A crash reproducer is uploaded
+# so the failure can be replayed exactly.
 
 on:
   push:
@@ -47,10 +48,17 @@ jobs:
         env:
           # A nightly run explores far more than a PR can afford to.
           RUNS: ${{ github.event_name == 'schedule' && '2000000' || '50000' }}
+          # Wall-clock cap under timeout-minutes. Throughput falls as the
+          # corpus grows (fuzz_slugify: ~3,500 exec/s at the start, ~780
+          # at 4 KB inputs), so 2M runs needs ~43 min and the job was
+          # cancelled every night before it could report. libFuzzer stops
+          # cleanly at whichever bound comes first.
+          MAX_TOTAL_TIME: '900'
         run: |
           mkdir -p fuzz/artifacts
           python3 "fuzz/${{ matrix.target }}.py" \
             -atheris_runs="$RUNS" \
+            -max_total_time="$MAX_TOTAL_TIME" \
             -artifact_prefix=fuzz/artifacts/ \
             -print_final_stats=1
 
