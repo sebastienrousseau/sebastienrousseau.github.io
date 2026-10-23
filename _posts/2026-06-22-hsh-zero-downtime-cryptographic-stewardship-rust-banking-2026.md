@@ -38,7 +38,7 @@ schema: "FAQPage, Article"
 seo_title: "hsh: Zero-Downtime Cryptographic Stewardship in Rust for Banking"
 short_name: "sebastienrousseau"
 subtitle: "How a pure-Rust cryptographic framework enables banks to seamlessly upgrade legacy passwords to Argon2id with HSM interlocks — and what it means for DORA and Basel III compliance."
-tags: "hsh, Rust, banking, cryptography, Argon2id, HSM, DORA, Basel-III, security, open-source, operational-resilience"
+tags: "hsh, Rust, banking, cryptography, Argon2id, HSM, DORA, Basel-III, security, open source, operational-resilience"
 theme-color: "0, 83, 191"
 title: "Securing Password Management in Enterprise Banking: Multi-Algorithm Hashing and Upgrades with hsh"
 url: "https://sebastienrousseau.com/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026"
@@ -221,7 +221,7 @@ Three properties matter:
 
 ## 04. Peppered Hashes via HSM / KMS Interlock
 
-Standard password hashing protects against direct database leaks, but if an attacker gains both the database (hashes and salts), they can execute offline cracking. 
+Standard password hashing protects against direct database leaks, but if an attacker gains both the database (hashes and salts), they can execute offline cracking.
 
 hsh introduces a robust "peppered" security layer. By integrating with Hardware Security Modules (HSMs) or cloud-native Key Management Services (KMS), the final Argon2id output is cryptographically wrapped with a high-entropy key that never leaves the secure hardware boundary. If the user database is exfiltrated, the attacker possesses only encrypted blobs. They cannot begin cracking passwords without also breaching the bank's physically isolated HSM infrastructure.
 

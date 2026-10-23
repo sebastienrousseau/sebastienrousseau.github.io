@@ -43,7 +43,7 @@ schema: "FAQPage, Article"
 seo_title: "When the Technology Lands Before the Institution Can Adapt: What MIT's AI Committee Says About Teaching and Learning"
 short_name: "sebastienrousseau"
 subtitle: "MIT's ad hoc committee on AI doesn't treat generative AI as a tooling problem to be patched with a policy. Its report treats it as a pressure test on what an MIT education is for, and argues that uncertainty can't be an excuse for inaction."
-tags: "ai, ai-governance, generative-ai, llm, technology-strategy, research, innovation, MIT, higher education, academic policy, AI adoption"
+tags: "AI, ai-governance, generative-ai, LLM, technology-strategy, research, innovation, MIT, higher education, academic policy, AI adoption"
 topic_clusters: "ai-governance-regulation, applied-ai-banking"
 theme-color: "0, 83, 191"
 title: "When the Technology Lands Before the Institution Can Adapt: What MIT's AI Committee Says About Teaching and Learning"
@@ -309,5 +309,3 @@ The committee highlights that conventional assessment instruments (take-home exa
 </div>
 </aside>
 <!-- enrich-end -->
-
-

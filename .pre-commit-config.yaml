@@ -8,6 +8,9 @@ repos:
     rev: v4.6.0
     hooks:
       - id: trailing-whitespace
+        # Keep Markdown hard line breaks (two trailing spaces): FAQ
+        # questions use them to put the answer on its own line.
+        args: [--markdown-linebreak-ext=md]
       - id: end-of-file-fixer
       - id: check-yaml
       - id: check-json

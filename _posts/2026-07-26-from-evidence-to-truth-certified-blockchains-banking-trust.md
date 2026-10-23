@@ -41,7 +41,7 @@ schema: "FAQPage, Article"
 seo_title: "Certified Blockchains: The Next Era of Banking Trust"
 short_name: "sebastienrousseau"
 subtitle: "A boardroom argument for wholesale banking leaders: why ISO/IEC TC 307 guidance is not assurance, and how scoring ledger governance, consensus, cryptography and observability against a 5-level maturity model turns engineering metrics into board-auditable, DORA-defensible truth."
-tags: "blockchain, banking, DORA, ISO TC 307, distributed ledger, AI governance, DLT assurance, post-quantum, smart contracts, regulatory compliance, wholesale banking, fiduciary risk"
+tags: "blockchain, banking, DORA, ISO TC 307, distributed ledger, AI governance, DLT assurance, post-quantum cryptography, smart contracts, regulatory compliance, wholesale banking, fiduciary risk"
 theme-color: "0, 83, 191"
 title: "From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust"
 url: "https://sebastienrousseau.com/2026-07-26-from-evidence-to-truth-certified-blockchains-banking-trust"
@@ -273,4 +273,3 @@ In most jurisdictions, pure permissionless public blockchains fail to satisfy ba
 * ISO/IEC JTC 1/SC 42, 2023\. *ISO/IEC 42001:2023, Information technology, Artificial intelligence, Management system*. Geneva: International Organisation for Standardisation. Available at: [ISO/IEC JTC 1/SC 42, 2023\.](https://www.iso.org/standard/81230.html "ISO/IEC JTC 1/SC 42, 2023\.").  
 * ISO/IEC Technical Committee 307, 2020\. *ISO/IEC 22739:2020, Blockchain and distributed ledger technologies, Vocabulary*. Geneva: International Organisation for Standardisation. Available at: [ISO/IEC Technical Committee 307, 2020\.](https://www.iso.org/standard/73771.html "ISO/IEC Technical Committee 307, 2020\.").  
 * National Institute of Standards and Technology (NIST), 2026\. *First Three Finalised Post-Quantum Encryption Standards (FIPS 203, 204, and 205\)*. Gaithersburg: U.S. Department of Commerce. Available at: [National Institute of Standards and Technology (NIST), 2026\.](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards "National Institute of Standards and Technology (NIST), 2026\.").
-

@@ -43,7 +43,7 @@ schema: "FAQPage, Article"
 seo_title: "What a Machine Learning Textbook's Contents Page Says About the Field"
 short_name: "sebastienrousseau"
 subtitle: "Foundations of Machine Learning, second edition, defines learning as using experience to make accurate predictions, and then builds a whole curriculum around the quantities that decide whether it works: data, complexity and guarantees."
-tags: "ai, research, innovation, technology-strategy, open-source, machine learning, statistical learning theory, PAC learning, Rademacher complexity, VC-dimension"
+tags: "AI, research, innovation, technology-strategy, open source, machine learning, statistical learning theory, PAC learning, Rademacher complexity, VC-dimension"
 topic_clusters: "generative-ai-llms"
 theme-color: "0, 83, 191"
 title: "What a Machine Learning Textbook's Contents Page Says About the Field"
@@ -309,5 +309,3 @@ Empirical risk minimization (ERM) selects the hypothesis that minimizes training
 </div>
 </aside>
 <!-- enrich-end -->
-
-
