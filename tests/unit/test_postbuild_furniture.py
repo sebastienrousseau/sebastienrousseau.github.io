@@ -313,6 +313,21 @@ def test_render_meta_bar_includes_author_and_dates():
     assert "2 min read" in out  # 440 words / 220 wpm → 2 min
 
 
+def test_render_meta_bar_read_time_carries_no_aria_label():
+    """aria-label is prohibited on a generic <span> (axe aria-prohibited-attr);
+    the visible "N min read" already names it, so it must not be labelled."""
+    from postbuild_lib.article_furniture import LABELS_EN, _render_meta_bar
+
+    out = _render_meta_bar(
+        date_pub="2026-05-12T08:00:00+01:00",
+        date_mod="",
+        word_count=440,
+        labels=LABELS_EN,
+        lang="en",
+    )
+    assert '<span class="meta-read">2 min read</span>' in out
+
+
 def test_render_meta_bar_suppresses_updated_when_same_day():
     """If date_mod is the same day as date_pub, the 'Updated' stamp is suppressed."""
     from postbuild_lib.article_furniture import LABELS_EN, _render_meta_bar
@@ -1768,7 +1783,6 @@ _LANGSWITCH_BLOGPOST_HTML = (
 
 
 def test_inject_lang_switcher_emits_rail_when_alternates_exist():
-
     real_alternates = hf._alternates_for_en_slug
     real_resolve = hf._resolve_en_slug
 
@@ -1813,7 +1827,6 @@ def test_inject_lang_switcher_emits_rail_when_alternates_exist():
 
 
 def test_inject_lang_switcher_localises_lead_per_locale():
-
     real_alternates = hf._alternates_for_en_slug
     real_resolve = hf._resolve_en_slug
 
@@ -1841,7 +1854,6 @@ def test_inject_lang_switcher_localises_lead_per_locale():
 
 
 def test_inject_lang_switcher_emits_rtl_for_arabic():
-
     real_alternates = hf._alternates_for_en_slug
     real_resolve = hf._resolve_en_slug
 
@@ -1867,7 +1879,6 @@ def test_inject_lang_switcher_emits_rtl_for_arabic():
 
 
 def test_inject_lang_switcher_skips_non_blogposting():
-
     html = (
         '<html><body><section class="ap-hero"><h1>About</h1></section><main></main></body></html>'
     )
@@ -1876,7 +1887,6 @@ def test_inject_lang_switcher_skips_non_blogposting():
 
 
 def test_inject_lang_switcher_skips_when_no_alternates():
-
     real = hf._alternates_for_en_slug
     real_resolve = hf._resolve_en_slug
     hf._alternates_for_en_slug = lambda *a, **k: [
@@ -1897,7 +1907,6 @@ def test_inject_lang_switcher_skips_when_no_alternates():
 
 
 def test_inject_lang_switcher_skips_when_slug_unresolved():
-
     real_resolve = hf._resolve_en_slug
     hf._resolve_en_slug = lambda slug, lang: None
     try:
@@ -1913,7 +1922,6 @@ def test_inject_lang_switcher_skips_when_slug_unresolved():
 
 
 def test_inject_lang_switcher_is_idempotent():
-
     real = hf._alternates_for_en_slug
     real_resolve = hf._resolve_en_slug
     hf._alternates_for_en_slug = lambda *a, **k: [
@@ -2334,6 +2342,15 @@ def test_inject_byline_strap_renders_inside_wrap_div_above_closing_main():
     # — still matches and the pagination ends up below the byline.
     assert "</p></div></main>" in out
     assert out.index('class="byline-strap"') < out.rindex("</div>")
+
+
+def test_inject_byline_strap_carries_no_aria_label():
+    """aria-label is prohibited on a <p> (axe aria-prohibited-attr); the
+    visible name and role already say what the strap is."""
+    from postbuild_lib.sharing import inject_byline_strap
+
+    out = inject_byline_strap(_ws2_page())
+    assert '<p class="byline-strap">' in out
 
 
 def test_inject_byline_strap_idempotent():

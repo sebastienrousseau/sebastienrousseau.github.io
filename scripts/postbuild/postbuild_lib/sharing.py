@@ -118,13 +118,11 @@ def inject_byline_strap(html: str) -> str:
         return html
     if 'class="byline-strap"' in html:
         return html
-    labels = _labels(html)
     is_fr = _is_french(html)
     author_url = "/fr/a-propos/index.html" if is_fr else AUTHOR_URL
     role = _byline_role(is_fr)
-    aria = _esc(labels.get("Byline", "Byline"), quote=True)
     strap = (
-        f'<p class="byline-strap" aria-label="{aria}">'
+        '<p class="byline-strap">'
         f'<a href="{author_url}">{_esc(AUTHOR_NAME.upper())}</a>'
         f' <span class="sep" aria-hidden="true">·</span> '
         f"<span>{_esc(role)}</span></p>"

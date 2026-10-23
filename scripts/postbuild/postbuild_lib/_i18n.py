@@ -25,7 +25,6 @@ LABELS_EN: dict[str, str] = {
     "Sources & references": "Sources & references",
     "Contents": "Contents",
     "Article pagination": "Article pagination",
-    "Estimated read time": "Estimated read time",
     "Link to": "Link to",
     "Table of contents": "Table of contents",
     "Topics": "Topics",

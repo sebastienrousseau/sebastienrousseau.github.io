@@ -88,9 +88,7 @@ from postbuild_lib._i18n import (  # noqa: F401 — i18n base; several are re-ex
 )
 
 _H1_RE = re.compile(
-    r'<section class="ap-hero">\s*'
-    r'(?:<p class="eyebrow">[^<]*</p>\s*)?'
-    r"<h1>([^<]+)</h1>",
+    r'<section class="ap-hero">\s*' r'(?:<p class="eyebrow">[^<]*</p>\s*)?' r"<h1>([^<]+)</h1>",
     re.IGNORECASE,
 )
 
@@ -112,7 +110,6 @@ LABELS_FR: dict[str, str] = {
     "Sources & references": "Sources et références",
     "Contents": "Sommaire",
     "Article pagination": "Pagination des articles",
-    "Estimated read time": "Temps de lecture estimé",
     "Link to": "Lien vers",
     "Table of contents": "Table des matières",
     "Topics": "Sujets",
@@ -299,10 +296,7 @@ def _render_meta_bar(
         )
     if word_count:
         read_min = max(1, round(word_count / 220))
-        parts.append(
-            f'<span class="meta-read" aria-label="{labels["Estimated read time"]}">'
-            f"{read_min} {labels['min read']}</span>"
-        )
+        parts.append(f'<span class="meta-read">{read_min} {labels["min read"]}</span>')
     return (
         '<div class="article-meta">' + ' <span aria-hidden="true">·</span> '.join(parts) + "</div>"
     )
