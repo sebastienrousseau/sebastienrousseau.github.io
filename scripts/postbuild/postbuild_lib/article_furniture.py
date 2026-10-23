@@ -87,7 +87,7 @@ from postbuild_lib._i18n import (  # noqa: F401 — i18n base; several are re-ex
     _strings_for_lang,
 )
 
-_H1_RE = re.compile(
+H1_RE = re.compile(
     r'<section class="ap-hero">\s*' r'(?:<p class="eyebrow">[^<]*</p>\s*)?' r"<h1>([^<]+)</h1>",
     re.IGNORECASE,
 )
@@ -499,7 +499,7 @@ _HERO_BANNER_INSERT_RE = re.compile(
 # its surrounding markup as part of the heading title.
 
 
-_BODY_H1_RE = re.compile(
+BODY_H1_RE = re.compile(
     r'(<main\b[^>]*>\s*<div class="wrap[^"]*">[\s\S]*?' r"(?:</aside>\s*)*)<h1>([^<]+)</h1>\s*",
     re.IGNORECASE,
 )

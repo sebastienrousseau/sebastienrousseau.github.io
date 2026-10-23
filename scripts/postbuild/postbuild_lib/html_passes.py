@@ -20,8 +20,8 @@ from pathlib import Path
 
 import _lang_registry
 from postbuild_lib.article_furniture import (
-    _BODY_H1_RE,
-    _H1_RE,
+    BODY_H1_RE,
+    H1_RE,
     PUBLIC,
     TABLE_OPEN_RE,
     TAG_STRIP_RE,
@@ -139,9 +139,9 @@ def strip_duplicate_body_h1(html: str) -> str:
     editors (``check_voice`` still requires exactly one H1 in source),
     and only the served page drops the redundant second one.
     """
-    if _H1_RE.search(html) is None:
+    if H1_RE.search(html) is None:
         return html
-    new_html, n = _BODY_H1_RE.subn(lambda m: m.group(1), html, count=1)
+    new_html, n = BODY_H1_RE.subn(lambda m: m.group(1), html, count=1)
     return new_html if n else html
 
 

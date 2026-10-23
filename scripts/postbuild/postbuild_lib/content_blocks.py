@@ -18,7 +18,6 @@ from html import unescape as _unesc
 from postbuild_lib._i18n import _labels
 from postbuild_lib.article_furniture import (
     _BANNER_ALT_FRONTMATTER_RE,
-    _H1_RE,
     _HEAD_END_RE,
     _HERO_BANNER_INSERT_RE,
     _OG_IMAGE_ALT_RE,
@@ -26,6 +25,7 @@ from postbuild_lib.article_furniture import (
     BANNER_FALLBACK_HEIGHT,
     BANNER_FALLBACK_WIDTH,
     FOOTNOTE_DEF_RE,
+    H1_RE,
     MIN_H2_FOR_RULES,
     _csp_tag_re,
     _is_french,
@@ -255,7 +255,7 @@ def inject_hero_banner(html: str) -> str:
         alt_text = alt_m.group(1)
     else:
         # Fallback: derive from the H1 — better than nothing, screen-reader-safe.
-        h1 = _H1_RE.search(html)
+        h1 = H1_RE.search(html)
         alt_text = f"Banner for: {h1.group(1).strip()}" if h1 else ""
 
     figure = (
