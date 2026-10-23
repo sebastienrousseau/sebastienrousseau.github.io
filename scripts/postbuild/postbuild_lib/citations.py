@@ -17,13 +17,13 @@ from html import unescape as _unesc
 
 from postbuild_lib._i18n import _labels
 from postbuild_lib.article_furniture import (
-    _AUTHOR_FIRST,
-    _AUTHOR_LAST,
-    _CANONICAL_RE,
-    _DESCRIPTION_RE,
-    _MAIN_RE,
-    _OG_TITLE_RE,
-    _WRAP_CLOSE_RE,
+    AUTHOR_FIRST,
+    AUTHOR_LAST,
+    CANONICAL_RE,
+    DESCRIPTION_RE,
+    MAIN_RE,
+    OG_TITLE_RE,
+    WRAP_CLOSE_RE,
     _extract_article_metadata,
 )
 
@@ -86,10 +86,10 @@ def _citation_blocks(title: str, url: str, date_str: str) -> dict[str, str]:
     month_short = dt.strftime("%b") if dt else ""
     month_long = dt.strftime("%B") if dt else ""
     day = str(dt.day) if dt else ""
-    author_lastfirst = f"{_AUTHOR_LAST}, {_AUTHOR_FIRST}"
-    author_vancouver = f"{_AUTHOR_LAST} {_AUTHOR_INITIAL[0]}"
-    author_apa = f"{_AUTHOR_LAST}, {_AUTHOR_INITIAL}"
-    bib_key = f"{_AUTHOR_LAST.lower()}{year}{_first_word(title)}"
+    author_lastfirst = f"{AUTHOR_LAST}, {AUTHOR_FIRST}"
+    author_vancouver = f"{AUTHOR_LAST} {_AUTHOR_INITIAL[0]}"
+    author_apa = f"{AUTHOR_LAST}, {_AUTHOR_INITIAL}"
+    bib_key = f"{AUTHOR_LAST.lower()}{year}{_first_word(title)}"
     bibtex = (
         f"@online{{{bib_key},\n"
         f"  author  = {{{author_lastfirst}}},\n"
@@ -136,8 +136,8 @@ def inject_cite_popover(html: str) -> str:
         return html
     if 'id="cite-popover"' in html:
         return html
-    url_m = _CANONICAL_RE.search(html)
-    title_m = _OG_TITLE_RE.search(html)
+    url_m = CANONICAL_RE.search(html)
+    title_m = OG_TITLE_RE.search(html)
     if not (url_m and title_m):
         return html
     url = url_m.group(1)
@@ -149,7 +149,7 @@ def inject_cite_popover(html: str) -> str:
     # Meta header — title + description give the reader context before
     # they commit to a citation format. Description comes from the
     # canonical <meta name="description"> the article already carries.
-    desc_m = _DESCRIPTION_RE.search(html)
+    desc_m = DESCRIPTION_RE.search(html)
     desc = _unesc(desc_m.group(1)) if desc_m else ""
     # Heading-skip-safe: the cite popover is a <details> disclosure
     # widget whose <summary> already serves as the accessible name.
@@ -180,7 +180,7 @@ def inject_cite_popover(html: str) -> str:
         + "".join(blocks)
         + "</details>"
     )
-    return _WRAP_CLOSE_RE.sub(popover + r"\1", html, count=1)
+    return WRAP_CLOSE_RE.sub(popover + r"\1", html, count=1)
 
 
 _NON_BODY_ASIDE_RE = re.compile(
@@ -194,7 +194,7 @@ def _extract_citations(html: str) -> list[dict[str, str]]:
     article body. Strips author-card / related-posts / post-lead / ToC /
     article-sources asides first so the author's own profile links and
     nav chrome don't pollute the citation graph."""
-    main_m = _MAIN_RE.search(html)
+    main_m = MAIN_RE.search(html)
     if not main_m:
         return []
     body = _NON_BODY_ASIDE_RE.sub("", main_m.group(2))

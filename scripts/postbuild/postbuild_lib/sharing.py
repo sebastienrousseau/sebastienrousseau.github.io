@@ -33,22 +33,22 @@ from _svg_icons import (
 )
 from postbuild_lib._i18n import _labels
 from postbuild_lib.article_furniture import (
-    _AUTHOR_FIRST,
-    _AUTHOR_LAST,
-    _CANONICAL_RE,
-    _DESCRIPTION_RE,
-    _LICENSE_DEFAULT,
-    _LICENSE_URLS,
-    _MAIN_RE,
-    _OG_TITLE_RE,
-    _SVG_BLUESKY,
-    _SVG_DOWNLOAD,
-    _SVG_WA,
-    _WRAP_CLOSE_RE,
+    AUTHOR_FIRST,
+    AUTHOR_LAST,
     AUTHOR_NAME,
     AUTHOR_URL,
     BASE_URL,
+    CANONICAL_RE,
+    DESCRIPTION_RE,
     LI_CONTENT_RE,
+    LICENSE_DEFAULT,
+    LICENSE_URLS,
+    MAIN_RE,
+    OG_TITLE_RE,
+    SVG_BLUESKY,
+    SVG_DOWNLOAD,
+    SVG_WA,
+    WRAP_CLOSE_RE,
     _is_french,
 )
 from postbuild_lib.seo import _keywords_re
@@ -66,8 +66,8 @@ def inject_oembed_link(html: str) -> str:
         return html
     if "application/json+oembed" in html:
         return html
-    canonical_m = _CANONICAL_RE.search(html)
-    title_m = _OG_TITLE_RE.search(html)
+    canonical_m = CANONICAL_RE.search(html)
+    title_m = OG_TITLE_RE.search(html)
     if not (canonical_m and title_m):
         return html
     url = canonical_m.group(1)
@@ -127,7 +127,7 @@ def inject_byline_strap(html: str) -> str:
         f' <span class="sep" aria-hidden="true">·</span> '
         f"<span>{_esc(role)}</span></p>"
     )
-    return _WRAP_CLOSE_RE.sub(strap + r"\1", html, count=1)
+    return WRAP_CLOSE_RE.sub(strap + r"\1", html, count=1)
 
 
 def _share_li(href: str, label: str, glyph: str) -> str:
@@ -234,8 +234,8 @@ def _share_payload(html: str) -> dict[str, str] | None:
     """Extract canonical URL + og:title + meta description and return
     the per-platform pre-fill strings the share rail needs. Returns
     None if canonical or title is missing."""
-    url_m = _CANONICAL_RE.search(html)
-    title_m = _OG_TITLE_RE.search(html)
+    url_m = CANONICAL_RE.search(html)
+    title_m = OG_TITLE_RE.search(html)
     if not (url_m and title_m):
         return None
     url = url_m.group(1)
@@ -244,7 +244,7 @@ def _share_payload(html: str) -> dict[str, str] | None:
     if url.endswith("/index.html"):
         url = url[: -len("/index.html")] + "/"
     title = _unesc(title_m.group(1))
-    desc_m = _DESCRIPTION_RE.search(html)
+    desc_m = DESCRIPTION_RE.search(html)
     desc = _unesc(desc_m.group(1)) if desc_m else ""
     return {
         "url": url,
@@ -296,7 +296,7 @@ def _share_rail_items(payload: dict[str, str], labels: dict[str, str]) -> str:
         + _share_li(
             f"https://wa.me/?text={_url_quote(wa_text, safe='')}",
             labels.get("Share.whatsapp", "Share on WhatsApp"),
-            _SVG_WA,
+            SVG_WA,
         )
         + _share_li(
             f"mailto:?subject={enc_title}&body={_url_quote(email_body, safe='')}",
@@ -308,7 +308,7 @@ def _share_rail_items(payload: dict[str, str], labels: dict[str, str]) -> str:
             # 300 char post limit so we send title + URL like X.
             f"https://bsky.app/intent/compose?text={_url_quote(x_text, safe='')}",
             labels.get("Share.bluesky", "Share on Bluesky"),
-            _SVG_BLUESKY,
+            SVG_BLUESKY,
         )
     )
 
@@ -390,7 +390,7 @@ def inject_syndication_panel(html: str) -> str:
     if payload is None:
         return html
     panel = _render_syndication_panel(payload, _labels(html), html)
-    return _WRAP_CLOSE_RE.sub(panel + r"\1", html, count=1)
+    return WRAP_CLOSE_RE.sub(panel + r"\1", html, count=1)
 
 
 def inject_share_rail(html: str) -> str:
@@ -411,7 +411,7 @@ def inject_share_rail(html: str) -> str:
     items = _share_rail_items(payload, _labels(html))
     aria = _esc(_labels(html).get("Share", "Share"), quote=True)
     rail = f'<nav class="share-rail share-rail--sticky" aria-label="{aria}"><ul>{items}</ul></nav>'
-    return _MAIN_RE.sub(rf"\1{rail}\2\3", html, count=1)
+    return MAIN_RE.sub(rf"\1{rail}\2\3", html, count=1)
 
 
 _LICENSE_RE = re.compile(r'<meta\s+name="license"\s+content="([^"]+)"', re.IGNORECASE)
@@ -435,7 +435,7 @@ def _slug_from_canonical(html: str) -> str | None:
     this site always end with ``/<slug>/index.html``; strip that suffix
     before taking the last path segment so PDF / oEmbed routes get
     ``/api/pdf/<slug>.pdf`` and not ``/api/pdf/index.html.pdf``."""
-    m = _CANONICAL_RE.search(html)
+    m = CANONICAL_RE.search(html)
     if not m:
         return None
     url = m.group(1)
@@ -452,7 +452,7 @@ def _license_id(html: str) -> str:
         candidate = m.group(1).strip()
         if candidate in _LICENSE_LABELS:
             return candidate
-    return _LICENSE_DEFAULT
+    return LICENSE_DEFAULT
 
 
 def inject_action_rail(html: str) -> str:
@@ -482,7 +482,7 @@ def inject_action_rail(html: str) -> str:
     items = (
         f'<li><a href="{pdf_href}" download="{slug}.pdf" '
         f'data-print-fallback rel="alternate" type="application/pdf">'
-        f"{_SVG_DOWNLOAD}"
+        f"{SVG_DOWNLOAD}"
         f"<span>{_esc(labels.get('Action.savePdf', 'Save PDF'))}</span></a></li>"
         f'<li><a href="#cite-popover">{_SVG_QUOTE}'
         f"<span>{_esc(labels.get('Action.cite', 'Cite'))}</span></a></li>"
@@ -490,7 +490,7 @@ def inject_action_rail(html: str) -> str:
     rail = (
         f'<nav class="action-rail action-rail--sticky" aria-label="{aria}"><ul>{items}</ul></nav>'
     )
-    return _MAIN_RE.sub(rf"\1{rail}\2\3", html, count=1)
+    return MAIN_RE.sub(rf"\1{rail}\2\3", html, count=1)
 
 
 def inject_reuse_panel(html: str) -> str:
@@ -505,15 +505,15 @@ def inject_reuse_panel(html: str) -> str:
         return html
     if 'class="reuse"' in html:
         return html
-    url_m = _CANONICAL_RE.search(html)
-    title_m = _OG_TITLE_RE.search(html)
+    url_m = CANONICAL_RE.search(html)
+    title_m = OG_TITLE_RE.search(html)
     if not (url_m and title_m):
         return html
     url = url_m.group(1)
     title = _unesc(title_m.group(1))
     license_id = _license_id(html)
     license_label = _LICENSE_LABELS[license_id]
-    license_url = _LICENSE_URLS.get(license_id)
+    license_url = LICENSE_URLS.get(license_id)
     labels = _labels(html)
     if license_url:
         license_a = f'<a rel="license" href="{license_url}">{_esc(license_label)}</a>'
@@ -522,7 +522,7 @@ def inject_reuse_panel(html: str) -> str:
     # Description for the visible share-card preview AND the multi-line
     # attribution payload. Falls back to "" when the article has no
     # meta description (rare; default articles do).
-    desc_m = _DESCRIPTION_RE.search(html)
+    desc_m = DESCRIPTION_RE.search(html)
     desc = _unesc(desc_m.group(1)) if desc_m else ""
     # Same heading-skip-safe pattern as the cite popover: the panel's
     # <h2 id="reuse-heading"> ("Republish this article") IS the
@@ -547,7 +547,7 @@ def inject_reuse_panel(html: str) -> str:
     attribution_lines.extend(
         [
             "",
-            f"Originally published at {share_url} by {_AUTHOR_FIRST} {_AUTHOR_LAST}.",
+            f"Originally published at {share_url} by {AUTHOR_FIRST} {AUTHOR_LAST}.",
             f"Licensed under {license_id}.",
         ]
     )
@@ -566,4 +566,4 @@ def inject_reuse_panel(html: str) -> str:
         + f'aria-label="{copy_label}">{copy_label}</button>'
         + "</section>"
     )
-    return _WRAP_CLOSE_RE.sub(panel + r"\1", html, count=1)
+    return WRAP_CLOSE_RE.sub(panel + r"\1", html, count=1)

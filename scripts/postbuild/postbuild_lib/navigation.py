@@ -22,11 +22,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "lib"))
 from _core import DATED_SLUG_RE as _DATED_SLUG_RE
 from postbuild_lib._i18n import _all_active_non_en_langs, _labels, _slug_maps
 from postbuild_lib.article_furniture import (
-    _HEADING_RE,
-    _LDJSON_BLOCK_RE,
-    _MAIN_RE,
     BASE_URL,
     H1_RE,
+    HEADING_RE,
+    LDJSON_BLOCK_RE,
+    MAIN_RE,
     PUBLIC,
     slugify,
 )
@@ -62,7 +62,7 @@ def _breadcrumb_items(html: str) -> list[tuple[str, str]]:
     """Return the article's ``BreadcrumbList`` as ``[(name, href), …]``
     with hrefs made root-relative. Empty list when no 3-level trail is
     found (listing / static pages) or the JSON-LD is malformed."""
-    for m in _LDJSON_BLOCK_RE.finditer(html):
+    for m in LDJSON_BLOCK_RE.finditer(html):
         if '"BreadcrumbList"' not in m.group(1):
             continue
         try:
@@ -120,7 +120,7 @@ def inject_anchor_links_and_toc(html: str) -> str:
     """
     if '"@type":"BlogPosting"' not in html:
         return html
-    m = _MAIN_RE.search(html)
+    m = MAIN_RE.search(html)
     if not m:
         return html
     pre, body, post = m.group(1), m.group(2), m.group(3)
@@ -168,7 +168,7 @@ def inject_anchor_links_and_toc(html: str) -> str:
             f"</{level}>"
         )
 
-    new_body = _HEADING_RE.sub(patch_heading, body)
+    new_body = HEADING_RE.sub(patch_heading, body)
     toc_html = ""
     if len(h2_titles) >= 5:
         items = "".join(f'<li><a href="#{slug}">{text}</a></li>' for slug, text in h2_titles)
