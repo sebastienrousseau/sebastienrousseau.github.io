@@ -1,8 +1,8 @@
 # Publishing guide
 
-> Last Updated: June 4, 2026
+> Last Updated: October 24, 2026
 
-This guide explains how an article moves from a local Markdown file to a live page in twenty-eight languages.
+This guide explains how an article moves from a local Markdown file to a live page in thirty-five languages.
 We use the Static Site Generator static site generator and automated postbuild scripts to compile the pages for the Sebastien Rousseau web platform.
 
 ## Contents
@@ -11,17 +11,17 @@ This guide covers the mental model, prerequisites, daily flow, draft promotion s
 
 ## Mental model
 
-Every published article translates into twenty-eight different files and formats during the build run.
+Every published article translates into thirty-five different files and formats during the build run.
 
 First, we create one English source file in the posts folder.
-Second, we write twenty-seven translated posts in their respective language directories.
-Third, we update twenty-seven slug mapping files to link the localized pages.
+Second, we write thirty-four translated posts in their respective language directories.
+Third, we update thirty-four slug mapping files to link the localized pages.
 
 The static site generator compiles these sources into HTML pages, and the postbuild script adds hreflang tags, feeds, sitemaps, and schemas.
 
-- Hreflang alternates: each page links to its twenty-seven siblings
+- Hreflang alternates: each page links to its thirty-four siblings
 - Sitemap files: the tool writes sitemap entries for all rendered pages
-- Feeds: the build creates twenty-eight RSS, Atom, and JSON feeds
+- Feeds: the build creates thirty-five RSS, Atom, and JSON feeds
 - Schema blocks: we add BlogPosting, TechArticle, and Person schemas
 - Listings: the generator updates the article and project cards
 - Homepage: we manually update the recent posts grid
@@ -83,7 +83,7 @@ Run the promotion script to move the draft and create translation files for all 
 
 - Step 1: Locate the daily draft file in the drafts folder.
 - Step 2: Move the file to the posts directory.
-- Step 3: Create twenty-seven translation stubs with header mappings.
+- Step 3: Create thirty-four translation stubs with header mappings.
 - Step 4: Regenerate the listing grids and homepage files.
 - Step 5: Run the build script to verify all gates pass.
 
@@ -98,7 +98,7 @@ We update these files manually because card selection requires human choice.
 For `_posts/index.md`, add today's card to the grid and remove the oldest card to keep five items.
 For `gen_articles.py`, prepend the article tuple to the list and re-run the generator script.
 
-### Step 5: Translate the twenty-seven stubs
+### Step 5: Translate the thirty-four stubs
 
 Translate the body of each stub post in your terminal using the tone and layout rules.
 
@@ -198,7 +198,7 @@ Our local terminal tool relies on your existing subscription.
 |---|---|---|
 | `en` | Writing time | Free |
 | `5 priority` | 30 minutes | Free |
-| `All 27` | 90 minutes | Free |
+| `All 34` | 90 minutes | Free |
 
 You can translate pages in one session or split the work across multiple runs.
 

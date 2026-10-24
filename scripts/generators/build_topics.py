@@ -121,6 +121,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "at Tier-1 institutions."
         ),
         "slugs": [
+            "2026-10-24-modernisation-never-finishes-exceptions-pile-up",
             "2026-10-13-physical-ai-robotics-workforce-governance-industrial-operations",
             "2026-10-13-open-source-physical-ai-lerobot-end-to-end-robotics",
             "2026-10-13-moving-past-moores-law-in-memory-compute-edge-robotics",
@@ -303,6 +304,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "AI inside Tier-1 banks."
         ),
         "slugs": [
+            "2026-10-24-modernisation-never-finishes-exceptions-pile-up",
             "2026-10-13-physical-ai-robotics-workforce-governance-industrial-operations",
             "2026-09-25-when-technology-lands-before-institutions-adapt-mit-ai-committee",
             "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026",

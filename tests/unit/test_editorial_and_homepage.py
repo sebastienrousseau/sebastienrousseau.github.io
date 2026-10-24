@@ -108,12 +108,24 @@ def test_hint_biased_pick_returns_none_when_nothing_scores() -> None:
     assert pb._hint_biased_pick(["a.webp"], ["zzz"], random.Random(0)) is None
 
 
-def test_transform_url_carries_the_parameters() -> None:
-    url = pb.transform_url("x.webp", width=800, q=60)
-    assert "/stocks/images/x.webp" in url
-    assert "w=800" in url
-    assert "q=60" in url
-    assert "format=webp" in url
+def test_banner_url_is_the_direct_stocks_path() -> None:
+    """/api/transform closed on 2026-06-23; banners link the file itself and
+    postbuild adds the -320/-640/-1200/-1920 srcset."""
+    assert pb.banner_url("x.webp") == "https://cloudcdn.pro/stocks/images/x.webp"
+
+
+def test_collect_inventory_leaves_out_responsive_variants(tmp_path: Path) -> None:
+    """A -640 or -1920 file is a size of another image, not a banner."""
+    for name in ("a.webp", "a-320.webp", "a-640.webp", "a-1200.webp", "a-1920.webp", "b-2026.webp"):
+        (tmp_path / name).write_bytes(b"x")
+    assert pb.collect_inventory(tmp_path) == ["a.webp", "b-2026.webp"]
+
+
+def test_default_inventory_is_the_sibling_cloudcdn_checkout() -> None:
+    """cloudcdn.pro sits at Code/Public/JavaScript/, beside Code/Public/Web/."""
+    checkout = Path(pb.__file__).resolve().parents[2]  # scripts/editorial/ -> repo
+    rel = pb.DEFAULT_INVENTORY.relative_to(checkout.parents[1])
+    assert rel == Path("JavaScript/cloudcdn.pro/stocks/images")
 
 
 # ---------------------------------------------------------------------------
