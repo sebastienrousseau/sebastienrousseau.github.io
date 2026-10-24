@@ -429,7 +429,7 @@ def test_inject_hero_banner_returns_unchanged_when_anchor_missing():
         "</head><body>"
         '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
         # NB: no <section class="ap-hero">…</section> at all — the
-        # _HERO_BANNER_INSERT_RE anchor can't match.
+        # HERO_BANNER_INSERT_RE anchor can't match.
         "</body></html>"
     )
     out = inject_hero_banner(html)

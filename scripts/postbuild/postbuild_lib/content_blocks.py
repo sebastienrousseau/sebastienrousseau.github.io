@@ -17,17 +17,17 @@ from html import unescape as _unesc
 
 from postbuild_lib._i18n import _labels
 from postbuild_lib.article_furniture import (
-    _BANNER_ALT_FRONTMATTER_RE,
-    _H1_RE,
-    _HEAD_END_RE,
-    _HERO_BANNER_INSERT_RE,
-    _OG_IMAGE_ALT_RE,
-    _WRAP_CLOSE_RE,
+    BANNER_ALT_FRONTMATTER_RE,
     BANNER_FALLBACK_HEIGHT,
     BANNER_FALLBACK_WIDTH,
+    CSP_TAG_RE,
     FOOTNOTE_DEF_RE,
+    H1_RE,
+    HEAD_END_RE,
+    HERO_BANNER_INSERT_RE,
     MIN_H2_FOR_RULES,
-    _csp_tag_re,
+    OG_IMAGE_ALT_RE,
+    WRAP_CLOSE_RE,
     _is_french,
 )
 
@@ -126,7 +126,7 @@ def inject_footnotes(html: str) -> str:
         f'<h2 id="footnotes-heading">{heading}</h2>'
         f"<ol>{items}</ol></section>"
     )
-    return _WRAP_CLOSE_RE.sub(section + r"\1", body_marked, count=1)
+    return WRAP_CLOSE_RE.sub(section + r"\1", body_marked, count=1)
 
 
 _OG_IMAGE_RE = re.compile(
@@ -250,12 +250,12 @@ def inject_hero_banner(html: str) -> str:
     banner_url = og.group(1)
     banner_width, banner_height = _banner_dimensions(html)
 
-    alt_m = _BANNER_ALT_FRONTMATTER_RE.search(html) or _OG_IMAGE_ALT_RE.search(html)
+    alt_m = BANNER_ALT_FRONTMATTER_RE.search(html) or OG_IMAGE_ALT_RE.search(html)
     if alt_m:
         alt_text = alt_m.group(1)
     else:
         # Fallback: derive from the H1 — better than nothing, screen-reader-safe.
-        h1 = _H1_RE.search(html)
+        h1 = H1_RE.search(html)
         alt_text = f"Banner for: {h1.group(1).strip()}" if h1 else ""
 
     figure = (
@@ -269,7 +269,7 @@ def inject_hero_banner(html: str) -> str:
     # Same anchor _LANG_SWITCH_INSERT_RE uses, but we run BEFORE the lang
     # switcher so its insertion sees the banner already in place and slots
     # the langswitch aside after the banner.
-    new_html, n = _HERO_BANNER_INSERT_RE.subn(
+    new_html, n = HERO_BANNER_INSERT_RE.subn(
         lambda m: f"{m.group(1)}{figure}{m.group(2)}",
         html,
         count=1,
@@ -436,7 +436,7 @@ def inject_mermaid(html: str) -> str:
 
         return _content_attr_re.sub(patch_content, tag, count=1)
 
-    return _csp_tag_re.sub(patch_csp, new_html, count=1)
+    return CSP_TAG_RE.sub(patch_csp, new_html, count=1)
 
 
 SPECULATION_RULES_BLOCK = (
@@ -464,4 +464,4 @@ def inject_speculation_rules(html: str) -> str:
     """Inject the Speculation Rules API block before </head>. Idempotent."""
     if 'type="speculationrules"' in html:
         return html
-    return _HEAD_END_RE.sub(SPECULATION_RULES_BLOCK + "</head>", html, count=1)
+    return HEAD_END_RE.sub(SPECULATION_RULES_BLOCK + "</head>", html, count=1)

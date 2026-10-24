@@ -22,8 +22,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "lib"))
 from _core import DATED_SLUG_RE as _DATED_SLUG_RE
 from postbuild_lib._i18n import _all_active_non_en_langs, _slug_maps
 from postbuild_lib.article_furniture import (
-    _H1_RE,
-    _HEAD_END_RE,
+    H1_RE,
+    HEAD_END_RE,
     PUBLIC,
 )
 
@@ -46,7 +46,7 @@ def build_fr_title_index(pages: list[Path]) -> dict[str, str]:
         if en == slug:  # not in slug map
             continue
         html = p.read_text(encoding="utf-8", errors="ignore")
-        m = _H1_RE.search(html)
+        m = H1_RE.search(html)
         if m:
             out[en] = m.group(1).strip()
     return out
@@ -315,4 +315,4 @@ def inject_hreflang(
         f'<link rel="alternate" hreflang="{code}" href="{url}" />' for code, url in alts
     )
     links += f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
-    return _HEAD_END_RE.sub(links + "</head>", html, count=1)
+    return HEAD_END_RE.sub(links + "</head>", html, count=1)
