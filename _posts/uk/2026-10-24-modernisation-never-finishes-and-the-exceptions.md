@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Dr. Leda Glyptis speaking on stage in front of the Oracle backdrop at the Oracle Financial Services Summit in London, October 2026"
+banner_alt: "Докторка Леда Гліптіс на сцені на тлі декорацій Oracle під час Oracle Financial Services Summit у Лондоні, жовтень 2026 року"
 banner_height: "571"
 banner_width: "1425"
 banner: "https://cloudcdn.pro/stocks/images/leda-glyptis-oracle-financial-services-summit-2026.webp"
@@ -10,20 +10,20 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 24, 2026"
-description: "Hosting the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that modernisation is not an end state and that financial-services leaders must address the complexity left by decades of exceptions. She gave the industry a B minus for 25 years and advised leaders on AI to be safe, measured and cautious, but not slow."
+description: "Докторка Леда Гліптіс у Лондоні: модернізація не має кінця. Банкам треба розібрати десятиліття винятків і впроваджувати ШІ безпечно й виважено, але не повільно."
 format-detection: "telephone=no"
 hreflang: "uk"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/uk/2026-10-24-modernisation-never-finishes-and-the-exceptions"
-image_alt: "Black and White Portrait of Sebastien Rousseau"
+image_alt: "Чорно-білий портрет Себастьєна Руссо"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
-keywords: "Leda Glyptis, modernisation paradox, Oracle Financial Services Summit, financial services modernisation, legacy systems, exceptions, technical debt, prioritisation, AI adoption, banking transformation, operational resilience"
+keywords: "Леда Гліптіс, Leda Glyptis, парадокс модернізації, Oracle Financial Services Summit, модернізація фінансових послуг, успадковані системи, винятки, технічний борг, пріоритизація, впровадження ШІ, трансформація банків, операційна стійкість"
 language: "uk"
 layout: "report"
 locale: "uk_UA"
-logo_alt: "Logo for Sebastien Rousseau"
+logo_alt: "Логотип Себастьєна Руссо"
 logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -37,22 +37,22 @@ revisit-after: "7 days"
 robots: "index, follow"
 schema: "FAQPage, Article"
 short_name: "sebastienrousseau"
-subtitle: "Financial services has spent 20 to 25 years treating modernisation as a project with an end date. Opening the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that the industry's weaker record is the buildup of exceptions, and that AI will arrive on top of that buildup rather than replace it."
-tags: "AI, ai-governance, banking, technology-strategy, operational-resilience, third-party-risk, innovation, Modernisation, Legacy Systems, Financial Services, Leadership, Oracle Financial Services Summit"
+subtitle: "Уже 20–25 років фінансовий сектор ставиться до модернізації як до проєкту з датою завершення. Відкриваючи Oracle Financial Services Summit у Лондоні, докторка Леда Гліптіс стверджувала, що слабке місце галузі полягає в накопиченні винятків, а ШІ ляже поверх цього накопичення, а не замінить його."
+tags: "ШІ, управління ШІ, банки, технологічна стратегія, операційна стійкість, ризики третіх сторін, інновації, модернізація, успадковані системи, фінансові послуги, лідерство, Oracle Financial Services Summit"
 topic_clusters: "applied-ai-banking, ai-governance-regulation"
 theme-color: "0, 67, 165"
-title: "Modernisation Never Finishes, and the Exceptions Are What Pile Up"
+title: "Модернізація ніколи не закінчується, накопичуються винятки"
 url: "https://sebastienrousseau.com/uk/2026-10-24-modernisation-never-finishes-and-the-exceptions"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-10-24-modernisation-never-finishes-exceptions-pile-up/rss.xml"
 category: "Finance"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "Hosting the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that financial services must stop treating modernisation as a finite programme and start retiring the exceptions it has piled up for decades."
+item_description: "На Oracle Financial Services Summit у Лондоні докторка Леда Гліптіс закликала фінансовий сектор перестати вважати модернізацію скінченною програмою і почати позбуватися винятків, що накопичувалися десятиліттями."
 item_guid: "https://sebastienrousseau.com/2026-10-24-modernisation-never-finishes-exceptions-pile-up/rss.xml"
 item_link: "https://sebastienrousseau.com/2026-10-24-modernisation-never-finishes-exceptions-pile-up/rss.xml"
 item_pub_date: "Sat, 24 Oct 2026 10:30:00 +0000"
-item_title: "Modernisation Never Finishes, and the Exceptions Are What Pile Up"
+item_title: "Модернізація ніколи не закінчується, накопичуються винятки"
 last_build_date: "Sat, 24 Oct 2026 10:30:00 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Sat, 24 Oct 2026 10:30:00 +0000"
@@ -64,199 +64,195 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "The Modernisation Paradox"
+apple-mobile-web-app-title: "Парадокс модернізації"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "Hosting the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that financial services must stop treating modernisation as a finite programme and start retiring the exceptions it has piled up for decades."
+twitter_description: "На Oracle Financial Services Summit у Лондоні докторка Леда Гліптіс закликала фінансовий сектор перестати вважати модернізацію скінченною програмою і почати позбуватися винятків, що накопичувалися десятиліттями."
 twitter_image: "https://cloudcdn.pro/stocks/images/leda-glyptis-oracle-financial-services-summit-2026.webp"
-twitter_image_alt: "Dr. Leda Glyptis on stage at the Oracle Financial Services Summit in London"
+twitter_image_alt: "Докторка Леда Гліптіс на сцені Oracle Financial Services Summit у Лондоні"
 twitter_site: "@wwdseb"
-twitter_title: "Modernisation Never Finishes, and the Exceptions Are What Pile Up"
+twitter_title: "Модернізація ніколи не закінчується, накопичуються винятки"
 twitter_url: "https://sebastienrousseau.com/2026-10-24-modernisation-never-finishes-exceptions-pile-up"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
-thanks: "Thanks for reading!"
+thanks: "Дякую за прочитання!"
 site_last_updated: "2026-10-24"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-excerpt: "Financial services has spent 20 to 25 years treating modernisation as a project with an end date. Opening the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that the industry's weaker record is..."
+excerpt: "Уже 20–25 років фінансовий сектор ставиться до модернізації як до проєкту з датою завершення. Відкриваючи Oracle Financial Services Summit у Лондоні, докторка Леда Гліптіс стверджувала, що слабке місце галузі..."
 last_reviewed: "2026-10-24"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Модернізація ніколи не закінчується, накопичуються винятки
 
-> _Translation pending — read the [English original](/2026-10-24-modernisation-never-finishes-exceptions-pile-up/) while we localise._
-
-# Modernisation Never Finishes, and the Exceptions Are What Pile Up
-
-**Financial services has spent 20 to 25 years treating modernisation as a project with an end date. Opening the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that the industry's weaker record is the buildup of exceptions, and that AI will arrive on top of that buildup rather than replace it.**
+**Уже 20–25 років фінансовий сектор ставиться до модернізації як до проєкту з датою завершення. Відкриваючи Oracle Financial Services Summit у Лондоні, докторка Леда Гліптіс стверджувала, що слабке місце галузі полягає в накопиченні винятків, а ШІ ляже поверх цього накопичення, а не замінить його.**
 
 <!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Стислий зміст статті">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Hosting the Oracle Financial Services Summit in London, Dr. Glyptis argued that modernisation is not an end state and that financial-services leaders must address the complexity left by decades of exceptions. She gave the industry a B minus for 25 years. Her advice on AI is to be safe, measured and cautious, but not slow.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<p class="post-lead-tldr"><strong>Стисло.</strong> Ведуча Oracle Financial Services Summit у Лондоні докторка Леда Гліптіс стверджувала, що модернізація не є кінцевим станом і що керівники фінансових організацій мають розібратися зі складністю, яку залишили десятиліття винятків. Вона поставила галузі оцінку «B з мінусом» за 25 років. Її порада щодо ШІ: діяти безпечно, виважено й обережно, але не повільно.</p>
+<p class="post-lead-heading"><strong>Ключові висновки</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Modernisation has no finish line.</strong> Projects end, but organisations don't become permanently "modern", and challenges keep growing after 20 to 25 years of effort.</li>
-  <li><strong>Exceptions harden into precedent.</strong> A one-time workaround is common, the fix to the process is rare, and the forgotten exception becomes a precedent by default.</li>
-  <li><strong>Prioritisation is a leadership problem.</strong> Many organisations she works with run about 20 pilot projects, all treated as equally important.</li>
-  <li><strong>AI needs calm and pace together.</strong> It is moving faster than many standards, controls and shared understandings, and pointing it at problems is, in her words, a terrible idea.</li>
+  <li><strong>У модернізації немає фінішу.</strong> Проєкти завершуються, але організації не стають «сучасними» назавжди, а викликів і далі більшає після 20–25 років зусиль.</li>
+  <li><strong>Винятки твердіють у прецеденти.</strong> Разовий обхідний шлях трапляється часто, виправлення процесу рідко, а забутий виняток за замовчуванням стає прецедентом.</li>
+  <li><strong>Пріоритизація є завданням керівництва.</strong> Багато організацій, з якими вона працює, ведуть близько 20 пілотних проєктів, і всі вони вважаються однаково важливими.</li>
+  <li><strong>ШІ потребує водночас спокою і темпу.</strong> Він розвивається швидше за багато стандартів, механізмів контролю та спільних домовленостей, а просто націлити його на проблеми, за її словами, жахлива ідея.</li>
 </ul>
 </aside>
 <!-- lead-end -->
 
-> **Executive Summary**
+> **Резюме для керівництва**
 >
-> - Modernisation decisions reduce risk and improve future competitiveness, yet the same decisions alter risk profiles and can make operations more complex.
-> - New capabilities are layered onto older ones rather than replacing them, a pattern Dr. Glyptis says has held since 1950. She has switched something off only twice in 25 years.
-> - When a policy blocks an initiative, the one-time exception is common, changing the process first is rarely seen, and the exception turns into precedent.
-> - A $180-per-meeting headset request shows how approval chains lose context at each layer. The approval process likely cost the bank far more than the headset.
-> - AI can accelerate the work but does not supply all the answers. Leaders should expect neither a settled regulatory framework nor a finished technology.
-> - The foundations are boring and essential: an evolution strategy, good data, and a way to be both sturdy and agile in a real-time world.
+> - Рішення про модернізацію знижують ризик і підвищують майбутню конкурентоспроможність, але ті самі рішення змінюють профіль ризиків і можуть ускладнити операційну діяльність.
+> - Нові можливості надбудовуються над старими, а не замінюють їх; за словами докторки Гліптіс, ця закономірність діє з 1950 року. За 25 років вона вимикала щось лише двічі.
+> - Коли політика блокує ініціативу, разовий виняток трапляється часто, зміну процесу першочергово майже не бачать, а виняток перетворюється на прецедент.
+> - Заявка на гарнітуру вартістю 180 доларів за зустріч показує, як ланцюжки погодження втрачають контекст на кожному рівні. Процес погодження, імовірно, коштував банку набагато більше, ніж гарнітура.
+> - ШІ може пришвидшити роботу, але не дає всіх відповідей. Керівникам не варто чекати ні усталеної регуляторної бази, ні завершеної технології.
+> - Фундамент нудний і необхідний: стратегія еволюції, якісні дані та спосіб бути водночас стійким і гнучким у світі реального часу.
 
-Most technology programmes in financial services begin with a promise that this time the complexity will go down. Dr. Glyptis's argument is that the promise has been made for a generation and that it has mostly gone unkept. Teams have spent 20 to 25 years on this work, yet the number of challenges keeps growing. If effort alone fixed the problem, it would have shrunk by now.
+Більшість технологічних програм у фінансовому секторі починається з обіцянки, що цього разу складність зменшиться. Докторка Гліптіс стверджує, що цю обіцянку дають уже ціле покоління і здебільшого не виконують. Команди витратили на цю роботу 20–25 років, а викликів однаково більшає. Якби самих зусиль вистачало, проблема давно б зменшилася.
 
-Dr. Glyptis hosted the Oracle Financial Services Summit in London on 20 October 2026 and opened its session on AI, business modernisation, resilience and trust. As host, she set out three connected priorities that, she said, come up consistently in Oracle's customer conversations: bringing AI into core operations with measurable business impact, modernising while keeping pace with rapid technology change, and preserving resilience and trust. Oracle's role was described as providing the secure, scalable systems that underpin customers' businesses. She thanked Accenture and KPMG for their partnership with Oracle globally and in the UK and Ireland, and explained that the day was built around questions, speakers, panels, breakout rooms and direct conversations with Oracle staff. Her own keynote, though, was less a product pitch than a diagnosis.
-
-<figure>
-<img src="https://cloudcdn.pro/stocks/images/oracle-financial-services-summit-london-2026.webp" alt="Oracle Financial Services Summit signage above the venue bar, with the Oracle logo and the sponsors Accenture and KPMG" width="1920" height="1080" loading="lazy" decoding="async" />
-<figcaption>The Oracle Financial Services Summit, London, 20 October 2026, sponsored by Accenture and KPMG.</figcaption>
-</figure>
-
-Her central instruction was blunt. Financial-services leaders must stop treating modernisation as a finite programme and address the accumulated complexity created by decades of exceptions. The rest of her argument follows from that sentence, and this article does too.
+Докторка Леда Гліптіс вела Oracle Financial Services Summit у Лондоні 20 жовтня 2026 року і відкрила його сесію, присвячену ШІ, модернізації бізнесу, стійкості та довірі. Як ведуча, вона окреслила три взаємопов'язані пріоритети, які, за її словами, постійно звучать у розмовах Oracle з клієнтами: впровадження ШІ в основні операції з вимірюваним бізнес-ефектом, модернізація в ногу зі швидкими технологічними змінами, а також збереження стійкості й довіри. Роль Oracle описали як надання захищених і масштабованих систем, на яких тримається бізнес клієнтів. Вона подякувала Accenture і KPMG за партнерство з Oracle у світі, а також у Великій Британії та Ірландії, і пояснила, що день побудовано навколо запитань, виступів, панельних дискусій, тематичних секцій і прямого спілкування з працівниками Oracle. Утім, її власна доповідь була не стільки презентацією продукту, скільки діагнозом.
 
 <figure>
-<img src="https://cloudcdn.pro/stocks/images/leda-glyptis-modernisation-paradox-keynote-slide-2026.webp" alt="Title slide reading The Modernisation Paradox, Leda Glyptis PhD, over an illustration of a human head drawn as a glowing network" width="1920" height="1248" loading="lazy" decoding="async" />
-<figcaption>Dr. Glyptis's keynote title slide.</figcaption>
+<img src="https://cloudcdn.pro/stocks/images/oracle-financial-services-summit-london-2026.webp" alt="Вивіска Oracle Financial Services Summit над баром майданчика з логотипом Oracle і спонсорами Accenture та KPMG" width="1920" height="1080" loading="lazy" decoding="async" />
+<figcaption>Oracle Financial Services Summit, Лондон, 20 жовтня 2026 року, за підтримки Accenture і KPMG.</figcaption>
 </figure>
 
-## A finish line that keeps moving
-
-The usual story of modernisation has a before and an after. A platform is replaced, a migration completes, a steering committee closes the programme. Dr. Glyptis rejects the "after". Modernisation, she says, is not an end state. Projects may finish, but organisations do not become permanently "modern".
-
-That sounds like semantics until you consider what organisations are actually doing when they decide to modernise. They act to reduce risk and to improve their future competitiveness. Those are sensible aims. But the same decisions also alter risk profiles and can make operations more complex. The move that lowers one risk can introduce another, and the new arrangement has to be run, funded and explained to someone.
-
-The pattern is a trap in the literal sense. A leader who believes the programme will end plans for the end. A leader who accepts it won't plans for continuity, and that changes budgets, governance and the way success is measured. The first leader keeps being surprised. The second might at least be prepared.
-
-There is also a plain explanation for why simplification has so often failed to arrive. Modernisation was meant to simplify but has often made life more complicated, because organisations could not foresee how complex the external environment would become. That isn't an accusation of poor engineering. The plans were reasonable, and the environment outran them.
-
-## A B minus and two switch-offs
-
-Dr. Glyptis gave the industry a B minus for the past 25 years. It's a useful grade because it refuses both comfort and despair. A B minus is not a fail. It also isn't what anyone would hope for after a quarter of a century of sustained effort.
-
-She added a figure that makes the grade easier to understand: she has switched something off only twice in 25 years. Consider what that implies for a working architecture. If systems, processes and controls are almost never retired, then every new thing adds to the total. Nothing leaves.
-
-This links directly to her claim that new capabilities are layered onto older ones rather than replacing them, and that this pattern has been in place since 1950. The industry's habit isn't a recent failing of the cloud era or the app era. By her account it is older than most of the people now trying to manage it.
-
-Layering has its own logic. Adding is safer than removing, and removing needs someone to own the consequences. But the cost is cumulative. Each layer must coexist with the ones beneath it, and each carries its own assumptions about data, access and approval. After seventy-odd years, the interactions among them are the real subject of modernisation work.
-
-The B minus sits oddly beside another statement of hers: the industry has been preparing for this moment for 25 years. Read together, the two lines say that the preparation was real and the results were partial. She also argued that established institutions have adapted more successfully than they often acknowledge. That claim should be held with care, since it's a view she argued rather than a measured result. But it fits the grade. An industry can adapt better than it admits and still carry a damaging backlog of unretired exceptions.
-
-## How a one-off becomes the rule
-
-The most useful part of Dr. Glyptis's argument is her account of what happens when a policy or process blocks an initiative. She described three practical choices. Do not do the initiative. Change the process first. Or use a one-time workaround, risk acceptance, or senior-sponsored exception.
-
-The first option is rarely attractive, because someone wanted the initiative for a reason. The second is the one that would actually reduce complexity, because it fixes the barrier itself. She said she has rarely seen it happen. The third is common.
-
-The mechanism after that is where the damage accrues. Organisations sometimes return to fix the process. More often the exception is forgotten. It becomes a precedent by default, and when the same barrier appears again, another exception is made.
-
-Walk through that sequence slowly, because it's the engine of the whole problem. An exception is granted for a legitimate reason, under time pressure, by someone senior enough to sign it. Nobody schedules the repair. The next team meets the same obstacle, finds that the first team got through, and cites the earlier case. The workaround has become a route. Because each exception was individually reasonable, no one ever decided to build a system that runs on them.
-
-This is what she means by the accumulated complexity of decades of exceptions. The phrase carries a specific thing: the stock of unresolved decisions that were each made to keep work moving. It also explains why financial services' weaker record is the buildup of exceptions. The industry is not short of ways to get things done. It is short of ways to stop getting them done the same awkward way.
-
-The practical consequence for a leader is uncomfortable. Granting the exception feels like decisiveness. Under this account, decisiveness without a follow-up to fix the process is how complexity compounds. The test of a sponsor isn't whether they can clear a barrier once, but whether the barrier is still there the next time.
-
-## The $180 headset
-
-Dr. Glyptis made the point concrete with a small story. In an earlier role as a senior director, she could sign contracts worth about $50,000. A request for a headset, which cost $180 per meeting, was approved by an executive in about 24 hours.
-
-Twenty-four hours sounds fast, and in isolation it is. The point lies in what the process surrounding the request probably consumed. Her view, stated with appropriate hedging, was that the approval process likely cost the bank far more than the headset. The arithmetic of a $180 item set against the time of the people who touched the request is not in her favour, and it never is in anyone's.
-
-The structural problem is in how escalation works. In the traditional chain, each layer loses context. A request that made obvious sense where it started arrives at the top as a summary of a summary. Each person in between must either re-learn the situation or pass it up unexamined. Alignment in that process can take months.
-
-Set the two numbers side by side: about 24 hours for the headset, and months for alignment through a traditional escalation. They aren't measuring the same thing, but together they show a spread. A small, clear request with the right person can move in a day. A matter that has to travel through layers, each stripping context as it goes, can stall for months.
-
-And the habit has not gone away. Organisations still require senior approval for minor spending. That isn't a story about one bank from a former job. It is a current limitation, and it feeds the exception problem above. When ordinary decisions must climb a chain, people look for the exception route, because the chain is expensive and the exception is quick. Legacy is not just old technology. It also lives in the rules about who may decide what.
-
-## Twenty pilots, all of them urgent
-
-If exceptions are the disease, prioritisation is where the symptoms show first. Dr. Glyptis said many organisations she works with have about 20 pilot projects, all treated as equally important. She called that insufficient prioritisation.
-
-The logic is easy to follow. If everything is equally important, nothing is ranked, and the ranking is made implicitly by whoever shouts, signs or escalates. That is precisely the route by which the exception thrives. Twenty equal priorities guarantee that barriers will appear in several places at once, and that someone will be asked to wave a few of them through.
-
-She framed prioritisation as now a leadership problem, because change programmes were rarely designed to be repeatable. This is a careful claim and worth reading closely. It doesn't say leaders are failing at a task they were handed. It says the task changed. When a change programme is a one-off, you can survive with a loose ordering of work. When change is continuous, the ordering has to be something leaders do again and again, and the programmes weren't built for that.
-
-For founders and technical readers, this is the part that translates most easily. A portfolio of 20 pilots reads like energy. By this account, it more often signals that nobody has yet chosen. The decision to say no to nineteen of them is a leadership act, and it can't be delegated to a project office that has no authority to refuse.
-
-## AI arrives on a fixed timetable of its own
-
-Everything above gets sharper with AI, because AI changes the pace without changing the underlying habits. Dr. Glyptis said AI can help accelerate the work but does not supply all the answers. It is a useful accelerator. It isn't a substitute for deciding what to fix.
-
-She was especially direct on one approach. The idea of simply "pointing AI" at problems she called a terrible idea. The reasoning follows from her earlier points: an organisation whose problems include unretired exceptions, siloed data and unclear ownership will not find those resolved by aiming a new tool at them. The tool inherits the mess.
-
-She also described how organisations misjudge novelty. They often behave as though a technology is new to the world simply because it is new to them. And they may assume the technology will stop evolving once they are ready to engage. It will not.
-
-Her account of 2024 shows both sides of this. The surge of AI activity that year brought creativity and empowerment. It also brought surprises. Some firms were surprised to find that vendors were already 10 years old. Others were surprised that AI itself was decades old and still evolving. The surprise was about the firms' awareness rather than the technology's age.
-
-There is a parallel in a story she told about 2009. A CEO asked her then whether he needed to learn about Bitcoin before retiring. The question assumed that a technology decision could be deferred past one's own tenure. Her observation now is the opposite: today's technology decisions will often play out during the current decision maker's tenure. The retirement horizon no longer protects anyone.
-
-The environment around those decisions is unsettled, too. AI is moving faster than many standards, controls and shared understandings. Leaders cannot assume technology decisions will arrive with a settled regulatory framework or a finished technology. Waiting for both is a plan that never reaches its trigger.
-
-## Calm, and not slow
-
-Faced with that, her prescription is two-sided. What organisations need is calm, not panic. Her advice was to be safe, measured and cautious, but not slow.
-
-It would be easy to read this as a compromise, but it works better as a constraint on both failure modes. Panic produces the 20 equal pilots and the signed-off exceptions. Slowness produces the assumption that the technology will wait. She rejects each. The posture she describes is one where the pace is steady, the controls are present, and the work still moves.
-
-That is also where the claim that the industry has been preparing for 25 years matters. Preparation, in her telling, is not a reason to relax. It is the reason calm is available: the sector has done a quarter-century of this work, and has learned something from it, even if the grade was a B minus.
-
-## The boring foundations
-
-Dr. Glyptis did not end on a vision. She named foundations that are, in her words, boring and essential, and the first is an evolution strategy. The reason is simple: no technology component or partner lasts forever. A strategy that assumes permanence is a strategy for the next surprise.
-
-The second is good data. Data quality, ownership and siloed structures remain unresolved legacy issues. This sits right alongside her statement that legacy is not just old technology. Unclear ownership of a dataset is legacy. So is a rule that sends a minor purchase to a senior approver. Neither shows up on an asset register of old systems.
-
-The third part of her case concerns the shape of the world these foundations must carry. The world is becoming real-time, and organisations must build robustness for that reality. She added that robustness and agility are no longer a trade-off. For years, the sturdy option and the agile option were treated as rivals, and the sturdy one usually won inside a regulated institution. Her claim is that the choice no longer has to be made, because a real-time world demands both at once.
-
-One more observation points to movement. Financial-services firms, particularly insurers, are increasingly bringing partners into more open conversations about their plans and approaches. That fits the logic of an evolution strategy, since a partner that won't last forever is easier to plan around when it knows what is coming. It doesn't prove the exceptions are shrinking, and nothing in the source says it does. But it is a sign that firms are willing to talk about the problem openly.
+Її головний меседж був прямим. Керівники фінансових організацій мають перестати вважати модернізацію скінченною програмою і взятися за накопичену складність, яку створили десятиліття винятків. Решта її аргументації випливає з цієї фрази, і ця стаття теж.
 
 <figure>
-<img src="https://cloudcdn.pro/stocks/images/oracle-financial-services-summit-panel-2026.webp" alt="Five panellists seated on stage at the Oracle Financial Services Summit, with Dr. Leda Glyptis second from left and a screen naming the moderator, Mark Dunleavy of Oracle" width="1200" height="675" loading="lazy" decoding="async" />
-<figcaption>Dr. Glyptis (second from left) on stage with the summit's KPMG-sponsored panel on dependency and complexity, moderated by Mark Dunleavy, SVP, Financial Services Industry at Oracle.</figcaption>
+<img src="https://cloudcdn.pro/stocks/images/leda-glyptis-modernisation-paradox-keynote-slide-2026.webp" alt="Титульний слайд із написом The Modernisation Paradox, Leda Glyptis PhD на тлі ілюстрації людської голови, намальованої як сяйлива мережа" width="1920" height="1248" loading="lazy" decoding="async" />
+<figcaption>Титульний слайд доповіді докторки Гліптіс.</figcaption>
 </figure>
 
-## What retiring an exception would take
+## Фініш, який постійно зсувається
 
-Return to the number that stands out most: two switch-offs in 25 years. If that rate is anything like typical, the industry's challenge is not building the next capability but deciding what the next capability will replace. Every other argument here depends on that. Exceptions can only be repaid if someone owns the repair, and layers can only be reduced if someone is willing to switch one off.
+У звичній історії модернізації є «до» і «після». Платформу замінюють, міграцію завершують, керівний комітет закриває програму. Докторка Гліптіс відкидає це «після». Модернізація, каже вона, не є кінцевим станом. Проєкти можуть завершитися, але організації не стають «сучасними» назавжди.
 
-The open question the argument leaves is a practical one. A leader who accepts that modernisation never finishes still has to decide which single exception to close first, and which of 20 pilots to stop. Dr. Glyptis offers the framing, the grade and the three choices, but she doesn't claim to have measured how often the second choice, changing the process first, could replace the third. She has rarely seen it. Whether that changes in an AI-accelerated decade, when decisions play out within a single tenure, is the thing worth watching.
+Це схоже на гру слів, доки не подивитися, що організації насправді роблять, вирішуючи модернізуватися. Вони діють, щоб знизити ризик і підвищити майбутню конкурентоспроможність. Це розумні цілі. Але ті самі рішення змінюють профіль ризиків і можуть ускладнити операційну діяльність. Крок, що знижує один ризик, може принести інший, а нову схему треба експлуатувати, фінансувати й комусь пояснювати.
+
+Ця закономірність є пасткою в буквальному сенсі. Керівник, який вірить, що програма закінчиться, планує її закінчення. Керівник, який приймає, що вона не закінчиться, планує безперервність, і це змінює бюджети, управління та спосіб вимірювати успіх. Перший раз у раз опиняється заскоченим. Другий принаймні може бути готовим.
+
+Є й просте пояснення того, чому спрощення так часто не наставало. Модернізація мала спрощувати, але часто все ускладнювала, бо організації не могли передбачити, наскільки складним стане зовнішнє середовище. Це не звинувачення в поганій інженерії. Плани були розумними, а середовище їх випередило.
+
+## «B з мінусом» і два вимкнення
+
+Докторка Гліптіс поставила галузі оцінку «B з мінусом» за останні 25 років. Це корисна оцінка, бо вона відмовляється і від утіхи, і від відчаю. «B з мінусом» не провал. Але це й не те, на що хтось сподівався б після чверті століття наполегливої праці.
+
+Вона додала цифру, яка робить оцінку зрозумілішою: за 25 років вона вимикала щось лише двічі. Подумайте, що це означає для робочої архітектури. Якщо системи, процеси й механізми контролю майже ніколи не виводять з експлуатації, кожен новий елемент додається до загального обсягу. Ніщо не йде.
+
+Це безпосередньо пов'язано з її твердженням, що нові можливості надбудовуються над старими, а не замінюють їх, і що ця закономірність існує з 1950 року. Звичка галузі не є свіжим промахом епохи хмар чи епохи застосунків. За її словами, вона старша за більшість людей, які сьогодні намагаються нею керувати.
+
+Нашарування має власну логіку. Додавати безпечніше, ніж прибирати, а щоб прибрати, хтось має відповідати за наслідки. Проте витрати накопичуються. Кожен шар мусить співіснувати з нижчими, і кожен несе власні припущення про дані, доступ і погодження. Через сімдесят із гаком років саме взаємодія між шарами і є справжнім предметом роботи з модернізації.
+
+Оцінка «B з мінусом» дивно сусідить з іншим її твердженням: галузь готується до цього моменту 25 років. Якщо читати їх разом, вони кажуть, що підготовка була справжньою, а результати виявилися частковими. Вона також стверджувала, що усталені інституції адаптувалися успішніше, ніж часто визнають. До цього твердження варто ставитися обережно, бо це позиція, яку вона обстоювала, а не виміряний результат. Але воно узгоджується з оцінкою. Галузь може адаптуватися краще, ніж визнає, і все одно нести шкідливий тягар так і не усунутих винятків.
+
+## Як разове стає правилом
+
+Найкорисніша частина аргументації докторки Гліптіс полягає в її описі того, що відбувається, коли політика чи процес блокує ініціативу. Вона описала три практичні варіанти. Не реалізовувати ініціативу. Спершу змінити процес. Або вдатися до разового обхідного шляху, прийняття ризику чи винятку під патронатом вищого керівництва.
+
+Перший варіант рідко буває привабливим, бо комусь ця ініціатива була для чогось потрібна. Другий варіант справді зменшив би складність, бо усуває саму перешкоду. Вона сказала, що рідко бачила, щоб так робили. Третій трапляється часто.
+
+Шкода накопичується в механізмі, що спрацьовує далі. Іноді організації повертаються, щоб виправити процес. Частіше виняток забувають. Він за замовчуванням стає прецедентом, і коли та сама перешкода виникає знову, роблять ще один виняток.
+
+Пройдіть цю послідовність повільно, бо саме вона є рушієм усієї проблеми. Виняток надають із законної причини, під тиском строків, люди достатньо високого рівня, щоб його підписати. Виправлення ніхто не планує. Наступна команда натрапляє на ту саму перешкоду, виявляє, що перша команда пройшла, і посилається на попередній випадок. Обхідний шлях перетворився на маршрут. Оскільки кожен виняток окремо був розумним, ніхто ніколи не вирішував побудувати систему, що працює на винятках.
+
+Саме це вона називає накопиченою складністю десятиліть винятків. Формулювання позначає конкретну річ: запас невирішених рішень, кожне з яких ухвалили, щоб робота тривала. Воно також пояснює, чому слабке місце фінансового сектору полягає в накопиченні винятків. Галузі не бракує способів довести справу до кінця. Їй бракує способів перестати доводити її до кінця тим самим незграбним чином.
+
+Практичний висновок для керівника незручний. Надати виняток здається рішучістю. Згідно з цим аналізом, рішучість без подальшого виправлення процесу якраз і нарощує складність. Перевірка для спонсора не в тому, чи може він один раз прибрати перешкоду, а в тому, чи залишиться ця перешкода на місці наступного разу.
+
+## Гарнітура за 180 доларів
+
+Докторка Гліптіс зробила думку відчутною завдяки невеликій історії. На одній із попередніх посад, у ролі senior director, вона могла підписувати контракти приблизно на 50 000 доларів. Заявку на гарнітуру, яка коштувала 180 доларів за зустріч, один із керівників схвалив приблизно за 24 години.
+
+Двадцять чотири години звучать швидко, і самі по собі це справді швидко. Суть у тому, що, імовірно, поглинув процес навколо заявки. Її оцінка, висловлена з належним застереженням, така: процес погодження, імовірно, коштував банку набагато більше, ніж гарнітура. Арифметика предмета за 180 доларів проти часу людей, які торкалися заявки, не на її користь і ніколи ні на чию користь не буває.
+
+Структурна проблема в тому, як влаштовано ескалацію. У традиційному ланцюжку кожен рівень втрачає контекст. Заявка, яка в точці виникнення була очевидно розумною, приходить нагору як переказ переказу. Кожна людина посередині мусить або заново розібратися в ситуації, або передати її вище без розгляду. Погодження в такому процесі може тривати місяцями.
+
+Поставте дві цифри поруч: близько 24 годин на гарнітуру і місяці на погодження через традиційну ескалацію. Вони вимірюють не одне й те саме, але разом показують розкид. Невелика, зрозуміла заявка, адресована потрібній людині, може просунутися за день. Питання, яке має пройти крізь рівні, кожен з яких позбавляє його частини контексту, може застрягнути на місяці.
+
+І ця звичка нікуди не зникла. Організації досі вимагають схвалення на високому рівні для дрібних витрат. Це не історія про один банк із попереднього місця роботи. Це поточне обмеження, і воно живить описану вище проблему винятків. Коли звичайні рішення мусять підніматися ланцюжком, люди шукають шлях через виняток, бо ланцюжок дорогий, а виняток швидкий. Спадщина не зводиться до старих технологій. Вона живе й у правилах про те, хто що може вирішувати.
+
+## Двадцять пілотів, і всі термінові
+
+Якщо винятки є хворобою, то пріоритизація стає місцем, де симптоми проявляються першими. Докторка Гліптіс сказала, що в багатьох організацій, з якими вона працює, близько 20 пілотних проєктів, і всі вони вважаються однаково важливими. Вона назвала це недостатньою пріоритизацією.
+
+Логіку легко простежити. Якщо все однаково важливе, ніщо не ранжоване, і ранжування неявно визначає той, хто голосніше кричить, підписує або ескалює. Саме цим шляхом і процвітає виняток. Двадцять рівних пріоритетів гарантують, що перешкоди виникнуть одразу в кількох місцях і що когось попросять пропустити частину з них.
+
+Вона представила пріоритизацію як завдання, яке тепер стало завданням керівництва, бо програми змін рідко проєктували як повторювані. Це обережне твердження, і його варто прочитати уважно. Воно не каже, що керівники провалюють доручене їм завдання. Воно каже, що змінилося саме завдання. Коли програма змін разова, можна вижити з приблизним порядком робіт. Коли зміни безперервні, визначення порядку має стати тим, що керівники роблять знову і знову, а програми для цього не створювали.
+
+Для засновників і технічних читачів це частина, яку найлегше застосувати. Портфель із 20 пілотів виглядає як енергія. Згідно з цим аналізом, частіше він сигналізує, що вибору ще ніхто не зробив. Рішення сказати «ні» дев'ятнадцятьом із них є актом керівництва, і його не можна делегувати проєктному офісу, який не має повноважень відмовляти.
+
+## У ШІ власний розклад
+
+Усе сказане вище загострюється зі ШІ, бо ШІ змінює темп, не змінюючи глибинних звичок. Докторка Гліптіс сказала, що ШІ може допомогти пришвидшити роботу, але не дає всіх відповідей. Це корисний прискорювач. Він не замінює рішення про те, що треба виправити.
+
+Щодо одного підходу вона висловилася особливо прямо. Ідею просто «націлити ШІ» на проблеми вона назвала жахливою. Аргумент випливає з її попередніх тез: організація, проблеми якої включають неусунуті винятки, розрізнені дані та неясну відповідальність, не розв'яже їх, спрямувавши на них новий інструмент. Інструмент успадкує безлад.
+
+Вона також описала, як організації хибно оцінюють новизну. Вони часто поводяться так, ніби технологія нова для світу просто тому, що нова для них. І можуть припускати, що технологія перестане розвиватися, щойно вони будуть готові нею зайнятися. Не перестане.
+
+Її розповідь про 2024 рік показує обидва боки. Сплеск активності довкола ШІ того року приніс творчість і розширення можливостей. Він приніс і несподіванки. Деякі компанії з подивом виявили, що постачальникам уже по 10 років. Інші здивувалися тому, що самому ШІ вже десятки років і він далі розвивається. Здивування стосувалося обізнаності компаній, а не віку технології.
+
+Паралель є в історії, яку вона розповіла про 2009 рік. Тоді один CEO запитав її, чи треба йому розібратися в біткоїні, перш ніж піти на пенсію. Запитання виходило з того, що технологічне рішення можна відкласти на час після власного терміну. Її спостереження сьогодні протилежне: нинішні технологічні рішення часто розгортатимуться впродовж терміну повноважень того, хто ухвалює їх зараз. Горизонт пенсії більше нікого не захищає.
+
+Середовище довкола цих рішень теж не усталилося. ШІ розвивається швидше за багато стандартів, механізмів контролю та спільних домовленостей. Керівники не можуть розраховувати, що технологічні рішення прийдуть разом з усталеною регуляторною базою чи завершеною технологією. Чекати і того, і іншого означає мати план, сигнал до запуску якого так і не пролунає.
+
+## Спокійно, але не повільно
+
+З огляду на все це її рецепт двобічний. Організаціям потрібен спокій, а не паніка. Її порада: діяти безпечно, виважено й обережно, але не повільно.
+
+Це легко прочитати як компроміс, але точніше бачити в цьому обмеження для обох типів провалу. Паніка породжує 20 рівноправних пілотів і підписані винятки. Повільність породжує припущення, що технологія зачекає. Вона відкидає і те, і інше. Позиція, яку вона описує, така: темп рівний, механізми контролю на місці, а робота однаково рухається.
+
+Саме тут важить і твердження, що галузь готується 25 років. Підготовка, у її викладі, не привід розслабитися. Це причина, з якої спокій можливий: галузь виконала чверть століття цієї роботи і чогось на ній навчилася, навіть якщо оцінка була «B з мінусом».
+
+## Нудний фундамент
+
+Докторка Гліптіс не завершила баченням. Вона назвала елементи фундаменту, які, за її словами, нудні й необхідні, і перший із них: стратегія еволюції. Причина проста: жоден технологічний компонент і жоден партнер не вічні. Стратегія, яка виходить із незмінності, залишається стратегією для наступної несподіванки.
+
+Другий елемент: якісні дані. Якість даних, відповідальність за них і розрізнені структури залишаються невирішеними проблемами спадщини. Це прямо перегукується з її твердженням, що спадщина не зводиться до старих технологій. Неясна відповідальність за набір даних теж є спадщиною. Як і правило, що відправляє дрібну покупку на погодження високопосадовцю. Ні те, ні інше не з'явиться в реєстрі старих систем.
+
+Третя частина її міркувань стосується того, яким буде світ, що його має витримати цей фундамент. Світ переходить у режим реального часу, і організаціям треба вибудовувати стійкість під цю реальність. Вона додала, що стійкість і гнучкість більше не є компромісом. Роками надійний варіант і гнучкий варіант вважали суперниками, і всередині регульованої інституції зазвичай перемагав надійний. Її теза полягає в тому, що цей вибір більше не треба робити, бо світ реального часу вимагає і того, і іншого одночасно.
+
+Ще одне спостереження вказує на рух. Фінансові компанії, особливо страховики, дедалі частіше залучають партнерів до відвертіших розмов про свої плани й підходи. Це відповідає логіці стратегії еволюції: з партнером, який не буде вічним, простіше планувати, якщо він знає, що попереду. Це не доводить, що винятків меншає, і в джерелі нічого подібного не стверджується. Але це ознака того, що компанії готові відкрито говорити про проблему.
+
+<figure>
+<img src="https://cloudcdn.pro/stocks/images/oracle-financial-services-summit-panel-2026.webp" alt="П'ятеро учасників дискусії сидять на сцені Oracle Financial Services Summit, докторка Леда Гліптіс друга зліва, на екрані зазначено модератора, Марка Данліві з Oracle" width="1200" height="675" loading="lazy" decoding="async" />
+<figcaption>Докторка Гліптіс (друга зліва) на сцені під час панельної дискусії саміту про залежності та складність за підтримки KPMG; модератор Марк Данліві, SVP, Financial Services Industry в Oracle.</figcaption>
+</figure>
+
+## Що знадобиться, щоб прибрати виняток
+
+Повернімося до найпомітнішої цифри: два вимкнення за 25 років. Якщо такий темп хоч трохи типовий, завдання галузі не в тому, щоб побудувати наступну можливість, а в тому, щоб вирішити, що ця наступна можливість замінить. Від цього залежать усі інші аргументи. Винятки можна погасити, лише якщо хтось візьме на себе виправлення, а шари можна скоротити, лише якщо хтось готовий один із них вимкнути.
+
+Відкрите питання, яке залишає ця аргументація, практичне. Керівникові, який приймає, що модернізація ніколи не закінчується, однаково треба вирішити, який виняток закрити першим і який із 20 пілотів зупинити. Докторка Гліптіс пропонує рамку, оцінку і три варіанти, але не стверджує, що вимірювала, як часто другий варіант, тобто першочергова зміна процесу, міг би замінити третій. Вона бачила це рідко. Чи зміниться це в десятилітті, пришвидшеному ШІ, коли рішення розгортаються в межах одного терміну повноважень: ось за чим варто стежити.
 
 ---
 
-## Frequently Asked Questions
+## Часті запитання
 
-**What is the modernisation paradox Dr. Glyptis described?**
-Organisations make modernisation decisions to reduce risk and improve future competitiveness, but the same decisions also alter risk profiles and can make operations more complex. Modernisation was meant to simplify and has often made life more complicated, because organisations could not foresee how complex the external environment would become.
+**У чому полягає парадокс модернізації, про який говорила докторка Гліптіс?**
+Організації ухвалюють рішення про модернізацію, щоб знизити ризик і підвищити майбутню конкурентоспроможність, але ті самі рішення змінюють профіль ризиків і можуть ускладнити операційну діяльність. Модернізація мала спрощувати, а часто все ускладнювала, бо організації не могли передбачити, наскільки складним стане зовнішнє середовище.
 
-**Why does she say modernisation is not an end state?**
-Projects may finish, but organisations do not become permanently "modern". Teams have spent 20 to 25 years on this work, yet the number of challenges keeps growing, and new capabilities are layered onto older ones rather than replacing them. She said she has switched something off only twice in 25 years.
+**Чому вона каже, що модернізація не є кінцевим станом?**
+Проєкти можуть завершитися, але організації не стають «сучасними» назавжди. Команди витратили на цю роботу 20–25 років, а викликів і далі більшає, і нові можливості надбудовуються над старими, а не замінюють їх. Вона сказала, що за 25 років вимикала щось лише двічі.
 
-**How do exceptions turn into the operating model?**
-When a policy or process blocks an initiative, there are three choices: do not do the initiative, change the process first, or use a one-time workaround, risk acceptance or senior-sponsored exception. She has rarely seen the second happen; the third is common. The exception is usually forgotten and becomes a precedent by default.
+**Як винятки перетворюються на операційну модель?**
+Коли політика чи процес блокує ініціативу, є три варіанти: не реалізовувати ініціативу, спершу змінити процес або вдатися до разового обхідного шляху, прийняття ризику чи винятку під патронатом вищого керівництва. Другий варіант вона бачила рідко, третій трапляється часто. Виняток зазвичай забувають, і він за замовчуванням стає прецедентом.
 
-**What did she advise leaders to do about AI?**
-To be safe, measured and cautious, but not slow. She called simply "pointing AI" at problems a terrible idea, said organisations need calm rather than panic, and warned that leaders cannot assume a settled regulatory framework or a finished technology.
+**Що вона порадила керівникам щодо ШІ?**
+Діяти безпечно, виважено й обережно, але не повільно. Вона назвала жахливою ідеєю просто «націлити ШІ» на проблеми, сказала, що організаціям потрібен спокій, а не паніка, і попередила, що керівники не можуть розраховувати ні на усталену регуляторну базу, ні на завершену технологію.
 
-**Which foundations did she call boring and essential?**
-An evolution strategy, because no technology component or partner lasts forever; tools and operating capability that can support the pace of change; partners that match the organisation's pace; good data, since quality, ownership and silos remain unresolved legacy issues; and repeatable processes that stop sending minor spending to senior approval.
+**Який фундамент вона назвала нудним і необхідним?**
+Стратегію еволюції, бо жоден технологічний компонент і жоден партнер не вічні; інструменти та операційні можливості, здатні витримати темп змін; партнерів, які відповідають темпу організації; якісні дані, оскільки якість, відповідальність і розрізненість залишаються невирішеними проблемами спадщини; і повторювані процеси, що перестануть відправляти дрібні витрати на погодження вищому керівництву.
 
 ---
 
-## References
+## Джерела
 
-- Glyptis, L., (2026). The Modernisation Paradox in Financial Services. Keynote at the Oracle Financial Services Summit, London, 20 October 2026. [Oracle Financial Services ⧉](https://www.oracle.com/uk/financial-services/ "Oracle Financial Services, United Kingdom"). Oracle.
+- Glyptis, L., (2026). The Modernisation Paradox in Financial Services. Доповідь на Oracle Financial Services Summit, Лондон, 20 жовтня 2026 року. [Oracle Financial Services ⧉](https://www.oracle.com/uk/financial-services/ "Oracle Financial Services, Велика Британія"). Oracle.
 - Glyptis, L., (2023). [Bankers Like Us: Dispatches from an Industry in Transition ⧉](https://www.routledge.com/Bankers-Like-Us-Dispatches-from-an-Industry-in-Transition/Glyptis/p/book/9781032202037 "Bankers Like Us, Routledge"). Routledge.
-- Glyptis, L., (2026). [#LedaWrites column archive ⧉](https://www.11fs.com/tags/leda-writes "#LedaWrites by Leda Glyptis"). 11:FS.
+- Glyptis, L., (2026). [Архів колонки #LedaWrites ⧉](https://www.11fs.com/tags/leda-writes "#LedaWrites, авторка Леда Гліптіс"). 11:FS.

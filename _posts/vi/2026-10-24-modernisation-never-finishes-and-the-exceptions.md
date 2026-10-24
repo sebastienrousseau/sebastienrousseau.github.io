@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Dr. Leda Glyptis speaking on stage in front of the Oracle backdrop at the Oracle Financial Services Summit in London, October 2026"
+banner_alt: "Tiến sĩ Leda Glyptis trên sân khấu trước phông nền Oracle tại Oracle Financial Services Summit ở London, tháng 10 năm 2026"
 banner_height: "571"
 banner_width: "1425"
 banner: "https://cloudcdn.pro/stocks/images/leda-glyptis-oracle-financial-services-summit-2026.webp"
@@ -10,20 +10,20 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 24, 2026"
-description: "Hosting the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that modernisation is not an end state and that financial-services leaders must address the complexity left by decades of exceptions. She gave the industry a B minus for 25 years and advised leaders on AI to be safe, measured and cautious, but not slow."
+description: "Tại London, Tiến sĩ Leda Glyptis cho rằng hiện đại hóa không có hồi kết: ngân hàng phải xử lý các ngoại lệ và tiếp cận AI chừng mực nhưng không chậm chạp."
 format-detection: "telephone=no"
 hreflang: "vi"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/vi/2026-10-24-modernisation-never-finishes-and-the-exceptions"
-image_alt: "Black and White Portrait of Sebastien Rousseau"
+image_alt: "Chân dung đen trắng của Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
-keywords: "Leda Glyptis, modernisation paradox, Oracle Financial Services Summit, financial services modernisation, legacy systems, exceptions, technical debt, prioritisation, AI adoption, banking transformation, operational resilience"
+keywords: "Leda Glyptis, nghịch lý hiện đại hóa, Oracle Financial Services Summit, hiện đại hóa dịch vụ tài chính, hệ thống kế thừa, ngoại lệ, nợ kỹ thuật, ưu tiên hóa, ứng dụng AI, chuyển đổi ngân hàng, khả năng chống chịu vận hành"
 language: "vi"
 layout: "report"
 locale: "vi_VN"
-logo_alt: "Logo for Sebastien Rousseau"
+logo_alt: "Logo của Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -37,22 +37,22 @@ revisit-after: "7 days"
 robots: "index, follow"
 schema: "FAQPage, Article"
 short_name: "sebastienrousseau"
-subtitle: "Financial services has spent 20 to 25 years treating modernisation as a project with an end date. Opening the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that the industry's weaker record is the buildup of exceptions, and that AI will arrive on top of that buildup rather than replace it."
-tags: "AI, ai-governance, banking, technology-strategy, operational-resilience, third-party-risk, innovation, Modernisation, Legacy Systems, Financial Services, Leadership, Oracle Financial Services Summit"
+subtitle: "Trong 20 đến 25 năm, ngành dịch vụ tài chính đã coi hiện đại hóa như một dự án có ngày kết thúc. Khai mạc Oracle Financial Services Summit tại London, Tiến sĩ Leda Glyptis lập luận rằng điểm yếu của ngành là sự tích tụ các ngoại lệ, và AI sẽ chồng lên lớp tích tụ đó thay vì thay thế nó."
+tags: "AI, quản trị AI, ngân hàng, chiến lược công nghệ, khả năng chống chịu vận hành, rủi ro bên thứ ba, đổi mới, hiện đại hóa, hệ thống kế thừa, dịch vụ tài chính, lãnh đạo, Oracle Financial Services Summit"
 topic_clusters: "applied-ai-banking, ai-governance-regulation"
 theme-color: "0, 67, 165"
-title: "Modernisation Never Finishes, and the Exceptions Are What Pile Up"
+title: "Hiện đại hóa không bao giờ kết thúc, thứ chất đống là các ngoại lệ"
 url: "https://sebastienrousseau.com/vi/2026-10-24-modernisation-never-finishes-and-the-exceptions"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-10-24-modernisation-never-finishes-exceptions-pile-up/rss.xml"
 category: "Finance"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "Hosting the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that financial services must stop treating modernisation as a finite programme and start retiring the exceptions it has piled up for decades."
+item_description: "Tại Oracle Financial Services Summit ở London, Tiến sĩ Leda Glyptis kêu gọi ngành dịch vụ tài chính thôi coi hiện đại hóa là một chương trình có hạn và bắt đầu loại bỏ các ngoại lệ đã chồng chất hàng chục năm."
 item_guid: "https://sebastienrousseau.com/2026-10-24-modernisation-never-finishes-exceptions-pile-up/rss.xml"
 item_link: "https://sebastienrousseau.com/2026-10-24-modernisation-never-finishes-exceptions-pile-up/rss.xml"
 item_pub_date: "Sat, 24 Oct 2026 10:30:00 +0000"
-item_title: "Modernisation Never Finishes, and the Exceptions Are What Pile Up"
+item_title: "Hiện đại hóa không bao giờ kết thúc, thứ chất đống là các ngoại lệ"
 last_build_date: "Sat, 24 Oct 2026 10:30:00 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Sat, 24 Oct 2026 10:30:00 +0000"
@@ -64,199 +64,195 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "The Modernisation Paradox"
+apple-mobile-web-app-title: "Nghịch lý hiện đại hóa"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "Hosting the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that financial services must stop treating modernisation as a finite programme and start retiring the exceptions it has piled up for decades."
+twitter_description: "Tại Oracle Financial Services Summit ở London, Tiến sĩ Leda Glyptis kêu gọi ngành dịch vụ tài chính thôi coi hiện đại hóa là một chương trình có hạn và bắt đầu loại bỏ các ngoại lệ đã chồng chất hàng chục năm."
 twitter_image: "https://cloudcdn.pro/stocks/images/leda-glyptis-oracle-financial-services-summit-2026.webp"
-twitter_image_alt: "Dr. Leda Glyptis on stage at the Oracle Financial Services Summit in London"
+twitter_image_alt: "Tiến sĩ Leda Glyptis trên sân khấu Oracle Financial Services Summit ở London"
 twitter_site: "@wwdseb"
-twitter_title: "Modernisation Never Finishes, and the Exceptions Are What Pile Up"
+twitter_title: "Hiện đại hóa không bao giờ kết thúc, thứ chất đống là các ngoại lệ"
 twitter_url: "https://sebastienrousseau.com/2026-10-24-modernisation-never-finishes-exceptions-pile-up"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
-thanks: "Thanks for reading!"
+thanks: "Cảm ơn bạn đã đọc!"
 site_last_updated: "2026-10-24"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-excerpt: "Financial services has spent 20 to 25 years treating modernisation as a project with an end date. Opening the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that the industry's weaker record is..."
+excerpt: "Trong 20 đến 25 năm, ngành dịch vụ tài chính đã coi hiện đại hóa như một dự án có ngày kết thúc. Khai mạc Oracle Financial Services Summit tại London, Tiến sĩ Leda Glyptis lập luận rằng điểm yếu của ngành là..."
 last_reviewed: "2026-10-24"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Hiện đại hóa không bao giờ kết thúc, thứ chất đống là các ngoại lệ
 
-> _Translation pending — read the [English original](/2026-10-24-modernisation-never-finishes-exceptions-pile-up/) while we localise._
-
-# Modernisation Never Finishes, and the Exceptions Are What Pile Up
-
-**Financial services has spent 20 to 25 years treating modernisation as a project with an end date. Opening the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that the industry's weaker record is the buildup of exceptions, and that AI will arrive on top of that buildup rather than replace it.**
+**Trong 20 đến 25 năm, ngành dịch vụ tài chính đã coi hiện đại hóa như một dự án có ngày kết thúc. Khai mạc Oracle Financial Services Summit tại London, Tiến sĩ Leda Glyptis lập luận rằng điểm yếu của ngành là sự tích tụ các ngoại lệ, và AI sẽ chồng lên lớp tích tụ đó thay vì thay thế nó.**
 
 <!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Tóm tắt bài viết">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Hosting the Oracle Financial Services Summit in London, Dr. Glyptis argued that modernisation is not an end state and that financial-services leaders must address the complexity left by decades of exceptions. She gave the industry a B minus for 25 years. Her advice on AI is to be safe, measured and cautious, but not slow.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<p class="post-lead-tldr"><strong>Tóm lại.</strong> Với vai trò chủ trì Oracle Financial Services Summit tại London, Tiến sĩ Leda Glyptis lập luận rằng hiện đại hóa không phải là trạng thái cuối cùng và các nhà lãnh đạo dịch vụ tài chính phải giải quyết sự phức tạp mà hàng chục năm ngoại lệ để lại. Bà chấm cho ngành điểm B trừ sau 25 năm. Lời khuyên của bà về AI: an toàn, chừng mực và thận trọng, nhưng không chậm chạp.</p>
+<p class="post-lead-heading"><strong>Những điểm chính</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Modernisation has no finish line.</strong> Projects end, but organisations don't become permanently "modern", and challenges keep growing after 20 to 25 years of effort.</li>
-  <li><strong>Exceptions harden into precedent.</strong> A one-time workaround is common, the fix to the process is rare, and the forgotten exception becomes a precedent by default.</li>
-  <li><strong>Prioritisation is a leadership problem.</strong> Many organisations she works with run about 20 pilot projects, all treated as equally important.</li>
-  <li><strong>AI needs calm and pace together.</strong> It is moving faster than many standards, controls and shared understandings, and pointing it at problems is, in her words, a terrible idea.</li>
+  <li><strong>Hiện đại hóa không có vạch đích.</strong> Dự án kết thúc, nhưng tổ chức không trở nên "hiện đại" vĩnh viễn, và thách thức vẫn tiếp tục tăng sau 20 đến 25 năm nỗ lực.</li>
+  <li><strong>Ngoại lệ đông cứng thành tiền lệ.</strong> Cách lách một lần là chuyện thường, sửa quy trình là hiếm, và ngoại lệ bị lãng quên mặc nhiên trở thành tiền lệ.</li>
+  <li><strong>Ưu tiên hóa là vấn đề của lãnh đạo.</strong> Nhiều tổ chức bà làm việc cùng đang chạy khoảng 20 dự án thí điểm, tất cả đều được coi là quan trọng như nhau.</li>
+  <li><strong>AI đòi hỏi cùng lúc sự điềm tĩnh và nhịp độ.</strong> AI tiến nhanh hơn nhiều tiêu chuẩn, cơ chế kiểm soát và hiểu biết chung, và chỉ đơn giản chĩa nó vào các vấn đề, theo lời bà, là một ý tưởng tồi tệ.</li>
 </ul>
 </aside>
 <!-- lead-end -->
 
-> **Executive Summary**
+> **Tóm tắt dành cho lãnh đạo**
 >
-> - Modernisation decisions reduce risk and improve future competitiveness, yet the same decisions alter risk profiles and can make operations more complex.
-> - New capabilities are layered onto older ones rather than replacing them, a pattern Dr. Glyptis says has held since 1950. She has switched something off only twice in 25 years.
-> - When a policy blocks an initiative, the one-time exception is common, changing the process first is rarely seen, and the exception turns into precedent.
-> - A $180-per-meeting headset request shows how approval chains lose context at each layer. The approval process likely cost the bank far more than the headset.
-> - AI can accelerate the work but does not supply all the answers. Leaders should expect neither a settled regulatory framework nor a finished technology.
-> - The foundations are boring and essential: an evolution strategy, good data, and a way to be both sturdy and agile in a real-time world.
+> - Các quyết định hiện đại hóa giảm rủi ro và nâng cao năng lực cạnh tranh trong tương lai, nhưng chính những quyết định đó lại thay đổi hồ sơ rủi ro và có thể khiến hoạt động phức tạp hơn.
+> - Năng lực mới được xếp chồng lên năng lực cũ thay vì thay thế chúng, một khuôn mẫu mà theo Tiến sĩ Glyptis đã tồn tại từ năm 1950. Trong 25 năm, bà mới chỉ tắt một thứ gì đó hai lần.
+> - Khi một chính sách chặn một sáng kiến, ngoại lệ một lần là chuyện thường, thay đổi quy trình trước hiếm khi thấy, và ngoại lệ trở thành tiền lệ.
+> - Một yêu cầu mua tai nghe giá 180 USD mỗi cuộc họp cho thấy chuỗi phê duyệt mất ngữ cảnh ở từng cấp như thế nào. Quy trình phê duyệt có lẽ đã khiến ngân hàng tốn kém hơn nhiều so với chiếc tai nghe.
+> - AI có thể tăng tốc công việc nhưng không cung cấp mọi câu trả lời. Lãnh đạo không nên trông đợi một khung pháp lý đã ổn định cũng như một công nghệ đã hoàn thiện.
+> - Nền móng nhàm chán nhưng thiết yếu: một chiến lược tiến hóa, dữ liệu tốt và cách để vừa vững chắc vừa linh hoạt trong một thế giới thời gian thực.
 
-Most technology programmes in financial services begin with a promise that this time the complexity will go down. Dr. Glyptis's argument is that the promise has been made for a generation and that it has mostly gone unkept. Teams have spent 20 to 25 years on this work, yet the number of challenges keeps growing. If effort alone fixed the problem, it would have shrunk by now.
+Phần lớn các chương trình công nghệ trong dịch vụ tài chính bắt đầu bằng lời hứa rằng lần này sự phức tạp sẽ giảm xuống. Lập luận của Tiến sĩ Glyptis là lời hứa ấy đã được đưa ra suốt một thế hệ và phần lớn không được giữ. Các đội ngũ đã dành 20 đến 25 năm cho công việc này, vậy mà số lượng thách thức vẫn tiếp tục tăng. Nếu chỉ riêng nỗ lực đã giải quyết được vấn đề, thì đến giờ nó đã phải thu hẹp lại.
 
-Dr. Glyptis hosted the Oracle Financial Services Summit in London on 20 October 2026 and opened its session on AI, business modernisation, resilience and trust. As host, she set out three connected priorities that, she said, come up consistently in Oracle's customer conversations: bringing AI into core operations with measurable business impact, modernising while keeping pace with rapid technology change, and preserving resilience and trust. Oracle's role was described as providing the secure, scalable systems that underpin customers' businesses. She thanked Accenture and KPMG for their partnership with Oracle globally and in the UK and Ireland, and explained that the day was built around questions, speakers, panels, breakout rooms and direct conversations with Oracle staff. Her own keynote, though, was less a product pitch than a diagnosis.
-
-<figure>
-<img src="https://cloudcdn.pro/stocks/images/oracle-financial-services-summit-london-2026.webp" alt="Oracle Financial Services Summit signage above the venue bar, with the Oracle logo and the sponsors Accenture and KPMG" width="1920" height="1080" loading="lazy" decoding="async" />
-<figcaption>The Oracle Financial Services Summit, London, 20 October 2026, sponsored by Accenture and KPMG.</figcaption>
-</figure>
-
-Her central instruction was blunt. Financial-services leaders must stop treating modernisation as a finite programme and address the accumulated complexity created by decades of exceptions. The rest of her argument follows from that sentence, and this article does too.
+Tiến sĩ Leda Glyptis chủ trì Oracle Financial Services Summit tại London ngày 20 tháng 10 năm 2026 và mở đầu phiên thảo luận về AI, hiện đại hóa kinh doanh, khả năng chống chịu và niềm tin. Với vai trò chủ trì, bà nêu ra ba ưu tiên gắn kết mà theo bà thường xuyên xuất hiện trong các cuộc trao đổi của Oracle với khách hàng: đưa AI vào hoạt động cốt lõi với tác động kinh doanh đo lường được, hiện đại hóa trong khi theo kịp nhịp thay đổi công nghệ nhanh chóng, và giữ gìn khả năng chống chịu cùng niềm tin. Vai trò của Oracle được mô tả là cung cấp những hệ thống an toàn, có khả năng mở rộng làm nền tảng cho hoạt động kinh doanh của khách hàng. Bà cảm ơn Accenture và KPMG vì quan hệ đối tác với Oracle trên toàn cầu cũng như tại Vương quốc Anh và Ireland, và giải thích rằng ngày hội được xây dựng quanh các câu hỏi, diễn giả, phiên thảo luận, phòng hội thảo song song và các cuộc trò chuyện trực tiếp với nhân viên Oracle. Tuy vậy, bài phát biểu chính của bà không giống một buổi giới thiệu sản phẩm mà giống một lần chẩn đoán hơn.
 
 <figure>
-<img src="https://cloudcdn.pro/stocks/images/leda-glyptis-modernisation-paradox-keynote-slide-2026.webp" alt="Title slide reading The Modernisation Paradox, Leda Glyptis PhD, over an illustration of a human head drawn as a glowing network" width="1920" height="1248" loading="lazy" decoding="async" />
-<figcaption>Dr. Glyptis's keynote title slide.</figcaption>
+<img src="https://cloudcdn.pro/stocks/images/oracle-financial-services-summit-london-2026.webp" alt="Biển hiệu Oracle Financial Services Summit phía trên quầy bar của địa điểm, với logo Oracle và các nhà tài trợ Accenture, KPMG" width="1920" height="1080" loading="lazy" decoding="async" />
+<figcaption>Oracle Financial Services Summit, London, ngày 20 tháng 10 năm 2026, do Accenture và KPMG tài trợ.</figcaption>
 </figure>
 
-## A finish line that keeps moving
-
-The usual story of modernisation has a before and an after. A platform is replaced, a migration completes, a steering committee closes the programme. Dr. Glyptis rejects the "after". Modernisation, she says, is not an end state. Projects may finish, but organisations do not become permanently "modern".
-
-That sounds like semantics until you consider what organisations are actually doing when they decide to modernise. They act to reduce risk and to improve their future competitiveness. Those are sensible aims. But the same decisions also alter risk profiles and can make operations more complex. The move that lowers one risk can introduce another, and the new arrangement has to be run, funded and explained to someone.
-
-The pattern is a trap in the literal sense. A leader who believes the programme will end plans for the end. A leader who accepts it won't plans for continuity, and that changes budgets, governance and the way success is measured. The first leader keeps being surprised. The second might at least be prepared.
-
-There is also a plain explanation for why simplification has so often failed to arrive. Modernisation was meant to simplify but has often made life more complicated, because organisations could not foresee how complex the external environment would become. That isn't an accusation of poor engineering. The plans were reasonable, and the environment outran them.
-
-## A B minus and two switch-offs
-
-Dr. Glyptis gave the industry a B minus for the past 25 years. It's a useful grade because it refuses both comfort and despair. A B minus is not a fail. It also isn't what anyone would hope for after a quarter of a century of sustained effort.
-
-She added a figure that makes the grade easier to understand: she has switched something off only twice in 25 years. Consider what that implies for a working architecture. If systems, processes and controls are almost never retired, then every new thing adds to the total. Nothing leaves.
-
-This links directly to her claim that new capabilities are layered onto older ones rather than replacing them, and that this pattern has been in place since 1950. The industry's habit isn't a recent failing of the cloud era or the app era. By her account it is older than most of the people now trying to manage it.
-
-Layering has its own logic. Adding is safer than removing, and removing needs someone to own the consequences. But the cost is cumulative. Each layer must coexist with the ones beneath it, and each carries its own assumptions about data, access and approval. After seventy-odd years, the interactions among them are the real subject of modernisation work.
-
-The B minus sits oddly beside another statement of hers: the industry has been preparing for this moment for 25 years. Read together, the two lines say that the preparation was real and the results were partial. She also argued that established institutions have adapted more successfully than they often acknowledge. That claim should be held with care, since it's a view she argued rather than a measured result. But it fits the grade. An industry can adapt better than it admits and still carry a damaging backlog of unretired exceptions.
-
-## How a one-off becomes the rule
-
-The most useful part of Dr. Glyptis's argument is her account of what happens when a policy or process blocks an initiative. She described three practical choices. Do not do the initiative. Change the process first. Or use a one-time workaround, risk acceptance, or senior-sponsored exception.
-
-The first option is rarely attractive, because someone wanted the initiative for a reason. The second is the one that would actually reduce complexity, because it fixes the barrier itself. She said she has rarely seen it happen. The third is common.
-
-The mechanism after that is where the damage accrues. Organisations sometimes return to fix the process. More often the exception is forgotten. It becomes a precedent by default, and when the same barrier appears again, another exception is made.
-
-Walk through that sequence slowly, because it's the engine of the whole problem. An exception is granted for a legitimate reason, under time pressure, by someone senior enough to sign it. Nobody schedules the repair. The next team meets the same obstacle, finds that the first team got through, and cites the earlier case. The workaround has become a route. Because each exception was individually reasonable, no one ever decided to build a system that runs on them.
-
-This is what she means by the accumulated complexity of decades of exceptions. The phrase carries a specific thing: the stock of unresolved decisions that were each made to keep work moving. It also explains why financial services' weaker record is the buildup of exceptions. The industry is not short of ways to get things done. It is short of ways to stop getting them done the same awkward way.
-
-The practical consequence for a leader is uncomfortable. Granting the exception feels like decisiveness. Under this account, decisiveness without a follow-up to fix the process is how complexity compounds. The test of a sponsor isn't whether they can clear a barrier once, but whether the barrier is still there the next time.
-
-## The $180 headset
-
-Dr. Glyptis made the point concrete with a small story. In an earlier role as a senior director, she could sign contracts worth about $50,000. A request for a headset, which cost $180 per meeting, was approved by an executive in about 24 hours.
-
-Twenty-four hours sounds fast, and in isolation it is. The point lies in what the process surrounding the request probably consumed. Her view, stated with appropriate hedging, was that the approval process likely cost the bank far more than the headset. The arithmetic of a $180 item set against the time of the people who touched the request is not in her favour, and it never is in anyone's.
-
-The structural problem is in how escalation works. In the traditional chain, each layer loses context. A request that made obvious sense where it started arrives at the top as a summary of a summary. Each person in between must either re-learn the situation or pass it up unexamined. Alignment in that process can take months.
-
-Set the two numbers side by side: about 24 hours for the headset, and months for alignment through a traditional escalation. They aren't measuring the same thing, but together they show a spread. A small, clear request with the right person can move in a day. A matter that has to travel through layers, each stripping context as it goes, can stall for months.
-
-And the habit has not gone away. Organisations still require senior approval for minor spending. That isn't a story about one bank from a former job. It is a current limitation, and it feeds the exception problem above. When ordinary decisions must climb a chain, people look for the exception route, because the chain is expensive and the exception is quick. Legacy is not just old technology. It also lives in the rules about who may decide what.
-
-## Twenty pilots, all of them urgent
-
-If exceptions are the disease, prioritisation is where the symptoms show first. Dr. Glyptis said many organisations she works with have about 20 pilot projects, all treated as equally important. She called that insufficient prioritisation.
-
-The logic is easy to follow. If everything is equally important, nothing is ranked, and the ranking is made implicitly by whoever shouts, signs or escalates. That is precisely the route by which the exception thrives. Twenty equal priorities guarantee that barriers will appear in several places at once, and that someone will be asked to wave a few of them through.
-
-She framed prioritisation as now a leadership problem, because change programmes were rarely designed to be repeatable. This is a careful claim and worth reading closely. It doesn't say leaders are failing at a task they were handed. It says the task changed. When a change programme is a one-off, you can survive with a loose ordering of work. When change is continuous, the ordering has to be something leaders do again and again, and the programmes weren't built for that.
-
-For founders and technical readers, this is the part that translates most easily. A portfolio of 20 pilots reads like energy. By this account, it more often signals that nobody has yet chosen. The decision to say no to nineteen of them is a leadership act, and it can't be delegated to a project office that has no authority to refuse.
-
-## AI arrives on a fixed timetable of its own
-
-Everything above gets sharper with AI, because AI changes the pace without changing the underlying habits. Dr. Glyptis said AI can help accelerate the work but does not supply all the answers. It is a useful accelerator. It isn't a substitute for deciding what to fix.
-
-She was especially direct on one approach. The idea of simply "pointing AI" at problems she called a terrible idea. The reasoning follows from her earlier points: an organisation whose problems include unretired exceptions, siloed data and unclear ownership will not find those resolved by aiming a new tool at them. The tool inherits the mess.
-
-She also described how organisations misjudge novelty. They often behave as though a technology is new to the world simply because it is new to them. And they may assume the technology will stop evolving once they are ready to engage. It will not.
-
-Her account of 2024 shows both sides of this. The surge of AI activity that year brought creativity and empowerment. It also brought surprises. Some firms were surprised to find that vendors were already 10 years old. Others were surprised that AI itself was decades old and still evolving. The surprise was about the firms' awareness rather than the technology's age.
-
-There is a parallel in a story she told about 2009. A CEO asked her then whether he needed to learn about Bitcoin before retiring. The question assumed that a technology decision could be deferred past one's own tenure. Her observation now is the opposite: today's technology decisions will often play out during the current decision maker's tenure. The retirement horizon no longer protects anyone.
-
-The environment around those decisions is unsettled, too. AI is moving faster than many standards, controls and shared understandings. Leaders cannot assume technology decisions will arrive with a settled regulatory framework or a finished technology. Waiting for both is a plan that never reaches its trigger.
-
-## Calm, and not slow
-
-Faced with that, her prescription is two-sided. What organisations need is calm, not panic. Her advice was to be safe, measured and cautious, but not slow.
-
-It would be easy to read this as a compromise, but it works better as a constraint on both failure modes. Panic produces the 20 equal pilots and the signed-off exceptions. Slowness produces the assumption that the technology will wait. She rejects each. The posture she describes is one where the pace is steady, the controls are present, and the work still moves.
-
-That is also where the claim that the industry has been preparing for 25 years matters. Preparation, in her telling, is not a reason to relax. It is the reason calm is available: the sector has done a quarter-century of this work, and has learned something from it, even if the grade was a B minus.
-
-## The boring foundations
-
-Dr. Glyptis did not end on a vision. She named foundations that are, in her words, boring and essential, and the first is an evolution strategy. The reason is simple: no technology component or partner lasts forever. A strategy that assumes permanence is a strategy for the next surprise.
-
-The second is good data. Data quality, ownership and siloed structures remain unresolved legacy issues. This sits right alongside her statement that legacy is not just old technology. Unclear ownership of a dataset is legacy. So is a rule that sends a minor purchase to a senior approver. Neither shows up on an asset register of old systems.
-
-The third part of her case concerns the shape of the world these foundations must carry. The world is becoming real-time, and organisations must build robustness for that reality. She added that robustness and agility are no longer a trade-off. For years, the sturdy option and the agile option were treated as rivals, and the sturdy one usually won inside a regulated institution. Her claim is that the choice no longer has to be made, because a real-time world demands both at once.
-
-One more observation points to movement. Financial-services firms, particularly insurers, are increasingly bringing partners into more open conversations about their plans and approaches. That fits the logic of an evolution strategy, since a partner that won't last forever is easier to plan around when it knows what is coming. It doesn't prove the exceptions are shrinking, and nothing in the source says it does. But it is a sign that firms are willing to talk about the problem openly.
+Chỉ dẫn trọng tâm của bà rất thẳng thắn. Các nhà lãnh đạo dịch vụ tài chính phải thôi coi hiện đại hóa là một chương trình có hạn và giải quyết sự phức tạp tích tụ do hàng chục năm ngoại lệ tạo ra. Phần còn lại trong lập luận của bà xuất phát từ câu nói ấy, và bài viết này cũng vậy.
 
 <figure>
-<img src="https://cloudcdn.pro/stocks/images/oracle-financial-services-summit-panel-2026.webp" alt="Five panellists seated on stage at the Oracle Financial Services Summit, with Dr. Leda Glyptis second from left and a screen naming the moderator, Mark Dunleavy of Oracle" width="1200" height="675" loading="lazy" decoding="async" />
-<figcaption>Dr. Glyptis (second from left) on stage with the summit's KPMG-sponsored panel on dependency and complexity, moderated by Mark Dunleavy, SVP, Financial Services Industry at Oracle.</figcaption>
+<img src="https://cloudcdn.pro/stocks/images/leda-glyptis-modernisation-paradox-keynote-slide-2026.webp" alt="Trang chiếu tiêu đề ghi The Modernisation Paradox, Leda Glyptis PhD, trên hình minh họa đầu người được vẽ như một mạng lưới phát sáng" width="1920" height="1248" loading="lazy" decoding="async" />
+<figcaption>Trang chiếu tiêu đề bài phát biểu chính của Tiến sĩ Glyptis.</figcaption>
 </figure>
 
-## What retiring an exception would take
+## Vạch đích cứ dịch chuyển mãi
 
-Return to the number that stands out most: two switch-offs in 25 years. If that rate is anything like typical, the industry's challenge is not building the next capability but deciding what the next capability will replace. Every other argument here depends on that. Exceptions can only be repaid if someone owns the repair, and layers can only be reduced if someone is willing to switch one off.
+Câu chuyện quen thuộc về hiện đại hóa có một trước và một sau. Một nền tảng được thay thế, một đợt di chuyển hoàn tất, một ban chỉ đạo khép lại chương trình. Tiến sĩ Glyptis bác bỏ cái "sau" ấy. Bà nói hiện đại hóa không phải là trạng thái cuối cùng. Dự án có thể kết thúc, nhưng tổ chức không trở nên "hiện đại" vĩnh viễn.
 
-The open question the argument leaves is a practical one. A leader who accepts that modernisation never finishes still has to decide which single exception to close first, and which of 20 pilots to stop. Dr. Glyptis offers the framing, the grade and the three choices, but she doesn't claim to have measured how often the second choice, changing the process first, could replace the third. She has rarely seen it. Whether that changes in an AI-accelerated decade, when decisions play out within a single tenure, is the thing worth watching.
+Nghe như chuyện chữ nghĩa cho đến khi ta xem các tổ chức thực sự làm gì khi quyết định hiện đại hóa. Họ hành động để giảm rủi ro và nâng cao năng lực cạnh tranh trong tương lai. Đó là những mục tiêu hợp lý. Nhưng chính những quyết định đó cũng thay đổi hồ sơ rủi ro và có thể khiến hoạt động phức tạp hơn. Bước đi làm giảm một rủi ro có thể mang đến rủi ro khác, và sự sắp đặt mới phải được vận hành, cấp vốn và giải thích cho ai đó.
+
+Khuôn mẫu này là một cái bẫy theo nghĩa đen. Nhà lãnh đạo tin rằng chương trình sẽ kết thúc thì lên kế hoạch cho điểm kết thúc. Nhà lãnh đạo chấp nhận rằng nó sẽ không kết thúc thì lên kế hoạch cho sự liên tục, và điều đó thay đổi ngân sách, quản trị và cách đo lường thành công. Người thứ nhất cứ bị bất ngờ hết lần này đến lần khác. Người thứ hai ít nhất có thể chuẩn bị sẵn sàng.
+
+Cũng có một lời giải thích đơn giản cho việc sự đơn giản hóa thường xuyên không đến. Hiện đại hóa lẽ ra phải làm mọi thứ đơn giản hơn, nhưng thường lại khiến cuộc sống phức tạp hơn, vì các tổ chức không thể lường trước môi trường bên ngoài sẽ trở nên phức tạp đến mức nào. Đó không phải là lời buộc tội kỹ thuật kém. Các kế hoạch đều hợp lý, và môi trường đã vượt qua chúng.
+
+## Một điểm B trừ và hai lần tắt
+
+Tiến sĩ Glyptis chấm cho ngành điểm B trừ cho 25 năm qua. Đó là một điểm số hữu ích vì nó từ chối cả sự an ủi lẫn tuyệt vọng. B trừ không phải là trượt. Nhưng đó cũng không phải điều ai mong đợi sau một phần tư thế kỷ nỗ lực bền bỉ.
+
+Bà bổ sung một con số khiến điểm số ấy dễ hiểu hơn: trong 25 năm, bà mới chỉ tắt một thứ gì đó hai lần. Hãy nghĩ xem điều đó có nghĩa gì với một kiến trúc đang vận hành. Nếu hệ thống, quy trình và cơ chế kiểm soát gần như không bao giờ bị loại bỏ, mọi thứ mới đều cộng thêm vào tổng thể. Không có gì rời đi.
+
+Điều này gắn trực tiếp với nhận định của bà rằng năng lực mới được xếp chồng lên năng lực cũ thay vì thay thế chúng, và khuôn mẫu này đã tồn tại từ năm 1950. Thói quen của ngành không phải là một thất bại mới của thời đại điện toán đám mây hay thời đại ứng dụng. Theo lời bà, nó còn lâu đời hơn phần lớn những người đang cố gắng quản lý nó hôm nay.
+
+Việc xếp lớp có logic riêng của nó. Thêm vào an toàn hơn bỏ đi, và bỏ đi đòi hỏi ai đó chịu trách nhiệm về hậu quả. Nhưng chi phí là cộng dồn. Mỗi lớp phải cùng tồn tại với các lớp bên dưới, và mỗi lớp mang những giả định riêng về dữ liệu, quyền truy cập và phê duyệt. Sau hơn bảy mươi năm, sự tương tác giữa các lớp ấy mới là đối tượng thực sự của công việc hiện đại hóa.
+
+Điểm B trừ đứng cạnh một nhận định khác của bà một cách kỳ lạ: ngành đã chuẩn bị cho thời điểm này suốt 25 năm. Đọc cùng nhau, hai câu nói cho thấy sự chuẩn bị là thật còn kết quả thì mới một phần. Bà cũng lập luận rằng các định chế lâu đời đã thích nghi thành công hơn mức họ thường thừa nhận. Nhận định này cần được tiếp nhận thận trọng, vì đó là quan điểm bà đưa ra chứ không phải kết quả đã được đo lường. Nhưng nó khớp với điểm số. Một ngành có thể thích nghi tốt hơn mức nó thừa nhận mà vẫn mang trên vai gánh nặng tai hại của những ngoại lệ chưa bao giờ được loại bỏ.
+
+## Chuyện một lần trở thành quy tắc như thế nào
+
+Phần hữu ích nhất trong lập luận của Tiến sĩ Glyptis là cách bà mô tả điều xảy ra khi một chính sách hay quy trình chặn một sáng kiến. Bà nêu ba lựa chọn thực tế. Không làm sáng kiến đó. Thay đổi quy trình trước. Hoặc dùng một cách lách một lần, chấp nhận rủi ro, hay một ngoại lệ được lãnh đạo cấp cao bảo trợ.
+
+Lựa chọn thứ nhất hiếm khi hấp dẫn, vì ai đó muốn có sáng kiến ấy vì một lý do. Lựa chọn thứ hai mới thực sự giảm được sự phức tạp, vì nó sửa chính rào cản. Bà nói bà hiếm khi thấy điều đó xảy ra. Lựa chọn thứ ba là chuyện thường.
+
+Cơ chế diễn ra sau đó mới là nơi thiệt hại tích tụ. Đôi khi các tổ chức quay lại sửa quy trình. Thường xuyên hơn, ngoại lệ bị lãng quên. Nó mặc nhiên trở thành tiền lệ, và khi cùng một rào cản xuất hiện lại, một ngoại lệ khác lại được cấp.
+
+Hãy đi chậm qua trình tự này, vì đó là động cơ của toàn bộ vấn đề. Một ngoại lệ được cấp vì một lý do chính đáng, dưới áp lực thời gian, bởi một người đủ thâm niên để ký. Không ai lên lịch sửa chữa. Đội tiếp theo gặp cùng trở ngại, phát hiện đội đầu tiên đã vượt qua và viện dẫn trường hợp trước. Cách lách đã trở thành một lộ trình. Vì mỗi ngoại lệ, xét riêng, đều hợp lý, nên chưa ai từng quyết định xây dựng một hệ thống vận hành dựa trên ngoại lệ.
+
+Đó là điều bà muốn nói về sự phức tạp tích tụ của hàng chục năm ngoại lệ. Cụm từ này chỉ một thứ cụ thể: kho các quyết định chưa được giải quyết, mỗi quyết định được đưa ra để công việc tiếp tục chạy. Nó cũng giải thích vì sao điểm yếu của dịch vụ tài chính là sự tích tụ ngoại lệ. Ngành không thiếu cách để hoàn thành công việc. Điều ngành thiếu là cách để thôi hoàn thành công việc theo cùng một kiểu vụng về.
+
+Hệ quả thực tế đối với một nhà lãnh đạo thật khó chịu. Cấp ngoại lệ có cảm giác như sự quyết đoán. Theo cách mô tả này, quyết đoán mà không có bước tiếp theo để sửa quy trình chính là cách sự phức tạp nhân lên. Phép thử dành cho một người bảo trợ không phải là họ có thể dẹp một rào cản một lần hay không, mà là lần sau rào cản ấy có còn ở đó không.
+
+## Chiếc tai nghe 180 USD
+
+Tiến sĩ Glyptis làm cho luận điểm trở nên cụ thể bằng một câu chuyện nhỏ. Ở một vị trí trước đây với tư cách senior director, bà có thể ký các hợp đồng trị giá khoảng 50.000 USD. Một yêu cầu mua tai nghe, có giá 180 USD mỗi cuộc họp, được một giám đốc điều hành phê duyệt trong khoảng 24 giờ.
+
+Hai mươi bốn giờ nghe có vẻ nhanh, và xét riêng thì đúng là nhanh. Vấn đề nằm ở những gì mà quy trình xoay quanh yêu cầu ấy có lẽ đã tiêu tốn. Nhận định của bà, được nói ra với sự dè dặt cần thiết, là quy trình phê duyệt có lẽ đã khiến ngân hàng tốn kém hơn nhiều so với chiếc tai nghe. Phép tính giữa một món đồ 180 USD và thời gian của những người đã xử lý yêu cầu ấy không có lợi cho bà, và chưa bao giờ có lợi cho ai.
+
+Vấn đề mang tính cấu trúc nằm ở cách cơ chế trình lên cấp trên vận hành. Trong chuỗi truyền thống, mỗi cấp đều mất ngữ cảnh. Một yêu cầu hoàn toàn hợp lý ở nơi khởi phát đến được cấp cao nhất dưới dạng bản tóm tắt của bản tóm tắt. Mỗi người ở giữa hoặc phải tìm hiểu lại tình hình, hoặc chuyển lên trên mà không xem xét. Việc thống nhất trong một quy trình như vậy có thể mất hàng tháng.
+
+Hãy đặt hai con số cạnh nhau: khoảng 24 giờ cho chiếc tai nghe, và hàng tháng để thống nhất qua cơ chế trình lên truyền thống. Chúng không đo cùng một thứ, nhưng gộp lại cho thấy một biên độ. Một yêu cầu nhỏ, rõ ràng, đến đúng người có thể được xử lý trong một ngày. Một vấn đề phải đi qua nhiều cấp, mỗi cấp lại tước đi một phần ngữ cảnh, có thể bị đình trệ hàng tháng.
+
+Và thói quen ấy chưa biến mất. Các tổ chức vẫn đòi phê duyệt cấp cao cho những khoản chi nhỏ. Đây không phải câu chuyện về một ngân hàng ở nơi làm việc cũ. Đó là một giới hạn hiện tại, và nó nuôi dưỡng vấn đề ngoại lệ nêu trên. Khi những quyết định thông thường phải leo qua cả một chuỗi, người ta tìm đường ngoại lệ, vì chuỗi thì tốn kém còn ngoại lệ thì nhanh. Di sản không chỉ là công nghệ cũ. Nó còn sống trong những quy tắc về việc ai được quyết định điều gì.
+
+## Hai mươi dự án thí điểm, tất cả đều khẩn cấp
+
+Nếu ngoại lệ là căn bệnh, thì ưu tiên hóa là nơi triệu chứng xuất hiện trước tiên. Tiến sĩ Glyptis cho biết nhiều tổ chức bà làm việc cùng có khoảng 20 dự án thí điểm, tất cả đều được coi là quan trọng như nhau. Bà gọi đó là ưu tiên hóa không đầy đủ.
+
+Logic này dễ theo dõi. Nếu mọi thứ đều quan trọng như nhau thì không có gì được xếp hạng, và thứ hạng được quyết định ngầm bởi bất kỳ ai la to, ký tên hoặc trình lên cấp trên. Đó chính xác là con đường để ngoại lệ sinh sôi. Hai mươi ưu tiên ngang nhau bảo đảm rằng rào cản sẽ xuất hiện ở nhiều nơi cùng lúc, và sẽ có người được yêu cầu cho qua vài cái trong số đó.
+
+Bà định khung ưu tiên hóa là vấn đề mà giờ đây đã trở thành vấn đề của lãnh đạo, vì các chương trình thay đổi hiếm khi được thiết kế để có thể lặp lại. Đây là một nhận định thận trọng và đáng được đọc kỹ. Nó không nói rằng các nhà lãnh đạo đang thất bại trong một nhiệm vụ được giao. Nó nói rằng nhiệm vụ đã thay đổi. Khi một chương trình thay đổi chỉ diễn ra một lần, bạn có thể xoay xở với một trật tự công việc lỏng lẻo. Khi thay đổi diễn ra liên tục, việc sắp xếp thứ tự phải là điều mà lãnh đạo làm đi làm lại, và các chương trình không được xây dựng cho việc đó.
+
+Với các nhà sáng lập và độc giả kỹ thuật, đây là phần dễ áp dụng nhất. Một danh mục gồm 20 dự án thí điểm trông như năng lượng. Theo cách mô tả này, nó thường cho thấy chưa ai đưa ra lựa chọn. Quyết định nói không với mười chín trong số đó là một hành động lãnh đạo, và không thể giao cho một văn phòng dự án không có thẩm quyền từ chối.
+
+## AI đến theo lịch trình riêng của nó
+
+Mọi điều nói trên càng trở nên sắc nét hơn với AI, vì AI thay đổi nhịp độ mà không thay đổi những thói quen nền tảng. Tiến sĩ Glyptis nói AI có thể giúp tăng tốc công việc nhưng không cung cấp mọi câu trả lời. Đó là một bộ tăng tốc hữu ích. Nó không thay thế cho việc quyết định cái gì cần sửa.
+
+Bà đặc biệt thẳng thắn về một cách tiếp cận. Ý tưởng đơn giản là "chĩa AI" vào các vấn đề, bà gọi là một ý tưởng tồi tệ. Lý do xuất phát từ những luận điểm trước đó của bà: một tổ chức có các vấn đề bao gồm những ngoại lệ chưa bao giờ được loại bỏ, dữ liệu bị chia cắt và quyền sở hữu không rõ ràng sẽ không thấy chúng được giải quyết chỉ bằng cách chĩa một công cụ mới vào. Công cụ thừa hưởng mớ hỗn độn ấy.
+
+Bà cũng mô tả cách các tổ chức đánh giá sai sự mới mẻ. Họ thường hành xử như thể một công nghệ là mới với thế giới chỉ vì nó mới với họ. Và họ có thể cho rằng công nghệ sẽ ngừng tiến hóa khi họ đã sẵn sàng tham gia. Nó sẽ không ngừng.
+
+Câu chuyện của bà về năm 2024 cho thấy cả hai mặt. Làn sóng hoạt động AI năm đó mang lại sự sáng tạo và trao quyền. Nó cũng mang lại những bất ngờ. Một số công ty bất ngờ khi phát hiện các nhà cung cấp đã 10 năm tuổi. Những công ty khác bất ngờ vì bản thân AI đã có tuổi đời hàng chục năm và vẫn đang tiến hóa. Sự bất ngờ liên quan đến nhận thức của các công ty chứ không phải tuổi của công nghệ.
+
+Có một điểm tương đồng trong câu chuyện bà kể về năm 2009. Khi đó, một CEO hỏi bà liệu ông có cần tìm hiểu về Bitcoin trước khi nghỉ hưu không. Câu hỏi ấy mặc định rằng một quyết định công nghệ có thể được hoãn lại đến sau nhiệm kỳ của chính mình. Nhận xét của bà bây giờ thì ngược lại: các quyết định công nghệ hôm nay thường sẽ ngã ngũ ngay trong nhiệm kỳ của người ra quyết định hiện tại. Đường chân trời nghỉ hưu không còn che chở được ai nữa.
+
+Môi trường quanh những quyết định ấy cũng chưa ổn định. AI tiến nhanh hơn nhiều tiêu chuẩn, cơ chế kiểm soát và hiểu biết chung. Lãnh đạo không thể cho rằng các quyết định công nghệ sẽ đến cùng một khung pháp lý đã ổn định hay một công nghệ đã hoàn thiện. Chờ cả hai là một kế hoạch mà tín hiệu khởi động không bao giờ đến.
+
+## Điềm tĩnh, chứ không chậm chạp
+
+Trước tình hình đó, phương thuốc của bà có hai mặt. Điều các tổ chức cần là sự điềm tĩnh, không phải hoảng loạn. Lời khuyên của bà là hãy an toàn, chừng mực và thận trọng, nhưng không chậm chạp.
+
+Dễ đọc điều này như một sự thỏa hiệp, nhưng nó hiệu quả hơn khi được xem là một ràng buộc đối với cả hai kiểu thất bại. Hoảng loạn sinh ra 20 dự án thí điểm ngang nhau và những ngoại lệ đã được ký duyệt. Chậm chạp sinh ra giả định rằng công nghệ sẽ chờ đợi. Bà bác bỏ cả hai. Tư thế bà mô tả là tư thế mà nhịp độ ổn định, cơ chế kiểm soát hiện diện, và công việc vẫn tiến lên.
+
+Đây cũng là chỗ nhận định rằng ngành đã chuẩn bị suốt 25 năm trở nên quan trọng. Trong cách kể của bà, sự chuẩn bị không phải là lý do để thả lỏng. Đó là lý do khiến sự điềm tĩnh trở nên khả thi: ngành đã trải qua một phần tư thế kỷ làm công việc này và đã học được điều gì đó, dù điểm số chỉ là B trừ.
+
+## Những nền móng nhàm chán
+
+Tiến sĩ Glyptis không kết thúc bằng một tầm nhìn. Bà nêu tên những nền móng mà theo lời bà là nhàm chán nhưng thiết yếu, và đầu tiên là một chiến lược tiến hóa. Lý do rất đơn giản: không có thành phần công nghệ hay đối tác nào tồn tại mãi mãi. Một chiến lược mặc định sự trường tồn là chiến lược cho lần bất ngờ tiếp theo.
+
+Thứ hai là dữ liệu tốt. Chất lượng dữ liệu, quyền sở hữu dữ liệu và các cấu trúc bị chia cắt vẫn là những vấn đề di sản chưa được giải quyết. Điều này khớp trực tiếp với nhận định của bà rằng di sản không chỉ là công nghệ cũ. Quyền sở hữu không rõ ràng đối với một tập dữ liệu là di sản. Một quy tắc gửi khoản mua sắm nhỏ đến người phê duyệt cấp cao cũng vậy. Cả hai đều không xuất hiện trong danh mục tài sản của các hệ thống cũ.
+
+Phần thứ ba trong lập luận của bà liên quan đến hình dạng của thế giới mà những nền móng này phải gánh đỡ. Thế giới đang trở thành thời gian thực, và các tổ chức phải xây dựng sự vững chắc cho thực tế đó. Bà nói thêm rằng vững chắc và linh hoạt không còn là sự đánh đổi. Trong nhiều năm, phương án chắc chắn và phương án linh hoạt bị coi là đối thủ, và trong một định chế chịu quản lý, phương án chắc chắn thường thắng. Luận điểm của bà là không cần phải chọn nữa, vì một thế giới thời gian thực đòi hỏi cả hai cùng lúc.
+
+Thêm một nhận xét nữa cho thấy có chuyển động. Các doanh nghiệp dịch vụ tài chính, đặc biệt là các công ty bảo hiểm, ngày càng đưa đối tác vào những cuộc trao đổi cởi mở hơn về kế hoạch và cách tiếp cận của họ. Điều này phù hợp với logic của chiến lược tiến hóa, vì một đối tác sẽ không tồn tại mãi thì dễ được tính vào kế hoạch hơn khi họ biết điều gì sắp đến. Điều đó không chứng minh rằng các ngoại lệ đang giảm đi, và không có gì trong nguồn nói như vậy. Nhưng đó là dấu hiệu cho thấy các doanh nghiệp sẵn lòng nói thẳng về vấn đề.
+
+<figure>
+<img src="https://cloudcdn.pro/stocks/images/oracle-financial-services-summit-panel-2026.webp" alt="Năm diễn giả ngồi trên sân khấu Oracle Financial Services Summit, Tiến sĩ Leda Glyptis ở vị trí thứ hai từ trái sang, màn hình ghi tên người điều phối, Mark Dunleavy của Oracle" width="1200" height="675" loading="lazy" decoding="async" />
+<figcaption>Tiến sĩ Glyptis (thứ hai từ trái sang) trên sân khấu cùng phiên thảo luận của hội nghị về sự phụ thuộc và phức tạp do KPMG tài trợ, điều phối bởi Mark Dunleavy, SVP, Financial Services Industry tại Oracle.</figcaption>
+</figure>
+
+## Cần gì để loại bỏ một ngoại lệ
+
+Quay lại con số nổi bật nhất: hai lần tắt trong 25 năm. Nếu tỷ lệ đó dù chỉ phần nào mang tính phổ biến, thách thức của ngành không phải là xây dựng năng lực tiếp theo, mà là quyết định năng lực tiếp theo sẽ thay thế cái gì. Mọi lập luận khác ở đây đều phụ thuộc vào điều đó. Ngoại lệ chỉ có thể được trả dứt nếu có người nhận trách nhiệm sửa chữa, và các lớp chỉ có thể giảm bớt nếu có người sẵn sàng tắt một lớp.
+
+Câu hỏi mở mà lập luận để lại mang tính thực tế. Một nhà lãnh đạo chấp nhận rằng hiện đại hóa không bao giờ kết thúc vẫn phải quyết định đóng ngoại lệ nào trước, và dừng dự án thí điểm nào trong số 20. Tiến sĩ Glyptis đưa ra khung tư duy, điểm số và ba lựa chọn, nhưng bà không khẳng định đã đo lường được lựa chọn thứ hai, tức là thay đổi quy trình trước, có thể thay thế lựa chọn thứ ba thường xuyên đến mức nào. Bà hiếm khi thấy điều đó. Liệu điều này có thay đổi trong một thập kỷ được AI tăng tốc, khi các quyết định ngã ngũ ngay trong một nhiệm kỳ, mới là điều đáng theo dõi.
 
 ---
 
-## Frequently Asked Questions
+## Câu hỏi thường gặp
 
-**What is the modernisation paradox Dr. Glyptis described?**
-Organisations make modernisation decisions to reduce risk and improve future competitiveness, but the same decisions also alter risk profiles and can make operations more complex. Modernisation was meant to simplify and has often made life more complicated, because organisations could not foresee how complex the external environment would become.
+**Nghịch lý hiện đại hóa mà Tiến sĩ Glyptis mô tả là gì?**
+Các tổ chức đưa ra quyết định hiện đại hóa để giảm rủi ro và nâng cao năng lực cạnh tranh trong tương lai, nhưng chính những quyết định đó cũng thay đổi hồ sơ rủi ro và có thể khiến hoạt động phức tạp hơn. Hiện đại hóa lẽ ra phải làm mọi thứ đơn giản hơn nhưng thường khiến cuộc sống phức tạp hơn, vì các tổ chức không thể lường trước môi trường bên ngoài sẽ trở nên phức tạp đến mức nào.
 
-**Why does she say modernisation is not an end state?**
-Projects may finish, but organisations do not become permanently "modern". Teams have spent 20 to 25 years on this work, yet the number of challenges keeps growing, and new capabilities are layered onto older ones rather than replacing them. She said she has switched something off only twice in 25 years.
+**Vì sao bà nói hiện đại hóa không phải là trạng thái cuối cùng?**
+Dự án có thể kết thúc, nhưng tổ chức không trở nên "hiện đại" vĩnh viễn. Các đội ngũ đã dành 20 đến 25 năm cho công việc này, vậy mà số lượng thách thức vẫn tăng, và năng lực mới được xếp chồng lên năng lực cũ thay vì thay thế chúng. Bà cho biết trong 25 năm bà mới chỉ tắt một thứ gì đó hai lần.
 
-**How do exceptions turn into the operating model?**
-When a policy or process blocks an initiative, there are three choices: do not do the initiative, change the process first, or use a one-time workaround, risk acceptance or senior-sponsored exception. She has rarely seen the second happen; the third is common. The exception is usually forgotten and becomes a precedent by default.
+**Ngoại lệ trở thành mô hình vận hành như thế nào?**
+Khi một chính sách hay quy trình chặn một sáng kiến, có ba lựa chọn: không làm sáng kiến đó, thay đổi quy trình trước, hoặc dùng một cách lách một lần, chấp nhận rủi ro hay một ngoại lệ được lãnh đạo cấp cao bảo trợ. Bà hiếm khi thấy lựa chọn thứ hai xảy ra; lựa chọn thứ ba là chuyện thường. Ngoại lệ thường bị lãng quên và mặc nhiên trở thành tiền lệ.
 
-**What did she advise leaders to do about AI?**
-To be safe, measured and cautious, but not slow. She called simply "pointing AI" at problems a terrible idea, said organisations need calm rather than panic, and warned that leaders cannot assume a settled regulatory framework or a finished technology.
+**Bà khuyên các nhà lãnh đạo điều gì về AI?**
+Hãy an toàn, chừng mực và thận trọng, nhưng không chậm chạp. Bà gọi việc đơn giản là "chĩa AI" vào các vấn đề là một ý tưởng tồi tệ, nói rằng các tổ chức cần sự điềm tĩnh thay vì hoảng loạn, và cảnh báo rằng lãnh đạo không thể mặc định có một khung pháp lý đã ổn định hay một công nghệ đã hoàn thiện.
 
-**Which foundations did she call boring and essential?**
-An evolution strategy, because no technology component or partner lasts forever; tools and operating capability that can support the pace of change; partners that match the organisation's pace; good data, since quality, ownership and silos remain unresolved legacy issues; and repeatable processes that stop sending minor spending to senior approval.
+**Những nền móng nào bà gọi là nhàm chán nhưng thiết yếu?**
+Một chiến lược tiến hóa, vì không có thành phần công nghệ hay đối tác nào tồn tại mãi mãi; công cụ và năng lực vận hành đủ sức theo kịp nhịp độ thay đổi; đối tác phù hợp với nhịp độ của tổ chức; dữ liệu tốt, vì chất lượng, quyền sở hữu và tình trạng chia cắt vẫn là những vấn đề di sản chưa được giải quyết; và các quy trình có thể lặp lại, thôi đưa những khoản chi nhỏ lên phê duyệt cấp cao.
 
 ---
 
-## References
+## Tài liệu tham khảo
 
-- Glyptis, L., (2026). The Modernisation Paradox in Financial Services. Keynote at the Oracle Financial Services Summit, London, 20 October 2026. [Oracle Financial Services ⧉](https://www.oracle.com/uk/financial-services/ "Oracle Financial Services, United Kingdom"). Oracle.
+- Glyptis, L., (2026). The Modernisation Paradox in Financial Services. Bài phát biểu chính tại Oracle Financial Services Summit, London, ngày 20 tháng 10 năm 2026. [Oracle Financial Services ⧉](https://www.oracle.com/uk/financial-services/ "Oracle Financial Services, Vương quốc Anh"). Oracle.
 - Glyptis, L., (2023). [Bankers Like Us: Dispatches from an Industry in Transition ⧉](https://www.routledge.com/Bankers-Like-Us-Dispatches-from-an-Industry-in-Transition/Glyptis/p/book/9781032202037 "Bankers Like Us, Routledge"). Routledge.
-- Glyptis, L., (2026). [#LedaWrites column archive ⧉](https://www.11fs.com/tags/leda-writes "#LedaWrites by Leda Glyptis"). 11:FS.
+- Glyptis, L., (2026). [Lưu trữ chuyên mục #LedaWrites ⧉](https://www.11fs.com/tags/leda-writes "#LedaWrites của Leda Glyptis"). 11:FS.

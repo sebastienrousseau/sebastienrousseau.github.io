@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Dr. Leda Glyptis speaking on stage in front of the Oracle backdrop at the Oracle Financial Services Summit in London, October 2026"
+banner_alt: "Si Dr. Leda Glyptis sa entablado sa harap ng backdrop ng Oracle sa Oracle Financial Services Summit sa London, Oktubre 2026"
 banner_height: "571"
 banner_width: "1425"
 banner: "https://cloudcdn.pro/stocks/images/leda-glyptis-oracle-financial-services-summit-2026.webp"
@@ -10,20 +10,20 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 24, 2026"
-description: "Hosting the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that modernisation is not an end state and that financial-services leaders must address the complexity left by decades of exceptions. She gave the industry a B minus for 25 years and advised leaders on AI to be safe, measured and cautious, but not slow."
+description: "Sa London, sinabi ni Dr. Leda Glyptis na walang katapusan ang modernisasyon: ayusin ang mga eksepsiyon at harapin ang AI nang maingat, pero hindi mabagal."
 format-detection: "telephone=no"
 hreflang: "fil"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/fil/2026-10-24-modernisation-never-finishes-and-the-exceptions"
-image_alt: "Black and White Portrait of Sebastien Rousseau"
+image_alt: "Itim at puting larawan ni Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
-keywords: "Leda Glyptis, modernisation paradox, Oracle Financial Services Summit, financial services modernisation, legacy systems, exceptions, technical debt, prioritisation, AI adoption, banking transformation, operational resilience"
+keywords: "Leda Glyptis, paradoks ng modernisasyon, Oracle Financial Services Summit, modernisasyon ng financial services, legacy systems, mga eksepsiyon, technical debt, prioritisation, AI adoption, banking transformation, operational resilience"
 language: "fil"
 layout: "report"
 locale: "fil_PH"
-logo_alt: "Logo for Sebastien Rousseau"
+logo_alt: "Logo ni Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -37,22 +37,22 @@ revisit-after: "7 days"
 robots: "index, follow"
 schema: "FAQPage, Article"
 short_name: "sebastienrousseau"
-subtitle: "Financial services has spent 20 to 25 years treating modernisation as a project with an end date. Opening the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that the industry's weaker record is the buildup of exceptions, and that AI will arrive on top of that buildup rather than replace it."
-tags: "AI, ai-governance, banking, technology-strategy, operational-resilience, third-party-risk, innovation, Modernisation, Legacy Systems, Financial Services, Leadership, Oracle Financial Services Summit"
+subtitle: "Sa loob ng 20 hanggang 25 taon, itinuring ng financial services ang modernisasyon bilang proyektong may petsa ng pagtatapos. Sa pagbubukas ng Oracle Financial Services Summit sa London, iginiit ni Dr. Leda Glyptis na ang kahinaan ng industriya ay ang pag-iipon ng mga eksepsiyon, at darating ang AI sa ibabaw ng ipong iyon sa halip na palitan ito."
+tags: "AI, AI governance, banking, technology strategy, operational resilience, third-party risk, inobasyon, modernisasyon, legacy systems, financial services, pamumuno, Oracle Financial Services Summit"
 topic_clusters: "applied-ai-banking, ai-governance-regulation"
 theme-color: "0, 67, 165"
-title: "Modernisation Never Finishes, and the Exceptions Are What Pile Up"
+title: "Hindi natatapos ang modernisasyon, ang naiipon ay ang mga eksepsiyon"
 url: "https://sebastienrousseau.com/fil/2026-10-24-modernisation-never-finishes-and-the-exceptions"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-10-24-modernisation-never-finishes-exceptions-pile-up/rss.xml"
 category: "Finance"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "Hosting the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that financial services must stop treating modernisation as a finite programme and start retiring the exceptions it has piled up for decades."
+item_description: "Sa Oracle Financial Services Summit sa London, hinimok ni Dr. Leda Glyptis ang financial services na itigil ang pagturing sa modernisasyon bilang may-hangganang programa at simulang alisin ang mga eksepsiyong naipon sa loob ng maraming dekada."
 item_guid: "https://sebastienrousseau.com/2026-10-24-modernisation-never-finishes-exceptions-pile-up/rss.xml"
 item_link: "https://sebastienrousseau.com/2026-10-24-modernisation-never-finishes-exceptions-pile-up/rss.xml"
 item_pub_date: "Sat, 24 Oct 2026 10:30:00 +0000"
-item_title: "Modernisation Never Finishes, and the Exceptions Are What Pile Up"
+item_title: "Hindi natatapos ang modernisasyon, ang naiipon ay ang mga eksepsiyon"
 last_build_date: "Sat, 24 Oct 2026 10:30:00 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Sat, 24 Oct 2026 10:30:00 +0000"
@@ -64,199 +64,195 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "The Modernisation Paradox"
+apple-mobile-web-app-title: "Ang paradoks ng modernisasyon"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "Hosting the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that financial services must stop treating modernisation as a finite programme and start retiring the exceptions it has piled up for decades."
+twitter_description: "Sa Oracle Financial Services Summit sa London, hinimok ni Dr. Leda Glyptis ang financial services na itigil ang pagturing sa modernisasyon bilang may-hangganang programa at simulang alisin ang mga eksepsiyong naipon sa loob ng maraming dekada."
 twitter_image: "https://cloudcdn.pro/stocks/images/leda-glyptis-oracle-financial-services-summit-2026.webp"
-twitter_image_alt: "Dr. Leda Glyptis on stage at the Oracle Financial Services Summit in London"
+twitter_image_alt: "Si Dr. Leda Glyptis sa entablado ng Oracle Financial Services Summit sa London"
 twitter_site: "@wwdseb"
-twitter_title: "Modernisation Never Finishes, and the Exceptions Are What Pile Up"
+twitter_title: "Hindi natatapos ang modernisasyon, ang naiipon ay ang mga eksepsiyon"
 twitter_url: "https://sebastienrousseau.com/2026-10-24-modernisation-never-finishes-exceptions-pile-up"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
-thanks: "Thanks for reading!"
+thanks: "Salamat sa pagbabasa!"
 site_last_updated: "2026-10-24"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-excerpt: "Financial services has spent 20 to 25 years treating modernisation as a project with an end date. Opening the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that the industry's weaker record is..."
+excerpt: "Sa loob ng 20 hanggang 25 taon, itinuring ng financial services ang modernisasyon bilang proyektong may petsa ng pagtatapos. Sa pagbubukas ng Oracle Financial Services Summit sa London, iginiit ni Dr. Leda Glyptis na ang kahinaan ng industriya ay..."
 last_reviewed: "2026-10-24"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Hindi natatapos ang modernisasyon, ang naiipon ay ang mga eksepsiyon
 
-> _Translation pending — read the [English original](/2026-10-24-modernisation-never-finishes-exceptions-pile-up/) while we localise._
-
-# Modernisation Never Finishes, and the Exceptions Are What Pile Up
-
-**Financial services has spent 20 to 25 years treating modernisation as a project with an end date. Opening the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that the industry's weaker record is the buildup of exceptions, and that AI will arrive on top of that buildup rather than replace it.**
+**Sa loob ng 20 hanggang 25 taon, itinuring ng financial services ang modernisasyon bilang proyektong may petsa ng pagtatapos. Sa pagbubukas ng Oracle Financial Services Summit sa London, iginiit ni Dr. Leda Glyptis na ang kahinaan ng industriya ay ang pag-iipon ng mga eksepsiyon, at darating ang AI sa ibabaw ng ipong iyon sa halip na palitan ito.**
 
 <!-- lead-start: manual -->
 <aside class="post-lead" aria-label="Buod ng artikulo">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Hosting the Oracle Financial Services Summit in London, Dr. Glyptis argued that modernisation is not an end state and that financial-services leaders must address the complexity left by decades of exceptions. She gave the industry a B minus for 25 years. Her advice on AI is to be safe, measured and cautious, but not slow.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<p class="post-lead-tldr"><strong>Sa madaling salita.</strong> Bilang host ng Oracle Financial Services Summit sa London, iginiit ni Dr. Leda Glyptis na ang modernisasyon ay hindi isang huling estado at na kailangang harapin ng mga lider sa financial services ang komplikasyong iniwan ng ilang dekadang eksepsiyon. Binigyan niya ang industriya ng markang B minus para sa 25 taon. Ang payo niya tungkol sa AI: maging ligtas, mahinahon at maingat, pero huwag mabagal.</p>
+<p class="post-lead-heading"><strong>Mahahalagang punto</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Modernisation has no finish line.</strong> Projects end, but organisations don't become permanently "modern", and challenges keep growing after 20 to 25 years of effort.</li>
-  <li><strong>Exceptions harden into precedent.</strong> A one-time workaround is common, the fix to the process is rare, and the forgotten exception becomes a precedent by default.</li>
-  <li><strong>Prioritisation is a leadership problem.</strong> Many organisations she works with run about 20 pilot projects, all treated as equally important.</li>
-  <li><strong>AI needs calm and pace together.</strong> It is moving faster than many standards, controls and shared understandings, and pointing it at problems is, in her words, a terrible idea.</li>
+  <li><strong>Walang finish line ang modernisasyon.</strong> Natatapos ang mga proyekto, pero hindi nagiging "moderno" ang mga organisasyon magpakailanman, at patuloy na dumarami ang mga hamon kahit pagkatapos ng 20 hanggang 25 taon ng pagsisikap.</li>
+  <li><strong>Tumitigas ang mga eksepsiyon at nagiging precedent.</strong> Karaniwan ang isang beses na workaround, bihira ang pag-aayos ng proseso, at ang nakalimutang eksepsiyon ay awtomatikong nagiging precedent.</li>
+  <li><strong>Problema ng pamumuno ang pagpili ng prayoridad.</strong> Maraming organisasyong katrabaho niya ang nagpapatakbo ng humigit-kumulang 20 pilot project, at lahat ay itinuturing na pantay ang halaga.</li>
+  <li><strong>Kailangan ng AI ang hinahon at bilis nang sabay.</strong> Mas mabilis itong kumikilos kaysa sa maraming standard, kontrol at pinagkasunduang pag-unawa, at ang basta itutok ito sa mga problema ay, ayon sa kaniya, isang napakasamang ideya.</li>
 </ul>
 </aside>
 <!-- lead-end -->
 
-> **Executive Summary**
+> **Buod para sa Pamunuan**
 >
-> - Modernisation decisions reduce risk and improve future competitiveness, yet the same decisions alter risk profiles and can make operations more complex.
-> - New capabilities are layered onto older ones rather than replacing them, a pattern Dr. Glyptis says has held since 1950. She has switched something off only twice in 25 years.
-> - When a policy blocks an initiative, the one-time exception is common, changing the process first is rarely seen, and the exception turns into precedent.
-> - A $180-per-meeting headset request shows how approval chains lose context at each layer. The approval process likely cost the bank far more than the headset.
-> - AI can accelerate the work but does not supply all the answers. Leaders should expect neither a settled regulatory framework nor a finished technology.
-> - The foundations are boring and essential: an evolution strategy, good data, and a way to be both sturdy and agile in a real-time world.
+> - Binabawasan ng mga desisyon sa modernisasyon ang panganib at pinapabuti ang kakayahang makipagkumpitensya sa hinaharap, pero ang parehong mga desisyon ay nagbabago sa risk profile at maaaring gawing mas komplikado ang operasyon.
+> - Ipinapatong ang mga bagong kakayahan sa mga luma sa halip na palitan ang mga ito, isang padron na ayon kay Dr. Glyptis ay umiiral na mula pa noong 1950. Sa loob ng 25 taon, dalawang beses pa lamang siyang nag-switch off ng isang bagay.
+> - Kapag hinarangan ng isang patakaran ang isang inisyatiba, karaniwan ang isang beses na eksepsiyon, bihirang makita ang pagbabago muna ng proseso, at nagiging precedent ang eksepsiyon.
+> - Ipinapakita ng isang kahilingan para sa headset na nagkakahalaga ng 180 dolyar bawat meeting kung paano nawawalan ng konteksto ang mga approval chain sa bawat antas. Malamang na mas malaki ang ginastos ng bangko sa proseso ng pag-apruba kaysa sa mismong headset.
+> - Kayang pabilisin ng AI ang trabaho, pero hindi nito ibinibigay ang lahat ng sagot. Hindi dapat umasa ang mga lider sa isang matatag nang regulatory framework o sa isang tapos nang teknolohiya.
+> - Nakababagot pero mahalaga ang mga pundasyon: isang evolution strategy, mahusay na data, at paraan para maging matatag at maliksi nang sabay sa isang real-time na mundo.
 
-Most technology programmes in financial services begin with a promise that this time the complexity will go down. Dr. Glyptis's argument is that the promise has been made for a generation and that it has mostly gone unkept. Teams have spent 20 to 25 years on this work, yet the number of challenges keeps growing. If effort alone fixed the problem, it would have shrunk by now.
+Karamihan sa mga programa ng teknolohiya sa financial services ay nagsisimula sa pangakong bababa na ang komplikasyon ngayong pagkakataon. Ang argumento ni Dr. Glyptis ay ibinibigay na ang pangakong ito sa loob ng isang henerasyon at karamihan ay hindi natupad. Gumugol na ang mga team ng 20 hanggang 25 taon sa gawaing ito, pero patuloy pa ring dumarami ang mga hamon. Kung pagsisikap lamang ang lulutas sa problema, dapat ay lumiit na ito ngayon.
 
-Dr. Glyptis hosted the Oracle Financial Services Summit in London on 20 October 2026 and opened its session on AI, business modernisation, resilience and trust. As host, she set out three connected priorities that, she said, come up consistently in Oracle's customer conversations: bringing AI into core operations with measurable business impact, modernising while keeping pace with rapid technology change, and preserving resilience and trust. Oracle's role was described as providing the secure, scalable systems that underpin customers' businesses. She thanked Accenture and KPMG for their partnership with Oracle globally and in the UK and Ireland, and explained that the day was built around questions, speakers, panels, breakout rooms and direct conversations with Oracle staff. Her own keynote, though, was less a product pitch than a diagnosis.
-
-<figure>
-<img src="https://cloudcdn.pro/stocks/images/oracle-financial-services-summit-london-2026.webp" alt="Oracle Financial Services Summit signage above the venue bar, with the Oracle logo and the sponsors Accenture and KPMG" width="1920" height="1080" loading="lazy" decoding="async" />
-<figcaption>The Oracle Financial Services Summit, London, 20 October 2026, sponsored by Accenture and KPMG.</figcaption>
-</figure>
-
-Her central instruction was blunt. Financial-services leaders must stop treating modernisation as a finite programme and address the accumulated complexity created by decades of exceptions. The rest of her argument follows from that sentence, and this article does too.
+Si Dr. Leda Glyptis ang naging host ng Oracle Financial Services Summit sa London noong 20 Oktubre 2026 at binuksan niya ang session nito tungkol sa AI, modernisasyon ng negosyo, resilience at tiwala. Bilang host, inilatag niya ang tatlong magkakaugnay na prayoridad na, ayon sa kaniya, palaging lumilitaw sa mga pag-uusap ng Oracle sa mga customer nito: ang pagdadala ng AI sa core operations na may nasusukat na epekto sa negosyo, ang pagmo-modernize habang sumasabay sa mabilis na pagbabago ng teknolohiya, at ang pagpapanatili ng resilience at tiwala. Inilarawan ang papel ng Oracle bilang tagapagbigay ng ligtas at scalable na mga sistemang sumusuporta sa negosyo ng mga customer. Pinasalamatan niya ang Accenture at KPMG sa kanilang pakikipagtulungan sa Oracle sa buong mundo at sa UK at Ireland, at ipinaliwanag na binuo ang araw sa paligid ng mga tanong, tagapagsalita, panel, breakout room at direktang pakikipag-usap sa mga tauhan ng Oracle. Gayunman, ang sarili niyang keynote ay higit na isang diyagnosis kaysa product pitch.
 
 <figure>
-<img src="https://cloudcdn.pro/stocks/images/leda-glyptis-modernisation-paradox-keynote-slide-2026.webp" alt="Title slide reading The Modernisation Paradox, Leda Glyptis PhD, over an illustration of a human head drawn as a glowing network" width="1920" height="1248" loading="lazy" decoding="async" />
-<figcaption>Dr. Glyptis's keynote title slide.</figcaption>
+<img src="https://cloudcdn.pro/stocks/images/oracle-financial-services-summit-london-2026.webp" alt="Karatula ng Oracle Financial Services Summit sa itaas ng bar ng venue, na may logo ng Oracle at ng mga sponsor na Accenture at KPMG" width="1920" height="1080" loading="lazy" decoding="async" />
+<figcaption>Ang Oracle Financial Services Summit, London, 20 Oktubre 2026, sa sponsorship ng Accenture at KPMG.</figcaption>
 </figure>
 
-## A finish line that keeps moving
-
-The usual story of modernisation has a before and an after. A platform is replaced, a migration completes, a steering committee closes the programme. Dr. Glyptis rejects the "after". Modernisation, she says, is not an end state. Projects may finish, but organisations do not become permanently "modern".
-
-That sounds like semantics until you consider what organisations are actually doing when they decide to modernise. They act to reduce risk and to improve their future competitiveness. Those are sensible aims. But the same decisions also alter risk profiles and can make operations more complex. The move that lowers one risk can introduce another, and the new arrangement has to be run, funded and explained to someone.
-
-The pattern is a trap in the literal sense. A leader who believes the programme will end plans for the end. A leader who accepts it won't plans for continuity, and that changes budgets, governance and the way success is measured. The first leader keeps being surprised. The second might at least be prepared.
-
-There is also a plain explanation for why simplification has so often failed to arrive. Modernisation was meant to simplify but has often made life more complicated, because organisations could not foresee how complex the external environment would become. That isn't an accusation of poor engineering. The plans were reasonable, and the environment outran them.
-
-## A B minus and two switch-offs
-
-Dr. Glyptis gave the industry a B minus for the past 25 years. It's a useful grade because it refuses both comfort and despair. A B minus is not a fail. It also isn't what anyone would hope for after a quarter of a century of sustained effort.
-
-She added a figure that makes the grade easier to understand: she has switched something off only twice in 25 years. Consider what that implies for a working architecture. If systems, processes and controls are almost never retired, then every new thing adds to the total. Nothing leaves.
-
-This links directly to her claim that new capabilities are layered onto older ones rather than replacing them, and that this pattern has been in place since 1950. The industry's habit isn't a recent failing of the cloud era or the app era. By her account it is older than most of the people now trying to manage it.
-
-Layering has its own logic. Adding is safer than removing, and removing needs someone to own the consequences. But the cost is cumulative. Each layer must coexist with the ones beneath it, and each carries its own assumptions about data, access and approval. After seventy-odd years, the interactions among them are the real subject of modernisation work.
-
-The B minus sits oddly beside another statement of hers: the industry has been preparing for this moment for 25 years. Read together, the two lines say that the preparation was real and the results were partial. She also argued that established institutions have adapted more successfully than they often acknowledge. That claim should be held with care, since it's a view she argued rather than a measured result. But it fits the grade. An industry can adapt better than it admits and still carry a damaging backlog of unretired exceptions.
-
-## How a one-off becomes the rule
-
-The most useful part of Dr. Glyptis's argument is her account of what happens when a policy or process blocks an initiative. She described three practical choices. Do not do the initiative. Change the process first. Or use a one-time workaround, risk acceptance, or senior-sponsored exception.
-
-The first option is rarely attractive, because someone wanted the initiative for a reason. The second is the one that would actually reduce complexity, because it fixes the barrier itself. She said she has rarely seen it happen. The third is common.
-
-The mechanism after that is where the damage accrues. Organisations sometimes return to fix the process. More often the exception is forgotten. It becomes a precedent by default, and when the same barrier appears again, another exception is made.
-
-Walk through that sequence slowly, because it's the engine of the whole problem. An exception is granted for a legitimate reason, under time pressure, by someone senior enough to sign it. Nobody schedules the repair. The next team meets the same obstacle, finds that the first team got through, and cites the earlier case. The workaround has become a route. Because each exception was individually reasonable, no one ever decided to build a system that runs on them.
-
-This is what she means by the accumulated complexity of decades of exceptions. The phrase carries a specific thing: the stock of unresolved decisions that were each made to keep work moving. It also explains why financial services' weaker record is the buildup of exceptions. The industry is not short of ways to get things done. It is short of ways to stop getting them done the same awkward way.
-
-The practical consequence for a leader is uncomfortable. Granting the exception feels like decisiveness. Under this account, decisiveness without a follow-up to fix the process is how complexity compounds. The test of a sponsor isn't whether they can clear a barrier once, but whether the barrier is still there the next time.
-
-## The $180 headset
-
-Dr. Glyptis made the point concrete with a small story. In an earlier role as a senior director, she could sign contracts worth about $50,000. A request for a headset, which cost $180 per meeting, was approved by an executive in about 24 hours.
-
-Twenty-four hours sounds fast, and in isolation it is. The point lies in what the process surrounding the request probably consumed. Her view, stated with appropriate hedging, was that the approval process likely cost the bank far more than the headset. The arithmetic of a $180 item set against the time of the people who touched the request is not in her favour, and it never is in anyone's.
-
-The structural problem is in how escalation works. In the traditional chain, each layer loses context. A request that made obvious sense where it started arrives at the top as a summary of a summary. Each person in between must either re-learn the situation or pass it up unexamined. Alignment in that process can take months.
-
-Set the two numbers side by side: about 24 hours for the headset, and months for alignment through a traditional escalation. They aren't measuring the same thing, but together they show a spread. A small, clear request with the right person can move in a day. A matter that has to travel through layers, each stripping context as it goes, can stall for months.
-
-And the habit has not gone away. Organisations still require senior approval for minor spending. That isn't a story about one bank from a former job. It is a current limitation, and it feeds the exception problem above. When ordinary decisions must climb a chain, people look for the exception route, because the chain is expensive and the exception is quick. Legacy is not just old technology. It also lives in the rules about who may decide what.
-
-## Twenty pilots, all of them urgent
-
-If exceptions are the disease, prioritisation is where the symptoms show first. Dr. Glyptis said many organisations she works with have about 20 pilot projects, all treated as equally important. She called that insufficient prioritisation.
-
-The logic is easy to follow. If everything is equally important, nothing is ranked, and the ranking is made implicitly by whoever shouts, signs or escalates. That is precisely the route by which the exception thrives. Twenty equal priorities guarantee that barriers will appear in several places at once, and that someone will be asked to wave a few of them through.
-
-She framed prioritisation as now a leadership problem, because change programmes were rarely designed to be repeatable. This is a careful claim and worth reading closely. It doesn't say leaders are failing at a task they were handed. It says the task changed. When a change programme is a one-off, you can survive with a loose ordering of work. When change is continuous, the ordering has to be something leaders do again and again, and the programmes weren't built for that.
-
-For founders and technical readers, this is the part that translates most easily. A portfolio of 20 pilots reads like energy. By this account, it more often signals that nobody has yet chosen. The decision to say no to nineteen of them is a leadership act, and it can't be delegated to a project office that has no authority to refuse.
-
-## AI arrives on a fixed timetable of its own
-
-Everything above gets sharper with AI, because AI changes the pace without changing the underlying habits. Dr. Glyptis said AI can help accelerate the work but does not supply all the answers. It is a useful accelerator. It isn't a substitute for deciding what to fix.
-
-She was especially direct on one approach. The idea of simply "pointing AI" at problems she called a terrible idea. The reasoning follows from her earlier points: an organisation whose problems include unretired exceptions, siloed data and unclear ownership will not find those resolved by aiming a new tool at them. The tool inherits the mess.
-
-She also described how organisations misjudge novelty. They often behave as though a technology is new to the world simply because it is new to them. And they may assume the technology will stop evolving once they are ready to engage. It will not.
-
-Her account of 2024 shows both sides of this. The surge of AI activity that year brought creativity and empowerment. It also brought surprises. Some firms were surprised to find that vendors were already 10 years old. Others were surprised that AI itself was decades old and still evolving. The surprise was about the firms' awareness rather than the technology's age.
-
-There is a parallel in a story she told about 2009. A CEO asked her then whether he needed to learn about Bitcoin before retiring. The question assumed that a technology decision could be deferred past one's own tenure. Her observation now is the opposite: today's technology decisions will often play out during the current decision maker's tenure. The retirement horizon no longer protects anyone.
-
-The environment around those decisions is unsettled, too. AI is moving faster than many standards, controls and shared understandings. Leaders cannot assume technology decisions will arrive with a settled regulatory framework or a finished technology. Waiting for both is a plan that never reaches its trigger.
-
-## Calm, and not slow
-
-Faced with that, her prescription is two-sided. What organisations need is calm, not panic. Her advice was to be safe, measured and cautious, but not slow.
-
-It would be easy to read this as a compromise, but it works better as a constraint on both failure modes. Panic produces the 20 equal pilots and the signed-off exceptions. Slowness produces the assumption that the technology will wait. She rejects each. The posture she describes is one where the pace is steady, the controls are present, and the work still moves.
-
-That is also where the claim that the industry has been preparing for 25 years matters. Preparation, in her telling, is not a reason to relax. It is the reason calm is available: the sector has done a quarter-century of this work, and has learned something from it, even if the grade was a B minus.
-
-## The boring foundations
-
-Dr. Glyptis did not end on a vision. She named foundations that are, in her words, boring and essential, and the first is an evolution strategy. The reason is simple: no technology component or partner lasts forever. A strategy that assumes permanence is a strategy for the next surprise.
-
-The second is good data. Data quality, ownership and siloed structures remain unresolved legacy issues. This sits right alongside her statement that legacy is not just old technology. Unclear ownership of a dataset is legacy. So is a rule that sends a minor purchase to a senior approver. Neither shows up on an asset register of old systems.
-
-The third part of her case concerns the shape of the world these foundations must carry. The world is becoming real-time, and organisations must build robustness for that reality. She added that robustness and agility are no longer a trade-off. For years, the sturdy option and the agile option were treated as rivals, and the sturdy one usually won inside a regulated institution. Her claim is that the choice no longer has to be made, because a real-time world demands both at once.
-
-One more observation points to movement. Financial-services firms, particularly insurers, are increasingly bringing partners into more open conversations about their plans and approaches. That fits the logic of an evolution strategy, since a partner that won't last forever is easier to plan around when it knows what is coming. It doesn't prove the exceptions are shrinking, and nothing in the source says it does. But it is a sign that firms are willing to talk about the problem openly.
+Diretso ang pangunahing tagubilin niya. Kailangang itigil ng mga lider sa financial services ang pagturing sa modernisasyon bilang may-hangganang programa at harapin ang naipong komplikasyong nilikha ng ilang dekadang eksepsiyon. Ang natitira sa kaniyang argumento ay nagmumula sa pangungusap na iyon, at gayundin ang artikulong ito.
 
 <figure>
-<img src="https://cloudcdn.pro/stocks/images/oracle-financial-services-summit-panel-2026.webp" alt="Five panellists seated on stage at the Oracle Financial Services Summit, with Dr. Leda Glyptis second from left and a screen naming the moderator, Mark Dunleavy of Oracle" width="1200" height="675" loading="lazy" decoding="async" />
-<figcaption>Dr. Glyptis (second from left) on stage with the summit's KPMG-sponsored panel on dependency and complexity, moderated by Mark Dunleavy, SVP, Financial Services Industry at Oracle.</figcaption>
+<img src="https://cloudcdn.pro/stocks/images/leda-glyptis-modernisation-paradox-keynote-slide-2026.webp" alt="Title slide na may nakasulat na The Modernisation Paradox, Leda Glyptis PhD, sa ibabaw ng ilustrasyon ng ulo ng tao na iginuhit bilang kumikinang na network" width="1920" height="1248" loading="lazy" decoding="async" />
+<figcaption>Ang title slide ng keynote ni Dr. Glyptis.</figcaption>
 </figure>
 
-## What retiring an exception would take
+## Isang finish line na patuloy na gumagalaw
 
-Return to the number that stands out most: two switch-offs in 25 years. If that rate is anything like typical, the industry's challenge is not building the next capability but deciding what the next capability will replace. Every other argument here depends on that. Exceptions can only be repaid if someone owns the repair, and layers can only be reduced if someone is willing to switch one off.
+May bago at may pagkatapos ang karaniwang kuwento ng modernisasyon. Napapalitan ang isang platform, natatapos ang isang migration, isinasara ng steering committee ang programa. Tinatanggihan ni Dr. Glyptis ang "pagkatapos" na iyon. Ang modernisasyon, sabi niya, ay hindi isang huling estado. Maaaring matapos ang mga proyekto, pero hindi nagiging "moderno" ang mga organisasyon magpakailanman.
 
-The open question the argument leaves is a practical one. A leader who accepts that modernisation never finishes still has to decide which single exception to close first, and which of 20 pilots to stop. Dr. Glyptis offers the framing, the grade and the three choices, but she doesn't claim to have measured how often the second choice, changing the process first, could replace the third. She has rarely seen it. Whether that changes in an AI-accelerated decade, when decisions play out within a single tenure, is the thing worth watching.
+Parang laro lamang ng salita ito hanggang tingnan natin kung ano talaga ang ginagawa ng mga organisasyon kapag nagpasya silang mag-modernize. Kumikilos sila para bawasan ang panganib at pagbutihin ang kanilang kakayahang makipagkumpitensya sa hinaharap. Makatwirang layunin iyon. Pero ang parehong mga desisyon ay nagbabago rin sa risk profile at maaaring gawing mas komplikado ang operasyon. Ang hakbang na nagpapababa sa isang panganib ay maaaring magdala ng iba, at ang bagong kaayusan ay kailangang patakbuhin, pondohan at ipaliwanag sa isang tao.
+
+Literal na bitag ang padron na ito. Ang lider na naniniwalang matatapos ang programa ay nagpaplano para sa katapusan. Ang lider na tumatanggap na hindi ito matatapos ay nagpaplano para sa pagpapatuloy, at binabago nito ang mga badyet, ang governance at ang paraan ng pagsukat sa tagumpay. Ang una ay paulit-ulit na nagugulat. Ang ikalawa ay maaaring maging handa man lang.
+
+May simpleng paliwanag din kung bakit madalas hindi dumating ang pagpapasimple. Ang modernisasyon ay dapat magpasimple, pero madalas nitong ginawang mas komplikado ang buhay, dahil hindi mahulaan ng mga organisasyon kung gaano kakomplikado ang magiging panlabas na kapaligiran. Hindi ito paratang ng mahinang engineering. Makatwiran ang mga plano, at nalampasan sila ng kapaligiran.
+
+## Isang B minus at dalawang switch-off
+
+Binigyan ni Dr. Glyptis ang industriya ng B minus para sa nakaraang 25 taon. Kapaki-pakinabang ang markang ito dahil tinatanggihan nito kapwa ang ginhawa at ang kawalan ng pag-asa. Hindi bagsak ang B minus. Pero hindi rin ito ang aasahan ng sinuman pagkatapos ng isang-kapat na siglo ng tuloy-tuloy na pagsisikap.
+
+Nagdagdag siya ng isang numero na nagpapadali sa pag-unawa sa marka: sa loob ng 25 taon, dalawang beses pa lamang siyang nag-switch off ng isang bagay. Isipin kung ano ang ibig sabihin nito para sa isang gumaganang arkitektura. Kung halos hindi kailanman nireretiro ang mga sistema, proseso at kontrol, bawat bagong bagay ay nadaragdag sa kabuuan. Walang lumalabas.
+
+Direktang nakaugnay ito sa kaniyang pahayag na ipinapatong ang mga bagong kakayahan sa mga luma sa halip na palitan ang mga ito, at na umiiral na ang padron na ito mula pa noong 1950. Hindi bagong pagkukulang ng panahon ng cloud o ng panahon ng app ang gawing ito ng industriya. Ayon sa kaniya, mas matanda pa ito kaysa sa karamihan ng mga taong sumusubok na pamahalaan ito ngayon.
+
+May sariling lohika ang pagpapatong-patong. Mas ligtas ang magdagdag kaysa mag-alis, at ang pag-aalis ay nangangailangan na may umako sa mga kahihinatnan. Pero naiipon ang gastos. Kailangang mabuhay nang sabay ang bawat layer kasama ang mga nasa ilalim nito, at bawat isa ay may dalang sariling mga palagay tungkol sa data, access at pag-apruba. Pagkatapos ng mahigit pitumpung taon, ang ugnayan ng mga layer na ito ang tunay na paksa ng gawain ng modernisasyon.
+
+Kakaiba ang pagtabi ng B minus sa isa pa niyang pahayag: naghahanda na ang industriya para sa sandaling ito sa loob ng 25 taon. Kapag binasa nang magkasama, sinasabi ng dalawang pangungusap na totoo ang paghahanda at bahagya lamang ang resulta. Iginiit din niya na mas matagumpay na nakaangkop ang mga matatag na institusyon kaysa sa madalas nilang inaamin. Dapat itong tanggapin nang maingat, dahil pananaw itong kaniyang inilahad at hindi nasukat na resulta. Pero tugma ito sa marka. Maaaring mas mahusay umangkop ang isang industriya kaysa sa inaamin nito, at patuloy pa ring pasanin ang mapaminsalang tambak ng mga eksepsiyong hindi kailanman inalis.
+
+## Paano nagiging tuntunin ang isang beses
+
+Ang pinakakapaki-pakinabang na bahagi ng argumento ni Dr. Glyptis ay ang kaniyang paglalarawan sa nangyayari kapag hinarangan ng isang patakaran o proseso ang isang inisyatiba. Inilarawan niya ang tatlong praktikal na pagpipilian. Huwag gawin ang inisyatiba. Baguhin muna ang proseso. O gumamit ng isang beses na workaround, risk acceptance, o eksepsiyong sinusuportahan ng senior management.
+
+Bihirang maging kaakit-akit ang unang pagpipilian, dahil may taong gustong gawin ang inisyatiba sa isang dahilan. Ang ikalawa ang talagang magbabawas ng komplikasyon, dahil inaayos nito ang mismong hadlang. Sinabi niyang bihira niyang makitang nangyayari ito. Karaniwan ang ikatlo.
+
+Sa mekanismong sumusunod naiipon ang pinsala. Minsan bumabalik ang mga organisasyon para ayusin ang proseso. Mas madalas, nakakalimutan ang eksepsiyon. Awtomatiko itong nagiging precedent, at kapag lumitaw ulit ang parehong hadlang, isa pang eksepsiyon ang ibinibigay.
+
+Dahan-dahang sundan ang pagkakasunod-sunod na ito, dahil ito ang makina ng buong problema. Ibinibigay ang isang eksepsiyon sa lehitimong dahilan, sa ilalim ng presyon ng oras, ng isang taong sapat ang pagkasenior para pumirma rito. Walang nag-iiskedyul ng pag-aayos. Nakatagpo ang susunod na team ng parehong hadlang, nalaman na nakalusot ang unang team, at binanggit ang naunang kaso. Naging ruta na ang workaround. Dahil makatwiran ang bawat eksepsiyon kapag tiningnan nang hiwalay, walang sinumang nagpasyang bumuo ng sistemang tumatakbo sa mga eksepsiyon.
+
+Ito ang ibig niyang sabihin sa naipong komplikasyon ng ilang dekadang eksepsiyon. Tumutukoy ang pariralang ito sa isang tiyak na bagay: ang imbentaryo ng mga hindi pa nalulutas na desisyon, na bawat isa ay ginawa para magpatuloy ang trabaho. Ipinapaliwanag din nito kung bakit ang kahinaan ng financial services ay ang pag-iipon ng mga eksepsiyon. Hindi kulang ang industriya sa paraan para matapos ang mga bagay. Ang kulang ay ang paraan para itigil ang pagtapos sa mga ito sa parehong alanganing paraan.
+
+Hindi komportable ang praktikal na kahihinatnan para sa isang lider. Pakiramdam ng pagbibigay ng eksepsiyon ay parang pagiging desidido. Ayon sa paglalarawang ito, ang pagiging desidido nang walang follow-up para ayusin ang proseso ang mismong paraan kung paano dumarami ang komplikasyon. Ang pagsubok sa isang sponsor ay hindi kung kaya niyang alisin ang isang hadlang nang isang beses, kundi kung nariyan pa rin ang hadlang sa susunod.
+
+## Ang 180-dolyar na headset
+
+Ginawang kongkreto ni Dr. Glyptis ang punto sa pamamagitan ng isang maikling kuwento. Sa dati niyang papel bilang senior director, kaya niyang pumirma ng mga kontratang nagkakahalaga ng humigit-kumulang 50,000 dolyar. Ang isang kahilingan para sa headset, na nagkakahalaga ng 180 dolyar bawat meeting, ay inaprubahan ng isang executive sa loob ng humigit-kumulang 24 na oras.
+
+Mabilis pakinggan ang dalawampu't apat na oras, at kung titingnan nang hiwalay, mabilis nga ito. Ang punto ay nasa malamang na naubos ng prosesong nakapaligid sa kahilingan. Ang pananaw niya, na sinabi nang may angkop na pag-iingat, ay malamang na mas malaki ang ginastos ng bangko sa proseso ng pag-apruba kaysa sa headset. Ang kuwenta ng isang 180-dolyar na bagay laban sa oras ng mga taong humawak sa kahilingan ay hindi pumapabor sa kaniya, at hindi kailanman pumapabor sa sinuman.
+
+Ang problemang istruktural ay nasa kung paano gumagana ang escalation. Sa tradisyonal na chain, bawat antas ay nawawalan ng konteksto. Ang kahilingang malinaw na makatwiran sa pinagmulan nito ay dumarating sa itaas bilang buod ng isang buod. Bawat tao sa gitna ay kailangang pag-aralan muli ang sitwasyon o ipasa ito pataas nang hindi sinusuri. Maaaring tumagal nang ilang buwan ang pagkakasundo sa ganitong proseso.
+
+Pagtabihin ang dalawang numero: humigit-kumulang 24 na oras para sa headset, at ilang buwan para sa pagkakasundo sa pamamagitan ng tradisyonal na escalation. Hindi nila sinusukat ang iisang bagay, pero magkasama nilang ipinapakita ang lawak ng agwat. Ang maliit at malinaw na kahilingan sa tamang tao ay maaaring umusad sa loob ng isang araw. Ang usaping kailangang dumaan sa maraming antas, na bawat isa ay nag-aalis ng kaunting konteksto, ay maaaring maipit nang ilang buwan.
+
+At hindi pa nawawala ang gawing ito. Hinihingi pa rin ng mga organisasyon ang senior approval para sa maliliit na gastos. Hindi ito kuwento ng iisang bangko mula sa dating trabaho. Kasalukuyang limitasyon ito, at pinapalala nito ang problema ng eksepsiyon na nabanggit sa itaas. Kapag kailangang umakyat sa isang chain ang mga karaniwang desisyon, hinahanap ng mga tao ang daan ng eksepsiyon, dahil magastos ang chain at mabilis ang eksepsiyon. Hindi lamang lumang teknolohiya ang legacy. Nabubuhay rin ito sa mga tuntunin kung sino ang maaaring magpasya sa ano.
+
+## Dalawampung pilot, lahat ay apurahan
+
+Kung ang mga eksepsiyon ang sakit, ang pagpili ng prayoridad ang lugar kung saan unang lumilitaw ang mga sintomas. Sinabi ni Dr. Glyptis na maraming organisasyong katrabaho niya ang may humigit-kumulang 20 pilot project, at lahat ay itinuturing na pantay ang halaga. Tinawag niya itong hindi sapat na pagpili ng prayoridad.
+
+Madaling sundan ang lohika. Kung pantay ang halaga ng lahat, walang nakaranggo, at ang ranggo ay tahimik na itinatakda ng sinumang sumisigaw, pumipirma o nag-e-escalate. Ito mismo ang daan kung saan yumayabong ang eksepsiyon. Ginagarantiya ng dalawampung pantay na prayoridad na lilitaw ang mga hadlang sa ilang lugar nang sabay, at may hihilingang palusutin ang ilan sa mga ito.
+
+Inilarawan niya ang pagpili ng prayoridad bilang ngayon ay problema na ng pamumuno, dahil bihirang idisenyo ang mga change program para maulit. Maingat na pahayag ito at dapat basahin nang mabuti. Hindi nito sinasabing nabibigo ang mga lider sa gawaing iniatang sa kanila. Sinasabi nitong nagbago ang gawain. Kapag isang beses lamang ang change program, kakayanin mo kahit maluwag ang pagkakasunod-sunod ng trabaho. Kapag tuloy-tuloy ang pagbabago, ang pagsasaayos ng pagkakasunod-sunod ay kailangang maging bagay na paulit-ulit na ginagawa ng mga lider, at hindi binuo ang mga programa para dito.
+
+Para sa mga founder at teknikal na mambabasa, ito ang bahaging pinakamadaling ilapat. Mukhang enerhiya ang isang portfolio ng 20 pilot. Ayon sa paglalarawang ito, mas madalas nitong ipinahihiwatig na wala pang pumipili. Ang desisyong tanggihan ang labinsiyam sa mga ito ay isang gawain ng pamumuno, at hindi ito maipapasa sa isang project office na walang kapangyarihang tumanggi.
+
+## Dumarating ang AI ayon sa sarili nitong iskedyul
+
+Lalong tumatalas ang lahat ng nasa itaas dahil sa AI, sapagkat binabago ng AI ang bilis nang hindi binabago ang mga nakaugaliang gawi. Sinabi ni Dr. Glyptis na makakatulong ang AI na pabilisin ang trabaho pero hindi nito ibinibigay ang lahat ng sagot. Kapaki-pakinabang itong accelerator. Hindi ito kapalit ng pagpapasya kung ano ang dapat ayusin.
+
+Lalo siyang diretso tungkol sa isang paraan. Ang ideya na basta "itutok ang AI" sa mga problema ay tinawag niyang napakasamang ideya. Nagmumula ang dahilan sa kaniyang mga naunang punto: ang organisasyong ang mga problema ay kinabibilangan ng mga eksepsiyong hindi kailanman inalis, data na hiwa-hiwalay, at hindi malinaw na pagmamay-ari ay hindi makikitang nalulutas ang mga ito sa pagtutok ng bagong tool sa kanila. Mamanahin ng tool ang gulo.
+
+Inilarawan din niya kung paano mali ang pagtantiya ng mga organisasyon sa pagiging bago. Madalas silang kumikilos na parang bago sa mundo ang isang teknolohiya dahil lamang bago ito sa kanila. At maaari nilang ipagpalagay na titigil ang ebolusyon ng teknolohiya kapag handa na silang makisangkot. Hindi ito titigil.
+
+Ipinapakita ng kaniyang salaysay tungkol sa 2024 ang dalawang panig nito. Ang pagdagsa ng aktibidad sa AI noong taong iyon ay nagdala ng pagkamalikhain at empowerment. Nagdala rin ito ng mga sorpresa. Nagulat ang ilang kompanya nang malamang 10 taon na ang mga vendor. Nagulat naman ang iba na ilang dekada na ang AI mismo at patuloy pa ring umuunlad. Ang sorpresa ay tungkol sa kamalayan ng mga kompanya, hindi sa edad ng teknolohiya.
+
+May katulad nito sa isang kuwentong ikinuwento niya tungkol sa 2009. Tinanong siya noon ng isang CEO kung kailangan ba niyang matuto tungkol sa Bitcoin bago siya magretiro. Ipinagpalagay ng tanong na maaaring ipagpaliban ang isang desisyon sa teknolohiya hanggang lampas sa sariling termino. Kabaligtaran ang obserbasyon niya ngayon: ang mga desisyon sa teknolohiya ngayon ay madalas na lalabas ang resulta habang nasa termino pa ang kasalukuyang gumagawa ng desisyon. Hindi na pinoprotektahan ng abot-tanaw ng pagreretiro ang sinuman.
+
+Hindi rin matatag ang kapaligiran sa paligid ng mga desisyong iyon. Mas mabilis kumilos ang AI kaysa sa maraming standard, kontrol at pinagkasunduang pag-unawa. Hindi maaaring ipagpalagay ng mga lider na darating ang mga desisyon sa teknolohiya kasama ang isang matatag na regulatory framework o tapos nang teknolohiya. Ang paghihintay sa pareho ay isang planong hindi kailanman aabot sa hudyat nito.
+
+## Mahinahon, at hindi mabagal
+
+Sa harap nito, may dalawang panig ang reseta niya. Ang kailangan ng mga organisasyon ay hinahon, hindi taranta. Ang payo niya ay maging ligtas, mahinahon at maingat, pero huwag mabagal.
+
+Madaling basahin ito bilang kompromiso, pero mas mahusay itong gumagana bilang limitasyon sa parehong paraan ng pagkabigo. Ang taranta ang lumilikha ng 20 pantay na pilot at ng mga pinirmahang eksepsiyon. Ang kabagalan ang lumilikha ng palagay na maghihintay ang teknolohiya. Tinatanggihan niya ang pareho. Ang tindig na inilalarawan niya ay isang tindig kung saan matatag ang bilis, naroroon ang mga kontrol, at umuusad pa rin ang trabaho.
+
+Dito rin nagkakaroon ng halaga ang pahayag na naghahanda na ang industriya sa loob ng 25 taon. Sa kaniyang salaysay, hindi dahilan para magpabaya ang paghahanda. Ito ang dahilan kung bakit posible ang hinahon: dumaan na ang sektor sa isang-kapat na siglo ng gawaing ito at may natutunan dito, kahit B minus ang marka.
+
+## Ang nakababagot na mga pundasyon
+
+Hindi nagtapos si Dr. Glyptis sa isang bisyon. Pinangalanan niya ang mga pundasyong, ayon sa kaniya, nakababagot pero mahalaga, at ang una ay isang evolution strategy. Simple ang dahilan: walang bahagi ng teknolohiya o partner na tumatagal magpakailanman. Ang estratehiyang nagpapalagay ng pagiging permanente ay estratehiya para sa susunod na sorpresa.
+
+Ang ikalawa ay mahusay na data. Ang kalidad ng data, ang pagmamay-ari nito at ang mga hiwa-hiwalay na istruktura ay nananatiling hindi pa nalulutas na mga isyu ng legacy. Direkta itong tumutugma sa kaniyang pahayag na hindi lamang lumang teknolohiya ang legacy. Ang hindi malinaw na pagmamay-ari ng isang dataset ay legacy. Gayundin ang tuntuning nagpapadala ng maliit na pagbili sa isang senior na tagapag-apruba. Wala sa dalawa ang lumilitaw sa asset register ng mga lumang sistema.
+
+Ang ikatlong bahagi ng kaniyang argumento ay tungkol sa hugis ng mundong kailangang pasanin ng mga pundasyong ito. Nagiging real-time ang mundo, at kailangang bumuo ng katatagan ang mga organisasyon para sa realidad na iyon. Idinagdag niya na hindi na trade-off ang katatagan at liksi. Sa loob ng maraming taon, itinuring na magkaribal ang matibay na opsyon at ang maliksing opsyon, at sa loob ng isang reguladong institusyon ay karaniwang nananalo ang matibay. Ang kaniyang tesis ay hindi na kailangang pumili, dahil hinihingi ng isang real-time na mundo ang pareho nang sabay.
+
+May isa pang obserbasyon na nagpapakita ng paggalaw. Ang mga kompanya sa financial services, lalo na ang mga insurer, ay lalong nagsasama ng mga partner sa mas bukas na pag-uusap tungkol sa kanilang mga plano at paraan. Tugma ito sa lohika ng isang evolution strategy, dahil mas madaling magplano kasama ang isang partner na hindi magtatagal magpakailanman kapag alam nito kung ano ang darating. Hindi nito napapatunayang lumiliit ang mga eksepsiyon, at walang anuman sa pinagmulan ang nagsasabi nito. Pero palatandaan ito na handa ang mga kompanya na pag-usapan nang bukas ang problema.
+
+<figure>
+<img src="https://cloudcdn.pro/stocks/images/oracle-financial-services-summit-panel-2026.webp" alt="Limang panelist na nakaupo sa entablado ng Oracle Financial Services Summit, si Dr. Leda Glyptis ang ikalawa mula sa kaliwa at may screen na nagpapakita ng pangalan ng moderator na si Mark Dunleavy ng Oracle" width="1200" height="675" loading="lazy" decoding="async" />
+<figcaption>Si Dr. Glyptis (ikalawa mula sa kaliwa) sa entablado kasama ang panel ng summit tungkol sa dependency at komplikasyon na sinuportahan ng KPMG, na pinangasiwaan ni Mark Dunleavy, SVP, Financial Services Industry sa Oracle.</figcaption>
+</figure>
+
+## Ano ang kakailanganin para alisin ang isang eksepsiyon
+
+Balikan natin ang numerong pinakanamumukod: dalawang switch-off sa loob ng 25 taon. Kung kahit paano ay karaniwan ang bilis na iyon, ang hamon ng industriya ay hindi ang pagbuo ng susunod na kakayahan, kundi ang pagpapasya kung ano ang papalitan ng susunod na kakayahan. Nakasalalay rito ang bawat iba pang argumento. Mababayaran lamang ang mga eksepsiyon kung may aako sa pag-aayos, at mababawasan lamang ang mga layer kung may handang mag-switch off ng isa.
+
+Praktikal ang bukas na tanong na iniiwan ng argumento. Ang lider na tumatanggap na hindi natatapos ang modernisasyon ay kailangan pa ring magpasya kung aling eksepsiyon ang unang isasara, at alin sa 20 pilot ang ititigil. Iniaalok ni Dr. Glyptis ang balangkas, ang marka at ang tatlong pagpipilian, pero hindi niya sinasabing nasukat niya kung gaano kadalas maaaring palitan ng ikalawang pagpipilian, ang pagbabago muna ng proseso, ang ikatlo. Bihira niya itong makita. Kung magbabago ito sa isang dekadang pinabilis ng AI, kapag lumalabas ang resulta ng mga desisyon sa loob ng iisang termino, iyon ang dapat abangan.
 
 ---
 
-## Frequently Asked Questions
+## Mga Madalas Itanong
 
-**What is the modernisation paradox Dr. Glyptis described?**
-Organisations make modernisation decisions to reduce risk and improve future competitiveness, but the same decisions also alter risk profiles and can make operations more complex. Modernisation was meant to simplify and has often made life more complicated, because organisations could not foresee how complex the external environment would become.
+**Ano ang paradoks ng modernisasyon na inilarawan ni Dr. Glyptis?**
+Gumagawa ang mga organisasyon ng mga desisyon sa modernisasyon para bawasan ang panganib at pagbutihin ang kakayahang makipagkumpitensya sa hinaharap, pero ang parehong mga desisyon ay nagbabago rin sa risk profile at maaaring gawing mas komplikado ang operasyon. Ang modernisasyon ay dapat magpasimple at madalas nitong ginawang mas komplikado ang buhay, dahil hindi mahulaan ng mga organisasyon kung gaano kakomplikado ang magiging panlabas na kapaligiran.
 
-**Why does she say modernisation is not an end state?**
-Projects may finish, but organisations do not become permanently "modern". Teams have spent 20 to 25 years on this work, yet the number of challenges keeps growing, and new capabilities are layered onto older ones rather than replacing them. She said she has switched something off only twice in 25 years.
+**Bakit niya sinasabing hindi huling estado ang modernisasyon?**
+Maaaring matapos ang mga proyekto, pero hindi nagiging "moderno" ang mga organisasyon magpakailanman. Gumugol na ang mga team ng 20 hanggang 25 taon sa gawaing ito, pero patuloy pa ring dumarami ang mga hamon, at ipinapatong ang mga bagong kakayahan sa mga luma sa halip na palitan ang mga ito. Sinabi niyang dalawang beses pa lamang siyang nag-switch off ng isang bagay sa loob ng 25 taon.
 
-**How do exceptions turn into the operating model?**
-When a policy or process blocks an initiative, there are three choices: do not do the initiative, change the process first, or use a one-time workaround, risk acceptance or senior-sponsored exception. She has rarely seen the second happen; the third is common. The exception is usually forgotten and becomes a precedent by default.
+**Paano nagiging operating model ang mga eksepsiyon?**
+Kapag hinarangan ng isang patakaran o proseso ang isang inisyatiba, may tatlong pagpipilian: huwag gawin ang inisyatiba, baguhin muna ang proseso, o gumamit ng isang beses na workaround, risk acceptance o eksepsiyong sinusuportahan ng senior management. Bihira niyang makitang nangyayari ang ikalawa; karaniwan ang ikatlo. Karaniwang nakakalimutan ang eksepsiyon at awtomatiko itong nagiging precedent.
 
-**What did she advise leaders to do about AI?**
-To be safe, measured and cautious, but not slow. She called simply "pointing AI" at problems a terrible idea, said organisations need calm rather than panic, and warned that leaders cannot assume a settled regulatory framework or a finished technology.
+**Ano ang ipinayo niya sa mga lider tungkol sa AI?**
+Maging ligtas, mahinahon at maingat, pero huwag mabagal. Tinawag niyang napakasamang ideya ang basta "itutok ang AI" sa mga problema, sinabing kailangan ng mga organisasyon ang hinahon sa halip na taranta, at nagbabala na hindi maaaring ipagpalagay ng mga lider ang isang matatag na regulatory framework o tapos nang teknolohiya.
 
-**Which foundations did she call boring and essential?**
-An evolution strategy, because no technology component or partner lasts forever; tools and operating capability that can support the pace of change; partners that match the organisation's pace; good data, since quality, ownership and silos remain unresolved legacy issues; and repeatable processes that stop sending minor spending to senior approval.
+**Aling mga pundasyon ang tinawag niyang nakababagot pero mahalaga?**
+Isang evolution strategy, dahil walang bahagi ng teknolohiya o partner na tumatagal magpakailanman; mga tool at operational capability na kayang sumabay sa bilis ng pagbabago; mga partner na tugma sa bilis ng organisasyon; mahusay na data, dahil ang kalidad, pagmamay-ari at mga silo ay nananatiling hindi pa nalulutas na mga isyu ng legacy; at mga prosesong maaaring ulitin na hindi na nagpapadala ng maliliit na gastos para sa senior approval.
 
 ---
 
-## References
+## Mga Sanggunian
 
-- Glyptis, L., (2026). The Modernisation Paradox in Financial Services. Keynote at the Oracle Financial Services Summit, London, 20 October 2026. [Oracle Financial Services ⧉](https://www.oracle.com/uk/financial-services/ "Oracle Financial Services, United Kingdom"). Oracle.
+- Glyptis, L., (2026). The Modernisation Paradox in Financial Services. Keynote sa Oracle Financial Services Summit, London, 20 Oktubre 2026. [Oracle Financial Services ⧉](https://www.oracle.com/uk/financial-services/ "Oracle Financial Services, United Kingdom"). Oracle.
 - Glyptis, L., (2023). [Bankers Like Us: Dispatches from an Industry in Transition ⧉](https://www.routledge.com/Bankers-Like-Us-Dispatches-from-an-Industry-in-Transition/Glyptis/p/book/9781032202037 "Bankers Like Us, Routledge"). Routledge.
-- Glyptis, L., (2026). [#LedaWrites column archive ⧉](https://www.11fs.com/tags/leda-writes "#LedaWrites by Leda Glyptis"). 11:FS.
+- Glyptis, L., (2026). [Archive ng column na #LedaWrites ⧉](https://www.11fs.com/tags/leda-writes "#LedaWrites ni Leda Glyptis"). 11:FS.
