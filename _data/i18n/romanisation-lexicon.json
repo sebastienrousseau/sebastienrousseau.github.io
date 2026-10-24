@@ -72,7 +72,15 @@
     "للشركات": "lilsharikat",
     "عصر": "asr",
     "الوكلاء": "alwukala",
-    "في": "fi"
+    "في": "fi",
+    "التحديث": "altahdith",
+    "لا": "la",
+    "ينتهي": "yantahi",
+    "أبداً": "abadan",
+    "والاستثناءات": "walistithnaat",
+    "هي": "hiya",
+    "ما": "ma",
+    "يتراكم": "yatarakam"
   },
   "he": {
     "הבנת": "havanat",
@@ -127,7 +135,15 @@
     "הבנקאות": "habankaut",
     "העסקית": "haiskit",
     "בעידן": "beidan",
-    "הסוכני": "hasokhni"
+    "הסוכני": "hasokhni",
+    "המודרניזציה": "hamodernizatsya",
+    "לעולם": "leolam",
+    "אינה": "eina",
+    "מסתיימת": "mistayemet",
+    "ומה": "uma",
+    "שמצטבר": "shemitstaber",
+    "הוא": "hu",
+    "החריגים": "hacharigim"
   },
   "bn": {
     "প্রমাণ": "praman",
@@ -169,7 +185,14 @@
     "สำหรับ": "samrap",
     "ธนาคาร": "thanakhan",
     "ในปี": "naipi",
-    "ของ": "khong"
+    "ของ": "khong",
+    "การปรับให้ทันสมัย": "kan prap hai thansamai",
+    "ไม่มีวันจบ": "mai mi wan chop",
+    "สิ่งที่": "sing thi",
+    "สะสม": "sasom",
+    "พอกพูน": "phokphun",
+    "คือ": "khue",
+    "ข้อยกเว้น": "khoyokwen"
   },
   "ja": {
     "銀行": "ginko",
@@ -182,20 +205,42 @@
     "地図": "chizu",
     "築く": "kizuku",
     "グローバル": "global",
-    "企業標準": "kigyo hyojun"
+    "企業標準": "kigyo hyojun",
+    "モダナイゼーション": "modernization",
+    "に": "ni",
+    "終わり": "owari",
+    "はなく": "wa naku",
+    "積み上がる": "tsumiagaru",
+    "のは": "no wa",
+    "例外": "reigai",
+    "です": "desu"
   },
   "zh-hans": {
     "读懂": "dudong",
     "银行": "yinhang",
     "新兴技术": "xinxing jishu",
     "风险": "fengxian",
-    "地平线": "dipingxian"
+    "地平线": "dipingxian",
+    "现代化": "xiandaihua",
+    "永无": "yongwu",
+    "终点": "zhongdian",
+    "不断": "buduan",
+    "累积": "leiji",
+    "的是": "de shi",
+    "例外": "liwai"
   },
   "zh-hant": {
     "讀懂": "dudong",
     "銀行": "yinhang",
     "新興技術": "xinxing jishu",
     "風險": "fengxian",
-    "地平線": "dipingxian"
+    "地平線": "dipingxian",
+    "現代化": "xiandaihua",
+    "永無": "yongwu",
+    "終點": "zhongdian",
+    "不斷": "buduan",
+    "累積": "leiji",
+    "的是": "de shi",
+    "例外": "liwai"
   }
 }
