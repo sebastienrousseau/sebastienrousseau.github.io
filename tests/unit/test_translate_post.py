@@ -196,6 +196,33 @@ def test_scaffold_one_localises_furniture_labels(fake_repo):
     assert 'aria-label="About the author"' not in body
 
 
+def test_rederive_slug_follows_the_translated_title(fake_repo):
+    """Stubs are named from the English title; once the title is
+    translated, test_slug_derivable requires the file, its URL fields and
+    slugs.json to follow the new title (it failed CI for 2026-10-24)."""
+    _seed_en(fake_repo)
+    tp.scaffold_one("2026-05-19-sample", _EN_SAMPLE, "fr", dry_run=False)
+    (stub,) = (fake_repo / "_posts" / "fr").glob("*.md")
+    old_url = f"https://sebastienrousseau.com/fr/{stub.stem}"
+    stub.write_text(
+        stub.read_text(encoding="utf-8").replace(
+            'title: "Sample headline"', 'title: "Titre de démonstration traduit"'
+        ),
+        encoding="utf-8",
+    )
+    status = tp.rederive_slug("2026-05-19-sample", "fr", dry_run=False)
+    want = "2026-05-19-" + tp.derive_slug("Titre de démonstration traduit", "fr", "2026")
+    assert "renamed" in status
+    assert not stub.exists()
+    moved = fake_repo / "_posts" / "fr" / f"{want}.md"
+    text = moved.read_text(encoding="utf-8")
+    assert old_url not in text
+    assert f'url: "https://sebastienrousseau.com/fr/{want}"' in text
+    data = json.loads((fake_repo / "_data" / "i18n" / "fr" / "slugs.json").read_text())
+    assert data["articles"]["2026-05-19-sample"] == want
+    assert "keep" in tp.rederive_slug("2026-05-19-sample", "fr", dry_run=False)
+
+
 def test_scaffold_one_dry_run_reports_without_writing(fake_repo):
     _seed_en(fake_repo)
     status = tp.scaffold_one(

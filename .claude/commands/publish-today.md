@@ -165,6 +165,16 @@ python3 scripts/editorial/translate_frontmatter.py --slug <slug>
 
 The script is idempotent — it only writes a field when the locale value is still byte-for-byte identical to the English source, so it never overwrites a good sub-agent translation. Run it unconditionally; a clean article produces zero writes in under a second.
 
+### 6c. Re-derive the locale slugs from the translated titles
+
+Step 5 names every stub from the English title. Once step 6 translates the titles, `tests/validation/test_slug_derivable.py` (run by `build.sh`) requires each locale filename to derive from its own title, so rename them:
+
+```bash
+python3 scripts/editorial/translate_post.py <slug> --rederive-slugs   # renames, rewrites url/permalink/id, updates slugs.json
+```
+
+A locale that prints `error: title derives no slug` (Japanese and Chinese titles without readings) needs its words added to `_data/i18n/romanisation-lexicon.json`; then run the command again.
+
 ### 7. Homepage card rotation
 
 Edit `_posts/index.md`: in the `<div class="newsroom-grid feat-latest-grid">` block, **prepend** a new `<article class="newsroom-card">` for today (mirror the structure of the cards already there) and **drop the bottom card** so there are still **6 visible**. The 6-card balance fills the 3-column grid cleanly across all 35 locales (`build_translations.py` rewrites per-locale at build time).

@@ -276,6 +276,46 @@ def scaffold_one(
     return f"  [{lang_code}] scaffolded: {rel_out}"
 
 
+def _slug_map(lang_code: str) -> tuple[Path, dict]:
+    path = I18N / lang_code / "slugs.json"
+    if not path.is_file():
+        return path, {}
+    return path, json.loads(path.read_text(encoding="utf-8"))
+
+
+def rederive_slug(en_slug: str, lang_code: str, *, dry_run: bool) -> str:
+    """Rename a locale post so its slug follows its *translated* title.
+
+    ``scaffold_one`` names the stub from the English title; translating
+    the title afterwards leaves a slug that no longer derives from it,
+    which ``tests/validation/test_slug_derivable.py`` rejects. This moves
+    the file, rewrites its own URL fields and updates ``slugs.json``.
+    """
+    map_path, data = _slug_map(lang_code)
+    current = data.get("articles", {}).get(en_slug)
+    path = POSTS / lang_code / f"{current}.md"
+    if not current or not path.is_file():
+        return f"  [{lang_code}] skip: no locale post mapped for {en_slug}"
+    text = path.read_text(encoding="utf-8")
+    date = en_slug[:10]
+    body = derive_slug(parse_frontmatter(text)[0].get("title", ""), lang_code, date[:4])
+    if not body:
+        return f"  [{lang_code}] error: title derives no slug; extend the romanisation lexicon"
+    target = f"{date}-{body}"
+    if target == current:
+        return f"  [{lang_code}] keep: {current}"
+    if dry_run:
+        return f"  [{lang_code}] would rename: {current} -> {target}"
+    base = f"https://sebastienrousseau.com/{lang_code}/"
+    path.with_name(f"{target}.md").write_text(
+        text.replace(base + current, base + target), encoding="utf-8"
+    )
+    path.unlink()
+    data["articles"][en_slug] = target
+    map_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return f"  [{lang_code}] renamed: {current} -> {target}"
+
+
 def find_stub_locales(en_slug: str) -> list[tuple[str, Path]]:
     """List ``(lang_code, path)`` for every locale where the file still
     carries the stub marker. Used by Claude-Code-driven translation
@@ -316,6 +356,23 @@ def find_stub_locales(en_slug: str) -> list[tuple[str, Path]]:
 # ---------------------------------------------------------------------------
 
 
+def _cmd_list_stubs(en_slug: str) -> int:
+    pending = find_stub_locales(en_slug)
+    if not pending:
+        print(f"all {len(active_non_en_locales())} locales translated for {en_slug}.")
+        return 0
+    print(f"{len(pending)} locale(s) still pending translation:")
+    for lang, path in pending:
+        print(f"  [{lang}] {path.relative_to(ROOT)}")
+    return 0
+
+
+def _cmd_rederive(en_slug: str, targets: list[str], *, dry_run: bool) -> int:
+    results = [rederive_slug(en_slug, lang, dry_run=dry_run) for lang in targets]
+    print("\n".join(results))
+    return 1 if any("] error:" in r for r in results) else 0
+
+
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     p.add_argument("slug", help="EN article slug under _posts/ (no .md suffix)")
@@ -325,6 +382,11 @@ def main() -> int:
         help="Restrict to these locale codes. Default: all active non-EN.",
     )
     p.add_argument("--dry-run", action="store_true", help="No writes.")
+    p.add_argument(
+        "--rederive-slugs",
+        action="store_true",
+        help="After translation: rename each locale post to the slug its translated title derives.",
+    )
     p.add_argument(
         "--list-stubs",
         action="store_true",
@@ -338,17 +400,13 @@ def main() -> int:
         return 1
 
     if args.list_stubs:
-        pending = find_stub_locales(args.slug)
-        if not pending:
-            print(f"all {len(active_non_en_locales())} locales translated for {args.slug}.")
-            return 0
-        print(f"{len(pending)} locale(s) still pending translation:")
-        for lang, path in pending:
-            print(f"  [{lang}] {path.relative_to(ROOT)}")
-        return 0
+        return _cmd_list_stubs(args.slug)
+
+    targets = args.langs or active_non_en_locales()
+    if args.rederive_slugs:
+        return _cmd_rederive(args.slug, targets, dry_run=args.dry_run)
 
     en_text = en_path.read_text(encoding="utf-8")
-    targets = args.langs or active_non_en_locales()
     print(f"scaffolding {args.slug} → {len(targets)} locale(s)")
     for lang in targets:
         print(scaffold_one(args.slug, en_text, lang, dry_run=args.dry_run))
