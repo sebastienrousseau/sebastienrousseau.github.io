@@ -10,15 +10,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-## [0.0.23] - Unreleased
+## [0.0.23] - 2026-10-24
+
+### Changed
+
+- **Shared postbuild names made public ([#503])**: `article_furniture.py` defined 19 module-level regexes and helpers that only other `postbuild_lib` modules use, all with a leading underscore. CodeQL's `py/unused-global-variable` reported each one and stayed quiet only through dismissed false positives, so any edit to one of their lines re-raised an alert (as with #286). They are now public names in the definitions and every import (`_csp_tag_re` becomes `CSP_TAG_RE`). No behaviour changes; CodeQL's query on `scripts/postbuild` goes from 19 findings to 0.
 
 ### Fixed
 
-- **Advisories in the Python locks**: `pip-audit` flagged packages in two hash-pinned locks, each fixed by moving only the affected package to its patched release (`uv pip compile -P`, the command `scripts/security/lock-deps.sh` runs). In `requirements-dev.lock` (CI tooling): `certifi` 2026.6.17 to 2026.10.23 (a revoked eMudhra root, GHSA-6q48-6c7w-9gw2), `filelock` 3.29.4 to 4.2.4 (three lock-file advisories) and `urllib3` 2.7.0 to 2.8.0 (three). In `fly/pdf-render/requirements.lock` (the PDF service): `pillow` 12.3.0 to 13.0.0 (37 decoder and parser advisories; 13.0.0 is the first fixed release), `brotli` 1.2.0 to 1.2.1 (two decoder out-of-bounds writes, CVE-2026-111497 and GHSA-9v8h-qqgm-4m35), `werkzeug` 3.1.8 to 3.1.9 (`safe_join`, GHSA-g6x2-hccm-hh4m), and the same `certifi` and `urllib3`. Both locks install with `--require-hashes` and audit clean; WeasyPrint 70 renders a PDF with an embedded image under Pillow 13.
+- **Advisories in the Python locks ([#503])**: `pip-audit` flagged packages in two hash-pinned locks, each fixed by moving only the affected package to its patched release (`uv pip compile -P`, the command `scripts/security/lock-deps.sh` runs). In `requirements-dev.lock` (CI tooling): `certifi` 2026.6.17 to 2026.10.23 (a revoked eMudhra root, GHSA-6q48-6c7w-9gw2), `filelock` 3.29.4 to 4.2.4 (three lock-file advisories) and `urllib3` 2.7.0 to 2.8.0 (three). In `fly/pdf-render/requirements.lock` (the PDF service): `pillow` 12.3.0 to 13.0.0 (37 decoder and parser advisories; 13.0.0 is the first fixed release), `brotli` 1.2.0 to 1.2.1 (two decoder out-of-bounds writes, CVE-2026-111497 and GHSA-9v8h-qqgm-4m35), `werkzeug` 3.1.8 to 3.1.9 (`safe_join`, GHSA-g6x2-hccm-hh4m), and the same `certifi` and `urllib3`. Both locks install with `--require-hashes` and audit clean; WeasyPrint 70 renders a PDF with an embedded image under Pillow 13.
 
 ---
 
-## [0.0.22] - Unreleased
+## [0.0.22] - 2026-10-24
 
 ### Changed
 
@@ -255,7 +259,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-[0.0.23]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.22...HEAD
+[0.0.23]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.22...v0.0.23
 [0.0.22]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.21...v0.0.22
 [0.0.21]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.21
 [0.0.20]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.20
@@ -282,6 +286,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 [#496]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/496
 [#497]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/497
 [#498]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/498
+[#503]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/503
 [#158]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/158
 [#159]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/159
 [#160]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/160
