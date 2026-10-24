@@ -2,12 +2,13 @@
 # SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
-"""Pick a banner image from the local CDN inventory and emit the
-CloudCDN transform URL.
+"""Pick a banner image from the local CDN inventory and emit its
+CloudCDN URL.
 
 Reads the inventory at
-``/Users/seb/Code/Public/CDN/cloudcdn.pro/stocks/images/`` (override
-with ``CDN_INVENTORY``), filters out images already used as banners
+the cloudcdn.pro checkout beside this one,
+``../../JavaScript/cloudcdn.pro/stocks/images/`` (override with
+``CDN_INVENTORY``), filters out images already used as banners
 in any ``_posts/`` markdown frontmatter so a fresh article doesn't
 re-use a banner, and returns one match.
 
@@ -18,8 +19,11 @@ Usage:
     python3 scripts/pick_banner.py --check NAME             # verify NAME exists
                                                               and is unused
 
-Output (success): a single line, the CDN transform URL — e.g.
-    https://cloudcdn.pro/api/transform?url=/stocks/images/NAME.webp&w=1200&format=webp&q=80
+Output (success): a single line, the image's CDN URL — e.g.
+    https://cloudcdn.pro/stocks/images/NAME.webp
+
+The transform endpoint closed on 2026-06-23. Banners link the file itself;
+postbuild adds the -320/-640/-1200/-1920 variants as a srcset.
 
 Exit codes: 0 ok, 1 no candidate, 2 usage error.
 """
@@ -40,9 +44,17 @@ from pathlib import Path
 
 from _core import ROOT, load_banner_affinity
 
-# Default inventory path — Sebastien's Mac. Override via CDN_INVENTORY env var
-# when running elsewhere (cloud routine, CI, contributor machines).
-DEFAULT_INVENTORY = Path("/Users/seb/Code/Public/CDN/cloudcdn.pro/stocks/images")
+# Default inventory: the cloudcdn.pro checkout beside this one
+# (Code/Public/JavaScript/ next to Code/Public/Web/). Override via the
+# CDN_INVENTORY env var when running elsewhere (cloud routine, CI,
+# contributor machines).
+DEFAULT_INVENTORY = (
+    Path(__file__).resolve().parents[2].parents[1] / "JavaScript/cloudcdn.pro/stocks/images"
+)
+
+# Responsive sizes the CDN serves beside each image (NAME-640.webp and so
+# on). They are sizes of another image, never a banner in their own right.
+_VARIANT_RE = re.compile(r"-(?:320|640|1200|1920)\.webp$", re.IGNORECASE)
 
 _BANNER_LINE_RE = re.compile(
     r'banner:\s*"https://cloudcdn\.pro/[^"]*?/([^/"]+\.webp)"',
@@ -58,7 +70,11 @@ _AFFINITY: dict[str, tuple[str, ...]] = load_banner_affinity()
 def collect_inventory(inv: Path) -> list[str]:
     if not inv.is_dir():
         return []
-    return sorted(p.name for p in inv.iterdir() if p.suffix.lower() == ".webp")
+    return sorted(
+        p.name
+        for p in inv.iterdir()
+        if p.suffix.lower() == ".webp" and not _VARIANT_RE.search(p.name)
+    )
 
 
 def collect_used_banners(posts_dir: Path) -> set[str]:
@@ -121,11 +137,9 @@ def _hint_biased_pick(candidates: list[str], hints: list[str], rng: random.Rando
     return rng.choice([n for s, n in scored if s == top_score])
 
 
-def transform_url(name: str, *, width: int = 1200, q: int = 80) -> str:
-    """Emit the CloudCDN transform URL for a stock image."""
-    return (
-        f"https://cloudcdn.pro/api/transform?url=/stocks/images/{name}&w={width}&format=webp&q={q}"
-    )
+def banner_url(name: str) -> str:
+    """The CloudCDN URL for a stock image, as a post's ``banner:`` holds it."""
+    return f"https://cloudcdn.pro/stocks/images/{name}"
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -143,8 +157,6 @@ def _build_parser() -> argparse.ArgumentParser:
     p.add_argument(
         "--check", default="", help="verify the named .webp exists in inventory + unused"
     )
-    p.add_argument("--width", type=int, default=1200)
-    p.add_argument("--quality", type=int, default=80)
     p.add_argument(
         "--inventory",
         type=Path,
@@ -156,7 +168,7 @@ def _build_parser() -> argparse.ArgumentParser:
     return p
 
 
-def _cmd_check(name: str, inv: list[str], used: set[str], args: argparse.Namespace) -> int:
+def _cmd_check(name: str, inv: list[str], used: set[str]) -> int:
     """``--check NAME``: confirm NAME is in inventory and not already a banner."""
     if name not in inv:
         print(f"pick_banner: {name} not in inventory", file=sys.stderr)
@@ -164,7 +176,7 @@ def _cmd_check(name: str, inv: list[str], used: set[str], args: argparse.Namespa
     if name in used:
         print(f"pick_banner: {name} already used as a banner", file=sys.stderr)
         return 1
-    print(transform_url(name, width=args.width, q=args.quality))
+    print(banner_url(name))
     return 0
 
 
@@ -176,14 +188,14 @@ def _cmd_list(inv: list[str], used: set[str], limit: int) -> int:
 
 
 def _cmd_pick(inv: list[str], used: set[str], args: argparse.Namespace) -> int:
-    """Default command: pick one unused banner and print its transform URL."""
+    """Default command: pick one unused banner and print its CDN URL."""
     rng = random.Random(args.seed) if args.seed is not None else None  # noqa: S311
     hints = [h.strip() for h in args.hint.split(",") if h.strip()]
     name = pick(inv, used, hints, rng=rng)
     if not name:
         print("pick_banner: no unused inventory image found", file=sys.stderr)
         return 1
-    print(transform_url(name, width=args.width, q=args.quality))
+    print(banner_url(name))
     return 0
 
 
@@ -195,7 +207,7 @@ def main() -> int:
         return 1
     used = collect_used_banners(ROOT / "_posts")
     if args.check:
-        return _cmd_check(args.check, inv, used, args)
+        return _cmd_check(args.check, inv, used)
     if args.list:
         return _cmd_list(inv, used, args.list)
     return _cmd_pick(inv, used, args)
