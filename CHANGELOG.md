@@ -10,6 +10,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.0.24] - Unreleased
+
+### Fixed
+
+- **`pick_banner.py` follows the live CDN layout**: its default inventory pointed at `Code/Public/CDN/cloudcdn.pro`, which no longer exists, and it printed `/api/transform` URLs, which have answered 401 since that endpoint closed on 2026-06-23. The inventory now defaults to the `cloudcdn.pro` checkout beside this one (`CDN_INVENTORY` still overrides it), the picker prints the direct `/stocks/images/` URL, and the `-320`/`-640`/`-1200`/`-1920` size variants are no longer offered as banners. `--width` and `--quality` are gone with the transform URL. `publish-today.md`, `docs/publishing.md` and `docs/i18n.md` now give the same path and URL rule and count 35 languages (34 locales), not 28.
+- **`CITATION.cff` release date**: `date-released` still read 2026-10-15 (0.0.21); it now reads 2026-10-24, the date 0.0.22 and 0.0.23 were released.
+
+---
+
 ## [0.0.23] - 2026-10-24
 
 ### Changed
@@ -259,6 +268,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+[0.0.24]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.23...HEAD
 [0.0.23]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.22...v0.0.23
 [0.0.22]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.21...v0.0.22
 [0.0.21]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/releases/tag/v0.0.21

@@ -194,6 +194,26 @@ def emit_frontmatter(fm: dict[str, str]) -> str:
     return "\n".join(lines) + "\n\n"
 
 
+# Article furniture inside <main> whose accessible name is a labels.json key.
+# test_i18n_labels.py fails any locale post that keeps the English name, so
+# the stub carries the locale's value from the start, not after translation.
+_FURNITURE_LABEL_RE = re.compile(
+    r'(<aside class="(?:post-lead|author-card)" aria-label=")'
+    r'(Article summary|About the author)(")'
+)
+
+
+def localise_furniture_labels(body: str, lang_code: str) -> str:
+    """Swap the English furniture aria-labels for ``lang_code``'s."""
+    try:
+        labels = _lang_registry.load_labels(lang_code)
+    except _lang_registry.LanguageError:
+        return body
+    return _FURNITURE_LABEL_RE.sub(
+        lambda m: m.group(1) + labels.get(m.group(2), m.group(2)) + m.group(3), body
+    )
+
+
 # ---------------------------------------------------------------------------
 # Per-locale scaffold writer.
 # ---------------------------------------------------------------------------
@@ -238,7 +258,8 @@ def scaffold_one(
     placeholder = (
         f"{STUB_MARKER}\n\n"
         f"> _Translation pending — read the "
-        f"[English original](/{en_slug}/) while we localise._\n\n" + body
+        f"[English original](/{en_slug}/) while we localise._\n\n"
+        + localise_furniture_labels(body, lang_code)
     )
 
     out_path.parent.mkdir(parents=True, exist_ok=True)

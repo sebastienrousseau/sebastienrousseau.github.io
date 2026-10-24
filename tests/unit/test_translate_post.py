@@ -176,6 +176,26 @@ def test_scaffold_one_writes_localised_post_and_updates_slugs(fake_repo):
     assert "2026-05-19-sample" in data["articles"]
 
 
+def test_scaffold_one_localises_furniture_labels(fake_repo):
+    """The stub's post-lead and author-card asides take the locale's
+    labels.json names; the English ones failed test_i18n_labels in CI
+    for every locale of 2026-10-24's article."""
+    en = _EN_SAMPLE.replace(
+        "Body paragraph.\n",
+        'Body paragraph.\n\n<aside class="post-lead" aria-label="Article summary">\n'
+        "<p>Lead.</p>\n</aside>\n\n"
+        '<aside class="author-card" aria-label="About the author">Bio</aside>\n',
+    )
+    tp.scaffold_one("2026-05-19-sample", en, "fr", dry_run=False)
+    (out,) = (fake_repo / "_posts" / "fr").glob("*.md")
+    body = out.read_text(encoding="utf-8")
+    labels = tp._lang_registry.load_labels("fr")
+    assert f'<aside class="post-lead" aria-label="{labels["Article summary"]}">' in body
+    assert f'<aside class="author-card" aria-label="{labels["About the author"]}">' in body
+    assert 'aria-label="Article summary"' not in body
+    assert 'aria-label="About the author"' not in body
+
+
 def test_scaffold_one_dry_run_reports_without_writing(fake_repo):
     _seed_en(fake_repo)
     status = tp.scaffold_one(

@@ -105,21 +105,153 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026/index.html" title="Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January." aria-label="Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January.">
-<img alt="A white curved concrete canopy opening onto clear blue sky, its edge sweeping away from the viewer toward a single unobstructed gap." src="https://cloudcdn.pro/stocks/images/matheus-natan-3297593.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-10-24-modernisation-never-finishes-exceptions-pile-up/index.html" title="Modernisation Never Finishes, and the Exceptions Are What Pile Up">
+<img alt="Dr. Leda Glyptis speaking on stage in front of the Oracle backdrop at the Oracle Financial Services Summit in London, October 2026" src="https://cloudcdn.pro/stocks/images/leda-glyptis-oracle-financial-services-summit-2026.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Eu Data Act · Cloud Switching · Dora</span>
-<h3><a href="/2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026/index.html" title="Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January.">Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January.</a></h3>
-<p class="newsroom-meta"><time datetime="2026-08-04">August 4, 2026</time> · Sebastien Rousseau</p>
-<p>Supervisors have spent two years reading exit plans that assume an exit nobody has priced, budgeted or rehearsed. In January the most durable excuse for that stops being available.</p>
-<p><a class="pill ghost" href="/2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026/index.html" title="Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January.">Read the full story</a></p>
+<span class="newsroom-eyebrow">Ai · Ai-Governance · Banking</span>
+<h3><a href="/2026-10-24-modernisation-never-finishes-exceptions-pile-up/index.html" title="Modernisation Never Finishes, and the Exceptions Are What Pile Up">Modernisation Never Finishes, and the Exceptions Are What Pile Up</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-24">October 24, 2026</time> · Sebastien Rousseau</p>
+<p>Financial services has spent 20 to 25 years treating modernisation as a project with an end date. Opening the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that the industry's weaker record is...</p>
+<p><a class="pill ghost" href="/2026-10-24-modernisation-never-finishes-exceptions-pile-up/index.html" title="Modernisation Never Finishes, and the Exceptions Are What Pile Up">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-10-13-physical-ai-robotics-workforce-governance-industrial-operations/index.html" title="Physical AI and Workforce Governance: Trust, Liability, and the Redesign of Frontline Operations" aria-label="Physical AI and Workforce Governance: Trust, Liability, and the Redesign of Frontline Operations">
+<img alt="Louisa Finlay, COO of Kier Group, and fellow panelists discussing physical AI and workforce governance at the Economist Enterprise Physical AI and Robotics Summit in London" src="https://cloudcdn.pro/stocks/images/louisa-finlay-kier-group-economist-physical-ai-summit-2026.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Ai-Governance · Ai · Operational-Resilience</span>
+<h3><a href="/2026-10-13-physical-ai-robotics-workforce-governance-industrial-operations/index.html" title="Physical AI and Workforce Governance: Trust, Liability, and the Redesign of Frontline Operations">Physical AI and Workforce Governance: Trust, Liability, and the Redesign of Frontline Operations</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-13">October 13, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Deploying autonomous physical machines alongside human workforces introduces acute psychological and legal hazards that pure software never encountered. At the Economist Enterprise Physical AI and Robotics Summit, leaders from Kier Group and the British Standards Institution (BSI) established the governance blueprint f</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-10-13-open-source-physical-ai-lerobot-end-to-end-robotics/index.html" title="Open-Source Physical AI: How Hugging Face LeRobot and End-to-End Imitation Learning Are Democratising Robotics" aria-label="Open-Source Physical AI: How Hugging Face LeRobot and End-to-End Imitation Learning Are Democratising Robotics">
+<img alt="Pepijn Kooijmans presenting Hugging Face LeRobot open-source physical AI architecture at the Economist Enterprise Physical AI and Robotics Summit" src="https://cloudcdn.pro/stocks/images/pepijn-kooijmans-hugging-face-economist-physical-ai-summit-2026.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Open Source · Ai · Agentic-Ai</span>
+<h3><a href="/2026-10-13-open-source-physical-ai-lerobot-end-to-end-robotics/index.html" title="Open-Source Physical AI: How Hugging Face LeRobot and End-to-End Imitation Learning Are Democratising Robotics">Open-Source Physical AI: How Hugging Face LeRobot and End-to-End Imitation Learning Are Democratising Robotics</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-13">October 13, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Robotics development has historically been gated behind six-figure hardware and brittle, hand-crafted kinematics. At the Economist Enterprise Physical AI and Robotics Summit, Hugging Face LeRobot lead Pepijn Kooijmans demonstrated how open-source foundation models and $200 hardware are breaking the industry wide open.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-10-13-moving-past-moores-law-in-memory-compute-edge-robotics/index.html" title="Moving Past Moore's Law: In-Memory Compute Architecture and Modular Chiplets for Edge Robotics" aria-label="Moving Past Moore's Law: In-Memory Compute Architecture and Modular Chiplets for Edge Robotics">
+<img alt="Taner Ozcelik, CEO of Mythic AI, discussing in-memory compute architecture and chiplet deployment with Kenneth Cukier at the Economist Enterprise Physical AI and Robotics Summit in London" src="https://cloudcdn.pro/stocks/images/taner-ozcelik-mythic-ai-economist-physical-ai-summit-2026.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Edge-Computing · Platform Engineering · Operational-Resilience</span>
+<h3><a href="/2026-10-13-moving-past-moores-law-in-memory-compute-edge-robotics/index.html" title="Moving Past Moore's Law: In-Memory Compute Architecture and Modular Chiplets for Edge Robotics">Moving Past Moore's Law: In-Memory Compute Architecture and Modular Chiplets for Edge Robotics</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-13">October 13, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Physical AI cannot scale on 700W data-centre GPUs. At the Economist Enterprise Physical AI and Robotics Summit, Mythic AI Chairman and CEO Taner Ozcelik demonstrated how in-memory compute and chiplet modularity collapse the Von Neumann memory wall to deliver biological-grade efficiency at the physical edge.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-10-13-humanoid-functional-robotics-manufacturing-automation/index.html" title="Humanoid vs Functional Robotics in Manufacturing Automation: Why Form Follows Function on the Factory Floor" aria-label="Humanoid vs Functional Robotics in Manufacturing Automation: Why Form Follows Function on the Factory Floor">
+<img alt="Kenneth Cukier and Sebastian Jonas debating humanoid versus functional robotics on stage at the Economist Enterprise Physical AI and Robotics Summit in London" src="https://cloudcdn.pro/stocks/images/kenneth-cukier-sebastian-jonas-economist-physical-ai-summit-2026.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Ai · Agentic-Ai · Platform Engineering</span>
+<h3><a href="/2026-10-13-humanoid-functional-robotics-manufacturing-automation/index.html" title="Humanoid vs Functional Robotics in Manufacturing Automation: Why Form Follows Function on the Factory Floor">Humanoid vs Functional Robotics in Manufacturing Automation: Why Form Follows Function on the Factory Floor</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-13">October 13, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">At the Economist Enterprise Physical AI and Robotics Summit in London, aerospace and manufacturing leaders dismantled the silicon-valley narrative of the general-purpose humanoid robot. While venture capital pours billions into bipedal forms, industrial reality proves that form must strictly follow function.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-10-10-what-a-machine-learning-textbook-s-contents-page-says-about-the-field/index.html" title="What a Machine Learning Textbook's Contents Page Says About the Field" aria-label="What a Machine Learning Textbook's Contents Page Says About the Field">
+<img alt="Three-dimensional statistical learning manifold and lattice: Foundations of Machine Learning, PAC learning, Rademacher complexity and VC-dimension." src="https://cloudcdn.pro/stocks/images/sebastien-rousseau-20260617-ai-9.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Ai · Research · Innovation</span>
+<h3><a href="/2026-10-10-what-a-machine-learning-textbook-s-contents-page-says-about-the-field/index.html" title="What a Machine Learning Textbook's Contents Page Says About the Field">What a Machine Learning Textbook's Contents Page Says About the Field</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-10">October 10, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Foundations of Machine Learning, second edition, defines learning as using experience to make accurate predictions, and then builds a whole curriculum around the quantities that decide whether it works: data,...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-10-05-internal-openai-model-pins-down-exact-decay-rate-cohn-elkies-sphere-packing/index.html" title="An internal OpenAI model pins down the exact decay rate of the Cohn-Elkies sphere-packing program" aria-label="An internal OpenAI model pins down the exact decay rate of the Cohn-Elkies sphere-packing program">
+<img alt="Concentric glowing three-dimensional light spheres: exact asymptotic decay rate of the Cohn-Elkies sphere-packing linear programming bound." src="https://cloudcdn.pro/stocks/images/daniele-franchi-Vl6YuVBLEys.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Ai · Research · Cryptography</span>
+<h3><a href="/2026-10-05-internal-openai-model-pins-down-exact-decay-rate-cohn-elkies-sphere-packing/index.html" title="An internal OpenAI model pins down the exact decay rate of the Cohn-Elkies sphere-packing program">An internal OpenAI model pins down the exact decay rate of the Cohn-Elkies sphere-packing program</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-05">October 5, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A collection of results from an internal OpenAI model spans mathematics and theoretical computer science, and its sharpest result is exact: the asymptotic strength of the Cohn-Elkies linear program is now known,...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-09-30-detector-reads-probabilities-instead-of-verdicts-44-benchmarks/index.html" title="A Detector That Reads Probabilities Instead of Writing Verdicts: What 44 Benchmarks Say About Jev" aria-label="A Detector That Reads Probabilities Instead of Writing Verdicts: What 44 Benchmarks Say About Jev">
+<img alt="Matrix of floating-point numerical probabilities: Binoculars token cross-perplexity LLM text detection across 44 benchmarks." src="https://cloudcdn.pro/stocks/images/mika-baumeister-Wpnoqo2plFA.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Ai · Generative-Ai · Llm</span>
+<h3><a href="/2026-09-30-detector-reads-probabilities-instead-of-verdicts-44-benchmarks/index.html" title="A Detector That Reads Probabilities Instead of Writing Verdicts: What 44 Benchmarks Say About Jev">A Detector That Reads Probabilities Instead of Writing Verdicts: What 44 Benchmarks Say About Jev</a></h3>
+<p class="newsroom-meta"><time datetime="2026-09-30">September 30, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A detector for alignment failures that answers many typed questions in one call, with calibrated probabilities, ranks failures well and costs 63× less than LLM-judge scorers. But those probabilities don't transfer...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-09-25-when-technology-lands-before-institutions-adapt-mit-ai-committee/index.html" title="When the Technology Lands Before the Institution Can Adapt: What MIT's AI Committee Says About Teaching and Learning" aria-label="When the Technology Lands Before the Institution Can Adapt: What MIT's AI Committee Says About Teaching and Learning">
+<img alt="White vaulted architectural corridor: institutional governance and MIT AI committee findings on generative AI in higher education." src="https://cloudcdn.pro/stocks/images/gdtography-911758.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Ai · Ai-Governance · Generative-Ai</span>
+<h3><a href="/2026-09-25-when-technology-lands-before-institutions-adapt-mit-ai-committee/index.html" title="When the Technology Lands Before the Institution Can Adapt: What MIT's AI Committee Says About Teaching and Learning">When the Technology Lands Before the Institution Can Adapt: What MIT's AI Committee Says About Teaching and Learning</a></h3>
+<p class="newsroom-meta"><time datetime="2026-09-25">September 25, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">MIT's ad hoc committee on AI doesn't treat generative AI as a tooling problem to be patched with a policy. Its report treats it as a pressure test on what an MIT education is for, and argues that uncertainty can't be...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-09-20-cloudflare-wants-to-issue-its-own-certificates-free-ca-concentration/index.html" title="Cloudflare Wants to Issue Its Own Certificates, and Its Plan Rests on a Free-CA Concentration Problem" aria-label="Cloudflare Wants to Issue Its Own Certificates, and Its Plan Rests on a Free-CA Concentration Problem">
+<img alt="Illuminated blue fibre-optic network strands: Cloudflare Bootstrap CA, Let's Encrypt and WebPKI certificate authority concentration." src="https://cloudcdn.pro/stocks/images/sander-weeteling-KABfjuSOx74.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Cybersecurity · Cryptography · Platform Engineering</span>
+<h3><a href="/2026-09-20-cloudflare-wants-to-issue-its-own-certificates-free-ca-concentration/index.html" title="Cloudflare Wants to Issue Its Own Certificates, and Its Plan Rests on a Free-CA Concentration Problem">Cloudflare Wants to Issue Its Own Certificates, and Its Plan Rests on a Free-CA Concentration Problem</a></h3>
+<p class="newsroom-meta"><time datetime="2026-09-20">September 20, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Cloudflare has relied on 16 partner public CAs for years without ever issuing a publicly trusted certificate itself. It now intends to become one, and the interesting part is the design: classic certificates and...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-09-15-two-nuclear-clocks-vienna-and-beijing-haven-t-beaten-atomic-clocks-yet/index.html" title="Two Nuclear Clocks, Built Separately in Vienna and Beijing, Haven't Beaten Atomic Clocks Yet" aria-label="Two Nuclear Clocks, Built Separately in Vienna and Beijing, Haven't Beaten Atomic Clocks Yet">
+<img alt="Optical glass prism refracting laser light: thorium-229 calcium fluoride crystal nuclear clock spectroscopy in Vienna and Beijing." src="https://cloudcdn.pro/stocks/images/michael-dziedzic--LFxVNhopfs.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum-Computing · Cryptography · Operational-Resilience</span>
+<h3><a href="/2026-09-15-two-nuclear-clocks-vienna-and-beijing-haven-t-beaten-atomic-clocks-yet/index.html" title="Two Nuclear Clocks, Built Separately in Vienna and Beijing, Haven't Beaten Atomic Clocks Yet">Two Nuclear Clocks, Built Separately in Vienna and Beijing, Haven't Beaten Atomic Clocks Yet</a></h3>
+<p class="newsroom-meta"><time datetime="2026-09-15">September 15, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">The first two operating nuclear clocks arrived together, from teams that didn't coordinate, and neither beats the best atomic clock. The independence of the two results is the more important fact, because it suggests...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026/index.html" title="Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January." aria-label="Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January.">
+<img alt="A white curved concrete canopy opening onto clear blue sky, its edge sweeping away from the viewer toward a single unobstructed gap." src="https://cloudcdn.pro/stocks/images/matheus-natan-3297593.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Eu Data Act · Cloud Switching · Dora</span>
+<h3><a href="/2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026/index.html" title="Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January.">Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January.</a></h3>
+<p class="newsroom-meta"><time datetime="2026-08-04">August 4, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Supervisors have spent two years reading exit plans that assume an exit nobody has priced, budgeted or rehearsed. In January the most durable excuse for that stops being available.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/index.html" title="DORA Spared You From NIS2. It Will Not Spare You From the CRA." aria-label="DORA Spared You From NIS2. It Will Not Spare You From the CRA.">
@@ -198,7 +330,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="A receding row of pendant lamps along a dark window wall, the nearest one sharp and lit and each one behind it fading further into shadow." src="https://cloudcdn.pro/stocks/images/robert-haverly-_kmr5wKVW7E.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Post-Quantum · Cryptography · Cbom</span>
+<span class="newsroom-eyebrow">Post-Quantum Cryptography · Cryptography · Cbom</span>
 <h3><a href="/2026-07-28-cryptographic-bill-of-materials-cbom-discovery-banks-2026/index.html" title="You Cannot Migrate What You Cannot Enumerate: The Cryptographic Bill of Materials Banks Still Do Not Have">You Cannot Migrate What You Cannot Enumerate: The Cryptographic Bill of Materials Banks Still Do Not Have</a></h3>
 <p class="newsroom-meta"><time datetime="2026-07-28">July 28, 2026</time> · Sebastien Rousseau</p>
 <p class="newsroom-excerpt">Every post-quantum roadmap assumes an inventory that does not exist. The asset register knows the server, the owner and the criticality; it does not know the algorithm, the key length, the library or the expiry.</p>
@@ -318,7 +450,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="Abstract digital boardroom table dissolving into quantum lattices — visualising the strategic governance required to migrate core banking infrastructure to FIPS 203 and 204" src="https://cloudcdn.pro/stocks/images/vipul-jha-a4X1cdC1QAc.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Post-Quantum · Cryptography · Banking</span>
+<span class="newsroom-eyebrow">Post-Quantum Cryptography · Cryptography · Banking</span>
 <h3><a href="/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/index.html" title="The 2026 Post-Quantum Security Scorecard: A Board-Level Metric Framework">The 2026 Post-Quantum Security Scorecard: A Board-Level Metric Framework</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-29">June 29, 2026</time> · Sebastien Rousseau</p>
 <p class="newsroom-excerpt">As of June 2026, post-quantum cryptography (PQC) has transitioned from an experimental technical concern to a primary fiduciary obligation. Boards must now oversee the systematic migration of legacy encryption...</p>
@@ -354,7 +486,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="Abstract quantum-blue light field — symbolising the post-quantum banking resilience index and the migration of financial cryptography to ML-KEM, ML-DSA and SLH-DSA" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA-1920.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Post-Quantum Cryptography · Pqc · Eo 14409</span>
+<span class="newsroom-eyebrow">Post-Quantum Cryptography · Eo 14409 · Anssi</span>
 <h3><a href="/2026-06-26-post-quantum-banking-resilience-index-eo-14409-fiduciary-crypto-agility-2026/index.html" title="The Post-Quantum Banking Resilience Index in 2026: EO 14409, Global Deadlines, and Fiduciary Cryptographic Agility">The Post-Quantum Banking Resilience Index in 2026: EO 14409, Global Deadlines, and Fiduciary Cryptographic Agility</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-26">June 26, 2026</time> · Sebastien Rousseau</p>
 <p class="newsroom-excerpt">Executive Order 14409, ANSSI's hard 2030 deadline and DORA Article 5 have moved post-quantum cryptography from a long-range technical goal to an active regulatory mandate. This index converts securing registries, high-frequency ledgers and SWIFT channels into a board-ready 0–5 scorecard that aligns ML-KEM, ML-DSA and S</p>
@@ -378,7 +510,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="Aerial view of a global financial district at dawn — symbolising the post-quantum dawn for corporate and investment banking and the transition from KyberLib to an enterprise-wide quantum-resilient payments stack" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau-20260617-5th-commercialising-quantum-3.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Post-Quantum Cryptography · Pqc · Kyberlib</span>
+<span class="newsroom-eyebrow">Post-Quantum Cryptography · Kyberlib · Ml-Kem</span>
 <h3><a href="/2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026/index.html" title="Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack">Quantum Dawn for CIB: From KyberLib to a Quantum-Resilient Payments Stack</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-25">June 25, 2026</time> · Sebastien Rousseau</p>
 <p class="newsroom-excerpt">BIS Quantum Dawn and the G7 January 2026 PQC roadmap have moved post-quantum cryptography from research to board agenda. This piece extends KyberLib from a toolkit into an enterprise CIB transition programme — covering high-value rails, trade finance, custody, and the disclosures regulators are now asking for.</p>
@@ -430,6 +562,18 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026/index.html" title="Securing Password Management in Enterprise Banking: Multi-Algorithm Hashing and Upgrades with hsh">Securing Password Management in Enterprise Banking: Multi-Algorithm Hashing and Upgrades with hsh</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-22">June 22, 2026</time> · Sebastien Rousseau</p>
 <p class="newsroom-excerpt">In the era of GPU-accelerated decryption and DORA mandates, cryptographic rot is a systemic risk. Every legacy PBKDF2 or scrypt hash resting in a banking database is a countdown to compromise. hsh changes the paradigm with zero-downtime, memory-safe upgrades...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-06-21-banking-architecture-whitepaper/index.html" title="2026 Banking Architecture: A Framework for Operational Resilience" aria-label="2026 Banking Architecture: A Framework for Operational Resilience">
+<img alt="2026 Banking Architecture whitepaper banner showing cryptographic, ISO 20022, and multi-rail orchestration layers converging into one resilient stack" src="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">2026 Banking Architecture · Operational Resilience · Dora</span>
+<h3><a href="/2026-06-21-banking-architecture-whitepaper/index.html" title="2026 Banking Architecture: A Framework for Operational Resilience">2026 Banking Architecture: A Framework for Operational Resilience</a></h3>
+<p class="newsroom-meta"><time datetime="2026-06-21">June 21, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A three-pillar framework for Tier-1 CIB and corporate treasury — cryptographic stewardship, ISO 20022 as the autonomic data substrate, and rail-agnostic orchestration — designed for DORA-grade operational resilience.</p>
 </div>
 </article>
 
@@ -498,7 +642,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="Office worker with voice assistant and laptop — symbolising the structured, machine-readable interbank payment messages that pacs.008 automation makes programmable" src="https://cloudcdn.pro/stocks/images/tyler-prahm-lmV3gJSAgbo.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Pacs008 · Iso 20022 · Interbank Payments</span>
+<span class="newsroom-eyebrow">Pacs.008 · Iso 20022 · Interbank Payments</span>
 <h3><a href="/2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026/index.html" title="Building pacs.008 Automation for the ISO 20022 Interbank Era in 2026">Building pacs.008 Automation for the ISO 20022 Interbank Era in 2026</a></h3>
 <p class="newsroom-meta"><time datetime="2026-06-15">June 15, 2026</time> · Sebastien Rousseau</p>
 <p class="newsroom-excerpt">pacs008 is an open-source Python toolkit that makes ISO 20022 FI-to-FI customer credit transfer messages programmable — structured addresses, validation, routing, compliance hooks, and the SWIFT November 2026 deadline baked in as defaults.</p>
