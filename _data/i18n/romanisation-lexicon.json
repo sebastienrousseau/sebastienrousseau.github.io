@@ -80,7 +80,17 @@
     "والاستثناءات": "walistithnaat",
     "هي": "hiya",
     "ما": "ma",
-    "يتراكم": "yatarakam"
+    "يتراكم": "yatarakam",
+    "ساعتان": "saatan",
+    "نوويتان": "nawawiyyatan",
+    "فيينا": "fiyina",
+    "وبكين": "wabikin",
+    "لم": "lam",
+    "تتفوقا": "tatafawwaqa",
+    "بعد": "bad",
+    "على": "ala",
+    "الساعات": "alsaat",
+    "الذرية": "aldharriya"
   },
   "he": {
     "הבנת": "havanat",
@@ -143,7 +153,17 @@
     "ומה": "uma",
     "שמצטבר": "shemitstaber",
     "הוא": "hu",
-    "החריגים": "hacharigim"
+    "החריגים": "hacharigim",
+    "שני": "shnei",
+    "שעונים": "shonim",
+    "גרעיניים": "gariniyim",
+    "בווינה": "bevina",
+    "ובבייג'ינג": "uvebeijing",
+    "עוד": "od",
+    "לא": "lo",
+    "עקפו": "akfu",
+    "את": "et",
+    "האטומיים": "haatomiyim"
   },
   "bn": {
     "প্রমাণ": "praman",
@@ -192,7 +212,17 @@
     "สะสม": "sasom",
     "พอกพูน": "phokphun",
     "คือ": "khue",
-    "ข้อยกเว้น": "khoyokwen"
+    "ข้อยกเว้น": "khoyokwen",
+    "นาฬิกา": "nalika",
+    "นิวเคลียร์": "niukhlia",
+    "สองเรือน": "song ruean",
+    "จาก": "chak",
+    "เวียนนา": "wianna",
+    "และ": "lae",
+    "ปักกิ่ง": "pakking",
+    "ยังไม่": "yang mai",
+    "แซง": "saeng",
+    "อะตอม": "atom"
   },
   "ja": {
     "銀行": "ginko",
@@ -213,7 +243,15 @@
     "積み上がる": "tsumiagaru",
     "のは": "no wa",
     "例外": "reigai",
-    "です": "desu"
+    "です": "desu",
+    "ウィーン": "uin",
+    "北京": "pekin",
+    "二つ": "futatsu",
+    "原子核時計": "genshikakudokei",
+    "まだ": "mada",
+    "原子時計": "genshidokei",
+    "超えず": "koezu",
+    "二つの": "futatsu"
   },
   "zh-hans": {
     "读懂": "dudong",
@@ -227,7 +265,14 @@
     "不断": "buduan",
     "累积": "leiji",
     "的是": "de shi",
-    "例外": "liwai"
+    "例外": "liwai",
+    "维也纳": "weiyena",
+    "北京": "beijing",
+    "核钟": "hezhong",
+    "尚未": "shangwei",
+    "超越": "chaoyue",
+    "原子钟": "yuanzizhong",
+    "两台核钟": "liangtai hezhong"
   },
   "zh-hant": {
     "讀懂": "dudong",
@@ -241,6 +286,13 @@
     "不斷": "buduan",
     "累積": "leiji",
     "的是": "de shi",
-    "例外": "liwai"
+    "例外": "liwai",
+    "維也納": "weiyena",
+    "北京": "beijing",
+    "核鐘": "hezhong",
+    "尚未": "shangwei",
+    "超越": "chaoyue",
+    "原子鐘": "yuanzizhong",
+    "兩台核鐘": "liangtai hezhong"
   }
 }
