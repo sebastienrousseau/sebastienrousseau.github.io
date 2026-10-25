@@ -12,6 +12,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [0.0.25] - Unreleased
 
+### Added
+
+- **`--rederive-slugs` redirects live URLs**: the 10 articles published from 2026-09-15 to 2026-10-13 are live in 34 locales with English bodies and titles, so translating them renames 340 locale URLs. ADR-0012 makes each such rename an individually redirected change, so when the old locale post exists on `origin/main` the step now adds `old -> new` to `_data/redirects/articles.json` and retargets any redirect that pointed at the old slug, so no chain forms. A stub that was never published is renamed without a redirect.
+
 ### Fixed
 
 - **No layout shift when the "Read as" control appears**: the control ships `hidden` and `main.js` reveals it once its buttons are wired, about 300 ms after navigation. On desktop it sits inside the first view, so the reveal moved the content below it by 18 px, a cumulative layout shift of 0.0032 on the home page. With scripting enabled its space is now held, invisible, from the first paint; with JavaScript off it stays hidden as before.

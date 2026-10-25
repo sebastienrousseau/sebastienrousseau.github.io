@@ -223,6 +223,53 @@ def test_rederive_slug_follows_the_translated_title(fake_repo):
     assert "keep" in tp.rederive_slug("2026-05-19-sample", "fr", dry_run=False)
 
 
+def test_rederive_slug_redirects_a_published_url(fake_repo, monkeypatch):
+    """ADR-0012: a live locale URL renamed to follow its translated title
+    is redirected, so the 340 backlog stubs keep their inbound links. A
+    redirect that pointed at the old slug moves to the new one."""
+    _seed_en(fake_repo)
+    tp.scaffold_one("2026-05-19-sample", _EN_SAMPLE, "fr", dry_run=False)
+    (stub,) = (fake_repo / "_posts" / "fr").glob("*.md")
+    old = stub.stem
+    redirects = fake_repo / "_data" / "redirects" / "articles.json"
+    redirects.parent.mkdir(parents=True)
+    redirects.write_text(
+        json.dumps({"_comment": "", "fr": {"2026-05-19-older": old}}), encoding="utf-8"
+    )
+    monkeypatch.setattr(tp, "REDIRECTS", redirects)
+    monkeypatch.setattr(tp, "_is_published", lambda path: True)
+    stub.write_text(
+        stub.read_text(encoding="utf-8").replace(
+            'title: "Sample headline"', 'title: "Titre de démonstration traduit"'
+        ),
+        encoding="utf-8",
+    )
+    tp.rederive_slug("2026-05-19-sample", "fr", dry_run=False)
+    new = json.loads((fake_repo / "_data" / "i18n" / "fr" / "slugs.json").read_text())["articles"][
+        "2026-05-19-sample"
+    ]
+    assert json.loads(redirects.read_text())["fr"] == {"2026-05-19-older": new, old: new}
+
+
+def test_rederive_slug_does_not_redirect_an_unpublished_stub(fake_repo, monkeypatch):
+    _seed_en(fake_repo)
+    tp.scaffold_one("2026-05-19-sample", _EN_SAMPLE, "fr", dry_run=False)
+    (stub,) = (fake_repo / "_posts" / "fr").glob("*.md")
+    redirects = fake_repo / "_data" / "redirects" / "articles.json"
+    redirects.parent.mkdir(parents=True)
+    redirects.write_text(json.dumps({"_comment": ""}), encoding="utf-8")
+    monkeypatch.setattr(tp, "REDIRECTS", redirects)
+    monkeypatch.setattr(tp, "_is_published", lambda path: False)
+    stub.write_text(
+        stub.read_text(encoding="utf-8").replace(
+            'title: "Sample headline"', 'title: "Titre traduit"'
+        ),
+        encoding="utf-8",
+    )
+    assert "renamed" in tp.rederive_slug("2026-05-19-sample", "fr", dry_run=False)
+    assert json.loads(redirects.read_text()) == {"_comment": ""}
+
+
 def test_scaffold_one_dry_run_reports_without_writing(fake_repo):
     _seed_en(fake_repo)
     status = tp.scaffold_one(
