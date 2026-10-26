@@ -99,7 +99,14 @@
     "تركّز": "tarakkuz",
     "تركز": "tarakkuz",
     "السلطات": "alsulutat",
-    "المجانية": "almajjaniya"
+    "المجانية": "almajjaniya",
+    "لجنة": "lajnat",
+    "للذكاء": "lildhakaa",
+    "تسبق": "tasbiq",
+    "قدرة": "qudrat",
+    "المؤسسات": "almuassasat",
+    "التكيّف": "altakayyuf",
+    "التكيف": "altakayyuf"
   },
   "he": {
     "הבנת": "havanat",
@@ -180,7 +187,14 @@
     "מול": "mul",
     "ריכוזיות": "rikuziyut",
     "הרשויות": "harashuyot",
-    "החינמיות": "hahinamiyot"
+    "החינמיות": "hahinamiyot",
+    "ועדת": "vaadat",
+    "לבינה": "levina",
+    "מלאכותית": "malakhutit",
+    "מקדימה": "makdima",
+    "יכולת": "yekholet",
+    "המוסדות": "hamosadot",
+    "להסתגל": "lehistagel"
   },
   "bn": {
     "প্রমাণ": "praman",
@@ -205,7 +219,10 @@
     "পড়া": "pora",
     "সার্টিফিকেট": "sartifiket",
     "চায়": "chay",
-    "বিনামূল্যের": "binamulyer"
+    "বিনামূল্যের": "binamulyer",
+    "প্রতিষ্ঠানের": "pratishthaner",
+    "হাজির": "hajir",
+    "শিক্ষা": "shiksha"
   },
   "hi": {
     "बैंकों": "bainkon",
@@ -217,7 +234,9 @@
     "में": "mein",
     "प्रमाणपत्र": "pramanpatra",
     "करना": "karna",
-    "चाहता": "chahta"
+    "चाहता": "chahta",
+    "तकनीक": "taknik",
+    "संस्थानों": "sansthanon"
   },
   "th": {
     "การอ่าน": "kan an",
@@ -248,7 +267,11 @@
     "อะตอม": "atom",
     "อยากออกใบรับรองเอง": "yak ok bairaprong eng",
     "แผนนี้อิงปัญหา": "phaen ni ing panha",
-    "ฟรีที่กระจุกตัว": "fri thi krachuktua"
+    "ฟรีที่กระจุกตัว": "fri thi krachuktua",
+    "มาก่อน": "ma kon",
+    "สถาบัน": "sathaban",
+    "ปรับตัว": "prap tua",
+    "การสอน": "kan son"
   },
   "ja": {
     "銀行": "ginko",
@@ -284,7 +307,11 @@
     "背景": "haikei",
     "無料": "muryo",
     "集中": "shuchu",
-    "問題": "mondai"
+    "問題": "mondai",
+    "委員会": "iinkai",
+    "制度より先に": "seido yori saki ni",
+    "到来した技術": "torai shita gijutsu",
+    "教育を問う": "kyoiku wo tou"
   },
   "zh-hans": {
     "读懂": "dudong",
@@ -314,7 +341,11 @@
     "立足于": "lizuyu",
     "免费": "mianfei",
     "集中": "jizhong",
-    "问题": "wenti"
+    "问题": "wenti",
+    "委员会": "weiyuanhui",
+    "报告": "baogao",
+    "技术先于制度到来": "jishu xianyu zhidu daolai",
+    "教与学": "jiaoyuxue"
   },
   "zh-hant": {
     "讀懂": "dudong",
@@ -344,6 +375,10 @@
     "立足於": "lizuyu",
     "免費": "mianfei",
     "集中": "jizhong",
-    "問題": "wenti"
+    "問題": "wenti",
+    "委員會": "weiyuanhui",
+    "報告": "baogao",
+    "技術先於制度到來": "jishu xianyu zhidu daolai",
+    "教與學": "jiaoyuxue"
   }
 }
