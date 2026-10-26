@@ -90,7 +90,16 @@
     "بعد": "bad",
     "على": "ala",
     "الساعات": "alsaat",
-    "الذرية": "aldharriya"
+    "الذرية": "aldharriya",
+    "تريد": "turid",
+    "إصدار": "isdar",
+    "شهاداتها": "shahadatiha",
+    "بنفسها": "binafsiha",
+    "وسط": "wasat",
+    "تركّز": "tarakkuz",
+    "تركز": "tarakkuz",
+    "السلطات": "alsulutat",
+    "المجانية": "almajjaniya"
   },
   "he": {
     "הבנת": "havanat",
@@ -163,7 +172,15 @@
     "לא": "lo",
     "עקפו": "akfu",
     "את": "et",
-    "האטומיים": "haatomiyim"
+    "האטומיים": "haatomiyim",
+    "רוצה": "rotsa",
+    "להנפיק": "lehanpik",
+    "תעודות": "teudot",
+    "בעצמה": "beatsma",
+    "מול": "mul",
+    "ריכוזיות": "rikuziyut",
+    "הרשויות": "harashuyot",
+    "החינמיות": "hahinamiyot"
   },
   "bn": {
     "প্রমাণ": "praman",
@@ -185,7 +202,10 @@
     "প্রযুক্তির": "projuktir",
     "ঝুঁকি": "jhuki",
     "দিগন্ত": "diganta",
-    "পড়া": "pora"
+    "পড়া": "pora",
+    "সার্টিফিকেট": "sartifiket",
+    "চায়": "chay",
+    "বিনামূল্যের": "binamulyer"
   },
   "hi": {
     "बैंकों": "bainkon",
@@ -194,7 +214,10 @@
     "जोखिम": "jokhim",
     "क्षितिज": "kshitij",
     "पढ़ना": "padhna",
-    "में": "mein"
+    "में": "mein",
+    "प्रमाणपत्र": "pramanpatra",
+    "करना": "karna",
+    "चाहता": "chahta"
   },
   "th": {
     "การอ่าน": "kan an",
@@ -222,7 +245,10 @@
     "ปักกิ่ง": "pakking",
     "ยังไม่": "yang mai",
     "แซง": "saeng",
-    "อะตอม": "atom"
+    "อะตอม": "atom",
+    "อยากออกใบรับรองเอง": "yak ok bairaprong eng",
+    "แผนนี้อิงปัญหา": "phaen ni ing panha",
+    "ฟรีที่กระจุกตัว": "fri thi krachuktua"
   },
   "ja": {
     "銀行": "ginko",
@@ -251,7 +277,14 @@
     "まだ": "mada",
     "原子時計": "genshidokei",
     "超えず": "koezu",
-    "二つの": "futatsu"
+    "二つの": "futatsu",
+    "自ら": "mizukara",
+    "証明書": "shomeisho",
+    "発行": "hakko",
+    "背景": "haikei",
+    "無料": "muryo",
+    "集中": "shuchu",
+    "問題": "mondai"
   },
   "zh-hans": {
     "读懂": "dudong",
@@ -272,7 +305,16 @@
     "尚未": "shangwei",
     "超越": "chaoyue",
     "原子钟": "yuanzizhong",
-    "两台核钟": "liangtai hezhong"
+    "两台核钟": "liangtai hezhong",
+    "想": "xiang",
+    "自行": "zixing",
+    "签发": "qianfa",
+    "证书": "zhengshu",
+    "计划": "jihua",
+    "立足于": "lizuyu",
+    "免费": "mianfei",
+    "集中": "jizhong",
+    "问题": "wenti"
   },
   "zh-hant": {
     "讀懂": "dudong",
@@ -293,6 +335,15 @@
     "尚未": "shangwei",
     "超越": "chaoyue",
     "原子鐘": "yuanzizhong",
-    "兩台核鐘": "liangtai hezhong"
+    "兩台核鐘": "liangtai hezhong",
+    "想": "xiang",
+    "自行": "zixing",
+    "簽發": "qianfa",
+    "憑證": "pingzheng",
+    "計畫": "jihua",
+    "立足於": "lizuyu",
+    "免費": "mianfei",
+    "集中": "jizhong",
+    "問題": "wenti"
   }
 }
