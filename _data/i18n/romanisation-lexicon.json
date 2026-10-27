@@ -127,7 +127,23 @@
     "وما": "wama",
     "يكشفه": "yakshifuh",
     "هذا": "hadha",
-    "المجال": "almajal"
+    "المجال": "almajal",
+    "روبوتات": "rubutat",
+    "بشرية": "bashariyya",
+    "الشكل": "alshakl",
+    "وظيفية": "wazifiyya",
+    "يتبع": "yatba",
+    "الوظيفة": "alwazifa",
+    "المصنع": "almasna",
+    "تجاوز": "tajawuz",
+    "قانون": "qanun",
+    "مور": "mur",
+    "الحوسبة": "alhawsaba",
+    "داخل": "dakhil",
+    "الذاكرة": "aldhakira",
+    "والرقائق": "walraqaiq",
+    "المعيارية": "almiyariya",
+    "للروبوتات": "lilrubutat"
   },
   "he": {
     "הבנת": "havanat",
@@ -234,7 +250,23 @@
     "בלמידת": "belemidat",
     "מכונה": "mekhona",
     "מגלה": "megale",
-    "התחום": "hatkhum"
+    "התחום": "hatkhum",
+    "רובוטים": "robotim",
+    "דמויי": "dmuyei",
+    "אדם": "adam",
+    "פונקציונליים": "funktsionaliyim",
+    "הצורה": "hatsura",
+    "הולכת": "holekhet",
+    "התפקיד": "hatafkid",
+    "במפעל": "bamifal",
+    "מעבר": "maavar",
+    "לחוק": "lechok",
+    "מחשוב": "mihshuv",
+    "בתוך": "betokh",
+    "הזיכרון": "hazikaron",
+    "ושבבונים": "veshvavonim",
+    "מודולריים": "modulariyim",
+    "לרובוטיקה": "lerobotika"
   },
   "bn": {
     "প্রমাণ": "praman",
@@ -268,7 +300,12 @@
     "প্যাকিংয়ের": "pyakingyer",
     "নিখুঁত": "nikhut",
     "ক্ষয়হার": "kshayhar",
-    "পাঠ্যবইয়ের": "pathyaboiyer"
+    "পাঠ্যবইয়ের": "pathyaboiyer",
+    "হিউম্যানয়েড": "hiumanoyed",
+    "ফাংশনাল": "fangshanal",
+    "রোবট": "robot",
+    "কারখানায়": "karkhanay",
+    "পেরিয়ে": "periye"
   },
   "hi": {
     "बैंकों": "bainkon",
@@ -285,7 +322,9 @@
     "संस्थानों": "sansthanon",
     "फ़ैसले": "faisle",
     "संभावनाएँ": "sambhavnaen",
-    "डिटेक्टर": "detektar"
+    "डिटेक्टर": "detektar",
+    "फ़ंक्शनल": "fankshanal",
+    "फ़ैक्टरी": "faiktari"
   },
   "th": {
     "การอ่าน": "kan an",
@@ -328,7 +367,12 @@
     "การบรรจุทรงกลม": "kanbanchu songklom",
     "โมเดลภายใน": "model phainai",
     "สารบัญตำราแมชชีนเลิร์นนิง": "saraban tamra maechchin loenning",
-    "บอกอะไรเกี่ยวกับสาขานี้": "bok arai kiaokap sakha ni"
+    "บอกอะไรเกี่ยวกับสาขานี้": "bok arai kiaokap sakha ni",
+    "ฮิวแมนนอยด์ปะทะหุ่นยนต์เชิงหน้าที่": "hiumaenoi patha hunyon choeng nathi",
+    "ในโรงงานรูปทรงต้องตามหน้าที่": "nai rongngan rupsong tong tam nathi",
+    "ก้าวข้ามกฎของมัวร์": "kaokham kot khong mua",
+    "ประมวลผลในหน่วยความจำ": "pramuanphon nai nuaikhwamcham",
+    "และชิปเล็ตเพื่อหุ่นยนต์": "lae chiplet phuea hunyon"
   },
   "ja": {
     "銀行": "ginko",
@@ -378,7 +422,13 @@
     "特定": "tokutei",
     "機械学習の教科書": "kikai gakushu kyokasho",
     "目次が語る": "mokuji kataru",
-    "この分野の姿": "bunya sugata"
+    "この分野の姿": "bunya sugata",
+    "ヒューマノイド対機能型ロボット": "hyumanoido tai kinogata robotto",
+    "製造現場": "seizo genba",
+    "ムーアの法則の先へ": "muua hosoku saki",
+    "インメモリ演算": "inmemori enzan",
+    "チップレット": "chippuretto",
+    "エッジロボット": "ejji robotto"
   },
   "zh-hans": {
     "读懂": "dudong",
@@ -422,7 +472,15 @@
     "精确衰减率": "jingque shuaijianlv",
     "机器学习教科书的目录": "jiqi xuexi jiaokeshu mulu",
     "如何描绘": "ruhe miaohui",
-    "这个领域": "zhege lingyu"
+    "这个领域": "zhege lingyu",
+    "人形机器人": "renxing jiqiren",
+    "功能型机器人": "gongnengxing jiqiren",
+    "工厂车间": "gongchang chejian",
+    "超越摩尔定律": "chaoyue moer dinglu",
+    "存内计算": "cunnei jisuan",
+    "芯粒": "xinli",
+    "如何驱动": "ruhe qudong",
+    "边缘机器人": "bianyuan jiqiren"
   },
   "zh-hant": {
     "讀懂": "dudong",
@@ -466,6 +524,14 @@
     "精確衰減率": "jingque shuaijianlv",
     "機器學習教科書的目錄": "jiqi xuexi jiaokeshu mulu",
     "如何描繪": "ruhe miaohui",
-    "這個領域": "zhege lingyu"
+    "這個領域": "zhege lingyu",
+    "人形機器人": "renxing jiqiren",
+    "功能型機器人": "gongnengxing jiqiren",
+    "工廠現場": "gongchang xianchang",
+    "超越摩爾定律": "chaoyue moer dinglu",
+    "記憶體內運算": "jiyitinei yunsuan",
+    "小晶片": "xiaojingpian",
+    "如何驅動": "ruhe qudong",
+    "邊緣機器人": "bianyuan jiqiren"
   }
 }

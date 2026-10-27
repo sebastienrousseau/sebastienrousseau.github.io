@@ -135,7 +135,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-lajnat-mit-lildhakaa-alistinai-altiqniya-tasbiq",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-kashif-yaqra-alihtimalat-badal-kitabat-alahkam",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-namudhaj-dakhili-openai-yuhaddid-almuaddal-aldaqiq",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-fihris-kitab-taallum-alala-wama-yakshifuh"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-fihris-kitab-taallum-alala-wama-yakshifuh",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-rubutat-bashariyya-alshakl-am-wazifiyya-yatba",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-tajawuz-qanun-mur-alhawsaba-dakhil-aldhakira"
   },
   "bn": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-pratham-kriptokarensir-ek-bachharer-parjalochana",
@@ -254,7 +256,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-pratishthaner-agei-prajukti-hajir-shiksha",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-sambhabana-pora-detektor-raj-lekha-naj",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-cohn-elkies-sphiyar-pyakingyer-nikhut-kshayhar",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-meshin-larning-pathyaboiyer-suchipatr-ei-kshetr"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-meshin-larning-pathyaboiyer-suchipatr-ei-kshetr",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hiumanoyed-banam-fangshanal-robot-karkhanay-rup",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-murer-sutr-periye-ej-robotikser"
   },
   "cs": {
     "2023-10-09-shokunin-nejrychlejsi-staticky-generator-v-rustu": "2023-10-09-nejrychlejsi-staticky-generator-v-rustu",
@@ -328,7 +332,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-komise-mit-ai-technologie-prisla-driv",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-detektor-cte-pravdepodobnosti-misto-verdiktu-jev",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-model-openai-urcil-presnou-rychlost-poklesu",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-obsah-ucebnice-strojoveho-uceni-prozrazuje-celem"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-obsah-ucebnice-strojoveho-uceni-prozrazuje-celem",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-humanoidi-nebo-funkcni-roboty-forma-nasleduje",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-vypocty-pameti-chiplety-edge-robotika-hranici"
   },
   "de": {
     "2023-10-09-shokunin-der-schnellste-rust-basierte-static-site-generator": "2023-10-09-der-schnellste-rust-basierte-static-site-generator",
@@ -394,7 +400,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-technik-schneller-als-institution-ki-ausschuss",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-jev-der-detektor-wahrscheinlichkeiten-statt-urteile",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-internes-openai-modell-findet-exakte-rate",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-was-ein-lehrbuch-inhaltsverzeichnis-uber-maschinelles"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-was-ein-lehrbuch-inhaltsverzeichnis-uber-maschinelles",
+    "2026-10-13-humanoid-vs-functional-robotics-manufacturing-automation": "2026-10-13-humanoid-oder-funktional-fabrik-folgt-form",
+    "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-memory-computing-chiplets-robotik-jenseits-moores"
   },
   "es": {
     "2023-10-09-shokunin-el-generador-de-sitios-estaticos-rust-mas-rapido": "2023-10-09-el-generador-de-sitios-estaticos-rust-mas-rapido",
@@ -462,7 +470,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-tecnologia-llega-antes-institucion-comite",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-jev-el-detector-lee-probabilidades-lugar",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-modelo-interno-openai-fija-tasa-exacta",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-indice-de-manual-aprendizaje-automatico-dice"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-indice-de-manual-aprendizaje-automatico-dice",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robot-humanoide-funcional-fabrica-forma-sigue",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-computo-en-memoria-chiplets-robotica-mas"
   },
   "fil": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-balik-tanaw-sa-taon",
@@ -588,7 +598,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-komite-ng-mit-ai-nauna-teknolohiya",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-detektor-na-bumabasa-probabilidad-hindi-hatol",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-panloob-na-modelo-openai-tiniyak-decay",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-talaan-ng-nilalaman-aklat-machine-learning"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-talaan-ng-nilalaman-aklat-machine-learning",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-humanoid-laban-functional-robotics-anyo-ayon",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-lampas-sa-batas-ni-moore"
   },
   "fr": {
     "2023-10-09-shokunin-generateur-de-sites-statiques-rust-le-plus-rapide": "2023-10-09-generateur-de-sites-statiques-rust-le-plus-rapide",
@@ -639,7 +651,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-technologie-plus-rapide-que-institution-comite",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-jev-le-detecteur-lit-probabilites-plutot",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-modele-interne-openai-fixe-taux-exact",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-sommaire-de-manuel-apprentissage-automatique-dit"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-sommaire-de-manuel-apprentissage-automatique-dit",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robot-humanoide-ou-fonctionnel-usine-forme",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-calcul-en-memoire-chiplets-depasser-loi"
   },
   "ha": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-waiwayen-shekara-guda-cryptocurrency-farko",
@@ -757,7 +771,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-kwamitin-mit-kan-ai-fasaha-iso",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-mai-gano-gazawa-ke-karanta-yiwuwa",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-samfurin-openai-cikin-gida-tantance-saurin",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-teburin-abubuwan-ciki-littafin-machine-learning"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-teburin-abubuwan-ciki-littafin-machine-learning",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robot-mai-siffar-mutum-aiki-siffa",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-wuce-dokar-moore-in-memory-compute"
   },
   "he": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-skirat-shana",
@@ -882,7 +898,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-vaadat-mit-levina-malakhutit-hatekhnologia-makdima",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-galai-shekore-histabruyot-bimkom-piskei-din",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-model-pnimi-openai-kovea-ketsev-hadeikha",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-tokhen-hainyanim-spr-belemidat-mekhona-uma"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-tokhen-hainyanim-spr-belemidat-mekhona-uma",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robotim-dmuyei-adam-av-funktsionaliyim-hatsura",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-maavar-lechok-mvr-mihshuv-betokh-hazikaron"
   },
   "hi": {
     "2023-10-09-shokunin-sabse-tez-rust-static-site-generator": "2023-10-09-sabse-tez-rust-static-site-generator",
@@ -956,7 +974,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-jab-taknik-sansthanon-pahale-pahunche-padhai",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-faisle-nahin-sambhavnaen-padhne-vala-detektar",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-cohn-elkies-sphiyar-paiking-satik-kshay",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-mashin-larning-pathyapustak-vishay-suchi-kshetr"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-mashin-larning-pathyapustak-vishay-suchi-kshetr",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hyumanoid-banam-fankshanal-robot-faiktari-rup",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-mur-ke-niyam-age-ej-robotiks"
   },
   "id": {
     "2023-10-09-shokunin-generator-situs-statis-rust-tercepat": "2023-10-09-generator-situs-statis-rust-tercepat",
@@ -1028,7 +1048,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-teknologi-mendahului-institusi-komite-ai-mit",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-detektor-yang-membaca-probabilitas-bukan-vonis",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-model-openai-menentukan-laju-peluruhan-tepat",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-apa-kata-daftar-isi-buku-ajar"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-apa-kata-daftar-isi-buku-ajar",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robot-humanoid-fungsional-pabrik-bentuk-mengikuti",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-melampaui-hukum-moore-komputasi-dalam-memori"
   },
   "it": {
     "2023-10-09-shokunin-il-generatore-di-siti-statici-rust-piu-veloce": "2023-10-09-il-generatore-di-siti-statici-rust-piu-veloce",
@@ -1094,7 +1116,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-tecnologia-arriva-prima-dell-istituzione-comitato",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-jev-il-rilevatore-legge-probabilita-invece",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-modello-interno-openai-fissa-tasso-esatto",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-cosa-dice-indice-manuale-apprendimento-automatico"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-cosa-dice-indice-manuale-apprendimento-automatico",
+    "2026-10-13-humanoid-vs-functional-robotics-manufacturing-automation": "2026-10-13-robot-umanoidi-funzionali-fabbrica-forma-segue",
+    "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-calcolo-in-memoria-chiplet-robotica-oltre"
   },
   "ja": {
     "2023-10-09-shokunin-saisoku-no-rust-sei-shizen-saito-jenereta": "2023-10-09-saisoku-no-rust-sei-shizen-saito-jenereta",
@@ -1168,7 +1192,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-mit-ai-iinkai-seido-yori-saki",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-hantei-kakazu-kakuritsu-yomu-kenshutsuki-jev",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-openai-naibu-moderu-cohn-elkies-kyujuten",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-kikai-gakushu-kyokasho-mokuji-kataru-bunya"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-kikai-gakushu-kyokasho-mokuji-kataru-bunya",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hyumanoido-tai-kinogata-robotto-seizo-genba",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-muua-hosoku-saki-inmemori-enzan-chippuretto"
   },
   "ko": {
     "2023-10-09-shokunin-choegoseok-rust-gibon-jeongjeoksaiteu-saengseonggi": "2023-10-09-choegoseok-rust-gibon-jeongjeoksaiteu-saengseonggi",
@@ -1240,7 +1266,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-mit-ai-wiwonhoe-bogoseo-jedoboda-meonjeo",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-pangyeol-daesin-hwakryuleul-ilkneun-tamjigi-jev",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-openai-naebu-model-cohn-elkies",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-meosinreoning-gyogwaseoui-mokchaga-malhae-juneun-bunyaui"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-meosinreoning-gyogwaseoui-mokchaga-malhae-juneun-bunyaui",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hyumeonoideu-dae-gineunghyeong-robot-jejo-hyeonjangeseoneun",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-mueoui-beopchik-neomeoro-inmemori-yeonsangwa-chipreti"
   },
   "nl": {
     "2023-10-09-shokunin-de-snelste-rust-gebaseerde-statische-sitegenerator": "2023-10-09-de-snelste-rust-gebaseerde-statische-sitegenerator",
@@ -1314,7 +1342,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-technologie-sneller-dan-instelling-ai-commissie",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-jev-de-detector-kansen-leest-plaats",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-intern-openai-model-legt-exacte-vervalsnelheid",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-wat-de-inhoudsopgave-leerboek-machine-learning"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-wat-de-inhoudsopgave-leerboek-machine-learning",
+    "2026-10-13-humanoid-vs-functional-robotics-manufacturing-automation": "2026-10-13-humanoide-of-functionele-robots-fabriek-vorm",
+    "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-rekenen-in-geheugen-chiplets-robotica-voorbij"
   },
   "pl": {
     "2023-10-09-shokunin-najszybszy-generator-stron-statycznych-w-rust": "2023-10-09-najszybszy-generator-stron-statycznych-w-rust",
@@ -1387,7 +1417,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-komisja-mit-ds-ai-technologia-wyprzedzi",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-detektor-czyta-prawdopodobienstwa-nie-werdykty-jev",
     "2026-10-05-internal-openai-model-pins-down-exact": "2026-10-05-model-openai-wyznacza-dok-adne-tempo",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-spis-tresci-podrecznika-uczenia-maszynowego-mowi"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-spis-tresci-podrecznika-uczenia-maszynowego-mowi",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-humanoidy-czy-roboty-funkcjonalne-forma-podaza",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-obliczenia-pamieci-chiplety-robotyka-brzegowa-poza"
   },
   "pt-br": {
     "2023-10-09-shokunin-o-gerador-de-sites-estaticos-rust-mais-rapido": "2023-10-09-o-gerador-de-sites-estaticos-rust-mais-rapido",
@@ -1453,7 +1485,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-tecnologia-chega-antes-instituicao-comite",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-jev-detector-le-probabilidades-vez-veredictos",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-modelo-interno-openai-fixa-taxa-exata",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-sumario-de-livro-aprendizado-maquina-diz"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-sumario-de-livro-aprendizado-maquina-diz",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robos-humanoides-ou-funcionais-na-fabrica",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-computacao-em-memoria-chiplets-robotica-alem"
   },
   "ro": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-retrospectiva-primului-an-primei-criptomonede",
@@ -1571,7 +1605,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-comitetul-mit-ai-tehnologia-sosit-inainte",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-detectorul-care-citeste-probabilitati-nu-verdicte",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-model-openai-determina-rata-exacta-descrestere",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-spune-cuprinsul-unui-manual-invatare-automata"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-spune-cuprinsul-unui-manual-invatare-automata",
+    "2026-10-13-humanoid-vs-functional-robotics-manufacturing-automation": "2026-10-13-roboti-umanoizi-sau-functionali-forma-urmeaza",
+    "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-calcul-in-memorie-chipleturi-robotica-dincolo"
   },
   "ru": {
     "2023-10-09-shokunin-samyi-bystryi-staticheskii-generator-na-rust": "2023-10-09-samyi-bystryi-staticheskii-generator-na-rust",
@@ -1643,7 +1679,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-tekhnologiya-operedila-institut-komitet-mit",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-detektor-veroyatnostyami-vmesto-verdiktov-jev-44",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-model-openai-nashla-tochnuyu-skorost-ubyvaniya",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-oglavlenie-uchebnika-mashinnomu-obucheniyu-govorit-samoy"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-oglavlenie-uchebnika-mashinnomu-obucheniyu-govorit-samoy",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-gumanoidy-ili-funktsionalnye-roboty-zavode-forma",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-vychisleniya-pamyati-chiplety-robototekhnika-predelami-zakona"
   },
   "sv": {
     "2023-10-09-shokunin-snabbaste-rust-baserade-statiska-sajtgeneratorn": "2023-10-09-snabbaste-rust-baserade-statiska-sajtgeneratorn",
@@ -1717,7 +1755,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-mit-ai-kommitte-tekniken-kom-innan",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-detektor-som-laser-sannolikheter-stallet-domar",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-intern-openai-modell-faststaller-cohn-elkies",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-vad-en-laroboks-innehallsforteckning-sager"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-vad-en-laroboks-innehallsforteckning-sager",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-humanoida-mot-funktionella-robotar-form-foljer",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-bortom-moores-lag-minnesintern-berakning-chiplets"
   },
   "th": {
     "2023-10-09-shokunin-static-site-generator-thi-reo-thi-sut-bon-rust": "2023-10-09-static-site-generator-thi-reo-thi-sut-bon-rust",
@@ -1790,7 +1830,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-theknoloyi-ma-kon-sathaban-prap-tua",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-tuatruatchap-thi-an-khwamnachapen-thaen-khamtatsin",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-kanbanchu-songklom-cohn-elkies-model-phainai",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-saraban-tamra-maechchin-loenning-bok-arai"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-saraban-tamra-maechchin-loenning-bok-arai",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hiumaenoi-patha-hunyon-choeng-nathi-rongngan",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-kaokham-kot-mua-pramuanphon-nuaikhwamcham-chiplet"
   },
   "tr": {
     "2023-10-09-shokunin-rust-tabanli-en-hizli-statik-site-jeneratoru": "2023-10-09-rust-tabanli-en-hizli-statik-site-jeneratoru",
@@ -1863,7 +1905,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-teknoloji-kurumdan-hizli-mit-nin-yapay",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-hukum-yazmak-yerine-olasilik-okuyan-dedektor",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-openai-modeli-cohn-elkies-sinirinin-kesin",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-makine-ogrenmesi-kitabinin-icindekiler-sayfasi-alana"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-makine-ogrenmesi-kitabinin-icindekiler-sayfasi-alana",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-insansi-mi-islevsel-robot-mu-fabrikada",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-bellek-ici-hesaplama-cipletler-robotikte-moore"
   },
   "uk": {
     "2023-10-09-shokunin-naishvydshyi-rust-statychnyy-henerator": "2023-10-09-naishvydshyi-rust-statychnyy-henerator",
@@ -1936,7 +1980,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-tekhnolohiya-vyperedyla-instytutsiyu-komitet-mit-pro",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-detektor-imovirnostyamy-zamist-verdyktiv-jev-44",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-model-openai-znayshla-tochnu-shvydkist-spadannya",
-    "2026-10-10-what-machine-learning-textbooks-contents-page": "2026-10-10-zmist-pidruchnyka-mashynnoho-navchannya-kazhe-pro"
+    "2026-10-10-what-machine-learning-textbooks-contents-page": "2026-10-10-zmist-pidruchnyka-mashynnoho-navchannya-kazhe-pro",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-humanoyidy-chy-funktsionalni-roboty-zavodi-forma",
+    "2026-10-13-moving-past-moores-law-in-memory": "2026-10-13-poza-zakonom-mura-analohovi-obchyslennya"
   },
   "vi": {
     "2023-10-09-shokunin-bo-tao-trang-tinh-rust-nhanh-nhat": "2023-10-09-bo-tao-trang-tinh-rust-nhanh-nhat",
@@ -2010,7 +2056,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-cong-nghe-di-truoc-the-che",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-phat-hien-doc-xac-suat-thay",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-hinh-openai-xac-dinh-toc",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-muc-luc-mot-giao-trinh-hoc"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-muc-luc-mot-giao-trinh-hoc",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robot-hinh-nguoi-hay-chuc-nang",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-vuot-dinh-luat-moore-tinh-toan"
   },
   "yo": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-atunyewo-odun-kan-cryptocurrency-akoko",
@@ -2129,7 +2177,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-igbimo-mit-lori-ai-imo-ero",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-asawari-ti-ka-iseese-dipo-idajo",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-awose-inu-openai-sawari-iwon-idinku",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-atojo-akoonu-iwe-machine-learning-ohun"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-atojo-akoonu-iwe-machine-learning-ohun",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robooti-bi-eniyan-tabi-ise-irisi",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-koja-ofin-moore-in-memory-compute"
   },
   "zh-hans": {
     "2023-10-09-shokunin-zuikuai-de-rust-jingtai-zhandian-shengchengqi": "2023-10-09-zuikuai-de-rust-jingtai-zhandian-shengchengqi",
@@ -2201,7 +2251,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-mit-ai-weiyuanhui-baogao-jishu-xianyu",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-gailu-erfei-xie-panjue-jianceqi-44",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-openai-neibu-moxing-queding-cohn-elkies",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-jiqi-xuexi-jiaokeshu-mulu-ruhe-miaohui"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-jiqi-xuexi-jiaokeshu-mulu-ruhe-miaohui",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-renxing-jiqiren-gongnengxing-gongchang-chejian",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-chaoyue-moer-dinglu-cunnei-jisuan-xinli"
   },
   "zh-hant": {
     "2023-10-09-shokunin-zuikuai-de-rust-jingtai-zhandian-shengchengqi-tw": "2023-10-09-zuikuai-de-rust-jingtai-zhandian-shengchengqi-tw",
@@ -2273,7 +2325,9 @@
     "2026-09-25-when-the-technology-lands-before-institution-tw": "2026-09-25-mit-ai-weiyuanhui-baogao-jishu-xianyu-tw",
     "2026-09-30-detector-that-reads-probabilities-instead-tw": "2026-09-30-jilu-erfei-xie-panjue-zhenceqi-44-tw",
     "2026-10-05-internal-openai-model-pins-down-the-tw": "2026-10-05-openai-neibu-moxing-queding-cohn-elkies-tw",
-    "2026-10-10-what-machine-learning-textbook-contents-page-tw": "2026-10-10-jiqi-xuexi-jiaokeshu-mulu-ruhe-miaohui-tw"
+    "2026-10-10-what-machine-learning-textbook-contents-page-tw": "2026-10-10-jiqi-xuexi-jiaokeshu-mulu-ruhe-miaohui-tw",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing-tw": "2026-10-13-renxing-jiqiren-gongnengxing-gongchang-xianchang-tw",
+    "2026-10-13-moving-past-moore-law-in-memory-tw": "2026-10-13-chaoyue-moer-dinglu-jiyitinei-yunsuan-xiaojingpian-tw"
   },
   "el": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-mia-anaskopisi-chronias-protou-kryptonomismatos",
@@ -2386,7 +2440,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-epitropi-tou-mit-tin-ai-technologia",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-anichneftis-pou-diavazei-pithanotites-ochi-etymigories",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-montelo-tis-openai-vriskei-akrivi-rythmo",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-lene-ta-periechomena-enos-vivliou-michanikis"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-lene-ta-periechomena-enos-vivliou-michanikis",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-anthropoeidi-leitourgika-robot-morfi-akolouthei-leitourgia",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-ypologismos-sti-mnimi-chiplets-robot-pera"
   },
   "mr": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitakoin-pahilya-kriptokaransicha-varshabharacha-adhava",
@@ -2499,7 +2555,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-snstha-julavun-ghenyaadhi-tntrajnan-pohochate-shikshan",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-nikal-navhe-snbhavyata-vachanara-ditektar-44",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-cohn-elkies-sphiar-pekingacha-achuk-kshay",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-mashin-larning-pathyapustakechi-anukramanika-kshetrabaddal-kay"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-mashin-larning-pathyapustakechi-anukramanika-kshetrabaddal-kay",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hyumanoid-viruddh-phnkshanal-robot-karakhanyat-rup",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-murachya-niyamapalikade-ej-robotiksasathi-in-memari"
   },
   "ta": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-pitkayin-muthal-kiriptokaranchiyin-aantu-milayvu",
@@ -2612,7 +2670,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-niruvanangkalukku-munpe-vantha-thozhilnutpam-kalvi-kuriththu",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-thirppu-alla-nikazhthakavukalaip-patikkum-kantarivi-44",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-cohn-elkies-kola-atukkalin-thulliyath-theyvu",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-meshin-lerning-patanulin-ullatakkap-pakkam-iththurai"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-meshin-lerning-patanulin-ullatakkap-pakkam-iththurai",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hiyumanaytu-ethir-cheyalpattu-ropo-aalaiyil-vativam",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-mur-vithikku-appal-etj-ropokkalukkana"
   },
   "te": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitkayin-modati-kriptokarensi-yokka-samvatsara-samiksha",
@@ -2725,7 +2785,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-samsthala-kamte-mumde-vachchina-samketikata-vidya",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-tirpulu-kadu-sambhavyatalu-chadive-ditektar-44",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-cohn-elkies-gola-pyakimg-kachchitamaina-kshaya",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-meshin-lernimg-pathyapustakam-vishayasuchika-ii-ramgam"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-meshin-lernimg-pathyapustakam-vishayasuchika-ii-ramgam",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hyumanayid-varses-phamkshanal-robolu-phyaktarilo-rupam",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-mur-niyamam-dati-edj-robotiksku"
   },
   "hu": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-az-elso-kriptovaluta-evenek-attekintese",
@@ -2838,7 +2900,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-mit-ai-bizottsaga-technologia-gyorsabb-volt",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-iteletek-helyett-valoszinusegeket-olvaso-detektor-jev",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-openai-modell-hatarozta-cohn-elkies-program",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-mit-arul-el-gepi-tanulasi-tankonyv"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-mit-arul-el-gepi-tanulasi-tankonyv",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-humanoid-vagy-funkcionalis-robot-forma-koveti",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-memoriaban-szamitas-chipletek-peremrobotika-moore-torvenyen"
   },
   "ms": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-ulasan-tahunan-mata-wang-kripto",
@@ -2951,7 +3015,9 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-teknologi-mendahului-institusi-jawatankuasa-ai-mit",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-pengesan-kebarangkalian-bukan-keputusan-jev-44",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-model-openai-menentukan-kadar-susutan-tepat",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-apa-kata-halaman-kandungan-buku-teks"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-apa-kata-halaman-kandungan-buku-teks",
+    "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robot-humanoid-fungsian-kilang-bentuk-mengikut",
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-melangkaui-hukum-moore-pengkomputeran-dalam-memori"
   },
   "fa": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-bazngari-salane",
@@ -3064,6 +3130,8 @@
     "2026-09-25-when-the-technology-lands-before-institution": "2026-09-25-kmyth-mit-drbarh-hwsh-msnway-fnawry",
     "2026-09-30-detector-that-reads-probabilities-instead": "2026-09-30-aashkarsazy-kh-bhjay-sdwr-hkm-ahtmal",
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-mdl-drwny-openai-nrkh-dqyq-aft",
-    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-fhrst-mtalb-yk-ktab-yadgyry-mashyn"
+    "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-fhrst-mtalb-yk-ktab-yadgyry-mashyn",
+    "2026-10-13-humanoid-vs-functional-robotics-manufacturing-automation": "2026-10-13-rbat-ansannma-ya-karkrdy-dr-karkhanh",
+    "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-fratr-az-qanwn-mwr-mhasbh-drwn"
   }
 }
