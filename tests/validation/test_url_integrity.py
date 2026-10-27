@@ -26,17 +26,28 @@ needs either today (0 of 10441 external URLs), and a link to a genuinely
 non-ASCII URL can be added to ALLOW with a note rather than by loosening the
 check.
 
+A link to an English article (``sebastienrousseau.com/<date>-<slug>``, no
+locale prefix) must also name a live English post or a retired slug that
+``_data/redirects/articles.json`` redirects. 384 links across 169 posts named
+five English slugs that never existed (a guessed ``-vs-`` slug, a typo, a
+Polish slug without its ``/pl/`` prefix) and served a 404.
+
 Usage:  python3 tests/validation/test_url_integrity.py
 """
 
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 POSTS = ROOT / "_posts"
+REDIRECTS = ROOT / "_data" / "redirects" / "articles.json"
+
+# An English article URL: the site root followed directly by a dated slug.
+_EN_ARTICLE = re.compile(r"https://sebastienrousseau\.com/(\d{4}-\d{2}-\d{2}-[a-z0-9-]+)")
 
 _URL = re.compile(r"https?://[^\s\)\]\"'<>]+")
 
@@ -109,14 +120,28 @@ def offences(text: str) -> list[str]:
     return found
 
 
+def dead_article_links(text: str, live: frozenset[str]) -> list[str]:
+    """English article URLs whose slug is neither a post nor redirected."""
+    dead = sorted({slug for slug in _EN_ARTICLE.findall(text) if slug not in live})
+    return [f"no such English article: {slug}" for slug in dead]
+
+
+def live_english_slugs() -> frozenset[str]:
+    """English post slugs plus the retired English slugs that redirect."""
+    redirects = json.loads(REDIRECTS.read_text(encoding="utf-8")).get("en", {})
+    return frozenset(p.stem for p in POSTS.glob("*.md")) | frozenset(redirects)
+
+
 def main() -> int:
     failures: list[str] = []
     scanned = 0
+    live = live_english_slugs()
     for post in sorted(POSTS.rglob("*.md")):
         scanned += 1
+        text = post.read_text(encoding="utf-8")
         failures.extend(
             f"{post.relative_to(ROOT)}: {offence}"
-            for offence in offences(post.read_text(encoding="utf-8"))
+            for offence in offences(text) + dead_article_links(text, live)
         )
 
     if failures:

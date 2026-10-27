@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Live.</strong> The Brand New Heavies med Galliano på The Glasshouse och The James Taylor Quartet på Ronnie Scott's är de tydligaste acid jazz-signalerna i 2026 års spellistor.</li>
   <li><strong>Festival.</strong> Mostly Jazz Funk & Soul Festival (10–12 juli 2026) sätter upp Soul II Soul, Cymande, Jordan Rakei och Sampa The Great sida vid sida med legacyartister inom jazzfunk.</li>
 </ul>
-<p class="post-lead-related"><strong>Relaterad läsning:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Tokeniserade depositioner: bankväsendets pågående transformation 2026</a>.</p>
+<p class="post-lead-related"><strong>Relaterad läsning:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Tokeniserade depositioner: bankväsendets pågående transformation 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 

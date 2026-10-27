@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>라이브.</strong> The Glasshouse에서의 Brand New Heavies·Galliano 협연과 Ronnie Scott's에서의 James Taylor Quartet 공연은 2026년 라이브 목록에서 가장 선명한 애시드 재즈 신호다.</li>
   <li><strong>페스티벌.</strong> Mostly Jazz Funk & Soul Festival(2026년 7월 10–12일)은 Soul II Soul, Cymande, Jordan Rakei, Sampa The Great를 레거시 재즈 펑크 아티스트들과 함께 무대에 올린다.</li>
 </ul>
-<p class="post-lead-related"><strong>관련 읽을거리:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">토큰화 예금: 2026년 진행 중인 뱅킹 변혁</a>.</p>
+<p class="post-lead-related"><strong>관련 읽을거리:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">토큰화 예금: 2026년 진행 중인 뱅킹 변혁</a>.</p>
 </aside>
 <!-- lead-end -->
 

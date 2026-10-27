@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>現場。</strong> The Brand New Heavies 與 Galliano 在 The Glasshouse 同台，以及 The James Taylor Quartet 在 Ronnie Scott’s 的演出，是2026年演出表中最鮮明的酸性爵士訊號。</li>
   <li><strong>音樂節。</strong> Mostly Jazz Funk & Soul Festival（2026年7月10至12日）節目包含 Soul II Soul、Cymande、Jordan Rakei 與 Sampa The Great，與傳統爵士放克樂手並列。</li>
 </ul>
-<p class="post-lead-related"><strong>延伸閱讀：</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">代幣化存款：2026年銀行業轉型進行式</a>。</p>
+<p class="post-lead-related"><strong>延伸閱讀：</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">代幣化存款：2026年銀行業轉型進行式</a>。</p>
 </aside>
 <!-- lead-end -->
 

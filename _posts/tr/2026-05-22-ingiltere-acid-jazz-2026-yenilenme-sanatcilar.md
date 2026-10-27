@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Canlı.</strong> The Glasshouse’daki The Brand New Heavies with Galliano ve Ronnie Scott’s’taki The James Taylor Quartet, 2026 konser takviminin en belirgin acid jazz göstergeleri.</li>
   <li><strong>Festival.</strong> Mostly Jazz Funk & Soul Festival (10–12 Temmuz 2026), Soul II Soul, Cymande, Jordan Rakei ve Sampa The Great’i köklü jazz funk isimleriyle aynı sahnede sunuyor.</li>
 </ul>
-<p class="post-lead-related"><strong>İlgili okuma:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Tokenize Mevduatlar: 2026’da Süregelen Bankacılık Dönüşümü</a>.</p>
+<p class="post-lead-related"><strong>İlgili okuma:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Tokenize Mevduatlar: 2026’da Süregelen Bankacılık Dönüşümü</a>.</p>
 </aside>
 <!-- lead-end -->
 

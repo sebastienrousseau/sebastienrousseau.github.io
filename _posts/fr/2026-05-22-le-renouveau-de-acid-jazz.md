@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Live.</strong> The Brand New Heavies avec Galliano au Glasshouse et The James Taylor Quartet au Ronnie Scott's sont les signaux acid jazz les plus clairs dans les programmations 2026.</li>
   <li><strong>Festival.</strong> Le Mostly Jazz Funk & Soul Festival (10–12 juillet 2026) programme Soul II Soul, Cymande, Jordan Rakei et Sampa The Great aux côtés des grandes formations historiques du jazz funk.</li>
 </ul>
-<p class="post-lead-related"><strong>À lire aussi :</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Dépôts tokenisés : la transformation bancaire en cours en 2026</a>.</p>
+<p class="post-lead-related"><strong>À lire aussi :</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Dépôts tokenisés : la transformation bancaire en cours en 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 

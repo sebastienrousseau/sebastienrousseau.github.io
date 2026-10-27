@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Panggung.</strong> The Brand New Heavies bersama Galliano di The Glasshouse dan The James Taylor Quartet di Ronnie Scott's adalah sinyal acid jazz paling jelas dalam daftar acara 2026.</li>
   <li><strong>Festival.</strong> Mostly Jazz Funk & Soul Festival (10–12 Juli 2026) menampilkan Soul II Soul, Cymande, Jordan Rakei, dan Sampa The Great bersama pelaku jazz funk era lama.</li>
 </ul>
-<p class="post-lead-related"><strong>Bacaan terkait:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Tokenised Deposits: Transformasi Perbankan yang Sedang Berlangsung di 2026</a>.</p>
+<p class="post-lead-related"><strong>Bacaan terkait:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Tokenised Deposits: Transformasi Perbankan yang Sedang Berlangsung di 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 

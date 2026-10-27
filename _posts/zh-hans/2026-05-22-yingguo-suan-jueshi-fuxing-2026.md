@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>现场。</strong> The Brand New Heavies 携 Galliano 亮相 The Glasshouse，以及 The James Taylor Quartet 登台 Ronnie Scott’s，是2026年演出排期中最鲜明的酸爵士信号。</li>
   <li><strong>音乐节。</strong> Mostly Jazz Funk & Soul Festival（2026年7月10日至12日）将 Soul II Soul、Cymande、Jordan Rakei 与 Sampa The Great 和传统爵士放克艺人同台排期。</li>
 </ul>
-<p class="post-lead-related"><strong>延伸阅读：</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">代币化存款：2026年银行业转型进行时</a>。</p>
+<p class="post-lead-related"><strong>延伸阅读：</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">代币化存款：2026年银行业转型进行时</a>。</p>
 </aside>
 <!-- lead-end -->
 

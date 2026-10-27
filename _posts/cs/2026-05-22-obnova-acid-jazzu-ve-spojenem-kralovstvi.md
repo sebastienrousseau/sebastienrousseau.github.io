@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Živě.</strong> The Brand New Heavies s Gallianem v The Glasshouse a The James Taylor Quartet v Ronnie Scott's jsou nejjasněji čitelné signály acid jazzu v nabídce roku 2026.</li>
   <li><strong>Festival.</strong> Mostly Jazz Funk & Soul Festival (10.–12. července 2026) uvádí Soul II Soul, Cymande, Jordana Rakeiho a Sampu The Great vedle legendárních jazz-funkových kapel.</li>
 </ul>
-<p class="post-lead-related"><strong>Související čtení:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Tokenizované vklady: bankovní transformace probíhající v roce 2026</a>.</p>
+<p class="post-lead-related"><strong>Související čtení:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Tokenizované vklady: bankovní transformace probíhající v roce 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 

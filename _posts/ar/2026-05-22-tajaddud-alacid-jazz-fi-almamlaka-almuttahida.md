@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>الحفلات.</strong> يمثّل The Brand New Heavies مع Galliano في The Glasshouse وThe James Taylor Quartet في Ronnie Scott's أوضح إشارتَين للأسيد جاز في قوائم 2026.</li>
   <li><strong>المهرجان.</strong> يُبرمج مهرجان Mostly Jazz Funk & Soul Festival (10–12 يوليو 2026) Soul II Soul وCymande وJordan Rakei وSampa The Great إلى جانب أسماء جاز فانك الكلاسيكية.</li>
 </ul>
-<p class="post-lead-related"><strong>قراءة ذات صلة:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">الودائع الرمزية: التحول المصرفي الجاري عام 2026</a>.</p>
+<p class="post-lead-related"><strong>قراءة ذات صلة:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">الودائع الرمزية: التحول المصرفي الجاري عام 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 

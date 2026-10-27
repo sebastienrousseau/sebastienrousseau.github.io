@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Ere Orin.</strong> The Brand New Heavies pẹ̀lú Galliano ní The Glasshouse àti The James Taylor Quartet ní Ronnie Scott's jẹ́ àmì acid jazz tí ó kedere jùlọ nínú àkójọ 2026.</li>
   <li><strong>Àjọ̀dún.</strong> Mostly Jazz Funk & Soul Festival (10–12 Oṣù Èbìbí 2026) ń ṣèètò fún Soul II Soul, Cymande, Jordan Rakei, àti Sampa The Great lẹ́gbẹ̀ẹ́ àwọn olórin jazz-funk ìtàn.</li>
 </ul>
-<p class="post-lead-related"><strong>Kíkà tí ó jọmọ rẹ̀:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Àdéposito Tokenized: Ìyípadà Báńkì Tí Ó Wà Ní Ọ̀nà ní 2026</a>.</p>
+<p class="post-lead-related"><strong>Kíkà tí ó jọmọ rẹ̀:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Àdéposito Tokenized: Ìyípadà Báńkì Tí Ó Wà Ní Ọ̀nà ní 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 

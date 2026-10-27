@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>ライヴ。</strong>The GlasshouseでのThe Brand New HeaviesとGalliano、ロニー・スコッツでのThe James Taylor Quartetが、2026年のラインナップにおける最も明確なアシッド・ジャズの指標である。</li>
   <li><strong>フェスティバル。</strong>Mostly Jazz Funk & Soul Festival（2026年7月10〜12日）は、レガシーのジャズ・ファンク・アクトと並んで、Soul II Soul、Cymande、Jordan Rakei、Sampa The Greatをプログラムしている。</li>
 </ul>
-<p class="post-lead-related"><strong>関連記事：</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">トークン化預金：2026年に進行する銀行変革</a>。</p>
+<p class="post-lead-related"><strong>関連記事：</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">トークン化預金：2026年に進行する銀行変革</a>。</p>
 </aside>
 <!-- lead-end -->
 
