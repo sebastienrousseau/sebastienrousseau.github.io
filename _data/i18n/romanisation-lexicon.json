@@ -119,7 +119,15 @@
     "المعدل": "almuaddal",
     "الدقيق": "aldaqiq",
     "لاضمحلال": "lidmihlal",
-    "برنامج": "barnamaj"
+    "برنامج": "barnamaj",
+    "فهرس": "fihris",
+    "كتاب": "kitab",
+    "تعلم": "taallum",
+    "الآلة": "alala",
+    "وما": "wama",
+    "يكشفه": "yakshifuh",
+    "هذا": "hadha",
+    "المجال": "almajal"
   },
   "he": {
     "הבנת": "havanat",
@@ -220,7 +228,13 @@
     "קצב": "ketsev",
     "הדעיכה": "hadeikha",
     "המדויק": "hamduyak",
-    "תוכנית": "tokhnit"
+    "תוכנית": "tokhnit",
+    "תוכן": "tokhen",
+    "העניינים": "hainyanim",
+    "בלמידת": "belemidat",
+    "מכונה": "mekhona",
+    "מגלה": "megale",
+    "התחום": "hatkhum"
   },
   "bn": {
     "প্রমাণ": "praman",
@@ -253,7 +267,8 @@
     "স্ফিয়ার": "sphiyar",
     "প্যাকিংয়ের": "pyakingyer",
     "নিখুঁত": "nikhut",
-    "ক্ষয়হার": "kshayhar"
+    "ক্ষয়হার": "kshayhar",
+    "পাঠ্যবইয়ের": "pathyaboiyer"
   },
   "hi": {
     "बैंकों": "bainkon",
@@ -311,7 +326,9 @@
     "แทนคำตัดสิน": "thaen khamtatsin",
     "เบนช์มาร์ก": "benchmak",
     "การบรรจุทรงกลม": "kanbanchu songklom",
-    "โมเดลภายใน": "model phainai"
+    "โมเดลภายใน": "model phainai",
+    "สารบัญตำราแมชชีนเลิร์นนิง": "saraban tamra maechchin loenning",
+    "บอกอะไรเกี่ยวกับสาขานี้": "bok arai kiaokap sakha ni"
   },
   "ja": {
     "銀行": "ginko",
@@ -358,7 +375,10 @@
     "内部モデル": "naibu moderu",
     "球充填": "kyujuten",
     "正確な減衰率": "seikaku na gensuiritsu",
-    "特定": "tokutei"
+    "特定": "tokutei",
+    "機械学習の教科書": "kikai gakushu kyokasho",
+    "目次が語る": "mokuji kataru",
+    "この分野の姿": "bunya sugata"
   },
   "zh-hans": {
     "读懂": "dudong",
@@ -399,7 +419,10 @@
     "确定": "queding",
     "球堆积": "qiuduiji",
     "线性规划": "xianxing guihua",
-    "精确衰减率": "jingque shuaijianlv"
+    "精确衰减率": "jingque shuaijianlv",
+    "机器学习教科书的目录": "jiqi xuexi jiaokeshu mulu",
+    "如何描绘": "ruhe miaohui",
+    "这个领域": "zhege lingyu"
   },
   "zh-hant": {
     "讀懂": "dudong",
@@ -440,6 +463,9 @@
     "確定": "queding",
     "球堆積": "qiuduiji",
     "線性規劃": "xianxing guihua",
-    "精確衰減率": "jingque shuaijianlv"
+    "精確衰減率": "jingque shuaijianlv",
+    "機器學習教科書的目錄": "jiqi xuexi jiaokeshu mulu",
+    "如何描繪": "ruhe miaohui",
+    "這個領域": "zhege lingyu"
   }
 }

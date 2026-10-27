@@ -15,7 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - **`--rederive-slugs` redirects live URLs**: the 10 articles published from 2026-09-15 to 2026-10-13 are live in 34 locales with English bodies and titles, so translating them renames 340 locale URLs. ADR-0012 makes each such rename an individually redirected change, so when the old locale post exists on `origin/main` the step now adds `old -> new` to `_data/redirects/articles.json` and retargets any redirect that pointed at the old slug, so no chain forms. A stub that was never published is renamed without a redirect.
-- **Backlog articles read natively in 34 locales**: Two Nuclear Clocks (2026-09-15), Cloudflare's public CA (2026-09-20), the MIT AI committee report (2026-09-25), the Jev detector (2026-09-30) and the Cohn-Elkies sphere-packing result (2026-10-05) now carry full translations of the body and SEO front matter in every locale, each on a slug derived from its translated title, with the old URL redirected. No native-speaker review has been done yet.
+- **Backlog articles read natively in 34 locales**: Two Nuclear Clocks (2026-09-15), Cloudflare's public CA (2026-09-20), the MIT AI committee report (2026-09-25), the Jev detector (2026-09-30), the Cohn-Elkies sphere-packing result (2026-10-05) and the machine-learning textbook's contents page (2026-10-10) now carry full translations of the body and SEO front matter in every locale, each on a slug derived from its translated title, with the old URL redirected. No native-speaker review has been done yet.
 
 ### Fixed
 
