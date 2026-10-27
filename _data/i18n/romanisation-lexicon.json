@@ -106,7 +106,13 @@
     "قدرة": "qudrat",
     "المؤسسات": "almuassasat",
     "التكيّف": "altakayyuf",
-    "التكيف": "altakayyuf"
+    "التكيف": "altakayyuf",
+    "كاشف": "kashif",
+    "يقرأ": "yaqra",
+    "الاحتمالات": "alihtimalat",
+    "بدل": "badal",
+    "كتابة": "kitabat",
+    "الأحكام": "alahkam"
   },
   "he": {
     "הבנת": "havanat",
@@ -194,7 +200,13 @@
     "מקדימה": "makdima",
     "יכולת": "yekholet",
     "המוסדות": "hamosadot",
-    "להסתגל": "lehistagel"
+    "להסתגל": "lehistagel",
+    "גלאי": "galai",
+    "שקורא": "shekore",
+    "הסתברויות": "histabruyot",
+    "במקום": "bimkom",
+    "פסקי": "piskei",
+    "דין": "din"
   },
   "bn": {
     "প্রমাণ": "praman",
@@ -222,7 +234,8 @@
     "বিনামূল্যের": "binamulyer",
     "প্রতিষ্ঠানের": "pratishthaner",
     "হাজির": "hajir",
-    "শিক্ষা": "shiksha"
+    "শিক্ষা": "shiksha",
+    "ডিটেক্টর": "detektor"
   },
   "hi": {
     "बैंकों": "bainkon",
@@ -236,7 +249,10 @@
     "करना": "karna",
     "चाहता": "chahta",
     "तकनीक": "taknik",
-    "संस्थानों": "sansthanon"
+    "संस्थानों": "sansthanon",
+    "फ़ैसले": "faisle",
+    "संभावनाएँ": "sambhavnaen",
+    "डिटेक्टर": "detektar"
   },
   "th": {
     "การอ่าน": "kan an",
@@ -271,7 +287,11 @@
     "มาก่อน": "ma kon",
     "สถาบัน": "sathaban",
     "ปรับตัว": "prap tua",
-    "การสอน": "kan son"
+    "การสอน": "kan son",
+    "ตัวตรวจจับ": "tuatruatchap",
+    "อ่านความน่าจะเป็น": "an khwamnachapen",
+    "แทนคำตัดสิน": "thaen khamtatsin",
+    "เบนช์มาร์ก": "benchmak"
   },
   "ja": {
     "銀行": "ginko",
@@ -311,7 +331,10 @@
     "委員会": "iinkai",
     "制度より先に": "seido yori saki ni",
     "到来した技術": "torai shita gijutsu",
-    "教育を問う": "kyoiku wo tou"
+    "教育を問う": "kyoiku wo tou",
+    "判定を書かずに": "hantei kakazu",
+    "確率を読む": "kakuritsu yomu",
+    "検出器": "kenshutsuki"
   },
   "zh-hans": {
     "读懂": "dudong",
@@ -345,7 +368,9 @@
     "委员会": "weiyuanhui",
     "报告": "baogao",
     "技术先于制度到来": "jishu xianyu zhidu daolai",
-    "教与学": "jiaoyuxue"
+    "教与学": "jiaoyuxue",
+    "读概率而非写判决": "du gailu erfei xie panjue",
+    "检测器": "jianceqi"
   },
   "zh-hant": {
     "讀懂": "dudong",
@@ -379,6 +404,8 @@
     "委員會": "weiyuanhui",
     "報告": "baogao",
     "技術先於制度到來": "jishu xianyu zhidu daolai",
-    "教與學": "jiaoyuxue"
+    "教與學": "jiaoyuxue",
+    "讀機率而非寫判決": "du jilu erfei xie panjue",
+    "偵測器": "zhenceqi"
   }
 }
