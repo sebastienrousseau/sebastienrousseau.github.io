@@ -143,7 +143,14 @@
     "الذاكرة": "aldhakira",
     "والرقائق": "walraqaiq",
     "المعيارية": "almiyariya",
-    "للروبوتات": "lilrubutat"
+    "للروبوتات": "lilrubutat",
+    "المادي": "almaddi",
+    "تتيح": "tutih",
+    "الروبوتات": "alrubutat",
+    "للجميع": "liljami",
+    "وحوكمة": "wahawkamat",
+    "القوى": "alquwa",
+    "العاملة": "alamila"
   },
   "he": {
     "הבנת": "havanat",
@@ -266,7 +273,15 @@
     "הזיכרון": "hazikaron",
     "ושבבונים": "veshvavonim",
     "מודולריים": "modulariyim",
-    "לרובוטיקה": "lerobotika"
+    "לרובוטיקה": "lerobotika",
+    "פיזית": "fizit",
+    "בקוד": "bekod",
+    "פותחת": "potachat",
+    "הרובוטיקה": "harobotika",
+    "לכולם": "lekhulam",
+    "וממשל": "umimshal",
+    "עובדים": "ovdim",
+    "אמון": "emun"
   },
   "bn": {
     "প্রমাণ": "praman",
@@ -305,7 +320,9 @@
     "ফাংশনাল": "fangshanal",
     "রোবট": "robot",
     "কারখানায়": "karkhanay",
-    "পেরিয়ে": "periye"
+    "পেরিয়ে": "periye",
+    "ফিজিক্যাল": "fizikal",
+    "গভর্ন্যান্স": "gabharnyans"
   },
   "hi": {
     "बैंकों": "bainkon",
@@ -324,7 +341,8 @@
     "संभावनाएँ": "sambhavnaen",
     "डिटेक्टर": "detektar",
     "फ़ंक्शनल": "fankshanal",
-    "फ़ैक्टरी": "faiktari"
+    "फ़ैक्टरी": "faiktari",
+    "फ़िज़िकल": "fizikal"
   },
   "th": {
     "การอ่าน": "kan an",
@@ -372,7 +390,11 @@
     "ในโรงงานรูปทรงต้องตามหน้าที่": "nai rongngan rupsong tong tam nathi",
     "ก้าวข้ามกฎของมัวร์": "kaokham kot khong mua",
     "ประมวลผลในหน่วยความจำ": "pramuanphon nai nuaikhwamcham",
-    "และชิปเล็ตเพื่อหุ่นยนต์": "lae chiplet phuea hunyon"
+    "และชิปเล็ตเพื่อหุ่นยนต์": "lae chiplet phuea hunyon",
+    "กายภาพโอเพนซอร์ส": "kaiyaphap openson",
+    "เปิดวิทยาการหุ่นยนต์ให้ทุกคน": "poet witthayakan hunyon hai thukkhon",
+    "กายภาพกับธรรมาภิบาลกำลังคน": "kaiyaphap kap thammaphiban kamlangkhon",
+    "ความไว้วางใจ": "khwamwaiwangchai"
   },
   "ja": {
     "銀行": "ginko",
@@ -428,7 +450,11 @@
     "ムーアの法則の先へ": "muua hosoku saki",
     "インメモリ演算": "inmemori enzan",
     "チップレット": "chippuretto",
-    "エッジロボット": "ejji robotto"
+    "エッジロボット": "ejji robotto",
+    "オープンソースのフィジカルAI": "opunsosu fijikaru ai",
+    "フィジカル": "fijikaru",
+    "労働力ガバナンス": "rodoryoku gabanansu",
+    "信頼、責任、現場業務の再設計": "shinrai sekinin genba gyomu saisekkei"
   },
   "zh-hans": {
     "读懂": "dudong",
@@ -480,7 +506,11 @@
     "存内计算": "cunnei jisuan",
     "芯粒": "xinli",
     "如何驱动": "ruhe qudong",
-    "边缘机器人": "bianyuan jiqiren"
+    "边缘机器人": "bianyuan jiqiren",
+    "开源物理AI": "kaiyuan wuli ai",
+    "物理AI与": "wuli ai",
+    "劳动力治理": "laodongli zhili",
+    "信任、责任与一线作业的重新设计": "xinren zeren yixian zuoye chongxin sheji"
   },
   "zh-hant": {
     "讀懂": "dudong",
@@ -532,6 +562,10 @@
     "記憶體內運算": "jiyitinei yunsuan",
     "小晶片": "xiaojingpian",
     "如何驅動": "ruhe qudong",
-    "邊緣機器人": "bianyuan jiqiren"
+    "邊緣機器人": "bianyuan jiqiren",
+    "開源實體AI": "kaiyuan shiti ai",
+    "實體AI與": "shiti ai",
+    "勞動力治理": "laodongli zhili",
+    "信任、責任與第一線作業的重新設計": "xinren zeren diyixian zuoye chongxin sheji"
   }
 }

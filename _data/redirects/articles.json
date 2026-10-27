@@ -137,7 +137,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-namudhaj-dakhili-openai-yuhaddid-almuaddal-aldaqiq",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-fihris-kitab-taallum-alala-wama-yakshifuh",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-rubutat-bashariyya-alshakl-am-wazifiyya-yatba",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-tajawuz-qanun-mur-alhawsaba-dakhil-aldhakira"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-tajawuz-qanun-mur-alhawsaba-dakhil-aldhakira",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-aldhaka-alistinai-almaddi-mftwh-lam-sdr",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-aldhaka-alistinai-almaddi-wahawkamat-alquwa-alamila"
   },
   "bn": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-pratham-kriptokarensir-ek-bachharer-parjalochana",
@@ -258,7 +260,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-cohn-elkies-sphiyar-pyakingyer-nikhut-kshayhar",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-meshin-larning-pathyaboiyer-suchipatr-ei-kshetr",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hiumanoyed-banam-fangshanal-robot-karkhanay-rup",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-murer-sutr-periye-ej-robotikser"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-murer-sutr-periye-ej-robotikser",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-open-sors-fizikal-ai-lerobot-imiteshan",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizikal-ai-karmibahini-gabharnyans-astha-daj"
   },
   "cs": {
     "2023-10-09-shokunin-nejrychlejsi-staticky-generator-v-rustu": "2023-10-09-nejrychlejsi-staticky-generator-v-rustu",
@@ -334,7 +338,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-model-openai-urcil-presnou-rychlost-poklesu",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-obsah-ucebnice-strojoveho-uceni-prozrazuje-celem",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-humanoidi-nebo-funkcni-roboty-forma-nasleduje",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-vypocty-pameti-chiplety-edge-robotika-hranici"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-vypocty-pameti-chiplety-edge-robotika-hranici",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fyzicka-ai-otevrenym-kodem-jak-lerobot",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fyzicka-ai-rizeni-pracovni-sily-duvera"
   },
   "de": {
     "2023-10-09-shokunin-der-schnellste-rust-basierte-static-site-generator": "2023-10-09-der-schnellste-rust-basierte-static-site-generator",
@@ -402,7 +408,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-internes-openai-modell-findet-exakte-rate",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-was-ein-lehrbuch-inhaltsverzeichnis-uber-maschinelles",
     "2026-10-13-humanoid-vs-functional-robotics-manufacturing-automation": "2026-10-13-humanoid-oder-funktional-fabrik-folgt-form",
-    "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-memory-computing-chiplets-robotik-jenseits-moores"
+    "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-memory-computing-chiplets-robotik-jenseits-moores",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-physische-ki-als-open-source-wie",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-physische-ki-belegschaft-vertrauen-haftung-neue"
   },
   "es": {
     "2023-10-09-shokunin-el-generador-de-sitios-estaticos-rust-mas-rapido": "2023-10-09-el-generador-de-sitios-estaticos-rust-mas-rapido",
@@ -472,7 +480,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-modelo-interno-openai-fija-tasa-exacta",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-indice-de-manual-aprendizaje-automatico-dice",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robot-humanoide-funcional-fabrica-forma-sigue",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-computo-en-memoria-chiplets-robotica-mas"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-computo-en-memoria-chiplets-robotica-mas",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fisica-de-codigo-abierto-como-lerobot",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fisica-gobernanza-laboral-confianza-responsabilidad-trabajo"
   },
   "fil": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-balik-tanaw-sa-taon",
@@ -600,7 +610,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-panloob-na-modelo-openai-tiniyak-decay",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-talaan-ng-nilalaman-aklat-machine-learning",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-humanoid-laban-functional-robotics-anyo-ayon",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-lampas-sa-batas-ni-moore"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-lampas-sa-batas-ni-moore",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-open-source-physical-ai-lerobot-demokratisasyon",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-physical-ai-pamamahala-manggagawa-tiwala-pananagutan"
   },
   "fr": {
     "2023-10-09-shokunin-generateur-de-sites-statiques-rust-le-plus-rapide": "2023-10-09-generateur-de-sites-statiques-rust-le-plus-rapide",
@@ -653,7 +665,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-modele-interne-openai-fixe-taux-exact",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-sommaire-de-manuel-apprentissage-automatique-dit",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robot-humanoide-ou-fonctionnel-usine-forme",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-calcul-en-memoire-chiplets-depasser-loi"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-calcul-en-memoire-chiplets-depasser-loi",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-physique-open-source-comment-lerobot-democratise",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-physique-et-gouvernance-travail-confiance-responsabilite"
   },
   "ha": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-waiwayen-shekara-guda-cryptocurrency-farko",
@@ -773,7 +787,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-samfurin-openai-cikin-gida-tantance-saurin",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-teburin-abubuwan-ciki-littafin-machine-learning",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robot-mai-siffar-mutum-aiki-siffa",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-wuce-dokar-moore-in-memory-compute"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-wuce-dokar-moore-in-memory-compute",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-physical-ai-budadden-tushe-lerobot-bude",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-physical-ai-kula-kwadago-amana-alhaki"
   },
   "he": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-skirat-shana",
@@ -900,7 +916,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-model-pnimi-openai-kovea-ketsev-hadeikha",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-tokhen-hainyanim-spr-belemidat-mekhona-uma",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robotim-dmuyei-adam-av-funktsionaliyim-hatsura",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-maavar-lechok-mvr-mihshuv-betokh-hazikaron"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-maavar-lechok-mvr-mihshuv-betokh-hazikaron",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-bynh-malakhutit-fizit-bekod-ptvch-lerobot",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-bynh-malakhutit-fizit-umimshal-ovdim-emun"
   },
   "hi": {
     "2023-10-09-shokunin-sabse-tez-rust-static-site-generator": "2023-10-09-sabse-tez-rust-static-site-generator",
@@ -976,7 +994,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-cohn-elkies-sphiyar-paiking-satik-kshay",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-mashin-larning-pathyapustak-vishay-suchi-kshetr",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hyumanoid-banam-fankshanal-robot-faiktari-rup",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-mur-ke-niyam-age-ej-robotiks"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-mur-ke-niyam-age-ej-robotiks",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-opan-sors-fizikal-ai-lerobot-imiteshan",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizikal-ai-karyabal-gavarnens-bharosa-dayitv"
   },
   "id": {
     "2023-10-09-shokunin-generator-situs-statis-rust-tercepat": "2023-10-09-generator-situs-statis-rust-tercepat",
@@ -1050,7 +1070,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-model-openai-menentukan-laju-peluruhan-tepat",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-apa-kata-daftar-isi-buku-ajar",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robot-humanoid-fungsional-pabrik-bentuk-mengikuti",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-melampaui-hukum-moore-komputasi-dalam-memori"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-melampaui-hukum-moore-komputasi-dalam-memori",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fisik-sumber-terbuka-lerobot-membuat-robotika",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fisik-dan-tata-kelola-tenaga-kerja"
   },
   "it": {
     "2023-10-09-shokunin-il-generatore-di-siti-statici-rust-piu-veloce": "2023-10-09-il-generatore-di-siti-statici-rust-piu-veloce",
@@ -1118,7 +1140,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-modello-interno-openai-fissa-tasso-esatto",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-cosa-dice-indice-manuale-apprendimento-automatico",
     "2026-10-13-humanoid-vs-functional-robotics-manufacturing-automation": "2026-10-13-robot-umanoidi-funzionali-fabbrica-forma-segue",
-    "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-calcolo-in-memoria-chiplet-robotica-oltre"
+    "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-calcolo-in-memoria-chiplet-robotica-oltre",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fisica-open-source-come-lerobot-democratizza",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fisica-governance-lavoro-fiducia-responsabilita"
   },
   "ja": {
     "2023-10-09-shokunin-saisoku-no-rust-sei-shizen-saito-jenereta": "2023-10-09-saisoku-no-rust-sei-shizen-saito-jenereta",
@@ -1194,7 +1218,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-openai-naibu-moderu-cohn-elkies-kyujuten",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-kikai-gakushu-kyokasho-mokuji-kataru-bunya",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hyumanoido-tai-kinogata-robotto-seizo-genba",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-muua-hosoku-saki-inmemori-enzan-chippuretto"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-muua-hosoku-saki-inmemori-enzan-chippuretto",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-opunsosu-fijikaru-ai-hugging-face-lerobot",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fijikaru-ai-rodoryoku-gabanansu-shinrai-sekinin"
   },
   "ko": {
     "2023-10-09-shokunin-choegoseok-rust-gibon-jeongjeoksaiteu-saengseonggi": "2023-10-09-choegoseok-rust-gibon-jeongjeoksaiteu-saengseonggi",
@@ -1268,7 +1294,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-openai-naebu-model-cohn-elkies",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-meosinreoning-gyogwaseoui-mokchaga-malhae-juneun-bunyaui",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hyumeonoideu-dae-gineunghyeong-robot-jejo-hyeonjangeseoneun",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-mueoui-beopchik-neomeoro-inmemori-yeonsangwa-chipreti"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-mueoui-beopchik-neomeoro-inmemori-yeonsangwa-chipreti",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-opeunsoseu-pijikeol-ai-hugging-face-lerobot",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-pijikeol-ai-inryeok-geobeoneonseu-sinroe-chaekim"
   },
   "nl": {
     "2023-10-09-shokunin-de-snelste-rust-gebaseerde-statische-sitegenerator": "2023-10-09-de-snelste-rust-gebaseerde-statische-sitegenerator",
@@ -1344,7 +1372,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-intern-openai-model-legt-exacte-vervalsnelheid",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-wat-de-inhoudsopgave-leerboek-machine-learning",
     "2026-10-13-humanoid-vs-functional-robotics-manufacturing-automation": "2026-10-13-humanoide-of-functionele-robots-fabriek-vorm",
-    "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-rekenen-in-geheugen-chiplets-robotica-voorbij"
+    "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-rekenen-in-geheugen-chiplets-robotica-voorbij",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-opensource-fysieke-ai-hoe-lerobot-robotica",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fysieke-ai-governance-werk-vertrouwen-aansprakelijkheid"
   },
   "pl": {
     "2023-10-09-shokunin-najszybszy-generator-stron-statycznych-w-rust": "2023-10-09-najszybszy-generator-stron-statycznych-w-rust",
@@ -1419,7 +1449,9 @@
     "2026-10-05-internal-openai-model-pins-down-exact": "2026-10-05-model-openai-wyznacza-dok-adne-tempo",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-spis-tresci-podrecznika-uczenia-maszynowego-mowi",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-humanoidy-czy-roboty-funkcjonalne-forma-podaza",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-obliczenia-pamieci-chiplety-robotyka-brzegowa-poza"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-obliczenia-pamieci-chiplety-robotyka-brzegowa-poza",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fizyczna-ai-open-source-jak-lerobot",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizyczna-ai-pracownicy-zaufanie-odpowiedzialnosc-nowa"
   },
   "pt-br": {
     "2023-10-09-shokunin-o-gerador-de-sites-estaticos-rust-mais-rapido": "2023-10-09-o-gerador-de-sites-estaticos-rust-mais-rapido",
@@ -1487,7 +1519,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-modelo-interno-openai-fixa-taxa-exata",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-sumario-de-livro-aprendizado-maquina-diz",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robos-humanoides-ou-funcionais-na-fabrica",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-computacao-em-memoria-chiplets-robotica-alem"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-computacao-em-memoria-chiplets-robotica-alem",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fisica-de-codigo-aberto-como-lerobot",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fisica-governanca-trabalho-confianca-responsabilidade"
   },
   "ro": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-retrospectiva-primului-an-primei-criptomonede",
@@ -1607,7 +1641,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-model-openai-determina-rata-exacta-descrestere",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-spune-cuprinsul-unui-manual-invatare-automata",
     "2026-10-13-humanoid-vs-functional-robotics-manufacturing-automation": "2026-10-13-roboti-umanoizi-sau-functionali-forma-urmeaza",
-    "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-calcul-in-memorie-chipleturi-robotica-dincolo"
+    "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-calcul-in-memorie-chipleturi-robotica-dincolo",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fizica-open-source-cum-democratizeaza-lerobot",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizica-si-guvernanta-fortei-munca-incredere"
   },
   "ru": {
     "2023-10-09-shokunin-samyi-bystryi-staticheskii-generator-na-rust": "2023-10-09-samyi-bystryi-staticheskii-generator-na-rust",
@@ -1681,7 +1717,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-model-openai-nashla-tochnuyu-skorost-ubyvaniya",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-oglavlenie-uchebnika-mashinnomu-obucheniyu-govorit-samoy",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-gumanoidy-ili-funktsionalnye-roboty-zavode-forma",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-vychisleniya-pamyati-chiplety-robototekhnika-predelami-zakona"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-vychisleniya-pamyati-chiplety-robototekhnika-predelami-zakona",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-otkrytyy-fizicheskiy-ii-lerobot-delaet-robototekhniku",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizicheskiy-ii-upravlenie-personalom-doverie-otvetstvennost"
   },
   "sv": {
     "2023-10-09-shokunin-snabbaste-rust-baserade-statiska-sajtgeneratorn": "2023-10-09-snabbaste-rust-baserade-statiska-sajtgeneratorn",
@@ -1757,7 +1795,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-intern-openai-modell-faststaller-cohn-elkies",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-vad-en-laroboks-innehallsforteckning-sager",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-humanoida-mot-funktionella-robotar-form-foljer",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-bortom-moores-lag-minnesintern-berakning-chiplets"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-bortom-moores-lag-minnesintern-berakning-chiplets",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fysisk-ai-oppen-kallkod-sa-demokratiserar",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fysisk-ai-arbetskraftens-styrning-tillit-ansvar"
   },
   "th": {
     "2023-10-09-shokunin-static-site-generator-thi-reo-thi-sut-bon-rust": "2023-10-09-static-site-generator-thi-reo-thi-sut-bon-rust",
@@ -1832,7 +1872,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-kanbanchu-songklom-cohn-elkies-model-phainai",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-saraban-tamra-maechchin-loenning-bok-arai",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hiumaenoi-patha-hunyon-choeng-nathi-rongngan",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-kaokham-kot-mua-pramuanphon-nuaikhwamcham-chiplet"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-kaokham-kot-mua-pramuanphon-nuaikhwamcham-chiplet",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-kaiyaphap-openson-lerobot-poet-witthayakan-hunyon",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-kaiyaphap-kap-thammaphiban-kamlangkhon-khwamwaiwangchai-khwamrabphid"
   },
   "tr": {
     "2023-10-09-shokunin-rust-tabanli-en-hizli-statik-site-jeneratoru": "2023-10-09-rust-tabanli-en-hizli-statik-site-jeneratoru",
@@ -1907,7 +1949,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-openai-modeli-cohn-elkies-sinirinin-kesin",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-makine-ogrenmesi-kitabinin-icindekiler-sayfasi-alana",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-insansi-mi-islevsel-robot-mu-fabrikada",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-bellek-ici-hesaplama-cipletler-robotikte-moore"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-bellek-ici-hesaplama-cipletler-robotikte-moore",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-acik-kaynak-fiziksel-yapay-zeka-lerobot",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fiziksel-yapay-zeka-isgucu-yonetisimi-guven"
   },
   "uk": {
     "2023-10-09-shokunin-naishvydshyi-rust-statychnyy-henerator": "2023-10-09-naishvydshyi-rust-statychnyy-henerator",
@@ -1982,7 +2026,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-model-openai-znayshla-tochnu-shvydkist-spadannya",
     "2026-10-10-what-machine-learning-textbooks-contents-page": "2026-10-10-zmist-pidruchnyka-mashynnoho-navchannya-kazhe-pro",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-humanoyidy-chy-funktsionalni-roboty-zavodi-forma",
-    "2026-10-13-moving-past-moores-law-in-memory": "2026-10-13-poza-zakonom-mura-analohovi-obchyslennya"
+    "2026-10-13-moving-past-moores-law-in-memory": "2026-10-13-poza-zakonom-mura-analohovi-obchyslennya",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-vidkrytyy-fizychnyy-shi-lerobot-robyt-robototekhniku",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizychnyy-shi-ta-upravlinnya-personalom-dovira"
   },
   "vi": {
     "2023-10-09-shokunin-bo-tao-trang-tinh-rust-nhanh-nhat": "2023-10-09-bo-tao-trang-tinh-rust-nhanh-nhat",
@@ -2058,7 +2104,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-hinh-openai-xac-dinh-toc",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-muc-luc-mot-giao-trinh-hoc",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robot-hinh-nguoi-hay-chuc-nang",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-vuot-dinh-luat-moore-tinh-toan"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-vuot-dinh-luat-moore-tinh-toan",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-vat-ly-ma-nguon-mo-lerobot",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-vat-ly-quan-tri-luc-luong"
   },
   "yo": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-atunyewo-odun-kan-cryptocurrency-akoko",
@@ -2179,7 +2227,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-awose-inu-openai-sawari-iwon-idinku",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-atojo-akoonu-iwe-machine-learning-ohun",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robooti-bi-eniyan-tabi-ise-irisi",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-koja-ofin-moore-in-memory-compute"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-koja-ofin-moore-in-memory-compute",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-physical-ai-orisun-sisi-lerobot-robotics",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-physical-ai-isakoso-osise-igbekele-ojuse"
   },
   "zh-hans": {
     "2023-10-09-shokunin-zuikuai-de-rust-jingtai-zhandian-shengchengqi": "2023-10-09-zuikuai-de-rust-jingtai-zhandian-shengchengqi",
@@ -2253,7 +2303,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-openai-neibu-moxing-queding-cohn-elkies",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-jiqi-xuexi-jiaokeshu-mulu-ruhe-miaohui",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-renxing-jiqiren-gongnengxing-gongchang-chejian",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-chaoyue-moer-dinglu-cunnei-jisuan-xinli"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-chaoyue-moer-dinglu-cunnei-jisuan-xinli",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-kaiyuan-wuli-ai-hugging-face-lerobot",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-wuli-ai-laodongli-zhili-xinren-zeren"
   },
   "zh-hant": {
     "2023-10-09-shokunin-zuikuai-de-rust-jingtai-zhandian-shengchengqi-tw": "2023-10-09-zuikuai-de-rust-jingtai-zhandian-shengchengqi-tw",
@@ -2327,7 +2379,9 @@
     "2026-10-05-internal-openai-model-pins-down-the-tw": "2026-10-05-openai-neibu-moxing-queding-cohn-elkies-tw",
     "2026-10-10-what-machine-learning-textbook-contents-page-tw": "2026-10-10-jiqi-xuexi-jiaokeshu-mulu-ruhe-miaohui-tw",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing-tw": "2026-10-13-renxing-jiqiren-gongnengxing-gongchang-xianchang-tw",
-    "2026-10-13-moving-past-moore-law-in-memory-tw": "2026-10-13-chaoyue-moer-dinglu-jiyitinei-yunsuan-xiaojingpian-tw"
+    "2026-10-13-moving-past-moore-law-in-memory-tw": "2026-10-13-chaoyue-moer-dinglu-jiyitinei-yunsuan-xiaojingpian-tw",
+    "2026-10-13-open-source-physical-ai-how-hugging-tw": "2026-10-13-kaiyuan-shiti-ai-hugging-face-lerobot-tw",
+    "2026-10-13-physical-ai-and-workforce-governance-trust-tw": "2026-10-13-shiti-ai-laodongli-zhili-xinren-zeren-tw"
   },
   "el": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-mia-anaskopisi-chronias-protou-kryptonomismatos",
@@ -2442,7 +2496,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-montelo-tis-openai-vriskei-akrivi-rythmo",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-lene-ta-periechomena-enos-vivliou-michanikis",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-anthropoeidi-leitourgika-robot-morfi-akolouthei-leitourgia",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-ypologismos-sti-mnimi-chiplets-robot-pera"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-ypologismos-sti-mnimi-chiplets-robot-pera",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fysiki-ai-anoichtoy-kodika-lerobot-anoigei",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fysiki-ai-diakyvernisi-ergatikoy-dynamikoy-ebistosyni"
   },
   "mr": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitakoin-pahilya-kriptokaransicha-varshabharacha-adhava",
@@ -2557,7 +2613,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-cohn-elkies-sphiar-pekingacha-achuk-kshay",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-mashin-larning-pathyapustakechi-anukramanika-kshetrabaddal-kay",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hyumanoid-viruddh-phnkshanal-robot-karakhanyat-rup",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-murachya-niyamapalikade-ej-robotiksasathi-in-memari"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-murachya-niyamapalikade-ej-robotiksasathi-in-memari",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-opan-sors-phijikal-ai-lerobot-imiteshan",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-phijikal-ai-karyabal-gavharnans-vishvas-dayitv"
   },
   "ta": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-pitkayin-muthal-kiriptokaranchiyin-aantu-milayvu",
@@ -2672,7 +2730,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-cohn-elkies-kola-atukkalin-thulliyath-theyvu",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-meshin-lerning-patanulin-ullatakkap-pakkam-iththurai",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hiyumanaytu-ethir-cheyalpattu-ropo-aalaiyil-vativam",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-mur-vithikku-appal-etj-ropokkalukkana"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-mur-vithikku-appal-etj-ropokkalukkana",
+    "2026-10-13-open-source-physical-how-hugging-face": "2026-10-13-thirantha-mula-pauthika-lerobot-ropottiksai-anaivarukkum",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-pichikal-ai-paniyalar-aalukai-nampikkai-poruppu"
   },
   "te": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitkayin-modati-kriptokarensi-yokka-samvatsara-samiksha",
@@ -2787,7 +2847,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-cohn-elkies-gola-pyakimg-kachchitamaina-kshaya",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-meshin-lernimg-pathyapustakam-vishayasuchika-ii-ramgam",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hyumanayid-varses-phamkshanal-robolu-phyaktarilo-rupam",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-mur-niyamam-dati-edj-robotiksku"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-mur-niyamam-dati-edj-robotiksku",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-oopen-sors-phijikal-ai-lerobot-robotiksnu",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-phijikal-ai-shramika-gavarnens-nammakam-badhyata"
   },
   "hu": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-az-elso-kriptovaluta-evenek-attekintese",
@@ -2902,7 +2964,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-openai-modell-hatarozta-cohn-elkies-program",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-mit-arul-el-gepi-tanulasi-tankonyv",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-humanoid-vagy-funkcionalis-robot-forma-koveti",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-memoriaban-szamitas-chipletek-peremrobotika-moore-torvenyen"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-memoriaban-szamitas-chipletek-peremrobotika-moore-torvenyen",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-nyilt-forraskodu-fizikai-ai-igy-demokratizalja",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizikai-ai-munkaero-iranyitasa-bizalom-felelosseg"
   },
   "ms": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-ulasan-tahunan-mata-wang-kripto",
@@ -3017,7 +3081,9 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-model-openai-menentukan-kadar-susutan-tepat",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-apa-kata-halaman-kandungan-buku-teks",
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robot-humanoid-fungsian-kilang-bentuk-mengikut",
-    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-melangkaui-hukum-moore-pengkomputeran-dalam-memori"
+    "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-melangkaui-hukum-moore-pengkomputeran-dalam-memori",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fizikal-sumber-terbuka-lerobot-menjadikan-robotik",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizikal-dan-tadbir-urus-tenaga-kerja"
   },
   "fa": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-bazngari-salane",
@@ -3132,6 +3198,8 @@
     "2026-10-05-internal-openai-model-pins-down-the": "2026-10-05-mdl-drwny-openai-nrkh-dqyq-aft",
     "2026-10-10-what-machine-learning-textbook-contents-page": "2026-10-10-fhrst-mtalb-yk-ktab-yadgyry-mashyn",
     "2026-10-13-humanoid-vs-functional-robotics-manufacturing-automation": "2026-10-13-rbat-ansannma-ya-karkrdy-dr-karkhanh",
-    "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-fratr-az-qanwn-mwr-mhasbh-drwn"
+    "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-fratr-az-qanwn-mwr-mhasbh-drwn",
+    "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-hwsh-msnway-fyzyky-mtnbaz-lerobot-rbatyk",
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-hwsh-msnway-fyzyky-hkmrany-nyrwy-kar"
   }
 }
