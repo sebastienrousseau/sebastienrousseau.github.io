@@ -10,20 +10,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-## [0.0.25] - Unreleased
+## [0.0.25] - 2026-10-27
 
 ### Added
 
-- **`--rederive-slugs` redirects live URLs**: the 10 articles published from 2026-09-15 to 2026-10-13 are live in 34 locales with English bodies and titles, so translating them renames 340 locale URLs. ADR-0012 makes each such rename an individually redirected change, so when the old locale post exists on `origin/main` the step now adds `old -> new` to `_data/redirects/articles.json` and retargets any redirect that pointed at the old slug, so no chain forms. A stub that was never published is renamed without a redirect.
-- **Backlog articles read natively in 34 locales**: Two Nuclear Clocks (2026-09-15), Cloudflare's public CA (2026-09-20), the MIT AI committee report (2026-09-25), the Jev detector (2026-09-30), the Cohn-Elkies sphere-packing result (2026-10-05), the machine-learning textbook's contents page (2026-10-10) and the four 2026-10-13 robotics articles (humanoid versus functional robotics, in-memory compute for edge robotics, open-source physical AI with LeRobot, and physical AI and workforce governance) now carry full translations of the body and SEO front matter in every locale, each on a slug derived from its translated title, with the old URL redirected. No native-speaker review has been done yet.
+- **`--rederive-slugs` redirects live URLs ([#506])**: the 10 articles published from 2026-09-15 to 2026-10-13 are live in 34 locales with English bodies and titles, so translating them renames 340 locale URLs. ADR-0012 makes each such rename an individually redirected change, so when the old locale post exists on `origin/main` the step now adds `old -> new` to `_data/redirects/articles.json` and retargets any redirect that pointed at the old slug, so no chain forms. A stub that was never published is renamed without a redirect.
 
 ### Fixed
 
-- **No layout shift when the "Read as" control appears**: the control ships `hidden` and `main.js` reveals it once its buttons are wired, about 300 ms after navigation. On desktop it sits inside the first view, so the reveal moved the content below it by 18 px, a cumulative layout shift of 0.0032 on the home page. With scripting enabled its space is now held, invisible, from the first paint; with JavaScript off it stays hidden as before.
-- **The home page headline is measurable at any time of day**: each badge on the hero clock held every value as a column of labels (61 for the minutes, 13 for the hours), clipped to the badge. The clip hides the column from view but not from layout, so at some angles the minute hand's box reached over the headline, where axe could not measure its contrast: the page's accessibility check passed or failed by the time of day. Each drum now holds two labels, the value shown and the next, and the clock renders pixel-identical.
-- **Numbered lists render as lists in bn, mr and fa**: 10 posts had their ordered-list markers converted to native digits (`১.`, `१.`, `۱.`). CommonMark opens a list only on ASCII digits, so each list rendered as one paragraph starting with the marker. The markers are ASCII again, and the pipeline-artefacts gate now fails on a native-digit marker.
-- **No links to English articles that never existed**: 384 links in 169 posts named five English slugs no post ever had (a guessed `-vs-` slug for the humanoid robotics article, a misspelt Kyber slug, two invented slugs and a Polish slug without its `/pl/` prefix), and each served a 404. They now name the real article, the Polish post's own URL fields carry `/pl/`, and the URL-integrity gate fails on any link to an English article that is neither a post nor a redirected retired slug.
-- **Ohm's law renders in the in-memory compute article**: `$I = V \times G$` had lost `\t` to a literal tab since the post was added, in the body and the FAQ.
+- **No layout shift when the "Read as" control appears ([#506])**: the control ships `hidden` and `main.js` reveals it once its buttons are wired, about 300 ms after navigation. On desktop it sits inside the first view, so the reveal moved the content below it by 18 px, a cumulative layout shift of 0.0032 on the home page. With scripting enabled its space is now held, invisible, from the first paint; with JavaScript off it stays hidden as before.
+- **The home page headline is measurable at any time of day ([#506])**: each badge on the hero clock held every value as a column of labels (61 for the minutes, 13 for the hours), clipped to the badge. The clip hides the column from view but not from layout, so at some angles the minute hand's box reached over the headline, where axe could not measure its contrast: the page's accessibility check passed or failed by the time of day. Each drum now holds two labels, the value shown and the next, and the clock renders pixel-identical.
+- **Numbered lists render as lists in bn, mr and fa ([#506])**: 10 posts had their ordered-list markers converted to native digits (`১.`, `१.`, `۱.`). CommonMark opens a list only on ASCII digits, so each list rendered as one paragraph starting with the marker. The markers are ASCII again, and the pipeline-artefacts gate now fails on a native-digit marker.
+- **No links to English articles that never existed ([#506])**: 384 links in 169 posts named five English slugs no post ever had (a guessed `-vs-` slug for the humanoid robotics article, a misspelt Kyber slug, two invented slugs and a Polish slug without its `/pl/` prefix), and each served a 404. They now name the real article, the Polish post's own URL fields carry `/pl/`, and the URL-integrity gate fails on any link to an English article that is neither a post nor a redirected retired slug.
 
 ---
 
@@ -290,7 +288,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-[0.0.25]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.24...HEAD
+[0.0.25]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.24...v0.0.25
 [0.0.24]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.23...v0.0.24
 [0.0.23]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.22...v0.0.23
 [0.0.22]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.21...v0.0.22
@@ -321,6 +319,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 [#498]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/498
 [#503]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/503
 [#504]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/504
+[#506]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/506
 [#158]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/158
 [#159]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/159
 [#160]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/160
