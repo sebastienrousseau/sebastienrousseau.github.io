@@ -112,7 +112,14 @@
     "الاحتمالات": "alihtimalat",
     "بدل": "badal",
     "كتابة": "kitabat",
-    "الأحكام": "alahkam"
+    "الأحكام": "alahkam",
+    "نموذج": "namudhaj",
+    "داخلي": "dakhili",
+    "يحدد": "yuhaddid",
+    "المعدل": "almuaddal",
+    "الدقيق": "aldaqiq",
+    "لاضمحلال": "lidmihlal",
+    "برنامج": "barnamaj"
   },
   "he": {
     "הבנת": "havanat",
@@ -206,7 +213,14 @@
     "הסתברויות": "histabruyot",
     "במקום": "bimkom",
     "פסקי": "piskei",
-    "דין": "din"
+    "דין": "din",
+    "מודל": "model",
+    "פנימי": "pnimi",
+    "קובע": "kovea",
+    "קצב": "ketsev",
+    "הדעיכה": "hadeikha",
+    "המדויק": "hamduyak",
+    "תוכנית": "tokhnit"
   },
   "bn": {
     "প্রমাণ": "praman",
@@ -235,7 +249,11 @@
     "প্রতিষ্ঠানের": "pratishthaner",
     "হাজির": "hajir",
     "শিক্ষা": "shiksha",
-    "ডিটেক্টর": "detektor"
+    "ডিটেক্টর": "detektor",
+    "স্ফিয়ার": "sphiyar",
+    "প্যাকিংয়ের": "pyakingyer",
+    "নিখুঁত": "nikhut",
+    "ক্ষয়হার": "kshayhar"
   },
   "hi": {
     "बैंकों": "bainkon",
@@ -291,7 +309,9 @@
     "ตัวตรวจจับ": "tuatruatchap",
     "อ่านความน่าจะเป็น": "an khwamnachapen",
     "แทนคำตัดสิน": "thaen khamtatsin",
-    "เบนช์มาร์ก": "benchmak"
+    "เบนช์มาร์ก": "benchmak",
+    "การบรรจุทรงกลม": "kanbanchu songklom",
+    "โมเดลภายใน": "model phainai"
   },
   "ja": {
     "銀行": "ginko",
@@ -334,7 +354,11 @@
     "教育を問う": "kyoiku wo tou",
     "判定を書かずに": "hantei kakazu",
     "確率を読む": "kakuritsu yomu",
-    "検出器": "kenshutsuki"
+    "検出器": "kenshutsuki",
+    "内部モデル": "naibu moderu",
+    "球充填": "kyujuten",
+    "正確な減衰率": "seikaku na gensuiritsu",
+    "特定": "tokutei"
   },
   "zh-hans": {
     "读懂": "dudong",
@@ -370,7 +394,12 @@
     "技术先于制度到来": "jishu xianyu zhidu daolai",
     "教与学": "jiaoyuxue",
     "读概率而非写判决": "du gailu erfei xie panjue",
-    "检测器": "jianceqi"
+    "检测器": "jianceqi",
+    "内部模型": "neibu moxing",
+    "确定": "queding",
+    "球堆积": "qiuduiji",
+    "线性规划": "xianxing guihua",
+    "精确衰减率": "jingque shuaijianlv"
   },
   "zh-hant": {
     "讀懂": "dudong",
@@ -406,6 +435,11 @@
     "技術先於制度到來": "jishu xianyu zhidu daolai",
     "教與學": "jiaoyuxue",
     "讀機率而非寫判決": "du jilu erfei xie panjue",
-    "偵測器": "zhenceqi"
+    "偵測器": "zhenceqi",
+    "內部模型": "neibu moxing",
+    "確定": "queding",
+    "球堆積": "qiuduiji",
+    "線性規劃": "xianxing guihua",
+    "精確衰減率": "jingque shuaijianlv"
   }
 }
