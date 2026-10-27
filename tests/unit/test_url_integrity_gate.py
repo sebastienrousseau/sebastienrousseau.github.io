@@ -85,3 +85,28 @@ def test_a_translated_path_token_fails():
         "https://www.prowidesvaakware.com/development-tools/iso20022",
     ):
         assert gate.offences(url), url
+
+
+LIVE = frozenset({"2026-10-13-humanoid-functional-robotics-manufacturing-automation"})
+
+
+def test_a_link_to_a_live_english_article_passes():
+    for url in (
+        "https://sebastienrousseau.com/2026-10-13-humanoid-functional-robotics-manufacturing-automation",
+        "https://sebastienrousseau.com/2026-10-13-humanoid-functional-robotics-manufacturing-automation/rss.xml",
+        "https://sebastienrousseau.com/2026-10-13-humanoid-functional-robotics-manufacturing-automation/index.html",
+    ):
+        assert gate.dead_article_links(f'href="{url}"', LIVE) == [], url
+
+
+def test_a_link_to_an_english_article_that_never_existed_fails():
+    """346 links pointed at a -vs- slug no English post ever had: a 404."""
+    url = "https://sebastienrousseau.com/2026-10-13-humanoid-vs-functional-robotics-manufacturing-automation"
+    out = gate.dead_article_links(f'<a href="{url}">', LIVE)
+    assert len(out) == 1
+    assert "no such English article" in out[0]
+
+
+def test_a_locale_article_link_is_out_of_scope():
+    url = "https://sebastienrousseau.com/fr/2026-10-13-robot-humanoide-ou-fonctionnel-usine"
+    assert gate.dead_article_links(url, LIVE) == []

@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>লাইভ।</strong> The Glasshouse-এ The Brand New Heavies-এর সাথে Galliano এবং Ronnie Scott's-এ The James Taylor Quartet — ২০২৬-এর তালিকায় অ্যাসিড জ্যাজের সবচেয়ে স্পষ্ট সংকেত।</li>
   <li><strong>উৎসব।</strong> Mostly Jazz Funk & Soul Festival (১০–১২ জুলাই ২০২৬) প্রোগ্রামে রয়েছেন Soul II Soul, Cymande, Jordan Rakei এবং Sampa The Great — ঐতিহ্যবাহী জ্যাজ-ফাঙ্ক শিল্পীদের পাশাপাশি।</li>
 </ul>
-<p class="post-lead-related"><strong>সম্পর্কিত পাঠ:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">টোকেনাইজড ডিপোজিট: ২০২৬ সালে ব্যাংকিং রূপান্তরের গতিপথ</a>।</p>
+<p class="post-lead-related"><strong>সম্পর্কিত পাঠ:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">টোকেনাইজড ডিপোজিট: ২০২৬ সালে ব্যাংকিং রূপান্তরের গতিপথ</a>।</p>
 </aside>
 <!-- lead-end -->
 

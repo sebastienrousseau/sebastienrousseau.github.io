@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Biểu diễn.</strong> The Brand New Heavies với Galliano tại The Glasshouse và The James Taylor Quartet tại Ronnie Scott's là những tín hiệu acid jazz rõ nét nhất trong lịch biểu diễn 2026.</li>
   <li><strong>Lễ hội.</strong> Mostly Jazz Funk & Soul Festival (10–12 tháng 7 năm 2026) lập trình Soul II Soul, Cymande, Jordan Rakei và Sampa The Great cùng các nghệ sĩ jazz-funk kỳ cựu.</li>
 </ul>
-<p class="post-lead-related"><strong>Đọc thêm:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Tiền Gửi Được Token Hóa: Cuộc Chuyển Đổi Ngân Hàng Đang Diễn Ra Năm 2026</a>.</p>
+<p class="post-lead-related"><strong>Đọc thêm:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Tiền Gửi Được Token Hóa: Cuộc Chuyển Đổi Ngân Hàng Đang Diễn Ra Năm 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 

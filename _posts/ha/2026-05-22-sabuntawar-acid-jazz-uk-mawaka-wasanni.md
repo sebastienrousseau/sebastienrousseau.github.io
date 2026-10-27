@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Wasan kwaikwayo.</strong> The Brand New Heavies tare da Galliano a The Glasshouse da The James Taylor Quartet a Ronnie Scott's sune mafi bayyanannun alamomi na acid jazz a cikin jerin 2026.</li>
   <li><strong>Biki.</strong> Mostly Jazz Funk & Soul Festival (10–12 Yuli 2026) na tsara Soul II Soul, Cymande, Jordan Rakei, da Sampa The Great tare da tsofaffin mawaka na jazz funk.</li>
 </ul>
-<p class="post-lead-related"><strong>Ƙarin karatu:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Kuɗaɗen da Aka Alamta: Canjin Harkar Banki da ke Ci Gaba a 2026</a>.</p>
+<p class="post-lead-related"><strong>Ƙarin karatu:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Kuɗaɗen da Aka Alamta: Canjin Harkar Banki da ke Ci Gaba a 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 

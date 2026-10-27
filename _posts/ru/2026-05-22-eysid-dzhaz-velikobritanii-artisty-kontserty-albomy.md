@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Живые выступления.</strong> The Brand New Heavies с Galliano в The Glasshouse и The James Taylor Quartet в Ronnie Scott's — наиболее очевидные сигналы эйсид-джаза в афише 2026 года.</li>
   <li><strong>Фестиваль.</strong> Mostly Jazz Funk & Soul Festival (10–12 июля 2026 года) включает в программу Soul II Soul, Cymande, Jordan Rakei и Sampa The Great наряду с ветеранами джаз-фанка.</li>
 </ul>
-<p class="post-lead-related"><strong>Связанное чтение:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Токенизированные депозиты: банковская трансформация 2026 года</a>.</p>
+<p class="post-lead-related"><strong>Связанное чтение:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Токенизированные депозиты: банковская трансформация 2026 года</a>.</p>
 </aside>
 <!-- lead-end -->
 

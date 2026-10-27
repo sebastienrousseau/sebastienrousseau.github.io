@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>הופעות.</strong> The Brand New Heavies עם Galliano ב-The Glasshouse ו-The James Taylor Quartet ברוני סקוט'ס הם האותות הברורים ביותר לאסיד ג'אז ברשימות 2026.</li>
   <li><strong>פסטיבל.</strong> Mostly Jazz Funk & Soul Festival (10–12 ביולי 2026) מתכנת את Soul II Soul, Cymande, Jordan Rakei ו-Sampa The Great לצד אמני ג'אז-פאנק מן המורשת.</li>
 </ul>
-<p class="post-lead-related"><strong>קריאה נוספת:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">פיקדונות מתויגים: שינוי המבנה הבנקאי המתרחש ב-2026</a>.</p>
+<p class="post-lead-related"><strong>קריאה נוספת:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">פיקדונות מתויגים: שינוי המבנה הבנקאי המתרחש ב-2026</a>.</p>
 </aside>
 <!-- lead-end -->
 

@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Live.</strong> The Brand New Heavies cu Galliano la The Glasshouse și The James Taylor Quartet la Ronnie Scott's sunt cele mai clare semnale acid jazz din programările anului 2026.</li>
   <li><strong>Festival.</strong> Mostly Jazz Funk & Soul Festival (10–12 iulie 2026) programează Soul II Soul, Cymande, Jordan Rakei și Sampa The Great alături de acte consacrate de jazz-funk.</li>
 </ul>
-<p class="post-lead-related"><strong>Lectură conexă:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-transformation-2026/index.html">Depozite Tokenizate: Transformarea Bancară în Curs în 2026</a>.</p>
+<p class="post-lead-related"><strong>Lectură conexă:</strong> <a href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Depozite Tokenizate: Transformarea Bancară în Curs în 2026</a>.</p>
 </aside>
 <!-- lead-end -->
 

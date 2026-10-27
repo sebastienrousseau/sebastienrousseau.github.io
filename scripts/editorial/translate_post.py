@@ -47,12 +47,15 @@ _sys.path.insert(0, str(_Path(__file__).resolve().parents[1] / "lib"))
 import argparse
 import json
 import re
+import subprocess
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 POSTS = ROOT / "_posts"
 I18N = ROOT / "_data" / "i18n"
+# Retired article URLs, keyed by locale (see postbuild_lib/redirects.py).
+REDIRECTS = ROOT / "_data" / "redirects" / "articles.json"
 
 # Marker the scaffolder leaves at the top of every stub body. Used by
 # Claude Code to detect which files still need a translation pass, and
@@ -289,7 +292,8 @@ def rederive_slug(en_slug: str, lang_code: str, *, dry_run: bool) -> str:
     ``scaffold_one`` names the stub from the English title; translating
     the title afterwards leaves a slug that no longer derives from it,
     which ``tests/validation/test_slug_derivable.py`` rejects. This moves
-    the file, rewrites its own URL fields and updates ``slugs.json``.
+    the file, rewrites its own URL fields and updates ``slugs.json``; if
+    the old URL is live on main, it also redirects it to the new one.
     """
     map_path, data = _slug_map(lang_code)
     current = data.get("articles", {}).get(en_slug)
@@ -313,7 +317,32 @@ def rederive_slug(en_slug: str, lang_code: str, *, dry_run: bool) -> str:
     path.unlink()
     data["articles"][en_slug] = target
     map_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if _is_published(path):
+        _redirect(lang_code, current, target)
+        return f"  [{lang_code}] renamed and redirected: {current} -> {target}"
     return f"  [{lang_code}] renamed: {current} -> {target}"
+
+
+def _is_published(path: Path) -> bool:
+    """Whether ``path`` exists on origin/main, i.e. its URL is live."""
+    rel = path.relative_to(ROOT).as_posix()
+    probe = subprocess.run(
+        ["git", "cat-file", "-e", f"origin/main:{rel}"], cwd=ROOT, capture_output=True, check=False
+    )
+    return probe.returncode == 0
+
+
+def _redirect(lang_code: str, old: str, new: str) -> None:
+    """Record ``old -> new`` for a locale, retargeting any redirect that
+    pointed at ``old`` so no chain forms (ADR-0012: renaming a live URL
+    is an individually-redirected change)."""
+    data = json.loads(REDIRECTS.read_text(encoding="utf-8"))
+    locale = data.setdefault(lang_code, {})
+    for source, dest in locale.items():
+        if dest == old:
+            locale[source] = new
+    locale[old] = new
+    REDIRECTS.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def find_stub_locales(en_slug: str) -> list[tuple[str, Path]]:

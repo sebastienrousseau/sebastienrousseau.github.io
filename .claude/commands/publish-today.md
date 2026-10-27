@@ -173,6 +173,8 @@ Step 5 names every stub from the English title. Once step 6 translates the title
 python3 scripts/editorial/translate_post.py <slug> --rederive-slugs   # renames, rewrites url/permalink/id, updates slugs.json
 ```
 
+The same command translates a live article's backlog stubs: when the old locale URL is already on `origin/main`, it also adds an `old -> new` entry to `_data/redirects/articles.json` (ADR-0012), so inbound links keep working.
+
 A locale that prints `error: title derives no slug` (Japanese and Chinese titles without readings) needs its words added to `_data/i18n/romanisation-lexicon.json`; then run the command again.
 
 ### 7. Homepage card rotation

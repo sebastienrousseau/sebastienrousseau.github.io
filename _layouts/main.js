@@ -1305,7 +1305,8 @@ function fallbackCopy(text, done) {
 // They are 197 elements of decoration, and shipped in the page they took the
 // homepage past the first TCP window (about 14.6 KB gzipped), which costs a
 // round trip before first paint on a slow connection. Generated here instead,
-// from the same values, before the clock script below first sets the time.
+// before the clock script below first sets the time: the dots from the same
+// values, and two labels per drum that the clock script writes.
 // ---------------------------------------------------------------------------
 (function () {
     "use strict";
@@ -1332,23 +1333,22 @@ function fallbackCopy(text, done) {
         }
     }
 
-    // One label every 54 units down the column; the clock script scrolls it.
-    function fillDigits(group, y0, labels) {
-        for (var i = 0; i < labels.length; i++) {
-            add(group, "text", { x: "1038", y: String(y0 + 54 * i) }).textContent = labels[i];
-        }
+    // Two labels, 54 units apart: the value shown and the next one. The
+    // clock script below writes them and scrolls between the two. A column
+    // of every value is clipped from view but not from layout, so it gave
+    // the rotating hand a box far beyond its badge, over the headline.
+    function fillDigits(group, y0) {
+        add(group, "text", { x: "1038", y: String(y0) });
+        add(group, "text", { x: "1038", y: String(y0 + 54) });
     }
 
     var dots = document.getElementById("hero-lattice-dots");
     var hhRoll = document.getElementById("hero-clock-hh-roll");
     var mmRoll = document.getElementById("hero-clock-mm-roll");
     if (!dots || !hhRoll || !mmRoll) return;
-    var hours = ["12"], minutes = [];
-    for (var h = 1; h <= 12; h++) hours.push(String(h));
-    for (var m = 0; m <= 60; m++) minutes.push(m % 60 < 10 ? "0" + (m % 60) : String(m % 60));
     fillDots(dots);
-    fillDigits(hhRoll, 182, hours);
-    fillDigits(mmRoll, 124, minutes);
+    fillDigits(hhRoll, 182);
+    fillDigits(mmRoll, 124);
 })();
 
 // ---------------------------------------------------------------------------
@@ -1386,6 +1386,26 @@ function fallbackCopy(text, done) {
         return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
     }
 
+    function hourLabel(v) {
+        return String(v % 12 || 12);
+    }
+
+    function minuteLabel(v) {
+        return v % 60 < 10 ? "0" + (v % 60) : String(v % 60);
+    }
+
+    // Show the drum at r, which is fractional while it rolls: its two labels
+    // hold the whole part and the next value, and it scrolls by the rest.
+    function setRoll(group, r, label) {
+        var base = Math.floor(r);
+        if (group.getAttribute("data-base") !== String(base)) {
+            group.setAttribute("data-base", String(base));
+            group.childNodes[0].textContent = label(base);
+            group.childNodes[1].textContent = label(base + 1);
+        }
+        group.setAttribute("transform", "translate(0," + (-(r - base) * 54).toFixed(2) + ")");
+    }
+
     function updateClock() {
         var now = new Date();
         var h = now.getUTCHours();
@@ -1418,10 +1438,10 @@ function fallbackCopy(text, done) {
 
         hh.setAttribute("transform", "rotate(" + hDeg.toFixed(3) + ",1038,300)");
         hhUn.setAttribute("transform", "rotate(" + (-hDeg).toFixed(3) + ",1038,174)");
-        hhRoll.setAttribute("transform", "translate(0," + (-hRoll * 54).toFixed(2) + ")");
+        setRoll(hhRoll, hRoll, hourLabel);
         mm.setAttribute("transform", "rotate(" + mDeg.toFixed(3) + ",1038,300)");
         mmUn.setAttribute("transform", "rotate(" + (-mDeg).toFixed(3) + ",1038,116)");
-        mmRoll.setAttribute("transform", "translate(0," + (-mRoll * 54).toFixed(2) + ")");
+        setRoll(mmRoll, mRoll, minuteLabel);
         ss.setAttribute("transform", "rotate(" + sDeg.toFixed(2) + ",1038,300)");
     }
 

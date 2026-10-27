@@ -16,6 +16,9 @@ artefacts have leaked into ``_posts`` and been published:
 * Anything after ``<!-- enrich-end -->``, the marker that terminates the
   article furniture — 144 posts, carrying stray ``---``, ``` ``` ``` fences
   and one English translator's note.
+* An ordered-list marker in native digits (``১. ``, ``१. ``) — 5 bn and mr
+  posts. CommonMark opens a list only on ASCII digits, so each list
+  rendered as one paragraph starting with the marker.
 
 118 rendered pages were serving one of these. None is ever legitimate, so
 this gate fails the build rather than recording a backlog: the fix is always
@@ -37,6 +40,9 @@ END_MARKER = "<!-- enrich-end -->"
 _MARKERS = ("BEGIN_TRANSLATION", "END_TRANSLATION")
 _TOOL_TAG = re.compile(r"</?(?:invoke|content|antml:[a-z]+)\b[^>]*>")
 _FRONTMATTER_COMMENT = "# RSS - The RSS feed front matter (YAML)."
+# A line opening with a non-ASCII decimal digit run and ". ", the shape of a
+# localised ordered-list marker.
+_NATIVE_LIST_MARKER = re.compile(r"^[ \t]*(?![0-9])\d+\. ", re.MULTILINE)
 
 
 def offences(text: str) -> list[str]:
@@ -47,6 +53,9 @@ def offences(text: str) -> list[str]:
         found.append(f"tool-call tags {tags}")
     if text.count(_FRONTMATTER_COMMENT) > 1:
         found.append("duplicated frontmatter block")
+    markers = _NATIVE_LIST_MARKER.findall(text)
+    if markers:
+        found.append(f"{len(markers)} native-digit list marker(s), e.g. {markers[0].strip()!r}")
     if END_MARKER in text and text.split(END_MARKER)[-1].strip():
         trailing = text.split(END_MARKER)[-1].strip()[:60]
         found.append(f"content after {END_MARKER}: {trailing!r}")

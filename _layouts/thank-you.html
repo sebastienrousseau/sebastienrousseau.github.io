@@ -530,6 +530,10 @@
          reordering, hero subline swapping, capability-card highlighting, and
          ?for=<audience> URL persistence. All colours clear WCAG 2.2 AAA. */
       .read-as{background:var(--bg-alt);border-bottom:1px solid var(--border);padding:14px var(--pad-x) 32px}
+      /* The control ships [hidden] so it never shows unwired with JS off.
+         With JS on, hold its space while main.js wires it, so the reveal
+         moves nothing below it (a desktop layout shift otherwise). */
+      @media (scripting:enabled){.read-as[hidden]{display:block;visibility:hidden}}
       .read-as-inner{max-width:var(--max-wide);margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px}
       .read-as-controls{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
       .read-as-label{font-family:var(--type-body);font-size:.8125rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
