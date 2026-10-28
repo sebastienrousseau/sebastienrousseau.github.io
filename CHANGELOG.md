@@ -10,6 +10,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.0.26] - Unreleased
+
+### Changed
+
+---
+
 ## [0.0.25] - 2026-10-27
 
 ### Added
@@ -288,6 +294,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+[0.0.26]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.25...HEAD
 [0.0.25]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.24...v0.0.25
 [0.0.24]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.23...v0.0.24
 [0.0.23]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.22...v0.0.23

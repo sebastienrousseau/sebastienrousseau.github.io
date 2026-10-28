@@ -4,7 +4,7 @@ authors:
   - family-names: "Rousseau"
     given-names: "Sebastien"
 title: "sebastienrousseau.com: Research on Applied AI, Wholesale Payments, and Post-Quantum Cryptography"
-version: 0.0.25
+version: 0.0.26
 date-released: 2026-10-27
 url: "https://sebastienrousseau.com"
 repository-code: "https://github.com/sebastienrousseau/sebastienrousseau.github.io"
