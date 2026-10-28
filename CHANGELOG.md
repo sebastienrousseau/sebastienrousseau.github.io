@@ -14,6 +14,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- **Dependencies ([#507], [#508])**: `ruff` 0.17.1 to 0.17.2 in `requirements-dev.txt`, with `requirements-dev.lock` regenerated so the lock-agreement gate passes; `actions/setup-python` 7.0.0 to 7.1.0 across seven workflows; and `github/codeql-action` 4.39.0 to 4.39.1 in the CodeQL and Scorecard workflows.
+
+### Fixed
+
+- **Advisories in the CI tooling locks**: `msgpack` 1.2.1 to 1.2.3 in `requirements-dev.lock` (CVE-2026-114613) and `qs` 6.16.0 to 6.17.0 in `.github/ci-tools/lighthouse/package-lock.json` (GHSA-6pq8-jhm2-2vcw, via `overrides`). Both `pip-audit` and `npm audit` report 0 vulnerabilities across all lockfiles.
+
 ---
 
 ## [0.0.25] - 2026-10-27
@@ -327,6 +333,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 [#503]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/503
 [#504]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/504
 [#506]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/506
+[#507]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/507
+[#508]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/508
 [#158]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/158
 [#159]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/159
 [#160]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/160
