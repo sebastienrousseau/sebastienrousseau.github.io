@@ -105,21 +105,69 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-10-24-modernisation-never-finishes-exceptions-pile-up/index.html" title="Modernisation Never Finishes, and the Exceptions Are What Pile Up">
-<img alt="Dr. Leda Glyptis speaking on stage in front of the Oracle backdrop at the Oracle Financial Services Summit in London, October 2026" src="https://cloudcdn.pro/stocks/images/leda-glyptis-oracle-financial-services-summit-2026.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html" title="Why the FCA Is Regulating AI Without an AI Rulebook">
+<img alt="City of London financial district architecture representing FCA outcomes-based AI regulation and UK financial services governance." src="https://cloudcdn.pro/stocks/images/adrien-olichon-3137055.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Ai · Ai-Governance · Banking</span>
-<h3><a href="/2026-10-24-modernisation-never-finishes-exceptions-pile-up/index.html" title="Modernisation Never Finishes, and the Exceptions Are What Pile Up">Modernisation Never Finishes, and the Exceptions Are What Pile Up</a></h3>
-<p class="newsroom-meta"><time datetime="2026-10-24">October 24, 2026</time> · Sebastien Rousseau</p>
-<p>Financial services has spent 20 to 25 years treating modernisation as a project with an end date. Opening the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that the industry's weaker record is...</p>
-<p><a class="pill ghost" href="/2026-10-24-modernisation-never-finishes-exceptions-pile-up/index.html" title="Modernisation Never Finishes, and the Exceptions Are What Pile Up">Read the full story</a></p>
+<span class="newsroom-eyebrow">Ai · Ai-Governance · Compliance</span>
+<h3><a href="/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html" title="Why the FCA Is Regulating AI Without an AI Rulebook">Why the FCA Is Regulating AI Without an AI Rulebook</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-28">October 28, 2026</time> · Sebastien Rousseau</p>
+<p>The FCA's position is that you don't need a new rulebook to regulate a new technology when your existing rules already ask what the technology does to people and markets, and it is applying that position to AI in UK...</p>
+<p><a class="pill ghost" href="/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html" title="Why the FCA Is Regulating AI Without an AI Rulebook">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude/index.html" title="The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour" aria-label="The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour">
+<img alt="Cryptographic hardware and binary patterns illustrating NIST ECDSA elliptic curve seeds, lrand48 PRNG states and AI cryptanalysis." src="https://cloudcdn.pro/stocks/images/adam-borkowski-igRXeLr7PDU.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Cybersecurity · Cryptography · Ai</span>
+<h3><a href="/2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude/index.html" title="The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour">The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-26">October 26, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A question that stayed open after the one person who might have answered it died in 2023 had a mundane answer: a 1990s random number generator initialised from the clock. The authors say that answer makes them more...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-10-25-agentic-ai-breaks-the-assumption-behind-every-task-exposure-forecast/index.html" title="Agentic AI breaks the assumption behind every task-exposure forecast" aria-label="Agentic AI breaks the assumption behind every task-exposure forecast">
+<img alt="Modern collaborative workspace illustrating agentic AI workflow automation, task exposure and enterprise labour market shifts." src="https://cloudcdn.pro/stocks/images/alesia-kazantceva-XLm6-fPwK5Q.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Ai · Agentic-Ai · Generative-Ai</span>
+<h3><a href="/2026-10-25-agentic-ai-breaks-the-assumption-behind-every-task-exposure-forecast/index.html" title="Agentic AI breaks the assumption behind every task-exposure forecast">Agentic AI breaks the assumption behind every task-exposure forecast</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-25">October 25, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Labour-market forecasts have assumed that automation removes tasks one at a time and leaves the occupation standing. Agentic AI, which completes whole workflows, invalidates that assumption, and a new composite...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-10-24-modernisation-never-finishes-exceptions-pile-up/index.html" title="Modernisation Never Finishes, and the Exceptions Are What Pile Up" aria-label="Modernisation Never Finishes, and the Exceptions Are What Pile Up">
+<img alt="Dr. Leda Glyptis speaking on stage in front of the Oracle backdrop at the Oracle Financial Services Summit in London, October 2026" src="https://cloudcdn.pro/stocks/images/leda-glyptis-oracle-financial-services-summit-2026.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Ai · Ai-Governance · Banking</span>
+<h3><a href="/2026-10-24-modernisation-never-finishes-exceptions-pile-up/index.html" title="Modernisation Never Finishes, and the Exceptions Are What Pile Up">Modernisation Never Finishes, and the Exceptions Are What Pile Up</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-24">October 24, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Financial services has spent 20 to 25 years treating modernisation as a project with an end date. Opening the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that the industry's weaker record is...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-10-24-an-ai-s-attack-on-progression-free-sets-a-ledger-of-what-stalled/index.html" title="An AI's attack on progression-free sets: a ledger of what stalled" aria-label="An AI's attack on progression-free sets: a ledger of what stalled">
+<img alt="Abstract geometric light structures representing mathematical progression-free sets, Fourier analysis and AI-assisted proof discovery." src="https://cloudcdn.pro/stocks/images/alex-knight-2EJCSULRwC8.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Ai · Generative-Ai · Llm</span>
+<h3><a href="/2026-10-24-an-ai-s-attack-on-progression-free-sets-a-ledger-of-what-stalled/index.html" title="An AI's attack on progression-free sets: a ledger of what stalled">An AI's attack on progression-free sets: a ledger of what stalled</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-24">October 24, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">An AI assistant worked on two problems about progression-free sets: an argument for the reciprocal-sum problem, and a quasipolynomial bound for every fixed progression length. It used Bloom and...</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-10-13-physical-ai-robotics-workforce-governance-industrial-operations/index.html" title="Physical AI and Workforce Governance: Trust, Liability, and the Redesign of Frontline Operations" aria-label="Physical AI and Workforce Governance: Trust, Liability, and the Redesign of Frontline Operations">

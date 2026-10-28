@@ -12,6 +12,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [0.0.26] - Unreleased
 
+### Added
+
+- **Four October 2026 articles across 35 languages ([#509])**: published `2026-10-24-an-ai-s-attack-on-progression-free-sets-a-ledger-of-what-stalled`, `2026-10-25-agentic-ai-breaks-the-assumption-behind-every-task-exposure-forecast`, `2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude`, and `2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook`, together with all 136 localised editions across 34 non-English locales, updated topic clusters, and romanisation lexicon entries for `ja`, `zh-hans`, and `zh-hant`.
+
 ### Changed
 
 - **Dependencies ([#507], [#508])**: `ruff` 0.17.1 to 0.17.2 in `requirements-dev.txt`, with `requirements-dev.lock` regenerated so the lock-agreement gate passes; `actions/setup-python` 7.0.0 to 7.1.0 across seven workflows; and `github/codeql-action` 4.39.0 to 4.39.1 in the CodeQL and Scorecard workflows.
@@ -335,6 +339,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 [#506]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/506
 [#507]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/507
 [#508]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/508
+[#509]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/509
 [#158]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/158
 [#159]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/159
 [#160]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/160
