@@ -381,6 +381,17 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       .iso20022-mcp-page .mcp-prompt .mcp-code{background:var(--card)}
       .iso20022-mcp-page .mcp-prompt .mcp-code code{white-space:pre-wrap;overflow-wrap:anywhere}
       .iso20022-mcp-page .mcp-prompt-note{margin-block-start:1rem;font-size:.92rem;color:var(--ink-soft)}
+      /* --- MCP hub: 9-server architecture & rail matrix + FAQ accordion -- */
+      .iso20022-mcp-page .mcp-table-wrap{margin-block-start:2.4rem;overflow-x:auto;border:1px solid var(--spk-line);border-radius:16px;background:var(--card)}
+      .iso20022-mcp-page .mcp-table{width:100%;border-collapse:collapse;font-size:.88rem;line-height:1.55;margin:0}
+      .iso20022-mcp-page .mcp-table th{text-align:start;vertical-align:top}
+      .iso20022-mcp-page .mcp-table thead th{font-family:var(--spk-mono);font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);padding:14px 16px;border-block-end:1px solid var(--spk-line);background:var(--bg-alt);white-space:nowrap}
+      .iso20022-mcp-page .mcp-table tbody th,.iso20022-mcp-page .mcp-table tbody td{padding:14px 16px;border-block-end:1px solid var(--spk-line);color:var(--ink-soft);vertical-align:top}
+      .iso20022-mcp-page .mcp-table tbody tr:last-child th,.iso20022-mcp-page .mcp-table tbody tr:last-child td{border-block-end:0}
+      .iso20022-mcp-page .mcp-table tbody th{font-weight:600;color:var(--ink);white-space:nowrap}
+      .iso20022-mcp-page .mcp-table code{font-family:var(--spk-mono);font-size:.78rem;color:var(--ink);background:transparent;padding:0;border:0}
+      .iso20022-mcp-page .mcp-faq-list{margin-block-start:2.2rem}
+      .iso20022-mcp-page .mcp-faq-body p{font-size:.94rem;line-height:1.65;color:var(--ink-soft);max-width:74ch;margin:0}
 """
 
 # Page-scoped CSS for /trust/: Economist-Pro-solutions-page anatomy on the
@@ -1364,7 +1375,7 @@ _BANNER_SRC_META = '    <meta name="banner-src" content="{{banner}}" />\n'
 # renders small. Emitting it here rather than hand-editing the generated
 # file is the point: a hand edit is silently deleted the next time this
 # generator runs, which is exactly how #396 kept regressing.
-_NEEDS_BANNER_SRC = frozenset({"about.html", "page.html"})
+_NEEDS_BANNER_SRC = frozenset({"about.html", "page.html", "story.html"})
 
 
 def with_banner_src(html: str) -> str:
@@ -1405,7 +1416,7 @@ def main() -> None:
     # /projects/ has its own hero: the rotating animated title is the page H1.
     write("project.html", inject_schema(project_layout(), "projects"))
     # /projects-*/ story pages: full-bleed image hero with overlaid title.
-    write("story.html", inject_schema(story_layout(), "default"))
+    write("story.html", with_banner_src(inject_schema(story_layout(), "default")))
     write("contact.html", inject_schema(contact_layout(), "contact"))
     write("report.html", inject_schema(report_layout(), "report"))
     write("playlist.html", inject_schema(playlist_layout(), "playlist"))

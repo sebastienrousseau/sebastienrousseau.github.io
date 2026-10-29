@@ -4,8 +4,8 @@
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Aerial view of illuminated financial district at night"
-banner_height: ""
-banner_width: ""
+banner_height: "1080"
+banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp"
 cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
@@ -23,7 +23,7 @@ image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "enterprise AI banking software, payment software suite, ISO 20022 MCP, MCP server, AI banking tools, payment message validation, banking AI agents, financial software suite"
-last_reviewed: "2026-07-16"
+last_reviewed: "2026-10-29"
 language: "en-GB"
 layout: "page"
 locale: "en_GB"
@@ -82,8 +82,8 @@ msapplication-navbutton-color: "0, 67, 165"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Enterprise AI banking and payment software. Explore the ISO 20022 MCP Suite and the products built around it."
-twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-twitter_image_alt: "Logo of Sebastien Rousseau"
+twitter_image: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp"
+twitter_image_alt: "Aerial view of illuminated financial district at night"
 twitter_site: "@wwdseb"
 twitter_title: "Enterprise AI Banking & Payment Software Suite"
 twitter_url: "https://sebastienrousseau.com/suite"
@@ -93,7 +93,7 @@ author_website: "https://sebastienrousseau.com/suite"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2024-03-08"
+site_last_updated: "2026-10-29"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
@@ -112,9 +112,39 @@ site_software: "Static Site Generator, Rust"
 <p class="book-eyebrow">FLAGSHIP · MCP SERVERS</p>
 <h2 class="book-title"><a href="/iso20022-mcp/index.html" title="ISO 20022 MCP Suite">ISO 20022 MCP Suite</a></h2>
 <p class="book-meta">The open ISO 20022 layer for AI agents.</p>
-<p class="book-meta book-meta-faint">Apache-2.0 &middot; Runs locally &middot; No signup</p>
-<p class="book-excerpt">Ask for a payment message. Get one that validates. The ISO 20022 MCP Suite gives AI agents a catalogue of tested tools for building, validating and explaining ISO 20022 payment messages. Offline, on your own infrastructure, with nothing leaving your network.</p>
+<p class="book-meta book-meta-faint">Apache-2.0 &middot; 9 servers &middot; 87 tools &middot; Runs locally &middot; No signup</p>
+<p class="book-excerpt">Ask for a payment message. Get one that validates. The ISO 20022 MCP Suite gives AI agents a catalogue of 87 tested tools across nine vendor-neutral servers for building, validating, reconciling and explaining ISO 20022 payment messages. One gateway exposes seven routing meta-tools in ~2,200 tokens (saving 94% of tool-catalogue context) while lazily loading domain servers for initiation (<code>pain.001</code>), interbank settlement (<code>pacs.008</code>/<code>pacs.004</code>/<code>pacs.002</code>), statements (<code>camt.053</code>/<code>camt.052</code>), reconciliation, cancellations (<code>camt.056</code>/<code>camt.029</code>), account management (<code>acmt.001</code>) and AP2/x402 agent mandates.</p>
 <p class="book-actions"><a class="pill primary no-chev" href="/iso20022-mcp/index.html" title="Explore the ISO 20022 MCP Suite">Explore the suite</a> <a class="pill ghost no-chev" href="/iso20022-mcp-docs/index.html" title="ISO 20022 MCP Suite documentation">Documentation</a> <a class="pill ghost no-chev" href="/iso20022-mcp-reference/index.html" title="ISO 20022 MCP Suite tool reference">Reference</a> <a class="pill ghost no-chev" href="/iso20022-mcp-recipes/index.html" title="ISO 20022 MCP Suite recipes">Recipes</a></p>
+</div>
+</article>
+
+</div>
+
+<header class="newsroom-section-head"><p class="newsroom-kicker">NINE SERVERS · ONE LIFECYCLE</p><h2>Every payment stage, covered.</h2></header>
+
+<div class="newsroom-grid newsroom-grid-tight">
+
+<article class="newsroom-card">
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">GATEWAY · INITIATION · SETTLEMENT</span>
+<h3>Discover, initiate and settle.</h3>
+<p class="newsroom-excerpt"><code>iso20022-mcp</code> routes across every family in seven meta-tools. <code>pain001-mcp</code> generates XSD-checked customer credit transfers and converts <code>MT101</code>; <code>pacs008-mcp</code> handles interbank settlement, <code>MT103</code> conversion and the 2026-2027 structured postal address rules.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">STATEMENTS · RECONCILIATION · E&amp;I</span>
+<h3>Parse, match and resolve.</h3>
+<p class="newsroom-excerpt"><code>camt053-mcp</code> and <code>bankstatementparser-mcp</code> parse <code>camt.053</code>, <code>MT940</code>, CSV, OFX and QFX statements. <code>reconcile-mcp</code> matches expected payments against observed entries with explainable scores, and <code>camt-exceptions</code> emits <code>camt.056</code> cancellations and <code>camt.029</code> resolutions.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AGENT MANDATES · ACCOUNTS</span>
+<h3>Bridge AP2 and x402 safely.</h3>
+<p class="newsroom-excerpt"><code>ap2-iso20022</code> verifies spending caps, expiry dates and signatures on AP2 and Coinbase x402 mandates before turning them into wire-valid <code>pain.001</code> or <code>pacs.008</code> records. <code>acmt001-mcp</code> validates account opening and maintenance.</p>
 </div>
 </article>
 

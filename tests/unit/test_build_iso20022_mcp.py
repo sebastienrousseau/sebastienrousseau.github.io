@@ -192,9 +192,21 @@ def test_full_build_replaces_collectionpage_jsonld() -> None:
     assert "CollectionPage" not in out
     assert '"@type":"WebPage"' in out
     assert '"@type":"BreadcrumbList"' in out
+    assert '"@type":"SoftwareApplication"' in out
+    assert '"@type":"FAQPage"' in out
     assert '"name":"ISO 20022 MCP Suite"' in out
     # No JSON-LD may still point at the articles listing.
     assert '"url":"https://sebastienrousseau.com/articles"' not in out
+
+
+def test_matrix_and_faq_sections_render_all_nine_servers_and_verified_cli() -> None:
+    out = _run_build(_fake_shell())
+    matrix = out.split('id="mcp-matrix"', 1)[1].split("</section>", 1)[0]
+    assert matrix.count('scope="row"') == 9
+    assert "uvx --from camt-exceptions camt-exceptions-mcp" in matrix
+    assert "uvx --from ap2-iso20022 ap2-iso20022-mcp" in matrix
+    faq = out.split('id="mcp-faq"', 1)[1].split("</section>", 1)[0]
+    assert faq.count('<details class="qa-item">') == len(mcp.C["faq"]["items"]) == 6
 
 
 def test_full_build_is_en_only_no_hreflang() -> None:

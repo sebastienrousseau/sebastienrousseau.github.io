@@ -1128,6 +1128,41 @@ def _tag_is_corrupt(tag: str) -> bool:
     return cm is not None and any(mk in cm.group(1) for mk in _CORRUPT_MARKERS)
 
 
+# Endings left behind when SSG truncates a body scrape mid-clause onto a
+# social description meta tag while the page's <meta name="description">
+# is a clean sentence ending in terminal punctuation.
+_SCRAPE_CUTOFF_SUFFIXES = (
+    " when",
+    " the",
+    " and",
+    " to",
+    " of",
+    " for",
+    " in",
+    " Runs",
+    " New here?",
+    "…",
+)
+
+
+def _social_tag_is_truncated_scrape(tag: str, clean_desc: str) -> bool:
+    """True when an ``og:description`` / ``twitter:description`` tag holds a
+    truncated body scrape that disagrees with the page's clean description."""
+    if 'name="description"' in tag.lower():
+        return False
+    cm = _CONTENT_CAPTURE_RE.search(tag)
+    if cm is None:
+        return False
+    val = cm.group(1).strip()
+    if not val or val == clean_desc:
+        return False
+    return (
+        "&middot;" in val
+        or not val.endswith((".", "!", "?", '"', "'"))
+        or val.endswith(_SCRAPE_CUTOFF_SUFFIXES)
+    )
+
+
 def clean_meta_description(page: Path, html_text: str) -> str:
     """Rewrite only the corrupted ``description`` / ``og:description`` /
     ``twitter:description`` tags with one clean, attribute-escaped summary.
@@ -1161,9 +1196,14 @@ def clean_meta_description(page: Path, html_text: str) -> str:
     def _fix_tag(m: re.Match[str]) -> str:
         tag = m.group(0)
         # With an authored description, every description tag is normalised
-        # onto it. Without one, only demonstrably corrupted tags are touched
+        # onto it. Without one, only demonstrably corrupted tags (or social
+        # tags carrying a truncated mid-sentence body scrape) are touched
         # so generator-authored page descriptions survive byte-for-byte.
-        if not authored and not _tag_is_corrupt(tag):
+        if (
+            not authored
+            and not _tag_is_corrupt(tag)
+            and not _social_tag_is_truncated_scrape(tag, esc)
+        ):
             return tag
         return _CONTENT_ATTR_RE.sub(lambda mm: f"{mm.group(1)}{esc}{mm.group(2)}", tag, count=1)
 

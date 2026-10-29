@@ -232,6 +232,7 @@ AUDIENCES: dict[str, str] = {
     "mcp-capability": ALL_AUD,
     "mcp-what": ALL_AUD,
     "mcp-arc": "engineers",
+    "mcp-matrix": "engineers regulators",
     "mcp-flow": "boards regulators",
     "mcp-security": "boards regulators",
     "mcp-regulators": "regulators",
@@ -246,6 +247,7 @@ AUDIENCES: dict[str, str] = {
     "mcp-adoption": "boards regulators",
     "mcp-schemas": "engineers regulators",
     "mcp-safety": "boards regulators",
+    "mcp-faq": ALL_AUD,
 }
 
 
@@ -837,6 +839,128 @@ C: dict = {
             "Captured from iso20022-mcp 0.0.2 on 15 July 2026. Every tool "
             "is annotated read-only, idempotent and closed-world."
         ),
+    },
+    "matrix": {
+        "eyebrow": "ARCHITECTURE AND RAILS",
+        "headline": "One gateway, eight specialist servers, every rail.",
+        "lede": (
+            "Mounting 80+ raw ISO 20022 tool schemas directly into an AI "
+            "assistant consumes ~36,400 context tokens before the first "
+            "prompt. The iso20022-mcp gateway exposes seven routing "
+            "meta-tools in ~2,200 tokens (a 94% reduction in tool-catalogue "
+            "context) and lazily imports the domain servers below on demand, "
+            "with native stdio, Streamable HTTP (--transport streamable-http) "
+            "and SSE support."
+        ),
+        "rows": [
+            (
+                "iso20022-mcp",
+                "Gateway and discovery",
+                "pain, pacs, camt, acmt routing",
+                "All supported schemes",
+                "7",
+                'uvx --from "iso20022-mcp[all]" iso20022-mcp',
+            ),
+            (
+                "pain001-mcp",
+                "Customer payment initiation",
+                "pain.001.001.03..12, pain.008.001.02, MT101",
+                "SEPA, CBPR+, FedNow, CHAPS, TARGET2",
+                "17",
+                "uvx pain001-mcp",
+            ),
+            (
+                "pacs008-mcp",
+                "Interbank settlement and returns",
+                "pacs.008, pacs.004, pacs.002, MT103, PstlAdr",
+                "SWIFT CBPR+, SEPA, FedNow, CHAPS, TARGET2, HVPS+",
+                "15",
+                "uvx pacs008-mcp",
+            ),
+            (
+                "camt053-mcp",
+                "Statement reporting and audit",
+                "camt.053, camt.052, MT940, MT942",
+                "CBPR+, SEPA, HVPS+",
+                "21",
+                "uvx camt053-mcp",
+            ),
+            (
+                "reconcile-mcp",
+                "Explainable reconciliation",
+                "pain.001 vs camt.053 matching + sandbox",
+                "Cross-rail ledger matching",
+                "7",
+                "uvx reconcile-mcp",
+            ),
+            (
+                "camt-exceptions",
+                "Exceptions and investigations",
+                "camt.056 cancellation, camt.029 resolution",
+                "SWIFT CBPR+ E&I, SEPA, TARGET2",
+                "4",
+                "uvx --from camt-exceptions camt-exceptions-mcp",
+            ),
+            (
+                "ap2-iso20022",
+                "Agentic mandate bridge",
+                "AP2 and x402 mandates to pain.001 / pacs.008",
+                "SEPA, CBPR+, FedNow",
+                "5",
+                "uvx --from ap2-iso20022 ap2-iso20022-mcp",
+            ),
+            (
+                "acmt001-mcp",
+                "Account management",
+                "acmt.001.001.08 opening and maintenance",
+                "ISO 20022 account lifecycle",
+                "6",
+                "uvx acmt001-mcp",
+            ),
+            (
+                "bankstatementparser-mcp",
+                "Multi-format statement ingestion",
+                "camt.053, pain.001, MT940, CSV, OFX, QFX",
+                "All bank statement formats",
+                "5",
+                "uvx bankstatementparser-mcp",
+            ),
+        ],
+    },
+    "faq": {
+        "eyebrow": "FREQUENTLY ASKED QUESTIONS",
+        "headline": "Questions payment architects ask first.",
+        "lede": (
+            "Direct answers on context-window architecture, the 2026-2027 "
+            "ISO 20022 address and investigation mandates, transport modes "
+            "and operational safety."
+        ),
+        "items": [
+            (
+                "Why use a 7-tool gateway instead of exposing all 87 tools directly?",
+                "Exposing 80+ individual ISO 20022 tool schemas to an LLM consumes roughly 36,400 context tokens on every turn and degrades tool-selection accuracy. Following the gateway meta-tool pattern, iso20022-mcp exposes seven routing tools (search, list_families, list_servers, describe, validate, generate, parse) in roughly 2,200 tokens, cutting tool-catalogue context by 94% while lazily loading specialist servers only when called.",
+            ),
+            (
+                "Can an AI agent accidentally move money or transmit a wire with this suite?",
+                "No. Every server in the suite is strictly a local message generator, parser, validator or reconciler. None of the nine packages contain network-dispatch code, bank API credentials or SWIFT/SEPA connectivity. Every gateway tool is annotated readOnlyHint and idempotentHint, keeping message generation behind your human approval wall.",
+            ),
+            (
+                "How does the suite handle the November 2026 and November 2027 ISO 20022 postal address mandates?",
+                "Payment schemes enforce structured and hybrid postal addresses on a multi-speed timeline: November 2026 for domestic schemes and CBPR+ readiness gates, and November 2027 for SWIFT point-of-entry rejections of unstructured-only addresses and the MT101 sunset. pacs008-mcp ships classify_address, validate_address, repair_address and validate_addresses to enforce TownName (TwnNm) and Country (Ctry) alongside hybrid AdrLine rules, while camt053-mcp ships check_cbpr_readiness.",
+            ),
+            (
+                "How does the suite support the November 2027 Exceptions and Investigations (E&I) transition?",
+                "As cross-border rails retire free-format MT199 and MT299 investigation messages in favour of structured ISO 20022 Exceptions and Investigations, camt-exceptions (invoked via uvx --from camt-exceptions camt-exceptions-mcp) generates and XSD-validates camt.056 FI-to-FI payment cancellation requests and camt.029 resolutions of investigation.",
+            ),
+            (
+                "How do I run a single standalone server or expose Streamable HTTP for remote agents?",
+                "Every server runs standalone over stdio with uvx (for example uvx pain001-mcp, uvx pacs008-mcp, uvx --from camt-exceptions camt-exceptions-mcp, or uvx --from ap2-iso20022 ap2-iso20022-mcp). For remote-first platforms, iso20022-mcp natively supports Streamable HTTP and SSE via iso20022-mcp --transport streamable-http --host 127.0.0.1 --port 8000 (serving /mcp) as well as mcp-proxy.",
+            ),
+            (
+                "How do AP2 and x402 agent payment mandates become ISO 20022 bank messages?",
+                "The ap2-iso20022 server normalises signed Agent Payments Protocol (AP2) and Coinbase x402 mandates via normalize_ap2 and normalize_x402, verifies spending caps, expiry timestamps and signatures with check_mandate, and converts valid mandates into pain.001 or pacs.008 records via to_pain001 and to_pacs008 for XSD-validated XML generation.",
+            ),
+        ],
     },
 }
 
@@ -1509,6 +1633,57 @@ def _simulator() -> str:
     )
 
 
+def _matrix(d: dict) -> str:
+    """Responsive 9-server architecture & rail matrix table."""
+    rows = "".join(
+        "<tr>"
+        f'<th scope="row"><code>{_esc(srv)}</code></th>'
+        f"<td>{_esc(role)}</td>"
+        f"<td>{_esc(schemas)}</td>"
+        f"<td>{_esc(rails)}</td>"
+        f"<td>{_esc(tools)}</td>"
+        f"<td><code>{_esc(cmd)}</code></td>"
+        "</tr>"
+        for srv, role, schemas, rails, tools, cmd in d["rows"]
+    )
+    return (
+        '<section id="mcp-matrix"><div class="spk-wrap">'
+        + _head(d["eyebrow"], d["headline"], d["lede"])
+        + '<div class="mcp-table-wrap" role="region" '
+        'aria-label="Nine-server architecture and rail matrix" tabindex="0">'
+        '<table class="mcp-table">'
+        '<caption class="visually-hidden">'
+        "ISO 20022 MCP Suite nine-server architecture and payment rail matrix"
+        "</caption>"
+        "<thead><tr>"
+        '<th scope="col">Server</th>'
+        '<th scope="col">Lifecycle role</th>'
+        '<th scope="col">ISO 20022 &amp; legacy bridges</th>'
+        '<th scope="col">Clearing rails</th>'
+        '<th scope="col">Tools</th>'
+        '<th scope="col">Standalone CLI</th>'
+        f"</tr></thead><tbody>{rows}</tbody></table></div>"
+        "</div></section>"
+    )
+
+
+def _faq(d: dict) -> str:
+    """High-intent FAQ accordion riding the canonical .qa-item component."""
+    items = "".join(
+        '<details class="qa-item">'
+        f'<summary class="qa-q">{_esc(q)}</summary>'
+        f'<div class="qa-a mcp-faq-body"><p>{_esc(a)}</p></div>'
+        "</details>"
+        for q, a in d["items"]
+    )
+    return (
+        '<section id="mcp-faq"><div class="spk-wrap">'
+        + _head(d["eyebrow"], d["headline"], d["lede"])
+        + f'<div class="qa-list mcp-faq-list">{items}</div>'
+        "</div></section>"
+    )
+
+
 def _render_body(d: dict) -> str:
     metrics = _load_data(METRICS_SRC, "verified-metrics sections")
     transcripts = _load_data(TRANSCRIPTS_SRC, "prompts section")
@@ -1528,6 +1703,7 @@ def _render_body(d: dict) -> str:
         _aud(_capability(d["capability"]), "mcp-capability"),
         _aud(_cards(d["what"], "mcp-what", bullets=False), "mcp-what"),
         _aud(_cards(d["arc"], "mcp-arc", bullets=True), "mcp-arc"),
+        _aud(_matrix(d["matrix"]), "mcp-matrix"),
         _aud(_flow(d["flow"]), "mcp-flow"),
         _aud(_security(d["security"]), "mcp-security"),
         _aud(_regulators(d["regulators"]), "mcp-regulators"),
@@ -1549,6 +1725,7 @@ def _render_body(d: dict) -> str:
         _aud(_adoption(d["adoption"], metrics), "mcp-adoption"),
         _aud(_schemas(d["schemas"]), "mcp-schemas"),
         _aud(_cards(d["safety"], "mcp-safety", bullets=False), "mcp-safety"),
+        _aud(_faq(d["faq"]), "mcp-faq"),
     ]
     return '<div class="speaking-page iso20022-mcp-page">' + "".join(sections) + "</div>"
 
@@ -1723,8 +1900,15 @@ def _jsonld_script(payload: dict) -> str:
 
 
 def _hub_jsonld() -> str:
-    """WebPage + BreadcrumbList for the hub — replaces the articles shell's
-    CollectionPage block."""
+    """WebPage + BreadcrumbList + SoftwareApplication + FAQPage for the hub."""
+    faq_entities = [
+        {
+            "@type": "Question",
+            "name": q,
+            "acceptedAnswer": {"@type": "Answer", "text": a},
+        }
+        for q, a in C["faq"]["items"]
+    ]
     payload = {
         "@context": "https://schema.org",
         "@graph": [
@@ -1752,6 +1936,28 @@ def _hub_jsonld() -> str:
                         "item": URL,
                     },
                 ],
+            },
+            {
+                "@type": "SoftwareApplication",
+                "@id": f"{URL}#software",
+                "name": "ISO 20022 MCP Suite",
+                "applicationCategory": "FinanceApplication",
+                "operatingSystem": "macOS, Linux, Windows",
+                "license": "https://spdx.org/licenses/Apache-2.0.html",
+                "url": URL,
+                "downloadUrl": "https://pypi.org/project/iso20022-mcp/",
+                "codeRepository": GH,
+                "author": {"@id": "https://sebastienrousseau.com/#person"},
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD",
+                },
+            },
+            {
+                "@type": "FAQPage",
+                "@id": f"{URL}#faq",
+                "mainEntity": faq_entities,
             },
         ],
     }

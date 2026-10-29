@@ -15,6 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - **Four October 2026 articles across 35 languages ([#509])**: published `2026-10-24-an-ai-s-attack-on-progression-free-sets-a-ledger-of-what-stalled`, `2026-10-25-agentic-ai-breaks-the-assumption-behind-every-task-exposure-forecast`, `2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude`, and `2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook`, together with all 136 localised editions across 34 non-English locales, updated topic clusters, and romanisation lexicon entries for `ja`, `zh-hans`, and `zh-hant`.
+- **ISO 20022 MCP Suite architecture matrix, 2027 FAQ, and structured data ([#509])**: expanded `/iso20022-mcp/` with a 9-server architecture and clearing rail matrix (documenting the 7-meta-tool gateway pattern and ~94% token reduction), a 6-question accordion on 2026-2027 SWIFT CBPR+ structured/hybrid postal addresses (`TwnNm`, `Ctry`, `AdrLine`) and November 2027 E&I (`camt.056`/`camt.029`), and `SoftwareApplication` + `FAQPage` JSON-LD; added OpenAI Codex CLI, `streamable-http`, all 9 server CLI invocations, and the structured address repair recipe across `/suite/`, `/iso20022-mcp-docs/`, and `/iso20022-mcp-recipes/`.
 
 ### Changed
 
@@ -22,6 +23,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- **Landscape-only article banners ([#509])**: `scripts/editorial/pick_banner.py` now parses `VP8`, `VP8L`, and `VP8X` WebP dimensions and excludes portrait and square assets (`width <= height`) during inventory collection; replaced seven portrait stock banners across English and all 34 locale editions with `2584x1597` landscape photographs.
+- **Social card metadata on `story` and `page` layouts ([#509])**: `story.html` now emits `<meta name="banner-src" content="{{banner}}" />` so `/iso20022-mcp-docs/`, `/iso20022-mcp-reference/`, and `/iso20022-mcp-recipes/` publish full-bleed raster `og:image` / `twitter:image` cards instead of share-button icon fallbacks, and `postbuild_lib.seo.clean_meta_description` repairs truncated body scrapes on non-BlogPosting `og:description` and `twitter:description` tags.
 - **Advisories in the CI tooling locks**: `msgpack` 1.2.1 to 1.2.3 in `requirements-dev.lock` (CVE-2026-114613) and `qs` 6.16.0 to 6.17.0 in `.github/ci-tools/lighthouse/package-lock.json` (GHSA-6pq8-jhm2-2vcw, via `overrides`). Both `pip-audit` and `npm audit` report 0 vulnerabilities across all lockfiles.
 
 ---
