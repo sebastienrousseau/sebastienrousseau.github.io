@@ -106,7 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-featured">
 <a class="newsroom-featured-media" href="/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html" title="Why the FCA Is Regulating AI Without an AI Rulebook">
-<img alt="City of London financial district architecture representing FCA outcomes-based AI regulation and UK financial services governance." src="https://cloudcdn.pro/stocks/images/adrien-olichon-3137055.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<img alt="City of London financial district architecture representing FCA outcomes-based AI regulation and UK financial services governance." src="https://cloudcdn.pro/stocks/images/brett-sayles-7963572.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
 <span class="newsroom-eyebrow">Ai · Ai-Governance · Compliance</span>
@@ -123,7 +123,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude/index.html" title="The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour" aria-label="The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour">
-<img alt="Cryptographic hardware and binary patterns illustrating NIST ECDSA elliptic curve seeds, lrand48 PRNG states and AI cryptanalysis." src="https://cloudcdn.pro/stocks/images/adam-borkowski-igRXeLr7PDU.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Cryptographic hardware and binary patterns illustrating NIST ECDSA elliptic curve seeds, lrand48 PRNG states and AI cryptanalysis." src="https://cloudcdn.pro/stocks/images/galina-nelyubova-NRWhMzpq8z4.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Cybersecurity · Cryptography · Ai</span>
@@ -471,7 +471,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026/index.html" title="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust" aria-label="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust">
-<img alt="Abstract distributed-ledger lattice resolving into a certified audit spine — visualising the shift from retrospective entity audits to continuous, cryptographically-verifiable blockchain assurance for wholesale banking" src="https://cloudcdn.pro/stocks/images/dylan-calluy-JpflvzEl5cg.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Abstract distributed-ledger lattice resolving into a certified audit spine — visualising the shift from retrospective entity audits to continuous, cryptographically-verifiable blockchain assurance for wholesale banking" src="https://cloudcdn.pro/stocks/images/chuttersnap-mf-o1E7omzk.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Certified Blockchain · Distributed Ledger · Iso/Iec Tc 307</span>
@@ -675,7 +675,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-16-ai-aware-dotfiles-secure-reproducible-workstation-2026/index.html" title="AI-Aware Dotfiles in 2026: Building a Secure, Reproducible Developer Workstation for MCP, SLSA, and Multi-Shell Parity" aria-label="AI-Aware Dotfiles in 2026: Building a Secure, Reproducible Developer Workstation for MCP, SLSA, and Multi-Shell Parity">
-<img alt="Developer workstation in low light — symbolising AI-aware, reproducible, secure dotfiles for MCP servers, SLSA signing, age/SOPS secrets, and multi-shell parity" src="https://cloudcdn.pro/stocks/images/almas-salakhov-Vq2ap8aFFEs.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Developer workstation in low light — symbolising AI-aware, reproducible, secure dotfiles for MCP servers, SLSA signing, age/SOPS secrets, and multi-shell parity" src="https://cloudcdn.pro/stocks/images/alexander-sinn-KgLtFCgfC28.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Dotfiles · Developer Tools · Mcp</span>
@@ -699,7 +699,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-14-bankstatementparser-transaction-intelligence-treasury-open-source-2026/index.html" title="From Bank Statements to Unified Transaction Intelligence: Building an Open-Source Parser for Treasury Teams" aria-label="From Bank Statements to Unified Transaction Intelligence: Building an Open-Source Parser for Treasury Teams">
-<img alt="Modern finance office workspace at night — symbolising the unified transaction intelligence that BankStatementParser builds from CAMT, PAIN.001, MT940, OFX, CSV, and scanned PDFs" src="https://cloudcdn.pro/stocks/images/ricardo-gomez-angel-Oj6tP8NlvFo.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Modern finance office workspace at night — symbolising the unified transaction intelligence that BankStatementParser builds from CAMT, PAIN.001, MT940, OFX, CSV, and scanned PDFs" src="https://cloudcdn.pro/stocks/images/christoph-duschl-CE_TvPHF3lA.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Bankstatementparser · Treasury · Bank Statements</span>
@@ -735,7 +735,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/index.html" title="The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk" aria-label="The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk">
-<img alt="Abstract architectural photograph used as the visual key for the 2026 Banking Resilience Index — combining AI risk, cloud concentration, quantum-safe security, payment continuity, and critical third-party dependency into one operational-resilience scoreboard" src="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Abstract architectural photograph used as the visual key for the 2026 Banking Resilience Index — combining AI risk, cloud concentration, quantum-safe security, payment continuity, and critical third-party dependency into one operational-resilience scoreboard" src="https://cloudcdn.pro/stocks/images/alexander-isreb-1797383.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Banking Resilience · Dora · Ai Risk</span>
@@ -939,7 +939,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html" title="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments" aria-label="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments">
-<img alt="UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets" src="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM-1200.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets" src="https://cloudcdn.pro/stocks/images/andrea-de-santis-gYINUebkIDg.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Uk Payments · Payments Forward Plan · Stablecoins</span>

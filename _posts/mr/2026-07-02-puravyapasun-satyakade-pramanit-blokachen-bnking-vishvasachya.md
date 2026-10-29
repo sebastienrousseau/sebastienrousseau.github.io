@@ -6,7 +6,7 @@ description: "२०२६ चा Certified Blockchain Index बँकांन�
 date: "July 2, 2026"
 language: "mr"
 locale: "mr_IN"
-banner: "https://cloudcdn.pro/stocks/images/dylan-calluy-JpflvzEl5cg.webp"
+banner: "https://cloudcdn.pro/stocks/images/chuttersnap-mf-o1E7omzk.webp"
 banner_alt: "प्रमाणित ऑडिट कण्यामध्ये रूपांतरित होणारी अमूर्त वितरित-लेजर जाळी - घाऊक बँकिंगसाठी पूर्वलक्ष्यी घटक-आधारित ऑडिटपासून सतत, क्रिप्टोग्राफिकदृष्ट्या-सत्यापनयोग्य ब्लॉकचेन आश्वासनाकडे होणारे स्थित्यंतर दृश्यमान करणारी"
 keywords: "प्रमाणित ब्लॉकचेन, वितरित लेजर, ISO/IEC TC 307, DORA, CPMI-IOSCO PFMI, BCBS 239, ISO 42001, ब्लॉकचेन आश्वासन, capability maturity model, बँकिंग विश्वास, टोकनकृत सेटलमेंट, पोस्ट-क्वांटम क्रिप्टोग्राफी, ऑडिट स्पाइन"
 ---

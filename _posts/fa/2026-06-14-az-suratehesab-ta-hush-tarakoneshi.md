@@ -6,7 +6,7 @@ description: "BankStatementParser فرمت‌های CAMT، PAIN.001، CSV، OFX/
 date: "June 14, 2026"
 language: "fa"
 locale: "fa_IR"
-banner: "https://cloudcdn.pro/stocks/images/ricardo-gomez-angel-Oj6tP8NlvFo.webp"
+banner: "https://cloudcdn.pro/stocks/images/christoph-duschl-CE_TvPHF3lA.webp"
 banner_alt: "فضای کاری مدرن دفتر مالی در شب - نمادی از هوش تراکنشی یکپارچه‌ای که BankStatementParser از CAMT، PAIN.001، MT940، OFX، CSV و PDFهای اسکن‌شده می‌سازد"
 keywords: "BankStatementParser، تجزیه‌گر صورت‌حساب بانکی، CAMT، PAIN.001، MT940، OFX، QFX، OCR در PDF، هوش تراکنشی خزانه‌داری"
 ---

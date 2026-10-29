@@ -6,7 +6,7 @@ description: "A 2026-os Certified Blockchain Index ötszintű képességéretts�
 date: "July 2, 2026"
 language: "hu"
 locale: "hu_HU"
-banner: "https://cloudcdn.pro/stocks/images/dylan-calluy-JpflvzEl5cg.webp"
+banner: "https://cloudcdn.pro/stocks/images/chuttersnap-mf-o1E7omzk.webp"
 banner_alt: "Absztrakt elosztott főkönyvi rács, amely tanúsított auditgerinccé áll össze: a visszatekintő entitásauditokról a folyamatos, kriptográfiailag ellenőrizhető blokklánc-bizonyosságra való átállás megjelenítése a nagybanki szektor számára"
 keywords: "tanúsított blokklánc, elosztott főkönyv, ISO/IEC TC 307, DORA, CPMI-IOSCO PFMI, BCBS 239, ISO 42001, blokklánc-bizonyosság, képességérettségi modell, banki bizalom, tokenizált kiegyenlítés, posztkvantum kriptográfia, auditgerinc"
 ---

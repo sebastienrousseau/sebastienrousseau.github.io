@@ -6,7 +6,7 @@ description: "UK Payments Forward Plan மற்றும் ஏப்ரல் 
 date: "May 24, 2026"
 language: "ta"
 locale: "ta_IN"
-banner: "https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM-1200.webp"
+banner: "https://cloudcdn.pro/stocks/images/andrea-de-santis-gYINUebkIDg.webp"
 banner_alt: "ஸ்டேபிள்காயின்கள், டோக்கனைஸ் செய்யப்பட்ட வைப்புகள், ஓப்பன் பேங்கிங், AI முகவர்கள், FCA ஒழுங்குமுறை, PSR ஒருங்கிணைப்பு மற்றும் மொத்த டிஜிட்டல் சந்தைகளைக் காட்டும் UK பணப்பரிவர்த்தனை நவீனமயமாக்கல் வரைபடம்"
 keywords: "UK Payments Forward Plan 2026, ஸ்டேபிள்காயின்கள் UK, டோக்கனைஸ் செய்யப்பட்ட வைப்புகள் UK, ஓப்பன் பேங்கிங் FCA, PSR FCA ஒருங்கிணைப்பு, AI முகவர் பணப்பரிவர்த்தனைகள் UK, Wholesale Digital Markets Champion, Chris Woolard, பணப்பரிவர்த்தனை சேவைகள் ஒழுங்குமுறை"
 ---

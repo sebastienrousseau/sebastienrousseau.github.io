@@ -6,7 +6,7 @@ description: "A brit Payments Forward Plan és a 2026. áprilisi szakpolitikai c
 date: "May 24, 2026"
 language: "hu"
 locale: "hu_HU"
-banner: "https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM-1200.webp"
+banner: "https://cloudcdn.pro/stocks/images/andrea-de-santis-gYINUebkIDg.webp"
 banner_alt: "A brit fizetési modernizáció diagramja, amely bemutatja a stabilcoinokat, a tokenizált betéteket, az open bankingot, az MI-ügynököket, az FCA-szabályozást, a PSR-konszolidációt és a nagykereskedelmi digitális piacokat"
 keywords: "brit Payments Forward Plan 2026, stabilcoinok Egyesült Királyság, tokenizált betétek Egyesült Királyság, open banking FCA, PSR FCA konszolidáció, MI-ügynöki fizetések Egyesült Királyság, Wholesale Digital Markets Champion, Chris Woolard, fizetési szolgáltatások szabályozása"
 ---

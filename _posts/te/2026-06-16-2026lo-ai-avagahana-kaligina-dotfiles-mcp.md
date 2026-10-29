@@ -6,7 +6,7 @@ description: "AI-అవగాహన కలిగిన dotfiles అనేది 
 date: "June 16, 2026"
 language: "te"
 locale: "te_IN"
-banner: "https://cloudcdn.pro/stocks/images/almas-salakhov-Vq2ap8aFFEs.webp"
+banner: "https://cloudcdn.pro/stocks/images/alexander-sinn-KgLtFCgfC28.webp"
 banner_alt: "మసక వెలుతురులో డెవలపర్ వర్క్‌స్టేషన్ - MCP సర్వర్‌లు, SLSA సంతకం, age/SOPS రహస్యాలు, మరియు మల్టీ-షెల్ సమానత్వం కోసం AI-అవగాహన కలిగిన, పునరుత్పాదక, సురక్షిత dotfilesను సూచిస్తూ"
 keywords: "dotfiles, Chezmoi, MCP, Model Context Protocol, SLSA, SOPS, age encryption, declarative configuration, developer workstation, DORA Article 5, NIST CSF 2.0, supply chain security, agentic AI, multi-shell parity, Zsh, Fish, Nushell"
 ---

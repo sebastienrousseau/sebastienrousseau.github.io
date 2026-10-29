@@ -121,6 +121,46 @@ def test_collect_inventory_leaves_out_responsive_variants(tmp_path: Path) -> Non
     assert pb.collect_inventory(tmp_path) == ["a.webp", "b-2026.webp"]
 
 
+def test_collect_inventory_excludes_portrait_and_square_webp(tmp_path: Path) -> None:
+    """Article hero banners require landscape images (width > height)."""
+    import struct
+
+    def vp8_header(w: int, h: int) -> bytes:
+        return b"RIFF" + b"\x00" * 4 + b"WEBP" + b"VP8 " + b"\x00" * 10 + struct.pack("<HH", w, h)
+
+    (tmp_path / "landscape.webp").write_bytes(vp8_header(1920, 1280))
+    (tmp_path / "portrait.webp").write_bytes(vp8_header(1280, 1920))
+    (tmp_path / "square.webp").write_bytes(vp8_header(1000, 1000))
+    assert pb.collect_inventory(tmp_path) == ["landscape.webp"]
+
+
+def test_webp_dimensions_parses_vp8l_vp8x_and_handles_invalid(tmp_path: Path) -> None:
+    # VP8L: 14-bit width-1 and height-1 packed at bytes 21..25
+    w_m1, h_m1 = 1919, 1079
+    bits = w_m1 | (h_m1 << 14)
+    vp8l = b"RIFF\x00\x00\x00\x00WEBPVP8L" + b"\x00" * 5 + bits.to_bytes(4, "little") + b"\x00" * 5
+    p_l = tmp_path / "l.webp"
+    p_l.write_bytes(vp8l)
+    assert pb.webp_dimensions(p_l) == (1920, 1080)
+
+    # VP8X: 24-bit width-1 at 24..27, height-1 at 27..30
+    vp8x = (
+        b"RIFF\x00\x00\x00\x00WEBPVP8X"
+        + b"\x00" * 8
+        + (2583).to_bytes(3, "little")
+        + (1596).to_bytes(3, "little")
+    )
+    p_x = tmp_path / "x.webp"
+    p_x.write_bytes(vp8x)
+    assert pb.webp_dimensions(p_x) == (2584, 1597)
+
+    # Unknown chunk and missing file return None
+    p_u = tmp_path / "u.webp"
+    p_u.write_bytes(b"RIFF\x00\x00\x00\x00WEBPXXXX" + b"\x00" * 14)
+    assert pb.webp_dimensions(p_u) is None
+    assert pb.webp_dimensions(tmp_path / "missing.webp") is None
+
+
 def test_default_inventory_is_the_sibling_cloudcdn_checkout() -> None:
     """cloudcdn.pro sits at Code/Public/JavaScript/, beside Code/Public/Web/."""
     checkout = Path(pb.__file__).resolve().parents[2]  # scripts/editorial/ -> repo

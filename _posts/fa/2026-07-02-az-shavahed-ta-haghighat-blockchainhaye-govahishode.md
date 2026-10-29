@@ -6,7 +6,7 @@ description: "شاخص بلاک‌چین گواهی‌شده ۲۰۲۶ یک مد�
 date: "July 2, 2026"
 language: "fa"
 locale: "fa_IR"
-banner: "https://cloudcdn.pro/stocks/images/dylan-calluy-JpflvzEl5cg.webp"
+banner: "https://cloudcdn.pro/stocks/images/chuttersnap-mf-o1E7omzk.webp"
 banner_alt: "شبکه‌ای شبکه‌مانند از دفترکل توزیع‌شده که به یک ستون فقرات ممیزی گواهی‌شده تبدیل می‌شود - تصویری از گذار از ممیزی‌های گذشته‌نگرِ مبتنی بر نهاد به اطمینان‌بخشی پیوسته و رمزنگارانه‌قابل‌راستی‌آزمایی بلاک‌چین برای بانکداری عمده"
 keywords: "بلاک‌چین گواهی‌شده، دفترکل توزیع‌شده، ISO/IEC TC 307، DORA، CPMI-IOSCO PFMI، BCBS 239، ISO 42001، اطمینان‌بخشی بلاک‌چین، مدل بلوغ قابلیت، اعتماد بانکی، تسویه توکنی‌شده، رمزنگاری پساکوانتومی، ستون فقرات ممیزی"
 ---

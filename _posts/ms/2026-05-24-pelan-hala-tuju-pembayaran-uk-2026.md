@@ -6,7 +6,7 @@ description: "Pelan Hala Tuju Pembayaran UK dan pakej dasar April 2026 menunjukk
 date: "May 24, 2026"
 language: "ms"
 locale: "ms_MY"
-banner: "https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM-1200.webp"
+banner: "https://cloudcdn.pro/stocks/images/andrea-de-santis-gYINUebkIDg.webp"
 banner_alt: "Rajah pemodenan pembayaran UK menunjukkan stablecoin, deposit ditokenkan, perbankan terbuka, ejen AI, peraturan FCA, penyatuan PSR, dan pasaran digital borong"
 keywords: "Pelan Hala Tuju Pembayaran UK 2026, stablecoin UK, deposit ditokenkan UK, perbankan terbuka FCA, penyatuan PSR FCA, pembayaran ejen AI UK, Juara Pasaran Digital Borong, Chris Woolard, peraturan perkhidmatan pembayaran"
 ---
