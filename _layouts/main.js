@@ -979,8 +979,9 @@ function fallbackCopy(text, done) {
     // The sections container: the homepage content wrap, or the ISO 20022
     // MCP hub wrapper (the only other page whose sections carry
     // [data-audience] tags). Any other page has neither, and bails.
+    var homeContent = document.querySelector(".home-content");
     var home =
-        document.querySelector(".home-content") ||
+        homeContent ||
         document.querySelector(".iso20022-mcp-page");
     if (!home) return;
 
@@ -1059,15 +1060,18 @@ function fallbackCopy(text, done) {
     function reorder(aud) {
         var lead = [];
         var rest = [];
+        var tail = [];
         sections.forEach(function (sec) {
             var tags = (sec.getAttribute("data-audience") || "").split(/\s+/);
-            if (aud && tags.indexOf(aud) !== -1) {
+            if (aud && sec.id === "mcp-faq") {
+                tail.push(sec);
+            } else if (aud && tags.indexOf(aud) !== -1) {
                 lead.push(sec);
             } else {
                 rest.push(sec);
             }
         });
-        lead.concat(rest).forEach(function (sec) {
+        lead.concat(rest).concat(tail).forEach(function (sec) {
             container.insertBefore(sec, tailAnchor);
         });
     }
@@ -1093,7 +1097,7 @@ function fallbackCopy(text, done) {
             var match = Boolean(aud && (c.getAttribute("data-audience-card") || "").split(/\s+/).indexOf(aud) !== -1);
             c.classList.toggle("is-lens-match", match);
         });
-        if (isEn) {
+        if (isEn && homeContent) {
             var nextSub = (aud && HERO_SUB_LENS[aud]) ? HERO_SUB_LENS[aud] : heroSubDefault;
             if (heroSub && heroSubDefault) {
                 heroSub.textContent = nextSub;

@@ -51,7 +51,7 @@ export function isPDFRoute(pathname) {
  * Entry point — return a Response if the path is a PDF route, null
  * otherwise. The lang-router checks this before locale routing.
  */
-export async function tryPDF(request, base = PDF_RENDER_BASE_DEFAULT) {
+export async function tryPDF(request, base = PDF_RENDER_BASE_DEFAULT, originToken = '') {
   const url = new URL(request.url);
   const m = PDF_ROUTE_RE.exec(url.pathname);
   if (!m) return null;
@@ -63,10 +63,12 @@ export async function tryPDF(request, base = PDF_RENDER_BASE_DEFAULT) {
     return errorResponse(400, 'invalid-slug', 'slug does not match allowed pattern');
   }
   let upstream;
+  const fetchInit = { cf: { cacheTtl: 86400, cacheEverything: true } };
+  if (originToken) {
+    fetchInit.headers = { 'X-Origin-Verify': originToken };
+  }
   try {
-    upstream = await fetch(`${base}/render?slug=${encodeURIComponent(slug)}`, {
-      cf: { cacheTtl: 86400, cacheEverything: true },
-    });
+    upstream = await fetch(`${base}/render?slug=${encodeURIComponent(slug)}`, fetchInit);
   } catch (err) {
     return errorResponse(503, 'render-unavailable', err.message || 'fly fetch failed');
   }

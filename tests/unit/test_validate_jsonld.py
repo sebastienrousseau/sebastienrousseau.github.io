@@ -389,3 +389,11 @@ def test_two_nodes_sharing_an_id_still_warn():
 
 def test_distinct_ids_are_quiet():
     assert _warnings_for(DISTINCT_IDS) == []
+
+
+def test_validate_all_parallel_and_serial_agree(tmp_path):
+    p1 = write(tmp_path, "a.html", GOOD_HTML)
+    p2 = write(tmp_path, "b.html", GOOD_HTML.replace('"x"', '"x",,'))
+    serial = v._validate_all([p1, p2], tmp_path, v.validate_page, jobs=1)
+    parallel = v._validate_all([p1, p2], tmp_path, v.validate_page, jobs=2)
+    assert serial == parallel == (1, 1, 0)

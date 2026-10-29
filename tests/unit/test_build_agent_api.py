@@ -91,6 +91,10 @@ def test_collect_posts_emits_canonical_pretty_urls_and_word_count(
 
     monkeypatch.setattr(api, "POSTS", posts_dir)
     monkeypatch.setattr(api, "PUBLIC", pub_dir)
+    sig_dir = tmp_path / "sigstore-bundles"
+    sig_dir.mkdir()
+    (sig_dir / f"{stem}.sigstore.json").write_text("{}", encoding="utf-8")
+    monkeypatch.setattr(api, "SIGSTORE", sig_dir)
     monkeypatch.setattr(api, "TOPICS", {"pqc": {"slugs": [stem]}})
     monkeypatch.setattr(
         api,
@@ -109,3 +113,11 @@ def test_collect_posts_emits_canonical_pretty_urls_and_word_count(
     assert rec["wordCount"] == 850
     assert rec["topics"] == ["pqc"]
     assert rec["keywords"] == ["pqc", "rust"]
+    assert isinstance(rec["content_sha256"], str) and len(str(rec["content_sha256"])) == 64
+    assert rec["sigstore_bundle"] == f"https://sebastienrousseau.com/sigstore/{stem}.sigstore.json"
+
+
+def test_sigstore_bundle_url_returns_none_when_absent(tmp_path: Path, monkeypatch) -> None:
+    monkeypatch.setattr(api, "SIGSTORE", tmp_path / "no-sigstore")
+    monkeypatch.setattr(api, "PUBLIC", tmp_path / "no-public")
+    assert api._sigstore_bundle_url("2026-06-29-none") is None

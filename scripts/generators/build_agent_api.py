@@ -33,6 +33,7 @@ from pathlib import Path as _Path
 
 _sys.path.insert(0, str(_Path(__file__).resolve().parents[1] / "lib"))
 
+import hashlib
 import json
 import re
 import sys
@@ -43,6 +44,7 @@ from build_topics import TOPICS, read_frontmatter
 
 PUBLIC = Path("public")
 POSTS = Path("_posts")
+SIGSTORE = Path("sigstore-bundles")
 OUT = PUBLIC / "api" / "agents"
 BASE = "https://sebastienrousseau.com"
 
@@ -68,6 +70,19 @@ def _word_count(stem: str) -> int | None:
     return int(m.group(1)) if m else None
 
 
+def _content_sha256(md: Path) -> str:
+    """Return the hex SHA-256 digest of a markdown source file for agent provenance."""
+    return hashlib.sha256(md.read_bytes()).hexdigest()
+
+
+def _sigstore_bundle_url(stem: str) -> str | None:
+    """Return the public Sigstore bundle URL when a bundle exists for ``stem``."""
+    bundle_name = f"{stem}.sigstore.json"
+    if (SIGSTORE / bundle_name).is_file() or (PUBLIC / "sigstore" / bundle_name).is_file():
+        return f"{BASE}/sigstore/{bundle_name}"
+    return None
+
+
 def _split_keywords(fm: dict[str, str]) -> list[str]:
     return [k.strip() for k in (fm.get("keywords") or "").split(",") if k.strip()]
 
@@ -85,6 +100,7 @@ def collect_posts() -> list[dict[str, object]]:
         if not fm:
             continue
         wc = _word_count(stem)
+        sigstore_url = _sigstore_bundle_url(stem)
         record: dict[str, object] = {
             "slug": stem,
             "url": f"{BASE}/{stem}/",
@@ -95,9 +111,12 @@ def collect_posts() -> list[dict[str, object]]:
             "banner": fm.get("banner", ""),
             "topics": slug_to_topics.get(stem, []),
             "language": fm.get("language", "en-GB"),
+            "content_sha256": _content_sha256(md),
         }
         if wc is not None:
             record["wordCount"] = wc
+        if sigstore_url is not None:
+            record["sigstore_bundle"] = sigstore_url
         out.append(record)
     # Newest first.
     out.sort(key=lambda r: str(r["date"]), reverse=True)

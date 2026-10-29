@@ -476,3 +476,12 @@ test('error responses do NOT carry immutable cache (they should retry quickly)',
   const r = await tryMCP(req('/mcp/v1/read_resource'));
   assert.equal(r.headers.get('Cache-Control'), 'no-store');
 });
+
+test('server_info returns protocolVersion, serverInfo, capabilities, and tools', async () => {
+  const r = await tryMCP(req('/mcp/v1/server_info'));
+  assert.equal(r.status, 200);
+  const body = await r.json();
+  assert.equal(body.protocolVersion, '2025-06-18');
+  assert.equal(body.serverInfo.name, 'sebastienrousseau-mcp');
+  assert.equal(body.tools.length, 3);
+});
