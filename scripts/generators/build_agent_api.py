@@ -18,12 +18,12 @@ Outputs (all under public/api/agents/):
     person.json       — author profile (Person + Organization)
 
 Inputs:
-    _posts/*.md       — post frontmatter (read directly)
-    scripts/build_topics.py:TOPICS — topic taxonomy
-    public/.../index.html — wordCount lifted from rendered BlogPosting JSON-LD
+    _posts/*.md       - post frontmatter (read directly)
+    scripts/build_topics.py:TOPICS - topic taxonomy
+    public/.../index.html - wordCount lifted from rendered BlogPosting JSON-LD
 
-Must run AFTER ssg + build_topics + before postbuild (so the API is
-fingerprinted into the build artefacts).
+Must run AFTER postbuild.py so the wordCount stamped into each rendered
+BlogPosting JSON-LD is populated on clean builds.
 """
 
 from __future__ import annotations
@@ -87,7 +87,7 @@ def collect_posts() -> list[dict[str, object]]:
         wc = _word_count(stem)
         record: dict[str, object] = {
             "slug": stem,
-            "url": f"{BASE}/{stem}/index.html",
+            "url": f"{BASE}/{stem}/",
             "date": stem[:10],
             "title": fm.get("title") or stem,
             "description": fm.get("description", ""),
@@ -117,7 +117,7 @@ def build_index() -> dict[str, object]:
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "author": {
             "name": "Sebastien Rousseau",
-            "url": f"{BASE}/about/index.html",
+            "url": f"{BASE}/about/",
             "wikidata": None,
         },
         "endpoints": {

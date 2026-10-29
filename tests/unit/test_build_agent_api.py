@@ -73,3 +73,39 @@ def test_build_index_shape() -> None:
     assert idx["base_url"].endswith("/api/agents/")
     assert idx["license"] == "https://creativecommons.org/licenses/by/4.0/"
     assert idx["name"].startswith("Sebastien Rousseau")
+    assert idx["author"]["url"] == "https://sebastienrousseau.com/about/"
+
+
+def test_collect_posts_emits_canonical_pretty_urls_and_word_count(
+    tmp_path: Path, monkeypatch
+) -> None:
+    posts_dir = tmp_path / "_posts"
+    pub_dir = tmp_path / "public"
+    posts_dir.mkdir()
+    pub_dir.mkdir()
+    stem = "2026-06-29-quantum-resilience"
+    (posts_dir / f"{stem}.md").write_text("---\ntitle: Quantum\n---\nbody\n", encoding="utf-8")
+    art_dir = pub_dir / stem
+    art_dir.mkdir()
+    (art_dir / "index.html").write_text('<script>{"wordCount":850}</script>', encoding="utf-8")
+
+    monkeypatch.setattr(api, "POSTS", posts_dir)
+    monkeypatch.setattr(api, "PUBLIC", pub_dir)
+    monkeypatch.setattr(api, "TOPICS", {"pqc": {"slugs": [stem]}})
+    monkeypatch.setattr(
+        api,
+        "read_frontmatter",
+        lambda s: (
+            {"title": "Quantum", "description": "Desc", "keywords": "pqc, rust"}
+            if s == stem
+            else {}
+        ),
+    )
+
+    records = api.collect_posts()
+    assert len(records) == 1
+    rec = records[0]
+    assert rec["url"] == f"https://sebastienrousseau.com/{stem}/"
+    assert rec["wordCount"] == 850
+    assert rec["topics"] == ["pqc"]
+    assert rec["keywords"] == ["pqc", "rust"]

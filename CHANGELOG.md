@@ -25,6 +25,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - **Landscape-only article banners ([#509])**: `scripts/editorial/pick_banner.py` now parses `VP8`, `VP8L`, and `VP8X` WebP dimensions and excludes portrait and square assets (`width <= height`) during inventory collection; replaced seven portrait stock banners across English and all 34 locale editions with `2584x1597` landscape photographs.
 - **Social card metadata on `story` and `page` layouts ([#509])**: `story.html` now emits `<meta name="banner-src" content="{{banner}}" />` so `/iso20022-mcp-docs/`, `/iso20022-mcp-reference/`, and `/iso20022-mcp-recipes/` publish full-bleed raster `og:image` / `twitter:image` cards instead of share-button icon fallbacks, and `postbuild_lib.seo.clean_meta_description` repairs truncated body scrapes on non-BlogPosting `og:description` and `twitter:description` tags.
+- **WeasyPrint PDF subresource SSRF guard, size cap, and asset cache ([#509])**: `fly/pdf-render/app.py` now supplies a custom `safe_url_fetcher` to WeasyPrint that enforces HTTPS-only allowlisted hosts (`sebastienrousseau.com`, `www.sebastienrousseau.com`, `cdn.cloudcdn.pro`), caps subresource payloads at 10 MiB (`MAX_ASSET_BYTES`), caches immutable `/fonts/*` and `/_csp/*` assets in memory, and supports optional `X-Origin-Verify` token authentication, backed by hermetic unit tests in `tests/unit/test_pdf_render.py`.
+- **Edge API security headers and ASN denylist cleanup ([#509])**: `workers/lang-router.js` wraps early-return API responses (`tryActivityPub`, `tryMCP`, `tryPDF`, and `tryClock`) with `withApiSecurityHeaders` (`Strict-Transport-Security`, `X-Content-Type-Options: nosniff`, `Referrer-Policy`, `Permissions-Policy`, `Cross-Origin-Opener-Policy`, and a sandboxed `Content-Security-Policy`), and `workers/security.js` removes the duplicate `16276` ASN entry.
+- **Agent API canonical URLs and postbuild ordering ([#509])**: `scripts/generators/build_agent_api.py` now emits canonical trailing-slash URLs (`https://sebastienrousseau.com/<stem>/` and `https://sebastienrousseau.com/about/`) instead of `/index.html`, and `build.sh` runs `build_agent_api.py` immediately after `postbuild.py` so `word_count` is populated on clean builds.
 - **Advisories in the CI tooling locks**: `msgpack` 1.2.1 to 1.2.3 in `requirements-dev.lock` (CVE-2026-114613) and `qs` 6.16.0 to 6.17.0 in `.github/ci-tools/lighthouse/package-lock.json` (GHSA-6pq8-jhm2-2vcw, via `overrides`). Both `pip-audit` and `npm audit` report 0 vulnerabilities across all lockfiles.
 
 ---
@@ -414,3 +417,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 [#488]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/488
 [#492]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/492
 [#493]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/493
+[#504]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/504
+[#506]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/506
+[#507]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/507
+[#508]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/508
+[#509]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/509

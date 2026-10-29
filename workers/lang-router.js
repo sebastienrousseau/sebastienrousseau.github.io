@@ -161,6 +161,31 @@ export const SECURITY_HEADERS = {
   'Cross-Origin-Opener-Policy': 'same-origin',
 };
 
+// Strict security header set for non-HTML Worker API routes (/mcp/v1/*,
+// /api/pdf/*, /api/clock/*, and ActivityPub endpoints). Applies a locked-down
+// default-src 'none' CSP while preserving each route's own Cache-Control,
+// CORS, and Content-Disposition headers.
+export const API_SECURITY_HEADERS = {
+  'Content-Security-Policy': "default-src 'none'; style-src 'unsafe-inline'; frame-ancestors 'none'",
+  'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload',
+  'X-Content-Type-Options': 'nosniff',
+  'Referrer-Policy': 'strict-origin-when-cross-origin',
+  'Permissions-Policy': 'browsing-topics=(), interest-cohort=(), camera=(), microphone=(), geolocation=()',
+  'Cross-Origin-Opener-Policy': 'same-origin',
+};
+
+export function withApiSecurityHeaders(response) {
+  const headers = new Headers(response.headers);
+  for (const name of Object.keys(API_SECURITY_HEADERS)) {
+    headers.set(name, API_SECURITY_HEADERS[name]);
+  }
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
 /**
  * Return a clone of `response` with the strict security headers applied
  * on top of whatever the origin (or `Response.redirect`) produced. Any
@@ -355,18 +380,18 @@ export default {
     // the locale + CSP path runs. Returns null when the request isn't
     // an AP route, in which case we fall through to the existing flow.
     const apResponse = await tryActivityPub(request);
-    if (apResponse) return apResponse;
+    if (apResponse) return withApiSecurityHeaders(apResponse);
     // MCP handler — fields /mcp/v1/list_resources / read_resource /
     // search. Locale routing doesn't apply (these are API endpoints).
     const mcpResponse = await tryMCP(request);
-    if (mcpResponse) return mcpResponse;
+    if (mcpResponse) return withApiSecurityHeaders(mcpResponse);
     // PDF proxy — /api/pdf/<slug>.pdf. Validated + forwarded to Fly,
     // Edge cached immutable for 24h.
     const pdfResponse = await tryPDF(request);
-    if (pdfResponse) return pdfResponse;
+    if (pdfResponse) return withApiSecurityHeaders(pdfResponse);
     // Profile clock — /api/clock/hero-<theme>.svg, uncached so it keeps time.
     const clockResponse = await tryClock(request);
-    if (clockResponse) return clockResponse;
+    if (clockResponse) return withApiSecurityHeaders(clockResponse);
     // Permanent slug redirects from the Shokunin → Static Site
     // Generator rebrand. Runs before locale routing so the redirect
     // target hits the language flow on the new path.
