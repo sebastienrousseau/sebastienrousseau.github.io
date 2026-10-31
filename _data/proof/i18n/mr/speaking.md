@@ -11,10 +11,10 @@ hero:
   press_nudge: मुदतीत असलेले पत्रकार?
   press_nudge_cta: तज्ज्ञ भाष्य मागवा
   microproof:
-  - HSBC, PayPal आणि Barclays मध्ये देयक मंच कार्यान्वित केले
+  - HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group येथे जवळपास दोन दशकांचा अनुभव
   - EPAA पोस्ट-क्वांटम श्वेतपत्रिकेचे सहलेखक
   - योगदानकर्ता, Emerging Payments Association Asia
-employers_label: या संस्थांमध्ये देयक मंच कार्यान्वित केले
+employers_label: मी जिथे काम केले आहे
 stats_eyebrow: आकड्यांत
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: कॉपी
   items:
   - length: छोटा
-    text: सेबास्तिआं रुसो हे ज्येष्ठ बँकिंग तंत्रज्ञ आहेत, जे ISO 20022 देयके, पोस्ट-क्वांटम क्रिप्टोग्राफी आणि उपयोजित AI यांच्या संगमावर लिहितात आणि घडवतात. त्यांनी HSBC, PayPal आणि Barclays मध्ये देयक मंच कार्यान्वित केले आहेत आणि उत्पादनात वापरल्या जाणाऱ्या ओपन सोर्स संदर्भ अंमलबजावण्या सांभाळतात.
+    text: सेबास्तिआं रुसो हे ज्येष्ठ बँकिंग तंत्रज्ञ आहेत, जे ISO 20022 देयके, पोस्ट-क्वांटम क्रिप्टोग्राफी आणि उपयोजित AI यांच्या संगमावर लिहितात आणि घडवतात. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group येथे जवळपास दोन दशकांचा अनुभव.
   - length: मध्यम
     text: सेबास्तिआं रुसो हे ज्येष्ठ बँकिंग तंत्रज्ञ असून HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA आणि Virgin Group मध्ये त्यांनी जवळपास दोन दशके काढली आहेत. ते ISO 20022 देयके, पोस्ट-क्वांटम क्रिप्टोग्राफी आणि उपयोजित AI यांच्या संगमावर लिहितात आणि घडवतात, तसेच pacs.008, pain.001, KyberLib, BankStatementParser यांसारख्या ओपन सोर्स संदर्भ अंमलबजावण्या सांभाळतात, ज्या ट्रेझरी आणि देयक संघ उत्पादनात वापरतात. ते Emerging Payments Association Asia च्या क्वांटम-सुरक्षित क्रिप्टोग्राफी कार्यगटात योगदान देतात आणि Banking On Quantum व Banking On AI प्रकाशित करतात.
   - length: मोठा
-    text: 'सेबास्तिआं रुसो हे ज्येष्ठ बँकिंग तंत्रज्ञ असून त्यांचा भर घाऊक देयकांच्या संरचनात्मक परिवर्तनावर आहे. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA आणि Virgin Group मध्ये त्यांनी देयक मंच, AI उत्पादने आणि ओपन सोर्स पायाभूत सुविधा कार्यान्वित केल्या आहेत, ज्या ट्रेझरी आणि देयक संघ उत्पादनात वापरतात. ते pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN आणि dotfiles लिहितात व सांभाळतात; यांतील प्रत्येक प्रात्यक्षिक म्हणून नव्हे तर संदर्भ अंमलबजावणी म्हणून मांडलेले आहे: तपासता येणारी, संचालक मंडळ-दर्जाची आर्थिक पायाभूत सुविधा. ते Emerging Payments Association Asia च्या क्वांटम-सुरक्षित क्रिप्टोग्राफी कार्यगटात योगदान देतात, EPAA च्या «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (सप्टेंबर २०२५) या श्वेतपत्रिकेचे सहलेखक आहेत, आणि Banking On Quantum व Banking On AI प्रकाशित करतात. ते एजंटिक AI, तात्काळ देयके, पोस्ट-क्वांटम क्रिप्टोग्राफी, क्लाउड-नेटिव्ह लवचिकता, संरचित डेटा आणि नियामक पुरावे यांच्या संगमावर काम करतात.'
+    text: 'सेबास्तिआं रुसो हे ज्येष्ठ बँकिंग तंत्रज्ञ असून त्यांचा भर घाऊक देयकांच्या संरचनात्मक परिवर्तनावर आहे. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group येथे जवळपास दोन दशकांचा अनुभव. ते pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN आणि dotfiles लिहितात व सांभाळतात; यांतील प्रत्येक प्रात्यक्षिक म्हणून नव्हे तर संदर्भ अंमलबजावणी म्हणून मांडलेले आहे: तपासता येणारी, संचालक मंडळ-दर्जाची आर्थिक पायाभूत सुविधा. ते Emerging Payments Association Asia च्या क्वांटम-सुरक्षित क्रिप्टोग्राफी कार्यगटात योगदान देतात, EPAA च्या «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (सप्टेंबर २०२५) या श्वेतपत्रिकेचे सहलेखक आहेत, आणि Banking On Quantum व Banking On AI प्रकाशित करतात. ते एजंटिक AI, तात्काळ देयके, पोस्ट-क्वांटम क्रिप्टोग्राफी, क्लाउड-नेटिव्ह लवचिकता, संरचित डेटा आणि नियामक पुरावे यांच्या संगमावर काम करतात.'
 faq:
   eyebrow: विचारण्यापूर्वी
   headline: निमंत्रण, स्पष्ट शब्दांत.
@@ -185,13 +185,7 @@ final_cta:
   secondary_cta: तज्ज्ञ भाष्य मागवा
 ---
 
-सेबास्तिआं रुसो हे ज्येष्ठ बँकिंग तंत्रज्ञ असून त्यांचा भर घाऊक देयकांच्या संरचनात्मक
-परिवर्तनावर आहे. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA आणि
-Virgin Group मध्ये त्यांनी देयक मंच, AI उत्पादने आणि ओपन सोर्स पायाभूत सुविधा कार्यान्वित
-केल्या आहेत, ज्या ट्रेझरी आणि देयक संघ उत्पादनात वापरतात. ते pacs.008, pain.001,
-BankStatementParser, KyberLib, CloudCDN आणि dotfiles लिहितात व सांभाळतात; यांतील प्रत्येक
-प्रात्यक्षिक म्हणून नव्हे तर संदर्भ अंमलबजावणी म्हणून मांडलेले आहे: तपासता येणारी, संचालक
-मंडळ-दर्जाची आर्थिक पायाभूत सुविधा.
+सेबास्तिआं रुसो हे ज्येष्ठ बँकिंग तंत्रज्ञ असून त्यांचा भर घाऊक देयकांच्या संरचनात्मक परिवर्तनावर आहे. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group येथे जवळपास दोन दशकांचा अनुभव. ते pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN आणि dotfiles लिहितात व सांभाळतात; यांतील प्रत्येक प्रात्यक्षिक म्हणून नव्हे तर संदर्भ अंमलबजावणी म्हणून मांडलेले आहे: तपासता येणारी, संचालक मंडळ-दर्जाची आर्थिक पायाभूत सुविधा.
 
 ते Emerging Payments Association Asia च्या क्वांटम-सुरक्षित क्रिप्टोग्राफी कार्यगटात योगदान
 देतात, EPAA च्या «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (सप्टेंबर

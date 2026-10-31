@@ -25,11 +25,28 @@ LAYOUTS = ROOT / "_layouts"
 INDEX = (LAYOUTS / "index.html").read_text()
 
 
+_FOOTER_NEWSLETTER = """        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Newsletter signup">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Monthly briefings on AI, ISO 20022, and quantum-safe payments, written for senior banking architects. No spam, unsubscribe in one click.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
+"""
+
+
 def slice_shell(index_html: str) -> tuple[str, str]:
     """Return (top, bottom): top ends just before the hero, bottom starts at footer."""
     hero_start = index_html.index("<!-- gen-layouts:hero-start -->")
     footer_start = index_html.index("<!-- gen-layouts:footer-start -->")
-    return index_html[:hero_start], index_html[footer_start:]
+    bottom = index_html[footer_start:]
+    if 'class="ap-newsletter"' not in bottom:
+        bottom = bottom.replace(
+            '        <div class="legal">', _FOOTER_NEWSLETTER + '        <div class="legal">', 1
+        )
+    return index_html[:hero_start], bottom
 
 
 TOP, BOTTOM = slice_shell(INDEX)
@@ -106,7 +123,9 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       .speaking-page .spk-stats-foot{margin-block-start:2.1rem;text-align:center;font-size:.86rem;color:var(--ink-faint);line-height:1.6;max-width:70ch;margin-inline:auto}
       @media (max-width:640px){.speaking-page .spk-stats{grid-template-columns:repeat(2,1fr);gap:30px 20px}}
       /* two paths */
-      .speaking-page .spk-paths{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-block-start:2.6rem}
+      .speaking-page .spk-paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-block-start:2.6rem}
+      @media (min-width:960px){.speaking-page .spk-paths:has(> :last-child:nth-child(3)){grid-template-columns:repeat(3,minmax(0,1fr))}}
+      @media (min-width:721px) and (max-width:959px){.speaking-page .spk-paths > :last-child:nth-child(odd){grid-column:1 / -1}}
       .speaking-page .spk-path{border:1px solid var(--spk-line);border-radius:12px;padding:clamp(24px,3vw,36px);background:var(--card);display:flex;flex-direction:column}
       .speaking-page .spk-path .spk-eyebrow{margin-block-end:.8rem}
       .speaking-page .spk-path h3{margin-block-end:.7rem}
@@ -223,9 +242,9 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
          the 12px code-font floor (column ~668px vs 83ch ~598px + padding);
          the microproof wrap widens with it so the left edges stay flush. */
       @media (min-width:1100px){.iso20022-mcp-page .spk-hero-grid{max-width:1400px;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,4vw,56px)}.iso20022-mcp-page .spk-hero>.spk-wrap{max-width:1400px}}
-      .iso20022-mcp-page .mcp-hero-img{width:100%;border-radius:22px;aspect-ratio:16/8;object-fit:cover;display:block}
-      .iso20022-mcp-page .mcp-band-img{width:100%;border-radius:18px;aspect-ratio:16/6;object-fit:cover;display:block}
-      .iso20022-mcp-page .mcp-band-img-tall{width:100%;border-radius:18px;aspect-ratio:16/9;object-fit:cover;display:block}
+      .iso20022-mcp-page .mcp-hero-img{width:100%;border-radius:22px;aspect-ratio:16/8;object-fit:cover;display:block;background:var(--bg-alt)}
+      .iso20022-mcp-page .mcp-band-img{width:100%;border-radius:18px;aspect-ratio:16/6;object-fit:cover;display:block;background:var(--bg-alt)}
+      .iso20022-mcp-page .mcp-band-img-tall{width:100%;border-radius:18px;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--bg-alt)}
       .iso20022-mcp-page .spk-head{max-width:42ch}
       .iso20022-mcp-page .spk-head h2{font-size:clamp(1.7rem,3.4vw,2.5rem);line-height:1.1;letter-spacing:-.016em;font-weight:600;text-wrap:balance}
       .iso20022-mcp-page .spk-paths{gap:clamp(16px,1.6vw,22px)}
@@ -264,37 +283,54 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       @media (max-width:860px){.iso20022-mcp-page .mcp-sec{grid-template-columns:1fr 1fr}}
       @media (max-width:520px){.iso20022-mcp-page .mcp-sec{grid-template-columns:1fr}}
       /* --- MCP hub: code blocks + copy affordance */
-      .iso20022-mcp-page .mcp-code{background:var(--bg-alt);border:1px solid var(--spk-line);border-radius:12px;padding:14px 18px;margin:0;overflow-x:auto}
+      .iso20022-mcp-page iso20022-simulator{display:block}
+      .iso20022-mcp-page iso20022-simulator:not(:defined){min-height:min(34rem,90vh)}
+      @media (scripting:none){.iso20022-mcp-page iso20022-simulator{min-height:0}}
+      .iso20022-mcp-page .mcp-code{background:var(--bg-alt);border:1px solid var(--spk-line);border-radius:12px;padding:14px 18px;margin:0;overflow-x:auto;scrollbar-width:none}
       .iso20022-mcp-page .mcp-code code{font-family:var(--spk-mono);font-size:.8rem;line-height:1.6;color:var(--ink);background:transparent;white-space:pre}
+      .iso20022-mcp-page .mcp-client .mcp-code{overflow-x:visible;background:var(--card)}
+      .iso20022-mcp-page .mcp-client .mcp-code code{white-space:pre-wrap;overflow-wrap:anywhere}
+      @media (max-width:900px){.iso20022-mcp-page .mcp-code code{white-space:pre-wrap;overflow-wrap:anywhere}}
+      @media (pointer:coarse){.iso20022-mcp-page .mcp-copy,.article-tag{min-height:44px;display:inline-flex;align-items:center}}
       /* Copy buttons ride the shared .ap-cta-mini pill recipe (the generator
          emits class="ap-cta-mini mcp-copy"); only the button-element reset
          and the copied checkmark are added here. */
       .iso20022-mcp-page .mcp-copy{margin-block-start:.6rem;align-self:flex-start;border:0;cursor:pointer;font-family:var(--spk-sans)}
       .iso20022-mcp-page .mcp-copy[data-copied="1"]::after{content:" \2713"}
       /* --- MCP hub: multi-client grid */
-      .iso20022-mcp-page .mcp-clients{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(16px,1.6vw,22px);margin-block-start:2.4rem}
-      .iso20022-mcp-page .mcp-clients-3{grid-template-columns:repeat(3,1fr);margin-block-start:1.2rem}
+      .iso20022-mcp-page .mcp-clients{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,1.6vw,22px);margin-block-start:2.4rem}
+      @media (min-width:901px){.iso20022-mcp-page .mcp-clients:not(.mcp-clients-3) > .mcp-client:last-child:nth-child(odd){grid-column:1 / -1}}
+      .iso20022-mcp-page .mcp-clients-3{grid-template-columns:repeat(3,minmax(0,1fr));margin-block-start:1.2rem}
       .iso20022-mcp-page .mcp-client{min-width:0;background:var(--bg-alt);border-radius:18px;padding:clamp(22px,2.6vw,32px);display:flex;flex-direction:column;gap:.6rem}
       .iso20022-mcp-page .mcp-client h3{font-size:1.12rem;margin:0}
       .iso20022-mcp-page .mcp-client-where{font-size:.88rem;color:var(--ink-soft);margin:0 0 .4rem}
       .iso20022-mcp-page .mcp-client p{margin:0}
-      .iso20022-mcp-page .mcp-client .mcp-code{background:var(--card)}
       .iso20022-mcp-page .mcp-client-remote p{font-size:.92rem;color:var(--ink-soft)}
       .iso20022-mcp-page .mcp-clients-label{font-family:var(--spk-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--ink-faint);margin-block:2.2rem .2rem}
       .iso20022-mcp-page .mcp-clients-foot{margin-block-start:1.6rem;font-size:.86rem;color:var(--ink-faint)}
       @media (max-width:900px){.iso20022-mcp-page .mcp-clients,.iso20022-mcp-page .mcp-clients-3{grid-template-columns:1fr}}
       /* --- MCP hub: CSS-only install tabs (radio inputs; :checked drives
-         the visible panel; radios stay keyboard-focusable). */
+         the visible panel; radios stay keyboard-focusable; progressively
+         enhanced by main.js to WAI-ARIA role=tablist/tab/tabpanel). */
       .iso20022-mcp-page .mcp-tabs{margin-block-start:2.2rem}
       .iso20022-mcp-page .mcp-tab-in{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%)}
       .iso20022-mcp-page .mcp-tab-labels{display:flex;flex-wrap:wrap;gap:.5rem;border-block-end:1px solid var(--spk-line);margin-block-end:1.2rem}
-      .iso20022-mcp-page .mcp-tab-labels label{font-family:var(--spk-sans);font-size:.92rem;font-weight:500;color:var(--ink-soft);padding:.7em 1.1em;border-block-end:2px solid transparent;cursor:pointer}
-      .iso20022-mcp-page .mcp-tab-labels label:hover{color:var(--ink)}
-      .iso20022-mcp-page #mcp-tab-uvx:checked~.mcp-tab-labels label[for="mcp-tab-uvx"],.iso20022-mcp-page #mcp-tab-pip:checked~.mcp-tab-labels label[for="mcp-tab-pip"],.iso20022-mcp-page #mcp-tab-json:checked~.mcp-tab-labels label[for="mcp-tab-json"],.iso20022-mcp-page #mcp-tab-cursor:checked~.mcp-tab-labels label[for="mcp-tab-cursor"],.iso20022-mcp-page #mcp-tab-vscode:checked~.mcp-tab-labels label[for="mcp-tab-vscode"],.iso20022-mcp-page #mcp-tab-agents:checked~.mcp-tab-labels label[for="mcp-tab-agents"]{color:var(--ink);border-block-end-color:var(--spk-blue)}
-      .iso20022-mcp-page #mcp-tab-uvx:focus-visible~.mcp-tab-labels label[for="mcp-tab-uvx"],.iso20022-mcp-page #mcp-tab-pip:focus-visible~.mcp-tab-labels label[for="mcp-tab-pip"],.iso20022-mcp-page #mcp-tab-json:focus-visible~.mcp-tab-labels label[for="mcp-tab-json"],.iso20022-mcp-page #mcp-tab-cursor:focus-visible~.mcp-tab-labels label[for="mcp-tab-cursor"],.iso20022-mcp-page #mcp-tab-vscode:focus-visible~.mcp-tab-labels label[for="mcp-tab-vscode"],.iso20022-mcp-page #mcp-tab-agents:focus-visible~.mcp-tab-labels label[for="mcp-tab-agents"]{outline:2px solid var(--focus-ring-color);outline-offset:2px}
+      .iso20022-mcp-page .mcp-tab-labels label,.iso20022-mcp-page .mcp-tab-labels [role="tab"]{font-family:var(--spk-sans);font-size:.92rem;font-weight:500;color:var(--ink-soft);padding:.7em 1.1em;border-block-end:2px solid transparent;cursor:pointer;background:transparent;border-block-start:0;border-inline:0;min-height:44px;display:inline-flex;align-items:center}
+      .iso20022-mcp-page .mcp-tab-labels label:hover,.iso20022-mcp-page .mcp-tab-labels [role="tab"]:hover{color:var(--ink)}
+      .iso20022-mcp-page .mcp-tab-labels [role="tab"][aria-selected="true"],.iso20022-mcp-page #mcp-tab-uvx:checked~.mcp-tab-labels label[for="mcp-tab-uvx"],.iso20022-mcp-page #mcp-tab-pip:checked~.mcp-tab-labels label[for="mcp-tab-pip"],.iso20022-mcp-page #mcp-tab-json:checked~.mcp-tab-labels label[for="mcp-tab-json"],.iso20022-mcp-page #mcp-tab-claude-code:checked~.mcp-tab-labels label[for="mcp-tab-claude-code"],.iso20022-mcp-page #mcp-tab-claude-desktop:checked~.mcp-tab-labels label[for="mcp-tab-claude-desktop"],.iso20022-mcp-page #mcp-tab-cursor:checked~.mcp-tab-labels label[for="mcp-tab-cursor"],.iso20022-mcp-page #mcp-tab-windsurf:checked~.mcp-tab-labels label[for="mcp-tab-windsurf"],.iso20022-mcp-page #mcp-tab-vscode:checked~.mcp-tab-labels label[for="mcp-tab-vscode"],.iso20022-mcp-page #mcp-tab-gemini:checked~.mcp-tab-labels label[for="mcp-tab-gemini"],.iso20022-mcp-page #mcp-tab-codex:checked~.mcp-tab-labels label[for="mcp-tab-codex"],.iso20022-mcp-page #mcp-tab-agents:checked~.mcp-tab-labels label[for="mcp-tab-agents"]{color:var(--ink);border-block-end-color:var(--spk-blue)}
+      .iso20022-mcp-page .mcp-tab-labels [role="tab"]:focus-visible,.iso20022-mcp-page #mcp-tab-uvx:focus-visible~.mcp-tab-labels label[for="mcp-tab-uvx"],.iso20022-mcp-page #mcp-tab-pip:focus-visible~.mcp-tab-labels label[for="mcp-tab-pip"],.iso20022-mcp-page #mcp-tab-json:focus-visible~.mcp-tab-labels label[for="mcp-tab-json"],.iso20022-mcp-page #mcp-tab-claude-code:focus-visible~.mcp-tab-labels label[for="mcp-tab-claude-code"],.iso20022-mcp-page #mcp-tab-claude-desktop:focus-visible~.mcp-tab-labels label[for="mcp-tab-claude-desktop"],.iso20022-mcp-page #mcp-tab-cursor:focus-visible~.mcp-tab-labels label[for="mcp-tab-cursor"],.iso20022-mcp-page #mcp-tab-windsurf:focus-visible~.mcp-tab-labels label[for="mcp-tab-windsurf"],.iso20022-mcp-page #mcp-tab-vscode:focus-visible~.mcp-tab-labels label[for="mcp-tab-vscode"],.iso20022-mcp-page #mcp-tab-gemini:focus-visible~.mcp-tab-labels label[for="mcp-tab-gemini"],.iso20022-mcp-page #mcp-tab-codex:focus-visible~.mcp-tab-labels label[for="mcp-tab-codex"],.iso20022-mcp-page #mcp-tab-agents:focus-visible~.mcp-tab-labels label[for="mcp-tab-agents"]{outline:2px solid var(--focus-ring-color);outline-offset:2px}
       .iso20022-mcp-page .mcp-tab-panel{display:none}
-      .iso20022-mcp-page #mcp-tab-uvx:checked~#mcp-panel-uvx,.iso20022-mcp-page #mcp-tab-pip:checked~#mcp-panel-pip,.iso20022-mcp-page #mcp-tab-json:checked~#mcp-panel-json,.iso20022-mcp-page #mcp-tab-cursor:checked~#mcp-panel-cursor,.iso20022-mcp-page #mcp-tab-vscode:checked~#mcp-panel-vscode,.iso20022-mcp-page #mcp-tab-agents:checked~#mcp-panel-agents{display:block}
+      .iso20022-mcp-page .mcp-tab-panel[data-active="1"],.iso20022-mcp-page #mcp-tab-uvx:checked~#mcp-panel-uvx,.iso20022-mcp-page #mcp-tab-pip:checked~#mcp-panel-pip,.iso20022-mcp-page #mcp-tab-json:checked~#mcp-panel-json,.iso20022-mcp-page #mcp-tab-claude-code:checked~#mcp-panel-claude-code,.iso20022-mcp-page #mcp-tab-claude-desktop:checked~#mcp-panel-claude-desktop,.iso20022-mcp-page #mcp-tab-cursor:checked~#mcp-panel-cursor,.iso20022-mcp-page #mcp-tab-windsurf:checked~#mcp-panel-windsurf,.iso20022-mcp-page #mcp-tab-vscode:checked~#mcp-panel-vscode,.iso20022-mcp-page #mcp-tab-gemini:checked~#mcp-panel-gemini,.iso20022-mcp-page #mcp-tab-codex:checked~#mcp-panel-codex,.iso20022-mcp-page #mcp-tab-agents:checked~#mcp-panel-agents{display:block}
       .iso20022-mcp-page .mcp-tab-note{margin-block-start:.9rem;font-size:.9rem;color:var(--ink-soft)}
+      .iso20022-mcp-page .mcp-advisory-card{margin-block-start:2.4rem;padding:clamp(24px,3vw,36px);border-radius:18px;background:var(--bg-alt);border:1px solid var(--spk-line);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.2rem 2rem}
+      .iso20022-mcp-page .mcp-advisory-copy{max-width:60ch}
+      .iso20022-mcp-page .mcp-advisory-copy h3{font-size:1.24rem;margin:0 0 .4rem}
+      .iso20022-mcp-page .mcp-advisory-copy p{font-size:.94rem;color:var(--ink-soft);margin:0}
+      .iso20022-mcp-page .mcp-advisory-actions{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
+      .iso20022-mcp-page .mcp-method-details{margin-block-start:1.4rem;border-block-start:1px solid var(--spk-line);padding-block-start:1rem}
+      .iso20022-mcp-page .mcp-method-details > summary{cursor:pointer;font-family:var(--spk-mono);font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--spk-blue);min-height:44px;display:inline-flex;align-items:center}
+      .iso20022-mcp-page .mcp-lens-details > summary{cursor:pointer;font-family:var(--spk-mono);font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--spk-blue);padding:.6rem 0;min-height:44px;display:inline-flex;align-items:center}
+      .iso20022-mcp-page:not([data-lens="boards"]):not([data-lens="regulators"]) .mcp-lens-details > summary{display:none}
       /* --- MCP hub: captured tool-schema viewer. Canonical .qa accordion
          (marker, hairline rows, width and typography come from the shared
          .qa-item rules); the hub only adds the three-part summary layout:
@@ -381,6 +417,17 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       .iso20022-mcp-page .mcp-prompt .mcp-code{background:var(--card)}
       .iso20022-mcp-page .mcp-prompt .mcp-code code{white-space:pre-wrap;overflow-wrap:anywhere}
       .iso20022-mcp-page .mcp-prompt-note{margin-block-start:1rem;font-size:.92rem;color:var(--ink-soft)}
+      /* --- MCP hub: 9-server architecture & rail matrix + FAQ accordion -- */
+      .iso20022-mcp-page .mcp-table-wrap{margin-block-start:2.4rem;overflow-x:auto;scrollbar-width:none;border:1px solid var(--spk-line);border-radius:16px;background:var(--card)}
+      .iso20022-mcp-page .mcp-table{width:100%;border-collapse:collapse;font-size:.88rem;line-height:1.55;margin:0}
+      .iso20022-mcp-page .mcp-table th{text-align:start;vertical-align:top}
+      .iso20022-mcp-page .mcp-table thead th{font-family:var(--spk-mono);font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);padding:14px 10px;border-block-end:1px solid var(--spk-line);background:var(--bg-alt);white-space:nowrap}
+      .iso20022-mcp-page .mcp-table tbody th,.iso20022-mcp-page .mcp-table tbody td{padding:14px 10px;border-block-end:1px solid var(--spk-line);color:var(--ink-soft);vertical-align:top}
+      .iso20022-mcp-page .mcp-table tbody tr:last-child th,.iso20022-mcp-page .mcp-table tbody tr:last-child td{border-block-end:0}
+      .iso20022-mcp-page .mcp-table tbody th{font-weight:600;color:var(--ink);background:transparent;white-space:nowrap}
+      .iso20022-mcp-page .mcp-table code{font-family:var(--spk-mono);font-size:.78rem;color:var(--ink);background:transparent;padding:0;border:0}
+      .iso20022-mcp-page .mcp-faq-list{margin-block-start:2.2rem}
+      .iso20022-mcp-page .mcp-faq-body p{font-size:.94rem;line-height:1.65;color:var(--ink-soft);max-width:74ch;margin:0}
 """
 
 # Page-scoped CSS for /trust/: Economist-Pro-solutions-page anatomy on the
@@ -1364,7 +1411,7 @@ _BANNER_SRC_META = '    <meta name="banner-src" content="{{banner}}" />\n'
 # renders small. Emitting it here rather than hand-editing the generated
 # file is the point: a hand edit is silently deleted the next time this
 # generator runs, which is exactly how #396 kept regressing.
-_NEEDS_BANNER_SRC = frozenset({"about.html", "page.html"})
+_NEEDS_BANNER_SRC = frozenset({"about.html", "page.html", "story.html"})
 
 
 def with_banner_src(html: str) -> str:
@@ -1405,7 +1452,7 @@ def main() -> None:
     # /projects/ has its own hero: the rotating animated title is the page H1.
     write("project.html", inject_schema(project_layout(), "projects"))
     # /projects-*/ story pages: full-bleed image hero with overlaid title.
-    write("story.html", inject_schema(story_layout(), "default"))
+    write("story.html", with_banner_src(inject_schema(story_layout(), "default")))
     write("contact.html", inject_schema(contact_layout(), "contact"))
     write("report.html", inject_schema(report_layout(), "report"))
     write("playlist.html", inject_schema(playlist_layout(), "playlist"))

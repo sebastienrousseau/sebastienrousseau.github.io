@@ -68,11 +68,9 @@ export const ASN_DENYLIST = Object.freeze(new Set([
   14618,  // Amazon AWS (different range)
   15169,  // Google Cloud
   8075,   // Microsoft Azure
-  16276,  // OVH
+  16276,  // OVH (also a common Tor exit ASN)
   20473,  // Choopa / Vultr
   396982, // Google Cloud (additional)
-  // Tor — common exit ASNs
-  16276,  // OVH (also a Tor exit)
 ]));
 
 /**

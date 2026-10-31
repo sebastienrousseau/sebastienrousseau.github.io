@@ -73,7 +73,7 @@
       "aria-label=\"Sebastien Rousseau मुख्यपृष्ठ\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/mr/about/index.html\">विषयी</a></li>"
     ],
     [
@@ -293,11 +293,11 @@
       "<li><a href=\"/mr/research/index.html\">संशोधन</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/mr/speaking/index.html\">व्याख्याने</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/mr/speaking/index.html\">व्याख्याने</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/mr/suite/index.html\">सूट</a>"
     ],
     [
@@ -325,15 +325,15 @@
       "aria-label=\"विषयी उपमेनू टॉगल करा\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"लायब्ररी उपमेनू टॉगल करा\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"संशोधन उपमेनू टॉगल करा\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"सूट उपमेनू टॉगल करा\""
     ],
     [
@@ -345,7 +345,7 @@
       "<li><a href=\"/mr/speaking/index.html\">सार्वजनिक व्याख्याने</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/mr/library/index.html\">लायब्ररी</a>"
     ],
     [

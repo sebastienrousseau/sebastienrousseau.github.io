@@ -6,7 +6,7 @@ description: "A MI-tudatos dotfiles egy biztonságos, reprodukálható munkaáll
 date: "June 16, 2026"
 language: "hu"
 locale: "hu_HU"
-banner: "https://cloudcdn.pro/stocks/images/almas-salakhov-Vq2ap8aFFEs.webp"
+banner: "https://cloudcdn.pro/stocks/images/alexander-sinn-KgLtFCgfC28.webp"
 banner_alt: "Fejlesztői munkaállomás gyenge fényben, amely az MCP-kiszolgálókhoz, SLSA-aláíráshoz, age/SOPS titkokhoz és több shell közötti paritáshoz készült MI-tudatos, reprodukálható, biztonságos dotfiles állományokat jelképezi"
 keywords: "dotfiles, Chezmoi, MCP, Model Context Protocol, SLSA, SOPS, age titkosítás, deklaratív konfiguráció, fejlesztői munkaállomás, DORA 5. cikk, NIST CSF 2.0, ellátási lánc biztonsága, ügynöki MI, több shell közötti paritás, Zsh, Fish, Nushell"
 ---

@@ -74,7 +74,7 @@
       "aria-label=\"Trang chủ của Sebastien Rousseau\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/vi/gioi-thieu/index.html\">Giới thiệu</a></li>"
     ],
     [
@@ -294,11 +294,11 @@
       "<li><a href=\"/vi/nghien-cuu/index.html\">Nghiên cứu</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/vi/speaking/index.html\">Diễn thuyết</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/vi/speaking/index.html\">Diễn thuyết</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/vi/bo-cong-cu/index.html\">Bộ công cụ</a>"
     ],
     [
@@ -326,15 +326,15 @@
       "aria-label=\"Bật/tắt menu con Giới thiệu\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"Bật/tắt menu con Thư viện\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"Bật/tắt menu con Nghiên cứu\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"Bật/tắt menu con Bộ công cụ\""
     ],
     [
@@ -346,7 +346,7 @@
       "<li><a href=\"/vi/speaking/index.html\">Diễn thuyết trước công chúng</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/vi/thu-vien/index.html\">Thư viện</a>"
     ],
     [

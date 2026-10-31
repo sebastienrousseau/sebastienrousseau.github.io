@@ -74,7 +74,7 @@
       "aria-label=\"Home ni Sebastien Rousseau\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/fil/tungkol-sa-akin/index.html\">Tungkol</a></li>"
     ],
     [
@@ -294,11 +294,11 @@
       "<li><a href=\"/fil/pananaliksik/index.html\">Pananaliksik</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/fil/speaking/index.html\">Pagsasalita</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/fil/speaking/index.html\">Pagsasalita</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/fil/suite/index.html\">Suite</a>"
     ],
     [
@@ -326,15 +326,15 @@
       "aria-label=\"I-toggle ang submenu ng Tungkol\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"I-toggle ang submenu ng Aklatan\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"I-toggle ang submenu ng Pananaliksik\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"I-toggle ang submenu ng Suite\""
     ],
     [
@@ -346,7 +346,7 @@
       "<li><a href=\"/fil/speaking/index.html\">Pampublikong pagsasalita</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/fil/aklatan/index.html\">Aklatan</a>"
     ],
     [

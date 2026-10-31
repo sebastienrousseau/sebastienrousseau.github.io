@@ -74,7 +74,7 @@
       "aria-label=\"หน้าแรกของ Sebastien Rousseau\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/th/nueng-rao/index.html\">เกี่ยวกับเรา</a></li>"
     ],
     [
@@ -294,11 +294,11 @@
       "<li><a href=\"/th/wichai/index.html\">งานวิจัย</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/th/speaking/index.html\">งานบรรยาย</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/th/speaking/index.html\">งานบรรยาย</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/th/chut/index.html\">ชุดเครื่องมือ</a>"
     ],
     [
@@ -326,15 +326,15 @@
       "aria-label=\"สลับเมนูย่อย เกี่ยวกับเรา\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"สลับเมนูย่อย ห้องสมุด\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"สลับเมนูย่อย งานวิจัย\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"สลับเมนูย่อย ชุดเครื่องมือ\""
     ],
     [
@@ -346,7 +346,7 @@
       "<li><a href=\"/th/speaking/index.html\">การพูดในที่สาธารณะ</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/th/hong-samut/index.html\">ห้องสมุด</a>"
     ],
     [

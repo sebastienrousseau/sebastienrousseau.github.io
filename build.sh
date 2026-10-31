@@ -207,8 +207,8 @@ fi
 # for tiles a few KB covers. Same staging as above: public/_csp/ before
 # postbuild, so the asset pipeline fingerprints them.
 mkdir -p public/_csp
-for logo in assets/img/logo-*.webp; do
-  cp -f "${logo}" "public/_csp/$(basename "${logo}")"
+for img in assets/img/logo-*.webp assets/img/hero-portrait-*.webp; do
+  [[ -f "${img}" ]] && cp -f "${img}" "public/_csp/$(basename "${img}")"
 done
 
 if [[ -d assets/js/mcp-simulator ]]; then
@@ -261,6 +261,10 @@ if [[ -d labs ]]; then
         fi
       else
         echo "warning: wasm-pack not found, skipping Rust compilation for $name"
+        if [[ -d "$demo/web" ]]; then
+          mkdir -p "public/labs/$name"
+          cp -R "$demo/web/." "public/labs/$name/"
+        fi
       fi
     else
       mkdir -p "public/labs/$name"
@@ -452,7 +456,6 @@ done
 # build_translations so every public/<lang>/ directory exists.
 python3 scripts/generators/build_search_ui.py
 python3 scripts/generators/build_lang_feeds.py
-python3 scripts/generators/build_agent_api.py
 python3 scripts/generators/build_lead_magnets.py
 python3 scripts/generators/build_news_sitemap.py
 # Authority hub page — /trust/ (provenance, licensing, governance, recognition).
@@ -477,6 +480,7 @@ python3 scripts/generators/build_changelog.py
 # the later passes see the final HTML.
 python3 scripts/postbuild/mark_untranslated_english.py
 python3 scripts/postbuild/postbuild.py
+python3 scripts/generators/build_agent_api.py
 # RAG-ready corpus export — JSONL one-object-per-article + per-tag
 # subsets. Consumed by Claude / ChatGPT / Perplexity / LangChain etc.
 # Runs after postbuild so body_text reflects the final article HTML

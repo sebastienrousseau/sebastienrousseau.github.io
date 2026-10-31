@@ -11,10 +11,10 @@ hero:
   press_nudge: עיתונאי לקראת סגירה?
   press_nudge_cta: בקשת פרשנות מומחה
   microproof:
-  - פלטפורמות תשלום שעלו לאוויר ב-HSBC, ב-PayPal וב-Barclays
+  - כמעט שני עשורים של ניסיון ב-HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ו-Virgin Group
   - שותף לכתיבת נייר העמדה הפוסט-קוונטי של EPAA
   - תורם, Emerging Payments Association Asia
-employers_label: פלטפורמות תשלום שעלו לאוויר ב
+employers_label: איפה עבדתי
 stats_eyebrow: במספרים
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: העתקה
   items:
   - length: קצרה
-    text: סבסטיאן רוסו הוא טכנולוג בנקאות בכיר שכותב ובונה בנקודת המפגש של תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית ובינה מלאכותית יישומית. הוא העלה לאוויר פלטפורמות תשלום ב-HSBC, ב-PayPal וב-Barclays, ומתחזק מימושי ייחוס בקוד פתוח שנמצאים בשימוש בייצור.
+    text: סבסטיאן רוסו הוא טכנולוג בנקאות בכיר שכותב ובונה בנקודת המפגש של תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית ובינה מלאכותית יישומית. כמעט שני עשורים של ניסיון ב-HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ו-Virgin Group.
   - length: בינונית
     text: סבסטיאן רוסו הוא טכנולוג בנקאות בכיר עם קרוב לשני עשורים ב-HSBC Commercial & Investment Bank, ב-PayPal, ב-Barclays, ב-Shazam, ב-AKQA וב-Virgin Group. הוא כותב ובונה בנקודת המפגש של תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית ובינה מלאכותית יישומית, ומתחזק מימושי ייחוס בקוד פתוח — pacs.008, pain.001, KyberLib, BankStatementParser — שצוותי נוסטרו ותשלומים משתמשים בהם בייצור. הוא תורם לקבוצת העבודה לקריפטוגרפיה עמידה בפני קוונטים של Emerging Payments Association Asia ומוציא לאור את Banking On Quantum ואת Banking On AI.
   - length: ארוכה
-    text: 'סבסטיאן רוסו הוא טכנולוג בנקאות בכיר המתמקד בשינוי המבני של תשלומי הסיטונאות. ב-HSBC Commercial & Investment Bank, ב-PayPal, ב-Barclays, ב-Shazam, ב-AKQA וב-Virgin Group הוא העלה לאוויר פלטפורמות תשלום, מוצרי בינה מלאכותית ותשתית בקוד פתוח שצוותי נוסטרו ותשלומים משתמשים בהם בייצור. הוא כותב ומתחזק את pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN ו-dotfiles, שכל אחד מהם ממוקם כמימוש ייחוס ולא כהדגמה: תשתית פיננסית שניתן לבדוק, ברמה שמתאימה לדירקטוריון. הוא תורם לקבוצת העבודה לקריפטוגרפיה עמידה בפני קוונטים של Emerging Payments Association Asia, שותף לכתיבת נייר העמדה של EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (ספטמבר 2025), ומוציא לאור את Banking On Quantum ואת Banking On AI. הוא עובד בנקודת המפגש של בינה מלאכותית סוכנותית, תשלומים בזמן אמת, קריפטוגרפיה פוסט-קוונטית, חוסן ענן, נתונים מובנים וראיות לרגולטור.'
+    text: 'סבסטיאן רוסו הוא טכנולוג בנקאות בכיר המתמקד בשינוי המבני של תשלומי הסיטונאות. כמעט שני עשורים של ניסיון ב-HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ו-Virgin Group. הוא כותב ומתחזק את pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN ו-dotfiles, שכל אחד מהם ממוקם כמימוש ייחוס ולא כהדגמה: תשתית פיננסית שניתן לבדוק, ברמה שמתאימה לדירקטוריון. הוא תורם לקבוצת העבודה לקריפטוגרפיה עמידה בפני קוונטים של Emerging Payments Association Asia, שותף לכתיבת נייר העמדה של EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (ספטמבר 2025), ומוציא לאור את Banking On Quantum ואת Banking On AI. הוא עובד בנקודת המפגש של בינה מלאכותית סוכנותית, תשלומים בזמן אמת, קריפטוגרפיה פוסט-קוונטית, חוסן ענן, נתונים מובנים וראיות לרגולטור.'
 faq:
   eyebrow: לפני שתשאלו
   headline: הזמנה, בשפה ברורה.
@@ -185,12 +185,7 @@ final_cta:
   secondary_cta: בקשת פרשנות מומחה
 ---
 
-סבסטיאן רוסו הוא טכנולוג בנקאות בכיר המתמקד בשינוי המבני של תשלומי הסיטונאות. ב-HSBC
-Commercial & Investment Bank, ב-PayPal, ב-Barclays, ב-Shazam, ב-AKQA וב-Virgin Group הוא
-העלה לאוויר פלטפורמות תשלום, מוצרי בינה מלאכותית ותשתית בקוד פתוח שצוותי נוסטרו ותשלומים
-משתמשים בהם בייצור. הוא כותב ומתחזק את pacs.008, pain.001, BankStatementParser, KyberLib,
-CloudCDN ו-dotfiles, שכל אחד מהם ממוקם כמימוש ייחוס ולא כהדגמה: תשתית פיננסית שניתן לבדוק,
-ברמה שמתאימה לדירקטוריון.
+סבסטיאן רוסו הוא טכנולוג בנקאות בכיר המתמקד בשינוי המבני של תשלומי הסיטונאות. כמעט שני עשורים של ניסיון ב-HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ו-Virgin Group. הוא כותב ומתחזק את pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN ו-dotfiles, שכל אחד מהם ממוקם כמימוש ייחוס ולא כהדגמה: תשתית פיננסית שניתן לבדוק, ברמה שמתאימה לדירקטוריון.
 
 הוא תורם לקבוצת העבודה לקריפטוגרפיה עמידה בפני קוונטים של Emerging Payments Association
 Asia, שותף לכתיבת נייר העמדה של EPAA «Quantum-Safe Payments: Why the Payments Industry Must

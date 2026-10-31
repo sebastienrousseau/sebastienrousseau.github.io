@@ -27,8 +27,10 @@ import handler, {
   recordRedirect,
   buildCspHeader,
   withSecurityHeaders,
+  withApiSecurityHeaders,
   CSP_DIRECTIVES,
   SECURITY_HEADERS,
+  API_SECURITY_HEADERS,
   trySlugRedirects,
 } from './lang-router.js';
 
@@ -88,6 +90,9 @@ test('MCP /mcp/v1/list_resources short-circuits locale routing', async () => {
     const res = await callHandler(new Request('https://sebastienrousseau.com/mcp/v1/list_resources'));
     assert.equal(res.status, 200);
     assert.match(res.headers.get('Content-Type'), /application\/json/);
+    assert.equal(res.headers.get('X-Content-Type-Options'), 'nosniff');
+    assert.equal(res.headers.get('Content-Security-Policy'), API_SECURITY_HEADERS['Content-Security-Policy']);
+    assert.equal(res.headers.get('Cache-Control'), 'public, max-age=86400, immutable');
     const body = await res.json();
     assert.deepEqual(body.resources, []);
   } finally {
@@ -482,6 +487,21 @@ test('withSecurityHeaders applies all SECURITY_HEADERS', () => {
   for (const name of Object.keys(SECURITY_HEADERS)) {
     assert.equal(wrapped.headers.get(name), SECURITY_HEADERS[name]);
   }
+});
+
+test('withApiSecurityHeaders applies API_SECURITY_HEADERS and preserves Cache-Control', () => {
+  const upstream = new Response('{"ok":true}', {
+    status: 200,
+    headers: {
+      'content-type': 'application/json',
+      'cache-control': 'public, max-age=86400, immutable',
+    },
+  });
+  const wrapped = withApiSecurityHeaders(upstream);
+  for (const name of Object.keys(API_SECURITY_HEADERS)) {
+    assert.equal(wrapped.headers.get(name), API_SECURITY_HEADERS[name]);
+  }
+  assert.equal(wrapped.headers.get('cache-control'), 'public, max-age=86400, immutable');
 });
 
 test('withSecurityHeaders preserves existing headers', () => {

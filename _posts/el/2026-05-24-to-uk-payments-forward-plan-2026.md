@@ -6,7 +6,7 @@ description: "Το UK Payments Forward Plan και το πακέτο πολιτ�
 date: "May 24, 2026"
 language: "el"
 locale: "el_GR"
-banner: "https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM-1200.webp"
+banner: "https://cloudcdn.pro/stocks/images/andrea-de-santis-gYINUebkIDg.webp"
 banner_alt: "Διάγραμμα εκσυγχρονισμού των πληρωμών στο Ηνωμένο Βασίλειο που δείχνει stablecoins, tokenοποιημένες καταθέσεις, open banking, πράκτορες AI, ρύθμιση FCA, ενοποίηση PSR και χονδρικές ψηφιακές αγορές"
 keywords: "UK Payments Forward Plan 2026, stablecoins Ηνωμένο Βασίλειο, tokenοποιημένες καταθέσεις Ηνωμένο Βασίλειο, open banking FCA, ενοποίηση PSR FCA, πληρωμές μέσω πρακτόρων AI Ηνωμένο Βασίλειο, Wholesale Digital Markets Champion, Chris Woolard, ρύθμιση υπηρεσιών πληρωμών"
 ---

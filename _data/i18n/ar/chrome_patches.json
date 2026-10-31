@@ -74,7 +74,7 @@
       "aria-label=\"الصفحة الرئيسية لسيباستيان روسو\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/ar/hawla/index.html\">حول</a></li>"
     ],
     [
@@ -294,11 +294,11 @@
       "<li><a href=\"/ar/abhath/index.html\">البحوث</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/ar/speaking/index.html\">المحاضرات</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/ar/speaking/index.html\">المحاضرات</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/ar/huzma/index.html\">الحزمة</a>"
     ],
     [
@@ -326,15 +326,15 @@
       "aria-label=\"تبديل القائمة الفرعية حول\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"تبديل القائمة الفرعية المكتبة\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"تبديل القائمة الفرعية البحوث\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"تبديل القائمة الفرعية الحزمة\""
     ],
     [
@@ -346,7 +346,7 @@
       "<li><a href=\"/ar/speaking/index.html\">المحاضرات العامة</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/ar/maktaba/index.html\">المكتبة</a>"
     ],
     [

@@ -301,14 +301,12 @@ def _render_card(
         f'decoding="async" width="{box}" height="{box}" />'
         f"</a>"
     )
-    share_html = _card_share_rail(href, title, excerpt)
     body_html = (
         f'<div class="card-body">'
         f"{eyebrow_html}"
         f'<h2><a href="{href}">{_esc(title)}</a></h2>'
         f'<time datetime="{iso_date}" class="card-date">{iso_date}</time>'
         f"{excerpt_html}"
-        f"{share_html}"
         f"</div>"
     )
     featured_class = " tag-landing-card--featured" if featured else ""
@@ -397,9 +395,7 @@ def _render_listing_body(
     title: str,
     all_years: list[str],
 ) -> str:
-    cards = "".join(
-        _render_card(*p, featured=(page == 1 and i == 0)) for i, p in enumerate(page_posts)
-    )
+    cards = "".join(_render_card(*p) for p in page_posts)
     pagination = _render_pagination(page, total_pages, base_path)
     pillar_options = [(p, PILLAR_LABELS[p]) for p in PILLAR_ORDER]
     filter_form = _render_filter_form(pillar_options, all_years, nav_base=base_path)
@@ -624,7 +620,7 @@ def _write_locale_page(
             lang,
             page_posts,
             locale_index,
-            feature_first=(page == 1),
+            feature_first=False,
         )
     out = _translate_listing_body(lang, out)
     out = _translate_chrome_for(lang, out)
@@ -784,8 +780,14 @@ def _write_en_paged(
             if idx == 1
             else PUBLIC / "articles" / "page" / str(idx) / "index.html"
         )
+        en_doc_title = (
+            "Articles · Sebastien Rousseau"
+            if idx == 1
+            else f"Articles - Page {idx} of {total_pages} · Sebastien Rousseau"
+        )
+        en_out = _TITLE_RE.sub(f"<title>{_esc(en_doc_title)}</title>", page_html, count=1)
         out_path.parent.mkdir(parents=True, exist_ok=True)
-        out_path.write_text(page_html, encoding="utf-8")
+        out_path.write_text(en_out, encoding="utf-8")
         out.append((idx, page_html, page_posts))
     return out
 

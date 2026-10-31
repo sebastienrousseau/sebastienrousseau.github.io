@@ -6,7 +6,7 @@ description: "dotfilesهای آگاه به هوش مصنوعی یک الگوی �
 date: "June 16, 2026"
 language: "fa"
 locale: "fa_IR"
-banner: "https://cloudcdn.pro/stocks/images/almas-salakhov-Vq2ap8aFFEs.webp"
+banner: "https://cloudcdn.pro/stocks/images/alexander-sinn-KgLtFCgfC28.webp"
 banner_alt: "ایستگاه کاری توسعه‌دهنده در نور کم - نمادی از dotfilesهای امن، بازتولیدپذیر و آگاه به هوش مصنوعی برای سرورهای MCP، امضای SLSA، رازهای age/SOPS و برابری چند-پوسته‌ای"
 keywords: "dotfiles, Chezmoi, MCP, پروتکل زمینه مدل, SLSA, SOPS, رمزنگاری age, پیکربندی اعلانی, ایستگاه کاری توسعه‌دهنده, DORA ماده ۵, NIST CSF 2.0, امنیت زنجیره تأمین, هوش مصنوعی عامل‌محور, برابری چند-پوسته‌ای, Zsh, Fish, Nushell"
 ---

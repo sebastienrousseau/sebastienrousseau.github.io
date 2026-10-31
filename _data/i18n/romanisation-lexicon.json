@@ -454,7 +454,13 @@
     "オープンソースのフィジカルAI": "opunsosu fijikaru ai",
     "フィジカル": "fijikaru",
     "労働力ガバナンス": "rodoryoku gabanansu",
-    "信頼、責任、現場業務の再設計": "shinrai sekinin genba gyomu saisekkei"
+    "信頼、責任、現場業務の再設計": "shinrai sekinin genba gyomu saisekkei",
+    "等差数列を含まない集合に対する": "tosa suretsu fukumanai shugo",
+    "の挑戦：行き詰まった箇所の記録簿": "chosen ikizumatta kasho kirokubo",
+    "エージェンティックAIがすべてのタスク曝露予測の前提を覆す": "ejentikku ai tasuku bakuro yosoku zentei kutsugaesu",
+    "の楕円曲線に隠された謎のシードはハッシュ値ではなく": "daen kyokusen nazo shido hasshu",
+    "なぜ英国金融行為規制機構": "naze eikoku kinyu koi kisei kiko",
+    "専用のルールブックなしで": "senyo rurubukku nashi kisei"
   },
   "zh-hans": {
     "读懂": "dudong",
@@ -510,7 +516,12 @@
     "开源物理AI": "kaiyuan wuli ai",
     "物理AI与": "wuli ai",
     "劳动力治理": "laodongli zhili",
-    "信任、责任与一线作业的重新设计": "xinren zeren yixian zuoye chongxin sheji"
+    "信任、责任与一线作业的重新设计": "xinren zeren yixian zuoye chongxin sheji",
+    "对无等差数列集合的攻坚：一份停滞之处的清单": "wu dengcha shulie jihe gongjian tingzhi qingdan",
+    "智能体AI打破了每一项任务暴露度预测背后的基本假设": "zhinengti ai dapo renwu baoludu yuce jiben jiashe",
+    "椭圆曲线背后的神秘种子从来都不是哈希值": "tuoyuan quxian shenmi zhongzi bushi haxizhi",
+    "为什么英国金融行为监管局": "weishenme yingguo jinrong xingwei jianguanju",
+    "在没有专门": "meiyou zhuanmen guize shouce jianguan"
   },
   "zh-hant": {
     "讀懂": "dudong",
@@ -566,6 +577,11 @@
     "開源實體AI": "kaiyuan shiti ai",
     "實體AI與": "shiti ai",
     "勞動力治理": "laodongli zhili",
-    "信任、責任與第一線作業的重新設計": "xinren zeren diyixian zuoye chongxin sheji"
+    "信任、責任與第一線作業的重新設計": "xinren zeren diyixian zuoye chongxin sheji",
+    "對無等差數列集合的攻堅：一份記錄受阻之處的清單": "wu dengcha shulie jihe gongjian shouzu qingdan",
+    "代理型 AI 打破了所有任務暴露預測背後的預設前提": "dailixing ai dapo renwu baolu yuce yushe qianti",
+    "橢圓曲線背後的神祕種子從來就不是雜湊值": "tuoyuan quxian shenmi zhongzi bushi zacouzhi",
+    "為何英國金融行為監理總署": "weihe yingguo jinrong xingwei jianli zongshu",
+    "在不制定專屬": "buzhiding zhuanshu fagui shouce jianguan"
   }
 }

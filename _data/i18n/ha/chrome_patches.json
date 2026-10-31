@@ -74,7 +74,7 @@
       "aria-label=\"Sebastien Rousseau gida\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/ha/game-da-mu/index.html\">About</a></li>"
     ],
     [
@@ -294,11 +294,11 @@
       "<li><a href=\"/ha/bincike/index.html\">Bincike</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/ha/speaking/index.html\">Jawabai</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/ha/speaking/index.html\">Jawabai</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/ha/kunshi/index.html\">Kunshi</a>"
     ],
     [
@@ -326,15 +326,15 @@
       "aria-label=\"Maɓallin ƙaramin menu na About\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"Maɓallin ƙaramin menu na Dakin karatu\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"Maɓallin ƙaramin menu na Bincike\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"Maɓallin ƙaramin menu na Kunshi\""
     ],
     [
@@ -346,7 +346,7 @@
       "<li><a href=\"/ha/speaking/index.html\">Jawabai na jama'a</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/ha/dakin-karatu/index.html\">Dakin karatu</a>"
     ],
     [

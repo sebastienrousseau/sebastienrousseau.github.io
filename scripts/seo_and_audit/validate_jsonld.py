@@ -47,6 +47,7 @@ import re
 import sys
 import xml.etree.ElementTree as ET
 from collections.abc import Callable
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 JSONLD_RE = re.compile(
@@ -655,13 +656,20 @@ def _report(rel: str, errs: list[str], warns: list[str]) -> None:
 
 
 def _validate_all(
-    paths: list[Path], base: Path, validator: Callable[[Path], tuple[list[str], list[str]]]
+    paths: list[Path],
+    base: Path,
+    validator: Callable[[Path], tuple[list[str], list[str]]],
+    jobs: int = 1,
 ) -> tuple[int, int, int]:
     """Run one validator over many files. Returns (files_with_errors,
     total_errors, total_warnings)."""
     failed = errors = warnings = 0
-    for path in paths:
-        errs, warns = validator(path)
+    if jobs > 1 and len(paths) > 1:
+        with ThreadPoolExecutor(max_workers=jobs) as pool:
+            outcomes = list(pool.map(validator, paths))
+    else:
+        outcomes = [validator(path) for path in paths]
+    for path, (errs, warns) in zip(paths, outcomes, strict=True):
         if not (errs or warns):
             continue
         _report(path.relative_to(base).as_posix(), errs, warns)
@@ -675,6 +683,13 @@ def _validate_all(
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--base-dir", default="public", help="HTML tree to validate (default: public)")
+    p.add_argument(
+        "-j",
+        "--jobs",
+        type=int,
+        default=4,
+        help="Worker threads for parallel page/feed validation (default: 4)",
+    )
     args = p.parse_args()
     base = Path(args.base_dir)
     if not base.is_dir():
@@ -682,10 +697,14 @@ def main() -> int:
         return 2
 
     pages = sorted(base.rglob("*.html"))
-    failed_pages, total_errors, total_warnings = _validate_all(pages, base, validate_page)
+    failed_pages, total_errors, total_warnings = _validate_all(
+        pages, base, validate_page, jobs=max(1, args.jobs)
+    )
 
     feeds = sorted(base.glob("*.xml"))
-    failed_feeds, feed_errors, feed_warnings = _validate_all(feeds, base, validate_feed)
+    failed_feeds, feed_errors, feed_warnings = _validate_all(
+        feeds, base, validate_feed, jobs=max(1, args.jobs)
+    )
 
     print()
     print(

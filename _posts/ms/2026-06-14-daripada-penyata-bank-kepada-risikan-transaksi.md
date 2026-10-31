@@ -6,7 +6,7 @@ description: "BankStatementParser menukar CAMT, PAIN.001, CSV, OFX/QFX, MT940, d
 date: "June 14, 2026"
 language: "ms"
 locale: "ms_MY"
-banner: "https://cloudcdn.pro/stocks/images/ricardo-gomez-angel-Oj6tP8NlvFo.webp"
+banner: "https://cloudcdn.pro/stocks/images/christoph-duschl-CE_TvPHF3lA.webp"
 banner_alt: "Ruang kerja pejabat kewangan moden pada waktu malam - melambangkan risikan transaksi bersepadu yang dibina BankStatementParser daripada CAMT, PAIN.001, MT940, OFX, CSV, dan PDF terimbas"
 keywords: "BankStatementParser, penghurai penyata bank, CAMT, PAIN.001, MT940, OFX, QFX, PDF OCR, risikan transaksi perbendaharaan"
 ---

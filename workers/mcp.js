@@ -41,6 +41,37 @@ const CACHE_HEADERS = {
 
 const ORIGIN_BASE = 'https://sebastienrousseau.com';
 
+const SERVER_INFO = {
+  protocolVersion: '2025-06-18',
+  serverInfo: {
+    name: 'sebastienrousseau-mcp',
+    version: '1.0.0',
+    homepage: 'https://sebastienrousseau.com/iso20022-mcp/',
+    registry: 'https://sebastienrousseau.com/.well-known/mcp/server.json',
+  },
+  capabilities: {
+    resources: { subscribe: false, listChanged: false },
+    tools: { listChanged: false },
+  },
+  tools: [
+    {
+      name: 'list_resources',
+      endpoint: '/mcp/v1/list_resources',
+      description: 'Paginate the research corpus resources with cursor and limit.',
+    },
+    {
+      name: 'read_resource',
+      endpoint: '/mcp/v1/read_resource',
+      description: 'Fetch canonical Markdown and metadata for an article URI or slug.',
+    },
+    {
+      name: 'search',
+      endpoint: '/mcp/v1/search',
+      description: 'Filter articles by query text and taxonomy tag or pillar.',
+    },
+  ],
+};
+
 export function isMCPRoute(pathname) {
   return pathname.startsWith('/mcp/v1/');
 }
@@ -208,6 +239,9 @@ export async function tryMCP(request, originBase = ORIGIN_BASE) {
   }
   if (request.method !== 'GET' && request.method !== 'HEAD') {
     return errorResponse(405, 'method-not-allowed', 'GET only');
+  }
+  if (url.pathname === '/mcp/v1/server_info') {
+    return jsonResponse(SERVER_INFO);
   }
   let manifest;
   try {

@@ -22,8 +22,8 @@ image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
-keywords: "Rust, static site generator, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML, post-quantum"
-last_reviewed: "2026-05-14"
+keywords: "applied AI, ISO 20022, wholesale payments, post-quantum cryptography, DORA, EU AI Act, Rust, Python, banking architecture"
+last_reviewed: "2026-10-29"
 language: "en-GB"
 layout: "articles"
 locale: "en_GB"
@@ -41,9 +41,9 @@ revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Articles on AI, post-quantum cryptography, ISO 20022 and the future of payments."
-tags: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML"
+tags: "applied AI, ISO 20022, wholesale payments, post-quantum cryptography, DORA, EU AI Act, Rust, Python, banking architecture"
 theme-color: "0, 67, 165"
-title: "Discover How Technology Is Changing Banking and Finance"
+title: "Articles · Sebastien Rousseau"
 url: "https://sebastienrousseau.com/articles"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -105,21 +105,69 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-10-24-modernisation-never-finishes-exceptions-pile-up/index.html" title="Modernisation Never Finishes, and the Exceptions Are What Pile Up">
-<img alt="Dr. Leda Glyptis speaking on stage in front of the Oracle backdrop at the Oracle Financial Services Summit in London, October 2026" src="https://cloudcdn.pro/stocks/images/leda-glyptis-oracle-financial-services-summit-2026.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html" title="Why the FCA Is Regulating AI Without an AI Rulebook">
+<img alt="City of London financial district architecture representing FCA outcomes-based AI regulation and UK financial services governance." src="https://cloudcdn.pro/stocks/images/brett-sayles-7963572.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Ai · Ai-Governance · Banking</span>
-<h3><a href="/2026-10-24-modernisation-never-finishes-exceptions-pile-up/index.html" title="Modernisation Never Finishes, and the Exceptions Are What Pile Up">Modernisation Never Finishes, and the Exceptions Are What Pile Up</a></h3>
-<p class="newsroom-meta"><time datetime="2026-10-24">October 24, 2026</time> · Sebastien Rousseau</p>
-<p>Financial services has spent 20 to 25 years treating modernisation as a project with an end date. Opening the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that the industry's weaker record is...</p>
-<p><a class="pill ghost" href="/2026-10-24-modernisation-never-finishes-exceptions-pile-up/index.html" title="Modernisation Never Finishes, and the Exceptions Are What Pile Up">Read the full story</a></p>
+<span class="newsroom-eyebrow">Ai · Ai-Governance · Compliance</span>
+<h3><a href="/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html" title="Why the FCA Is Regulating AI Without an AI Rulebook">Why the FCA Is Regulating AI Without an AI Rulebook</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-28">October 28, 2026</time> · Sebastien Rousseau</p>
+<p>The FCA's position is that you don't need a new rulebook to regulate a new technology when your existing rules already ask what the technology does to people and markets, and it is applying that position to AI in UK...</p>
+<p><a class="pill ghost" href="/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html" title="Why the FCA Is Regulating AI Without an AI Rulebook">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude/index.html" title="The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour" aria-label="The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour">
+<img alt="Cryptographic hardware and binary patterns illustrating NIST ECDSA elliptic curve seeds, lrand48 PRNG states and AI cryptanalysis." src="https://cloudcdn.pro/stocks/images/galina-nelyubova-NRWhMzpq8z4.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Cybersecurity · Cryptography · Ai</span>
+<h3><a href="/2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude/index.html" title="The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour">The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-26">October 26, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A question that stayed open after the one person who might have answered it died in 2023 had a mundane answer: a 1990s random number generator initialised from the clock. The authors say that answer makes them more...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-10-25-agentic-ai-breaks-the-assumption-behind-every-task-exposure-forecast/index.html" title="Agentic AI breaks the assumption behind every task-exposure forecast" aria-label="Agentic AI breaks the assumption behind every task-exposure forecast">
+<img alt="Modern collaborative workspace illustrating agentic AI workflow automation, task exposure and enterprise labour market shifts." src="https://cloudcdn.pro/stocks/images/alesia-kazantceva-XLm6-fPwK5Q.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Ai · Agentic-Ai · Generative-Ai</span>
+<h3><a href="/2026-10-25-agentic-ai-breaks-the-assumption-behind-every-task-exposure-forecast/index.html" title="Agentic AI breaks the assumption behind every task-exposure forecast">Agentic AI breaks the assumption behind every task-exposure forecast</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-25">October 25, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Labour-market forecasts have assumed that automation removes tasks one at a time and leaves the occupation standing. Agentic AI, which completes whole workflows, invalidates that assumption, and a new composite...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-10-24-modernisation-never-finishes-exceptions-pile-up/index.html" title="Modernisation Never Finishes, and the Exceptions Are What Pile Up" aria-label="Modernisation Never Finishes, and the Exceptions Are What Pile Up">
+<img alt="Dr. Leda Glyptis speaking on stage in front of the Oracle backdrop at the Oracle Financial Services Summit in London, October 2026" src="https://cloudcdn.pro/stocks/images/leda-glyptis-oracle-financial-services-summit-2026.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Ai · Ai-Governance · Banking</span>
+<h3><a href="/2026-10-24-modernisation-never-finishes-exceptions-pile-up/index.html" title="Modernisation Never Finishes, and the Exceptions Are What Pile Up">Modernisation Never Finishes, and the Exceptions Are What Pile Up</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-24">October 24, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Financial services has spent 20 to 25 years treating modernisation as a project with an end date. Opening the Oracle Financial Services Summit in London, Dr. Leda Glyptis argued that the industry's weaker record is...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-10-24-an-ai-s-attack-on-progression-free-sets-a-ledger-of-what-stalled/index.html" title="An AI's attack on progression-free sets: a ledger of what stalled" aria-label="An AI's attack on progression-free sets: a ledger of what stalled">
+<img alt="Abstract geometric light structures representing mathematical progression-free sets, Fourier analysis and AI-assisted proof discovery." src="https://cloudcdn.pro/stocks/images/alex-knight-2EJCSULRwC8.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Ai · Generative-Ai · Llm</span>
+<h3><a href="/2026-10-24-an-ai-s-attack-on-progression-free-sets-a-ledger-of-what-stalled/index.html" title="An AI's attack on progression-free sets: a ledger of what stalled">An AI's attack on progression-free sets: a ledger of what stalled</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-24">October 24, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">An AI assistant worked on two problems about progression-free sets: an argument for the reciprocal-sum problem, and a quasipolynomial bound for every fixed progression length. It used Bloom and...</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-10-13-physical-ai-robotics-workforce-governance-industrial-operations/index.html" title="Physical AI and Workforce Governance: Trust, Liability, and the Redesign of Frontline Operations" aria-label="Physical AI and Workforce Governance: Trust, Liability, and the Redesign of Frontline Operations">
@@ -423,7 +471,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-07-02-certified-blockchains-banking-trust-tc307-assurance-2026/index.html" title="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust" aria-label="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust">
-<img alt="Abstract distributed-ledger lattice resolving into a certified audit spine — visualising the shift from retrospective entity audits to continuous, cryptographically-verifiable blockchain assurance for wholesale banking" src="https://cloudcdn.pro/stocks/images/dylan-calluy-JpflvzEl5cg.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Abstract distributed-ledger lattice resolving into a certified audit spine — visualising the shift from retrospective entity audits to continuous, cryptographically-verifiable blockchain assurance for wholesale banking" src="https://cloudcdn.pro/stocks/images/chuttersnap-mf-o1E7omzk.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Certified Blockchain · Distributed Ledger · Iso/Iec Tc 307</span>
@@ -627,7 +675,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-16-ai-aware-dotfiles-secure-reproducible-workstation-2026/index.html" title="AI-Aware Dotfiles in 2026: Building a Secure, Reproducible Developer Workstation for MCP, SLSA, and Multi-Shell Parity" aria-label="AI-Aware Dotfiles in 2026: Building a Secure, Reproducible Developer Workstation for MCP, SLSA, and Multi-Shell Parity">
-<img alt="Developer workstation in low light — symbolising AI-aware, reproducible, secure dotfiles for MCP servers, SLSA signing, age/SOPS secrets, and multi-shell parity" src="https://cloudcdn.pro/stocks/images/almas-salakhov-Vq2ap8aFFEs.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Developer workstation in low light — symbolising AI-aware, reproducible, secure dotfiles for MCP servers, SLSA signing, age/SOPS secrets, and multi-shell parity" src="https://cloudcdn.pro/stocks/images/alexander-sinn-KgLtFCgfC28.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Dotfiles · Developer Tools · Mcp</span>
@@ -651,7 +699,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-14-bankstatementparser-transaction-intelligence-treasury-open-source-2026/index.html" title="From Bank Statements to Unified Transaction Intelligence: Building an Open-Source Parser for Treasury Teams" aria-label="From Bank Statements to Unified Transaction Intelligence: Building an Open-Source Parser for Treasury Teams">
-<img alt="Modern finance office workspace at night — symbolising the unified transaction intelligence that BankStatementParser builds from CAMT, PAIN.001, MT940, OFX, CSV, and scanned PDFs" src="https://cloudcdn.pro/stocks/images/ricardo-gomez-angel-Oj6tP8NlvFo.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Modern finance office workspace at night — symbolising the unified transaction intelligence that BankStatementParser builds from CAMT, PAIN.001, MT940, OFX, CSV, and scanned PDFs" src="https://cloudcdn.pro/stocks/images/christoph-duschl-CE_TvPHF3lA.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Bankstatementparser · Treasury · Bank Statements</span>
@@ -687,7 +735,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/index.html" title="The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk" aria-label="The Banking Resilience Index in 2026: AI, Cloud, Quantum, Payments, and Third-Party Concentration Risk">
-<img alt="Abstract architectural photograph used as the visual key for the 2026 Banking Resilience Index — combining AI risk, cloud concentration, quantum-safe security, payment continuity, and critical third-party dependency into one operational-resilience scoreboard" src="https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Abstract architectural photograph used as the visual key for the 2026 Banking Resilience Index — combining AI risk, cloud concentration, quantum-safe security, payment continuity, and critical third-party dependency into one operational-resilience scoreboard" src="https://cloudcdn.pro/stocks/images/alexander-isreb-1797383.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Banking Resilience · Dora · Ai Risk</span>
@@ -891,7 +939,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-24-uk-payments-forward-plan-stablecoins-open-banking-tokenised-payments-2026/index.html" title="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments" aria-label="The UK Payments Forward Plan in 2026: Stablecoins, Open Banking, Tokenised Deposits, and Agentic Payments">
-<img alt="UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets" src="https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM-1200.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="UK payments modernisation diagram showing stablecoins, tokenised deposits, open banking, AI agents, FCA regulation, PSR consolidation, and wholesale digital markets" src="https://cloudcdn.pro/stocks/images/andrea-de-santis-gYINUebkIDg.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Uk Payments · Payments Forward Plan · Stablecoins</span>

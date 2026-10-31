@@ -11,10 +11,10 @@ hero:
   press_nudge: صحفي على موعد إغلاق؟
   press_nudge_cta: اطلب تعليقًا متخصصًا
   microproof:
-  - منصات مدفوعات أُطلقت في HSBC وPayPal وBarclays
+  - قرابة عقدين من الخبرة في HSBC Commercial & Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group
   - مشارك في تأليف ورقة EPAA البيضاء حول ما بعد الكمّ
   - مساهم، Emerging Payments Association Asia
-employers_label: منصات مدفوعات أُطلقت في
+employers_label: المؤسسات التي عملتُ فيها
 stats_eyebrow: بالأرقام
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: نسخ
   items:
   - length: قصيرة
-    text: سيباستيان روسو تقني مصرفي أول يكتب ويبني عند تقاطع مدفوعات ISO 20022 والتشفير ما بعد الكمّي والذكاء الاصطناعي التطبيقي. أطلق منصات مدفوعات في HSBC وPayPal وBarclays، ويصون تنفيذات مرجعية مفتوحة المصدر تُستخدم في بيئات التشغيل الفعلي.
+    text: سيباستيان روسو تقني مصرفي أول يكتب ويبني عند تقاطع مدفوعات ISO 20022 والتشفير ما بعد الكمّي والذكاء الاصطناعي التطبيقي. قرابة عقدين من الخبرة في HSBC Commercial & Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group.
   - length: متوسطة
     text: سيباستيان روسو تقني مصرفي أول أمضى قرابة عقدين في HSBC Commercial & Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group. يكتب ويبني عند تقاطع مدفوعات ISO 20022 والتشفير ما بعد الكمّي والذكاء الاصطناعي التطبيقي، ويصون تنفيذات مرجعية مفتوحة المصدر — pacs.008 وpain.001 وKyberLib وBankStatementParser — تستخدمها فرق الخزينة والمدفوعات في بيئات التشغيل الفعلي. يساهم في مجموعة عمل التشفير الآمن كمّيًا لدى Emerging Payments Association Asia، ويصدر Banking On Quantum وBanking On AI.
   - length: طويلة
-    text: 'سيباستيان روسو تقني مصرفي أول يركّز على التحوّل البنيوي في مدفوعات الجملة. عبر HSBC Commercial & Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group، أطلق منصات مدفوعات ومنتجات ذكاء اصطناعي وبنية تحتية مفتوحة المصدر تستخدمها فرق الخزينة والمدفوعات في بيئات التشغيل الفعلي. يؤلّف ويصون pacs.008 وpain.001 وBankStatementParser وKyberLib وCloudCDN وdotfiles، وكلٌّ منها موضوع بوصفه تنفيذًا مرجعيًا لا عرضًا توضيحيًا: بنية مالية تحتية قابلة للفحص وبمستوى مجلس الإدارة. يساهم في مجموعة عمل التشفير الآمن كمّيًا لدى Emerging Payments Association Asia، وشارك في تأليف ورقة EPAA البيضاء «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (سبتمبر 2025)، ويصدر Banking On Quantum وBanking On AI. يعمل عند تقاطع الذكاء الاصطناعي الوكيل والمدفوعات الفورية والتشفير ما بعد الكمّي والمرونة السحابية والبيانات المهيكلة والأدلة التنظيمية.'
+    text: 'سيباستيان روسو تقني مصرفي أول يركّز على التحوّل البنيوي في مدفوعات الجملة. قرابة عقدين من الخبرة في HSBC Commercial & Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group. يؤلّف ويصون pacs. 008 وpain. 001 وBankStatementParser وKyberLib وCloudCDN وdotfiles، وكلٌّ منها موضوع بوصفه تنفيذًا مرجعيًا لا عرضًا توضيحيًا: بنية مالية تحتية قابلة للفحص وبمستوى مجلس الإدارة. يساهم في مجموعة عمل التشفير الآمن كمّيًا لدى Emerging Payments Association Asia، وشارك في تأليف ورقة EPAA البيضاء «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (سبتمبر 2025)، ويصدر Banking On Quantum وBanking On AI. يعمل عند تقاطع الذكاء الاصطناعي الوكيل والمدفوعات الفورية والتشفير ما بعد الكمّي والمرونة السحابية والبيانات المهيكلة والأدلة التنظيمية.'
 faq:
   eyebrow: قبل أن تسألوا
   headline: الحجز، بعبارات واضحة.
@@ -185,12 +185,7 @@ final_cta:
   secondary_cta: اطلب تعليقًا متخصصًا
 ---
 
-سيباستيان روسو تقني مصرفي أول يركّز على التحوّل البنيوي في مدفوعات الجملة. عبر
-HSBC Commercial & Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group، أطلق منصات
-مدفوعات ومنتجات ذكاء اصطناعي وبنية تحتية مفتوحة المصدر تستخدمها فرق الخزينة والمدفوعات في
-بيئات التشغيل الفعلي. يؤلّف ويصون pacs.008 وpain.001 وBankStatementParser وKyberLib
-وCloudCDN وdotfiles، وكلٌّ منها موضوع بوصفه تنفيذًا مرجعيًا لا عرضًا توضيحيًا: بنية مالية
-تحتية قابلة للفحص وبمستوى مجلس الإدارة.
+سيباستيان روسو تقني مصرفي أول يركّز على التحوّل البنيوي في مدفوعات الجملة. قرابة عقدين من الخبرة في HSBC Commercial & Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group. يؤلّف ويصون pacs. 008 وpain. 001 وBankStatementParser وKyberLib وCloudCDN وdotfiles، وكلٌّ منها موضوع بوصفه تنفيذًا مرجعيًا لا عرضًا توضيحيًا: بنية مالية تحتية قابلة للفحص وبمستوى مجلس الإدارة.
 
 يساهم في مجموعة عمل التشفير الآمن كمّيًا لدى Emerging Payments Association Asia، وشارك في
 تأليف ورقة EPAA البيضاء «Quantum-Safe Payments: Why the Payments Industry Must Act Now»

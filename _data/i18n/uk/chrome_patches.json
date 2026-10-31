@@ -74,7 +74,7 @@
       "aria-label=\"Головна Sebastien Rousseau\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/uk/pro-mene/index.html\">Про мене</a></li>"
     ],
     [
@@ -294,11 +294,11 @@
       "<li><a href=\"/uk/doslidzhennya/index.html\">Дослідження</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/uk/speaking/index.html\">Виступи</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/uk/speaking/index.html\">Виступи</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/uk/paket/index.html\">Пакет</a>"
     ],
     [
@@ -326,15 +326,15 @@
       "aria-label=\"Перемкнути підменю Про мене\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"Перемкнути підменю Бібліотека\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"Перемкнути підменю Дослідження\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"Перемкнути підменю Пакет\""
     ],
     [
@@ -346,7 +346,7 @@
       "<li><a href=\"/uk/speaking/index.html\">Публічні виступи</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/uk/biblioteka/index.html\">Бібліотека</a>"
     ],
     [

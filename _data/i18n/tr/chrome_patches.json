@@ -74,7 +74,7 @@
       "aria-label=\"Sebastien Rousseau ana sayfası\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/tr/hakkimda/index.html\">Hakkımda</a></li>"
     ],
     [
@@ -294,11 +294,11 @@
       "<li><a href=\"/tr/arastirma/index.html\">Araştırma</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/tr/speaking/index.html\">Konuşmalar</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/tr/speaking/index.html\">Konuşmalar</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/tr/paket/index.html\">Paket</a>"
     ],
     [
@@ -326,15 +326,15 @@
       "aria-label=\"Hakkımda alt menüsünü aç/kapat\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"Kütüphane alt menüsünü aç/kapat\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"Araştırma alt menüsünü aç/kapat\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"Paket alt menüsünü aç/kapat\""
     ],
     [
@@ -346,7 +346,7 @@
       "<li><a href=\"/tr/speaking/index.html\">Halka açık konuşmalar</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/tr/kutuphane/index.html\">Kütüphane</a>"
     ],
     [

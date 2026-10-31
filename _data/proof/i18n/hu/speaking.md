@@ -11,10 +11,10 @@ hero:
   press_nudge: Újságíró lapzárta előtt?
   press_nudge_cta: Szakértői kommentár kérése
   microproof:
-  - Fizetési platformok átadva a HSBC-nél, a PayPalnál és a Barclaysnél
+  - Közel két évtized az HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA és Virgin Group vállalatoknál
   - Az EPAA posztkvantum tanulmányának társszerzője
   - Közreműködő, Emerging Payments Association Asia
-employers_label: 'Fizetési platformok átadva itt:'
+employers_label: Ahol dolgoztam
 stats_eyebrow: Számokban
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: Másolás
   items:
   - length: Rövid
-    text: Sebastien Rousseau vezető banki technológus, aki az ISO 20022-fizetések, a posztkvantum kriptográfia és az alkalmazott mesterséges intelligencia metszéspontjában ír és fejleszt. Fizetési platformokat adott át a HSBC-nél, a PayPalnál és a Barclaysnél, és éles üzemben használt nyílt referenciamegvalósításokat tart karban.
+    text: Sebastien Rousseau vezető banki technológus, aki az ISO 20022-fizetések, a posztkvantum kriptográfia és az alkalmazott mesterséges intelligencia metszéspontjában ír és fejleszt. Közel két évtized az HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA és Virgin Group vállalatoknál.
   - length: Közepes
     text: Sebastien Rousseau vezető banki technológus, csaknem két évtizeddel a HSBC Commercial & Investment Banknál, a PayPalnál, a Barclaysnél, a Shazamnál, az AKQA-nál és a Virgin Groupnál. Az ISO 20022-fizetések, a posztkvantum kriptográfia és az alkalmazott mesterséges intelligencia metszéspontjában ír és fejleszt, és nyílt referenciamegvalósításokat — pacs.008, pain.001, KyberLib, BankStatementParser — tart karban, amelyeket treasury- és fizetési csapatok használnak éles üzemben. Közreműködik az Emerging Payments Association Asia kvantumbiztos kriptográfiai munkacsoportjában, és a Banking On Quantum, valamint a Banking On AI kiadója.
   - length: Hosszú
-    text: 'Sebastien Rousseau vezető banki technológus, aki a nagy összegű fizetések szerkezeti átalakulására összpontosít. A HSBC Commercial & Investment Banknál, a PayPalnál, a Barclaysnél, a Shazamnál, az AKQA-nál és a Virgin Groupnál fizetési platformokat, MI-termékeket és nyílt infrastruktúrát adott át, amelyeket treasury- és fizetési csapatok használnak éles üzemben. A pacs.008, a pain.001, a BankStatementParser, a KyberLib, a CloudCDN és a dotfiles szerzője és karbantartója — mindegyik referenciamegvalósításnak készült, nem bemutatónak: vizsgálható, igazgatósági szintű pénzügyi infrastruktúra. Közreműködik az Emerging Payments Association Asia kvantumbiztos kriptográfiai munkacsoportjában, társszerzője az EPAA „Quantum-Safe Payments: Why the Payments Industry Must Act Now” tanulmányának (2025. szeptember), és a Banking On Quantum, valamint a Banking On AI kiadója. Munkája az ügynöki MI, a valós idejű fizetések, a posztkvantum kriptográfia, a felhőalapú ellenállóképesség, a strukturált adatok és a szabályozói bizonyíték metszéspontjában áll.'
+    text: 'Sebastien Rousseau vezető banki technológus, aki a nagy összegű fizetések szerkezeti átalakulására összpontosít. Közel két évtized az HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA és Virgin Group vállalatoknál. A pacs. 008, a pain. 001, a BankStatementParser, a KyberLib, a CloudCDN és a dotfiles szerzője és karbantartója — mindegyik referenciamegvalósításnak készült, nem bemutatónak: vizsgálható, igazgatósági szintű pénzügyi infrastruktúra. Közreműködik az Emerging Payments Association Asia kvantumbiztos kriptográfiai munkacsoportjában, társszerzője az EPAA „Quantum-Safe Payments: Why the Payments Industry Must Act Now” tanulmányának (2025. szeptember), és a Banking On Quantum, valamint a Banking On AI kiadója. Munkája az ügynöki MI, a valós idejű fizetések, a posztkvantum kriptográfia, a felhőalapú ellenállóképesség, a strukturált adatok és a szabályozói bizonyíték metszéspontjában áll.'
 faq:
   eyebrow: Mielőtt kérdezné
   headline: A felkérés, egyszerűen.
@@ -185,13 +185,7 @@ final_cta:
   secondary_cta: Szakértői kommentár kérése
 ---
 
-Sebastien Rousseau vezető banki technológus, aki a nagy összegű fizetések szerkezeti
-átalakulására összpontosít. A HSBC Commercial & Investment Banknál, a PayPalnál, a
-Barclaysnél, a Shazamnál, az AKQA-nál és a Virgin Groupnál fizetési platformokat,
-MI-termékeket és nyílt infrastruktúrát adott át, amelyeket treasury- és fizetési csapatok
-használnak éles üzemben. A pacs.008, a pain.001, a BankStatementParser, a KyberLib, a
-CloudCDN és a dotfiles szerzője és karbantartója — mindegyik referenciamegvalósításnak
-készült, nem bemutatónak: vizsgálható, igazgatósági szintű pénzügyi infrastruktúra.
+Sebastien Rousseau vezető banki technológus, aki a nagy összegű fizetések szerkezeti átalakulására összpontosít. Közel két évtized az HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA és Virgin Group vállalatoknál. A pacs. 008, a pain. 001, a BankStatementParser, a KyberLib, a CloudCDN és a dotfiles szerzője és karbantartója — mindegyik referenciamegvalósításnak készült, nem bemutatónak: vizsgálható, igazgatósági szintű pénzügyi infrastruktúra.
 
 Közreműködik az Emerging Payments Association Asia kvantumbiztos kriptográfiai
 munkacsoportjában, társszerzője az EPAA „Quantum-Safe Payments: Why the Payments Industry

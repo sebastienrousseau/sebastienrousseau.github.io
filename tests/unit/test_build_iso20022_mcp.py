@@ -131,56 +131,54 @@ def test_full_build_nav_has_five_top_items_with_dropdowns() -> None:
     out = _run_build(_fake_shell())
     # Nav ends at the </ul> directly before </nav> (nested ap-sub lists).
     nav = out.split('<ul class="ap-menu">', 1)[1].split("</ul></nav>", 1)[0]
-    # 5 top-level items; 4 carry a dropdown (Articles is a plain link).
+    # 4 top-level dropdown items inside ap-menu (+ Get in touch CTA in .ap-nav-right).
     assert nav.count('<li class="has-sub">') == 4
     assert nav.count('class="ap-sub"') == 4
     for label in (
+        "Insights",
+        "Open source",
+        "Speaking",
         "About",
-        "Articles",
-        "Library",
-        "Research",
-        "Suite",
     ):
         assert f">{label}</a>" in nav
     # Each dropdown carries a disclosure button wired to its panel id.
     for item_id, label in (
+        ("insights", "Insights"),
+        ("suite", "Open source"),
+        ("speaking", "Speaking"),
         ("about", "About"),
-        ("library", "Library"),
-        ("research", "Research"),
-        ("suite", "Suite"),
     ):
         assert (
             f'<button type="button" class="ap-sub-toggle" aria-expanded="false" '
             f'aria-controls="sub-{item_id}" aria-label="Toggle {label} submenu">'
         ) in nav
         assert f'<ul id="sub-{item_id}" class="ap-sub">' in nav
-    # Sub-items present with their canonical hrefs. Whitepapers & Reports
-    # deliberately targets the canonical /research/ hub, not the /papers/
-    # redirect page.
+    # Sub-items present with their canonical hrefs.
     for href, label in (
-        ("/trust/index.html", "Trust &amp; Compliance"),
-        ("/speaking/index.html", "Public Speaking"),
-        ("/contact/index.html", "Contact"),
-        ("/topics/index.html", "Browse by Topic"),
-        ("/projects/index.html", "Open Source Projects"),
-        ("/playlists/index.html", "Playlists"),
+        ("/articles/index.html", "Articles"),
         ("/research/index.html", "Whitepapers &amp; Reports"),
         ("/case-studies/index.html", "Real-World Case Studies"),
+        ("/topics/index.html", "Browse by Topic"),
         ("/iso20022-mcp/index.html", "ISO 20022 MCP Suite"),
         ("/iso20022-mcp-docs/index.html", "Documentation"),
         ("/iso20022-mcp-reference/index.html", "API Reference"),
         ("/iso20022-mcp-recipes/index.html", "Integration Recipes"),
+        ("/projects/index.html", "Open Source Projects"),
+        ("/speaking/index.html#spk-topics", "Public Speaking"),
+        ("/playlists/index.html", "Playlists"),
+        ("/about/index.html#main", "Full profile"),
+        ("/trust/index.html", "Trust &amp; Compliance"),
+        ("/contact/index.html", "Contact"),
     ):
         assert f'<li><a href="{href}">{label}</a></li>' in nav
     # No nav link points at the /papers/ redirect page.
     assert "/papers/" not in nav
-    # F-shape ordering: About leftmost, Suite rightmost.
+    # Ordering: Insights -> Open source -> Speaking -> About.
     assert (
-        nav.index(">About</a>")
-        < nav.index(">Articles</a>")
-        < nav.index(">Library</a>")
-        < nav.index(">Research</a>")
-        < nav.index(">Suite</a>")
+        nav.index(">Insights</a>")
+        < nav.index(">Open source</a>")
+        < nav.index(">Speaking</a>")
+        < nav.index(">About</a>")
     )
     # No baked active marker — postbuild's inject_nav_active marks the
     # /iso20022-mcp/ sub-item on the final page.
@@ -192,9 +190,21 @@ def test_full_build_replaces_collectionpage_jsonld() -> None:
     assert "CollectionPage" not in out
     assert '"@type":"WebPage"' in out
     assert '"@type":"BreadcrumbList"' in out
+    assert '"@type":"SoftwareApplication"' in out
+    assert '"@type":"FAQPage"' in out
     assert '"name":"ISO 20022 MCP Suite"' in out
     # No JSON-LD may still point at the articles listing.
     assert '"url":"https://sebastienrousseau.com/articles"' not in out
+
+
+def test_matrix_and_faq_sections_render_all_nine_servers_and_verified_cli() -> None:
+    out = _run_build(_fake_shell())
+    matrix = out.split('id="mcp-matrix"', 1)[1].split("</section>", 1)[0]
+    assert matrix.count('scope="row"') == 9
+    assert "uvx --from camt-exceptions camt-exceptions-mcp" in matrix
+    assert "uvx --from ap2-iso20022 ap2-iso20022-mcp" in matrix
+    faq = out.split('id="mcp-faq"', 1)[1].split("</section>", 1)[0]
+    assert faq.count('<details class="qa-item">') == len(mcp.C["faq"]["items"]) == 6
 
 
 def test_full_build_is_en_only_no_hreflang() -> None:
@@ -214,8 +224,8 @@ def test_full_build_head_hygiene_and_copy() -> None:
     assert "`" not in body  # no literal backticks in rendered copy
     assert "Nine servers, one payment lifecycle." in out
     assert "Eight" not in out
-    # CLS guard: dimensions match the CSS aspect-ratio (16/6).
-    assert 'class="mcp-band-img" width="1920" height="720"' in out
+    # CLS guard: dimensions match the CSS aspect-ratio (16/9 tall band).
+    assert 'class="mcp-band-img-tall" width="1920" height="1080"' in out
     # Commands are <code>, arrows are hidden from AT, CTAs carry card names.
     assert '<code class="spk-mono">' in out
     assert '<span class="spk-arw" aria-hidden="true">' in out
@@ -275,7 +285,7 @@ def test_flow_has_four_steps_with_one_approval_gate() -> None:
 
 def test_security_strip_has_four_verified_claims() -> None:
     out = _run_build(_fake_shell())
-    strip = out.split('<div class="mcp-sec">', 1)[1].split("</div></div></section>", 1)[0]
+    strip = out.split('<div class="mcp-sec">', 1)[1].split('<div id="mcp-safety">', 1)[0]
     assert strip.count('<div class="mcp-sec-cell">') == 4
     assert "Zero data retention." in strip
     assert "no outbound network calls" in strip
@@ -291,9 +301,13 @@ def test_clients_grid_covers_stdio_and_remote_accurately() -> None:
         "Claude Desktop",
         "Cursor",
         "Windsurf",
-        "VS Code + GitHub Copilot",
-        "Google Gemini CLI",
-        "OpenAI Codex CLI",
+        "VS Code",
+        "Gemini CLI",
+        "Codex CLI",
+        "OpenAI Agents SDK",
+    ):
+        assert f">{name}</label>" in sec
+    for name in (
         "OpenAI",
         "Microsoft Copilot Studio",
         "Zapier MCP",
@@ -313,24 +327,10 @@ def test_clients_grid_covers_stdio_and_remote_accurately() -> None:
     # remote-only for ChatGPT connectors.
     assert "MCPServerStdio" in sec
     assert "Streamable HTTP" in sec
-    # Every card that shows a config gets its own copy button wired to
-    # that card's code element (7 stdio + the OpenAI Agents SDK snippet).
-    for slug in (
-        "claude-code",
-        "claude-desktop",
-        "cursor",
-        "windsurf",
-        "vscode",
-        "gemini",
-        "codex",
-        "openai",
-    ):
-        assert f'data-copy="#mcp-code-client-{slug}"' in sec
-    assert sec.count("data-copy=") == 8
     # Codex CLI: the documented ~/.codex/config.toml table shape
     # ([mcp_servers.<name>] with command/args), verified against OpenAI's
     # official Codex MCP docs on 2026-07-16.
-    codex = sec.split("<h3>OpenAI Codex CLI</h3>", 1)[1].split("</div>", 1)[0]
+    codex = sec.split('id="mcp-panel-codex"', 1)[1].split("</div>", 1)[0]
     assert "[mcp_servers.iso20022]" in codex
     assert "command = &quot;uvx&quot;" in codex
     assert "args = [&quot;--from&quot;, &quot;iso20022-mcp[all]&quot;" in codex
@@ -339,10 +339,23 @@ def test_clients_grid_covers_stdio_and_remote_accurately() -> None:
 
 def test_install_tabs_are_css_only_radio_pattern() -> None:
     out = _run_build(_fake_shell())
-    tabs = out.split('<div class="mcp-tabs">', 1)[1].split("</section>", 1)[0]
-    assert tabs.count('name="mcp-install-tab"') == 6
+    tabs = out.split('<div class="mcp-tabs" id="mcp-install">', 1)[1].split(
+        '<p class="mcp-clients-label">', 1
+    )[0]
+    assert tabs.count('name="mcp-install-tab"') == 10
     assert tabs.count("checked") == 1
-    for tid in ("uvx", "pip", "json", "cursor", "vscode", "agents"):
+    for tid in (
+        "uvx",
+        "pip",
+        "claude-code",
+        "claude-desktop",
+        "cursor",
+        "windsurf",
+        "vscode",
+        "gemini",
+        "codex",
+        "agents",
+    ):
         assert f'id="mcp-tab-{tid}"' in tabs
         assert f'<label for="mcp-tab-{tid}">' in tabs
         assert f'id="mcp-panel-{tid}"' in tabs
@@ -431,8 +444,7 @@ def test_clock_band_uses_tall_crop() -> None:
     out = _run_build(_fake_shell())
     assert 'class="mcp-band-img-tall" width="1920" height="1080"' in out
     assert "ocean-ng-L0xOtAnv94Y-1920.webp" in out
-    # The other band keeps the standard 16/6 strip.
-    assert 'class="mcp-band-img" width="1920" height="720"' in out
+    assert 'alt="" role="presentation"' in out
 
 
 def test_safety_section_has_four_cards_from_verified_copy() -> None:
@@ -474,9 +486,10 @@ def test_audience_selector_and_lens_tags() -> None:
     hub = body.split('<div class="speaking-page iso20022-mcp-page">', 1)[1]
     import re
 
-    tagged = re.findall(r'<section data-audience="([^"]+)"', hub)
-    # All rendered content sections carry tags with only known lenses.
-    assert len(tagged) >= 18
+    tagged = re.findall(r'<section(?:\s+class="[^"]*")?\s+data-audience="([^"]+)"', hub)
+    # Consolidated to <= 15 total <section> elements (Fix 2.3).
+    assert hub.split("</footer>", 1)[0].count("<section") <= 15
+    assert len(tagged) == 14
     for tags in tagged:
         assert set(tags.split()) <= {"boards", "engineers", "regulators"}
     # The mapping itself stays lens-mapped per the competitive analysis.

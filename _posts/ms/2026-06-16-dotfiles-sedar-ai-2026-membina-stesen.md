@@ -6,7 +6,7 @@ description: "Dotfiles sedar-AI ialah corak stesen kerja yang selamat dan boleh 
 date: "June 16, 2026"
 language: "ms"
 locale: "ms_MY"
-banner: "https://cloudcdn.pro/stocks/images/almas-salakhov-Vq2ap8aFFEs.webp"
+banner: "https://cloudcdn.pro/stocks/images/alexander-sinn-KgLtFCgfC28.webp"
 banner_alt: "Stesen kerja pembangun dalam cahaya malap - melambangkan dotfiles yang sedar-AI, boleh dihasilkan semula dan selamat untuk pelayan MCP, penandatanganan SLSA, rahsia age/SOPS dan pariti berbilang shell"
 keywords: "dotfiles, Chezmoi, MCP, Model Context Protocol, SLSA, SOPS, penyulitan age, konfigurasi deklaratif, stesen kerja pembangun, DORA Artikel 5, NIST CSF 2.0, keselamatan rantaian bekalan, AI agentik, pariti berbilang shell, Zsh, Fish, Nushell"
 ---

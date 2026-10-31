@@ -67,7 +67,7 @@
          Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
          observed (real-network) LCP is 165 ms. This hint pulls the
          synthetic LCP in line with the observed value. -->
-    <link rel="preload" as="image" href="{{image}}" fetchpriority="high">
+    <link rel="preload" as="image" href="/_csp/hero-portrait-192.webp" imagesrcset="/_csp/hero-portrait-192.webp 192w, /_csp/hero-portrait-288.webp 288w" imagesizes="96px" fetchpriority="high">
     <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
     <meta name="color-scheme" content="light dark" />
@@ -251,7 +251,14 @@
         .btn-sweep:hover::after,.btn-sweep:focus-visible::after{transform:translateX(120%);opacity:1}
       }
       *{box-sizing:border-box}
-      html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+      html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-block-start:calc(var(--nav-h, 64px) + 16px)}
+      :is(a,button,input,select,textarea,summary,[tabindex]):focus{scroll-margin-block:calc(var(--nav-h, 64px) + 16px) 24px}
+      @media (pointer:coarse){.article-tag,.tag-strip a,.ap-foot .social a{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center}}
+      .article-cta{margin:2rem 0;padding:1.25rem 1.5rem;border:1px solid var(--border);border-radius:16px;background:var(--bg-alt);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem}
+      .article-cta-title{margin:0;font-size:1.05rem;color:var(--ink)}
+      .article-cta-actions{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center}
+      .article-cta-actions .btn-primary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border-radius:999px;background:var(--accent);color:var(--pill-ink,#fff);font-weight:600;text-decoration:none}
+      .article-cta-actions .btn-ghost{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--ink);font-weight:600;text-decoration:none}
       body{
         margin:0;background:var(--paper);color:var(--ink);
         font-family:var(--type-body);
@@ -475,14 +482,14 @@
       /* Featured card — newest article on page 1 of /articles/ spans the
          full grid row and switches to landscape (image left, body right) so
          it reads as the lead story (the FT "featured" pattern). */
-      article.tag-landing-card--featured{grid-column:1 / -1}
+      article.tag-landing-card--featured,section.tag-landing-list>article.tag-landing-card:last-child:nth-child(odd){grid-column:1 / -1}
       @media (min-width:48em){
         article.tag-landing-card--ft{grid-template-columns:1fr 1fr}
         article.tag-landing-card--ft .card-media{aspect-ratio:auto;min-height:100%}
-        article.tag-landing-card--featured{grid-template-columns:3fr 2fr}
-        article.tag-landing-card--featured .card-body{padding:32px 36px}
-        article.tag-landing-card--featured .card-body h2{font-size:1.75rem;line-height:1.2}
-        article.tag-landing-card--featured .card-body .card-excerpt{font-size:1rem}
+        article.tag-landing-card.tag-landing-card--featured,section.tag-landing-list>article.tag-landing-card.tag-landing-card--ft:last-child:nth-child(odd){grid-template-columns:3fr 2fr}
+        article.tag-landing-card--featured .card-body,section.tag-landing-list>article.tag-landing-card:last-child:nth-child(odd) .card-body{padding:32px 36px}
+        article.tag-landing-card--featured .card-body h2,section.tag-landing-list>article.tag-landing-card:last-child:nth-child(odd) .card-body h2{font-size:1.75rem;line-height:1.2}
+        article.tag-landing-card--featured .card-body .card-excerpt,section.tag-landing-list>article.tag-landing-card:last-child:nth-child(odd) .card-body .card-excerpt{font-size:1rem}
       }
       nav.related-tags{padding:18px;border:1px solid var(--rule);background:var(--paper);margin:32px 0}
       nav.related-tags h2{font-family:var(--type-body);font-size:.875rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-deep);margin:0 0 8px}
@@ -1986,7 +1993,7 @@
       .feat.offer{padding:clamp(68px,7vw,108px) var(--pad-x);background:linear-gradient(180deg,var(--bg-alt) 0%,var(--bg) 100%);border-radius:40px 40px 0 0;margin-top:-18px;box-shadow:0 -12px 36px -24px rgba(0,0,0,.08)}
       .feat-with-bg .feat-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:.55}
       .feat.dark.feat-with-bg::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.85));z-index:-1}
-      .feat-hero .hero-portrait{display:block;width:96px;height:96px;margin:0 auto 24px;border-radius:50%;object-fit:cover;box-shadow:0 12px 32px -12px rgba(0,0,0,.25)}
+      .feat-hero .hero-portrait{display:block;width:96px;height:96px;margin:0 auto 24px;border-radius:50%;object-fit:cover;background:var(--bg-alt);box-shadow:0 12px 32px -12px rgba(0,0,0,.25)}
       .about-portrait{display:block;width:160px;height:160px;margin:0 auto 24px;border-radius:50%;object-fit:cover;box-shadow:0 12px 32px -12px rgba(0,0,0,.25);image-rendering:auto}
       @media (min-width:48em){.about-portrait{float:right;margin:0 0 16px 24px}}
       .feat-hero .feat-eyebrow{margin:0 0 8px}
@@ -2252,37 +2259,38 @@
         </a>
         <nav aria-label="Primary navigation">
           <ul class="ap-menu">
-            <li class="has-sub"><a href="/about/index.html">About</a>
-              <button type="button" class="ap-sub-toggle" aria-expanded="false" aria-controls="sub-about" aria-label="Toggle About submenu"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
-              <ul id="sub-about" class="ap-sub">
-                <li><a href="/trust/index.html">Trust &amp; Compliance</a></li>
-                <li><a href="/speaking/index.html">Public Speaking</a></li>
-                <li><a href="/contact/index.html">Contact</a></li>
-              </ul>
-            </li>
-            <li><a href="/articles/index.html">Articles</a></li>
-            <li class="has-sub"><a href="/library/index.html">Library</a>
-              <button type="button" class="ap-sub-toggle" aria-expanded="false" aria-controls="sub-library" aria-label="Toggle Library submenu"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
-              <ul id="sub-library" class="ap-sub">
-                <li><a href="/topics/index.html">Browse by Topic</a></li>
-                <li><a href="/projects/index.html">Open Source Projects</a></li>
-                <li><a href="/playlists/index.html">Playlists</a></li>
-              </ul>
-            </li>
-            <li class="has-sub"><a href="/research/index.html">Research</a>
-              <button type="button" class="ap-sub-toggle" aria-expanded="false" aria-controls="sub-research" aria-label="Toggle Research submenu"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
-              <ul id="sub-research" class="ap-sub">
+            <li class="has-sub"><a href="/library/index.html">Insights</a>
+              <button type="button" class="ap-sub-toggle" aria-expanded="false" aria-controls="sub-insights" aria-label="Toggle Insights submenu"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+              <ul id="sub-insights" class="ap-sub">
+                <li><a href="/articles/index.html">Articles</a></li>
                 <li><a href="/research/index.html">Whitepapers &amp; Reports</a></li>
                 <li><a href="/case-studies/index.html">Real-World Case Studies</a></li>
+                <li><a href="/topics/index.html">Browse by Topic</a></li>
               </ul>
             </li>
-            <li class="has-sub"><a href="/suite/index.html">Suite</a>
-              <button type="button" class="ap-sub-toggle" aria-expanded="false" aria-controls="sub-suite" aria-label="Toggle Suite submenu"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
-              <ul id="sub-suite" class="ap-sub">
+            <li class="has-sub"><a href="/suite/index.html">Open source</a>
+              <button type="button" class="ap-sub-toggle" aria-expanded="false" aria-controls="sub-open-source" aria-label="Toggle Open source submenu"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+              <ul id="sub-open-source" class="ap-sub">
                 <li><a href="/iso20022-mcp/index.html">ISO 20022 MCP Suite</a></li>
                 <li><a href="/iso20022-mcp-docs/index.html">Documentation</a></li>
                 <li><a href="/iso20022-mcp-reference/index.html">API Reference</a></li>
                 <li><a href="/iso20022-mcp-recipes/index.html">Integration Recipes</a></li>
+                <li><a href="/projects/index.html">Open Source Projects</a></li>
+              </ul>
+            </li>
+            <li class="has-sub"><a href="/speaking/index.html">Speaking</a>
+              <button type="button" class="ap-sub-toggle" aria-expanded="false" aria-controls="sub-speaking" aria-label="Toggle Speaking submenu"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+              <ul id="sub-speaking" class="ap-sub">
+                <li><a href="/speaking/index.html">Public Speaking</a></li>
+                <li><a href="/playlists/index.html">Playlists</a></li>
+              </ul>
+            </li>
+            <li class="has-sub"><a href="/about/index.html">About</a>
+              <button type="button" class="ap-sub-toggle" aria-expanded="false" aria-controls="sub-about" aria-label="Toggle About submenu"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+              <ul id="sub-about" class="ap-sub">
+                <li><a href="/about/index.html">Full profile</a></li>
+                <li><a href="/trust/index.html">Trust &amp; Compliance</a></li>
+                <li><a href="/contact/index.html">Contact</a></li>
               </ul>
             </li>
           </ul>
@@ -2352,7 +2360,7 @@
     <section class="feat feat-hero" aria-labelledby="hero-headline">
       <div class="wrap feat-hero-grid">
         <div class="feat-hero-copy">
-          <img class="hero-portrait" src="{{image}}" alt="{{image_alt}}" width="96" height="96" loading="eager" fetchpriority="high" decoding="async" />
+          <img class="hero-portrait" src="/_csp/hero-portrait-192.webp" srcset="/_csp/hero-portrait-192.webp 192w, /_csp/hero-portrait-288.webp 288w" sizes="96px" alt="{{image_alt}}" width="96" height="96" loading="eager" fetchpriority="high" decoding="async" />
           <p class="feat-credentials"><a href="/about/index.html">Wholesale Payments &amp; AI Leader</a> · Author of the <a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf">EPAA Quantum-Safe Payments Paper</a> · Creator of <a href="/projects/index.html">179 open-source packages</a></p>
           <h1 id="hero-headline" class="feat-headline center" itemprop="headline">Securing the future of banking<br />with agentic AI<br />and post-quantum cryptography.</h1>
           <p class="feat-sub center">Open-source payments, post-quantum security, and applied AI for financial services.</p>
@@ -2488,15 +2496,6 @@
             </ul>
           </div>
         </div>
-        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Newsletter signup">
-          <label for="ap-newsletter-email" class="ap-newsletter-label">Monthly briefings on AI, ISO 20022, and quantum-safe payments, written for senior banking architects. No spam, unsubscribe in one click.</label>
-          <div class="ap-newsletter-row">
-            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />
-            <input type="hidden" name="subject" value="newsletter" />
-            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
-            <button type="submit">Subscribe</button>
-          </div>
-        </form>
         <div class="legal">
           <span>{{copyright}}</span>
           <nav class="social" aria-label="Social links">
@@ -2686,20 +2685,20 @@
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January.",
-          "url": "https://sebastienrousseau.com/2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026/"
+          "name": "Why the FCA Is Regulating AI Without an AI Rulebook",
+          "url": "https://sebastienrousseau.com/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/"
         },
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "DORA Spared You From NIS2. It Will Not Spare You From the CRA.",
-          "url": "https://sebastienrousseau.com/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/"
+          "name": "The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour",
+          "url": "https://sebastienrousseau.com/2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude/"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.",
-          "url": "https://sebastienrousseau.com/2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026/"
+          "name": "Agentic AI breaks the assumption behind every task-exposure forecast",
+          "url": "https://sebastienrousseau.com/2026-10-25-agentic-ai-breaks-the-assumption-behind-every-task-exposure-forecast/"
         }
       ]
     }
