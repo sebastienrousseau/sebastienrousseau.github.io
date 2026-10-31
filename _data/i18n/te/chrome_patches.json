@@ -73,7 +73,7 @@
       "aria-label=\"Sebastien Rousseau హోమ్\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/te/about/index.html\">పరిచయం</a></li>"
     ],
     [
@@ -293,11 +293,11 @@
       "<li><a href=\"/te/research/index.html\">పరిశోధన</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/te/speaking/index.html\">ప్రసంగాలు</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/te/speaking/index.html\">ప్రసంగాలు</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/te/suite/index.html\">సూట్</a>"
     ],
     [
@@ -325,15 +325,15 @@
       "aria-label=\"పరిచయం ఉపమెనూను టోగుల్ చేయండి\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"లైబ్రరీ ఉపమెనూను టోగుల్ చేయండి\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"పరిశోధన ఉపమెనూను టోగుల్ చేయండి\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"సూట్ ఉపమెనూను టోగుల్ చేయండి\""
     ],
     [
@@ -345,7 +345,7 @@
       "<li><a href=\"/te/speaking/index.html\">బహిరంగ ప్రసంగాలు</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/te/library/index.html\">లైబ్రరీ</a>"
     ],
     [

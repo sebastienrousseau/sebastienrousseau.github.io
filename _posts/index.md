@@ -170,7 +170,7 @@ site_software: "Static Site Generator, Rust"
 <h2 id="proof" class="feat-headline center">By the numbers.</h2>
 <section class="proof-rail" aria-label="Open source by the numbers">
 <div class="kpi-cell">
-  <span class="kpi-cell-value" data-kpi="downloads_total">51.2M</span>
+  <span class="kpi-cell-value" data-kpi="downloads_total">51.9M</span>
   <span class="kpi-cell-label">All-time downloads</span>
 </div>
 <div class="kpi-cell">
@@ -178,7 +178,7 @@ site_software: "Static Site Generator, Rust"
   <span class="kpi-cell-label">Downloads, last 30 days</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value" data-kpi="github_stars">694</span>
+  <span class="kpi-cell-value" data-kpi="github_stars">717</span>
   <span class="kpi-cell-label">GitHub stars</span>
 </div>
 <div class="kpi-cell">
@@ -229,38 +229,38 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026/index.html" title="Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January." aria-label="Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January.">
-<img alt="A white curved concrete canopy opening onto clear blue sky, its edge sweeping away from the viewer toward a single unobstructed gap." src="https://cloudcdn.pro/stocks/images/matheus-natan-3297593.webp" loading="lazy" decoding="async" width="600" height="600" />
+<a class="newsroom-card-media" href="/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html" title="Why the FCA Is Regulating AI Without an AI Rulebook" aria-label="Why the FCA Is Regulating AI Without an AI Rulebook">
+<img alt="City of London financial district architecture representing FCA outcomes-based AI regulation and UK financial services governance." src="https://cloudcdn.pro/stocks/images/brett-sayles-7963572.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">EU Data Act · Cloud Switching · DORA</span>
-<h3><a href="/2026-08-04-data-act-cloud-switching-dora-exit-strategies-2026/index.html">Your DORA Exit Plan Was Priced, Not Planned. The Price Disappears in January.</a></h3>
-<p class="newsroom-meta"><time datetime="2026-08-04">August 4, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> From 12 January 2027 cloud switching charges are abolished, egress included. The cost defence that kept DORA exit plans theoretical expires with them.</p>
+<span class="newsroom-eyebrow">AI · AI Governance · Compliance</span>
+<h3><a href="/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html">Why the FCA Is Regulating AI Without an AI Rulebook</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-28">October 28, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> The FCA describes itself as a technology-agnostic, principles-based and outcomes-focused regulator, and it applies that stance to AI. Its rules don't usually mandate or prohibit specific...</p>
 </div>
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/index.html" title="DORA Spared You From NIS2. It Will Not Spare You From the CRA." aria-label="DORA Spared You From NIS2. It Will Not Spare You From the CRA.">
-<img alt="Layered mountain ridges receding into pale haze, each ridge fainter than the one before it, seen from above the cloud line." src="https://cloudcdn.pro/stocks/images/paul-earle-wVjd0eWNqI8.webp" loading="lazy" decoding="async" width="600" height="600" />
+<a class="newsroom-card-media" href="/2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude/index.html" title="The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour" aria-label="The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour">
+<img alt="Cryptographic hardware and binary patterns illustrating NIST ECDSA elliptic curve seeds, lrand48 PRNG states and AI cryptanalysis." src="https://cloudcdn.pro/stocks/images/galina-nelyubova-NRWhMzpq8z4.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Cyber Resilience Act · CRA · DORA</span>
-<h3><a href="/2026-08-03-cyber-resilience-act-article-14-reporting-banks-2026/index.html">DORA Spared You From NIS2. It Will Not Spare You From the CRA.</a></h3>
-<p class="newsroom-meta"><time datetime="2026-08-03">August 3, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> On 11 September the CRA starts a 24-hour reporting clock. It attaches to products, so the DORA carve-out that spares banks from NIS2 never reaches it.</p>
+<span class="newsroom-eyebrow">Cybersecurity · Cryptography · AI</span>
+<h3><a href="/2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude/index.html">The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-26">October 26, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> The seeds published with the NIST P-192, P-224, P-256, P-384 and P-521 curves were never hash outputs. They came from the C library's lrand48 generator, seeded by Unix timestamp. Claude worked...</p>
 </div>
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026/index.html" title="Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not." aria-label="Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.">
-<img alt="A white and blue building facade filled with rows of blue glass windows, seen straight on so the glazing reads as a continuous reflective surface." src="https://cloudcdn.pro/stocks/images/marek-piwnicki-11829333.webp" loading="lazy" decoding="async" width="600" height="600" />
+<a class="newsroom-card-media" href="/2026-10-25-agentic-ai-breaks-the-assumption-behind-every-task-exposure-forecast/index.html" title="Agentic AI breaks the assumption behind every task-exposure forecast" aria-label="Agentic AI breaks the assumption behind every task-exposure forecast">
+<img alt="Modern collaborative workspace illustrating agentic AI workflow automation, task exposure and enterprise labour market shifts." src="https://cloudcdn.pro/stocks/images/alesia-kazantceva-XLm6-fPwK5Q.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">EU AI Act · Article 50 · AI Governance</span>
-<h3><a href="/2026-08-02-ai-act-article-50-transparency-banks-omnibus-2026/index.html">Your High-Risk Deadline Moved to December 2027. Your Chatbot's Did Not.</a></h3>
-<p class="newsroom-meta"><time datetime="2026-08-02">August 2, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> The AI Omnibus moved the high-risk deadline to December 2027. It did not move Article 50. Transparency obligations apply from today, and they land on the chatbot.</p>
+<span class="newsroom-eyebrow">AI · Agentic AI · Generative AI</span>
+<h3><a href="/2026-10-25-agentic-ai-breaks-the-assumption-behind-every-task-exposure-forecast/index.html">Agentic AI breaks the assumption behind every task-exposure forecast</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-25">October 25, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> Task-exposure frameworks treat an occupation as a shell that survives around whatever humans still do. Agentic systems pursue a goal and deliver a finished work product, so the coordination work...</p>
 </div>
 </article>
 

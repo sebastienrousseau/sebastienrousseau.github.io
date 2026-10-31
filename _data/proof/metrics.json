@@ -1,5 +1,5 @@
 {
-  "$generated_at": "2026-10-29T06:02:48+00:00",
+  "$generated_at": "2026-10-30T00:20:13+00:00",
   "stats": [
     {
       "key": "years_payments",
@@ -18,7 +18,7 @@
     {
       "key": "downloads_total",
       "label": "All-time open-source package downloads (crates.io + PyPI + npm)",
-      "value": 51868711,
+      "value": 51924035,
       "format": "compact",
       "source": "crates.io + clickpy.clickhouse.com + api.npmjs.org"
     },

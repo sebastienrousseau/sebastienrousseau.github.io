@@ -74,7 +74,7 @@
       "aria-label=\"Sebastien Rousseau হোম\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/bn/amader-shomporke/index.html\">About</a></li>"
     ],
     [
@@ -294,11 +294,11 @@
       "<li><a href=\"/bn/gobeshona/index.html\">গবেষণা</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/bn/speaking/index.html\">বক্তৃতা</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/bn/speaking/index.html\">বক্তৃতা</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/bn/suite/index.html\">স্যুট</a>"
     ],
     [
@@ -326,15 +326,15 @@
       "aria-label=\"About সাবমেনু টগল করুন\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"লাইব্রেরি সাবমেনু টগল করুন\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"গবেষণা সাবমেনু টগল করুন\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"স্যুট সাবমেনু টগল করুন\""
     ],
     [
@@ -346,7 +346,7 @@
       "<li><a href=\"/bn/speaking/index.html\">পাবলিক স্পিকিং</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/bn/granthagar/index.html\">লাইব্রেরি</a>"
     ],
     [

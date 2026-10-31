@@ -160,14 +160,12 @@ def _render_article_cards(
             f'decoding="async" width="800" height="800" />'
             f"</a>"
         )
-        share_html = _card_share_rail(href, title, excerpt)
         body_html = (
             f'<div class="card-body">'
             f"{eyebrow_html}"
             f'<h2><a href="{href}">{_esc(title)}</a></h2>'
             f"{date_html}"
             f"{excerpt_html}"
-            f"{share_html}"
             f"</div>"
         )
         cards.append(

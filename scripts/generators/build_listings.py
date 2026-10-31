@@ -301,14 +301,12 @@ def _render_card(
         f'decoding="async" width="{box}" height="{box}" />'
         f"</a>"
     )
-    share_html = _card_share_rail(href, title, excerpt)
     body_html = (
         f'<div class="card-body">'
         f"{eyebrow_html}"
         f'<h2><a href="{href}">{_esc(title)}</a></h2>'
         f'<time datetime="{iso_date}" class="card-date">{iso_date}</time>'
         f"{excerpt_html}"
-        f"{share_html}"
         f"</div>"
     )
     featured_class = " tag-landing-card--featured" if featured else ""
@@ -784,8 +782,14 @@ def _write_en_paged(
             if idx == 1
             else PUBLIC / "articles" / "page" / str(idx) / "index.html"
         )
+        en_doc_title = (
+            "Articles · Sebastien Rousseau"
+            if idx == 1
+            else f"Articles - Page {idx} of {total_pages} · Sebastien Rousseau"
+        )
+        en_out = _TITLE_RE.sub(f"<title>{_esc(en_doc_title)}</title>", page_html, count=1)
         out_path.parent.mkdir(parents=True, exist_ok=True)
-        out_path.write_text(page_html, encoding="utf-8")
+        out_path.write_text(en_out, encoding="utf-8")
         out.append((idx, page_html, page_posts))
     return out
 

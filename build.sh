@@ -207,8 +207,8 @@ fi
 # for tiles a few KB covers. Same staging as above: public/_csp/ before
 # postbuild, so the asset pipeline fingerprints them.
 mkdir -p public/_csp
-for logo in assets/img/logo-*.webp; do
-  cp -f "${logo}" "public/_csp/$(basename "${logo}")"
+for img in assets/img/logo-*.webp assets/img/hero-portrait-*.webp; do
+  [[ -f "${img}" ]] && cp -f "${img}" "public/_csp/$(basename "${img}")"
 done
 
 if [[ -d assets/js/mcp-simulator ]]; then
@@ -261,6 +261,10 @@ if [[ -d labs ]]; then
         fi
       else
         echo "warning: wasm-pack not found, skipping Rust compilation for $name"
+        if [[ -d "$demo/web" ]]; then
+          mkdir -p "public/labs/$name"
+          cp -R "$demo/web/." "public/labs/$name/"
+        fi
       fi
     else
       mkdir -p "public/labs/$name"

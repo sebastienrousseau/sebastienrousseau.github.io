@@ -73,7 +73,7 @@
       "aria-label=\"Sebastien Rousseau kezdőlapja\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/hu/about/index.html\">Rólam</a></li>"
     ],
     [
@@ -293,11 +293,11 @@
       "<li><a href=\"/hu/research/index.html\">Kutatás</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/hu/speaking/index.html\">Előadások</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/hu/speaking/index.html\">Előadások</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/hu/suite/index.html\">Csomag</a>"
     ],
     [
@@ -325,15 +325,15 @@
       "aria-label=\"Rólam almenü váltása\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"Könyvtár almenü váltása\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"Kutatás almenü váltása\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"Csomag almenü váltása\""
     ],
     [
@@ -345,7 +345,7 @@
       "<li><a href=\"/hu/speaking/index.html\">Nyilvános előadások</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/hu/library/index.html\">Könyvtár</a>"
     ],
     [

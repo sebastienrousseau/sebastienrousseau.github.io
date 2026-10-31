@@ -186,7 +186,7 @@ def test_render_tag_badges_en_links_to_per_tag_landings(monkeypatch):
     # every tag has a landing so we exercise the link-emission path.
     monkeypatch.setattr(af, "_has_landing", lambda slug, lang="en": True)
     out = _render_tag_badges(["quantum", "ISO 20022"], LABELS_EN, lang="en")
-    assert '<a href="/tags/quantum/"' in out
+    assert '<a href="/tags/quantum-computing/"' in out
     assert '<a href="/tags/iso-20022/"' in out
     assert 'rel="tag"' in out
     assert 'aria-label="Topics"' in out
@@ -213,36 +213,36 @@ def test_render_tag_badges_ja_uses_tagu_prefix(monkeypatch):
     assert '<a href="/ja/tagu/ai/"' in out
 
 
-def test_render_tag_badges_falls_back_to_span_when_no_landing(monkeypatch):
-    """Sub-threshold canonicals (< 3 posts) + non-canonical raw aliases
+def test_render_tag_badges_omits_chip_when_no_landing(monkeypatch):
+    """Sub-threshold canonicals (< 3 posts) + non-canonical raw tokens
     have no landing page emitted by build_tag_landings. Linking to
-    /tags/<slug>/ would 404 the strict-internal audit, so the chip
-    renders as plain <span> instead."""
+    /tags/<slug>/ would 404 the strict-internal audit, and unlinked
+    <span> pills masquerade as interactive controls, so unlanded tokens
+    are omitted altogether."""
     from postbuild_lib import article_furniture as af
     from postbuild_lib.article_furniture import LABELS_EN, _render_tag_badges
 
     monkeypatch.setattr(af, "_has_landing", lambda slug, lang="en": False)
     out = _render_tag_badges(["KyberLib"], LABELS_EN, lang="en")
-    assert '<span class="article-tag">KyberLib</span>' in out
+    assert out == ""
+    assert "<span " not in out
     assert "<a " not in out
 
 
 def test_render_tag_badges_non_ascii_slug_never_emits_doubled_slash(monkeypatch):
     """P1-2: a non-Latin chip whose display text slugifies to '' must NOT
     emit a broken ``/<loc>/<tags>//`` link. Without a canonical slug it
-    falls back to a plain <span>. Guards the mr/ja/ar/… regression where
+    is omitted cleanly. Guards the mr/ja/ar/… regression where
     ``slugify("टोकन") == ""`` produced ``<a href="/mr/tags//">``."""
     from postbuild_lib import article_furniture as af
     from postbuild_lib.article_furniture import _render_tag_badges
 
-    # Even if _has_landing were (wrongly) permissive, the empty-slug guard
-    # in _render_tag_badges must keep the chip a <span>.
     monkeypatch.setattr(af, "_has_landing", lambda slug, lang="en": True)
     labels = {"Topics": "विषय"}
     out = _render_tag_badges(["टोकन", "ब्लॉकचेन"], labels, lang="mr")
     assert "//" not in out.replace("https://", "")  # no doubled slash anywhere
     assert 'href="/mr/tags//"' not in out
-    assert out.count('<span class="article-tag">') == 2
+    assert "<span " not in out
     assert "<a " not in out
 
 
@@ -262,11 +262,11 @@ def test_render_tag_badges_uses_canonical_slug_for_non_ascii_chip(monkeypatch):
     assert "//" not in out.replace("https://", "")
 
 
-def test_render_tag_badges_canonical_slug_falls_back_to_span_without_landing(
+def test_render_tag_badges_canonical_slug_omitted_without_landing(
     monkeypatch,
 ):
-    """A supplied canonical slug still renders <span> when no landing
-    exists on disk (sub-threshold / non-canonical) — no 404 link."""
+    """A supplied canonical slug is omitted when no landing exists on
+    disk (sub-threshold / non-canonical) - no 404 link and no dead span."""
     from postbuild_lib import article_furniture as af
     from postbuild_lib.article_furniture import _render_tag_badges
 
@@ -274,8 +274,38 @@ def test_render_tag_badges_canonical_slug_falls_back_to_span_without_landing(
     out = _render_tag_badges(
         ["التشغيل البيني"], {"Topics": "الموضوعات"}, lang="ar", tag_slugs=["interoperability"]
     )
-    assert '<span class="article-tag">التشغيل البيني</span>' in out
+    assert out == ""
     assert "<a " not in out
+
+
+def test_inject_article_cta_maps_pillars_and_is_idempotent():
+    """inject_article_cta emits pillar-mapped CTA cards on EN BlogPostings."""
+    from postbuild_lib.article_furniture import inject_article_cta
+
+    html_payments = (
+        '<html lang="en-GB">'
+        '<script type="application/ld+json">{"@type":"BlogPosting","keywords":"ISO 20022"}</script>'
+        '<main><div class="wrap"><p>Body</p><aside class="author-card">Author</aside></div></main>'
+    )
+    out_pay = inject_article_cta(html_payments)
+    assert 'class="article-cta"' in out_pay
+    assert 'href="/iso20022-mcp/"' in out_pay
+    assert inject_article_cta(out_pay) == out_pay
+
+    html_policy = (
+        '<html lang="en-GB">'
+        '<script type="application/ld+json">{"@type":"BlogPosting","keywords":"AI governance"}</script>'
+        '<main><div class="wrap"><p>Body</p></div></main>'
+    )
+    out_pol = inject_article_cta(html_policy)
+    assert 'href="/speaking/"' in out_pol
+
+    html_fr = (
+        '<html lang="fr">'
+        '<script type="application/ld+json">{"@type":"BlogPosting","keywords":"ISO 20022"}</script>'
+        '<main><div class="wrap"><p>Body</p></div></main>'
+    )
+    assert inject_article_cta(html_fr) == html_fr
 
 
 def test_has_landing_rejects_empty_slug(tmp_path, monkeypatch):
@@ -2240,6 +2270,20 @@ def test_inject_eyebrow_escapes_html_in_section_label():
     # arrive entity-encoded from the JSON-LD.
     assert "<Rust>" not in out
     assert 'class="eyebrow"' in out
+
+
+def test_inject_eyebrow_skips_noisy_contraction_tokens():
+    from postbuild_lib.article_furniture import _extract_article_metadata, inject_eyebrow
+
+    head = _WS2_HEAD.replace(
+        '"keywords":"AI, payments, post-quantum cryptography"',
+        '"keywords":"ai\'s, fca\'s, existing, it\'s, regulation, compliance"',
+    )
+    page = _ws2_page(head=head)
+    kws, _, _, _ = _extract_article_metadata(page)
+    assert kws == ["regulation", "compliance"]
+    out = inject_eyebrow(page)
+    assert '<p class="eyebrow">REGULATION</p>' in out
 
 
 # inject_deck ---------------------------------------------------------------

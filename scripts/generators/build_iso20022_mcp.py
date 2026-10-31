@@ -62,30 +62,36 @@ _IMG_DIMS: dict[str, tuple[int, int]] = {
 }
 
 
-def _img(name: str, alt: str, cls: str, sizes: str, eager: bool = False) -> str:
+def _img(
+    name: str,
+    alt: str,
+    cls: str,
+    sizes: str,
+    eager: bool = False,
+    decorative: bool = False,
+) -> str:
     """A responsive CDN image (webp srcset). Styled by CLASS, never inline --
     the site's CSP forbids inline styles, which would be stripped on deploy.
     """
     prio = 'fetchpriority="high"' if eager else 'loading="lazy"'
     width, height = _IMG_DIMS[cls]
+    role = ' role="presentation"' if decorative else ""
+    alt_val = "" if decorative else _esc(alt)
     return (
         f'<img src="{CDN}/{name}-1920.webp" '
         f'srcset="{CDN}/{name}-640.webp 640w, {CDN}/{name}-1200.webp 1200w, '
         f'{CDN}/{name}-1920.webp 1920w" sizes="{sizes}" '
-        f'alt="{_esc(alt)}" class="{cls}" width="{width}" height="{height}" '
-        f'{prio} decoding="async">'
+        f'alt="{alt_val}"{role} class="{cls}" width="{width}" height="{height}" '
+        f"{prio} decoding='async'>"
     )
 
 
-def _imgband(name: str, alt: str, cls: str = "mcp-band-img") -> str:
-    """A full-bleed-within-wrap image band that breaks up the text sections.
-    ``cls`` picks the crop: the default 16/6 strip, or the 16/9
-    ``mcp-band-img-tall`` for photos whose subject a 16/6 crop beheads
-    (the wall-clock band; its face just fits a centred 16/9)."""
+def _imgband(name: str, alt: str = "", cls: str = "mcp-band-img") -> str:
+    """A full-bleed-within-wrap decorative image band with tokenized fallback."""
     return (
-        '<section><div class="spk-wrap">'
-        + _img(name, alt, cls, "(max-width:1120px) 100vw, 1120px")
-        + "</div></section>"
+        '<div class="mcp-imgband"><div class="spk-wrap">'
+        + _img(name, alt, cls, "(max-width:1120px) 100vw, 1120px", decorative=True)
+        + "</div></div>"
     )
 
 
@@ -790,12 +796,18 @@ C: dict = {
                 ),
             },
             {
-                "id": "json",
+                "id": "claude-code",
+                "label": "Claude Code",
+                "code": f"claude mcp add iso20022 -- {UVX_CMD}",
+                "note": "One command, from any directory.",
+            },
+            {
+                "id": "claude-desktop",
                 "label": "Claude Desktop",
                 "code": MCPSERVERS_JSON,
                 "note": (
-                    "Settings, Developer, Edit Config, then restart. The "
-                    "tools appear under the tools icon in the chat box."
+                    "Settings, Developer, Edit Config: claude_desktop_config.json, "
+                    "then restart. The tools appear under the tools icon in the chat box."
                 ),
             },
             {
@@ -808,6 +820,12 @@ C: dict = {
                 ),
             },
             {
+                "id": "windsurf",
+                "label": "Windsurf",
+                "code": MCPSERVERS_JSON,
+                "note": "~/.codeium/windsurf/mcp_config.json.",
+            },
+            {
                 "id": "vscode",
                 "label": "VS Code",
                 "code": VSCODE_JSON,
@@ -815,6 +833,18 @@ C: dict = {
                     ".vscode/mcp.json, for GitHub Copilot. The top-level "
                     'key is "servers", not "mcpServers".'
                 ),
+            },
+            {
+                "id": "gemini",
+                "label": "Gemini CLI",
+                "code": MCPSERVERS_JSON,
+                "note": '"mcpServers" inside ~/.gemini/settings.json.',
+            },
+            {
+                "id": "codex",
+                "label": "Codex CLI",
+                "code": CODEX_TOML,
+                "note": ("~/.codex/config.toml, or one command: codex mcp add iso20022 -- uvx ..."),
             },
             {
                 "id": "agents",
@@ -1088,7 +1118,7 @@ def _cards(section: dict, section_id: str, band: bool = False, bullets: bool = F
     )
 
 
-def _start() -> str:
+def _start(sandbox_d: dict) -> str:
     steps = [
         (
             "STEP 1",
@@ -1137,14 +1167,37 @@ def _start() -> str:
         '<a href="/iso20022-mcp-docs/index.html" class="spk-btn spk-btn-ghost">'
         "Read the quickstart</a>"
         '<a href="/iso20022-mcp-reference/index.html" class="spk-btn spk-btn-ghost">'
-        "Tool reference</a></div></div></section>"
+        "Tool reference</a></div>" + _sandbox(sandbox_d) + "</div></section>"
+    )
+
+
+def _advisory_card() -> str:
+    """Inline human advisory conversion card placed after the trust flow.
+    Headline adapts to the active reading lens via main.js without hiding the CTA."""
+    default_h = "Planning the November 2026 CBPR+ cutover? Book a 30-minute architecture review."
+    return (
+        '<aside class="mcp-advisory-card" aria-label="Architecture review">'
+        '<div class="mcp-advisory-copy">'
+        '<span class="spk-eyebrow">ARCHITECTURE &amp; COMPLIANCE ADVISORY</span>'
+        f'<h3 data-advisory-headline data-default="{_esc(default_h)}" '
+        'data-boards="Brief your board on agentic payments risk." '
+        'data-regulators="Map the suite to your DORA controls." '
+        'data-engineers="Get a migration architecture review.">'
+        f"{_esc(default_h)}</h3>"
+        "<p>Work directly with Sebastien Rousseau on ISO 20022 migration, "
+        "agentic payment guardrails and supervisory control mapping.</p></div>"
+        '<div class="spk-cta-row">'
+        '<a href="/contact/?topic=iso20022-mcp" class="spk-btn spk-btn-primary">'
+        'Book a 30-minute review <span class="spk-arw" aria-hidden="true">&#8594;</span></a>'
+        '<a href="/research/index.html" class="spk-btn spk-btn-ghost">'
+        "Read the EPAA white paper</a></div></aside>"
     )
 
 
 def _flow(d: dict) -> str:
     """The trust flow: generation and validation are local, dispatch sits
     behind a human approval wall. Rendered as an ordered list so assistive
-    tech announces the four stages in sequence."""
+    tech announces the four stages in sequence, followed by the inline advisory CTA."""
     steps = []
     for s in d["steps"]:
         gate = " mcp-step-gate" if s["gate"] else ""
@@ -1158,12 +1211,14 @@ def _flow(d: dict) -> str:
     return (
         '<section id="mcp-flow"><div class="spk-wrap">'
         + _head(d["eyebrow"], d["headline"], d["lede"])
-        + f'<ol class="mcp-flow">{"".join(steps)}</ol></div></section>'
+        + f'<ol class="mcp-flow">{"".join(steps)}</ol>'
+        + _advisory_card()
+        + "</div></section>"
     )
 
 
-def _security(d: dict) -> str:
-    """Four-up security strip: local-first, deterministic, open, tested."""
+def _security(d: dict, safety_d: dict) -> str:
+    """Merged security posture + safe-by-design section."""
     cells = []
     for i, it in enumerate(d["cards"]):
         cells.append(
@@ -1172,10 +1227,22 @@ def _security(d: dict) -> str:
             + f'<span class="spk-eyebrow">{_esc(it["eyebrow"])}</span>'
             f"<h3>{_esc(it['title'])}</h3><p>{_rich(it['body'])}</p></div>"
         )
+    safety_items = []
+    for i, it in enumerate(safety_d["cards"]):
+        safety_items.append(
+            '<div class="spk-path">'
+            + _icon("mcp-safety", i)
+            + f'<span class="spk-eyebrow">{_esc(it["eyebrow"])}</span>'
+            f"<h3>{_esc(it['title'])}</h3><p>{_rich(it['body'])}</p></div>"
+        )
     return (
         '<section class="spk-band" id="mcp-security"><div class="spk-wrap">'
         + _head(d["eyebrow"], d["headline"])
-        + f'<div class="mcp-sec">{"".join(cells)}</div></div></section>'
+        + f'<div class="mcp-sec">{"".join(cells)}</div>'
+        + '<div id="mcp-safety">'
+        + _head(safety_d["eyebrow"], safety_d["headline"])
+        + f'<div class="spk-paths">{"".join(safety_items)}</div></div>'
+        + "</div></section>"
     )
 
 
@@ -1214,31 +1281,91 @@ def _stat_cells(cells: list[tuple[str, str]]) -> str:
     )
 
 
-def _capability(d: dict) -> str:
-    """Capability contrast strip: servers/tools counted from the committed
-    captures, plus the two verified posture claims. Skipped if the gateway
-    snapshot is absent (same policy as the schema viewer)."""
+def _board_and_free(board_d: dict, free_d: dict) -> str:
+    """Merged board section + free-three-ways strip."""
+    items = [
+        '<div class="spk-path">'
+        f'<span class="spk-eyebrow">{_esc(it["eyebrow"])}</span>'
+        f"<h3>{_esc(it['title'])}</h3><p>{_rich(it['body'])}</p></div>"
+        for it in board_d["cards"]
+    ]
+    free_cells = "".join(
+        '<div class="mcp-sec-cell">'
+        f'<span class="spk-eyebrow">{_esc(it["eyebrow"])}</span>'
+        f"<h3>{_esc(it['title'])}</h3><p>{_rich(it['body'])}</p></div>"
+        for it in free_d["cards"]
+    )
+    return (
+        '<section id="mcp-board"><div class="spk-wrap">'
+        + _head(board_d["eyebrow"], board_d["headline"], board_d.get("lede", ""))
+        + f'<div class="spk-paths">{"".join(items)}</div>'
+        + '<div id="mcp-free">'
+        + _head(free_d["eyebrow"], free_d["headline"])
+        + f'<div class="mcp-sec mcp-3col">{free_cells}</div></div>'
+        + "</div></section>"
+    )
+
+
+def _what(d: dict) -> str:
+    """What is MCP? Wrapped in a lens-aware <details> so Boards and Regulators
+    lenses collapse it by default while Everyone and Engineers see it open."""
+    items = [
+        '<div class="spk-path">'
+        + _icon("mcp-what", i)
+        + f'<span class="spk-eyebrow">{_esc(it["eyebrow"])}</span>'
+        f"<h3>{_esc(it['title'])}</h3><p>{_rich(it['body'])}</p></div>"
+        for i, it in enumerate(d["cards"])
+    ]
+    return (
+        '<section id="mcp-what"><div class="spk-wrap">'
+        + _head(d["eyebrow"], d["headline"], d.get("lede", ""))
+        + '<details class="mcp-lens-details" open>'
+        '<summary class="mcp-lens-summary">Overview: how the Model Context Protocol works</summary>'
+        f'<div class="spk-paths">{"".join(items)}</div></details></div></section>'
+    )
+
+
+def _evidence(
+    cap_d: dict,
+    proof_d: dict,
+    adopt_d: dict,
+    metrics: dict | None,
+) -> str:
+    """Consolidated evidence section combining capability counts, timed proof,
+    and adoption metrics into a single <section> while preserving inner anchor IDs."""
+    parts: list[str] = []
     count = _tool_count()
-    if count is None:
+    if count is not None:
+        cells = _stat_cells(
+            [
+                ("9", "servers on PyPI"),
+                (str(count), "tools, captured live"),
+                ("0", "outbound network calls"),
+                ("100%", "branch coverage"),
+            ]
+        )
+        parts.append(
+            _head(cap_d["eyebrow"], cap_d["headline"], cap_d["lede"])
+            + f'<div class="spk-stats mcp-cap-stats">{cells}</div>'
+            f'<p class="spk-stats-foot">{_rich(cap_d["foot"])}</p>'
+        )
+    else:
         print(
             "build_iso20022_mcp: tool captures missing; skipping capability strip",
             file=sys.stderr,
         )
+    proof_html = _proof(proof_d, metrics)
+    if proof_html:
+        parts.append(proof_html)
+    adopt_html = _adoption(adopt_d, metrics)
+    if adopt_html:
+        parts.append(adopt_html)
+    if not parts:
         return ""
-    cells = _stat_cells(
-        [
-            ("9", "servers on PyPI"),
-            (str(count), "tools, captured live"),
-            ("0", "outbound network calls"),
-            ("100%", "branch coverage"),
-        ]
-    )
     return (
         '<section class="spk-band" id="mcp-capability"><div class="spk-wrap">'
-        + _head(d["eyebrow"], d["headline"], d["lede"])
-        + f'<div class="spk-stats mcp-cap-stats">{cells}</div>'
-        f'<p class="spk-stats-foot">{_rich(d["foot"])}</p>'
-        "</div></section>"
+        + "".join(parts)
+        + "</div></section>"
     )
 
 
@@ -1313,22 +1440,6 @@ def _regulators(d: dict) -> str:
     )
 
 
-def _free(d: dict) -> str:
-    """The free-three-ways strip: one cell per audience, reusing the
-    security-strip cell anatomy on a three-column grid."""
-    cells = "".join(
-        '<div class="mcp-sec-cell">'
-        f'<span class="spk-eyebrow">{_esc(it["eyebrow"])}</span>'
-        f"<h3>{_esc(it['title'])}</h3><p>{_rich(it['body'])}</p></div>"
-        for it in d["cards"]
-    )
-    return (
-        '<section class="spk-band" id="mcp-free"><div class="spk-wrap">'
-        + _head(d["eyebrow"], d["headline"])
-        + f'<div class="mcp-sec mcp-3col">{cells}</div></div></section>'
-    )
-
-
 def _proof(d: dict, metrics: dict | None) -> str:
     """The timed proof: real measured numbers from verified_metrics.json,
     published with machine, method and date. Skipped when unmeasured."""
@@ -1355,11 +1466,11 @@ def _proof(d: dict, metrics: dict | None) -> str:
     )
     foot = f"Method: {tp['method']} Machine: {tp['machine']}."
     return (
-        '<section id="mcp-proof"><div class="spk-wrap">'
+        '<div id="mcp-proof">'
         + _head(d["eyebrow"], d["headline"], lede)
         + f'<div class="spk-stats">{cells}</div>'
-        f'<p class="spk-stats-foot">{_rich(foot)}</p>'
-        "</div></section>"
+        + '<details class="mcp-method-details"><summary>Method &amp; environment</summary>'
+        f'<p class="spk-stats-foot">{_rich(foot)}</p></details></div>'
     )
 
 
@@ -1393,10 +1504,12 @@ def _prompts(d: dict, data: dict | None) -> str:
     return (
         '<section id="mcp-prompts"><div class="spk-wrap">'
         + _head(d["eyebrow"], d["headline"], d["lede"])
-        + f'<div class="mcp-prompts">{"".join(blocks)}</div>'
+        + '<details class="mcp-lens-details" open>'
+        '<summary class="mcp-lens-summary">View captured stdio JSON-RPC transcripts (3 receipts)</summary>'
+        f'<div class="mcp-prompts">{"".join(blocks)}</div>'
         '<p class="mcp-clients-foot">Excerpts are drawn from the committed '
         "capture file; elisions are marked with an ellipsis and nothing is "
-        "reworded.</p></div></section>"
+        "reworded.</p></details></div></section>"
     )
 
 
@@ -1417,7 +1530,7 @@ def _sandbox(d: dict) -> str:
         "unmatched residuals, before any real statement touches the tools."
     )
     return (
-        '<section id="mcp-sandbox"><div class="spk-wrap">'
+        '<div id="mcp-sandbox">'
         + _head(d["eyebrow"], d["headline"])
         + f'<p class="mcp-note">{body}</p>'
         '<div class="spk-cta-row mcp-start-cta">'
@@ -1426,7 +1539,7 @@ def _sandbox(d: dict) -> str:
         '<span class="spk-arw" aria-hidden="true">&#8594;</span></a>'
         '<a href="/iso20022-mcp-reference/index.html#reconcile" '
         'class="spk-btn spk-btn-ghost">reconcile-mcp tool reference</a>'
-        "</div></div></section>"
+        "</div></div>"
     )
 
 
@@ -1458,11 +1571,10 @@ def _adoption(d: dict, metrics: dict | None) -> str:
         f"totals."
     )
     return (
-        '<section class="spk-band" id="mcp-adoption"><div class="spk-wrap">'
+        '<div id="mcp-adoption">'
         + _head(d["eyebrow"], d["headline"])
         + f'<div class="spk-stats mcp-stats-3">{cells}</div>'
-        f'<p class="spk-stats-foot">{_rich(foot)}</p>'
-        "</div></section>"
+        f'<p class="spk-stats-foot">{_rich(foot)}</p></div>'
     )
 
 
@@ -1477,20 +1589,28 @@ def _code_block(code: str, block_id: str = "", copy: bool = False) -> str:
             f'data-copy="#{block_id}" '
             f'aria-label="Copy to clipboard">Copy</button>'
         )
-    return f'<pre class="mcp-code"{id_attr}><code>{_esc(code)}</code></pre>{btn}'
+    return (
+        f'<pre class="mcp-code"{id_attr} tabindex="0" role="region" '
+        f'aria-label="Code snippet"><code>{_esc(code)}</code></pre>{btn}'
+    )
 
 
-def _clients(d: dict) -> str:
-    """The multi-client grid. Local-stdio clients get their documented config
-    shape verbatim; remote-first platforms get one honest sentence."""
-    cards = [
-        '<div class="mcp-client">'
-        f"<h3>{_esc(it['name'])}</h3>"
-        f'<p class="mcp-client-where">{_esc(it["where"])}</p>'
-        + _code_block(it["code"], f"mcp-code-client-{it['slug']}", copy=True)
-        + "</div>"
-        for it in d["stdio"]
-    ]
+def _clients(d: dict, install_d: dict) -> str:
+    """Merged 10-tab client picker + remote-first platforms note (Fix 2.1)."""
+    tabs = install_d["tabs"]
+    radios, labels, panels = [], [], []
+    for i, t in enumerate(tabs):
+        tid = f"mcp-tab-{t['id']}"
+        checked = " checked" if i == 0 else ""
+        radios.append(
+            f'<input type="radio" name="mcp-install-tab" id="{tid}" class="mcp-tab-in"{checked}>'
+        )
+        labels.append(f'<label for="{tid}">{_esc(t["label"])}</label>')
+        panels.append(
+            f'<div class="mcp-tab-panel" id="mcp-panel-{t["id"]}">'
+            + _code_block(t["code"], f"mcp-code-{t['id']}", copy=True)
+            + f'<p class="mcp-tab-note">{_rich(t["note"])}</p></div>'
+        )
     remote = []
     for it in d["remote"]:
         code = (
@@ -1505,7 +1625,11 @@ def _clients(d: dict) -> str:
     return (
         '<section id="mcp-clients"><div class="spk-wrap">'
         + _head(d["eyebrow"], d["headline"], d["lede"])
-        + f'<div class="mcp-clients">{"".join(cards)}</div>'
+        + '<div class="mcp-tabs" id="mcp-install">'
+        + "".join(radios)
+        + f'<div class="mcp-tab-labels">{"".join(labels)}</div>'
+        + "".join(panels)
+        + "</div>"
         '<p class="mcp-clients-label">Remote-first platforms</p>'
         f'<div class="mcp-clients mcp-clients-3">{"".join(remote)}</div>'
         '<p class="mcp-clients-foot">Config shapes checked against each '
@@ -1513,35 +1637,6 @@ def _clients(d: dict) -> str:
         '<a href="/iso20022-mcp-docs/index.html#clients" class="spk-textlink">'
         "Full per-client setup</a></p>"
         "</div></section>"
-    )
-
-
-def _install_tabs(d: dict) -> str:
-    """CSS-only tabbed install block. Radio inputs drive which panel shows
-    (:checked ~ sibling selectors in the stylesheet); no JS, no inline style,
-    and the radios stay keyboard-focusable."""
-    tabs = d["tabs"]
-    radios, labels, panels = [], [], []
-    for i, t in enumerate(tabs):
-        tid = f"mcp-tab-{t['id']}"
-        checked = " checked" if i == 0 else ""
-        radios.append(
-            f'<input type="radio" name="mcp-install-tab" id="{tid}" class="mcp-tab-in"{checked}>'
-        )
-        labels.append(f'<label for="{tid}">{_esc(t["label"])}</label>')
-        panels.append(
-            f'<div class="mcp-tab-panel" id="mcp-panel-{t["id"]}">'
-            + _code_block(t["code"], f"mcp-code-{t['id']}", copy=True)
-            + f'<p class="mcp-tab-note">{_rich(t["note"])}</p></div>'
-        )
-    return (
-        '<section id="mcp-install"><div class="spk-wrap">'
-        + _head(d["eyebrow"], d["headline"], d["lede"])
-        + '<div class="mcp-tabs">'
-        + "".join(radios)
-        + f'<div class="mcp-tab-labels">{"".join(labels)}</div>'
-        + "".join(panels)
-        + "</div></div></section>"
     )
 
 
@@ -1595,8 +1690,10 @@ def _schemas(d: dict) -> str:
     return (
         '<section id="mcp-schemas"><div class="spk-wrap">'
         + _head(d["eyebrow"], d["headline"], d["lede"])
-        + f'<div class="qa-list mcp-schemas">{"".join(blocks)}</div>'
-        f'<p class="mcp-schema-note">{_esc(d["note"])}</p>'
+        + '<details class="mcp-lens-details" open>'
+        '<summary class="mcp-lens-summary">Inspect all seven gateway meta-tools (tools/list capture)</summary>'
+        f'<div class="qa-list mcp-schemas">{"".join(blocks)}</div>'
+        f'<p class="mcp-schema-note">{_esc(d["note"])}</p></details>'
         "</div></section>"
     )
 
@@ -1604,11 +1701,7 @@ def _schemas(d: dict) -> str:
 def _simulator() -> str:
     """Interactive simulator mount (progressive enhancement, mirroring the
     index-scorecard pattern): an inert <iso20022-simulator> carrying a static
-    fallback paragraph, upgraded client-side by /_csp/iso20022-simulator.js.
-    Everything the component shows is baked into its data module from real
-    MCP stdio transcripts at authoring time (see assets/js/mcp-simulator/);
-    it makes no network calls, and postbuild stamps SRI on the module
-    script."""
+    fallback paragraph, upgraded client-side by /_csp/iso20022-simulator.js."""
     fallback = (
         "This interactive demo lets you pick a payment sentence and see the "
         "exact MCP tool call an assistant makes, plus the validated ISO "
@@ -1633,8 +1726,8 @@ def _simulator() -> str:
     )
 
 
-def _matrix(d: dict) -> str:
-    """Responsive 9-server architecture & rail matrix table."""
+def _arc_and_matrix(arc_d: dict, matrix_d: dict) -> str:
+    """Merged suite overview cards + 9-server architecture matrix."""
     rows = "".join(
         "<tr>"
         f'<th scope="row"><code>{_esc(srv)}</code></th>'
@@ -1644,11 +1737,11 @@ def _matrix(d: dict) -> str:
         f"<td>{_esc(tools)}</td>"
         f"<td><code>{_esc(cmd)}</code></td>"
         "</tr>"
-        for srv, role, schemas, rails, tools, cmd in d["rows"]
+        for srv, role, schemas, rails, tools, cmd in matrix_d["rows"]
     )
-    return (
-        '<section id="mcp-matrix"><div class="spk-wrap">'
-        + _head(d["eyebrow"], d["headline"], d["lede"])
+    matrix_html = (
+        '<div id="mcp-matrix">'
+        + _head(matrix_d["eyebrow"], matrix_d["headline"], matrix_d["lede"])
         + '<div class="mcp-table-wrap" role="region" '
         'aria-label="Nine-server architecture and rail matrix" tabindex="0">'
         '<table class="mcp-table">'
@@ -1662,9 +1755,10 @@ def _matrix(d: dict) -> str:
         '<th scope="col">Clearing rails</th>'
         '<th scope="col">Tools</th>'
         '<th scope="col">Standalone CLI</th>'
-        f"</tr></thead><tbody>{rows}</tbody></table></div>"
-        "</div></section>"
+        f"</tr></thead><tbody>{rows}</tbody></table></div></div>"
     )
+    arc_sec = _cards(arc_d, "mcp-arc", bullets=True)
+    return arc_sec[:-16] + matrix_html + "</div></section>"
 
 
 def _faq(d: dict) -> str:
@@ -1684,63 +1778,70 @@ def _faq(d: dict) -> str:
     )
 
 
+def _hub_finale() -> str:
+    """Human conversion finale + newsletter signup band at the bottom of the hub (Fix 2.2)."""
+    return (
+        '<aside class="feat newsletter-band" aria-labelledby="hub-newsletter-heading">'
+        '<div class="wrap">'
+        '<p class="feat-eyebrow">Newsletter</p>'
+        '<h2 id="hub-newsletter-heading" class="feat-headline center">Banking On Quantum</h2>'
+        '<p class="feat-sub center">Research notes on ISO 20022, agentic payments and post-quantum banking. One email when a new paper or release ships.</p>'
+        '<form class="ap-newsletter" action="https://formspree.io/f/xkgwopbd" method="POST" aria-label="Newsletter signup">'
+        '<label class="visually-hidden" for="ap-newsletter-email">Work email</label>'
+        '<input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />'
+        '<input type="hidden" name="_subject" value="Newsletter signup - sebastienrousseau.com" />'
+        '<button type="submit" class="pill">Subscribe</button>'
+        "</form></div></aside>"
+        '<aside class="feat dark feat-finale" aria-labelledby="hub-finale-headline">'
+        '<div class="wrap">'
+        '<p class="feat-eyebrow">Get in touch</p>'
+        '<h2 id="hub-finale-headline" class="feat-headline center">Deploying agentic payments or preparing for the 2026-2027 ISO 20022 mandates?</h2>'
+        '<p class="feat-sub center">Architecture reviews, migration roadmaps and board briefings on ISO 20022 and post-quantum security. Reply within two working days.</p>'
+        '<div class="feat-cta">'
+        '<a class="pill" href="/contact/?topic=iso20022-mcp">Get in touch</a>'
+        '<a class="feat-secondary-link" href="https://news.bankingonquantum.com" target="_blank" rel="noopener noreferrer">Banking On Quantum &#8250;</a>'
+        "</div></div></aside>"
+    )
+
+
 def _render_body(d: dict) -> str:
     metrics = _load_data(METRICS_SRC, "verified-metrics sections")
     transcripts = _load_data(TRANSCRIPTS_SRC, "prompts section")
     sections = [
         _hero(d),
         _read_as(),
-        _aud(_cards(d["board"], "mcp-board", bullets=False), "mcp-board"),
+        _aud(_board_and_free(d["board"], d["free"]), "mcp-board"),
         _aud(_cards(d["benefits"], "mcp-benefits", bullets=False), "mcp-benefits"),
         _aud(_simulator(), "mcp-simulator"),
-        _aud(
-            _imgband(
-                "majed-swan-RBEv0VyNi2U",
-                "A grid of blue and white cubes with one cube glowing, evoking a validated message among structured blocks.",
-            ),
-            "mcp-band-1",
-        ),
-        _aud(_capability(d["capability"]), "mcp-capability"),
-        _aud(_cards(d["what"], "mcp-what", bullets=False), "mcp-what"),
-        _aud(_cards(d["arc"], "mcp-arc", bullets=True), "mcp-arc"),
-        _aud(_matrix(d["matrix"]), "mcp-matrix"),
+        _imgband("ocean-ng-L0xOtAnv94Y", cls="mcp-band-img-tall"),
+        _aud(_evidence(d["capability"], d["proof"], d["adoption"], metrics), "mcp-capability"),
+        _aud(_what(d["what"]), "mcp-what"),
+        _aud(_arc_and_matrix(d["arc"], d["matrix"]), "mcp-arc"),
         _aud(_flow(d["flow"]), "mcp-flow"),
-        _aud(_security(d["security"]), "mcp-security"),
+        _aud(_security(d["security"], d["safety"]), "mcp-security"),
         _aud(_regulators(d["regulators"]), "mcp-regulators"),
-        _aud(
-            _imgband(
-                "ocean-ng-L0xOtAnv94Y",
-                "A minimalist wall clock, evoking payment operations measured in seconds.",
-                cls="mcp-band-img-tall",
-            ),
-            "mcp-band-2",
-        ),
-        _aud(_proof(d["proof"], metrics), "mcp-proof"),
-        _aud(_free(d["free"]), "mcp-free"),
-        _aud(_clients(d["clients"]), "mcp-clients"),
-        _aud(_install_tabs(d["install"]), "mcp-install"),
-        _aud(_start(), "mcp-start"),
+        _aud(_clients(d["clients"], d["install"]), "mcp-clients"),
+        _aud(_start(d["sandbox"]), "mcp-start"),
         _aud(_prompts(d["prompts"], transcripts), "mcp-prompts"),
-        _aud(_sandbox(d["sandbox"]), "mcp-sandbox"),
-        _aud(_adoption(d["adoption"], metrics), "mcp-adoption"),
         _aud(_schemas(d["schemas"]), "mcp-schemas"),
-        _aud(_cards(d["safety"], "mcp-safety", bullets=False), "mcp-safety"),
         _aud(_faq(d["faq"]), "mcp-faq"),
+        _hub_finale(),
     ]
-    return '<div class="speaking-page iso20022-mcp-page">' + "".join(sections) + "</div>"
+    body = '<div class="speaking-page iso20022-mcp-page">' + "".join(sections) + "</div>"
+    section_count = body.count("<section")
+    if section_count > 15:
+        raise SystemExit(
+            f"build_iso20022_mcp: hub section count {section_count} exceeds maximum 15"
+        )
+    return body
 
 
 def _nav(shell: str) -> str:
-    """Rebuild the primary nav as the site-wide 5-item dropdown structure.
+    """Rebuild the primary nav as the site-wide 5-item dropdown structure (Fix 2.7).
     Idempotent, and robust to a stale shell that still carries a different
     nav (the regex consumes everything up to the </ul> that closes
     ap-menu, i.e. the one directly followed by </nav>, so nested ap-sub
     lists are handled).
-
-    Active-state policy (nav re-architecture, deliberate): no marker is
-    baked here. /iso20022-mcp/ is itself a nav sub-item under Suite, so
-    postbuild's inject_nav_active marks that sub-item with
-    aria-current="page" on the final page.
     """
     chev = (
         '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
@@ -1755,34 +1856,35 @@ def _nav(shell: str) -> str:
         )
 
     items = (
-        '<li class="has-sub"><a href="/about/index.html">About</a>'
-        + _toggle("about", "About")
-        + '<ul id="sub-about" class="ap-sub">'
-        '<li><a href="/trust/index.html">Trust &amp; Compliance</a></li>'
-        '<li><a href="/speaking/index.html">Public Speaking</a></li>'
-        '<li><a href="/contact/index.html">Contact</a></li>'
-        "</ul></li>"
+        '<li class="has-sub"><a href="/library/index.html">Insights</a>'
+        + _toggle("insights", "Insights")
+        + '<ul id="sub-insights" class="ap-sub">'
         '<li><a href="/articles/index.html">Articles</a></li>'
-        '<li class="has-sub"><a href="/library/index.html">Library</a>'
-        + _toggle("library", "Library")
-        + '<ul id="sub-library" class="ap-sub">'
-        '<li><a href="/topics/index.html">Browse by Topic</a></li>'
-        '<li><a href="/projects/index.html">Open Source Projects</a></li>'
-        '<li><a href="/playlists/index.html">Playlists</a></li>'
-        "</ul></li>"
-        '<li class="has-sub"><a href="/research/index.html">Research</a>'
-        + _toggle("research", "Research")
-        + '<ul id="sub-research" class="ap-sub">'
         '<li><a href="/research/index.html">Whitepapers &amp; Reports</a></li>'
         '<li><a href="/case-studies/index.html">Real-World Case Studies</a></li>'
+        '<li><a href="/topics/index.html">Browse by Topic</a></li>'
         "</ul></li>"
-        '<li class="has-sub"><a href="/suite/index.html">Suite</a>'
-        + _toggle("suite", "Suite")
+        '<li class="has-sub"><a href="/suite/index.html">Open source</a>'
+        + _toggle("suite", "Open source")
         + '<ul id="sub-suite" class="ap-sub">'
         '<li><a href="/iso20022-mcp/index.html">ISO 20022 MCP Suite</a></li>'
         '<li><a href="/iso20022-mcp-docs/index.html">Documentation</a></li>'
         '<li><a href="/iso20022-mcp-reference/index.html">API Reference</a></li>'
         '<li><a href="/iso20022-mcp-recipes/index.html">Integration Recipes</a></li>'
+        '<li><a href="/projects/index.html">Open Source Projects</a></li>'
+        "</ul></li>"
+        '<li class="has-sub"><a href="/speaking/index.html">Speaking</a>'
+        + _toggle("speaking", "Speaking")
+        + '<ul id="sub-speaking" class="ap-sub">'
+        '<li><a href="/speaking/index.html#spk-topics">Public Speaking</a></li>'
+        '<li><a href="/playlists/index.html">Playlists</a></li>'
+        "</ul></li>"
+        '<li class="has-sub"><a href="/about/index.html">About</a>'
+        + _toggle("about", "About")
+        + '<ul id="sub-about" class="ap-sub">'
+        '<li><a href="/about/index.html#main">Full profile</a></li>'
+        '<li><a href="/trust/index.html">Trust &amp; Compliance</a></li>'
+        '<li><a href="/contact/index.html">Contact</a></li>'
         "</ul></li>"
     )
     out, n = re.subn(
@@ -2081,12 +2183,23 @@ def _fix_metas(html: str) -> str:
     return _dedupe_exact_tags(html, r'<meta name="theme-color"[^>]*>')
 
 
+def _strip_footer_newsletter(shell: str) -> str:
+    """Remove the footer newsletter form when the hub renders .newsletter-band in <main>."""
+    return re.sub(
+        r'\s*<form class="ap-newsletter"[\s\S]*?</form>',
+        "",
+        shell,
+    )
+
+
 def main() -> int:
     if not SHELL_SRC.is_file():
         print(f"build_iso20022_mcp: shell missing at {SHELL_SRC}", file=sys.stderr)
         return 1
     # Unescape first so every meta is a real tag (no-op on CI).
-    shell = _unescape_head_metas(_nav(SHELL_SRC.read_text(encoding="utf-8")))
+    shell = _strip_footer_newsletter(
+        _unescape_head_metas(_nav(SHELL_SRC.read_text(encoding="utf-8")))
+    )
     body = _render_body(C)
     out = _swap_into_shell(shell, body, C["meta_title"], C["meta_description"], URL)
     out = _fix_metas(out)

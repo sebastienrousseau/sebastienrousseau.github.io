@@ -48,6 +48,13 @@ _ESCAPED_META_RE = re.compile(r"&lt;(?:meta|link)\b.*?(?:&gt;|>)", re.DOTALL)
 _BODY_MARKER = "&lt;div lang="
 
 _PRE_CODE_RE = re.compile(r"<(pre|code)\b[\s\S]*?</\1>", re.IGNORECASE)
+_ESCAPED_PRE_CODE_RE = re.compile(
+    r"<pre>&lt;code\b([^&<>]*(?:&quot;[^&<>]*)*)&gt;([\s\S]*?)&lt;/code&gt;&lt;/pre&gt;"
+)
+_ESCAPED_HTML5_TAG_RE = re.compile(
+    r"&lt;(/?(?:time|details|summary)\b[^&<>]*(?:&quot;[^&<>]*)*)&gt;"
+)
+_ESCAPED_INLINE_CODE_RE = re.compile(r"&lt;code&gt;([^<]*?)&lt;/code&gt;")
 
 _META_TAG_RE = re.compile(r"<meta\b[^>]*>")
 _META_NAME_RE = re.compile(r'name=["\']?([A-Za-z0-9_.:-]+)')
@@ -92,6 +99,35 @@ def _repair_head(head: str) -> str:
     return _META_TAG_RE.sub(_dedupe, head)
 
 
+def _unescape_inline_html5(body: str) -> str:
+    """Repair escaped <pre><code>, <time>, <details>, <summary>, and <code> tags."""
+    body = _ESCAPED_PRE_CODE_RE.sub(
+        lambda m: f"<pre><code{_html.unescape(m.group(1))}>{m.group(2)}</code></pre>",
+        body,
+    )
+    if (
+        "&lt;time" not in body
+        and "&lt;details" not in body
+        and "&lt;summary" not in body
+        and "&lt;code&gt;" not in body
+    ):
+        return body
+    out: list[str] = []
+    pos = 0
+    for m in _PRE_CODE_RE.finditer(body):
+        chunk = body[pos : m.start()]
+        chunk = _ESCAPED_HTML5_TAG_RE.sub(lambda tm: f"<{_html.unescape(tm.group(1))}>", chunk)
+        chunk = _ESCAPED_INLINE_CODE_RE.sub(r"<code>\1</code>", chunk)
+        out.append(chunk)
+        out.append(m.group(0))
+        pos = m.end()
+    tail = body[pos:]
+    tail = _ESCAPED_HTML5_TAG_RE.sub(lambda tm: f"<{_html.unescape(tm.group(1))}>", tail)
+    tail = _ESCAPED_INLINE_CODE_RE.sub(r"<code>\1</code>", tail)
+    out.append(tail)
+    return "".join(out)
+
+
 def _repair_body(body: str) -> str:
     """Unescape each contiguous escaped enrich fragment wholesale.
 
@@ -109,7 +145,7 @@ def _repair_body(body: str) -> str:
     quoting markup, <pre>/<code> samples) is untouched by construction.
     """
     if _BODY_MARKER not in body:
-        return body
+        return _unescape_inline_html5(body)
     # Never touch <pre>/<code> zones: escaped markup there is content.
     zones = [(m.start(), m.end()) for m in _PRE_CODE_RE.finditer(body)]
 
@@ -133,7 +169,7 @@ def _repair_body(body: str) -> str:
         out.append(body[pos:start])
         out.append(_html.unescape(body[start:end]))
         pos = end
-    return "".join(out)
+    return _unescape_inline_html5("".join(out))
 
 
 def repair(html_text: str) -> str:

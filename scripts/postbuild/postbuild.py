@@ -182,6 +182,7 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     _labels_for_lang,
     _slug_maps,
     _slug_maps_for,
+    inject_article_cta,
     inject_article_furniture,
     inject_deck,
     inject_eyebrow,
@@ -579,6 +580,7 @@ def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str
     # BEFORE </div></main>, so the LAST pass ends up closest to it.
     # We want: syndicate (top) → cite → reuse → byline (bottom).
     out = _bump(inject_oembed_link, out, ctr, "oembed_links_set")
+    out = inject_article_cta(out)
     out = _bump(inject_syndication_panel, out, ctr, "syndicate_panels_set")
     out = _bump(inject_cite_popover, out, ctr, "cite_panels_set")
     out = _bump(inject_reuse_panel, out, ctr, "reuse_panels_set")

@@ -73,7 +73,7 @@
       "aria-label=\"Αρχική του Sebastien Rousseau\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/el/about/index.html\">Σχετικά</a></li>"
     ],
     [
@@ -293,11 +293,11 @@
       "<li><a href=\"/el/research/index.html\">Έρευνα</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/el/speaking/index.html\">Ομιλίες</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/el/speaking/index.html\">Ομιλίες</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/el/suite/index.html\">Σουίτα</a>"
     ],
     [
@@ -325,15 +325,15 @@
       "aria-label=\"Εναλλαγή υπομενού Σχετικά\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"Εναλλαγή υπομενού Βιβλιοθήκη\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"Εναλλαγή υπομενού Έρευνα\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"Εναλλαγή υπομενού Σουίτα\""
     ],
     [
@@ -345,7 +345,7 @@
       "<li><a href=\"/el/speaking/index.html\">Δημόσιες ομιλίες</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/el/library/index.html\">Βιβλιοθήκη</a>"
     ],
     [

@@ -213,29 +213,10 @@ class Iso20022Simulator extends HTMLElement {
     const first = defaultScenario(this._data);
     if (!first) return;
     this._current = first.id;
-
-    if ("IntersectionObserver" in window) {
-      this._io = new IntersectionObserver(
-        (entries) => {
-          if (entries.some((e) => e.isIntersecting)) {
-            this._io.disconnect();
-            this._io = null;
-            this._build();
-          }
-        },
-        { rootMargin: "300px 0px" },
-      );
-      this._io.observe(this);
-    } else {
-      this._build();
-    }
+    this._build();
   }
 
   disconnectedCallback() {
-    if (this._io) {
-      this._io.disconnect();
-      this._io = null;
-    }
     if (this._themeMo) {
       this._themeMo.disconnect();
       this._themeMo = null;

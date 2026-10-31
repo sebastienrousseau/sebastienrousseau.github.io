@@ -74,7 +74,7 @@
       "aria-label=\"Inicio de Sebastien Rousseau\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/es/sobre-mi/index.html\">Sobre mí</a></li>"
     ],
     [
@@ -294,11 +294,11 @@
       "<li><a href=\"/es/investigacion/index.html\">Investigación</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/es/speaking/index.html\">Conferencias</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/es/speaking/index.html\">Conferencias</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/es/suite/index.html\">Suite</a>"
     ],
     [
@@ -326,15 +326,15 @@
       "aria-label=\"Alternar el submenú Sobre mí\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"Alternar el submenú Biblioteca\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"Alternar el submenú Investigación\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"Alternar el submenú Suite\""
     ],
     [
@@ -346,7 +346,7 @@
       "<li><a href=\"/es/speaking/index.html\">Conferencias públicas</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/es/biblioteca/index.html\">Biblioteca</a>"
     ],
     [
