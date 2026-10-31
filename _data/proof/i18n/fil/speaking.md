@@ -11,10 +11,10 @@ hero:
   press_nudge: Mamamahayag na hinahabol ng deadline?
   press_nudge_cta: Humingi ng komentaryong eksperto
   microproof:
-  - Naipatakbo ang mga plataporma ng pagbabayad sa HSBC, PayPal, at Barclays
+  - Halos dalawang dekada sa HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA at Virgin Group
   - Katuwang na may-akda ng papel ng EPAA hinggil sa post-quantum
   - Kontribyutor, Emerging Payments Association Asia
-employers_label: Naipatakbo ang mga plataporma ng pagbabayad sa
+employers_label: Mga kumpanyang pinagtrabahuhan ko
 stats_eyebrow: Sa bilang
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: Kopyahin
   items:
   - length: Maikli
-    text: Si Sebastien Rousseau ay nakatatandang teknologo sa pagbabangko na sumusulat at nagtatayo sa krosing ng mga pagbabayad sa ISO 20022, post-quantum cryptography, at inilapat na AI. Naipatakbo niya ang mga plataporma ng pagbabayad sa HSBC, PayPal, at Barclays, at inaalagaan ang mga bukás na sanggunian na ginagamit sa tunay na operasyon.
+    text: Si Sebastien Rousseau ay nakatatandang teknologo sa pagbabangko na sumusulat at nagtatayo sa krosing ng mga pagbabayad sa ISO 20022, post-quantum cryptography, at inilapat na AI. Halos dalawang dekada sa HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA at Virgin Group.
   - length: Katamtaman
     text: Si Sebastien Rousseau ay nakatatandang teknologo sa pagbabangko na halos dalawang dekada nasa HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, at Virgin Group. Sumusulat at nagtatayo siya sa krosing ng mga pagbabayad sa ISO 20022, post-quantum cryptography, at inilapat na AI, at inaalagaan ang mga bukás na sanggunian — pacs.008, pain.001, KyberLib, BankStatementParser — na ginagamit ng mga pangkat sa treasury at pagbabayad sa tunay na operasyon. Nag-aambag siya sa Pangkat ng Gawain sa Kriptograpiyang Ligtas sa Quantum ng Emerging Payments Association Asia at naglalathala ng Banking On Quantum at Banking On AI.
   - length: Mahaba
-    text: 'Si Sebastien Rousseau ay nakatatandang teknologo sa pagbabangko na nakatuon sa istrukturang pagbabago ng malalaking pagbabayad. Sa HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, at Virgin Group, naipatakbo niya ang mga plataporma ng pagbabayad, produktong AI, at imprastrukturang open source na ginagamit ng mga pangkat sa treasury at pagbabayad sa tunay na operasyon. Sumusulat at nag-aalaga siya ng pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN, at dotfiles, bawat isa ay inilagay bilang sanggunian at hindi demo: imprastrukturang pampinansyal na masusuri, sapat ang antas para sa lupon. Nag-aambag siya sa Pangkat ng Gawain sa Kriptograpiyang Ligtas sa Quantum ng Emerging Payments Association Asia, katuwang na may-akda ng papel ng EPAA na «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (Setyembre 2025), at naglalathala ng Banking On Quantum at Banking On AI. Gumagawa siya sa krosing ng agentic AI, pagbabayad sa totoong oras, post-quantum cryptography, katatagang nakabatay sa ulap, istrukturadong datos, at ebidensiya para sa regulator.'
+    text: 'Si Sebastien Rousseau ay nakatatandang teknologo sa pagbabangko na nakatuon sa istrukturang pagbabago ng malalaking pagbabayad. Halos dalawang dekada sa HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA at Virgin Group. Sumusulat at nag-aalaga siya ng pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN, at dotfiles, bawat isa ay inilagay bilang sanggunian at hindi demo: imprastrukturang pampinansyal na masusuri, sapat ang antas para sa lupon. Nag-aambag siya sa Pangkat ng Gawain sa Kriptograpiyang Ligtas sa Quantum ng Emerging Payments Association Asia, katuwang na may-akda ng papel ng EPAA na «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (Setyembre 2025), at naglalathala ng Banking On Quantum at Banking On AI. Gumagawa siya sa krosing ng agentic AI, pagbabayad sa totoong oras, post-quantum cryptography, katatagang nakabatay sa ulap, istrukturadong datos, at ebidensiya para sa regulator.'
 faq:
   eyebrow: Bago kayo magtanong
   headline: Ang pag-aanyaya, sa tuwirang salita.
@@ -185,13 +185,7 @@ final_cta:
   secondary_cta: Humingi ng komentaryong eksperto
 ---
 
-Si Sebastien Rousseau ay nakatatandang teknologo sa pagbabangko na nakatuon sa istrukturang
-pagbabago ng malalaking pagbabayad. Sa HSBC Commercial & Investment Bank, PayPal, Barclays,
-Shazam, AKQA, at Virgin Group, naipatakbo niya ang mga plataporma ng pagbabayad, produktong
-AI, at imprastrukturang open source na ginagamit ng mga pangkat sa treasury at pagbabayad sa
-tunay na operasyon. Sumusulat at nag-aalaga siya ng pacs.008, pain.001, BankStatementParser,
-KyberLib, CloudCDN, at dotfiles, bawat isa ay inilagay bilang sanggunian at hindi demo:
-imprastrukturang pampinansyal na masusuri, sapat ang antas para sa lupon.
+Si Sebastien Rousseau ay nakatatandang teknologo sa pagbabangko na nakatuon sa istrukturang pagbabago ng malalaking pagbabayad. Halos dalawang dekada sa HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA at Virgin Group. Sumusulat at nag-aalaga siya ng pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN, at dotfiles, bawat isa ay inilagay bilang sanggunian at hindi demo: imprastrukturang pampinansyal na masusuri, sapat ang antas para sa lupon.
 
 Nag-aambag siya sa Pangkat ng Gawain sa Kriptograpiyang Ligtas sa Quantum ng Emerging
 Payments Association Asia, katuwang na may-akda ng papel ng EPAA na «Quantum-Safe Payments:

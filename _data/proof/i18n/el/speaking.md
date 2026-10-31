@@ -11,10 +11,10 @@ hero:
   press_nudge: Δημοσιογράφος σε προθεσμία;
   press_nudge_cta: Ζητήστε σχολιασμό
   microproof:
-  - Πλατφόρμες πληρωμών σε παραγωγή σε HSBC, PayPal και Barclays
+  - Σχεδόν δύο δεκαετίες σε HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group
   - Συν-συγγραφέας της μετακβαντικής λευκής βίβλου της EPAA
   - Συνεργάτης, Emerging Payments Association Asia
-employers_label: Πλατφόρμες πληρωμών σε παραγωγή σε
+employers_label: Πού έχω εργαστεί
 stats_eyebrow: Σε αριθμούς
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: Αντιγραφή
   items:
   - length: Σύντομο
-    text: Ο Sebastien Rousseau είναι ανώτερος τεχνολόγος τραπεζικής που γράφει και κατασκευάζει στη διασταύρωση των πληρωμών ISO 20022, της μετακβαντικής κρυπτογραφίας και της εφαρμοσμένης τεχνητής νοημοσύνης. Έχει παραδώσει πλατφόρμες πληρωμών σε HSBC, PayPal και Barclays και συντηρεί ανοικτές υλοποιήσεις αναφοράς που χρησιμοποιούνται σε παραγωγή.
+    text: Ο Sebastien Rousseau είναι ανώτερος τεχνολόγος τραπεζικής που γράφει και κατασκευάζει στη διασταύρωση των πληρωμών ISO 20022, της μετακβαντικής κρυπτογραφίας και της εφαρμοσμένης τεχνητής νοημοσύνης. Σχεδόν δύο δεκαετίες σε HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group.
   - length: Μεσαίο
     text: Ο Sebastien Rousseau είναι ανώτερος τεχνολόγος τραπεζικής με σχεδόν δύο δεκαετίες σε HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA και Virgin Group. Γράφει και κατασκευάζει στη διασταύρωση των πληρωμών ISO 20022, της μετακβαντικής κρυπτογραφίας και της εφαρμοσμένης τεχνητής νοημοσύνης, και συντηρεί ανοικτές υλοποιήσεις αναφοράς — pacs.008, pain.001, KyberLib, BankStatementParser — που χρησιμοποιούνται σε παραγωγή από ομάδες διαθεσίμων και πληρωμών. Συνεισφέρει στην ομάδα εργασίας για την κβαντικά ασφαλή κρυπτογραφία της Emerging Payments Association Asia και εκδίδει τα Banking On Quantum και Banking On AI.
   - length: Εκτενές
-    text: 'Ο Sebastien Rousseau είναι ανώτερος τεχνολόγος τραπεζικής με επίκεντρο τον διαρθρωτικό μετασχηματισμό των πληρωμών χονδρικής. Σε HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA και Virgin Group έχει παραδώσει πλατφόρμες πληρωμών, προϊόντα τεχνητής νοημοσύνης και ανοικτή υποδομή που χρησιμοποιούνται σε παραγωγή από ομάδες διαθεσίμων και πληρωμών. Γράφει και συντηρεί τα pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN και dotfiles, καθένα σχεδιασμένο ως υλοποίηση αναφοράς και όχι ως επίδειξη: χρηματοοικονομική υποδομή που ελέγχεται, σε επίπεδο συμβουλίου. Συνεισφέρει στην ομάδα εργασίας για την κβαντικά ασφαλή κρυπτογραφία της Emerging Payments Association Asia, είναι συν-συγγραφέας της λευκής βίβλου της EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (Σεπτέμβριος 2025) και εκδίδει τα Banking On Quantum και Banking On AI. Εργάζεται στη διασταύρωση της πρακτορικής ΤΝ, των πληρωμών σε πραγματικό χρόνο, της μετακβαντικής κρυπτογραφίας, της ανθεκτικότητας στο νέφος, των δομημένων δεδομένων και της εποπτικής τεκμηρίωσης.'
+    text: 'Ο Sebastien Rousseau είναι ανώτερος τεχνολόγος τραπεζικής με επίκεντρο τον διαρθρωτικό μετασχηματισμό των πληρωμών χονδρικής. Σχεδόν δύο δεκαετίες σε HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Γράφει και συντηρεί τα pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN και dotfiles, καθένα σχεδιασμένο ως υλοποίηση αναφοράς και όχι ως επίδειξη: χρηματοοικονομική υποδομή που ελέγχεται, σε επίπεδο συμβουλίου. Συνεισφέρει στην ομάδα εργασίας για την κβαντικά ασφαλή κρυπτογραφία της Emerging Payments Association Asia, είναι συν-συγγραφέας της λευκής βίβλου της EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (Σεπτέμβριος 2025) και εκδίδει τα Banking On Quantum και Banking On AI. Εργάζεται στη διασταύρωση της πρακτορικής ΤΝ, των πληρωμών σε πραγματικό χρόνο, της μετακβαντικής κρυπτογραφίας, της ανθεκτικότητας στο νέφος, των δομημένων δεδομένων και της εποπτικής τεκμηρίωσης.'
 faq:
   eyebrow: Πριν ρωτήσετε
   headline: Η κράτηση, με απλά λόγια.
@@ -185,13 +185,7 @@ final_cta:
   secondary_cta: Ζητήστε σχολιασμό
 ---
 
-Ο Sebastien Rousseau είναι ανώτερος τεχνολόγος τραπεζικής με επίκεντρο τον διαρθρωτικό
-μετασχηματισμό των πληρωμών χονδρικής. Σε HSBC Commercial & Investment Bank, PayPal,
-Barclays, Shazam, AKQA και Virgin Group έχει παραδώσει πλατφόρμες πληρωμών, προϊόντα
-τεχνητής νοημοσύνης και ανοικτή υποδομή που χρησιμοποιούνται σε παραγωγή από ομάδες
-διαθεσίμων και πληρωμών. Γράφει και συντηρεί τα pacs.008, pain.001, BankStatementParser,
-KyberLib, CloudCDN και dotfiles, καθένα σχεδιασμένο ως υλοποίηση αναφοράς και όχι ως
-επίδειξη: χρηματοοικονομική υποδομή που ελέγχεται, σε επίπεδο συμβουλίου.
+Ο Sebastien Rousseau είναι ανώτερος τεχνολόγος τραπεζικής με επίκεντρο τον διαρθρωτικό μετασχηματισμό των πληρωμών χονδρικής. Σχεδόν δύο δεκαετίες σε HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Γράφει και συντηρεί τα pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN και dotfiles, καθένα σχεδιασμένο ως υλοποίηση αναφοράς και όχι ως επίδειξη: χρηματοοικονομική υποδομή που ελέγχεται, σε επίπεδο συμβουλίου.
 
 Συνεισφέρει στην ομάδα εργασίας για την κβαντικά ασφαλή κρυπτογραφία της Emerging Payments
 Association Asia, είναι συν-συγγραφέας της λευκής βίβλου της EPAA «Quantum-Safe Payments:

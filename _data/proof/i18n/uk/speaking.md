@@ -11,10 +11,10 @@ hero:
   press_nudge: Журналіст перед здачею номера?
   press_nudge_cta: Запросити коментар
   microproof:
-  - Платіжні платформи впроваджено в HSBC, PayPal і Barclays
+  - Майже два десятиліття досвіду в HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group
   - Співавтор постквантової доповіді EPAA
   - Учасник, Emerging Payments Association Asia
-employers_label: Платіжні платформи впроваджено в
+employers_label: Де я працював
 stats_eyebrow: У цифрах
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: Копіювати
   items:
   - length: Коротка
-    text: Себастьєн Руссо — старший банківський технолог, який пише і створює на перетині платежів ISO 20022, постквантової криптографії та прикладного штучного інтелекту. Він упроваджував платіжні платформи в HSBC, PayPal і Barclays та підтримує відкриті еталонні реалізації, що працюють у промисловій експлуатації.
+    text: Себастьєн Руссо — старший банківський технолог, який пише і створює на перетині платежів ISO 20022, постквантової криптографії та прикладного штучного інтелекту. Майже два десятиліття досвіду в HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group.
   - length: Середня
     text: Себастьєн Руссо — старший банківський технолог із майже двома десятиліттями в HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA і Virgin Group. Він пише і створює на перетині платежів ISO 20022, постквантової криптографії та прикладного штучного інтелекту й підтримує відкриті еталонні реалізації — pacs.008, pain.001, KyberLib, BankStatementParser, — якими в промисловій експлуатації користуються казначейські та платіжні команди. Бере участь у робочій групі Emerging Payments Association Asia з постквантової криптографії та видає Banking On Quantum і Banking On AI.
   - length: Довга
-    text: 'Себастьєн Руссо — старший банківський технолог, зосереджений на структурній перебудові оптових платежів. У HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA і Virgin Group він упроваджував платіжні платформи, продукти штучного інтелекту та відкриту інфраструктуру, якими в промисловій експлуатації користуються казначейські та платіжні команди. Він пише і підтримує pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN і dotfiles — кожен задуманий як еталонна реалізація, а не демонстрація: перевірювана фінансова інфраструктура рівня наглядової ради. Бере участь у робочій групі Emerging Payments Association Asia з постквантової криптографії, є співавтором доповіді EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (вересень 2025) і видає Banking On Quantum та Banking On AI. Працює на перетині агентного ШІ, платежів у реальному часі, постквантової криптографії, хмарної стійкості, структурованих даних і доказової бази для регуляторів.'
+    text: 'Себастьєн Руссо — старший банківський технолог, зосереджений на структурній перебудові оптових платежів. Майже два десятиліття досвіду в HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Він пише і підтримує pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN і dotfiles — кожен задуманий як еталонна реалізація, а не демонстрація: перевірювана фінансова інфраструктура рівня наглядової ради. Бере участь у робочій групі Emerging Payments Association Asia з постквантової криптографії, є співавтором доповіді EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (вересень 2025) і видає Banking On Quantum та Banking On AI. Працює на перетині агентного ШІ, платежів у реальному часі, постквантової криптографії, хмарної стійкості, структурованих даних і доказової бази для регуляторів.'
 faq:
   eyebrow: Перш ніж запитати
   headline: Запрошення — простими словами.
@@ -185,13 +185,7 @@ final_cta:
   secondary_cta: Запросити коментар
 ---
 
-Себастьєн Руссо — старший банківський технолог, зосереджений на структурній перебудові
-оптових платежів. У HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA і
-Virgin Group він упроваджував платіжні платформи, продукти штучного інтелекту та відкриту
-інфраструктуру, якими в промисловій експлуатації користуються казначейські та платіжні
-команди. Він пише і підтримує pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN і
-dotfiles — кожен задуманий як еталонна реалізація, а не демонстрація: перевірювана
-фінансова інфраструктура рівня наглядової ради.
+Себастьєн Руссо — старший банківський технолог, зосереджений на структурній перебудові оптових платежів. Майже два десятиліття досвіду в HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Він пише і підтримує pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN і dotfiles — кожен задуманий як еталонна реалізація, а не демонстрація: перевірювана фінансова інфраструктура рівня наглядової ради.
 
 Бере участь у робочій групі Emerging Payments Association Asia з постквантової
 криптографії, є співавтором доповіді EPAA «Quantum-Safe Payments: Why the Payments Industry

@@ -395,9 +395,7 @@ def _render_listing_body(
     title: str,
     all_years: list[str],
 ) -> str:
-    cards = "".join(
-        _render_card(*p, featured=(page == 1 and i == 0)) for i, p in enumerate(page_posts)
-    )
+    cards = "".join(_render_card(*p) for p in page_posts)
     pagination = _render_pagination(page, total_pages, base_path)
     pillar_options = [(p, PILLAR_LABELS[p]) for p in PILLAR_ORDER]
     filter_form = _render_filter_form(pillar_options, all_years, nav_base=base_path)
@@ -622,7 +620,7 @@ def _write_locale_page(
             lang,
             page_posts,
             locale_index,
-            feature_first=(page == 1),
+            feature_first=False,
         )
     out = _translate_listing_body(lang, out)
     out = _translate_chrome_for(lang, out)

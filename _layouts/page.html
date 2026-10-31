@@ -483,14 +483,14 @@
       /* Featured card — newest article on page 1 of /articles/ spans the
          full grid row and switches to landscape (image left, body right) so
          it reads as the lead story (the FT "featured" pattern). */
-      article.tag-landing-card--featured{grid-column:1 / -1}
+      article.tag-landing-card--featured,section.tag-landing-list>article.tag-landing-card:last-child:nth-child(odd){grid-column:1 / -1}
       @media (min-width:48em){
         article.tag-landing-card--ft{grid-template-columns:1fr 1fr}
         article.tag-landing-card--ft .card-media{aspect-ratio:auto;min-height:100%}
-        article.tag-landing-card--featured{grid-template-columns:3fr 2fr}
-        article.tag-landing-card--featured .card-body{padding:32px 36px}
-        article.tag-landing-card--featured .card-body h2{font-size:1.75rem;line-height:1.2}
-        article.tag-landing-card--featured .card-body .card-excerpt{font-size:1rem}
+        article.tag-landing-card.tag-landing-card--featured,section.tag-landing-list>article.tag-landing-card.tag-landing-card--ft:last-child:nth-child(odd){grid-template-columns:3fr 2fr}
+        article.tag-landing-card--featured .card-body,section.tag-landing-list>article.tag-landing-card:last-child:nth-child(odd) .card-body{padding:32px 36px}
+        article.tag-landing-card--featured .card-body h2,section.tag-landing-list>article.tag-landing-card:last-child:nth-child(odd) .card-body h2{font-size:1.75rem;line-height:1.2}
+        article.tag-landing-card--featured .card-body .card-excerpt,section.tag-landing-list>article.tag-landing-card:last-child:nth-child(odd) .card-body .card-excerpt{font-size:1rem}
       }
       nav.related-tags{padding:18px;border:1px solid var(--rule);background:var(--paper);margin:32px 0}
       nav.related-tags h2{font-family:var(--type-body);font-size:.875rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-deep);margin:0 0 8px}

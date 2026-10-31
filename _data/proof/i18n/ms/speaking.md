@@ -11,10 +11,10 @@ hero:
   press_nudge: Wartawan yang dikejar tarikh akhir?
   press_nudge_cta: Minta ulasan pakar
   microproof:
-  - Menerbangkan platform pembayaran di HSBC, PayPal dan Barclays
+  - Hampir dua dekad merentas HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group
   - Penulis bersama kertas putih pascakuantum EPAA
   - Penyumbang, Emerging Payments Association Asia
-employers_label: Platform pembayaran yang dilancarkan di
+employers_label: Tempat saya pernah berkhidmat
 stats_eyebrow: Dalam angka
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: Salin
   items:
   - length: Pendek
-    text: Sebastien Rousseau ialah ahli teknologi perbankan kanan yang menulis dan membina di persimpangan pembayaran ISO 20022, kriptografi pascakuantum dan AI gunaan. Beliau telah melancarkan platform pembayaran di HSBC, PayPal dan Barclays, serta menyelenggara pelaksanaan rujukan sumber terbuka yang digunakan dalam persekitaran sebenar.
+    text: Sebastien Rousseau ialah ahli teknologi perbankan kanan yang menulis dan membina di persimpangan pembayaran ISO 20022, kriptografi pascakuantum dan AI gunaan. Hampir dua dekad merentas HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group.
   - length: Sederhana
     text: Sebastien Rousseau ialah ahli teknologi perbankan kanan dengan hampir dua dekad di HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA dan Virgin Group. Beliau menulis dan membina di persimpangan pembayaran ISO 20022, kriptografi pascakuantum dan AI gunaan, serta menyelenggara pelaksanaan rujukan sumber terbuka — pacs.008, pain.001, KyberLib, BankStatementParser — yang digunakan pasukan perbendaharaan dan pembayaran dalam persekitaran sebenar. Beliau menyumbang kepada Kumpulan Kerja Kriptografi Selamat Kuantum Emerging Payments Association Asia dan menerbitkan Banking On Quantum serta Banking On AI.
   - length: Panjang
-    text: 'Sebastien Rousseau ialah ahli teknologi perbankan kanan yang menumpukan pada transformasi struktur pembayaran nilai besar. Di HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA dan Virgin Group, beliau telah melancarkan platform pembayaran, produk AI dan infrastruktur sumber terbuka yang digunakan pasukan perbendaharaan dan pembayaran dalam persekitaran sebenar. Beliau menulis dan menyelenggara pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN dan dotfiles, setiap satunya diletakkan sebagai pelaksanaan rujukan dan bukan demo: infrastruktur kewangan yang boleh diperiksa, setaraf lembaga pengarah. Beliau menyumbang kepada Kumpulan Kerja Kriptografi Selamat Kuantum Emerging Payments Association Asia, menjadi penulis bersama kertas putih EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (September 2025), dan menerbitkan Banking On Quantum serta Banking On AI. Beliau bekerja di persimpangan AI ejen, pembayaran masa nyata, kriptografi pascakuantum, ketahanan asli awan, data berstruktur dan bukti bagi pengawal selia.'
+    text: 'Sebastien Rousseau ialah ahli teknologi perbankan kanan yang menumpukan pada transformasi struktur pembayaran nilai besar. Hampir dua dekad merentas HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Beliau menulis dan menyelenggara pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN dan dotfiles, setiap satunya diletakkan sebagai pelaksanaan rujukan dan bukan demo: infrastruktur kewangan yang boleh diperiksa, setaraf lembaga pengarah. Beliau menyumbang kepada Kumpulan Kerja Kriptografi Selamat Kuantum Emerging Payments Association Asia, menjadi penulis bersama kertas putih EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (September 2025), dan menerbitkan Banking On Quantum serta Banking On AI. Beliau bekerja di persimpangan AI ejen, pembayaran masa nyata, kriptografi pascakuantum, ketahanan asli awan, data berstruktur dan bukti bagi pengawal selia.'
 faq:
   eyebrow: Sebelum anda bertanya
   headline: Soal jemputan, secara terus terang.
@@ -185,14 +185,7 @@ final_cta:
   secondary_cta: Minta ulasan pakar
 ---
 
-Sebastien Rousseau ialah ahli teknologi perbankan kanan yang menumpukan pada transformasi
-struktur pembayaran nilai besar. Di HSBC Commercial & Investment Bank, PayPal, Barclays,
-Shazam, AKQA dan Virgin Group, beliau telah melancarkan platform pembayaran, produk AI dan
-infrastruktur sumber terbuka yang digunakan pasukan perbendaharaan dan pembayaran dalam
-persekitaran sebenar. Beliau menulis dan menyelenggara pacs.008, pain.001,
-BankStatementParser, KyberLib, CloudCDN dan dotfiles, setiap satunya diletakkan sebagai
-pelaksanaan rujukan dan bukan demo: infrastruktur kewangan yang boleh diperiksa, setaraf
-lembaga pengarah.
+Sebastien Rousseau ialah ahli teknologi perbankan kanan yang menumpukan pada transformasi struktur pembayaran nilai besar. Hampir dua dekad merentas HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Beliau menulis dan menyelenggara pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN dan dotfiles, setiap satunya diletakkan sebagai pelaksanaan rujukan dan bukan demo: infrastruktur kewangan yang boleh diperiksa, setaraf lembaga pengarah.
 
 Beliau menyumbang kepada Kumpulan Kerja Kriptografi Selamat Kuantum Emerging Payments
 Association Asia, menjadi penulis bersama kertas putih EPAA «Quantum-Safe Payments: Why the
