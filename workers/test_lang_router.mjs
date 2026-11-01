@@ -110,12 +110,32 @@ test('PDF /api/pdf/<slug>.pdf short-circuits locale routing', async () => {
     return new Response('', { status: 502 });
   };
   try {
-    const res = await callHandler(new Request('https://sebastienrousseau.com/api/pdf/2026-06-08-banking-resilience-index.pdf'));
+    const res = await handler.fetch(
+      new Request('https://sebastienrousseau.com/api/pdf/2026-06-08-banking-resilience-index.pdf'),
+      { PDF_RENDER_BASE: 'https://render.example', PDF_ORIGIN_TOKEN: 'edge-secret' },
+      {},
+    );
     assert.equal(res.status, 200);
     assert.equal(res.headers.get('Content-Type'), 'application/pdf');
+    assert.equal(res.headers.get('X-Robots-Tag'), 'noindex, nofollow');
   } finally {
     globalThis.fetch = realF;
   }
+});
+
+test('PDF route with no PDF_RENDER_BASE answers 503 at once', async () => {
+  const res = await callHandler(new Request('https://sebastienrousseau.com/api/pdf/2026-06-08-banking-resilience-index.pdf'));
+  assert.equal(res.status, 503);
+  assert.equal(res.headers.get('X-Robots-Tag'), 'noindex, nofollow');
+});
+
+test('PDF route tolerates a missing env object', async () => {
+  const res = await handler.fetch(
+    new Request('https://sebastienrousseau.com/api/pdf/2026-06-08-banking-resilience-index.pdf'),
+    undefined,
+    {},
+  );
+  assert.equal(res.status, 503);
 });
 
 test('Clock /api/clock/hero-<theme>.svg short-circuits locale routing', async () => {
@@ -872,3 +892,4 @@ test('handler: /actor delegates to ActivityPub handler, skips locale + CSP path'
   assert.match(res.headers.get('content-type'), /text\/plain/);
   assert.equal(passThroughLog.length, 0, 'AP routes must not pass through to origin');
 });
+

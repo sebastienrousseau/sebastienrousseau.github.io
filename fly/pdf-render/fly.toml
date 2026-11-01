@@ -1,7 +1,9 @@
 # Fly.io app config for the WeasyPrint PDF render service.
 #
-# Deploy: `fly launch --copy-config --name pdf-render --org personal`
-# (or `fly deploy` once the app already exists).
+# Deploy: `fly launch --copy-config --name <app-name> --org personal`
+# (or `fly deploy` once the app already exists). `pdf-render.fly.dev` does
+# not run this service, so use a name you own and set the Worker variable
+# PDF_RENDER_BASE to its URL.
 #
 # Free tier: 3 shared-cpu-1x machines x 256 MB RAM, auto-stop when
 # idle for 5 min, auto-start on inbound request. First render after

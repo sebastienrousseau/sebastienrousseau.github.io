@@ -247,3 +247,32 @@ def test_origin_token_and_upstream_error_branches(monkeypatch: pytest.MonkeyPatc
     monkeypatch.setattr(app_mod.requests, "get", _raise_req)
     with pytest.raises(_BadGateway):
         app_mod._fetch_article_html("2026-06-08-timeout")
+
+
+def test_locale_article_is_fetched_under_its_locale_prefix(monkeypatch: pytest.MonkeyPatch) -> None:
+    """A translated slug lives at /<lang>/<slug>/; fetching it at the EN root
+    404s, which is why every locale PDF link failed."""
+    app_mod = _load_pdf_app(monkeypatch)
+    seen: list[str] = []
+
+    class _UpstreamResp:
+        status_code = 200
+        ok = True
+        text = "<!doctype html><html><body><h1>Artigo</h1></body></html>"
+
+    def _get(url: str, *_a: Any, **_kw: Any) -> Any:
+        seen.append(url)
+        return _UpstreamResp()
+
+    monkeypatch.setattr(app_mod.requests, "get", _get)
+    app_mod.request.args = {"slug": "2023-11-19-crystals-kyber", "lang": "pt-br"}
+    resp = app_mod.render()
+    assert resp.mimetype == "application/pdf"
+    assert seen[0] == f"{app_mod.ORIGIN}/pt-br/2023-11-19-crystals-kyber/"
+
+    app_mod.request.args = {"slug": "2023-11-19-crystals-kyber"}
+    app_mod.render()
+    assert seen[-1] == f"{app_mod.ORIGIN}/2023-11-19-crystals-kyber/"
+
+    with pytest.raises(_BadRequest):
+        app_mod._fetch_article_html("2023-11-19-crystals-kyber", "../etc")

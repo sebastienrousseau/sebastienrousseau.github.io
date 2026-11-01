@@ -301,9 +301,9 @@ import { tryActivityPub } from './activitypub.js';
 // editorial corpus to AI clients. Static manifest + JSONL feeds drive
 // every response; no KV, no D1, Edge-cache immutable.
 import { tryMCP } from './mcp.js';
-// PDF proxy — /api/pdf/<slug>.pdf forwards to the Fly.io WeasyPrint
-// service. Edge-cache immutable for 24h so repeat reads never touch
-// Fly. Falls back to client-side window.print() when 503.
+// PDF proxy: /api/pdf/[<lang>/]<slug>.pdf forwards to the WeasyPrint
+// service at env.PDF_RENDER_BASE. Edge-cache immutable for 24h so repeat
+// reads never touch Fly. Falls back to client-side window.print() on error.
 import { tryPDF } from './pdf-proxy.js';
 // Live wall clock for the GitHub profile README: /api/clock/hero-<theme>.svg
 // returns the profile's hero SVG with its hands set to London time.
@@ -387,7 +387,13 @@ export default {
     if (mcpResponse) return withApiSecurityHeaders(mcpResponse);
     // PDF proxy — /api/pdf/<slug>.pdf. Validated + forwarded to Fly,
     // Edge cached immutable for 24h.
-    const pdfResponse = await tryPDF(request);
+    // The renderer origin and its shared token come from Worker
+    // variables; with no PDF_RENDER_BASE the route answers 503 at once.
+    const pdfResponse = await tryPDF(
+      request,
+      (env && env.PDF_RENDER_BASE) || '',
+      (env && env.PDF_ORIGIN_TOKEN) || '',
+    );
     if (pdfResponse) return withApiSecurityHeaders(pdfResponse);
     // Profile clock — /api/clock/hero-<theme>.svg, uncached so it keeps time.
     const clockResponse = await tryClock(request);
