@@ -29,7 +29,8 @@ def _page(path: str, head: str = _SSG_ROBOTS, canonical: str | None = None) -> s
 
 
 def _write(public: Path, path: str, html: str) -> None:
-    target = public / path.lstrip("/") / "index.html" if path.endswith("/") else public / path
+    rel = path.lstrip("/")
+    target = public / rel / "index.html" if path.endswith("/") else public / rel
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(html, encoding="utf-8")
 
@@ -84,10 +85,12 @@ def test_is_indexable_rules(public: Path) -> None:
     _write(public, "/moved/", '<html><head><meta http-equiv="refresh" content="0; url=/"></head>')
     _write(public, "/dup/", _page("/dup/", canonical=f"{_BASE}/other/"))
     _write(public, "/feed.xml", "<rss/>")
+    _write(public, "/legacy/", _page("/legacy/", canonical=f"{_BASE}/legacy/index.html"))
     ix.apply_noindex_utility_pages(public)
     assert ix.is_indexable(f"{_BASE}/", public)
     assert ix.is_indexable(_BASE, public)
     assert ix.is_indexable(f"{_BASE}/feed.xml", public)
+    assert ix.is_indexable(f"{_BASE}/legacy/", public)
     assert not ix.is_indexable(f"{_BASE}/404/", public)
     assert not ix.is_indexable(f"{_BASE}/moved/", public)
     assert not ix.is_indexable(f"{_BASE}/dup/", public)
