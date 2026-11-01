@@ -278,8 +278,9 @@ def test_render_tag_badges_canonical_slug_omitted_without_landing(
     assert "<a " not in out
 
 
-def test_inject_article_cta_maps_pillars_and_is_idempotent():
+def test_inject_article_cta_maps_pillars_and_is_idempotent(tmp_path, monkeypatch):
     """inject_article_cta emits pillar-mapped CTA cards on EN BlogPostings."""
+    from postbuild_lib import article_furniture as af
     from postbuild_lib.article_furniture import inject_article_cta
 
     html_payments = (
@@ -292,13 +293,25 @@ def test_inject_article_cta_maps_pillars_and_is_idempotent():
     assert 'href="/iso20022-mcp/"' in out_pay
     assert inject_article_cta(out_pay) == out_pay
 
+    (tmp_path / "sample-post.md").write_text(
+        '---\ntags: "AI governance, DORA"\n---\n', encoding="utf-8"
+    )
+    monkeypatch.setattr(af, "_POSTS_DIR", tmp_path)
     html_policy = (
         '<html lang="en-GB">'
-        '<script type="application/ld+json">{"@type":"BlogPosting","keywords":"AI governance"}</script>'
+        '<link rel="canonical" href="https://sebastienrousseau.com/sample-post/index.html">'
+        '<script type="application/ld+json">{"@type":"BlogPosting","keywords":"noise"}</script>'
         '<main><div class="wrap"><p>Body</p></div></main>'
     )
     out_pol = inject_article_cta(html_policy)
     assert 'href="/speaking/"' in out_pol
+
+    html_default = (
+        '<html lang="en-GB">'
+        '<script type="application/ld+json">{"@type":"BlogPosting","keywords":"unmapped"}</script>'
+        '<main><div class="wrap"><p>Body</p></div></main>'
+    )
+    assert 'href="/projects/"' in inject_article_cta(html_default)
 
     html_fr = (
         '<html lang="fr">'

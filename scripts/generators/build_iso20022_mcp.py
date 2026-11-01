@@ -1319,7 +1319,7 @@ def _what(d: dict) -> str:
     return (
         '<section id="mcp-what"><div class="spk-wrap">'
         + _head(d["eyebrow"], d["headline"], d.get("lede", ""))
-        + '<details class="mcp-lens-details" open>'
+        + '<details class="qa-item mcp-lens-details" open>'
         '<summary class="mcp-lens-summary">Overview: how the Model Context Protocol works</summary>'
         f'<div class="spk-paths">{"".join(items)}</div></details></div></section>'
     )
@@ -1469,7 +1469,7 @@ def _proof(d: dict, metrics: dict | None) -> str:
         '<div id="mcp-proof">'
         + _head(d["eyebrow"], d["headline"], lede)
         + f'<div class="spk-stats">{cells}</div>'
-        + '<details class="mcp-method-details"><summary>Method &amp; environment</summary>'
+        + '<details class="qa-item mcp-method-details"><summary>Method &amp; environment</summary>'
         f'<p class="spk-stats-foot">{_rich(foot)}</p></details></div>'
     )
 
@@ -1504,7 +1504,7 @@ def _prompts(d: dict, data: dict | None) -> str:
     return (
         '<section id="mcp-prompts"><div class="spk-wrap">'
         + _head(d["eyebrow"], d["headline"], d["lede"])
-        + '<details class="mcp-lens-details" open>'
+        + '<details class="qa-item mcp-lens-details" open>'
         '<summary class="mcp-lens-summary">View captured stdio JSON-RPC transcripts (3 receipts)</summary>'
         f'<div class="mcp-prompts">{"".join(blocks)}</div>'
         '<p class="mcp-clients-foot">Excerpts are drawn from the committed '
@@ -1690,7 +1690,7 @@ def _schemas(d: dict) -> str:
     return (
         '<section id="mcp-schemas"><div class="spk-wrap">'
         + _head(d["eyebrow"], d["headline"], d["lede"])
-        + '<details class="mcp-lens-details" open>'
+        + '<details class="qa-item mcp-lens-details" open>'
         '<summary class="mcp-lens-summary">Inspect all seven gateway meta-tools (tools/list capture)</summary>'
         f'<div class="qa-list mcp-schemas">{"".join(blocks)}</div>'
         f'<p class="mcp-schema-note">{_esc(d["note"])}</p></details>'

@@ -1151,9 +1151,7 @@ def _social_tag_is_truncated_scrape(tag: str, clean_desc: str) -> bool:
     if 'name="description"' in tag.lower():
         return False
     cm = _CONTENT_CAPTURE_RE.search(tag)
-    if cm is None:
-        return False
-    val = cm.group(1).strip()
+    val = cm.group(1).strip() if cm else ""
     if not val or val == clean_desc:
         return False
     return (

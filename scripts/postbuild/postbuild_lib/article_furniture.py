@@ -26,6 +26,7 @@ constants + author identity constants only.
 
 from __future__ import annotations
 
+import functools
 import re
 import sys
 from html import escape as _esc
@@ -194,34 +195,20 @@ def _tags_prefix(lang: str) -> str:
 
 _LANDING_PUBLIC = Path(__file__).resolve().parents[3] / "public"
 _TAXONOMY_PATH = Path(__file__).resolve().parents[3] / "_data" / "taxonomy.yml"
-_TAXONOMY_CACHE: dict[str, dict] | None = None
-_ALIAS_MAP_CACHE: dict[str, str] | None = None
 
 
+@functools.lru_cache(maxsize=1)
 def _load_taxonomy() -> dict[str, dict]:
     """Load and cache ``_data/taxonomy.yml``."""
-    global _TAXONOMY_CACHE
-    if _TAXONOMY_CACHE is not None:
-        return _TAXONOMY_CACHE
-    try:
-        import yaml
+    import yaml
 
-        data = (
-            yaml.safe_load(_TAXONOMY_PATH.read_text(encoding="utf-8"))
-            if _TAXONOMY_PATH.is_file()
-            else {}
-        )
-        _TAXONOMY_CACHE = data if isinstance(data, dict) else {}
-    except Exception:
-        _TAXONOMY_CACHE = {}
-    return _TAXONOMY_CACHE
+    data = yaml.safe_load(_TAXONOMY_PATH.read_text(encoding="utf-8"))
+    return data if isinstance(data, dict) else {}
 
 
+@functools.lru_cache(maxsize=1)
 def _taxonomy_alias_map() -> dict[str, str]:
     """Map lowercased canonical slugs, display names, and aliases to canonical tag slugs."""
-    global _ALIAS_MAP_CACHE
-    if _ALIAS_MAP_CACHE is not None:
-        return _ALIAS_MAP_CACHE
     aliases: dict[str, str] = {}
     for slug, entry in _load_taxonomy().items():
         aliases[slug.strip().lower()] = slug
@@ -234,7 +221,6 @@ def _taxonomy_alias_map() -> dict[str, str]:
                 if token:
                     aliases[token] = slug
                     aliases[slugify(token)] = slug
-    _ALIAS_MAP_CACHE = aliases
     return aliases
 
 
@@ -371,7 +357,7 @@ _NOISY_KEYWORD_TOKENS = frozenset(
 
 _POSTS_DIR = Path(__file__).resolve().parents[3] / "_posts"
 _TAGS_FM_RE = re.compile(r'^tags:\s*"?([^"\n]+)"?\s*$', re.MULTILINE)
-_AUTHOR_CARD_OPEN_RE = re.compile(r'(<aside\s+class="author-card"\b)', re.IGNORECASE)
+_AUTHOR_CARD_OPEN_RE = re.compile(r'(<aside\s+class="author-card"[^>]*>)', re.IGNORECASE)
 
 _CTA_BY_PILLAR: dict[str, tuple[str, str, str, str, str]] = {
     "payments": (
@@ -417,17 +403,13 @@ def _fallback_post_tags(html: str) -> list[str]:
     cm = CANONICAL_RE.search(html)
     if not cm:
         return []
-    url = cm.group(1).rstrip("/")
-    if url.endswith("/index.html"):
-        url = url[: -len("/index.html")].rstrip("/")
+    url = cm.group(1).removesuffix("/index.html").rstrip("/")
     slug = url.rsplit("/", 1)[-1]
     post_path = _POSTS_DIR / f"{slug}.md"
     if not post_path.is_file():
         return []
     tm = _TAGS_FM_RE.search(post_path.read_text(encoding="utf-8", errors="ignore"))
-    if not tm:
-        return []
-    return [t.strip() for t in tm.group(1).split(",") if t.strip()]
+    return [t.strip() for t in tm.group(1).split(",") if t.strip()] if tm else []
 
 
 def _extract_keywords(html: str) -> list[str]:

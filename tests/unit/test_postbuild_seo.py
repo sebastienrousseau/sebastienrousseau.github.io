@@ -1637,3 +1637,16 @@ def test_fix_social_image_refuses_to_propagate_divider():
     # Should NOT propagate a divider value into og:image.
     out = pb.fix_social_image(html)
     assert out == html
+
+
+def test_clean_meta_description_repairs_truncated_social_scrape(tmp_path):
+    from postbuild_lib.seo import clean_meta_description
+
+    html = (
+        '<head><meta name="description" content="Clean article description.">'
+        '<meta property="og:description" content="Sebastien Rousseau &middot; 14 Apr 2026 &middot; truncated when">'
+        '<meta name="twitter:description" content="Clean article description.">'
+        "</head>"
+    )
+    out = clean_meta_description(tmp_path / "post.html", html)
+    assert 'property="og:description" content="Clean article description."' in out
