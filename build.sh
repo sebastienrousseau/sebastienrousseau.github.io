@@ -533,6 +533,7 @@ python3 tests/validation/test_i18n_cross_locale_script.py --strict
 python3 tests/validation/test_hreflang_reciprocity.py
 python3 tests/validation/test_jsonld_localized.py
 python3 tests/validation/test_sitemap_completeness.py
+python3 tests/validation/test_sitemap_indexable.py
 python3 tests/validation/test_lang_no_leakage.py
 python3 tests/validation/test_localised_titles.py
 python3 tests/validation/test_body_translation.py --strict

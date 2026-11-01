@@ -246,6 +246,7 @@ from postbuild_lib.html_passes import (
     strip_duplicate_body_h1,
 )
 from postbuild_lib.index_scorecard import inject_index_scorecard
+from postbuild_lib.indexability import apply_noindex_utility_pages, prune_sitemaps
 from postbuild_lib.internal_links import (
     _alias_patterns,
     canonicalise_absolute_self_links,
@@ -872,6 +873,41 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int, int]:
     )
 
 
+def _apply_url_hygiene() -> None:
+    """Redirect pages, utility-page noindex, and sitemap pruning. Runs
+    after _finalize_build, in this order, for the reasons given inline."""
+    # Legacy-URL redirect conversion (/papers -> /research, EN + locale
+    # forks). Must run after _finalize_build: the sitemap augment pass
+    # would re-add the purged entries, and the per-page loop's
+    # normalize_canonical would undo the target canonical. See
+    # postbuild_lib/redirects.py for the full policy.
+    redirect_pages, redirect_purged = apply_redirect_pages(PUBLIC)
+    print(
+        f"postbuild: redirects — {redirect_pages} legacy page(s) converted, "
+        f"{redirect_purged} sitemap entrie(s) purged"
+    )
+
+    # Retired article URLs (_data/redirects/articles.json). Unlike the
+    # static move above there is no rendered source page to convert — the
+    # build stopped emitting the old path — so each is materialised from
+    # its target. Runs here for the same reason: after _finalize_build, so
+    # the sitemap augment cannot re-add them and normalize_canonical
+    # cannot rewrite the target canonical back to self.
+    article_redirects = apply_article_redirects(PUBLIC)
+    print(f"postbuild: redirects — {article_redirects} retired article URL(s) materialised")
+
+    # Utility pages (404 / offline / thanks, EN + every locale) are noindex,
+    # then every sitemap is cut down to indexable, self-canonical URLs.
+    # Last, so no earlier pass can re-add an entry or rewrite a page after
+    # it was judged. See postbuild_lib/indexability.py.
+    noindexed = apply_noindex_utility_pages(PUBLIC)
+    pruned = prune_sitemaps(PUBLIC)
+    print(
+        f"postbuild: indexability: {noindexed} utility page(s) set noindex, "
+        f"{pruned} non-indexable sitemap entrie(s) pruned"
+    )
+
+
 def main() -> None:
     """Walk every public/*.html page and run the per-page transform
     pipeline; then run the post-loop finalisation tasks (sitemap,
@@ -903,25 +939,7 @@ def main() -> None:
         news_shrunk,
     ) = _finalize_build()
 
-    # Legacy-URL redirect conversion (/papers -> /research, EN + locale
-    # forks). Must run after _finalize_build: the sitemap augment pass
-    # would re-add the purged entries, and the per-page loop's
-    # normalize_canonical would undo the target canonical. See
-    # postbuild_lib/redirects.py for the full policy.
-    redirect_pages, redirect_purged = apply_redirect_pages(PUBLIC)
-    print(
-        f"postbuild: redirects — {redirect_pages} legacy page(s) converted, "
-        f"{redirect_purged} sitemap entrie(s) purged"
-    )
-
-    # Retired article URLs (_data/redirects/articles.json). Unlike the
-    # static move above there is no rendered source page to convert — the
-    # build stopped emitting the old path — so each is materialised from
-    # its target. Runs here for the same reason: after _finalize_build, so
-    # the sitemap augment cannot re-add them and normalize_canonical
-    # cannot rewrite the target canonical back to self.
-    article_redirects = apply_article_redirects(PUBLIC)
-    print(f"postbuild: redirects — {article_redirects} retired article URL(s) materialised")
+    _apply_url_hygiene()
 
     c = ctx.counters
     js_saved = _ASSET_STATS[1] - _ASSET_STATS[2]
