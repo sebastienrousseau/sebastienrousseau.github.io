@@ -293,8 +293,9 @@ def test_inject_article_cta_maps_pillars_and_is_idempotent(tmp_path, monkeypatch
     assert 'href="/iso20022-mcp/"' in out_pay
     assert inject_article_cta(out_pay) == out_pay
 
-    (tmp_path / "sample-post.md").write_text(
-        '---\ntags: "AI governance, DORA"\n---\n', encoding="utf-8"
+    (tmp_path / "2026-09-15-sample-post-long.md").write_text(
+        '---\ntags: "AI governance, DORA"\npermalink: "https://sebastienrousseau.com/sample-post"\n---\n',
+        encoding="utf-8",
     )
     monkeypatch.setattr(af, "_POSTS_DIR", tmp_path)
     html_policy = (
@@ -305,6 +306,19 @@ def test_inject_article_cta_maps_pillars_and_is_idempotent(tmp_path, monkeypatch
     )
     out_pol = inject_article_cta(html_policy)
     assert 'href="/speaking/"' in out_pol
+
+    html_ar = (
+        '<html lang="ar">'
+        '<link rel="canonical" href="https://sebastienrousseau.com/ar/2026-09-15-ar-slug/index.html">'
+        '<script type="application/ld+json">{"@type":"BlogPosting","keywords":"حوكمة الذكاء الاصطناعي، الامتثال"}</script>'
+        '<section class="ap-hero"><div class="wrap"><h1>Title</h1><div class="article-meta">Meta</div></div></section>'
+    )
+    monkeypatch.setattr(
+        af, "_has_landing", lambda slug, lang="en": slug in {"ai-governance", "dora"}
+    )
+    out_ar = af.inject_article_furniture(html_ar)
+    assert 'class="article-tags"' in out_ar
+    assert "/ar/wusum/ai-governance/" in out_ar
 
     html_default = (
         '<html lang="en-GB">'

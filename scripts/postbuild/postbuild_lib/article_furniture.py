@@ -357,7 +357,9 @@ _NOISY_KEYWORD_TOKENS = frozenset(
 
 _POSTS_DIR = Path(__file__).resolve().parents[3] / "_posts"
 _TAGS_FM_RE = re.compile(r'^tags:\s*"?([^"\n]+)"?\s*$', re.MULTILINE)
+_PERMALINK_FM_RE = re.compile(r'^permalink:\s*"?([^\n"]+)"?\s*$', re.MULTILINE)
 _AUTHOR_CARD_OPEN_RE = re.compile(r'(<aside\s+class="author-card"[^>]*>)', re.IGNORECASE)
+_KW_SPLIT_RE = re.compile(r"[,،、，]+")
 
 _CTA_BY_PILLAR: dict[str, tuple[str, str, str, str, str]] = {
     "payments": (
@@ -398,23 +400,37 @@ _CTA_DEFAULT: tuple[str, str, str, str, str] = (
 )
 
 
-def _fallback_post_tags(html: str) -> list[str]:
-    """Read ``tags:`` from ``_posts/<slug>.md`` when EN JSON-LD keywords miss taxonomy."""
+@functools.lru_cache(maxsize=8)
+def _en_post_tag_index(posts_dir: Path) -> dict[str, list[str]]:
+    """Index English ``_posts/*.md`` tags by stem, permalink slug, and date."""
+    index: dict[str, list[str]] = {}
+    for md in sorted(posts_dir.glob("*.md")):
+        txt = md.read_text(encoding="utf-8", errors="ignore")
+        tm = _TAGS_FM_RE.search(txt)
+        tags = [t.strip() for t in tm.group(1).split(",") if t.strip()] if tm else []
+        if tags:
+            index[md.stem] = tags
+            pm = _PERMALINK_FM_RE.search(txt)
+            if pm:
+                index[pm.group(1).strip().rstrip("/").rsplit("/", 1)[-1]] = tags
+            index.setdefault(md.stem[:10], tags)
+    return index
+
+
+def _fallback_post_tags(html: str, lang: str = "en") -> list[str]:
+    """Read ``tags:`` from the matching English ``_posts/<slug>.md``."""
     cm = CANONICAL_RE.search(html)
     if not cm:
         return []
-    url = cm.group(1).removesuffix("/index.html").rstrip("/")
-    slug = url.rsplit("/", 1)[-1]
-    post_path = _POSTS_DIR / f"{slug}.md"
-    if not post_path.is_file():
-        return []
-    tm = _TAGS_FM_RE.search(post_path.read_text(encoding="utf-8", errors="ignore"))
-    return [t.strip() for t in tm.group(1).split(",") if t.strip()] if tm else []
+    slug = cm.group(1).removesuffix("/index.html").rstrip("/").rsplit("/", 1)[-1]
+    en_slug = _slug_maps(lang)["articles_lang_to_en"].get(slug, slug) if lang != "en" else slug
+    index = _en_post_tag_index(_POSTS_DIR)
+    return index.get(en_slug) or index.get(slug) or index.get(slug[:10], [])
 
 
 def _extract_keywords(html: str) -> list[str]:
     m = _keywords_re.search(html)
-    raw = m.group(1).split(",") if (m and m.group(1)) else []
+    raw = _KW_SPLIT_RE.split(m.group(1)) if (m and m.group(1)) else []
     keywords = [
         k.strip() for k in raw if k.strip() and k.strip().lower() not in _NOISY_KEYWORD_TOKENS
     ]
@@ -437,23 +453,34 @@ def _extract_article_metadata(html: str) -> tuple[list[str], str, str, int | Non
     return keywords, date_pub, date_mod, word_count
 
 
+def _fallback_tag_slugs(html: str, keywords: list[str], lang: str) -> list[str] | None:
+    """Resolve canonical EN tag slugs when localized keywords do not land."""
+    if lang == "en" or any(_has_landing(_resolve_tag_slug(k), lang) for k in keywords):
+        return None
+    slugs = [_resolve_tag_slug(t) for t in _fallback_post_tags(html, lang)]
+    return [s for s in slugs if s and _has_landing(s, lang)] or None
+
+
 def inject_article_furniture(html: str) -> str:
     """Insert tag badges + meta bar between the H1 hero and the main body.
 
     Only fires when the page carries a BlogPosting JSON-LD graph — listing /
     static pages are left alone.
     """
-    if '"@type":"BlogPosting"' not in html:
-        return html
-    # Don't double-inject if a previous postbuild run already added them.
-    if 'class="article-tags"' in html or 'class="article-meta"' in html:
+    if '"@type":"BlogPosting"' not in html or 'class="article-tags"' in html:
         return html
     keywords, date_pub, date_mod, word_count = _extract_article_metadata(html)
     lang = _detect_page_lang(html)
     labels = _labels_for_lang(lang)
-    fragment = _render_tag_badges(keywords, labels, lang) + _render_meta_bar(
-        date_pub, date_mod, word_count, labels, lang
-    )
+    tag_slugs = _fallback_tag_slugs(html, keywords, lang)
+    badges = _render_tag_badges(keywords, labels, lang, tag_slugs=tag_slugs)
+    if 'class="article-meta"' in html:
+        return (
+            html.replace('<div class="article-meta">', f'{badges}<div class="article-meta">', 1)
+            if badges
+            else html
+        )
+    fragment = badges + _render_meta_bar(date_pub, date_mod, word_count, labels, lang)
     if not fragment:
         return html
     return _HERO_RE.sub(rf"\1{fragment}\2", html, count=1)
