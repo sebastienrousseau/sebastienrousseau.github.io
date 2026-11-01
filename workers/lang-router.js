@@ -350,6 +350,23 @@ export function trySlugRedirects(url) {
   return null;
 }
 
+// Doubled locale prefix: `/<lang>/<lang>/<rest>` -> 301 `/<lang2>/<rest>`.
+// A former EN-URL rewriter bug (fixed in #464) emitted links such as
+// `/nl/th/<slug>/` and `/zh-hant/zh-hant/<slug>`; Search Console still
+// crawls them and files each as a 404. The second segment is the locale
+// the link meant, so it wins. A missing trailing slash is added in the
+// same hop so the target is not itself a redirect. Returns null when the
+// first two segments are not both active locales.
+export function tryDoubledLocaleRedirect(url) {
+  const m = /^\/([^/]+)\/([^/]+)(\/.*)?$/.exec(url.pathname);
+  if (!m || !ACTIVE_LANGS.has(m[1]) || !ACTIVE_LANGS.has(m[2])) return null;
+  let rest = m[3] || '/';
+  if (!rest.endsWith('/') && !/\.[a-z0-9]+$/i.test(rest)) rest += '/';
+  const redirected = new URL(url);
+  redirected.pathname = `/${m[2]}${rest}`;
+  return Response.redirect(redirected.toString(), 301);
+}
+
 /**
  * Emit a locale-redirect data point to Workers Analytics Engine if the
  * `AE` binding is wired. Fire-and-forget under `ctx.waitUntil()` — never
@@ -404,6 +421,10 @@ export default {
     const renameRedirect = trySlugRedirects(url);
     if (renameRedirect) {
       return withSecurityHeaders(renameRedirect, request);
+    }
+    const doubledRedirect = tryDoubledLocaleRedirect(url);
+    if (doubledRedirect) {
+      return withSecurityHeaders(doubledRedirect, request);
     }
 
     // Only act on GET / HEAD page navigation; everything else still gets

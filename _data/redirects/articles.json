@@ -1,5 +1,5 @@
 {
-  "_comment": "Article URLs that were published on main and no longer render, mapped to their successor. Keyed by locale; 'en' is the root. Sources: git rename detection over _posts/ on first-parent main, plus each locale's slugs.json history replayed through the builder rule OUT/EN_TO_FR.get(slug, slug). postbuild_lib.redirects materialises each key as a redirect page. Deliberately NOT listed: 2024-04-13-a-quantum-breakthrough-in-lattice-cryptography, removed with no successor — it stays a 404, which is the honest response for deleted content.",
+  "_comment": "Article URLs that were published on main and no longer render, mapped to their successor. Keyed by locale; 'en' is the root. Sources: git rename detection over _posts/ on first-parent main, plus each locale's slugs.json history replayed through the builder rule OUT/EN_TO_FR.get(slug, slug). postbuild_lib.redirects materialises each key as a redirect page. Deliberately NOT listed: 2024-04-13-a-quantum-breakthrough-in-lattice-cryptography, removed with no successor — it stays a 404, which is the honest response for deleted content. Also listed: three URLs a translation-pipeline slug mangle or a renamed localised credit-page slug put into published links (undpasanding, gjord-med-statisk-sajtgenerator, dibuat-dengan-generator-situs-statis); Search Console still crawls them as 404s.",
   "en": {
     "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator": "2023-10-09-the-fastest-rust-based-static-site-generator",
     "2023-10-16-hsh-the-creation-of-a-quantum-resistant-cryptographic-hash-library-built-with-rust": "2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh",
@@ -9,7 +9,8 @@
     "2026-05-18-agentic-engineering-banks-blueprint-2026": "2026-05-17-agentic-engineering-banks-blueprint-2026",
     "2026-05-21-best-cloud-infrastructure-architecture-2026": "2026-05-16-best-cloud-infrastructure-architecture-2026",
     "2026-06-30-agentic-ai-index-banks-measuring-autonomy-2026": "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026",
-    "2026-banking-architecture-whitepaper": "2026-06-21-banking-architecture-whitepaper"
+    "2026-banking-architecture-whitepaper": "2026-06-21-banking-architecture-whitepaper",
+    "2018-01-09-undpasanding-the-technology-behind-blockchain": "2018-01-09-understanding-the-technology-behind-blockchain"
   },
   "ar": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-murajaat-alaam",
@@ -1072,7 +1073,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robot-humanoid-fungsional-pabrik-bentuk-mengikuti",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-melampaui-hukum-moore-komputasi-dalam-memori",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fisik-sumber-terbuka-lerobot-membuat-robotika",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fisik-dan-tata-kelola-tenaga-kerja"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fisik-dan-tata-kelola-tenaga-kerja",
+    "dibuat-dengan-generator-situs-statis": "dibuat-dengan-static-site-generator"
   },
   "it": {
     "2023-10-09-shokunin-il-generatore-di-siti-statici-rust-piu-veloce": "2023-10-09-il-generatore-di-siti-statici-rust-piu-veloce",
@@ -1797,7 +1799,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-humanoida-mot-funktionella-robotar-form-foljer",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-bortom-moores-lag-minnesintern-berakning-chiplets",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fysisk-ai-oppen-kallkod-sa-demokratiserar",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fysisk-ai-arbetskraftens-styrning-tillit-ansvar"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fysisk-ai-arbetskraftens-styrning-tillit-ansvar",
+    "gjord-med-statisk-sajtgenerator": "gjord-med-static-site-generator"
   },
   "th": {
     "2023-10-09-shokunin-static-site-generator-thi-reo-thi-sut-bon-rust": "2023-10-09-static-site-generator-thi-reo-thi-sut-bon-rust",

@@ -213,6 +213,14 @@ def test_cluster_block_is_a_labelled_nav_landmark() -> None:
             '<a href="https://sebastienrousseau.com/2026-08-03-slug/">x</a>',
         ),
         (
+            '<a href="https://sebastienrousseau.com/he/2026-06-07-slug">x</a>',
+            '<a href="https://sebastienrousseau.com/he/2026-06-07-slug/">x</a>',
+        ),
+        (
+            '<a href="https://sebastienrousseau.com/zh-hant/2026-05-27-slug-tw">x</a>',
+            '<a href="https://sebastienrousseau.com/zh-hant/2026-05-27-slug-tw/">x</a>',
+        ),
+        (
             '<a href="https://example.com/2026-08-03-slug">x</a>',
             '<a href="https://example.com/2026-08-03-slug">x</a>',
         ),
