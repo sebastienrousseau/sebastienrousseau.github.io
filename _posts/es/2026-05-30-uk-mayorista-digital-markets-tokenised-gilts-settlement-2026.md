@@ -113,7 +113,7 @@ El Campeón es la palanca que las obliga a encajar.
 > - **Los gilts van primero porque son el activo más difícil de hacer bien.** HQLA sobre DLT, liquidados atómicamente contra efectivo tokenizado, validan toda la pila — emisión, negociación, repo, colateral, dinero de banco central — sobre el mayor pool en libras esterlinas ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **El repo intradía es el premio inmediato.** El repo atómico T+0 de gilts tokenizados libera capital que hoy yace inactivo como colchón de liquidez del mismo día. El ahorro se traslada directamente al ROE.
 > - **La orquestación sustituye a las redes aisladas.** La Regulated Liability Network, Canton, las DLT privadas de los bancos, el RTGS y el dinero de banca comercial tokenizado vehiculan flujos que los bancos ya operan. La tarea es enrutar entre ellos, no elegir uno.
-> - **La política como código es el único modelo de cumplimiento que aguanta el ritmo.** Sanciones, KYC, límites de posición, controles jurisdiccionales — codificados en la capa de liquidación, ejecutados atómicamente con la operación, generando un rastro de auditoría criptográfico en lugar de un registro que el regulador deba creer ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Actualización sobre el panorama de pagos – mayo de 2026")).
+> - **La política como código es el único modelo de cumplimiento que aguanta el ritmo.** Sanciones, KYC, límites de posición, controles jurisdiccionales — codificados en la capa de liquidación, ejecutados atómicamente con la operación, generando un rastro de auditoría criptográfico en lugar de un registro que el regulador deba creer ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Actualización sobre el panorama de pagos – mayo de 2026")).
 > - **La arquitectura es el foso defensivo.** Los ganadores integran flujo de trabajo, datos, rail, control y economía unitaria en un único modelo operativo. Los perdedores acumulan una cartera de pilotos inconexos y la llaman estrategia.
 >
 ---
@@ -150,7 +150,7 @@ Empezad por la fricción. Liquidez atrapada, fallos de liquidación, coste de co
 
 ### El dato como plano de control
 
-Los payloads ISO 20022 atados a hashes de transacción on-chain convierten los datos de liquidación en una única fuente de verdad. Sin ese vínculo, la automatización por contrato inteligente es frágil y la conciliación vuelve a las hojas de cálculo. Con él, los bancos obtienen procesamiento directo (STP), controles en tiempo real y analítica por la que los clientes sí pagarán ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Actualización sobre el panorama de pagos – mayo de 2026")).
+Los payloads ISO 20022 atados a hashes de transacción on-chain convierten los datos de liquidación en una única fuente de verdad. Sin ese vínculo, la automatización por contrato inteligente es frágil y la conciliación vuelve a las hojas de cálculo. Con él, los bancos obtienen procesamiento directo (STP), controles en tiempo real y analítica por la que los clientes sí pagarán ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Actualización sobre el panorama de pagos – mayo de 2026")).
 
 ### Orquestación entre rails
 
@@ -231,7 +231,7 @@ Puntos básicos ahorrados en financiación del colateral. Reducción del colchó
 - GOV.UK, (2026). [Apoyo a la fintech del Reino Unido para abrazar la tecnología de pagos del futuro ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "Apoyo a la fintech británica").
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "Digital Securities Sandbox de la FCA").
-- Association of Corporate Treasurers, (2026). [Actualización sobre el panorama de pagos – mayo de 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Actualización del panorama de pagos").
+- Association of Corporate Treasurers, (2026). [Actualización sobre el panorama de pagos – mayo de 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Actualización del panorama de pagos").
 - Global Government Finance, (2026). [Campeón de mercados digitales mayoristas del Reino Unido ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Campeón de mercados digitales mayoristas del Reino Unido").
 
 <!-- enrich-start -->

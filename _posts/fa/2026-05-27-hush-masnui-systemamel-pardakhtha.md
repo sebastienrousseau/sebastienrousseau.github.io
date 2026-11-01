@@ -20,7 +20,7 @@ keywords: "پرداخت‌های هوش مصنوعی ۲۰۲۶, تقلب در پ�
 > **خلاصه اجرایی / نکات کلیدی**
 >
 > - **هوش پرداخت‌ها اکنون راهبردی است.** این موضوع به‌جای آنکه یک عرضه محصول محدود باشد، به مدل عملیاتی، تاب‌آوری، ارزش مشتری و شواهد نظارتی گره خورده است ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **اصل طراحی، کنترل بلادرنگ است.** بانک‌ها به معماری‌ای نیاز دارند که سیاست، محصول، داده، انتخاب ریل، کنترل‌های ریسک و اقتصاد قابل‌اندازه‌گیری را به هم متصل کند ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **اصل طراحی، کنترل بلادرنگ است.** بانک‌ها به معماری‌ای نیاز دارند که سیاست، محصول، داده، انتخاب ریل، کنترل‌های ریسک و اقتصاد قابل‌اندازه‌گیری را به هم متصل کند ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **مدل کنترل باید بلادرنگ باشد.** تصمیم‌های مربوط به تقلب، نقدینگی، انطباق، تسویه و ریسک عملیاتی باید با سرعت گردش‌کار اجرا شوند، نه پس از رویداد.
 > - **کیفیت داده به مزیت تجاری تبدیل می‌شود.** داده‌های ساخت‌یافته، بافت تراکنش، گزارش‌های حسابرسی و سیگنال‌های هویت، بستر خودکارسازی و محصولات رو به مشتری می‌شوند.
 > - **تکه‌تکه‌شدن دشمن است.** بانکی که پیرامون هر ریل، توکن، مدل یا الزام انطباق، آزمایش‌های مجزا می‌سازد، ریسک عملیاتی آینده ایجاد می‌کند.
@@ -32,7 +32,7 @@ keywords: "پرداخت‌های هوش مصنوعی ۲۰۲۶, تقلب در پ�
 
 صنعت از مرحله پذیرش فراتر رفته است. دیگر کافی نیست که به یک ریل بپیوندید، یک پیام را مهاجرت دهید، یک اثبات مفهوم هوش مصنوعی اجرا کنید یا یک آزمایش توکنی‌سازی اعلام کنید. در سال ۲۰۲۶، مزیت راهبردی از هماهنگ‌سازی این قابلیت‌ها در برابر یک گردش‌کار واقعی به دست می‌آید و سپس اثبات اینکه آن گردش‌کار امن‌تر، سریع‌تر، ارزان‌تر، تاب‌آورتر یا برای مشتریان مفیدتر است.
 
-به همین دلیل است که هوش پرداخت‌ها اکنون موضوعی در سطح هیئت‌مدیره است. همان فشارها پیوسته تکرار می‌شوند: داده‌های پرداخت غنی‌تر، تسویه بلادرنگ، پول توکنی، تصمیم‌گیری هوش مصنوعی، بانکداری باز، تاب‌آوری عملیاتی، تمرکز ابری و شواهد نظارتی قوی‌تر. اگر جداگانه بررسی شوند، این فشارها پراکندگی برنامه‌ای ایجاد می‌کنند. اگر به‌عنوان یک معماری واحد بررسی شوند، اهرم عملیاتی می‌سازند ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")، [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+به همین دلیل است که هوش پرداخت‌ها اکنون موضوعی در سطح هیئت‌مدیره است. همان فشارها پیوسته تکرار می‌شوند: داده‌های پرداخت غنی‌تر، تسویه بلادرنگ، پول توکنی، تصمیم‌گیری هوش مصنوعی، بانکداری باز، تاب‌آوری عملیاتی، تمرکز ابری و شواهد نظارتی قوی‌تر. اگر جداگانه بررسی شوند، این فشارها پراکندگی برنامه‌ای ایجاد می‌کنند. اگر به‌عنوان یک معماری واحد بررسی شوند، اهرم عملیاتی می‌سازند ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")، [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## مبنای معماری ۲۰۲۶
 
@@ -42,7 +42,7 @@ keywords: "پرداخت‌های هوش مصنوعی ۲۰۲۶, تقلب در پ�
 
 ### ۲. داده به‌مثابه صفحه کنترل
 
-داده ساخت‌یافته، حکمرانی‌شده و قابل‌ردیابی، شالوده است. بدون داده قابل‌استفاده، خودکارسازی شکننده می‌شود و انطباق دستی می‌گردد. با داده قابل‌استفاده، بانک‌ها می‌توانند هوش مسیریابی، کنترل‌های بلادرنگ و تحلیل‌های رو به مشتری بسازند ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+داده ساخت‌یافته، حکمرانی‌شده و قابل‌ردیابی، شالوده است. بدون داده قابل‌استفاده، خودکارسازی شکننده می‌شود و انطباق دستی می‌گردد. با داده قابل‌استفاده، بانک‌ها می‌توانند هوش مسیریابی، کنترل‌های بلادرنگ و تحلیل‌های رو به مشتری بسازند ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### ۳. هماهنگ‌سازی در سراسر ریل‌ها و پلتفرم‌ها
 
@@ -109,5 +109,5 @@ keywords: "پرداخت‌های هوش مصنوعی ۲۰۲۶, تقلب در پ�
 ## منابع
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").

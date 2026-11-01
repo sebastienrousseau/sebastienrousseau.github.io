@@ -25,7 +25,7 @@ Champion ialah tuas yang memaksanya berlaku.
 > - **Gilt didahulukan kerana ia aset yang paling sukar untuk dibetulkan.** HQLA atas DLT, diselesaikan secara atomik terhadap tunai yang ditokenkan, mengesahkan seluruh timbunan — penerbitan, dagangan, repo, cagaran, wang bank pusat — pada kumpulan paun sterling yang paling mendalam ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **Repo intraday ialah ganjaran segera.** Repo atomik T+0 bagi gilt yang ditokenkan melepaskan modal yang hari ini terbiar sebagai penampan kecairan hari sama. Penjimatan itu jatuh terus kepada ROE.
 > - **Orkestrasi menggantikan rangkaian tersendiri.** Regulated Liability Network, Canton, DLT bank swasta, RTGS, dan wang bank perdagangan yang ditokenkan setiap satunya membawa aliran kerja yang sudah dijalankan oleh bank. Tugasnya adalah menghala merentasinya, bukan memilih satu.
-> - **Policy-as-code ialah satu-satunya model pematuhan yang mampu mengikut rentak.** Sekatan, KYC, had kedudukan, gerbang bidang kuasa — dikodkan dalam lapisan penyelesaian, dilaksanakan secara atomik bersama dagangan, menghasilkan jejak audit kriptografi dan bukan log yang terpaksa dipercayai oleh pengawal selia ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Policy-as-code ialah satu-satunya model pematuhan yang mampu mengikut rentak.** Sekatan, KYC, had kedudukan, gerbang bidang kuasa — dikodkan dalam lapisan penyelesaian, dilaksanakan secara atomik bersama dagangan, menghasilkan jejak audit kriptografi dan bukan log yang terpaksa dipercayai oleh pengawal selia ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Seni bina ialah kubu.** Pemenang menganyam aliran kerja, data, rel, kawalan, dan ekonomi unit menjadi satu model operasi. Yang kalah menjalankan portfolio perintis yang terputus hubungan dan menggelarnya strategi.
 >
 ---
@@ -62,7 +62,7 @@ Bermula dengan geseran. Kecairan terperangkap, kegagalan penyelesaian, kos penye
 
 ### Data sebagai Satah Kawalan
 
-Muatan [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) yang terikat kepada cincang transaksi atas rantai menjadikan data penyelesaian sebagai satu sumber kebenaran tunggal. Tanpa ikatan itu, automasi kontrak pintar menjadi rapuh dan penyesuaian kembali kepada hamparan. Dengannya, bank memperoleh pemprosesan lurus, kawalan masa nyata, dan analitik yang klien benar-benar sanggup bayar ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Muatan [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) yang terikat kepada cincang transaksi atas rantai menjadikan data penyelesaian sebagai satu sumber kebenaran tunggal. Tanpa ikatan itu, automasi kontrak pintar menjadi rapuh dan penyesuaian kembali kepada hamparan. Dengannya, bank memperoleh pemprosesan lurus, kawalan masa nyata, dan analitik yang klien benar-benar sanggup bayar ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### Orkestrasi Merentasi Rel
 
@@ -143,5 +143,5 @@ Mata asas dijimatkan pada pembiayaan cagaran. Pengurangan penampan kecairan intr
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").

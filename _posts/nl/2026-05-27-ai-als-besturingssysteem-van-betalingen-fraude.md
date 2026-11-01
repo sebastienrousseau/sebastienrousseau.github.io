@@ -108,7 +108,7 @@ AI wordt in 2026 het besturingssysteem van betalingen, met een verschuiving van 
 > **Bestuurssamenvatting / Kernpunten**
 >
 > - **Payments Intelligence is nu strategisch.** Het onderwerp is gekoppeld aan operatiemodel, veerkracht, klantwaarde en toezichtbewijs, niet aan een smalle productlancering ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **Het ontwerpprincipe is realtime controle.** Banken hebben architectuur nodig die beleid, product, data, railkeuze, risicocontroles en meetbare economie verbindt ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Het ontwerpprincipe is realtime controle.** Banken hebben architectuur nodig die beleid, product, data, railkeuze, risicocontroles en meetbare economie verbindt ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Het controlemodel moet realtime zijn.** Beslissingen rond fraude, liquiditeit, compliance, afwikkeling en operationeel risico moeten draaien op de snelheid van de workflow, niet ná het feit.
 > - **Datakwaliteit wordt commercieel voordeel.** Gestructureerde data, transactiecontext, auditlogs en identiteitssignalen worden het substraat voor automatisering en klantgerichte producten.
 > - **Fragmentatie is de vijand.** Een bank die geïsoleerde pilots bouwt rond elke rail, token, model of compliance-eis creëert toekomstig operationeel risico.
@@ -120,7 +120,7 @@ AI wordt in 2026 het besturingssysteem van betalingen, met een verschuiving van 
 
 De sector heeft de adoptiefase achter zich. Het volstaat niet meer om aan te sluiten op een rail, een bericht te migreren, een AI-proof-of-concept te draaien of een tokenisatiepilot aan te kondigen. In 2026 ligt de strategische voorsprong in het orkestreren van die capaciteiten tegen een echte workflow en vervolgens bewijzen dat die workflow veiliger, sneller, goedkoper, veerkrachtiger of nuttiger voor klanten is.
 
-Daarom is payments intelligence nu een onderwerp voor de Raad van Bestuur. Dezelfde drukfactoren keren steeds terug: rijkere betaaldata, realtime afwikkeling, getokeniseerd geld, AI-besluitvorming, Open Banking, operationele veerkracht, cloudconcentratie en sterker toezichtbewijs. Apart behandeld leveren die drukfactoren programmawildgroei op. Als één architectuur behandeld leveren ze operationele hefboom op ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Daarom is payments intelligence nu een onderwerp voor de Raad van Bestuur. Dezelfde drukfactoren keren steeds terug: rijkere betaaldata, realtime afwikkeling, getokeniseerd geld, AI-besluitvorming, Open Banking, operationele veerkracht, cloudconcentratie en sterker toezichtbewijs. Apart behandeld leveren die drukfactoren programmawildgroei op. Als één architectuur behandeld leveren ze operationele hefboom op ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## De architectuurbasis voor 2026
 
@@ -130,7 +130,7 @@ De bank moet beginnen bij de frictie: vastliggende liquiditeit, afwikkelingsvert
 
 ### 2. Data als controlelaag
 
-Gestructureerde, beheerste en traceerbare data vormen het fundament. Zonder bruikbare data wordt automatisering broos en compliance handmatig. Met bruikbare data kunnen banken routeringsintelligentie, realtime controles en klantgerichte analytics bouwen ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Gestructureerde, beheerste en traceerbare data vormen het fundament. Zonder bruikbare data wordt automatisering broos en compliance handmatig. Met bruikbare data kunnen banken routeringsintelligentie, realtime controles en klantgerichte analytics bouwen ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orkestratie over rails en platformen
 
@@ -197,7 +197,7 @@ Succes moet worden gemeten aan eenheidseconomie, veerkrachtbewijs, datakwaliteit
 ## Referenties
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

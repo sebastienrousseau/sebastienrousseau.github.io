@@ -113,7 +113,7 @@ site_software: "Static Site Generator, Rust"
 > - **Гилты идут первыми, потому что это самый трудный актив.** HQLA на DLT, расчёт атомарно против токенизированных денег, валидирует весь стек — выпуск, торговля, репо, обеспечение, деньги центрального банка — на самом глубоком пуле в фунте стерлингов ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **Внутридневное репо — немедленный приз.** Атомарное репо T+0 по токенизированным гилтам высвобождает капитал, который сегодня лежит мёртвым грузом как буфер ликвидности на день. Экономия идёт прямо в ROE.
 > - **Оркестрация заменяет автономные сети.** Regulated Liability Network, Canton, частные банковские DLT, RTGS и токенизированные деньги коммерческих банков — каждая из этих сред несёт рабочие процессы, которые банки уже выполняют. Задача — маршрутизировать между ними, а не выбирать одну.
-> - **Policy-as-code — единственная модель комплаенса, которая успевает.** Санкции, KYC, лимиты позиций, юрисдикционные шлюзы — закодированы в расчётном слое, исполняются атомарно вместе со сделкой, выдавая криптографический аудиторский след, а не журнал, которому регулятор обязан верить ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Обзор платёжной отрасли — май 2026")).
+> - **Policy-as-code — единственная модель комплаенса, которая успевает.** Санкции, KYC, лимиты позиций, юрисдикционные шлюзы — закодированы в расчётном слое, исполняются атомарно вместе со сделкой, выдавая криптографический аудиторский след, а не журнал, которому регулятор обязан верить ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Обзор платёжной отрасли — май 2026")).
 > - **Архитектура — это ров.** Победители вплетают рабочий процесс, данные, платёжный канал, контроль и юнит-экономику в одну операционную модель. Проигравшие держат портфель несвязанных пилотов и называют это стратегией.
 >
 ---
@@ -150,7 +150,7 @@ DSS — действующий режим. Чтобы использовать �
 
 ### Данные как плоскость управления
 
-Полезные нагрузки ISO 20022, привязанные к хешам транзакций в цепи, превращают расчётные данные в единый источник истины. Без этой привязки автоматизация смарт-контрактов хрупка, а сверка скатывается обратно в таблицы. С ней банки получают straight-through processing, контроли в реальном времени и аналитику, за которую клиенты реально готовы платить ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Обзор платёжной отрасли — май 2026")).
+Полезные нагрузки ISO 20022, привязанные к хешам транзакций в цепи, превращают расчётные данные в единый источник истины. Без этой привязки автоматизация смарт-контрактов хрупка, а сверка скатывается обратно в таблицы. С ней банки получают straight-through processing, контроли в реальном времени и аналитику, за которую клиенты реально готовы платить ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Обзор платёжной отрасли — май 2026")).
 
 ### Оркестрация по платёжным каналам
 
@@ -231,7 +231,7 @@ Regulated Liability Network — модель общего реестра для 
 - GOV.UK, (2026). [Британский финтех получает поддержку для освоения платёжных технологий будущего ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
-- Association of Corporate Treasurers, (2026). [Обзор платёжной отрасли — май 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Обзор платёжной отрасли").
+- Association of Corporate Treasurers, (2026). [Обзор платёжной отрасли — май 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Обзор платёжной отрасли").
 - Global Government Finance, (2026). [Координатор оптовых цифровых рынков Великобритании ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Координатор оптовых цифровых рынков Великобритании").
 
 <!-- enrich-start -->

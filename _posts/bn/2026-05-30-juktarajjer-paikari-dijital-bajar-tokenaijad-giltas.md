@@ -113,7 +113,7 @@ site_software: "Static Site Generator, Rust"
 > - **গিল্ট প্রথমে যায় কারণ এটি সঠিকভাবে করা সবচেয়ে কঠিন সম্পদ।** DLT-তে HQLA, টোকেনায়িত নগদের বিপরীতে পারমাণবিকভাবে নিষ্পত্তি — গভীরতম স্টার্লিং পুলে পুরো স্ট্যাক যাচাই করে: ইস্যু, লেনদেন, রেপো, জামানত, কেন্দ্রীয়-ব্যাংক অর্থ ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox"))।
 > - **ইন্ট্রাডে রেপো হল তাৎক্ষণিক পুরস্কার।** টোকেনায়িত গিল্টের T+0 পারমাণবিক রেপো এমন মূলধন মুক্ত করে, যা আজ একই-দিনের তরলতা বাফার হিসেবে অলস বসে থাকে। সাশ্রয় সরাসরি ROE-তে নেমে আসে।
 > - **অর্কেস্ট্রেশন স্বতন্ত্র নেটওয়ার্কের জায়গা নেয়।** Regulated Liability Network, Canton, ব্যক্তিগত ব্যাংক DLT, RTGS এবং টোকেনায়িত বাণিজ্যিক ব্যাংক অর্থ — প্রতিটি ব্যাংকের ইতিমধ্যে চলমান কর্মপ্রবাহ বহন করে। কাজ হল সেগুলির ভেতরে রাউট করা, একটিকে বেছে নেওয়া নয়।
-> - **policy-as-code হল একমাত্র কমপ্লায়েন্স মডেল, যা গতি বজায় রাখে।** নিষেধাজ্ঞা, KYC, পজিশন সীমা, এখতিয়ারগত গেট — নিষ্পত্তি স্তরে এনকোড করা, লেনদেনের সঙ্গে পারমাণবিকভাবে কার্যকর, ফলে একটি ক্রিপ্টোগ্রাফিক অডিট ট্রেইল তৈরি হয় — নিয়ন্ত্রককে বিশ্বাস করতে হয় এমন কোনো লগ নয় ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "পেমেন্ট ল্যান্ডস্কেপ আপডেট – মে ২০২৬"))।
+> - **policy-as-code হল একমাত্র কমপ্লায়েন্স মডেল, যা গতি বজায় রাখে।** নিষেধাজ্ঞা, KYC, পজিশন সীমা, এখতিয়ারগত গেট — নিষ্পত্তি স্তরে এনকোড করা, লেনদেনের সঙ্গে পারমাণবিকভাবে কার্যকর, ফলে একটি ক্রিপ্টোগ্রাফিক অডিট ট্রেইল তৈরি হয় — নিয়ন্ত্রককে বিশ্বাস করতে হয় এমন কোনো লগ নয় ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "পেমেন্ট ল্যান্ডস্কেপ আপডেট – মে ২০২৬"))।
 > - **স্থাপত্যই খাত।** বিজয়ীরা কর্মপ্রবাহ, ডেটা, পেমেন্ট চ্যানেল, নিয়ন্ত্রণ এবং ইউনিট অর্থনীতিকে একটিমাত্র পরিচালন মডেলে বুনে নেয়। পরাজিতরা সংযোগহীন পাইলটের পোর্টফোলিও চালায় এবং সেটিকে কৌশল বলে।
 >
 ---
@@ -150,7 +150,7 @@ DSS একটি সক্রিয় ব্যবস্থা। PoC নয়
 
 ### নিয়ন্ত্রণ পরিকাঠামো হিসেবে ডেটা
 
-অন-চেইন লেনদেন হ্যাশের সঙ্গে আবদ্ধ ISO 20022 পেলোড নিষ্পত্তি ডেটাকে সত্যের একটিমাত্র উৎসে পরিণত করে। সেই বাঁধন ছাড়া স্মার্ট-কন্ট্রাক্ট স্বয়ংক্রিয়করণ ভঙ্গুর এবং মিলকরণ স্প্রেডশিটে ফিরে যায়। সেটি থাকলে ব্যাংকগুলি STP, রিয়েল-টাইম নিয়ন্ত্রণ ও এমন অ্যানালিটিক্স পায়, যার জন্য গ্রাহক প্রকৃতপক্ষে অর্থ দেবে ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "পেমেন্ট ল্যান্ডস্কেপ আপডেট – মে ২০২৬"))।
+অন-চেইন লেনদেন হ্যাশের সঙ্গে আবদ্ধ ISO 20022 পেলোড নিষ্পত্তি ডেটাকে সত্যের একটিমাত্র উৎসে পরিণত করে। সেই বাঁধন ছাড়া স্মার্ট-কন্ট্রাক্ট স্বয়ংক্রিয়করণ ভঙ্গুর এবং মিলকরণ স্প্রেডশিটে ফিরে যায়। সেটি থাকলে ব্যাংকগুলি STP, রিয়েল-টাইম নিয়ন্ত্রণ ও এমন অ্যানালিটিক্স পায়, যার জন্য গ্রাহক প্রকৃতপক্ষে অর্থ দেবে ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "পেমেন্ট ল্যান্ডস্কেপ আপডেট – মে ২০২৬"))।
 
 ### পেমেন্ট চ্যানেল জুড়ে অর্কেস্ট্রেশন
 
@@ -231,7 +231,7 @@ Regulated Liability Network একাধিক নিয়ন্ত্রিত
 - GOV.UK, (2026). [যুক্তরাজ্যের ফিনটেক ভবিষ্যৎ পেমেন্ট প্রযুক্তি গ্রহণে সমর্থিত ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "যুক্তরাজ্যের ফিনটেক সমর্থিত")।
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")।
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox")।
-- Association of Corporate Treasurers, (2026). [পেমেন্ট ল্যান্ডস্কেপ আপডেট – মে ২০২৬ ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "পেমেন্ট ল্যান্ডস্কেপ আপডেট")।
+- Association of Corporate Treasurers, (2026). [পেমেন্ট ল্যান্ডস্কেপ আপডেট – মে ২০২৬ ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "পেমেন্ট ল্যান্ডস্কেপ আপডেট")।
 - Global Government Finance, (2026). [যুক্তরাজ্যের পাইকারি ডিজিটাল বাজার চ্যাম্পিয়ন ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "যুক্তরাজ্যের পাইকারি ডিজিটাল বাজার চ্যাম্পিয়ন")।
 
 <!-- enrich-start -->

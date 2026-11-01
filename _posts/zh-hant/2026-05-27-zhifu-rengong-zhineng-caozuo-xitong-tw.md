@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 > **執行摘要 / 關鍵要點**
 >
 > - **支付情報已成為策略議題。**主題已連結至作業模式、韌性、客戶價值與監管證據,而非僅止於某項產品上線([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"))。
-> - **設計原則是即時控制。**銀行需要能銜接政策、產品、資料、支付軌選擇、風險控制與可衡量經濟的架構([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
+> - **設計原則是即時控制。**銀行需要能銜接政策、產品、資料、支付軌選擇、風險控制與可衡量經濟的架構([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
 > - **控制模式必須即時。**詐騙、流動性、法遵、清算與作業風險決策都必須以工作流的速度運行,而非事後補救。
 > - **資料品質成為商業優勢。**結構化資料、交易上下文、稽核日誌與身分訊號,構成自動化與面向客戶產品的底層基礎。
 > - **碎片化是最大敵人。**若銀行針對每條支付軌、代幣、模型或法遵要求各自建立孤立試點,將為未來累積作業風險。
@@ -120,7 +120,7 @@ site_software: "Static Site Generator, Rust"
 
 產業已跨越採用階段。加入一條支付軌、遷移一則訊息、執行一次 AI 概念驗證或宣布一項代幣化試點,已不足以構成競爭優勢。2026 年的策略邊際來自將這些能力編排到真實工作流之上,並證明該工作流更安全、更快、更便宜、更具韌性,或對客戶更有價值。
 
-這也是支付情報如今成為董事會層級議題的原因。同樣的壓力一再出現:更豐富的支付資料、即時清算、代幣化貨幣、AI 決策、開放銀行、作業韌性、雲端集中度,以及更嚴格的監管證據要求。各自分立處理,只會造成方案氾濫;整合為單一架構,則能創造作業槓桿([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")、[Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
+這也是支付情報如今成為董事會層級議題的原因。同樣的壓力一再出現:更豐富的支付資料、即時清算、代幣化貨幣、AI 決策、開放銀行、作業韌性、雲端集中度,以及更嚴格的監管證據要求。各自分立處理,只會造成方案氾濫;整合為單一架構,則能創造作業槓桿([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")、[Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
 
 ## 2026 年架構基線
 
@@ -130,7 +130,7 @@ site_software: "Static Site Generator, Rust"
 
 ### 2. 以資料為控制平面
 
-結構化、受治理、可追溯的資料是基礎。沒有可用的資料,自動化會變脆弱,法遵會回到人工。具備可用資料,銀行就能建立路由情報、即時控制與面向客戶的分析([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
+結構化、受治理、可追溯的資料是基礎。沒有可用的資料,自動化會變脆弱,法遵會回到人工。具備可用資料,銀行就能建立路由情報、即時控制與面向客戶的分析([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
 
 ### 3. 跨支付軌與跨平台的編排
 
@@ -197,7 +197,7 @@ site_software: "Static Site Generator, Rust"
 ## 參考資料
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

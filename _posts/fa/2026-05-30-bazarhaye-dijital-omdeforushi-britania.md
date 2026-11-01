@@ -25,7 +25,7 @@ keywords: "سندباکس اوراق بهادار دیجیتال بریتانی�
 > - **اوراق قرضه دولتی نخست می‌آیند زیرا دشوارترین دارایی برای درست‌کردن‌اند.** HQLA روی DLT، که به‌صورت اتمی در برابر پول نقد توکنی‌شده تسویه می‌شود، کل پشته را اعتبارسنجی می‌کند — انتشار، معامله، ریپو، وثیقه، پول بانک مرکزی — روی عمیق‌ترین حوضچه به پوند ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **ریپوی درون‌روزی جایزه فوری است.** ریپوی اتمی T+0 اوراق قرضه دولتی توکنی‌شده سرمایه‌ای را آزاد می‌کند که امروز به‌صورت بلااستفاده به‌عنوان بافر نقدینگی همان‌روزه راکد مانده است. صرفه‌جویی‌ها مستقیماً به ROE می‌رسند.
 > - **ارکستراسیون جایگزین شبکه‌های مستقل می‌شود.** شبکه بدهی تنظیم‌شده (Regulated Liability Network)، کانتون، DLTهای خصوصی بانکی، RTGS و پول تجاری بانکی توکنی‌شده هرکدام جریان‌های کاری‌ای را حمل می‌کنند که بانک‌ها هم‌اکنون اجرا می‌کنند. کار این است که در سراسر آن‌ها مسیریابی شود، نه اینکه یکی انتخاب شود.
-> - **سیاست‌به‌مثابه‌کد تنها مدل انطباقی است که همگام می‌ماند.** تحریم‌ها، KYC، محدودیت‌های موقعیت، دروازه‌های حوزه قضایی — کدگذاری‌شده در لایه تسویه، اجراشده به‌صورت اتمی همراه با معامله، که یک ردپای حسابرسی رمزنگارانه تولید می‌کند نه لاگی که ناظر باید به آن اعتماد کند ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **سیاست‌به‌مثابه‌کد تنها مدل انطباقی است که همگام می‌ماند.** تحریم‌ها، KYC، محدودیت‌های موقعیت، دروازه‌های حوزه قضایی — کدگذاری‌شده در لایه تسویه، اجراشده به‌صورت اتمی همراه با معامله، که یک ردپای حسابرسی رمزنگارانه تولید می‌کند نه لاگی که ناظر باید به آن اعتماد کند ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **معماری همان سنگر است.** برندگان جریان کاری، داده، ریل، کنترل و اقتصاد واحد را در یک مدل عملیاتی واحد در هم می‌تنند. بازندگان مجموعه‌ای از خلبانی‌های ناهم‌بسته را اجرا می‌کنند و آن را راهبرد می‌نامند.
 >
 ---
@@ -62,7 +62,7 @@ DSS یک رژیم زنده است. برای استفاده از آن به‌مث
 
 ### داده به‌مثابه صفحه کنترل
 
-بارهای مفید [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) که به هش‌های تراکنش روی‌زنجیره‌ای متصل شده‌اند، داده تسویه را به یک منبع واحد حقیقت بدل می‌کنند. بدون آن اتصال، اتوماسیون قرارداد هوشمند شکننده است و تطبیق به صفحه‌گسترده بازمی‌گردد. با آن، بانک‌ها پردازش سرتاسری، کنترل‌های بلادرنگ و تحلیل‌هایی به دست می‌آورند که مشتریان واقعاً برایشان پول خواهند پرداخت ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+بارهای مفید [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) که به هش‌های تراکنش روی‌زنجیره‌ای متصل شده‌اند، داده تسویه را به یک منبع واحد حقیقت بدل می‌کنند. بدون آن اتصال، اتوماسیون قرارداد هوشمند شکننده است و تطبیق به صفحه‌گسترده بازمی‌گردد. با آن، بانک‌ها پردازش سرتاسری، کنترل‌های بلادرنگ و تحلیل‌هایی به دست می‌آورند که مشتریان واقعاً برایشان پول خواهند پرداخت ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### ارکستراسیون در سراسر ریل‌ها
 
@@ -143,5 +143,5 @@ DSS یک رژیم مشترک FCA/بانک انگلستان است که به شر
 - GOV.UK، (۲۰۲۶). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - Bank of England، (۲۰۲۶). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA، (۲۰۲۶). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
-- Association of Corporate Treasurers، (۲۰۲۶). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers، (۲۰۲۶). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance، (۲۰۲۶). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").

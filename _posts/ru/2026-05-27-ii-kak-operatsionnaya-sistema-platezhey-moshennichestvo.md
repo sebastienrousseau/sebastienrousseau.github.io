@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 > **Резюме для руководства / Ключевые выводы**
 >
 > - **Платёжный интеллект стал стратегическим.** Тема привязана к операционной модели, устойчивости, ценности для клиента и регуляторным доказательствам, а не к узкому запуску продукта ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **Принцип проектирования — контроль в реальном времени.** Банкам нужна архитектура, которая связывает политику, продукт, данные, выбор рельса, риск-контроли и измеримую экономику ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Принцип проектирования — контроль в реальном времени.** Банкам нужна архитектура, которая связывает политику, продукт, данные, выбор рельса, риск-контроли и измеримую экономику ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Модель контроля обязана быть в реальном времени.** Решения по мошенничеству, ликвидности, комплаенсу, расчётам и операционному риску должны исполняться на скорости рабочего процесса, а не постфактум.
 > - **Качество данных становится коммерческим преимуществом.** Структурированные данные, контекст транзакций, журналы аудита и сигналы идентичности становятся субстратом для автоматизации и клиентских продуктов.
 > - **Фрагментация — враг.** Банк, строящий изолированные пилоты вокруг каждого рельса, токена, модели или комплаенс-требования, создаёт будущий операционный риск.
@@ -120,7 +120,7 @@ site_software: "Static Site Generator, Rust"
 
 Отрасль вышла за рамки этапа адопции. Уже недостаточно подключиться к рельсу, мигрировать сообщение, провести PoC по ИИ или объявить пилот токенизации. В 2026 году стратегическое преимущество приходит из оркестрации этих возможностей вокруг реального рабочего процесса и доказательства того, что процесс стал безопаснее, быстрее, дешевле, устойчивее или полезнее для клиентов.
 
-Именно поэтому платёжный интеллект — теперь тема правления. Те же давления повторяются: более богатые платёжные данные, расчёты в реальном времени, токенизированные деньги, ИИ-решения, Open Banking, операционная устойчивость, концентрация в облаке и более жёсткие регуляторные доказательства. По отдельности эти давления порождают расползание программ. Как единая архитектура — создают операционный рычаг ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Именно поэтому платёжный интеллект — теперь тема правления. Те же давления повторяются: более богатые платёжные данные, расчёты в реальном времени, токенизированные деньги, ИИ-решения, Open Banking, операционная устойчивость, концентрация в облаке и более жёсткие регуляторные доказательства. По отдельности эти давления порождают расползание программ. Как единая архитектура — создают операционный рычаг ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Архитектурная база 2026 года
 
@@ -130,7 +130,7 @@ site_software: "Static Site Generator, Rust"
 
 ### 2. Данные как плоскость контроля
 
-Структурированные, управляемые и прослеживаемые данные — фундамент. Без пригодных данных автоматизация становится хрупкой, а комплаенс — ручным. С пригодными данными банки создают интеллект маршрутизации, контроли в реальном времени и клиентскую аналитику ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Структурированные, управляемые и прослеживаемые данные — фундамент. Без пригодных данных автоматизация становится хрупкой, а комплаенс — ручным. С пригодными данными банки создают интеллект маршрутизации, контроли в реальном времени и клиентскую аналитику ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Оркестрация по рельсам и платформам
 
@@ -197,7 +197,7 @@ site_software: "Static Site Generator, Rust"
 ## Ссылки
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

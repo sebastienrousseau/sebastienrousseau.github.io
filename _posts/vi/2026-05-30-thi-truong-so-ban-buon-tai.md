@@ -113,7 +113,7 @@ Tài chính bán buôn mã hóa không còn là thí nghiệm tư duy. Năm 2026
 > - **Gilt đi trước vì là tài sản khó làm đúng nhất.** HQLA trên DLT, quyết toán nguyên tử đối ứng với tiền mã hóa, xác thực toàn bộ ngăn xếp — phát hành, giao dịch, repo, tài sản đảm bảo, tiền ngân hàng trung ương — trên kho đồng bảng sâu nhất ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **Repo trong ngày là phần thưởng tức thì.** Repo nguyên tử T+0 của gilt mã hóa giải phóng vốn hôm nay đang nằm im như bộ đệm thanh khoản trong ngày. Khoản tiết kiệm rơi thẳng xuống ROE.
 > - **Điều phối thay thế các mạng độc lập.** Regulated Liability Network, Canton, DLT ngân hàng riêng tư, RTGS và tiền ngân hàng thương mại mã hóa — mỗi cái mang luồng công việc mà ngân hàng đã vận hành. Công việc là định tuyến qua tất cả, không phải chọn một.
-> - **Policy-as-code là mô hình tuân thủ duy nhất theo kịp.** Trừng phạt, KYC, hạn mức trạng thái, cổng quyền tài phán — được mã hóa trong lớp quyết toán, thực thi nguyên tử cùng giao dịch, tạo ra dấu vết kiểm toán bằng mật mã thay vì một bản ghi mà cơ quan quản lý phải tin ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Cập nhật bối cảnh Thanh toán – Tháng 5/2026")).
+> - **Policy-as-code là mô hình tuân thủ duy nhất theo kịp.** Trừng phạt, KYC, hạn mức trạng thái, cổng quyền tài phán — được mã hóa trong lớp quyết toán, thực thi nguyên tử cùng giao dịch, tạo ra dấu vết kiểm toán bằng mật mã thay vì một bản ghi mà cơ quan quản lý phải tin ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Cập nhật bối cảnh Thanh toán – Tháng 5/2026")).
 > - **Kiến trúc là hào nước.** Người thắng dệt luồng công việc, dữ liệu, kênh thanh toán, kiểm soát và kinh tế đơn vị vào một mô hình vận hành duy nhất. Người thua chạy danh mục các thí điểm rời rạc và gọi đó là chiến lược.
 >
 ---
@@ -150,7 +150,7 @@ Bắt đầu từ ma sát. Thanh khoản bị mắc kẹt, đứt gãy quyết t
 
 ### Dữ liệu là Mặt phẳng Kiểm soát
 
-Tải trọng ISO 20022 ràng buộc với mã băm giao dịch trên chuỗi biến dữ liệu quyết toán thành một nguồn sự thật duy nhất. Thiếu ràng buộc đó, tự động hóa hợp đồng thông minh trở nên giòn và đối soát quay về bảng tính. Có ràng buộc đó, ngân hàng nhận được xử lý xuyên suốt (STP), kiểm soát thời gian thực và phân tích mà khách hàng thực sự trả tiền ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Cập nhật bối cảnh Thanh toán – Tháng 5/2026")).
+Tải trọng ISO 20022 ràng buộc với mã băm giao dịch trên chuỗi biến dữ liệu quyết toán thành một nguồn sự thật duy nhất. Thiếu ràng buộc đó, tự động hóa hợp đồng thông minh trở nên giòn và đối soát quay về bảng tính. Có ràng buộc đó, ngân hàng nhận được xử lý xuyên suốt (STP), kiểm soát thời gian thực và phân tích mà khách hàng thực sự trả tiền ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Cập nhật bối cảnh Thanh toán – Tháng 5/2026")).
 
 ### Điều phối Qua các Kênh Thanh toán
 
@@ -231,7 +231,7 @@ Quy tắc tuân thủ — sàng lọc trừng phạt, xác thực KYC, hạn m�
 - GOV.UK, (2026). [Fintech Anh được hậu thuẫn để đón công nghệ thanh toán tương lai ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "Fintech Anh được hậu thuẫn").
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
-- Association of Corporate Treasurers, (2026). [Cập nhật bối cảnh Thanh toán – Tháng 5/2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Cập nhật bối cảnh Thanh toán").
+- Association of Corporate Treasurers, (2026). [Cập nhật bối cảnh Thanh toán – Tháng 5/2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Cập nhật bối cảnh Thanh toán").
 - Global Government Finance, (2026). [Điều phối viên thị trường số bán buôn Anh ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Điều phối viên thị trường số bán buôn Anh").
 
 <!-- enrich-start -->

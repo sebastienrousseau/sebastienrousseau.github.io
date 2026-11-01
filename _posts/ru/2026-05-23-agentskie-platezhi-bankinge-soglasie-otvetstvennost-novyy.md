@@ -101,13 +101,13 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-Агентские платежи вышли из презентационных слайдов в плоскость рыночных свидетельств. Mastercard и Rabobank провели платёж, инициированный AI-агентом, в Нидерландах: агент забронировал дегустацию кофе на Priceless.com без прямого доступа к карточным реквизитам, при этом явное согласие потребителя было зафиксировано до исполнения ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). Стратегический вопрос для банков теперь — архитектура согласия: каким образом финансовый институт доказывает, что машинный платёж был действительно санкционирован стоящим за ним физическим или корпоративным принципалом.
+Агентские платежи вышли из презентационных слайдов в плоскость рыночных свидетельств. Mastercard и Rabobank провели платёж, инициированный AI-агентом, в Нидерландах: агент забронировал дегустацию кофе на Priceless.com без прямого доступа к карточным реквизитам, при этом явное согласие потребителя было зафиксировано до исполнения ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). Стратегический вопрос для банков теперь — архитектура согласия: каким образом финансовый институт доказывает, что машинный платёж был действительно санкционирован стоящим за ним физическим или корпоративным принципалом.
 
 ---
 
 > **Executive Summary / Ключевые выводы**
 >
-> - **Первые рыночные сигналы уже работают.** Mastercard и Rabobank провели транзакцию AI-агента в Нидерландах с использованием Mastercard Agent Pay; агент был лишён прямого доступа к карточным данным ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Первые рыночные сигналы уже работают.** Mastercard и Rabobank провели транзакцию AI-агента в Нидерландах с использованием Mastercard Agent Pay; агент был лишён прямого доступа к карточным данным ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Протоколы агентских платежей формируются раньше, чем устоится право.** Fenwick относит к этому слою AP2, A2A, x402, MCP и MPP — протокольные усилия в области совместимости и авторизации агентов ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **Согласие — стержневая банковская проблема.** Криптографические мандаты в духе AP2 призваны фиксировать пользовательские инструкции и финальное одобрение как аудируемые доказательства намерения ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **Ответственность остаётся неурегулированной.** Действующее платёжное право проектировалось под транзакции, решаемые человеком, а не под автономные AI-системы, действующие по делегированному полномочию ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
@@ -198,7 +198,7 @@ J.P. Morgan ожидает, что агентская коммерция нач�
 ## Источники
 
 - Fenwick, (2026). [Is 2026 the Year of Agentic Payments? ⧉](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 

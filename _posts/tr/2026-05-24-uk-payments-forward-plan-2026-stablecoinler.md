@@ -108,7 +108,7 @@ UK Payments Forward Plan ve Nisan 2026 politika paketi; geleneksel ödemeler, st
 > **Yönetici Özeti / Temel Çıkarımlar**
 >
 > - **Ödeme Politikası artık stratejiktir.** Konu, dar bir ürün lansmanından çok işletme modeline, dayanıklılığa, müşteri değerine ve düzenleyici kanıta bağlanmıştır ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **Tasarım ilkesi tek bir düzenleyici perimetredir.** Bankaların; politikayı, ürünü, veriyi, ray seçimini, risk kontrollerini ve ölçülebilir ekonomiyi birbirine bağlayan bir mimariye ihtiyacı vardır ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Tasarım ilkesi tek bir düzenleyici perimetredir.** Bankaların; politikayı, ürünü, veriyi, ray seçimini, risk kontrollerini ve ölçülebilir ekonomiyi birbirine bağlayan bir mimariye ihtiyacı vardır ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Kontrol modeli gerçek zamanlı olmalıdır.** Dolandırıcılık, likidite, uyum, mutabakat ve operasyonel risk kararları iş akışının hızında işlemelidir, olaydan sonra değil.
 > - **Veri kalitesi ticari avantaja dönüşür.** Yapılandırılmış veri, işlem bağlamı, denetim kayıtları ve kimlik sinyalleri; otomasyonun ve müşteriye dönük ürünlerin zemini hâline gelir.
 > - **Parçalanma asıl düşmandır.** Her ray, token, model veya uyum gereksinimi etrafında izole pilotlar inşa eden bir banka, gelecek operasyonel risk üretir.
@@ -120,7 +120,7 @@ UK Payments Forward Plan ve Nisan 2026 politika paketi; geleneksel ödemeler, st
 
 Sektör benimseme aşamasının ötesine geçti. Artık bir raya katılmak, bir mesajı taşımak, bir yapay zeka kavram kanıtı yürütmek ya da bir tokenleştirme pilotu duyurmak yeterli değil. 2026'da stratejik üstünlük; bu yetenekleri gerçek bir iş akışına karşı orkestre etmekten ve ardından iş akışının daha güvenli, daha hızlı, daha ucuz, daha dayanıklı veya müşteriler için daha kullanışlı olduğunu kanıtlamaktan geçiyor.
 
-Ödeme politikasının artık yönetim kurulu düzeyinde bir konu olmasının nedeni budur. Aynı baskılar tekrar tekrar gündeme geliyor: daha zengin ödeme verisi, gerçek zamanlı mutabakat, tokenleştirilmiş para, yapay zeka karar verme, açık bankacılık, operasyonel dayanıklılık, bulut yoğunlaşması ve daha güçlü düzenleyici kanıt. Bu baskılar ayrı ele alındığında program savrulması yaratır. Tek bir mimari olarak ele alındığında ise işletme kaldıracı üretir ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Ödeme politikasının artık yönetim kurulu düzeyinde bir konu olmasının nedeni budur. Aynı baskılar tekrar tekrar gündeme geliyor: daha zengin ödeme verisi, gerçek zamanlı mutabakat, tokenleştirilmiş para, yapay zeka karar verme, açık bankacılık, operasyonel dayanıklılık, bulut yoğunlaşması ve daha güçlü düzenleyici kanıt. Bu baskılar ayrı ele alındığında program savrulması yaratır. Tek bir mimari olarak ele alındığında ise işletme kaldıracı üretir ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## 2026 Mimari Temeli
 
@@ -130,7 +130,7 @@ Banka; sıkışmış likidite, mutabakat gecikmesi, mutabakat maliyeti, başarı
 
 ### 2. Kontrol Düzlemi Olarak Veri
 
-Yapılandırılmış, yönetilen ve izlenebilir veri temeldir. Kullanılabilir veri olmadan otomasyon kırılganlaşır ve uyum elle yürütülen bir sürece dönüşür. Kullanılabilir veri ile bankalar; yönlendirme zekâsı, gerçek zamanlı kontroller ve müşteriye dönük analitik üretebilir ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Yapılandırılmış, yönetilen ve izlenebilir veri temeldir. Kullanılabilir veri olmadan otomasyon kırılganlaşır ve uyum elle yürütülen bir sürece dönüşür. Kullanılabilir veri ile bankalar; yönlendirme zekâsı, gerçek zamanlı kontroller ve müşteriye dönük analitik üretebilir ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Raylar ve Platformlar Arası Orkestrasyon
 
@@ -197,7 +197,7 @@ Başarı; birim ekonomi, dayanıklılık kanıtı, veri kalitesi, müşteri beni
 ## Referanslar
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

@@ -113,7 +113,7 @@ site_software: "Static Site Generator, Rust"
 > - **गिल्ट पहले इसलिए क्योंकि वे सबसे कठिन परिसंपत्ति हैं।** DLT पर HQLA, टोकनयुक्त नकदी के विरुद्ध परमाणु निपटान, पूरी संरचना को मान्य करता है — निर्गमन, ट्रेडिंग, रेपो, संपार्श्विक, केंद्रीय-बैंक मुद्रा — सबसे गहरे स्टर्लिंग पूल पर ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "डिजिटल प्रतिभूति सैंडबॉक्स"))।
 > - **इंट्राडे रेपो तत्काल पुरस्कार है।** टोकनयुक्त गिल्ट का T+0 परमाणु रेपो वह पूँजी मुक्त करता है जो आज समान-दिवस तरलता बफर के रूप में निष्क्रिय बैठी है। बचत सीधे ROE में उतरती है।
 > - **ऑर्केस्ट्रेशन अलग-थलग नेटवर्क की जगह लेता है।** Regulated Liability Network, Canton, निजी बैंक DLT, RTGS और टोकनयुक्त वाणिज्यिक बैंक मुद्रा — प्रत्येक वे वर्कफ़्लो वहन करते हैं जो बैंक पहले से चलाते हैं। काम है इनके बीच रूट करना, एक चुनना नहीं।
-> - **policy-as-code ही एकमात्र अनुपालन मॉडल है जो साथ चल पाता है।** प्रतिबंध, KYC, स्थिति सीमाएँ, क्षेत्राधिकार द्वार — निपटान परत में कोडित, ट्रेड के साथ परमाणु निष्पादित, और एक क्रिप्टोग्राफिक ऑडिट निशान उत्पन्न करते हैं — न कि कोई लॉग जिस पर नियामक को भरोसा करना पड़े ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "भुगतान परिदृश्य अद्यतन – मई 2026"))।
+> - **policy-as-code ही एकमात्र अनुपालन मॉडल है जो साथ चल पाता है।** प्रतिबंध, KYC, स्थिति सीमाएँ, क्षेत्राधिकार द्वार — निपटान परत में कोडित, ट्रेड के साथ परमाणु निष्पादित, और एक क्रिप्टोग्राफिक ऑडिट निशान उत्पन्न करते हैं — न कि कोई लॉग जिस पर नियामक को भरोसा करना पड़े ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "भुगतान परिदृश्य अद्यतन – मई 2026"))।
 > - **संरचना ही खाई है।** विजेता वर्कफ़्लो, डेटा, भुगतान चैनल, नियंत्रण और इकाई अर्थशास्त्र को एक परिचालन मॉडल में बुनते हैं। पराजित असंबद्ध पायलटों का पोर्टफोलियो चलाते हैं और उसे रणनीति कहते हैं।
 >
 ---
@@ -150,7 +150,7 @@ DSS एक जीवंत व्यवस्था है। इसे PoC क�
 
 ### नियंत्रण तल के रूप में डेटा
 
-ISO 20022 पेलोड ऑन-चेन लेन-देन हैश से बंधे होने पर निपटान डेटा को एकल सत्य स्रोत में बदल देते हैं। उस बंधन के बिना, स्मार्ट-कॉन्ट्रैक्ट स्वचालन भंगुर है और समाधान स्प्रेडशीट पर लौट आता है। उसके साथ, बैंकों को स्ट्रेट-थ्रू प्रोसेसिंग (STP), रीयल-टाइम नियंत्रण और ऐसा विश्लेषण मिलता है जिसके लिए ग्राहक वास्तव में भुगतान करेंगे ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "भुगतान परिदृश्य अद्यतन – मई 2026"))।
+ISO 20022 पेलोड ऑन-चेन लेन-देन हैश से बंधे होने पर निपटान डेटा को एकल सत्य स्रोत में बदल देते हैं। उस बंधन के बिना, स्मार्ट-कॉन्ट्रैक्ट स्वचालन भंगुर है और समाधान स्प्रेडशीट पर लौट आता है। उसके साथ, बैंकों को स्ट्रेट-थ्रू प्रोसेसिंग (STP), रीयल-टाइम नियंत्रण और ऐसा विश्लेषण मिलता है जिसके लिए ग्राहक वास्तव में भुगतान करेंगे ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "भुगतान परिदृश्य अद्यतन – मई 2026"))।
 
 ### भुगतान चैनलों के पार ऑर्केस्ट्रेशन
 
@@ -231,7 +231,7 @@ Regulated Liability Network कई विनियमित संस्था�
 - GOV.UK, (2026). [यूके फिनटेक को भविष्य की भुगतान प्रौद्योगिकी अपनाने का समर्थन ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "यूके फिनटेक समर्थन")।
 - Bank of England, (2026). [डिजिटल प्रतिभूति सैंडबॉक्स ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "डिजिटल प्रतिभूति सैंडबॉक्स")।
 - FCA, (2026). [डिजिटल प्रतिभूति सैंडबॉक्स ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA डिजिटल प्रतिभूति सैंडबॉक्स")।
-- Association of Corporate Treasurers, (2026). [भुगतान परिदृश्य अद्यतन – मई 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "भुगतान परिदृश्य अद्यतन")।
+- Association of Corporate Treasurers, (2026). [भुगतान परिदृश्य अद्यतन – मई 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "भुगतान परिदृश्य अद्यतन")।
 - Global Government Finance, (2026). [यूके थोक डिजिटल बाजार चैम्पियन ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "यूके थोक डिजिटल बाजार चैम्पियन")।
 
 <!-- enrich-start -->

@@ -101,13 +101,13 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-תשלומים אגנטיים חצו ממצגות עבודה לראיות שוק חיות. Mastercard ו-Rabobank השלימו תשלום שיוזם סוכן AI בהולנד, שבו סוכן הזמין טעימת קפה ב-Priceless.com מבלי לגשת ישירות לפרטי הכרטיס ובהסכמת צרכן מפורשת שתועדה לפני הביצוע ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). הסוגיה האסטרטגית עבור בנקים היא כעת ארכיטקטורת ההסכמה: כיצד מוסד פיננסי מוכיח שתשלום מכונה אכן הוסמך על ידי הגורם האנושי או התאגידי המורשה מאחוריו.
+תשלומים אגנטיים חצו ממצגות עבודה לראיות שוק חיות. Mastercard ו-Rabobank השלימו תשלום שיוזם סוכן AI בהולנד, שבו סוכן הזמין טעימת קפה ב-Priceless.com מבלי לגשת ישירות לפרטי הכרטיס ובהסכמת צרכן מפורשת שתועדה לפני הביצוע ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). הסוגיה האסטרטגית עבור בנקים היא כעת ארכיטקטורת ההסכמה: כיצד מוסד פיננסי מוכיח שתשלום מכונה אכן הוסמך על ידי הגורם האנושי או התאגידי המורשה מאחוריו.
 
 ---
 
 > **תמצית מנהלים / נקודות מפתח**
 >
-> - **אותות השוק הראשונים חיים.** Mastercard ו-Rabobank השלימו עסקת סוכן AI הולנדית באמצעות Mastercard Agent Pay, כשהסוכן נמנע מגישה ישירה לנתוני כרטיס ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **אותות השוק הראשונים חיים.** Mastercard ו-Rabobank השלימו עסקת סוכן AI הולנדית באמצעות Mastercard Agent Pay, כשהסוכן נמנע מגישה ישירה לנתוני כרטיס ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **פרוטוקולי תשלום אגנטיים צצים לפני שהמשפט התייצב.** Fenwick מזהה את AP2, A2A, x402, MCP ו-MPP כמאמצי פרוטוקול המתמודדים עם יכולת פעולה הדדית של סוכנים והרשאתם ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **הסכמה היא הבעיה הבנקאית המרכזית.** מנדטים קריפטוגרפיים בסגנון AP2 מבקשים ללכוד הוראות משתמש ואישור סופי כראיה בת-ביקורת של כוונה ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **האחריות נותרה בלתי פתורה.** דיני התשלום הקיימים תוכננו סביב עסקאות שהוכרעו על ידי בני אדם, לא סביב מערכות AI אוטונומיות הפועלות בסמכות מואצלת ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
@@ -198,7 +198,7 @@ J.P. Morgan צופה שמסחר אגנטי יחל בקטגוריות חוזרו�
 ## הפניות
 
 - Fenwick, (2026). [Is 2026 the Year of Agentic Payments? ⧉](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 

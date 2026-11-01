@@ -108,7 +108,7 @@ AI ti ń di ètò ìṣiṣẹ́ AI ti ìsanwó ní 2026, ó ń kọjá láti à
 > **Àkójọpọ̀ Olùṣàkóso / Àwọn Kókó Pàtàkì**
 >
 > - **Ìmọ̀ Ìsanwó ti di ìlànà nísinsìnyí.** Ọ̀rọ̀ náà so mọ́ àwòṣe ìṣiṣẹ́, ìfaradà, iye oníbàárà, àti ẹ̀rí ìṣàkóso dípò ìfilọ́lẹ̀ ọjà tí ó kúrú ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **Ìlànà ìpilẹ̀ṣẹ̀ ni ìṣàkóso gidi-àkókò.** Àwọn bánkì nílò ìpilẹ̀ṣẹ̀ tí ó so òfin, ọjà, data, yíyàn ọ̀nà, ìṣàkóso ewu, àti ọrọ̀-ajé tí a lè wọ̀nwọ́n ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Ìlànà ìpilẹ̀ṣẹ̀ ni ìṣàkóso gidi-àkókò.** Àwọn bánkì nílò ìpilẹ̀ṣẹ̀ tí ó so òfin, ọjà, data, yíyàn ọ̀nà, ìṣàkóso ewu, àti ọrọ̀-ajé tí a lè wọ̀nwọ́n ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Àwòṣe ìṣàkóso gbọ́dọ̀ jẹ́ gidi-àkókò.** Àwọn ìpinnu jìbìtì, owó tó ń sàn, ìbámu, ìparapọ̀, àti ewu iṣẹ́ gbọ́dọ̀ ṣiṣẹ́ ní ìyára iṣẹ́ náà, kì í ṣe lẹ́yìn àwọn ìṣẹ̀lẹ̀.
 > - **Ìpọ́n data ń di àǹfààní ìṣòwò.** Data tí a ṣètò, ọ̀rọ̀ ìṣòwò, àwọn ìwé ìṣàyẹ̀wò, àti àwọn àmì ìdánimọ̀ ń di ìpilẹ̀ fún ìmọ̀ ọ̀rọ̀ ẹ̀rọ àti àwọn ọjà tó kojú oníbàárà.
 > - **Ìpínyà ni ọ̀tá.** Bánkì tí ó ń kọ́ àwọn ìdánwò tí a yà sọ́tọ̀ ní àyíká ọ̀nà kọ̀ọ̀kan, tokì, àwòṣe, tàbí ìbéèrè ìbámu ń dá ewu iṣẹ́ ọjọ́ iwájú.
@@ -120,7 +120,7 @@ AI ti ń di ètò ìṣiṣẹ́ AI ti ìsanwó ní 2026, ó ń kọjá láti à
 
 Ilé-iṣẹ́ ti kọjá ipele gbígbà. Kò tó láti darapọ̀ mọ́ ọ̀nà kan, gbé ìròyìn padà, ṣe ìdánwò AI, tàbí kéde ìdánwò tokenisation. Ní 2026, èbúté ìlànà wá láti inú ìṣètò àwọn agbára yẹn lòdì sí iṣẹ́ gidi kan, lẹ́yìn náà ó sì ń fi ẹ̀rí hàn pé iṣẹ́ náà ni a lè gbára lé sí i, ó yára sí i, ó dín idiyele kù sí i, ó ní ìfaradà sí i, tàbí ó wúlò fún àwọn oníbàárà sí i.
 
-Èyí ni ìdí tí ìmọ̀ ìsanwó fi jẹ́ ọ̀rọ̀ ipele igbimọ̀ olùṣàkóso nísinsìnyí. Àwọn ìnira kan náà ń bá a nìṣó: data ìsanwó ọlọ́rọ̀, ìparapọ̀ gidi-àkókò, owó tókènì, ìpinnu AI, Open Banking, ìfaradà iṣẹ́, ìdá pé cloud, àti ẹ̀rí ìṣàkóso tó lágbára. Nígbà tí a bá tọ́jú wọn lọ́tọ̀ọ̀tọ̀, àwọn ìnira yẹn ń dá ìtànkálẹ̀ ètò sílẹ̀. Nígbà tí a bá tọ́jú wọn gẹ́gẹ́ bí ìpilẹ̀ṣẹ̀ kan, wọ́n ń dá ìṣàmúlò iṣẹ́ ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Èyí ni ìdí tí ìmọ̀ ìsanwó fi jẹ́ ọ̀rọ̀ ipele igbimọ̀ olùṣàkóso nísinsìnyí. Àwọn ìnira kan náà ń bá a nìṣó: data ìsanwó ọlọ́rọ̀, ìparapọ̀ gidi-àkókò, owó tókènì, ìpinnu AI, Open Banking, ìfaradà iṣẹ́, ìdá pé cloud, àti ẹ̀rí ìṣàkóso tó lágbára. Nígbà tí a bá tọ́jú wọn lọ́tọ̀ọ̀tọ̀, àwọn ìnira yẹn ń dá ìtànkálẹ̀ ètò sílẹ̀. Nígbà tí a bá tọ́jú wọn gẹ́gẹ́ bí ìpilẹ̀ṣẹ̀ kan, wọ́n ń dá ìṣàmúlò iṣẹ́ ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Ìpilẹ̀ Ìpilẹ̀ṣẹ̀ 2026
 
@@ -130,7 +130,7 @@ Bánkì gbọ́dọ̀ bẹ̀rẹ̀ pẹ̀lú ìpọ́nlu: owó tí a há, ìdád
 
 ### 2. Data gẹ́gẹ́ bí Ipele Ìṣàkóso
 
-Data tí a ṣètò, tí a ṣàkóso, tí a sì lè tọ́ka jẹ́ ìpìlẹ̀. Láìsí data tí ó wúlò, àdáṣe a di alábùkù àti ìbámu a di ti ọwọ́. Pẹ̀lú data tí ó wúlò, àwọn bánkì lè dá ìmọ̀ ìpinnu ọ̀nà, àwọn ìṣàkóso gidi-àkókò, àti àyẹ̀wò tó kojú oníbàárà ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Data tí a ṣètò, tí a ṣàkóso, tí a sì lè tọ́ka jẹ́ ìpìlẹ̀. Láìsí data tí ó wúlò, àdáṣe a di alábùkù àti ìbámu a di ti ọwọ́. Pẹ̀lú data tí ó wúlò, àwọn bánkì lè dá ìmọ̀ ìpinnu ọ̀nà, àwọn ìṣàkóso gidi-àkókò, àti àyẹ̀wò tó kojú oníbàárà ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Ìṣètò Kọjá Àwọn Ọ̀nà àti Àwọn Pèpéle
 
@@ -197,7 +197,7 @@ A gbọ́dọ̀ wọn àṣeyọrí nípa ọrọ̀-ajé ìpín, ẹ̀rí ìfara
 ## Àwọn Ìtọ́kasí
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

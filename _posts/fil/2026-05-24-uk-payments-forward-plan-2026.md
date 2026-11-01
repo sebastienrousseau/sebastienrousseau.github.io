@@ -108,7 +108,7 @@ Itinuturo ng UK Payments Forward Plan at Abril 2026 policy package ang iisang ma
 > **Executive Summary / Mga Pangunahing Punto**
 >
 > - **Estratehiko na ngayon ang Payments Policy.** Iniuugnay ang paksa sa operating model, katatagan, halaga sa kliyente, at regulatory na ebidensya sa halip na makitid na paglulunsad ng produkto ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **Ang prinsipyo sa disenyo ay isang regulatory perimeter.** Kailangan ng mga bangko ang arkitekturang nag-uugnay sa patakaran, produkto, data, pagpili ng daanan, mga kontrol sa panganib, at masusukat na ekonomiya ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Ang prinsipyo sa disenyo ay isang regulatory perimeter.** Kailangan ng mga bangko ang arkitekturang nag-uugnay sa patakaran, produkto, data, pagpili ng daanan, mga kontrol sa panganib, at masusukat na ekonomiya ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Dapat real time ang control model.** Ang mga desisyon sa pandaraya, likido, compliance, settlement, at operational-risk ay dapat tumakbo sa bilis ng workflow, hindi pagkatapos ng pangyayari.
 > - **Nagiging commercial na bentahe ang kalidad ng data.** Ang structured na data, transaction context, audit logs, at identity signals ay nagiging substrate para sa awtomatisasyon at mga produktong nakaharap sa kliyente.
 > - **Kaaway ang fragmentation.** Ang bangkong nagtatayo ng hiwalay na mga pilot sa bawat daanan, token, modelo, o regulatory na kahilingan ay lumilikha ng operating risk sa hinaharap.
@@ -120,7 +120,7 @@ Itinuturo ng UK Payments Forward Plan at Abril 2026 policy package ang iisang ma
 
 Lumampas na ang industriya sa adoption phase. Hindi na sapat ang sumali sa isang daanan, magmigrate ng mensahe, magpatakbo ng AI proof of concept, o mag-anunsyo ng tokenisation pilot. Sa 2026, nanggagaling ang estratehikong bentahe sa pag-orchestrate ng mga kakayahang iyon laban sa isang totoong workflow, pagkatapos ay patunayang mas ligtas, mas mabilis, mas mura, mas matatag, o mas kapaki-pakinabang sa mga kliyente ang workflow na iyon.
 
-Iyan ang dahilan kung bakit board-level na paksa na ngayon ang patakaran sa pagbabayad. Ulit-ulit na lumalabas ang parehong mga presyon: mas mayamang payment data, real-time na settlement, tokenisadong pera, AI decisioning, Open Banking, operational resilience, cloud concentration, at mas matibay na regulatory na ebidensya. Kapag hiniwa-hiwalay, lumilikha ang mga presyong iyon ng programme sprawl. Kapag tinrato bilang iisang arkitektura, lumilikha sila ng operating leverage ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Iyan ang dahilan kung bakit board-level na paksa na ngayon ang patakaran sa pagbabayad. Ulit-ulit na lumalabas ang parehong mga presyon: mas mayamang payment data, real-time na settlement, tokenisadong pera, AI decisioning, Open Banking, operational resilience, cloud concentration, at mas matibay na regulatory na ebidensya. Kapag hiniwa-hiwalay, lumilikha ang mga presyong iyon ng programme sprawl. Kapag tinrato bilang iisang arkitektura, lumilikha sila ng operating leverage ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Ang 2026 Architecture Baseline
 
@@ -130,7 +130,7 @@ Dapat magsimula ang bangko sa friction: trapped na likido, settlement delay, gas
 
 ### 2. Data Bilang Control Plane
 
-Ang pundasyon ay structured, na-govern, at masusubaybayang data. Kapag walang magagamit na data, nagiging marupok ang awtomatisasyon at nagiging manwal ang compliance. Kapag may magagamit na data, makakalikha ang mga bangko ng routing intelligence, real-time na kontrol, at analytics na nakaharap sa kliyente ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Ang pundasyon ay structured, na-govern, at masusubaybayang data. Kapag walang magagamit na data, nagiging marupok ang awtomatisasyon at nagiging manwal ang compliance. Kapag may magagamit na data, makakalikha ang mga bangko ng routing intelligence, real-time na kontrol, at analytics na nakaharap sa kliyente ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orkestrasyon sa Iba't ibang Daanan at Platapormang
 
@@ -197,7 +197,7 @@ Dapat sukatin ang tagumpay sa pamamagitan ng unit economics, ebidensya ng katata
 ## Mga Sanggunian
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

@@ -113,7 +113,7 @@ Zakaran shi ne lever da ke tilasta su yin haka.
 > - **Gilt suna farko saboda su ne kadara mafi wahala a samu daidai.** HQLA a kan DLT, da aka kammala ta hanyar atomic akan kuɗin token, suna tabbatar da cikakken tsarin — fitarwa, sayarwa, repo, lamuni, kuɗin babban banki — a kan tafkin fam mafi zurfi ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **Repo na cikin yini ita ce nasara ta farko.** Repo na atomic T+0 na gilt token yana 'yantar da jari da yake yau zaune yana ba aiki a matsayin rufin ruwa na rana. Kuɗin da aka tara yana zubowa kai tsaye zuwa ROE.
 > - **Tsarawa ta maye gurbin cibiyoyin sadarwa na ware.** Regulated Liability Network, Canton, DLT na bankuna masu zaman kansu, RTGS, da kuɗin banki na kasuwanci tokenised — kowannensu yana ɗauke da tsarin aiki da bankuna ke gudanarwa. Aikin shi ne zaɓar hanya tsakaninsu, ba a zaɓi ɗaya ba.
-> - **Policy-as-code ita ce kawai tsarin bin doka da zai iya bin sauri.** Takunkumi, KYC, iyakokin matsayi, ƙofar shari'a — an ɓoye su a cikin sashin kammala biyan kuɗi, ana zartar da su tare da ciniki ta atomic, suna samar da hanya ta tantance ta hanyar cryptography maimakon log ɗin da dole ne mai gudanarwa ya amince da shi ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Sabuntawa kan tsarin biyan kuɗi – Mayu 2026")).
+> - **Policy-as-code ita ce kawai tsarin bin doka da zai iya bin sauri.** Takunkumi, KYC, iyakokin matsayi, ƙofar shari'a — an ɓoye su a cikin sashin kammala biyan kuɗi, ana zartar da su tare da ciniki ta atomic, suna samar da hanya ta tantance ta hanyar cryptography maimakon log ɗin da dole ne mai gudanarwa ya amince da shi ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Sabuntawa kan tsarin biyan kuɗi – Mayu 2026")).
 > - **Gine-gine ita ce katanga.** Masu nasara suna haɗa tsarin aiki, bayanai, tashar, kulawa, da tattalin arziƙin naúrar zuwa cikin tsarin aiki guda ɗaya. Masu hasara suna gudanar da fakitin gwaje-gwaje da ba a haɗa su ba kuma suna kiransa dabaru.
 >
 ---
@@ -150,7 +150,7 @@ Fara da rikici. Ruwan da aka tarko, karyewar kammala biyan kuɗi, farashin daida
 
 ### Bayanai a Matsayin Sashin Kulawa
 
-Payloads na ISO 20022 da aka ɗaure zuwa hashes na ma'amala a kan-chain suna juya bayanan kammala biyan kuɗi zuwa tushen gaskiya guda ɗaya. Ba tare da wannan ɗauri ba, sarrafa kwangilar wayo na kai tsaye yana zama mai rauni kuma daidaitawa tana komawa zuwa spreadsheets. Tare da shi, bankuna suna samun STP, kulawa na lokaci na ainihi, da nazari da abokan ciniki za su biya farashi ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Sabuntawa kan tsarin biyan kuɗi – Mayu 2026")).
+Payloads na ISO 20022 da aka ɗaure zuwa hashes na ma'amala a kan-chain suna juya bayanan kammala biyan kuɗi zuwa tushen gaskiya guda ɗaya. Ba tare da wannan ɗauri ba, sarrafa kwangilar wayo na kai tsaye yana zama mai rauni kuma daidaitawa tana komawa zuwa spreadsheets. Tare da shi, bankuna suna samun STP, kulawa na lokaci na ainihi, da nazari da abokan ciniki za su biya farashi ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Sabuntawa kan tsarin biyan kuɗi – Mayu 2026")).
 
 ### Tsarawa Tsakanin Tashoshi
 
@@ -231,7 +231,7 @@ Maki na asali da aka tara akan tallafin lamuni. Ragewar rufin ruwa na cikin yini
 - GOV.UK, (2026). [An goyi bayan fintech na Birtaniya don rungumar fasahar biyan kuɗi ta gaba ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "An goyi bayan fintech na Birtaniya").
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "Digital Securities Sandbox na FCA").
-- Association of Corporate Treasurers, (2026). [Sabuntawa kan tsarin biyan kuɗi – Mayu 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Sabuntar tsarin biyan kuɗi").
+- Association of Corporate Treasurers, (2026). [Sabuntawa kan tsarin biyan kuɗi – Mayu 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Sabuntar tsarin biyan kuɗi").
 - Global Government Finance, (2026). [Zakaran kasuwannin dijital na babba na Birtaniya ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Zakaran kasuwannin dijital na babba na Birtaniya").
 
 <!-- enrich-start -->

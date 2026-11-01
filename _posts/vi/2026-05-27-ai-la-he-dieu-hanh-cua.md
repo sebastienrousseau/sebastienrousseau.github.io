@@ -108,7 +108,7 @@ AI đang trở thành hệ điều hành của thanh toán năm 2026, dịch chu
 > **Tóm tắt điều hành / Điểm chính**
 >
 > - **Trí tuệ thanh toán nay mang tính chiến lược.** Chủ đề gắn với mô hình vận hành, khả năng phục hồi, giá trị khách hàng và bằng chứng pháp lý chứ không phải một sản phẩm hẹp ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **Nguyên tắc thiết kế là kiểm soát thời gian thực.** Ngân hàng cần kiến trúc kết nối chính sách, sản phẩm, dữ liệu, lựa chọn kênh, kiểm soát rủi ro và kinh tế đo lường được ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Nguyên tắc thiết kế là kiểm soát thời gian thực.** Ngân hàng cần kiến trúc kết nối chính sách, sản phẩm, dữ liệu, lựa chọn kênh, kiểm soát rủi ro và kinh tế đo lường được ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Mô hình kiểm soát phải theo thời gian thực.** Quyết định gian lận, thanh khoản, tuân thủ, quyết toán và rủi ro vận hành phải chạy ở tốc độ quy trình, không phải sau sự kiện.
 > - **Chất lượng dữ liệu trở thành lợi thế thương mại.** Dữ liệu có cấu trúc, bối cảnh giao dịch, nhật ký kiểm toán và tín hiệu định danh trở thành nền tảng cho tự động hóa và sản phẩm hướng khách hàng.
 > - **Phân mảnh là kẻ thù.** Một ngân hàng xây các thử nghiệm biệt lập quanh mỗi kênh, token, mô hình hay yêu cầu tuân thủ sẽ tạo rủi ro vận hành tương lai.
@@ -120,7 +120,7 @@ AI đang trở thành hệ điều hành của thanh toán năm 2026, dịch chu
 
 Ngành đã vượt qua giai đoạn áp dụng. Việc tham gia một kênh, di chuyển một thông điệp, chạy thử nghiệm AI hay công bố một thử nghiệm tokenization không còn đủ. Năm 2026, lợi thế chiến lược đến từ việc điều phối những năng lực ấy đối với một quy trình thực tế, rồi chứng minh rằng quy trình đó an toàn hơn, nhanh hơn, rẻ hơn, có khả năng phục hồi tốt hơn hoặc hữu ích hơn cho khách hàng.
 
-Đó là lý do trí tuệ thanh toán nay là chủ đề ở cấp hội đồng quản trị. Các áp lực lặp lại liên tục: dữ liệu thanh toán phong phú hơn, quyết toán theo thời gian thực, tiền tokenized, ra quyết định bằng AI, Open Banking, khả năng phục hồi vận hành, tập trung đám mây và bằng chứng pháp lý mạnh hơn. Xử lý riêng lẻ, các áp lực ấy tạo ra sự phình to chương trình. Xử lý như một kiến trúc duy nhất, chúng tạo ra đòn bẩy vận hành ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Đó là lý do trí tuệ thanh toán nay là chủ đề ở cấp hội đồng quản trị. Các áp lực lặp lại liên tục: dữ liệu thanh toán phong phú hơn, quyết toán theo thời gian thực, tiền tokenized, ra quyết định bằng AI, Open Banking, khả năng phục hồi vận hành, tập trung đám mây và bằng chứng pháp lý mạnh hơn. Xử lý riêng lẻ, các áp lực ấy tạo ra sự phình to chương trình. Xử lý như một kiến trúc duy nhất, chúng tạo ra đòn bẩy vận hành ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Đường cơ sở kiến trúc 2026
 
@@ -130,7 +130,7 @@ Ngân hàng nên bắt đầu từ điểm ma sát: thanh khoản bị mắc k�
 
 ### 2. Dữ liệu như mặt phẳng kiểm soát
 
-Dữ liệu có cấu trúc, được quản trị và truy vết được là nền tảng. Không có dữ liệu sử dụng được, tự động hóa trở nên dễ vỡ và tuân thủ trở thành thủ công. Với dữ liệu sử dụng được, các ngân hàng có thể tạo ra trí tuệ định tuyến, kiểm soát thời gian thực và phân tích hướng khách hàng ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Dữ liệu có cấu trúc, được quản trị và truy vết được là nền tảng. Không có dữ liệu sử dụng được, tự động hóa trở nên dễ vỡ và tuân thủ trở thành thủ công. Với dữ liệu sử dụng được, các ngân hàng có thể tạo ra trí tuệ định tuyến, kiểm soát thời gian thực và phân tích hướng khách hàng ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Điều phối xuyên kênh và nền tảng
 
@@ -197,7 +197,7 @@ Thành công nên được đo bằng kinh tế đơn vị, bằng chứng khả
 ## Tài liệu tham khảo
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

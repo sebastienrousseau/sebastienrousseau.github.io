@@ -108,7 +108,7 @@ UK Payments Forward Plan dan paket kebijakan April 2026 mengarah pada satu keran
 > **Ringkasan Eksekutif / Poin Utama**
 >
 > - **Kebijakan Pembayaran kini strategis.** Topik ini terikat pada model operasi, ketahanan, nilai klien, dan bukti regulasi — bukan peluncuran produk yang sempit ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **Prinsip desainnya adalah satu perimeter regulasi.** Bank memerlukan arsitektur yang menyatukan kebijakan, produk, data, pilihan jalur, kontrol risiko, dan ekonomi yang terukur ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Prinsip desainnya adalah satu perimeter regulasi.** Bank memerlukan arsitektur yang menyatukan kebijakan, produk, data, pilihan jalur, kontrol risiko, dan ekonomi yang terukur ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Model kontrol harus real time.** Keputusan fraud, likuiditas, kepatuhan, penyelesaian, dan risiko operasional harus berjalan pada kecepatan alur kerja, bukan setelah peristiwa.
 > - **Kualitas data menjadi keunggulan komersial.** Data terstruktur, konteks transaksi, log audit, dan sinyal identitas menjadi substrat bagi otomasi dan produk yang dihadapkan kepada klien.
 > - **Fragmentasi adalah musuh.** Bank yang membangun pilot terisolasi pada setiap jalur, token, model, atau persyaratan kepatuhan menciptakan risiko operasional di masa depan.
@@ -120,7 +120,7 @@ UK Payments Forward Plan dan paket kebijakan April 2026 mengarah pada satu keran
 
 Industri telah melewati fase adopsi. Bergabung ke satu jalur, memigrasi pesan, menjalankan proof of concept AI, atau mengumumkan pilot tokenisasi tidak lagi memadai. Pada 2026, keunggulan strategis lahir dari orkestrasi kapabilitas tersebut terhadap alur kerja nyata, lalu membuktikan bahwa alur kerja itu lebih aman, lebih cepat, lebih murah, lebih tangguh, atau lebih bermanfaat bagi klien.
 
-Itulah alasan kebijakan pembayaran kini menjadi topik tingkat dewan direksi. Tekanan yang sama terus berulang: data pembayaran yang lebih kaya, penyelesaian real time, uang tertokenisasi, pengambilan keputusan berbasis AI, Open Banking, ketahanan operasional, konsentrasi cloud, dan bukti regulasi yang lebih kuat. Bila ditangani terpisah, tekanan-tekanan tersebut menciptakan persebaran program. Bila ditangani sebagai satu arsitektur, semuanya menghasilkan daya ungkit operasional ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Itulah alasan kebijakan pembayaran kini menjadi topik tingkat dewan direksi. Tekanan yang sama terus berulang: data pembayaran yang lebih kaya, penyelesaian real time, uang tertokenisasi, pengambilan keputusan berbasis AI, Open Banking, ketahanan operasional, konsentrasi cloud, dan bukti regulasi yang lebih kuat. Bila ditangani terpisah, tekanan-tekanan tersebut menciptakan persebaran program. Bila ditangani sebagai satu arsitektur, semuanya menghasilkan daya ungkit operasional ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Baseline Arsitektur 2026
 
@@ -130,7 +130,7 @@ Bank harus mulai dari friksi: likuiditas yang terjebak, keterlambatan penyelesai
 
 ### 2. Data sebagai Bidang Kontrol
 
-Data yang terstruktur, tata kelola, dan dapat dilacak adalah fondasinya. Tanpa data yang dapat digunakan, otomasi menjadi rapuh dan kepatuhan menjadi manual. Dengan data yang dapat digunakan, bank dapat menciptakan intelijen perutean, kontrol real time, dan analitik yang dihadapkan kepada klien ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Data yang terstruktur, tata kelola, dan dapat dilacak adalah fondasinya. Tanpa data yang dapat digunakan, otomasi menjadi rapuh dan kepatuhan menjadi manual. Dengan data yang dapat digunakan, bank dapat menciptakan intelijen perutean, kontrol real time, dan analitik yang dihadapkan kepada klien ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orkestrasi Lintas Jalur dan Platform
 
@@ -197,7 +197,7 @@ Kesuksesan harus diukur berdasarkan ekonomi unit, bukti ketahanan, kualitas data
 ## Referensi
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

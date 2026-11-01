@@ -108,7 +108,7 @@ El UK Payments Forward Plan y el paquete normativo de abril de 2026 apuntan a un
 > **Resumen ejecutivo / Conclusiones clave**
 >
 > - **La política de pagos ya es estratégica.** El tema se vincula al modelo operativo, la resiliencia, el valor para el cliente y la evidencia regulatoria, más allá de un lanzamiento de producto acotado ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **El principio de diseño es un único perímetro regulatorio.** La banca necesita una arquitectura que conecte política, producto, datos, elección de rail, controles de riesgo y economía medible ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **El principio de diseño es un único perímetro regulatorio.** La banca necesita una arquitectura que conecte política, producto, datos, elección de rail, controles de riesgo y economía medible ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **El modelo de control debe operar en tiempo real.** Las decisiones de fraude, liquidez, cumplimiento, liquidación y riesgo operativo deben ejecutarse a la velocidad del flujo, no después del hecho.
 > - **La calidad del dato se convierte en ventaja comercial.** Datos estructurados, contexto de transacción, registros de auditoría y señales de identidad pasan a ser el sustrato de la automatización y de los productos orientados al cliente.
 > - **La fragmentación es el enemigo.** Un banco que construye pilotos aislados por cada rail, token, modelo o exigencia de cumplimiento genera riesgo operativo futuro.
@@ -120,7 +120,7 @@ El UK Payments Forward Plan y el paquete normativo de abril de 2026 apuntan a un
 
 La industria ha superado la fase de adopción. Ya no basta con incorporarse a un rail, migrar un mensaje, ejecutar una prueba de concepto de IA o anunciar un piloto de tokenización. En 2026, la ventaja estratégica viene de orquestar esas capacidades sobre un flujo real y luego demostrar que el flujo es más seguro, más rápido, más barato, más resiliente o más útil para el cliente.
 
-Por eso la política de pagos es hoy un asunto de consejo. Las mismas presiones se repiten: datos de pago más ricos, liquidación en tiempo real, dinero tokenizado, decisión por IA, Open Banking, resiliencia operativa, concentración cloud y mayor exigencia de evidencia regulatoria. Tratadas por separado, esas presiones generan dispersión de programas. Tratadas como una sola arquitectura, generan apalancamiento operativo ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Por eso la política de pagos es hoy un asunto de consejo. Las mismas presiones se repiten: datos de pago más ricos, liquidación en tiempo real, dinero tokenizado, decisión por IA, Open Banking, resiliencia operativa, concentración cloud y mayor exigencia de evidencia regulatoria. Tratadas por separado, esas presiones generan dispersión de programas. Tratadas como una sola arquitectura, generan apalancamiento operativo ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## La línea base de arquitectura 2026
 
@@ -130,7 +130,7 @@ El banco debe partir de la fricción: liquidez atrapada, retraso de liquidación
 
 ### 2. El dato como plano de control
 
-El dato estructurado, gobernado y trazable es el cimiento. Sin un dato utilizable, la automatización se vuelve frágil y el cumplimiento queda manual. Con un dato utilizable, la banca puede construir inteligencia de enrutamiento, controles en tiempo real y analítica orientada al cliente ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+El dato estructurado, gobernado y trazable es el cimiento. Sin un dato utilizable, la automatización se vuelve frágil y el cumplimiento queda manual. Con un dato utilizable, la banca puede construir inteligencia de enrutamiento, controles en tiempo real y analítica orientada al cliente ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orquestación entre rails y plataformas
 
@@ -197,7 +197,7 @@ El éxito se mide por economía unitaria, evidencia de resiliencia, calidad del 
 ## Referencias
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

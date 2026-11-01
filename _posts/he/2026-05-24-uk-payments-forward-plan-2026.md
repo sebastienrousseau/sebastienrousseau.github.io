@@ -108,7 +108,7 @@ UK Payments Forward Plan וחבילת המדיניות של אפריל 2026 מצ
 > **תקציר מנהלים / נקודות מפתח**
 >
 > - **מדיניות תשלומים היא כעת אסטרטגית.** הנושא קשור למודל תפעולי, חוסן, ערך ללקוח וראיות רגולטוריות, ולא להשקת מוצר צרה ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **עקרון התכן הוא תחום רגולטורי אחד.** בנקים זקוקים לארכיטקטורה המחברת מדיניות, מוצר, נתונים, בחירת ערוצים, בקרות סיכון וכלכלה מדידה ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **עקרון התכן הוא תחום רגולטורי אחד.** בנקים זקוקים לארכיטקטורה המחברת מדיניות, מוצר, נתונים, בחירת ערוצים, בקרות סיכון וכלכלה מדידה ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **מודל הבקרה חייב להיות בזמן אמת.** החלטות הונאה, נזילות, ציות, סליקה וסיכון תפעולי חייבות לרוץ במהירות תהליך העבודה, לא לאחר האירוע.
 > - **איכות נתונים הופכת ליתרון מסחרי.** נתונים מובְנים, הקשר עסקה, יומני ביקורת ואותות זהות הופכים למצע לאוטומציה ולמוצרים מול לקוחות.
 > - **הפיצול הוא האויב.** בנק הבונה פיילוטים מבודדים סביב כל ערוץ, טוקן, מודל או דרישת ציות יוצר סיכון תפעולי עתידי.
@@ -120,7 +120,7 @@ UK Payments Forward Plan וחבילת המדיניות של אפריל 2026 מצ
 
 הענף חרג משלב האימוץ. אין די בהצטרפות לערוץ, הגירת מסר, הרצת הוכחת היתכנות (PoC) של AI או הכרזה על פיילוט תרמוז. ב-2026, היתרון האסטרטגי מגיע מתזמור היכולות הללו מול תהליך עבודה אמיתי, ולאחר מכן הוכחה שהתהליך בטוח יותר, מהיר יותר, זול יותר, עמיד יותר או שימושי יותר ללקוחות.
 
-לכן מדיניות התשלומים היא כעת נושא ברמת דירקטוריון. אותם לחצים חוזרים שוב ושוב: נתוני תשלום עשירים יותר, סליקה בזמן אמת, כסף מתורמז, החלטות AI, בנקאות פתוחה, חוסן תפעולי, ריכוז ענן וראיות רגולטוריות מחוזקות. כשהם מטופלים בנפרד, לחצים אלה יוצרים פיזור תוכניות. כשהם מטופלים כארכיטקטורה אחת, הם יוצרים מינוף תפעולי ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+לכן מדיניות התשלומים היא כעת נושא ברמת דירקטוריון. אותם לחצים חוזרים שוב ושוב: נתוני תשלום עשירים יותר, סליקה בזמן אמת, כסף מתורמז, החלטות AI, בנקאות פתוחה, חוסן תפעולי, ריכוז ענן וראיות רגולטוריות מחוזקות. כשהם מטופלים בנפרד, לחצים אלה יוצרים פיזור תוכניות. כשהם מטופלים כארכיטקטורה אחת, הם יוצרים מינוף תפעולי ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## בסיס הארכיטקטורה של 2026
 
@@ -130,7 +130,7 @@ UK Payments Forward Plan וחבילת המדיניות של אפריל 2026 מצ
 
 ### 2. נתונים כמישור בקרה
 
-נתונים מובְנים, מנוהלים ובני-מעקב הם היסוד. ללא נתונים שמישים, אוטומציה הופכת שבירה והציות הופך ידני. עם נתונים שמישים, בנקים יכולים ליצור אינטליגנציית ניתוב, בקרות בזמן אמת ואנליטיקה מול לקוחות ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+נתונים מובְנים, מנוהלים ובני-מעקב הם היסוד. ללא נתונים שמישים, אוטומציה הופכת שבירה והציות הופך ידני. עם נתונים שמישים, בנקים יכולים ליצור אינטליגנציית ניתוב, בקרות בזמן אמת ואנליטיקה מול לקוחות ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. תזמור על פני ערוצים ופלטפורמות
 
@@ -197,7 +197,7 @@ UK Payments Forward Plan ב-2026 הוא בסופו של דבר שאלה ארכי
 ## הפניות
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

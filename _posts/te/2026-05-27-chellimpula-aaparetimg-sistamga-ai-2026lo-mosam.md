@@ -20,7 +20,7 @@ keywords: "AI చెల్లింపులు 2026, చెల్లింప�
 > **కార్యనిర్వాహక సారాంశం / ముఖ్య అంశాలు**
 >
 > - **చెల్లింపుల ఇంటెలిజెన్స్ ఇప్పుడు వ్యూహాత్మకమైంది.** ఈ అంశం ఒక ఇరుకైన ఉత్పత్తి ఆవిష్కరణ కంటే ఆపరేటింగ్ మోడల్, స్థితిస్థాపకత, క్లయింట్ విలువ, మరియు నియంత్రణ సాక్ష్యంతో ముడిపడి ఉంది ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **డిజైన్ సూత్రం రియల్-టైమ్ నియంత్రణ.** విధానం, ఉత్పత్తి, డేటా, రైల్ ఎంపిక, రిస్క్ నియంత్రణలు, మరియు కొలవదగిన ఆర్థికాంశాలను కలిపే ఆర్కిటెక్చర్ బ్యాంకులకు అవసరం ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **డిజైన్ సూత్రం రియల్-టైమ్ నియంత్రణ.** విధానం, ఉత్పత్తి, డేటా, రైల్ ఎంపిక, రిస్క్ నియంత్రణలు, మరియు కొలవదగిన ఆర్థికాంశాలను కలిపే ఆర్కిటెక్చర్ బ్యాంకులకు అవసరం ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **నియంత్రణ మోడల్ రియల్ టైమ్‌గా ఉండాలి.** మోసం, లిక్విడిటీ, కంప్లయన్స్, సెటిల్‌మెంట్, మరియు కార్యాచరణ-రిస్క్ నిర్ణయాలు సంఘటన తర్వాత కాకుండా వర్క్‌ఫ్లో వేగంతో నడవాలి.
 > - **డేటా నాణ్యత వాణిజ్య ప్రయోజనంగా మారుతుంది.** నిర్మాణాత్మక డేటా, లావాదేవీ సందర్భం, ఆడిట్ లాగ్‌లు, మరియు గుర్తింపు సంకేతాలు ఆటోమేషన్ మరియు క్లయింట్-ముఖ ఉత్పత్తులకు పునాదిగా మారతాయి.
 > - **విచ్ఛిన్నత శత్రువు.** ప్రతి రైల్, టోకెన్, మోడల్, లేదా కంప్లయన్స్ అవసరం చుట్టూ వేరుచేసిన పైలట్‌లను నిర్మించే బ్యాంకు భవిష్యత్ కార్యాచరణ రిస్క్‌ను సృష్టిస్తుంది.
@@ -32,7 +32,7 @@ keywords: "AI చెల్లింపులు 2026, చెల్లింప�
 
 పరిశ్రమ స్వీకరణ దశను దాటి ముందుకు సాగింది. ఒక రైల్‌లో చేరడం, ఒక సందేశాన్ని మైగ్రేట్ చేయడం, ఒక AI ప్రూఫ్ ఆఫ్ కాన్సెప్ట్ నడపడం, లేదా ఒక టోకనైజేషన్ పైలట్‌ను ప్రకటించడం ఇక సరిపోదు. 2026లో, ఆ సామర్థ్యాలను నిజమైన వర్క్‌ఫ్లోకు వ్యతిరేకంగా ఆర్కెస్ట్రేట్ చేయడం నుండి, ఆపై ఆ వర్క్‌ఫ్లో సురక్షితమైనది, వేగవంతమైనది, చౌకైనది, మరింత స్థితిస్థాపకమైనది, లేదా క్లయింట్‌లకు మరింత ఉపయోగకరమైనది అని నిరూపించడం నుండి వ్యూహాత్మక అంచు వస్తుంది.
 
-అందుకే చెల్లింపుల ఇంటెలిజెన్స్ ఇప్పుడు బోర్డు-స్థాయి అంశం. అదే ఒత్తిళ్లు పునరావృతమవుతూనే ఉన్నాయి: సంపన్నమైన చెల్లింపు డేటా, రియల్-టైమ్ సెటిల్‌మెంట్, టోకనైజ్డ్ డబ్బు, AI నిర్ణయం, ఓపెన్ బ్యాంకింగ్, కార్యాచరణ స్థితిస్థాపకత, క్లౌడ్ కేంద్రీకరణ, మరియు బలమైన నియంత్రణ సాక్ష్యం. వేరుగా పరిగణించినప్పుడు, ఆ ఒత్తిళ్లు ప్రోగ్రామ్ విస్తరణను సృష్టిస్తాయి. ఒకే ఆర్కిటెక్చర్‌గా పరిగణించినప్పుడు, అవి కార్యాచరణ పరపతిని సృష్టిస్తాయి ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+అందుకే చెల్లింపుల ఇంటెలిజెన్స్ ఇప్పుడు బోర్డు-స్థాయి అంశం. అదే ఒత్తిళ్లు పునరావృతమవుతూనే ఉన్నాయి: సంపన్నమైన చెల్లింపు డేటా, రియల్-టైమ్ సెటిల్‌మెంట్, టోకనైజ్డ్ డబ్బు, AI నిర్ణయం, ఓపెన్ బ్యాంకింగ్, కార్యాచరణ స్థితిస్థాపకత, క్లౌడ్ కేంద్రీకరణ, మరియు బలమైన నియంత్రణ సాక్ష్యం. వేరుగా పరిగణించినప్పుడు, ఆ ఒత్తిళ్లు ప్రోగ్రామ్ విస్తరణను సృష్టిస్తాయి. ఒకే ఆర్కిటెక్చర్‌గా పరిగణించినప్పుడు, అవి కార్యాచరణ పరపతిని సృష్టిస్తాయి ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## 2026 ఆర్కిటెక్చర్ బేస్‌లైన్
 
@@ -42,7 +42,7 @@ keywords: "AI చెల్లింపులు 2026, చెల్లింప�
 
 ### 2. నియంత్రణ పొరగా డేటా
 
-నిర్మాణాత్మక, పరిపాలించబడిన, మరియు గుర్తించదగిన డేటా పునాది. ఉపయోగించదగిన డేటా లేకుండా, ఆటోమేషన్ పెళుసుగా మారుతుంది మరియు కంప్లయన్స్ మాన్యువల్‌గా మారుతుంది. ఉపయోగించదగిన డేటాతో, బ్యాంకులు రూటింగ్ ఇంటెలిజెన్స్, రియల్-టైమ్ నియంత్రణలు, మరియు క్లయింట్-ముఖ విశ్లేషణలను సృష్టించగలవు ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+నిర్మాణాత్మక, పరిపాలించబడిన, మరియు గుర్తించదగిన డేటా పునాది. ఉపయోగించదగిన డేటా లేకుండా, ఆటోమేషన్ పెళుసుగా మారుతుంది మరియు కంప్లయన్స్ మాన్యువల్‌గా మారుతుంది. ఉపయోగించదగిన డేటాతో, బ్యాంకులు రూటింగ్ ఇంటెలిజెన్స్, రియల్-టైమ్ నియంత్రణలు, మరియు క్లయింట్-ముఖ విశ్లేషణలను సృష్టించగలవు ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. రైల్‌లు మరియు ప్లాట్‌ఫారమ్‌ల అంతటా ఆర్కెస్ట్రేషన్
 
@@ -109,5 +109,5 @@ keywords: "AI చెల్లింపులు 2026, చెల్లింప�
 ## సూచనలు
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").

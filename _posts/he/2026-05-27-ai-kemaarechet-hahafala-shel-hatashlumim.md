@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 > **תקציר מנהלים / נקודות מפתח**
 >
 > - **אינטליגנציית תשלומים הפכה לאסטרטגית.** הנושא קשור למודל התפעולי, לחוסן, לערך הלקוח ולראיות הרגולטור — לא להשקת מוצר צרה ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **עיקרון התכנון הוא בקרה בזמן אמת.** בנקים זקוקים לארכיטקטורה המחברת מדיניות, מוצר, נתונים, בחירת מסילה, בקרות סיכון וכלכלה מדידה ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **עיקרון התכנון הוא בקרה בזמן אמת.** בנקים זקוקים לארכיטקטורה המחברת מדיניות, מוצר, נתונים, בחירת מסילה, בקרות סיכון וכלכלה מדידה ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **מודל הבקרה חייב להיות בזמן אמת.** החלטות הונאה, נזילות, ציות, סליקה וסיכון תפעולי חייבות לרוץ במהירות התהליך, ולא לאחר מעשה.
 > - **איכות הנתונים הופכת ליתרון מסחרי.** נתונים מובְנים, הקשר עסקה, יומני ביקורת ואותות זהות הופכים למצע לאוטומציה ולמוצרי לקוח.
 > - **פיצול הוא האויב.** בנק הבונה פיילוטים מבודדים סביב כל מסילה, טוקן, מודל או דרישת ציות יוצר סיכון תפעולי עתידי.
@@ -120,7 +120,7 @@ site_software: "Static Site Generator, Rust"
 
 הענף עבר את שלב האימוץ. כבר לא די בהצטרפות למסילה, בהגירת הודעה, בהרצת הוכחת היתכנות ב-AI או בהכרזה על פיילוט תורמוז. ב-2026 הקצה האסטרטגי נובע מתזמור של אותן יכולות מול תהליך אמיתי, ואז מהוכחה שהתהליך בטוח יותר, מהיר יותר, זול יותר, חסון יותר או שימושי יותר ללקוחות.
 
-לכן אינטליגנציית התשלומים היא כיום נושא ברמת דירקטוריון. אותם לחצים חוזרים על עצמם: נתוני תשלום עשירים יותר, סליקה בזמן אמת, כסף מתורמז, החלטות AI, Open Banking, חוסן תפעולי, ריכוז ענן וראיות רגולטור חזקות יותר. כשמטפלים בלחצים האלה בנפרד הם יוצרים פיזור תוכניות. כשמטפלים בהם כארכיטקטורה אחת הם יוצרים מינוף תפעולי ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+לכן אינטליגנציית התשלומים היא כיום נושא ברמת דירקטוריון. אותם לחצים חוזרים על עצמם: נתוני תשלום עשירים יותר, סליקה בזמן אמת, כסף מתורמז, החלטות AI, Open Banking, חוסן תפעולי, ריכוז ענן וראיות רגולטור חזקות יותר. כשמטפלים בלחצים האלה בנפרד הם יוצרים פיזור תוכניות. כשמטפלים בהם כארכיטקטורה אחת הם יוצרים מינוף תפעולי ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## קו הבסיס של ארכיטקטורת 2026
 
@@ -130,7 +130,7 @@ site_software: "Static Site Generator, Rust"
 
 ### 2. נתונים כמישור הבקרה
 
-נתונים מובְנים, מנוהלים וניתנים למעקב הם היסוד. ללא נתונים שמישים האוטומציה הופכת לשבירה והציות הופך לידני. עם נתונים שמישים, בנקים יכולים ליצור אינטליגנציית ניתוב, בקרות בזמן אמת ואנליטיקה ללקוח ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+נתונים מובְנים, מנוהלים וניתנים למעקב הם היסוד. ללא נתונים שמישים האוטומציה הופכת לשבירה והציות הופך לידני. עם נתונים שמישים, בנקים יכולים ליצור אינטליגנציית ניתוב, בקרות בזמן אמת ואנליטיקה ללקוח ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. תזמור בין מסילות ופלטפורמות
 
@@ -197,7 +197,7 @@ AI כמערכת ההפעלה של התשלומים היא בסופו של דבר
 ## הפניות
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

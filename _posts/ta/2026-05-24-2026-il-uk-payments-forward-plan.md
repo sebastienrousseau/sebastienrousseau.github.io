@@ -20,7 +20,7 @@ UK Payments Forward Plan மற்றும் ஏப்ரல் 2026 கொள
 > **நிர்வாகச் சுருக்கம் / முக்கிய கருத்துகள்**
 >
 > - **பணப்பரிவர்த்தனை கொள்கை இப்போது மூலோபாயம்.** இந்தத் தலைப்பு ஒரு குறுகிய தயாரிப்பு வெளியீட்டைவிட இயக்க மாதிரி, மீள்திறன், வாடிக்கையாளர் மதிப்பு மற்றும் ஒழுங்குமுறை சான்றுடன் இணைக்கப்பட்டுள்ளது ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **வடிவமைப்புக் கொள்கை ஒரே ஒழுங்குமுறை எல்லை.** கொள்கை, தயாரிப்பு, தரவு, ரயில் தேர்வு, இடர் கட்டுப்பாடுகள் மற்றும் அளவிடக்கூடிய பொருளாதாரத்தை இணைக்கும் கட்டமைப்பு வங்கிகளுக்குத் தேவை ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **வடிவமைப்புக் கொள்கை ஒரே ஒழுங்குமுறை எல்லை.** கொள்கை, தயாரிப்பு, தரவு, ரயில் தேர்வு, இடர் கட்டுப்பாடுகள் மற்றும் அளவிடக்கூடிய பொருளாதாரத்தை இணைக்கும் கட்டமைப்பு வங்கிகளுக்குத் தேவை ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **கட்டுப்பாட்டு மாதிரி நிகழ்நேரமாக இருக்க வேண்டும்.** மோசடி, பணப்புழக்கம், இணக்கம், தீர்வு மற்றும் இயக்க-இடர் முடிவுகள் நிகழ்வுக்குப் பிறகு அல்லாமல் பணிப்பாய்வின் வேகத்தில் இயங்க வேண்டும்.
 > - **தரவுத் தரம் வணிக நன்மையாக மாறுகிறது.** கட்டமைக்கப்பட்ட தரவு, பரிவர்த்தனை சூழல், தணிக்கை பதிவுகள் மற்றும் அடையாள சமிக்ஞைகள் தன்னியக்கம் மற்றும் வாடிக்கையாளர்-முகம் தயாரிப்புகளுக்கான அடித்தளமாகின்றன.
 > - **துண்டாக்கமே எதிரி.** ஒவ்வொரு ரயில், டோக்கன், மாதிரி அல்லது இணக்கத் தேவையைச் சுற்றி தனிமைப்படுத்தப்பட்ட முன்னோட்டங்களைக் கட்டமைக்கும் வங்கி எதிர்கால இயக்க இடரை உருவாக்குகிறது.
@@ -32,7 +32,7 @@ UK Payments Forward Plan மற்றும் ஏப்ரல் 2026 கொள
 
 தொழில் ஏற்பு கட்டத்தைக் கடந்து முன்னேறிவிட்டது. ஒரு ரயிலில் இணைவது, ஒரு செய்தியை இடம்பெயர்ப்பது, ஒரு AI கருத்துச் சான்றை இயக்குவது அல்லது ஒரு டோக்கனைசேஷன் முன்னோட்டத்தை அறிவிப்பது இனி போதுமானதல்ல. 2026 இல், மூலோபாய விளிம்பு அந்தத் திறன்களை ஒரு உண்மையான பணிப்பாய்வுக்கு எதிராக ஒருங்கிணைத்து, பின்னர் அந்தப் பணிப்பாய்வு பாதுகாப்பானது, வேகமானது, மலிவானது, அதிக மீள்திறன் கொண்டது அல்லது வாடிக்கையாளர்களுக்கு அதிக பயனுள்ளது என்பதை நிரூபிப்பதிலிருந்து வருகிறது.
 
-அதனால்தான் பணப்பரிவர்த்தனை கொள்கை இப்போது வாரிய-நிலைத் தலைப்பாக உள்ளது. அதே அழுத்தங்கள் மீண்டும் மீண்டும் வருகின்றன: செழுமையான பணப்பரிவர்த்தனைத் தரவு, நிகழ்நேர தீர்வு, டோக்கனைஸ் செய்யப்பட்ட பணம், AI முடிவெடுத்தல், ஓப்பன் பேங்கிங், இயக்க மீள்திறன், கிளவுட் செறிவு மற்றும் வலுவான ஒழுங்குமுறை சான்று. தனித்தனியாகக் கருதப்படும்போது, இந்த அழுத்தங்கள் திட்டப் பரவலை உருவாக்குகின்றன. ஒரே கட்டமைப்பாகக் கருதப்படும்போது, அவை இயக்க அந்நியச் செலாவணியை உருவாக்குகின்றன ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+அதனால்தான் பணப்பரிவர்த்தனை கொள்கை இப்போது வாரிய-நிலைத் தலைப்பாக உள்ளது. அதே அழுத்தங்கள் மீண்டும் மீண்டும் வருகின்றன: செழுமையான பணப்பரிவர்த்தனைத் தரவு, நிகழ்நேர தீர்வு, டோக்கனைஸ் செய்யப்பட்ட பணம், AI முடிவெடுத்தல், ஓப்பன் பேங்கிங், இயக்க மீள்திறன், கிளவுட் செறிவு மற்றும் வலுவான ஒழுங்குமுறை சான்று. தனித்தனியாகக் கருதப்படும்போது, இந்த அழுத்தங்கள் திட்டப் பரவலை உருவாக்குகின்றன. ஒரே கட்டமைப்பாகக் கருதப்படும்போது, அவை இயக்க அந்நியச் செலாவணியை உருவாக்குகின்றன ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## 2026 கட்டமைப்பு அடிப்படைத் தரம்
 
@@ -42,7 +42,7 @@ UK Payments Forward Plan மற்றும் ஏப்ரல் 2026 கொள
 
 ### 2. கட்டுப்பாட்டுத் தளமாகத் தரவு
 
-கட்டமைக்கப்பட்ட, நிர்வகிக்கப்பட்ட மற்றும் கண்டறியக்கூடிய தரவு அடித்தளம். பயன்படுத்தக்கூடிய தரவு இல்லாமல், தன்னியக்கம் நொறுங்கக்கூடியதாகவும் இணக்கம் கையேடு முறையாகவும் மாறுகிறது. பயன்படுத்தக்கூடிய தரவுடன், வங்கிகள் வழிநடத்தல் நுண்ணறிவு, நிகழ்நேர கட்டுப்பாடுகள் மற்றும் வாடிக்கையாளர்-முகம் பகுப்பாய்வை உருவாக்க முடியும் ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+கட்டமைக்கப்பட்ட, நிர்வகிக்கப்பட்ட மற்றும் கண்டறியக்கூடிய தரவு அடித்தளம். பயன்படுத்தக்கூடிய தரவு இல்லாமல், தன்னியக்கம் நொறுங்கக்கூடியதாகவும் இணக்கம் கையேடு முறையாகவும் மாறுகிறது. பயன்படுத்தக்கூடிய தரவுடன், வங்கிகள் வழிநடத்தல் நுண்ணறிவு, நிகழ்நேர கட்டுப்பாடுகள் மற்றும் வாடிக்கையாளர்-முகம் பகுப்பாய்வை உருவாக்க முடியும் ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. ரயில்கள் மற்றும் தளங்கள் முழுவதும் ஒருங்கிணைப்பு
 
@@ -109,5 +109,5 @@ UK Payments Forward Plan மற்றும் ஏப்ரல் 2026 கொள
 ## குறிப்புகள்
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").

@@ -108,7 +108,7 @@ AI menjadi sistem operasi AI pembayaran pada 2026, bergeser dari analitik ke pen
 > **Ringkasan Eksekutif / Poin Utama**
 >
 > - **Intelijen Pembayaran kini strategis.** Topik ini terkait dengan model operasi, ketahanan, nilai klien, dan bukti regulasi, bukan peluncuran produk yang sempit ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **Prinsip desain adalah kontrol real-time.** Bank membutuhkan arsitektur yang menghubungkan kebijakan, produk, data, pilihan rail, kontrol risiko, dan ekonomi terukur ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Prinsip desain adalah kontrol real-time.** Bank membutuhkan arsitektur yang menghubungkan kebijakan, produk, data, pilihan rail, kontrol risiko, dan ekonomi terukur ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Model kontrol harus real-time.** Keputusan penipuan, likuiditas, kepatuhan, penyelesaian, dan risiko operasional harus berjalan pada kecepatan alur kerja, bukan setelah kejadian.
 > - **Kualitas data menjadi keunggulan komersial.** Data terstruktur, konteks transaksi, log audit, dan sinyal identitas menjadi substrat untuk otomatisasi dan produk yang menghadap klien.
 > - **Fragmentasi adalah musuh.** Bank yang membangun uji coba terisolasi di sekitar setiap rail, token, model, atau persyaratan kepatuhan menciptakan risiko operasional di masa depan.
@@ -120,7 +120,7 @@ AI menjadi sistem operasi AI pembayaran pada 2026, bergeser dari analitik ke pen
 
 Industri telah melewati fase adopsi. Tidak cukup lagi sekadar bergabung dengan suatu rail, memigrasi pesan, menjalankan proof of concept AI, atau mengumumkan uji coba tokenisasi. Pada 2026, keunggulan strategis datang dari mengorkestrasikan kemampuan-kemampuan tersebut terhadap alur kerja nyata, lalu membuktikan bahwa alur kerja itu lebih aman, lebih cepat, lebih murah, lebih tangguh, atau lebih berguna bagi klien.
 
-Itulah sebabnya intelijen pembayaran kini menjadi topik di tingkat dewan direksi. Tekanan yang sama terus berulang: data pembayaran yang lebih kaya, penyelesaian real-time, uang yang ditokenisasi, pengambilan keputusan AI, Open Banking, ketahanan operasional, konsentrasi cloud, dan bukti regulasi yang lebih kuat. Ditangani secara terpisah, tekanan-tekanan itu menciptakan program yang membengkak. Ditangani sebagai satu arsitektur, mereka menciptakan daya ungkit operasional ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Itulah sebabnya intelijen pembayaran kini menjadi topik di tingkat dewan direksi. Tekanan yang sama terus berulang: data pembayaran yang lebih kaya, penyelesaian real-time, uang yang ditokenisasi, pengambilan keputusan AI, Open Banking, ketahanan operasional, konsentrasi cloud, dan bukti regulasi yang lebih kuat. Ditangani secara terpisah, tekanan-tekanan itu menciptakan program yang membengkak. Ditangani sebagai satu arsitektur, mereka menciptakan daya ungkit operasional ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Baseline Arsitektur 2026
 
@@ -130,7 +130,7 @@ Bank seharusnya memulai dari friksi: likuiditas yang terjebak, penundaan penyele
 
 ### 2. Data sebagai Bidang Kontrol
 
-Data yang terstruktur, terkelola, dan dapat dilacak adalah fondasi. Tanpa data yang dapat digunakan, otomatisasi menjadi rapuh dan kepatuhan menjadi manual. Dengan data yang dapat digunakan, bank dapat menciptakan intelijen routing, kontrol real-time, dan analitik yang menghadap klien ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Data yang terstruktur, terkelola, dan dapat dilacak adalah fondasi. Tanpa data yang dapat digunakan, otomatisasi menjadi rapuh dan kepatuhan menjadi manual. Dengan data yang dapat digunakan, bank dapat menciptakan intelijen routing, kontrol real-time, dan analitik yang menghadap klien ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orkestrasi Lintas Rail dan Platform
 
@@ -197,7 +197,7 @@ Keberhasilan harus diukur melalui ekonomi unit, bukti ketahanan, kualitas data, 
 ## Referensi
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

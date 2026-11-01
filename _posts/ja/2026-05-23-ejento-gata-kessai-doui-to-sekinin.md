@@ -101,13 +101,13 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-エージェント型決済は、提案資料の段階から実市場のエビデンスへと移行しました。Mastercard と Rabobank はオランダで AI エージェントが起動する決済を完了し、エージェントは Priceless.com 上でコーヒーテイスティングを予約しています。カード情報には直接アクセスせず、実行前に消費者の明示的な同意が記録されました([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。銀行にとっての戦略的論点は、いまや同意アーキテクチャです。すなわち、金融機関は機械による決済が、背後にいる個人または法人の本人によって真に承認されたものであることをいかに証明するかです。
+エージェント型決済は、提案資料の段階から実市場のエビデンスへと移行しました。Mastercard と Rabobank はオランダで AI エージェントが起動する決済を完了し、エージェントは Priceless.com 上でコーヒーテイスティングを予約しています。カード情報には直接アクセスせず、実行前に消費者の明示的な同意が記録されました([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。銀行にとっての戦略的論点は、いまや同意アーキテクチャです。すなわち、金融機関は機械による決済が、背後にいる個人または法人の本人によって真に承認されたものであることをいかに証明するかです。
 
 ---
 
 > **エグゼクティブサマリー / 要点**
 >
-> - **最初の市場シグナルは実取引です。** Mastercard と Rabobank は Mastercard Agent Pay を用いてオランダで AI エージェント取引を完了し、エージェントによるカードデータへの直接アクセスは遮断されました([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
+> - **最初の市場シグナルは実取引です。** Mastercard と Rabobank は Mastercard Agent Pay を用いてオランダで AI エージェント取引を完了し、エージェントによるカードデータへの直接アクセスは遮断されました([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
 > - **エージェント型決済プロトコルは法整備に先行して立ち上がっています。** Fenwick は AP2、A2A、x402、MCP、MPP をエージェント相互運用性および認可に取り組むプロトコル群として整理しています([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?"))。
 > - **同意こそが銀行の中核課題です。** AP2 型の暗号学的マンデートは、ユーザーの指示と最終承認を意図の監査可能なエビデンスとして取得しようと試みます([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?"))。
 > - **責任は未解決のままです。** 既存の決済法は、委任された権限で動作する自律 AI ではなく、人間が決定する取引を前提に設計されています([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?"))。
@@ -198,7 +198,7 @@ J.P. Morgan は、エージェント型コマースが繰り返し発生する�
 ## 参考文献
 
 - Fenwick, (2026). [Is 2026 the Year of Agentic Payments? ⧉](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 

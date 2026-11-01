@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 > **Резюме для правління / Ключові висновки**
 >
 > - **Інтелект платежів тепер стратегічний.** Тема пов’язана з операційною моделлю, стійкістю, цінністю для клієнта та регуляторними доказами, а не з вузьким запуском продукту ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **Принцип проєктування — контроль у реальному часі.** Банкам потрібна архітектура, що поєднує політику, продукт, дані, вибір рейки, засоби контролю ризику та вимірювану економіку ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Принцип проєктування — контроль у реальному часі.** Банкам потрібна архітектура, що поєднує політику, продукт, дані, вибір рейки, засоби контролю ризику та вимірювану економіку ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Модель контролю має бути в реальному часі.** Рішення з шахрайства, ліквідності, відповідності, розрахунків і операційного ризику мають виконуватись на швидкості процесу, а не постфактум.
 > - **Якість даних стає комерційною перевагою.** Структуровані дані, контекст транзакцій, журнали аудиту та сигнали ідентичності стають субстратом для автоматизації та продуктів для клієнтів.
 > - **Фрагментація — головний ворог.** Банк, що будує ізольовані пілоти для кожної рейки, токена, моделі чи вимоги відповідності, створює майбутній операційний ризик.
@@ -120,7 +120,7 @@ site_software: "Static Site Generator, Rust"
 
 Галузь вийшла за межі фази впровадження. Уже недостатньо приєднатися до рейки, мігрувати повідомлення, провести експеримент із ШІ чи оголосити пілот токенізації. У 2026 році стратегічна перевага виникає з оркестрації цих можливостей навколо реального робочого процесу та доведення, що цей процес безпечніший, швидший, дешевший, стійкіший або корисніший для клієнтів.
 
-Саме тому інтелект платежів став темою рівня правління. Ті самі тиски повторюються: багатші дані платежів, розрахунки в реальному часі, токенізовані гроші, прийняття рішень за допомогою ШІ, Open Banking, операційна стійкість, концентрація хмар і посилені регуляторні докази. Якщо ставитися до них окремо, вони створюють розростання програм. Якщо ставитися до них як до єдиної архітектури, вони створюють операційний важіль ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Саме тому інтелект платежів став темою рівня правління. Ті самі тиски повторюються: багатші дані платежів, розрахунки в реальному часі, токенізовані гроші, прийняття рішень за допомогою ШІ, Open Banking, операційна стійкість, концентрація хмар і посилені регуляторні докази. Якщо ставитися до них окремо, вони створюють розростання програм. Якщо ставитися до них як до єдиної архітектури, вони створюють операційний важіль ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Архітектурна основа 2026 року
 
@@ -130,7 +130,7 @@ site_software: "Static Site Generator, Rust"
 
 ### 2. Дані як площина контролю
 
-Структуровані, керовані та відстежувані дані — це фундамент. Без придатних даних автоматизація стає крихкою, а відповідність — ручною. З придатними даними банки можуть створювати інтелектуальну маршрутизацію, засоби контролю в реальному часі та клієнтську аналітику ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Структуровані, керовані та відстежувані дані — це фундамент. Без придатних даних автоматизація стає крихкою, а відповідність — ручною. З придатними даними банки можуть створювати інтелектуальну маршрутизацію, засоби контролю в реальному часі та клієнтську аналітику ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Оркестрація між рейками та платформами
 
@@ -197,7 +197,7 @@ site_software: "Static Site Generator, Rust"
 ## Джерела
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

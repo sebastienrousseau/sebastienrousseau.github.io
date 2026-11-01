@@ -13,13 +13,13 @@ keywords: "ügynöki fizetések 2026, MI-ügynöki fizetések, Mastercard Agent 
 
 ## Ügynöki fizetések a bankszektorban: beleegyezés, felelősség és az új fizetési UX 2026-ban
 
-Az ügynöki fizetések átléptek a bemutató diákról az élő piaci bizonyítékok szintjére. A Mastercard és a Rabobank végrehajtott egy MI-ügynök által kezdeményezett fizetést Hollandiában, ahol egy ügynök lefoglalt egy kávékóstolót a Priceless.com oldalon anélkül, hogy közvetlenül hozzáfért volna a kártyaadatokhoz, és a végrehajtás előtt rögzített kifejezett fogyasztói beleegyezéssel ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). A bankok stratégiai kérdése ma már a beleegyezési architektúra: hogyan bizonyítja egy pénzügyi intézmény, hogy egy gépi fizetést valóban a mögötte álló emberi vagy vállalati megbízó engedélyezett.
+Az ügynöki fizetések átléptek a bemutató diákról az élő piaci bizonyítékok szintjére. A Mastercard és a Rabobank végrehajtott egy MI-ügynök által kezdeményezett fizetést Hollandiában, ahol egy ügynök lefoglalt egy kávékóstolót a Priceless.com oldalon anélkül, hogy közvetlenül hozzáfért volna a kártyaadatokhoz, és a végrehajtás előtt rögzített kifejezett fogyasztói beleegyezéssel ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). A bankok stratégiai kérdése ma már a beleegyezési architektúra: hogyan bizonyítja egy pénzügyi intézmény, hogy egy gépi fizetést valóban a mögötte álló emberi vagy vállalati megbízó engedélyezett.
 
 ---
 
 > **Vezetői összefoglaló / Legfontosabb tanulságok**
 >
-> - **Az első piaci jelzések már élnek.** A Mastercard és a Rabobank végrehajtott egy hollandiai MI-ügynöki tranzakciót a Mastercard Agent Pay segítségével, miközben az ügynök nem fért hozzá közvetlenül a kártyaadatokhoz ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Az első piaci jelzések már élnek.** A Mastercard és a Rabobank végrehajtott egy hollandiai MI-ügynöki tranzakciót a Mastercard Agent Pay segítségével, miközben az ügynök nem fért hozzá közvetlenül a kártyaadatokhoz ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Az ügynöki fizetési protokollok azelőtt jelennek meg, hogy a jog letisztult volna.** A Fenwick az AP2, A2A, x402, MCP és MPP protokollokat azonosítja mint az ügynökök interoperabilitását és engedélyezését kezelő fejlesztéseket ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **A beleegyezés a banki alapprobléma.** Az AP2-stílusú kriptográfiai mandátumok megkísérlik a felhasználói utasításokat és a végső jóváhagyást a szándék auditálható bizonyítékaként rögzíteni ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **A felelősség megoldatlan marad.** A meglévő fizetési jogot ember által eldöntött tranzakciók köré tervezték, nem pedig delegált felhatalmazás alatt működő autonóm MI-rendszerek köré ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
@@ -110,6 +110,6 @@ A bankoknak alacsony kockázatú, alacsony értékű, korlátozott felhasználá
 ## Hivatkozások
 
 - Fenwick, (2026). [Is 2026 the Year of Agentic Payments? ⧉](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").

@@ -13,13 +13,13 @@ keywords: "پرداخت‌های عاملانه ۲۰۲۶, پرداخت‌های 
 
 ## پرداخت‌های عاملانه در بانکداری: رضایت، مسئولیت و تجربهٔ کاربری نوین پرداخت در ۲۰۲۶
 
-پرداخت‌های عاملانه از ارائهٔ اسلایدها به شواهد بازار زنده گذر کرده‌اند. مسترکارت و رابوبانک یک پرداخت آغازشده توسط عامل هوش مصنوعی را در هلند کامل کردند، جایی که یک عامل بدون دسترسی مستقیم به جزئیات کارت و با رضایت صریح مصرف‌کننده که پیش از اجرا ثبت شده بود، یک تجربهٔ چشایی قهوه را در Priceless.com رزرو کرد ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). مسئلهٔ راهبردی برای بانک‌ها اکنون معماری رضایت است: اینکه یک مؤسسهٔ مالی چگونه اثبات می‌کند که یک پرداخت ماشینی واقعاً توسط انسان یا اصیل شرکتی پشت آن مجاز شده است.
+پرداخت‌های عاملانه از ارائهٔ اسلایدها به شواهد بازار زنده گذر کرده‌اند. مسترکارت و رابوبانک یک پرداخت آغازشده توسط عامل هوش مصنوعی را در هلند کامل کردند، جایی که یک عامل بدون دسترسی مستقیم به جزئیات کارت و با رضایت صریح مصرف‌کننده که پیش از اجرا ثبت شده بود، یک تجربهٔ چشایی قهوه را در Priceless.com رزرو کرد ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). مسئلهٔ راهبردی برای بانک‌ها اکنون معماری رضایت است: اینکه یک مؤسسهٔ مالی چگونه اثبات می‌کند که یک پرداخت ماشینی واقعاً توسط انسان یا اصیل شرکتی پشت آن مجاز شده است.
 
 ---
 
 > **خلاصهٔ اجرایی / نکات کلیدی**
 >
-> - **نخستین نشانه‌های بازار زنده‌اند.** مسترکارت و رابوبانک یک تراکنش عامل هوش مصنوعی را در هلند با استفاده از Mastercard Agent Pay کامل کردند، در حالی که عامل از دسترسی مستقیم به داده‌های کارت بازداشته شد ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **نخستین نشانه‌های بازار زنده‌اند.** مسترکارت و رابوبانک یک تراکنش عامل هوش مصنوعی را در هلند با استفاده از Mastercard Agent Pay کامل کردند، در حالی که عامل از دسترسی مستقیم به داده‌های کارت بازداشته شد ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **پروتکل‌های پرداخت عاملانه پیش از تثبیت قانون در حال ظهورند.** فنویک AP2، A2A، x402، MCP و MPP را به‌عنوان تلاش‌های پروتکلی برای پرداختن به هم‌کنش‌پذیری و اجازه‌دهی عامل‌ها شناسایی می‌کند ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **رضایت، مسئلهٔ اصلی بانکداری است.** مجوزهای رمزنگاشتی به سبک AP2 تلاش می‌کنند دستورالعمل‌های کاربر و تأیید نهایی را به‌عنوان شواهد قابل‌حسابرسیِ نیت ثبت کنند ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **مسئولیت همچنان حل‌نشده است.** قانون پرداخت موجود پیرامون تراکنش‌هایی طراحی شده که انسان دربارهٔ آن‌ها تصمیم می‌گیرد، نه سیستم‌های خودگردان هوش مصنوعی که با اختیار واگذارشده عمل می‌کنند ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
@@ -110,6 +110,6 @@ keywords: "پرداخت‌های عاملانه ۲۰۲۶, پرداخت‌های 
 ## منابع
 
 - Fenwick, (2026). [Is 2026 the Year of Agentic Payments? ⧉](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").

@@ -108,7 +108,7 @@ Het UK Payments Forward Plan en het beleidspakket van april 2026 wijzen op één
 > **Executive Summary / belangrijkste conclusies**
 >
 > - **Betalingsbeleid is nu strategisch.** Het onderwerp is verbonden met bedrijfsmodel, weerbaarheid, klantwaarde en regelgevingsbewijs in plaats van een smalle productlancering ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **Het ontwerpprincipe is één regelgevende perimeter.** Banken hebben een architectuur nodig die beleid, product, data, railkeuze, risicocontroles en meetbare economics verbindt ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Het ontwerpprincipe is één regelgevende perimeter.** Banken hebben een architectuur nodig die beleid, product, data, railkeuze, risicocontroles en meetbare economics verbindt ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Het controlemodel moet realtime zijn.** Fraude-, liquiditeits-, compliance-, afwikkelings- en operationeel-risicobeslissingen moeten draaien op de snelheid van de workflow, niet na het feit.
 > - **Datakwaliteit wordt een commercieel voordeel.** Gestructureerde data, transactiecontext, auditlogs en identiteitssignalen worden het substraat voor automatisering en voor klantgerichte producten.
 > - **Fragmentatie is de vijand.** Een bank die geïsoleerde pilots bouwt rond elke rail, token, model of compliance-eis creëert toekomstig operationeel risico.
@@ -120,7 +120,7 @@ Het UK Payments Forward Plan en het beleidspakket van april 2026 wijzen op één
 
 De sector is voorbij de adoptiefase. Het is niet langer voldoende om aan te sluiten op een rail, een bericht te migreren, een AI-proof-of-concept uit te voeren of een tokenisatiepilot aan te kondigen. In 2026 komt het strategische voordeel voort uit het orchestreren van die capaciteiten tegen een echte workflow, en vervolgens aantonen dat de workflow veiliger, sneller, goedkoper, weerbaarder of nuttiger is voor cliënten.
 
-Daarom is betalingsbeleid nu een onderwerp voor de Raad van Bestuur. Dezelfde druk keert telkens terug: rijkere betalingsdata, realtime afwikkeling, getokeniseerd geld, AI-besluitvorming, open banking, operationele weerbaarheid, cloud-concentratie en sterker regelgevingsbewijs. Afzonderlijk behandeld leidt die druk tot programmawildgroei. Behandeld als één architectuur levert het operationele hefboomwerking ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Daarom is betalingsbeleid nu een onderwerp voor de Raad van Bestuur. Dezelfde druk keert telkens terug: rijkere betalingsdata, realtime afwikkeling, getokeniseerd geld, AI-besluitvorming, open banking, operationele weerbaarheid, cloud-concentratie en sterker regelgevingsbewijs. Afzonderlijk behandeld leidt die druk tot programmawildgroei. Behandeld als één architectuur levert het operationele hefboomwerking ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## De architectuurbasislijn voor 2026
 
@@ -130,7 +130,7 @@ De bank moet beginnen bij de frictie: opgesloten liquiditeit, afwikkelingsvertra
 
 ### 2. Data als controlevlak
 
-Gestructureerde, beheerde en traceerbare data is het fundament. Zonder bruikbare data wordt automatisering broos en compliance handmatig. Met bruikbare data kunnen banken routerings­intelligentie, realtime controles en klantgerichte analytics creëren ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Gestructureerde, beheerde en traceerbare data is het fundament. Zonder bruikbare data wordt automatisering broos en compliance handmatig. Met bruikbare data kunnen banken routerings­intelligentie, realtime controles en klantgerichte analytics creëren ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orchestratie over rails en platformen
 
@@ -197,7 +197,7 @@ Succes moet worden gemeten aan unit economics, weerbaarheidsbewijs, datakwalitei
 ## Referenties
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

@@ -116,7 +116,7 @@ Champion adalah tuas yang memaksa hal itu terjadi.
 > - **Gilt didahulukan karena merupakan aset paling sulit untuk dibenarkan.** HQLA di atas DLT, diselesaikan secara atomik terhadap kas tertokenisasi, memvalidasi tumpukan penuh — penerbitan, perdagangan, repo, agunan, uang bank sentral — pada kumpulan sterling terdalam ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **Repo intraday adalah hadiah jangka pendek.** Repo atomik T+0 atas gilt tertokenisasi melepaskan modal yang hari ini menganggur sebagai buffer likuiditas same-day. Penghematan tersebut mengalir langsung ke ROE.
 > - **Orkestrasi menggantikan jaringan mandiri.** Regulated Liability Network, Canton, DLT bank privat, RTGS, dan uang bank komersial tertokenisasi masing-masing membawa alur kerja yang sudah dijalankan bank. Tugasnya adalah merutekan di antara mereka, bukan memilih satu.
-> - **Policy-as-code adalah satu-satunya model kepatuhan yang mampu mengejar.** Sanksi, KYC, batas posisi, gerbang yurisdiksi — dikodekan dalam lapisan penyelesaian, dieksekusi secara atomik bersama perdagangan, menghasilkan jejak audit kriptografis ketimbang log yang harus dipercaya regulator ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Pembaruan kondisi pembayaran – Mei 2026")).
+> - **Policy-as-code adalah satu-satunya model kepatuhan yang mampu mengejar.** Sanksi, KYC, batas posisi, gerbang yurisdiksi — dikodekan dalam lapisan penyelesaian, dieksekusi secara atomik bersama perdagangan, menghasilkan jejak audit kriptografis ketimbang log yang harus dipercaya regulator ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Pembaruan kondisi pembayaran – Mei 2026")).
 > - **Arsitektur adalah benteng pertahanan.** Pemenang menjalin alur kerja, data, jalur pembayaran, kendali, dan ekonomi unit menjadi satu model operasi. Yang kalah menjalankan portofolio pilot yang terputus-putus dan menyebutnya strategi.
 >
 ---
@@ -153,7 +153,7 @@ Mulai dari friksi. Likuiditas yang terjebak, kegagalan penyelesaian, biaya rekon
 
 ### Data sebagai Bidang Kendali
 
-Payload ISO 20022 yang terikat pada hash transaksi on-chain mengubah data penyelesaian menjadi sumber kebenaran tunggal. Tanpa pengikatan tersebut, otomasi kontrak pintar rapuh dan rekonsiliasi kembali ke spreadsheet. Dengannya, bank mendapatkan straight-through processing, kendali waktu nyata, dan analitik yang sungguh-sungguh akan dibayar klien ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Pembaruan kondisi pembayaran – Mei 2026")).
+Payload ISO 20022 yang terikat pada hash transaksi on-chain mengubah data penyelesaian menjadi sumber kebenaran tunggal. Tanpa pengikatan tersebut, otomasi kontrak pintar rapuh dan rekonsiliasi kembali ke spreadsheet. Dengannya, bank mendapatkan straight-through processing, kendali waktu nyata, dan analitik yang sungguh-sungguh akan dibayar klien ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Pembaruan kondisi pembayaran – Mei 2026")).
 
 ### Orkestrasi Lintas Jalur Pembayaran
 
@@ -234,7 +234,7 @@ Basis poin yang dihemat dari pendanaan agunan. Pengurangan buffer likuiditas int
 - GOV.UK, (2026). [Fintech Inggris didukung untuk merangkul teknologi pembayaran masa depan ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "Fintech Inggris didukung").
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "Digital Securities Sandbox FCA").
-- Association of Corporate Treasurers, (2026). [Pembaruan kondisi pembayaran – Mei 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Pembaruan kondisi pembayaran").
+- Association of Corporate Treasurers, (2026). [Pembaruan kondisi pembayaran – Mei 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Pembaruan kondisi pembayaran").
 - Global Government Finance, (2026). [Champion pasar digital grosir Inggris ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Champion pasar digital grosir Inggris").
 
 <!-- enrich-start -->

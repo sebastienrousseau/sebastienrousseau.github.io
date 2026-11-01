@@ -108,7 +108,7 @@ UK Payments Forward Plan och policypaketet i april 2026 pekar mot ett gemensamt 
 > **Sammanfattning / Huvudsakliga slutsatser**
 >
 > - **Betalningspolicyn är nu strategisk.** Ämnet kopplas till driftsmodell, motståndskraft, kundvärde och regulatoriskt bevis snarare än till en enskild produktlansering ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **Designprincipen är en enda regulatorisk perimeter.** Bankerna behöver en arkitektur som binder samman policy, produkt, data, val av rail, riskkontroller och mätbar ekonomi ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Designprincipen är en enda regulatorisk perimeter.** Bankerna behöver en arkitektur som binder samman policy, produkt, data, val av rail, riskkontroller och mätbar ekonomi ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Kontrollmodellen måste vara i realtid.** Beslut om bedrägeri, likviditet, regelefterlevnad, avveckling och operativ risk måste fattas i flödets hastighet, inte efter händelsen.
 > - **Datakvalitet blir kommersiell fördel.** Strukturerade data, transaktionskontext, revisionsloggar och identitetssignaler blir substratet för automatisering och kundvända produkter.
 > - **Fragmentering är fienden.** En bank som bygger isolerade pilotprojekt kring varje rail, token, modell eller efterlevnadskrav skapar framtida driftsrisk.
@@ -120,7 +120,7 @@ UK Payments Forward Plan och policypaketet i april 2026 pekar mot ett gemensamt 
 
 Branschen har lämnat adoptionsfasen. Det räcker inte längre med att ansluta sig till en rail, migrera ett meddelande, köra ett AI-konceptbevis eller annonsera ett tokeniseringspilot. 2026 kommer den strategiska skarpheten från att orkestrera dessa förmågor mot ett verkligt flöde, och därefter bevisa att flödet är säkrare, snabbare, billigare, mer motståndskraftigt eller mer användbart för kunden.
 
-Det är därför betalningspolicy nu är ett styrelseämne. Samma tryck återkommer: rikare betalningsdata, avveckling i realtid, tokeniserade pengar, AI-beslutsfattande, Open Banking, operativ motståndskraft, molnkoncentration och starkare regulatoriskt bevis. Hanterade var för sig skapar dessa tryck programspridning. Hanterade som en arkitektur skapar de operativ hävstång ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Det är därför betalningspolicy nu är ett styrelseämne. Samma tryck återkommer: rikare betalningsdata, avveckling i realtid, tokeniserade pengar, AI-beslutsfattande, Open Banking, operativ motståndskraft, molnkoncentration och starkare regulatoriskt bevis. Hanterade var för sig skapar dessa tryck programspridning. Hanterade som en arkitektur skapar de operativ hävstång ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Arkitekturens baslinje 2026
 
@@ -130,7 +130,7 @@ Banken bör utgå från friktionen: instängd likviditet, fördröjd avveckling,
 
 ### 2. Data som kontrollplan
 
-Strukturerade, styrda och spårbara data är grunden. Utan användbara data blir automatiseringen ömtålig och regelefterlevnaden manuell. Med användbara data kan bankerna skapa dirigeringsintelligens, realtidskontroller och kundvänd analys ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Strukturerade, styrda och spårbara data är grunden. Utan användbara data blir automatiseringen ömtålig och regelefterlevnaden manuell. Med användbara data kan bankerna skapa dirigeringsintelligens, realtidskontroller och kundvänd analys ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orkestrering över rails och plattformar
 
@@ -197,7 +197,7 @@ Framgång ska mätas i enhetsekonomi, bevis för motståndskraft, datakvalitet, 
 ## Referenser
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

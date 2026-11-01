@@ -113,7 +113,7 @@ site_software: "Static Site Generator, Rust"
 > - **国债打头阵,因为它是最难做对的资产。**HQLA 上链、与代币化现金原子化结算,在最深的英镑池上验证完整技术栈——发行、交易、回购、担保品、央行货币([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "数字证券沙盒"))。
 > - **日内回购是眼前最直接的奖赏。**代币化国债的 T+0 原子化回购释放出今天作为当日流动性缓冲被闲置的资本,节省直接落到 ROE。
 > - **编排取代独立网络。**受监管负债网络(RLN)、Canton、私有银行 DLT、RTGS 与代币化商业银行货币各承载着银行已在运行的工作流。任务是跨之路由,而非择一站队。
-> - **政策即代码是唯一跟得上节奏的合规模型。**制裁、KYC、头寸限额、辖区门控——编码进结算层,与交易原子化执行,产出加密审计轨迹,而不是要监管机构去信任的日志([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "2026 年 5 月支付格局更新"))。
+> - **政策即代码是唯一跟得上节奏的合规模型。**制裁、KYC、头寸限额、辖区门控——编码进结算层,与交易原子化执行,产出加密审计轨迹,而不是要监管机构去信任的日志([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "2026 年 5 月支付格局更新"))。
 > - **架构就是护城河。**赢家把工作流、数据、支付通道、控制与单位经济性织成一套运营模型;输家则把一堆互不相通的试点拼成"战略"。
 >
 ---
@@ -150,7 +150,7 @@ DSS 是一套正在运行的监管制度。要把它当平台用,而不仅是 Po
 
 ### 数据作为控制面
 
-ISO 20022 报文绑定到链上交易哈希,把结算数据变成单一可信来源。没有这层绑定,智能合约自动化就脆,对账退回电子表格。有了它,银行才能获得直通处理、实时控制以及客户愿意付费的分析能力([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "2026 年 5 月支付格局更新"))。
+ISO 20022 报文绑定到链上交易哈希,把结算数据变成单一可信来源。没有这层绑定,智能合约自动化就脆,对账退回电子表格。有了它,银行才能获得直通处理、实时控制以及客户愿意付费的分析能力([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "2026 年 5 月支付格局更新"))。
 
 ### 跨支付通道的编排
 
@@ -231,7 +231,7 @@ DSS 是 FCA 与英格兰银行联合主持的监管制度,允许机构在针对 
 - GOV.UK,(2026)。[英国金融科技获扶持以拥抱未来支付技术 ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "英国金融科技扶持")。
 - Bank of England,(2026)。[数字证券沙盒 ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "数字证券沙盒")。
 - FCA,(2026)。[数字证券沙盒 ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA 数字证券沙盒")。
-- Association of Corporate Treasurers,(2026)。[2026 年 5 月支付格局更新 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "支付格局更新")。
+- Association of Corporate Treasurers,(2026)。[2026 年 5 月支付格局更新 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "支付格局更新")。
 - Global Government Finance,(2026)。[英国批发数字市场协调者 ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "英国批发数字市场协调者")。
 
 <!-- enrich-start -->

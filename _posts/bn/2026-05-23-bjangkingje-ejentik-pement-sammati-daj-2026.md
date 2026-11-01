@@ -101,13 +101,13 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-এজেন্টিক পেমেন্ট উপস্থাপনা ডেক থেকে সরাসরি লাইভ-মার্কেট প্রমাণে উত্তীর্ণ হয়েছে। Mastercard ও Rabobank নেদারল্যান্ডসে একটি AI agent-চালিত পেমেন্ট সম্পন্ন করেছে, যেখানে এজেন্ট সরাসরি কার্ডের বিবরণে প্রবেশ না করে এবং সম্পাদনের পূর্বে স্পষ্ট ভোক্তা-সম্মতি নথিভুক্ত করে Priceless.com-এ একটি কফি টেস্টিং বুকিং করেছে ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))। ব্যাংকগুলোর জন্য কৌশলগত প্রশ্ন এখন সম্মতি-স্থাপত্য: একটি আর্থিক প্রতিষ্ঠান কীভাবে প্রমাণ করে যে একটি মেশিন-পেমেন্ট সত্যিকার অর্থে এর পেছনের মানব বা কর্পোরেট মূলকর্তা কর্তৃক অনুমোদিত ছিল।
+এজেন্টিক পেমেন্ট উপস্থাপনা ডেক থেকে সরাসরি লাইভ-মার্কেট প্রমাণে উত্তীর্ণ হয়েছে। Mastercard ও Rabobank নেদারল্যান্ডসে একটি AI agent-চালিত পেমেন্ট সম্পন্ন করেছে, যেখানে এজেন্ট সরাসরি কার্ডের বিবরণে প্রবেশ না করে এবং সম্পাদনের পূর্বে স্পষ্ট ভোক্তা-সম্মতি নথিভুক্ত করে Priceless.com-এ একটি কফি টেস্টিং বুকিং করেছে ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))। ব্যাংকগুলোর জন্য কৌশলগত প্রশ্ন এখন সম্মতি-স্থাপত্য: একটি আর্থিক প্রতিষ্ঠান কীভাবে প্রমাণ করে যে একটি মেশিন-পেমেন্ট সত্যিকার অর্থে এর পেছনের মানব বা কর্পোরেট মূলকর্তা কর্তৃক অনুমোদিত ছিল।
 
 ---
 
 > **নির্বাহী সারসংক্ষেপ / মূল গ্রহণযোগ্য বিষয়সমূহ**
 >
-> - **প্রথম বাজার সংকেত লাইভ।** Mastercard ও Rabobank Mastercard Agent Pay ব্যবহার করে একটি নেদারল্যান্ডস AI-এজেন্ট লেনদেন সম্পন্ন করেছে, যেখানে এজেন্টকে সরাসরি কার্ড ডেটায় প্রবেশ থেকে বিরত রাখা হয়েছে ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
+> - **প্রথম বাজার সংকেত লাইভ।** Mastercard ও Rabobank Mastercard Agent Pay ব্যবহার করে একটি নেদারল্যান্ডস AI-এজেন্ট লেনদেন সম্পন্ন করেছে, যেখানে এজেন্টকে সরাসরি কার্ড ডেটায় প্রবেশ থেকে বিরত রাখা হয়েছে ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
 > - **আইন স্থির হওয়ার আগেই এজেন্টিক পেমেন্ট প্রোটোকল উদ্ভূত হচ্ছে।** Fenwick AP2, A2A, x402, MCP ও MPP-কে এজেন্ট আন্তঃকার্যকারিতা ও অনুমোদন সংক্রান্ত প্রোটোকল প্রচেষ্টা হিসেবে চিহ্নিত করেছে ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?"))।
 > - **সম্মতিই মূল ব্যাংকিং সমস্যা।** AP2-ধাঁচের ক্রিপ্টোগ্রাফিক সম্মতির আদেশ ব্যবহারকারীর নির্দেশনা ও চূড়ান্ত অনুমোদনকে অভিপ্রায়ের অডিটযোগ্য প্রমাণ হিসেবে ধরার চেষ্টা করে ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?"))।
 > - **দায় অমীমাংসিত।** বিদ্যমান পেমেন্ট আইন মানব-নির্ধারিত লেনদেনের চারপাশে নকশা করা, অর্পিত কর্তৃত্বে কাজ করা স্বায়ত্তশাসিত AI সিস্টেমের জন্য নয় ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?"))।
@@ -198,7 +198,7 @@ J.P. Morgan আশা করে এজেন্টিক বাণিজ্য �
 ## তথ্যসূত্র
 
 - Fenwick, (২০২৬)। [Is 2026 the Year of Agentic Payments? ⧉](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")।
-- Association of Corporate Treasurers, (২০২৬)। [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update")।
+- Association of Corporate Treasurers, (২০২৬)। [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update")।
 - GOV.UK, (২০২৬)। [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed")।
 - J.P. Morgan, (২০২৬)। [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook")।
 

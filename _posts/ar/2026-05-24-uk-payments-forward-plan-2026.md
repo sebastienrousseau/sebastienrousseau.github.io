@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 > **الملخص التنفيذي / الاستنتاجات الرئيسية**
 >
 > - **سياسة المدفوعات باتت استراتيجية.** الموضوع مرتبط بالنموذج التشغيلي والمرونة وقيمة العميل والأدلة التنظيمية أكثر من ارتباطه بإطلاق منتج ضيّق ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **مبدأ التصميم هو نطاق تنظيمي واحد.** تحتاج البنوك إلى بنية تربط السياسة والمنتج والبيانات واختيار المسار وضوابط المخاطر والاقتصاديات القابلة للقياس ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **مبدأ التصميم هو نطاق تنظيمي واحد.** تحتاج البنوك إلى بنية تربط السياسة والمنتج والبيانات واختيار المسار وضوابط المخاطر والاقتصاديات القابلة للقياس ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **نموذج الضبط يجب أن يكون فورياً.** قرارات الاحتيال والسيولة والامتثال والتسوية والمخاطر التشغيلية يجب أن تجري بسرعة تدفّق العمل، لا بعد الحدث.
 > - **جودة البيانات تتحوّل إلى ميزة تجارية.** تتحوّل البيانات المُهيكلة، وسياق المعاملة، وسجلات التدقيق، وإشارات الهوية إلى ركيزة الأتمتة والمنتجات الموجَّهة للعميل.
 > - **التشظّي هو العدو.** البنك الذي يبني تجارب معزولة حول كل مسار أو رمز أو نموذج أو متطلب امتثال يصنع مخاطر تشغيلية مستقبلية.
@@ -120,7 +120,7 @@ site_software: "Static Site Generator, Rust"
 
 تجاوزت الصناعة مرحلة التبنّي. لم يعد كافياً الانضمام إلى مسار، أو ترحيل رسالة، أو تشغيل إثبات مفهوم في الذكاء الاصطناعي، أو الإعلان عن تجربة ترميز. في 2026، تأتي الميزة الاستراتيجية من تنسيق تلك القدرات في مواجهة تدفّق عمل حقيقي، ثم إثبات أن هذا التدفّق أكثر أماناً، أو أسرع، أو أرخص، أو أكثر مرونة، أو أكثر فائدة للعميل.
 
-لهذا السبب صارت سياسة المدفوعات موضوعاً على طاولة مجلس الإدارة. تتكرر الضغوط ذاتها: بيانات مدفوعات أغنى، وتسوية فورية، ونقد مرمَّز، واتخاذ قرارات بالذكاء الاصطناعي، والخدمات المصرفية المفتوحة (Open Banking)، والمرونة التشغيلية، وتركّز السحابة، وأدلة تنظيمية أقوى. حين تُعالَج منفصلة تُولّد تضخّماً برامجياً. وحين تُعالَج بوصفها بنية واحدة تُنتج رافعة تشغيلية ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")، [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+لهذا السبب صارت سياسة المدفوعات موضوعاً على طاولة مجلس الإدارة. تتكرر الضغوط ذاتها: بيانات مدفوعات أغنى، وتسوية فورية، ونقد مرمَّز، واتخاذ قرارات بالذكاء الاصطناعي، والخدمات المصرفية المفتوحة (Open Banking)، والمرونة التشغيلية، وتركّز السحابة، وأدلة تنظيمية أقوى. حين تُعالَج منفصلة تُولّد تضخّماً برامجياً. وحين تُعالَج بوصفها بنية واحدة تُنتج رافعة تشغيلية ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")، [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## خط الأساس المعماري لعام 2026
 
@@ -130,7 +130,7 @@ site_software: "Static Site Generator, Rust"
 
 ### 2. البيانات بوصفها مستوى الضبط
 
-البيانات المُهيكلة والمحوكمة والقابلة للتتبّع هي الأساس. بدون بيانات قابلة للاستخدام، تصبح الأتمتة هشّة ويصبح الامتثال يدوياً. مع بيانات قابلة للاستخدام، تستطيع البنوك بناء ذكاء التوجيه، وضوابط فورية، وتحليلات موجَّهة للعميل ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+البيانات المُهيكلة والمحوكمة والقابلة للتتبّع هي الأساس. بدون بيانات قابلة للاستخدام، تصبح الأتمتة هشّة ويصبح الامتثال يدوياً. مع بيانات قابلة للاستخدام، تستطيع البنوك بناء ذكاء التوجيه، وضوابط فورية، وتحليلات موجَّهة للعميل ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. التنسيق عبر المسارات والمنصّات
 
@@ -197,7 +197,7 @@ site_software: "Static Site Generator, Rust"
 ## المراجع
 
 - GOV.UK، (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers، (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers، (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance، (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

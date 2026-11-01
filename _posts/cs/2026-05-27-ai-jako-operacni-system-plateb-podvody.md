@@ -108,7 +108,7 @@ AI se v roce 2026 stává operačním systémem plateb — z analytiky se přeso
 > **Shrnutí pro představenstvo / klíčové body**
 >
 > - **Platební inteligence je nyní strategická.** Téma je vázáno na provozní model, odolnost, hodnotu pro klienta a regulatorní důkazy, nikoli na úzké uvedení produktu ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **Designovým principem je kontrola v reálném čase.** Banky potřebují architekturu, která propojuje politiku, produkt, data, volbu railu, rizikové kontroly a měřitelnou ekonomiku ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Designovým principem je kontrola v reálném čase.** Banky potřebují architekturu, která propojuje politiku, produkt, data, volbu railu, rizikové kontroly a měřitelnou ekonomiku ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Model kontroly musí být v reálném čase.** Rozhodnutí o podvodech, likviditě, compliance, vypořádání a provozním riziku musí běžet v rychlosti workflow, nikoli až po události.
 > - **Kvalita dat se stává komerční výhodou.** Strukturovaná data, kontext transakcí, auditní záznamy a identitní signály se stávají substrátem pro automatizaci a klientské produkty.
 > - **Fragmentace je nepřítel.** Banka, která staví izolované piloty kolem každého railu, tokenu, modelu nebo požadavku compliance, vytváří budoucí provozní riziko.
@@ -120,7 +120,7 @@ AI se v roce 2026 stává operačním systémem plateb — z analytiky se přeso
 
 Odvětví překonalo fázi adopce. Už nestačí připojit se k railu, migrovat zprávu, spustit proof of concept v AI nebo ohlásit pilot tokenizace. V roce 2026 vzniká strategická výhoda orchestrací těchto schopností proti reálnému workflow a následným prokázáním, že tento workflow je bezpečnější, rychlejší, levnější, odolnější nebo užitečnější pro klienty.
 
-Proto je platební inteligence dnes tématem představenstva. Stejné tlaky se opakují: bohatší platební data, vypořádání v reálném čase, tokenizované peníze, rozhodování AI, Open Banking, provozní odolnost, koncentrace v cloudu a silnější regulatorní důkazy. Posuzovány samostatně tyto tlaky vytvářejí rozbujelé programy. Posuzovány jako jediná architektura vytvářejí provozní páku ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Proto je platební inteligence dnes tématem představenstva. Stejné tlaky se opakují: bohatší platební data, vypořádání v reálném čase, tokenizované peníze, rozhodování AI, Open Banking, provozní odolnost, koncentrace v cloudu a silnější regulatorní důkazy. Posuzovány samostatně tyto tlaky vytvářejí rozbujelé programy. Posuzovány jako jediná architektura vytvářejí provozní páku ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Architektonický základ roku 2026
 
@@ -130,7 +130,7 @@ Banka má začínat třením: uvězněnou likviditou, prodlevou vypořádání, 
 
 ### 2. Data jako řídicí rovina
 
-Strukturovaná, řízená a sledovatelná data tvoří základ. Bez použitelných dat se automatizace stává křehkou a compliance manuální. S použitelnými daty mohou banky vytvářet inteligenci směrování, kontroly v reálném čase a klientsky orientovanou analytiku ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Strukturovaná, řízená a sledovatelná data tvoří základ. Bez použitelných dat se automatizace stává křehkou a compliance manuální. S použitelnými daty mohou banky vytvářet inteligenci směrování, kontroly v reálném čase a klientsky orientovanou analytiku ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orchestrace napříč raily a platformami
 
@@ -197,7 +197,7 @@ Banka má začít workflow, kde existuje měřitelná hodnota, jako je rychlejš
 ## Reference
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

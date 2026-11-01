@@ -108,7 +108,7 @@ AI devine sistemul de operare al plăților în 2026, mutându-se din analitică
 > **Rezumat executiv / Concluzii esențiale**
 >
 > - **Inteligența plăților este acum strategică.** Subiectul este legat de modelul operațional, reziliență, valoare pentru client și dovezi pentru reglementatori, nu de lansarea unui produs îngust ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **Principiul de proiectare este controlul în timp real.** Băncile au nevoie de o arhitectură care leagă politica, produsul, datele, alegerea rail-ului, controalele de risc și economia măsurabilă ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Principiul de proiectare este controlul în timp real.** Băncile au nevoie de o arhitectură care leagă politica, produsul, datele, alegerea rail-ului, controalele de risc și economia măsurabilă ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Modelul de control trebuie să fie în timp real.** Deciziile de fraudă, lichiditate, conformitate, decontare și risc operațional trebuie să ruleze la viteza fluxului, nu după eveniment.
 > - **Calitatea datelor devine avantaj comercial.** Datele structurate, contextul tranzacției, jurnalele de audit și semnalele de identitate devin substratul pentru automatizare și produsele orientate spre client.
 > - **Fragmentarea este inamicul.** O bancă ce construiește piloți izolați pe fiecare rail, token, model sau cerință de conformitate creează risc operațional viitor.
@@ -120,7 +120,7 @@ AI devine sistemul de operare al plăților în 2026, mutându-se din analitică
 
 Industria a depășit faza de adopție. Nu mai este suficient să te conectezi la un rail, să migrezi un mesaj, să rulezi o dovadă de concept AI sau să anunți un pilot de tokenizare. În 2026, avantajul strategic vine din orchestrarea acestor capacități împotriva unui flux real, apoi din demonstrarea că fluxul este mai sigur, mai rapid, mai ieftin, mai rezilient sau mai util pentru clienți.
 
-De aceea inteligența plăților este acum un subiect pentru consiliul de administrație. Aceleași presiuni revin: date de plată mai bogate, decontare în timp real, bani tokenizați, decizii AI, Open Banking, reziliență operațională, concentrare cloud și dovezi de reglementare mai solide. Tratate separat, aceste presiuni creează proliferare de programe. Tratate ca o singură arhitectură, creează pârghie operațională ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+De aceea inteligența plăților este acum un subiect pentru consiliul de administrație. Aceleași presiuni revin: date de plată mai bogate, decontare în timp real, bani tokenizați, decizii AI, Open Banking, reziliență operațională, concentrare cloud și dovezi de reglementare mai solide. Tratate separat, aceste presiuni creează proliferare de programe. Tratate ca o singură arhitectură, creează pârghie operațională ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Linia de bază arhitecturală pentru 2026
 
@@ -130,7 +130,7 @@ Banca trebuie să pornească de la fricțiune: lichiditate blocată, întârzier
 
 ### 2. Datele ca plan de control
 
-Datele structurate, guvernate și trasabile sunt fundația. Fără date utilizabile, automatizarea devine fragilă, iar conformitatea devine manuală. Cu date utilizabile, băncile pot crea inteligență de rutare, controale în timp real și analitică orientată spre client ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Datele structurate, guvernate și trasabile sunt fundația. Fără date utilizabile, automatizarea devine fragilă, iar conformitatea devine manuală. Cu date utilizabile, băncile pot crea inteligență de rutare, controale în timp real și analitică orientată spre client ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orchestrare între rail-uri și platforme
 
@@ -197,7 +197,7 @@ Succesul ar trebui măsurat prin economie unitară, dovezi de reziliență, cali
 ## Referințe
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

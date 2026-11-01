@@ -116,7 +116,7 @@ site_software: "Static Site Generator, Rust"
 > - **Гілти йдуть першими, бо це найскладніший актив, який треба зробити правильно.** HQLA на DLT, розрахований атомарно проти токенізованої готівки, валідує весь стек — емісію, торгівлю, репо, заставу, гроші центрального банку — на найглибшому пулі стерлінга ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **Внутрішньоденне репо — найближчий приз.** Атомарне репо T+0 за токенізованими гілтами вивільняє капітал, що сьогодні простоює як буфер ліквідності того ж дня. Економія йде прямо в ROE.
 > - **Оркестрація замінює окремі мережі.** Regulated Liability Network, Canton, приватні банківські DLT, RTGS і токенізовані гроші комерційних банків — кожен несе робочі процеси, які банки вже виконують. Завдання — маршрутизувати між ними, а не обирати один.
-> - **Policy-as-code — єдина модель комплаєнсу, яка встигає.** Санкції, KYC, ліміти позицій, юрисдикційні бар'єри — закодовані у шарі розрахунку, виконуються атомарно разом з угодою, створюючи криптографічний аудиторський слід, а не журнал, якому регулятор має довіряти ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Policy-as-code — єдина модель комплаєнсу, яка встигає.** Санкції, KYC, ліміти позицій, юрисдикційні бар'єри — закодовані у шарі розрахунку, виконуються атомарно разом з угодою, створюючи криптографічний аудиторський слід, а не журнал, якому регулятор має довіряти ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Архітектура — це рів.** Переможці сплітають робочий процес, дані, платіжний канал, контроль і юніт-економіку в одну операційну модель. Ті, хто програє, ведуть портфель не пов'язаних пілотів і називають це стратегією.
 >
 ---
@@ -153,7 +153,7 @@ DSS — це живий режим. Щоб використовувати йог
 
 ### Дані як площина контролю
 
-Корисні навантаження ISO 20022, прив'язані до хешів транзакцій on-chain, перетворюють дані розрахунку на єдине джерело правди. Без цієї прив'язки автоматизація смарт-контракту крихка, а звіряння повертається до електронних таблиць. З нею банки отримують наскрізну обробку (STP), контролі в реальному часі та аналітику, за яку клієнти реально платитимуть ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Корисні навантаження ISO 20022, прив'язані до хешів транзакцій on-chain, перетворюють дані розрахунку на єдине джерело правди. Без цієї прив'язки автоматизація смарт-контракту крихка, а звіряння повертається до електронних таблиць. З нею банки отримують наскрізну обробку (STP), контролі в реальному часі та аналітику, за яку клієнти реально платитимуть ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### Оркестрація між платіжними каналами
 
@@ -234,7 +234,7 @@ Regulated Liability Network — це модель спільного реєст�
 - GOV.UK, (2026). [Британський фінтех отримує підтримку для впровадження платіжних технологій майбутнього ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
-- Association of Corporate Treasurers, (2026). [Оновлення платіжної панорами — травень 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Оновлення платіжної панорами — травень 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [Чемпіон оптових цифрових ринків Великої Британії ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

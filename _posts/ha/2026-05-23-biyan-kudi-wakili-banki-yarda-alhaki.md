@@ -101,13 +101,13 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-Biyan kuɗi ta wakili ya wuce daga slide na gabatarwa zuwa shaidar kasuwa kai tsaye. Mastercard da Rabobank sun kammala biyan da AI agent ya fara a Netherlands, inda wakili ya yi rajistar ɗanɗanon kofi a Priceless.com ba tare da shiga cikakkun bayanan kati kai tsaye ba kuma tare da rikodin yardar mai amfani a fili kafin zartarwa ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). Batun dabarun bankuna yanzu shi ne gine-ginen yarda: yadda cibiyar kuɗi za ta tabbatar cewa biyan na'ura ya kasance da gaske an ba shi izini ta hannun mutumin ko babban kasuwanci a bayan sa.
+Biyan kuɗi ta wakili ya wuce daga slide na gabatarwa zuwa shaidar kasuwa kai tsaye. Mastercard da Rabobank sun kammala biyan da AI agent ya fara a Netherlands, inda wakili ya yi rajistar ɗanɗanon kofi a Priceless.com ba tare da shiga cikakkun bayanan kati kai tsaye ba kuma tare da rikodin yardar mai amfani a fili kafin zartarwa ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). Batun dabarun bankuna yanzu shi ne gine-ginen yarda: yadda cibiyar kuɗi za ta tabbatar cewa biyan na'ura ya kasance da gaske an ba shi izini ta hannun mutumin ko babban kasuwanci a bayan sa.
 
 ---
 
 > **Taƙaitaccen Bayani / Manyan Abubuwan da za a Ɗauka**
 >
-> - **Sigogin kasuwa na farko suna kai tsaye.** Mastercard da Rabobank sun kammala hada-hada na AI agent a Netherlands ta amfani da Mastercard Agent Pay, tare da hana wakili shiga bayanan kati kai tsaye ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Sigogin kasuwa na farko suna kai tsaye.** Mastercard da Rabobank sun kammala hada-hada na AI agent a Netherlands ta amfani da Mastercard Agent Pay, tare da hana wakili shiga bayanan kati kai tsaye ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Protocols na biyan kuɗi ta wakili suna fitowa kafin doka ta tabbata.** Fenwick na bayyana AP2, A2A, x402, MCP, da MPP a matsayin ƙoƙarin protocol da ke magance haɗin gwiwar wakili da izini ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **Yarda ita ce babbar matsalar banki.** Umarnin sa hannu masu salon AP2 suna ƙoƙarin ɗaukar umarnin mai amfani da tabbatarwar ƙarshe a matsayin shaida mai bincike na niyya ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **Alhaki ya rage ba warware ba.** Dokar biyan kuɗi da ke akwai an tsara ta a kewayen hada-hada da ɗan adam ya yanke shawara, ba tsarin AI mai zaman kansa da ke aiki a ƙarƙashin iko ta wakilci ba ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
@@ -198,7 +198,7 @@ Bankuna su fara da amfani mai iyaka, ƙaramin haɗari, ƙaramin daraja inda za a
 ## Magana
 
 - Fenwick, (2026). [Is 2026 the Year of Agentic Payments? ⧉](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 

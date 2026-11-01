@@ -108,7 +108,7 @@ AI กำลังกลายเป็นระบบปฏิบัติก�
 > **บทสรุปผู้บริหาร / ประเด็นสำคัญ**
 >
 > - **ข่าวกรองการชำระเงินกลายเป็นเรื่องเชิงกลยุทธ์แล้ว.** หัวข้อนี้ผูกอยู่กับแบบจำลองการดำเนินงาน ความยืดหยุ่น คุณค่าต่อลูกค้า และหลักฐานเชิงกำกับดูแล มากกว่าการเปิดตัวผลิตภัณฑ์แบบแคบ ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"))
-> - **หลักการออกแบบคือการควบคุมเรียลไทม์.** ธนาคารต้องการสถาปัตยกรรมที่เชื่อมโยงนโยบาย ผลิตภัณฑ์ ข้อมูล ตัวเลือกราง การควบคุมความเสี่ยง และเศรษฐศาสตร์ที่วัดผลได้ ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))
+> - **หลักการออกแบบคือการควบคุมเรียลไทม์.** ธนาคารต้องการสถาปัตยกรรมที่เชื่อมโยงนโยบาย ผลิตภัณฑ์ ข้อมูล ตัวเลือกราง การควบคุมความเสี่ยง และเศรษฐศาสตร์ที่วัดผลได้ ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))
 > - **แบบจำลองการควบคุมต้องเป็นเรียลไทม์.** การตัดสินใจเรื่องการฉ้อโกง สภาพคล่อง การปฏิบัติตามกฎ การชำระบัญชี และความเสี่ยงปฏิบัติการ ต้องทำงานที่ความเร็วของเวิร์กโฟลว์ ไม่ใช่หลังเหตุการณ์</n> > - **คุณภาพข้อมูลกลายเป็นความได้เปรียบเชิงพาณิชย์.** ข้อมูลเชิงโครงสร้าง บริบทธุรกรรม บันทึกการตรวจสอบ และสัญญาณตัวตน กลายเป็นฐานสำหรับระบบอัตโนมัติและผลิตภัณฑ์ที่ส่งถึงลูกค้า
 > - **ความกระจัดกระจายคือศัตรู.** ธนาคารที่สร้างการนำร่องแยกขาดรอบแต่ละราง โทเคน โมเดล หรือข้อกำหนดการปฏิบัติตามกฎ จะสร้างความเสี่ยงปฏิบัติการในอนาคต
 > - **แบบจำลองที่ชนะคือการประสาน.** สถาบันที่สามารถกำหนดเส้นทาง กำกับ ตั้งราคา แสดงหลักฐาน และอธิบายเวิร์กโฟลว์แต่ละชิ้น จะมีผลงานเหนือกว่าสถาบันที่เพียงรับเอาเครื่องมืออีกชิ้นมาใช้ ([Standard Chartered](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026"))
@@ -119,7 +119,7 @@ AI กำลังกลายเป็นระบบปฏิบัติก�
 
 อุตสาหกรรมได้ก้าวพ้นช่วงการรับเอามาใช้แล้ว ลำพังการเข้าร่วมราง การโยกย้ายข้อความ การทดสอบ AI แบบพิสูจน์แนวคิด หรือการประกาศการนำร่องโทเคนไนเซชัน ไม่เพียงพออีกต่อไป ในปี 2026 ความได้เปรียบเชิงกลยุทธ์มาจากการประสานความสามารถเหล่านั้นเข้ากับเวิร์กโฟลว์จริง แล้วพิสูจน์ว่าเวิร์กโฟลว์นั้นปลอดภัยกว่า เร็วกว่า ถูกกว่า ยืดหยุ่นกว่า หรือเป็นประโยชน์ต่อลูกค้ามากกว่า
 
-นั่นคือเหตุที่ข่าวกรองการชำระเงินกลายเป็นวาระระดับคณะกรรมการในปัจจุบัน แรงกดดันเดิมยังคงเกิดซ้ำ ได้แก่ ข้อมูลการชำระเงินที่สมบูรณ์ยิ่งขึ้น การชำระบัญชีเรียลไทม์ เงินที่ผ่านการทำโทเคน การตัดสินใจด้วย AI Open Banking ความยืดหยุ่นปฏิบัติการ ความกระจุกตัวของคลาวด์ และหลักฐานเชิงกำกับดูแลที่เข้มขึ้น หากปฏิบัติแยกกัน แรงกดดันเหล่านี้จะสร้างโครงการที่บานปลาย หากปฏิบัติในฐานะสถาปัตยกรรมเดียว ก็จะสร้างเลเวอเรจปฏิบัติการ ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))
+นั่นคือเหตุที่ข่าวกรองการชำระเงินกลายเป็นวาระระดับคณะกรรมการในปัจจุบัน แรงกดดันเดิมยังคงเกิดซ้ำ ได้แก่ ข้อมูลการชำระเงินที่สมบูรณ์ยิ่งขึ้น การชำระบัญชีเรียลไทม์ เงินที่ผ่านการทำโทเคน การตัดสินใจด้วย AI Open Banking ความยืดหยุ่นปฏิบัติการ ความกระจุกตัวของคลาวด์ และหลักฐานเชิงกำกับดูแลที่เข้มขึ้น หากปฏิบัติแยกกัน แรงกดดันเหล่านี้จะสร้างโครงการที่บานปลาย หากปฏิบัติในฐานะสถาปัตยกรรมเดียว ก็จะสร้างเลเวอเรจปฏิบัติการ ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))
 
 ## พื้นฐานสถาปัตยกรรมปี 2026
 
@@ -129,7 +129,7 @@ AI กำลังกลายเป็นระบบปฏิบัติก�
 
 ### 2. ข้อมูลในฐานะระนาบการควบคุม
 
-ข้อมูลที่มีโครงสร้าง กำกับดูแล และสืบย้อนได้ คือรากฐาน หากปราศจากข้อมูลที่ใช้ได้จริง ระบบอัตโนมัติจะเปราะบางและการปฏิบัติตามกฎจะกลายเป็นแบบใช้คน ด้วยข้อมูลที่ใช้ได้จริง ธนาคารสามารถสร้างข่าวกรองการกำหนดเส้นทาง การควบคุมเรียลไทม์ และการวิเคราะห์ที่ส่งถึงลูกค้า ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))
+ข้อมูลที่มีโครงสร้าง กำกับดูแล และสืบย้อนได้ คือรากฐาน หากปราศจากข้อมูลที่ใช้ได้จริง ระบบอัตโนมัติจะเปราะบางและการปฏิบัติตามกฎจะกลายเป็นแบบใช้คน ด้วยข้อมูลที่ใช้ได้จริง ธนาคารสามารถสร้างข่าวกรองการกำหนดเส้นทาง การควบคุมเรียลไทม์ และการวิเคราะห์ที่ส่งถึงลูกค้า ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))
 
 ### 3. การประสานข้ามรางและแพลตฟอร์ม
 
@@ -196,7 +196,7 @@ AI ในฐานะระบบปฏิบัติการของกา�
 ## เอกสารอ้างอิง
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

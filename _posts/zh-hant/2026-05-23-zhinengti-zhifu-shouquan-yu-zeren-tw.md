@@ -101,13 +101,13 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-智慧代理支付已從簡報投影片跨入實際市場驗證。Mastercard 與 Rabobank 在荷蘭完成一筆由 AI agent 發起的付款,代理於 Priceless.com 預訂咖啡品鑑,過程中未直接存取卡片明細,且消費者在執行前明確記錄授權同意([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。對銀行而言,當前的策略課題已是授權架構:金融機構如何證明一筆機器付款,確實獲得背後自然人或法人本人授權。
+智慧代理支付已從簡報投影片跨入實際市場驗證。Mastercard 與 Rabobank 在荷蘭完成一筆由 AI agent 發起的付款,代理於 Priceless.com 預訂咖啡品鑑,過程中未直接存取卡片明細,且消費者在執行前明確記錄授權同意([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。對銀行而言,當前的策略課題已是授權架構:金融機構如何證明一筆機器付款,確實獲得背後自然人或法人本人授權。
 
 ---
 
 > **執行摘要 / 關鍵要點**
 >
-> - **首批市場訊號已落地。**Mastercard 與 Rabobank 透過 Mastercard Agent Pay 完成荷蘭 AI agent 交易,代理被禁止直接存取卡片資料([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
+> - **首批市場訊號已落地。**Mastercard 與 Rabobank 透過 Mastercard Agent Pay 完成荷蘭 AI agent 交易,代理被禁止直接存取卡片資料([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
 > - **智慧代理支付協定在法律塵埃落定前已先成形。**Fenwick 指出 AP2、A2A、x402、MCP 與 MPP 是處理代理互通與授權的協定方案([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?"))。
 > - **授權是銀行的核心難題。**AP2 式加密授權指令(consent mandate)嘗試將使用者指示與最終核可,捕捉為可稽核的意圖證據([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?"))。
 > - **責任仍未解決。**現行支付法律以人類決策的交易為設計前提,而非以受託權限自主行動的 AI 系統([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?"))。
@@ -198,7 +198,7 @@ J.P. Morgan 預期智慧代理商務將先從重複性、低風險的品項起�
 ## 參考資料
 
 - Fenwick, (2026). [Is 2026 the Year of Agentic Payments? ⧉](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 

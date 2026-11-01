@@ -108,7 +108,7 @@ UK Payments Forward Plan과 2026년 4월 정책 패키지는 전통 결제, 스�
 > **경영진 요약 / 핵심 시사점**
 >
 > - **결제 정책은 이제 전략입니다.** 본 주제는 좁은 의미의 상품 출시가 아니라 운영 모델, 회복탄력성, 고객 가치, 규제 증거에 결부되어 있습니다 ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **설계 원칙은 단일 규제 범위입니다.** 은행은 정책·상품·데이터·레일 선택·리스크 통제·측정 가능한 경제성을 연결하는 아키텍처를 갖추어야 합니다 ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **설계 원칙은 단일 규제 범위입니다.** 은행은 정책·상품·데이터·레일 선택·리스크 통제·측정 가능한 경제성을 연결하는 아키텍처를 갖추어야 합니다 ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **통제 모델은 실시간이어야 합니다.** 사기, 유동성, 컴플라이언스, 결제, 운영 리스크 결정은 사후가 아니라 워크플로 속도로 수행되어야 합니다.
 > - **데이터 품질이 상업적 우위가 됩니다.** 구조화 데이터, 거래 컨텍스트, 감사 로그, 신원 시그널은 자동화 및 고객 대면 상품의 기반이 됩니다.
 > - **파편화가 적입니다.** 레일·토큰·모델·컴플라이언스 요건별로 분리된 파일럿을 구축하는 은행은 향후의 운영 리스크를 자초합니다.
@@ -120,7 +120,7 @@ UK Payments Forward Plan과 2026년 4월 정책 패키지는 전통 결제, 스�
 
 업계는 도입 단계를 지났습니다. 레일에 참여하거나, 메시지를 마이그레이션하거나, AI 개념증명을 수행하거나, 토큰화 파일럿을 발표하는 것만으로는 충분하지 않습니다. 2026년의 전략적 우위는 그러한 역량을 실제 워크플로에 맞춰 오케스트레이션하고, 그 워크플로가 더 안전하고, 더 빠르고, 더 저렴하며, 더 회복탄력적이거나, 고객에게 더 유용함을 증명하는 데서 나옵니다.
 
-이 때문에 결제 정책이 이사회 수준의 안건이 되었습니다. 동일한 압력이 반복적으로 나타납니다. 더 풍부한 결제 데이터, 실시간 결제, 토큰화 화폐, AI 의사결정, 오픈뱅킹, 운영 회복탄력성, 클라우드 집중, 그리고 더 강력한 규제 증거가 그것입니다. 이러한 압력을 개별적으로 다루면 프로그램이 난립합니다. 단일 아키텍처로 다루면 운영 레버리지가 발생합니다 ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+이 때문에 결제 정책이 이사회 수준의 안건이 되었습니다. 동일한 압력이 반복적으로 나타납니다. 더 풍부한 결제 데이터, 실시간 결제, 토큰화 화폐, AI 의사결정, 오픈뱅킹, 운영 회복탄력성, 클라우드 집중, 그리고 더 강력한 규제 증거가 그것입니다. 이러한 압력을 개별적으로 다루면 프로그램이 난립합니다. 단일 아키텍처로 다루면 운영 레버리지가 발생합니다 ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## 2026년 아키텍처 베이스라인
 
@@ -130,7 +130,7 @@ UK Payments Forward Plan과 2026년 4월 정책 패키지는 전통 결제, 스�
 
 ### 2. 통제 평면으로서의 데이터
 
-구조화되고, 거버넌스를 갖추며, 추적 가능한 데이터가 토대입니다. 사용 가능한 데이터가 없으면 자동화는 취약해지고 컴플라이언스는 수작업이 됩니다. 사용 가능한 데이터가 있으면 은행은 라우팅 인텔리전스, 실시간 통제, 고객 대면 분석을 구축할 수 있습니다 ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+구조화되고, 거버넌스를 갖추며, 추적 가능한 데이터가 토대입니다. 사용 가능한 데이터가 없으면 자동화는 취약해지고 컴플라이언스는 수작업이 됩니다. 사용 가능한 데이터가 있으면 은행은 라우팅 인텔리전스, 실시간 통제, 고객 대면 분석을 구축할 수 있습니다 ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. 레일과 플랫폼 전반의 오케스트레이션
 
@@ -197,7 +197,7 @@ UK Payments Forward Plan과 2026년 4월 정책 패키지는 전통 결제, 스�
 ## 참고문헌
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

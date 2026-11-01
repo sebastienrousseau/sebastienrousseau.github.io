@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 > **エグゼクティブサマリー / 主要なポイント**
 >
 > - **決済インテリジェンスは現在、戦略的です。** 本テーマは狭いプロダクトローンチではなく、オペレーティングモデル、レジリエンス、顧客価値、規制エビデンスと結びついています ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"))。
-> - **設計原則はリアルタイム統制です。** 銀行は、ポリシー、プロダクト、データ、レール選択、リスク統制、測定可能なエコノミクスを結びつけるアーキテクチャを必要とします ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
+> - **設計原則はリアルタイム統制です。** 銀行は、ポリシー、プロダクト、データ、レール選択、リスク統制、測定可能なエコノミクスを結びつけるアーキテクチャを必要とします ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
 > - **統制モデルはリアルタイムでなければなりません。** 不正、流動性、コンプライアンス、決済、オペレーショナルリスクの意思決定は、事後ではなくワークフローの速度で実行される必要があります。
 > - **データ品質は商業的優位となります。** 構造化データ、取引コンテキスト、監査ログ、アイデンティティシグナルは、自動化および顧客向けプロダクトの基盤となります。
 > - **分断が敵です。** 各レール、トークン、モデル、コンプライアンス要件ごとに孤立したパイロットを構築する銀行は、将来の運用リスクを生み出します。
@@ -120,7 +120,7 @@ site_software: "Static Site Generator, Rust"
 
 業界は採用フェーズを越えました。レールに参加し、メッセージを移行し、AI の概念実証を実行し、トークン化のパイロットを発表するだけでは、もはや十分ではありません。2026 年における戦略的優位性は、それらの能力を実際のワークフローに対してオーケストレーションし、そのワークフローがより安全で、より速く、より安価で、よりレジリエントで、顧客にとってより有用であることを証明することから生まれます。
 
-これが、決済インテリジェンスが現在、取締役会レベルのテーマとなっている理由です。同じ圧力が繰り返し現れます — 豊かな決済データ、リアルタイム決済、トークン化マネー、AI による意思決定、オープンバンキング、オペレーショナルレジリエンス、クラウド集中、より強力な規制エビデンスです。これらを別個に扱うとプログラムの拡散を生みます。一つのアーキテクチャとして扱うと、オペレーティングレバレッジを生みます ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")、[Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
+これが、決済インテリジェンスが現在、取締役会レベルのテーマとなっている理由です。同じ圧力が繰り返し現れます — 豊かな決済データ、リアルタイム決済、トークン化マネー、AI による意思決定、オープンバンキング、オペレーショナルレジリエンス、クラウド集中、より強力な規制エビデンスです。これらを別個に扱うとプログラムの拡散を生みます。一つのアーキテクチャとして扱うと、オペレーティングレバレッジを生みます ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")、[Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
 
 ## 2026 年のアーキテクチャ基盤
 
@@ -130,7 +130,7 @@ site_software: "Static Site Generator, Rust"
 
 ### 2. 統制プレーンとしてのデータ
 
-構造化され、ガバナンスが効き、トレース可能なデータが基盤です。利用可能なデータがなければ、自動化は脆弱になり、コンプライアンスは手作業となります。利用可能なデータがあれば、銀行はルーティングインテリジェンス、リアルタイム統制、顧客向け分析を構築できます ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
+構造化され、ガバナンスが効き、トレース可能なデータが基盤です。利用可能なデータがなければ、自動化は脆弱になり、コンプライアンスは手作業となります。利用可能なデータがあれば、銀行はルーティングインテリジェンス、リアルタイム統制、顧客向け分析を構築できます ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
 
 ### 3. レールとプラットフォームを横断するオーケストレーション
 
@@ -197,7 +197,7 @@ site_software: "Static Site Generator, Rust"
 ## 参考文献
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

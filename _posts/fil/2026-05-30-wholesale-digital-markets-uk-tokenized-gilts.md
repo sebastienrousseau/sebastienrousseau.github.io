@@ -113,7 +113,7 @@ Ang Champion ang lever na pumipilit sa kanilang magkaisa.
 > - **Mauuna ang gilts dahil sila ang pinakamahirap na asset na dapat itamang-tama.** Pinapatunayan ng HQLA sa DLT, na atomic na nag-settle laban sa tokenisadong pera, ang buong stack — issuance, trading, repo, collateral, central-bank money — sa pinakamalalim na sterling pool ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **Agarang gantimpala ang intraday repo.** Pinapalaya ng T+0 atomic repo ng tokenized gilts ang kapital na ngayon ay nakatengga bilang same-day liquidity buffer. Diretsong tumatama ang nai-save sa ROE.
 > - **Pinapalitan ng orchestration ang nakahiwalay na network.** Ang Regulated Liability Network, Canton, mga pribadong bank DLT, RTGS, at tokenisadong commercial bank money ay bawat isa ay nagdadala ng workflow na tinatakbo na ng mga bangko. Ang trabaho ay magruta sa lahat ng ito, hindi pumili ng isa.
-> - **Ang policy-as-code lamang ang compliance model na nakakasabay.** Sanctions, KYC, position limits, jurisdictional gates — naka-code sa settlement layer, isinasagawa nang atomic kasabay ng trade, na nagbubunga ng cryptographic audit trail sa halip na log na kailangang pagkatiwalaan ng regulator ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update sa Payments landscape – Mayo 2026")).
+> - **Ang policy-as-code lamang ang compliance model na nakakasabay.** Sanctions, KYC, position limits, jurisdictional gates — naka-code sa settlement layer, isinasagawa nang atomic kasabay ng trade, na nagbubunga ng cryptographic audit trail sa halip na log na kailangang pagkatiwalaan ng regulator ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update sa Payments landscape – Mayo 2026")).
 > - **Arkitektura ang moat.** Pinagsasama ng mga mananalo ang workflow, data, payment rail, control, at unit economics sa iisang operating model. Pinapatakbo ng mga matatalo ang isang portfolio ng nakahiwalay na pilots at tinatawag itong estratehiya.
 >
 ---
@@ -150,7 +150,7 @@ Magsimula sa friction. Nakulong na liquidity, settlement breaks, gastos sa recon
 
 ### Data Bilang Control Plane
 
-Ang ISO 20022 payloads na nakatali sa on-chain transaction hashes ay ginagawa ang settlement data sa iisang pinagmumulan ng katotohanan. Kung walang ganoong pagkakatali, marupok ang smart contract automation at babalik sa spreadsheets ang reconciliation. Kasama nito, nakukuha ng mga bangko ang straight-through processing (STP), real-time na kontrol, at analytics na talagang pagbabayaran ng mga kliyente ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update sa Payments landscape – Mayo 2026")).
+Ang ISO 20022 payloads na nakatali sa on-chain transaction hashes ay ginagawa ang settlement data sa iisang pinagmumulan ng katotohanan. Kung walang ganoong pagkakatali, marupok ang smart contract automation at babalik sa spreadsheets ang reconciliation. Kasama nito, nakukuha ng mga bangko ang straight-through processing (STP), real-time na kontrol, at analytics na talagang pagbabayaran ng mga kliyente ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update sa Payments landscape – Mayo 2026")).
 
 ### Orchestration sa Iba't Ibang Rail
 
@@ -231,7 +231,7 @@ Basis points na nai-save sa collateral funding. Pagbabawas ng intraday liquidity
 - GOV.UK, (2026). [Suportado ang UK fintech sa pagyakap sa kinabukasan ng payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "Suportado ang UK fintech").
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
-- Association of Corporate Treasurers, (2026). [Update sa Payments landscape – Mayo 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update sa payments landscape").
+- Association of Corporate Treasurers, (2026). [Update sa Payments landscape – Mayo 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update sa payments landscape").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

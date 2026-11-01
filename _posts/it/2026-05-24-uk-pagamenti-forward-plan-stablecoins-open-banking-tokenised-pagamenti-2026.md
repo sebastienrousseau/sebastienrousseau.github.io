@@ -108,7 +108,7 @@ Il UK Payments Forward Plan e il pacchetto di policy di aprile 2026 indicano un 
 > **Sintesi esecutiva / Punti chiave**
 >
 > - **La policy dei pagamenti è ora strategica.** Il tema è legato a modello operativo, resilienza, valore per il cliente e prove regolamentari, non a un singolo lancio di prodotto ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **Il principio di design è un unico perimetro regolamentare.** Le banche hanno bisogno di un'architettura che colleghi policy, prodotto, dati, scelta dei binari, controlli di rischio ed economia misurabile ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Il principio di design è un unico perimetro regolamentare.** Le banche hanno bisogno di un'architettura che colleghi policy, prodotto, dati, scelta dei binari, controlli di rischio ed economia misurabile ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Il modello di controllo deve essere in tempo reale.** Frode, liquidità, compliance, regolamento e rischio operativo devono operare alla velocità del workflow, non dopo l'evento.
 > - **La qualità dei dati diventa vantaggio commerciale.** Dati strutturati, contesto della transazione, log di audit e segnali di identità diventano il substrato dell'automazione e dei prodotti rivolti al cliente.
 > - **La frammentazione è il nemico.** Una banca che costruisce pilot isolati intorno a ogni binario, token, modello o requisito di compliance crea rischio operativo futuro.
@@ -120,7 +120,7 @@ Il UK Payments Forward Plan e il pacchetto di policy di aprile 2026 indicano un 
 
 Il settore ha superato la fase di adozione. Non basta più aderire a un binario, migrare un messaggio, eseguire una proof of concept di IA o annunciare un pilot di tokenizzazione. Nel 2026 il vantaggio strategico nasce dall'orchestrare quelle capacità su un workflow reale e dal dimostrare che il workflow è più sicuro, più rapido, più economico, più resiliente o più utile per il cliente.
 
-Per questo la policy dei pagamenti è ora un tema da board. Le stesse pressioni si ripetono: dati di pagamento più ricchi, regolamento in tempo reale, denaro tokenizzato, decisioning con IA, Open Banking, resilienza operativa, concentrazione cloud e prove regolamentari più solide. Trattate separatamente, generano programme sprawl. Trattate come un'unica architettura, generano leva operativa ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Per questo la policy dei pagamenti è ora un tema da board. Le stesse pressioni si ripetono: dati di pagamento più ricchi, regolamento in tempo reale, denaro tokenizzato, decisioning con IA, Open Banking, resilienza operativa, concentrazione cloud e prove regolamentari più solide. Trattate separatamente, generano programme sprawl. Trattate come un'unica architettura, generano leva operativa ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## La baseline architetturale 2026
 
@@ -130,7 +130,7 @@ La banca deve partire dall'attrito: liquidità intrappolata, ritardo nel regolam
 
 ### 2. Il dato come piano di controllo
 
-Dati strutturati, governati e tracciabili sono le fondamenta. Senza dati utilizzabili l'automazione diventa fragile e la compliance manuale. Con dati utilizzabili le banche possono creare intelligenza di routing, controlli in tempo reale e analytics rivolte al cliente ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Dati strutturati, governati e tracciabili sono le fondamenta. Senza dati utilizzabili l'automazione diventa fragile e la compliance manuale. Con dati utilizzabili le banche possono creare intelligenza di routing, controlli in tempo reale e analytics rivolte al cliente ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orchestrazione tra binari e piattaforme
 
@@ -197,7 +197,7 @@ Il successo va misurato per unit economics, prove di resilienza, qualità dei da
 ## Riferimenti
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

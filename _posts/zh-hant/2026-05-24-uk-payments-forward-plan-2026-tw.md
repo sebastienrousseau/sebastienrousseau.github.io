@@ -108,7 +108,7 @@ UK Payments Forward Plan 與 2026 年 4 月政策包,為傳統支付、stablecoi
 > **執行摘要 / 關鍵要點**
 >
 > - **支付政策已是策略議題。**主題與營運模式、韌性、客戶價值與監理證據綁定,而非單一產品上線([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"))。
-> - **設計原則是單一監理範圍。**銀行需要能串連政策、產品、資料、軌道選擇、風險控制與可衡量經濟效益的架構([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
+> - **設計原則是單一監理範圍。**銀行需要能串連政策、產品、資料、軌道選擇、風險控制與可衡量經濟效益的架構([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
 > - **控制模型必須即時。**詐欺、流動性、合規、清算與作業風險決策,必須以流程速度執行,而非事後補做。
 > - **資料品質成為商業優勢。**結構化資料、交易上下文、稽核日誌與身分訊號,是自動化與面向客戶產品的基底。
 > - **分散是最大敵人。**圍繞每一條軌道、代幣、模型或合規要求建構獨立試點的銀行,會累積未來的作業風險。
@@ -120,7 +120,7 @@ UK Payments Forward Plan 與 2026 年 4 月政策包,為傳統支付、stablecoi
 
 產業已跨過導入階段。加入一條軌道、遷移一份報文、跑一個 AI 概念驗證、宣布一項代幣化試點,已經不再足夠。2026 年的策略優勢,來自於把這些能力編排在真實流程之上,並證明該流程更安全、更快、更便宜、更具韌性,或對客戶更有用。
 
-這正是支付政策現已成為董事會層級議題的原因。同樣的壓力反覆出現:更豐富的支付資料、即時清算、代幣化貨幣、AI 決策、Open Banking、作業韌性、雲端集中度,以及更強的監理證據。分別處理,只會擴散為計畫泥沼;視為單一架構處理,則能轉化為營運槓桿([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")、[Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
+這正是支付政策現已成為董事會層級議題的原因。同樣的壓力反覆出現:更豐富的支付資料、即時清算、代幣化貨幣、AI 決策、Open Banking、作業韌性、雲端集中度,以及更強的監理證據。分別處理,只會擴散為計畫泥沼;視為單一架構處理,則能轉化為營運槓桿([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")、[Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
 
 ## 2026 架構基準
 
@@ -130,7 +130,7 @@ UK Payments Forward Plan 與 2026 年 4 月政策包,為傳統支付、stablecoi
 
 ### 2. 以資料作為控制平面
 
-結構化、受治理且可追溯的資料是基礎。沒有可用資料,自動化變得脆弱,合規回退為人工。具備可用資料,銀行才能打造路由智慧、即時控制與面向客戶的分析能力([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
+結構化、受治理且可追溯的資料是基礎。沒有可用資料,自動化變得脆弱,合規回退為人工。具備可用資料,銀行才能打造路由智慧、即時控制與面向客戶的分析能力([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
 
 ### 3. 跨軌道與跨平台編排
 
@@ -197,7 +197,7 @@ UK Payments Forward Plan 與 2026 年 4 月政策包,為傳統支付、stablecoi
 ## 參考資料
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

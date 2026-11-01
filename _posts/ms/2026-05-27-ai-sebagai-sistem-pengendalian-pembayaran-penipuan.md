@@ -20,7 +20,7 @@ AI sedang menjadi sistem pengendalian pembayaran pada tahun 2026, beralih daripa
 > **Ringkasan Eksekutif / Perkara Utama**
 >
 > - **Kepintaran Pembayaran kini strategik.** Topik ini terikat kepada model pengendalian, daya tahan, nilai pelanggan, dan bukti kawal selia dan bukannya pelancaran produk yang sempit ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **Prinsip reka bentuk ialah kawalan masa nyata.** Bank memerlukan seni bina yang menghubungkan polisi, produk, data, pilihan rel, kawalan risiko, dan ekonomi yang boleh diukur ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Prinsip reka bentuk ialah kawalan masa nyata.** Bank memerlukan seni bina yang menghubungkan polisi, produk, data, pilihan rel, kawalan risiko, dan ekonomi yang boleh diukur ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Model kawalan mesti masa nyata.** Keputusan penipuan, kecairan, pematuhan, penyelesaian, dan risiko operasi mesti berjalan pada kelajuan aliran kerja, bukan selepas peristiwa.
 > - **Kualiti data menjadi kelebihan komersial.** Data berstruktur, konteks transaksi, log audit, dan isyarat identiti menjadi substrat untuk automasi dan produk yang menghadap pelanggan.
 > - **Pemecahan ialah musuh.** Bank yang membina perintis terpencil di sekeliling setiap rel, token, model, atau keperluan pematuhan mencipta risiko pengendalian pada masa hadapan.
@@ -32,7 +32,7 @@ AI sedang menjadi sistem pengendalian pembayaran pada tahun 2026, beralih daripa
 
 Industri telah beralih melangkaui fasa penerimaan. Tidak lagi memadai untuk menyertai sesebuah rel, memindahkan mesej, menjalankan bukti konsep AI, atau mengumumkan perintis tokenisasi. Pada tahun 2026, kelebihan strategik datang daripada mengorkestrasi keupayaan tersebut terhadap aliran kerja sebenar, kemudian membuktikan bahawa aliran kerja itu lebih selamat, lebih pantas, lebih murah, lebih berdaya tahan, atau lebih berguna kepada pelanggan.
 
-Itulah sebabnya kepintaran pembayaran kini menjadi topik peringkat lembaga pengarah. Tekanan yang sama terus berulang: data pembayaran yang lebih kaya, penyelesaian masa nyata, wang termasuk token, keputusan AI, Perbankan Terbuka, daya tahan operasi, penumpuan awan, dan bukti kawal selia yang lebih kukuh. Apabila dilayan secara berasingan, tekanan tersebut mencipta serakan program. Apabila dilayan sebagai satu seni bina, ia mencipta leveraj pengendalian ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Itulah sebabnya kepintaran pembayaran kini menjadi topik peringkat lembaga pengarah. Tekanan yang sama terus berulang: data pembayaran yang lebih kaya, penyelesaian masa nyata, wang termasuk token, keputusan AI, Perbankan Terbuka, daya tahan operasi, penumpuan awan, dan bukti kawal selia yang lebih kukuh. Apabila dilayan secara berasingan, tekanan tersebut mencipta serakan program. Apabila dilayan sebagai satu seni bina, ia mencipta leveraj pengendalian ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Garis Dasar Seni Bina 2026
 
@@ -42,7 +42,7 @@ Bank harus bermula dengan geseran: kecairan terperangkap, kelewatan penyelesaian
 
 ### 2. Data sebagai Satah Kawalan
 
-Data yang berstruktur, ditadbir, dan boleh dijejaki ialah asasnya. Tanpa data yang boleh digunakan, automasi menjadi rapuh dan pematuhan menjadi manual. Dengan data yang boleh digunakan, bank boleh mencipta kepintaran penghalaan, kawalan masa nyata, dan analitik yang menghadap pelanggan ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Data yang berstruktur, ditadbir, dan boleh dijejaki ialah asasnya. Tanpa data yang boleh digunakan, automasi menjadi rapuh dan pematuhan menjadi manual. Dengan data yang boleh digunakan, bank boleh mencipta kepintaran penghalaan, kawalan masa nyata, dan analitik yang menghadap pelanggan ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orkestrasi Merentas Rel dan Platform
 
@@ -109,5 +109,5 @@ Kejayaan harus diukur berdasarkan ekonomi unit, bukti daya tahan, kualiti data, 
 ## Rujukan
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").

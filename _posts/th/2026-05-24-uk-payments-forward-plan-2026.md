@@ -108,7 +108,7 @@ UK Payments Forward Plan และชุดนโยบายเดือนเ�
 > **บทสรุปผู้บริหาร / ประเด็นสำคัญ**
 >
 > - **นโยบายการชำระเงินเป็นเรื่องเชิงกลยุทธ์แล้ว** หัวข้อนี้เชื่อมโยงกับรูปแบบการดำเนินงาน ความยืดหยุ่น คุณค่าต่อลูกค้า และหลักฐานสำหรับหน่วยงานกำกับดูแล มากกว่าการเปิดตัวผลิตภัณฑ์เฉพาะ ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"))
-> - **หลักการออกแบบคือขอบเขตการกำกับดูแลเดียว** ธนาคารต้องการสถาปัตยกรรมที่เชื่อมโยงนโยบาย ผลิตภัณฑ์ ข้อมูล การเลือกช่องทาง การควบคุมความเสี่ยง และเศรษฐศาสตร์ที่วัดผลได้ ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))
+> - **หลักการออกแบบคือขอบเขตการกำกับดูแลเดียว** ธนาคารต้องการสถาปัตยกรรมที่เชื่อมโยงนโยบาย ผลิตภัณฑ์ ข้อมูล การเลือกช่องทาง การควบคุมความเสี่ยง และเศรษฐศาสตร์ที่วัดผลได้ ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))
 > - **รูปแบบการควบคุมต้องเป็นเรียลไทม์** การตัดสินใจเรื่องการฉ้อโกง สภาพคล่อง การปฏิบัติตามกฎเกณฑ์ การชำระบัญชี และความเสี่ยงด้านปฏิบัติการต้องทำงานด้วยความเร็วของเวิร์กโฟลว์ ไม่ใช่หลังเหตุการณ์
 > - **คุณภาพข้อมูลกลายเป็นข้อได้เปรียบเชิงพาณิชย์** ข้อมูลที่มีโครงสร้าง บริบทธุรกรรม บันทึกการตรวจสอบ และสัญญาณตัวตน กลายเป็นรากฐานของระบบอัตโนมัติและผลิตภัณฑ์ที่นำเสนอต่อลูกค้า
 > - **การแยกส่วนคือศัตรู** ธนาคารที่สร้างโครงการนำร่องแยกตามแต่ละช่องทาง โทเคน โมเดล หรือข้อกำหนดด้านการปฏิบัติตามกฎเกณฑ์ ก่อให้เกิดความเสี่ยงด้านปฏิบัติการในอนาคต
@@ -120,7 +120,7 @@ UK Payments Forward Plan และชุดนโยบายเดือนเ�
 
 อุตสาหกรรมได้ก้าวพ้นเฟสการนำมาใช้แล้ว การเข้าร่วมช่องทาง การย้ายข้อความ การทำ proof of concept ด้าน AI หรือการประกาศโครงการนำร่องด้านโทเคน เพียงเท่านั้นไม่เพียงพออีกต่อไป ในปี 2026 ความได้เปรียบเชิงกลยุทธ์เกิดจากการประสานความสามารถเหล่านั้นเข้ากับเวิร์กโฟลว์จริง แล้วพิสูจน์ว่าเวิร์กโฟลว์ดังกล่าวปลอดภัยกว่า เร็วกว่า ถูกกว่า ยืดหยุ่นกว่า หรือเป็นประโยชน์ต่อลูกค้ามากกว่า
 
-ด้วยเหตุนี้ นโยบายการชำระเงินจึงเป็นหัวข้อระดับคณะกรรมการในปัจจุบัน แรงกดดันเดิม ๆ ยังคงเกิดขึ้นซ้ำ ได้แก่ ข้อมูลการชำระเงินที่สมบูรณ์ขึ้น การชำระบัญชีแบบเรียลไทม์ เงินที่ผ่านการทำโทเคน การตัดสินใจด้วย AI โอเพนแบงกิ้ง ความยืดหยุ่นในการปฏิบัติการ การกระจุกตัวของคลาวด์ และหลักฐานสำหรับหน่วยงานกำกับดูแลที่เข้มงวดขึ้น เมื่อจัดการแยกกัน แรงกดดันเหล่านี้ก่อให้เกิดโครงการที่บานปลาย เมื่อจัดการเป็นสถาปัตยกรรมเดียว แรงกดดันเหล่านี้สร้างแรงงัดเชิงปฏิบัติการ ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))
+ด้วยเหตุนี้ นโยบายการชำระเงินจึงเป็นหัวข้อระดับคณะกรรมการในปัจจุบัน แรงกดดันเดิม ๆ ยังคงเกิดขึ้นซ้ำ ได้แก่ ข้อมูลการชำระเงินที่สมบูรณ์ขึ้น การชำระบัญชีแบบเรียลไทม์ เงินที่ผ่านการทำโทเคน การตัดสินใจด้วย AI โอเพนแบงกิ้ง ความยืดหยุ่นในการปฏิบัติการ การกระจุกตัวของคลาวด์ และหลักฐานสำหรับหน่วยงานกำกับดูแลที่เข้มงวดขึ้น เมื่อจัดการแยกกัน แรงกดดันเหล่านี้ก่อให้เกิดโครงการที่บานปลาย เมื่อจัดการเป็นสถาปัตยกรรมเดียว แรงกดดันเหล่านี้สร้างแรงงัดเชิงปฏิบัติการ ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))
 
 ## ฐานสถาปัตยกรรมปี 2026
 
@@ -130,7 +130,7 @@ UK Payments Forward Plan และชุดนโยบายเดือนเ�
 
 ### 2. ข้อมูลในฐานะระนาบการควบคุม
 
-ข้อมูลที่มีโครงสร้าง อยู่ภายใต้การกำกับ และสามารถสืบย้อนได้ คือรากฐาน หากปราศจากข้อมูลที่ใช้งานได้ ระบบอัตโนมัติจะเปราะบางและการปฏิบัติตามกฎเกณฑ์จะกลายเป็นงานด้วยมือ เมื่อมีข้อมูลที่ใช้งานได้ ธนาคารสามารถสร้างความฉลาดในการกำหนดเส้นทาง การควบคุมแบบเรียลไทม์ และการวิเคราะห์ที่นำเสนอต่อลูกค้า ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))
+ข้อมูลที่มีโครงสร้าง อยู่ภายใต้การกำกับ และสามารถสืบย้อนได้ คือรากฐาน หากปราศจากข้อมูลที่ใช้งานได้ ระบบอัตโนมัติจะเปราะบางและการปฏิบัติตามกฎเกณฑ์จะกลายเป็นงานด้วยมือ เมื่อมีข้อมูลที่ใช้งานได้ ธนาคารสามารถสร้างความฉลาดในการกำหนดเส้นทาง การควบคุมแบบเรียลไทม์ และการวิเคราะห์ที่นำเสนอต่อลูกค้า ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))
 
 ### 3. การประสานงานข้ามช่องทางและแพลตฟอร์ม
 
@@ -197,7 +197,7 @@ UK Payments Forward Plan ในปี 2026 ในที่สุดแล้ว�
 ## อ้างอิง
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

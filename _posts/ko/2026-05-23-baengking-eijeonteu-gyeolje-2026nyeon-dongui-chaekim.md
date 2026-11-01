@@ -101,13 +101,13 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-에이전트 결제는 프레젠테이션 자료에서 실시장의 증거로 넘어왔습니다. Mastercard와 Rabobank는 네덜란드에서 AI 에이전트가 개시한 결제를 완료하였으며, 에이전트는 Priceless.com에서 커피 시음을 예약하면서 카드 정보에 직접 접근하지 않았고 실행 전에 소비자의 명시적 동의가 기록되었습니다([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). 이로써 은행의 전략적 쟁점은 동의 아키텍처로 이동합니다. 즉, 머신이 수행한 결제가 그 배후의 사람 또는 법인 의뢰자에 의해 실제로 권한 부여되었음을 금융기관이 어떻게 증명하느냐의 문제입니다.
+에이전트 결제는 프레젠테이션 자료에서 실시장의 증거로 넘어왔습니다. Mastercard와 Rabobank는 네덜란드에서 AI 에이전트가 개시한 결제를 완료하였으며, 에이전트는 Priceless.com에서 커피 시음을 예약하면서 카드 정보에 직접 접근하지 않았고 실행 전에 소비자의 명시적 동의가 기록되었습니다([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). 이로써 은행의 전략적 쟁점은 동의 아키텍처로 이동합니다. 즉, 머신이 수행한 결제가 그 배후의 사람 또는 법인 의뢰자에 의해 실제로 권한 부여되었음을 금융기관이 어떻게 증명하느냐의 문제입니다.
 
 ---
 
 > **경영진 요약 / 핵심 요약**
 >
-> - **최초의 시장 신호가 실거래로 가시화되었습니다.** Mastercard와 Rabobank가 Mastercard Agent Pay를 사용해 네덜란드에서 AI 에이전트 거래를 완료하였으며, 에이전트는 카드 데이터에 직접 접근하지 못했습니다([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **최초의 시장 신호가 실거래로 가시화되었습니다.** Mastercard와 Rabobank가 Mastercard Agent Pay를 사용해 네덜란드에서 AI 에이전트 거래를 완료하였으며, 에이전트는 카드 데이터에 직접 접근하지 못했습니다([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **에이전트 결제 프로토콜은 법제 정비보다 먼저 부상하고 있습니다.** Fenwick은 AP2, A2A, x402, MCP, MPP를 에이전트 상호운용성과 권한 부여를 다루는 프로토콜 노력으로 식별합니다([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **동의가 핵심적인 뱅킹 과제입니다.** AP2 방식 암호학적 동의 위임은 사용자 지시와 최종 승인을 의도에 대한 감사 가능한 증거로 포착하고자 합니다([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **책임은 미해결로 남아 있습니다.** 기존 결제법은 위임된 권한 하에 자율적으로 행동하는 AI 시스템이 아니라 사람이 결정하는 거래를 전제로 설계되었습니다([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
@@ -198,7 +198,7 @@ J.P. Morgan은 에이전트 커머스가 반복적이고 저위험인 범주에�
 ## 참고문헌
 
 - Fenwick, (2026). [Is 2026 the Year of Agentic Payments? ⧉](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 

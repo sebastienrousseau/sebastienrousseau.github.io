@@ -108,7 +108,7 @@ A 2026, AI yana zama tsarin aiki na biya, yana motsi daga nazari zuwa hana zamba
 > **Taƙaitaccen Hukumar Gudanarwa / Mahimman Batutuwa**
 >
 > - **Hankalin Biya yanzu na dabaru ne.** Maganar tana da alaƙa da samfurin aiki, juriya, daraja ga abokin ciniki, da shaidar tsari maimakon ƙaddamar da samfur kunkuntar ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **Ka'idar zane ita ce sarrafa ainihin lokaci.** Bankuna suna bukatar tsarin da ya haɗa manufa, samfur, bayanai, zaɓin hanya, sarrafa haɗari, da tattalin arziƙin auna ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Ka'idar zane ita ce sarrafa ainihin lokaci.** Bankuna suna bukatar tsarin da ya haɗa manufa, samfur, bayanai, zaɓin hanya, sarrafa haɗari, da tattalin arziƙin auna ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Samfurin sarrafawa dole ne ya kasance na ainihin lokaci.** Yanke shawara na zamba, ruwa-ruwa, bin doka, sasantawa, da haɗarin aiki dole ne su gudana a saurin aiki, ba bayan abin ya faru ba.
 > - **Inganci na bayanai ya zama fa'idar kasuwanci.** Bayanai masu tsari, mahallin ma'amala, rajistar bincike, da alamomin shaida sun zama tushen sarrafa kai da samfuran da abokan ciniki ke gani.
 > - **Rarrabuwa shi ne maƙiyi.** Bankin da yake gina gwaje-gwaje keɓe kewaye da kowace hanya, token, samfuri, ko buƙatar bin doka yana haifar da haɗarin aikin nan gaba.
@@ -120,7 +120,7 @@ A 2026, AI yana zama tsarin aiki na biya, yana motsi daga nazari zuwa hana zamba
 
 Masana'antar ta motsa fiye da matakin karɓa. Bai isa ba a sake shiga hanya, a yi ƙaura saƙo, a gudanar da gwajin AI, ko a sanar da gwajin tokenisation. A 2026, fa'idar dabaru tana zuwa daga tsara waɗannan iyawa akan ainihin aiki, sannan a tabbatar cewa aikin ya fi aminci, sauri, arha, juriya, ko amfani ga abokan ciniki.
 
-Wannan shine dalilin da ya sa hankalin biya yanzu ya zama maganar matakin kwamiti. Matsin lamba ɗaya yana ci gaba da maimaitawa: bayanan biyan kuɗi mafi wadata, sasantawa na ainihin lokaci, kuɗin tokenised, yanke shawara na AI, Open Banking, juriyar aiki, mai da hankali kan cloud, da shaidar tsari mai ƙarfi. Idan aka kula da su daban-daban, waɗannan matsi suna haifar da yaɗuwar shirye-shirye. Idan aka kula da su a matsayin tsari ɗaya, suna haifar da ƙarfin aiki ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Wannan shine dalilin da ya sa hankalin biya yanzu ya zama maganar matakin kwamiti. Matsin lamba ɗaya yana ci gaba da maimaitawa: bayanan biyan kuɗi mafi wadata, sasantawa na ainihin lokaci, kuɗin tokenised, yanke shawara na AI, Open Banking, juriyar aiki, mai da hankali kan cloud, da shaidar tsari mai ƙarfi. Idan aka kula da su daban-daban, waɗannan matsi suna haifar da yaɗuwar shirye-shirye. Idan aka kula da su a matsayin tsari ɗaya, suna haifar da ƙarfin aiki ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Tushen Tsari na 2026
 
@@ -130,7 +130,7 @@ Bankin ya kamata ya fara da matsalar: ruwa-ruwa da aka kama, jinkirin sasantawa,
 
 ### 2. Bayanai a Matsayin Jirgin Sarrafawa
 
-Bayanai masu tsari, masu mulki, kuma masu iya bibiya su ne tushe. Idan babu bayanai masu amfani, sarrafa kai zai zama maras ƙarfi kuma bin doka zai zama na hannu. Tare da bayanai masu amfani, bankuna za su iya ƙirƙirar hankalin tuƙi, sarrafawa na ainihin lokaci, da nazarin abokin ciniki ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Bayanai masu tsari, masu mulki, kuma masu iya bibiya su ne tushe. Idan babu bayanai masu amfani, sarrafa kai zai zama maras ƙarfi kuma bin doka zai zama na hannu. Tare da bayanai masu amfani, bankuna za su iya ƙirƙirar hankalin tuƙi, sarrafawa na ainihin lokaci, da nazarin abokin ciniki ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Tsari a Kan Hanyoyi da Dandamali
 
@@ -197,7 +197,7 @@ Ya kamata a auna nasara ta hanyar tattalin arziƙin unit, shaidar juriya, inganc
 ## Manazarta
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

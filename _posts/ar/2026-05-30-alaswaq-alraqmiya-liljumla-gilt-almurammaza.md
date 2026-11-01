@@ -113,7 +113,7 @@ site_software: "Static Site Generator, Rust"
 > - **سندات gilt تذهب أولاً لأنها الأصل الأصعب ضبطاً.** HQLA على DLT، تُسوَّى ذرياً مقابل النقد المرمَّز، يُتحقَّق من الحزمة الكاملة — الإصدار، التداول، إعادة الشراء، الضمانات، نقد البنك المركزي — على أعمق مجمَّع إسترليني ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "بيئة اختبار الأوراق المالية الرقمية")).
 > - **إعادة الشراء خلال اليوم هي الجائزة الفورية.** إعادة شراء ذرية T+0 لسندات gilt المرمَّزة تُحرِّر رأس المال الذي يجلس اليوم خاملاً كوسادة سيولة لليوم نفسه. تنزل الوفورات مباشرةً إلى ROE.
 > - **التنسيق يحل محل الشبكات المستقلة.** Regulated Liability Network وCanton وDLT المصرفية الخاصة وRTGS والنقد التجاري المرمَّز، كلٌّ منها يحمل سير عمل تُديره المصارف فعلاً. المهمة هي التوجيه عبرها، لا اختيار واحدة.
-> - **السياسة كرمز هي نموذج الامتثال الوحيد الذي يجاري السرعة.** العقوبات وKYC وحدود الموقف والبوابات الاختصاصية — مُرمَّزة في طبقة التسوية، تُنفَّذ ذرياً مع الصفقة، وتُنتج أثراً تدقيقياً مُشفَّراً بدل سجلٍّ على المنظِّم أن يثق به ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "تحديث مشهد المدفوعات – مايو 2026")).
+> - **السياسة كرمز هي نموذج الامتثال الوحيد الذي يجاري السرعة.** العقوبات وKYC وحدود الموقف والبوابات الاختصاصية — مُرمَّزة في طبقة التسوية، تُنفَّذ ذرياً مع الصفقة، وتُنتج أثراً تدقيقياً مُشفَّراً بدل سجلٍّ على المنظِّم أن يثق به ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "تحديث مشهد المدفوعات – مايو 2026")).
 > - **البنية هي الحصن.** الفائزون يحيكون سير العمل والبيانات والقناة والضبط واقتصاديات الوحدة في نموذج تشغيلي واحد. الخاسرون يديرون محفظة تجارب مفكَّكة ويسمونها استراتيجية.
 >
 ---
@@ -150,7 +150,7 @@ DSS نظامٌ حيٌّ. لاستخدامه منصةً لا إثبات مفهو�
 
 ### البيانات بوصفها مستوى الضبط
 
-حمولات ISO 20022 المرتبطة ببصمات معاملات على السلسلة تُحوِّل بيانات التسوية إلى مصدر حقيقة واحد. من دون ذلك الربط، تكون أتمتة العقد الذكي هشَّةً وتعود المطابقة إلى جداول البيانات. ومعه، تحصل المصارف على معالجة مستقيمة (STP)، وضوابط آنية، وتحليلات يدفع العملاء مقابلها فعلاً ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "تحديث مشهد المدفوعات – مايو 2026")).
+حمولات ISO 20022 المرتبطة ببصمات معاملات على السلسلة تُحوِّل بيانات التسوية إلى مصدر حقيقة واحد. من دون ذلك الربط، تكون أتمتة العقد الذكي هشَّةً وتعود المطابقة إلى جداول البيانات. ومعه، تحصل المصارف على معالجة مستقيمة (STP)، وضوابط آنية، وتحليلات يدفع العملاء مقابلها فعلاً ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "تحديث مشهد المدفوعات – مايو 2026")).
 
 ### التنسيق عبر القنوات
 
@@ -231,7 +231,7 @@ Regulated Liability Network نموذج دفتر مشترك للنقد التجا
 - GOV.UK, (2026). [دعم التقنية المالية البريطانية لتبنِّي تقنية المدفوعات المستقبلية ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "دعم التقنية المالية البريطانية").
 - Bank of England, (2026). [بيئة اختبار الأوراق المالية الرقمية ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "بيئة اختبار الأوراق المالية الرقمية").
 - FCA, (2026). [بيئة اختبار الأوراق المالية الرقمية لدى FCA ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "بيئة اختبار الأوراق المالية الرقمية لدى FCA").
-- Association of Corporate Treasurers, (2026). [تحديث مشهد المدفوعات – مايو 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "تحديث مشهد المدفوعات").
+- Association of Corporate Treasurers, (2026). [تحديث مشهد المدفوعات – مايو 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "تحديث مشهد المدفوعات").
 - Global Government Finance, (2026). [منسق الأسواق الرقمية للجملة في المملكة المتحدة ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "منسق الأسواق الرقمية للجملة في المملكة المتحدة").
 
 <!-- enrich-start -->

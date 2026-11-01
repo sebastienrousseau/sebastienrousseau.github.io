@@ -108,7 +108,7 @@ AI staje sie systemem operacyjnym platnosci w 2026 roku, przechodzac z analityki
 > **Streszczenie dla zarzadu / Kluczowe wnioski**
 >
 > - **Inteligencja platnicza jest dzis strategiczna.** Temat wiaze sie z modelem operacyjnym, odpornoscia, wartoscia dla klienta i dowodami regulacyjnymi, a nie z waskim wdrozeniem produktu ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **Zasada projektowa to kontrola w czasie rzeczywistym.** Banki potrzebuja architektury laczacej polityke, produkt, dane, wybor szyny, kontrole ryzyka oraz mierzalna ekonomike ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Zasada projektowa to kontrola w czasie rzeczywistym.** Banki potrzebuja architektury laczacej polityke, produkt, dane, wybor szyny, kontrole ryzyka oraz mierzalna ekonomike ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Model kontroli musi byc w czasie rzeczywistym.** Decyzje dotyczace oszustw, plynnosci, zgodnosci, rozrachunku i ryzyka operacyjnego musza zapadac w tempie procesu, a nie po fakcie.
 > - **Jakosc danych staje sie przewaga komercyjna.** Strukturalne dane, kontekst transakcji, logi audytowe i sygnaly tozsamosci sa substratem automatyzacji i produktow klienckich.
 > - **Fragmentacja jest wrogiem.** Bank, ktory buduje odrebne piloty wokol kazdej szyny, tokena, modelu czy wymogu zgodnosci, tworzy przyszle ryzyko operacyjne.
@@ -120,7 +120,7 @@ AI staje sie systemem operacyjnym platnosci w 2026 roku, przechodzac z analityki
 
 Branza wyszla poza faze adopcji. Nie wystarcza juz dolaczyc do szyny, zmigrowac komunikat, przeprowadzic proof of concept AI czy oglosic pilot tokenizacji. W 2026 strategiczna przewaga rodzi sie z orkiestracji tych zdolnosci wokol konkretnego procesu — i z udowodnienia, ze ten proces jest bezpieczniejszy, szybszy, tanszy, bardziej odporny lub uzyteczniejszy dla klienta.
 
-Dlatego inteligencja platnicza jest dzis tematem na poziomie zarzadu. Te same presje wracaja: bogatsze dane platnicze, rozrachunek w czasie rzeczywistym, pieniadz tokenizowany, decyzje AI, Open Banking, odpornosc operacyjna, koncentracja w chmurze i silniejsze dowody regulacyjne. Traktowane osobno tworza rozrost programow. Traktowane jako jedna architektura tworza dzwignie operacyjna ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Dlatego inteligencja platnicza jest dzis tematem na poziomie zarzadu. Te same presje wracaja: bogatsze dane platnicze, rozrachunek w czasie rzeczywistym, pieniadz tokenizowany, decyzje AI, Open Banking, odpornosc operacyjna, koncentracja w chmurze i silniejsze dowody regulacyjne. Traktowane osobno tworza rozrost programow. Traktowane jako jedna architektura tworza dzwignie operacyjna ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Baseline architektury 2026
 
@@ -130,7 +130,7 @@ Bank powinien wychodzic od tarcia: uwiezionej plynnosci, opoznienia rozrachunku,
 
 ### 2. Dane jako warstwa kontrolna
 
-Strukturalne, regulowane i sledzalne dane sa fundamentem. Bez uzytecznych danych automatyzacja staje sie krucha, a zgodnosc reczna. Z uzytecznymi danymi banki moga budowac inteligencje routingu, kontrole w czasie rzeczywistym i analityke kliencka ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Strukturalne, regulowane i sledzalne dane sa fundamentem. Bez uzytecznych danych automatyzacja staje sie krucha, a zgodnosc reczna. Z uzytecznymi danymi banki moga budowac inteligencje routingu, kontrole w czasie rzeczywistym i analityke kliencka ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orkiestracja w wielu szynach i platformach
 
@@ -197,7 +197,7 @@ Sukces nalezy mierzyc ekonomika jednostkowa, dowodami odpornosci, jakoscia danyc
 ## Bibliografia
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

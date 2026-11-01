@@ -20,7 +20,7 @@ keywords: "AI पेमेंट्स 2026, पेमेंट फसवणू�
 > **कार्यकारी सारांश / मुख्य मुद्दे**
 >
 > - **पेमेंट्स बुद्धिमत्ता आता धोरणात्मक आहे.** हा विषय संकुचित उत्पादन-लाँचऐवजी ऑपरेटिंग मॉडेल, लवचिकता, क्लायंट मूल्य आणि नियामक पुराव्याशी जोडलेला आहे ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **डिझाइन तत्त्व म्हणजे रिअल-टाइम नियंत्रण.** बँकांना असे आर्किटेक्चर हवे जे धोरण, उत्पादन, डेटा, रेल निवड, जोखीम नियंत्रणे आणि मोजण्यायोग्य अर्थशास्त्र जोडते ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **डिझाइन तत्त्व म्हणजे रिअल-टाइम नियंत्रण.** बँकांना असे आर्किटेक्चर हवे जे धोरण, उत्पादन, डेटा, रेल निवड, जोखीम नियंत्रणे आणि मोजण्यायोग्य अर्थशास्त्र जोडते ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **नियंत्रण मॉडेल रिअल टाइम असावे.** फसवणूक, तरलता, अनुपालन, सेटलमेंट आणि ऑपरेशनल-जोखीम निर्णय घटनेनंतर नव्हे तर वर्कफ्लोच्या वेगाने चालले पाहिजेत.
 > - **डेटा गुणवत्ता व्यावसायिक फायदा बनते.** संरचित डेटा, व्यवहार संदर्भ, ऑडिट लॉग आणि ओळख संकेत हे ऑटोमेशन आणि क्लायंट-केंद्रित उत्पादनांचा पाया बनतात.
 > - **विखंडन हा शत्रू आहे.** प्रत्येक रेल, टोकन, मॉडेल किंवा अनुपालन आवश्यकतेभोवती वेगळे पायलट तयार करणारी बँक भविष्यातील ऑपरेटिंग जोखीम निर्माण करते.
@@ -32,7 +32,7 @@ keywords: "AI पेमेंट्स 2026, पेमेंट फसवणू�
 
 उद्योग स्वीकार टप्प्याच्या पुढे गेला आहे. आता एखाद्या रेलमध्ये सामील होणे, एखादा संदेश स्थलांतरित करणे, AI संकल्पना सिद्धता चालवणे किंवा टोकनाइजेशन पायलटची घोषणा करणे पुरेसे राहिलेले नाही. 2026 मध्ये धोरणात्मक धार त्या क्षमतांना एका वास्तविक वर्कफ्लोविरुद्ध ऑर्केस्ट्रेट करण्यातून येते, आणि नंतर तो वर्कफ्लो अधिक सुरक्षित, अधिक जलद, अधिक स्वस्त, अधिक लवचिक किंवा क्लायंटसाठी अधिक उपयुक्त आहे हे सिद्ध करण्यातून येते.
 
-म्हणूनच पेमेंट्स बुद्धिमत्ता आता संचालक-मंडळ-स्तरीय विषय आहे. तेच दबाव पुन्हा पुन्हा उद्भवतात: समृद्ध पेमेंट डेटा, रिअल-टाइम सेटलमेंट, टोकनाइज्ड पैसा, AI निर्णयन, ओपन बँकिंग, ऑपरेशनल लवचिकता, क्लाउड केंद्रीकरण आणि मजबूत नियामक पुरावा. वेगवेगळ्या पद्धतीने हाताळल्यास, हे दबाव प्रोग्राम पसरवतात. एकच आर्किटेक्चर म्हणून हाताळल्यास, ते ऑपरेटिंग लीव्हरेज निर्माण करतात ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+म्हणूनच पेमेंट्स बुद्धिमत्ता आता संचालक-मंडळ-स्तरीय विषय आहे. तेच दबाव पुन्हा पुन्हा उद्भवतात: समृद्ध पेमेंट डेटा, रिअल-टाइम सेटलमेंट, टोकनाइज्ड पैसा, AI निर्णयन, ओपन बँकिंग, ऑपरेशनल लवचिकता, क्लाउड केंद्रीकरण आणि मजबूत नियामक पुरावा. वेगवेगळ्या पद्धतीने हाताळल्यास, हे दबाव प्रोग्राम पसरवतात. एकच आर्किटेक्चर म्हणून हाताळल्यास, ते ऑपरेटिंग लीव्हरेज निर्माण करतात ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## 2026 आर्किटेक्चर बेसलाइन
 
@@ -42,7 +42,7 @@ keywords: "AI पेमेंट्स 2026, पेमेंट फसवणू�
 
 ### 2. नियंत्रण स्तर म्हणून डेटा
 
-संरचित, नियंत्रित आणि शोधता येण्याजोगा डेटा हा पाया आहे. वापरण्यायोग्य डेटाशिवाय, ऑटोमेशन ठिसूळ बनते आणि अनुपालन मॅन्युअल बनते. वापरण्यायोग्य डेटासह, बँका राउटिंग बुद्धिमत्ता, रिअल-टाइम नियंत्रणे आणि क्लायंट-केंद्रित विश्लेषण तयार करू शकतात ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+संरचित, नियंत्रित आणि शोधता येण्याजोगा डेटा हा पाया आहे. वापरण्यायोग्य डेटाशिवाय, ऑटोमेशन ठिसूळ बनते आणि अनुपालन मॅन्युअल बनते. वापरण्यायोग्य डेटासह, बँका राउटिंग बुद्धिमत्ता, रिअल-टाइम नियंत्रणे आणि क्लायंट-केंद्रित विश्लेषण तयार करू शकतात ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. रेल्स आणि प्लॅटफॉर्म्सवरील ऑर्केस्ट्रेशन
 
@@ -109,5 +109,5 @@ keywords: "AI पेमेंट्स 2026, पेमेंट फसवणू�
 ## संदर्भ
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").

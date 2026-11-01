@@ -116,7 +116,7 @@ Champion je páka, která je k tomu donutí.
 > - **Gilty jdou první, protože je nejtěžší je dostat správně.** HQLA na DLT, vypořádané atomicky proti tokenizované hotovosti, validuje celý stack — emisi, obchodování, repo, zajištění, peníze centrální banky — na nejhlubším poolu v librách ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **Vnitrodenní repo je bezprostřední výhrou.** Atomické T+0 repo tokenizovaných giltů uvolňuje kapitál, který dnes leží nečinně jako vnitrodenní likviditní polštář. Úspory padají přímo do ROE.
 > - **Orchestrace nahrazuje samostatné sítě.** Regulated Liability Network, Canton, soukromé bankovní DLT, RTGS a tokenizované peníze komerčních bank — každý nese pracovní postupy, které banky už provozují. Úkolem je směrovat napříč nimi, ne si jeden vybrat.
-> - **Policy-as-code je jediný model compliance, který stačí tempu.** Sankce, KYC, limity pozic, jurisdikční brány — zakódované ve vrstvě vypořádání, prováděné atomicky s obchodem, produkující kryptografickou auditní stopu místo logu, kterému regulátor musí věřit ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Aktualizace platebního prostředí — květen 2026")).
+> - **Policy-as-code je jediný model compliance, který stačí tempu.** Sankce, KYC, limity pozic, jurisdikční brány — zakódované ve vrstvě vypořádání, prováděné atomicky s obchodem, produkující kryptografickou auditní stopu místo logu, kterému regulátor musí věřit ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Aktualizace platebního prostředí — květen 2026")).
 > - **Architektura je obranný val.** Vítězové splétají pracovní postup, data, platební kanál, kontrolu a jednotkovou ekonomiku do jednoho provozního modelu. Poražení provozují portfolio nepropojených pilotů a říkají tomu strategie.
 >
 ---
@@ -153,7 +153,7 @@ Začněte u tření. Uvězněná likvidita, zlomy ve vypořádání, náklady na
 
 ### Data jako řídicí rovina
 
-Payloady ISO 20022 svázané s on-chain hashe transakcí mění vypořádací data v jediný zdroj pravdy. Bez této vazby je automatizace chytrých kontraktů křehká a odsouhlasení se vrací k tabulkám. S ní banky dostanou straight-through processing (STP), kontroly v reálném čase a analytiku, za kterou klienti skutečně zaplatí ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Aktualizace platebního prostředí — květen 2026")).
+Payloady ISO 20022 svázané s on-chain hashe transakcí mění vypořádací data v jediný zdroj pravdy. Bez této vazby je automatizace chytrých kontraktů křehká a odsouhlasení se vrací k tabulkám. S ní banky dostanou straight-through processing (STP), kontroly v reálném čase a analytiku, za kterou klienti skutečně zaplatí ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Aktualizace platebního prostředí — květen 2026")).
 
 ### Orchestrace napříč platebními kanály
 
@@ -234,7 +234,7 @@ Bazické body ušetřené na financování zajištění. Snížení vnitrodenní
 - GOV.UK, (2026). [Britský fintech podpořen v přijetí budoucí platební technologie ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "Britský fintech podpořen").
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "Digital Securities Sandbox FCA").
-- Association of Corporate Treasurers, (2026). [Aktualizace platebního prostředí — květen 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Aktualizace platebního prostředí").
+- Association of Corporate Treasurers, (2026). [Aktualizace platebního prostředí — květen 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Aktualizace platebního prostředí").
 - Global Government Finance, (2026). [Britský Wholesale Digital Markets Champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Britský Wholesale Digital Markets Champion").
 
 <!-- enrich-start -->
