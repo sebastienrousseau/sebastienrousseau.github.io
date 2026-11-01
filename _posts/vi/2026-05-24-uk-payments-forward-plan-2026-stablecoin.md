@@ -108,7 +108,7 @@ UK Payments Forward Plan và gói chính sách tháng 4/2026 định hướng t�
 > **Tóm tắt điều hành / Điểm mấu chốt**
 >
 > - **Chính sách thanh toán nay mang tính chiến lược.** Chủ đề gắn với mô hình vận hành, khả năng phục hồi, giá trị khách hàng và bằng chứng (evidence) quản lý thay vì một đợt ra mắt sản phẩm hẹp ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **Nguyên tắc thiết kế là một phạm vi quản lý thống nhất.** Ngân hàng cần kiến trúc kết nối chính sách, sản phẩm, dữ liệu, lựa chọn kênh, kiểm soát rủi ro và hiệu quả kinh tế đo lường được ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Nguyên tắc thiết kế là một phạm vi quản lý thống nhất.** Ngân hàng cần kiến trúc kết nối chính sách, sản phẩm, dữ liệu, lựa chọn kênh, kiểm soát rủi ro và hiệu quả kinh tế đo lường được ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Mô hình kiểm soát phải vận hành theo thời gian thực.** Các quyết định về gian lận, thanh khoản, tuân thủ, quyết toán và rủi ro vận hành phải chạy ở tốc độ của quy trình, không phải sau sự kiện.
 > - **Chất lượng dữ liệu trở thành lợi thế thương mại.** Dữ liệu có cấu trúc, ngữ cảnh giao dịch, nhật ký kiểm toán và tín hiệu định danh trở thành nền tảng cho tự động hóa và các sản phẩm hướng tới khách hàng.
 > - **Sự phân mảnh là kẻ thù.** Ngân hàng xây dựng các thử nghiệm biệt lập quanh từng kênh, token, mô hình hoặc yêu cầu tuân thủ tạo ra rủi ro vận hành trong tương lai.
@@ -120,7 +120,7 @@ UK Payments Forward Plan và gói chính sách tháng 4/2026 định hướng t�
 
 Ngành đã vượt qua giai đoạn áp dụng. Việc tham gia một kênh, di trú một loại tin nhắn, chạy một bản POC AI hoặc công bố một thử nghiệm tokenization không còn đủ. Trong năm 2026, lợi thế chiến lược đến từ việc điều phối các năng lực đó vào một quy trình nghiệp vụ thực, rồi chứng minh rằng quy trình đó an toàn hơn, nhanh hơn, rẻ hơn, kiên cường hơn hoặc hữu ích hơn cho khách hàng.
 
-Đó là lý do chính sách thanh toán nay là chủ đề cấp hội đồng quản trị. Cùng những áp lực lặp đi lặp lại: dữ liệu thanh toán phong phú hơn, quyết toán theo thời gian thực, tiền tokenized, ra quyết định bằng AI, ngân hàng mở (Open Banking), khả năng phục hồi vận hành, tập trung điện toán đám mây và yêu cầu bằng chứng quản lý mạnh hơn. Xử lý tách biệt, các áp lực này tạo ra sự bùng nổ chương trình. Xử lý như một kiến trúc duy nhất, chúng tạo ra đòn bẩy vận hành ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Đó là lý do chính sách thanh toán nay là chủ đề cấp hội đồng quản trị. Cùng những áp lực lặp đi lặp lại: dữ liệu thanh toán phong phú hơn, quyết toán theo thời gian thực, tiền tokenized, ra quyết định bằng AI, ngân hàng mở (Open Banking), khả năng phục hồi vận hành, tập trung điện toán đám mây và yêu cầu bằng chứng quản lý mạnh hơn. Xử lý tách biệt, các áp lực này tạo ra sự bùng nổ chương trình. Xử lý như một kiến trúc duy nhất, chúng tạo ra đòn bẩy vận hành ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Đường cơ sở kiến trúc 2026
 
@@ -130,7 +130,7 @@ Ngân hàng nên bắt đầu từ điểm tắc nghẽn: thanh khoản bị m�
 
 ### 2. Dữ liệu là mặt phẳng kiểm soát
 
-Dữ liệu có cấu trúc, được quản trị và có thể truy vết là nền tảng. Không có dữ liệu khả dụng, tự động hóa trở nên giòn và tuân thủ trở thành thủ công. Với dữ liệu khả dụng, ngân hàng có thể tạo trí thông minh định tuyến, kiểm soát theo thời gian thực và phân tích hướng tới khách hàng ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Dữ liệu có cấu trúc, được quản trị và có thể truy vết là nền tảng. Không có dữ liệu khả dụng, tự động hóa trở nên giòn và tuân thủ trở thành thủ công. Với dữ liệu khả dụng, ngân hàng có thể tạo trí thông minh định tuyến, kiểm soát theo thời gian thực và phân tích hướng tới khách hàng ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Điều phối xuyên kênh và nền tảng
 
@@ -197,7 +197,7 @@ Thành công nên được đo bằng hiệu quả kinh tế đơn vị, bằng 
 ## Tài liệu tham khảo
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

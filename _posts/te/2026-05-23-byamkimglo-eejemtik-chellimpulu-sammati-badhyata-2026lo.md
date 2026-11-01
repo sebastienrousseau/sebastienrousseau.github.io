@@ -13,13 +13,13 @@ keywords: "ఏజెంటిక్ చెల్లింపులు 2026, AI �
 
 ## బ్యాంకింగ్‌లో ఏజెంటిక్ చెల్లింపులు: సమ్మతి, బాధ్యత మరియు 2026లో కొత్త చెల్లింపు UX
 
-ఏజెంటిక్ చెల్లింపులు ప్రజంటేషన్ డెక్ నుండి ప్రత్యక్ష-మార్కెట్ సాక్ష్యంలోకి దాటాయి. Mastercard మరియు Rabobank నెదర్లాండ్స్‌లో AI ఏజెంట్-ప్రారంభించిన చెల్లింపును పూర్తి చేశాయి, ఇక్కడ ఏజెంట్ కార్డ్ వివరాలను నేరుగా యాక్సెస్ చేయకుండా, అమలుకు ముందు స్పష్టమైన వినియోగదారు సమ్మతి నమోదు చేయబడిన స్థితిలో Priceless.comలో ఒక కాఫీ టేస్టింగ్‌ను బుక్ చేసింది ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). బ్యాంకుల కోసం వ్యూహాత్మక సమస్య ఇప్పుడు సమ్మతి ఆర్కిటెక్చర్: ఒక మెషిన్ చెల్లింపు దాని వెనుక ఉన్న మానవ లేదా కార్పొరేట్ ప్రధానంచే నిజంగా అధికారం పొందిందని ఒక ఆర్థిక సంస్థ ఎలా నిరూపిస్తుంది.
+ఏజెంటిక్ చెల్లింపులు ప్రజంటేషన్ డెక్ నుండి ప్రత్యక్ష-మార్కెట్ సాక్ష్యంలోకి దాటాయి. Mastercard మరియు Rabobank నెదర్లాండ్స్‌లో AI ఏజెంట్-ప్రారంభించిన చెల్లింపును పూర్తి చేశాయి, ఇక్కడ ఏజెంట్ కార్డ్ వివరాలను నేరుగా యాక్సెస్ చేయకుండా, అమలుకు ముందు స్పష్టమైన వినియోగదారు సమ్మతి నమోదు చేయబడిన స్థితిలో Priceless.comలో ఒక కాఫీ టేస్టింగ్‌ను బుక్ చేసింది ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). బ్యాంకుల కోసం వ్యూహాత్మక సమస్య ఇప్పుడు సమ్మతి ఆర్కిటెక్చర్: ఒక మెషిన్ చెల్లింపు దాని వెనుక ఉన్న మానవ లేదా కార్పొరేట్ ప్రధానంచే నిజంగా అధికారం పొందిందని ఒక ఆర్థిక సంస్థ ఎలా నిరూపిస్తుంది.
 
 ---
 
 > **కార్యనిర్వాహక సారాంశం / ముఖ్యాంశాలు**
 >
-> - **మొదటి మార్కెట్ సంకేతాలు ప్రత్యక్షం.** Mastercard మరియు Rabobank Mastercard Agent Payను ఉపయోగించి నెదర్లాండ్స్ AI-ఏజెంట్ లావాదేవీని పూర్తి చేశాయి, ఏజెంట్ కార్డ్ డేటాను నేరుగా యాక్సెస్ చేయకుండా నిరోధించబడింది ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **మొదటి మార్కెట్ సంకేతాలు ప్రత్యక్షం.** Mastercard మరియు Rabobank Mastercard Agent Payను ఉపయోగించి నెదర్లాండ్స్ AI-ఏజెంట్ లావాదేవీని పూర్తి చేశాయి, ఏజెంట్ కార్డ్ డేటాను నేరుగా యాక్సెస్ చేయకుండా నిరోధించబడింది ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **చట్టం స్థిరపడక ముందే ఏజెంటిక్ చెల్లింపు ప్రోటోకాల్‌లు ఆవిర్భవిస్తున్నాయి.** ఏజెంట్ ఇంటర్‌ఆపరబిలిటీ మరియు అధికారీకరణను పరిష్కరించే ప్రోటోకాల్ ప్రయత్నాలుగా Fenwick AP2, A2A, x402, MCP మరియు MPPలను గుర్తిస్తుంది ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **సమ్మతి అనేది కేంద్ర బ్యాంకింగ్ సమస్య.** AP2-తరహా క్రిప్టోగ్రాఫిక్ మాండేట్లు వినియోగదారు సూచనలు మరియు తుది ఆమోదాన్ని ఉద్దేశానికి ఆడిట్ చేయదగిన సాక్ష్యంగా సంగ్రహించడానికి ప్రయత్నిస్తాయి ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **బాధ్యత పరిష్కారం కాకుండా ఉంది.** ప్రస్తుత చెల్లింపు చట్టం అప్పగించిన అధికారం కింద పనిచేసే స్వయంప్రతిపత్త AI వ్యవస్థల చుట్టూ కాకుండా మనుషులు నిర్ణయించిన లావాదేవీల చుట్టూ రూపొందించబడింది ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
@@ -110,6 +110,6 @@ AI ఏజెంట్‌కు ఖాతా యాక్సెస్ మంజ�
 ## మూలాలు
 
 - Fenwick, (2026). [Is 2026 the Year of Agentic Payments? ⧉](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").

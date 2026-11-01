@@ -108,7 +108,7 @@ Nagiging operating system ng pagbabayad ang AI sa 2026, lumilipat mula analytics
 > **Executive Summary / Mga Pangunahing Punto**
 >
 > - **Estratehiko na ngayon ang Payments Intelligence.** Nakatali ang paksa sa operating model, katatagan, halaga sa kliyente, at regulatory evidence sa halip na isang makitid na product launch ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **Real-time control ang prinsipyo ng disenyo.** Kailangan ng mga bangko ang arkitektura na nag-uugnay ng patakaran, produkto, data, pagpili ng rail, risk controls, at nasusukat na ekonomika ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Real-time control ang prinsipyo ng disenyo.** Kailangan ng mga bangko ang arkitektura na nag-uugnay ng patakaran, produkto, data, pagpili ng rail, risk controls, at nasusukat na ekonomika ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Real time ang dapat na control model.** Ang mga desisyon sa pandaraya, likido, compliance, settlement, at operational risk ay dapat tumakbo sa bilis ng workflow, hindi pagkatapos ng pangyayari.
 > - **Nagiging komersyal na bentahe ang kalidad ng data.** Ang structured data, transaction context, audit logs, at identity signals ang nagiging substrate para sa automation at mga produktong client-facing.
 > - **Kalaban ang fragmentation.** Ang isang bangko na nagtatayo ng nakahiwalay na pilot sa paligid ng bawat rail, token, modelo, o requirement ng compliance ay lumilikha ng operating risk sa hinaharap.
@@ -120,7 +120,7 @@ Nagiging operating system ng pagbabayad ang AI sa 2026, lumilipat mula analytics
 
 Lumampas na ang industriya sa adoption phase. Hindi na sapat na sumali sa isang rail, mag-migrate ng mensahe, magpatakbo ng AI proof of concept, o mag-anunsyo ng pilot ng tokenisation. Sa 2026, ang estratehikong bentahe ay nagmumula sa pag-orchestrate ng mga kakayahang iyon laban sa tunay na workflow, pagkatapos ay patunayan na mas ligtas, mas mabilis, mas mura, mas matatag, o mas kapaki-pakinabang sa kliyente ang workflow.
 
-Iyon ang dahilan kung bakit antas-board na ngayon ang paksa ng payments intelligence. Paulit-ulit ang parehong panggigipit: mas mayamang payment data, real-time settlement, tokenisadong pera, AI decisioning, Open Banking, operational resilience, cloud concentration, at mas malakas na regulatory evidence. Kapag hiwalay na trinato, lumilikha ang mga panggigipit na iyon ng programme sprawl. Kapag trinato bilang isang arkitektura, lumilikha ito ng operating leverage ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Iyon ang dahilan kung bakit antas-board na ngayon ang paksa ng payments intelligence. Paulit-ulit ang parehong panggigipit: mas mayamang payment data, real-time settlement, tokenisadong pera, AI decisioning, Open Banking, operational resilience, cloud concentration, at mas malakas na regulatory evidence. Kapag hiwalay na trinato, lumilikha ang mga panggigipit na iyon ng programme sprawl. Kapag trinato bilang isang arkitektura, lumilikha ito ng operating leverage ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Ang Baseline ng Arkitektura sa 2026
 
@@ -130,7 +130,7 @@ Dapat magsimula ang bangko sa friction: nakulong na likido, pagkaantala ng settl
 
 ### 2. Data Bilang Control Plane
 
-Pundasyon ang structured, pinamamahalaan, at traceable na data. Kung walang magagamit na data, nagiging marupok ang automation at nagiging manwal ang compliance. Sa magagamit na data, makakalikha ang mga bangko ng intelligence sa ruta, real-time controls, at analytics na client-facing ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Pundasyon ang structured, pinamamahalaan, at traceable na data. Kung walang magagamit na data, nagiging marupok ang automation at nagiging manwal ang compliance. Sa magagamit na data, makakalikha ang mga bangko ng intelligence sa ruta, real-time controls, at analytics na client-facing ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orchestration sa Lahat ng Rails at Platforms
 
@@ -197,7 +197,7 @@ Dapat sukatin ang tagumpay batay sa unit economics, ebidensya ng katatagan, kali
 ## Mga Sanggunian
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

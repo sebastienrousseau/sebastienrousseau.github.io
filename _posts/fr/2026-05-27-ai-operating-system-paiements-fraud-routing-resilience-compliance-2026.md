@@ -108,7 +108,7 @@ L'IA devient le système d'exploitation des paiements en 2026, passant de l'anal
 > **Synthèse exécutive / Points clés**
 >
 > - **L'intelligence des paiements est désormais stratégique.** Le sujet est arrimé au modèle opérationnel, à la résilience, à la valeur client et aux preuves réglementaires plutôt qu'à un lancement produit restreint ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **Le principe de conception est le contrôle temps réel.** Les banques ont besoin d'une architecture reliant politique, produit, données, choix du rail, contrôles de risque et économies mesurables ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Le principe de conception est le contrôle temps réel.** Les banques ont besoin d'une architecture reliant politique, produit, données, choix du rail, contrôles de risque et économies mesurables ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Le modèle de contrôle doit être en temps réel.** Les décisions de fraude, liquidité, conformité, règlement et risque opérationnel doivent suivre la cadence du workflow, et non intervenir a posteriori.
 > - **La qualité des données devient un avantage commercial.** Données structurées, contexte transactionnel, journaux d'audit et signaux d'identité forment le substrat de l'automatisation et des produits orientés client.
 > - **La fragmentation est l'ennemi.** Une banque qui construit des pilotes isolés autour de chaque rail, jeton, modèle ou exigence de conformité fabrique un risque opérationnel à venir.
@@ -120,7 +120,7 @@ L'IA devient le système d'exploitation des paiements en 2026, passant de l'anal
 
 L'industrie a dépassé la phase d'adoption. Il ne suffit plus de rejoindre un rail, de migrer un message, de mener une preuve de concept IA ou d'annoncer un pilote de tokenisation. En 2026, l'avantage stratégique vient de l'orchestration de ces capacités sur un workflow réel, puis de la démonstration que ce workflow est plus sûr, plus rapide, moins coûteux, plus résilient ou plus utile aux clients.
 
-C'est pourquoi l'intelligence des paiements est désormais un sujet de conseil d'administration. Les mêmes pressions reviennent : données de paiement plus riches, règlement en temps réel, monnaie tokenisée, décision IA, Open Banking, résilience opérationnelle, concentration cloud et preuves réglementaires renforcées. Traitées séparément, ces pressions engendrent une dispersion de programmes. Traitées comme une seule architecture, elles dégagent un levier opérationnel ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+C'est pourquoi l'intelligence des paiements est désormais un sujet de conseil d'administration. Les mêmes pressions reviennent : données de paiement plus riches, règlement en temps réel, monnaie tokenisée, décision IA, Open Banking, résilience opérationnelle, concentration cloud et preuves réglementaires renforcées. Traitées séparément, ces pressions engendrent une dispersion de programmes. Traitées comme une seule architecture, elles dégagent un levier opérationnel ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## La base architecturale 2026
 
@@ -130,7 +130,7 @@ La banque doit partir de la friction : liquidité piégée, retard de règlement
 
 ### 2. La donnée comme plan de contrôle
 
-Des données structurées, gouvernées et traçables forment la fondation. Sans données exploitables, l'automatisation devient fragile et la conformité reste manuelle. Avec des données exploitables, les banques produisent une intelligence de routage, des contrôles en temps réel et une analytique orientée client ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Des données structurées, gouvernées et traçables forment la fondation. Sans données exploitables, l'automatisation devient fragile et la conformité reste manuelle. Avec des données exploitables, les banques produisent une intelligence de routage, des contrôles en temps réel et une analytique orientée client ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orchestration à travers rails et plateformes
 
@@ -197,7 +197,7 @@ Le succès se mesure par les unit economics, les preuves de résilience, la qual
 ## Références
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

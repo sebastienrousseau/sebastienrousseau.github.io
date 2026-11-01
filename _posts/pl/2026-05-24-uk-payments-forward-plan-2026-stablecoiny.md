@@ -108,7 +108,7 @@ UK Payments Forward Plan i pakiet polityk z kwietnia 2026 wskazują na jeden sp�
 > **Streszczenie wykonawcze / Najważniejsze wnioski**
 >
 > - **Polityka płatnicza jest teraz strategiczna.** Temat został powiązany z modelem operacyjnym, odpornością, wartością dla klienta i dowodami regulacyjnymi, a nie z wąskim wprowadzeniem produktu ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **Zasada projektowa to jeden perymetr regulacyjny.** Banki potrzebują architektury łączącej politykę, produkt, dane, wybór toru, kontrole ryzyka i mierzalną ekonomikę ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Zasada projektowa to jeden perymetr regulacyjny.** Banki potrzebują architektury łączącej politykę, produkt, dane, wybór toru, kontrole ryzyka i mierzalną ekonomikę ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Model kontroli musi działać w czasie rzeczywistym.** Decyzje dotyczące fraudu, płynności, compliance, rozliczenia i ryzyka operacyjnego muszą zapadać w tempie przepływu pracy, a nie po fakcie.
 > - **Jakość danych staje się przewagą komercyjną.** Dane ustrukturyzowane, kontekst transakcji, logi audytowe i sygnały tożsamości tworzą substrat dla automatyzacji i produktów klienckich.
 > - **Fragmentacja jest wrogiem.** Bank, który buduje izolowane piloty wokół każdego toru, tokena, modelu lub wymogu regulacyjnego, tworzy przyszłe ryzyko operacyjne.
@@ -120,7 +120,7 @@ UK Payments Forward Plan i pakiet polityk z kwietnia 2026 wskazują na jeden sp�
 
 Branża wyszła poza fazę adopcji. Nie wystarcza już dołączenie do toru, migracja komunikatu, uruchomienie proof of concept AI ani ogłoszenie pilota tokenizacji. W 2026 strategiczna przewaga wynika z orkiestracji tych zdolności wokół realnego przepływu pracy oraz z dowodu, że ten przepływ jest bezpieczniejszy, szybszy, tańszy, bardziej odporny lub bardziej użyteczny dla klientów.
 
-Dlatego polityka płatnicza stała się tematem na poziomie zarządu. Te same presje pojawiają się cyklicznie: bogatsze dane płatnicze, rozliczenie w czasie rzeczywistym, pieniądz tokenizowany, decyzje wspomagane AI, Open Banking, odporność operacyjna, koncentracja w chmurze i mocniejsze dowody regulacyjne. Traktowane oddzielnie tworzą rozrost programowy. Traktowane jako jedna architektura — generują dźwignię operacyjną ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Dlatego polityka płatnicza stała się tematem na poziomie zarządu. Te same presje pojawiają się cyklicznie: bogatsze dane płatnicze, rozliczenie w czasie rzeczywistym, pieniądz tokenizowany, decyzje wspomagane AI, Open Banking, odporność operacyjna, koncentracja w chmurze i mocniejsze dowody regulacyjne. Traktowane oddzielnie tworzą rozrost programowy. Traktowane jako jedna architektura — generują dźwignię operacyjną ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Bazowa architektura 2026
 
@@ -130,7 +130,7 @@ Bank powinien wychodzić od tarcia: uwięzionej płynności, opóźnienia rozlic
 
 ### 2. Dane jako warstwa kontroli
 
-Ustrukturyzowane, zarządzane i prześledzalne dane są fundamentem. Bez użytecznych danych automatyzacja staje się krucha, a compliance — ręczne. Z użytecznymi danymi banki mogą tworzyć inteligencję routingu, kontrole w czasie rzeczywistym i analitykę dla klienta ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Ustrukturyzowane, zarządzane i prześledzalne dane są fundamentem. Bez użytecznych danych automatyzacja staje się krucha, a compliance — ręczne. Z użytecznymi danymi banki mogą tworzyć inteligencję routingu, kontrole w czasie rzeczywistym i analitykę dla klienta ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orkiestracja torów i platform
 
@@ -197,7 +197,7 @@ Sukces należy mierzyć przez jednostkową ekonomikę, dowody odporności, jako�
 ## Bibliografia
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

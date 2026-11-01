@@ -113,7 +113,7 @@ site_software: "Static Site Generator, Rust"
 > - **הגילטים פותחים כי הם הנכס הקשה ביותר לבצע נכון.** HQLA על DLT, מסולק אטומית מול מזומן מתומלל, מאמת את הסטאק המלא — הנפקה, מסחר, ריפו, בטחונות, כסף בנק מרכזי — על המאגר העמוק ביותר בסטרלינג ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "סנדבוקס לניירות ערך דיגיטליים")).
 > - **ריפו תוך-יומי הוא הפרס המיידי.** ריפו אטומי T+0 של גילטים מתומללים משחרר הון שיושב היום סרק כחיץ נזילות בו-יומי. החיסכון נופל ישירות ל-ROE.
 > - **תזמור מחליף רשתות בודדות.** Regulated Liability Network, Canton, רשתות DLT פרטיות של בנקים, RTGS וכסף בנק מסחרי מתומלל — כל אחד מהם נושא תהליכי עבודה שהבנקים כבר מריצים. המשימה היא לנתב ביניהם, לא לבחור אחד.
-> - **Policy-as-code הוא מודל הציות היחיד שעומד בקצב.** סנקציות, KYC, מגבלות פוזיציה, שערים שיפוטיים — מקודדים בשכבת הסליקה, מבוצעים אטומית עם העסקה, מייצרים שביל ביקורת קריפטוגרפי במקום יומן שעל הרגולטור לסמוך עליו ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "עדכון נוף התשלומים – מאי 2026")).
+> - **Policy-as-code הוא מודל הציות היחיד שעומד בקצב.** סנקציות, KYC, מגבלות פוזיציה, שערים שיפוטיים — מקודדים בשכבת הסליקה, מבוצעים אטומית עם העסקה, מייצרים שביל ביקורת קריפטוגרפי במקום יומן שעל הרגולטור לסמוך עליו ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "עדכון נוף התשלומים – מאי 2026")).
 > - **הארכיטקטורה היא החפיר.** המנצחים שוזרים תהליך עבודה, נתונים, ערוץ תשלום, בקרה וכלכלת יחידה למודל הפעלה אחד. המפסידים מריצים תיק של טייסים מנותקים וקוראים לזה אסטרטגיה.
 >
 ---
@@ -150,7 +150,7 @@ site_software: "Static Site Generator, Rust"
 
 ### נתונים כמישור הבקרה
 
-עומסי ISO 20022 קשורים ל-hash-ים של עסקה על-שרשרת הופכים נתוני סליקה למקור אמת יחיד. ללא הקישור הזה, אוטומציית חוזה חכם שבירה וההתאמה חוזרת לגיליונות אלקטרוניים. עם הקישור, הבנקים מקבלים STP, בקרות בזמן אמת ואנליטיקה שלקוחות באמת ישלמו עליה ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "עדכון נוף התשלומים – מאי 2026")).
+עומסי ISO 20022 קשורים ל-hash-ים של עסקה על-שרשרת הופכים נתוני סליקה למקור אמת יחיד. ללא הקישור הזה, אוטומציית חוזה חכם שבירה וההתאמה חוזרת לגיליונות אלקטרוניים. עם הקישור, הבנקים מקבלים STP, בקרות בזמן אמת ואנליטיקה שלקוחות באמת ישלמו עליה ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "עדכון נוף התשלומים – מאי 2026")).
 
 ### תזמור חוצה ערוצי תשלום
 
@@ -231,7 +231,7 @@ Regulated Liability Network, Canton, רשתות DLT פרטיות של בנקים
 - GOV.UK, (2026). [פינטק בריטי נתמך לאימוץ טכנולוגיית תשלומים עתידית ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "פינטק בריטי נתמך").
 - Bank of England, (2026). [סנדבוקס לניירות ערך דיגיטליים ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "סנדבוקס לניירות ערך דיגיטליים").
 - FCA, (2026). [סנדבוקס לניירות ערך דיגיטליים ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "סנדבוקס לניירות ערך דיגיטליים של ה-FCA").
-- Association of Corporate Treasurers, (2026). [עדכון נוף התשלומים – מאי 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "עדכון נוף התשלומים").
+- Association of Corporate Treasurers, (2026). [עדכון נוף התשלומים – מאי 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "עדכון נוף התשלומים").
 - Global Government Finance, (2026). [מתאם השווקים הדיגיטליים הסיטונאיים של בריטניה ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "מתאם השווקים הדיגיטליים הסיטונאיים של בריטניה").
 
 <!-- enrich-start -->

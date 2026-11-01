@@ -113,7 +113,7 @@ Akọni náà ni ohun ìfilọ tó ń fipá mú wọn láti ṣe bẹ́ẹ̀.
 > - **Gilts ń lọ ní àkọ́kọ́ nítorí pé wọ́n jẹ́ ohun-ìní tó nira jù láti ṣe dáradára.** HQLA lórí DLT, tí a pinnu ní atomic lòdì sí owó tí a ṣe tókènì, ń fi ìkójọ kíkún hàn — ìfilọ́lẹ̀, ìṣòwò, repo, ààbò, owó báńkì àárín — lórí ìkójọ sterling tó jinlẹ̀ jù ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **Repo nínú ọjọ́ ni èrè kíákíá.** Repo atomic T+0 ti gilts tí a ṣe tókènì ń tú olú-owó tí ó wà ní ìdúró báyìí gẹ́gẹ́ bí ààbò omi-ọjọ́-kan-náà sílẹ̀. Ìfipamọ́ náà ń sọ̀kalẹ̀ tààrà sí ROE.
 > - **Ìṣètò ń rọ́pò àwọn nẹ́tíwọ̀kì tí ó dúró fúnra wọn.** Regulated Liability Network (RLN), Canton, àwọn DLT báńkì aládàáni, RTGS, àti owó báńkì oníṣòwò tí a ṣe tókènì — ọ̀kọ̀ọ̀kan ń gbé àwọn ìṣàn iṣẹ́ tí àwọn báńkì ti ń ṣiṣẹ́. Iṣẹ́ náà ni láti darí kọjá wọn, kìí ṣe láti yan ọ̀kan.
-> - **Policy-as-code nikan ni àwòkọ́ṣe ìbámu tó ń tẹ̀le.** Àwọn ìfọfindè, KYC, àwọn ààlà ipò, àwọn ẹnu-ọ̀nà ẹ̀ka-òfin — tí a kọ sínú ìpele ìpinnu ìsanwó, tí a ṣe ní atomic pẹ̀lú ìṣòwò, tí ó ń ṣẹ̀dá àkọsílẹ̀ àyẹ̀wò cryptographic dípò àkọsílẹ̀ kan tí olùṣàkóso ní láti gbà gbọ́ ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Ìtúnṣe lórí àkójọ Ìsanwó – May 2026")).
+> - **Policy-as-code nikan ni àwòkọ́ṣe ìbámu tó ń tẹ̀le.** Àwọn ìfọfindè, KYC, àwọn ààlà ipò, àwọn ẹnu-ọ̀nà ẹ̀ka-òfin — tí a kọ sínú ìpele ìpinnu ìsanwó, tí a ṣe ní atomic pẹ̀lú ìṣòwò, tí ó ń ṣẹ̀dá àkọsílẹ̀ àyẹ̀wò cryptographic dípò àkọsílẹ̀ kan tí olùṣàkóso ní láti gbà gbọ́ ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Ìtúnṣe lórí àkójọ Ìsanwó – May 2026")).
 > - **Ìkọ́lé ni odi.** Àwọn tó ń borí ń hun ìṣàn iṣẹ́, dátà, ọ̀nà ìsanwó, ìṣàkóso, àti ètò ọrọ̀-ajé ẹ̀ka sínú àwòkọ́ṣe iṣẹ́ kan. Àwọn tó pàdánù ń ṣiṣẹ́ pẹ̀lú àkójọ àwọn àdánwò tí kò darapọ̀ tí wọ́n sì pe é ní ìlànà.
 >
 ---
@@ -150,7 +150,7 @@ Bẹ̀rẹ̀ pẹ̀lú ìnira. Omi tí ó dí, àwọn fífọ́ ìpinnu, owó �
 
 ### Dátà Gẹ́gẹ́ Bí Ọkọ̀ Ìṣàkóso
 
-Àwọn ẹrù ISO 20022 tí a so mọ́ àwọn hash ìṣòwò lórí-ẹ̀wọ̀n ń sọ dátà ìpinnu ìsanwó di orísun òtítọ́ kan ṣoṣo. Láìsí ìso náà, ìṣiṣẹ́-àdàṣe àdéhùn alágbára di aláìlágbára, ìbámu sì ń padà sí àwọn spreadsheet. Pẹ̀lú rẹ̀, àwọn báńkì ń rí straight-through processing (STP), àwọn ìṣàkóso àkókò gangan, àti àyẹ̀wò tí àwọn oníbàátì yóò sanwó fún ní ṣíṣe gangan ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Ìtúnṣe lórí àkójọ Ìsanwó – May 2026")).
+Àwọn ẹrù ISO 20022 tí a so mọ́ àwọn hash ìṣòwò lórí-ẹ̀wọ̀n ń sọ dátà ìpinnu ìsanwó di orísun òtítọ́ kan ṣoṣo. Láìsí ìso náà, ìṣiṣẹ́-àdàṣe àdéhùn alágbára di aláìlágbára, ìbámu sì ń padà sí àwọn spreadsheet. Pẹ̀lú rẹ̀, àwọn báńkì ń rí straight-through processing (STP), àwọn ìṣàkóso àkókò gangan, àti àyẹ̀wò tí àwọn oníbàátì yóò sanwó fún ní ṣíṣe gangan ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Ìtúnṣe lórí àkójọ Ìsanwó – May 2026")).
 
 ### Ìṣètò Kọjá Àwọn Ọ̀nà Ìsanwó
 
@@ -231,7 +231,7 @@ Fèrèsé ìpinnu ìsanwó tí kò ṣe DvP ní ẹsẹ̀ kan ti ìṣòwò tó 
 - GOV.UK, (2026). [UK fintech tí a ṣe àtìlẹ́yìn fún láti gba ọ̀nà-ẹ̀rọ ìsanwó ọjọ́ iwájú ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech tí a ṣe àtìlẹ́yìn").
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
-- Association of Corporate Treasurers, (2026). [Ìtúnṣe lórí àkójọ Ìsanwó – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Ìtúnṣe àkójọ ìsanwó").
+- Association of Corporate Treasurers, (2026). [Ìtúnṣe lórí àkójọ Ìsanwó – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Ìtúnṣe àkójọ ìsanwó").
 - Global Government Finance, (2026). [Akọni àwọn ọjà ti olówó-ńlá dijítà UK ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Akọni àwọn ọjà ti olówó-ńlá dijítà UK").
 
 <!-- enrich-start -->

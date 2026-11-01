@@ -25,7 +25,7 @@ Champion వాటిని అలా చేయడానికి బలవం�
 > - **గిల్ట్‌లు ముందుగా వస్తాయి ఎందుకంటే అవి సరిగ్గా చేయడానికి అత్యంత కష్టమైన ఆస్తి.** DLT పై HQLA, టోకనైజ్డ్ నగదుకు వ్యతిరేకంగా అటామిక్‌గా సెటిల్ చేయబడి, పూర్తి స్టాక్‌ను — జారీ, ట్రేడింగ్, రెపో, కొలేటరల్, సెంట్రల్-బ్యాంక్ డబ్బు — లోతైన స్టెర్లింగ్ పూల్‌పై ధృవీకరిస్తుంది ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **ఇంట్రాడే రెపో తక్షణ బహుమతి.** టోకనైజ్డ్ గిల్ట్‌ల T+0 అటామిక్ రెపో నేడు అదే-రోజు లిక్విడిటీ బఫర్‌గా నిష్క్రియంగా ఉన్న మూలధనాన్ని విడుదల చేస్తుంది. ఆదా నేరుగా ROE కి చేరుతుంది.
 > - **ఆర్కెస్ట్రేషన్ స్వతంత్ర నెట్‌వర్క్‌లను భర్తీ చేస్తుంది.** Regulated Liability Network, Canton, ప్రైవేట్ బ్యాంకు DLT లు, RTGS, మరియు టోకనైజ్డ్ వాణిజ్య బ్యాంకు డబ్బు — ప్రతి ఒక్కటి బ్యాంకులు ఇప్పటికే నడిపే వర్క్‌ఫ్లోలను మోస్తాయి. పని వాటి మీదుగా రూట్ చేయడం, ఒకదాన్ని ఎంచుకోవడం కాదు.
-> - **పాలసీ-యాజ్-కోడ్ మాత్రమే వేగంతో నడిచే కంప్లయన్స్ మోడల్.** సాంక్షన్‌లు, KYC, పొజిషన్ పరిమితులు, అధికార పరిధి గేట్‌లు — సెటిల్‌మెంట్ పొరలో ఎన్‌కోడ్ చేయబడి, ట్రేడ్‌తో అటామిక్‌గా అమలు చేయబడి, రెగ్యులేటర్ నమ్మవలసిన లాగ్ కాకుండా క్రిప్టోగ్రాఫిక్ ఆడిట్ ట్రెయిల్‌ను ఉత్పత్తి చేస్తుంది ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **పాలసీ-యాజ్-కోడ్ మాత్రమే వేగంతో నడిచే కంప్లయన్స్ మోడల్.** సాంక్షన్‌లు, KYC, పొజిషన్ పరిమితులు, అధికార పరిధి గేట్‌లు — సెటిల్‌మెంట్ పొరలో ఎన్‌కోడ్ చేయబడి, ట్రేడ్‌తో అటామిక్‌గా అమలు చేయబడి, రెగ్యులేటర్ నమ్మవలసిన లాగ్ కాకుండా క్రిప్టోగ్రాఫిక్ ఆడిట్ ట్రెయిల్‌ను ఉత్పత్తి చేస్తుంది ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **ఆర్కిటెక్చర్ కోట.** విజేతలు వర్క్‌ఫ్లో, డేటా, రైల్, నియంత్రణ, మరియు యూనిట్ ఎకనామిక్స్‌ను ఒకే ఆపరేటింగ్ మోడల్‌గా అల్లుతారు. ఓడిపోయేవారు అసంబద్ధమైన పైలట్‌ల పోర్ట్‌ఫోలియోను నడిపి దాన్ని వ్యూహం అని పిలుస్తారు.
 >
 ---
@@ -62,7 +62,7 @@ DSS ఒక సజీవ పాలన. దాన్ని PoC కాకుండ�
 
 ### నియంత్రణ విమానంగా డేటా
 
-[ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) పేలోడ్‌లు ఆన్-చైన్ లావాదేవీ హాష్‌లకు కట్టుబడి ఉండటం సెటిల్‌మెంట్ డేటాను ఒకే సత్య మూలంగా మారుస్తాయి. ఆ బైండింగ్ లేకుండా, స్మార్ట్-కాంట్రాక్ట్ ఆటోమేషన్ పెళుసుగా ఉంటుంది మరియు రీకన్సిలియేషన్ స్ప్రెడ్‌షీట్‌లకు తిరిగి వెళుతుంది. దానితో, బ్యాంకులు స్ట్రెయిట్-త్రూ ప్రాసెసింగ్, రియల్-టైమ్ నియంత్రణలు, మరియు క్లయింట్‌లు నిజంగా చెల్లించే విశ్లేషణలను పొందుతారు ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+[ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) పేలోడ్‌లు ఆన్-చైన్ లావాదేవీ హాష్‌లకు కట్టుబడి ఉండటం సెటిల్‌మెంట్ డేటాను ఒకే సత్య మూలంగా మారుస్తాయి. ఆ బైండింగ్ లేకుండా, స్మార్ట్-కాంట్రాక్ట్ ఆటోమేషన్ పెళుసుగా ఉంటుంది మరియు రీకన్సిలియేషన్ స్ప్రెడ్‌షీట్‌లకు తిరిగి వెళుతుంది. దానితో, బ్యాంకులు స్ట్రెయిట్-త్రూ ప్రాసెసింగ్, రియల్-టైమ్ నియంత్రణలు, మరియు క్లయింట్‌లు నిజంగా చెల్లించే విశ్లేషణలను పొందుతారు ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### రైల్‌ల మీదుగా ఆర్కెస్ట్రేషన్
 
@@ -143,5 +143,5 @@ Regulated Liability Network అనేది బహుళ నియంత్ర�
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").

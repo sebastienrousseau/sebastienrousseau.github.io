@@ -108,7 +108,7 @@ Em 2026 a IA está se tornando o sistema operacional dos pagamentos, deslocando-
 > **Sumário Executivo / Pontos-Chave**
 >
 > - **A Inteligência de Pagamentos é agora estratégica.** O tema está ligado ao modelo operacional, à resiliência, ao valor para o cliente e à evidência regulatória, e não a um lançamento de produto restrito ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **O princípio de design é controle em tempo real.** Os bancos precisam de uma arquitetura que conecte política, produto, dados, escolha do rail, controles de risco e economia mensurável ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **O princípio de design é controle em tempo real.** Os bancos precisam de uma arquitetura que conecte política, produto, dados, escolha do rail, controles de risco e economia mensurável ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **O modelo de controle deve ser em tempo real.** Decisões de fraude, liquidez, conformidade, liquidação e risco operacional precisam rodar na velocidade do workflow, e não após o evento.
 > - **Qualidade dos dados torna-se vantagem comercial.** Dados estruturados, contexto transacional, trilhas de auditoria e sinais de identidade tornam-se o substrato da automação e dos produtos voltados ao cliente.
 > - **Fragmentação é o inimigo.** Um banco que constrói pilotos isolados em torno de cada rail, token, modelo ou requisito de conformidade cria risco operacional futuro.
@@ -120,7 +120,7 @@ Em 2026 a IA está se tornando o sistema operacional dos pagamentos, deslocando-
 
 A indústria já superou a fase de adoção. Não basta mais aderir a um rail, migrar uma mensagem, executar uma prova de conceito de IA ou anunciar um piloto de tokenização. Em 2026, a vantagem estratégica vem de orquestrar essas capacidades sobre um workflow real e, em seguida, provar que esse workflow é mais seguro, mais rápido, mais barato, mais resiliente ou mais útil para os clientes.
 
-É por isso que a inteligência de pagamentos é agora pauta de conselho. As mesmas pressões se repetem: dados de pagamento mais ricos, liquidação em tempo real, dinheiro tokenizado, decisões por IA, Open Banking, resiliência operacional, concentração em nuvem e evidência regulatória mais robusta. Tratadas separadamente, essas pressões geram dispersão de programas. Tratadas como uma única arquitetura, geram alavancagem operacional ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+É por isso que a inteligência de pagamentos é agora pauta de conselho. As mesmas pressões se repetem: dados de pagamento mais ricos, liquidação em tempo real, dinheiro tokenizado, decisões por IA, Open Banking, resiliência operacional, concentração em nuvem e evidência regulatória mais robusta. Tratadas separadamente, essas pressões geram dispersão de programas. Tratadas como uma única arquitetura, geram alavancagem operacional ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## A linha de base arquitetural de 2026
 
@@ -130,7 +130,7 @@ O banco deve partir da fricção: liquidez presa, atraso de liquidação, custo 
 
 ### 2. Dados como plano de controle
 
-Dados estruturados, governados e rastreáveis são a fundação. Sem dados utilizáveis, a automação fica frágil e a conformidade fica manual. Com dados utilizáveis, os bancos criam inteligência de roteamento, controles em tempo real e analítica voltada ao cliente ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Dados estruturados, governados e rastreáveis são a fundação. Sem dados utilizáveis, a automação fica frágil e a conformidade fica manual. Com dados utilizáveis, os bancos criam inteligência de roteamento, controles em tempo real e analítica voltada ao cliente ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orquestração entre rails e plataformas
 
@@ -197,7 +197,7 @@ O sucesso deve ser medido por economia unitária, evidências de resiliência, q
 ## Referências
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

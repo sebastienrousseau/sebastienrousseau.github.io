@@ -101,13 +101,13 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-Ìsanwó alábòójútó ti kọjá láti inú àpilẹ̀kọ ìfihàn sí ẹ̀rí ọjà alààyè. Mastercard àti Rabobank parí ìsanwó kan tí AI agent bẹ̀rẹ̀ ní Netherlands, níbi tí agent kan ti ṣàdéédéé ìdánwò kọfí lórí Priceless.com láìwọ̀ àwọn alaye káàdì tààrà àti pẹ̀lú àṣẹ ìfọwọ́sí oníbàárà tí ó hàn gbangba tí a kọ sílẹ̀ ṣáájú ìṣiṣẹ́ ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). Ọ̀rọ̀ ìṣẹ̀ètò fún àwọn báńkì báyìí ni ìgbékalẹ̀ àṣẹ ìfọwọ́sí: bí ilé-iṣẹ́ ìnáwó ṣe fi hàn pé ìsanwó ẹ̀rọ jẹ́ àfọwọ́sí ènìyàn tàbí ilé-iṣẹ́ tí ó wà lẹ́yìn rẹ̀ nítòótọ́.
+Ìsanwó alábòójútó ti kọjá láti inú àpilẹ̀kọ ìfihàn sí ẹ̀rí ọjà alààyè. Mastercard àti Rabobank parí ìsanwó kan tí AI agent bẹ̀rẹ̀ ní Netherlands, níbi tí agent kan ti ṣàdéédéé ìdánwò kọfí lórí Priceless.com láìwọ̀ àwọn alaye káàdì tààrà àti pẹ̀lú àṣẹ ìfọwọ́sí oníbàárà tí ó hàn gbangba tí a kọ sílẹ̀ ṣáájú ìṣiṣẹ́ ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). Ọ̀rọ̀ ìṣẹ̀ètò fún àwọn báńkì báyìí ni ìgbékalẹ̀ àṣẹ ìfọwọ́sí: bí ilé-iṣẹ́ ìnáwó ṣe fi hàn pé ìsanwó ẹ̀rọ jẹ́ àfọwọ́sí ènìyàn tàbí ilé-iṣẹ́ tí ó wà lẹ́yìn rẹ̀ nítòótọ́.
 
 ---
 
 > **Àkójọpọ̀ Olùṣàkóso / Àwọn Kókó Pàtàkì**
 >
-> - **Àwọn àmì ọjà àkọ́kọ́ ti wà láàyè.** Mastercard àti Rabobank parí ìṣòwò AI agent ní Netherlands nípa lílo Mastercard Agent Pay, pẹ̀lú agent náà tí a dí lọ́wọ́ láti wọlé sí dátà káàdì tààrà ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Àwọn àmì ọjà àkọ́kọ́ ti wà láàyè.** Mastercard àti Rabobank parí ìṣòwò AI agent ní Netherlands nípa lílo Mastercard Agent Pay, pẹ̀lú agent náà tí a dí lọ́wọ́ láti wọlé sí dátà káàdì tààrà ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Àwọn protocol ìsanwó alábòójútó ń farahàn ṣáájú kí òfin tó dúró.** Fenwick mọ̀ AP2, A2A, x402, MCP, àti MPP gẹ́gẹ́ bí ìsapá protocol tí ń kojú ìbáṣepọ̀ agent àti àṣẹ ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **Àṣẹ ìfọwọ́sí ni ìṣòro báńkì pàtàkì.** Àwọn àṣẹ cryptographic onírúurú AP2 ń gbìyànjú láti gba ìtọ́ni olùṣàmúlò àti ìfọwọ́sí ìkẹyìn gẹ́gẹ́ bí ẹ̀rí ète tí a lè ṣàyẹ̀wò ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **Ojúṣe kò tíì ní ìdáhùn.** Òfin ìsanwó tí ó wà ni a ṣe yí àwọn ìṣòwò tí ènìyàn pinnu kà, kì í ṣe àwọn ètò AI aládàáṣe tí ń ṣiṣẹ́ lábẹ́ àṣẹ tí a fi lélẹ̀ ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
@@ -198,7 +198,7 @@ Báńkì ilé-iṣẹ́ nílò àwòṣe tí ó lágbára nítorí àwọn agent
 ## Àwọn Ìtọ́kasí
 
 - Fenwick, (2026). [Is 2026 the Year of Agentic Payments? ⧉](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 

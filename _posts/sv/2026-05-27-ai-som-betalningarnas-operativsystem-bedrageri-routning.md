@@ -108,7 +108,7 @@ AI blir betalningarnas operativsystem 2026 och går från analys till bedrägeri
 > **Sammanfattning för ledningen / huvudpunkter**
 >
 > - **Betalningsintelligens är nu strategisk.** Frågan är knuten till operativ modell, resiliens, kundvärde och tillsynsbevis snarare än en smal produktlansering ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **Designprincipen är realtidskontroll.** Bankerna behöver en arkitektur som kopplar samman policy, produkt, data, rälsval, riskkontroller och mätbar ekonomi ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Designprincipen är realtidskontroll.** Bankerna behöver en arkitektur som kopplar samman policy, produkt, data, rälsval, riskkontroller och mätbar ekonomi ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Kontrollmodellen måste vara realtid.** Beslut om bedrägeri, likviditet, efterlevnad, avveckling och operativ risk måste köras i arbetsflödets hastighet, inte i efterhand.
 > - **Datakvalitet blir kommersiell fördel.** Strukturerad data, transaktionskontext, granskningsloggar och identitetssignaler blir underlag för automatisering och kundvända produkter.
 > - **Fragmentering är fienden.** En bank som bygger isolerade piloter kring varje räls, token, modell eller efterlevnadskrav skapar framtida operativ risk.
@@ -120,7 +120,7 @@ AI blir betalningarnas operativsystem 2026 och går från analys till bedrägeri
 
 Branschen har passerat adoptionsfasen. Det räcker inte längre att ansluta sig till en räls, migrera ett meddelande, köra ett AI-koncepttest eller annonsera en tokeniseringspilot. 2026 kommer den strategiska fördelen från att orkestrera dessa förmågor mot ett verkligt arbetsflöde och sedan bevisa att arbetsflödet är säkrare, snabbare, billigare, mer resilient eller mer användbart för kunderna.
 
-Det är därför betalningsintelligens nu är en styrelsefråga. Samma tryck återkommer ständigt: rikare betalningsdata, realtidsavveckling, tokeniserade pengar, AI-beslutsfattande, Open Banking, operativ resiliens, molnkoncentration och starkare tillsynsbevis. Behandlade separat skapar dessa tryck programutsvällning. Behandlade som en arkitektur skapar de operativ hävstång ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Det är därför betalningsintelligens nu är en styrelsefråga. Samma tryck återkommer ständigt: rikare betalningsdata, realtidsavveckling, tokeniserade pengar, AI-beslutsfattande, Open Banking, operativ resiliens, molnkoncentration och starkare tillsynsbevis. Behandlade separat skapar dessa tryck programutsvällning. Behandlade som en arkitektur skapar de operativ hävstång ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Arkitekturbaslinjen 2026
 
@@ -130,7 +130,7 @@ Banken bör börja med friktionen: instängd likviditet, avvecklingsfördröjnin
 
 ### 2. Data som kontrollplan
 
-Strukturerad, styrd och spårbar data är grunden. Utan användbar data blir automatisering skör och efterlevnad manuell. Med användbar data kan bankerna skapa routningsintelligens, realtidskontroller och kundvänd analys ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Strukturerad, styrd och spårbar data är grunden. Utan användbar data blir automatisering skör och efterlevnad manuell. Med användbar data kan bankerna skapa routningsintelligens, realtidskontroller och kundvänd analys ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orkestrering över rälsar och plattformar
 
@@ -197,7 +197,7 @@ Framgång bör mätas genom enhetsekonomi, resiliensbevis, datakvalitet, kundado
 ## Referenser
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

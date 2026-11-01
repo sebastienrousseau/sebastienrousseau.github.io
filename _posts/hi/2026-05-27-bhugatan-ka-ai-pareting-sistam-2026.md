@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 > **कार्यकारी सारांश / मुख्य निष्कर्ष**
 >
 > - **भुगतान इंटेलिजेंस अब रणनीतिक है।** यह विषय किसी संकीर्ण उत्पाद लॉन्च के बजाय ऑपरेटिंग मॉडल, लचीलापन, ग्राहक मूल्य और विनियामक साक्ष्य से जुड़ा है ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"))।
-> - **डिज़ाइन सिद्धांत रीयल-टाइम नियंत्रण है।** बैंकों को ऐसी संरचना चाहिए जो नीति, उत्पाद, डेटा, रेल विकल्प, जोखिम नियंत्रण और मापनीय अर्थशास्त्र को जोड़े ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
+> - **डिज़ाइन सिद्धांत रीयल-टाइम नियंत्रण है।** बैंकों को ऐसी संरचना चाहिए जो नीति, उत्पाद, डेटा, रेल विकल्प, जोखिम नियंत्रण और मापनीय अर्थशास्त्र को जोड़े ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
 > - **नियंत्रण मॉडल रीयल-टाइम होना चाहिए।** धोखाधड़ी, तरलता, अनुपालन, निपटान और परिचालन-जोखिम निर्णय घटना के बाद नहीं, वर्कफ़्लो की गति पर चलने चाहिए।
 > - **डेटा गुणवत्ता वाणिज्यिक लाभ बन जाती है।** संरचित डेटा, लेनदेन संदर्भ, ऑडिट लॉग और पहचान संकेत स्वचालन तथा ग्राहक-सम्मुख उत्पादों का आधार बन जाते हैं।
 > - **विखंडन शत्रु है।** जो बैंक प्रत्येक रेल, टोकन, मॉडल या अनुपालन आवश्यकता के इर्द-गिर्द अलग-थलग पायलट बनाता है, वह भविष्य का परिचालन जोखिम गढ़ता है।
@@ -120,7 +120,7 @@ site_software: "Static Site Generator, Rust"
 
 उद्योग अब अंगीकरण चरण से आगे निकल चुका है। किसी रेल में सम्मिलित होना, संदेश का प्रवास, AI प्रूफ़ ऑफ़ कॉन्सेप्ट चलाना या टोकनीकरण पायलट की घोषणा करना अब पर्याप्त नहीं। 2026 में रणनीतिक बढ़त उन क्षमताओं को किसी वास्तविक वर्कफ़्लो के विरुद्ध ऑर्केस्ट्रेट करने और फिर यह सिद्ध करने से आती है कि वह वर्कफ़्लो अधिक सुरक्षित, तेज़, सस्ता, अधिक लचीला या ग्राहकों के लिए अधिक उपयोगी है।
 
-इसीलिए भुगतान इंटेलिजेंस अब निदेशक मंडल स्तर का विषय है। वही दबाव बार-बार उभरते हैं: समृद्ध भुगतान डेटा, रीयल-टाइम निपटान, टोकनीकृत मुद्रा, AI निर्णयन, ओपन बैंकिंग, परिचालन लचीलापन, क्लाउड संकेंद्रण और सशक्त विनियामक साक्ष्य। पृथक-पृथक देखने पर ये दबाव कार्यक्रम प्रसार उत्पन्न करते हैं। एक ही संरचना के रूप में देखने पर वे परिचालन लीवरेज देते हैं ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
+इसीलिए भुगतान इंटेलिजेंस अब निदेशक मंडल स्तर का विषय है। वही दबाव बार-बार उभरते हैं: समृद्ध भुगतान डेटा, रीयल-टाइम निपटान, टोकनीकृत मुद्रा, AI निर्णयन, ओपन बैंकिंग, परिचालन लचीलापन, क्लाउड संकेंद्रण और सशक्त विनियामक साक्ष्य। पृथक-पृथक देखने पर ये दबाव कार्यक्रम प्रसार उत्पन्न करते हैं। एक ही संरचना के रूप में देखने पर वे परिचालन लीवरेज देते हैं ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
 
 ## 2026 संरचना का आधार
 
@@ -130,7 +130,7 @@ site_software: "Static Site Generator, Rust"
 
 ### 2. डेटा नियंत्रण तल के रूप में
 
-संरचित, शासित और पता-योग्य डेटा ही नींव है। उपयोग-योग्य डेटा के बिना स्वचालन भंगुर हो जाता है और अनुपालन हस्तचालित हो जाता है। उपयोग-योग्य डेटा के साथ बैंक रूटिंग इंटेलिजेंस, रीयल-टाइम नियंत्रण और ग्राहक-सम्मुख विश्लेषण रच सकते हैं ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
+संरचित, शासित और पता-योग्य डेटा ही नींव है। उपयोग-योग्य डेटा के बिना स्वचालन भंगुर हो जाता है और अनुपालन हस्तचालित हो जाता है। उपयोग-योग्य डेटा के साथ बैंक रूटिंग इंटेलिजेंस, रीयल-टाइम नियंत्रण और ग्राहक-सम्मुख विश्लेषण रच सकते हैं ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
 
 ### 3. रेल और प्लेटफ़ॉर्म के पार ऑर्केस्ट्रेशन
 
@@ -197,7 +197,7 @@ site_software: "Static Site Generator, Rust"
 ## संदर्भ
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

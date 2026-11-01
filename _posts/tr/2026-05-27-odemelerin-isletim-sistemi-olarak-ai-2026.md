@@ -108,7 +108,7 @@ AI 2026'da ödemelerin işletim sistemi hâline geliyor; analitikten dolandırı
 > **Yönetici Özeti / Temel Çıkarımlar**
 >
 > - **Ödeme Zekâsı artık stratejiktir.** Konu, dar bir ürün lansmanından çok işletim modeli, dayanıklılık, müşteri değeri ve düzenleyici kanıt ile bağlantılıdır ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **Tasarım ilkesi gerçek zamanlı kontroldür.** Bankaların politika, ürün, veri, ray seçimi, risk kontrolleri ve ölçülebilir ekonomiyi birbirine bağlayan bir mimariye ihtiyacı vardır ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Tasarım ilkesi gerçek zamanlı kontroldür.** Bankaların politika, ürün, veri, ray seçimi, risk kontrolleri ve ölçülebilir ekonomiyi birbirine bağlayan bir mimariye ihtiyacı vardır ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Kontrol modeli gerçek zamanlı olmalıdır.** Dolandırıcılık, likidite, uyum, mutabakat ve operasyonel risk kararları olaydan sonra değil, iş akışı hızında çalışmalıdır.
 > - **Veri kalitesi ticari avantaja dönüşür.** Yapılandırılmış veri, işlem bağlamı, denetim kayıtları ve kimlik sinyalleri; otomasyon ile müşteriye dönük ürünlerin zemini hâline gelir.
 > - **Parçalanma düşmandır.** Her ray, jeton, model veya uyum gereksinimi etrafında izole pilotlar inşa eden banka, gelecekteki operasyonel riski yaratır.
@@ -120,7 +120,7 @@ AI 2026'da ödemelerin işletim sistemi hâline geliyor; analitikten dolandırı
 
 Sektör benimseme aşamasını geride bıraktı. Bir raya katılmak, bir mesajı geçirmek, bir AI kavram kanıtı çalıştırmak veya bir tokenizasyon pilotu duyurmak artık yeterli değildir. 2026'da stratejik üstünlük, bu yetenekleri gerçek bir iş akışına karşı orkestre etmekten ve ardından iş akışının daha güvenli, daha hızlı, daha ucuz, daha dayanıklı veya müşteriler için daha yararlı olduğunu kanıtlamaktan gelir.
 
-Bu nedenle ödeme zekâsı artık yönetim kurulu düzeyinde bir konudur. Aynı baskılar tekrarlanıyor: daha zengin ödeme verileri, gerçek zamanlı mutabakat, tokenleştirilmiş para, AI ile karar verme, Açık Bankacılık, operasyonel dayanıklılık, bulut yoğunlaşması ve daha güçlü düzenleyici kanıt. Ayrı ele alındığında bu baskılar program savrukluğu yaratır. Tek bir mimari olarak ele alındığında ise operasyonel kaldıraç yaratır ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Bu nedenle ödeme zekâsı artık yönetim kurulu düzeyinde bir konudur. Aynı baskılar tekrarlanıyor: daha zengin ödeme verileri, gerçek zamanlı mutabakat, tokenleştirilmiş para, AI ile karar verme, Açık Bankacılık, operasyonel dayanıklılık, bulut yoğunlaşması ve daha güçlü düzenleyici kanıt. Ayrı ele alındığında bu baskılar program savrukluğu yaratır. Tek bir mimari olarak ele alındığında ise operasyonel kaldıraç yaratır ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## 2026 Mimari Temeli
 
@@ -130,7 +130,7 @@ Banka sürtünmeyle başlamalıdır: hapsolmuş likidite, mutabakat gecikmesi, m
 
 ### 2. Kontrol Düzlemi Olarak Veri
 
-Yapılandırılmış, yönetilen ve izlenebilir veri temeldir. Kullanılabilir veri olmadan otomasyon kırılgan, uyum ise manuel hâle gelir. Kullanılabilir veri ile bankalar yönlendirme zekâsı, gerçek zamanlı kontroller ve müşteriye dönük analitikler yaratabilir ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Yapılandırılmış, yönetilen ve izlenebilir veri temeldir. Kullanılabilir veri olmadan otomasyon kırılgan, uyum ise manuel hâle gelir. Kullanılabilir veri ile bankalar yönlendirme zekâsı, gerçek zamanlı kontroller ve müşteriye dönük analitikler yaratabilir ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Raylar ve Platformlar Arası Orkestrasyon
 
@@ -197,7 +197,7 @@ Başarı birim ekonomisi, dayanıklılık kanıtı, veri kalitesi, müşteri ben
 ## Kaynaklar
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

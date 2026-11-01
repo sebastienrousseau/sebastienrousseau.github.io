@@ -108,7 +108,7 @@ UK Payments Forward Plan a balíček politik z dubna 2026 ukazují na jednotný 
 > **Manažerské shrnutí / klíčová zjištění**
 >
 > - **Platební politika je nyní strategická.** Téma je vázáno na provozní model, resilienci, hodnotu pro klienta a regulační důkazy, nikoli na úzké uvedení produktu ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **Návrhový princip je jeden regulační perimetr.** Banky potřebují architekturu, která propojí politiku, produkt, data, volbu railu, rizikové kontroly a měřitelnou ekonomiku ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Návrhový princip je jeden regulační perimetr.** Banky potřebují architekturu, která propojí politiku, produkt, data, volbu railu, rizikové kontroly a měřitelnou ekonomiku ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Kontrolní model musí být real-time.** Rozhodnutí o fraudu, likviditě, compliance, vypořádání a provozním riziku musí běžet rychlostí workflow, nikoli až po události.
 > - **Kvalita dat se stává obchodní výhodou.** Strukturovaná data, transakční kontext, auditní logy a identitní signály se stávají substrátem pro automatizaci a klientské produkty.
 > - **Fragmentace je nepřítel.** Banka, která staví izolované piloty kolem každého railu, tokenu, modelu nebo regulační povinnosti, generuje budoucí provozní riziko.
@@ -120,7 +120,7 @@ UK Payments Forward Plan a balíček politik z dubna 2026 ukazují na jednotný 
 
 Odvětví překonalo fázi adopce. Už nestačí připojit se k railu, migrovat zprávu, prokázat AI proof of concept nebo ohlásit pilot tokenizace. V roce 2026 přichází strategická výhoda z orchestrace těchto schopností proti reálnému workflow a následně z důkazů, že workflow je bezpečnější, rychlejší, levnější, odolnější nebo užitečnější pro klienty.
 
-Proto je platební politika nyní tématem představenstva. Stejné tlaky se opakují: bohatší platební data, real-time vypořádání, tokenizované peníze, AI rozhodování, open banking, provozní resilience, koncentrace cloudu a silnější regulační důkazy. Pokud se řeší odděleně, generují tyto tlaky rozsáhlost programů. Pokud se řeší jako jedna architektura, vytvářejí provozní páku ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Proto je platební politika nyní tématem představenstva. Stejné tlaky se opakují: bohatší platební data, real-time vypořádání, tokenizované peníze, AI rozhodování, open banking, provozní resilience, koncentrace cloudu a silnější regulační důkazy. Pokud se řeší odděleně, generují tyto tlaky rozsáhlost programů. Pokud se řeší jako jedna architektura, vytvářejí provozní páku ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Architektonický základ pro rok 2026
 
@@ -130,7 +130,7 @@ Banka by měla začít u tření: zachycená likvidita, prodleva vypořádání,
 
 ### 2. Data jako kontrolní rovina
 
-Strukturovaná, řízená a sledovatelná data tvoří základ. Bez použitelných dat se automatizace stává křehkou a compliance manuální. S použitelnými daty mohou banky vytvářet inteligenci routování, real-time kontroly a klientskou analytiku ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Strukturovaná, řízená a sledovatelná data tvoří základ. Bez použitelných dat se automatizace stává křehkou a compliance manuální. S použitelnými daty mohou banky vytvářet inteligenci routování, real-time kontroly a klientskou analytiku ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orchestrace napříč raily a platformami
 
@@ -197,7 +197,7 @@ Banka by měla začít s workflow, kde existuje měřitelná hodnota — rychlej
 ## Reference
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

@@ -22,7 +22,7 @@ Az MI 2026-ban a fizetések operációs rendszerévé válik, az analitikától 
 > **Vezetői összefoglaló / Legfontosabb tanulságok**
 >
 > - **A fizetési intelligencia mostantól stratégiai.** A téma a működési modellhez, az ellenállóképességhez, az ügyfélértékhez és a szabályozói bizonyítékhoz kötődik, nem pedig egy szűk termékbevezetéshez ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Fizetési kilátások: öt trend, amely 2026-ban hajtja a fizetéseket")).
-> - **A tervezési alapelv a valós idejű kontroll.** A bankoknak olyan architektúrára van szükségük, amely összekapcsolja a szabályzatot, a terméket, az adatokat, a fizetési sín kiválasztását, a kockázati kontrollokat és a mérhető gazdaságosságot ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Frissítés a fizetési környezetről, 2026. május")).
+> - **A tervezési alapelv a valós idejű kontroll.** A bankoknak olyan architektúrára van szükségük, amely összekapcsolja a szabályzatot, a terméket, az adatokat, a fizetési sín kiválasztását, a kockázati kontrollokat és a mérhető gazdaságosságot ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Frissítés a fizetési környezetről, 2026. május")).
 > - **A kontrollmodellnek valós idejűnek kell lennie.** A csalással, likviditással, megfeleléssel, kiegyenlítéssel és működési kockázattal kapcsolatos döntéseknek a munkafolyamat sebességén kell futniuk, nem az esemény után.
 > - **Az adatminőség kereskedelmi előnnyé válik.** A strukturált adatok, a tranzakciós kontextus, az auditnaplók és az identitásjelek az automatizálás és az ügyfélorientált termékek alapjává válnak.
 > - **A széttöredezettség az ellenség.** Az a bank, amely minden egyes fizetési sín, token, modell vagy megfelelési követelmény köré elszigetelt kísérleti projekteket épít, jövőbeli működési kockázatot teremt.
@@ -34,7 +34,7 @@ Az MI 2026-ban a fizetések operációs rendszerévé válik, az analitikától 
 
 Az iparág túllépett az elfogadási fázison. Már nem elég csatlakozni egy fizetési sínhez, migrálni egy üzenetet, lefuttatni egy MI-elvi bizonyítást, vagy bejelenteni egy tokenizációs kísérletet. 2026-ban a stratégiai előny abból származik, hogy ezeket a képességeket egy valós munkafolyamathoz igazítva orkesztrálják, majd bizonyítják, hogy a munkafolyamat biztonságosabb, gyorsabb, olcsóbb, ellenállóbb vagy hasznosabb az ügyfelek számára.
 
-Ezért a fizetési intelligencia mostantól igazgatótanácsi szintű téma. Ugyanazok a nyomások térnek vissza: gazdagabb fizetési adatok, valós idejű kiegyenlítés, tokenizált pénz, MI-alapú döntéshozatal, Open Banking, működési ellenállóképesség, felhőkoncentráció és erősebb szabályozói bizonyítékok. Külön kezelve ezek a nyomások programburjánzást okoznak. Egyetlen architektúraként kezelve működési tőkeáttételt teremtenek ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Fizetési kilátások: öt trend, amely 2026-ban hajtja a fizetéseket"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Frissítés a fizetési környezetről, 2026. május")).
+Ezért a fizetési intelligencia mostantól igazgatótanácsi szintű téma. Ugyanazok a nyomások térnek vissza: gazdagabb fizetési adatok, valós idejű kiegyenlítés, tokenizált pénz, MI-alapú döntéshozatal, Open Banking, működési ellenállóképesség, felhőkoncentráció és erősebb szabályozói bizonyítékok. Külön kezelve ezek a nyomások programburjánzást okoznak. Egyetlen architektúraként kezelve működési tőkeáttételt teremtenek ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Fizetési kilátások: öt trend, amely 2026-ban hajtja a fizetéseket"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Frissítés a fizetési környezetről, 2026. május")).
 
 ## A 2026-os architektúra alapvonala
 
@@ -44,7 +44,7 @@ A banknak a súrlódással kell kezdenie: bennragadt likviditás, kiegyenlítés
 
 ### 2. Az adat mint kontrollsík
 
-A strukturált, szabályozott és nyomon követhető adat az alap. Használható adatok nélkül az automatizálás törékennyé válik, a megfelelés pedig kézivé. Használható adatokkal a bankok útválasztási intelligenciát, valós idejű kontrollokat és ügyfélorientált analitikát hozhatnak létre ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Frissítés a fizetési környezetről, 2026. május")).
+A strukturált, szabályozott és nyomon követhető adat az alap. Használható adatok nélkül az automatizálás törékennyé válik, a megfelelés pedig kézivé. Használható adatokkal a bankok útválasztási intelligenciát, valós idejű kontrollokat és ügyfélorientált analitikát hozhatnak létre ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Frissítés a fizetési környezetről, 2026. május")).
 
 ### 3. Orkesztráció a fizetési sínek és platformok között
 
@@ -111,5 +111,5 @@ A sikert az egységgazdaságosság, az ellenállóképesség bizonyítéka, az a
 ## Hivatkozások
 
 - J.P. Morgan, (2026). [Fizetési kilátások: öt trend, amely 2026-ban hajtja a fizetéseket ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Fizetési kilátások").
-- Association of Corporate Treasurers, (2026). [Frissítés a fizetési környezetről, 2026. május ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Fizetési környezet frissítése").
+- Association of Corporate Treasurers, (2026). [Frissítés a fizetési környezetről, 2026. május ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Fizetési környezet frissítése").
 - Standard Chartered, (2026). [Hat erő, amely 2026-ban formálja a treasuryt ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Hat erő, amely 2026-ban formálja a treasuryt").

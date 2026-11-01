@@ -113,7 +113,7 @@ De Champion is de hefboom die hen daartoe dwingt.
 > - **Gilts gaan eerst omdat ze het lastigste actief zijn om goed te krijgen.** HQLA op DLT, atomair afgewikkeld tegen getokeniseerd contant geld, valideert de volledige stack — uitgifte, handel, repo, onderpand, centralebankgeld — op de diepste sterling-pool ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **Intraday repo is de directe winst.** T+0 atomaire repo van getokeniseerde gilts maakt kapitaal vrij dat vandaag stil ligt als same-day liquiditeitsbuffer. De besparingen vallen rechtstreeks door naar ROE.
 > - **Orkestratie vervangt losstaande netwerken.** Het Regulated Liability Network, Canton, private bank-DLT's, RTGS en getokeniseerd commercieel bankgeld dragen elk workflows die banken al draaien. De taak is om over alles te routeren, niet om er één te kiezen.
-> - **Policy-as-code is het enige compliance-model dat de snelheid bijhoudt.** Sancties, KYC, positielimieten, jurisdictionele poorten — gecodeerd in de afwikkelingslaag, atomair uitgevoerd met de transactie, met als output een cryptografisch auditspoor in plaats van een log dat een toezichthouder maar moet vertrouwen ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update over het betalingslandschap – mei 2026")).
+> - **Policy-as-code is het enige compliance-model dat de snelheid bijhoudt.** Sancties, KYC, positielimieten, jurisdictionele poorten — gecodeerd in de afwikkelingslaag, atomair uitgevoerd met de transactie, met als output een cryptografisch auditspoor in plaats van een log dat een toezichthouder maar moet vertrouwen ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update over het betalingslandschap – mei 2026")).
 > - **Architectuur is de gracht.** De winnaars vlechten workflow, data, betalingsrail, controle en unit-economie tot één operating model. De verliezers draaien een portefeuille losse pilots en noemen dat een strategie.
 >
 ---
@@ -150,7 +150,7 @@ Begin bij de wrijving. Vastzittende liquiditeit, settlement breaks, reconciliati
 
 ### Data als control plane
 
-ISO 20022-payloads gekoppeld aan on-chain transactiehashes maken van afwikkelingsdata één enkele bron van waarheid. Zonder die koppeling is smart-contract-automatisering broos en vervalt reconciliatie terug naar spreadsheets. Mét die koppeling krijgen banken straight-through processing, realtime controles en analyses waar klanten daadwerkelijk voor willen betalen ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update over het betalingslandschap – mei 2026")).
+ISO 20022-payloads gekoppeld aan on-chain transactiehashes maken van afwikkelingsdata één enkele bron van waarheid. Zonder die koppeling is smart-contract-automatisering broos en vervalt reconciliatie terug naar spreadsheets. Mét die koppeling krijgen banken straight-through processing, realtime controles en analyses waar klanten daadwerkelijk voor willen betalen ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update over het betalingslandschap – mei 2026")).
 
 ### Orkestratie over betalingsrails
 
@@ -231,7 +231,7 @@ Basispunten bespaard op onderpandfinanciering. Reductie van intraday-liquiditeit
 - GOV.UK, (2026). [VK-fintech gesteund om toekomstige betaaltechnologie te omarmen ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "VK-fintech gesteund").
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
-- Association of Corporate Treasurers, (2026). [Update over het betalingslandschap – mei 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update betalingen").
+- Association of Corporate Treasurers, (2026). [Update over het betalingslandschap – mei 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update betalingen").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

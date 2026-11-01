@@ -113,7 +113,7 @@ site_software: "Static Site Generator, Rust"
 > - **ギルトが最初に来るのは、最も正しく設計するのが難しい資産だからである。**DLT 上の HQLA をトークン化現金とアトミックに決済することで、発行、トレーディング、レポ、担保、中央銀行マネーまでスタック全体を、スターリングで最も深いプール上で検証する([イングランド銀行](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox(デジタル証券サンドボックス)"))。
 > - **日中レポが直近の果実である。**トークン化ギルトの T+0 アトミック・レポは、本日同日流動性バッファとして遊休化している資本を解放する。その節約は直接 ROE に落ちる。
 > - **オーケストレーションが単独ネットワークを置き換える。**Regulated Liability Network、Canton、銀行のプライベート DLT、RTGS、トークン化された商業銀行マネー — それぞれが銀行が現に運用しているワークフローを担っている。仕事はそれらを横断してルーティングすることであって、一つを選ぶことではない。
-> - **ポリシー・アズ・コードのみがこの速度に追従できる唯一のコンプライアンス・モデルである。**制裁、KYC、ポジション上限、管轄ゲート — それらが決済層にエンコードされ、取引と原子的に同時実行され、規制当局が信頼せざるを得ないログではなく暗号学的監査証跡を生成する([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "決済ランドスケープ最新動向 — 2026 年 5 月"))。
+> - **ポリシー・アズ・コードのみがこの速度に追従できる唯一のコンプライアンス・モデルである。**制裁、KYC、ポジション上限、管轄ゲート — それらが決済層にエンコードされ、取引と原子的に同時実行され、規制当局が信頼せざるを得ないログではなく暗号学的監査証跡を生成する([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "決済ランドスケープ最新動向 — 2026 年 5 月"))。
 > - **アーキテクチャが堀である。**勝者はワークフロー、データ、決済レール、統制、ユニット・エコノミクスを単一のオペレーティング・モデルに織り込む。敗者は分断されたパイロットのポートフォリオを抱え、それを戦略と呼ぶ。
 >
 ---
@@ -150,7 +150,7 @@ DSS は稼働中のレジームである。PoC ではなくプラットフォー
 
 ### 統制プレーンとしてのデータ
 
-ISO 20022 ペイロードをオンチェーンのトランザクション・ハッシュに結びつけることで、決済データは単一の真実の源となる。その結合がなければ、スマートコントラクト自動化は脆く、照合はスプレッドシートに戻る。結合があれば、銀行はストレート・スルー・プロセシング(STP)、リアルタイム統制、そして顧客が実際に対価を払う分析を手にする([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "決済ランドスケープ最新動向 — 2026 年 5 月"))。
+ISO 20022 ペイロードをオンチェーンのトランザクション・ハッシュに結びつけることで、決済データは単一の真実の源となる。その結合がなければ、スマートコントラクト自動化は脆く、照合はスプレッドシートに戻る。結合があれば、銀行はストレート・スルー・プロセシング(STP)、リアルタイム統制、そして顧客が実際に対価を払う分析を手にする([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "決済ランドスケープ最新動向 — 2026 年 5 月"))。
 
 ### 決済レールを横断するオーケストレーション
 
@@ -231,7 +231,7 @@ Regulated Liability Network は、複数の規制対象機関が発行するト�
 - GOV.UK, (2026). [英国フィンテック、次世代決済技術の採用を後押し ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - イングランド銀行, (2026). [Digital Securities Sandbox(デジタル証券サンドボックス)⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox(FCA デジタル証券サンドボックス)⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
-- Association of Corporate Treasurers, (2026). [決済ランドスケープ最新動向 — 2026 年 5 月 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [決済ランドスケープ最新動向 — 2026 年 5 月 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [英国ホールセール・デジタル市場チャンピオン ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

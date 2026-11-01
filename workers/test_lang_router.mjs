@@ -32,6 +32,7 @@ import handler, {
   SECURITY_HEADERS,
   API_SECURITY_HEADERS,
   trySlugRedirects,
+  tryDoubledLocaleRedirect,
 } from './lang-router.js';
 
 // ---------------------------------------------------------------------------
@@ -110,12 +111,32 @@ test('PDF /api/pdf/<slug>.pdf short-circuits locale routing', async () => {
     return new Response('', { status: 502 });
   };
   try {
-    const res = await callHandler(new Request('https://sebastienrousseau.com/api/pdf/2026-06-08-banking-resilience-index.pdf'));
+    const res = await handler.fetch(
+      new Request('https://sebastienrousseau.com/api/pdf/2026-06-08-banking-resilience-index.pdf'),
+      { PDF_RENDER_BASE: 'https://render.example', PDF_ORIGIN_TOKEN: 'edge-secret' },
+      {},
+    );
     assert.equal(res.status, 200);
     assert.equal(res.headers.get('Content-Type'), 'application/pdf');
+    assert.equal(res.headers.get('X-Robots-Tag'), 'noindex, nofollow');
   } finally {
     globalThis.fetch = realF;
   }
+});
+
+test('PDF route with no PDF_RENDER_BASE answers 503 at once', async () => {
+  const res = await callHandler(new Request('https://sebastienrousseau.com/api/pdf/2026-06-08-banking-resilience-index.pdf'));
+  assert.equal(res.status, 503);
+  assert.equal(res.headers.get('X-Robots-Tag'), 'noindex, nofollow');
+});
+
+test('PDF route tolerates a missing env object', async () => {
+  const res = await handler.fetch(
+    new Request('https://sebastienrousseau.com/api/pdf/2026-06-08-banking-resilience-index.pdf'),
+    undefined,
+    {},
+  );
+  assert.equal(res.status, 503);
 });
 
 test('Clock /api/clock/hero-<theme>.svg short-circuits locale routing', async () => {
@@ -871,4 +892,39 @@ test('handler: /actor delegates to ActivityPub handler, skips locale + CSP path'
   assert.equal(res.status, 503);
   assert.match(res.headers.get('content-type'), /text\/plain/);
   assert.equal(passThroughLog.length, 0, 'AP routes must not pass through to origin');
+});
+
+// ---------------------------------------------------------------------------
+// Doubled locale prefix (/<lang>/<lang>/...) → 301 to the second locale.
+// ---------------------------------------------------------------------------
+
+test('tryDoubledLocaleRedirect: /nl/th/<slug>/ → /th/<slug>/', () => {
+  const res = tryDoubledLocaleRedirect(new URL('https://x.example/nl/th/2026-06-07-slug/'));
+  assert.equal(res.status, 301);
+  assert.equal(new URL(res.headers.get('location')).pathname, '/th/2026-06-07-slug/');
+});
+
+test('tryDoubledLocaleRedirect: adds the missing trailing slash in one hop', () => {
+  const res = tryDoubledLocaleRedirect(new URL('https://x.example/zh-hant/zh-hant/2026-05-27-slug'));
+  assert.equal(new URL(res.headers.get('location')).pathname, '/zh-hant/2026-05-27-slug/');
+});
+
+test('tryDoubledLocaleRedirect: keeps file paths and bare doubled roots', () => {
+  const file = tryDoubledLocaleRedirect(new URL('https://x.example/fr/de/rss.xml'));
+  assert.equal(new URL(file.headers.get('location')).pathname, '/de/rss.xml');
+  const root = tryDoubledLocaleRedirect(new URL('https://x.example/fr/de'));
+  assert.equal(new URL(root.headers.get('location')).pathname, '/de/');
+});
+
+test('tryDoubledLocaleRedirect: leaves single-locale and non-locale paths alone', () => {
+  assert.equal(tryDoubledLocaleRedirect(new URL('https://x.example/nl/2026-06-07-slug/')), null);
+  assert.equal(tryDoubledLocaleRedirect(new URL('https://x.example/nl/tags/')), null);
+  assert.equal(tryDoubledLocaleRedirect(new URL('https://x.example/about/th/')), null);
+  assert.equal(tryDoubledLocaleRedirect(new URL('https://x.example/')), null);
+});
+
+test('handler 301s a doubled locale path before locale routing', async () => {
+  const res = await callHandler(new Request('https://sebastienrousseau.com/nl/hi/2026-06-07-slug/'));
+  assert.equal(res.status, 301);
+  assert.equal(new URL(res.headers.get('location')).pathname, '/hi/2026-06-07-slug/');
 });

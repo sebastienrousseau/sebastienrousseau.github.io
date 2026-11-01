@@ -108,7 +108,7 @@ UK Payments Forward Plan da fakitin manufofin Afrilu 2026 sun nuna tsari ɗaya m
 > **Taƙaitaccen Bayanin Zartarwa / Manyan Abubuwa**
 >
 > - **Manufofin Biyan Kuɗi yanzu na dabarun ne.</strong> Batun ya haɗa da samfurin aiki, juriya, ƙimar abokin ciniki, da shaidar tsari maimakon ƙaddamar da samfuri kunkuntar ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **Manufar zane ita ce iyakar tsari guda ɗaya.** Bankuna na buƙatar gine-gine da ke haɗa manufofi, samfuri, data, zaɓin hanya, sarrafa haɗari, da tattalin arziƙin da za a iya auna ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Manufar zane ita ce iyakar tsari guda ɗaya.** Bankuna na buƙatar gine-gine da ke haɗa manufofi, samfuri, data, zaɓin hanya, sarrafa haɗari, da tattalin arziƙin da za a iya auna ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Samfurin sarrafawa dole ne ya zama na ainihi-lokaci.** Yanke shawara na zamba, ruwa-ruwa, bin tsari, sasantawa, da haɗarin aiki dole ne su gudana a saurin hanyar aiki, ba bayan abin ya faru ba.
 > - **Ingancin data ya zama fa'idar kasuwanci.** Data mai tsari, mahallin ma'amala, audit logs, da siginar ainihi sun zama tushen sarrafa kansa da samfurori masu fuskantar abokin ciniki.
 > - **Rabewa ita ce maƙiyi.** Banki da ke gina gwaje-gwaje masu rabuwa a kewayen kowace hanya, token, samfuri, ko buƙatar bin tsari yana ƙirƙirar haɗarin aiki na gaba.
@@ -120,7 +120,7 @@ UK Payments Forward Plan da fakitin manufofin Afrilu 2026 sun nuna tsari ɗaya m
 
 Masana'antar ta wuce matakin karɓuwa. Ba ya isa kawai a haɗa hanya, a koma saƙo, a gudanar da gwajin tabbatar da AI, ko a sanar da gwajin tokenisation. A 2026, fa'idar dabarun tana zuwa daga tsara waɗannan damar a kan hanyar aiki ta gaskiya, sannan a tabbatar cewa hanyar aikin ta fi tsaro, sauri, arha, juriya, ko amfani ga abokan ciniki.
 
-Wannan shi ne dalilin da ya sa manufofin biyan kuɗi yanzu batun matakin hukumar gudanarwa ne. Matsi iri ɗaya na ci gaba da maimaita kansa: data mai arziƙi na biyan kuɗi, sasantawa na ainihi-lokaci, kuɗin tokenised, yanke shawara na AI, Open Banking, juriya na aiki, taro a kan cloud, da ƙarin shaidar tsari. Idan an bi su dabam, waɗannan matsi suna ƙirƙirar yaɗuwar shirye-shirye. Idan an bi su a matsayin gine-gine guda ɗaya, suna ƙirƙirar ƙarfin aiki ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Wannan shi ne dalilin da ya sa manufofin biyan kuɗi yanzu batun matakin hukumar gudanarwa ne. Matsi iri ɗaya na ci gaba da maimaita kansa: data mai arziƙi na biyan kuɗi, sasantawa na ainihi-lokaci, kuɗin tokenised, yanke shawara na AI, Open Banking, juriya na aiki, taro a kan cloud, da ƙarin shaidar tsari. Idan an bi su dabam, waɗannan matsi suna ƙirƙirar yaɗuwar shirye-shirye. Idan an bi su a matsayin gine-gine guda ɗaya, suna ƙirƙirar ƙarfin aiki ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Tushen Gine-gine na 2026
 
@@ -130,7 +130,7 @@ Banki ya kamata ya fara da matsala: ruwa-ruwa da aka kama, jinkirin sasantawa, k
 
 ### 2. Data a Matsayin Filin Sarrafawa
 
-Data mai tsari, mai gudanarwa, kuma mai gano hanya ita ce harsashin. Ba tare da data mai amfani ba, sarrafa kansa yana zama mai rauni kuma bin tsari yana zama na hannu. Tare da data mai amfani, bankuna za su iya ƙirƙirar hankali na tafiyar da, sarrafawa na ainihi-lokaci, da nazari ga abokan ciniki ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Data mai tsari, mai gudanarwa, kuma mai gano hanya ita ce harsashin. Ba tare da data mai amfani ba, sarrafa kansa yana zama mai rauni kuma bin tsari yana zama na hannu. Tare da data mai amfani, bankuna za su iya ƙirƙirar hankali na tafiyar da, sarrafawa na ainihi-lokaci, da nazari ga abokan ciniki ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Tsara A Tsakanin Hanyoyi (Rails) da Dandamali
 
@@ -197,7 +197,7 @@ Ya kamata a auna nasara ta tattalin arziƙin naúra, shaidar juriya, ingancin da
 ## Manazarta
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

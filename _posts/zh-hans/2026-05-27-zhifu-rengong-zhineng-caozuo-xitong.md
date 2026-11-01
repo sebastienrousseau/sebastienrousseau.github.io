@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 > **董事会摘要 / 核心结论**
 >
 > - **支付智能已具战略意义。**此议题与运营模式、韧性、客户价值与监管证据直接挂钩，而不再是某项窄口径的产品发布（[J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")）。
-> - **设计原则是实时控制。**银行需要一套架构，将政策、产品、数据、通道选择、风险控制与可衡量经济性串联起来（[Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")）。
+> - **设计原则是实时控制。**银行需要一套架构，将政策、产品、数据、通道选择、风险控制与可衡量经济性串联起来（[Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")）。
 > - **控制模型必须实时运行。**欺诈、流动性、合规、清算与操作风险决策必须以工作流速度执行，而不是事后处置。
 > - **数据质量将成为商业优势。**结构化数据、交易上下文、审计日志与身份信号，是自动化与面向客户产品的基座。
 > - **碎片化是最大敌人。**围绕每一条通道、每一种代币、每一种模型或每一项合规要求各建孤立试点的银行，是在为自己埋下未来的操作风险。
@@ -120,7 +120,7 @@ site_software: "Static Site Generator, Rust"
 
 行业已越过单纯采纳阶段。加入一条新轨道、迁移一份新报文、跑一次 AI 概念验证或宣布一个代币化试点，已经不够。2026 年的战略优势来自把这些能力针对真实工作流进行编排，并证明该工作流更安全、更快、更便宜、更具韧性，或对客户更有用。
 
-这也是为何支付智能已上升为董事会议题。各类压力反复出现：更丰富的支付数据、实时清算、代币化货币、AI 决策、开放银行、操作韧性、云集中度，以及更强的监管证据要求。各自处理只会产生项目蔓延；当成同一套架构治理，才能形成运营杠杆（[J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")、[Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")）。
+这也是为何支付智能已上升为董事会议题。各类压力反复出现：更丰富的支付数据、实时清算、代币化货币、AI 决策、开放银行、操作韧性、云集中度，以及更强的监管证据要求。各自处理只会产生项目蔓延；当成同一套架构治理，才能形成运营杠杆（[J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")、[Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")）。
 
 ## 2026 年的架构基线
 
@@ -130,7 +130,7 @@ site_software: "Static Site Generator, Rust"
 
 ### 2. 数据是控制平面
 
-结构化、受治理、可追溯的数据是基础。没有可用数据，自动化会变脆,合规会回到手工状态。具备可用数据，银行才能打造路由智能、实时控制与面向客户的分析（[Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")）。
+结构化、受治理、可追溯的数据是基础。没有可用数据，自动化会变脆,合规会回到手工状态。具备可用数据，银行才能打造路由智能、实时控制与面向客户的分析（[Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")）。
 
 ### 3. 跨轨道与跨平台编排
 
@@ -197,7 +197,7 @@ site_software: "Static Site Generator, Rust"
 ## 参考文献
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

@@ -108,7 +108,7 @@ UK Payments Forward Plan ও এপ্রিল ২০২৬ নীতি প্
 > **নির্বাহী সারসংক্ষেপ / মূল গ্রহণযোগ্য বার্তা**
 >
 > - **পেমেন্ট নীতি এখন কৌশলগত।** বিষয়টি সংকীর্ণ পণ্য উৎক্ষেপণের পরিবর্তে পরিচালন মডেল, সহনশীলতা, ক্লায়েন্ট মূল্য ও নিয়ন্ত্রক প্রমাণের সঙ্গে যুক্ত ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"))।
-> - **ডিজাইন নীতি হলো একটি নিয়ন্ত্রক পরিধি।** ব্যাংকগুলোর এমন স্থাপত্য প্রয়োজন যা নীতি, পণ্য, ডেটা, রেল নির্বাচন, ঝুঁকি নিয়ন্ত্রণ ও পরিমাপযোগ্য অর্থনীতিকে সংযুক্ত করে ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
+> - **ডিজাইন নীতি হলো একটি নিয়ন্ত্রক পরিধি।** ব্যাংকগুলোর এমন স্থাপত্য প্রয়োজন যা নীতি, পণ্য, ডেটা, রেল নির্বাচন, ঝুঁকি নিয়ন্ত্রণ ও পরিমাপযোগ্য অর্থনীতিকে সংযুক্ত করে ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
 > - **নিয়ন্ত্রণ মডেল রিয়েল-টাইম হতে হবে।** জালিয়াতি, তারল্য, কমপ্লায়েন্স, নিষ্পত্তি ও পরিচালন-ঝুঁকি সিদ্ধান্ত ওয়ার্কফ্লোর গতিতে চলতে হবে, ঘটনার পরে নয়।
 > - **ডেটা গুণমান বাণিজ্যিক সুবিধায় পরিণত হয়।** কাঠামোগত ডেটা, লেনদেন প্রসঙ্গ, অডিট লগ ও পরিচয় সংকেত স্বয়ংক্রিয়করণ ও ক্লায়েন্ট-মুখী পণ্যের ভিত্তি হয়ে ওঠে।
 > - **খণ্ডিতকরণ শত্রু।** যে ব্যাংক প্রতিটি রেল, টোকেন, মডেল বা কমপ্লায়েন্স প্রয়োজনের চারপাশে বিচ্ছিন্ন পাইলট গড়ে তোলে, সে ভবিষ্যৎ পরিচালন ঝুঁকি তৈরি করে।
@@ -120,7 +120,7 @@ UK Payments Forward Plan ও এপ্রিল ২০২৬ নীতি প্
 
 শিল্প গ্রহণ পর্যায় পেরিয়ে গেছে। একটি রেলে যোগ দেওয়া, একটি বার্তা স্থানান্তর করা, একটি এআই প্রুফ অব কনসেপ্ট চালানো বা একটি টোকেনাইজেশন পাইলট ঘোষণা করা আর যথেষ্ট নয়। ২০২৬ সালে কৌশলগত প্রান্ত আসে সেই ক্ষমতাগুলোকে একটি বাস্তব ওয়ার্কফ্লোর বিরুদ্ধে অর্কেস্ট্রেট করা থেকে, এবং তারপর প্রমাণ করা যে ওয়ার্কফ্লোটি নিরাপদ, দ্রুত, সস্তা, অধিক সহনশীল বা ক্লায়েন্টদের জন্য অধিক কার্যকর।
 
-সেই কারণেই পেমেন্ট নীতি এখন বোর্ড-স্তরের বিষয়। একই চাপ বারবার ফিরে আসছে: সমৃদ্ধ পেমেন্ট ডেটা, রিয়েল-টাইম নিষ্পত্তি, টোকেনাইজড অর্থ, এআই সিদ্ধান্ত গ্রহণ, ওপেন ব্যাংকিং, পরিচালন সহনশীলতা, ক্লাউড ঘনত্ব ও দৃঢ়তর নিয়ন্ত্রক প্রমাণ। পৃথকভাবে দেখা হলে, এই চাপগুলো প্রোগ্রাম বিস্তার সৃষ্টি করে। একটি স্থাপত্য হিসেবে দেখা হলে, এগুলো পরিচালন লিভারেজ তৈরি করে ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
+সেই কারণেই পেমেন্ট নীতি এখন বোর্ড-স্তরের বিষয়। একই চাপ বারবার ফিরে আসছে: সমৃদ্ধ পেমেন্ট ডেটা, রিয়েল-টাইম নিষ্পত্তি, টোকেনাইজড অর্থ, এআই সিদ্ধান্ত গ্রহণ, ওপেন ব্যাংকিং, পরিচালন সহনশীলতা, ক্লাউড ঘনত্ব ও দৃঢ়তর নিয়ন্ত্রক প্রমাণ। পৃথকভাবে দেখা হলে, এই চাপগুলো প্রোগ্রাম বিস্তার সৃষ্টি করে। একটি স্থাপত্য হিসেবে দেখা হলে, এগুলো পরিচালন লিভারেজ তৈরি করে ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
 
 ## ২০২৬ সালের স্থাপত্য মূলরেখা
 
@@ -130,7 +130,7 @@ UK Payments Forward Plan ও এপ্রিল ২০২৬ নীতি প্
 
 ### ২. নিয়ন্ত্রণ তলরূপ হিসেবে ডেটা
 
-কাঠামোগত, পরিচালিত ও সন্ধানযোগ্য ডেটা হলো ভিত্তি। ব্যবহারযোগ্য ডেটা ছাড়া স্বয়ংক্রিয়করণ ভঙ্গুর হয় ও কমপ্লায়েন্স ম্যানুয়াল হয়ে পড়ে। ব্যবহারযোগ্য ডেটা সহ ব্যাংকগুলো রাউটিং বুদ্ধিমত্তা, রিয়েল-টাইম নিয়ন্ত্রণ ও ক্লায়েন্ট-মুখী বিশ্লেষণ তৈরি করতে পারে ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
+কাঠামোগত, পরিচালিত ও সন্ধানযোগ্য ডেটা হলো ভিত্তি। ব্যবহারযোগ্য ডেটা ছাড়া স্বয়ংক্রিয়করণ ভঙ্গুর হয় ও কমপ্লায়েন্স ম্যানুয়াল হয়ে পড়ে। ব্যবহারযোগ্য ডেটা সহ ব্যাংকগুলো রাউটিং বুদ্ধিমত্তা, রিয়েল-টাইম নিয়ন্ত্রণ ও ক্লায়েন্ট-মুখী বিশ্লেষণ তৈরি করতে পারে ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
 
 ### ৩. রেল ও প্ল্যাটফর্ম জুড়ে অর্কেস্ট্রেশন
 
@@ -197,7 +197,7 @@ UK Payments Forward Plan ও এপ্রিল ২০২৬ নীতি প্
 ## তথ্যসূত্র
 
 - GOV.UK, (২০২৬)। [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed")।
-- Association of Corporate Treasurers, (২০২৬)। [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update")।
+- Association of Corporate Treasurers, (২০২৬)। [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update")।
 - Global Government Finance, (২০২৬)। [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion")।
 
 <!-- enrich-start -->

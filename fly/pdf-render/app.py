@@ -3,7 +3,7 @@
 
 """PDF render service for sebastienrousseau.com.
 
-Single endpoint: ``GET /render?slug=<article-slug>`` — fetches the live
+Single endpoint: ``GET /render?slug=<article-slug>[&lang=<locale>]`` — fetches the live
 article HTML from the public site, runs it through WeasyPrint with the
 site's existing ``@media print`` stylesheet honoured, and returns a
 PDF/A-quality download.
@@ -45,6 +45,8 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 
 ORIGIN = os.environ.get("ORIGIN_BASE", "https://sebastienrousseau.com").rstrip("/")
 SLUG_RE = re.compile(r"^[a-z0-9][a-z0-9\-]{0,127}$")
+# Locale prefix of a translated article (``fr``, ``pt-br``, ``zh-hant``).
+LANG_RE = re.compile(r"^[a-z]{2,3}(?:-[a-z]{2,4})?$")
 FETCH_TIMEOUT = float(os.environ.get("FETCH_TIMEOUT", "10"))
 RENDER_TIMEOUT = float(os.environ.get("RENDER_TIMEOUT", "20"))
 MAX_ASSET_BYTES = int(os.environ.get("MAX_ASSET_BYTES", str(10 * 1024 * 1024)))
@@ -137,18 +139,21 @@ def _verify_origin_token() -> None:
         raise Forbidden("invalid origin token")
 
 
-def _fetch_article_html(slug: str) -> str:
-    """Fetch the canonical EN article HTML from the public site. Errors
-    bubble up as 502 to the Worker so the cache-bust isn't promoted."""
+def _fetch_article_html(slug: str, lang: str = "") -> str:
+    """Fetch the article HTML from the public site: ``/<slug>/`` for EN,
+    ``/<lang>/<slug>/`` for a translation (a locale slug only exists under
+    its locale prefix, so without ``lang`` every translated article 404s).
+    Errors bubble up as 502 to the Worker so the cache-bust isn't promoted."""
     # Defense-in-depth: re-validate the slug at the network sink. The slug is
     # the only user-controlled input that flows into the outbound URL, so an
     # explicit charset guard here means the request host can never be
     # attacker-influenced (SSRF barrier) and the logged URL is provably free
     # of control characters (log-injection barrier). `raise` (not a bare
     # `abort`) makes the guard unambiguously terminating to static analysis.
-    if not SLUG_RE.fullmatch(slug):
+    if not SLUG_RE.fullmatch(slug) or (lang and not LANG_RE.fullmatch(lang)):
         raise BadRequest("invalid slug")
-    url = f"{ORIGIN}/{slug}/"
+    prefix = f"/{lang}" if lang else ""
+    url = f"{ORIGIN}{prefix}/{slug}/"
     LOG.info("fetch %s", url)
     try:
         res = requests.get(
@@ -189,6 +194,7 @@ def render() -> Response:
     Query string:
       slug - dated article slug, e.g.
              ``2026-06-08-banking-resilience-index-...-2026``.
+      lang - optional locale prefix for a translated article (``pt-br``).
 
     Cache-Control on the response is immutable for 24 h - the Worker
     re-emits it so the Cloudflare Edge absorbs every repeat hit and
@@ -196,9 +202,10 @@ def render() -> Response:
     """
     _verify_origin_token()
     slug = (request.args.get("slug") or "").strip()
+    lang = (request.args.get("lang") or "").strip()
     if not SLUG_RE.fullmatch(slug):
         abort(400, description="invalid slug")
-    html = _fetch_article_html(slug)
+    html = _fetch_article_html(slug, lang)
     pdf = _render_pdf(html, slug)
     return Response(
         pdf,

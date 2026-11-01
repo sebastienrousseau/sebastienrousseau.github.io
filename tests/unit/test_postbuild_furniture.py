@@ -2666,6 +2666,23 @@ def test_inject_action_rail_renders_save_pdf_and_cite_buttons_at_top_of_main():
     assert out.index("action-rail--sticky") < out.index("<p>body</p>")
 
 
+def test_inject_action_rail_pdf_link_is_nofollow_and_locale_aware():
+    from postbuild_lib.sharing import inject_action_rail
+
+    out = inject_action_rail(_ws2_page())
+    assert 'rel="nofollow" type="application/pdf"' in out
+    assert 'rel="alternate" type="application/pdf"' not in out
+    # A locale article's slug only exists under its prefix, so the PDF
+    # route carries the prefix for the renderer.
+    head = _WS2_HEAD.replace(
+        "https://sebastienrousseau.com/2026-01-01-my-post/",
+        "https://sebastienrousseau.com/pt-br/2026-01-01-meu-post/",
+    )
+    loc = inject_action_rail(_ws2_page(head=head))
+    assert 'href="/api/pdf/pt-br/2026-01-01-meu-post.pdf"' in loc
+    assert 'download="2026-01-01-meu-post.pdf"' in loc
+
+
 def test_inject_action_rail_idempotent():
     from postbuild_lib.sharing import inject_action_rail
 

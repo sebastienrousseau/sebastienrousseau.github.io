@@ -108,7 +108,7 @@ UK Payments Forward Plan 与 2026 年 4 月政策包，为传统支付、stablec
 > **执行摘要 / 关键要点**
 >
 > - **支付政策已进入战略层面。**议题已与运营模式、韧性、客户价值与监管 evidence（证据）相联，而非局限于某项产品发布（[GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")）。
-> - **设计原则是统一 regulatory perimeter（监管范围）。**银行需要把政策、产品、数据、通道选择、风险控制与可量化经济效益串成一个架构（[Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")）。
+> - **设计原则是统一 regulatory perimeter（监管范围）。**银行需要把政策、产品、数据、通道选择、风险控制与可量化经济效益串成一个架构（[Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")）。
 > - **控制模型必须实时。**反欺诈、流动性、合规、清算与运营风险决策须按工作流节奏运行，而非事后补救。
 > - **数据质量将转化为商业优势。**结构化数据、交易语境、审计日志与身份信号，将成为自动化与客户端产品的底层基质。
 > - **碎片化是大敌。**围绕每条通道、每种代币、每个模型或每项合规要求孤立试点的银行，正在积累未来的运营风险。
@@ -120,7 +120,7 @@ UK Payments Forward Plan 与 2026 年 4 月政策包，为传统支付、stablec
 
 行业已迈过采纳阶段。仅靠接入一条 rail（通道）、迁移一项报文、跑一个 AI 概念验证或宣布一项 tokenisation（代币化）试点，已不足够。2026 年的战略锋芒，来自把这些能力编排到一条真实工作流上，再以证据证明该工作流更安全、更快、更便宜、更具韧性，或对客户更有用。
 
-正因如此，支付政策已成为董事会议题。同样的压力反复出现：更丰富的支付数据、实时 settlement（清算）、tokenised money（代币化货币）、AI 决策、open banking（开放银行）、运营韧性、云集中度与更强的监管证据。分别处理时，这些压力催生项目蔓延；视为同一架构处理时，则带来运营杠杆（[GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")、[Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")）。
+正因如此，支付政策已成为董事会议题。同样的压力反复出现：更丰富的支付数据、实时 settlement（清算）、tokenised money（代币化货币）、AI 决策、open banking（开放银行）、运营韧性、云集中度与更强的监管证据。分别处理时，这些压力催生项目蔓延；视为同一架构处理时，则带来运营杠杆（[GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")、[Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")）。
 
 ## 2026 架构基线
 
@@ -130,7 +130,7 @@ UK Payments Forward Plan 与 2026 年 4 月政策包，为传统支付、stablec
 
 ### 2. 数据即控制面
 
-结构化、受治理且可追溯的数据是地基。缺乏可用数据，自动化将变得脆弱，合规将沦为手工。具备可用数据后，银行才能建立路由智能、实时控制与面向客户的分析（[Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")）。
+结构化、受治理且可追溯的数据是地基。缺乏可用数据，自动化将变得脆弱，合规将沦为手工。具备可用数据后，银行才能建立路由智能、实时控制与面向客户的分析（[Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")）。
 
 ### 3. 跨通道与跨平台的编排
 
@@ -197,7 +197,7 @@ UK Payments Forward Plan 与 2026 年 4 月政策包，为传统支付、stablec
 ## 参考文献
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

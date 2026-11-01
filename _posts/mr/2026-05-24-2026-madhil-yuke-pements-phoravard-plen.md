@@ -20,7 +20,7 @@ keywords: "यूके पेमेंट्स फॉरवर्ड प्ल
 > **कार्यकारी सारांश / मुख्य मुद्दे**
 >
 > - **पेमेंट्स धोरण आता धोरणात्मक आहे.** हा विषय आता एका मर्यादित उत्पादन प्रक्षेपणाऐवजी ऑपरेटिंग मॉडेल, लवचिकता, क्लायंट मूल्य आणि नियामक पुराव्याशी जोडलेला आहे ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **रचना-तत्त्व म्हणजे एक नियामक परिघ.** बँकांना असे आर्किटेक्चर हवे जे धोरण, उत्पादन, डेटा, रेल निवड, जोखीम नियंत्रणे आणि मोजता येण्याजोगी अर्थव्यवस्था जोडते ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **रचना-तत्त्व म्हणजे एक नियामक परिघ.** बँकांना असे आर्किटेक्चर हवे जे धोरण, उत्पादन, डेटा, रेल निवड, जोखीम नियंत्रणे आणि मोजता येण्याजोगी अर्थव्यवस्था जोडते ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **नियंत्रण मॉडेल रिअल टाइम असले पाहिजे.** फसवणूक, तरलता, अनुपालन, सेटलमेंट आणि परिचालन-जोखीम निर्णय घटनेनंतर नव्हे तर वर्कफ्लोच्या वेगाने चालले पाहिजेत.
 > - **डेटा गुणवत्ता व्यावसायिक फायदा बनते.** संरचित डेटा, व्यवहार संदर्भ, ऑडिट लॉग आणि ओळख संकेत स्वयंचलन आणि क्लायंटसमोरील उत्पादनांचा आधार बनतात.
 > - **विखंडन हा शत्रू आहे.** प्रत्येक रेल, टोकन, मॉडेल किंवा अनुपालन आवश्यकतेभोवती वेगळे पायलट बांधणारी बँक भविष्यातील परिचालन जोखीम निर्माण करते.
@@ -32,7 +32,7 @@ keywords: "यूके पेमेंट्स फॉरवर्ड प्ल
 
 उद्योग स्वीकाराच्या टप्प्याच्या पुढे गेला आहे. आता एखाद्या रेलमध्ये सामील होणे, संदेश स्थलांतरित करणे, AI संकल्पना-सिद्धता चालवणे किंवा टोकनायझेशन पायलटची घोषणा करणे पुरेसे नाही. 2026 मध्ये, धोरणात्मक धार त्या क्षमतांना खऱ्या वर्कफ्लोच्या विरुद्ध ऑर्केस्ट्रेट करण्यातून येते, आणि नंतर तो वर्कफ्लो अधिक सुरक्षित, वेगवान, स्वस्त, अधिक लवचिक किंवा क्लायंटसाठी अधिक उपयुक्त आहे हे सिद्ध करण्यातून येते.
 
-म्हणूनच पेमेंट्स धोरण आता मंडळ-स्तरीय विषय आहे. तेच दबाव पुन्हा पुन्हा येत राहतात: समृद्ध पेमेंट डेटा, रिअल-टाइम सेटलमेंट, टोकनाइज्ड पैसा, AI निर्णयन, ओपन बँकिंग, परिचालन लवचिकता, क्लाउड एकाग्रता आणि अधिक मजबूत नियामक पुरावा. स्वतंत्रपणे हाताळले, तर हे दबाव कार्यक्रम पसरवतात. एक आर्किटेक्चर म्हणून हाताळले, तर ते परिचालन लाभ निर्माण करतात ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+म्हणूनच पेमेंट्स धोरण आता मंडळ-स्तरीय विषय आहे. तेच दबाव पुन्हा पुन्हा येत राहतात: समृद्ध पेमेंट डेटा, रिअल-टाइम सेटलमेंट, टोकनाइज्ड पैसा, AI निर्णयन, ओपन बँकिंग, परिचालन लवचिकता, क्लाउड एकाग्रता आणि अधिक मजबूत नियामक पुरावा. स्वतंत्रपणे हाताळले, तर हे दबाव कार्यक्रम पसरवतात. एक आर्किटेक्चर म्हणून हाताळले, तर ते परिचालन लाभ निर्माण करतात ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## 2026 आर्किटेक्चर बेसलाइन
 
@@ -42,7 +42,7 @@ keywords: "यूके पेमेंट्स फॉरवर्ड प्ल
 
 ### 2. नियंत्रण-स्तर म्हणून डेटा
 
-संरचित, व्यवस्थापित आणि शोधता येण्याजोगा डेटा हा पाया आहे. वापरण्यायोग्य डेटाशिवाय, स्वयंचलन ठिसूळ बनते आणि अनुपालन हाताने करावे लागते. वापरण्यायोग्य डेटासह, बँका मार्गनिर्धारण बुद्धिमत्ता, रिअल-टाइम नियंत्रणे आणि क्लायंटसमोरील विश्लेषण तयार करू शकतात ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+संरचित, व्यवस्थापित आणि शोधता येण्याजोगा डेटा हा पाया आहे. वापरण्यायोग्य डेटाशिवाय, स्वयंचलन ठिसूळ बनते आणि अनुपालन हाताने करावे लागते. वापरण्यायोग्य डेटासह, बँका मार्गनिर्धारण बुद्धिमत्ता, रिअल-टाइम नियंत्रणे आणि क्लायंटसमोरील विश्लेषण तयार करू शकतात ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. रेल्स आणि प्लॅटफॉर्मवर ऑर्केस्ट्रेशन
 
@@ -109,5 +109,5 @@ keywords: "यूके पेमेंट्स फॉरवर्ड प्ल
 ## संदर्भ
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").

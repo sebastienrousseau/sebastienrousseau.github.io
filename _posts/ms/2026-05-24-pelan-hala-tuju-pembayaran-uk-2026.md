@@ -20,7 +20,7 @@ Pelan Hala Tuju Pembayaran UK dan pakej dasar April 2026 menunjukkan satu rangka
 > **Ringkasan Eksekutif / Perkara Utama**
 >
 > - **Dasar Pembayaran kini bersifat strategik.** Topik ini terikat dengan model operasi, daya tahan, nilai pelanggan, dan bukti pengawalseliaan dan bukannya pelancaran produk yang sempit ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "Fintech UK disokong untuk menerima teknologi pembayaran masa depan")).
-> - **Prinsip reka bentuk ialah satu perimeter pengawalseliaan.** Bank memerlukan seni bina yang menghubungkan dasar, produk, data, pilihan rel, kawalan risiko, dan ekonomi yang boleh diukur ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Kemas kini landskap Pembayaran – Mei 2026")).
+> - **Prinsip reka bentuk ialah satu perimeter pengawalseliaan.** Bank memerlukan seni bina yang menghubungkan dasar, produk, data, pilihan rel, kawalan risiko, dan ekonomi yang boleh diukur ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Kemas kini landskap Pembayaran – Mei 2026")).
 > - **Model kawalan mestilah masa nyata.** Keputusan penipuan, kecairan, pematuhan, penyelesaian, dan risiko operasi mesti berjalan pada kelajuan aliran kerja, bukan selepas peristiwa berlaku.
 > - **Kualiti data menjadi kelebihan komersial.** Data berstruktur, konteks transaksi, log audit, dan isyarat identiti menjadi substrat untuk automasi dan produk yang menghadap pelanggan.
 > - **Fragmentasi ialah musuh.** Bank yang membina perintis terpencil di sekeliling setiap rel, token, model, atau keperluan pematuhan mewujudkan risiko operasi masa depan.
@@ -32,7 +32,7 @@ Pelan Hala Tuju Pembayaran UK dan pakej dasar April 2026 menunjukkan satu rangka
 
 Industri telah bergerak melangkaui fasa penggunaan. Ia tidak lagi memadai untuk menyertai satu rel, memindahkan satu mesej, menjalankan bukti konsep AI, atau mengumumkan perintis pentokenan. Pada 2026, kelebihan strategik datang daripada mengorkestra keupayaan tersebut terhadap aliran kerja sebenar, kemudian membuktikan bahawa aliran kerja itu lebih selamat, lebih pantas, lebih murah, lebih berdaya tahan, atau lebih berguna kepada pelanggan.
 
-Itulah sebabnya dasar pembayaran kini menjadi topik peringkat lembaga pengarah. Tekanan yang sama terus berulang: data pembayaran yang lebih kaya, penyelesaian masa nyata, wang ditokenkan, keputusan AI, Perbankan Terbuka, daya tahan operasi, penumpuan awan, dan bukti pengawalseliaan yang lebih kukuh. Apabila ditangani secara berasingan, tekanan tersebut mewujudkan lambakan program. Apabila ditangani sebagai satu seni bina, ia mewujudkan leveraj operasi ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "Fintech UK disokong untuk menerima teknologi pembayaran masa depan"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Kemas kini landskap Pembayaran – Mei 2026")).
+Itulah sebabnya dasar pembayaran kini menjadi topik peringkat lembaga pengarah. Tekanan yang sama terus berulang: data pembayaran yang lebih kaya, penyelesaian masa nyata, wang ditokenkan, keputusan AI, Perbankan Terbuka, daya tahan operasi, penumpuan awan, dan bukti pengawalseliaan yang lebih kukuh. Apabila ditangani secara berasingan, tekanan tersebut mewujudkan lambakan program. Apabila ditangani sebagai satu seni bina, ia mewujudkan leveraj operasi ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "Fintech UK disokong untuk menerima teknologi pembayaran masa depan"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Kemas kini landskap Pembayaran – Mei 2026")).
 
 ## Garis Dasar Seni Bina 2026
 
@@ -42,7 +42,7 @@ Bank patut bermula dengan geseran: kecairan terperangkap, kelewatan penyelesaian
 
 ### 2. Data sebagai Satah Kawalan
 
-Data yang berstruktur, ditadbir, dan boleh dikesan ialah asasnya. Tanpa data yang boleh diguna, automasi menjadi rapuh dan pematuhan menjadi manual. Dengan data yang boleh diguna, bank boleh mewujudkan kecerdasan penghalaan, kawalan masa nyata, dan analitik yang menghadap pelanggan ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Kemas kini landskap Pembayaran – Mei 2026")).
+Data yang berstruktur, ditadbir, dan boleh dikesan ialah asasnya. Tanpa data yang boleh diguna, automasi menjadi rapuh dan pematuhan menjadi manual. Dengan data yang boleh diguna, bank boleh mewujudkan kecerdasan penghalaan, kawalan masa nyata, dan analitik yang menghadap pelanggan ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Kemas kini landskap Pembayaran – Mei 2026")).
 
 ### 3. Orkestrasi Merentasi Rel dan Platform
 
@@ -109,5 +109,5 @@ Kejayaan patut diukur berdasarkan ekonomi unit, bukti daya tahan, kualiti data, 
 ## Rujukan
 
 - GOV.UK, (2026). [Fintech UK disokong untuk menerima teknologi pembayaran masa depan ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "Fintech UK disokong").
-- Association of Corporate Treasurers, (2026). [Kemas kini landskap Pembayaran – Mei 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Kemas kini landskap pembayaran").
+- Association of Corporate Treasurers, (2026). [Kemas kini landskap Pembayaran – Mei 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Kemas kini landskap pembayaran").
 - Global Government Finance, (2026). [Juara pasaran digital borong UK ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Juara pasaran digital borong UK").

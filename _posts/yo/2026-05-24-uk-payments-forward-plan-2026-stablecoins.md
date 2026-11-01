@@ -108,7 +108,7 @@ UK Payments Forward Plan àti àkójọpọ̀ ìlànà April 2026 fi àwòṣe �
 > **Àkójọpọ̀ Olùṣàkóso / Àwọn Kókó Pàtàkì**
 >
 > - **Ìlànà Ìsanwó ti di ìṣẹ̀ètò báyìí.** A so ọ̀rọ̀ náà mọ́ àwòṣe iṣẹ́, ìfaradà, iye oníbàárà, àti ẹ̀rí ìṣàkóso dípò ìtújáde ọjà tóóró ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **Ìlànà ìgbékalẹ̀ jẹ́ agbègbè ìṣàkóso kan ṣoṣo.** Àwọn báńkì nílò ìgbékalẹ̀ tí ó pa ìlànà, ọjà, dátà, ìyàn ọ̀nà, ìdarí ewu, àti ọrọ̀-ajé tí a lè wọ̀n pọ̀ ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Ìlànà ìgbékalẹ̀ jẹ́ agbègbè ìṣàkóso kan ṣoṣo.** Àwọn báńkì nílò ìgbékalẹ̀ tí ó pa ìlànà, ọjà, dátà, ìyàn ọ̀nà, ìdarí ewu, àti ọrọ̀-ajé tí a lè wọ̀n pọ̀ ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Àwòṣe ìdarí gbọ́dọ̀ jẹ́ alààyè.** Àwọn ìpinnu lórí ìwà ẹ̀tàn, owó tó ń sàn, ìbámu, ìpinnu owó, àti ewu iṣẹ́ gbọ́dọ̀ sáré ní ìyára ìṣàn iṣẹ́, kì í ṣe lẹ́yìn ìṣẹ̀lẹ̀.
 > - **Ọjà-ìwà dátà di àǹfààní ìṣòwò.** Dátà tí a ṣètò, àyíká ìṣòwò, ìwé àyẹ̀wò, àti àwọn àmì ìdánimọ̀ di ìpìlẹ̀ fún aládàáṣe àti àwọn ọjà tí ó dojúkọ oníbàárà.
 > - **Pínpín jẹ́ ọ̀tá.** Báńkì tí ó kọ́ àwọn ìdánwò tí ó pínyà yí ọ̀nà, tókènì, àpẹẹrẹ, tàbí ìbéèrè ìbámu kọ̀ọ̀kan ka ń ṣẹ̀dá ewu iṣẹ́ ọjọ́-iwájú.
@@ -120,7 +120,7 @@ UK Payments Forward Plan àti àkójọpọ̀ ìlànà April 2026 fi àwòṣe �
 
 Ilé-iṣẹ́ ti kọjá ipele gbígbà. Kò tó mọ́ láti darapọ̀ mọ́ ọ̀nà kan, ṣí ìránṣẹ́ lọ, ṣe àfihàn ìmọ̀ AI, tàbí kéde ìdánwò tókènì. Ní 2026, ojú-pípé ìṣẹ̀ètò wá láti inú pípa àwọn agbára yẹn lápapọ̀ sí ìṣàn iṣẹ́ gangan, lẹ́yìn náà jíjẹ́rìí pé ìṣàn iṣẹ́ náà ní ààbò jù lọ, yára jù lọ, gbówó kéré, ní ìfaradà jù, tàbí wúlò jù fún àwọn oníbàárà.
 
-Ìyẹn ló mú kí ìlànà ìsanwó di ọ̀rọ̀ ipele igbìmọ̀ olùṣàkóso. Àwọn ipá kannáà ń tún padà wáyé: dátà ìsanwó tí ó pọ̀, ìpinnu owó alààyè, owó tókènì, ìpinnu AI, Ẹnu-Ọ̀nà Bankì (Open Banking), ìfaradà iṣẹ́, ìṣe-papọ̀ cloud, àti ẹ̀rí ìṣàkóso tí ó lágbára jù. Tí a bá tọ́jú wọn lọ́tọ̀ọ̀tọ̀, àwọn ipá yẹn ń ṣẹ̀dá ìtàn-káàkiri ètò. Tí a bá tọ́jú wọn gẹ́gẹ́ bí ìgbékalẹ̀ kan, wọ́n ń ṣẹ̀dá agbára iṣẹ́ ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Ìyẹn ló mú kí ìlànà ìsanwó di ọ̀rọ̀ ipele igbìmọ̀ olùṣàkóso. Àwọn ipá kannáà ń tún padà wáyé: dátà ìsanwó tí ó pọ̀, ìpinnu owó alààyè, owó tókènì, ìpinnu AI, Ẹnu-Ọ̀nà Bankì (Open Banking), ìfaradà iṣẹ́, ìṣe-papọ̀ cloud, àti ẹ̀rí ìṣàkóso tí ó lágbára jù. Tí a bá tọ́jú wọn lọ́tọ̀ọ̀tọ̀, àwọn ipá yẹn ń ṣẹ̀dá ìtàn-káàkiri ètò. Tí a bá tọ́jú wọn gẹ́gẹ́ bí ìgbékalẹ̀ kan, wọ́n ń ṣẹ̀dá agbára iṣẹ́ ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Ipò Ìgbékalẹ̀ 2026
 
@@ -130,7 +130,7 @@ Báńkì gbọ́dọ̀ bẹ̀rẹ̀ pẹ̀lú ìjà: owó tó ń sàn tí a fi m
 
 ### 2. Dátà Gẹ́gẹ́ Bí Ìbútù Ìdarí
 
-Dátà tí a ṣètò, tí a ṣàkóso, tí a sì lè tọ́pa jẹ́ ìpìlẹ̀. Láìsí dátà tí a lè lò, aládàáṣe di alábùkú àti ìbámu di àfọwọ́ṣe. Pẹ̀lú dátà tí a lè lò, àwọn báńkì lè ṣẹ̀dá ìmọ̀ ìtọ́nisọ́nà, ìdarí alààyè, àti analytics tí ó dojúkọ oníbàárà ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Dátà tí a ṣètò, tí a ṣàkóso, tí a sì lè tọ́pa jẹ́ ìpìlẹ̀. Láìsí dátà tí a lè lò, aládàáṣe di alábùkú àti ìbámu di àfọwọ́ṣe. Pẹ̀lú dátà tí a lè lò, àwọn báńkì lè ṣẹ̀dá ìmọ̀ ìtọ́nisọ́nà, ìdarí alààyè, àti analytics tí ó dojúkọ oníbàárà ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Ìpalọ́gun Kọjá Àwọn Ọ̀nà àti Pẹpẹ
 
@@ -197,7 +197,7 @@ A gbọ́dọ̀ wọ̀n àṣeyọrí nípa ọrọ̀-ajé ọ̀kan-sí-ọ̀kan
 ## Àwọn Ìtọ́kasí
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

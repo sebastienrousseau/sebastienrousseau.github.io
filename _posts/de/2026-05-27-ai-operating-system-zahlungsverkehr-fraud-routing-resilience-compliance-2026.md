@@ -108,7 +108,7 @@ KI wird 2026 zum Betriebssystem des Zahlungsverkehrs und entwickelt sich von der
 > **Executive Summary / Kernaussagen**
 >
 > - **Payments-Intelligence ist nun strategisch.** Das Thema ist mit Betriebsmodell, Resilienz, Kundennutzen und regulatorischem Nachweis verbunden, nicht mit einem schmalen Produktlaunch ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **Das Designprinzip ist Echtzeitsteuerung.** Banken brauchen eine Architektur, die Richtlinie, Produkt, Daten, Rail-Auswahl, Risikokontrollen und messbare Ökonomie verbindet ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Das Designprinzip ist Echtzeitsteuerung.** Banken brauchen eine Architektur, die Richtlinie, Produkt, Daten, Rail-Auswahl, Risikokontrollen und messbare Ökonomie verbindet ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Das Kontrollmodell muss in Echtzeit laufen.** Entscheidungen zu Betrug, Liquidität, Compliance, Settlement und operationellem Risiko müssen mit der Geschwindigkeit des Workflows getroffen werden, nicht im Nachhinein.
 > - **Datenqualität wird zum kommerziellen Vorteil.** Strukturierte Daten, Transaktionskontext, Audit-Logs und Identitätssignale bilden das Substrat für Automatisierung und kundenseitige Produkte.
 > - **Fragmentierung ist der Feind.** Eine Bank, die isolierte Piloten um jede Rail, jeden Token, jedes Modell oder jede Compliance-Anforderung baut, schafft künftiges operationelles Risiko.
@@ -120,7 +120,7 @@ KI wird 2026 zum Betriebssystem des Zahlungsverkehrs und entwickelt sich von der
 
 Die Branche hat die Adoptionsphase hinter sich gelassen. Es genügt nicht mehr, einer Rail beizutreten, eine Nachricht zu migrieren, einen KI-Proof-of-Concept zu fahren oder einen Tokenisierungs-Pilot anzukündigen. 2026 entsteht der strategische Vorsprung daraus, diese Fähigkeiten gegen einen realen Workflow zu orchestrieren und zu belegen, dass dieser Workflow sicherer, schneller, günstiger, resilienter oder für Kunden nützlicher ist.
 
-Deshalb ist Payments-Intelligence inzwischen ein Thema für den Vorstand. Die gleichen Treiber kehren wieder: reichere Zahlungsdaten, Echtzeit-Settlement, tokenisiertes Geld, KI-Entscheidungen, Open Banking, operationelle Resilienz, Cloud-Konzentration und stärkere regulatorische Nachweispflichten. Einzeln behandelt erzeugen sie Programmwildwuchs. Als eine Architektur betrachtet erzeugen sie operativen Hebel ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Deshalb ist Payments-Intelligence inzwischen ein Thema für den Vorstand. Die gleichen Treiber kehren wieder: reichere Zahlungsdaten, Echtzeit-Settlement, tokenisiertes Geld, KI-Entscheidungen, Open Banking, operationelle Resilienz, Cloud-Konzentration und stärkere regulatorische Nachweispflichten. Einzeln behandelt erzeugen sie Programmwildwuchs. Als eine Architektur betrachtet erzeugen sie operativen Hebel ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Die Architektur-Baseline 2026
 
@@ -130,7 +130,7 @@ Die Bank sollte mit der Reibung beginnen: gebundene Liquidität, Settlement-Verz
 
 ### 2. Daten als Steuerungsebene
 
-Strukturierte, gesteuerte und nachvollziehbare Daten bilden das Fundament. Ohne nutzbare Daten wird Automatisierung brüchig und Compliance manuell. Mit nutzbaren Daten lassen sich Routing-Intelligenz, Echtzeitkontrollen und kundenseitige Analytik erzeugen ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Strukturierte, gesteuerte und nachvollziehbare Daten bilden das Fundament. Ohne nutzbare Daten wird Automatisierung brüchig und Compliance manuell. Mit nutzbaren Daten lassen sich Routing-Intelligenz, Echtzeitkontrollen und kundenseitige Analytik erzeugen ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orchestrierung über Rails und Plattformen hinweg
 
@@ -197,7 +197,7 @@ Erfolg sollte an Stückkostenökonomie, Resilienz-Nachweisen, Datenqualität, Ku
 ## Quellen
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

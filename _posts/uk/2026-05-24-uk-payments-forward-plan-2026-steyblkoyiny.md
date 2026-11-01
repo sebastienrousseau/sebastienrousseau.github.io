@@ -108,7 +108,7 @@ UK Payments Forward Plan і пакет політик квітня 2026 вказ
 > **Executive Summary / Ключові висновки**
 >
 > - **Платіжна політика стала стратегічною.** Тема прив’язана до операційної моделі, стійкості, цінності для клієнта та регуляторних доказів, а не до вузького продуктового запуску ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **Принцип дизайну — один регуляторний периметр.** Банкам потрібна архітектура, що поєднує політику, продукт, дані, вибір каналу, ризик-контролі та вимірювану економіку ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Принцип дизайну — один регуляторний периметр.** Банкам потрібна архітектура, що поєднує політику, продукт, дані, вибір каналу, ризик-контролі та вимірювану економіку ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Модель контролю має бути в реальному часі.** Рішення з шахрайства, ліквідності, комплаєнсу, розрахунку та операційного ризику мають виконуватися на швидкості сценарію, а не постфактум.
 > - **Якість даних стає комерційною перевагою.** Структуровані дані, контекст транзакції, журнали аудиту та сигнали ідентичності стають субстратом автоматизації та клієнтських продуктів.
 > - **Фрагментація — ворог.** Банк, який будує ізольовані пілоти навколо кожного каналу, токена, моделі чи комплаєнс-вимоги, формує майбутній операційний ризик.
@@ -120,7 +120,7 @@ UK Payments Forward Plan і пакет політик квітня 2026 вказ
 
 Індустрія вийшла за межі фази впровадження. Уже недостатньо приєднатися до каналу, мігрувати повідомлення, провести proof of concept ШІ або анонсувати пілот токенізації. У 2026 році стратегічна перевага виникає з оркестрування цих спроможностей навколо реального сценарію та доказу того, що сценарій став безпечнішим, швидшим, дешевшим, стійкішим або кориснішим для клієнтів.
 
-Саме тому платіжна політика стала темою рівня правління. Ті ж самі тиски повторюються: багатші платіжні дані, розрахунок у реальному часі, токенізовані гроші, ШІ-ухвалення рішень, відкритий банкінг (open banking), операційна стійкість, концентрація хмарних провайдерів і посилені регуляторні докази. Розглядані окремо, ці тиски породжують програмний розрозн. Розглядані як одна архітектура — створюють операційний важіль ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Саме тому платіжна політика стала темою рівня правління. Ті ж самі тиски повторюються: багатші платіжні дані, розрахунок у реальному часі, токенізовані гроші, ШІ-ухвалення рішень, відкритий банкінг (open banking), операційна стійкість, концентрація хмарних провайдерів і посилені регуляторні докази. Розглядані окремо, ці тиски породжують програмний розрозн. Розглядані як одна архітектура — створюють операційний важіль ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Архітектурний базис 2026
 
@@ -130,7 +130,7 @@ UK Payments Forward Plan і пакет політик квітня 2026 вказ
 
 ### 2. Дані як площина контролю
 
-Структуровані, керовані та трасовані дані — фундамент. Без придатних даних автоматизація стає крихкою, а комплаєнс — ручним. З придатними даними банки можуть будувати інтелект маршрутизації, контролі в реальному часі та клієнтську аналітику ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Структуровані, керовані та трасовані дані — фундамент. Без придатних даних автоматизація стає крихкою, а комплаєнс — ручним. З придатними даними банки можуть будувати інтелект маршрутизації, контролі в реальному часі та клієнтську аналітику ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Оркестрування каналів і платформ
 
@@ -197,7 +197,7 @@ UK Payments Forward Plan 2026 — це по суті питання архіте
 ## Джерела
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

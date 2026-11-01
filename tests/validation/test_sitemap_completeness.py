@@ -119,6 +119,18 @@ def _is_redirect_page(page: Path) -> bool:
     return 'http-equiv="refresh"' in head
 
 
+_NOINDEX_RE = re.compile(r'<meta\s+name=["\']robots["\']\s+content=["\'][^"\']*noindex', re.I)
+
+
+def _is_noindex_page(page: Path) -> bool:
+    """Pages marked ``noindex`` (the 404 / offline / thanks utility pages in
+    every locale, see postbuild_lib.indexability) are pruned from the
+    sitemap on purpose: a sitemap lists only URLs meant to be indexed."""
+    with page.open("r", encoding="utf-8", errors="ignore") as fh:
+        head = fh.read(65536)
+    return bool(_NOINDEX_RE.search(head))
+
+
 def collect_rendered_pages() -> set[str]:
     """Walk public/ for index.html files; return normalised canonical URLs.
     Excludes pages that shouldn't appear in a sitemap by convention
@@ -135,7 +147,7 @@ def collect_rendered_pages() -> set[str]:
         path = canonical[len(SITE) :]
         if any(path.startswith(prefix) for prefix in _EXCLUDE_PREFIXES):
             continue
-        if _is_redirect_page(page):
+        if _is_redirect_page(page) or _is_noindex_page(page):
             continue
         urls.add(_norm(canonical))
     return urls

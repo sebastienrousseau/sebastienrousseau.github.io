@@ -27,6 +27,15 @@ compatibility_date = "2026-05-16"
 # they resolve at runtime. The Worker handles missing bindings gracefully -
 # lang-router.js falls back to a hard-coded list if env.ASSETS is undefined.
 
+# PDF renderer (workers/pdf-proxy.js). Set these as Worker variables in the
+# dashboard once fly/pdf-render is deployed under an app you own:
+#   PDF_RENDER_BASE  = "https://<your-fly-app>.fly.dev"
+#   PDF_ORIGIN_TOKEN = shared secret, same value as the Fly app's
+#                      PDF_ORIGIN_TOKEN (set it as a secret, not a var)
+# Unset, /api/pdf/* answers 503 at once and the article page falls back to
+# window.print(). There is no default: https://pdf-render.fly.dev does not
+# run this service, and proxying to it hung every request for ~60 s.
+
 # Deploy-time static assets: slug maps, lang registry, anything generatable
 # at build time. Built by `scripts/build_worker_assets.py`.
 [assets]

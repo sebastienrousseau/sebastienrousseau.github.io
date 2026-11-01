@@ -101,13 +101,13 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-การชำระเงินแบบเอเจนต์ก้าวจากสไลด์นำเสนอสู่หลักฐานในตลาดจริง Mastercard และ Rabobank ดำเนินการชำระเงินที่ริเริ่มโดย AI agent ในเนเธอร์แลนด์ โดยเอเจนต์จองการชิมกาแฟบน Priceless.com โดยไม่เข้าถึงรายละเอียดบัตรโดยตรง และมีการบันทึกความยินยอมของผู้บริโภคอย่างชัดเจนก่อนการดำเนินการ ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")) ประเด็นเชิงกลยุทธ์สำหรับธนาคารจึงอยู่ที่สถาปัตยกรรมความยินยอม นั่นคือสถาบันการเงินจะพิสูจน์อย่างไรว่าการชำระเงินที่ดำเนินการโดยเครื่องจักรได้รับอนุมัติจริงจากตัวการที่เป็นมนุษย์หรือนิติบุคคล
+การชำระเงินแบบเอเจนต์ก้าวจากสไลด์นำเสนอสู่หลักฐานในตลาดจริง Mastercard และ Rabobank ดำเนินการชำระเงินที่ริเริ่มโดย AI agent ในเนเธอร์แลนด์ โดยเอเจนต์จองการชิมกาแฟบน Priceless.com โดยไม่เข้าถึงรายละเอียดบัตรโดยตรง และมีการบันทึกความยินยอมของผู้บริโภคอย่างชัดเจนก่อนการดำเนินการ ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")) ประเด็นเชิงกลยุทธ์สำหรับธนาคารจึงอยู่ที่สถาปัตยกรรมความยินยอม นั่นคือสถาบันการเงินจะพิสูจน์อย่างไรว่าการชำระเงินที่ดำเนินการโดยเครื่องจักรได้รับอนุมัติจริงจากตัวการที่เป็นมนุษย์หรือนิติบุคคล
 
 ---
 
 > **สรุปผู้บริหาร / ประเด็นสำคัญ**
 >
-> - **สัญญาณตลาดชุดแรกเริ่มต้นจริงแล้ว** Mastercard และ Rabobank ดำเนินธุรกรรม AI agent ในเนเธอร์แลนด์ผ่าน Mastercard Agent Pay โดยกันเอเจนต์ไม่ให้เข้าถึงข้อมูลบัตรโดยตรง ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))
+> - **สัญญาณตลาดชุดแรกเริ่มต้นจริงแล้ว** Mastercard และ Rabobank ดำเนินธุรกรรม AI agent ในเนเธอร์แลนด์ผ่าน Mastercard Agent Pay โดยกันเอเจนต์ไม่ให้เข้าถึงข้อมูลบัตรโดยตรง ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))
 > - **โพรโทคอลการชำระเงินแบบเอเจนต์ก่อตัวก่อนกฎหมายลงตัว** Fenwick ระบุว่า AP2, A2A, x402, MCP และ MPP เป็นความพยายามด้านโพรโทคอลที่จัดการเรื่อง agent interoperability และการให้อำนาจ ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?"))
 > - **ความยินยอมเป็นโจทย์หลักของธนาคาร** คำสั่งความยินยอมเชิงเข้ารหัสแบบ AP2 พยายามบันทึกคำสั่งของผู้ใช้และการอนุมัติขั้นสุดท้ายเป็นหลักฐานเจตนาที่ตรวจสอบได้ ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?"))
 > - **ความรับผิดยังไม่ลงตัว** กฎหมายชำระเงินที่ใช้อยู่ออกแบบมาสำหรับธุรกรรมที่ตัดสินโดยมนุษย์ ไม่ใช่ระบบ AI อิสระที่ดำเนินการภายใต้อำนาจที่มอบหมาย ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?"))
@@ -198,7 +198,7 @@ J.P. Morgan คาดว่าพาณิชย์แบบเอเจนต�
 ## อ้างอิง
 
 - Fenwick, (2026). [Is 2026 the Year of Agentic Payments? ⧉](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 

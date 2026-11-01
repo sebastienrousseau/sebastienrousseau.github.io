@@ -529,7 +529,12 @@ def test_strip_legacy_inline_banner_helper_branches():
 
 
 def test_add_cloudcdn_cors_and_manifest_icons(tmp_path):
-    from postbuild_assets import add_cloudcdn_cors, normalise_manifest_icons
+    # Module import, not ``from``: the other tests here import the module,
+    # and mixing both forms is CodeQL py/import-and-import-from.
+    import postbuild_assets as _pb
+
+    add_cloudcdn_cors = _pb.add_cloudcdn_cors
+    normalise_manifest_icons = _pb.normalise_manifest_icons
 
     html = (
         '<link rel="icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" />'

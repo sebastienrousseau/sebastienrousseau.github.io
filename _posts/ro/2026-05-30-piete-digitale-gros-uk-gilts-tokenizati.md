@@ -116,7 +116,7 @@ Champion-ul este pârghia care le obligă să o facă.
 > - **Gilts merg primele pentru că sunt cele mai grele active de făcut corect.** HQLA pe DLT, decontate atomic contra numerar tokenizat, validează stiva completă — emisiune, tranzacționare, repo, colateral, bani de bancă centrală — pe cel mai adânc fond în lire sterline ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **Repo intraday este câștigul imediat.** Un repo atomic T+0 pe gilts tokenizate eliberează capital care astăzi stă imobilizat ca tampon de lichiditate same-day. Economia trece direct în ROE.
 > - **Orchestrarea înlocuiește rețelele de sine stătătoare.** Regulated Liability Network, Canton, DLT-uri private ale băncilor, RTGS și banii băncii comerciale tokenizați duc fiecare fluxuri de lucru pe care băncile deja le rulează. Sarcina este rutarea între ele, nu alegerea uneia.
-> - **Policy-as-code este singurul model de conformitate care ține pasul.** Sancțiuni, KYC, limite de poziție, restricții jurisdicționale — codificate în stratul de decontare, executate atomic odată cu tranzacția, producând o pistă de audit criptografică, nu un jurnal în care reglementatorul trebuie să aibă încredere ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Actualizare privind plățile – mai 2026")).
+> - **Policy-as-code este singurul model de conformitate care ține pasul.** Sancțiuni, KYC, limite de poziție, restricții jurisdicționale — codificate în stratul de decontare, executate atomic odată cu tranzacția, producând o pistă de audit criptografică, nu un jurnal în care reglementatorul trebuie să aibă încredere ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Actualizare privind plățile – mai 2026")).
 > - **Arhitectura este șanțul de apărare.** Câștigătorii țes flux de lucru, date, canal de plată, control și economie unitară într-un singur model operațional. Perdanții rulează un portofoliu de piloți deconectați și îl numesc strategie.
 >
 ---
@@ -153,7 +153,7 @@ Pornește de la frecare. Lichiditate blocată, rupturi de decontare, cost de rec
 
 ### Datele ca plan de control
 
-Payload-urile ISO 20022 legate de hash-urile tranzacțiilor on-chain transformă datele de decontare într-o singură sursă a adevărului. Fără acea legare, automatizarea smart contract este fragilă, iar reconcilierea revine la foi de calcul. Cu ea, băncile obțin procesare directă (STP), controale în timp real și analitică pe care clienții vor plăti efectiv ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Actualizare privind plățile – mai 2026")).
+Payload-urile ISO 20022 legate de hash-urile tranzacțiilor on-chain transformă datele de decontare într-o singură sursă a adevărului. Fără acea legare, automatizarea smart contract este fragilă, iar reconcilierea revine la foi de calcul. Cu ea, băncile obțin procesare directă (STP), controale în timp real și analitică pe care clienții vor plăti efectiv ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Actualizare privind plățile – mai 2026")).
 
 ### Orchestrare între canale
 
@@ -234,7 +234,7 @@ Puncte de bază economisite la finanțarea colateralului. Reducerea tamponului d
 - GOV.UK, (2026). [Fintech-ul britanic susținut să adopte tehnologia plăților viitoare ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "Fintech-ul britanic susținut").
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
-- Association of Corporate Treasurers, (2026). [Actualizare privind plățile – mai 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Actualizare plăți").
+- Association of Corporate Treasurers, (2026). [Actualizare privind plățile – mai 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Actualizare plăți").
 - Global Government Finance, (2026). [Champion-ul britanic al piețelor digitale de gros ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Champion-ul britanic al piețelor digitale de gros").
 
 <!-- enrich-start -->

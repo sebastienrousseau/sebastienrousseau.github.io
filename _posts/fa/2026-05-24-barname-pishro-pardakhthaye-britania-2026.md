@@ -20,7 +20,7 @@ keywords: "برنامه پیش‌رو پرداخت‌های بریتانیا ۲�
 > **خلاصه اجرایی / نکات کلیدی**
 >
 > - **سیاست پرداخت‌ها اکنون راهبردی است.** این موضوع به جای یک عرضه محصول محدود، به مدل عملیاتی، تاب‌آوری، ارزش مشتری و شواهد مقرراتی گره خورده است ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **اصل طراحی، یک محدوده مقرراتی واحد است.** بانک‌ها به معماری‌ای نیاز دارند که سیاست، محصول، داده، انتخاب بستر، کنترل‌های ریسک و اقتصاد قابل‌سنجش را به هم پیوند دهد ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **اصل طراحی، یک محدوده مقرراتی واحد است.** بانک‌ها به معماری‌ای نیاز دارند که سیاست، محصول، داده، انتخاب بستر، کنترل‌های ریسک و اقتصاد قابل‌سنجش را به هم پیوند دهد ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **مدل کنترل باید بی‌درنگ باشد.** تصمیم‌گیری‌های مربوط به تقلب، نقدینگی، انطباق، تسویه و ریسک عملیاتی باید با سرعت جریان کاری اجرا شوند، نه پس از رویداد.
 > - **کیفیت داده به مزیت تجاری تبدیل می‌شود.** داده ساختاریافته، بافتار تراکنش، گزارش‌های حسابرسی و سیگنال‌های هویتی به بستری برای خودکارسازی و محصولات مشتری‌محور تبدیل می‌شوند.
 > - **پراکندگی دشمن است.** بانکی که پیرامون هر بستر، توکن، مدل یا الزام انطباق، آزمایش‌های منفرد بسازد، ریسک عملیاتی آینده ایجاد می‌کند.
@@ -32,7 +32,7 @@ keywords: "برنامه پیش‌رو پرداخت‌های بریتانیا ۲�
 
 صنعت از مرحله پذیرش فراتر رفته است. دیگر پیوستن به یک بستر، مهاجرت یک پیام، اجرای یک اثبات مفهوم هوش مصنوعی یا اعلام یک آزمایش توکنی‌سازی کافی نیست. در سال ۲۰۲۶، مزیت راهبردی از هماهنگ‌سازی این قابلیت‌ها در برابر یک جریان کاری واقعی حاصل می‌شود و سپس اثبات اینکه آن جریان کاری امن‌تر، سریع‌تر، ارزان‌تر، تاب‌آورتر یا برای مشتریان سودمندتر است.
 
-به همین دلیل است که سیاست پرداخت‌ها اکنون موضوعی در سطح هیئت مدیره است. همان فشارها بارها تکرار می‌شوند: داده‌های غنی‌تر پرداخت، تسویه بی‌درنگ، پول توکنی‌شده، تصمیم‌گیری هوش مصنوعی، بانکداری باز، تاب‌آوری عملیاتی، تمرکز ابری و شواهد مقرراتی قوی‌تر. اگر جداگانه بررسی شوند، این فشارها گسترش بی‌رویه برنامه‌ها را ایجاد می‌کنند. اگر به عنوان یک معماری واحد بررسی شوند، اهرم عملیاتی ایجاد می‌کنند ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")، [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+به همین دلیل است که سیاست پرداخت‌ها اکنون موضوعی در سطح هیئت مدیره است. همان فشارها بارها تکرار می‌شوند: داده‌های غنی‌تر پرداخت، تسویه بی‌درنگ، پول توکنی‌شده، تصمیم‌گیری هوش مصنوعی، بانکداری باز، تاب‌آوری عملیاتی، تمرکز ابری و شواهد مقرراتی قوی‌تر. اگر جداگانه بررسی شوند، این فشارها گسترش بی‌رویه برنامه‌ها را ایجاد می‌کنند. اگر به عنوان یک معماری واحد بررسی شوند، اهرم عملیاتی ایجاد می‌کنند ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")، [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## خط پایه معماری در ۲۰۲۶
 
@@ -42,7 +42,7 @@ keywords: "برنامه پیش‌رو پرداخت‌های بریتانیا ۲�
 
 ### ۲. داده به عنوان لایه کنترل
 
-داده ساختاریافته، تحت حاکمیت و قابل‌ردیابی، شالوده کار است. بدون داده قابل‌استفاده، خودکارسازی شکننده و انطباق دستی می‌شود. با داده قابل‌استفاده، بانک‌ها می‌توانند هوش مسیریابی، کنترل‌های بی‌درنگ و تحلیل‌های مشتری‌محور ایجاد کنند ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+داده ساختاریافته، تحت حاکمیت و قابل‌ردیابی، شالوده کار است. بدون داده قابل‌استفاده، خودکارسازی شکننده و انطباق دستی می‌شود. با داده قابل‌استفاده، بانک‌ها می‌توانند هوش مسیریابی، کنترل‌های بی‌درنگ و تحلیل‌های مشتری‌محور ایجاد کنند ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### ۳. هماهنگ‌سازی در سراسر بسترها و پلتفرم‌ها
 
@@ -109,5 +109,5 @@ keywords: "برنامه پیش‌رو پرداخت‌های بریتانیا ۲�
 ## منابع
 
 - GOV.UK، (۲۰۲۶). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers، (۲۰۲۶). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers، (۲۰۲۶). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance، (۲۰۲۶). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").

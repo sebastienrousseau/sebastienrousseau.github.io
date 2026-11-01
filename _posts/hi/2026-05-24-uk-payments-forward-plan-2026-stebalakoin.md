@@ -108,7 +108,7 @@ UK Payments Forward Plan और अप्रैल 2026 नीति पैक�
 > **कार्यकारी सारांश / मुख्य निष्कर्ष**
 >
 > - **भुगतान नीति अब रणनीतिक है।** यह विषय किसी संकीर्ण उत्पाद लॉन्च के बजाय संचालन मॉडल, प्रत्यास्थता, क्लाइंट मूल्य और नियामक साक्ष्य से जुड़ा है ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"))।
-> - **डिज़ाइन सिद्धांत एक नियामक परिधि है।** बैंकों को ऐसी आर्किटेक्चर चाहिए जो नीति, उत्पाद, डेटा, रेल चयन, जोखिम नियंत्रण और मापनीय अर्थशास्त्र को जोड़े ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
+> - **डिज़ाइन सिद्धांत एक नियामक परिधि है।** बैंकों को ऐसी आर्किटेक्चर चाहिए जो नीति, उत्पाद, डेटा, रेल चयन, जोखिम नियंत्रण और मापनीय अर्थशास्त्र को जोड़े ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
 > - **नियंत्रण मॉडल रीयल-टाइम होना चाहिए।** धोखाधड़ी, तरलता, अनुपालन, निपटान और परिचालन-जोखिम निर्णय वर्कफ़्लो की गति पर चलने चाहिए, घटना के बाद नहीं।
 > - **डेटा गुणवत्ता वाणिज्यिक बढ़त बनती है।** संरचित डेटा, लेन-देन संदर्भ, ऑडिट लॉग और पहचान संकेत स्वचालन तथा क्लाइंट-सम्मुख उत्पादों का आधार बनते हैं।
 > - **विखंडन शत्रु है।** जो बैंक प्रत्येक रेल, टोकन, मॉडल या अनुपालन आवश्यकता पर पृथक पायलट गढ़ता है, वह भावी परिचालन जोखिम उत्पन्न करता है।
@@ -120,7 +120,7 @@ UK Payments Forward Plan और अप्रैल 2026 नीति पैक�
 
 उद्योग अंगीकरण चरण से आगे बढ़ चुका है। किसी रेल से जुड़ना, संदेश माइग्रेट करना, AI प्रूफ-ऑफ-कॉन्सेप्ट चलाना, या टोकनीकरण पायलट की घोषणा करना अब पर्याप्त नहीं है। 2026 में, रणनीतिक बढ़त उन क्षमताओं को किसी वास्तविक वर्कफ़्लो के विरुद्ध ऑर्केस्ट्रेट करने और फिर यह सिद्ध करने से आती है कि वर्कफ़्लो अधिक सुरक्षित, तेज़, सस्ता, अधिक प्रत्यास्थ, या क्लाइंट के लिए अधिक उपयोगी है।
 
-यही कारण है कि भुगतान नीति अब बोर्ड-स्तरीय विषय है। वही दबाव बार-बार दोहराए जाते हैं: समृद्ध भुगतान डेटा, रीयल-टाइम निपटान, टोकनीकृत मुद्रा, AI निर्णयन, ओपन बैंकिंग, परिचालन प्रत्यास्थता, क्लाउड संकेंद्रण और सशक्त नियामक साक्ष्य। पृथक रूप में देखे जाएँ तो ये दबाव कार्यक्रम बिखराव पैदा करते हैं। एक आर्किटेक्चर के रूप में देखे जाएँ तो परिचालन लीवरेज पैदा करते हैं ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
+यही कारण है कि भुगतान नीति अब बोर्ड-स्तरीय विषय है। वही दबाव बार-बार दोहराए जाते हैं: समृद्ध भुगतान डेटा, रीयल-टाइम निपटान, टोकनीकृत मुद्रा, AI निर्णयन, ओपन बैंकिंग, परिचालन प्रत्यास्थता, क्लाउड संकेंद्रण और सशक्त नियामक साक्ष्य। पृथक रूप में देखे जाएँ तो ये दबाव कार्यक्रम बिखराव पैदा करते हैं। एक आर्किटेक्चर के रूप में देखे जाएँ तो परिचालन लीवरेज पैदा करते हैं ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
 
 ## 2026 आर्किटेक्चर बेसलाइन
 
@@ -130,7 +130,7 @@ UK Payments Forward Plan और अप्रैल 2026 नीति पैक�
 
 ### 2. नियंत्रण तल के रूप में डेटा
 
-संरचित, शासित और अनुरेखणीय डेटा आधारशिला है। उपयोगयोग्य डेटा के बिना, स्वचालन भंगुर बनता है और अनुपालन मैन्युअल हो जाता है। उपयोगयोग्य डेटा के साथ, बैंक रूटिंग इंटेलिजेंस, रीयल-टाइम नियंत्रण और क्लाइंट-सम्मुख विश्लेषण रच सकते हैं ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
+संरचित, शासित और अनुरेखणीय डेटा आधारशिला है। उपयोगयोग्य डेटा के बिना, स्वचालन भंगुर बनता है और अनुपालन मैन्युअल हो जाता है। उपयोगयोग्य डेटा के साथ, बैंक रूटिंग इंटेलिजेंस, रीयल-टाइम नियंत्रण और क्लाइंट-सम्मुख विश्लेषण रच सकते हैं ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
 
 ### 3. रेलों व प्लेटफ़ॉर्मों में ऑर्केस्ट्रेशन
 
@@ -197,7 +197,7 @@ UK Payments Forward Plan 2026 अंततः एक आर्किटेक्
 ## संदर्भ
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed")।
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update")।
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update")।
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion")।
 
 <!-- enrich-start -->

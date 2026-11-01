@@ -20,7 +20,7 @@ keywords: "AI கட்டணங்கள் 2026, கட்டண மோசட�
 > **நிர்வாகச் சுருக்கம் / முக்கியக் கருத்துகள்**
 >
 > - **கட்டண நுண்ணறிவு இப்போது மூலோபாயமானது.** இந்தத் தலைப்பு ஒரு குறுகிய தயாரிப்பு வெளியீட்டைவிட இயக்க மாதிரி, மீள்திறன், வாடிக்கையாளர் மதிப்பு மற்றும் ஒழுங்குமுறை சான்றுடன் இணைக்கப்பட்டுள்ளது ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **வடிவமைப்புக் கொள்கை நிகழ்நேரக் கட்டுப்பாடு.** கொள்கை, தயாரிப்பு, தரவு, தண்டவாளத் தேர்வு, ஆபத்துக் கட்டுப்பாடுகள் மற்றும் அளவிடக்கூடிய பொருளாதாரத்தை இணைக்கும் கட்டமைப்பு வங்கிகளுக்குத் தேவை ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **வடிவமைப்புக் கொள்கை நிகழ்நேரக் கட்டுப்பாடு.** கொள்கை, தயாரிப்பு, தரவு, தண்டவாளத் தேர்வு, ஆபத்துக் கட்டுப்பாடுகள் மற்றும் அளவிடக்கூடிய பொருளாதாரத்தை இணைக்கும் கட்டமைப்பு வங்கிகளுக்குத் தேவை ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **கட்டுப்பாட்டு மாதிரி நிகழ்நேரமாக இருக்க வேண்டும்.** மோசடி, பணப்புழக்கம், இணக்கம், தீர்வு மற்றும் செயல்பாட்டு-ஆபத்து முடிவுகள் நிகழ்வுக்குப் பிறகு அல்ல, பணிப்பாய்வின் வேகத்தில் இயங்க வேண்டும்.
 > - **தரவுத் தரம் வணிக நன்மையாக மாறுகிறது.** கட்டமைக்கப்பட்ட தரவு, பரிவர்த்தனை சூழல், தணிக்கைப் பதிவுகள் மற்றும் அடையாள சமிக்ஞைகள் தன்னியக்கம் மற்றும் வாடிக்கையாளர்-முகப்பு தயாரிப்புகளுக்கான அடிப்படையாக மாறுகின்றன.
 > - **துண்டாக்கம் எதிரி.** ஒவ்வொரு தண்டவாளம், டோக்கன், மாதிரி அல்லது இணக்கத் தேவையைச் சுற்றி தனிமைப்படுத்தப்பட்ட சோதனைகளை உருவாக்கும் வங்கி எதிர்கால இயக்க ஆபத்தை உருவாக்குகிறது.
@@ -32,7 +32,7 @@ keywords: "AI கட்டணங்கள் 2026, கட்டண மோசட�
 
 தொழில்துறை ஏற்புக் கட்டத்தைத் தாண்டி முன்னேறியுள்ளது. ஒரு தண்டவாளத்தில் சேர்வது, ஒரு செய்தியை இடம்பெயர்ப்பது, ஒரு AI கருத்துச் சான்றை இயக்குவது அல்லது ஒரு டோக்கனாக்கச் சோதனையை அறிவிப்பது இனி போதாது. 2026-இல், மூலோபாய விளிம்பு அந்தத் திறன்களை ஒரு உண்மையான பணிப்பாய்வுக்கு எதிராக ஒருங்கிணைத்து, பின்னர் அந்தப் பணிப்பாய்வு பாதுகாப்பானது, வேகமானது, மலிவானது, மிகவும் மீள்திறன் கொண்டது அல்லது வாடிக்கையாளர்களுக்கு மிகவும் பயனுள்ளது என்பதை நிரூபிப்பதிலிருந்து வருகிறது.
 
-அதனால்தான் கட்டண நுண்ணறிவு இப்போது வாரிய-அளவிலான தலைப்பாக உள்ளது. அதே அழுத்தங்கள் மீண்டும் மீண்டும் வருகின்றன: வளமான கட்டணத் தரவு, நிகழ்நேர தீர்வு, டோக்கனாக்கப்பட்ட பணம், AI முடிவெடுத்தல், Open Banking, செயல்பாட்டு மீள்திறன், கிளவுட் செறிவு மற்றும் வலுவான ஒழுங்குமுறை சான்று. தனித்தனியாகக் கருதப்பட்டால், அந்த அழுத்தங்கள் திட்டப் பரவலை உருவாக்குகின்றன. ஒரே கட்டமைப்பாகக் கருதப்பட்டால், அவை இயக்க செல்வாக்கை உருவாக்குகின்றன ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+அதனால்தான் கட்டண நுண்ணறிவு இப்போது வாரிய-அளவிலான தலைப்பாக உள்ளது. அதே அழுத்தங்கள் மீண்டும் மீண்டும் வருகின்றன: வளமான கட்டணத் தரவு, நிகழ்நேர தீர்வு, டோக்கனாக்கப்பட்ட பணம், AI முடிவெடுத்தல், Open Banking, செயல்பாட்டு மீள்திறன், கிளவுட் செறிவு மற்றும் வலுவான ஒழுங்குமுறை சான்று. தனித்தனியாகக் கருதப்பட்டால், அந்த அழுத்தங்கள் திட்டப் பரவலை உருவாக்குகின்றன. ஒரே கட்டமைப்பாகக் கருதப்பட்டால், அவை இயக்க செல்வாக்கை உருவாக்குகின்றன ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## 2026 கட்டமைப்பு அடிப்படை
 
@@ -42,7 +42,7 @@ keywords: "AI கட்டணங்கள் 2026, கட்டண மோசட�
 
 ### 2. கட்டுப்பாட்டுத் தளமாக தரவு
 
-கட்டமைக்கப்பட்ட, நிர்வகிக்கப்பட்ட மற்றும் கண்காணிக்கக்கூடிய தரவு அடித்தளம். பயன்படுத்தக்கூடிய தரவு இல்லாமல், தன்னியக்கம் உடையக்கூடியதாகவும் இணக்கம் கைமுறையாகவும் மாறுகிறது. பயன்படுத்தக்கூடிய தரவுடன், வங்கிகள் வழிநடத்தல் நுண்ணறிவு, நிகழ்நேரக் கட்டுப்பாடுகள் மற்றும் வாடிக்கையாளர்-முகப்பு பகுப்பாய்வை உருவாக்க முடியும் ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+கட்டமைக்கப்பட்ட, நிர்வகிக்கப்பட்ட மற்றும் கண்காணிக்கக்கூடிய தரவு அடித்தளம். பயன்படுத்தக்கூடிய தரவு இல்லாமல், தன்னியக்கம் உடையக்கூடியதாகவும் இணக்கம் கைமுறையாகவும் மாறுகிறது. பயன்படுத்தக்கூடிய தரவுடன், வங்கிகள் வழிநடத்தல் நுண்ணறிவு, நிகழ்நேரக் கட்டுப்பாடுகள் மற்றும் வாடிக்கையாளர்-முகப்பு பகுப்பாய்வை உருவாக்க முடியும் ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. தண்டவாளங்கள் மற்றும் தளங்கள் முழுவதும் ஒருங்கிணைப்பு
 
@@ -109,5 +109,5 @@ keywords: "AI கட்டணங்கள் 2026, கட்டண மோசட�
 ## குறிப்புகள்
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").

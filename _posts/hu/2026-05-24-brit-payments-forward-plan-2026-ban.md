@@ -20,7 +20,7 @@ A brit Payments Forward Plan és a 2026. áprilisi szakpolitikai csomag egyetlen
 > **Vezetői összefoglaló / Legfontosabb tanulságok**
 >
 > - **A fizetési szakpolitika mostantól stratégiai.** A téma a működési modellhez, az ellenállóképességhez, az ügyfélértékhez és a szabályozói bizonyítékokhoz kötődik, nem pedig egy szűk termékbevezetéshez ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **A tervezési alapelv az egységes szabályozói perem.** A bankoknak olyan architektúrára van szükségük, amely összeköti a szakpolitikát, a terméket, az adatokat, a csatornaválasztást, a kockázati kontrollokat és a mérhető gazdaságosságot ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **A tervezési alapelv az egységes szabályozói perem.** A bankoknak olyan architektúrára van szükségük, amely összeköti a szakpolitikát, a terméket, az adatokat, a csatornaválasztást, a kockázati kontrollokat és a mérhető gazdaságosságot ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **A kontrollmodellnek valós idejűnek kell lennie.** A csalással, likviditással, megfeleléssel, elszámolással és működési kockázattal kapcsolatos döntéseknek a munkafolyamat sebességén kell lefutniuk, nem az esemény után.
 > - **Az adatminőség kereskedelmi előnnyé válik.** A strukturált adatok, a tranzakciós kontextus, az auditnaplók és az identitásjelek az automatizálás és az ügyfélorientált termékek alapanyagává válnak.
 > - **A széttöredezettség az ellenség.** Az a bank, amely minden egyes csatorna, token, modell vagy megfelelési követelmény köré elszigetelt pilotokat épít, jövőbeli működési kockázatot teremt.
@@ -32,7 +32,7 @@ A brit Payments Forward Plan és a 2026. áprilisi szakpolitikai csomag egyetlen
 
 Az iparág túllépett az elfogadási szakaszon. Már nem elegendő csatlakozni egy csatornához, migrálni egy üzenetet, lefuttatni egy MI-koncepciótesztet vagy bejelenteni egy tokenizációs pilotot. 2026-ban a stratégiai előny abból ered, hogy ezeket a képességeket egy valós munkafolyamattal szemben orkesztráljuk, majd bebizonyítjuk, hogy a munkafolyamat biztonságosabb, gyorsabb, olcsóbb, ellenállóbb vagy hasznosabb az ügyfelek számára.
 
-Ezért van, hogy a fizetési szakpolitika ma már igazgatótanácsi szintű téma. Ugyanazok a nyomások térnek vissza újra és újra: gazdagabb fizetési adatok, valós idejű elszámolás, tokenizált pénz, MI-alapú döntéshozatal, open banking, működési ellenállóképesség, felhőkoncentráció és erősebb szabályozói bizonyítékok. Külön kezelve ezek a nyomások programburjánzást hoznak létre. Egyetlen architektúraként kezelve működési tőkeáttételt teremtenek ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Ezért van, hogy a fizetési szakpolitika ma már igazgatótanácsi szintű téma. Ugyanazok a nyomások térnek vissza újra és újra: gazdagabb fizetési adatok, valós idejű elszámolás, tokenizált pénz, MI-alapú döntéshozatal, open banking, működési ellenállóképesség, felhőkoncentráció és erősebb szabályozói bizonyítékok. Külön kezelve ezek a nyomások programburjánzást hoznak létre. Egyetlen architektúraként kezelve működési tőkeáttételt teremtenek ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## A 2026-os architektúra kiindulási alapja
 
@@ -42,7 +42,7 @@ A banknak a súrlódással kell kezdenie: befagyott likviditás, elszámolási k
 
 ### 2. Az adat mint kontrollsík
 
-A strukturált, felügyelt és nyomon követhető adat az alap. Használható adatok nélkül az automatizálás törékennyé válik, a megfelelés pedig manuálissá. Használható adatokkal a bankok útválasztási intelligenciát, valós idejű kontrollokat és ügyfélorientált analitikát hozhatnak létre ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+A strukturált, felügyelt és nyomon követhető adat az alap. Használható adatok nélkül az automatizálás törékennyé válik, a megfelelés pedig manuálissá. Használható adatokkal a bankok útválasztási intelligenciát, valós idejű kontrollokat és ügyfélorientált analitikát hozhatnak létre ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orkesztráció a csatornákon és platformokon át
 
@@ -109,5 +109,5 @@ A sikert az egységgazdaságosság, az ellenállóképességre vonatkozó bizony
 ## Hivatkozások
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").

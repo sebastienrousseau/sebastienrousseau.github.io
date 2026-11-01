@@ -113,7 +113,7 @@ Koordynator jest dźwignią, która ich do tego zmusza.
 > - **Gilty idą pierwsze, bo są najtrudniejszą klasą aktywów.** HQLA na DLT, rozliczane atomowo wobec tokenizowanej gotówki, walidują cały stos — emisję, obrót, repo, zabezpieczenia, pieniądz banku centralnego — na najgłębszej puli funta szterlinga ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **Repo intraday to natychmiastowa nagroda.** Atomowe repo T+0 tokenizowanych giltów uwalnia kapitał, który dziś leży bezczynnie jako bufor płynności same-day. Oszczędności spływają wprost do ROE.
 > - **Orkiestracja zastępuje autonomiczne sieci.** Regulated Liability Network, Canton, prywatne DLT banków, RTGS i tokenizowany pieniądz banku komercyjnego — każda z tych szyn niesie przepływy pracy, które banki już prowadzą. Zadaniem jest rutować przez nie wszystkie, a nie wybrać jedną.
-> - **Policy-as-code to jedyny model zgodności, który nadąża.** Sankcje, KYC, limity pozycji, bramy jurysdykcyjne — zakodowane w warstwie rozliczeniowej, wykonywane atomowo razem z transakcją, generujące kryptograficzny ślad audytowy zamiast logu, któremu regulator musi zaufać ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Aktualizacja sektora płatności — maj 2026")).
+> - **Policy-as-code to jedyny model zgodności, który nadąża.** Sankcje, KYC, limity pozycji, bramy jurysdykcyjne — zakodowane w warstwie rozliczeniowej, wykonywane atomowo razem z transakcją, generujące kryptograficzny ślad audytowy zamiast logu, któremu regulator musi zaufać ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Aktualizacja sektora płatności — maj 2026")).
 > - **Architektura jest fosą.** Zwycięzcy splatają przepływ pracy, dane, tor płatniczy, kontrolę i ekonomikę jednostkową w jeden model operacyjny. Przegrani prowadzą portfel rozłącznych pilotaży i nazywają to strategią.
 >
 ---
@@ -150,7 +150,7 @@ Zaczynaj od tarcia. Uwięziona płynność, łamania rozliczeniowe, koszt uzgadn
 
 ### Dane jako warstwa kontrolna
 
-Payloady ISO 20022 powiązane z hashami transakcji on-chain zamieniają dane rozliczeniowe w jedno źródło prawdy. Bez tego powiązania automatyzacja smart kontraktu jest krucha, a uzgadnianie wraca do arkuszy kalkulacyjnych. Z nim banki dostają straight-through processing, kontrole w czasie rzeczywistym i analitykę, za którą klienci faktycznie zapłacą ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Aktualizacja sektora płatności — maj 2026")).
+Payloady ISO 20022 powiązane z hashami transakcji on-chain zamieniają dane rozliczeniowe w jedno źródło prawdy. Bez tego powiązania automatyzacja smart kontraktu jest krucha, a uzgadnianie wraca do arkuszy kalkulacyjnych. Z nim banki dostają straight-through processing, kontrole w czasie rzeczywistym i analitykę, za którą klienci faktycznie zapłacą ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Aktualizacja sektora płatności — maj 2026")).
 
 ### Orkiestracja na torach płatniczych
 
@@ -231,7 +231,7 @@ Punkty bazowe zaoszczędzone na finansowaniu zabezpieczeń. Redukcja bufora pły
 - GOV.UK, (2026). [Brytyjski fintech wsparty technologią płatności przyszłości ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "Brytyjski fintech wsparty").
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
-- Association of Corporate Treasurers, (2026). [Aktualizacja sektora płatności — maj 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Aktualizacja sektora płatności").
+- Association of Corporate Treasurers, (2026). [Aktualizacja sektora płatności — maj 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Aktualizacja sektora płatności").
 - Global Government Finance, (2026). [Koordynator hurtowych rynków cyfrowych UK ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Koordynator hurtowych rynków cyfrowych UK").
 
 <!-- enrich-start -->

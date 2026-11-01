@@ -113,7 +113,7 @@ Tokenleştirilmiş toptan finans artık bir düşünce deneyi değil. 2026'da st
 > - **Gilt'ler ilk sıradadır çünkü doğru kurulması en zor varlıktır.** DLT üzerindeki HQLA, tokenleştirilmiş nakde karşı atomik mutabakatla, tüm yığını — ihraç, ticaret, repo, teminat, merkez bankası parası — en derin sterlin havuzunda doğrular ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **Gün içi repo somut ödüldür.** Tokenleştirilmiş gilt'lerin T+0 atomik repoları, bugün aynı gün likidite tamponu olarak atıl duran sermayeyi serbest bırakır. Tasarruflar doğrudan ROE'ye düşer.
 > - **Orkestrasyon, bağımsız ağların yerini alır.** Regulated Liability Network, Canton, özel banka DLT'leri, RTGS ve tokenleştirilmiş ticari banka parası — her biri bankaların zaten yürüttüğü iş akışlarını taşır. Görev, bunlar arasında yönlendirme yapmaktır, birini seçmek değil.
-> - **Policy-as-code, tek başına ayak uyduran uyum modelidir.** Yaptırımlar, KYC, pozisyon limitleri, yetki alanı kapıları — mutabakat katmanına gömülür, ticaretle birlikte atomik olarak yürütülür ve düzenleyicinin güvenmek zorunda olduğu bir kayıt yerine kriptografik denetim izi üretir ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Ödemelerde son durum – Mayıs 2026")).
+> - **Policy-as-code, tek başına ayak uyduran uyum modelidir.** Yaptırımlar, KYC, pozisyon limitleri, yetki alanı kapıları — mutabakat katmanına gömülür, ticaretle birlikte atomik olarak yürütülür ve düzenleyicinin güvenmek zorunda olduğu bir kayıt yerine kriptografik denetim izi üretir ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Ödemelerde son durum – Mayıs 2026")).
 > - **Mimari, savunma hattıdır.** Kazananlar iş akışını, veriyi, ödeme kanalını, kontrolü ve birim ekonomisini tek bir işletim modeline örer. Kaybedenler birbirinden kopuk pilotların portföyünü yönetir ve buna strateji der.
 >
 ---
@@ -150,7 +150,7 @@ Sürtünmeden başlayın. Sıkışmış likidite, mutabakat kopmaları, mutabaka
 
 ### Kontrol Düzlemi Olarak Veri
 
-Zincir üstü işlem özetlerine bağlanan ISO 20022 yükleri, mutabakat verisini tek bir doğruluk kaynağına dönüştürür. Bu bağ olmadan akıllı sözleşme otomasyonu kırılgan kalır ve mutabakat hesap tablolarına geri döner. Bu bağ kurulduğunda bankalar düz geçiş işleme (STP), gerçek zamanlı kontroller ve müşterilerin gerçekten ödeyeceği analitik elde eder ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Ödemelerde son durum – Mayıs 2026")).
+Zincir üstü işlem özetlerine bağlanan ISO 20022 yükleri, mutabakat verisini tek bir doğruluk kaynağına dönüştürür. Bu bağ olmadan akıllı sözleşme otomasyonu kırılgan kalır ve mutabakat hesap tablolarına geri döner. Bu bağ kurulduğunda bankalar düz geçiş işleme (STP), gerçek zamanlı kontroller ve müşterilerin gerçekten ödeyeceği analitik elde eder ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Ödemelerde son durum – Mayıs 2026")).
 
 ### Kanallar Arası Orkestrasyon
 
@@ -231,7 +231,7 @@ Teminat fonlamasında kazanılan baz puanlar. Gün içi likidite tamponunda azal
 - GOV.UK, (2026). [Birleşik Krallık fintech'i geleceğin ödeme teknolojisi için destekleniyor ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "Birleşik Krallık fintech destekleniyor").
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
-- Association of Corporate Treasurers, (2026). [Ödemelerde son durum – Mayıs 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Ödeme manzarası güncellemesi").
+- Association of Corporate Treasurers, (2026). [Ödemelerde son durum – Mayıs 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Ödeme manzarası güncellemesi").
 - Global Government Finance, (2026). [Birleşik Krallık toptan dijital piyasalar şampiyonu ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Birleşik Krallık toptan dijital piyasalar şampiyonu").
 
 <!-- enrich-start -->

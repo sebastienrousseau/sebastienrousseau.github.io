@@ -26,7 +26,7 @@ Sits behind the Cloudflare `lang-router` Worker at `/api/pdf/<slug>.pdf`. The Wo
 ```bash
 cd fly/pdf-render
 fly auth login                                 # opens browser
-fly launch --copy-config --name pdf-render --org personal --region lhr
+fly launch --copy-config --name <app-name> --org personal --region lhr  # a name you own; see below
 # (no Postgres, no Redis, no Tigris — accept the "no" defaults)
 fly deploy
 fly status                                     # should show 1 machine running
@@ -54,7 +54,7 @@ curl 'http://localhost:8080/render?slug=2026-06-08-banking-resilience-index-ai-c
 
 ## Wiring with the Worker
 
-The route `/api/pdf/<slug>.pdf` lives in `workers/lang-router.js`. It validates the slug, then calls `fetch(${PDF_RENDER_BASE}/render?slug=${slug})` where `PDF_RENDER_BASE = "https://pdf-render.fly.dev"` (the default Fly hostname; set a custom domain after deploy if you prefer). The Cloudflare cache rule applies `Cache-Control: public, max-age=86400, immutable`, so repeats never touch Fly.
+The route `/api/pdf/<slug>.pdf` (EN) and `/api/pdf/<lang>/<slug>.pdf` (translations) lives in `workers/pdf-proxy.js`, called from `workers/lang-router.js`. It validates the slug and locale, then calls `${PDF_RENDER_BASE}/render?slug=<slug>[&lang=<lang>]` with a 10 s timeout. `PDF_RENDER_BASE` and `PDF_ORIGIN_TOKEN` are Worker variables; with no `PDF_RENDER_BASE` the route answers 503 at once and the page falls back to `window.print()`. There is no default host: `https://pdf-render.fly.dev` does not run this service (on 2026-11-01 it answered `/healthz` with an empty 204 and Node `helmet` headers, and hung every `/render` GET). Deploy under a name you own (`fly launch --name <name>`), then set `PDF_RENDER_BASE=https://<name>.fly.dev`. Every PDF response carries `X-Robots-Tag: noindex, nofollow`; the edge caches successful renders for 24 h.
 
 ## Free-tier budget
 

@@ -178,7 +178,7 @@ The UK Payments Forward Plan and April 2026 policy package point to a single coh
 > **Executive Summary / Key Takeaways**
 >
 > - **Payments Policy is now strategic.** The topic is tied to operating model, resilience, client value, and regulatory evidence rather than a narrow product launch ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **The design principle is one regulatory perimeter.** Banks need architecture that connects policy, product, data, rail choice, risk controls, and measurable economics ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **The design principle is one regulatory perimeter.** Banks need architecture that connects policy, product, data, rail choice, risk controls, and measurable economics ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **The control model must be real time.** Fraud, liquidity, compliance, settlement, and operational-risk decisions must run at the speed of the workflow, not after the event.
 > - **Data quality becomes commercial advantage.** Structured data, transaction context, audit logs, and identity signals become the substrate for automation and client-facing products.
 > - **Fragmentation is the enemy.** A bank that builds isolated pilots around each rail, token, model, or compliance requirement creates future operating risk.
@@ -190,7 +190,7 @@ The UK Payments Forward Plan and April 2026 policy package point to a single coh
 
 The industry has moved beyond the adoption phase. It is no longer enough to join a rail, migrate a message, run an AI proof of concept, or announce a tokenisation pilot. In 2026, the strategic edge comes from orchestrating those capabilities against a real workflow, then proving that the workflow is safer, faster, cheaper, more resilient, or more useful to clients.
 
-That is why payments policy is now a board-level topic. The same pressures keep recurring: richer payment data, real-time settlement, tokenised money, AI decisioning, Open Banking, operational resilience, cloud concentration, and stronger regulatory evidence. Treated separately, those pressures create programme sprawl. Treated as one architecture, they create operating leverage ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+That is why payments policy is now a board-level topic. The same pressures keep recurring: richer payment data, real-time settlement, tokenised money, AI decisioning, Open Banking, operational resilience, cloud concentration, and stronger regulatory evidence. Treated separately, those pressures create programme sprawl. Treated as one architecture, they create operating leverage ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## The 2026 Architecture Baseline
 
@@ -200,7 +200,7 @@ The bank should start with the friction: trapped liquidity, settlement delay, re
 
 ### 2. Data as the Control Plane
 
-Structured, governed, and traceable data is the foundation. Without usable data, automation becomes brittle and compliance becomes manual. With usable data, banks can create routing intelligence, real-time controls, and client-facing analytics ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Structured, governed, and traceable data is the foundation. Without usable data, automation becomes brittle and compliance becomes manual. With usable data, banks can create routing intelligence, real-time controls, and client-facing analytics ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orchestration Across Rails and Platforms
 
@@ -267,7 +267,7 @@ Success should be measured by unit economics, resilience evidence, data quality,
 ## References
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

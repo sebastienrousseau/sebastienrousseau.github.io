@@ -108,7 +108,7 @@ UK Payments Forward Plan și pachetul de politici din aprilie 2026 indică un ca
 > **Sinteză executivă / concluzii esențiale**
 >
 > - **Politica de plăți este acum strategică.** Tematica este legată de modelul operațional, reziliență, valoare pentru client și dovezi (evidence) de reglementare, nu de o lansare îngustă de produs ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **Principiul de proiectare este un singur perimetru de reglementare.** Băncile au nevoie de o arhitectură care conectează politică, produs, date, alegerea căii, controale de risc și economie măsurabilă ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Principiul de proiectare este un singur perimetru de reglementare.** Băncile au nevoie de o arhitectură care conectează politică, produs, date, alegerea căii, controale de risc și economie măsurabilă ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Modelul de control trebuie să fie în timp real.** Deciziile de fraudă, lichiditate, conformitate, decontare și risc operațional trebuie să ruleze la viteza fluxului, nu după eveniment.
 > - **Calitatea datelor devine avantaj comercial.** Datele structurate, contextul tranzacțional, jurnalele de audit și semnalele de identitate devin substratul automatizării și al produselor către client.
 > - **Fragmentarea este inamicul.** O bancă ce construiește piloți izolați în jurul fiecărei căi, token, model sau cerințe de conformitate generează risc operațional viitor.
@@ -120,7 +120,7 @@ UK Payments Forward Plan și pachetul de politici din aprilie 2026 indică un ca
 
 Industria a depășit faza de adopție. Nu mai este suficient să te conectezi la o cale, să migrezi un mesaj, să rulezi o probă de concept AI sau să anunți un pilot de tokenizare. În 2026, avantajul strategic vine din orchestrarea acestor capabilități pe un flux real, urmată de demonstrarea faptului că fluxul este mai sigur, mai rapid, mai ieftin, mai rezilient sau mai util clienților.
 
-De aceea politica de plăți este astăzi un subiect de consiliu de administrație. Aceleași presiuni revin constant: date de plată mai bogate, decontare în timp real, bani tokenizați, decizie AI, Open Banking, reziliență operațională, concentrare cloud și dovezi de reglementare mai puternice. Tratate separat, aceste presiuni generează expansiune necontrolată a programelor. Tratate ca o arhitectură unică, generează levier operațional ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+De aceea politica de plăți este astăzi un subiect de consiliu de administrație. Aceleași presiuni revin constant: date de plată mai bogate, decontare în timp real, bani tokenizați, decizie AI, Open Banking, reziliență operațională, concentrare cloud și dovezi de reglementare mai puternice. Tratate separat, aceste presiuni generează expansiune necontrolată a programelor. Tratate ca o arhitectură unică, generează levier operațional ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Linia de bază a arhitecturii pentru 2026
 
@@ -130,7 +130,7 @@ Banca trebuie să pornească de la frecare: lichiditate (liquidity) blocată, î
 
 ### 2. Datele ca plan de control
 
-Datele structurate, guvernate și trasabile constituie fundamentul. Fără date utilizabile, automatizarea devine fragilă, iar conformitatea devine manuală. Cu date utilizabile, băncile pot crea inteligență de rutare, controale în timp real și analiză orientată către client ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Datele structurate, guvernate și trasabile constituie fundamentul. Fără date utilizabile, automatizarea devine fragilă, iar conformitatea devine manuală. Cu date utilizabile, băncile pot crea inteligență de rutare, controale în timp real și analiză orientată către client ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orchestrare pe căi și platforme
 
@@ -197,7 +197,7 @@ Succesul trebuie măsurat prin economie unitară, dovezi de reziliență, calita
 ## Referințe
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

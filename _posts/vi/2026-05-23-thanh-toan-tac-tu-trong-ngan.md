@@ -101,13 +101,13 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-Thanh toán tác tử đã vượt từ slide trình bày sang bằng chứng thị trường trực tiếp. Mastercard và Rabobank hoàn tất một thanh toán do AI agent khởi tạo tại Hà Lan, nơi một tác tử đã đặt một buổi nếm cà phê trên Priceless.com mà không truy cập trực tiếp chi tiết thẻ và với đồng ý người tiêu dùng được ghi nhận tường minh trước khi thực thi ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). Vấn đề chiến lược đối với ngân hàng hiện nay là kiến trúc đồng ý: làm sao một tổ chức tài chính chứng minh rằng một thanh toán do máy thực hiện thực sự được ủy quyền bởi cá nhân hoặc pháp nhân đứng sau nó.
+Thanh toán tác tử đã vượt từ slide trình bày sang bằng chứng thị trường trực tiếp. Mastercard và Rabobank hoàn tất một thanh toán do AI agent khởi tạo tại Hà Lan, nơi một tác tử đã đặt một buổi nếm cà phê trên Priceless.com mà không truy cập trực tiếp chi tiết thẻ và với đồng ý người tiêu dùng được ghi nhận tường minh trước khi thực thi ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). Vấn đề chiến lược đối với ngân hàng hiện nay là kiến trúc đồng ý: làm sao một tổ chức tài chính chứng minh rằng một thanh toán do máy thực hiện thực sự được ủy quyền bởi cá nhân hoặc pháp nhân đứng sau nó.
 
 ---
 
 > **Tóm tắt điều hành / Điểm chính**
 >
-> - **Tín hiệu thị trường đầu tiên đã hiện thực.** Mastercard và Rabobank hoàn tất một giao dịch AI agent tại Hà Lan sử dụng Mastercard Agent Pay, với tác tử bị ngăn truy cập trực tiếp dữ liệu thẻ ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Tín hiệu thị trường đầu tiên đã hiện thực.** Mastercard và Rabobank hoàn tất một giao dịch AI agent tại Hà Lan sử dụng Mastercard Agent Pay, với tác tử bị ngăn truy cập trực tiếp dữ liệu thẻ ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Giao thức thanh toán tác tử đang xuất hiện trước khi luật ổn định.** Fenwick xác định AP2, A2A, x402, MCP và MPP là các nỗ lực giao thức xử lý khả năng tương tác và ủy quyền tác tử ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **Đồng ý là vấn đề ngân hàng cốt lõi.** Ủy quyền mật mã kiểu AP2 nỗ lực ghi lại chỉ thị người dùng và phê duyệt cuối cùng làm bằng chứng có thể kiểm toán về ý định ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **Trách nhiệm pháp lý vẫn chưa được giải quyết.** Luật thanh toán hiện hành được thiết kế quanh giao dịch do con người quyết định, không phải hệ thống AI tự chủ hành động dưới thẩm quyền được ủy quyền ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
@@ -198,7 +198,7 @@ Ngân hàng nên bắt đầu với các trường hợp sử dụng rủi ro th
 ## Tài liệu tham khảo
 
 - Fenwick, (2026). [Is 2026 the Year of Agentic Payments? ⧉](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 

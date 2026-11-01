@@ -113,7 +113,7 @@ site_software: "Static Site Generator, Rust"
 > - **국채(gilt)부터 가는 이유는 가장 까다로운 자산이기 때문입니다.** DLT 위의 HQLA를 토큰화 현금과 원자적으로 결제하면 발행, 거래, 레포, 담보, 중앙은행 화폐로 이어지는 스택 전체를 가장 깊은 스털링 풀에서 검증할 수 있습니다 ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "디지털 증권 샌드박스")).
 > - **일중 레포가 즉각적인 과실입니다.** 토큰화 국채의 T+0 원자적 레포는 오늘 당일 유동성 버퍼로 묶여 있는 자본을 풀어줍니다. 절감액은 곧장 ROE로 흘러듭니다.
 > - **오케스트레이션이 독립 네트워크를 대체합니다.** Regulated Liability Network(RLN), Canton, 사설 은행 DLT, RTGS, 토큰화 상업은행 화폐는 각각 은행이 이미 운영 중인 워크플로를 담고 있습니다. 일은 그 위에 라우팅 계층을 얹는 것이지, 하나를 고르는 것이 아닙니다.
-> - **정책-as-코드(policy-as-code)가 유일하게 속도를 따라잡는 컴플라이언스 모델입니다.** 제재, KYC, 포지션 한도, 관할 게이트 — 이 모두를 결제 계층에 인코딩하여 거래와 함께 원자적으로 실행하고, 감독당국이 신뢰해야 하는 로그가 아니라 암호학적 감사 추적을 산출합니다 ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "2026년 5월 결제 환경 업데이트")).
+> - **정책-as-코드(policy-as-code)가 유일하게 속도를 따라잡는 컴플라이언스 모델입니다.** 제재, KYC, 포지션 한도, 관할 게이트 — 이 모두를 결제 계층에 인코딩하여 거래와 함께 원자적으로 실행하고, 감독당국이 신뢰해야 하는 로그가 아니라 암호학적 감사 추적을 산출합니다 ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "2026년 5월 결제 환경 업데이트")).
 > - **아키텍처가 해자입니다.** 승리자는 워크플로, 데이터, 결제 레일, 통제, 단위 경제성을 하나의 운영 모델로 엮습니다. 패자는 단절된 파일럿 포트폴리오를 운영하면서 그것을 전략이라고 부릅니다.
 >
 ---
@@ -150,7 +150,7 @@ DSS는 가동 중인 제도입니다. 이를 PoC가 아니라 플랫폼으로 �
 
 ### 통제 평면으로서의 데이터
 
-온체인 거래 해시에 바인딩된 ISO 20022 페이로드는 결제 데이터를 단일 진실 공급원으로 만듭니다. 그 바인딩이 없으면 스마트 컨트랙트 자동화는 취약해지고 대사는 다시 스프레드시트로 회귀합니다. 바인딩이 있으면 은행은 STP, 실시간 통제, 그리고 고객이 실제로 비용을 지불할 분석을 얻습니다 ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "2026년 5월 결제 환경 업데이트")).
+온체인 거래 해시에 바인딩된 ISO 20022 페이로드는 결제 데이터를 단일 진실 공급원으로 만듭니다. 그 바인딩이 없으면 스마트 컨트랙트 자동화는 취약해지고 대사는 다시 스프레드시트로 회귀합니다. 바인딩이 있으면 은행은 STP, 실시간 통제, 그리고 고객이 실제로 비용을 지불할 분석을 얻습니다 ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "2026년 5월 결제 환경 업데이트")).
 
 ### 레일을 가로지르는 오케스트레이션
 
@@ -231,7 +231,7 @@ Regulated Liability Network는 복수의 규제 기관이 발행하는 토큰화
 - GOV.UK, (2026). [영국 핀테크, 미래 결제 기술 채택을 정부가 지원 ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "영국 핀테크 지원").
 - Bank of England, (2026). [디지털 증권 샌드박스 ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "디지털 증권 샌드박스").
 - FCA, (2026). [디지털 증권 샌드박스 ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA 디지털 증권 샌드박스").
-- Association of Corporate Treasurers, (2026). [2026년 5월 결제 환경 업데이트 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "결제 환경 업데이트").
+- Association of Corporate Treasurers, (2026). [2026년 5월 결제 환경 업데이트 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "결제 환경 업데이트").
 - Global Government Finance, (2026). [영국 도매 디지털 시장 챔피언 ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "영국 도매 디지털 시장 챔피언").
 
 <!-- enrich-start -->

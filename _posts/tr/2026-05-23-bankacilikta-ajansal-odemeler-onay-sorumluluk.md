@@ -101,13 +101,13 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-Ajansal ödemeler, sunum dosyalarından canlı pazar kanıtına geçti. Mastercard ve Rabobank, Hollanda'da bir yapay zeka ajanı tarafından başlatılan bir ödemeyi tamamladı; ajan, Priceless.com üzerinden bir kahve tadımı rezervasyonunu kart bilgilerine doğrudan erişmeden ve tüketici onayı yürütmeden önce açıkça kayıt altına alınarak gerçekleştirdi ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). Bankalar için stratejik mesele artık onay mimarisidir: bir finans kuruluşu, bir makine ödemesinin arkasındaki insan veya kurumsal müvekkil tarafından gerçekten yetkilendirildiğini nasıl kanıtlayacaktır.
+Ajansal ödemeler, sunum dosyalarından canlı pazar kanıtına geçti. Mastercard ve Rabobank, Hollanda'da bir yapay zeka ajanı tarafından başlatılan bir ödemeyi tamamladı; ajan, Priceless.com üzerinden bir kahve tadımı rezervasyonunu kart bilgilerine doğrudan erişmeden ve tüketici onayı yürütmeden önce açıkça kayıt altına alınarak gerçekleştirdi ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). Bankalar için stratejik mesele artık onay mimarisidir: bir finans kuruluşu, bir makine ödemesinin arkasındaki insan veya kurumsal müvekkil tarafından gerçekten yetkilendirildiğini nasıl kanıtlayacaktır.
 
 ---
 
 > **Yönetici Özeti / Temel Çıkarımlar**
 >
-> - **İlk pazar sinyalleri canlıda.** Mastercard ve Rabobank, Mastercard Agent Pay kullanarak bir Hollanda yapay zeka ajan işlemini tamamladı; ajanın kart verilerine doğrudan erişimi engellendi ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **İlk pazar sinyalleri canlıda.** Mastercard ve Rabobank, Mastercard Agent Pay kullanarak bir Hollanda yapay zeka ajan işlemini tamamladı; ajanın kart verilerine doğrudan erişimi engellendi ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Ajansal ödeme protokolleri, hukuk yerleşmeden önce ortaya çıkıyor.** Fenwick; AP2, A2A, x402, MCP ve MPP'yi ajan birlikte çalışabilirliği ve yetkilendirmesini ele alan protokol çalışmaları olarak tanımlamaktadır ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **Onay, çekirdek bankacılık problemidir.** AP2 tarzı kriptografik mandalar, kullanıcı talimatlarını ve nihai onayı niyetin denetlenebilir kanıtı olarak yakalamayı amaçlar ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **Sorumluluk hâlâ çözümsüzdür.** Mevcut ödeme mevzuatı, devredilmiş yetkiyle hareket eden otonom yapay zeka sistemlerine göre değil, insanın karar verdiği işlemlere göre tasarlanmıştır ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
@@ -198,7 +198,7 @@ Bankalar; mandaların, harcama limitlerinin, itiraz kanıtının ve müşteri ko
 ## Referanslar
 
 - Fenwick, (2026). [Is 2026 the Year of Agentic Payments? ⧉](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 

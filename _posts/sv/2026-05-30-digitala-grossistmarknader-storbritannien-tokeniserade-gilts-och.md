@@ -116,7 +116,7 @@ Championen är hävstången som tvingar dem att göra det.
 > - **Gilts först eftersom de är den svåraste tillgången att få rätt.** HQLA på DLT, avvecklat atomärt mot tokeniserade kontanter, validerar hela stacken — emission, handel, repo, säkerheter, centralbankspengar — på den djupaste sterlingpoolen ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **Intradagsrepo är den omedelbara vinsten.** T+0 atomär repo av tokeniserade gilts frigör kapital som idag ligger inaktivt som likviditetsbuffert för samma dag. Besparingarna går rakt igenom till ROE.
 > - **Orkestrering ersätter fristående nätverk.** Regulated Liability Network, Canton, privata bank-DLT:er, RTGS och tokeniserade affärsbankspengar bär vart och ett arbetsflöden som banker redan kör. Uppgiften är att dirigera över dem, inte välja ett.
-> - **Policy-as-code är den enda efterlevnadsmodell som håller takten.** Sanktioner, KYC, positionsgränser, jurisdiktionsspärrar — kodade i avvecklingslagret, exekverade atomärt med affären, som producerar ett kryptografiskt revisionsspår snarare än en logg som tillsynsmyndigheten måste lita på ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Uppdatering om betalningsbilden – maj 2026")).
+> - **Policy-as-code är den enda efterlevnadsmodell som håller takten.** Sanktioner, KYC, positionsgränser, jurisdiktionsspärrar — kodade i avvecklingslagret, exekverade atomärt med affären, som producerar ett kryptografiskt revisionsspår snarare än en logg som tillsynsmyndigheten måste lita på ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Uppdatering om betalningsbilden – maj 2026")).
 > - **Arkitekturen är vallgraven.** Vinnarna väver samman arbetsflöde, data, betalningskanal, kontroll och enhetsekonomi till en operativ modell. Förlorarna driver en portfölj av frånkopplade piloter och kallar det strategi.
 >
 ---
@@ -153,7 +153,7 @@ Börja med friktionen. Instängd likviditet, avvecklingsbrott, avstämningskostn
 
 ### Data som kontrollplan
 
-ISO 20022-payloads bundna till transaktionshashar på kedjan förvandlar avvecklingsdata till en enda sanningskälla. Utan den bindningen är smart kontrakt-automation bräcklig och avstämningen återgår till kalkylblad. Med den får banker straight-through processing (STP), realtidskontroller och analys som kunder faktiskt betalar för ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Uppdatering om betalningsbilden – maj 2026")).
+ISO 20022-payloads bundna till transaktionshashar på kedjan förvandlar avvecklingsdata till en enda sanningskälla. Utan den bindningen är smart kontrakt-automation bräcklig och avstämningen återgår till kalkylblad. Med den får banker straight-through processing (STP), realtidskontroller och analys som kunder faktiskt betalar för ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Uppdatering om betalningsbilden – maj 2026")).
 
 ### Orkestrering över betalningskanaler
 
@@ -234,7 +234,7 @@ Baspunkter sparade på säkerhetsfinansiering. Reducering av intradagslikviditet
 - GOV.UK, (2026). [Brittisk fintech får stöd för framtidens betalningsteknik ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "Brittisk fintech får stöd").
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
-- Association of Corporate Treasurers, (2026). [Uppdatering om betalningsbilden – maj 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Uppdatering om betalningsbilden").
+- Association of Corporate Treasurers, (2026). [Uppdatering om betalningsbilden – maj 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Uppdatering om betalningsbilden").
 - Global Government Finance, (2026). [Storbritanniens champion för digitala grossistmarknader ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "Champion för digitala grossistmarknader").
 
 <!-- enrich-start -->

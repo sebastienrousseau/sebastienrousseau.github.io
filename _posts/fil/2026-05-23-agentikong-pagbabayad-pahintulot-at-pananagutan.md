@@ -101,13 +101,13 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-Tumawid na ang agentikong pagbabayad mula presentation deck patungo sa live-market evidence. Tinapos ng Mastercard at Rabobank ang isang pagbabayad na pinasimulan ng AI agent sa Netherlands, kung saan nag-book ang agent ng coffee tasting sa Priceless.com nang hindi direktang inaaccess ang detalye ng card at may tahasang pahintulot ng konsumer na naitala bago ang execution ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). Ang strategic na isyu ngayon para sa mga bangko ay ang arkitektura ng pahintulot: kung paano mapapatunayan ng isang institusyong pinansyal na ang isang machine payment ay tunay na inaprubahan ng human o corporate principal na nasa likod nito.
+Tumawid na ang agentikong pagbabayad mula presentation deck patungo sa live-market evidence. Tinapos ng Mastercard at Rabobank ang isang pagbabayad na pinasimulan ng AI agent sa Netherlands, kung saan nag-book ang agent ng coffee tasting sa Priceless.com nang hindi direktang inaaccess ang detalye ng card at may tahasang pahintulot ng konsumer na naitala bago ang execution ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). Ang strategic na isyu ngayon para sa mga bangko ay ang arkitektura ng pahintulot: kung paano mapapatunayan ng isang institusyong pinansyal na ang isang machine payment ay tunay na inaprubahan ng human o corporate principal na nasa likod nito.
 
 ---
 
 > **Executive Summary / Mga Pangunahing Punto**
 >
-> - **Buhay na ang unang signal ng merkado.** Tinapos ng Mastercard at Rabobank ang isang Netherlands AI-agent transaction gamit ang Mastercard Agent Pay, na pinigil ang agent sa direktang pag-access sa card data ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Buhay na ang unang signal ng merkado.** Tinapos ng Mastercard at Rabobank ang isang Netherlands AI-agent transaction gamit ang Mastercard Agent Pay, na pinigil ang agent sa direktang pag-access sa card data ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Lumilitaw ang mga agentic payment protocol bago pa man maging matatag ang batas.** Tinukoy ng Fenwick ang AP2, A2A, x402, MCP, at MPP bilang mga pagsisikap sa protocol na tumutugon sa interoperabilidad at awtorisasyon ng agent ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **Ang pahintulot ang core banking problem.** Sinusubukan ng AP2-style cryptographic mandates na kunin ang mga tagubilin ng user at ang final approval bilang auditable na ebidensya ng layunin ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **Hindi pa naresolba ang pananagutan.** Idinisenyo ang kasalukuyang payment law sa paligid ng human-decided na transaksyon, hindi sa autonomous AI systems na kumikilos sa ilalim ng delegadong awtoridad ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
@@ -198,7 +198,7 @@ Dapat magsimula ang mga bangko sa low-risk, low-value, may-hangganang mga use ca
 ## Mga Sanggunian
 
 - Fenwick, (2026). [Is 2026 the Year of Agentic Payments? ⧉](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 

@@ -108,7 +108,7 @@ Le UK Payments Forward Plan et le paquet réglementaire d'avril 2026 dessinent u
 > **Synthèse exécutive / à retenir**
 >
 > - **La politique des paiements est désormais stratégique.** Le sujet est arrimé au modèle opérationnel, à la résilience, à la valeur client et aux preuves réglementaires, plutôt qu'à un lancement produit isolé ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **Le principe de conception : un seul périmètre réglementaire.** Les banques ont besoin d'une architecture qui relie politique, produit, données, choix de rail, contrôles de risque et économie mesurable ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Le principe de conception : un seul périmètre réglementaire.** Les banques ont besoin d'une architecture qui relie politique, produit, données, choix de rail, contrôles de risque et économie mesurable ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Le modèle de contrôle doit être temps réel.** Les décisions de fraude, de liquidité, de conformité, de règlement et de risque opérationnel doivent se prendre à la vitesse du workflow, pas après coup.
 > - **La qualité des données devient un avantage commercial.** Données structurées, contexte de transaction, journaux d'audit et signaux d'identité deviennent le substrat de l'automatisation et des produits orientés clients.
 > - **La fragmentation est l'ennemie.** Une banque qui multiplie les pilotes isolés autour de chaque rail, token, modèle ou exigence de conformité construit son risque opérationnel futur.
@@ -120,7 +120,7 @@ Le UK Payments Forward Plan et le paquet réglementaire d'avril 2026 dessinent u
 
 L'industrie a dépassé la phase d'adoption. Il ne suffit plus de rejoindre un rail, de migrer un message, de conduire un proof of concept IA ou d'annoncer un pilote de tokenisation. En 2026, l'avantage stratégique vient de l'orchestration de ces capacités face à un workflow réel, puis de la démonstration que ce workflow est plus sûr, plus rapide, moins coûteux, plus résilient ou plus utile aux clients.
 
-C'est pour cette raison que la politique des paiements est désormais un sujet de conseil d'administration. Les mêmes pressions reviennent : données de paiement enrichies, règlement temps réel, monnaie tokenisée, décisionnel IA, open banking, résilience opérationnelle, concentration cloud et preuves réglementaires renforcées. Traitées séparément, ces pressions engendrent une prolifération de programmes. Traitées comme une seule architecture, elles produisent un levier opérationnel ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+C'est pour cette raison que la politique des paiements est désormais un sujet de conseil d'administration. Les mêmes pressions reviennent : données de paiement enrichies, règlement temps réel, monnaie tokenisée, décisionnel IA, open banking, résilience opérationnelle, concentration cloud et preuves réglementaires renforcées. Traitées séparément, ces pressions engendrent une prolifération de programmes. Traitées comme une seule architecture, elles produisent un levier opérationnel ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## Le socle d'architecture 2026
 
@@ -130,7 +130,7 @@ La banque doit partir du point de friction : liquidité bloquée, délai de règ
 
 ### 2. La donnée comme plan de contrôle
 
-Une donnée structurée, gouvernée et traçable forme la fondation. Sans donnée exploitable, l'automatisation devient fragile et la conformité devient manuelle. Avec une donnée exploitable, les banques peuvent bâtir une intelligence de routage, des contrôles en temps réel et des analyses orientées clients ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+Une donnée structurée, gouvernée et traçable forme la fondation. Sans donnée exploitable, l'automatisation devient fragile et la conformité devient manuelle. Avec une donnée exploitable, les banques peuvent bâtir une intelligence de routage, des contrôles en temps réel et des analyses orientées clients ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. Orchestration entre rails et plateformes
 
@@ -197,7 +197,7 @@ Le succès se mesure à l'économie unitaire, aux preuves de résilience, à la 
 ## Références
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

@@ -25,7 +25,7 @@ keywords: "UK டிஜிட்டல் செக்யூரிட்டீ�
 > - **கில்ட்கள் முதலில் செல்கின்றன, ஏனெனில் சரியாகச் செய்ய அவை மிகக் கடினமான சொத்து.** DLT மீது HQLA, டோக்கனைஸ் செய்யப்பட்ட பணத்திற்கு எதிராக அணுத்தன்மையுடன் தீர்க்கப்படுவது, முழு அடுக்கையும் — வெளியீடு, வர்த்தகம், ரீபோ, பிணையம், மத்திய-வங்கிப் பணம் — ஆழமான ஸ்டெர்லிங் குளத்தில் சரிபார்க்கிறது ([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox")).
 > - **உள்நாள் ரீபோ உடனடிப் பரிசு.** டோக்கனைஸ் செய்யப்பட்ட கில்ட்களின் T+0 அணுத்தன்மை ரீபோ, இன்று அதே-நாள் நீர்மைத்தன்மை இடையகமாகச் செயலின்றி அமரும் மூலதனத்தை விடுவிக்கிறது. இந்த சேமிப்பு நேரடியாக ROE க்குள் இறங்குகிறது.
 > - **ஒழுங்கமைப்பு தனித்த வலையமைப்புகளை மாற்றுகிறது.** Regulated Liability Network, Canton, தனியார் வங்கி DLTகள், RTGS, மற்றும் டோக்கனைஸ் செய்யப்பட்ட வணிக வங்கிப் பணம் ஒவ்வொன்றும் வங்கிகள் ஏற்கனவே இயக்கும் பணிப்பாய்வுகளைச் சுமக்கின்றன. வேலை என்பது அவற்றில் வழிசெலுத்துவது, ஒன்றைத் தேர்ந்தெடுப்பது அல்ல.
-> - **Policy-as-code மட்டுமே வேகத்தை பராமரிக்கும் ஒரே இணக்க மாதிரி.** தடைகள், KYC, நிலை வரம்புகள், அதிகார எல்லை வாயில்கள் — தீர்வு அடுக்கில் குறியிடப்பட்டு, வர்த்தகத்துடன் அணுத்தன்மையுடன் செயல்படுத்தப்பட்டு, ஒழுங்குமுறையாளர் நம்ப வேண்டிய பதிவேட்டைவிட ஒரு குறியியல் தணிக்கைச் சுவடை உருவாக்குகிறது ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **Policy-as-code மட்டுமே வேகத்தை பராமரிக்கும் ஒரே இணக்க மாதிரி.** தடைகள், KYC, நிலை வரம்புகள், அதிகார எல்லை வாயில்கள் — தீர்வு அடுக்கில் குறியிடப்பட்டு, வர்த்தகத்துடன் அணுத்தன்மையுடன் செயல்படுத்தப்பட்டு, ஒழுங்குமுறையாளர் நம்ப வேண்டிய பதிவேட்டைவிட ஒரு குறியியல் தணிக்கைச் சுவடை உருவாக்குகிறது ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **கட்டமைப்பே அகழி.** வெற்றியாளர்கள் பணிப்பாய்வு, தரவு, ரயில், கட்டுப்பாடு மற்றும் அலகுப் பொருளாதாரத்தை ஒரே இயக்க மாதிரிக்குள் நெய்கிறார்கள். தோல்வியாளர்கள் தொடர்பற்ற பைலட்களின் தொகுப்பை இயக்கி அதை மூலோபாயம் என்று அழைக்கிறார்கள்.
 >
 ---
@@ -62,7 +62,7 @@ DSS ஒரு உயிர்ப்புள்ள ஆட்சி. அதை �
 
 ### கட்டுப்பாட்டுத் தளமாகத் தரவு
 
-[ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) பேலோடுகள் on-chain பரிவர்த்தனை hash களுடன் பிணைக்கப்பட்டு, தீர்வுத் தரவை உண்மையின் ஒற்றை மூலமாக மாற்றுகின்றன. அந்தப் பிணைப்பு இல்லாமல், ஸ்மார்ட்-ஒப்பந்த தன்னியக்கம் நொறுங்கக்கூடியது மற்றும் சரிசெய்தல் விரிதாள்களுக்குத் திரும்புகிறது. அதனுடன், வங்கிகள் straight-through processing, நிகழ்நேர கட்டுப்பாடுகள், மற்றும் கிளையண்டுகள் உண்மையிலேயே பணம் செலுத்தும் பகுப்பாய்வுகளைப் பெறுகின்றன ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+[ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) பேலோடுகள் on-chain பரிவர்த்தனை hash களுடன் பிணைக்கப்பட்டு, தீர்வுத் தரவை உண்மையின் ஒற்றை மூலமாக மாற்றுகின்றன. அந்தப் பிணைப்பு இல்லாமல், ஸ்மார்ட்-ஒப்பந்த தன்னியக்கம் நொறுங்கக்கூடியது மற்றும் சரிசெய்தல் விரிதாள்களுக்குத் திரும்புகிறது. அதனுடன், வங்கிகள் straight-through processing, நிகழ்நேர கட்டுப்பாடுகள், மற்றும் கிளையண்டுகள் உண்மையிலேயே பணம் செலுத்தும் பகுப்பாய்வுகளைப் பெறுகின்றன ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### ரயில்கள் முழுவதும் ஒழுங்கமைப்பு
 
@@ -143,5 +143,5 @@ Regulated Liability Network என்பது பல ஒழுங்குப�
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - Bank of England, (2026). [Digital Securities Sandbox ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "Digital Securities Sandbox").
 - FCA, (2026). [Digital Securities Sandbox ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA Digital Securities Sandbox").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").

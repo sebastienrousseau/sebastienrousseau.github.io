@@ -313,8 +313,12 @@ def canonicalise_absolute_self_links(html: str, base: str = BASE_URL) -> str:
     The related-reading strip emitted ``https://sebastienrousseau.com/2026-08-03-slug``
     with no trailing slash, while the canonical, the sitemap and every other
     internal link use ``…/slug/``. Every one of those links therefore pointed
-    at a non-canonical URL. Idempotent."""
-    pattern = re.compile(rf'href="{re.escape(base)}/(\d{{4}}-\d{{2}}-\d{{2}}-[^"/?#]+)"')
+    at a non-canonical URL. Locale links (``…/he/2026-06-07-slug``) are
+    covered too: missing them left ~60 slashless links on every locale
+    article, each a 301 hop in Search Console. Idempotent."""
+    pattern = re.compile(
+        rf'href="{re.escape(base)}/((?:[a-z]{{2,3}}(?:-[a-z]+)?/)?\d{{4}}-\d{{2}}-\d{{2}}-[^"/?#]+)"'
+    )
     return pattern.sub(lambda m: f'href="{base}/{m.group(1)}/"', html)
 
 

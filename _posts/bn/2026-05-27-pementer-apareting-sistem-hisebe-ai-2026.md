@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 > **পরিচালনা পর্ষদ সারসংক্ষেপ / মূল উপলব্ধি**
 >
 > - **পেমেন্টস ইন্টেলিজেন্স এখন কৌশলগত।** বিষয়টি সংকীর্ণ পণ্য উদ্বোধনের পরিবর্তে পরিচালন মডেল, স্থিতিস্থাপকতা, ক্লায়েন্ট মূল্য ও নিয়ন্ত্রক প্রমাণের সঙ্গে যুক্ত ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"))।
-> - **ডিজাইন নীতি রিয়েল-টাইম নিয়ন্ত্রণ।** ব্যাংকের এমন স্থাপত্য দরকার যা নীতি, পণ্য, ডেটা, রেল নির্বাচন, ঝুঁকি নিয়ন্ত্রণ ও পরিমাপযোগ্য অর্থনীতিকে সংযুক্ত করে ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
+> - **ডিজাইন নীতি রিয়েল-টাইম নিয়ন্ত্রণ।** ব্যাংকের এমন স্থাপত্য দরকার যা নীতি, পণ্য, ডেটা, রেল নির্বাচন, ঝুঁকি নিয়ন্ত্রণ ও পরিমাপযোগ্য অর্থনীতিকে সংযুক্ত করে ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
 > - **নিয়ন্ত্রণ মডেল রিয়েল-টাইম হতে হবে।** প্রতারণা, তারল্য, কমপ্লায়েন্স, নিষ্পত্তি ও পরিচালন-ঝুঁকির সিদ্ধান্ত ঘটনার পরে নয়, ওয়ার্কফ্লোর গতিতে চলতে হবে।
 > - **ডেটার গুণমান বাণিজ্যিক সুবিধায় পরিণত হয়।** কাঠামোগত ডেটা, লেনদেন প্রসঙ্গ, অডিট লগ ও পরিচয় সংকেত স্বয়ংক্রিয়করণ ও ক্লায়েন্ট-মুখী পণ্যের ভিত্তি হয়ে ওঠে।
 > - **খণ্ডিতকরণই শত্রু।** যে ব্যাংক প্রতিটি রেল, টোকেন, মডেল বা কমপ্লায়েন্স প্রয়োজনের চারপাশে বিচ্ছিন্ন পাইলট তৈরি করে, সে ভবিষ্যৎ পরিচালন-ঝুঁকি সৃষ্টি করে।
@@ -120,7 +120,7 @@ site_software: "Static Site Generator, Rust"
 
 শিল্প গ্রহণ পর্ব অতিক্রম করেছে। আর কেবল একটি রেলে যোগ দেওয়া, একটি বার্তা স্থানান্তর করা, একটি AI ধারণাগত প্রমাণ চালানো বা টোকেনাইজেশন পাইলট ঘোষণা করা যথেষ্ট নয়। ২০২৬ সালে কৌশলগত প্রান্ত আসে সেইসব সক্ষমতাকে একটি বাস্তব ওয়ার্কফ্লোর বিপরীতে অর্কেস্ট্রেট করা এবং তারপর প্রমাণ করা থেকে যে ওয়ার্কফ্লোটি ক্লায়েন্টদের জন্য নিরাপদ, দ্রুত, সস্তা, আরও স্থিতিস্থাপক বা আরও কার্যকর।
 
-সেজন্যই পেমেন্টস ইন্টেলিজেন্স এখন পরিচালনা পর্ষদ-স্তরের বিষয়। একই চাপ বারবার ফিরে আসে: সমৃদ্ধ পেমেন্ট ডেটা, রিয়েল-টাইম নিষ্পত্তি, টোকেনাইজড অর্থ, AI সিদ্ধান্ত গ্রহণ, ওপেন ব্যাংকিং, পরিচালন স্থিতিস্থাপকতা, ক্লাউড কেন্দ্রীকরণ ও শক্তিশালী নিয়ন্ত্রক প্রমাণ। বিচ্ছিন্নভাবে নিলে এই চাপগুলো প্রোগ্রাম ছড়িয়ে পড়া তৈরি করে। এক স্থাপত্য হিসেবে নিলে এগুলো পরিচালন লিভারেজ তৈরি করে ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
+সেজন্যই পেমেন্টস ইন্টেলিজেন্স এখন পরিচালনা পর্ষদ-স্তরের বিষয়। একই চাপ বারবার ফিরে আসে: সমৃদ্ধ পেমেন্ট ডেটা, রিয়েল-টাইম নিষ্পত্তি, টোকেনাইজড অর্থ, AI সিদ্ধান্ত গ্রহণ, ওপেন ব্যাংকিং, পরিচালন স্থিতিস্থাপকতা, ক্লাউড কেন্দ্রীকরণ ও শক্তিশালী নিয়ন্ত্রক প্রমাণ। বিচ্ছিন্নভাবে নিলে এই চাপগুলো প্রোগ্রাম ছড়িয়ে পড়া তৈরি করে। এক স্থাপত্য হিসেবে নিলে এগুলো পরিচালন লিভারেজ তৈরি করে ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
 
 ## ২০২৬-এর স্থাপত্য বেসলাইন
 
@@ -130,7 +130,7 @@ site_software: "Static Site Generator, Rust"
 
 ### ২. নিয়ন্ত্রণ প্লেন হিসেবে ডেটা
 
-কাঠামোগত, পরিচালিত ও সন্ধানযোগ্য ডেটা হলো ভিত্তি। ব্যবহারযোগ্য ডেটা ছাড়া স্বয়ংক্রিয়করণ ভঙ্গুর হয়ে যায় ও কমপ্লায়েন্স ম্যানুয়াল হয়ে যায়। ব্যবহারযোগ্য ডেটাসহ ব্যাংক রাউটিং বুদ্ধিমত্তা, রিয়েল-টাইম নিয়ন্ত্রণ ও ক্লায়েন্ট-মুখী অ্যানালিটিক্স তৈরি করতে পারে ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
+কাঠামোগত, পরিচালিত ও সন্ধানযোগ্য ডেটা হলো ভিত্তি। ব্যবহারযোগ্য ডেটা ছাড়া স্বয়ংক্রিয়করণ ভঙ্গুর হয়ে যায় ও কমপ্লায়েন্স ম্যানুয়াল হয়ে যায়। ব্যবহারযোগ্য ডেটাসহ ব্যাংক রাউটিং বুদ্ধিমত্তা, রিয়েল-টাইম নিয়ন্ত্রণ ও ক্লায়েন্ট-মুখী অ্যানালিটিক্স তৈরি করতে পারে ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))।
 
 ### ৩. রেল ও প্ল্যাটফর্ম জুড়ে অর্কেস্ট্রেশন
 
@@ -197,7 +197,7 @@ site_software: "Static Site Generator, Rust"
 ## তথ্যসূত্র
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

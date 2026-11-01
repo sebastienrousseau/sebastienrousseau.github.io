@@ -172,13 +172,13 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-Agentic payments have crossed from presentation deck into live-market evidence. Mastercard and Rabobank completed an AI agent-initiated payment in the Netherlands, where an agent booked a coffee tasting on Priceless.com without accessing card details directly and with explicit consumer consent recorded before execution ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). The strategic issue for banks is now consent architecture: how a financial institution proves that a machine payment was genuinely authorised by the human or corporate principal behind it.
+Agentic payments have crossed from presentation deck into live-market evidence. Mastercard and Rabobank completed an AI agent-initiated payment in the Netherlands, where an agent booked a coffee tasting on Priceless.com without accessing card details directly and with explicit consumer consent recorded before execution ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). The strategic issue for banks is now consent architecture: how a financial institution proves that a machine payment was genuinely authorised by the human or corporate principal behind it.
 
 ---
 
 > **Executive Summary / Key Takeaways**
 >
-> - **The first market signals are live.** Mastercard and Rabobank completed a Netherlands AI-agent transaction using Mastercard Agent Pay, with the agent prevented from directly accessing card data ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **The first market signals are live.** Mastercard and Rabobank completed a Netherlands AI-agent transaction using Mastercard Agent Pay, with the agent prevented from directly accessing card data ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **Agentic payment protocols are emerging before the law has settled.** Fenwick identifies AP2, A2A, x402, MCP, and MPP as protocol efforts addressing agent interoperability and authorisation ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **Consent is the core banking problem.** AP2-style cryptographic mandates attempt to capture user instructions and final approval as auditable evidence of intent ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **Liability remains unresolved.** Existing payment law was designed around human-decided transactions, not autonomous AI systems acting under delegated authority ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
@@ -269,7 +269,7 @@ Banks should start with low-risk, low-value, bounded use cases where mandates, s
 ## References
 
 - Fenwick, (2026). [Is 2026 the Year of Agentic Payments? ⧉](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 

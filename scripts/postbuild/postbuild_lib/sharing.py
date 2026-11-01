@@ -446,6 +446,17 @@ def _slug_from_canonical(html: str) -> str | None:
     return url.rsplit("/", 1)[-1] or None
 
 
+def _pdf_href(html: str, slug: str) -> str:
+    """``/api/pdf/<slug>.pdf`` for EN, ``/api/pdf/<lang>/<slug>.pdf`` for a
+    locale page. A translated slug only exists under its locale prefix, so
+    the renderer needs the prefix to find the article."""
+    m = CANONICAL_RE.search(html)
+    url = m.group(1) if m else ""
+    parts = url.split("://", 1)[-1].split("/")[1:]
+    lang = parts[0] if len(parts) > 1 and parts[1] == slug else ""
+    return f"/api/pdf/{lang}/{slug}.pdf" if lang else f"/api/pdf/{slug}.pdf"
+
+
 def _license_id(html: str) -> str:
     m = _LICENSE_RE.search(html)
     if m:
@@ -478,10 +489,13 @@ def inject_action_rail(html: str) -> str:
         return html
     labels = _labels(html)
     aria = _esc(labels.get("Action.aria", "Article actions"), quote=True)
-    pdf_href = f"/api/pdf/{slug}.pdf"
+    pdf_href = _pdf_href(html, slug)
+    # rel="nofollow", not "alternate": the PDF duplicates this article, is
+    # rendered on demand, and is served noindex, so crawlers should not
+    # queue it. 678 of these URLs were in Search Console's 5xx report.
     items = (
         f'<li><a href="{pdf_href}" download="{slug}.pdf" '
-        f'data-print-fallback rel="alternate" type="application/pdf">'
+        f'data-print-fallback rel="nofollow" type="application/pdf">'
         f"{SVG_DOWNLOAD}"
         f"<span>{_esc(labels.get('Action.savePdf', 'Save PDF'))}</span></a></li>"
         f'<li><a href="#cite-popover">{_SVG_QUOTE}'

@@ -20,7 +20,7 @@ UK పేమెంట్స్ ఫార్వర్డ్ ప్లాన్ �
 > **కార్యనిర్వాహక సారాంశం / ముఖ్య అంశాలు**
 >
 > - **చెల్లింపుల విధానం ఇప్పుడు వ్యూహాత్మకమైనది.** ఈ అంశం ఒక సంకుచిత ఉత్పత్తి ఆవిష్కరణ కంటే ఆపరేటింగ్ మోడల్, రెసిలియెన్స్, క్లయింట్ విలువ మరియు నియంత్రణ ఆధారాలకు ముడిపడి ఉంది ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")).
-> - **డిజైన్ సూత్రం ఒకే నియంత్రణ పరిధి.** బ్యాంకులకు విధానం, ఉత్పత్తి, డేటా, రెయిల్ ఎంపిక, రిస్క్ నియంత్రణలు మరియు కొలవదగిన ఆర్థికాలను అనుసంధానించే ఆర్కిటెక్చర్ అవసరం ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **డిజైన్ సూత్రం ఒకే నియంత్రణ పరిధి.** బ్యాంకులకు విధానం, ఉత్పత్తి, డేటా, రెయిల్ ఎంపిక, రిస్క్ నియంత్రణలు మరియు కొలవదగిన ఆర్థికాలను అనుసంధానించే ఆర్కిటెక్చర్ అవసరం ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **నియంత్రణ మోడల్ తప్పనిసరిగా రియల్ టైమ్‌గా ఉండాలి.** మోసం, ద్రవ్యత, సమ్మతి, సెటిల్‌మెంట్ మరియు ఆపరేషనల్-రిస్క్ నిర్ణయాలు ఘటన తర్వాత కాకుండా వర్క్‌ఫ్లో వేగంతో నడవాలి.
 > - **డేటా నాణ్యత వాణిజ్య ప్రయోజనంగా మారుతుంది.** నిర్మాణాత్మక డేటా, లావాదేవీ సందర్భం, ఆడిట్ లాగ్‌లు మరియు గుర్తింపు సంకేతాలు ఆటోమేషన్ మరియు క్లయింట్-ముఖ ఉత్పత్తులకు ఆధారంగా మారతాయి.
 > - **విభజన శత్రువు.** ప్రతి రెయిల్, టోకెన్, మోడల్ లేదా సమ్మతి అవసరం చుట్టూ వేరుచేసిన పైలట్‌లను నిర్మించే బ్యాంకు భవిష్యత్ ఆపరేటింగ్ రిస్క్‌ను సృష్టిస్తుంది.
@@ -32,7 +32,7 @@ UK పేమెంట్స్ ఫార్వర్డ్ ప్లాన్ �
 
 పరిశ్రమ స్వీకరణ దశను దాటి ముందుకు వెళ్ళింది. ఒక రెయిల్‌లో చేరడం, ఒక సందేశాన్ని మైగ్రేట్ చేయడం, ఒక AI ప్రూఫ్ ఆఫ్ కాన్సెప్ట్ నడపడం లేదా ఒక టోకనైజేషన్ పైలట్‌ను ప్రకటించడం ఇక సరిపోదు. 2026లో, వ్యూహాత్మక అంచు ఆ సామర్థ్యాలను నిజమైన వర్క్‌ఫ్లోకు వ్యతిరేకంగా ఆర్కెస్ట్రేట్ చేయడం, ఆపై ఆ వర్క్‌ఫ్లో మరింత సురక్షితమైనది, వేగవంతమైనది, చౌకైనది, మరింత దృఢమైనది లేదా క్లయింట్లకు మరింత ఉపయోగకరమైనదని రుజువు చేయడం నుండి వస్తుంది.
 
-అందుకే చెల్లింపుల విధానం ఇప్పుడు బోర్డు-స్థాయి అంశం. అదే ఒత్తిళ్ళు పదేపదే పునరావృతమవుతున్నాయి: సంపన్నమైన చెల్లింపు డేటా, రియల్-టైమ్ సెటిల్‌మెంట్, టోకనైజ్డ్ మనీ, AI నిర్ణయాలు, ఓపెన్ బ్యాంకింగ్, ఆపరేషనల్ రెసిలియెన్స్, క్లౌడ్ కేంద్రీకరణ మరియు బలమైన నియంత్రణ ఆధారాలు. వేరుగా పరిగణించినప్పుడు, ఈ ఒత్తిళ్ళు కార్యక్రమాల విస్తరణను సృష్టిస్తాయి. ఒకే ఆర్కిటెక్చర్‌గా పరిగణించినప్పుడు, అవి ఆపరేటింగ్ లివరేజ్‌ను సృష్టిస్తాయి ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+అందుకే చెల్లింపుల విధానం ఇప్పుడు బోర్డు-స్థాయి అంశం. అదే ఒత్తిళ్ళు పదేపదే పునరావృతమవుతున్నాయి: సంపన్నమైన చెల్లింపు డేటా, రియల్-టైమ్ సెటిల్‌మెంట్, టోకనైజ్డ్ మనీ, AI నిర్ణయాలు, ఓపెన్ బ్యాంకింగ్, ఆపరేషనల్ రెసిలియెన్స్, క్లౌడ్ కేంద్రీకరణ మరియు బలమైన నియంత్రణ ఆధారాలు. వేరుగా పరిగణించినప్పుడు, ఈ ఒత్తిళ్ళు కార్యక్రమాల విస్తరణను సృష్టిస్తాయి. ఒకే ఆర్కిటెక్చర్‌గా పరిగణించినప్పుడు, అవి ఆపరేటింగ్ లివరేజ్‌ను సృష్టిస్తాయి ([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## 2026 ఆర్కిటెక్చర్ ప్రామాణికం
 
@@ -42,7 +42,7 @@ UK పేమెంట్స్ ఫార్వర్డ్ ప్లాన్ �
 
 ### 2. నియంత్రణ తలంగా డేటా
 
-నిర్మాణాత్మక, పరిపాలించబడిన మరియు గుర్తించదగిన డేటా పునాది. ఉపయోగకరమైన డేటా లేకుండా, ఆటోమేషన్ పెళుసుగా మారుతుంది మరియు సమ్మతి మాన్యువల్‌గా మారుతుంది. ఉపయోగకరమైన డేటాతో, బ్యాంకులు రూటింగ్ ఇంటెలిజెన్స్, రియల్-టైమ్ నియంత్రణలు మరియు క్లయింట్-ముఖ విశ్లేషణలను సృష్టించగలవు ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+నిర్మాణాత్మక, పరిపాలించబడిన మరియు గుర్తించదగిన డేటా పునాది. ఉపయోగకరమైన డేటా లేకుండా, ఆటోమేషన్ పెళుసుగా మారుతుంది మరియు సమ్మతి మాన్యువల్‌గా మారుతుంది. ఉపయోగకరమైన డేటాతో, బ్యాంకులు రూటింగ్ ఇంటెలిజెన్స్, రియల్-టైమ్ నియంత్రణలు మరియు క్లయింట్-ముఖ విశ్లేషణలను సృష్టించగలవు ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. రెయిల్స్ మరియు ప్లాట్‌ఫారమ్‌ల అంతటా ఆర్కెస్ట్రేషన్
 
@@ -109,5 +109,5 @@ UK పేమెంట్స్ ఫార్వర్డ్ ప్లాన్ �
 ## మూలాలు
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").

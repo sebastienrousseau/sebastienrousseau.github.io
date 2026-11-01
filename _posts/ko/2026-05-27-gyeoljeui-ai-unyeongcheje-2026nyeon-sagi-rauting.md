@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 > **이사회 요약 / 핵심 시사점**
 >
 > - **결제 인텔리전스는 이제 전략 의제입니다.** 협소한 제품 출시가 아니라 운영 모델, 회복력, 고객 가치, 규제 증거와 결부된 주제입니다 ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **설계 원칙은 실시간 통제입니다.** 은행에는 정책, 상품, 데이터, 레일 선택, 리스크 통제, 측정 가능한 경제성을 연결하는 아키텍처가 필요합니다 ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **설계 원칙은 실시간 통제입니다.** 은행에는 정책, 상품, 데이터, 레일 선택, 리스크 통제, 측정 가능한 경제성을 연결하는 아키텍처가 필요합니다 ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **통제 모델은 실시간이어야 합니다.** 사기, 유동성, 컴플라이언스, 결제, 운영 리스크 의사결정은 사건 이후가 아니라 워크플로 속도로 운영되어야 합니다.
 > - **데이터 품질이 상업적 우위가 됩니다.** 정형 데이터, 거래 맥락, 감사 로그, 신원 신호가 자동화와 고객 대면 상품의 기반이 됩니다.
 > - **파편화가 적입니다.** 레일, 토큰, 모델, 컴플라이언스 요건별로 고립된 시범 사업을 구축하는 은행은 향후 운영 리스크를 자초합니다.
@@ -120,7 +120,7 @@ site_software: "Static Site Generator, Rust"
 
 업계는 도입 단계를 지났습니다. 레일에 참여하고, 메시지를 마이그레이션하고, AI 개념 증명을 운영하고, 토큰화 시범 사업을 발표하는 것만으로는 더 이상 충분하지 않습니다. 2026년의 전략적 우위는 그러한 역량을 실제 워크플로에 맞춰 오케스트레이션한 뒤, 그 워크플로가 더 안전하고, 더 빠르고, 더 저렴하고, 더 회복력이 있으며, 고객에게 더 유용함을 증명하는 데서 나옵니다.
 
-결제 인텔리전스가 이사회 의제가 된 이유가 여기에 있습니다. 다음과 같은 동일한 압력이 반복적으로 등장합니다. 더 풍부한 결제 데이터, 실시간 결제, 토큰화 화폐, AI 의사결정, 오픈 뱅킹, 운영 회복력, 클라우드 집중, 더 강력한 규제 증거. 이러한 압력을 분리해 다루면 프로그램 난립을 낳지만, 하나의 아키텍처로 다루면 운영 레버리지를 만들어 냅니다 ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+결제 인텔리전스가 이사회 의제가 된 이유가 여기에 있습니다. 다음과 같은 동일한 압력이 반복적으로 등장합니다. 더 풍부한 결제 데이터, 실시간 결제, 토큰화 화폐, AI 의사결정, 오픈 뱅킹, 운영 회복력, 클라우드 집중, 더 강력한 규제 증거. 이러한 압력을 분리해 다루면 프로그램 난립을 낳지만, 하나의 아키텍처로 다루면 운영 레버리지를 만들어 냅니다 ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026"), [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## 2026년 아키텍처 기본선
 
@@ -130,7 +130,7 @@ site_software: "Static Site Generator, Rust"
 
 ### 2. 통제 평면으로서의 데이터
 
-정형화·통치·추적 가능한 데이터가 기반입니다. 활용 가능한 데이터가 없으면 자동화는 취약해지고 컴플라이언스는 수작업이 됩니다. 활용 가능한 데이터가 있으면 은행은 라우팅 인텔리전스, 실시간 통제, 고객 대면 분석을 만들어 낼 수 있습니다 ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+정형화·통치·추적 가능한 데이터가 기반입니다. 활용 가능한 데이터가 없으면 자동화는 취약해지고 컴플라이언스는 수작업이 됩니다. 활용 가능한 데이터가 있으면 은행은 라우팅 인텔리전스, 실시간 통제, 고객 대면 분석을 만들어 낼 수 있습니다 ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. 레일과 플랫폼 전반의 오케스트레이션
 
@@ -197,7 +197,7 @@ site_software: "Static Site Generator, Rust"
 ## 참고 자료
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

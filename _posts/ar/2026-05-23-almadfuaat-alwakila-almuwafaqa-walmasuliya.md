@@ -101,13 +101,13 @@ site_software: "Static Site Generator, Rust"
 </aside>
 <!-- lead-end -->
 
-عبرت المدفوعات الوكيلة من شرائح العروض إلى دليل سوقي حي. أتمّت Mastercard وRabobank مدفوعة بدأها وكيل ذكاء اصطناعي في هولندا، إذ حجز الوكيل جلسة تذوّق قهوة على Priceless.com دون الوصول المباشر إلى تفاصيل البطاقة، مع تسجيل موافقة صريحة من المستهلك قبل التنفيذ ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). القضية الاستراتيجية للبنوك اليوم هي معمارية الموافقة: كيف تُثبت المؤسسة المالية أن مدفوعة آلية صدرت فعلاً بتفويض من الشخص أو الكيان البشري أو الشركاتي الذي يقف خلفها.
+عبرت المدفوعات الوكيلة من شرائح العروض إلى دليل سوقي حي. أتمّت Mastercard وRabobank مدفوعة بدأها وكيل ذكاء اصطناعي في هولندا، إذ حجز الوكيل جلسة تذوّق قهوة على Priceless.com دون الوصول المباشر إلى تفاصيل البطاقة، مع تسجيل موافقة صريحة من المستهلك قبل التنفيذ ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")). القضية الاستراتيجية للبنوك اليوم هي معمارية الموافقة: كيف تُثبت المؤسسة المالية أن مدفوعة آلية صدرت فعلاً بتفويض من الشخص أو الكيان البشري أو الشركاتي الذي يقف خلفها.
 
 ---
 
 > **الملخّص التنفيذي / أبرز النقاط**
 >
-> - **إشارات السوق الأولى حيّة.** أتمّت Mastercard وRabobank معاملة وكيل ذكاء اصطناعي في هولندا باستخدام Mastercard Agent Pay، مع منع الوكيل من الوصول المباشر إلى بيانات البطاقة ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **إشارات السوق الأولى حيّة.** أتمّت Mastercard وRabobank معاملة وكيل ذكاء اصطناعي في هولندا باستخدام Mastercard Agent Pay، مع منع الوكيل من الوصول المباشر إلى بيانات البطاقة ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **بروتوكولات الدفع الوكيلة تظهر قبل أن يستقر القانون.** تُحدّد Fenwick بروتوكولات AP2 وA2A وx402 وMCP وMPP باعتبارها مساعٍ تعالج تشغيل الوكلاء البيني والترخيص ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **الموافقة هي المشكلة المصرفية المركزية.** تسعى التفويضات التشفيرية على نسق AP2 إلى التقاط تعليمات المستخدم والموافقة النهائية بوصفها دليلاً قابلاً للتدقيق على النية ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
 > - **المسؤولية لا تزال غير محسومة.** صُمّم قانون الدفع القائم حول معاملات يقررها الإنسان، لا حول أنظمة ذكاء اصطناعي مستقلة تعمل بصلاحية مُفوَّضة ([Fenwick](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?")).
@@ -198,7 +198,7 @@ site_software: "Static Site Generator, Rust"
 ## المراجع
 
 - Fenwick، (2026). [Is 2026 the Year of Agentic Payments? ⧉](https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments "Is 2026 the Year of Agentic Payments?").
-- Association of Corporate Treasurers، (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers، (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - GOV.UK، (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
 - J.P. Morgan، (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
 

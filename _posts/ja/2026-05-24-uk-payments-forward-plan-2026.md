@@ -108,7 +108,7 @@ UK Payments Forward Plan と 2026 年 4 月の政策パッケージは、伝統�
 > **エグゼクティブサマリー / 主要ポイント**
 >
 > - **決済政策はもはや戦略課題である。**本テーマは、狭義の製品投入ではなく、オペレーティングモデル、レジリエンス、顧客価値、規制エビデンスと結びついています([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology"))。
-> - **設計原則は単一の規制パリメター。**銀行は、政策、製品、データ、レール選択、リスクコントロール、計測可能な経済性を接続するアーキテクチャを必要とします([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
+> - **設計原則は単一の規制パリメター。**銀行は、政策、製品、データ、レール選択、リスクコントロール、計測可能な経済性を接続するアーキテクチャを必要とします([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
 > - **コントロールモデルはリアルタイムであるべき。**不正、流動性、コンプライアンス、決済、オペレーショナルリスクの判断は、事後ではなくワークフローの速度で稼働しなければなりません。
 > - **データ品質は商業上の優位性となる。**構造化データ、取引コンテキスト、監査ログ、ID シグナルは、自動化の基盤と顧客向け製品の素材となります。
 > - **分断は最大の敵。**レール、トークン、モデル、コンプライアンス要件ごとに孤立したパイロットを構築する銀行は、将来のオペレーショナルリスクを生み出します。
@@ -120,7 +120,7 @@ UK Payments Forward Plan と 2026 年 4 月の政策パッケージは、伝統�
 
 業界は採用フェーズを超えました。レールに参加し、メッセージを移行し、AI の概念実証を行い、トークン化のパイロットを発表するだけでは、もはや十分ではありません。2026 年における戦略的優位は、これらのケイパビリティを実際のワークフローに対してオーケストレートし、当該ワークフローがより安全、より高速、より低コスト、よりレジリエント、または顧客にとってより有用であることを立証することから生まれます。
 
-これこそが、決済政策が現在において取締役会レベルの議題となっている理由です。同じ圧力が繰り返し現れています。すなわち、より豊かな決済データ、リアルタイム決済、トークン化マネー、AI による意思決定、オープンバンキング、オペレーショナルレジリエンス、クラウド集中、より強固な規制エビデンスです。これらを別個に扱えばプログラムの肥大化を招きますが、一つのアーキテクチャとして扱えばオペレーション上のレバレッジを生み出します([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")、[Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
+これこそが、決済政策が現在において取締役会レベルの議題となっている理由です。同じ圧力が繰り返し現れています。すなわち、より豊かな決済データ、リアルタイム決済、トークン化マネー、AI による意思決定、オープンバンキング、オペレーショナルレジリエンス、クラウド集中、より強固な規制エビデンスです。これらを別個に扱えばプログラムの肥大化を招きますが、一つのアーキテクチャとして扱えばオペレーション上のレバレッジを生み出します([GOV.UK](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed to embrace future payments technology")、[Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
 
 ## 2026 年アーキテクチャの基準線
 
@@ -130,7 +130,7 @@ UK Payments Forward Plan と 2026 年 4 月の政策パッケージは、伝統�
 
 ### 2. コントロール基盤としてのデータ
 
-構造化され、ガバナンスが効き、トレース可能なデータが基礎となります。使用可能なデータがなければ、自動化は脆弱となり、コンプライアンスは手作業となります。使用可能なデータがあれば、銀行はルーティングインテリジェンス、リアルタイムコントロール、顧客向けアナリティクスを構築できます([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
+構造化され、ガバナンスが効き、トレース可能なデータが基礎となります。使用可能なデータがなければ、自動化は脆弱となり、コンプライアンスは手作業となります。使用可能なデータがあれば、銀行はルーティングインテリジェンス、リアルタイムコントロール、顧客向けアナリティクスを構築できます([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026"))。
 
 ### 3. レールとプラットフォームを貫くオーケストレーション
 
@@ -197,7 +197,7 @@ UK Payments Forward Plan と 2026 年 4 月の政策パッケージは、伝統�
 ## 参考文献
 
 - GOV.UK, (2026). [UK fintech backed to embrace future payments technology ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "UK fintech backed").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Global Government Finance, (2026). [UK wholesale digital markets champion ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "UK wholesale digital markets champion").
 
 <!-- enrich-start -->

@@ -108,7 +108,7 @@ site_software: "Static Site Generator, Rust"
 > **الملخص التنفيذي / أبرز الاستنتاجات**
 >
 > - **ذكاء المدفوعات أصبح استراتيجياً.** الموضوع مرتبط بنموذج التشغيل، والمرونة، وقيمة العميل، والأدلة التنظيمية، لا بإطلاق منتج ضيق ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")).
-> - **المبدأ التصميمي هو التحكم الفوري.** تحتاج المصارف إلى بنية تربط السياسة والمنتج والبيانات واختيار القضيب وضوابط المخاطر والاقتصاديات القابلة للقياس ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+> - **المبدأ التصميمي هو التحكم الفوري.** تحتاج المصارف إلى بنية تربط السياسة والمنتج والبيانات واختيار القضيب وضوابط المخاطر والاقتصاديات القابلة للقياس ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 > - **نموذج التحكم يجب أن يكون فورياً.** يجب أن تعمل قرارات الاحتيال والسيولة والامتثال والتسوية والمخاطر التشغيلية بسرعة سير العمل، لا بعد وقوع الحدث.
 > - **جودة البيانات تُصبح ميزة تجارية.** البيانات المُهيكَلة، وسياق المعاملة، وسجلات التدقيق، وإشارات الهوية تُصبح الركيزة للأتمتة والمنتجات الموجَّهة للعميل.
 > - **التشظِّي هو العدو.** المصرف الذي يبني تجارب معزولة حول كل قضيب أو رمز أو نموذج أو متطلب امتثال يخلق مخاطر تشغيل مستقبلية.
@@ -120,7 +120,7 @@ site_software: "Static Site Generator, Rust"
 
 تجاوزت الصناعة مرحلة التبنِّي. لم يعد كافياً الانضمام إلى قضيب، أو ترحيل رسالة، أو إجراء إثبات مفهوم للذكاء الاصطناعي، أو الإعلان عن تجربة ترميز. في 2026، تأتي الميزة الاستراتيجية من تنسيق تلك القدرات إزاء سير عمل حقيقي، ثم إثبات أن سير العمل أصبح أكثر أماناً، أو أسرع، أو أرخص، أو أكثر مرونة، أو أكثر فائدة للعملاء.
 
-لهذا السبب أصبح ذكاء المدفوعات الآن موضوعاً على مستوى مجلس الإدارة. تتكرَّر الضغوط نفسها: بيانات مدفوعات أغنى، وتسوية فورية، ونقد مُرمَّز، وقرار بالذكاء الاصطناعي، والصيرفة المفتوحة، والمرونة التشغيلية، وتركُّز السحابة، وأدلة تنظيمية أقوى. عند معالجتها بشكل منفصل، تخلق هذه الضغوط تضخُّماً في البرامج. وعند معالجتها بوصفها بنية واحدة، تخلق رافعة تشغيلية ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")، [Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+لهذا السبب أصبح ذكاء المدفوعات الآن موضوعاً على مستوى مجلس الإدارة. تتكرَّر الضغوط نفسها: بيانات مدفوعات أغنى، وتسوية فورية، ونقد مُرمَّز، وقرار بالذكاء الاصطناعي، والصيرفة المفتوحة، والمرونة التشغيلية، وتركُّز السحابة، وأدلة تنظيمية أقوى. عند معالجتها بشكل منفصل، تخلق هذه الضغوط تضخُّماً في البرامج. وعند معالجتها بوصفها بنية واحدة، تخلق رافعة تشغيلية ([J.P. Morgan](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook: Five Trends Powering Payments in 2026")، [Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ## خط الأساس المعماري لعام 2026
 
@@ -130,7 +130,7 @@ site_software: "Static Site Generator, Rust"
 
 ### 2. البيانات بوصفها مستوى التحكم
 
-البيانات المُهيكَلة والمحكومة والقابلة للتتبع هي الأساس. من دون بيانات قابلة للاستخدام، تُصبح الأتمتة هشَّة ويُصبح الامتثال يدوياً. أما مع بيانات قابلة للاستخدام، فيمكن للمصارف بناء ذكاء توجيه، وضوابط فورية، وتحليلات موجَّهة للعميل ([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
+البيانات المُهيكَلة والمحكومة والقابلة للتتبع هي الأساس. من دون بيانات قابلة للاستخدام، تُصبح الأتمتة هشَّة ويُصبح الامتثال يدوياً. أما مع بيانات قابلة للاستخدام، فيمكن للمصارف بناء ذكاء توجيه، وضوابط فورية، وتحليلات موجَّهة للعميل ([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Update on the Payments landscape – May 2026")).
 
 ### 3. التنسيق عبر القضبان والمنصَّات
 
@@ -197,7 +197,7 @@ site_software: "Static Site Generator, Rust"
 ## المراجع
 
 - J.P. Morgan, (2026). [Payments Outlook: Five Trends Powering Payments in 2026 ⧉](https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026 "Payments Outlook").
-- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
+- Association of Corporate Treasurers, (2026). [Update on the Payments landscape – May 2026 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "Payments landscape update").
 - Standard Chartered, (2026). [Six forces shaping Treasury in 2026 ⧉](https://www.sc.com/en/news/corporate-investment-banking/six-forces-shaping-treasury-in-2026/ "Six forces shaping Treasury in 2026").
 
 <!-- enrich-start -->

@@ -113,7 +113,7 @@ site_software: "Static Site Generator, Rust"
 > - **國債(gilt)先行,因為它最難做對。**DLT 上的 HQLA,與代幣化現金原子化結算,等於在英鎊最深的池子上驗證整個技術棧——發行、交易、附買回、擔保品、央行貨幣([Bank of England](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "數位證券沙盒"))。
 > - **日內附買回是眼前最大紅利。**代幣化國債的 T+0 原子化附買回釋出今天被當作日內流動性緩衝閒置的資本。節省直接落到 ROE。
 > - **編排取代獨立網路。**Regulated Liability Network、Canton、私有銀行 DLT、RTGS、代幣化商業銀行貨幣,各自承載銀行已在運轉的工作流程。任務是在它們之間路由,而不是挑一個。
-> - **政策即程式碼是唯一跟得上節奏的合規模型。**制裁、KYC、部位限額、司法管轄門檻——全部編碼在結算層,與交易原子化執行,產出加密稽核軌跡,而非一份監管者只能選擇相信的日誌([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "2026 年 5 月支付產業更新"))。
+> - **政策即程式碼是唯一跟得上節奏的合規模型。**制裁、KYC、部位限額、司法管轄門檻——全部編碼在結算層,與交易原子化執行,產出加密稽核軌跡,而非一份監管者只能選擇相信的日誌([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "2026 年 5 月支付產業更新"))。
 > - **架構就是護城河。**勝者把工作流程、資料、支付通道、控制與單位經濟編織成一套營運模型。輸家則經營一籃子互不相連的試點,還稱之為策略。
 >
 ---
@@ -150,7 +150,7 @@ DSS 是一個正在運作的制度。要把它當平台而非 PoC 使用,銀行�
 
 ### 資料即控制平面
 
-ISO 20022 訊息酬載綁定到鏈上交易雜湊,把結算資料變成單一事實來源。沒有這層綁定,智能合約自動化就會脆弱,對帳又會退回試算表。有了它,銀行才能拿到直通式處理(STP)、即時控制,以及客戶真的願意付費的分析([Association of Corporate Treasurers](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "2026 年 5 月支付產業更新"))。
+ISO 20022 訊息酬載綁定到鏈上交易雜湊,把結算資料變成單一事實來源。沒有這層綁定,智能合約自動化就會脆弱,對帳又會退回試算表。有了它,銀行才能拿到直通式處理(STP)、即時控制,以及客戶真的願意付費的分析([Association of Corporate Treasurers](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "2026 年 5 月支付產業更新"))。
 
 ### 跨支付通道的編排
 
@@ -231,7 +231,7 @@ Regulated Liability Network 是供多家受監管機構發行代幣化商業銀�
 - GOV.UK, (2026). [英國金融科技獲挹注擁抱未來支付技術 ⧉](https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology "英國金融科技獲挹注").
 - Bank of England, (2026). [數位證券沙盒 ⧉](https://www.bankofengland.co.uk/financial-stability/digital-securities-sandbox "數位證券沙盒").
 - FCA, (2026). [數位證券沙盒 ⧉](https://www.fca.org.uk/firms/innovation/digital-securities-sandbox "FCA 數位證券沙盒").
-- Association of Corporate Treasurers, (2026). [2026 年 5 月支付產業更新 ⧉](https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "支付產業更新").
+- Association of Corporate Treasurers, (2026). [2026 年 5 月支付產業更新 ⧉](https://web.archive.org/web/20260616184054/https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026 "支付產業更新").
 - Global Government Finance, (2026). [英國批發數位市場推動者 ⧉](https://www.globalgovernmentfinance.com/uk-wholesale-digital-markets-champion-to-lead-tokenised-finance-push/ "英國批發數位市場推動者").
 
 <!-- enrich-start -->
