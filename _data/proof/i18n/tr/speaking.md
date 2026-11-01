@@ -11,10 +11,10 @@ hero:
   press_nudge: Baskıya yetişmeye çalışan bir gazeteci misiniz?
   press_nudge_cta: Uzman yorumu isteyin
   microproof:
-  - HSBC, PayPal ve Barclays'te ödeme platformları devreye alındı
+  - HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ve Virgin Group bünyesinde yaklaşık yirmi yıllık deneyim
   - EPAA kuantum güvenliği raporunun ortak yazarı
   - Katkı veren, Emerging Payments Association Asia
-employers_label: Ödeme platformlarının devreye alındığı yerler
+employers_label: Çalıştığım kurumlar
 stats_eyebrow: Rakamlarla
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: Kopyala
   items:
   - length: Kısa
-    text: Sebastien Rousseau, ISO 20022 ödemeleri, kuantum sonrası kriptografi ve uygulamalı yapay zekânın kesiştiği yerde yazan ve geliştiren kıdemli bir bankacılık teknoloğudur. HSBC, PayPal ve Barclays'te ödeme platformları devreye aldı ve üretimde kullanılan açık referans uygulamalarını sürdürüyor.
+    text: Sebastien Rousseau, ISO 20022 ödemeleri, kuantum sonrası kriptografi ve uygulamalı yapay zekânın kesiştiği yerde yazan ve geliştiren kıdemli bir bankacılık teknoloğudur. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ve Virgin Group bünyesinde yaklaşık yirmi yıllık deneyim.
   - length: Orta
     text: Sebastien Rousseau, HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ve Virgin Group'ta geçen yaklaşık yirmi yılıyla kıdemli bir bankacılık teknoloğudur. ISO 20022 ödemeleri, kuantum sonrası kriptografi ve uygulamalı yapay zekânın kesiştiği yerde yazar ve geliştirir; hazine ve ödeme ekiplerinin üretimde kullandığı açık referans uygulamalarını — pacs.008, pain.001, KyberLib, BankStatementParser — sürdürür. Emerging Payments Association Asia'nın Kuantum Güvenli Kriptografi Çalışma Grubu'na katkı verir ve Banking On Quantum ile Banking On AI yayınlarını çıkarır.
   - length: Uzun
-    text: 'Sebastien Rousseau, toptan ödemelerin yapısal dönüşümüne odaklanmış kıdemli bir bankacılık teknoloğudur. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ve Virgin Group''ta, hazine ve ödeme ekiplerinin üretimde kullandığı ödeme platformları, yapay zekâ ürünleri ve açık altyapı geliştirdi. pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN ve dotfiles projelerinin yazarı ve bakımcısıdır; her biri gösteri değil referans uygulama olarak konumlanmıştır: incelenebilir, yönetim kurulu düzeyinde finansal altyapı. Emerging Payments Association Asia''nın Kuantum Güvenli Kriptografi Çalışma Grubu''na katkı verir, EPAA''nın “Quantum-Safe Payments: Why the Payments Industry Must Act Now” raporunun (Eylül 2025) ortak yazarıdır ve Banking On Quantum ile Banking On AI yayınlarını çıkarır. Etmen tabanlı yapay zekâ, gerçek zamanlı ödemeler, kuantum sonrası kriptografi, buluta uygun dayanıklılık, yapılandırılmış veri ve düzenleyici kanıtın kesiştiği yerde çalışır.'
+    text: 'Sebastien Rousseau, toptan ödemelerin yapısal dönüşümüne odaklanmış kıdemli bir bankacılık teknoloğudur. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ve Virgin Group bünyesinde yaklaşık yirmi yıllık deneyim. pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN ve dotfiles projelerinin yazarı ve bakımcısıdır; her biri gösteri değil referans uygulama olarak konumlanmıştır: incelenebilir, yönetim kurulu düzeyinde finansal altyapı. Emerging Payments Association Asia''nın Kuantum Güvenli Kriptografi Çalışma Grubu''na katkı verir, EPAA''nın “Quantum-Safe Payments: Why the Payments Industry Must Act Now” raporunun (Eylül 2025) ortak yazarıdır ve Banking On Quantum ile Banking On AI yayınlarını çıkarır. Etmen tabanlı yapay zekâ, gerçek zamanlı ödemeler, kuantum sonrası kriptografi, buluta uygun dayanıklılık, yapılandırılmış veri ve düzenleyici kanıtın kesiştiği yerde çalışır.'
 faq:
   eyebrow: Sormadan önce
   headline: Davet süreci, açık sözlerle.
@@ -185,12 +185,7 @@ final_cta:
   secondary_cta: Uzman yorumu isteyin
 ---
 
-Sebastien Rousseau, toptan ödemelerin yapısal dönüşümüne odaklanmış kıdemli bir bankacılık
-teknoloğudur. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ve Virgin
-Group'ta, hazine ve ödeme ekiplerinin üretimde kullandığı ödeme platformları, yapay zekâ
-ürünleri ve açık altyapı geliştirdi. pacs.008, pain.001, BankStatementParser, KyberLib,
-CloudCDN ve dotfiles projelerinin yazarı ve bakımcısıdır; her biri gösteri değil referans
-uygulama olarak konumlanmıştır: incelenebilir, yönetim kurulu düzeyinde finansal altyapı.
+Sebastien Rousseau, toptan ödemelerin yapısal dönüşümüne odaklanmış kıdemli bir bankacılık teknoloğudur. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ve Virgin Group bünyesinde yaklaşık yirmi yıllık deneyim. pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN ve dotfiles projelerinin yazarı ve bakımcısıdır; her biri gösteri değil referans uygulama olarak konumlanmıştır: incelenebilir, yönetim kurulu düzeyinde finansal altyapı.
 
 Emerging Payments Association Asia'nın Kuantum Güvenli Kriptografi Çalışma Grubu'na katkı
 verir, EPAA'nın “Quantum-Safe Payments: Why the Payments Industry Must Act Now” raporunun

@@ -6,7 +6,7 @@ description: "UK పేమెంట్స్ ఫార్వర్డ్ ప్�
 date: "May 24, 2026"
 language: "te"
 locale: "te_IN"
-banner: "https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM-1200.webp"
+banner: "https://cloudcdn.pro/stocks/images/andrea-de-santis-gYINUebkIDg.webp"
 banner_alt: "స్టేబుల్‌కాయిన్లు, టోకనైజ్డ్ డిపాజిట్లు, ఓపెన్ బ్యాంకింగ్, AI ఏజెంట్లు, FCA నియంత్రణ, PSR ఏకీకరణ మరియు హోల్‌సేల్ డిజిటల్ మార్కెట్లను చూపించే UK చెల్లింపుల ఆధునీకరణ రేఖాచిత్రం"
 keywords: "UK Payments Forward Plan 2026, UK స్టేబుల్‌కాయిన్లు, UK టోకనైజ్డ్ డిపాజిట్లు, ఓపెన్ బ్యాంకింగ్ FCA, PSR FCA ఏకీకరణ, UK AI ఏజెంట్ చెల్లింపులు, Wholesale Digital Markets Champion, Chris Woolard, చెల్లింపు సేవల నియంత్రణ"
 ---

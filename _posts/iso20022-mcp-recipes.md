@@ -4,8 +4,8 @@
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Aerial view of illuminated financial district at night"
-banner_height: "100vh"
-banner_width: "100vw"
+banner_height: "1080"
+banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp"
 cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
@@ -23,7 +23,7 @@ image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ISO 20022 MCP recipes, MT103 to pacs.008, reconcile camt.053 pain.001, camt.056 cancellation, AP2 pain.001, agent payment recipe"
-last_reviewed: "2026-07-14"
+last_reviewed: "2026-10-29"
 language: "en-GB"
 layout: "story"
 locale: "en_GB"
@@ -40,7 +40,7 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Four end-to-end flows an agent runs entirely through the suite: from a legacy MT103 to a validated wire, from a bank statement to a reconciled ledger."
+subtitle: "Five end-to-end flows an agent runs entirely through the suite: from a legacy MT103 to a validated wire, from a bank statement to a reconciled ledger."
 tags: "ISO 20022, MCP, Recipes, MT103, pacs.008, Reconciliation, camt.056, AP2, x402, Agent Payments, Fintech, open source"
 theme-color: "0, 67, 165"
 title: "ISO 20022 MCP Suite: recipes"
@@ -82,7 +82,7 @@ msapplication-navbutton-color: "0, 67, 165"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "End-to-end recipes for the ISO 20022 MCP Suite: migrate, reconcile, cancel, bridge."
-twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp"
 twitter_image_alt: "ISO 20022 MCP Suite recipes"
 twitter_site: "@wwdseb"
 twitter_title: "ISO 20022 MCP Suite: recipes"
@@ -93,27 +93,36 @@ author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2026-07-14"
+site_last_updated: "2026-10-29"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
 ---
 
-<p class="story-intro">Four flows an agent runs end to end, entirely through the published servers. Each is a short chain of tool calls: no glue code, every step validated. New here? Read <a href="/iso20022-mcp-docs/index.html">the quickstart</a> first, or the <a href="/iso20022-mcp-reference/index.html">tool reference</a>.</p>
+<p class="story-intro">Five flows an agent runs end to end, entirely through the published servers. Each is a short chain of tool calls: no glue code, every step validated. New here? Read <a href="/iso20022-mcp-docs/index.html">the quickstart</a> first, or the <a href="/iso20022-mcp-reference/index.html">tool reference</a>.</p>
 
 <section class="newsroom" id="migrate">
 <header class="cat-section-head"><p class="cat-kicker">RECIPE 01 · MIGRATE</p><h2 class="cat-headline">A legacy MT103 becomes a validated pacs.008.</h2></header>
 <div class="story-why"><ul class="story-why-list">
-<li><strong>Convert.</strong> <code>pacs008-mcp · convert_mt103(mt_text)</code> → structured pacs.008 records.</li>
-<li><strong>Validate.</strong> <code>validate_records("pacs.008.001.08", records)</code> → schema + rail checks pass.</li>
+<li><strong>Convert.</strong> <code>pacs008-mcp · convert_mt103(mt_text)</code> → structured <code>pacs.008</code> records.</li>
+<li><strong>Validate.</strong> <code>validate_records("pacs.008.001.08", records)</code> and <code>validate_payment_scheme("CBPR+", records)</code> → schema + rail checks pass.</li>
 <li><strong>Generate.</strong> <code>generate_message("pacs.008.001.08", records)</code> → XSD-valid XML, ready for the network.</li>
 </ul></div>
-<p class="story-intro">The same shape works for <code>convert_mt101</code> → pain.001 and <code>convert_mt940</code>/<code>convert_mt942</code> → camt. Migrate one message type at a time.</p>
+<p class="story-intro">The same shape works for <code>convert_mt101</code> → <code>pain.001</code> and <code>convert_mt940</code>/<code>convert_mt942</code> → <code>camt.053</code>/<code>camt.052</code>. Migrate one message type at a time.</p>
+</section>
+
+<section class="newsroom" id="addresses">
+<header class="cat-section-head"><p class="cat-kicker">RECIPE 02 · STRUCTURED &amp; HYBRID ADDRESSES</p><h2 class="cat-headline">Remediate unstructured postal addresses for the 2026-2027 CBPR+ gates.</h2></header>
+<div class="story-why"><ul class="story-why-list">
+<li><strong>Classify.</strong> <code>pacs008-mcp · classify_address(address)</code> → identifies whether a party address is <code>structured</code>, <code>hybrid</code>, <code>unstructured</code> or <code>mixed_invalid</code>.</li>
+<li><strong>Repair &amp; validate.</strong> <code>repair_address(address)</code> extracts <code>TwnNm</code> (town name), <code>Ctry</code> (ISO country code) and <code>PstCd</code> from free-text lines into compliant structured or hybrid form, then <code>validate_address(repaired, policy="cbpr_2026")</code> confirms compliance.</li>
+<li><strong>Audit the statement.</strong> <code>camt053-mcp · check_cbpr_readiness(xml)</code> → verifies an entire inbound or outbound statement against the November 2026 and November 2027 structured-address rules.</li>
+</ul></div>
 </section>
 
 <section class="newsroom" id="reconcile-recipe">
-<header class="cat-section-head"><p class="cat-kicker">RECIPE 02 · RECONCILE</p><h2 class="cat-headline">A statement, matched to what you expected.</h2></header>
+<header class="cat-section-head"><p class="cat-kicker">RECIPE 03 · RECONCILE</p><h2 class="cat-headline">A statement, matched to what you expected.</h2></header>
 <div class="story-why"><ul class="story-why-list">
 <li><strong>Normalise both sides.</strong> <code>reconcile-mcp · normalize_camt053(statement)</code> and <code>normalize_pain001(payments)</code> → canonical observed + expected records.</li>
 <li><strong>Match.</strong> <code>reconcile(expected, observed)</code> → exact matches, short/over payments (with the delta), split settlements and batch credits, each with a reason.</li>
@@ -123,20 +132,20 @@ site_software: "Static Site Generator, Rust"
 </section>
 
 <section class="newsroom" id="cancel">
-<header class="cat-section-head"><p class="cat-kicker">RECIPE 03 · CANCEL &amp; RESOLVE</p><h2 class="cat-headline">Recall a duplicate wire, then close the case.</h2></header>
+<header class="cat-section-head"><p class="cat-kicker">RECIPE 04 · CANCEL &amp; RESOLVE (2027 E&amp;I)</p><h2 class="cat-headline">Recall a duplicate wire, then close the investigation case.</h2></header>
 <div class="story-why"><ul class="story-why-list">
-<li><strong>Cancel.</strong> <code>camt-exceptions · generate_message("camt.056", record)</code> with the original payment references and a cancellation reason (e.g. <code>DUPL</code>) → an XSD-valid FI-to-FI Payment Cancellation Request.</li>
+<li><strong>Cancel.</strong> <code>camt-exceptions · generate_message("camt.056", record)</code> (standalone CLI: <code>uvx --from camt-exceptions camt-exceptions-mcp</code>) with the original payment references and a cancellation reason (e.g. <code>DUPL</code>) → an XSD-valid FI-to-FI Payment Cancellation Request replacing legacy free-text <code>MT199</code>/<code>MT292</code> messages.</li>
 <li><strong>Resolve.</strong> When the response comes back, <code>generate_message("camt.029", record)</code> with a confirmation code (e.g. <code>CNCL</code> cancelled, <code>RJCR</code> rejected) → the Resolution of Investigation.</li>
 </ul></div>
 </section>
 
 <section class="newsroom" id="bridge">
-<header class="cat-section-head"><p class="cat-kicker">RECIPE 04 · BRIDGE AN AGENT PAYMENT</p><h2 class="cat-headline">An AP2 mandate becomes a wire-valid pain.001.</h2></header>
+<header class="cat-section-head"><p class="cat-kicker">RECIPE 05 · BRIDGE AN AGENT PAYMENT</p><h2 class="cat-headline">An AP2 or x402 mandate becomes a wire-valid pain.001.</h2></header>
 <div class="story-why"><ul class="story-why-list">
-<li><strong>Normalise.</strong> <code>ap2-iso20022 · normalize_ap2(mandate)</code> → a canonical mandate (works for Coinbase x402 too via <code>normalize_x402</code>).</li>
+<li><strong>Normalise.</strong> <code>ap2-iso20022 · normalize_ap2(mandate)</code> (standalone CLI: <code>uvx --from ap2-iso20022 ap2-iso20022-mcp</code>) → a canonical mandate (works for Coinbase x402 too via <code>normalize_x402</code>).</li>
 <li><strong>Guardrail.</strong> <code>check_mandate(mandate, as_of)</code> → required fields present, within the spending cap, not expired, signed. Stop here if it fails.</li>
-<li><strong>Convert, then generate.</strong> <code>to_pain001(mandate)</code> → a pain.001 record; hand it to <code>pain001-mcp · generate_message</code> for wire-valid XML. The bridge never moves money; sending stays a separate, human-guarded step.</li>
+<li><strong>Convert, then generate.</strong> <code>to_pain001(mandate)</code> → a <code>pain.001</code> record; hand it to <code>pain001-mcp · generate_message</code> for wire-valid XML. The bridge never moves money; sending stays a separate, human-guarded step.</li>
 </ul></div>
 </section>
 
-<section class="setup-finale" aria-labelledby="finale-heading"><p class="setup-finale-eyebrow">ONE SUITE · THE WHOLE LIFECYCLE</p><h2 id="finale-heading" class="setup-finale-headline">Compose your own.</h2><p class="setup-finale-lede">These four chain the servers end to end; the gateway lets an agent discover and run any of them from natural language.</p><p class="setup-finale-cta"><a href="/iso20022-mcp-docs/index.html">Quickstart <span aria-hidden="true">›</span></a> · <a href="/iso20022-mcp-reference/index.html">Tool reference <span aria-hidden="true">›</span></a> · <a href="/iso20022-mcp/index.html">The suite <span aria-hidden="true">›</span></a></p></section>
+<section class="setup-finale" aria-labelledby="finale-heading"><p class="setup-finale-eyebrow">ONE SUITE · THE WHOLE LIFECYCLE</p><h2 id="finale-heading" class="setup-finale-headline">Compose your own.</h2><p class="setup-finale-lede">These five chain the servers end to end; the gateway lets an agent discover and run any of them from natural language.</p><p class="setup-finale-cta"><a href="/iso20022-mcp-docs/index.html">Quickstart <span aria-hidden="true">›</span></a> · <a href="/iso20022-mcp-reference/index.html">Tool reference <span aria-hidden="true">›</span></a> · <a href="/iso20022-mcp/index.html">The suite <span aria-hidden="true">›</span></a></p></section>

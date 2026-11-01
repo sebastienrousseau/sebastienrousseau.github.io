@@ -6,7 +6,7 @@ description: "AI-सजग dotfiles हा MCP युगासाठी एक �
 date: "June 16, 2026"
 language: "mr"
 locale: "mr_IN"
-banner: "https://cloudcdn.pro/stocks/images/almas-salakhov-Vq2ap8aFFEs.webp"
+banner: "https://cloudcdn.pro/stocks/images/alexander-sinn-KgLtFCgfC28.webp"
 banner_alt: "मंद प्रकाशातील डेव्हलपर वर्कस्टेशन - MCP सर्व्हर्स, SLSA स्वाक्षरी, age/SOPS सिक्रेट्स आणि मल्टी-शेल पॅरिटीसाठी AI-सजग, पुनरुत्पादनक्षम, सुरक्षित dotfiles यांचे प्रतीक"
 keywords: "dotfiles, Chezmoi, MCP, Model Context Protocol, SLSA, SOPS, age एन्क्रिप्शन, घोषणात्मक कॉन्फिगरेशन, डेव्हलपर वर्कस्टेशन, DORA Article 5, NIST CSF 2.0, पुरवठा साखळी सुरक्षा, एजेंटिक AI, मल्टी-शेल पॅरिटी, Zsh, Fish, Nushell"
 ---

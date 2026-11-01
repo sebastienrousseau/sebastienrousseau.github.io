@@ -10,6 +10,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.0.26] - Unreleased
+
+### Added
+
+- **Four October 2026 articles across 35 languages ([#509])**: published `2026-10-24-an-ai-s-attack-on-progression-free-sets-a-ledger-of-what-stalled`, `2026-10-25-agentic-ai-breaks-the-assumption-behind-every-task-exposure-forecast`, `2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude`, and `2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook`, together with all 136 localised editions across 34 non-English locales, updated topic clusters, and romanisation lexicon entries for `ja`, `zh-hans`, and `zh-hant`.
+- **ISO 20022 MCP Suite architecture matrix, 2027 FAQ, and structured data ([#509])**: expanded `/iso20022-mcp/` with a 9-server architecture and clearing rail matrix (documenting the 7-meta-tool gateway pattern and ~94% token reduction), a 6-question accordion on 2026-2027 SWIFT CBPR+ structured/hybrid postal addresses (`TwnNm`, `Ctry`, `AdrLine`) and November 2027 E&I (`camt.056`/`camt.029`), and `SoftwareApplication` + `FAQPage` JSON-LD; added OpenAI Codex CLI, `streamable-http`, all 9 server CLI invocations, and the structured address repair recipe across `/suite/`, `/iso20022-mcp-docs/`, and `/iso20022-mcp-recipes/`.
+
+### Changed
+
+- **Dependencies ([#507], [#508])**: `ruff` 0.17.1 to 0.17.2 in `requirements-dev.txt`, with `requirements-dev.lock` regenerated so the lock-agreement gate passes; `actions/setup-python` 7.0.0 to 7.1.0 across seven workflows; and `github/codeql-action` 4.39.0 to 4.39.1 in the CodeQL and Scorecard workflows.
+
+### Fixed
+
+- **Landscape-only article banners ([#509])**: `scripts/editorial/pick_banner.py` now parses `VP8`, `VP8L`, and `VP8X` WebP dimensions and excludes portrait and square assets (`width <= height`) during inventory collection; replaced seven portrait stock banners across English and all 34 locale editions with `2584x1597` landscape photographs.
+- **Social card metadata on `story` and `page` layouts ([#509])**: `story.html` now emits `<meta name="banner-src" content="{{banner}}" />` so `/iso20022-mcp-docs/`, `/iso20022-mcp-reference/`, and `/iso20022-mcp-recipes/` publish full-bleed raster `og:image` / `twitter:image` cards instead of share-button icon fallbacks, and `postbuild_lib.seo.clean_meta_description` repairs truncated body scrapes on non-BlogPosting `og:description` and `twitter:description` tags.
+- **WeasyPrint PDF subresource SSRF guard, size cap, and asset cache ([#509])**: `fly/pdf-render/app.py` now supplies a custom `safe_url_fetcher` to WeasyPrint that enforces HTTPS-only allowlisted hosts (`sebastienrousseau.com`, `www.sebastienrousseau.com`, `cdn.cloudcdn.pro`), caps subresource payloads at 10 MiB (`MAX_ASSET_BYTES`), caches immutable `/fonts/*` and `/_csp/*` assets in memory, and supports optional `X-Origin-Verify` token authentication, backed by hermetic unit tests in `tests/unit/test_pdf_render.py`.
+- **Edge API security headers and ASN denylist cleanup ([#509])**: `workers/lang-router.js` wraps early-return API responses (`tryActivityPub`, `tryMCP`, `tryPDF`, and `tryClock`) with `withApiSecurityHeaders` (`Strict-Transport-Security`, `X-Content-Type-Options: nosniff`, `Referrer-Policy`, `Permissions-Policy`, `Cross-Origin-Opener-Policy`, and a sandboxed `Content-Security-Policy`), and `workers/security.js` removes the duplicate `16276` ASN entry.
+- **Agent API canonical URLs, provenance digests, and postbuild ordering ([#509])**: `scripts/generators/build_agent_api.py` now emits canonical trailing-slash URLs (`https://sebastienrousseau.com/<stem>/` and `https://sebastienrousseau.com/about/`) instead of `/index.html`, includes deterministic `content_sha256` source digests and `sigstore_bundle` URLs on every post entry, and runs immediately after `postbuild.py` in `build.sh` so `word_count` is populated on clean builds.
+- **MCP `server_info` discovery, PDF proxy origin token, and parallel JSON-LD audit ([#509])**: `workers/mcp.js` adds `GET /mcp/v1/server_info` exposing MCP protocol version `2025-06-18`, capabilities, and tool descriptors; `workers/pdf-proxy.js` forwards `X-Origin-Verify` when configured; `scripts/seo_and_audit/validate_jsonld.py` adds `--jobs` (`-j`) parallel validation via `ThreadPoolExecutor`; and `_layouts/main.js` scopes homepage lens title/description overrides to `#home-content` while keeping `#mcp-faq` anchored at the tail of `/iso20022-mcp/`.
+- **Advisories in the CI tooling locks**: `msgpack` 1.2.1 to 1.2.3 in `requirements-dev.lock` (CVE-2026-114613) and `qs` 6.16.0 to 6.17.0 in `.github/ci-tools/lighthouse/package-lock.json` (GHSA-6pq8-jhm2-2vcw, via `overrides`). Both `pip-audit` and `npm audit` report 0 vulnerabilities across all lockfiles.
+
+---
+
 ## [0.0.25] - 2026-10-27
 
 ### Added
@@ -288,6 +311,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+[0.0.26]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.25...HEAD
 [0.0.25]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.24...v0.0.25
 [0.0.24]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.23...v0.0.24
 [0.0.23]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.22...v0.0.23
@@ -320,6 +344,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 [#503]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/503
 [#504]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/504
 [#506]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/506
+[#507]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/507
+[#508]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/508
+[#509]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/509
 [#158]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/158
 [#159]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/159
 [#160]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/160
@@ -391,3 +418,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 [#488]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/488
 [#492]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/492
 [#493]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/493
+[#504]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/504
+[#506]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/506
+[#507]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/507
+[#508]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/508
+[#509]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/509

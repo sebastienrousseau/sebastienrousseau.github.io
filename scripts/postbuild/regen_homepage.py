@@ -197,6 +197,10 @@ _ACRONYMS = {
 }
 
 _PILLAR_TAGS = {
+    "ai",
+    "agentic-ai",
+    "generative-ai",
+    "ai-governance",
     "banking",
     "payments",
     "iso 20022",
@@ -205,6 +209,11 @@ _PILLAR_TAGS = {
     "post-quantum-cryptography",
     "pqc",
     "quantum-safe",
+    "cryptography",
+    "cybersecurity",
+    "financial-services",
+    "regulation",
+    "compliance",
     "dora",
     "swift",
     "sepa",
@@ -238,6 +247,8 @@ def _smart_title(token: str) -> str:
     casing. ``.title()`` would butcher ``UK`` into ``Uk``."""
     if token.upper() in _ACRONYMS:
         return token.upper()
+    if "-" in token:
+        return " ".join(_smart_title(sub) for sub in token.split("-") if sub)
     # If the token already has mixed-case (e.g. "FedNow"), trust it.
     if any(c.isupper() for c in token[1:]):
         return token

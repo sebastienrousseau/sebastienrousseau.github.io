@@ -285,6 +285,8 @@ def _smart_title_for_eyebrow(token: str) -> str:
     canonical casing. ``.title()`` would butcher ``UK`` into ``Uk``."""
     if token.upper() in _EYEBROW_ACRONYMS:
         return token.upper()
+    if "-" in token:
+        return " ".join(_smart_title_for_eyebrow(sub) for sub in token.split("-") if sub)
     if any(c.isupper() for c in token[1:]):
         # Mixed-case (e.g. "FedNow") — trust the source.
         return token
@@ -516,6 +518,7 @@ def rewrite_newsroom_card_titles(html: str) -> str:
     A missing locale field leaves the corresponding EN value in place
     — partial localisation is still an improvement over none."""
     fr_titles = _ensure_fr_title_map()
+    fr_descs = _ensure_fr_description_map()
     fr_excerpts = _ensure_fr_excerpt_map()
     fr_eyebrows = _ensure_fr_eyebrow_map()
 
@@ -541,6 +544,7 @@ def rewrite_newsroom_card_titles(html: str) -> str:
             return m.group(0)
 
         fr_title = fr_titles.get(en)
+        fr_tldr = fr_descs.get(en) or fr_excerpts.get(en)
         fr_excerpt = fr_excerpts.get(en)
         fr_eyebrow = fr_eyebrows.get(en)
 
@@ -564,6 +568,14 @@ def rewrite_newsroom_card_titles(html: str) -> str:
             inner = re.sub(
                 r'(<a [^>]*class="newsroom-card-media"[^>]*title=")[^"]+(")',
                 rf"\g<1>{esc}\g<2>",
+                inner,
+                count=1,
+            )
+
+        if fr_tldr:
+            inner = re.sub(
+                r'(<p\s[^>]*class\s*=\s*(?:"newsroom-tldr"|newsroom-tldr)[^>]*>\s*<span\s[^>]*class\s*=\s*(?:"newsroom-tldr-label"|newsroom-tldr-label)[^>]*>[^<]*</span>\s*)[^<]*(</p>)',
+                rf"\g<1>{_html.escape(fr_tldr)}\g<2>",
                 inner,
                 count=1,
             )

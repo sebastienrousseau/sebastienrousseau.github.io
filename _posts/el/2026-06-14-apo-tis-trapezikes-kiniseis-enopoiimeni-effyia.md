@@ -6,7 +6,7 @@ description: "Το BankStatementParser μετατρέπει CAMT, PAIN.001, CSV,
 date: "June 14, 2026"
 language: "el"
 locale: "el_GR"
-banner: "https://cloudcdn.pro/stocks/images/ricardo-gomez-angel-Oj6tP8NlvFo.webp"
+banner: "https://cloudcdn.pro/stocks/images/christoph-duschl-CE_TvPHF3lA.webp"
 banner_alt: "Σύγχρονος χώρος εργασίας χρηματοοικονομικού γραφείου τη νύχτα - συμβολίζοντας την ενοποιημένη ευφυΐα συναλλαγών που το BankStatementParser δημιουργεί από CAMT, PAIN.001, MT940, OFX, CSV και σαρωμένα PDF"
 keywords: "BankStatementParser, αναλυτής τραπεζικών κινήσεων, CAMT, PAIN.001, MT940, OFX, QFX, PDF OCR, ευφυΐα συναλλαγών ταμειακής διαχείρισης"
 ---

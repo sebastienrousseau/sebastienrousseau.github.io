@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import base64
 import hashlib
+import json
 import re
 from pathlib import Path
 
@@ -507,6 +508,53 @@ def add_responsive_srcset(html: str) -> tuple[str, int]:
         return f'<img{body} srcset="{srcset}" sizes="{sizes}"{slash}>'
 
     return _IMG_TAG_TRANSFORM_RE.sub(patch, html), n
+
+
+_CLOUDCDN_TAG_RE = re.compile(
+    r"<(?:img|link)\b[^>]*https://cloudcdn\.pro/[^>]*>",
+    re.IGNORECASE,
+)
+
+
+def add_cloudcdn_cors(html: str) -> str:
+    """Ensure CloudCDN <img>/<link> tags use CORS mode and local /favicon.ico."""
+
+    def _patch(match: re.Match[str]) -> str:
+        tag = match.group(0)
+        if "crossorigin" in tag.lower():
+            return tag
+        return re.sub(r"(\s*/?>)$", r' crossorigin="anonymous"\1', tag, count=1)
+
+    html = html.replace(
+        'href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico"',
+        'href="/favicon.ico"',
+    )
+    return _CLOUDCDN_TAG_RE.sub(_patch, html)
+
+
+def normalise_manifest_icons(public: Path) -> int:
+    """Point cross-origin CloudCDN manifest icons at the same-origin /favicon.ico."""
+    changed = 0
+    for manifest_path in sorted(public.rglob("manifest.json")):
+        try:
+            data = json.loads(manifest_path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        icons = data.get("icons")
+        if not isinstance(icons, list):
+            continue
+        updated = False
+        for icon in icons:
+            if isinstance(icon, dict) and str(icon.get("src", "")).startswith(_CDN_HOST + "/"):
+                icon["src"] = "/favicon.ico"
+                icon["sizes"] = "32x32"
+                icon["type"] = "image/x-icon"
+                icon["purpose"] = "any"
+                updated = True
+        if updated:
+            manifest_path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+            changed += 1
+    return changed
 
 
 jsonld_re = re.compile(

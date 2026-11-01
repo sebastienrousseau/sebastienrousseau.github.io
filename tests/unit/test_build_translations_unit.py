@@ -327,6 +327,7 @@ def test_eyebrow_from_locale_tags_prefers_first_tag():
 def test_smart_title_for_eyebrow_acronyms_and_words():
     assert _maps._smart_title_for_eyebrow("iso") == "ISO"
     assert _maps._smart_title_for_eyebrow("payments") == "Payments"
+    assert _maps._smart_title_for_eyebrow("post-quantum") == "Post Quantum"
 
 
 def test_title_and_description_maps_cache_per_language():

@@ -6,7 +6,7 @@ description: "A BankStatementParser a CAMT, PAIN.001, CSV, OFX/QFX, MT940 formá
 date: "June 14, 2026"
 language: "hu"
 locale: "hu_HU"
-banner: "https://cloudcdn.pro/stocks/images/ricardo-gomez-angel-Oj6tP8NlvFo.webp"
+banner: "https://cloudcdn.pro/stocks/images/christoph-duschl-CE_TvPHF3lA.webp"
 banner_alt: "Modern pénzügyi iroda munkakörnyezete éjszaka, amely azt az egységes tranzakciós intelligenciát jelképezi, amelyet a BankStatementParser a CAMT, PAIN.001, MT940, OFX, CSV és beszkennelt PDF-forrásokból épít fel"
 keywords: "BankStatementParser, bankszámlakivonat-elemző, CAMT, PAIN.001, MT940, OFX, QFX, PDF OCR, treasury tranzakciós intelligencia"
 ---

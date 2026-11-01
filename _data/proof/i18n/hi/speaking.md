@@ -11,10 +11,10 @@ hero:
   press_nudge: समय-सीमा में बँधे पत्रकार हैं?
   press_nudge_cta: विशेषज्ञ टिप्पणी माँगिए
   microproof:
-  - HSBC, PayPal और Barclays में भुगतान मंच उतारे
+  - HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में लगभग दो दशकों का अनुभव
   - EPAA पोस्ट-क्वांटम श्वेतपत्र के सह-लेखक
   - योगदानकर्ता, Emerging Payments Association Asia
-employers_label: इन संस्थानों में भुगतान मंच उतारे
+employers_label: जहाँ मैंने काम किया है
 stats_eyebrow: आँकड़ों में
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: कॉपी
   items:
   - length: छोटा
-    text: सेबेस्टियन रूसो वरिष्ठ बैंकिंग प्रौद्योगिकीविद् हैं, जो ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफ़ी और अनुप्रयुक्त AI के संगम पर लिखते और बनाते हैं। उन्होंने HSBC, PayPal और Barclays में भुगतान मंच उतारे हैं और ऐसे ओपन सोर्स संदर्भ क्रियान्वयन बनाए रखते हैं जो उत्पादन में उपयोग होते हैं।
+    text: सेबेस्टियन रूसो वरिष्ठ बैंकिंग प्रौद्योगिकीविद् हैं, जो ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफ़ी और अनुप्रयुक्त AI के संगम पर लिखते और बनाते हैं। HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में लगभग दो दशकों का अनुभव।
   - length: मध्यम
     text: सेबेस्टियन रूसो वरिष्ठ बैंकिंग प्रौद्योगिकीविद् हैं, जिन्होंने HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA और Virgin Group में लगभग दो दशक बिताए हैं। वे ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफ़ी और अनुप्रयुक्त AI के संगम पर लिखते और बनाते हैं, और pacs.008, pain.001, KyberLib, BankStatementParser जैसे ओपन सोर्स संदर्भ क्रियान्वयन बनाए रखते हैं, जिनका उपयोग ट्रेज़री और भुगतान दल उत्पादन में करते हैं। वे Emerging Payments Association Asia के क्वांटम-सुरक्षित क्रिप्टोग्राफ़ी कार्यसमूह में योगदान करते हैं और Banking On Quantum तथा Banking On AI प्रकाशित करते हैं।
   - length: लंबा
-    text: 'सेबेस्टियन रूसो वरिष्ठ बैंकिंग प्रौद्योगिकीविद् हैं जिनका ध्यान थोक भुगतानों के संरचनात्मक रूपांतरण पर है। HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA और Virgin Group में उन्होंने भुगतान मंच, AI उत्पाद और ओपन सोर्स अवसंरचना उतारी है, जिनका उपयोग ट्रेज़री और भुगतान दल उत्पादन में करते हैं। वे pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN और dotfiles लिखते और बनाए रखते हैं, जिनमें से हर एक प्रदर्शन नहीं बल्कि संदर्भ क्रियान्वयन के रूप में रखा गया है: जाँची जा सकने वाली, बोर्ड-स्तरीय वित्तीय अवसंरचना। वे Emerging Payments Association Asia के क्वांटम-सुरक्षित क्रिप्टोग्राफ़ी कार्यसमूह में योगदान करते हैं, EPAA श्वेतपत्र «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (सितंबर 2025) के सह-लेखक हैं, और Banking On Quantum तथा Banking On AI प्रकाशित करते हैं। वे एजेंटिक AI, वास्तविक-समय भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफ़ी, क्लाउड-नेटिव सहनशीलता, संरचित डेटा और नियामकीय प्रमाण के संगम पर काम करते हैं।'
+    text: 'सेबेस्टियन रूसो वरिष्ठ बैंकिंग प्रौद्योगिकीविद् हैं जिनका ध्यान थोक भुगतानों के संरचनात्मक रूपांतरण पर है। HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में लगभग दो दशकों का अनुभव। वे pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN और dotfiles लिखते और बनाए रखते हैं, जिनमें से हर एक प्रदर्शन नहीं बल्कि संदर्भ क्रियान्वयन के रूप में रखा गया है: जाँची जा सकने वाली, बोर्ड-स्तरीय वित्तीय अवसंरचना। वे Emerging Payments Association Asia के क्वांटम-सुरक्षित क्रिप्टोग्राफ़ी कार्यसमूह में योगदान करते हैं, EPAA श्वेतपत्र «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (सितंबर 2025) के सह-लेखक हैं, और Banking On Quantum तथा Banking On AI प्रकाशित करते हैं। वे एजेंटिक AI, वास्तविक-समय भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफ़ी, क्लाउड-नेटिव सहनशीलता, संरचित डेटा और नियामकीय प्रमाण के संगम पर काम करते हैं।'
 faq:
   eyebrow: पूछने से पहले
   headline: आमंत्रण, सीधी बात में।
@@ -185,12 +185,7 @@ final_cta:
   secondary_cta: विशेषज्ञ टिप्पणी माँगिए
 ---
 
-सेबेस्टियन रूसो वरिष्ठ बैंकिंग प्रौद्योगिकीविद् हैं जिनका ध्यान थोक भुगतानों के संरचनात्मक
-रूपांतरण पर है। HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA और Virgin
-Group में उन्होंने भुगतान मंच, AI उत्पाद और ओपन सोर्स अवसंरचना उतारी है, जिनका उपयोग ट्रेज़री
-और भुगतान दल उत्पादन में करते हैं। वे pacs.008, pain.001, BankStatementParser, KyberLib,
-CloudCDN और dotfiles लिखते और बनाए रखते हैं, जिनमें से हर एक प्रदर्शन नहीं बल्कि संदर्भ
-क्रियान्वयन के रूप में रखा गया है: जाँची जा सकने वाली, बोर्ड-स्तरीय वित्तीय अवसंरचना।
+सेबेस्टियन रूसो वरिष्ठ बैंकिंग प्रौद्योगिकीविद् हैं जिनका ध्यान थोक भुगतानों के संरचनात्मक रूपांतरण पर है। HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में लगभग दो दशकों का अनुभव। वे pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN और dotfiles लिखते और बनाए रखते हैं, जिनमें से हर एक प्रदर्शन नहीं बल्कि संदर्भ क्रियान्वयन के रूप में रखा गया है: जाँची जा सकने वाली, बोर्ड-स्तरीय वित्तीय अवसंरचना।
 
 वे Emerging Payments Association Asia के क्वांटम-सुरक्षित क्रिप्टोग्राफ़ी कार्यसमूह में
 योगदान करते हैं, EPAA श्वेतपत्र «Quantum-Safe Payments: Why the Payments Industry Must Act

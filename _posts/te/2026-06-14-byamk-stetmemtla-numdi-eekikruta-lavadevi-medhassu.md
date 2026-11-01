@@ -6,7 +6,7 @@ description: "CAMT, PAIN.001, CSV, OFX/QFX, MT940 మరియు స్కా�
 date: "June 14, 2026"
 language: "te"
 locale: "te_IN"
-banner: "https://cloudcdn.pro/stocks/images/ricardo-gomez-angel-Oj6tP8NlvFo.webp"
+banner: "https://cloudcdn.pro/stocks/images/christoph-duschl-CE_TvPHF3lA.webp"
 banner_alt: "రాత్రి వేళ ఆధునిక ఫైనాన్స్ ఆఫీస్ వర్క్‌స్పేస్ - CAMT, PAIN.001, MT940, OFX, CSV మరియు స్కాన్ చేసిన PDFల నుండి BankStatementParser నిర్మించే ఏకీకృత లావాదేవీ మేధస్సును సూచిస్తుంది"
 keywords: "BankStatementParser, బ్యాంక్ స్టేట్‌మెంట్ పార్సర్, CAMT, PAIN.001, MT940, OFX, QFX, PDF OCR, ట్రెజరీ లావాదేవీ మేధస్సు"
 ---

@@ -11,10 +11,10 @@ hero:
   press_nudge: خبرنگارید و مهلت دارید؟
   press_nudge_cta: درخواست اظهارنظر کارشناسی
   microproof:
-  - سکوهای پرداخت راه‌اندازی‌شده در HSBC، PayPal و Barclays
+  - نزدیک به دو دهه فعالیت در HSBC Commercial & Investment Bank، PayPal، Barclays، Shazam، AKQA، Virgin Group
   - هم‌نویسنده گزارش پساکوانتومی EPAA
   - مشارکت‌کننده، Emerging Payments Association Asia
-employers_label: سکوهای پرداخت راه‌اندازی‌شده در
+employers_label: سازمان‌هایی که در آن‌ها کار کرده‌ام
 stats_eyebrow: به زبان عدد
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: کپی
   items:
   - length: کوتاه
-    text: سباستین روسو فناور ارشد بانکی است که در تقاطع پرداخت‌های ISO 20022، رمزنگاری پساکوانتومی و هوش مصنوعی کاربردی می‌نویسد و می‌سازد. او سکوهای پرداخت را در HSBC، PayPal و Barclays راه‌اندازی کرده و پیاده‌سازی‌های مرجع متن‌باز را نگه می‌دارد که در محیط عملیاتی به کار می‌روند.
+    text: سباستین روسو فناور ارشد بانکی است که در تقاطع پرداخت‌های ISO 20022، رمزنگاری پساکوانتومی و هوش مصنوعی کاربردی می‌نویسد و می‌سازد. نزدیک به دو دهه فعالیت در HSBC Commercial & Investment Bank، PayPal، Barclays، Shazam، AKQA، Virgin Group.
   - length: متوسط
     text: سباستین روسو فناور ارشد بانکی است با نزدیک به دو دهه حضور در HSBC Commercial & Investment Bank، PayPal، Barclays، Shazam، AKQA و Virgin Group. او در تقاطع پرداخت‌های ISO 20022، رمزنگاری پساکوانتومی و هوش مصنوعی کاربردی می‌نویسد و می‌سازد و پیاده‌سازی‌های مرجع متن‌باز — pacs.008، pain.001، KyberLib، BankStatementParser — را نگه می‌دارد که تیم‌های خزانه‌داری و پرداخت در محیط عملیاتی از آن‌ها استفاده می‌کنند. او در کارگروه رمزنگاری امن در برابر کوانتوم Emerging Payments Association Asia مشارکت دارد و Banking On Quantum و Banking On AI را منتشر می‌کند.
   - length: بلند
-    text: 'سباستین روسو فناور ارشد بانکی است که بر دگرگونی ساختاری پرداخت‌های کلان تمرکز دارد. در HSBC Commercial & Investment Bank، PayPal، Barclays، Shazam، AKQA و Virgin Group، سکوهای پرداخت، محصولات هوش مصنوعی و زیرساخت متن‌باز را راه‌اندازی کرده که تیم‌های خزانه‌داری و پرداخت در محیط عملیاتی از آن‌ها بهره می‌برند. او pacs.008، pain.001، BankStatementParser، KyberLib، CloudCDN و dotfiles را می‌نویسد و نگه می‌دارد؛ هر یک نه به‌عنوان نمایش، بلکه به‌عنوان پیاده‌سازی مرجع: زیرساخت مالیِ قابل بازرسی و در تراز هیئت‌مدیره. او در کارگروه رمزنگاری امن در برابر کوانتوم Emerging Payments Association Asia مشارکت دارد، هم‌نویسنده گزارش EPAA با عنوان «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (سپتامبر ۲۰۲۵) است، و Banking On Quantum و Banking On AI را منتشر می‌کند. کار او در تقاطع هوش مصنوعی عامل‌محور، پرداخت‌های آنی، رمزنگاری پساکوانتومی، تاب‌آوری ابری، داده ساخت‌یافته و مستندات نظارتی قرار دارد.'
+    text: 'سباستین روسو فناور ارشد بانکی است که بر دگرگونی ساختاری پرداخت‌های کلان تمرکز دارد. نزدیک به دو دهه فعالیت در HSBC Commercial & Investment Bank، PayPal، Barclays، Shazam، AKQA، Virgin Group. او pacs. 008، pain. 001، BankStatementParser، KyberLib، CloudCDN و dotfiles را می‌نویسد و نگه می‌دارد؛ هر یک نه به‌عنوان نمایش، بلکه به‌عنوان پیاده‌سازی مرجع: زیرساخت مالیِ قابل بازرسی و در تراز هیئت‌مدیره. او در کارگروه رمزنگاری امن در برابر کوانتوم Emerging Payments Association Asia مشارکت دارد، هم‌نویسنده گزارش EPAA با عنوان «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (سپتامبر ۲۰۲۵) است، و Banking On Quantum و Banking On AI را منتشر می‌کند. کار او در تقاطع هوش مصنوعی عامل‌محور، پرداخت‌های آنی، رمزنگاری پساکوانتومی، تاب‌آوری ابری، داده ساخت‌یافته و مستندات نظارتی قرار دارد.'
 faq:
   eyebrow: پیش از آنکه بپرسید
   headline: دعوت، به زبان ساده.
@@ -185,12 +185,7 @@ final_cta:
   secondary_cta: درخواست اظهارنظر کارشناسی
 ---
 
-سباستین روسو فناور ارشد بانکی است که بر دگرگونی ساختاری پرداخت‌های کلان تمرکز دارد. در
-HSBC Commercial & Investment Bank، PayPal، Barclays، Shazam، AKQA و Virgin Group، سکوهای
-پرداخت، محصولات هوش مصنوعی و زیرساخت متن‌باز را راه‌اندازی کرده که تیم‌های خزانه‌داری و
-پرداخت در محیط عملیاتی از آن‌ها بهره می‌برند. او pacs.008، pain.001، BankStatementParser،
-KyberLib، CloudCDN و dotfiles را می‌نویسد و نگه می‌دارد؛ هر یک نه به‌عنوان نمایش، بلکه
-به‌عنوان پیاده‌سازی مرجع: زیرساخت مالیِ قابل بازرسی و در تراز هیئت‌مدیره.
+سباستین روسو فناور ارشد بانکی است که بر دگرگونی ساختاری پرداخت‌های کلان تمرکز دارد. نزدیک به دو دهه فعالیت در HSBC Commercial & Investment Bank، PayPal، Barclays، Shazam، AKQA، Virgin Group. او pacs. 008، pain. 001، BankStatementParser، KyberLib، CloudCDN و dotfiles را می‌نویسد و نگه می‌دارد؛ هر یک نه به‌عنوان نمایش، بلکه به‌عنوان پیاده‌سازی مرجع: زیرساخت مالیِ قابل بازرسی و در تراز هیئت‌مدیره.
 
 او در کارگروه رمزنگاری امن در برابر کوانتوم Emerging Payments Association Asia مشارکت دارد،
 هم‌نویسنده گزارش EPAA با عنوان «Quantum-Safe Payments: Why the Payments Industry Must Act

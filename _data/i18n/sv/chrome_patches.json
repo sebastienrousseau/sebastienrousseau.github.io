@@ -74,7 +74,7 @@
       "aria-label=\"Sebastien Rousseau startsida\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/sv/om-mig/index.html\">Om mig</a></li>"
     ],
     [
@@ -294,11 +294,11 @@
       "<li><a href=\"/sv/forskning/index.html\">Forskning</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/sv/speaking/index.html\">Föredrag</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/sv/speaking/index.html\">Föredrag</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/sv/svit/index.html\">Svit</a>"
     ],
     [
@@ -326,15 +326,15 @@
       "aria-label=\"Växla undermenyn Om mig\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"Växla undermenyn Bibliotek\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"Växla undermenyn Forskning\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"Växla undermenyn Svit\""
     ],
     [
@@ -346,7 +346,7 @@
       "<li><a href=\"/sv/speaking/index.html\">Offentliga föredrag</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/sv/bibliotek/index.html\">Bibliotek</a>"
     ],
     [

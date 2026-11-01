@@ -73,7 +73,7 @@
       "aria-label=\"خانهٔ Sebastien Rousseau\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/fa/about/index.html\">درباره</a></li>"
     ],
     [
@@ -293,11 +293,11 @@
       "<li><a href=\"/fa/research/index.html\">پژوهش</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/fa/speaking/index.html\">سخنرانی‌ها</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/fa/speaking/index.html\">سخنرانی‌ها</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/fa/suite/index.html\">مجموعه</a>"
     ],
     [
@@ -325,15 +325,15 @@
       "aria-label=\"تغییر وضعیت زیرمنوی درباره\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"تغییر وضعیت زیرمنوی کتابخانه\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"تغییر وضعیت زیرمنوی پژوهش\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"تغییر وضعیت زیرمنوی مجموعه\""
     ],
     [
@@ -345,7 +345,7 @@
       "<li><a href=\"/fa/speaking/index.html\">سخنرانی عمومی</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/fa/library/index.html\">کتابخانه</a>"
     ],
     [

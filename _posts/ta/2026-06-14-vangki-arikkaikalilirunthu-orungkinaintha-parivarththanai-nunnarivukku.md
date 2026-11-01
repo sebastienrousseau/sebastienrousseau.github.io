@@ -6,7 +6,7 @@ description: "BankStatementParser ஆனது CAMT, PAIN.001, CSV, OFX/QFX, MT9
 date: "June 14, 2026"
 language: "ta"
 locale: "ta_IN"
-banner: "https://cloudcdn.pro/stocks/images/ricardo-gomez-angel-Oj6tP8NlvFo.webp"
+banner: "https://cloudcdn.pro/stocks/images/christoph-duschl-CE_TvPHF3lA.webp"
 banner_alt: "இரவில் நவீன நிதி அலுவலக பணியிடம் - CAMT, PAIN.001, MT940, OFX, CSV மற்றும் ஸ்கேன் செய்யப்பட்ட PDF கோப்புகளிலிருந்து BankStatementParser உருவாக்கும் ஒருங்கிணைந்த பரிவர்த்தனை நுண்ணறிவை அடையாளப்படுத்துகிறது"
 keywords: "BankStatementParser, வங்கி அறிக்கை பாகுபடுத்தி, CAMT, PAIN.001, MT940, OFX, QFX, PDF OCR, கருவூல பரிவர்த்தனை நுண்ணறிவு"
 ---

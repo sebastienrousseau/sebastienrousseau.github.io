@@ -144,6 +144,29 @@ def test_tag_is_corrupt():
     assert not seo._tag_is_corrupt("<meta>")
 
 
+def test_social_tag_is_truncated_scrape():
+    clean = "A clean page description over twenty chars."
+    assert not seo._social_tag_is_truncated_scrape(
+        f'<meta name="description" content="{clean}">', clean
+    )
+    assert not seo._social_tag_is_truncated_scrape("<meta property='og:description'>", clean)
+    assert not seo._social_tag_is_truncated_scrape(
+        '<meta property="og:description" content="">', clean
+    )
+    assert not seo._social_tag_is_truncated_scrape(
+        f'<meta property="og:description" content="{clean}">', clean
+    )
+    assert not seo._social_tag_is_truncated_scrape(
+        '<meta property="og:description" content="Another complete sentence.">', clean
+    )
+    assert seo._social_tag_is_truncated_scrape(
+        '<meta property="og:description" content="THE SUITE &middot; Runs">', clean
+    )
+    assert seo._social_tag_is_truncated_scrape(
+        '<meta name="twitter:description" content="Truncated mid sentence when">', clean
+    )
+
+
 # ---------------------------------------------------------------------------
 # clean_meta_description
 # ---------------------------------------------------------------------------
@@ -161,6 +184,17 @@ def test_clean_meta_description_uses_own_clean_name_desc_for_other_tags():
     out = seo.clean_meta_description(Path("public/topics/x/index.html"), html)
     assert out.count("A clean page description over twenty chars") == 3
     assert "&amp;lt;" not in out
+
+
+def test_clean_meta_description_repairs_truncated_social_scrape():
+    clean = "Connect the ISO 20022 MCP Suite to Claude Code or any MCP client."
+    html = (
+        f'<meta name="description" content="{clean}">'
+        '<meta property="og:description" content="The ISO 20022 MCP Suite is the open bank-message layer for AI agents: nine vendor-neutral servers to generate, validate, reconcile and settle ISO 20022">'
+        '<meta name="twitter:description" content="THE SUITE &middot; Runs">'
+    )
+    out = seo.clean_meta_description(Path("public/iso20022-mcp-docs/index.html"), html)
+    assert out.count(f'content="{clean}"') == 3
 
 
 def test_clean_meta_description_repairs_article_from_jsonld():

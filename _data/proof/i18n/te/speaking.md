@@ -11,10 +11,10 @@ hero:
   press_nudge: గడువులో ఉన్న జర్నలిస్టా?
   press_nudge_cta: నిపుణ వ్యాఖ్య అడగండి
   microproof:
-  - HSBC, PayPal, Barclays లలో చెల్లింపు వేదికలను అమలులోకి తెచ్చారు
+  - HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group లలో దాదాపు రెండు దశాబ్దాల అనుభవం
   - EPAA పోస్ట్-క్వాంటం శ్వేతపత్రానికి సహ రచయిత
   - సహకారి, Emerging Payments Association Asia
-employers_label: చెల్లింపు వేదికలను అమలులోకి తెచ్చిన సంస్థలు
+employers_label: నేను పనిచేసిన సంస్థలు
 stats_eyebrow: సంఖ్యల్లో
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: కాపీ
   items:
   - length: చిన్నది
-    text: సెబాస్టియన్ రూసో సీనియర్ బ్యాంకింగ్ సాంకేతిక నిపుణుడు; ISO 20022 చెల్లింపులు, పోస్ట్-క్వాంటం క్రిప్టోగ్రఫీ, అనువర్తిత AI కలిసే చోట రాస్తారు, నిర్మిస్తారు. HSBC, PayPal, Barclays లలో చెల్లింపు వేదికలను అమలులోకి తెచ్చారు; ఉత్పత్తిలో వాడే ఓపెన్ సోర్స్ సూచిక అమలులను నిర్వహిస్తారు.
+    text: సెబాస్టియన్ రూసో సీనియర్ బ్యాంకింగ్ సాంకేతిక నిపుణుడు; ISO 20022 చెల్లింపులు, పోస్ట్-క్వాంటం క్రిప్టోగ్రఫీ, అనువర్తిత AI కలిసే చోట రాస్తారు, నిర్మిస్తారు. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group లలో దాదాపు రెండు దశాబ్దాల అనుభవం.
   - length: మధ్యస్థం
     text: సెబాస్టియన్ రూసో సీనియర్ బ్యాంకింగ్ సాంకేతిక నిపుణుడు; HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group లలో దాదాపు రెండు దశాబ్దాలు పనిచేశారు. ISO 20022 చెల్లింపులు, పోస్ట్-క్వాంటం క్రిప్టోగ్రఫీ, అనువర్తిత AI కలిసే చోట రాస్తారు, నిర్మిస్తారు; pacs.008, pain.001, KyberLib, BankStatementParser వంటి ఓపెన్ సోర్స్ సూచిక అమలులను నిర్వహిస్తారు, వీటిని ట్రెజరీ, చెల్లింపు బృందాలు ఉత్పత్తిలో వాడుతున్నాయి. Emerging Payments Association Asia క్వాంటం-సురక్షిత క్రిప్టోగ్రఫీ కార్యదళానికి సహకరిస్తారు; Banking On Quantum, Banking On AI ప్రచురిస్తారు.
   - length: పెద్దది
-    text: 'సెబాస్టియన్ రూసో సీనియర్ బ్యాంకింగ్ సాంకేతిక నిపుణుడు; టోకు చెల్లింపుల నిర్మాణాత్మక మార్పుపై దృష్టి సారించారు. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group లలో చెల్లింపు వేదికలు, AI ఉత్పత్తులు, ఓపెన్ సోర్స్ మౌలిక వసతిని అమలులోకి తెచ్చారు; వీటిని ట్రెజరీ, చెల్లింపు బృందాలు ఉత్పత్తిలో వాడుతున్నాయి. pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN, dotfiles రాస్తారు, నిర్వహిస్తారు; ప్రతి ఒక్కటీ ప్రదర్శనగా కాక సూచిక అమలుగా ఉంచబడింది: పరిశీలించగల, బోర్డు స్థాయి ఆర్థిక మౌలిక వసతి. Emerging Payments Association Asia క్వాంటం-సురక్షిత క్రిప్టోగ్రఫీ కార్యదళానికి సహకరిస్తారు; EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (సెప్టెంబర్ 2025) శ్వేతపత్రానికి సహ రచయిత; Banking On Quantum, Banking On AI ప్రచురిస్తారు. ఏజెంటిక్ AI, తక్షణ చెల్లింపులు, పోస్ట్-క్వాంటం క్రిప్టోగ్రఫీ, క్లౌడ్-నేటివ్ స్థితిస్థాపకత, నిర్మాణాత్మక డేటా, నియంత్రణ ఆధారాలు కలిసే చోట పనిచేస్తారు.'
+    text: 'సెబాస్టియన్ రూసో సీనియర్ బ్యాంకింగ్ సాంకేతిక నిపుణుడు; టోకు చెల్లింపుల నిర్మాణాత్మక మార్పుపై దృష్టి సారించారు. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group లలో దాదాపు రెండు దశాబ్దాల అనుభవం. pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN, dotfiles రాస్తారు, నిర్వహిస్తారు; ప్రతి ఒక్కటీ ప్రదర్శనగా కాక సూచిక అమలుగా ఉంచబడింది: పరిశీలించగల, బోర్డు స్థాయి ఆర్థిక మౌలిక వసతి. Emerging Payments Association Asia క్వాంటం-సురక్షిత క్రిప్టోగ్రఫీ కార్యదళానికి సహకరిస్తారు; EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (సెప్టెంబర్ 2025) శ్వేతపత్రానికి సహ రచయిత; Banking On Quantum, Banking On AI ప్రచురిస్తారు. ఏజెంటిక్ AI, తక్షణ చెల్లింపులు, పోస్ట్-క్వాంటం క్రిప్టోగ్రఫీ, క్లౌడ్-నేటివ్ స్థితిస్థాపకత, నిర్మాణాత్మక డేటా, నియంత్రణ ఆధారాలు కలిసే చోట పనిచేస్తారు.'
 faq:
   eyebrow: అడగడానికి ముందు
   headline: ఆహ్వానం, స్పష్టమైన మాటల్లో.
@@ -185,12 +185,7 @@ final_cta:
   secondary_cta: నిపుణ వ్యాఖ్య అడగండి
 ---
 
-సెబాస్టియన్ రూసో సీనియర్ బ్యాంకింగ్ సాంకేతిక నిపుణుడు; టోకు చెల్లింపుల నిర్మాణాత్మక మార్పుపై
-దృష్టి సారించారు. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin
-Group లలో చెల్లింపు వేదికలు, AI ఉత్పత్తులు, ఓపెన్ సోర్స్ మౌలిక వసతిని అమలులోకి తెచ్చారు;
-వీటిని ట్రెజరీ, చెల్లింపు బృందాలు ఉత్పత్తిలో వాడుతున్నాయి. pacs.008, pain.001,
-BankStatementParser, KyberLib, CloudCDN, dotfiles రాస్తారు, నిర్వహిస్తారు; ప్రతి ఒక్కటీ
-ప్రదర్శనగా కాక సూచిక అమలుగా ఉంచబడింది: పరిశీలించగల, బోర్డు స్థాయి ఆర్థిక మౌలిక వసతి.
+సెబాస్టియన్ రూసో సీనియర్ బ్యాంకింగ్ సాంకేతిక నిపుణుడు; టోకు చెల్లింపుల నిర్మాణాత్మక మార్పుపై దృష్టి సారించారు. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group లలో దాదాపు రెండు దశాబ్దాల అనుభవం. pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN, dotfiles రాస్తారు, నిర్వహిస్తారు; ప్రతి ఒక్కటీ ప్రదర్శనగా కాక సూచిక అమలుగా ఉంచబడింది: పరిశీలించగల, బోర్డు స్థాయి ఆర్థిక మౌలిక వసతి.
 
 Emerging Payments Association Asia క్వాంటం-సురక్షిత క్రిప్టోగ్రఫీ కార్యదళానికి సహకరిస్తారు;
 EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (సెప్టెంబర్ 2025)

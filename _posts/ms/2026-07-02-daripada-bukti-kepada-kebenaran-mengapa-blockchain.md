@@ -6,7 +6,7 @@ description: "Indeks Blockchain Bertauliah 2026 memberikan bank Model Kematangan
 date: "July 2, 2026"
 language: "ms"
 locale: "ms_MY"
-banner: "https://cloudcdn.pro/stocks/images/dylan-calluy-JpflvzEl5cg.webp"
+banner: "https://cloudcdn.pro/stocks/images/chuttersnap-mf-o1E7omzk.webp"
 banner_alt: "Kekisi lejar teragih abstrak yang menjelma menjadi tulang belakang audit bertauliah - menggambarkan peralihan daripada audit entiti retrospektif kepada jaminan blockchain yang berterusan dan boleh disahkan secara kriptografi untuk perbankan borong"
 keywords: "blockchain bertauliah, lejar teragih, ISO/IEC TC 307, DORA, CPMI-IOSCO PFMI, BCBS 239, ISO 42001, jaminan blockchain, model kematangan keupayaan, kepercayaan perbankan, penyelesaian bertoken, kriptografi pasca-kuantum, tulang belakang audit"
 ---

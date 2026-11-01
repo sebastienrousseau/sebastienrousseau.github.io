@@ -11,10 +11,10 @@ hero:
   press_nudge: Ɗan jarida da ke fama da wa'adi?
   press_nudge_cta: Nemi sharhin gwani
   microproof:
-  - An kaddamar da dandalin biyan kuɗi a HSBC, PayPal da Barclays
+  - Kusan shekaru ashirin na ƙwarewa a HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group
   - Marubuci tare a takardar bincike ta EPAA kan bayan-kwantum
   - Mai bayar da gudummawa, Emerging Payments Association Asia
-employers_label: An kaddamar da dandalin biyan kuɗi a
+employers_label: Inda na yi aiki
 stats_eyebrow: A cikin lambobi
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: Kwafa
   items:
   - length: Gajere
-    text: Sebastien Rousseau babban masanin fasahar banki ne wanda ke rubutawa da ginawa a mahaɗar biyan kuɗi na ISO 20022, sirrantawa ta bayan-kwantum da hankali na wucin gadi a aikace. Ya kaddamar da dandalin biyan kuɗi a HSBC, PayPal da Barclays, kuma yana kula da aiwatarwar tunani a buɗe da ake amfani da su a aiki na gaske.
+    text: Sebastien Rousseau babban masanin fasahar banki ne wanda ke rubutawa da ginawa a mahaɗar biyan kuɗi na ISO 20022, sirrantawa ta bayan-kwantum da hankali na wucin gadi a aikace. Kusan shekaru ashirin na ƙwarewa a HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group.
   - length: Matsakaici
     text: Sebastien Rousseau babban masanin fasahar banki ne wanda ya yi kusan shekaru ashirin a HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA da Virgin Group. Yana rubutawa da ginawa a mahaɗar biyan kuɗi na ISO 20022, sirrantawa ta bayan-kwantum da hankali na wucin gadi a aikace, kuma yana kula da aiwatarwar tunani a buɗe — pacs.008, pain.001, KyberLib, BankStatementParser — waɗanda ƙungiyoyin baitulmali da biyan kuɗi ke amfani da su a aiki na gaske. Yana bayar da gudummawa ga Ƙungiyar Aiki kan sirrantawa mai jure kwantum ta Emerging Payments Association Asia, kuma yana buga Banking On Quantum da Banking On AI.
   - length: Doguwa
-    text: 'Sebastien Rousseau babban masanin fasahar banki ne wanda ya mai da hankali kan sauyin tsarin biyan kuɗi na manyan kuɗaɗe. A HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA da Virgin Group, ya kaddamar da dandalin biyan kuɗi, kayayyakin hankali na wucin gadi da kayan aiki na buɗaɗɗen tushe waɗanda ƙungiyoyin baitulmali da biyan kuɗi ke amfani da su a aiki na gaske. Yana rubutawa yana kuma kula da pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN da dotfiles; kowanne an sanya shi a matsayin aiwatarwar tunani ba nunawa ba: kayan aikin kuɗi da za a iya bincika, na matakin hukumar gudanarwa. Yana bayar da gudummawa ga Ƙungiyar Aiki kan sirrantawa mai jure kwantum ta Emerging Payments Association Asia, marubuci tare a takardar EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (Satumba 2025), kuma yana buga Banking On Quantum da Banking On AI. Yana aiki a mahaɗar hankali mai wakilci, biyan kuɗi nan take, sirrantawa ta bayan-kwantum, jure wa a girgije, bayanai masu tsari da hujjoji ga masu kula.'
+    text: 'Sebastien Rousseau babban masanin fasahar banki ne wanda ya mai da hankali kan sauyin tsarin biyan kuɗi na manyan kuɗaɗe. Kusan shekaru ashirin na ƙwarewa a HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Yana rubutawa yana kuma kula da pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN da dotfiles; kowanne an sanya shi a matsayin aiwatarwar tunani ba nunawa ba: kayan aikin kuɗi da za a iya bincika, na matakin hukumar gudanarwa. Yana bayar da gudummawa ga Ƙungiyar Aiki kan sirrantawa mai jure kwantum ta Emerging Payments Association Asia, marubuci tare a takardar EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (Satumba 2025), kuma yana buga Banking On Quantum da Banking On AI. Yana aiki a mahaɗar hankali mai wakilci, biyan kuɗi nan take, sirrantawa ta bayan-kwantum, jure wa a girgije, bayanai masu tsari da hujjoji ga masu kula.'
 faq:
   eyebrow: Kafin ka tambaya
   headline: Gayyata, a bayyane.
@@ -185,13 +185,7 @@ final_cta:
   secondary_cta: Nemi sharhin gwani
 ---
 
-Sebastien Rousseau babban masanin fasahar banki ne wanda ya mai da hankali kan sauyin tsarin
-biyan kuɗi na manyan kuɗaɗe. A HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam,
-AKQA da Virgin Group, ya kaddamar da dandalin biyan kuɗi, kayayyakin hankali na wucin gadi da
-kayan aiki na buɗaɗɗen tushe waɗanda ƙungiyoyin baitulmali da biyan kuɗi ke amfani da su a
-aiki na gaske. Yana rubutawa yana kuma kula da pacs.008, pain.001, BankStatementParser,
-KyberLib, CloudCDN da dotfiles; kowanne an sanya shi a matsayin aiwatarwar tunani ba nunawa
-ba: kayan aikin kuɗi da za a iya bincika, na matakin hukumar gudanarwa.
+Sebastien Rousseau babban masanin fasahar banki ne wanda ya mai da hankali kan sauyin tsarin biyan kuɗi na manyan kuɗaɗe. Kusan shekaru ashirin na ƙwarewa a HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Yana rubutawa yana kuma kula da pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN da dotfiles; kowanne an sanya shi a matsayin aiwatarwar tunani ba nunawa ba: kayan aikin kuɗi da za a iya bincika, na matakin hukumar gudanarwa.
 
 Yana bayar da gudummawa ga Ƙungiyar Aiki kan sirrantawa mai jure kwantum ta Emerging Payments
 Association Asia, marubuci tare a takardar EPAA «Quantum-Safe Payments: Why the Payments

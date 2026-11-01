@@ -11,10 +11,10 @@ hero:
   press_nudge: Dziennikarz przed zamknięciem numeru?
   press_nudge_cta: Poproś o komentarz
   microproof:
-  - Platformy płatnicze wdrożone w HSBC, PayPal i Barclays
+  - Blisko dwie dekady doświadczenia w HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group
   - Współautor raportu postkwantowego EPAA
   - Współpracownik, Emerging Payments Association Asia
-employers_label: Platformy płatnicze wdrożone w
+employers_label: Gdzie pracowałem
 stats_eyebrow: W liczbach
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: Kopiuj
   items:
   - length: Krótka
-    text: Sebastien Rousseau jest starszym technologiem bankowym, który pisze i buduje na styku płatności ISO 20022, kryptografii postkwantowej i stosowanej sztucznej inteligencji. Wdrażał platformy płatnicze w HSBC, PayPal i Barclays oraz utrzymuje otwarte implementacje referencyjne używane w produkcji.
+    text: Sebastien Rousseau jest starszym technologiem bankowym, który pisze i buduje na styku płatności ISO 20022, kryptografii postkwantowej i stosowanej sztucznej inteligencji. Blisko dwie dekady doświadczenia w HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group.
   - length: Średnia
     text: Sebastien Rousseau jest starszym technologiem bankowym z blisko dwiema dekadami w HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA i Virgin Group. Pisze i buduje na styku płatności ISO 20022, kryptografii postkwantowej i stosowanej sztucznej inteligencji oraz utrzymuje otwarte implementacje referencyjne — pacs.008, pain.001, KyberLib, BankStatementParser — używane w produkcji przez zespoły skarbu i płatności. Współpracuje z grupą roboczą Quantum-Safe Cryptography w Emerging Payments Association Asia i wydaje Banking On Quantum oraz Banking On AI.
   - length: Długa
-    text: 'Sebastien Rousseau jest starszym technologiem bankowym skupionym na strukturalnej przemianie płatności hurtowych. W HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA i Virgin Group wdrażał platformy płatnicze, produkty SI i otwartą infrastrukturę używaną w produkcji przez zespoły skarbu i płatności. Pisze i utrzymuje pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN oraz dotfiles, z których każdy pomyślany jest jako implementacja referencyjna, a nie demonstracja: sprawdzalna infrastruktura finansowa na poziomie zarządu. Współpracuje z grupą roboczą Quantum-Safe Cryptography w Emerging Payments Association Asia, jest współautorem raportu EPAA „Quantum-Safe Payments: Why the Payments Industry Must Act Now” (wrzesień 2025) i wydaje Banking On Quantum oraz Banking On AI. Pracuje na styku agentowej SI, płatności natychmiastowych, kryptografii postkwantowej, odporności w chmurze, danych strukturalnych i dowodów dla nadzoru.'
+    text: 'Sebastien Rousseau jest starszym technologiem bankowym skupionym na strukturalnej przemianie płatności hurtowych. Blisko dwie dekady doświadczenia w HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Pisze i utrzymuje pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN oraz dotfiles, z których każdy pomyślany jest jako implementacja referencyjna, a nie demonstracja: sprawdzalna infrastruktura finansowa na poziomie zarządu. Współpracuje z grupą roboczą Quantum-Safe Cryptography w Emerging Payments Association Asia, jest współautorem raportu EPAA „Quantum-Safe Payments: Why the Payments Industry Must Act Now” (wrzesień 2025) i wydaje Banking On Quantum oraz Banking On AI. Pracuje na styku agentowej SI, płatności natychmiastowych, kryptografii postkwantowej, odporności w chmurze, danych strukturalnych i dowodów dla nadzoru.'
 faq:
   eyebrow: Zanim zapytacie
   headline: Rezerwacja, prostym językiem.
@@ -185,13 +185,7 @@ final_cta:
   secondary_cta: Poproś o komentarz
 ---
 
-Sebastien Rousseau jest starszym technologiem bankowym skupionym na strukturalnej
-przemianie płatności hurtowych. W HSBC Commercial & Investment Bank, PayPal, Barclays,
-Shazam, AKQA i Virgin Group wdrażał platformy płatnicze, produkty SI i otwartą
-infrastrukturę używaną w produkcji przez zespoły skarbu i płatności. Pisze i utrzymuje
-pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN oraz dotfiles, z których każdy
-pomyślany jest jako implementacja referencyjna, a nie demonstracja: sprawdzalna
-infrastruktura finansowa na poziomie zarządu.
+Sebastien Rousseau jest starszym technologiem bankowym skupionym na strukturalnej przemianie płatności hurtowych. Blisko dwie dekady doświadczenia w HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Pisze i utrzymuje pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN oraz dotfiles, z których każdy pomyślany jest jako implementacja referencyjna, a nie demonstracja: sprawdzalna infrastruktura finansowa na poziomie zarządu.
 
 Współpracuje z grupą roboczą Quantum-Safe Cryptography w Emerging Payments Association
 Asia, jest współautorem raportu EPAA „Quantum-Safe Payments: Why the Payments Industry Must

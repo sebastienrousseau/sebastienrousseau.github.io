@@ -6,7 +6,7 @@ description: "Indeks daya tahan perbankan 2026 yang menggabungkan risiko AI, pen
 date: "June 8, 2026"
 language: "ms"
 locale: "ms_MY"
-banner: "https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp"
+banner: "https://cloudcdn.pro/stocks/images/alexander-isreb-1797383.webp"
 banner_alt: "Fotografi seni bina abstrak yang digunakan sebagai kunci visual untuk Indeks Daya Tahan Perbankan 2026 - menggabungkan risiko AI, penumpuan awan, keselamatan kalis kuantum, kesinambungan pembayaran, dan kebergantungan pihak ketiga kritikal ke dalam satu papan pemarkahan daya tahan operasi"
 keywords: "indeks daya tahan perbankan 2026, daya tahan DORA, risiko operasi AI, risiko penumpuan awan, risiko kuantum perbankan, daya tahan pembayaran"
 ---

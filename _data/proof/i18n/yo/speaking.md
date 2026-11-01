@@ -11,10 +11,10 @@ hero:
   press_nudge: Oníròyìn tí àkókò ń tì?
   press_nudge_cta: Béèrè àlàyé amòye
   microproof:
-  - Ó gbé àwọn pápá ìsanwó jáde ní HSBC, PayPal àti Barclays
+  - Ó fẹ́rẹ̀ẹ́ tó ogún ọdún ìrírí ní HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group
   - Alábàáṣiṣẹ́pọ̀ onkọ̀wé ìwé-ìròyìn EPAA lórí lẹ́yìn-kúáǹtọ̀mù
   - Olùkópa, Emerging Payments Association Asia
-employers_label: Àwọn pápá ìsanwó tí a gbé jáde ní
+employers_label: Àwọn ibi tí mo ti ṣiṣẹ́
 stats_eyebrow: Nínú àwọn nọ́mbà
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: Ṣe àdàkọ
   items:
   - length: Kúkúrú
-    text: Sebastien Rousseau jẹ́ amọ̀ràn ìmọ̀-ẹ̀rọ ilé-ìfowópamọ́ àgbà tí ó ń kọ̀wé tí ó sì ń kọ́ ní ojúlùmọ̀ ìsanwó ISO 20022, ìsekóòdù lẹ́yìn-kúáǹtọ̀mù àti ọgbọ́n atọ́nà tí a lò. Ó ti gbé àwọn pápá ìsanwó jáde ní HSBC, PayPal àti Barclays, ó sì ń tọ́jú àwọn ìmúṣẹ ìtọ́kasí orísun ṣíṣí tí a ń lò nínú iṣẹ́ gidi.
+    text: Sebastien Rousseau jẹ́ amọ̀ràn ìmọ̀-ẹ̀rọ ilé-ìfowópamọ́ àgbà tí ó ń kọ̀wé tí ó sì ń kọ́ ní ojúlùmọ̀ ìsanwó ISO 20022, ìsekóòdù lẹ́yìn-kúáǹtọ̀mù àti ọgbọ́n atọ́nà tí a lò. Ó fẹ́rẹ̀ẹ́ tó ogún ọdún ìrírí ní HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group.
   - length: Àárín
     text: Sebastien Rousseau jẹ́ amọ̀ràn ìmọ̀-ẹ̀rọ ilé-ìfowópamọ́ àgbà tí ó lo ó fẹ́rẹ̀ẹ́ tó ogún ọdún ní HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA àti Virgin Group. Ó ń kọ̀wé ó sì ń kọ́ ní ojúlùmọ̀ ìsanwó ISO 20022, ìsekóòdù lẹ́yìn-kúáǹtọ̀mù àti ọgbọ́n atọ́nà tí a lò, ó sì ń tọ́jú àwọn ìmúṣẹ ìtọ́kasí orísun ṣíṣí — pacs.008, pain.001, KyberLib, BankStatementParser — tí àwọn ẹgbẹ́ ilé-ìṣúra àti ìsanwó ń lò nínú iṣẹ́ gidi. Ó ń kópa nínú Ẹgbẹ́ Iṣẹ́ lórí ìsekóòdù tí ó le koju kúáǹtọ̀mù ti Emerging Payments Association Asia, ó sì ń tẹ Banking On Quantum àti Banking On AI jáde.
   - length: Gígùn
-    text: 'Sebastien Rousseau jẹ́ amọ̀ràn ìmọ̀-ẹ̀rọ ilé-ìfowópamọ́ àgbà tí ó dojúkọ ìyípadà ìpìlẹ̀ ti ìsanwó ńlá. Ní HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA àti Virgin Group, ó ti gbé àwọn pápá ìsanwó, àwọn ọjà ọgbọ́n atọ́nà àti ohun-èlò ìpìlẹ̀ orísun ṣíṣí jáde tí àwọn ẹgbẹ́ ilé-ìṣúra àti ìsanwó ń lò nínú iṣẹ́ gidi. Ó ń kọ ó sì ń tọ́jú pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN àti dotfiles; a gbé ọ̀kọ̀ọ̀kan wọn kalẹ̀ gẹ́gẹ́ bí ìmúṣẹ ìtọ́kasí kìí ṣe ìfihàn: ohun-èlò ìpìlẹ̀ ìnáwó tí a lè yẹ̀wò, ní ìpele ìgbìmọ̀ olùdarí. Ó ń kópa nínú Ẹgbẹ́ Iṣẹ́ lórí ìsekóòdù tí ó le koju kúáǹtọ̀mù ti Emerging Payments Association Asia, ó jẹ́ alábàáṣiṣẹ́pọ̀ onkọ̀wé ìwé-ìròyìn EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (Oṣù Kẹsàn-án 2025), ó sì ń tẹ Banking On Quantum àti Banking On AI jáde. Ó ń ṣiṣẹ́ ní ojúlùmọ̀ ọgbọ́n atọ́nà aṣojú, ìsanwó àkókò gidi, ìsekóòdù lẹ́yìn-kúáǹtọ̀mù, agbára ìfaradà lórí àwọsánmà, dátà tí ó ní ìlànà àti ẹ̀rí fún àwọn olùṣàkóso.'
+    text: 'Sebastien Rousseau jẹ́ amọ̀ràn ìmọ̀-ẹ̀rọ ilé-ìfowópamọ́ àgbà tí ó dojúkọ ìyípadà ìpìlẹ̀ ti ìsanwó ńlá. Ó fẹ́rẹ̀ẹ́ tó ogún ọdún ìrírí ní HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Ó ń kọ ó sì ń tọ́jú pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN àti dotfiles; a gbé ọ̀kọ̀ọ̀kan wọn kalẹ̀ gẹ́gẹ́ bí ìmúṣẹ ìtọ́kasí kìí ṣe ìfihàn: ohun-èlò ìpìlẹ̀ ìnáwó tí a lè yẹ̀wò, ní ìpele ìgbìmọ̀ olùdarí. Ó ń kópa nínú Ẹgbẹ́ Iṣẹ́ lórí ìsekóòdù tí ó le koju kúáǹtọ̀mù ti Emerging Payments Association Asia, ó jẹ́ alábàáṣiṣẹ́pọ̀ onkọ̀wé ìwé-ìròyìn EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (Oṣù Kẹsàn-án 2025), ó sì ń tẹ Banking On Quantum àti Banking On AI jáde. Ó ń ṣiṣẹ́ ní ojúlùmọ̀ ọgbọ́n atọ́nà aṣojú, ìsanwó àkókò gidi, ìsekóòdù lẹ́yìn-kúáǹtọ̀mù, agbára ìfaradà lórí àwọsánmà, dátà tí ó ní ìlànà àti ẹ̀rí fún àwọn olùṣàkóso.'
 faq:
   eyebrow: Kí o tó béèrè
   headline: Ìpè, ní ọ̀rọ̀ tí ó ṣe kedere.
@@ -185,13 +185,7 @@ final_cta:
   secondary_cta: Béèrè àlàyé amòye
 ---
 
-Sebastien Rousseau jẹ́ amọ̀ràn ìmọ̀-ẹ̀rọ ilé-ìfowópamọ́ àgbà tí ó dojúkọ ìyípadà ìpìlẹ̀ ti
-ìsanwó ńlá. Ní HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA àti Virgin
-Group, ó ti gbé àwọn pápá ìsanwó, àwọn ọjà ọgbọ́n atọ́nà àti ohun-èlò ìpìlẹ̀ orísun ṣíṣí jáde
-tí àwọn ẹgbẹ́ ilé-ìṣúra àti ìsanwó ń lò nínú iṣẹ́ gidi. Ó ń kọ ó sì ń tọ́jú pacs.008,
-pain.001, BankStatementParser, KyberLib, CloudCDN àti dotfiles; a gbé ọ̀kọ̀ọ̀kan wọn kalẹ̀
-gẹ́gẹ́ bí ìmúṣẹ ìtọ́kasí kìí ṣe ìfihàn: ohun-èlò ìpìlẹ̀ ìnáwó tí a lè yẹ̀wò, ní ìpele ìgbìmọ̀
-olùdarí.
+Sebastien Rousseau jẹ́ amọ̀ràn ìmọ̀-ẹ̀rọ ilé-ìfowópamọ́ àgbà tí ó dojúkọ ìyípadà ìpìlẹ̀ ti ìsanwó ńlá. Ó fẹ́rẹ̀ẹ́ tó ogún ọdún ìrírí ní HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Ó ń kọ ó sì ń tọ́jú pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN àti dotfiles; a gbé ọ̀kọ̀ọ̀kan wọn kalẹ̀ gẹ́gẹ́ bí ìmúṣẹ ìtọ́kasí kìí ṣe ìfihàn: ohun-èlò ìpìlẹ̀ ìnáwó tí a lè yẹ̀wò, ní ìpele ìgbìmọ̀ olùdarí.
 
 Ó ń kópa nínú Ẹgbẹ́ Iṣẹ́ lórí ìsekóòdù tí ó le koju kúáǹtọ̀mù ti Emerging Payments
 Association Asia, ó jẹ́ alábàáṣiṣẹ́pọ̀ onkọ̀wé ìwé-ìròyìn EPAA «Quantum-Safe Payments: Why the

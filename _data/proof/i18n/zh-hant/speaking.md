@@ -11,10 +11,10 @@ hero:
   press_nudge: 正在趕稿的記者？
   press_nudge_cta: 預約專家評論
   microproof:
-  - 在滙豐、PayPal 與巴克萊交付過支付平台
+  - 近二十年經驗，曾任職於滙豐商業及投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團
   - EPAA 後量子白皮書共同作者
   - 貢獻者，Emerging Payments Association Asia
-employers_label: 曾在這些機構交付支付平台
+employers_label: 我曾任職的機構
 stats_eyebrow: 用數字說話
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: 複製
   items:
   - length: 短
-    text: Sebastien Rousseau 是資深銀行技術專家，在 ISO 20022 支付、後量子密碼學與應用 AI 的交會處寫作與打造。他在滙豐、PayPal 與巴克萊交付過支付平台，並維護多個在正式環境中使用的開源參考實作。
+    text: Sebastien Rousseau 是資深銀行技術專家，在 ISO 20022 支付、後量子密碼學與應用 AI 的交會處寫作與打造。 近二十年經驗，曾任職於滙豐商業及投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團。
   - length: 中
     text: Sebastien Rousseau 是資深銀行技術專家，在 HSBC Commercial & Investment Bank、PayPal、Barclays、Shazam、AKQA 與 Virgin Group 工作近二十年。他在 ISO 20022 支付、後量子密碼學與應用 AI 的交會處寫作與打造，並維護 pacs.008、pain.001、KyberLib、BankStatementParser 等開源參考實作，這些專案正被財資與支付團隊用於正式環境。他參與 Emerging Payments Association Asia 的抗量子密碼工作小組，並出版 Banking On Quantum 與 Banking On AI。
   - length: 長
-    text: 'Sebastien Rousseau 是資深銀行技術專家，專注於大額支付的結構性變革。在 HSBC Commercial & Investment Bank、PayPal、Barclays、Shazam、AKQA 與 Virgin Group，他交付過支付平台、AI 產品與開源基礎設施，這些成果正被財資與支付團隊用於正式環境。他撰寫並維護 pacs.008、pain.001、BankStatementParser、KyberLib、CloudCDN 與 dotfiles，每一個都被定位為參考實作而非展示：可供檢視、經得起董事會審視的金融基礎設施。他參與 Emerging Payments Association Asia 的抗量子密碼工作小組，共同撰寫 EPAA 白皮書《Quantum-Safe Payments: Why the Payments Industry Must Act Now》（2025 年 9 月），並出版 Banking On Quantum 與 Banking On AI。他的工作處在代理型 AI、即時支付、後量子密碼學、雲原生韌性、結構化資料與監理證據的交會處。'
+    text: 'Sebastien Rousseau 是資深銀行技術專家，專注於大額支付的結構性變革。 近二十年經驗，曾任職於滙豐商業及投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團。 他撰寫並維護 pacs. 008、pain. 001、BankStatementParser、KyberLib、CloudCDN 與 dotfiles，每一個都被定位為參考實作而非展示：可供檢視、經得起董事會審視的金融基礎設施。 他參與 Emerging Payments Association Asia 的抗量子密碼工作小組，共同撰寫 EPAA 白皮書《Quantum-Safe Payments: Why the Payments Industry Must Act Now》（2025 年 9 月），並出版 Banking On Quantum 與 Banking On AI。 他的工作處在代理型 AI、即時支付、後量子密碼學、雲原生韌性、結構化資料與監理證據的交會處。'
 faq:
   eyebrow: 在您開口之前
   headline: 邀約事宜，直說。
@@ -185,11 +185,7 @@ final_cta:
   secondary_cta: 預約專家評論
 ---
 
-Sebastien Rousseau 是資深銀行技術專家，專注於大額支付的結構性變革。在 HSBC Commercial &
-Investment Bank、PayPal、Barclays、Shazam、AKQA 與 Virgin Group，他交付過支付平台、AI 產品與
-開源基礎設施，這些成果正被財資與支付團隊用於正式環境。他撰寫並維護 pacs.008、pain.001、
-BankStatementParser、KyberLib、CloudCDN 與 dotfiles，每一個都被定位為參考實作而非展示：可供
-檢視、經得起董事會審視的金融基礎設施。
+Sebastien Rousseau 是資深銀行技術專家，專注於大額支付的結構性變革。 近二十年經驗，曾任職於滙豐商業及投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團。 他撰寫並維護 pacs. 008、pain. 001、 BankStatementParser、KyberLib、CloudCDN 與 dotfiles，每一個都被定位為參考實作而非展示：可供 檢視、經得起董事會審視的金融基礎設施。
 
 他參與 Emerging Payments Association Asia 的抗量子密碼工作小組，共同撰寫 EPAA 白皮書
 《Quantum-Safe Payments: Why the Payments Industry Must Act Now》（2025 年 9 月），並出版

@@ -6,7 +6,7 @@ description: "Egy 2026-os banki ellenállóképességi index, amely egyesíti az
 date: "June 8, 2026"
 language: "hu"
 locale: "hu_HU"
-banner: "https://cloudcdn.pro/stocks/images/simone-hutsch-oqlh6RsrYB0.webp"
+banner: "https://cloudcdn.pro/stocks/images/alexander-isreb-1797383.webp"
 banner_alt: "Absztrakt építészeti fénykép, amely a 2026-os banki ellenállóképességi index vizuális kulcsaként szolgál, és amely egyetlen operatív ellenállóképességi eredménytáblába egyesíti az MI-kockázatot, a felhőkoncentrációt, a kvantumbiztos védelmet, a fizetési folytonosságot és a kritikus harmadik felektől való függőséget"
 keywords: "banki ellenállóképességi index 2026, DORA ellenállóképesség, MI operatív kockázat, felhőkoncentrációs kockázat, kvantumkockázat a bankszektorban, fizetési ellenállóképesség"
 ---

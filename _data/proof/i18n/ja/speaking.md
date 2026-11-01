@@ -11,10 +11,10 @@ hero:
   press_nudge: 締め切りを抱えた記者の方へ
   press_nudge_cta: 専門コメントを依頼する
   microproof:
-  - HSBC、PayPal、Barclaysで決済基盤を本番稼働
+  - HSBC コマーシャル・アンド・インベストメント・バンク、PayPal、Barclays、Shazam、AKQA、Virgin Group にて 20 年近くの経験
   - EPAAポスト量子ホワイトペーパー共著者
   - 寄稿者、Emerging Payments Association Asia
-employers_label: 決済基盤を本番稼働させた企業
+employers_label: これまでの所属企業
 stats_eyebrow: 数字で見る
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: コピー
   items:
   - length: 短
-    text: セバスチャン・ルソーは、ISO 20022決済、ポスト量子暗号、応用AIの交点で書き、つくるシニア銀行テクノロジストです。HSBC、PayPal、Barclaysで決済基盤を本番稼働させ、本番環境で使われているオープンなリファレンス実装を保守しています。
+    text: セバスチャン・ルソーは、ISO 20022決済、ポスト量子暗号、応用AIの交点で書き、つくるシニア銀行テクノロジストです。 HSBC コマーシャル・アンド・インベストメント・バンク、PayPal、Barclays、Shazam、AKQA、Virgin Group にて 20 年近くの経験。
   - length: 中
     text: セバスチャン・ルソーは、HSBC Commercial & Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Groupで20年近くを過ごしたシニア銀行テクノロジストです。ISO 20022決済、ポスト量子暗号、応用AIの交点で書き、つくり、pacs.008、pain.001、KyberLib、BankStatementParserといったオープンなリファレンス実装を保守しています。これらは財務・決済チームが本番環境で使っています。Emerging Payments Association Asia のポスト量子暗号ワーキンググループに寄稿し、Banking On Quantum と Banking On AI を発行しています。
   - length: 長
-    text: 'セバスチャン・ルソーは、ホールセール決済の構造的な変革に取り組むシニア銀行テクノロジストです。HSBC Commercial & Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group を通じて、財務・決済チームが本番環境で使う決済基盤、AI製品、オープンソースのインフラを世に出してきました。pacs.008、pain.001、BankStatementParser、KyberLib、CloudCDN、dotfiles を執筆・保守しており、いずれもデモではなくリファレンス実装として位置づけています。検査可能で、取締役会に耐える金融インフラです。Emerging Payments Association Asia のポスト量子暗号ワーキンググループに寄稿し、EPAAのホワイトペーパー「Quantum-Safe Payments: Why the Payments Industry Must Act Now」（2025年9月）を共同執筆し、Banking On Quantum と Banking On AI を発行しています。エージェント型AI、リアルタイム決済、ポスト量子暗号、クラウドネイティブなレジリエンス、構造化データ、規制上の証跡が交わる場所で仕事をしています。'
+    text: 'セバスチャン・ルソーは、ホールセール決済の構造的な変革に取り組むシニア銀行テクノロジストです。 HSBC コマーシャル・アンド・インベストメント・バンク、PayPal、Barclays、Shazam、AKQA、Virgin Group にて 20 年近くの経験。 pacs. 008、pain. 001、BankStatementParser、KyberLib、CloudCDN、dotfiles を執筆・保守しており、いずれもデモではなくリファレンス実装として位置づけています。 検査可能で、取締役会に耐える金融インフラです。 Emerging Payments Association Asia のポスト量子暗号ワーキンググループに寄稿し、EPAAのホワイトペーパー「Quantum-Safe Payments: Why the Payments Industry Must Act Now」（2025年9月）を共同執筆し、Banking On Quantum と Banking On AI を発行しています。 エージェント型AI、リアルタイム決済、ポスト量子暗号、クラウドネイティブなレジリエンス、構造化データ、規制上の証跡が交わる場所で仕事をしています。'
 faq:
   eyebrow: よくあるご質問
   headline: ご依頼について、率直に。
@@ -185,12 +185,7 @@ final_cta:
   secondary_cta: 専門コメントを依頼する
 ---
 
-セバスチャン・ルソーは、ホールセール決済の構造的な変革に取り組むシニア銀行テクノロジストです。
-HSBC Commercial & Investment Bank、PayPal、Barclays、Shazam、AKQA、Virgin Group を通じて、
-財務・決済チームが本番環境で使う決済基盤、AI製品、オープンソースのインフラを世に出してきました。
-pacs.008、pain.001、BankStatementParser、KyberLib、CloudCDN、dotfiles を執筆・保守しており、
-いずれもデモではなくリファレンス実装として位置づけています。検査可能で、取締役会に耐える
-金融インフラです。
+セバスチャン・ルソーは、ホールセール決済の構造的な変革に取り組むシニア銀行テクノロジストです。 HSBC コマーシャル・アンド・インベストメント・バンク、PayPal、Barclays、Shazam、AKQA、Virgin Group にて 20 年近くの経験。 pacs. 008、pain. 001、BankStatementParser、KyberLib、CloudCDN、dotfiles を執筆・保守しており、 いずれもデモではなくリファレンス実装として位置づけています。 検査可能で、取締役会に耐える 金融インフラです。
 
 Emerging Payments Association Asia のポスト量子暗号ワーキンググループに寄稿し、EPAAのホワイト
 ペーパー「Quantum-Safe Payments: Why the Payments Industry Must Act Now」（2025年9月）を共同

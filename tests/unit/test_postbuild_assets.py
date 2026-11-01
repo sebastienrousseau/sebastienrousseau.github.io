@@ -526,3 +526,34 @@ def test_strip_legacy_inline_banner_helper_branches():
         )
         == in_html
     )
+
+
+def test_add_cloudcdn_cors_and_manifest_icons(tmp_path):
+    from postbuild_assets import add_cloudcdn_cors, normalise_manifest_icons
+
+    html = (
+        '<link rel="icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" />'
+        '<link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" />'
+        '<link rel="preconnect" href="https://cloudcdn.pro" crossorigin />'
+        '<img src="https://cloudcdn.pro/stocks/images/hero-1200.webp" alt="hero">'
+    )
+    out = add_cloudcdn_cors(html)
+    assert 'href="/favicon.ico"' in out
+    assert (
+        '<link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" crossorigin="anonymous" />'
+        in out
+    )
+    assert (
+        '<img src="https://cloudcdn.pro/stocks/images/hero-1200.webp" alt="hero" crossorigin="anonymous">'
+        in out
+    )
+    assert add_cloudcdn_cors(out) == out
+
+    manifest = tmp_path / "manifest.json"
+    manifest.write_text(
+        '{"icons": [{"src": "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg", "sizes": "512x512", "type": "image/svg+xml"}]}',
+        encoding="utf-8",
+    )
+    assert normalise_manifest_icons(tmp_path) == 1
+    assert '"/favicon.ico"' in manifest.read_text(encoding="utf-8")
+    assert normalise_manifest_icons(tmp_path) == 0

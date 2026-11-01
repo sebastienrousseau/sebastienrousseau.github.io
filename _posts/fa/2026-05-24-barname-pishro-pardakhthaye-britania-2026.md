@@ -6,7 +6,7 @@ description: "برنامه پیش‌رو پرداخت‌های بریتانیا 
 date: "May 24, 2026"
 language: "fa"
 locale: "fa_IR"
-banner: "https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM-1200.webp"
+banner: "https://cloudcdn.pro/stocks/images/andrea-de-santis-gYINUebkIDg.webp"
 banner_alt: "نمودار نوسازی پرداخت‌های بریتانیا شامل استیبل‌کوین‌ها، سپرده‌های توکنی‌شده، بانکداری باز، عامل‌های هوش مصنوعی، مقررات‌گذاری FCA، ادغام PSR و بازارهای دیجیتال عمده‌فروشی"
 keywords: "برنامه پیش‌رو پرداخت‌های بریتانیا ۲۰۲۶، استیبل‌کوین‌های بریتانیا، سپرده‌های توکنی‌شده بریتانیا، بانکداری باز FCA، ادغام PSR و FCA، پرداخت‌های عامل هوش مصنوعی بریتانیا، قهرمان بازارهای دیجیتال عمده‌فروشی، Chris Woolard، مقررات‌گذاری خدمات پرداخت"
 ---

@@ -39,6 +39,7 @@ import argparse
 import os
 import random
 import re
+import struct
 import sys
 from pathlib import Path
 
@@ -67,13 +68,56 @@ _BANNER_LINE_RE = re.compile(
 _AFFINITY: dict[str, tuple[str, ...]] = load_banner_affinity()
 
 
+def _vp8_dims(data: bytes) -> tuple[int, int]:
+    w, h = struct.unpack("<HH", data[26:30])
+    return (w & 0x3FFF, h & 0x3FFF)
+
+
+def _vp8l_dims(data: bytes) -> tuple[int, int]:
+    b0, b1, b2, b3 = data[21:25]
+    w = 1 + (((b1 & 0x3F) << 8) | b0)
+    h = 1 + (((b3 & 0xF) << 10) | (b2 << 2) | ((b1 & 0xC0) >> 6))
+    return (w, h)
+
+
+def _vp8x_dims(data: bytes) -> tuple[int, int]:
+    w = 1 + int.from_bytes(data[24:27], "little")
+    h = 1 + int.from_bytes(data[27:30], "little")
+    return (w, h)
+
+
+_WEBP_PARSERS = {
+    b"VP8 ": _vp8_dims,
+    b"VP8L": _vp8l_dims,
+    b"VP8X": _vp8x_dims,
+}
+
+
+def webp_dimensions(path: Path) -> tuple[int, int] | None:
+    """Return ``(width, height)`` for a WebP file, or ``None`` if unreadable."""
+    try:
+        data = path.read_bytes()[:30]
+    except OSError:
+        return None
+    if len(data) < 30 or data[:4] != b"RIFF" or data[8:12] != b"WEBP":
+        return None
+    parser = _WEBP_PARSERS.get(data[12:16])
+    return parser(data) if parser else None
+
+
+def _is_landscape_webp(path: Path) -> bool:
+    """True when *path* is a landscape WebP (or a synthetic non-RIFF test stub)."""
+    dims = webp_dimensions(path)
+    return dims is None or dims[0] > dims[1]
+
+
 def collect_inventory(inv: Path) -> list[str]:
     if not inv.is_dir():
         return []
     return sorted(
         p.name
         for p in inv.iterdir()
-        if p.suffix.lower() == ".webp" and not _VARIANT_RE.search(p.name)
+        if p.suffix.lower() == ".webp" and not _VARIANT_RE.search(p.name) and _is_landscape_webp(p)
     )
 
 

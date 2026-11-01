@@ -73,7 +73,7 @@
       "aria-label=\"Laman utama Sebastien Rousseau\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/ms/about/index.html\">Perihal</a></li>"
     ],
     [
@@ -293,11 +293,11 @@
       "<li><a href=\"/ms/research/index.html\">Penyelidikan</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/ms/speaking/index.html\">Ucapan</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/ms/speaking/index.html\">Ucapan</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/ms/suite/index.html\">Suite</a>"
     ],
     [
@@ -325,15 +325,15 @@
       "aria-label=\"Togol submenu Perihal\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"Togol submenu Perpustakaan\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"Togol submenu Penyelidikan\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"Togol submenu Suite\""
     ],
     [
@@ -345,7 +345,7 @@
       "<li><a href=\"/ms/speaking/index.html\">Pengucapan awam</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/ms/library/index.html\">Perpustakaan</a>"
     ],
     [

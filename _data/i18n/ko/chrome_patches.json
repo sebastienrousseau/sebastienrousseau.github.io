@@ -74,7 +74,7 @@
       "aria-label=\"Sebastien Rousseau 홈\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/ko/sogae/index.html\">소개</a></li>"
     ],
     [
@@ -294,11 +294,11 @@
       "<li><a href=\"/ko/yeongu/index.html\">연구</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/ko/speaking/index.html\">강연</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/ko/speaking/index.html\">강연</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/ko/switeu/index.html\">스위트</a>"
     ],
     [
@@ -326,15 +326,15 @@
       "aria-label=\"소개 하위 메뉴 전환\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"라이브러리 하위 메뉴 전환\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"연구 하위 메뉴 전환\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"스위트 하위 메뉴 전환\""
     ],
     [
@@ -346,7 +346,7 @@
       "<li><a href=\"/ko/speaking/index.html\">대중 강연</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/ko/laibeureori/index.html\">라이브러리</a>"
     ],
     [

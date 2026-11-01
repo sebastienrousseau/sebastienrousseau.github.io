@@ -6,7 +6,7 @@ description: "यूके पेमेंट्स फॉरवर्ड प्
 date: "May 24, 2026"
 language: "mr"
 locale: "mr_IN"
-banner: "https://cloudcdn.pro/stocks/images/riccardo-oliva-C5DLhUkEWfM-1200.webp"
+banner: "https://cloudcdn.pro/stocks/images/andrea-de-santis-gYINUebkIDg.webp"
 banner_alt: "स्टेबलकॉइन्स, टोकनाइज्ड ठेवी, ओपन बँकिंग, AI एजंट्स, FCA नियमन, PSR एकत्रीकरण आणि होलसेल डिजिटल मार्केट्स दाखवणारा यूके पेमेंट्स आधुनिकीकरण आकृती"
 keywords: "यूके पेमेंट्स फॉरवर्ड प्लॅन 2026, स्टेबलकॉइन्स यूके, टोकनाइज्ड ठेवी यूके, ओपन बँकिंग FCA, PSR FCA एकत्रीकरण, AI एजंट पेमेंट्स यूके, होलसेल डिजिटल मार्केट्स चॅम्पियन, ख्रिस वूलार्ड, पेमेंट सेवा नियमन"
 ---

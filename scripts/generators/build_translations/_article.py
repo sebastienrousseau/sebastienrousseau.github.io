@@ -301,7 +301,7 @@ def _build_fr_lead(description: str, takeaways: list[tuple[str, str]]) -> str:
 
 
 _BODY_FURNITURE_RE = re.compile(
-    r'<aside\s+class="(?:author-card|related-posts|post-lead)\b[^"]*"[\s\S]*?</aside>'
+    r'<aside\s+class="(?:author-card|related-posts|post-lead|article-cta)\b[^"]*"[\s\S]*?</aside>'
     r'|<p\s+class="post-reviewed"\b[^>]*>[\s\S]*?</p>',
     re.IGNORECASE,
 )
@@ -320,6 +320,7 @@ _ARTICLE_META_RE = re.compile(r'<div class="article-meta">[\s\S]*?</div>')
 _SHARE_RAIL_RE = re.compile(r'<nav class="share-rail[^"]*"[\s\S]*?</nav>')
 _ACTION_RAIL_RE = re.compile(r'<nav class="action-rail action-rail--sticky"[\s\S]*?</nav>')
 _BYLINE_STRAP_RE = re.compile(r'<p class="byline-strap"[\s\S]*?</p>')
+_ARTICLE_CTA_RE = re.compile(r'<aside class="article-cta"[\s\S]*?</aside>')
 _SYNDICATE_PANEL_RE = re.compile(
     r'<details class="cite-popover" id="syndicate-popover"[\s\S]*?</details>'
 )
@@ -347,6 +348,7 @@ def _strip_postbuild_furniture(shell: str) -> str:
     out = _ACTION_RAIL_RE.sub("", out)
     out = _SYNDICATE_PANEL_RE.sub("", out)
     out = _BYLINE_STRAP_RE.sub("", out)
+    out = _ARTICLE_CTA_RE.sub("", out)
     out = _DECK_CLASS_RE.sub('<p class="sub">', out)
     return out
 

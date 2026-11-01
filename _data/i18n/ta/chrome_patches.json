@@ -73,7 +73,7 @@
       "aria-label=\"Sebastien Rousseau முகப்பு\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/ta/about/index.html\">பற்றி</a></li>"
     ],
     [
@@ -293,11 +293,11 @@
       "<li><a href=\"/ta/research/index.html\">ஆராய்ச்சி</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/ta/speaking/index.html\">உரைகள்</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/ta/speaking/index.html\">உரைகள்</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/ta/suite/index.html\">தொகுப்பு</a>"
     ],
     [
@@ -325,15 +325,15 @@
       "aria-label=\"பற்றி துணைப்பட்டியை மாற்று\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"நூலகம் துணைப்பட்டியை மாற்று\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"ஆராய்ச்சி துணைப்பட்டியை மாற்று\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"தொகுப்பு துணைப்பட்டியை மாற்று\""
     ],
     [
@@ -345,7 +345,7 @@
       "<li><a href=\"/ta/speaking/index.html\">பொது உரைகள்</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/ta/library/index.html\">நூலகம்</a>"
     ],
     [

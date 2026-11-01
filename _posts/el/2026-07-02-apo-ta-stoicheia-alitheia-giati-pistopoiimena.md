@@ -6,7 +6,7 @@ description: "Ο Δείκτης Πιστοποιημένου Blockchain 2026 π�
 date: "July 2, 2026"
 language: "el"
 locale: "el_GR"
-banner: "https://cloudcdn.pro/stocks/images/dylan-calluy-JpflvzEl5cg.webp"
+banner: "https://cloudcdn.pro/stocks/images/chuttersnap-mf-o1E7omzk.webp"
 banner_alt: "Αφηρημένο πλέγμα κατανεμημένου καθολικού που διαμορφώνεται σε μια πιστοποιημένη ραχοκοκαλιά ελέγχου - απεικονίζοντας τη μετάβαση από αναδρομικούς ελέγχους οντοτήτων σε συνεχή, κρυπτογραφικά επαληθεύσιμη διασφάλιση blockchain για τη χονδρική τραπεζική"
 keywords: "πιστοποιημένο blockchain, κατανεμημένο καθολικό, ISO/IEC TC 307, DORA, CPMI-IOSCO PFMI, BCBS 239, ISO 42001, διασφάλιση blockchain, μοντέλο ωριμότητας ικανοτήτων, τραπεζική εμπιστοσύνη, tokenised διακανονισμός, μετακβαντική κρυπτογραφία, ραχοκοκαλιά ελέγχου"
 ---

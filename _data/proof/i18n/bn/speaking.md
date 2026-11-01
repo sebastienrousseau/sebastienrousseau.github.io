@@ -11,10 +11,10 @@ hero:
   press_nudge: সময়সীমার মধ্যে থাকা সাংবাদিক?
   press_nudge_cta: বিশেষজ্ঞ মন্তব্য চান
   microproof:
-  - HSBC, PayPal ও Barclays-এ পেমেন্ট প্ল্যাটফর্ম চালু করেছেন
+  - HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ প্রায় দুই দশকের অভিজ্ঞতা
   - EPAA পোস্ট-কোয়ান্টাম শ্বেতপত্রের সহ-লেখক
   - অবদানকারী, Emerging Payments Association Asia
-employers_label: যেসব প্রতিষ্ঠানে পেমেন্ট প্ল্যাটফর্ম চালু করেছেন
+employers_label: যেসব প্রতিষ্ঠানে আমি কাজ করেছি
 stats_eyebrow: সংখ্যায়
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: কপি
   items:
   - length: সংক্ষিপ্ত
-    text: সেবাস্তিয়ঁ রুসো একজন প্রবীণ ব্যাংকিং প্রযুক্তিবিদ, যিনি ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি ও প্রয়োগিক AI-এর মিলনস্থলে লেখেন ও গড়েন। তিনি HSBC, PayPal ও Barclays-এ পেমেন্ট প্ল্যাটফর্ম চালু করেছেন এবং উৎপাদনে ব্যবহৃত ওপেন সোর্স রেফারেন্স বাস্তবায়ন রক্ষণাবেক্ষণ করেন।
+    text: সেবাস্তিয়ঁ রুসো একজন প্রবীণ ব্যাংকিং প্রযুক্তিবিদ, যিনি ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি ও প্রয়োগিক AI-এর মিলনস্থলে লেখেন ও গড়েন। HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ প্রায় দুই দশকের অভিজ্ঞতা।
   - length: মাঝারি
     text: সেবাস্তিয়ঁ রুসো একজন প্রবীণ ব্যাংকিং প্রযুক্তিবিদ, HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ও Virgin Group-এ প্রায় দুই দশক কাটিয়েছেন। তিনি ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি ও প্রয়োগিক AI-এর মিলনস্থলে লেখেন ও গড়েন, আর pacs.008, pain.001, KyberLib, BankStatementParser-এর মতো ওপেন সোর্স রেফারেন্স বাস্তবায়ন রক্ষণাবেক্ষণ করেন, যেগুলি ট্রেজারি ও পেমেন্ট দল উৎপাদনে ব্যবহার করে। তিনি Emerging Payments Association Asia-র কোয়ান্টাম-নিরাপদ ক্রিপ্টোগ্রাফি কার্যদলে অবদান রাখেন এবং Banking On Quantum ও Banking On AI প্রকাশ করেন।
   - length: দীর্ঘ
-    text: 'সেবাস্তিয়ঁ রুসো একজন প্রবীণ ব্যাংকিং প্রযুক্তিবিদ, যাঁর মনোযোগ পাইকারি পেমেন্টের কাঠামোগত রূপান্তরে। HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ও Virgin Group-এ তিনি পেমেন্ট প্ল্যাটফর্ম, AI পণ্য ও ওপেন সোর্স অবকাঠামো চালু করেছেন, যেগুলি ট্রেজারি ও পেমেন্ট দল উৎপাদনে ব্যবহার করে। তিনি pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN ও dotfiles লেখেন ও রক্ষণাবেক্ষণ করেন, প্রতিটিকেই প্রদর্শনী নয়, রেফারেন্স বাস্তবায়ন হিসেবে রাখা হয়েছে: যাচাইযোগ্য, পর্ষদ-মানের আর্থিক অবকাঠামো। তিনি Emerging Payments Association Asia-র কোয়ান্টাম-নিরাপদ ক্রিপ্টোগ্রাফি কার্যদলে অবদান রাখেন, EPAA শ্বেতপত্র «Quantum-Safe Payments: Why the Payments Industry Must Act Now»-এর (সেপ্টেম্বর ২০২৫) সহ-লেখক, এবং Banking On Quantum ও Banking On AI প্রকাশ করেন। তিনি এজেন্টিক AI, তাৎক্ষণিক পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, ক্লাউড-নেটিভ সহনশীলতা, কাঠামোবদ্ধ তথ্য ও নিয়ন্ত্রক প্রমাণের মিলনস্থলে কাজ করেন।'
+    text: 'সেবাস্তিয়ঁ রুসো একজন প্রবীণ ব্যাংকিং প্রযুক্তিবিদ, যাঁর মনোযোগ পাইকারি পেমেন্টের কাঠামোগত রূপান্তরে। HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ প্রায় দুই দশকের অভিজ্ঞতা। তিনি pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN ও dotfiles লেখেন ও রক্ষণাবেক্ষণ করেন, প্রতিটিকেই প্রদর্শনী নয়, রেফারেন্স বাস্তবায়ন হিসেবে রাখা হয়েছে: যাচাইযোগ্য, পর্ষদ-মানের আর্থিক অবকাঠামো। তিনি Emerging Payments Association Asia-র কোয়ান্টাম-নিরাপদ ক্রিপ্টোগ্রাফি কার্যদলে অবদান রাখেন, EPAA শ্বেতপত্র «Quantum-Safe Payments: Why the Payments Industry Must Act Now»-এর (সেপ্টেম্বর ২০২৫) সহ-লেখক, এবং Banking On Quantum ও Banking On AI প্রকাশ করেন। তিনি এজেন্টিক AI, তাৎক্ষণিক পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, ক্লাউড-নেটিভ সহনশীলতা, কাঠামোবদ্ধ তথ্য ও নিয়ন্ত্রক প্রমাণের মিলনস্থলে কাজ করেন।'
 faq:
   eyebrow: জিজ্ঞাসার আগে
   headline: আমন্ত্রণ, সোজা কথায়।
@@ -185,12 +185,7 @@ final_cta:
   secondary_cta: বিশেষজ্ঞ মন্তব্য চান
 ---
 
-সেবাস্তিয়ঁ রুসো একজন প্রবীণ ব্যাংকিং প্রযুক্তিবিদ, যাঁর মনোযোগ পাইকারি পেমেন্টের কাঠামোগত
-রূপান্তরে। HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ও Virgin
-Group-এ তিনি পেমেন্ট প্ল্যাটফর্ম, AI পণ্য ও ওপেন সোর্স অবকাঠামো চালু করেছেন, যেগুলি ট্রেজারি
-ও পেমেন্ট দল উৎপাদনে ব্যবহার করে। তিনি pacs.008, pain.001, BankStatementParser, KyberLib,
-CloudCDN ও dotfiles লেখেন ও রক্ষণাবেক্ষণ করেন, প্রতিটিকেই প্রদর্শনী নয়, রেফারেন্স বাস্তবায়ন
-হিসেবে রাখা হয়েছে: যাচাইযোগ্য, পর্ষদ-মানের আর্থিক অবকাঠামো।
+সেবাস্তিয়ঁ রুসো একজন প্রবীণ ব্যাংকিং প্রযুক্তিবিদ, যাঁর মনোযোগ পাইকারি পেমেন্টের কাঠামোগত রূপান্তরে। HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ প্রায় দুই দশকের অভিজ্ঞতা। তিনি pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN ও dotfiles লেখেন ও রক্ষণাবেক্ষণ করেন, প্রতিটিকেই প্রদর্শনী নয়, রেফারেন্স বাস্তবায়ন হিসেবে রাখা হয়েছে: যাচাইযোগ্য, পর্ষদ-মানের আর্থিক অবকাঠামো।
 
 তিনি Emerging Payments Association Asia-র কোয়ান্টাম-নিরাপদ ক্রিপ্টোগ্রাফি কার্যদলে অবদান
 রাখেন, EPAA শ্বেতপত্র «Quantum-Safe Payments: Why the Payments Industry Must Act Now»-এর

@@ -74,7 +74,7 @@
       "aria-label=\"Domovská stránka Sebastien Rousseau\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/cs/o-mne/index.html\">O mně</a></li>"
     ],
     [
@@ -294,11 +294,11 @@
       "<li><a href=\"/cs/vyzkum/index.html\">Výzkum</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/cs/speaking/index.html\">Přednášky</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/cs/speaking/index.html\">Přednášky</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/cs/sada/index.html\">Sada</a>"
     ],
     [
@@ -326,15 +326,15 @@
       "aria-label=\"Přepnout podnabídku O mně\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"Přepnout podnabídku Knihovna\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"Přepnout podnabídku Výzkum\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"Přepnout podnabídku Sada\""
     ],
     [
@@ -346,7 +346,7 @@
       "<li><a href=\"/cs/speaking/index.html\">Veřejné přednášky</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/cs/knihovna/index.html\">Knihovna</a>"
     ],
     [

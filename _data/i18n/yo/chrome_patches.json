@@ -74,7 +74,7 @@
       "aria-label=\"Ilé Sebastien Rousseau\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/yo/nipa-wa/index.html\">About</a></li>"
     ],
     [
@@ -294,11 +294,11 @@
       "<li><a href=\"/yo/iwadi/index.html\">Ìwádìí</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/yo/speaking/index.html\">Àwọn ọ̀rọ̀</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/yo/speaking/index.html\">Àwọn ọ̀rọ̀</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/yo/akojo-irinse/index.html\">Àkójọ irinṣẹ́</a>"
     ],
     [
@@ -326,15 +326,15 @@
       "aria-label=\"Yí ìsàlẹ̀-àtòjọ About padà\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"Yí ìsàlẹ̀-àtòjọ Ilé ìkàwé padà\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"Yí ìsàlẹ̀-àtòjọ Ìwádìí padà\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"Yí ìsàlẹ̀-àtòjọ Àkójọ irinṣẹ́ padà\""
     ],
     [
@@ -346,7 +346,7 @@
       "<li><a href=\"/yo/speaking/index.html\">Ọ̀rọ̀ síso ní gbangba</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/yo/ile-ikawe/index.html\">Ilé ìkàwé</a>"
     ],
     [

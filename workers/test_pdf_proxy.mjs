@@ -172,14 +172,17 @@ test('POST → 405 method-not-allowed', async () => {
 test('tryPDF accepts a custom base origin', async () => {
   const realF = globalThis.fetch;
   let lastUrl = null;
-  globalThis.fetch = async (input) => {
+  let lastHeaders = null;
+  globalThis.fetch = async (input, init) => {
     lastUrl = typeof input === 'string' ? input : input.url;
+    lastHeaders = init?.headers || null;
     return new Response(FAKE_PDF, { status: 200 });
   };
   try {
-    const r = await tryPDF(req('/api/pdf/ok-slug.pdf'), 'https://staging-pdf.fly.dev');
+    const r = await tryPDF(req('/api/pdf/ok-slug.pdf'), 'https://staging-pdf.fly.dev', 'edge-secret');
     assert.equal(r.status, 200);
     assert.equal(lastUrl, 'https://staging-pdf.fly.dev/render?slug=ok-slug');
+    assert.deepEqual(lastHeaders, { 'X-Origin-Verify': 'edge-secret' });
   } finally {
     globalThis.fetch = realF;
   }

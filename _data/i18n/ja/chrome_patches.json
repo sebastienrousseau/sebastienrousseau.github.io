@@ -74,7 +74,7 @@
       "aria-label=\"Sebastien Rousseau ホーム\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/ja/nitsuite/index.html\">私について</a></li>"
     ],
     [
@@ -294,11 +294,11 @@
       "<li><a href=\"/ja/kenkyu/index.html\">リサーチ</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/ja/speaking/index.html\">講演</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/ja/speaking/index.html\">講演</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/ja/suito/index.html\">スイート</a>"
     ],
     [
@@ -326,15 +326,15 @@
       "aria-label=\"私についてのサブメニューを切り替える\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"ライブラリのサブメニューを切り替える\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"リサーチのサブメニューを切り替える\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"スイートのサブメニューを切り替える\""
     ],
     [
@@ -346,7 +346,7 @@
       "<li><a href=\"/ja/speaking/index.html\">講演活動</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/ja/raiburari/index.html\">ライブラリ</a>"
     ],
     [

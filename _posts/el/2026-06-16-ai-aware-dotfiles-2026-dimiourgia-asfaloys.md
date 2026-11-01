@@ -6,7 +6,7 @@ description: "Τα AI-aware dotfiles αποτελούν ένα ασφαλές, �
 date: "June 16, 2026"
 language: "el"
 locale: "el_GR"
-banner: "https://cloudcdn.pro/stocks/images/almas-salakhov-Vq2ap8aFFEs.webp"
+banner: "https://cloudcdn.pro/stocks/images/alexander-sinn-KgLtFCgfC28.webp"
 banner_alt: "Σταθμός εργασίας προγραμματιστή σε χαμηλό φωτισμό - συμβολίζει AI-aware, αναπαραγώγιμα και ασφαλή dotfiles για διακομιστές MCP, υπογραφή SLSA, μυστικά age/SOPS και ισοτιμία πολλαπλών κελυφών"
 keywords: "dotfiles, Chezmoi, MCP, Model Context Protocol, SLSA, SOPS, κρυπτογράφηση age, δηλωτική διαμόρφωση, σταθμός εργασίας προγραμματιστή, DORA Άρθρο 5, NIST CSF 2.0, ασφάλεια εφοδιαστικής αλυσίδας, agentic AI, ισοτιμία πολλαπλών κελυφών, Zsh, Fish, Nushell"
 ---

@@ -56,6 +56,8 @@ jobs:
             --repos "$RUNNER_TEMP/pages-repos.txt" \
             --sitemap "$RUNNER_TEMP/sitemap.xml" \
             --self "$SELF"
+          curl -fsSI --max-time 30 https://sebastienrousseau.com/iso20022-mcp/ >/dev/null
+          curl -fsSI --max-time 30 https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/docs/sigstore.md >/dev/null
 
       - name: Compare deployed commit with main
         env:

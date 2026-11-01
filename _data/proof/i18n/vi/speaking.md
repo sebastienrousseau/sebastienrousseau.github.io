@@ -11,10 +11,10 @@ hero:
   press_nudge: Nhà báo đang chạy hạn nộp bài?
   press_nudge_cta: Đặt bình luận chuyên gia
   microproof:
-  - Đã đưa nền tảng thanh toán vào vận hành tại HSBC, PayPal và Barclays
+  - Gần hai thập kỷ kinh nghiệm tại HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group
   - Đồng tác giả báo cáo hậu lượng tử của EPAA
   - Người đóng góp, Emerging Payments Association Asia
-employers_label: Đã đưa nền tảng thanh toán vào vận hành tại
+employers_label: Những nơi tôi đã làm việc
 stats_eyebrow: Bằng con số
 stats:
 - kpi: years_payments
@@ -137,11 +137,11 @@ bios:
   copy_label: Sao chép
   items:
   - length: Ngắn
-    text: Sebastien Rousseau là chuyên gia công nghệ ngân hàng cấp cao, viết và dựng ở giao điểm của thanh toán ISO 20022, mật mã hậu lượng tử và AI ứng dụng. Ông đã đưa nền tảng thanh toán vào vận hành tại HSBC, PayPal và Barclays, và duy trì các bản triển khai tham chiếu mã nguồn mở đang chạy thật.
+    text: Sebastien Rousseau là chuyên gia công nghệ ngân hàng cấp cao, viết và dựng ở giao điểm của thanh toán ISO 20022, mật mã hậu lượng tử và AI ứng dụng. Gần hai thập kỷ kinh nghiệm tại HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group.
   - length: Vừa
     text: Sebastien Rousseau là chuyên gia công nghệ ngân hàng cấp cao với gần hai thập kỷ tại HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA và Virgin Group. Ông viết và dựng ở giao điểm của thanh toán ISO 20022, mật mã hậu lượng tử và AI ứng dụng, đồng thời duy trì các bản triển khai tham chiếu mã nguồn mở — pacs.008, pain.001, KyberLib, BankStatementParser — được các đội ngân quỹ và thanh toán dùng trong vận hành thật. Ông đóng góp cho Nhóm công tác Mật mã An toàn Lượng tử của Emerging Payments Association Asia và xuất bản Banking On Quantum cùng Banking On AI.
   - length: Dài
-    text: 'Sebastien Rousseau là chuyên gia công nghệ ngân hàng cấp cao tập trung vào chuyển đổi cấu trúc của thanh toán bán buôn. Qua HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA và Virgin Group, ông đã đưa vào vận hành các nền tảng thanh toán, sản phẩm AI và hạ tầng mã nguồn mở mà các đội ngân quỹ và thanh toán dùng thật. Ông viết và duy trì pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN và dotfiles, mỗi thứ đặt ở vị trí bản triển khai tham chiếu chứ không phải bản trình diễn: hạ tầng tài chính kiểm tra được, đủ tầm đưa ra hội đồng. Ông đóng góp cho Nhóm công tác Mật mã An toàn Lượng tử của Emerging Payments Association Asia, đồng tác giả báo cáo EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (tháng 9 năm 2025), và xuất bản Banking On Quantum cùng Banking On AI. Ông làm việc ở giao điểm của AI tác tử, thanh toán thời gian thực, mật mã hậu lượng tử, khả năng chống chịu trên nền đám mây, dữ liệu có cấu trúc và bằng chứng cho cơ quan quản lý.'
+    text: 'Sebastien Rousseau là chuyên gia công nghệ ngân hàng cấp cao tập trung vào chuyển đổi cấu trúc của thanh toán bán buôn. Gần hai thập kỷ kinh nghiệm tại HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Ông viết và duy trì pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN và dotfiles, mỗi thứ đặt ở vị trí bản triển khai tham chiếu chứ không phải bản trình diễn: hạ tầng tài chính kiểm tra được, đủ tầm đưa ra hội đồng. Ông đóng góp cho Nhóm công tác Mật mã An toàn Lượng tử của Emerging Payments Association Asia, đồng tác giả báo cáo EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (tháng 9 năm 2025), và xuất bản Banking On Quantum cùng Banking On AI. Ông làm việc ở giao điểm của AI tác tử, thanh toán thời gian thực, mật mã hậu lượng tử, khả năng chống chịu trên nền đám mây, dữ liệu có cấu trúc và bằng chứng cho cơ quan quản lý.'
 faq:
   eyebrow: Trước khi bạn hỏi
   headline: Việc mời, nói cho rõ.
@@ -185,13 +185,7 @@ final_cta:
   secondary_cta: Đặt bình luận chuyên gia
 ---
 
-Sebastien Rousseau là chuyên gia công nghệ ngân hàng cấp cao tập trung vào chuyển đổi cấu
-trúc của thanh toán bán buôn. Qua HSBC Commercial & Investment Bank, PayPal, Barclays,
-Shazam, AKQA và Virgin Group, ông đã đưa vào vận hành các nền tảng thanh toán, sản phẩm AI
-và hạ tầng mã nguồn mở mà các đội ngân quỹ và thanh toán dùng thật. Ông viết và duy trì
-pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN và dotfiles, mỗi thứ đặt ở vị
-trí bản triển khai tham chiếu chứ không phải bản trình diễn: hạ tầng tài chính kiểm tra
-được, đủ tầm đưa ra hội đồng.
+Sebastien Rousseau là chuyên gia công nghệ ngân hàng cấp cao tập trung vào chuyển đổi cấu trúc của thanh toán bán buôn. Gần hai thập kỷ kinh nghiệm tại HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Ông viết và duy trì pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN và dotfiles, mỗi thứ đặt ở vị trí bản triển khai tham chiếu chứ không phải bản trình diễn: hạ tầng tài chính kiểm tra được, đủ tầm đưa ra hội đồng.
 
 Ông đóng góp cho Nhóm công tác Mật mã An toàn Lượng tử của Emerging Payments Association
 Asia, đồng tác giả báo cáo EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act

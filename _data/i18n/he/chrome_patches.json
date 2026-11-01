@@ -74,7 +74,7 @@
       "aria-label=\"דף הבית של Sebastien Rousseau\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/he/aleynu/index.html\">אודות</a></li>"
     ],
     [
@@ -294,11 +294,11 @@
       "<li><a href=\"/he/mechkar/index.html\">מחקר</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/he/speaking/index.html\">הרצאות</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/he/speaking/index.html\">הרצאות</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/he/svita/index.html\">חבילה</a>"
     ],
     [
@@ -326,15 +326,15 @@
       "aria-label=\"החלף תפריט משנה אודות\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"החלף תפריט משנה ספרייה\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"החלף תפריט משנה מחקר\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"החלף תפריט משנה חבילה\""
     ],
     [
@@ -346,7 +346,7 @@
       "<li><a href=\"/he/speaking/index.html\">הרצאות פומביות</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/he/sifria/index.html\">ספרייה</a>"
     ],
     [

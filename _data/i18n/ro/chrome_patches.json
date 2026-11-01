@@ -74,7 +74,7 @@
       "aria-label=\"Pagina principală Sebastien Rousseau\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/ro/despre/index.html\">About</a></li>"
     ],
     [
@@ -294,11 +294,11 @@
       "<li><a href=\"/ro/cercetare/index.html\">Cercetare</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/ro/speaking/index.html\">Conferințe</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/ro/speaking/index.html\">Conferințe</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/ro/suita/index.html\">Suită</a>"
     ],
     [
@@ -326,15 +326,15 @@
       "aria-label=\"Comută submeniul About\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"Comută submeniul Bibliotecă\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"Comută submeniul Cercetare\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"Comută submeniul Suită\""
     ],
     [
@@ -346,7 +346,7 @@
       "<li><a href=\"/ro/speaking/index.html\">Discursuri publice</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/ro/biblioteca/index.html\">Bibliotecă</a>"
     ],
     [

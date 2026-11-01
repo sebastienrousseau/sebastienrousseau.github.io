@@ -74,7 +74,7 @@
       "aria-label=\"Strona główna Sebastiena Rousseau\""
     ],
     [
-      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"?/about/index\\.html\"?>(?:About|Full profile)</a></li>",
       "<li><a href=\"/pl/o-mnie/index.html\">O mnie</a></li>"
     ],
     [
@@ -294,11 +294,11 @@
       "<li><a href=\"/pl/badania/index.html\">Badania</a></li>"
     ],
     [
-      "<li><a href=\"?/speaking/index\\.html\"?>Speaking</a></li>",
-      "<li><a href=\"/pl/speaking/index.html\">Wystąpienia</a></li>"
+      "<a href=\"?/speaking/index\\.html\"?>Speaking</a>",
+      "<a href=\"/pl/speaking/index.html\">Wystąpienia</a>"
     ],
     [
-      "<a href=\"?/suite/index\\.html\"?>Suite</a>",
+      "<a href=\"?/suite/index\\.html\"?>(?:Suite|Open source)</a>",
       "<a href=\"/pl/pakiet/index.html\">Pakiet</a>"
     ],
     [
@@ -326,15 +326,15 @@
       "aria-label=\"Przełącz podmenu O mnie\""
     ],
     [
-      "aria-label=\"Toggle Library submenu\"",
+      "aria-label=\"Toggle (?:Library|Insights) submenu\"",
       "aria-label=\"Przełącz podmenu Biblioteka\""
     ],
     [
-      "aria-label=\"Toggle Research submenu\"",
+      "aria-label=\"Toggle (?:Research|Speaking) submenu\"",
       "aria-label=\"Przełącz podmenu Badania\""
     ],
     [
-      "aria-label=\"Toggle Suite submenu\"",
+      "aria-label=\"Toggle (?:Suite|Open source) submenu\"",
       "aria-label=\"Przełącz podmenu Pakiet\""
     ],
     [
@@ -346,7 +346,7 @@
       "<li><a href=\"/pl/speaking/index.html\">Wystąpienia publiczne</a></li>"
     ],
     [
-      "<a href=\"?/library/index\\.html\"?>Library</a>",
+      "<a href=\"?/library/index\\.html\"?>(?:Library|Insights)</a>",
       "<a href=\"/pl/biblioteka/index.html\">Biblioteka</a>"
     ],
     [

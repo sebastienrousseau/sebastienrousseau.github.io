@@ -768,3 +768,19 @@ def test_post_without_flag_still_caches_whole_delta(
     assert rc == 0
     pages = pc.load_cache(cache_path)["pages"]
     assert {"page-a/index.html", "page-b/index.html"} <= set(pages)
+
+
+def test_compute_page_hash_normalises_cloudcdn_cors_and_favicon(tmp_path: Path) -> None:
+    a = tmp_path / "a.html"
+    a.write_text(
+        '<link rel="icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" />'
+        '<img src="https://cloudcdn.pro/stocks/images/x.webp" alt="x">',
+        encoding="utf-8",
+    )
+    b = tmp_path / "b.html"
+    b.write_text(
+        '<link rel="icon" href="/favicon.ico" />'
+        '<img src="https://cloudcdn.pro/stocks/images/x.webp" alt="x" crossorigin="anonymous">',
+        encoding="utf-8",
+    )
+    assert pc.compute_page_hash(a) == pc.compute_page_hash(b)

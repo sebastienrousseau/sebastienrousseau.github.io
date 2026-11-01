@@ -6,7 +6,7 @@ description: "AI-அறிந்த dotfiles என்பது MCP யுகத
 date: "June 16, 2026"
 language: "ta"
 locale: "ta_IN"
-banner: "https://cloudcdn.pro/stocks/images/almas-salakhov-Vq2ap8aFFEs.webp"
+banner: "https://cloudcdn.pro/stocks/images/alexander-sinn-KgLtFCgfC28.webp"
 banner_alt: "மங்கிய வெளிச்சத்தில் டெவலப்பர் பணிநிலையம் - MCP சர்வர்கள், SLSA கையொப்பமிடல், age/SOPS ரகசியங்கள் மற்றும் பல-ஷெல் சமநிலைக்கான AI-அறிந்த, மறுஉருவாக்கக்கூடிய, பாதுகாப்பான dotfiles-ஐ குறிக்கிறது"
 keywords: "dotfiles, Chezmoi, MCP, Model Context Protocol, SLSA, SOPS, age குறியாக்கம், அறிவிப்பு அமைப்பு, டெவலப்பர் பணிநிலையம், DORA பிரிவு 5, NIST CSF 2.0, விநியோகச் சங்கிலி பாதுகாப்பு, முகவர் AI, பல-ஷெல் சமநிலை, Zsh, Fish, Nushell"
 ---

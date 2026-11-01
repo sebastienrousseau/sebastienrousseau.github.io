@@ -29,11 +29,13 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 PUBLIC = Path("public")
 from postbuild_assets import (
+    add_cloudcdn_cors,
     add_responsive_srcset,
     fix_sri,
     inject_jsonld_hashes,
     inject_lcp_preload,
     normalise_csp,
+    normalise_manifest_icons,
     setup_asset_state,
     stamp_asset_fingerprints,
     wrap_cdn_images_in_transform,
@@ -182,6 +184,7 @@ from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     _labels_for_lang,
     _slug_maps,
     _slug_maps_for,
+    inject_article_cta,
     inject_article_furniture,
     inject_deck,
     inject_eyebrow,
@@ -579,6 +582,7 @@ def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str
     # BEFORE </div></main>, so the LAST pass ends up closest to it.
     # We want: syndicate (top) → cite → reuse → byline (bottom).
     out = _bump(inject_oembed_link, out, ctr, "oembed_links_set")
+    out = inject_article_cta(out)
     out = _bump(inject_syndication_panel, out, ctr, "syndicate_panels_set")
     out = _bump(inject_cite_popover, out, ctr, "cite_panels_set")
     out = _bump(inject_reuse_panel, out, ctr, "reuse_panels_set")
@@ -775,6 +779,7 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     # CDN has no AVIF variants.
     patched_hl, n_srcset = add_responsive_srcset(patched_hl)
     ctx.counters.srcset_added += n_srcset
+    patched_hl = add_cloudcdn_cors(patched_hl)
     # Strip redundant title="..." on links where it duplicates the inner
     # text. WAVE flags these as a "redundant alternative text" alert.
     # Run AFTER every furniture / inject pass so author-card + citation
@@ -839,6 +844,7 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int, int]:
     # copy through from the repo-root sources so both land non-empty.
     write_humans(PUBLIC, Path("."))
     write_security_txt(PUBLIC, Path("."))
+    normalise_manifest_icons(PUBLIC)
     # GitHub Pages re-reads CNAME on every deploy and needs a bare
     # hostname; the SSG emits a full DNS record line.
     if normalise_cname(PUBLIC):

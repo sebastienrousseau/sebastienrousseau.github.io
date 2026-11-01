@@ -51,9 +51,9 @@ def test_raises_when_anchor_missing():
     raise AssertionError("expected RuntimeError when the canonical link is absent")
 
 
-def test_scope_is_about_and_page():
+def test_scope_is_about_page_and_story():
     """seo.py documents this contract for the non-BlogPosting layouts."""
-    assert sorted(gl._NEEDS_BANNER_SRC) == ["about.html", "page.html"]
+    assert sorted(gl._NEEDS_BANNER_SRC) == ["about.html", "page.html", "story.html"]
 
 
 def test_main_writes_the_meta_into_about_and_page(monkeypatch):

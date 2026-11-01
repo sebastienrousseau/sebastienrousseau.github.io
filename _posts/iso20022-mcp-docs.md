@@ -4,8 +4,8 @@
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Aerial view of illuminated financial district at night"
-banner_height: "100vh"
-banner_width: "100vw"
+banner_height: "1080"
+banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp"
 cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
@@ -23,7 +23,7 @@ image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
 keywords: "ISO 20022 MCP docs, Claude MCP setup, claude mcp add, Claude Desktop MCP config, pain.001 MCP, pacs.008 MCP, camt.053 MCP, reconciliation MCP, agent payments documentation"
-last_reviewed: "2026-07-16"
+last_reviewed: "2026-10-29"
 language: "en-GB"
 layout: "story"
 locale: "en_GB"
@@ -82,7 +82,7 @@ msapplication-navbutton-color: "0, 67, 165"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "Connect the ISO 20022 MCP Suite to Claude Code or Claude Desktop in one step, with first prompts to try and a server picker."
-twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image: "https://cloudcdn.pro/stocks/images/denys-nevozhai-2vmT5_FeMck-1920.webp"
 twitter_image_alt: "ISO 20022 MCP Suite documentation"
 twitter_site: "@wwdseb"
 twitter_title: "ISO 20022 MCP Suite: documentation"
@@ -93,7 +93,7 @@ author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2026-07-16"
+site_last_updated: "2026-10-29"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
@@ -270,6 +270,18 @@ claude mcp add iso20022 -- uvx --from "iso20022-mcp[all]" iso20022-mcp
 
 </article>
 <article class="docs-client">
+<h4 id="client-codex">OpenAI Codex CLI</h4>
+
+<p>Add an entry to <code>~/.codex/config.toml</code> (or run <code>codex mcp add iso20022 -- uvx --from "iso20022-mcp[all]" iso20022-mcp</code>):</p>
+
+```toml
+[mcp_servers.iso20022]
+command = "uvx"
+args = ["--from", "iso20022-mcp[all]", "iso20022-mcp"]
+```
+
+</article>
+<article class="docs-client">
 <h4 id="client-openai">OpenAI Agents SDK</h4>
 
 <p>The Python Agents SDK spawns local stdio servers itself through <code>MCPServerStdio</code>, with the same command and args:</p>
@@ -304,13 +316,17 @@ async with MCPServerStdio(
 <section class="newsroom docs-split" id="self-host">
 <div class="cat-section-head">
 <p class="cat-kicker">SELF-HOST FOR REMOTE-ONLY CLIENTS</p>
-<h3 class="cat-headline">One bridge command, verified end to end.</h3>
-<p class="cat-lede">Remote-first platforms only speak Streamable HTTP. The community <a href="https://pypi.org/project/mcp-proxy/">mcp-proxy</a> bridge serves this suite's stdio gateway over exactly that transport, in one command:</p>
+<h3 class="cat-headline">Native Streamable HTTP or the mcp-proxy bridge.</h3>
+<p class="cat-lede">Remote-first platforms only speak Streamable HTTP. Since <code>iso20022-mcp</code> 0.0.18, the gateway natively serves Streamable HTTP (at <code>/mcp</code>) and SSE (at <code>/sse</code>) with optional TLS, or you can wrap stdio with <a href="https://pypi.org/project/mcp-proxy/">mcp-proxy</a>:</p>
 </div>
 
 <div class="docs-code-col">
 
 ```bash
+# Native Streamable HTTP endpoint at http://127.0.0.1:8000/mcp
+uvx --from "iso20022-mcp[all]" iso20022-mcp --transport streamable-http --host 127.0.0.1 --port 8000
+
+# Or via the community mcp-proxy bridge
 uvx mcp-proxy --port 8096 -- uvx --from "iso20022-mcp[all]" iso20022-mcp
 ```
 
@@ -318,9 +334,9 @@ uvx mcp-proxy --port 8096 -- uvx --from "iso20022-mcp[all]" iso20022-mcp
 
 <div class="story-why">
 <ul class="story-why-list">
-<li><strong>Verified, not assumed.</strong> On 16 July 2026, with <code>mcp-proxy</code> 0.12.0, a raw Streamable HTTP client against <code>http://127.0.0.1:8096/mcp/</code> completed the MCP <code>initialize</code> handshake, listed all seven gateway meta-tools and received a schema-valid <code>pain.001.001.03</code> from <code>generate</code>. The same bridge also exposes an SSE endpoint at <code>/sse</code>.</li>
-<li><strong>Localhost by default.</strong> The bridge binds <code>127.0.0.1</code>. Remote platforms need a publicly reachable URL, so exposing this to the internet means adding your own TLS, authentication and network policy in front; neither the bridge nor the suite ships an authentication layer.</li>
-<li><strong>Know the trade.</strong> <code>mcp-proxy</code> is a third-party bridge on PyPI, not part of this suite, and self-hosting gives up the local-only posture the stdio servers are built around: requests now cross a network hop that you operate and must secure.</li>
+<li><strong>Verified, not assumed.</strong> On 16 July 2026, with <code>mcp-proxy</code> 0.12.0, a raw Streamable HTTP client against <code>http://127.0.0.1:8096/mcp/</code> completed the MCP <code>initialize</code> handshake, listed all seven gateway meta-tools and received a schema-valid <code>pain.001.001.03</code> from <code>generate</code>. Native <code>--transport streamable-http</code> (added in <code>iso20022-mcp</code> 0.0.18) also supports <code>--ssl-certfile</code> and <code>--ssl-keyfile</code>.</li>
+<li><strong>Localhost by default.</strong> Both modes bind <code>127.0.0.1</code> by default. Remote platforms need a publicly reachable URL, so exposing this to the internet means adding your own TLS, authentication and network policy in front; neither the bridge nor the suite ships an authentication layer.</li>
+<li><strong>Know the trade.</strong> Self-hosting over HTTP gives up the local-only posture the stdio servers are built around: requests now cross a network hop that you operate and must secure.</li>
 </ul>
 </div>
 </section>
@@ -434,7 +450,7 @@ Validate the records first, then generate. If validation fails, name the failing
 </div>
 
 <section class="newsroom" id="which-server">
-<div class="cat-section-head"><p class="cat-kicker">WHICH SERVER DO I NEED?</p><h3 class="cat-headline">One job, one server.</h3><p class="cat-lede">Install the gateway and let it route, or install just the one for the task in front of you. Every server is <code>pip install</code>-able and live on the official MCP registry.</p></div>
+<div class="cat-section-head"><p class="cat-kicker">WHICH SERVER DO I NEED?</p><h3 class="cat-headline">One job, one server.</h3><p class="cat-lede">Install the gateway and let it route (7 meta-tools in ~2,200 context tokens vs ~36,400 tokens for 80+ raw tools), or run just the specialist server for the task in front of you. Every server is on PyPI and the official MCP registry.</p></div>
 <div class="newsroom-grid cat-grid">
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/iso20022-mcp" title="iso20022-mcp" aria-label="iso20022-mcp">
@@ -442,8 +458,8 @@ Validate the records first, then generate. If validation fails, name the failing
 </a>
 <div class="newsroom-card-body">
 <h3><a href="https://github.com/sebastienrousseau/iso20022-mcp">Discover &amp; route</a></h3>
-<p class="newsroom-excerpt">Start here. The gateway's <code>search</code> / <code>describe</code> / <code>generate</code> / <code>validate</code> / <code>parse</code> meta-tools span every family.</p>
-<p class="newsroom-more"><code>iso20022-mcp</code></p>
+<p class="newsroom-excerpt">Start here. The gateway's 7 meta-tools (<code>search</code>, <code>list_families</code>, <code>list_servers</code>, <code>describe</code>, <code>validate</code>, <code>generate</code>, <code>parse</code>) span every family.</p>
+<p class="newsroom-more"><code>uvx --from "iso20022-mcp[all]" iso20022-mcp</code></p>
 </div>
 </article>
 <article class="newsroom-card">
@@ -452,8 +468,8 @@ Validate the records first, then generate. If validation fails, name the failing
 </a>
 <div class="newsroom-card-body">
 <h3><a href="https://github.com/sebastienrousseau/pain001-mcp">Initiate a payment</a></h3>
-<p class="newsroom-excerpt">pain.001 customer credit transfers, with IBAN/BIC and XSD validation and an MT101 converter.</p>
-<p class="newsroom-more"><code>pain001-mcp</code></p>
+<p class="newsroom-excerpt">17 tools for <code>pain.001</code> customer credit transfers, IBAN/BIC and XSD validation, scheme checks and <code>MT101</code> conversion.</p>
+<p class="newsroom-more"><code>uvx pain001-mcp</code></p>
 </div>
 </article>
 <article class="newsroom-card">
@@ -462,8 +478,18 @@ Validate the records first, then generate. If validation fails, name the failing
 </a>
 <div class="newsroom-card-body">
 <h3><a href="https://github.com/sebastienrousseau/pacs008-mcp">Settle interbank</a></h3>
-<p class="newsroom-excerpt">pacs.008 transfers, pacs.004 returns, pacs.002 status, the Nov-2026 address toolkit, MT103.</p>
-<p class="newsroom-more"><code>pacs008-mcp</code></p>
+<p class="newsroom-excerpt">15 tools for <code>pacs.008</code> transfers, <code>pacs.004</code> returns, <code>pacs.002</code> status, the 2026-2027 structured address toolkit and <code>MT103</code> conversion.</p>
+<p class="newsroom-more"><code>uvx pacs008-mcp</code></p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/camt053-mcp" title="camt053-mcp" aria-label="camt053-mcp">
+<img alt="camt053" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<h3><a href="https://github.com/sebastienrousseau/camt053-mcp">Audit bank statements</a></h3>
+<p class="newsroom-excerpt">21 tools for <code>camt.053</code> and <code>camt.052</code> parsing, entry filtering, <code>MT940</code>/<code>MT942</code> conversion, rulebook citations and CBPR+ readiness.</p>
+<p class="newsroom-more"><code>uvx camt053-mcp</code></p>
 </div>
 </article>
 <article class="newsroom-card">
@@ -472,8 +498,8 @@ Validate the records first, then generate. If validation fails, name the failing
 </a>
 <div class="newsroom-card-body">
 <h3><a href="https://github.com/sebastienrousseau/reconcile-mcp">Reconcile</a></h3>
-<p class="newsroom-excerpt">Match camt.053 statements against expected pain.001 (exact, partial, split, batch), explainably.</p>
-<p class="newsroom-more"><code>reconcile-mcp</code></p>
+<p class="newsroom-excerpt">7 tools to match <code>camt.053</code> statements against expected <code>pain.001</code> payments (exact, partial, split, batch), with a zero-data sandbox.</p>
+<p class="newsroom-more"><code>uvx reconcile-mcp</code></p>
 </div>
 </article>
 <article class="newsroom-card">
@@ -482,8 +508,8 @@ Validate the records first, then generate. If validation fails, name the failing
 </a>
 <div class="newsroom-card-body">
 <h3><a href="https://github.com/sebastienrousseau/camt-exceptions">Cancel &amp; resolve</a></h3>
-<p class="newsroom-excerpt">camt.056 payment cancellation and camt.029 resolution of investigation, XSD-valid.</p>
-<p class="newsroom-more"><code>camt-exceptions</code></p>
+<p class="newsroom-excerpt">4 tools for <code>camt.056</code> payment cancellation and <code>camt.029</code> resolution of investigation, XSD-checked for the 2027 E&amp;I mandate.</p>
+<p class="newsroom-more"><code>uvx --from camt-exceptions camt-exceptions-mcp</code></p>
 </div>
 </article>
 <article class="newsroom-card">
@@ -492,8 +518,28 @@ Validate the records first, then generate. If validation fails, name the failing
 </a>
 <div class="newsroom-card-body">
 <h3><a href="https://github.com/sebastienrousseau/ap2-iso20022">Bridge an agent mandate</a></h3>
-<p class="newsroom-excerpt">Turn an AP2 / x402 mandate into a wire-valid pain.001 / pacs.008, guardrailed.</p>
-<p class="newsroom-more"><code>ap2-iso20022</code></p>
+<p class="newsroom-excerpt">5 tools to verify and convert signed AP2 or Coinbase x402 mandates into wire-valid <code>pain.001</code> or <code>pacs.008</code> records.</p>
+<p class="newsroom-more"><code>uvx --from ap2-iso20022 ap2-iso20022-mcp</code></p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/acmt001-mcp" title="acmt001-mcp" aria-label="acmt001-mcp">
+<img alt="acmt001" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<h3><a href="https://github.com/sebastienrousseau/acmt001-mcp">Open &amp; verify accounts</a></h3>
+<p class="newsroom-excerpt">6 tools for <code>acmt.001.001.08</code> account opening, maintenance and verification against the bundled schema.</p>
+<p class="newsroom-more"><code>uvx acmt001-mcp</code></p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/bankstatementparser-mcp" title="bankstatementparser-mcp" aria-label="bankstatementparser-mcp">
+<img alt="bankstatementparser" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<h3><a href="https://github.com/sebastienrousseau/bankstatementparser-mcp">Ingest any statement</a></h3>
+<p class="newsroom-excerpt">5 tools for automatic format detection and PII-redacted parsing across <code>camt.053</code>, <code>pain.001</code>, <code>MT940</code>, CSV, OFX and QFX.</p>
+<p class="newsroom-more"><code>uvx bankstatementparser-mcp</code></p>
 </div>
 </article>
 </div>
@@ -513,12 +559,12 @@ Validate the records first, then generate. If validation fails, name the failing
 </section>
 
 <section class="newsroom docs-cardlist docs-cards-3" id="migration">
-<div class="cat-section-head"><p class="cat-kicker">THE 2026–2028 MIGRATION</p><h3 class="cat-headline">Move off MT, one message at a time.</h3><p class="cat-lede">MT/MX coexistence ended in November 2025; MT retires through 2028, and structured postal addresses become mandatory in November 2026. The suite ships the tools for exactly this.</p></div>
+<div class="cat-section-head"><p class="cat-kicker">THE 2026–2028 MIGRATION</p><h3 class="cat-headline">Move off MT, one message at a time.</h3><p class="cat-lede">MT/MX coexistence for cross-border payments ended in November 2025; structured and hybrid postal addresses enforce across domestic and CBPR+ gates in November 2026, followed by SWIFT's November 2027 point-of-entry rejection of unstructured-only addresses, the <code>MT101</code> sunset and mandatory <code>camt.056</code>/<code>camt.029</code> Exceptions and Investigations. The suite ships the tools for every milestone.</p></div>
 <div class="story-why">
 <ul class="story-why-list">
-<li><strong>MT → MX converters.</strong> <code>convert_mt103</code> → pacs.008, <code>convert_mt101</code> → pain.001, <code>convert_mt940</code>/<code>convert_mt942</code> → camt, with validated output wired into the servers.</li>
-<li><strong>Structured-address toolkit.</strong> classify / validate-by-policy / repair / batch, in <code>pacs008-mcp</code>, for the November 2026 cliff.</li>
-<li><strong>Exceptions ready.</strong> pacs.004 returns and pacs.002 status in pacs008-mcp; camt.056 cancellation and camt.029 resolution in camt-exceptions.</li>
+<li><strong>MT → MX converters.</strong> <code>convert_mt103</code> → <code>pacs.008</code>, <code>convert_mt101</code> → <code>pain.001</code>, <code>convert_mt940</code>/<code>convert_mt942</code> → <code>camt.053</code>/<code>camt.052</code>, with XSD-validated output wired into the servers.</li>
+<li><strong>Structured &amp; hybrid address toolkit.</strong> <code>classify_address</code>, <code>validate_address</code>, <code>repair_address</code> and <code>validate_addresses</code> in <code>pacs008-mcp</code> enforce <code>TwnNm</code> and <code>Ctry</code> alongside hybrid <code>AdrLine</code> rules, paired with <code>check_cbpr_readiness</code> in <code>camt053-mcp</code>.</li>
+<li><strong>2027 Exceptions &amp; Investigations ready.</strong> <code>pacs.004</code> returns and <code>pacs.002</code> status in <code>pacs008-mcp</code>; <code>camt.056</code> cancellation and <code>camt.029</code> resolution in <code>camt-exceptions</code> to replace free-format <code>MT199</code>/<code>MT299</code> workflows.</li>
 </ul>
 </div>
 </section>

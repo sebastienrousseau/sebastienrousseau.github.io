@@ -53,6 +53,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "libraries, and migration playbooks for financial-services security teams."
         ),
         "slugs": [
+            "2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude",
             "2026-09-15-two-nuclear-clocks-vienna-and-beijing-haven-t-beaten-atomic-clocks-yet",
             "2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026",
             "2026-05-18-quantum-cryptography-standards-developments-2026",
@@ -121,6 +122,8 @@ TOPICS: dict[str, dict[str, object]] = {
             "at Tier-1 institutions."
         ),
         "slugs": [
+            "2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook",
+            "2026-10-25-agentic-ai-breaks-the-assumption-behind-every-task-exposure-forecast",
             "2026-10-24-modernisation-never-finishes-exceptions-pile-up",
             "2026-10-13-physical-ai-robotics-workforce-governance-industrial-operations",
             "2026-10-13-open-source-physical-ai-lerobot-end-to-end-robotics",
@@ -195,6 +198,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "lens that turns autonomous workflows into supervisory-ready evidence."
         ),
         "slugs": [
+            "2026-10-25-agentic-ai-breaks-the-assumption-behind-every-task-exposure-forecast",
             "2026-10-13-humanoid-functional-robotics-manufacturing-automation",
             "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026",
             "2026-06-03-agentic-ai-index-banks-autonomy-governance-auditability-2026",
@@ -268,6 +272,8 @@ TOPICS: dict[str, dict[str, object]] = {
             "banks can build inside their own data perimeter."
         ),
         "slugs": [
+            "2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude",
+            "2026-10-24-an-ai-s-attack-on-progression-free-sets-a-ledger-of-what-stalled",
             "2026-10-10-what-a-machine-learning-textbook-s-contents-page-says-about-the-field",
             "2026-10-05-internal-openai-model-pins-down-exact-decay-rate-cohn-elkies-sphere-packing",
             "2026-09-30-detector-reads-probabilities-instead-of-verdicts-44-benchmarks",
@@ -304,6 +310,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "AI inside Tier-1 banks."
         ),
         "slugs": [
+            "2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook",
             "2026-10-24-modernisation-never-finishes-exceptions-pile-up",
             "2026-10-13-physical-ai-robotics-workforce-governance-industrial-operations",
             "2026-09-25-when-technology-lands-before-institutions-adapt-mit-ai-committee",

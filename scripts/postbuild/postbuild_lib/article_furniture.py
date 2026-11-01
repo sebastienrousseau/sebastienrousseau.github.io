@@ -26,6 +26,7 @@ constants + author identity constants only.
 
 from __future__ import annotations
 
+import functools
 import re
 import sys
 from html import escape as _esc
@@ -193,15 +194,40 @@ def _tags_prefix(lang: str) -> str:
 
 
 _LANDING_PUBLIC = Path(__file__).resolve().parents[3] / "public"
+_TAXONOMY_PATH = Path(__file__).resolve().parents[3] / "_data" / "taxonomy.yml"
+
+
+@functools.lru_cache(maxsize=1)
+def _load_taxonomy() -> dict[str, dict]:
+    """Load and cache ``_data/taxonomy.yml``."""
+    import yaml
+
+    data = yaml.safe_load(_TAXONOMY_PATH.read_text(encoding="utf-8"))
+    return data if isinstance(data, dict) else {}
+
+
+@functools.lru_cache(maxsize=1)
+def _taxonomy_alias_map() -> dict[str, str]:
+    """Map lowercased canonical slugs, display names, and aliases to canonical tag slugs."""
+    aliases: dict[str, str] = {}
+    for slug, entry in _load_taxonomy().items():
+        aliases[slug.strip().lower()] = slug
+        if isinstance(entry, dict):
+            name = str(entry.get("name", "")).strip().lower()
+            if name:
+                aliases[name] = slug
+            for raw_alias in entry.get("aliases", []) or []:
+                token = str(raw_alias).strip().lower()
+                if token:
+                    aliases[token] = slug
+                    aliases[slugify(token)] = slug
+    return aliases
 
 
 def _has_landing(slug: str, lang: str = "en") -> bool:
     """True iff ``public/<locale-tags-prefix>/<slug>/index.html`` exists
-    on disk. Built by build_tag_landings.py only for canonical tags with
-    at least ``_LANDING_THRESHOLD`` posts (currently 3), so this lets the
-    chip strip skip the link wrapper for sub-threshold tags rather than
-    emitting a /tags/<slug>/ link that would 404 the strict-internal
-    link audit.
+    on disk (or when ``public/`` is not yet materialised in unit tests,
+    iff ``slug`` is a canonical taxonomy tag).
 
     An empty ``slug`` is rejected outright: ``Path(...) / "" / "index.html"``
     collapses the empty segment away and resolves to the *cover* page
@@ -211,7 +237,22 @@ def _has_landing(slug: str, lang: str = "en") -> bool:
     if not slug:
         return False
     prefix = _tags_prefix(lang).lstrip("/")
-    return (_LANDING_PUBLIC / prefix / slug / "index.html").is_file()
+    tags_dir = _LANDING_PUBLIC / prefix
+    if tags_dir.is_dir():
+        return (tags_dir / slug / "index.html").is_file()
+    return slug in _load_taxonomy()
+
+
+def _resolve_tag_slug(keyword: str, explicit_slug: str = "") -> str:
+    """Resolve a display keyword or explicit slug to a canonical tag slug."""
+    if explicit_slug:
+        return explicit_slug.strip().strip("/")
+    aliases = _taxonomy_alias_map()
+    raw_key = keyword.strip().lower()
+    if raw_key in aliases:
+        return aliases[raw_key]
+    slug = slugify(keyword)
+    return aliases.get(slug, slug)
 
 
 def _render_tag_badges(
@@ -220,41 +261,26 @@ def _render_tag_badges(
     lang: str = "en",
     tag_slugs: list[str] | None = None,
 ) -> str:
-    """Render the hero tag-chip strip.
+    """Render the hero tag-chip strip with linked canonical taxonomy tags only.
 
-    ``keywords`` is the visible chip TEXT — localised on non-EN pages
-    (e.g. ``टोकन`` on ``/mr/``). ``tag_slugs`` is an optional parallel
-    list of *canonical EN* slugs: the same slugs build_tag_landings uses
-    for the landing directory names (``tagu/<en-slug>``, ``wusum/<en-slug>``,
-    …). When a canonical slug is supplied for a chip it is used for both
-    the landing-existence check and the href — the display text is never
-    slugified.
-
-    This is what stops non-Latin-script chips (CJK / Cyrillic / Greek /
-    Arabic / Hebrew / Thai / Devanagari) collapsing to an empty ``//``
-    slug: ``slugify("टोकन") == ""``, so with no canonical slug the chip
-    renders as a plain ``<span>`` instead of a broken
-    ``/<loc>/<tags>//`` link. For EN + accented-Latin locales, where the
-    slugified display text already *is* the canonical slug, ``tag_slugs``
-    can be omitted and ``slugify(keyword)`` is used as before.
-
-    Links are only emitted when a per-tag landing actually exists on disk
-    (``_has_landing``); sub-threshold canonicals + non-canonical aliases
-    stay as ``<span>`` so the strict-internal link audit sees no 404."""
+    Resolves each keyword through ``_data/taxonomy.yml`` aliases (or an
+    explicit ``tag_slugs`` entry) and emits an ``<a class="article-tag">``
+    pill only when a per-tag landing page exists (``_has_landing``).
+    Unlinked ``<span>`` pills are never emitted so non-canonical tokens
+    cannot masquerade as interactive tag chips."""
     if not keywords:
         return ""
     prefix = _tags_prefix(lang)
     badges_html: list[str] = []
+    seen: set[str] = set()
     for i, k in enumerate(keywords):
-        slug = ""
-        if tag_slugs and i < len(tag_slugs) and tag_slugs[i]:
-            slug = tag_slugs[i].strip().strip("/")
-        if not slug:
-            slug = slugify(k)
-        if slug and _has_landing(slug, lang):
+        explicit = tag_slugs[i] if (tag_slugs and i < len(tag_slugs) and tag_slugs[i]) else ""
+        slug = _resolve_tag_slug(k, explicit)
+        if slug and slug not in seen and _has_landing(slug, lang):
+            seen.add(slug)
             badges_html.append(f'<a href="{prefix}/{slug}/" class="article-tag" rel="tag">{k}</a>')
-        else:
-            badges_html.append(f'<span class="article-tag">{k}</span>')
+    if not badges_html:
+        return ""
     aria = labels.get("Topics", "Topics")
     return f'<nav class="article-tags" aria-label="{aria}">{"".join(badges_html)}</nav>'
 
@@ -315,18 +341,124 @@ def _render_meta_bar(
 # the author signed.
 
 
+_NOISY_KEYWORD_TOKENS = frozenset(
+    {
+        "ai's",
+        "behind",
+        "existing",
+        "fca's",
+        "half",
+        "it's",
+        "nist's",
+        "textbook's",
+    }
+)
+
+
+_POSTS_DIR = Path(__file__).resolve().parents[3] / "_posts"
+_TAGS_FM_RE = re.compile(r'^tags:\s*"?([^"\n]+)"?\s*$', re.MULTILINE)
+_PERMALINK_FM_RE = re.compile(r'^permalink:\s*"?([^\n"]+)"?\s*$', re.MULTILINE)
+_AUTHOR_CARD_OPEN_RE = re.compile(r'(<aside\s+class="author-card"[^>]*>)', re.IGNORECASE)
+_KW_SPLIT_RE = re.compile(r"[,،、，]+")
+
+_CTA_BY_PILLAR: dict[str, tuple[str, str, str, str, str]] = {
+    "payments": (
+        "Building ISO 20022 or payment resilience pipelines?",
+        "Explore the ISO 20022 MCP Suite",
+        "/iso20022-mcp/",
+        "Advisory & Architecture Review",
+        "/contact/",
+    ),
+    "infra": (
+        "Building ISO 20022 or payment resilience pipelines?",
+        "Explore the ISO 20022 MCP Suite",
+        "/iso20022-mcp/",
+        "Advisory & Architecture Review",
+        "/contact/",
+    ),
+    "policy": (
+        "Preparing for DORA, the EU AI Act, or FCA AI supervision?",
+        "Book an Executive Briefing or Keynote",
+        "/speaking/",
+        "Get in touch",
+        "/contact/",
+    ),
+    "ai": (
+        "Preparing for DORA, the EU AI Act, or FCA AI supervision?",
+        "Book an Executive Briefing or Keynote",
+        "/speaking/",
+        "Get in touch",
+        "/contact/",
+    ),
+}
+_CTA_DEFAULT: tuple[str, str, str, str, str] = (
+    "Want a deeper walkthrough or architecture review?",
+    "Get in touch",
+    "/contact/",
+    "Browse Open-Source Suite",
+    "/projects/",
+)
+
+
+@functools.lru_cache(maxsize=8)
+def _en_post_tag_index(posts_dir: Path) -> dict[str, list[str]]:
+    """Index English ``_posts/*.md`` tags by stem, permalink slug, and date."""
+    index: dict[str, list[str]] = {}
+    for md in sorted(posts_dir.glob("*.md")):
+        txt = md.read_text(encoding="utf-8", errors="ignore")
+        tm = _TAGS_FM_RE.search(txt)
+        tags = [t.strip() for t in tm.group(1).split(",") if t.strip()] if tm else []
+        if tags:
+            index[md.stem] = tags
+            pm = _PERMALINK_FM_RE.search(txt)
+            if pm:
+                index[pm.group(1).strip().rstrip("/").rsplit("/", 1)[-1]] = tags
+            index.setdefault(md.stem[:10], tags)
+    return index
+
+
+def _fallback_post_tags(html: str, lang: str = "en") -> list[str]:
+    """Read ``tags:`` from the matching English ``_posts/<slug>.md``."""
+    cm = CANONICAL_RE.search(html)
+    if not cm:
+        return []
+    slug = cm.group(1).removesuffix("/index.html").rstrip("/").rsplit("/", 1)[-1]
+    en_slug = _slug_maps(lang)["articles_lang_to_en"].get(slug, slug) if lang != "en" else slug
+    index = _en_post_tag_index(_POSTS_DIR)
+    return index.get(en_slug) or index.get(slug) or index.get(slug[:10], [])
+
+
+def _extract_keywords(html: str) -> list[str]:
+    m = _keywords_re.search(html)
+    raw = _KW_SPLIT_RE.split(m.group(1)) if (m and m.group(1)) else []
+    keywords = [
+        k.strip() for k in raw if k.strip() and k.strip().lower() not in _NOISY_KEYWORD_TOKENS
+    ]
+    aliases = _taxonomy_alias_map()
+    if _detect_page_lang(html) == "en" and not any(
+        _resolve_tag_slug(k) in aliases.values() for k in keywords
+    ):
+        keywords = _fallback_post_tags(html) or keywords
+    return keywords
+
+
 def _extract_article_metadata(html: str) -> tuple[list[str], str, str, int | None]:
     """Pull the inputs ``inject_article_furniture`` needs out of the page:
     keyword list, datePublished, dateModified, wordCount."""
-    keywords: list[str] = []
-    m = _keywords_re.search(html)
-    if m and m.group(1):
-        keywords = [k.strip() for k in m.group(1).split(",") if k.strip()]
+    keywords = _extract_keywords(html)
     dm = _BLOGPOSTING_DATES_RE.search(html)
     date_pub, date_mod = (dm.group(1), dm.group(2)) if dm else ("", "")
     wm = _WORDCOUNT_RE.search(html)
     word_count = int(wm.group(1)) if wm else None
     return keywords, date_pub, date_mod, word_count
+
+
+def _fallback_tag_slugs(html: str, keywords: list[str], lang: str) -> list[str] | None:
+    """Resolve canonical EN tag slugs when localized keywords do not land."""
+    if lang == "en" or any(_has_landing(_resolve_tag_slug(k), lang) for k in keywords):
+        return None
+    slugs = [_resolve_tag_slug(t) for t in _fallback_post_tags(html, lang)]
+    return [s for s in slugs if s and _has_landing(s, lang)] or None
 
 
 def inject_article_furniture(html: str) -> str:
@@ -335,20 +467,57 @@ def inject_article_furniture(html: str) -> str:
     Only fires when the page carries a BlogPosting JSON-LD graph — listing /
     static pages are left alone.
     """
-    if '"@type":"BlogPosting"' not in html:
-        return html
-    # Don't double-inject if a previous postbuild run already added them.
-    if 'class="article-tags"' in html:
+    if '"@type":"BlogPosting"' not in html or 'class="article-tags"' in html:
         return html
     keywords, date_pub, date_mod, word_count = _extract_article_metadata(html)
     lang = _detect_page_lang(html)
     labels = _labels_for_lang(lang)
-    fragment = _render_tag_badges(keywords, labels, lang) + _render_meta_bar(
-        date_pub, date_mod, word_count, labels, lang
-    )
+    tag_slugs = _fallback_tag_slugs(html, keywords, lang)
+    badges = _render_tag_badges(keywords, labels, lang, tag_slugs=tag_slugs)
+    if 'class="article-meta"' in html:
+        return (
+            html.replace('<div class="article-meta">', f'{badges}<div class="article-meta">', 1)
+            if badges
+            else html
+        )
+    fragment = badges + _render_meta_bar(date_pub, date_mod, word_count, labels, lang)
     if not fragment:
         return html
     return _HERO_RE.sub(rf"\1{fragment}\2", html, count=1)
+
+
+def _article_pillar(keywords: list[str]) -> str:
+    """Resolve the article's primary taxonomy pillar from its keywords."""
+    tax = _load_taxonomy()
+    for k in keywords:
+        slug = _resolve_tag_slug(k)
+        entry = tax.get(slug)
+        if isinstance(entry, dict) and entry.get("category"):
+            return str(entry["category"]).strip()
+    return ""
+
+
+def inject_article_cta(html: str) -> str:
+    """Inject one contextual end-of-article CTA card mapped to the article's
+    canonical taxonomy pillar. English BlogPosting pages only; idempotent."""
+    if '"@type":"BlogPosting"' not in html or 'class="article-cta"' in html:
+        return html
+    if _detect_page_lang(html) != "en":
+        return html
+    keywords, _pub, _mod, _wc = _extract_article_metadata(html)
+    pillar = _article_pillar(keywords)
+    heading, p_label, p_href, s_label, s_href = _CTA_BY_PILLAR.get(pillar, _CTA_DEFAULT)
+    card = (
+        '<aside class="article-cta" aria-label="Work with Sebastien">'
+        f'<p class="article-cta-title"><strong>{_esc(heading)}</strong></p>'
+        '<div class="article-cta-actions">'
+        f'<a class="btn-primary" href="{p_href}">{_esc(p_label)}</a>'
+        f'<a class="btn-ghost" href="{s_href}">{_esc(s_label)}</a>'
+        "</div></aside>"
+    )
+    if _AUTHOR_CARD_OPEN_RE.search(html):
+        return _AUTHOR_CARD_OPEN_RE.sub(card + r"\1", html, count=1)
+    return WRAP_CLOSE_RE.sub(card + r"\1", html, count=1)
 
 
 LDJSON_BLOCK_RE = re.compile(
