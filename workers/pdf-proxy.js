@@ -97,9 +97,17 @@ export async function tryPDF(request, base = '', originToken = '', timeoutMs = R
   if (!base) {
     return errorResponse(503, 'render-unconfigured', 'no PDF renderer configured');
   }
+  // An explicit, cleared timer rather than AbortSignal.timeout(): that
+  // timer is unref'd, so in Node 22 nothing keeps the event loop alive
+  // while the fetch waits on it, and the pending request is dropped.
+  const controller = new AbortController();
+  const timer = setTimeout(
+    () => controller.abort(new DOMException('renderer timed out', 'TimeoutError')),
+    timeoutMs,
+  );
   const fetchInit = {
     cf: { cacheTtl: 86400, cacheEverything: true },
-    signal: AbortSignal.timeout(timeoutMs),
+    signal: controller.signal,
   };
   if (originToken) {
     fetchInit.headers = { 'X-Origin-Verify': originToken };
@@ -109,6 +117,8 @@ export async function tryPDF(request, base = '', originToken = '', timeoutMs = R
     upstream = await fetch(renderUrl(base, slug, lang), fetchInit);
   } catch (err) {
     return fetchFailure(err);
+  } finally {
+    clearTimeout(timer);
   }
   if (!upstream.ok) return upstreamError(upstream, slug);
   const body = await upstream.arrayBuffer();
