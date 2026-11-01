@@ -179,7 +179,40 @@ def check_external(url: str) -> tuple[str, int | str]:
         ValueError,
         http.client.HTTPException,
     ) as e:
-        return url, f"ERR {type(e).__name__}"
+        return url, _error_label(e)
+
+
+def _error_label(e: BaseException) -> str:
+    """Name the failure, looking through URLError to what caused it.
+
+    urllib wraps both a DNS failure and a connection reset in URLError, and
+    only one of them is link rot, so the reason's type goes in the label.
+    """
+    reason = getattr(e, "reason", None)
+    if isinstance(e, urllib.error.URLError) and isinstance(reason, BaseException):
+        return f"ERR URLError({type(reason).__name__})"
+    return f"ERR {type(e).__name__}"
+
+
+OK, UNVERIFIABLE, BROKEN = "ok", "unverifiable", "broken"
+
+# A target that refuses a datacentre client answers 401/403/429 or drops the
+# connection. That says nothing about whether a reader can follow the link:
+# nine of the ten "broken" links in the 2026-11-01 audit (#510) were this,
+# and pqcc.org, reported as RemoteDisconnected, answered 200 from a laptop.
+# They are reported as unverifiable and do not count toward a tracking issue.
+# 404/410, other 4xx, 5xx, timeouts and DNS failures stay broken.
+BOT_BLOCK_STATUSES = frozenset({401, 403, 429})
+CONNECTION_RESETS = ("RemoteDisconnected", "ConnectionResetError", "ConnectionAbortedError")
+
+
+def classify(code: int | str) -> str:
+    """Sort a check_external result into OK, UNVERIFIABLE or BROKEN."""
+    if isinstance(code, int):
+        if 200 <= code < 400:
+            return OK
+        return UNVERIFIABLE if code in BOT_BLOCK_STATUSES else BROKEN
+    return UNVERIFIABLE if any(name in code for name in CONNECTION_RESETS) else BROKEN
 
 
 # Share and intent endpoints are actions, not citations: they carry the page
@@ -200,6 +233,11 @@ SHARE_ENDPOINTS = (
     "mastodon.social/share",
     "wa.me/?text=",
     "t.me/share/",
+    # "Ask an AI to summarise this page" links: a prompt in the query, and
+    # the endpoint wants a signed-in browser, so it 403s every audit.
+    "chatgpt.com/?q=",
+    "claude.ai/new?q=",
+    "perplexity.ai/search/new?q=",
 )
 
 
@@ -226,21 +264,27 @@ def _audit_external(external: list[str]) -> list[tuple[str, int | str]]:
 
     Hosts in HEAD_BLOCKED refuse HEAD from datacentre IPs, so a failure there
     says nothing about the link; they are skipped and counted separately
-    rather than reported as broken.
+    rather than reported as broken. A bot-block answer from any other host
+    (see classify) is listed as unverifiable, prefixed "  ? [", so the
+    workflow's '^  \\[' count of broken links does not include it.
     """
     checkable = [u for u in external if host(u) not in HEAD_BLOCKED and not is_share_endpoint(u)]
-    broken: list[tuple[str, int | str]] = []
+    found: dict[str, list[tuple[str, int | str]]] = {UNVERIFIABLE: [], BROKEN: []}
     with ThreadPoolExecutor(max_workers=12) as ex:
         for url, code in ex.map(check_external, checkable):
-            if not (isinstance(code, int) and 200 <= code < 400):
-                broken.append((url, code))
+            found.get(classify(code), []).append((url, code))
+    broken, unverifiable = sorted(found[BROKEN], key=str), sorted(found[UNVERIFIABLE], key=str)
     print(
         f"external: {len(checkable):4d} checked "
         f"(skipped {len(external) - len(checkable)} bot-blocked), "
-        f"{len(broken)} broken"
+        f"{len(broken)} broken, {len(unverifiable)} unverifiable (bot-blocked)"
     )
-    for url, code in sorted(broken):
+    for url, code in broken:
         print(f"  [{code}] {url}")
+    if unverifiable:
+        print("unverifiable (401/403/429 or connection reset; check in a browser, not counted):")
+    for url, code in unverifiable:
+        print(f"  ? [{code}] {url}")
     return broken
 
 
