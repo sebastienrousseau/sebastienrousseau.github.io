@@ -210,6 +210,9 @@ mkdir -p public/_csp
 for img in assets/img/logo-*.webp assets/img/hero-portrait-*.webp; do
   [[ -f "${img}" ]] && cp -f "${img}" "public/_csp/$(basename "${img}")"
 done
+if [[ -f assets/img/favicon.ico ]]; then
+  cp -f assets/img/favicon.ico public/favicon.ico
+fi
 
 if [[ -d assets/js/mcp-simulator ]]; then
   mkdir -p public/_csp

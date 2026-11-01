@@ -100,6 +100,20 @@ _NORMALISERS: list[tuple[re.Pattern[bytes], bytes]] = [
     # ever leak into <link>s. Keep this conservative; only strip the
     # common ``?v=YYYYMMDD`` / ``?v=<timestamp>`` cache-busters.
     (re.compile(rb"\?v=[0-9]{8,14}"), b"?v=X"),
+    # Same-origin favicon and CloudCDN CORS mode attributes carry zero
+    # accessibility signal; normalise them so adding CORS to CDN media
+    # does not invalidate cached WCAG2AAA verdicts across the corpus.
+    (
+        re.compile(rb'href="/favicon\.ico"'),
+        b'href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico"',
+    ),
+    (
+        re.compile(
+            rb'(<(?:img|link)\b[^>]*https://cloudcdn\.pro/[^>]*?)\s+crossorigin="anonymous"(\s*/?>)',
+            re.IGNORECASE,
+        ),
+        rb"\1\2",
+    ),
 ]
 
 
