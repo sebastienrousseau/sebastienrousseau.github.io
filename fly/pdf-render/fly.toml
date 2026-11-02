@@ -15,7 +15,7 @@
 # if the carbon budget for each new machine is worth the latency
 # saving — usually it isn't, since the Edge cache dominates.
 
-app = "pdf-render"
+app = "sebastienrousseau-pdf-render"
 primary_region = "lhr"
 
 [build]

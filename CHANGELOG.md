@@ -10,6 +10,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.0.27] - Unreleased
+
+### Fixed
+
+- **External link audit separates bot blocks from link rot (#510)**: `scripts/seo_and_audit/audit_links.py` now classifies each result. A 401, 403 or 429, or a dropped connection (`RemoteDisconnected`, `ConnectionResetError`), is listed as unverifiable under a `  ? [` prefix and no longer counts toward the monthly tracking issue; 404, 410, other 4xx, 5xx, timeouts and DNS failures stay broken. A `URLError` is labelled with its cause (`URLError(gaierror)`) so a DNS failure and a reset can be told apart. The "summarise with AI" prompt links (`chatgpt.com/?q=`, `claude.ai/new?q=`, `perplexity.ai/search/new?q=`) are skipped as share endpoints. Nine of the ten links in #510 were bot blocks; the tenth, the `treasurers.org` 404, was repointed to its Wayback snapshot in 0.0.26.
+- **Fly.io app name**: `fly/pdf-render/fly.toml` names `sebastienrousseau-pdf-render`, the app the deploy handover creates, instead of `pdf-render`, which belongs to another account.
+
 ## [0.0.26] - Unreleased
 
 ### Added

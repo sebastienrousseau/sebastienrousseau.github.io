@@ -2,7 +2,10 @@ name: Monthly external link audit
 
 # Catches link rot. Builds the site, runs the in-repo audit on the fresh
 # `public/` tree, and files a tracking issue if any external links break.
-# The audit script already filters bot-blocked false positives.
+# The audit script already filters bot-blocked false positives: hosts that
+# refuse datacentre clients are skipped, and a 401/403/429 or connection reset
+# from any other host is listed as "unverifiable" under a "  ? [" prefix, which
+# the '^  \[' count below does not match. Only broken links open an issue.
 
 on:
   schedule:
@@ -81,7 +84,7 @@ jobs:
 
           Triage rules:
           - **404 / 526 / `URLError`** — almost always real link rot. Replace with a Wayback wildcard URL, an alternative source, or remove the link.
-          - **403** — bot-block on the target (OpenAI, some news sites). Usually the link is alive to humans. Verify in a real browser before changing.
+          - **Unverifiable (`  ? [403]`, 401, 429, connection reset)**: bot-block on the target. Not counted in the title. Usually alive to humans; verify in a real browser before changing.
           - **bare `https://www.googletagmanager.com`** matches inside CSP directives, never as a clickable link → false positive, ignore.
 
           ---
