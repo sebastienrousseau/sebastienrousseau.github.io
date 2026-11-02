@@ -18,6 +18,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Fixed
 
 - **pa11y merge gate checks every shard**: the "Merge pa11y, Lighthouse, deploy" job downloaded the shard reports with `merge-multiple: true`, and every shard writes `pa11y.shard.json`, so the last download overwrote the rest and the gate checked one random shard. It now downloads one directory per shard, sums every report, and prints per-shard and total URL and error counts.
+- **`/iso20022-mcp/` simulator fallback contrast in dark mode**: once `<iso20022-simulator>` attaches its shadow root it now removes the light-DOM fallback paragraph. With no `<slot>` the paragraph stopped rendering but kept the initial black text, which the dark-mode pa11y sweep measured at 1.07:1 against the 7:1 WCAG2AAA floor. Without JavaScript the paragraph still shows, at 13.3:1 (dark) and 11.4:1 (light).
 
 ## [0.0.27] - Unreleased
 
