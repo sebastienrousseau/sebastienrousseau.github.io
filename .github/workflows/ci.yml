@@ -760,7 +760,10 @@ jobs:
         uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
         with:
           pattern: pa11y-shard-*
-          merge-multiple: true
+          # One directory per shard. Every shard uploads pa11y.shard.json,
+          # so merge-multiple: true let the last download overwrite the
+          # others and the gate checked a single random shard.
+          merge-multiple: false
           path: pa11y-shards/
 
       - name: Merge pa11y shard results
@@ -791,17 +794,19 @@ jobs:
               for k, v in d.get("results", {}).items():
                   merged["results"][k] = v
 
-          for path in sorted(glob.glob("pa11y-shards/pa11y.shard.json")) + \
-                      sorted(glob.glob("pa11y-shards/pa11y.shard.*.json")):
+          # pa11y-shards/pa11y-shard-<n>/pa11y.shard.json, one per shard.
+          paths = sorted(glob.glob("pa11y-shards/*/pa11y.shard.json"))
+          if not paths:
+              raise SystemExit("no pa11y shard reports downloaded")
+          for path in paths:
+              before = (merged["total"], merged["errors"])
               absorb(path)
-          # download-artifact with merge-multiple may consolidate into one
-          # file per shard at the same name — handle both layouts.
-          if not merged["total"]:
-              for path in sorted(glob.glob("pa11y-shards/**/pa11y.shard.json", recursive=True)):
-                  absorb(path)
+              print(f"{path}: {merged['total'] - before[0]} URLs, "
+                    f"{merged['errors'] - before[1]} errors")
           with open("pa11y.json", "w") as f:
               json.dump(merged, f)
-          print(f"merged: {merged['total']} URLs, {merged['errors']} errors")
+          print(f"merged: {len(paths)} shards, {merged['total']} URLs, "
+                f"{merged['errors']} errors")
           if merged["errors"] > 0:
               raise SystemExit("pa11y errors remain after merge")
           PY

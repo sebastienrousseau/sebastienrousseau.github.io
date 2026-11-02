@@ -15,6 +15,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Security
 
 - **pdf-render outbound URL guard (CodeQL #87, py/partial-ssrf)**: `fly/pdf-render/app.py` builds the article path in a new `_article_path` helper that checks `slug` and `lang` with separate `fullmatch` guards, each dominating every use of its value. The previous combined `or` guard let `lang` reach the URL unchecked on its falsy branch, which CodeQL reported. Valid and invalid inputs give the same URLs and the same 400s as before.
+### Fixed
+
+- **pa11y merge gate checks every shard**: the "Merge pa11y, Lighthouse, deploy" job downloaded the shard reports with `merge-multiple: true`, and every shard writes `pa11y.shard.json`, so the last download overwrote the rest and the gate checked one random shard. It now downloads one directory per shard, sums every report, and prints per-shard and total URL and error counts.
 
 ## [0.0.27] - Unreleased
 
