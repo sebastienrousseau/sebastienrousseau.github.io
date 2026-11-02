@@ -6,7 +6,7 @@
 //
 //   - Progressive enhancement: the element arrives inert carrying a light-DOM
 //     fallback paragraph. With JS off, the paragraph shows. When JS runs we
-//     attach a Shadow DOM (hiding the fallback) and build the UI there.
+//     attach a Shadow DOM, remove the fallback, and build the UI there.
 //   - CSP-safe by construction: styling is a constructable stylesheet (no
 //     inline <style>, no style=""), every listener is addEventListener, and
 //     the module is same-origin under script-src 'self' with SRI stamped by
@@ -226,6 +226,11 @@ class Iso20022Simulator extends HTMLElement {
   _build() {
     const root = this.attachShadow({ mode: "open" });
     root.adoptedStyleSheets = [styleSheet()];
+    // The shadow root has no <slot>, so the light-DOM fallback paragraph
+    // stops rendering but stays in the document with the initial (black)
+    // text colour. Accessibility checkers still measure it (1.07:1 on the
+    // dark page), so remove it once the UI takes over. No-JS readers keep it.
+    this.replaceChildren();
 
     this._syncTheme();
     this._themeMo = new MutationObserver(() => this._syncTheme());

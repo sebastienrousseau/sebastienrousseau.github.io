@@ -139,21 +139,33 @@ def _verify_origin_token() -> None:
         raise Forbidden("invalid origin token")
 
 
+def _article_path(slug: str, lang: str = "") -> str:
+    """Build the site path ``/<slug>/`` (EN) or ``/<lang>/<slug>/``.
+
+    Each request value is checked by its own ``fullmatch`` guard that
+    dominates every use of it, so static analysis sees the slug and the
+    locale sanitised separately (SSRF and log-injection barrier). A combined
+    ``or`` guard left ``lang`` reaching the URL on its falsy branch, which
+    CodeQL reported as py/partial-ssrf. ``raise`` (not a bare ``abort``)
+    keeps each guard unambiguously terminating.
+    """
+    if not SLUG_RE.fullmatch(slug):
+        raise BadRequest("invalid slug")
+    if not lang:
+        return f"/{slug}/"
+    if not LANG_RE.fullmatch(lang):
+        raise BadRequest("invalid slug")
+    return f"/{lang}/{slug}/"
+
+
 def _fetch_article_html(slug: str, lang: str = "") -> str:
     """Fetch the article HTML from the public site: ``/<slug>/`` for EN,
     ``/<lang>/<slug>/`` for a translation (a locale slug only exists under
     its locale prefix, so without ``lang`` every translated article 404s).
     Errors bubble up as 502 to the Worker so the cache-bust isn't promoted."""
-    # Defense-in-depth: re-validate the slug at the network sink. The slug is
-    # the only user-controlled input that flows into the outbound URL, so an
-    # explicit charset guard here means the request host can never be
-    # attacker-influenced (SSRF barrier) and the logged URL is provably free
-    # of control characters (log-injection barrier). `raise` (not a bare
-    # `abort`) makes the guard unambiguously terminating to static analysis.
-    if not SLUG_RE.fullmatch(slug) or (lang and not LANG_RE.fullmatch(lang)):
-        raise BadRequest("invalid slug")
-    prefix = f"/{lang}" if lang else ""
-    url = f"{ORIGIN}{prefix}/{slug}/"
+    # Defense-in-depth: re-validate at the network sink, so the request host
+    # can never be attacker-influenced whatever the caller checked.
+    url = f"{ORIGIN}{_article_path(slug, lang)}"
     LOG.info("fetch %s", url)
     try:
         res = requests.get(
