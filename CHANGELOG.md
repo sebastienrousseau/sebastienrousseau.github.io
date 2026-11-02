@@ -10,6 +10,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.0.28] - Unreleased
+
+### Security
+
+- **pdf-render outbound URL guard (CodeQL #87, py/partial-ssrf)**: `fly/pdf-render/app.py` builds the article path in a new `_article_path` helper that checks `slug` and `lang` with separate `fullmatch` guards, each dominating every use of its value. The previous combined `or` guard let `lang` reach the URL unchecked on its falsy branch, which CodeQL reported. Valid and invalid inputs give the same URLs and the same 400s as before.
+
 ## [0.0.27] - Unreleased
 
 ### Fixed
