@@ -18,6 +18,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- **pa11y retries a page-load timeout once before failing**: `scripts/seo_and_audit/pa11y_run_shard.py` exited 0 when pages had issues and failed only on a wedged or crashed browser, so the shard step never ran `pa11y_retry_flakes.py` and a single "Navigation timeout" went straight to the merge gate. That is how the post-merge run of #515 on main failed on one Polish article that loads in 0.7 s live. The runner now exits 1 when any page has issues, as `pa11y-ci` does: a timeout is re-audited once and cleared from the shard report if it passes, and a real violation, or a second timeout, still fails the shard.
 - **pa11y merge gate checks every shard**: the "Merge pa11y, Lighthouse, deploy" job downloaded the shard reports with `merge-multiple: true`, and every shard writes `pa11y.shard.json`, so the last download overwrote the rest and the gate checked one random shard. It now downloads one directory per shard, sums every report, and prints per-shard and total URL and error counts.
 - **`/iso20022-mcp/` simulator fallback contrast in dark mode**: once `<iso20022-simulator>` attaches its shadow root it now removes the light-DOM fallback paragraph. With no `<slot>` the paragraph stopped rendering but kept the initial black text, which the dark-mode pa11y sweep measured at 1.07:1 against the 7:1 WCAG2AAA floor. Without JavaScript the paragraph still shows, at 13.3:1 (dark) and 11.4:1 (light).
 

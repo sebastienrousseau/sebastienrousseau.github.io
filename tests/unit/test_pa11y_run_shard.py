@@ -58,7 +58,10 @@ def test_errors_are_counted_not_swallowed(tmp_path, monkeypatch):
 
     monkeypatch.setattr(runner, "_run_chunk", fake)
     out = tmp_path / "out.json"
-    runner.run(_config(tmp_path, 4), out, chunk_size=4, timeout_s=1)
+    # Exit 1 like pa11y-ci does, so the CI step hands the report to
+    # pa11y_retry_flakes.py. Exiting 0 here skipped the retry, and one
+    # navigation timeout on main (run 41597182114) reached the merge gate.
+    assert runner.run(_config(tmp_path, 4), out, chunk_size=4, timeout_s=1) == 1
     report = json.loads(out.read_text())
     assert report["errors"] == 1
     assert report["passes"] == 3
