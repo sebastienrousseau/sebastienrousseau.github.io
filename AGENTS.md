@@ -14,7 +14,6 @@ The architecture comprises:
 1. **Static Site Core**: Rust `ssg` compiler executing over Markdown articles and layouts.
 2. **Generators & Postbuild**: Python pipelines in `scripts/` handling taxonomy, schema generation, SEO metadata, and HTML post-processing.
 3. **Edge Layer**: Cloudflare Workers in `workers/` executing language routing, security headers, and edge caching.
-4. **Microservices**: Containerized WeasyPrint PDF render service on Fly.io in `fly/pdf-render/`.
 
 ---
 
@@ -29,7 +28,7 @@ An agent MUST NOT start new feature, content, or enhancement work on a repositor
 2. **CI Health**:
    - The default branch (`main`) must be green.
 3. **Linters & Formatters**:
-   - Linters pass with zero new warnings or suppressions: `python3 -m ruff check scripts/ tests/ fly/` and `python3 -m ruff format --check scripts/ tests/ fly/`.
+   - Linters pass with zero new warnings or suppressions: `python3 -m ruff check scripts/ tests/` and `python3 -m ruff format --check scripts/ tests/`.
 4. **Complexity Ceilings**:
    - Cyclomatic complexity (McCabe): maximum 10 per function (ratcheted via Radon in CI).
    - Lines of code: maximum 60 per function, 500 per file.
@@ -95,8 +94,8 @@ Before pushing any commit, run the local verification suite:
 python3 -m pytest tests/unit/test_requirements_locks_agree.py
 
 # 2. Lint and formatting
-python3 -m ruff check scripts/ tests/ fly/
-python3 -m ruff format --check scripts/ tests/ fly/
+python3 -m ruff check scripts/ tests/
+python3 -m ruff format --check scripts/ tests/
 
 # 3. Type checking
 ./scripts/typecheck.sh

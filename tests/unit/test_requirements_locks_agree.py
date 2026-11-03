@@ -39,7 +39,6 @@ _ANY_REQ = re.compile(r"^([A-Za-z0-9_.\-]+)\s*(?:[=<>!~]|$)", re.MULTILINE)
 PAIRS = [
     ("requirements.txt", "requirements.lock"),
     ("requirements-dev.txt", "requirements-dev.lock"),
-    ("fly/pdf-render/requirements.txt", "fly/pdf-render/requirements.lock"),
 ]
 
 

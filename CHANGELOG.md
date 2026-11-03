@@ -15,10 +15,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Security
 
 - **pdf-render outbound URL guard (CodeQL #87, py/partial-ssrf)**: `fly/pdf-render/app.py` builds the article path in a new `_article_path` helper that checks `slug` and `lang` with separate `fullmatch` guards, each dominating every use of its value. The previous combined `or` guard let `lang` reach the URL unchecked on its falsy branch, which CodeQL reported. Valid and invalid inputs give the same URLs and the same 400s as before.
+
 ### Fixed
 
 - **pa11y merge gate checks every shard**: the "Merge pa11y, Lighthouse, deploy" job downloaded the shard reports with `merge-multiple: true`, and every shard writes `pa11y.shard.json`, so the last download overwrote the rest and the gate checked one random shard. It now downloads one directory per shard, sums every report, and prints per-shard and total URL and error counts.
 - **`/iso20022-mcp/` simulator fallback contrast in dark mode**: once `<iso20022-simulator>` attaches its shadow root it now removes the light-DOM fallback paragraph. With no `<slot>` the paragraph stopped rendering but kept the initial black text, which the dark-mode pa11y sweep measured at 1.07:1 against the 7:1 WCAG2AAA floor. Without JavaScript the paragraph still shows, at 13.3:1 (dark) and 11.4:1 (light).
+
+### Removed
+
+- **Server-side PDF rendering**: the article "Save PDF" control is now a `data-print` button that opens the browser print dialog, and the `@media print` stylesheet lays the article out for "Save as PDF". It was a link to `/api/pdf/<slug>.pdf`, proxied by `workers/pdf-proxy.js` to a WeasyPrint service on Fly.io that was never deployed under an app this site owns: the live route hung for over 20 s before `main.js` fell back to the same print dialog. Removed `fly/pdf-render/`, `workers/pdf-proxy.js` and their tests, the `/api/pdf/` Worker route and its link-audit exemptions, and the `PDF_RENDER_BASE` and `PDF_ORIGIN_TOKEN` Worker settings. The action rail no longer needs a canonical URL, which it only read to build the PDF link. Old `/api/pdf/` URLs answer 404 once the Worker is redeployed.
+
+### Changed
+
+- **Dependencies (#514)**: `ruff` 0.17.3, `mypy` 2.4.1, `types-PyYAML` 6.0.12.20261030, `cyclonedx-bom` 7.6.0 and `pytest` >=9.2.0 in `requirements-dev.txt`, with `requirements-dev.lock` regenerated so the lock-agreement gate passes.
 
 ## [0.0.27] - Unreleased
 

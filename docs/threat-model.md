@@ -20,7 +20,6 @@ artifact** and **the supply chain that produces it**.
 | Source + build pipeline | Compromise here forges signed, trusted output at scale. |
 | Signing keys / OIDC identity (sigstore) | Provenance of every article and build. |
 | Cloudflare KV (search/routing state) | Availability + free-tier budget ([`adr/0001-kv-free-tier-policy.md`](adr/0001-kv-free-tier-policy.md)). |
-| `fly/pdf-render` service | Renders first-party HTML to PDF; a lateral surface. |
 
 ## Trust boundaries
 

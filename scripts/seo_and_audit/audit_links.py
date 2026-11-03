@@ -101,7 +101,6 @@ HEAD_BLOCKED = {
 # the Edge Worker; the WS5 PR adds the route handlers + a smoke test for
 # each. See ~/Drop/editorial-overhaul-plan.md §4 WS5/WS6.
 WORKER_ROUTES: tuple[str, ...] = (
-    "/api/pdf/",
     "/api/webmention",
     "/mcp/v1/",
 )

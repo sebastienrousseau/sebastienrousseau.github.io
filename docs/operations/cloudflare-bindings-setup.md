@@ -142,7 +142,7 @@ If you want `ASSETS` without committing to `wrangler deploy`:
 
 1. Locally: `python3 scripts/build_worker_assets.py` then
    `zip -r lang-router.zip workers/lang-router.js workers/activitypub.js
-   workers/mcp.js workers/pdf-proxy.js workers/security.js
+   workers/mcp.js workers/security.js
    workers/write-coalescer.js worker-assets/`
 2. Dashboard → **Workers & Pages** → **lang-router** → **Settings**
    → **Triggers** → there isn't a zip-upload flow for an existing

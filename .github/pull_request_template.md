@@ -28,8 +28,8 @@ This PR {{announces what it does, in one plain line}}.
 ## Validation
 
 * `python3 -m pytest tests/unit/test_requirements_locks_agree.py`: 9 passed.
-* `python3 -m ruff check scripts/ tests/ fly/`: clean (zero warnings).
-* `python3 -m ruff format --check scripts/ tests/ fly/`: clean.
+* `python3 -m ruff check scripts/ tests/`: clean (zero warnings).
+* `python3 -m ruff format --check scripts/ tests/`: clean.
 * `./scripts/typecheck.sh`: mypy strict tier clean.
 
 ## Checksums

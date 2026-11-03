@@ -319,11 +319,10 @@ reproducible (`grep -rwn <name> scripts/ tests/`).
 | `py/log-injection` (medium ×2) | `fly/pdf-render/app.py` | **Dismissed (false positive):** the only logged user value is `slug`, validated against `^[a-z0-9][a-z0-9-]{0,127}$` at every entry sink (`render()` line 115, `_fetch_article_html` line 69) before reaching the `LOG.info` calls, so it provably contains no CR/LF/control characters. CodeQL's taint tracker does not model the regex `fullmatch` as a log-injection sanitizer. |
 
 **Batch 7 — Scorecard Pinned-Dependencies, Python (done):** every CI `pip
-install` is now hash-pinned. Three committed, uv-generated lock files carry a
+install` is now hash-pinned. Committed, uv-generated lock files carry a
 `--hash` for every distribution of every (transitive) dependency:
-`requirements.lock` (runtime, py3.12), `requirements-dev.lock` (runtime + CI
-toolchain, py3.12), and `fly/pdf-render/requirements.lock` (PDF service,
-py3.13). Workflows install with `pip install --require-hashes -r <lock>`, so a
+`requirements.lock` (runtime, py3.12) and `requirements-dev.lock` (runtime + CI
+toolchain, py3.12). The PDF service lock went with the service in v0.0.28. Workflows install with `pip install --require-hashes -r <lock>`, so a
 tampered or substituted wheel fails the build. Locks are *universal* (every
 platform's wheel hash) so the same file verifies on Linux CI and local macOS.
 Regenerate after editing any `requirements*.txt` with
