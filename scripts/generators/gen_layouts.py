@@ -74,7 +74,7 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
          7.66:1 on --card; the light pair (7.68:1 on the band) is untouched. */
       [data-theme="dark"] .speaking-page .spk-band{--ink-faint:#a8a8b0}
       @media (prefers-color-scheme: dark){html:not([data-theme="light"]) .speaking-page .spk-band{--ink-faint:#a8a8b0}}
-      .speaking-page .spk-wrap{max-width:1120px;margin-inline:auto;padding-inline:clamp(20px,5vw,64px)}
+      .speaking-page .spk-wrap{max-width:var(--frame-wide);margin-inline:auto;padding-inline:var(--gutter)}
       .speaking-page section{padding-block:clamp(44px,6vw,82px)}
       .speaking-page .spk-band{background:var(--spk-band);border-block:1px solid var(--spk-line)}
       .speaking-page h1,.speaking-page h2,.speaking-page h3{font-family:var(--spk-serif);font-weight:500;line-height:1.07;letter-spacing:-.01em;color:var(--ink)}
@@ -101,7 +101,7 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       .speaking-page .spk-textlink:hover{border-block-end-color:var(--spk-blue)}
       /* hero */
       .speaking-page .spk-hero{padding-block:clamp(32px,5vw,64px) clamp(40px,6vw,80px)}
-      .speaking-page .spk-hero-grid{max-width:1120px;margin-inline:auto;padding-inline:clamp(20px,5vw,64px);display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,5vw,64px);align-items:center}
+      .speaking-page .spk-hero-grid{max-width:var(--frame-wide);margin-inline:auto;padding-inline:var(--gutter);display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,5vw,64px);align-items:center}
       .speaking-page .spk-hero .spk-lede{margin-block:0 1.7rem}
       .speaking-page .spk-cta-row{display:flex;flex-wrap:wrap;gap:.8rem;margin-block-end:1.1rem}
       .speaking-page .spk-press-nudge{font-size:.9rem;color:var(--ink-faint)}
@@ -241,7 +241,7 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
          widens to 1400px so the 83ch ask line fits the terminal column at
          the 12px code-font floor (column ~668px vs 83ch ~598px + padding);
          the microproof wrap widens with it so the left edges stay flush. */
-      @media (min-width:1100px){.iso20022-mcp-page .spk-hero-grid{max-width:1400px;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,4vw,56px)}.iso20022-mcp-page .spk-hero>.spk-wrap{max-width:1400px}}
+      @media (min-width:1100px){.iso20022-mcp-page .spk-hero-grid{max-width:var(--frame-wide);grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,4vw,56px)}.iso20022-mcp-page .spk-hero>.spk-wrap{max-width:var(--frame-wide)}}
       .iso20022-mcp-page .mcp-hero-img{width:100%;border-radius:22px;aspect-ratio:16/8;object-fit:cover;display:block;background:var(--bg-alt)}
       .iso20022-mcp-page .mcp-band-img{width:100%;border-radius:18px;aspect-ratio:16/6;object-fit:cover;display:block;background:var(--bg-alt)}
       .iso20022-mcp-page .mcp-band-img-tall{width:100%;border-radius:18px;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--bg-alt)}
@@ -401,7 +401,7 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
          --ink-faint. The .read-as control is the homepage component
          (its own tokens, validated there); the hub only re-aligns its
          wrap to the spk grid. */
-      .iso20022-mcp-page .read-as{max-width:1120px;margin-inline:auto;padding:28px clamp(20px,5vw,64px) 0}
+      .iso20022-mcp-page .read-as{max-width:var(--frame-wide);margin-inline:auto;padding:28px var(--gutter) 0}
       .iso20022-mcp-page .mcp-sec.mcp-3col{grid-template-columns:repeat(3,1fr)}
       @media (max-width:860px){.iso20022-mcp-page .mcp-sec.mcp-3col{grid-template-columns:1fr 1fr}}
       @media (max-width:520px){.iso20022-mcp-page .mcp-sec.mcp-3col{grid-template-columns:1fr}}
@@ -446,8 +446,11 @@ TRUST_CSS = r"""      /* =======================================================
          (tinted hero, white, tinted, ...), left-aligned, one measure.
          ============================================================ */
       main.content:has(.trust-page){padding:0}
+      /* Speaking and the MCP hub pad their own sections (.spk-wrap), so
+         main drops its gutter and the bands run full width. */
+      main.content:has(.speaking-page){padding-inline:0}
       .trust-page{font-family:var(--type-body);color:var(--ink);line-height:1.6}
-      .trust-page .tr-wrap{max-width:1200px;margin-inline:auto;padding-inline:clamp(22px,5vw,64px)}
+      .trust-page .tr-wrap{max-width:var(--frame-wide);margin-inline:auto;padding-inline:var(--gutter)}
       .trust-page section{padding-block:clamp(72px,9vw,112px)}
       .trust-page .tr-tint{background:var(--bg-alt)}
       .trust-page .tr-kicker{display:block;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 16px;max-width:none}
@@ -948,7 +951,7 @@ def contact_layout() -> str:
 """
     contact_css = """      .contact-wrap{max-width:var(--max-wide)}
       .contact-wrap .lede{font-size:clamp(17px,1.6vw,19px);color:var(--ink-mute);margin:0 0 36px;line-height:1.5}
-      .contact-promise{max-width:var(--max-wide);margin-block:0}
+      .contact-promise{max-width:var(--frame-wide);margin-block:0}
       /* Contact rhythm (audit P1). The generic hero, the promise rail and
          main.ap-section each carry their own block padding, which stacked
          to ~200px of dead space above the form. Scoped to this layout:
@@ -1154,7 +1157,7 @@ def playlist_layout() -> str:
       </main>
 
 """
-    playlist_css = """      .playlist-intro{max-width:680px;margin:0 auto 32px;text-align:center;font-size:clamp(17px,1.6vw,20px);line-height:1.5;color:var(--ink-mute)}
+    playlist_css = """      .playlist-intro{max-width:var(--col-read);margin:0 auto 32px;text-align:center;font-size:clamp(17px,1.6vw,20px);line-height:1.5;color:var(--ink-mute)}
       .playlist-intro p{margin:0}
       .spotify-frame{border-radius:12px;border:0;display:block;width:100%}
       /* Playlist board: full-bleed genre bands, cover-led cards and a
@@ -1171,7 +1174,7 @@ def playlist_layout() -> str:
         font-family:var(--type-body);margin:0 0 clamp(48px,7vw,96px)}
 
       .pl-hero{position:relative;margin-inline:calc(50% - 50vw);width:100vw;
-        padding:clamp(56px,8vw,116px) clamp(20px,5vw,64px);
+        padding:clamp(56px,8vw,116px) var(--gutter);
         background:
           radial-gradient(58% 82% at 12% 6%, rgba(255,45,85,.55), transparent 64%),
           radial-gradient(52% 74% at 74% 4%, rgba(255,132,45,.42), transparent 66%),
@@ -1183,7 +1186,7 @@ def playlist_layout() -> str:
       .pl-hero .pl-hero-desc{color:rgba(255,255,255,.86)}
       .pl-hero .pl-hero-meta{color:rgba(255,255,255,.66)}
       .pl-hero .pl-hero-kicker{color:var(--pl-rose)}
-      .pl-hero-inner{max-width:1120px;margin-inline:auto;display:grid;
+      .pl-hero-inner{max-width:var(--max-wide);margin-inline:auto;display:grid;
         grid-template-columns:1fr 1fr;gap:clamp(28px,4.5vw,72px);align-items:center}
       @media (max-width:940px){.pl-hero-inner{grid-template-columns:1fr}}
       .pl-hero-kicker{margin:0 0 12px;font-size:12px;letter-spacing:.14em;
@@ -1199,7 +1202,7 @@ def playlist_layout() -> str:
         box-shadow:0 30px 70px -26px rgba(0,0,0,.5)}
 
       .pl-nav{display:flex;flex-wrap:wrap;gap:10px;
-        margin:clamp(30px,4vw,48px) auto 0;max-width:1120px}
+        margin:clamp(30px,4vw,48px) auto 0;max-width:var(--max-wide)}
       .pl-chip{display:inline-flex;align-items:center;padding:9px 18px;border-radius:999px;
         border:1px solid var(--border);color:var(--ink-soft);text-decoration:none;
         font-size:14px;font-weight:600;transition:color .18s ease,border-color .18s ease}
@@ -1208,7 +1211,7 @@ def playlist_layout() -> str:
         section.pl-topper{position:relative;margin-inline:calc(50% - 50vw)!important;width:100vw;
         min-block-size:100svh;display:flex;flex-direction:column;
         align-items:center;justify-content:center;
-        padding:clamp(88px,11vw,160px) clamp(20px,5vw,64px) clamp(72px,9vw,120px)!important;
+        padding:clamp(88px,11vw,160px) var(--gutter) clamp(72px,9vw,120px)!important;
         text-align:center;color:var(--pl-white)!important;
         overflow:hidden;isolation:isolate;
         background:linear-gradient(150deg,var(--pl-dusk-1) 0%,var(--pl-dusk-2) 48%,var(--pl-au-bg) 100%)!important}
@@ -1296,8 +1299,8 @@ def playlist_layout() -> str:
       .pl-topper .sub{color:rgba(255,255,255,.84)!important;max-width:56ch;
         margin-inline:auto;font-size:clamp(17px,1.7vw,22px);line-height:1.5}
       .pl-faq{margin-inline:calc(50% - 50vw);width:100vw;
-        padding:clamp(56px,8vw,116px) clamp(20px,5vw,64px);background:var(--bg)}
-      .pl-faq-inner{max-width:820px;margin-inline:auto}
+        padding:clamp(56px,8vw,116px) var(--gutter);background:var(--bg)}
+      .pl-faq-inner{max-width:var(--col-read);margin-inline:auto}
       .pl-faq h2{font-family:var(--type-body);margin:0 0 8px;
         font-size:clamp(30px,4.6vw,56px);line-height:1.04;letter-spacing:-.03em;
         font-weight:700;color:var(--ink);text-align:center}
@@ -1307,10 +1310,10 @@ def playlist_layout() -> str:
         font-size:16px;line-height:1.65}
       .pl-band{--pl-hue:var(--pl-red);--pl-hue2:var(--pl-hue);
         margin-inline:calc(50% - 50vw);width:100vw;
-        padding:clamp(48px,7vw,104px) clamp(20px,5vw,64px);
+        padding:clamp(48px,7vw,104px) var(--gutter);
         background:var(--bg)}
       .pl-band:nth-of-type(even){background:var(--bg-alt,var(--card))}
-      .pl-band-inner{max-width:1120px;margin-inline:auto}
+      .pl-band-inner{max-width:var(--max-wide);margin-inline:auto}
       .pl-band-electronic{--pl-hue:#7c5cff;--pl-hue2:#2f7cff}
       .pl-band-soul-jazz{--pl-hue:#ff9f0a;--pl-hue2:#ff5e3a}
       .pl-band-hip-hop{--pl-hue:#fa243c;--pl-hue2:#b14cff}
@@ -1363,9 +1366,9 @@ def playlist_layout() -> str:
       .content a.pl-cover{color:inherit}
 
       .pl-everywhere{margin-inline:calc(50% - 50vw);width:100vw;
-        padding:clamp(56px,8vw,116px) clamp(20px,5vw,64px);text-align:center;
+        padding:clamp(56px,8vw,116px) var(--gutter);text-align:center;
         background:var(--bg-alt,var(--card))}
-      .pl-everywhere-inner{max-width:780px;margin-inline:auto}
+      .pl-everywhere-inner{max-width:var(--col-read);margin-inline:auto}
       .pl-everywhere h2{font-family:var(--type-body);margin:0 0 16px;
         font-size:clamp(30px,4.6vw,56px);line-height:1.04;letter-spacing:-.03em;
         font-weight:700;color:var(--ink)}

@@ -10,6 +10,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.0.29] - Unreleased
+
+### Changed
+
+- **One column system across every template**: the shared stylesheet in all 12 `_layouts/*.html` now defines three column widths and one fluid gutter: `--col-wide` (75rem, 1200px), `--col-read` (43.25rem, 692px) for long-form text, and `--col-mid` (60rem, 960px) as the single intermediate width, used only for centred display headings and centred hero copy that need more than the reading measure. `--gutter` runs from 20px at a 390px viewport to 60px at 1440px and is 80px from 1920px; `--frame-wide` is the wide column plus both gutters, for containers that pad themselves. `--pad-x`, `--max` and `--max-wide` stay as aliases. Ad-hoc container widths (760px, 1100px, 1120px, 1180px, 1200px, 1400px, 1440px, 640 to 1080px) now resolve to these tokens; component widths (forms, the hero clock stage, `ch` text measures) are unchanged. The nav, the H1 and the main column of every left-aligned template (home, `/iso20022-mcp/`, `/speaking/`, `/trust/`, `/case-studies/`, `/topics/`, `/articles/`, tag landings) now share one content edge: 20px at 390px, 54px at 1280px, 120px at 1440px and 928px at 3056px, where the edges were 22px to 340px apart before. Centred heroes (articles, `/about/`, `/research/`, `/library/`, `/suite/`, `/projects/`, `/contact/`, `/privacy/`, `/playlists/`) stay centred on the same axis. `/about/`, `/contact/`, `/playlists/`, `/articles/` and tag landings move from the 760px column to the wide column; articles and `/privacy/` use the 692px reading column. `/speaking/` and `/iso20022-mcp/` bands now run full width. The page CSS for `/speaking/`, `/iso20022-mcp/`, `/trust/`, `/contact/` and `/playlists/` changed at its source in `scripts/generators/gen_layouts.py`, and the other 11 layouts were regenerated from `_layouts/index.html`, so all 12 carry a byte-identical shared block. No `!important` was added and no colour changed. The visual-regression baselines in `.github/ci-tools/visual/baseline/` were refreshed on purpose.
+
 ## [0.0.28] - Unreleased
 
 ### Security
