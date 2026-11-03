@@ -6,12 +6,11 @@ This document specifies the packaging architecture, artifact formats, and supply
 
 ## Architecture overview
 
-The repository produces four distinct deployable and publishable units:
+The repository produces three distinct deployable and publishable units:
 
 1. **Static Publication (`public/`)**: Pre-rendered static assets and HTML pages across 28+ languages, deployed to GitHub Pages and cached globally by Cloudflare.
 2. **Edge Router Worker (`workers/`)**: Cloudflare Worker (`lang-router.js` and `clock.js`) providing language negotiation, dynamic SVG generation, and edge security headers.
-3. **PDF Rendering Service (`fly/pdf-render/`)**: Hardened Python container running Chromium and WeasyPrint on Fly.io for generating print-ready research briefs and checklists.
-4. **Interactive WASM Labs (`labs/`)**: Rust crates compiled to WebAssembly targets with CSP hashes embedded into layouts.
+3. **Interactive WASM Labs (`labs/`)**: Rust crates compiled to WebAssembly targets with CSP hashes embedded into layouts.
 
 ## Static site packaging
 
@@ -40,17 +39,6 @@ Local validation runs under Node.js:
 ```bash
 node --test workers/test_*.mjs
 ```
-
-## Fly.io container packaging
-
-The PDF rendering service is containerized for Fly.io:
-
-- Dockerfile: `fly/pdf-render/Dockerfile`
-- Configuration: `fly/pdf-render/fly.toml`
-- Application: `fly/pdf-render/app.py`
-- Pinned locks: `fly/pdf-render/requirements.lock`
-
-The container runs as an unprivileged user with read-only root filesystems and loopback HTTP bindings (`127.0.0.1:8080`) behind Fly.io's TLS proxy.
 
 ## Software Bill of Materials (SBOM)
 

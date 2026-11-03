@@ -91,13 +91,13 @@ Check Python code quality across scripts, tests, and microservices:
 
 ```bash
 # Lint checks
-python3 -m ruff check scripts/ tests/ fly/
+python3 -m ruff check scripts/ tests/
 
 # Formatting checks
-python3 -m ruff format --check scripts/ tests/ fly/
+python3 -m ruff format --check scripts/ tests/
 
 # Auto-format
-python3 -m ruff format scripts/ tests/ fly/
+python3 -m ruff format scripts/ tests/
 ```
 
 ### 3. Type Checking (Mypy Strict Tier)

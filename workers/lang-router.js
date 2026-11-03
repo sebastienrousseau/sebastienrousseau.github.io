@@ -162,7 +162,7 @@ export const SECURITY_HEADERS = {
 };
 
 // Strict security header set for non-HTML Worker API routes (/mcp/v1/*,
-// /api/pdf/*, /api/clock/*, and ActivityPub endpoints). Applies a locked-down
+// /api/clock/*, and ActivityPub endpoints). Applies a locked-down
 // default-src 'none' CSP while preserving each route's own Cache-Control,
 // CORS, and Content-Disposition headers.
 export const API_SECURITY_HEADERS = {
@@ -301,10 +301,6 @@ import { tryActivityPub } from './activitypub.js';
 // editorial corpus to AI clients. Static manifest + JSONL feeds drive
 // every response; no KV, no D1, Edge-cache immutable.
 import { tryMCP } from './mcp.js';
-// PDF proxy: /api/pdf/[<lang>/]<slug>.pdf forwards to the WeasyPrint
-// service at env.PDF_RENDER_BASE. Edge-cache immutable for 24h so repeat
-// reads never touch Fly. Falls back to client-side window.print() on error.
-import { tryPDF } from './pdf-proxy.js';
 // Live wall clock for the GitHub profile README: /api/clock/hero-<theme>.svg
 // returns the profile's hero SVG with its hands set to London time.
 import { tryClock } from './clock.js';
@@ -402,16 +398,6 @@ export default {
     // search. Locale routing doesn't apply (these are API endpoints).
     const mcpResponse = await tryMCP(request);
     if (mcpResponse) return withApiSecurityHeaders(mcpResponse);
-    // PDF proxy — /api/pdf/<slug>.pdf. Validated + forwarded to Fly,
-    // Edge cached immutable for 24h.
-    // The renderer origin and its shared token come from Worker
-    // variables; with no PDF_RENDER_BASE the route answers 503 at once.
-    const pdfResponse = await tryPDF(
-      request,
-      (env && env.PDF_RENDER_BASE) || '',
-      (env && env.PDF_ORIGIN_TOKEN) || '',
-    );
-    if (pdfResponse) return withApiSecurityHeaders(pdfResponse);
     // Profile clock — /api/clock/hero-<theme>.svg, uncached so it keeps time.
     const clockResponse = await tryClock(request);
     if (clockResponse) return withApiSecurityHeaders(clockResponse);

@@ -101,44 +101,6 @@ test('MCP /mcp/v1/list_resources short-circuits locale routing', async () => {
   }
 });
 
-test('PDF /api/pdf/<slug>.pdf short-circuits locale routing', async () => {
-  const realF = globalThis.fetch;
-  globalThis.fetch = async (input) => {
-    const url = typeof input === 'string' ? input : input.url;
-    if (url.includes('/render?slug=')) {
-      return new Response(new Uint8Array([0x25, 0x50, 0x44, 0x46]), { status: 200 });
-    }
-    return new Response('', { status: 502 });
-  };
-  try {
-    const res = await handler.fetch(
-      new Request('https://sebastienrousseau.com/api/pdf/2026-06-08-banking-resilience-index.pdf'),
-      { PDF_RENDER_BASE: 'https://render.example', PDF_ORIGIN_TOKEN: 'edge-secret' },
-      {},
-    );
-    assert.equal(res.status, 200);
-    assert.equal(res.headers.get('Content-Type'), 'application/pdf');
-    assert.equal(res.headers.get('X-Robots-Tag'), 'noindex, nofollow');
-  } finally {
-    globalThis.fetch = realF;
-  }
-});
-
-test('PDF route with no PDF_RENDER_BASE answers 503 at once', async () => {
-  const res = await callHandler(new Request('https://sebastienrousseau.com/api/pdf/2026-06-08-banking-resilience-index.pdf'));
-  assert.equal(res.status, 503);
-  assert.equal(res.headers.get('X-Robots-Tag'), 'noindex, nofollow');
-});
-
-test('PDF route tolerates a missing env object', async () => {
-  const res = await handler.fetch(
-    new Request('https://sebastienrousseau.com/api/pdf/2026-06-08-banking-resilience-index.pdf'),
-    undefined,
-    {},
-  );
-  assert.equal(res.status, 503);
-});
-
 test('Clock /api/clock/hero-<theme>.svg short-circuits locale routing', async () => {
   const realF = globalThis.fetch;
   globalThis.fetch = async (input) => {

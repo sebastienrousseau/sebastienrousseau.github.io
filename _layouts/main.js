@@ -289,51 +289,16 @@ document.addEventListener("change", function (event) {
 });
 
 /**
- * Action-rail "Save PDF" — two handlers:
- *
- *   [data-print]            — button that opens the browser print
- *                              dialog directly (no server route).
- *   [data-print-fallback]   — anchor to /api/pdf/<slug>.pdf; we let the
- *                              browser navigate by default, but if the
- *                              Worker route returns a non-PDF (e.g. 503
- *                              when the Fly.io machine is down), fall
- *                              back to window.print() so the user still
- *                              gets a PDF via the @media print stylesheet.
- *
- * Either way the PDF that drops out respects our @media print stylesheet
- * (transparent inline code, sources-as-footnotes, links shown inline).
+ * Action-rail "Save PDF": a [data-print] button that opens the browser
+ * print dialog. The @media print stylesheet (transparent inline code,
+ * sources-as-footnotes, links shown inline) lays the article out for
+ * "Save as PDF"; no server renders PDFs.
  */
 document.addEventListener("click", function (event) {
     var trigger = event.target.closest("[data-print]");
     if (!trigger) return;
     event.preventDefault();
     window.print();
-});
-
-document.addEventListener("click", function (event) {
-    var trigger = event.target.closest("[data-print-fallback]");
-    if (!trigger) return;
-    var href = trigger.getAttribute("href");
-    if (!href) {
-        event.preventDefault();
-        window.print();
-        return;
-    }
-    // Probe the PDF route with HEAD; if it's a real PDF, let the
-    // browser navigate. Otherwise prevent navigation and fall back.
-    event.preventDefault();
-    fetch(href, { method: "HEAD" })
-        .then(function (res) {
-            var ct = (res.headers.get("Content-Type") || "").toLowerCase();
-            if (res.ok && ct.indexOf("application/pdf") !== -1) {
-                window.location.href = href;
-            } else {
-                window.print();
-            }
-        })
-        .catch(function () {
-            window.print();
-        });
 });
 
 /**

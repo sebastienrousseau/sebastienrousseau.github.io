@@ -88,7 +88,7 @@ badge ID to `README.md`; Scorecard picks it up from the API on its next run.
 | `crypto_call` | Met | no bespoke cryptography in this repository |
 | `crypto_floss` | Met | as above |
 | `crypto_keylength`, `crypto_working`, `crypto_weaknesses`, `crypto_pfs`, `crypto_password_storage`, `crypto_random` | N/A | the site stores no credentials and performs no cryptographic operations at runtime |
-| `delivery_mitm` | Met | HTTPS with HSTS; dependencies are hash-pinned in `requirements.lock`, `requirements-dev.lock`, `fly/pdf-render/requirements.lock` and `fuzz/requirements.lock`; every GitHub Action is SHA-pinned |
+| `delivery_mitm` | Met | HTTPS with HSTS; dependencies are hash-pinned in `requirements.lock`, `requirements-dev.lock` and `fuzz/requirements.lock`; every GitHub Action is SHA-pinned |
 | `delivery_unsigned` | Met | as above |
 | `vulnerabilities_fixed_60_days` | Met | no known unpatched vulnerabilities; every pinned package is checked against OSV |
 | `vulnerabilities_critical_fixed` | Met | as above |

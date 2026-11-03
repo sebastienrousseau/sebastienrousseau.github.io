@@ -430,33 +430,6 @@ _SVG_QUOTE = (
 )
 
 
-def _slug_from_canonical(html: str) -> str | None:
-    """Return the bare slug from the canonical URL. Canonical URLs on
-    this site always end with ``/<slug>/index.html``; strip that suffix
-    before taking the last path segment so PDF / oEmbed routes get
-    ``/api/pdf/<slug>.pdf`` and not ``/api/pdf/index.html.pdf``."""
-    m = CANONICAL_RE.search(html)
-    if not m:
-        return None
-    url = m.group(1)
-    for suffix in ("/index.html", "/"):
-        if url.endswith(suffix):
-            url = url[: -len(suffix)]
-            break
-    return url.rsplit("/", 1)[-1] or None
-
-
-def _pdf_href(html: str, slug: str) -> str:
-    """``/api/pdf/<slug>.pdf`` for EN, ``/api/pdf/<lang>/<slug>.pdf`` for a
-    locale page. A translated slug only exists under its locale prefix, so
-    the renderer needs the prefix to find the article."""
-    m = CANONICAL_RE.search(html)
-    url = m.group(1) if m else ""
-    parts = url.split("://", 1)[-1].split("/")[1:]
-    lang = parts[0] if len(parts) > 1 and parts[1] == slug else ""
-    return f"/api/pdf/{lang}/{slug}.pdf" if lang else f"/api/pdf/{slug}.pdf"
-
-
 def _license_id(html: str) -> str:
     m = _LICENSE_RE.search(html)
     if m:
@@ -471,33 +444,21 @@ def inject_action_rail(html: str) -> str:
     at the top of the article body. The CSS positions it on the right
     edge on >=64em viewports and as a sticky bottom bar on <48em.
 
-    Save PDF is an anchor to ``/api/pdf/<slug>.pdf`` — the Cloudflare
-    Worker (workers/pdf-proxy.js) forwards to the Fly.io WeasyPrint
-    service and Edge-caches the response immutable for 24h. The
-    ``download`` attribute hints the browser to save rather than
-    navigate. A ``data-print-fallback`` hook on the same anchor lets
-    main.js fall back to ``window.print()`` if the route ever 503s
-    (e.g. local dev without the Worker).
+    Save PDF is a ``data-print`` button: main.js opens the browser's
+    print dialog, and the ``@media print`` stylesheet lays the article
+    out for "Save as PDF". No server renders PDFs.
 
     Cite jumps to the popover. BlogPosting pages only; idempotent."""
     if '"@type":"BlogPosting"' not in html:
         return html
     if 'class="action-rail action-rail--sticky"' in html:
         return html
-    slug = _slug_from_canonical(html)
-    if not slug:
-        return html
     labels = _labels(html)
     aria = _esc(labels.get("Action.aria", "Article actions"), quote=True)
-    pdf_href = _pdf_href(html, slug)
-    # rel="nofollow", not "alternate": the PDF duplicates this article, is
-    # rendered on demand, and is served noindex, so crawlers should not
-    # queue it. 678 of these URLs were in Search Console's 5xx report.
+    # A button, not a link: there is no PDF URL for crawlers to queue.
     items = (
-        f'<li><a href="{pdf_href}" download="{slug}.pdf" '
-        f'data-print-fallback rel="nofollow" type="application/pdf">'
-        f"{SVG_DOWNLOAD}"
-        f"<span>{_esc(labels.get('Action.savePdf', 'Save PDF'))}</span></a></li>"
+        f'<li><button type="button" data-print>{SVG_DOWNLOAD}'
+        f"<span>{_esc(labels.get('Action.savePdf', 'Save PDF'))}</span></button></li>"
         f'<li><a href="#cite-popover">{_SVG_QUOTE}'
         f"<span>{_esc(labels.get('Action.cite', 'Cite'))}</span></a></li>"
     )

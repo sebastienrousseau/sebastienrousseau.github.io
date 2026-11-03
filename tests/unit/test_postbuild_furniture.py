@@ -2650,13 +2650,10 @@ def test_inject_action_rail_renders_save_pdf_and_cite_buttons_at_top_of_main():
 
     out = inject_action_rail(_ws2_page())
     assert 'class="action-rail action-rail--sticky"' in out
-    # Save PDF is an anchor to /api/pdf/<slug>.pdf — the lang-router
-    # Worker forwards to the Fly.io WeasyPrint service. main.js HEAD-
-    # probes the route and falls back to window.print() if 503.
-    assert 'href="/api/pdf/2026-01-01-my-post.pdf"' in out
-    assert 'download="2026-01-01-my-post.pdf"' in out
-    assert "data-print-fallback" in out
-    assert 'type="application/pdf"' in out
+    # Save PDF opens the browser print dialog; no server renders PDFs.
+    assert '<button type="button" data-print>' in out
+    assert "/api/pdf/" not in out
+    assert "data-print-fallback" not in out
     # Cite anchors to the popover injected later in the pipeline.
     assert 'href="#cite-popover"' in out
     # Listen is intentionally absent until Phase 2 TTS ships.
@@ -2666,23 +2663,6 @@ def test_inject_action_rail_renders_save_pdf_and_cite_buttons_at_top_of_main():
     assert out.index("action-rail--sticky") < out.index("<p>body</p>")
 
 
-def test_inject_action_rail_pdf_link_is_nofollow_and_locale_aware():
-    from postbuild_lib.sharing import inject_action_rail
-
-    out = inject_action_rail(_ws2_page())
-    assert 'rel="nofollow" type="application/pdf"' in out
-    assert 'rel="alternate" type="application/pdf"' not in out
-    # A locale article's slug only exists under its prefix, so the PDF
-    # route carries the prefix for the renderer.
-    head = _WS2_HEAD.replace(
-        "https://sebastienrousseau.com/2026-01-01-my-post/",
-        "https://sebastienrousseau.com/pt-br/2026-01-01-meu-post/",
-    )
-    loc = inject_action_rail(_ws2_page(head=head))
-    assert 'href="/api/pdf/pt-br/2026-01-01-meu-post.pdf"' in loc
-    assert 'download="2026-01-01-meu-post.pdf"' in loc
-
-
 def test_inject_action_rail_idempotent():
     from postbuild_lib.sharing import inject_action_rail
 
@@ -2690,17 +2670,17 @@ def test_inject_action_rail_idempotent():
     assert inject_action_rail(once) == once
 
 
-def test_inject_action_rail_no_op_when_canonical_missing():
+def test_inject_action_rail_does_not_need_canonical():
     from postbuild_lib.sharing import inject_action_rail
 
-    # Save PDF needs the slug parsed from the canonical URL to point at
-    # /api/pdf/<slug>.pdf; no canonical → no slug → no rail.
+    # The rail used to need the canonical slug to build /api/pdf/<slug>.pdf.
+    # Print needs no slug, so a page without a canonical still gets the rail.
     head = _WS2_HEAD.replace(
         '<link rel="canonical" href="https://sebastienrousseau.com/2026-01-01-my-post/">',
         "",
     )
-    page = _ws2_page(head=head)
-    assert inject_action_rail(page) == page
+    out = inject_action_rail(_ws2_page(head=head))
+    assert 'class="action-rail action-rail--sticky"' in out
 
 
 # inject_cite_popover -------------------------------------------------------

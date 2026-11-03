@@ -11,7 +11,7 @@
 ## Executive summary
 
 After auditing `workers/lang-router.js`, `workers/activitypub.js`, `workers/mcp.js`,
-`workers/pdf-proxy.js`, and `workers/wrangler.toml`, the site **currently performs
+and `workers/wrangler.toml`, the site **currently performs
 ZERO Cloudflare KV write operations per day**. There is no `kv_namespaces` binding
 declared. Three of the four Worker modules carry explicit "no KV" assertions in
 their header comments.
@@ -49,7 +49,7 @@ Seven decisions structure the plan:
 | `kv_namespaces` declared in `workers/wrangler.toml` | None | File is config-only; no bindings of any kind |
 | `env.KV` references in any Worker | None | `grep -rn "KV\|env\." workers/` returns only doc-comment denials |
 | `caches.default` use | None | Cache API not yet leveraged — opportunity, not problem |
-| Worker count | 1 deployed (`lang-router`) + 3 imported modules (`activitypub`, `mcp`, `pdf-proxy`) | All run inside the single Worker invocation |
+| Worker count | 1 deployed (`lang-router`) + 2 imported modules (`activitypub`, `mcp`) | All run inside the single Worker invocation |
 | Routes | `sebastienrousseau.com/*`, `www.sebastienrousseau.com/*` | Manual dashboard wiring (per `wrangler.toml` comment) |
 | Origin | GitHub Pages | Static; deploy-immutable |
 | Per-request KV reads | 0 | Verified by source grep |
