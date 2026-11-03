@@ -272,13 +272,7 @@ export function getCookie(cookieHeader, name) {
  */
 export function isPageNavigation(pathname) {
   if (pathname === '/' || pathname === '/index.html') return true;
-  // Asset / API / feed extensions: pass through unchanged.
-  if (/\.(?:css|js|map|json|xml|txt|webp|jpg|jpeg|png|svg|ico|woff2?|pdf|wasm)$/i.test(pathname)) {
-    return false;
-  }
-  // Language-neutral roots that should not be redirected.
-  const NEUTRAL_PREFIXES = ['/api/', '/_csp/', '/.well-known/', '/v1/'];
-  if (NEUTRAL_PREFIXES.some(p => pathname.startsWith(p))) return false;
+  if (!isHtmlPagePath(pathname)) return false;
   // Already inside a known language subtree — leave it alone.
   // pathname always starts with '/' per URL spec, so split('/')[1] is a
   // string (possibly empty); no fallback needed.
@@ -363,6 +357,30 @@ export function tryDoubledLocaleRedirect(url) {
   return Response.redirect(redirected.toString(), 301);
 }
 
+// Edge HTML cache + renamed-URL 301s live in a sibling module (kept out of
+// this file to hold it under the 500-line ceiling); see edge-routes.js.
+import {
+  isHtmlPagePath,
+  fetchOrigin,
+  getRedirectMap,
+  tryRenamedUrlRedirect,
+} from './edge-routes.js';
+export {
+  isHtmlPagePath,
+  EDGE_HTML_TTL,
+  EDGE_HTML_CACHE,
+  isEdgeCacheable,
+  fetchOrigin,
+  getRedirectMap,
+  _resetRedirectMapCache,
+  tryRenamedUrlRedirect,
+} from './edge-routes.js';
+
+/** Pass a request through to origin, edge-caching it when it is a page. */
+async function passThrough(request, url) {
+  return withSecurityHeaders(await fetchOrigin(request, url), request);
+}
+
 /**
  * Emit a locale-redirect data point to Workers Analytics Engine if the
  * `AE` binding is wired. Fire-and-forget under `ctx.waitUntil()` — never
@@ -418,8 +436,13 @@ export default {
     if (request.method !== 'GET' && request.method !== 'HEAD') {
       return withSecurityHeaders(await fetch(request), request);
     }
+    // Renamed URLs (old meta-refresh stubs) -> one 301 to the final URL.
+    if (isHtmlPagePath(url.pathname)) {
+      const renamed = tryRenamedUrlRedirect(url, await getRedirectMap(env));
+      if (renamed) return withSecurityHeaders(renamed, request);
+    }
     if (!isPageNavigation(url.pathname)) {
-      return withSecurityHeaders(await fetch(request), request);
+      return passThrough(request, url);
     }
     // Active-language set — hydrated once per isolate from the ASSETS
     // binding when present, baked-in otherwise.
@@ -428,7 +451,7 @@ export default {
     const cookieHeader = request.headers.get('Cookie');
     const prefLang = getCookie(cookieHeader, COOKIE);
     if (prefLang === 'en') {
-      return withSecurityHeaders(await fetch(request), request);
+      return passThrough(request, url);
     }
     if (prefLang && activeLangs.has(prefLang)) {
       const redirected = new URL(url);
@@ -440,7 +463,7 @@ export default {
     // is just deep-linking) — and respect ?lang=en as an opt-out signal.
     const overrideLang = url.searchParams.get('lang');
     if (overrideLang === 'en') {
-      return withSecurityHeaders(await fetch(request), request);
+      return passThrough(request, url);
     }
     if (overrideLang && activeLangs.has(overrideLang.toLowerCase())) {
       const redirected = new URL(url);
@@ -459,6 +482,6 @@ export default {
     // `pref-lang`) or by deep-linking with `?lang=xx`. Auto-redirect on
     // Accept-Language alone surprises too many bilingual readers who
     // expect the English version by default; keeping discovery opt-in.
-    return withSecurityHeaders(await fetch(request), request);
+    return passThrough(request, url);
   },
 };

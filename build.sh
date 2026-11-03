@@ -503,6 +503,16 @@ python3 scripts/seo_and_audit/build_rag_corpus.py
 # the legitimate root + per-locale files survive. Idempotent.
 python3 scripts/postbuild/prune_duplicate_sitemaps.py
 python3 scripts/postbuild/fix_lang_switcher.py
+# SEO recovery pass (v0.0.30): noindex + hreflang removal for the locales
+# outside _data/seo/locale-indexing.json, sitemap pruning, unique titles and
+# descriptions, and real sitemap <lastmod> dates. Must run after
+# fix_lang_switcher.py, which reads the hreflang links this strips, and
+# after every sitemap writer. See scripts/postbuild/finalize_seo.py.
+python3 scripts/postbuild/finalize_seo.py
+# Worker assets: lang registry + the old-URL -> new-URL 301 map derived from
+# the meta-refresh stubs just built. Commit worker-assets/ when it changes;
+# the lang-router Worker deploys it as its ASSETS binding.
+python3 scripts/build_worker_assets.py
 # Sigstore signing pass — no-op unless _data/sigstore/config.json exists
 # (the cosign private key is machine-local, never in CI). Always mirror
 # the *committed* bundles from sigstore-bundles/ into public/sigstore/
@@ -566,7 +576,8 @@ if command -v node >/dev/null 2>&1; then
     --test-coverage-branches=100 \
     --test-coverage-functions=100 \
     --test-coverage-include='workers/lang-router.js' \
-    workers/test_lang_router.mjs
+    --test-coverage-include='workers/edge-routes.js' \
+    workers/test_lang_router.mjs workers/test_edge_routes.mjs
   # ActivityPub sibling — same 100% line/branch/function coverage gate,
   # tested in isolation so the webfinger / actor / inbox / outbox decision
   # tree stays exhaustively covered as it grows past starter scope.

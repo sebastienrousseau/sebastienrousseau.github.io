@@ -27,8 +27,9 @@ compatibility_date = "2026-05-16"
 # they resolve at runtime. The Worker handles missing bindings gracefully -
 # lang-router.js falls back to a hard-coded list if env.ASSETS is undefined.
 
-# Deploy-time static assets: slug maps, lang registry, anything generatable
-# at build time. Built by `scripts/build_worker_assets.py`.
+# Deploy-time static assets: slug maps, lang registry, the renamed-URL 301
+# map (redirects.json), anything generatable at build time. Built by
+# `scripts/build_worker_assets.py` (run at the end of build.sh).
 [assets]
 directory = "../worker-assets"
 binding = "ASSETS"
