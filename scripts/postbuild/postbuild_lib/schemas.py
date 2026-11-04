@@ -44,6 +44,7 @@ import re
 from pathlib import Path
 
 from _build_clock import build_now
+from postbuild_lib.blogposting import drop_css_dimensions
 
 PUBLIC = Path("public")
 SITE = "https://sebastienrousseau.com"
@@ -677,6 +678,7 @@ def _align_node(node: dict, canonical: str, lang: str) -> bool:
         node["inLanguage"] = lang
         changed = True
     changed |= _align_dates(node)
+    changed |= drop_css_dimensions(node)
     return changed
 
 

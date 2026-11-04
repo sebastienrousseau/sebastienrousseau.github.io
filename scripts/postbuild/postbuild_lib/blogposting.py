@@ -17,6 +17,7 @@ import re
 
 _LD_RE = re.compile(r'<script type="application/ld\+json"[^>]*>([\s\S]*?)</script>', re.I)
 INHERITED = ("datePublished", "dateModified", "image")
+_DIMENSIONS = ("width", "height")
 
 
 def _find(data: object) -> dict | None:
@@ -45,3 +46,18 @@ def inherited_fields(html: str) -> dict[str, object]:
     """The BlogPosting's dates and image, for an Article-family sibling."""
     node = blogposting_node(html) or {}
     return {key: node[key] for key in INHERITED if node.get(key)}
+
+
+def drop_css_dimensions(node: dict) -> bool:
+    """Remove image ``width``/``height`` values that are not pixel counts.
+
+    ``banner_width: "100vw"`` front matter reached the layout's ImageObject
+    as ``"width":"100vw","height":"100vh"``. Dropping a CSS unit is safe;
+    guessing a pixel size is not. Returns True when anything was removed."""
+    image = node.get("image")
+    if not isinstance(image, dict):
+        return False
+    bad = [key for key in _DIMENSIONS if key in image and not str(image[key]).isdigit()]
+    for key in bad:
+        del image[key]
+    return bool(bad)

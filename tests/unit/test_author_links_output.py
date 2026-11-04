@@ -172,6 +172,12 @@ def _article_problems(node: dict) -> list[str]:
     problems = [f"{kind} lacks {k}" for k in REQUIRED if not node.get(k)]
     if node.get("author") not in ({"@id": PERSON_ID}, [{"@id": PERSON_ID}]):
         problems.append(f"{kind} author is {node.get('author')!r}")
+    image = node.get("image") if isinstance(node.get("image"), dict) else {}
+    problems += [
+        f"{kind} image {k} is {image[k]!r}"
+        for k in ("width", "height")
+        if k in image and not str(image[k]).isdigit()
+    ]
     return problems
 
 
