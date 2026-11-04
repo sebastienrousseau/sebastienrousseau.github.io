@@ -203,7 +203,10 @@ def run(config: Path, out: Path, chunk_size: int, timeout_s: int, budget_s: int 
     if wedged:
         print(f"::error::pa11y left {len(wedged)} URL(s) unchecked after a retry")
         return 1
-    return 1 if crashed else 0
+    # Any page with issues exits 1, as pa11y-ci does, so the CI step runs
+    # pa11y_retry_flakes.py: a navigation timeout gets one retry, and a real
+    # violation still fails the shard.
+    return 1 if crashed or errors else 0
 
 
 def main(argv: list[str] | None = None) -> int:

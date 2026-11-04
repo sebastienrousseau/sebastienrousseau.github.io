@@ -121,7 +121,9 @@ The Rust tool reads the `_posts_build` markdown and `_layouts/` and writes the E
 18. **`scripts/seo_and_audit/build_rag_corpus.py`** — the RAG/LLM corpus (`feed.jsonl`, per-tag JSONL, MCP resources).
 19. **`scripts/postbuild/prune_duplicate_sitemaps.py`** — deletes the per-directory `sitemap.xml` / `news-sitemap.xml` copies ssg writes into every output directory (~7,400 files, 17 MB, full of malformed double-slash URLs). They are crawlable: `/fr/news-sitemap.xml` was served in production as one of these stale copies. Keeps the root sitemap, the root news sitemap, and the per-locale news sitemaps `build_lang_feeds.py` writes deliberately. Runs after every sitemap writer; idempotent.
 20. **`scripts/postbuild/fix_lang_switcher.py`** — rewrites the language-switcher hrefs to per-locale targets.
-21. **`scripts/security/sigstore_sign.py`** — signs dated articles with Sigstore (best-effort; skipped when no signing config is present).
+21. **`scripts/postbuild/finalize_seo.py`** - the last SEO pass: `noindex` and hreflang removal for the locales outside `_data/seo/locale-indexing.json` (`postbuild_lib/locale_indexing.py`), sitemap pruning, unique titles and descriptions among indexable pages (`postbuild_lib/unique_meta.py`), and real sitemap `<lastmod>` dates (`postbuild_lib/sitemap_lastmod.py`). Runs after `fix_lang_switcher.py`, which reads the hreflang links it strips; idempotent.
+22. **`scripts/build_worker_assets.py`** - writes `worker-assets/lang-registry.json` and `worker-assets/redirects.json` (every meta-refresh stub, old path to final path) for the lang-router Worker's `ASSETS` binding.
+23. **`scripts/security/sigstore_sign.py`** — signs dated articles with Sigstore (best-effort; skipped when no signing config is present).
 
 After these, `build.sh` runs the validation gate (`tests/validation/`) under `set -euo pipefail`, so any CSP/hreflang/i18n/RTL/sitemap/JSON-LD failure fails the build.
 
@@ -242,6 +244,8 @@ flowchart LR
  ```
 
 The edge router is the single source of truth for language routing and security headers, and it sets headers based on paths and runs tests to ensure the rules remain stable.
+
+Two more edge duties live in `workers/edge-routes.js`. HTML page navigations are fetched with `cf.cacheEverything` and cached at the edge for 600 s (200 responses only; every other status is never stored), matching GitHub Pages' own `max-age=600` so no purge-on-deploy step is needed. Renamed URLs listed in `worker-assets/redirects.json` (the old locale slugs from ADR-0012) get one 301 to their final URL before origin is touched; the meta-refresh stub pages remain in the build as a fallback.
 
 ---
 
