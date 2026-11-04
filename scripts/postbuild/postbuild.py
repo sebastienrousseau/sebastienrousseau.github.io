@@ -17,14 +17,10 @@ Tasks performed:
 
 from __future__ import annotations
 
-import sys as _sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
-from pathlib import Path as _Path
-
-_sys.path.insert(0, str(_Path(__file__).resolve().parents[1] / "lib"))
-
-import sys
+import sys  # path bootstrap — scripts reorg (scripts/lib/ on sys.path)
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "lib"))
 sys.path.insert(0, str(Path(__file__).parent))
 
 PUBLIC = Path("public")
@@ -245,6 +241,7 @@ from postbuild_lib.html_passes import (
     localise_listing_titles,
     strip_duplicate_body_h1,
 )
+from postbuild_lib.hub_links import inject_pillar_hub_link, repair_stub_links
 from postbuild_lib.index_scorecard import inject_index_scorecard
 from postbuild_lib.indexability import apply_noindex_utility_pages, prune_sitemaps
 from postbuild_lib.internal_links import (
@@ -672,11 +669,12 @@ def _apply_hreflang_pass(html: str, page: Path, ctx: _PostbuildContext) -> str:
 def _apply_internal_link_passes(html: str, page: Path, ctx: _PostbuildContext) -> str:
     """Wire the article into its topic cluster.
 
-    Three steps, in order: give same-origin absolute article links their
+    Four steps, in order: give same-origin absolute article links their
     canonical trailing slash; link the first in-prose mention of a shared
-    topic to the sibling article that owns it; then append the nearest
-    siblings that are still unlinked so no article is left isolated. All
-    three are idempotent and English-only (see internal_links).
+    topic to the sibling article that owns it; append the nearest siblings
+    that are still unlinked so no article is left isolated; then link the
+    article's pillar hub in its own locale (see hub_links). All four are
+    idempotent; the contextual links are English-only (see internal_links).
     """
     ctr = ctx.counters
     out = canonicalise_absolute_self_links(html)
@@ -690,7 +688,7 @@ def _apply_internal_link_passes(html: str, page: Path, ctx: _PostbuildContext) -
     out = inject_related_cluster(page, out, ctx.corpus)
     if out != prev:
         ctr.cluster_blocks_added += 1
-    return out
+    return inject_pillar_hub_link(out)
 
 
 def _sweep_duplicate_assets(ctx: _PostbuildContext, had_failures: bool) -> None:
@@ -882,10 +880,6 @@ def _apply_url_hygiene() -> None:
     # normalize_canonical would undo the target canonical. See
     # postbuild_lib/redirects.py for the full policy.
     redirect_pages, redirect_purged = apply_redirect_pages(PUBLIC)
-    print(
-        f"postbuild: redirects — {redirect_pages} legacy page(s) converted, "
-        f"{redirect_purged} sitemap entrie(s) purged"
-    )
 
     # Retired article URLs (_data/redirects/articles.json). Unlike the
     # static move above there is no rendered source page to convert — the
@@ -894,7 +888,13 @@ def _apply_url_hygiene() -> None:
     # the sitemap augment cannot re-add them and normalize_canonical
     # cannot rewrite the target canonical back to self.
     article_redirects = apply_article_redirects(PUBLIC)
-    print(f"postbuild: redirects — {article_redirects} retired article URL(s) materialised")
+    # Every stub now exists, so links that land on one can be repointed.
+    stub_links = repair_stub_links(PUBLIC)
+    print(
+        f"postbuild: redirects — {redirect_pages} legacy page(s) converted, "
+        f"{redirect_purged} sitemap entrie(s) purged, {article_redirects} retired article "
+        f"URL(s) materialised, {stub_links} page(s) had links to a stub repointed"
+    )
 
     # Utility pages (404 / offline / thanks, EN + every locale) are noindex,
     # then every sitemap is cut down to indexable, self-canonical URLs.
