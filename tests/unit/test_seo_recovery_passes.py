@@ -192,6 +192,9 @@ def test_unique_meta_helpers() -> None:
     assert um.read_description("<title>x</title>") == ""
     assert um._iso_date("garbage-date") == "garbage-da"
     assert um.load_page(Path(__file__).with_name("conftest.py"), "x", "en", True) is None
+    page = um.Page(Path("x"), "x/index.html", "en", "T", "D", True)
+    um._append(page, "title", "")
+    assert (page.title, page.changed) == ("T", set())
 
 
 # -- Sitemap lastmod --------------------------------------------------------------
@@ -231,6 +234,10 @@ def test_lastmod_helpers() -> None:
     assert sl.url_path("https://elsewhere.example/x/") is None
     assert sl.split_locale("/fr/a/", codes) == ("fr", ["a"])
     assert sl.source_date("/a/b/", {"a": "2026-01-01"}, codes) == ""
+
+
+def test_lastmod_skips_a_listing_that_was_not_built(tmp_path: Path) -> None:
+    assert sl.compute_lastmods(tmp_path, ["/tags/gone/"], {}) == {}
 
 
 # -- Worker redirect map -------------------------------------------------------------
