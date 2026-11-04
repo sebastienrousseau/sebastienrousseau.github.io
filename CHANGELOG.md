@@ -10,6 +10,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.0.30] - Unreleased
+
+SEO recovery after the 11 Sep 2026 site-wide quality demotion (Google impressions down 98%). Technical fixes plus the locale cut the owner approved.
+
+### Changed
+
+- **10 locales stay indexable, 24 go `noindex`**: `_data/seo/locale-indexing.json` is the one place that lists the locales search engines may index: English plus `zh-hans`, `zh-hant`, `fr`, `ko`, `es`, `ru`, `ja`, `it`, `cs` and `de` (the top ten by Google impressions, 1 Jun to 10 Sep 2026). Every page of the other 24 active locales now carries one merged `<meta name="robots" content="noindex, follow, ...">`, emits no hreflang links, and is gone from `sitemap.xml`; no page anywhere emits an hreflang alternate for them. The pages stay live and the language switcher still links each one to the translation of the current page. New pass: `scripts/postbuild/finalize_seo.py` with `postbuild_lib/locale_indexing.py`, run after `fix_lang_switcher.py`. `sitemap.xml` drops from 7,679 to 2,423 URLs (233 English + 10 x 219).
+- **HTML is cached at the Cloudflare edge for 10 minutes**: the lang-router Worker fetches page navigations with `cf.cacheEverything` and `cacheTtlByStatus` (200 for 600 s, every other status not stored), so a crawler burst no longer reaches GitHub Pages, which answered 30 of 40 parallel requests with HTTP 429. 600 s matches GitHub Pages' own `max-age=600`, so no purge-on-deploy step is needed. Locale redirects are decided before any origin fetch and are never cached; browsers still get `max-age=0, must-revalidate`. Code in the new `workers/edge-routes.js`, covered at 100% with `lang-router.js`.
+
+### Fixed
+
+- **Renamed locale URLs answer one 301**: the 3,170 meta-refresh stub pages left by the ADR-0012 slug localisation (Search Console: 3,804 "Page with redirect") are now answered by the Worker with a single-hop 301 to the final URL, from `worker-assets/redirects.json`. `scripts/build_worker_assets.py` derives that map from the built stubs, collapses chains and rejects loops or off-site targets. The stubs are still built as a fallback for when the Worker or its assets binding is unavailable.
+- **Real sitemap `<lastmod>`**: 3,795 of 7,679 URLs shared `2026-05-11`. Each URL now carries its source front-matter date (`last_reviewed`, then `last_build_date`, then `date`; a translation shares its English source's date), or for a listing page the newest date among the articles it links to, or no `<lastmod>` at all. Never the pinned build date. The largest single date now covers 14.5% of URLs (352 of 2,423), and every one of them is dated by its own front matter (31 articles reviewed on 2026-05-11, in 11 languages) or by an article it lists. A gate fails if any date covering more than 5% of URLs includes one that has neither source.
+- **Unique titles and descriptions**: paginated listings get their localised "Page N of M" label, listing pages get the site name and lead their description with their own title, values shared across locales get the locale's native name, and values shared within a locale get the publication date or slug. Duplicate titles among indexable pages: 85 groups (287 pages) to 0; duplicate descriptions: 74 groups (2,265 pages) to 0.
+
+### Added
+
+- **Build-output gates** (`tests/unit/test_seo_recovery_output.py`): every noindex-locale page is `noindex`, no indexed page is (bar utility pages and stubs), at most one robots meta per page, the sitemap lists exactly the indexed locales, no hreflang targets a noindex locale, titles and descriptions are unique, no lastmod date over 5% of URLs includes an unsourced one, and every stub is in the Worker redirect map with no chains, loops or dead targets.
+
 ## [0.0.28] - Unreleased
 
 ### Security

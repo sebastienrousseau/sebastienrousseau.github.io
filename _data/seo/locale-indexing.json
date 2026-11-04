@@ -1,0 +1,4 @@
+{
+  "_comment": "Which locales search engines may index. Every active locale stays published and reachable through the language switcher; a locale not listed in 'indexed' gets <meta name=\"robots\" content=\"noindex, follow\"> on every page, is left out of every sitemap, and is removed from every hreflang cluster. Read by scripts/lib/_locale_indexing.py, the only consumer. The ten non-English locales are the top ten by Google impressions, 1 Jun to 10 Sep 2026 (SEO recovery plan item 2.1). 'en' must always be listed.",
+  "indexed": ["en", "zh-hans", "zh-hant", "fr", "ko", "es", "ru", "ja", "it", "cs", "de"]
+}
