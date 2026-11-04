@@ -12,7 +12,7 @@ least three same-locale related links on every article. Two gaps were left:
   link to per-tag landings, but nothing tied an article to the one hub
   that groups its whole pillar. :func:`inject_pillar_hub_link` adds that
   link to the end of the cluster block, in the page's own language.
-* 41 article pages linked to a meta-refresh redirect stub (a retired
+* 39 article pages linked to a meta-refresh redirect stub (a retired
   article URL, ``/papers/``, a locale's old ``/publications/`` slug). On
   locale pages two of those were English article URLs, so the link also
   crossed locales. :func:`repair_stub_links` points each such link at the

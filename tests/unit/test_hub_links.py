@@ -3,7 +3,7 @@
 
 """Pillar-hub links and redirect-stub link repair (plan item 2.5).
 
-The v0.0.31 build had no article linking to its pillar hub, and 41 article
+The v0.0.31 build had no article linking to its pillar hub, and 39 article
 pages linking to a meta-refresh stub (two of them across locales)."""
 
 from __future__ import annotations
