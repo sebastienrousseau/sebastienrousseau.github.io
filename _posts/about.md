@@ -143,7 +143,7 @@ site_software: "Static Site Generator, Rust"
       <h2 id="about-research" class="narrative-head">Banking research, signed and dated. Every article verifiable.</h2>
       <div class="narrative-body">
         <p>Applied AI, ISO 20022, post-quantum cryptography. Every piece written for senior architects and CTOs who need to make architectural calls, not read press releases.</p>
-        <p>Cited in the EPAA <em>Quantum-Safe Payments</em> white paper (Sept 2025). Editor of <em>Banking On Quantum</em> and <em>Banking On AI</em>. Member of the EPAA Quantum-Safe Cryptography Working Group.</p>
+        <p>Cited in the EPAA <em><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" rel="external noopener">Quantum-Safe Payments</a></em> white paper (Sept 2025). Editor of <em>Banking On Quantum</em> and <em>Banking On AI</em>. Member of the EPAA Quantum-Safe Cryptography Working Group.</p>
       </div>
       <a class="pill" href="/articles/index.html">Read the research ›</a>
     </div>
@@ -159,8 +159,8 @@ site_software: "Static Site Generator, Rust"
       <p class="narrative-eyebrow">The output</p>
       <h2 id="about-output" class="narrative-head">Open source the standards bodies and lab evaluators can actually read.</h2>
       <div class="narrative-body">
-        <p><strong>KyberLib</strong>: an ML-KEM implementation in Rust, evaluated by Qtonic Quantum Lab and adopted by QGram.</p>
-        <p><strong>pain001</strong>: ISO 20022 payment-file automation. <strong>BankStatementParser</strong>: turns multi-format statements into structured data. <strong>CloudCDN</strong>: an open-source edge CDN blueprint.</p>
+        <p><strong><a href="https://github.com/sebastienrousseau/kyberlib" rel="external noopener">KyberLib</a></strong>: an ML-KEM implementation in Rust, evaluated by Qtonic Quantum Lab and adopted by QGram.</p>
+        <p><strong><a href="https://github.com/sebastienrousseau/pain001" rel="external noopener">pain001</a></strong>: ISO 20022 payment-file automation. <strong><a href="https://github.com/sebastienrousseau/bankstatementparser" rel="external noopener">BankStatementParser</a></strong>: turns multi-format statements into structured data. <strong><a href="https://github.com/sebastienrousseau/cloudcdn.pro" rel="external noopener">CloudCDN</a></strong>: an open-source edge CDN blueprint.</p>
       </div>
       <a class="pill ghost" href="/projects/index.html">See all open source ›</a>
     </div>

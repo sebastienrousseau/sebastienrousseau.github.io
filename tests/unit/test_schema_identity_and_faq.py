@@ -106,6 +106,29 @@ def test_alignment_is_idempotent() -> None:
     assert align_article_identity(once) == once
 
 
+def test_css_unit_image_dimensions_are_dropped() -> None:
+    """36 of 120 English articles set ``banner_width: "100vw"``, so their
+    BlogPosting image shipped ``"width":"100vw","height":"100vh"``: CSS
+    units, not the pixel count an ImageObject dimension is. Pixel values
+    stay; anything else is dropped rather than guessed."""
+    html = _page(
+        body=(
+            '<script type="application/ld+json">{"@context":"https://schema.org","@graph":['
+            f'{{"@type":"BlogPosting","url":"{CANON}","image":{{"@type":"ImageObject",'
+            '"url":"https://x/a.webp","width":"100vw","height":"100vh"}}]}</script>'
+            '<script type="application/ld+json">{"@context":"https://schema.org",'
+            f'"@type":"TechArticle","url":"{CANON}","image":{{"@type":"ImageObject",'
+            '"url":"https://x/a.webp","width":"1200","height":675}}</script>'
+        )
+    )
+    out = align_article_identity(html)
+    images = {n["@type"]: n["image"] for n in _nodes(out) if "image" in n}
+    assert images["BlogPosting"] == {"@type": "ImageObject", "url": "https://x/a.webp"}
+    assert images["TechArticle"]["width"] == "1200"
+    assert images["TechArticle"]["height"] == 675
+    assert align_article_identity(out) == out
+
+
 def test_non_article_nodes_are_untouched() -> None:
     out = align_article_identity(_DIVERGENT)
     crumb = next(n for n in _nodes(out) if n.get("@type") == "BreadcrumbList")

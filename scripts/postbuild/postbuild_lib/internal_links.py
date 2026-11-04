@@ -341,6 +341,10 @@ CLUSTER_LINK_TARGET = 5
 
 _CLUSTER_MARKER = 'class="cluster-links"'
 _ARTICLE_CLOSE_RE = re.compile(r"</article>", re.IGNORECASE)
+# Dated articles have no outer <article>: their first </article> closes the
+# first card of post_enrich's related-reading grid. The block goes after that
+# strip, never inside a card.
+_RELATED_STRIP_RE = re.compile(r'<aside class="related-posts"[\s\S]*?</aside>', re.IGNORECASE)
 _MAIN_CLOSE_RE = re.compile(r"</main>", re.IGNORECASE)
 _ANY_ARTICLE_HREF_RE = re.compile(
     r'href="(?:' + re.escape(BASE_URL) + r')?/(?:[a-z-]+/)?(\d{4}-\d{2}-\d{2}-[^"/?#]+)/?"'
@@ -465,10 +469,19 @@ def inject_related_cluster(
     resolved = _cluster_picks(page, html, corpus, public, target)
     if resolved is None:
         return html
-    close = _ARTICLE_CLOSE_RE.search(html) or _MAIN_CLOSE_RE.search(html)
-    if not close:
+    at = _cluster_insertion(html)
+    if at is None:
         return html
     block = _cluster_block(*resolved)
     if not block:
         return html
-    return html[: close.start()] + block + html[close.start() :]
+    return html[:at] + block + html[at:]
+
+
+def _cluster_insertion(html: str) -> int | None:
+    """After the related-reading strip, else at the end of the article body."""
+    strip = _RELATED_STRIP_RE.search(html)
+    if strip:
+        return strip.end()
+    close = _ARTICLE_CLOSE_RE.search(html) or _MAIN_CLOSE_RE.search(html)
+    return close.start() if close else None

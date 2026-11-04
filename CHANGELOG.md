@@ -10,6 +10,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.0.32] - Unreleased
+
+Plan items 2.4 (author box and `Person` entity) and 2.5 (internal links), measured on the built site across the 11 indexed locales (1,320 articles) before and after.
+
+### Fixed
+
+- **Every Article entity on an article page is complete**: the `TechArticle` / `ScholarlyArticle` node `schemas.inject_tech_article` adds beside the layout's `BlogPosting` had no `datePublished`, `dateModified` or `image`, on all 1,320 indexed articles. It now takes the three from the page's own `BlogPosting` (new `postbuild_lib/blogposting.py`). Articles with an incomplete Article node: 1,320 to 0.
+- **Article image sizes are pixels or absent**: `banner_width: "100vw"` front matter (36 English articles and their translations) reached the `BlogPosting` ImageObject as `"width":"100vw","height":"100vh"`, CSS units rather than pixel counts. `align_article_identity` now drops an image `width` or `height` that is not a whole number on every Article-family node. Indexed articles carrying one: 1,236 to 0.
+- **No link lands on a redirect stub**: 39 indexed article pages linked a meta-refresh stub (two retired English article URLs, `/2026-banking-architecture-whitepaper/`, `/papers/`, a locale's old research slug), and on ten locale pages two of those links were English article URLs, so they also crossed locales. After the redirect pages are built, `postbuild_lib/hub_links.repair_stub_links` points every `<a href>` on a non-stub page at the stub's final target, from the same stub map `build_worker_assets.py` publishes, and maps an English article target to the page locale's translation when one exists. 7,784 pages across all locales had at least one such link. Indexed articles linking a stub: 39 to 0; linking another locale's article: 10 to 0.
+- **The cluster block no longer sits inside a related card**: dated articles have no outer `<article>`, so `inject_related_cluster` placed "Continue reading in this cluster" before the first `</article>` on the page, which closes the first card of the related-reading grid. It now follows the related-reading strip.
+
+### Added
+
+- **Pillar hub link on every article**: the end of the cluster block now names the article's editorial pillar and links its hub in the page's own locale (`/categories/<pillar>/`, `/<lang>/categories/<pillar>/`), with the label and pillar name from `_data/i18n/<lang>/listings.json`. The pillar is the one the end-of-article CTA already uses. Indexed articles linking their pillar hub: 0 to 1,320.
+- **About links its evidence**: the four repositories it names (KyberLib, pain001, BankStatementParser, CloudCDN) link to their GitHub repositories, and the EPAA *Quantum-Safe Payments* paper links to its PDF, in English and all 34 locale bodies. Only URLs already in the repository were used.
+- **Build-output gates** (`tests/unit/test_author_links_output.py`): over the indexed locales, every article shows the author box with credentials; every Article-family node has headline, both dates, image and an `author` that is exactly `https://sebastienrousseau.com/#person`, whose node on the page has `name`, `url` and `sameAs`; `sameAs` covers the profiles About links with `rel="me"`; no article is an orphan; every article links at least three same-locale articles and its pillar hub, and no stub, noindex-locale page or other locale's article; every hub lists an article; About links its repositories, the paper and `/speaking/`.
+
+### Unchanged, measured
+
+- Author box with credentials: 1,320 of 1,320 before and after. Article `author` resolving to the one `Person` node with `name`, `url`, `sameAs`, `jobTitle` and `knowsAbout`: 1,320 of 1,320 before and after. Orphan articles: 0. Articles with at least three same-locale related links: 1,320 of 1,320. Hubs listing no article: 0 of 66 pillar, 528 tag and 14 topic hubs.
+
 ## [0.0.31] - Unreleased
 
 ### Changed

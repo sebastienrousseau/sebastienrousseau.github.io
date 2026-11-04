@@ -343,6 +343,22 @@ def test_cluster_block_prefers_article_close_over_main_close() -> None:
     assert out.index("cluster-links") < out.index("</article>")
 
 
+def test_cluster_block_follows_the_related_reading_strip_not_its_first_card() -> None:
+    """Dated articles have no outer <article>: the first </article> on the
+    page closes the first card of the related-reading grid, so the block
+    used to render inside that card (v0.0.31, every article)."""
+    related = (
+        '<aside class="related-posts"><div class="related-grid">'
+        '<article class="related-card"><a href="/x/">X</a></article>'
+        '<article class="related-card"><a href="/y/">Y</a></article></div></aside>'
+    )
+    out = inject_related_cluster(
+        PAGE, _page(f"<p>Body.</p>{related}<p>Tail.</p>"), CORPUS, public=PUBLIC
+    )
+    assert f'{related}<nav class="cluster-links"' in out
+    assert out.index("cluster-links") < out.index("<p>Tail.</p>")
+
+
 def test_locale_url_uses_the_slug_map(monkeypatch: pytest.MonkeyPatch) -> None:
     from postbuild_lib import internal_links as il
 
