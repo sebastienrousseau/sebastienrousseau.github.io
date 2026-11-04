@@ -229,6 +229,34 @@ def test_inject_tech_article_emits_languages_list_when_multiple_match():
     assert set(data["programmingLanguage"]) == {"Rust", "Python"}
 
 
+_BLOGPOSTING = (
+    '<script type="application/ld+json">{"@context":"https://schema.org","@graph":['
+    '{"@type":"Person","@id":"https://sebastienrousseau.com/#person"},'
+    '{"@type":"BlogPosting","headline":"Foo","datePublished":"2025-09-01T06:00:00+00:00",'
+    '"dateModified":"2025-09-02","image":{"@type":"ImageObject","url":"https://x/b.webp"}}'
+    "]}</script>"
+)
+
+
+def test_inject_tech_article_carries_the_blogposting_dates_and_image():
+    """The Article-family sibling shipped without datePublished,
+    dateModified and image on all 1,320 indexed articles (v0.0.31): a
+    second Article entity on the page, missing three of the fields Google
+    reads. It now takes them from the page's own BlogPosting node."""
+    page = sc.PUBLIC / "2025-09-01-foo" / "index.html"
+    html = _article_html("rust").replace("</head>", _BLOGPOSTING + "</head>")
+    data = _extract_tech_article(sc.inject_tech_article(page, html))
+    assert data["datePublished"] == "2025-09-01T06:00:00+00:00"
+    assert data["dateModified"] == "2025-09-02"
+    assert data["image"] == {"@type": "ImageObject", "url": "https://x/b.webp"}
+
+
+def test_inject_tech_article_without_blogposting_adds_no_dates():
+    page = sc.PUBLIC / "2025-09-01-foo" / "index.html"
+    data = _extract_tech_article(sc.inject_tech_article(page, _article_html("rust")))
+    assert not {"datePublished", "dateModified", "image"} & set(data)
+
+
 # ---------------------------------------------------------------------------
 # ScholarlyArticle upgrade — fires when citation-authority count
 # crosses sc.SCHOLARLY_CITATION_THRESHOLD.

@@ -254,6 +254,7 @@ def _tech_article_graph(
     # Late import to avoid a circular at module load — article_furniture
     # already imports from postbuild_lib.seo, so going the other way
     # via top-level import would close the loop.
+    from postbuild_lib.blogposting import inherited_fields
     from postbuild_lib.citations import _extract_citations
 
     citations = _extract_citations(html)
@@ -272,6 +273,7 @@ def _tech_article_graph(
         "author": {"@id": "https://sebastienrousseau.com/#person"},
         "publisher": {"@id": "https://sebastienrousseau.com/#organization"},
         "mainEntityOfPage": {"@type": "WebPage", "@id": url},
+        **inherited_fields(html),
     }
     if keywords:
         graph["keywords"] = ", ".join(keywords)
@@ -289,12 +291,7 @@ def inject_tech_article(page: Path, html: str) -> str:
     or if the page isn't a dated post."""
     if not _is_dated_article(page):
         return html
-    if (
-        '"@type":"TechArticle"' in html
-        or '"@type": "TechArticle"' in html
-        or '"@type":"ScholarlyArticle"' in html
-        or '"@type": "ScholarlyArticle"' in html
-    ):
+    if re.search(r'"@type":\s?"(?:Tech|Scholarly)Article"', html):
         return html
     graph = _tech_article_graph(html, page)
     if graph is None:
