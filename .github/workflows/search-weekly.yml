@@ -1,0 +1,66 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+#
+# Weekly Search Console report (SEO recovery plan item 3.1).
+#
+# Every Monday: impressions, clicks, CTR and average position per locale and
+# for the top 20 English pages, last week against the week before, plus the
+# trailing 28 days. The Markdown goes to the run summary and the CSV is
+# uploaded as an artifact. When English or a kept locale
+# (_data/seo/locale-indexing.json) loses 30% or more of its impressions, the
+# job opens or updates the `search-alert` issue with the 10 pages that lost
+# the most; a re-run in the same week does not post twice.
+#
+# Needs the repository secret GSC_SERVICE_ACCOUNT_JSON (a service-account
+# key with Restricted access to the property). Until it exists the job
+# succeeds and its summary says the report was skipped. The optional
+# repository variable GSC_SITE_URL overrides the property
+# (default sc-domain:sebastienrousseau.com).
+name: search-weekly
+
+on:
+  schedule:
+    - cron: "17 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: search-weekly
+  cancel-in-progress: false
+
+jobs:
+  report:
+    name: Search Console weekly report
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+
+      - name: Setup Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+
+      - name: Install Python tooling
+        # Hash-pinned; google-auth comes from the same dev lock as CI.
+        run: pip install --quiet --require-hashes -r requirements-dev.lock
+
+      - name: Build the report
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: ${{ vars.GSC_SITE_URL }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/seo_and_audit/search_weekly.py --out-dir search-report --file-issue
+
+      - name: Upload the CSV
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: search-weekly
+          path: search-report/search-weekly.csv
+          if-no-files-found: ignore
+          retention-days: 90

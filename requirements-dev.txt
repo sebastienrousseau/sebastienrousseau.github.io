@@ -11,3 +11,8 @@ radon>=6.0.1
 pytest>=9.2.0
 pytest-cov>=7.1.0
 pip-audit>=2.10.1
+# Weekly Search Console report (scripts/seo_and_audit/search_weekly.py):
+# Google's service-account auth signs the searchAnalytics.query calls;
+# requests is its transport. Used only by .github/workflows/search-weekly.yml.
+google-auth==2.62.1
+requests>=2.34.2
