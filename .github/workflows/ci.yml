@@ -158,6 +158,40 @@ jobs:
             --silent
 
   # =========================================================================
+  # The layouts come from the theme (ADR-0014). Flatten the theme at a
+  # pinned commit and fail when the committed _layouts/ differ from it, so
+  # a layout change made here without a theme change (or the reverse) is
+  # caught in review instead of being reverted by the next theme-sync.
+  # Bump THEME_SHA in the same pull request as the theme commit it names.
+  # =========================================================================
+  layouts-theme:
+    name: Layouts match the theme
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      THEME_SHA: "64e42154dceec9768c6b4cbb490b892041ba4fa9"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+
+      - name: Check out the theme at its pinned commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          repository: sebastienrousseau/ssg-themes.github.io
+          ref: ${{ env.THEME_SHA }}
+          path: .theme
+          persist-credentials: false
+
+      - name: Flatten the theme and diff _layouts/
+        run: |
+          make theme-sync THEME_DIR=.theme/themes/sebastienrousseau
+          if ! git diff --exit-code -- _layouts; then
+            echo "::error::_layouts/ differs from the theme at ${THEME_SHA}. Make the change in themes/sebastienrousseau/ (ssg-themes.github.io), then run make theme-sync and bump THEME_SHA."
+            exit 1
+          fi
+
+  # =========================================================================
   # Stage 1 — build the site, run the build-dependent checks, then partition
   # the pa11y URL set into the shard configs the matrix consumes next.
   # =========================================================================

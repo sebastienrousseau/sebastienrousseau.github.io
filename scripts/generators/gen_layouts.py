@@ -815,7 +815,7 @@ PAGE_HERO_MAIN = """    <section class="ap-hero">
     </section>
 
     <main id="main" class="content ap-section">
-      <div class="wrap">{{content}}</div>
+      <div class="wrap">{{!content}}</div>
     </main>
 
 """
@@ -838,7 +838,7 @@ PROJECT_HERO_MAIN = """    <section class="ap-hero">
     </section>
 
     <main id="main" class="content ap-section">
-      <div class="wrap">{{content}}</div>
+      <div class="wrap">{{!content}}</div>
     </main>
 
 """
@@ -860,7 +860,7 @@ STORY_HERO_MAIN = """    <section class="story-hero">
     </section>
 
     <main id="main" class="content ap-section">
-      <div class="wrap">{{content}}</div>
+      <div class="wrap">{{!content}}</div>
     </main>
 
 """
@@ -888,7 +888,7 @@ def contact_layout() -> str:
       <div class="wrap contact-wrap">
         <div class="contact-layout" data-reveal>
           <div class="contact-form-col">
-            <p class="lede">{{content}}</p>
+            <p class="lede">{{!content}}</p>
             <form class="ap-form" action="https://formspree.io/f/{{form-id}}" method="POST">
               <fieldset>
               <legend class="visually-hidden">Send a message</legend>
@@ -999,7 +999,7 @@ def report_layout() -> str:
     </section>
 
     <main id="main" class="content ap-section">
-      <div class="wrap report-wrap"><article class="report-article">{{content}}</article></div>
+      <div class="wrap report-wrap"><article class="report-article">{{!content}}</article></div>
     </main>
 
 """
@@ -1134,7 +1134,7 @@ def playlist_layout() -> str:
 
       <main id="main" class="content ap-section">
         <div class="wrap">
-          <div class="playlist-intro" data-reveal>{{{{content}}}}</div>
+          <div class="playlist-intro" data-reveal>{{{{!content}}}}</div>
           <div class="playlist-platforms" data-reveal>
 <p class="playlist-platforms-label">The full collection is on Apple Music too</p>
 <a class="pl-badge playlist-platform-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="me noopener" aria-label="Listen on Apple Music">
