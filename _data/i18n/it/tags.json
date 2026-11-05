@@ -1,0 +1,264 @@
+{
+  "_comment": "Translated tag names and descriptions for the tag landing pages (/<lang>/<tags-path>/<slug>/): H1, deck, meta description, og:description and related-tag chips. English source: _data/taxonomy.yml; a missing entry or empty field falls back to it (scripts/generators/tag_landing_render.py). Drafted by Claude in a Claude Code session for v0.0.33; every entry stays reviewed: false until the owner has checked it. Standard, product and acronym names (ISO 20022, DORA, SWIFT, FIPS 203, CRYSTALS-Kyber, Model Context Protocol, ...) are kept as they are. _intentionally_english lists the tags whose name is identical to the English one, on purpose; descriptions are always translated. Gate: tests/unit/test_tag_i18n.py.",
+  "_intentionally_english": [
+    "llm",
+    "iso-20022",
+    "open-banking",
+    "swift",
+    "cbpr-plus",
+    "pacs-008",
+    "pain-001",
+    "blockchain",
+    "ml-kem",
+    "ml-dsa",
+    "platform-engineering",
+    "edge-computing",
+    "dora",
+    "eu-ai-act",
+    "nist",
+    "open-source",
+    "rust",
+    "mcp",
+    "banking"
+  ],
+  "ai": {
+    "name": "IA",
+    "description": "IA applicata ai servizi finanziari: deployment dei modelli, governance, agenti di IA, strumenti LLM e l'infrastruttura di IA che opera negli ambienti bancari.",
+    "reviewed": false
+  },
+  "agentic-ai": {
+    "name": "IA agentica",
+    "description": "Agenti di IA autonomi nei pagamenti, nella tesoreria e nel back-office bancario: consenso, responsabilità, audit trail e interoperabilità dei protocolli.",
+    "reviewed": false
+  },
+  "llm": {
+    "name": "LLM",
+    "description": "Modelli linguistici di grandi dimensioni (LLM) nei processi finanziari: fine-tuning, RAG, prompt engineering, LLM sul dispositivo ed economia dei costi di inferenza.",
+    "reviewed": false
+  },
+  "generative-ai": {
+    "name": "IA generativa",
+    "description": "Modelli generativi per il banking (codice, contenuti, ricerca, simulazione) e l'ingegneria necessaria per portarli in produzione in sicurezza.",
+    "reviewed": false
+  },
+  "ai-governance": {
+    "name": "Governance dell'IA",
+    "description": "Rischio di modello, conformità all'EU AI Act, NIST AI RMF, responsabilità a livello di consiglio di amministrazione, fornitori di IA terzi e lo stack di compliance per l'IA nelle banche.",
+    "reviewed": false
+  },
+  "iso-20022": {
+    "name": "ISO 20022",
+    "description": "Migrazione dei pagamenti all'ingrosso e al dettaglio a ISO 20022: pacs.008, pain.001, messaggistica camt, CBPR+ e un'infrastruttura di pagamento ricca di dati.",
+    "reviewed": false
+  },
+  "cross-border-payments": {
+    "name": "Pagamenti transfrontalieri",
+    "description": "Cambi, corrispondenza bancaria, instradamento su più infrastrutture, obiettivi della roadmap del G20, e costo e velocità dei trasferimenti di denaro tra paesi.",
+    "reviewed": false
+  },
+  "stablecoins": {
+    "name": "Stablecoin",
+    "description": "Emissione, riserve, rimborso, regolamentazione e il ruolo delle stablecoin come attività di regolamento accanto ai depositi bancari.",
+    "reviewed": false
+  },
+  "tokenised-deposits": {
+    "name": "Depositi tokenizzati",
+    "description": "Token di deposito emessi dalle banche, regolamento atomico, bilancio programmabile e il quadro normativo della moneta di banca commerciale tokenizzata.",
+    "reviewed": false
+  },
+  "real-time-payments": {
+    "name": "Pagamenti istantanei",
+    "description": "RTP, FedNow, SEPA Instant, Faster Payments nel Regno Unito: meccanica delle infrastrutture istantanee, liquidità, frodi e prezzi.",
+    "reviewed": false
+  },
+  "a2a-payments": {
+    "name": "Pagamenti A2A",
+    "description": "Infrastrutture di pagamento da conto a conto, disposizione di pagamento tramite open banking e i casi d'uso dei pagamenti agentici che vi si appoggiano.",
+    "reviewed": false
+  },
+  "open-banking": {
+    "name": "Open banking",
+    "description": "PSD2, PSD3, CMA9, FDX: API di open banking, disposizione di pagamento e la base della portabilità dei dati.",
+    "reviewed": false
+  },
+  "swift": {
+    "name": "SWIFT",
+    "description": "Messaggistica, GPI, prevalidazione dei pagamenti e il ruolo in evoluzione di SWIFT in un mondo con più infrastrutture di pagamento.",
+    "reviewed": false
+  },
+  "cbpr-plus": {
+    "name": "CBPR+",
+    "description": "Cross-Border Payments and Reporting Plus: le linee guida d'uso ISO 20022 di SWIFT per la corrispondenza bancaria.",
+    "reviewed": false
+  },
+  "wholesale-payments": {
+    "name": "Pagamenti all'ingrosso",
+    "description": "Pagamenti interbancari, di importo elevato e delle infrastrutture di mercato: il lato wholesale dell'economia delle infrastrutture bancarie.",
+    "reviewed": false
+  },
+  "pacs-008": {
+    "name": "pacs.008",
+    "description": "Il messaggio di bonifico del cliente al centro di ISO 20022 per i pagamenti transfrontalieri: schema, validazione, automazione e orchestrazione.",
+    "reviewed": false
+  },
+  "pain-001": {
+    "name": "pain.001",
+    "description": "Il messaggio di disposizione di pagamento del cliente: payment factory aziendali, validazione e l'abbandono di MT101.",
+    "reviewed": false
+  },
+  "payments-automation": {
+    "name": "Automazione dei pagamenti",
+    "description": "Creazione e validazione dei file di pagamento, gestione delle eccezioni e il lato ingegneristico delle operazioni di pagamento.",
+    "reviewed": false
+  },
+  "programmable-liquidity": {
+    "name": "Liquidità programmabile",
+    "description": "Tesoreria in tempo reale, orchestrazione della liquidità infragiornaliera, bilancio programmabile e lo stack di tesoreria agentica.",
+    "reviewed": false
+  },
+  "payments": {
+    "name": "Pagamenti",
+    "description": "Copertura ampia dei sistemi di pagamento, delle infrastrutture e dell'economia dei trasferimenti di denaro: il punto di accesso editoriale generale, sopra i tag delle singole infrastrutture.",
+    "reviewed": false
+  },
+  "treasury": {
+    "name": "Tesoreria",
+    "description": "Operazioni di tesoreria aziendale e bancaria: gestione della liquidità, previsione di cassa, copertura del rischio di cambio e il modello operativo alla base della tesoreria in tempo reale. Il tema della tesoreria agentica e autonoma rientra in Liquidità programmabile.",
+    "reviewed": false
+  },
+  "digital-assets": {
+    "name": "Asset digitali",
+    "description": "Asset tokenizzati, custodia, infrastrutture di regolamento e l'adozione istituzionale delle infrastrutture per asset digitali accanto alla finanza tradizionale.",
+    "reviewed": false
+  },
+  "decentralised-finance": {
+    "name": "Finanza decentralizzata",
+    "description": "Protocolli DeFi, rischio degli smart contract, liquidità on-chain e i punti in cui le banche si integrano (o scelgono di non integrarsi) con lo stack DeFi.",
+    "reviewed": false
+  },
+  "post-quantum-cryptography": {
+    "name": "Crittografia post-quantistica",
+    "description": "Standard post-quantistici del NIST, la minaccia «raccogli ora, decifra dopo», handshake ibridi e la migrazione della crittografia bancaria verso primitive basate sui reticoli.",
+    "reviewed": false
+  },
+  "blockchain": {
+    "name": "Blockchain",
+    "description": "Tecnologia a registro distribuito nelle infrastrutture finanziarie: consenso, validatori, esecuzione degli smart contract e dove questa primitiva compare nel banking.",
+    "reviewed": false
+  },
+  "ml-kem": {
+    "name": "ML-KEM",
+    "description": "FIPS 203: il meccanismo di incapsulamento delle chiavi post-quantistico standardizzato (in precedenza CRYSTALS-Kyber).",
+    "reviewed": false
+  },
+  "ml-dsa": {
+    "name": "ML-DSA",
+    "description": "FIPS 204: l'algoritmo di firma digitale post-quantistico standardizzato (in precedenza CRYSTALS-Dilithium).",
+    "reviewed": false
+  },
+  "crypto-agility": {
+    "name": "Cripto-agilità",
+    "description": "Censire gli asset crittografici, definire un percorso di migrazione e rilasciare in produzione codice con confini crittografici sostituibili.",
+    "reviewed": false
+  },
+  "cryptography": {
+    "name": "Crittografia",
+    "description": "Crittografia applicata al banking: funzioni hash, firme, KEM, gestione delle chiavi e le primitive crittografiche che proteggono le infrastrutture di pagamento.",
+    "reviewed": false
+  },
+  "quantum-computing": {
+    "name": "Calcolo quantistico",
+    "description": "Progressi dell'hardware, algoritmi quantistici, il tempo che manca alla minaccia e i punti di contatto tra calcolo quantistico e carichi di lavoro bancari.",
+    "reviewed": false
+  },
+  "hndl": {
+    "name": "Raccogli ora, decifra dopo",
+    "description": "Il modello di minaccia HNDL: avversari che oggi intercettano traffico cifrato per decifrarlo quando sarà disponibile l'hardware quantistico.",
+    "reviewed": false
+  },
+  "cloud-native-banking": {
+    "name": "Banking cloud-native",
+    "description": "Kubernetes, service mesh, resilienza multi-regione e i modelli di architettura cloud-native che le banche adottano in base a DORA.",
+    "reviewed": false
+  },
+  "sovereign-cloud": {
+    "name": "Cloud sovrano",
+    "description": "Residenza dei dati, cloud in regioni regolamentate e i compromessi architetturali dell'esecuzione di carichi bancari entro confini sovrani.",
+    "reviewed": false
+  },
+  "platform-engineering": {
+    "name": "Platform engineering",
+    "description": "Piattaforme interne per sviluppatori, golden path, percorsi tracciati: come le organizzazioni tecnologiche bancarie aumentano la produttività dell'ingegneria.",
+    "reviewed": false
+  },
+  "operational-resilience": {
+    "name": "Resilienza operativa",
+    "description": "Servizi aziendali importanti, tolleranze all'impatto, scenari gravi ma plausibili e il programma di resilienza operativa che le banche devono gestire.",
+    "reviewed": false
+  },
+  "cybersecurity": {
+    "name": "Cybersicurezza",
+    "description": "Sicurezza operativa nel banking: minacce, controlli, risposta agli incidenti e le aspettative regolamentari in materia di resilienza.",
+    "reviewed": false
+  },
+  "edge-computing": {
+    "name": "Edge computing",
+    "description": "Worker all'edge, antifrode all'edge, CDN come piattaforma: il ruolo del calcolo all'edge nei carichi di lavoro finanziari.",
+    "reviewed": false
+  },
+  "dora": {
+    "name": "DORA",
+    "description": "Digital Operational Resilience Act: registro delle informazioni, rischio informatico derivante da fornitori terzi di servizi TIC, test di penetrazione basati sulla minaccia e il programma di resilienza operativa che le banche devono gestire.",
+    "reviewed": false
+  },
+  "eu-ai-act": {
+    "name": "EU AI Act",
+    "description": "Indicazioni di attuazione, aspettative delle autorità di vigilanza, classificazione dei sistemi ad alto rischio e l'onere di valutazione della conformità che il regolamento impone alle banche.",
+    "reviewed": false
+  },
+  "nist": {
+    "name": "NIST",
+    "description": "Standard del NIST rilevanti per il banking (FIPS 203/204, AI RMF, serie SP 800/1800) e il modo in cui le autorità di vigilanza li adottano.",
+    "reviewed": false
+  },
+  "third-party-risk": {
+    "name": "Rischio di terze parti",
+    "description": "Rischio derivante da fornitori terzi di servizi TIC ai sensi di DORA, orientamenti dell'EBA sull'esternalizzazione e le aspettative di vigilanza sulla concentrazione dei fornitori critici.",
+    "reviewed": false
+  },
+  "open-source": {
+    "name": "Open source",
+    "description": "Software open source nel banking regolamentato: rischio della supply chain, attestazioni, policy di contribuzione e i progetti open source su cui le banche fanno affidamento.",
+    "reviewed": false
+  },
+  "rust": {
+    "name": "Rust",
+    "description": "Rust nelle infrastrutture bancarie: sicurezza della memoria, prestazioni e l'ecosistema di crate rilevanti per i carichi di lavoro finanziari.",
+    "reviewed": false
+  },
+  "mcp": {
+    "name": "MCP",
+    "description": "Model Context Protocol: come i client di IA individuano e utilizzano contenuti bancari come risorse strutturate.",
+    "reviewed": false
+  },
+  "technology-strategy": {
+    "name": "Strategia tecnologica",
+    "description": "Temi dei CTO e CIO bancari: make or buy, sviluppare o stringere partnership, design organizzativo e l'agenda tecnologica strategica.",
+    "reviewed": false
+  },
+  "innovation": {
+    "name": "Innovazione",
+    "description": "Copertura editoriale dei cambiamenti tecnologici strategici nel banking: cosa sta arrivando, chi lo sta realizzando e cosa cambia.",
+    "reviewed": false
+  },
+  "research": {
+    "name": "Ricerca",
+    "description": "Analisi originali, indici e benchmark: il lavoro sui dati che sostiene la linea editoriale.",
+    "reviewed": false
+  },
+  "banking": {
+    "name": "Banking",
+    "description": "Il settore bancario come oggetto editoriale: cosa sta cambiando, perché e cosa significa per tecnologia, pagamenti, rischio e modello operativo.",
+    "reviewed": false
+  }
+}

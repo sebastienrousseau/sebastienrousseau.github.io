@@ -63,6 +63,8 @@ from tag_landing_render import (
     _render_category_html,
     _render_landing_html,
     _swap_landing_cards,
+    load_tag_strings,
+    localise_taxonomy,
 )
 
 TAXONOMY = ROOT / "_data" / "taxonomy.yml"
@@ -333,31 +335,37 @@ def _translate_chrome_for(lang: str, html: str) -> str:
 
 
 def _write_locale_landings(
+    template: str,
     taxonomy: dict,
     posts: dict[str, list[tuple[str, str, str, str, list[str], str, str]]],
-    en_pages: dict[str, str],
+    cooccur: dict[str, collections.Counter[str]],
+    slugs: list[str],
 ) -> int:
+    """Render each landing once per locale from the cover ``template``, with
+    the tag names and descriptions of that locale's ``tags.json`` (English
+    where it has none), then localise links, cards and chrome."""
     written = 0
-    article_maps = {lang: _load_locale_article_slugs(lang) for lang in LOCALES_NON_EN}
-    locale_indexes = {lang: _load_locale_post_index(lang) for lang in LOCALES_NON_EN}
-    for slug in en_pages:
-        if len(posts.get(slug, [])) < _LANDING_THRESHOLD:
-            continue
-        en_html = en_pages[slug]
-        posts_for_tag = posts.get(slug, [])
-        for lang in LOCALES_NON_EN:
-            locale_html = _localise_html_links(en_html, lang, slug, article_maps[lang])
-            locale_html = _swap_landing_cards(
-                locale_html,
+    for lang in LOCALES_NON_EN:
+        local_tax = localise_taxonomy(taxonomy, load_tag_strings(lang))
+        article_map = _load_locale_article_slugs(lang)
+        locale_index = _load_locale_post_index(lang)
+        for slug in slugs:
+            posts_for_tag = posts.get(slug, [])
+            html = _render_landing_html(
+                template,
+                slug,
+                local_tax[slug],
                 posts_for_tag,
-                locale_indexes[lang],
-                article_maps[lang],
-                lang,
+                cooccur.get(slug, collections.Counter()),
+                local_tax,
+                posts,
             )
-            locale_html = _translate_chrome_for(lang, locale_html)
+            html = _localise_html_links(html, lang, slug, article_map)
+            html = _swap_landing_cards(html, posts_for_tag, locale_index, article_map, lang)
+            html = _translate_chrome_for(lang, html)
             out_path = PUBLIC / lang / LOCALE_TAGS_PATH[lang] / slug / "index.html"
             out_path.parent.mkdir(parents=True, exist_ok=True)
-            out_path.write_text(locale_html, encoding="utf-8")
+            out_path.write_text(html, encoding="utf-8")
             written += 1
     return written
 
@@ -456,7 +464,7 @@ def _write_landings(
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(page_html, encoding="utf-8")
         en_pages[slug] = page_html
-    locale_written = _write_locale_landings(taxonomy, posts, en_pages)
+    locale_written = _write_locale_landings(template, taxonomy, posts, cooccur, list(en_pages))
     return len(en_pages), locale_written
 
 

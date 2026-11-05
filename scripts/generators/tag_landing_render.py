@@ -5,7 +5,7 @@
 cards, related tags, JSON-LD, hreflang rewriting, and locale card localisation.
 
 Split from build_tag_landings (Phase 4.1). Imports shared frontmatter constants
-from listing_common, share glyphs from _svg_icons, and stdlib only —
+from listing_common, and stdlib only —
 build_tag_landings imports the render entry points + shared constants back
 (one-directional, no cycle).
 """
@@ -13,6 +13,7 @@ build_tag_landings imports the render entry points + shared constants back
 from __future__ import annotations
 
 import collections
+import json
 import re
 import sys
 from pathlib import Path
@@ -20,14 +21,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "lib"))
 import _lang_registry
-from _svg_icons import (
-    _CARD_SVG_EMAIL,
-    _CARD_SVG_FB,
-    _CARD_SVG_LI,
-    _CARD_SVG_LINK,
-    _CARD_SVG_WA,
-    _CARD_SVG_X,
-)
 from listing_common import (
     _BANNER_FM_RE,
     _DEFAULT_BANNER,
@@ -38,6 +31,11 @@ from listing_common import (
 )
 
 ROOT = Path(__file__).resolve().parents[2]
+# Per-locale tag names and descriptions: _data/i18n/<lang>/tags.json, shaped
+# {"<slug>": {"name": ..., "description": ..., "reviewed": bool}}. taxonomy.yml
+# stays the English source; a locale without a file, a tag without an entry,
+# or an empty field falls back to it.
+I18N_DIR = ROOT / "_data" / "i18n"
 
 PILLAR_LABELS: dict[str, str] = {
     "ai": "Applied AI",
@@ -85,6 +83,30 @@ _AP_HERO_BLOCK_RE = re.compile(
 )
 
 
+def load_tag_strings(lang: str) -> dict[str, dict]:
+    """``{slug: entry}`` from ``_data/i18n/<lang>/tags.json``; ``{}`` when the
+    locale has none. Keys starting with ``_`` are documentation and dropped."""
+    path = I18N_DIR / lang / "tags.json"
+    if not path.is_file():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return {k: v for k, v in data.items() if not k.startswith("_")}
+
+
+def localise_taxonomy(taxonomy: dict, strings: dict[str, dict]) -> dict:
+    """A copy of ``taxonomy`` whose ``name`` and ``description`` come from the
+    locale ``strings`` where they are non-empty, field by field, else English."""
+    out: dict = {}
+    for slug, entry in taxonomy.items():
+        local = strings.get(slug) or {}
+        out[slug] = dict(entry) | {
+            key: local[key]
+            for key in ("name", "description")
+            if isinstance(local.get(key), str) and local[key].strip()
+        }
+    return out
+
+
 def _esc(s: str) -> str:
     return (
         s.replace("&", "&amp;")
@@ -92,44 +114,6 @@ def _esc(s: str) -> str:
         .replace(">", "&gt;")
         .replace('"', "&quot;")
         .replace("'", "&#x27;")
-    )
-
-
-def _card_share_rail(url: str, title: str, desc: str) -> str:
-    """6-icon per-card share rail: X / LinkedIn / Facebook / WhatsApp /
-    email / copy-link. Anchors-only except for copy-link (button +
-    data-copy-link)."""
-    abs_url = url if url.startswith("http") else f"{_BASE_URL}{url}"
-    x_text = f"{title}\n\n{abs_url}"
-    li_text = "\n\n".join(p for p in (title, desc, abs_url) if p)
-    wa_text = "\n\n".join(p for p in (title, desc, abs_url) if p)
-    email_body = "\n\n".join(p for p in (desc, f"Read more: {abs_url}") if p)
-    import urllib.parse as _u
-
-    def q(s: str) -> str:
-        return _u.quote(s, safe="")
-
-    items = (
-        f'<li><a href="https://twitter.com/intent/tweet?text={q(x_text)}" '
-        f'rel="noopener noreferrer" aria-label="Share on X">{_CARD_SVG_X}</a></li>'
-        f'<li><a href="https://www.linkedin.com/feed/?shareActive=true&text={q(li_text)}" '
-        f'rel="noopener noreferrer" aria-label="Share on LinkedIn">{_CARD_SVG_LI}</a></li>'
-        f'<li><a href="https://www.facebook.com/sharer/sharer.php?u={q(abs_url)}" '
-        f'rel="noopener noreferrer" aria-label="Share on Facebook">{_CARD_SVG_FB}</a></li>'
-        f'<li><a href="https://wa.me/?text={q(wa_text)}" '
-        f'rel="noopener noreferrer" aria-label="Share on WhatsApp">{_CARD_SVG_WA}</a></li>'
-        f'<li><a href="mailto:?subject={q(title)}&body={q(email_body)}" '
-        f'aria-label="Share by email">{_CARD_SVG_EMAIL}</a></li>'
-        f'<li><button type="button" data-copy-link="{_esc(abs_url)}" '
-        f'aria-label="Copy link">{_CARD_SVG_LINK}</button></li>'
-    )
-    # `<div role="group">` rather than `<nav>` — every card emits the
-    # same share rail, so a per-card `<nav aria-label="Share this
-    # article">` would trip axe landmark-unique. role="group" carries
-    # the semantics without contributing to the page outline.
-    return (
-        f'<div class="card-share-rail" role="group" aria-label="Share this article">'
-        f"<ul>{items}</ul></div>"
     )
 
 
@@ -223,8 +207,6 @@ def _render_jsonld(
 ) -> str:
     """CollectionPage + ItemList. Both Schema.org types Google indexes
     for topic pages and AI summarisers consume."""
-    import json
-
     url = f"{_BASE_URL}/tags/{slug}/"
     items = [
         {

@@ -371,9 +371,8 @@ treasury:
   description: >
     Corporate and bank treasury operations — liquidity management,
     cash forecasting, FX hedging, and the operating model that
-    sits behind real-time treasury. The agentic / autonomous-
-    treasury angle lives under the more specific
-    ``programmable-liquidity`` canonical.
+    sits behind real-time treasury. The agentic, autonomous-treasury
+    angle lives under Programmable liquidity.
   aliases:
     - treasury
     - Treasury
@@ -560,8 +559,8 @@ operational-resilience:
   name: Operational resilience
   plural: Operational resilience
   description: >
-    Important business services, impact tolerances, severe-but-
-    plausible scenarios, and the operational-resilience programme
+    Important business services, impact tolerances,
+    severe-but-plausible scenarios, and the operational-resilience programme
     banks must run.
   aliases:
     - operational resilience

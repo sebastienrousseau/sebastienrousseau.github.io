@@ -1,0 +1,265 @@
+{
+  "_comment": "Translated tag names and descriptions for the tag landing pages (/<lang>/<tags-path>/<slug>/): H1, deck, meta description, og:description and related-tag chips. English source: _data/taxonomy.yml; a missing entry or empty field falls back to it (scripts/generators/tag_landing_render.py). Drafted by Claude in a Claude Code session for v0.0.33; every entry stays reviewed: false until the owner has checked it. Standard, product and acronym names (ISO 20022, DORA, SWIFT, FIPS 203, CRYSTALS-Kyber, Model Context Protocol, ...) are kept as they are. _intentionally_english lists the tags whose name is identical to the English one, on purpose; descriptions are always translated. Gate: tests/unit/test_tag_i18n.py.",
+  "_intentionally_english": [
+    "ai",
+    "llm",
+    "iso-20022",
+    "open-banking",
+    "swift",
+    "cbpr-plus",
+    "pacs-008",
+    "pain-001",
+    "treasury",
+    "blockchain",
+    "ml-kem",
+    "ml-dsa",
+    "platform-engineering",
+    "edge-computing",
+    "dora",
+    "eu-ai-act",
+    "nist",
+    "open-source",
+    "rust",
+    "mcp"
+  ],
+  "ai": {
+    "name": "AI",
+    "description": "Aplikovaná AI ve finančních službách: nasazování modelů, správa, AI agenti, nástroje pro LLM a AI infrastruktura provozovaná v bankovních prostředích.",
+    "reviewed": false
+  },
+  "agentic-ai": {
+    "name": "Agentní AI",
+    "description": "Autonomní AI agenti v platbách, treasury a bankovním back-office: souhlas, odpovědnost, auditní stopy a interoperabilita protokolů.",
+    "reviewed": false
+  },
+  "llm": {
+    "name": "LLM",
+    "description": "Velké jazykové modely (LLM) ve finančních procesech: fine-tuning, RAG, prompt engineering, LLM přímo v zařízení a ekonomika nákladů na inferenci.",
+    "reviewed": false
+  },
+  "generative-ai": {
+    "name": "Generativní AI",
+    "description": "Generativní modely pro bankovnictví (kód, obsah, vyhledávání, simulace) a inženýrská práce potřebná k jejich bezpečnému nasazení do provozu.",
+    "reviewed": false
+  },
+  "ai-governance": {
+    "name": "Správa AI",
+    "description": "Modelové riziko, soulad s EU AI Act, NIST AI RMF, odpovědnost na úrovni představenstva, externí dodavatelé AI a compliance stack pro AI v bankách.",
+    "reviewed": false
+  },
+  "iso-20022": {
+    "name": "ISO 20022",
+    "description": "Přechod velkoobchodních i retailových plateb na ISO 20022: pacs.008, pain.001, zprávy camt, CBPR+ a platební infrastruktura bohatá na data.",
+    "reviewed": false
+  },
+  "cross-border-payments": {
+    "name": "Přeshraniční platby",
+    "description": "Devizy, korespondenční bankovnictví, směrování přes více platebních systémů, cíle cestovní mapy G20 a náklady a rychlost přesunu peněz přes hranice.",
+    "reviewed": false
+  },
+  "stablecoins": {
+    "name": "Stablecoiny",
+    "description": "Emise, rezervy, zpětný odkup, regulace a role stablecoinů jako vypořádacího aktiva vedle bankovních vkladů.",
+    "reviewed": false
+  },
+  "tokenised-deposits": {
+    "name": "Tokenizované vklady",
+    "description": "Vkladové tokeny vydávané bankami, atomické vypořádání, programovatelná rozvaha a regulatorní rámec tokenizovaných peněz komerčních bank.",
+    "reviewed": false
+  },
+  "real-time-payments": {
+    "name": "Okamžité platby",
+    "description": "RTP, FedNow, SEPA Instant, britské Faster Payments: mechanika okamžitých platebních systémů, likvidita, podvody a cenotvorba.",
+    "reviewed": false
+  },
+  "a2a-payments": {
+    "name": "Platby A2A",
+    "description": "Platební systémy z účtu na účet, iniciace plateb přes open banking a případy užití agentních plateb, které na nich stojí.",
+    "reviewed": false
+  },
+  "open-banking": {
+    "name": "Open banking",
+    "description": "PSD2, PSD3, CMA9, FDX: API pro open banking, iniciace plateb a základ přenositelnosti dat.",
+    "reviewed": false
+  },
+  "swift": {
+    "name": "SWIFT",
+    "description": "Zasílání zpráv, GPI, předběžná validace plateb a měnící se role SWIFT ve světě s více platebními systémy.",
+    "reviewed": false
+  },
+  "cbpr-plus": {
+    "name": "CBPR+",
+    "description": "Cross-Border Payments and Reporting Plus: pravidla SWIFT pro používání ISO 20022 v korespondenčním bankovnictví.",
+    "reviewed": false
+  },
+  "wholesale-payments": {
+    "name": "Velkoobchodní platby",
+    "description": "Mezibankovní platby, platby vysokých hodnot a platby infrastruktur finančního trhu: velkoobchodní strana ekonomiky bankovní infrastruktury.",
+    "reviewed": false
+  },
+  "pacs-008": {
+    "name": "pacs.008",
+    "description": "Zpráva o klientském úhradovém převodu v jádru ISO 20022 pro přeshraniční platby: schéma, validace, automatizace a orchestrace.",
+    "reviewed": false
+  },
+  "pain-001": {
+    "name": "pain.001",
+    "description": "Zpráva klienta k iniciaci platby: firemní platební továrny, validace a odchod od MT101.",
+    "reviewed": false
+  },
+  "payments-automation": {
+    "name": "Automatizace plateb",
+    "description": "Tvorba a validace platebních souborů, zpracování výjimek a inženýrská stránka platebního provozu.",
+    "reviewed": false
+  },
+  "programmable-liquidity": {
+    "name": "Programovatelná likvidita",
+    "description": "Treasury v reálném čase, orchestrace vnitrodenní likvidity, programovatelná rozvaha a stack pro agentní treasury.",
+    "reviewed": false
+  },
+  "payments": {
+    "name": "Platby",
+    "description": "Široký pohled na platební systémy, platební infrastruktury a ekonomiku přesunu peněz: obecný redakční vstupní bod nad štítky jednotlivých platebních systémů.",
+    "reviewed": false
+  },
+  "treasury": {
+    "name": "Treasury",
+    "description": "Treasury operace firem a bank: řízení likvidity, prognóza peněžních toků, zajištění devizového rizika a provozní model, na kterém stojí treasury v reálném čase. Téma agentní a autonomní treasury patří pod Programovatelnou likviditu.",
+    "reviewed": false
+  },
+  "digital-assets": {
+    "name": "Digitální aktiva",
+    "description": "Tokenizovaná aktiva, úschova, vypořádací infrastruktura a institucionální přijetí infrastruktur pro digitální aktiva vedle tradičních financí.",
+    "reviewed": false
+  },
+  "decentralised-finance": {
+    "name": "Decentralizované finance",
+    "description": "Protokoly DeFi, rizika chytrých kontraktů, likvidita on-chain a místa, kde se banky do DeFi stacku zapojují (nebo se záměrně nezapojují).",
+    "reviewed": false
+  },
+  "post-quantum-cryptography": {
+    "name": "Postkvantová kryptografie",
+    "description": "Postkvantové standardy NIST, hrozba „sklízej nyní, dešifruj později“, hybridní handshaky a přechod bankovní kryptografie na mřížkové primitivy.",
+    "reviewed": false
+  },
+  "blockchain": {
+    "name": "Blockchain",
+    "description": "Technologie distribuovaných účetních knih ve finanční infrastruktuře: konsenzus, validátoři, provádění chytrých kontraktů a kde se tento stavební prvek objevuje v bankovnictví.",
+    "reviewed": false
+  },
+  "ml-kem": {
+    "name": "ML-KEM",
+    "description": "FIPS 203: standardizovaný postkvantový mechanismus zapouzdření klíče (dříve CRYSTALS-Kyber).",
+    "reviewed": false
+  },
+  "ml-dsa": {
+    "name": "ML-DSA",
+    "description": "FIPS 204: standardizovaný postkvantový algoritmus digitálního podpisu (dříve CRYSTALS-Dilithium).",
+    "reviewed": false
+  },
+  "crypto-agility": {
+    "name": "Kryptografická agilita",
+    "description": "Inventarizace kryptografických aktiv, stanovení migrační cesty a nasazení produkčního kódu s vyměnitelnými kryptografickými hranicemi.",
+    "reviewed": false
+  },
+  "cryptography": {
+    "name": "Kryptografie",
+    "description": "Aplikovaná kryptografie v bankovnictví: hašovací funkce, podpisy, KEM, správa klíčů a kryptografické stavební prvky, které zabezpečují platební infrastrukturu.",
+    "reviewed": false
+  },
+  "quantum-computing": {
+    "name": "Kvantové výpočty",
+    "description": "Pokrok v hardwaru, kvantové algoritmy, čas do vzniku hrozby a místa, kde se kvantové výpočty potkávají s bankovními úlohami.",
+    "reviewed": false
+  },
+  "hndl": {
+    "name": "Sklízej nyní, dešifruj později",
+    "description": "Model hrozby HNDL: útočníci dnes zachytávají šifrovaný provoz, aby ho dešifrovali, jakmile bude k dispozici kvantový hardware.",
+    "reviewed": false
+  },
+  "cloud-native-banking": {
+    "name": "Cloud-native bankovnictví",
+    "description": "Kubernetes, service mesh, odolnost napříč regiony a cloud-native architektonické vzory, které banky zavádějí v rámci DORA.",
+    "reviewed": false
+  },
+  "sovereign-cloud": {
+    "name": "Suverénní cloud",
+    "description": "Rezidence dat, cloud v regulovaných regionech a architektonické kompromisy při provozu bankovních úloh uvnitř suverénních hranic.",
+    "reviewed": false
+  },
+  "platform-engineering": {
+    "name": "Platform engineering",
+    "description": "Interní vývojářské platformy, golden paths, vyšlapané cesty: jak technologické organizace bank zvyšují produktivitu inženýrů.",
+    "reviewed": false
+  },
+  "operational-resilience": {
+    "name": "Provozní odolnost",
+    "description": "Důležité obchodní služby, tolerance dopadu, závažné, ale věrohodné scénáře a program provozní odolnosti, který banky musí provozovat.",
+    "reviewed": false
+  },
+  "cybersecurity": {
+    "name": "Kybernetická bezpečnost",
+    "description": "Provozní bezpečnost v bankovnictví: hrozby, kontroly, reakce na incidenty a regulatorní očekávání v oblasti odolnosti.",
+    "reviewed": false
+  },
+  "edge-computing": {
+    "name": "Edge computing",
+    "description": "Edge workery, ochrana proti podvodům na okraji sítě, CDN jako platforma: role edge výpočtů ve finančních úlohách.",
+    "reviewed": false
+  },
+  "dora": {
+    "name": "DORA",
+    "description": "Digital Operational Resilience Act: registr informací, riziko třetích stran v oblasti IKT, penetrační testy založené na hrozbách a program provozní odolnosti, který banky musí provozovat.",
+    "reviewed": false
+  },
+  "eu-ai-act": {
+    "name": "EU AI Act",
+    "description": "Pokyny k provádění, očekávání orgánů dohledu, klasifikace vysoce rizikových systémů a zátěž posuzování shody, kterou nařízení ukládá bankám.",
+    "reviewed": false
+  },
+  "nist": {
+    "name": "NIST",
+    "description": "Standardy NIST relevantní pro bankovnictví (FIPS 203/204, AI RMF, řady SP 800/1800) a způsob, jakým je přebírají orgány dohledu.",
+    "reviewed": false
+  },
+  "third-party-risk": {
+    "name": "Riziko třetích stran",
+    "description": "Riziko třetích stran v oblasti IKT podle DORA, obecné pokyny EBA k outsourcingu a očekávání orgánů dohledu ohledně koncentrace na kritické dodavatele.",
+    "reviewed": false
+  },
+  "open-source": {
+    "name": "Open source",
+    "description": "Open source software v regulovaném bankovnictví: rizika dodavatelského řetězce, atestace, pravidla přispívání a open source projekty, na kterých banky závisejí.",
+    "reviewed": false
+  },
+  "rust": {
+    "name": "Rust",
+    "description": "Rust v bankovní infrastruktuře: bezpečnost paměti, výkon a ekosystém crates relevantních pro finanční úlohy.",
+    "reviewed": false
+  },
+  "mcp": {
+    "name": "MCP",
+    "description": "Model Context Protocol: jak AI klienti vyhledávají a využívají bankovní obsah jako strukturované zdroje.",
+    "reviewed": false
+  },
+  "technology-strategy": {
+    "name": "Technologická strategie",
+    "description": "Témata CTO a CIO bank: vyrobit, nebo koupit, vyvinout, nebo spolupracovat, organizační design a strategická technologická agenda.",
+    "reviewed": false
+  },
+  "innovation": {
+    "name": "Inovace",
+    "description": "Redakční pokrytí strategických technologických změn v bankovnictví: co přichází, kdo to nasazuje a co to mění.",
+    "reviewed": false
+  },
+  "research": {
+    "name": "Výzkum",
+    "description": "Původní analýzy, indexy a benchmarky: datová práce, o kterou se opírá redakční stanovisko.",
+    "reviewed": false
+  },
+  "banking": {
+    "name": "Bankovnictví",
+    "description": "Bankovní odvětví jako redakční téma: co se mění, proč a co to znamená pro technologie, platby, riziko a provozní model.",
+    "reviewed": false
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "_comment": "Translated tag names and descriptions for the tag landing pages (/<lang>/<tags-path>/<slug>/): H1, deck, meta description, og:description and related-tag chips. English source: _data/taxonomy.yml; a missing entry or empty field falls back to it (scripts/generators/tag_landing_render.py). Drafted by Claude in a Claude Code session for v0.0.33; every entry stays reviewed: false until the owner has checked it. Standard, product and acronym names (ISO 20022, DORA, SWIFT, FIPS 203, CRYSTALS-Kyber, Model Context Protocol, ...) are kept as they are. _intentionally_english lists the tags whose name is identical to the English one, on purpose; descriptions are always translated. Gate: tests/unit/test_tag_i18n.py.",
+  "_intentionally_english": [
+    "ai",
+    "llm",
+    "iso-20022",
+    "swift",
+    "cbpr-plus",
+    "pacs-008",
+    "pain-001",
+    "ml-kem",
+    "ml-dsa",
+    "dora",
+    "eu-ai-act",
+    "nist",
+    "rust",
+    "mcp"
+  ],
+  "ai": {
+    "name": "AI",
+    "description": "금융 서비스의 응용 AI: 모델 배포, 거버넌스, AI 에이전트, LLM 도구, 그리고 은행 환경에서 운영되는 AI 인프라를 다룹니다.",
+    "reviewed": false
+  },
+  "agentic-ai": {
+    "name": "에이전트형 AI",
+    "description": "결제, 자금 관리, 은행 백오피스의 자율 AI 에이전트: 동의, 책임, 감사 추적, 프로토콜 상호 운용성을 다룹니다.",
+    "reviewed": false
+  },
+  "llm": {
+    "name": "LLM",
+    "description": "금융 업무의 대규모 언어 모델(LLM): 파인튜닝, RAG, 프롬프트 엔지니어링, 온디바이스 LLM, 추론 비용의 경제성을 다룹니다.",
+    "reviewed": false
+  },
+  "generative-ai": {
+    "name": "생성형 AI",
+    "description": "은행을 위한 생성형 모델(코드, 콘텐츠, 검색, 시뮬레이션)과 이를 안전하게 운영 환경에 배포하는 데 필요한 엔지니어링을 다룹니다.",
+    "reviewed": false
+  },
+  "ai-governance": {
+    "name": "AI 거버넌스",
+    "description": "모델 리스크, EU AI Act 적합성, NIST AI RMF, 이사회 차원의 책임, 외부 AI 공급업체, 그리고 은행 AI를 위한 컴플라이언스 체계를 다룹니다.",
+    "reviewed": false
+  },
+  "iso-20022": {
+    "name": "ISO 20022",
+    "description": "거액 결제와 소액 결제의 ISO 20022 전환: pacs.008, pain.001, camt 메시지, CBPR+, 그리고 데이터가 풍부한 결제 인프라를 다룹니다.",
+    "reviewed": false
+  },
+  "cross-border-payments": {
+    "name": "국경 간 결제",
+    "description": "외환, 환거래 은행 업무, 여러 결제망에 걸친 라우팅, G20 로드맵 목표, 그리고 국경을 넘는 송금의 비용과 속도를 다룹니다.",
+    "reviewed": false
+  },
+  "stablecoins": {
+    "name": "스테이블코인",
+    "description": "발행, 준비금, 상환, 규제, 그리고 은행 예금과 함께 결제 자산으로서 스테이블코인이 하는 역할을 다룹니다.",
+    "reviewed": false
+  },
+  "tokenised-deposits": {
+    "name": "토큰화 예금",
+    "description": "은행이 발행하는 예금 토큰, 원자적 결제, 프로그래밍 가능한 대차대조표, 그리고 토큰화된 상업은행 화폐를 둘러싼 정책 틀을 다룹니다.",
+    "reviewed": false
+  },
+  "real-time-payments": {
+    "name": "실시간 결제",
+    "description": "RTP, FedNow, SEPA Instant, 영국 Faster Payments: 즉시 결제망의 작동 방식, 유동성, 사기, 가격 책정을 다룹니다.",
+    "reviewed": false
+  },
+  "a2a-payments": {
+    "name": "A2A 결제",
+    "description": "계좌 간 결제망, 오픈뱅킹 기반 결제 지시, 그리고 그 위에서 이루어지는 에이전트형 결제 사용 사례를 다룹니다.",
+    "reviewed": false
+  },
+  "open-banking": {
+    "name": "오픈뱅킹",
+    "description": "PSD2, PSD3, CMA9, FDX: 오픈뱅킹 API, 결제 지시, 데이터 이동성의 기반을 다룹니다.",
+    "reviewed": false
+  },
+  "swift": {
+    "name": "SWIFT",
+    "description": "메시징, GPI, 결제 사전 검증, 그리고 다중 결제망 환경에서 변화하는 SWIFT의 역할을 다룹니다.",
+    "reviewed": false
+  },
+  "cbpr-plus": {
+    "name": "CBPR+",
+    "description": "Cross-Border Payments and Reporting Plus: 환거래 은행 업무를 위한 SWIFT의 ISO 20022 사용 지침입니다.",
+    "reviewed": false
+  },
+  "wholesale-payments": {
+    "name": "거액 결제",
+    "description": "은행 간 결제, 고액 결제, 금융시장 인프라 결제: 은행 인프라 경제성의 도매 측면을 다룹니다.",
+    "reviewed": false
+  },
+  "pacs-008": {
+    "name": "pacs.008",
+    "description": "국경 간 ISO 20022의 핵심인 고객 송금 메시지: 스키마, 검증, 자동화, 오케스트레이션을 다룹니다.",
+    "reviewed": false
+  },
+  "pain-001": {
+    "name": "pain.001",
+    "description": "고객 지급 지시 메시지: 기업 지급 팩토리, 검증, 그리고 MT101에서의 전환을 다룹니다.",
+    "reviewed": false
+  },
+  "payments-automation": {
+    "name": "결제 자동화",
+    "description": "결제 파일 생성과 검증, 예외 처리, 그리고 결제 운영의 엔지니어링 측면을 다룹니다.",
+    "reviewed": false
+  },
+  "programmable-liquidity": {
+    "name": "프로그래머블 유동성",
+    "description": "실시간 자금 관리, 일중 유동성 오케스트레이션, 프로그래밍 가능한 대차대조표, 그리고 에이전트형 자금 관리 스택을 다룹니다.",
+    "reviewed": false
+  },
+  "payments": {
+    "name": "결제",
+    "description": "결제 시스템, 결제망, 송금의 경제성을 폭넓게 다룹니다. 개별 결제망 태그의 상위에 있는 종합 편집 진입점입니다.",
+    "reviewed": false
+  },
+  "treasury": {
+    "name": "자금 관리",
+    "description": "기업과 은행의 자금 관리 업무: 유동성 관리, 현금 예측, 외환 헤지, 그리고 실시간 자금 관리를 뒷받침하는 운영 모델을 다룹니다. 에이전트형·자율형 자금 관리 관점은 프로그래머블 유동성에서 다룹니다.",
+    "reviewed": false
+  },
+  "digital-assets": {
+    "name": "디지털 자산",
+    "description": "토큰화 자산, 수탁, 결제 인프라, 그리고 전통 금융과 나란히 디지털 자산 인프라를 도입하는 기관의 움직임을 다룹니다.",
+    "reviewed": false
+  },
+  "decentralised-finance": {
+    "name": "탈중앙화 금융",
+    "description": "DeFi 프로토콜, 스마트 계약 리스크, 온체인 유동성, 그리고 은행이 DeFi 스택과 통합하는(또는 의도적으로 통합하지 않는) 지점을 다룹니다.",
+    "reviewed": false
+  },
+  "post-quantum-cryptography": {
+    "name": "포스트 양자 암호",
+    "description": "NIST 포스트 양자 표준, '지금 수집하고 나중에 해독하는' 위협, 하이브리드 핸드셰이크, 그리고 은행 암호 체계를 격자 기반 프리미티브로 전환하는 과정을 다룹니다.",
+    "reviewed": false
+  },
+  "blockchain": {
+    "name": "블록체인",
+    "description": "금융 인프라의 분산원장기술: 합의, 검증자, 스마트 계약 실행, 그리고 은행 업무에서 이 기반 기술이 쓰이는 곳을 다룹니다.",
+    "reviewed": false
+  },
+  "ml-kem": {
+    "name": "ML-KEM",
+    "description": "FIPS 203: 표준화된 포스트 양자 키 캡슐화 메커니즘(이전 명칭 CRYSTALS-Kyber)입니다.",
+    "reviewed": false
+  },
+  "ml-dsa": {
+    "name": "ML-DSA",
+    "description": "FIPS 204: 표준화된 포스트 양자 디지털 서명 알고리즘(이전 명칭 CRYSTALS-Dilithium)입니다.",
+    "reviewed": false
+  },
+  "crypto-agility": {
+    "name": "암호 민첩성",
+    "description": "암호 관련 자산의 목록화, 전환 경로 정의, 그리고 교체 가능한 암호 경계를 갖춘 운영 코드의 배포를 다룹니다.",
+    "reviewed": false
+  },
+  "cryptography": {
+    "name": "암호학",
+    "description": "은행 업무의 응용 암호학: 해시, 서명, KEM, 키 관리, 그리고 결제 인프라를 보호하는 암호 프리미티브를 다룹니다.",
+    "reviewed": false
+  },
+  "quantum-computing": {
+    "name": "양자 컴퓨팅",
+    "description": "하드웨어의 발전, 양자 알고리즘, 위협이 현실화되기까지의 시간, 그리고 양자 컴퓨팅이 은행 워크로드와 만나는 지점을 다룹니다.",
+    "reviewed": false
+  },
+  "hndl": {
+    "name": "지금 수집하고 나중에 해독",
+    "description": "HNDL 위협 모델: 공격자가 오늘 암호화된 트래픽을 수집해 두었다가 양자 하드웨어를 쓸 수 있게 되면 해독하는 방식입니다.",
+    "reviewed": false
+  },
+  "cloud-native-banking": {
+    "name": "클라우드 네이티브 뱅킹",
+    "description": "Kubernetes, 서비스 메시, 멀티 리전 복원력, 그리고 은행이 DORA에 따라 도입하는 클라우드 네이티브 아키텍처 패턴을 다룹니다.",
+    "reviewed": false
+  },
+  "sovereign-cloud": {
+    "name": "소버린 클라우드",
+    "description": "데이터 레지던시, 규제 지역 클라우드, 그리고 주권 경계 안에서 은행 워크로드를 운영할 때의 아키텍처 절충점을 다룹니다.",
+    "reviewed": false
+  },
+  "platform-engineering": {
+    "name": "플랫폼 엔지니어링",
+    "description": "내부 개발자 플랫폼, 골든 패스, 포장된 길: 은행 기술 조직이 엔지니어링 생산성을 높이는 방법을 다룹니다.",
+    "reviewed": false
+  },
+  "operational-resilience": {
+    "name": "운영 복원력",
+    "description": "중요 업무 서비스, 영향 허용 한도, 심각하지만 발생 가능한 시나리오, 그리고 은행이 운영해야 하는 운영 복원력 프로그램을 다룹니다.",
+    "reviewed": false
+  },
+  "cybersecurity": {
+    "name": "사이버 보안",
+    "description": "은행 업무의 운영 보안: 위협, 통제, 사고 대응, 그리고 복원력에 관한 규제 기대를 다룹니다.",
+    "reviewed": false
+  },
+  "edge-computing": {
+    "name": "엣지 컴퓨팅",
+    "description": "엣지 워커, 엣지에서의 사기 방지, 플랫폼으로서의 CDN: 금융 워크로드에서 엣지 컴퓨팅이 하는 역할을 다룹니다.",
+    "reviewed": false
+  },
+  "dora": {
+    "name": "DORA",
+    "description": "Digital Operational Resilience Act: 정보 등록부, ICT 제3자 리스크, 위협 기반 침투 테스트, 그리고 은행이 운영해야 하는 운영 복원력 프로그램을 다룹니다.",
+    "reviewed": false
+  },
+  "eu-ai-act": {
+    "name": "EU AI Act",
+    "description": "이행 지침, 감독 당국의 기대, 고위험 시스템 분류, 그리고 이 법이 은행에 부과하는 적합성 평가 부담을 다룹니다.",
+    "reviewed": false
+  },
+  "nist": {
+    "name": "NIST",
+    "description": "은행과 관련된 NIST 표준(FIPS 203/204, AI RMF, SP 800/1800 시리즈)과 감독 당국의 채택 방식을 다룹니다.",
+    "reviewed": false
+  },
+  "third-party-risk": {
+    "name": "제3자 리스크",
+    "description": "DORA에 따른 ICT 제3자 리스크, EBA 아웃소싱 지침, 그리고 핵심 공급업체 집중에 대한 감독 당국의 기대를 다룹니다.",
+    "reviewed": false
+  },
+  "open-source": {
+    "name": "오픈소스",
+    "description": "규제받는 은행 업무의 오픈소스 소프트웨어: 공급망 리스크, 증명, 기여 정책, 그리고 은행이 의존하는 오픈소스 프로젝트를 다룹니다.",
+    "reviewed": false
+  },
+  "rust": {
+    "name": "Rust",
+    "description": "은행 인프라의 Rust: 메모리 안전성, 성능, 그리고 금융 워크로드와 관련된 크레이트 생태계를 다룹니다.",
+    "reviewed": false
+  },
+  "mcp": {
+    "name": "MCP",
+    "description": "Model Context Protocol: AI 클라이언트가 은행 콘텐츠를 구조화된 리소스로 찾아 활용하는 방식입니다.",
+    "reviewed": false
+  },
+  "technology-strategy": {
+    "name": "기술 전략",
+    "description": "은행 CTO와 CIO의 관심사: 자체 개발과 구매, 직접 구축과 파트너십, 조직 설계, 그리고 전략적 기술 의제를 다룹니다.",
+    "reviewed": false
+  },
+  "innovation": {
+    "name": "혁신",
+    "description": "은행 업무의 전략적 기술 변화를 다루는 편집 기사: 무엇이 오고 있는지, 누가 실현하고 있는지, 무엇이 바뀌는지를 다룹니다.",
+    "reviewed": false
+  },
+  "research": {
+    "name": "리서치",
+    "description": "독자적인 분석, 지수, 벤치마크: 편집 관점을 뒷받침하는 데이터 작업입니다.",
+    "reviewed": false
+  },
+  "banking": {
+    "name": "은행업",
+    "description": "편집 주제로서의 은행 산업: 무엇이 바뀌고 있는지, 왜 바뀌는지, 그리고 그것이 기술, 결제, 리스크, 운영 모델에 어떤 의미인지를 다룹니다.",
+    "reviewed": false
+  }
+}

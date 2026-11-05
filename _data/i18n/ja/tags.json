@@ -1,0 +1,259 @@
+{
+  "_comment": "Translated tag names and descriptions for the tag landing pages (/<lang>/<tags-path>/<slug>/): H1, deck, meta description, og:description and related-tag chips. English source: _data/taxonomy.yml; a missing entry or empty field falls back to it (scripts/generators/tag_landing_render.py). Drafted by Claude in a Claude Code session for v0.0.33; every entry stays reviewed: false until the owner has checked it. Standard, product and acronym names (ISO 20022, DORA, SWIFT, FIPS 203, CRYSTALS-Kyber, Model Context Protocol, ...) are kept as they are. _intentionally_english lists the tags whose name is identical to the English one, on purpose; descriptions are always translated. Gate: tests/unit/test_tag_i18n.py.",
+  "_intentionally_english": [
+    "ai",
+    "llm",
+    "iso-20022",
+    "swift",
+    "cbpr-plus",
+    "pacs-008",
+    "pain-001",
+    "ml-kem",
+    "ml-dsa",
+    "dora",
+    "eu-ai-act",
+    "nist",
+    "rust",
+    "mcp"
+  ],
+  "ai": {
+    "name": "AI",
+    "description": "金融サービスにおける応用AI：モデルのデプロイ、ガバナンス、AIエージェント、LLMツール、そして銀行環境で稼働するAIインフラを扱います。",
+    "reviewed": false
+  },
+  "agentic-ai": {
+    "name": "エージェント型AI",
+    "description": "決済、トレジャリー、銀行のバックオフィスにおける自律型AIエージェント：同意、責任、監査証跡、プロトコルの相互運用性を扱います。",
+    "reviewed": false
+  },
+  "llm": {
+    "name": "LLM",
+    "description": "金融業務における大規模言語モデル（LLM）：ファインチューニング、RAG、プロンプトエンジニアリング、オンデバイスLLM、推論コストの経済性を扱います。",
+    "reviewed": false
+  },
+  "generative-ai": {
+    "name": "生成AI",
+    "description": "銀行向けの生成モデル（コード、コンテンツ、検索、シミュレーション）と、それらを安全に本番投入するために必要なエンジニアリングを扱います。",
+    "reviewed": false
+  },
+  "ai-governance": {
+    "name": "AIガバナンス",
+    "description": "モデルリスク、EU AI Act への適合、NIST AI RMF、取締役会レベルの説明責任、外部のAIベンダー、そして銀行におけるAIのコンプライアンス基盤を扱います。",
+    "reviewed": false
+  },
+  "iso-20022": {
+    "name": "ISO 20022",
+    "description": "ホールセール決済とリテール決済の ISO 20022 への移行：pacs.008、pain.001、camt メッセージ、CBPR+、そしてデータが豊富な決済基盤を扱います。",
+    "reviewed": false
+  },
+  "cross-border-payments": {
+    "name": "クロスボーダー決済",
+    "description": "外国為替、コルレス銀行業務、複数の決済網にまたがるルーティング、G20 ロードマップの目標、そして国境を越える送金のコストと速度を扱います。",
+    "reviewed": false
+  },
+  "stablecoins": {
+    "name": "ステーブルコイン",
+    "description": "発行、準備資産、償還、規制、そして銀行預金と並ぶ決済資産としてのステーブルコインの役割を扱います。",
+    "reviewed": false
+  },
+  "tokenised-deposits": {
+    "name": "トークン化預金",
+    "description": "銀行が発行する預金トークン、アトミック決済、プログラム可能なバランスシート、そしてトークン化された商業銀行マネーをめぐる政策の枠組みを扱います。",
+    "reviewed": false
+  },
+  "real-time-payments": {
+    "name": "リアルタイム決済",
+    "description": "RTP、FedNow、SEPA Instant、英国の Faster Payments：即時決済網の仕組み、流動性、不正、価格設定を扱います。",
+    "reviewed": false
+  },
+  "a2a-payments": {
+    "name": "A2A決済",
+    "description": "口座間決済網、オープンバンキングによる決済指図、そしてその上で動くエージェント型決済のユースケースを扱います。",
+    "reviewed": false
+  },
+  "open-banking": {
+    "name": "オープンバンキング",
+    "description": "PSD2、PSD3、CMA9、FDX：オープンバンキング API、決済指図、データポータビリティの基盤を扱います。",
+    "reviewed": false
+  },
+  "swift": {
+    "name": "SWIFT",
+    "description": "メッセージング、GPI、決済の事前検証、そしてマルチレール時代に変わりつつある SWIFT の役割を扱います。",
+    "reviewed": false
+  },
+  "cbpr-plus": {
+    "name": "CBPR+",
+    "description": "Cross-Border Payments and Reporting Plus：コルレス銀行業務向けの SWIFT による ISO 20022 利用ガイドラインです。",
+    "reviewed": false
+  },
+  "wholesale-payments": {
+    "name": "ホールセール決済",
+    "description": "銀行間決済、大口決済、金融市場インフラの決済：銀行インフラの経済性におけるホールセール側を扱います。",
+    "reviewed": false
+  },
+  "pacs-008": {
+    "name": "pacs.008",
+    "description": "クロスボーダーの ISO 20022 の中核となる顧客送金メッセージ：スキーマ、検証、自動化、オーケストレーションを扱います。",
+    "reviewed": false
+  },
+  "pain-001": {
+    "name": "pain.001",
+    "description": "顧客による支払指図メッセージ：企業のペイメントファクトリー、検証、そして MT101 からの移行を扱います。",
+    "reviewed": false
+  },
+  "payments-automation": {
+    "name": "決済自動化",
+    "description": "決済ファイルの作成と検証、例外処理、そして決済オペレーションのエンジニアリング面を扱います。",
+    "reviewed": false
+  },
+  "programmable-liquidity": {
+    "name": "プログラマブル流動性",
+    "description": "リアルタイム・トレジャリー、日中流動性のオーケストレーション、プログラム可能なバランスシート、そしてエージェント型トレジャリーのスタックを扱います。",
+    "reviewed": false
+  },
+  "payments": {
+    "name": "決済",
+    "description": "決済システム、決済網、送金の経済性を幅広く扱います。個別の決済網のタグの上位に位置する、編集上の総合的な入口です。",
+    "reviewed": false
+  },
+  "treasury": {
+    "name": "トレジャリー",
+    "description": "企業と銀行のトレジャリー業務：流動性管理、資金予測、為替ヘッジ、そしてリアルタイム・トレジャリーを支えるオペレーティングモデルを扱います。エージェント型・自律型トレジャリーの観点は「プログラマブル流動性」で扱います。",
+    "reviewed": false
+  },
+  "digital-assets": {
+    "name": "デジタル資産",
+    "description": "トークン化資産、カストディ、決済インフラ、そして伝統的金融と並ぶデジタル資産基盤の機関投資家による採用を扱います。",
+    "reviewed": false
+  },
+  "decentralised-finance": {
+    "name": "分散型金融",
+    "description": "DeFi プロトコル、スマートコントラクトのリスク、オンチェーン流動性、そして銀行が DeFi スタックと統合する（あるいは意図的に統合しない）領域を扱います。",
+    "reviewed": false
+  },
+  "post-quantum-cryptography": {
+    "name": "ポスト量子暗号",
+    "description": "NIST のポスト量子標準、「今収集し、後で解読する」脅威、ハイブリッド・ハンドシェイク、そして銀行の暗号を格子ベースのプリミティブへ移行する取り組みを扱います。",
+    "reviewed": false
+  },
+  "blockchain": {
+    "name": "ブロックチェーン",
+    "description": "金融インフラにおける分散型台帳技術：コンセンサス、バリデーター、スマートコントラクトの実行、そして銀行業務でこの基盤技術が使われる場面を扱います。",
+    "reviewed": false
+  },
+  "ml-kem": {
+    "name": "ML-KEM",
+    "description": "FIPS 203：標準化されたポスト量子鍵カプセル化メカニズム（旧称 CRYSTALS-Kyber）です。",
+    "reviewed": false
+  },
+  "ml-dsa": {
+    "name": "ML-DSA",
+    "description": "FIPS 204：標準化されたポスト量子デジタル署名アルゴリズム（旧称 CRYSTALS-Dilithium）です。",
+    "reviewed": false
+  },
+  "crypto-agility": {
+    "name": "暗号アジリティ",
+    "description": "暗号技術に関する資産の棚卸し、移行経路の策定、そして暗号の境界を差し替え可能にした本番コードの出荷を扱います。",
+    "reviewed": false
+  },
+  "cryptography": {
+    "name": "暗号技術",
+    "description": "銀行業務における応用暗号：ハッシュ、署名、KEM、鍵管理、そして決済基盤を守る暗号プリミティブを扱います。",
+    "reviewed": false
+  },
+  "quantum-computing": {
+    "name": "量子コンピューティング",
+    "description": "ハードウェアの進歩、量子アルゴリズム、脅威が現実になるまでの時間、そして量子計算が銀行のワークロードと交差する場面を扱います。",
+    "reviewed": false
+  },
+  "hndl": {
+    "name": "今収集し、後で解読する",
+    "description": "HNDL の脅威モデル：攻撃者が暗号化された通信を今のうちに取得し、量子ハードウェアが利用可能になった時点で解読するというものです。",
+    "reviewed": false
+  },
+  "cloud-native-banking": {
+    "name": "クラウドネイティブ・バンキング",
+    "description": "Kubernetes、サービスメッシュ、マルチリージョンのレジリエンス、そして銀行が DORA の下で採用しているクラウドネイティブなアーキテクチャパターンを扱います。",
+    "reviewed": false
+  },
+  "sovereign-cloud": {
+    "name": "ソブリンクラウド",
+    "description": "データレジデンシー、規制対象リージョンのクラウド、そして主権の境界内で銀行のワークロードを運用する際のアーキテクチャ上のトレードオフを扱います。",
+    "reviewed": false
+  },
+  "platform-engineering": {
+    "name": "プラットフォームエンジニアリング",
+    "description": "社内開発者プラットフォーム、ゴールデンパス、舗装された道：銀行のテクノロジー組織がエンジニアリングの生産性を高める方法を扱います。",
+    "reviewed": false
+  },
+  "operational-resilience": {
+    "name": "オペレーショナル・レジリエンス",
+    "description": "重要な業務サービス、影響許容度、深刻だが起こり得るシナリオ、そして銀行が運営しなければならないオペレーショナル・レジリエンスのプログラムを扱います。",
+    "reviewed": false
+  },
+  "cybersecurity": {
+    "name": "サイバーセキュリティ",
+    "description": "銀行業務における運用セキュリティ：脅威、統制、インシデント対応、そしてレジリエンスに関する規制上の期待を扱います。",
+    "reviewed": false
+  },
+  "edge-computing": {
+    "name": "エッジコンピューティング",
+    "description": "エッジワーカー、エッジでの不正対策、プラットフォームとしての CDN：金融ワークロードにおけるエッジコンピューティングの役割を扱います。",
+    "reviewed": false
+  },
+  "dora": {
+    "name": "DORA",
+    "description": "Digital Operational Resilience Act：情報登録簿、ICT 第三者リスク、脅威ベースのペネトレーションテスト、そして銀行が運営しなければならないオペレーショナル・レジリエンスのプログラムを扱います。",
+    "reviewed": false
+  },
+  "eu-ai-act": {
+    "name": "EU AI Act",
+    "description": "実施ガイダンス、監督当局の期待、高リスクシステムの分類、そして同法が銀行に課す適合性評価の負担を扱います。",
+    "reviewed": false
+  },
+  "nist": {
+    "name": "NIST",
+    "description": "銀行に関係する NIST の標準（FIPS 203/204、AI RMF、SP 800/1800 シリーズ）と、それらが監督の場でどう採用されているかを扱います。",
+    "reviewed": false
+  },
+  "third-party-risk": {
+    "name": "第三者リスク",
+    "description": "DORA の下での ICT 第三者リスク、EBA のアウトソーシング・ガイドライン、そして重要ベンダーへの集中に関する監督当局の期待を扱います。",
+    "reviewed": false
+  },
+  "open-source": {
+    "name": "オープンソース",
+    "description": "規制下の銀行業務におけるオープンソースソフトウェア：サプライチェーンリスク、アテステーション、コントリビューションポリシー、そして銀行が依存するオープンソースプロジェクトを扱います。",
+    "reviewed": false
+  },
+  "rust": {
+    "name": "Rust",
+    "description": "銀行インフラにおける Rust：メモリ安全性、性能、そして金融ワークロードに関係するクレートのエコシステムを扱います。",
+    "reviewed": false
+  },
+  "mcp": {
+    "name": "MCP",
+    "description": "Model Context Protocol：AI クライアントが銀行のコンテンツを構造化されたリソースとして発見し、利用する仕組みです。",
+    "reviewed": false
+  },
+  "technology-strategy": {
+    "name": "テクノロジー戦略",
+    "description": "銀行の CTO・CIO の関心事：内製か購入か、自社構築か提携か、組織設計、そして戦略的なテクノロジーの課題を扱います。",
+    "reviewed": false
+  },
+  "innovation": {
+    "name": "イノベーション",
+    "description": "銀行業務における戦略的な技術の変化を扱う編集記事：何が来るのか、誰が実用化しているのか、そして何が変わるのかを扱います。",
+    "reviewed": false
+  },
+  "research": {
+    "name": "リサーチ",
+    "description": "独自の分析、指数、ベンチマーク：編集上の立場を裏付けるデータ作業です。",
+    "reviewed": false
+  },
+  "banking": {
+    "name": "銀行業",
+    "description": "編集テーマとしての銀行業界：何が変わりつつあるのか、なぜか、そしてテクノロジー、決済、リスク、オペレーティングモデルにとって何を意味するのかを扱います。",
+    "reviewed": false
+  }
+}
