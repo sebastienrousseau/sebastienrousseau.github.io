@@ -10,6 +10,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.0.33] - Unreleased
+
+Type scale, search monitoring, redirect-map gate, translated tag landings and the theme back-port (ADR-0014).
+
+### Changed
+
+- **One fluid type scale**: every heading, lead, body, card, meta and eyebrow on every template now uses one of 14 `--fs-*` tokens (`clamp()` with rem bounds, plus a large-screen step from 120em) with matching `--lh-*` line heights, set at source in `_layouts/index.html` and `scripts/generators/gen_layouts.py`. At 1440 px the H1 on the eleven key pages goes from seven sizes to two (56 px for page and article titles, 76 px for display heroes). Context rules in `main.content` that outranked role classes no longer set a font size, so card titles, ledes and eyebrows inside `<main>` keep their own size. `.reuse h2` stays a 14 px label, `/projects/` keeps its rotating H1 at the h1 role so it fits 320 px, and `.spk-mono` stays relative to its heading. The visual-regression baselines move on purpose.
+- **Layouts follow the theme again**: the column system (0.0.31) and the type scale are back-ported to `themes/sebastienrousseau` in ssg-themes, and layouts render content with `{{!content}}`, so `make theme-sync` reproduces `_layouts/` exactly.
+
+### Fixed
+
+- **Tag landings speak the page's language**: in the 10 indexed locales, tag landing pages served the English H1, deck, meta description and `og:description`, because `_data/taxonomy.yml` was the only source. `_data/i18n/<lang>/tags.json` now holds a name and description for all 48 landing tags; `tag_landing_render.localise_taxonomy` uses them field by field, with English as the fallback. The strings are machine-drafted and every entry is `reviewed: false` pending owner review. Standard and product names (ISO 20022, SWIFT, DORA and others) stay as they are and are listed in `_intentionally_english`.
+- **Two English tag descriptions read correctly**: a folded line-end hyphen produced "severe-but- plausible" (Operational resilience), and Treasury showed literal `programmable-liquidity` markup.
+
+### Added
+
+- **Weekly Search Console report** (`scripts/seo_and_audit/search_weekly.py`, `.github/workflows/search-weekly.yml`, Mondays 07:17 UTC): impressions, clicks, CTR and position per locale and for the top 20 English pages, as a run summary and a CSV artifact. It opens or updates a `search-alert` issue when English or a kept locale falls 30% or more week on week, and skips cleanly until the `GSC_SERVICE_ACCOUNT_JSON` secret exists. Adds `google-auth` (hash-locked) to the dev requirements.
+- **Redirect map matches the build**: `scripts/seo_and_audit/check_redirect_map.py` runs in CI after the build and fails when `worker-assets/redirects.json` drifts from the built redirect stubs, a target does not render or is a stub, a source is a live page, an entry chains or loops, or a kept-locale article redirect is missing. `check_live_content.py` checks that 20 sampled redirects answer a single 301 on the live site.
+- **Type-scale gates**: `tests/unit/test_type_scale.py` checks the CSS source (tokens per role, operator spacing, rem bounds); `.github/ci-tools/visual/type-scale.mjs` in the visual job checks rendered sizes on 11 pages at 390, 1024, 1440 and 1920 px.
+- **`layouts-theme` CI job**: flattens the theme at a pinned commit and fails when `_layouts/` drifts from it.
+
 ## [0.0.32] - Unreleased
 
 Plan items 2.4 (author box and `Person` entity) and 2.5 (internal links), measured on the built site across the 11 indexed locales (1,320 articles) before and after.
