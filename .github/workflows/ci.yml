@@ -688,6 +688,13 @@ jobs:
           path: visual-current/
           retention-days: 7
 
+      - name: Type scale (11 pages at 390, 1024, 1440 and 1920 px)
+        # Every visible heading, paragraph, list item and eyebrow must
+        # render at one of the --fs-* token sizes, and no page may scroll
+        # sideways. tests/unit/test_type_scale.py checks the CSS source;
+        # this checks what the browser actually computes.
+        run: node .github/ci-tools/visual/type-scale.mjs --base http://127.0.0.1:8200 --report
+
       - name: Compare against committed baselines
         if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.refresh-baselines) }}
         run: |
