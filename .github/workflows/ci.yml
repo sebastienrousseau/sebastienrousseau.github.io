@@ -274,6 +274,14 @@ jobs:
       - name: Build site
         run: ./build.sh
 
+      - name: Worker redirect map matches the build
+        # build.sh rewrites worker-assets/redirects.json in the working tree,
+        # but the Worker deploys the committed file, and nothing compared the
+        # two. This regenerates the map from public/, diffs it against git
+        # HEAD, and checks targets, sources, chains and articles.json
+        # coverage. On failure, commit the map ./build.sh wrote.
+        run: python3 scripts/seo_and_audit/check_redirect_map.py
+
       - name: Post-build smoke tests + combined coverage gate (100 %)
         # The smoke suites are guarded by SKIP_IF_NO_BUILD and silently skip
         # in the pre-build pytest run. Re-run all of tests/unit/ now that
