@@ -10,7 +10,7 @@
       ">Авторские и поддерживаемые<"
     ],
     [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
       ">Обеспечение будущего банковского дела<br>с помощью агентного ИИ<br>и постквантовой криптографии.</h1>"
     ],
     [

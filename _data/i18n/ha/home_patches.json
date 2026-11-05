@@ -306,7 +306,7 @@
       ">Cikakken bayanin martaba</a>"
     ],
     [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
       ">Tabbatar da makomar banki<br>tare da agentic AI<br>da post-quantum cryptography.</h1>"
     ],
     [

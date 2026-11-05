@@ -192,7 +192,29 @@ curl -sI -H 'Accept-Language: fr-FR,fr;q=0.9,en;q=0.5' https://sebastienrousseau
   | grep -iE '(location|HTTP)'
 ```
 
-**Tests:** `node --test workers/test_lang_router.mjs` and
-`node --test workers/test_activitypub.mjs` exercise the pure helpers
-(routing, CSP headers, cookie reader, ActivityPub gating). Both run in
-`build.sh` with enforced 100% line/branch/function coverage.
+**Tests:** `node --test workers/test_lang_router.mjs`,
+`node --test workers/test_activitypub.mjs`, and
+`node --test workers/test_events.mjs` exercise the pure helpers
+(routing, CSP headers, cookie reader, ActivityPub gating, and first-party
+conversion event ingestion). All run in `build.sh` with enforced 100%
+line/branch/function coverage.
+
+## First-party conversion events & Core Web Vitals (`POST /api/event`)
+
+The Cloudflare Worker (`workers/events.js`, wired in `workers/lang-router.js`)
+accepts cookie-free, IP-free `POST /api/event` beacons from the same origin
+(`https://sebastienrousseau.com`) and writes data points into the
+`sebastien_pageviews` Analytics Engine dataset via the `AE` binding:
+
+- `blobs`: `[event_name, path, key, country]`
+- `doubles`: `[value]`
+- `indexes`: `[event_name]`
+
+To print a weekly summary of conversion events, page breakdown, and p75
+Core Web Vitals from the Cloudflare Analytics Engine SQL API:
+
+```bash
+CLOUDFLARE_ACCOUNT_ID="<account-id>" \
+CLOUDFLARE_API_TOKEN="<analytics-read-token>" \
+python3 scripts/seo_and_audit/events_report.py --days 7
+```

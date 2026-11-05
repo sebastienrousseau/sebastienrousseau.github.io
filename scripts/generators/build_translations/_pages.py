@@ -414,6 +414,14 @@ def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-pa
         shell,
         count=1,
     )
+    if slug in ("privacy", "terms", "editorial", "glossary"):
+        h1_text = re.split(r"\s+[—·-]\s+|,\s+", title, maxsplit=1)[0]
+        shell = re.sub(
+            r'(<section class="ap-hero"[^>]*>[\s\S]*?<h1[^>]*>)[^<]*(</h1>)',
+            rf"\g<1>{_html.escape(h1_text)}\g<2>",
+            shell,
+            count=1,
+        )
 
     # /playlists/ carries 39 generated cards, a featured band, five lane
     # heads, a 7-question FAQ and a device aside — far more body copy

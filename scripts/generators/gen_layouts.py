@@ -20,9 +20,15 @@ from pathlib import Path
 
 import _playlist_copy as _pl
 
+_sys.path.insert(0, str(_Path(__file__).resolve().parent))
+import design_system as _ds  # design system v2, see module docstring
+
 ROOT = Path(__file__).resolve().parents[2]
 LAYOUTS = ROOT / "_layouts"
-INDEX = (LAYOUTS / "index.html").read_text()
+# Strip any design-system wrapper so TOP/BOTTOM are the raw shell: every
+# layout gets the wrapper re-applied in write(), after its page-scoped CSS
+# has been appended, so that CSS always lands inside @layer legacy.
+INDEX = _ds.strip((LAYOUTS / "index.html").read_text())
 
 
 _FOOTER_NEWSLETTER = """        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Newsletter signup">
@@ -1425,6 +1431,7 @@ def with_banner_src(html: str) -> str:
 
 
 def write(name: str, html: str) -> None:
+    html = _ds.apply(html)
     (LAYOUTS / name).write_text(html)
     print(f"wrote _layouts/{name}  ({len(html):,} bytes)")
 
@@ -1456,6 +1463,10 @@ def main() -> None:
     write("contact.html", inject_schema(contact_layout(), "contact"))
     write("report.html", inject_schema(report_layout(), "report"))
     write("playlist.html", inject_schema(playlist_layout(), "playlist"))
+    # index.html is the shell source, not a generated layout, but it ships
+    # pages too (the homepage), so it carries the same wrapper.
+    (LAYOUTS / "index.html").write_text(_ds.apply(INDEX))
+    print("wrote _layouts/index.html  (design system applied)")
 
 
 if __name__ == "__main__":

@@ -221,6 +221,11 @@ if [[ -d assets/js/mcp-simulator ]]; then
   cp -f assets/js/mcp-simulator/iso20022-simulator.js public/_csp/iso20022-simulator.js
 fi
 
+if [[ -f assets/js/vendor/web-vitals.js ]]; then
+  mkdir -p public/_csp
+  cp -f assets/js/vendor/web-vitals.js public/_csp/web-vitals.js
+fi
+
 # Mirror .well-known/ into the build output so the OpenPGP Web Key
 # Directory (WKD) endpoint is served at
 #   https://sebastienrousseau.com/.well-known/openpgpkey/hu/<hash>
@@ -553,6 +558,7 @@ python3 tests/validation/test_sri_integrity.py
 python3 tests/validation/test_meta_description_clean.py
 python3 tests/validation/test_canonical_consistency.py
 python3 tests/validation/test_structured_data.py
+python3 scripts/seo_and_audit/check_unique_titles.py
 # Cloudflare Worker (edge Accept-Language router + security headers) —
 # pure-logic tests, no Cloudflare runtime required. 100% line/branch/
 # function coverage is enforced via Node's built-in test coverage so the
@@ -597,6 +603,20 @@ if command -v node >/dev/null 2>&1; then
     --test-coverage-functions=100 \
     --test-coverage-include='workers/pdf-proxy.js' \
     workers/test_pdf_proxy.mjs
+  node --test \
+    --experimental-test-coverage \
+    --test-coverage-lines=100 \
+    --test-coverage-branches=100 \
+    --test-coverage-functions=100 \
+    --test-coverage-include='workers/events.js' \
+    workers/test_events.mjs
+  node --test \
+    --experimental-test-coverage \
+    --test-coverage-lines=100 \
+    --test-coverage-branches=100 \
+    --test-coverage-functions=100 \
+    --test-coverage-include='assets/js/vendor/web-vitals.js' \
+    tests/unit/web-vitals/web-vitals.test.mjs
   # index-scorecard scoring core — the single source of truth for the
   # self-assessment composite maths + URL-state codec, imported unchanged by
   # the browser component. Golden-file pinned + gated at 100/100/100 so the

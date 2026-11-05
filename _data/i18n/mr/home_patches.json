@@ -9,7 +9,7 @@
       ">लिहिलेले & देखभाल केलेले<"
     ],
     [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
       ">बँकिंगचे भविष्य सुरक्षित करत आहे<br>एजंटिक AI सह<br>आणि पोस्ट-क्वांटम क्रिप्टोग्राफीने.</h1>"
     ],
     [

@@ -9,7 +9,7 @@
       ">எழுதப்பட்டு பராமரிக்கப்பட்டவை<"
     ],
     [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
       ">வங்கியின் எதிர்காலத்தைப் பாதுகாத்தல்<br>முகவர் சார்ந்த AI<br>மற்றும் பிந்தைய-குவாண்டம் குறியாக்கவியலுடன்.</h1>"
     ],
     [

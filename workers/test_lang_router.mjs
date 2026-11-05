@@ -872,3 +872,11 @@ test('handler: /actor delegates to ActivityPub handler, skips locale + CSP path'
   assert.match(res.headers.get('content-type'), /text\/plain/);
   assert.equal(passThroughLog.length, 0, 'AP routes must not pass through to origin');
 });
+
+test('handler: /api/event delegates to events handler with API security headers', async () => {
+  resetLog();
+  const res = await callHandler(makeRequest('https://sebastienrousseau.com/api/event'));
+  assert.equal(res.status, 405);
+  assert.equal(res.headers.get('allow'), 'POST');
+  assert.equal(passThroughLog.length, 0, '/api/event must not pass through to origin');
+});

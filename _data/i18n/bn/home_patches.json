@@ -306,7 +306,7 @@
       ">সম্পূর্ণ প্রোফাইল</a>"
     ],
     [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
       ">ব্যাংকিংয়ের ভবিষ্যৎ সুরক্ষিত করা<br>এজেন্টিক এআই<br>এবং পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফির মাধ্যমে।</h1>"
     ],
     [

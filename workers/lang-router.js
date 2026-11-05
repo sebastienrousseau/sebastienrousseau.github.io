@@ -308,6 +308,8 @@ import { tryPDF } from './pdf-proxy.js';
 // Live wall clock for the GitHub profile README: /api/clock/hero-<theme>.svg
 // returns the profile's hero SVG with its hands set to London time.
 import { tryClock } from './clock.js';
+// Cookie-free conversion & Core Web Vitals event sink: POST /api/event.
+import { tryEvent } from './events.js';
 
 // Permanent slug redirects shipped with the Shokunin → Static Site
 // Generator rebrand. Returns a 301 Response when the URL matches the
@@ -392,6 +394,9 @@ export default {
     // Profile clock — /api/clock/hero-<theme>.svg, uncached so it keeps time.
     const clockResponse = await tryClock(request);
     if (clockResponse) return withApiSecurityHeaders(clockResponse);
+    // Conversion & CWV event beacon — POST /api/event -> Analytics Engine.
+    const eventResponse = await tryEvent(request, env, ctx);
+    if (eventResponse) return withApiSecurityHeaders(eventResponse);
     // Permanent slug redirects from the Shokunin → Static Site
     // Generator rebrand. Runs before locale routing so the redirect
     // target hits the language flow on the new path.
