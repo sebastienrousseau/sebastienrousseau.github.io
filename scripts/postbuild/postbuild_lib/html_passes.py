@@ -318,6 +318,7 @@ def localised_listing_title(title: str, locale: str, labels: dict[str, str]) -> 
 
 _LOCALE_LABELS_CACHE: dict[str, dict[str, str]] = {}
 _PAGE_TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)
+_PAGE_META_LABEL_RE = re.compile(r'<p class="tag-landing-meta">([^<·]+?)\s*·')
 _OG_TITLE_ATTR_RE = re.compile(r'(<meta[^>]+property="og:title"[^>]+content=")([^"]*)(")')
 _TW_TITLE_ATTR_RE = re.compile(r'(<meta[^>]+name="twitter:title"[^>]+content=")([^"]*)(")')
 
@@ -352,14 +353,22 @@ def localise_listing_titles(page: Path, html: str) -> str:
         return html
     old = match.group(1).strip()
     new = localised_listing_title(old, locale, _labels_for(locale))
-    if new == old:
+    meta_m = (
+        _PAGE_META_LABEL_RE.search(html)
+        if len(page.parts) >= 3 and page.parts[-3] == "page"
+        else None
+    )
+    doc_title = f"{new} · {meta_m.group(1).strip()}" if meta_m else new
+    if doc_title == old:
         return html
-    out = _PAGE_TITLE_RE.sub(lambda _m: f"<title>{new}</title>", html, count=1)
+    out = _PAGE_TITLE_RE.sub(lambda _m: f"<title>{doc_title}</title>", html, count=1)
     out = _OG_TITLE_ATTR_RE.sub(
-        lambda m: m.group(1) + new + m.group(3) if m.group(2).strip() == old else m.group(0), out
+        lambda m: m.group(1) + doc_title + m.group(3) if m.group(2).strip() == old else m.group(0),
+        out,
     )
     out = _TW_TITLE_ATTR_RE.sub(
-        lambda m: m.group(1) + new + m.group(3) if m.group(2).strip() == old else m.group(0), out
+        lambda m: m.group(1) + doc_title + m.group(3) if m.group(2).strip() == old else m.group(0),
+        out,
     )
     out = re.sub(
         r"(<h1[^>]*>)" + re.escape(old) + r"(</h1>)",

@@ -674,6 +674,11 @@ jobs:
           python3 -m http.server 8200 --directory public --bind 127.0.0.1 &
           sleep 2
 
+      - name: Run rendered design-system gate (alignment, scale, reflow)
+        run: |
+          node .github/ci-tools/visual/design-system.mjs \
+            --base http://127.0.0.1:8200
+
       - name: Screenshot key pages
         run: |
           node .github/ci-tools/visual/visual.mjs shoot \

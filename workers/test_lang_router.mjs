@@ -890,3 +890,11 @@ test('handler 301s a doubled locale path before locale routing', async () => {
   assert.equal(res.status, 301);
   assert.equal(new URL(res.headers.get('location')).pathname, '/hi/2026-06-07-slug/');
 });
+
+test('handler: /api/event delegates to events handler with API security headers', async () => {
+  resetLog();
+  const res = await callHandler(makeRequest('https://sebastienrousseau.com/api/event'));
+  assert.equal(res.status, 405);
+  assert.equal(res.headers.get('allow'), 'POST');
+  assert.equal(passThroughLog.length, 0, '/api/event must not pass through to origin');
+});

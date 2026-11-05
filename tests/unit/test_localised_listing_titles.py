@@ -66,6 +66,19 @@ def test_the_page_pass_rewrites_title_og_and_h1_together(tmp_path):
     assert "<h1>記事</h1>" in out
 
 
+def test_paged_locale_listing_appends_page_label_to_title():
+    html = (
+        "<html><head><title>Articles</title>"
+        '<meta property="og:title" content="Articles">'
+        "</head><body><h1>Articles</h1>"
+        '<p class="tag-landing-meta">5 ページ中 2 ページ · 24 visible</p></body></html>'
+    )
+    out = localise_listing_titles(Path("ja/kiji/page/2/index.html"), html)
+    assert "<title>記事 · 5 ページ中 2 ページ</title>" in out
+    assert 'property="og:title" content="記事 · 5 ページ中 2 ページ"' in out
+    assert "<h1>記事</h1>" in out
+
+
 def test_an_english_page_is_untouched():
     html = "<html><head><title>Articles</title></head><body></body></html>"
     assert localise_listing_titles(Path("articles/index.html"), html) == html

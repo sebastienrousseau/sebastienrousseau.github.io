@@ -10,7 +10,7 @@
       ">作者编写并维护<"
     ],
     [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
       ">以代理式人工智能<br>和后量子密码学<br>守护银行业的未来。</h1>"
     ],
     [

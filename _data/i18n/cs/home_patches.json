@@ -10,7 +10,7 @@
       ">Vytvořeno a udržováno<"
     ],
     [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
       ">Zabezpečení budoucnosti bankovnictví<br>pomocí agentické AI<br>a post-kvantové kryptografie.</h1>"
     ],
     [

@@ -10,6 +10,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.0.34] - Unreleased
+
+Design system v2 (`assets/css/design-system.css` over `@layer legacy`), live-content drift verification, rendered Puppeteer design-system gate, unique page `<title>` enforcement across all 35 locales, and first-party `/api/event` conversion + Core Web Vitals telemetry.
+
+### Added
+
+- **Design system v2 (`assets/css/design-system.css` and `scripts/generators/design_system.py`)**: wraps each layout's shell stylesheet in `@layer legacy { ... }` and appends `assets/css/design-system.css` unlayered after `{{page_css}}`, enforcing one column grid (`--max`, `--measure`, `--max-wide`) and a 14-step `clamp()` fluid type scale (`--fs-micro` through `--fs-stat`) across `390px` to `1920px+` without `!important`.
+- **Rendered design-system browser gate (`.github/ci-tools/visual/design-system.mjs`)**: Puppeteer gate verifying H1/H2 column alignment, 14-step type-scale token conformance, and WCAG 1.4.10 reflow across 14 representative routes and 5 viewport widths (`390`, `768`, `1280`, `1440`, `1920`).
+- **Live-content drift gate (`scripts/seo_and_audit/check_live_content.py`)**: verifies hub markers, unlayered design-system CSS rules, proof-rail stamp freshness, RSS item presence on `/` and `/articles/`, and distinct legal/utility H1s in `.github/workflows/deploy-drift.yml`.
+- **Unique `<title>` gate (`scripts/seo_and_audit/check_unique_titles.py`)**: fails the build if any two non-redirect HTML pages share a `<title>`, wired into `build.sh`.
+- **First-party conversion and Core Web Vitals telemetry (`workers/events.js`, `assets/js/vendor/web-vitals.js`, `scripts/seo_and_audit/events_report.py`)**: cookie-free `POST /api/event` endpoint writing to Cloudflare Analytics Engine (`sebastien_pageviews`), client `emitTrack()` helper in `_layouts/main.js`, real-user LCP/INP/CLS collection, and weekly SQL report CLI.
+
+### Changed
+
+- **Proof-rail Updated stamp (`scripts/postbuild/postbuild_lib/seo.py`)**: `inject_kpi_stamp` derives `<span class="kpi-stamp">Updated ...</span>` from `_data/proof/metrics.json` `$generated_at`.
+- **Canonical tag pill labels (`scripts/postbuild/postbuild_lib/article_furniture.py`)**: `_tag_label` resolves tag slugs and aliases through `_data/taxonomy.yml` (`Banking` instead of raw `financial-services`).
+- **Legal and utility page headings (`_posts/editorial.md`, `_posts/glossary.md`, `_posts/privacy.md`, `_posts/terms.md`, `scripts/generators/build_translations/_pages.py`)**: each page now renders its own topic H1 rather than `"Sebastien Rousseau"`, and translated `/terms/` pages no longer reuse the privacy subtitle.
+
 ## [0.0.32] - Unreleased
 
 Plan items 2.4 (author box and `Person` entity) and 2.5 (internal links), measured on the built site across the 11 indexed locales (1,320 articles) before and after.

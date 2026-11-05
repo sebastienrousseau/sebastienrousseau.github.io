@@ -255,6 +255,24 @@ def _resolve_tag_slug(keyword: str, explicit_slug: str = "") -> str:
     return aliases.get(slug, slug)
 
 
+def _tag_label(slug: str, keyword: str, lang: str = "en") -> str:
+    """The pill's visible label: the canonical taxonomy ``name`` in English.
+
+    Front-matter keywords are free text, so the pill used to show raw slugs
+    ("ai-governance") beside display names ("AI"), and a keyword could read
+    "financial-services" while linking to the Banking landing page. Showing
+    the canonical name makes the label match the page it opens. Other
+    locales keep the keyword, which build_translations already localises.
+    """
+    if lang == "en":
+        entry = _load_taxonomy().get(slug)
+        if isinstance(entry, dict):
+            name = str(entry.get("name", "")).strip()
+            if name:
+                return name
+    return keyword
+
+
 def _render_tag_badges(
     keywords: list[str],
     labels: dict[str, str],
@@ -278,7 +296,10 @@ def _render_tag_badges(
         slug = _resolve_tag_slug(k, explicit)
         if slug and slug not in seen and _has_landing(slug, lang):
             seen.add(slug)
-            badges_html.append(f'<a href="{prefix}/{slug}/" class="article-tag" rel="tag">{k}</a>')
+            label = _tag_label(slug, k, lang)
+            badges_html.append(
+                f'<a href="{prefix}/{slug}/" class="article-tag" rel="tag">{label}</a>'
+            )
     if not badges_html:
         return ""
     aria = labels.get("Topics", "Topics")

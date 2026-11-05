@@ -922,6 +922,149 @@ function fallbackCopy(text, done) {
 })();
 
 /**
+ * Site-wide, cookie-free conversion and interaction event helper.
+ * Dispatches CustomEvent("sr:track"), forwards to Plausible/Umami if present,
+ * and sends a first-party beacon to POST /api/event (Analytics Engine).
+ */
+function emitTrack(eventName, props) {
+    props = props || {};
+    try {
+        document.dispatchEvent(
+            new CustomEvent("sr:track", {
+                detail: { event: eventName, props: props }
+            })
+        );
+    } catch (_) {}
+    try {
+        if (typeof window.plausible === "function") {
+            window.plausible(eventName, { props: props });
+        } else if (window.umami && typeof window.umami.track === "function") {
+            window.umami.track(eventName, props);
+        }
+    } catch (_) {}
+    try {
+        if (navigator && typeof navigator.sendBeacon === "function") {
+            var k =
+                props.k ||
+                props.lens ||
+                props.location ||
+                props.source ||
+                props.paper ||
+                props.href ||
+                "";
+            var payload = {
+                e: eventName,
+                p: window.location ? window.location.pathname : "/"
+            };
+            if (typeof props.v === "number" && isFinite(props.v)) {
+                payload.v = props.v;
+            }
+            if (k) {
+                payload.k = String(k).slice(0, 200);
+            }
+            navigator.sendBeacon(
+                "/api/event",
+                new Blob([JSON.stringify(payload)], { type: "application/json" })
+            );
+        }
+    } catch (_) {}
+}
+window.__srEmitTrack = emitTrack;
+
+(function siteConversionTracking() {
+    "use strict";
+    document.addEventListener(
+        "click",
+        function (event) {
+            var t = event.target;
+            if (!t || typeof t.closest !== "function") return;
+
+            var mcpCopy = t.closest(".mcp-copy");
+            if (mcpCopy) {
+                var targetSel = mcpCopy.getAttribute("data-copy") || "";
+                var clientTab = targetSel.replace(/^#mcp-code-/, "");
+                emitTrack("copy_config", { k: clientTab || targetSel });
+                return;
+            }
+
+            var otherCopy = t.closest("[data-copy],\x20[data-copy-link]");
+            if (otherCopy) {
+                var copyTarget =
+                    otherCopy.getAttribute("data-copy") ||
+                    otherCopy.getAttribute("data-copy-link") ||
+                    "";
+                emitTrack("copy_code", { k: copyTarget });
+                return;
+            }
+
+            var articleCta = t.closest(".article-cta\x20a");
+            if (articleCta) {
+                emitTrack("article_cta", {
+                    k: articleCta.getAttribute("href") || ""
+                });
+                return;
+            }
+
+            var advisoryCta = t.closest(
+                ".mcp-advisory\x20a,\x20.mcp-advisory-card\x20a,\x20#mcp-finale\x20a"
+            );
+            if (advisoryCta) {
+                emitTrack("advisory_cta", {
+                    k: advisoryCta.getAttribute("href") || ""
+                });
+                return;
+            }
+
+            var paperLink = t.closest('a[href*="Quantum-Safe-Payments"]');
+            if (paperLink) {
+                emitTrack("paper_download", {
+                    paper: "epaa-quantum-safe-payments-2025",
+                    k: "epaa-quantum-safe-payments-2025"
+                });
+                return;
+            }
+
+            var featCta = t.closest(
+                ".feat-hero\x20.feat-cta\x20a,\x20.feat-finale\x20.feat-cta\x20a,\x20.ap-cta-mini"
+            );
+            if (featCta) {
+                var href = featCta.getAttribute("href") || "";
+                emitTrack("cta_click", {
+                    href: href,
+                    label: (featCta.textContent || "").trim(),
+                    k: href
+                });
+                if (href.indexOf("contact") !== -1) {
+                    var loc = featCta.classList.contains("ap-cta-mini")
+                        ? "header"
+                        : featCta.closest(".feat-hero")
+                        ? "hero"
+                        : "band";
+                    emitTrack("cta_get_in_touch", { location: loc, k: loc });
+                }
+            }
+        },
+        true
+    );
+
+    document.addEventListener(
+        "submit",
+        function (event) {
+            var form = event.target;
+            if (!form || !form.classList || !form.classList.contains("ap-newsletter")) {
+                return;
+            }
+            var src =
+                form.closest && form.closest(".newsletter-band")
+                    ? "homepage_band"
+                    : "footer";
+            emitTrack("newsletter_submit", { source: src, k: src });
+        },
+        true
+    );
+})();
+
+/**
  * "Read as…" audience path selector (homepage, Phase 8; extended to the
  * /iso20022-mcp/ hub, whose generator tags every section the same way).
  *
@@ -978,23 +1121,6 @@ function fallbackCopy(text, done) {
         engineers: "Sebastien Rousseau · For Engineers: ISO 20022 & FIPS 203 Open Source",
         regulators: "Sebastien Rousseau · For Regulators: Quantum-Safe Payments & DORA"
     };
-
-    function emitTrack(eventName, props) {
-        try {
-            document.dispatchEvent(
-                new CustomEvent("sr:track", {
-                    detail: { event: eventName, props: props || {} }
-                })
-            );
-        } catch (_) {}
-        try {
-            if (typeof window.plausible === "function") {
-                window.plausible(eventName, { props: props || {} });
-            } else if (window.umami && typeof window.umami.track === "function") {
-                window.umami.track(eventName, props || {});
-            }
-        } catch (_) {}
-    }
 
     // Snapshot the authored section order once so "Everyone" restores it.
     // Not `:scope >`: the build can wrap the authored sections in an extra
@@ -1139,45 +1265,6 @@ function fallbackCopy(text, done) {
             }
         });
     });
-
-    // Privacy-friendly, cookie-free interaction hooks for hero CTAs, white paper, and newsletter signup.
-    Array.prototype.slice
-        .call(document.querySelectorAll(".feat-hero\x20.feat-cta\x20a,\x20.feat-finale\x20.feat-cta\x20a,\x20.ap-cta-mini"))
-        .forEach(function (link) {
-            link.addEventListener("click", function () {
-                var href = link.getAttribute("href") || "";
-                emitTrack("cta_click", {
-                    href: href,
-                    label: (link.textContent || "").trim()
-                });
-                if (href.indexOf("contact") !== -1) {
-                    var loc = link.classList.contains("ap-cta-mini")
-                        ? "header"
-                        : link.closest(".feat-hero")
-                        ? "hero"
-                        : "band";
-                    emitTrack("cta_get_in_touch", { location: loc });
-                }
-            });
-        });
-    Array.prototype.slice
-        .call(document.querySelectorAll('a[href*="Quantum-Safe-Payments"]'))
-        .forEach(function (link) {
-            link.addEventListener("click", function () {
-                emitTrack("paper_download", {
-                    paper: "epaa-quantum-safe-payments-2025"
-                });
-            });
-        });
-    Array.prototype.slice
-        .call(document.querySelectorAll("form.ap-newsletter"))
-        .forEach(function (form) {
-            form.addEventListener("submit", function () {
-                emitTrack("newsletter_submit", {
-                    source: form.closest(".newsletter-band") ? "homepage_band" : "footer"
-                });
-            });
-        });
 
     // Initial lens: URL param (?for= or ?read=) wins (shared link), else stored preference.
     var initial = "";
@@ -1519,6 +1606,7 @@ function fallbackCopy(text, done) {
                 u.searchParams.set("client", chosen.slug);
                 window.history.replaceState(null, "", u.toString());
             } catch (e2) {}
+            emitTrack("tab_select", { k: chosen.slug });
         }
     }
 

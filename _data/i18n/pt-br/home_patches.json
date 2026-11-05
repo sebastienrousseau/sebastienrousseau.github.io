@@ -10,7 +10,7 @@
       ">Criados e mantidos<"
     ],
     [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
       ">Protegendo o futuro dos bancos<br>com IA agêntica<br>e criptografia pós-quântica.</h1>"
     ],
     [
