@@ -74,7 +74,7 @@ if str(SCRIPTS) not in sys.path:
 # ---------------------------------------------------------------------------
 
 PUBLIC = ROOT / "public"
-_CLONED = ("public", "_posts", "_data", "_layouts")
+_CLONED = ("public", "_posts", "_data", "_layouts", "assets")
 _sandbox: Path | None = None
 # Keyed by module object, not name: ``test_cli_smoke._import_fresh`` pops
 # and re-imports a module, and the fresh object must be repointed again.

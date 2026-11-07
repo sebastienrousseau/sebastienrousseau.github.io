@@ -10,7 +10,7 @@
       ">집필 및 유지 관리<"
     ],
     [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
       ">에이전트 AI<br>와 포스트 양자 암호로<br>은행의 미래를 보호하다.</h1>"
     ],
     [

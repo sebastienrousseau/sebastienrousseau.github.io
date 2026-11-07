@@ -169,7 +169,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
-      THEME_SHA: "64e42154dceec9768c6b4cbb490b892041ba4fa9"
+      THEME_SHA: "e90457c757245e3441f7bf6ea09596c73decec69"
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
@@ -715,6 +715,11 @@ jobs:
         run: |
           python3 -m http.server 8200 --directory public --bind 127.0.0.1 &
           sleep 2
+
+      - name: Run rendered design-system gate (alignment, scale, reflow)
+        run: |
+          node .github/ci-tools/visual/design-system.mjs \
+            --base http://127.0.0.1:8200
 
       - name: Screenshot key pages
         run: |

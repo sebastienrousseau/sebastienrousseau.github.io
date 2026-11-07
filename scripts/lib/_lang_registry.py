@@ -501,6 +501,7 @@ _STRINGS_KEY_TO_PATCH: tuple[tuple[str, str], ...] = (
     ("nav.aria.lightTheme", "attr:aria-label"),
     ("nav.aria.themeToggleTitle", "attr:title"),
     ("nav.aria.searchTitle", "attr:title"),
+    ("nav.aria.searchKbd", "attr:aria-label"),
     ("nav.aria.contactCTA", "attr:aria-label"),
     ("nav.contactCTA", "text-a"),
     ("nav.aria.brandHome", "attr:aria-label"),

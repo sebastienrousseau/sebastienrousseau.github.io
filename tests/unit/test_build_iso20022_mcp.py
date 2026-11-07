@@ -290,7 +290,7 @@ def test_security_strip_has_four_verified_claims() -> None:
     assert "Zero data retention." in strip
     assert "no outbound network calls" in strip
     assert "Apache-2.0" in strip
-    assert "100% branch-tested." in strip
+    assert "Tested on every path." in strip
 
 
 def test_clients_grid_covers_stdio_and_remote_accurately() -> None:
@@ -436,7 +436,7 @@ def test_start_has_four_steps_with_human_loop() -> None:
     sec = out.split('id="mcp-start"', 1)[1].split("</section>", 1)[0]
     assert sec.count('<div class="spk-path">') == 4
     assert "Keep humans in the loop." in sec
-    assert "never moves money directly" in sec
+    assert "Generation stays separate from execution" in sec
     assert "final human approval and settlement" in sec
 
 
@@ -508,7 +508,7 @@ def test_board_section_is_qualitative_and_first_after_hero() -> None:
     for eyebrow in ("WHAT IT COSTS", "WHAT IT RISKS", "WHAT IT REPLACES"):
         assert f">{eyebrow}</span>" in sec
     assert "Free. Apache-2.0." in sec
-    assert "Money never moves without a human." in sec
+    assert "A human approves every payment." in sec
     assert "Bespoke ISO 20022 integration work." in sec
     # Qualitative only: no invented savings figures anywhere in the tiles.
     for token in ("$", "€", "£", "%", "ROI", "save", "saving"):

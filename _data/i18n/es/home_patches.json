@@ -10,7 +10,7 @@
       ">Creados y mantenidos<"
     ],
     [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
       ">Asegurando el futuro de la banca<br>con IA agéntica<br>y criptografía post-cuántica.</h1>"
     ],
     [

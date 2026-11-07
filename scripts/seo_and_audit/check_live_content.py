@@ -1,142 +1,148 @@
 #!/usr/bin/env python3
 # SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
 # SPDX-License-Identifier: Apache-2.0 OR MIT
+"""Assert the LIVE site serves the current build, not a stale copy.
 
-"""Probe the live site: renamed URLs answer one permanent redirect.
+The hourly drift job used to probe ``/iso20022-mcp/`` with ``curl -I``. On
+1 Nov 2026 that check stayed green while the edge served the pre-overhaul
+hub (19 sections, no advisory CTA, a broken ``project-docs/sigstore.md``
+link) for two days after ``main`` had shipped the new one: a 200 says the
+path exists, not what is on it.
 
-The lang-router Worker answers every source in
-``worker-assets/redirects.json`` with a 301 to its final URL before origin
-is touched. ``check_redirect_map.py`` proves the committed map matches the
-build; this proves the deployed Worker actually serves it. A 302, a 200
-(the meta-refresh stub served from origin, meaning the Worker or its
-assets binding is missing) or a Location other than the mapped target all
-fail.
+This script checks content markers instead. Each check is a pure function
+over fetched text so tests/unit/test_check_live_content.py can exercise it
+offline. Markers tolerate minified HTML (bare attribute values).
 
-It runs against the public hostname, so it belongs after a Worker deploy,
-not in the Pages deploy job: ``verify_deploy.py`` probes the Pages origin,
-where the Worker never runs. It sends ``--sample`` HEAD requests (20 by
-default), one at a time with a pause between them, and never follows a
-redirect. The sample is spread evenly over the sorted map; ``--seed``
-rotates the starting point (default: today's date), so successive runs
-cover different entries and any run can be repeated exactly.
-
-Usage: ``python3 scripts/seo_and_audit/check_live_content.py [--base URL]``
+Exit 0 when every check passes, 1 otherwise, listing each failure.
 """
 
 from __future__ import annotations
 
 import argparse
-import datetime as dt
-import json
+import datetime as _dt
+import re
 import sys
-import time
-import urllib.error
 import urllib.request
-from email.message import Message
-from pathlib import Path
-from typing import IO, Protocol
-from urllib.parse import quote, unquote
+from collections.abc import Callable
 
-ROOT = Path(__file__).resolve().parents[2]
-MAP = ROOT / "worker-assets" / "redirects.json"
-DEFAULT_BASE = "https://sebastienrousseau.com"
-SAMPLE = 20
-DELAY = 1.0
-TIMEOUT = 20
-_UA = "sebastienrousseau.com-live-content-check/1.0"
+BASE = "https://sebastienrousseau.com"
+UA = "sebastienrousseau.com deploy-drift check (+https://github.com/sebastienrousseau)"
+MAX_STAMP_AGE_DAYS = 31
 
 
-class Opener(Protocol):
-    def open(self, fullurl: urllib.request.Request, /, *, timeout: float = ...) -> object: ...
+def _attr(name: str, value: str) -> re.Pattern[str]:
+    """Match ``name="value"``, ``name='value'`` or minified ``name=value``."""
+    return re.compile(rf"\b{name}\s*=\s*[\"']?{re.escape(value)}(?=[\"'\s>])", re.I)
 
 
-class NoRedirect(urllib.request.HTTPRedirectHandler):
-    """Surface every 3xx as an ``HTTPError`` instead of following it."""
+def check_hub(html: str) -> list[str]:
+    """The ISO 20022 MCP hub must be the consolidated build."""
+    errors = []
+    if not _attr("id", "mcp-faq").search(html):
+        errors.append("/iso20022-mcp/: no #mcp-faq section (stale pre-overhaul hub?)")
+    if "project-docs/sigstore" in html:
+        errors.append("/iso20022-mcp/: links to project-docs/sigstore.md, which does not exist")
+    sections = len(re.findall(r"<section\b", html, re.I))
+    if sections > 20:
+        errors.append(f"/iso20022-mcp/: {sections} <section> elements (hub cap is 15 + chrome)")
+    return errors
 
-    def redirect_request(
-        self,
-        req: urllib.request.Request,
-        fp: IO[bytes] | None,
-        code: int,
-        msg: str,
-        headers: Message,
-        newurl: str,
-    ) -> None:
+
+def stylesheet_urls(html: str) -> list[str]:
+    """Same-origin stylesheet hrefs, in document order."""
+    out = []
+    for tag in re.findall(r"<link\b[^>]*>", html, re.I):
+        if not re.search(r"\brel\s*=\s*[\"']?stylesheet", tag, re.I):
+            continue
+        m = re.search(r"\bhref\s*=\s*[\"']?([^\"'\s>]+)", tag, re.I)
+        if m and m.group(1).startswith("/") and not m.group(1).startswith("//"):
+            out.append(m.group(1))
+    return out
+
+
+def check_design_system(css_bundle: str) -> list[str]:
+    """The design-system layer must be in the shipped CSS."""
+    errors = []
+    if "@layer legacy" not in css_bundle:
+        errors.append("CSS: legacy rules are not wrapped in @layer legacy")
+    errors.extend(
+        f"CSS: design-system token {token} missing"
+        for token in ("--fs-display", "--fs-prose", "--measure")
+        if token not in css_bundle
+    )
+    return errors
+
+
+def check_stamp(html: str, today: _dt.date) -> list[str]:
+    """The homepage proof stamp must be no older than MAX_STAMP_AGE_DAYS."""
+    m = re.search(
+        r"proof-updated[^>]*>[^<]*<time[^>]*\bdatetime\s*=\s*[\"']?(\d{4}-\d{2}-\d{2})",
+        html,
+        re.I,
+    )
+    if not m:
+        return ["/: proof-rail 'Updated' stamp not found"]
+    age = (today - _dt.date.fromisoformat(m.group(1))).days
+    if age > MAX_STAMP_AGE_DAYS:
+        return [f"/: proof stamp is {age} days old ({m.group(1)})"]
+    return []
+
+
+def newest_feed_link(rss: str) -> str | None:
+    """Path of the first <item>'s <link> in an RSS feed."""
+    item = re.search(r"<item\b.*?</item>", rss, re.S | re.I)
+    if not item:
         return None
+    link = re.search(r"<link>\s*([^<\s]+)\s*</link>", item.group(0), re.I)
+    if not link:
+        return None
+    path = re.sub(r"^https?://[^/]+", "", link.group(1))
+    return path.rstrip("/").removesuffix("/index.html")
 
 
-def build_opener() -> urllib.request.OpenerDirector:
-    return urllib.request.build_opener(NoRedirect())
+def check_freshness(newest: str | None, home: str, articles: str) -> list[str]:
+    """The newest article must appear on the homepage and the articles index."""
+    if not newest:
+        return ["rss.xml: no first item"]
+    errors = []
+    for name, html in (("/", home), ("/articles/", articles)):
+        if newest not in html:
+            errors.append(f"{name}: newest article {newest} not listed (stale page?)")
+    return errors
 
 
-def sample(sources: list[str], k: int, seed: int) -> list[str]:
-    """``k`` sources spread evenly over ``sorted(sources)``, rotated by seed."""
-    ordered = sorted(sources)
-    n = len(ordered)
-    if n <= k:
-        return ordered
-    step = n / k
-    offset = seed % max(1, int(step))
-    return [ordered[(offset + int(i * step)) % n] for i in range(k)]
+def _fetch(path: str, timeout: int = 30) -> str:
+    req = urllib.request.Request(
+        BASE + path, headers={"User-Agent": UA, "Cache-Control": "no-cache"}
+    )
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read().decode("utf-8", errors="replace")
 
 
-def probe(url: str, opener: Opener) -> tuple[int, str | None]:
-    """``(status, Location)`` of one HEAD request, redirects not followed."""
-    req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": _UA})
-    try:
-        opener.open(req, timeout=TIMEOUT)
-    except urllib.error.HTTPError as exc:
-        return exc.code, exc.headers.get("Location")
-    return 200, None
-
-
-def check_redirect(base: str, source: str, target: str, opener: Opener) -> str | None:
-    """None when ``source`` answers a 301 straight to ``target``."""
-    url = base + quote(source, safe="/")
-    try:
-        status, location = probe(url, opener)
-    except (urllib.error.URLError, TimeoutError) as exc:
-        return f"{url}: unreachable ({exc})"
-    if status != 301:
-        return f"{url}: HTTP {status}, expected 301"
-    want = base + target
-    if unquote(location or "") != want:
-        return f"{url}: 301 to {location}, expected {want}"
-    return None
-
-
-def _parse(argv: list[str] | None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--base", default=DEFAULT_BASE)
-    parser.add_argument("--map", type=Path, default=MAP)
-    parser.add_argument("--sample", type=int, default=SAMPLE)
-    parser.add_argument("--seed", type=int, default=dt.date.today().toordinal())
-    parser.add_argument("--delay", type=float, default=DELAY, help="seconds between requests")
-    return parser.parse_args(argv)
+def run(fetch: Callable[[str], str] = _fetch, today: _dt.date | None = None) -> list[str]:
+    today = today or _dt.datetime.now(_dt.UTC).date()
+    home = fetch("/")
+    hub = fetch("/iso20022-mcp/")
+    articles = fetch("/articles/")
+    rss = fetch("/rss.xml")
+    css = "".join(fetch(u) for u in stylesheet_urls(home))
+    return (
+        check_hub(hub)
+        + check_design_system(css)
+        + check_stamp(home, today)
+        + check_freshness(newest_feed_link(rss), home, articles)
+    )
 
 
 def main(argv: list[str] | None = None) -> int:
-    args = _parse(argv)
-    base = args.base.rstrip("/")
-    redirects: dict[str, str] = json.loads(args.map.read_text(encoding="utf-8"))["redirects"]
-    picks = sample(list(redirects), args.sample, args.seed)
-    opener = build_opener()
-    problems = []
-    for i, source in enumerate(picks):
-        if i:
-            time.sleep(args.delay)
-        problem = check_redirect(base, source, redirects[source], opener)
-        if problem:
-            problems.append(problem)
-    if problems:
-        print(f"check_live_content: {len(problems)} of {len(picks)} failed", file=sys.stderr)
-        for p in problems:
-            print(f"  ::error::{p}", file=sys.stderr)
-        return 1
-    print(
-        f"check_live_content: OK: {len(picks)} sampled renamed URLs answer one 301 (seed {args.seed})"
-    )
-    return 0
+    desc = (__doc__ or "").splitlines()[0]
+    argparse.ArgumentParser(description=desc).parse_args(argv)
+    errors = run()
+    for e in errors:
+        print(f"::error::{e}")
+    if not errors:
+        print("live content: hub, design system, proof stamp and freshness all current")
+    return 1 if errors else 0
 
 
 if __name__ == "__main__":

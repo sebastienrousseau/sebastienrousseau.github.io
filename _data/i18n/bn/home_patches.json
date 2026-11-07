@@ -274,8 +274,8 @@
       "aria-label=\"লাইট থিম চালু করুন\""
     ],
     [
-      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
-      "aria-label=\"অনুসন্ধান (Cmd বা Ctrl + K)\""
+      "aria-label=\"Search ⌘K\"",
+      "aria-label=\"অনুসন্ধান ⌘K\""
     ],
     [
       "title=\"Search \\(⌘K\\)\"",

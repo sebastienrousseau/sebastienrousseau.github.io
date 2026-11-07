@@ -56,8 +56,15 @@ jobs:
             --repos "$RUNNER_TEMP/pages-repos.txt" \
             --sitemap "$RUNNER_TEMP/sitemap.xml" \
             --self "$SELF"
-          curl -fsSI --max-time 30 https://sebastienrousseau.com/iso20022-mcp/ >/dev/null
           curl -fsSI --max-time 30 https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/docs/sigstore.md >/dev/null
+          # Content, not status: a 200 kept this green while the edge served
+          # a two-day-old hub. Checks hub markers, the design-system layer in
+          # the shipped CSS, the proof stamp's age, and that the newest RSS
+          # item is listed on / and /articles/.
+          python3 scripts/seo_and_audit/check_live_content.py
+          # The lang-router Worker answers a sample of 20 renamed URLs with
+          # one 301 to the mapped target (the Worker deploys outside CI).
+          python3 scripts/seo_and_audit/check_live_redirects.py
 
       - name: Compare deployed commit with main
         env:

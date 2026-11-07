@@ -32,11 +32,12 @@ jobs:
           node-version: "22"
       - name: All Worker suites
         run: node --test workers/test_*.mjs
-      - name: Clock routes at 100% coverage
+      - name: Clock and event routes at 100% coverage
         run: |
           node --test --experimental-test-coverage \
             --test-coverage-include='workers/clock.js' \
             --test-coverage-include='workers/profile-clock.js' \
+            --test-coverage-include='workers/events.js' \
             --test-coverage-functions=100 --test-coverage-lines=100 \
             --test-coverage-branches=100 \
-            workers/test_clock.mjs workers/test_profile_clock.mjs
+            workers/test_clock.mjs workers/test_profile_clock.mjs workers/test_events.mjs

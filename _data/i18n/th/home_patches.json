@@ -10,7 +10,7 @@
       ">สร้างและดูแล<"
     ],
     [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
       ">ปกป้องอนาคตของธนาคาร<br>ด้วย AI แบบเอเจนต์<br>และการเข้ารหัสหลังควอนตัม</h1>"
     ],
     [

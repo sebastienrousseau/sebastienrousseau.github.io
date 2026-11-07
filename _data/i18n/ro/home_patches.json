@@ -274,8 +274,8 @@
       "aria-label=\"Activează tema luminoasă\""
     ],
     [
-      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
-      "aria-label=\"Caută (Cmd sau Ctrl + K)\""
+      "aria-label=\"Search ⌘K\"",
+      "aria-label=\"Caută ⌘K\""
     ],
     [
       "title=\"Search \\(⌘K\\)\"",

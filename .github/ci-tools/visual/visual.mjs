@@ -39,6 +39,8 @@ import pixelmatch from 'pixelmatch';
 // file names; values the public/-relative page paths.
 const PAGES = {
   home: 'index.html',
+  home_390: { path: 'index.html', width: 390 },
+  article: '2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html',
   hub: 'iso20022-mcp/index.html',
   docs: 'iso20022-mcp-docs/index.html',
   trust: 'trust/index.html',
@@ -75,6 +77,7 @@ function findChrome() {
   if (process.env.CHROME_PATH) return process.env.CHROME_PATH;
   const candidates = [
     '/usr/bin/google-chrome',
+    '/usr/bin/google-chrome-stable',
     '/usr/bin/chromium-browser',
     '/usr/bin/chromium',
     '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
@@ -216,7 +219,9 @@ async function shoot() {
     args: CHROME_ARGS,
   });
   try {
-    for (const [name, rel] of Object.entries(PAGES)) {
+    for (const [name, spec] of Object.entries(PAGES)) {
+      const rel = typeof spec === 'string' ? spec : spec.path;
+      const width = typeof spec === 'object' && spec.width ? spec.width : VIEWPORT.width;
       const url = `${base}/${rel}`;
       // A transient teardown of the execution context is not a
       // regression — retry the page from a fresh tab. A real failure
@@ -232,6 +237,9 @@ async function shoot() {
         // different heights from run to run.
         const context = await browser.createBrowserContext();
         const page = await newConfiguredPage(context, baseHost);
+        if (width !== VIEWPORT.width) {
+          await page.setViewport({ ...VIEWPORT, width });
+        }
         try {
           await capturePage(page, name, url, out);
           break;

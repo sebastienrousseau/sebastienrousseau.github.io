@@ -57,8 +57,10 @@ from tag_landing_render import (
     _CANONICAL_RE,
     _LANDING_THRESHOLD,
     _OG_URL_RE,
+    _TITLE_RE,
     LOCALE_TAGS_PATH,
     _category_recent_posts,
+    _esc,
     _locale_post_card_fields,
     _render_category_html,
     _render_landing_html,
@@ -462,7 +464,9 @@ def _write_landings(
         )
         out_path = PUBLIC / "tags" / slug / "index.html"
         out_path.parent.mkdir(parents=True, exist_ok=True)
-        out_path.write_text(page_html, encoding="utf-8")
+        en_doc_title = f"{entry['name']}: articles and analysis · Sebastien Rousseau"
+        en_out = _TITLE_RE.sub(f"<title>{_esc(en_doc_title)}</title>", page_html, count=1)
+        out_path.write_text(en_out, encoding="utf-8")
         en_pages[slug] = page_html
     locale_written = _write_locale_landings(template, taxonomy, posts, cooccur, list(en_pages))
     return len(en_pages), locale_written

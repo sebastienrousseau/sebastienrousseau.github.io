@@ -274,8 +274,8 @@
       "aria-label=\"Kunna jigon haske\""
     ],
     [
-      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
-      "aria-label=\"Bincika (Cmd ko Ctrl + K)\""
+      "aria-label=\"Search ⌘K\"",
+      "aria-label=\"Bincika ⌘K\""
     ],
     [
       "title=\"Search \\(⌘K\\)\"",

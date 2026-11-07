@@ -10,7 +10,7 @@
       ">נכתב ומתוחזק<"
     ],
     [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
       ">אבטחת עתיד הבנקאות<br>באמצעות בינה מלאכותית סוכנית<br>והצפנה פוסט-קוונטית.</h1>"
     ],
     [
