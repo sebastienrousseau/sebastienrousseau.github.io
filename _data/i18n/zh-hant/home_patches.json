@@ -6,8 +6,8 @@
       ">作者編寫並維護<"
     ],
     [
-      ">Authored & maintained<",
-      ">作者編寫並維護<"
+      ">Career<",
+      ">職業生涯<"
     ],
     [
       ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
@@ -18,8 +18,8 @@
       ">為邊緣建構。為毫不妥協的韌性而設計。驅動下一代全球支付。</p>"
     ],
     [
-      "id=practice>Open source for the<br>future of finance\\.</h2>",
-      "id=practice>面向金融未來的<br>開源。</h2>"
+      ">Where I've worked\\.<",
+      ">我曾任職的機構。<"
     ],
     [
       ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
@@ -34,56 +34,56 @@
       ">瀏覽所有專案<"
     ],
     [
-      ">Python · Payments<",
-      ">Python · 支付<"
+      ">See the post-quantum primitives <span",
+      ">檢視後量子原語 <span"
     ],
     [
-      ">Python · Cross-border<",
-      ">Python · 跨境<"
+      ">View the tooling <span",
+      ">檢視工具 <span"
     ],
     [
-      ">Python · Finance<",
-      ">Python · 金融<"
+      ">What I build</p>",
+      ">我在建構什麼</p>"
     ],
     [
-      ">Rust · Security<",
-      ">Rust · 安全<"
+      "<h3>Payments</h3>",
+      "<h3>支付</h3>"
     ],
     [
-      ">Rust · Quantum<",
-      ">Rust · 量子<"
+      "<p>ISO 20022, end to end: pain\\.001, pacs\\.008, camt\\.053, and acmt\\.001\\. Adopt one library at a time\\.</p>",
+      "<p>端到端 ISO 20022：pain.001、pacs.008、camt.053 與 acmt.001。可逐一按需採用函式庫。</p>"
     ],
     [
-      ">Rust · YAML<",
-      ">Rust · YAML<"
+      "<h3>Security</h3>",
+      "<h3>安全</h3>"
     ],
     [
-      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
-      ">瞭解 \\1</a>"
+      "<p>Post-quantum primitives: ML-KEM \\(CRYSTALS-Kyber, NIST FIPS 203\\) and hashing, ready to pilot today\\.</p>",
+      "<p>後量子原語：ML-KEM（CRYSTALS-Kyber，NIST FIPS 203）與雜湊，今天即可展開試點。</p>"
     ],
     [
-      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
-      "<p>一個 Python 庫，可從 CSV 或 SQLite 自動生成 <strong>ISO 20022 pain.001</strong> 支付檔案。為 SWIFT、SEPA 及主要清算系統從 MT/MX 向結構化報文的全球遷移而構建。</p>"
+      "<h3>Tooling</h3>",
+      "<h3>工具</h3>"
     ],
     [
-      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
-      "<p>生成、校驗並投遞 <strong>ISO 20022 pacs.008</strong> 金融機構間客戶信用轉賬報文。支援 JSON Schema、XSD 校驗、75 個國家的 IBAN，以及符合 GDPR/PCI-DSS 的個人資料脫敏。</p>"
+      "<p>Audited Rust libraries and a code security scanner, signed and shipped with a software bill of materials\\.</p>",
+      "<p>經過稽核的 Rust 函式庫與程式碼安全掃描器，均經簽章發布，並附帶軟體物料清單（SBOM）。</p>"
     ],
     [
-      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
-      "<p>一款金融級 Python 工具包，可將多格式銀行對賬單轉換為結構化資料。專為真實世界中的對賬單檔案以及受監管環境的審計要求而設計。</p>"
+      ">All-time downloads</span>",
+      ">累計下載量</span>"
     ],
     [
-      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
-      "<p>一個用於密碼加密與驗證的 Rust 庫，實現了<strong>安全的雜湊與摘要演算法</strong>。採用抗量子姿態設計，面向後量子時代的身份認證。</p>"
+      ">Downloads, last 30 days</span>",
+      ">下載量（近 30 天）</span>"
     ],
     [
-      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
-      "<p><strong>CRYSTALS-Kyber</strong> 的穩健 Rust 實現，對應 NIST FIPS 203 通用後量子加密標準。抗量子支付身份認證的基礎。</p>"
+      ">GitHub stars</span>",
+      ">GitHub 星標</span>"
     ],
     [
-      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
-      "<p>一個<strong>純 Rust 實現的 YAML 1.2 生態</strong>。零 unsafe，100% 規範符合度（官方測試套件 406/406），流式優先的 serde，無損 CST 與 JSON-Schema 校驗。庫 + CLI（noyafmt、noyavalidate）+ LSP + MCP + WASM 繫結。</p>"
+      ">Packages published</span>",
+      ">已發布套件</span>"
     ],
     [
       "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
@@ -98,8 +98,8 @@
       ">閱讀白皮書<"
     ],
     [
-      ">Quantum-Safe Payments\\.</h2>",
-      ">抗量子支付。</h2>"
+      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
+      ">在滙豐（HSBC）、PayPal、巴克萊（Barclays）、Shazam、AKQA 與維珍集團（Virgin Group）擁有近二十年的內部支付與數位產品領導經驗。</p>"
     ],
     [
       ">Quantum-Safe Payments\\.<",
@@ -114,8 +114,8 @@
       ">為何支付行業必須立即行動。<"
     ],
     [
-      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
-      ">監管機構正將「先收割、後解密」視為當前可信的風險。本白皮書闡述了這一結構性威脅，以及在批發支付通道上協同行動的緊迫性。</p>"
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper(?:, produced for the Emerging Payments Association Asia, sets out| outlines) the structural threat and the(?: urgent)? case for coordinated action across wholesale payment rails\\.</p>",
+      ">監管機構正將「先收割、後解密」視為當前可信的風險。本白皮書為 Emerging Payments Association Asia 撰寫，闡述了這一結構性威脅，以及在批發支付通道上協同行動的緊迫性。</p>"
     ],
     [
       ">Latest<",
@@ -154,8 +154,8 @@
       ">解鎖銀行業與金融服務的未來。<br>瞭解最新動態來自</h2>"
     ],
     [
-      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
-      "<p class=\"feat-sub center\">無論是批發支付戰略、ISO 20022 遷移，還是面向金融服務的抗量子密碼學，我都樂於交流。</p>"
+      "<p class=\"?feat-sub center\"?>(?:Whether it\\'s wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.|Architecture reviews, migration roadmaps, and board briefings on ISO 20022 and post-quantum security\\. Reply within two working days\\.)</p>",
+      "<p class=\"feat-sub center\">圍繞 ISO 20022 與後量子安全的架構審查、遷移路線圖及董事會簡報。兩個工作天內回覆。</p>"
     ],
     [
       ">Start a conversation</a>",
@@ -234,40 +234,40 @@
       "<a href=/zh-hant/tiaokuan-tw/index.html>條款</a>"
     ],
     [
-      ">Career<",
-      ">職業生涯<"
+      "Most downloads come from transitive dependencies in CI/CD pipelines and production services across PyPI, crates\\.io, and npm &middot; <span class=\"?proof-updated\"?>Updated <time datetime=\"?2026-10-15\"?>15 Oct 2026</time>\\.</span>",
+      "大部分下載來自 PyPI、crates.io 與 npm 上 CI/CD 管線及正式環境服務中的遞移相依套件 &middot; <span class=\"proof-updated\">更新於 <time datetime=\"2026-10-15\">2026 年 10 月 15 日</time>。</span>"
     ],
     [
-      ">Where I've worked\\.<",
-      ">我曾任職的機構。<"
+      "(HSBC|PayPal|Barclays|Shazam|AKQA|Virgin) logo",
+      "\\1 標誌"
     ],
     [
-      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
-      ">在滙豐（HSBC）、PayPal、巴克萊（Barclays）、Shazam、AKQA 與維珍集團（Virgin Group）擁有近二十年的內部支付與數位產品領導經驗。</p>"
+      ">EPAA White Paper \\(Sep 2025, PDF\\)</a>",
+      ">EPAA 白皮書（2025 年 9 月，PDF）</a>"
     ],
     [
-      "alt=\"PayPal logo\"",
-      "alt=\"PayPal 標誌\""
+      ">SWIFT CBPR\\+ / ISO 20022</a>",
+      ">SWIFT CBPR+ / ISO 20022</a>"
     ],
     [
-      "alt=\"Barclays logo\"",
-      "alt=\"巴克萊標誌\""
+      ">Sigstore &amp; CycloneDX SBOM</a>",
+      ">Sigstore &amp; CycloneDX SBOM</a>"
     ],
     [
-      "alt=\"Shazam logo\"",
-      "alt=\"Shazam 標誌\""
+      ">Newsletter · Banking On Quantum</p>",
+      ">Newsletter · Banking On Quantum</p>"
     ],
     [
-      "alt=\"AKQA logo\"",
-      "alt=\"AKQA 標誌\""
+      ">Monthly briefings for senior banking architects\\.</h2>",
+      ">專為資深銀行架構師提供的每月簡報。</h2>"
     ],
     [
-      "alt=\"Virgin logo\"",
-      "alt=\"維珍標誌\""
+      ">Research notes on applied AI, ISO 20022 migration, and post-quantum cryptography across wholesale payment rails\\. No spam, unsubscribe in one click\\.</p>",
+      ">關於應用人工智慧、ISO 20022 遷移以及批發支付通道後量子密碼學的研究筆記。絕無垃圾郵件，一鍵取消訂閱。</p>"
     ],
     [
-      "alt=\"HSBC logo\"",
-      "alt=\"滙豐標誌\""
+      ">Browse the changelog <span",
+      ">瀏覽變更紀錄 <span"
     ],
     [
       ">Read more<",
@@ -310,32 +310,32 @@
       ">量子 · 密碼學<"
     ],
     [
-      ">Read the white paper</a>",
-      ">閱讀白皮書</a>"
+      ">Read the white paper(?: \\(PDF\\))?</a>",
+      ">閱讀白皮書（PDF）</a>"
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
-      "<dl class=pao><div><dt>問題</dt><dd>在 SEPA 與 SWIFT 切換期間，手工撰寫 <strong>ISO 20022 pain.001</strong> 極易出錯。</dd></div><div><dt>方法</dt><dd>以結構描述驅動的 Python，將 CSV 或 SQLite 對應並驗證為支付 XML。</dd></div><div><dt>成果</dt><dd>營運團隊可於數分鐘內產出 pain.001，稽核日誌在遷移後依然完整。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>影響</span> ISO 20022 · SEPA + SWIFT</p>"
+      ">Tailor the page order and highlights for your role\\.</p>",
+      ">依您的角色調整頁面順序與重點內容。</p>"
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
-      "<dl class=pao><div><dt>問題</dt><dd>當 XSD、IBAN 與 PII 規則不一致時，FI-to-FI 貸記轉帳將無法通過稽核。</dd></div><div><dt>方法</dt><dd>單一函式庫：涵蓋 75 個國家的 JSON Schema、XSD、IBAN，以及符合 GDPR 標準的資料遮蔽。</dd></div><div><dt>成果</dt><dd>跨境貸記轉帳首次提交即通過監管機關審查。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>影響</span> 75 個國家 · IBAN</p>"
+      "data-summary-default=\"Tailor the page order and highlights for your role\\.\"",
+      "data-summary-default=\"依您的角色調整頁面順序與重點內容。\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
-      "<dl class=pao><div><dt>問題</dt><dd>對帳格式迫使對帳團隊陷入大量手動重新輸入作業。</dd></div><div><dt>方法</dt><dd>單一 Python 工具套件，以稽核等級的資料血緣關係標準化多種格式的對帳單。</dd></div><div><dt>成果</dt><dd>對帳作業無需為每家銀行撰寫客製化黏合程式碼。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>影響</span> 多格式 · 稽核等級</p>"
+      "data-summary-boards=\"Prioritising board-level proof, fiduciary risk, and post-quantum governance\\.\"",
+      "data-summary-boards=\"優先呈現董事會層級的實證、受託風險與後量子治理。\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
-      "<dl class=pao><div><dt>問題</dt><dd>Pre-PQC 雜湊函式庫使憑證儲存庫暴露於量子攻擊風險之中。</dd></div><div><dt>方法</dt><dd>記憶體安全的 Rust 雜湊與摘要函式庫，具備後量子安全態勢。</dd></div><div><dt>成果</dt><dd>為規劃 PQC 遷移的服務提供即插即用的安全雜湊能力。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>影響</span> 記憶體安全 · Rust</p>"
+      "data-summary-engineers=\"Prioritising open-source Rust and Python libraries, ISO 20022 schemas, and FIPS 203 ML-KEM\\.\"",
+      "data-summary-engineers=\"優先呈現開源 Rust 與 Python 函式庫、ISO 20022 結構描述及 FIPS 203 ML-KEM。\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
-      "<dl class=pao><div><dt>問題</dt><dd>Tier-1 銀行在每個 TLS 連線上均承擔 harvest-now-decrypt-later 的曝險。</dd></div><div><dt>方法</dt><dd>純 Rust 實作的 <strong>CRYSTALS-Kyber</strong>（NIST FIPS 203），可直接嵌入現有驗證流程。</dd></div><div><dt>成果</dt><dd>在生產等級的 Rust 環境中實現後量子金鑰交換，並經獨立驗證。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>影響</span> NIST FIPS 203</p>"
+      "data-summary-regulators=\"Prioritising the EPAA quantum-safe payments paper, DORA, CRA, and supervisory compliance\\.\"",
+      "data-summary-regulators=\"優先呈現 EPAA 抗量子支付白皮書、DORA、CRA 及監理合規。\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
-      "<dl class=pao><div><dt>問題</dt><dd>AI、MCP 及組態管道依賴以 C 為後端、存在未定義行為且規格靜默漂移的 YAML 解析器。</dd></div><div><dt>方法</dt><dd>純 Rust 實作的 YAML 1.2，涵蓋函式庫、CLI、LSP、MCP 與 WASM——零 unsafe，完整規格符合。</dd></div><div><dt>成果</dt><dd>YAML 管道不再是供應鏈的薄弱環節。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>影響</span> 406 / 406 規格 · 0 unsafe</p>"
+      "alt=\"Isometric render of an illuminated processor, representing the cryptographic foundations of payments\\.\"",
+      "alt=\"發光處理器的等角渲染圖，象徵支付的密碼學基礎。\""
     ],
     [
       ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
@@ -354,8 +354,8 @@
       ">面向銀行業與金融未來的開源。</h2>"
     ],
     [
-      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
-      "\\g<1>進一步了解 <span"
+      ">Explore the ISO 20022 libraries <span",
+      ">探索 ISO 20022 函式庫 <span"
     ]
   ]
 }

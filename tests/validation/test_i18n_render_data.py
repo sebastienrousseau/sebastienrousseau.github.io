@@ -17,6 +17,10 @@ original inline literals in build_translations.py). Every other
 language file must carry:
 
     * the same number of entries for *_patches.json files
+    * the same regex patterns as FR for home_patches.json and the inline
+      chrome_patches.json (a count can match while the patterns do not:
+      32 locales carried an older home set of the same length and served
+      23 English strings on their home page)
     * the same keys for static_bodies.json
 
 Missing/extra entries fail the build. This is what prevents a DE
@@ -66,6 +70,20 @@ def check_patches(code: str, name: str, loader, fr_count: int) -> list[str]:
             f"(first at index {pads[0]}) — translate them or shorten the FR reference"
         ]
     return []
+
+
+def check_pattern_set(code: str, name: str, entries, fr_patterns: list[str]) -> list[str]:
+    """Every FR pattern present, and no pattern FR does not carry."""
+    patterns = {pattern for pattern, _ in entries}
+    missing = [p for p in fr_patterns if p not in patterns]
+    extra = sorted(patterns - set(fr_patterns))
+    if not (missing or extra):
+        return []
+    sample = (missing or extra)[0][:60]
+    return [
+        f"[{code}/{name}] patterns differ from FR: {len(missing)} missing, "
+        f"{len(extra)} extra (first: {sample!r})"
+    ]
 
 
 def check_bodies(code: str, fr_keys: set[str]) -> list[str]:
@@ -119,6 +137,22 @@ def main() -> int:
         all_problems.extend(
             check_patches(
                 code, "chrome_patches", _lang_registry.load_chrome_patches_inline, len(fr_chrome)
+            )
+        )
+        all_problems.extend(
+            check_pattern_set(
+                code,
+                "home_patches",
+                _lang_registry.load_home_patches(code),
+                [p for p, _ in fr_home],
+            )
+        )
+        all_problems.extend(
+            check_pattern_set(
+                code,
+                "chrome_patches",
+                _lang_registry.load_chrome_patches_inline(code),
+                [p for p, _ in fr_chrome],
             )
         )
         all_problems.extend(check_bodies(code, fr_body_keys))

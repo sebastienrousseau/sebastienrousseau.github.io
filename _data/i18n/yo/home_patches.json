@@ -2,28 +2,180 @@
   "_comment": "Yorùbá (yo) home-page chrome patches — DRAFT pending native review. Pairs of [regex, replacement] applied to the EN homepage shell.",
   "patches": [
     [
-      ">Skip to main content</a>",
-      ">Fò sí àkóónú àkọ́kọ́</a>"
+      ">Authored &amp; maintained<",
+      ">Ṣíṣẹ̀dá àti ìtọ́jú<"
     ],
     [
-      ">Get in touch ›</a>",
-      ">Kàn sí wa ›</a>"
+      ">Career<",
+      ">Iṣẹ́<"
     ],
     [
-      ">Get in touch</a>",
-      ">Kàn sí wa</a>"
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
+      ">Dídáàbò bo ọjọ́ iwájú ilé-ìfowópamọ́ pẹ̀lú AI aláṣojú àti kírípító lẹ́yìn-kuántọ́mù.</h1>"
     ],
     [
-      ">Read latest research<",
-      ">Ka ìwádìí tuntun<"
+      ">Built for the edge\\. Architected for uncompromising resilience\\. Powering the next generation of global payments\\.</p>",
+      ">A kọ́ ọ́ fún edge. A ṣe e fún ìfaradà tí kò ní ìbámu. Ń ru ìran tókàn ti ìsanwó kárí ayé sókè.</p>"
+    ],
+    [
+      ">Where I've worked\\.<",
+      ">Àwọn ibi tí mo ti ṣiṣẹ́.<"
+    ],
+    [
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
+      ">Orísun ṣíṣí fún ọjọ́ iwájú ìṣúná.<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">Àkójọ àwọn ilé-ìkàwé Python, Rust àti JavaScript tí mo ṣẹ̀dá tí mo sì ń tọ́jú. Orísun ṣíṣí, ọ̀fẹ́ láti lò, a sì ń lò wọ́n fún ìsanwó ńlá láàárín àwọn ilé-iṣẹ́, ìyanjú ìsanwó kárí-ààlà, dátà ìṣúná àti kírípító tí ó lè dènà kọ̀mpútà kuántọ́mù.<"
+    ],
+    [
+      ">Browse all projects<",
+      ">Browse all projects<"
+    ],
+    [
+      ">See the post-quantum primitives <span",
+      ">Wo àwọn ìpìlẹ̀ kírípító lẹ́yìn-kuántọ́mù <span"
+    ],
+    [
+      ">View the tooling <span",
+      ">Wo àwọn irinṣẹ́ <span"
+    ],
+    [
+      ">What I build</p>",
+      ">Ohun tí mo ń kọ́</p>"
+    ],
+    [
+      "<h3>Payments</h3>",
+      "<h3>Ìsanwó</h3>"
+    ],
+    [
+      "<p>ISO 20022, end to end: pain\\.001, pacs\\.008, camt\\.053, and acmt\\.001\\. Adopt one library at a time\\.</p>",
+      "<p>ISO 20022 láti ìbẹ̀rẹ̀ dé òpin: pain.001, pacs.008, camt.053 àti acmt.001. Gba ilé-ìkàwé kan ní àkókò kan.</p>"
+    ],
+    [
+      "<h3>Security</h3>",
+      "<h3>Ààbò</h3>"
+    ],
+    [
+      "<p>Post-quantum primitives: ML-KEM \\(CRYSTALS-Kyber, NIST FIPS 203\\) and hashing, ready to pilot today\\.</p>",
+      "<p>Àwọn ìpìlẹ̀ lẹ́yìn-kuántọ́mù: ML-KEM (CRYSTALS-Kyber, NIST FIPS 203) àti hashing, tí ó ṣetán fún ìdánwò láti òní.</p>"
+    ],
+    [
+      "<h3>Tooling</h3>",
+      "<h3>Àwọn irinṣẹ́</h3>"
+    ],
+    [
+      "<p>Audited Rust libraries and a code security scanner, signed and shipped with a software bill of materials\\.</p>",
+      "<p>Àwọn ilé-ìkàwé Rust tí a ti ṣàyẹ̀wò àti ẹ̀rọ àyẹ̀wò ààbò kóòdù, tí a fọwọ́ sí tí a sì ń fi ránṣẹ́ pẹ̀lú àkọsílẹ̀ àwọn èròjà sọ́fítíwọ̀ (SBOM).</p>"
+    ],
+    [
+      ">All-time downloads</span>",
+      ">Àpapọ̀ ìgbàsílẹ̀</span>"
+    ],
+    [
+      ">Downloads, last 30 days</span>",
+      ">Ìgbàsílẹ̀, ọjọ́ 30 tó kọjá</span>"
+    ],
+    [
+      ">GitHub stars</span>",
+      ">Ìràwọ̀ GitHub</span>"
+    ],
+    [
+      ">Packages published</span>",
+      ">Àwọn àpò tí a tẹ̀ jáde</span>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "Kọ̀mpútà kuántọ́mù ń halẹ̀ mọ́ ìpìlẹ̀ kírípító àwọn iṣẹ́ ìṣúná. Ìsanwó, láti èyí tí ó ń ṣẹlẹ̀ lẹ́sẹ̀kẹsẹ̀ dé ìyanjú kárí-ààlà, gbára lé àwọn ààbò tí kọ̀mpútà kuántọ́mù yóò sọ di aláìwúlò níkẹyìn."
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">Ìwé funfun Quantum-Safe Payments · Oṣù Kẹsàn-án 2025 · Ka ìwé funfun náà<"
+    ],
+    [
+      ">Read the paper<",
+      ">Read the paper<"
+    ],
+    [
+      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
+      ">Ó fẹ́rẹ̀ẹ́ tó ọdún ogún ti ìdarí inú-ilé nípa ìsanwó àti ọjà díjítà ní HSBC, PayPal, Barclays, Shazam, AKQA, àti Virgin Group.</p>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">Ìsanwó tí ó lè dènà kuántọ́mù.<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">Ìwé funfun ilé-iṣẹ́ fún Emerging Payments Association Asia. Ewu ìgbékalẹ̀ tí kọ̀mpútà kuántọ́mù ń fà fún àwọn amáyédẹrùn ìsanwó, àti ìdí fún ìgbésẹ̀ àjùmọ̀ṣe báyìí.<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">Ìdí tí ilé-iṣẹ́ ìsanwó fi gbọ́dọ̀ gbé ìgbésẹ̀ báyìí.<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper(?:, produced for the Emerging Payments Association Asia, sets out| outlines) the structural threat and the(?: urgent)? case for coordinated action across wholesale payment rails\\.</p>",
+      ">Àwọn olùṣàkóso ń ka \"kórè báyìí, ṣí àṣírí lẹ́yìn náà\" sí ewu tòótọ́ ti àkókò yìí. Ìwé funfun yìí, tí a pèsè fún Emerging Payments Association Asia, ṣàlàyé ewu ìgbékalẹ̀ náà àti ìdí fún ìgbésẹ̀ àjùmọ̀ṣe ní gbogbo ọ̀nà ìsanwó ńlá.</p>"
     ],
     [
       ">Latest<",
       ">Ka ìwádìí tuntun<"
     ],
     [
-      ">Read more<",
-      ">Ka ìwádìí tuntun<"
+      ">From the desk\\.<",
+      ">Láti orí tábìlì iṣẹ́.<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">Ìwádìí àti àwọn àkọsílẹ̀ tuntun lórí kírípító tí ó lè dènà kuántọ́mù, ìṣílọ sí ISO 20022 àti ọjọ́ iwájú ìsanwó ńlá.<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>Stablecoin kò lè san èrè lábẹ́ GENIUS Act. Àwọn ìwé BRSRV àti BSTBL tí BlackRock fi sílẹ̀ fi ọ̀nà àbáyọ hàn: owó-ìdókòwò ọjà owó tí a sọ di token tí ń ṣiṣẹ́ lẹ́gbẹ̀ẹ́ stablecoin tí a ń ṣàkóso, láti mú èrè wá nípasẹ̀ ọ̀nà mìíràn tí ó bófin mu.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>Ewu kuántọ́mù ti kúrò láti ìwádìí lásán di àṣẹ ìṣàkóso tí ó ń ṣiṣẹ́. Pẹ̀lú àwòrán-ọ̀nà G7 tí a tẹ̀ jáde ní Oṣù Kínní 2026 àti BIS Project Leap tí ó fi hàn pé ó ṣeé ṣe nínú àwọn ètò ìsanwó gidi, ìbéèrè ìgbìmọ̀ olùdarí kì í ṣe bóyá láti ṣí lọ mọ́.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>Láti Oṣù Kọkànlá 2026, SWIFT CBPR+ yóò kọ àwọn àdírẹ́sì ìfìwéránṣẹ́ tí kò ní ìlànà nínú àwọn ìfiránṣẹ́ ìsanwó kárí-ààlà. Oṣù mẹ́fà ṣáájú, 65% àwọn ìfiránṣẹ́ pacs.008 ṣì ń fi àdírẹ́sì tí kò bá ìlànà mu ránṣẹ́, àti pé 44% àwọn ilé-ìfowópamọ́ ṣì wà lẹ́yìn nínú ètò àtúnṣe náà.</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">Wo gbogbo àwọn àkọlé"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>Kàn sí wa</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">Ṣíṣí ọjọ́ iwájú ilé-ìfowópamọ́ àti àwọn iṣẹ́ ìṣúná.<br>Ṣàwárí ìròyìn tuntun láti</h2>"
+    ],
+    [
+      "<p class=\"?feat-sub center\"?>(?:Whether it\\'s wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.|Architecture reviews, migration roadmaps, and board briefings on ISO 20022 and post-quantum security\\. Reply within two working days\\.)</p>",
+      "<p class=\"feat-sub center\">Àtúnyẹ̀wò ìgbékalẹ̀, àwòrán-ọ̀nà ìṣílọ àti àlàyé ṣókí fún ìgbìmọ̀ olùdarí lórí ISO 20022 àti ààbò lẹ́yìn-kuántọ́mù. Èsì láàárín ọjọ́ iṣẹ́ méjì.</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Bẹ̀rẹ̀ ìjíròrò</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/yo/awon-akole/index.html\">Ka ìwádìí tuntun</a>"
+    ],
+    [
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/yo/kan-si-wa/index.html\">Kàn sí mi</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/yo/awon-iwe/index.html\">Ka ìwé funfun náà</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/yo/2026-05-15-ere-stablecoin-nipase-oruko-miran-iforukosile/index.html\">Ka àpilẹ̀kọ náà</a>"
     ],
     [
       "<h2 class=ap-foot-title>Writing</h2>",
@@ -67,7 +219,7 @@
     ],
     [
       "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
-      "<a href=/yo/static-site-generator-lo-ti-se/index.html>Made with Static Site Generator</a>"
+      "<a href=/yo/static-site-generator-lo-ti-se/index.html>A fi Static Site Generator ṣe é</a>"
     ],
     [
       "<a href=/accessibility/index\\.html>Accessibility</a>",
@@ -82,19 +234,51 @@
       "<a href=/yo/awon-ofin/index.html>Terms</a>"
     ],
     [
-      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
-      "© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ."
+      "Most downloads come from transitive dependencies in CI/CD pipelines and production services across PyPI, crates\\.io, and npm &middot; <span class=\"?proof-updated\"?>Updated <time datetime=\"?2026-10-15\"?>15 Oct 2026</time>\\.</span>",
+      "Ọ̀pọ̀ ìgbàsílẹ̀ ń wá láti inú àwọn ìgbẹ́kẹ̀lé àìtààrà nínú àwọn ọ̀nà CI/CD àti àwọn iṣẹ́ ìgbéjáde lórí PyPI, crates.io àti npm &middot; <span class=\"proof-updated\">Sọdọtun <time datetime=\"2026-10-15\">15 Oṣù Kẹ̀wàá 2026</time>.</span>"
     ],
     [
-      ">Latest research<",
+      "(HSBC|PayPal|Barclays|Shazam|AKQA|Virgin) logo",
+      "Àmì \\1"
+    ],
+    [
+      ">EPAA White Paper \\(Sep 2025, PDF\\)</a>",
+      ">Ìwé funfun EPAA (Oṣù Kẹsàn-án 2025, PDF)</a>"
+    ],
+    [
+      ">SWIFT CBPR\\+ / ISO 20022</a>",
+      ">SWIFT CBPR+ / ISO 20022</a>"
+    ],
+    [
+      ">Sigstore &amp; CycloneDX SBOM</a>",
+      ">Sigstore &amp; CycloneDX SBOM</a>"
+    ],
+    [
+      ">Newsletter · Banking On Quantum</p>",
+      ">Newsletter · Banking On Quantum</p>"
+    ],
+    [
+      ">Monthly briefings for senior banking architects\\.</h2>",
+      ">Àlàyé oṣooṣù fún àwọn ayàwòrán ètò ilé-ìfowópamọ́ àgbà.</h2>"
+    ],
+    [
+      ">Research notes on applied AI, ISO 20022 migration, and post-quantum cryptography across wholesale payment rails\\. No spam, unsubscribe in one click\\.</p>",
+      ">Àkọsílẹ̀ ìwádìí lórí AI tí a ń lò, ìṣílọ sí ISO 20022 àti kírípító lẹ́yìn-kuántọ́mù ní gbogbo ọ̀nà ìsanwó ńlá. Kò sí spam, yọ orúkọ rẹ kúrò pẹ̀lú títẹ̀ ẹ̀ẹ̀kan.</p>"
+    ],
+    [
+      ">Browse the changelog <span",
+      ">Wo àkọsílẹ̀ àwọn àyípadà <span"
+    ],
+    [
+      ">Read more<",
       ">Ka ìwádìí tuntun<"
     ],
     [
-      ">Featured articles<",
-      ">Ka ìwádìí tuntun<"
+      ">Read the article<",
+      ">Read the article<"
     ],
     [
-      ">All articles<",
+      ">Read latest research<",
       ">Ka ìwádìí tuntun<"
     ],
     [
@@ -102,100 +286,16 @@
       ">Ka ìwádìí tuntun<"
     ],
     [
-      ">By topic<",
-      ">By topic<"
+      ">Get in touch ›</a>",
+      ">Kàn sí wa ›</a>"
     ],
     [
-      ">All topics<",
-      ">All topics<"
+      ">Payments · Stablecoins<",
+      ">Payments · Stablecoins<"
     ],
     [
-      ">By tag<",
-      ">By tag<"
-    ],
-    [
-      ">All tags<",
-      ">All tags<"
-    ],
-    [
-      ">Published<",
-      ">Tẹ̀ jáde<"
-    ],
-    [
-      ">Updated<",
-      ">Sọdọtun<"
-    ],
-    [
-      ">Open source<",
-      ">Open source<"
-    ],
-    [
-      ">Subscribe<",
-      ">Forúkọsílẹ̀<"
-    ],
-    [
-      ">Follow<",
-      ">Follow<"
-    ],
-    [
-      "<p class=feat-eyebrow>Get in touch</p>",
-      "<p class=feat-eyebrow>Kàn sí wa</p>"
-    ],
-    [
-      ">Drop me a line<",
-      ">Kàn sí wa<"
-    ],
-    [
-      ">Learn more<",
-      ">Learn more<"
-    ],
-    [
-      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
-      ">Ó fẹ́rẹ̀ẹ́ tó ọdún ogún ti ìdarí inú-ilé nípa ìsanwó àti ọjà díjítà ní HSBC, PayPal, Barclays, Shazam, AKQA, àti Virgin Group.</p>"
-    ],
-    [
-      ">Authored &amp; maintained<",
-      ">Authored &amp; maintained<"
-    ],
-    [
-      "alt=\"PayPal logo\"",
-      "alt=\"PayPal logo\""
-    ],
-    [
-      "alt=\"Barclays logo\"",
-      "alt=\"Barclays logo\""
-    ],
-    [
-      "alt=\"Shazam logo\"",
-      "alt=\"Shazam logo\""
-    ],
-    [
-      "alt=\"AKQA logo\"",
-      "alt=\"AKQA logo\""
-    ],
-    [
-      "alt=\"Virgin logo\"",
-      "alt=\"Virgin logo\""
-    ],
-    [
-      "alt=\"HSBC logo\"",
-      "alt=\"HSBC logo\""
-    ],
-    [
-      ">Read the white paper</a>",
-      ">Read the white paper</a>"
-    ],
-    [
-      ">Read the article<",
-      ">Read the article<"
-    ],
-    [
-      ">Read the paper<",
-      ">Read the paper<"
-    ],
-    [
-      ">See all articles\\b",
-      ">See all articles"
+      ">Payments · ISO 20022<",
+      ">Payments · ISO 20022<"
     ],
     [
       ">Quantum<",
@@ -210,132 +310,32 @@
       ">Quantum · Cryptography<"
     ],
     [
-      ">Payments · Stablecoins<",
-      ">Payments · Stablecoins<"
+      ">Read the white paper(?: \\(PDF\\))?</a>",
+      ">Ka ìwé funfun náà (PDF)</a>"
     ],
     [
-      ">Payments · ISO 20022<",
-      ">Payments · ISO 20022<"
+      ">Tailor the page order and highlights for your role\\.</p>",
+      ">Ṣe àtúntò ètò ojú-ewé àti àwọn kókó pàtàkì fún ipa rẹ.</p>"
     ],
     [
-      ">Python · Payments<",
-      ">Python · Payments<"
+      "data-summary-default=\"Tailor the page order and highlights for your role\\.\"",
+      "data-summary-default=\"Ṣe àtúntò ètò ojú-ewé àti àwọn kókó pàtàkì fún ipa rẹ.\""
     ],
     [
-      ">Python · Cross-border<",
-      ">Python · Cross-border<"
+      "data-summary-boards=\"Prioritising board-level proof, fiduciary risk, and post-quantum governance\\.\"",
+      "data-summary-boards=\"A fi ẹ̀rí ìpele ìgbìmọ̀ olùdarí, ewu ìgbẹ́kẹ̀lé àti ìṣàkóso lẹ́yìn-kuántọ́mù ṣáájú.\""
     ],
     [
-      ">Python · Finance<",
-      ">Python · Finance<"
+      "data-summary-engineers=\"Prioritising open-source Rust and Python libraries, ISO 20022 schemas, and FIPS 203 ML-KEM\\.\"",
+      "data-summary-engineers=\"A fi àwọn ilé-ìkàwé orísun ṣíṣí Rust àti Python, àwọn ìlànà ISO 20022 àti FIPS 203 ML-KEM ṣáájú.\""
     ],
     [
-      ">Rust · Security<",
-      ">Rust · Security<"
+      "data-summary-regulators=\"Prioritising the EPAA quantum-safe payments paper, DORA, CRA, and supervisory compliance\\.\"",
+      "data-summary-regulators=\"A fi ìwé funfun EPAA lórí ìsanwó tí ó lè dènà kuántọ́mù, DORA, CRA àti ìbámu ìṣàkóso ṣáájú.\""
     ],
     [
-      ">Rust · Quantum<",
-      ">Rust · Quantum<"
-    ],
-    [
-      ">Rust · YAML<",
-      ">Rust · YAML<"
-    ],
-    [
-      ">Browse all projects<",
-      ">Browse all projects<"
-    ],
-    [
-      ">Career<",
-      ">Iṣẹ́<"
-    ],
-    [
-      ">Where I've worked\\.<",
-      ">Àwọn ibi tí mo ti ṣiṣẹ́.<"
-    ],
-    [
-      "aria-label=\"Newsletter signup\"",
-      "aria-label=\"Ìforúkọsílẹ̀ ìwé ìròyìn\""
-    ],
-    [
-      "aria-label=\"Sebastien Rousseau home\"",
-      "aria-label=\"Ilé Sebastien Rousseau\""
-    ],
-    [
-      "aria-label=\"Toggle navigation\"",
-      "aria-label=\"Yí ìwọ̀ndì padà\""
-    ],
-    [
-      "aria-label=\"Switch to dark theme\"",
-      "aria-label=\"Tan àkòrí òkùnkùn\""
-    ],
-    [
-      "aria-label=\"Switch to light theme\"",
-      "aria-label=\"Tan àkòrí ìmọ́lẹ̀\""
-    ],
-    [
-      "aria-label=\"Search ⌘K\"",
-      "aria-label=\"Wá ⌘K\""
-    ],
-    [
-      "title=\"Search \\(⌘K\\)\"",
-      "title=\"Wá (⌘K)\""
-    ],
-    [
-      "aria-label=\"Get in touch\"",
-      "aria-label=\"Kàn sí wa\""
-    ],
-    [
-      "aria-label=\"Back to top\"",
-      "aria-label=\"Padà sí orí\""
-    ],
-    [
-      "aria-label=\"Social links\"",
-      "aria-label=\"Àwọn ọ̀nà àjọṣepọ̀\""
-    ],
-    [
-      "aria-label=\"Article summary\"",
-      "aria-label=\"Àkójọ àkọlé\""
-    ],
-    [
-      "aria-label=\"About the author\"",
-      "aria-label=\"Nípa òǹkọ̀wé\""
-    ],
-    [
-      ">Full profile</a>",
-      ">Àkọsílẹ̀ kíkún</a>"
-    ],
-    [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
-      ">Dídáàbò bo ọjọ́ọjọ́ ifowopamọ́<br>pẹ̀lú àkànpọ̀ AI<br>àti ìfọ̀rọ̀-ìkọ̀kọ̀ lẹ́yìn-quantum.</h1>"
-    ],
-    [
-      ">Built for the edge\\. Architected for uncompromising resilience\\. Powering the next generation of global payments\\.</p>",
-      ">A kọ́ ọ́ fún edge. A ṣe e fún ìfaradà tí kò ní ìbámu. Ń ru ìran tókàn ti ìsanwó kárí ayé sókè.</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
-      "<dl class=pao><div><dt>Ìṣòro</dt><dd>Kíkọ <strong>ISO 20022 pain.001</strong> pẹ̀lú ọwọ́ jẹ́ ewu nígbà tí SEPA àti SWIFT bá yí padà.</dd></div><div><dt>Ọ̀nà Àbájáde</dt><dd>Python tí ó gbára lé ìlànà tí ó ń yí CSV tàbí SQLite padà sí XML ìsanwó tí a ti ṣàyẹ̀wò.</dd></div><div><dt>Àbájáde</dt><dd>Àwọn ẹgbẹ́ iṣẹ́ ń pín pain.001 jáde ní ìṣẹ́jú díẹ̀; ìrékọjá ìgbẹ́kẹ̀lé gbé ayẹ̀wò ìgbékalẹ̀ já.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Ipa</span> ISO 20022 · SEPA + SWIFT</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
-      "<dl class=pao><div><dt>Ìṣòro</dt><dd>Gbigbe owó láti ilé-iṣẹ́ ìfowópamọ́ sí ilé-iṣẹ́ mìíràn kúnfò ayẹ̀wò nígbà tí XSD, IBAN àti àwọn òfin PII bá yàtọ̀.</dd></div><div><dt>Ọ̀nà Àbájáde</dt><dd>Ìwé-ìkàwé kan ṣoṣo: JSON Schema, XSD, IBAN káàkiri orílẹ̀-èdè 75, ifarakoko tó dọ́gba pẹ̀lú GDPR.</dd></div><div><dt>Àbájáde</dt><dd>Gbigbe owó l'áàgbélé àgbáyé tí ó kọjá ìgbàdánwò àkọ́kọ́ níwájú àwọn alárégbèéfà.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Ipa</span> Orílẹ̀-èdè 75 · IBAN</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
-      "<dl class=pao><div><dt>Ìṣòro</dt><dd>Àwọn ìpínlẹ̀ àkọ́sílẹ̀ ń di àwọn ẹgbẹ́ isọdi-owó mọ́ nínú tíì ọwọ́ fọn tún.</dd></div><div><dt>Ọ̀nà Àbájáde</dt><dd>Àpòpọ̀ irinṣẹ́ Python kan tí ó ṣe àdéédé àwọn àkọ́sílẹ̀ onírúurú ìpínlẹ̀ pẹ̀lú ẹsẹ ìrékọjá tí ó dọ́gba pẹ̀lú ayẹ̀wò.</dd></div><div><dt>Àbájáde</dt><dd>Isọdi-owó ń ṣiṣẹ́ láìsí kóòdù àkànṣe fún olùfowópamọ́ kọ̀ọ̀kan.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Ipa</span> Onírúurú ìpínlẹ̀ · Dọ́gba-ayẹ̀wò</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
-      "<dl class=pao><div><dt>Ìṣòro</dt><dd>Àwọn ìwé-ìkàwé hashing tó ṣíwájú PQC fi àwọn ibi ìpamọ́ àṣírí sílẹ̀ gẹ́gẹ́ bí ohun tí ìmọ̀-ẹ̀rọ kuatomu lè gbógun ti.</dd></div><div><dt>Ọ̀nà Àbájáde</dt><dd>Ìwé-ìkàwé hash àti digest Rust tó ní ààbò ìrántí pẹ̀lú ìdúró post-quantum.</dd></div><div><dt>Àbájáde</dt><dd>Hashing ààbò tó rọ́rùn láti fi dípò èkejì fún àwọn iṣẹ́ tó ń gbèrò lọ ní PQC.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Ipa</span> Ìrántí-ààbò · Rust</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
-      "<dl class=pao><div><dt>Ìṣòro</dt><dd>Àwọn ilé-iṣẹ́ ìfowópamọ́ Tier-1 ní ewu harvest-now-decrypt-later lórí gbogbo ìpínyà TLS.</dd></div><div><dt>Ọ̀nà Àbájáde</dt><dd><strong>CRYSTALS-Kyber</strong> Rust tó mọ́ (NIST FIPS 203) tí ó ń wọ inú àwọn ṣíṣàn ìdánimọ̀ tó wà tẹ́lẹ̀.</dd></div><div><dt>Àbájáde</dt><dd>Pàṣípààrọ̀ kọ́kọ́rọ́ post-quantum nínú Rust tó dọ́gba pẹ̀lú ìṣelọpọ́, tí a ti ṣàyẹ̀wò ní àìgbára.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Ipa</span> NIST FIPS 203</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
-      "<dl class=pao><div><dt>Ìṣòro</dt><dd>AI, MCP àti àwọn ìṣàn ìtúpalẹ̀ ń ṣiṣẹ́ lórí àwọn àtúpalẹ̀ YAML tó ní UB tó gbára lé C àti ìyípadà àpẹẹrẹ tó farasin.</dd></div><div><dt>Ọ̀nà Àbájáde</dt><dd>YAML 1.2 Rust tó mọ́ káàkiri ìwé-ìkàwé, CLI, LSP, MCP àti WASM — zero unsafe, àpẹẹrẹ kíkún.</dd></div><div><dt>Àbájáde</dt><dd>Àwọn ìṣàn YAML tí ó dáwọ́ jẹ́ ọ̀nà àìlágbára nínú ìgbọràn ẹ̀rọ-ìpèsè.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Ipa</span> 406 / 406 àpẹẹrẹ · 0 unsafe</p>"
+      "alt=\"Isometric render of an illuminated processor, representing the cryptographic foundations of payments\\.\"",
+      "alt=\"Àwòrán isometric ti ẹ̀rọ ìṣiṣẹ́ tí ń tàn, tí ó dúró fún ìpìlẹ̀ kírípító ìsanwó.\""
     ],
     [
       ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
@@ -354,8 +354,8 @@
       ">Open source fún ọjọ́ọjọ́ ìfowópamọ́ àti ìnáwó.</h2>"
     ],
     [
-      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
-      "\\g<1>Kọ́ sí i <span"
+      ">Explore the ISO 20022 libraries <span",
+      ">Ṣàwárí àwọn ilé-ìkàwé ISO 20022 <span"
     ]
   ]
 }

@@ -6,8 +6,8 @@
       ">Tác giả và bảo trì<"
     ],
     [
-      ">Authored & maintained<",
-      ">Tác giả và bảo trì<"
+      ">Career<",
+      ">Sự nghiệp<"
     ],
     [
       ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
@@ -18,8 +18,8 @@
       ">Được xây dựng cho edge. Được thiết kế cho khả năng phục hồi không thỏa hiệp. Định hình thế hệ tiếp theo của thanh toán toàn cầu.</p>"
     ],
     [
-      "id=practice>Open source for the<br>future of finance\\.</h2>",
-      "id=practice>Mã nguồn mở cho<br>tương lai của tài chính.</h2>"
+      ">Where I've worked\\.<",
+      ">Những nơi tôi đã làm việc.<"
     ],
     [
       ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
@@ -34,56 +34,56 @@
       ">Xem tất cả dự án<"
     ],
     [
-      ">Python · Payments<",
-      ">Python · Thanh toán<"
+      ">See the post-quantum primitives <span",
+      ">Xem các thành phần mật mã hậu lượng tử <span"
     ],
     [
-      ">Python · Cross-border<",
-      ">Python · Xuyên biên giới<"
+      ">View the tooling <span",
+      ">Xem bộ công cụ <span"
     ],
     [
-      ">Python · Finance<",
-      ">Python · Tài chính<"
+      ">What I build</p>",
+      ">Những gì tôi xây dựng</p>"
     ],
     [
-      ">Rust · Security<",
-      ">Rust · Bảo mật<"
+      "<h3>Payments</h3>",
+      "<h3>Thanh toán</h3>"
     ],
     [
-      ">Rust · Quantum<",
-      ">Rust · Lượng tử<"
+      "<p>ISO 20022, end to end: pain\\.001, pacs\\.008, camt\\.053, and acmt\\.001\\. Adopt one library at a time\\.</p>",
+      "<p>ISO 20022 từ đầu đến cuối: pain.001, pacs.008, camt.053 và acmt.001. Áp dụng từng thư viện một.</p>"
     ],
     [
-      ">Rust · YAML<",
-      ">Rust · YAML<"
+      "<h3>Security</h3>",
+      "<h3>Bảo mật</h3>"
     ],
     [
-      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
-      ">Tìm hiểu về \\1</a>"
+      "<p>Post-quantum primitives: ML-KEM \\(CRYSTALS-Kyber, NIST FIPS 203\\) and hashing, ready to pilot today\\.</p>",
+      "<p>Thành phần mật mã hậu lượng tử: ML-KEM (CRYSTALS-Kyber, NIST FIPS 203) và hàm băm, sẵn sàng thí điểm ngay hôm nay.</p>"
     ],
     [
-      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
-      "<p>Thư viện Python tự động hoá việc tạo tệp thanh toán <strong>ISO 20022 pain.001</strong> từ CSV hoặc SQLite. Được xây dựng cho chuyển đổi toàn cầu từ MT/MX sang tin nhắn có cấu trúc trên SWIFT, SEPA và các sơ đồ lớn.</p>"
+      "<h3>Tooling</h3>",
+      "<h3>Công cụ</h3>"
     ],
     [
-      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
-      "<p>Tạo, xác thực và phân phối tin nhắn chuyển khoản tín dụng khách hàng FI-FI <strong>ISO 20022 pacs.008</strong>. JSON Schema, xác thực XSD, IBAN tại 75 quốc gia, che PII tuân thủ GDPR/PCI-DSS.</p>"
+      "<p>Audited Rust libraries and a code security scanner, signed and shipped with a software bill of materials\\.</p>",
+      "<p>Các thư viện Rust đã được kiểm toán và một trình quét bảo mật mã nguồn, được ký số và phát hành kèm danh mục thành phần phần mềm (SBOM).</p>"
     ],
     [
-      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
-      "<p>Bộ công cụ Python cấp tài chính chuyển đổi sao kê ngân hàng đa định dạng thành dữ liệu có cấu trúc. Được thiết kế cho các tệp sao kê thực tế và yêu cầu kiểm toán của môi trường được quản lý.</p>"
+      ">All-time downloads</span>",
+      ">Tổng lượt tải xuống</span>"
     ],
     [
-      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
-      "<p>Thư viện Rust triển khai <strong>thuật toán băm và digest an toàn</strong> cho mã hoá và xác thực mật khẩu. Thiết kế với tư thế kháng lượng tử cho kỷ nguyên xác thực hậu PQC.</p>"
+      ">Downloads, last 30 days</span>",
+      ">Lượt tải xuống (30 ngày qua)</span>"
     ],
     [
-      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
-      "<p>Triển khai Rust mạnh mẽ của <strong>CRYSTALS-Kyber</strong>, tiêu chuẩn NIST FIPS 203 cho mã hoá hậu lượng tử đa mục đích. Nền tảng cho xác thực thanh toán kháng lượng tử.</p>"
+      ">GitHub stars</span>",
+      ">Sao GitHub</span>"
     ],
     [
-      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
-      "<p>Một <strong>hệ sinh thái YAML 1.2 thuần Rust</strong>. Không unsafe, tuân thủ đặc tả 100% (406 / 406 bộ kiểm thử chính thức), serde streaming-first, CST không mất mát và xác thực JSON-Schema. Thư viện + CLI (noyafmt, noyavalidate) + LSP + MCP + binding WASM.</p>"
+      ">Packages published</span>",
+      ">Gói đã phát hành</span>"
     ],
     [
       "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
@@ -98,8 +98,8 @@
       ">Đọc sách trắng<"
     ],
     [
-      ">Quantum-Safe Payments\\.</h2>",
-      ">Thanh toán an toàn lượng tử.</h2>"
+      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
+      ">Gần hai thập kỷ lãnh đạo nội bộ mảng thanh toán và sản phẩm số tại HSBC, PayPal, Barclays, Shazam, AKQA và Virgin Group.</p>"
     ],
     [
       ">Quantum-Safe Payments\\.<",
@@ -114,8 +114,8 @@
       ">Vì sao ngành thanh toán phải hành động ngay.<"
     ],
     [
-      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
-      ">Cơ quan quản lý xem « thu thập ngay, giải mã sau » là một rủi ro hiện tại đáng tin. Sách trắng này nêu rõ mối đe doạ cấu trúc và lý lẽ cấp bách cho hành động phối hợp trên các đường ray thanh toán bán buôn.</p>"
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper(?:, produced for the Emerging Payments Association Asia, sets out| outlines) the structural threat and the(?: urgent)? case for coordinated action across wholesale payment rails\\.</p>",
+      ">Cơ quan quản lý xem « thu thập ngay, giải mã sau » là một rủi ro hiện tại đáng tin. Sách trắng này, được soạn cho Emerging Payments Association Asia, nêu rõ mối đe doạ cấu trúc và lý lẽ cấp bách cho hành động phối hợp trên các kênh thanh toán bán buôn.</p>"
     ],
     [
       ">Latest<",
@@ -154,8 +154,8 @@
       ">Mở khoá tương lai của ngân hàng và dịch vụ tài chính.<br>Khám phá tin tức mới nhất từ</h2>"
     ],
     [
-      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
-      "<p class=\"feat-sub center\">Chiến lược thanh toán bán buôn, chuyển đổi ISO 20022 hay mật mã an toàn lượng tử cho dịch vụ tài chính — rất sẵn lòng trao đổi.</p>"
+      "<p class=\"?feat-sub center\"?>(?:Whether it\\'s wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.|Architecture reviews, migration roadmaps, and board briefings on ISO 20022 and post-quantum security\\. Reply within two working days\\.)</p>",
+      "<p class=\"feat-sub center\">Đánh giá kiến trúc, lộ trình chuyển đổi và báo cáo tóm tắt cho hội đồng quản trị về ISO 20022 và bảo mật hậu lượng tử. Phản hồi trong vòng hai ngày làm việc.</p>"
     ],
     [
       ">Start a conversation</a>",
@@ -234,40 +234,40 @@
       "<a href=/vi/dieu-khoan/index.html>Điều khoản</a>"
     ],
     [
-      ">Career<",
-      ">Sự nghiệp<"
+      "Most downloads come from transitive dependencies in CI/CD pipelines and production services across PyPI, crates\\.io, and npm &middot; <span class=\"?proof-updated\"?>Updated <time datetime=\"?2026-10-15\"?>15 Oct 2026</time>\\.</span>",
+      "Phần lớn lượt tải xuống đến từ các phụ thuộc bắc cầu trong pipeline CI/CD và dịch vụ vận hành thực tế trên PyPI, crates.io và npm &middot; <span class=\"proof-updated\">Cập nhật ngày <time datetime=\"2026-10-15\">15 tháng 10 năm 2026</time>.</span>"
     ],
     [
-      ">Where I've worked\\.<",
-      ">Những nơi tôi đã làm việc.<"
+      "(HSBC|PayPal|Barclays|Shazam|AKQA|Virgin) logo",
+      "Logo \\1"
     ],
     [
-      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
-      ">Gần hai thập kỷ lãnh đạo nội bộ mảng thanh toán và sản phẩm số tại HSBC, PayPal, Barclays, Shazam, AKQA và Virgin Group.</p>"
+      ">EPAA White Paper \\(Sep 2025, PDF\\)</a>",
+      ">Sách trắng EPAA (tháng 9 năm 2025, PDF)</a>"
     ],
     [
-      "alt=\"PayPal logo\"",
-      "alt=\"Logo PayPal\""
+      ">SWIFT CBPR\\+ / ISO 20022</a>",
+      ">SWIFT CBPR+ / ISO 20022</a>"
     ],
     [
-      "alt=\"Barclays logo\"",
-      "alt=\"Logo Barclays\""
+      ">Sigstore &amp; CycloneDX SBOM</a>",
+      ">Sigstore &amp; CycloneDX SBOM</a>"
     ],
     [
-      "alt=\"Shazam logo\"",
-      "alt=\"Logo Shazam\""
+      ">Newsletter · Banking On Quantum</p>",
+      ">Newsletter · Banking On Quantum</p>"
     ],
     [
-      "alt=\"AKQA logo\"",
-      "alt=\"Logo AKQA\""
+      ">Monthly briefings for senior banking architects\\.</h2>",
+      ">Bản tin hằng tháng dành cho kiến trúc sư ngân hàng cấp cao.</h2>"
     ],
     [
-      "alt=\"Virgin logo\"",
-      "alt=\"Logo Virgin\""
+      ">Research notes on applied AI, ISO 20022 migration, and post-quantum cryptography across wholesale payment rails\\. No spam, unsubscribe in one click\\.</p>",
+      ">Ghi chú nghiên cứu về AI ứng dụng, chuyển đổi ISO 20022 và mật mã hậu lượng tử trên các kênh thanh toán bán buôn. Không spam, hủy đăng ký chỉ với một cú nhấp.</p>"
     ],
     [
-      "alt=\"HSBC logo\"",
-      "alt=\"Logo HSBC\""
+      ">Browse the changelog <span",
+      ">Xem nhật ký thay đổi <span"
     ],
     [
       ">Read more<",
@@ -310,32 +310,32 @@
       ">Lượng tử · Mật mã<"
     ],
     [
-      ">Read the white paper</a>",
-      ">Đọc sách trắng</a>"
+      ">Read the white paper(?: \\(PDF\\))?</a>",
+      ">Đọc sách trắng (PDF)</a>"
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
-      "<dl class=pao><div><dt>Vấn đề</dt><dd>Soạn thủ công <strong>ISO 20022 pain.001</strong> dễ xảy ra lỗi trong các đợt chuyển đổi SEPA và SWIFT.</dd></div><div><dt>Phương pháp</dt><dd>Python hướng schema ánh xạ CSV hoặc SQLite thành XML thanh toán đã được xác thực.</dd></div><div><dt>Kết quả</dt><dd>Bộ phận vận hành phát hành pain.001 trong vài phút; dấu vết kiểm toán tồn tại sau di chuyển.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tác động</span> ISO 20022 · SEPA + SWIFT</p>"
+      ">Tailor the page order and highlights for your role\\.</p>",
+      ">Điều chỉnh thứ tự trang và các điểm nổi bật theo vai trò của bạn.</p>"
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
-      "<dl class=pao><div><dt>Vấn đề</dt><dd>Chuyển tiền tín dụng FI-to-FI không qua được kiểm toán khi quy tắc XSD, IBAN và PII mâu thuẫn nhau.</dd></div><div><dt>Phương pháp</dt><dd>Một thư viện duy nhất: JSON Schema, XSD, IBAN trên 75 quốc gia, che giấu dữ liệu chuẩn GDPR.</dd></div><div><dt>Kết quả</dt><dd>Chuyển tiền tín dụng xuyên biên giới vượt qua cơ quan quản lý ngay lần đầu.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tác động</span> 75 quốc gia · IBAN</p>"
+      "data-summary-default=\"Tailor the page order and highlights for your role\\.\"",
+      "data-summary-default=\"Điều chỉnh thứ tự trang và các điểm nổi bật theo vai trò của bạn.\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
-      "<dl class=pao><div><dt>Vấn đề</dt><dd>Các định dạng sao kê nhốt đội ngũ đối soát vào công việc nhập liệu thủ công.</dd></div><div><dt>Phương pháp</dt><dd>Một bộ công cụ Python chuẩn hoá sao kê đa định dạng với nguồn gốc dữ liệu cấp kiểm toán.</dd></div><div><dt>Kết quả</dt><dd>Đối soát chạy mà không cần mã kết nối riêng cho từng ngân hàng.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tác động</span> Đa định dạng · Cấp kiểm toán</p>"
+      "data-summary-boards=\"Prioritising board-level proof, fiduciary risk, and post-quantum governance\\.\"",
+      "data-summary-boards=\"Ưu tiên bằng chứng cấp hội đồng quản trị, rủi ro ủy thác và quản trị hậu lượng tử.\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
-      "<dl class=pao><div><dt>Vấn đề</dt><dd>Các thư viện băm tiền PQC để lộ kho thông tin xác thực trước rủi ro lượng tử.</dd></div><div><dt>Phương pháp</dt><dd>Thư viện băm và tóm lược Rust an toàn bộ nhớ với tư thế post-quantum.</dd></div><div><dt>Kết quả</dt><dd>Hàm băm bảo mật thay thế trực tiếp cho các dịch vụ đang lên kế hoạch di chuyển PQC.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tác động</span> An toàn bộ nhớ · Rust</p>"
+      "data-summary-engineers=\"Prioritising open-source Rust and Python libraries, ISO 20022 schemas, and FIPS 203 ML-KEM\\.\"",
+      "data-summary-engineers=\"Ưu tiên các thư viện Rust và Python mã nguồn mở, lược đồ ISO 20022 và FIPS 203 ML-KEM.\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
-      "<dl class=pao><div><dt>Vấn đề</dt><dd>Các ngân hàng Tier-1 chịu rủi ro harvest-now-decrypt-later trên mọi phiên TLS.</dd></div><div><dt>Phương pháp</dt><dd><strong>CRYSTALS-Kyber</strong> thuần Rust (NIST FIPS 203) tích hợp vào luồng xác thực hiện có.</dd></div><div><dt>Kết quả</dt><dd>Trao đổi khóa post-quantum trong Rust cấp sản xuất, được xác thực độc lập.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tác động</span> NIST FIPS 203</p>"
+      "data-summary-regulators=\"Prioritising the EPAA quantum-safe payments paper, DORA, CRA, and supervisory compliance\\.\"",
+      "data-summary-regulators=\"Ưu tiên sách trắng EPAA về thanh toán an toàn lượng tử, DORA, CRA và tuân thủ giám sát.\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
-      "<dl class=pao><div><dt>Vấn đề</dt><dd>Các pipeline AI, MCP và cấu hình chạy trên bộ phân tích YAML có UB nền C và sai lệch đặc tả âm thầm.</dd></div><div><dt>Phương pháp</dt><dd>YAML 1.2 thuần Rust trên thư viện, CLI, LSP, MCP và WASM — không có unsafe, đầy đủ đặc tả.</dd></div><div><dt>Kết quả</dt><dd>Các pipeline YAML không còn là mắt xích yếu trong chuỗi cung ứng.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tác động</span> 406 / 406 đặc tả · 0 unsafe</p>"
+      "alt=\"Isometric render of an illuminated processor, representing the cryptographic foundations of payments\\.\"",
+      "alt=\"Hình kết xuất đẳng cự của một bộ xử lý phát sáng, tượng trưng cho nền tảng mật mã của thanh toán.\""
     ],
     [
       ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
@@ -354,8 +354,8 @@
       ">Mã nguồn mở cho tương lai của ngân hàng và tài chính.</h2>"
     ],
     [
-      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
-      "\\g<1>Tìm hiểu thêm <span"
+      ">Explore the ISO 20022 libraries <span",
+      ">Khám phá các thư viện ISO 20022 <span"
     ]
   ]
 }
