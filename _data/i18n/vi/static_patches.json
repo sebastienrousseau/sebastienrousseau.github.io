@@ -22,14 +22,6 @@
       "TRỤ CỘT · CHỦ ĐỀ"
     ],
     [
-      "PILLAR · PROJECT",
-      "TRỤ CỘT · DỰ ÁN"
-    ],
-    [
-      "Curated topic clusters[^<]+",
-      "Các cụm chủ đề được tuyển chọn — chọn một mạch và theo nó xuyên suốt kho lưu trữ."
-    ],
-    [
       "aria-label=\"Post-Quantum Cryptography\"",
       "aria-label=\"Mật mã hậu lượng tử\""
     ],
@@ -48,46 +40,6 @@
     [
       "aria-label=\"Blockchain &amp; Digital Assets\"",
       "aria-label=\"Blockchain &amp; Tài sản số\""
-    ],
-    [
-      "alt=\"Post-Quantum Cryptography — topic banner\"",
-      "alt=\"Mật mã hậu lượng tử — biểu ngữ chủ đề\""
-    ],
-    [
-      "alt=\"ISO 20022 &amp; Payments — topic banner\"",
-      "alt=\"ISO 20022 &amp; Thanh toán — biểu ngữ chủ đề\""
-    ],
-    [
-      "alt=\"Applied AI in Banking — topic banner\"",
-      "alt=\"AI ứng dụng trong ngân hàng — biểu ngữ chủ đề\""
-    ],
-    [
-      "alt=\"Rust &amp; Open Source — topic banner\"",
-      "alt=\"Rust &amp; Mã nguồn mở — biểu ngữ chủ đề\""
-    ],
-    [
-      "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
-      "alt=\"Blockchain &amp; Tài sản số — biểu ngữ chủ đề\""
-    ],
-    [
-      "<h3><a href=\"/vi/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
-      "<h3><a href=\"/vi/topics/post-quantum-cryptography/index.html\">Mật mã hậu lượng tử</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/vi/topics/iso-20022-payments/[^\"]+\">ISO 20022 &amp; Payments</a></h3>",
-      "<h3><a href=\"/vi/topics/iso-20022-payments/index.html\">ISO 20022 &amp; Thanh toán</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/vi/topics/applied-ai-banking/[^\"]+\">Applied AI in Banking</a></h3>",
-      "<h3><a href=\"/vi/topics/applied-ai-banking/index.html\">AI ứng dụng trong ngân hàng</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/vi/topics/rust-open-source/[^\"]+\">Rust &amp; Open Source</a></h3>",
-      "<h3><a href=\"/vi/topics/rust-open-source/index.html\">Rust &amp; Mã nguồn mở</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/vi/topics/blockchain-digital-assets/[^\"]+\">Blockchain &amp; Digital Assets</a></h3>",
-      "<h3><a href=\"/vi/topics/blockchain-digital-assets/index.html\">Blockchain &amp; Tài sản số</a></h3>"
     ],
     [
       "<p class=\"newsroom-excerpt\">Lattice-based cryptography, NIST PQC standards, quantum-safe payments,[^<]+</p>",
@@ -116,10 +68,6 @@
     [
       "INDUSTRY WHITE PAPER · EPAA",
       "SÁCH TRẮNG NGÀNH · EPAA"
-    ],
-    [
-      "INDUSTRY WHITE PAPER",
-      "SÁCH TRẮNG NGÀNH"
     ],
     [
       "PUBLICATION · WHITE PAPER",
@@ -186,72 +134,12 @@
       " · Tải miễn phí"
     ],
     [
-      "Free download<",
-      "Tải miễn phí<"
-    ],
-    [
-      ">Download<",
-      ">Tải xuống<"
-    ],
-    [
-      ">Request access<",
-      ">Yêu cầu truy cập<"
-    ],
-    [
       ">English · PDF",
       ">Tiếng Việt · PDF"
     ],
     [
-      "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-01-\\2\">Ngày \\2 tháng 1 năm \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-02-\\2\">Ngày \\2 tháng 2 năm \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-03-\\2\">Ngày \\2 tháng 3 năm \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-04-\\2\">Ngày \\2 tháng 4 năm \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-05-\\2\">Ngày \\2 tháng 5 năm \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-06-\\2\">Ngày \\2 tháng 6 năm \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-07-\\2\">Ngày \\2 tháng 7 năm \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-08-\\2\">Ngày \\2 tháng 8 năm \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-09-\\2\">Ngày \\2 tháng 9 năm \\1</time>"
-    ],
-    [
       "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
       "<time datetime=\"\\1-09-01\">Tháng 9 năm \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-10-\\2\">Ngày \\2 tháng 10 năm \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-11-\\2\">Ngày \\2 tháng 11 năm \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-12-\\2\">Ngày \\2 tháng 12 năm \\1</time>"
     ],
     [
       ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
@@ -302,22 +190,6 @@
       "\\1<section class=\"qa-a\"><p>Có hai mạch nội dung. <strong>Sách trắng ngành</strong>, được tạo ra cho các tổ chức như Emerging Payments Association Asia (EPAA), xem xét những chuyển đổi cấu trúc của hạ tầng thanh toán — gần đây là tác động của tính toán lượng tử liên quan đến mật mã đối với các đường ray quyết toán bán buôn và thời gian thực. <strong>Báo cáo nghiên cứu ứng dụng</strong> nhắm vào các chủ đề kỹ thuật cụ thể (ví dụ: nhận dạng giọng nói thời gian thực với Whisper + Metal Performance Shaders trên Apple Silicon) và được xuất bản dưới dạng PDF có thể mua riêng lẻ.</p></section>"
     ],
     [
-      ">How often do you release new papers\\?</summary>",
-      ">Bạn phát hành bài báo mới với tần suất nào?</summary>"
-    ],
-    [
-      "(<summary[^>]*>Bạn phát hành bài báo mới với tần suất nào\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Không đều, vì ưu tiên chất lượng hơn nhịp độ. Các ghi chú nghiên cứu ngắn được công bố vài tuần một lần khi có một bước tiến kỹ thuật đáng kể. Sách trắng được phát hành theo các chu kỳ ngành (ví dụ: lịch quy định, hội nghị EPAA).</p></section>"
-    ],
-    [
-      ">About EPAA</p>",
-      ">Về EPAA</p>"
-    ],
-    [
-      "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
-      "<p class=\"book-about\"><strong>Emerging Payments Association Asia (EPAA)</strong> là hiệp hội chuyên ngành của ngành thanh toán trong khu vực châu Á-Thái Bình Dương, tập hợp các ngân hàng, đơn vị xử lý, fintech và cơ quan quản lý xoay quanh các vấn đề cấu trúc xuyên suốt ngành."
-    ],
-    [
       ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
       ">Thanh toán An toàn Lượng tử: Vì sao ngành thanh toán phải hành động ngay<"
     ],
@@ -330,40 +202,12 @@
       ">Nghiên cứu và phân tích gần đây<"
     ],
     [
-      "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
-      "Tháng 9 năm 2025 &middot; Emerging Payments Association Asia (EPAA)"
-    ],
-    [
       ">Quantum computing threatens the cryptographic foundations[^<]+",
       ">Tính toán lượng tử đe doạ nền tảng mật mã của dịch vụ tài chính. Thanh toán — từ thời gian thực đến quyết toán xuyên biên giới — dựa vào các biện pháp bảo vệ mà tính toán lượng tử rốt cuộc sẽ làm lỗi thời. Sách trắng EPAA này nêu rõ vì sao ngành phải hành động ngay bây giờ."
     ],
     [
-      "2024 &middot; Independent Research &middot;",
-      "2024 &middot; Nghiên cứu độc lập &middot;"
-    ],
-    [
-      ">This independent research paper presents[^<]+",
-      ">Báo cáo nghiên cứu độc lập này trình bày tối ưu hoá nhận dạng giọng nói thời gian thực trên macOS bằng OpenAI Whisper và Metal Performance Shaders, chứng minh các lợi ích đo lường được về độ trễ và hiệu suất năng lượng."
-    ],
-    [
-      ">License &amp; pricing<",
-      ">Giấy phép và giá<"
-    ],
-    [
-      ">One copy per buyer<",
-      ">Một bản cho mỗi người mua<"
-    ],
-    [
       ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
       ">Câu hỏi?<span class=\"qa-headline-soft\"> Trả lời.</span>"
-    ],
-    [
-      ">Questions\\? Answers\\.</h2>",
-      ">Câu hỏi? Trả lời.</h2>"
-    ],
-    [
-      ">Questions\\? Answers\\.<",
-      ">Câu hỏi? Trả lời.<"
     ],
     [
       ">Are the white papers free to read\\?</summary>",
@@ -386,10 +230,6 @@
       ">Làm thế nào để theo dõi các ấn phẩm mới?</summary>"
     ],
     [
-      ">Where can I follow new releases\\?</summary>",
-      ">Tôi có thể theo dõi các bản phát hành mới ở đâu?</summary>"
-    ],
-    [
       "(<summary[^>]*>Sách trắng có miễn phí đọc không\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Sách trắng EPAA <em>Quantum-Safe Payments</em> được tải miễn phí công khai tại <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Báo cáo nghiên cứu độc lập về nhận dạng giọng nói thời gian thực với OpenAI Whisper và Metal Performance Shaders được cấp phép và có thể mua riêng với giá 49,00 $ (tiếng Anh, PDF, ~95 KB). Một bản cho mỗi người mua; tải xuống dành cho mục đích cá nhân, không phân phối lại.</p></section>"
     ],
@@ -410,312 +250,8 @@
       "\\1<section class=\"qa-a\"><p>Các bài viết và ghi chú nghiên cứu mới được công bố ưu tiên qua <a href=\"/vi/rss.xml\">nguồn cấp RSS</a> của trang và bản tin <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>, chuyên về mật mã hậu lượng tử, chính sách của ngân hàng trung ương và lộ trình chuyển đổi của các sơ đồ thanh toán lớn. Không spam — chỉ tin mới.</p></section>"
     ],
     [
-      "(<summary[^>]*>Tôi có thể theo dõi các bản phát hành mới ở đâu\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Đăng ký <a href=\"/vi/rss.xml\">nguồn cấp RSS</a> hoặc theo dõi tôi trên <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> để nhận thông báo về các ấn phẩm mới.</p></section>"
-    ],
-    [
-      ">Browse all projects<",
-      ">Xem tất cả dự án<"
-    ],
-    [
-      ">Three areas of practice\\.\\s*<span",
-      ">Ba lĩnh vực thực hành. <span"
-    ],
-    [
-      ">One philosophy\\.</span>",
-      ">Một triết lý.</span>"
-    ],
-    [
-      ">WHAT IS INSIDE<",
-      ">NỘI DUNG<"
-    ],
-    [
-      ">OPEN SOURCE FOR FINANCIAL SERVICES<",
-      ">MÃ NGUỒN MỞ CHO DỊCH VỤ TÀI CHÍNH<"
-    ],
-    [
-      ">Payments and settlement\\.<",
-      ">Thanh toán và quyết toán.<"
-    ],
-    [
-      ">Post-quantum cryptography\\.<",
-      ">Mật mã hậu lượng tử.<"
-    ],
-    [
-      ">Tooling and infrastructure\\.<",
-      ">Công cụ và hạ tầng.<"
-    ],
-    [
-      ">Applied AI\\.<",
-      ">AI ứng dụng.<"
-    ],
-    [
-      ">Explore payments tools\\s+<",
-      ">Khám phá công cụ thanh toán <"
-    ],
-    [
-      ">Explore quantum-safe libraries\\s+<",
-      ">Khám phá thư viện an toàn lượng tử <"
-    ],
-    [
-      ">Explore developer tools\\s+<",
-      ">Khám phá công cụ lập trình viên <"
-    ],
-    [
-      ">Explore PQC tools\\s+<",
-      ">Khám phá công cụ PQC <"
-    ],
-    [
-      ">Explore AI tools\\s+<",
-      ">Khám phá công cụ AI <"
-    ],
-    [
-      ">Authored & maintained<",
-      ">Tác giả và bảo trì<"
-    ],
-    [
-      ">Authored &amp; maintained<",
-      ">Tác giả và bảo trì<"
-    ],
-    [
-      ">Open source for the future of finance\\.<",
-      ">Mã nguồn mở cho tương lai của tài chính.<"
-    ],
-    [
-      "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\">Bộ công cụ ISO 20022 <strong>pain.001</strong> và <strong>pacs.008</strong>, phân tích sao kê ngân hàng và thư viện Rust cho chuyển đổi sang tin nhắn xuyên biên giới có cấu trúc. Được thiết kế cho SWIFT, SEPA và các sơ đồ thanh toán thời gian thực.</p>"
-    ],
-    [
-      "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\">Triển khai Rust của <strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203), nguyên thuỷ băm và các khối xây dựng kháng lượng tử. Lớp bảo vệ vượt ra ngoài kỷ nguyên RSA và đường cong elliptic của xác thực tài chính.</p>"
-    ],
-    [
-      "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
-      "<p class=\"setup-card-body\">Thư viện Rust mã nguồn mở cho tuần tự hoá, ghi nhật ký, sinh mã, ngày và giờ. Cùng với <strong>Static Site Generator</strong> (SSG) tạo ra trang web này và môi trường lập trình viên giúp nó có thể triển khai được.</p>"
-    ],
-    [
-      ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
-      ">Công cụ ISO 20022 cho cuộc chuyển đổi toàn cầu. Tạo tệp Pain.001, chuyển khoản tín dụng xuyên biên giới pacs.008 và phân tích sao kê ngân hàng có cấu trúc.<"
-    ],
-    [
-      ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
-      ">Triển khai Rust của CRYSTALS-Kyber, nguyên thuỷ băm và digest, và các khối xây dựng kháng lượng tử cho xác thực cấp tài chính.<"
-    ],
-    [
-      ">Applied artificial intelligence\\.<",
-      ">Trí tuệ nhân tạo ứng dụng.<"
-    ],
-    [
-      ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
-      ">Các dự án AI mã nguồn mở áp dụng nhận dạng giọng nói, ngôn ngữ tự nhiên và các mô hình ngôn ngữ lớn vào các bài toán tài chính và năng suất thực tế.<"
-    ],
-    [
-      ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
-      ">Thư viện Python tự động hoá việc tạo tệp thanh toán ISO 20022 pain.001 từ CSV hoặc SQLite. Được xây dựng cho cuộc chuyển đổi toàn cầu sang tin nhắn xuyên biên giới có cấu trúc.<"
-    ],
-    [
-      ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
-      ">Tạo, xác thực và phân phối tin nhắn thanh toán ISO 20022 pacs.008 cho chuyển khoản tín dụng khách hàng FI-FI. Xác thực JSON Schema + XSD, IBAN tại 75 quốc gia, che PII tuân thủ GDPR/PCI-DSS.<"
-    ],
-    [
-      ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
-      ">Bộ công cụ Python cấp tài chính chuyển đổi sao kê ngân hàng đa định dạng thành dữ liệu có cấu trúc — cho các tệp sao kê thực tế và yêu cầu kiểm toán của môi trường được quản lý.<"
-    ],
-    [
-      ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
-      ">Ứng dụng Rust tối ưu hoá phân bổ tiền mặt trên các cấu trúc quỹ phức tạp bằng dự báo dựa trên AI. Hướng tới các trường hợp sử dụng kho quỹ, kế toán quỹ và phân bổ tài sản trong các ngân hàng và nhà quản lý tài sản.<"
-    ],
-    [
-      ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
-      ">Thư viện Rust để tạo và xử lý hình ảnh QR code ở nhiều định dạng. Các ứng dụng thanh toán trực tiếp gồm: EPC QR Codes cho chuyển khoản SEPA, QR liên kết thanh toán cho thu hộ thương nhân và luồng xác thực bổ sung.<"
-    ],
-    [
-      ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
-      ">Triển khai Rust mạnh mẽ của CRYSTALS-Kyber, tiêu chuẩn NIST FIPS 203 cho đóng gói khoá hậu lượng tử đa mục đích.<"
-    ],
-    [
-      ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
-      ">Thuật toán băm và digest an toàn cho mã hoá và xác thực mật khẩu, được thiết kế với tư thế kháng lượng tử cho kỷ nguyên hậu PQC.<"
-    ],
-    [
-      ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
-      ">CLI đa nền tảng nhanh, đơn giản và mạnh mẽ để tạo mật khẩu mạnh, độc nhất và ngẫu nhiên, được hỗ trợ bởi các nguyên thuỷ mật mã đã được kiểm toán.<"
-    ],
-    [
-      ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
-      ">Trợ lý giọng nói tiên tiến sử dụng GPT của OpenAI cho tương tác tự nhiên, tóm tắt PDF và bộ nhớ đệm hiệu quả. Được xây dựng cho cả mục đích cá nhân và điều hành.<"
-    ],
-    [
-      ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
-      ">Chuyển đổi âm thanh sang văn bản theo thời gian thực bằng nhận dạng giọng nói AI tiên tiến. Được thiết kế để khai mở những hiểu biết có thể hành động từ dữ liệu âm thanh và nâng cao trải nghiệm khách hàng và vận hành.<"
-    ],
-    [
-      ">Featured · Python · ISO 20022<",
-      ">Nổi bật · Python · ISO 20022<"
-    ],
-    [
-      ">Python · ISO 20022<",
-      ">Python · ISO 20022<"
-    ],
-    [
-      ">Python · Finance<",
-      ">Python · Tài chính<"
-    ],
-    [
-      ">Rust · Treasury · AI<",
-      ">Rust · Kho quỹ · AI<"
-    ],
-    [
-      ">Rust · Payments QR<",
-      ">Rust · QR Thanh toán<"
-    ],
-    [
-      ">Rust · Quantum<",
-      ">Rust · Lượng tử<"
-    ],
-    [
-      ">Rust · Security<",
-      ">Rust · Bảo mật<"
-    ],
-    [
-      ">AI · Voice<",
-      ">AI · Giọng nói<"
-    ],
-    [
-      ">AI · Speech<",
-      ">AI · Lời nói<"
-    ],
-    [
-      ">PAYMENTS<",
-      ">THANH TOÁN<"
-    ],
-    [
-      ">POST-QUANTUM CRYPTOGRAPHY<",
-      ">MẬT MÃ HẬU LƯỢNG TỬ<"
-    ],
-    [
-      ">AI AND VOICE<",
-      ">AI VÀ GIỌNG NÓI<"
-    ],
-    [
-      ">DEVELOPER TOOLING<",
-      ">CÔNG CỤ LẬP TRÌNH VIÊN<"
-    ],
-    [
-      ">OPEN-SOURCE RUST<",
-      ">RUST MÃ NGUỒN MỞ<"
-    ],
-    [
-      ">WEB AND DEVELOPER ENVIRONMENT<",
-      ">WEB VÀ MÔI TRƯỜNG LẬP TRÌNH VIÊN<"
-    ],
-    [
-      ">Tooling\\.<",
-      ">Công cụ.<"
-    ],
-    [
-      ">Rust libraries and tooling\\.</h2>",
-      ">Thư viện và công cụ Rust.</h2>"
-    ],
-    [
-      "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
-      "<p class=\"cat-lede\">Các dự án Rust mã nguồn mở — tuần tự hoá, ghi nhật ký, sinh mã, toán học và công cụ lập trình viên — bao gồm bộ tạo trang tĩnh đứng sau trang web này.</p>"
-    ],
-    [
-      ">Web, templates and environment\\.</h2>",
-      ">Web, mẫu và môi trường.</h2>"
-    ],
-    [
-      "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
-      "<p class=\"cat-lede\">Mẫu khởi đầu, hai ấn phẩm tập trung vào ngành, một framework CSS và các dotfile giữ cho môi trường phát triển có thể tái tạo.</p>"
-    ],
-    [
-      ">What licence are these projects released under\\?</summary>",
-      ">Các dự án này được phát hành theo giấy phép nào?</summary>"
-    ],
-    [
-      ">Are these projects production-ready\\?</summary>",
-      ">Các dự án này đã sẵn sàng cho sản xuất chưa?</summary>"
-    ],
-    [
-      ">How can I contribute or report an issue\\?</summary>",
-      ">Làm thế nào để đóng góp hoặc báo cáo lỗi?</summary>"
-    ],
-    [
-      ">Can I use these libraries in a regulated banking environment\\?</summary>",
-      ">Tôi có thể sử dụng các thư viện này trong môi trường ngân hàng được quản lý không?</summary>"
-    ],
-    [
-      ">Do you offer commercial support or consulting\\?</summary>",
-      ">Bạn có cung cấp hỗ trợ thương mại hoặc tư vấn không?</summary>"
-    ],
-    [
-      ">How do I follow new releases\\?</summary>",
-      ">Làm thế nào để theo dõi các bản phát hành mới?</summary>"
-    ],
-    [
-      "(<summary[^>]*>Các dự án này được phát hành theo giấy phép nào\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Tất cả các dự án được phát hành theo giấy phép <strong>Apache-2.0</strong>. Tệp <code>LICENSE</code> tại gốc của mỗi kho lưu trữ là nguồn chính thức.</p></section>"
-    ],
-    [
-      "(<summary[^>]*>Các dự án này đã sẵn sàng cho sản xuất chưa\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Tuỳ dự án. Các thư viện được đánh dấu <em>v1.x</em> đã được ổn định và kiểm thử dưới tải; các phiên bản trước v1 là nền tảng vững chắc nhưng có thể còn phát triển. README của mỗi kho lưu trữ nêu rõ trạng thái hiện tại; nếu bạn cần một đảm bảo cụ thể cho mục đích sử dụng sản xuất, vui lòng <a href=\"/vi/lien-he/\">liên hệ với tôi</a>.</p></section>"
-    ],
-    [
-      "(<summary[^>]*>Làm thế nào để đóng góp hoặc báo cáo lỗi\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Mỗi dự án có một kho lưu trữ GitHub công khai tại <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Mở một issue mô tả vấn đề (có ví dụ tái tạo tối thiểu sẽ được đánh giá cao) hoặc một pull request liên kết với một issue. Các đóng góp tuân theo <em>Developer Certificate of Origin</em> và yêu cầu commit có chữ ký.</p></section>"
-    ],
-    [
-      "(<summary[^>]*>Tôi có thể sử dụng các thư viện này trong môi trường ngân hàng được quản lý không\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Có, với các biện pháp phòng ngừa thông thường. Các thư viện là các tác phẩm mã nguồn mở độc lập, không phải sản phẩm được quản lý. Áp dụng quy trình thông thường của bạn về chuỗi cung ứng, bảo mật và rà soát phụ thuộc — vendoring qua bản nhân nội bộ, quét SBOM, ghim theo Git SHA hoặc dấu vân mật mã — trước khi triển khai sản xuất trên hạ tầng thanh toán.</p></section>"
-    ],
-    [
       "(<summary[^>]*>Bạn có cung cấp hỗ trợ thương mại hoặc tư vấn không\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Có, theo lựa chọn. Các nhiệm vụ tập trung vào chuyển đổi ISO&nbsp;20022, lộ trình chuyển đổi hậu lượng tử và AI ứng dụng cho dịch vụ tài chính. <a href=\"/vi/lien-he/\">Liên hệ với tôi</a> kèm một bản tóm tắt ngắn, lịch trình và các ràng buộc nếu có.</p></section>"
-    ],
-    [
-      "(<summary[^>]*>Làm thế nào để theo dõi các bản phát hành mới\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Mỗi bài viết có ngày trên trang được công bố qua <a href=\"/vi/rss.xml\">nguồn cấp RSS</a> và bản tin <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Các kho lưu trữ riêng lẻ cũng phát hành các bản trên GitHub mà bạn có thể theo dõi trực tiếp.</p></section>"
-    ],
-    [
-      ">GET IN TOUCH<",
-      ">LIÊN HỆ<"
-    ],
-    [
-      ">Have an idea\\? Let's build it\\.<",
-      ">Có một ý tưởng? Hãy cùng xây dựng nó.<"
-    ],
-    [
-      ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
-      ">Hợp tác mã nguồn mở, kỹ thuật theo đơn đặt hàng, hoặc đơn giản là một cuộc trò chuyện về tương lai của thanh toán. Theo cách bạn muốn.<"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">FEATURED</p>",
-      "<p class=\"newsroom-kicker\">NỔI BẬT</p>"
-    ],
-    [
-      "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
-      "aria-label=\"Thẻ: \\1, \\2 bài viết\""
-    ],
-    [
-      "(\\(\\d+) Posts\\)",
-      "\\1 bài viết)"
-    ],
-    [
-      ">Featured Tags \\((\\d+)\\)</h2>",
-      ">Thẻ nổi bật (\\1)</h2>"
-    ],
-    [
-      ">Featured Tags<",
-      ">Thẻ nổi bật<"
-    ],
-    [
-      "<a class=\"pill ghost\" href=\"/vi/contact/\">Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/vi/lien-he/\">Liên hệ với tôi</a>"
-    ],
-    [
-      ">Get in touch</a>",
-      ">Liên hệ với tôi</a>"
     ],
     [
       "Made with Static Site Generator: Rust-Powered SSG",
@@ -730,148 +266,24 @@
       "Website được tạo bằng Static Site Generator (SSG)"
     ],
     [
-      "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
-      "Static Site Generator (SSG) là công cụ cực nhanh cho Tối ưu hoá Công cụ Tìm kiếm (SEO) và tuân thủ các Tiêu chuẩn Trợ năng."
-    ],
-    [
-      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
-      "Chỉ mục Chủ đề và Thẻ: AI, Thanh toán, Lượng tử, Rust OSS"
-    ],
-    [
       "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
       "Duyệt website của Sebastien Rousseau theo chủ đề và thẻ: AI, thanh toán, ISO 20022, mật mã hậu lượng tử, Rust mã nguồn mở và nhiều hơn nữa."
-    ],
-    [
-      "Website Accessibility Statement — Standards &amp; Contact",
-      "Tuyên bố Trợ năng — tiêu chuẩn và liên hệ"
     ],
     [
       "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
       "Tuyên bố này giải thích khả năng tiếp cận của website chúng tôi, những gì chúng tôi đang làm để cải thiện, và cách liên hệ với chúng tôi về trợ năng web."
     ],
     [
-      "Privacy Statement — How Your Data Is Collected &amp; Used",
-      "Tuyên bố Quyền riêng tư — cách dữ liệu của bạn được thu thập và sử dụng"
-    ],
-    [
       "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
       "Trang này thông báo cho bạn về các chính sách của chúng tôi liên quan đến việc thu thập, sử dụng và tiết lộ dữ liệu cá nhân khi bạn sử dụng Website"
-    ],
-    [
-      "Let's Start a Conversation That Will Make a Real Difference",
-      "Hãy bắt đầu một cuộc trò chuyện sẽ tạo nên khác biệt thực sự"
-    ],
-    [
-      "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
-      "Có một câu hỏi hay nhận xét? Vui lòng liên hệ với tôi qua biểu mẫu dưới đây. Tôi luôn vui mừng được nghe từ bạn và sẽ phản hồi sớm nhất có thể."
-    ],
-    [
-      "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
-      "Điều khoản và Điều kiện Sử dụng — Sebastien Rousseau"
     ],
     [
       "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
       "Bằng việc truy cập website này, bạn xác nhận và đồng ý bị ràng buộc bởi các Điều khoản và Điều kiện Sử dụng này cùng tất cả các luật và quy định áp dụng."
     ],
     [
-      ">Latest research<",
-      ">Nghiên cứu mới nhất<"
-    ],
-    [
-      ">Read latest research<",
-      ">Đọc nghiên cứu mới nhất<"
-    ],
-    [
-      ">Featured articles<",
-      ">Bài viết nổi bật<"
-    ],
-    [
-      ">All articles<",
-      ">Tất cả bài viết<"
-    ],
-    [
-      ">Read more<",
-      ">Đọc thêm<"
-    ],
-    [
-      ">Read full article<",
-      ">Đọc toàn bộ bài viết<"
-    ],
-    [
-      ">Newest first<",
-      ">Mới nhất trước<"
-    ],
-    [
-      ">Oldest first<",
-      ">Cũ nhất trước<"
-    ],
-    [
-      ">By topic<",
-      ">Theo chủ đề<"
-    ],
-    [
-      ">All topics<",
-      ">Tất cả chủ đề<"
-    ],
-    [
-      ">By tag<",
-      ">Theo thẻ<"
-    ],
-    [
-      ">All tags<",
-      ">Tất cả thẻ<"
-    ],
-    [
-      ">Published<",
-      ">Xuất bản<"
-    ],
-    [
-      ">Updated<",
-      ">Cập nhật<"
-    ],
-    [
       ">Open source<",
       ">Mã nguồn mở<"
-    ],
-    [
-      ">Authored & maintained<",
-      ">Tác giả và bảo trì<"
-    ],
-    [
-      ">Open source for the future of finance\\.<",
-      ">Mã nguồn mở cho tương lai của tài chính.<"
-    ],
-    [
-      ">A portfolio of",
-      ">Một danh mục"
-    ],
-    [
-      ">Start a conversation<",
-      ">Bắt đầu trò chuyện<"
-    ],
-    [
-      ">Drop me a line<",
-      ">Gửi tôi một dòng tin<"
-    ],
-    [
-      ">Learn more<",
-      ">Tìm hiểu thêm<"
-    ],
-    [
-      ">Subscribe<",
-      ">Đăng ký<"
-    ],
-    [
-      ">Follow<",
-      ">Theo dõi<"
-    ],
-    [
-      ">Latest<",
-      ">Mới nhất<"
-    ],
-    [
-      "<h1>White Papers (?:&amp;|&) Research</h1>",
-      "<h1>Sách trắng và Nghiên cứu</h1>"
     ],
     [
       "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
@@ -906,24 +318,12 @@
       "<h1>Thư viện nhà phát triển: chủ đề ngân hàng, mã nguồn mở và danh sách phát</h1>"
     ],
     [
-      "<h1>Enterprise AI Financial Technology (?:&amp;|&) Leadership</h1>",
-      "<h1>Công nghệ tài chính AI doanh nghiệp và năng lực lãnh đạo</h1>"
-    ],
-    [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Các ấn phẩm đã chuyển sang mục Nghiên cứu</h1>"
     ],
     [
       "aria-label=\"Cloud Native Banking\"",
       "aria-label=\"Ngân hàng thuần đám mây\""
-    ],
-    [
-      "alt=\"Cloud Native Banking — topic banner\"",
-      "alt=\"Ngân hàng thuần đám mây — biểu ngữ chủ đề\""
-    ],
-    [
-      "<h3><a href=\"/vi/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
-      "<h3><a href=\"/vi/topics/cloud-native-banking/index.html\">Ngân hàng thuần đám mây</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
@@ -938,14 +338,6 @@
       "aria-label=\"AI tác tử trong ngân hàng\""
     ],
     [
-      "alt=\"Agentic AI in Banking — topic banner\"",
-      "alt=\"AI tác tử trong ngân hàng — biểu ngữ chủ đề\""
-    ],
-    [
-      "<h3><a href=\"/vi/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
-      "<h3><a href=\"/vi/topics/agentic-ai-banking/index.html\">AI tác tử trong ngân hàng</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
       "<h3><a href=\"/vi/chu-de/agentic-ai-banking/index.html\">AI tác tử trong ngân hàng</a></h3>"
     ],
@@ -956,14 +348,6 @@
     [
       "aria-label=\"Treasury Automation\"",
       "aria-label=\"Tự động hóa ngân quỹ\""
-    ],
-    [
-      "alt=\"Treasury Automation — topic banner\"",
-      "alt=\"Tự động hóa ngân quỹ — biểu ngữ chủ đề\""
-    ],
-    [
-      "<h3><a href=\"/vi/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
-      "<h3><a href=\"/vi/topics/treasury-automation/index.html\">Tự động hóa ngân quỹ</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
@@ -978,14 +362,6 @@
       "aria-label=\"Khả năng chống chịu vận hành và DORA\""
     ],
     [
-      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
-      "alt=\"Khả năng chống chịu vận hành và DORA — biểu ngữ chủ đề\""
-    ],
-    [
-      "<h3><a href=\"/vi/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
-      "<h3><a href=\"/vi/topics/operational-resilience-dora/index.html\">Khả năng chống chịu vận hành và DORA</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
       "<h3><a href=\"/vi/chu-de/operational-resilience-dora/index.html\">Khả năng chống chịu vận hành và DORA</a></h3>"
     ],
@@ -996,14 +372,6 @@
     [
       "aria-label=\"Stablecoins &amp; Tokenisation\"",
       "aria-label=\"Stablecoin và mã hóa tài sản\""
-    ],
-    [
-      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
-      "alt=\"Stablecoin và mã hóa tài sản — biểu ngữ chủ đề\""
-    ],
-    [
-      "<h3><a href=\"/vi/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
-      "<h3><a href=\"/vi/topics/stablecoins-tokenisation/index.html\">Stablecoin và mã hóa tài sản</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
@@ -1018,14 +386,6 @@
       "aria-label=\"AI tạo sinh và mô hình ngôn ngữ lớn\""
     ],
     [
-      "alt=\"Generative AI &amp; LLMs — topic banner\"",
-      "alt=\"AI tạo sinh và mô hình ngôn ngữ lớn — biểu ngữ chủ đề\""
-    ],
-    [
-      "<h3><a href=\"/vi/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
-      "<h3><a href=\"/vi/topics/generative-ai-llms/index.html\">AI tạo sinh và mô hình ngôn ngữ lớn</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
       "<h3><a href=\"/vi/chu-de/generative-ai-llms/index.html\">AI tạo sinh và mô hình ngôn ngữ lớn</a></h3>"
     ],
@@ -1036,14 +396,6 @@
     [
       "aria-label=\"Voice &amp; Speech AI\"",
       "aria-label=\"AI giọng nói và lời nói\""
-    ],
-    [
-      "alt=\"Voice &amp; Speech AI — topic banner\"",
-      "alt=\"AI giọng nói và lời nói — biểu ngữ chủ đề\""
-    ],
-    [
-      "<h3><a href=\"/vi/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
-      "<h3><a href=\"/vi/topics/voice-speech-ai/index.html\">AI giọng nói và lời nói</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
@@ -1058,14 +410,6 @@
       "aria-label=\"Quản trị và quy định về AI\""
     ],
     [
-      "alt=\"AI Governance &amp; Regulation — topic banner\"",
-      "alt=\"Quản trị và quy định về AI — biểu ngữ chủ đề\""
-    ],
-    [
-      "<h3><a href=\"/vi/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
-      "<h3><a href=\"/vi/topics/ai-governance-regulation/index.html\">Quản trị và quy định về AI</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
       "<h3><a href=\"/vi/chu-de/ai-governance-regulation/index.html\">Quản trị và quy định về AI</a></h3>"
     ],
@@ -1076,14 +420,6 @@
     [
       "aria-label=\"Wholesale Payments Rails\"",
       "aria-label=\"Đường ray thanh toán bán buôn\""
-    ],
-    [
-      "alt=\"Wholesale Payments Rails — topic banner\"",
-      "alt=\"Đường ray thanh toán bán buôn — biểu ngữ chủ đề\""
-    ],
-    [
-      "<h3><a href=\"/vi/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
-      "<h3><a href=\"/vi/topics/wholesale-payments-rails/index.html\">Đường ray thanh toán bán buôn</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",

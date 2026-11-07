@@ -21,14 +21,6 @@
       "మూలస్తంభం · అంశం"
     ],
     [
-      "PILLAR · PROJECT",
-      "మూలస్తంభం · ప్రాజెక్ట్"
-    ],
-    [
-      "Curated topic clusters[^<]+",
-      "క్యూరేటెడ్ అంశ సమూహాలు: ఒక సూత్రాన్ని ఎంచుకుని, ఆర్కైవ్ అంతటా దాన్ని అనుసరించండి."
-    ],
-    [
       "aria-label=\"Post-Quantum Cryptography\"",
       "aria-label=\"పోస్ట్-క్వాంటం క్రిప్టోగ్రఫీ\""
     ],
@@ -47,26 +39,6 @@
     [
       "aria-label=\"Blockchain &amp; Digital Assets\"",
       "aria-label=\"బ్లాక్‌చెయిన్ &amp; డిజిటల్ ఆస్తులు\""
-    ],
-    [
-      "alt=\"Post-Quantum Cryptography — topic banner\"",
-      "alt=\"పోస్ట్-క్వాంటం క్రిప్టోగ్రఫీ, అంశ బ్యానర్\""
-    ],
-    [
-      "alt=\"ISO 20022 &amp; Payments — topic banner\"",
-      "alt=\"ISO 20022 &amp; చెల్లింపులు, అంశ బ్యానర్\""
-    ],
-    [
-      "alt=\"Applied AI in Banking — topic banner\"",
-      "alt=\"బ్యాంకింగ్‌లో అనువర్తిత AI, అంశ బ్యానర్\""
-    ],
-    [
-      "alt=\"Rust &amp; Open Source — topic banner\"",
-      "alt=\"Rust &amp; Open Source, అంశ బ్యానర్\""
-    ],
-    [
-      "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
-      "alt=\"బ్లాక్‌చెయిన్ &amp; డిజిటల్ ఆస్తులు, అంశ బ్యానర్\""
     ],
     [
       "<h3><a href=\"/te/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
@@ -115,10 +87,6 @@
     [
       "INDUSTRY WHITE PAPER · EPAA",
       "పరిశ్రమ శ్వేతపత్రం · EPAA"
-    ],
-    [
-      "INDUSTRY WHITE PAPER",
-      "పరిశ్రమ శ్వేతపత్రం"
     ],
     [
       "PUBLICATION · WHITE PAPER",
@@ -185,72 +153,12 @@
       " · ఉచిత డౌన్‌లోడ్"
     ],
     [
-      "Free download<",
-      "ఉచిత డౌన్‌లోడ్<"
-    ],
-    [
-      ">Download<",
-      ">డౌన్‌లోడ్<"
-    ],
-    [
-      ">Request access<",
-      ">యాక్సెస్ కోరండి<"
-    ],
-    [
       ">English · PDF",
       ">తెలుగు · PDF"
     ],
     [
-      "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-01-\\2\">\\2 జనవరి \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-02-\\2\">\\2 ఫిబ్రవరి \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-03-\\2\">\\2 మార్చి \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-04-\\2\">\\2 ఏప్రిల్ \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-05-\\2\">\\2 మే \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-06-\\2\">\\2 జూన్ \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-07-\\2\">\\2 జూలై \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-08-\\2\">\\2 ఆగస్టు \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-09-\\2\">\\2 సెప్టెంబర్ \\1</time>"
-    ],
-    [
       "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
       "<time datetime=\"\\1-09-01\">సెప్టెంబర్ \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-10-\\2\">\\2 అక్టోబర్ \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-11-\\2\">\\2 నవంబర్ \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-12-\\2\">\\2 డిసెంబర్ \\1</time>"
     ],
     [
       ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
@@ -301,22 +209,6 @@
       "\\1<section class=\"qa-a\"><p>రెండు అంశాలు సహజీవనం చేస్తాయి. <strong>పరిశ్రమ శ్వేతపత్రాలు</strong>, Emerging Payments Association Asia (EPAA) వంటి సంస్థల కోసం రూపొందించబడతాయి, ఇవి చెల్లింపు మౌలిక సదుపాయాల నిర్మాణాత్మక పరివర్తనలను పరిశీలిస్తాయి: ఇటీవల క్రిప్టోగ్రాఫికల్‌గా సంబంధిత క్వాంటం కంప్యూటింగ్ హోల్‌సేల్ మరియు రియల్ టైమ్ సెటిల్‌మెంట్ రైల్‌లపై చూపే ప్రభావం. <strong>అనువర్తిత పరిశోధన నివేదికలు</strong> నిర్దిష్ట సాంకేతిక అంశాలను లక్ష్యంగా చేసుకుంటాయి (ఉదాహరణకు: Apple Siliconపై Whisper + Metal Performance Shadersతో రియల్ టైమ్ స్పీచ్ రికగ్నిషన్) మరియు వ్యక్తిగతంగా కొనుగోలు చేయదగిన PDFల రూపంలో ప్రచురించబడతాయి.</p></section>"
     ],
     [
-      ">How often do you release new papers\\?</summary>",
-      ">మీరు కొత్త వ్యాసాలను ఎంత తరచుగా విడుదల చేస్తారు?</summary>"
-    ],
-    [
-      "(<summary[^>]*>À quelle fréquence publiez-vous de nouveaux articles \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>క్రమరహితంగా, కడెన్స్ కంటే నాణ్యతకు ప్రాధాన్యత ఇస్తూ. సాంకేతిక పురోగతి సమర్థించినప్పుడు, ప్రతి కొన్ని వారాలకు సంక్షిప్త పరిశోధన గమనికలు వెలువడతాయి. శ్వేతపత్రాలు పరిశ్రమ చక్రాలకు అనుగుణంగా ప్రచురించబడతాయి (ఉదాహరణకు: నియంత్రణ కేలండర్‌లు, EPAA సదస్సులు).</p></section>"
-    ],
-    [
-      ">About EPAA</p>",
-      ">EPAA గురించి</p>"
-    ],
-    [
-      "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
-      "<p class=\"book-about\"><strong>Emerging Payments Association Asia (EPAA)</strong> అనేది ఆసియా-పసిఫిక్ ప్రాంతంలో చెల్లింపుల పరిశ్రమ యొక్క వృత్తిపరమైన సంఘం, ఇది రంగం అంతటా విస్తరించిన నిర్మాణాత్మక అంశాల చుట్టూ బ్యాంకులు, ప్రాసెసర్‌లు, ఫిన్‌టెక్‌లు మరియు నియంత్రణ సంస్థలను ఒకచోట చేరుస్తుంది."
-    ],
-    [
       ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
       ">క్వాంటం-సురక్షిత చెల్లింపులు: చెల్లింపుల పరిశ్రమ ఇప్పుడే ఎందుకు చర్య తీసుకోవాలి<"
     ],
@@ -329,40 +221,12 @@
       ">ఇటీవలి పరిశోధన మరియు విశ్లేషణ<"
     ],
     [
-      "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
-      "సెప్టెంబర్ 2025 &middot; Emerging Payments Association Asia (EPAA)"
-    ],
-    [
       ">Quantum computing threatens the cryptographic foundations[^<]+",
       ">క్వాంటం కంప్యూటింగ్ ఆర్థిక సేవల క్రిప్టోగ్రాఫిక్ పునాదులను ముప్పుకు గురిచేస్తుంది. చెల్లింపులు, రియల్ టైమ్ నుండి సరిహద్దు-దాటే సెటిల్‌మెంట్ వరకు, క్వాంటం కంప్యూటింగ్ చివరికి వాడుకలో లేకుండా చేసే రక్షణలపై ఆధారపడతాయి. ఈ EPAA శ్వేతపత్రం ఈ రంగం ఇప్పుడే ఎందుకు చర్య తీసుకోవాలో వివరిస్తుంది."
     ],
     [
-      "2024 &middot; Independent Research &middot;",
-      "2024 &middot; స్వతంత్ర పరిశోధన &middot;"
-    ],
-    [
-      ">This independent research paper presents[^<]+",
-      ">ఈ స్వతంత్ర పరిశోధన నివేదిక OpenAI Whisper మరియు Metal Performance Shaders సహాయంతో macOSలో రియల్ టైమ్ స్పీచ్ రికగ్నిషన్ యొక్క ఆప్టిమైజేషన్‌ను ప్రదర్శిస్తుంది, కొలవదగిన లేటెన్సీ మరియు శక్తి సామర్థ్య మెరుగుదలలను చూపుతుంది."
-    ],
-    [
-      ">License &amp; pricing<",
-      ">లైసెన్స్ మరియు ధర<"
-    ],
-    [
-      ">One copy per buyer<",
-      ">కొనుగోలుదారుకు ఒక ప్రతి<"
-    ],
-    [
       ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
       ">ప్రశ్నలు?<span class=\"qa-headline-soft\"> సమాధానాలు.</span>"
-    ],
-    [
-      ">Questions\\? Answers\\.</h2>",
-      ">ప్రశ్నలు? సమాధానాలు.</h2>"
-    ],
-    [
-      ">Questions\\? Answers\\.<",
-      ">ప్రశ్నలు? సమాధానాలు.<"
     ],
     [
       ">Are the white papers free to read\\?</summary>",
@@ -385,10 +249,6 @@
       ">కొత్త ప్రచురణలను ఎలా అనుసరించాలి?</summary>"
     ],
     [
-      ">Where can I follow new releases\\?</summary>",
-      ">కొత్త విడుదలలను నేను ఎక్కడ అనుసరించగలను?</summary>"
-    ],
-    [
       "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>EPAA శ్వేతపత్రం <em>Quantum-Safe Payments</em> <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>లో ఉచిత పబ్లిక్ డౌన్‌లోడ్‌గా అందుబాటులో ఉంది. OpenAI Whisper మరియు Metal Performance Shadersతో రియల్ టైమ్ స్పీచ్ రికగ్నిషన్‌పై స్వతంత్ర పరిశోధన నివేదిక లైసెన్స్ కింద ఉంది మరియు $49.00కి వ్యక్తిగత కొనుగోలుకు అందుబాటులో ఉంది (ఇంగ్లీష్, PDF, ~95 KB). కొనుగోలుదారుకు ఒక ప్రతి; డౌన్‌లోడ్‌లు వ్యక్తిగత ఉపయోగం కోసం మాత్రమే, పునఃపంపిణీ చేయరాదు.</p></section>"
     ],
@@ -407,250 +267,6 @@
     [
       "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>కొత్త వ్యాసాలు మరియు పరిశోధన గమనికలు సైట్ యొక్క <a href=\"/te/rss.xml\">RSS ఫీడ్</a> మరియు <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> న్యూస్‌లెటర్ ద్వారా ప్రాధాన్యతతో ప్రకటించబడతాయి, ఇది పోస్ట్-క్వాంటం క్రిప్టోగ్రఫీ, కేంద్ర బ్యాంకు విధానం మరియు ప్రధాన చెల్లింపు స్కీమ్‌ల మైగ్రేషన్ రోడ్‌మ్యాప్‌ను కవర్ చేస్తుంది. స్పామ్ లేదు, కేవలం కొత్త విషయాలు మాత్రమే.</p></section>"
-    ],
-    [
-      "(<summary[^>]*>Où puis-je suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>కొత్త ప్రచురణల గురించి తెలుసుకోవడానికి <a href=\"/te/rss.xml\">RSS ఫీడ్</a>కు సభ్యత్వం పొందండి లేదా <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a>లో నన్ను అనుసరించండి.</p></section>"
-    ],
-    [
-      ">Browse all projects<",
-      ">అన్ని ప్రాజెక్ట్‌లను బ్రౌజ్ చేయండి<"
-    ],
-    [
-      ">Three areas of practice\\.\\s*<span",
-      ">మూడు అభ్యాస రంగాలు. <span"
-    ],
-    [
-      ">One philosophy\\.</span>",
-      ">ఒకే తత్వం.</span>"
-    ],
-    [
-      ">WHAT IS INSIDE<",
-      ">లోపల ఏముంది<"
-    ],
-    [
-      ">OPEN SOURCE FOR FINANCIAL SERVICES<",
-      ">ఆర్థిక సేవల కోసం ఓపెన్ సోర్స్<"
-    ],
-    [
-      ">Payments and settlement\\.<",
-      ">చెల్లింపులు మరియు సెటిల్‌మెంట్.<"
-    ],
-    [
-      ">Post-quantum cryptography\\.<",
-      ">పోస్ట్-క్వాంటం క్రిప్టోగ్రఫీ.<"
-    ],
-    [
-      ">Tooling and infrastructure\\.<",
-      ">సాధనాలు మరియు మౌలిక సదుపాయాలు.<"
-    ],
-    [
-      ">Applied AI\\.<",
-      ">అనువర్తిత AI.<"
-    ],
-    [
-      ">Explore payments tools\\s+<",
-      ">చెల్లింపు సాధనాలను అన్వేషించండి <"
-    ],
-    [
-      ">Explore quantum-safe libraries\\s+<",
-      ">క్వాంటం-సురక్షిత లైబ్రరీలను అన్వేషించండి <"
-    ],
-    [
-      ">Explore developer tools\\s+<",
-      ">డెవలపర్ సాధనాలను అన్వేషించండి <"
-    ],
-    [
-      ">Explore PQC tools\\s+<",
-      ">PQC సాధనాలను అన్వేషించండి <"
-    ],
-    [
-      ">Explore AI tools\\s+<",
-      ">AI సాధనాలను అన్వేషించండి <"
-    ],
-    [
-      ">Authored & maintained<",
-      ">రచించి నిర్వహించబడినవి<"
-    ],
-    [
-      ">Authored &amp; maintained<",
-      ">రచించి నిర్వహించబడినవి<"
-    ],
-    [
-      ">Open source for the future of finance\\.<",
-      ">ఫైనాన్స్ భవిష్యత్తు కోసం ఓపెన్ సోర్స్.<"
-    ],
-    [
-      "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\">ISO 20022 <strong>pain.001</strong> మరియు <strong>pacs.008</strong> టూల్‌కిట్‌లు, బ్యాంక్ స్టేట్‌మెంట్ పార్సింగ్, మరియు నిర్మాణాత్మక సరిహద్దు-దాటే సందేశాలకు మైగ్రేషన్ కోసం Rust లైబ్రరీలు. SWIFT, SEPA మరియు రియల్ టైమ్ చెల్లింపు స్కీమ్‌ల కోసం రూపొందించబడ్డాయి.</p>"
-    ],
-    [
-      "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\"><strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203) యొక్క Rust అమలులు, హాష్ ప్రిమిటివ్‌లు మరియు క్వాంటం-నిరోధక బిల్డింగ్ బ్లాక్‌లు. ఆర్థిక ప్రామాణీకరణ యొక్క RSA మరియు ఎలిప్టిక్ కర్వ్ యుగానికి అతీతమైన రక్షణ.</p>"
-    ],
-    [
-      "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
-      "<p class=\"setup-card-body\">సీరియలైజేషన్, లాగింగ్, కోడ్ జనరేషన్, తేదీ మరియు సమయం కోసం ఓపెన్ సోర్స్ Rust లైబ్రరీలు. అలాగే ఈ సైట్‌ను నిర్మించే <strong>Static Site Generator</strong> (SSG) మరియు దాన్ని డెలివరీ చేయగలిగేలా చేసే డెవలపర్ వాతావరణం.</p>"
-    ],
-    [
-      ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
-      ">ప్రపంచవ్యాప్త మైగ్రేషన్ కోసం ISO 20022 సాధనాలు. Pain.001 ఫైల్ జనరేషన్, pacs.008 సరిహద్దు-దాటే క్రెడిట్ బదిలీలు మరియు నిర్మాణాత్మక బ్యాంక్ స్టేట్‌మెంట్ పార్సింగ్.<"
-    ],
-    [
-      ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
-      ">ఆర్థిక ప్రామాణీకరణ కోసం CRYSTALS-Kyber యొక్క Rust అమలులు, హాష్ మరియు డైజెస్ట్ ప్రిమిటివ్‌లు మరియు క్వాంటం-నిరోధక బిల్డింగ్ బ్లాక్‌లు.<"
-    ],
-    [
-      ">Applied artificial intelligence\\.<",
-      ">అనువర్తిత కృత్రిమ మేధ.<"
-    ],
-    [
-      ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
-      ">స్పీచ్ రికగ్నిషన్, సహజ భాష మరియు లార్జ్ లాంగ్వేజ్ మోడల్‌లను ఫైనాన్స్ మరియు ఉత్పాదకత యొక్క వాస్తవ ప్రపంచ సమస్యలకు అనువర్తించే ఓపెన్ సోర్స్ AI ప్రాజెక్ట్‌లు.<"
-    ],
-    [
-      ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
-      ">CSV లేదా SQLite నుండి ISO 20022 pain.001 చెల్లింపు ఫైళ్ల సృష్టిని స్వయంచాలకం చేసే Python లైబ్రరీ. నిర్మాణాత్మక సరిహద్దు-దాటు సందేశాలకు ప్రపంచవ్యాప్త మారడం కోసం రూపొందించబడింది.<"
-    ],
-    [
-      ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
-      ">FI-నుండి-FI కస్టమర్ క్రెడిట్ బదిలీల కోసం ISO 20022 pacs.008 చెల్లింపు సందేశాలను రూపొందించండి, ధృవీకరించండి మరియు అందించండి. JSON Schema + XSD ధృవీకరణ, 75 దేశాలలో IBAN, GDPR/PCI-DSS-కు అనుగుణమైన వ్యక్తిగత డేటా మాస్కింగ్.<"
-    ],
-    [
-      ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
-      ">బహుళ-ఫార్మాట్ బ్యాంక్ స్టేట్‌మెంట్‌లను నిర్మాణాత్మక డేటాగా మార్చే ఫైనాన్స్-గ్రేడ్ Python టూల్‌కిట్: వాస్తవ ప్రపంచ స్టేట్‌మెంట్ ఫైళ్ల వాస్తవికతలు మరియు నియంత్రిత వాతావరణాల ఆడిట్ డిమాండ్‌ల కోసం.<"
-    ],
-    [
-      ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
-      ">AI-ఆధారిత అంచనా ద్వారా సంక్లిష్ట ఫండ్ నిర్మాణాలలో నగదు కేటాయింపును ఆప్టిమైజ్ చేసే Rust అప్లికేషన్. బ్యాంకులు మరియు అసెట్ మేనేజర్‌లలో ట్రెజరీ, ఫండ్ అకౌంటింగ్ మరియు అసెట్-కేటాయింపు వినియోగ సందర్భాల కోసం రూపొందించబడింది.<"
-    ],
-    [
-      ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
-      ">బహుళ ఫార్మాట్‌లలో QR-కోడ్ చిత్రాలను రూపొందించడానికి మరియు మార్చడానికి Rust లైబ్రరీ. ప్రత్యక్ష చెల్లింపు వినియోగాలు: SEPA క్రెడిట్ బదిలీల కోసం EPC QR కోడ్‌లు, వ్యాపారి వసూలు కోసం చెల్లింపు-లింక్ QR, మరియు స్టెప్-అప్ ప్రామాణీకరణ ప్రవాహాలు.<"
-    ],
-    [
-      ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
-      ">సాధారణ-ప్రయోజన పోస్ట్-క్వాంటం కీ ఎన్‌క్యాప్సులేషన్ కోసం NIST FIPS 203 ప్రమాణమైన CRYSTALS-Kyber యొక్క పటిష్ఠమైన Rust అమలు.<"
-    ],
-    [
-      ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
-      ">పాస్‌వర్డ్ ఎన్‌క్రిప్షన్ మరియు ధృవీకరణ కోసం సురక్షితమైన హాష్ మరియు డైజెస్ట్ అల్గారిథమ్‌లు, పోస్ట్-PQC యుగం కోసం క్వాంటం-నిరోధక దృక్పథంతో రూపొందించబడ్డాయి.<"
-    ],
-    [
-      ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
-      ">ఆడిట్ చేసిన క్రిప్టోగ్రాఫిక్ ప్రిమిటివ్‌లతో బలమైన, ప్రత్యేకమైన మరియు యాదృచ్ఛిక పాస్‌వర్డ్‌లను రూపొందించడానికి వేగవంతమైన, సరళమైన మరియు శక్తివంతమైన క్రాస్-ప్లాట్‌ఫారమ్ CLI.<"
-    ],
-    [
-      ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
-      ">సహజ పరస్పర చర్యలు, PDF సారాంశాలు మరియు సమర్థవంతమైన కాషింగ్ కోసం OpenAI యొక్క GPT ను ఉపయోగించే ఒక అధునాతన వాయిస్ అసిస్టెంట్. వ్యక్తిగత మరియు కార్యనిర్వాహక వినియోగం రెండింటికీ రూపొందించబడింది.<"
-    ],
-    [
-      ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
-      ">అధునాతన AI వాయిస్ గుర్తింపును ఉపయోగించి ఆడియోను నిజ-సమయంలో టెక్స్ట్‌గా మార్చండి. ఆడియో డేటా నుండి ఆచరణీయ అంతర్దృష్టులను వెలికితీసి, కస్టమర్ మరియు కార్యనిర్వాహక అనుభవాన్ని మెరుగుపరచడానికి రూపొందించబడింది.<"
-    ],
-    [
-      ">Featured · Python · ISO 20022<",
-      ">ప్రత్యేకం · Python · ISO 20022<"
-    ],
-    [
-      ">Python · ISO 20022<",
-      ">Python · ISO 20022<"
-    ],
-    [
-      ">Python · Finance<",
-      ">Python · ఫైనాన్స్<"
-    ],
-    [
-      ">Rust · Treasury · AI<",
-      ">Rust · ట్రెజరీ · AI<"
-    ],
-    [
-      ">Rust · Payments QR<",
-      ">Rust · QR చెల్లింపులు<"
-    ],
-    [
-      ">Rust · Quantum<",
-      ">Rust · క్వాంటం<"
-    ],
-    [
-      ">Rust · Security<",
-      ">Rust · భద్రత<"
-    ],
-    [
-      ">AI · Voice<",
-      ">AI · వాయిస్<"
-    ],
-    [
-      ">AI · Speech<",
-      ">AI · స్పీచ్<"
-    ],
-    [
-      ">PAYMENTS<",
-      ">చెల్లింపులు<"
-    ],
-    [
-      ">POST-QUANTUM CRYPTOGRAPHY<",
-      ">పోస్ట్-క్వాంటం క్రిప్టోగ్రఫీ<"
-    ],
-    [
-      ">AI AND VOICE<",
-      ">AI మరియు వాయిస్<"
-    ],
-    [
-      ">DEVELOPER TOOLING<",
-      ">డెవలపర్ టూలింగ్<"
-    ],
-    [
-      ">OPEN-SOURCE RUST<",
-      ">ఓపెన్ సోర్స్ Rust<"
-    ],
-    [
-      ">WEB AND DEVELOPER ENVIRONMENT<",
-      ">వెబ్ మరియు డెవలపర్ వాతావరణం<"
-    ],
-    [
-      ">Tooling\\.<",
-      ">టూలింగ్.<"
-    ],
-    [
-      ">Rust libraries and tooling\\.</h2>",
-      ">Rust లైబ్రరీలు మరియు టూలింగ్.</h2>"
-    ],
-    [
-      "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
-      "<p class=\"cat-lede\">సీరియలైజేషన్, లాగింగ్, కోడ్ జనరేషన్, గణితం మరియు డెవలపర్ టూలింగ్ అంతటా ఓపెన్ సోర్స్ Rust ప్రాజెక్టులు, ఈ సైట్‌ను నడిపించే స్టాటిక్ సైట్ జనరేటర్‌తో సహా.</p>"
-    ],
-    [
-      ">Web, templates and environment\\.</h2>",
-      ">వెబ్, టెంప్లేట్‌లు మరియు వాతావరణం.</h2>"
-    ],
-    [
-      "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
-      "<p class=\"cat-lede\">స్టార్టర్ టెంప్లేట్‌లు, పరిశ్రమ-కేంద్రీకృత రెండు ప్రచురణలు, ఒక CSS ఫ్రేమ్‌వర్క్, మరియు అభివృద్ధి వాతావరణాన్ని పునరుత్పాదకంగా ఉంచే dotfiles.</p>"
-    ],
-    [
-      ">What licence are these projects released under\\?</summary>",
-      ">ఈ ప్రాజెక్టులు ఏ లైసెన్స్ కింద విడుదల చేయబడ్డాయి?</summary>"
-    ],
-    [
-      ">Are these projects production-ready\\?</summary>",
-      ">ఈ ప్రాజెక్టులు ప్రొడక్షన్‌కు సిద్ధంగా ఉన్నాయా?</summary>"
-    ],
-    [
-      ">How can I contribute or report an issue\\?</summary>",
-      ">నేను ఎలా సహకరించగలను లేదా సమస్యను ఎలా నివేదించగలను?</summary>"
-    ],
-    [
-      ">Can I use these libraries in a regulated banking environment\\?</summary>",
-      ">నియంత్రిత బ్యాంకింగ్ వాతావరణంలో నేను ఈ లైబ్రరీలను ఉపయోగించవచ్చా?</summary>"
-    ],
-    [
-      ">Do you offer commercial support or consulting\\?</summary>",
-      ">మీరు వాణిజ్య మద్దతు లేదా కన్సల్టింగ్ అందిస్తారా?</summary>"
-    ],
-    [
-      ">How do I follow new releases\\?</summary>",
-      ">కొత్త విడుదలలను నేను ఎలా అనుసరించాలి?</summary>"
     ],
     [
       "(<summary[^>]*>Sous quelle licence ces projets sont-ils publiés \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
@@ -677,46 +293,6 @@
       "\\1<section class=\"qa-a\"><p>సైట్‌లోని ప్రతి తేదీ గల వ్యాసం <a href=\"/te/rss.xml\">RSS ఫీడ్</a> మరియు <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> న్యూస్‌లెటర్ ద్వారా ప్రకటించబడుతుంది. వ్యక్తిగత రిపోజిటరీలు కూడా GitHub పై విడుదలలను ప్రచురిస్తాయి, వాటిని మీరు నేరుగా అనుసరించవచ్చు.</p></section>"
     ],
     [
-      ">GET IN TOUCH<",
-      ">సంప్రదించండి<"
-    ],
-    [
-      ">Have an idea\\? Let's build it\\.<",
-      ">ఒక ఆలోచన ఉందా? దాన్ని కలిసి నిర్మిద్దాం.<"
-    ],
-    [
-      ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
-      ">ఓపెన్ సోర్స్ సహకారం, కమిషన్ చేసిన ఇంజనీరింగ్, లేదా చెల్లింపుల భవిష్యత్తు గురించి ఒక సంభాషణ. ఏది సరిపోతే అది.<"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">FEATURED</p>",
-      "<p class=\"newsroom-kicker\">ప్రత్యేకం</p>"
-    ],
-    [
-      "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
-      "aria-label=\"ట్యాగ్: \\1, \\2 పోస్ట్‌లు\""
-    ],
-    [
-      "(\\(\\d+) Posts\\)",
-      "\\1 పోస్ట్‌లు)"
-    ],
-    [
-      ">Featured Tags \\((\\d+)\\)</h2>",
-      ">ప్రత్యేక ట్యాగ్‌లు (\\1)</h2>"
-    ],
-    [
-      ">Featured Tags<",
-      ">ప్రత్యేక ట్యాగ్‌లు<"
-    ],
-    [
-      "<a class=\"pill ghost\" href=\"/te/contact/\">Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/te/contact/\">సంప్రదించండి</a>"
-    ],
-    [
-      ">Get in touch</a>",
-      ">సంప్రదించండి</a>"
-    ],
-    [
       "Made with Static Site Generator: Rust-Powered SSG",
       "Static Site Generator తో నిర్మించబడింది: Rust-ఆధారిత SSG"
     ],
@@ -729,148 +305,24 @@
       "Static Site Generator (SSG) తో సృష్టించబడిన వెబ్‌సైట్"
     ],
     [
-      "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
-      "Static Site Generator (SSG) అనేది సెర్చ్ ఇంజిన్ ఆప్టిమైజేషన్ (SEO) మరియు ప్రాప్యత ప్రమాణాలకు అనుగుణ్యత కోసం మెరుపు-వేగవంతమైన సాధనం."
-    ],
-    [
-      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
-      "అంశాలు &amp; ట్యాగ్‌ల సూచిక: AI, చెల్లింపులు, క్వాంటం, Rust OSS"
-    ],
-    [
       "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
       "Sebastien Rousseau సైట్‌ను అంశం మరియు ట్యాగ్ ద్వారా బ్రౌజ్ చేయండి: AI, చెల్లింపులు, ISO 20022, పోస్ట్-క్వాంటం క్రిప్టోగ్రఫీ, Rust ఓపెన్ సోర్స్, మరియు మరిన్ని."
-    ],
-    [
-      "Website Accessibility Statement — Standards &amp; Contact",
-      "వెబ్‌సైట్ ప్రాప్యత ప్రకటన - ప్రమాణాలు &amp; సంప్రదింపు"
     ],
     [
       "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
       "ఈ ప్రకటన మా వెబ్‌సైట్ ప్రాప్యతను, దాన్ని పరిష్కరించడానికి మేము ఏమి చేస్తున్నామో, మరియు వెబ్ ప్రాప్యత గురించి మమ్మల్ని ఎలా సంప్రదించాలో వివరిస్తుంది."
     ],
     [
-      "Privacy Statement — How Your Data Is Collected &amp; Used",
-      "గోప్యతా ప్రకటన - మీ డేటా ఎలా సేకరించబడుతుంది &amp; ఉపయోగించబడుతుంది"
-    ],
-    [
       "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
       "మీరు మా వెబ్‌సైట్‌ను ఉపయోగించినప్పుడు వ్యక్తిగత డేటా సేకరణ, వినియోగం మరియు వెల్లడి గురించి మా విధానాలను ఈ పేజీ మీకు తెలియజేస్తుంది"
-    ],
-    [
-      "Let's Start a Conversation That Will Make a Real Difference",
-      "నిజమైన మార్పును తీసుకువచ్చే సంభాషణను ప్రారంభిద్దాం"
-    ],
-    [
-      "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
-      "ఒక ప్రశ్న లేదా వ్యాఖ్య ఉందా? దయచేసి దిగువ ఫారమ్‌ను ఉపయోగించి నన్ను సంప్రదించండి. మీ నుండి వినడానికి నేను ఎల్లప్పుడూ సంతోషిస్తాను మరియు వీలైనంత త్వరగా స్పందిస్తాను."
-    ],
-    [
-      "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
-      "వెబ్‌సైట్ వినియోగ నిబంధనలు &amp; షరతులు - Sebastien Rousseau"
     ],
     [
       "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
       "ఈ వెబ్‌సైట్‌ను యాక్సెస్ చేయడం ద్వారా, మీరు ఈ వినియోగ నిబంధనలు మరియు షరతులు, అలాగే వర్తించే అన్ని చట్టాలు మరియు నిబంధనలకు కట్టుబడి ఉండటానికి అంగీకరిస్తారు."
     ],
     [
-      ">Latest research<",
-      ">తాజా పరిశోధన<"
-    ],
-    [
-      ">Read latest research<",
-      ">తాజా పరిశోధన చదవండి<"
-    ],
-    [
-      ">Featured articles<",
-      ">ప్రత్యేక వ్యాసాలు<"
-    ],
-    [
-      ">All articles<",
-      ">అన్ని వ్యాసాలు<"
-    ],
-    [
-      ">Read more<",
-      ">మరింత చదవండి<"
-    ],
-    [
-      ">Read full article<",
-      ">పూర్తి వ్యాసం చదవండి<"
-    ],
-    [
-      ">Newest first<",
-      ">తాజావి ముందుగా<"
-    ],
-    [
-      ">Oldest first<",
-      ">పాతవి ముందుగా<"
-    ],
-    [
-      ">By topic<",
-      ">అంశం వారీగా<"
-    ],
-    [
-      ">All topics<",
-      ">అన్ని అంశాలు<"
-    ],
-    [
-      ">By tag<",
-      ">ట్యాగ్ వారీగా<"
-    ],
-    [
-      ">All tags<",
-      ">అన్ని ట్యాగ్‌లు<"
-    ],
-    [
-      ">Published<",
-      ">ప్రచురించబడింది<"
-    ],
-    [
-      ">Updated<",
-      ">నవీకరించబడింది<"
-    ],
-    [
       ">Open source<",
       ">ఓపెన్ సోర్స్<"
-    ],
-    [
-      ">Authored & maintained<",
-      ">రచించబడ్డాయి & నిర్వహించబడ్డాయి<"
-    ],
-    [
-      ">Open source for the future of finance\\.<",
-      ">ఫైనాన్స్ భవిష్యత్తు కోసం ఓపెన్ సోర్స్.<"
-    ],
-    [
-      ">A portfolio of",
-      ">ఒక పోర్ట్‌ఫోలియో"
-    ],
-    [
-      ">Start a conversation<",
-      ">సంభాషణ ప్రారంభించండి<"
-    ],
-    [
-      ">Drop me a line<",
-      ">నాకు ఒక సందేశం పంపండి<"
-    ],
-    [
-      ">Learn more<",
-      ">మరింత తెలుసుకోండి<"
-    ],
-    [
-      ">Subscribe<",
-      ">సభ్యత్వం పొందండి<"
-    ],
-    [
-      ">Follow<",
-      ">అనుసరించండి<"
-    ],
-    [
-      ">Latest<",
-      ">తాజా<"
-    ],
-    [
-      "<h1>White Papers (?:&amp;|&) Research</h1>",
-      "<h1>శ్వేతపత్రాలు మరియు పరిశోధన</h1>"
     ],
     [
       "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
@@ -905,20 +357,12 @@
       "<h1>డెవలపర్ లైబ్రరీ: బ్యాంకింగ్ అంశాలు, ఓపెన్ సోర్స్, ప్లేలిస్ట్‌లు</h1>"
     ],
     [
-      "<h1>Enterprise AI Financial Technology (?:&amp;|&) Leadership</h1>",
-      "<h1>ఎంటర్‌ప్రైజ్ AI ఆర్థిక సాంకేతికత మరియు నాయకత్వం</h1>"
-    ],
-    [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>ప్రచురణలు పరిశోధన విభాగానికి తరలించబడ్డాయి</h1>"
     ],
     [
       "aria-label=\"Cloud Native Banking\"",
       "aria-label=\"క్లౌడ్-నేటివ్ బ్యాంకింగ్\""
-    ],
-    [
-      "alt=\"Cloud Native Banking — topic banner\"",
-      "alt=\"క్లౌడ్-నేటివ్ బ్యాంకింగ్ — అంశ బ్యానర్\""
     ],
     [
       "<h3><a href=\"/te/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
@@ -937,10 +381,6 @@
       "aria-label=\"బ్యాంకింగ్‌లో ఏజెంటిక్ ఏఐ\""
     ],
     [
-      "alt=\"Agentic AI in Banking — topic banner\"",
-      "alt=\"బ్యాంకింగ్‌లో ఏజెంటిక్ ఏఐ — అంశ బ్యానర్\""
-    ],
-    [
       "<h3><a href=\"/te/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
       "<h3><a href=\"/te/topics/agentic-ai-banking/index.html\">బ్యాంకింగ్‌లో ఏజెంటిక్ ఏఐ</a></h3>"
     ],
@@ -955,10 +395,6 @@
     [
       "aria-label=\"Treasury Automation\"",
       "aria-label=\"ట్రెజరీ ఆటోమేషన్\""
-    ],
-    [
-      "alt=\"Treasury Automation — topic banner\"",
-      "alt=\"ట్రెజరీ ఆటోమేషన్ — అంశ బ్యానర్\""
     ],
     [
       "<h3><a href=\"/te/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
@@ -977,10 +413,6 @@
       "aria-label=\"నిర్వహణ స్థితిస్థాపకత మరియు DORA\""
     ],
     [
-      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
-      "alt=\"నిర్వహణ స్థితిస్థాపకత మరియు DORA — అంశ బ్యానర్\""
-    ],
-    [
       "<h3><a href=\"/te/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
       "<h3><a href=\"/te/topics/operational-resilience-dora/index.html\">నిర్వహణ స్థితిస్థాపకత మరియు DORA</a></h3>"
     ],
@@ -995,10 +427,6 @@
     [
       "aria-label=\"Stablecoins &amp; Tokenisation\"",
       "aria-label=\"స్టేబుల్‌కాయిన్లు మరియు టోకనీకరణ\""
-    ],
-    [
-      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
-      "alt=\"స్టేబుల్‌కాయిన్లు మరియు టోకనీకరణ — అంశ బ్యానర్\""
     ],
     [
       "<h3><a href=\"/te/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
@@ -1017,10 +445,6 @@
       "aria-label=\"జనరేటివ్ ఏఐ మరియు భారీ భాషా నమూనాలు\""
     ],
     [
-      "alt=\"Generative AI &amp; LLMs — topic banner\"",
-      "alt=\"జనరేటివ్ ఏఐ మరియు భారీ భాషా నమూనాలు — అంశ బ్యానర్\""
-    ],
-    [
       "<h3><a href=\"/te/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
       "<h3><a href=\"/te/topics/generative-ai-llms/index.html\">జనరేటివ్ ఏఐ మరియు భారీ భాషా నమూనాలు</a></h3>"
     ],
@@ -1035,10 +459,6 @@
     [
       "aria-label=\"Voice &amp; Speech AI\"",
       "aria-label=\"గాత్ర మరియు ప్రసంగ ఏఐ\""
-    ],
-    [
-      "alt=\"Voice &amp; Speech AI — topic banner\"",
-      "alt=\"గాత్ర మరియు ప్రసంగ ఏఐ — అంశ బ్యానర్\""
     ],
     [
       "<h3><a href=\"/te/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
@@ -1057,10 +477,6 @@
       "aria-label=\"ఏఐ పాలన మరియు నియంత్రణ\""
     ],
     [
-      "alt=\"AI Governance &amp; Regulation — topic banner\"",
-      "alt=\"ఏఐ పాలన మరియు నియంత్రణ — అంశ బ్యానర్\""
-    ],
-    [
       "<h3><a href=\"/te/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
       "<h3><a href=\"/te/topics/ai-governance-regulation/index.html\">ఏఐ పాలన మరియు నియంత్రణ</a></h3>"
     ],
@@ -1075,10 +491,6 @@
     [
       "aria-label=\"Wholesale Payments Rails\"",
       "aria-label=\"టోకు చెల్లింపు పట్టాలు\""
-    ],
-    [
-      "alt=\"Wholesale Payments Rails — topic banner\"",
-      "alt=\"టోకు చెల్లింపు పట్టాలు — అంశ బ్యానర్\""
     ],
     [
       "<h3><a href=\"/te/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",

@@ -22,14 +22,6 @@
       "SÜTUN · KONU"
     ],
     [
-      "PILLAR · PROJECT",
-      "SÜTUN · PROJE"
-    ],
-    [
-      "Curated topic clusters[^<]+",
-      "Seçilmiş konu kümeleri — bir ipliği seçin ve arşiv boyunca takip edin."
-    ],
-    [
       "aria-label=\"Post-Quantum Cryptography\"",
       "aria-label=\"Post-kuantum kriptografi\""
     ],
@@ -48,46 +40,6 @@
     [
       "aria-label=\"Blockchain &amp; Digital Assets\"",
       "aria-label=\"Blockchain &amp; Dijital varlıklar\""
-    ],
-    [
-      "alt=\"Post-Quantum Cryptography — topic banner\"",
-      "alt=\"Post-kuantum kriptografi — konu afişi\""
-    ],
-    [
-      "alt=\"ISO 20022 &amp; Payments — topic banner\"",
-      "alt=\"ISO 20022 &amp; Ödemeler — konu afişi\""
-    ],
-    [
-      "alt=\"Applied AI in Banking — topic banner\"",
-      "alt=\"Bankacılıkta uygulamalı yapay zeka — konu afişi\""
-    ],
-    [
-      "alt=\"Rust &amp; Open Source — topic banner\"",
-      "alt=\"Rust &amp; Açık kaynak — konu afişi\""
-    ],
-    [
-      "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
-      "alt=\"Blockchain &amp; Dijital varlıklar — konu afişi\""
-    ],
-    [
-      "<h3><a href=\"/fr/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
-      "<h3><a href=\"/tr/konular/post-quantum-cryptography/index.html\">Post-kuantum kriptografi</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/fr/topics/iso-20022-payments/[^\"]+\">ISO 20022 &amp; Payments</a></h3>",
-      "<h3><a href=\"/tr/konular/iso-20022-payments/index.html\">ISO 20022 &amp; Ödemeler</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/fr/topics/applied-ai-banking/[^\"]+\">Applied AI in Banking</a></h3>",
-      "<h3><a href=\"/tr/konular/applied-ai-banking/index.html\">Bankacılıkta uygulamalı yapay zeka</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/fr/topics/rust-open-source/[^\"]+\">Rust &amp; Open Source</a></h3>",
-      "<h3><a href=\"/tr/konular/rust-open-source/index.html\">Rust &amp; Açık kaynak</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/fr/topics/blockchain-digital-assets/[^\"]+\">Blockchain &amp; Digital Assets</a></h3>",
-      "<h3><a href=\"/tr/konular/blockchain-digital-assets/index.html\">Blockchain &amp; Dijital varlıklar</a></h3>"
     ],
     [
       "<p class=\"newsroom-excerpt\">Lattice-based cryptography, NIST PQC standards, quantum-safe payments,[^<]+</p>",
@@ -116,10 +68,6 @@
     [
       "INDUSTRY WHITE PAPER · EPAA",
       "SEKTÖREL BEYAZ KİTAP · EPAA"
-    ],
-    [
-      "INDUSTRY WHITE PAPER",
-      "SEKTÖREL BEYAZ KİTAP"
     ],
     [
       "PUBLICATION · WHITE PAPER",
@@ -186,72 +134,12 @@
       " · Ücretsiz indirme"
     ],
     [
-      "Free download<",
-      "Ücretsiz indirme<"
-    ],
-    [
-      ">Download<",
-      ">İndir<"
-    ],
-    [
-      ">Request access<",
-      ">Erişim talep et<"
-    ],
-    [
       ">English · PDF",
       ">İngilizce · PDF"
     ],
     [
-      "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-01-\\2\">\\2 Ocak \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-02-\\2\">\\2 Şubat \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-03-\\2\">\\2 Mart \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-04-\\2\">\\2 Nisan \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-05-\\2\">\\2 Mayıs \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-06-\\2\">\\2 Haziran \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-07-\\2\">\\2 Temmuz \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-08-\\2\">\\2 Ağustos \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-09-\\2\">\\2 Eylül \\1</time>"
-    ],
-    [
       "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
       "<time datetime=\"\\1-09-01\">Eylül \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-10-\\2\">\\2 Ekim \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-11-\\2\">\\2 Kasım \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-12-\\2\">\\2 Aralık \\1</time>"
     ],
     [
       ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
@@ -302,22 +190,6 @@
       "\\1<section class=\"qa-a\"><p>İki eksen birlikte var. <strong>Sektörel beyaz kitaplar</strong>, Emerging Payments Association Asia (EPAA) gibi kuruluşlar için üretilir ve ödeme altyapısındaki yapısal dönüşümleri inceler — en son kriptografik olarak ilgili kuantum bilişimin toptan ve gerçek zamanlı mutabakat rayları üzerindeki etkisi. <strong>Uygulamalı araştırma raporları</strong> belirli teknik konuları ele alır (örneğin: Apple Silicon üzerinde Whisper + Metal Performance Shaders ile gerçek zamanlı konuşma tanıma) ve bireysel satın alma PDF olarak yayımlanır.</p></section>"
     ],
     [
-      ">How often do you release new papers\\?</summary>",
-      ">Ne sıklıkla yeni yayınlar çıkarıyorsunuz?</summary>"
-    ],
-    [
-      "(<summary[^>]*>Ne sıklıkla yeni yayınlar çıkarıyorsunuz\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Düzensiz olarak; kadansı değil kaliteyi tercih ediyorum. Kısa araştırma notları, teknik bir gelişme gerektirdiğinde birkaç haftada bir görünür. Beyaz kitaplar, sektör döngüleriyle (örneğin: düzenleyici takvimler, EPAA kongreleri) ilişkili olarak yayımlanır.</p></section>"
-    ],
-    [
-      ">About EPAA</p>",
-      ">EPAA hakkında</p>"
-    ],
-    [
-      "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
-      "<p class=\"book-about\"><strong>Emerging Payments Association Asia (EPAA)</strong>, Asya-Pasifik bölgesinde ödeme sektörünün profesyonel derneğidir; bankaları, işlemcileri, fintech'leri ve düzenleyicileri sektör çapındaki yapısal konular etrafında bir araya getirir."
-    ],
-    [
       ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
       ">Kuantum güvenli ödemeler: ödeme sektörü neden şimdi harekete geçmeli<"
     ],
@@ -330,40 +202,12 @@
       ">Güncel araştırma ve analiz<"
     ],
     [
-      "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
-      "Eylül 2025 &middot; Emerging Payments Association Asia (EPAA)"
-    ],
-    [
       ">Quantum computing threatens the cryptographic foundations[^<]+",
       ">Kuantum bilişim, finansal hizmetlerin kriptografik temellerini tehdit ediyor. Ödemeler — gerçek zamanlıdan sınır ötesi mutabakata kadar — kuantum bilişimin er ya da geç geçersiz kılacağı korumalara dayanıyor. Bu EPAA beyaz kitabı, sektörün neden şimdi harekete geçmesi gerektiğini ortaya koyuyor."
     ],
     [
-      "2024 &middot; Independent Research &middot;",
-      "2024 &middot; Bağımsız araştırma &middot;"
-    ],
-    [
-      ">This independent research paper presents[^<]+",
-      ">Bu bağımsız araştırma raporu, OpenAI Whisper ve Metal Performance Shaders kullanarak macOS'ta gerçek zamanlı konuşma tanımanın optimizasyonunu sunmakta ve ölçülebilir gecikme ve enerji verimliliği kazançları göstermektedir."
-    ],
-    [
-      ">License &amp; pricing<",
-      ">Lisans ve fiyat<"
-    ],
-    [
-      ">One copy per buyer<",
-      ">Alıcı başına bir kopya<"
-    ],
-    [
       ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
       ">Sorular?<span class=\"qa-headline-soft\"> Cevaplar.</span>"
-    ],
-    [
-      ">Questions\\? Answers\\.</h2>",
-      ">Sorular? Cevaplar.</h2>"
-    ],
-    [
-      ">Questions\\? Answers\\.<",
-      ">Sorular? Cevaplar.<"
     ],
     [
       ">Are the white papers free to read\\?</summary>",
@@ -386,10 +230,6 @@
       ">Yeni yayınları nasıl takip ederim?</summary>"
     ],
     [
-      ">Where can I follow new releases\\?</summary>",
-      ">Yeni yayınları nereden takip edebilirim?</summary>"
-    ],
-    [
       "(<summary[^>]*>Beyaz kitaplar ücretsiz mi okunabiliyor\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>EPAA beyaz kitabı <em>Quantum-Safe Payments</em>, <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> üzerinden kamuya açık ücretsiz indirme olarak sunulmaktadır. OpenAI Whisper ve Metal Performance Shaders ile gerçek zamanlı konuşma tanıma üzerine bağımsız araştırma raporu lisanslıdır ve 49,00 $ karşılığında bireysel satın alma olarak sunulmaktadır (İngilizce, PDF, ~95 KB). Alıcı başına bir kopya; indirmeler yalnızca kişisel kullanım içindir, yeniden dağıtılamaz.</p></section>"
     ],
@@ -410,312 +250,12 @@
       "\\1<section class=\"qa-a\"><p>Yeni makaleler ve araştırma notları, sitenin <a href=\"/tr/rss.xml\">RSS akışı</a> ve post-kuantum kriptografi, merkez bankası politikası ve büyük ödeme şemalarının geçiş yol haritasını kapsayan <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> bültenimle öncelikli olarak duyurulur. Spam yok — yalnızca yenilikler.</p></section>"
     ],
     [
-      "(<summary[^>]*>Yeni yayınları nereden takip edebilirim\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Yeni yayınlardan haberdar olmak için <a href=\"/tr/rss.xml\">RSS akışına</a> abone olun veya <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> üzerinden beni takip edin.</p></section>"
-    ],
-    [
-      ">Browse all projects<",
-      ">Tüm projeleri görüntüle<"
-    ],
-    [
-      ">Three areas of practice\\.\\s*<span",
-      ">Üç uygulama alanı. <span"
-    ],
-    [
-      ">One philosophy\\.</span>",
-      ">Tek felsefe.</span>"
-    ],
-    [
-      ">WHAT IS INSIDE<",
-      ">İÇİNDEKİLER<"
-    ],
-    [
-      ">OPEN SOURCE FOR FINANCIAL SERVICES<",
-      ">FİNANSAL HİZMETLER İÇİN AÇIK KAYNAK<"
-    ],
-    [
-      ">Payments and settlement\\.<",
-      ">Ödemeler ve mutabakat.<"
-    ],
-    [
-      ">Post-quantum cryptography\\.<",
-      ">Post-kuantum kriptografi.<"
-    ],
-    [
-      ">Tooling and infrastructure\\.<",
-      ">Araçlar ve altyapı.<"
-    ],
-    [
-      ">Applied AI\\.<",
-      ">Uygulamalı yapay zeka.<"
-    ],
-    [
-      ">Explore payments tools\\s+<",
-      ">Ödeme araçlarını keşfedin <"
-    ],
-    [
-      ">Explore quantum-safe libraries\\s+<",
-      ">Kuantum güvenli kütüphaneleri keşfedin <"
-    ],
-    [
-      ">Explore developer tools\\s+<",
-      ">Geliştirici araçlarını keşfedin <"
-    ],
-    [
-      ">Explore PQC tools\\s+<",
-      ">PQC araçlarını keşfedin <"
-    ],
-    [
-      ">Explore AI tools\\s+<",
-      ">Yapay zeka araçlarını keşfedin <"
-    ],
-    [
-      ">Authored & maintained<",
-      ">Yazılmış ve sürdürülen<"
-    ],
-    [
-      ">Authored &amp; maintained<",
-      ">Yazılmış ve sürdürülen<"
-    ],
-    [
-      ">Open source for the future of finance\\.<",
-      ">Finansın geleceği için açık kaynak.<"
-    ],
-    [
-      "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\">ISO 20022 <strong>pain.001</strong> ve <strong>pacs.008</strong> araç setleri, banka ekstresi ayrıştırma ve yapılandırılmış sınır ötesi mesajlara geçiş için Rust kütüphaneleri. SWIFT, SEPA ve gerçek zamanlı ödeme şemaları için tasarlandı.</p>"
-    ],
-    [
-      "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\"><strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203) Rust uygulamaları, hash temel yapı taşları ve kuantuma dayanıklı bloklar. Finansal kimlik doğrulamanın RSA ve eliptik eğri çağının ötesinde koruma.</p>"
-    ],
-    [
-      "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
-      "<p class=\"setup-card-body\">Serileştirme, loglama, kod üretimi, tarih ve saat için açık kaynak Rust kütüphaneleri. Ayrıca bu siteyi inşa eden <strong>Static Site Generator</strong> (SSG) ve onu teslim edilebilir kılan geliştirme ortamı.</p>"
-    ],
-    [
-      ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
-      ">Küresel geçiş için ISO 20022 araçları. Pain.001 dosya üretimi, pacs.008 sınır ötesi kredi transferleri ve yapılandırılmış banka ekstresi ayrıştırma.<"
-    ],
-    [
-      ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
-      ">CRYSTALS-Kyber, hash ve özet temel yapı taşlarının Rust uygulamaları ve finansal seviyede kimlik doğrulama için kuantuma dayanıklı bloklar.<"
-    ],
-    [
-      ">Applied artificial intelligence\\.<",
-      ">Uygulamalı yapay zeka.<"
-    ],
-    [
-      ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
-      ">Konuşma tanıma, doğal dil işleme ve büyük dil modellerini gerçek dünyadaki finans ve verimlilik problemlerine uygulayan açık kaynak yapay zeka projeleri.<"
-    ],
-    [
-      ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
-      ">CSV veya SQLite kaynaklarından ISO 20022 pain.001 ödeme dosyalarının oluşturulmasını otomatikleştiren bir Python kütüphanesi. Yapılandırılmış sınır ötesi mesajlara küresel geçiş için tasarlandı.<"
-    ],
-    [
-      ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
-      ">Finansal kurumlar arası müşteri kredi transferleri için ISO 20022 pacs.008 ödeme mesajlarını üretin, doğrulayın ve iletin. JSON Schema + XSD doğrulama, 75 ülkede IBAN desteği, GDPR/PCI-DSS uyumlu kişisel veri maskeleme.<"
-    ],
-    [
-      ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
-      ">Çok formatlı banka ekstrelerini yapılandırılmış verilere dönüştüren finans seviyesinde bir Python araç seti — gerçek dünyadaki ekstre dosyaları ve düzenlenmiş ortamların denetim talepleri için.<"
-    ],
-    [
-      ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
-      ">Yapay zeka destekli tahminlemeyle karmaşık fon yapıları genelinde nakit dağılımını optimize eden bir Rust uygulaması. Bankalar ve varlık yöneticileri içinde hazine, fon muhasebesi ve varlık dağılımı kullanım senaryolarına yöneliktir.<"
-    ],
-    [
-      ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
-      ">Birden çok formatta QR kod görüntüsü üretmek ve işlemek için bir Rust kütüphanesi. Doğrudan ödeme kullanımları: SEPA Kredi Transferleri için EPC QR Kodları, üye işyeri tahsilatı için ödeme bağlantısı QR'ı ve step-up kimlik doğrulama akışları.<"
-    ],
-    [
-      ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
-      ">Genel amaçlı post-kuantum anahtar kapsülleme için NIST FIPS 203 standardı olan CRYSTALS-Kyber'in sağlam bir Rust uygulaması.<"
-    ],
-    [
-      ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
-      ">Parola şifreleme ve doğrulama için güvenli hash ve özet algoritmaları, post-PQC çağı için kuantuma dayanıklı bir duruşla tasarlandı.<"
-    ],
-    [
-      ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
-      ">Denetlenmiş kriptografik temel yapı taşlarıyla desteklenen güçlü, benzersiz ve rastgele parolalar üretmek için hızlı, basit ve güçlü çapraz platform CLI.<"
-    ],
-    [
-      ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
-      ">Doğal etkileşimler, PDF özetleri ve verimli önbellekleme için OpenAI'nin GPT'sini kullanan gelişmiş bir ses asistanı. Hem kişisel hem yönetici kullanımı için tasarlandı.<"
-    ],
-    [
-      ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
-      ">Gelişmiş yapay zeka konuşma tanıma ile sesi gerçek zamanlı olarak metne dönüştürün. Ses verilerinden eyleme dönüştürülebilir içgörüleri ortaya çıkarmak ve müşteri ile operasyonel deneyimi iyileştirmek için tasarlandı.<"
-    ],
-    [
-      ">Featured · Python · ISO 20022<",
-      ">Öne çıkan · Python · ISO 20022<"
-    ],
-    [
-      ">Python · ISO 20022<",
-      ">Python · ISO 20022<"
-    ],
-    [
-      ">Python · Finance<",
-      ">Python · Finans<"
-    ],
-    [
-      ">Rust · Treasury · AI<",
-      ">Rust · Hazine · YZ<"
-    ],
-    [
-      ">Rust · Payments QR<",
-      ">Rust · Ödeme QR<"
-    ],
-    [
-      ">Rust · Quantum<",
-      ">Rust · Kuantum<"
-    ],
-    [
-      ">Rust · Security<",
-      ">Rust · Güvenlik<"
-    ],
-    [
-      ">AI · Voice<",
-      ">YZ · Ses<"
-    ],
-    [
-      ">AI · Speech<",
-      ">YZ · Konuşma<"
-    ],
-    [
-      ">PAYMENTS<",
-      ">ÖDEMELER<"
-    ],
-    [
-      ">POST-QUANTUM CRYPTOGRAPHY<",
-      ">POST-KUANTUM KRİPTOGRAFİ<"
-    ],
-    [
-      ">AI AND VOICE<",
-      ">YZ VE SES<"
-    ],
-    [
-      ">DEVELOPER TOOLING<",
-      ">GELİŞTİRİCİ ARAÇLARI<"
-    ],
-    [
-      ">OPEN-SOURCE RUST<",
-      ">AÇIK KAYNAK RUST<"
-    ],
-    [
-      ">WEB AND DEVELOPER ENVIRONMENT<",
-      ">WEB VE GELİŞTİRİCİ ORTAMI<"
-    ],
-    [
-      ">Tooling\\.<",
-      ">Araçlar.<"
-    ],
-    [
-      ">Rust libraries and tooling\\.</h2>",
-      ">Rust kütüphaneleri ve araçları.</h2>"
-    ],
-    [
-      "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
-      "<p class=\"cat-lede\">Serileştirme, loglama, kod üretimi, matematik ve geliştirici araçları genelinde açık kaynak Rust projeleri — bu sitenin arkasındaki statik site jeneratörü de dahil.</p>"
-    ],
-    [
-      ">Web, templates and environment\\.</h2>",
-      ">Web, şablonlar ve ortam.</h2>"
-    ],
-    [
-      "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
-      "<p class=\"cat-lede\">Başlangıç şablonları, sektör odaklı iki yayın, bir CSS çerçevesi ve geliştirme ortamını yeniden üretilebilir tutan dotfile'lar.</p>"
-    ],
-    [
-      ">What licence are these projects released under\\?</summary>",
-      ">Bu projeler hangi lisans altında yayımlanıyor?</summary>"
-    ],
-    [
-      ">Are these projects production-ready\\?</summary>",
-      ">Bu projeler üretime hazır mı?</summary>"
-    ],
-    [
-      ">How can I contribute or report an issue\\?</summary>",
-      ">Nasıl katkıda bulunabilirim veya bir sorun bildirebilirim?</summary>"
-    ],
-    [
-      ">Can I use these libraries in a regulated banking environment\\?</summary>",
-      ">Bu kütüphaneleri düzenlenmiş bir bankacılık ortamında kullanabilir miyim?</summary>"
-    ],
-    [
-      ">Do you offer commercial support or consulting\\?</summary>",
-      ">Ticari destek veya danışmanlık sunuyor musunuz?</summary>"
-    ],
-    [
-      ">How do I follow new releases\\?</summary>",
-      ">Yeni sürümleri nasıl takip ederim?</summary>"
-    ],
-    [
-      "(<summary[^>]*>Bu projeler hangi lisans altında yayımlanıyor\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Tüm projeler <strong>Apache-2.0</strong> lisansı altında yayımlanmaktadır. Her deponun kökündeki <code>LICENSE</code> dosyası yetkili kaynaktır.</p></section>"
-    ],
-    [
       "(<summary[^>]*>Bu projeler üretime hazır mı\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Projeye bağlıdır. <em>v1.x</em> olarak işaretlenen kütüphaneler stabilize edilmiş ve yük altında test edilmiştir; pre-v1 olanlar sağlam temellerdir ancak gelişebilir. Her deponun README'si mevcut durumu ayrıntılı olarak açıklar; üretim kullanımı için özel bir garanti gerekiyorsa <a href=\"/tr/iletisim/\">iletişime geçin</a>.</p></section>"
     ],
     [
-      "(<summary[^>]*>Nasıl katkıda bulunabilirim veya bir sorun bildirebilirim\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Her projenin <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a> üzerinde herkese açık bir GitHub deposu vardır. Sorunu açıklayan bir issue açın (minimum reprodüktör memnuniyetle karşılanır) veya bir issue'ya bağlı bir pull request gönderin. Katkılar <em>Developer Certificate of Origin</em> ile yönetilir ve imzalı commit'ler gerektirir.</p></section>"
-    ],
-    [
-      "(<summary[^>]*>Bu kütüphaneleri düzenlenmiş bir bankacılık ortamında kullanabilir miyim\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Evet, alışılmış önlemlerle. Kütüphaneler bağımsız açık kaynak çalışmalardır ve düzenlenmiş bir ürün değildir. Ödeme altyapısı üzerinde herhangi bir üretim dağıtımından önce olağan tedarik zinciri, güvenlik ve bağımlılık inceleme süreçlerinizi uygulayın — dahili aynanız üzerinden vendoring, SBOM tarama, Git SHA veya kriptografik parmak izi ile sabitleme.</p></section>"
-    ],
-    [
-      "(<summary[^>]*>Ticari destek veya danışmanlık sunuyor musunuz\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Evet, ön seçimle. Çalışmalar ISO&nbsp;20022 geçişi, post-kuantum geçiş yol haritaları ve finansal hizmetlere uygulamalı yapay zeka üzerinedir. Kısa bir brief, takvim ve geçerli kısıtlamalarla <a href=\"/tr/iletisim/\">benimle iletişime geçin</a>.</p></section>"
-    ],
-    [
       "(<summary[^>]*>Yeni sürümleri nasıl takip ederim\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Sitedeki her tarihli makale, <a href=\"/tr/rss.xml\">RSS akışı</a> ve <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> bülteni aracılığıyla duyurulur. Bireysel depolar da doğrudan takip edebileceğiniz sürümleri GitHub üzerinde yayımlar.</p></section>"
-    ],
-    [
-      ">GET IN TOUCH<",
-      ">İLETİŞİME GEÇ<"
-    ],
-    [
-      ">Have an idea\\? Let's build it\\.<",
-      ">Bir fikriniz mi var? Birlikte inşa edelim.<"
-    ],
-    [
-      ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
-      ">Açık kaynak iş birliği, sipariş üzerine mühendislik veya ödemelerin geleceği üzerine basit bir sohbet. Size en uygun olan.<"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">FEATURED</p>",
-      "<p class=\"newsroom-kicker\">ÖNE ÇIKAN</p>"
-    ],
-    [
-      "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
-      "aria-label=\"Etiket: \\1, \\2 makale\""
-    ],
-    [
-      "(\\(\\d+) Posts\\)",
-      "\\1 makale)"
-    ],
-    [
-      ">Featured Tags \\((\\d+)\\)</h2>",
-      ">Öne çıkan etiketler (\\1)</h2>"
-    ],
-    [
-      ">Featured Tags<",
-      ">Öne çıkan etiketler<"
-    ],
-    [
-      "<a class=\"pill ghost\" href=\"/fr/contact/\">Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/tr/iletisim/\">İletişime geç</a>"
-    ],
-    [
-      ">Get in touch</a>",
-      ">İletişime geç</a>"
     ],
     [
       "Made with Static Site Generator: Rust-Powered SSG",
@@ -730,148 +270,24 @@
       "Static Site Generator (SSG) ile oluşturulmuş site"
     ],
     [
-      "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
-      "Static Site Generator (SSG), arama motoru optimizasyonu (SEO) ve erişilebilirlik standartlarına uyum için şimşek hızında bir araçtır."
-    ],
-    [
-      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
-      "Konu ve etiket dizini: YZ, ödemeler, kuantum, Rust OSS"
-    ],
-    [
       "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
       "Sebastien Rousseau'nun sitesini konu ve etikete göre tarayın: yapay zeka, ödemeler, ISO 20022, post-kuantum kriptografi, Rust açık kaynak ve daha fazlası."
-    ],
-    [
-      "Website Accessibility Statement — Standards &amp; Contact",
-      "Site erişilebilirlik beyanı — standartlar ve iletişim"
     ],
     [
       "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
       "Bu beyan, sitemizin erişilebilirliğini, bunu iyileştirmek için neler yaptığımızı ve bu konuda bizimle nasıl iletişime geçebileceğinizi açıklar."
     ],
     [
-      "Privacy Statement — How Your Data Is Collected &amp; Used",
-      "Gizlilik beyanı — verileriniz nasıl toplanır ve kullanılır"
-    ],
-    [
       "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
       "Bu sayfa, Sitemizi kullandığınızda kişisel verilerin toplanması, kullanılması ve ifşa edilmesine ilişkin politikalarımız hakkında sizi bilgilendirir"
-    ],
-    [
-      "Let's Start a Conversation That Will Make a Real Difference",
-      "Gerçek bir fark yaratacak bir görüşme başlatalım"
-    ],
-    [
-      "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
-      "Bir sorunuz veya yorumunuz mu var? Lütfen aşağıdaki formla benimle iletişime geçin. Sizden haber almaktan her zaman memnuniyet duyarım ve en kısa sürede yanıt vereceğim."
-    ],
-    [
-      "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
-      "Site kullanım şartları — Sebastien Rousseau"
     ],
     [
       "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
       "Bu web sitesine erişerek, bu Kullanım Şartları ile geçerli tüm yasa ve düzenlemelerle bağlı olduğunuzu kabul ve teyit edersiniz."
     ],
     [
-      ">Latest research<",
-      ">Güncel araştırma<"
-    ],
-    [
-      ">Read latest research<",
-      ">Güncel araştırmaları oku<"
-    ],
-    [
-      ">Featured articles<",
-      ">Öne çıkan makaleler<"
-    ],
-    [
-      ">All articles<",
-      ">Tüm makaleler<"
-    ],
-    [
-      ">Read more<",
-      ">Daha fazlasını oku<"
-    ],
-    [
-      ">Read full article<",
-      ">Tüm makaleyi oku<"
-    ],
-    [
-      ">Newest first<",
-      ">Önce en yeniler<"
-    ],
-    [
-      ">Oldest first<",
-      ">Önce en eskiler<"
-    ],
-    [
-      ">By topic<",
-      ">Konuya göre<"
-    ],
-    [
-      ">All topics<",
-      ">Tüm konular<"
-    ],
-    [
-      ">By tag<",
-      ">Etikete göre<"
-    ],
-    [
-      ">All tags<",
-      ">Tüm etiketler<"
-    ],
-    [
-      ">Published<",
-      ">Yayımlandı<"
-    ],
-    [
-      ">Updated<",
-      ">Güncellendi<"
-    ],
-    [
       ">Open source<",
       ">Açık kaynak<"
-    ],
-    [
-      ">Authored & maintained<",
-      ">Yazılmış ve sürdürülen<"
-    ],
-    [
-      ">Open source for the future of finance\\.<",
-      ">Finansın geleceği için açık kaynak.<"
-    ],
-    [
-      ">A portfolio of",
-      ">Şu kütüphanelerden oluşan bir portföy:"
-    ],
-    [
-      ">Start a conversation<",
-      ">Bir görüşme başlat<"
-    ],
-    [
-      ">Drop me a line<",
-      ">Bana yazın<"
-    ],
-    [
-      ">Learn more<",
-      ">Daha fazla bilgi<"
-    ],
-    [
-      ">Subscribe<",
-      ">Abone ol<"
-    ],
-    [
-      ">Follow<",
-      ">Takip et<"
-    ],
-    [
-      ">Latest<",
-      ">Güncel<"
-    ],
-    [
-      "<h1>White Papers (?:&amp;|&) Research</h1>",
-      "<h1>Beyaz kitaplar ve araştırma</h1>"
     ],
     [
       "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
@@ -906,24 +322,12 @@
       "<h1>Geliştirici kütüphanesi: bankacılık konuları, açık kaynak ve çalma listeleri</h1>"
     ],
     [
-      "<h1>Enterprise AI Financial Technology (?:&amp;|&) Leadership</h1>",
-      "<h1>Kurumsal yapay zekâ finans teknolojisi ve liderlik</h1>"
-    ],
-    [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Yayınlar Araştırma bölümüne taşındı</h1>"
     ],
     [
       "aria-label=\"Cloud Native Banking\"",
       "aria-label=\"Bulut yerlisi bankacılık\""
-    ],
-    [
-      "alt=\"Cloud Native Banking — topic banner\"",
-      "alt=\"Bulut yerlisi bankacılık — konu afişi\""
-    ],
-    [
-      "<h3><a href=\"/tr/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
-      "<h3><a href=\"/tr/topics/cloud-native-banking/index.html\">Bulut yerlisi bankacılık</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
@@ -938,14 +342,6 @@
       "aria-label=\"Bankacılıkta etmen tabanlı yapay zekâ\""
     ],
     [
-      "alt=\"Agentic AI in Banking — topic banner\"",
-      "alt=\"Bankacılıkta etmen tabanlı yapay zekâ — konu afişi\""
-    ],
-    [
-      "<h3><a href=\"/tr/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
-      "<h3><a href=\"/tr/topics/agentic-ai-banking/index.html\">Bankacılıkta etmen tabanlı yapay zekâ</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
       "<h3><a href=\"/tr/konular/agentic-ai-banking/index.html\">Bankacılıkta etmen tabanlı yapay zekâ</a></h3>"
     ],
@@ -956,14 +352,6 @@
     [
       "aria-label=\"Treasury Automation\"",
       "aria-label=\"Hazine otomasyonu\""
-    ],
-    [
-      "alt=\"Treasury Automation — topic banner\"",
-      "alt=\"Hazine otomasyonu — konu afişi\""
-    ],
-    [
-      "<h3><a href=\"/tr/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
-      "<h3><a href=\"/tr/topics/treasury-automation/index.html\">Hazine otomasyonu</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
@@ -978,14 +366,6 @@
       "aria-label=\"Operasyonel dayanıklılık ve DORA\""
     ],
     [
-      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
-      "alt=\"Operasyonel dayanıklılık ve DORA — konu afişi\""
-    ],
-    [
-      "<h3><a href=\"/tr/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
-      "<h3><a href=\"/tr/topics/operational-resilience-dora/index.html\">Operasyonel dayanıklılık ve DORA</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
       "<h3><a href=\"/tr/konular/operational-resilience-dora/index.html\">Operasyonel dayanıklılık ve DORA</a></h3>"
     ],
@@ -996,14 +376,6 @@
     [
       "aria-label=\"Stablecoins &amp; Tokenisation\"",
       "aria-label=\"Sabit paralar ve tokenleştirme\""
-    ],
-    [
-      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
-      "alt=\"Sabit paralar ve tokenleştirme — konu afişi\""
-    ],
-    [
-      "<h3><a href=\"/tr/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
-      "<h3><a href=\"/tr/topics/stablecoins-tokenisation/index.html\">Sabit paralar ve tokenleştirme</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
@@ -1018,14 +390,6 @@
       "aria-label=\"Üretken yapay zekâ ve büyük dil modelleri\""
     ],
     [
-      "alt=\"Generative AI &amp; LLMs — topic banner\"",
-      "alt=\"Üretken yapay zekâ ve büyük dil modelleri — konu afişi\""
-    ],
-    [
-      "<h3><a href=\"/tr/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
-      "<h3><a href=\"/tr/topics/generative-ai-llms/index.html\">Üretken yapay zekâ ve büyük dil modelleri</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
       "<h3><a href=\"/tr/konular/generative-ai-llms/index.html\">Üretken yapay zekâ ve büyük dil modelleri</a></h3>"
     ],
@@ -1036,14 +400,6 @@
     [
       "aria-label=\"Voice &amp; Speech AI\"",
       "aria-label=\"Ses ve konuşma yapay zekâsı\""
-    ],
-    [
-      "alt=\"Voice &amp; Speech AI — topic banner\"",
-      "alt=\"Ses ve konuşma yapay zekâsı — konu afişi\""
-    ],
-    [
-      "<h3><a href=\"/tr/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
-      "<h3><a href=\"/tr/topics/voice-speech-ai/index.html\">Ses ve konuşma yapay zekâsı</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
@@ -1058,14 +414,6 @@
       "aria-label=\"Yapay zekâ yönetişimi ve düzenlemesi\""
     ],
     [
-      "alt=\"AI Governance &amp; Regulation — topic banner\"",
-      "alt=\"Yapay zekâ yönetişimi ve düzenlemesi — konu afişi\""
-    ],
-    [
-      "<h3><a href=\"/tr/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
-      "<h3><a href=\"/tr/topics/ai-governance-regulation/index.html\">Yapay zekâ yönetişimi ve düzenlemesi</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
       "<h3><a href=\"/tr/konular/ai-governance-regulation/index.html\">Yapay zekâ yönetişimi ve düzenlemesi</a></h3>"
     ],
@@ -1076,14 +424,6 @@
     [
       "aria-label=\"Wholesale Payments Rails\"",
       "aria-label=\"Toptan ödeme rayları\""
-    ],
-    [
-      "alt=\"Wholesale Payments Rails — topic banner\"",
-      "alt=\"Toptan ödeme rayları — konu afişi\""
-    ],
-    [
-      "<h3><a href=\"/tr/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
-      "<h3><a href=\"/tr/topics/wholesale-payments-rails/index.html\">Toptan ödeme rayları</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",

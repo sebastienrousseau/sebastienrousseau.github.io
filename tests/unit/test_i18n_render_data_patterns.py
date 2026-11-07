@@ -40,3 +40,17 @@ def test_same_count_different_patterns_fails() -> None:
 def test_missing_only_fails() -> None:
     problems = gate.check_pattern_set("xx", "home_patches", [(">What I build</p>", ">X</p>")], FR)
     assert problems and "1 missing, 0 extra" in problems[0]
+
+
+def test_static_required_patterns_allow_locale_extras() -> None:
+    entries = [(">What I build</p>", ">X</p>"), ("(<summary>Locale question</summary>)", r"\1")]
+    assert (
+        gate.check_required_patterns("xx", "static_patches", entries, [">What I build</p>"]) == []
+    )
+
+
+def test_static_required_pattern_missing_fails() -> None:
+    problems = gate.check_required_patterns("xx", "static_patches", [], FR)
+    assert problems == [
+        "[xx/static_patches] 2 shared FR/DE pattern(s) missing (first: '>What I build</p>')"
+    ]

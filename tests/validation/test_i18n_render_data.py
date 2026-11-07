@@ -16,11 +16,15 @@ The French file is the canonical reference (extracted from the
 original inline literals in build_translations.py). Every other
 language file must carry:
 
-    * the same number of entries for *_patches.json files
+    * the same number of entries for home_patches.json and the inline
+      chrome_patches.json
     * the same regex patterns as FR for home_patches.json and the inline
       chrome_patches.json (a count can match while the patterns do not:
       32 locales carried an older home set of the same length and served
       23 English strings on their home page)
+    * every static_patches.json pattern FR and DE share (the English-source
+      patterns; each locale may add its own patterns over its curated body
+      text, so static files are not compared by count)
     * the same keys for static_bodies.json
 
 Missing/extra entries fail the build. This is what prevents a DE
@@ -86,6 +90,18 @@ def check_pattern_set(code: str, name: str, entries, fr_patterns: list[str]) -> 
     ]
 
 
+def check_required_patterns(code: str, name: str, entries, required: list[str]) -> list[str]:
+    """Every required pattern present; patterns of the locale's own allowed."""
+    patterns = {pattern for pattern, _ in entries}
+    missing = [p for p in required if p not in patterns]
+    if not missing:
+        return []
+    return [
+        f"[{code}/{name}] {len(missing)} shared FR/DE pattern(s) missing "
+        f"(first: {missing[0][:60]!r})"
+    ]
+
+
 def check_bodies(code: str, fr_keys: set[str]) -> list[str]:
     try:
         bodies = _lang_registry.load_static_bodies(code)
@@ -114,6 +130,8 @@ def main() -> int:
         return 1
 
     fr_body_keys = set(fr_bodies)
+    de_static = {p for p, _ in _lang_registry.load_static_patches("de")}
+    static_shared = [p for p, _ in fr_static if p in de_static]
 
     targets = sorted(
         d.name
@@ -130,8 +148,8 @@ def main() -> int:
             check_patches(code, "home_patches", _lang_registry.load_home_patches, len(fr_home))
         )
         all_problems.extend(
-            check_patches(
-                code, "static_patches", _lang_registry.load_static_patches, len(fr_static)
+            check_required_patterns(
+                code, "static_patches", _lang_registry.load_static_patches(code), static_shared
             )
         )
         all_problems.extend(
