@@ -67,39 +67,53 @@ def _locale_for(rel_parts: tuple[str, ...]) -> str:
     return "en"
 
 
+def _first_group(pattern: re.Pattern[str], html: str) -> str:
+    """Stripped first group of ``pattern`` in ``html``, or ``""``."""
+    m = pattern.search(html)
+    return m.group(1).strip() if m else ""
+
+
+def _page_record(base_dir: Path, page: Path) -> tuple[str, str, str, str] | None:
+    """``(locale, url, title, description)`` for an indexable page, else None."""
+    rel_parts = page.relative_to(base_dir).parts
+    if rel_parts and rel_parts[0] == "labs":
+        return None
+    rel_dir = "/" + "/".join(rel_parts[:-1])
+    rel_url = "/" if rel_dir == "/" else f"{rel_dir}/"
+    html = page.read_text(encoding="utf-8", errors="ignore")
+    if not _is_indexable_canonical(html, rel_url):
+        return None
+    return (
+        _locale_for(rel_parts),
+        rel_url,
+        _first_group(_TITLE_RE, html),
+        _first_group(_DESC_RE, html),
+    )
+
+
+def _duplicates(label: str, seen: dict[tuple[str, str], list[str]]) -> list[str]:
+    """One error line per ``(locale, value)`` shared by more than one URL."""
+    return [
+        f"duplicate {label} [{locale}] {val!r}: {', '.join(urls)}"
+        for (locale, val), urls in sorted(seen.items())
+        if len(urls) > 1
+    ]
+
+
 def scan_tree(base_dir: Path) -> list[str]:
     """Scan ``base_dir`` and return human-readable duplicate-metadata error lines."""
     titles: dict[tuple[str, str], list[str]] = collections.defaultdict(list)
     descs: dict[tuple[str, str], list[str]] = collections.defaultdict(list)
-
     for page in sorted(base_dir.rglob("index.html")):
-        rel_parts = page.relative_to(base_dir).parts
-        if rel_parts and rel_parts[0] == "labs":
+        record = _page_record(base_dir, page)
+        if record is None:
             continue
-        rel_dir = "/" + "/".join(rel_parts[:-1])
-        rel_url = "/" if rel_dir == "/" else f"{rel_dir}/"
-        html = page.read_text(encoding="utf-8", errors="ignore")
-        if not _is_indexable_canonical(html, rel_url):
-            continue
-        locale = _locale_for(rel_parts)
-        title_m = _TITLE_RE.search(html)
-        if title_m and title_m.group(1).strip():
-            titles[(locale, title_m.group(1).strip())].append(rel_url)
-        desc_m = _DESC_RE.search(html)
-        if desc_m and desc_m.group(1).strip():
-            descs[(locale, desc_m.group(1).strip())].append(rel_url)
-
-    errors: list[str] = [
-        f"duplicate <title> [{locale}] {val!r}: {', '.join(urls)}"
-        for (locale, val), urls in sorted(titles.items())
-        if len(urls) > 1
-    ]
-    errors.extend(
-        f"duplicate description [{locale}] {val!r}: {', '.join(urls)}"
-        for (locale, val), urls in sorted(descs.items())
-        if len(urls) > 1
-    )
-    return errors
+        locale, rel_url, title, desc = record
+        if title:
+            titles[(locale, title)].append(rel_url)
+        if desc:
+            descs[(locale, desc)].append(rel_url)
+    return _duplicates("<title>", titles) + _duplicates("description", descs)
 
 
 def main(argv: list[str] | None = None) -> int:

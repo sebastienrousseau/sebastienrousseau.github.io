@@ -375,26 +375,13 @@ def _replace_static_main_body(html: str, fr_body: str) -> str:
     return _STATIC_WRAP_RE.sub(repl, html, count=1)
 
 
-def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-page pipeline
-    """Fork the rendered EN page at ``public/{slug}/index.html``,
-    translate chrome + body text, patch meta tags, swap canonical/og to
-    point at ``/fr/{slug}/``, then return the HTML.
-    """
-    cfg = st.STATIC_PAGES_FR.get(slug)
-    if cfg is None:
-        return None
-    shell_src = st.PUBLIC / slug / "index.html"
-    if not shell_src.is_file():
-        return None
-    shell = shell_src.read_text(encoding="utf-8")
-
+def _retitle_static_shell(shell: str, slug: str, cfg: dict[str, str], url_fr: str) -> str:
+    """Set lang, title, description, keywords, og/twitter tags, canonical,
+    hero subtitle and (on legal and utility pages) the hero H1."""
     title = cfg["title"]
     description = cfg["description"]
     subtitle = cfg.get("subtitle", description)
     keywords = cfg.get("keywords", "")
-    fr_slug_str = st.STATIC_SLUG_FR.get(slug, slug)
-    url_fr = f"{st.BASE}/{st.LANG_CODE}/{fr_slug_str}/"
-
     shell = _set_html_lang(shell)
     shell = _TITLE_RE.sub(f"<title>{_html.escape(title)}</title>", shell, count=1)
     shell = _DESC_META_RE.sub(rf"\g<1>{_html.escape(description, quote=True)}\g<2>", shell, count=1)
@@ -423,6 +410,11 @@ def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-pa
             count=1,
         )
 
+    return shell
+
+
+def _localise_generated_bodies(shell: str, slug: str) -> str:
+    """Swap the generated body copy of /playlists/ and /projects/."""
     # /playlists/ carries 39 generated cards, a featured band, five lane
     # heads, a 7-question FAQ and a device aside — far more body copy
     # than the chrome pass or a curated body can cover. Swap it from the
@@ -441,6 +433,67 @@ def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-pa
         shell, problems = localize_projects_page(shell, st.LANG_CODE)
         for problem in problems:
             print(f"build_translations: projects[{st.LANG_CODE}] — {problem}")
+
+    return shell
+
+
+_STATIC_PAGE_TYPES = ("WebPage", "AboutPage", "ProfilePage", "ContactPage", "CollectionPage")
+
+
+def _patch_page_node(node: dict, title: str, description: str, url_fr: str) -> bool:
+    """Localise a page-type node's name, description, url and inLanguage."""
+    values = {"name": title, "description": description, "url": url_fr, "inLanguage": st.LANG_CODE}
+    present = [key for key in values if key in node]
+    for key in present:
+        node[key] = values[key]
+    return bool(present)
+
+
+def _patch_breadcrumb_node(node: dict, title: str, url_fr: str) -> bool:
+    """Point a two-level BreadcrumbList at the localised home and page."""
+    targets: dict[object, tuple[str, str]] = {
+        1: (st.I18N_FR.get("Home", "Home"), f"{st.BASE}/"),
+        2: (title.split(" — ")[0], url_fr),
+    }
+    local = False
+    for item in node.get("itemListElement", []):
+        target = targets.get(item.get("position")) if isinstance(item, dict) else None
+        if target:
+            item["name"], item["item"] = target
+            local = True
+    return local
+
+
+def _patch_static_node(node: dict, title: str, description: str, url_fr: str) -> bool:
+    """JSON-LD node patcher for a translated static page."""
+    kind = node.get("@type")
+    if kind in _STATIC_PAGE_TYPES:
+        return _patch_page_node(node, title, description, url_fr)
+    if kind == "BreadcrumbList":
+        return _patch_breadcrumb_node(node, title, url_fr)
+    return False
+
+
+def render_static_translation(slug: str) -> str | None:
+    """Fork the rendered EN page at ``public/{slug}/index.html``,
+    translate chrome + body text, patch meta tags, swap canonical/og to
+    point at ``/fr/{slug}/``, then return the HTML.
+    """
+    cfg = st.STATIC_PAGES_FR.get(slug)
+    if cfg is None:
+        return None
+    shell_src = st.PUBLIC / slug / "index.html"
+    if not shell_src.is_file():
+        return None
+    shell = shell_src.read_text(encoding="utf-8")
+
+    title = cfg["title"]
+    description = cfg["description"]
+    fr_slug_str = st.STATIC_SLUG_FR.get(slug, slug)
+    url_fr = f"{st.BASE}/{st.LANG_CODE}/{fr_slug_str}/"
+
+    shell = _retitle_static_shell(shell, slug, cfg, url_fr)
+    shell = _localise_generated_bodies(shell, slug)
 
     # Rewrite EN article URLs inside the body to FR counterparts.
     shell = rewrite_en_urls(shell)
@@ -472,39 +525,9 @@ def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-pa
     shell = localize_feed_links(shell)
 
     # Patch the WebPage / WebSite JSON-LD's @id, url, name, description.
-    def patch_node(node: dict) -> bool:
-        local = False
-        t = node.get("@type")
-        if t in ("WebPage", "AboutPage", "ProfilePage", "ContactPage", "CollectionPage"):
-            if "name" in node:
-                node["name"] = title
-                local = True
-            if "description" in node:
-                node["description"] = description
-                local = True
-            if "url" in node:
-                node["url"] = url_fr
-                local = True
-            if "inLanguage" in node:
-                node["inLanguage"] = st.LANG_CODE
-                local = True
-        if t == "BreadcrumbList":
-            items = node.get("itemListElement", [])
-            for item in items:
-                if not isinstance(item, dict):
-                    continue
-                pos = item.get("position")
-                if pos == 1:
-                    item["name"] = st.I18N_FR.get("Home", "Home")
-                    item["item"] = f"{st.BASE}/"
-                    local = True
-                elif pos == 2:
-                    item["name"] = title.split(" — ")[0]
-                    item["item"] = url_fr
-                    local = True
-        return local
-
-    shell = _patch_jsonld_scripts(shell, patch_node)
+    shell = _patch_jsonld_scripts(
+        shell, lambda node: _patch_static_node(node, title, description, url_fr)
+    )
 
     # Reciprocal hreflang — strip stale links and emit fresh ones so the
     # language selector's JS resolves 🇬🇧 English to the EN counterpart.
