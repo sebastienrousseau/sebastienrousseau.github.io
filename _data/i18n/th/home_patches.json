@@ -6,11 +6,11 @@
       ">สร้างและดูแล<"
     ],
     [
-      ">Authored & maintained<",
-      ">สร้างและดูแล<"
+      ">Career<",
+      ">เส้นทางอาชีพ<"
     ],
     [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
       ">ปกป้องอนาคตของธนาคาร<br>ด้วย AI แบบเอเจนต์<br>และการเข้ารหัสหลังควอนตัม</h1>"
     ],
     [
@@ -18,8 +18,8 @@
       ">สร้างมาเพื่อ edge ออกแบบเพื่อความยืดหยุ่นที่ไม่ประนีประนอม ขับเคลื่อนการชำระเงินทั่วโลกในยุคถัดไป</p>"
     ],
     [
-      "id=practice>Open source for the<br>future of finance\\.</h2>",
-      "id=practice>โอเพนซอร์สเพื่อ<br>อนาคตของการเงิน</h2>"
+      ">Where I've worked\\.<",
+      ">องค์กรที่ฉันเคยร่วมงาน<"
     ],
     [
       ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
@@ -34,56 +34,56 @@
       ">Ver todos los khrong-kan<"
     ],
     [
-      ">Python · Payments<",
-      ">Python · Pagos<"
+      ">See the post-quantum primitives <span",
+      ">ดูองค์ประกอบพื้นฐานการเข้ารหัสหลังควอนตัม <span"
     ],
     [
-      ">Python · Cross-border<",
-      ">Python · Transfronterizo<"
+      ">View the tooling <span",
+      ">ดูเครื่องมือ <span"
     ],
     [
-      ">Python · Finance<",
-      ">Python · Finanzas<"
+      ">What I build</p>",
+      ">สิ่งที่ฉันสร้าง</p>"
     ],
     [
-      ">Rust · Security<",
-      ">Rust · Seguridad<"
+      "<h3>Payments</h3>",
+      "<h3>การชำระเงิน</h3>"
     ],
     [
-      ">Rust · Quantum<",
-      ">Rust · ควอนตัม<"
+      "<p>ISO 20022, end to end: pain\\.001, pacs\\.008, camt\\.053, and acmt\\.001\\. Adopt one library at a time\\.</p>",
+      "<p>ISO 20022 แบบครบวงจร: pain.001, pacs.008, camt.053 และ acmt.001 นำไลบรารีมาใช้ได้ทีละตัว</p>"
     ],
     [
-      ">Rust · YAML<",
-      ">Rust · YAML<"
+      "<h3>Security</h3>",
+      "<h3>ความปลอดภัย</h3>"
     ],
     [
-      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
-      ">ข้อมูลเพิ่มเติมเกี่ยวกับ \\1</a>"
+      "<p>Post-quantum primitives: ML-KEM \\(CRYSTALS-Kyber, NIST FIPS 203\\) and hashing, ready to pilot today\\.</p>",
+      "<p>องค์ประกอบพื้นฐานหลังควอนตัม: ML-KEM (CRYSTALS-Kyber, NIST FIPS 203) และการแฮช พร้อมสำหรับการทดลองใช้งานตั้งแต่วันนี้</p>"
     ],
     [
-      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
-      "<p>ไลบรารี Python ที่ทำให้การสร้างไฟล์การชำระเงิน <strong>ISO 20022 pain.001</strong> จาก CSV หรือ SQLite เป็นอัตโนมัติ ออกแบบมาเพื่อการย้ายจาก MT/MX ไปสู่ข้อความที่มีโครงสร้างใน SWIFT, SEPA และระบบหลัก</p>"
+      "<h3>Tooling</h3>",
+      "<h3>เครื่องมือ</h3>"
     ],
     [
-      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
-      "<p>สร้าง ตรวจสอบ และส่งข้อความ <strong>ISO 20022 pacs.008</strong> สำหรับการโอนระหว่างสถาบันการเงิน JSON Schema, การตรวจสอบ XSD, IBAN ใน 75 ประเทศ, การปกปิดข้อมูลส่วนบุคคลตาม GDPR/PCI-DSS</p>"
+      "<p>Audited Rust libraries and a code security scanner, signed and shipped with a software bill of materials\\.</p>",
+      "<p>ไลบรารี Rust ที่ผ่านการตรวจสอบและเครื่องมือสแกนความปลอดภัยของโค้ด ลงนามและเผยแพร่พร้อมรายการส่วนประกอบซอฟต์แวร์ (SBOM)</p>"
     ],
     [
-      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
-      "<p>ชุดเครื่องมือ Python คุณภาพการเงินที่แปลงใบแจ้งยอดธนาคารหลายรูปแบบเป็นข้อมูลที่มีโครงสร้าง ออกแบบมาสำหรับไฟล์ใบแจ้งยอดในโลกจริงและข้อกำหนดการตรวจสอบของสภาพแวดล้อมที่กำกับดูแล</p>"
+      ">All-time downloads</span>",
+      ">ยอดดาวน์โหลดสะสม</span>"
     ],
     [
-      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
-      "<p>ไลบรารี Rust ที่ใช้ <strong>อัลกอริทึม hash และ digest ที่ปลอดภัย</strong> สำหรับการเข้ารหัสและตรวจสอบรหัสผ่าน ออกแบบให้ทนต่อควอนตัมสำหรับยุคหลัง PQC ของการตรวจสอบสิทธิ์</p>"
+      ">Downloads, last 30 days</span>",
+      ">ยอดดาวน์โหลด (30 วันล่าสุด)</span>"
     ],
     [
-      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
-      "<p>การใช้งาน Rust ที่แข็งแกร่งของ <strong>CRYSTALS-Kyber</strong> มาตรฐาน NIST FIPS 203 สำหรับการเข้ารหัสหลังควอนตัมทั่วไป รากฐานของการตรวจสอบสิทธิ์การชำระเงินที่ทนต่อควอนตัม</p>"
+      ">GitHub stars</span>",
+      ">ดาวบน GitHub</span>"
     ],
     [
-      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
-      "<p><strong>ระบบนิเวศ YAML 1.2 ใน Rust 100%</strong> ไม่มี unsafe สอดคล้องกับสเปก 100% (406 / 406 ของชุดทดสอบทางการ), serde แบบ streaming-first, CST แบบไม่สูญเสีย และการตรวจสอบ JSON-Schema ไลบรารี + CLI (noyafmt, noyavalidate) + LSP + MCP + bindings WASM</p>"
+      ">Packages published</span>",
+      ">แพ็กเกจที่เผยแพร่</span>"
     ],
     [
       "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
@@ -98,8 +98,8 @@
       ">อ่านเอกสารวิจัย<"
     ],
     [
-      ">Quantum-Safe Payments\\.</h2>",
-      ">การชำระเงินที่ทนต่อควอนตัม</h2>"
+      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
+      ">เกือบสองทศวรรษของการเป็นผู้นำภายในองค์กรด้านระบบการชำระเงินและผลิตภัณฑ์ดิจิทัลที่ HSBC, PayPal, Barclays, Shazam, AKQA และ Virgin Group</p>"
     ],
     [
       ">Quantum-Safe Payments\\.<",
@@ -114,8 +114,8 @@
       ">เหตุใดอุตสาหกรรมการชำระเงินจึงต้องดำเนินการเดี๋ยวนี้<"
     ],
     [
-      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
-      ">หน่วยกำกับดูแลถือว่า \"เก็บเดี๋ยวนี้ ถอดรหัสภายหลัง\" เป็นความเสี่ยงในปัจจุบันที่น่าเชื่อถือ เอกสารนี้แสดงให้เห็นถึงภัยคุกคามเชิงโครงสร้างและความจำเป็นเร่งด่วนในการดำเนินการประสานงานบนรางการชำระเงินขายส่ง</p>"
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper(?:, produced for the Emerging Payments Association Asia, sets out| outlines) the structural threat and the(?: urgent)? case for coordinated action across wholesale payment rails\\.</p>",
+      ">หน่วยกำกับดูแลถือว่า \"เก็บเดี๋ยวนี้ ถอดรหัสภายหลัง\" เป็นความเสี่ยงในปัจจุบันที่น่าเชื่อถือ เอกสารวิจัยนี้จัดทำขึ้นสำหรับ Emerging Payments Association Asia โดยอธิบายภัยคุกคามเชิงโครงสร้างและความจำเป็นเร่งด่วนในการดำเนินการร่วมกันทั่วทั้งระบบการชำระเงินขายส่ง</p>"
     ],
     [
       ">Latest<",
@@ -154,8 +154,8 @@
       ">ปลดล็อกอนาคตของธนาคารและบริการการเงิน<br>ค้นพบการวิเคราะห์ล่าสุดจาก</h2>"
     ],
     [
-      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
-      "<p class=\"feat-sub center\">กลยุทธ์การชำระเงินขายส่ง การย้าย ISO 20022 หรือการเข้ารหัสที่ทนต่อควอนตัมสำหรับบริการการเงิน: ยินดีที่จะพูดคุย</p>"
+      "<p class=\"?feat-sub center\"?>(?:Whether it\\'s wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.|Architecture reviews, migration roadmaps, and board briefings on ISO 20022 and post-quantum security\\. Reply within two working days\\.)</p>",
+      "<p class=\"feat-sub center\">การทบทวนสถาปัตยกรรม แผนงานการย้ายระบบ และการบรรยายสรุปต่อคณะกรรมการเกี่ยวกับ ISO 20022 และความปลอดภัยหลังควอนตัม ตอบกลับภายในสองวันทำการ</p>"
     ],
     [
       ">Start a conversation</a>",
@@ -234,40 +234,40 @@
       "<a href=/th/khu-bangkhab/index.html>เงื่อนไข</a>"
     ],
     [
-      ">Career<",
-      ">เส้นทางอาชีพ<"
+      "Most downloads come from transitive dependencies in CI/CD pipelines and production services across PyPI, crates\\.io, and npm &middot; <span class=\"?proof-updated\"?>Updated <time datetime=\"?2026-10-15\"?>15 Oct 2026</time>\\.</span>",
+      "ยอดดาวน์โหลดส่วนใหญ่มาจากการพึ่งพาทางอ้อม (transitive dependency) ในไปป์ไลน์ CI/CD และบริการระบบใช้งานจริงบน PyPI, crates.io และ npm &middot; <span class=\"proof-updated\">อัปเดตเมื่อ <time datetime=\"2026-10-15\">15 ต.ค. 2026</time></span>"
     ],
     [
-      ">Where I've worked\\.<",
-      ">องค์กรที่ฉันเคยร่วมงาน<"
+      "(HSBC|PayPal|Barclays|Shazam|AKQA|Virgin) logo",
+      "โลโก้ \\1"
     ],
     [
-      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
-      ">เกือบสองทศวรรษของการเป็นผู้นำภายในองค์กรด้านระบบการชำระเงินและผลิตภัณฑ์ดิจิทัลที่ HSBC, PayPal, Barclays, Shazam, AKQA และ Virgin Group</p>"
+      ">EPAA White Paper \\(Sep 2025, PDF\\)</a>",
+      ">เอกสารวิจัย EPAA (ก.ย. 2025, PDF)</a>"
     ],
     [
-      "alt=\"PayPal logo\"",
-      "alt=\"โลโก้ PayPal\""
+      ">SWIFT CBPR\\+ / ISO 20022</a>",
+      ">SWIFT CBPR+ / ISO 20022</a>"
     ],
     [
-      "alt=\"Barclays logo\"",
-      "alt=\"โลโก้ Barclays\""
+      ">Sigstore &amp; CycloneDX SBOM</a>",
+      ">Sigstore &amp; CycloneDX SBOM</a>"
     ],
     [
-      "alt=\"Shazam logo\"",
-      "alt=\"โลโก้ Shazam\""
+      ">Newsletter · Banking On Quantum</p>",
+      ">Newsletter · Banking On Quantum</p>"
     ],
     [
-      "alt=\"AKQA logo\"",
-      "alt=\"โลโก้ AKQA\""
+      ">Monthly briefings for senior banking architects\\.</h2>",
+      ">บทสรุปรายเดือนสำหรับสถาปนิกระบบธนาคารระดับอาวุโส</h2>"
     ],
     [
-      "alt=\"Virgin logo\"",
-      "alt=\"โลโก้ Virgin\""
+      ">Research notes on applied AI, ISO 20022 migration, and post-quantum cryptography across wholesale payment rails\\. No spam, unsubscribe in one click\\.</p>",
+      ">บันทึกงานวิจัยด้าน AI ประยุกต์ การย้าย ISO 20022 และการเข้ารหัสหลังควอนตัมทั่วทั้งระบบการชำระเงินขายส่ง ไม่มีสแปม ยกเลิกการรับได้ในคลิกเดียว</p>"
     ],
     [
-      "alt=\"HSBC logo\"",
-      "alt=\"โลโก้ HSBC\""
+      ">Browse the changelog <span",
+      ">ดูบันทึกการเปลี่ยนแปลง <span"
     ],
     [
       ">Read more<",
@@ -310,32 +310,32 @@
       ">ควอนตัม · การเข้ารหัส<"
     ],
     [
-      ">Read the white paper</a>",
-      ">อ่านเอกสารวิจัย</a>"
+      ">Read the white paper(?: \\(PDF\\))?</a>",
+      ">อ่านเอกสารวิจัย (PDF)</a>"
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
-      "<dl class=pao><div><dt>ปัญหา</dt><dd>การสร้าง <strong>ISO 20022 pain.001</strong> ด้วยมือนั้นเปราะบาง โดยเฉพาะในช่วงการเปลี่ยนผ่าน SEPA และ SWIFT</dd></div><div><dt>แนวทาง</dt><dd>Python ที่ขับเคลื่อนด้วย Schema แปลง CSV หรือ SQLite ให้เป็น payment XML ที่ผ่านการตรวจสอบแล้ว</dd></div><div><dt>ผลลัพธ์</dt><dd>ทีม Ops ส่ง pain.001 ได้ภายในไม่กี่นาที พร้อม audit trail ที่คงทนตลอดการย้ายระบบ</dd></div></dl><p class=proj-metric><span class=proj-metric-label>ผลกระทบ</span> ISO 20022 · SEPA + SWIFT</p>"
+      ">Tailor the page order and highlights for your role\\.</p>",
+      ">ปรับลำดับหน้าและไฮไลต์ให้เหมาะกับบทบาทของคุณ</p>"
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
-      "<dl class=pao><div><dt>ปัญหา</dt><dd>การโอนเครดิต FI-to-FI ล้มเหลวในการตรวจสอบเมื่อกฎ XSD, IBAN และ PII ไม่สอดคล้องกัน</dd></div><div><dt>แนวทาง</dt><dd>ไลบรารีเดียว: JSON Schema, XSD, IBAN ครอบคลุม 75 ประเทศ พร้อมการปิดบังข้อมูลระดับ GDPR</dd></div><div><dt>ผลลัพธ์</dt><dd>การโอนเครดิตข้ามพรมแดนผ่านการตรวจสอบของหน่วยงานกำกับดูแลในครั้งแรก</dd></div></dl><p class=proj-metric><span class=proj-metric-label>ผลกระทบ</span> 75 ประเทศ · IBAN</p>"
+      "data-summary-default=\"Tailor the page order and highlights for your role\\.\"",
+      "data-summary-default=\"ปรับลำดับหน้าและไฮไลต์ให้เหมาะกับบทบาทของคุณ\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
-      "<dl class=pao><div><dt>ปัญหา</dt><dd>รูปแบบ Statement ทำให้ทีมกระทบยอดติดอยู่กับการป้อนข้อมูลซ้ำด้วยมือ</dd></div><div><dt>แนวทาง</dt><dd>Python toolkit เดียวที่ทำให้ Statement หลายรูปแบบเป็นมาตรฐาน พร้อม lineage ระดับ audit</dd></div><div><dt>ผลลัพธ์</dt><dd>การกระทบยอดทำงานได้โดยไม่ต้องเขียน glue code เฉพาะสำหรับแต่ละธนาคาร</dd></div></dl><p class=proj-metric><span class=proj-metric-label>ผลกระทบ</span> หลายรูปแบบ · ระดับ Audit</p>"
+      "data-summary-boards=\"Prioritising board-level proof, fiduciary risk, and post-quantum governance\\.\"",
+      "data-summary-boards=\"เน้นหลักฐานระดับคณะกรรมการ ความเสี่ยงด้านหน้าที่ความรับผิดชอบแบบผู้ได้รับความไว้วางใจ และธรรมาภิบาลหลังควอนตัม\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
-      "<dl class=pao><div><dt>ปัญหา</dt><dd>ไลบรารี hashing แบบ Pre-PQC ทำให้ credential store เปิดรับความเสี่ยงจากคอมพิวเตอร์ควอนตัม</dd></div><div><dt>แนวทาง</dt><dd>ไลบรารี hash และ digest ของ Rust ที่ปลอดภัยด้านหน่วยความจำ พร้อมท่าทีรองรับ post-quantum</dd></div><div><dt>ผลลัพธ์</dt><dd>ระบบ hashing ที่ปลอดภัยแบบ drop-in สำหรับบริการที่วางแผน PQC migration</dd></div></dl><p class=proj-metric><span class=proj-metric-label>ผลกระทบ</span> ปลอดภัยด้านหน่วยความจำ · Rust</p>"
+      "data-summary-engineers=\"Prioritising open-source Rust and Python libraries, ISO 20022 schemas, and FIPS 203 ML-KEM\\.\"",
+      "data-summary-engineers=\"เน้นไลบรารีโอเพนซอร์ส Rust และ Python, schema ของ ISO 20022 และ FIPS 203 ML-KEM\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
-      "<dl class=pao><div><dt>ปัญหา</dt><dd>ธนาคาร Tier-1 แบกรับความเสี่ยง harvest-now-decrypt-later ในทุก TLS session</dd></div><div><dt>แนวทาง</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203) ที่เชื่อมต่อกับ auth flow ที่มีอยู่ได้โดยตรง</dd></div><div><dt>ผลลัพธ์</dt><dd>การแลกเปลี่ยนคีย์แบบ post-quantum ใน Rust ระดับ production ที่ผ่านการตรวจสอบอิสระแล้ว</dd></div></dl><p class=proj-metric><span class=proj-metric-label>ผลกระทบ</span> NIST FIPS 203</p>"
+      "data-summary-regulators=\"Prioritising the EPAA quantum-safe payments paper, DORA, CRA, and supervisory compliance\\.\"",
+      "data-summary-regulators=\"เน้นเอกสารวิจัย EPAA ด้านการชำระเงินที่ทนต่อควอนตัม, DORA, CRA และการปฏิบัติตามข้อกำหนดของหน่วยกำกับดูแล\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
-      "<dl class=pao><div><dt>ปัญหา</dt><dd>Pipeline ของ AI, MCP และ config ทำงานบน YAML parser ที่มี UB รองรับด้วย C และมีการเบี่ยงเบนจาก spec แบบเงียบๆ</dd></div><div><dt>แนวทาง</dt><dd>Pure-Rust YAML 1.2 ครอบคลุม library, CLI, LSP, MCP และ WASM — ไม่มี unsafe เลย รองรับ spec ครบถ้วน</dd></div><div><dt>ผลลัพธ์</dt><dd>YAML pipeline ที่ไม่ใช่จุดอ่อนของ supply chain อีกต่อไป</dd></div></dl><p class=proj-metric><span class=proj-metric-label>ผลกระทบ</span> 406 / 406 spec · 0 unsafe</p>"
+      "alt=\"Isometric render of an illuminated processor, representing the cryptographic foundations of payments\\.\"",
+      "alt=\"ภาพเรนเดอร์แบบไอโซเมตริกของหน่วยประมวลผลที่เรืองแสง แสดงถึงรากฐานการเข้ารหัสของการชำระเงิน\""
     ],
     [
       ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
@@ -354,8 +354,8 @@
       ">โอเพนซอร์สเพื่ออนาคตของการธนาคารและการเงิน</h2>"
     ],
     [
-      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
-      "\\g<1>ดูข้อมูลเพิ่มเติม <span"
+      ">Explore the ISO 20022 libraries <span",
+      ">สำรวจไลบรารี ISO 20022 <span"
     ]
   ]
 }

@@ -436,7 +436,7 @@ C: dict = {
             },
             {
                 "eyebrow": "GUARDED",
-                "title": "Never moves money.",
+                "title": "Generation stays separate from dispatch.",
                 "body": (
                     "The bridge only transforms and validates. Producing a "
                     "message stays separate from sending it, so payment is a "
@@ -455,10 +455,7 @@ C: dict = {
             {
                 "eyebrow": "OPEN",
                 "title": "Owned by no bank.",
-                "body": (
-                    "Apache-2.0, 100% branch-tested, on your own "
-                    "infrastructure, tied to no balance sheet."
-                ),
+                "body": ("Apache-2.0, on your own infrastructure, tied to no balance sheet."),
             },
         ],
     },
@@ -550,9 +547,9 @@ C: dict = {
             },
             {
                 "eyebrow": "TESTED",
-                "title": "100% branch-tested.",
+                "title": "Tested on every path.",
                 "body": (
-                    "Full branch coverage across the suite, so the paths an "
+                    "100% branch coverage across the suite, so the paths an "
                     "agent exercises are the paths the tests exercise."
                 ),
             },
@@ -579,7 +576,7 @@ C: dict = {
             },
             {
                 "eyebrow": "WHAT IT RISKS",
-                "title": "Money never moves without a human.",
+                "title": "A human approves every payment.",
                 "body": (
                     "The servers generate and check messages; sending them "
                     "stays behind your own approval wall, in your own "
@@ -1026,9 +1023,8 @@ def _hero(d: dict) -> str:
         "</div>"
         f'<div class="mcp-hero-term">{_hero_terminal()}</div>'
         "</div>"
-        '<div class="spk-wrap"><p class="spk-microproof"><strong>9</strong> '
-        "servers, live on PyPI &middot; <strong>100%</strong> branch-tested "
-        "&middot; <strong>vendor-neutral</strong>, Apache-2.0</p></div>"
+        '<div class="spk-wrap"><p class="spk-microproof"><strong>9 servers</strong>, '
+        "live on PyPI &middot; <strong>Apache-2.0</strong>, vendor-neutral</p></div>"
         "</header>"
     )
 
@@ -1143,7 +1139,7 @@ def _start(sandbox_d: dict) -> str:
             "STEP 4",
             "Keep humans in the loop.",
             "The agent can search, generate and validate complex ISO 20022 "
-            "XML, but by design it never moves money directly. Have it "
+            "XML locally. Have it "
             "output the XSD-valid payload, or route it to your bank's SFTP, "
             "API gateway or treasury queue for final human approval and "
             "settlement. Generation stays separate from execution, so the "

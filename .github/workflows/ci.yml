@@ -158,6 +158,40 @@ jobs:
             --silent
 
   # =========================================================================
+  # The layouts come from the theme (ADR-0014). Flatten the theme at a
+  # pinned commit and fail when the committed _layouts/ differ from it, so
+  # a layout change made here without a theme change (or the reverse) is
+  # caught in review instead of being reverted by the next theme-sync.
+  # Bump THEME_SHA in the same pull request as the theme commit it names.
+  # =========================================================================
+  layouts-theme:
+    name: Layouts match the theme
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      THEME_SHA: "e90457c757245e3441f7bf6ea09596c73decec69"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+
+      - name: Check out the theme at its pinned commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          repository: sebastienrousseau/ssg-themes.github.io
+          ref: ${{ env.THEME_SHA }}
+          path: .theme
+          persist-credentials: false
+
+      - name: Flatten the theme and diff _layouts/
+        run: |
+          make theme-sync THEME_DIR=.theme/themes/sebastienrousseau
+          if ! git diff --exit-code -- _layouts; then
+            echo "::error::_layouts/ differs from the theme at ${THEME_SHA}. Make the change in themes/sebastienrousseau/ (ssg-themes.github.io), then run make theme-sync and bump THEME_SHA."
+            exit 1
+          fi
+
+  # =========================================================================
   # Stage 1 — build the site, run the build-dependent checks, then partition
   # the pa11y URL set into the shard configs the matrix consumes next.
   # =========================================================================
@@ -239,6 +273,14 @@ jobs:
 
       - name: Build site
         run: ./build.sh
+
+      - name: Worker redirect map matches the build
+        # build.sh rewrites worker-assets/redirects.json in the working tree,
+        # but the Worker deploys the committed file, and nothing compared the
+        # two. This regenerates the map from public/, diffs it against git
+        # HEAD, and checks targets, sources, chains and articles.json
+        # coverage. On failure, commit the map ./build.sh wrote.
+        run: python3 scripts/seo_and_audit/check_redirect_map.py
 
       - name: Post-build smoke tests + combined coverage gate (100 %)
         # The smoke suites are guarded by SKIP_IF_NO_BUILD and silently skip
@@ -674,6 +716,11 @@ jobs:
           python3 -m http.server 8200 --directory public --bind 127.0.0.1 &
           sleep 2
 
+      - name: Run rendered design-system gate (alignment, scale, reflow)
+        run: |
+          node .github/ci-tools/visual/design-system.mjs \
+            --base http://127.0.0.1:8200
+
       - name: Screenshot key pages
         run: |
           node .github/ci-tools/visual/visual.mjs shoot \
@@ -687,6 +734,13 @@ jobs:
           name: visual-baselines-refresh
           path: visual-current/
           retention-days: 7
+
+      - name: Type scale (11 pages at 390, 1024, 1440 and 1920 px)
+        # Every visible heading, paragraph, list item and eyebrow must
+        # render at one of the --fs-* token sizes, and no page may scroll
+        # sideways. tests/unit/test_type_scale.py checks the CSS source;
+        # this checks what the browser actually computes.
+        run: node .github/ci-tools/visual/type-scale.mjs --base http://127.0.0.1:8200 --report
 
       - name: Compare against committed baselines
         if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.refresh-baselines) }}

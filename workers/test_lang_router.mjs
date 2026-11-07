@@ -33,6 +33,7 @@ import handler, {
   API_SECURITY_HEADERS,
   trySlugRedirects,
   tryDoubledLocaleRedirect,
+  _resetRedirectMapCache,
 } from './lang-router.js';
 
 // ---------------------------------------------------------------------------
@@ -889,4 +890,59 @@ test('handler 301s a doubled locale path before locale routing', async () => {
   const res = await callHandler(new Request('https://sebastienrousseau.com/nl/hi/2026-06-07-slug/'));
   assert.equal(res.status, 301);
   assert.equal(new URL(res.headers.get('location')).pathname, '/hi/2026-06-07-slug/');
+});
+
+// ---------------------------------------------------------------------------
+// Renamed URLs are permanent: 301, never the 302 the locale preference uses.
+// ---------------------------------------------------------------------------
+// A visitor with a `pref-lang` cookie (or `?lang=`) gets a 302 to their
+// locale on any page navigation. A renamed URL must not take that path: it
+// would answer a temporary redirect to `/<lang>/<old-path>/`, a stub or a
+// 404, instead of one permanent hop to the page that replaced it, and search
+// engines would keep the old URL indexed.
+
+const RENAMED = '/2026-banking-architecture-whitepaper/';
+const RENAMED_TARGET = '/2026-06-21-banking-architecture-whitepaper/';
+
+function renamedEnv() {
+  return {
+    ASSETS: {
+      fetch: async (req) => (new URL(req.url).pathname === '/redirects.json'
+        ? new Response(JSON.stringify({ version: 1, redirects: { [RENAMED]: RENAMED_TARGET } }))
+        : new Response('missing', { status: 404 })),
+    },
+  };
+}
+
+test('handler: renamed URL is a 301, not a 302, even with a locale preference', async () => {
+  for (const opts of [
+    {},
+    { headers: { Cookie: 'pref-lang=fr' } },
+    { method: 'HEAD', headers: { Cookie: 'pref-lang=de' } },
+  ]) {
+    _resetRedirectMapCache();
+    resetLog();
+    const res = await handler.fetch(
+      makeRequest(`https://sebastienrousseau.com${RENAMED}`, opts), renamedEnv(), {},
+    );
+    assert.equal(res.status, 301, JSON.stringify(opts));
+    assert.notEqual(res.status, 302);
+    assert.equal(res.headers.get('location'), `https://sebastienrousseau.com${RENAMED_TARGET}`);
+    assert.equal(passThroughLog.length, 0, 'a renamed URL never reaches origin');
+  }
+  const viaQuery = await handler.fetch(
+    makeRequest(`https://sebastienrousseau.com${RENAMED}?lang=fr`), renamedEnv(), {},
+  );
+  assert.equal(viaQuery.status, 301);
+  assert.equal(viaQuery.headers.get('location'),
+    `https://sebastienrousseau.com${RENAMED_TARGET}?lang=fr`);
+  _resetRedirectMapCache();
+});
+
+test('handler: /api/event delegates to events handler with API security headers', async () => {
+  resetLog();
+  const res = await callHandler(makeRequest('https://sebastienrousseau.com/api/event'));
+  assert.equal(res.status, 405);
+  assert.equal(res.headers.get('allow'), 'POST');
+  assert.equal(passThroughLog.length, 0, '/api/event must not pass through to origin');
 });

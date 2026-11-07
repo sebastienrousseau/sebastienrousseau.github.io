@@ -2,28 +2,180 @@
   "_comment": "Hausa (ha) home-page chrome patches — DRAFT pending native review. Pairs of [regex, replacement] applied to the EN homepage shell.",
   "patches": [
     [
-      ">Skip to main content</a>",
-      ">Tsallaka zuwa babban abun ciki</a>"
+      ">Authored &amp; maintained<",
+      ">An rubuta kuma ana kulawa<"
     ],
     [
-      ">Get in touch ›</a>",
-      ">Tuntube mu ›</a>"
+      ">Career<",
+      ">Aiki<"
     ],
     [
-      ">Get in touch</a>",
-      ">Tuntube mu</a>"
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
+      ">Tabbatar da makomar banki da AI mai cin gashin kai da kiriftografi bayan kwantum.</h1>"
     ],
     [
-      ">Read latest research<",
-      ">Karanta sabbin bincike<"
+      ">Built for the edge\\. Architected for uncompromising resilience\\. Powering the next generation of global payments\\.</p>",
+      ">An gina shi don edge. An tsara shi don juriya wadda ba ta yarda da sasanci ba. Yana ƙarfafa ƙarni na gaba na biyan kuɗi a duniya.</p>"
+    ],
+    [
+      ">Where I've worked\\.<",
+      ">Inda na yi aiki.<"
+    ],
+    [
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
+      ">Buɗaɗɗen tushe don makomar harkokin kuɗi.<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">Tarin ɗakunan karatu na Python, Rust da JavaScript da na ƙirƙira kuma nake kula da su. Buɗaɗɗen tushe, kyauta don amfani, kuma ana amfani da su wajen biyan kuɗi na manyan cibiyoyi, sasanta biyan kuɗi tsakanin ƙasashe, bayanan kuɗi da kiriftografi mai jure wa kwamfutar kwantum.<"
+    ],
+    [
+      ">Browse all projects<",
+      ">Bincika duk ayyukan<"
+    ],
+    [
+      ">See the post-quantum primitives <span",
+      ">Duba ginshiƙan kiriftografi bayan kwantum <span"
+    ],
+    [
+      ">View the tooling <span",
+      ">Duba kayan aiki <span"
+    ],
+    [
+      ">What I build</p>",
+      ">Abin da nake ginawa</p>"
+    ],
+    [
+      "<h3>Payments</h3>",
+      "<h3>Biyan kuɗi</h3>"
+    ],
+    [
+      "<p>ISO 20022, end to end: pain\\.001, pacs\\.008, camt\\.053, and acmt\\.001\\. Adopt one library at a time\\.</p>",
+      "<p>ISO 20022 daga farko zuwa ƙarshe: pain.001, pacs.008, camt.053 da acmt.001. Ɗauki ɗakin karatu ɗaya a lokaci guda.</p>"
+    ],
+    [
+      "<h3>Security</h3>",
+      "<h3>Tsaro</h3>"
+    ],
+    [
+      "<p>Post-quantum primitives: ML-KEM \\(CRYSTALS-Kyber, NIST FIPS 203\\) and hashing, ready to pilot today\\.</p>",
+      "<p>Ginshiƙan bayan kwantum: ML-KEM (CRYSTALS-Kyber, NIST FIPS 203) da hashing, a shirye don gwaji tun yau.</p>"
+    ],
+    [
+      "<h3>Tooling</h3>",
+      "<h3>Kayan aiki</h3>"
+    ],
+    [
+      "<p>Audited Rust libraries and a code security scanner, signed and shipped with a software bill of materials\\.</p>",
+      "<p>Ɗakunan karatu na Rust da aka tantance da na'urar binciken tsaron lamba, an sa musu hannu kuma ana fitar da su tare da jerin kayan software (SBOM).</p>"
+    ],
+    [
+      ">All-time downloads</span>",
+      ">Jimillar saukewa</span>"
+    ],
+    [
+      ">Downloads, last 30 days</span>",
+      ">Saukewa, kwanaki 30 na ƙarshe</span>"
+    ],
+    [
+      ">GitHub stars</span>",
+      ">Taurarin GitHub</span>"
+    ],
+    [
+      ">Packages published</span>",
+      ">Fakitin da aka wallafa</span>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "Kwamfutar kwantum na barazana ga ginshiƙan kiriftografi na ayyukan kuɗi. Biyan kuɗi, daga na nan take zuwa sasantawa tsakanin ƙasashe, sun dogara ne kan kariyar da kwamfutar kwantum za ta mayar marasa amfani a ƙarshe."
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">Farar takardar Quantum-Safe Payments · Satumba 2025 · Karanta farar takardar<"
+    ],
+    [
+      ">Read the paper<",
+      ">Karanta takardar<"
+    ],
+    [
+      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
+      ">Kusan shekaru ashirin na jagorancin biyan kuɗi da samfuran dijital a cikin gida a HSBC, PayPal, Barclays, Shazam, AKQA, da Virgin Group.</p>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">Biyan kuɗi mai jure wa kwantum.<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">Farar takardar masana'antu don Emerging Payments Association Asia. Barazanar tsari da kwamfutar kwantum ke yi wa ababen more rayuwa na biyan kuɗi, da hujjar ɗaukar matakin haɗin gwiwa yanzu.<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">Dalilin da ya sa masana'antar biyan kuɗi dole ta ɗauki mataki yanzu.<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper(?:, produced for the Emerging Payments Association Asia, sets out| outlines) the structural threat and the(?: urgent)? case for coordinated action across wholesale payment rails\\.</p>",
+      ">Masu sa ido suna ɗaukar \"girbe yanzu, buɗe sirri daga baya\" a matsayin haɗari na yanzu mai inganci. Wannan farar takarda, da aka shirya don Emerging Payments Association Asia, ta bayyana barazanar tsarin da hujjar ɗaukar matakin haɗin gwiwa a dukkan hanyoyin biyan kuɗi na manyan cibiyoyi.</p>"
     ],
     [
       ">Latest<",
       ">Karanta sabbin bincike<"
     ],
     [
-      ">Read more<",
-      ">Karanta sabbin bincike<"
+      ">From the desk\\.<",
+      ">Daga teburin aiki.<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">Bincike da rubuce-rubuce na baya-bayan nan kan kiriftografi mai jure wa kwantum, ƙaura zuwa ISO 20022 da makomar biyan kuɗi na manyan cibiyoyi.<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>Stablecoin ba za su iya biyan riba ba a ƙarƙashin GENIUS Act. Takardun BRSRV da BSTBL na BlackRock sun nuna hanyar kauce wa hakan: asusun kasuwar kuɗi da aka mayar token wanda ke aiki tare da stablecoin mai lasisi, don isar da riba ta wata hanya maƙwabciya mai bin doka.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>Haɗarin kwantum ya koma daga abin sha'awar bincike zuwa umarnin doka mai aiki. Tare da taswirar G7 da aka wallafa a watan Janairu 2026 da BIS Project Leap da ya tabbatar da yiwuwa a tsarin biyan kuɗi na gaske, tambayar da ke gaban kwamitin gudanarwa ba ita ce ko za a yi ƙaura ba.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>Daga Nuwamba 2026, SWIFT CBPR+ za ta ƙi adireshin gidan waya marasa tsari a saƙonnin biyan kuɗi tsakanin ƙasashe. Watanni shida kafin lokacin, kashi 65% na saƙonnin pacs.008 har yanzu suna aika adireshin da ba su bi ƙa'ida ba, kuma kashi 44% na bankuna suna baya a shirin gyarawa.</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">Duba duk labarai"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>Tuntube mu</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">Buɗe makomar banki da ayyukan kuɗi.<br>Gano sabbin labarai daga</h2>"
+    ],
+    [
+      "<p class=\"?feat-sub center\"?>(?:Whether it\\'s wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.|Architecture reviews, migration roadmaps, and board briefings on ISO 20022 and post-quantum security\\. Reply within two working days\\.)</p>",
+      "<p class=\"feat-sub center\">Bita kan tsarin gine-gine, taswirorin ƙaura da taƙaitaccen bayani ga kwamitin gudanarwa kan ISO 20022 da tsaron bayan kwantum. Amsa cikin kwanakin aiki biyu.</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Fara tattaunawa</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/ha/labarai/index.html\">Karanta sabbin bincike</a>"
+    ],
+    [
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/ha/tuntube-mu/index.html\">Tuntube ni</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/ha/takardun-bincike/index.html\">Karanta farar takardar</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/ha/2026-05-15-ribarsu-ta-stablecoin-wani-suna-daban/index.html\">Karanta labarin</a>"
     ],
     [
       "<h2 class=ap-foot-title>Writing</h2>",
@@ -82,19 +234,51 @@
       "<a href=/ha/sharudda/index.html>Sharuɗɗa</a>"
     ],
     [
-      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
-      "© Copyright 2007 - 2026 - Sebastien Rousseau. An kiyaye duk hakkokin."
+      "Most downloads come from transitive dependencies in CI/CD pipelines and production services across PyPI, crates\\.io, and npm &middot; <span class=\"?proof-updated\"?>Updated <time datetime=\"?2026-10-15\"?>15 Oct 2026</time>\\.</span>",
+      "Yawancin saukewa suna fitowa ne daga dogaron da ke shigowa ta wasu fakiti a cikin layukan CI/CD da ayyukan samarwa a PyPI, crates.io da npm &middot; <span class=\"proof-updated\">An sabunta <time datetime=\"2026-10-15\">15 Okt 2026</time>.</span>"
     ],
     [
-      ">Latest research<",
+      "(HSBC|PayPal|Barclays|Shazam|AKQA|Virgin) logo",
+      "Tambarin \\1"
+    ],
+    [
+      ">EPAA White Paper \\(Sep 2025, PDF\\)</a>",
+      ">Farar takardar EPAA (Satumba 2025, PDF)</a>"
+    ],
+    [
+      ">SWIFT CBPR\\+ / ISO 20022</a>",
+      ">SWIFT CBPR+ / ISO 20022</a>"
+    ],
+    [
+      ">Sigstore &amp; CycloneDX SBOM</a>",
+      ">Sigstore &amp; CycloneDX SBOM</a>"
+    ],
+    [
+      ">Newsletter · Banking On Quantum</p>",
+      ">Newsletter · Banking On Quantum</p>"
+    ],
+    [
+      ">Monthly briefings for senior banking architects\\.</h2>",
+      ">Taƙaitaccen bayani na wata-wata ga manyan masu tsara tsarin banki.</h2>"
+    ],
+    [
+      ">Research notes on applied AI, ISO 20022 migration, and post-quantum cryptography across wholesale payment rails\\. No spam, unsubscribe in one click\\.</p>",
+      ">Bayanan bincike kan AI mai amfani, ƙaura zuwa ISO 20022 da kiriftografi bayan kwantum a hanyoyin biyan kuɗi na manyan cibiyoyi. Babu spam, cire rajista da danna sau ɗaya.</p>"
+    ],
+    [
+      ">Browse the changelog <span",
+      ">Duba tarihin sauye-sauye <span"
+    ],
+    [
+      ">Read more<",
       ">Karanta sabbin bincike<"
     ],
     [
-      ">Featured articles<",
-      ">Karanta sabbin bincike<"
+      ">Read the article<",
+      ">Karanta labarin<"
     ],
     [
-      ">All articles<",
+      ">Read latest research<",
       ">Karanta sabbin bincike<"
     ],
     [
@@ -102,100 +286,16 @@
       ">Karanta sabbin bincike<"
     ],
     [
-      ">By topic<",
-      ">Bisa batu<"
+      ">Get in touch ›</a>",
+      ">Tuntube mu ›</a>"
     ],
     [
-      ">All topics<",
-      ">Duk batutuwa<"
+      ">Payments · Stablecoins<",
+      ">Biyan kuɗi · Stablecoins<"
     ],
     [
-      ">By tag<",
-      ">Bisa tag<"
-    ],
-    [
-      ">All tags<",
-      ">Duk tags<"
-    ],
-    [
-      ">Published<",
-      ">An buga<"
-    ],
-    [
-      ">Updated<",
-      ">An sabunta<"
-    ],
-    [
-      ">Open source<",
-      ">Open source<"
-    ],
-    [
-      ">Subscribe<",
-      ">Yi rajista<"
-    ],
-    [
-      ">Follow<",
-      ">Bi mu<"
-    ],
-    [
-      "<p class=feat-eyebrow>Get in touch</p>",
-      "<p class=feat-eyebrow>Tuntube mu</p>"
-    ],
-    [
-      ">Drop me a line<",
-      ">Tuntube mu<"
-    ],
-    [
-      ">Learn more<",
-      ">Ƙara koyo<"
-    ],
-    [
-      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
-      ">Kusan shekaru ashirin na jagorancin biyan kuɗi da samfuran dijital a cikin gida a HSBC, PayPal, Barclays, Shazam, AKQA, da Virgin Group.</p>"
-    ],
-    [
-      ">Authored &amp; maintained<",
-      ">An rubuta kuma ana kulawa<"
-    ],
-    [
-      "alt=\"PayPal logo\"",
-      "alt=\"Tambarin PayPal\""
-    ],
-    [
-      "alt=\"Barclays logo\"",
-      "alt=\"Tambarin Barclays\""
-    ],
-    [
-      "alt=\"Shazam logo\"",
-      "alt=\"Tambarin Shazam\""
-    ],
-    [
-      "alt=\"AKQA logo\"",
-      "alt=\"Tambarin AKQA\""
-    ],
-    [
-      "alt=\"Virgin logo\"",
-      "alt=\"Tambarin Virgin\""
-    ],
-    [
-      "alt=\"HSBC logo\"",
-      "alt=\"Tambarin HSBC\""
-    ],
-    [
-      ">Read the white paper</a>",
-      ">Karanta farar takardar</a>"
-    ],
-    [
-      ">Read the article<",
-      ">Karanta labarin<"
-    ],
-    [
-      ">Read the paper<",
-      ">Karanta takardar<"
-    ],
-    [
-      ">See all articles\\b",
-      ">Duba duk labarai"
+      ">Payments · ISO 20022<",
+      ">Biyan kuɗi · ISO 20022<"
     ],
     [
       ">Quantum<",
@@ -210,132 +310,32 @@
       ">Kwantum · Kiriftografi<"
     ],
     [
-      ">Payments · Stablecoins<",
-      ">Biyan kuɗi · Stablecoins<"
+      ">Read the white paper(?: \\(PDF\\))?</a>",
+      ">Karanta farar takardar (PDF)</a>"
     ],
     [
-      ">Payments · ISO 20022<",
-      ">Biyan kuɗi · ISO 20022<"
+      ">Tailor the page order and highlights for your role\\.</p>",
+      ">Daidaita tsarin shafin da muhimman bayanai bisa matsayinka.</p>"
     ],
     [
-      ">Python · Payments<",
-      ">Python · Biyan kuɗi<"
+      "data-summary-default=\"Tailor the page order and highlights for your role\\.\"",
+      "data-summary-default=\"Daidaita tsarin shafin da muhimman bayanai bisa matsayinka.\""
     ],
     [
-      ">Python · Cross-border<",
-      ">Python · Ƙetare iyaka<"
+      "data-summary-boards=\"Prioritising board-level proof, fiduciary risk, and post-quantum governance\\.\"",
+      "data-summary-boards=\"An fifita hujjoji na matakin kwamitin gudanarwa, haɗarin amana da shugabancin bayan kwantum.\""
     ],
     [
-      ">Python · Finance<",
-      ">Python · Finance<"
+      "data-summary-engineers=\"Prioritising open-source Rust and Python libraries, ISO 20022 schemas, and FIPS 203 ML-KEM\\.\"",
+      "data-summary-engineers=\"An fifita ɗakunan karatu na buɗaɗɗen tushe na Rust da Python, tsare-tsaren ISO 20022 da FIPS 203 ML-KEM.\""
     ],
     [
-      ">Rust · Security<",
-      ">Rust · Tsaro<"
+      "data-summary-regulators=\"Prioritising the EPAA quantum-safe payments paper, DORA, CRA, and supervisory compliance\\.\"",
+      "data-summary-regulators=\"An fifita farar takardar EPAA kan biyan kuɗi mai jure wa kwantum, DORA, CRA da bin ƙa'idojin sa ido.\""
     ],
     [
-      ">Rust · Quantum<",
-      ">Rust · Kwantum<"
-    ],
-    [
-      ">Rust · YAML<",
-      ">Rust · YAML<"
-    ],
-    [
-      ">Browse all projects<",
-      ">Bincika duk ayyukan<"
-    ],
-    [
-      ">Career<",
-      ">Aiki<"
-    ],
-    [
-      ">Where I've worked\\.<",
-      ">Inda na yi aiki.<"
-    ],
-    [
-      "aria-label=\"Newsletter signup\"",
-      "aria-label=\"Yi rajistar wasiƙar labarai\""
-    ],
-    [
-      "aria-label=\"Sebastien Rousseau home\"",
-      "aria-label=\"Sebastien Rousseau gida\""
-    ],
-    [
-      "aria-label=\"Toggle navigation\"",
-      "aria-label=\"Maɓallin kewayawa\""
-    ],
-    [
-      "aria-label=\"Switch to dark theme\"",
-      "aria-label=\"Kunna jigon duhu\""
-    ],
-    [
-      "aria-label=\"Switch to light theme\"",
-      "aria-label=\"Kunna jigon haske\""
-    ],
-    [
-      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
-      "aria-label=\"Bincika (Cmd ko Ctrl + K)\""
-    ],
-    [
-      "title=\"Search \\(⌘K\\)\"",
-      "title=\"Bincika (⌘K)\""
-    ],
-    [
-      "aria-label=\"Get in touch\"",
-      "aria-label=\"Tuntube mu\""
-    ],
-    [
-      "aria-label=\"Back to top\"",
-      "aria-label=\"Komawa sama\""
-    ],
-    [
-      "aria-label=\"Social links\"",
-      "aria-label=\"Hanyoyin sadarwa na zamantakewa\""
-    ],
-    [
-      "aria-label=\"Article summary\"",
-      "aria-label=\"Taƙaitaccen labari\""
-    ],
-    [
-      "aria-label=\"About the author\"",
-      "aria-label=\"Game da marubucin\""
-    ],
-    [
-      ">Full profile</a>",
-      ">Cikakken bayanin martaba</a>"
-    ],
-    [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
-      ">Tabbatar da makomar banki<br>tare da agentic AI<br>da post-quantum cryptography.</h1>"
-    ],
-    [
-      ">Built for the edge\\. Architected for uncompromising resilience\\. Powering the next generation of global payments\\.</p>",
-      ">An gina shi don edge. An tsara shi don juriya wadda ba ta yarda da sasanci ba. Yana ƙarfafa ƙarni na gaba na biyan kuɗi a duniya.</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
-      "<dl class=pao><div><dt>Matsala</dt><dd>Rubuta <strong>ISO 20022 pain.001</strong> da hannu baya yin ƙarfi a ƙarƙashin canjin SEPA da SWIFT.</dd></div><div><dt>Hanya</dt><dd>Python da ke amfani da tsarin schema don mayar da CSV ko SQLite zuwa XML na biyan kuɗi mai inganci.</dd></div><div><dt>Sakamakon</dt><dd>Ƙungiyar ayyuka na iya aika pain.001 cikin mintoci; bayanan bincike suna tsira bayan canjin tsarin.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tasiri</span> ISO 20022 · SEPA + SWIFT</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
-      "<dl class=pao><div><dt>Matsala</dt><dd>Canja wurin kuɗi na FI-to-FI ya kasa binciken kuɗi lokacin da ƙa'idodin XSD, IBAN da PII suka bambanta.</dd></div><div><dt>Hanya</dt><dd>Ɗaya dakin karatu: JSON Schema, XSD, IBAN a ƙasashe 75, toshewar mataki na GDPR.</dd></div><div><dt>Sakamakon</dt><dd>Canjin kuɗi na ƙasa da ƙasa da ke wucewa a karo na farko a wurin mai kula da tsarin.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tasiri</span> Ƙasashe 75 · IBAN</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
-      "<dl class=pao><div><dt>Matsala</dt><dd>Tsare-tsaren bayanan asusun suna kama ƙungiyoyin sasantawa cikin sake shigar da bayanan da hannu.</dd></div><div><dt>Hanya</dt><dd>Ɗaya kayan aiki na Python da ke daidaita bayanan da yawa-tsari tare da layin bincike na matakin audit.</dd></div><div><dt>Sakamakon</dt><dd>Sasantawa na gudana ba tare da lambar haɗin gwiwa ta musamman ta kowace banki ba.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tasiri</span> Tsari-da-yawa · Matakin Audit</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
-      "<dl class=pao><div><dt>Matsala</dt><dd>Dakunan karatu na hashing na Pre-PQC suna barin tarin takaddun shaida a buɗe ga quantum.</dd></div><div><dt>Hanya</dt><dd>Dakin karatu na hash da digest na Rust mai aminci na ƙwaƙwalwa tare da matsayin post-quantum.</dd></div><div><dt>Sakamakon</dt><dd>Hashing mai aminci na drop-in don sabis da ke shirin ƙaura PQC.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tasiri</span> Aminci na ƙwaƙwalwa · Rust</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
-      "<dl class=pao><div><dt>Matsala</dt><dd>Bankuna na Tier-1 suna ɗauke da fallasa harvest-now-decrypt-later a kowane zaman TLS.</dd></div><div><dt>Hanya</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203) da ke haɗawa zuwa hanyoyin tabbatarwa da suke akwai.</dd></div><div><dt>Sakamakon</dt><dd>Musayar makullin post-quantum a cikin Rust na matakin samarwa, wanda aka tabbatar da shi da zaman kansa.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tasiri</span> NIST FIPS 203</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
-      "<dl class=pao><div><dt>Matsala</dt><dd>Bututun AI, MCP da daidaitawa na gudana akan masu bincike na YAML tare da UB da ke goyan bayan C da kuma sauyawa na sifofin da baya sanar da kowa.</dd></div><div><dt>Hanya</dt><dd>Pure-Rust YAML 1.2 a fadin dakin karatu, CLI, LSP, MCP da WASM — sifili mara aminci, sifofin cikakke.</dd></div><div><dt>Sakamakon</dt><dd>Bututun YAML da suka daina zama mahadar raunin sarkar samar da kayayyaki.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Tasiri</span> Sifofin 406 / 406 · 0 mara aminci</p>"
+      "alt=\"Isometric render of an illuminated processor, representing the cryptographic foundations of payments\\.\"",
+      "alt=\"Hoton isometric na na'urar sarrafawa mai haske, mai wakiltar ginshiƙan kiriftografi na biyan kuɗi.\""
     ],
     [
       ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
@@ -354,8 +354,8 @@
       ">Buɗaɗɗen tushe don makomar banki da kuɗi.</h2>"
     ],
     [
-      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
-      "\\g<1>Ƙarin bayani <span"
+      ">Explore the ISO 20022 libraries <span",
+      ">Bincika ɗakunan karatu na ISO 20022 <span"
     ]
   ]
 }

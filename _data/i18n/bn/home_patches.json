@@ -2,28 +2,180 @@
   "_comment": "বাংলা (bn) home-page chrome patches — DRAFT pending native review. Pairs of [regex, replacement] applied to the EN homepage shell.",
   "patches": [
     [
-      ">Skip to main content</a>",
-      ">মূল কনটেন্টে যান</a>"
+      ">Authored &amp; maintained<",
+      ">রচিত ও রক্ষণাবেক্ষণ করা<"
     ],
     [
-      ">Get in touch ›</a>",
-      ">যোগাযোগ ›</a>"
+      ">Career<",
+      ">কর্মজীবন<"
     ],
     [
-      ">Get in touch</a>",
-      ">যোগাযোগ</a>"
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
+      ">এজেন্টিক এআই ও পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি দিয়ে ব্যাংকিংয়ের ভবিষ্যৎ সুরক্ষিত করা।</h1>"
     ],
     [
-      ">Read latest research<",
-      ">সর্বশেষ গবেষণা পড়ুন<"
+      ">Built for the edge\\. Architected for uncompromising resilience\\. Powering the next generation of global payments\\.</p>",
+      ">এজের জন্য নির্মিত। আপসহীন স্থিতিস্থাপকতার জন্য পরিকল্পিত। বিশ্বব্যাপী পেমেন্টের পরবর্তী প্রজন্মকে শক্তি যোগাচ্ছে।</p>"
+    ],
+    [
+      ">Where I've worked\\.<",
+      ">যেসব প্রতিষ্ঠানে আমি কাজ করেছি।<"
+    ],
+    [
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
+      ">অর্থব্যবস্থার ভবিষ্যতের জন্য ওপেন সোর্স।<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">আমার তৈরি ও রক্ষণাবেক্ষণ করা Python, Rust ও JavaScript লাইব্রেরির একটি পোর্টফোলিও। ওপেন সোর্স, বিনামূল্যে ব্যবহারযোগ্য, এবং হোলসেল পেমেন্ট, আন্তঃসীমান্ত নিষ্পত্তি, আর্থিক ডেটা ও কোয়ান্টাম-প্রতিরোধী ক্রিপ্টোগ্রাফিতে প্রয়োগ করা।<"
+    ],
+    [
+      ">Browse all projects<",
+      ">সব প্রকল্প ব্রাউজ করুন<"
+    ],
+    [
+      ">See the post-quantum primitives <span",
+      ">পোস্ট-কোয়ান্টাম প্রিমিটিভগুলো দেখুন <span"
+    ],
+    [
+      ">View the tooling <span",
+      ">টুলিং দেখুন <span"
+    ],
+    [
+      ">What I build</p>",
+      ">আমি যা তৈরি করি</p>"
+    ],
+    [
+      "<h3>Payments</h3>",
+      "<h3>পেমেন্ট</h3>"
+    ],
+    [
+      "<p>ISO 20022, end to end: pain\\.001, pacs\\.008, camt\\.053, and acmt\\.001\\. Adopt one library at a time\\.</p>",
+      "<p>ISO 20022, শুরু থেকে শেষ পর্যন্ত: pain.001, pacs.008, camt.053 ও acmt.001। একবারে একটি করে লাইব্রেরি গ্রহণ করুন।</p>"
+    ],
+    [
+      "<h3>Security</h3>",
+      "<h3>নিরাপত্তা</h3>"
+    ],
+    [
+      "<p>Post-quantum primitives: ML-KEM \\(CRYSTALS-Kyber, NIST FIPS 203\\) and hashing, ready to pilot today\\.</p>",
+      "<p>পোস্ট-কোয়ান্টাম প্রিমিটিভ: ML-KEM (CRYSTALS-Kyber, NIST FIPS 203) ও হ্যাশিং, আজই পাইলট করার জন্য প্রস্তুত।</p>"
+    ],
+    [
+      "<h3>Tooling</h3>",
+      "<h3>টুলিং</h3>"
+    ],
+    [
+      "<p>Audited Rust libraries and a code security scanner, signed and shipped with a software bill of materials\\.</p>",
+      "<p>অডিট করা Rust লাইব্রেরি ও একটি কোড নিরাপত্তা স্ক্যানার, স্বাক্ষরিত এবং সফটওয়্যার বিল অব ম্যাটেরিয়ালস (SBOM) সহ সরবরাহ করা।</p>"
+    ],
+    [
+      ">All-time downloads</span>",
+      ">মোট ডাউনলোড</span>"
+    ],
+    [
+      ">Downloads, last 30 days</span>",
+      ">ডাউনলোড, গত ৩০ দিন</span>"
+    ],
+    [
+      ">GitHub stars</span>",
+      ">GitHub স্টার</span>"
+    ],
+    [
+      ">Packages published</span>",
+      ">প্রকাশিত প্যাকেজ</span>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "কোয়ান্টাম কম্পিউটিং আর্থিক সেবার ক্রিপ্টোগ্রাফিক ভিত্তিকে হুমকির মুখে ফেলছে। রিয়েল-টাইম থেকে আন্তঃসীমান্ত নিষ্পত্তি পর্যন্ত পেমেন্ট এমন সুরক্ষার ওপর নির্ভর করে, যা কোয়ান্টাম কম্পিউটিং একসময় অকেজো করে দেবে।"
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">Quantum-Safe Payments হোয়াইট পেপার · সেপ্টেম্বর ২০২৫ · হোয়াইট পেপারটি পড়ুন<"
+    ],
+    [
+      ">Read the paper<",
+      ">গবেষণাপত্রটি পড়ুন<"
+    ],
+    [
+      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
+      ">HSBC, PayPal, Barclays, Shazam, AKQA এবং Virgin Group-এ পেমেন্ট ও ডিজিটাল পণ্যে প্রায় দুই দশকের ইন-হাউস নেতৃত্ব।</p>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">কোয়ান্টাম-নিরাপদ পেমেন্ট।<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">Emerging Payments Association Asia-র জন্য শিল্প হোয়াইট পেপার। পেমেন্ট অবকাঠামোর ওপর কোয়ান্টাম কম্পিউটিংয়ের কাঠামোগত হুমকি, এবং এখনই সমন্বিত পদক্ষেপের যুক্তি।<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">কেন পেমেন্ট শিল্পকে এখনই পদক্ষেপ নিতে হবে।<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper(?:, produced for the Emerging Payments Association Asia, sets out| outlines) the structural threat and the(?: urgent)? case for coordinated action across wholesale payment rails\\.</p>",
+      ">নিয়ন্ত্রকেরা “এখন সংগ্রহ, পরে ডিক্রিপ্ট”-কে একটি বিশ্বাসযোগ্য বর্তমান ঝুঁকি হিসেবে দেখছেন। Emerging Payments Association Asia-র জন্য প্রস্তুত এই হোয়াইট পেপার কাঠামোগত হুমকি এবং হোলসেল পেমেন্ট রেল জুড়ে সমন্বিত পদক্ষেপের যুক্তি তুলে ধরে।</p>"
     ],
     [
       ">Latest<",
       ">সর্বশেষ<"
     ],
     [
-      ">Read more<",
-      ">আরও পড়ুন<"
+      ">From the desk\\.<",
+      ">ডেস্ক থেকে।<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">কোয়ান্টাম-নিরাপদ ক্রিপ্টোগ্রাফি, ISO 20022 মাইগ্রেশন ও হোলসেল পেমেন্টের ভবিষ্যৎ নিয়ে সাম্প্রতিক গবেষণা ও লেখা।<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>GENIUS Act-এর অধীনে স্টেবলকয়েন ইয়েল্ড দিতে পারে না। BlackRock-এর BRSRV ও BSTBL ফাইলিং বিকল্প পথটি দেখায়: একটি টোকেনাইজড মানি-মার্কেট ফান্ড, যা একটি নিয়ন্ত্রিত স্টেবলকয়েনের পাশাপাশি চলে এবং একটি সংলগ্ন, নিয়মসম্মত রেলের মাধ্যমে ইয়েল্ড দেয়।</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>কোয়ান্টাম ঝুঁকি গবেষণার কৌতূহল থেকে সক্রিয় নিয়ন্ত্রক বাধ্যবাধকতায় পরিণত হয়েছে। জানুয়ারি ২০২৬-এ প্রকাশিত G7 রোডম্যাপ এবং লাইভ পেমেন্ট সিস্টেমে সম্ভাব্যতা প্রমাণকারী BIS Project Leap-এর পর, বোর্ড-স্তরের প্রশ্ন আর মাইগ্রেট করা হবে কি না, তা নয়।</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>নভেম্বর ২০২৬ থেকে SWIFT CBPR+ আন্তঃসীমান্ত পেমেন্ট বার্তায় অসংগঠিত ডাক ঠিকানা প্রত্যাখ্যান করবে। ছয় মাস বাকি থাকতেও ৬৫% pacs.008 বার্তা এখনও অসম্মত ঠিকানা পাঠায় এবং ৪৪% ব্যাংক সংশোধন কর্মসূচিতে পিছিয়ে আছে।</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">সব নিবন্ধ দেখুন"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>যোগাযোগ</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">ব্যাংকিং ও আর্থিক সেবার ভবিষ্যৎ উন্মোচন।<br>সাম্প্রতিক বিশ্লেষণ জানুন</h2>"
+    ],
+    [
+      "<p class=\"?feat-sub center\"?>(?:Whether it\\'s wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.|Architecture reviews, migration roadmaps, and board briefings on ISO 20022 and post-quantum security\\. Reply within two working days\\.)</p>",
+      "<p class=\"feat-sub center\">ISO 20022 ও পোস্ট-কোয়ান্টাম নিরাপত্তা নিয়ে আর্কিটেকচার পর্যালোচনা, মাইগ্রেশন রোডম্যাপ ও বোর্ড ব্রিফিং। দুই কর্মদিবসের মধ্যে উত্তর।</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">কথোপকথন শুরু করুন</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/bn/prabondho/index.html\">সর্বশেষ গবেষণা পড়ুন</a>"
+    ],
+    [
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/bn/jogajog/index.html\">যোগাযোগ করুন</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/bn/prokashana/index.html\">হোয়াইট পেপারটি পড়ুন</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/bn/2026-05-15-bhinn-name-stebalakajen-ritarn-blackrock-brsrv/index.html\">নিবন্ধটি পড়ুন</a>"
     ],
     [
       "<h2 class=ap-foot-title>Writing</h2>",
@@ -82,120 +234,68 @@
       "<a href=/bn/shorto/index.html>শর্তাবলি</a>"
     ],
     [
-      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
-      "© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।"
+      "Most downloads come from transitive dependencies in CI/CD pipelines and production services across PyPI, crates\\.io, and npm &middot; <span class=\"?proof-updated\"?>Updated <time datetime=\"?2026-10-15\"?>15 Oct 2026</time>\\.</span>",
+      "বেশিরভাগ ডাউনলোড আসে PyPI, crates.io ও npm জুড়ে CI/CD পাইপলাইন ও প্রোডাকশন সেবার ট্রানজিটিভ ডিপেনডেন্সি থেকে &middot; <span class=\"proof-updated\">আপডেট <time datetime=\"2026-10-15\">১৫ অক্টো. ২০২৬</time>।</span>"
     ],
     [
-      ">Latest research<",
-      ">সর্বশেষ গবেষণা<"
+      "(HSBC|PayPal|Barclays|Shazam|AKQA|Virgin) logo",
+      "\\1 লোগো"
     ],
     [
-      ">Featured articles<",
-      ">নির্বাচিত নিবন্ধ<"
+      ">EPAA White Paper \\(Sep 2025, PDF\\)</a>",
+      ">EPAA হোয়াইট পেপার (সেপ্টে. ২০২৫, PDF)</a>"
     ],
     [
-      ">All articles<",
-      ">সব নিবন্ধ<"
+      ">SWIFT CBPR\\+ / ISO 20022</a>",
+      ">SWIFT CBPR+ / ISO 20022</a>"
     ],
     [
-      ">Read full article<",
-      ">সম্পূর্ণ নিবন্ধ পড়ুন<"
+      ">Sigstore &amp; CycloneDX SBOM</a>",
+      ">Sigstore &amp; CycloneDX SBOM</a>"
     ],
     [
-      ">By topic<",
-      ">বিষয় অনুযায়ী<"
+      ">Newsletter · Banking On Quantum</p>",
+      ">Newsletter · Banking On Quantum</p>"
     ],
     [
-      ">All topics<",
-      ">সব বিষয়<"
+      ">Monthly briefings for senior banking architects\\.</h2>",
+      ">সিনিয়র ব্যাংকিং আর্কিটেক্টদের জন্য মাসিক ব্রিফিং।</h2>"
     ],
     [
-      ">By tag<",
-      ">ট্যাগ অনুযায়ী<"
+      ">Research notes on applied AI, ISO 20022 migration, and post-quantum cryptography across wholesale payment rails\\. No spam, unsubscribe in one click\\.</p>",
+      ">হোলসেল পেমেন্ট রেল জুড়ে প্রয়োগমূলক এআই, ISO 20022 মাইগ্রেশন ও পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি নিয়ে গবেষণা নোট। কোনও স্প্যাম নয়, এক ক্লিকে সাবস্ক্রিপশন বাতিল।</p>"
     ],
     [
-      ">All tags<",
-      ">সব ট্যাগ<"
+      ">Browse the changelog <span",
+      ">পরিবর্তনের লগ দেখুন <span"
     ],
     [
-      ">Published<",
-      ">প্রকাশিত<"
-    ],
-    [
-      ">Updated<",
-      ">আপডেট<"
-    ],
-    [
-      ">Open source<",
-      ">Open source<"
-    ],
-    [
-      ">Subscribe<",
-      ">সাবস্ক্রাইব করুন<"
-    ],
-    [
-      ">Follow<",
-      ">অনুসরণ করুন<"
-    ],
-    [
-      "<p class=feat-eyebrow>Get in touch</p>",
-      "<p class=feat-eyebrow>যোগাযোগ</p>"
-    ],
-    [
-      ">Drop me a line<",
-      ">যোগাযোগ<"
-    ],
-    [
-      ">Learn more<",
-      ">আরও জানুন<"
-    ],
-    [
-      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
-      ">HSBC, PayPal, Barclays, Shazam, AKQA এবং Virgin Group-এ পেমেন্ট ও ডিজিটাল পণ্যে প্রায় দুই দশকের ইন-হাউস নেতৃত্ব।</p>"
-    ],
-    [
-      ">Authored &amp; maintained<",
-      ">রচিত ও রক্ষণাবেক্ষণ করা<"
-    ],
-    [
-      "alt=\"PayPal logo\"",
-      "alt=\"PayPal লোগো\""
-    ],
-    [
-      "alt=\"Barclays logo\"",
-      "alt=\"Barclays লোগো\""
-    ],
-    [
-      "alt=\"Shazam logo\"",
-      "alt=\"Shazam লোগো\""
-    ],
-    [
-      "alt=\"AKQA logo\"",
-      "alt=\"AKQA লোগো\""
-    ],
-    [
-      "alt=\"Virgin logo\"",
-      "alt=\"Virgin লোগো\""
-    ],
-    [
-      "alt=\"HSBC logo\"",
-      "alt=\"HSBC লোগো\""
-    ],
-    [
-      ">Read the white paper</a>",
-      ">হোয়াইট পেপারটি পড়ুন</a>"
+      ">Read more<",
+      ">আরও পড়ুন<"
     ],
     [
       ">Read the article<",
       ">নিবন্ধটি পড়ুন<"
     ],
     [
-      ">Read the paper<",
-      ">গবেষণাপত্রটি পড়ুন<"
+      ">Read latest research<",
+      ">সর্বশেষ গবেষণা পড়ুন<"
     ],
     [
-      ">See all articles\\b",
-      ">সব নিবন্ধ দেখুন"
+      ">Read full article<",
+      ">সম্পূর্ণ নিবন্ধ পড়ুন<"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">যোগাযোগ ›</a>"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">পেমেন্ট · স্টেবলকয়েন<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">পেমেন্ট · ISO 20022<"
     ],
     [
       ">Quantum<",
@@ -210,132 +310,32 @@
       ">কোয়ান্টাম · ক্রিপ্টোগ্রাফি<"
     ],
     [
-      ">Payments · Stablecoins<",
-      ">পেমেন্ট · স্টেবলকয়েন<"
+      ">Read the white paper(?: \\(PDF\\))?</a>",
+      ">হোয়াইট পেপারটি পড়ুন (PDF)</a>"
     ],
     [
-      ">Payments · ISO 20022<",
-      ">পেমেন্ট · ISO 20022<"
+      ">Tailor the page order and highlights for your role\\.</p>",
+      ">আপনার ভূমিকা অনুযায়ী পৃষ্ঠার ক্রম ও মূল বিষয়গুলো সাজান।</p>"
     ],
     [
-      ">Python · Payments<",
-      ">Python · পেমেন্ট<"
+      "data-summary-default=\"Tailor the page order and highlights for your role\\.\"",
+      "data-summary-default=\"আপনার ভূমিকা অনুযায়ী পৃষ্ঠার ক্রম ও মূল বিষয়গুলো সাজান।\""
     ],
     [
-      ">Python · Cross-border<",
-      ">Python · ক্রস-বর্ডার<"
+      "data-summary-boards=\"Prioritising board-level proof, fiduciary risk, and post-quantum governance\\.\"",
+      "data-summary-boards=\"বোর্ড-স্তরের প্রমাণ, বিশ্বস্ততা ঝুঁকি ও পোস্ট-কোয়ান্টাম গভর্ন্যান্সকে অগ্রাধিকার।\""
     ],
     [
-      ">Python · Finance<",
-      ">Python · Finance<"
+      "data-summary-engineers=\"Prioritising open-source Rust and Python libraries, ISO 20022 schemas, and FIPS 203 ML-KEM\\.\"",
+      "data-summary-engineers=\"ওপেন-সোর্স Rust ও Python লাইব্রেরি, ISO 20022 স্কিমা ও FIPS 203 ML-KEM-কে অগ্রাধিকার।\""
     ],
     [
-      ">Rust · Security<",
-      ">Rust · নিরাপত্তা<"
+      "data-summary-regulators=\"Prioritising the EPAA quantum-safe payments paper, DORA, CRA, and supervisory compliance\\.\"",
+      "data-summary-regulators=\"EPAA কোয়ান্টাম-নিরাপদ পেমেন্ট হোয়াইট পেপার, DORA, CRA ও তত্ত্বাবধায়ক সম্মতিকে অগ্রাধিকার।\""
     ],
     [
-      ">Rust · Quantum<",
-      ">Rust · কোয়ান্টাম<"
-    ],
-    [
-      ">Rust · YAML<",
-      ">Rust · YAML<"
-    ],
-    [
-      ">Browse all projects<",
-      ">সব প্রকল্প ব্রাউজ করুন<"
-    ],
-    [
-      ">Career<",
-      ">কর্মজীবন<"
-    ],
-    [
-      ">Where I've worked\\.<",
-      ">যেসব প্রতিষ্ঠানে আমি কাজ করেছি।<"
-    ],
-    [
-      "aria-label=\"Newsletter signup\"",
-      "aria-label=\"নিউজলেটার সাবস্ক্রিপশন\""
-    ],
-    [
-      "aria-label=\"Sebastien Rousseau home\"",
-      "aria-label=\"Sebastien Rousseau হোম\""
-    ],
-    [
-      "aria-label=\"Toggle navigation\"",
-      "aria-label=\"নেভিগেশন টগল করুন\""
-    ],
-    [
-      "aria-label=\"Switch to dark theme\"",
-      "aria-label=\"ডার্ক থিম চালু করুন\""
-    ],
-    [
-      "aria-label=\"Switch to light theme\"",
-      "aria-label=\"লাইট থিম চালু করুন\""
-    ],
-    [
-      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
-      "aria-label=\"অনুসন্ধান (Cmd বা Ctrl + K)\""
-    ],
-    [
-      "title=\"Search \\(⌘K\\)\"",
-      "title=\"অনুসন্ধান (⌘K)\""
-    ],
-    [
-      "aria-label=\"Get in touch\"",
-      "aria-label=\"যোগাযোগ\""
-    ],
-    [
-      "aria-label=\"Back to top\"",
-      "aria-label=\"উপরে ফিরুন\""
-    ],
-    [
-      "aria-label=\"Social links\"",
-      "aria-label=\"সামাজিক লিঙ্ক\""
-    ],
-    [
-      "aria-label=\"Article summary\"",
-      "aria-label=\"নিবন্ধ সারাংশ\""
-    ],
-    [
-      "aria-label=\"About the author\"",
-      "aria-label=\"লেখক সম্পর্কে\""
-    ],
-    [
-      ">Full profile</a>",
-      ">সম্পূর্ণ প্রোফাইল</a>"
-    ],
-    [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
-      ">ব্যাংকিংয়ের ভবিষ্যৎ সুরক্ষিত করা<br>এজেন্টিক এআই<br>এবং পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফির মাধ্যমে।</h1>"
-    ],
-    [
-      ">Built for the edge\\. Architected for uncompromising resilience\\. Powering the next generation of global payments\\.</p>",
-      ">এজের জন্য নির্মিত। আপসহীন স্থিতিস্থাপকতার জন্য পরিকল্পিত। বিশ্বব্যাপী পেমেন্টের পরবর্তী প্রজন্মকে শক্তি যোগাচ্ছে।</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
-      "<dl class=pao><div><dt>সমস্যা</dt><dd>SEPA এবং SWIFT রূপান্তরের সময় <strong>ISO 20022 pain.001</strong> হাতে তৈরি করা ঝুঁকিপূর্ণ।</dd></div><div><dt>পদ্ধতি</dt><dd>CSV বা SQLite থেকে যাচাইকৃত পেমেন্ট XML-এ রূপান্তরকারী Schema-চালিত Python।</dd></div><div><dt>ফলাফল</dt><dd>অপারেশন দল মিনিটের মধ্যে pain.001 প্রেরণ করে; অডিট ট্রেইল মাইগ্রেশনের পরেও অক্ষুণ্ণ থাকে।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>প্রভাব</span> ISO 20022 · SEPA + SWIFT</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
-      "<dl class=pao><div><dt>সমস্যা</dt><dd>XSD, IBAN এবং PII নিয়ম ভিন্ন হলে FI-to-FI ক্রেডিট ট্রান্সফার অডিটে ব্যর্থ হয়।</dd></div><div><dt>পদ্ধতি</dt><dd>একটি লাইব্রেরি: ৭৫টি দেশে JSON Schema, XSD, IBAN এবং GDPR-মানের মাস্কিং।</dd></div><div><dt>ফলাফল</dt><dd>ক্রস-বর্ডার ক্রেডিট ট্রান্সফার যা প্রথমবারেই নিয়ন্ত্রকের কাছে পাস হয়।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>প্রভাব</span> ৭৫টি দেশ · IBAN</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
-      "<dl class=pao><div><dt>সমস্যা</dt><dd>স্টেটমেন্ট ফরম্যাট রিকনসিলিয়েশন দলকে ম্যানুয়াল পুনরায় এন্ট্রিতে আটকে রাখে।</dd></div><div><dt>পদ্ধতি</dt><dd>একটি Python টুলকিট যা অডিট-মানের বংশপরম্পরা সহ বহু-ফরম্যাট স্টেটমেন্ট স্বাভাবিক করে।</dd></div><div><dt>ফলাফল</dt><dd>রিকনসিলিয়েশন প্রতিটি ব্যাংকের জন্য কাস্টম গ্লু কোড ছাড়াই চলে।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>প্রভাব</span> বহু-ফরম্যাট · অডিট-মান</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
-      "<dl class=pao><div><dt>সমস্যা</dt><dd>Pre-PQC হ্যাশিং লাইব্রেরি ক্রেডেনশিয়াল স্টোরকে কোয়ান্টাম-উন্মুক্ত রাখে।</dd></div><div><dt>পদ্ধতি</dt><dd>post-quantum অবস্থান সহ মেমোরি-নিরাপদ Rust হ্যাশ ও ডাইজেস্ট লাইব্রেরি।</dd></div><div><dt>ফলাফল</dt><dd>PQC মাইগ্রেশন পরিকল্পনাকারী সেবাগুলোর জন্য ড্রপ-ইন নিরাপদ হ্যাশিং।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>প্রভাব</span> মেমোরি-নিরাপদ · Rust</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
-      "<dl class=pao><div><dt>সমস্যা</dt><dd>Tier-1 ব্যাংকগুলো প্রতিটি TLS সেশনে harvest-now-decrypt-later ঝুঁকি বহন করে।</dd></div><div><dt>পদ্ধতি</dt><dd>বিদ্যমান অথ ফ্লোতে সংযুক্ত pure-Rust <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203)।</dd></div><div><dt>ফলাফল</dt><dd>প্রোডাকশন-মানের Rust-এ post-quantum কী এক্সচেঞ্জ, স্বাধীনভাবে যাচাইকৃত।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>প্রভাব</span> NIST FIPS 203</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
-      "<dl class=pao><div><dt>সমস্যা</dt><dd>AI, MCP এবং কনফিগ পাইপলাইন C-ব্যাকড UB এবং নীরব স্পেক বিচ্যুতি সহ YAML পার্সারে চলে।</dd></div><div><dt>পদ্ধতি</dt><dd>লাইব্রেরি, CLI, LSP, MCP এবং WASM জুড়ে pure-Rust YAML 1.2 — শূন্য unsafe, সম্পূর্ণ স্পেক।</dd></div><div><dt>ফলাফল</dt><dd>YAML পাইপলাইন যা সাপ্লাই-চেইনের দুর্বল লিঙ্ক হওয়া বন্ধ করে।</dd></div></dl><p class=proj-metric><span class=proj-metric-label>প্রভাব</span> 406 / 406 স্পেক · 0 unsafe</p>"
+      "alt=\"Isometric render of an illuminated processor, representing the cryptographic foundations of payments\\.\"",
+      "alt=\"একটি আলোকিত প্রসেসরের আইসোমেট্রিক রেন্ডার, যা পেমেন্টের ক্রিপ্টোগ্রাফিক ভিত্তির প্রতীক।\""
     ],
     [
       ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
@@ -354,8 +354,8 @@
       ">ব্যাংকিং ও অর্থায়নের ভবিষ্যতের জন্য ওপেন সোর্স।</h2>"
     ],
     [
-      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
-      "\\g<1>আরও জানুন <span"
+      ">Explore the ISO 20022 libraries <span",
+      ">ISO 20022 লাইব্রেরিগুলো দেখুন <span"
     ]
   ]
 }

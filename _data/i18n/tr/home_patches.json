@@ -6,11 +6,11 @@
       ">Yazılmış ve sürdürülen<"
     ],
     [
-      ">Authored & maintained<",
-      ">Yazılmış ve sürdürülen<"
+      ">Career<",
+      ">Kariyer<"
     ],
     [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
       ">Bankacılığın geleceğini güvence altına almak<br>ajansal yapay zeka<br>ve post-kuantum kriptografi ile.</h1>"
     ],
     [
@@ -18,8 +18,8 @@
       ">Edge için inşa edildi. Tavizsiz dayanıklılık için tasarlandı. Küresel ödemelerin yeni neslini güçlendiriyor.</p>"
     ],
     [
-      "id=practice>Open source for the<br>future of finance\\.</h2>",
-      "id=practice>Finansın geleceği için<br>açık kaynak.</h2>"
+      ">Where I've worked\\.<",
+      ">Çalıştığım kurumlar.<"
     ],
     [
       ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
@@ -34,56 +34,56 @@
       ">Tüm projeleri görüntüle<"
     ],
     [
-      ">Python · Payments<",
-      ">Python · Ödemeler<"
+      ">See the post-quantum primitives <span",
+      ">Post-kuantum primitiflerini gör <span"
     ],
     [
-      ">Python · Cross-border<",
-      ">Python · Sınır ötesi<"
+      ">View the tooling <span",
+      ">Araçları gör <span"
     ],
     [
-      ">Python · Finance<",
-      ">Python · Finans<"
+      ">What I build</p>",
+      ">Neler geliştiriyorum</p>"
     ],
     [
-      ">Rust · Security<",
-      ">Rust · Güvenlik<"
+      "<h3>Payments</h3>",
+      "<h3>Ödemeler</h3>"
     ],
     [
-      ">Rust · Quantum<",
-      ">Rust · Kuantum<"
+      "<p>ISO 20022, end to end: pain\\.001, pacs\\.008, camt\\.053, and acmt\\.001\\. Adopt one library at a time\\.</p>",
+      "<p>Uçtan uca ISO 20022: pain.001, pacs.008, camt.053 ve acmt.001. Kütüphaneleri birer birer benimseyin.</p>"
     ],
     [
-      ">Rust · YAML<",
-      ">Rust · YAML<"
+      "<h3>Security</h3>",
+      "<h3>Güvenlik</h3>"
     ],
     [
-      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
-      ">\\1 hakkında daha fazla bilgi</a>"
+      "<p>Post-quantum primitives: ML-KEM \\(CRYSTALS-Kyber, NIST FIPS 203\\) and hashing, ready to pilot today\\.</p>",
+      "<p>Post-kuantum primitifler: ML-KEM (CRYSTALS-Kyber, NIST FIPS 203) ve karma işlevleri, bugünden pilot uygulamaya hazır.</p>"
     ],
     [
-      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
-      "<p>CSV veya SQLite kaynaklarından <strong>ISO 20022 pain.001</strong> ödeme dosyalarının oluşturulmasını otomatikleştiren bir Python kütüphanesi. SWIFT, SEPA ve başlıca sistemler genelinde MT/MX'ten yapılandırılmış mesajlara küresel geçiş için tasarlandı.</p>"
+      "<h3>Tooling</h3>",
+      "<h3>Araçlar</h3>"
     ],
     [
-      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
-      "<p><strong>ISO 20022 pacs.008</strong> finansal kurumlar arası müşteri kredi transfer mesajları üretin, doğrulayın ve iletin. JSON Schema, XSD doğrulama, 75 ülkede IBAN desteği, GDPR/PCI-DSS uyumlu kişisel veri maskeleme.</p>"
+      "<p>Audited Rust libraries and a code security scanner, signed and shipped with a software bill of materials\\.</p>",
+      "<p>Denetlenmiş Rust kütüphaneleri ve bir kod güvenliği tarayıcısı; imzalı ve yazılım malzeme listesi (SBOM) ile birlikte sunulur.</p>"
     ],
     [
-      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
-      "<p>Çok formatlı banka ekstrelerini yapılandırılmış verilere dönüştüren finans seviyesinde bir Python araç seti. Gerçek dünyadaki ekstre dosyalarının gerçekliği ve düzenlenmiş ortamların denetim talepleri için tasarlandı.</p>"
+      ">All-time downloads</span>",
+      ">Toplam indirme</span>"
     ],
     [
-      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
-      "<p>Parola şifreleme ve doğrulama için <strong>güvenli hash ve özet algoritmaları</strong> uygulayan bir Rust kütüphanesi. Kimlik doğrulamanın post-PQC çağı için kuantuma dayanıklı bir duruşla tasarlandı.</p>"
+      ">Downloads, last 30 days</span>",
+      ">İndirmeler (son 30 gün)</span>"
     ],
     [
-      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
-      "<p>Genel amaçlı post-kuantum şifreleme için NIST FIPS 203 standardı olan <strong>CRYSTALS-Kyber</strong>'ın sağlam bir Rust uygulaması. Kuantuma dayanıklı ödeme kimlik doğrulamasının temeli.</p>"
+      ">GitHub stars</span>",
+      ">GitHub yıldızları</span>"
     ],
     [
-      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
-      "<p><strong>Saf Rust YAML 1.2 ekosistemi</strong>. Sıfır unsafe, %100 spesifikasyon uyumu (406 / 406 resmi suite), önce streaming odaklı serde, kayıpsız CST ve JSON-Schema doğrulama. Kütüphane + CLI (noyafmt, noyavalidate) + LSP + MCP + WASM bağlamaları.</p>"
+      ">Packages published</span>",
+      ">Yayınlanan paketler</span>"
     ],
     [
       "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
@@ -98,8 +98,8 @@
       ">Beyaz kitabı oku<"
     ],
     [
-      ">Quantum-Safe Payments\\.</h2>",
-      ">Kuantum güvenli ödemeler.</h2>"
+      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
+      ">HSBC, PayPal, Barclays, Shazam, AKQA ve Virgin Group bünyesinde yaklaşık yirmi yıllık kurum içi ödeme sistemleri ve dijital ürün liderliği.</p>"
     ],
     [
       ">Quantum-Safe Payments\\.<",
@@ -114,8 +114,8 @@
       ">Ödeme sektörü neden şimdi harekete geçmeli.<"
     ],
     [
-      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
-      ">Düzenleyiciler „şimdi topla, sonra çöz\" yaklaşımını günümüzün gerçek bir riski olarak ele alıyor. Bu beyaz kitap, yapısal tehdidi ve toptan ödeme rayları genelinde koordineli eylem için acil gerekçeyi ortaya koyuyor.</p>"
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper(?:, produced for the Emerging Payments Association Asia, sets out| outlines) the structural threat and the(?: urgent)? case for coordinated action across wholesale payment rails\\.</p>",
+      ">Düzenleyiciler \"şimdi topla, sonra çöz\" yaklaşımını günümüzün gerçek bir riski olarak ele alıyor. Emerging Payments Association Asia için hazırlanan bu beyaz kitap, yapısal tehdidi ve toptan ödeme rayları genelinde koordineli eylemin aciliyetini ortaya koyuyor.</p>"
     ],
     [
       ">Latest<",
@@ -154,8 +154,8 @@
       ">Bankacılık ve finansal hizmetlerin geleceğini açığa çıkarmak.<br>Güncel analizleri keşfedin</h2>"
     ],
     [
-      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
-      "<p class=\"feat-sub center\">İster toptan ödeme stratejisi, ister ISO 20022 geçişi, ister finansal hizmetler için kuantum güvenli kriptografi: konuşmaktan memnuniyet duyarım.</p>"
+      "<p class=\"?feat-sub center\"?>(?:Whether it\\'s wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.|Architecture reviews, migration roadmaps, and board briefings on ISO 20022 and post-quantum security\\. Reply within two working days\\.)</p>",
+      "<p class=\"feat-sub center\">ISO 20022 ve post-kuantum güvenlik üzerine mimari incelemeler, geçiş yol haritaları ve yönetim kurulu brifingleri. İki iş günü içinde yanıt.</p>"
     ],
     [
       ">Start a conversation</a>",
@@ -234,40 +234,40 @@
       "<a href=/tr/sartlar/index.html>Şartlar</a>"
     ],
     [
-      ">Career<",
-      ">Kariyer<"
+      "Most downloads come from transitive dependencies in CI/CD pipelines and production services across PyPI, crates\\.io, and npm &middot; <span class=\"?proof-updated\"?>Updated <time datetime=\"?2026-10-15\"?>15 Oct 2026</time>\\.</span>",
+      "İndirmelerin çoğu, PyPI, crates.io ve npm genelindeki CI/CD süreçleri ile üretim hizmetlerindeki dolaylı bağımlılıklardan gelir &middot; <span class=\"proof-updated\">Güncelleme: <time datetime=\"2026-10-15\">15 Eki 2026</time>.</span>"
     ],
     [
-      ">Where I've worked\\.<",
-      ">Çalıştığım kurumlar.<"
+      "(HSBC|PayPal|Barclays|Shazam|AKQA|Virgin) logo",
+      "\\1 logosu"
     ],
     [
-      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
-      ">HSBC, PayPal, Barclays, Shazam, AKQA ve Virgin Group bünyesinde yaklaşık yirmi yıllık kurum içi ödeme sistemleri ve dijital ürün liderliği.</p>"
+      ">EPAA White Paper \\(Sep 2025, PDF\\)</a>",
+      ">EPAA beyaz kitabı (Eyl 2025, PDF)</a>"
     ],
     [
-      "alt=\"PayPal logo\"",
-      "alt=\"PayPal logosu\""
+      ">SWIFT CBPR\\+ / ISO 20022</a>",
+      ">SWIFT CBPR+ / ISO 20022</a>"
     ],
     [
-      "alt=\"Barclays logo\"",
-      "alt=\"Barclays logosu\""
+      ">Sigstore &amp; CycloneDX SBOM</a>",
+      ">Sigstore &amp; CycloneDX SBOM</a>"
     ],
     [
-      "alt=\"Shazam logo\"",
-      "alt=\"Shazam logosu\""
+      ">Newsletter · Banking On Quantum</p>",
+      ">Newsletter · Banking On Quantum</p>"
     ],
     [
-      "alt=\"AKQA logo\"",
-      "alt=\"AKQA logosu\""
+      ">Monthly briefings for senior banking architects\\.</h2>",
+      ">Kıdemli bankacılık mimarları için aylık brifingler.</h2>"
     ],
     [
-      "alt=\"Virgin logo\"",
-      "alt=\"Virgin logosu\""
+      ">Research notes on applied AI, ISO 20022 migration, and post-quantum cryptography across wholesale payment rails\\. No spam, unsubscribe in one click\\.</p>",
+      ">Toptan ödeme rayları genelinde uygulamalı yapay zeka, ISO 20022 geçişi ve post-kuantum kriptografi üzerine araştırma notları. Spam yok, tek tıkla abonelikten çıkın.</p>"
     ],
     [
-      "alt=\"HSBC logo\"",
-      "alt=\"HSBC logosu\""
+      ">Browse the changelog <span",
+      ">Değişiklik günlüğüne göz at <span"
     ],
     [
       ">Read more<",
@@ -310,32 +310,32 @@
       ">Kuantum · Kriptografi<"
     ],
     [
-      ">Read the white paper</a>",
-      ">Beyaz kitabı oku</a>"
+      ">Read the white paper(?: \\(PDF\\))?</a>",
+      ">Beyaz kitabı oku (PDF)</a>"
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
-      "<dl class=pao><div><dt>Sorun</dt><dd><strong>ISO 20022 pain.001</strong> mesajlarını elle oluşturmak, SEPA ve SWIFT geçiş dönemlerinde hata riskini artırır.</dd></div><div><dt>Yaklaşım</dt><dd>CSV veya SQLite verilerini doğrulanmış ödeme XML'ine dönüştüren şema güdümlü Python altyapısı.</dd></div><div><dt>Sonuç</dt><dd>Operasyon ekipleri pain.001 mesajlarını dakikalar içinde üretir; denetim izi geçiş sonrasında da geçerliliğini korur.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Etki</span> ISO 20022 · SEPA + SWIFT</p>"
+      ">Tailor the page order and highlights for your role\\.</p>",
+      ">Sayfa sırasını ve öne çıkanları rolünüze göre uyarlayın.</p>"
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
-      "<dl class=pao><div><dt>Sorun</dt><dd>XSD, IBAN ve PII kuralları farklılaştığında FI-to-FI kredi transferleri denetimden geçemez.</dd></div><div><dt>Yaklaşım</dt><dd>75 ülkede JSON Schema, XSD, IBAN doğrulaması ve GDPR düzeyinde maskeleme sunan tek kütüphane.</dd></div><div><dt>Sonuç</dt><dd>Sınır ötesi kredi transferleri düzenleyici denetimden ilk seferinde geçer.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Etki</span> 75 ülke · IBAN</p>"
+      "data-summary-default=\"Tailor the page order and highlights for your role\\.\"",
+      "data-summary-default=\"Sayfa sırasını ve öne çıkanları rolünüze göre uyarlayın.\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
-      "<dl class=pao><div><dt>Sorun</dt><dd>Ekstre formatları, mutabakat ekiplerini manuel veri girişine mahkûm eder.</dd></div><div><dt>Yaklaşım</dt><dd>Denetim düzeyinde köken kaydıyla çoklu format ekstrelerini normalleştiren tek Python araç seti.</dd></div><div><dt>Sonuç</dt><dd>Mutabakat süreci, banka bazında özel entegrasyon kodu olmaksızın çalışır.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Etki</span> Çoklu format · Denetim düzeyinde</p>"
+      "data-summary-boards=\"Prioritising board-level proof, fiduciary risk, and post-quantum governance\\.\"",
+      "data-summary-boards=\"Yönetim kurulu düzeyinde kanıt, fidüsyer risk ve post-kuantum yönetişim öne çıkarılıyor.\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
-      "<dl class=pao><div><dt>Sorun</dt><dd>PQC öncesi karma kütüphaneleri, kimlik bilgisi depolarını kuantum tehdidine açık bırakır.</dd></div><div><dt>Yaklaşım</dt><dd>post-quantum duruşuyla bellek güvenli Rust karma ve özet kütüphanesi.</dd></div><div><dt>Sonuç</dt><dd>PQC geçişini planlayan servisler için hazır, güvenli karma altyapısı.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Etki</span> Bellek güvenli · Rust</p>"
+      "data-summary-engineers=\"Prioritising open-source Rust and Python libraries, ISO 20022 schemas, and FIPS 203 ML-KEM\\.\"",
+      "data-summary-engineers=\"Açık kaynaklı Rust ve Python kütüphaneleri, ISO 20022 şemaları ve FIPS 203 ML-KEM öne çıkarılıyor.\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
-      "<dl class=pao><div><dt>Sorun</dt><dd>Tier-1 bankalar, her TLS oturumunda harvest-now-decrypt-later riskini taşımaktadır.</dd></div><div><dt>Yaklaşım</dt><dd>Mevcut kimlik doğrulama akışlarına entegre olan saf Rust <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203) uygulaması.</dd></div><div><dt>Sonuç</dt><dd>Üretim kalitesinde Rust ile post-quantum anahtar değişimi; bağımsız olarak doğrulanmıştır.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Etki</span> NIST FIPS 203</p>"
+      "data-summary-regulators=\"Prioritising the EPAA quantum-safe payments paper, DORA, CRA, and supervisory compliance\\.\"",
+      "data-summary-regulators=\"EPAA kuantum güvenli ödemeler beyaz kitabı, DORA, CRA ve denetim uyumu öne çıkarılıyor.\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
-      "<dl class=pao><div><dt>Sorun</dt><dd>AI, MCP ve yapılandırma süreçleri, C tabanlı UB içeren ve sessiz spec sapmaları gösteren YAML ayrıştırıcıları üzerinde çalışır.</dd></div><div><dt>Yaklaşım</dt><dd>Kütüphane, CLI, LSP, MCP ve WASM genelinde saf Rust YAML 1.2 — sıfır güvensiz kod, tam spec uyumluluğu.</dd></div><div><dt>Sonuç</dt><dd>YAML süreçleri, tedarik zincirinin zayıf halkası olmaktan çıkar.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Etki</span> 406 / 406 spec · 0 güvensiz</p>"
+      "alt=\"Isometric render of an illuminated processor, representing the cryptographic foundations of payments\\.\"",
+      "alt=\"Ödemelerin kriptografik temellerini temsil eden, ışıl ışıl parlayan bir işlemcinin izometrik görseli.\""
     ],
     [
       ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
@@ -354,8 +354,8 @@
       ">Bankacılık ve finansın geleceği için açık kaynak.</h2>"
     ],
     [
-      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
-      "\\g<1>Daha fazla bilgi <span"
+      ">Explore the ISO 20022 libraries <span",
+      ">ISO 20022 kütüphanelerini keşfet <span"
     ]
   ]
 }

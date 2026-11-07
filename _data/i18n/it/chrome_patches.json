@@ -50,10 +50,6 @@
       "title=\"Cambia tema\""
     ],
     [
-      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
-      "aria-label=\"Cerca (Cmd o Ctrl + K)\""
-    ],
-    [
       "title=\"Search \\(⌘K\\)\"",
       "title=\"Cerca (⌘K)\""
     ],

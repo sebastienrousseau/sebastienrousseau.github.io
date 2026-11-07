@@ -7,7 +7,13 @@
 [tools]
 python = "3.12"
 node   = "22"
-rust   = "stable"
+
+# Rust is deliberately NOT declared here: rustup owns the toolchain.
+# A mise `rust` entry exports RUSTUP_TOOLCHAIN, which overrides rustup's
+# own selection, and on a rustup-backed workstation mise sees its
+# symlinked rust install as missing, so `cargo:ssg` (which depends on the
+# configured rust) refused to install. Without the entry, `cargo:ssg`
+# builds with the cargo rustup puts on PATH.
 
 # pandoc renders the lead-magnet PDFs in build.sh (build_lead_magnets.py).
 # It must be declared here, not merely installed globally: mise puts a

@@ -717,7 +717,9 @@ def _write_year_archives(
         out = _MAIN_RE.sub(rf"\1{_render_year_body(year, year_posts, all_years)}\3", out, count=1)
         out_path = PUBLIC / "articles" / year / "index.html"
         out_path.parent.mkdir(parents=True, exist_ok=True)
-        out_path.write_text(out, encoding="utf-8")
+        en_year_title = f"Articles from {year} · Sebastien Rousseau"
+        en_year_out = _TITLE_RE.sub(f"<title>{_esc(en_year_title)}</title>", out, count=1)
+        out_path.write_text(en_year_out, encoding="utf-8")
         en_pages.append((year, out, year_posts))
 
     locale_written = 0
@@ -783,7 +785,7 @@ def _write_en_paged(
         en_doc_title = (
             "Articles · Sebastien Rousseau"
             if idx == 1
-            else f"Articles - Page {idx} of {total_pages} · Sebastien Rousseau"
+            else f"Articles, page {idx} of {total_pages} · Sebastien Rousseau"
         )
         en_out = _TITLE_RE.sub(f"<title>{_esc(en_doc_title)}</title>", page_html, count=1)
         out_path.parent.mkdir(parents=True, exist_ok=True)

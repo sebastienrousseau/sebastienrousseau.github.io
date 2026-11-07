@@ -240,3 +240,70 @@ def test_en_is_excluded_from_the_locale_fork_list() -> None:
 
 def test_pillar_order_has_no_duplicates() -> None:
     assert len(btl.PILLAR_ORDER) == len(set(btl.PILLAR_ORDER))
+
+
+# ---------------------------------------------------------------------------
+# Locale forks take the tag's name and description from tags.json
+# ---------------------------------------------------------------------------
+
+_SHELL = (
+    '<html lang="en"><head><title>Tags</title>'
+    '<meta name="description" content="cover">'
+    '<link rel="canonical" href="https://sebastienrousseau.com/tags/">'
+    '<meta property="og:description" content="cover">'
+    '<meta property="og:url" content="https://sebastienrousseau.com/tags/">'
+    "</head><body><main></main></body></html>"
+)
+
+
+def _fork(tmp_path: Path, monkeypatch: pytest.MonkeyPatch, strings: dict | None) -> str:
+    import collections
+    import json
+
+    import tag_landing_render as tlr
+
+    i18n = tmp_path / "i18n"
+    if strings is not None:
+        (i18n / "fr").mkdir(parents=True)
+        (i18n / "fr" / "tags.json").write_text(json.dumps(strings), encoding="utf-8")
+    monkeypatch.setattr(tlr, "I18N_DIR", i18n)
+    monkeypatch.setattr(btl, "PUBLIC", tmp_path / "public")
+    monkeypatch.setattr(btl, "LOCALES_NON_EN", ["fr"])
+    monkeypatch.setattr(btl, "_translate_chrome_for", lambda _lang, html: html)
+    monkeypatch.setattr(btl, "_load_locale_article_slugs", lambda _lang: {})
+    monkeypatch.setattr(btl, "_load_locale_post_index", lambda _lang: {})
+    taxonomy = {
+        "dora": {"name": "DORA", "description": "EU regulation.", "category": "policy"},
+    }
+    posts = {"dora": [("t", "2026-01-01", f"2026-01-0{i}-p", "e", [], "b", "a") for i in (1, 2, 3)]}
+    written = btl._write_locale_landings(
+        _SHELL, taxonomy, posts, {"dora": collections.Counter()}, ["dora"]
+    )
+    assert written == 1
+    out = tmp_path / "public" / "fr" / btl.LOCALE_TAGS_PATH["fr"] / "dora" / "index.html"
+    return out.read_text(encoding="utf-8")
+
+
+def test_locale_fork_uses_the_translated_name_and_description(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    html = _fork(
+        tmp_path,
+        monkeypatch,
+        {"dora": {"name": "DORA (UE)", "description": "Règlement européen.", "reviewed": False}},
+    )
+    assert "<h1>DORA (UE)</h1>" in html
+    assert '<p class="deck">Règlement européen.</p>' in html
+    assert '<meta name="description" content="Règlement européen."' in html
+    assert '<meta property="og:description" content="Règlement européen."' in html
+    assert "EU regulation." not in html
+    assert '<html lang="fr"' in html
+    assert f"/fr/{btl.LOCALE_TAGS_PATH['fr']}/dora/" in html
+
+
+def test_locale_fork_falls_back_to_english_without_a_tags_file(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    html = _fork(tmp_path, monkeypatch, None)
+    assert "<h1>DORA</h1>" in html
+    assert '<meta name="description" content="EU regulation."' in html

@@ -318,6 +318,7 @@ def localised_listing_title(title: str, locale: str, labels: dict[str, str]) -> 
 
 _LOCALE_LABELS_CACHE: dict[str, dict[str, str]] = {}
 _PAGE_TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)
+_PAGE_META_LABEL_RE = re.compile(r'<p class="tag-landing-meta">([^<·]+?)\s*·')
 _OG_TITLE_ATTR_RE = re.compile(r'(<meta[^>]+property="og:title"[^>]+content=")([^"]*)(")')
 _TW_TITLE_ATTR_RE = re.compile(r'(<meta[^>]+name="twitter:title"[^>]+content=")([^"]*)(")')
 
@@ -337,47 +338,66 @@ def _active_locales() -> frozenset[str]:
     return frozenset(lang.code for lang in _lang_registry.LANGUAGES if lang.code != "en")
 
 
+def _page_locale(page: Path) -> str | None:
+    """The active non-EN locale a built page lives under, if any."""
+    locales = _active_locales()
+    return next((p for p in page.parts[:2] if p in locales), None)
+
+
+def _paged_doc_title(page: Path, html: str, title: str) -> str:
+    """``title`` plus the page-number label on a ``.../page/N/`` listing."""
+    if len(page.parts) < 3 or page.parts[-3] != "page":
+        return title
+    meta_m = _PAGE_META_LABEL_RE.search(html)
+    return f"{title} · {meta_m.group(1).strip()}" if meta_m else title
+
+
+def _replace_meta_title(pattern: re.Pattern[str], html: str, old: str, new: str) -> str:
+    """Rewrite a title-bearing meta tag's content when it still reads ``old``."""
+    return pattern.sub(
+        lambda m: m.group(1) + new + m.group(3) if m.group(2).strip() == old else m.group(0),
+        html,
+    )
+
+
+def _replace_h1(html: str, old: str, new: str) -> str:
+    """Rewrite the first ``<h1>`` whose whole text is ``old``."""
+    return re.sub(
+        r"(<h1[^>]*>)" + re.escape(old) + r"(</h1>)",
+        lambda m: m.group(1) + new + m.group(2),
+        html,
+        count=1,
+    )
+
+
+def _localise_pillar_h1(html: str, old: str, locale: str) -> str:
+    """A pillar page's H1 is the bare pillar name, not the full title, so the
+    title rewrite does not reach it: the title read Arabic while the visible
+    heading still read "Infrastructure &amp; cryptography"."""
+    head = old.removesuffix(" — Editorial pillar")
+    if head == old:
+        return html
+    translated = _pillars_for(locale).get(_EN_PILLARS.get(head, ""), head)
+    return html if translated == head else _replace_h1(html, head, translated)
+
+
 def localise_listing_titles(page: Path, html: str) -> str:
     """Put a locale listing page's title into its own language.
 
     Rewrites <title>, og:title, twitter:title and the hero H1 together, so the
     page cannot end up saying one thing to a reader and another to a crawler.
     """
-    locales = _active_locales()
-    locale = next((p for p in page.parts[:2] if p in locales), None)
-    if locale is None:
-        return html
-    match = _PAGE_TITLE_RE.search(html)
-    if match is None:
+    locale = _page_locale(page)
+    match = _PAGE_TITLE_RE.search(html) if locale else None
+    if locale is None or match is None:
         return html
     old = match.group(1).strip()
     new = localised_listing_title(old, locale, _labels_for(locale))
-    if new == old:
+    doc_title = _paged_doc_title(page, html, new)
+    if doc_title == old:
         return html
-    out = _PAGE_TITLE_RE.sub(lambda _m: f"<title>{new}</title>", html, count=1)
-    out = _OG_TITLE_ATTR_RE.sub(
-        lambda m: m.group(1) + new + m.group(3) if m.group(2).strip() == old else m.group(0), out
-    )
-    out = _TW_TITLE_ATTR_RE.sub(
-        lambda m: m.group(1) + new + m.group(3) if m.group(2).strip() == old else m.group(0), out
-    )
-    out = re.sub(
-        r"(<h1[^>]*>)" + re.escape(old) + r"(</h1>)",
-        lambda m: m.group(1) + new + m.group(2),
-        out,
-        count=1,
-    )
-    # A pillar page's H1 is the bare pillar name, not the full title, so the
-    # rewrite above does not reach it: the title read Arabic while the visible
-    # heading still read "Infrastructure &amp; cryptography".
-    head = old.removesuffix(" — Editorial pillar")
-    if head != old:
-        translated = _pillars_for(locale).get(_EN_PILLARS.get(head, ""), head)
-        if translated != head:
-            out = re.sub(
-                r"(<h1[^>]*>)" + re.escape(head) + r"(</h1>)",
-                lambda m: m.group(1) + translated + m.group(2),
-                out,
-                count=1,
-            )
-    return out
+    out = _PAGE_TITLE_RE.sub(lambda _m: f"<title>{doc_title}</title>", html, count=1)
+    out = _replace_meta_title(_OG_TITLE_ATTR_RE, out, old, doc_title)
+    out = _replace_meta_title(_TW_TITLE_ATTR_RE, out, old, doc_title)
+    out = _replace_h1(out, old, new)
+    return _localise_pillar_h1(out, old, locale)

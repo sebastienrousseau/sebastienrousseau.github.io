@@ -34,7 +34,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: "active"
 measurementID: "G-169G4ET5HQ"
-name: "Sebastien Rousseau"
+name: "Privacy statement"
 permalink: "https://sebastienrousseau.com/privacy"
 rating: "general"
 referrer: "no-referrer"
@@ -116,6 +116,10 @@ Google Analytics is a web analytics service offered by Google that tracks and Pa
 ### Microsoft Clarity
 
 Microsoft Clarity is a user behavior analytics tool that helps us understand how users interact with our website. The data collected includes information such as mouse movements, clicks, and scrolls. For more information on the privacy practices of Microsoft, please visit the Microsoft Privacy Statement web page: [Microsoft Privacy Statement ⧉](https://privacy.microsoft.com/en-us/privacystatement)
+
+### First-Party Event and Performance Counts
+
+We also record anonymous, aggregate interaction and field performance counts (such as button clicks, configuration snippet copies, and Core Web Vitals) via our first-party `/api/event` endpoint backed by Cloudflare Workers Analytics Engine. These counts store only the event name, page path, interaction key, and coarse country code to help us measure site reliability and content utility. No cookies are set, no IP addresses or browser fingerprints are stored, and data points expire automatically under Cloudflare Analytics Engine's 3-month retention policy.
 
 ## Your Rights
 
