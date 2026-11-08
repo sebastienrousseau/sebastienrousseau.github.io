@@ -100,6 +100,21 @@ def newest_feed_link(rss: str) -> str | None:
     return path.rstrip("/").removesuffix("/index.html")
 
 
+_ITEM_LINK_RE = re.compile(r"<item\b.*?<link>\s*https?://[^/<]+/([^<\s]*)", re.S | re.I)
+# A locale prefix: fr/, fil/, pt-br/, zh-hans/. English articles have none.
+_LOCALE_PREFIX_RE = re.compile(r"[a-z]{2,3}(?:-[a-z]{2,4})?/.")
+
+
+def check_feed_language(rss: str) -> list[str]:
+    """The root feed carries English articles only. ssg mixed in every
+    translation (35 editions share a date), so the first item, and most of
+    the 50, were in other languages; each language has its own feed."""
+    stray = [path for path in _ITEM_LINK_RE.findall(rss) if _LOCALE_PREFIX_RE.match(path)]
+    if not stray:
+        return []
+    return [f"rss.xml: {len(stray)} non-English item(s), first /{stray[0]}"]
+
+
 def check_freshness(newest: str | None, home: str, articles: str) -> list[str]:
     """The newest article must appear on the homepage and the articles index."""
     if not newest:
@@ -130,6 +145,7 @@ def run(fetch: Callable[[str], str] = _fetch, today: _dt.date | None = None) -> 
         check_hub(hub)
         + check_design_system(css)
         + check_stamp(home, today)
+        + check_feed_language(rss)
         + check_freshness(newest_feed_link(rss), home, articles)
     )
 
@@ -141,7 +157,9 @@ def main(argv: list[str] | None = None) -> int:
     for e in errors:
         print(f"::error::{e}")
     if not errors:
-        print("live content: hub, design system, proof stamp and freshness all current")
+        print(
+            "live content: hub, design system, proof stamp, feed language and freshness all current"
+        )
     return 1 if errors else 0
 
 

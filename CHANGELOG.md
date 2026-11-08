@@ -10,6 +10,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.0.34] - Unreleased
+
+English root feeds, and a live check that keeps them English.
+
+### Fixed
+
+- **The root feeds carry every English article, and only those (`scripts/postbuild/postbuild_lib/en_feeds.py`)**: ssg writes `/rss.xml` and `/atom.xml` from every `_posts/**/*.md`, translations included, and keeps the 50 newest. Each article has 35 language editions on one date, so the live `/rss.xml` held 1 English item among 49 translations, and which edition came first followed ssg's file-walk order: ssg 0.0.73 sorted that walk, a Tamil edition moved to the top, and the hourly `deploy-drift` check failed on the 0.0.33 deploy. Postbuild now rewrites both feeds' items from the English `_posts/*.md` (120 articles), keeping ssg's channel header and the item links and guids readers have already seen. Translations keep their own `/<lang>/` feeds.
+- **`/feed.json` lists every English article**: it parsed dates in the `Oct 28, 2026` form only and silently dropped the 61 posts whose date spells the month in full (`October 28, 2026`), including all 42 published after 21 June. It now shares the root feeds' item set, and an unparseable date stops the build instead of dropping the post.
+- **The live-content check flags a translated item in `/rss.xml`** (`scripts/seo_and_audit/check_live_content.py`), so a feed that goes multilingual again fails `deploy-drift` with the reason rather than as a stale-page false alarm.
+- **Four CodeQL findings**: three `Protocol` methods had a bare `...` body (`py/ineffectual-statement`) and one table header joined two literals implicitly (`py/implicit-string-concatenation-in-list`).
+
 ## [0.0.33] - Unreleased
 
 Type scale, design system v2, search monitoring, redirect-map gate, translated tag landings, live-content and unique-title gates, first-party conversion and Core Web Vitals telemetry, and the theme back-port (ADR-0014). Folds in the work first opened as 0.0.34.

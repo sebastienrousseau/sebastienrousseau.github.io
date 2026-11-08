@@ -16,7 +16,6 @@ from __future__ import annotations
 import json
 import re
 import sys
-from datetime import UTC, datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
@@ -723,61 +722,6 @@ def build_llms_full_txt(public: Path) -> str:
 
     lines.append("")
     return "\n".join(lines)
-
-
-def write_json_feed(public: Path) -> bool:
-    """Emit JSON Feed 1.1 at public/feed.json from EN dated posts.
-
-    Mirrors the data in rss.xml / atom.xml but in the modern JSON
-    Feed format (https://www.jsonfeed.org/version/1.1/). Most modern
-    feed-reader clients prefer this — same item set, smaller payload,
-    easier to parse than XML."""
-    items: list[dict] = []
-    posts_dir = Path("_posts")
-    base = "https://sebastienrousseau.com"
-    for md in sorted(posts_dir.glob("2*-*-*.md")):
-        fm = _parse_frontmatter(md)
-        if not fm.get("title"):
-            continue
-        date_str = fm.get("date", "")
-        try:
-            parsed = datetime.strptime(date_str, "%b %d, %Y").replace(tzinfo=UTC)
-        except ValueError:
-            continue
-        item: dict = {
-            "id": f"{base}/{md.stem}/",
-            "url": f"{base}/{md.stem}/",
-            "title": fm.get("title", ""),
-            "summary": fm.get("description", ""),
-            "date_published": parsed.isoformat(),
-            "language": "en-GB",
-            "author": {"name": "Sebastien Rousseau"},
-        }
-        banner = fm.get("banner", "")
-        if banner:
-            item["image"] = banner
-        keywords = fm.get("keywords", "")
-        if keywords:
-            item["tags"] = [t.strip() for t in keywords.split(",") if t.strip()]
-        items.append(item)
-    items.sort(key=lambda i: i["date_published"], reverse=True)
-    feed = {
-        "version": "https://jsonfeed.org/version/1.1",
-        "title": "Sebastien Rousseau — Articles",
-        "home_page_url": f"{base}/",
-        "feed_url": f"{base}/feed.json",
-        "language": "en-GB",
-        "icon": "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp",
-        "favicon": "https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico",
-        "authors": [{"name": "Sebastien Rousseau", "url": f"{base}/about/"}],
-        "items": items,
-    }
-    target = public / "feed.json"
-    target.write_text(
-        json.dumps(feed, separators=(",", ":"), ensure_ascii=False),
-        encoding="utf-8",
-    )
-    return True
 
 
 def _parse_frontmatter(md: Path) -> dict[str, str]:

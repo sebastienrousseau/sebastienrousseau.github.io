@@ -71,6 +71,27 @@ def test_freshness() -> None:
     assert errs == ["/articles/: newest article /2026-10-28-fca not listed (stale page?)"]
 
 
+def test_feed_language_flags_translations() -> None:
+    english = "<item><link>https://sebastienrousseau.com/2026-10-28-fca</link></item>"
+    assert clc.check_feed_language(english) == []
+    mixed = (
+        "<item><link>https://sebastienrousseau.com/ta/2026-10-28-x/index.html</link></item>"
+        + english
+        + "<item><link>https://sebastienrousseau.com/fr/2026-10-28-y/</link></item>"
+    )
+    assert clc.check_feed_language(mixed) == [
+        "rss.xml: 2 non-English item(s), first /ta/2026-10-28-x/index.html"
+    ]
+    # An English article whose slug does not start with a date is English.
+    whitepaper = "<item><link>https://sebastienrousseau.com/2026-banking-whitepaper</link></item>"
+    assert clc.check_feed_language(whitepaper + english) == []
+    regional = "<item><link>https://sebastienrousseau.com/pt-br/x/</link></item>"
+    assert clc.check_feed_language(regional) == ["rss.xml: 1 non-English item(s), first /pt-br/x/"]
+    # The channel <link> is not an item.
+    channel = "<channel><link>https://sebastienrousseau.com</link>" + english
+    assert clc.check_feed_language(channel) == []
+
+
 def test_run_wires_every_check() -> None:
     pages = {
         "/": '<link rel="stylesheet" href="/_csp/s.css">'
