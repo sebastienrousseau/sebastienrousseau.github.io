@@ -205,6 +205,7 @@ from postbuild_lib.content_blocks import (
     inject_section_rules,
     inject_speculation_rules,
 )
+from postbuild_lib.en_feeds import write_en_feeds
 from postbuild_lib.feeds import (  # noqa: F401 — re-exports (split from output)
     augment_sitemap_with_rendered_pages,
     build_lastmod_index,
@@ -269,7 +270,6 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
     normalise_cname,
     write_ai_txt,
     write_humans,
-    write_json_feed,
     write_llms_ctx_txt,
     write_llms_full_txt,
     write_llms_txt,
@@ -852,7 +852,7 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int, int]:
     llms_ctx_written = write_llms_ctx_txt(PUBLIC)
     llms_full_written = write_llms_full_txt(PUBLIC)
     ai_written = write_ai_txt(PUBLIC)
-    write_json_feed(PUBLIC)
+    write_en_feeds(PUBLIC)  # English only: postbuild_lib/en_feeds.py
     feed_urls_patched = fix_xml_feed_urls(PUBLIC)
     xml_patched = fix_xml_feeds(PUBLIC)
     feeds_deduped = dedupe_xml_feeds(PUBLIC)

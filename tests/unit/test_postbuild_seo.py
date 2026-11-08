@@ -12,6 +12,7 @@ from __future__ import annotations
 from typing import ClassVar
 
 import postbuild as pb
+import pytest
 from postbuild_lib import hreflang as hf
 
 # ---------------------------------------------------------------------------
@@ -742,7 +743,7 @@ def test_write_json_feed_emits_valid_feed_at_target(tmp_path, monkeypatch):
     )
     public = tmp_path / "public"
     public.mkdir()
-    from postbuild_lib.output import write_json_feed
+    from postbuild_lib.en_feeds import write_json_feed
 
     assert write_json_feed(public) is True
     import json as _json
@@ -757,25 +758,29 @@ def test_write_json_feed_emits_valid_feed_at_target(tmp_path, monkeypatch):
     assert item["tags"] == ["quantum", "ai"]
 
 
-def test_write_json_feed_skips_posts_without_title_or_bad_date(tmp_path, monkeypatch):
+def test_write_json_feed_skips_untitled_and_refuses_bad_date(tmp_path, monkeypatch):
+    """An untitled post is not an article; an unparseable date stops the
+    build instead of dropping the post from every subscriber's feed."""
     monkeypatch.chdir(tmp_path)
     posts = tmp_path / "_posts"
     posts.mkdir()
     (posts / "2026-05-12-no-title.md").write_text(
         '---\ndate: "May 12, 2026"\n---\n', encoding="utf-8"
     )
-    (posts / "2026-05-13-bad-date.md").write_text(
-        '---\ntitle: "X"\ndate: "not-a-date"\n---\n', encoding="utf-8"
-    )
     public = tmp_path / "public"
     public.mkdir()
-    from postbuild_lib.output import write_json_feed
+    from postbuild_lib.en_feeds import write_json_feed
 
     write_json_feed(public)
     import json as _json
 
     feed = _json.loads((public / "feed.json").read_text())
     assert feed["items"] == []
+    (posts / "2026-05-13-bad-date.md").write_text(
+        '---\ntitle: "X"\ndate: "not-a-date"\n---\n', encoding="utf-8"
+    )
+    with pytest.raises(ValueError, match="unparseable"):
+        write_json_feed(public)
 
 
 # ---------------------------------------------------------------------------

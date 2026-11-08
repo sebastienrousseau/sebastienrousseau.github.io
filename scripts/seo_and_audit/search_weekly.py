@@ -81,7 +81,8 @@ CSV_FIELDS = (
 
 
 class Session(Protocol):
-    def post(self, url: str, json: dict[str, Any]) -> Any: ...
+    def post(self, url: str, json: dict[str, Any]) -> Any:
+        """POST ``json`` to ``url`` and return the response."""
 
 
 def authorized_session(info_json: str) -> Any:
@@ -160,7 +161,7 @@ def _locale_table(report: ss.Report, kept: set[str]) -> list[str]:
         "## By locale",
         "",
         "| Locale | Kept | Impressions | Last week | Change | Clicks | CTR | Position "
-        "| Impressions 28 d | Clicks 28 d | CTR 28 d | Position 28 d |",
+        + "| Impressions 28 d | Clicks 28 d | CTR 28 d | Position 28 d |",
         "| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
     ]
     for code in _locale_order(report, kept):

@@ -47,7 +47,8 @@ _UA = "sebastienrousseau.com-live-content-check/1.0"
 
 
 class Opener(Protocol):
-    def open(self, fullurl: urllib.request.Request, /, *, timeout: float = ...) -> object: ...
+    def open(self, fullurl: urllib.request.Request, /, *, timeout: float = ...) -> object:
+        """Fetch ``fullurl`` without following redirects."""
 
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
