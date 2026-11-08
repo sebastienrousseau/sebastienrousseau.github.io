@@ -122,10 +122,12 @@ The Rust tool reads the `_posts_build` markdown and `_layouts/` and writes the E
 19. **`scripts/postbuild/prune_duplicate_sitemaps.py`** — deletes the per-directory `sitemap.xml` / `news-sitemap.xml` copies ssg writes into every output directory (~7,400 files, 17 MB, full of malformed double-slash URLs). They are crawlable: `/fr/news-sitemap.xml` was served in production as one of these stale copies. Keeps the root sitemap, the root news sitemap, and the per-locale news sitemaps `build_lang_feeds.py` writes deliberately. Runs after every sitemap writer; idempotent.
 20. **`scripts/postbuild/fix_lang_switcher.py`** — rewrites the language-switcher hrefs to per-locale targets.
 21. **`scripts/postbuild/finalize_seo.py`** - the last SEO pass: `noindex` and hreflang removal for the locales outside `_data/seo/locale-indexing.json` (`postbuild_lib/locale_indexing.py`), sitemap pruning, unique titles and descriptions among indexable pages (`postbuild_lib/unique_meta.py`), and real sitemap `<lastmod>` dates (`postbuild_lib/sitemap_lastmod.py`). Runs after `fix_lang_switcher.py`, which reads the hreflang links it strips; idempotent.
-22. **`scripts/build_worker_assets.py`** - writes `worker-assets/lang-registry.json` and `worker-assets/redirects.json` (every meta-refresh stub, old path to final path) for the lang-router Worker's `ASSETS` binding.
+22. **`scripts/build_worker_assets.py`** - writes `worker-assets/lang-registry.json` and `worker-assets/redirects.json` (every meta-refresh stub, old path to final path) for the lang-router Worker's `ASSETS` binding. The Worker serves the committed copy, so CI runs `scripts/seo_and_audit/check_redirect_map.py` after the build: the map regenerated from `public/` must match git `HEAD`, every target must render, no source may be a live page, there are no chains or loops, and every kept-locale entry in `_data/redirects/articles.json` is mapped or listed with its reason in `_data/redirects/map-exemptions.json`. The hourly `deploy-drift` workflow runs `scripts/seo_and_audit/check_live_redirects.py`, which samples 20 map entries on the live site and asserts each answers one 301; run it by hand after a Worker deploy.
 23. **`scripts/security/sigstore_sign.py`** — signs dated articles with Sigstore (best-effort; skipped when no signing config is present).
 
 After these, `build.sh` runs the validation gate (`tests/validation/`) under `set -euo pipefail`, so any CSP/hreflang/i18n/RTL/sitemap/JSON-LD failure fails the build.
+
+The gate ends with **`scripts/seo_and_audit/check_unique_titles.py`**: within each locale, no two indexable pages (self-canonical, not `noindex`, not a redirect stub, outside `/labs/`) may share a `<title>` or a meta description.
 
 ---
 

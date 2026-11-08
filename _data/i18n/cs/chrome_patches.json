@@ -50,10 +50,6 @@
       "title=\"Přepnout motiv\""
     ],
     [
-      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
-      "aria-label=\"Hledat (Cmd nebo Ctrl + K)\""
-    ],
-    [
       "title=\"Search \\(⌘K\\)\"",
       "title=\"Hledat (⌘K)\""
     ],

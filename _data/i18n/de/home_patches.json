@@ -10,7 +10,7 @@
       ">Laufbahn<"
     ],
     [
-      ">Securing the future of banking<br\\s*/?>with agentic AI<br\\s*/?>and post-quantum cryptography\\.</h1>",
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
       ">Die Zukunft des Bankwesens<br />mit agentischer KI<br />und Post-Quanten-Kryptografie sichern.</h1>"
     ],
     [

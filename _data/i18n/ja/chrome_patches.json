@@ -50,10 +50,6 @@
       "title=\"テーマを切り替える\""
     ],
     [
-      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
-      "aria-label=\"検索 (Cmd または Ctrl + K)\""
-    ],
-    [
       "title=\"Search \\(⌘K\\)\"",
       "title=\"検索 (⌘K)\""
     ],

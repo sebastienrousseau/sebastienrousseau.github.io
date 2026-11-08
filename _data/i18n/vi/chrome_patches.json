@@ -50,10 +50,6 @@
       "title=\"Đổi giao diện\""
     ],
     [
-      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
-      "aria-label=\"Tìm kiếm (Cmd hoặc Ctrl + K)\""
-    ],
-    [
       "title=\"Search \\(⌘K\\)\"",
       "title=\"Tìm kiếm (⌘K)\""
     ],

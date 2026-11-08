@@ -158,6 +158,40 @@ jobs:
             --silent
 
   # =========================================================================
+  # The layouts come from the theme (ADR-0014). Flatten the theme at a
+  # pinned commit and fail when the committed _layouts/ differ from it, so
+  # a layout change made here without a theme change (or the reverse) is
+  # caught in review instead of being reverted by the next theme-sync.
+  # Bump THEME_SHA in the same pull request as the theme commit it names.
+  # =========================================================================
+  layouts-theme:
+    name: Layouts match the theme
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      THEME_SHA: "e90457c757245e3441f7bf6ea09596c73decec69"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+
+      - name: Check out the theme at its pinned commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          repository: sebastienrousseau/ssg-themes.github.io
+          ref: ${{ env.THEME_SHA }}
+          path: .theme
+          persist-credentials: false
+
+      - name: Flatten the theme and diff _layouts/
+        run: |
+          make theme-sync THEME_DIR=.theme/themes/sebastienrousseau
+          if ! git diff --exit-code -- _layouts; then
+            echo "::error::_layouts/ differs from the theme at ${THEME_SHA}. Make the change in themes/sebastienrousseau/ (ssg-themes.github.io), then run make theme-sync and bump THEME_SHA."
+            exit 1
+          fi
+
+  # =========================================================================
   # Stage 1 — build the site, run the build-dependent checks, then partition
   # the pa11y URL set into the shard configs the matrix consumes next.
   # =========================================================================
@@ -239,6 +273,14 @@ jobs:
 
       - name: Build site
         run: ./build.sh
+
+      - name: Worker redirect map matches the build
+        # build.sh rewrites worker-assets/redirects.json in the working tree,
+        # but the Worker deploys the committed file, and nothing compared the
+        # two. This regenerates the map from public/, diffs it against git
+        # HEAD, and checks targets, sources, chains and articles.json
+        # coverage. On failure, commit the map ./build.sh wrote.
+        run: python3 scripts/seo_and_audit/check_redirect_map.py
 
       - name: Post-build smoke tests + combined coverage gate (100 %)
         # The smoke suites are guarded by SKIP_IF_NO_BUILD and silently skip
@@ -344,7 +386,10 @@ jobs:
   pa11y:
     name: pa11y shard ${{ matrix.shard }}
     needs: build
-    if: needs.build.outputs.pa11y-needed == 'true'
+    # The matrix always starts, and its steps skip on a full cache hit:
+    # branch protection requires each `pa11y shard N` check by name, and a
+    # job skipped at the job level never reports those names, which left a
+    # PR that changed no page (only baselines, say) blocked for good.
     runs-on: ubuntu-latest
     # Backstop only. The run step bounds and retries each pa11y attempt
     # itself (35m x 2), so this ceiling exists purely to stop a hang
@@ -360,25 +405,35 @@ jobs:
       matrix:
         shard: [1, 2, 3, 4, 5, 6, dark]
     steps:
+      - name: Full cache hit, nothing to audit
+        if: needs.build.outputs.pa11y-needed != 'true'
+        run: |
+          echo "pa11y-cache: every page unchanged since its last clean audit; shard ${{ matrix.shard }} has nothing to run"
+
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        if: needs.build.outputs.pa11y-needed == 'true'
 
       - name: Download build artifact
+        if: needs.build.outputs.pa11y-needed == 'true'
         uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
         with:
           name: build-output
 
       - name: Setup Python
+        if: needs.build.outputs.pa11y-needed == 'true'
         uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: "3.12"
           cache: 'pip'
 
       - name: Setup Node
+        if: needs.build.outputs.pa11y-needed == 'true'
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v6
         with:
           node-version: "22"
 
       - name: Install pa11y-ci
+        if: needs.build.outputs.pa11y-needed == 'true'
         # Pa11y-ci v4 ships with the modern pa11y v8 + axe-core. v3
         # used an older contrast calculator whose sRGB → luminance
         # precision disagreed with current pa11y/axe by ~0.2 ratio
@@ -392,11 +447,13 @@ jobs:
           echo "$PWD/.github/ci-tools/pa11y/node_modules/.bin" >> "$GITHUB_PATH"
 
       - name: Serve public/
+        if: needs.build.outputs.pa11y-needed == 'true'
         run: |
           npx http-server public -p 8000 --silent &
           sleep 2
 
       - name: Filter .pa11yci to shard ${{ matrix.shard }}
+        if: needs.build.outputs.pa11y-needed == 'true'
         # Light shards: round-robin partition — URL i goes to shard
         # (i % 6) + 1. Stable across runs so cache + manifest stay
         # coherent; balanced because URLs are sorted by relpath and
@@ -426,6 +483,7 @@ jobs:
           PY
 
       - name: Run pa11y-ci on this shard
+        if: needs.build.outputs.pa11y-needed == 'true'
         run: |
           # A wedged headless Chrome hangs pa11y-ci on the URL it is holding.
           # pa11y's own `timeout` is a page-load timeout inside the browser,
@@ -459,7 +517,7 @@ jobs:
           python3 scripts/seo_and_audit/pa11y_retry_flakes.py pa11y.shard.json
 
       - name: Upload pa11y shard result
-        if: always()
+        if: always() && needs.build.outputs.pa11y-needed == 'true'
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         with:
           name: pa11y-shard-${{ matrix.shard }}
@@ -674,6 +732,11 @@ jobs:
           python3 -m http.server 8200 --directory public --bind 127.0.0.1 &
           sleep 2
 
+      - name: Run rendered design-system gate (alignment, scale, reflow)
+        run: |
+          node .github/ci-tools/visual/design-system.mjs \
+            --base http://127.0.0.1:8200
+
       - name: Screenshot key pages
         run: |
           node .github/ci-tools/visual/visual.mjs shoot \
@@ -687,6 +750,13 @@ jobs:
           name: visual-baselines-refresh
           path: visual-current/
           retention-days: 7
+
+      - name: Type scale (11 pages at 390, 1024, 1440 and 1920 px)
+        # Every visible heading, paragraph, list item and eyebrow must
+        # render at one of the --fs-* token sizes, and no page may scroll
+        # sideways. tests/unit/test_type_scale.py checks the CSS source;
+        # this checks what the browser actually computes.
+        run: node .github/ci-tools/visual/type-scale.mjs --base http://127.0.0.1:8200 --report
 
       - name: Compare against committed baselines
         if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.refresh-baselines) }}
@@ -756,7 +826,7 @@ jobs:
           name: build-output
 
       - name: Download pa11y shard results
-        if: needs.pa11y.result == 'success'
+        if: needs.pa11y.result == 'success' && needs.build.outputs.pa11y-needed == 'true'
         uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
         with:
           pattern: pa11y-shard-*
@@ -767,7 +837,7 @@ jobs:
           path: pa11y-shards/
 
       - name: Merge pa11y shard results
-        if: needs.pa11y.result == 'success'
+        if: needs.pa11y.result == 'success' && needs.build.outputs.pa11y-needed == 'true'
         run: |
           python3 - <<'PY'
           import json, glob
@@ -812,7 +882,7 @@ jobs:
           PY
 
       - name: Post — update pa11y cache for next run
-        if: needs.pa11y.result == 'success'
+        if: needs.pa11y.result == 'success' && needs.build.outputs.pa11y-needed == 'true'
         run: |
           python3 scripts/seo_and_audit/pa11y_cache.py post \
             --public-dir public \

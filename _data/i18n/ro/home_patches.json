@@ -2,28 +2,180 @@
   "_comment": "Română (ro) home-page chrome patches — DRAFT pending native review. Pairs of [regex, replacement] applied to the EN homepage shell.",
   "patches": [
     [
-      ">Skip to main content</a>",
-      ">Salt la conținutul principal</a>"
+      ">Authored &amp; maintained<",
+      ">Scrise și întreținute<"
     ],
     [
-      ">Get in touch ›</a>",
-      ">Contact ›</a>"
+      ">Career<",
+      ">Carieră<"
     ],
     [
-      ">Get in touch</a>",
-      ">Contact</a>"
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
+      ">Securizăm viitorul sistemului bancar cu IA agentică și criptografie post-cuantică.</h1>"
     ],
     [
-      ">Read latest research<",
-      ">Citește cercetările recente<"
+      ">Built for the edge\\. Architected for uncompromising resilience\\. Powering the next generation of global payments\\.</p>",
+      ">Construit pentru edge. Arhitecturat pentru reziliență fără compromisuri. Alimentând următoarea generație de plăți globale.</p>"
+    ],
+    [
+      ">Where I've worked\\.<",
+      ">Unde am lucrat.<"
+    ],
+    [
+      ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
+      ">Open source pentru viitorul finanțelor.<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">Un portofoliu de biblioteci Python, Rust și JavaScript pe care le-am creat și le întrețin. Open source, gratuite și aplicate plăților wholesale, decontării transfrontaliere, datelor financiare și criptografiei rezistente la atacuri cuantice.<"
+    ],
+    [
+      ">Browse all projects<",
+      ">Explorează toate proiectele<"
+    ],
+    [
+      ">See the post-quantum primitives <span",
+      ">Vezi primitivele post-cuantice <span"
+    ],
+    [
+      ">View the tooling <span",
+      ">Vezi instrumentele <span"
+    ],
+    [
+      ">What I build</p>",
+      ">Ce construiesc</p>"
+    ],
+    [
+      "<h3>Payments</h3>",
+      "<h3>Plăți</h3>"
+    ],
+    [
+      "<p>ISO 20022, end to end: pain\\.001, pacs\\.008, camt\\.053, and acmt\\.001\\. Adopt one library at a time\\.</p>",
+      "<p>ISO 20022 cap-coadă: pain.001, pacs.008, camt.053 și acmt.001. Adoptă câte o bibliotecă pe rând.</p>"
+    ],
+    [
+      "<h3>Security</h3>",
+      "<h3>Securitate</h3>"
+    ],
+    [
+      "<p>Post-quantum primitives: ML-KEM \\(CRYSTALS-Kyber, NIST FIPS 203\\) and hashing, ready to pilot today\\.</p>",
+      "<p>Primitive post-cuantice: ML-KEM (CRYSTALS-Kyber, NIST FIPS 203) și hashing, gata de pilotat de azi.</p>"
+    ],
+    [
+      "<h3>Tooling</h3>",
+      "<h3>Instrumente</h3>"
+    ],
+    [
+      "<p>Audited Rust libraries and a code security scanner, signed and shipped with a software bill of materials\\.</p>",
+      "<p>Biblioteci Rust auditate și un scaner de securitate a codului, semnate și livrate cu o listă de componente software (SBOM).</p>"
+    ],
+    [
+      ">All-time downloads</span>",
+      ">Descărcări totale</span>"
+    ],
+    [
+      ">Downloads, last 30 days</span>",
+      ">Descărcări, ultimele 30 de zile</span>"
+    ],
+    [
+      ">GitHub stars</span>",
+      ">Stele GitHub</span>"
+    ],
+    [
+      ">Packages published</span>",
+      ">Pachete publicate</span>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "Calculul cuantic amenință fundamentele criptografice ale serviciilor financiare. Plățile, de la cele în timp real la decontarea transfrontalieră, se bazează pe protecții pe care calculul cuantic le va face în cele din urmă depășite."
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">Cartea albă Quantum-Safe Payments · septembrie 2025 · Citește cartea albă<"
+    ],
+    [
+      ">Read the paper<",
+      ">Citește cartea albă<"
+    ],
+    [
+      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
+      ">Aproape două decenii de leadership intern în plăți și produse digitale la HSBC, PayPal, Barclays, Shazam, AKQA și Virgin Group.</p>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">Plăți rezistente la atacuri cuantice.<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">Carte albă a industriei pentru Emerging Payments Association Asia. Amenințarea structurală pe care calculul cuantic o reprezintă pentru infrastructura de plăți și argumentele pentru o acțiune coordonată acum.<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">De ce industria plăților trebuie să acționeze acum.<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper(?:, produced for the Emerging Payments Association Asia, sets out| outlines) the structural threat and the(?: urgent)? case for coordinated action across wholesale payment rails\\.</p>",
+      ">Autoritățile de reglementare tratează „recoltează acum, decriptează mai târziu” ca pe un risc actual credibil. Această carte albă, realizată pentru Emerging Payments Association Asia, prezintă amenințarea structurală și argumentele pentru o acțiune coordonată pe infrastructurile de plăți wholesale.</p>"
     ],
     [
       ">Latest<",
       ">Citește cercetările recente<"
     ],
     [
-      ">Read more<",
-      ">Citește cercetările recente<"
+      ">From the desk\\.<",
+      ">De la birou.<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">Cercetări și articole recente despre criptografia rezistentă la atacuri cuantice, migrarea la ISO 20022 și viitorul plăților wholesale.<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>Stablecoin-urile nu pot plăti randament conform GENIUS Act. Documentele BRSRV și BSTBL depuse de BlackRock arată soluția de ocolire: un fond de piață monetară tokenizat care rulează alături de un stablecoin reglementat, pentru a livra randament printr-un canal adiacent și conform.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>Riscul cuantic a trecut de la curiozitate de cercetare la mandat de reglementare activ. Cu foaia de parcurs G7 publicată în ianuarie 2026 și BIS Project Leap demonstrând fezabilitatea în sisteme de plăți reale, întrebarea la nivelul consiliului de administrație nu mai este dacă trebuie migrat.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>Din noiembrie 2026, SWIFT CBPR+ respinge adresele poștale nestructurate din mesajele de plată transfrontaliere. Cu șase luni înainte, 65% dintre mesajele pacs.008 încă transmit adrese neconforme, iar 44% dintre bănci sunt în urmă cu programul de remediere.</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">Vezi toate articolele"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>Contact</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">Deschidem viitorul serviciilor bancare și financiare.<br>Descoperă cele mai recente analize</h2>"
+    ],
+    [
+      "<p class=\"?feat-sub center\"?>(?:Whether it\\'s wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.|Architecture reviews, migration roadmaps, and board briefings on ISO 20022 and post-quantum security\\. Reply within two working days\\.)</p>",
+      "<p class=\"feat-sub center\">Analize de arhitectură, foi de parcurs pentru migrare și prezentări pentru consiliul de administrație despre ISO 20022 și securitatea post-cuantică. Răspuns în două zile lucrătoare.</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Începe o conversație</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/ro/articole/index.html\">Citește cercetările recente</a>"
+    ],
+    [
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/ro/contact/index.html\">Contactează-mă</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/ro/publicatii/index.html\">Citește cartea albă</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/ro/2026-05-15-randamentul-stablecoin-sub-alt-nume-depunerile/index.html\">Citește articolul</a>"
     ],
     [
       "<h2 class=ap-foot-title>Writing</h2>",
@@ -82,19 +234,51 @@
       "<a href=/ro/termeni/index.html>Termeni</a>"
     ],
     [
-      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
-      "© Copyright 2007 - 2026 - Sebastien Rousseau. Toate drepturile rezervate."
+      "Most downloads come from transitive dependencies in CI/CD pipelines and production services across PyPI, crates\\.io, and npm &middot; <span class=\"?proof-updated\"?>Updated <time datetime=\"?2026-10-15\"?>15 Oct 2026</time>\\.</span>",
+      "Majoritatea descărcărilor provin din dependențe tranzitive în pipeline-uri CI/CD și servicii de producție din PyPI, crates.io și npm &middot; <span class=\"proof-updated\">Actualizat la <time datetime=\"2026-10-15\">15 oct. 2026</time>.</span>"
     ],
     [
-      ">Latest research<",
+      "(HSBC|PayPal|Barclays|Shazam|AKQA|Virgin) logo",
+      "Sigla \\1"
+    ],
+    [
+      ">EPAA White Paper \\(Sep 2025, PDF\\)</a>",
+      ">Cartea albă EPAA (sept. 2025, PDF)</a>"
+    ],
+    [
+      ">SWIFT CBPR\\+ / ISO 20022</a>",
+      ">SWIFT CBPR+ / ISO 20022</a>"
+    ],
+    [
+      ">Sigstore &amp; CycloneDX SBOM</a>",
+      ">SBOM Sigstore &amp; CycloneDX</a>"
+    ],
+    [
+      ">Newsletter · Banking On Quantum</p>",
+      ">Newsletter · Banking On Quantum</p>"
+    ],
+    [
+      ">Monthly briefings for senior banking architects\\.</h2>",
+      ">Informări lunare pentru arhitecți bancari seniori.</h2>"
+    ],
+    [
+      ">Research notes on applied AI, ISO 20022 migration, and post-quantum cryptography across wholesale payment rails\\. No spam, unsubscribe in one click\\.</p>",
+      ">Note de cercetare despre IA aplicată, migrarea la ISO 20022 și criptografia post-cuantică pe infrastructurile de plăți wholesale. Fără spam, dezabonare cu un clic.</p>"
+    ],
+    [
+      ">Browse the changelog <span",
+      ">Răsfoiește jurnalul de modificări <span"
+    ],
+    [
+      ">Read more<",
       ">Citește cercetările recente<"
     ],
     [
-      ">Featured articles<",
-      ">Citește cercetările recente<"
+      ">Read the article<",
+      ">Citește articolul<"
     ],
     [
-      ">All articles<",
+      ">Read latest research<",
       ">Citește cercetările recente<"
     ],
     [
@@ -102,100 +286,16 @@
       ">Citește cercetările recente<"
     ],
     [
-      ">By topic<",
-      ">După subiect<"
+      ">Get in touch ›</a>",
+      ">Contact ›</a>"
     ],
     [
-      ">All topics<",
-      ">Toate subiectele<"
+      ">Payments · Stablecoins<",
+      ">Plăți · Stablecoins<"
     ],
     [
-      ">By tag<",
-      ">După etichetă<"
-    ],
-    [
-      ">All tags<",
-      ">Toate etichetele<"
-    ],
-    [
-      ">Published<",
-      ">Publicat<"
-    ],
-    [
-      ">Updated<",
-      ">Actualizat<"
-    ],
-    [
-      ">Open source<",
-      ">Open source<"
-    ],
-    [
-      ">Subscribe<",
-      ">Abonează-te<"
-    ],
-    [
-      ">Follow<",
-      ">Urmărește<"
-    ],
-    [
-      "<p class=feat-eyebrow>Get in touch</p>",
-      "<p class=feat-eyebrow>Contact</p>"
-    ],
-    [
-      ">Drop me a line<",
-      ">Contact<"
-    ],
-    [
-      ">Learn more<",
-      ">Află mai multe<"
-    ],
-    [
-      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
-      ">Aproape două decenii de leadership intern în plăți și produse digitale la HSBC, PayPal, Barclays, Shazam, AKQA și Virgin Group.</p>"
-    ],
-    [
-      ">Authored &amp; maintained<",
-      ">Scrise și întreținute<"
-    ],
-    [
-      "alt=\"PayPal logo\"",
-      "alt=\"Logo PayPal\""
-    ],
-    [
-      "alt=\"Barclays logo\"",
-      "alt=\"Logo Barclays\""
-    ],
-    [
-      "alt=\"Shazam logo\"",
-      "alt=\"Logo Shazam\""
-    ],
-    [
-      "alt=\"AKQA logo\"",
-      "alt=\"Logo AKQA\""
-    ],
-    [
-      "alt=\"Virgin logo\"",
-      "alt=\"Logo Virgin\""
-    ],
-    [
-      "alt=\"HSBC logo\"",
-      "alt=\"Logo HSBC\""
-    ],
-    [
-      ">Read the white paper</a>",
-      ">Citește cartea albă</a>"
-    ],
-    [
-      ">Read the article<",
-      ">Citește articolul<"
-    ],
-    [
-      ">Read the paper<",
-      ">Citește cartea albă<"
-    ],
-    [
-      ">See all articles\\b",
-      ">Vezi toate articolele"
+      ">Payments · ISO 20022<",
+      ">Plăți · ISO 20022<"
     ],
     [
       ">Quantum<",
@@ -210,132 +310,32 @@
       ">Cuantic · Criptografie<"
     ],
     [
-      ">Payments · Stablecoins<",
-      ">Plăți · Stablecoins<"
+      ">Read the white paper(?: \\(PDF\\))?</a>",
+      ">Citește cartea albă (PDF)</a>"
     ],
     [
-      ">Payments · ISO 20022<",
-      ">Plăți · ISO 20022<"
+      ">Tailor the page order and highlights for your role\\.</p>",
+      ">Adaptează ordinea paginii și punctele-cheie la rolul tău.</p>"
     ],
     [
-      ">Python · Payments<",
-      ">Python · Plăți<"
+      "data-summary-default=\"Tailor the page order and highlights for your role\\.\"",
+      "data-summary-default=\"Adaptează ordinea paginii și punctele-cheie la rolul tău.\""
     ],
     [
-      ">Python · Cross-border<",
-      ">Python · Transfrontalier<"
+      "data-summary-boards=\"Prioritising board-level proof, fiduciary risk, and post-quantum governance\\.\"",
+      "data-summary-boards=\"Prioritate pentru dovezile la nivel de consiliu, riscul fiduciar și guvernanța post-cuantică.\""
     ],
     [
-      ">Python · Finance<",
-      ">Python · Finance<"
+      "data-summary-engineers=\"Prioritising open-source Rust and Python libraries, ISO 20022 schemas, and FIPS 203 ML-KEM\\.\"",
+      "data-summary-engineers=\"Prioritate pentru bibliotecile open source Rust și Python, schemele ISO 20022 și FIPS 203 ML-KEM.\""
     ],
     [
-      ">Rust · Security<",
-      ">Rust · Securitate<"
+      "data-summary-regulators=\"Prioritising the EPAA quantum-safe payments paper, DORA, CRA, and supervisory compliance\\.\"",
+      "data-summary-regulators=\"Prioritate pentru cartea albă EPAA despre plăți rezistente la atacuri cuantice, DORA, CRA și conformitatea de supraveghere.\""
     ],
     [
-      ">Rust · Quantum<",
-      ">Rust · Cuantic<"
-    ],
-    [
-      ">Rust · YAML<",
-      ">Rust · YAML<"
-    ],
-    [
-      ">Browse all projects<",
-      ">Explorează toate proiectele<"
-    ],
-    [
-      ">Career<",
-      ">Carieră<"
-    ],
-    [
-      ">Where I've worked\\.<",
-      ">Unde am lucrat.<"
-    ],
-    [
-      "aria-label=\"Newsletter signup\"",
-      "aria-label=\"Abonare la newsletter\""
-    ],
-    [
-      "aria-label=\"Sebastien Rousseau home\"",
-      "aria-label=\"Pagina principală Sebastien Rousseau\""
-    ],
-    [
-      "aria-label=\"Toggle navigation\"",
-      "aria-label=\"Comută navigarea\""
-    ],
-    [
-      "aria-label=\"Switch to dark theme\"",
-      "aria-label=\"Activează tema întunecată\""
-    ],
-    [
-      "aria-label=\"Switch to light theme\"",
-      "aria-label=\"Activează tema luminoasă\""
-    ],
-    [
-      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
-      "aria-label=\"Caută (Cmd sau Ctrl + K)\""
-    ],
-    [
-      "title=\"Search \\(⌘K\\)\"",
-      "title=\"Caută (⌘K)\""
-    ],
-    [
-      "aria-label=\"Get in touch\"",
-      "aria-label=\"Contact\""
-    ],
-    [
-      "aria-label=\"Back to top\"",
-      "aria-label=\"Înapoi sus\""
-    ],
-    [
-      "aria-label=\"Social links\"",
-      "aria-label=\"Linkuri sociale\""
-    ],
-    [
-      "aria-label=\"Article summary\"",
-      "aria-label=\"Rezumatul articolului\""
-    ],
-    [
-      "aria-label=\"About the author\"",
-      "aria-label=\"Despre autor\""
-    ],
-    [
-      ">Full profile</a>",
-      ">Profil complet</a>"
-    ],
-    [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
-      ">Securizarea viitorului bancar<br>cu IA agentică<br>și criptografie post-cuantică.</h1>"
-    ],
-    [
-      ">Built for the edge\\. Architected for uncompromising resilience\\. Powering the next generation of global payments\\.</p>",
-      ">Construit pentru edge. Arhitecturat pentru reziliență fără compromisuri. Alimentând următoarea generație de plăți globale.</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
-      "<dl class=pao><div><dt>Problemă</dt><dd>Codificarea manuală a mesajelor <strong>ISO 20022 pain.001</strong> este fragilă în contextul migrărilor SEPA și SWIFT.</dd></div><div><dt>Abordare</dt><dd>Bibliotecă Python bazată pe schemă care mapează CSV sau SQLite în XML de plată validat.</dd></div><div><dt>Rezultat</dt><dd>Operațiunile emit pain.001 în câteva minute; pista de audit supraviețuiește migrării.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA + SWIFT</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
-      "<dl class=pao><div><dt>Problemă</dt><dd>Transferurile de credit FI-to-FI nu trec auditul când regulile XSD, IBAN și PII diferă.</dd></div><div><dt>Abordare</dt><dd>O singură bibliotecă: JSON Schema, XSD, IBAN în 75 de țări, mascare la nivel GDPR.</dd></div><div><dt>Rezultat</dt><dd>Transferuri de credit transfrontaliere care trec prima oară la autoritatea de reglementare.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 țări · IBAN</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
-      "<dl class=pao><div><dt>Problemă</dt><dd>Formatele extraselor de cont blochează echipele de reconciliere în reintroducerea manuală a datelor.</dd></div><div><dt>Abordare</dt><dd>Un set de instrumente Python care normalizează extrasele în mai multe formate cu trasabilitate de audit.</dd></div><div><dt>Rezultat</dt><dd>Reconcilierea rulează fără cod specific per bancă.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Grad de audit</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
-      "<dl class=pao><div><dt>Problemă</dt><dd>Bibliotecile de hashing pre-PQC lasă depozitele de credențiale expuse la amenințări cuantice.</dd></div><div><dt>Abordare</dt><dd>Bibliotecă Rust cu hash și digest sigură la nivel de memorie, cu o postură post-quantum.</dd></div><div><dt>Rezultat</dt><dd>Hashing securizat tip drop-in pentru serviciile care planifică migrarea PQC.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Siguranță la memorie · Rust</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
-      "<dl class=pao><div><dt>Problemă</dt><dd>Băncile Tier-1 sunt expuse riscului harvest-now-decrypt-later la fiecare sesiune TLS.</dd></div><div><dt>Abordare</dt><dd><strong>CRYSTALS-Kyber</strong> pur în Rust (NIST FIPS 203), integrat în fluxurile de autentificare existente.</dd></div><div><dt>Rezultat</dt><dd>Schimb de chei post-quantum în Rust de nivel producție, validat independent.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>"
-    ],
-    [
-      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
-      "<dl class=pao><div><dt>Problemă</dt><dd>Fluxurile AI, MCP și de configurare rulează pe parsere YAML cu UB din C și derivă silențioasă față de specificație.</dd></div><div><dt>Abordare</dt><dd>YAML 1.2 pur în Rust — bibliotecă, CLI, LSP, MCP și WASM — zero unsafe, conformitate completă cu specificația.</dd></div><div><dt>Rezultat</dt><dd>Fluxurile YAML încetează să mai fie veriga slabă a lanțului de aprovizionare software.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 / 406 specificație · 0 unsafe</p>"
+      "alt=\"Isometric render of an illuminated processor, representing the cryptographic foundations of payments\\.\"",
+      "alt=\"Randare izometrică a unui procesor iluminat, care reprezintă fundamentele criptografice ale plăților.\""
     ],
     [
       ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
@@ -354,8 +354,8 @@
       ">Open source pentru viitorul serviciilor bancare și al finanțelor.</h2>"
     ],
     [
-      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
-      "\\g<1>Află mai multe <span"
+      ">Explore the ISO 20022 libraries <span",
+      ">Explorează bibliotecile ISO 20022 <span"
     ]
   ]
 }

@@ -21,14 +21,6 @@
       "தூண் · தலைப்பு"
     ],
     [
-      "PILLAR · PROJECT",
-      "தூண் · திட்டம்"
-    ],
-    [
-      "Curated topic clusters[^<]+",
-      "தலைப்புத் தொகுப்புகள்: ஒரு இழையைத் தேர்ந்தெடுத்து அதைக் காப்பகம் முழுவதும் பின்தொடருங்கள்."
-    ],
-    [
       "aria-label=\"Post-Quantum Cryptography\"",
       "aria-label=\"பிந்தைய குவாண்டம் குறியாக்கவியல்\""
     ],
@@ -47,26 +39,6 @@
     [
       "aria-label=\"Blockchain &amp; Digital Assets\"",
       "aria-label=\"Blockchain &amp; டிஜிட்டல் சொத்துகள்\""
-    ],
-    [
-      "alt=\"Post-Quantum Cryptography — topic banner\"",
-      "alt=\"பிந்தைய குவாண்டம் குறியாக்கவியல்: தலைப்பு பேனர்\""
-    ],
-    [
-      "alt=\"ISO 20022 &amp; Payments — topic banner\"",
-      "alt=\"ISO 20022 &amp; பணம் செலுத்துதல்கள்: தலைப்பு பேனர்\""
-    ],
-    [
-      "alt=\"Applied AI in Banking — topic banner\"",
-      "alt=\"வங்கியில் பயன்பாட்டு AI: தலைப்பு பேனர்\""
-    ],
-    [
-      "alt=\"Rust &amp; Open Source — topic banner\"",
-      "alt=\"Rust &amp; Open Source: தலைப்பு பேனர்\""
-    ],
-    [
-      "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
-      "alt=\"Blockchain &amp; டிஜிட்டல் சொத்துகள்: தலைப்பு பேனர்\""
     ],
     [
       "<h3><a href=\"/ta/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
@@ -115,10 +87,6 @@
     [
       "INDUSTRY WHITE PAPER · EPAA",
       "தொழில்துறை வெள்ளை அறிக்கை · EPAA"
-    ],
-    [
-      "INDUSTRY WHITE PAPER",
-      "தொழில்துறை வெள்ளை அறிக்கை"
     ],
     [
       "PUBLICATION · WHITE PAPER",
@@ -185,72 +153,12 @@
       " · இலவச பதிவிறக்கம்"
     ],
     [
-      "Free download<",
-      "இலவச பதிவிறக்கம்<"
-    ],
-    [
-      ">Download<",
-      ">பதிவிறக்கு<"
-    ],
-    [
-      ">Request access<",
-      ">அணுகலைக் கோருங்கள்<"
-    ],
-    [
       ">English · PDF",
       ">தமிழ் · PDF"
     ],
     [
-      "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-01-\\2\">\\2 ஜனவரி \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-02-\\2\">\\2 பிப்ரவரி \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-03-\\2\">\\2 மார்ச் \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-04-\\2\">\\2 ஏப்ரல் \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-05-\\2\">\\2 மே \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-06-\\2\">\\2 ஜூன் \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-07-\\2\">\\2 ஜூலை \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-08-\\2\">\\2 ஆகஸ்ட் \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-09-\\2\">\\2 செப்டம்பர் \\1</time>"
-    ],
-    [
       "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
       "<time datetime=\"\\1-09-01\">செப்டம்பர் \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-10-\\2\">\\2 அக்டோபர் \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-11-\\2\">\\2 நவம்பர் \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-12-\\2\">\\2 டிசம்பர் \\1</time>"
     ],
     [
       ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
@@ -301,22 +209,6 @@
       "\\1<section class=\"qa-a\"><p>இரண்டு அச்சுகள் இணைந்து இயங்குகின்றன. <strong>தொழில்துறை வெள்ளை அறிக்கைகள்</strong>, Emerging Payments Association Asia (EPAA) போன்ற நிறுவனங்களுக்காக தயாரிக்கப்படுபவை, பணம் செலுத்தும் உள்கட்டமைப்புகளின் கட்டமைப்பு மாற்றங்களை ஆராய்கின்றன: சமீபத்தில் குறியாக்கவியல் ரீதியாக தொடர்புடைய குவாண்டம் கணிப்பீடு wholesale மற்றும் நிகழ்நேர தீர்வு தண்டவாளங்களில் ஏற்படுத்தும் தாக்கம். <strong>பயன்பாட்டு ஆய்வு அறிக்கைகள்</strong> குறிப்பிட்ட தொழில்நுட்பத் தலைப்புகளை இலக்காகக் கொள்கின்றன (எடுத்துக்காட்டாக: Apple Silicon இல் Whisper + Metal Performance Shaders உடன் நிகழ்நேர குரல் அறிதல்) மற்றும் தனித்தனியாக வாங்கக்கூடிய PDF வடிவில் வெளியிடப்படுகின்றன.</p></section>"
     ],
     [
-      ">How often do you release new papers\\?</summary>",
-      ">நீங்கள் எவ்வளவு அடிக்கடி புதிய கட்டுரைகளை வெளியிடுகிறீர்கள்?</summary>"
-    ],
-    [
-      "(<summary[^>]*>À quelle fréquence publiez-vous de nouveaux articles \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>ஒழுங்கற்ற முறையில், வேகத்தை விட தரத்திற்கு முன்னுரிமை அளிக்கும் விதமாக. ஒரு தொழில்நுட்ப முன்னேற்றம் அதை நியாயப்படுத்தும்போது, சுருக்கமான ஆய்வுக் குறிப்புகள் சில வாரங்களுக்கு ஒருமுறை வெளிவருகின்றன. வெள்ளை அறிக்கைகள் தொழில்துறை சுழற்சிகளுடன் இணைந்து வெளியிடப்படுகின்றன (எடுத்துக்காட்டாக: ஒழுங்குமுறை காலவரிசைகள், EPAA மாநாடுகள்).</p></section>"
-    ],
-    [
-      ">About EPAA</p>",
-      ">EPAA பற்றி</p>"
-    ],
-    [
-      "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
-      "<p class=\"book-about\"><strong>Emerging Payments Association Asia (EPAA)</strong> என்பது ஆசியா-பசிபிக் பகுதியில் பணம் செலுத்தும் தொழில்துறையின் தொழில்முறை சங்கமாகும், வங்கிகள், பணம் செயலாக்கிகள், ஃபின்டெக்குகள் மற்றும் ஒழுங்குமுறையாளர்களை துறை முழுவதும் பரவலான கட்டமைப்புப் பிரச்சினைகளைச் சுற்றி ஒன்றிணைக்கிறது."
-    ],
-    [
       ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
       ">குவாண்டம்-எதிர்ப்பு பணம் செலுத்துதல்கள்: துறை ஏன் இப்போதே செயல்பட வேண்டும்<"
     ],
@@ -329,40 +221,12 @@
       ">சமீபத்திய ஆராய்ச்சி மற்றும் பகுப்பாய்வு<"
     ],
     [
-      "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
-      "செப்டம்பர் 2025 &middot; Emerging Payments Association Asia (EPAA)"
-    ],
-    [
       ">Quantum computing threatens the cryptographic foundations[^<]+",
       ">குவாண்டம் கணிப்பீடு நிதிச் சேவைகளின் குறியாக்கவியல் அடித்தளங்களை அச்சுறுத்துகிறது. பணம் செலுத்துதல்கள், நிகழ்நேரத்திலிருந்து எல்லை தாண்டிய தீர்வு வரை, குவாண்டம் கணிப்பீடு இறுதியில் காலாவதியாக்கும் பாதுகாப்புகளை நம்பியுள்ளன. துறை ஏன் இப்போதே செயல்பட வேண்டும் என்பதை இந்த EPAA வெள்ளை அறிக்கை விளக்குகிறது."
     ],
     [
-      "2024 &middot; Independent Research &middot;",
-      "2024 &middot; சுயாதீன ஆராய்ச்சி &middot;"
-    ],
-    [
-      ">This independent research paper presents[^<]+",
-      ">இந்த சுயாதீன ஆய்வு அறிக்கை OpenAI Whisper மற்றும் Metal Performance Shaders ஐப் பயன்படுத்தி macOS இல் நிகழ்நேர குரல் அறிதலின் ஒரு உகப்பாக்கத்தை முன்வைக்கிறது, அளவிடக்கூடிய தாமதம் மற்றும் ஆற்றல் திறன் ஆதாயங்களை நிரூபிக்கிறது."
-    ],
-    [
-      ">License &amp; pricing<",
-      ">உரிமம் மற்றும் விலை நிர்ணயம்<"
-    ],
-    [
-      ">One copy per buyer<",
-      ">ஒரு வாங்குபவருக்கு ஒரு பிரதி<"
-    ],
-    [
       ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
       ">கேள்விகள்?<span class=\"qa-headline-soft\"> பதில்கள்.</span>"
-    ],
-    [
-      ">Questions\\? Answers\\.</h2>",
-      ">கேள்விகள்? பதில்கள்.</h2>"
-    ],
-    [
-      ">Questions\\? Answers\\.<",
-      ">கேள்விகள்? பதில்கள்.<"
     ],
     [
       ">Are the white papers free to read\\?</summary>",
@@ -385,10 +249,6 @@
       ">புதிய வெளியீடுகளை எவ்வாறு பின்தொடர்வது?</summary>"
     ],
     [
-      ">Where can I follow new releases\\?</summary>",
-      ">புதிய வெளியீடுகளை நான் எங்கே பின்தொடரலாம்?</summary>"
-    ],
-    [
       "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>EPAA வெள்ளை அறிக்கை <em>Quantum-Safe Payments</em> <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> இல் இலவசமாக பொது பதிவிறக்கத்திற்குக் கிடைக்கிறது. OpenAI Whisper மற்றும் Metal Performance Shaders உடன் நிகழ்நேர குரல் அறிதல் குறித்த சுயாதீன ஆய்வு அறிக்கை உரிமம் பெற்றது மற்றும் $49.00 (ஆங்கிலம், PDF, ~95 KB) என தனித்தனி வாங்குதலுக்குக் கிடைக்கிறது. ஒரு வாங்குபவருக்கு ஒரு பிரதி; பதிவிறக்கங்கள் தனிப்பட்ட பயன்பாட்டிற்கு மட்டுமே, மறுவிநியோகம் செய்ய முடியாது.</p></section>"
     ],
@@ -407,250 +267,6 @@
     [
       "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>புதிய கட்டுரைகள் மற்றும் ஆய்வுக் குறிப்புகள் தளத்தின் <a href=\"/ta/rss.xml\">RSS ஊட்டம்</a> மற்றும் <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> செய்திமடல் வழியாக முதலில் அறிவிக்கப்படுகின்றன, இது பிந்தைய குவாண்டம் குறியாக்கவியல், மத்திய வங்கிக் கொள்கை மற்றும் முக்கிய பணம் செலுத்தும் திட்டங்களின் இடம்பெயர்வு வழித்திட்டத்தை உள்ளடக்கியது. ஸ்பேம் இல்லை, புதுப்பிப்புகள் மட்டுமே.</p></section>"
-    ],
-    [
-      "(<summary[^>]*>Où puis-je suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>புதிய வெளியீடுகள் குறித்து அறிய <a href=\"/ta/rss.xml\">RSS ஊட்டத்திற்கு</a> குழுசேருங்கள் அல்லது <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> இல் என்னைப் பின்தொடருங்கள்.</p></section>"
-    ],
-    [
-      ">Browse all projects<",
-      ">அனைத்து திட்டங்களையும் உலாவுங்கள்<"
-    ],
-    [
-      ">Three areas of practice\\.\\s*<span",
-      ">மூன்று செயல்பாட்டுத் துறைகள். <span"
-    ],
-    [
-      ">One philosophy\\.</span>",
-      ">ஒரு தத்துவம்.</span>"
-    ],
-    [
-      ">WHAT IS INSIDE<",
-      ">உள்ளே என்ன இருக்கிறது<"
-    ],
-    [
-      ">OPEN SOURCE FOR FINANCIAL SERVICES<",
-      ">நிதிச் சேவைகளுக்கான OPEN SOURCE<"
-    ],
-    [
-      ">Payments and settlement\\.<",
-      ">பணம் செலுத்துதல் மற்றும் தீர்வு.<"
-    ],
-    [
-      ">Post-quantum cryptography\\.<",
-      ">பிந்தைய குவாண்டம் குறியாக்கவியல்.<"
-    ],
-    [
-      ">Tooling and infrastructure\\.<",
-      ">கருவிகள் மற்றும் உள்கட்டமைப்பு.<"
-    ],
-    [
-      ">Applied AI\\.<",
-      ">பயன்பாட்டு AI.<"
-    ],
-    [
-      ">Explore payments tools\\s+<",
-      ">பணம் செலுத்தும் கருவிகளை ஆராயுங்கள் <"
-    ],
-    [
-      ">Explore quantum-safe libraries\\s+<",
-      ">குவாண்டம்-பாதுகாப்பான நூலகங்களை ஆராயுங்கள் <"
-    ],
-    [
-      ">Explore developer tools\\s+<",
-      ">டெவலப்பர் கருவிகளை ஆராயுங்கள் <"
-    ],
-    [
-      ">Explore PQC tools\\s+<",
-      ">PQC கருவிகளை ஆராயுங்கள் <"
-    ],
-    [
-      ">Explore AI tools\\s+<",
-      ">AI கருவிகளை ஆராயுங்கள் <"
-    ],
-    [
-      ">Authored & maintained<",
-      ">எழுதப்பட்டு பராமரிக்கப்படுபவை<"
-    ],
-    [
-      ">Authored &amp; maintained<",
-      ">எழுதப்பட்டு பராமரிக்கப்படுபவை<"
-    ],
-    [
-      ">Open source for the future of finance\\.<",
-      ">நிதியின் எதிர்காலத்திற்கான திறந்த மூலம்.<"
-    ],
-    [
-      "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\">ISO 20022 <strong>pain.001</strong> மற்றும் <strong>pacs.008</strong> கருவித்தொகுப்புகள், வங்கி அறிக்கை பாகுபடுத்தல் மற்றும் கட்டமைக்கப்பட்ட எல்லை தாண்டிய செய்திகளுக்கு இடம்பெயர்வதற்கான Rust நூலகங்கள். SWIFT, SEPA மற்றும் நிகழ்நேர பணம் செலுத்தும் திட்டங்களுக்காக வடிவமைக்கப்பட்டவை.</p>"
-    ],
-    [
-      "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\"><strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203) இன் Rust செயலாக்கங்கள், ஹாஷ் ப்ரிமிட்டிவ்கள் மற்றும் குவாண்டம்-எதிர்ப்பு கட்டுமானத் தொகுதிகள். நிதி அங்கீகாரத்தின் RSA மற்றும் நீள்வட்ட வளைவு சகாப்தத்திற்கு அப்பாற்பட்ட பாதுகாப்பு.</p>"
-    ],
-    [
-      "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
-      "<p class=\"setup-card-body\">வரிசைப்படுத்தல், பதிவாக்கம், குறியீட்டு உருவாக்கம், தேதி மற்றும் நேரத்திற்கான திறந்த மூல Rust நூலகங்கள். மேலும் இந்தத் தளத்தை உருவாக்கும் <strong>Static Site Generator</strong> (SSG) மற்றும் அதை வழங்கக்கூடியதாக்கும் டெவலப்பர் சூழல்.</p>"
-    ],
-    [
-      ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
-      ">உலகளாவிய இடம்பெயர்வுக்கான ISO 20022 கருவிகள். Pain.001 கோப்பு உருவாக்கம், pacs.008 எல்லை தாண்டிய வரவு பரிமாற்றங்கள் மற்றும் கட்டமைக்கப்பட்ட வங்கி அறிக்கை பாகுபடுத்தல்.<"
-    ],
-    [
-      ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
-      ">நிதி அங்கீகாரத்திற்கான CRYSTALS-Kyber இன் Rust செயலாக்கங்கள், ஹாஷ் ப்ரிமிட்டிவ்கள் மற்றும் குவாண்டம்-எதிர்ப்பு கட்டுமானத் தொகுதிகள்.<"
-    ],
-    [
-      ">Applied artificial intelligence\\.<",
-      ">பயன்பாட்டு செயற்கை நுண்ணறிவு.<"
-    ],
-    [
-      ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
-      ">குரல் அறிதல், இயற்கை மொழி மற்றும் பெரிய மொழி மாதிரிகளை நிதி மற்றும் உற்பத்தித்திறன் தொடர்பான நிஜ உலகச் சிக்கல்களுக்குப் பயன்படுத்தும் திறந்த மூல AI திட்டங்கள்.<"
-    ],
-    [
-      ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
-      ">CSV அல்லது SQLite இலிருந்து ISO 20022 pain.001 கட்டணக் கோப்பு உருவாக்கத்தைத் தானியக்கமாக்கும் Python நூலகம். கட்டமைக்கப்பட்ட எல்லை கடந்த செய்திகளுக்கான உலகளாவிய இடப்பெயர்வுக்காக உருவாக்கப்பட்டது.<"
-    ],
-    [
-      ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
-      ">FI-to-FI வாடிக்கையாளர் கடன் பரிமாற்றங்களுக்கான ISO 20022 pacs.008 கட்டணச் செய்திகளை உருவாக்கவும், சரிபார்க்கவும், வழங்கவும். JSON Schema + XSD சரிபார்ப்பு, 75 நாடுகளில் IBAN, GDPR/PCI-DSS-க்கு இணங்கும் PII மறைப்பு.<"
-    ],
-    [
-      ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
-      ">பல வடிவ வங்கி அறிக்கைகளைக் கட்டமைக்கப்பட்ட தரவாக மாற்றும் நிதி-தர Python கருவித்தொகுப்பு, உண்மையான அறிக்கைக் கோப்புகளின் யதார்த்தங்களுக்கும் ஒழுங்குபடுத்தப்பட்ட சூழல்களின் தணிக்கைத் தேவைகளுக்கும் ஏற்ப.<"
-    ],
-    [
-      ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
-      ">AI-இயக்கப்படும் முன்னறிவிப்பைப் பயன்படுத்தி சிக்கலான நிதிக் கட்டமைப்புகளில் பண ஒதுக்கீட்டை உகந்ததாக்கும் Rust பயன்பாடு. வங்கிகள் மற்றும் சொத்து மேலாளர்களுக்குள் கருவூலம், நிதிக் கணக்கியல் மற்றும் சொத்து ஒதுக்கீட்டு பயன்பாட்டு வழக்குகளுக்காக வடிவமைக்கப்பட்டது.<"
-    ],
-    [
-      ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
-      ">பல வடிவங்களில் QR-குறியீட்டுப் படங்களை உருவாக்கிக் கையாளும் Rust நூலகம். நேரடிக் கட்டணப் பயன்பாடுகளில் SEPA கடன் பரிமாற்றங்களுக்கான EPC QR குறியீடுகள், வணிக வசூலுக்கான கட்டண-இணைப்பு QR மற்றும் step-up அங்கீகார ஓட்டங்கள் அடங்கும்.<"
-    ],
-    [
-      ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
-      ">பொது-நோக்க பிந்தைய-குவாண்டம் விசை இணைப்பிற்கான NIST FIPS 203 தரமான CRYSTALS-Kyber-இன் வலுவான Rust அமலாக்கம்.<"
-    ],
-    [
-      ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
-      ">கடவுச்சொல் மறையாக்கம் மற்றும் சரிபார்ப்பிற்கான பாதுகாப்பான hash மற்றும் digest அல்காரிதங்கள், post-PQC சகாப்தத்திற்கான குவாண்டம்-எதிர்ப்பு நிலைப்பாட்டுடன் வடிவமைக்கப்பட்டது.<"
-    ],
-    [
-      ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
-      ">தணிக்கை செய்யப்பட்ட கிரிப்டோகிராஃபிக் அடிப்படைகளால் ஆதரிக்கப்படும், வலுவான, தனித்துவமான மற்றும் சீரற்ற கடவுச்சொற்களை உருவாக்குவதற்கான வேகமான, எளிமையான மற்றும் சக்திவாய்ந்த குறுக்கு-தள CLI.<"
-    ],
-    [
-      ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
-      ">இயற்கையான தொடர்புகள், PDF சுருக்கங்கள் மற்றும் திறமையான தேக்ககத்திற்காக OpenAI-இன் GPT-ஐப் பயன்படுத்தும் மேம்பட்ட குரல் உதவியாளர். தனிப்பட்ட மற்றும் நிர்வாகப் பயன்பாடு இரண்டிற்கும் உருவாக்கப்பட்டது.<"
-    ],
-    [
-      ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
-      ">மேம்பட்ட AI குரல் அங்கீகாரம் மூலம் ஆடியோவை நிகழ்நேரத்தில் உரையாக மாற்றவும். ஆடியோ தரவிலிருந்து செயல்படுத்தக்கூடிய நுண்ணறிவுகளைப் பிரித்தெடுக்கவும், வாடிக்கையாளர் மற்றும் செயல்பாட்டு அனுபவத்தை மேம்படுத்தவும் வடிவமைக்கப்பட்டது.<"
-    ],
-    [
-      ">Featured · Python · ISO 20022<",
-      ">சிறப்பம்சம் · Python · ISO 20022<"
-    ],
-    [
-      ">Python · ISO 20022<",
-      ">Python · ISO 20022<"
-    ],
-    [
-      ">Python · Finance<",
-      ">Python · நிதி<"
-    ],
-    [
-      ">Rust · Treasury · AI<",
-      ">Rust · கருவூலம் · AI<"
-    ],
-    [
-      ">Rust · Payments QR<",
-      ">Rust · கட்டணங்கள் QR<"
-    ],
-    [
-      ">Rust · Quantum<",
-      ">Rust · குவாண்டம்<"
-    ],
-    [
-      ">Rust · Security<",
-      ">Rust · பாதுகாப்பு<"
-    ],
-    [
-      ">AI · Voice<",
-      ">AI · குரல்<"
-    ],
-    [
-      ">AI · Speech<",
-      ">AI · பேச்சு<"
-    ],
-    [
-      ">PAYMENTS<",
-      ">கட்டணங்கள்<"
-    ],
-    [
-      ">POST-QUANTUM CRYPTOGRAPHY<",
-      ">பிந்தைய-குவாண்டம் கிரிப்டோகிராஃபி<"
-    ],
-    [
-      ">AI AND VOICE<",
-      ">AI மற்றும் குரல்<"
-    ],
-    [
-      ">DEVELOPER TOOLING<",
-      ">டெவலப்பர் கருவிகள்<"
-    ],
-    [
-      ">OPEN-SOURCE RUST<",
-      ">ஓப்பன் சோர்ஸ் Rust<"
-    ],
-    [
-      ">WEB AND DEVELOPER ENVIRONMENT<",
-      ">வலை மற்றும் டெவலப்பர் சூழல்<"
-    ],
-    [
-      ">Tooling\\.<",
-      ">கருவிகள்.<"
-    ],
-    [
-      ">Rust libraries and tooling\\.</h2>",
-      ">Rust நூலகங்கள் மற்றும் கருவிகள்.</h2>"
-    ],
-    [
-      "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
-      "<p class=\"cat-lede\">வரிசைப்படுத்தல், பதிவு, குறியீடு உருவாக்கம், கணிதம் மற்றும் டெவலப்பர் கருவிகள் முழுவதும் பரவியுள்ள ஓப்பன் சோர்ஸ் Rust திட்டங்கள், இந்தத் தளத்தை இயக்கும் நிலையான தள உருவாக்கி உட்பட.</p>"
-    ],
-    [
-      ">Web, templates and environment\\.</h2>",
-      ">வலை, templates மற்றும் சூழல்.</h2>"
-    ],
-    [
-      "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
-      "<p class=\"cat-lede\">தொடக்க templates, தொழில்துறை-மையப்படுத்தப்பட்ட இரண்டு வெளியீடுகள், ஒரு CSS கட்டமைப்பு மற்றும் மேம்பாட்டுச் சூழலை மீளுருவாக்கக்கூடியதாக வைத்திருக்கும் dotfiles.</p>"
-    ],
-    [
-      ">What licence are these projects released under\\?</summary>",
-      ">இந்தத் திட்டங்கள் எந்த உரிமத்தின் கீழ் வெளியிடப்படுகின்றன?</summary>"
-    ],
-    [
-      ">Are these projects production-ready\\?</summary>",
-      ">இந்தத் திட்டங்கள் உற்பத்திக்குத் தயாரா?</summary>"
-    ],
-    [
-      ">How can I contribute or report an issue\\?</summary>",
-      ">நான் எப்படிப் பங்களிக்கலாம் அல்லது சிக்கலைப் புகாரளிக்கலாம்?</summary>"
-    ],
-    [
-      ">Can I use these libraries in a regulated banking environment\\?</summary>",
-      ">ஒழுங்குபடுத்தப்பட்ட வங்கிச் சூழலில் இந்த நூலகங்களைப் பயன்படுத்தலாமா?</summary>"
-    ],
-    [
-      ">Do you offer commercial support or consulting\\?</summary>",
-      ">நீங்கள் வணிக ஆதரவு அல்லது ஆலோசனை வழங்குகிறீர்களா?</summary>"
-    ],
-    [
-      ">How do I follow new releases\\?</summary>",
-      ">புதிய வெளியீடுகளை நான் எப்படிப் பின்தொடர்வது?</summary>"
     ],
     [
       "(<summary[^>]*>Sous quelle licence ces projets sont-ils publiés \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
@@ -677,46 +293,6 @@
       "\\1<section class=\"qa-a\"><p>தளத்தின் தேதியிடப்பட்ட ஒவ்வொரு கட்டுரையும் <a href=\"/ta/rss.xml\">RSS ஊட்டம்</a> மற்றும் <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> செய்திமடல் வழியாக அறிவிக்கப்படுகிறது. தனிப்பட்ட களஞ்சியங்களும் GitHub-இல் releases வெளியிடுகின்றன, அவற்றை நீங்கள் நேரடியாகப் பின்தொடரலாம்.</p></section>"
     ],
     [
-      ">GET IN TOUCH<",
-      ">தொடர்பு கொள்ளுங்கள்<"
-    ],
-    [
-      ">Have an idea\\? Let's build it\\.<",
-      ">ஒரு யோசனை உள்ளதா? அதை ஒன்றாக உருவாக்குவோம்.<"
-    ],
-    [
-      ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
-      ">ஓப்பன் சோர்ஸ் ஒத்துழைப்பு, பணிக்கப்பட்ட பொறியியல் அல்லது கட்டணங்களின் எதிர்காலம் குறித்த ஒரு உரையாடல். எது பொருந்துகிறதோ அது.<"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">FEATURED</p>",
-      "<p class=\"newsroom-kicker\">சிறப்பம்சம்</p>"
-    ],
-    [
-      "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
-      "aria-label=\"குறிச்சொல்: \\1, \\2 இடுகைகள்\""
-    ],
-    [
-      "(\\(\\d+) Posts\\)",
-      "\\1 இடுகைகள்)"
-    ],
-    [
-      ">Featured Tags \\((\\d+)\\)</h2>",
-      ">சிறப்பு குறிச்சொற்கள் (\\1)</h2>"
-    ],
-    [
-      ">Featured Tags<",
-      ">சிறப்பு குறிச்சொற்கள்<"
-    ],
-    [
-      "<a class=\"pill ghost\" href=\"/ta/contact/\">Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/ta/contact/\">தொடர்பு கொள்ளுங்கள்</a>"
-    ],
-    [
-      ">Get in touch</a>",
-      ">தொடர்பு கொள்ளுங்கள்</a>"
-    ],
-    [
       "Made with Static Site Generator: Rust-Powered SSG",
       "Static Site Generator உடன் உருவாக்கப்பட்டது: Rust-இயங்கும் SSG"
     ],
@@ -729,148 +305,24 @@
       "Static Site Generator (SSG) உடன் உருவாக்கப்பட்ட இணையதளம்"
     ],
     [
-      "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
-      "Static Site Generator (SSG) என்பது தேடுபொறி உகப்பாக்கம் (SEO) மற்றும் அணுகல்தன்மை தரநிலைகளுக்கு இணக்கத்திற்கான மின்னல்-வேக கருவி."
-    ],
-    [
-      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
-      "தலைப்புகள் &amp; குறிச்சொற்கள் அட்டவணை: AI, கட்டணங்கள், குவாண்டம், Rust OSS"
-    ],
-    [
       "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
       "Sebastien Rousseau-இன் தளத்தைத் தலைப்பு மற்றும் குறிச்சொல் மூலம் உலாவுங்கள்: AI, கட்டணங்கள், ISO 20022, பிந்தைய-குவாண்டம் கிரிப்டோகிராஃபி, Rust ஓப்பன் சோர்ஸ் மற்றும் பல."
-    ],
-    [
-      "Website Accessibility Statement — Standards &amp; Contact",
-      "இணையதள அணுகல்தன்மை அறிக்கை - தரநிலைகள் &amp; தொடர்பு"
     ],
     [
       "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
       "இந்த அறிக்கை எங்கள் இணையதளத்தின் அணுகல்தன்மையை, அதை மேம்படுத்த நாங்கள் என்ன செய்கிறோம், மேலும் வலை அணுகல்தன்மை குறித்து எங்களை எப்படித் தொடர்பு கொள்வது என்பதை விளக்குகிறது."
     ],
     [
-      "Privacy Statement — How Your Data Is Collected &amp; Used",
-      "தனியுரிமை அறிக்கை - உங்கள் தரவு எவ்வாறு சேகரிக்கப்பட்டு &amp; பயன்படுத்தப்படுகிறது"
-    ],
-    [
       "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
       "எங்கள் இணையதளத்தைப் பயன்படுத்தும்போது தனிப்பட்ட தரவின் சேகரிப்பு, பயன்பாடு மற்றும் வெளிப்படுத்தல் தொடர்பான எங்கள் கொள்கைகளை இந்தப் பக்கம் உங்களுக்குத் தெரிவிக்கிறது"
-    ],
-    [
-      "Let's Start a Conversation That Will Make a Real Difference",
-      "உண்மையான மாற்றத்தை உருவாக்கும் ஒரு உரையாடலைத் தொடங்குவோம்"
-    ],
-    [
-      "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
-      "ஒரு கேள்வி அல்லது கருத்து உள்ளதா? கீழே உள்ள படிவத்தைப் பயன்படுத்தி என்னைத் தொடர்பு கொள்ளவும். உங்களிடமிருந்து கேட்பதில் நான் எப்போதும் மகிழ்ச்சியடைகிறேன், முடிந்தவரை விரைவில் பதிலளிப்பேன்."
-    ],
-    [
-      "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
-      "இணையதள பயன்பாட்டு விதிமுறைகள் &amp; நிபந்தனைகள் - Sebastien Rousseau"
     ],
     [
       "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
       "இந்த இணையதளத்தை அணுகுவதன் மூலம், இந்தப் பயன்பாட்டு விதிமுறைகள் மற்றும் நிபந்தனைகள் மற்றும் அனைத்துப் பொருந்தக்கூடிய சட்டங்கள் மற்றும் விதிமுறைகளுக்குக் கட்டுப்படுவதை நீங்கள் ஒப்புக்கொண்டு ஏற்கிறீர்கள்."
     ],
     [
-      ">Latest research<",
-      ">சமீபத்திய ஆராய்ச்சி<"
-    ],
-    [
-      ">Read latest research<",
-      ">சமீபத்திய ஆராய்ச்சியைப் படியுங்கள்<"
-    ],
-    [
-      ">Featured articles<",
-      ">சிறப்பு கட்டுரைகள்<"
-    ],
-    [
-      ">All articles<",
-      ">அனைத்து கட்டுரைகள்<"
-    ],
-    [
-      ">Read more<",
-      ">மேலும் படிக்க<"
-    ],
-    [
-      ">Read full article<",
-      ">முழு கட்டுரையைப் படியுங்கள்<"
-    ],
-    [
-      ">Newest first<",
-      ">புதியவை முதலில்<"
-    ],
-    [
-      ">Oldest first<",
-      ">பழையவை முதலில்<"
-    ],
-    [
-      ">By topic<",
-      ">தலைப்பு வாரியாக<"
-    ],
-    [
-      ">All topics<",
-      ">அனைத்து தலைப்புகள்<"
-    ],
-    [
-      ">By tag<",
-      ">குறிச்சொல் வாரியாக<"
-    ],
-    [
-      ">All tags<",
-      ">அனைத்து குறிச்சொற்கள்<"
-    ],
-    [
-      ">Published<",
-      ">வெளியிடப்பட்டது<"
-    ],
-    [
-      ">Updated<",
-      ">புதுப்பிக்கப்பட்டது<"
-    ],
-    [
       ">Open source<",
       ">ஓப்பன் சோர்ஸ்<"
-    ],
-    [
-      ">Authored & maintained<",
-      ">எழுதப்பட்டு & பராமரிக்கப்படுகிறது<"
-    ],
-    [
-      ">Open source for the future of finance\\.<",
-      ">நிதியின் எதிர்காலத்திற்கான ஓப்பன் சோர்ஸ்.<"
-    ],
-    [
-      ">A portfolio of",
-      ">ஒரு போர்ட்ஃபோலியோ"
-    ],
-    [
-      ">Start a conversation<",
-      ">ஒரு உரையாடலைத் தொடங்குங்கள்<"
-    ],
-    [
-      ">Drop me a line<",
-      ">எனக்கு எழுதுங்கள்<"
-    ],
-    [
-      ">Learn more<",
-      ">மேலும் அறிக<"
-    ],
-    [
-      ">Subscribe<",
-      ">குழுசேர்<"
-    ],
-    [
-      ">Follow<",
-      ">பின்தொடர்<"
-    ],
-    [
-      ">Latest<",
-      ">சமீபத்தியது<"
-    ],
-    [
-      "<h1>White Papers (?:&amp;|&) Research</h1>",
-      "<h1>வெள்ளை அறிக்கைகள் மற்றும் ஆராய்ச்சி</h1>"
     ],
     [
       "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
@@ -905,20 +357,12 @@
       "<h1>டெவலப்பர் நூலகம்: வங்கி தலைப்புகள், திறந்த மூலம், பிளேலிஸ்ட்கள்</h1>"
     ],
     [
-      "<h1>Enterprise AI Financial Technology (?:&amp;|&) Leadership</h1>",
-      "<h1>நிறுவன AI நிதி தொழில்நுட்பம் மற்றும் தலைமைத்துவம்</h1>"
-    ],
-    [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>வெளியீடுகள் ஆராய்ச்சி பிரிவுக்கு மாற்றப்பட்டுள்ளன</h1>"
     ],
     [
       "aria-label=\"Cloud Native Banking\"",
       "aria-label=\"கிளவுட்-நேட்டிவ் வங்கியியல்\""
-    ],
-    [
-      "alt=\"Cloud Native Banking — topic banner\"",
-      "alt=\"கிளவுட்-நேட்டிவ் வங்கியியல் — தலைப்புச் சுவரொட்டி\""
     ],
     [
       "<h3><a href=\"/ta/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
@@ -937,10 +381,6 @@
       "aria-label=\"வங்கியியலில் முகவர்சார் செயற்கை நுண்ணறிவு\""
     ],
     [
-      "alt=\"Agentic AI in Banking — topic banner\"",
-      "alt=\"வங்கியியலில் முகவர்சார் செயற்கை நுண்ணறிவு — தலைப்புச் சுவரொட்டி\""
-    ],
-    [
       "<h3><a href=\"/ta/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
       "<h3><a href=\"/ta/topics/agentic-ai-banking/index.html\">வங்கியியலில் முகவர்சார் செயற்கை நுண்ணறிவு</a></h3>"
     ],
@@ -955,10 +395,6 @@
     [
       "aria-label=\"Treasury Automation\"",
       "aria-label=\"கருவூல தன்னியக்கம்\""
-    ],
-    [
-      "alt=\"Treasury Automation — topic banner\"",
-      "alt=\"கருவூல தன்னியக்கம் — தலைப்புச் சுவரொட்டி\""
     ],
     [
       "<h3><a href=\"/ta/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
@@ -977,10 +413,6 @@
       "aria-label=\"செயல்பாட்டு நெகிழ்திறனும் DORA-வும்\""
     ],
     [
-      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
-      "alt=\"செயல்பாட்டு நெகிழ்திறனும் DORA-வும் — தலைப்புச் சுவரொட்டி\""
-    ],
-    [
       "<h3><a href=\"/ta/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
       "<h3><a href=\"/ta/topics/operational-resilience-dora/index.html\">செயல்பாட்டு நெகிழ்திறனும் DORA-வும்</a></h3>"
     ],
@@ -995,10 +427,6 @@
     [
       "aria-label=\"Stablecoins &amp; Tokenisation\"",
       "aria-label=\"நிலைநாணயங்களும் டோக்கனாக்கமும்\""
-    ],
-    [
-      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
-      "alt=\"நிலைநாணயங்களும் டோக்கனாக்கமும் — தலைப்புச் சுவரொட்டி\""
     ],
     [
       "<h3><a href=\"/ta/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
@@ -1017,10 +445,6 @@
       "aria-label=\"உருவாக்க செயற்கை நுண்ணறிவும் பெரும் மொழி மாதிரிகளும்\""
     ],
     [
-      "alt=\"Generative AI &amp; LLMs — topic banner\"",
-      "alt=\"உருவாக்க செயற்கை நுண்ணறிவும் பெரும் மொழி மாதிரிகளும் — தலைப்புச் சுவரொட்டி\""
-    ],
-    [
       "<h3><a href=\"/ta/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
       "<h3><a href=\"/ta/topics/generative-ai-llms/index.html\">உருவாக்க செயற்கை நுண்ணறிவும் பெரும் மொழி மாதிரிகளும்</a></h3>"
     ],
@@ -1035,10 +459,6 @@
     [
       "aria-label=\"Voice &amp; Speech AI\"",
       "aria-label=\"குரல் மற்றும் பேச்சு செயற்கை நுண்ணறிவு\""
-    ],
-    [
-      "alt=\"Voice &amp; Speech AI — topic banner\"",
-      "alt=\"குரல் மற்றும் பேச்சு செயற்கை நுண்ணறிவு — தலைப்புச் சுவரொட்டி\""
     ],
     [
       "<h3><a href=\"/ta/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
@@ -1057,10 +477,6 @@
       "aria-label=\"செயற்கை நுண்ணறிவு ஆளுகையும் ஒழுங்குமுறையும்\""
     ],
     [
-      "alt=\"AI Governance &amp; Regulation — topic banner\"",
-      "alt=\"செயற்கை நுண்ணறிவு ஆளுகையும் ஒழுங்குமுறையும் — தலைப்புச் சுவரொட்டி\""
-    ],
-    [
       "<h3><a href=\"/ta/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
       "<h3><a href=\"/ta/topics/ai-governance-regulation/index.html\">செயற்கை நுண்ணறிவு ஆளுகையும் ஒழுங்குமுறையும்</a></h3>"
     ],
@@ -1075,10 +491,6 @@
     [
       "aria-label=\"Wholesale Payments Rails\"",
       "aria-label=\"மொத்த கட்டண தண்டவாளங்கள்\""
-    ],
-    [
-      "alt=\"Wholesale Payments Rails — topic banner\"",
-      "alt=\"மொத்த கட்டண தண்டவாளங்கள் — தலைப்புச் சுவரொட்டி\""
     ],
     [
       "<h3><a href=\"/ta/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",

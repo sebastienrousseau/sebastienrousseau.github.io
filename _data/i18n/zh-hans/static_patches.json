@@ -22,14 +22,6 @@
       "支柱 · 主题"
     ],
     [
-      "PILLAR · PROJECT",
-      "支柱 · 项目"
-    ],
-    [
-      "Curated topic clusters[^<]+",
-      "精心策划的主题集群——选定一条线索，沿着归档继续阅读。"
-    ],
-    [
       "aria-label=\"Post-Quantum Cryptography\"",
       "aria-label=\"后量子密码学\""
     ],
@@ -48,46 +40,6 @@
     [
       "aria-label=\"Blockchain &amp; Digital Assets\"",
       "aria-label=\"区块链 &amp; 数字资产\""
-    ],
-    [
-      "alt=\"Post-Quantum Cryptography — topic banner\"",
-      "alt=\"后量子密码学 — 主题横幅\""
-    ],
-    [
-      "alt=\"ISO 20022 &amp; Payments — topic banner\"",
-      "alt=\"ISO 20022 &amp; 支付 — 主题横幅\""
-    ],
-    [
-      "alt=\"Applied AI in Banking — topic banner\"",
-      "alt=\"银行业中的应用人工智能 — 主题横幅\""
-    ],
-    [
-      "alt=\"Rust &amp; Open Source — topic banner\"",
-      "alt=\"Rust &amp; 开源 — 主题横幅\""
-    ],
-    [
-      "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
-      "alt=\"区块链 &amp; 数字资产 — 主题横幅\""
-    ],
-    [
-      "<h3><a href=\"/fr/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
-      "<h3><a href=\"/zh-hans/zhuti/post-quantum-cryptography/index.html\">后量子密码学</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/fr/topics/iso-20022-payments/[^\"]+\">ISO 20022 &amp; Payments</a></h3>",
-      "<h3><a href=\"/zh-hans/zhuti/iso-20022-payments/index.html\">ISO 20022 &amp; 支付</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/fr/topics/applied-ai-banking/[^\"]+\">Applied AI in Banking</a></h3>",
-      "<h3><a href=\"/zh-hans/zhuti/applied-ai-banking/index.html\">银行业中的应用人工智能</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/fr/topics/rust-open-source/[^\"]+\">Rust &amp; Open Source</a></h3>",
-      "<h3><a href=\"/zh-hans/zhuti/rust-open-source/index.html\">Rust &amp; 开源</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/fr/topics/blockchain-digital-assets/[^\"]+\">Blockchain &amp; Digital Assets</a></h3>",
-      "<h3><a href=\"/zh-hans/zhuti/blockchain-digital-assets/index.html\">区块链 &amp; 数字资产</a></h3>"
     ],
     [
       "<p class=\"newsroom-excerpt\">Lattice-based cryptography, NIST PQC standards, quantum-safe payments,[^<]+</p>",
@@ -116,10 +68,6 @@
     [
       "INDUSTRY WHITE PAPER · EPAA",
       "行业白皮书 · EPAA"
-    ],
-    [
-      "INDUSTRY WHITE PAPER",
-      "行业白皮书"
     ],
     [
       "PUBLICATION · WHITE PAPER",
@@ -186,72 +134,12 @@
       " · 免费下载"
     ],
     [
-      "Free download<",
-      "免费下载<"
-    ],
-    [
-      ">Download<",
-      ">下载<"
-    ],
-    [
-      ">Request access<",
-      ">申请访问<"
-    ],
-    [
       ">English · PDF",
       ">英语 · PDF"
     ],
     [
-      "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-01-\\2\">\\1 年 1 月 \\2 日</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-02-\\2\">\\1 年 2 月 \\2 日</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-03-\\2\">\\1 年 3 月 \\2 日</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-04-\\2\">\\1 年 4 月 \\2 日</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-05-\\2\">\\1 年 5 月 \\2 日</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-06-\\2\">\\1 年 6 月 \\2 日</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-07-\\2\">\\1 年 7 月 \\2 日</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-08-\\2\">\\1 年 8 月 \\2 日</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-09-\\2\">\\1 年 9 月 \\2 日</time>"
-    ],
-    [
       "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
       "<time datetime=\"\\1-09-01\">\\1 年 9 月</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-10-\\2\">\\1 年 10 月 \\2 日</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-11-\\2\">\\1 年 11 月 \\2 日</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-12-\\2\">\\1 年 12 月 \\2 日</time>"
     ],
     [
       ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
@@ -302,22 +190,6 @@
       "\\1<section class=\"qa-a\"><p>共有两条主线。其一为面向 Emerging Payments Association Asia（EPAA）等组织撰写的<strong>行业白皮书</strong>，剖析支付基础设施的结构性转变——最近的研究包括具备密码学意义的量子计算对批发与实时结算通道的影响。其二为<strong>应用研究报告</strong>，聚焦具体的技术议题（例如在 Apple Silicon 上使用 Whisper + Metal Performance Shaders 实现实时语音识别），以单独购买的 PDF 形式发布。</p></section>"
     ],
     [
-      ">How often do you release new papers\\?</summary>",
-      ">您多久发布一次新论文？</summary>"
-    ],
-    [
-      "(<summary[^>]*>您多久发布一次新论文？</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>不定期，更看重质量而非节奏。技术突破出现时，短篇研究笔记会每数周发表一次。白皮书的发布则与行业周期相关（例如监管时间表、EPAA 大会）。</p></section>"
-    ],
-    [
-      ">About EPAA</p>",
-      ">关于 EPAA</p>"
-    ],
-    [
-      "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
-      "<p class=\"book-about\"><strong>Emerging Payments Association Asia（EPAA）</strong>是亚太地区支付行业协会，汇聚银行、清算机构、金融科技公司与监管机构，共同探讨行业的结构性议题。"
-    ],
-    [
       ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
       ">抗量子支付：为何支付行业必须立即行动<"
     ],
@@ -330,40 +202,12 @@
       ">近期研究与分析<"
     ],
     [
-      "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
-      "2025 年 9 月 &middot; Emerging Payments Association Asia（EPAA）"
-    ],
-    [
       ">Quantum computing threatens the cryptographic foundations[^<]+",
       ">量子计算威胁金融服务的密码学根基。从实时支付到跨境结算所依赖的防护，终将被量子计算所淘汰。本份 EPAA 白皮书阐述支付行业为何必须立即行动。"
     ],
     [
-      "2024 &middot; Independent Research &middot;",
-      "2024 &middot; 独立研究 &middot;"
-    ],
-    [
-      ">This independent research paper presents[^<]+",
-      ">本独立研究报告通过 OpenAI Whisper 与 Metal Performance Shaders 优化了 macOS 上的实时语音识别，展示了显著的延迟降低与能效提升。"
-    ],
-    [
-      ">License &amp; pricing<",
-      ">许可与定价<"
-    ],
-    [
-      ">One copy per buyer<",
-      ">每位购买者一份<"
-    ],
-    [
       ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
       ">有问题？<span class=\"qa-headline-soft\"> 有答案。</span>"
-    ],
-    [
-      ">Questions\\? Answers\\.</h2>",
-      ">有问题？有答案。</h2>"
-    ],
-    [
-      ">Questions\\? Answers\\.<",
-      ">有问题？有答案。<"
     ],
     [
       ">Are the white papers free to read\\?</summary>",
@@ -386,10 +230,6 @@
       ">如何关注新出版物？</summary>"
     ],
     [
-      ">Where can I follow new releases\\?</summary>",
-      ">在哪里可以关注新发布？</summary>"
-    ],
-    [
       "(<summary[^>]*>白皮书可免费阅读吗？</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>EPAA 白皮书 <em>Quantum-Safe Payments</em> 可在 <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> 公开免费下载。关于在 macOS 上使用 OpenAI Whisper 与 Metal Performance Shaders 进行实时语音识别的独立研究报告则以授权形式提供，单独购买价为 49.00 美元（英文 PDF，约 95 KB）。每位购买者一份；下载仅供个人使用，不得再分发。</p></section>"
     ],
@@ -410,314 +250,6 @@
       "\\1<section class=\"qa-a\"><p>新文章与研究笔记会通过本站<a href=\"/zh-hans/rss.xml\">RSS 订阅源</a>及 <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> 通讯优先发布，内容涵盖后量子密码学、央行政策与主要支付方案的迁移路线图。无垃圾邮件——仅有更新。</p></section>"
     ],
     [
-      "(<summary[^>]*>在哪里可以关注新发布？</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>订阅 <a href=\"/zh-hans/rss.xml\">RSS 订阅源</a>或在 <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> 上关注我，以获取新出版物的通知。</p></section>"
-    ],
-    [
-      ">Browse all projects<",
-      ">浏览所有项目<"
-    ],
-    [
-      ">Three areas of practice\\.\\s*<span",
-      ">三个实践领域。 <span"
-    ],
-    [
-      ">One philosophy\\.</span>",
-      ">一种理念。</span>"
-    ],
-    [
-      ">WHAT IS INSIDE<",
-      ">内容简介<"
-    ],
-    [
-      ">OPEN SOURCE FOR FINANCIAL SERVICES<",
-      ">面向金融服务的开源<"
-    ],
-    [
-      ">Payments and settlement\\.<",
-      ">支付与结算。<"
-    ],
-    [
-      ">Post-quantum cryptography\\.<",
-      ">后量子密码学。<"
-    ],
-    [
-      ">Tooling and infrastructure\\.<",
-      ">工具与基础设施。<"
-    ],
-    [
-      ">Applied AI\\.<",
-      ">应用人工智能。<"
-    ],
-    [
-      ">Explore payments tools\\s+<",
-      ">浏览支付工具 <"
-    ],
-    [
-      ">Explore quantum-safe libraries\\s+<",
-      ">浏览抗量子库 <"
-    ],
-    [
-      ">Explore developer tools\\s+<",
-      ">浏览开发者工具 <"
-    ],
-    [
-      ">Explore PQC tools\\s+<",
-      ">浏览 PQC 工具 <"
-    ],
-    [
-      ">Explore AI tools\\s+<",
-      ">浏览人工智能工具 <"
-    ],
-    [
-      ">Authored & maintained<",
-      ">作者编写并维护<"
-    ],
-    [
-      ">Authored &amp; maintained<",
-      ">作者编写并维护<"
-    ],
-    [
-      ">Open source for the future of finance\\.<",
-      ">面向金融未来的开源。<"
-    ],
-    [
-      "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\">ISO 20022 <strong>pain.001</strong> 与 <strong>pacs.008</strong> 工具包、银行对账单解析以及面向跨境结构化报文迁移的 Rust 库。专为 SWIFT、SEPA 与实时支付方案而设计。</p>"
-    ],
-    [
-      "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\"><strong>CRYSTALS-Kyber</strong>（NIST FIPS&nbsp;203）的 Rust 实现、哈希原语与抗量子构建模块。为金融认证提供超越 RSA 与椭圆曲线时代的保护。</p>"
-    ],
-    [
-      "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
-      "<p class=\"setup-card-body\">开源 Rust 库，覆盖序列化、日志、代码生成、日期与时间。此外还有构建本站的 <strong>Static Site Generator</strong>（SSG）以及使其可交付的开发环境。</p>"
-    ],
-    [
-      ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
-      ">面向全球迁移的 ISO 20022 工具。Pain.001 文件生成、pacs.008 跨境信用转账以及结构化银行对账单解析。<"
-    ],
-    [
-      ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
-      ">CRYSTALS-Kyber 的 Rust 实现、哈希与摘要原语，以及面向金融级身份认证的抗量子构建模块。<"
-    ],
-    [
-      ">Applied artificial intelligence\\.<",
-      ">应用人工智能。<"
-    ],
-    [
-      ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
-      ">将语音识别、自然语言与大语言模型应用于真实金融与生产力问题的开源人工智能项目。<"
-    ],
-    [
-      ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
-      ">一个 Python 库，可从 CSV 或 SQLite 自动生成 ISO 20022 pain.001 支付文件。为跨境结构化报文的全球迁移而构建。<"
-    ],
-    [
-      ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
-      ">生成、校验并投递 ISO 20022 pacs.008 金融机构间客户信用转账支付报文。JSON Schema + XSD 校验、75 个国家的 IBAN，以及符合 GDPR/PCI-DSS 的个人数据脱敏。<"
-    ],
-    [
-      ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
-      ">一款金融级 Python 工具包，可将多格式银行对账单转换为结构化数据——契合真实世界对账单文件以及受监管环境的审计要求。<"
-    ],
-    [
-      ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
-      ">一款 Rust 应用，借助人工智能驱动的预测，优化复杂基金结构下的现金分配。面向银行与资产管理公司内部的资金管理、基金会计与资产配置场景。<"
-    ],
-    [
-      ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
-      ">一个用于生成与处理多格式二维码图像的 Rust 库。直接支付应用包括 SEPA 转账的 EPC QR、商户收款的支付链接二维码以及增强认证流程。<"
-    ],
-    [
-      ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
-      ">CRYSTALS-Kyber 的稳健 Rust 实现，对应 NIST FIPS 203 通用后量子密钥封装标准。<"
-    ],
-    [
-      ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
-      ">用于密码加密与验证的安全哈希与摘要算法，采用抗量子姿态设计，面向后量子时代。<"
-    ],
-    [
-      ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
-      ">一款快速、简洁、强大的跨平台 CLI，用于生成由经过审计的密码学原语支撑的强随机唯一密码。<"
-    ],
-    [
-      ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
-      ">一款先进的语音助手，使用 OpenAI 的 GPT 实现自然交互、PDF 摘要与高效缓存。兼顾个人与高管使用场景。<"
-    ],
-    [
-      ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
-      ">使用先进的人工智能语音识别将音频实时转换为文本。旨在从音频数据中提炼可行动洞察，并提升客户与运营体验。<"
-    ],
-    [
-      ">Featured · Python · ISO 20022<",
-      ">精选 · Python · ISO 20022<"
-    ],
-    [
-      ">Python · ISO 20022<",
-      ">Python · ISO 20022<"
-    ],
-    [
-      ">Python · Finance<",
-      ">Python · 金融<"
-    ],
-    [
-      ">Rust · Treasury · AI<",
-      ">Rust · 资金管理 · 人工智能<"
-    ],
-    [
-      ">Rust · Payments QR<",
-      ">Rust · 支付 QR<"
-    ],
-    [
-      ">Rust · Quantum<",
-      ">Rust · 量子<"
-    ],
-    [
-      ">Rust · Security<",
-      ">Rust · 安全<"
-    ],
-    [
-      ">AI · Voice<",
-      ">人工智能 · 语音<"
-    ],
-    [
-      ">AI · Speech<",
-      ">人工智能 · 语音<"
-    ],
-    [
-      ">PAYMENTS<",
-      ">支付<"
-    ],
-    [
-      ">POST-QUANTUM CRYPTOGRAPHY<",
-      ">后量子密码学<"
-    ],
-    [
-      ">AI AND VOICE<",
-      ">人工智能与语音<"
-    ],
-    [
-      ">DEVELOPER TOOLING<",
-      ">开发者工具<"
-    ],
-    [
-      ">OPEN-SOURCE RUST<",
-      ">开源 Rust<"
-    ],
-    [
-      ">WEB AND DEVELOPER ENVIRONMENT<",
-      ">Web 与开发环境<"
-    ],
-    [
-      ">Tooling\\.<",
-      ">工具。<"
-    ],
-    [
-      ">Rust libraries and tooling\\.</h2>",
-      ">Rust 库与工具。</h2>"
-    ],
-    [
-      "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
-      "<p class=\"cat-lede\">开源 Rust 项目——涵盖序列化、日志、代码生成、数学与开发者工具，包括本站背后的静态站点生成器。</p>"
-    ],
-    [
-      ">Web, templates and environment\\.</h2>",
-      ">Web、模板与环境。</h2>"
-    ],
-    [
-      "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
-      "<p class=\"cat-lede\">起步模板、两份面向行业的出版物、一套 CSS 框架，以及保持开发环境可复现的 dotfiles。</p>"
-    ],
-    [
-      ">What licence are these projects released under\\?</summary>",
-      ">这些项目以何种许可证发布？</summary>"
-    ],
-    [
-      ">Are these projects production-ready\\?</summary>",
-      ">这些项目可用于生产环境吗？</summary>"
-    ],
-    [
-      ">How can I contribute or report an issue\\?</summary>",
-      ">如何贡献代码或反馈问题？</summary>"
-    ],
-    [
-      ">Can I use these libraries in a regulated banking environment\\?</summary>",
-      ">这些库可用于受监管的银行环境吗？</summary>"
-    ],
-    [
-      ">Do you offer commercial support or consulting\\?</summary>",
-      ">您提供商业支持或咨询服务吗？</summary>"
-    ],
-    [
-      ">How do I follow new releases\\?</summary>",
-      ">如何关注新发布？</summary>"
-    ],
-    [
-      "(<summary[^>]*>这些项目以何种许可证发布？</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>所有项目均以 <strong>Apache-2.0</strong> 许可证发布。每个仓库根目录下的 <code>LICENSE</code> 文件是权威来源。</p></section>"
-    ],
-    [
-      "(<summary[^>]*>这些项目可用于生产环境吗？</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>视项目而定。标记为 <em>v1.x</em> 的库已稳定并经过负载测试；v1 之前的库是稳固的基础，但仍可能演进。每个仓库的 README 会说明当前状态；如需针对生产场景的具体保证，请<a href=\"/zh-hans/lianxi/\">联系我</a>。</p></section>"
-    ],
-    [
-      "(<summary[^>]*>如何贡献代码或反馈问题？</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>每个项目都有公开的 GitHub 仓库，位于 <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>。请开 issue 描述问题（提供最小复现示例尤佳），或在关联 issue 后提交 pull request。贡献遵循 <em>Developer Certificate of Origin</em>，并要求签名提交。</p></section>"
-    ],
-    [
-      "(<summary[^>]*>这些库可用于受监管的银行环境吗？</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>可以，但需遵循惯常的尽职流程。这些库是独立的开源作品，并非受监管产品。在将其部署到任何支付基础设施的生产环境前，请按贵机构常规的供应链、安全与依赖审查流程处理——例如通过内部镜像进行 vendoring、SBOM 扫描、按 Git SHA 或加密指纹固定版本等。</p></section>"
-    ],
-    [
-      "(<summary[^>]*>您提供商业支持或咨询服务吗？</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>提供，按个案筛选。委托范围涵盖 ISO&nbsp;20022 迁移、后量子迁移路线图，以及应用于金融服务的人工智能。请<a href=\"/zh-hans/lianxi/\">联系我</a>，并附简短说明、时间表与相关约束。</p></section>"
-    ],
-    [
-      "(<summary[^>]*>如何关注新发布？</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>本站的每篇带日期文章都会通过 <a href=\"/zh-hans/rss.xml\">RSS 订阅源</a> 与 <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> 通讯发布。各仓库也会在 GitHub 上发布 release，可直接关注。</p></section>"
-    ],
-    [
-      ">GET IN TOUCH<",
-      ">联系我<"
-    ],
-    [
-      ">Have an idea\\? Let's build it\\.<",
-      ">有想法？一起来实现。<"
-    ],
-    [
-      ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
-      ">开源合作、定制工程，或一次关于支付未来的对话——任您选择。<"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">FEATURED</p>",
-      "<p class=\"newsroom-kicker\">精选</p>"
-    ],
-    [
-      "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
-      "aria-label=\"标签：\\1，\\2 篇文章\""
-    ],
-    [
-      "(\\(\\d+) Posts\\)",
-      "\\1 篇文章)"
-    ],
-    [
-      ">Featured Tags \\((\\d+)\\)</h2>",
-      ">精选标签（\\1）</h2>"
-    ],
-    [
-      ">Featured Tags<",
-      ">精选标签<"
-    ],
-    [
-      "<a class=\"pill ghost\" href=\"/fr/contact/\">Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/zh-hans/lianxi/\">联系我</a>"
-    ],
-    [
-      ">Get in touch</a>",
-      ">联系我</a>"
-    ],
-    [
       "Made with Static Site Generator: Rust-Powered SSG",
       "由 Static Site Generator 构建：基于 Rust 的 SSG"
     ],
@@ -730,148 +262,24 @@
       "由 Static Site Generator（SSG）创建的网站"
     ],
     [
-      "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
-      "Static Site Generator（SSG）是一款闪电般快速的工具，兼顾搜索引擎优化（SEO）与无障碍标准合规。"
-    ],
-    [
-      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
-      "主题与标签索引：人工智能、支付、量子、Rust 开源"
-    ],
-    [
       "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
       "按主题与标签浏览 Sebastien Rousseau 的网站：人工智能、支付、ISO 20022、后量子密码学、Rust 开源等。"
-    ],
-    [
-      "Website Accessibility Statement — Standards &amp; Contact",
-      "网站无障碍访问声明 — 标准与联系方式"
     ],
     [
       "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
       "本声明说明本站的无障碍访问情况、我们正在采取的改进措施，以及如何就无障碍议题与我们联系。"
     ],
     [
-      "Privacy Statement — How Your Data Is Collected &amp; Used",
-      "隐私声明 — 您的数据如何被收集与使用"
-    ],
-    [
       "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
       "本页向您告知在使用本网站时，我们关于个人数据收集、使用与披露的政策"
-    ],
-    [
-      "Let's Start a Conversation That Will Make a Real Difference",
-      "让我们开启一场真正有意义的对话"
-    ],
-    [
-      "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
-      "有问题或建议？请通过下方表单与我联系。我很乐意收到您的来信，并会尽快回复。"
-    ],
-    [
-      "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
-      "网站使用条款 — Sebastien Rousseau"
     ],
     [
       "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
       "通过访问本网站，您确认并同意受本使用条款及所有适用法律法规的约束。"
     ],
     [
-      ">Latest research<",
-      ">最新研究<"
-    ],
-    [
-      ">Read latest research<",
-      ">阅读最新研究<"
-    ],
-    [
-      ">Featured articles<",
-      ">精选文章<"
-    ],
-    [
-      ">All articles<",
-      ">所有文章<"
-    ],
-    [
-      ">Read more<",
-      ">阅读更多<"
-    ],
-    [
-      ">Read full article<",
-      ">阅读完整文章<"
-    ],
-    [
-      ">Newest first<",
-      ">最新优先<"
-    ],
-    [
-      ">Oldest first<",
-      ">最早优先<"
-    ],
-    [
-      ">By topic<",
-      ">按主题<"
-    ],
-    [
-      ">All topics<",
-      ">所有主题<"
-    ],
-    [
-      ">By tag<",
-      ">按标签<"
-    ],
-    [
-      ">All tags<",
-      ">所有标签<"
-    ],
-    [
-      ">Published<",
-      ">发布于<"
-    ],
-    [
-      ">Updated<",
-      ">更新于<"
-    ],
-    [
       ">Open source<",
       ">开源<"
-    ],
-    [
-      ">Authored & maintained<",
-      ">作者编写并维护<"
-    ],
-    [
-      ">Open source for the future of finance\\.<",
-      ">面向金融未来的开源。<"
-    ],
-    [
-      ">A portfolio of",
-      ">一组"
-    ],
-    [
-      ">Start a conversation<",
-      ">开启对话<"
-    ],
-    [
-      ">Drop me a line<",
-      ">给我留言<"
-    ],
-    [
-      ">Learn more<",
-      ">了解更多<"
-    ],
-    [
-      ">Subscribe<",
-      ">订阅<"
-    ],
-    [
-      ">Follow<",
-      ">关注<"
-    ],
-    [
-      ">Latest<",
-      ">最新<"
-    ],
-    [
-      "<h1>White Papers (?:&amp;|&) Research</h1>",
-      "<h1>白皮书与研究</h1>"
     ],
     [
       "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
@@ -906,24 +314,12 @@
       "<h1>开发者资料库:银行主题、开源项目与播放列表</h1>"
     ],
     [
-      "<h1>Enterprise AI Financial Technology (?:&amp;|&) Leadership</h1>",
-      "<h1>企业级 AI 金融科技与领导力</h1>"
-    ],
-    [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>出版物已迁移至研究页面</h1>"
     ],
     [
       "aria-label=\"Cloud Native Banking\"",
       "aria-label=\"云原生银行\""
-    ],
-    [
-      "alt=\"Cloud Native Banking — topic banner\"",
-      "alt=\"云原生银行 — 主题横幅\""
-    ],
-    [
-      "<h3><a href=\"/zh-hans/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
-      "<h3><a href=\"/zh-hans/topics/cloud-native-banking/index.html\">云原生银行</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
@@ -938,14 +334,6 @@
       "aria-label=\"银行业中的智能体 AI\""
     ],
     [
-      "alt=\"Agentic AI in Banking — topic banner\"",
-      "alt=\"银行业中的智能体 AI — 主题横幅\""
-    ],
-    [
-      "<h3><a href=\"/zh-hans/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
-      "<h3><a href=\"/zh-hans/topics/agentic-ai-banking/index.html\">银行业中的智能体 AI</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
       "<h3><a href=\"/zh-hans/zhuti/agentic-ai-banking/index.html\">银行业中的智能体 AI</a></h3>"
     ],
@@ -956,14 +344,6 @@
     [
       "aria-label=\"Treasury Automation\"",
       "aria-label=\"资金管理自动化\""
-    ],
-    [
-      "alt=\"Treasury Automation — topic banner\"",
-      "alt=\"资金管理自动化 — 主题横幅\""
-    ],
-    [
-      "<h3><a href=\"/zh-hans/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
-      "<h3><a href=\"/zh-hans/topics/treasury-automation/index.html\">资金管理自动化</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
@@ -978,14 +358,6 @@
       "aria-label=\"运营韧性与 DORA\""
     ],
     [
-      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
-      "alt=\"运营韧性与 DORA — 主题横幅\""
-    ],
-    [
-      "<h3><a href=\"/zh-hans/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
-      "<h3><a href=\"/zh-hans/topics/operational-resilience-dora/index.html\">运营韧性与 DORA</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
       "<h3><a href=\"/zh-hans/zhuti/operational-resilience-dora/index.html\">运营韧性与 DORA</a></h3>"
     ],
@@ -996,14 +368,6 @@
     [
       "aria-label=\"Stablecoins &amp; Tokenisation\"",
       "aria-label=\"稳定币与代币化\""
-    ],
-    [
-      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
-      "alt=\"稳定币与代币化 — 主题横幅\""
-    ],
-    [
-      "<h3><a href=\"/zh-hans/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
-      "<h3><a href=\"/zh-hans/topics/stablecoins-tokenisation/index.html\">稳定币与代币化</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
@@ -1018,14 +382,6 @@
       "aria-label=\"生成式 AI 与大语言模型\""
     ],
     [
-      "alt=\"Generative AI &amp; LLMs — topic banner\"",
-      "alt=\"生成式 AI 与大语言模型 — 主题横幅\""
-    ],
-    [
-      "<h3><a href=\"/zh-hans/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
-      "<h3><a href=\"/zh-hans/topics/generative-ai-llms/index.html\">生成式 AI 与大语言模型</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
       "<h3><a href=\"/zh-hans/zhuti/generative-ai-llms/index.html\">生成式 AI 与大语言模型</a></h3>"
     ],
@@ -1036,14 +392,6 @@
     [
       "aria-label=\"Voice &amp; Speech AI\"",
       "aria-label=\"语音与言语 AI\""
-    ],
-    [
-      "alt=\"Voice &amp; Speech AI — topic banner\"",
-      "alt=\"语音与言语 AI — 主题横幅\""
-    ],
-    [
-      "<h3><a href=\"/zh-hans/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
-      "<h3><a href=\"/zh-hans/topics/voice-speech-ai/index.html\">语音与言语 AI</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
@@ -1058,14 +406,6 @@
       "aria-label=\"AI 治理与监管\""
     ],
     [
-      "alt=\"AI Governance &amp; Regulation — topic banner\"",
-      "alt=\"AI 治理与监管 — 主题横幅\""
-    ],
-    [
-      "<h3><a href=\"/zh-hans/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
-      "<h3><a href=\"/zh-hans/topics/ai-governance-regulation/index.html\">AI 治理与监管</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
       "<h3><a href=\"/zh-hans/zhuti/ai-governance-regulation/index.html\">AI 治理与监管</a></h3>"
     ],
@@ -1076,14 +416,6 @@
     [
       "aria-label=\"Wholesale Payments Rails\"",
       "aria-label=\"大额支付轨道\""
-    ],
-    [
-      "alt=\"Wholesale Payments Rails — topic banner\"",
-      "alt=\"大额支付轨道 — 主题横幅\""
-    ],
-    [
-      "<h3><a href=\"/zh-hans/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
-      "<h3><a href=\"/zh-hans/topics/wholesale-payments-rails/index.html\">大额支付轨道</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",

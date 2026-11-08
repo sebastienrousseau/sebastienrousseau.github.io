@@ -20,9 +20,15 @@ from pathlib import Path
 
 import _playlist_copy as _pl
 
+_sys.path.insert(0, str(_Path(__file__).resolve().parent))
+import design_system as _ds  # design system v2, see module docstring
+
 ROOT = Path(__file__).resolve().parents[2]
 LAYOUTS = ROOT / "_layouts"
-INDEX = (LAYOUTS / "index.html").read_text()
+# Strip any design-system wrapper so TOP/BOTTOM are the raw shell: every
+# layout gets the wrapper re-applied in write(), after its page-scoped CSS
+# has been appended, so that CSS always lands inside @layer legacy.
+INDEX = _ds.strip((LAYOUTS / "index.html").read_text())
 
 
 _FOOTER_NEWSLETTER = """        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Newsletter signup">
@@ -78,19 +84,19 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       .speaking-page section{padding-block:clamp(44px,6vw,82px)}
       .speaking-page .spk-band{background:var(--spk-band);border-block:1px solid var(--spk-line)}
       .speaking-page h1,.speaking-page h2,.speaking-page h3{font-family:var(--spk-serif);font-weight:500;line-height:1.07;letter-spacing:-.01em;color:var(--ink)}
-      .speaking-page h1{font-size:clamp(2.4rem,5.2vw,4.1rem);margin:0 0 1.3rem}
-      .speaking-page h2{font-size:clamp(1.8rem,3.3vw,2.8rem);letter-spacing:-.015em;margin:0}
-      .speaking-page h3{font-size:1.26rem;line-height:1.2;margin:0}
+      .speaking-page h1{font-size:var(--fs-h1);margin:0 0 1.3rem;line-height:1.08}
+      .speaking-page h2{font-size:var(--fs-h2);letter-spacing:-.015em;margin:0;line-height:var(--lh-heading)}
+      .speaking-page h3{font-size:var(--fs-h3);line-height:1.18;margin:0}
       .speaking-page p{color:var(--ink-soft);margin:0}
-      .speaking-page .spk-lede{font-size:clamp(1.04rem,1.4vw,1.2rem);color:var(--ink-soft);line-height:1.6;max-width:62ch}
-      .speaking-page .spk-eyebrow{font-family:var(--spk-mono);font-size:.76rem;font-weight:600;text-transform:uppercase;letter-spacing:.13em;color:var(--spk-blue);display:block;margin-block-end:1rem}
+      .speaking-page .spk-lede{font-size:var(--fs-lead);color:var(--ink-soft);line-height:var(--lh-lead);max-width:62ch}
+      .speaking-page .spk-eyebrow{font-family:var(--spk-mono);font-size:var(--fs-micro);font-weight:600;text-transform:uppercase;letter-spacing:var(--track-micro);color:var(--spk-blue);display:block;margin-block-end:1rem}
       .speaking-page .spk-mono{font-family:var(--spk-mono);font-size:.86em;letter-spacing:-.01em;color:var(--spk-blue)}
       .speaking-page .spk-head{max-width:64ch}
       .speaking-page .spk-head.spk-center{margin-inline:auto;text-align:center}
       .speaking-page .spk-head.spk-center .spk-lede{margin-inline:auto}
       .speaking-page .spk-head p{margin-block-start:.9rem}
       /* buttons */
-      .speaking-page .spk-btn{display:inline-flex;align-items:center;gap:.5em;font-family:var(--spk-sans);font-size:.95rem;font-weight:500;padding:.8em 1.5em;border-radius:7px;border:1px solid transparent;cursor:pointer;text-align:center;transition:background .18s,color .18s,border-color .18s,transform .18s}
+      .speaking-page .spk-btn{display:inline-flex;align-items:center;gap:.5em;font-family:var(--spk-sans);font-size:var(--fs-ui);font-weight:500;padding:.8em 1.5em;border-radius:7px;border:1px solid transparent;cursor:pointer;text-align:center;transition:background .18s,color .18s,border-color .18s,transform .18s}
       .speaking-page .spk-btn-primary{background:var(--spk-blue);color:var(--bg)}
       .speaking-page .spk-btn-primary:hover{filter:brightness(.92)}
       .speaking-page .spk-btn-ghost{background:transparent;color:var(--ink);border-color:var(--spk-line-strong)}
@@ -104,23 +110,23 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       .speaking-page .spk-hero-grid{max-width:var(--frame-wide);margin-inline:auto;padding-inline:var(--gutter);display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,5vw,64px);align-items:center}
       .speaking-page .spk-hero .spk-lede{margin-block:0 1.7rem}
       .speaking-page .spk-cta-row{display:flex;flex-wrap:wrap;gap:.8rem;margin-block-end:1.1rem}
-      .speaking-page .spk-press-nudge{font-size:.9rem;color:var(--ink-faint)}
+      .speaking-page .spk-press-nudge{font-size:var(--fs-meta);color:var(--ink-faint)}
       .speaking-page .spk-press-nudge a{color:var(--ink-soft)}
-      .speaking-page .spk-microproof{margin-block-start:1.6rem;padding-block-start:1.4rem;border-block-start:1px solid var(--spk-line);font-size:.88rem;color:var(--ink-faint);line-height:1.6}
+      .speaking-page .spk-microproof{margin-block-start:1.6rem;padding-block-start:1.4rem;border-block-start:1px solid var(--spk-line);font-size:var(--fs-meta);color:var(--ink-faint);line-height:1.6}
       .speaking-page .spk-microproof strong{color:var(--ink-soft);font-weight:500}
       .speaking-page .spk-hero-photo{border-radius:12px;overflow:hidden;background:var(--bg-alt);border:1px solid var(--spk-line-strong);aspect-ratio:4/5}
       .speaking-page .spk-hero-photo img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;filter:grayscale(1) contrast(1.03)}
       @media (max-width:860px){.speaking-page .spk-hero-grid{grid-template-columns:1fr}.speaking-page .spk-hero-photo{max-width:420px;aspect-ratio:16/11}}
       /* proof strip */
       .speaking-page .spk-strip{padding-block:clamp(28px,4vw,42px);border-block-start:1px solid var(--spk-line)}
-      .speaking-page .spk-strip-label{font-family:var(--spk-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--ink-mute);margin-block-end:1rem}
+      .speaking-page .spk-strip-label{font-family:var(--spk-mono);font-size:var(--fs-micro);text-transform:uppercase;letter-spacing:.14em;color:var(--ink-mute);margin-block-end:1rem}
       .speaking-page .spk-logos{display:flex;flex-wrap:wrap;gap:1.3rem 2.4rem;align-items:center}
-      .speaking-page .spk-logos span{font-family:var(--spk-serif);font-size:1.02rem;color:var(--ink-faint);font-weight:500}
+      .speaking-page .spk-logos span{font-family:var(--spk-serif);font-size:var(--fs-body);color:var(--ink-faint);font-weight:500}
       /* stats */
       .speaking-page .spk-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,36px);text-align:center}
-      .speaking-page .spk-num{font-family:var(--spk-serif);font-size:clamp(2.1rem,3.4vw,2.9rem);font-weight:500;color:var(--ink);letter-spacing:-.02em;line-height:1}
-      .speaking-page .spk-lbl{font-family:var(--spk-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-mute);margin-block-start:.7rem}
-      .speaking-page .spk-stats-foot{margin-block-start:2.1rem;text-align:center;font-size:.86rem;color:var(--ink-faint);line-height:1.6;max-width:70ch;margin-inline:auto}
+      .speaking-page .spk-num{font-family:var(--spk-serif);font-size:var(--fs-stat);font-weight:500;color:var(--ink);letter-spacing:-.02em;line-height:1}
+      .speaking-page .spk-lbl{font-family:var(--spk-mono);font-size:var(--fs-micro);text-transform:uppercase;letter-spacing:var(--track-micro);color:var(--ink-mute);margin-block-start:.7rem;font-weight:600}
+      .speaking-page .spk-stats-foot{margin-block-start:2.1rem;text-align:center;font-size:var(--fs-meta);color:var(--ink-faint);line-height:1.6;max-width:70ch;margin-inline:auto}
       @media (max-width:640px){.speaking-page .spk-stats{grid-template-columns:repeat(2,1fr);gap:30px 20px}}
       /* two paths */
       .speaking-page .spk-paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-block-start:2.6rem}
@@ -129,9 +135,9 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       .speaking-page .spk-path{border:1px solid var(--spk-line);border-radius:12px;padding:clamp(24px,3vw,36px);background:var(--card);display:flex;flex-direction:column}
       .speaking-page .spk-path .spk-eyebrow{margin-block-end:.8rem}
       .speaking-page .spk-path h3{margin-block-end:.7rem}
-      .speaking-page .spk-path p{font-size:.98rem;margin-block-end:1.3rem}
+      .speaking-page .spk-path p{font-size:var(--fs-small);margin-block-end:1.3rem}
       .speaking-page .spk-path ul{list-style:none;margin-block-end:1.5rem;padding:0}
-      .speaking-page .spk-path li{font-size:.92rem;color:var(--ink-soft);padding-inline-start:1.3em;position:relative;margin-block-end:.5em}
+      .speaking-page .spk-path li{font-size:var(--fs-small);color:var(--ink-soft);padding-inline-start:1.3em;position:relative;margin-block-end:.5em}
       .speaking-page .spk-path li::before{content:"·";position:absolute;inset-inline-start:0;color:var(--spk-blue);font-family:var(--spk-mono);font-weight:700}
       .speaking-page .spk-path .spk-btn{margin-block-start:auto;align-self:flex-start}
       @media (max-width:760px){.speaking-page .spk-paths{grid-template-columns:1fr}}
@@ -139,14 +145,14 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       .speaking-page .spk-talks{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-block-start:2.7rem}
       .speaking-page .spk-talk{border:1px solid var(--spk-line);border-radius:12px;background:var(--card);padding:clamp(22px,2.4vw,30px);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s,border-color .2s}
       .speaking-page .spk-talk:hover{transform:translateY(-3px);box-shadow:0 14px 34px -18px rgba(13,27,42,.28);border-color:var(--spk-line-strong)}
-      .speaking-page .spk-flag{font-family:var(--spk-mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.12em;color:var(--spk-green);margin-block-end:.9rem}
+      .speaking-page .spk-flag{font-family:var(--spk-mono);font-size:var(--fs-micro);text-transform:uppercase;letter-spacing:.12em;color:var(--spk-green);margin-block-end:.9rem}
       .speaking-page .spk-flag-new{color:var(--spk-blue)}
       .speaking-page .spk-talk h3{margin-block-end:.85rem}
-      .speaking-page .spk-desc{font-size:.93rem;line-height:1.55;margin-block-end:1.1rem}
-      .speaking-page .spk-outcome{font-size:.88rem;color:var(--ink);border-inline-start:2px solid var(--spk-blue);padding-inline-start:.85em;margin-block-end:1.2rem;line-height:1.5}
+      .speaking-page .spk-desc{font-size:var(--fs-small);line-height:1.55;margin-block-end:1.1rem}
+      .speaking-page .spk-outcome{font-size:var(--fs-meta);color:var(--ink);border-inline-start:2px solid var(--spk-blue);padding-inline-start:.85em;margin-block-end:1.2rem;line-height:1.5}
       .speaking-page .spk-outcome b{font-weight:600}
       .speaking-page .spk-talk-foot{margin-block-start:auto;padding-block-start:1.1rem;border-block-start:1px solid var(--spk-line)}
-      .speaking-page .spk-audience{font-family:var(--spk-mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-mute);line-height:1.5}
+      .speaking-page .spk-audience{font-family:var(--spk-mono);font-size:var(--fs-micro);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-mute);line-height:1.5}
       .speaking-page .spk-talk-cta{background:transparent;border-style:dashed;justify-content:center;align-items:flex-start}
       .speaking-page .spk-talk-cta .spk-desc{margin-block-end:1.4rem}
       @media (max-width:900px){.speaking-page .spk-talks{grid-template-columns:1fr 1fr}}
@@ -155,11 +161,11 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       .speaking-page .spk-formats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-block-start:2.4rem;border:1px solid var(--spk-line);border-radius:12px;overflow:hidden;background:var(--card)}
       .speaking-page .spk-format{padding:clamp(24px,3vw,34px);border-inline-end:1px solid var(--spk-line)}
       .speaking-page .spk-format:last-child{border-inline-end:0}
-      .speaking-page .spk-format h3{font-size:1.14rem;margin-block-end:.4rem}
-      .speaking-page .spk-dur{font-family:var(--spk-mono);font-size:.8rem;color:var(--spk-blue);margin-block-end:.9rem}
-      .speaking-page .spk-format p{font-size:.9rem}
+      .speaking-page .spk-format h3{font-size:var(--fs-h4);margin-block-end:.4rem}
+      .speaking-page .spk-dur{font-family:var(--spk-mono);font-size:var(--fs-micro);color:var(--spk-blue);margin-block-end:.9rem}
+      .speaking-page .spk-format p{font-size:var(--fs-meta)}
       .speaking-page .spk-locs{margin-block-start:1.8rem;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center}
-      .speaking-page .spk-chip{font-family:var(--spk-mono);font-size:.74rem;color:var(--ink-soft);border:1px solid var(--spk-line-strong);border-radius:20px;padding:.4em 1em}
+      .speaking-page .spk-chip{font-family:var(--spk-mono);font-size:var(--fs-micro);color:var(--ink-soft);border:1px solid var(--spk-line-strong);border-radius:20px;padding:.4em 1em;text-transform:uppercase;font-weight:600;letter-spacing:var(--track-micro)}
       @media (max-width:720px){.speaking-page .spk-formats{grid-template-columns:1fr}.speaking-page .spk-format{border-inline-end:0;border-block-end:1px solid var(--spk-line)}.speaking-page .spk-format:last-child{border-block-end:0}}
       /* press & media: deliberately branded dark-blue panel in both themes.
          Band-scoped tokens (global theme tokens flip with the theme, so they
@@ -170,17 +176,17 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       .speaking-page .spk-media h2{color:#fff}
       .speaking-page .spk-media .spk-eyebrow{color:#8fb4e4}
       .speaking-page .spk-media-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,48px);margin-block-start:2rem;align-items:start}
-      .speaking-page .spk-avail{display:inline-flex;align-items:center;gap:.6em;font-family:var(--spk-mono);font-size:.82rem;letter-spacing:.04em;color:#cfe0f5;margin-block-end:1.2rem}
+      .speaking-page .spk-avail{display:inline-flex;align-items:center;gap:.6em;font-family:var(--spk-mono);font-size:var(--fs-meta);letter-spacing:.04em;color:#cfe0f5;margin-block-end:1.2rem}
       .speaking-page .spk-dot{width:9px;height:9px;border-radius:50%;background:#2ecc80;box-shadow:0 0 0 0 rgba(31,138,91,.6);animation:spkpulse 2.4s infinite}
       .speaking-page .spk-dot-static{animation:none;box-shadow:none}
       @keyframes spkpulse{0%{box-shadow:0 0 0 0 rgba(31,138,91,.55)}70%{box-shadow:0 0 0 10px rgba(31,138,91,0)}100%{box-shadow:0 0 0 0 rgba(31,138,91,0)}}
       @media (prefers-reduced-motion:reduce){.speaking-page .spk-dot{animation:none}}
       .speaking-page .spk-media p{color:#c3d2e6}
-      .speaking-page .spk-spec{font-family:var(--spk-mono);font-size:.82rem;color:#9fbce0;margin-block-start:1.4rem;line-height:1.9}
+      .speaking-page .spk-spec{font-family:var(--spk-mono);font-size:var(--fs-meta);color:#9fbce0;margin-block-start:1.4rem;line-height:1.9}
       .speaking-page .spk-media-topics{list-style:none;margin:0;padding:0}
-      .speaking-page .spk-media-topics li{padding-block:.85em;border-block-end:1px solid rgba(255,255,255,.12);font-size:.97rem;color:#e4ecf6;display:flex;gap:.7em;align-items:baseline}
+      .speaking-page .spk-media-topics li{padding-block:.85em;border-block-end:1px solid rgba(255,255,255,.12);font-size:var(--fs-small);color:#e4ecf6;display:flex;gap:.7em;align-items:baseline}
       .speaking-page .spk-media-topics li:last-child{border-block-end:0}
-      .speaking-page .spk-tag{font-family:var(--spk-mono);font-size:.66rem;color:#7fa8da;text-transform:uppercase;letter-spacing:.1em;white-space:nowrap;padding-block-start:.15em}
+      .speaking-page .spk-tag{font-family:var(--spk-mono);font-size:var(--fs-micro);color:#7fa8da;text-transform:uppercase;letter-spacing:var(--track-micro);white-space:nowrap;padding-block-start:.15em;font-weight:600}
       .speaking-page .spk-media .spk-mono{color:#bcd4f2}
       .speaking-page .spk-media-actions{margin-block-start:1.7rem;display:flex;flex-wrap:wrap;gap:.8rem}
       .speaking-page .spk-btn-onblue{background:var(--spk-media-chip);color:var(--spk-media-bg);border-color:var(--spk-media-chip)}
@@ -190,15 +196,15 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       .speaking-page .spk-bio-grid{display:grid;grid-template-columns:220px 1fr;gap:clamp(28px,4vw,56px);align-items:start;margin-block-start:2rem}
       .speaking-page .spk-bio-photo{aspect-ratio:1;border-radius:10px;overflow:hidden;background:var(--bg-alt);border:1px solid var(--spk-line-strong)}
       .speaking-page .spk-bio-photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.03)}
-      .speaking-page .spk-bio-body p{margin-block-end:1.1rem;font-size:1.02rem;color:var(--ink-soft)}
+      .speaking-page .spk-bio-body p{margin-block-end:1.1rem;font-size:var(--fs-body);color:var(--ink-soft)}
       .speaking-page .spk-bio-body p:last-child{margin-block-end:0}
       @media (max-width:640px){.speaking-page .spk-bio-grid{grid-template-columns:1fr;max-width:440px}}
       /* ready-to-use bios */
       .speaking-page .spk-bios{display:grid;gap:16px;margin-block-start:2.4rem}
       .speaking-page .spk-biocard{border:1px solid var(--spk-line);border-radius:12px;background:var(--card);padding:clamp(22px,2.6vw,30px);position:relative}
-      .speaking-page .spk-len{font-family:var(--spk-mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.13em;color:var(--spk-blue);margin-block-end:.9rem}
-      .speaking-page .spk-biocard p{font-size:.95rem;line-height:1.6;color:var(--ink);padding-inline-end:5.5rem}
-      .speaking-page .spk-copybtn{position:absolute;inset-block-start:clamp(22px,2.6vw,30px);inset-inline-end:clamp(22px,2.6vw,30px);font-family:var(--spk-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);background:var(--spk-band);border:1px solid var(--spk-line-strong);border-radius:6px;padding:.5em .9em;cursor:pointer;transition:border-color .15s,color .15s}
+      .speaking-page .spk-len{font-family:var(--spk-mono);font-size:var(--fs-micro);text-transform:uppercase;letter-spacing:.13em;color:var(--spk-blue);margin-block-end:.9rem}
+      .speaking-page .spk-biocard p{font-size:var(--fs-small);line-height:1.6;color:var(--ink);padding-inline-end:5.5rem}
+      .speaking-page .spk-copybtn{position:absolute;inset-block-start:clamp(22px,2.6vw,30px);inset-inline-end:clamp(22px,2.6vw,30px);font-family:var(--spk-mono);font-size:var(--fs-micro);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);background:var(--spk-band);border:1px solid var(--spk-line-strong);border-radius:6px;padding:.5em .9em;cursor:pointer;transition:border-color .15s,color .15s}
       .speaking-page .spk-copybtn:hover{border-color:var(--ink);color:var(--ink)}
       @media (max-width:560px){.speaking-page .spk-biocard p{padding-inline-end:0;margin-block-start:.4rem}.speaking-page .spk-copybtn{position:static;margin-block-end:.8rem}}
       /* FAQ: canonical .qa accordion (see the shared .qa-item rules); only
@@ -209,10 +215,10 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       .speaking-page .spk-book-intro .spk-lede{margin-block:.9rem 1.6rem}
       .speaking-page .spk-book-aside .spk-eyebrow{margin-block-end:.9rem}
       .speaking-page .spk-book-aside h3{margin-block-end:.8rem}
-      .speaking-page .spk-book-aside p{font-size:.96rem;margin-block-end:1.2rem}
+      .speaking-page .spk-book-aside p{font-size:var(--fs-small);margin-block-end:1.2rem}
       .speaking-page .spk-book-aside .spk-avail{color:var(--ink-soft)}
       .speaking-page .spk-aside-list{list-style:none;margin-block-start:1rem;padding:0}
-      .speaking-page .spk-aside-list li{font-size:.9rem;color:var(--ink-soft);padding-block:.7em;border-block-start:1px solid var(--spk-line);display:flex;justify-content:space-between;gap:1rem}
+      .speaking-page .spk-aside-list li{font-size:var(--fs-meta);color:var(--ink-soft);padding-block:.7em;border-block-start:1px solid var(--spk-line);display:flex;justify-content:space-between;gap:1rem}
       .speaking-page .spk-aside-list li b{color:var(--ink);font-weight:500}
       @media (max-width:820px){.speaking-page .spk-booking-grid{grid-template-columns:1fr}}
       /* final CTA */
@@ -229,8 +235,8 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
          and the terminal top edge is on-screen at 390x844. */
       .iso20022-mcp-page .spk-hero{margin-block-start:clamp(8px,1.5vw,20px);padding-block:clamp(16px,2.5vw,32px) clamp(20px,3vw,40px)}
       .iso20022-mcp-page .spk-hero-grid{grid-template-columns:1fr;gap:clamp(20px,3vw,40px)}
-      .iso20022-mcp-page .spk-hero h1{font-size:clamp(2.5rem,6vw,4.1rem);line-height:1.05;letter-spacing:-.022em;font-weight:600;max-width:22ch;text-wrap:balance}
-      .iso20022-mcp-page .spk-hero .spk-lede{font-size:clamp(1.12rem,1.8vw,1.4rem);line-height:1.45;color:var(--ink-soft);max-width:46ch}
+      .iso20022-mcp-page .spk-hero h1{font-size:var(--fs-h1);line-height:1.08;letter-spacing:-.022em;font-weight:600;max-width:22ch;text-wrap:balance}
+      .iso20022-mcp-page .spk-hero .spk-lede{font-size:var(--fs-lead);line-height:var(--lh-lead);color:var(--ink-soft);max-width:46ch}
       /* Stacked (<1100px): the terminal sits directly under the CTA row;
          min-width:0 lets the figure shrink inside the grid track and keep
          its own inner overflow-x scroll for the long typed lines. */
@@ -246,10 +252,10 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       .iso20022-mcp-page .mcp-band-img{width:100%;border-radius:18px;aspect-ratio:16/6;object-fit:cover;display:block;background:var(--bg-alt)}
       .iso20022-mcp-page .mcp-band-img-tall{width:100%;border-radius:18px;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--bg-alt)}
       .iso20022-mcp-page .spk-head{max-width:42ch}
-      .iso20022-mcp-page .spk-head h2{font-size:clamp(1.7rem,3.4vw,2.5rem);line-height:1.1;letter-spacing:-.016em;font-weight:600;text-wrap:balance}
+      .iso20022-mcp-page .spk-head h2{font-size:var(--fs-h2);line-height:var(--lh-heading);letter-spacing:-.016em;font-weight:600;text-wrap:balance}
       .iso20022-mcp-page .spk-paths{gap:clamp(16px,1.6vw,22px)}
       .iso20022-mcp-page .spk-path{background:var(--bg-alt);border:0;border-radius:18px;padding:clamp(28px,3.2vw,44px)}
-      .iso20022-mcp-page .spk-path h3{font-size:1.3rem;letter-spacing:-.01em;margin-block:.15rem .5rem}
+      .iso20022-mcp-page .spk-path h3,.speaking-page .spk-path h3{font-size:var(--fs-h4);letter-spacing:-.01em;margin-block:.15rem .5rem}
       .iso20022-mcp-page .mcp-icon{display:block;width:34px;height:34px;color:var(--ink);margin-block-end:1.15rem}
       .iso20022-mcp-page .mcp-icon svg{width:100%;height:100%;stroke:currentColor;fill:none}
       .iso20022-mcp-page .spk-band{background:transparent;color:inherit;border-radius:0;padding:0}
@@ -267,19 +273,19 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
          16.8/16.6, --spk-blue on --bg-alt 7.0/8.9. */
       .iso20022-mcp-page .mcp-flow{list-style:none;margin:2.6rem 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,1.6vw,22px)}
       .iso20022-mcp-page .mcp-step{min-width:0;position:relative;background:var(--bg-alt);border:2px solid transparent;border-radius:18px;padding:clamp(24px,2.6vw,36px)}
-      .iso20022-mcp-page .mcp-step-num{font-family:var(--spk-mono);font-size:.78rem;letter-spacing:.12em;color:var(--ink-soft);display:block;margin-block-end:.9rem}
-      .iso20022-mcp-page .mcp-step h3{font-size:1.16rem;margin-block-end:.55rem}
-      .iso20022-mcp-page .mcp-step p{font-size:.92rem;color:var(--ink-soft);margin:0}
+      .iso20022-mcp-page .mcp-step-num{font-family:var(--spk-mono);font-size:var(--fs-micro);letter-spacing:var(--track-micro);color:var(--ink-soft);display:block;margin-block-end:.9rem;text-transform:uppercase;font-weight:600}
+      .iso20022-mcp-page .mcp-step h3{font-size:var(--fs-h4);margin-block-end:.55rem;line-height:var(--lh-card)}
+      .iso20022-mcp-page .mcp-step p{font-size:var(--fs-small);color:var(--ink-soft);margin:0}
       .iso20022-mcp-page .mcp-step-gate{border-color:var(--spk-blue)}
-      .iso20022-mcp-page .mcp-gate-badge{position:absolute;inset-block-start:-.8em;inset-inline-start:clamp(24px,2.6vw,36px);background:var(--spk-blue);color:var(--bg);font-family:var(--spk-mono);font-size:.62rem;font-weight:600;text-transform:uppercase;letter-spacing:.12em;padding:.35em .9em;border-radius:20px}
+      .iso20022-mcp-page .mcp-gate-badge{position:absolute;inset-block-start:-.8em;inset-inline-start:clamp(24px,2.6vw,36px);background:var(--spk-blue);color:var(--bg);font-family:var(--spk-mono);font-size:var(--fs-micro);font-weight:600;text-transform:uppercase;letter-spacing:var(--track-micro);padding:.35em .9em;border-radius:20px}
       @media (max-width:980px){.iso20022-mcp-page .mcp-flow{grid-template-columns:1fr 1fr}}
       @media (max-width:560px){.iso20022-mcp-page .mcp-flow{grid-template-columns:1fr}}
       /* --- MCP hub: security strip */
       .iso20022-mcp-page .mcp-sec{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.4vw,32px);margin-block-start:2.4rem}
       .iso20022-mcp-page .mcp-sec-cell .mcp-icon{width:28px;height:28px;margin-block-end:.9rem}
       .iso20022-mcp-page .mcp-sec-cell .spk-eyebrow{margin-block-end:.5rem}
-      .iso20022-mcp-page .mcp-sec-cell h3{font-size:1.1rem;margin-block-end:.5rem}
-      .iso20022-mcp-page .mcp-sec-cell p{font-size:.9rem;color:var(--ink-soft);margin:0}
+      .iso20022-mcp-page .mcp-sec-cell h3{font-size:var(--fs-h4);margin-block-end:.5rem;line-height:var(--lh-card)}
+      .iso20022-mcp-page .mcp-sec-cell p{font-size:var(--fs-small);color:var(--ink-soft);margin:0}
       @media (max-width:860px){.iso20022-mcp-page .mcp-sec{grid-template-columns:1fr 1fr}}
       @media (max-width:520px){.iso20022-mcp-page .mcp-sec{grid-template-columns:1fr}}
       /* --- MCP hub: code blocks + copy affordance */
@@ -302,12 +308,12 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       @media (min-width:901px){.iso20022-mcp-page .mcp-clients:not(.mcp-clients-3) > .mcp-client:last-child:nth-child(odd){grid-column:1 / -1}}
       .iso20022-mcp-page .mcp-clients-3{grid-template-columns:repeat(3,minmax(0,1fr));margin-block-start:1.2rem}
       .iso20022-mcp-page .mcp-client{min-width:0;background:var(--bg-alt);border-radius:18px;padding:clamp(22px,2.6vw,32px);display:flex;flex-direction:column;gap:.6rem}
-      .iso20022-mcp-page .mcp-client h3{font-size:1.12rem;margin:0}
-      .iso20022-mcp-page .mcp-client-where{font-size:.88rem;color:var(--ink-soft);margin:0 0 .4rem}
+      .iso20022-mcp-page .mcp-client h3{font-size:var(--fs-h4);margin:0;line-height:var(--lh-card)}
+      .iso20022-mcp-page .mcp-client-where{font-size:var(--fs-meta);color:var(--ink-soft);margin:0 0 .4rem}
       .iso20022-mcp-page .mcp-client p{margin:0}
-      .iso20022-mcp-page .mcp-client-remote p{font-size:.92rem;color:var(--ink-soft)}
-      .iso20022-mcp-page .mcp-clients-label{font-family:var(--spk-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--ink-faint);margin-block:2.2rem .2rem}
-      .iso20022-mcp-page .mcp-clients-foot{margin-block-start:1.6rem;font-size:.86rem;color:var(--ink-faint)}
+      .iso20022-mcp-page .mcp-client-remote p{font-size:var(--fs-small);color:var(--ink-soft)}
+      .iso20022-mcp-page .mcp-clients-label{font-family:var(--spk-mono);font-size:var(--fs-micro);text-transform:uppercase;letter-spacing:var(--track-micro);color:var(--ink-faint);margin-block:2.2rem .2rem;font-weight:600}
+      .iso20022-mcp-page .mcp-clients-foot{margin-block-start:1.6rem;font-size:var(--fs-meta);color:var(--ink-faint)}
       @media (max-width:900px){.iso20022-mcp-page .mcp-clients,.iso20022-mcp-page .mcp-clients-3{grid-template-columns:1fr}}
       /* --- MCP hub: CSS-only install tabs (radio inputs; :checked drives
          the visible panel; radios stay keyboard-focusable; progressively
@@ -315,36 +321,36 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       .iso20022-mcp-page .mcp-tabs{margin-block-start:2.2rem}
       .iso20022-mcp-page .mcp-tab-in{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%)}
       .iso20022-mcp-page .mcp-tab-labels{display:flex;flex-wrap:wrap;gap:.5rem;border-block-end:1px solid var(--spk-line);margin-block-end:1.2rem}
-      .iso20022-mcp-page .mcp-tab-labels label,.iso20022-mcp-page .mcp-tab-labels [role="tab"]{font-family:var(--spk-sans);font-size:.92rem;font-weight:500;color:var(--ink-soft);padding:.7em 1.1em;border-block-end:2px solid transparent;cursor:pointer;background:transparent;border-block-start:0;border-inline:0;min-height:44px;display:inline-flex;align-items:center}
+      .iso20022-mcp-page .mcp-tab-labels label,.iso20022-mcp-page .mcp-tab-labels [role="tab"]{font-family:var(--spk-sans);font-size:var(--fs-ui);font-weight:500;color:var(--ink-soft);padding:.7em 1.1em;border-block-end:2px solid transparent;cursor:pointer;background:transparent;border-block-start:0;border-inline:0;min-height:44px;display:inline-flex;align-items:center}
       .iso20022-mcp-page .mcp-tab-labels label:hover,.iso20022-mcp-page .mcp-tab-labels [role="tab"]:hover{color:var(--ink)}
       .iso20022-mcp-page .mcp-tab-labels [role="tab"][aria-selected="true"],.iso20022-mcp-page #mcp-tab-uvx:checked~.mcp-tab-labels label[for="mcp-tab-uvx"],.iso20022-mcp-page #mcp-tab-pip:checked~.mcp-tab-labels label[for="mcp-tab-pip"],.iso20022-mcp-page #mcp-tab-json:checked~.mcp-tab-labels label[for="mcp-tab-json"],.iso20022-mcp-page #mcp-tab-claude-code:checked~.mcp-tab-labels label[for="mcp-tab-claude-code"],.iso20022-mcp-page #mcp-tab-claude-desktop:checked~.mcp-tab-labels label[for="mcp-tab-claude-desktop"],.iso20022-mcp-page #mcp-tab-cursor:checked~.mcp-tab-labels label[for="mcp-tab-cursor"],.iso20022-mcp-page #mcp-tab-windsurf:checked~.mcp-tab-labels label[for="mcp-tab-windsurf"],.iso20022-mcp-page #mcp-tab-vscode:checked~.mcp-tab-labels label[for="mcp-tab-vscode"],.iso20022-mcp-page #mcp-tab-gemini:checked~.mcp-tab-labels label[for="mcp-tab-gemini"],.iso20022-mcp-page #mcp-tab-codex:checked~.mcp-tab-labels label[for="mcp-tab-codex"],.iso20022-mcp-page #mcp-tab-agents:checked~.mcp-tab-labels label[for="mcp-tab-agents"]{color:var(--ink);border-block-end-color:var(--spk-blue)}
       .iso20022-mcp-page .mcp-tab-labels [role="tab"]:focus-visible,.iso20022-mcp-page #mcp-tab-uvx:focus-visible~.mcp-tab-labels label[for="mcp-tab-uvx"],.iso20022-mcp-page #mcp-tab-pip:focus-visible~.mcp-tab-labels label[for="mcp-tab-pip"],.iso20022-mcp-page #mcp-tab-json:focus-visible~.mcp-tab-labels label[for="mcp-tab-json"],.iso20022-mcp-page #mcp-tab-claude-code:focus-visible~.mcp-tab-labels label[for="mcp-tab-claude-code"],.iso20022-mcp-page #mcp-tab-claude-desktop:focus-visible~.mcp-tab-labels label[for="mcp-tab-claude-desktop"],.iso20022-mcp-page #mcp-tab-cursor:focus-visible~.mcp-tab-labels label[for="mcp-tab-cursor"],.iso20022-mcp-page #mcp-tab-windsurf:focus-visible~.mcp-tab-labels label[for="mcp-tab-windsurf"],.iso20022-mcp-page #mcp-tab-vscode:focus-visible~.mcp-tab-labels label[for="mcp-tab-vscode"],.iso20022-mcp-page #mcp-tab-gemini:focus-visible~.mcp-tab-labels label[for="mcp-tab-gemini"],.iso20022-mcp-page #mcp-tab-codex:focus-visible~.mcp-tab-labels label[for="mcp-tab-codex"],.iso20022-mcp-page #mcp-tab-agents:focus-visible~.mcp-tab-labels label[for="mcp-tab-agents"]{outline:2px solid var(--focus-ring-color);outline-offset:2px}
       .iso20022-mcp-page .mcp-tab-panel{display:none}
       .iso20022-mcp-page .mcp-tab-panel[data-active="1"],.iso20022-mcp-page #mcp-tab-uvx:checked~#mcp-panel-uvx,.iso20022-mcp-page #mcp-tab-pip:checked~#mcp-panel-pip,.iso20022-mcp-page #mcp-tab-json:checked~#mcp-panel-json,.iso20022-mcp-page #mcp-tab-claude-code:checked~#mcp-panel-claude-code,.iso20022-mcp-page #mcp-tab-claude-desktop:checked~#mcp-panel-claude-desktop,.iso20022-mcp-page #mcp-tab-cursor:checked~#mcp-panel-cursor,.iso20022-mcp-page #mcp-tab-windsurf:checked~#mcp-panel-windsurf,.iso20022-mcp-page #mcp-tab-vscode:checked~#mcp-panel-vscode,.iso20022-mcp-page #mcp-tab-gemini:checked~#mcp-panel-gemini,.iso20022-mcp-page #mcp-tab-codex:checked~#mcp-panel-codex,.iso20022-mcp-page #mcp-tab-agents:checked~#mcp-panel-agents{display:block}
-      .iso20022-mcp-page .mcp-tab-note{margin-block-start:.9rem;font-size:.9rem;color:var(--ink-soft)}
+      .iso20022-mcp-page .mcp-tab-note{margin-block-start:.9rem;font-size:var(--fs-meta);color:var(--ink-soft)}
       .iso20022-mcp-page .mcp-advisory-card{margin-block-start:2.4rem;padding:clamp(24px,3vw,36px);border-radius:18px;background:var(--bg-alt);border:1px solid var(--spk-line);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.2rem 2rem}
       .iso20022-mcp-page .mcp-advisory-copy{max-width:60ch}
-      .iso20022-mcp-page .mcp-advisory-copy h3{font-size:1.24rem;margin:0 0 .4rem}
-      .iso20022-mcp-page .mcp-advisory-copy p{font-size:.94rem;color:var(--ink-soft);margin:0}
+      .iso20022-mcp-page .mcp-advisory-copy h3{font-size:var(--fs-h4);margin:0 0 .4rem}
+      .iso20022-mcp-page .mcp-advisory-copy p{font-size:var(--fs-small);color:var(--ink-soft);margin:0}
       .iso20022-mcp-page .mcp-advisory-actions{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
       .iso20022-mcp-page .mcp-method-details{margin-block-start:1.4rem;border-block-start:1px solid var(--spk-line);padding-block-start:1rem}
-      .iso20022-mcp-page .mcp-method-details > summary{cursor:pointer;font-family:var(--spk-mono);font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--spk-blue);min-height:44px;display:inline-flex;align-items:center}
-      .iso20022-mcp-page .mcp-lens-details > summary{cursor:pointer;font-family:var(--spk-mono);font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--spk-blue);padding:.6rem 0;min-height:44px;display:inline-flex;align-items:center}
+      .iso20022-mcp-page .mcp-method-details > summary{cursor:pointer;font-family:var(--spk-mono);font-size:var(--fs-micro);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--spk-blue);min-height:44px;display:inline-flex;align-items:center}
+      .iso20022-mcp-page .mcp-lens-details > summary{cursor:pointer;font-family:var(--spk-mono);font-size:var(--fs-meta);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--spk-blue);padding:.6rem 0;min-height:44px;display:inline-flex;align-items:center}
       .iso20022-mcp-page:not([data-lens="boards"]):not([data-lens="regulators"]) .mcp-lens-details > summary{display:none}
       /* --- MCP hub: captured tool-schema viewer. Canonical .qa accordion
          (marker, hairline rows, width and typography come from the shared
          .qa-item rules); the hub only adds the three-part summary layout:
          tool name chip + one-line brief. */
       .iso20022-mcp-page .mcp-schemas{margin-block-start:2.2rem}
-      .iso20022-mcp-page .mcp-schema > summary .spk-mono{font-size:1rem;flex:none}
-      .iso20022-mcp-page .mcp-schema-sum{font-size:.9rem;font-weight:400;color:var(--ink-soft);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
-      .iso20022-mcp-page .mcp-schema-body p{font-size:.92rem;color:var(--ink-soft);max-width:72ch;margin-block-end:.9rem}
+      .iso20022-mcp-page .mcp-schema > summary .spk-mono{font-size:var(--fs-meta);flex:none}
+      .iso20022-mcp-page .mcp-schema-sum{font-size:var(--fs-meta);font-weight:400;color:var(--ink-soft);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
+      .iso20022-mcp-page .mcp-schema-body p{font-size:var(--fs-small);color:var(--ink-soft);max-width:72ch;margin-block-end:.9rem}
       .iso20022-mcp-page .mcp-props{list-style:none;margin:0;padding:0}
-      .iso20022-mcp-page .mcp-props li{display:grid;grid-template-columns:minmax(110px,max-content) max-content 1fr;gap:.4rem 1.2rem;font-size:.88rem;padding-block:.5em;border-block-start:1px solid var(--spk-line)}
-      .iso20022-mcp-page .mcp-prop-type{font-family:var(--spk-mono);font-size:.72rem;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.06em}
+      .iso20022-mcp-page .mcp-props li{display:grid;grid-template-columns:minmax(110px,max-content) max-content 1fr;gap:.4rem 1.2rem;font-size:var(--fs-meta);padding-block:.5em;border-block-start:1px solid var(--spk-line)}
+      .iso20022-mcp-page .mcp-prop-type{font-family:var(--spk-mono);font-size:var(--fs-meta);color:var(--ink-faint);text-transform:uppercase;letter-spacing:.06em}
       .iso20022-mcp-page .mcp-prop-desc{color:var(--ink-soft)}
-      .iso20022-mcp-page .mcp-props-none{font-size:.88rem;color:var(--ink-faint)}
-      .iso20022-mcp-page .mcp-schema-note{margin-block-start:1.4rem;font-size:.86rem;color:var(--ink-faint)}
+      .iso20022-mcp-page .mcp-props-none{font-size:var(--fs-meta);color:var(--ink-faint)}
+      .iso20022-mcp-page .mcp-schema-note{margin-block-start:1.4rem;font-size:var(--fs-meta);color:var(--ink-faint)}
       @media (max-width:640px){.iso20022-mcp-page .mcp-props li{grid-template-columns:1fr;gap:.15rem}.iso20022-mcp-page .mcp-schema-sum{display:none}}
       /* --- MCP hub: hero terminal (corral-README-style animated session),
          embedded as the second .spk-hero-grid cell so it is above the fold
@@ -407,27 +413,27 @@ SPEAKING_MCP_HUB_CSS = r"""      /* ============================================
       @media (max-width:520px){.iso20022-mcp-page .mcp-sec.mcp-3col{grid-template-columns:1fr}}
       .iso20022-mcp-page .spk-stats.mcp-stats-3{grid-template-columns:repeat(3,1fr)}
       @media (max-width:640px){.iso20022-mcp-page .spk-stats.mcp-stats-3{grid-template-columns:repeat(2,1fr)}}
-      .iso20022-mcp-page .mcp-note{margin-block-start:1.9rem;font-size:.95rem;line-height:1.65;color:var(--ink-soft);max-width:76ch}
+      .iso20022-mcp-page .mcp-note{margin-block-start:1.9rem;font-size:var(--fs-small);line-height:1.65;color:var(--ink-soft);max-width:76ch}
       .iso20022-mcp-page .mcp-prompts{display:grid;gap:clamp(16px,1.6vw,22px);margin-block-start:2.4rem}
       .iso20022-mcp-page .mcp-prompt{background:var(--bg-alt);border-radius:18px;padding:clamp(24px,3vw,40px)}
-      .iso20022-mcp-page .mcp-prompt h3{font-size:1.3rem;margin-block:.15rem .4rem}
+      .iso20022-mcp-page .mcp-prompt h3{font-size:var(--fs-h4);margin-block:.15rem .4rem;line-height:var(--lh-card)}
       .iso20022-mcp-page .mcp-prompt .spk-eyebrow{color:var(--ink-soft);margin-block-end:.8rem}
-      .iso20022-mcp-page .mcp-prompt-meta{font-family:var(--spk-mono);font-size:.76rem;letter-spacing:.02em;color:var(--ink-soft);margin:0 0 .4rem}
-      .iso20022-mcp-page .mcp-prompt-label{font-family:var(--spk-mono);font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.13em;color:var(--ink-soft);margin-block:1.3rem .5rem}
+      .iso20022-mcp-page .mcp-prompt-meta{font-family:var(--spk-mono);font-size:var(--fs-meta);letter-spacing:.02em;color:var(--ink-soft);margin:0 0 .4rem}
+      .iso20022-mcp-page .mcp-prompt-label{font-family:var(--spk-mono);font-size:var(--fs-micro);font-weight:600;text-transform:uppercase;letter-spacing:var(--track-micro);color:var(--ink-soft);margin-block:1.3rem .5rem}
       .iso20022-mcp-page .mcp-prompt .mcp-code{background:var(--card)}
       .iso20022-mcp-page .mcp-prompt .mcp-code code{white-space:pre-wrap;overflow-wrap:anywhere}
-      .iso20022-mcp-page .mcp-prompt-note{margin-block-start:1rem;font-size:.92rem;color:var(--ink-soft)}
+      .iso20022-mcp-page .mcp-prompt-note{margin-block-start:1rem;font-size:var(--fs-small);color:var(--ink-soft)}
       /* --- MCP hub: 9-server architecture & rail matrix + FAQ accordion -- */
       .iso20022-mcp-page .mcp-table-wrap{margin-block-start:2.4rem;overflow-x:auto;scrollbar-width:none;border:1px solid var(--spk-line);border-radius:16px;background:var(--card)}
-      .iso20022-mcp-page .mcp-table{width:100%;border-collapse:collapse;font-size:.88rem;line-height:1.55;margin:0}
+      .iso20022-mcp-page .mcp-table{width:100%;border-collapse:collapse;font-size:var(--fs-meta);line-height:1.55;margin:0}
       .iso20022-mcp-page .mcp-table th{text-align:start;vertical-align:top}
-      .iso20022-mcp-page .mcp-table thead th{font-family:var(--spk-mono);font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);padding:14px 10px;border-block-end:1px solid var(--spk-line);background:var(--bg-alt);white-space:nowrap}
+      .iso20022-mcp-page .mcp-table thead th{font-family:var(--spk-mono);font-size:var(--fs-micro);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);padding:14px 10px;border-block-end:1px solid var(--spk-line);background:var(--bg-alt);white-space:nowrap}
       .iso20022-mcp-page .mcp-table tbody th,.iso20022-mcp-page .mcp-table tbody td{padding:14px 10px;border-block-end:1px solid var(--spk-line);color:var(--ink-soft);vertical-align:top}
       .iso20022-mcp-page .mcp-table tbody tr:last-child th,.iso20022-mcp-page .mcp-table tbody tr:last-child td{border-block-end:0}
       .iso20022-mcp-page .mcp-table tbody th{font-weight:600;color:var(--ink);background:transparent;white-space:nowrap}
       .iso20022-mcp-page .mcp-table code{font-family:var(--spk-mono);font-size:.78rem;color:var(--ink);background:transparent;padding:0;border:0}
       .iso20022-mcp-page .mcp-faq-list{margin-block-start:2.2rem}
-      .iso20022-mcp-page .mcp-faq-body p{font-size:.94rem;line-height:1.65;color:var(--ink-soft);max-width:74ch;margin:0}
+      .iso20022-mcp-page .mcp-faq-body p{font-size:var(--fs-small);line-height:1.65;color:var(--ink-soft);max-width:74ch;margin:0}
 """
 
 # Page-scoped CSS for /trust/: Economist-Pro-solutions-page anatomy on the
@@ -453,12 +459,12 @@ TRUST_CSS = r"""      /* =======================================================
       .trust-page .tr-wrap{max-width:var(--frame-wide);margin-inline:auto;padding-inline:var(--gutter)}
       .trust-page section{padding-block:clamp(72px,9vw,112px)}
       .trust-page .tr-tint{background:var(--bg-alt)}
-      .trust-page .tr-kicker{display:block;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 16px;max-width:none}
-      .trust-page h1{font-size:clamp(40px,5.4vw,68px);font-weight:700;letter-spacing:-.022em;line-height:1.04;color:var(--ink);margin:0 0 22px;max-width:18ch;text-wrap:balance}
-      .trust-page h2{font-size:clamp(28px,3.4vw,42px);font-weight:600;letter-spacing:-.018em;line-height:1.1;color:var(--ink);margin:0;max-width:24ch;text-wrap:balance}
-      .trust-page h3{font-size:17px;line-height:1.3;font-weight:600;color:var(--ink);margin:0 0 8px;max-width:none}
+      .trust-page .tr-kicker{display:block;font-size:var(--fs-micro);font-weight:600;letter-spacing:var(--track-micro);text-transform:uppercase;color:var(--accent);margin:0 0 16px;max-width:none}
+      .trust-page h1{font-size:var(--fs-display);font-weight:700;letter-spacing:-0.022em;line-height:var(--lh-display);color:var(--ink);margin:0 0 22px;max-width:18ch;text-wrap:balance}
+      .trust-page h2{font-size:var(--fs-h2);font-weight:600;letter-spacing:-.018em;line-height:var(--lh-heading);color:var(--ink);margin:0;max-width:24ch;text-wrap:balance}
+      .trust-page h3{font-size:var(--fs-h3);line-height:1.18;font-weight:600;color:var(--ink);margin:0 0 8px;max-width:none}
       .trust-page p{color:var(--ink-soft)}
-      .trust-page .tr-lede{font-size:clamp(17px,1.6vw,20px);line-height:1.55;color:var(--ink-soft);margin:0 0 30px;max-width:62ch}
+      .trust-page .tr-lede{font-size:var(--fs-lead);line-height:var(--lh-lead);color:var(--ink-soft);margin:0 0 30px;max-width:62ch}
       .trust-page .tr-head{margin:0 0 clamp(32px,4vw,48px)}
       .trust-page .tr-cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin:0}
       /* hero band */
@@ -470,8 +476,8 @@ TRUST_CSS = r"""      /* =======================================================
       .trust-page .tr-card-icon{display:block;width:28px;height:28px;color:var(--accent);margin:0 0 16px;flex:none}
       .trust-page .tr-card-icon svg{width:100%;height:100%;stroke:currentColor;fill:none}
       .trust-page .tr-card h3{text-wrap:balance}
-      .trust-page .tr-card p{font-size:14.5px;line-height:1.55;color:var(--ink-soft);margin:0;max-width:none}
-      .trust-page .tr-card-act{margin-block-start:auto;padding-block-start:16px;font-size:14.5px}
+      .trust-page .tr-card p{font-size:var(--fs-small);line-height:1.55;color:var(--ink-soft);margin:0;max-width:none}
+      .trust-page .tr-card-act{margin-block-start:auto;padding-block-start:16px;font-size:var(--fs-small)}
       .trust-page .tr-card pre{margin:14px 0 0;background:var(--bg-alt);border:1px solid var(--rule);border-radius:10px;padding:12px 14px;font-size:12.5px;line-height:1.6;color:var(--ink);white-space:pre-wrap;word-break:break-word;max-width:none}
       .trust-page .tr-copy{border:0;cursor:pointer;font-family:inherit}
       @media (max-width:1100px){.trust-page .tr-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -483,40 +489,41 @@ TRUST_CSS = r"""      /* =======================================================
       .trust-page .tr-prev-img-b{object-position:center bottom}
       .trust-page .tr-prev-body{padding:clamp(22px,2.4vw,32px);display:flex;flex-direction:column;flex:1}
       .trust-page .tr-prev-body .tr-kicker{margin-block-end:10px}
-      .trust-page .tr-prev-body h3{font-size:clamp(19px,1.8vw,23px);margin:0 0 10px;text-wrap:balance}
+      .trust-page .tr-prev-body h3{font-size:var(--fs-h3);margin:0 0 10px;text-wrap:balance;line-height:1.18}
       .trust-page .tr-prev-body h3 a{color:var(--ink);text-decoration:none}
       .trust-page .tr-prev-body h3 a:hover{color:var(--accent)}
-      .trust-page .tr-prev-body p{font-size:15px;line-height:1.55;margin:0;max-width:none}
-      .trust-page .tr-prev-more{margin-block-start:auto;padding-block-start:16px;font-size:14.5px;font-weight:600}
+      .trust-page .tr-prev-body p{line-height:1.55;margin:0;max-width:none}
+      .trust-page .tr-prev-body p:not(:where(.tr-kicker)){font-size:var(--fs-small)}
+      .trust-page .tr-prev-more{margin-block-start:auto;padding-block-start:16px;font-size:var(--fs-small);font-weight:600}
       .trust-page .tr-prev-more a{color:var(--accent);text-decoration:none}
       .trust-page .tr-prev-more a:hover{text-decoration:underline;text-underline-offset:3px}
       @media (max-width:900px){.trust-page .tr-preview{grid-template-columns:1fr}}
       /* side-by-side heading + content bands (licensing / governance /
          recognition) */
       .trust-page .tr-cols{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(32px,5vw,72px);align-items:start}
-      .trust-page .tr-col-head .tr-lede{margin:18px 0 0;font-size:16.5px}
+      .trust-page .tr-col-head .tr-lede{margin:18px 0 0;font-size:var(--fs-lead);line-height:var(--lh-lead)}
       @media (max-width:960px){.trust-page .tr-cols{grid-template-columns:minmax(0,1fr);gap:32px}}
       /* licensing table: full width of its column; the wrapper scrolls on
          narrow viewports instead of widening the page */
       .trust-page .tr-table-wrap{overflow-x:auto}
-      .trust-page .tr-table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5;margin:0}
+      .trust-page .tr-table{width:100%;border-collapse:collapse;font-size:var(--fs-small);line-height:1.5;margin:0}
       .trust-page .tr-table th{text-align:start}
-      .trust-page .tr-table thead th{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute);padding:0 20px 12px 0;border-block-end:1px solid var(--border)}
+      .trust-page .tr-table thead th{font-size:var(--fs-micro);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute);padding:0 20px 12px 0;border-block-end:1px solid var(--border)}
       .trust-page .tr-table tbody th,.trust-page .tr-table tbody td{padding:15px 20px 15px 0;border-block-end:1px solid var(--rule);vertical-align:top;font-weight:400;color:var(--ink-soft)}
       .trust-page .tr-table tbody th a{font-weight:600}
-      .trust-page .tr-note{font-size:15px;line-height:1.6;margin:22px 0 0;max-width:none}
+      .trust-page .tr-note{font-size:var(--fs-small);line-height:1.6;margin:22px 0 0;max-width:none}
       /* governance: left-aligned styled list items */
       .trust-page .tr-gov-list{list-style:none;margin:0;padding:0;display:grid;gap:14px;max-width:none}
-      .trust-page .tr-gov-list li{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:clamp(18px,2vw,24px);font-size:15px;line-height:1.6;color:var(--ink-soft);text-align:start;max-width:none}
+      .trust-page .tr-gov-list li{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:clamp(18px,2vw,24px);font-size:var(--fs-small);line-height:1.6;color:var(--ink-soft);text-align:start;max-width:none}
       .trust-page .tr-gov-list li strong{display:block;color:var(--ink);font-weight:600;margin-block-end:4px}
       /* recognition rows: title / org / date / role columns */
       .trust-page .tr-rec{list-style:none;margin:0;padding:0;max-width:none}
       .trust-page .tr-rec li{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,3fr) max-content minmax(0,3fr);gap:6px 24px;align-items:baseline;padding-block:18px;border-block-start:1px solid var(--rule)}
       .trust-page .tr-rec li:last-child{border-block-end:1px solid var(--rule)}
-      .trust-page .tr-rec-title{font-size:16px;font-weight:600;line-height:1.4}
-      .trust-page .tr-rec-org{font-size:14.5px;color:var(--ink-soft)}
-      .trust-page .tr-rec-date{font-size:13px;color:var(--ink-mute);font-variant-numeric:tabular-nums;white-space:nowrap}
-      .trust-page .tr-rec-role{font-size:13px;color:var(--ink-mute)}
+      .trust-page .tr-rec-title{font-size:var(--fs-h4);font-weight:600;line-height:1.4}
+      .trust-page .tr-rec-org{font-size:var(--fs-small);color:var(--ink-soft)}
+      .trust-page .tr-rec-date{font-size:var(--fs-micro);color:var(--ink-mute);font-variant-numeric:tabular-nums;white-space:nowrap}
+      .trust-page .tr-rec-role{font-size:var(--fs-micro);color:var(--ink-mute)}
       @media (max-width:760px){.trust-page .tr-rec li{grid-template-columns:1fr}.trust-page .tr-rec-date{white-space:normal}}
       /* end CTA band */
       .trust-page .tr-final{text-align:center}
@@ -533,34 +540,34 @@ MCP_REFERENCE_CSS = r"""      /* --- ISO 20022 MCP reference: live-captured tool
          three-part summary layout and the parameter table. All text uses the
          AAA token pairs (--ink / --ink-soft / --ink-mute / --ink-faint on
          --bg or --bg-alt, each >= 7:1 in both themes). */
-      .ref-totals{font-size:15.5px;color:var(--ink-soft)}
+      .ref-totals{font-size:var(--fs-small);color:var(--ink-soft)}
       .ref-index{margin:32px 0 0}
       .ref-index-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
       .ref-index-item{margin:0}
       main.content .ref-index-link{display:flex;flex-direction:column;gap:6px;height:100%;padding:18px;border:1px solid var(--border);border-radius:12px;color:var(--ink);text-decoration:none;transition:border-color .15s ease}
       main.content .ref-index-link:hover{border-color:var(--accent)}
       .ref-index-name code{font-family:var(--type-mono,ui-monospace,monospace);font-size:14px;color:var(--ink);background:transparent;padding:0;border:0}
-      .ref-index-role{font-size:13px;line-height:1.5;color:var(--ink-soft)}
-      .ref-index-count{font-family:var(--type-mono,ui-monospace,monospace);font-size:11px;letter-spacing:.04em;color:var(--ink-mute)}
+      .ref-index-role{font-size:var(--fs-micro);line-height:1.5;color:var(--ink-soft)}
+      .ref-index-count{font-family:var(--type-mono,ui-monospace,monospace);font-size:var(--fs-micro);letter-spacing:.04em;color:var(--ink-mute)}
       @media (max-width:860px){.ref-index-list{grid-template-columns:1fr 1fr}}
       @media (max-width:560px){.ref-index-list{grid-template-columns:1fr}}
-      .ref-capture{font-family:var(--type-mono,ui-monospace,monospace);font-size:12.5px;line-height:1.7;color:var(--ink-mute);margin:8px 0 20px}
+      .ref-capture{font-family:var(--type-mono,ui-monospace,monospace);font-size:var(--fs-micro);line-height:1.7;color:var(--ink-mute);margin:8px 0 20px}
       .ref-capture code{font-family:inherit;font-size:inherit;background:transparent;padding:0;border:0}
       .ref-tools{margin:0 0 8px}
       .ref-tool > summary .ref-tool-name{flex:none}
       .ref-tool > summary .ref-tool-name code{font-family:var(--type-mono,ui-monospace,monospace);font-size:15px;color:inherit;background:transparent;padding:0;border:0}
-      .ref-tool-brief{flex:1;min-width:0;font-size:14px;font-weight:400;color:var(--ink-soft);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+      .ref-tool-brief{flex:1;min-width:0;font-size:var(--fs-meta);font-weight:400;color:var(--ink-soft);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
       .ref-tool-brief code,.ref-tool-desc code{background:transparent;padding:0;border:0}
-      .ref-tool-meta{flex:none;font-family:var(--type-mono,ui-monospace,monospace);font-size:11px;letter-spacing:.04em;text-transform:uppercase;font-weight:400;color:var(--ink-mute);white-space:nowrap}
+      .ref-tool-meta{flex:none;font-family:var(--type-mono,ui-monospace,monospace);font-size:var(--fs-micro);letter-spacing:.04em;text-transform:uppercase;font-weight:400;color:var(--ink-mute);white-space:nowrap}
       @media (max-width:720px){.ref-tool-brief,.ref-tool-meta{display:none}}
-      main.content .ref-tool-desc{margin:0 0 14px;font-size:14.5px;line-height:1.6;color:var(--ink-soft);max-width:none}
-      .ref-noparams{margin:0;font-size:14px;color:var(--ink-mute)}
+      main.content .ref-tool-desc{margin:0 0 14px;font-size:var(--fs-small);line-height:1.6;color:var(--ink-soft);max-width:none}
+      .ref-noparams{margin:0;font-size:var(--fs-meta);color:var(--ink-mute)}
       .ref-params-wrap{overflow-x:auto}
-      .ref-params{width:100%;border-collapse:collapse;font-size:14px;line-height:1.55}
-      .ref-params th{font-family:var(--type-mono,ui-monospace,monospace);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute);text-align:start;padding:8px 16px 8px 0;border-bottom:1px solid var(--border)}
+      .ref-params{width:100%;border-collapse:collapse;font-size:var(--fs-meta);line-height:1.55}
+      .ref-params th{font-family:var(--type-mono,ui-monospace,monospace);font-size:var(--fs-micro);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute);text-align:start;padding:8px 16px 8px 0;border-bottom:1px solid var(--border)}
       .ref-params td{padding:10px 16px 10px 0;border-bottom:1px solid var(--rule);color:var(--ink-soft);vertical-align:top}
       .ref-params td code{background:transparent;padding:0;border:0;font-size:13px}
-      .ref-req{font-family:var(--type-mono,ui-monospace,monospace);font-size:11px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+      .ref-req{font-family:var(--type-mono,ui-monospace,monospace);font-size:var(--fs-micro);letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
       .ref-req-required{color:var(--ink);font-weight:600}
       .ref-req-optional{color:var(--ink-mute)}
 """
@@ -586,10 +593,10 @@ MCP_DOCS_CSS = r"""      /* --- ISO 20022 MCP docs: sticky-rail tutorial layout 
          `main.content :is(p,li,...) a:not([class])` underline rule (0,2,3) */
       main.content .docs-rail .tut-path-item a{display:block;height:100%;padding:16px 18px;border:1px solid var(--rule);border-radius:14px;background:var(--card);color:var(--ink);text-decoration:none;transition:border-color .15s ease}
       main.content .docs-rail .tut-path-item a:hover{border-color:var(--accent)}
-      .tut-path-chapter{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-block-end:6px}
-      .tut-path-title{display:block;font-size:15.5px;font-weight:600;line-height:1.3;color:var(--ink);margin-block-end:4px}
-      .tut-path-sub{display:block;font-size:13px;line-height:1.5;color:var(--ink-soft);margin-block-end:10px}
-      .tut-mins{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-mute)}
+      .tut-path-chapter{display:block;font-size:var(--fs-micro);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-block-end:6px}
+      .tut-path-title{display:block;font-size:var(--fs-small);font-weight:600;line-height:1.3;color:var(--ink);margin-block-end:4px}
+      .tut-path-sub{display:block;font-size:var(--fs-micro);line-height:1.5;color:var(--ink-soft);margin-block-end:10px}
+      .tut-mins{display:inline-block;font-size:var(--fs-micro);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-mute)}
       @media (min-width:640px) and (max-width:1099.98px){.docs-rail .tut-path{grid-template-columns:1fr 1fr}}
       @media (min-width:1100px){
         .docs-shell{display:grid;grid-template-columns:264px minmax(0,1fr);gap:clamp(36px,4vw,72px);align-items:start}
@@ -599,17 +606,17 @@ MCP_DOCS_CSS = r"""      /* --- ISO 20022 MCP docs: sticky-rail tutorial layout 
       /* chapter heads: full-width, left-aligned, hairline rhythm */
       .docs-flow .tut-chapter-head{margin:clamp(56px,7vw,88px) 0 0;padding-block-start:clamp(28px,3.4vw,44px);border-block-start:1px solid var(--border);text-align:start;scroll-margin-block-start:calc(var(--nav-h,64px) + 16px)}
       .docs-flow .tut-chapter-head:first-child{margin-block-start:0;padding-block-start:0;border-block-start:0}
-      .tut-chapter-num{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--border);border-radius:50%;font-size:18px;font-weight:600;color:var(--ink-mute);margin-block-end:18px}
-      .docs-flow .tut-chapter-head .cat-headline{font-size:clamp(30px,3.6vw,44px)}
+      .tut-chapter-num{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--border);border-radius:50%;font-size:var(--fs-body);font-weight:600;color:var(--ink-mute);margin-block-end:18px}
+      .docs-flow .tut-chapter-head .cat-headline{font-size:var(--fs-h2)}
       .docs-flow .tut-chapter-head .cat-lede{max-width:66ch !important}
       .docs-flow .tut-chapter-head .tut-mins{margin-block-start:12px}
       /* section heads: left-aligned within the flow column */
       .docs-flow .cat-section-head{text-align:start;margin:clamp(40px,5vw,60px) 0 22px;max-width:none}
-      .docs-flow .cat-section-head .cat-headline{font-size:clamp(24px,2.6vw,32px)}
+      .docs-flow .cat-section-head .cat-headline{font-size:var(--fs-h2-prose)}
       .docs-flow .cat-section-head .cat-lede{max-width:72ch !important}
       .docs-flow .story-why{margin-block:18px 26px}
       .docs-flow section.newsroom{margin:0;padding:0;max-width:none}
-      .docs-flow .story-intro{font-size:16.5px;margin-block:18px 0}
+      .docs-flow .story-intro{font-size:var(--fs-body);margin-block:18px 0}
       /* code: comfortable measure instead of a full-bleed strip */
       .docs-flow pre{background:var(--bg-alt);border:1px solid var(--rule);border-radius:14px;padding:18px 20px;overflow-x:auto;max-width:860px;font-size:13.5px;line-height:1.65;color:var(--ink)}
       .docs-flow pre pre{background:transparent;border:0;border-radius:0;padding:0;margin:0;max-width:none}
@@ -627,14 +634,14 @@ MCP_DOCS_CSS = r"""      /* --- ISO 20022 MCP docs: sticky-rail tutorial layout 
       /* informational bullet lists as card grids (2x2, or 3-across) */
       .docs-cardlist .story-why-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.6vw,20px)}
       .docs-cards-3 .story-why-list{grid-template-columns:repeat(3,minmax(0,1fr))}
-      .docs-cardlist .story-why-list li{background:var(--bg-alt);border-radius:16px;padding:clamp(20px,2vw,26px);padding-inline-start:clamp(20px,2vw,26px);max-width:none;font-size:15px;line-height:1.6;min-width:0}
+      .docs-cardlist .story-why-list li{background:var(--bg-alt);border-radius:16px;padding:clamp(20px,2vw,26px);padding-inline-start:clamp(20px,2vw,26px);max-width:none;font-size:var(--fs-small);line-height:1.6;min-width:0}
       .docs-cardlist .story-why-list li::before{content:none}
       @media (max-width:900px){.docs-cardlist .story-why-list,.docs-cards-3 .story-why-list{grid-template-columns:1fr}}
       /* client cards: FMP-style dataset-grid density, 3-across at wide */
       .docs-client-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.6vw,20px);margin-block-start:20px}
       .docs-client{min-width:0;background:var(--bg-alt);border-radius:16px;padding:clamp(20px,2vw,26px);display:flex;flex-direction:column;gap:10px;margin:0}
-      .docs-client h4{margin:0;font-size:17px;line-height:1.3;color:var(--ink)}
-      .docs-client p{font-size:14.5px;line-height:1.55;color:var(--ink-soft);margin:0;max-width:none}
+      .docs-client h4{margin:0;font-size:var(--fs-body);line-height:1.3;color:var(--ink)}
+      .docs-client p{font-size:var(--fs-small);line-height:1.55;color:var(--ink-soft);margin:0;max-width:none}
       .docs-client pre{background:var(--card);border-color:var(--rule);margin:4px 0 0;max-width:none;font-size:12.5px}
       @media (max-width:1200px){.docs-client-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
       @media (max-width:720px){.docs-client-grid{grid-template-columns:1fr}}
@@ -814,7 +821,7 @@ PAGE_HERO_MAIN = """    <section class="ap-hero">
     </section>
 
     <main id="main" class="content ap-section">
-      <div class="wrap">{{content}}</div>
+      <div class="wrap">{{!content}}</div>
     </main>
 
 """
@@ -837,7 +844,7 @@ PROJECT_HERO_MAIN = """    <section class="ap-hero">
     </section>
 
     <main id="main" class="content ap-section">
-      <div class="wrap">{{content}}</div>
+      <div class="wrap">{{!content}}</div>
     </main>
 
 """
@@ -859,7 +866,7 @@ STORY_HERO_MAIN = """    <section class="story-hero">
     </section>
 
     <main id="main" class="content ap-section">
-      <div class="wrap">{{content}}</div>
+      <div class="wrap">{{!content}}</div>
     </main>
 
 """
@@ -887,7 +894,7 @@ def contact_layout() -> str:
       <div class="wrap contact-wrap">
         <div class="contact-layout" data-reveal>
           <div class="contact-form-col">
-            <p class="lede">{{content}}</p>
+            <p class="lede">{{!content}}</p>
             <form class="ap-form" action="https://formspree.io/f/{{form-id}}" method="POST">
               <fieldset>
               <legend class="visually-hidden">Send a message</legend>
@@ -950,7 +957,7 @@ def contact_layout() -> str:
 
 """
     contact_css = """      .contact-wrap{max-width:var(--max-wide)}
-      .contact-wrap .lede{font-size:clamp(17px,1.6vw,19px);color:var(--ink-mute);margin:0 0 36px;line-height:1.5}
+      .contact-wrap .lede{font-size:var(--fs-lead);color:var(--ink-mute);margin:0 0 36px;line-height:var(--lh-lead)}
       .contact-promise{max-width:var(--frame-wide);margin-block:0}
       /* Contact rhythm (audit P1). The generic hero, the promise rail and
          main.ap-section each carry their own block padding, which stacked
@@ -964,24 +971,24 @@ def contact_layout() -> str:
       .ap-form{display:flex;flex-direction:column;gap:20px}
       .ap-form fieldset{border:0;margin:0;padding:0;min-inline-size:0;display:flex;flex-direction:column;gap:20px}
       .ap-form-row{display:flex;flex-direction:column;gap:6px}
-      .ap-form-row label{font-size:13px;font-weight:600;color:var(--ink);letter-spacing:-.005em}
+      .ap-form-row label{font-size:var(--fs-meta);font-weight:600;color:var(--ink);letter-spacing:-.005em}
       .ap-form input[type=text],.ap-form input[type=email],.ap-form select,.ap-form textarea{
-        font-family:inherit;font-size:16px;line-height:1.4;color:var(--ink);
+        font-family:inherit;font-size:var(--fs-ui);line-height:1.4;color:var(--ink);
         background:var(--paper);border:1px solid var(--border);border-radius:12px;
         padding:14px 16px;width:100%;min-height:48px;transition:border-color .15s,box-shadow .15s;
       }
       .ap-form textarea{min-height:160px;resize:vertical}
       .ap-form input:focus,.ap-form select:focus,.ap-form textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(var(--accent-rgb),.15)}
       .ap-form-actions{align-items:flex-start;margin-top:8px}
-      .ap-form button.pill{font-size:16px;padding:14px 28px;border:none;cursor:pointer}
+      .ap-form button.pill{font-size:var(--fs-ui);padding:14px 28px;border:none;cursor:pointer}
       .contact-aside{padding:28px 28px 32px;background:var(--card);border:1px solid var(--rule);border-radius:var(--radius);position:sticky;top:calc(var(--nav-h) + 24px)}
-      .contact-aside-title{font-family:var(--type-body);font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute);margin:0 0 18px}
+      .contact-aside-title{font-family:var(--type-body);font-size:var(--fs-micro);font-weight:600;letter-spacing:var(--track-micro);text-transform:uppercase;color:var(--ink-mute);margin:0 0 18px}
       .contact-aside-list{list-style:none;margin:0 0 20px;padding:0;display:flex;flex-direction:column;gap:18px}
       .contact-aside-list li{display:flex;flex-direction:column;gap:4px}
-      .contact-aside-eyebrow{font-family:var(--type-body);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute)}
-      .contact-aside-list a{font-size:15px;font-weight:500;color:var(--ink-deep);text-decoration:none;line-height:1.35;word-break:break-word}
+      .contact-aside-eyebrow{font-family:var(--type-body);font-size:var(--fs-micro);font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute)}
+      .contact-aside-list a{font-size:var(--fs-small);font-weight:500;color:var(--ink-deep);text-decoration:none;line-height:1.35;word-break:break-word}
       .contact-aside-list a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
-      .contact-aside-note{font-size:13.5px;line-height:1.5;color:var(--ink-mute);margin:0;padding-block-start:18px;border-block-start:1px solid var(--rule)}
+      .contact-aside-note{font-size:var(--fs-meta);line-height:1.5;color:var(--ink-mute);margin:0;padding-block-start:18px;border-block-start:1px solid var(--rule)}
 """
     html = TOP + body + BOTTOM
     html = html.replace("    </style>", contact_css + "    </style>")
@@ -998,7 +1005,7 @@ def report_layout() -> str:
     </section>
 
     <main id="main" class="content ap-section">
-      <div class="wrap report-wrap"><article class="report-article">{{content}}</article></div>
+      <div class="wrap report-wrap"><article class="report-article">{{!content}}</article></div>
     </main>
 
 """
@@ -1133,7 +1140,7 @@ def playlist_layout() -> str:
 
       <main id="main" class="content ap-section">
         <div class="wrap">
-          <div class="playlist-intro" data-reveal>{{{{content}}}}</div>
+          <div class="playlist-intro" data-reveal>{{{{!content}}}}</div>
           <div class="playlist-platforms" data-reveal>
 <p class="playlist-platforms-label">The full collection is on Apple Music too</p>
 <a class="pl-badge playlist-platform-apple" href="https://music.apple.com/profile/bxhero" target="_blank" rel="me noopener" aria-label="Listen on Apple Music">
@@ -1157,7 +1164,7 @@ def playlist_layout() -> str:
       </main>
 
 """
-    playlist_css = """      .playlist-intro{max-width:var(--col-read);margin:0 auto 32px;text-align:center;font-size:clamp(17px,1.6vw,20px);line-height:1.5;color:var(--ink-mute)}
+    playlist_css = """      .playlist-intro{max-width:var(--col-read);margin:0 auto 32px;text-align:center;font-size:var(--fs-body);line-height:1.5;color:var(--ink-mute)}
       .playlist-intro p{margin:0}
       .spotify-frame{border-radius:12px;border:0;display:block;width:100%}
       /* Playlist board: full-bleed genre bands, cover-led cards and a
@@ -1189,15 +1196,15 @@ def playlist_layout() -> str:
       .pl-hero-inner{max-width:var(--max-wide);margin-inline:auto;display:grid;
         grid-template-columns:1fr 1fr;gap:clamp(28px,4.5vw,72px);align-items:center}
       @media (max-width:940px){.pl-hero-inner{grid-template-columns:1fr}}
-      .pl-hero-kicker{margin:0 0 12px;font-size:12px;letter-spacing:.14em;
+      .pl-hero-kicker{margin:0 0 12px;font-size:var(--fs-micro);letter-spacing:.14em;
         text-transform:uppercase;font-weight:700;color:var(--pl-red)}
       /* Sans, tight, heavy — the Apple register. Not the site's serif. */
       .pl-hero-title{font-family:var(--type-body);margin:0 0 18px;
-        font-size:clamp(40px,7vw,88px);line-height:1.02;letter-spacing:-.035em;
+        font-size:var(--fs-display);line-height:1.02;letter-spacing:-.035em;
         font-weight:700;color:var(--ink)}
-      .pl-hero-desc{margin:0 0 16px;font-size:clamp(17px,1.6vw,21px);line-height:1.5;
+      .pl-hero-desc{margin:0 0 16px;font-size:var(--fs-lead);line-height:1.5;
         color:var(--ink-soft);max-width:44ch}
-      .pl-hero-meta{margin:0 0 28px;font-size:14px;color:var(--ink-mute)}
+      .pl-hero-meta{margin:0 0 28px;font-size:var(--fs-meta);color:var(--ink-mute)}
       .pl-hero-player{border-radius:22px;overflow:hidden;
         box-shadow:0 30px 70px -26px rgba(0,0,0,.5)}
 
@@ -1205,7 +1212,7 @@ def playlist_layout() -> str:
         margin:clamp(30px,4vw,48px) auto 0;max-width:var(--max-wide)}
       .pl-chip{display:inline-flex;align-items:center;padding:9px 18px;border-radius:999px;
         border:1px solid var(--border);color:var(--ink-soft);text-decoration:none;
-        font-size:14px;font-weight:600;transition:color .18s ease,border-color .18s ease}
+        font-size:var(--fs-meta);font-weight:600;transition:color .18s ease,border-color .18s ease}
       .pl-chip:hover,.pl-chip:focus-visible{color:var(--pl-red);border-color:var(--pl-red)}
 
         section.pl-topper{position:relative;margin-inline:calc(50% - 50vw)!important;width:100vw;
@@ -1218,7 +1225,7 @@ def playlist_layout() -> str:
       .pl-topper>*:not(.pl-aurora){position:relative;z-index:1}
       .pl-topper a.pl-jump{display:inline-flex;align-items:center;gap:11px;
         margin-block-start:clamp(34px,5vw,62px);padding:14px 28px;border-radius:999px;
-        font-family:var(--type-body);font-size:15px;font-weight:600;text-decoration:none;
+        font-family:var(--type-body);font-size:var(--fs-small);font-weight:600;text-decoration:none;
         color:var(--pl-au-bg);background:var(--pl-white);
         box-shadow:0 10px 34px -12px rgba(0,0,0,.55);
         transition:transform .2s ease,box-shadow .2s ease}
@@ -1293,21 +1300,21 @@ def playlist_layout() -> str:
         50%{filter:hue-rotate(12deg) saturate(1.12)}}
       @media (prefers-reduced-motion:reduce){
         .pl-aurora span,.pl-aurora-wrap{animation:none}}
-      .pl-topper h1{font-family:var(--type-body);font-size:clamp(46px,8.4vw,104px)!important;
-        line-height:.98;letter-spacing:-.038em;font-weight:700;color:var(--pl-white)!important;
+      .pl-topper h1{font-family:var(--type-body);font-size:var(--fs-display)!important;
+        line-height:var(--lh-display);letter-spacing:-0.022em;font-weight:700;color:var(--pl-white)!important;
         margin:10px auto 16px}
       .pl-topper .sub{color:rgba(255,255,255,.84)!important;max-width:56ch;
-        margin-inline:auto;font-size:clamp(17px,1.7vw,22px);line-height:1.5}
+        margin-inline:auto;font-size:var(--fs-lead);line-height:var(--lh-lead)}
       .pl-faq{margin-inline:calc(50% - 50vw);width:100vw;
         padding:clamp(56px,8vw,116px) var(--gutter);background:var(--bg)}
       .pl-faq-inner{max-width:var(--col-read);margin-inline:auto}
       .pl-faq h2{font-family:var(--type-body);margin:0 0 8px;
-        font-size:clamp(30px,4.6vw,56px);line-height:1.04;letter-spacing:-.03em;
+        font-size:var(--fs-h2);line-height:1.04;letter-spacing:-.03em;
         font-weight:700;color:var(--ink);text-align:center}
       .pl-faq-sub{margin:0 0 clamp(28px,4vw,48px);text-align:center;
-        color:var(--ink-mute);font-size:17px}
+        color:var(--ink-mute);font-size:var(--fs-body)}
       .pl-faq-item p{margin:0 0 20px;padding-inline-end:40px;color:var(--ink-soft);
-        font-size:16px;line-height:1.65}
+        font-size:var(--fs-body);line-height:1.65}
       .pl-band{--pl-hue:var(--pl-red);--pl-hue2:var(--pl-hue);
         margin-inline:calc(50% - 50vw);width:100vw;
         padding:clamp(48px,7vw,104px) var(--gutter);
@@ -1322,9 +1329,9 @@ def playlist_layout() -> str:
 
       .pl-lane-head{margin:0 0 clamp(24px,3.4vw,44px);max-width:46ch}
       .pl-lane-title{font-family:var(--type-body);margin:0 0 8px;
-        font-size:clamp(30px,4.6vw,56px);line-height:1.04;letter-spacing:-.03em;
+        font-size:var(--fs-h2);line-height:1.04;letter-spacing:-.03em;
         font-weight:700;color:var(--ink)}
-      .pl-lane-sub{margin:0;font-size:clamp(15px,1.4vw,18px);color:var(--ink-mute)}
+      .pl-lane-sub{margin:0;font-size:var(--fs-small);color:var(--ink-mute)}
 
       .pl-grid{display:grid;gap:clamp(20px,2.4vw,34px);
         grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
@@ -1338,11 +1345,11 @@ def playlist_layout() -> str:
       .pl-cover img{display:block;width:100%;height:100%;object-fit:cover}
       .pl-card:hover .pl-cover{transform:translateY(-6px) scale(1.012);
         box-shadow:0 30px 56px -22px rgba(0,0,0,.6)}
-      .pl-genre{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+      .pl-genre{display:block;font-size:var(--fs-micro);letter-spacing:.14em;text-transform:uppercase;
         color:var(--pl-hue);margin:0 0 6px;font-weight:700}
-      .pl-title{font-family:var(--type-body);margin:0 0 8px;font-size:clamp(18px,1.6vw,22px);line-height:1.22;
+      .pl-title{font-family:var(--type-body);margin:0 0 8px;font-size:var(--fs-h4);line-height:1.22;
         letter-spacing:-.015em;color:var(--ink);font-weight:700}
-      .pl-desc{margin:0 0 16px;font-size:14px;line-height:1.55;color:var(--ink-mute);
+      .pl-desc{margin:0 0 16px;font-size:var(--fs-meta);line-height:1.55;color:var(--ink-mute);
         flex:1 1 auto;max-width:40ch}
       .pl-player{border-radius:12px;overflow:hidden;margin:0 0 14px}
       .pl-frame{display:block;width:100%;border:0}
@@ -1351,7 +1358,7 @@ def playlist_layout() -> str:
       .pl-actions{display:flex;flex-wrap:wrap;gap:10px}
       .pl-actions-center{justify-content:center}
       .pl-action{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;
-        border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;
+        border-radius:999px;font-size:var(--fs-small);font-weight:600;text-decoration:none;
         border:1px solid transparent;transition:filter .18s ease,transform .18s ease}
       .pl-action:hover,.pl-action:focus-visible{filter:brightness(1.08);transform:translateY(-1px)}
       a.pl-action-spotify,.content a.pl-action-spotify{background:var(--pl-spotify);color:var(--pl-ink-on-brand)}
@@ -1370,21 +1377,21 @@ def playlist_layout() -> str:
         background:var(--bg-alt,var(--card))}
       .pl-everywhere-inner{max-width:var(--col-read);margin-inline:auto}
       .pl-everywhere h2{font-family:var(--type-body);margin:0 0 16px;
-        font-size:clamp(30px,4.6vw,56px);line-height:1.04;letter-spacing:-.03em;
+        font-size:var(--fs-h2);line-height:1.04;letter-spacing:-.03em;
         font-weight:700;color:var(--ink)}
-      .pl-everywhere p{margin:0 auto 28px;max-width:50ch;font-size:clamp(16px,1.5vw,19px);
+      .pl-everywhere p{margin:0 auto 28px;max-width:50ch;font-size:var(--fs-body);
         line-height:1.6;color:var(--ink-soft)}
       .pl-devices{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 24px;
-        margin:0 0 30px;padding:0;list-style:none;font-size:14px;color:var(--ink-mute)}
+        margin:0 0 30px;padding:0;list-style:none;font-size:var(--fs-meta);color:var(--ink-mute)}
 
       @media (prefers-reduced-motion:reduce){
         .pl-cover,.pl-action,.pl-chip{transition:none}
         .pl-card:hover .pl-cover,.pl-action:hover{transform:none}}
 
       .playlist-platforms{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:0 0 20px}
-      .playlist-platforms-label{margin:0 4px 0 0;font-size:13px;opacity:.75}
+      .playlist-platforms-label{margin:0 4px 0 0;font-size:var(--fs-micro);opacity:.75}
       .playlist-platform{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;
-        border:1px solid var(--rule,rgba(128,128,128,.32));font-size:14px;font-weight:600;text-decoration:none;
+        border:1px solid var(--rule,rgba(128,128,128,.32));font-size:var(--fs-meta);font-weight:600;text-decoration:none;
         transition:transform .15s ease,border-color .15s ease}
       .playlist-platform:hover,.playlist-platform:focus-visible{transform:translateY(-1px)}
       .playlist-platform-apple:hover,.playlist-platform-apple:focus-visible{border-color:var(--pl-apple)}
@@ -1428,6 +1435,7 @@ def with_banner_src(html: str) -> str:
 
 
 def write(name: str, html: str) -> None:
+    html = _ds.apply(html)
     (LAYOUTS / name).write_text(html)
     print(f"wrote _layouts/{name}  ({len(html):,} bytes)")
 
@@ -1459,6 +1467,10 @@ def main() -> None:
     write("contact.html", inject_schema(contact_layout(), "contact"))
     write("report.html", inject_schema(report_layout(), "report"))
     write("playlist.html", inject_schema(playlist_layout(), "playlist"))
+    # index.html is the shell source, not a generated layout, but it ships
+    # pages too (the homepage), so it carries the same wrapper.
+    (LAYOUTS / "index.html").write_text(_ds.apply(INDEX))
+    print("wrote _layouts/index.html  (design system applied)")
 
 
 if __name__ == "__main__":

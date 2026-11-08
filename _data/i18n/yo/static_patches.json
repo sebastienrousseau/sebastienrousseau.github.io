@@ -22,14 +22,6 @@
       "ỌWỌ̀N · KÓKÓ"
     ],
     [
-      "PILLAR · PROJECT",
-      "ỌWỌ̀N · IṢẸ́"
-    ],
-    [
-      "Curated topic clusters[^<]+",
-      "Àwọn ìdìpọ̀ kókó — yan okùn kan kí o sì tẹ̀lé e kọjá inú ìpamọ́."
-    ],
-    [
       "aria-label=\"Post-Quantum Cryptography\"",
       "aria-label=\"Kírípítógíráfì lẹ́yìn-kuántọ́mù\""
     ],
@@ -48,46 +40,6 @@
     [
       "aria-label=\"Blockchain &amp; Digital Assets\"",
       "aria-label=\"Blockchain àti Ohun-ìní oníńọ́mbà\""
-    ],
-    [
-      "alt=\"Post-Quantum Cryptography — topic banner\"",
-      "alt=\"Kírípítógíráfì lẹ́yìn-kuántọ́mù — bánà kókó\""
-    ],
-    [
-      "alt=\"ISO 20022 &amp; Payments — topic banner\"",
-      "alt=\"ISO 20022 &amp; Ìsanwó — bánà kókó\""
-    ],
-    [
-      "alt=\"Applied AI in Banking — topic banner\"",
-      "alt=\"AI tí a lò nínú ilé ìfowópamọ́ — bánà kókó\""
-    ],
-    [
-      "alt=\"Rust &amp; Open Source — topic banner\"",
-      "alt=\"Rust &amp; Orísun Ṣíṣí — bánà kókó\""
-    ],
-    [
-      "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
-      "alt=\"Blockchain &amp; Àwọn ohun ìní dijítà — bánà kókó\""
-    ],
-    [
-      "<h3><a href=\"/fr/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
-      "<h3><a href=\"/yo/awon-koko/post-quantum-cryptography/index.html\">Kírípítógíráfì lẹ́yìn-kuántọ́mù</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/fr/topics/iso-20022-payments/[^\"]+\">ISO 20022 &amp; Payments</a></h3>",
-      "<h3><a href=\"/yo/awon-koko/iso-20022-payments/index.html\">ISO 20022 àti Ìsanwó</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/fr/topics/applied-ai-banking/[^\"]+\">Applied AI in Banking</a></h3>",
-      "<h3><a href=\"/yo/awon-koko/applied-ai-banking/index.html\">AI Ìlò nínú Báńkì</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/fr/topics/rust-open-source/[^\"]+\">Rust &amp; Open Source</a></h3>",
-      "<h3><a href=\"/yo/awon-koko/rust-open-source/index.html\">Rust àti Orisun-ìṣí</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/fr/topics/blockchain-digital-assets/[^\"]+\">Blockchain &amp; Digital Assets</a></h3>",
-      "<h3><a href=\"/yo/awon-koko/blockchain-digital-assets/index.html\">Blockchain àti Ohun-ìní oníńọ́mbà</a></h3>"
     ],
     [
       "<p class=\"newsroom-excerpt\">Lattice-based cryptography, NIST PQC standards, quantum-safe payments,[^<]+</p>",
@@ -116,10 +68,6 @@
     [
       "INDUSTRY WHITE PAPER · EPAA",
       "ÌWÉ FUNFUN ILÉ-IṢẸ́ · EPAA"
-    ],
-    [
-      "INDUSTRY WHITE PAPER",
-      "ÌWÉ FUNFUN ILÉ-IṢẸ́"
     ],
     [
       "PUBLICATION · WHITE PAPER",
@@ -186,72 +134,12 @@
       " · Gbígbàsílẹ̀ lọ́fẹ̀ẹ́"
     ],
     [
-      "Free download<",
-      "Gbígbàsílẹ̀ lọ́fẹ̀ẹ́<"
-    ],
-    [
-      ">Download<",
-      ">Gbà sílẹ̀<"
-    ],
-    [
-      ">Request access<",
-      ">Béèrè ìwọlé<"
-    ],
-    [
       ">English · PDF",
       ">Gẹ̀ẹ́sì · PDF"
     ],
     [
-      "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-01-\\2\">\\2 Ṣẹ́rẹ́ \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-02-\\2\">\\2 Èrèlè \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-03-\\2\">\\2 Ẹrẹ̀nà \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-04-\\2\">\\2 Ìgbé \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-05-\\2\">\\2 Ẹ̀bibi \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-06-\\2\">\\2 Òkúdu \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-07-\\2\">\\2 Agẹmọ \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-08-\\2\">\\2 Ògún \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-09-\\2\">\\2 Owewe \\1</time>"
-    ],
-    [
       "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
       "<time datetime=\"\\1-09-01\">Owewe \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-10-\\2\">\\2 Ọ̀wàrà \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-11-\\2\">\\2 Bélú \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-12-\\2\">\\2 Ọ̀pẹ̀ \\1</time>"
     ],
     [
       ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
@@ -302,22 +190,6 @@
       "\\1<section class=\"qa-a\"><p>Ọ̀nà méjì ni ó ń lọ pọ̀. <strong>Àwọn ìwé funfun ilé-iṣẹ́</strong>, tí a ṣe fún àwọn ẹgbẹ́ bíi Emerging Payments Association Asia (EPAA), ń ṣàyẹ̀wò àwọn ìyípadà ìpìlẹ̀ nínú ìdàgbàsókè ìsanwó — láìpẹ́ yìí, ipa ìṣirò kuántọ́mù tí ó ṣe pàtàkì fún kírípítógíráfì lórí àwọn ọ̀nà ìparí ìdúnàádúrà ńlá àti ti àkókò gidi. <strong>Àwọn ìròyìn ìwádìí tí a lò</strong> ń pàkíyèsí àwọn kókó ẹ̀rọ pàtó (bí àpẹẹrẹ: ìdámọ̀ ọ̀rọ̀ sísọ ní àkókò gidi pẹ̀lú Whisper + Metal Performance Shaders lórí Apple Silicon), a sì ń tẹ̀ wọ́n jáde gẹ́gẹ́ bí PDF tí a lè rà ní ọ̀kọ̀ọ̀kan.</p></section>"
     ],
     [
-      ">How often do you release new papers\\?</summary>",
-      ">Ìgbà mélòó ni ẹ ń ṣe àtẹ̀jáde tuntun?</summary>"
-    ],
-    [
-      "(<summary[^>]*>Ìgbà mélòó ni ẹ ń ṣe àtẹ̀jáde tuntun\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Kì í ṣe déédéé, nítorí a fẹ́ dídára ju ìwọ̀n ìgbà lọ. Àwọn àkọsílẹ̀ ìwádìí kúkúrú máa ń jáde ní gbogbo ọ̀sẹ̀ díẹ̀ nígbà tí ìlọsíwájú ẹ̀rọ kan bá tọ́ sí i. A ń tẹ àwọn ìwé funfun jáde ní ìbámu pẹ̀lú àwọn àyíká ilé-iṣẹ́ (bí àpẹẹrẹ: àkókò ìlànà òfin, àpéjọ EPAA).</p></section>"
-    ],
-    [
-      ">About EPAA</p>",
-      ">Nípa EPAA</p>"
-    ],
-    [
-      "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
-      "<p class=\"book-about\"><strong>Emerging Payments Association Asia (EPAA)</strong> ni ẹgbẹ́ akọ́ṣẹ́mọṣẹ́ ti ilé-iṣẹ́ ìsanwó ní agbègbè Éṣíà-Pásífíìkì, tí ó kó àwọn báńkì, àwọn olùṣàkóso ìsanwó, fintech àti àwọn olùṣèlànà jọ lórí àwọn ìbéèrè ìpìlẹ̀ tí ó kan gbogbo ẹ̀ka náà."
-    ],
-    [
       ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
       ">Ìsanwó tí ó lè kojú kuántọ́mù: ìdí tí ilé-iṣẹ́ ìsanwó fi gbọ́dọ̀ gbé ìgbésẹ̀ báyìí<"
     ],
@@ -330,40 +202,12 @@
       ">Ìwádìí àti ìtúpalẹ̀ àìpẹ́<"
     ],
     [
-      "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
-      "Owewe 2025 &middot; Emerging Payments Association Asia (EPAA)"
-    ],
-    [
       ">Quantum computing threatens the cryptographic foundations[^<]+",
       ">Ìṣirò kuántọ́mù ń halẹ̀ mọ́ àwọn ìpìlẹ̀ kírípítógíráfì ti iṣẹ́ ìnáwó. Ìsanwó — láti àkókò gidi dé ìparí ìdúnàádúrà kọjá orílẹ̀-èdè — dúró lórí àwọn ààbò tí ìṣirò kuántọ́mù yóò sọ di aláìwúlò níkẹyìn. Ìwé funfun EPAA yìí fi ìdí hàn tí ilé-iṣẹ́ náà fi gbọ́dọ̀ gbé ìgbésẹ̀ báyìí."
     ],
     [
-      "2024 &middot; Independent Research &middot;",
-      "2024 &middot; Ìwádìí olómìnira &middot;"
-    ],
-    [
-      ">This independent research paper presents[^<]+",
-      ">Ìwé ìwádìí olómìnira yìí ṣe àgbékalẹ̀ ìmúgbòòrò ìdámọ̀ ọ̀rọ̀ sísọ ní àkókò gidi lórí macOS pẹ̀lú OpenAI Whisper àti Metal Performance Shaders, tí ó fi hàn àwọn èrè tí a lè wọ̀n nínú ìdádúró àti ìlò agbára."
-    ],
-    [
-      ">License &amp; pricing<",
-      ">Ìwé àṣẹ àti owó<"
-    ],
-    [
-      ">One copy per buyer<",
-      ">Ẹ̀dà kan fún olùrà kọ̀ọ̀kan<"
-    ],
-    [
       ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
       ">Ìbéèrè?<span class=\"qa-headline-soft\"> Ìdáhùn.</span>"
-    ],
-    [
-      ">Questions\\? Answers\\.</h2>",
-      ">Ìbéèrè? Ìdáhùn.</h2>"
-    ],
-    [
-      ">Questions\\? Answers\\.<",
-      ">Ìbéèrè? Ìdáhùn.<"
     ],
     [
       ">Are the white papers free to read\\?</summary>",
@@ -386,10 +230,6 @@
       ">Báwo ni màá ṣe tẹ̀lé àwọn ìtẹ̀jáde tuntun?</summary>"
     ],
     [
-      ">Where can I follow new releases\\?</summary>",
-      ">Níbo ni mo ti lè tẹ̀lé àwọn ìtújáde tuntun?</summary>"
-    ],
-    [
       "(<summary[^>]*>Ṣé a lè ka àwọn ìwé funfun náà lọ́fẹ̀ẹ́\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Ìwé funfun EPAA <em>Quantum-Safe Payments</em> wà fún gbígbàsílẹ̀ lọ́fẹ̀ẹ́ ní gbangba lórí <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Ìròyìn ìwádìí olómìnira nípa ìdámọ̀ ọ̀rọ̀ sísọ ní àkókò gidi pẹ̀lú OpenAI Whisper àti Metal Performance Shaders ní ìwé àṣẹ, a sì lè rà á ní ọ̀tọ̀ ní $49.00 (Gẹ̀ẹ́sì, PDF, ~95 KB). Ẹ̀dà kan fún olùrà kọ̀ọ̀kan; gbígbàsílẹ̀ jẹ́ fún ìlò ara ẹni nìkan, kì í ṣe fún ìtànkálẹ̀.</p></section>"
     ],
@@ -410,314 +250,6 @@
       "\\1<section class=\"qa-a\"><p>A ń kéde àwọn ìwé àti àkọsílẹ̀ ìwádìí tuntun ní àkọ́kọ́ nípasẹ̀ <a href=\"/yo/rss.xml\">ìṣàn RSS</a> ojú-òpó náà àti ìwé ìròyìn <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>, tí ó bo kírípítógíráfì lẹ́yìn-kuántọ́mù, ìlànà báńkì àárín gbùngbùn, àti ètò ìṣípòpadà àwọn ètò ìsanwó pàtàkì. Kò sí spam — àwọn ohun tuntun nìkan.</p></section>"
     ],
     [
-      "(<summary[^>]*>Níbo ni mo ti lè tẹ̀lé àwọn ìtújáde tuntun\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Forúkọsílẹ̀ fún <a href=\"/yo/rss.xml\">ìṣàn RSS</a> tàbí tẹ̀lé mi lórí <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> láti mọ̀ nípa àwọn ìtẹ̀jáde tuntun.</p></section>"
-    ],
-    [
-      ">Browse all projects<",
-      ">Wo gbogbo àwọn iṣẹ́<"
-    ],
-    [
-      ">Three areas of practice\\.\\s*<span",
-      ">Àwọn agbègbè iṣẹ́ mẹ́ta. <span"
-    ],
-    [
-      ">One philosophy\\.</span>",
-      ">Ìmọ̀ ọgbọ́n kan ṣoṣo.</span>"
-    ],
-    [
-      ">WHAT IS INSIDE<",
-      ">OHUN TÍ Ó WÀ NÍNÚ RẸ̀<"
-    ],
-    [
-      ">OPEN SOURCE FOR FINANCIAL SERVICES<",
-      ">ORÍSUN ṢÍṢÍ FÚN IṢẸ́ ÌNÁWÓ<"
-    ],
-    [
-      ">Payments and settlement\\.<",
-      ">Ìsanwó àti ìparí ìdúnàádúrà.<"
-    ],
-    [
-      ">Post-quantum cryptography\\.<",
-      ">Kírípítógíráfì lẹ́yìn-kuántọ́mù.<"
-    ],
-    [
-      ">Tooling and infrastructure\\.<",
-      ">Àwọn ohun èlò àti ìpìlẹ̀ ìdàgbàsókè.<"
-    ],
-    [
-      ">Applied AI\\.<",
-      ">AI tí a lò.<"
-    ],
-    [
-      ">Explore payments tools\\s+<",
-      ">Ṣàwárí àwọn ohun èlò ìsanwó <"
-    ],
-    [
-      ">Explore quantum-safe libraries\\s+<",
-      ">Ṣàwárí àwọn àkójọ tí ó lè kojú kuántọ́mù <"
-    ],
-    [
-      ">Explore developer tools\\s+<",
-      ">Ṣàwárí àwọn ohun èlò olùdàgbàsókè <"
-    ],
-    [
-      ">Explore PQC tools\\s+<",
-      ">Ṣàwárí àwọn ohun èlò PQC <"
-    ],
-    [
-      ">Explore AI tools\\s+<",
-      ">Ṣàwárí àwọn ohun èlò AI <"
-    ],
-    [
-      ">Authored & maintained<",
-      ">A kọ wọ́n a sì ń tọ́jú wọn<"
-    ],
-    [
-      ">Authored &amp; maintained<",
-      ">A kọ wọ́n a sì ń tọ́jú wọn<"
-    ],
-    [
-      ">Open source for the future of finance\\.<",
-      ">Orísun ṣíṣí fún ọjọ́ iwájú ìnáwó.<"
-    ],
-    [
-      "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\">Àwọn ohun èlò ISO 20022 <strong>pain.001</strong> àti <strong>pacs.008</strong>, kíka ìwé àkọọ́lẹ̀ báńkì, àti àwọn àkójọ Rust fún ìṣípòpadà sí àwọn ìránṣẹ́ onítòlẹ́sẹẹsẹ kọjá orílẹ̀-èdè. A kọ́ wọn fún SWIFT, SEPA àti àwọn ètò ìsanwó àkókò gidi.</p>"
-    ],
-    [
-      "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\">Ìṣàmúlò Rust ti <strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203), àwọn ìpìlẹ̀ hash àti àwọn bíríkì tí ó lè kojú kuántọ́mù. Ààbò tí ó kọjá ìgbà RSA àti ìlà elliptic nínú ìjẹ́rìí ìnáwó.</p>"
-    ],
-    [
-      "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
-      "<p class=\"setup-card-body\">Àwọn àkójọ Rust orísun ṣíṣí fún ìtòlẹ́sẹẹsẹ dátà, ìṣàkọsílẹ̀, ìṣẹ̀dá kóòdù, ọjọ́ àti àkókò. Pẹ̀lú <strong>Static Site Generator</strong> (SSG) tí ó ń kọ́ ojú-òpó yìí, àti agbègbè olùdàgbàsókè tí ó mú kí ó ṣeé fi jíṣẹ́.</p>"
-    ],
-    [
-      ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
-      ">Àwọn ohun èlò ISO 20022 fún ìṣípòpadà àgbáyé. Ìṣẹ̀dá fáìlì Pain.001, ìfìdí gbèsè ránṣẹ́ kọjá orílẹ̀-èdè pacs.008, àti kíka ìwé àkọọ́lẹ̀ báńkì lọ́nà tí ó ní ètò.<"
-    ],
-    [
-      ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
-      ">Ìṣàmúlò Rust ti CRYSTALS-Kyber, àwọn ìpìlẹ̀ hash àti digest, àti àwọn bíríkì tí ó lè kojú kuántọ́mù fún ìjẹ́rìí ìpele ìnáwó.<"
-    ],
-    [
-      ">Applied artificial intelligence\\.<",
-      ">Ọgbọ́n atọ́nà tí a lò.<"
-    ],
-    [
-      ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
-      ">Àwọn iṣẹ́ AI orísun ṣíṣí tí ń lo ìdámọ̀ ọ̀rọ̀ sísọ, èdè àdánidá, àti àwọn àwòṣe èdè ńlá sí àwọn ìṣòro gidi ti ìnáwó àti ìṣiṣẹ́.<"
-    ],
-    [
-      ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
-      ">Àkójọ Python tí ó ń ṣe ìṣẹ̀dá fáìlì ìsanwó ISO 20022 pain.001 láti CSV tàbí SQLite fúnra rẹ̀. A kọ́ ọ fún ìṣípòpadà àgbáyé sí àwọn ìránṣẹ́ onítòlẹ́sẹẹsẹ kọjá orílẹ̀-èdè.<"
-    ],
-    [
-      ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
-      ">Ṣẹ̀dá, ṣàyẹ̀wò, kí o sì fi àwọn ìránṣẹ́ ìsanwó ISO 20022 pacs.008 ránṣẹ́ fún ìfìdí gbèsè oníbàárà láti FI sí FI. Ìṣàyẹ̀wò JSON Schema + XSD, IBAN ní orílẹ̀-èdè 75, bíbo dátà ara ẹni ní ìbámu GDPR/PCI-DSS.<"
-    ],
-    [
-      ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
-      ">Ohun èlò Python ìpele ìnáwó tí ó ń yí àwọn ìwé àkọọ́lẹ̀ báńkì oríṣiríṣi padà sí dátà onítòlẹ́sẹẹsẹ — fún òtítọ́ àwọn fáìlì àkọọ́lẹ̀ gidi àti àwọn ìbéèrè àyẹ̀wò ti agbègbè tí òfin ń ṣàkóso.<"
-    ],
-    [
-      ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
-      ">Ohun èlò Rust fún mímú ìpín owó dára sí i kọjá àwọn ètò owó ìdókòwò dídíjú pẹ̀lú àsọtẹ́lẹ̀ tí AI ń darí. A pète rẹ̀ fún ìṣúra, ìṣírò owó ìdókòwò, àti ìpín ohun ìní nínú àwọn báńkì àti àwọn olùṣàkóso ohun ìní.<"
-    ],
-    [
-      ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
-      ">Àkójọ Rust fún ṣíṣẹ̀dá àti ṣíṣàkóso àwọn àwòrán kóòdù QR ní oríṣiríṣi ọ̀nà. Ìlò ìsanwó tààrà: àwọn kóòdù QR EPC fún ìfìdí gbèsè SEPA, QR ọ̀nà ìsanwó fún gbígba owó ní ilé ìtajà, àti àwọn ìṣàn ìjẹ́rìí àfikún.<"
-    ],
-    [
-      ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
-      ">Ìṣàmúlò Rust tí ó lágbára ti CRYSTALS-Kyber, ìlànà NIST FIPS 203 fún ìkó-kọ́kọ́rọ́-pamọ́ lẹ́yìn-kuántọ́mù fún ìlò gbogbogbò.<"
-    ],
-    [
-      ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
-      ">Àwọn algoríìdìmù hash àti digest tí ó ní ààbò fún ìsekóòdù àti ìṣàyẹ̀wò ọ̀rọ̀ ìpamọ́, tí a pète pẹ̀lú ìdúró tí ó lè kojú kuántọ́mù fún ìgbà lẹ́yìn-PQC.<"
-    ],
-    [
-      ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
-      ">CLI oníhànà-púpọ̀ tí ó yára, tí ó rọrùn, tí ó sì lágbára fún ṣíṣẹ̀dá àwọn ọ̀rọ̀ ìpamọ́ tí ó lágbára, tí ó yàtọ̀, tí ó sì jẹ́ àìròtẹ́lẹ̀, tí àwọn ìpìlẹ̀ kírípítógíráfì tí a ti ṣàyẹ̀wò gbé ró.<"
-    ],
-    [
-      ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
-      ">Olùrànlọ́wọ́ ohùn tí ó ní ìlọsíwájú tí ó ń lo GPT ti OpenAI fún ìbáraẹnisọ̀rọ̀ àdánidá, àkópọ̀ PDF, àti ìtọ́jú dátà tí ó gbéṣẹ́. A kọ́ ọ fún ìlò ara ẹni àti ti alákòóso.<"
-    ],
-    [
-      ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
-      ">Yí ohùn padà sí ìkọ̀wé ní àkókò gidi pẹ̀lú ìdámọ̀ ọ̀rọ̀ sísọ AI tí ó ní ìlọsíwájú. A pète rẹ̀ láti fa ìjìnlẹ̀ tí a lè lò jáde nínú dátà ohùn àti láti mú ìrírí oníbàárà àti iṣẹ́ dára sí i.<"
-    ],
-    [
-      ">Featured · Python · ISO 20022<",
-      ">Àyànfẹ́ · Python · ISO 20022<"
-    ],
-    [
-      ">Python · ISO 20022<",
-      ">Python · ISO 20022<"
-    ],
-    [
-      ">Python · Finance<",
-      ">Python · Ìnáwó<"
-    ],
-    [
-      ">Rust · Treasury · AI<",
-      ">Rust · Ìṣúra · AI<"
-    ],
-    [
-      ">Rust · Payments QR<",
-      ">Rust · QR Ìsanwó<"
-    ],
-    [
-      ">Rust · Quantum<",
-      ">Rust · Kuántọ́mù<"
-    ],
-    [
-      ">Rust · Security<",
-      ">Rust · Ààbò<"
-    ],
-    [
-      ">AI · Voice<",
-      ">AI · Ohùn<"
-    ],
-    [
-      ">AI · Speech<",
-      ">AI · Ọ̀rọ̀ sísọ<"
-    ],
-    [
-      ">PAYMENTS<",
-      ">ÌSANWÓ<"
-    ],
-    [
-      ">POST-QUANTUM CRYPTOGRAPHY<",
-      ">KÍRÍPÍTÓGÍRÁFÌ LẸ́YÌN-KUÁNTỌ́MÙ<"
-    ],
-    [
-      ">AI AND VOICE<",
-      ">AI ÀTI OHÙN<"
-    ],
-    [
-      ">DEVELOPER TOOLING<",
-      ">ÀWỌN OHUN ÈLÒ OLÙDÀGBÀSÓKÈ<"
-    ],
-    [
-      ">OPEN-SOURCE RUST<",
-      ">RUST ORÍSUN ṢÍṢÍ<"
-    ],
-    [
-      ">WEB AND DEVELOPER ENVIRONMENT<",
-      ">WẸ́Ẹ̀BÙ ÀTI AGBÈGBÈ OLÙDÀGBÀSÓKÈ<"
-    ],
-    [
-      ">Tooling\\.<",
-      ">Àwọn ohun èlò.<"
-    ],
-    [
-      ">Rust libraries and tooling\\.</h2>",
-      ">Àwọn àkójọ àti ohun èlò Rust.</h2>"
-    ],
-    [
-      "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
-      "<p class=\"cat-lede\">Àwọn iṣẹ́ Rust orísun ṣíṣí kọjá ìtòlẹ́sẹẹsẹ dátà, ìṣàkọsílẹ̀, ìṣẹ̀dá kóòdù, ìṣirò, àti àwọn ohun èlò olùdàgbàsókè — pẹ̀lú janaréta ojú-ìwé aláìyípadà tí ó wà lẹ́yìn ojú-òpó yìí.</p>"
-    ],
-    [
-      ">Web, templates and environment\\.</h2>",
-      ">Wẹ́ẹ̀bù, àwòṣe àti agbègbè.</h2>"
-    ],
-    [
-      "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
-      "<p class=\"cat-lede\">Àwọn àwòṣe ìbẹ̀rẹ̀, ìtẹ̀jáde ẹ̀ka méjì, ìlànà CSS kan, àti àwọn dotfiles tí ń mú kí agbègbè ìdàgbàsókè jẹ́ àtúnṣe.</p>"
-    ],
-    [
-      ">What licence are these projects released under\\?</summary>",
-      ">Lábẹ́ ìwé àṣẹ wo ni a ṣe àtẹ̀jáde àwọn iṣẹ́ wọ̀nyí?</summary>"
-    ],
-    [
-      ">Are these projects production-ready\\?</summary>",
-      ">Ṣé àwọn iṣẹ́ wọ̀nyí ti ṣetán fún ìlò gidi?</summary>"
-    ],
-    [
-      ">How can I contribute or report an issue\\?</summary>",
-      ">Báwo ni mo ṣe lè kópa tàbí ròyìn ìṣòro?</summary>"
-    ],
-    [
-      ">Can I use these libraries in a regulated banking environment\\?</summary>",
-      ">Ṣé mo lè lo àwọn àkójọ wọ̀nyí nínú agbègbè ilé ìfowópamọ́ tí òfin ń ṣàkóso?</summary>"
-    ],
-    [
-      ">Do you offer commercial support or consulting\\?</summary>",
-      ">Ṣé ẹ ń pèsè ìtìlẹ́yìn òwò tàbí ìmọ̀ràn?</summary>"
-    ],
-    [
-      ">How do I follow new releases\\?</summary>",
-      ">Báwo ni màá ṣe tẹ̀lé àwọn ìtújáde tuntun?</summary>"
-    ],
-    [
-      "(<summary[^>]*>Lábẹ́ ìwé àṣẹ wo ni a ṣe àtẹ̀jáde àwọn iṣẹ́ wọ̀nyí\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>A tẹ gbogbo àwọn iṣẹ́ jáde lábẹ́ ìwé àṣẹ <strong>Apache-2.0</strong>. Fáìlì <code>LICENSE</code> tí ó wà ní ìpìlẹ̀ ibi ìpamọ́ kọ̀ọ̀kan ni ó ní ọ̀rọ̀ ìkẹyìn.</p></section>"
-    ],
-    [
-      "(<summary[^>]*>Ṣé àwọn iṣẹ́ wọ̀nyí ti ṣetán fún ìlò gidi\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Ó dá lórí iṣẹ́ náà. Àwọn àkójọ tí a fi àmì <em>v1.x</em> sí ti dúró ṣinṣin, a sì ti dán wọn wò lábẹ́ ẹrù; àwọn tí kò tíì dé v1 jẹ́ ìpìlẹ̀ tí ó lágbára ṣùgbọ́n wọ́n lè yípadà síbẹ̀. README ibi ìpamọ́ kọ̀ọ̀kan ń sọ ipò ìsinsìnyí; bí o bá nílò ìdánilójú pàtó fún ìlò gidi, <a href=\"/yo/kan-si-wa/\">kàn sí mi</a>.</p></section>"
-    ],
-    [
-      "(<summary[^>]*>Báwo ni mo ṣe lè kópa tàbí ròyìn ìṣòro\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Iṣẹ́ kọ̀ọ̀kan ní ibi ìpamọ́ GitHub ní gbangba ní <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Ṣí issue kan níbi tí o ti ṣàlàyé ìṣòro náà (àpẹẹrẹ àtúnṣe kúkúrú dára) tàbí pull request tí ó so mọ́ issue kan. <em>Developer Certificate of Origin</em> ni ó ń darí àwọn ìkópa, ó sì nílò àwọn commit tí a fọwọ́sí.</p></section>"
-    ],
-    [
-      "(<summary[^>]*>Ṣé mo lè lo àwọn àkójọ wọ̀nyí nínú agbègbè ilé ìfowópamọ́ tí òfin ń ṣàkóso\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Bẹ́ẹ̀ ni, pẹ̀lú ìṣọ́ra tí ó bá a mu. Àwọn àkójọ náà jẹ́ iṣẹ́ orísun ṣíṣí olómìnira, kì í ṣe ọjà tí òfin ń ṣàkóso. Lo àwọn ìlànà rẹ tí ó ṣe déédéé fún ẹ̀wọ̀n ìpèsè, ààbò àti àyẹ̀wò ìgbẹ́kẹ̀lé — vendoring nípasẹ̀ dígí inú ilé, ìwádìí SBOM, dídè nípasẹ̀ Git SHA tàbí ìtẹ̀wọ́ kírípítógíráfì — ṣáájú kí o tó fi wọ́n sínú iṣẹ́ gidi lórí ìpìlẹ̀ ìsanwó.</p></section>"
-    ],
-    [
-      "(<summary[^>]*>Ṣé ẹ ń pèsè ìtìlẹ́yìn òwò tàbí ìmọ̀ràn\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Bẹ́ẹ̀ ni, lórí àyànfẹ́. Àwọn iṣẹ́ náà dá lé ìṣípòpadà ISO&nbsp;20022, àwọn ètò ìṣípòpadà lẹ́yìn-kuántọ́mù, àti AI tí a lò nínú iṣẹ́ ìnáwó. <a href=\"/yo/kan-si-wa/\">Kàn sí mi</a> pẹ̀lú àlàyé kúkúrú, àkókò rẹ àti àwọn ààlà tí ó bá wà.</p></section>"
-    ],
-    [
-      "(<summary[^>]*>Báwo ni màá ṣe tẹ̀lé àwọn ìtújáde tuntun\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>A ń kéde gbogbo ìwé tí ó ní ọjọ́ lórí ojú-òpó náà nípasẹ̀ <a href=\"/yo/rss.xml\">ìṣàn RSS</a> àti ìwé ìròyìn <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Àwọn ibi ìpamọ́ kọ̀ọ̀kan náà ń tẹ àwọn ìtújáde jáde lórí GitHub tí o lè tẹ̀lé tààrà.</p></section>"
-    ],
-    [
-      ">GET IN TOUCH<",
-      ">KAN SÍ WA<"
-    ],
-    [
-      ">Have an idea\\? Let's build it\\.<",
-      ">Ṣé o ní èrò kan? Jẹ́ kí a kọ́ ọ.<"
-    ],
-    [
-      ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
-      ">Ìfọwọ́sowọ́pọ̀ orísun ṣíṣí, iṣẹ́ ẹ̀rọ tí a paṣẹ, tàbí ìjíròrò lásán nípa ọjọ́ iwájú ìsanwó. Èyíkéyìí tí ó bá bá ọ mu.<"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">FEATURED</p>",
-      "<p class=\"newsroom-kicker\">ÀYÀNFẸ́</p>"
-    ],
-    [
-      "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
-      "aria-label=\"Tag: \\1, \\2 Posts\""
-    ],
-    [
-      "(\\(\\d+) Posts\\)",
-      "\\1 Posts)"
-    ],
-    [
-      ">Featured Tags \\((\\d+)\\)</h2>",
-      ">Featured Tags (\\1)</h2>"
-    ],
-    [
-      ">Featured Tags<",
-      ">Àwọn àmì àyànfẹ́<"
-    ],
-    [
-      "<a class=\"pill ghost\" href=\"/fr/contact/\">Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/yo/kan-si-wa/\">Get in touch</a>"
-    ],
-    [
-      ">Get in touch</a>",
-      ">Kàn sí wa</a>"
-    ],
-    [
       "Made with Static Site Generator: Rust-Powered SSG",
       "A fi Static Site Generator ṣe é: SSG tí Rust ń darí"
     ],
@@ -730,148 +262,24 @@
       "Website created with Static Site Generator (SSG)"
     ],
     [
-      "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
-      "Static Site Generator (SSG) jẹ́ ohun èlò tí ó yára gan-an fún ìmúgbòòrò ẹ̀rọ ìwádìí (SEO) àti ìbámu pẹ̀lú àwọn ìlànà ìwọlé rírọrùn."
-    ],
-    [
-      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
-      "Àtọ́ka àwọn kókó àti àmì: AI, ìsanwó, kuántọ́mù, Rust orísun ṣíṣí"
-    ],
-    [
       "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
       "Ṣàwárí ojú-òpó Sebastien Rousseau nípa kókó àti àmì: AI, ìsanwó, ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, Rust orísun ṣíṣí, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ."
-    ],
-    [
-      "Website Accessibility Statement — Standards &amp; Contact",
-      "Ìkéde ìwọlé rírọrùn ojú-òpó — àwọn ìlànà àti ìbánisọ̀rọ̀"
     ],
     [
       "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
       "Ìkéde yìí ṣàlàyé ìwọlé rírọrùn ojú-òpó wa, ohun tí a ń ṣe láti mú un dára sí i, àti bí o ṣe lè kàn sí wa lórí ọ̀rọ̀ yìí."
     ],
     [
-      "Privacy Statement — How Your Data Is Collected &amp; Used",
-      "Ìkéde àṣírí — bí a ṣe ń kó dátà rẹ jọ tí a sì ń lò ó"
-    ],
-    [
       "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
       "Ojú-ìwé yìí sọ fún ọ nípa àwọn ìlànà wa nípa ìkójọ, ìlò, àti ìtànkálẹ̀ dátà ara ẹni nígbà tí o bá ń lo ojú-òpó wa"
-    ],
-    [
-      "Let's Start a Conversation That Will Make a Real Difference",
-      "Jẹ́ kí a bẹ̀rẹ̀ ìjíròrò tí yóò ṣe ìyàtọ̀ gidi"
-    ],
-    [
-      "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
-      "Ṣé o ní ìbéèrè tàbí àsọyé? Kàn sí mi nípasẹ̀ fọ́ọ̀mù tí ó wà nísàlẹ̀. Inú mi máa ń dùn láti gbọ́ lọ́dọ̀ rẹ, èmi yóò sì dáhùn ní kíákíá."
-    ],
-    [
-      "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
-      "Àwọn òfin àti ipò ìlò ojú-òpó — Sebastien Rousseau"
     ],
     [
       "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
       "Nípa wíwọlé sí ojú-òpó yìí, o gbà pé o ó tẹ̀lé àwọn Òfin Ìlò wọ̀nyí àti gbogbo òfin àti ìlànà tí ó bá kan án."
     ],
     [
-      ">Latest research<",
-      ">Ka ìwádìí tuntun<"
-    ],
-    [
-      ">Read latest research<",
-      ">Ka ìwádìí tuntun<"
-    ],
-    [
-      ">Featured articles<",
-      ">Ka ìwádìí tuntun<"
-    ],
-    [
-      ">All articles<",
-      ">Ka ìwádìí tuntun<"
-    ],
-    [
-      ">Read more<",
-      ">Ka ìwádìí tuntun<"
-    ],
-    [
-      ">Read full article<",
-      ">Ka ìwádìí tuntun<"
-    ],
-    [
-      ">Newest first<",
-      ">Tuntun ní àkọ́kọ́<"
-    ],
-    [
-      ">Oldest first<",
-      ">Àtijọ́ ní àkọ́kọ́<"
-    ],
-    [
-      ">By topic<",
-      ">Nípa kókó<"
-    ],
-    [
-      ">All topics<",
-      ">Gbogbo àwọn kókó<"
-    ],
-    [
-      ">By tag<",
-      ">Nípa àmì<"
-    ],
-    [
-      ">All tags<",
-      ">Gbogbo àwọn àmì<"
-    ],
-    [
-      ">Published<",
-      ">Tẹ̀ jáde<"
-    ],
-    [
-      ">Updated<",
-      ">Sọdọtun<"
-    ],
-    [
       ">Open source<",
       ">Orísun ṣíṣí<"
-    ],
-    [
-      ">Authored & maintained<",
-      ">A kọ wọ́n a sì ń tọ́jú wọn<"
-    ],
-    [
-      ">Open source for the future of finance\\.<",
-      ">Orísun ṣíṣí fún ọjọ́ iwájú ìnáwó.<"
-    ],
-    [
-      ">A portfolio of",
-      ">Àkójọpọ̀ ti"
-    ],
-    [
-      ">Start a conversation<",
-      ">Bẹ̀rẹ̀ ìjíròrò<"
-    ],
-    [
-      ">Drop me a line<",
-      ">Kàn sí wa<"
-    ],
-    [
-      ">Learn more<",
-      ">Kọ́ sí i<"
-    ],
-    [
-      ">Subscribe<",
-      ">Forúkọsílẹ̀<"
-    ],
-    [
-      ">Follow<",
-      ">Tẹ̀lé<"
-    ],
-    [
-      ">Latest<",
-      ">Ka ìwádìí tuntun<"
-    ],
-    [
-      "<h1>White Papers (?:&amp;|&) Research</h1>",
-      "<h1>Àwọn ìwé funfun àti ìwádìí</h1>"
     ],
     [
       "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
@@ -906,24 +314,12 @@
       "<h1>Ilé ìkàwé olùdàgbàsókè: àwọn kókó báńkì, orísun ṣíṣí àti àkójọpọ̀</h1>"
     ],
     [
-      "<h1>Enterprise AI Financial Technology (?:&amp;|&) Leadership</h1>",
-      "<h1>Ìmọ̀-ẹ̀rọ ìnáwó AI ilé-iṣẹ́ àti aṣáájú</h1>"
-    ],
-    [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Àwọn ìtẹ̀jáde ti kó lọ sí Ìwádìí</h1>"
     ],
     [
       "aria-label=\"Cloud Native Banking\"",
       "aria-label=\"Ìfowópamọ́ tí a kọ́ lórí àwọsánmà\""
-    ],
-    [
-      "alt=\"Cloud Native Banking — topic banner\"",
-      "alt=\"Ìfowópamọ́ tí a kọ́ lórí àwọsánmà — àsíá kókó\""
-    ],
-    [
-      "<h3><a href=\"/yo/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
-      "<h3><a href=\"/yo/topics/cloud-native-banking/index.html\">Ìfowópamọ́ tí a kọ́ lórí àwọsánmà</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
@@ -938,14 +334,6 @@
       "aria-label=\"Òye àtọwọ́dá aṣojú nínú ilé ìfowópamọ́\""
     ],
     [
-      "alt=\"Agentic AI in Banking — topic banner\"",
-      "alt=\"Òye àtọwọ́dá aṣojú nínú ilé ìfowópamọ́ — àsíá kókó\""
-    ],
-    [
-      "<h3><a href=\"/yo/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
-      "<h3><a href=\"/yo/topics/agentic-ai-banking/index.html\">Òye àtọwọ́dá aṣojú nínú ilé ìfowópamọ́</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
       "<h3><a href=\"/yo/awon-koko/agentic-ai-banking/index.html\">Òye àtọwọ́dá aṣojú nínú ilé ìfowópamọ́</a></h3>"
     ],
@@ -956,14 +344,6 @@
     [
       "aria-label=\"Treasury Automation\"",
       "aria-label=\"Ìṣàkóso owó ìṣúra lọ́nà adáṣe\""
-    ],
-    [
-      "alt=\"Treasury Automation — topic banner\"",
-      "alt=\"Ìṣàkóso owó ìṣúra lọ́nà adáṣe — àsíá kókó\""
-    ],
-    [
-      "<h3><a href=\"/yo/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
-      "<h3><a href=\"/yo/topics/treasury-automation/index.html\">Ìṣàkóso owó ìṣúra lọ́nà adáṣe</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
@@ -978,14 +358,6 @@
       "aria-label=\"Agbára ìfaradà iṣẹ́ àti DORA\""
     ],
     [
-      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
-      "alt=\"Agbára ìfaradà iṣẹ́ àti DORA — àsíá kókó\""
-    ],
-    [
-      "<h3><a href=\"/yo/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
-      "<h3><a href=\"/yo/topics/operational-resilience-dora/index.html\">Agbára ìfaradà iṣẹ́ àti DORA</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
       "<h3><a href=\"/yo/awon-koko/operational-resilience-dora/index.html\">Agbára ìfaradà iṣẹ́ àti DORA</a></h3>"
     ],
@@ -996,14 +368,6 @@
     [
       "aria-label=\"Stablecoins &amp; Tokenisation\"",
       "aria-label=\"Owó dígítà tí kò yípadà àti títokenì\""
-    ],
-    [
-      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
-      "alt=\"Owó dígítà tí kò yípadà àti títokenì — àsíá kókó\""
-    ],
-    [
-      "<h3><a href=\"/yo/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
-      "<h3><a href=\"/yo/topics/stablecoins-tokenisation/index.html\">Owó dígítà tí kò yípadà àti títokenì</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
@@ -1018,14 +382,6 @@
       "aria-label=\"Òye àtọwọ́dá aṣèdá àti àwọn àwòṣe èdè ńlá\""
     ],
     [
-      "alt=\"Generative AI &amp; LLMs — topic banner\"",
-      "alt=\"Òye àtọwọ́dá aṣèdá àti àwọn àwòṣe èdè ńlá — àsíá kókó\""
-    ],
-    [
-      "<h3><a href=\"/yo/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
-      "<h3><a href=\"/yo/topics/generative-ai-llms/index.html\">Òye àtọwọ́dá aṣèdá àti àwọn àwòṣe èdè ńlá</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
       "<h3><a href=\"/yo/awon-koko/generative-ai-llms/index.html\">Òye àtọwọ́dá aṣèdá àti àwọn àwòṣe èdè ńlá</a></h3>"
     ],
@@ -1036,14 +392,6 @@
     [
       "aria-label=\"Voice &amp; Speech AI\"",
       "aria-label=\"Òye àtọwọ́dá ohùn àti ọ̀rọ̀ sísọ\""
-    ],
-    [
-      "alt=\"Voice &amp; Speech AI — topic banner\"",
-      "alt=\"Òye àtọwọ́dá ohùn àti ọ̀rọ̀ sísọ — àsíá kókó\""
-    ],
-    [
-      "<h3><a href=\"/yo/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
-      "<h3><a href=\"/yo/topics/voice-speech-ai/index.html\">Òye àtọwọ́dá ohùn àti ọ̀rọ̀ sísọ</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
@@ -1058,14 +406,6 @@
       "aria-label=\"Ìṣàkóso àti ìlànà òye àtọwọ́dá\""
     ],
     [
-      "alt=\"AI Governance &amp; Regulation — topic banner\"",
-      "alt=\"Ìṣàkóso àti ìlànà òye àtọwọ́dá — àsíá kókó\""
-    ],
-    [
-      "<h3><a href=\"/yo/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
-      "<h3><a href=\"/yo/topics/ai-governance-regulation/index.html\">Ìṣàkóso àti ìlànà òye àtọwọ́dá</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
       "<h3><a href=\"/yo/awon-koko/ai-governance-regulation/index.html\">Ìṣàkóso àti ìlànà òye àtọwọ́dá</a></h3>"
     ],
@@ -1076,14 +416,6 @@
     [
       "aria-label=\"Wholesale Payments Rails\"",
       "aria-label=\"Àwọn ọ̀nà ìsanwó ńlá\""
-    ],
-    [
-      "alt=\"Wholesale Payments Rails — topic banner\"",
-      "alt=\"Àwọn ọ̀nà ìsanwó ńlá — àsíá kókó\""
-    ],
-    [
-      "<h3><a href=\"/yo/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
-      "<h3><a href=\"/yo/topics/wholesale-payments-rails/index.html\">Àwọn ọ̀nà ìsanwó ńlá</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",

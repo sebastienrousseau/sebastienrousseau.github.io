@@ -1,0 +1,15 @@
+{
+  "_comment": "Fixture searchAnalytics.query response (dimensions page, date) for tests/unit/test_search_weekly.py. Report end date 2026-11-01: current week 2026-10-26..11-01, previous 10-19..10-25, trailing 28 days 10-05..11-01. English falls exactly 30% (1000 -> 700), French rises, German has no previous-week impressions, Dutch (published, not a kept locale) falls 90%.",
+  "rows": [
+    {"keys": ["https://sebastienrousseau.com/", "2026-10-20"], "clicks": 40, "impressions": 600, "ctr": 0.0667, "position": 4.0},
+    {"keys": ["https://sebastienrousseau.com/", "2026-10-27"], "clicks": 30, "impressions": 500, "ctr": 0.06, "position": 5.0},
+    {"keys": ["https://sebastienrousseau.com/iso20022-mcp/", "2026-10-21"], "clicks": 10, "impressions": 400, "ctr": 0.025, "position": 8.0},
+    {"keys": ["https://sebastienrousseau.com/iso20022-mcp/", "2026-10-28"], "clicks": 2, "impressions": 200, "ctr": 0.01, "position": 11.0},
+    {"keys": ["https://sebastienrousseau.com/fr/", "2026-10-22"], "clicks": 1, "impressions": 100, "ctr": 0.01, "position": 9.0},
+    {"keys": ["https://sebastienrousseau.com/fr/", "2026-10-29"], "clicks": 3, "impressions": 150, "ctr": 0.02, "position": 7.0},
+    {"keys": ["https://sebastienrousseau.com/de/", "2026-10-30"], "clicks": 0, "impressions": 40, "ctr": 0.0, "position": 20.0},
+    {"keys": ["https://sebastienrousseau.com/nl/", "2026-10-23"], "clicks": 0, "impressions": 100, "ctr": 0.0, "position": 30.0},
+    {"keys": ["https://sebastienrousseau.com/nl/", "2026-10-31"], "clicks": 0, "impressions": 10, "ctr": 0.0, "position": 40.0},
+    {"keys": ["https://sebastienrousseau.com/about/", "2026-10-06"], "clicks": 5, "impressions": 50, "ctr": 0.1, "position": 3.0}
+  ]
+}

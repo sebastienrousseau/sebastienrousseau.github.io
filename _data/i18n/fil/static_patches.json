@@ -22,14 +22,6 @@
       "HALIGI · PAKSA"
     ],
     [
-      "PILLAR · PROJECT",
-      "HALIGI · PROYEKTO"
-    ],
-    [
-      "Curated topic clusters[^<]+",
-      "Mga piling kumpol ng paksa — pumili ng isang hibla at sundan ito sa buong arkibo."
-    ],
-    [
       "aria-label=\"Post-Quantum Cryptography\"",
       "aria-label=\"Kriptograpiyang post-quantum\""
     ],
@@ -48,46 +40,6 @@
     [
       "aria-label=\"Blockchain &amp; Digital Assets\"",
       "aria-label=\"Blockchain at mga digital na ari-arian\""
-    ],
-    [
-      "alt=\"Post-Quantum Cryptography — topic banner\"",
-      "alt=\"Kriptograpiyang post-quantum — banner ng paksa\""
-    ],
-    [
-      "alt=\"ISO 20022 &amp; Payments — topic banner\"",
-      "alt=\"ISO 20022 at mga pagbabayad — banner ng paksa\""
-    ],
-    [
-      "alt=\"Applied AI in Banking — topic banner\"",
-      "alt=\"Inilapat na AI sa banking — banner ng paksa\""
-    ],
-    [
-      "alt=\"Rust &amp; Open Source — topic banner\"",
-      "alt=\"Rust at open source — banner ng paksa\""
-    ],
-    [
-      "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
-      "alt=\"Blockchain at mga digital na ari-arian — banner ng paksa\""
-    ],
-    [
-      "<h3><a href=\"/fr/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
-      "<h3><a href=\"/fil/mga-paksa/post-quantum-cryptography/index.html\">Kriptograpiyang post-quantum</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/fr/topics/iso-20022-payments/[^\"]+\">ISO 20022 &amp; Payments</a></h3>",
-      "<h3><a href=\"/fil/mga-paksa/iso-20022-payments/index.html\">ISO 20022 at mga pagbabayad</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/fr/topics/applied-ai-banking/[^\"]+\">Applied AI in Banking</a></h3>",
-      "<h3><a href=\"/fil/mga-paksa/applied-ai-banking/index.html\">Inilapat na AI sa banking</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/fr/topics/rust-open-source/[^\"]+\">Rust &amp; Open Source</a></h3>",
-      "<h3><a href=\"/fil/mga-paksa/rust-open-source/index.html\">Rust at open source</a></h3>"
-    ],
-    [
-      "<h3><a href=\"/fr/topics/blockchain-digital-assets/[^\"]+\">Blockchain &amp; Digital Assets</a></h3>",
-      "<h3><a href=\"/fil/mga-paksa/blockchain-digital-assets/index.html\">Blockchain at mga digital na ari-arian</a></h3>"
     ],
     [
       "<p class=\"newsroom-excerpt\">Lattice-based cryptography, NIST PQC standards, quantum-safe payments,[^<]+</p>",
@@ -116,10 +68,6 @@
     [
       "INDUSTRY WHITE PAPER · EPAA",
       "PAMPAMANTAYANG WHITE PAPER · EPAA"
-    ],
-    [
-      "INDUSTRY WHITE PAPER",
-      "PAMPAMANTAYANG WHITE PAPER"
     ],
     [
       "PUBLICATION · WHITE PAPER",
@@ -186,72 +134,12 @@
       " · Libreng pag-download"
     ],
     [
-      "Free download<",
-      "Libreng pag-download<"
-    ],
-    [
-      ">Download<",
-      ">I-download<"
-    ],
-    [
-      ">Request access<",
-      ">Humiling ng akses<"
-    ],
-    [
       ">English · PDF",
       ">Ingles · PDF"
     ],
     [
-      "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-01-\\2\">\\2 Enero \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-02-\\2\">\\2 Pebrero \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-03-\\2\">\\2 Marso \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-04-\\2\">\\2 Abril \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-05-\\2\">\\2 Mayo \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-06-\\2\">\\2 Hunyo \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-07-\\2\">\\2 Hulyo \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-08-\\2\">\\2 Agosto \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-09-\\2\">\\2 Setyembre \\1</time>"
-    ],
-    [
       "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
       "<time datetime=\"\\1-09-01\">Setyembre \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-10-\\2\">\\2 Oktubre \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-11-\\2\">\\2 Nobyembre \\1</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-12-\\2\">\\2 Disyembre \\1</time>"
     ],
     [
       ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
@@ -302,22 +190,6 @@
       "\\1<section class=\"qa-a\"><p>May dalawang magkasamang linya. Ang <strong>mga white paper para sa industriya</strong>, na ginagawa para sa mga organisasyong tulad ng Emerging Payments Association Asia (EPAA), ay sumusuri sa mga pagbabagong istruktural sa imprastruktura ng pagbabayad — kamakailan, ang epekto ng quantum computing na may bisa sa kriptograpiya sa mga riles ng wholesale at instant na settlement. Ang <strong>mga ulat ng inilapat na pananaliksik</strong> naman ay nakatuon sa tiyak na paksang teknikal (halimbawa: real-time na pagkilala sa pananalita sa pamamagitan ng Whisper + Metal Performance Shaders sa Apple Silicon), at inilalathala bilang PDF na mabibili nang paisa-isa.</p></section>"
     ],
     [
-      ">How often do you release new papers\\?</summary>",
-      ">Gaano kadalas ka naglalabas ng bagong papel?</summary>"
-    ],
-    [
-      "(<summary[^>]*>À quelle fréquence publiez-vous de nouveaux articles \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Hindi regular, mas pinipili ang kalidad kaysa sa ritmo. Ang maiikling tala ng pananaliksik ay lumalabas tuwing ilang linggo kapag may teknikal na pag-unlad na nag-uudyok nito. Ang mga white paper naman ay inilalathala kasabay ng mga siklo ng industriya (halimbawa: mga iskedyul ng regulasyon, kumperensiya ng EPAA).</p></section>"
-    ],
-    [
-      ">About EPAA</p>",
-      ">Tungkol EPAA</p>"
-    ],
-    [
-      "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
-      "<p class=\"book-about\">Ang <strong>Emerging Payments Association Asia (EPAA)</strong> ang samahang pampropesyonal ng sektor ng pagbabayad sa rehiyong Asia-Pacific, na nagtitipon ng mga bangko, processor, kompanyang fintech, at tagapagregula hinggil sa mga isyung istruktural na iisa sa buong sektor."
-    ],
-    [
       ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
       ">Quantum-Safe Payments: Bakit Kailangang Kumilos Na ang Industriya ng Payments<"
     ],
@@ -330,40 +202,12 @@
       ">Kamakailang pananaliksik at pagsusuri<"
     ],
     [
-      "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
-      "Setyembre 2025 &middot; Emerging Payments Association Asia (EPAA)"
-    ],
-    [
       ">Quantum computing threatens the cryptographic foundations[^<]+",
       ">Binabanta ng quantum computing ang mga saligang kriptograpiko ng mga serbisyong pinansiyal. Ang mga pagbabayad — mula real time hanggang settlement na rentas-sempadan — ay nakasalalay sa mga proteksiyong gagawing lipas ng quantum computing. Ipinapaliwanag ng white paper na ito ng EPAA kung bakit dapat kumilos ang sektor ngayon."
     ],
     [
-      "2024 &middot; Independent Research &middot;",
-      "2024 &middot; Malayang pananaliksik &middot;"
-    ],
-    [
-      ">This independent research paper presents[^<]+",
-      ">Ipinapakita ng malayang papel ng pananaliksik na ito ang isang optimisasyon ng real-time na pagkilala sa pananalita sa macOS gamit ang OpenAI Whisper at Metal Performance Shaders, na may napapatunayang pakinabang sa latensiya at kahusayan sa enerhiya."
-    ],
-    [
-      ">License &amp; pricing<",
-      ">Lisensya at presyo<"
-    ],
-    [
-      ">One copy per buyer<",
-      ">Isang kopya bawat mamimili<"
-    ],
-    [
       ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
       ">Mga tanong?<span class=\"qa-headline-soft\"> Mga sagot.</span>"
-    ],
-    [
-      ">Questions\\? Answers\\.</h2>",
-      ">Mga tanong? Mga sagot.</h2>"
-    ],
-    [
-      ">Questions\\? Answers\\.<",
-      ">Mga tanong? Mga sagot.<"
     ],
     [
       ">Are the white papers free to read\\?</summary>",
@@ -386,10 +230,6 @@
       ">Paano ko masusubaybayan ang mga bagong publikasyon?</summary>"
     ],
     [
-      ">Where can I follow new releases\\?</summary>",
-      ">Saan ko masusubaybayan ang mga bagong labas?</summary>"
-    ],
-    [
       "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Ang white paper na <em>Quantum-Safe Payments</em> ng EPAA ay malayang mada-download nang libre sa <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Ang malayang ulat ng pananaliksik tungkol sa real-time na pagkilala sa pananalita gamit ang OpenAI Whisper at Metal Performance Shaders ay lisensiyado at mabibili nang paisa-isa sa halagang 49.00 $ (Ingles, PDF, mga 95 KB). Isang kopya bawat mamimili; ang mga download ay para sa personal na gamit lamang at hindi maaaring ipamahagi muli.</p></section>"
     ],
@@ -408,250 +248,6 @@
     [
       "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Ang mga bagong artikulo at tala ng pananaliksik ay inihahayag muna sa <a href=\"/fil/rss.xml\">feed ng RSS</a> ng sayt at sa newsletter na <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>, na sumasaklaw sa kriptograpiyang post-quantum, patakaran ng sentral na bangko, at ang mapa ng migrasyon ng mga pangunahing scheme ng pagbabayad. Walang spam — ang bago lamang.</p></section>"
-    ],
-    [
-      "(<summary[^>]*>Où puis-je suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Mag-subscribe sa <a href=\"/fil/rss.xml\">feed ng RSS</a> o sundan ako sa <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> upang maabisuhan tungkol sa mga bagong labas.</p></section>"
-    ],
-    [
-      ">Browse all projects<",
-      ">I-browse ang lahat ng proyekto<"
-    ],
-    [
-      ">Three areas of practice\\.\\s*<span",
-      ">Tatlong larangan ng praktika. <span"
-    ],
-    [
-      ">One philosophy\\.</span>",
-      ">Isang pilosopiya.</span>"
-    ],
-    [
-      ">WHAT IS INSIDE<",
-      ">ANO ANG NASA LOOB<"
-    ],
-    [
-      ">OPEN SOURCE FOR FINANCIAL SERVICES<",
-      ">OPEN SOURCE PARA SA MGA SERBISYONG PINANSIYAL<"
-    ],
-    [
-      ">Payments and settlement\\.<",
-      ">Pagbabayad at settlement.<"
-    ],
-    [
-      ">Post-quantum cryptography\\.<",
-      ">Kriptograpiyang post-quantum.<"
-    ],
-    [
-      ">Tooling and infrastructure\\.<",
-      ">Mga kasangkapan at imprastruktura.<"
-    ],
-    [
-      ">Applied AI\\.<",
-      ">Inilapat na AI.<"
-    ],
-    [
-      ">Explore payments tools\\s+<",
-      ">Tuklasin ang mga kasangkapan sa pagbabayad <"
-    ],
-    [
-      ">Explore quantum-safe libraries\\s+<",
-      ">Tuklasin ang mga aklatang ligtas sa quantum <"
-    ],
-    [
-      ">Explore developer tools\\s+<",
-      ">Tuklasin ang mga kasangkapan ng developer <"
-    ],
-    [
-      ">Explore PQC tools\\s+<",
-      ">Tuklasin ang mga kasangkapang PQC <"
-    ],
-    [
-      ">Explore AI tools\\s+<",
-      ">Tuklasin ang mga kasangkapang AI <"
-    ],
-    [
-      ">Authored & maintained<",
-      ">Sinulat at pinananatili<"
-    ],
-    [
-      ">Authored &amp; maintained<",
-      ">Sinulat at pinananatili<"
-    ],
-    [
-      ">Open source for the future of finance\\.<",
-      ">Open source para sa kinabukasan ng finance.<"
-    ],
-    [
-      "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\">Mga kasangkapang ISO 20022 <strong>pain.001</strong> at <strong>pacs.008</strong>, pagsusuri ng bank statement, at mga aklatang Rust para sa migrasyon tungo sa nakabalangkas na mensaheng rentas-sempadan. Idinisenyo para sa SWIFT, SEPA, at mga scheme ng instant na pagbabayad.</p>"
-    ],
-    [
-      "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\">Mga implementasyon sa Rust ng <strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203), mga primitibong hash, at mga bloke ng gusaling lumalaban sa quantum. Proteksiyong lumalampas sa panahon ng RSA at elliptic curve sa awtentikasyong pang-pinansiya.</p>"
-    ],
-    [
-      "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
-      "<p class=\"setup-card-body\">Mga aklatang Rust na open source para sa serialisasyon, pagtatala, paglikha ng kodigo, at petsa at oras. Kasama ang <strong>Static Site Generator</strong> (SSG) na bumubuo sa sayt na ito at ang kapaligiran ng developer na nagpapadali sa paghahatid nito.</p>"
-    ],
-    [
-      ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
-      ">Kasangkapang ISO 20022 para sa pandaigdigang migrasyon. Paglikha ng talaksang Pain.001, mga credit transfer na rentas-sempadan na pacs.008, at nakabalangkas na pagsusuri ng mga bank statement.<"
-    ],
-    [
-      ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
-      ">Mga implementasyon sa Rust ng CRYSTALS-Kyber, mga primitibong hash at digest, at mga bloke ng gusali na lumalaban sa quantum para sa awtentikasyong pang-pinansiya.<"
-    ],
-    [
-      ">Applied artificial intelligence\\.<",
-      ">Inilapat na artipisyal na katalinuhan.<"
-    ],
-    [
-      ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
-      ">Mga proyektong AI na open source na naglalapat ng pagkilala sa pananalita, natural na wika, at malalaking modelo ng wika sa mga tunay na suliranin sa pinansiya at produktibidad.<"
-    ],
-    [
-      ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
-      ">Isang aklatang Python na nag-o-otomatisa ng paglikha ng talaksang pagbabayad na ISO 20022 pain.001 mula sa CSV o SQLite. Idinisenyo para sa pandaigdigang migrasyon tungo sa nakabalangkas na mensaheng rentas-sempadan.<"
-    ],
-    [
-      ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
-      ">Lumikha, magpatunay, at maghatid ng mga mensaheng pagbabayad na ISO 20022 pacs.008 para sa credit transfer ng kliyente mula institusyong pinansiyal tungo sa isa pa. Pagpapatunay sa pamamagitan ng JSON Schema + XSD, IBAN sa 75 bansa, pagtatago ng personal na datos na sumusunod sa GDPR/PCI-DSS.<"
-    ],
-    [
-      ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
-      ">Isang kasangkapang Python na pang-pinansiya na nagbabago ng mga bank statement sa iba't ibang format tungo sa nakabalangkas na datos — para sa tunay na kalagayan ng mga talaksan ng statement at sa mga kahingian ng pag-audit sa reguladong kapaligiran.<"
-    ],
-    [
-      ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
-      ">Isang aplikasyong Rust para sa pag-optimisa ng paglalaan ng salapi sa masalimuot na istruktura ng pondo gamit ang panghuhula na pinapagana ng AI. Idinisenyo para sa mga gamit sa treasury, accounting ng pondo, at paglalaan ng ari-arian sa loob ng mga bangko at tagapamahala ng ari-arian.<"
-    ],
-    [
-      ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
-      ">Isang aklatang Rust para sa paglikha at pagmamanipula ng imahen ng QR code sa iba't ibang format. Kabilang sa tuwirang gamit sa pagbabayad ang EPC QR Code para sa SEPA credit transfer, QR code ng link ng pagbabayad para sa pangongolekta ng mangangalakal, at daloy ng step-up na awtentikasyon.<"
-    ],
-    [
-      ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
-      ">Isang matatag na implementasyon sa Rust ng CRYSTALS-Kyber, ang pamantayang NIST FIPS 203 para sa pangkalahatang pagbabalot ng susi na post-quantum.<"
-    ],
-    [
-      ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
-      ">Ligtas na mga algoritmo ng hash at digest para sa pag-encrypt at pagpapatunay ng password, idinisenyo nang may tindig na lumalaban sa quantum para sa panahong post-PQC.<"
-    ],
-    [
-      ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
-      ">Isang mabilis, simple, at malakas na cross-platform na CLI para sa paglikha ng malakas, natatangi, at random na password, pinapagana ng mga na-audit na primitibong kriptograpiko.<"
-    ],
-    [
-      ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
-      ">Isang abanteng katulong sa boses na gumagamit ng GPT ng OpenAI para sa natural na pakikipag-ugnayan, buod ng PDF, at mahusay na caching. Idinisenyo para sa personal at ehekutibong gamit.<"
-    ],
-    [
-      ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
-      ">Gawing teksto ang audio sa real time gamit ang abanteng pagkilala sa pananalita ng AI. Idinisenyo upang makuha ang mga makabuluhang kabatiran mula sa datos ng audio at mapabuti ang karanasan ng kliyente at operasyon.<"
-    ],
-    [
-      ">Featured · Python · ISO 20022<",
-      ">Itinampok · Python · ISO 20022<"
-    ],
-    [
-      ">Python · ISO 20022<",
-      ">Python · ISO 20022<"
-    ],
-    [
-      ">Python · Finance<",
-      ">Python · Finance<"
-    ],
-    [
-      ">Rust · Treasury · AI<",
-      ">Rust · Treasury · AI<"
-    ],
-    [
-      ">Rust · Payments QR<",
-      ">Rust · QR ng pagbabayad<"
-    ],
-    [
-      ">Rust · Quantum<",
-      ">Rust · Quantum<"
-    ],
-    [
-      ">Rust · Security<",
-      ">Rust · Security<"
-    ],
-    [
-      ">AI · Voice<",
-      ">AI · Boses<"
-    ],
-    [
-      ">AI · Speech<",
-      ">AI · Pananalita<"
-    ],
-    [
-      ">PAYMENTS<",
-      ">MGA PAGBABAYAD<"
-    ],
-    [
-      ">POST-QUANTUM CRYPTOGRAPHY<",
-      ">KRIPTOGRAPIYANG POST-QUANTUM<"
-    ],
-    [
-      ">AI AND VOICE<",
-      ">AI AT BOSES<"
-    ],
-    [
-      ">DEVELOPER TOOLING<",
-      ">KASANGKAPAN NG DEVELOPER<"
-    ],
-    [
-      ">OPEN-SOURCE RUST<",
-      ">OPEN-SOURCE NA RUST<"
-    ],
-    [
-      ">WEB AND DEVELOPER ENVIRONMENT<",
-      ">WEB AT KAPALIGIRAN NG DEVELOPER<"
-    ],
-    [
-      ">Tooling\\.<",
-      ">Mga kasangkapan.<"
-    ],
-    [
-      ">Rust libraries and tooling\\.</h2>",
-      ">Mga aklatan at kasangkapang Rust.</h2>"
-    ],
-    [
-      "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
-      "<p class=\"cat-lede\">Mga proyektong Rust na open source sa serialisasyon, pagtatala, paglikha ng kodigo, matematika, at kasangkapan ng developer — kabilang ang static site generator na nagpapatakbo sa sayt na ito.</p>"
-    ],
-    [
-      ">Web, templates and environment\\.</h2>",
-      ">Web, mga template at kapaligiran.</h2>"
-    ],
-    [
-      "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
-      "<p class=\"cat-lede\">Mga panimulang template, dalawang publikasyong nakatuon sa industriya, isang framework ng CSS, at ang mga dotfile na nagpapanatili ng maiuulit na kapaligiran ng pagpapaunlad.</p>"
-    ],
-    [
-      ">What licence are these projects released under\\?</summary>",
-      ">Sa anong lisensya inilalabas ang mga proyektong ito?</summary>"
-    ],
-    [
-      ">Are these projects production-ready\\?</summary>",
-      ">Handa na ba sa produksiyon ang mga proyektong ito?</summary>"
-    ],
-    [
-      ">How can I contribute or report an issue\\?</summary>",
-      ">Paano ako makakatulong o makakapag-ulat ng isyu?</summary>"
-    ],
-    [
-      ">Can I use these libraries in a regulated banking environment\\?</summary>",
-      ">Magagamit ko ba ang mga aklatang ito sa isang reguladong kapaligirang pambangko?</summary>"
-    ],
-    [
-      ">Do you offer commercial support or consulting\\?</summary>",
-      ">Nag-aalok ka ba ng komersyal na suporta o konsultasyon?</summary>"
-    ],
-    [
-      ">How do I follow new releases\\?</summary>",
-      ">Paano ko masusubaybayan ang mga bagong labas?</summary>"
     ],
     [
       "(<summary[^>]*>Sous quelle licence ces projets sont-ils publiés \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
@@ -678,46 +274,6 @@
       "\\1<section class=\"qa-a\"><p>Ang bawat artikulong may petsa sa sayt ay inihahayag sa pamamagitan ng <a href=\"/fil/rss.xml\">feed ng RSS</a> at ng newsletter na <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Naglalathala rin ang mga indibidwal na repositoryo ng kanilang mga labas sa GitHub na maaari mong sundan nang tuwiran.</p></section>"
     ],
     [
-      ">GET IN TOUCH<",
-      ">MAKIPAG-UGNAYAN<"
-    ],
-    [
-      ">Have an idea\\? Let's build it\\.<",
-      ">May ideya ka? Buuin natin ito.<"
-    ],
-    [
-      ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
-      ">Kolaborasyong open source, inhinyeriyang ipinagawa, o isang usapan lamang tungkol sa kinabukasan ng pagbabayad. Alinman ang bagay sa iyo.<"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">FEATURED</p>",
-      "<p class=\"newsroom-kicker\">ITINAMPOK</p>"
-    ],
-    [
-      "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
-      "aria-label=\"Tag: \\1, \\2 na post\""
-    ],
-    [
-      "(\\(\\d+) Posts\\)",
-      "\\1 na post)"
-    ],
-    [
-      ">Featured Tags \\((\\d+)\\)</h2>",
-      ">Mga itinampok na tag (\\1)</h2>"
-    ],
-    [
-      ">Featured Tags<",
-      ">Mga itinampok na tag<"
-    ],
-    [
-      "<a class=\"pill ghost\" href=\"/fr/contact/\">Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/fil/makipag-ugnayan/\">Makipag-ugnayan</a>"
-    ],
-    [
-      ">Get in touch</a>",
-      ">Makipag-ugnayan</a>"
-    ],
-    [
       "Made with Static Site Generator: Rust-Powered SSG",
       "Ginawa gamit ang Static Site Generator: SSG na pinapagana ng Rust"
     ],
@@ -730,148 +286,24 @@
       "Websayt na ginawa gamit ang Static Site Generator (SSG)"
     ],
     [
-      "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
-      "Ang Static Site Generator (SSG) ay isang napakabilis na kasangkapan para sa optimisasyon sa search engine (SEO) at pagsunod sa pamantayan ng pagiging accessible."
-    ],
-    [
-      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
-      "Indeks ng mga paksa at tag: AI, pagbabayad, quantum, Rust OSS"
-    ],
-    [
       "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
       "Tuklasin ang sayt ni Sebastien Rousseau ayon sa paksa at tag: AI, pagbabayad, ISO 20022, kriptograpiyang post-quantum, open source na Rust, at iba pa."
-    ],
-    [
-      "Website Accessibility Statement — Standards &amp; Contact",
-      "Pahayag ng pagiging accessible ng websayt — mga pamantayan at pakikipag-ugnayan"
     ],
     [
       "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
       "Ipinapaliwanag ng pahayag na ito ang pagiging accessible ng aming websayt, kung ano ang ginagawa namin upang matugunan ito, at kung paano makikipag-ugnayan sa amin hinggil sa pagiging accessible ng web."
     ],
     [
-      "Privacy Statement — How Your Data Is Collected &amp; Used",
-      "Pahayag ng pagkapribado — paano kinokolekta at ginagamit ang iyong datos"
-    ],
-    [
       "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
       "Ipinapaalam sa iyo ng pahinang ito ang aming mga patakaran hinggil sa pagkolekta, paggamit, at paghahayag ng personal na datos kapag ginagamit mo ang aming websayt"
-    ],
-    [
-      "Let's Start a Conversation That Will Make a Real Difference",
-      "Simulan natin ang isang usapan na magdudulot ng tunay na pagbabago"
-    ],
-    [
-      "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
-      "May tanong o puna? Mangyaring makipag-ugnayan sa akin gamit ang porma sa ibaba. Lagi akong natutuwang makarinig mula sa iyo at tutugon ako sa lalong madaling panahon."
-    ],
-    [
-      "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
-      "Mga tuntunin at kundisyon ng paggamit ng websayt — Sebastien Rousseau"
     ],
     [
       "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
       "Sa pagpasok sa websayt na ito, kinikilala mo at sumasang-ayon kang matali sa mga Tuntunin at Kundisyong ito at sa lahat ng naaangkop na batas at regulasyon."
     ],
     [
-      ">Latest research<",
-      ">Pinakabagong pananaliksik<"
-    ],
-    [
-      ">Read latest research<",
-      ">Basahin ang pinakabagong pananaliksik<"
-    ],
-    [
-      ">Featured articles<",
-      ">Mga itinampok na artikulo<"
-    ],
-    [
-      ">All articles<",
-      ">Lahat ng artikulo<"
-    ],
-    [
-      ">Read more<",
-      ">Basahin pa<"
-    ],
-    [
-      ">Read full article<",
-      ">Basahin ang buong artikulo<"
-    ],
-    [
-      ">Newest first<",
-      ">Pinakabago muna<"
-    ],
-    [
-      ">Oldest first<",
-      ">Pinakaluma muna<"
-    ],
-    [
-      ">By topic<",
-      ">Ayon sa paksa<"
-    ],
-    [
-      ">All topics<",
-      ">Lahat ng paksa<"
-    ],
-    [
-      ">By tag<",
-      ">Ayon sa tag<"
-    ],
-    [
-      ">All tags<",
-      ">Lahat ng tag<"
-    ],
-    [
-      ">Published<",
-      ">Nailathala<"
-    ],
-    [
-      ">Updated<",
-      ">Na-update<"
-    ],
-    [
       ">Open source<",
       ">Open source<"
-    ],
-    [
-      ">Authored & maintained<",
-      ">Sinulat at pinananatili<"
-    ],
-    [
-      ">Open source for the future of finance\\.<",
-      ">Open source para sa kinabukasan ng finance.<"
-    ],
-    [
-      ">A portfolio of",
-      ">Isang portfolio ng"
-    ],
-    [
-      ">Start a conversation<",
-      ">Magsimula ng usapan<"
-    ],
-    [
-      ">Drop me a line<",
-      ">Magpadala ng mensahe<"
-    ],
-    [
-      ">Learn more<",
-      ">Alamin pa<"
-    ],
-    [
-      ">Subscribe<",
-      ">Mag-subscribe<"
-    ],
-    [
-      ">Follow<",
-      ">Sundan<"
-    ],
-    [
-      ">Latest<",
-      ">Pinakabago<"
-    ],
-    [
-      "<h1>White Papers (?:&amp;|&) Research</h1>",
-      "<h1>Mga white paper at pananaliksik</h1>"
     ],
     [
       "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
@@ -906,24 +338,12 @@
       "<h1>Aklatan ng developer: mga paksa sa pagbabangko, open source at mga playlist</h1>"
     ],
     [
-      "<h1>Enterprise AI Financial Technology (?:&amp;|&) Leadership</h1>",
-      "<h1>Enterprise AI na teknolohiyang pinansyal at pamumuno</h1>"
-    ],
-    [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>Lumipat na ang mga publikasyon sa Pananaliksik</h1>"
     ],
     [
       "aria-label=\"Cloud Native Banking\"",
       "aria-label=\"Cloud-native na banking\""
-    ],
-    [
-      "alt=\"Cloud Native Banking — topic banner\"",
-      "alt=\"Cloud-native na banking — banner ng paksa\""
-    ],
-    [
-      "<h3><a href=\"/fil/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
-      "<h3><a href=\"/fil/topics/cloud-native-banking/index.html\">Cloud-native na banking</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/cloud-native-banking/[^\"]*\">Cloud\\ Native\\ Banking</a></h3>",
@@ -938,14 +358,6 @@
       "aria-label=\"Agentic na AI sa banking\""
     ],
     [
-      "alt=\"Agentic AI in Banking — topic banner\"",
-      "alt=\"Agentic na AI sa banking — banner ng paksa\""
-    ],
-    [
-      "<h3><a href=\"/fil/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
-      "<h3><a href=\"/fil/topics/agentic-ai-banking/index.html\">Agentic na AI sa banking</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/agentic-ai-banking/[^\"]*\">Agentic\\ AI\\ in\\ Banking</a></h3>",
       "<h3><a href=\"/fil/mga-paksa/agentic-ai-banking/index.html\">Agentic na AI sa banking</a></h3>"
     ],
@@ -956,14 +368,6 @@
     [
       "aria-label=\"Treasury Automation\"",
       "aria-label=\"Automation ng treasury\""
-    ],
-    [
-      "alt=\"Treasury Automation — topic banner\"",
-      "alt=\"Automation ng treasury — banner ng paksa\""
-    ],
-    [
-      "<h3><a href=\"/fil/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
-      "<h3><a href=\"/fil/topics/treasury-automation/index.html\">Automation ng treasury</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/treasury-automation/[^\"]*\">Treasury\\ Automation</a></h3>",
@@ -978,14 +382,6 @@
       "aria-label=\"Katatagan sa operasyon at DORA\""
     ],
     [
-      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
-      "alt=\"Katatagan sa operasyon at DORA — banner ng paksa\""
-    ],
-    [
-      "<h3><a href=\"/fil/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
-      "<h3><a href=\"/fil/topics/operational-resilience-dora/index.html\">Katatagan sa operasyon at DORA</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/operational-resilience-dora/[^\"]*\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
       "<h3><a href=\"/fil/mga-paksa/operational-resilience-dora/index.html\">Katatagan sa operasyon at DORA</a></h3>"
     ],
@@ -996,14 +392,6 @@
     [
       "aria-label=\"Stablecoins &amp; Tokenisation\"",
       "aria-label=\"Stablecoin at tokenisasyon\""
-    ],
-    [
-      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
-      "alt=\"Stablecoin at tokenisasyon — banner ng paksa\""
-    ],
-    [
-      "<h3><a href=\"/fil/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
-      "<h3><a href=\"/fil/topics/stablecoins-tokenisation/index.html\">Stablecoin at tokenisasyon</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/stablecoins-tokenisation/[^\"]*\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
@@ -1018,14 +406,6 @@
       "aria-label=\"Generative AI at malalaking language model\""
     ],
     [
-      "alt=\"Generative AI &amp; LLMs — topic banner\"",
-      "alt=\"Generative AI at malalaking language model — banner ng paksa\""
-    ],
-    [
-      "<h3><a href=\"/fil/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
-      "<h3><a href=\"/fil/topics/generative-ai-llms/index.html\">Generative AI at malalaking language model</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/generative-ai-llms/[^\"]*\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
       "<h3><a href=\"/fil/mga-paksa/generative-ai-llms/index.html\">Generative AI at malalaking language model</a></h3>"
     ],
@@ -1036,14 +416,6 @@
     [
       "aria-label=\"Voice &amp; Speech AI\"",
       "aria-label=\"AI ng boses at pananalita\""
-    ],
-    [
-      "alt=\"Voice &amp; Speech AI — topic banner\"",
-      "alt=\"AI ng boses at pananalita — banner ng paksa\""
-    ],
-    [
-      "<h3><a href=\"/fil/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
-      "<h3><a href=\"/fil/topics/voice-speech-ai/index.html\">AI ng boses at pananalita</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/voice-speech-ai/[^\"]*\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
@@ -1058,14 +430,6 @@
       "aria-label=\"Pamamahala at regulasyon ng AI\""
     ],
     [
-      "alt=\"AI Governance &amp; Regulation — topic banner\"",
-      "alt=\"Pamamahala at regulasyon ng AI — banner ng paksa\""
-    ],
-    [
-      "<h3><a href=\"/fil/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
-      "<h3><a href=\"/fil/topics/ai-governance-regulation/index.html\">Pamamahala at regulasyon ng AI</a></h3>"
-    ],
-    [
       "<h3><a href=\"[^\"]+/ai-governance-regulation/[^\"]*\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
       "<h3><a href=\"/fil/mga-paksa/ai-governance-regulation/index.html\">Pamamahala at regulasyon ng AI</a></h3>"
     ],
@@ -1076,14 +440,6 @@
     [
       "aria-label=\"Wholesale Payments Rails\"",
       "aria-label=\"Mga riles ng wholesale na pagbabayad\""
-    ],
-    [
-      "alt=\"Wholesale Payments Rails — topic banner\"",
-      "alt=\"Mga riles ng wholesale na pagbabayad — banner ng paksa\""
-    ],
-    [
-      "<h3><a href=\"/fil/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",
-      "<h3><a href=\"/fil/topics/wholesale-payments-rails/index.html\">Mga riles ng wholesale na pagbabayad</a></h3>"
     ],
     [
       "<h3><a href=\"[^\"]+/wholesale-payments-rails/[^\"]*\">Wholesale\\ Payments\\ Rails</a></h3>",

@@ -21,14 +21,6 @@
       "PILLÉR · TÉMA"
     ],
     [
-      "PILLAR · PROJECT",
-      "PILLÉR · PROJEKT"
-    ],
-    [
-      "Curated topic clusters[^<]+",
-      "Kurált témacsoportok. Válasszon egy szálat, és kövesse végig az archívumon."
-    ],
-    [
       "aria-label=\"Post-Quantum Cryptography\"",
       "aria-label=\"Posztkvantum kriptográfia\""
     ],
@@ -47,26 +39,6 @@
     [
       "aria-label=\"Blockchain &amp; Digital Assets\"",
       "aria-label=\"Blokklánc &amp; digitális eszközök\""
-    ],
-    [
-      "alt=\"Post-Quantum Cryptography — topic banner\"",
-      "alt=\"Posztkvantum kriptográfia, téma banner\""
-    ],
-    [
-      "alt=\"ISO 20022 &amp; Payments — topic banner\"",
-      "alt=\"ISO 20022 &amp; fizetések, téma banner\""
-    ],
-    [
-      "alt=\"Applied AI in Banking — topic banner\"",
-      "alt=\"Alkalmazott MI a bankszektorban, téma banner\""
-    ],
-    [
-      "alt=\"Rust &amp; Open Source — topic banner\"",
-      "alt=\"Rust &amp; nyílt forráskód, téma banner\""
-    ],
-    [
-      "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
-      "alt=\"Blokklánc &amp; digitális eszközök, téma banner\""
     ],
     [
       "<h3><a href=\"/hu/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
@@ -115,10 +87,6 @@
     [
       "INDUSTRY WHITE PAPER · EPAA",
       "IPARÁGI FEHÉR KÖNYV · EPAA"
-    ],
-    [
-      "INDUSTRY WHITE PAPER",
-      "IPARÁGI FEHÉR KÖNYV"
     ],
     [
       "PUBLICATION · WHITE PAPER",
@@ -185,72 +153,12 @@
       " · Ingyenes letöltés"
     ],
     [
-      "Free download<",
-      "Ingyenes letöltés<"
-    ],
-    [
-      ">Download<",
-      ">Letöltés<"
-    ],
-    [
-      ">Request access<",
-      ">Hozzáférés kérése<"
-    ],
-    [
       ">English · PDF",
       ">Magyar · PDF"
     ],
     [
-      "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-01-\\2\">\\1. január \\2.</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-02-\\2\">\\1. február \\2.</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-03-\\2\">\\1. március \\2.</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-04-\\2\">\\1. április \\2.</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-05-\\2\">\\1. május \\2.</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-06-\\2\">\\1. június \\2.</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-07-\\2\">\\1. július \\2.</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-08-\\2\">\\1. augusztus \\2.</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-09-\\2\">\\1. szeptember \\2.</time>"
-    ],
-    [
       "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
       "<time datetime=\"\\1-09-01\">\\1. szeptember</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-10-\\2\">\\1. október \\2.</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-11-\\2\">\\1. november \\2.</time>"
-    ],
-    [
-      "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
-      "<time datetime=\"\\1-12-\\2\">\\1. december \\2.</time>"
     ],
     [
       ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
@@ -301,22 +209,6 @@
       "\\1<section class=\"qa-a\"><p>Két irány létezik egymás mellett. Az <strong>iparági fehér könyvek</strong>, amelyeket olyan szervezetek számára készítek, mint az Emerging Payments Association Asia (EPAA), a fizetési infrastruktúrák strukturális átalakulásait vizsgálják, legutóbb a kriptográfiailag releváns kvantumszámítás hatását a nagykereskedelmi és valós idejű elszámolási sínekre. Az <strong>alkalmazott kutatási jelentések</strong> pontos technikai témákat céloznak (például: valós idejű beszédfelismerés Whisperrel + Metal Performance Shaders az Apple Siliconon), és egyenként megvásárolható PDF formájában jelennek meg.</p></section>"
     ],
     [
-      ">How often do you release new papers\\?</summary>",
-      ">Milyen gyakran jelentet meg új tanulmányokat?</summary>"
-    ],
-    [
-      "(<summary[^>]*>À quelle fréquence publiez-vous de nouveaux articles \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Szabálytalanul, a minőséget a ritmus elé helyezve. A rövid kutatási jegyzetek néhány hetente jelennek meg, amikor egy technikai előrelépés indokolja. A fehér könyvek iparági ciklusokhoz kötődően jelennek meg (például: szabályozási határidők, EPAA konferenciák).</p></section>"
-    ],
-    [
-      ">About EPAA</p>",
-      ">Az EPAA-ról</p>"
-    ],
-    [
-      "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
-      "<p class=\"book-about\">Az <strong>Emerging Payments Association Asia (EPAA)</strong> a fizetési iparág szakmai szövetsége az ázsiai-csendes-óceáni régióban, amely bankokat, feldolgozókat, fintecheket és szabályozókat egyesít a szektoron átívelő strukturális kérdések körül."
-    ],
-    [
       ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
       ">Kvantumbiztos fizetések: miért kell a szektornak most cselekednie<"
     ],
@@ -329,40 +221,12 @@
       ">Legutóbbi kutatások és elemzések<"
     ],
     [
-      "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
-      "2025. szeptember &middot; Emerging Payments Association Asia (EPAA)"
-    ],
-    [
       ">Quantum computing threatens the cryptographic foundations[^<]+",
       ">A kvantumszámítás fenyegeti a pénzügyi szolgáltatások kriptográfiai alapjait. A fizetések, a valós időtől a határokon átnyúló elszámolásig, olyan védelmekre támaszkodnak, amelyeket a kvantumszámítás végül elavulttá tesz. Ez az EPAA fehér könyv kifejti, miért kell a szektornak már most cselekednie."
     ],
     [
-      "2024 &middot; Independent Research &middot;",
-      "2024 &middot; Független kutatás &middot;"
-    ],
-    [
-      ">This independent research paper presents[^<]+",
-      ">Ez a független kutatási jelentés a valós idejű beszédfelismerés optimalizálását mutatja be macOS-en az OpenAI Whisper és a Metal Performance Shaders segítségével, mérhető késleltetési és energiahatékonysági nyereséget bizonyítva."
-    ],
-    [
-      ">License &amp; pricing<",
-      ">Licenc és árazás<"
-    ],
-    [
-      ">One copy per buyer<",
-      ">Egy példány vásárlónként<"
-    ],
-    [
       ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
       ">Kérdések?<span class=\"qa-headline-soft\"> Válaszok.</span>"
-    ],
-    [
-      ">Questions\\? Answers\\.</h2>",
-      ">Kérdések? Válaszok.</h2>"
-    ],
-    [
-      ">Questions\\? Answers\\.<",
-      ">Kérdések? Válaszok.<"
     ],
     [
       ">Are the white papers free to read\\?</summary>",
@@ -385,10 +249,6 @@
       ">Hogyan követhetem az új publikációkat?</summary>"
     ],
     [
-      ">Where can I follow new releases\\?</summary>",
-      ">Hol követhetem az új publikációkat?</summary>"
-    ],
-    [
       "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Az EPAA <em>Quantum-Safe Payments</em> fehér könyv ingyenesen, nyilvánosan letölthető az <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> oldalon. A valós idejű beszédfelismerésről szóló, OpenAI Whisper és Metal Performance Shaders alapú független kutatási jelentés licencelt, és egyenként megvásárolható 49,00 $ áron (angol, PDF, ~95 KB). Egy példány vásárlónként; a letöltések kizárólag személyes használatra szolgálnak, nem terjeszthetők tovább.</p></section>"
     ],
@@ -407,250 +267,6 @@
     [
       "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Az új cikkeket és kutatási jegyzeteket elsőként a webhely <a href=\"/hu/rss.xml\">RSS-hírfolyamán</a> és a <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> hírlevélben jelentjük be, amely a posztkvantum kriptográfiát, a központi banki politikát és a főbb fizetési sémák migrációs ütemtervét fedi le. Nincs spam, csak az újdonságok.</p></section>"
-    ],
-    [
-      "(<summary[^>]*>Où puis-je suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Iratkozzon fel az <a href=\"/hu/rss.xml\">RSS-hírfolyamra</a>, vagy kövessen a <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedInen</a> az új publikációkról való értesülésért.</p></section>"
-    ],
-    [
-      ">Browse all projects<",
-      ">Összes projekt böngészése<"
-    ],
-    [
-      ">Three areas of practice\\.\\s*<span",
-      ">Három gyakorlati terület. <span"
-    ],
-    [
-      ">One philosophy\\.</span>",
-      ">Egy filozófia.</span>"
-    ],
-    [
-      ">WHAT IS INSIDE<",
-      ">MI VAN BENNE<"
-    ],
-    [
-      ">OPEN SOURCE FOR FINANCIAL SERVICES<",
-      ">NYÍLT FORRÁSKÓD A PÉNZÜGYI SZOLGÁLTATÁSOKÉRT<"
-    ],
-    [
-      ">Payments and settlement\\.<",
-      ">Fizetések és elszámolás.<"
-    ],
-    [
-      ">Post-quantum cryptography\\.<",
-      ">Posztkvantum kriptográfia.<"
-    ],
-    [
-      ">Tooling and infrastructure\\.<",
-      ">Eszközök és infrastruktúra.<"
-    ],
-    [
-      ">Applied AI\\.<",
-      ">Alkalmazott MI.<"
-    ],
-    [
-      ">Explore payments tools\\s+<",
-      ">Fizetési eszközök felfedezése <"
-    ],
-    [
-      ">Explore quantum-safe libraries\\s+<",
-      ">Kvantumbiztos könyvtárak felfedezése <"
-    ],
-    [
-      ">Explore developer tools\\s+<",
-      ">Fejlesztői eszközök felfedezése <"
-    ],
-    [
-      ">Explore PQC tools\\s+<",
-      ">PQC eszközök felfedezése <"
-    ],
-    [
-      ">Explore AI tools\\s+<",
-      ">MI eszközök felfedezése <"
-    ],
-    [
-      ">Authored & maintained<",
-      ">Írva és karbantartva<"
-    ],
-    [
-      ">Authored &amp; maintained<",
-      ">Írva és karbantartva<"
-    ],
-    [
-      ">Open source for the future of finance\\.<",
-      ">Nyílt forráskód a pénzügyek jövőjéért.<"
-    ],
-    [
-      "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\">ISO 20022 <strong>pain.001</strong> és <strong>pacs.008</strong> eszközkészletek, banki kivonatok elemzése és Rust könyvtárak a strukturált, határokon átnyúló üzenetekre való migrációhoz. SWIFT, SEPA és valós idejű fizetési sémákhoz tervezve.</p>"
-    ],
-    [
-      "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
-      "<p class=\"setup-card-body\">A <strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203) Rust implementációi, hash primitívek és kvantumbiztos építőelemek. Védelem a pénzügyi hitelesítés RSA és elliptikus görbe korszakán túl.</p>"
-    ],
-    [
-      "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
-      "<p class=\"setup-card-body\">Nyílt forráskódú Rust könyvtárak a szerializáláshoz, naplózáshoz, kódgeneráláshoz, dátumhoz és időhöz. Plusz a <strong>Static Site Generator</strong> (SSG), amely ezt a webhelyet építi, és a fejlesztői környezet, amely szállíthatóvá teszi.</p>"
-    ],
-    [
-      ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
-      ">ISO 20022 eszközök a globális migrációhoz. Pain.001 fájlok generálása, pacs.008 határokon átnyúló átutalások és banki kivonatok strukturált elemzése.<"
-    ],
-    [
-      ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
-      ">A CRYSTALS-Kyber Rust implementációi, hash primitívek és kvantumbiztos építőelemek a pénzügyi hitelesítéshez.<"
-    ],
-    [
-      ">Applied artificial intelligence\\.<",
-      ">Alkalmazott mesterséges intelligencia.<"
-    ],
-    [
-      ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
-      ">Nyílt forráskódú MI-projektek, amelyek a beszédfelismerést, a természetes nyelvet és a nagy nyelvi modelleket alkalmazzák valós pénzügyi és termelékenységi problémákra.<"
-    ],
-    [
-      ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
-      ">Python-könyvtár, amely automatizálja az ISO 20022 pain.001 fizetési fájlok létrehozását CSV- vagy SQLite-forrásból. A strukturált, határokon átnyúló üzenetekre való globális átállásra tervezve.<"
-    ],
-    [
-      ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
-      ">Hozzon létre, validáljon és kézbesítsen ISO 20022 pacs.008 fizetési üzeneteket FI-FI ügyfél-átutalásokhoz. JSON Schema + XSD validáció, IBAN 75 országban, GDPR/PCI-DSS-kompatibilis személyesadat-maszkolás.<"
-    ],
-    [
-      ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
-      ">Pénzügyi minőségű Python-eszközkészlet, amely a többféle formátumú bankszámlakivonatokat strukturált adatokká alakítja, a valós kivonatfájlok realitásaihoz és a szabályozott környezetek auditkövetelményeihez igazítva.<"
-    ],
-    [
-      ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
-      ">Rust-alkalmazás a készpénzallokáció optimalizálására összetett alapstruktúrákon, MI-vezérelt előrejelzéssel. A treasury, az alapkönyvelés és az eszközallokáció felhasználási eseteire tervezve, bankok és vagyonkezelők számára.<"
-    ],
-    [
-      ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
-      ">Rust-könyvtár QR-kódok több formátumban történő létrehozásához és kezeléséhez. Közvetlen fizetési felhasználások: EPC QR-kódok SEPA-átutalásokhoz, fizetési link QR kereskedői beszedéshez és step-up hitelesítési folyamatokhoz.<"
-    ],
-    [
-      ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
-      ">A CRYSTALS-Kyber robusztus Rust-implementációja, a NIST FIPS 203 szabvány az általános célú, poszt-kvantum kulcskapszulázáshoz.<"
-    ],
-    [
-      ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
-      ">Biztonságos hash- és digest-algoritmusok jelszavak titkosításához és ellenőrzéséhez, kvantumálló megközelítéssel tervezve a poszt-PQC korszakra.<"
-    ],
-    [
-      ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
-      ">Gyors, egyszerű és nagy teljesítményű, több platformot támogató CLI erős, egyedi és véletlenszerű jelszavak generálásához, auditált kriptográfiai primitívekre építve.<"
-    ],
-    [
-      ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
-      ">Fejlett hangasszisztens, amely az OpenAI GPT-jét használja természetes interakciókhoz, PDF-összefoglalókhoz és hatékony gyorsítótárazáshoz. Személyes és vezetői használatra egyaránt tervezve.<"
-    ],
-    [
-      ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
-      ">Alakítsa a hangot szöveggé valós időben fejlett MI-alapú beszédfelismeréssel. Arra tervezve, hogy hasznosítható meglátásokat nyerjen ki a hangadatokból, és javítsa az ügyfél- és működési élményt.<"
-    ],
-    [
-      ">Featured · Python · ISO 20022<",
-      ">Kiemelt · Python · ISO 20022<"
-    ],
-    [
-      ">Python · ISO 20022<",
-      ">Python · ISO 20022<"
-    ],
-    [
-      ">Python · Finance<",
-      ">Python · Pénzügy<"
-    ],
-    [
-      ">Rust · Treasury · AI<",
-      ">Rust · Treasury · MI<"
-    ],
-    [
-      ">Rust · Payments QR<",
-      ">Rust · QR fizetések<"
-    ],
-    [
-      ">Rust · Quantum<",
-      ">Rust · Kvantum<"
-    ],
-    [
-      ">Rust · Security<",
-      ">Rust · Biztonság<"
-    ],
-    [
-      ">AI · Voice<",
-      ">MI · Hang<"
-    ],
-    [
-      ">AI · Speech<",
-      ">MI · Hang<"
-    ],
-    [
-      ">PAYMENTS<",
-      ">FIZETÉSEK<"
-    ],
-    [
-      ">POST-QUANTUM CRYPTOGRAPHY<",
-      ">POSZT-KVANTUM KRIPTOGRÁFIA<"
-    ],
-    [
-      ">AI AND VOICE<",
-      ">MI ÉS HANG<"
-    ],
-    [
-      ">DEVELOPER TOOLING<",
-      ">FEJLESZTŐI ESZKÖZÖK<"
-    ],
-    [
-      ">OPEN-SOURCE RUST<",
-      ">NYÍLT FORRÁSKÓDÚ RUST<"
-    ],
-    [
-      ">WEB AND DEVELOPER ENVIRONMENT<",
-      ">WEB ÉS FEJLESZTŐI KÖRNYEZET<"
-    ],
-    [
-      ">Tooling\\.<",
-      ">Eszközök.<"
-    ],
-    [
-      ">Rust libraries and tooling\\.</h2>",
-      ">Rust-könyvtárak és -eszközök.</h2>"
-    ],
-    [
-      "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
-      "<p class=\"cat-lede\">Nyílt forráskódú Rust-projektek (szerializáció, naplózás, kódgenerálás, matematika és fejlesztői eszközök), köztük a statikus oldalgenerátor, amely ezt az oldalt működteti.</p>"
-    ],
-    [
-      ">Web, templates and environment\\.</h2>",
-      ">Web, sablonok és környezet.</h2>"
-    ],
-    [
-      "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
-      "<p class=\"cat-lede\">Kezdősablonok, két ágazati kiadvány, egy CSS-keretrendszer és a dotfile-ok, amelyek reprodukálható fejlesztői környezetet biztosítanak.</p>"
-    ],
-    [
-      ">What licence are these projects released under\\?</summary>",
-      ">Milyen licenc alatt jelennek meg ezek a projektek?</summary>"
-    ],
-    [
-      ">Are these projects production-ready\\?</summary>",
-      ">Éles használatra készek ezek a projektek?</summary>"
-    ],
-    [
-      ">How can I contribute or report an issue\\?</summary>",
-      ">Hogyan járulhatok hozzá, vagy jelenthetek problémát?</summary>"
-    ],
-    [
-      ">Can I use these libraries in a regulated banking environment\\?</summary>",
-      ">Használhatom ezeket a könyvtárakat szabályozott banki környezetben?</summary>"
-    ],
-    [
-      ">Do you offer commercial support or consulting\\?</summary>",
-      ">Kínál kereskedelmi támogatást vagy tanácsadást?</summary>"
-    ],
-    [
-      ">How do I follow new releases\\?</summary>",
-      ">Hogyan követhetem az új kiadványokat?</summary>"
     ],
     [
       "(<summary[^>]*>Sous quelle licence ces projets sont-ils publiés \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
@@ -677,46 +293,6 @@
       "\\1<section class=\"qa-a\"><p>Az oldal minden dátumozott cikkét bejelentjük az <a href=\"/hu/rss.xml\">RSS-hírfolyamon</a> és a <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> hírlevélen keresztül. Az egyes tárolók GitHubon is közzétesznek kiadásokat, amelyeket közvetlenül követhet.</p></section>"
     ],
     [
-      ">GET IN TOUCH<",
-      ">KAPCSOLATFELVÉTEL<"
-    ],
-    [
-      ">Have an idea\\? Let's build it\\.<",
-      ">Van egy ötlete? Építsük meg együtt.<"
-    ],
-    [
-      ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
-      ">Nyílt forráskódú együttműködés, megrendelt mérnöki munka vagy egyszerű eszmecsere a fizetések jövőjéről. Ahogy Önnek megfelel.<"
-    ],
-    [
-      "<p class=\"newsroom-kicker\">FEATURED</p>",
-      "<p class=\"newsroom-kicker\">KIEMELT</p>"
-    ],
-    [
-      "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
-      "aria-label=\"Címke: \\1, \\2 bejegyzés\""
-    ],
-    [
-      "(\\(\\d+) Posts\\)",
-      "\\1 bejegyzés)"
-    ],
-    [
-      ">Featured Tags \\((\\d+)\\)</h2>",
-      ">Kiemelt címkék (\\1)</h2>"
-    ],
-    [
-      ">Featured Tags<",
-      ">Kiemelt címkék<"
-    ],
-    [
-      "<a class=\"pill ghost\" href=\"/hu/contact/\">Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/hu/contact/\">Kapcsolatfelvétel</a>"
-    ],
-    [
-      ">Get in touch</a>",
-      ">Kapcsolatfelvétel</a>"
-    ],
-    [
       "Made with Static Site Generator: Rust-Powered SSG",
       "Static Site Generator-rel készült: Rust-alapú SSG"
     ],
@@ -729,148 +305,24 @@
       "Static Site Generatorral (SSG) létrehozott webhely"
     ],
     [
-      "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
-      "A Static Site Generator (SSG) egy villámgyors eszköz a SEO-hoz és az akadálymentességi szabványoknak való megfeleléshez."
-    ],
-    [
-      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
-      "Témák és címkék indexe: MI, fizetések, kvantum, Rust OSS"
-    ],
-    [
       "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
       "Böngéssze Sebastien Rousseau oldalát téma és címke szerint: MI, fizetések, ISO 20022, poszt-kvantum kriptográfia, nyílt forráskódú Rust és még sok más."
-    ],
-    [
-      "Website Accessibility Statement — Standards &amp; Contact",
-      "Akadálymentességi nyilatkozat: szabványok és kapcsolat"
     ],
     [
       "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
       "Ez a nyilatkozat elmagyarázza webhelyünk akadálymentességét, azt, hogy mit teszünk a javításáért, és hogyan léphet velünk kapcsolatba ezzel kapcsolatban."
     ],
     [
-      "Privacy Statement — How Your Data Is Collected &amp; Used",
-      "Adatvédelmi nyilatkozat: adatai gyűjtése és felhasználása"
-    ],
-    [
       "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
       "Ez az oldal tájékoztatja Önt a személyes adatai gyűjtésével, felhasználásával és közzétételével kapcsolatos irányelveinkről böngészése során"
-    ],
-    [
-      "Let's Start a Conversation That Will Make a Real Difference",
-      "Kezdjünk egy beszélgetést, amely valódi különbséget hoz"
-    ],
-    [
-      "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
-      "Kérdése vagy megjegyzése van? Lépjen kapcsolatba velem az alábbi űrlapon keresztül. Mindig örömmel olvasom üzeneteit, és a lehető leghamarabb válaszolok."
-    ],
-    [
-      "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
-      "Általános felhasználási feltételek: Sebastien Rousseau"
     ],
     [
       "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
       "A webhely megnyitásával elismeri és elfogadja, hogy kötik a jelen Felhasználási feltételek, valamint minden vonatkozó törvény és szabályozás."
     ],
     [
-      ">Latest research<",
-      ">Legújabb kutatások<"
-    ],
-    [
-      ">Read latest research<",
-      ">Legújabb kutatások olvasása<"
-    ],
-    [
-      ">Featured articles<",
-      ">Kiemelt cikkek<"
-    ],
-    [
-      ">All articles<",
-      ">Összes cikk<"
-    ],
-    [
-      ">Read more<",
-      ">Tovább<"
-    ],
-    [
-      ">Read full article<",
-      ">Teljes cikk elolvasása<"
-    ],
-    [
-      ">Newest first<",
-      ">Legújabb elöl<"
-    ],
-    [
-      ">Oldest first<",
-      ">Legrégebbi elöl<"
-    ],
-    [
-      ">By topic<",
-      ">Téma szerint<"
-    ],
-    [
-      ">All topics<",
-      ">Összes téma<"
-    ],
-    [
-      ">By tag<",
-      ">Címke szerint<"
-    ],
-    [
-      ">All tags<",
-      ">Összes címke<"
-    ],
-    [
-      ">Published<",
-      ">Közzétéve<"
-    ],
-    [
-      ">Updated<",
-      ">Frissítve<"
-    ],
-    [
       ">Open source<",
       ">Nyílt forráskód<"
-    ],
-    [
-      ">Authored & maintained<",
-      ">Írva és karbantartva<"
-    ],
-    [
-      ">Open source for the future of finance\\.<",
-      ">Nyílt forráskód a pénzügyek jövőjéért.<"
-    ],
-    [
-      ">A portfolio of",
-      ">Egy portfólió"
-    ],
-    [
-      ">Start a conversation<",
-      ">Beszélgetés indítása<"
-    ],
-    [
-      ">Drop me a line<",
-      ">Írjon nekem<"
-    ],
-    [
-      ">Learn more<",
-      ">Tudjon meg többet<"
-    ],
-    [
-      ">Subscribe<",
-      ">Feliratkozás<"
-    ],
-    [
-      ">Follow<",
-      ">Követés<"
-    ],
-    [
-      ">Latest<",
-      ">Legújabb<"
-    ],
-    [
-      "<h1>White Papers (?:&amp;|&) Research</h1>",
-      "<h1>Fehér könyvek és kutatás</h1>"
     ],
     [
       "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
@@ -905,20 +357,12 @@
       "<h1>Fejlesztői könyvtár: banki témák, nyílt forráskód és lejátszási listák</h1>"
     ],
     [
-      "<h1>Enterprise AI Financial Technology (?:&amp;|&) Leadership</h1>",
-      "<h1>Vállalati AI pénzügyi technológia és vezetés</h1>"
-    ],
-    [
       "<h1>Papers Have Moved to Research</h1>",
       "<h1>A publikációk átköltöztek a Kutatás oldalra</h1>"
     ],
     [
       "aria-label=\"Cloud Native Banking\"",
       "aria-label=\"Felhőnatív bankolás\""
-    ],
-    [
-      "alt=\"Cloud Native Banking — topic banner\"",
-      "alt=\"Felhőnatív bankolás — témaszalag\""
     ],
     [
       "<h3><a href=\"/hu/topics/cloud-native-banking/[^\"]+\">Cloud\\ Native\\ Banking</a></h3>",
@@ -937,10 +381,6 @@
       "aria-label=\"Ügynöki MI a bankszektorban\""
     ],
     [
-      "alt=\"Agentic AI in Banking — topic banner\"",
-      "alt=\"Ügynöki MI a bankszektorban — témaszalag\""
-    ],
-    [
       "<h3><a href=\"/hu/topics/agentic-ai-banking/[^\"]+\">Agentic\\ AI\\ in\\ Banking</a></h3>",
       "<h3><a href=\"/hu/topics/agentic-ai-banking/index.html\">Ügynöki MI a bankszektorban</a></h3>"
     ],
@@ -955,10 +395,6 @@
     [
       "aria-label=\"Treasury Automation\"",
       "aria-label=\"Treasury-automatizálás\""
-    ],
-    [
-      "alt=\"Treasury Automation — topic banner\"",
-      "alt=\"Treasury-automatizálás — témaszalag\""
     ],
     [
       "<h3><a href=\"/hu/topics/treasury-automation/[^\"]+\">Treasury\\ Automation</a></h3>",
@@ -977,10 +413,6 @@
       "aria-label=\"Működési ellenálló képesség és DORA\""
     ],
     [
-      "alt=\"Operational Resilience &amp; DORA — topic banner\"",
-      "alt=\"Működési ellenálló képesség és DORA — témaszalag\""
-    ],
-    [
       "<h3><a href=\"/hu/topics/operational-resilience-dora/[^\"]+\">Operational\\ Resilience\\ \\&amp;\\ DORA</a></h3>",
       "<h3><a href=\"/hu/topics/operational-resilience-dora/index.html\">Működési ellenálló képesség és DORA</a></h3>"
     ],
@@ -995,10 +427,6 @@
     [
       "aria-label=\"Stablecoins &amp; Tokenisation\"",
       "aria-label=\"Stabilérmék és tokenizáció\""
-    ],
-    [
-      "alt=\"Stablecoins &amp; Tokenisation — topic banner\"",
-      "alt=\"Stabilérmék és tokenizáció — témaszalag\""
     ],
     [
       "<h3><a href=\"/hu/topics/stablecoins-tokenisation/[^\"]+\">Stablecoins\\ \\&amp;\\ Tokenisation</a></h3>",
@@ -1017,10 +445,6 @@
       "aria-label=\"Generatív MI és nagy nyelvi modellek\""
     ],
     [
-      "alt=\"Generative AI &amp; LLMs — topic banner\"",
-      "alt=\"Generatív MI és nagy nyelvi modellek — témaszalag\""
-    ],
-    [
       "<h3><a href=\"/hu/topics/generative-ai-llms/[^\"]+\">Generative\\ AI\\ \\&amp;\\ LLMs</a></h3>",
       "<h3><a href=\"/hu/topics/generative-ai-llms/index.html\">Generatív MI és nagy nyelvi modellek</a></h3>"
     ],
@@ -1035,10 +459,6 @@
     [
       "aria-label=\"Voice &amp; Speech AI\"",
       "aria-label=\"Hang- és beszéd-MI\""
-    ],
-    [
-      "alt=\"Voice &amp; Speech AI — topic banner\"",
-      "alt=\"Hang- és beszéd-MI — témaszalag\""
     ],
     [
       "<h3><a href=\"/hu/topics/voice-speech-ai/[^\"]+\">Voice\\ \\&amp;\\ Speech\\ AI</a></h3>",
@@ -1057,10 +477,6 @@
       "aria-label=\"MI-irányítás és szabályozás\""
     ],
     [
-      "alt=\"AI Governance &amp; Regulation — topic banner\"",
-      "alt=\"MI-irányítás és szabályozás — témaszalag\""
-    ],
-    [
       "<h3><a href=\"/hu/topics/ai-governance-regulation/[^\"]+\">AI\\ Governance\\ \\&amp;\\ Regulation</a></h3>",
       "<h3><a href=\"/hu/topics/ai-governance-regulation/index.html\">MI-irányítás és szabályozás</a></h3>"
     ],
@@ -1075,10 +491,6 @@
     [
       "aria-label=\"Wholesale Payments Rails\"",
       "aria-label=\"Nagyértékű fizetési sínek\""
-    ],
-    [
-      "alt=\"Wholesale Payments Rails — topic banner\"",
-      "alt=\"Nagyértékű fizetési sínek — témaszalag\""
     ],
     [
       "<h3><a href=\"/hu/topics/wholesale-payments-rails/[^\"]+\">Wholesale\\ Payments\\ Rails</a></h3>",

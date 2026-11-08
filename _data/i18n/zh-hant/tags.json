@@ -1,0 +1,258 @@
+{
+  "_comment": "Translated tag names and descriptions for the tag landing pages (/<lang>/<tags-path>/<slug>/): H1, deck, meta description, og:description and related-tag chips. English source: _data/taxonomy.yml; a missing entry or empty field falls back to it (scripts/generators/tag_landing_render.py). Drafted by Claude in a Claude Code session for v0.0.33; every entry stays reviewed: false until the owner has checked it. Standard, product and acronym names (ISO 20022, DORA, SWIFT, FIPS 203, CRYSTALS-Kyber, Model Context Protocol, ...) are kept as they are. _intentionally_english lists the tags whose name is identical to the English one, on purpose; descriptions are always translated. Gate: tests/unit/test_tag_i18n.py.",
+  "_intentionally_english": [
+    "llm",
+    "iso-20022",
+    "swift",
+    "cbpr-plus",
+    "pacs-008",
+    "pain-001",
+    "ml-kem",
+    "ml-dsa",
+    "dora",
+    "eu-ai-act",
+    "nist",
+    "rust",
+    "mcp"
+  ],
+  "ai": {
+    "name": "人工智慧",
+    "description": "金融服務中的應用人工智慧：模型部署、治理、AI 代理、LLM 工具，以及在銀行環境中運行的 AI 基礎設施。",
+    "reviewed": false
+  },
+  "agentic-ai": {
+    "name": "代理式 AI",
+    "description": "支付、資金管理與銀行後台中的自主 AI 代理：授權同意、責任歸屬、稽核軌跡與協定互通性。",
+    "reviewed": false
+  },
+  "llm": {
+    "name": "LLM",
+    "description": "金融流程中的大型語言模型（LLM）：微調、RAG、提示工程、裝置端 LLM，以及推論成本的經濟性。",
+    "reviewed": false
+  },
+  "generative-ai": {
+    "name": "生成式 AI",
+    "description": "面向銀行的生成式模型（程式碼、內容、搜尋、模擬），以及安全上線這些模型所需的工程工作。",
+    "reviewed": false
+  },
+  "ai-governance": {
+    "name": "AI 治理",
+    "description": "模型風險、EU AI Act 合規、NIST AI RMF、董事會層級的問責、第三方 AI 供應商，以及銀行 AI 的合規體系。",
+    "reviewed": false
+  },
+  "iso-20022": {
+    "name": "ISO 20022",
+    "description": "大額與零售支付遷移至 ISO 20022：pacs.008、pain.001、camt 電文、CBPR+，以及資料豐富的支付通道。",
+    "reviewed": false
+  },
+  "cross-border-payments": {
+    "name": "跨境支付",
+    "description": "外匯、通匯銀行業務、多通道路由、G20 路線圖目標，以及跨境資金移轉的成本與速度。",
+    "reviewed": false
+  },
+  "stablecoins": {
+    "name": "穩定幣",
+    "description": "發行、準備資產、贖回、監理，以及穩定幣作為與銀行存款並行的清算資產所扮演的角色。",
+    "reviewed": false
+  },
+  "tokenised-deposits": {
+    "name": "代幣化存款",
+    "description": "銀行發行的存款代幣、原子清算、可程式化資產負債表，以及圍繞代幣化商業銀行貨幣的政策框架。",
+    "reviewed": false
+  },
+  "real-time-payments": {
+    "name": "即時支付",
+    "description": "RTP、FedNow、SEPA Instant、英國 Faster Payments：即時支付通道的運作機制、流動性、詐欺與定價。",
+    "reviewed": false
+  },
+  "a2a-payments": {
+    "name": "A2A 支付",
+    "description": "帳戶對帳戶支付通道、透過開放銀行發起支付，以及在其上運作的代理式支付使用情境。",
+    "reviewed": false
+  },
+  "open-banking": {
+    "name": "開放銀行",
+    "description": "PSD2、PSD3、CMA9、FDX：開放銀行 API、支付發起，以及資料可攜性的基礎架構。",
+    "reviewed": false
+  },
+  "swift": {
+    "name": "SWIFT",
+    "description": "電文傳輸、GPI、支付預先驗證，以及 SWIFT 在多通道格局中不斷演變的角色。",
+    "reviewed": false
+  },
+  "cbpr-plus": {
+    "name": "CBPR+",
+    "description": "Cross-Border Payments and Reporting Plus：SWIFT 針對通匯銀行業務的 ISO 20022 使用指引。",
+    "reviewed": false
+  },
+  "wholesale-payments": {
+    "name": "大額支付",
+    "description": "銀行間支付、大額支付與金融市場基礎設施支付：銀行基礎設施經濟學中的批發端。",
+    "reviewed": false
+  },
+  "pacs-008": {
+    "name": "pacs.008",
+    "description": "跨境 ISO 20022 的核心客戶貸記轉帳電文：結構定義、驗證、自動化與協作編排。",
+    "reviewed": false
+  },
+  "pain-001": {
+    "name": "pain.001",
+    "description": "客戶支付發起電文：企業支付工廠、驗證，以及自 MT101 的遷移。",
+    "reviewed": false
+  },
+  "payments-automation": {
+    "name": "支付自動化",
+    "description": "支付檔案的產生與驗證、例外處理，以及支付營運的工程層面。",
+    "reviewed": false
+  },
+  "programmable-liquidity": {
+    "name": "可程式化流動性",
+    "description": "即時資金管理、日間流動性協調、可程式化資產負債表，以及代理式資金管理技術堆疊。",
+    "reviewed": false
+  },
+  "payments": {
+    "name": "支付",
+    "description": "全面涵蓋支付系統、支付通道與資金移轉的經濟性：位於各特定通道標籤之上的綜合編輯入口。",
+    "reviewed": false
+  },
+  "treasury": {
+    "name": "資金管理",
+    "description": "企業與銀行的資金管理業務：流動性管理、現金預測、外匯避險，以及支撐即時資金管理的營運模式。代理式與自主資金管理的觀點歸於「可程式化流動性」。",
+    "reviewed": false
+  },
+  "digital-assets": {
+    "name": "數位資產",
+    "description": "代幣化資產、保管、清算基礎設施，以及機構在傳統金融之外採用數位資產通道的進程。",
+    "reviewed": false
+  },
+  "decentralised-finance": {
+    "name": "去中心化金融",
+    "description": "DeFi 協定、智慧合約風險、鏈上流動性，以及銀行在哪些環節接入（或刻意不接入）DeFi 技術堆疊。",
+    "reviewed": false
+  },
+  "post-quantum-cryptography": {
+    "name": "後量子密碼學",
+    "description": "NIST 後量子標準、「先收集、後解密」威脅、混合交握，以及銀行密碼體系朝以晶格為基礎的原語遷移。",
+    "reviewed": false
+  },
+  "blockchain": {
+    "name": "區塊鏈",
+    "description": "金融基礎設施中的分散式帳本技術：共識、驗證者、智慧合約執行，以及這項基礎技術在銀行業的應用場景。",
+    "reviewed": false
+  },
+  "ml-kem": {
+    "name": "ML-KEM",
+    "description": "FIPS 203：標準化的後量子金鑰封裝機制（前身為 CRYSTALS-Kyber）。",
+    "reviewed": false
+  },
+  "ml-dsa": {
+    "name": "ML-DSA",
+    "description": "FIPS 204：標準化的後量子數位簽章演算法（前身為 CRYSTALS-Dilithium）。",
+    "reviewed": false
+  },
+  "crypto-agility": {
+    "name": "密碼敏捷性",
+    "description": "盤點密碼資產、規劃遷移路徑，並在正式環境程式碼中交付可替換的密碼邊界。",
+    "reviewed": false
+  },
+  "cryptography": {
+    "name": "密碼學",
+    "description": "銀行業中的應用密碼學：雜湊、簽章、KEM、金鑰管理，以及保護支付通道的密碼原語。",
+    "reviewed": false
+  },
+  "quantum-computing": {
+    "name": "量子運算",
+    "description": "硬體進展、量子演算法、威脅到來的時間軸，以及量子運算與銀行工作負載的交會點。",
+    "reviewed": false
+  },
+  "hndl": {
+    "name": "先收集、後解密",
+    "description": "HNDL 威脅模型：攻擊者現在截取加密流量，待量子硬體可用後再行解密。",
+    "reviewed": false
+  },
+  "cloud-native-banking": {
+    "name": "雲原生銀行",
+    "description": "Kubernetes、服務網格、多區域韌性，以及銀行在 DORA 框架下採用的雲原生架構模式。",
+    "reviewed": false
+  },
+  "sovereign-cloud": {
+    "name": "主權雲",
+    "description": "資料落地、受監理區域雲端，以及在主權邊界內運行銀行工作負載的架構取捨。",
+    "reviewed": false
+  },
+  "platform-engineering": {
+    "name": "平台工程",
+    "description": "內部開發者平台、黃金路徑、鋪設好的道路：銀行技術組織如何提升工程生產力。",
+    "reviewed": false
+  },
+  "operational-resilience": {
+    "name": "營運韌性",
+    "description": "重要業務服務、影響容忍度、嚴重但合理的情境，以及銀行必須執行的營運韌性計畫。",
+    "reviewed": false
+  },
+  "cybersecurity": {
+    "name": "資訊安全",
+    "description": "銀行業的營運安全：威脅、控制措施、事件應變，以及圍繞韌性的監理期望。",
+    "reviewed": false
+  },
+  "edge-computing": {
+    "name": "邊緣運算",
+    "description": "邊緣 Worker、邊緣防詐、CDN 即平台：邊緣運算在金融工作負載中的角色。",
+    "reviewed": false
+  },
+  "dora": {
+    "name": "DORA",
+    "description": "Digital Operational Resilience Act：資訊登錄冊、ICT 第三方風險、威脅導向的滲透測試，以及銀行必須執行的營運韌性計畫。",
+    "reviewed": false
+  },
+  "eu-ai-act": {
+    "name": "EU AI Act",
+    "description": "實施指引、監理期望、高風險系統分類，以及該法案為銀行帶來的符合性評估負擔。",
+    "reviewed": false
+  },
+  "nist": {
+    "name": "NIST",
+    "description": "與銀行相關的 NIST 標準（FIPS 203/204、AI RMF、SP 800/1800 系列），以及監理機關對這些標準的採用方式。",
+    "reviewed": false
+  },
+  "third-party-risk": {
+    "name": "第三方風險",
+    "description": "DORA 下的 ICT 第三方風險、EBA 委外指引，以及監理機關對關鍵供應商集中度的期望。",
+    "reviewed": false
+  },
+  "open-source": {
+    "name": "開源",
+    "description": "受監理銀行業中的開源軟體：供應鏈風險、證明、貢獻政策，以及銀行所依賴的開源專案。",
+    "reviewed": false
+  },
+  "rust": {
+    "name": "Rust",
+    "description": "銀行基礎設施中的 Rust：記憶體安全、效能，以及與金融工作負載相關的 crate 生態系。",
+    "reviewed": false
+  },
+  "mcp": {
+    "name": "MCP",
+    "description": "Model Context Protocol：AI 用戶端如何以結構化資源的形式發現並使用銀行內容。",
+    "reviewed": false
+  },
+  "technology-strategy": {
+    "name": "技術策略",
+    "description": "銀行 CTO / CIO 關注的議題：自建或採購、自行開發或合作、組織設計，以及策略性技術議程。",
+    "reviewed": false
+  },
+  "innovation": {
+    "name": "創新",
+    "description": "關於銀行業策略性技術變革的編輯報導：即將到來的是什麼、誰在落地，以及它帶來哪些改變。",
+    "reviewed": false
+  },
+  "research": {
+    "name": "研究",
+    "description": "原創分析、指數與基準測試：支撐編輯立場的資料工作。",
+    "reviewed": false
+  },
+  "banking": {
+    "name": "銀行業",
+    "description": "以銀行業為編輯主題：正在發生哪些變化、原因為何，以及這對技術、支付、風險與營運模式代表什麼。",
+    "reviewed": false
+  }
+}

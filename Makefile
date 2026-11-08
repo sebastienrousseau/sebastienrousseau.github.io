@@ -132,7 +132,7 @@ publish-today: ## Promote and publish today's draft post
 # canonical toolchain matrix; the dev-tool pins mirror .github/workflows/ci.yml).
 bootstrap: ## Provision pinned toolchain and dependencies via mise
 	@command -v mise >/dev/null 2>&1 || { echo "mise not found - install it from https://mise.jdx.dev, then re-run 'make bootstrap'"; exit 1; }
-	@echo "==> mise install (python 3.12, node 22, rust, pa11y-ci, http-server)"
+	@echo "==> mise install (python 3.12, node 22, pandoc, ssg, pa11y-ci, http-server)"
 	@mise install
 	@echo "==> ssg static-site compiler ($(SSG_VERSION) - ADR-0002)"
 	@# `command -v ssg` is not a version check: a stale binary already on PATH

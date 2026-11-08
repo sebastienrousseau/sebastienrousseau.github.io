@@ -5,11 +5,11 @@
       ">எழுதப்பட்டு பராமரிக்கப்பட்டவை<"
     ],
     [
-      ">Authored & maintained<",
-      ">எழுதப்பட்டு பராமரிக்கப்பட்டவை<"
+      ">Career<",
+      ">பணிவாழ்க்கை<"
     ],
     [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
       ">வங்கியின் எதிர்காலத்தைப் பாதுகாத்தல்<br>முகவர் சார்ந்த AI<br>மற்றும் பிந்தைய-குவாண்டம் குறியாக்கவியலுடன்.</h1>"
     ],
     [
@@ -17,8 +17,8 @@
       ">எட்ஜுக்காக உருவாக்கப்பட்டது. சமரசமற்ற மீள்திறனுக்காக வடிவமைக்கப்பட்டது. உலகளாவிய கொடுப்பனவுகளின் அடுத்த தலைமுறையை இயக்குகிறது.</p>"
     ],
     [
-      "id=practice>Open source for the<br>future of finance\\.</h2>",
-      "id=practice>Open source<br>நிதியின் எதிர்காலத்திற்காக.</h2>"
+      ">Where I've worked\\.<",
+      ">நான் பணியாற்றிய நிறுவனங்கள்.<"
     ],
     [
       ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
@@ -33,56 +33,56 @@
       ">அனைத்து திட்டங்களையும் உலாவுக<"
     ],
     [
-      ">Python · Payments<",
-      ">Python · கொடுப்பனவுகள்<"
+      ">See the post-quantum primitives <span",
+      ">பிந்தைய-குவாண்டம் அடிப்படைக் கூறுகளைக் காண்க <span"
     ],
     [
-      ">Python · Cross-border<",
-      ">Python · எல்லை கடந்த<"
+      ">View the tooling <span",
+      ">கருவிகளைக் காண்க <span"
     ],
     [
-      ">Python · Finance<",
-      ">Python · நிதி<"
+      ">What I build</p>",
+      ">நான் உருவாக்குபவை</p>"
     ],
     [
-      ">Rust · Security<",
-      ">Rust · பாதுகாப்பு<"
+      "<h3>Payments</h3>",
+      "<h3>கொடுப்பனவுகள்</h3>"
     ],
     [
-      ">Rust · Quantum<",
-      ">Rust · குவாண்டம்<"
+      "<p>ISO 20022, end to end: pain\\.001, pacs\\.008, camt\\.053, and acmt\\.001\\. Adopt one library at a time\\.</p>",
+      "<p>ISO 20022, தொடக்கம் முதல் இறுதி வரை: pain.001, pacs.008, camt.053 மற்றும் acmt.001. ஒரு நேரத்தில் ஒரு நூலகத்தை ஏற்றுக்கொள்ளுங்கள்.</p>"
     ],
     [
-      ">Rust · YAML<",
-      ">Rust · YAML<"
+      "<h3>Security</h3>",
+      "<h3>பாதுகாப்பு</h3>"
     ],
     [
-      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
-      ">\\1 பற்றி மேலும் அறிக</a>"
+      "<p>Post-quantum primitives: ML-KEM \\(CRYSTALS-Kyber, NIST FIPS 203\\) and hashing, ready to pilot today\\.</p>",
+      "<p>பிந்தைய-குவாண்டம் அடிப்படைக் கூறுகள்: ML-KEM (CRYSTALS-Kyber, NIST FIPS 203) மற்றும் ஹாஷிங், இன்றே சோதனை முயற்சிக்குத் தயார்.</p>"
     ],
     [
-      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
-      "<p>CSV அல்லது SQLite இலிருந்து <strong>ISO 20022 pain.001</strong> கொடுப்பனவு கோப்பு உருவாக்கத்தை தானியக்கமாக்கும் Python நூலகம். SWIFT, SEPA மற்றும் முக்கிய திட்டங்கள் முழுவதும் MT/MX இலிருந்து கட்டமைக்கப்பட்ட செய்திகளுக்கான உலகளாவிய இடம்பெயர்வுக்காக உருவாக்கப்பட்டது.</p>"
+      "<h3>Tooling</h3>",
+      "<h3>கருவிகள்</h3>"
     ],
     [
-      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
-      "<p><strong>ISO 20022 pacs.008</strong> FI-to-FI வாடிக்கையாளர் கடன் பரிமாற்ற செய்திகளை உருவாக்கி, சரிபார்த்து, வழங்கவும். JSON Schema, XSD சரிபார்ப்பு, 75 நாடுகளில் IBAN, GDPR/PCI-DSS-இணக்கமான PII மறைப்பு.</p>"
+      "<p>Audited Rust libraries and a code security scanner, signed and shipped with a software bill of materials\\.</p>",
+      "<p>தணிக்கை செய்யப்பட்ட Rust நூலகங்கள் மற்றும் குறியீட்டுப் பாதுகாப்பு ஸ்கேனர், கையொப்பமிடப்பட்டு மென்பொருள் பொருட்பட்டியலுடன் (SBOM) வெளியிடப்படுகின்றன.</p>"
     ],
     [
-      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
-      "<p>பல்வடிவ வங்கி அறிக்கைகளை கட்டமைக்கப்பட்ட தரவாக மாற்றும் நிதி-தர Python கருவித்தொகுப்பு. உண்மையான உலக அறிக்கை கோப்புகளின் யதார்த்தங்கள் மற்றும் ஒழுங்குபடுத்தப்பட்ட சூழல்களின் தணிக்கை தேவைகளுக்காக வடிவமைக்கப்பட்டது.</p>"
+      ">All-time downloads</span>",
+      ">மொத்த பதிவிறக்கங்கள்</span>"
     ],
     [
-      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
-      "<p>கடவுச்சொல் குறியாக்கம் மற்றும் சரிபார்ப்புக்கான <strong>பாதுகாப்பான ஹாஷ் மற்றும் டைஜஸ்ட் அல்காரிதம்களை</strong> செயல்படுத்தும் Rust நூலகம். அங்கீகாரத்தின் பிந்தைய-PQC சகாப்தத்திற்காக குவாண்டம்-எதிர்ப்பு நிலைப்பாட்டுடன் வடிவமைக்கப்பட்டது.</p>"
+      ">Downloads, last 30 days</span>",
+      ">பதிவிறக்கங்கள், கடந்த 30 நாட்கள்</span>"
     ],
     [
-      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
-      "<p>பொது-நோக்க பிந்தைய-குவாண்டம் குறியாக்கத்திற்கான NIST FIPS 203 தரநிலையான <strong>CRYSTALS-Kyber</strong>-இன் வலுவான Rust செயலாக்கம். குவாண்டம்-எதிர்ப்பு கொடுப்பனவு அங்கீகாரத்தின் அடித்தளம்.</p>"
+      ">GitHub stars</span>",
+      ">GitHub நட்சத்திரங்கள்</span>"
     ],
     [
-      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
-      "<p>ஒரு <strong>முழுக்க-Rust YAML 1.2 சுற்றுச்சூழல் அமைப்பு</strong>. பூஜ்ஜியம் unsafe, 100% விவரக்குறிப்பு இணக்கம் (406 / 406 அதிகாரப்பூர்வ தொகுப்பு), streaming-first serde, இழப்பற்ற CST மற்றும் JSON-Schema சரிபார்ப்பு. நூலகம் + CLI (noyafmt, noyavalidate) + LSP + MCP + WASM பிணைப்புகள்.</p>"
+      ">Packages published</span>",
+      ">வெளியிடப்பட்ட தொகுப்புகள்</span>"
     ],
     [
       "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
@@ -97,8 +97,8 @@
       ">அறிக்கையைப் படிக்கவும்<"
     ],
     [
-      ">Quantum-Safe Payments\\.</h2>",
-      ">குவாண்டம்-பாதுகாப்பான கொடுப்பனவுகள்.</h2>"
+      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
+      ">HSBC, PayPal, Barclays, Shazam, AKQA மற்றும் Virgin Group ஆகியவற்றில் ஏறத்தாழ இரண்டு தசாப்த கால உள்நிறுவன கொடுப்பனவு மற்றும் டிஜிட்டல் தயாரிப்பு தலைமை.</p>"
     ],
     [
       ">Quantum-Safe Payments\\.<",
@@ -113,8 +113,8 @@
       ">கொடுப்பனவுத் துறை ஏன் இப்போது செயல்பட வேண்டும்.<"
     ],
     [
-      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
-      ">ஒழுங்குமுறையாளர்கள் harvest-now-decrypt-later ஐ நம்பகமான தற்போதைய அபாயமாகக் கருதுகின்றனர். இந்த அறிக்கை கட்டமைப்பு அச்சுறுத்தலையும், மொத்த கொடுப்பனவு தடங்கள் முழுவதும் ஒருங்கிணைந்த நடவடிக்கைக்கான அவசர வழக்கையும் கோடிட்டுக் காட்டுகிறது.</p>"
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper(?:, produced for the Emerging Payments Association Asia, sets out| outlines) the structural threat and the(?: urgent)? case for coordinated action across wholesale payment rails\\.</p>",
+      ">ஒழுங்குமுறையாளர்கள் harvest-now-decrypt-later ஐ நம்பகமான தற்போதைய அபாயமாகக் கருதுகின்றனர். Emerging Payments Association Asia க்காகத் தயாரிக்கப்பட்ட இந்த வெள்ளை அறிக்கை, கட்டமைப்பு அச்சுறுத்தலையும், மொத்த கொடுப்பனவு தடங்கள் முழுவதும் ஒருங்கிணைந்த நடவடிக்கைக்கான அவசரத் தேவையையும் விவரிக்கிறது.</p>"
     ],
     [
       ">Latest<",
@@ -153,8 +153,8 @@
       ">வங்கி மற்றும் நிதிச் சேவைகளின் எதிர்காலத்தைத் திறத்தல்.<br>சமீபத்திய பகுப்பாய்வுகளைக் கண்டறியுங்கள்</h2>"
     ],
     [
-      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
-      "<p class=\"feat-sub center\">மொத்த கொடுப்பனவு உத்தி, ISO 20022 இடம்பெயர்வு அல்லது நிதிச் சேவைகளுக்கான குவாண்டம்-பாதுகாப்பு குறியாக்கவியல், விவாதிக்க மகிழ்ச்சி.</p>"
+      "<p class=\"?feat-sub center\"?>(?:Whether it\\'s wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.|Architecture reviews, migration roadmaps, and board briefings on ISO 20022 and post-quantum security\\. Reply within two working days\\.)</p>",
+      "<p class=\"feat-sub center\">ISO 20022 மற்றும் பிந்தைய-குவாண்டம் பாதுகாப்பு குறித்த கட்டமைப்பு மதிப்பாய்வுகள், இடம்பெயர்வு வழித்திட்டங்கள் மற்றும் இயக்குநர் குழு விளக்கங்கள். இரண்டு வேலை நாட்களுக்குள் பதில்.</p>"
     ],
     [
       ">Start a conversation</a>",
@@ -233,40 +233,40 @@
       "<a href=/ta/terms/index.html>விதிமுறைகள்</a>"
     ],
     [
-      ">Career<",
-      ">பணிவாழ்க்கை<"
+      "Most downloads come from transitive dependencies in CI/CD pipelines and production services across PyPI, crates\\.io, and npm &middot; <span class=\"?proof-updated\"?>Updated <time datetime=\"?2026-10-15\"?>15 Oct 2026</time>\\.</span>",
+      "பெரும்பாலான பதிவிறக்கங்கள் PyPI, crates.io மற்றும் npm முழுவதும் உள்ள CI/CD பைப்லைன்கள் மற்றும் உற்பத்திச் சேவைகளின் மறைமுகச் சார்புகளிலிருந்து வருகின்றன &middot; <span class=\"proof-updated\">புதுப்பிக்கப்பட்டது: <time datetime=\"2026-10-15\">15 அக்டோபர் 2026</time>.</span>"
     ],
     [
-      ">Where I've worked\\.<",
-      ">நான் பணியாற்றிய நிறுவனங்கள்.<"
+      "(HSBC|PayPal|Barclays|Shazam|AKQA|Virgin) logo",
+      "\\1 லோகோ"
     ],
     [
-      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
-      ">HSBC, PayPal, Barclays, Shazam, AKQA மற்றும் Virgin Group ஆகியவற்றில் ஏறத்தாழ இரண்டு தசாப்த கால உள்நிறுவன கொடுப்பனவு மற்றும் டிஜிட்டல் தயாரிப்பு தலைமை.</p>"
+      ">EPAA White Paper \\(Sep 2025, PDF\\)</a>",
+      ">EPAA வெள்ளை அறிக்கை (செப்டம்பர் 2025, PDF)</a>"
     ],
     [
-      "alt=\"PayPal logo\"",
-      "alt=\"PayPal லோகோ\""
+      ">SWIFT CBPR\\+ / ISO 20022</a>",
+      ">SWIFT CBPR+ / ISO 20022</a>"
     ],
     [
-      "alt=\"Barclays logo\"",
-      "alt=\"Barclays லோகோ\""
+      ">Sigstore &amp; CycloneDX SBOM</a>",
+      ">Sigstore &amp; CycloneDX SBOM</a>"
     ],
     [
-      "alt=\"Shazam logo\"",
-      "alt=\"Shazam லோகோ\""
+      ">Newsletter · Banking On Quantum</p>",
+      ">Newsletter · Banking On Quantum</p>"
     ],
     [
-      "alt=\"AKQA logo\"",
-      "alt=\"AKQA லோகோ\""
+      ">Monthly briefings for senior banking architects\\.</h2>",
+      ">மூத்த வங்கிக் கட்டமைப்பாளர்களுக்கான மாதாந்திர விளக்கங்கள்.</h2>"
     ],
     [
-      "alt=\"Virgin logo\"",
-      "alt=\"Virgin லோகோ\""
+      ">Research notes on applied AI, ISO 20022 migration, and post-quantum cryptography across wholesale payment rails\\. No spam, unsubscribe in one click\\.</p>",
+      ">பயன்பாட்டு AI, ISO 20022 இடம்பெயர்வு மற்றும் மொத்த கொடுப்பனவு தடங்கள் முழுவதும் பிந்தைய-குவாண்டம் குறியாக்கவியல் குறித்த ஆய்வுக் குறிப்புகள். ஸ்பேம் இல்லை, ஒரே கிளிக்கில் குழுவிலகலாம்.</p>"
     ],
     [
-      "alt=\"HSBC logo\"",
-      "alt=\"HSBC லோகோ\""
+      ">Browse the changelog <span",
+      ">மாற்றப் பதிவை உலாவுக <span"
     ],
     [
       ">Read more<",
@@ -309,32 +309,32 @@
       ">குவாண்டம் · குறியாக்கவியல்<"
     ],
     [
-      ">Read the white paper</a>",
-      ">வெள்ளை அறிக்கையைப் படிக்கவும்</a>"
+      ">Read the white paper(?: \\(PDF\\))?</a>",
+      ">வெள்ளை அறிக்கையைப் படிக்கவும் (PDF)</a>"
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
-      "<dl class=pao><div><dt>சிக்கல்</dt><dd><strong>ISO 20022 pain.001</strong> ஐ கையால் எழுதுவது SEPA மற்றும் SWIFT மாற்றங்களின் போது நொறுங்கக்கூடியது.</dd></div><div><dt>அணுகுமுறை</dt><dd>CSV அல்லது SQLite ஐ சரிபார்க்கப்பட்ட கொடுப்பனவு XML ஆக வரைபடமாக்கும் schema-இயக்கப்பட்ட Python.</dd></div><div><dt>விளைவு</dt><dd>செயல்பாட்டுக் குழுக்கள் pain.001 ஐ சில நிமிடங்களில் அனுப்புகின்றன; தணிக்கைத் தடம் இடம்பெயர்வைத் தாங்கி நிலைக்கிறது.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>தாக்கம்</span> ISO 20022 · SEPA + SWIFT</p>"
+      ">Tailor the page order and highlights for your role\\.</p>",
+      ">உங்கள் பங்கிற்கு ஏற்ப பக்க வரிசையையும் முக்கிய அம்சங்களையும் தனிப்பயனாக்குங்கள்.</p>"
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
-      "<dl class=pao><div><dt>சிக்கல்</dt><dd>XSD, IBAN மற்றும் PII விதிகள் வேறுபடும்போது FI-to-FI கடன் பரிமாற்றங்கள் தணிக்கையில் தோல்வியடைகின்றன.</dd></div><div><dt>அணுகுமுறை</dt><dd>ஒரே நூலகம்: JSON Schema, XSD, 75 நாடுகளில் IBAN, GDPR-தர மறைப்பு.</dd></div><div><dt>விளைவு</dt><dd>ஒழுங்குமுறையாளரிடம் முதல் முறையிலேயே தேறும் எல்லை கடந்த கடன் பரிமாற்றங்கள்.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>தாக்கம்</span> 75 நாடுகள் · IBAN</p>"
+      "data-summary-default=\"Tailor the page order and highlights for your role\\.\"",
+      "data-summary-default=\"உங்கள் பங்கிற்கு ஏற்ப பக்க வரிசையையும் முக்கிய அம்சங்களையும் தனிப்பயனாக்குங்கள்.\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
-      "<dl class=pao><div><dt>சிக்கல்</dt><dd>அறிக்கை வடிவங்கள் கணக்கிணக்கக் குழுக்களை கையேடு மறு-உள்ளீட்டில் சிக்க வைக்கின்றன.</dd></div><div><dt>அணுகுமுறை</dt><dd>தணிக்கை-தர வம்சாவளியுடன் பல்வடிவ அறிக்கைகளை இயல்பாக்கும் ஒரே Python கருவித்தொகுப்பு.</dd></div><div><dt>விளைவு</dt><dd>ஒவ்வொரு வங்கிக்கும் தனிப்பயன் இணைப்புக் குறியீடு இன்றி கணக்கிணக்கம் இயங்குகிறது.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>தாக்கம்</span> Multi-format · Audit-grade</p>"
+      "data-summary-boards=\"Prioritising board-level proof, fiduciary risk, and post-quantum governance\\.\"",
+      "data-summary-boards=\"இயக்குநர் குழு நிலைச் சான்றுகள், நம்பிக்கைப் பொறுப்பு அபாயம் மற்றும் பிந்தைய-குவாண்டம் ஆளுகைக்கு முன்னுரிமை.\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
-      "<dl class=pao><div><dt>சிக்கல்</dt><dd>PQC-க்கு முந்தைய ஹாஷிங் நூலகங்கள் நற்சான்று சேமிப்பகங்களை குவாண்டம்-வெளிப்பாட்டில் விட்டுவிடுகின்றன.</dd></div><div><dt>அணுகுமுறை</dt><dd>பிந்தைய-குவாண்டம் நிலைப்பாட்டுடன் கூடிய memory-safe Rust ஹாஷ் மற்றும் டைஜஸ்ட் நூலகம்.</dd></div><div><dt>விளைவு</dt><dd>PQC இடம்பெயர்வைத் திட்டமிடும் சேவைகளுக்கான drop-in பாதுகாப்பான ஹாஷிங்.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>தாக்கம்</span> Memory-safe · Rust</p>"
+      "data-summary-engineers=\"Prioritising open-source Rust and Python libraries, ISO 20022 schemas, and FIPS 203 ML-KEM\\.\"",
+      "data-summary-engineers=\"Open source Rust மற்றும் Python நூலகங்கள், ISO 20022 திட்டவரைவுகள் மற்றும் FIPS 203 ML-KEM க்கு முன்னுரிமை.\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
-      "<dl class=pao><div><dt>சிக்கல்</dt><dd>Tier-1 வங்கிகள் ஒவ்வொரு TLS அமர்விலும் harvest-now-decrypt-later வெளிப்பாட்டைச் சுமக்கின்றன.</dd></div><div><dt>அணுகுமுறை</dt><dd>தற்போதுள்ள அங்கீகார ஓட்டங்களுடன் இணையும் முழுக்க-Rust <strong>CRYSTALS-Kyber</strong> (NIST FIPS 203).</dd></div><div><dt>விளைவு</dt><dd>உற்பத்தி-தர Rust இல் பிந்தைய-குவாண்டம் விசைப் பரிமாற்றம், சுயாதீனமாக சரிபார்க்கப்பட்டது.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>தாக்கம்</span> NIST FIPS 203</p>"
+      "data-summary-regulators=\"Prioritising the EPAA quantum-safe payments paper, DORA, CRA, and supervisory compliance\\.\"",
+      "data-summary-regulators=\"குவாண்டம்-பாதுகாப்பான கொடுப்பனவுகள் குறித்த EPAA வெள்ளை அறிக்கை, DORA, CRA மற்றும் மேற்பார்வை இணக்கத்திற்கு முன்னுரிமை.\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
-      "<dl class=pao><div><dt>சிக்கல்</dt><dd>AI, MCP மற்றும் config பைப்லைன்கள் C-ஆதரவு UB மற்றும் அமைதியான விவரக்குறிப்பு விலகல் கொண்ட YAML பாகுபடுத்திகளில் இயங்குகின்றன.</dd></div><div><dt>அணுகுமுறை</dt><dd>நூலகம், CLI, LSP, MCP மற்றும் WASM முழுவதும் முழுக்க-Rust YAML 1.2, பூஜ்ஜியம் unsafe, முழு விவரக்குறிப்பு.</dd></div><div><dt>விளைவு</dt><dd>விநியோகச் சங்கிலியின் பலவீன இணைப்பாக இருப்பதை நிறுத்தும் YAML பைப்லைன்கள்.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>தாக்கம்</span> 406 / 406 spec · 0 unsafe</p>"
+      "alt=\"Isometric render of an illuminated processor, representing the cryptographic foundations of payments\\.\"",
+      "alt=\"ஒளிரும் செயலியின் ஐசோமெட்ரிக் வரைவு, கொடுப்பனவுகளின் குறியாக்க அடித்தளங்களைக் குறிக்கிறது.\""
     ],
     [
       ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
@@ -353,8 +353,8 @@
       ">வங்கியியல் மற்றும் நிதியின் எதிர்காலத்திற்கான Open source.</h2>"
     ],
     [
-      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
-      "\\g<1>மேலும் அறிக <span"
+      ">Explore the ISO 20022 libraries <span",
+      ">ISO 20022 நூலகங்களை ஆராயுங்கள் <span"
     ]
   ]
 }

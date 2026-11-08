@@ -85,15 +85,21 @@ def _target_path(url: str, source: str) -> str:
     raise RedirectMapError(f"{source}: refresh target {url!r} is not on {SITE}")
 
 
+def refresh_url(page: Path) -> str | None:
+    """The meta-refresh URL of ``page``, or None when it is not a stub."""
+    with page.open("r", encoding="utf-8", errors="ignore") as fh:
+        m = _REFRESH_RE.search(fh.read(_HEAD_BYTES))
+    return m.group(1) if m else None
+
+
 def stub_redirects(public: Path = PUBLIC) -> dict[str, str]:
     """``{stub path: refresh target path}`` for every redirect stub page."""
     out: dict[str, str] = {}
     for page in sorted(public.rglob("index.html")):
-        with page.open("r", encoding="utf-8", errors="ignore") as fh:
-            m = _REFRESH_RE.search(fh.read(_HEAD_BYTES))
-        if m:
+        url = refresh_url(page)
+        if url:
             source = _page_path(page.relative_to(public).as_posix())
-            out[source] = _target_path(m.group(1), source)
+            out[source] = _target_path(url, source)
     return out
 
 
@@ -112,16 +118,22 @@ def collapse_chains(redirects: dict[str, str]) -> dict[str, str]:
     return out
 
 
+def render_redirects(redirects: dict[str, str]) -> str:
+    """The exact ``redirects.json`` text for ``redirects`` (sorted, compact).
+
+    One serialiser for the emitter and for ``check_redirect_map.py``, so
+    the CI drift check compares bytes the way git does.
+    """
+    payload = {"version": 1, "redirects": dict(sorted(redirects.items()))}
+    return json.dumps(payload, separators=(",", ":"), ensure_ascii=False) + "\n"
+
+
 def emit_redirects(public: Path = PUBLIC) -> Path | None:
     """Write ``redirects.json`` from the built stubs; None when unbuilt."""
     if not (public / "index.html").is_file():
         return None
-    redirects = collapse_chains(stub_redirects(public))
-    payload = {"version": 1, "redirects": dict(sorted(redirects.items()))}
     out = OUT_DIR / "redirects.json"
-    out.write_text(
-        json.dumps(payload, separators=(",", ":"), ensure_ascii=False) + "\n", encoding="utf-8"
-    )
+    out.write_text(render_redirects(collapse_chains(stub_redirects(public))), encoding="utf-8")
     return out
 
 

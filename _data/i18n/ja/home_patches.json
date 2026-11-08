@@ -6,11 +6,11 @@
       ">執筆・維持<"
     ],
     [
-      ">Authored & maintained<",
-      ">執筆・維持<"
+      ">Career<",
+      ">経歴<"
     ],
     [
-      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Securing the future of banking(?:<br\\s*/?>|\\s+)with agentic AI(?:<br\\s*/?>|\\s+)and post-quantum cryptography\\.</h1>",
       ">エージェント型AI<br>とポスト量子暗号で<br>銀行業の未来を守る。</h1>"
     ],
     [
@@ -18,8 +18,8 @@
       ">エッジ向けに構築。妥協なきレジリエンスを設計。次世代のグローバル決済を駆動する。</p>"
     ],
     [
-      "id=practice>Open source for the<br>future of finance\\.</h2>",
-      "id=practice>金融の未来のための<br>オープンソース。</h2>"
+      ">Where I've worked\\.<",
+      ">これまでの所属企業。<"
     ],
     [
       ">(?:Open source for the future of finance|Open-source foundations for wholesale finance)\\.<",
@@ -34,56 +34,56 @@
       ">すべてのプロジェクトを見る<"
     ],
     [
-      ">Python · Payments<",
-      ">Python · 決済<"
+      ">See the post-quantum primitives <span",
+      ">ポスト量子プリミティブを見る <span"
     ],
     [
-      ">Python · Cross-border<",
-      ">Python · 国際送金<"
+      ">View the tooling <span",
+      ">ツールを見る <span"
     ],
     [
-      ">Python · Finance<",
-      ">Python · 金融<"
+      ">What I build</p>",
+      ">私が構築しているもの</p>"
     ],
     [
-      ">Rust · Security<",
-      ">Rust · セキュリティ<"
+      "<h3>Payments</h3>",
+      "<h3>決済</h3>"
     ],
     [
-      ">Rust · Quantum<",
-      ">Rust · 量子<"
+      "<p>ISO 20022, end to end: pain\\.001, pacs\\.008, camt\\.053, and acmt\\.001\\. Adopt one library at a time\\.</p>",
+      "<p>ISO 20022 をエンドツーエンドで：pain.001、pacs.008、camt.053、acmt.001。ライブラリは一つずつ導入できます。</p>"
     ],
     [
-      ">Rust · YAML<",
-      ">Rust · YAML<"
+      "<h3>Security</h3>",
+      "<h3>セキュリティ</h3>"
     ],
     [
-      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
-      ">\\1 について詳しく見る</a>"
+      "<p>Post-quantum primitives: ML-KEM \\(CRYSTALS-Kyber, NIST FIPS 203\\) and hashing, ready to pilot today\\.</p>",
+      "<p>ポスト量子プリミティブ：ML-KEM（CRYSTALS-Kyber、NIST FIPS 203）とハッシュ。今日から試験導入できます。</p>"
     ],
     [
-      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
-      "<p>CSV または SQLite から <strong>ISO 20022 pain.001</strong> 決済ファイルの作成を自動化する Python ライブラリ。SWIFT、SEPA および主要スキームにおける MT/MX から構造化メッセージへの世界的な移行のために設計されています。</p>"
+      "<h3>Tooling</h3>",
+      "<h3>ツール</h3>"
     ],
     [
-      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
-      "<p><strong>ISO 20022 pacs.008</strong> 金融機関間顧客信用送金メッセージを生成、検証、配信。JSON Schema、XSD 検証、75 か国の IBAN、GDPR/PCI-DSS 準拠の個人情報マスキング。</p>"
+      "<p>Audited Rust libraries and a code security scanner, signed and shipped with a software bill of materials\\.</p>",
+      "<p>監査済みの Rust ライブラリとコードセキュリティスキャナー。署名付きで、ソフトウェア部品表（SBOM）とともに提供されます。</p>"
     ],
     [
-      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
-      "<p>マルチフォーマットの銀行明細を構造化データに変換する金融グレードの Python ツールキット。現実の明細ファイルと規制環境の監査要件に対応するよう設計されています。</p>"
+      ">All-time downloads</span>",
+      ">累計ダウンロード数</span>"
     ],
     [
-      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
-      "<p>パスワードの暗号化と検証のための<strong>セキュアハッシュ・ダイジェストアルゴリズム</strong>を実装する Rust ライブラリ。ポスト PQC 時代の認証に向けて量子耐性の姿勢で設計されています。</p>"
+      ">Downloads, last 30 days</span>",
+      ">ダウンロード数（過去 30 日間）</span>"
     ],
     [
-      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
-      "<p>汎用ポスト量子暗号化のための NIST FIPS 203 標準 <strong>CRYSTALS-Kyber</strong> の堅牢な Rust 実装。量子耐性決済認証の基盤。</p>"
+      ">GitHub stars</span>",
+      ">GitHub スター数</span>"
     ],
     [
-      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
-      "<p><strong>純 Rust の YAML 1.2 エコシステム</strong>。unsafe ゼロ、仕様 100% 準拠(公式スイート 406/406)、ストリーミング優先 serde、ロスレス CST、JSON-Schema 検証。ライブラリ + CLI (noyafmt, noyavalidate) + LSP + MCP + WASM バインディング。</p>"
+      ">Packages published</span>",
+      ">公開パッケージ数</span>"
     ],
     [
       "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
@@ -98,8 +98,8 @@
       ">論文を読む<"
     ],
     [
-      ">Quantum-Safe Payments\\.</h2>",
-      ">量子安全決済。</h2>"
+      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
+      ">HSBC、PayPal、Barclays、Shazam、AKQA、Virgin Group における約20年にわたる決済・デジタルプロダクトのインハウス・リーダーシップ。</p>"
     ],
     [
       ">Quantum-Safe Payments\\.<",
@@ -114,8 +114,8 @@
       ">決済業界が今すぐ行動すべき理由。<"
     ],
     [
-      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
-      ">規制当局は「Harvest Now, Decrypt Later」を信憑性のある現在のリスクとして扱っています。本ペーパーは構造的脅威と、ホールセール決済レール全体での協調行動の緊急性を示します。</p>"
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper(?:, produced for the Emerging Payments Association Asia, sets out| outlines) the structural threat and the(?: urgent)? case for coordinated action across wholesale payment rails\\.</p>",
+      ">規制当局は「Harvest Now, Decrypt Later」を信憑性のある現在のリスクとして扱っています。Emerging Payments Association Asia のために作成された本ペーパーは、構造的脅威と、ホールセール決済レール全体での協調行動が急務である理由を示します。</p>"
     ],
     [
       ">Latest<",
@@ -154,8 +154,8 @@
       ">銀行と金融サービスの未来を解き放つ。<br>最新の分析を発見</h2>"
     ],
     [
-      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
-      "<p class=\"feat-sub center\">ホールセール決済戦略、ISO 20022 移行、金融サービス向け量子安全暗号——お気軽にご相談ください。</p>"
+      "<p class=\"?feat-sub center\"?>(?:Whether it\\'s wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.|Architecture reviews, migration roadmaps, and board briefings on ISO 20022 and post-quantum security\\. Reply within two working days\\.)</p>",
+      "<p class=\"feat-sub center\">ISO 20022 とポスト量子セキュリティに関するアーキテクチャレビュー、移行ロードマップ、取締役会向けブリーフィング。2 営業日以内にご返信します。</p>"
     ],
     [
       ">Start a conversation</a>",
@@ -234,40 +234,40 @@
       "<a href=/ja/riyou-kiyaku/index.html>利用規約</a>"
     ],
     [
-      ">Career<",
-      ">経歴<"
+      "Most downloads come from transitive dependencies in CI/CD pipelines and production services across PyPI, crates\\.io, and npm &middot; <span class=\"?proof-updated\"?>Updated <time datetime=\"?2026-10-15\"?>15 Oct 2026</time>\\.</span>",
+      "ダウンロードの大半は、PyPI、crates.io、npm 上の CI/CD パイプラインや本番サービスにおける推移的依存関係によるものです &middot; <span class=\"proof-updated\"><time datetime=\"2026-10-15\">2026 年 10 月 15 日</time>更新。</span>"
     ],
     [
-      ">Where I've worked\\.<",
-      ">これまでの所属企業。<"
+      "(HSBC|PayPal|Barclays|Shazam|AKQA|Virgin) logo",
+      "\\1 ロゴ"
     ],
     [
-      ">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group\\.</p>",
-      ">HSBC、PayPal、Barclays、Shazam、AKQA、Virgin Group における約20年にわたる決済・デジタルプロダクトのインハウス・リーダーシップ。</p>"
+      ">EPAA White Paper \\(Sep 2025, PDF\\)</a>",
+      ">EPAA ホワイトペーパー（2025 年 9 月、PDF）</a>"
     ],
     [
-      "alt=\"PayPal logo\"",
-      "alt=\"PayPal ロゴ\""
+      ">SWIFT CBPR\\+ / ISO 20022</a>",
+      ">SWIFT CBPR+ / ISO 20022</a>"
     ],
     [
-      "alt=\"Barclays logo\"",
-      "alt=\"Barclays ロゴ\""
+      ">Sigstore &amp; CycloneDX SBOM</a>",
+      ">Sigstore &amp; CycloneDX SBOM</a>"
     ],
     [
-      "alt=\"Shazam logo\"",
-      "alt=\"Shazam ロゴ\""
+      ">Newsletter · Banking On Quantum</p>",
+      ">Newsletter · Banking On Quantum</p>"
     ],
     [
-      "alt=\"AKQA logo\"",
-      "alt=\"AKQA ロゴ\""
+      ">Monthly briefings for senior banking architects\\.</h2>",
+      ">シニア銀行アーキテクトのための月次ブリーフィング。</h2>"
     ],
     [
-      "alt=\"Virgin logo\"",
-      "alt=\"Virgin ロゴ\""
+      ">Research notes on applied AI, ISO 20022 migration, and post-quantum cryptography across wholesale payment rails\\. No spam, unsubscribe in one click\\.</p>",
+      ">ホールセール決済レールにおける応用AI、ISO 20022 移行、ポスト量子暗号に関するリサーチノート。スパムは一切なし、ワンクリックで配信停止できます。</p>"
     ],
     [
-      "alt=\"HSBC logo\"",
-      "alt=\"HSBC ロゴ\""
+      ">Browse the changelog <span",
+      ">変更履歴を見る <span"
     ],
     [
       ">Read more<",
@@ -310,32 +310,32 @@
       ">量子 · 暗号<"
     ],
     [
-      ">Read the white paper</a>",
-      ">ホワイトペーパーを読む</a>"
+      ">Read the white paper(?: \\(PDF\\))?</a>",
+      ">ホワイトペーパーを読む（PDF）</a>"
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Hand-authoring <strong>ISO 20022 pain\\.001</strong> is fragile under SEPA and SWIFT cutovers\\.</dd></div><div><dt>Approach</dt><dd>Schema-driven Python that maps CSV or SQLite into validated payment XML\\.</dd></div><div><dt>Outcome</dt><dd>Ops ship pain\\.001 in minutes; the audit trail survives the migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> ISO 20022 · SEPA \\+ SWIFT</p>",
-      "<dl class=pao><div><dt>課題</dt><dd><strong>ISO 20022 pain.001</strong> の手動作成は、SEPA および SWIFT の移行期において障害リスクが高まります。</dd></div><div><dt>アプローチ</dt><dd>CSV または SQLite から検証済み決済 XML へ変換する、スキーマ駆動の Python ライブラリです。</dd></div><div><dt>成果</dt><dd>オペレーションチームは pain.001 を数分で送出でき、監査証跡は移行後も維持されます。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>インパクト</span> ISO 20022 · SEPA + SWIFT</p>"
+      ">Tailor the page order and highlights for your role\\.</p>",
+      ">ご自身の役割に合わせて、ページの順序とハイライトを調整できます。</p>"
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>FI-to-FI credit transfers fail audit when XSD, IBAN and PII rules diverge\\.</dd></div><div><dt>Approach</dt><dd>One library: JSON Schema, XSD, IBAN across 75 countries, GDPR-grade masking\\.</dd></div><div><dt>Outcome</dt><dd>Cross-border credit transfers that pass first-time at the regulator\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 75 countries · IBAN</p>",
-      "<dl class=pao><div><dt>課題</dt><dd>FI-to-FI クレジット転送は、XSD・IBAN・PII のルールが乖離すると監査で不合格になります。</dd></div><div><dt>アプローチ</dt><dd>75 か国対応の JSON Schema・XSD・IBAN 検証と GDPR グレードのマスキングを単一ライブラリで提供します。</dd></div><div><dt>成果</dt><dd>クロスボーダー・クレジット転送が規制当局の審査を一発で通過します。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>インパクト</span> 75か国 · IBAN</p>"
+      "data-summary-default=\"Tailor the page order and highlights for your role\\.\"",
+      "data-summary-default=\"ご自身の役割に合わせて、ページの順序とハイライトを調整できます。\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Statement formats trap reconciliation teams in manual rekeying\\.</dd></div><div><dt>Approach</dt><dd>One Python toolkit that normalises multi-format statements with audit-grade lineage\\.</dd></div><div><dt>Outcome</dt><dd>Reconciliation runs without bespoke per-bank glue code\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Multi-format · Audit-grade</p>",
-      "<dl class=pao><div><dt>課題</dt><dd>明細フォーマットの多様性により、照合チームは手作業の再入力から解放されません。</dd></div><div><dt>アプローチ</dt><dd>複数フォーマットの明細を監査グレードの系譜付きで正規化する Python ツールキットです。</dd></div><div><dt>成果</dt><dd>バンクごとのグルーコードなしに照合処理が完結します。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>インパクト</span> マルチフォーマット · 監査グレード</p>"
+      "data-summary-boards=\"Prioritising board-level proof, fiduciary risk, and post-quantum governance\\.\"",
+      "data-summary-boards=\"取締役会レベルのエビデンス、受託者リスク、ポスト量子ガバナンスを優先表示しています。\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Pre-PQC hashing libraries leave credential stores quantum-exposed\\.</dd></div><div><dt>Approach</dt><dd>Memory-safe Rust hash and digest library with a post-quantum posture\\.</dd></div><div><dt>Outcome</dt><dd>Drop-in secure hashing for services planning PQC migration\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> Memory-safe · Rust</p>",
-      "<dl class=pao><div><dt>課題</dt><dd>PQC 移行前のハッシュライブラリは、クレデンシャルストアを量子攻撃にさらし続けます。</dd></div><div><dt>アプローチ</dt><dd>post-quantum 対応の姿勢を持つ、メモリセーフな Rust 製ハッシュ・ダイジェストライブラリです。</dd></div><div><dt>成果</dt><dd>PQC 移行を計画するサービスへのドロップイン対応のセキュアハッシュを実現します。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>インパクト</span> メモリセーフ · Rust</p>"
+      "data-summary-engineers=\"Prioritising open-source Rust and Python libraries, ISO 20022 schemas, and FIPS 203 ML-KEM\\.\"",
+      "data-summary-engineers=\"オープンソースの Rust・Python ライブラリ、ISO 20022 スキーマ、FIPS 203 ML-KEM を優先表示しています。\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>Tier-1 banks carry harvest-now-decrypt-later exposure on every TLS session\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust <strong>CRYSTALS-Kyber</strong> \\(NIST FIPS 203\\) that plugs into existing auth flows\\.</dd></div><div><dt>Outcome</dt><dd>Post-quantum key exchange in production-grade Rust, independently validated\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> NIST FIPS 203</p>",
-      "<dl class=pao><div><dt>課題</dt><dd>Tier-1 バンクは、すべての TLS セッションに harvest-now-decrypt-later リスクを抱えています。</dd></div><div><dt>アプローチ</dt><dd>既存の認証フローに組み込める、Pure-Rust 実装の <strong>CRYSTALS-Kyber</strong>（NIST FIPS 203）です。</dd></div><div><dt>成果</dt><dd>プロダクショングレードの Rust による post-quantum 鍵交換を独立検証済みで提供します。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>インパクト</span> NIST FIPS 203</p>"
+      "data-summary-regulators=\"Prioritising the EPAA quantum-safe payments paper, DORA, CRA, and supervisory compliance\\.\"",
+      "data-summary-regulators=\"EPAA の量子安全決済ペーパー、DORA、CRA、監督上のコンプライアンスを優先表示しています。\""
     ],
     [
-      "<dl class=pao><div><dt>Problem</dt><dd>AI, MCP and config pipelines run on YAML parsers with C-backed UB and silent spec drift\\.</dd></div><div><dt>Approach</dt><dd>Pure-Rust YAML 1\\.2 across library, CLI, LSP, MCP and WASM — zero unsafe, full spec\\.</dd></div><div><dt>Outcome</dt><dd>YAML pipelines that stop being the supply-chain weak link\\.</dd></div></dl><p class=proj-metric><span class=proj-metric-label>Impact</span> 406 \\/ 406 spec · 0 unsafe</p>",
-      "<dl class=pao><div><dt>課題</dt><dd>AI・MCP・コンフィグパイプラインは、C バックエンドの UB とサイレントな仕様乖離を抱えた YAML パーサーで動作しています。</dd></div><div><dt>アプローチ</dt><dd>ライブラリ・CLI・LSP・MCP・WASM 全域で Pure-Rust の YAML 1.2 を実装し、unsafe ゼロ、仕様完全準拠です。</dd></div><div><dt>成果</dt><dd>YAML パイプラインがサプライチェーンの弱点でなくなります。</dd></div></dl><p class=proj-metric><span class=proj-metric-label>インパクト</span> 406 / 406 仕様 · 0 unsafe</p>"
+      "alt=\"Isometric render of an illuminated processor, representing the cryptographic foundations of payments\\.\"",
+      "alt=\"決済を支える暗号基盤を表現した、発光するプロセッサーのアイソメトリック描画。\""
     ],
     [
       ">Open-source payments, post-quantum security, and applied AI for financial services\\.</p>",
@@ -354,8 +354,8 @@
       ">銀行業と金融の未来のためのオープンソース。</h2>"
     ],
     [
-      "(class=\"offer-link\" href=\"[^\"]*\">)Learn more <span",
-      "\\g<1>詳しく見る <span"
+      ">Explore the ISO 20022 libraries <span",
+      ">ISO 20022 ライブラリを見る <span"
     ]
   ]
 }

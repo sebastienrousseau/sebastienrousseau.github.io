@@ -22,7 +22,7 @@
       ">Berlangganan</button>"
     ],
     [
-      ">Skip to Mein content</a>",
+      ">Skip to main content</a>",
       ">Lompat ke konten utama</a>"
     ],
     [
@@ -48,10 +48,6 @@
     [
       "title=\"Switch theme\"",
       "title=\"Ganti tema\""
-    ],
-    [
-      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
-      "aria-label=\"Cari (Cmd atau Ctrl + K)\""
     ],
     [
       "title=\"Search \\(⌘K\\)\"",

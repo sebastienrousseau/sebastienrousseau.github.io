@@ -1,0 +1,428 @@
+/* ==========================================================================
+   Design system v2: one column grid, one fluid type scale.
+   --------------------------------------------------------------------------
+   Single source of truth. scripts/generators/design_system.py appends this
+   file, verbatim, as the LAST rules of the shared <style> block in every
+   _layouts/*.html, so it wins the cascade over the legacy per-page values
+   without !important. tests/unit/test_design_system.py fails the build if
+   any layout drifts from this file.
+
+   Columns (three widths, nothing else):
+     --max         1200px  landing, listing and product sections, nav, footer
+     --measure     43.25rem (692px) reading column: articles, about, contact
+     --max-wide    1440px  full-bleed media and image bands only
+   Gutter: --pad-x grows 20px @360 -> 60px @1440 (was a fixed 22px).
+   >=1920px screens: --max 1320px, --max-wide 1600px, display sizes grow.
+
+   Type: every size is clamp(min, rem + vw, max) between 360px and 1440px
+   viewports, with rem terms so browser and OS text-size settings scale it
+   (WCAG 1.4.4). Device pixel ratio does not change CSS px, so the same
+   token renders at the same physical proportion on 1x, 2x and 3x screens.
+   ========================================================================== */
+
+:root {
+  --pad-x: clamp(20px, 0.4167rem + 3.704vw, 64px);
+  --max: 1200px;
+  --max-wide: 1440px;
+  --measure: 43.25rem;
+
+  --fs-micro:   clamp(0.75rem,   0.7292rem + 0.0926vw, 0.8125rem);  /* 12 -> 13 */
+  --fs-meta:    clamp(0.8125rem, 0.7917rem + 0.0926vw, 0.875rem);   /* 13 -> 14 */
+  --fs-small:   clamp(0.875rem,  0.8333rem + 0.1852vw, 1rem);       /* 14 -> 16 */
+  --fs-ui:      clamp(0.9375rem, 0.8958rem + 0.1852vw, 1.0625rem);  /* 15 -> 17 buttons, tabs */
+  --fs-body:    clamp(1rem,      0.9583rem + 0.1852vw, 1.125rem);   /* 16 -> 18 */
+  --fs-prose:   clamp(1.125rem,  1.0833rem + 0.1852vw, 1.25rem);    /* 18 -> 20 */
+  --fs-lead:    clamp(1.1875rem, 1.0833rem + 0.463vw,  1.5rem);     /* 19 -> 24 */
+  --fs-h4:      clamp(1.125rem,  1.0625rem + 0.2778vw, 1.3125rem);  /* 18 -> 21 */
+  --fs-h3:      clamp(1.25rem,   1.125rem + 0.5556vw, 1.625rem);    /* 20 -> 26 */
+  --fs-h2-prose:clamp(1.5rem,    1.3333rem + 0.7407vw, 2rem);       /* 24 -> 32 */
+  --fs-h2:      clamp(1.75rem,   1.4167rem + 1.4815vw, 2.75rem);    /* 28 -> 44 */
+  --fs-h1:      clamp(2.125rem,  1.6667rem + 2.037vw,  3.5rem);     /* 34 -> 56 */
+  --fs-display: clamp(2.5rem,    1.75rem + 3.3333vw, 4.75rem);      /* 40 -> 76 */
+  --fs-stat:    clamp(2.25rem,   1.8333rem + 1.8519vw, 3.5rem);     /* 36 -> 56 */
+
+  --lh-display: 1.04;
+  --lh-heading: 1.12;
+  --lh-card: 1.25;
+  --lh-lead: 1.4;
+  --lh-body: 1.55;
+  --lh-prose: 1.65;
+  --track-micro: 0.08em;
+}
+
+/* Large and ultra-wide screens keep growing gently instead of freezing at
+   the 1440px values (1440 -> 2560px viewport). */
+@media (min-width: 1920px) {
+  :root {
+    --max: 1320px;
+    --max-wide: 1600px;
+    --pad-x: 80px;
+    --fs-body:    clamp(1.125rem, 1.0446rem + 0.0893vw, 1.1875rem);
+    --fs-prose:   clamp(1.25rem,  1.1696rem + 0.0893vw, 1.3125rem);
+    --fs-lead:    clamp(1.5rem,   1.3393rem + 0.1786vw, 1.625rem);
+    --fs-h2:      clamp(2.75rem,  2.1071rem + 0.7143vw, 3.25rem);
+    --fs-h1:      clamp(3.5rem,   2.8571rem + 0.7143vw, 4rem);
+    --fs-display: clamp(4.75rem,  4.1071rem + 0.7143vw, 5.25rem);
+  }
+}
+
+/* ---- 1. Columns -------------------------------------------------------- */
+
+/* Parent-padded wraps: the section supplies --pad-x, the wrap caps width. */
+.ap-section .wrap,
+.feat .wrap,
+main.content > .wrap:has(.newsroom),
+main.content > .wrap:has(> .tag-landing-list),
+main.content > .wrap.report-wrap:has(> .tag-landing-list),
+.newsroom,
+.feat-hero .wrap.feat-hero-grid,
+.read-as-inner,
+.offer-grid,
+.proof-rail,
+.cs-stage-row {
+  max-width: var(--max);
+}
+
+/* Reading column: articles, contact, legal and generic pages. */
+main.content > .wrap,
+main.content > .wrap.report-wrap:has(> .report-article),
+.article-toc,
+.author-card,
+.article-sources,
+.article-sigstore,
+details.about-identifiers,
+.newsletter-band .wrap {
+  max-width: var(--measure);
+}
+
+/* Self-padded wraps (border-box) whose parent supplies no gutter: the nav,
+   the footer, /speaking/, /iso20022-mcp/, and /trust/, which zero main's
+   padding for full-bleed tinted bands. The gutter is added to the cap so
+   their text edge lands on the same line as every wrap in main. */
+.speaking-page .spk-wrap,
+.iso20022-mcp-page .spk-hero > .spk-wrap,
+.speaking-page .spk-hero-grid,
+.trust-page .tr-wrap,
+.ap-nav .wrap,
+.cs-hero > .cs-stage-row,
+.ap-foot .wrap {
+  max-width: calc(var(--max) + 2 * var(--pad-x));
+  padding-inline: var(--pad-x);
+}
+
+.cs-stage:not(.cs-hero) { padding-inline: var(--pad-x); }
+
+/* Editorial landing pages built on the generic shell (About) carry
+   multi-column narrative grids: they take the content width, and only
+   their running text is held to the reading measure. */
+main.content > .wrap:has(.narrative-section, .story-grid) { max-width: var(--max); }
+.narrative-body { max-width: var(--measure); }
+
+/* Contact: form at the reading measure, "faster paths" aside beside it,
+   both on the content grid so the form never squeezes below 40ch. */
+main.content > .wrap:has(> .contact-layout) { max-width: var(--max); }
+@media (min-width: 900px) {
+  .contact-layout {
+    grid-template-columns: minmax(0, var(--measure)) minmax(280px, 380px);
+    justify-content: space-between;
+  }
+}
+
+/* Listing grids: 1 / 2 / 3 columns, no stranded last card. */
+section.tag-landing-list { grid-template-columns: 1fr; }
+@media (min-width: 640px) {
+  section.tag-landing-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1024px) {
+  section.tag-landing-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  section.tag-landing-list > article.tag-landing-card:last-child:nth-child(odd) { grid-column: auto; }
+  section.tag-landing-list > article.tag-landing-card:last-child:nth-child(3n+1) { grid-column: 1 / -1; }
+}
+
+/* ---- 2. Type roles ----------------------------------------------------- */
+
+/* Display: centred, single-column landing heroes. */
+.ap-hero h1,
+.trust-page .tr-hero h1,
+.cs-hero-text h1,
+.story-hero-inner h1 {
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+  letter-spacing: -0.022em;
+}
+
+/* Title: split heroes (headline beside media), articles and listings use
+   the smaller H1 so a headline never runs past four lines. */
+.feat-hero h1.feat-headline,
+.speaking-page .spk-hero h1,
+body:has(.report-article) .ap-hero h1,
+header.tag-landing-hero h1,
+.newsroom-section-head h1 {
+  font-size: var(--fs-h1);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+/* Section headings. */
+h2.feat-headline,
+h3.feat-headline,
+h2.feat-card-title,
+.speaking-page .spk-media h2,
+.speaking-page .spk-book-intro h2,
+.speaking-page .spk-wrap > h2,
+.trust-page .tr-wrap > h2,
+.qa-head h2.qa-headline,
+.offer-headline,
+.narrative-head,
+.story-title,
+.speaking-page .spk-head h2,
+.trust-page .tr-head h2,
+.trust-page .tr-col-head h2,
+.newsroom-section-head h2,
+.topic-pillar-head h2,
+.cs-stage-row > h2,
+.reuse h2,
+.tut-chapter-head h2.cat-headline,
+.cat-section-head h2.cat-headline,
+.setup-three-headline,
+h2.setup-finale-headline {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-heading);
+  letter-spacing: -0.016em;
+}
+
+/* Headings inside long-form prose step down so the article keeps rhythm. */
+.report-article h2,
+.report-article h2.qa-headline,
+main.content > .wrap > h2,
+.related-heading {
+  font-size: var(--fs-h2-prose);
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+}
+.report-article h3 { font-size: var(--fs-h4); line-height: var(--lh-card); }
+.article-toc h2 { font-size: var(--fs-h4); line-height: var(--lh-card); }
+
+/* Feature-card titles. */
+.speaking-page .spk-talk h3,
+.speaking-page .spk-book-aside h3,
+.trust-page .tr-card h3,
+.trust-page .tr-prev-body h3,
+.cs-card-title,
+h2.book-title,
+main.content > .wrap > h3,
+.cat-section-head h3.cat-headline,
+h3.setup-finale-headline,
+.area-card-headline {
+  font-size: var(--fs-h3);
+  line-height: 1.18;
+}
+
+/* Grid-card titles. */
+.offer-card h3,
+.newsroom-card-body h3,
+.tag-landing-card .card-body h2,
+.speaking-page .spk-path h3,
+.speaking-page .spk-format h3,
+.iso20022-mcp-page .mcp-sec-cell h3,
+.iso20022-mcp-page .mcp-step h3,
+.iso20022-mcp-page .mcp-client h3,
+.iso20022-mcp-page .mcp-prompt h3,
+.iso20022-mcp-page .mcp-advisory-copy h3,
+.story-card-title,
+summary.qa-q {
+  font-size: var(--fs-h4);
+  line-height: var(--lh-card);
+}
+
+/* Lead / deck / lede. */
+.ap-hero .sub,
+.feat-sub,
+.speaking-page .spk-lede,
+.trust-page .tr-lede,
+.cs-deck,
+.topic-pillar-lede,
+.newsroom-section-head .newsroom-lede,
+.topic-lede,
+.story-hero-sub,
+.cat-lede,
+.setup-finale-lede,
+.story-intro {
+  font-size: var(--fs-lead);
+  line-height: var(--lh-lead);
+}
+
+/* Long-form reading text. */
+.report-article p,
+.report-article li,
+main.content > .wrap > p,
+main.content > .wrap > :is(ul, ol) > li,
+.narrative-body p {
+  font-size: var(--fs-prose);
+  line-height: var(--lh-prose);
+}
+
+/* Feature descriptions. */
+.feat-card-body p,
+.cs-stage-row > p,
+.cs-card-excerpt,
+.book-excerpt,
+.speaking-page .spk-bio-body p,
+.speaking-page .spk-media p,
+.docs-client p,
+.area-card-text,
+.qa-a p {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+}
+
+/* Card text. */
+.feat-credentials,
+.offer-card p,
+.newsroom-tldr,
+.newsroom-excerpt,
+.card-excerpt,
+.speaking-page .spk-path p,
+.speaking-page .spk-path li,
+.trust-page .tr-card p,
+.trust-page .tr-prev-body p,
+.trust-page .tr-rec li,
+.story-card-body,
+.iso20022-mcp-page .mcp-sec-cell p,
+.iso20022-mcp-page .mcp-step,
+.iso20022-mcp-page .mcp-step p,
+.iso20022-mcp-page .mcp-client p,
+.iso20022-mcp-page .mcp-prompt-note,
+.iso20022-mcp-page .mcp-note,
+.iso20022-mcp-page .mcp-tab-note,
+.iso20022-mcp-page .mcp-advisory-copy p,
+.iso20022-mcp-page .spk-path li,
+.iso20022-mcp-page .spk-microproof,
+.speaking-page .spk-desc,
+.speaking-page .spk-outcome,
+.speaking-page .spk-book-aside p,
+.speaking-page .spk-format p,
+.speaking-page .spk-press-nudge,
+.speaking-page .spk-microproof,
+.speaking-page .spk-aside-list li,
+.speaking-page .spk-media-topics li,
+.speaking-page .spk-biocard p,
+.speaking-page .spk-talk li,
+.trust-page .tr-note,
+.trust-page .tr-gov-list li,
+.trust-page .tr-rec-org,
+.author-card-body,
+.author-card-bio,
+.cite-meta p,
+.reuse-meta p,
+.reuse p,
+.article-toc li,
+.article-cta p,
+.post-lead p,
+.post-lead-takeaways li,
+.contact-form-col p,
+.contact-aside-note,
+.contact-aside-list li,
+.story-why-list li,
+summary.cs-dropdown-summary {
+  font-size: var(--fs-small);
+  line-height: var(--lh-body);
+}
+
+/* Controls: buttons, pills, tabs, inline CTAs. */
+.pill,
+.btn-primary,
+.btn-ghost,
+.offer-link,
+.speaking-page .spk-btn,
+.iso20022-mcp-page .mcp-tab-labels label,
+.iso20022-mcp-page .mcp-tab-labels [role="tab"],
+.newsroom-more,
+.setup-finale-cta,
+.area-card-cta,
+.book-actions,
+.ap-hero-cta {
+  font-size: var(--fs-ui);
+}
+
+/* Meta and eyebrows sit inside cards and prose, so they carry a :root
+   prefix to outrank the card-text and prose rules above. */
+
+/* Meta: dates, captions, method notes. */
+:root :is(
+  .newsroom-meta,
+  .book-meta,
+  .proof-note,
+  .proof-credibility li,
+  .read-as-summary,
+  .tag-landing-meta,
+  .iso20022-mcp-page .mcp-prompt-meta,
+  .iso20022-mcp-page .mcp-prop-type,
+  .iso20022-mcp-page .mcp-clients-foot,
+  .iso20022-mcp-page .mcp-schema-note,
+  .iso20022-mcp-page .spk-stats-foot,
+  .speaking-page .spk-note,
+  .speaking-page .spk-mono,
+  .speaking-page .spk-stats-foot,
+  .hero-clock-caption,
+  .artefact-title,
+  .artefact-foot,
+  .byline-strap,
+  details.cite-popover > summary
+) {
+  font-size: var(--fs-meta);
+  line-height: 1.5;
+}
+
+/* Eyebrows, kickers and labels: one size, one tracking. */
+:root :is(
+  .eyebrow,
+  .feat-eyebrow,
+  .offer-eyebrow,
+  .newsroom-eyebrow,
+  .newsroom-kicker,
+  .card-eyebrow,
+  .narrative-eyebrow,
+  .story-eyebrow,
+  .story-card-eyebrow,
+  .book-eyebrow,
+  .cs-kicker,
+  .cs-card-kicker,
+  .cs-stage-no,
+  .speaking-page .spk-eyebrow,
+  .speaking-page .spk-lbl,
+  .trust-page .tr-kicker,
+  .iso20022-mcp-page .mcp-prompt-label,
+  .iso20022-mcp-page .mcp-clients-label,
+  .iso20022-mcp-page .mcp-step-num,
+  .iso20022-mcp-page .mcp-gate-badge,
+  .speaking-page .spk-tag,
+  .speaking-page .spk-chip,
+  .newsroom-tldr-label,
+  .artefact-badge,
+  .finale-ai-kicker,
+  .cite-format-label,
+  .contact-aside-title,
+  .cat-kicker,
+  .setup-finale-eyebrow,
+  .setup-three-kicker,
+  .area-card-kicker,
+  .about-brand-rail-label,
+  .listing-filters label
+) {
+  font-size: var(--fs-micro);
+  line-height: 1.4;
+  letter-spacing: var(--track-micro);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Big numbers. */
+.speaking-page .spk-num { font-size: var(--fs-stat); line-height: 1; }
+
+/* Balanced wrapping for every headline role. */
+:is(.ap-hero h1, .feat-hero h1, .speaking-page .spk-hero h1,
+    .trust-page .tr-hero h1, .cs-hero-text h1, h2.feat-headline,
+    .speaking-page .spk-head h2) { text-wrap: balance; }
+
+:focus-visible { outline-offset: 3px; }

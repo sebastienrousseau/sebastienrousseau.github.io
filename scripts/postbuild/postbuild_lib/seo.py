@@ -993,7 +993,67 @@ def inject_kpi_metrics(html_text: str) -> str:
         val = metrics.get(_attr_value(open_tag, "data-kpi"))
         return f"{open_tag}{val}{m.group(3)}" if val else m.group(0)
 
-    return _KPI_SPAN_RE.sub(_fill, html_text)
+    return inject_kpi_stamp(_KPI_SPAN_RE.sub(_fill, html_text))
+
+
+# The "Updated <time>" stamp beside the rail was hand-typed, so the numbers
+# refreshed weekly while the stamp stayed on 15 Oct 2026 -- a fresh figure
+# under a stale date reads as a stale figure. Fill it from the same file's
+# `$generated_at`. Tolerates the raw, entity-escaped and minified forms the
+# KPI spans above already have to survive.
+_KPI_STAMP_RE = re.compile(
+    r"((?:&lt;|<)span(?![-\w])[^>]*\bclass\s*=\s*[\"']?proof-updated\b[^>]*>"
+    r"[^<&]*?(?:&lt;|<)time(?![-\w])[^>]*?\bdatetime\s*=\s*[\"']?)"
+    r"(\d{4}-\d{2}-\d{2})"
+    r"([\"']?[^>]*>)"
+    r"([^<&]*)"
+    r"((?:&lt;|<)/time>)",
+    re.IGNORECASE,
+)
+_kpi_stamp_cache: tuple[str, str] | None = None
+
+
+def _kpi_stamp() -> tuple[str, str] | None:
+    """``(iso_date, '29 Oct 2026')`` from metrics.json, or None."""
+    global _kpi_stamp_cache
+    if _kpi_stamp_cache is not None:
+        return _kpi_stamp_cache
+    try:
+        data = _json.loads(_METRICS_JSON.read_text(encoding="utf-8"))
+        raw = str(data.get("$generated_at", ""))[:10]
+        y, mo, d = (int(p) for p in raw.split("-"))
+    except (OSError, ValueError, AttributeError):
+        return None
+    months = (
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+    )
+    _kpi_stamp_cache = (raw, f"{d} {months[mo - 1]} {y}")
+    return _kpi_stamp_cache
+
+
+def inject_kpi_stamp(html_text: str) -> str:
+    """Point the proof rail's ``Updated <time>`` at metrics.json's
+    ``$generated_at``. Pages without the stamp are untouched. Idempotent."""
+    if "proof-updated" not in html_text:
+        return html_text
+    stamp = _kpi_stamp()
+    if stamp is None:
+        return html_text
+    iso, label = stamp
+    return _KPI_STAMP_RE.sub(
+        lambda m: f"{m.group(1)}{iso}{m.group(3)}{label}{m.group(5)}", html_text
+    )
 
 
 # ---------------------------------------------------------------------------

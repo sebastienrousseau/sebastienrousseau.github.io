@@ -50,10 +50,6 @@
       "title=\"Сменить тему\""
     ],
     [
-      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
-      "aria-label=\"Поиск (Cmd или Ctrl + K)\""
-    ],
-    [
       "title=\"Search \\(⌘K\\)\"",
       "title=\"Поиск (⌘K)\""
     ],
