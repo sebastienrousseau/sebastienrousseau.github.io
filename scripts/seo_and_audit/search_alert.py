@@ -29,7 +29,8 @@ TIMEOUT = 30
 
 
 class Client(Protocol):
-    def call(self, method: str, path: str, body: dict[str, Any] | None = None) -> Any: ...
+    def call(self, method: str, path: str, body: dict[str, Any] | None = None) -> Any:
+        """Send one REST request and return the decoded JSON body."""
 
 
 class GitHub:
