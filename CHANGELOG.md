@@ -10,6 +10,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.0.35] - Unreleased
+
+ssg pinned to an exact release.
+
+### Changed
+
+- **ssg is pinned to 0.0.75 in every workflow and in `mise.toml`**: `SSG_VERSION` was `latest` in `ci.yml` and the four workflows that rebuild the site (Lighthouse, link audit, schema diff, translation summary), so an upstream release could change the output in the middle of a PR, as 0.0.48 (CSP) and 0.0.50 (Linux build) did, and a developer machine still on 0.0.73 built a different site from CI's 0.0.75. 0.0.75 is the first release with both fixes the site relies on: the CSS minifier keeps the space before `+`/`-` inside `clamp()`, and the accessibility gate reads rules inside `@layer` blocks. `tests/unit/test_ssg_pin_single_source.py` now rejects `latest` and fails when any workflow's pin differs from `ci.yml`; `ssg-version-check.yml` files the weekly bump issue again now that there is a pin to compare.
+- **`pyproject.toml` version** moves to 0.0.35 (0.0.34 did not bump it).
+
 ## [0.0.34] - Unreleased
 
 English root feeds, and a live check that keeps them English.

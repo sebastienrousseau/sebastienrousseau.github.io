@@ -13,11 +13,10 @@ env:
   # Single source of truth for the ssg pin: the cache key and the install
   # both read it, so they cannot drift apart. ADR-0002.
   #
-  # Tracks the newest stable ssg. build.sh passes --no-tag-pages,
-  # which needs >= 0.0.52 — a pin below that fails with
-  # "unexpected argument". Resolution and the version assertion live
-  # in .github/actions/setup-ssg so every workflow agrees.
-  SSG_VERSION: "latest"
+  # Same exact pin as ci.yml (tests/unit/test_ssg_pin_single_source.py).
+  # build.sh passes --no-tag-pages, which needs >= 0.0.52. The version
+  # assertion lives in .github/actions/setup-ssg.
+  SSG_VERSION: "0.0.75"
 
 jobs:
   lighthouse:

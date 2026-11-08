@@ -34,11 +34,28 @@ def _ci_pin() -> str:
     return m.group(1)
 
 
-def test_ci_declares_a_version_policy() -> None:
-    """Either `latest` (track every release) or an exact version (hold one
-    back). A range or a partial version would reintroduce the drift this
-    file exists to prevent."""
-    assert _ci_pin() == "latest" or re.fullmatch(r"\d+\.\d+\.\d+", _ci_pin())
+def test_ci_pins_an_exact_version() -> None:
+    """An exact MAJOR.MINOR.PATCH. `latest` let an upstream release change
+    the output mid-PR (0.0.48 altered the CSP, 0.0.50 broke the Linux
+    build) and let a developer build with 0.0.73 while CI used 0.0.75; a
+    range or a partial version would do the same."""
+    assert re.fullmatch(r"\d+\.\d+\.\d+", _ci_pin()), f"ci.yml SSG_VERSION is {_ci_pin()!r}"
+
+
+_WORKFLOW_PIN = re.compile(r'^\s*SSG_VERSION:\s*"([^"]+)"', re.MULTILINE)
+
+
+def test_every_workflow_builds_with_the_ci_pin() -> None:
+    """Lighthouse, link audit, schema diff and the translation summary each
+    install ssg. One that floats measures a site CI never built."""
+    pins = {
+        wf.name: m.group(1)
+        for wf in sorted((ROOT / ".github" / "workflows").glob("*.yml"))
+        if (m := _WORKFLOW_PIN.search(wf.read_text(encoding="utf-8")))
+    }
+    drift = {name: pin for name, pin in pins.items() if pin != _ci_pin()}
+    assert len(pins) > 1, "expected SSG_VERSION in ci.yml and the workflows that rebuild the site"
+    assert not drift, f"workflows disagree with ci.yml ({_ci_pin()}): {drift}"
 
 
 def test_mise_tracks_the_same_policy_as_ci() -> None:
