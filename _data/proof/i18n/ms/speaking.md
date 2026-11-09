@@ -1,19 +1,19 @@
 ---
 title: Ceramah dan nasihat
 meta_title: 'Sebastien Rousseau: ucaptama, panel dan ulasan pakar tentang pembayaran, kriptografi pascakuantum dan AI gunaan'
-meta_description: Ahli teknologi perbankan kanan, hampir dua dekad di HSBC, PayPal dan Barclays. Ucaptama, panel dan ulasan pakar untuk lembaga pengarah, persidangan industri dan bilik berita.
+meta_description: 'Pemimpin kanan pembayaran dan perkhidmatan kewangan, 20+ tahun dalam perbankan dan teknologi. Ucaptama, panel dan ulasan pakar: pembayaran, pascakuantum, AI.'
 hero:
   eyebrow: Ucaptama · Panel · Ulasan pakar
   headline: Teknologi yang sedang membina semula perbankan, dijelaskan kepada mereka yang perlu membuat keputusan.
-  lede: Sebastien Rousseau ialah ahli teknologi perbankan kanan dengan hampir dua dekad di HSBC, PayPal dan Barclays. Beliau bercakap tentang pembayaran ISO 20022, kriptografi pascakuantum dan AI gunaan, lalu menukar persoalan industri menjadi keputusan yang boleh diambil sesebuah dewan pada waktu itu juga.
+  lede: 'Sebastien Rousseau ialah pemimpin kanan dalam bidang pembayaran dan perkhidmatan kewangan dengan lebih 20 tahun pengalaman dalam pembayaran, perbankan dan teknologi digital. Beliau membawa pemodenan pembayaran, kriptografi pascakuantum dan AI gunaan daripada kertas dasar kepada kod yang boleh diperiksa, dan kepada ucaptama yang boleh diambil tindakan oleh lembaga pengarah.'
   primary_cta: Jemput saya berucap
   secondary_cta: Lihat ucaptama
   press_nudge: Wartawan yang dikejar tarikh akhir?
   press_nudge_cta: Minta ulasan pakar
   microproof:
-  - Hampir dua dekad merentas HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group
-  - Penulis bersama kertas putih pascakuantum EPAA
-  - Penyumbang, Emerging Payments Association Asia
+  - 'Lebih 20 tahun dalam pembayaran, perbankan dan teknologi digital'
+  - 'Mengetuai produk API pembayaran borong di HSBC'
+  - 'Ahli, EPAA Quantum-Safe Cryptography Working Group'
 employers_label: Tempat saya pernah berkhidmat
 stats_eyebrow: Dalam angka
 stats:
@@ -25,7 +25,7 @@ stats:
   label: Muat turun sumber terbuka
 - kpi: github_stars
   label: Bintang GitHub
-stats_foot: 'Penyumbang Kumpulan Kerja Kriptografi Selamat Kuantum EPAA. Penulis bersama kertas putih «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (September 2025).'
+stats_foot: 'Ahli EPAA Quantum-Safe Cryptography Working Group dan penyumbang kepada kertas putihnya «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (September 2025).'
 paths:
   eyebrow: Dua cara bekerjasama
   headline: Tempah sebuah pentas, atau tempah sebuah sumber.
@@ -137,11 +137,11 @@ bios:
   copy_label: Salin
   items:
   - length: Pendek
-    text: Sebastien Rousseau ialah ahli teknologi perbankan kanan yang menulis dan membina di persimpangan pembayaran ISO 20022, kriptografi pascakuantum dan AI gunaan. Hampir dua dekad merentas HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group.
+    text: 'Sebastien Rousseau ialah pemimpin kanan dalam bidang pembayaran dan perkhidmatan kewangan dengan lebih 20 tahun pengalaman dalam pembayaran, perbankan dan teknologi digital. Beliau mengetuai produk API pembayaran borong di HSBC dan merupakan ahli Quantum-Safe Cryptography Working Group di bawah Emerging Payments Association Asia.'
   - length: Sederhana
-    text: Sebastien Rousseau ialah ahli teknologi perbankan kanan dengan hampir dua dekad di HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA dan Virgin Group. Beliau menulis dan membina di persimpangan pembayaran ISO 20022, kriptografi pascakuantum dan AI gunaan, serta menyelenggara pelaksanaan rujukan sumber terbuka — pacs.008, pain.001, KyberLib, BankStatementParser — yang digunakan pasukan perbendaharaan dan pembayaran dalam persekitaran sebenar. Beliau menyumbang kepada Kumpulan Kerja Kriptografi Selamat Kuantum Emerging Payments Association Asia dan menerbitkan Banking On Quantum serta Banking On AI.
+    text: 'Sebastien Rousseau ialah pemimpin kanan dalam bidang pembayaran dan perkhidmatan kewangan dengan lebih 20 tahun pengalaman dalam pembayaran, perbankan dan teknologi digital. Beliau mengetuai produk API pembayaran borong di HSBC dan merupakan ahli Quantum-Safe Cryptography Working Group di bawah Emerging Payments Association Asia, serta menyumbang kepada kertas putihnya «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (September 2025). Beliau menyelenggara perpustakaan sumber terbuka untuk ISO 20022 dan kriptografi pascakuantum, serta menerbitkan Banking On Quantum dan Banking On AI.'
   - length: Panjang
-    text: 'Sebastien Rousseau ialah ahli teknologi perbankan kanan yang menumpukan pada transformasi struktur pembayaran nilai besar. Hampir dua dekad merentas HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Beliau menulis dan menyelenggara pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN dan dotfiles, setiap satunya diletakkan sebagai pelaksanaan rujukan dan bukan demo: infrastruktur kewangan yang boleh diperiksa, setaraf lembaga pengarah. Beliau menyumbang kepada Kumpulan Kerja Kriptografi Selamat Kuantum Emerging Payments Association Asia, menjadi penulis bersama kertas putih EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (September 2025), dan menerbitkan Banking On Quantum serta Banking On AI. Beliau bekerja di persimpangan AI ejen, pembayaran masa nyata, kriptografi pascakuantum, ketahanan asli awan, data berstruktur dan bukti bagi pengawal selia.'
+    text: 'Sebastien Rousseau ialah pemimpin kanan dalam bidang pembayaran dan perkhidmatan kewangan dengan lebih 20 tahun pengalaman dalam pembayaran, perbankan dan teknologi digital. Di HSBC, beliau mengetuai produk API pembayaran borong dalam Commercial & Investment Banking, yang disertainya pada 2016 sebagai API Engineering Lead. Sebelum itu, beliau mengasaskan dan memimpin Reedia Ltd sebagai Ketua Pegawai Eksekutif, membentuk strategi HCE dan tokenisasi PayPal bersama bank-bank peringkat pertama, mengetuai transformasi perbankan mudah alih di Barclays Corporate Banking, menjadi Head of Mobile di Shazam, dan mengetuai bahagian teknologi mudah alih AKQA untuk pelanggan termasuk Nike, RBS dan Nokia. Beliau ialah ahli EPAA Quantum-Safe Cryptography Working Group, Fellow Institution of Analysts and Programmers, dan penyelenggara perpustakaan sumber terbuka pembayaran dan kriptografi yang digunakan secara meluas. Beliau berucap dan menulis tentang ISO 20022, migrasi pascakuantum dan AI ejen dalam perbankan.'
 faq:
   eyebrow: Sebelum anda bertanya
   headline: Soal jemputan, secara terus terang.
@@ -185,10 +185,6 @@ final_cta:
   secondary_cta: Minta ulasan pakar
 ---
 
-Sebastien Rousseau ialah ahli teknologi perbankan kanan yang menumpukan pada transformasi struktur pembayaran nilai besar. Hampir dua dekad merentas HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Beliau menulis dan menyelenggara pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN dan dotfiles, setiap satunya diletakkan sebagai pelaksanaan rujukan dan bukan demo: infrastruktur kewangan yang boleh diperiksa, setaraf lembaga pengarah.
+Sebastien Rousseau ialah pemimpin kanan dalam bidang pembayaran dan perkhidmatan kewangan dengan lebih 20 tahun pengalaman dalam pembayaran, perbankan dan teknologi digital. Di HSBC, beliau mengetuai produk API pembayaran borong dalam Commercial & Investment Banking, yang disertainya pada 2016 sebagai API Engineering Lead. Sebelum itu, beliau mengasaskan dan memimpin Reedia Ltd sebagai Ketua Pegawai Eksekutif, membentuk strategi HCE dan tokenisasi PayPal bersama bank-bank peringkat pertama, mengetuai transformasi perbankan mudah alih di Barclays Corporate Banking, menjadi Head of Mobile di Shazam, dan mengetuai bahagian teknologi mudah alih AKQA untuk pelanggan termasuk Nike, RBS dan Nokia. Beliau ialah ahli EPAA Quantum-Safe Cryptography Working Group, Fellow Institution of Analysts and Programmers, dan penyelenggara perpustakaan sumber terbuka pembayaran dan kriptografi yang digunakan secara meluas. Beliau berucap dan menulis tentang ISO 20022, migrasi pascakuantum dan AI ejen dalam perbankan.
 
-Beliau menyumbang kepada Kumpulan Kerja Kriptografi Selamat Kuantum Emerging Payments
-Association Asia, menjadi penulis bersama kertas putih EPAA «Quantum-Safe Payments: Why the
-Payments Industry Must Act Now» (September 2025), dan menerbitkan Banking On Quantum serta
-Banking On AI. Beliau bekerja di persimpangan AI ejen, pembayaran masa nyata, kriptografi
-pascakuantum, ketahanan asli awan, data berstruktur dan bukti bagi pengawal selia.
+Beliau menerbitkan Banking On Quantum dan Banking On AI.

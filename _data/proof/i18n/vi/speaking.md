@@ -1,19 +1,19 @@
 ---
 title: Diễn thuyết và tư vấn
 meta_title: 'Sebastien Rousseau: bài phát biểu chính, tọa đàm và bình luận chuyên gia về thanh toán, mật mã hậu lượng tử và AI ứng dụng'
-meta_description: Chuyên gia công nghệ ngân hàng cấp cao, gần hai thập kỷ tại HSBC, PayPal và Barclays. Bài phát biểu chính, tọa đàm và bình luận chuyên gia cho hội đồng quản trị, hội nghị ngành và tòa soạn.
+meta_description: 'Lãnh đạo cấp cao về thanh toán và dịch vụ tài chính, hơn 20 năm trong ngân hàng và công nghệ. Diễn thuyết và bình luận chuyên gia về thanh toán, hậu lượng tử, AI.'
 hero:
   eyebrow: Phát biểu chính · Tọa đàm · Bình luận chuyên gia
   headline: Những công nghệ đang dựng lại ngành ngân hàng, giải thích cho những người phải quyết định.
-  lede: Sebastien Rousseau là chuyên gia công nghệ ngân hàng cấp cao với gần hai thập kỷ tại HSBC, PayPal và Barclays. Ông nói về thanh toán ISO 20022, mật mã hậu lượng tử và AI ứng dụng, biến một bài toán của ngành thành quyết định mà cả phòng họp có thể đưa ra ngay tại chỗ.
+  lede: 'Sebastien Rousseau là lãnh đạo cấp cao về thanh toán và dịch vụ tài chính với hơn 20 năm kinh nghiệm trong lĩnh vực thanh toán, ngân hàng và công nghệ số. Ông đưa hiện đại hóa thanh toán, mật mã hậu lượng tử và AI ứng dụng từ văn bản chính sách thành mã nguồn có thể kiểm chứng, và thành những bài phát biểu mà hội đồng quản trị có thể hành động theo.'
   primary_cta: Mời tôi phát biểu
   secondary_cta: Xem các bài nói
   press_nudge: Nhà báo đang chạy hạn nộp bài?
   press_nudge_cta: Đặt bình luận chuyên gia
   microproof:
-  - Gần hai thập kỷ kinh nghiệm tại HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group
-  - Đồng tác giả báo cáo hậu lượng tử của EPAA
-  - Người đóng góp, Emerging Payments Association Asia
+  - 'Hơn 20 năm trong lĩnh vực thanh toán, ngân hàng và công nghệ số'
+  - 'Lãnh đạo các sản phẩm API thanh toán bán buôn tại HSBC'
+  - 'Thành viên, EPAA Quantum-Safe Cryptography Working Group'
 employers_label: Những nơi tôi đã làm việc
 stats_eyebrow: Bằng con số
 stats:
@@ -25,7 +25,7 @@ stats:
   label: Lượt tải mã nguồn mở
 - kpi: github_stars
   label: Sao trên GitHub
-stats_foot: 'Người đóng góp cho Nhóm công tác Mật mã An toàn Lượng tử của EPAA. Đồng tác giả báo cáo «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (tháng 9 năm 2025).'
+stats_foot: 'Thành viên EPAA Quantum-Safe Cryptography Working Group và người đóng góp cho sách trắng của nhóm, «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (tháng 9 năm 2025).'
 paths:
   eyebrow: Hai cách làm việc cùng nhau
   headline: Đặt một sân khấu, hoặc đặt một nguồn tin.
@@ -137,11 +137,11 @@ bios:
   copy_label: Sao chép
   items:
   - length: Ngắn
-    text: Sebastien Rousseau là chuyên gia công nghệ ngân hàng cấp cao, viết và dựng ở giao điểm của thanh toán ISO 20022, mật mã hậu lượng tử và AI ứng dụng. Gần hai thập kỷ kinh nghiệm tại HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group.
+    text: 'Sebastien Rousseau là lãnh đạo cấp cao về thanh toán và dịch vụ tài chính với hơn 20 năm kinh nghiệm trong lĩnh vực thanh toán, ngân hàng và công nghệ số. Ông lãnh đạo các sản phẩm API thanh toán bán buôn tại HSBC và là thành viên Quantum-Safe Cryptography Working Group của Emerging Payments Association Asia.'
   - length: Vừa
-    text: Sebastien Rousseau là chuyên gia công nghệ ngân hàng cấp cao với gần hai thập kỷ tại HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA và Virgin Group. Ông viết và dựng ở giao điểm của thanh toán ISO 20022, mật mã hậu lượng tử và AI ứng dụng, đồng thời duy trì các bản triển khai tham chiếu mã nguồn mở — pacs.008, pain.001, KyberLib, BankStatementParser — được các đội ngân quỹ và thanh toán dùng trong vận hành thật. Ông đóng góp cho Nhóm công tác Mật mã An toàn Lượng tử của Emerging Payments Association Asia và xuất bản Banking On Quantum cùng Banking On AI.
+    text: 'Sebastien Rousseau là lãnh đạo cấp cao về thanh toán và dịch vụ tài chính với hơn 20 năm kinh nghiệm trong lĩnh vực thanh toán, ngân hàng và công nghệ số. Ông lãnh đạo các sản phẩm API thanh toán bán buôn tại HSBC và là thành viên Quantum-Safe Cryptography Working Group của Emerging Payments Association Asia, đồng thời đóng góp cho sách trắng của nhóm, «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (tháng 9 năm 2025). Ông duy trì các thư viện mã nguồn mở cho ISO 20022 và mật mã hậu lượng tử, đồng thời xuất bản Banking On Quantum và Banking On AI.'
   - length: Dài
-    text: 'Sebastien Rousseau là chuyên gia công nghệ ngân hàng cấp cao tập trung vào chuyển đổi cấu trúc của thanh toán bán buôn. Gần hai thập kỷ kinh nghiệm tại HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Ông viết và duy trì pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN và dotfiles, mỗi thứ đặt ở vị trí bản triển khai tham chiếu chứ không phải bản trình diễn: hạ tầng tài chính kiểm tra được, đủ tầm đưa ra hội đồng. Ông đóng góp cho Nhóm công tác Mật mã An toàn Lượng tử của Emerging Payments Association Asia, đồng tác giả báo cáo EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (tháng 9 năm 2025), và xuất bản Banking On Quantum cùng Banking On AI. Ông làm việc ở giao điểm của AI tác tử, thanh toán thời gian thực, mật mã hậu lượng tử, khả năng chống chịu trên nền đám mây, dữ liệu có cấu trúc và bằng chứng cho cơ quan quản lý.'
+    text: 'Sebastien Rousseau là lãnh đạo cấp cao về thanh toán và dịch vụ tài chính với hơn 20 năm kinh nghiệm trong lĩnh vực thanh toán, ngân hàng và công nghệ số. Tại HSBC, ông lãnh đạo các sản phẩm API thanh toán bán buôn thuộc khối Commercial & Investment Banking, nơi ông gia nhập năm 2016 với vai trò API Engineering Lead. Trước đó, ông sáng lập và điều hành Reedia Ltd trên cương vị Tổng giám đốc, định hình chiến lược HCE và token hóa của PayPal cùng các ngân hàng hàng đầu, dẫn dắt chuyển đổi ngân hàng di động tại Barclays Corporate Banking, giữ vị trí Head of Mobile tại Shazam, và đứng đầu bộ phận công nghệ di động của AKQA phục vụ các khách hàng như Nike, RBS và Nokia. Ông là thành viên EPAA Quantum-Safe Cryptography Working Group, Fellow của Institution of Analysts and Programmers, và là người duy trì các thư viện mã nguồn mở về thanh toán và mật mã được sử dụng rộng rãi. Ông diễn thuyết và viết về ISO 20022, chuyển đổi sang hậu lượng tử và AI tác tử trong ngân hàng.'
 faq:
   eyebrow: Trước khi bạn hỏi
   headline: Việc mời, nói cho rõ.
@@ -185,10 +185,6 @@ final_cta:
   secondary_cta: Đặt bình luận chuyên gia
 ---
 
-Sebastien Rousseau là chuyên gia công nghệ ngân hàng cấp cao tập trung vào chuyển đổi cấu trúc của thanh toán bán buôn. Gần hai thập kỷ kinh nghiệm tại HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Ông viết và duy trì pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN và dotfiles, mỗi thứ đặt ở vị trí bản triển khai tham chiếu chứ không phải bản trình diễn: hạ tầng tài chính kiểm tra được, đủ tầm đưa ra hội đồng.
+Sebastien Rousseau là lãnh đạo cấp cao về thanh toán và dịch vụ tài chính với hơn 20 năm kinh nghiệm trong lĩnh vực thanh toán, ngân hàng và công nghệ số. Tại HSBC, ông lãnh đạo các sản phẩm API thanh toán bán buôn thuộc khối Commercial & Investment Banking, nơi ông gia nhập năm 2016 với vai trò API Engineering Lead. Trước đó, ông sáng lập và điều hành Reedia Ltd trên cương vị Tổng giám đốc, định hình chiến lược HCE và token hóa của PayPal cùng các ngân hàng hàng đầu, dẫn dắt chuyển đổi ngân hàng di động tại Barclays Corporate Banking, giữ vị trí Head of Mobile tại Shazam, và đứng đầu bộ phận công nghệ di động của AKQA phục vụ các khách hàng như Nike, RBS và Nokia. Ông là thành viên EPAA Quantum-Safe Cryptography Working Group, Fellow của Institution of Analysts and Programmers, và là người duy trì các thư viện mã nguồn mở về thanh toán và mật mã được sử dụng rộng rãi. Ông diễn thuyết và viết về ISO 20022, chuyển đổi sang hậu lượng tử và AI tác tử trong ngân hàng.
 
-Ông đóng góp cho Nhóm công tác Mật mã An toàn Lượng tử của Emerging Payments Association
-Asia, đồng tác giả báo cáo EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act
-Now» (tháng 9 năm 2025), và xuất bản Banking On Quantum cùng Banking On AI. Ông làm việc ở
-giao điểm của AI tác tử, thanh toán thời gian thực, mật mã hậu lượng tử, khả năng chống chịu
-trên nền đám mây, dữ liệu có cấu trúc và bằng chứng cho cơ quan quản lý.
+Ông xuất bản Banking On Quantum và Banking On AI.

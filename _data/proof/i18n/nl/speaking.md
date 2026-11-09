@@ -1,19 +1,19 @@
 ---
 title: Lezingen en advies
 meta_title: 'Sebastien Rousseau: keynotes, panels en deskundig commentaar over betalingsverkeer, postkwantum en toegepaste AI'
-meta_description: Senior banktechnoloog, bijna twee decennia bij HSBC, PayPal en Barclays. Keynotes, panels en deskundig commentaar voor raden van bestuur, vakcongressen en redacties.
+meta_description: 'Senior leider in betalingsverkeer en financiële dienstverlening, 20+ jaar in bankwezen en technologie. Keynotes en expertcommentaar: betalingen, post-quantum, AI.'
 hero:
   eyebrow: Keynotes · Panels · Deskundig commentaar
   headline: De technologieën die het bankwezen hertekenen, uitgelegd aan wie moet beslissen.
-  lede: Sebastien Rousseau is senior banktechnoloog met bijna twee decennia bij HSBC, PayPal en Barclays. Hij spreekt over ISO 20022-betalingsverkeer, postkwantumcryptografie en toegepaste AI, en maakt van een sectorprobleem een beslissing die een zaal kan nemen.
+  lede: 'Sebastien Rousseau is een senior leider in betalingsverkeer en financiële dienstverlening met meer dan 20 jaar ervaring in betalingen, bankwezen en digitale technologie. Hij brengt betalingsmodernisering, postkwantumcryptografie en toegepaste AI van beleidsnota naar controleerbare code, en naar keynotes waarop een raad van bestuur kan handelen.'
   primary_cta: Nodig me uit
   secondary_cta: Bekijk de keynotes
   press_nudge: Journalist met deadline?
   press_nudge_cta: Deskundig commentaar aanvragen
   microproof:
-  - Bijna twee decennia ervaring bij HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group
-  - Medeauteur van het postkwantum-whitepaper van de EPAA
-  - Bijdrager, Emerging Payments Association Asia
+  - 'Meer dan 20 jaar in betalingen, bankwezen en digitale technologie'
+  - 'Leidt de API-producten voor wholesale-betalingen bij HSBC'
+  - 'Lid van de EPAA-werkgroep Quantum-Safe Cryptography'
 employers_label: Waar ik heb gewerkt
 stats_eyebrow: In cijfers
 stats:
@@ -25,7 +25,7 @@ stats:
   label: Open source-downloads
 - kpi: github_stars
   label: GitHub-sterren
-stats_foot: 'Bijdrager aan de EPAA-werkgroep Quantum-Safe Cryptography. Medeauteur van het whitepaper ''Quantum-Safe Payments: Why the Payments Industry Must Act Now'' (september 2025).'
+stats_foot: 'Lid van de EPAA-werkgroep Quantum-Safe Cryptography en bijdrager aan haar whitepaper “Quantum-Safe Payments: Why the Payments Industry Must Act Now” (september 2025).'
 paths:
   eyebrow: Twee manieren om samen te werken
   headline: Boek een podium, of boek een bron.
@@ -137,11 +137,11 @@ bios:
   copy_label: Kopiëren
   items:
   - length: Kort
-    text: Sebastien Rousseau is senior banktechnoloog en schrijft en bouwt op het snijvlak van ISO 20022-betalingsverkeer, postkwantumcryptografie en toegepaste AI. Bijna twee decennia ervaring bij HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group.
+    text: 'Sebastien Rousseau is een senior leider in betalingsverkeer en financiële dienstverlening met meer dan 20 jaar ervaring in betalingen, bankwezen en digitale technologie. Hij leidt de API-producten voor wholesale-betalingen bij HSBC en is lid van de werkgroep Quantum-Safe Cryptography van de Emerging Payments Association Asia.'
   - length: Middel
-    text: Sebastien Rousseau is senior banktechnoloog met bijna twee decennia bij HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA en Virgin Group. Hij schrijft en bouwt op het snijvlak van ISO 20022-betalingsverkeer, postkwantumcryptografie en toegepaste AI, en onderhoudt open referentie-implementaties — pacs.008, pain.001, KyberLib, BankStatementParser — die in productie gebruikt worden door treasury- en betaalteams. Hij draagt bij aan de werkgroep Quantum-Safe Cryptography van de Emerging Payments Association Asia en geeft Banking On Quantum en Banking On AI uit.
+    text: 'Sebastien Rousseau is een senior leider in betalingsverkeer en financiële dienstverlening met meer dan 20 jaar ervaring in betalingen, bankwezen en digitale technologie. Hij leidt de API-producten voor wholesale-betalingen bij HSBC en is lid van de werkgroep Quantum-Safe Cryptography van de Emerging Payments Association Asia, en droeg bij aan haar whitepaper “Quantum-Safe Payments: Why the Payments Industry Must Act Now” (september 2025). Hij onderhoudt opensourcebibliotheken voor ISO 20022 en postkwantumcryptografie en publiceert Banking On Quantum en Banking On AI.'
   - length: Lang
-    text: 'Sebastien Rousseau is senior banktechnoloog met de structurele omvorming van het zakelijke betalingsverkeer als aandachtsgebied. Bijna twee decennia ervaring bij HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Hij schrijft en onderhoudt pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN en dotfiles, elk neergezet als referentie-implementatie en niet als demo: inspecteerbare financiële infrastructuur op bestuursniveau. Hij draagt bij aan de werkgroep Quantum-Safe Cryptography van de Emerging Payments Association Asia, is medeauteur van het EPAA-whitepaper ''Quantum-Safe Payments: Why the Payments Industry Must Act Now'' (september 2025) en geeft Banking On Quantum en Banking On AI uit. Hij werkt op het snijvlak van agentische AI, realtimebetalingen, postkwantumcryptografie, cloud-native weerbaarheid, gestructureerde data en toezichtsbewijs.'
+    text: 'Sebastien Rousseau is een senior leider in betalingsverkeer en financiële dienstverlening met meer dan 20 jaar ervaring in betalingen, bankwezen en digitale technologie. Bij HSBC leidt hij de API-producten voor wholesale-betalingen binnen Commercial & Investment Banking, waar hij in 2016 begon als API Engineering Lead. Daarvoor richtte hij Reedia Ltd op en leidde hij het bedrijf als Chief Executive Officer, gaf hij samen met Tier-1-banken vorm aan de HCE- en tokenisatiestrategie van PayPal, leidde hij een transformatie van mobiel bankieren bij Barclays Corporate Banking, was hij Head of Mobile bij Shazam en stond hij aan het hoofd van de divisie mobiele technologie van AKQA, voor klanten als Nike, RBS en Nokia. Hij is lid van de EPAA-werkgroep Quantum-Safe Cryptography, Fellow van de Institution of Analysts and Programmers en onderhoudt veelgebruikte opensourcebibliotheken voor betalingen en cryptografie. Hij spreekt en schrijft over ISO 20022, de migratie naar postkwantumcryptografie en agentische AI in het bankwezen.'
 faq:
   eyebrow: Voordat u het vraagt
   headline: Boeken, in gewone taal.
@@ -185,10 +185,6 @@ final_cta:
   secondary_cta: Deskundig commentaar aanvragen
 ---
 
-Sebastien Rousseau is senior banktechnoloog met de structurele omvorming van het zakelijke betalingsverkeer als aandachtsgebied. Bijna twee decennia ervaring bij HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Hij schrijft en onderhoudt pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN en dotfiles, elk neergezet als referentie-implementatie en niet als demo: inspecteerbare financiële infrastructuur op bestuursniveau.
+Sebastien Rousseau is een senior leider in betalingsverkeer en financiële dienstverlening met meer dan 20 jaar ervaring in betalingen, bankwezen en digitale technologie. Bij HSBC leidt hij de API-producten voor wholesale-betalingen binnen Commercial & Investment Banking, waar hij in 2016 begon als API Engineering Lead. Daarvoor richtte hij Reedia Ltd op en leidde hij het bedrijf als Chief Executive Officer, gaf hij samen met Tier-1-banken vorm aan de HCE- en tokenisatiestrategie van PayPal, leidde hij een transformatie van mobiel bankieren bij Barclays Corporate Banking, was hij Head of Mobile bij Shazam en stond hij aan het hoofd van de divisie mobiele technologie van AKQA, voor klanten als Nike, RBS en Nokia. Hij is lid van de EPAA-werkgroep Quantum-Safe Cryptography, Fellow van de Institution of Analysts and Programmers en onderhoudt veelgebruikte opensourcebibliotheken voor betalingen en cryptografie. Hij spreekt en schrijft over ISO 20022, de migratie naar postkwantumcryptografie en agentische AI in het bankwezen.
 
-Hij draagt bij aan de werkgroep Quantum-Safe Cryptography van de Emerging Payments
-Association Asia, is medeauteur van het EPAA-whitepaper 'Quantum-Safe Payments: Why the
-Payments Industry Must Act Now' (september 2025) en geeft Banking On Quantum en Banking On
-AI uit. Hij werkt op het snijvlak van agentische AI, realtimebetalingen,
-postkwantumcryptografie, cloud-native weerbaarheid, gestructureerde data en toezichtsbewijs.
+Hij publiceert Banking On Quantum en Banking On AI.

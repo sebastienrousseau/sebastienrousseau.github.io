@@ -1,19 +1,19 @@
 ---
 title: Előadások és tanácsadás
 meta_title: 'Sebastien Rousseau: előadások, kerekasztalok és szakértői kommentár a fizetésekről, a posztkvantum kriptográfiáról és az alkalmazott MI-ről'
-meta_description: Vezető banki technológus, csaknem két évtized a HSBC-nél, a PayPalnál és a Barclaysnél. Előadások, kerekasztalok és szakértői kommentár igazgatóságoknak, szakmai konferenciáknak és szerkesztőségeknek.
+meta_description: 'Fizetési és pénzügyi szolgáltatási vezető szakember, 20+ év a bankszektorban és a technológiában. Előadások, szakértői kommentár: fizetések, posztkvantum, MI.'
 hero:
   eyebrow: Előadások · Kerekasztalok · Szakértői kommentár
   headline: A bankszakmát átrajzoló technológiák, elmagyarázva azoknak, akiknek dönteniük kell.
-  lede: Sebastien Rousseau vezető banki technológus, csaknem két évtizeddel a HSBC-nél, a PayPalnál és a Barclaysnél. ISO 20022-fizetésekről, posztkvantum kriptográfiáról és alkalmazott mesterséges intelligenciáról beszél, és egy ágazati problémát olyan döntéssé alakít, amelyet egy terem meg tud hozni.
+  lede: 'Sebastien Rousseau a fizetések és a pénzügyi szolgáltatások vezető szakembere, több mint 20 éves tapasztalattal a fizetések, a bankszektor és a digitális technológia terén. A fizetések modernizációját, a posztkvantum kriptográfiát és az alkalmazott mesterséges intelligenciát a szakpolitikai dokumentumokból vizsgálható kóddá, majd olyan előadásokká alakítja, amelyek alapján egy igazgatóság cselekedni tud.'
   primary_cta: Hívjon meg előadni
   secondary_cta: Előadások megtekintése
   press_nudge: Újságíró lapzárta előtt?
   press_nudge_cta: Szakértői kommentár kérése
   microproof:
-  - Közel két évtized az HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA és Virgin Group vállalatoknál
-  - Az EPAA posztkvantum tanulmányának társszerzője
-  - Közreműködő, Emerging Payments Association Asia
+  - 'Több mint 20 év a fizetések, a bankszektor és a digitális technológia területén'
+  - 'A nagy összegű fizetések API-termékeinek vezetője a HSBC-nél'
+  - 'Az EPAA Quantum-Safe Cryptography munkacsoportjának tagja'
 employers_label: Ahol dolgoztam
 stats_eyebrow: Számokban
 stats:
@@ -25,7 +25,7 @@ stats:
   label: Nyílt forráskódú letöltések
 - kpi: github_stars
   label: GitHub-csillagok
-stats_foot: 'Az EPAA kvantumbiztos kriptográfiai munkacsoportjának közreműködője. A „Quantum-Safe Payments: Why the Payments Industry Must Act Now” tanulmány társszerzője (2025. szeptember).'
+stats_foot: 'Az EPAA Quantum-Safe Cryptography munkacsoportjának tagja, és közreműködött a munkacsoport „Quantum-Safe Payments: Why the Payments Industry Must Act Now” című tanulmányában (2025. szeptember).'
 paths:
   eyebrow: Két módja az együttműködésnek
   headline: Foglaljon színpadot, vagy foglaljon forrást.
@@ -137,11 +137,11 @@ bios:
   copy_label: Másolás
   items:
   - length: Rövid
-    text: Sebastien Rousseau vezető banki technológus, aki az ISO 20022-fizetések, a posztkvantum kriptográfia és az alkalmazott mesterséges intelligencia metszéspontjában ír és fejleszt. Közel két évtized az HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA és Virgin Group vállalatoknál.
+    text: 'Sebastien Rousseau a fizetések és a pénzügyi szolgáltatások vezető szakembere, több mint 20 éves tapasztalattal a fizetések, a bankszektor és a digitális technológia terén. A HSBC-nél a nagy összegű fizetések API-termékeit irányítja, és tagja az Emerging Payments Association Asia Quantum-Safe Cryptography munkacsoportjának.'
   - length: Közepes
-    text: Sebastien Rousseau vezető banki technológus, csaknem két évtizeddel a HSBC Commercial & Investment Banknál, a PayPalnál, a Barclaysnél, a Shazamnál, az AKQA-nál és a Virgin Groupnál. Az ISO 20022-fizetések, a posztkvantum kriptográfia és az alkalmazott mesterséges intelligencia metszéspontjában ír és fejleszt, és nyílt referenciamegvalósításokat — pacs.008, pain.001, KyberLib, BankStatementParser — tart karban, amelyeket treasury- és fizetési csapatok használnak éles üzemben. Közreműködik az Emerging Payments Association Asia kvantumbiztos kriptográfiai munkacsoportjában, és a Banking On Quantum, valamint a Banking On AI kiadója.
+    text: 'Sebastien Rousseau a fizetések és a pénzügyi szolgáltatások vezető szakembere, több mint 20 éves tapasztalattal a fizetések, a bankszektor és a digitális technológia terén. A HSBC-nél a nagy összegű fizetések API-termékeit irányítja, és tagja az Emerging Payments Association Asia Quantum-Safe Cryptography munkacsoportjának. Közreműködött a munkacsoport „Quantum-Safe Payments: Why the Payments Industry Must Act Now” című tanulmányában (2025. szeptember). Nyílt forráskódú ISO 20022- és posztkvantum kriptográfiai könyvtárakat tart karban, és kiadja a Banking On Quantum és a Banking On AI kiadványokat.'
   - length: Hosszú
-    text: 'Sebastien Rousseau vezető banki technológus, aki a nagy összegű fizetések szerkezeti átalakulására összpontosít. Közel két évtized az HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA és Virgin Group vállalatoknál. A pacs. 008, a pain. 001, a BankStatementParser, a KyberLib, a CloudCDN és a dotfiles szerzője és karbantartója — mindegyik referenciamegvalósításnak készült, nem bemutatónak: vizsgálható, igazgatósági szintű pénzügyi infrastruktúra. Közreműködik az Emerging Payments Association Asia kvantumbiztos kriptográfiai munkacsoportjában, társszerzője az EPAA „Quantum-Safe Payments: Why the Payments Industry Must Act Now” tanulmányának (2025. szeptember), és a Banking On Quantum, valamint a Banking On AI kiadója. Munkája az ügynöki MI, a valós idejű fizetések, a posztkvantum kriptográfia, a felhőalapú ellenállóképesség, a strukturált adatok és a szabályozói bizonyíték metszéspontjában áll.'
+    text: 'Sebastien Rousseau a fizetések és a pénzügyi szolgáltatások vezető szakembere, több mint 20 éves tapasztalattal a fizetések, a bankszektor és a digitális technológia terén. A HSBC-nél a Commercial & Investment Banking területén a nagy összegű fizetések API-termékeit irányítja; ide 2016-ban API Engineering Leadként csatlakozott. Korábban megalapította és vezérigazgatóként irányította a Reedia Ltd-t, a PayPal HCE- és tokenizációs stratégiáját alakította elsőrangú bankokkal, mobilbanki átalakítást vezetett a Barclays Corporate Bankingnél, a Shazamnál Head of Mobile volt, és az AKQA mobiltechnológiai részlegét vezette olyan ügyfelek számára, mint a Nike, az RBS és a Nokia. Tagja az EPAA Quantum-Safe Cryptography munkacsoportjának, az Institution of Analysts and Programmers Fellow-ja, valamint széles körben használt nyílt forráskódú fizetési és kriptográfiai könyvtárak karbantartója. Az ISO 20022-ről, a posztkvantum átállásról és a bankszektorbeli ügynöki MI-ről ad elő és ír.'
 faq:
   eyebrow: Mielőtt kérdezné
   headline: A felkérés, egyszerűen.
@@ -185,11 +185,6 @@ final_cta:
   secondary_cta: Szakértői kommentár kérése
 ---
 
-Sebastien Rousseau vezető banki technológus, aki a nagy összegű fizetések szerkezeti átalakulására összpontosít. Közel két évtized az HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA és Virgin Group vállalatoknál. A pacs. 008, a pain. 001, a BankStatementParser, a KyberLib, a CloudCDN és a dotfiles szerzője és karbantartója — mindegyik referenciamegvalósításnak készült, nem bemutatónak: vizsgálható, igazgatósági szintű pénzügyi infrastruktúra.
+Sebastien Rousseau a fizetések és a pénzügyi szolgáltatások vezető szakembere, több mint 20 éves tapasztalattal a fizetések, a bankszektor és a digitális technológia terén. A HSBC-nél a Commercial & Investment Banking területén a nagy összegű fizetések API-termékeit irányítja; ide 2016-ban API Engineering Leadként csatlakozott. Korábban megalapította és vezérigazgatóként irányította a Reedia Ltd-t, a PayPal HCE- és tokenizációs stratégiáját alakította elsőrangú bankokkal, mobilbanki átalakítást vezetett a Barclays Corporate Bankingnél, a Shazamnál Head of Mobile volt, és az AKQA mobiltechnológiai részlegét vezette olyan ügyfelek számára, mint a Nike, az RBS és a Nokia. Tagja az EPAA Quantum-Safe Cryptography munkacsoportjának, az Institution of Analysts and Programmers Fellow-ja, valamint széles körben használt nyílt forráskódú fizetési és kriptográfiai könyvtárak karbantartója. Az ISO 20022-ről, a posztkvantum átállásról és a bankszektorbeli ügynöki MI-ről ad elő és ír.
 
-Közreműködik az Emerging Payments Association Asia kvantumbiztos kriptográfiai
-munkacsoportjában, társszerzője az EPAA „Quantum-Safe Payments: Why the Payments Industry
-Must Act Now” tanulmányának (2025. szeptember), és a Banking On Quantum, valamint a Banking
-On AI kiadója. Munkája az ügynöki MI, a valós idejű fizetések, a posztkvantum kriptográfia,
-a felhőalapú ellenállóképesség, a strukturált adatok és a szabályozói bizonyíték
-metszéspontjában áll.
+Kiadja a Banking On Quantum és a Banking On AI kiadványokat.

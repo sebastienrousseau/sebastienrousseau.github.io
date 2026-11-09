@@ -1,19 +1,19 @@
 ---
 title: Konuşmalar ve danışmanlık
 meta_title: 'Sebastien Rousseau: ödemeler, kuantum sonrası kriptografi ve uygulamalı yapay zekâ üzerine açılış konuşmaları, paneller ve uzman yorumu'
-meta_description: Kıdemli bankacılık teknoloğu, HSBC, PayPal ve Barclays'te yaklaşık yirmi yıl. Yönetim kurulları, sektör konferansları ve haber merkezleri için açılış konuşmaları, paneller ve uzman yorumu.
+meta_description: 'Kıdemli ödemeler ve finansal hizmetler yöneticisi, bankacılık ve teknolojide 20 yılı aşkın deneyim. Ödemeler, post-kuantum ve yapay zekâ üzerine konuşmalar.'
 hero:
   eyebrow: Açılış konuşmaları · Paneller · Uzman yorumu
   headline: Bankacılığı yeniden kuran teknolojiler, karar vermek zorunda olanlara anlatıldı.
-  lede: Sebastien Rousseau, HSBC, PayPal ve Barclays'te geçen yaklaşık yirmi yılıyla kıdemli bir bankacılık teknoloğudur. ISO 20022 ödemeleri, kuantum sonrası kriptografi ve uygulamalı yapay zekâ üzerine konuşur; bir sektör sorununu bir salonun alabileceği karara dönüştürür.
+  lede: 'Sebastien Rousseau, ödemeler, bankacılık ve dijital teknoloji alanlarında 20 yılı aşkın deneyime sahip kıdemli bir ödemeler ve finansal hizmetler yöneticisidir. Ödeme modernizasyonunu, kuantum sonrası kriptografiyi ve uygulamalı yapay zekâyı politika belgesinden denetlenebilir koda ve bir yönetim kurulunun harekete geçebileceği konuşmalara dönüştürür.'
   primary_cta: Beni konuşmaya davet edin
   secondary_cta: Konuşmaları görün
   press_nudge: Baskıya yetişmeye çalışan bir gazeteci misiniz?
   press_nudge_cta: Uzman yorumu isteyin
   microproof:
-  - HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ve Virgin Group bünyesinde yaklaşık yirmi yıllık deneyim
-  - EPAA kuantum güvenliği raporunun ortak yazarı
-  - Katkı veren, Emerging Payments Association Asia
+  - 'Ödemeler, bankacılık ve dijital teknolojide 20 yılı aşkın deneyim'
+  - 'HSBC''de toptan ödeme API ürünlerine liderlik ediyor'
+  - 'EPAA Quantum-Safe Cryptography Çalışma Grubu üyesi'
 employers_label: Çalıştığım kurumlar
 stats_eyebrow: Rakamlarla
 stats:
@@ -25,7 +25,7 @@ stats:
   label: Açık kaynak indirmeleri
 - kpi: github_stars
   label: GitHub yıldızları
-stats_foot: 'EPAA Kuantum Güvenli Kriptografi Çalışma Grubu''na katkı veriyor. “Quantum-Safe Payments: Why the Payments Industry Must Act Now” raporunun ortak yazarı (Eylül 2025).'
+stats_foot: 'EPAA Quantum-Safe Cryptography Çalışma Grubu üyesi; grubun “Quantum-Safe Payments: Why the Payments Industry Must Act Now” başlıklı teknik raporuna (Eylül 2025) katkıda bulundu.'
 paths:
   eyebrow: Birlikte çalışmanın iki yolu
   headline: Bir sahne ayırtın ya da bir kaynak ayırtın.
@@ -137,11 +137,11 @@ bios:
   copy_label: Kopyala
   items:
   - length: Kısa
-    text: Sebastien Rousseau, ISO 20022 ödemeleri, kuantum sonrası kriptografi ve uygulamalı yapay zekânın kesiştiği yerde yazan ve geliştiren kıdemli bir bankacılık teknoloğudur. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ve Virgin Group bünyesinde yaklaşık yirmi yıllık deneyim.
+    text: 'Sebastien Rousseau, ödemeler, bankacılık ve dijital teknoloji alanlarında 20 yılı aşkın deneyime sahip kıdemli bir ödemeler ve finansal hizmetler yöneticisidir. HSBC''de toptan ödeme API ürünlerine liderlik etmekte olup Emerging Payments Association Asia''nın Quantum-Safe Cryptography Çalışma Grubu üyesidir.'
   - length: Orta
-    text: Sebastien Rousseau, HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ve Virgin Group'ta geçen yaklaşık yirmi yılıyla kıdemli bir bankacılık teknoloğudur. ISO 20022 ödemeleri, kuantum sonrası kriptografi ve uygulamalı yapay zekânın kesiştiği yerde yazar ve geliştirir; hazine ve ödeme ekiplerinin üretimde kullandığı açık referans uygulamalarını — pacs.008, pain.001, KyberLib, BankStatementParser — sürdürür. Emerging Payments Association Asia'nın Kuantum Güvenli Kriptografi Çalışma Grubu'na katkı verir ve Banking On Quantum ile Banking On AI yayınlarını çıkarır.
+    text: 'Sebastien Rousseau, ödemeler, bankacılık ve dijital teknoloji alanlarında 20 yılı aşkın deneyime sahip kıdemli bir ödemeler ve finansal hizmetler yöneticisidir. HSBC''de toptan ödeme API ürünlerine liderlik etmekte olup Emerging Payments Association Asia''nın Quantum-Safe Cryptography Çalışma Grubu üyesidir. Grubun “Quantum-Safe Payments: Why the Payments Industry Must Act Now” başlıklı teknik raporuna (Eylül 2025) katkıda bulunmuştur. Açık kaynaklı ISO 20022 ve kuantum sonrası kriptografi kütüphanelerinin bakımını üstlenir; Banking On Quantum ve Banking On AI yayınlarını çıkarır.'
   - length: Uzun
-    text: 'Sebastien Rousseau, toptan ödemelerin yapısal dönüşümüne odaklanmış kıdemli bir bankacılık teknoloğudur. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ve Virgin Group bünyesinde yaklaşık yirmi yıllık deneyim. pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN ve dotfiles projelerinin yazarı ve bakımcısıdır; her biri gösteri değil referans uygulama olarak konumlanmıştır: incelenebilir, yönetim kurulu düzeyinde finansal altyapı. Emerging Payments Association Asia''nın Kuantum Güvenli Kriptografi Çalışma Grubu''na katkı verir, EPAA''nın “Quantum-Safe Payments: Why the Payments Industry Must Act Now” raporunun (Eylül 2025) ortak yazarıdır ve Banking On Quantum ile Banking On AI yayınlarını çıkarır. Etmen tabanlı yapay zekâ, gerçek zamanlı ödemeler, kuantum sonrası kriptografi, buluta uygun dayanıklılık, yapılandırılmış veri ve düzenleyici kanıtın kesiştiği yerde çalışır.'
+    text: 'Sebastien Rousseau, ödemeler, bankacılık ve dijital teknoloji alanlarında 20 yılı aşkın deneyime sahip kıdemli bir ödemeler ve finansal hizmetler yöneticisidir. HSBC''de, 2016 yılında API Engineering Lead olarak katıldığı Commercial & Investment Banking bünyesinde toptan ödeme API ürünlerine liderlik eder. Daha önce Reedia Ltd''yi kurmuş ve genel müdür olarak yönetmiş, PayPal''ın HCE ve tokenizasyon stratejisini birinci sınıf bankalarla birlikte şekillendirmiş, Barclays Corporate Banking''de bir mobil bankacılık dönüşümüne liderlik etmiş, Shazam''da Head of Mobile olarak görev yapmış ve AKQA''nın mobil teknoloji bölümünü Nike, RBS ve Nokia gibi müşteriler için yönetmiştir. EPAA Quantum-Safe Cryptography Çalışma Grubu üyesi, Institution of Analysts and Programmers Fellow''u ve yaygın olarak kullanılan açık kaynaklı ödeme ve kriptografi kütüphanelerinin bakımcısıdır. ISO 20022, kuantum sonrası geçiş ve bankacılıkta etmen tabanlı yapay zekâ üzerine konuşur ve yazar.'
 faq:
   eyebrow: Sormadan önce
   headline: Davet süreci, açık sözlerle.
@@ -185,10 +185,6 @@ final_cta:
   secondary_cta: Uzman yorumu isteyin
 ---
 
-Sebastien Rousseau, toptan ödemelerin yapısal dönüşümüne odaklanmış kıdemli bir bankacılık teknoloğudur. HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ve Virgin Group bünyesinde yaklaşık yirmi yıllık deneyim. pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN ve dotfiles projelerinin yazarı ve bakımcısıdır; her biri gösteri değil referans uygulama olarak konumlanmıştır: incelenebilir, yönetim kurulu düzeyinde finansal altyapı.
+Sebastien Rousseau, ödemeler, bankacılık ve dijital teknoloji alanlarında 20 yılı aşkın deneyime sahip kıdemli bir ödemeler ve finansal hizmetler yöneticisidir. HSBC'de, 2016 yılında API Engineering Lead olarak katıldığı Commercial & Investment Banking bünyesinde toptan ödeme API ürünlerine liderlik eder. Daha önce Reedia Ltd'yi kurmuş ve genel müdür olarak yönetmiş, PayPal'ın HCE ve tokenizasyon stratejisini birinci sınıf bankalarla birlikte şekillendirmiş, Barclays Corporate Banking'de bir mobil bankacılık dönüşümüne liderlik etmiş, Shazam'da Head of Mobile olarak görev yapmış ve AKQA'nın mobil teknoloji bölümünü Nike, RBS ve Nokia gibi müşteriler için yönetmiştir. EPAA Quantum-Safe Cryptography Çalışma Grubu üyesi, Institution of Analysts and Programmers Fellow'u ve yaygın olarak kullanılan açık kaynaklı ödeme ve kriptografi kütüphanelerinin bakımcısıdır. ISO 20022, kuantum sonrası geçiş ve bankacılıkta etmen tabanlı yapay zekâ üzerine konuşur ve yazar.
 
-Emerging Payments Association Asia'nın Kuantum Güvenli Kriptografi Çalışma Grubu'na katkı
-verir, EPAA'nın “Quantum-Safe Payments: Why the Payments Industry Must Act Now” raporunun
-(Eylül 2025) ortak yazarıdır ve Banking On Quantum ile Banking On AI yayınlarını çıkarır.
-Etmen tabanlı yapay zekâ, gerçek zamanlı ödemeler, kuantum sonrası kriptografi, buluta uygun
-dayanıklılık, yapılandırılmış veri ve düzenleyici kanıtın kesiştiği yerde çalışır.
+Banking On Quantum ve Banking On AI yayınlarını çıkarır.

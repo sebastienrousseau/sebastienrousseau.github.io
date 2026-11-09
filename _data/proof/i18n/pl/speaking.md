@@ -1,19 +1,19 @@
 ---
 title: Wystąpienia i doradztwo
 meta_title: 'Sebastien Rousseau: wykłady, panele i komentarz ekspercki o płatnościach, kryptografii postkwantowej i stosowanej SI'
-meta_description: Starszy technolog bankowy, blisko dwie dekady w HSBC, PayPal i Barclays. Wykłady, panele i komentarz ekspercki dla zarządów, konferencji branżowych i redakcji.
+meta_description: 'Lider w obszarze płatności i usług finansowych, ponad 20 lat w bankowości i technologii. Wystąpienia i komentarz: płatności, kryptografia postkwantowa, AI.'
 hero:
   eyebrow: Wykłady · Panele · Komentarz ekspercki
   headline: Technologie, które przebudowują bankowość, wyjaśnione tym, którzy muszą decydować.
-  lede: Sebastien Rousseau jest starszym technologiem bankowym z blisko dwiema dekadami w HSBC, PayPal i Barclays. Mówi o płatnościach ISO 20022, kryptografii postkwantowej i stosowanej sztucznej inteligencji, zamieniając problem branżowy w decyzję, którą sala może podjąć.
+  lede: 'Sebastien Rousseau jest doświadczonym liderem w obszarze płatności i usług finansowych z ponad 20-letnim stażem w płatnościach, bankowości i technologiach cyfrowych. Przenosi modernizację płatności, kryptografię postkwantową i stosowaną sztuczną inteligencję z dokumentów strategicznych do weryfikowalnego kodu oraz do wystąpień, na podstawie których zarząd może działać.'
   primary_cta: Zaproś mnie na scenę
   secondary_cta: Zobacz wykłady
   press_nudge: Dziennikarz przed zamknięciem numeru?
   press_nudge_cta: Poproś o komentarz
   microproof:
-  - Blisko dwie dekady doświadczenia w HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group
-  - Współautor raportu postkwantowego EPAA
-  - Współpracownik, Emerging Payments Association Asia
+  - 'Ponad 20 lat w płatnościach, bankowości i technologiach cyfrowych'
+  - 'Kieruje produktami API płatności hurtowych w HSBC'
+  - 'Członek grupy roboczej Quantum-Safe Cryptography EPAA'
 employers_label: Gdzie pracowałem
 stats_eyebrow: W liczbach
 stats:
@@ -25,7 +25,7 @@ stats:
   label: Pobrania oprogramowania open source
 - kpi: github_stars
   label: Gwiazdki na GitHubie
-stats_foot: 'Współpracownik grupy roboczej EPAA ds. kryptografii odpornej na komputery kwantowe. Współautor raportu „Quantum-Safe Payments: Why the Payments Industry Must Act Now” (wrzesień 2025).'
+stats_foot: 'Członek grupy roboczej Quantum-Safe Cryptography EPAA, wnoszący wkład w jej raport „Quantum-Safe Payments: Why the Payments Industry Must Act Now” (wrzesień 2025).'
 paths:
   eyebrow: Dwa sposoby współpracy
   headline: Zarezerwuj scenę albo zarezerwuj źródło.
@@ -137,11 +137,11 @@ bios:
   copy_label: Kopiuj
   items:
   - length: Krótka
-    text: Sebastien Rousseau jest starszym technologiem bankowym, który pisze i buduje na styku płatności ISO 20022, kryptografii postkwantowej i stosowanej sztucznej inteligencji. Blisko dwie dekady doświadczenia w HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group.
+    text: 'Sebastien Rousseau jest doświadczonym liderem w obszarze płatności i usług finansowych z ponad 20-letnim stażem w płatnościach, bankowości i technologiach cyfrowych. Kieruje produktami API płatności hurtowych w HSBC i jest członkiem grupy roboczej Quantum-Safe Cryptography w Emerging Payments Association Asia.'
   - length: Średnia
-    text: Sebastien Rousseau jest starszym technologiem bankowym z blisko dwiema dekadami w HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA i Virgin Group. Pisze i buduje na styku płatności ISO 20022, kryptografii postkwantowej i stosowanej sztucznej inteligencji oraz utrzymuje otwarte implementacje referencyjne — pacs.008, pain.001, KyberLib, BankStatementParser — używane w produkcji przez zespoły skarbu i płatności. Współpracuje z grupą roboczą Quantum-Safe Cryptography w Emerging Payments Association Asia i wydaje Banking On Quantum oraz Banking On AI.
+    text: 'Sebastien Rousseau jest doświadczonym liderem w obszarze płatności i usług finansowych z ponad 20-letnim stażem w płatnościach, bankowości i technologiach cyfrowych. Kieruje produktami API płatności hurtowych w HSBC i jest członkiem grupy roboczej Quantum-Safe Cryptography w Emerging Payments Association Asia, wnosząc wkład w jej raport „Quantum-Safe Payments: Why the Payments Industry Must Act Now” (wrzesień 2025). Utrzymuje biblioteki open source dla ISO 20022 i kryptografii postkwantowej oraz wydaje Banking On Quantum i Banking On AI.'
   - length: Długa
-    text: 'Sebastien Rousseau jest starszym technologiem bankowym skupionym na strukturalnej przemianie płatności hurtowych. Blisko dwie dekady doświadczenia w HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Pisze i utrzymuje pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN oraz dotfiles, z których każdy pomyślany jest jako implementacja referencyjna, a nie demonstracja: sprawdzalna infrastruktura finansowa na poziomie zarządu. Współpracuje z grupą roboczą Quantum-Safe Cryptography w Emerging Payments Association Asia, jest współautorem raportu EPAA „Quantum-Safe Payments: Why the Payments Industry Must Act Now” (wrzesień 2025) i wydaje Banking On Quantum oraz Banking On AI. Pracuje na styku agentowej SI, płatności natychmiastowych, kryptografii postkwantowej, odporności w chmurze, danych strukturalnych i dowodów dla nadzoru.'
+    text: 'Sebastien Rousseau jest doświadczonym liderem w obszarze płatności i usług finansowych z ponad 20-letnim stażem w płatnościach, bankowości i technologiach cyfrowych. W HSBC kieruje produktami API płatności hurtowych w pionie Commercial & Investment Banking, do którego dołączył w 2016 roku jako API Engineering Lead. Wcześniej założył spółkę Reedia Ltd i kierował nią jako prezes zarządu, kształtował wraz z bankami pierwszego rzędu strategię HCE i tokenizacji PayPal, prowadził transformację bankowości mobilnej w Barclays Corporate Banking, był Head of Mobile w Shazam oraz kierował działem technologii mobilnych AKQA dla klientów takich jak Nike, RBS i Nokia. Jest członkiem grupy roboczej Quantum-Safe Cryptography EPAA, Fellow Institution of Analysts and Programmers i utrzymuje szeroko używane biblioteki open source do płatności i kryptografii. Występuje i pisze na temat ISO 20022, migracji postkwantowej oraz agentowej SI w bankowości.'
 faq:
   eyebrow: Zanim zapytacie
   headline: Rezerwacja, prostym językiem.
@@ -185,10 +185,6 @@ final_cta:
   secondary_cta: Poproś o komentarz
 ---
 
-Sebastien Rousseau jest starszym technologiem bankowym skupionym na strukturalnej przemianie płatności hurtowych. Blisko dwie dekady doświadczenia w HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Pisze i utrzymuje pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN oraz dotfiles, z których każdy pomyślany jest jako implementacja referencyjna, a nie demonstracja: sprawdzalna infrastruktura finansowa na poziomie zarządu.
+Sebastien Rousseau jest doświadczonym liderem w obszarze płatności i usług finansowych z ponad 20-letnim stażem w płatnościach, bankowości i technologiach cyfrowych. W HSBC kieruje produktami API płatności hurtowych w pionie Commercial & Investment Banking, do którego dołączył w 2016 roku jako API Engineering Lead. Wcześniej założył spółkę Reedia Ltd i kierował nią jako prezes zarządu, kształtował wraz z bankami pierwszego rzędu strategię HCE i tokenizacji PayPal, prowadził transformację bankowości mobilnej w Barclays Corporate Banking, był Head of Mobile w Shazam oraz kierował działem technologii mobilnych AKQA dla klientów takich jak Nike, RBS i Nokia. Jest członkiem grupy roboczej Quantum-Safe Cryptography EPAA, Fellow Institution of Analysts and Programmers i utrzymuje szeroko używane biblioteki open source do płatności i kryptografii. Występuje i pisze na temat ISO 20022, migracji postkwantowej oraz agentowej SI w bankowości.
 
-Współpracuje z grupą roboczą Quantum-Safe Cryptography w Emerging Payments Association
-Asia, jest współautorem raportu EPAA „Quantum-Safe Payments: Why the Payments Industry Must
-Act Now” (wrzesień 2025) i wydaje Banking On Quantum oraz Banking On AI. Pracuje na styku
-agentowej SI, płatności natychmiastowych, kryptografii postkwantowej, odporności w chmurze,
-danych strukturalnych i dowodów dla nadzoru.
+Wydaje Banking On Quantum i Banking On AI.
