@@ -56,3 +56,9 @@ def test_check_walks_every_released_version() -> None:
     releases = {"0.0.35": _release("0.0.35"), "0.0.34": None}
     problems = cr.check(CHANGELOG, gh_release=releases.get, run=run)
     assert problems == ["v0.0.34: no release"]
+
+
+def test_releases_older_than_the_pipeline_need_no_artefacts_but_the_rest_do() -> None:
+    assert cr.release_problems("0.0.19", _release("0.0.19", assets=[])) == []
+    assert cr.release_problems("0.0.20", _release("0.0.20", assets=[]))
+    assert max(cr.KNOWN_WITHOUT_ARTEFACTS, key=lambda v: tuple(map(int, v.split(".")))) == "0.0.19"

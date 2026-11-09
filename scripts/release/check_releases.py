@@ -45,7 +45,9 @@ ASSETS = (
     "{n}-{v}.cyclonedx.json",
     "SHA256SUMS",
 )
-KNOWN_WITHOUT_ARTEFACTS: frozenset[str] = frozenset()
+# v0.0.1 to v0.0.19 predate the build pipeline release.yml runs (no
+# setup-ssg action, no SSG_VERSION): their tagged source cannot be built.
+KNOWN_WITHOUT_ARTEFACTS: frozenset[str] = frozenset(f"0.0.{i}" for i in range(1, 20))
 
 
 def released_versions(changelog: str) -> list[str]:

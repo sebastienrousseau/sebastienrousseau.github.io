@@ -1,4 +1,5 @@
 name: Release / Site artefacts
+run-name: release artefacts ${{ github.event.release.tag_name || inputs.release_tag }}
 
 # Every release of this site follows the dotfiles format
 # (https://github.com/sebastienrousseau/dotfiles/releases):
@@ -53,8 +54,35 @@ env:
   NAME: sebastienrousseau.github.io
 
 jobs:
+  # A backfilled release is drafted, given its artefacts by a dispatched
+  # run (with the ssg its deploy used), then published; that publish must
+  # not rebuild it with today's ssg. A dispatched run always builds.
+  plan:
+    name: Does this release need its artefacts?
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      build: ${{ steps.plan.outputs.build }}
+    steps:
+      - name: Look for SHA256SUMS on the release
+        id: plan
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          if [ "$EVENT" = release ] && gh release view "$RELEASE_TAG" -R "$GITHUB_REPOSITORY" \
+              --json assets --jq '.assets[].name' | grep -qx SHA256SUMS; then
+            echo "::notice::$RELEASE_TAG already carries its artefacts; nothing to build."
+            echo "build=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "build=true" >> "$GITHUB_OUTPUT"
+          fi
+
   artefacts:
     name: Build, sign and attach the site
+    needs: plan
+    if: needs.plan.outputs.build == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 120
     permissions:
