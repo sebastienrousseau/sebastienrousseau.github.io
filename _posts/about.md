@@ -190,12 +190,11 @@ site_software: "Static Site Generator, Rust"
       <h2 id="about-speaking" class="narrative-head">Keynotes, panels and briefings for banking and payments leaders.</h2>
       <div class="narrative-body">
         <p>Talks on enterprise AI in banking, ISO 20022 migration, and quantum-safe payments. Written for boards, regulators, and the engineers who ship the rails.</p>
-        <p>Recent stage: The Economist Commercialising Quantum summit, London 2026.</p>
       </div>
       <a class="pill" href="/speaking/index.html">Explore speaking and events ›</a>
     </div>
     <figure class="narrative-visual">
-      <img src="https://cloudcdn.pro/stocks/images/sebastien-rousseau-20260617-5th-commercialising-quantum-2.webp" alt="Sebastien Rousseau speaking at the Commercialising Quantum summit in London" width="640" height="480" loading="lazy" decoding="async" />
+      <img src="https://cloudcdn.pro/stocks/images/sebastien-rousseau-20260617-5th-commercialising-quantum-2.webp" alt="Stage view at the Economist Impact Commercialising Quantum Global summit in London, June 2026" width="640" height="480" loading="lazy" decoding="async" />
     </figure>
   </div>
 </section>
