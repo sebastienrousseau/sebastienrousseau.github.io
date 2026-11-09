@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Oct 01, 2023"
-description: "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website"
+description: "What personal data this site processes, why, who processes it for us, how long it is kept, and your rights under UK GDPR, including complaining to the ICO."
 format-detection: "telephone=no"
 form-id: ""
 hreflang: "en"
@@ -23,8 +23,8 @@ image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp"
-keywords: "Privacy Statement, personal data protection, no cookies policy, no personal information collection, use of Google Analytics, use of Microsoft Clarity, user behaviour analytics, website traffic monitoring, user data rights, privacy policy updates."
-last_reviewed: "2026-05-14"
+keywords: "privacy notice, UK GDPR, PECR, contact form, Formspree, reCAPTCHA, anonymous counts, cookies, local storage, data rights, Information Commissioner's Office"
+last_reviewed: "2026-11-09"
 language: "en-GB"
 layout: "link"
 locale: "en_GB"
@@ -33,7 +33,6 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: "active"
-measurementID: "G-169G4ET5HQ"
 name: "Privacy statement"
 permalink: "https://sebastienrousseau.com/privacy"
 rating: "general"
@@ -42,7 +41,7 @@ revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Your privacy is important to us."
-tags: "privacy, personal data, tracking tools, Google Analytics, Microsoft Clarity, user behaviour analytics, mouse movements, clicks, scrolls, rights, contact"
+tags: "privacy, personal data, UK GDPR, PECR, contact form, cookies, rights, contact"
 theme-color: "0, 67, 165"
 title: "Privacy Statement, How Your Data Is Collected & Used"
 url: "https://sebastienrousseau.com/privacy"
@@ -101,37 +100,56 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-## Information Collection and Use
+_Last updated: 9 November 2026._
 
-We do not directly collect any personal data from you while you navigate our website. We do not use cookies for logic or save any personal information from a user.
+This notice explains what personal data sebastienrousseau.com processes, why, and what you can do about it. It follows the UK General Data Protection Regulation (UK GDPR) and the Privacy and Electronic Communications Regulations (PECR).
 
-## Use of Tracking Tools
+## Who is responsible
 
-We use two third-party services to monitor and analyze web traffic: Google Analytics and Microsoft Clarity.
+Sebastien Rousseau, London, United Kingdom, is the controller for this site. You can reach him at [contact@sebastienrousseau.com](mailto:contact@sebastienrousseau.com). This is a personal site: it is not run by, and does not speak for, his employer.
 
-### Google Analytics
+## What the site processes, and why
 
-Google Analytics is a web analytics service offered by Google that tracks and Papers website traffic. Google uses the data collected to track and monitor the use of our Website. This data is shared with other Google services. For more information on the privacy practices of Google, please visit the Google Privacy & Terms web page: [Google Privacy & Terms ⧉](https://policies.google.com/privacy)
+### Reading the site
 
-### Microsoft Clarity
+You can read every page without giving any personal data. The site sets no cookies of its own, runs no advertising, and loads no analytics or session-recording tool (no Google Analytics, no Microsoft Clarity).
 
-Microsoft Clarity is a user behavior analytics tool that helps us understand how users interact with our website. The data collected includes information such as mouse movements, clicks, and scrolls. For more information on the privacy practices of Microsoft, please visit the Microsoft Privacy Statement web page: [Microsoft Privacy Statement ⧉](https://privacy.microsoft.com/en-us/privacystatement)
+**Hosting and delivery.** Pages are served by GitHub Pages and delivered through Cloudflare. Both process your IP address and request details in their server logs to deliver the site and protect it from abuse. Lawful basis: legitimate interests (running a secure website).
 
-### First-Party Event and Performance Counts
+**Anonymous counts.** The site records aggregate interaction and performance counts (such as button clicks, snippet copies and Core Web Vitals) through its own `/api/event` endpoint on Cloudflare Workers Analytics Engine. Each count stores only the event name, page path, interaction key and a coarse country code. No cookies are set, no IP address or browser fingerprint is stored, and the data expires after three months. Lawful basis: legitimate interests (measuring whether the site works and what is useful).
 
-We also record anonymous, aggregate interaction and field performance counts (such as button clicks, configuration snippet copies, and Core Web Vitals) via our first-party `/api/event` endpoint backed by Cloudflare Workers Analytics Engine. These counts store only the event name, page path, interaction key, and coarse country code to help us measure site reliability and content utility. No cookies are set, no IP addresses or browser fingerprints are stored, and data points expire automatically under Cloudflare Analytics Engine's 3-month retention policy.
+**Diagrams.** On articles that contain diagrams, the diagram library (Mermaid) is loaded from the jsDelivr content network, which receives your IP address to serve the file.
 
-## Your Rights
+**Embedded players.** The [playlists](/playlists/index.html) page embeds Spotify players. When a player loads, Spotify receives your IP address and may set its own cookies under the [Spotify privacy policy](https://www.spotify.com/uk/legal/privacy-policy/).
 
-Depending on where you reside, you may have certain rights with respect to your personal data, such as the right to request access, correction, or deletion of your data, or to object to our use of your data.
+### Contacting me
 
-## Changes to This Privacy Policy
+**Contact form.** When you send the [contact form](/contact/index.html), your name, e-mail address, subject and message go to Formspree, which forwards them to me by e-mail. I use them only to reply. Lawful basis: legitimate interests (answering your enquiry). I keep enquiries for up to 24 months, then delete them.
 
-We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
+**Spam protection.** The form uses Google reCAPTCHA, which loads only when you start filling in the form, not when the page opens. Google processes device and interaction data to tell people from bots, under the [Google privacy policy](https://policies.google.com/privacy). Lawful basis: legitimate interests (preventing abuse); it is strictly necessary for the form to work.
 
-We advise you to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+**E-mail.** If you write to me directly, I use your message only to reply and keep it for up to 24 months.
 
-## Contact Us
+### Newsletter
 
-If you have any questions about this Privacy Policy, please
-[contact us](/contact/index.html).
+The Banking On Quantum newsletter is run on its own platform at [news.bankingonquantum.com](https://news.bankingonquantum.com), under that platform's privacy notice. This site does not keep subscriber lists.
+
+## Storage on your device
+
+The site stores two preferences in your browser's local storage: `theme` (light or dark) and `wf` (whether the web fonts have loaded before, so later pages can use them straight away). Neither identifies you, and neither is sent anywhere. reCAPTCHA sets its own cookies only when you use the contact form, and Spotify may set cookies when a player loads on the playlists page.
+
+No consent banner is shown because the site itself uses only storage that is strictly necessary or that you trigger by using a feature. If analytics or advertising are ever added, this notice and a consent choice will come first.
+
+## International transfers
+
+Formspree, Google, Cloudflare, GitHub, jsDelivr and Spotify may process data outside the United Kingdom, including in the United States. Those transfers rely on the UK Extension to the EU–US Data Privacy Framework or on standard contractual clauses, as each provider describes.
+
+## Your rights
+
+You have the right to access, correct or erase your personal data, to restrict or object to its processing, and to data portability. To use any of them, e-mail [contact@sebastienrousseau.com](mailto:contact@sebastienrousseau.com); I will reply within one month.
+
+If you are unhappy with how your data has been handled, you can complain to the Information Commissioner's Office at [ico.org.uk](https://ico.org.uk/make-a-complaint/).
+
+## Changes to this notice
+
+When this notice changes, the "Last updated" date at the top changes with it.

@@ -26,7 +26,6 @@ logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau
 logo_alt: "โลโก้สำหรับ Sebastien Rousseau"
 banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
 banner_alt: "เสริมสร้างการสื่อสารที่ปลอดภัยในยุคควอนตัมด้วย KyberLib"
-measurementID: "G-169G4ET5HQ"
 theme-color: "0, 67, 165"
 twitter_creator: "@wwdseb"
 twitter_site: "@wwdseb"

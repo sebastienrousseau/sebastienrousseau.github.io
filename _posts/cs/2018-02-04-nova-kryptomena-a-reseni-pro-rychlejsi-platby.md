@@ -23,7 +23,6 @@ tags: "EXTC, ERC-223, Ethereum, chytré kontrakty, kryptoměna, blockchain, rych
 id: "https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html"
 permalink: "https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html"
 url: "https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html"
-measurementID: "G-169G4ET5HQ"
 theme-color: "0, 67, 165"
 last_reviewed: "2026-05-11"
 

@@ -22,7 +22,6 @@ icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 logo_alt: "Sebastien Rousseau logosu"
 theme-color: "0, 67, 165"
-measurementID: "G-169G4ET5HQ"
 date: "Jan 01, 2018"
 pub_date: "Mon, 01 Jan 2018 20:20:20 +0000"
 item_pub_date: "Mon, 01 Jan 2018 20:20:20 +0000"

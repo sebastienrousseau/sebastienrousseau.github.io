@@ -26,7 +26,6 @@ banner: "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.web
 banner_alt: "ภาพนามธรรมของโครงข่าย AI แสดงถึงความสามารถของ Gemini 1.5"
 image_alt: "ภาพดิจิทัลแสดงความสามารถ AI ขั้นสูงของ Gemini 1.5"
 logo_alt: "โลโก้ของ Sebastien Rousseau"
-measurementID: "G-169G4ET5HQ"
 theme-color: "0, 67, 165"
 twitter_creator: "@wwdseb"
 twitter_site: "@wwdseb"
