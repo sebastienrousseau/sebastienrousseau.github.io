@@ -1,5 +1,8 @@
 {
-  "_comment": "Dutch author-card prose — DRAFT pending native-speaker review. Mirrors EN key set; CI gate test_i18n_author.py enforces parity.",
-  "bio": "Senior technoloog in banking; schrijft over toegepaste AI, ISO 20022-migratie, post-kwantumcryptografie voor financiële dienstverlening en de structurele transformatie van het wholesale-betalingsverkeer.",
-  "credentialsPrefix": "Bijna twee decennia ervaring bij HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group."
+  "_comment": "Author-card prose translated from the EN card (profile.yml). Machine-drafted 2026-11-09, pending native review (A-3). Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
+  "_source": "_data/profile.yml via _profile.author_card()",
+  "_reviewed": false,
+  "_drafted_on": "2026-11-09",
+  "bio": "Senior leider in betalingen en financiële dienstverlening; schrijft over toegepaste AI, ISO 20022-migratie, post-kwantumcryptografie voor financiële dienstverlening en de transformatie van het wholesale-betalingsverkeer.",
+  "credentialsPrefix": "Meer dan 20 jaar in betalingsverkeer, bankwezen en digitale technologie. Leidt de API-producten voor wholesale-betalingen bij HSBC · lid van de EPAA-werkgroep Quantum-Safe Cryptography."
 }

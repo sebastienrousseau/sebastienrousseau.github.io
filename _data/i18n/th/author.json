@@ -1,5 +1,8 @@
 {
-  "_comment": "Thai author-card prose — DRAFT pending native review.",
-  "bio": "ผู้เชี่ยวชาญด้านเทคโนโลยีธนาคารระดับอาวุโส เขียนเกี่ยวกับ AI ประยุกต์ การย้ายระบบ ISO 20022 การเข้ารหัสหลังควอนตัมสำหรับบริการการเงิน และการปฏิรูปเชิงโครงสร้างของการชำระเงินขายส่ง",
-  "credentialsPrefix": "ประสบการณ์เกือบสองทศวรรษที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group."
+  "_comment": "Author-card prose translated from the EN card (profile.yml). Machine-drafted 2026-11-09, pending native review (A-3). Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
+  "_source": "_data/profile.yml via _profile.author_card()",
+  "_reviewed": false,
+  "_drafted_on": "2026-11-09",
+  "bio": "ผู้นำอาวุโสด้านการชำระเงินและบริการทางการเงิน เขียนเกี่ยวกับ AI ประยุกต์ การย้ายระบบ ISO 20022 การเข้ารหัสหลังควอนตัมสำหรับบริการการเงิน และการเปลี่ยนแปลงของการชำระเงินขายส่ง",
+  "credentialsPrefix": "ประสบการณ์มากกว่า 20 ปีด้านการชำระเงิน การธนาคาร และเทคโนโลยีดิจิทัล เป็นผู้นำผลิตภัณฑ์ API การชำระเงินขายส่งที่ HSBC · สมาชิกคณะทำงานด้านการเข้ารหัสที่ปลอดภัยจากควอนตัมของ EPAA"
 }

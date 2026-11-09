@@ -10,6 +10,7 @@ from __future__ import annotations
 import html as _html
 import re
 
+import _author_card
 import _lang_registry
 
 from . import _state as st
@@ -61,21 +62,14 @@ def _french_author_card() -> str:
     full_profile = strings.get("author.fullProfile", "Full profile")
     bio = author.get("bio", "")
     credentials_prefix = author.get("credentialsPrefix", "")
-    return (
-        f'<aside class="author-card" aria-label="{aria}">'
-        f'<img alt="{portrait_alt}" '
-        'src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" '
-        'width="64" height="64" loading="lazy" decoding="async" />'
-        '<span class="author-card-body">'
-        '<strong class="author-card-name">'
-        f'<a href="/{st.LANG_CODE}/{about_slug}/index.html">Sebastien Rousseau</a></strong>'
-        f'<span class="author-card-bio">{bio}</span>'
-        '<span class="author-credentials">'
-        f"{credentials_prefix} "
-        f'<a href="/{st.LANG_CODE}/{about_slug}/index.html">{full_profile}</a> &middot; '
-        '<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; '
-        '<a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a>'
-        "</span></span></aside>"
+    about_href = f"/{st.LANG_CODE}/{about_slug}/index.html"
+    return _author_card.render(
+        bio=bio,
+        credentials=credentials_prefix,
+        about_href=about_href,
+        aria=aria,
+        portrait_alt=portrait_alt,
+        full_profile=full_profile,
     )
 
 

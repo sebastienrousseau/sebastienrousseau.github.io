@@ -1,5 +1,8 @@
 {
-  "_comment": "Korean author-card prose — DRAFT pending native review. Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
-  "bio": "응용 AI, ISO 20022 이행, 금융 서비스를 위한 포스트 양자 암호, 도매 결제의 구조적 변혁에 관해 집필하는 시니어 뱅킹 테크놀로지스트입니다.",
-  "credentialsPrefix": "HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 가까운 경험을 보유하였습니다."
+  "_comment": "Author-card prose translated from the EN card (profile.yml). Machine-drafted 2026-11-09, pending native review (A-3). Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
+  "_source": "_data/profile.yml via _profile.author_card()",
+  "_reviewed": false,
+  "_drafted_on": "2026-11-09",
+  "bio": "응용 AI, ISO 20022 이행, 금융 서비스를 위한 포스트 양자 암호, 도매 결제의 변혁에 관해 집필하는 결제·금융 서비스 분야의 시니어 리더입니다.",
+  "credentialsPrefix": "결제, 은행, 디지털 기술 분야에서 20년 이상의 경력. HSBC에서 도매 결제 API 제품을 이끌고 있음 · EPAA 양자 내성 암호 워킹그룹 회원."
 }

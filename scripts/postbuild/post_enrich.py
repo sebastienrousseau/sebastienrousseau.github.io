@@ -41,6 +41,7 @@ _sys.path.insert(0, str(_Path(__file__).resolve().parents[1] / "lib"))
 import re
 from pathlib import Path
 
+import _author_card
 from _build_clock import build_today_iso
 
 POSTS = Path("_posts")
@@ -420,27 +421,6 @@ def _insert_lead(body_text: str, tldr: str, related: list[dict[str, object]]) ->
     return body_text, True
 
 
-_AUTHOR_CARD_HTML = (
-    '<aside class="author-card" aria-label="About the author">'
-    '<img alt="Portrait of Sebastien Rousseau" '
-    'src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" '
-    'width="64" height="64" loading="lazy" decoding="async" />'
-    '<span class="author-card-body">'
-    '<strong class="author-card-name">'
-    '<a href="/about/index.html">Sebastien Rousseau</a></strong>'
-    '<span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 '
-    "migration, post-quantum cryptography for financial services, and "
-    "the structural transformation of wholesale payments.</span>"
-    '<span class="author-credentials">'
-    "Nearly two decades across HSBC Commercial &amp; Investment Bank, PayPal, "
-    "Barclays, Shazam, AKQA, Virgin Group. "
-    '<a href="/about/index.html">Full profile</a> &middot; '
-    '<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; '
-    '<a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a>'
-    "</span></span></aside>"
-)
-
-
 def _related_grid_html(related: list[dict[str, object]], post: dict[str, object]) -> list[str]:
     """Build the bottom Related-reading <aside> when there are matches."""
     if not related:
@@ -481,7 +461,7 @@ def _append_enrich_block(
     enrich-start/enrich-end block before re-appending."""
     body_text = body_text.rstrip()
     body_text = ENRICH_BLOCK_RE.sub("", body_text)
-    block: list[str] = ["", "<!-- enrich-start -->", _AUTHOR_CARD_HTML]
+    block: list[str] = ["", "<!-- enrich-start -->", _author_card.english()]
     block.append(
         f'<p class="post-reviewed">Last reviewed <time datetime="{reviewed}">{reviewed}</time>.</p>'
     )

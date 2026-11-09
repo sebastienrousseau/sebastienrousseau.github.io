@@ -1,5 +1,8 @@
 {
-  "_comment": "Brazilian Portuguese author-card prose — DRAFT pending native review. Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
-  "bio": "Tecnólogo bancário sênior, escrevo sobre IA aplicada, migração para ISO 20022, criptografia pós-quântica para os serviços financeiros e a transformação estrutural dos pagamentos de atacado.",
-  "credentialsPrefix": "Quase duas décadas de experiência no HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group."
+  "_comment": "Author-card prose translated from the EN card (profile.yml). Machine-drafted 2026-11-09, pending native review (A-3). Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
+  "_source": "_data/profile.yml via _profile.author_card()",
+  "_reviewed": false,
+  "_drafted_on": "2026-11-09",
+  "bio": "Líder sênior em pagamentos e serviços financeiros; escreve sobre IA aplicada, migração para ISO 20022, criptografia pós-quântica para os serviços financeiros e a transformação dos pagamentos de atacado.",
+  "credentialsPrefix": "Mais de 20 anos em pagamentos, bancos e tecnologia digital. Lidera os produtos de API de pagamentos de atacado no HSBC · membro do Grupo de Trabalho de Criptografia Quântica Segura da EPAA."
 }

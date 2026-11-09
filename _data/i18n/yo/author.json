@@ -1,5 +1,8 @@
 {
-  "_comment": "Yorùbá (yo) author-card prose — DRAFT pending native review. Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
-  "bio": "Onímọ̀ ẹ̀rọ báńkì àgbà; mò ń kọ nípa AI tó wúlò, ìṣírò ISO 20022, kírípító lẹ́yìn-kuántọ́mù fún iṣẹ́ ìnáwó àti àtúnṣe ètò ìsanwó ńláńlá.",
-  "credentialsPrefix": "Ó fẹ́rẹ̀ẹ́ tó ogún ọdún ìrírí ní HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group."
+  "_comment": "Author-card prose translated from the EN card (profile.yml). Machine-drafted 2026-11-09, pending native review (A-3). Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
+  "_source": "_data/profile.yml via _profile.author_card()",
+  "_reviewed": false,
+  "_drafted_on": "2026-11-09",
+  "bio": "Aṣáájú àgbà nínú ìsanwó àti iṣẹ́ ìnáwó; ó ń kọ nípa AI tó wúlò, ìṣírò ISO 20022, kírípító lẹ́yìn-kuántọ́mù fún iṣẹ́ ìnáwó àti àyípadà ìsanwó ńláńlá.",
+  "credentialsPrefix": "Ó ju ọdún 20 lọ nínú ìsanwó, iṣẹ́ báńkì àti ìmọ̀ ẹ̀rọ oní-nọ́ńbà. Ó ń darí àwọn ọjà API ìsanwó ńláńlá ní HSBC · ọmọ ẹgbẹ́ Ẹgbẹ́ Iṣẹ́ EPAA lórí Kírípító Aláàbò-Kuántọ́mù."
 }

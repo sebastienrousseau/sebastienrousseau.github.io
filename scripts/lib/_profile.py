@@ -36,6 +36,8 @@ REQUIRED = (
     "education",
     "timeline",
     "bios",
+    "writes_on",
+    "role_line",
 )
 _EARLIER = "earlier"
 
@@ -92,6 +94,19 @@ def experience_sentence() -> str:
     """'more than 20 years in payments, banking and digital technology'."""
     p = load()
     return f"{p['experience_phrase']} {p['experience_scope']}"
+
+
+def author_card() -> dict[str, str]:
+    """The English author card's two sentences (plain text, unescaped).
+    ``_data/i18n/<lang>/author.json`` carries their translations."""
+    p = load()
+    experience = experience_sentence()
+    return {
+        "bio": f"{p['descriptor']} writing on {p['writes_on']}.",
+        "credentials": (
+            f"{experience[0].upper()}{experience[1:]}. {p['role_line']} · {p['epaa']['short']}."
+        ),
+    }
 
 
 def _year(stamp: str) -> int:

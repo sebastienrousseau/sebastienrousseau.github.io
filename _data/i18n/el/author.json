@@ -1,4 +1,8 @@
 {
-  "bio": "Ανώτερος τεχνολόγος τραπεζικής που γράφει για την εφαρμοσμένη τεχνητή νοημοσύνη, τη μετάβαση στο ISO 20022, τη μετακβαντική κρυπτογραφία για χρηματοοικονομικές υπηρεσίες και τον δομικό μετασχηματισμό των χονδρικών πληρωμών.",
-  "credentialsPrefix": "Σχεδόν δύο δεκαετίες σε HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group."
+  "_comment": "Author-card prose translated from the EN card (profile.yml). Machine-drafted 2026-11-09, pending native review (A-3). Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
+  "_source": "_data/profile.yml via _profile.author_card()",
+  "_reviewed": false,
+  "_drafted_on": "2026-11-09",
+  "bio": "Ανώτερο στέλεχος στις πληρωμές και τις χρηματοοικονομικές υπηρεσίες που γράφει για την εφαρμοσμένη τεχνητή νοημοσύνη, τη μετάβαση στο ISO 20022, τη μετακβαντική κρυπτογραφία για χρηματοοικονομικές υπηρεσίες και τον μετασχηματισμό των χονδρικών πληρωμών.",
+  "credentialsPrefix": "Περισσότερα από 20 χρόνια στις πληρωμές, την τραπεζική και την ψηφιακή τεχνολογία. Ηγείται των προϊόντων API χονδρικών πληρωμών στην HSBC · μέλος της ομάδας εργασίας της EPAA για την κβαντικά ασφαλή κρυπτογραφία."
 }

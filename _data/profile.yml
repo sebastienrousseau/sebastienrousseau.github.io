@@ -35,6 +35,10 @@ positioning: >-
   AKQA's mobile technology division, and now leads wholesale payments API
   products at HSBC.
 
+# The author card under every article: "<descriptor> writing on <writes_on>."
+writes_on: "applied AI, ISO 20022 migration, post-quantum cryptography for financial services and the transformation of wholesale payments"
+role_line: "Leads wholesale payments API products at HSBC"
+
 focus:
   - "ISO 20022"
   - "SWIFT gpi"

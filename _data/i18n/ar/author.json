@@ -1,5 +1,8 @@
 {
-  "_comment": "Arabic author-card prose — DRAFT pending native review. Mirrors _data/i18n/en/author.json key set.",
-  "bio": "تقني مصرفي كبير يكتب عن الذكاء الاصطناعي التطبيقي، وهجرة ISO 20022، والتشفير ما بعد الكمي للخدمات المالية، والتحوّل الهيكلي للمدفوعات بالجملة.",
-  "credentialsPrefix": "قرابة عقدين من الخبرة في HSBC Commercial &amp; Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group."
+  "_comment": "Author-card prose translated from the EN card (profile.yml). Machine-drafted 2026-11-09, pending native review (A-3). Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
+  "_source": "_data/profile.yml via _profile.author_card()",
+  "_reviewed": false,
+  "_drafted_on": "2026-11-09",
+  "bio": "قيادي أول في المدفوعات والخدمات المالية يكتب عن الذكاء الاصطناعي التطبيقي، وهجرة ISO 20022، والتشفير ما بعد الكمي للخدمات المالية، وتحوّل المدفوعات بالجملة.",
+  "credentialsPrefix": "أكثر من 20 عامًا في المدفوعات والخدمات المصرفية والتكنولوجيا الرقمية. يقود منتجات واجهات برمجة التطبيقات (API) لمدفوعات الجملة في HSBC · عضو مجموعة عمل EPAA للتشفير الآمن كميًا."
 }
