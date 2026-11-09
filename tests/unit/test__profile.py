@@ -82,6 +82,7 @@ def test_timeline_merges_and_orders_cards() -> None:
     ]
     assert cards["shazam"]["years"] == "2012"
     assert cards["shazam"]["progression"] == []
+    assert cards["hsbc"]["progression"] == ["API Engineering Lead (via Reedia Ltd)"]
 
 
 def test_person_fields_carry_no_invented_credentials() -> None:

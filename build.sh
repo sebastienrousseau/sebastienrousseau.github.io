@@ -571,6 +571,8 @@ python3 tests/validation/test_sri_integrity.py
 python3 tests/validation/test_meta_description_clean.py
 python3 tests/validation/test_canonical_consistency.py
 python3 tests/validation/test_structured_data.py
+# Author facts on every built page match _data/profile.yml.
+python3 tests/validation/test_profile_built.py
 python3 scripts/seo_and_audit/check_unique_titles.py
 # Cloudflare Worker (edge Accept-Language router + security headers) —
 # pure-logic tests, no Cloudflare runtime required. 100% line/branch/

@@ -141,7 +141,8 @@ def timeline_cards(data: dict[str, Any] | None = None) -> list[dict[str, Any]]:
     cards = []
     for card in p["timeline"]:
         rows = [r for r in p["career"] if r.get("card") == card["key"]]
-        earlier = [r["title"] for r in reversed(rows) if r["title"] != card["heading"]]
+        # rows are newest first: the first is the role the heading names.
+        earlier = [r["title"] for r in reversed(rows[1:])]
         cards.append({**card, "years": _span(rows), "progression": earlier})
     return cards
 
