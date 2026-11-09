@@ -91,21 +91,34 @@ epaa:
   short: "EPAA Quantum-Safe Working Group member"
 
 # ------------------------------------------------------------------- career
-career:  # newest first; used by About and the Person JSON-LD
-  - {org: "HSBC", title: "Senior Digital Product Manager, GPS Client Connectivity, CIB", from: "2019-12", to: null}
-  - {org: "HSBC", title: "API Engineering Lead (via Reedia Ltd)", from: "2016-09", to: "2019-12"}
-  - {org: "Reedia Ltd", title: "Chief Executive Officer & Founder", from: "2013-02", to: "2019-12"}
-  - {org: "Rufus Leonard", title: "Senior Mobile Solutions Consultant (via Reedia Ltd)", from: "2015-05", to: "2016-09"}
-  - {org: "PayPal", title: "Senior Solutions Architect, Professional Services & Strategic Partnerships", from: "2014-06", to: "2015-03"}
-  - {org: "Barclays Corporate Banking", title: "Mobile Banking Workstream Lead (contract)", from: "2013-02", to: "2014-06"}
-  - {org: "Shazam", title: "Head of Mobile", from: "2012-04", to: "2012-12"}
-  - {org: "AKQA", title: "Head of Mobile Technology", from: "2008-05", to: "2012-04"}
-  - {org: "AKQA", title: "Technical Manager", from: "2007-04", to: "2008-05"}
-  - {org: "AKQA", title: "Java Software Engineer", from: "2006-09", to: "2007-04"}
-  - {org: "AKQA", title: "Technical Web Architect / Senior Web Developer", from: "2005-10", to: "2006-09"}
-  - {org: "JSB Training and Development", title: "Internet Technology Manager", from: "2004-01", to: "2005-09"}
-  - {org: "Consotel", title: "Senior Web Developer", from: "2000-10", to: "2003"}
-  - {org: "Virgin", title: "Web Developer", from: "2000-07", to: "2000-09"}
+career:  # newest first; the full record. About groups it into `timeline`.
+  - {org: "HSBC", title: "Senior Digital Product Manager, GPS Client Connectivity, CIB", from: "2019-12", to: null, card: hsbc}
+  - {org: "HSBC", title: "API Engineering Lead (via Reedia Ltd)", from: "2016-09", to: "2019-12", card: hsbc}
+  - {org: "Reedia Ltd", title: "Chief Executive Officer & Founder", from: "2013-02", to: "2019-12", card: reedia}
+  - {org: "Rufus Leonard", title: "Senior Mobile Solutions Consultant (via Reedia Ltd)", from: "2015-05", to: "2016-09", card: null}  # a Reedia engagement
+  - {org: "PayPal", title: "Senior Solutions Architect, Professional Services & Strategic Partnerships", from: "2014-06", to: "2015-03", card: paypal}
+  - {org: "Barclays Corporate Banking", title: "Mobile Banking Workstream Lead (contract)", from: "2013-02", to: "2014-06", card: barclays}
+  - {org: "Shazam", title: "Head of Mobile", from: "2012-04", to: "2012-12", card: shazam}
+  - {org: "AKQA", title: "Head of Mobile Technology", from: "2008-05", to: "2012-04", card: akqa}
+  - {org: "AKQA", title: "Technical Manager", from: "2007-04", to: "2008-05", card: akqa}
+  - {org: "AKQA", title: "Java Software Engineer", from: "2006-09", to: "2007-04", card: akqa}
+  - {org: "AKQA", title: "Technical Web Architect / Senior Web Developer", from: "2005-10", to: "2006-09", card: akqa}
+  - {org: "JSB Training and Development", title: "Internet Technology Manager", from: "2004-01", to: "2005-09", card: earlier}
+  - {org: "Consotel", title: "Senior Web Developer", from: "2000-10", to: "2003", card: earlier}
+  - {org: "Virgin", title: "Web Developer", from: "2000-07", to: "2000-09", card: earlier}
+
+# The About page timeline: one card per key, in this order. A card's years
+# span its career rows; its other rows show as a progression line under the
+# heading. `earlier` folds into one closing line. Rows with card: null are
+# not shown.
+timeline:
+  - {key: hsbc, org: "HSBC", heading: "Senior Product Manager, Wholesale Payments & API"}
+  - {key: reedia, org: "Reedia Ltd", heading: "Founder and Chief Executive Officer"}
+  - {key: paypal, org: "PayPal", heading: "Senior Solutions Architect, Professional Services & Strategic Partnerships"}
+  - {key: barclays, org: "Barclays Corporate Banking", heading: "Mobile Banking Workstream Lead"}
+  - {key: shazam, org: "Shazam", heading: "Head of Mobile"}
+  - {key: akqa, org: "AKQA", heading: "Head of Mobile Technology"}
+timeline_earlier: "Earlier: web and internet technology roles at Virgin, Consotel and JSB Training and Development (2000–2005)."
 
 education:
   - {org: "University of Westminster", award: "Postgraduate studies, Computer Science", years: "1999–2000"}
