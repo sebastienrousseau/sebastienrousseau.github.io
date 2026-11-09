@@ -90,3 +90,18 @@ def test_notice_claims_no_tracker_the_site_does_not_load() -> None:
 def test_checks(site: str, notice: str, missing: list[str], claimed: list[str]) -> None:
     assert missing_from_notice(site, notice) == missing
     assert claimed_but_not_loaded(site, notice) == claimed
+
+
+_LOCALE_BODIES = sorted((ROOT / "_data" / "i18n").glob("*/static_bodies.json"))
+
+
+@pytest.mark.parametrize("path", _LOCALE_BODIES, ids=lambda p: p.parent.name)
+def test_translated_notice_names_every_provider(path: Path) -> None:
+    """Each translation follows the English notice: provider names stay in
+    Latin script, so every provider the site loads must appear in it."""
+    import json
+
+    body = json.loads(path.read_text(encoding="utf-8"))["bodies"].get("privacy", "")
+    expected = _loaded(_site_text()) - set(TRACKERS)
+    missing = sorted(name for name in expected if name not in body)
+    assert not missing, f"{path.parent.name} privacy notice omits {missing}"

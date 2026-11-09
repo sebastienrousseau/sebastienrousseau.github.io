@@ -69,8 +69,8 @@
   "privacy": {
     "title": "Política de privacidade — Sebastien Rousseau",
     "subtitle": "Sua privacidade é importante.",
-    "description": "Como este site coleta, utiliza e protege seus dados. Medição de audiência anônima, cookies, hospedagem e direitos da LGPD/RGPD.",
-    "keywords": "privacidade, LGPD, RGPD, cookies, dados pessoais, analytics"
+    "description": "Quais dados pessoais este site trata, por quê, quem os trata em nosso nome, por quanto tempo são mantidos e seus direitos segundo o UK GDPR, incluindo reclamar ao ICO.",
+    "keywords": "aviso de privacidade, UK GDPR, PECR, formulário de contato, Formspree, reCAPTCHA, contagens anônimas, cookies, armazenamento local, direitos sobre os dados, Information Commissioner's Office"
   },
   "projects": {
     "title": "Projetos — Sebastien Rousseau",

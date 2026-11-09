@@ -69,8 +69,8 @@
   "privacy": {
     "title": "隐私政策 — Sebastien Rousseau",
     "subtitle": "您的隐私对我们很重要。",
-    "description": "本网站如何收集、使用和保护您的数据。匿名访问统计、Cookie、托管以及 GDPR 权利。",
-    "keywords": "隐私, GDPR, Cookie, 个人数据, 分析"
+    "description": "本网站处理哪些个人数据、原因、由谁代我们处理、保留多长时间，以及您根据 UK GDPR 享有的权利，包括向 ICO 投诉的权利。",
+    "keywords": "隐私声明, UK GDPR, PECR, 联系表单, Formspree, reCAPTCHA, 匿名计数, Cookie, 本地存储, 数据权利, Information Commissioner's Office"
   },
   "projects": {
     "title": "项目 — Sebastien Rousseau",
