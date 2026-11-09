@@ -1,19 +1,19 @@
 ---
 title: 演講與顧問服務
 meta_title: Sebastien Rousseau：關於支付、後量子密碼學與應用 AI 的主題演講、座談與專家評論
-meta_description: 資深銀行技術專家，在滙豐、PayPal 與巴克萊工作近二十年。面向董事會、產業大會與新聞編輯室的主題演講、座談與專家評論。
+meta_description: '資深支付與金融服務主管，在銀行與科技領域擁有逾 20 年資歷。為董事會、產業大會與媒體提供關於支付、後量子與應用 AI 的主題演講、座談與專家評論。'
 hero:
   eyebrow: 主題演講 · 座談 · 專家評論
   headline: 正在重塑銀行業的技術，講給必須做決定的人聽。
-  lede: Sebastien Rousseau 是資深銀行技術專家，在滙豐、PayPal 與巴克萊工作近二十年。他談 ISO 20022 支付、後量子密碼學與應用 AI，把產業難題變成一屋子人當場能拍板的決定。
+  lede: 'Sebastien Rousseau 是資深支付與金融服務主管，在支付、銀行與數位科技領域擁有逾 20 年資歷。他將支付現代化、後量子密碼學與應用 AI 從政策文件轉化為可檢視的程式碼，也轉化為董事會能據以行動的主題演講。'
   primary_cta: 邀請我演講
   secondary_cta: 查看演講主題
   press_nudge: 正在趕稿的記者？
   press_nudge_cta: 預約專家評論
   microproof:
-  - 近二十年經驗，曾任職於滙豐商業及投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團
-  - EPAA 後量子白皮書共同作者
-  - 貢獻者，Emerging Payments Association Asia
+  - '在支付、銀行與數位科技領域擁有逾 20 年資歷'
+  - '於 HSBC 負責大額支付 API 產品'
+  - 'EPAA Quantum-Safe Cryptography Working Group 成員'
 employers_label: 我曾任職的機構
 stats_eyebrow: 用數字說話
 stats:
@@ -25,7 +25,7 @@ stats:
   label: 開源下載量
 - kpi: github_stars
   label: GitHub 星標數
-stats_foot: 'EPAA 抗量子密碼工作小組貢獻者。白皮書《Quantum-Safe Payments: Why the Payments Industry Must Act Now》共同作者（2025 年 9 月）。'
+stats_foot: 'EPAA Quantum-Safe Cryptography Working Group 成員，參與其白皮書《Quantum-Safe Payments: Why the Payments Industry Must Act Now》（2025 年 9 月）的撰寫。'
 paths:
   eyebrow: 兩種合作方式
   headline: 訂一個講台，或者訂一個消息來源。
@@ -137,11 +137,11 @@ bios:
   copy_label: 複製
   items:
   - length: 短
-    text: Sebastien Rousseau 是資深銀行技術專家，在 ISO 20022 支付、後量子密碼學與應用 AI 的交會處寫作與打造。 近二十年經驗，曾任職於滙豐商業及投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團。
+    text: 'Sebastien Rousseau 是資深支付與金融服務主管，在支付、銀行與數位科技領域擁有逾 20 年資歷。他於 HSBC 負責大額支付 API 產品，並為 Emerging Payments Association Asia 旗下 Quantum-Safe Cryptography Working Group 成員。'
   - length: 中
-    text: Sebastien Rousseau 是資深銀行技術專家，在 HSBC Commercial & Investment Bank、PayPal、Barclays、Shazam、AKQA 與 Virgin Group 工作近二十年。他在 ISO 20022 支付、後量子密碼學與應用 AI 的交會處寫作與打造，並維護 pacs.008、pain.001、KyberLib、BankStatementParser 等開源參考實作，這些專案正被財資與支付團隊用於正式環境。他參與 Emerging Payments Association Asia 的抗量子密碼工作小組，並出版 Banking On Quantum 與 Banking On AI。
+    text: 'Sebastien Rousseau 是資深支付與金融服務主管，在支付、銀行與數位科技領域擁有逾 20 年資歷。他於 HSBC 負責大額支付 API 產品，為 Emerging Payments Association Asia 旗下 Quantum-Safe Cryptography Working Group 成員，並參與其白皮書《Quantum-Safe Payments: Why the Payments Industry Must Act Now》（2025 年 9 月）的撰寫。他維護 ISO 20022 與後量子密碼學開源函式庫，並出版 Banking On Quantum 與 Banking On AI。'
   - length: 長
-    text: 'Sebastien Rousseau 是資深銀行技術專家，專注於大額支付的結構性變革。 近二十年經驗，曾任職於滙豐商業及投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團。 他撰寫並維護 pacs. 008、pain. 001、BankStatementParser、KyberLib、CloudCDN 與 dotfiles，每一個都被定位為參考實作而非展示：可供檢視、經得起董事會審視的金融基礎設施。 他參與 Emerging Payments Association Asia 的抗量子密碼工作小組，共同撰寫 EPAA 白皮書《Quantum-Safe Payments: Why the Payments Industry Must Act Now》（2025 年 9 月），並出版 Banking On Quantum 與 Banking On AI。 他的工作處在代理型 AI、即時支付、後量子密碼學、雲原生韌性、結構化資料與監理證據的交會處。'
+    text: 'Sebastien Rousseau 是資深支付與金融服務主管，在支付、銀行與數位科技領域擁有逾 20 年資歷。他於 HSBC 商業與投資銀行（Commercial & Investment Banking）負責大額支付 API 產品，2016 年以 API Engineering Lead 身分加入。在此之前，他創辦 Reedia Ltd 並擔任執行長，與一級銀行合作制定 PayPal 的 HCE 與代碼化策略，主導 Barclays Corporate Banking 的行動銀行轉型，擔任 Shazam 行動業務主管（Head of Mobile），並領導 AKQA 行動技術部門，服務 Nike、RBS 與 Nokia 等客戶。他是 EPAA Quantum-Safe Cryptography Working Group 成員、Institution of Analysts and Programmers 院士（Fellow），也是多個廣泛使用的支付與密碼學開源函式庫的維護者。他就 ISO 20022、後量子遷移與銀行業代理型 AI 發表演講與撰文。'
 faq:
   eyebrow: 在您開口之前
   headline: 邀約事宜，直說。
@@ -185,9 +185,6 @@ final_cta:
   secondary_cta: 預約專家評論
 ---
 
-Sebastien Rousseau 是資深銀行技術專家，專注於大額支付的結構性變革。 近二十年經驗，曾任職於滙豐商業及投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團。 他撰寫並維護 pacs. 008、pain. 001、 BankStatementParser、KyberLib、CloudCDN 與 dotfiles，每一個都被定位為參考實作而非展示：可供 檢視、經得起董事會審視的金融基礎設施。
+Sebastien Rousseau 是資深支付與金融服務主管，在支付、銀行與數位科技領域擁有逾 20 年資歷。他於 HSBC 商業與投資銀行（Commercial & Investment Banking）負責大額支付 API 產品，2016 年以 API Engineering Lead 身分加入。在此之前，他創辦 Reedia Ltd 並擔任執行長，與一級銀行合作制定 PayPal 的 HCE 與代碼化策略，主導 Barclays Corporate Banking 的行動銀行轉型，擔任 Shazam 行動業務主管（Head of Mobile），並領導 AKQA 行動技術部門，服務 Nike、RBS 與 Nokia 等客戶。他是 EPAA Quantum-Safe Cryptography Working Group 成員、Institution of Analysts and Programmers 院士（Fellow），也是多個廣泛使用的支付與密碼學開源函式庫的維護者。他就 ISO 20022、後量子遷移與銀行業代理型 AI 發表演講與撰文。
 
-他參與 Emerging Payments Association Asia 的抗量子密碼工作小組，共同撰寫 EPAA 白皮書
-《Quantum-Safe Payments: Why the Payments Industry Must Act Now》（2025 年 9 月），並出版
-Banking On Quantum 與 Banking On AI。他的工作處在代理型 AI、即時支付、後量子密碼學、雲原生
-韌性、結構化資料與監理證據的交會處。
+他出版 Banking On Quantum 與 Banking On AI。

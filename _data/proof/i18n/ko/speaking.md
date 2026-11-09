@@ -1,19 +1,19 @@
 ---
 title: 강연과 자문
 meta_title: '세바스티앵 루소: 지급결제, 포스트 양자 암호, 응용 AI에 관한 기조강연·패널·전문가 논평'
-meta_description: 시니어 뱅킹 테크놀로지스트. HSBC, PayPal, Barclays에서 20년 가까이. 이사회, 업계 콘퍼런스, 편집국을 위한 기조강연과 패널, 전문가 논평.
+meta_description: '지급결제 및 금융 서비스 분야의 시니어 리더. 은행과 기술 분야에서 20년 이상의 경력. 지급결제, 포스트 양자, 응용 AI에 관한 기조강연, 패널, 전문가 논평을 제공합니다.'
 hero:
   eyebrow: 기조강연 · 패널 · 전문가 논평
   headline: 은행업을 다시 짓고 있는 기술을, 결정해야 하는 사람들에게.
-  lede: 세바스티앵 루소는 HSBC, PayPal, Barclays에서 20년 가까이 일한 시니어 뱅킹 테크놀로지스트입니다. ISO 20022 지급결제, 포스트 양자 암호, 응용 AI를 이야기하며, 업계의 문제를 한 자리에서 내릴 수 있는 결정으로 바꿉니다.
+  lede: '세바스티앵 루소는 지급결제, 은행, 디지털 기술 분야에서 20년 이상의 경력을 쌓은 지급결제 및 금융 서비스 분야의 시니어 리더입니다. 지급결제 현대화, 포스트 양자 암호, 응용 AI를 정책 문서에서 검증 가능한 코드로, 그리고 이사회가 실행에 옮길 수 있는 기조강연으로 바꿉니다.'
   primary_cta: 강연 요청하기
   secondary_cta: 강연 살펴보기
   press_nudge: 마감에 쫓기는 기자이신가요?
   press_nudge_cta: 전문가 논평 요청
   microproof:
-  - HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 가까운 경험을 보유하였습니다
-  - EPAA 포스트 양자 백서 공동 저자
-  - 기여자, Emerging Payments Association Asia
+  - '지급결제, 은행, 디지털 기술 분야 20년 이상의 경력'
+  - 'HSBC에서 거액 지급결제 API 제품 총괄'
+  - 'EPAA Quantum-Safe Cryptography Working Group 위원'
 employers_label: 거쳐온 조직
 stats_eyebrow: 숫자로 보기
 stats:
@@ -25,7 +25,7 @@ stats:
   label: 오픈소스 내려받기 수
 - kpi: github_stars
   label: GitHub 스타 수
-stats_foot: 'EPAA 양자 내성 암호 워킹그룹 기여자. 백서 「Quantum-Safe Payments: Why the Payments Industry Must Act Now」 공동 저자(2025년 9월).'
+stats_foot: 'EPAA Quantum-Safe Cryptography Working Group 위원이며, 이 그룹의 백서 「Quantum-Safe Payments: Why the Payments Industry Must Act Now」(2025년 9월) 작성에 참여했습니다.'
 paths:
   eyebrow: 함께 일하는 두 가지 방법
   headline: 무대를 잡으시거나, 취재원을 잡으시거나.
@@ -137,11 +137,11 @@ bios:
   copy_label: 복사
   items:
   - length: 짧게
-    text: 세바스티앵 루소는 ISO 20022 지급결제, 포스트 양자 암호, 응용 AI가 만나는 자리에서 글을 쓰고 무언가를 만드는 시니어 뱅킹 테크놀로지스트입니다. HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 가까운 경험을 보유하였습니다.
+    text: '세바스티앵 루소는 지급결제, 은행, 디지털 기술 분야에서 20년 이상의 경력을 쌓은 지급결제 및 금융 서비스 분야의 시니어 리더입니다. HSBC에서 거액 지급결제 API 제품을 총괄하고 있으며, Emerging Payments Association Asia의 Quantum-Safe Cryptography Working Group 위원입니다.'
   - length: 보통
-    text: 세바스티앵 루소는 HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 가까이 일한 시니어 뱅킹 테크놀로지스트입니다. ISO 20022 지급결제, 포스트 양자 암호, 응용 AI가 만나는 자리에서 글을 쓰고 무언가를 만들며, pacs.008, pain.001, KyberLib, BankStatementParser 같은 오픈 레퍼런스 구현을 유지합니다. 이들은 자금·지급결제 팀이 운영 환경에서 쓰고 있습니다. Emerging Payments Association Asia의 양자 내성 암호 워킹그룹에 기여하며 Banking On Quantum과 Banking On AI를 발행합니다.
+    text: '세바스티앵 루소는 지급결제, 은행, 디지털 기술 분야에서 20년 이상의 경력을 쌓은 지급결제 및 금융 서비스 분야의 시니어 리더입니다. HSBC에서 거액 지급결제 API 제품을 총괄하고 있으며, Emerging Payments Association Asia의 Quantum-Safe Cryptography Working Group 위원으로서 이 그룹의 백서 「Quantum-Safe Payments: Why the Payments Industry Must Act Now」(2025년 9월) 작성에 참여했습니다. ISO 20022와 포스트 양자 암호 분야의 오픈소스 라이브러리를 유지하며 Banking On Quantum과 Banking On AI를 발행합니다.'
   - length: 길게
-    text: '세바스티앵 루소는 거액 지급결제의 구조적 전환에 집중하는 시니어 뱅킹 테크놀로지스트입니다. HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 가까운 경험을 보유하였습니다. pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN, dotfiles를 쓰고 유지하며, 모두 시연이 아니라 레퍼런스 구현으로 자리매김했습니다. 들여다볼 수 있는, 이사회에 내놓을 수 있는 금융 인프라입니다. Emerging Payments Association Asia의 양자 내성 암호 워킹그룹에 기여하고, EPAA 백서 「Quantum-Safe Payments: Why the Payments Industry Must Act Now」(2025년 9월)를 공동 집필했으며, Banking On Quantum과 Banking On AI를 발행합니다. 에이전트 AI, 실시간 지급결제, 포스트 양자 암호, 클라우드 네이티브 복원력, 구조화 데이터, 규제 증빙이 만나는 자리에서 일합니다.'
+    text: '세바스티앵 루소는 지급결제, 은행, 디지털 기술 분야에서 20년 이상의 경력을 쌓은 지급결제 및 금융 서비스 분야의 시니어 리더입니다. HSBC에서는 Commercial & Investment Banking 부문의 거액 지급결제 API 제품을 총괄하고 있으며, 2016년 API Engineering Lead로 합류했습니다. 그 전에는 Reedia Ltd를 창업해 최고경영자로 이끌었고, PayPal에서 1등급 은행들과 함께 HCE 및 토큰화 전략을 수립했으며, Barclays Corporate Banking에서 모바일 뱅킹 혁신을 이끌었고, Shazam에서 Head of Mobile을 맡았으며, AKQA에서 모바일 기술 부문을 총괄하며 Nike, RBS, Nokia 등의 고객사를 담당했습니다. EPAA Quantum-Safe Cryptography Working Group 위원이자 Institution of Analysts and Programmers의 펠로이며, 널리 사용되는 지급결제 및 암호 분야 오픈소스 라이브러리의 메인테이너입니다. ISO 20022, 포스트 양자 전환, 은행업의 에이전트 AI에 관해 강연하고 글을 씁니다.'
 faq:
   eyebrow: 묻기 전에
   headline: 섭외, 있는 그대로.
@@ -185,10 +185,6 @@ final_cta:
   secondary_cta: 전문가 논평 요청
 ---
 
-세바스티앵 루소는 거액 지급결제의 구조적 전환에 집중하는 시니어 뱅킹 테크놀로지스트입니다. HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 가까운 경험을 보유하였습니다. pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN, dotfiles를 쓰고 유지하며, 모두 시연이 아니라 레퍼런스 구현으로 자리매김했습니다. 들여다볼 수 있는, 이사회에 내놓을 수 있는 금융 인프라입니다.
+세바스티앵 루소는 지급결제, 은행, 디지털 기술 분야에서 20년 이상의 경력을 쌓은 지급결제 및 금융 서비스 분야의 시니어 리더입니다. HSBC에서는 Commercial & Investment Banking 부문의 거액 지급결제 API 제품을 총괄하고 있으며, 2016년 API Engineering Lead로 합류했습니다. 그 전에는 Reedia Ltd를 창업해 최고경영자로 이끌었고, PayPal에서 1등급 은행들과 함께 HCE 및 토큰화 전략을 수립했으며, Barclays Corporate Banking에서 모바일 뱅킹 혁신을 이끌었고, Shazam에서 Head of Mobile을 맡았으며, AKQA에서 모바일 기술 부문을 총괄하며 Nike, RBS, Nokia 등의 고객사를 담당했습니다. EPAA Quantum-Safe Cryptography Working Group 위원이자 Institution of Analysts and Programmers의 펠로이며, 널리 사용되는 지급결제 및 암호 분야 오픈소스 라이브러리의 메인테이너입니다. ISO 20022, 포스트 양자 전환, 은행업의 에이전트 AI에 관해 강연하고 글을 씁니다.
 
-Emerging Payments Association Asia의 양자 내성 암호 워킹그룹에 기여하고, EPAA 백서
-「Quantum-Safe Payments: Why the Payments Industry Must Act Now」(2025년 9월)를 공동
-집필했으며, Banking On Quantum과 Banking On AI를 발행합니다. 에이전트 AI, 실시간 지급결제,
-포스트 양자 암호, 클라우드 네이티브 복원력, 구조화 데이터, 규제 증빙이 만나는 자리에서
-일합니다.
+Banking On Quantum과 Banking On AI를 발행합니다.
