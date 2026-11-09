@@ -46,7 +46,7 @@ def _page(graph: object, pretty: bool = True) -> str:
 
 
 def _graph(html: str) -> list[dict]:
-    body = re.search(r"<script[^>]*>(.*?)</script>", html, re.S)
+    body = re.search(r"<script[^>]*>(.*?)</script\s*>", html, re.S | re.I)
     assert body
     return json.loads(body.group(1))["@graph"]
 

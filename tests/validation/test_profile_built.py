@@ -31,7 +31,9 @@ sys.path.insert(0, str(ROOT / "scripts" / "lib"))
 import _profile
 
 PERSON_ID = "https://sebastienrousseau.com/#person"
-_LDJSON_RE = re.compile(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>', re.S)
+_LDJSON_RE = re.compile(
+    r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script\s*>', re.S | re.I
+)
 _DATED_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-")
 
 
