@@ -1,19 +1,19 @@
 ---
 title: הרצאות וייעוץ
 meta_title: 'סבסטיאן רוסו: הרצאות מרכזיות, פאנלים ופרשנות מומחה על תשלומים, קריפטוגרפיה פוסט-קוונטית ובינה מלאכותית יישומית'
-meta_description: טכנולוג בנקאות בכיר, קרוב לשני עשורים ב-HSBC, ב-PayPal וב-Barclays. הרצאות, פאנלים ופרשנות מומחה לדירקטוריונים, לכנסים מקצועיים ולמערכות חדשות.
+meta_description: 'מנהיג בכיר בתחום התשלומים והשירותים הפיננסיים, יותר מ-20 שנה בבנקאות ובטכנולוגיה. הרצאות, פאנלים ופרשנות מומחה על תשלומים, פוסט-קוונטי ובינה מלאכותית יישומית.'
 hero:
   eyebrow: הרצאות · פאנלים · פרשנות מומחה
   headline: הטכנולוגיות שמעצבות מחדש את הבנקאות, מוסברות למי שצריך להחליט.
-  lede: סבסטיאן רוסו הוא טכנולוג בנקאות בכיר עם קרוב לשני עשורים ב-HSBC, ב-PayPal וב-Barclays. הוא מדבר על תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית ובינה מלאכותית יישומית, והופך בעיה של הענף להחלטה שחדר יכול לקבל.
+  lede: 'סבסטיאן רוסו הוא מנהיג בכיר בתחום התשלומים והשירותים הפיננסיים, עם יותר מ-20 שנה בתשלומים, בבנקאות ובטכנולוגיה דיגיטלית. הוא הופך את המודרניזציה של התשלומים, הקריפטוגרפיה הפוסט-קוונטית והבינה המלאכותית היישומית מנייר מדיניות לקוד שניתן לבדוק, ולהרצאות שדירקטוריון יכול לפעול על פיהן.'
   primary_cta: הזמינו אותי להרצות
   secondary_cta: לעיון בהרצאות
   press_nudge: עיתונאי לקראת סגירה?
   press_nudge_cta: בקשת פרשנות מומחה
   microproof:
-  - כמעט שני עשורים של ניסיון ב-HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ו-Virgin Group
-  - שותף לכתיבת נייר העמדה הפוסט-קוונטי של EPAA
-  - תורם, Emerging Payments Association Asia
+  - 'יותר מ-20 שנה בתשלומים, בבנקאות ובטכנולוגיה דיגיטלית'
+  - 'מוביל את מוצרי ה-API של תשלומים סיטונאיים ב-HSBC'
+  - 'חבר ב-Quantum-Safe Cryptography Working Group של EPAA'
 employers_label: איפה עבדתי
 stats_eyebrow: במספרים
 stats:
@@ -25,7 +25,7 @@ stats:
   label: הורדות קוד פתוח
 - kpi: github_stars
   label: כוכבים ב-GitHub
-stats_foot: 'תורם לקבוצת העבודה של EPAA לקריפטוגרפיה עמידה בפני קוונטים. שותף לכתיבת נייר העמדה «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (ספטמבר 2025).'
+stats_foot: 'חבר בקבוצת העבודה של EPAA לקריפטוגרפיה עמידה בפני קוונטים (Quantum-Safe Cryptography Working Group) ותורם לנייר העמדה שלה «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (ספטמבר 2025).'
 paths:
   eyebrow: שתי דרכים לעבוד יחד
   headline: הזמינו במה, או הזמינו מקור.
@@ -53,7 +53,7 @@ keynotes:
   eyebrow: הרצאות מרכזיות
   headline: הרצאות שנבנו לחדר הדירקטוריון.
   lede: 'כל הרצאה הופכת בעיה חיה של הענף להחלטה שחדר יכול לפעול לפיה. בלי מצגת מוצר ובלי סקירת ספקים: עמדה שאפשר להגן עליה והראיות שמאחוריה.'
-  flag_delivered: כבר ניתנה · זמינה עכשיו
+  flag_available: זמינה עכשיו
   flag_new: חדש ל-2026
   outcome_label: 'אתם יוצאים עם:'
   talks:
@@ -137,11 +137,11 @@ bios:
   copy_label: העתקה
   items:
   - length: קצרה
-    text: סבסטיאן רוסו הוא טכנולוג בנקאות בכיר שכותב ובונה בנקודת המפגש של תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית ובינה מלאכותית יישומית. כמעט שני עשורים של ניסיון ב-HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ו-Virgin Group.
+    text: 'סבסטיאן רוסו הוא מנהיג בכיר בתחום התשלומים והשירותים הפיננסיים, עם יותר מ-20 שנה בתשלומים, בבנקאות ובטכנולוגיה דיגיטלית. הוא מוביל את מוצרי ה-API של תשלומים סיטונאיים ב-HSBC וחבר בקבוצת העבודה לקריפטוגרפיה עמידה בפני קוונטים (Quantum-Safe Cryptography Working Group) של Emerging Payments Association Asia.'
   - length: בינונית
-    text: סבסטיאן רוסו הוא טכנולוג בנקאות בכיר עם קרוב לשני עשורים ב-HSBC Commercial & Investment Bank, ב-PayPal, ב-Barclays, ב-Shazam, ב-AKQA וב-Virgin Group. הוא כותב ובונה בנקודת המפגש של תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית ובינה מלאכותית יישומית, ומתחזק מימושי ייחוס בקוד פתוח — pacs.008, pain.001, KyberLib, BankStatementParser — שצוותי נוסטרו ותשלומים משתמשים בהם בייצור. הוא תורם לקבוצת העבודה לקריפטוגרפיה עמידה בפני קוונטים של Emerging Payments Association Asia ומוציא לאור את Banking On Quantum ואת Banking On AI.
+    text: 'סבסטיאן רוסו הוא מנהיג בכיר בתחום התשלומים והשירותים הפיננסיים, עם יותר מ-20 שנה בתשלומים, בבנקאות ובטכנולוגיה דיגיטלית. הוא מוביל את מוצרי ה-API של תשלומים סיטונאיים ב-HSBC וחבר בקבוצת העבודה לקריפטוגרפיה עמידה בפני קוונטים של Emerging Payments Association Asia, ותרם לנייר העמדה שלה «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (ספטמבר 2025). הוא מתחזק ספריות קוד פתוח ל-ISO 20022 ולקריפטוגרפיה פוסט-קוונטית ומוציא לאור את Banking On Quantum ואת Banking On AI.'
   - length: ארוכה
-    text: 'סבסטיאן רוסו הוא טכנולוג בנקאות בכיר המתמקד בשינוי המבני של תשלומי הסיטונאות. כמעט שני עשורים של ניסיון ב-HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ו-Virgin Group. הוא כותב ומתחזק את pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN ו-dotfiles, שכל אחד מהם ממוקם כמימוש ייחוס ולא כהדגמה: תשתית פיננסית שניתן לבדוק, ברמה שמתאימה לדירקטוריון. הוא תורם לקבוצת העבודה לקריפטוגרפיה עמידה בפני קוונטים של Emerging Payments Association Asia, שותף לכתיבת נייר העמדה של EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (ספטמבר 2025), ומוציא לאור את Banking On Quantum ואת Banking On AI. הוא עובד בנקודת המפגש של בינה מלאכותית סוכנותית, תשלומים בזמן אמת, קריפטוגרפיה פוסט-קוונטית, חוסן ענן, נתונים מובנים וראיות לרגולטור.'
+    text: 'סבסטיאן רוסו הוא מנהיג בכיר בתחום התשלומים והשירותים הפיננסיים, עם יותר מ-20 שנה בתשלומים, בבנקאות ובטכנולוגיה דיגיטלית. ב-HSBC הוא מוביל את מוצרי ה-API של תשלומים סיטונאיים בחטיבת Commercial & Investment Banking, שאליה הצטרף ב-2016 כ-API Engineering Lead. קודם לכן ייסד את Reedia Ltd וניהל אותה כמנכ״ל, עיצב את אסטרטגיית ה-HCE והטוקניזציה של PayPal יחד עם בנקים מהשורה הראשונה, הוביל טרנספורמציה של בנקאות מובייל ב-Barclays Corporate Banking, כיהן כ-Head of Mobile ב-Shazam ועמד בראש חטיבת טכנולוגיות המובייל של AKQA עבור לקוחות ובהם Nike, RBS ו-Nokia. הוא חבר בקבוצת העבודה לקריפטוגרפיה עמידה בפני קוונטים של EPAA, עמית (Fellow) של Institution of Analysts and Programmers ומתחזק ספריות קוד פתוח נפוצות בתחומי התשלומים והקריפטוגרפיה. הוא מרצה וכותב על ISO 20022, על המעבר לקריפטוגרפיה פוסט-קוונטית ועל בינה מלאכותית סוכנותית בבנקאות.'
 faq:
   eyebrow: לפני שתשאלו
   headline: הזמנה, בשפה ברורה.
@@ -185,10 +185,6 @@ final_cta:
   secondary_cta: בקשת פרשנות מומחה
 ---
 
-סבסטיאן רוסו הוא טכנולוג בנקאות בכיר המתמקד בשינוי המבני של תשלומי הסיטונאות. כמעט שני עשורים של ניסיון ב-HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA ו-Virgin Group. הוא כותב ומתחזק את pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN ו-dotfiles, שכל אחד מהם ממוקם כמימוש ייחוס ולא כהדגמה: תשתית פיננסית שניתן לבדוק, ברמה שמתאימה לדירקטוריון.
+סבסטיאן רוסו הוא מנהיג בכיר בתחום התשלומים והשירותים הפיננסיים, עם יותר מ-20 שנה בתשלומים, בבנקאות ובטכנולוגיה דיגיטלית. ב-HSBC הוא מוביל את מוצרי ה-API של תשלומים סיטונאיים בחטיבת Commercial & Investment Banking, שאליה הצטרף ב-2016 כ-API Engineering Lead. קודם לכן ייסד את Reedia Ltd וניהל אותה כמנכ״ל, עיצב את אסטרטגיית ה-HCE והטוקניזציה של PayPal יחד עם בנקים מהשורה הראשונה, הוביל טרנספורמציה של בנקאות מובייל ב-Barclays Corporate Banking, כיהן כ-Head of Mobile ב-Shazam ועמד בראש חטיבת טכנולוגיות המובייל של AKQA עבור לקוחות ובהם Nike, RBS ו-Nokia. הוא חבר בקבוצת העבודה לקריפטוגרפיה עמידה בפני קוונטים של EPAA, עמית (Fellow) של Institution of Analysts and Programmers ומתחזק ספריות קוד פתוח נפוצות בתחומי התשלומים והקריפטוגרפיה. הוא מרצה וכותב על ISO 20022, על המעבר לקריפטוגרפיה פוסט-קוונטית ועל בינה מלאכותית סוכנותית בבנקאות.
 
-הוא תורם לקבוצת העבודה לקריפטוגרפיה עמידה בפני קוונטים של Emerging Payments Association
-Asia, שותף לכתיבת נייר העמדה של EPAA «Quantum-Safe Payments: Why the Payments Industry Must
-Act Now» (ספטמבר 2025), ומוציא לאור את Banking On Quantum ואת Banking On AI. הוא עובד
-בנקודת המפגש של בינה מלאכותית סוכנותית, תשלומים בזמן אמת, קריפטוגרפיה פוסט-קוונטית, חוסן
-ענן, נתונים מובנים וראיות לרגולטור.
+הוא מוציא לאור את Banking On Quantum ואת Banking On AI.

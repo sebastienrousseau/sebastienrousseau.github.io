@@ -1,5 +1,8 @@
 {
-  "_comment": "Hebrew author-card prose — DRAFT pending native review. Mirrors _data/i18n/en/author.json key set.",
-  "bio": "מומחה טכנולוגיות בנקאות בכיר הכותב על AI יישומי, מעבר ל-ISO 20022, קריפטוגרפיה פוסט-קוונטית עבור שירותים פיננסיים, וטרנספורמציה מבנית של תשלומי סיטונאות.",
-  "credentialsPrefix": "כמעט שני עשורים של ניסיון ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA ו-Virgin Group."
+  "_comment": "Author-card prose translated from the EN card (profile.yml). Machine-drafted 2026-11-09, pending native review (A-3). Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
+  "_source": "_data/profile.yml via _profile.author_card()",
+  "_reviewed": false,
+  "_drafted_on": "2026-11-09",
+  "bio": "מנהל בכיר בתחום התשלומים והשירותים הפיננסיים הכותב על AI יישומי, מעבר ל-ISO 20022, קריפטוגרפיה פוסט-קוונטית עבור שירותים פיננסיים, והטרנספורמציה של תשלומי סיטונאות.",
+  "credentialsPrefix": "למעלה מ-20 שנה בתשלומים, בבנקאות ובטכנולוגיה דיגיטלית. מוביל את מוצרי ה-API לתשלומי סיטונאות ב-HSBC · חבר בקבוצת העבודה של EPAA לקריפטוגרפיה עמידה לקוונטים."
 }

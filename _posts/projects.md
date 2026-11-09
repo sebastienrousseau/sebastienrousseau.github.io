@@ -32,7 +32,6 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
-measurementID: "G-169G4ET5HQ"
 name: "Open source for the future of finance."
 permalink: "https://sebastienrousseau.com/projects"
 rating: "general"
@@ -114,7 +113,7 @@ site_software: "Static Site Generator, Rust"
   <span class="kpi-cell-label">Sigstore-signed articles</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value" data-kpi="years_payments">19</span>
+  <span class="kpi-cell-value" data-kpi="years_payments">20+</span>
   <span class="kpi-cell-label">Years shipping in production</span>
 </div>
 </section>

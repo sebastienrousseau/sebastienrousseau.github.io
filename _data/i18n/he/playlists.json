@@ -12,7 +12,10 @@
     "countOther": "פלייליסטים",
     "coverAlt": "עטיפת הפלייליסט {title}",
     "openAria": "פתיחת {title} ב-Spotify",
-    "frameTitle": "הפלייליסט {title} ב-Spotify"
+    "frameTitle": "הפלייליסט {title} ב-Spotify",
+    "playHere": "ניגון כאן ב-Spotify",
+    "loadNote": "הנגנים נטענים רק כשלוחצים על הפעלה. לאחר מכן Spotify עשויה להגדיר קובצי Cookie; ראו את",
+    "loadNoteLink": "הודעת הפרטיות"
   },
   "intro": [
     "שלושים ותשעה פלייליסטים ו-1,763 רצועות, בנויים לשעות שדורשות פסקול: עבודה עמוקה, קריאות ארוכות וכתיבה מחדש בלילה.",

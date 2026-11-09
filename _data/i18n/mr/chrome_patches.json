@@ -383,6 +383,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>अधिक जाणून घ्या <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "वैयक्तिक साइट. येथील मते माझी स्वतःची आहेत आणि HSBC चे प्रतिनिधित्व करत नाहीत."
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">प्रकटीकरण धोरण</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">संपादकीय धोरण</a>"
     ]
   ]
 }

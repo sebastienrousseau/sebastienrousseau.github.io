@@ -383,6 +383,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>Ketahui lebih lanjut <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "Laman peribadi. Pandangan di sini ialah pandangan saya sendiri dan tidak mewakili HSBC."
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">Dasar pendedahan</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">Dasar editorial</a>"
     ]
   ]
 }

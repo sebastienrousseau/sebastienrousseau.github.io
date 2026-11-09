@@ -12,7 +12,10 @@
     "countOther": "playlists",
     "coverAlt": "Capa da playlist {title}",
     "openAria": "Abrir {title} no Spotify",
-    "frameTitle": "Playlist {title} no Spotify"
+    "frameTitle": "Playlist {title} no Spotify",
+    "playHere": "Ouvir aqui no Spotify",
+    "loadNote": "Os players só carregam quando você aperta o play. O Spotify pode então definir cookies; veja o",
+    "loadNoteLink": "aviso de privacidade"
   },
   "intro": [
     "Trinta e nove playlists e 1.763 faixas, feitas para as horas que pedem trilha sonora: deep work, leituras longas e reescritas noite adentro.",

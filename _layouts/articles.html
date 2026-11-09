@@ -1915,7 +1915,7 @@
       /* projects: rotating hero title — leads the hero, pure CSS, CSP-safe (polish #2) */
       .setup-hero-eyebrow.rotating-title{display:flex;flex-direction:column;align-items:center;gap:2px;max-width:none !important;width:100%;margin:0 0 22px;font-size:var(--fs-h3);font-weight:600;letter-spacing:-.01em;color:var(--ink);text-transform:none}
       .rotating-title-lead{display:block}
-      .rotating-title-mask{display:block;clip-path:inset(0);height:1.25em;line-height:1.25em;text-align:center}
+      .rotating-title{container-type:inline-size}.rotating-title-mask{display:block;clip-path:inset(0);height:1.25em;line-height:1.25em;text-align:center;font-size:min(1em, 9.8cqi)}
       .rotating-title-words{display:flex;flex-direction:column;animation:rotwords 11s cubic-bezier(.76,0,.24,1) infinite}
       .rotating-title-words>span{display:flex;align-items:center;justify-content:center;gap:.22em;height:1.25em;line-height:1.25em;white-space:nowrap;color:var(--accent)}
       /* Apple-style app-icon tiles: vibrant per-word gradient squircle, white
@@ -2869,6 +2869,13 @@ details.about-identifiers,
 main.content > .wrap:has(.narrative-section, .story-grid) { max-width: var(--max); }
 .narrative-body { max-width: var(--measure); }
 
+/* Playlists: the stage holds full-bleed hero and genre bands, so the
+   wrap takes the frame width and the layout holds the rest to the
+   measure. Inside the measure, the bands' copy overflowed the wrap, and
+   every line of text that crossed its edge sat on a different element
+   stack, which axe cannot score. */
+main.content > .wrap:has(> .pl-stage) { max-width: calc(var(--max) + 2 * var(--pad-x)); padding-inline: 0; }
+
 /* Contact: form at the reading measure, "faster paths" aside beside it,
    both on the content grid so the form never squeezes below 40ch. */
 main.content > .wrap:has(> .contact-layout) { max-width: var(--max); }
@@ -3357,7 +3364,9 @@ summary.cs-dropdown-summary {
             <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="{{cdn}}/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
             <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="{{cdn}}/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
           </nav>
+          <p class="ap-foot-disclosure">Personal site. Views are my own and do not represent HSBC. <a href="/editorial/index.html#conflicts">Disclosure policy</a></p>
           <p>
+            <a href="/editorial/index.html">Editorial policy</a> ·
             <a href="/accessibility/index.html">Accessibility</a> ·
             <a href="/privacy/index.html">Privacy</a> ·
             <a href="/terms/index.html">Terms</a> ·
@@ -3383,7 +3392,7 @@ summary.cs-dropdown-summary {
       "url": "https://sebastienrousseau.com/",
       "image": "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp",
       "jobTitle": "Senior Product Manager, Wholesale Payments & API",
-      "description": "AI, banking and financial services expert. Senior payments leader with nearly two decades across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.",
+      "description": "Sebastien Rousseau is a senior payments and financial services leader with more than 20 years in payments, banking and digital technology. He leads wholesale payments API products at HSBC and is a member of the Emerging Payments Association Asia's Quantum-Safe Cryptography Working Group.",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "ORCID",
@@ -3393,43 +3402,91 @@ summary.cs-dropdown-summary {
       "worksFor": {
         "@type": "Organization",
         "@id": "https://www.hsbc.com/#organization",
-        "name": "HSBC Commercial & Investment Bank",
+        "name": "HSBC",
+        "department": {
+          "@type": "Organization",
+          "name": "Commercial & Investment Banking"
+        },
         "url": "https://www.hsbc.com/"
       },
+      "email": "mailto:contact@sebastienrousseau.com",
       "alumniOf": [
-        {"@type": "Organization", "name": "PayPal", "url": "https://www.paypal.com/"},
-        {"@type": "Organization", "name": "Barclays", "url": "https://www.barclays.com/"},
-        {"@type": "Organization", "name": "Shazam Entertainment", "url": "https://www.shazam.com/"},
-        {"@type": "Organization", "name": "AKQA", "url": "https://www.akqa.com/"},
-        {"@type": "Organization", "name": "Virgin Group", "url": "https://www.virgin.com/"}
-      ],
-      "memberOf": {
-        "@type": "ProgramMembership",
-        "programName": "Quantum-Safe Cryptography Working Group",
-        "hostingOrganization": {
-          "@type": "Organization",
-          "name": "Emerging Payments Association Asia",
-          "url": "https://emergingpaymentsasia.org/"
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Westminster"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Institut Supérieur de Gestion"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Université Sorbonne Nouvelle (Paris III)"
         }
-      },
+      ],
+      "memberOf": [
+        {
+          "@type": "ProgramMembership",
+          "programName": "Quantum-Safe Cryptography Working Group",
+          "hostingOrganization": {
+            "@type": "Organization",
+            "name": "Emerging Payments Association Asia",
+            "url": "https://emergingpaymentsasia.org/"
+          }
+        },
+        {
+          "@type": "OrganizationRole",
+          "roleName": "Fellow",
+          "memberOf": {
+            "@type": "Organization",
+            "name": "Institution of Analysts and Programmers"
+          }
+        }
+      ],
       "hasCredential": [
         {
           "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "professional experience",
-          "name": "Nearly two decades across Tier-1 banks and global payments infrastructure",
-          "recognizedBy": {"@type": "Organization", "name": "HSBC Commercial & Investment Bank", "url": "https://www.hsbc.com/"}
+          "name": "Rust Programming: From Fundamentals to Advanced Concepts with AI-Assisted Development",
+          "credentialCategory": "certificate"
         },
         {
           "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "domain expertise",
-          "name": "ISO 20022 migration and wholesale payments architecture",
-          "recognizedBy": {"@type": "Organization", "name": "SWIFT", "url": "https://www.swift.com/"}
+          "name": "Quantum Computing Fundamentals",
+          "credentialCategory": "certificate"
         },
         {
           "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "domain expertise",
-          "name": "Post-Quantum Cryptography for financial services",
-          "recognizedBy": {"@type": "Organization", "name": "NIST Post-Quantum Cryptography Project", "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"}
+          "name": "Docker Foundations Professional Certificate",
+          "credentialCategory": "certificate"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "AI Essentials for Marketers",
+          "credentialCategory": "certificate"
+        }
+      ],
+      "award": [
+        "Mobile Agency of the Year",
+        "Agency of the Year",
+        "Best Branded Social TV Award",
+        "Best 2nd Screen Experience for TV on Mobile or Tablet (Shazam for TV)"
+      ],
+      "knowsLanguage": [
+        {
+          "@type": "Language",
+          "alternateName": "en"
+        },
+        {
+          "@type": "Language",
+          "alternateName": "fr"
+        },
+        {
+          "@type": "Language",
+          "alternateName": "es"
+        },
+        {
+          "@type": "Language",
+          "alternateName": "de"
         }
       ],
       "subjectOf": [
@@ -3452,7 +3509,7 @@ summary.cs-dropdown-summary {
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "London",
-        "addressCountry": "United Kingdom"
+        "addressCountry": "GB"
       },
       "sameAs": [
         "https://orcid.org/0009-0005-1434-284X",
@@ -3496,7 +3553,7 @@ summary.cs-dropdown-summary {
       "@id": "https://sebastienrousseau.com/#website",
       "url": "https://sebastienrousseau.com/",
       "name": "Sebastien Rousseau",
-      "description": "AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.",
+      "description": "Senior payments and financial services leader; leads wholesale payments API products at HSBC and works on quantum-safe payments with the EPAA.",
       "publisher": {"@id": "https://sebastienrousseau.com/#organization"},
       "author": {"@id": "https://sebastienrousseau.com/#person"},
       "inLanguage": "{{language}}"

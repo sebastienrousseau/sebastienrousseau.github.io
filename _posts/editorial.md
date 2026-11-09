@@ -33,7 +33,6 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Editorial standards"
 menu: "active"
-measurementID: "G-169G4ET5HQ"
 permalink: "https://sebastienrousseau.com/editorial"
 rating: "general"
 referrer: "no-referrer"
@@ -157,7 +156,7 @@ Aggregators, analyst reports, marketing collateral and news rewrites are **not**
 
 Every reference in an article carries a **stable URL** and a **date** the source was accessed. The reference list at the foot of each article makes every source clickable.
 
-## Corrections policy
+<h2 id="corrections">Corrections policy</h2>
 
 Material errors are corrected within **48 hours** of independent confirmation, in line with the IFCN [Code of Principles](https://ifcncodeofprinciples.poynter.org/) corrections clause.
 
@@ -167,7 +166,14 @@ Material errors are corrected within **48 hours** of independent confirmation, i
 
 Readers who spot an error should email [contact@sebastienrousseau.com](mailto:contact@sebastienrousseau.com) with the article URL and the disputed claim. Acknowledgement within one working day.
 
-## AI assistance disclosure
+<h3 id="corrections-log">Corrections log</h3>
+
+Site-wide corrections, newest first. Article corrections are also noted on the article itself.
+
+- **2026-11-09**: Author facts. Every page's structured data listed three credentials as "recognised by" HSBC, SWIFT and NIST; none of those bodies issued them, and they are removed. Past employers were listed as schools (`alumniOf`); that now lists schools only. Experience was given as three different figures in different places, one of them computed from a wrong start year; it is now "more than 20 years" everywhere. The author's EPAA role was described as "co-author" and "cited in"; he is a member of the Quantum-Safe Cryptography Working Group and a contributor to its white paper. Talks were marked "Delivered" without a venue; they are now "Available to book". All of these facts now come from one file, `_data/profile.yml`.
+- **2026-11-09**: Privacy notice. It said the site used Google Analytics and Microsoft Clarity, which it never loaded, and did not name Formspree or Google reCAPTCHA, which the contact form uses. The [privacy notice](/privacy/index.html) now lists every service the site uses.
+
+<h2 id="ai-use">AI assistance disclosure</h2>
 
 This site uses AI tools — primarily Anthropic's Claude (Claude Code, Claude API), and GitHub Copilot — across the production pipeline.
 
@@ -188,7 +194,7 @@ This site uses AI tools — primarily Anthropic's Claude (Claude Code, Claude AP
 
 This disclosure is reviewed quarterly. The current version is dated `2026-06-02`.
 
-## Conflict-of-interest disclosure
+<h2 id="conflicts">Conflict-of-interest disclosure</h2>
 
 The author of this site, **Sebastien Rousseau** ([ORCID `0009-0005-1434-284X`](https://orcid.org/0009-0005-1434-284X)), is an employee of **HSBC Commercial & Investment Bank** in a Senior Product Manager role focused on payments technology.
 
@@ -196,7 +202,7 @@ The author of this site, **Sebastien Rousseau** ([ORCID `0009-0005-1434-284X`](h
 
 **Per-article disclosures.** When an article discusses HSBC's competitors, regulatory positions affecting HSBC, or topics where the author's employment is materially relevant to the analysis, an explicit disclosure appears in the article body — typically immediately after the lead aside.
 
-**Past employers.** The author has also held senior positions at PayPal, Barclays, Shazam Entertainment, AKQA, and Virgin Group. Where commentary touches on any of these companies, the same disclosure principle applies.
+**Past employers.** The author has also worked at PayPal, Barclays, Shazam, AKQA and Virgin, and founded Reedia Ltd. Where commentary touches on any of these companies, the same disclosure principle applies.
 
 **No paid placements.** This site does not accept sponsored content, affiliate links, or commissioned articles. Open-source projects mentioned ([pain001](https://pain001.com), [KyberLib](https://kyberlib.com), [Banking On Quantum](https://news.bankingonquantum.com)) are authored or maintained by the same person and are disclosed as such.
 
@@ -262,4 +268,5 @@ If the verification fails on a fetched page, that page has been altered between 
 
 ## Revision history
 
+- **2026-11-09**: Corrections log added; past-employers wording corrected; stable links to the corrections, AI-use and conflict-of-interest sections.
 - **2026-06-02** — Initial publication. Operative.

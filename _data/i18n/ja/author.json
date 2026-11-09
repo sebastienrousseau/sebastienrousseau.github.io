@@ -1,5 +1,8 @@
 {
-  "_comment": "Japanese author-card prose — DRAFT pending native review. Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
-  "bio": "シニア・バンキング・テクノロジスト。応用AI、ISO 20022 への移行、金融サービス向けポスト量子暗号、ホールセール決済の構造変革について執筆しています。",
-  "credentialsPrefix": "HSBC コマーシャル・アンド・インベストメント・バンク、PayPal、Barclays、Shazam、AKQA、Virgin Group にて 20 年近くの経験。"
+  "_comment": "Author-card prose translated from the EN card (profile.yml). Machine-drafted 2026-11-09, pending native review (A-3). Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
+  "_source": "_data/profile.yml via _profile.author_card()",
+  "_reviewed": false,
+  "_drafted_on": "2026-11-09",
+  "bio": "決済・金融サービス分野のシニアリーダー。応用AI、ISO 20022 への移行、金融サービス向けポスト量子暗号、ホールセール決済の変革について執筆しています。",
+  "credentialsPrefix": "決済、銀行、デジタル技術の分野で20年以上の経験。HSBC でホールセール決済 API プロダクトを率いる · EPAA 耐量子暗号ワーキンググループのメンバー。"
 }

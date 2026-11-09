@@ -27,7 +27,7 @@
   "about": {
     "title": "O mně — Sebastien Rousseau",
     "subtitle": "Utvářím budoucnost bankovnictví a finančních služeb strategickou integrací AI, postkvantové kryptografie a blockchainu.",
-    "description": "Sebastien Rousseau, senior bankovní technolog: aplikovaná AI, migrace na ISO 20022, postkvantová kryptografie, strukturální transformace velkoobchodních plateb.",
+    "description": "Sebastien Rousseau, zkušený vedoucí pracovník v oblasti plateb a finančních služeb: aplikovaná AI, migrace na ISO 20022, postkvantová kryptografie, strukturální transformace velkoobchodních plateb.",
     "keywords": "Sebastien Rousseau, biografie, bankovnictví, platby, AI, ISO 20022, postkvantová kryptografie"
   },
   "accessibility": {
@@ -69,8 +69,8 @@
   "privacy": {
     "title": "Zásady ochrany osobních údajů — Sebastien Rousseau",
     "subtitle": "Vaše soukromí je pro nás důležité.",
-    "description": "Jak tento web shromažďuje, používá a chrání vaše údaje. Anonymní měření, cookies, hosting a práva podle GDPR.",
-    "keywords": "soukromí, GDPR, cookies, osobní údaje, analytika"
+    "description": "Jaké osobní údaje tento web zpracovává, proč, kdo je pro nás zpracovává, jak dlouho se uchovávají a vaše práva podle UK GDPR, včetně podání stížnosti u ICO.",
+    "keywords": "oznámení o ochraně osobních údajů, UK GDPR, PECR, kontaktní formulář, Formspree, reCAPTCHA, anonymní počty, cookies, local storage, práva subjektu údajů, Information Commissioner's Office"
   },
   "projects": {
     "title": "Projekty — Sebastien Rousseau",

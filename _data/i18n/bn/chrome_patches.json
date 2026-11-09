@@ -384,6 +384,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>আরও জানুন <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "ব্যক্তিগত সাইট। এখানকার মতামত আমার নিজস্ব এবং HSBC-র প্রতিনিধিত্ব করে না।"
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">প্রকাশ নীতি</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">সম্পাদকীয় নীতি</a>"
     ]
   ]
 }

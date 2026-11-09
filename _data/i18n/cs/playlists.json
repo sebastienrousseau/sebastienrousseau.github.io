@@ -12,7 +12,10 @@
     "countOther": "playlistů",
     "coverAlt": "Obal playlistu {title}",
     "openAria": "Otevřít {title} na Spotify",
-    "frameTitle": "Playlist {title} na Spotify"
+    "frameTitle": "Playlist {title} na Spotify",
+    "playHere": "Přehrát zde na Spotify",
+    "loadNote": "Přehrávače se načtou až po stisknutí přehrávání. Spotify pak může nastavit cookies; viz",
+    "loadNoteLink": "zásady ochrany soukromí"
   },
   "intro": [
     "Třicet devět playlistů a 1 763 skladeb, postavených pro hodiny, které si žádají soundtrack: deep work, dlouhé čtení a pozdní přepisování.",

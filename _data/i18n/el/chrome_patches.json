@@ -383,6 +383,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>Μάθετε περισσότερα <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "Προσωπικός ιστότοπος. Οι απόψεις είναι προσωπικές μου και δεν εκφράζουν την HSBC."
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">Πολιτική γνωστοποίησης</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">Συντακτική πολιτική</a>"
     ]
   ]
 }

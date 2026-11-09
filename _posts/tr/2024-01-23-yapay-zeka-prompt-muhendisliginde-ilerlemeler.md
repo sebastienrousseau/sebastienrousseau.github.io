@@ -30,7 +30,6 @@ item_description: "Prompt mühendisliği, LLM davranışını çıkarım zamanı
 item_link: "https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/rss.xml"
 item_guid: "https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/rss.xml"
 atom_link: "https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/rss.xml"
-measurementID: "G-169G4ET5HQ"
 theme-color: "0, 67, 165"
 date: "Jan 23, 2024"
 pub_date: "Tue, 23 Jan 2024 05:06:06 +0000"

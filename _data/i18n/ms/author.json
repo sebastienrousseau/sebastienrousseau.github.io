@@ -1,4 +1,8 @@
 {
-  "bio": "Ahli teknologi perbankan kanan yang menulis tentang AI gunaan, migrasi ISO 20022, kriptografi pasca-kuantum untuk perkhidmatan kewangan, dan transformasi struktur pembayaran borong.",
-  "credentialsPrefix": "Hampir dua dekad merentas HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group."
+  "_comment": "Author-card prose translated from the EN card (profile.yml). Machine-drafted 2026-11-09, pending native review (A-3). Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
+  "_source": "_data/profile.yml via _profile.author_card()",
+  "_reviewed": false,
+  "_drafted_on": "2026-11-09",
+  "bio": "Pemimpin kanan dalam pembayaran dan perkhidmatan kewangan yang menulis tentang AI gunaan, migrasi ISO 20022, kriptografi pasca-kuantum untuk perkhidmatan kewangan, dan transformasi pembayaran borong.",
+  "credentialsPrefix": "Lebih 20 tahun dalam pembayaran, perbankan dan teknologi digital. Mengetuai produk API pembayaran borong di HSBC · ahli Kumpulan Kerja Kriptografi Selamat-Kuantum EPAA."
 }

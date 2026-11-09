@@ -12,7 +12,10 @@
     "countOther": "lejátszási lista",
     "coverAlt": "A(z) {title} lejátszási lista borítója",
     "openAria": "{title} megnyitása a Spotifyon",
-    "frameTitle": "{title} lejátszási lista a Spotifyon"
+    "frameTitle": "{title} lejátszási lista a Spotifyon",
+    "playHere": "Lejátszás itt a Spotifyon",
+    "loadNote": "A lejátszók csak akkor töltődnek be, ha megnyomja a lejátszást. A Spotify ezután sütiket helyezhet el; lásd az",
+    "loadNoteLink": "adatvédelmi tájékoztatót"
   },
   "intro": [
     "Harminckilenc lejátszási lista és 1763 szám, azokra az órákra építve, amelyek zenei aláfestést kívánnak: mély munka, hosszú olvasások és késői újraírások.",

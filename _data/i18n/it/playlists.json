@@ -12,7 +12,10 @@
     "countOther": "playlist",
     "coverAlt": "Copertina della playlist {title}",
     "openAria": "Apri {title} su Spotify",
-    "frameTitle": "Playlist {title} su Spotify"
+    "frameTitle": "Playlist {title} su Spotify",
+    "playHere": "Ascolta qui su Spotify",
+    "loadNote": "I lettori si caricano solo quando premi play. Spotify può quindi impostare cookie; vedi",
+    "loadNoteLink": "l'informativa sulla privacy"
   },
   "intro": [
     "Trentanove playlist e 1.763 brani, pensati per le ore che chiedono una colonna sonora: deep work, letture lunghe e riscritture a tarda notte.",

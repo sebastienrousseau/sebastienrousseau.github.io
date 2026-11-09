@@ -1,5 +1,8 @@
 {
-  "_comment": "Filipino author-card prose — DRAFT pending native review. Mirrors _data/i18n/en/author.json key set.",
-  "bio": "Senior banking technologist na sumusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at structural transformation ng wholesale payments.",
-  "credentialsPrefix": "Halos dalawang dekada sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA at Virgin Group."
+  "_comment": "Author-card prose translated from the EN card (profile.yml). Machine-drafted 2026-11-09, pending native review (A-3). Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
+  "_source": "_data/profile.yml via _profile.author_card()",
+  "_reviewed": false,
+  "_drafted_on": "2026-11-09",
+  "bio": "Senior na lider sa payments at financial services na sumusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at transformation ng wholesale payments.",
+  "credentialsPrefix": "Mahigit 20 taon sa payments, banking at digital technology. Namumuno sa mga wholesale payments API product sa HSBC · miyembro ng EPAA Quantum-Safe Cryptography Working Group."
 }

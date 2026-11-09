@@ -27,7 +27,7 @@
   "about": {
     "title": "Tungkol sa Akin — Sebastien Rousseau",
     "subtitle": "Hinuhubog ang kinabukasan ng banking at financial services sa pamamagitan ng strategic integration ng AI, post-quantum cryptography at blockchain technology.",
-    "description": "Si Sebastien Rousseau, senior banking technologist: applied AI, ISO 20022 migration, post-quantum cryptography, at structural transformation ng wholesale payments.",
+    "description": "Si Sebastien Rousseau, senior na lider sa payments at financial services: applied AI, ISO 20022 migration, post-quantum cryptography, at structural transformation ng wholesale payments.",
     "keywords": "Sebastien Rousseau, biography, banking, payments, AI, ISO 20022, post-quantum cryptography, HSBC, PayPal, Barclays"
   },
   "accessibility": {
@@ -69,8 +69,8 @@
   "privacy": {
     "title": "Patakaran sa Privacy — Sebastien Rousseau",
     "subtitle": "Paano namin pinangangasiwaan ang iyong data.",
-    "description": "Patakaran sa privacy ng sebastienrousseau.com: kung ano ang kinokolekta, paano iniimbak, at iyong mga karapatan sa ilalim ng GDPR.",
-    "keywords": "privacy, GDPR, proteksyon ng data, cookies"
+    "description": "Anong personal na data ang pinoproseso ng site na ito, bakit, sino ang nagpoproseso nito para sa amin, gaano ito katagal itinatago, at ang iyong mga karapatan sa ilalim ng UK GDPR, kabilang ang pagrereklamo sa ICO.",
+    "keywords": "abiso sa privacy, UK GDPR, PECR, contact form, Formspree, reCAPTCHA, anonymous na bilang, cookies, local storage, mga karapatan sa data, Information Commissioner's Office"
   },
   "projects": {
     "title": "Mga Proyekto — Sebastien Rousseau",

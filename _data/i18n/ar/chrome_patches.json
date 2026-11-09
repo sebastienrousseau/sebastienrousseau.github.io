@@ -384,6 +384,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>اعرف المزيد <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "موقع شخصي. الآراء الواردة هنا آرائي الشخصية ولا تمثل HSBC."
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">سياسة الإفصاح</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">السياسة التحريرية</a>"
     ]
   ]
 }

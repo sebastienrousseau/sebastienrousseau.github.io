@@ -12,7 +12,10 @@
     "countOther": "playlists",
     "coverAlt": "Pochette de la playlist {title}",
     "openAria": "Ouvrir {title} sur Spotify",
-    "frameTitle": "Playlist {title} sur Spotify"
+    "frameTitle": "Playlist {title} sur Spotify",
+    "playHere": "Écouter ici sur Spotify",
+    "loadNote": "Les lecteurs ne se chargent que lorsque vous appuyez sur lecture. Spotify peut alors déposer des cookies ; voir la",
+    "loadNoteLink": "politique de confidentialité"
   },
   "intro": [
     "Trente-neuf playlists et 1 763 titres, pensés pour les heures qui réclament une bande-son : deep work, longues lectures et réécritures tardives.",

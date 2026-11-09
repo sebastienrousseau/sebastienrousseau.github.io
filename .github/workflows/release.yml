@@ -1,0 +1,231 @@
+name: Release / Site artefacts
+run-name: release artefacts ${{ github.event.release.tag_name || inputs.release_tag }}
+
+# Every release of this site follows the dotfiles format
+# (https://github.com/sebastienrousseau/dotfiles/releases):
+#
+#   tag    vX.Y.Z, annotated and SSH-signed by the maintainer
+#   title  sebastienrousseau.github.io X.Y.Z
+#   notes  scripts/release/release_notes.py (Highlights, What's Changed,
+#          Full Changelog)
+#   assets sebastienrousseau.github.io-X.Y.Z.tar.gz and .zip (the built
+#          site), each with a keyless sigstore bundle, a CycloneDX SBOM,
+#          a SHA256SUMS manifest and SLSA build provenance
+#
+# The maintainer creates the signed tag and publishes the release with
+# its notes (agents do not publish; AGENTS.md section 2.8). Publishing
+# triggers this workflow, which builds the site from the tagged source
+# and attaches the artefacts. Building from the tag, rather than reusing
+# a deploy artefact, means a release can be cut, or a missing one
+# backfilled, after CI's one-day artefact retention has passed.
+#
+# Dispatch it by hand to backfill a release (ssg_version lets a backfill
+# use the compiler the original deploy used) or to dry-run the packaging.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Release tag (e.g. v0.0.35)"
+        required: true
+        type: string
+      ssg_version:
+        description: "ssg to build with (default: the tag's SSG_VERSION)"
+        required: false
+        type: string
+        default: ""
+      dry_run:
+        description: "Build, checksum, sign and verify, but upload nothing"
+        required: false
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.event.release.tag_name || inputs.release_tag }}
+  cancel-in-progress: false
+
+env:
+  RELEASE_TAG: ${{ github.event.release.tag_name || inputs.release_tag }}
+  NAME: sebastienrousseau.github.io
+
+jobs:
+  # A backfilled release is drafted, given its artefacts by a dispatched
+  # run (with the ssg its deploy used), then published; that publish must
+  # not rebuild it with today's ssg. A dispatched run always builds.
+  plan:
+    name: Does this release need its artefacts?
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      build: ${{ steps.plan.outputs.build }}
+    steps:
+      - name: Look for SHA256SUMS on the release
+        id: plan
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          if [ "$EVENT" = release ] && gh release view "$RELEASE_TAG" -R "$GITHUB_REPOSITORY" \
+              --json assets --jq '.assets[].name' | grep -qx SHA256SUMS; then
+            echo "::notice::$RELEASE_TAG already carries its artefacts; nothing to build."
+            echo "build=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "build=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  artefacts:
+    name: Build, sign and attach the site
+    needs: plan
+    if: needs.plan.outputs.build == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write      # upload release assets
+      id-token: write      # OIDC for keyless signing and provenance
+      attestations: write  # SLSA build provenance
+    steps:
+      - name: Check out the tagged source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: refs/tags/${{ env.RELEASE_TAG }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Resolve version and check the tag
+        id: ver
+        env:
+          SSG_INPUT: ${{ inputs.ssg_version }}
+        run: |
+          set -euo pipefail
+          [[ "$RELEASE_TAG" =~ ^v([0-9]+\.[0-9]+\.[0-9]+)$ ]] || {
+            echo "::error::$RELEASE_TAG is not a vX.Y.Z release tag"; exit 1; }
+          version="${BASH_REMATCH[1]}"
+          # Release tags are annotated and SSH-signed, as in dotfiles.
+          [ "$(git cat-file -t "$RELEASE_TAG")" = tag ] || {
+            echo "::error::$RELEASE_TAG is a lightweight tag; recreate it with git tag -s"; exit 1; }
+          git cat-file tag "$RELEASE_TAG" | grep -qE 'BEGIN (PGP|SSH) SIGNATURE' || {
+            echo "::error::$RELEASE_TAG is not signed; recreate it with git tag -s"; exit 1; }
+          ssg="${SSG_INPUT:-$(sed -n 's/^  SSG_VERSION: "\([^"]*\)".*/\1/p' .github/workflows/ci.yml | head -1)}"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "ssg=$ssg" >> "$GITHUB_OUTPUT"
+          echo "::notice::${NAME} ${version} from $(git rev-parse --short HEAD), ssg ${ssg}"
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@4be7066ada62dd38de10e7b70166bc74ed198c30 # stable
+
+      - name: Add cargo bin to PATH
+        run: echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
+
+      - name: Install Static Site Generator (ssg)
+        uses: ./.github/actions/setup-ssg
+        with:
+          version: ${{ steps.ver.outputs.ssg }}
+
+      - name: Install wasm-pack + wasm32 target
+        run: |
+          rustup target add wasm32-unknown-unknown
+          command -v wasm-pack >/dev/null 2>&1 || cargo install wasm-pack --version 0.15.0 --locked
+
+      - name: Setup Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Setup Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v6
+        with:
+          node-version: "22"
+
+      - name: Install Python tooling
+        run: pip install --quiet --require-hashes -r requirements-dev.lock
+
+      - name: Build the site from the tag
+        run: ./build.sh
+
+      - name: Generate the SBOM (CycloneDX)
+        env:
+          VERSION: ${{ steps.ver.outputs.version }}
+        run: |
+          set -euo pipefail
+          bash scripts/security/gen-sbom.sh public/sbom.cdx.json
+          cp public/sbom.cdx.json "${NAME}-${VERSION}.cyclonedx.json"
+
+      - name: Package the site (deterministic tar.gz and zip)
+        env:
+          VERSION: ${{ steps.ver.outputs.version }}
+        run: |
+          set -euo pipefail
+          stage="${NAME}-${VERSION}"
+          cp -a public "$stage"
+          find "$stage" -exec touch -h -d '1980-01-01 00:00:00 UTC' {} +
+          TZ=UTC tar --sort=name --mtime='1970-01-01 00:00:00 UTC' \
+            --owner=0 --group=0 --numeric-owner -czf "${stage}.tar.gz" "$stage"
+          find "$stage" -type f -print | LC_ALL=C sort | zip -q -X -D "${stage}.zip" -@
+          ls -la "${stage}".{tar.gz,zip}
+
+      - name: Install cosign
+        uses: sigstore/cosign-installer@6f9f17788090df1f26f669e9d70d6ae9567deba6 # v4.1.2
+        with:
+          cosign-release: v2.4.1
+
+      - name: Sign the archives (sigstore keyless) and verify the bundles
+        env:
+          VERSION: ${{ steps.ver.outputs.version }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          for asset in "${NAME}-${VERSION}.tar.gz" "${NAME}-${VERSION}.zip"; do
+            cosign sign-blob --yes --bundle "${asset}.sigstore.json" "$asset"
+            cosign verify-blob --bundle "${asset}.sigstore.json" \
+              --certificate-identity-regexp "^https://github.com/${REPOSITORY}/" \
+              --certificate-oidc-issuer https://token.actions.githubusercontent.com \
+              "$asset"
+          done
+
+      - name: Write checksums
+        env:
+          VERSION: ${{ steps.ver.outputs.version }}
+        run: |
+          set -euo pipefail
+          sha256sum "${NAME}-${VERSION}".{tar.gz,zip,cyclonedx.json} \
+            "${NAME}-${VERSION}".{tar.gz,zip}.sigstore.json > SHA256SUMS
+          cat SHA256SUMS
+
+      - name: Attest build provenance (SLSA)
+        if: ${{ github.event_name == 'release' || inputs.dry_run != true }}
+        uses: actions/attest-build-provenance@4d101475d8b20a2381f78447822ac1eab6504dd8 # v4.2.2
+        with:
+          subject-path: |
+            ${{ env.NAME }}-${{ steps.ver.outputs.version }}.tar.gz
+            ${{ env.NAME }}-${{ steps.ver.outputs.version }}.zip
+
+      - name: Upload to the release
+        if: ${{ github.event_name == 'release' || inputs.dry_run != true }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.ver.outputs.version }}
+        run: |
+          set -euo pipefail
+          gh release upload "$RELEASE_TAG" --clobber \
+            "${NAME}-${VERSION}.tar.gz" "${NAME}-${VERSION}.zip" \
+            "${NAME}-${VERSION}.tar.gz.sigstore.json" "${NAME}-${VERSION}.zip.sigstore.json" \
+            "${NAME}-${VERSION}.cyclonedx.json" SHA256SUMS
+
+      - name: Keep the artefacts for inspection (dry run)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run == true }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: dry-run-${{ env.NAME }}-${{ steps.ver.outputs.version }}
+          retention-days: 7
+          path: |
+            ${{ env.NAME }}-${{ steps.ver.outputs.version }}.tar.gz.sigstore.json
+            ${{ env.NAME }}-${{ steps.ver.outputs.version }}.zip.sigstore.json
+            ${{ env.NAME }}-${{ steps.ver.outputs.version }}.cyclonedx.json
+            SHA256SUMS

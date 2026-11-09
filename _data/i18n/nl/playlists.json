@@ -12,7 +12,10 @@
     "countOther": "playlists",
     "coverAlt": "Hoesbeeld van de playlist {title}",
     "openAria": "{title} openen op Spotify",
-    "frameTitle": "Playlist {title} op Spotify"
+    "frameTitle": "Playlist {title} op Spotify",
+    "playHere": "Hier afspelen op Spotify",
+    "loadNote": "De spelers laden pas wanneer u op afspelen drukt. Spotify kan daarna cookies plaatsen; zie de",
+    "loadNoteLink": "privacyverklaring"
   },
   "intro": [
     "Negenendertig playlists en 1.763 nummers, gemaakt voor de uren die om een soundtrack vragen: deep work, lange teksten en late herschrijvingen.",

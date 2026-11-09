@@ -130,6 +130,8 @@ find _posts_build -name 'README.md' -delete
 python3 scripts/postbuild/regen_slug_maps.py
 python3 scripts/postbuild/regen_homepage.py --dir _posts_build
 python3 scripts/postbuild/post_enrich.py --dir _posts_build
+# About: leadership timeline and credentials from _data/profile.yml.
+python3 scripts/generators/build_about_profile.py --dir _posts_build
 # Rewrite the /tags/ cover page from _data/taxonomy.yml so the
 # editorial pillar grid replaces the legacy monolithic anchor list.
 # Lenient on missing taxonomy (WS3 commit 1 must have shipped first).
@@ -569,6 +571,8 @@ python3 tests/validation/test_sri_integrity.py
 python3 tests/validation/test_meta_description_clean.py
 python3 tests/validation/test_canonical_consistency.py
 python3 tests/validation/test_structured_data.py
+# Author facts on every built page match _data/profile.yml.
+python3 tests/validation/test_profile_built.py
 python3 scripts/seo_and_audit/check_unique_titles.py
 # Cloudflare Worker (edge Accept-Language router + security headers) —
 # pure-logic tests, no Cloudflare runtime required. 100% line/branch/

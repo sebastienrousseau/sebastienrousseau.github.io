@@ -12,7 +12,10 @@
     "countOther": "플레이리스트",
     "coverAlt": "{title} 플레이리스트 커버 이미지",
     "openAria": "{title}을(를) Spotify에서 열기",
-    "frameTitle": "Spotify의 {title} 플레이리스트"
+    "frameTitle": "Spotify의 {title} 플레이리스트",
+    "playHere": "여기에서 Spotify로 재생",
+    "loadNote": "플레이어는 재생을 누를 때만 불러옵니다. 그 후 Spotify가 쿠키를 설정할 수 있습니다. 자세한 내용은",
+    "loadNoteLink": "개인정보 처리방침"
   },
   "intro": [
     "서른아홉 개의 플레이리스트와 1,763곡. 사운드트랙이 필요한 시간을 위해 만들었습니다 — 딥 워크, 긴 독서, 늦은 밤의 다시 쓰기.",

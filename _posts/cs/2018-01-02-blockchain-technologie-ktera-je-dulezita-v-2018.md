@@ -22,7 +22,6 @@ tags: "pain001, ISO 20022, automatizace plateb, snižování nákladů, platby, 
 id: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"
 permalink: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"
 url: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"
-measurementID: "G-169G4ET5HQ"
 theme-color: "0, 67, 165"
 last_reviewed: "2026-05-11"
 

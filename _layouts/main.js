@@ -1647,3 +1647,21 @@ window.__srEmitTrack = emitTrack;
     activate(initial || tabs[0].slug, { persist: false, focus: false });
 })();
 
+
+/* Playlists: Spotify players load only on request. Each player is a
+   button carrying the embed URL; pressing it swaps in the iframe, so no
+   request (and no Spotify cookie) reaches Spotify until the reader asks. */
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest && event.target.closest("button.pl-load");
+  if (!btn || !btn.dataset.src) return;
+  var frame = document.createElement("iframe");
+  frame.className = "pl-frame";
+  frame.src = btn.dataset.src;
+  frame.width = "100%";
+  frame.height = btn.dataset.height || "152";
+  frame.title = btn.dataset.title || "Spotify player";
+  frame.setAttribute("frameborder", "0");
+  frame.setAttribute("allow", "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture");
+  btn.replaceWith(frame);
+  frame.focus();
+});

@@ -1,4 +1,8 @@
 {
-  "bio": "Vezető banki technológus, aki az alkalmazott mesterséges intelligenciáról, az ISO 20022 migrációról, a pénzügyi szolgáltatások posztkvantum kriptográfiájáról és a nagyértékű fizetések strukturális átalakulásáról ír.",
-  "credentialsPrefix": "Közel két évtized az HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA és Virgin Group vállalatoknál."
+  "_comment": "Author-card prose translated from the EN card (profile.yml). Machine-drafted 2026-11-09, pending native review (A-3). Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
+  "_source": "_data/profile.yml via _profile.author_card()",
+  "_reviewed": false,
+  "_drafted_on": "2026-11-09",
+  "bio": "Vezető szakember a fizetési és pénzügyi szolgáltatások területén, aki az alkalmazott mesterséges intelligenciáról, az ISO 20022 migrációról, a pénzügyi szolgáltatások posztkvantum kriptográfiájáról és a nagyértékű fizetések átalakulásáról ír.",
+  "credentialsPrefix": "Több mint 20 év a fizetési forgalomban, a bankszektorban és a digitális technológiában. A HSBC nagyértékű fizetési API-termékeit vezeti · az EPAA kvantumbiztos kriptográfiai munkacsoportjának tagja."
 }

@@ -1,4 +1,8 @@
 {
-  "bio": "అనువర్తిత AI, ISO 20022 మైగ్రేషన్, ఆర్థిక సేవల కోసం పోస్ట్-క్వాంటమ్ క్రిప్టోగ్రఫీ మరియు హోల్‌సేల్ చెల్లింపుల నిర్మాణాత్మక పరివర్తనపై రాసే సీనియర్ బ్యాంకింగ్ టెక్నాలజిస్ట్.",
-  "credentialsPrefix": "HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group లలో దాదాపు రెండు దశాబ్దాల అనుభవం."
+  "_comment": "Author-card prose translated from the EN card (profile.yml). Machine-drafted 2026-11-09, pending native review (A-3). Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
+  "_source": "_data/profile.yml via _profile.author_card()",
+  "_reviewed": false,
+  "_drafted_on": "2026-11-09",
+  "bio": "అనువర్తిత AI, ISO 20022 మైగ్రేషన్, ఆర్థిక సేవల కోసం పోస్ట్-క్వాంటమ్ క్రిప్టోగ్రఫీ మరియు హోల్‌సేల్ చెల్లింపుల పరివర్తనపై రాసే చెల్లింపులు మరియు ఆర్థిక సేవల రంగంలో సీనియర్ నాయకుడు.",
+  "credentialsPrefix": "చెల్లింపులు, బ్యాంకింగ్ మరియు డిజిటల్ సాంకేతికతలో 20 సంవత్సరాలకు పైగా అనుభవం. HSBCలో హోల్‌సేల్ చెల్లింపుల API ఉత్పత్తులకు నాయకత్వం వహిస్తున్నారు · EPAA క్వాంటమ్-సేఫ్ క్రిప్టోగ్రఫీ వర్కింగ్ గ్రూప్ సభ్యుడు."
 }

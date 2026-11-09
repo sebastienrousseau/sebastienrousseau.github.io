@@ -27,7 +27,7 @@
   "about": {
     "title": "关于 — Sebastien Rousseau",
     "subtitle": "通过人工智能、后量子密码学与区块链技术的战略整合，塑造银行业与金融服务业的未来。",
-    "description": "Sebastien Rousseau，资深银行技术专家：应用人工智能、ISO 20022 迁移、后量子密码学，以及批发支付的结构性转型。",
+    "description": "通过人工智能、后量子密码学与区块链技术的战略整合，塑造银行业与金融服务业的未来。",
     "keywords": "Sebastien Rousseau, 简介, 银行业, 支付, 人工智能, ISO 20022, 后量子密码学, 汇丰, PayPal, 巴克莱"
   },
   "accessibility": {
@@ -69,8 +69,8 @@
   "privacy": {
     "title": "隐私政策 — Sebastien Rousseau",
     "subtitle": "您的隐私对我们很重要。",
-    "description": "本网站如何收集、使用和保护您的数据。匿名访问统计、Cookie、托管以及 GDPR 权利。",
-    "keywords": "隐私, GDPR, Cookie, 个人数据, 分析"
+    "description": "本网站处理哪些个人数据、原因、由谁代我们处理、保留多长时间，以及您根据 UK GDPR 享有的权利，包括向 ICO 投诉的权利。",
+    "keywords": "隐私声明, UK GDPR, PECR, 联系表单, Formspree, reCAPTCHA, 匿名计数, Cookie, 本地存储, 数据权利, Information Commissioner's Office"
   },
   "projects": {
     "title": "项目 — Sebastien Rousseau",

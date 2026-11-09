@@ -12,7 +12,10 @@
     "countOther": "Playlists",
     "coverAlt": "Coverbild der Playlist {title}",
     "openAria": "{title} auf Spotify öffnen",
-    "frameTitle": "Playlist {title} auf Spotify"
+    "frameTitle": "Playlist {title} auf Spotify",
+    "playHere": "Hier auf Spotify abspielen",
+    "loadNote": "Die Player laden erst, wenn Sie auf Abspielen drücken. Spotify kann dann Cookies setzen; siehe",
+    "loadNoteLink": "Datenschutzhinweis"
   },
   "intro": [
     "Neununddreißig Playlists und 1.763 Titel, gebaut für die Stunden, die einen Soundtrack brauchen — Deep Work, lange Lektüren und späte Überarbeitungen.",

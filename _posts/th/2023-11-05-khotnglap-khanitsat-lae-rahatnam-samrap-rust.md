@@ -24,7 +24,6 @@ image_alt: "ภาพเหมือนขาวดำของ Sebastien Rousse
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 logo_alt: "โลโก้ของ Sebastien Rousseau"
-measurementID: "G-169G4ET5HQ"
 theme-color: "0, 67, 165"
 pub_date: "Sun, 05 Nov 2023 06:06:06 +0000"
 last_build_date: "Sun, 05 Nov 2023 06:06:06 +0000"

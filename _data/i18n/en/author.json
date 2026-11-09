@@ -1,5 +1,6 @@
 {
-  "_comment": "Canonical EN author-card prose. The author-card aside renders at the bottom of every dated article. CI gate test_i18n_author.py enforces key-set parity across languages.",
-  "bio": "Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.",
-  "credentialsPrefix": "Nearly two decades across HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group."
+  "_comment": "Canonical EN author-card prose, derived from _data/profile.yml; tests/unit/test_author_card.py fails if it drifts. CI gate test_i18n_author.py enforces key-set parity across languages.",
+  "_source": "_data/profile.yml via _profile.author_card()",
+  "bio": "Senior payments and financial services leader writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services and the transformation of wholesale payments.",
+  "credentialsPrefix": "More than 20 years in payments, banking and digital technology. Leads wholesale payments API products at HSBC · EPAA Quantum-Safe Working Group member."
 }

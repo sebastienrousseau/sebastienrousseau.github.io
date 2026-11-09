@@ -219,12 +219,8 @@ from postbuild_lib.feeds import (  # noqa: F401 — re-exports (split from outpu
 )
 
 # Live GitHub repo stats — moved to postbuild_lib.github_stats
-from postbuild_lib.github_stats import (
-    gh_stats_index as _gh_stats_index,
-)
-from postbuild_lib.github_stats import (
-    inject_github_stats,
-)
+from postbuild_lib.github_stats import gh_stats_index as _gh_stats_index
+from postbuild_lib.github_stats import inject_github_stats
 from postbuild_lib.hreflang import (  # noqa: F401 — re-exports (split from article_furniture)
     _alternates_for_en_slug,
     _resolve_en_slug,
@@ -278,6 +274,7 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
 )
 
 # Legacy-URL redirect conversion (/papers -> /research + locale forks)
+from postbuild_lib.profile_person import apply_person_profile
 from postbuild_lib.redirects import apply_article_redirects, apply_redirect_pages
 from postbuild_lib.schemas import (
     align_article_identity,
@@ -478,6 +475,7 @@ def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     # few content items the translation-time localiser misses (runs before
     # inject_jsonld_hashes so the CSP hash covers the aligned bytes).
     out = align_jsonld_inlanguage(out)
+    out = apply_person_profile(out)  # profile.yml facts; before CSP hashing
     out, n_dim = stamp_image_dimensions(out)
     ctr.img_dims_patched += n_dim
     # Wrap CDN images in /api/transform AFTER stamp_image_dimensions so

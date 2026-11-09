@@ -384,6 +384,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>더 알아보기 <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "개인 사이트입니다. 견해는 개인적인 것이며 HSBC를 대변하지 않습니다."
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">공개 정책</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">편집 정책</a>"
     ]
   ]
 }

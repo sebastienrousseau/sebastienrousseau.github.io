@@ -356,6 +356,9 @@ def playlist_reference() -> dict:
             "coverAlt": pl.COVER_ALT,
             "openAria": pl.OPEN_ARIA,
             "frameTitle": pl.FRAME_TITLE,
+            "playHere": pl.PLAY_HERE_LABEL,
+            "loadNote": pl.LOAD_NOTE,
+            "loadNoteLink": pl.LOAD_NOTE_LINK,
         },
         "intro": list(pl.INTRO_PARAGRAPHS),
         "featured": {

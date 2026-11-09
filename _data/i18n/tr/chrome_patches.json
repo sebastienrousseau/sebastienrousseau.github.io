@@ -384,6 +384,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>Daha fazla bilgi <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "Kişisel site. Görüşler bana aittir ve HSBC'yi temsil etmez."
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">Açıklama politikası</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">Yayın politikası</a>"
     ]
   ]
 }

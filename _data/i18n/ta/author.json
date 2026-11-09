@@ -1,4 +1,8 @@
 {
-  "bio": "பயன்பாட்டு AI, ISO 20022 இடம்பெயர்வு, நிதிச் சேவைகளுக்கான பிந்தைய-குவாண்டம் குறியாக்கவியல், மற்றும் மொத்தக் கட்டணங்களின் கட்டமைப்பு மாற்றம் குறித்து எழுதும் மூத்த வங்கித் தொழில்நுட்பவியலாளர்.",
-  "credentialsPrefix": "HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group ஆகியவற்றில் கிட்டத்தட்ட இரண்டு தசாப்தங்கள்."
+  "_comment": "Author-card prose translated from the EN card (profile.yml). Machine-drafted 2026-11-09, pending native review (A-3). Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
+  "_source": "_data/profile.yml via _profile.author_card()",
+  "_reviewed": false,
+  "_drafted_on": "2026-11-09",
+  "bio": "பயன்பாட்டு AI, ISO 20022 இடம்பெயர்வு, நிதிச் சேவைகளுக்கான பிந்தைய-குவாண்டம் குறியாக்கவியல், மற்றும் மொத்தக் கட்டணங்களின் மாற்றம் குறித்து எழுதும் கட்டணங்கள் மற்றும் நிதிச் சேவைகள் துறையின் மூத்த தலைவர்.",
+  "credentialsPrefix": "கட்டணங்கள், வங்கி மற்றும் டிஜிட்டல் தொழில்நுட்பத்தில் 20 ஆண்டுகளுக்கும் மேலான அனுபவம். HSBC-இல் மொத்தக் கட்டண API தயாரிப்புகளுக்குத் தலைமை தாங்குகிறார் · EPAA குவாண்டம்-பாதுகாப்பான குறியாக்கவியல் பணிக்குழு உறுப்பினர்."
 }

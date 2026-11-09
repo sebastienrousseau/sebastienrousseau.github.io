@@ -384,6 +384,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>Află mai multe <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "Site personal. Opiniile îmi aparțin și nu reprezintă HSBC."
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">Politica de transparență</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">Politica editorială</a>"
     ]
   ]
 }

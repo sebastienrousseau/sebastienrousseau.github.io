@@ -1,19 +1,19 @@
 ---
 title: Ọ̀rọ̀ ìsọ àti ìmọ̀ràn
 meta_title: 'Sebastien Rousseau: àwọn ọ̀rọ̀ àkọ́kọ́, ìjíròrò àti àlàyé amòye lórí ìsanwó, ìsekóòdù lẹ́yìn-kúáǹtọ̀mù àti ọgbọ́n atọ́nà tí a lò'
-meta_description: Amọ̀ràn ìmọ̀-ẹ̀rọ ilé-ìfowópamọ́ àgbà, ó fẹ́rẹ̀ẹ́ tó ogún ọdún ní HSBC, PayPal àti Barclays. Àwọn ọ̀rọ̀ àkọ́kọ́, ìjíròrò àti àlàyé amòye fún àwọn ìgbìmọ̀ olùdarí, àpèjọ ilé-iṣẹ́ àti yàrá ìròyìn.
+meta_description: 'Olùdarí àgbà nínú ìsanwó àti iṣẹ́ ìnáwó, ó ju ogún ọdún lọ nínú ilé-ìfowópamọ́ àti ìmọ̀-ẹ̀rọ. Ọ̀rọ̀ àkọ́kọ́ àti àlàyé amòye lórí ìsanwó, lẹ́yìn-kúáǹtọ̀mù àti AI.'
 hero:
   eyebrow: Ọ̀rọ̀ àkọ́kọ́ · Ìjíròrò · Àlàyé amòye
   headline: Àwọn ìmọ̀-ẹ̀rọ tí ó ń tún ilé-ìfowópamọ́ kọ́, tí a ṣàlàyé fún àwọn tí ó gbọ́dọ̀ pinnu.
-  lede: Sebastien Rousseau jẹ́ amọ̀ràn ìmọ̀-ẹ̀rọ ilé-ìfowópamọ́ àgbà tí ó lo ó fẹ́rẹ̀ẹ́ tó ogún ọdún ní HSBC, PayPal àti Barclays. Ó ń sọ̀rọ̀ lórí ìsanwó ISO 20022, ìsekóòdù lẹ́yìn-kúáǹtọ̀mù àti ọgbọ́n atọ́nà tí a lò, ó sì ń sọ ìṣòro ilé-iṣẹ́ di ìpinnu tí yàrá kan lè ṣe níbẹ̀ náà.
+  lede: 'Sebastien Rousseau jẹ́ olùdarí àgbà nínú ìsanwó àti iṣẹ́ ìnáwó, tí ó ti lo ju ogún ọdún lọ nínú ìsanwó, ilé-ìfowópamọ́ àti ìmọ̀-ẹ̀rọ dígítà. Ó ń sọ ìsọdọ̀tun ìsanwó, ìsekóòdù lẹ́yìn-kúáǹtọ̀mù àti ọgbọ́n atọ́nà tí a lò di kóòdù tí a lè yẹ̀wò láti inú ìwé ìlànà, àti di àwọn ọ̀rọ̀ àkọ́kọ́ tí ìgbìmọ̀ olùdarí lè gbé ìgbésẹ̀ lé lórí.'
   primary_cta: Pè mí láti sọ̀rọ̀
   secondary_cta: Wo àwọn ọ̀rọ̀ ìsọ
   press_nudge: Oníròyìn tí àkókò ń tì?
   press_nudge_cta: Béèrè àlàyé amòye
   microproof:
-  - Ó fẹ́rẹ̀ẹ́ tó ogún ọdún ìrírí ní HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group
-  - Alábàáṣiṣẹ́pọ̀ onkọ̀wé ìwé-ìròyìn EPAA lórí lẹ́yìn-kúáǹtọ̀mù
-  - Olùkópa, Emerging Payments Association Asia
+  - 'Ó ju ogún ọdún lọ nínú ìsanwó, ilé-ìfowópamọ́ àti ìmọ̀-ẹ̀rọ dígítà'
+  - 'Ó ń darí àwọn ọjà API ìsanwó ńlá ní HSBC'
+  - 'Ọmọ ẹgbẹ́, EPAA Quantum-Safe Cryptography Working Group'
 employers_label: Àwọn ibi tí mo ti ṣiṣẹ́
 stats_eyebrow: Nínú àwọn nọ́mbà
 stats:
@@ -25,7 +25,7 @@ stats:
   label: Ìgbàsílẹ̀ orísun ṣíṣí
 - kpi: github_stars
   label: Ìràwọ̀ GitHub
-stats_foot: 'Olùkópa nínú Ẹgbẹ́ Iṣẹ́ EPAA lórí ìsekóòdù tí ó le koju kúáǹtọ̀mù. Alábàáṣiṣẹ́pọ̀ onkọ̀wé ìwé-ìròyìn «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (Oṣù Kẹsàn-án 2025).'
+stats_foot: 'Ọmọ ẹgbẹ́ EPAA Quantum-Safe Cryptography Working Group àti olùkópa nínú ìwé funfun rẹ̀ «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (Oṣù Kẹsàn-án 2025).'
 paths:
   eyebrow: Ọ̀nà méjì láti bá mi ṣiṣẹ́
   headline: Fi ìtàgé pamọ́, tàbí fi orísun ìròyìn pamọ́.
@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Àwọn ọ̀rọ̀ àkọ́kọ́ pàtàkì
   headline: Àwọn ọ̀rọ̀ ìsọ tí a kọ́ fún yàrá ìgbìmọ̀ olùdarí.
   lede: 'Ọ̀rọ̀ ìsọ kọ̀ọ̀kan ń sọ ìṣòro ilé-iṣẹ́ tí ó wà lọ́wọ́ di ìpinnu tí yàrá lè gbé ìgbésẹ̀ lé. Kò sí títa ọjà, kò sí àtòjọ àwọn olùpèsè: ìdúró tí a lè gbèjà nìkan àti ẹ̀rí tí ó dì í mú.'
-  flag_delivered: A ti gbé e kalẹ̀ tẹ́lẹ̀ · Ó wà nísinsìnyí
+  flag_available: Ó wà nísinsìnyí
   flag_new: Tuntun fún 2026
   outcome_label: 'O ń kúrò pẹ̀lú:'
   talks:
@@ -137,11 +137,11 @@ bios:
   copy_label: Ṣe àdàkọ
   items:
   - length: Kúkúrú
-    text: Sebastien Rousseau jẹ́ amọ̀ràn ìmọ̀-ẹ̀rọ ilé-ìfowópamọ́ àgbà tí ó ń kọ̀wé tí ó sì ń kọ́ ní ojúlùmọ̀ ìsanwó ISO 20022, ìsekóòdù lẹ́yìn-kúáǹtọ̀mù àti ọgbọ́n atọ́nà tí a lò. Ó fẹ́rẹ̀ẹ́ tó ogún ọdún ìrírí ní HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group.
+    text: 'Sebastien Rousseau jẹ́ olùdarí àgbà nínú ìsanwó àti iṣẹ́ ìnáwó, tí ó ti lo ju ogún ọdún lọ nínú ìsanwó, ilé-ìfowópamọ́ àti ìmọ̀-ẹ̀rọ dígítà. Ó ń darí àwọn ọjà API ìsanwó ńlá ní HSBC, ó sì jẹ́ ọmọ ẹgbẹ́ Quantum-Safe Cryptography Working Group ti Emerging Payments Association Asia.'
   - length: Àárín
-    text: Sebastien Rousseau jẹ́ amọ̀ràn ìmọ̀-ẹ̀rọ ilé-ìfowópamọ́ àgbà tí ó lo ó fẹ́rẹ̀ẹ́ tó ogún ọdún ní HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA àti Virgin Group. Ó ń kọ̀wé ó sì ń kọ́ ní ojúlùmọ̀ ìsanwó ISO 20022, ìsekóòdù lẹ́yìn-kúáǹtọ̀mù àti ọgbọ́n atọ́nà tí a lò, ó sì ń tọ́jú àwọn ìmúṣẹ ìtọ́kasí orísun ṣíṣí — pacs.008, pain.001, KyberLib, BankStatementParser — tí àwọn ẹgbẹ́ ilé-ìṣúra àti ìsanwó ń lò nínú iṣẹ́ gidi. Ó ń kópa nínú Ẹgbẹ́ Iṣẹ́ lórí ìsekóòdù tí ó le koju kúáǹtọ̀mù ti Emerging Payments Association Asia, ó sì ń tẹ Banking On Quantum àti Banking On AI jáde.
+    text: 'Sebastien Rousseau jẹ́ olùdarí àgbà nínú ìsanwó àti iṣẹ́ ìnáwó, tí ó ti lo ju ogún ọdún lọ nínú ìsanwó, ilé-ìfowópamọ́ àti ìmọ̀-ẹ̀rọ dígítà. Ó ń darí àwọn ọjà API ìsanwó ńlá ní HSBC, ó jẹ́ ọmọ ẹgbẹ́ Quantum-Safe Cryptography Working Group ti Emerging Payments Association Asia, ó sì kópa nínú ìwé funfun rẹ̀ «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (Oṣù Kẹsàn-án 2025). Ó ń tọ́jú àwọn ibi-ìkówèésí orísun ṣíṣí fún ISO 20022 àti ìsekóòdù lẹ́yìn-kúáǹtọ̀mù, ó sì ń tẹ Banking On Quantum àti Banking On AI jáde.'
   - length: Gígùn
-    text: 'Sebastien Rousseau jẹ́ amọ̀ràn ìmọ̀-ẹ̀rọ ilé-ìfowópamọ́ àgbà tí ó dojúkọ ìyípadà ìpìlẹ̀ ti ìsanwó ńlá. Ó fẹ́rẹ̀ẹ́ tó ogún ọdún ìrírí ní HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Ó ń kọ ó sì ń tọ́jú pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN àti dotfiles; a gbé ọ̀kọ̀ọ̀kan wọn kalẹ̀ gẹ́gẹ́ bí ìmúṣẹ ìtọ́kasí kìí ṣe ìfihàn: ohun-èlò ìpìlẹ̀ ìnáwó tí a lè yẹ̀wò, ní ìpele ìgbìmọ̀ olùdarí. Ó ń kópa nínú Ẹgbẹ́ Iṣẹ́ lórí ìsekóòdù tí ó le koju kúáǹtọ̀mù ti Emerging Payments Association Asia, ó jẹ́ alábàáṣiṣẹ́pọ̀ onkọ̀wé ìwé-ìròyìn EPAA «Quantum-Safe Payments: Why the Payments Industry Must Act Now» (Oṣù Kẹsàn-án 2025), ó sì ń tẹ Banking On Quantum àti Banking On AI jáde. Ó ń ṣiṣẹ́ ní ojúlùmọ̀ ọgbọ́n atọ́nà aṣojú, ìsanwó àkókò gidi, ìsekóòdù lẹ́yìn-kúáǹtọ̀mù, agbára ìfaradà lórí àwọsánmà, dátà tí ó ní ìlànà àti ẹ̀rí fún àwọn olùṣàkóso.'
+    text: 'Sebastien Rousseau jẹ́ olùdarí àgbà nínú ìsanwó àti iṣẹ́ ìnáwó, tí ó ti lo ju ogún ọdún lọ nínú ìsanwó, ilé-ìfowópamọ́ àti ìmọ̀-ẹ̀rọ dígítà. Ní HSBC, ó ń darí àwọn ọjà API ìsanwó ńlá ní ẹ̀ka Commercial & Investment Banking, èyí tí ó darapọ̀ mọ́ ní ọdún 2016 gẹ́gẹ́ bí API Engineering Lead. Ṣáájú ìyẹn, ó dá Reedia Ltd sílẹ̀ ó sì darí rẹ̀ gẹ́gẹ́ bí Olórí Aláṣẹ Àgbà, ó ṣe àgbékalẹ̀ ìlànà HCE àti tokenisation ti PayPal pẹ̀lú àwọn báńkì ipele-kìíní, ó darí ìyípadà ilé-ìfowópamọ́ alágbèéká ní Barclays Corporate Banking, ó jẹ́ Head of Mobile ní Shazam, ó sì jẹ́ olórí ẹ̀ka ìmọ̀-ẹ̀rọ alágbèéká ti AKQA fún àwọn oníbàárà bí Nike, RBS àti Nokia. Ó jẹ́ ọmọ ẹgbẹ́ EPAA Quantum-Safe Cryptography Working Group, Fellow ti Institution of Analysts and Programmers, àti olùtọ́jú àwọn ibi-ìkówèésí orísun ṣíṣí fún ìsanwó àti ìsekóòdù tí a ń lò káàkiri. Ó ń sọ̀rọ̀ ó sì ń kọ̀wé lórí ISO 20022, ìṣílọ sí lẹ́yìn-kúáǹtọ̀mù àti ọgbọ́n atọ́nà aṣojú nínú ilé-ìfowópamọ́.'
 faq:
   eyebrow: Kí o tó béèrè
   headline: Ìpè, ní ọ̀rọ̀ tí ó ṣe kedere.
@@ -185,11 +185,6 @@ final_cta:
   secondary_cta: Béèrè àlàyé amòye
 ---
 
-Sebastien Rousseau jẹ́ amọ̀ràn ìmọ̀-ẹ̀rọ ilé-ìfowópamọ́ àgbà tí ó dojúkọ ìyípadà ìpìlẹ̀ ti ìsanwó ńlá. Ó fẹ́rẹ̀ẹ́ tó ogún ọdún ìrírí ní HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. Ó ń kọ ó sì ń tọ́jú pacs. 008, pain. 001, BankStatementParser, KyberLib, CloudCDN àti dotfiles; a gbé ọ̀kọ̀ọ̀kan wọn kalẹ̀ gẹ́gẹ́ bí ìmúṣẹ ìtọ́kasí kìí ṣe ìfihàn: ohun-èlò ìpìlẹ̀ ìnáwó tí a lè yẹ̀wò, ní ìpele ìgbìmọ̀ olùdarí.
+Sebastien Rousseau jẹ́ olùdarí àgbà nínú ìsanwó àti iṣẹ́ ìnáwó, tí ó ti lo ju ogún ọdún lọ nínú ìsanwó, ilé-ìfowópamọ́ àti ìmọ̀-ẹ̀rọ dígítà. Ní HSBC, ó ń darí àwọn ọjà API ìsanwó ńlá ní ẹ̀ka Commercial & Investment Banking, èyí tí ó darapọ̀ mọ́ ní ọdún 2016 gẹ́gẹ́ bí API Engineering Lead. Ṣáájú ìyẹn, ó dá Reedia Ltd sílẹ̀ ó sì darí rẹ̀ gẹ́gẹ́ bí Olórí Aláṣẹ Àgbà, ó ṣe àgbékalẹ̀ ìlànà HCE àti tokenisation ti PayPal pẹ̀lú àwọn báńkì ipele-kìíní, ó darí ìyípadà ilé-ìfowópamọ́ alágbèéká ní Barclays Corporate Banking, ó jẹ́ Head of Mobile ní Shazam, ó sì jẹ́ olórí ẹ̀ka ìmọ̀-ẹ̀rọ alágbèéká ti AKQA fún àwọn oníbàárà bí Nike, RBS àti Nokia. Ó jẹ́ ọmọ ẹgbẹ́ EPAA Quantum-Safe Cryptography Working Group, Fellow ti Institution of Analysts and Programmers, àti olùtọ́jú àwọn ibi-ìkówèésí orísun ṣíṣí fún ìsanwó àti ìsekóòdù tí a ń lò káàkiri. Ó ń sọ̀rọ̀ ó sì ń kọ̀wé lórí ISO 20022, ìṣílọ sí lẹ́yìn-kúáǹtọ̀mù àti ọgbọ́n atọ́nà aṣojú nínú ilé-ìfowópamọ́.
 
-Ó ń kópa nínú Ẹgbẹ́ Iṣẹ́ lórí ìsekóòdù tí ó le koju kúáǹtọ̀mù ti Emerging Payments
-Association Asia, ó jẹ́ alábàáṣiṣẹ́pọ̀ onkọ̀wé ìwé-ìròyìn EPAA «Quantum-Safe Payments: Why the
-Payments Industry Must Act Now» (Oṣù Kẹsàn-án 2025), ó sì ń tẹ Banking On Quantum àti Banking
-On AI jáde. Ó ń ṣiṣẹ́ ní ojúlùmọ̀ ọgbọ́n atọ́nà aṣojú, ìsanwó àkókò gidi, ìsekóòdù
-lẹ́yìn-kúáǹtọ̀mù, agbára ìfaradà lórí àwọsánmà, dátà tí ó ní ìlànà àti ẹ̀rí fún àwọn
-olùṣàkóso.
+Ó ń tẹ Banking On Quantum àti Banking On AI jáde.

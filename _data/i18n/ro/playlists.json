@@ -12,7 +12,10 @@
     "countOther": "playlisturi",
     "coverAlt": "Coperta playlistului {title}",
     "openAria": "Deschide {title} pe Spotify",
-    "frameTitle": "Playlistul {title} pe Spotify"
+    "frameTitle": "Playlistul {title} pe Spotify",
+    "playHere": "Redă aici pe Spotify",
+    "loadNote": "Playerele se încarcă doar când apăsați redare. Spotify poate seta apoi cookie-uri; consultați",
+    "loadNoteLink": "nota de confidențialitate"
   },
   "intro": [
     "Treizeci și nouă de playlisturi și 1.763 de piese, construite pentru orele care cer o coloană sonoră: deep work, lecturi lungi și rescrieri târzii.",

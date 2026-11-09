@@ -10,7 +10,6 @@ per-source parsers/fallbacks, compact formatting, and the date math.
 
 from __future__ import annotations
 
-import datetime as _dt
 import urllib.error
 
 import fetch_metrics as fm
@@ -108,4 +107,4 @@ def test_crates_downloads_no_uid_is_zero(monkeypatch) -> None:
 
 
 def test_years_active() -> None:
-    assert fm._years_active() == _dt.date.today().year - 2007
+    assert fm._years_active() == "20+"

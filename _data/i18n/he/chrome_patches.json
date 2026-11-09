@@ -384,6 +384,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>מידע נוסף <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "אתר אישי. הדעות הן שלי ואינן מייצגות את HSBC."
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">מדיניות גילוי</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">מדיניות מערכת</a>"
     ]
   ]
 }

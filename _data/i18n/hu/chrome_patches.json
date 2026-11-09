@@ -383,6 +383,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>Tudjon meg többet <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "Személyes oldal. A nézetek a sajátjaim, és nem a HSBC álláspontját képviselik."
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">Közzétételi irányelvek</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">Szerkesztési irányelvek</a>"
     ]
   ]
 }

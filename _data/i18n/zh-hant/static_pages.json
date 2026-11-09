@@ -27,7 +27,7 @@
   "about": {
     "title": "關於 — Sebastien Rousseau",
     "subtitle": "透過人工智慧、後量子密碼學與區塊鏈技術的戰略整合，塑造銀行業與金融服務業的未來。",
-    "description": "Sebastien Rousseau，資深銀行技術專家：應用人工智慧、ISO 20022 遷移、後量子密碼學，以及批發支付的結構性轉型。",
+    "description": "透過人工智慧、後量子密碼學與區塊鏈技術的戰略整合，塑造銀行業與金融服務業的未來。",
     "keywords": "Sebastien Rousseau, 簡介, 銀行業, 支付, 人工智慧, ISO 20022, 後量子密碼學, 滙豐, PayPal, 巴克萊"
   },
   "accessibility": {
@@ -69,8 +69,8 @@
   "privacy": {
     "title": "隱私政策 — Sebastien Rousseau",
     "subtitle": "您的隱私對我們很重要。",
-    "description": "本網站如何收集、使用和保護您的資料。匿名訪問統計、Cookie、託管以及 GDPR 權利。",
-    "keywords": "隱私, GDPR, Cookie, 個人資料, 分析"
+    "description": "本網站處理哪些個人資料、原因、由誰代我們處理、保留多長時間，以及您依據 UK GDPR 享有的權利，包括向 ICO 提出申訴的權利。",
+    "keywords": "隱私聲明, UK GDPR, PECR, 聯絡表單, Formspree, reCAPTCHA, 匿名計數, Cookie, 本機儲存空間, 資料權利, Information Commissioner's Office"
   },
   "projects": {
     "title": "專案 — Sebastien Rousseau",

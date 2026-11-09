@@ -27,7 +27,7 @@
   "about": {
     "title": "소개 — Sebastien Rousseau",
     "subtitle": "인공지능, 포스트 양자 암호, 블록체인 기술의 전략적 통합을 통하여 은행과 금융 서비스의 미래를 형성합니다.",
-    "description": "Sebastien Rousseau, 시니어 뱅킹 테크놀로지스트: 응용 AI, ISO 20022 이행, 포스트 양자 암호, 도매 결제의 구조적 변혁.",
+    "description": "인공지능, 포스트 양자 암호, 블록체인 기술의 전략적 통합을 통하여 은행과 금융 서비스의 미래를 형성합니다.",
     "keywords": "Sebastien Rousseau, 약력, 은행, 결제, AI, ISO 20022, 포스트 양자 암호, HSBC, PayPal, Barclays"
   },
   "accessibility": {
@@ -69,8 +69,8 @@
   "privacy": {
     "title": "개인정보처리방침 — Sebastien Rousseau",
     "subtitle": "귀하의 프라이버시를 소중히 다룹니다.",
-    "description": "본 사이트가 데이터를 어떻게 수집·이용·보호하는지: 익명 접속 측정, 쿠키, 호스팅, GDPR 권리.",
-    "keywords": "개인정보, GDPR, 쿠키, 개인 데이터, 분석"
+    "description": "본 사이트가 어떤 개인정보를 왜 처리하는지, 누가 대신 처리하는지, 보관 기간, 그리고 ICO에 대한 민원 제기를 포함한 UK GDPR상의 귀하의 권리.",
+    "keywords": "개인정보 고지, UK GDPR, PECR, 문의 양식, Formspree, reCAPTCHA, 익명 집계, 쿠키, 로컬 스토리지, 정보주체의 권리, Information Commissioner's Office"
   },
   "projects": {
     "title": "프로젝트 — Sebastien Rousseau",
