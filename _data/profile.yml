@@ -95,6 +95,7 @@ leadership:
 epaa:
   role: "member and contributor"
   organisation: "Emerging Payments Association Asia"
+  url: "https://emergingpaymentsasia.org/"
   working_group: "Quantum-Safe Cryptography Working Group"
   paper: "Quantum-Safe Payments: Why the Payments Industry Must Act Now"
   paper_date: "2025-09"

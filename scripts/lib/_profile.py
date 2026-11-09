@@ -152,7 +152,11 @@ def _member_of(p: dict[str, Any]) -> list[dict[str, Any]]:
         {
             "@type": "ProgramMembership",
             "programName": epaa["working_group"],
-            "hostingOrganization": {"@type": "Organization", "name": epaa["organisation"]},
+            "hostingOrganization": {
+                "@type": "Organization",
+                "name": epaa["organisation"],
+                "url": epaa["url"],
+            },
         },
         {
             "@type": "OrganizationRole",

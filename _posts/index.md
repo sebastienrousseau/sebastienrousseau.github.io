@@ -58,7 +58,7 @@ atom_link: "https://sebastienrousseau.com/rss.xml"
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "AI, banking and financial services expert. Senior payments leader with nearly two decades across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services."
+item_description: "Senior payments and financial services leader with more than 20 years in payments, banking and digital technology. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services."
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
 item_pub_date: "Mon, 15 Apr 2024 06:06:06 +0000"
@@ -189,7 +189,7 @@ site_software: "Static Site Generator, Rust"
 <p class="proof-note">Most downloads come from transitive dependencies in CI/CD pipelines and production services across PyPI, crates.io, and npm &middot; <span class="proof-updated">Updated <time datetime="2026-10-15">15 Oct 2026</time>.</span></p>
 <p class="feat-eyebrow">Career</p>
 <h3 id="trusted" class="feat-headline center">Where I've worked.</h3>
-<p class="feat-sub center">Nearly two decades of in-house payments and digital product leadership at HSBC, PayPal, Barclays, Shazam, AKQA, and Virgin Group.</p>
+<p class="feat-sub center">More than 20 years in payments, banking and digital technology.</p>
 <div class="brands" role="group" aria-label="Organisations across my career">
 <img alt="HSBC logo" src="/_csp/logo-hsbc.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
 <img alt="PayPal logo" src="/_csp/logo-paypal.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
