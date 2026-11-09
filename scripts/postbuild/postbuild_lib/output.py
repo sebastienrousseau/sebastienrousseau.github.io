@@ -20,6 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 import _lang_registry as _lr
+import _profile
 from _frontmatter import parse_frontmatter as _shared_parse_frontmatter
 
 
@@ -343,13 +344,7 @@ def build_llms_txt() -> str:
     out: list[str] = []
     out.append("# Sebastien Rousseau")
     out.append("")
-    out.append(
-        "AI, banking and financial services expert. Senior payments leader "
-        "at HSBC Commercial & Investment Bank. Nearly two decades across Tier-1 "
-        "banks (HSBC, PayPal, Barclays) and consumer technology (Shazam, "
-        "AKQA, Virgin Group). Applied AI, ISO 20022 migration, wholesale "
-        "payments and post-quantum cryptography for financial services."
-    )
+    out.append(_profile.load()["bios"]["short"])
     out.append("")
     out.append("## Canonical entry points")
     out.append("")
@@ -641,9 +636,7 @@ def build_llms_ctx_txt() -> str:
     out.append("")
     out.append("## Author")
     out.append("- Sebastien Rousseau, London, UK.")
-    out.append(
-        "- Senior payments leader, nearly two decades at Tier-1 banks (HSBC, PayPal, Barclays)."
-    )
+    out.append(f"- {_profile.load()['bios']['one_line']}")
     out.append("- ORCID: https://orcid.org/0009-0005-1434-284X")
     out.append("- GitHub: https://github.com/sebastienrousseau")
     out.append("- LinkedIn: https://www.linkedin.com/in/sebastienrousseau/")

@@ -40,6 +40,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import _profile
 from build_topics import TOPICS, read_frontmatter
 
 PUBLIC = Path("public")
@@ -191,10 +192,11 @@ ORCID_ID = "0009-0005-1434-284X"
 
 
 def build_person() -> dict[str, object]:
-    """Person graph carrying ORCID identifier, hasCredential chain, and
-    knowsAbout as DefinedTerm objects with sameAs links to Wikipedia /
-    standards-body authoritative URLs. Matches the @graph block emitted
-    in _layouts/*.html — keep both in sync."""
+    """Person graph: ORCID identifier and knowsAbout as DefinedTerm objects
+    with sameAs links to Wikipedia / standards-body URLs, plus the facts
+    _data/profile.yml owns (title, bio, employer, schools, memberships,
+    credentials), merged from _profile.person_fields as postbuild merges
+    them into the layouts' @graph."""
     return {
         "@context": "https://schema.org",
         "@type": "Person",
@@ -204,76 +206,12 @@ def build_person() -> dict[str, object]:
         "familyName": "Rousseau",
         "url": BASE + "/",
         "image": "https://cloudcdn.pro/stocks/images/sebastienrousseau.webp",
-        "jobTitle": "Senior Product Manager, Wholesale Payments & API",
-        "description": (
-            "AI, banking and financial services expert. Senior payments leader "
-            "with nearly two decades across Tier-1 banks. Applied AI, wholesale payments, "
-            "ISO 20022 migration, and post-quantum cryptography for financial services."
-        ),
         "identifier": {
             "@type": "PropertyValue",
             "propertyID": "ORCID",
             "value": ORCID_ID,
             "url": f"https://orcid.org/{ORCID_ID}",
         },
-        "worksFor": {
-            "@type": "Organization",
-            "@id": "https://www.hsbc.com/#organization",
-            "name": "HSBC Commercial & Investment Bank",
-            "url": "https://www.hsbc.com/",
-        },
-        "alumniOf": [
-            {"@type": "Organization", "name": "PayPal", "url": "https://www.paypal.com/"},
-            {"@type": "Organization", "name": "Barclays", "url": "https://www.barclays.com/"},
-            {
-                "@type": "Organization",
-                "name": "Shazam Entertainment",
-                "url": "https://www.shazam.com/",
-            },
-            {"@type": "Organization", "name": "AKQA", "url": "https://www.akqa.com/"},
-            {"@type": "Organization", "name": "Virgin Group", "url": "https://www.virgin.com/"},
-        ],
-        "memberOf": {
-            "@type": "ProgramMembership",
-            "programName": "Quantum-Safe Cryptography Working Group",
-            "hostingOrganization": {
-                "@type": "Organization",
-                "name": "Emerging Payments Association Asia",
-                "url": "https://emergingpaymentsasia.org/",
-            },
-        },
-        "hasCredential": [
-            {
-                "@type": "EducationalOccupationalCredential",
-                "credentialCategory": "professional experience",
-                "name": "Nearly two decades across Tier-1 banks and global payments infrastructure",
-                "recognizedBy": {
-                    "@type": "Organization",
-                    "name": "HSBC Commercial & Investment Bank",
-                    "url": "https://www.hsbc.com/",
-                },
-            },
-            {
-                "@type": "EducationalOccupationalCredential",
-                "credentialCategory": "domain expertise",
-                "name": "ISO 20022 migration and wholesale payments architecture",
-                "recognizedBy": {
-                    "@type": "Organization",
-                    "name": "SWIFT",
-                    "url": "https://www.swift.com/",
-                },
-            },
-            {
-                "@type": "EducationalOccupationalCredential",
-                "credentialCategory": "domain expertise",
-                "name": "Post-Quantum Cryptography for financial services",
-                "recognizedBy": {
-                    "@type": "Organization",
-                    "name": "NIST Post-Quantum Cryptography Project",
-                    "url": "https://csrc.nist.gov/projects/post-quantum-cryptography",
-                },
-            },
-        ],
         "knowsAbout": [
             {
                 "@type": "DefinedTerm",
@@ -336,11 +274,6 @@ def build_person() -> dict[str, object]:
                 "sameAs": "https://en.wikipedia.org/wiki/Generative_artificial_intelligence",
             },
         ],
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "London",
-            "addressCountry": "United Kingdom",
-        },
         "sameAs": [
             f"https://orcid.org/{ORCID_ID}",
             "https://x.com/wwdseb",
@@ -349,7 +282,7 @@ def build_person() -> dict[str, object]:
             "https://www.youtube.com/@BankingOnQuantum",
             "https://github.com/sebastienrousseau",
         ],
-    }
+    } | _profile.person_fields(BASE)
 
 
 def build_organization() -> dict[str, object]:
