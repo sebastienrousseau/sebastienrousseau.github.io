@@ -6,7 +6,6 @@
 from __future__ import annotations
 
 import json
-import re
 
 import _profile
 from postbuild_lib.profile_person import apply_person_profile
@@ -46,9 +45,11 @@ def _page(graph: object, pretty: bool = True) -> str:
 
 
 def _graph(html: str) -> list[dict]:
-    body = re.search(r"<script[^>]*>(.*?)</script\s*>", html, re.S | re.I)
-    assert body
-    return json.loads(body.group(1))["@graph"]
+    # The page is built by _page() above, so its one JSON-LD block sits
+    # between a known opening tag and the closing tag.
+    start = html.index('type="application/ld+json">') + len('type="application/ld+json">')
+    end = html.index("</script>", start)
+    return json.loads(html[start:end])["@graph"]
 
 
 def test_person_takes_profile_facts_and_keeps_theme_fields() -> None:

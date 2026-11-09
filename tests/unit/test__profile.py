@@ -92,3 +92,15 @@ def test_person_fields_carry_no_invented_credentials() -> None:
     assert "recognizedBy" not in repr(person)
     assert {c["credentialCategory"] for c in person["hasCredential"]} == {"certificate"}
     assert person["memberOf"][0]["programName"] == "Quantum-Safe Cryptography Working Group"
+
+
+def test_committed_metrics_snapshot_states_the_profile_figure() -> None:
+    """The byte-identical rebuild runs with SKIP_METRICS_FETCH, so it renders
+    the committed metrics.json. Its years figure must be the profile's, or the
+    About tile reverts (it printed 19 when the snapshot predated the profile)."""
+    import json
+    from pathlib import Path
+
+    snap = Path(__file__).resolve().parents[2] / "_data" / "proof" / "metrics.json"
+    stats = {s["key"]: s for s in json.loads(snap.read_text(encoding="utf-8"))["stats"]}
+    assert stats["years_payments"]["value"] == _profile.experience_figure()
