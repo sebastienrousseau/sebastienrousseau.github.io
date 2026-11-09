@@ -120,7 +120,7 @@ You can read every page without giving any personal data. The site sets no cooki
 
 **Diagrams.** On articles that contain diagrams, the diagram library (Mermaid) is loaded from the jsDelivr content network, which receives your IP address to serve the file.
 
-**Embedded players.** The [playlists](/playlists/index.html) page embeds Spotify players. When a player loads, Spotify receives your IP address and may set its own cookies under the [Spotify privacy policy](https://www.spotify.com/uk/legal/privacy-policy/).
+**Playlists.** On the [playlists](/playlists/index.html) page, cover images come from Spotify's image servers, which receive your IP address to serve them. The Spotify players themselves load only when you press play on one: until then nothing is sent to the Spotify player, and once it loads Spotify may set its own cookies under the [Spotify privacy policy](https://www.spotify.com/uk/legal/privacy-policy/).
 
 ### Contacting me
 
@@ -136,7 +136,7 @@ The Banking On Quantum newsletter is run on its own platform at [news.bankingonq
 
 ## Storage on your device
 
-The site stores two preferences in your browser's local storage: `theme` (light or dark) and `wf` (whether the web fonts have loaded before, so later pages can use them straight away). Neither identifies you, and neither is sent anywhere. reCAPTCHA sets its own cookies only when you use the contact form, and Spotify may set cookies when a player loads on the playlists page.
+The site stores two preferences in your browser's local storage: `theme` (light or dark) and `wf` (whether the web fonts have loaded before, so later pages can use them straight away). Neither identifies you, and neither is sent anywhere. reCAPTCHA sets its own cookies only when you use the contact form, and Spotify may set cookies only after you press play on a player on the playlists page.
 
 No consent banner is shown because the site itself uses only storage that is strictly necessary or that you trigger by using a feature. If analytics or advertising are ever added, this notice and a consent choice will come first.
 
