@@ -1,0 +1,186 @@
+# SPDX-FileCopyrightText: 2007-2026 Sebastien Rousseau
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+#
+# The one place a page may take a title, year, role, credential or bio from.
+# Source: LinkedIn profile export (8 Nov 2026) and answers given on 9 Nov 2026.
+# Change here, nowhere else. Every statement below is backed by a dated role,
+# a published document or a public metric; nothing is estimated.
+
+# ---------------------------------------------------------------- identity
+name: "Sebastien Rousseau"
+location: "London, United Kingdom"
+email_public: "contact@sebastienrousseau.com"  # the site address; the personal Gmail stays off the site
+linkedin: "https://www.linkedin.com/in/sebastienrousseau"
+orcid: "https://orcid.org/0009-0005-1434-284X"
+
+# ------------------------------------------------------------- positioning
+# How the site introduces you, from the eyebrow to the long bio.
+descriptor: "Senior payments and financial services leader"
+career_start_year: 2000  # Virgin, July 2000
+experience_phrase: "more than 20 years"  # matches LinkedIn's "20+ years"
+experience_scope: "in payments, banking and digital technology"
+
+job_title_formal: "Senior Product Manager, Wholesale Payments & API"  # LinkedIn headline; JSON-LD jobTitle
+job_title_short: "Senior Product Manager, Wholesale Payments & API"
+role_internal: "Senior Digital Product Manager, GPS Client Connectivity, CIB"  # HSBC position title
+employer: "HSBC"
+employer_unit: "Commercial & Investment Banking"
+at_employer_since: 2019  # permanent from Dec 2019; 2016 to 2019 via Reedia (see career)
+
+# The one sentence a page or an AI answer may quote verbatim.
+positioning: >-
+  Sebastien Rousseau is a senior payments and financial services leader
+  who has built and led digital, mobile and payments businesses for more
+  than 20 years, from founding and running his own consultancy to heading
+  AKQA's mobile technology division, and now leads wholesale payments API
+  products at HSBC.
+
+focus:
+  - "ISO 20022"
+  - "SWIFT gpi"
+  - "SEPA Instant Payments"
+  - "Open Banking"
+  - "cross-border payment rails"
+  - "post-quantum cryptography"
+  - "agentic AI in banking"
+
+# What a board or executive committee would ask you about. Used by the
+# Speaking page, the media kit and the topic hubs.
+executive_agenda:
+  - "Quantum-safe migration as a board-level risk: harvest-now-decrypt-later and the timeline to act"
+  - "ISO 20022 as a business programme, not a format change: data quality, client value and cost of delay"
+  - "Agentic AI in banking operations: moving from demo to auditable, governed workflow"
+  - "Open source as financial infrastructure: supply-chain assurance banks can inspect"
+
+include_aerospace: false  # not in the career history: removed from all author cards
+
+# ---------------------------------------------------------- leadership record
+# Each line names the role it comes from (career below). Used for the About
+# page's "Leadership" section and the long bio.
+leadership:
+  - role: "Founder and Chief Executive Officer, Reedia Ltd"
+    years: "2013–2019"
+    statement: "Founded Reedia Ltd and ran it as Chief Executive Officer for nearly seven years, delivering senior engagements for HSBC and Rufus Leonard through it."
+  - role: "Head of Mobile Technology, AKQA"
+    years: "2008–2012"
+    statement: "Headed AKQA's mobile technology division, leading mobile work for Nike, RBS, MTV, GAP, Nokia and Target."
+  - role: "Head of Mobile, Shazam"
+    years: "2012"
+    statement: "Led mobile at Shazam as it extended from music recognition into second-screen TV experiences."
+  - role: "Mobile Banking Workstream Lead, Barclays Corporate Banking"
+    years: "2013–2014"
+    statement: "Led a mobile banking transformation workstream for Barclays Corporate Banking with zero critical post-launch incidents."
+  - role: "Senior Solutions Architect, PayPal"
+    years: "2014–2015"
+    statement: "Shaped PayPal's HCE and tokenisation strategy with tier-one banks and mobile operators across the UK and Europe."
+  - role: "Senior Product Manager, Wholesale Payments & API, HSBC"
+    years: "2016–present"
+    statement: "Leads wholesale payments API products in HSBC Commercial & Investment Banking, having joined in 2016 as API Engineering Lead."
+  - role: "Member, EPAA Quantum-Safe Cryptography Working Group"
+    years: "2025"
+    statement: "Works on the payments industry's post-quantum migration as a member of the Emerging Payments Association Asia's Quantum-Safe Cryptography Working Group and a contributor to its white paper."
+
+# --------------------------------------------------------------------- EPAA
+epaa:
+  role: "member and contributor"
+  organisation: "Emerging Payments Association Asia"
+  working_group: "Quantum-Safe Cryptography Working Group"
+  paper: "Quantum-Safe Payments: Why the Payments Industry Must Act Now"
+  paper_date: "2025-09"
+  wording: "Member of the EPAA Quantum-Safe Cryptography Working Group and contributor to its white paper Quantum-Safe Payments: Why the Payments Industry Must Act Now (September 2025)"
+  short: "EPAA Quantum-Safe Working Group member"
+
+# ------------------------------------------------------------------- career
+career:  # newest first; used by About and the Person JSON-LD
+  - {org: "HSBC", title: "Senior Digital Product Manager, GPS Client Connectivity, CIB", from: "2019-12", to: null}
+  - {org: "HSBC", title: "API Engineering Lead (via Reedia Ltd)", from: "2016-09", to: "2019-12"}
+  - {org: "Reedia Ltd", title: "Chief Executive Officer & Founder", from: "2013-02", to: "2019-12"}
+  - {org: "Rufus Leonard", title: "Senior Mobile Solutions Consultant (via Reedia Ltd)", from: "2015-05", to: "2016-09"}
+  - {org: "PayPal", title: "Senior Solutions Architect, Professional Services & Strategic Partnerships", from: "2014-06", to: "2015-03"}
+  - {org: "Barclays Corporate Banking", title: "Mobile Banking Workstream Lead (contract)", from: "2013-02", to: "2014-06"}
+  - {org: "Shazam", title: "Head of Mobile", from: "2012-04", to: "2012-12"}
+  - {org: "AKQA", title: "Head of Mobile Technology", from: "2008-05", to: "2012-04"}
+  - {org: "AKQA", title: "Technical Manager", from: "2007-04", to: "2008-05"}
+  - {org: "AKQA", title: "Java Software Engineer", from: "2006-09", to: "2007-04"}
+  - {org: "AKQA", title: "Technical Web Architect / Senior Web Developer", from: "2005-10", to: "2006-09"}
+  - {org: "JSB Training and Development", title: "Internet Technology Manager", from: "2004-01", to: "2005-09"}
+  - {org: "Consotel", title: "Senior Web Developer", from: "2000-10", to: "2003"}
+  - {org: "Virgin", title: "Web Developer", from: "2000-07", to: "2000-09"}
+
+education:
+  - {org: "University of Westminster", award: "Postgraduate studies, Computer Science", years: "1999–2000"}
+  - {org: "Institut Supérieur de Gestion", award: "Bachelor of Business Administration, Marketing, Finance", years: "1997–1999"}
+  - {org: "Université Sorbonne Nouvelle (Paris III)", award: "Applied Modern Languages, English–Spanish", years: "1996–1997"}
+
+languages:  # Person.knowsLanguage
+  - {code: "en", level: "native or bilingual"}
+  - {code: "fr", level: "native or bilingual"}
+  - {code: "es", level: "limited working"}
+  - {code: "de", level: "elementary"}
+
+memberships:
+  - "Fellow of the Institution of Analysts and Programmers (FIAP)"
+  - "Member, Emerging Payments Association Asia Quantum-Safe Cryptography Working Group"
+
+certifications:  # names exactly as on LinkedIn; issuers not stated, so none shown
+  - "Rust Programming: From Fundamentals to Advanced Concepts with AI-Assisted Development"
+  - "Quantum Computing Fundamentals"
+  - "Docker Foundations Professional Certificate"
+  - "AI Essentials for Marketers"
+
+awards:  # names only, as on LinkedIn
+  - "Mobile Agency of the Year"
+  - "Agency of the Year"
+  - "Best Branded Social TV Award"
+  - "Best 2nd Screen Experience for TV on Mobile or Tablet (Shazam for TV)"
+
+# Open-source standing is read from _data/proof/metrics.json at build time
+# (downloads_total, packages_published, github_stars), never typed here.
+open_source:
+  role: "Creator and maintainer of open-source payments, cryptography and developer tooling"
+  metrics_keys: ["downloads_total", "packages_published", "github_stars"]
+
+talks:  # no venues on record, so none may show "Delivered"
+  - {title: "Post-Quantum Migration for Payments: From FIPS 203 to Inspectable Code", status: available}
+  - {title: "ISO 20022 in Practice: pacs.008, pain.001, and the Structured-Address Cliff", status: available}
+  - {title: "Open Source as Financial Infrastructure", status: available}
+  - {title: "Harvest-Now-Decrypt-Later: The Board-Level Case for Quantum-Safe Payments", status: available}
+  - {title: "Agentic AI in Banking: From Demo to Auditable Workflow", status: available}
+
+# --------------------------------------------------------------------- bios
+# Third person. The media kit, Speaking page and conference submissions use
+# these; the author box uses `short`.
+bios:
+  one_line: >-
+    Senior payments and financial services leader; leads wholesale payments
+    API products at HSBC and works on quantum-safe payments with the EPAA.
+  short: >-
+    Sebastien Rousseau is a senior payments and financial services leader
+    with more than 20 years in payments, banking and digital technology. He
+    leads wholesale payments API products at HSBC and is a member of the
+    Emerging Payments Association Asia's Quantum-Safe Cryptography Working
+    Group.
+  long: >-
+    Sebastien Rousseau is a senior payments and financial services leader
+    with more than 20 years in payments, banking and digital technology. At
+    HSBC he leads wholesale payments API products in Commercial & Investment
+    Banking, which he joined in 2016 as API Engineering Lead. Before that he
+    founded and ran Reedia Ltd as Chief Executive Officer, shaped PayPal's
+    HCE and tokenisation strategy with tier-one banks, led a mobile banking
+    transformation at Barclays Corporate Banking, was Head of Mobile at
+    Shazam, and headed AKQA's mobile technology division for clients
+    including Nike, RBS and Nokia. He is a member of the EPAA Quantum-Safe
+    Cryptography Working Group, a Fellow of the Institution of Analysts and
+    Programmers, and the maintainer of widely used open-source payments and
+    cryptography libraries. He speaks and writes on ISO 20022, post-quantum
+    migration and agentic AI in banking.
+
+# ------------------------------------------------- executive evidence to add
+# These make the strongest leadership case, but only you can state them, and
+# only if they are public or cleared with HSBC. Add a key here and A-2 will
+# render it; until then nothing is shown or estimated.
+#   team_size_led:        e.g. largest team you managed, with the role
+#   budget_or_portfolio:  e.g. product portfolio, volumes, clients, markets
+#   reedia_scale:         e.g. clients served, people placed, years profitable
+#   governance_roles:     steering committees, boards, advisory roles
+#   award_details:        year and awarding body for each award
