@@ -15,6 +15,7 @@ fails when a source states one another way.
 from __future__ import annotations
 
 import datetime as _dt
+import re
 from functools import cache
 from pathlib import Path
 from typing import Any
@@ -94,6 +95,14 @@ def experience_sentence() -> str:
     """'more than 20 years in payments, banking and digital technology'."""
     p = load()
     return f"{p['experience_phrase']} {p['experience_scope']}"
+
+
+def experience_figure() -> str:
+    """The figure a stat tile prints: "20+" for "more than 20 years"."""
+    m = re.search(r"\d+", load()["experience_phrase"])
+    if not m:
+        raise ProfileError("experience_phrase must contain a number of years")
+    return f"{m.group(0)}+"
 
 
 def author_card() -> dict[str, str]:

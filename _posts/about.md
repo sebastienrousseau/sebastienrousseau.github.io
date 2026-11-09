@@ -102,8 +102,8 @@ site_software: "Static Site Generator, Rust"
 
 <section class="proof-rail" aria-label="Track record at a glance" data-reveal>
   <div class="kpi-cell">
-    <span class="kpi-cell-value" data-kpi="years_payments">19</span>
-    <span class="kpi-cell-label">Years in payments and banking tech</span>
+    <span class="kpi-cell-value" data-kpi="years_payments">20+</span>
+    <span class="kpi-cell-label">Years in payments, banking and digital technology</span>
   </div>
   <div class="kpi-cell">
     <span class="kpi-cell-value" data-kpi="articles_signed">115</span>
@@ -125,8 +125,8 @@ site_software: "Static Site Generator, Rust"
       <p class="narrative-eyebrow">The work</p>
       <h2 id="about-work" class="narrative-head">Wholesale payments infrastructure that has to be correct.</h2>
       <div class="narrative-body">
-        <p>Senior payments leader at HSBC Commercial &amp; Investment Bank, working on Treasury APIs, Banking-as-a-Service, and the ISO 20022 wholesale rails that settle correspondent payments at scale.</p>
-        <p>Nearly two decades across Tier-1 banks (HSBC, PayPal, Barclays) and consumer technology (Shazam, AKQA, Virgin). The same product-engineering discipline now applies to retail, wholesale, and post-quantum work.</p>
+        <p>Senior payments and financial services leader. At HSBC Commercial &amp; Investment Banking he leads wholesale payments API products: Treasury APIs, Banking-as-a-Service, and the ISO 20022 wholesale rails that settle correspondent payments at scale.</p>
+        <p>More than 20 years in payments, banking and digital technology: founder and chief executive of Reedia, head of mobile technology at AKQA, Head of Mobile at Shazam, and senior roles at PayPal and Barclays. The same product-engineering discipline now applies to retail, wholesale, and post-quantum work.</p>
       </div>
       <a class="pill" href="/case-studies/index.html">See the case studies ›</a>
     </div>
@@ -136,6 +136,8 @@ site_software: "Static Site Generator, Rust"
   </div>
 </section>
 
+<!-- profile:about -->
+
 <section class="narrative-section alt reverse" aria-labelledby="about-research" data-reveal>
   <div class="narrative-wrap">
     <div>
@@ -143,7 +145,7 @@ site_software: "Static Site Generator, Rust"
       <h2 id="about-research" class="narrative-head">Banking research, signed and dated. Every article verifiable.</h2>
       <div class="narrative-body">
         <p>Applied AI, ISO 20022, post-quantum cryptography. Every piece written for senior architects and CTOs who need to make architectural calls, not read press releases.</p>
-        <p>Cited in the EPAA <em><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" rel="external noopener">Quantum-Safe Payments</a></em> white paper (Sept 2025). Editor of <em>Banking On Quantum</em> and <em>Banking On AI</em>. Member of the EPAA Quantum-Safe Cryptography Working Group.</p>
+        <p>Member of the EPAA Quantum-Safe Cryptography Working Group and contributor to its white paper <em><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" rel="external noopener">Quantum-Safe Payments: Why the Payments Industry Must Act Now</a></em> (September 2025). Editor of <em>Banking On Quantum</em> and <em>Banking On AI</em>.</p>
       </div>
       <a class="pill" href="/articles/index.html">Read the research ›</a>
     </div>

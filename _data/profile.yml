@@ -62,25 +62,32 @@ include_aerospace: false  # not in the career history: removed from all author c
 # Each line names the role it comes from (career below). Used for the About
 # page's "Leadership" section and the long bio.
 leadership:
-  - role: "Founder and Chief Executive Officer, Reedia Ltd"
+  - card: reedia
+    role: "Founder and Chief Executive Officer, Reedia Ltd"
     years: "2013–2019"
-    statement: "Founded Reedia Ltd and ran it as Chief Executive Officer for nearly seven years, delivering senior engagements for HSBC and Rufus Leonard through it."
-  - role: "Head of Mobile Technology, AKQA"
+    statement: "Founded Reedia Ltd and ran it as Chief Executive Officer for nearly seven years, delivering senior technology engagements through it, including the HSBC API engineering role that became his permanent post."
+  - card: akqa
+    role: "Head of Mobile Technology, AKQA"
     years: "2008–2012"
     statement: "Headed AKQA's mobile technology division, leading mobile work for Nike, RBS, MTV, GAP, Nokia and Target."
-  - role: "Head of Mobile, Shazam"
+  - card: shazam
+    role: "Head of Mobile, Shazam"
     years: "2012"
     statement: "Led mobile at Shazam as it extended from music recognition into second-screen TV experiences."
-  - role: "Mobile Banking Workstream Lead, Barclays Corporate Banking"
+  - card: barclays
+    role: "Mobile Banking Workstream Lead, Barclays Corporate Banking"
     years: "2013–2014"
     statement: "Led a mobile banking transformation workstream for Barclays Corporate Banking with zero critical post-launch incidents."
-  - role: "Senior Solutions Architect, PayPal"
+  - card: paypal
+    role: "Senior Solutions Architect, PayPal"
     years: "2014–2015"
     statement: "Shaped PayPal's HCE and tokenisation strategy with tier-one banks and mobile operators across the UK and Europe."
-  - role: "Senior Product Manager, Wholesale Payments & API, HSBC"
+  - card: hsbc
+    role: "Senior Product Manager, Wholesale Payments & API, HSBC"
     years: "2016–present"
     statement: "Leads wholesale payments API products in HSBC Commercial & Investment Banking, having joined in 2016 as API Engineering Lead."
-  - role: "Member, EPAA Quantum-Safe Cryptography Working Group"
+  - card: epaa
+    role: "Member, EPAA Quantum-Safe Cryptography Working Group"
     years: "2025"
     statement: "Works on the payments industry's post-quantum migration as a member of the Emerging Payments Association Asia's Quantum-Safe Cryptography Working Group and a contributor to its white paper."
 

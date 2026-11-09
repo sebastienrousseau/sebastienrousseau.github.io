@@ -50,6 +50,9 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "scripts" / "lib"))
+import _profile
+
 OUT_PATH = ROOT / "_data" / "proof" / "metrics.json"
 
 # Pinned PyPI package list — pypistats has no per-account rollup, so we
@@ -135,11 +138,11 @@ def _articles_count() -> int:
     )
 
 
-def _years_active() -> int:
-    """Earliest dated post is 2018-01-01 — use that as 'years writing'.
-    Earliest commercial role started 2007 (per About page) — use that
-    as 'years in payments / banking technology'."""
-    return _dt.date.today().year - 2007
+def _years_active() -> str:
+    """The experience figure ("20+") from _data/profile.yml. It used to
+    count from 2007, a start year the career history does not support,
+    and printed 19 beside copy that said "20+"."""
+    return _profile.experience_figure()
 
 
 def _format_compact(n: int) -> str:
@@ -218,10 +221,10 @@ def main() -> int:
         "stats": [
             {
                 "key": "years_payments",
-                "label": "Years in payments and banking technology",
+                "label": "Years in payments, banking and digital technology",
                 "value": years_payments,
                 "format": "plain",
-                "source": "About page — HSBC / PayPal / Barclays / Shazam / AKQA / Virgin Group",
+                "source": "_data/profile.yml (experience_phrase)",
             },
             {
                 "key": "articles_signed",

@@ -114,7 +114,7 @@ site_software: "Static Site Generator, Rust"
   <span class="kpi-cell-label">Sigstore-signed articles</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value" data-kpi="years_payments">19</span>
+  <span class="kpi-cell-value" data-kpi="years_payments">20+</span>
   <span class="kpi-cell-label">Years shipping in production</span>
 </div>
 </section>

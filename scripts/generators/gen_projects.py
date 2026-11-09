@@ -518,7 +518,7 @@ def proof_rail_block() -> str:
     downloads = _fmt("downloads_total", "51.2M")
     stars = _fmt("github_stars", "694")
     articles = _fmt("articles_signed", "115")
-    years = _fmt("years_payments", "19")
+    years = _fmt("years_payments", "20+")
     # Split each kpi-cell across multiple lines — SSG's custom-block parser
     # treats single-line <div class="x-y"> as a shortcode and replaces the
     # body with an error alert. Multi-line divs pass through as raw HTML.
