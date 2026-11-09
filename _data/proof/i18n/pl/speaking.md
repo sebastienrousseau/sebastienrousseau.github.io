@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Wykłady sztandarowe
   headline: Wystąpienia zbudowane dla sali zarządu.
   lede: 'Każde wystąpienie zamienia bieżący problem branżowy w decyzję, na którą sala może zareagować. Bez prezentacji produktu, bez przeglądu dostawców: obronialne stanowisko i dowody, które za nim stoją.'
-  flag_delivered: Już wygłoszony · Dostępny
+  flag_available: Dostępny
   flag_new: Nowość na 2026
   outcome_label: 'Wychodzisz z:'
   talks:

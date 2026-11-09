@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Conférences phares
   headline: Des interventions pensées pour le conseil d'administration.
   lede: 'Chaque intervention transforme un problème sectoriel actuel en une décision que la salle peut prendre. Pas d''argumentaire produit, pas de tour d''horizon des fournisseurs : une position défendable et les preuves qui la soutiennent.'
-  flag_delivered: Déjà donnée · Disponible
+  flag_available: Disponible
   flag_new: Nouveau pour 2026
   outcome_label: 'Vous repartez avec :'
   talks:

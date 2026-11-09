@@ -53,7 +53,7 @@ keynotes:
   eyebrow: 代表性演讲
   headline: 为董事会会议室打造的演讲。
   lede: 每一场演讲都把一个正在发生的行业难题，变成一屋子人能着手去办的决定。没有产品推销，没有厂商巡礼：只有站得住的立场，以及支撑它的证据。
-  flag_delivered: 已讲过 · 现可预约
+  flag_available: 现可预约
   flag_new: 2026 年全新
   outcome_label: 您将带走：
   talks:

@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Meghatározó előadások
   headline: Előadások az igazgatósági terembe.
   lede: 'Minden előadás egy élő ágazati problémát olyan döntéssé alakít, amellyel a terem kezdeni tud valamit. Nincs termékajánlat, nincs gyártói körkép: védhető álláspont és a mögötte álló bizonyíték.'
-  flag_delivered: Már elhangzott · Elérhető
+  flag_available: Elérhető
   flag_new: Új 2026-ra
   outcome_label: 'Ezzel távozik:'
   talks:

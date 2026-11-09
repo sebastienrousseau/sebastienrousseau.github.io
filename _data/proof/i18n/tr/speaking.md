@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Öne çıkan konuşmalar
   headline: Yönetim kurulu odası için kurulmuş konuşmalar.
   lede: 'Her konuşma, sektörün canlı bir sorununu salonun harekete geçebileceği bir karara dönüştürür. Ürün sunumu yok, tedarikçi turu yok: savunulabilir bir duruş ve onu ayakta tutan kanıt.'
-  flag_delivered: Daha önce yapıldı · Şimdi uygun
+  flag_available: Şimdi uygun
   flag_new: 2026 için yeni
   outcome_label: 'Şunlarla ayrılırsınız:'
   talks:

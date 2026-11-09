@@ -404,3 +404,25 @@ def test_patch_head_keeps_one_theme_color_per_media_condition() -> None:
     out = bs._patch_head(shell, "T", "S", "D")
     head = out[: out.find("</head>")]
     assert head.count('name="theme-color"') == 2
+
+
+def test_talk_flag_is_available_unless_profile_records_a_venue(monkeypatch) -> None:
+    """No talk reads "Delivered" until profile.yml gives it a venue and a date."""
+    flags = {"new": "New for 2026", "available": "Available to book"}
+    assert bs._talk_flag({"title": "Open Source as Financial Infrastructure"}, flags) == (
+        "Available to book"
+    )
+    assert bs._talk_flag({"title": "x", "new": True}, flags) == "New for 2026"
+    monkeypatch.setitem(bs._DELIVERED, "x", {"venue": "Sibos, Frankfurt", "date": "2026-10"})
+    assert bs._talk_flag({"title": "x"}, flags) == "Delivered: Sibos, Frankfurt, 2026-10"
+
+
+def test_no_committed_talk_claims_delivered() -> None:
+    import _profile
+
+    talks = _profile.load()["talks"]
+    assert all(t["status"] == "available" for t in talks)
+    data, _bio = bs._parse_source()
+    html = bs._keynotes(data, "#")
+    assert html.count("Available to book") + html.count("New for 2026") == len(talks)
+    assert "Delivered" not in html

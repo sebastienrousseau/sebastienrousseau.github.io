@@ -53,7 +53,7 @@ keynotes:
   eyebrow: 代表性演講
   headline: 為董事會會議室打造的演講。
   lede: 每一場演講都把一個正在發生的產業難題，變成一屋子人能著手去辦的決定。沒有產品推銷，沒有廠商巡禮：只有站得住的立場，以及支撐它的證據。
-  flag_delivered: 已講過 · 現可預約
+  flag_available: 現可預約
   flag_new: 2026 年全新
   outcome_label: 您將帶走：
   talks:

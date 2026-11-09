@@ -76,7 +76,7 @@ keynotes:
   eyebrow: "Signature keynotes"
   headline: "Talks built for the boardroom."
   lede: "Each talk turns a live industry problem into a decision a room can act on. Every one is tagged for the audience it is written for, and can be tailored to yours."
-  flag_delivered: "Delivered · Available now"
+  flag_available: "Available to book"
   flag_new: "New for 2026"
   outcome_label: "You leave with:"
   talks:

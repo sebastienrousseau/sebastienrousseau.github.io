@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Conferencias insignia
   headline: Charlas pensadas para el consejo.
   lede: 'Cada charla convierte un problema vivo del sector en una decisión sobre la que una sala puede actuar. Sin argumentario de producto ni repaso de proveedores: una postura defendible y las pruebas que la sostienen.'
-  flag_delivered: Ya impartida · Disponible
+  flag_available: Disponible
   flag_new: Nueva para 2026
   outcome_label: 'Te llevas:'
   talks:

@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Palestras principais
   headline: Falas pensadas para o conselho.
   lede: 'Cada fala transforma um problema atual do setor em uma decisão sobre a qual a sala pode agir. Sem discurso de venda, sem panorama de fornecedores: uma posição defensável e as evidências que a sustentam.'
-  flag_delivered: Já apresentada · Disponível
+  flag_available: Disponível
   flag_new: Nova para 2026
   outcome_label: 'Você sai com:'
   talks:

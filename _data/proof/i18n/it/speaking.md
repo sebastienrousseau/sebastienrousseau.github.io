@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Keynote principali
   headline: Interventi pensati per il consiglio.
   lede: 'Ogni intervento trasforma un problema vivo del settore in una decisione su cui una sala può agire. Nessun pitch di prodotto, nessuna rassegna di fornitori: una posizione difendibile e le prove che la sostengono.'
-  flag_delivered: Già tenuto · Disponibile
+  flag_available: Disponibile
   flag_new: Nuovo per il 2026
   outcome_label: 'Porti a casa:'
   talks:

@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Ucaptama utama
   headline: Ceramah yang dibina untuk bilik lembaga pengarah.
   lede: 'Setiap ceramah menukar persoalan industri yang sedang hangat menjadi keputusan yang boleh ditindaki oleh dewan. Tiada jualan produk, tiada senarai pembekal: hanya pendirian yang boleh dipertahankan dan bukti yang menyokongnya.'
-  flag_delivered: Pernah disampaikan · Tersedia kini
+  flag_available: Tersedia kini
   flag_new: Baharu untuk 2026
   outcome_label: 'Anda pulang membawa:'
   talks:

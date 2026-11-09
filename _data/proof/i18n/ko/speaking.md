@@ -53,7 +53,7 @@ keynotes:
   eyebrow: 대표 기조강연
   headline: 이사회 회의실을 위해 만든 강연.
   lede: 모든 강연은 지금 살아 있는 업계 문제를, 그 자리에서 움직일 수 있는 결정으로 바꿉니다. 제품 홍보도, 공급업체 훑기도 없습니다. 지킬 수 있는 입장과 그것을 받치는 근거뿐입니다.
-  flag_delivered: 이미 진행함 · 요청 가능
+  flag_available: 요청 가능
   flag_new: 2026년 신규
   outcome_label: '가지고 돌아가시는 것:'
   talks:

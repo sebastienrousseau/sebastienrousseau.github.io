@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Centrala föredrag
   headline: Föredrag byggda för styrelserummet.
   lede: 'Varje föredrag gör ett levande branschproblem till ett beslut som rummet kan agera på. Ingen produktförsäljning, ingen leverantörsöversikt: en hållbar ståndpunkt och belägget bakom den.'
-  flag_delivered: Redan hållet · Tillgängligt nu
+  flag_available: Tillgängligt nu
   flag_new: Nytt för 2026
   outcome_label: 'Du går därifrån med:'
   talks:

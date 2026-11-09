@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Conferințe de referință
   headline: Prezentări construite pentru sala consiliului.
   lede: 'Fiecare prezentare transformă o problemă vie din sector într-o decizie pe care sala o poate pune în practică. Fără prezentare de produs, fără trecere în revistă a furnizorilor: o poziție care se poate apăra și dovezile din spatele ei.'
-  flag_delivered: Deja susținută · Disponibilă
+  flag_available: Disponibilă
   flag_new: Nouă pentru 2026
   outcome_label: 'Plecați cu:'
   talks:

@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Manyan jawabai
   headline: Jawabai da aka gina domin ɗakin taron hukuma.
   lede: 'Kowane jawabi yana mai da matsalar masana''antu mai gudana ta zama shawarar da ɗaki zai iya aiwatarwa. Babu tallar kaya, babu jerin masu kaya: sai matsayin da ake iya kare shi da hujjojin da suke goyon bayansa.'
-  flag_delivered: An riga an gabatar · Yanzu akwai shi
+  flag_available: Yanzu akwai shi
   flag_new: Sabo don 2026
   outcome_label: 'Ka tafi da:'
   talks:

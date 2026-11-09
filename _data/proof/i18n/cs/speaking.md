@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Stěžejní přednášky
   headline: Vystoupení stavěná pro zasedací síň.
   lede: 'Každé vystoupení mění živý oborový problém v rozhodnutí, se kterým sál může něco udělat. Žádná prodejní prezentace, žádný přehled dodavatelů: obhajitelný postoj a důkazy za ním.'
-  flag_delivered: Již odpřednášeno · K dispozici
+  flag_available: K dispozici
   flag_new: Novinka pro rok 2026
   outcome_label: 'Odnesete si:'
   talks:

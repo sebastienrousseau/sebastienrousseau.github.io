@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Àwọn ọ̀rọ̀ àkọ́kọ́ pàtàkì
   headline: Àwọn ọ̀rọ̀ ìsọ tí a kọ́ fún yàrá ìgbìmọ̀ olùdarí.
   lede: 'Ọ̀rọ̀ ìsọ kọ̀ọ̀kan ń sọ ìṣòro ilé-iṣẹ́ tí ó wà lọ́wọ́ di ìpinnu tí yàrá lè gbé ìgbésẹ̀ lé. Kò sí títa ọjà, kò sí àtòjọ àwọn olùpèsè: ìdúró tí a lè gbèjà nìkan àti ẹ̀rí tí ó dì í mú.'
-  flag_delivered: A ti gbé e kalẹ̀ tẹ́lẹ̀ · Ó wà nísinsìnyí
+  flag_available: Ó wà nísinsìnyí
   flag_new: Tuntun fún 2026
   outcome_label: 'O ń kúrò pẹ̀lú:'
   talks:

@@ -53,7 +53,7 @@ keynotes:
   eyebrow: 主要な基調講演
   headline: 役員会議室のために組み立てた講演。
   lede: どの講演も、いま業界が抱えている課題を、その場で動かせる判断に変えます。製品の売り込みも、ベンダー一覧もありません。擁護できる立場と、それを支える根拠だけです。
-  flag_delivered: 実施済み · ご依頼可能
+  flag_available: ご依頼可能
   flag_new: 2026年の新作
   outcome_label: お持ち帰りいただくもの：
   talks:

@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Các bài nói tiêu biểu
   headline: Những bài nói dựng cho phòng họp hội đồng.
   lede: 'Mỗi bài nói biến một bài toán đang sống của ngành thành quyết định mà cả phòng có thể hành động. Không chào bán sản phẩm, không điểm danh nhà cung cấp: chỉ một lập trường bảo vệ được và bằng chứng đứng sau nó.'
-  flag_delivered: Đã trình bày · Sẵn sàng nhận lời
+  flag_available: Sẵn sàng nhận lời
   flag_new: Mới cho năm 2026
   outcome_label: 'Bạn mang về:'
   talks:

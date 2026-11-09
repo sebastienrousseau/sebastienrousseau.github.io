@@ -42,6 +42,14 @@ from build_case_studies import _swap_into_shell
 from build_translations._fm import render_markdown
 from case_studies_components import _esc
 
+sys.path.insert(0, str(_HERE.parent / "lib"))
+import _profile
+
+# Talks profile.yml records as delivered (with venue and date), by title.
+_DELIVERED = {
+    t["title"]: t for t in _profile.load().get("talks", []) if t.get("status") == "delivered"
+}
+
 try:
     # Shared helper (hosted by build_case_studies): unescapes entity-escaped
     # <meta>/<link> tags, bounded to the <head>…</head> slice.
@@ -310,6 +318,15 @@ def _paths(d: dict, booking: str) -> str:
     )
 
 
+def _talk_flag(talk: dict, flags: dict[str, str]) -> str:
+    """ "Delivered" only for a talk profile.yml records with a venue and a
+    date; every other talk is available to book (or new)."""
+    record = _DELIVERED.get(talk.get("title", ""))
+    if record:
+        return f"Delivered: {record['venue']}, {record['date']}"
+    return flags["new"] if talk.get("new") else flags["available"]
+
+
 def _keynotes(d: dict, booking: str) -> str:
     k = d.get("keynotes", {}) or {}
     talks = k.get("talks") or []
@@ -317,12 +334,15 @@ def _keynotes(d: dict, booking: str) -> str:
         return ""
     out_label = k.get("outcome_label", "You leave with:")
     audience_label = d.get("audience_label", "For:")
-    flag_new, flag_del = k.get("flag_new", "New"), k.get("flag_delivered", "Available now")
+    flags = {
+        "new": k.get("flag_new", "New"),
+        "available": k.get("flag_available", "Available to book"),
+    }
     cards = []
     for t in talks:
         is_new = bool(t.get("new"))
         flag_cls = "spk-flag spk-flag-new" if is_new else "spk-flag"
-        flag_txt = flag_new if is_new else flag_del
+        flag_txt = _talk_flag(t, flags)
         cards.append(
             '<article class="spk-talk">'
             f'<div class="{flag_cls}">{_esc(flag_txt)}</div>'

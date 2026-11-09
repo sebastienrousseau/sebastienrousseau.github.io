@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Kern-Keynotes
   headline: Vorträge, gebaut für den Sitzungssaal.
   lede: 'Jeder Vortrag macht aus einem aktuellen Branchenproblem eine Entscheidung, die der Raum treffen kann. Kein Produktpitch, kein Anbieterüberblick: eine belastbare Position und die Belege dafür.'
-  flag_delivered: Bereits gehalten · Jetzt verfügbar
+  flag_available: Jetzt verfügbar
   flag_new: Neu für 2026
   outcome_label: 'Sie gehen mit:'
   talks:

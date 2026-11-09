@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Kernkeynotes
   headline: Lezingen gebouwd voor de bestuurskamer.
   lede: 'Elke lezing maakt van een actueel sectorprobleem een beslissing waar een zaal iets mee kan. Geen productverhaal, geen leveranciersoverzicht: een verdedigbaar standpunt en het bewijs eronder.'
-  flag_delivered: Al gegeven · Nu beschikbaar
+  flag_available: Nu beschikbaar
   flag_new: Nieuw voor 2026
   outcome_label: 'U gaat weg met:'
   talks:

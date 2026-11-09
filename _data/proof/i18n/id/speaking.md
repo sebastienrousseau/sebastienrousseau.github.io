@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Pidato unggulan
   headline: Ceramah yang dibangun untuk ruang rapat direksi.
   lede: 'Setiap ceramah mengubah persoalan industri yang sedang hidup menjadi keputusan yang bisa ditindaklanjuti ruangan. Tanpa penawaran produk, tanpa daftar vendor: hanya sikap yang bisa dipertahankan dan bukti yang menopangnya.'
-  flag_delivered: Pernah dibawakan · Tersedia sekarang
+  flag_available: Tersedia sekarang
   flag_new: Baru untuk 2026
   outcome_label: 'Anda pulang membawa:'
   talks:

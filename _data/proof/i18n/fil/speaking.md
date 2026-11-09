@@ -53,7 +53,7 @@ keynotes:
   eyebrow: Mga tanyag na talumpati
   headline: Mga talumpating itinayo para sa silid ng lupon.
   lede: 'Bawat talumpati ay ginagawang pasya ang isang buhay na suliranin ng industriya na kayang kilusan ng silid. Walang alok na produkto, walang listahan ng tagapagtustos: isang paninindigang maipagtatanggol at ang ebidensyang bumubuhat dito.'
-  flag_delivered: Naibigay na · Bukas para anyayahan
+  flag_available: Bukas para anyayahan
   flag_new: Bago para sa 2026
   outcome_label: 'Uuwi kayong may:'
   talks:
