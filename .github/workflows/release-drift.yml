@@ -1,0 +1,33 @@
+name: Release drift
+
+# Every version merged to main must be a release in the dotfiles format,
+# with its deployment artefacts (scripts/release/check_releases.py). Runs
+# daily and after each release, not on push: the maintainer tags and
+# releases after the merge, and the check should not turn main red in
+# that window. A version still unreleased a day after its merge fails here.
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  release:
+    types: [published, edited]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Every merged version is released
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Check tags, titles, notes and artefacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/release/check_releases.py

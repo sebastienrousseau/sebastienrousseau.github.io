@@ -10,7 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-## [0.0.35] - Unreleased
+## [0.0.35] - 2026-11-09
 
 ssg pinned to an exact release; one source for every fact about the author.
 
@@ -19,6 +19,11 @@ ssg pinned to an exact release; one source for every fact about the author.
 - **`_data/profile.yml`, the one source for profile facts** (job title, years, employer, EPAA role, career, education, languages, memberships, certifications, awards, talks, bios), read through `scripts/lib/_profile.py`, which validates it (a talk marked delivered needs a venue and a date; every career row belongs to a timeline card).
 - **About: leadership timeline and credentials**, rendered from the profile at build time (`scripts/generators/build_about_profile.py`): one card per role, HSBC and AKQA each merged with their promotion path, an "Earlier" line for 2000 to 2005, then education, languages, memberships, certifications and awards.
 - **Two gates**: `tests/unit/test_profile_consistency.py` fails when a source states a retired wording (it fails on `main` in 20 files), and `tests/validation/test_profile_built.py` checks every built page's Person JSON-LD, About, Speaking and author cards against the profile.
+
+### Added (releases)
+
+- **Releases in the dotfiles format, with deployment artefacts**: every version merged to `main` is released as `vX.Y.Z`, an annotated SSH-signed tag, titled `sebastienrousseau.github.io X.Y.Z`, with notes in the format of the dotfiles releases (Highlights from this changelog, What's Changed from the merged pull requests, Full Changelog) from `scripts/release/release_notes.py`. Publishing a release runs `.github/workflows/release.yml`, which builds the site from the tagged source and attaches it as a deterministic tar.gz and zip, each with a keyless sigstore bundle, plus a CycloneDX SBOM, SHA256SUMS and SLSA provenance. `.github/workflows/release-drift.yml` fails daily while any dated version lacks its signed tag, release, notes or artefacts (`scripts/release/check_releases.py`).
+- **Changelog completed for 0.0.26 to 0.0.34**: each section carries its merge date, the compare links run to v0.0.35, and 0.0.29 records the two fixes merged between 0.0.28 and 0.0.30 (#515, #516), so the version series has no gap.
 
 ### Added (trust)
 
@@ -37,7 +42,7 @@ ssg pinned to an exact release; one source for every fact about the author.
 - **ssg is pinned to 0.0.75 in every workflow and in `mise.toml`**: `SSG_VERSION` was `latest` in `ci.yml` and the four workflows that rebuild the site (Lighthouse, link audit, schema diff, translation summary), so an upstream release could change the output in the middle of a PR, as 0.0.48 (CSP) and 0.0.50 (Linux build) did, and a developer machine still on 0.0.73 built a different site from CI's 0.0.75. 0.0.75 is the first release with both fixes the site relies on: the CSS minifier keeps the space before `+`/`-` inside `clamp()`, and the accessibility gate reads rules inside `@layer` blocks. `tests/unit/test_ssg_pin_single_source.py` now rejects `latest` and fails when any workflow's pin differs from `ci.yml`; `ssg-version-check.yml` files the weekly bump issue again now that there is a pin to compare.
 - **`pyproject.toml` version** moves to 0.0.35 (0.0.34 did not bump it).
 
-## [0.0.34] - Unreleased
+## [0.0.34] - 2026-11-08
 
 English root feeds, and a live check that keeps them English.
 
@@ -48,7 +53,7 @@ English root feeds, and a live check that keeps them English.
 - **The live-content check flags a translated item in `/rss.xml`** (`scripts/seo_and_audit/check_live_content.py`), so a feed that goes multilingual again fails `deploy-drift` with the reason rather than as a stale-page false alarm.
 - **Four CodeQL findings**: three `Protocol` methods had a bare `...` body (`py/ineffectual-statement`) and one table header joined two literals implicitly (`py/implicit-string-concatenation-in-list`).
 
-## [0.0.33] - Unreleased
+## [0.0.33] - 2026-11-08
 
 Type scale, design system v2, search monitoring, redirect-map gate, translated tag landings, live-content and unique-title gates, first-party conversion and Core Web Vitals telemetry, and the theme back-port (ADR-0014). Folds in the work first opened as 0.0.34.
 
@@ -83,7 +88,7 @@ Type scale, design system v2, search monitoring, redirect-map gate, translated t
 - **Unique `<title>` gate (`scripts/seo_and_audit/check_unique_titles.py`)**: fails the build if any two non-redirect HTML pages share a `<title>`, wired into `build.sh`.
 - **First-party conversion and Core Web Vitals telemetry (`workers/events.js`, `assets/js/vendor/web-vitals.js`, `scripts/seo_and_audit/events_report.py`)**: cookie-free `POST /api/event` endpoint writing to Cloudflare Analytics Engine (`sebastien_pageviews`), client `emitTrack()` helper in `_layouts/main.js`, real-user LCP/INP/CLS collection, and weekly SQL report CLI.
 
-## [0.0.32] - Unreleased
+## [0.0.32] - 2026-11-04
 
 Plan items 2.4 (author box and `Person` entity) and 2.5 (internal links), measured on the built site across the 11 indexed locales (1,320 articles) before and after.
 
@@ -104,13 +109,13 @@ Plan items 2.4 (author box and `Person` entity) and 2.5 (internal links), measur
 
 - Author box with credentials: 1,320 of 1,320 before and after. Article `author` resolving to the one `Person` node with `name`, `url`, `sameAs`, `jobTitle` and `knowsAbout`: 1,320 of 1,320 before and after. Orphan articles: 0. Articles with at least three same-locale related links: 1,320 of 1,320. Hubs listing no article: 0 of 66 pillar, 528 tag and 14 topic hubs.
 
-## [0.0.31] - Unreleased
+## [0.0.31] - 2026-11-04
 
 ### Changed
 
 - **One column system across every template**: the shared stylesheet in all 12 `_layouts/*.html` now defines three column widths and one fluid gutter: `--col-wide` (75rem, 1200px), `--col-read` (43.25rem, 692px) for long-form text, and `--col-mid` (60rem, 960px) as the single intermediate width, used only for centred display headings and centred hero copy that need more than the reading measure. `--gutter` runs from 20px at a 390px viewport to 60px at 1440px and is 80px from 1920px; `--frame-wide` is the wide column plus both gutters, for containers that pad themselves. `--pad-x`, `--max` and `--max-wide` stay as aliases. Ad-hoc container widths (760px, 1100px, 1120px, 1180px, 1200px, 1400px, 1440px, 640 to 1080px) now resolve to these tokens; component widths (forms, the hero clock stage, `ch` text measures) are unchanged. The nav, the H1 and the main column of every left-aligned template (home, `/iso20022-mcp/`, `/speaking/`, `/trust/`, `/case-studies/`, `/topics/`, `/articles/`, tag landings) now share one content edge: 20px at 390px, 54px at 1280px, 120px at 1440px and 928px at 3056px, where the edges were 22px to 340px apart before. Centred heroes (articles, `/about/`, `/research/`, `/library/`, `/suite/`, `/projects/`, `/contact/`, `/privacy/`, `/playlists/`) stay centred on the same axis. `/about/`, `/contact/`, `/playlists/`, `/articles/` and tag landings move from the 760px column to the wide column; articles and `/privacy/` use the 692px reading column. `/speaking/` and `/iso20022-mcp/` bands now run full width. The page CSS for `/speaking/`, `/iso20022-mcp/`, `/trust/`, `/contact/` and `/playlists/` changed at its source in `scripts/generators/gen_layouts.py`, and the other 11 layouts were regenerated from `_layouts/index.html`, so all 12 carry a byte-identical shared block. No `!important` was added and no colour changed. The visual-regression baselines in `.github/ci-tools/visual/baseline/` were refreshed on purpose.
 
-## [0.0.30] - Unreleased
+## [0.0.30] - 2026-11-04
 
 SEO recovery after the 11 Sep 2026 site-wide quality demotion (Google impressions down 98%). Technical fixes plus the locale cut the owner approved.
 
@@ -129,7 +134,16 @@ SEO recovery after the 11 Sep 2026 site-wide quality demotion (Google impression
 
 - **Build-output gates** (`tests/unit/test_seo_recovery_output.py`): every noindex-locale page is `noindex`, no indexed page is (bar utility pages and stubs), at most one robots meta per page, the sitemap lists exactly the indexed locales, no hreflang targets a noindex locale, titles and descriptions are unique, no lastmod date over 5% of URLs includes an unsourced one, and every stub is in the Worker redirect map with no chains, loops or dead targets.
 
-## [0.0.28] - Unreleased
+## [0.0.29] - 2026-11-03
+
+Two fixes merged to `main` between 0.0.28 and 0.0.30, released under this number so the version series has no gap (the `feat/v0.0.29` branch shipped as 0.0.31).
+
+### Fixed
+
+- **Save PDF opens the print dialog at once** ([#515]): the article action rail's "Save PDF" button opens the browser's print dialog, laid out by the existing print stylesheet, instead of a server-rendered download that hung for over 20 seconds. The Fly.io PDF service, its Worker route and its settings are removed.
+- **A pa11y page-load timeout is retried once** ([#516]): one slow page on a runner no longer fails a deploy; a WCAG violation, or a second timeout on the same page, still fails the shard and the merge gate.
+
+## [0.0.28] - 2026-11-02
 
 ### Security
 
@@ -149,14 +163,14 @@ SEO recovery after the 11 Sep 2026 site-wide quality demotion (Google impression
 
 - **Dependencies (#514)**: `ruff` 0.17.3, `mypy` 2.4.1, `types-PyYAML` 6.0.12.20261030, `cyclonedx-bom` 7.6.0 and `pytest` >=9.2.0 in `requirements-dev.txt`, with `requirements-dev.lock` regenerated so the lock-agreement gate passes.
 
-## [0.0.27] - Unreleased
+## [0.0.27] - 2026-11-02
 
 ### Fixed
 
 - **External link audit separates bot blocks from link rot (#510)**: `scripts/seo_and_audit/audit_links.py` now classifies each result. A 401, 403 or 429, or a dropped connection (`RemoteDisconnected`, `ConnectionResetError`), is listed as unverifiable under a `  ? [` prefix and no longer counts toward the monthly tracking issue; 404, 410, other 4xx, 5xx, timeouts and DNS failures stay broken. A `URLError` is labelled with its cause (`URLError(gaierror)`) so a DNS failure and a reset can be told apart. The "summarise with AI" prompt links (`chatgpt.com/?q=`, `claude.ai/new?q=`, `perplexity.ai/search/new?q=`) are skipped as share endpoints. Nine of the ten links in #510 were bot blocks; the tenth, the `treasurers.org` 404, was repointed to its Wayback snapshot in 0.0.26.
 - **Fly.io app name**: `fly/pdf-render/fly.toml` names `sebastienrousseau-pdf-render`, the app the deploy handover creates, instead of `pdf-render`, which belongs to another account.
 
-## [0.0.26] - Unreleased
+## [0.0.26] - 2026-11-01
 
 ### Added
 
@@ -461,8 +475,19 @@ SEO recovery after the 11 Sep 2026 site-wide quality demotion (Google impression
 
 ---
 
-[0.0.26]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.25...HEAD
+[0.0.35]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.34...HEAD
+[0.0.34]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.33...v0.0.34
+[0.0.33]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.32...v0.0.33
+[0.0.32]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.31...v0.0.32
+[0.0.31]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.30...v0.0.31
+[0.0.30]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.29...v0.0.30
+[0.0.29]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.28...v0.0.29
+[0.0.28]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.27...v0.0.28
+[0.0.27]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.26...v0.0.27
+[0.0.26]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.25...v0.0.26
 [0.0.25]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.24...v0.0.25
+[#515]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/515
+[#516]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/516
 [0.0.24]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.23...v0.0.24
 [0.0.23]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.22...v0.0.23
 [0.0.22]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.21...v0.0.22
