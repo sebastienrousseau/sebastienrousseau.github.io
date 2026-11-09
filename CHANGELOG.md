@@ -12,9 +12,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [0.0.35] - Unreleased
 
-ssg pinned to an exact release.
+ssg pinned to an exact release; one source for every fact about the author.
 
-### Changed
+### Added
+
+- **`_data/profile.yml`, the one source for profile facts** (job title, years, employer, EPAA role, career, education, languages, memberships, certifications, awards, talks, bios), read through `scripts/lib/_profile.py`, which validates it (a talk marked delivered needs a venue and a date; every career row belongs to a timeline card).
+- **About: leadership timeline and credentials**, rendered from the profile at build time (`scripts/generators/build_about_profile.py`): one card per role, HSBC and AKQA each merged with their promotion path, an "Earlier" line for 2000 to 2005, then education, languages, memberships, certifications and awards.
+- **Two gates**: `tests/unit/test_profile_consistency.py` fails when a source states a retired wording (it fails on `main` in 20 files), and `tests/validation/test_profile_built.py` checks every built page's Person JSON-LD, About, Speaking and author cards against the profile.
+
+### Fixed
+
+- **Person JSON-LD** on every page claimed three credentials "recognised by" HSBC, SWIFT and NIST that none of them issued, listed five employers under `alumniOf` (a property for schools) and said "nearly two decades". A postbuild pass (`postbuild_lib/profile_person.py`) now merges the profile's facts over the `#person` node, the theme carries the same values (theme `5c60a868d7`), and `/api/agents/person.json`, `llms.txt` and `llms-ctx.txt` read the same profile.
+- **Author card** under every article, in English and 34 translations, said "nearly two decades" and listed every past employer; it now gives the profile's experience, HSBC role and EPAA working-group membership. English and translated cards share one renderer (`scripts/lib/_author_card.py`). Translations are machine-drafted and marked `_reviewed: false`.
+- **Years tile** counted from 2007 and printed 19 beside copy saying 20+; it now prints the profile's figure.
+- **Home**: the hero credentials line said "Wholesale Payments & AI Leader" and "Author of the EPAA paper"; the career line said "nearly two decades of in-house leadership" at six employers. Both now state the profile's title, membership and experience, in all 34 translations.
+- **Speaking**: every talk read "Delivered" with no venue; talks are "Available to book" unless the profile records a venue and date. Bios and the stats line use the profile's wording.
+- **Editorial policy** said the author "held senior positions" at Virgin, where he was a web developer for two months.
 
 - **ssg is pinned to 0.0.75 in every workflow and in `mise.toml`**: `SSG_VERSION` was `latest` in `ci.yml` and the four workflows that rebuild the site (Lighthouse, link audit, schema diff, translation summary), so an upstream release could change the output in the middle of a PR, as 0.0.48 (CSP) and 0.0.50 (Linux build) did, and a developer machine still on 0.0.73 built a different site from CI's 0.0.75. 0.0.75 is the first release with both fixes the site relies on: the CSS minifier keeps the space before `+`/`-` inside `clamp()`, and the accessibility gate reads rules inside `@layer` blocks. `tests/unit/test_ssg_pin_single_source.py` now rejects `latest` and fails when any workflow's pin differs from `ci.yml`; `ssg-version-check.yml` files the weekly bump issue again now that there is a pin to compare.
 - **`pyproject.toml` version** moves to 0.0.35 (0.0.34 did not bump it).
