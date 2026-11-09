@@ -55,21 +55,34 @@ def released_versions(changelog: str) -> list[str]:
     return _DATED_RE.findall(changelog)
 
 
+def _title_problems(version: str, release: dict) -> list[str]:
+    if release.get("name") == f"{NAME} {version}":
+        return []
+    return [f"v{version}: title {release.get('name')!r}, expected '{NAME} {version}'"]
+
+
+def _notes_problems(version: str, body: str) -> list[str]:
+    missing = [f"v{version}: notes lack {s!r}" for s in SECTIONS if s not in body]
+    return missing + [f"v{version}: notes carry {s!r}" for s in FORBIDDEN if s in body]
+
+
+def _asset_problems(version: str, release: dict) -> list[str]:
+    if version in KNOWN_WITHOUT_ARTEFACTS:
+        return []
+    names = {a["name"] for a in release.get("assets", [])}
+    want = [a.format(n=NAME, v=version) for a in ASSETS]
+    return [f"v{version}: asset {a} missing" for a in want if a not in names]
+
+
 def release_problems(version: str, release: dict | None) -> list[str]:
     """What is wrong with ``release`` (gh release view JSON) for ``version``."""
     if release is None:
         return [f"v{version}: no release"]
-    out = []
-    if release.get("name") != f"{NAME} {version}":
-        out.append(f"v{version}: title {release.get('name')!r}, expected '{NAME} {version}'")
-    body = release.get("body") or ""
-    out += [f"v{version}: notes lack {s!r}" for s in SECTIONS if s not in body]
-    out += [f"v{version}: notes carry {s!r}" for s in FORBIDDEN if s in body]
-    if version not in KNOWN_WITHOUT_ARTEFACTS:
-        names = {a["name"] for a in release.get("assets", [])}
-        want = [a.format(n=NAME, v=version) for a in ASSETS]
-        out += [f"v{version}: asset {a} missing" for a in want if a not in names]
-    return out
+    return (
+        _title_problems(version, release)
+        + _notes_problems(version, release.get("body") or "")
+        + _asset_problems(version, release)
+    )
 
 
 def tag_problems(version: str, tag_type: str, tag_body: str) -> list[str]:
