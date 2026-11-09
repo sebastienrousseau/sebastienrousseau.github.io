@@ -188,7 +188,7 @@ The 2027 conversation will not be about "do we deploy AI in treasury". It will b
 ## About the author
 
 <aside class="author-card">
-<p><strong>Sebastien Rousseau</strong> is a senior banking technologist with 20+ years of experience across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, and Shazam. He specialises in applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments. He writes at <a href="https://sebastienrousseau.com">sebastienrousseau.com</a> and publishes the <a href="https://news.bankingonquantum.com" rel="external noopener">Banking On Quantum</a> newsletter.</p>
+<p><strong>Sebastien Rousseau</strong> is a senior payments and financial services leader with more than 20 years in payments, banking and digital technology. He leads wholesale payments API products at HSBC and specialises in applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments. He writes at <a href="https://sebastienrousseau.com">sebastienrousseau.com</a> and publishes the <a href="https://news.bankingonquantum.com" rel="external noopener">Banking On Quantum</a> newsletter.</p>
 </aside>
 
 ## Architectural briefing — download the PDF

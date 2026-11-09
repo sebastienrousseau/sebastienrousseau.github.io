@@ -196,7 +196,7 @@ The author of this site, **Sebastien Rousseau** ([ORCID `0009-0005-1434-284X`](h
 
 **Per-article disclosures.** When an article discusses HSBC's competitors, regulatory positions affecting HSBC, or topics where the author's employment is materially relevant to the analysis, an explicit disclosure appears in the article body — typically immediately after the lead aside.
 
-**Past employers.** The author has also held senior positions at PayPal, Barclays, Shazam Entertainment, AKQA, and Virgin Group. Where commentary touches on any of these companies, the same disclosure principle applies.
+**Past employers.** The author has also worked at PayPal, Barclays, Shazam, AKQA and Virgin, and founded Reedia Ltd. Where commentary touches on any of these companies, the same disclosure principle applies.
 
 **No paid placements.** This site does not accept sponsored content, affiliate links, or commissioned articles. Open-source projects mentioned ([pain001](https://pain001.com), [KyberLib](https://kyberlib.com), [Banking On Quantum](https://news.bankingonquantum.com)) are authored or maintained by the same person and are disclosed as such.
 

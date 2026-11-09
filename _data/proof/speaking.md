@@ -11,21 +11,21 @@
 
 title: "Speaking & advisory"
 meta_title: "Sebastien Rousseau: keynotes, panels & expert comment on payments, post-quantum & applied AI"
-meta_description: "Senior banking technologist, nearly two decades at HSBC, PayPal and Barclays. Keynotes, panels and expert comment on payments, post-quantum and applied AI."
+meta_description: "Senior payments and financial services leader, 20+ years in banking and technology. Keynotes, panels and expert comment on payments, post-quantum and applied AI."
 
 # --- Hero -------------------------------------------------------------------
 hero:
   eyebrow: "Keynotes · Panels · Expert comment"
   headline: "The technologies reshaping banking, explained to the people who have to act."
-  lede: "Sebastien Rousseau is a senior banking technologist with nearly two decades across HSBC, PayPal and Barclays. He turns payments modernisation, post-quantum cryptography and applied AI from policy paper into inspectable code, and into keynotes a board can act on."
+  lede: "Sebastien Rousseau is a senior payments and financial services leader with more than 20 years in payments, banking and digital technology. He turns payments modernisation, post-quantum cryptography and applied AI from policy paper into inspectable code, and into keynotes a board can act on."
   primary_cta: "Invite me to speak"
   secondary_cta: "Explore keynotes"
   press_nudge: "Journalist on deadline?"
   press_nudge_cta: "Book expert comment"
   microproof:
-    - "Nearly two decades across HSBC, PayPal & Barclays"
-    - "Co-author, EPAA quantum-safe white paper"
-    - "Contributor, Emerging Payments Association Asia"
+    - "More than 20 years in payments, banking and digital technology"
+    - "Leads wholesale payments API products at HSBC"
+    - "Member, EPAA Quantum-Safe Cryptography Working Group"
 
 # --- Employer proof strip ---------------------------------------------------
 employers_label: "Where I've worked"
@@ -44,7 +44,7 @@ stats:
   - { kpi: "articles_signed", label: "Signed, dated articles" }
   - { kpi: "downloads_total", label: "Open-source downloads" }
   - { kpi: "github_stars",    label: "GitHub stars" }
-stats_foot: 'Contributor to the EPAA Quantum-Safe Cryptography Working Group. Co-author of the EPAA white paper "Quantum-Safe Payments: Why the Payments Industry Must Act Now" (September 2025).'
+stats_foot: 'Member of the EPAA Quantum-Safe Cryptography Working Group and contributor to its white paper Quantum-Safe Payments: Why the Payments Industry Must Act Now (September 2025).'
 
 # --- Two paths (organisers vs journalists) ----------------------------------
 paths:
@@ -157,11 +157,11 @@ bios:
   copy_label: "Copy"
   items:
     - length: "Short"
-      text: "Sebastien Rousseau is a senior banking technologist who writes and builds at the edge of payments, post-quantum cryptography, and applied AI. Author of open-source libraries used in financial infrastructure; contributor to the Emerging Payments Association Asia Quantum-Safe Cryptography Working Group."
+      text: 'Sebastien Rousseau is a senior payments and financial services leader with more than 20 years in payments, banking and digital technology. He leads wholesale payments API products at HSBC and is a member of the Emerging Payments Association Asia''s Quantum-Safe Cryptography Working Group.'
     - length: "Medium"
-      text: "Sebastien Rousseau is a senior banking technologist with nearly two decades across HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, and Virgin Group. He authors open-source Python and Rust libraries that turn ISO 20022 migration, post-quantum cryptography, and applied AI from policy paper into inspectable code. He contributes to the Emerging Payments Association Asia Quantum-Safe Cryptography Working Group and publishes Banking On Quantum and Banking On AI at sebastienrousseau.com."
+      text: 'Sebastien Rousseau is a senior payments and financial services leader with more than 20 years in payments, banking and digital technology. He leads wholesale payments API products at HSBC and is a member of the Emerging Payments Association Asia''s Quantum-Safe Cryptography Working Group, contributing to its white paper Quantum-Safe Payments: Why the Payments Industry Must Act Now (September 2025). He maintains open-source ISO 20022 and post-quantum cryptography libraries and publishes Banking On Quantum and Banking On AI.'
     - length: "Long"
-      text: 'Sebastien Rousseau is a senior banking technologist focused on the structural transformation of wholesale payments. He has nearly two decades of experience across HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, and Virgin Group. He authors and maintains pacs.008, pain.001, BankStatementParser, KyberLib, CloudCDN, and dotfiles, each positioned as a reference implementation, not a demo, for inspectable, board-grade financial infrastructure. He is a contributor to the Emerging Payments Association Asia Quantum-Safe Cryptography Working Group, co-author of the EPAA white paper "Quantum-Safe Payments: Why the Payments Industry Must Act Now" (September 2025), and publishes Banking On Quantum and Banking On AI. He works at the intersection of agentic AI, real-time payments, post-quantum cryptography, cloud-native resilience, structured data, and regulatory evidence.'
+      text: 'Sebastien Rousseau is a senior payments and financial services leader with more than 20 years in payments, banking and digital technology. At HSBC he leads wholesale payments API products in Commercial & Investment Banking, which he joined in 2016 as API Engineering Lead. Before that he founded and ran Reedia Ltd as Chief Executive Officer, shaped PayPal''s HCE and tokenisation strategy with tier-one banks, led a mobile banking transformation at Barclays Corporate Banking, was Head of Mobile at Shazam, and headed AKQA''s mobile technology division for clients including Nike, RBS and Nokia. He is a member of the EPAA Quantum-Safe Cryptography Working Group, a Fellow of the Institution of Analysts and Programmers, and the maintainer of widely used open-source payments and cryptography libraries. He speaks and writes on ISO 20022, post-quantum migration and agentic AI in banking.'
 
 # --- FAQ --------------------------------------------------------------------
 faq:
@@ -208,17 +208,6 @@ final_cta:
 booking_url: "/contact/index.html"
 ---
 
-Sebastien Rousseau is a senior banking technologist focused on the structural
-transformation of wholesale payments. He has nearly two decades of experience
-across HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, and
-Virgin Group. He authors and maintains pacs.008, pain.001,
-BankStatementParser, KyberLib, CloudCDN, and dotfiles, each positioned as a
-reference implementation, not a demo: inspectable, board-grade financial
-infrastructure.
+Sebastien Rousseau is a senior payments and financial services leader with more than 20 years in payments, banking and digital technology. At HSBC he leads wholesale payments API products in Commercial & Investment Banking, which he joined in 2016 as API Engineering Lead. Before that he founded and ran Reedia Ltd as Chief Executive Officer, shaped PayPal's HCE and tokenisation strategy with tier-one banks, led a mobile banking transformation at Barclays Corporate Banking, was Head of Mobile at Shazam, and headed AKQA's mobile technology division for clients including Nike, RBS and Nokia. He is a member of the EPAA Quantum-Safe Cryptography Working Group, a Fellow of the Institution of Analysts and Programmers, and the maintainer of widely used open-source payments and cryptography libraries. He speaks and writes on ISO 20022, post-quantum migration and agentic AI in banking.
 
-He contributes to the Emerging Payments Association Asia Quantum-Safe
-Cryptography Working Group, co-authored the EPAA white paper "Quantum-Safe
-Payments: Why the Payments Industry Must Act Now" (September 2025), and publishes
-Banking On Quantum and Banking On AI. He works at the intersection of agentic AI,
-real-time payments, post-quantum cryptography, cloud-native resilience,
-structured data, and regulatory evidence.
+He publishes Banking On Quantum and Banking On AI.
