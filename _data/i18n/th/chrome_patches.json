@@ -384,6 +384,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>ดูข้อมูลเพิ่มเติม <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "เว็บไซต์ส่วนตัว ความคิดเห็นเป็นของผมเองและไม่ได้เป็นตัวแทนของ HSBC"
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">นโยบายการเปิดเผยข้อมูล</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">นโยบายบรรณาธิการ</a>"
     ]
   ]
 }

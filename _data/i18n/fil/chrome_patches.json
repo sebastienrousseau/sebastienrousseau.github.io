@@ -384,6 +384,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>Matuto pa <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "Personal na site. Akin ang mga pananaw dito at hindi kumakatawan sa HSBC."
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">Patakaran sa pagsisiwalat</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">Patakarang editoryal</a>"
     ]
   ]
 }

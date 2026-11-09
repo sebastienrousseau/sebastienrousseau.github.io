@@ -20,6 +20,10 @@ ssg pinned to an exact release; one source for every fact about the author.
 - **About: leadership timeline and credentials**, rendered from the profile at build time (`scripts/generators/build_about_profile.py`): one card per role, HSBC and AKQA each merged with their promotion path, an "Earlier" line for 2000 to 2005, then education, languages, memberships, certifications and awards.
 - **Two gates**: `tests/unit/test_profile_consistency.py` fails when a source states a retired wording (it fails on `main` in 20 files), and `tests/validation/test_profile_built.py` checks every built page's Person JSON-LD, About, Speaking and author cards against the profile.
 
+### Added (trust)
+
+- **Footer disclosure and corrections log**: every page's footer says the site is personal and its views do not represent HSBC, linking the conflict-of-interest section, and the policies row starts with the editorial policy (theme `bdf0a88508`; translated in 34 locales). The editorial policy gains stable anchors (`#corrections`, `#ai-use`, `#conflicts`; the `CorrectionsPolicy` JSON-LD already pointed at `#corrections`) and a dated corrections log that records this release's profile and privacy corrections.
+
 ### Fixed
 
 - **Person JSON-LD** on every page claimed three credentials "recognised by" HSBC, SWIFT and NIST that none of them issued, listed five employers under `alumniOf` (a property for schools) and said "nearly two decades". A postbuild pass (`postbuild_lib/profile_person.py`) now merges the profile's facts over the `#person` node, the theme carries the same values (theme `5c60a868d7`), and `/api/agents/person.json`, `llms.txt` and `llms-ctx.txt` read the same profile.

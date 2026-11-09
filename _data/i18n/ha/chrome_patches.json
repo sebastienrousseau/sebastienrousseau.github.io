@@ -384,6 +384,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>Ƙarin bayani <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "Shafin kaina. Ra'ayoyin nawa ne kuma ba sa wakiltar HSBC."
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">Manufar bayyanawa</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">Manufar edita</a>"
     ]
   ]
 }

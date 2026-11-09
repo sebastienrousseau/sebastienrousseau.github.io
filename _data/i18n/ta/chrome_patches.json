@@ -383,6 +383,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>மேலும் அறிக <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "தனிப்பட்ட தளம். இங்குள்ள கருத்துகள் என்னுடையவை, HSBC-ஐப் பிரதிநிதித்துவப்படுத்தவில்லை."
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">வெளிப்படுத்தல் கொள்கை</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">தலையங்கக் கொள்கை</a>"
     ]
   ]
 }

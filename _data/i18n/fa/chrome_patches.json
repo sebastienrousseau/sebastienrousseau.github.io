@@ -383,6 +383,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>بیشتر بدانید <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "وب‌سایت شخصی. دیدگاه‌ها متعلق به خودم است و نماینده HSBC نیست."
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">سیاست افشا</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">سیاست تحریریه</a>"
     ]
   ]
 }

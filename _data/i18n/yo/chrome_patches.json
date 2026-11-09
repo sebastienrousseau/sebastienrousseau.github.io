@@ -384,6 +384,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>Kọ́ sí i <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "Ojú-òpó ti ara mi. Èrò mi ni wọ̀nyí, wọn kò sì ṣojú HSBC."
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">Ìlànà ìfihàn</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">Ìlànà olóòtú</a>"
     ]
   ]
 }

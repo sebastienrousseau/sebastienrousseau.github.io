@@ -384,6 +384,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>Дізнатися більше <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "Особистий сайт. Погляди є моїми власними й не представляють HSBC."
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">Політика розкриття інформації</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">Редакційна політика</a>"
     ]
   ]
 }

@@ -384,6 +384,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>詳しく見る <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "個人サイトです。掲載内容は個人の見解であり、HSBC を代表するものではありません。"
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">開示ポリシー</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">編集方針</a>"
     ]
   ]
 }

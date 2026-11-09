@@ -384,6 +384,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>Tìm hiểu thêm <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "Trang cá nhân. Quan điểm là của riêng tôi và không đại diện cho HSBC."
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">Chính sách công bố thông tin</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">Chính sách biên tập</a>"
     ]
   ]
 }

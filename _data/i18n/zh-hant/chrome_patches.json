@@ -384,6 +384,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>進一步了解 <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "個人網站。所述觀點僅代表本人，不代表 HSBC。"
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">揭露政策</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">編輯方針</a>"
     ]
   ]
 }

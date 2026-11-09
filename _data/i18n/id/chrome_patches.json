@@ -384,6 +384,18 @@
     [
       "(class=\"newsroom-more\"><a [^>]*>)Learn more <span",
       "\\g<1>Pelajari lebih lanjut <span"
+    ],
+    [
+      "Personal site\\. Views are my own and do not represent HSBC\\.",
+      "Situs pribadi. Pandangan di sini adalah pandangan saya sendiri dan tidak mewakili HSBC."
+    ],
+    [
+      ">Disclosure policy</a>",
+      ">Kebijakan pengungkapan</a>"
+    ],
+    [
+      "<a href=\"?/editorial/index\\.html\"?>Editorial policy</a>",
+      "<a href=\"/editorial/index.html\">Kebijakan editorial</a>"
     ]
   ]
 }
