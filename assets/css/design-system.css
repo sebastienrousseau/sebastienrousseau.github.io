@@ -118,6 +118,13 @@ details.about-identifiers,
 main.content > .wrap:has(.narrative-section, .story-grid) { max-width: var(--max); }
 .narrative-body { max-width: var(--measure); }
 
+/* Playlists: the stage holds full-bleed hero and genre bands, so the
+   wrap takes the frame width and the layout holds the rest to the
+   measure. Inside the measure, the bands' copy overflowed the wrap, and
+   every line of text that crossed its edge sat on a different element
+   stack, which axe cannot score. */
+main.content > .wrap:has(> .pl-stage) { max-width: calc(var(--max) + 2 * var(--pad-x)); padding-inline: 0; }
+
 /* Contact: form at the reading measure, "faster paths" aside beside it,
    both on the content grid so the form never squeezes below 40ch. */
 main.content > .wrap:has(> .contact-layout) { max-width: var(--max); }

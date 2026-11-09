@@ -1915,7 +1915,7 @@
       /* projects: rotating hero title — leads the hero, pure CSS, CSP-safe (polish #2) */
       .setup-hero-eyebrow.rotating-title{display:flex;flex-direction:column;align-items:center;gap:2px;max-width:none !important;width:100%;margin:0 0 22px;font-size:var(--fs-h3);font-weight:600;letter-spacing:-.01em;color:var(--ink);text-transform:none}
       .rotating-title-lead{display:block}
-      .rotating-title-mask{display:block;clip-path:inset(0);height:1.25em;line-height:1.25em;text-align:center}
+      .rotating-title{container-type:inline-size}.rotating-title-mask{display:block;clip-path:inset(0);height:1.25em;line-height:1.25em;text-align:center;font-size:min(1em, 9.8cqi)}
       .rotating-title-words{display:flex;flex-direction:column;animation:rotwords 11s cubic-bezier(.76,0,.24,1) infinite}
       .rotating-title-words>span{display:flex;align-items:center;justify-content:center;gap:.22em;height:1.25em;line-height:1.25em;white-space:nowrap;color:var(--accent)}
       /* Apple-style app-icon tiles: vibrant per-word gradient squircle, white
@@ -2448,6 +2448,13 @@ details.about-identifiers,
    their running text is held to the reading measure. */
 main.content > .wrap:has(.narrative-section, .story-grid) { max-width: var(--max); }
 .narrative-body { max-width: var(--measure); }
+
+/* Playlists: the stage holds full-bleed hero and genre bands, so the
+   wrap takes the frame width and the layout holds the rest to the
+   measure. Inside the measure, the bands' copy overflowed the wrap, and
+   every line of text that crossed its edge sat on a different element
+   stack, which axe cannot score. */
+main.content > .wrap:has(> .pl-stage) { max-width: calc(var(--max) + 2 * var(--pad-x)); padding-inline: 0; }
 
 /* Contact: form at the reading measure, "faster paths" aside beside it,
    both on the content grid so the form never squeezes below 40ch. */

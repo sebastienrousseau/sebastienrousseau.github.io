@@ -1915,7 +1915,7 @@
       /* projects: rotating hero title — leads the hero, pure CSS, CSP-safe (polish #2) */
       .setup-hero-eyebrow.rotating-title{display:flex;flex-direction:column;align-items:center;gap:2px;max-width:none !important;width:100%;margin:0 0 22px;font-size:var(--fs-h3);font-weight:600;letter-spacing:-.01em;color:var(--ink);text-transform:none}
       .rotating-title-lead{display:block}
-      .rotating-title-mask{display:block;clip-path:inset(0);height:1.25em;line-height:1.25em;text-align:center}
+      .rotating-title{container-type:inline-size}.rotating-title-mask{display:block;clip-path:inset(0);height:1.25em;line-height:1.25em;text-align:center;font-size:min(1em, 9.8cqi)}
       .rotating-title-words{display:flex;flex-direction:column;animation:rotwords 11s cubic-bezier(.76,0,.24,1) infinite}
       .rotating-title-words>span{display:flex;align-items:center;justify-content:center;gap:.22em;height:1.25em;line-height:1.25em;white-space:nowrap;color:var(--accent)}
       /* Apple-style app-icon tiles: vibrant per-word gradient squircle, white
@@ -2318,10 +2318,15 @@
           radial-gradient(64% 88% at 88% 78%, rgba(150,60,255,.44), transparent 62%),
           radial-gradient(70% 96% at 34% 96%, rgba(255,26,92,.38), transparent 64%),
           linear-gradient(148deg, var(--pl-night-1) 0%, var(--pl-night-2) 46%, var(--pl-night-3) 100%);
+        background-color:var(--pl-night-2);
         color:var(--pl-white)}
       .pl-hero .pl-hero-title,.pl-hero .pl-everywhere h2{color:var(--pl-white)}
-      .pl-hero .pl-hero-desc{color:rgba(255,255,255,.86)}
-      .pl-hero .pl-hero-meta{color:rgba(255,255,255,.66)}
+      /* Opaque equivalents of white at 86% and 66% over --pl-night-2:
+         contrast checkers (HTML_CodeSniffer) cannot score translucent text. */
+      .pl-hero .pl-hero-desc{color:rgb(222 220 221)}
+      .pl-hero .pl-hero-meta{color:rgb(176 170 173)}
+      .pl-hero .pl-hero-note,.pl-hero .pl-hero-note a{color:rgb(222 220 221)}
+      .pl-hero .pl-hero-note a{text-decoration:underline}
       .pl-hero .pl-hero-kicker{color:var(--pl-rose)}
       .pl-hero-inner{max-width:var(--max-wide);margin-inline:auto;display:grid;
         grid-template-columns:1fr 1fr;gap:clamp(28px,4.5vw,72px);align-items:center}
@@ -2351,8 +2356,19 @@
         padding:clamp(88px,11vw,160px) var(--gutter) clamp(72px,9vw,120px)!important;
         text-align:center;color:var(--pl-white)!important;
         overflow:hidden;isolation:isolate;
-        background:linear-gradient(150deg,var(--pl-dusk-1) 0%,var(--pl-dusk-2) 48%,var(--pl-au-bg) 100%)!important}
+        background:linear-gradient(150deg,var(--pl-dusk-1) 0%,var(--pl-dusk-2) 48%,var(--pl-au-bg) 100%) var(--pl-dusk-2)!important}
       .pl-topper>*:not(.pl-aurora){position:relative;z-index:1}
+      /* Text sits on opaque panels, not on the gradients: contrast is then
+         guaranteed and measurable (axe cannot score text on a gradient). */
+      .pl-topper-panel{display:flex;flex-direction:column;align-items:center;max-inline-size:min(100%,920px);
+        padding:clamp(28px,4vw,52px) clamp(22px,5vw,64px);border-radius:28px;background:var(--pl-dusk-2);
+        box-shadow:0 40px 90px -40px rgba(0,0,0,.7)}
+      .pl-hero-copy{padding:clamp(22px,3vw,40px);border-radius:22px;background:var(--pl-night-2)}
+      /* The design system lets this page's wrap span the page (the stage
+         holds full-bleed bands); everything but the stage keeps the measure. */
+      main.content>.wrap:has(>.pl-stage)>:not(.pl-stage),
+      .pl-stage>:is(.pl-nav,.pl-faq,.pl-everywhere){
+        inline-size:min(var(--measure), 100% - 2 * var(--gutter));margin-inline:auto}
       .pl-topper a.pl-jump{display:inline-flex;align-items:center;gap:11px;
         margin-block-start:clamp(34px,5vw,62px);padding:14px 28px;border-radius:999px;
         font-family:var(--type-body);font-size:var(--fs-small);font-weight:600;text-decoration:none;
@@ -2371,42 +2387,48 @@
 
       .pl-aurora{position:absolute;inset:0;z-index:0;pointer-events:none;
         overflow:hidden;background:var(--pl-au-bg)}
-      .pl-aurora-wrap{position:absolute;inset:-10%;
+      /* inset 0, not -10%: the blobs sit at the wrap's centre either way, and a
+         wrap reaching above the topper overlaps the header's links. */
+      .pl-aurora-wrap{position:absolute;inset:0;
         animation:pl-au-hue 34s ease-in-out infinite}
-      .pl-aurora span{position:absolute;inset-block-start:50%;inset-inline-start:50%;
+      /* Each blob's span spans the whole aurora and draws the blob on ::before,
+         so every line of text above sits on the same element stack (axe can
+         then score its contrast; it cannot when blob edges cross the lines). */
+      .pl-aurora span{position:absolute;inset:0}
+      .pl-aurora span::before{content:"";position:absolute;inset-block-start:50%;inset-inline-start:50%;
         aspect-ratio:1;mix-blend-mode:screen;will-change:transform,border-radius;
         animation-iteration-count:infinite;animation-timing-function:linear}
-      .pl-aurora span:nth-child(1){inline-size:clamp(300px,40vw,640px);opacity:0.95;
+      .pl-aurora span:nth-child(1)::before{inline-size:clamp(300px,40vw,640px);opacity:0.95;
         background:radial-gradient(circle,var(--pl-au-1) 0%,color-mix(in srgb,var(--pl-au-1) 45%,transparent) 46%,transparent 72%);
         filter:blur(clamp(36px,4.4vw,74px)) saturate(165%);
         border-radius:46% 54% 62% 38% / 44% 40% 60% 56%;transform:translate3d(-40.0%,-78.0%,0) scale(1.000);
         animation-name:pl-au-1,pl-au-m1;animation-duration:15s,11s}
-      .pl-aurora span:nth-child(2){inline-size:clamp(354px,47vw,755px);opacity:0.85;
+      .pl-aurora span:nth-child(2)::before{inline-size:clamp(354px,47vw,755px);opacity:0.85;
         background:radial-gradient(circle,var(--pl-au-2) 0%,color-mix(in srgb,var(--pl-au-2) 45%,transparent) 46%,transparent 72%);
         filter:blur(clamp(36px,4.4vw,74px)) saturate(165%);
         border-radius:46% 54% 62% 38% / 44% 40% 60% 56%;transform:translate3d(-1.4%,-63.9%,0) scale(1.068);
         animation-name:pl-au-2,pl-au-m2;animation-duration:18s,13s}
-      .pl-aurora span:nth-child(3){inline-size:clamp(258px,34vw,550px);opacity:0.9;
+      .pl-aurora span:nth-child(3)::before{inline-size:clamp(258px,34vw,550px);opacity:0.9;
         background:radial-gradient(circle,var(--pl-au-3) 0%,color-mix(in srgb,var(--pl-au-3) 45%,transparent) 46%,transparent 72%);
         filter:blur(clamp(36px,4.4vw,74px)) saturate(165%);
         border-radius:46% 54% 62% 38% / 44% 40% 60% 56%;transform:translate3d(-35.3%,-3.3%,0) scale(0.912);
         animation-name:pl-au-3,pl-au-m3;animation-duration:16s,12s}
-      .pl-aurora span:nth-child(4){inline-size:clamp(390px,52vw,832px);opacity:0.82;
+      .pl-aurora span:nth-child(4)::before{inline-size:clamp(390px,52vw,832px);opacity:0.82;
         background:radial-gradient(circle,var(--pl-au-4) 0%,color-mix(in srgb,var(--pl-au-4) 45%,transparent) 46%,transparent 72%);
         filter:blur(clamp(36px,4.4vw,74px)) saturate(165%);
         border-radius:46% 54% 62% 38% / 44% 40% 60% 56%;transform:translate3d(-114.5%,-18.2%,0) scale(1.155);
         animation-name:pl-au-4,pl-au-m4;animation-duration:21s,9s}
-      .pl-aurora span:nth-child(5){inline-size:clamp(276px,37vw,588px);opacity:0.88;
+      .pl-aurora span:nth-child(5)::before{inline-size:clamp(276px,37vw,588px);opacity:0.88;
         background:radial-gradient(circle,var(--pl-au-5) 0%,color-mix(in srgb,var(--pl-au-5) 45%,transparent) 46%,transparent 72%);
         filter:blur(clamp(36px,4.4vw,74px)) saturate(165%);
         border-radius:46% 54% 62% 38% / 44% 40% 60% 56%;transform:translate3d(-79.5%,-76.5%,0) scale(0.843);
         animation-name:pl-au-5,pl-au-m5;animation-duration:17s,14s}
-      .pl-aurora span:nth-child(6){inline-size:clamp(324px,43vw,691px);opacity:0.8;
+      .pl-aurora span:nth-child(6)::before{inline-size:clamp(324px,43vw,691px);opacity:0.8;
         background:radial-gradient(circle,var(--pl-au-6) 0%,color-mix(in srgb,var(--pl-au-6) 45%,transparent) 46%,transparent 72%);
         filter:blur(clamp(36px,4.4vw,74px)) saturate(165%);
         border-radius:46% 54% 62% 38% / 44% 40% 60% 56%;transform:translate3d(-69.3%,-30.3%,0) scale(1.129);
         animation-name:pl-au-6,pl-au-m6;animation-duration:19s,10s}
-      .pl-aurora span:nth-child(7){inline-size:clamp(234px,31vw,499px);opacity:0.92;
+      .pl-aurora span:nth-child(7)::before{inline-size:clamp(234px,31vw,499px);opacity:0.92;
         background:radial-gradient(circle,var(--pl-au-7) 0%,color-mix(in srgb,var(--pl-au-7) 45%,transparent) 46%,transparent 72%);
         filter:blur(clamp(36px,4.4vw,74px)) saturate(165%);
         border-radius:46% 54% 62% 38% / 44% 40% 60% 56%;transform:translate3d(7.3%,-70.0%,0) scale(0.924);
@@ -2429,11 +2451,11 @@
       @keyframes pl-au-hue{0%,100%{filter:hue-rotate(-10deg) saturate(1.05)}
         50%{filter:hue-rotate(12deg) saturate(1.12)}}
       @media (prefers-reduced-motion:reduce){
-        .pl-aurora span,.pl-aurora-wrap{animation:none}}
+        .pl-aurora span::before,.pl-aurora-wrap{animation:none}}
       .pl-topper h1{font-family:var(--type-body);font-size:var(--fs-display)!important;
         line-height:var(--lh-display);letter-spacing:-0.022em;font-weight:700;color:var(--pl-white)!important;
         margin:10px auto 16px}
-      .pl-topper .sub{color:rgba(255,255,255,.84)!important;max-width:56ch;
+      .pl-topper .sub{color:rgb(218 215 217)!important;max-width:56ch;
         margin-inline:auto;font-size:var(--fs-lead);line-height:var(--lh-lead)}
       .pl-faq{margin-inline:calc(50% - 50vw);width:100vw;
         padding:clamp(56px,8vw,116px) var(--gutter);background:var(--bg)}
@@ -2486,7 +2508,7 @@
       .pl-load{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;height:152px;border:1px solid var(--rule);border-radius:12px;background:var(--card);color:var(--ink-deep);font:600 var(--fs-small)/1.2 var(--type-body);cursor:pointer}
       .pl-hero-player .pl-load{height:352px;border-radius:22px}
       .pl-load:hover,.pl-load:focus-visible{border-color:var(--pl-spotify)}
-      .pl-load-icon{color:var(--pl-spotify)}
+      .pl-load-icon{color:var(--ink-deep)}
       .pl-hero-note{font-size:var(--fs-micro);color:var(--ink-mute);margin:12px 0 0}
 
       /* Apple fills its buttons. One solid accent, white text, full pill. */
@@ -2653,6 +2675,13 @@ details.about-identifiers,
    their running text is held to the reading measure. */
 main.content > .wrap:has(.narrative-section, .story-grid) { max-width: var(--max); }
 .narrative-body { max-width: var(--measure); }
+
+/* Playlists: the stage holds full-bleed hero and genre bands, so the
+   wrap takes the frame width and the layout holds the rest to the
+   measure. Inside the measure, the bands' copy overflowed the wrap, and
+   every line of text that crossed its edge sat on a different element
+   stack, which axe cannot score. */
+main.content > .wrap:has(> .pl-stage) { max-width: calc(var(--max) + 2 * var(--pad-x)); padding-inline: 0; }
 
 /* Contact: form at the reading measure, "faster paths" aside beside it,
    both on the content grid so the form never squeezes below 40ch. */
@@ -3077,9 +3106,11 @@ summary.cs-dropdown-summary {
 
         <section class="ap-hero pl-topper">
         <div class="pl-aurora" aria-hidden="true"><div class="pl-aurora-wrap"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+        <div class="pl-topper-panel">
         <h1>Playlists</h1>
         <p class="sub">{{subtitle}}</p>
         <a class="pl-jump" href="#latest">Hear the latest playlist</a>
+        </div>
       </section>
 
       <main id="main" class="content ap-section">
