@@ -41,6 +41,11 @@ def _merge(node: dict[str, Any], fields: dict[str, Any]) -> bool:
 
 
 def _patch_node(node: dict[str, Any], person: dict[str, Any], site: dict[str, Any]) -> bool:
+    # Only the full definition (it carries a name) takes the profile's
+    # fields. A reference stub ({"@type": "Person", "@id": ...}) stays a
+    # stub, or validators read it as a Person with no name.
+    if "name" not in node:
+        return False
     if node.get("@id") == PERSON_ID and node.get("@type") == "Person":
         return _merge(node, person)
     if node.get("@id") == WEBSITE_ID:

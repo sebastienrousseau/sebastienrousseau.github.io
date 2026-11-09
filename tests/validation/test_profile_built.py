@@ -56,6 +56,8 @@ def person_defects(page_html: str, profile: dict) -> list[str]:
         for node in _nodes(data):
             if node.get("@id") != PERSON_ID or node.get("@type") != "Person":
                 continue
+            if "name" not in node:  # a reference stub, not the definition
+                continue
             if node.get("jobTitle") != profile["job_title_formal"]:
                 out.append(f"jobTitle {node.get('jobTitle')!r}")
             if node.get("description") != profile["bios"]["short"]:

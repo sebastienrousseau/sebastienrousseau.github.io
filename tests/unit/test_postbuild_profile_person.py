@@ -33,6 +33,8 @@ _STALE_GRAPH = {
         {
             "@type": "WebSite",
             "@id": "https://sebastienrousseau.com/#website",
+            "name": "Sebastien Rousseau",
+            "url": "https://sebastienrousseau.com/",
             "description": "AI, banking and financial services expert.",
         },
     ],
@@ -84,3 +86,15 @@ def test_other_person_nodes_are_untouched() -> None:
     other = {"@type": "Person", "@id": "https://example.com/#someone", "jobTitle": "Editor"}
     html = _page({"@graph": [other, {"@id": "https://sebastienrousseau.com/#website"}]})
     assert _graph(apply_person_profile(html))[0] == other
+
+
+def test_reference_stubs_are_left_alone() -> None:
+    """Article and case-study blocks point at the author with a stub
+    ({"@type": "Person", "@id": ...#person}). Profile fields belong on the
+    full definition only; a stub that gains them reads as a Person with no
+    name, which failed validate_jsonld on 1,855 built pages."""
+    stub_person = {"@type": "Person", "@id": "https://sebastienrousseau.com/#person"}
+    stub_site = {"@type": "WebSite", "@id": "https://sebastienrousseau.com/#website"}
+    article = {"@type": "TechArticle", "author": stub_person, "isPartOf": stub_site}
+    html = _page({"@context": "https://schema.org", "@graph": [article]})
+    assert apply_person_profile(html) == html

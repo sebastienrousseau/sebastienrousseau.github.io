@@ -22,6 +22,7 @@ def _person(**overrides: object) -> dict:
     node = {
         "@type": "Person",
         "@id": gate.PERSON_ID,
+        "name": "Sebastien Rousseau",
         "jobTitle": PROFILE["job_title_formal"],
         "description": PROFILE["bios"]["short"],
         "alumniOf": [{"@type": "CollegeOrUniversity", "name": "University of Westminster"}],
@@ -58,3 +59,8 @@ def test_about_needs_figure_timeline_and_credentials() -> None:
 def test_speaking_flags_unrecorded_delivery() -> None:
     assert gate.speaking_defects("<b>Delivered</b>", PROFILE)
     assert gate.speaking_defects("<b>Available to book</b>", PROFILE) == []
+
+
+def test_reference_stubs_are_not_judged() -> None:
+    stub = {"@type": "Person", "@id": gate.PERSON_ID}
+    assert gate.person_defects(_page(stub), PROFILE) == []
