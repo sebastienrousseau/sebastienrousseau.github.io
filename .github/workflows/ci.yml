@@ -157,7 +157,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
-      THEME_SHA: "333185f7f914e8577a22a49e7107123abc05da13"
+      THEME_SHA: "6f1691a16817436b1d72ca9a62e112b60d1cacde"
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:

@@ -12,7 +12,10 @@
     "countOther": "playlists",
     "coverAlt": "Portada de la playlist {title}",
     "openAria": "Abrir {title} en Spotify",
-    "frameTitle": "Playlist {title} en Spotify"
+    "frameTitle": "Playlist {title} en Spotify",
+    "playHere": "Reproducir aquí en Spotify",
+    "loadNote": "Los reproductores solo se cargan cuando pulsa reproducir. Spotify puede entonces instalar cookies; consulte el",
+    "loadNoteLink": "aviso de privacidad"
   },
   "intro": [
     "Treinta y nueve playlists y 1.763 temas, pensados para las horas que piden banda sonora: deep work, lecturas largas y reescrituras nocturnas.",

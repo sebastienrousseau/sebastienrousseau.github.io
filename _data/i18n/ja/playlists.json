@@ -12,7 +12,10 @@
     "countOther": "プレイリスト",
     "coverAlt": "プレイリスト「{title}」のカバーアート",
     "openAria": "{title} を Spotify で開く",
-    "frameTitle": "Spotify のプレイリスト「{title}」"
+    "frameTitle": "Spotify のプレイリスト「{title}」",
+    "playHere": "ここで Spotify で再生",
+    "loadNote": "プレーヤーは再生を押したときにのみ読み込まれます。その後 Spotify が Cookie を設定する場合があります。詳しくは",
+    "loadNoteLink": "プライバシー通知"
   },
   "intro": [
     "39のプレイリストと1,763曲。サウンドトラックを必要とする時間のために組んだ——ディープワーク、長い読書、夜更けの書き直し。",

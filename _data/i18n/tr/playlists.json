@@ -12,7 +12,10 @@
     "countOther": "çalma listesi",
     "coverAlt": "{title} çalma listesinin kapak görseli",
     "openAria": "{title} listesini Spotify'da aç",
-    "frameTitle": "Spotify'da {title} çalma listesi"
+    "frameTitle": "Spotify'da {title} çalma listesi",
+    "playHere": "Burada Spotify'da çal",
+    "loadNote": "Oynatıcılar yalnızca oynata bastığınızda yüklenir. Spotify bundan sonra çerez ayarlayabilir; bkz.",
+    "loadNoteLink": "gizlilik bildirimi"
   },
   "intro": [
     "Otuz dokuz çalma listesi ve 1.763 parça; bir fon müziği isteyen saatler için kuruldu: derin çalışma, uzun okumalar ve geç saatteki yeniden yazımlar.",

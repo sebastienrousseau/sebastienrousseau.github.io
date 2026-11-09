@@ -12,7 +12,10 @@
     "countOther": "jerin waƙoƙi",
     "coverAlt": "Hoton bangon jerin waƙoƙi na {title}",
     "openAria": "Buɗe {title} a Spotify",
-    "frameTitle": "Jerin waƙoƙi na {title} a Spotify"
+    "frameTitle": "Jerin waƙoƙi na {title} a Spotify",
+    "playHere": "Kunna a nan a Spotify",
+    "loadNote": "Na'urorin kunnawa suna lodawa ne kawai idan ka danna kunna. Daga nan Spotify na iya saita kukis; duba",
+    "loadNoteLink": "sanarwar sirri"
   },
   "intro": [
     "Jerin waƙoƙi talatin da tara da waƙoƙi 1,763, an gina su domin sa'o'in da ke buƙatar kiɗa a baya: aiki mai zurfi, dogon karatu da sake rubutu da dare.",

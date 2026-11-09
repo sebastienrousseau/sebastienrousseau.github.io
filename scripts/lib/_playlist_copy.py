@@ -41,6 +41,12 @@ LANE_COUNT_OTHER = "playlists"
 COVER_ALT = "Cover artwork for the {title} playlist"
 OPEN_ARIA = "Open {title} on Spotify"
 FRAME_TITLE = "{title} playlist on Spotify"
+# Click-to-load players (PECR): the button that swaps in a Spotify player,
+# and the note under the hero; the note's link text points at the privacy
+# notice in the reader's language.
+PLAY_HERE_LABEL = "Play here on Spotify"
+LOAD_NOTE = "Players load only when you press play. Spotify may then set cookies; see the"
+LOAD_NOTE_LINK = "privacy notice"
 
 # Intro paragraphs. These are the *body* of ``_posts/playlists.md`` —
 # the generator renders the markdown, not this tuple. They are mirrored

@@ -12,7 +12,10 @@
     "countOther": "spellistor",
     "coverAlt": "Omslagsbild för spellistan {title}",
     "openAria": "Öppna {title} på Spotify",
-    "frameTitle": "Spellistan {title} på Spotify"
+    "frameTitle": "Spellistan {title} på Spotify",
+    "playHere": "Spela här på Spotify",
+    "loadNote": "Spelarna laddas först när du trycker på spela. Spotify kan då sätta cookies; se",
+    "loadNoteLink": "integritetsmeddelandet"
   },
   "intro": [
     "Trettionio spellistor och 1 763 låtar, byggda för de timmar som behöver ett soundtrack — deep work, långa läsningar och sena omskrivningar.",

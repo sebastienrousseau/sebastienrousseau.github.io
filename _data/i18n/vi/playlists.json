@@ -12,7 +12,10 @@
     "countOther": "danh sách phát",
     "coverAlt": "Ảnh bìa danh sách phát {title}",
     "openAria": "Mở {title} trên Spotify",
-    "frameTitle": "Danh sách phát {title} trên Spotify"
+    "frameTitle": "Danh sách phát {title} trên Spotify",
+    "playHere": "Phát tại đây trên Spotify",
+    "loadNote": "Trình phát chỉ tải khi bạn nhấn phát. Sau đó Spotify có thể đặt cookie; xem",
+    "loadNoteLink": "thông báo quyền riêng tư"
   },
   "intro": [
     "Ba mươi chín danh sách phát và 1.763 bản nhạc, dựng cho những giờ cần một nền nhạc: làm việc sâu, đọc dài và viết lại lúc khuya.",

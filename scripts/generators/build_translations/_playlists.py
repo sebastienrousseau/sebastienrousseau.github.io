@@ -26,6 +26,8 @@ instead of silent English leakage.
 
 from __future__ import annotations
 
+import re
+
 import _lang_registry
 import _playlist_copy as _pl
 
@@ -67,6 +69,41 @@ class _Swapper:
                 self.missed.append(old[:80])
             return
         self.html = self.html.replace(old, new, count)
+
+
+def _player_label(ui: dict[str, str], title: str) -> str:
+    return f"{ui['playHere']}: {ui['frameTitle'].format(title=title)}"
+
+
+def _swap_player_label(sw: _Swapper, en_ui: dict[str, str], ui: dict[str, str], title: str) -> None:
+    """The click-to-load button's accessible name and visible text."""
+    sw.swap(
+        f'aria-label="{_player_label(en_ui, title)}"',
+        f'aria-label="{_player_label(ui, title)}"',
+        count=-1,
+    )
+    sw.swap(
+        f'<span class="pl-load-text">{en_ui["playHere"]}</span>',
+        f'<span class="pl-load-text">{ui["playHere"]}</span>',
+        count=-1,
+    )
+
+
+_LOAD_NOTE_RE = re.compile(r'<p class="pl-hero-note">.*?</p>', re.S)
+
+
+def _localize_load_note(sw: _Swapper, ui: dict[str, str], code: str) -> None:
+    """The hero note, linked to this language's privacy notice. Replaced
+    whole, because the link's href may be canonicalised by then."""
+    slug = _lang_registry.load_slugs(code).get("static", {}).get("privacy", "privacy")
+    note = (
+        f'<p class="pl-hero-note">{ui["loadNote"]} '
+        f'<a href="/{code}/{slug}/index.html">{ui["loadNoteLink"]}</a>.</p>'
+    )
+    if not _LOAD_NOTE_RE.search(sw.html):
+        sw.missed.append("pl-hero-note")
+        return
+    sw.html = _LOAD_NOTE_RE.sub(note, sw.html, count=1)
 
 
 def _lane_sub(sub: str, key: str, cat_ui: dict[str, str]) -> str:
@@ -174,14 +211,10 @@ def localize_playlists_page(shell: str, code: str) -> tuple[str, list[str]]:
             f'title="{ui["frameTitle"].format(title=title)}"',
             count=-1,
         )
-        # The player loads on request from a link named by the same frame
-        # title (its ``data-title`` is covered by the swap above, which
-        # matches the attribute's ``title="`` suffix).
-        sw.swap(
-            f'aria-label="{en["ui"]["frameTitle"].format(title=title)}"',
-            f'aria-label="{ui["frameTitle"].format(title=title)}"',
-            count=-1,
-        )
+        # The player loads on request from a button named "Play here on
+        # Spotify: <frame title>" (its ``data-title`` is covered by the swap
+        # above, which matches the attribute's ``title="`` suffix).
+        _swap_player_label(sw, en["ui"], ui, title)
 
     # The featured band reuses the newest playlist's frame title.
     feat_title = _pl.PLAYLISTS_FEATURED[0]
@@ -190,11 +223,8 @@ def localize_playlists_page(shell: str, code: str) -> tuple[str, list[str]]:
         f'title="{ui["frameTitle"].format(title=feat_title)}"',
         count=-1,
     )
-    sw.swap(
-        f'aria-label="{en["ui"]["frameTitle"].format(title=feat_title)}"',
-        f'aria-label="{ui["frameTitle"].format(title=feat_title)}"',
-        count=-1,
-    )
+    _swap_player_label(sw, en["ui"], ui, feat_title)
+    _localize_load_note(sw, ui, code)
 
     # --- Call-to-action labels --------------------------------------
     sw.swap(f"</svg>{en['ui']['play']}</a>", f"</svg>{ui['play']}</a>", count=-1)

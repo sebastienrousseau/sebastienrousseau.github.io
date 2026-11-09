@@ -112,24 +112,43 @@ def test_unmatched_anchors_are_reported_as_a_build_warning(monkeypatch, capsys) 
     assert "1 anchor(s) not found" in out
 
 
-def test_the_on_request_player_link_is_named_in_the_page_language() -> None:
-    """The Spotify player loads on request from a link whose accessible
-    name is the catalogue's frame title. Its ``aria-label`` must be
-    translated like the iframe ``title`` it stands in for, or every
+def test_the_on_request_player_button_is_named_in_the_page_language() -> None:
+    """Each Spotify player is a button until pressed (PECR). Its accessible
+    name is "Play here on Spotify: <frame title>", which contains its
+    visible text (WCAG 2.5.3); the name, the visible text and the
+    ``data-title`` the iframe inherits must all be translated, or every
     localized playlists page names 40 controls in English."""
     st.bind_lang("fr")
     import _playlist_copy as pl  # type: ignore[import-not-found]
 
     title = pl.PLAYLISTS_FEATURED[0]
-    en_name = pl.FRAME_TITLE.format(title=title)
+    frame = pl.FRAME_TITLE.format(title=title)
     shell = (
-        f'<a class="pl-frame pl-frame-load" href="#" data-title="{en_name}" '
-        f'aria-label="{en_name}">{title}</a>'
+        f'<button type="button" class="pl-load" data-src="x" data-height="352" '
+        f'data-title="{frame}" aria-label="{pl.PLAY_HERE_LABEL}: {frame}">'
+        f'<span class="pl-load-text">{pl.PLAY_HERE_LABEL}</span></button>'
     )
     out, _ = localize_playlists_page(shell, "fr")
-    assert f'aria-label="{en_name}"' not in out
-    assert f'data-title="{en_name}"' not in out
-    assert out.count(title) >= 3  # the proper noun survives in name, data and text
+    assert pl.PLAY_HERE_LABEL not in out
+    assert f'data-title="{frame}"' not in out
+    assert 'aria-label="Écouter ici sur Spotify: Playlist' in out
+    assert '<span class="pl-load-text">Écouter ici sur Spotify</span>' in out
+    assert out.count(title) >= 2  # the proper noun survives in name and data
+
+
+def test_the_load_note_links_the_localized_privacy_notice() -> None:
+    """The hero note is swapped whole, whatever form its href has by then."""
+    st.bind_lang("fr")
+    import _playlist_copy as pl  # type: ignore[import-not-found]
+
+    for href in ("/privacy/index.html", "/privacy/"):
+        shell = (
+            f'<p class="pl-hero-note">{pl.LOAD_NOTE} <a href="{href}">{pl.LOAD_NOTE_LINK}</a>.</p>'
+        )
+        out, missed = localize_playlists_page(shell, "fr")
+        assert '<a href="/fr/confidentialite/index.html">politique de confidentialité</a>' in out
+        assert pl.LOAD_NOTE not in out
+        assert "pl-hero-note" not in missed
 
 
 def test_the_device_aside_is_swapped_after_minification_collapses_its_line_breaks() -> None:

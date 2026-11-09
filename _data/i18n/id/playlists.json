@@ -12,7 +12,10 @@
     "countOther": "daftar putar",
     "coverAlt": "Sampul daftar putar {title}",
     "openAria": "Buka {title} di Spotify",
-    "frameTitle": "Daftar putar {title} di Spotify"
+    "frameTitle": "Daftar putar {title} di Spotify",
+    "playHere": "Putar di sini di Spotify",
+    "loadNote": "Pemutar hanya dimuat saat Anda menekan putar. Spotify kemudian dapat memasang cookie; lihat",
+    "loadNoteLink": "pemberitahuan privasi"
   },
   "intro": [
     "Tiga puluh sembilan daftar putar dan 1.763 lagu, dibangun untuk jam-jam yang butuh musik latar: kerja mendalam, bacaan panjang, dan penulisan ulang larut malam.",

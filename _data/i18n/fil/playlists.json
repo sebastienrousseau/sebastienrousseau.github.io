@@ -12,7 +12,10 @@
     "countOther": "na playlist",
     "coverAlt": "Cover art ng playlist na {title}",
     "openAria": "Buksan ang {title} sa Spotify",
-    "frameTitle": "Playlist na {title} sa Spotify"
+    "frameTitle": "Playlist na {title} sa Spotify",
+    "playHere": "I-play dito sa Spotify",
+    "loadNote": "Naglo-load lang ang mga player kapag pinindot mo ang play. Maaaring magtakda ang Spotify ng cookies pagkatapos; tingnan ang",
+    "loadNoteLink": "abiso sa privacy"
   },
   "intro": [
     "Tatlumpu't siyam na playlist at 1,763 kanta, ginawa para sa mga oras na kailangan ng soundtrack: malalim na trabaho, mahabang pagbabasa, at pagsusulat muli nang gabing-gabi na.",

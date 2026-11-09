@@ -12,7 +12,10 @@
     "countOther": "個播放清單",
     "coverAlt": "播放清單《{title}》的封面",
     "openAria": "在 Spotify 上開啟《{title}》",
-    "frameTitle": "Spotify 上的播放清單《{title}》"
+    "frameTitle": "Spotify 上的播放清單《{title}》",
+    "playHere": "在此透過 Spotify 播放",
+    "loadNote": "播放器僅在您點選播放時才會載入。之後 Spotify 可能會設定 Cookie；請參閱",
+    "loadNoteLink": "隱私權聲明"
   },
   "intro": [
     "三十九個播放清單、1,763 首曲目，為那些需要配樂的時段而做——深度工作、長時間閱讀，以及深夜的重寫。",

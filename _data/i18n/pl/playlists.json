@@ -12,7 +12,10 @@
     "countOther": "playlist",
     "coverAlt": "Okładka playlisty {title}",
     "openAria": "Otwórz {title} w Spotify",
-    "frameTitle": "Playlista {title} w Spotify"
+    "frameTitle": "Playlista {title} w Spotify",
+    "playHere": "Odtwórz tutaj w Spotify",
+    "loadNote": "Odtwarzacze ładują się dopiero po naciśnięciu odtwarzania. Spotify może wtedy zapisać pliki cookie; zobacz",
+    "loadNoteLink": "informację o prywatności"
   },
   "intro": [
     "Trzydzieści dziewięć playlist i 1763 utwory, zbudowane na godziny, które potrzebują ścieżki dźwiękowej: deep work, długie lektury i nocne poprawki.",
