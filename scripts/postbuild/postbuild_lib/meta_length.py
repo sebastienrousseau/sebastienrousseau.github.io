@@ -7,8 +7,10 @@ Posts carry a ``seo_title`` and a description written to length
 (``seo_title.py`` uses them). Generated pages do not: tag, category and topic
 landings take their description from ``tags.json`` or ``taxonomy.yml`` (up
 to 320 characters) and ``unique_meta`` appends the site name to titles,
-so search engines cut them mid-word. This last pass, run from
-``finalize_seo`` after ``make_unique``, fits every indexable page:
+so search engines cut them mid-word. ``finalize_seo`` runs this pass twice:
+descriptions before ``make_unique``, whose page labels must survive to keep
+listing pages distinct, and titles after it, so the site name it appends is
+dropped again where it does not fit. Every indexable page is fitted:
 
 * a title over its limit loses the site-name suffix (" | Sebastien
   Rousseau" or " — Sebastien Rousseau"), and nothing else;
@@ -77,32 +79,34 @@ def _sub_attr(rx: re.Pattern[str], html: str, fit: Callable[[str], str]) -> str:
     return rx.sub(repl, html)
 
 
-def fit_meta(html: str) -> str:
+def fit_meta(html: str, titles: bool = True, descriptions: bool = True) -> str:
     """Fit the page's title and descriptions to its script's limits."""
     lang = _LANG_RE.search(html)
     t_max, d_max = limits(lang.group(1) if lang else "en")
     title = _TITLE_RE.search(html)
     out = html
-    if title:
+    if title and titles:
         value = _html.unescape(title.group(1).strip())
         new = fit_title(value, t_max)
         if new != value:
             out = out[: title.start(1)] + _html.escape(new, quote=False) + out[title.end(1) :]
             out = _sub_attr(_OG_TITLE_RE, out, lambda v: fit_title(v, t_max))
+    if not descriptions:
+        return out
     return _sub_attr(_DESC_RE, out, lambda v: fit_description(v, d_max))
 
 
 _NOINDEX_RE = re.compile(r'<meta\s+name="robots"\s+content="[^"]*noindex', re.I)
 
 
-def apply_meta_length(public: Path) -> int:
+def apply_meta_length(public: Path, titles: bool = True, descriptions: bool = True) -> int:
     """Fit every indexable page under ``public``. Returns pages changed."""
     changed = 0
     for page in public.rglob("index.html"):
         html = page.read_text(encoding="utf-8")
         if _NOINDEX_RE.search(html):
             continue
-        out = fit_meta(html)
+        out = fit_meta(html, titles, descriptions)
         if out != html:
             page.write_text(out, encoding="utf-8")
             changed += 1

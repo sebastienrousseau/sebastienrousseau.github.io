@@ -68,8 +68,11 @@ def main(public: Path = PUBLIC) -> int:
         public, decisions, ROOT / "_data" / "i18n"
     )
     pruned = prune_sitemaps(public)
+    # Descriptions before make_unique (its page labels keep listings distinct),
+    # titles after (the site name it appends goes where it does not fit).
+    fitted = apply_meta_length(public, titles=False)
     rewritten = make_unique(_entries(public))
-    fitted = apply_meta_length(public)
+    fitted += apply_meta_length(public, descriptions=False)
     dated, undated = refresh_lastmod(public, build_comprehensive_lastmod_index())
     print(
         f"finalize_seo: {noindexed} page(s) set noindex, {hreflang_removed} hreflang link(s) "

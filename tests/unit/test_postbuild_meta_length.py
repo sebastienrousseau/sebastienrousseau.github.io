@@ -56,6 +56,10 @@ def test_fit_meta_rewrites_title_mirrors_and_descriptions() -> None:
     same = _page("Fine title", "Fine.")
     assert fit_meta(same) == same
     assert fit_meta("<p>no head</p>") == "<p>no head</p>"
+    only_titles = fit_meta(_page(title, LONG), descriptions=False)
+    assert LONG in only_titles and "<title>" + "T" * 50 + "</title>" in only_titles
+    only_desc = fit_meta(_page(title, LONG), titles=False)
+    assert f"<title>{title}</title>" in only_desc and LONG not in only_desc
 
 
 def test_apply_skips_noindex_pages(tmp_path: Path) -> None:
