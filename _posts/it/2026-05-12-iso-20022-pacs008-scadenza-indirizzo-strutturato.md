@@ -1,13 +1,14 @@
 ---
 title: "La scadenza pacs.008 «indirizzo strutturato» di novembre 2026: vista a sei mesi"
 subtitle: "A metà novembre 2026 SWIFT CBPR+ rifiuterà gli indirizzi postali non strutturati nei messaggi pacs.008"
-description: "A metà novembre 2026 SWIFT CBPR+ rifiuterà gli indirizzi postali non strutturati nei messaggi pacs.008 e nei messaggi di pagamento transfrontaliero associati. Con circa il 65% dei messaggi ancora non conformi e il 44% delle banche in ritardo, la finestra di remediation si chiude più rapidamente di quanto la maggior parte dei programmi di preparazione sia progettata per gestire."
+description: "Da novembre 2026 SWIFT CBPR+ esige indirizzi strutturati nei messaggi ISO 20022 pacs.008. Quali campi servono e quanta strada resta alle banche."
 date: "May 12, 2026"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "Schema di un messaggio di pagamento transfrontaliero con indirizzo strutturato, con TwnNm e Ctry evidenziati"
 keywords: "ISO 20022, pacs.008, pacs.009, pacs.004, pacs.003, pain.001, CBPR+, SWIFT, SR2026, indirizzo strutturato, SEPA, EPC, pagamenti transfrontalieri, screening sanzioni, pacs008"
+seo_title: "Scadenza indirizzo strutturato ISO 20022 pacs.008, nov. 2026"
 ---
 
 A partir di mediados di noviembre di 2026, SWIFT CBPR+ rechazará le indirizzi postali non strutturate in i messaggi pacs.008 e messaggi di pagamento transfronterizos asociados. Con vicino del 65 % dei messaggi ancora non conformes e il 44 % dei bancos atrasados, la ventana di remediación se cierra più rápido di lo che la maggior parte di i programas di preparación sono progettati per gestire.
