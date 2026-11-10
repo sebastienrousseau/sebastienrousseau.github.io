@@ -30,8 +30,10 @@ sys.path.insert(0, str(ROOT / "scripts" / "lib"))
 sys.path.insert(0, str(ROOT / "scripts" / "postbuild"))
 
 import _lang_registry as _lr
+from postbuild_lib.content_decisions import apply_content_decisions, load, validate
 from postbuild_lib.indexability import is_indexable, prune_sitemaps
 from postbuild_lib.locale_indexing import apply_locale_indexing, page_locale
+from postbuild_lib.meta_length import apply_meta_length
 from postbuild_lib.sitemap_lastmod import refresh_lastmod
 from postbuild_lib.unique_meta import make_unique
 from postbuild_transforms import build_comprehensive_lastmod_index
@@ -56,13 +58,24 @@ def main(public: Path = PUBLIC) -> int:
         print("finalize_seo: public/ not built", file=sys.stderr)
         return 1
     noindexed, hreflang_removed = apply_locale_indexing(public)
+    decisions = load()
+    problems = validate(decisions, public)
+    for line in problems:
+        print(f"finalize_seo: content decision: {line}", file=sys.stderr)
+    if problems:
+        return 1
+    decided_noindex, decided_merge = apply_content_decisions(
+        public, decisions, ROOT / "_data" / "i18n"
+    )
     pruned = prune_sitemaps(public)
     rewritten = make_unique(_entries(public))
+    fitted = apply_meta_length(public)
     dated, undated = refresh_lastmod(public, build_comprehensive_lastmod_index())
     print(
         f"finalize_seo: {noindexed} page(s) set noindex, {hreflang_removed} hreflang link(s) "
-        f"removed, {pruned} sitemap entrie(s) pruned, {rewritten} page(s) given unique "
-        f"title/description, lastmod on {dated} URL(s) ({undated} without a real date)"
+        f"removed, content decisions: {decided_noindex} noindexed, {decided_merge} redirected, "
+        f"{pruned} sitemap entrie(s) pruned, {rewritten} page(s) given unique "
+        f"title/description, {fitted} fitted to length, lastmod on {dated} URL(s) ({undated} without a real date)"
     )
     return 0
 

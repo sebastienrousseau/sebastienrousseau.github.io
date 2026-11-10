@@ -1,0 +1,14 @@
+# Content decisions (plan B-3), applied by postbuild_lib/content_decisions.py
+# from scripts/postbuild/finalize_seo.py. One line per English article:
+#
+#   /<article-slug>/: keep | refresh | review | noindex | merge:/<target-slug>/
+#
+# keep, refresh and review change nothing at build time. noindex takes the
+# article and its translations out of search and the sitemaps. merge turns
+# the article (and its translations) into a redirect to the target, which
+# must exist and not be merged or noindexed itself; the build fails if not.
+#
+# Fill this from reports/content-audit.csv (scripts/seo_and_audit/
+# content_audit.py): decide the top 50 by impressions and every noindex or
+# merge candidate first. Nothing is decided yet.
+{}
