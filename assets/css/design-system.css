@@ -1,5 +1,6 @@
 /* ==========================================================================
-   Design system v2: one column grid, one fluid type scale.
+   Design system v3: one column grid, one fluid type scale, one set of
+   surfaces, spacing, depth and motion tokens.
    --------------------------------------------------------------------------
    Single source of truth. scripts/generators/design_system.py appends this
    file, verbatim, as the LAST rules of the shared <style> block in every
@@ -63,6 +64,92 @@
     --fs-h2:      clamp(2.75rem,  2.1071rem + 0.7143vw, 3.25rem);
     --fs-h1:      clamp(3.5rem,   2.8571rem + 0.7143vw, 4rem);
     --fs-display: clamp(4.75rem,  4.1071rem + 0.7143vw, 5.25rem);
+  }
+}
+
+/* ---- 0. Surfaces, spacing, depth, motion (v3) ------------------------- */
+/* Every value derives from --ink, --paper and --accent (no new colours).
+   Cards, buttons, radii, shadows and section gaps read these tokens; the
+   dark values follow the theme toggle ([data-theme]) and, with no choice
+   made, the OS preference. */
+:root {
+  /* Spacing: 4px base, 8px rhythm. */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+  --space-9: 4rem;
+  --space-10: 5rem;
+  --space-11: 6rem;
+  --space-12: 8rem;
+  /* Section rhythm: 64px @360 -> 128px @1440. */
+  --section-y: clamp(4rem, 2.6667rem + 5.9259vw, 8rem);
+  --stack-y: clamp(1.5rem, 1.25rem + 1.1111vw, 2.25rem);
+
+  /* Radius: three steps, nothing else. */
+  --radius-s: 8px;
+  --radius-m: 14px;
+  --radius-l: 22px;
+  --radius-pill: 999px;
+
+  /* Surfaces: neutral, not warm. */
+  --surface-0: var(--paper);
+  --surface-1: color-mix(in oklch, var(--paper) 97%, var(--ink));
+  --surface-2: color-mix(in oklch, var(--paper) 94%, var(--ink));
+  --hairline: color-mix(in oklch, var(--ink) 10%, transparent);
+  --hairline-strong: color-mix(in oklch, var(--ink) 18%, transparent);
+
+  /* Depth: layered, low-opacity shadows. */
+  --shadow-1: 0 1px 1px color-mix(in oklch, var(--ink) 4%, transparent),
+    0 1px 3px color-mix(in oklch, var(--ink) 6%, transparent);
+  --shadow-2: 0 1px 2px color-mix(in oklch, var(--ink) 4%, transparent),
+    0 8px 24px -8px color-mix(in oklch, var(--ink) 14%, transparent);
+  --shadow-3: 0 2px 4px color-mix(in oklch, var(--ink) 5%, transparent),
+    0 24px 48px -16px color-mix(in oklch, var(--ink) 22%, transparent);
+
+  /* Accent ramp from the one accent. */
+  --accent-soft: color-mix(in oklch, var(--accent) 10%, var(--paper));
+  --accent-line: color-mix(in oklch, var(--accent) 35%, transparent);
+  --accent-strong: color-mix(in oklch, var(--accent) 85%, var(--ink));
+
+  /* Signature: one quiet gradient, used once per page at most. */
+  --signature: radial-gradient(60% 80% at 15% 0%, color-mix(in oklch, var(--accent) 22%, transparent), transparent 70%),
+    radial-gradient(50% 70% at 90% 10%, color-mix(in oklch, var(--accent) 12%, transparent), transparent 70%);
+
+  /* Headline tracking by size. */
+  --track-display: -0.032em;
+  --track-h1: -0.026em;
+  --track-h2: -0.02em;
+  --track-h3: -0.012em;
+
+  /* Motion. */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-1: 140ms;
+  --dur-2: 220ms;
+  --dur-3: 420ms;
+
+  /* Retire the warm paper card: cards sit on neutral surfaces. */
+  --paper-card: var(--surface-1);
+  --radius: var(--radius-m);
+}
+:root[data-theme="dark"] {
+  --hairline: color-mix(in oklch, var(--ink) 14%, transparent);
+  --shadow-2: 0 1px 0 color-mix(in oklch, var(--ink) 6%, transparent) inset,
+    0 12px 32px -12px color-mix(in oklch, black 70%, transparent);
+  --shadow-3: 0 1px 0 color-mix(in oklch, var(--ink) 8%, transparent) inset,
+    0 28px 56px -18px color-mix(in oklch, black 80%, transparent);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --hairline: color-mix(in oklch, var(--ink) 14%, transparent);
+    --shadow-2: 0 1px 0 color-mix(in oklch, var(--ink) 6%, transparent) inset,
+      0 12px 32px -12px color-mix(in oklch, black 70%, transparent);
+    --shadow-3: 0 1px 0 color-mix(in oklch, var(--ink) 8%, transparent) inset,
+      0 28px 56px -18px color-mix(in oklch, black 80%, transparent);
   }
 }
 
@@ -433,3 +520,86 @@ summary.cs-dropdown-summary {
     .speaking-page .spk-head h2) { text-wrap: balance; }
 
 :focus-visible { outline-offset: 3px; }
+
+/* ---- 3. Navigation: translucent, hairline, 64px ----------------------- */
+.ap-nav {
+  background: color-mix(in oklch, var(--paper) 78%, transparent);
+  backdrop-filter: saturate(1.8) blur(14px);
+  -webkit-backdrop-filter: saturate(1.8) blur(14px);
+  border-bottom: 1px solid var(--hairline);
+  box-shadow: none;
+}
+@supports not (backdrop-filter: blur(1px)) {
+  .ap-nav { background: var(--paper); }
+}
+.ap-nav .wrap { min-height: 64px; }
+
+/* ---- 4. Buttons: one primary (.pill), one secondary (.pill.ghost) ------
+   The site's buttons are .pill and .pill.ghost (the theme's legacy layer
+   sets their text colours, which stay). Primary is ink on paper, so the
+   one accent is kept for links; secondary is a hairline outline. */
+.pill, .ap-cta-mini {
+  gap: var(--space-2);
+  min-height: 44px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  transition: background-color var(--dur-1) var(--ease-out),
+    box-shadow var(--dur-1) var(--ease-out), transform var(--dur-1) var(--ease-out);
+}
+.pill:not(.ghost, .light) { background: var(--ink); border-color: transparent; box-shadow: var(--shadow-1); }
+.pill:not(.ghost, .light):hover { background: var(--accent-strong); box-shadow: var(--shadow-2); opacity: 1; }
+.pill.ghost { background: transparent; border-color: var(--hairline-strong); }
+.pill.ghost:hover { background: var(--surface-1); }
+.pill:active { transform: translateY(1px); }
+.pill::after, .offer-link::after {
+  display: inline-block;
+  transition: transform var(--dur-1) var(--ease-out);
+}
+.pill:hover::after, .offer-link:hover::after { transform: translateX(3px); }
+
+/* ---- 5. Cards: neutral surface, hairline, lift on hover --------------- */
+:is(.offer-card, .newsroom-card, .tag-landing-card, .cs-card, .story-card,
+    .speaking-page .spk-talk, .trust-page .tr-card) {
+  background: var(--surface-0);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-1);
+  transition: box-shadow var(--dur-2) var(--ease-out), transform var(--dur-2) var(--ease-out),
+    border-color var(--dur-2) var(--ease-out);
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  :is(.offer-card, .newsroom-card, .tag-landing-card, .cs-card, .story-card):hover {
+    box-shadow: var(--shadow-3);
+    transform: translateY(-2px);
+    border-color: var(--hairline-strong);
+  }
+}
+
+/* ---- 6. Section rhythm ------------------------------------------------ */
+:is(.feat:not(.feat-hero), .ap-section:not(.tight)) { padding-block: var(--section-y); }
+:is(.feat, .ap-section) + :is(.feat, .ap-section) { border-top: 1px solid var(--hairline); }
+
+/* ---- 7. Headline faces and tracking (D-2: Inter headlines) ----------- */
+:is(.ap-hero h1, .feat-hero h1, .speaking-page .spk-hero h1, .trust-page .tr-hero h1,
+    .cs-hero-text h1, h2.feat-headline, .offer-headline, .speaking-page .spk-head h2,
+    .trust-page .tr-head h2, .newsroom-section-head :is(h1, h2), .topic-pillar-head h2) {
+  font-family: var(--type-body);
+  font-weight: 650;
+}
+:is(.ap-hero h1, .trust-page .tr-hero h1, .cs-hero-text h1) { letter-spacing: var(--track-display); }
+:is(.feat-hero h1, .speaking-page .spk-hero h1, header.tag-landing-hero h1) { letter-spacing: var(--track-h1); }
+:is(h2.feat-headline, .offer-headline, .speaking-page .spk-head h2) { letter-spacing: var(--track-h2); }
+/* Articles keep Newsreader for the title and pull quotes: the editorial voice. */
+body:has(.report-article) .ap-hero h1, aside.pull-quote { font-family: var(--type-display); }
+
+/* ---- 8. Motion: one reveal, from the tokens ---------------------------
+   The legacy layer's .reveal already hides until main.js adds .is-in,
+   shows everything without JavaScript and under reduced motion; only the
+   duration and easing move to the tokens. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal, .reveal :is(.offer-card, .newsroom-card) {
+    transition-duration: var(--dur-3);
+    transition-timing-function: var(--ease-out);
+  }
+}

@@ -115,10 +115,10 @@ window.serviceWorkerSetup = new ServiceWorkerSetup();
 /**
  * Fetches the webfonts once a page has loaded, for the views after it.
  *
- * A first view paints in the metric-matched system faces, so no font
- * download sits between the visitor and the first paint. After `load`,
- * this asks the browser for the three families (the latin files, the
- * ones every page uses), and once all three are in the HTTP cache it
+ * Inter is preloaded and on the first view (fonts.css). The serif and
+ * mono faces are not: a first view paints them in metric-matched system
+ * faces. After `load`, this asks the browser for those two families (the
+ * latin files), and once both are in the HTTP cache it
  * records "wf"; theme-init.js then adds .wf to <html> before the next
  * page paints, and the stylesheet switches to the webfonts there. The
  * current page is never switched, so nothing reflows under the reader.
@@ -131,7 +131,6 @@ window.serviceWorkerSetup = new ServiceWorkerSetup();
     function warm() {
         Promise.all([
             document.fonts.load('400 1em "Newsreader"'),
-            document.fonts.load('400 1em "Inter"'),
             document.fonts.load('400 1em "JetBrains Mono"')
         ]).then(function (sets) {
             var all = sets.every(function (faces) { return faces.length > 0; });
