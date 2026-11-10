@@ -92,5 +92,21 @@
   "scorecard.downloaded": "Scorecard image downloaded",
   "scorecard.radarTitle": "Readiness radar",
   "scorecard.methodology": "Read the full index methodology",
-  "scorecard.fallback": "The maturity dimensions are tabulated above. Enable JavaScript to score your institution interactively and export the result."
+  "scorecard.fallback": "The maturity dimensions are tabulated above. Enable JavaScript to score your institution interactively and export the result.",
+  "footer.title.contact": "Contact",
+  "footer.contact.location": "London, United Kingdom",
+  "footer.contact.response": "Typical first response within 48 hours",
+  "footer.newsletter.link": "Subscribe to Banking On Quantum",
+  "nav.workWithMe": "Work with me",
+  "nav.research": "Research collaboration",
+  "nav.openSourceSupport": "Open-source support",
+  "nav.aria.toggleWorkWithMe": "Toggle Work with me submenu",
+  "contact.privacyLine": "Your message goes to Formspree, which e-mails it to me; spam protection is by Google reCAPTCHA.",
+  "contact.privacyLink": "Privacy notice",
+  "footer.changelog": "Changelog",
+  "contact.eyebrow": "Contact",
+  "footer.mediaKit": "Media kit",
+  "contact.appTitle": "Contact",
+  "nav.hubPqc": "Post-quantum cryptography",
+  "nav.hubAi": "Applied AI"
 }

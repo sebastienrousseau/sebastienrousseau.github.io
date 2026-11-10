@@ -92,5 +92,21 @@
   "scorecard.downloaded": "Bild av resultatkort nedladdad",
   "scorecard.radarTitle": "Beredskapsradar",
   "scorecard.methodology": "Läs den fullständiga indexmetodiken",
-  "scorecard.fallback": "Mognadsdimensionerna är tabellerade ovan. Aktivera JavaScript för att bedöma ert institut interaktivt och exportera resultatet."
+  "scorecard.fallback": "Mognadsdimensionerna är tabellerade ovan. Aktivera JavaScript för att bedöma ert institut interaktivt och exportera resultatet.",
+  "footer.title.contact": "Kontakt",
+  "footer.contact.location": "London, Storbritannien",
+  "footer.contact.response": "Första svar vanligtvis inom 48 timmar",
+  "footer.newsletter.link": "Prenumerera på Banking On Quantum",
+  "nav.workWithMe": "Samarbeta",
+  "nav.research": "Forskningssamarbete",
+  "nav.openSourceSupport": "Stöd för öppen källkod",
+  "nav.aria.toggleWorkWithMe": "Växla undermenyn Samarbeta",
+  "contact.privacyLine": "Ditt meddelande går till Formspree, som mejlar det till mig; skräppostskyddet sköts av Google reCAPTCHA.",
+  "contact.privacyLink": "Integritetsmeddelande",
+  "footer.changelog": "Ändringslogg",
+  "contact.eyebrow": "Kontakt",
+  "footer.mediaKit": "Pressmaterial",
+  "contact.appTitle": "Kontakt",
+  "nav.hubPqc": "Postkvantkryptografi",
+  "nav.hubAi": "Tillämpad AI"
 }

@@ -92,5 +92,21 @@
   "scorecard.downloaded": "تصویر کارت امتیاز دانلود شد",
   "scorecard.radarTitle": "رادار آمادگی",
   "scorecard.methodology": "خواندن روش‌شناسی کامل شاخص",
-  "scorecard.fallback": "ابعاد بلوغ در جدول بالا فهرست شده‌اند. برای امتیازدهی تعاملی به مؤسسهٔ خود و خروجی‌گرفتن نتیجه، JavaScript را فعال کنید."
+  "scorecard.fallback": "ابعاد بلوغ در جدول بالا فهرست شده‌اند. برای امتیازدهی تعاملی به مؤسسهٔ خود و خروجی‌گرفتن نتیجه، JavaScript را فعال کنید.",
+  "footer.title.contact": "تماس",
+  "footer.contact.location": "لندن، بریتانیا",
+  "footer.contact.response": "پاسخ اول معمولاً ظرف ۴۸ ساعت",
+  "footer.newsletter.link": "اشتراک در Banking On Quantum",
+  "nav.workWithMe": "همکاری با من",
+  "nav.research": "همکاری پژوهشی",
+  "nav.openSourceSupport": "پشتیبانی متن‌باز",
+  "nav.aria.toggleWorkWithMe": "تغییر زیرمنوی همکاری با من",
+  "contact.privacyLine": "پیام شما به Formspree می‌رود که آن را برایم ایمیل می‌کند؛ محافظت در برابر هرزنامه با Google reCAPTCHA است.",
+  "contact.privacyLink": "اطلاعیه حریم خصوصی",
+  "footer.changelog": "تاریخچه تغییرات",
+  "contact.eyebrow": "تماس",
+  "footer.mediaKit": "بسته رسانه‌ای",
+  "contact.appTitle": "تماس",
+  "nav.hubPqc": "رمزنگاری پساکوانتومی",
+  "nav.hubAi": "هوش مصنوعی کاربردی"
 }

@@ -92,5 +92,21 @@
   "scorecard.downloaded": "Image de la fiche de score téléchargée",
   "scorecard.radarTitle": "Radar de maturité",
   "scorecard.methodology": "Lire la méthodologie complète de l’indice",
-  "scorecard.fallback": "Les dimensions de maturité sont présentées dans le tableau ci-dessus. Activez JavaScript pour évaluer votre établissement de manière interactive et exporter le résultat."
+  "scorecard.fallback": "Les dimensions de maturité sont présentées dans le tableau ci-dessus. Activez JavaScript pour évaluer votre établissement de manière interactive et exporter le résultat.",
+  "footer.title.contact": "Contact",
+  "footer.contact.location": "Londres, Royaume-Uni",
+  "footer.contact.response": "Première réponse généralement sous 48 heures",
+  "footer.newsletter.link": "S'abonner à Banking On Quantum",
+  "nav.workWithMe": "Travailler ensemble",
+  "nav.research": "Collaboration de recherche",
+  "nav.openSourceSupport": "Support open source",
+  "nav.aria.toggleWorkWithMe": "Basculer le sous-menu Travailler ensemble",
+  "contact.privacyLine": "Votre message passe par Formspree, qui me l'envoie par e-mail ; la protection contre le spam est assurée par Google reCAPTCHA.",
+  "contact.privacyLink": "Politique de confidentialité",
+  "footer.changelog": "Journal des modifications",
+  "contact.eyebrow": "Contact",
+  "footer.mediaKit": "Kit média",
+  "contact.appTitle": "Contact",
+  "nav.hubPqc": "Cryptographie post-quantique",
+  "nav.hubAi": "IA appliquée"
 }

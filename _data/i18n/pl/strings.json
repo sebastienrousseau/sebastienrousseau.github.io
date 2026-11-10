@@ -92,5 +92,21 @@
   "scorecard.downloaded": "Pobrano obraz karty wyników",
   "scorecard.radarTitle": "Radar gotowości",
   "scorecard.methodology": "Przeczytaj pełną metodologię indeksu",
-  "scorecard.fallback": "Wymiary dojrzałości zestawiono w tabeli powyżej. Włącz JavaScript, aby interaktywnie ocenić swoją instytucję i wyeksportować wynik."
+  "scorecard.fallback": "Wymiary dojrzałości zestawiono w tabeli powyżej. Włącz JavaScript, aby interaktywnie ocenić swoją instytucję i wyeksportować wynik.",
+  "footer.title.contact": "Kontakt",
+  "footer.contact.location": "Londyn, Wielka Brytania",
+  "footer.contact.response": "Pierwsza odpowiedź zwykle w ciągu 48 godzin",
+  "footer.newsletter.link": "Subskrybuj Banking On Quantum",
+  "nav.workWithMe": "Współpraca",
+  "nav.research": "Współpraca badawcza",
+  "nav.openSourceSupport": "Wsparcie open source",
+  "nav.aria.toggleWorkWithMe": "Przełącz podmenu Współpraca",
+  "contact.privacyLine": "Twoja wiadomość trafia do Formspree, który przesyła mi ją e-mailem; ochronę przed spamem zapewnia Google reCAPTCHA.",
+  "contact.privacyLink": "Informacja o prywatności",
+  "footer.changelog": "Dziennik zmian",
+  "contact.eyebrow": "Kontakt",
+  "footer.mediaKit": "Materiały prasowe",
+  "contact.appTitle": "Kontakt",
+  "nav.hubPqc": "Kryptografia postkwantowa",
+  "nav.hubAi": "Stosowana AI"
 }

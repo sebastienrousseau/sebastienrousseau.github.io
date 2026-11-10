@@ -131,6 +131,9 @@ def _strip_chrome_noise(html: str) -> str:
     return html
 
 
+_SAME_AS_EN: dict[str, frozenset[str]] = {}
+
+
 def _en_chrome_strings() -> list[str]:
     """Return the EN UI strings worth checking for leakage. Filter out
     very short strings (likely false positives) and globally-OK terms."""
@@ -152,6 +155,17 @@ def _en_chrome_strings() -> list[str]:
     return out
 
 
+def same_as_english(lang: str) -> frozenset[str]:
+    """EN strings this locale translates to the very same text ("Contact"
+    in French, "London, United Kingdom" in Filipino). On that locale's
+    pages they are the translation, not a leak."""
+    try:
+        en, own = _lang_registry.load_strings("en"), _lang_registry.load_strings(lang)
+    except _lang_registry.LanguageError:
+        return frozenset()
+    return frozenset(v.strip() for k, v in en.items() if isinstance(v, str) and own.get(k) == v)
+
+
 def check_page(path: Path, en_strings: list[str]) -> list[str]:
     """Return defects for one page.
 
@@ -167,7 +181,10 @@ def check_page(path: Path, en_strings: list[str]) -> list[str]:
     chrome = _strip_chrome_noise(html)
     rel = path.relative_to(PUBLIC).as_posix()
     defects: list[str] = []
+    identical = _SAME_AS_EN.setdefault(rel.split("/", 1)[0], same_as_english(rel.split("/", 1)[0]))
     for s in en_strings:
+        if s in identical:
+            continue
         escaped = re.escape(s)
         pat = rf"(?<![A-Za-z\-]){escaped}(?![A-Za-z\-])"
         if re.search(pat, chrome):

@@ -92,5 +92,21 @@
   "scorecard.downloaded": "تم تنزيل صورة بطاقة التقييم",
   "scorecard.radarTitle": "رادار الجاهزية",
   "scorecard.methodology": "اقرأ منهجية المؤشر الكاملة",
-  "scorecard.fallback": "أبعاد النضج مُدرجة في الجدول أعلاه. فعّل JavaScript لتقييم مؤسستك بشكل تفاعلي وتصدير النتيجة."
+  "scorecard.fallback": "أبعاد النضج مُدرجة في الجدول أعلاه. فعّل JavaScript لتقييم مؤسستك بشكل تفاعلي وتصدير النتيجة.",
+  "footer.title.contact": "تواصل",
+  "footer.contact.location": "لندن، المملكة المتحدة",
+  "footer.contact.response": "الرد الأول عادةً خلال 48 ساعة",
+  "footer.newsletter.link": "اشترك في Banking On Quantum",
+  "nav.workWithMe": "اعمل معي",
+  "nav.research": "التعاون البحثي",
+  "nav.openSourceSupport": "دعم المصادر المفتوحة",
+  "nav.aria.toggleWorkWithMe": "تبديل القائمة الفرعية اعمل معي",
+  "contact.privacyLine": "تصل رسالتك إلى Formspree التي ترسلها إليّ بالبريد الإلكتروني؛ والحماية من الرسائل المزعجة عبر Google reCAPTCHA.",
+  "contact.privacyLink": "إشعار الخصوصية",
+  "footer.changelog": "سجل التغييرات",
+  "contact.eyebrow": "تواصل",
+  "footer.mediaKit": "الملف الإعلامي",
+  "contact.appTitle": "تواصل",
+  "nav.hubPqc": "التشفير ما بعد الكمّي",
+  "nav.hubAi": "الذكاء الاصطناعي التطبيقي"
 }

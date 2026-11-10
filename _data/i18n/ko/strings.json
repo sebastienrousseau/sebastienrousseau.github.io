@@ -92,5 +92,21 @@
   "scorecard.downloaded": "스코어카드 이미지를 다운로드했습니다",
   "scorecard.radarTitle": "준비도 레이더",
   "scorecard.methodology": "전체 지수 방법론 읽기",
-  "scorecard.fallback": "성숙도 차원은 위 표에 정리되어 있습니다. 귀 기관을 대화식으로 평가하고 결과를 내보내려면 JavaScript를 활성화하세요."
+  "scorecard.fallback": "성숙도 차원은 위 표에 정리되어 있습니다. 귀 기관을 대화식으로 평가하고 결과를 내보내려면 JavaScript를 활성화하세요.",
+  "footer.title.contact": "연락처",
+  "footer.contact.location": "영국 런던",
+  "footer.contact.response": "보통 48시간 이내 첫 답변",
+  "footer.newsletter.link": "Banking On Quantum 구독하기",
+  "nav.workWithMe": "협업하기",
+  "nav.research": "연구 협력",
+  "nav.openSourceSupport": "오픈 소스 지원",
+  "nav.aria.toggleWorkWithMe": "협업하기 하위 메뉴 전환",
+  "contact.privacyLine": "메시지는 Formspree를 거쳐 제게 이메일로 전달됩니다. 스팸 방지는 Google reCAPTCHA가 담당합니다.",
+  "contact.privacyLink": "개인정보 처리방침",
+  "footer.changelog": "변경 기록",
+  "contact.eyebrow": "연락처",
+  "footer.mediaKit": "미디어 키트",
+  "contact.appTitle": "연락처",
+  "nav.hubPqc": "양자내성암호",
+  "nav.hubAi": "응용 AI"
 }

@@ -91,5 +91,21 @@
   "scorecard.downloaded": "Az eredménykártya képe letöltve",
   "scorecard.radarTitle": "Felkészültségi radar",
   "scorecard.methodology": "A teljes index-módszertan elolvasása",
-  "scorecard.fallback": "Az érettségi dimenziók a fenti táblázatban szerepelnek. Engedélyezze a JavaScriptet, hogy interaktívan értékelje intézményét és exportálja az eredményt."
+  "scorecard.fallback": "Az érettségi dimenziók a fenti táblázatban szerepelnek. Engedélyezze a JavaScriptet, hogy interaktívan értékelje intézményét és exportálja az eredményt.",
+  "footer.title.contact": "Kapcsolat",
+  "footer.contact.location": "London, Egyesült Királyság",
+  "footer.contact.response": "Első válasz általában 48 órán belül",
+  "footer.newsletter.link": "Feliratkozás a Banking On Quantumra",
+  "nav.workWithMe": "Együttműködés",
+  "nav.research": "Kutatási együttműködés",
+  "nav.openSourceSupport": "Nyílt forráskódú támogatás",
+  "nav.aria.toggleWorkWithMe": "Az Együttműködés almenü váltása",
+  "contact.privacyLine": "Üzenete a Formspree-hez kerül, amely e-mailben továbbítja nekem; a spamvédelmet a Google reCAPTCHA biztosítja.",
+  "contact.privacyLink": "Adatvédelmi tájékoztató",
+  "footer.changelog": "Változásnapló",
+  "contact.eyebrow": "Kapcsolat",
+  "footer.mediaKit": "Médiacsomag",
+  "contact.appTitle": "Kapcsolat",
+  "nav.hubPqc": "Posztkvantum-kriptográfia",
+  "nav.hubAi": "Alkalmazott MI"
 }

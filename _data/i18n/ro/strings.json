@@ -92,5 +92,21 @@
   "scorecard.downloaded": "Imaginea fișei de scor a fost descărcată",
   "scorecard.radarTitle": "Radar de pregătire",
   "scorecard.methodology": "Citiți metodologia completă a indicelui",
-  "scorecard.fallback": "Dimensiunile de maturitate sunt tabelate mai sus. Activați JavaScript pentru a vă evalua instituția interactiv și a exporta rezultatul."
+  "scorecard.fallback": "Dimensiunile de maturitate sunt tabelate mai sus. Activați JavaScript pentru a vă evalua instituția interactiv și a exporta rezultatul.",
+  "footer.title.contact": "Contact",
+  "footer.contact.location": "Londra, Regatul Unit",
+  "footer.contact.response": "Primul răspuns de obicei în 48 de ore",
+  "footer.newsletter.link": "Abonează-te la Banking On Quantum",
+  "nav.workWithMe": "Colaborare",
+  "nav.research": "Colaborare în cercetare",
+  "nav.openSourceSupport": "Suport open source",
+  "nav.aria.toggleWorkWithMe": "Comută submeniul Colaborare",
+  "contact.privacyLine": "Mesajul tău ajunge la Formspree, care mi-l trimite pe e-mail; protecția anti-spam este asigurată de Google reCAPTCHA.",
+  "contact.privacyLink": "Notificare de confidențialitate",
+  "footer.changelog": "Jurnal de modificări",
+  "contact.eyebrow": "Contact",
+  "footer.mediaKit": "Kit media",
+  "contact.appTitle": "Contact",
+  "nav.hubPqc": "Criptografie post-cuantică",
+  "nav.hubAi": "IA aplicată"
 }

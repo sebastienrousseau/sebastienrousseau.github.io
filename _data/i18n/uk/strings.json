@@ -92,5 +92,21 @@
   "scorecard.downloaded": "Зображення оцінкової картки завантажено",
   "scorecard.radarTitle": "Радар готовності",
   "scorecard.methodology": "Прочитати повну методологію індексу",
-  "scorecard.fallback": "Виміри зрілості наведено в таблиці вище. Увімкніть JavaScript, щоб інтерактивно оцінити вашу установу та експортувати результат."
+  "scorecard.fallback": "Виміри зрілості наведено в таблиці вище. Увімкніть JavaScript, щоб інтерактивно оцінити вашу установу та експортувати результат.",
+  "footer.title.contact": "Контакти",
+  "footer.contact.location": "Лондон, Велика Британія",
+  "footer.contact.response": "Перша відповідь зазвичай протягом 48 годин",
+  "footer.newsletter.link": "Підписатися на Banking On Quantum",
+  "nav.workWithMe": "Співпраця",
+  "nav.research": "Дослідницька співпраця",
+  "nav.openSourceSupport": "Підтримка open source",
+  "nav.aria.toggleWorkWithMe": "Перемкнути підменю «Співпраця»",
+  "contact.privacyLine": "Ваше повідомлення надходить до Formspree, який пересилає його мені електронною поштою; захист від спаму забезпечує Google reCAPTCHA.",
+  "contact.privacyLink": "Повідомлення про конфіденційність",
+  "footer.changelog": "Журнал змін",
+  "contact.eyebrow": "Контакти",
+  "footer.mediaKit": "Медіакіт",
+  "contact.appTitle": "Контакти",
+  "nav.hubPqc": "Постквантова криптографія",
+  "nav.hubAi": "Прикладний ШІ"
 }

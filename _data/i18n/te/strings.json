@@ -91,5 +91,21 @@
   "scorecard.downloaded": "స్కోర్‌కార్డ్ చిత్రం డౌన్‌లోడ్ చేయబడింది",
   "scorecard.radarTitle": "సంసిద్ధత రాడార్",
   "scorecard.methodology": "పూర్తి సూచిక పద్ధతిని చదవండి",
-  "scorecard.fallback": "పరిపక్వత కోణాలు పైన పట్టికలో ఇవ్వబడ్డాయి. మీ సంస్థను ఇంటరాక్టివ్‌గా మూల్యాంకనం చేయడానికి మరియు ఫలితాన్ని ఎగుమతి చేయడానికి JavaScript ప్రారంభించండి."
+  "scorecard.fallback": "పరిపక్వత కోణాలు పైన పట్టికలో ఇవ్వబడ్డాయి. మీ సంస్థను ఇంటరాక్టివ్‌గా మూల్యాంకనం చేయడానికి మరియు ఫలితాన్ని ఎగుమతి చేయడానికి JavaScript ప్రారంభించండి.",
+  "footer.title.contact": "సంప్రదించండి",
+  "footer.contact.location": "లండన్, యునైటెడ్ కింగ్‌డమ్",
+  "footer.contact.response": "మొదటి స్పందన సాధారణంగా 48 గంటల్లో",
+  "footer.newsletter.link": "Banking On Quantum కు సభ్యత్వం పొందండి",
+  "nav.workWithMe": "నాతో కలిసి పనిచేయండి",
+  "nav.research": "పరిశోధన సహకారం",
+  "nav.openSourceSupport": "ఓపెన్-సోర్స్ మద్దతు",
+  "nav.aria.toggleWorkWithMe": "నాతో కలిసి పనిచేయండి ఉపమెనూను టోగుల్ చేయండి",
+  "contact.privacyLine": "మీ సందేశం Formspree కు వెళ్తుంది, అది దాన్ని నాకు ఈమెయిల్ చేస్తుంది; స్పామ్ రక్షణ Google reCAPTCHA ద్వారా.",
+  "contact.privacyLink": "గోప్యతా నోటీసు",
+  "footer.changelog": "మార్పుల చిట్టా",
+  "contact.eyebrow": "సంప్రదించండి",
+  "footer.mediaKit": "మీడియా కిట్",
+  "contact.appTitle": "సంప్రదించండి",
+  "nav.hubPqc": "పోస్ట్-క్వాంటం క్రిప్టోగ్రఫీ",
+  "nav.hubAi": "అనువర్తిత AI"
 }

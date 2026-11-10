@@ -92,5 +92,21 @@
   "scorecard.downloaded": "Gambar kartu skor diunduh",
   "scorecard.radarTitle": "Radar kesiapan",
   "scorecard.methodology": "Baca metodologi indeks lengkap",
-  "scorecard.fallback": "Dimensi kematangan ditabulasikan di atas. Aktifkan JavaScript untuk menilai institusi Anda secara interaktif dan mengekspor hasilnya."
+  "scorecard.fallback": "Dimensi kematangan ditabulasikan di atas. Aktifkan JavaScript untuk menilai institusi Anda secara interaktif dan mengekspor hasilnya.",
+  "footer.title.contact": "Kontak",
+  "footer.contact.location": "London, Britania Raya",
+  "footer.contact.response": "Balasan pertama biasanya dalam 48 jam",
+  "footer.newsletter.link": "Berlangganan Banking On Quantum",
+  "nav.workWithMe": "Bekerja sama",
+  "nav.research": "Kolaborasi riset",
+  "nav.openSourceSupport": "Dukungan open source",
+  "nav.aria.toggleWorkWithMe": "Buka atau tutup submenu Bekerja sama",
+  "contact.privacyLine": "Pesan Anda dikirim ke Formspree, yang meneruskannya ke email saya; perlindungan spam oleh Google reCAPTCHA.",
+  "contact.privacyLink": "Pemberitahuan privasi",
+  "footer.changelog": "Catatan perubahan",
+  "contact.eyebrow": "Kontak",
+  "footer.mediaKit": "Kit media",
+  "contact.appTitle": "Kontak",
+  "nav.hubPqc": "Kriptografi pascakuantum",
+  "nav.hubAi": "AI terapan"
 }
