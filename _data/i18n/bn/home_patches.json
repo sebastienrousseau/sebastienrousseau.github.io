@@ -166,8 +166,8 @@
       "<a class=pill href=\"/bn/prabondho/index.html\">সর্বশেষ গবেষণা পড়ুন</a>"
     ],
     [
-      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/bn/jogajog/index.html\">যোগাযোগ করুন</a>"
+      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"\\1\" href=\"/bn/jogajog/index.html\">যোগাযোগ করুন</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -356,6 +356,50 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">ISO 20022 লাইব্রেরিগুলো দেখুন <span"
+    ],
+    [
+      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
+      ">কোয়ান্টাম যুগে ব্যাংকগুলো ভরসা করতে পারে এমন পেমেন্ট অবকাঠামো।</h1>"
+    ],
+    [
+      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
+      ">আমি HSBC-তে হোলসেল পেমেন্ট API প্রোডাক্টের নেতৃত্ব দিই এবং ওপেন-সোর্স ISO 20022 ও পোস্ট-কোয়ান্টাম টুলিং তৈরি করি, যা ব্যাংক ও ফিনটেক প্রতিষ্ঠানগুলো যাচাই, পরীক্ষা ও পুনর্ব্যবহার করতে পারে।</p>"
+    ],
+    [
+      ">Read the research</a>",
+      ">গবেষণা পড়ুন</a>"
+    ],
+    [
+      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
+      ">EPAA হোয়াইট পেপারের অবদানকারী · ফেলো, Institution of Analysts and Programmers</p>"
+    ],
+    [
+      ">Payments and digital products, built at:</p>",
+      ">পেমেন্ট ও ডিজিটাল প্রোডাক্ট তৈরি করেছি যেখানে:</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Recognition</p>",
+      "<p class=\"feat-eyebrow\">স্বীকৃতি</p>"
+    ],
+    [
+      ">Recognition and featured work\\.</h2>",
+      ">স্বীকৃতি ও উল্লেখযোগ্য কাজ।</h2>"
+    ],
+    [
+      "aria-label=\"Recognition\"",
+      "aria-label=\"স্বীকৃতি\""
+    ],
+    [
+      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
+      "<li>Institution of Analysts and Programmers-এর ফেলো (FIAP)</li>"
+    ],
+    [
+      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
+      ">পেমেন্ট, কোয়ান্টাম-সুরক্ষা বা ISO 20022 নিয়ে কাজ করছেন?</h2>"
+    ],
+    [
+      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
+      ">আপনি কী তৈরি করছেন আমাকে জানান। সাধারণত প্রথম উত্তর ৪৮ ঘণ্টার মধ্যে আসে।</p>"
     ]
   ]
 }

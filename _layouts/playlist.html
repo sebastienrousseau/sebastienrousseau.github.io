@@ -3163,6 +3163,116 @@ body:has(.report-article) .ap-hero h1, aside.pull-quote { font-family: var(--typ
     transition-timing-function: var(--ease-out);
   }
 }
+
+/* ---- 9. Home v3 (plan C-3): hero, logo row, recognition, closing ------ */
+.hero-v3 { background: var(--signature), var(--paper); }
+.hero-v3 .feat-cta { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); }
+.hero-v3 .hero-creds { margin-top: var(--space-4); font-size: var(--fs-meta); color: var(--ink-mute); }
+.hero-v3 .feat-hero-stage .hero-portrait {
+  width: min(100%, 288px);
+  height: auto;
+  aspect-ratio: 1;
+  margin: 0;
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-3);
+}
+@media (width < 960px) {
+  .hero-v3 .feat-hero-stage { order: -1; margin-top: 0; }
+  .hero-v3 .feat-hero-stage .hero-portrait { width: 96px; border-radius: var(--radius-pill); }
+}
+.logo-row-band { padding-block: var(--space-8); }
+.logo-row-band .brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-6) var(--space-9);
+}
+.logo-row-band .brand-logo {
+  height: 28px;
+  width: auto;
+  filter: grayscale(1);
+  opacity: 0.7;
+}
+.recognition { display: grid; gap: var(--space-6); grid-template-columns: 1fr; text-align: start; }
+@media (min-width: 900px) {
+  .recognition { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; }
+}
+.recognition-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+.recognition-list li {
+  padding-block: var(--space-3);
+  border-bottom: 1px solid var(--hairline);
+  font-size: var(--fs-small);
+}
+.closing-v3 { background: var(--surface-1); }
+.closing-v3 .feat-cta { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-3); }
+.closing-v3 .closing-newsletter {
+  margin-top: var(--space-6);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--hairline);
+  font-size: var(--fs-small);
+}
+/* The live London clock, moved from the home hero to Contact. */
+.contact-clock { margin-top: var(--space-6); color: var(--ink-mute); }
+.contact-clock svg { width: min(100%, 240px); height: auto; }
+.ap-form-privacy { margin-top: var(--space-3); font-size: var(--fs-meta); color: var(--ink-mute); }
+/* The AI due-diligence links, moved from the home finale to the foot of
+   About: on the light page the kicker and divider take the page's ink. */
+.about-ai .finale-ai-verify { border-top-color: var(--hairline); }
+.about-ai .finale-ai-kicker { color: var(--ink-mute); }
+/* 404 (plan F-8): a search box, six key links and the latest articles. */
+.ap-404-search { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); margin-block: var(--space-6); }
+.ap-404-search label { flex-basis: 100%; font-weight: 600; }
+.ap-404-search input {
+  flex: 1 1 16rem;
+  min-height: 44px;
+  padding-inline: var(--space-4);
+  border: 1px solid var(--hairline-strong);
+  border-radius: var(--radius-pill);
+  background: var(--surface-0);
+  color: var(--ink);
+  font-size: var(--fs-body);
+}
+.ap-404-links { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5); padding: 0; list-style: none; }
+/* /tools/ (plan G-4): forms that run in the browser. */
+.tool-form :is(textarea, select, input) {
+  width: 100%;
+  min-height: 44px;
+  padding: var(--space-3);
+  border: 1px solid var(--hairline-strong);
+  border-radius: var(--radius-s);
+  background: var(--surface-0);
+  color: var(--ink);
+  font-size: var(--fs-small);
+}
+.tool-form textarea { font-family: var(--type-mono); }
+.tool-form label { display: block; margin-top: var(--space-4); font-weight: 600; }
+.tool-form output { display: block; margin-top: var(--space-4); }
+.tool-note { font-size: var(--fs-meta); color: var(--ink-mute); }
+/* Article "Share · Cite" menu (plan C-4): one native disclosure under the
+   title in place of the share and action rails. */
+.article-tools {
+  border-block: 1px solid var(--hairline);
+  padding-block: var(--space-3);
+  margin-block: var(--space-6);
+}
+.article-tools summary { cursor: pointer; font-weight: 600; font-size: var(--fs-ui); min-height: 44px; display: flex; align-items: center; }
+.article-tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  margin: var(--space-3) 0 0;
+  padding: 0;
+  list-style: none;
+}
+.article-tools-list :is(a, button) {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  font-size: var(--fs-small);
+}
+.article-tools-list svg { width: 16px; height: 16px; }
 /* ds:end */
     </style>
     <style>:root{--accent-page:rgb({{theme-color}});--accent-page-rgb:{{theme-color}}}</style>
@@ -3182,6 +3292,9 @@ body:has(.report-article) .ap-hero h1, aside.pull-quote { font-family: var(--typ
             <li class="has-sub"><a href="/library/index.html">Insights</a>
               <button type="button" class="ap-sub-toggle" aria-expanded="false" aria-controls="sub-insights" aria-label="Toggle Insights submenu"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
               <ul id="sub-insights" class="ap-sub">
+                <li><a href="/iso-20022/index.html">ISO 20022</a></li>
+                <li><a href="/post-quantum-cryptography/index.html">Post-quantum cryptography</a></li>
+                <li><a href="/applied-ai/index.html">Applied AI</a></li>
                 <li><a href="/articles/index.html">Articles</a></li>
                 <li><a href="/research/index.html">Whitepapers &amp; Reports</a></li>
                 <li><a href="/case-studies/index.html">Real-World Case Studies</a></li>
@@ -3196,6 +3309,13 @@ body:has(.report-article) .ap-hero h1, aside.pull-quote { font-family: var(--typ
                 <li><a href="/iso20022-mcp-reference/index.html">API Reference</a></li>
                 <li><a href="/iso20022-mcp-recipes/index.html">Integration Recipes</a></li>
                 <li><a href="/projects/index.html">Open Source Projects</a></li>
+              </ul>
+            </li>
+            <li class="has-sub"><a href="/work-with-me/index.html">Work with me</a>
+              <button type="button" class="ap-sub-toggle" aria-expanded="false" aria-controls="sub-work" aria-label="Toggle Work with me submenu"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+              <ul id="sub-work" class="ap-sub">
+                <li><a href="/work-with-me/research/index.html">Research collaboration</a></li>
+                <li><a href="/work-with-me/open-source/index.html">Open-source support</a></li>
               </ul>
             </li>
             <li class="has-sub"><a href="/speaking/index.html">Speaking</a>
@@ -3880,6 +4000,7 @@ playlists arrive on their own.</p>
               <li><a href="/about/index.html">About</a></li>
               <li><a href="/contact/index.html">Contact</a></li>
               <li><a href="/speaking/index.html">Speaking</a></li>
+              <li><a href="/about/media-kit/index.html">Media kit</a></li>
             </ul>
           </div>
           <div>
@@ -3890,6 +4011,7 @@ playlists arrive on their own.</p>
               <li><a href="/papers/index.html">Papers</a></li>
               <li><a href="/topics/index.html">Topics</a></li>
               <li><a href="/tags/index.html">Tags</a></li>
+              <li><a href="/changelog/index.html">Changelog</a></li>
               <li><a href="/rss.xml">RSS</a></li>
             </ul>
           </div>
@@ -3897,6 +4019,9 @@ playlists arrive on their own.</p>
             <h2 class="ap-foot-title">Work</h2>
             <ul>
               <li><a href="/projects/index.html">Projects</a></li><li><a href="/iso20022-mcp/index.html">ISO 20022</a></li>
+              <li><a href="/work-with-me/index.html">Work with me</a></li>
+              <li><a href="/work-with-me/research/index.html">Research collaboration</a></li>
+              <li><a href="/work-with-me/open-source/index.html">Open-source support</a></li>
               <li><a href="/trust/index.html">Trust</a></li>
             </ul>
           </div>
@@ -3910,16 +4035,16 @@ playlists arrive on their own.</p>
               <li><a href="/playlists/index.html">Playlists</a></li>
             </ul>
           </div>
-        </div>
-        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Newsletter signup">
-          <label for="ap-newsletter-email" class="ap-newsletter-label">Monthly briefings on AI, ISO 20022, and quantum-safe payments, written for senior banking architects. No spam, unsubscribe in one click.</label>
-          <div class="ap-newsletter-row">
-            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />
-            <input type="hidden" name="subject" value="newsletter" />
-            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
-            <button type="submit">Subscribe</button>
+          <div>
+            <h2 class="ap-foot-title">Contact</h2>
+            <ul>
+              <li><a href="mailto:contact@sebastienrousseau.com">contact@sebastienrousseau.com</a></li>
+              <li><span>London, United Kingdom</span></li>
+              <li><span>Typical first response within 48 hours</span></li>
+              <li><a href="https://news.bankingonquantum.com" rel="external noopener">Subscribe to Banking On Quantum</a></li>
+            </ul>
           </div>
-        </form>
+        </div>
         <div class="legal">
           <span>{{copyright}}</span>
           <nav class="social" aria-label="Social links">

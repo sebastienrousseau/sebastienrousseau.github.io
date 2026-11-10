@@ -166,8 +166,8 @@
       "<a class=pill href=\"/he/ma-amarim/index.html\">קראו את המחקר האחרון</a>"
     ],
     [
-      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/he/tsor-kesher/index.html\">צרו קשר</a>"
+      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"\\1\" href=\"/he/tsor-kesher/index.html\">צרו קשר</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -356,6 +356,50 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">גלו את ספריות ISO 20022 <span"
+    ],
+    [
+      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
+      ">תשתית תשלומים שבנקים יכולים לסמוך עליה בעידן הקוונטי.</h1>"
+    ],
+    [
+      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
+      ">אני מוביל את מוצרי ה-API לתשלומים סיטונאיים ב-HSBC ומפתח כלים בקוד פתוח ל-ISO 20022 ולקריפטוגרפיה פוסט-קוונטית, שבנקים וחברות פינטק יכולים לבחון, לבדוק ולעשות בהם שימוש חוזר.</p>"
+    ],
+    [
+      ">Read the research</a>",
+      ">לקריאת המחקר</a>"
+    ],
+    [
+      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
+      ">תורם לנייר העמדה של EPAA · עמית (Fellow), Institution of Analysts and Programmers</p>"
+    ],
+    [
+      ">Payments and digital products, built at:</p>",
+      ">מוצרי תשלומים ומוצרים דיגיטליים שבניתי ב:</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Recognition</p>",
+      "<p class=\"feat-eyebrow\">הכרה</p>"
+    ],
+    [
+      ">Recognition and featured work\\.</h2>",
+      ">הכרה ועבודות נבחרות.</h2>"
+    ],
+    [
+      "aria-label=\"Recognition\"",
+      "aria-label=\"הכרה\""
+    ],
+    [
+      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
+      "<li>עמית ב-Institution of Analysts and Programmers (FIAP)</li>"
+    ],
+    [
+      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
+      ">עובדים על תשלומים, עמידות קוונטית או ISO 20022?</h2>"
+    ],
+    [
+      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
+      ">ספרו לי מה אתם בונים. התגובה הראשונה מגיעה בדרך כלל תוך 48 שעות.</p>"
     ]
   ]
 }

@@ -165,8 +165,8 @@
       "<a class=pill href=\"/el/articles/index.html\">Διαβάστε την πρόσφατη έρευνα</a>"
     ],
     [
-      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/el/contact/index.html\">Επικοινωνήστε</a>"
+      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"\\1\" href=\"/el/contact/index.html\">Επικοινωνήστε</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -355,6 +355,50 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">Εξερευνήστε τις βιβλιοθήκες ISO 20022 <span"
+    ],
+    [
+      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
+      ">Υποδομές πληρωμών που οι τράπεζες μπορούν να εμπιστευτούν στην κβαντική εποχή.</h1>"
+    ],
+    [
+      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
+      ">Ηγούμαι των προϊόντων API χονδρικών πληρωμών στην HSBC και αναπτύσσω εργαλεία ανοιχτού κώδικα για το ISO 20022 και τη μετακβαντική κρυπτογραφία, τα οποία τράπεζες και fintech μπορούν να ελέγξουν, να δοκιμάσουν και να επαναχρησιμοποιήσουν.</p>"
+    ],
+    [
+      ">Read the research</a>",
+      ">Διαβάστε την έρευνα</a>"
+    ],
+    [
+      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
+      ">Συντάκτης λευκής βίβλου της EPAA · Fellow, Institution of Analysts and Programmers</p>"
+    ],
+    [
+      ">Payments and digital products, built at:</p>",
+      ">Προϊόντα πληρωμών και ψηφιακά προϊόντα, που δημιούργησα στις:</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Recognition</p>",
+      "<p class=\"feat-eyebrow\">Διακρίσεις</p>"
+    ],
+    [
+      ">Recognition and featured work\\.</h2>",
+      ">Διακρίσεις και επιλεγμένο έργο.</h2>"
+    ],
+    [
+      "aria-label=\"Recognition\"",
+      "aria-label=\"Διακρίσεις\""
+    ],
+    [
+      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
+      "<li>Fellow του Institution of Analysts and Programmers (FIAP)</li>"
+    ],
+    [
+      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
+      ">Εργάζεστε σε πληρωμές, κβαντική ασφάλεια ή ISO 20022;</h2>"
+    ],
+    [
+      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
+      ">Πείτε μου τι χτίζετε. Η πρώτη απάντηση έρχεται συνήθως μέσα σε 48 ώρες.</p>"
     ]
   ]
 }

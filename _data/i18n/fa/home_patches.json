@@ -165,8 +165,8 @@
       "<a class=pill href=\"/fa/articles/index.html\">خواندن پژوهش‌های اخیر</a>"
     ],
     [
-      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/fa/contact/index.html\">تماس با من</a>"
+      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"\\1\" href=\"/fa/contact/index.html\">تماس با من</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -355,6 +355,50 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">کاوش کتابخانه‌های ISO 20022 <span"
+    ],
+    [
+      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
+      ">زیرساخت پرداختی که بانک‌ها در عصر کوانتوم می‌توانند به آن اعتماد کنند.</h1>"
+    ],
+    [
+      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
+      ">من محصولات API پرداخت‌های عمده را در HSBC رهبری می‌کنم و ابزارهای متن‌باز ISO 20022 و پساکوانتومی می‌سازم که بانک‌ها و فین‌تک‌ها می‌توانند آن‌ها را بررسی، آزمایش و دوباره استفاده کنند.</p>"
+    ],
+    [
+      ">Read the research</a>",
+      ">خواندن پژوهش‌ها</a>"
+    ],
+    [
+      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
+      ">مشارکت‌کننده در وایت‌پیپر EPAA · عضو ارشد (Fellow) مؤسسه تحلیلگران و برنامه‌نویسان</p>"
+    ],
+    [
+      ">Payments and digital products, built at:</p>",
+      ">محصولات پرداخت و دیجیتال، ساخته‌شده در:</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Recognition</p>",
+      "<p class=\"feat-eyebrow\">افتخارات</p>"
+    ],
+    [
+      ">Recognition and featured work\\.</h2>",
+      ">افتخارات و کارهای برگزیده.</h2>"
+    ],
+    [
+      "aria-label=\"Recognition\"",
+      "aria-label=\"افتخارات\""
+    ],
+    [
+      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
+      "<li>عضو ارشد مؤسسه تحلیلگران و برنامه‌نویسان (FIAP)</li>"
+    ],
+    [
+      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
+      ">روی پرداخت، امنیت کوانتومی یا ISO 20022 کار می‌کنید؟</h2>"
+    ],
+    [
+      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
+      ">بگویید چه می‌سازید. معمولاً نخستین پاسخ ظرف ۴۸ ساعت ارسال می‌شود.</p>"
     ]
   ]
 }
