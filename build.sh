@@ -132,6 +132,8 @@ python3 scripts/postbuild/regen_homepage.py --dir _posts_build
 python3 scripts/postbuild/post_enrich.py --dir _posts_build
 # About: leadership timeline and credentials from _data/profile.yml.
 python3 scripts/generators/build_about_profile.py --dir _posts_build
+# The 404 page lists the three newest English articles (F-8).
+python3 scripts/generators/build_404_latest.py --dir _posts_build
 # Rewrite the /tags/ cover page from _data/taxonomy.yml so the
 # editorial pillar grid replaces the legacy monolithic anchor list.
 # Lenient on missing taxonomy (WS3 commit 1 must have shipped first).
@@ -221,6 +223,12 @@ if [[ -d assets/js/mcp-simulator ]]; then
   cp -f assets/js/mcp-simulator/iso20022-simulator-core.js public/_csp/iso20022-simulator-core.js
   cp -f assets/js/mcp-simulator/iso20022-simulator-data.js public/_csp/iso20022-simulator-data.js
   cp -f assets/js/mcp-simulator/iso20022-simulator.js public/_csp/iso20022-simulator.js
+fi
+
+# Browser tools for /tools/ (G-4): same-origin ES modules.
+if [[ -d assets/js/tools ]]; then
+  mkdir -p public/_csp/tools
+  cp -f assets/js/tools/*.js public/_csp/tools/
 fi
 
 if [[ -f assets/js/vendor/web-vitals.js ]]; then
@@ -477,6 +485,14 @@ python3 scripts/generators/build_trust.py
 # /languages/: every published locale, the target of the language menu's
 # "More languages" on indexed pages (D-3). Same shell and timing as /trust/.
 python3 scripts/generators/build_languages.py
+# /work-with-me/ hub and service pages from _data/services.yml (F-4).
+python3 scripts/generators/build_services.py
+# /about/media-kit/ from _data/profile.yml (G-6).
+python3 scripts/generators/build_media_kit.py
+# /tools/: three browser tools and the MCP suite card (G-4).
+python3 scripts/generators/build_tools.py
+# Topic hubs from _data/hubs.yml (G-1); fails on an unsourced or stale fact.
+python3 scripts/generators/build_topic_hubs.py
 # Changelog + "what's new" strip + build/deploy/uptime status (Phase 5).
 # Runs AFTER build_translations so the homepage strip only lands on the
 # English public/index.html (locale homepages are forked earlier and must
@@ -555,6 +571,14 @@ python3 tests/validation/test_jsonld_localized.py
 python3 tests/validation/test_sitemap_completeness.py
 python3 tests/validation/test_sitemap_indexable.py
 python3 tests/validation/test_switcher_indexed_only.py
+# F-3: visible breadcrumbs and BreadcrumbList agree.
+python3 tests/validation/test_breadcrumbs_match.py
+# F-2: title and description lengths (warning until every rewrite lands).
+python3 tests/validation/test_title_description_lengths.py
+# A-3: no machine-drafted string unreviewed for more than 60 days.
+python3 tests/validation/test_i18n_review_state.py
+# B-3: warn (never fail) when more than two English articles share a week.
+python3 scripts/seo_and_audit/cadence_check.py
 python3 tests/validation/test_lang_no_leakage.py
 python3 tests/validation/test_localised_titles.py
 python3 tests/validation/test_body_translation.py --strict
@@ -652,6 +676,17 @@ if command -v node >/dev/null 2>&1; then
     --test-coverage-include='assets/js/mcp-simulator/iso20022-simulator-data.js' \
     tests/unit/mcp-simulator/simulator-core.test.mjs
 fi
+
+# The /tools/ modules: pure functions, 100% covered, 10+ fixtures each (G-4).
+node --test \
+  --experimental-test-coverage \
+  --test-coverage-lines=100 \
+  --test-coverage-branches=100 \
+  --test-coverage-functions=100 \
+  --test-coverage-include='assets/js/tools/address-check.js' \
+  --test-coverage-include='assets/js/tools/message-id.js' \
+  --test-coverage-include='assets/js/tools/pqc-sizes.js' \
+  tests/unit/tools/tools.test.mjs
 
 # Deployment is the public/ Pages artifact uploaded by CI
 # (.github/workflows/ci.yml) — nothing is served from a git-tracked
