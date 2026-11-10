@@ -474,6 +474,9 @@ python3 scripts/generators/build_news_sitemap.py
 # so the sitemap-augment pass adds it and its inline JSON-LD is CSP-hashed.
 # (build_speaking moved earlier: it now forks all locales like build_case_studies.)
 python3 scripts/generators/build_trust.py
+# /languages/: every published locale, the target of the language menu's
+# "More languages" on indexed pages (D-3). Same shell and timing as /trust/.
+python3 scripts/generators/build_languages.py
 # Changelog + "what's new" strip + build/deploy/uptime status (Phase 5).
 # Runs AFTER build_translations so the homepage strip only lands on the
 # English public/index.html (locale homepages are forked earlier and must
@@ -551,6 +554,7 @@ python3 tests/validation/test_hreflang_reciprocity.py
 python3 tests/validation/test_jsonld_localized.py
 python3 tests/validation/test_sitemap_completeness.py
 python3 tests/validation/test_sitemap_indexable.py
+python3 tests/validation/test_switcher_indexed_only.py
 python3 tests/validation/test_lang_no_leakage.py
 python3 tests/validation/test_localised_titles.py
 python3 tests/validation/test_body_translation.py --strict
