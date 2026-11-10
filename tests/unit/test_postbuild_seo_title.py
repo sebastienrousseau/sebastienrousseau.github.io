@@ -68,9 +68,14 @@ def test_seo_titles_reads_front_matter(tmp_path: Path) -> None:
     )
     (tmp_path / "c.md").write_text("no front matter", encoding="utf-8")
     (tmp_path / "fr" / "c.md").write_text('---\nseo_title: "Court"\n---\n', encoding="utf-8")
+    # A translation that copied the English permalink keys by path only.
+    (tmp_path / "fr" / "d.md").write_text(
+        f'---\npermalink: "{URL}"\nseo_title: "Titre"\n---\n', encoding="utf-8"
+    )
     assert seo_titles(tmp_path) == {
         URL: 'Say "hi"',
         "https://sebastienrousseau.com/a": 'Say "hi"',
         "https://sebastienrousseau.com/fr/c": "Court",
+        "https://sebastienrousseau.com/fr/d": "Titre",
     }
     assert seo_titles()  # the real posts carry seo_titles

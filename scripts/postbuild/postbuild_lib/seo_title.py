@@ -55,10 +55,13 @@ def seo_titles(posts: Path = ROOT / "_posts") -> dict[str, str]:
         if not seo:
             continue
         title = _unescape_yaml(seo.group(1))
-        # The builder serves _posts/<lang>/<slug>.md at /<lang>/<slug>/, and
-        # older translations carry no permalink, so key by path as well.
-        out[_key(f"{SITE}/{path.relative_to(posts).with_suffix('').as_posix()}")] = title
-        if link:
+        # The builder serves _posts/<lang>/<slug>.md at /<lang>/<slug>/, so a
+        # translation is keyed by its path only: some copied the English
+        # permalink into their front matter, which must not carry their
+        # title onto the English page. English posts are keyed by both.
+        rel = path.relative_to(posts).with_suffix("").as_posix()
+        out[_key(f"{SITE}/{rel}")] = title
+        if link and "/" not in rel:
             out[_key(link.group(1))] = title
     return out
 
