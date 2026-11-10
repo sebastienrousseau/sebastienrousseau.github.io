@@ -295,6 +295,10 @@ Yes. UETR continues; the gpi tracker reads pacs.002, pacs.004 and pacs.028 direc
 - Federal Reserve, (2025). [Fedwire Funds Service ISO 20022 implementation ⧉](https://www.frbservices.org/resources/financial-services/wires/iso-20022-implementation-center "Fedwire ISO 20022").
 - ISO, (2024). [ISO 20022 message catalogue ⧉](https://www.iso20022.org/iso-20022-message-definitions "ISO 20022 message definitions").
 
+**Update, 10 November 2026.** On 27 August 2026 Swift delayed its November 2026 Standards Release, which was to remove the unstructured postal address format, following concerns about global readiness, and the Bank of England deferred its own November 2026 RTGS release in full ([Bank of England](https://www.bankofengland.co.uk/news/2026/august/delay-to-the-november-2026-rtgs-standards-release)). No new date has been set. The structured-address rules described here remain the target format; the November 2026 date no longer applies.
+
+**Correction, 10 November 2026.** This article said the Fedwire Funds Service migrated to ISO 20022 in March 2025; it migrated in July 2025 ([Federal Reserve](https://www.federalreserve.gov/econres/notes/feds-notes/a-decade-of-u-s-cross-border-payments-efforts-20260826.html)).
+
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-06-23">2026-06-23</time>.</p>
@@ -307,7 +311,3 @@ Yes. UETR continues; the gpi tracker reads pacs.002, pacs.004 and pacs.028 direc
 </div>
 </aside>
 <!-- enrich-end -->
-
-**Update, 10 November 2026.** On 27 August 2026 Swift delayed its November 2026 Standards Release, which was to remove the unstructured postal address format, following concerns about global readiness, and the Bank of England deferred its own November 2026 RTGS release in full ([Bank of England](https://www.bankofengland.co.uk/news/2026/august/delay-to-the-november-2026-rtgs-standards-release)). No new date has been set. The structured-address rules described here remain the target format; the November 2026 date no longer applies.
-
-**Correction, 10 November 2026.** This article said the Fedwire Funds Service migrated to ISO 20022 in March 2025; it migrated in July 2025 ([Federal Reserve](https://www.federalreserve.gov/econres/notes/feds-notes/a-decade-of-u-s-cross-border-payments-efforts-20260826.html)).
