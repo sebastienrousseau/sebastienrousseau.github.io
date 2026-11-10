@@ -10,7 +10,7 @@ Thank you for exploring `sebastienrousseau.com`. This document explains the avai
 
 If you have questions about the research, payment architecture, or post-quantum cryptography topics published on the site:
 
-* **Email**: You can contact the author directly at [sebastian.rousseau@gmail.com](mailto:sebastian.rousseau@gmail.com).
+* **Email**: You can contact the author directly at [contact@sebastienrousseau.com](mailto:contact@sebastienrousseau.com).
 * **Social**: Reach out via LinkedIn or Bluesky as linked in the website footer.
 
 ---
@@ -31,6 +31,6 @@ Please check existing open and closed issues before submitting a new report.
 Please **do not** use public GitHub issues to report suspected security vulnerabilities or privacy concerns.
 
 Follow the instructions in [SECURITY.md](SECURITY.md):
-* Email details to [sebastian.rousseau@gmail.com](mailto:sebastian.rousseau@gmail.com).
+* Email details to [contact@sebastienrousseau.com](mailto:contact@sebastienrousseau.com).
 * PGP public key available at [/.well-known/openpgpkey/hu/](https://sebastienrousseau.com/.well-known/openpgpkey/hu/).
 * Initial acknowledgement provided within 48 hours.

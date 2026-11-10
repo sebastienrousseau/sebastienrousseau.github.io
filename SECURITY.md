@@ -4,7 +4,7 @@
 
 ## Reporting a Vulnerability
 
-Report vulnerabilities privately to **sebastian.rousseau@gmail.com** (PGP key at [`/.well-known/openpgpkey/hu/`](https://sebastienrousseau.com/.well-known/openpgpkey/hu/)). Machine-readable disclosure metadata lives at [`/.well-known/security.txt`](https://sebastienrousseau.com/.well-known/security.txt) per [RFC 9116](https://www.rfc-editor.org/rfc/rfc9116).
+Report vulnerabilities privately to **contact@sebastienrousseau.com** (PGP key at [`/.well-known/openpgpkey/hu/`](https://sebastienrousseau.com/.well-known/openpgpkey/hu/)). Machine-readable disclosure metadata lives at [`/.well-known/security.txt`](https://sebastienrousseau.com/.well-known/security.txt) per [RFC 9116](https://www.rfc-editor.org/rfc/rfc9116).
 
 Please do **not** open a public GitHub issue for a suspected vulnerability: email first, and we will coordinate disclosure.
 
