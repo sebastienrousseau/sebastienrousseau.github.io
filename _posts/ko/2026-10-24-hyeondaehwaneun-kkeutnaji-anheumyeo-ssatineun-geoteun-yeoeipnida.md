@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 24, 2026"
-description: "레다 글립티스 박사는 런던에서 현대화에는 끝이 없다고 말했습니다. 금융기관은 수십 년간 쌓인 예외를 정리하고, AI에는 안전하고 신중하게, 그러나 느리지 않게 접근해야 합니다."
+description: "레다 글립티스 박사가 은행 현대화에 끝이 없다고 말하는 이유, 수십 년의 예외가 쌓이는 이유, 그리고 AI 도입은 신중하되 느려서는 안 되는 이유."
 format-detection: "telephone=no"
 hreflang: "ko"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "금융 서비스 업계는 20~25년 동안 현대화를 종료일이 있는 프로젝트로 다뤄 왔습니다. 런던에서 열린 Oracle Financial Services Summit의 개막 세션에서 레다 글립티스 박사는 업계의 약점은..."
 last_reviewed: "2026-10-24"
+seo_title: "레다 글립티스: 은행 현대화는 끝나지 않는다"
 ---
 
 # 현대화는 끝나지 않으며, 쌓이는 것은 예외입니다

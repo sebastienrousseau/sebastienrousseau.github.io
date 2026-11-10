@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jul 14, 2026"
-description: "Tool reference for the ISO 20022 MCP Suite: every server and the tools it exposes, from the gateway and message servers to reconcile, camt-exceptions, bankstatementparser and the AP2/x402 bridge."
+description: "A reference to the ISO 20022 MCP tools: every server in the suite and the tools it exposes, from the gateway and message servers to the AP2/x402 bridge."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -96,7 +96,7 @@ site_last_updated: "2026-10-29"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-
+seo_title: "ISO 20022 MCP Tools: Reference for Every Server in the Suite"
 ---
 
 <p class="story-intro">Every server speaks the same contract: JSON records in, validated JSON or XSD-checked XML out, with an <code>{"error": …}</code> payload rather than an exception when something is wrong. Below is what each exposes. New to the suite? Start with <a href="/iso20022-mcp-docs/index.html">the quickstart</a>.</p>

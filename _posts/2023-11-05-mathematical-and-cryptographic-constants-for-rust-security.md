@@ -98,6 +98,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Mathematics provides constants that are the cornerstones of technology and secure communication. Constants like pi (π) and Euler’s number (e) are crucial in everything from geometry to…"
 last_reviewed: "2026-05-11"
+seo_title: "Mathematical Constants in Rust: The Common (CMN) Library"
 ---
 
 

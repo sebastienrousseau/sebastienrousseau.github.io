@@ -1,7 +1,7 @@
 ---
 title: "IBM Qiskit과 양자 푸리에 변환으로 신용 비율 분석 최적화"
 subtitle: "금융 분석에서 양자 컴퓨팅의 응용"
-description: "IBM Qiskit과 양자 푸리에 변환이 금융의 신용 비율 분석을 재구성하여 전례 없는 정확도와 속도를 제공하는 방식."
+description: "IBM Qiskit과 양자 푸리에 변환을 금융의 신용 비율 분석에 적용하는 방법과, 그 바탕이 되는 양자 컴퓨팅의 핵심 개념을 함께 알아봅니다."
 date: "January 8, 2024"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp"
 banner_alt: "양자 회로도"
 keywords: "IBM Qiskit, 양자 푸리에 변환, QFT, 신용 비율, 양자 금융, 양자 컴퓨팅, 포트폴리오 분석"
 last_reviewed: "2026-05-16"
+seo_title: "IBM Qiskit 양자 컴퓨팅으로 신용 비율 분석"
 ---
 
 ![양자 회로도](https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp).class=\"img-fluid clearfix\"

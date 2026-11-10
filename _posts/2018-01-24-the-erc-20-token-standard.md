@@ -98,6 +98,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Before the advent of the ERC-20 (Ethereum Request for Comments 20) standard, the Ethereum blockchain was like the Wild West of token architectures. Each newly minted token had its own unique set…"
 last_reviewed: "2026-05-11"
+seo_title: "ERC-20 Explained: The Ethereum Token Interface Standard"
 ---
 
 

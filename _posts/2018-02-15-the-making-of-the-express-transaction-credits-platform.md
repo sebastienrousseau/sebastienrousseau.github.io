@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Feb 15, 2018"
-description: "A technical deep-dive into how the EXTC platform was built on Ethereum ERC-223 in 2018: token architecture, multi-sig disbursements, time-locked transfers, and collateral-backed instant loans."
+description: "How the EXTC platform was built on Ethereum ERC-223: token architecture, multi-sig disbursements, time-locked transfers and collateral-backed instant loans."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -98,6 +98,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "A hands-on account of building the EXTC platform on Ethereum ERC-223 in early 2018: how the token contract was structured, what the multi-signature and time-lock primitives were designed to do, and what the experiment revealed about blockchain's practical limits for payment networks."
 last_reviewed: "2026-05-24"
+seo_title: "EXTC Platform: Building a Payments Token on Ethereum ERC-223"
 ---
 
 

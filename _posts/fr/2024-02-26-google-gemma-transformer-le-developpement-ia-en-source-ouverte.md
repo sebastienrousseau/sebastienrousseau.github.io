@@ -1,13 +1,14 @@
 ---
 title: "Google Gemma : transformer le développement de l'IA open source"
 subtitle: "Un regard de l'intérieur sur les capacités, les contributions open source et la suite"
-description: "Découvrez le modèle Gemma de Google : un projet open source proposant des solutions d'IA éthique pour un usage personnel comme entreprise."
+description: "Google Gemma est une famille de modèles open source de Google pensée pour un développement IA accessible et éthique, en usage personnel comme en entreprise."
 date: "February 26, 2024"
 language: "fr"
 locale: "fr_FR"
 banner: "https://cloudcdn.pro/stocks/images/ai-ship.webp"
 banner_alt: "Vaisseau futuriste bleu aux néons"
 keywords: "Google Gemma, modèle d'IA open source, architecture technique Gemma, Gemma 2B 7B, IA éthique, intégration IA macOS, solutions IA pour entreprise, IA conversationnelle, analyse de données IA, IA pour appareils edge"
+seo_title: "Google Gemma : des modèles open source pour une IA éthique"
 ---
 
 ## Le modèle d'IA open source révolutionnaire de Google pour un ML accessible et éthique

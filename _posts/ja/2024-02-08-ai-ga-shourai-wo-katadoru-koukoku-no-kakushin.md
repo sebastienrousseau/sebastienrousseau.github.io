@@ -1,7 +1,7 @@
 ---
 title: "AI が未来を形作る:広告の革新"
 subtitle: "AI 駆動型広告の状況と倫理"
-description: "AI が広告の未来を形作る方法と、業界が直面する機会と倫理的考察。"
+description: "広告の AI が消費者との関わり方をどう変えているのか。Amazon の買い物アシスタント Rufus と Meta の最新の生成 AI の動向とともに解説。"
 date: "February 8, 2024"
 language: "ja-JP"
 locale: "ja_JP"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "AI と広告のビジュアル"
 keywords: "AI, 広告, パーソナライゼーション, 生成 AI, 倫理, プライバシー, ディープフェイク"
 last_reviewed: "2026-05-11"
+seo_title: "広告の AI：Rufus、Meta と生成 AI"
 ---
 
 ![AI と広告のビジュアル](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

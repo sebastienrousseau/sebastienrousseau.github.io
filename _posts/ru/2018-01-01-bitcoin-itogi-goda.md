@@ -1,13 +1,14 @@
 ---
 title: "Bitcoin: итоги года первой криптовалюты"
 subtitle: "Одноранговая система электронных платежей, переопределившая деньги"
-description: "Bitcoin: одноранговая система электронных денег (P2P ECS), способная революционизировать способы онлайн-расчётов между людьми."
+description: "Как Bitcoin работает как одноранговая система электронных денег, как распределённый реестр решает проблему двойной траты и почему он изменит онлайн-платежи."
 date: "January 1, 2018"
 language: "ru-RU"
 locale: "ru_RU"
 banner: "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
 banner_alt: "Кучка золотых и серебряных монет на столе"
 keywords: "Bitcoin, криптовалюта, блокчейн, P2P, двойная трата, майнинг, proof-of-work, ETF, Satoshi Nakamoto, децентрализованные финансы"
+seo_title: "Bitcoin: как устроена первая криптовалюта"
 ---
 
 ![Кучка золотых и серебряных монет на столе](https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp).class=\"img-fluid clearfix\"

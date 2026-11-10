@@ -1,13 +1,14 @@
 ---
 title: "Google Gemma AI: proměna vývoje open-source AI"
 subtitle: "Pohled zevnitř na schopnosti, open-source příspěvky a další vývoj"
-description: "Model Gemma AI od Googlu: open-source projekt nabízející etická AI řešení pro osobní i firemní použití."
+description: "Co je Google Gemma AI: rodina open-source modelů od Googlu vytvořená pro dostupný a etický vývoj AI v osobním i podnikovém prostředí."
 date: "February 26, 2024"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/ai-ship.webp"
 banner_alt: "Futuristická modrá kosmická loď s neonovými světly"
 keywords: "Google Gemma AI, open-source AI model, technická architektura Gemma, Gemma 2B 7B, etická AI, integrace AI na macOS, firemní AI řešení, konverzační AI, AI pro analýzu dat, AI pro edge zařízení"
+seo_title: "Google Gemma AI: open-source modely pro etický vývoj"
 ---
 
 

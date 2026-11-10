@@ -8,6 +8,7 @@ locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
 banner_alt: "Stato dell'IA e del calcolo quantistico nel banking: bilancio 2023"
 keywords: "IA, calcolo quantistico, banking, 2023, bilancio, fintech, regolamentazione"
+seo_title: "IA nel banking: stato dell'IA e del calcolo quantistico 2023"
 ---
 
 ---

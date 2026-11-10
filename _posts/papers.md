@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Mar 12, 2024"
-description: "This page has moved. White papers, research publications and technical analysis from Sebastien Rousseau now live at sebastienrousseau.com/research."
+description: "Looking for white papers? Sebastien Rousseau's research publications, industry white papers and technical analysis have moved to the Research page on this site."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -96,7 +96,7 @@ site_last_updated: "2024-03-08"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-
+seo_title: "White Papers and Research Publications Now Live in Research"
 ---
 
 

@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Auf dem Physical-AI-Gipfel des Economist in London stellten Luftfahrt- und Automatisierungsmanager den Humanoiden-Hype infrage: Die Form muss der Funktion folgen."
+description: "Warum Luftfahrt- und Automatisierungschefs an humanoiden Robotern in der Fabrik zweifeln, warum Lights-out-Fertigung ein Irrtum ist und Form der Funktion folgt."
 format-detection: "telephone=no"
 hreflang: "de"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Auf dem Economist Enterprise Physical AI and Robotics Summit in London zerlegten Führungskräfte aus Luftfahrt und Fertigung das Silicon-Valley-Narrativ vom universellen humanoiden Roboter. Während Risikokapital Milliarden in zweibeinige Formen pumpt, zeigt die industrielle Realität, dass die Form strikt der Funktion folgen muss."
 last_reviewed: "2026-10-13"
+seo_title: "Humanoide Robotik oder funktionale Roboter in der Fertigung"
 ---
 
 Auf dem Economist Enterprise Physical AI and Robotics Summit, der am 13. Oktober 2026 im Convene 200 Aldersgate in London stattfand, kamen Fertigungsmanager, Luftfahrtingenieure und Robotiker zusammen, um eine grundlegende Spaltung der modernen Automatisierung zu verhandeln: Sollen Roboter den menschlichen Körper nachahmen, oder soll ihre mechanische Morphologie strikt der industriellen Physik folgen? Während Risikokapital weiterhin Milliarden in zweibeinige humanoide Formen pumpt, die einen universellen Ersatz menschlicher Arbeit versprechen, lieferten Praktiker aus der Werkshalle von Airbus, Leonardo und aus der akademischen Forschung einen nüchternen, empirischen Realitätscheck.

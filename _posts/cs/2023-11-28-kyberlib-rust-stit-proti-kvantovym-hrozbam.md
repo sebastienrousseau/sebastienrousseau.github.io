@@ -8,6 +8,7 @@ locale: "cs_CZ"
 banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
 banner_alt: "Zabezpečená komunikace v kvantové éře s knihovnou KyberLib"
 keywords: "KyberLib, Rust CRYSTALS-Kyber, postkvantová kryptografie, mřížková kryptografie, kvantově odolná výměna klíčů, NIST FIPS 203, Sebastien Rousseau, KEM, autentizace plateb, knihovna PQC"
+seo_title: "KyberLib: CRYSTALS-Kyber v Rustu pro postkvantovou éru"
 ---
 
 

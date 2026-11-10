@@ -1,13 +1,14 @@
 ---
 title: "區塊鏈：2018 年最重要的技術"
 subtitle: "透過私鑰密碼學和點對點（P2P）網路保障數字交易的非凡歷程"
-description: "區塊鏈——驅動加密貨幣飛速崛起的底層技術——正在顛覆企業、金融服務和資本市場。"
+description: "本文帶你了解區塊鏈如何把一個個資料區塊串連成鏈，密碼學與點對點網路如何共同保障交易的安全，以及這項技術正在金融與銀行業的哪些領域帶來深刻變革。"
 date: "January 2, 2018"
 language: "zh-Hant"
 locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
 banner_alt: "一座具有許多孔洞的高塔建築"
 keywords: "區塊鏈, 加密貨幣, 分散式賬本, 智慧合約, 去中心化金融, 供應鏈, 數字身份, 共識機制, 銀行業, 金融科技"
+seo_title: "區塊鏈詳解：區塊、密碼學與 P2P 網路"
 ---
 
 ![一座具有許多孔洞的高塔建築](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"

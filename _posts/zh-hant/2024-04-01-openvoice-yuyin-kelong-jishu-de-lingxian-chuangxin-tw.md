@@ -1,13 +1,14 @@
 ---
 title: "OpenVoice：語音克隆技術的領先創新"
 subtitle: "MIT、清華大學與 MyShell 合作的語音克隆突破，實現快速、精準、跨語言語音合成"
-description: "OpenVoice 是 MIT、清華大學與 MyShell 聯合開發的開源語音克隆技術，支援零樣本跨語言合成。"
+description: "由 MIT、清華大學與 MyShell 推出的 OpenVoice 可即時複製語音，並控制音色、口音與情緒。了解它的運作原理，以及需要權衡的取捨。"
 date: "April 1, 2024"
 language: "zh-Hant"
 locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/open-voice.webp"
 banner_alt: "重複輪廓上明亮漸變疊加的橫幅"
 keywords: "OpenVoice, 語音克隆, MIT, 清華大學, MyShell, 零樣本, 跨語言, 語音合成, 開源, 負責任 AI"
+seo_title: "OpenVoice 詳解：開源語音複製技術"
 ---
 
 [**OpenVoice ⧉**][00] 是由 [**MIT ⧉**][03]、[**清華大學 ⧉**][04] 與加拿大 AI 初創公司 [**MyShell ⧉**][01] 開發的創新語音克隆技術。它支援對語音特性的精細控制，實現快速且精準的語音合成。MyShell 在 OpenVoice 的開發中起關鍵作用，OpenVoice 已被作為其平臺的語音克隆後端使用數百萬次。它以速度、精度與適應性脫穎而出。

@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "ロンドンで開かれたEconomist Enterprise Physical AI and Robotics Summitで、航空宇宙と自動化の現場を知るリーダーたちがヒューマノイドへの過熱を問い直した。完全無人化が幻想である理由と、人を介在させた10%の生産性向上がすぐに利益を生む理由を探る。"
+description: "航空宇宙と自動化のリーダーが工場でのヒューマノイドに懐疑的な理由、完全無人化が誤りである理由、そして形が機能に従うべき理由を詳しく解説します。"
 format-detection: "telephone=no"
 hreflang: "ja"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "ロンドンで開かれたEconomist Enterprise Physical AI and Robotics Summitで、航空宇宙と製造のリーダーたちは、汎用ヒューマノイドロボットをめぐるシリコンバレー的な物語を解体した。ベンチャー資金が二足歩行の形に何十億ドルも注ぎ込まれる一方、産業の現実は、形が厳密に機能に従わなければならないことを示している。"
 last_reviewed: "2026-10-13"
+seo_title: "ヒューマノイドと製造業の機能型ロボット"
 ---
 
 2026年10月13日、ロンドンのConvene 200 Aldersgateで開かれたEconomist Enterprise Physical AI and Robotics Summitに、製造業の経営者、航空宇宙エンジニア、ロボット研究者が集まり、現代の自動化が抱える根本的な分断に向き合った。ロボットは人間の体を模倣すべきなのか、それとも機械の形態は産業の物理に厳密に従うべきなのか。ベンチャー資金が、あらゆる労働を代替すると約束する二足歩行ヒューマノイドに何十億ドルも注ぎ込み続ける一方で、Airbus、Leonardo、そして大学の研究現場から来た実務家たちは、実証に基づく厳しい現実を突きつけた。

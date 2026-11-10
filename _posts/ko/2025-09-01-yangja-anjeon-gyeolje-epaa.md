@@ -1,7 +1,7 @@
 ---
 title: "양자 안전 결제: EPAA 백서"
 subtitle: "결제 산업이 지금 행동하여야 하는 이유"
-description: "Emerging Payments Association Asia를 위한 산업 백서. 양자 컴퓨팅이 결제 인프라에 가하는 구조적 위협."
+description: "양자 컴퓨팅은 결제 시스템을 떠받치는 암호를 위협합니다. EPAA 백서가 제시하는 위험과, 양자 안전 결제로 지금 나아가야 하는 이유를 살펴봅니다."
 date: "September 1, 2025"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp"
 banner_alt: "양자 계산과 결제 인프라"
 keywords: "양자 안전 결제, EPAA, 포스트 양자 암호, 결제 인프라, 도매 결제, 실시간 결제"
 last_reviewed: "2026-05-16"
+seo_title: "양자 안전 결제: 지금 PQC로 이행해야 하는 이유"
 ---
 
 ## 양자 안전 결제: 결제 산업이 지금 행동하여야 하는 이유

@@ -1,7 +1,7 @@
 ---
 title: "Express Transaction Credits プラットフォームの開発"
 subtitle: "ブロックチェーンを用いた高速国際送金プラットフォームの設計"
-description: "ブロックチェーンと暗号資産を利用した高速な国際送金プラットフォーム Express Transaction Credits の構築。"
+description: "EXTC をイーサリアム ERC-223 上にどう構築したか。トークン設計、マルチシグ支払い、時間ロック送金、担保付き即時ローンまでを解説します。"
 date: "February 15, 2018"
 language: "ja-JP"
 locale: "ja_JP"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "夜の電子回路基板の青いライト"
 keywords: "国際送金, ブロックチェーン, 暗号資産, トークン, スマートコントラクト, 決済プラットフォーム, フィンテック"
 last_reviewed: "2026-05-11"
+seo_title: "EXTC：ERC-223 で決済トークンを構築する"
 ---
 
 ![夜の電子回路基板の青いライト](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

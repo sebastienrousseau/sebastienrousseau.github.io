@@ -8,6 +8,7 @@ locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
 banner_alt: "棕色木桌上一台关机的笔记本电脑"
 keywords: "ERC-20, 以太坊, 代币标准, 智能合约, DeFi, 去中心化金融, 代币化, Solidity, dApps, 区块链"
+seo_title: "ERC-20 详解：以太坊代币接口标准"
 ---
 
 ![棕色木桌上一台关机的笔记本电脑](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"

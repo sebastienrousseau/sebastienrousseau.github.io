@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.web
 banner_alt: "양자 컴퓨터 회로"
 keywords: "양자 알고리즘, 버그, LWE, 격자 기반 암호, Yilei Chen, 포스트 양자 암호"
 last_reviewed: "2026-05-16"
+seo_title: "포스트 양자 암호: Chen의 LWE 알고리즘 버그"
 ---
 
 ![양자 컴퓨터 회로](https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp).class=\"img-fluid clearfix\"

@@ -1,13 +1,14 @@
 ---
 title: "Bitcoin : l'année en revue de la première cryptomonnaie"
 subtitle: "Un système de paiement électronique pair-à-pair qui a redéfini l'argent"
-description: "Bitcoin : un système de paiement électronique pair-à-pair (P2P ECS) qui peut révolutionner la manière dont les gens transactent en ligne."
+description: "Comment Bitcoin fonctionne comme monnaie électronique pair-à-pair, comment son registre distribué évite la double dépense, et son impact possible."
 date: "January 1, 2018"
 language: "fr"
 locale: "fr_FR"
 banner: "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
 banner_alt: "Un tas de pièces d'or et d'argent posées sur une table"
 keywords: "Bitcoin, cryptomonnaie, blockchain, P2P, double dépense, minage, proof-of-work, ETF, Satoshi Nakamoto, finance décentralisée"
+seo_title: "Bitcoin expliqué : comment fonctionne la 1re cryptomonnaie"
 ---
 
 ![Un tas de pièces d'or et d'argent posées sur une table](https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp).class=\"img-fluid clearfix\"

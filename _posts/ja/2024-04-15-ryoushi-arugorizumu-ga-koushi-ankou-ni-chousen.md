@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.web
 banner_alt: "量子コンピュータの回路"
 keywords: "量子アルゴリズム, 格子ベース暗号, LWE, Learning With Errors, ポスト量子暗号, 量子の脅威"
 last_reviewed: "2026-05-11"
+seo_title: "量子計算アルゴリズムが格子暗号に挑む"
 ---
 
 ![量子コンピュータの回路](https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp).class=\"img-fluid clearfix\"

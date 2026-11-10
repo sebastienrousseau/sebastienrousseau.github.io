@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jul 14, 2026"
-description: "Connect the ISO 20022 MCP Suite to Claude Code, Claude Desktop or any MCP client: one command or one block of JSON, first prompts to try, and which server fits each job."
+description: "ISO 20022 MCP docs: connect the suite to Claude Code, Claude Desktop or any MCP client in one command or JSON block, try first prompts, and pick a server."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -96,7 +96,7 @@ site_last_updated: "2026-10-29"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-
+seo_title: "ISO 20022 MCP Docs: Connect the Suite to Claude or Any Agent"
 ---
 
 <p class="story-intro">The ISO 20022 MCP Suite is the open bank-message layer for AI agents: nine vendor-neutral servers to generate, validate, reconcile and settle ISO 20022 payments from natural language. Connect it to the AI client you already use, in one command or one block of JSON, and go from a plain-language prompt to a validated bank message in under a minute. No account, no key, no lock-in.</p>

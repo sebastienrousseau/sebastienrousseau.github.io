@@ -1,13 +1,14 @@
 ---
 title: "LibMake：减少重复任务、构建高质量 Rust 库的代码生成器"
 subtitle: "LibMake 通过强制最佳实践与生成初始代码加速 Rust 库开发，节省开发者时间与精力"
-description: "LibMake 是一款 Rust 库代码生成工具，通过模板化生成减少重复劳动，强制最佳实践。"
+description: "LibMake 是一款 Rust 命令行工具，一条命令即可生成完整库脚手架：Cargo.toml、src/lib.rs、测试、基准与 CI。"
 date: "October 26, 2023"
 language: "zh-Hans"
 locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
 banner_alt: "巨大的白色柱子"
 keywords: "LibMake, Rust 库, 代码生成器, 模板, 脚手架, 最佳实践, GitHub Actions, 开源, Cargo, CLI"
+seo_title: "LibMake：一条命令生成 Rust 库脚手架"
 ---
 
 ![巨大的白色柱子](https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp).class=\"img-fluid clearfix\"

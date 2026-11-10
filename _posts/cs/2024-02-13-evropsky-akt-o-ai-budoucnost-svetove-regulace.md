@@ -8,6 +8,7 @@ locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp"
 banner_alt: "Osoba sedící na černé lavičce a čtoucí noviny"
 keywords: "Akt EU o AI, regulace umělé inteligence, rámec etické AI, řízení rizik AI, inovace v AI, transparentnost AI, práva spotřebitelů v oblasti AI, správa AI, standardy AI, etika AI"
+seo_title: "Akt EU o AI: celosvětová regulace AI podle míry rizika"
 ---
 
 

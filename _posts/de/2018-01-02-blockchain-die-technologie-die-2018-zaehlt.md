@@ -1,13 +1,14 @@
 ---
 title: "Blockchain: die Technologie, die 2018 zählt"
 subtitle: "Private-Key-Kryptografie und Peer-to-Peer-Netzwerke im Dienst sicherer Transaktionen"
-description: "Die Geschichte der außergewöhnlichen Reise zur Absicherung digitaler Transaktionen durch Private-Key-Kryptografie und Peer-to-Peer-Netzwerke (P2P)."
+description: "Wie eine Blockchain Datenblöcke verkettet, wie Kryptografie und Peer-to-Peer-Netzwerke Transaktionen absichern und wo sie Finanzwesen und Banking verändert."
 date: "January 2, 2018"
 language: "de"
 locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
 banner_alt: "Ausgeschalteter Laptop auf einem braunen Holztisch"
 keywords: "Blockchain, Kryptowährung, Bitcoin, P2P, Smart Contract, verteiltes Register, Finanzen, Supply Chain, digitale Identität, Tokenisierung"
+seo_title: "Blockchain erklärt: Blöcke, Kryptografie und P2P-Netzwerke"
 ---
 
 ![Ausgeschalteter Laptop auf einem braunen Holztisch](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"

@@ -8,6 +8,7 @@ locale: "fr_FR"
 banner: "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp"
 banner_alt: "Personne assise sur un banc noir, lisant un journal"
 keywords: "AI Act UE, régulation de l'intelligence artificielle, cadre éthique IA, gestion des risques IA, innovation IA, transparence IA, droits des consommateurs, gouvernance IA, standards IA, éthique IA"
+seo_title: "L'AI Act de l'UE expliqué : réguler l'IA selon le risque"
 ---
 
 ## L'AI Act de l'UE : façonner l'avenir de la régulation mondiale de l'IA

@@ -1,13 +1,14 @@
 ---
 title: "OpenVoice：语音克隆技术的领先创新"
 subtitle: "MIT、清华大学与 MyShell 合作的语音克隆突破，实现快速、精准、跨语言语音合成"
-description: "OpenVoice 是 MIT、清华大学与 MyShell 联合开发的开源语音克隆技术，支持零样本跨语言合成。"
+description: "由 MIT、清华大学与 MyShell 推出的 OpenVoice 可即时克隆语音，并控制音色、口音与情感。了解它的工作原理，以及需要权衡的取舍。"
 date: "April 1, 2024"
 language: "zh-Hans"
 locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/open-voice.webp"
 banner_alt: "重复轮廓上明亮渐变叠加的横幅"
 keywords: "OpenVoice, 语音克隆, MIT, 清华大学, MyShell, 零样本, 跨语言, 语音合成, 开源, 负责任 AI"
+seo_title: "OpenVoice 详解：开源语音克隆技术"
 ---
 
 [**OpenVoice ⧉**][00] 是由 [**MIT ⧉**][03]、[**清华大学 ⧉**][04] 与加拿大 AI 初创公司 [**MyShell ⧉**][01] 开发的创新语音克隆技术。它支持对语音特性的精细控制，实现快速且精准的语音合成。MyShell 在 OpenVoice 的开发中起关键作用，OpenVoice 已被作为其平台的语音克隆后端使用数百万次。它以速度、精度与适应性脱颖而出。

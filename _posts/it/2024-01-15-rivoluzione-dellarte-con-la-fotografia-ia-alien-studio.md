@@ -1,13 +1,14 @@
 ---
 title: "Alien Studio: rivoluzionare l'arte con la fotografia IA"
 subtitle: "Quando la generazione di immagini IA diventa uno strumento creativo professionale"
-description: "Alien Studio esplora la fotografia generativa con IA come strumento artistico, con esempi di workflow, prompting e estetica."
+description: "Un percorso personale da Rust, IA e calcolo quantistico all'arte e alla fotografia: come il progetto Alien Studio usa la tecnologia per ripensare la creatività."
 date: "January 15, 2024"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp"
 banner_alt: "La musa del tramonto, uno sguardo sereno; bellezza nell'immobilità"
 keywords: "Alien Studio, IA generativa, fotografia, arte, Midjourney, DALL-E, Stable Diffusion"
+seo_title: "Alien Studio: un percorso tecnologico nella fotografia IA"
 ---
 
 ---

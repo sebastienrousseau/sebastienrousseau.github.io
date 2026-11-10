@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: ""
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jan 15, 2024"
-description: "Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio."
+description: "A personal tech journey from Rust, AI and quantum computing to art and photography: how the Alien Studio project uses technology to rethink creative work."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -108,6 +108,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "2023 was a year of profound transformation and realisation. Motivated by curiosity and a drive to innovate, I delved into cutting-edge technology, including [Rust ⧉][06], [AI ⧉][07], and [Quantum…"
 last_reviewed: "2026-05-11"
+seo_title: "Alien Studio: A Personal Tech Journey into AI Photography"
 ---
 
 

@@ -4,7 +4,7 @@
     {
       "slug": "2026-06-02-banking-infrastructure-index-agentic-ai-quantum-cloud-wholesale-payments-2026",
       "name": "The 2026 Banking Infrastructure Index: Measuring Readiness for Agentic AI, Quantum-Safe Security, Cloud Native Resilience, and Wholesale Payments",
-      "description": "A Stanford AI Index-inspired banking infrastructure index for 2026, measuring readiness across agentic AI, quantum-safe security, cloud native resilience, and global wholesale payments.",
+      "description": "The banking infrastructure index 2026 measures bank readiness across agentic AI, quantum-safe security, cloud native resilience and global wholesale payments.",
       "keywords": "banking infrastructure index 2026, agentic AI banking, quantum safe banking, cloud native banking, wholesale payments, ISO 20022, DORA, Project Agora, tokenised deposits",
       "date": "Jun 2, 2026",
       "measures": "Index Layer",
@@ -68,7 +68,7 @@
     {
       "slug": "2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026",
       "name": "The Quantum-Safe Banking Index in 2026: Post-Quantum Cryptography, QKD, Crypto-Agility, and Harvest-Now-Decrypt-Later Risk",
-      "description": "A banking index for quantum-safe readiness in 2026, covering NIST post-quantum standards, cryptographic inventory, crypto-agility, QKD, and long-lived data exposure.",
+      "description": "A quantum safe banking 2026 index: NIST post-quantum standards, cryptographic inventory, crypto-agility, QKD and the exposure of long-lived financial data.",
       "keywords": "quantum safe banking 2026, post quantum cryptography banks, NIST FIPS 203, ML-KEM, ML-DSA, SLH-DSA, crypto agility, QKD banking",
       "date": "June 4, 2026",
       "measures": "Index Layer",
@@ -98,7 +98,7 @@
     {
       "slug": "2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026",
       "name": "The Cloud Native Banking Index in 2026: DORA, Platform Engineering, Sovereign Cloud, and Operational Resilience",
-      "description": "A 2026 cloud native banking index for measuring DORA readiness, platform engineering maturity, cloud concentration risk, exit evidence, and operational resilience.",
+      "description": "A cloud native banking 2026 index measuring DORA readiness, platform engineering maturity, cloud concentration risk, exit evidence and operational resilience.",
       "keywords": "cloud native banking 2026, DORA banks, cloud concentration risk, platform engineering banks, ICT third party risk, cloud exit strategy, sovereign cloud",
       "date": "June 5, 2026",
       "measures": "Index Layer",
@@ -132,7 +132,7 @@
     {
       "slug": "2026-06-06-wholesale-payments-index-iso20022-tokenised-deposits-cross-border-2026",
       "name": "The Wholesale Payments Index in 2026: ISO 20022, Tokenised Deposits, Real-Time Rails, and Cross-Border Settlement",
-      "description": "A 2026 index for wholesale payments readiness, measuring ISO 20022 data quality, tokenised deposits, real-time rails, cross-border settlement, and liquidity efficiency.",
+      "description": "A wholesale payments 2026 readiness index measuring ISO 20022 data quality, tokenised deposits, real-time rails, cross-border settlement and liquidity use.",
       "keywords": "wholesale payments 2026, ISO 20022, tokenised deposits, Project Agora, cross border payments, real time payments, structured address data, payment data quality",
       "date": "June 6, 2026",
       "measures": "Index Layer",
@@ -162,7 +162,7 @@
     {
       "slug": "2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026",
       "name": "The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control",
-      "description": "A 2026 index for autonomous treasury readiness, covering agentic treasury workflows, programmable liquidity, tokenised deposits, real-time payments, and automated cash control.",
+      "description": "An autonomous treasury 2026 index covering agentic treasury workflows, programmable liquidity, tokenised deposits, real-time payments and cash control.",
       "keywords": "autonomous treasury 2026, agentic treasury, programmable liquidity, tokenised deposits treasury, real time treasury, cash management AI",
       "date": "June 7, 2026",
       "measures": "Index Layer",
@@ -252,7 +252,7 @@
     {
       "slug": "2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026",
       "name": "The 2026 Post-Quantum Security Scorecard: A Board-Level Metric Framework",
-      "description": "The 2026 Post-Quantum Security Scorecard provides boards and senior management with a fiduciary metric framework to track Cryptographic Bill of Materials (CBOM), HNDL exposure, and NIST FIPS 203/204 migration velocity across tier-1 banking infrastructure.",
+      "description": "A board-level scorecard for post-quantum cryptography: track the cryptographic bill of materials, HNDL exposure and NIST FIPS 203/204 migration in banking.",
       "keywords": "post-quantum cryptography, PQC scorecard, NIST FIPS 203, NIST FIPS 204, CBOM, HNDL, banking governance, crypto-agility, KyberLib, DORA compliance, SM&CR, quantum resilience",
       "date": "June 29, 2026",
       "measures": "Metric",

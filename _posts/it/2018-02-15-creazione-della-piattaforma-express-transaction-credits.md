@@ -1,13 +1,14 @@
 ---
 title: "La creazione della piattaforma Express Transaction Credits"
 subtitle: "Architettura, design e visione per un'infrastruttura di crediti di transazione"
-description: "Note di progettazione su una piattaforma di crediti di transazione: scelte architetturali, flussi end-to-end, integrazione con i sistemi bancari esistenti."
+description: "Come è nata la piattaforma EXTC su Ethereum ERC-223: architettura del token, erogazioni multi-firma, trasferimenti con time-lock e prestiti istantanei."
 date: "February 15, 2018"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
 banner_alt: "Pilastri bianchi giganti"
 keywords: "Express Transaction Credits, piattaforma, fintech, pagamenti, integrazione, architettura"
+seo_title: "Piattaforma EXTC: un token di pagamento su Ethereum ERC-223"
 ---
 
 ![Pilastri bianchi giganti](https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp).class=\"img-fluid clearfix\"

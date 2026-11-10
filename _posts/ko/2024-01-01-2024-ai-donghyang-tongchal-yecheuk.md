@@ -1,7 +1,7 @@
 ---
 title: "2024년 AI 동향과 예측: 미래를 향한 통찰"
 subtitle: "AI, 규제, 엔터프라이즈 채택의 해"
-description: "2024년의 AI 트렌드와 예측. 엔터프라이즈 배포, 신규 규제, 기술 진보에 관하여."
+description: "2024년 AI 트렌드: 금융 분야의 생성 AI, 멀티모달 모델, 온디바이스 LLM, 그리고 올해 은행 업무와 제품 엔지니어링을 바꿀 변화를 정리합니다."
 date: "January 1, 2024"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "AI의 진화를 표현하는 추상적 비주얼"
 keywords: "AI 트렌드, 2024, 엔터프라이즈 AI, 생성 AI, AI 규제, EU AI 법, 멀티모달 AI"
 last_reviewed: "2026-05-16"
+seo_title: "2024 AI 트렌드: 생성 AI, 멀티모달, 온디바이스 LLM"
 ---
 
 ![AI의 진화를 표현하는 추상적 비주얼](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

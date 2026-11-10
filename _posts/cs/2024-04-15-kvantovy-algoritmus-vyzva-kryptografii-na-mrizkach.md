@@ -8,6 +8,7 @@ locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
 banner_alt: "Banner se síťovými uzly v digitálním modrém prostoru"
 keywords: "kvantové výpočty, kvantový algoritmus, kryptografie na mřížkách, LWE, šifrování, postkvantová kryptografie, kybernetická bezpečnost, Yilei Chen, kryptografický výzkum, bezpečnostní hrozby"
+seo_title: "Kvantový algoritmus jako výzva pro mřížkovou kryptografii"
 ---
 
 

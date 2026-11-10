@@ -1,13 +1,14 @@
 ---
 title: "理解區塊鏈背後的技術"
 subtitle: "在以太坊上構建加密貨幣：區塊鏈開發、代幣化與加密貨幣實現的全面指南"
-description: "區塊鏈技術已經開啟了一個去中心化的新時代。本文以以太坊為平臺，帶你逐步構建自己的加密貨幣。"
+description: "區塊鏈技術入門指南：逐一介紹密碼學雜湊鏈、默克爾樹與分散式共識機制的基本原理，並說明以太坊如何在此基礎上進一步打造出一個功能完整的智慧合約平台。"
 date: "January 9, 2018"
 language: "zh-Hant"
 locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp"
 banner_alt: "一座具有許多孔洞的高塔建築"
 keywords: "區塊鏈, 以太坊, 智慧合約, Solidity, 加密貨幣, 代幣化, ERC-20, dApps, Geth, 測試網"
+seo_title: "區塊鏈技術：雜湊鏈、默克爾樹與共識"
 ---
 
 ![一座具有許多孔洞的高塔建築](https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp).class=\"img-fluid clearfix\"

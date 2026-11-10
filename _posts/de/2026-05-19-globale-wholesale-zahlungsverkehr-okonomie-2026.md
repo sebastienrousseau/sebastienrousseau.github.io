@@ -1,7 +1,7 @@
 ---
 title: "Globaler Wholesale-Zahlungsverkehr im Jahr 2026: ISO 20022, RTGS-Erneuerung und die Ökonomie der Interoperabilität"
 subtitle: "Wholesale-Zahlungsverkehr ist zu einem wirtschaftspolitischen Hebel geworden: ISO 20022, RTGS-Betriebszeiten, Nichtbankenzugang, Verknüpfung, DLT-Abwicklungspiloten und der G20-Fahrplan konvergieren um die Kosten der globalen Liquiditätsbewegung."
-description: "Der globale Wholesale-Zahlungsverkehr wird 2026 neu gestaltet durch die ISO-20022-Harmonisierung, die RTGS-Erneuerung, erweiterte Abwicklungsfenster, Nichtbankenzugang, API-Governance, DLT-Piloten und die Fragmentierung grenzüberschreitender Zahlungen. Die ökonomische Frage lautet Interoperabilität, nicht allein Nachrichtenformat."
+description: "Wholesale-Zahlungen 2026: wie ISO-20022-Harmonisierung, RTGS-Erneuerung, längere Abwicklungsfenster, Nichtbankenzugang und DLT die Interoperabilität verändern."
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Architekturkarte des globalen Wholesale-Zahlungsverkehrs 2026 — ISO 20022, RTGS-Erneuerung, grenzüberschreitende Korridore, Liquiditätsfenster und DLT-Abwicklungspiloten"
 banner_height: "571"

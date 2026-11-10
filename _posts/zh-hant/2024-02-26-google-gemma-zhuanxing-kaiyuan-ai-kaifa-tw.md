@@ -1,13 +1,14 @@
 ---
 title: "Google Gemma：轉型開源 AI 開發"
 subtitle: "Google 革命性的開源 AI 模型，旨在為 ML 開發提供可及且合倫理的基礎"
-description: "Google Gemma 是開源 AI 模型，配合 Ollama 在 macOS 上執行，為開源 AI 開發帶來新格局。"
+description: "了解什麼是 Google Gemma AI：這是 Google 推出的開源模型系列，專為容易取得且符合倫理的 AI 開發而打造，適用於個人與企業兩類場景。"
 date: "February 26, 2024"
 language: "zh-Hant"
 locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/ai-ship.webp"
 banner_alt: "帶霓虹燈的未來主義藍色宇宙飛船"
 keywords: "Google Gemma, 開源 AI, Gemini, Ollama, macOS, 2B, 7B, 大型語言模型, 合倫理 AI, 企業應用"
+seo_title: "Google Gemma AI：負責任開發的開源模型"
 ---
 
 ## Google 革命性的開源 AI 模型，為 ML 開發提供可及與合倫理基礎

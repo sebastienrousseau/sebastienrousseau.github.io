@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Na summitu The Economist o fyzické AI v Londýně zpochybnili lídři letectví a automatizace humanoidní humbuk: postupná automatizace s člověkem ve smyčce se vyplácí hned."
+description: "Proč lídři letectví a automatizace pochybují o humanoidních robotech v továrnách, proč je plně bezobslužná výroba omyl a proč má forma následovat funkci."
 format-detection: "telephone=no"
 hreflang: "cs"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Na Economist Enterprise Physical AI and Robotics Summit v Londýně rozebrali lídři letectví a výroby příběh Silicon Valley o univerzálním humanoidním robotovi. Zatímco rizikový kapitál nalévá miliardy do dvounohých konstrukcí, průmyslová realita dokazuje, že forma musí striktně následovat funkci."
 last_reviewed: "2026-10-13"
+seo_title: "Humanoidní roboti, nebo funkční roboti ve výrobě"
 ---
 
 Na Economist Enterprise Physical AI and Robotics Summit, který se konal 13. října 2026 v Convene 200 Aldersgate v Londýně, se sešli výrobní manažeři, letečtí inženýři a robotici, aby se vypořádali se zásadní roztržkou v moderní automatizaci: mají roboti napodobovat lidské tělo, nebo má mechanická stavba striktně následovat fyziku průmyslu? Zatímco rizikový kapitál dál nalévá miliardy do dvounohých humanoidních konstrukcí, které slibují univerzální náhradu lidské práce, praktici z výrobních hal Airbusu, Leonarda a z akademického výzkumu přinesli střízlivou, empirickou konfrontaci s realitou.

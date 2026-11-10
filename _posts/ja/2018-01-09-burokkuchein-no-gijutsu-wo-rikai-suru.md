@@ -1,7 +1,7 @@
 ---
 title: "ブロックチェーンの背後にある技術を理解する"
 subtitle: "暗号、合意、ネットワークレイヤーを技術的に分解する"
-description: "ブロックチェーンを構成する暗号、ネットワーク、合意の各レイヤーを技術的に分解して解説します。"
+description: "ブロックチェーン技術の入門：暗号学的ハッシュチェーン、マークルツリー、分散合意の仕組みと、イーサリアムがスマートコントラクト基盤をどう加えたかを解説します。"
 date: "January 9, 2018"
 language: "ja-JP"
 locale: "ja_JP"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "ターミナル画面上のコード"
 keywords: "ブロックチェーン, 暗号, ハッシュ, デジタル署名, マークルツリー, 合意, プルーフ・オブ・ワーク, P2P ネットワーク"
 last_reviewed: "2026-05-11"
+seo_title: "ブロックチェーン技術：ハッシュチェーンと合意"
 ---
 
 ![ターミナル画面上のコード](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

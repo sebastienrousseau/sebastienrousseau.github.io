@@ -1,7 +1,7 @@
 ---
 title: "AI による音声分析、翻訳、インサイト"
 subtitle: "リアルタイム音声テキスト変換と多言語インサイトのための AI"
-description: "OpenAI Whisper、リアルタイム音声テキスト変換、多言語翻訳によるオーディオインサイトのための AI ソリューション。"
+description: "Audio Analyser が Azure の音声テキスト変換と Text Analytics で、音声を感情・キーワード・翻訳付きの文字起こしにする方法。"
 date: "January 29, 2024"
 language: "ja-JP"
 locale: "ja_JP"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "波形を持つマイク"
 keywords: "AI, 音声認識, 音声テキスト変換, Whisper, 翻訳, 多言語, オーディオインサイト"
 last_reviewed: "2026-05-11"
+seo_title: "Azure 音声分析ツール：音声認識と NLP"
 ---
 
 ![波形を持つマイク](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

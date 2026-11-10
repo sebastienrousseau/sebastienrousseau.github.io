@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "May 14, 2026"
-description: "Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today's data expires."
+description: "A board-level guide to post-quantum cryptography migration in corporate finance: the G7 roadmap, EU, UK and Australian timelines, and BIS Project Leap lessons."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -99,6 +99,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and Australian timelines clarified, and the BIS Project Leap…"
 last_reviewed: "2026-05-14"
+seo_title: "Post-Quantum Cryptography: Board Guide to Finance Migration"
 ---
 
 Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and Australian timelines clarified, and the BIS Project Leap proving feasibility in live payment systems, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today's data expires.

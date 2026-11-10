@@ -8,6 +8,7 @@ locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
 banner_alt: "巨大的白色柱子"
 keywords: "CMN, Common 库, Rust, 数学常数, 密码常数, RSA, 椭圆曲线, π, e, 后量子密码学"
+seo_title: "Rust 数学常数：Common（CMN）库"
 ---
 
 ![巨大的白色柱子](https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp).class=\"img-fluid clearfix\"

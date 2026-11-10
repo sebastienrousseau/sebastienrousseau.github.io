@@ -98,6 +98,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "KyberLib is a Rust-based library that protects your data from the potential threat of quantum computing. Built upon the CRYSTALS-Kyber algorithm, KyberLib delivers exceptional security,…"
 last_reviewed: "2026-05-11"
+seo_title: "KyberLib: A Rust CRYSTALS-Kyber Library for Post-Quantum"
 ---
 
 

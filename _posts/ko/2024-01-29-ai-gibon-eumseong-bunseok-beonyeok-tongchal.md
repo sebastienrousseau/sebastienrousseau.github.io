@@ -1,7 +1,7 @@
 ---
 title: "AI 기반 음성 분석, 번역, 통찰"
 subtitle: "실시간 음성-텍스트 변환과 다국어 통찰을 위한 AI"
-description: "OpenAI Whisper, 실시간 음성-텍스트 변환, 다국어 번역을 통한 오디오 통찰을 위한 AI 솔루션."
+description: "Audio Analyser가 Azure Cognitive Services 음성-텍스트 변환과 Text Analytics로 오디오를 감정, 키워드, 번역이 담긴 녹취록으로 바꿉니다."
 date: "January 29, 2024"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "파형을 보여주는 마이크"
 keywords: "AI, 음성 인식, 음성-텍스트 변환, Whisper, 번역, 다국어, 오디오 통찰"
 last_reviewed: "2026-05-16"
+seo_title: "Audio Analyser: Azure 음성 인식과 NLP"
 ---
 
 ![파형을 보여주는 마이크](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

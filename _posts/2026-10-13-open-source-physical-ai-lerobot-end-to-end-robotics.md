@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "At the Economist Enterprise Physical AI and Robotics Summit in London, Hugging Face LeRobot lead Pepijn Kooijmans unveiled the open-source architecture dismantling the barriers to physical AI. Explore how end-to-end imitation learning, Gemma vision-language models, flow-matching action experts, and $200 hardware are transforming robotics from rigid task programming into experiential learning."
+description: "How Hugging Face LeRobot uses open-source models, end-to-end imitation learning and $200 hardware to move robotics from task-by-task programming to learning."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -100,6 +100,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Robotics development has historically been gated behind six-figure hardware and brittle, hand-crafted kinematics. At the Economist Enterprise Physical AI and Robotics Summit, Hugging Face LeRobot lead Pepijn Kooijmans demonstrated how open-source foundation models and $200 hardware are breaking the industry wide open."
 last_reviewed: "2026-10-13"
+seo_title: "Hugging Face LeRobot and Open-Source Physical AI in Robotics"
 ---
 
 For six decades, industrial robotics has operated under an unforgiving paradigm: a human engineer explicitly programmes every millimetre of a machine's motion using proprietary languages, teach pendants, and rigid kinematic solvers. If a workpiece drifts by five millimetres or lighting conditions change, the robot faults. At the Economist Enterprise Physical AI and Robotics Summit in London on 13 October 2026, Pepijn Kooijmans, LeRobot lead at Hugging Face, presented an alternative architecture that is dismantling this legacy: "Future robots will not be programmed task by task. They will learn."

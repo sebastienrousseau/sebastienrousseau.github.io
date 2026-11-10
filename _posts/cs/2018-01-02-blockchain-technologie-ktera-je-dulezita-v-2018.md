@@ -1,8 +1,8 @@
 ---
 title: "Blockchain vysvětlený: technologie, na které záleží nejvíce"
-seo_title: "Blockchain vysvětlený: technologie, na které záleží"
+seo_title: "Blockchain vysvětlený: bloky, kryptografie a sítě P2P"
 subtitle: "Blockchain, distribuované účetní knihy a technologie, na které v roce 2018 záleží."
-description: "Příběh mimořádné cesty za zabezpečením digitálních transakcí pomocí kryptografie se soukromým klíčem a peer-to-peer (P2P) sítí."
+description: "Jak blockchain řetězí bloky dat, jak kryptografie a peer-to-peer sítě zabezpečují transakce a kde blockchain mění finance a bankovnictví."
 excerpt: "Blockchain, technologie, která pohání prudký vzestup kryptoměn, mění podniky, finanční služby a kapitálové trhy. Tato transformační technologie mění…"
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 name: "Sebastien Rousseau"

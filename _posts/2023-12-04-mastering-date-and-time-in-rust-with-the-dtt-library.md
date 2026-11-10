@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: ""
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Dec 04, 2023"
-description: "DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times — high precision, broad functionality."
+description: "DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times. Learn what it does and how to use it in your projects."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -98,6 +98,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "In the realm of software development, effectively managing dates and times is a common challenge. DateTime (DTT) emerges as a Rust library meticulously crafted to streamline this process,…"
 last_reviewed: "2026-05-11"
+seo_title: "DateTime (DTT): Date and Time Management in Rust Explained"
 ---
 
 

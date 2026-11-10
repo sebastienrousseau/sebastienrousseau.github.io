@@ -1,13 +1,14 @@
 ---
 title: "OpenVoice: Führende Innovation im Voice Cloning"
 subtitle: "Das Open-Source-Tool für Stimmklonung der nächsten Generation"
-description: "OpenVoice vom MIT, Tsinghua und MyShell: Voice Cloning in Produktionsqualität mit Steuerung von Ton, Akzent und Emotion — und die zu beachtenden Kompromisse."
+description: "OpenVoice von MIT, Tsinghua und MyShell klont Stimmen sofort, mit Kontrolle über Tonfall, Akzent und Emotion. Wie es funktioniert und wo die Grenzen liegen."
 date: "April 01, 2024"
 language: "de"
 locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/open-voice.webp"
 banner_alt: "Banner mit lebendiger Verlaufsüberlagerung auf wiederholten Profilen"
 keywords: "OpenVoice, Voice Cloning, KI-Sprachsynthese, Open-Source-Voice-Cloning, sprachübergreifende Stimmsynthese, sofortiges Voice Cloning, Stimm-Stilkontrolle, Barrierefreiheit Sprachtechnologie, Stimmen in der Unterhaltungsindustrie, KI-Stimmen im Kundenservice"
+seo_title: "OpenVoice erklärt: Open-Source-Technologie für Voice Cloning"
 ---
 
 [**OpenVoice ⧉**][00] ist eine innovative Voice-Cloning-Technologie, entwickelt vom [**MIT ⧉**][03], der [**Tsinghua-Universität ⧉**][04] und [**MyShell ⧉**][01], einem kanadischen KI-Start-up. Sie ermöglicht eine schnelle und präzise Sprachsynthese mit detaillierter Kontrolle über stimmliche Merkmale. MyShell spielte eine zentrale Rolle in der Entwicklung von OpenVoice, das millionenfach als Voice-Cloning-Backend der eigenen Plattform genutzt wurde. Sie zeichnet sich durch Geschwindigkeit, Präzision und Anpassungsfähigkeit aus.

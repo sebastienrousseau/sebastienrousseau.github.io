@@ -8,6 +8,7 @@ locale: "fr_FR"
 banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
 banner_alt: "Renforcer la communication sécurisée à l'ère quantique avec KyberLib"
 keywords: "KyberLib, Rust CRYSTALS-Kyber, cryptographie post-quantique, cryptographie sur réseaux, échange de clés quantique-résistant, NIST FIPS 203, Sebastien Rousseau, KEM, authentification de paiement, bibliothèque PQC"
+seo_title: "KyberLib : CRYSTALS-Kyber en Rust pour le post-quantique"
 ---
 
 [![Renforcer la communication sécurisée à l'ère quantique avec KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]

@@ -1,13 +1,14 @@
 ---
 title: "Das Hauptbuch sichern: ein Leitfaden für Aufsichtsgremien zur Post-Quanten-Migration im Corporate Finance"
 subtitle: "Das Quantenrisiko hat sich von einer Forschungsneugier zu einem aktiven aufsichtsrechtlichen Mandat entwickelt. Mit dem G7-Fahrplan, BIS Project Leap und den geklärten Zeitplänen in EU, UK und Australien stellt sich Aufsichtsräten nicht mehr die Frage des Ob, sondern des Wie."
-description: "Das Quantenrisiko hat sich von einer Forschungsneugier zu einem aktiven aufsichtsrechtlichen Mandat entwickelt. Mit dem im Januar 2026 veröffentlichten G7-Fahrplan, mittlerweile geklärten Zeitplänen für EU, UK und Australien und BIS Project Leap, das die Machbarkeit in einem realen Zahlungssystem nachgewiesen hat, stellt sich Aufsichtsräten nicht mehr die Frage, ob migriert wird, sondern ob die Migration abgeschlossen werden kann, bevor die kryptografische Haltbarkeit heutiger Daten abläuft."
+description: "Leitfaden für Aufsichtsgremien zur Post-Quanten-Migration im Corporate Finance: G7-Fahrplan, Zeitpläne in EU, UK und Australien, Lehren aus BIS Project Leap."
 date: "May 14, 2026"
 language: "de"
 locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "Offene Tresortür in goldenem Licht – visuelle Metapher für den kryptografischen Schutz von Finanzarchiven"
 keywords: "Post-Quanten-Kryptografie, ML-KEM, ML-DSA, FIPS 203, FIPS 204, BIS Project Leap, G7 CEG, NCSC, ANSSI, BSI, ASD, CNSA 2.0, kryptografische Agilität, Corporate Finance, Wholesale Payments"
+seo_title: "Post-Quanten-Kryptografie: Leitfaden für Aufsichtsgremien"
 ---
 
 Das Quantenrisiko hat sich von einer Forschungsneugier zu einem aktiven aufsichtsrechtlichen Mandat entwickelt. Mit dem im Januar 2026 veröffentlichten G7-Fahrplan, mittlerweile geklärten Zeitplänen für EU, Vereinigtes Königreich und Australien und BIS Project Leap, das die Machbarkeit in einem realen Zahlungssystem nachgewiesen hat, stellt sich Aufsichtsräten nicht mehr die Frage, ob migriert wird, sondern ob die Migration abgeschlossen werden kann, bevor die kryptografische Haltbarkeit heutiger Daten abläuft.

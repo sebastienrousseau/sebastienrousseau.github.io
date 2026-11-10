@@ -1,7 +1,7 @@
 ---
 title: 'La migliore architettura di infrastruttura cloud nel 2026: un blueprint AI-native, multi-cloud e consapevole del quantum per i servizi finanziari'
 subtitle: 'Pattern, scelte e principi per i piani cloud delle istituzioni di primo livello — sotto la pressione convergente di agentic commerce, agentic unit economics, rischio quantum harvest-now-decrypt-later, sicurezza MCP, contagio algoritmico, identità crittografica degli agenti e il patrimonio legacy che continua ad assorbire il 70-75% della spesa IT'
-description: "L'architettura cloud nel 2026 si è cristallizzata attorno a sei pilastri: infrastruttura AI-native, multi-cloud intelligente, design serverless-first con WebAssembly al margine, edge computing, sicurezza automatizzata con crypto-agilità e operazioni sostenibili ad alta densità. Per le banche e gli istituti finanziari, la domanda è se consumare il cloud o progettarlo — sotto la pressione convergente di agentic commerce, agentic unit economics, rischio quantum harvest-now-decrypt-later, sicurezza MCP e contagio algoritmico, identità crittografica degli agenti, esigenze di continuous treasury e il EU AI Act."
+description: "Architettura cloud 2026 per le banche: sei pilastri, dall'infrastruttura AI-native e multi-cloud a edge, crypto-agility e sostenibilità, e quando progettarla."
 date: 'May 16, 2026'
 language: 'it-IT'
 locale: 'it_IT'

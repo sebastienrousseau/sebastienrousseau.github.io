@@ -1,7 +1,7 @@
 ---
 title: "Der Quantenkryptografie-Reset 2026: PQC-Standards, QKD-Assurance und die Migrationsarbeit, die Banken nicht länger aufschieben können"
 subtitle: "Quantenkryptografie ist vom Horizont-Scanning zur Umsetzungsdisziplin geworden: NIST-PQC-Standards sind einsatzbereit, der Leitfaden des britischen NCSC hat die Algorithmenauswahl verengt, die IETF-Protokollarbeit reift noch, und die QKD-Assurance bewegt sich vom Laborvertrauen zur Zertifizierungssprache."
-description: "Quantenkryptografie ist 2026 keine Debatte mehr darüber, ob Quantencomputer kurz bevorstehen. Sie ist ein Migrationsprogramm über Post-Quanten-Kryptografie, Krypto-Agilität, QKD-Assurance, Protokollstandards, Lieferantenreife und langlebige Finanzdaten, die bereits dem Harvest-now-decrypt-later-Risiko ausgesetzt sind."
+description: "Quantenkryptografie 2026 für Banken: Post-Quanten-Standards, Krypto-Agilität, QKD-Assurance, Lieferantenbereitschaft und das Risiko Harvest Now, Decrypt Later."
 date: "May 18, 2026"
 language: "de"
 locale: "de_DE"
@@ -13,6 +13,7 @@ item_title: "Der Quantenkryptografie-Reset 2026: PQC-Standards, QKD-Assurance un
 item_description: "Der Quantenkryptografie-Reset 2026 — NIST-PQC-Standards, NCSC-Migrationsempfehlungen, IETF-Protokollreife, QKD-Assurance, Krypto-Agilität und worauf Banken diese Woche priorisieren sollten."
 twitter_title: "Quantenkryptografie 2026: PQC-Standards und Bankmigration"
 twitter_description: "Der Quantenkryptografie-Reset 2026 — NIST-PQC-Standards, NCSC-Migrationsempfehlungen, IETF-Protokollreife, QKD-Assurance, Krypto-Agilität und worauf Banken diese Woche priorisieren sollten."
+seo_title: "Quantenkryptografie 2026: PQC-Standards, QKD und Migration"
 ---
 
 # Der Quantenkryptografie-Reset 2026: PQC-Standards, QKD-Assurance und die Migrationsarbeit, die Banken nicht länger aufschieben können

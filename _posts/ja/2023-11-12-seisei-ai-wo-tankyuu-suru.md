@@ -1,7 +1,7 @@
 ---
 title: "生成 AI を探求する"
 subtitle: "大規模言語モデル、拡散モデル、エンタープライズ展開の概観"
-description: "生成 AI が画像、テキスト、音声、コードでどのように動作するか、エンタープライズアプリケーションの実用的な検討事項。"
+description: "生成 AI と Transformer アーキテクチャの仕組み、金融サービスで最初に活用が進む領域、そして問うべき倫理面とアーキテクチャ面の課題を解説します。"
 date: "November 12, 2023"
 language: "ja-JP"
 locale: "ja_JP"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "AI と人間の対話を表す抽象的なビジュアル"
 keywords: "生成 AI, LLM, 大規模言語モデル, 拡散モデル, GPT, Claude, Gemini, エンタープライズ AI"
 last_reviewed: "2026-05-11"
+seo_title: "生成 AI 解説：仕組みと最初の活用領域"
 ---
 
 ![AI と人間の対話を表す抽象的なビジュアル](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

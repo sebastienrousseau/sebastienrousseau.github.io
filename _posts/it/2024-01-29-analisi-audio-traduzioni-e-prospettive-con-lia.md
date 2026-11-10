@@ -1,13 +1,14 @@
 ---
 title: "Analisi audio, traduzioni e prospettive con l'IA"
 subtitle: "Come la trascrizione e l'analisi audio guidate dall'IA estraggono valore dai dati vocali"
-description: "Una panoramica sulle applicazioni dell'IA all'audio: trascrizione in tempo reale, traduzione, analisi sentiment e insight aziendali."
+description: "Come Audio Analyser usa speech-to-text e Text Analytics di Azure Cognitive Services per trasformare l'audio in trascrizioni con sentiment e traduzioni."
 date: "January 29, 2024"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp"
 banner_alt: "Analisi audio con IA"
 keywords: "IA, audio, trascrizione, Whisper, traduzione, sentiment, insight"
+seo_title: "Audio Analyser con Azure Cognitive Services: voce e NLP"
 ---
 
 ---

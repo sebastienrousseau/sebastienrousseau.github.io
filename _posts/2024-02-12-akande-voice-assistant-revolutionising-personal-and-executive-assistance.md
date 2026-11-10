@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Feb 12, 2024"
-description: "Àkàndé is an open-source Python voice assistant that chains OpenAI Whisper speech recognition, GPT-4 chat completions, and a local SQLite response cache into a voice-driven workflow — generating PDF summaries from conversation history and keeping all stored data local."
+description: "Àkàndé is an open-source Python voice assistant combining Whisper speech recognition, GPT-4 and a local SQLite cache to create PDF summaries of conversations."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -108,6 +108,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Àkàndé is an open-source Python voice assistant that chains OpenAI Whisper speech recognition, GPT-4 chat completions, and a local SQLite response cache into a voice-driven workflow — generating PDF summaries from conversation history via fpdf2 and keeping all stored data local with no cloud persistence."
 last_reviewed: "2026-05-24"
+seo_title: "Àkàndé: An Open-Source GPT-4 and Whisper Voice Assistant"
 ---
 
 

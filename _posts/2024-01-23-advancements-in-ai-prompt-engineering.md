@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jan 23, 2024"
-description: "Prompt engineering controls LLM behaviour at inference time. This article covers zero-shot and few-shot prompting, chain-of-thought reasoning, self-consistency sampling, ReAct tool-use architecture, indirect prompt injection risks, and applied patterns from financial services deployments."
+description: "Learn prompt engineering: zero-shot and few-shot prompting, chain-of-thought prompting, self-consistency, ReAct tool use, and prompt injection risks in finance."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -108,6 +108,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Prompt engineering structures LLM input at inference time — no weight updates required. This article covers the techniques that proved reliable in 2024: zero-shot task framing (Brown et al., 2020), chain-of-thought reasoning (Wei et al., 2022), self-consistency sampling (Wang et al., 2022), ReAct agent loops (Yao et al., 2022), indirect prompt injection risk (Greshake et al., 2023), and applied RAG patterns from financial services."
 last_reviewed: "2026-05-24"
+seo_title: "Chain-of-Thought Prompting and AI Prompt Engineering Guide"
 ---
 
 

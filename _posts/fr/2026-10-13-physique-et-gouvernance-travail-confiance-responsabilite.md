@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Au sommet Physical AI de l'Economist à Londres, Kier Group et le BSI ont débattu de la confiance des équipes, des passations homme-machine et des responsabilités."
+description: "Comment Kier Group et le BSI abordent la gouvernance de l'IA physique : confiance des équipes, relais humain-machine et partage des responsabilités."
 format-detection: "telephone=no"
 hreflang: "fr"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Déployer des machines physiques autonomes aux côtés des équipes humaines crée des risques psychologiques et juridiques aigus que le logiciel n'a jamais connus. Au sommet Economist Enterprise Physical AI and Robotics, Kier Group et le British Standards Institution (BSI) ont posé les bases de la gouvernance de l'IA physique."
 last_reviewed: "2026-10-13"
+seo_title: "IA physique et travail : confiance et responsabilité"
 ---
 
 Quand un logiciel d'entreprise défaille, il corrompt une base de données, coupe une connexion réseau ou laisse fuiter un jeton. Quand un système d'IA physique défaille, des centaines de kilos d'acier articulé, des vérins hydrauliques à fort couple ou des engins de terrassement autonomes percutent des infrastructures ou des corps humains. Au sommet Economist Enterprise Physical AI and Robotics, tenu au Convene 200 Aldersgate à Londres le 13 octobre 2026, un panel de haut niveau s'est réuni pour aborder les frontières opérationnelles, éthiques et juridiques pressantes de l'autonomie industrielle : comment préserver la confiance des équipes, limiter les échecs de passation cognitive et bâtir des cadres de responsabilité juridiquement défendables à mesure que les machines intelligentes prennent place en première ligne.

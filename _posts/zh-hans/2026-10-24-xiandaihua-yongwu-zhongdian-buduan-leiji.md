@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 24, 2026"
-description: "Leda Glyptis 博士在伦敦指出，现代化没有终点：金融机构必须清理数十年累积的例外，对待 AI 要安全、审慎、稳健，但不能迟缓。"
+description: "Leda Glyptis 博士为何认为银行现代化没有终点，数十年来的例外为何不断累积，以及为何银行对 AI 的采用应当保持审慎，但绝不能迟缓。"
 format-detection: "telephone=no"
 hreflang: "zh-hans"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "二十到二十五年来，金融服务业一直把现代化当作有截止日期的项目。在伦敦 Oracle Financial Services Summit 的开场，Leda Glyptis 博士指出，行业的薄弱之处在于..."
 last_reviewed: "2026-10-24"
+seo_title: "Leda Glyptis：银行现代化永无终点"
 ---
 
 # 现代化永无终点，不断累积的是例外

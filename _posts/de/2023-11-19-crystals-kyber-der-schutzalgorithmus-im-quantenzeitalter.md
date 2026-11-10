@@ -8,6 +8,7 @@ locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp"
 banner_alt: "Ein moderner, schlanker Quantencomputer"
 keywords: "Quantencomputing, quantenresistente Kryptografie, CRYSTALS-Kyber, Kryptografie, Sicherheit, Banken, Finanzen, Verschlüsselung, Datenschutz, Zukunftssicherheit"
+seo_title: "CRYSTALS-Kyber: Schlüsselkapselung für das Quantenzeitalter"
 ---
 
 ![Ein moderner, schlanker Quantencomputer](https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp).class=\"img-fluid clearfix\"

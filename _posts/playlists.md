@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Oct 01, 2023"
-description: "39 hand-built music playlists for focus and deep work: neo soul, nu jazz, boom bap, French touch, deep house, lo-fi and Afrobeat. 1,700+ tracks, free on Spotify and Apple Music."
+description: "Focus playlists for deep work: 39 hand-built mixes and 1,763 tracks across neo soul, nu jazz, boom bap, French touch, deep house, lo-fi and Afrobeat, free."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -96,7 +96,7 @@ site_last_updated: "2023-07-05"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-
+seo_title: "Focus Playlists: 39 Soul, Jazz, Hip-Hop and House Mixes"
 ---
 
 Thirty-nine playlists and 1,763 tracks, built for the hours that need a soundtrack — deep work, long reads and late rewrites.

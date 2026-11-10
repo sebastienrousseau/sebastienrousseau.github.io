@@ -97,7 +97,7 @@ site_last_updated: "2023-07-05"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Sebastien Rousseau, Sebastien Rousseau Builder, Sebastien Rousseau CLI, Sebastien Rousseau Templates, Sebastien Rousseau Themes"
 site_software: "Static Site Generator, Rust"
-
+seo_title: "Privacy Notice: How sebastienrousseau.com Handles Your Data"
 ---
 
 _Last updated: 9 November 2026._

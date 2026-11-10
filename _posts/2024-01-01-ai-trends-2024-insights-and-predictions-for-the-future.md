@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: ""
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "January 1, 2024"
-description: "AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering."
+description: "AI trends 2024: generative AI in finance, multimodal models, on-device LLMs, and the shifts expected to reshape banking and product engineering this year."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -108,6 +108,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "As we enter the year 2024, AI redefines technology, society, and daily life. This era is not merely about technological evolution; it's a transformational journey where AI is emerging as a…"
 last_reviewed: "2026-05-11"
+seo_title: "AI Trends 2024: Generative AI, Multimodal and On-Device LLMs"
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Gemini 해부: Google AI 혁명을 해설하다"
 subtitle: "Google의 최첨단 멀티모달 AI 모델 분석"
-description: "Google의 Gemini AI 모델, 그 능력, 아키텍처, AI 산업에 미치는 영향에 관한 개관."
+description: "Google의 Gemini 1.5는 컨텍스트 창을 백만 토큰 이상으로 확장합니다. 검색 증강 금융에서 가능해지는 일과 알아야 할 트레이드오프를 정리합니다."
 date: "February 19, 2024"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "AI의 진화를 표현하는 추상적 비주얼"
 keywords: "Gemini, Google AI, 멀티모달, LLM, GPT, AI 모델, Bard, Vertex AI"
 last_reviewed: "2026-05-16"
+seo_title: "Gemini 1.5 해설: Google의 백만 토큰 컨텍스트"
 ---
 
 ![AI의 진화를 표현하는 추상적 비주얼](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

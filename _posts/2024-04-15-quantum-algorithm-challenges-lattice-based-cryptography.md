@@ -106,6 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "This article delves into the work of [Yilei Chen ⧉][00], who has developed a polynomial-time quantum algorithm that could significantly impact the hardness of the Learning With Errors (LWE)…"
 last_reviewed: "2026-05-11"
+seo_title: "Quantum Computing Algorithm Challenges Lattice Cryptography"
 ---
 
 

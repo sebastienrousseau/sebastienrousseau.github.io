@@ -1,7 +1,7 @@
 ---
 title: "La réinitialisation de la cryptographie quantique en 2026 : normes PQC, assurance QKD et le chantier de migration que les banques ne peuvent plus différer"
 subtitle: "La cryptographie quantique est passée de la prospective à la discipline d'implémentation : les normes NIST PQC sont prêtes, la guidance du NCSC britannique a resserré le choix des algorithmes, le travail protocolaire de l'IETF mûrit encore, et l'assurance QKD passe de la confiance laboratoire au langage de certification."
-description: "La cryptographie quantique en 2026 n'est plus un débat sur l'imminence des ordinateurs quantiques. C'est un programme de migration qui touche la cryptographie post-quantique, la crypto-agilité, l'assurance de la distribution quantique de clés, les normes de protocole, la maturité des fournisseurs et les données financières à longue durée de vie déjà exposées au risque « harvest-now-decrypt-later »."
+description: "Cryptographie quantique 2026 en banque : normes post-quantiques, crypto-agilité, assurance QKD, fournisseurs et exposition harvest-now-decrypt-later."
 date: "May 18, 2026"
 language: "fr"
 locale: "fr_FR"
@@ -13,6 +13,7 @@ item_title: "La réinitialisation de la cryptographie quantique en 2026 : normes
 item_description: "La réinitialisation de la cryptographie quantique 2026 — normes NIST PQC, recommandations de migration du NCSC, maturité protocolaire de l'IETF, assurance QKD, crypto-agilité, et ce que les banques devraient prioriser cette semaine."
 twitter_title: "Cryptographie quantique 2026 : normes PQC et migration bancaire"
 twitter_description: "La réinitialisation de la cryptographie quantique 2026 — normes NIST PQC, recommandations de migration du NCSC, maturité protocolaire de l'IETF, assurance QKD, crypto-agilité, et ce que les banques devraient prioriser cette semaine."
+seo_title: "Cryptographie quantique 2026 : normes PQC, QKD et migration"
 ---
 
 # La réinitialisation de la cryptographie quantique en 2026 : normes PQC, assurance QKD et le chantier de migration que les banques ne peuvent plus différer

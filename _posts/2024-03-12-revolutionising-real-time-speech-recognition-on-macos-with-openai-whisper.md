@@ -106,6 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "This article presents an overview of a [research paper][00] that explores the integration of OpenAI Whisper with Metal Performance Shaders (MPS) on macOS, offering a new approach to real-time…"
 last_reviewed: "2026-05-11"
+seo_title: "OpenAI Whisper on macOS: Fast Real-Time Speech Recognition"
 ---
 
 

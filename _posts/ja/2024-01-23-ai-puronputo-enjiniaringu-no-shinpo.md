@@ -1,7 +1,7 @@
 ---
 title: "AI プロンプトエンジニアリングの進歩"
 subtitle: "効果的なプロンプト技術と新しい AI ワークフロー"
-description: "AI プロンプトエンジニアリングの最新の進歩。Chain-of-thought、ツール使用、エージェントワークフロー。"
+description: "プロンプト設計を学ぶ：ゼロショットと少数ショット、思考の連鎖（CoT）、自己一貫性、ReAct によるツール利用、金融でのプロンプトインジェクションのリスク。"
 date: "January 23, 2024"
 language: "ja-JP"
 locale: "ja_JP"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "コードエディタを使用する開発者"
 keywords: "プロンプトエンジニアリング, AI, LLM, chain-of-thought, RAG, ツール使用, エージェント, ワークフロー"
 last_reviewed: "2026-05-11"
+seo_title: "AI プロンプトエンジニアリング入門"
 ---
 
 ![コードエディタを使用する開発者](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

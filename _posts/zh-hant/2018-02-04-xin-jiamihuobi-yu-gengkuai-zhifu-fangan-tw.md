@@ -1,13 +1,14 @@
 ---
 title: "推出新的加密貨幣與面向未來的更快支付方案"
 subtitle: "技術創新、地緣政治變化與可持續金融共同塑造的全球金融演進新篇章"
-description: "Express Transaction Credits Platform（EXTC）網路透過分散式賬本和智慧合約重新定義快速支付。"
+description: "回顧 EXTC 平台在 2018 年如何藉助以太坊 ERC-223 智慧合約探索更快速的跨境支付方案，以及它為何可以被視為 DeFi 的一份早期藍圖。"
 date: "February 4, 2018"
 language: "zh-Hant"
 locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp"
 banner_alt: "棕色木桌上一臺關機的膝上型電腦"
 keywords: "EXTC, 加密貨幣, 更快支付, 分散式賬本, 智慧合約, 以太坊, EIP20, 跨境支付, 即時貸款, 區塊鏈"
+seo_title: "EXTC：基於以太坊 ERC-223 的更快跨境支付"
 ---
 
 ![棕色木桌上一臺關機的膝上型電腦](https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp).class=\"img-fluid clearfix\"

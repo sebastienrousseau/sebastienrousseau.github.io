@@ -1,7 +1,7 @@
 ---
 title: "Velkoobjemové platby ve světě v roce 2026: ISO 20022, obnova RTGS a ekonomika interoperability"
 subtitle: "Velkoobjemové platby se staly nástrojem hospodářské politiky: ISO 20022, provozní doba RTGS, přístup nebankovních subjektů, propojování, pilotní projekty zúčtování na DLT a cestovní mapa G20 se sbíhají kolem nákladů na celosvětový pohyb likvidity."
-description: "Velkoobjemové platby ve světě v roce 2026 jsou přetvářeny harmonizací ISO 20022, obnovou RTGS, rozšířenými okny zúčtování, přístupem nebankovních subjektů, správou API, pilotními projekty DLT a fragmentací přeshraničních plateb. Ekonomickou otázkou je interoperabilita, nikoli samotná zprávová vrstva."
+description: "Velkoobjemové platby 2026: jak harmonizace ISO 20022, obnova RTGS, delší okna vypořádání, přístup nebank a piloty DLT mění ekonomiku interoperability."
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Mapa architektury světových velkoobjemových plateb pro rok 2026 – ISO 20022, obnova RTGS, přeshraniční koridory, okna likvidity a pilotní projekty zúčtování na DLT"
 banner_height: "571"

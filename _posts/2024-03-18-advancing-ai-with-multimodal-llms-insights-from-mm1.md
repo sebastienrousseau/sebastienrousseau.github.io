@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: ""
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "March 18, 2024"
-description: "Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials."
+description: "Explore Apple's MM1 paper on multimodal LLMs: how these models are built, the pre-training strategies behind them, and what they could mean for applied AI."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -106,6 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "The integration of natural language processing and image recognition has resulted in the development of Multimodal Large Language Models (MLLMs). In their paper, Apple introduces the MM1, a…"
 last_reviewed: "2026-05-11"
+seo_title: "Multimodal LLMs Explained: Insights from Apple's MM1 Paper"
 ---
 
 

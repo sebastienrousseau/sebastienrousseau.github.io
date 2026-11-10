@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "ロンドンのEconomist Enterprise Physical AI and Robotics Summitで、Mythic AIのTaner Ozcelik会長兼CEOが、インメモリ演算とチップレットでフォン・ノイマンのメモリの壁を破り、エッジロボティクスに10倍から1000倍のエネルギー効率をもたらす方法を語った。"
+description: "Mythic AI の Taner Ozcelik が語る、インメモリ演算とモジュール型チップレットがエッジロボット、防衛、自動車向けにメモリの壁を破る道筋。"
 format-detection: "telephone=no"
 hreflang: "ja"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "フィジカルAIは700Wのデータセンター向けGPUでは拡張できない。Economist Enterprise Physical AI and Robotics Summitで、Mythic AIのTaner Ozcelik会長兼CEOは、インメモリ演算とチップレットのモジュール性がフォン・ノイマンのメモリの壁を崩し、物理的なエッジで生物並みの効率を実現する方法を示した。"
 last_reviewed: "2026-10-13"
+seo_title: "ムーアの法則の先へ：インメモリ演算とチップレット"
 ---
 
 半世紀以上にわたり、コンピューティングの進歩はムーアの法則に従ってきた。18か月から24か月ごとに、シリコン上に詰め込むトランジスタの数を倍にするという法則だ。しかし、フィジカルAIと自律型ロボティクスという新しい領域では、ムーアの法則は熱力学の法則と衝突している。自律型ドローン、四脚ロボット、手術用マニピュレーター、自動運転車は、700ワット級のサーバー向けGPUや冷却塔を運ぶことはできない。2026年10月13日にロンドンで開かれたEconomist Enterprise Physical AI and Robotics Summitで、Mythic AIの会長兼最高経営責任者であるTaner OzcelikはKenneth Cukierとの対談に臨み、この行き詰まりを打開するために必要なアーキテクチャの革命、すなわちアナログのコンピュート・イン・メモリ（CIM）とモジュール型チップレットによってムーアの法則の先へ進む道を検討した。

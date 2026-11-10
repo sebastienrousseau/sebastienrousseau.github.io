@@ -8,6 +8,7 @@ locale: "zh_CN"
 banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
 banner_alt: "KyberLib：在量子时代赋能安全通信"
 keywords: "KyberLib, Rust, CRYSTALS-Kyber, 后量子密码学, 量子安全, 格密码学, no-std, WebAssembly, NIST, 嵌入式系统"
+seo_title: "KyberLib：Rust 后量子 Kyber 库"
 ---
 
 [![KyberLib：在量子时代赋能安全通信](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]

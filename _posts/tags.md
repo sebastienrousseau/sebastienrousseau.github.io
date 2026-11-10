@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Oct 01, 2023"
-description: "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more."
+description: "Explore by tag to browse every article on sebastienrousseau.com by subject, including AI, payments, ISO 20022, post-quantum cryptography and Rust open source."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -96,7 +96,7 @@ site_last_updated: "2023-07-05"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-
+seo_title: "Explore by Tag: AI, Payments, ISO 20022 and Rust Open Source"
 ---
 
 <img alt="A white and blue building with blue windows" src="https://cloudcdn.pro/stocks/images/marek-piwnicki-11829333.webp" width="2584" height="1597" class="img-fluid clearfix" loading="lazy" decoding="async" />

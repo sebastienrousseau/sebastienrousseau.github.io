@@ -1,7 +1,7 @@
 ---
 title: "libmake:反復作業を削減し、高品質な Rust ライブラリを構築するコードジェネレータ"
 subtitle: "ライブラリ作成の決まり仕事を排除するコードジェネレータ"
-description: "libmake は、高品質な Rust ライブラリを迅速に作成するためのコードジェネレータで、定型コードを排除し、ベストプラクティスを組み込みます。"
+description: "LibMake は 1 コマンドで Cargo.toml、src/lib.rs、テスト、ベンチ、CI を備えた雛形を生成する Rust CLI です。"
 date: "October 26, 2023"
 language: "ja-JP"
 locale: "ja_JP"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "コードエディタを使用する開発者"
 keywords: "libmake, コードジェネレータ, Rust, Cargo, ライブラリ, テンプレート, 開発者ツール, ベストプラクティス"
 last_reviewed: "2026-05-11"
+seo_title: "LibMake：Rust ライブラリの雛形を一発生成"
 ---
 
 ![コードエディタを使用する開発者](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

@@ -1,13 +1,14 @@
 ---
 title: "Àkàndé 語音助手：變革個人與高管協助"
 subtitle: "OpenAI GPT 與 Python 多功能性的結合，提供自然語言理解、高效快取與 PDF 摘要的語音助手"
-description: "Àkàndé 語音助手整合 OpenAI GPT 模型，提供自然語言理解、PDF 摘要與 SQLite 高效快取。"
+description: "Àkàndé 是一款開源 Python 語音助理，結合 Whisper 語音辨識、GPT-4 與本機 SQLite 快取，可為對話產生 PDF 摘要。"
 date: "February 12, 2024"
 language: "zh-Hant"
 locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp"
 banner_alt: "一臺白色球形現代裝置"
 keywords: "Àkàndé, 語音助手, GPT, Python, OpenAI, 自然語言理解, PDF 摘要, SQLite, 快取, 高管助手"
+seo_title: "Àkàndé：GPT-4 與 Whisper 開源語音助理"
 ---
 
 ## Àkàndé 語音助手：個人與高管協助的顛覆者

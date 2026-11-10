@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "En la cumbre Physical AI and Robotics de Economist Enterprise, Taner Ozcelik (Mythic AI) mostró cómo el cómputo en memoria y los chiplets derriban el muro de la memoria."
+description: "Taner Ozcelik, de Mythic AI, explica cómo el cómputo en memoria y los chiplets rompen el muro de memoria en robótica edge, defensa y automoción."
 format-detection: "telephone=no"
 hreflang: "es"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "La IA física no puede escalar sobre GPU de centro de datos de 700 W. En la cumbre Physical AI and Robotics de Economist Enterprise, Taner Ozcelik, presidente y consejero delegado de Mythic AI, mostró cómo el cómputo en memoria y la modularidad de los chiplets derriban el muro de la memoria de Von Neumann para lograr una eficiencia de nivel biológico en el borde físico."
 last_reviewed: "2026-10-13"
+seo_title: "Cómputo en memoria y chiplets: robótica edge tras Moore"
 ---
 
 Durante más de medio siglo, el progreso de la computación obedeció a la ley de Moore: meter el doble de transistores en el silicio cada dieciocho a veinticuatro meses. Pero en el campo emergente de la IA física y la robótica autónoma, la ley de Moore ha chocado con las leyes de la termodinámica. Los drones autónomos, los robots cuadrúpedos, los manipuladores quirúrgicos y los vehículos autónomos no pueden cargar con GPU de clase servidor de 700 vatios ni con torres de refrigeración. En la cumbre Physical AI and Robotics de Economist Enterprise, celebrada en Londres el 13 de octubre de 2026, Taner Ozcelik, presidente y consejero delegado de Mythic AI, conversó con Kenneth Cukier junto a la chimenea sobre la revolución arquitectónica necesaria para salir de este punto muerto: ir más allá de la ley de Moore mediante el cómputo analógico en memoria (CIM) y los chiplets modulares.

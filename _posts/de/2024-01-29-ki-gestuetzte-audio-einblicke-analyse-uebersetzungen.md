@@ -1,13 +1,14 @@
 ---
 title: "KI-gestützte Sprachanalyse, Übersetzung und Insights-Tool"
 subtitle: "Verarbeitung von Audiodaten mit Azure AI Platform revolutionieren"
-description: "Wie Audio Analyser, angetrieben durch Azure AI, Speech-to-Text-Konvertierung, Textanalyse und Übersetzungen für umsetzbare Insights transformiert."
+description: "Wie Audio Analyser mit Speech-to-Text und Text Analytics von Azure Cognitive Services Audio in Transkripte mit Stimmung, Keywords und Übersetzungen verwandelt."
 date: "January 29, 2024"
 language: "de"
 locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp"
 banner_alt: "Modernes, minimalistisches Unternehmensbüro"
 keywords: "Audio Analyser, Azure AI, Speech-to-Text, Audiodatenanalyse, Textanalyse, KI-Übersetzungen, Audio-Insights, automatisierte Transkription, Audiodatenverarbeitung, maschinelles Lernen"
+seo_title: "Azure Cognitive Services Audio Analyser: Sprache und NLP"
 ---
 
 [**Audio Analyser ⧉**][00], das auf Microsoft Azure AI Platform aufbaut, definiert die Landschaft der Audiodatenanalyse neu. Dieses Werkzeug bietet eine fortgeschrittene Speech-to-Text-Konvertierung, eine umfassende Textanalyse, umsetzbare Insights und nahtlose Übersetzungen und liefert effizient detaillierte Analysen aus Audiodaten. Es ist ein wesentlicher Aktivposten für Sektoren wie Marktforschung, Contact Center, Kundenservice, Gesundheitswesen, Bank- und Finanzwesen und verändert die Art und Weise, wie wir Audioinformationen interpretieren und nutzen.

@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: ""
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jan 08, 2024"
-description: "Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed."
+description: "Learn how IBM Qiskit and the Quantum Fourier Transform can be applied to credit ratio analysis in finance, with the quantum computing concepts behind them."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -108,6 +108,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Imagine a missed loan that could have been predicted. A seemingly low-risk borrower defaults, leaving a bank reeling from unexpected losses. This scenario, once a common pitfall in the world of…"
 last_reviewed: "2026-05-11"
+seo_title: "Quantum Computing for Credit Ratio Analysis with IBM Qiskit"
 ---
 
 

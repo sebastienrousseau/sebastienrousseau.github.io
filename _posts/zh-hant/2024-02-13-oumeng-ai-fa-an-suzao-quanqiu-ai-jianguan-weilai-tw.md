@@ -8,6 +8,7 @@ locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp"
 banner_alt: "一個人坐在黑色長椅上閱讀報紙"
 keywords: "歐盟 AI 法案, AI 監管, 風險等級, 透明度, 基本權利, GDPR, 合倫理 AI, 高風險應用, 創新, 全球治理"
+seo_title: "歐盟 AI 法案詳解：全球分級 AI 監理"
 ---
 
 ## 歐盟 AI 法案：塑造全球 AI 監管的未來

@@ -1,7 +1,7 @@
 ---
 title: "Ingénierie agentique pour les banques : un blueprint 2026 pour le COMEX et les ingénieurs qui le bâtiront"
 subtitle: "L'IA agentique est passée du pilote à la production. 70 % des banques l'utilisent déjà ; seule une sur cinq dispose d'un modèle de gouvernance mature. Les adversaires opèrent à vitesse machine, l'estate hérité a été écrit pour les hypothèses batch des années 1960, et l'échéance « haut risque » du Règlement européen sur l'IA arrive dans douze semaines."
-description: "L'IA agentique est passée du pilote à la production dans la banque mondiale. 70 % des institutions l'utilisent à un degré ou un autre ; seule une sur cinq a un modèle de gouvernance mature. Les adversaires autonomes opèrent à vitesse machine, l'estate hérité COBOL avec lequel les nouveaux systèmes doivent interopérer a été écrit pour les hypothèses batch des années 1960, et l'échéance « haut risque » du Règlement européen sur l'IA est à douze semaines. Voici la position d'ingénierie et de gouvernance qu'une banque doit tenir."
+description: "Ingénierie agentique en banque : pourquoi l'IA agentique en production exige une gouvernance mature, la place du COBOL hérité et ce qu'impose l'AI Act."
 date: "May 17, 2026"
 language: "fr"
 locale: "fr_FR"

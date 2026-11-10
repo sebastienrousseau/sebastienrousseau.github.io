@@ -1,13 +1,14 @@
 ---
 title: "Àkàndé : assistant vocal propulsé par GPT pour dirigeants"
 subtitle: "Permettre des interactions fluides avec une technologie IA de pointe"
-description: "Comment Àkàndé tire parti de la compréhension du langage naturel d'OpenAI GPT, des résumés PDF et d'un cache efficace pour redéfinir l'assistance personnelle et exécutive."
+description: "Àkàndé, assistant vocal Python open source, combine la reconnaissance vocale Whisper, GPT-4 et un cache SQLite local pour résumer les conversations en PDF."
 date: "February 12, 2024"
 language: "fr"
 locale: "fr_FR"
 banner: "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp"
 banner_alt: "Un appareil sphérique blanc, moderne"
 keywords: "Àkàndé, assistant vocal, compréhension du langage naturel, résumés PDF, cache efficace, OpenAI GPT, assistance exécutive, assistance personnelle, assistants numériques, innovation technologique"
+seo_title: "Àkàndé : un assistant vocal open source GPT-4 et Whisper"
 ---
 
 ## Àkàndé Voice Assistant, un game-changer pour l'assistance personnelle et exécutive

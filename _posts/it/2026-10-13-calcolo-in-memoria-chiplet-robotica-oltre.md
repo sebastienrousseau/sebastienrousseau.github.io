@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Al summit Physical AI and Robotics di Economist Enterprise, Taner Ozcelik (Mythic AI) ha mostrato come calcolo in memoria e chiplet abbattono il muro della memoria."
+description: "Come Taner Ozcelik di Mythic AI vede calcolo in memoria e chiplet modulari abbattere il memory wall per robotica edge, difesa e piattaforme automotive."
 format-detection: "telephone=no"
 hreflang: "it"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "L'IA fisica non può crescere su GPU da data center da 700 W. Al summit Physical AI and Robotics di Economist Enterprise, Taner Ozcelik, presidente e CEO di Mythic AI, ha mostrato come il calcolo in memoria e la modularità dei chiplet abbattono il muro della memoria di Von Neumann per offrire un'efficienza di livello biologico all'edge fisico."
 last_reviewed: "2026-10-13"
+seo_title: "Calcolo in memoria e chiplet: la robotica edge oltre Moore"
 ---
 
 Per oltre mezzo secolo il progresso dell'informatica ha seguito la legge di Moore: raddoppiare il numero di transistor sul silicio ogni diciotto-ventiquattro mesi. Ma nel campo emergente dell'IA fisica e della robotica autonoma, la legge di Moore si è scontrata con le leggi della termodinamica. Droni autonomi, robot quadrupedi, manipolatori chirurgici e veicoli a guida autonoma non possono portarsi dietro GPU di classe server da 700 watt né torri di raffreddamento. Al summit Physical AI and Robotics di Economist Enterprise, a Londra il 13 ottobre 2026, Taner Ozcelik, presidente e amministratore delegato di Mythic AI, ha conversato con Kenneth Cukier in un incontro informale sulla rivoluzione architetturale necessaria per uscire da questo stallo: andare oltre la legge di Moore con il calcolo analogico in memoria (CIM) e i chiplet modulari.

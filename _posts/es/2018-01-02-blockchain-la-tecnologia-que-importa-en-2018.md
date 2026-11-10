@@ -1,13 +1,14 @@
 ---
 title: "Blockchain: la tecnología que importa en 2018"
 subtitle: "Criptografía de clave privada y redes entre pares al servicio de transacciones seguras"
-description: "La narración del viaje extraordinario para asegurar las transacciones digitales mediante criptografía de clave privada y redes entre pares (P2P)."
+description: "Cómo una blockchain encadena bloques de datos, cómo la criptografía y las redes P2P protegen las transacciones y dónde está cambiando las finanzas y la banca."
 date: "January 2, 2018"
 language: "es-ES"
 locale: "es_ES"
 banner: "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
 banner_alt: "Ordenador portátil apagado sobre una mesa de madera marrón"
 keywords: "blockchain, criptomoneda, Bitcoin, P2P, smart contract, libro mayor distribuido, finanzas, cadena de suministro, identidad digital, tokenización"
+seo_title: "Blockchain explicada: bloques, criptografía y redes P2P"
 ---
 
 ![Ordenador portátil apagado sobre una mesa de madera marrón](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"

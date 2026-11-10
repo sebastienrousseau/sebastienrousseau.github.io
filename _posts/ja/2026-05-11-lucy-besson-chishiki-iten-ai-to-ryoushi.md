@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-85
 banner_alt: "Lucy Besson の肖像"
 keywords: "Lucy Besson, 知識移転, AI, 量子計算, メンタリング, 銀行テクノロジー, 多様性"
 last_reviewed: "2026-05-11"
+seo_title: "映画『LUCY』再訪：AI、量子、知識の移転"
 ---
 
 ## Lucy Besson:AI と量子の知識移転

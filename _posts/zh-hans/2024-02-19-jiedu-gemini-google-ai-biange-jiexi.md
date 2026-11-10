@@ -1,13 +1,14 @@
 ---
 title: "解读 Gemini：Google AI 革命解析"
 subtitle: "Gemini 1.5——下一代 Google AI 模型的能力与意义"
-description: "Gemini 1.5 通过新的 MoE 架构和扩展上下文窗口，重新定义大型语言模型的能力。"
+description: "谷歌的 Gemini 1.5 将上下文窗口扩展到一百万个 token 以上。了解这为金融领域的检索增强生成带来了哪些可能，以及需要权衡的取舍。"
 date: "February 19, 2024"
 language: "zh-Hans"
 locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp"
 banner_alt: "AI 网络的抽象可视化，代表 Gemini 1.5 的能力"
 keywords: "Gemini 1.5, Google AI, 大型语言模型, MoE 架构, 上下文窗口, 多模态, AI 伦理, 性能基准, Google DeepMind"
+seo_title: "Gemini 1.5 详解：谷歌百万 token 上下文窗口"
 ---
 
 [**Google 的 Gemini 1.5 ⧉**][00] 标志着 AI 的重大进步，提升了效率与处理海量信息的能力。这款语言模型超越了其前身 Gemini 1.0，开启了算力与 AI 模型使用的新时代。让我们探索 Gemini 1.5 的变革性潜力及其对 AI 创新未来的意义。

@@ -8,6 +8,7 @@ locale: "fr_FR"
 banner: "https://cloudcdn.pro/stocks/images/research-paper.webp"
 banner_alt: "Bannière pour la reconnaissance vocale automatique en temps réel (ASR)"
 keywords: "OpenAI Whisper, Metal Performance Shaders, reconnaissance vocale macOS, transcription en temps réel, détection d'activité vocale, accélération GPU, intégration Python, speech-to-text macOS, détection vocale économe en énergie, Apple silicon"
+seo_title: "OpenAI Whisper sur macOS : reconnaissance vocale en direct"
 ---
 
 Cet article présente une vue d'ensemble d'un [**article de recherche**][00] qui explore l'intégration d'OpenAI Whisper avec Metal Performance Shaders (MPS) sur macOS, offrant une nouvelle approche de la reconnaissance vocale en temps réel. OpenAI Whisper est un modèle d'ASR (reconnaissance vocale automatique) de pointe entraîné sur un large jeu de données audio variées, capable de transcrire la parole en plusieurs langues. La combinaison de l'architecture de réseau neuronal avancée de Whisper et de l'accélération GPU offerte par MPS permet d'améliorer vitesse et précision pour le traitement vocal sur appareil, renforçant la confidentialité et le confort utilisateur tout en ouvrant de nouvelles possibilités pour les développeurs souhaitant intégrer le speech-to-text en temps réel directement dans les applications macOS.

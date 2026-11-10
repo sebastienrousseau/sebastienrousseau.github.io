@@ -1,13 +1,14 @@
 ---
 title: "Dévoiler une nouvelle cryptomonnaie et une solution de paiement plus rapide"
 subtitle: "EXTC Network : une vision pour des paiements instantanés sur blockchain"
-description: "Un chapitre significatif dans l'évolution du paysage financier mondial, façonné par l'innovation technologique, les bascules géopolitiques et la finance durable."
+description: "Comment la plateforme EXTC a exploré en 2018 des paiements transfrontaliers plus rapides avec des contrats intelligents ERC-223, ébauche précoce de la DeFi."
 date: "February 4, 2018"
 language: "fr"
 locale: "fr_FR"
 banner: "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp"
 banner_alt: "Ordinateur portable éteint sur une table en bois marron"
 keywords: "EXTC Network, cryptomonnaie, paiements plus rapides, Ethereum, EIP20, smart contracts, blockchain, paiements transfrontaliers, inclusion financière"
+seo_title: "EXTC : paiements transfrontaliers rapides sur ERC-223"
 ---
 
 ![Ordinateur portable éteint sur une table en bois marron](https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp).class=\"img-fluid clearfix\"

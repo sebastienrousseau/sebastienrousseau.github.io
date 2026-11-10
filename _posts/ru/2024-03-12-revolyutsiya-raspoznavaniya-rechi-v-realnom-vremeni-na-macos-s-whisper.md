@@ -8,6 +8,7 @@ locale: "ru_RU"
 banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Распознавание речи на macOS с Whisper и Metal Performance Shaders"
 keywords: "Whisper, OpenAI, MPS, Metal Performance Shaders, macOS, Apple Silicon, M1 Max, распознавание речи в реальном времени, ASR"
+seo_title: "OpenAI Whisper на macOS: быстрое распознавание речи"
 ---
 
 > **TL;DR.** Сочетание OpenAI Whisper и Metal Performance Shaders на Apple Silicon позволяет добиться субсекундной задержки и 8–12× реального времени распознавания речи прямо на устройстве — без отправки данных в облако.

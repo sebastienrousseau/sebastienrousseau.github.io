@@ -8,6 +8,7 @@ locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp"
 banner_alt: "Un computer quantistico moderno ed elegante"
 keywords: "CRYSTALS-Kyber, NIST, PQC, post-quantistica, KEM, incapsulamento chiavi, crittografia, FIPS 203"
+seo_title: "CRYSTALS-Kyber spiegato: incapsulamento delle chiavi quantum"
 ---
 
 ![Un computer quantistico moderno ed elegante](https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp).class=\"img-fluid clearfix\"

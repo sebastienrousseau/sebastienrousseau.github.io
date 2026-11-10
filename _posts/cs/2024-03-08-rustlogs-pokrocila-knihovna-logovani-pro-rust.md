@@ -8,6 +8,7 @@ locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
 banner_alt: "Banner pro RustLogs (RLG)"
 keywords: "logovací knihovna pro Rust, asynchronní logování v Rustu, strukturované formáty logů, ladění aplikací v Rustu, přizpůsobitelné logování v Rustu, vývojové nástroje pro Rust, funkce RustLogs RLG, efektivní logování v Rustu, integrace RustLogs, dokumentace RustLogs"
+seo_title: "RustLogs (RLG): knihovna pro strukturované logy v Rustu"
 ---
 
 

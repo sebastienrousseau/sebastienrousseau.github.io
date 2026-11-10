@@ -8,6 +8,7 @@ locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp"
 banner_alt: "HSBC von den Docks aus"
 keywords: "Quantenschlüsselverteilung, QKD, Quantensicherheit, Banking, Finanzindustrie, digitale Finanzen, Cybersicherheit, Quantencomputing, HSBC, Quantenschutzversuch, Finanztransaktionen"
+seo_title: "Quantenschlüsselverteilung (QKD): sicheres Banking erklärt"
 ---
 
 ![HSBC From the Docks][00].class=\"img-fluid clearfix fade-in\"

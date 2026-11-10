@@ -94,7 +94,7 @@ site_last_updated: "2026-06-27"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-
+seo_title: "ISO 20022 Payments Libraries: pain.001, pacs.008, camt.053"
 ---
 <p class="story-intro">ISO 20022 is the new language of payments. Initiation, clearing, statements, accounts. These libraries speak all of it, so you can adopt one piece at a time instead of replacing a core system overnight. Bring your data. The messages just flow.</p>
 

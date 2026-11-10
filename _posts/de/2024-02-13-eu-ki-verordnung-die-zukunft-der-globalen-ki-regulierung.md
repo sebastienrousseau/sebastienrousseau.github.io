@@ -8,6 +8,7 @@ locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp"
 banner_alt: "Person sitzt auf einer schwarzen Bank und liest Zeitung"
 keywords: "EU-KI-Verordnung, Regulierung künstlicher Intelligenz, ethischer KI-Rahmen, KI-Risikomanagement, KI-Innovation, KI-Transparenz, Verbraucherrechte KI, KI-Governance, KI-Standards, KI-Ethik"
+seo_title: "EU-KI-Verordnung erklärt: risikobasierte KI-Regulierung"
 ---
 
 ## Die EU-KI-Verordnung: die Zukunft der globalen KI-Regulierung gestalten

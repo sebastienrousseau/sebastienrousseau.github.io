@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "June 27, 2026"
-description: "Open-source Rust libraries: noyalib (YAML), the static site generator, logging, dates, and scaffolding. Published with SBOMs and Sigstore signatures."
+description: "Open-source Rust libraries behind this site: noyalib for YAML, the static site generator, logging, dates, scaffolding and Euxis, each Sigstore-signed."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -94,7 +94,7 @@ site_last_updated: "2026-06-27"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-
+seo_title: "Rust Libraries for Developer Platforms: YAML, SSG, Logging"
 ---
 <p class="story-intro">Most of this site is built and signed with these libraries. YAML, logging, dates, scaffolding, the generator itself, and Euxis to scan the code. Each is open source, ships with a software bill of materials and a Sigstore signature, and runs on your own infrastructure. Read every line. Keep it in-house.</p>
 

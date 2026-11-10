@@ -8,6 +8,7 @@ locale: "it_IT"
 banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
 banner_alt: "Comunicazioni sicure nell'era quantistica con KyberLib"
 keywords: "KyberLib, CRYSTALS-Kyber, NIST, FIPS 203, Rust, KEM, post-quantistica, autenticazione"
+seo_title: "KyberLib: libreria Rust CRYSTALS-Kyber per il post-quantum"
 ---
 
 ---

@@ -1,13 +1,14 @@
 ---
 title: "Rust-Bibliotheksentwicklung mit Codegenerierung straffen"
 subtitle: "LibMake: ein Codegenerator für Rust, der Best Practices vom ersten Tag an einfordert"
-description: "Beschleunigen Sie die Entwicklung von Rust-Bibliotheken mit LibMake: einem Codegenerator, der Best Practices durchsetzt und den initialen Code erzeugt – das spart Zeit und Aufwand."
+description: "LibMake ist ein Rust-CLI für komplette Bibliotheksgerüste: Cargo.toml, src/lib.rs, Tests, Benchmarks und GitHub-Actions-CI per Befehl oder Konfigurationsdatei."
 date: "October 26, 2023"
 language: "de"
 locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
 banner_alt: "Große weiße Säulen"
 keywords: "Rust, Bibliothek, Entwicklung, Code, Generator, Boilerplate, Best Practices, Qualität, zuverlässig"
+seo_title: "LibMake: Rust-Bibliotheksgerüste mit einem Befehl erzeugen"
 ---
 
 ![Große weiße Säulen](https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp).class=\"img-fluid clearfix\"

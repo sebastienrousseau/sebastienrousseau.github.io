@@ -8,6 +8,7 @@ locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "Abstraktní vizualizace neuronových sítí a kvantových atomových polí. Černý počítač vznikající z přeskupujících se částic"
 keywords: "film Lucy 2014, Luc Besson, přenos znalostí, velké jazykové modely, qubity z neutrálních atomů, emulace celého mozku, nezávislost na substrátu, filozofie AI, kvantové výpočty, uchování znalostí"
+seo_title: "Film Lucy (2014) znovu: AI, kvantum a přenos znalostí"
 ---
 
 ## Lucyin flash disk znovu: co Besson viděl o přenosu znalostí do strojů

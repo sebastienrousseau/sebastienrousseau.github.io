@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp"
 banner_alt: "암호 키를 표현하는 매트릭스의 코드"
 keywords: "CRYSTALS-Kyber, 양자 내성, 키 캡슐화, KEM, NIST PQC, 격자 기반 암호, ML-KEM, FIPS 203"
 last_reviewed: "2026-05-16"
+seo_title: "CRYSTALS-Kyber 해설: 양자 시대의 키 캡슐화"
 ---
 
 ![암호 키를 표현하는 매트릭스의 코드](https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp).class=\"img-fluid clearfix\"

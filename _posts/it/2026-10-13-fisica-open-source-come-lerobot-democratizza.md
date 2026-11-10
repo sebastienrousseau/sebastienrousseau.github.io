@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Al vertice sull'IA fisica dell'Economist a Londra, Pepijn Kooijmans (Hugging Face) ha mostrato come LeRobot, modelli aperti e bracci da 200 $ aprono la robotica."
+description: "Come Hugging Face LeRobot usa modelli open source, imitation learning end-to-end e hardware da 200 dollari per passare dalla programmazione all'apprendimento."
 format-detection: "telephone=no"
 hreflang: "it"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Lo sviluppo robotico è stato a lungo riservato a hardware a sei cifre e a una cinematica fragile programmata a mano. Al vertice Economist Enterprise Physical AI and Robotics, Pepijn Kooijmans, responsabile di LeRobot in Hugging Face, ha mostrato come modelli fondazionali open source e hardware da 200 $ stiano spalancando il settore."
 last_reviewed: "2026-10-13"
+seo_title: "Hugging Face LeRobot e l'IA fisica open source in robotica"
 ---
 
 Per sei decenni la robotica industriale ha seguito un paradigma implacabile: un ingegnere programma in modo esplicito ogni millimetro del movimento di una macchina con linguaggi proprietari, teach pendant e risolutori cinematici rigidi. Se un pezzo si sposta di cinque millimetri o l'illuminazione cambia, il robot va in errore. Al vertice Economist Enterprise Physical AI and Robotics, a Londra il 13 ottobre 2026, Pepijn Kooijmans, responsabile di LeRobot in Hugging Face, ha presentato un'architettura alternativa che sta smantellando questa eredità: «I robot del futuro non saranno programmati compito per compito. Impareranno».

@@ -8,6 +8,7 @@ locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "Lucy Besson, trasferimento di conoscenze"
 keywords: "trasferimento conoscenze, IA, quantistico, formazione, mentorship, banking"
+seo_title: "Lucy (2014) rivisto: IA, quantistico e trasferimento"
 ---
 
 ## La memoria flash di Lucy, revisitada: lo che Besson vio su la migración del conocimiento alle máquinas

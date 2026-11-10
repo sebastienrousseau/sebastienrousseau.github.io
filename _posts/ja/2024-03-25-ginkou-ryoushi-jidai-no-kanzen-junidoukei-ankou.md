@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "暗号化されたデータと量子コンピュータ"
 keywords: "完全準同型暗号, FHE, 量子安全, 銀行, プライバシー, クラウド計算, ML-FHE"
 last_reviewed: "2026-05-11"
+seo_title: "完全準同型暗号（FHE）と銀行データの保護"
 ---
 
 ![暗号化されたデータと量子コンピュータ](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

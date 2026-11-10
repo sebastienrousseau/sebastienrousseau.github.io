@@ -1,7 +1,7 @@
 ---
 title: "ブロックチェーン:2018 年に重要となるテクノロジー"
 subtitle: "デジタル取引における信頼を再形成する分散型台帳"
-description: "金融サービスを再構築し、新たなビジネスモデルを生み出すブロックチェーン技術の概観。"
+description: "ブロックチェーンがデータのブロックをどう連鎖させ、暗号技術と P2P ネットワークが取引をどう守るのか、金融と銀行業のどこを変えつつあるのかを解説。"
 date: "January 2, 2018"
 language: "ja-JP"
 locale: "ja_JP"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "夜のネットワーク化された都市のスカイライン"
 keywords: "ブロックチェーン, 分散型台帳, 暗号資産, スマートコントラクト, トークン化, フィンテック, 信頼, 透明性"
 last_reviewed: "2026-05-11"
+seo_title: "ブロックチェーン解説：ブロック、暗号、P2P"
 ---
 
 ![夜のネットワーク化された都市のスカイライン](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

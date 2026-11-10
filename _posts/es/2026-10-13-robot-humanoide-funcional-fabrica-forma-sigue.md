@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "En la cumbre Physical AI de The Economist en Londres, líderes aeroespaciales y de automatización cuestionaron el auge de los humanoides: la forma sigue a la función."
+description: "Por qué líderes aeroespaciales y de automatización dudan de los humanoides en fábrica, por qué la fábrica a oscuras es una falacia y la forma sigue la función."
 format-detection: "telephone=no"
 hreflang: "es"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "En la cumbre Economist Enterprise Physical AI and Robotics en Londres, líderes aeroespaciales y de fabricación desmontaron el relato de Silicon Valley sobre el robot humanoide de propósito general. Mientras el capital riesgo vierte miles de millones en formas bípedas, la realidad industrial demuestra que la forma debe seguir estrictamente a la función."
 last_reviewed: "2026-10-13"
+seo_title: "Robótica humanoide frente a robots funcionales en la fábrica"
 ---
 
 En la cumbre Economist Enterprise Physical AI and Robotics, celebrada en Convene 200 Aldersgate, en Londres, el 13 de octubre de 2026, directivos industriales, ingenieros aeroespaciales y especialistas en robótica se reunieron para abordar una división fundamental de la automatización moderna: ¿deben los robots imitar el cuerpo humano, o su morfología mecánica debe seguir estrictamente la física industrial? Mientras el capital riesgo sigue vertiendo miles de millones en formas humanoides bípedas que prometen sustituir universalmente la mano de obra, profesionales de planta procedentes de Airbus, Leonardo y la investigación académica ofrecieron un contraste con la realidad, crudo y empírico.

@@ -8,6 +8,7 @@ locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
 banner_alt: "白色桌子上一臺關機的膝上型電腦，左側放著一杯水，右側有鋼筆、記事本和盆栽"
 keywords: "Static Site Generator, 靜態網站生成器, SSG, Rust, Markdown, SEO, WCAG, ADA, PWA, RSS"
+seo_title: "Static Site Generator：Rust SSG"
 ---
 
 ![白色桌子上一臺關機的膝上型電腦，左側放著一杯水，右側有鋼筆、記事本和盆栽](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
