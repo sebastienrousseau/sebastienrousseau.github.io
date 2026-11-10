@@ -239,6 +239,7 @@ from postbuild_lib.html_passes import (
     strip_duplicate_body_h1,
 )
 from postbuild_lib.hub_links import inject_pillar_hub_link, repair_stub_links
+from postbuild_lib.image_ratio import correct_stock_image_ratio
 from postbuild_lib.index_scorecard import inject_index_scorecard
 from postbuild_lib.indexability import apply_noindex_utility_pages, prune_sitemaps
 from postbuild_lib.internal_links import (
@@ -771,9 +772,8 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     # "starts with /api/" guard in _wrap_cdn_path).
     patched_hl, n_cdn_late = wrap_cdn_images_in_transform(patched_hl)
     ctx.counters.cdn_wrapped += n_cdn_late
-    # Responsive WebP srcset on large /stocks/images/ content images (after
-    # the wrap, so src is already a width-matched variant). WebP-only — the
-    # CDN has no AVIF variants.
+    # Stock images get their file's true ratio, then a WebP srcset (after the wrap).
+    patched_hl = correct_stock_image_ratio(patched_hl)
     patched_hl, n_srcset = add_responsive_srcset(patched_hl)
     ctx.counters.srcset_added += n_srcset
     patched_hl = add_cloudcdn_cors(patched_hl)
