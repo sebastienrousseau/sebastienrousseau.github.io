@@ -171,7 +171,7 @@ def render_hub(key: str, hub: dict[str, Any], arts: list[dict[str, Any]], expert
     parts.append(
         _section(
             "hub-latest", "Latest thinking", "Latest articles",
-            f"<ul>{latest}</ul>" + (f"<details><summary>All {len(arts)} articles</summary><ul>{rest}</ul></details>" if rest else ""),
+            f"<ul>{latest}</ul>" + (f"<details class=\"tag-posts\"><summary>All {len(arts)} articles</summary><ul>{rest}</ul></details>" if rest else ""),
             alt=True,
         )
     )  # fmt: skip
@@ -189,10 +189,21 @@ def jsonld(key: str, hub: dict[str, Any], arts: list[dict[str, Any]]) -> str:
             "name": hub["h1"],
             "url": url,
             "about": {"@type": "DefinedTerm", "name": hub["h1"], "termCode": key},
-            "hasPart": [
-                {"@type": "Article", "headline": a["title"], "url": f"{BASE}/{a['slug']}/"}
-                for a in arts
-            ],
+            # A list of links, as on the topics pages: an Article node here
+            # would need author and datePublished to validate.
+            "mainEntity": {
+                "@type": "ItemList",
+                "numberOfItems": len(arts),
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": i,
+                        "url": f"{BASE}/{a['slug']}/",
+                        "name": a["title"],
+                    }
+                    for i, a in enumerate(arts, 1)
+                ],
+            },
             "author": {"@id": f"{BASE}/#person"},
         },
         {

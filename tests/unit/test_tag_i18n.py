@@ -192,7 +192,7 @@ def test_built_landings_never_serve_the_english_description(lang: str) -> None:
         texts = [_html.unescape(deck.group(2))] + [
             _html.unescape(m.group(2)) for m in _META_RE.finditer(page)
         ]
-        if any(en_desc in t for t in texts) or 'lang="en"' in deck.group(1):
+        if any(_carries(t, en_desc) for t in texts) or 'lang="en"' in deck.group(1):
             leaks.append(slug)
     assert leaks == []
 
@@ -212,6 +212,17 @@ def test_built_landings_carry_the_translated_strings(lang: str) -> None:
         wrong.extend(
             (slug, key, metas.get(key))
             for key in ("description", "og:description")
-            if entry["description"] not in _html.unescape(metas.get(key, ""))
+            if not _carries(_html.unescape(metas.get(key, "")), entry["description"])
         )
     assert wrong == []
+
+
+def _carries(meta: str, desc: str) -> bool:
+    """The meta holds the translated description, whole or as the opening
+    that ``meta_length`` keeps when it fits the description to length."""
+    if desc in meta:
+        return True
+    # The label before it can repeat the description's first words, so
+    # try every place the description could start.
+    starts = (m.start() for m in re.finditer(re.escape(desc[:12]), meta))
+    return any(len(meta) > i + 12 and desc.startswith(meta[i:].rstrip("…")) for i in starts)

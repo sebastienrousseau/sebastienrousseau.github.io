@@ -47,6 +47,12 @@ def test_description_cuts_at_a_sentence_then_a_word() -> None:
     assert fit_description("ok.", 160) == "ok."
 
 
+def test_description_without_spaces_cuts_at_the_character() -> None:
+    # A label before the only space must not swallow the description.
+    out = fit_description("资金管理 — 按主题分类的文章: " + "短" * 90, 80)
+    assert len(out) == 80 and out.endswith("短…")
+
+
 def test_fit_meta_rewrites_title_mirrors_and_descriptions() -> None:
     title = "T" * 50 + " | Sebastien Rousseau"
     out = fit_meta(_page(title, LONG))

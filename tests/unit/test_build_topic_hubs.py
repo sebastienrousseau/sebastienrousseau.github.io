@@ -46,12 +46,15 @@ def _arts(n: int) -> list[dict]:
 def test_render_has_every_block_and_valid_jsonld() -> None:
     html = th.render_hub("iso-20022", HUB, _arts(8), "<aside>expert</aside>")
     for marker in ('id="hub-h1"', 'id="hub-glance"', 'id="hub-paths"', 'id="hub-roadmap"', 'id="hub-tools"',
-                   'id="hub-latest"', 'id="hub-faq"', "<aside>expert</aside>", "All 8 articles"):  # fmt: skip
+                   'id="hub-latest"', 'id="hub-faq"', "<aside>expert</aside>", "All 8 articles",
+                   '<details class="tag-posts">'):  # fmt: skip
         assert marker in html
     ld = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', html).group(1))
     types = [n["@type"] for n in ld["@graph"]]
     assert types == ["CollectionPage", "FAQPage", "BreadcrumbList"]
-    assert len(ld["@graph"][0]["hasPart"]) == 8
+    items = ld["@graph"][0]["mainEntity"]["itemListElement"]
+    assert [i["position"] for i in items] == list(range(1, 9))
+    assert {i["@type"] for i in items} == {"ListItem"}
 
 
 def test_hubs_without_roadmap_tools_or_older_articles() -> None:

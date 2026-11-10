@@ -15,7 +15,8 @@ dropped again where it does not fit. Every indexable page is fitted:
 * a title over its limit loses the site-name suffix (" | Sebastien
   Rousseau" or " — Sebastien Rousseau"), and nothing else;
 * a description over its limit is cut after the last full sentence that
-  fits, or else at the last word boundary, ending with an ellipsis.
+  fits, or else at the last word boundary (at the character for scripts
+  written without spaces), ending with an ellipsis.
 
 The og:/twitter: mirrors follow. Limits: 60 / 160 characters for
 alphabetic scripts, 30 / 80 for Chinese and Japanese, 35 / 100 for Korean.
@@ -66,7 +67,12 @@ def fit_description(desc: str, limit: int) -> str:
     ends = [m.end() for m in _SENTENCE_END_RE.finditer(head)]
     if ends and ends[-1] >= limit // 2:
         return head[: ends[-1]].strip()
-    cut = head[: limit - 1].rsplit(" ", 1)[0] if " " in head else head[: limit - 1]
+    cut = head[: limit - 1]
+    word = cut.rsplit(" ", 1)[0]
+    # Chinese and Japanese put no spaces between words: there the last
+    # space can sit far back (after a label), so cut at the character.
+    if len(word) >= len(cut) * 3 // 4:
+        cut = word
     return cut.rstrip(" ,;:") + "…"
 
 
