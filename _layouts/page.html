@@ -1197,7 +1197,7 @@
       @media (max-width:1199px){
         .ap-nav .wrap{grid-template-columns:auto 1fr auto}
         .ap-menu{display:none}
-        .ap-burger{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;color:var(--ink);width:44px;height:44px;user-select:none}
+        .ap-burger{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-size:var(--fs-prose);color:var(--ink);width:44px;height:44px;user-select:none}
         /* Open state: tint the burger so the toggle reads as active. */
         .ap-nav:has(.ap-toggle:checked) .ap-burger{color:var(--accent)}
         /* Burger view: sub-menus render as always-visible nested groups.
@@ -2956,6 +2956,8 @@ body:has(.report-article) .ap-hero h1, aside.pull-quote { font-family: var(--typ
    About: on the light page the kicker and divider take the page's ink. */
 .about-ai .finale-ai-verify { border-top-color: var(--hairline); }
 .about-ai .finale-ai-kicker { color: var(--ink-mute); }
+/* The pills stay dark, so their white label must beat main.content a. */
+.about-ai a.finale-ai-pill { color: var(--sec-link-dark); }
 /* 404 (plan F-8): a search box, six key links and the latest articles. */
 .ap-404-search { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); margin-block: var(--space-6); }
 .ap-404-search label { flex-basis: 100%; font-weight: 600; }

@@ -655,6 +655,8 @@ body:has(.report-article) .ap-hero h1, aside.pull-quote { font-family: var(--typ
    About: on the light page the kicker and divider take the page's ink. */
 .about-ai .finale-ai-verify { border-top-color: var(--hairline); }
 .about-ai .finale-ai-kicker { color: var(--ink-mute); }
+/* The pills stay dark, so their white label must beat main.content a. */
+.about-ai a.finale-ai-pill { color: var(--sec-link-dark); }
 /* 404 (plan F-8): a search box, six key links and the latest articles. */
 .ap-404-search { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); margin-block: var(--space-6); }
 .ap-404-search label { flex-basis: 100%; font-weight: 600; }
