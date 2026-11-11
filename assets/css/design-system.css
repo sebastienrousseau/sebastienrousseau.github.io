@@ -577,7 +577,9 @@ summary.cs-dropdown-summary {
 }
 
 /* ---- 6. Section rhythm ------------------------------------------------ */
-:is(.feat:not(.feat-hero), .ap-section:not(.tight)) { padding-block: var(--section-y); }
+/* Sections only: <main class="content ap-section"> keeps the template's
+   own padding, which pages with a full-bleed hero set to 0. */
+:is(.feat:not(.feat-hero), .ap-section:not(.tight, main)) { padding-block: var(--section-y); }
 :is(.feat, .ap-section) + :is(.feat, .ap-section) { border-top: 1px solid var(--hairline); }
 
 /* ---- 7. Headline faces and tracking (D-2: Inter headlines) ----------- */
