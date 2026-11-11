@@ -660,6 +660,11 @@ body:has(.report-article) .ap-hero h1, aside.pull-quote { font-family: var(--typ
 /* The clock's glow is wider than the card: clip it to the card so it
    neither spills past the border nor past a phone's viewport. */
 .contact-aside { overflow: clip; }
+/* The clock SVG paints its glow outside its own box (overflow: visible),
+   up over the note above it. Lift the note over the glow so the text is
+   on top: axe otherwise finds an element over the text and cannot read
+   its ground. The glow still shows behind it, measured by gradient.mjs. */
+.contact-aside-note { position: relative; z-index: 1; }
 .ap-form-privacy { margin-top: var(--space-3); font-size: var(--fs-meta); color: var(--ink-mute); }
 /* The AI due-diligence links, moved from the home finale to the foot of
    About: on the light page the kicker and divider take the page's ink. */
