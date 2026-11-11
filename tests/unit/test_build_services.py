@@ -6,11 +6,12 @@
 from __future__ import annotations
 
 import html
-import json
 import re
 
 import _profile
 import build_services as bs
+
+from . import _jsonld
 
 DATA = bs.load()
 
@@ -52,7 +53,7 @@ def test_each_page_has_the_full_structure_and_its_subject() -> None:
 def test_faq_jsonld_matches_the_visible_text_word_for_word() -> None:
     for page in DATA["pages"]:
         visible = _faq_text(bs.render_page(page, DATA["disclosure"], []))
-        ld = json.loads(re.sub(r"^<script[^>]*>|</script>$", "", bs.jsonld(page)))
+        ld = _jsonld.first(bs.jsonld(page))
         faq = next(n for n in ld["@graph"] if n["@type"] == "FAQPage")
         marked = [(q["name"], q["acceptedAnswer"]["text"]) for q in faq["mainEntity"]]
         assert visible == marked
@@ -60,7 +61,7 @@ def test_faq_jsonld_matches_the_visible_text_word_for_word() -> None:
 
 def test_service_jsonld_names_the_person_and_no_offers() -> None:
     for page in DATA["pages"]:
-        ld = json.loads(re.sub(r"^<script[^>]*>|</script>$", "", bs.jsonld(page)))
+        ld = _jsonld.first(bs.jsonld(page))
         svc = next(n for n in ld["@graph"] if n["@type"] == "Service")
         assert svc["provider"] == {"@id": "https://sebastienrousseau.com/#person"}
         assert "offers" not in svc and svc["url"].endswith(page["path"])

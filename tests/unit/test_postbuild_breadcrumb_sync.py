@@ -6,9 +6,10 @@
 from __future__ import annotations
 
 import json
-import re
 
 from postbuild_lib.breadcrumb_sync import sync_breadcrumbs, visible_names
+
+from . import _jsonld
 
 LD = {
     "@context": "https://schema.org",
@@ -27,7 +28,7 @@ def _page(nav: str, ld: object = LD) -> str:
 
 
 def _names(html: str) -> list[str]:
-    data = json.loads(re.search(r"<script[^>]*>(.*)</script>", html).group(1))
+    data = _jsonld.first(html)
     items = sorted(data["@graph"][1]["itemListElement"], key=lambda i: i["position"])
     return [i["name"] for i in items]
 

@@ -6,11 +6,11 @@
 from __future__ import annotations
 
 import datetime as dt
-import json
-import re
 from pathlib import Path
 
 import build_topic_hubs as th
+
+from . import _jsonld
 
 TODAY = dt.date(2026, 11, 10)
 HUB = {
@@ -49,7 +49,7 @@ def test_render_has_every_block_and_valid_jsonld() -> None:
                    'id="hub-latest"', 'id="hub-faq"', "<aside>expert</aside>", "All 8 articles",
                    '<details class="tag-posts">'):  # fmt: skip
         assert marker in html
-    ld = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', html).group(1))
+    ld = _jsonld.first(html)
     types = [n["@type"] for n in ld["@graph"]]
     assert types == ["CollectionPage", "FAQPage", "BreadcrumbList"]
     items = ld["@graph"][0]["mainEntity"]["itemListElement"]

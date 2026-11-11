@@ -5,10 +5,9 @@
 
 from __future__ import annotations
 
-import json
-import re
-
 import build_tools as bt
+
+from . import _jsonld
 
 
 def test_three_tools_each_with_a_form_and_live_output() -> None:
@@ -20,7 +19,7 @@ def test_three_tools_each_with_a_form_and_live_output() -> None:
 
 
 def test_software_application_jsonld_is_free_and_web() -> None:
-    ld = json.loads(re.sub(r"^<script[^>]*>|</script>$", "", bt.jsonld()))
+    ld = _jsonld.first(bt.jsonld())
     apps = ld["@graph"]
     assert len(apps) == 3
     assert all(a["operatingSystem"] == "Web" and a["offers"]["price"] == 0 for a in apps)
