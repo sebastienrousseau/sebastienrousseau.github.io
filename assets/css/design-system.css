@@ -96,20 +96,22 @@
   --radius-l: 22px;
   --radius-pill: 999px;
 
-  /* Surfaces: neutral, not warm. */
+  /* Surfaces: neutral, not warm. Neutral mixes are in sRGB: in oklch a
+     grey has no hue, Chrome serialises it as `oklch(L C none)`, and
+     axe cannot parse that, so it skips contrast on everything above. */
   --surface-0: var(--paper);
-  --surface-1: color-mix(in oklch, var(--paper) 97%, var(--ink));
-  --surface-2: color-mix(in oklch, var(--paper) 94%, var(--ink));
-  --hairline: color-mix(in oklch, var(--ink) 10%, transparent);
-  --hairline-strong: color-mix(in oklch, var(--ink) 18%, transparent);
+  --surface-1: color-mix(in srgb, var(--paper) 97%, var(--ink));
+  --surface-2: color-mix(in srgb, var(--paper) 94%, var(--ink));
+  --hairline: color-mix(in srgb, var(--ink) 10%, transparent);
+  --hairline-strong: color-mix(in srgb, var(--ink) 18%, transparent);
 
   /* Depth: layered, low-opacity shadows. */
-  --shadow-1: 0 1px 1px color-mix(in oklch, var(--ink) 4%, transparent),
-    0 1px 3px color-mix(in oklch, var(--ink) 6%, transparent);
-  --shadow-2: 0 1px 2px color-mix(in oklch, var(--ink) 4%, transparent),
-    0 8px 24px -8px color-mix(in oklch, var(--ink) 14%, transparent);
-  --shadow-3: 0 2px 4px color-mix(in oklch, var(--ink) 5%, transparent),
-    0 24px 48px -16px color-mix(in oklch, var(--ink) 22%, transparent);
+  --shadow-1: 0 1px 1px color-mix(in srgb, var(--ink) 4%, transparent),
+    0 1px 3px color-mix(in srgb, var(--ink) 6%, transparent);
+  --shadow-2: 0 1px 2px color-mix(in srgb, var(--ink) 4%, transparent),
+    0 8px 24px -8px color-mix(in srgb, var(--ink) 14%, transparent);
+  --shadow-3: 0 2px 4px color-mix(in srgb, var(--ink) 5%, transparent),
+    0 24px 48px -16px color-mix(in srgb, var(--ink) 22%, transparent);
 
   /* Accent ramp from the one accent. */
   --accent-soft: color-mix(in oklch, var(--accent) 10%, var(--paper));
@@ -137,19 +139,19 @@
   --radius: var(--radius-m);
 }
 :root[data-theme="dark"] {
-  --hairline: color-mix(in oklch, var(--ink) 14%, transparent);
-  --shadow-2: 0 1px 0 color-mix(in oklch, var(--ink) 6%, transparent) inset,
-    0 12px 32px -12px color-mix(in oklch, black 70%, transparent);
-  --shadow-3: 0 1px 0 color-mix(in oklch, var(--ink) 8%, transparent) inset,
-    0 28px 56px -18px color-mix(in oklch, black 80%, transparent);
+  --hairline: color-mix(in srgb, var(--ink) 14%, transparent);
+  --shadow-2: 0 1px 0 color-mix(in srgb, var(--ink) 6%, transparent) inset,
+    0 12px 32px -12px color-mix(in srgb, black 70%, transparent);
+  --shadow-3: 0 1px 0 color-mix(in srgb, var(--ink) 8%, transparent) inset,
+    0 28px 56px -18px color-mix(in srgb, black 80%, transparent);
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --hairline: color-mix(in oklch, var(--ink) 14%, transparent);
-    --shadow-2: 0 1px 0 color-mix(in oklch, var(--ink) 6%, transparent) inset,
-      0 12px 32px -12px color-mix(in oklch, black 70%, transparent);
-    --shadow-3: 0 1px 0 color-mix(in oklch, var(--ink) 8%, transparent) inset,
-      0 28px 56px -18px color-mix(in oklch, black 80%, transparent);
+    --hairline: color-mix(in srgb, var(--ink) 14%, transparent);
+    --shadow-2: 0 1px 0 color-mix(in srgb, var(--ink) 6%, transparent) inset,
+      0 12px 32px -12px color-mix(in srgb, black 70%, transparent);
+    --shadow-3: 0 1px 0 color-mix(in srgb, var(--ink) 8%, transparent) inset,
+      0 28px 56px -18px color-mix(in srgb, black 80%, transparent);
   }
 }
 
@@ -523,7 +525,7 @@ summary.cs-dropdown-summary {
 
 /* ---- 3. Navigation: translucent, hairline, 64px ----------------------- */
 .ap-nav {
-  background: color-mix(in oklch, var(--paper) 78%, transparent);
+  background: color-mix(in srgb, var(--paper) 78%, transparent);
   backdrop-filter: saturate(1.8) blur(14px);
   -webkit-backdrop-filter: saturate(1.8) blur(14px);
   border-bottom: 1px solid var(--hairline);
@@ -649,14 +651,23 @@ body:has(.report-article) .ap-hero h1, aside.pull-quote { font-family: var(--typ
   border-top: 1px solid var(--hairline);
   font-size: var(--fs-small);
 }
+/* A standalone link, not a link in a sentence, so AAA wants a 44px
+   target. Inline padding grows the target without moving the line. */
+.closing-v3 .closing-newsletter a { padding-block: 13px; }
 /* The live London clock, moved from the home hero to Contact. */
 .contact-clock { margin-top: var(--space-6); color: var(--ink-mute); }
 .contact-clock svg { width: min(100%, 240px); height: auto; }
+/* The clock's glow is wider than the card: clip it to the card so it
+   neither spills past the border nor past a phone's viewport. */
+.contact-aside { overflow: clip; }
 .ap-form-privacy { margin-top: var(--space-3); font-size: var(--fs-meta); color: var(--ink-mute); }
 /* The AI due-diligence links, moved from the home finale to the foot of
    About: on the light page the kicker and divider take the page's ink. */
 .about-ai .finale-ai-verify { border-top-color: var(--hairline); }
 .about-ai .finale-ai-kicker { color: var(--ink-mute); }
+/* The hero credentials sit where the --signature gradient is bluest:
+   plain accent measured 6.71:1 there, so they take the stronger one. */
+.feat-hero .feat-credentials a { color: var(--accent-strong); }
 /* The pills stay dark, so their white label must beat main.content a. */
 .about-ai a.finale-ai-pill { color: var(--sec-link-dark); }
 /* 404 (plan F-8): a search box, six key links and the latest articles. */
