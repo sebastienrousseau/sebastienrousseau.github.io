@@ -28,6 +28,7 @@ Intro paragraph is not a highlight.
 
 - **Broken thing works** (`file.py`): now it works.
 - **A check flags a fault** (`check.py`), so the build fails with the reason.
+- **Author card** under every article said "nearly two decades". It now reads the profile.
 
 ### Unchanged, measured
 
@@ -53,6 +54,7 @@ def test_highlights_take_lead_and_first_sentence_from_release_sections() -> None
         "* **A new thing**: it does X.",
         "* **Broken thing works**: now it works.",
         "* **A check flags a fault**, so the build fails with the reason.",
+        '* **Author card** under every article said "nearly two decades".',
     ]
     assert rn.changelog_section(CHANGELOG, "9.9.9") == ""
 
@@ -83,7 +85,12 @@ def test_render_without_highlights_or_changes_still_has_every_section() -> None:
 def test_build_reads_git_history(monkeypatch: pytest.MonkeyPatch) -> None:
     calls: dict[tuple[str, ...], str] = {
         ("tag", "--merged", "HEAD"): "v0.0.33\nv0.0.34\nv1.2.0\nnot-a-tag\n",
-        ("log", "--first-parent", "--format=%s", "v0.0.34..HEAD"): "feat: y (#7)\n",
+        (
+            "log",
+            "--first-parent",
+            "--format=%s%x1f%b%x1e",
+            "v0.0.34..HEAD",
+        ): "feat: y (#7)\x1f\x1e\n",
         ("show", "HEAD:CHANGELOG.md"): CHANGELOG,
     }
     monkeypatch.setattr(rn, "_git", lambda *a: calls[a])
@@ -100,9 +107,39 @@ def test_main_prints_title(capsys: pytest.CaptureFixture[str]) -> None:
 def test_backfill_reads_the_changelog_from_another_ref(monkeypatch: pytest.MonkeyPatch) -> None:
     calls = {
         ("tag", "--merged", "v0.0.35"): "v0.0.34\n",
-        ("log", "--first-parent", "--format=%s", "v0.0.34..v0.0.35"): "",
+        ("log", "--first-parent", "--format=%s%x1f%b%x1e", "v0.0.34..v0.0.35"): "",
         ("show", "origin/main:CHANGELOG.md"): CHANGELOG,
     }
     monkeypatch.setattr(rn, "_git", lambda *a: calls[a])
     body = rn.build("v0.0.35", "v0.0.35", author_of=str, changelog_ref="origin/main")
     assert "* **A new thing**: it does X." in body
+
+
+def test_build_lists_pull_requests_merged_with_a_merge_commit(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    # A merge commit's subject is "Merge pull request #N from owner/branch";
+    # GitHub writes the pull request's title as the first line of its body.
+    log = (
+        "Merge pull request #525 from owner/feat/v0.0.36\x1f"
+        "feat: design v3 (v0.0.36)\n\x1e\n"
+        "fix: squashed (#524)\x1f\x1e\n"
+        "Merge pull request #523 from owner/no-body\x1f\x1e\n"
+        "chore: direct commit\x1f\x1e\n"
+    )
+    calls = {
+        ("tag", "--merged", "HEAD"): "v0.0.35\n",
+        ("log", "--first-parent", "--format=%s%x1f%b%x1e", "v0.0.35..HEAD"): log,
+        ("show", "HEAD:CHANGELOG.md"): CHANGELOG,
+    }
+    monkeypatch.setattr(rn, "_git", lambda *a: calls[a])
+    body = rn.build("v0.0.36", "HEAD", author_of=lambda n: "me")
+    what = body.split("## What's Changed")[1].split("**Full Changelog**")[0]
+    assert [line for line in what.splitlines() if line] == [
+        "* `Merge pull request #523 from owner/no-body` by @me in "
+        "https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/523",
+        "* `fix: squashed` by @me in "
+        "https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/524",
+        "* `feat: design v3 (v0.0.36)` by @me in "
+        "https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/525",
+    ]
