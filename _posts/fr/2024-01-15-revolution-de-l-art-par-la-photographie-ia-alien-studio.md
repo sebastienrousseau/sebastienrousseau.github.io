@@ -1,14 +1,13 @@
 ---
 title: "Alien Studio : mon voyage de la tech à l'art photographique"
 subtitle: "Les débuts d'une odyssée technologique"
-description: "Un parcours personnel de Rust, l'IA et le calcul quantique vers l'art et la photographie : comment Alien Studio réinvente le travail créatif par la technologie."
+description: "Rejoignez-moi sur mon parcours personnel — de Rust, l'IA et le calcul quantique vers la redéfinition de l'art et de la photographie via Alien Studio."
 date: "January 15, 2024"
 language: "fr"
 locale: "fr_FR"
 banner: "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp"
 banner_alt: "Muse du couchant, regard serein ; beauté dans l'immobilité"
 keywords: "parcours tech personnel, découverte Rust, exploration IA, calcul quantique, fusion art et photographie, Alien Studio, création d'art numérique, technologie dans l'art, photographie innovante, redécouverte artistique"
-seo_title: "Alien Studio : un parcours tech vers la photographie IA"
 ---
 
 ## Libérer l'innovation artistique via une technologie de pointe

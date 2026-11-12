@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-st
 banner_alt: "Static Site Generator 프로젝트 배너"
 keywords: "Static Site Generator, SSG, 정적 사이트 생성기, Rust, 성능, SEO, JSON-LD, 접근성"
 last_reviewed: "2026-05-16"
-seo_title: "Static Site Generator: Rust 고속 SSG"
 ---
 
 ![Static Site Generator 프로젝트 배너](https://cloudcdn.pro/clients/static-site-generator/v1/banners/banner-static-site-generator.svg).class=\"img-fluid clearfix\"

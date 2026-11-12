@@ -1,14 +1,13 @@
 ---
 title: "La creación de la plataforma Express Transaction Credits"
 subtitle: "Un marco completo para la próxima generación de tokens ERC-223"
-description: "Cómo se creó la plataforma EXTC sobre Ethereum ERC-223: arquitectura del token, pagos multifirma, transferencias con bloqueo temporal y préstamos con garantía."
+description: "Desarrollar un marco completo para la próxima generación de tokens conformes a Ethereum Request for Comment mediante el estándar ERC-223."
 date: "February 15, 2018"
 language: "es-ES"
 locale: "es_ES"
 banner: "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
 banner_alt: "Grandes columnas blancas"
 keywords: "Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, pagos, tokens, préstamos, finanzas descentralizadas"
-seo_title: "Plataforma EXTC: crear un token de pagos en Ethereum ERC-223"
 ---
 
 ![Grandes columnas blancas](https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp).class=\"img-fluid clearfix\"

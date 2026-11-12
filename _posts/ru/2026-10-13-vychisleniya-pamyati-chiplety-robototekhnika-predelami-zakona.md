@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Как Taner Ozcelik из Mythic AI видит вычисления в памяти и модульные чиплеты, ломающие стену памяти для edge-робототехники, оборонных и автомобильных платформ."
+description: "Taner Ozcelik из Mythic AI на саммите Economist Enterprise в Лондоне: как вычисления в памяти и модульные чиплеты дают роботам в 10–1000 раз больше энергоэффективности."
 format-detection: "telephone=no"
 hreflang: "ru"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Физический ИИ не масштабируется на графических процессорах центров обработки данных мощностью 700 Вт. На саммите Economist Enterprise Physical AI and Robotics Summit председатель и генеральный директор Mythic AI Taner Ozcelik показал, как вычисления в памяти и модульность чиплетов разрушают стену памяти фон Неймана и дают на физической периферии эффективность биологического уровня."
 last_reviewed: "2026-10-13"
-seo_title: "Вычисления в памяти и чиплеты: робототехника после Мура"
 ---
 
 Больше полувека прогресс вычислительной техники подчинялся закону Мура: каждые восемнадцать–двадцать четыре месяца на кремний удавалось уместить вдвое больше транзисторов. Но в новой области физического ИИ и автономной робототехники закон Мура столкнулся с законами термодинамики. Автономные дроны, четвероногие роботы, хирургические манипуляторы и беспилотные автомобили не могут возить на себе серверные графические процессоры мощностью 700 Вт или градирни. На саммите Economist Enterprise Physical AI and Robotics Summit в Лондоне 13 октября 2026 года Taner Ozcelik, председатель и генеральный директор Mythic AI, в беседе у камина с Kenneth Cukier разобрал архитектурную революцию, без которой этот тупик не преодолеть: выход за пределы закона Мура с помощью аналоговых вычислений в памяти (CIM) и модульных чиплетов.

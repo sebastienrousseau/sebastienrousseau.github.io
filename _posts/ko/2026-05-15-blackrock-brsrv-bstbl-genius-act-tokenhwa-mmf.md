@@ -1,7 +1,7 @@
 ---
 title: "숨겨진 수익: BlackRock의 BRSRV·BSTBL과 GENIUS Act 토큰화 MMF 해독"
 subtitle: "BlackRock의 신규 BRSRV·BSTBL 토큰화 MMF는 GENIUS Act 하에서의 새 자산 분류를 시사합니다"
-description: "BlackRock은 수익을 내는 달러처럼 작동하는 MMF로 BRSRV와 BSTBL을 출원했습니다. 스테이블코인 수익에 대한 GENIUS Act 제한을 우회하는 방식을 살펴봅니다."
+description: "GENIUS Act 하에서 스테이블코인은 수익을 지급할 수 없습니다. BlackRock의 BRSRV·BSTBL 출원은 우회로를 보여줍니다."
 date: "May 15, 2026"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "토큰화 머니마켓펀드 구조"
 keywords: "BlackRock, BRSRV, BSTBL, GENIUS Act, 토큰화 MMF, 스테이블코인, 머니마켓펀드, 디지털 자산"
 last_reviewed: "2026-05-16"
-seo_title: "BlackRock BRSRV·BSTBL: 토큰화 MMF 해독"
 ---
 
 ## 숨겨진 수익: BlackRock의 BRSRV·BSTBL과 GENIUS Act 토큰화 MMF 해독

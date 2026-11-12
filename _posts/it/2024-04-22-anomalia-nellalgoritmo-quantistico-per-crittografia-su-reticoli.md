@@ -8,7 +8,6 @@ locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 banner_alt: "Algoritmo quantistico e bug"
 keywords: "quantistico, LWE, Yilei Chen, bug, Kyber, PQC, peer review"
-seo_title: "Crittografia post-quantum: bug nell'algoritmo LWE di Chen"
 ---
 
 ---

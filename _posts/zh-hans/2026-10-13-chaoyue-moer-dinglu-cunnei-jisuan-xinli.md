@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Mythic AI 的 Taner Ozcelik 如何看待存内计算与模块化芯粒为边缘机器人、国防与汽车平台打破内存墙，突破冯·诺依曼架构的瓶颈。"
+description: "在伦敦举行的Economist Enterprise Physical AI and Robotics Summit上，Mythic AI董事长兼首席执行官Taner Ozcelik介绍了存内计算架构与模块化芯粒如何突破冯·诺依曼内存墙，为边缘机器人带来10倍至1000倍的能效提升。"
 format-detection: "telephone=no"
 hreflang: "zh-hans"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "物理AI无法依靠700瓦的数据中心GPU实现规模化。在Economist Enterprise Physical AI and Robotics Summit上，Mythic AI董事长兼首席执行官Taner Ozcelik展示了存内计算与芯粒的模块化如何拆除冯·诺依曼内存墙，在物理边缘实现接近生物水平的能效。"
 last_reviewed: "2026-10-13"
-seo_title: "超越摩尔定律：边缘机器人的存内计算与芯粒"
 ---
 
 半个多世纪以来，计算的进步一直遵循摩尔定律：每十八到二十四个月，在硅片上塞进两倍的晶体管。然而，在物理AI与自主机器人这一新兴领域，摩尔定律已经撞上了热力学定律。自主无人机、四足机器人、手术机械臂和自动驾驶汽车无法背负700瓦的服务器级GPU或冷却塔。2026年10月13日，在伦敦举行的Economist Enterprise Physical AI and Robotics Summit上，Mythic AI董事长兼首席执行官Taner Ozcelik与Kenneth Cukier进行了一场炉边对谈，探讨打破这一僵局所需的架构变革：借助模拟存内计算（CIM）与模块化芯粒，超越摩尔定律。

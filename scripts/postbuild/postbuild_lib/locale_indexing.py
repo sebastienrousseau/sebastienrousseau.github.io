@@ -14,9 +14,6 @@ that policy file may be indexed. For every other locale this pass:
 * strips, from every other page, each hreflang alternate that targets one
   of those locales.
 
-On every page still indexable, the language menu is then cut to the
-indexed locales plus "More languages" (``lang_switcher_scope``, D-3).
-
 Sitemap removal follows from ``noindex``: ``indexability.prune_sitemaps``
 already drops any ``<loc>`` whose page is noindex.
 
@@ -35,7 +32,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 import _lang_registry as _lr
 import _locale_indexing as _li
-from postbuild_lib.lang_switcher_scope import scope_switcher
 
 _ROBOTS_META_RE = re.compile(r'<meta\s+(?=[^>]*\bname=["\']?robots["\']?[\s/>])[^>]*>', re.I)
 _CONTENT_RE = re.compile(r'\bcontent=(?:"([^"]*)"|\'([^\']*)\'|([^\s>]+))', re.I)
@@ -116,19 +112,16 @@ def apply_locale_indexing(public: Path) -> tuple[int, int]:
     """Apply the policy to every HTML page. Returns (noindexed, hreflang links removed)."""
     dropped = _li.noindex_codes()
     codes = frozenset(lang.code for lang in _lr.active())
-    indexed = _li.indexed_codes()
     noindexed = removed = 0
     for page in sorted(public.rglob("*.html")):
         html = page.read_text(encoding="utf-8")
-        page_lang = page_locale(page.relative_to(public).as_posix(), codes)
-        is_dropped = page_lang in dropped
+        is_dropped = page_locale(page.relative_to(public).as_posix(), codes) in dropped
         out, n = strip_hreflang(html, drop_all=is_dropped, dropped=dropped)
         removed += n
         if is_dropped:
             merged = merge_noindex(out)
             noindexed += merged != out
             out = merged
-        out = scope_switcher(out, page_lang, indexed)
         if out != html:
             page.write_text(out, encoding="utf-8")
     return noindexed, removed

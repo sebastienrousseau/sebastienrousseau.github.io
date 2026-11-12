@@ -92,21 +92,5 @@
   "scorecard.downloaded": "স্কোরকার্ডের ছবি ডাউনলোড হয়েছে",
   "scorecard.radarTitle": "প্রস্তুতি রাডার",
   "scorecard.methodology": "সম্পূর্ণ সূচক পদ্ধতি পড়ুন",
-  "scorecard.fallback": "পরিপক্বতার মাত্রাগুলি উপরের সারণিতে দেওয়া হয়েছে। আপনার প্রতিষ্ঠানকে ইন্টারঅ্যাকটিভভাবে মূল্যায়ন এবং ফলাফল রপ্তানি করতে JavaScript সক্রিয় করুন।",
-  "footer.title.contact": "যোগাযোগ",
-  "footer.contact.location": "লন্ডন, যুক্তরাজ্য",
-  "footer.contact.response": "সাধারণত ৪৮ ঘণ্টার মধ্যে প্রথম উত্তর",
-  "footer.newsletter.link": "Banking On Quantum-এ সাবস্ক্রাইব করুন",
-  "nav.workWithMe": "আমার সঙ্গে কাজ করুন",
-  "nav.research": "গবেষণা সহযোগিতা",
-  "nav.openSourceSupport": "ওপেন-সোর্স সহায়তা",
-  "nav.aria.toggleWorkWithMe": "আমার সঙ্গে কাজ করুন উপমেনু টগল করুন",
-  "contact.privacyLine": "আপনার বার্তা Formspree-তে যায়, যা সেটি আমাকে ই-মেইল করে; স্প্যাম সুরক্ষা দেয় Google reCAPTCHA।",
-  "contact.privacyLink": "গোপনীয়তা বিজ্ঞপ্তি",
-  "footer.changelog": "পরিবর্তনের তালিকা",
-  "contact.eyebrow": "যোগাযোগ",
-  "footer.mediaKit": "মিডিয়া কিট",
-  "contact.appTitle": "যোগাযোগ",
-  "nav.hubPqc": "পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি",
-  "nav.hubAi": "প্রয়োগকৃত এআই"
+  "scorecard.fallback": "পরিপক্বতার মাত্রাগুলি উপরের সারণিতে দেওয়া হয়েছে। আপনার প্রতিষ্ঠানকে ইন্টারঅ্যাকটিভভাবে মূল্যায়ন এবং ফলাফল রপ্তানি করতে JavaScript সক্রিয় করুন।"
 }

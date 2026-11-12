@@ -8,7 +8,6 @@ locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
 banner_alt: "Vypnutý notebook na hnědém dřevěném stole"
 keywords: "ERC-20, Ethereum, token, chytrý kontrakt, DeFi, EIP, blockchain, interoperabilita, DApps, standard"
-seo_title: "ERC-20 vysvětlený: standard rozhraní tokenů Etherea"
 ---
 
 

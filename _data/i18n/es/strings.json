@@ -92,21 +92,5 @@
   "scorecard.downloaded": "Imagen del cuadro de mando descargada",
   "scorecard.radarTitle": "Radar de preparación",
   "scorecard.methodology": "Lea la metodología completa del índice",
-  "scorecard.fallback": "Las dimensiones de madurez se presentan en la tabla anterior. Active JavaScript para evaluar su institución de forma interactiva y exportar el resultado.",
-  "footer.title.contact": "Contacto",
-  "footer.contact.location": "Londres, Reino Unido",
-  "footer.contact.response": "Primera respuesta habitual en 48 horas",
-  "footer.newsletter.link": "Suscríbete a Banking On Quantum",
-  "nav.workWithMe": "Colabora conmigo",
-  "nav.research": "Colaboración en investigación",
-  "nav.openSourceSupport": "Soporte de código abierto",
-  "nav.aria.toggleWorkWithMe": "Mostrar u ocultar el submenú Colabora conmigo",
-  "contact.privacyLine": "Tu mensaje pasa por Formspree, que me lo envía por correo; la protección contra spam es de Google reCAPTCHA.",
-  "contact.privacyLink": "Aviso de privacidad",
-  "footer.changelog": "Registro de cambios",
-  "contact.eyebrow": "Contacto",
-  "footer.mediaKit": "Kit de prensa",
-  "contact.appTitle": "Contacto",
-  "nav.hubPqc": "Criptografía poscuántica",
-  "nav.hubAi": "IA aplicada"
+  "scorecard.fallback": "Las dimensiones de madurez se presentan en la tabla anterior. Active JavaScript para evaluar su institución de forma interactiva y exportar el resultado."
 }

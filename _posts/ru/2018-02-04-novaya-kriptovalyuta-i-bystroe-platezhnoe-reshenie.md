@@ -1,14 +1,13 @@
 ---
 title: "Представление новой криптовалюты и более быстрого платёжного решения"
 subtitle: "EXTC Network: видение мгновенных платежей на блокчейне"
-description: "Как платформа EXTC в 2018 году исследовала ускорение трансграничных платежей на смарт-контрактах Ethereum ERC-223 и почему она стала ранним прообразом DeFi."
+description: "Значимая глава в эволюции глобального финансового ландшафта — технологические инновации, геополитические сдвиги и устойчивые финансы."
 date: "February 4, 2018"
 language: "ru-RU"
 locale: "ru_RU"
 banner: "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp"
 banner_alt: "Выключенный ноутбук на коричневом деревянном столе"
 keywords: "EXTC Network, криптовалюта, быстрые платежи, Ethereum, EIP20, смарт-контракты, блокчейн, трансграничные платежи, финансовая инклюзия"
-seo_title: "EXTC: быстрые трансграничные платежи на Ethereum ERC-223"
 ---
 
 ![Выключенный ноутбук на коричневом деревянном столе](https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp).class=\"img-fluid clearfix\"

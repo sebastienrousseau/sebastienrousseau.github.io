@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Hugging Face LeRobot 如何借助开源模型、端到端模仿学习与 200 美元的硬件，让机器人技术从逐项任务编程转向从经验中学习。"
+description: "在Economist Enterprise Physical AI and Robotics Summit上，Hugging Face LeRobot负责人Pepijn Kooijmans展示了打破物理AI门槛的开源架构：端到端模仿学习、Gemma视觉语言模型、流匹配动作专家和200美元的硬件，正把机器人技术从僵硬的任务编程转向经验学习。"
 format-detection: "telephone=no"
 hreflang: "zh-hans"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "长期以来，机器人开发一直被六位数价格的硬件和脆弱的手工运动学挡在门外。在Economist Enterprise Physical AI and Robotics Summit上，Hugging Face LeRobot负责人Pepijn Kooijmans展示了开源基础模型和200美元的硬件如何让这个行业彻底敞开大门。"
 last_reviewed: "2026-10-13"
-seo_title: "Hugging Face LeRobot 与开源物理 AI"
 ---
 
 六十年来，工业机器人一直在一种毫不留情的范式下运作：人类工程师使用专有语言、示教器和僵硬的运动学求解器，把机器的每一毫米动作都明确编程出来。只要工件偏移五毫米或照明条件发生变化，机器人就会报错停机。2026年10月13日，在伦敦举行的Economist Enterprise Physical AI and Robotics Summit上，Hugging Face的LeRobot负责人Pepijn Kooijmans提出了另一种正在瓦解这一传统的架构：“未来的机器人不会一项任务一项任务地被编程。它们会学习。”

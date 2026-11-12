@@ -91,21 +91,5 @@
   "scorecard.downloaded": "Η εικόνα της κάρτας βαθμολογίας λήφθηκε",
   "scorecard.radarTitle": "Ραντάρ ετοιμότητας",
   "scorecard.methodology": "Διαβάστε την πλήρη μεθοδολογία του δείκτη",
-  "scorecard.fallback": "Οι διαστάσεις ωριμότητας παρουσιάζονται στον παραπάνω πίνακα. Ενεργοποιήστε τη JavaScript για να αξιολογήσετε το ίδρυμά σας διαδραστικά και να εξαγάγετε το αποτέλεσμα.",
-  "footer.title.contact": "Επικοινωνία",
-  "footer.contact.location": "Λονδίνο, Ηνωμένο Βασίλειο",
-  "footer.contact.response": "Πρώτη απάντηση συνήθως εντός 48 ωρών",
-  "footer.newsletter.link": "Εγγραφή στο Banking On Quantum",
-  "nav.workWithMe": "Συνεργασία",
-  "nav.research": "Ερευνητική συνεργασία",
-  "nav.openSourceSupport": "Υποστήριξη ανοιχτού κώδικα",
-  "nav.aria.toggleWorkWithMe": "Εναλλαγή υπομενού Συνεργασία",
-  "contact.privacyLine": "Το μήνυμά σας πηγαίνει στο Formspree, που μου το στέλνει με e-mail· την προστασία από spam παρέχει το Google reCAPTCHA.",
-  "contact.privacyLink": "Ειδοποίηση απορρήτου",
-  "footer.changelog": "Αρχείο αλλαγών",
-  "contact.eyebrow": "Επικοινωνία",
-  "footer.mediaKit": "Υλικό για τα μέσα",
-  "contact.appTitle": "Επικοινωνία",
-  "nav.hubPqc": "Μετακβαντική κρυπτογραφία",
-  "nav.hubAi": "Εφαρμοσμένη ΤΝ"
+  "scorecard.fallback": "Οι διαστάσεις ωριμότητας παρουσιάζονται στον παραπάνω πίνακα. Ενεργοποιήστε τη JavaScript για να αξιολογήσετε το ίδρυμά σας διαδραστικά και να εξαγάγετε το αποτέλεσμα."
 }

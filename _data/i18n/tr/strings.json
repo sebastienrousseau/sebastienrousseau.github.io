@@ -92,21 +92,5 @@
   "scorecard.downloaded": "Puan kartı görüntüsü indirildi",
   "scorecard.radarTitle": "Hazırlık radarı",
   "scorecard.methodology": "Endeksin tam metodolojisini okuyun",
-  "scorecard.fallback": "Olgunluk boyutları yukarıda tablo halinde verilmiştir. Kurumunuzu etkileşimli olarak değerlendirmek ve sonucu dışa aktarmak için JavaScript'i etkinleştirin.",
-  "footer.title.contact": "İletişim",
-  "footer.contact.location": "Londra, Birleşik Krallık",
-  "footer.contact.response": "İlk yanıt genellikle 48 saat içinde",
-  "footer.newsletter.link": "Banking On Quantum'a abone olun",
-  "nav.workWithMe": "Birlikte çalışalım",
-  "nav.research": "Araştırma iş birliği",
-  "nav.openSourceSupport": "Açık kaynak desteği",
-  "nav.aria.toggleWorkWithMe": "Birlikte çalışalım alt menüsünü aç/kapat",
-  "contact.privacyLine": "Mesajınız Formspree'ye gider ve bana e-postayla iletilir; spam koruması Google reCAPTCHA ile sağlanır.",
-  "contact.privacyLink": "Gizlilik bildirimi",
-  "footer.changelog": "Değişiklik günlüğü",
-  "contact.eyebrow": "İletişim",
-  "footer.mediaKit": "Basın kiti",
-  "contact.appTitle": "İletişim",
-  "nav.hubPqc": "Kuantum sonrası kriptografi",
-  "nav.hubAi": "Uygulamalı yapay zekâ"
+  "scorecard.fallback": "Olgunluk boyutları yukarıda tablo halinde verilmiştir. Kurumunuzu etkileşimli olarak değerlendirmek ve sonucu dışa aktarmak için JavaScript'i etkinleştirin."
 }

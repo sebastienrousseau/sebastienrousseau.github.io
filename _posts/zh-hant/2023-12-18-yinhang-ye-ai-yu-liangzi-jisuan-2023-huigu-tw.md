@@ -8,7 +8,6 @@ locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
 banner_alt: "銀行業 AI 與量子計算 2023 年回顧"
 keywords: "AI, 量子計算, 銀行業, HSBC, QKD, LLaMA 2, Mixtral, GPT-NeoX, AI 治理, 布萊切利宣言"
-seo_title: "銀行業 AI：2023 年 AI 與量子運算現況"
 ---
 
 ## 洞察

@@ -98,7 +98,6 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "In my previous article, [Protecting Data in the Quantum Age ⧉][03], I delved into the impending threat of quantum computing to digital security and looked at how quantum-resistant cryptography…"
 last_reviewed: "2026-05-11"
-seo_title: "CRYSTALS-Kyber Explained: Key Encapsulation for Quantum Age"
 ---
 
 

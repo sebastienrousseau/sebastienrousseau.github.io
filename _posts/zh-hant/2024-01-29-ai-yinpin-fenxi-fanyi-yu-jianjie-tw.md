@@ -1,14 +1,13 @@
 ---
 title: "AI 驅動的音訊分析、翻譯與洞察"
 subtitle: "探索由 Azure AI 驅動的 Audio Analyser 如何變革語音轉文字、文字分析與翻譯，提取可執行洞察"
-description: "Audio Analyser 如何運用 Azure 認知服務的語音轉文字與文字分析功能，把音訊轉換為附帶情感分析、關鍵字擷取與多語言翻譯的完整逐字稿。"
+description: "Audio Analyser 藉助 Microsoft Azure AI 實現音訊轉錄、情感分析、翻譯與可執行洞察，加速決策。"
 date: "January 29, 2024"
 language: "zh-Hant"
 locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp"
 banner_alt: "極簡現代化的企業辦公室"
 keywords: "Audio Analyser, Azure AI, 語音轉文字, 自然語言處理, 情感分析, 多語言翻譯, 客戶服務, 市場研究, 醫療, 金融"
-seo_title: "Azure 認知服務音訊分析：語音與 NLP"
 ---
 
 [**Audio Analyser ⧉**][00] 藉助 Microsoft Azure AI 平臺，重新定義了音訊資料分析的格局。該工具提供先進的語音轉文字、全面的文字分析、可執行洞察與無縫翻譯，高效地從音訊資料中提供關鍵的詳細分析。它對市場研究、聯絡中心、客戶服務、醫療、銀行與金融等行業是必不可少的資產，正在變革我們解讀和利用音訊資訊的方式。

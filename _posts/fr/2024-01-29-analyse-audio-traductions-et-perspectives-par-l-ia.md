@@ -1,14 +1,13 @@
 ---
 title: "Analyse, traduction et insights audio propulsés par l'IA"
 subtitle: "Révolutionner le traitement des données audio avec Azure AI Platform"
-description: "Audio Analyser utilise la reconnaissance vocale et Text Analytics d'Azure Cognitive Services pour des transcriptions avec sentiment, mots-clés et traductions."
+description: "Comment Audio Analyser, propulsé par Azure AI, transforme la conversion speech-to-text, l'analyse de texte et les traductions pour des insights exploitables."
 date: "January 29, 2024"
 language: "fr"
 locale: "fr_FR"
 banner: "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp"
 banner_alt: "Bureau d'entreprise moderne et minimaliste"
 keywords: "audio analyser, azure ai, speech-to-text, analyse de données audio, analyse de texte, traductions IA, insights audio, transcription automatisée, traitement de données audio, apprentissage automatique"
-seo_title: "Audio Analyser avec Azure Cognitive Services : parole et NLP"
 ---
 
 [**Audio Analyser ⧉**][00], s'appuyant sur Microsoft Azure AI Platform, redéfinit le paysage de l'analyse des données audio. Cet outil offre une conversion speech-to-text avancée, une analyse de texte exhaustive, des insights exploitables et des traductions fluides, fournissant efficacement des analytiques détaillées à partir des données audio. C'est un actif essentiel pour des secteurs comme l'étude de marché, les centres de contact, le service client, la santé, la banque et la finance, transformant la manière dont nous interprétons et utilisons l'information audio.

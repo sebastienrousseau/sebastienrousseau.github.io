@@ -8,7 +8,6 @@ locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
 banner_alt: "Banner für RustLogs (RLG)"
 keywords: "Rust Logging-Bibliothek, asynchrones Rust-Logging, strukturierte Log-Formate, Rust Anwendungs-Debugging, anpassbares Logging in Rust, Rust-Entwicklungswerkzeuge, RustLogs RLG Funktionen, effizientes Rust-Logging, RustLogs Integration, RustLogs Dokumentation"
-seo_title: "RustLogs (RLG): strukturiertes Logging für Rust"
 ---
 
 ## Einleitung

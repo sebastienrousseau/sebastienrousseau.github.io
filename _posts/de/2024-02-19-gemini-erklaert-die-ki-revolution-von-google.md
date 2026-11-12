@@ -1,14 +1,13 @@
 ---
 title: "Gemini 1.5 entschlüsselt: die KI-Revolution von Google erklärt"
 subtitle: "Eingehender Blick auf den jüngsten KI-Durchbruch von Google"
-description: "Googles Gemini 1.5 erweitert das Kontextfenster auf über eine Million Token. Was das für Retrieval-Augmented Finance bringt und welche Zielkonflikte bestehen."
+description: "Googles Gemini 1.5 skaliert das Kontextfenster über die 1-Million-Token-Marke hinaus. Was das für retrieval-augmentierte Finanzanwendungen freischaltet — und welche Kompromisse zu kennen sind."
 date: "February 19, 2024"
 language: "de"
 locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp"
 banner_alt: "Abstrakte Visualisierung von KI-Netzwerken — als Sinnbild der Fähigkeiten von Gemini 1.5"
 keywords: "Gemini 1.5, Google AI, Mixture-of-Experts-Architektur, Recheneffizienz, Erweiterung des Kontextfensters, KI-Innovation, Transformation der Datenanalyse, In-Context-Learning, KI-Anwendungsfälle, Technologierevolution"
-seo_title: "Gemini 1.5 erklärt: Googles Kontextfenster mit 1 Mio. Token"
 ---
 
 [**Googles Gemini 1.5 ⧉**][00] markiert einen bedeutenden Fortschritt in der KI, verbessert die Effizienz und die Fähigkeit, große Informationsmengen zu verarbeiten. Dieses Sprachmodell übertrifft seinen Vorgänger Gemini 1.0 und leitet eine neue Ära der Rechenleistung und der Nutzung von KI-Modellen ein. Erkunden wir das transformative Potenzial von Gemini 1.5 und seine Implikationen für die Zukunft der KI-Innovation.

@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Oct 01, 2023"
-description: "The Terms of Use for this website: the agreement you accept by using the site, and why you should not use it if you do not agree to these terms and conditions."
+description: "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations."
 format-detection: "telephone=no"
 form-id: ""
 hreflang: "en"
@@ -97,7 +97,7 @@ site_last_updated: "2023-07-05"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Sebastien Rousseau, Sebastien Rousseau Builder, Sebastien Rousseau CLI, Sebastien Rousseau Templates, Sebastien Rousseau Themes"
 site_software: "Static Site Generator, Rust"
-seo_title: "Terms of Use: Website Terms and Conditions for This Site"
+
 ---
 
 ## Agreement to Terms of Use

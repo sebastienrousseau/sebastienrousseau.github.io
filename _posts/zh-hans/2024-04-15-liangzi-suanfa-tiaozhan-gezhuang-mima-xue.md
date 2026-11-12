@@ -8,7 +8,6 @@ locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
 banner_alt: "数字蓝色空间中网络节点的横幅"
 keywords: "量子算法, LWE, 格密码学, 陈逸雷, GapSVP, SIVP, 后量子密码学, 量子傅里叶变换, 高斯函数, 安全"
-seo_title: "量子计算算法挑战格密码学"
 ---
 
 ## 执行摘要

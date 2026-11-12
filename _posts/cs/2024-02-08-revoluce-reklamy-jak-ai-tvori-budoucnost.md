@@ -1,14 +1,13 @@
 ---
 title: "Generativní AI v reklamě: Amazon Rufus a Meta"
 subtitle: "Jak AI proměňuje interakce se zákazníky a dynamiku reklamy"
-description: "Jak AI v reklamě mění zapojení zákazníků, s poznatky o nákupním asistentovi Rufus od Amazonu a nejnovějším vývoji generativní AI ve společnosti Meta."
+description: "Jak AI proměňuje reklamu: poznatky o Amazon Rufus a nejnovějším vývoji společnosti Meta. Zjistěte, jaký má dopad na zapojení zákazníků."
 date: "February 08, 2024"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/advertising-ai.webp"
 banner_alt: "Robotická žena s motýly a květinami"
 keywords: "AI v reklamě, Amazon Rufus, nástroje AI od Meta, cílení na zákazníky, reklamní technologie, AI chatboti, trendy digitálního marketingu, analytika AI, kreativní AI, optimalizace reklamních kampaní"
-seo_title: "AI v reklamě: Amazon Rufus, Meta a generativní AI"
 ---
 
 

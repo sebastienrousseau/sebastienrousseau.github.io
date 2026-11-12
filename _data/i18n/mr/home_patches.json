@@ -165,8 +165,8 @@
       "<a class=pill href=\"/mr/articles/index.html\">अलीकडील संशोधन वाचा</a>"
     ],
     [
-      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"\\1\" href=\"/mr/contact/index.html\">संपर्क साधा</a>"
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/mr/contact/index.html\">संपर्क साधा</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -355,50 +355,6 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">ISO 20022 लायब्ररी एक्सप्लोर करा <span"
-    ],
-    [
-      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
-      ">क्वांटम युगात बँकांना विश्वास ठेवता येईल अशी पेमेंट पायाभूत सुविधा.</h1>"
-    ],
-    [
-      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
-      ">मी HSBC मध्ये होलसेल पेमेंट्स API उत्पादनांचे नेतृत्व करतो आणि बँका व फिनटेक तपासू, चाचणी करू आणि पुन्हा वापरू शकतील अशी ओपन-सोर्स ISO 20022 आणि पोस्ट-क्वांटम साधने तयार करतो.</p>"
-    ],
-    [
-      ">Read the research</a>",
-      ">संशोधन वाचा</a>"
-    ],
-    [
-      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
-      ">EPAA श्वेतपत्रिकेचे योगदानकर्ता · फेलो, Institution of Analysts and Programmers</p>"
-    ],
-    [
-      ">Payments and digital products, built at:</p>",
-      ">पेमेंट्स आणि डिजिटल उत्पादने, जिथे तयार केली:</p>"
-    ],
-    [
-      "<p class=\"feat-eyebrow\">Recognition</p>",
-      "<p class=\"feat-eyebrow\">सन्मान</p>"
-    ],
-    [
-      ">Recognition and featured work\\.</h2>",
-      ">सन्मान आणि निवडक कार्य.</h2>"
-    ],
-    [
-      "aria-label=\"Recognition\"",
-      "aria-label=\"सन्मान\""
-    ],
-    [
-      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
-      "<li>Institution of Analysts and Programmers चे फेलो (FIAP)</li>"
-    ],
-    [
-      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
-      ">पेमेंट्स, क्वांटम-सुरक्षा किंवा ISO 20022 वर काम करत आहात?</h2>"
-    ],
-    [
-      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
-      ">तुम्ही काय तयार करत आहात ते मला सांगा. पहिला प्रतिसाद साधारणपणे 48 तासांच्या आत मिळतो.</p>"
     ]
   ]
 }

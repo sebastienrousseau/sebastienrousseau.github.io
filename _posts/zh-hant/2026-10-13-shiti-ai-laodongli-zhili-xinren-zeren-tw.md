@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Kier Group 與英國標準協會（BSI）的領導者如何推動實體 AI 治理：維護第一線員工的信任、管理人機之間的交接，以及合理分配營運責任。"
+description: "在倫敦舉行的Economist Enterprise Physical AI and Robotics Summit上，Kier Group與英國標準協會（BSI）的領導者討論了自主系統的迫切治理難題：如何贏得第一線信任、化解「黑暗面自主」，並在營造、基礎建設和重工業中分配營運責任。"
 format-detection: "telephone=no"
 hreflang: "zh-hant"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "讓自主運動的實體機器與人類勞動力並肩工作，會帶來純軟體從未遇過的嚴重心理與法律風險。在Economist Enterprise Physical AI and Robotics Summit上，Kier Group與英國標準協會（BSI）的領導者提出了實體AI的治理藍圖。"
 last_reviewed: "2026-10-13"
-seo_title: "實體 AI 與勞動力治理：信任與責任"
 ---
 
 企業軟體出問題時，會損壞資料庫、中斷網路連線或洩漏權杖。實體AI系統出問題時，數百公斤的多關節鋼件、高扭力油壓致動器或自主土方機具，會撞上實體基礎設施或人的身體。2026年10月13日在倫敦Convene 200 Aldersgate舉行的Economist Enterprise Physical AI and Robotics Summit上，一場高規格的座談聚焦工業自主化在營運、倫理與法律上的迫切前沿：當智慧機器走上第一線，如何維持勞動力的信任，如何減少認知層面的交接失敗，又如何建立在法律上站得住腳的責任架構。

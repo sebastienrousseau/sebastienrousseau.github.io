@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp"
 banner_alt: "ドックから見た HSBC タワー"
 keywords: "QKD, 量子鍵配送, 量子暗号, BB84, BBM92, 量子ネットワーク, 銀行セキュリティ, 量子インターネット"
 last_reviewed: "2026-05-11"
-seo_title: "量子鍵配送（QKD）：銀行のセキュリティを解説"
 ---
 
 ![ドックから見た HSBC タワー](https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp).class=\"img-fluid clearfix\"

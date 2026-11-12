@@ -8,7 +8,6 @@ locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Le Chat di Mistral AI"
 keywords: "Mistral, Le Chat, IA conversazionale, Francia, Europa, sovranità, LLM"
-seo_title: "Le Chat di Mistral AI: un'IA conversazionale multilingue"
 ---
 
 ---

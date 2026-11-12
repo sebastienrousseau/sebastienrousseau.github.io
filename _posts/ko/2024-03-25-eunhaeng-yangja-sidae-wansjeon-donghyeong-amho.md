@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "암호화된 데이터와 양자 컴퓨터"
 keywords: "완전 동형 암호, FHE, 양자 안전, 은행, 프라이버시, 클라우드 컴퓨팅, ML-FHE"
 last_reviewed: "2026-05-16"
-seo_title: "은행 데이터 보안을 위한 완전 동형 암호(FHE)"
 ---
 
 ![암호화된 데이터와 양자 컴퓨터](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

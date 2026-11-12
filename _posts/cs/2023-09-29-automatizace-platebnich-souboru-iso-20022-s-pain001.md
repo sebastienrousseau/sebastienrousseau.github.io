@@ -1,14 +1,13 @@
 ---
 title: "Automatizace tvorby platebních souborů ISO 20022 pomocí pain001"
 subtitle: "Automatizace plateb podle ISO 20022 a inženýrství velkoobchodních plateb s pain001."
-description: "Jak pain001, open-source knihovna v jazyce Python, vytváří platební soubory ISO 20022 pain.001 z dat v CSV nebo SQLite a jak funguje struktura zprávy."
+description: "Automatizujte tvorbu platebních souborů ISO 20022 pain.001 z CSV nebo SQLite. pain001 je open-source knihovna v jazyce Python, která zjednodušuje soulad s předpisy."
 date: "September 29, 2023"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp"
 banner_alt: "Vypnutý notebook na hnědém dřevěném stole"
 keywords: "pain001, ISO 20022, pain.001.001.09, CustomerCreditTransferInitiation, SEPA Credit Transfer, CBPR+, automatizace plateb, generování XML, validace XSD, GrpHdr, PmtInf, CdtTrfTxInf, CtrlSum, SWIFT"
-seo_title: "pain001: automatizace platebních souborů ISO 20022 v Pythonu"
 ---
 
 

@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "May 15, 2026"
-description: "BlackRock filed BRSRV and BSTBL as money market funds that act like yield-bearing dollars. Learn how they work around GENIUS Act limits on stablecoin yield."
+description: "Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars. A close reading of BRSRV, BSTBL, and the OCC rulemaking they respond to."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -99,7 +99,6 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than…"
 last_reviewed: "2026-05-15"
-seo_title: "BlackRock BRSRV and BSTBL: Tokenised Money Funds Decoded"
 ---
 
 Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars on a public blockchain.

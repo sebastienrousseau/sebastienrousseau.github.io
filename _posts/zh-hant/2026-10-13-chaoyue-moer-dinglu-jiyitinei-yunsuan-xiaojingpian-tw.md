@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Mythic AI 的 Taner Ozcelik 如何看待記憶體內運算與模組化小晶片為邊緣機器人、國防與汽車平台打破記憶體牆，突破馮紐曼架構的瓶頸。"
+description: "在倫敦舉行的Economist Enterprise Physical AI and Robotics Summit上，Mythic AI董事長暨執行長Taner Ozcelik說明了記憶體內運算架構與模組化小晶片如何突破馮紐曼記憶體牆，為邊緣機器人帶來10倍至1000倍的能源效率。"
 format-detection: "telephone=no"
 hreflang: "zh-hant"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "實體AI無法靠700瓦的資料中心GPU擴大規模。在Economist Enterprise Physical AI and Robotics Summit上，Mythic AI董事長暨執行長Taner Ozcelik展示了記憶體內運算與小晶片的模組化如何拆除馮紐曼記憶體牆，在實體邊緣實現接近生物等級的能源效率。"
 last_reviewed: "2026-10-13"
-seo_title: "超越摩爾定律：邊緣機器人的記憶體內運算與小晶片"
 ---
 
 半個多世紀以來，運算的進步一直遵循摩爾定律：每十八到二十四個月，在矽晶片上塞進兩倍的電晶體。然而，在實體AI與自主機器人這個新興領域，摩爾定律已經撞上了熱力學定律。自主無人機、四足機器人、手術機械手臂和自動駕駛車輛，都無法背負700瓦的伺服器級GPU或冷卻塔。2026年10月13日，在倫敦舉行的Economist Enterprise Physical AI and Robotics Summit上，Mythic AI董事長暨執行長Taner Ozcelik與Kenneth Cukier進行了一場爐邊對談，探討打破這個僵局所需的架構革命：透過類比記憶體內運算（CIM）與模組化小晶片，超越摩爾定律。

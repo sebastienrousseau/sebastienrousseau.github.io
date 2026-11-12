@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "ブリュッセル EU 議会"
 keywords: "EU AI 法, AI 規制, ガバナンス, リスク分類, コンプライアンス, GDPR, AI 監督"
 last_reviewed: "2026-05-11"
-seo_title: "EU AI 法解説：リスク階層型の世界的 AI 規制"
 ---
 
 ![ブリュッセル EU 議会](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

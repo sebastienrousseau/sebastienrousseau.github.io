@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "How leaders from Kier Group and BSI approach physical AI governance: keeping workforce trust, managing human-machine handovers and allocating liability."
+description: "At the Economist Enterprise Physical AI and Robotics Summit in London, industrial leaders from Kier Group and the British Standards Institution (BSI) addressed the urgent governance challenges of autonomous systems. Examine how to navigate workforce trust, mitigate 'dark side autonomy' during human-machine handovers, and allocate operational liability across construction, infrastructure, and heavy industry."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -100,7 +100,6 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Deploying autonomous physical machines alongside human workforces introduces acute psychological and legal hazards that pure software never encountered. At the Economist Enterprise Physical AI and Robotics Summit, leaders from Kier Group and the British Standards Institution (BSI) established the governance blueprint for physical AI."
 last_reviewed: "2026-10-13"
-seo_title: "Physical AI and Workforce Governance: Trust and Liability"
 ---
 
 When enterprise software fails, it corrupts a database, drops a network connection, or leaks a token. When a physical AI system fails, hundreds of kilograms of articulated steel, high-torque hydraulic actuators, or autonomous earthmoving machinery collide with physical infrastructure or human bodies. At the Economist Enterprise Physical AI and Robotics Summit held at Convene 200 Aldersgate in London on 13 October 2026, a high-level panel gathered to address the urgent operational, ethical, and legal frontiers of industrial autonomy: how to maintain workforce trust, mitigate cognitive handover failures, and establish legally defensible liability frameworks as intelligent machines take the frontline.

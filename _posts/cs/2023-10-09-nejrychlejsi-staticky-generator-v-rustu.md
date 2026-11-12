@@ -8,7 +8,6 @@ locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
 banner_alt: "Vypnutý notebook na bílém stole se sklenicí vody vlevo a perem, poznámkovým blokem a rostlinou vpravo"
 keywords: "Static Site Generator, generátor statických webů, SSG, Rust, výkon, SEO, přístupnost, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS"
-seo_title: "Static Site Generator: rychlý generátor webů v Rustu"
 ---
 
 

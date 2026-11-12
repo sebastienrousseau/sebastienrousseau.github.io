@@ -1,14 +1,13 @@
 ---
 title: "Scoprire Gemini: la rivoluzione IA di Google spiegata"
 subtitle: "Architettura, capacità e posizionamento del modello multimodale di Google"
-description: "Gemini 1.5 di Google porta il contesto oltre un milione di token. Cosa rende possibile per la finanza basata sul retrieval e quali compromessi conoscere."
+description: "Una panoramica del modello Gemini di Google: architettura multimodale nativa, capacità misurate, casi d'uso e posizionamento rispetto a GPT-4 e Claude."
 date: "February 19, 2024"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp"
 banner_alt: "Google Gemini"
 keywords: "Gemini, Google, IA, multimodale, GPT-4, Claude, LLM"
-seo_title: "Gemini 1.5 spiegato: oltre un milione di token di contesto"
 ---
 
 ---

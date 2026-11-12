@@ -8,7 +8,6 @@ locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
 banner_alt: "Calcolo matematico"
 keywords: "Rust, matematica, crittografia, costanti, precisione, calcolo scientifico"
-seo_title: "Costanti matematiche in Rust: la libreria Common (CMN)"
 ---
 
 ![Calcolo matematico](https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp).class=\"img-fluid clearfix\"

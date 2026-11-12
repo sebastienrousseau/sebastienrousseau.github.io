@@ -1,14 +1,13 @@
 ---
 title: "Mettere in sicurezza il libro mastro: migrazione post-quantum nella finanza aziendale"
 subtitle: "Un piano pratico per i CFO e i tesorieri"
-description: "Guida per il board sulla migrazione post-quantum nella finanza aziendale: roadmap del G7, tempi di UE, Regno Unito e Australia e lezioni di BIS Project Leap."
+description: "Una guida pratica alla migrazione post-quantistica per la finanza aziendale: inventory crittografico, valutazione dei rischi, piani di transizione e governance."
 date: "May 14, 2026"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "Migrazione post-quantum nella finanza aziendale"
 keywords: "post-quantum, finanza aziendale, CFO, tesoreria, migrazione crittografica, inventory, governance"
-seo_title: "Crittografia post-quantum: guida per il board della finanza"
 ---
 
 Il rischio quantistico ha pasado della curiosidad académica al mandato normativo activo. Con la roadmap del G7 pubblicata in enero di 2026, i calendarios della UE, il Reino Unido e Australia ora aclarados, e BIS Project Leap che ha demostrado la viabilidad in un sistema di pagamento real, la cuestión per i consejos di administración già non è se bisogna migrar, sino se la migración può completarse prima di che la vida útil crittografica dei dati di hoy expire.

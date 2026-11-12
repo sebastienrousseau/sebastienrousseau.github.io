@@ -1,14 +1,13 @@
 ---
 title: "Audio Analyser: Azure Speech, NLP a pipeline pro překlad"
 subtitle: "Architektura a pipeline nástroje pro řečovou analytiku postaveného na Azure"
-description: "Jak Audio Analyser využívá převod řeči na text a Text Analytics z Azure Cognitive Services k tvorbě přepisů se sentimentem, klíčovými slovy a překlady."
+description: "Audio Analyser využívá neuronové modely speech-to-text z Azure Cognitive Services, NLP z Text Analytics a CherryPy k převodu zvukových nahrávek na prohledávatelné přepisy se skóre sentimentu, extrakcí klíčových slov a vícejazyčnými překlady."
 date: "January 29, 2024"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp"
 banner_alt: "Minimalistická, moderní firemní kancelář"
 keywords: "Azure Cognitive Services, speech-to-text, neuronový akustický model, Azure Text Analytics, zpracování přirozeného jazyka, analýza sentimentu, CherryPy, batch transcription API, vícejazyčné ASR, Azure Translator, přepis zvuku, zpracování zvuku v Pythonu"
-seo_title: "Audio Analyser s Azure Cognitive Services: řeč a NLP"
 ---
 
 

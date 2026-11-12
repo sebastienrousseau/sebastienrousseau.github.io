@@ -1,7 +1,7 @@
 ---
 title: "생성 AI 탐구"
 subtitle: "대규모 언어 모델, 확산 모델, 엔터프라이즈 배포 개관"
-description: "생성 AI와 트랜스포머 아키텍처의 작동 원리, 금융 서비스에서 가장 먼저 적용되는 분야, 그리고 던져야 할 윤리적·아키텍처적 질문을 알아봅니다."
+description: "생성 AI가 이미지, 텍스트, 음성, 코드에서 어떻게 작동하는지, 엔터프라이즈 응용을 위한 실무적 고려 사항."
 date: "November 12, 2023"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "AI와 인간의 상호작용을 표현한 추상적 비주얼"
 keywords: "생성 AI, LLM, 대규모 언어 모델, 확산 모델, GPT, Claude, Gemini, 엔터프라이즈 AI"
 last_reviewed: "2026-05-16"
-seo_title: "생성 AI 해설: 작동 원리와 적용 분야"
 ---
 
 ![AI와 인간의 상호작용을 표현한 추상적 비주얼](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

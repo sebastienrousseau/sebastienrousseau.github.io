@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "How Mythic AI's Taner Ozcelik sees in-memory compute and modular chiplets breaking the memory wall for edge robotics, defence and automotive platforms."
+description: "At the Economist Enterprise Physical AI and Robotics Summit in London, Mythic AI Chairman and CEO Taner Ozcelik revealed how in-memory compute architecture and modular chiplets are breaking through the Von Neumann memory wall. Learn how transistor-level analog matrix multiplication delivers 10x to 1000x energy efficiency gains for edge robotics, tactical defence, and automotive platforms."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -100,7 +100,6 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Physical AI cannot scale on 700W data-centre GPUs. At the Economist Enterprise Physical AI and Robotics Summit, Mythic AI Chairman and CEO Taner Ozcelik demonstrated how in-memory compute and chiplet modularity collapse the Von Neumann memory wall to deliver biological-grade efficiency at the physical edge."
 last_reviewed: "2026-10-13"
-seo_title: "In-Memory Compute and Chiplets for Edge Robotics Past Moore"
 ---
 
 For more than half a century, computing progress obeyed Moore's Law: cramming twice as many transistors onto silicon every eighteen to twenty-four months. But in the emerging domain of physical AI and autonomous robotics, Moore's Law has collided with the laws of thermodynamics. Autonomous drones, robotic quadrupeds, surgical manipulators, and self-driving vehicles cannot haul 700-watt server-class GPUs or cooling towers. At the Economist Enterprise Physical AI and Robotics Summit in London on 13 October 2026, Taner Ozcelik, Chairman and Chief Executive of Mythic AI, joined Kenneth Cukier for a fireside chat examining the architectural revolution required to break this deadlock: moving past Moore's Law through analog compute-in-memory (CIM) and modular chiplets.

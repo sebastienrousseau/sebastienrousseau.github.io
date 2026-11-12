@@ -92,21 +92,5 @@
   "scorecard.downloaded": "スコアカード画像をダウンロードしました",
   "scorecard.radarTitle": "準備状況レーダー",
   "scorecard.methodology": "指数の完全な方法論を読む",
-  "scorecard.fallback": "成熟度ディメンションは上の表にまとめられています。JavaScriptを有効にすると、貴機関をインタラクティブに評価し、結果をエクスポートできます。",
-  "footer.title.contact": "お問い合わせ",
-  "footer.contact.location": "英国ロンドン",
-  "footer.contact.response": "通常48時間以内に初回返信",
-  "footer.newsletter.link": "Banking On Quantum を購読する",
-  "nav.workWithMe": "協業について",
-  "nav.research": "共同研究",
-  "nav.openSourceSupport": "オープンソース支援",
-  "nav.aria.toggleWorkWithMe": "協業についてのサブメニューを切り替える",
-  "contact.privacyLine": "メッセージは Formspree 経由で私にメール送信されます。スパム対策には Google reCAPTCHA を使用しています。",
-  "contact.privacyLink": "プライバシー通知",
-  "footer.changelog": "変更履歴",
-  "contact.eyebrow": "お問い合わせ",
-  "footer.mediaKit": "メディアキット",
-  "contact.appTitle": "お問い合わせ",
-  "nav.hubPqc": "耐量子暗号",
-  "nav.hubAi": "応用AI"
+  "scorecard.fallback": "成熟度ディメンションは上の表にまとめられています。JavaScriptを有効にすると、貴機関をインタラクティブに評価し、結果をエクスポートできます。"
 }

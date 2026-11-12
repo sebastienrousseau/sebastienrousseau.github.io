@@ -8,7 +8,6 @@ locale: "fr_FR"
 banner: "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp"
 banner_alt: "Bannière du chiffrement entièrement homomorphe"
 keywords: "chiffrement entièrement homomorphe, sécurité bancaire, calcul quantique, chiffrement de données financières, FHE, RGPD, CCPA, conformité, calcul cloud, IA et confidentialité, LLM chiffré, Zama, Gentry"
-seo_title: "Chiffrement homomorphe (FHE) et données bancaires"
 ---
 
 Le **chiffrement entièrement homomorphe (FHE — Fully Homomorphic Encryption)** promet de redéfinir la sécurité des données dans la banque et la finance. En permettant des calculs sur des données chiffrées, le FHE protège la confidentialité face aux menaces conventionnelles et quantiques.

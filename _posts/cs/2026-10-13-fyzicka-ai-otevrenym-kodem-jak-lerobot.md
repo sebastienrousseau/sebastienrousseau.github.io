@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Jak Hugging Face LeRobot s otevřenými modely, end-to-end imitačním učením a hardwarem za 200 dolarů posouvá robotiku od programování úkolů k učení."
+description: "Na summitu The Economist o fyzické AI v Londýně Pepijn Kooijmans ukázal, jak LeRobot, otevřené základní modely a ramena za 200 USD snižují bariéry v robotice."
 format-detection: "telephone=no"
 hreflang: "cs"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Vývoj robotiky byl dlouho uzavřen za hardwarem se šesticifernou cenou a křehkou, ručně psanou kinematikou. Na Economist Enterprise Physical AI and Robotics Summit vedoucí LeRobot v Hugging Face Pepijn Kooijmans ukázal, jak otevřené základní modely a hardware za 200 USD otevírají celé odvětví."
 last_reviewed: "2026-10-13"
-seo_title: "Hugging Face LeRobot a fyzická AI s otevřeným kódem"
 ---
 
 Šest desetiletí se průmyslová robotika řídila nemilosrdným paradigmatem: inženýr výslovně naprogramuje každý milimetr pohybu stroje pomocí proprietárních jazyků, programovacích panelů a rigidních kinematických řešičů. Pokud se obrobek posune o pět milimetrů nebo se změní osvětlení, robot ohlásí chybu. Na Economist Enterprise Physical AI and Robotics Summit v Londýně 13. října 2026 představil Pepijn Kooijmans, vedoucí LeRobot v Hugging Face, alternativní architekturu, která toto dědictví rozebírá: „Budoucí roboty nebudeme programovat úlohu po úloze. Budou se učit.“

@@ -8,7 +8,6 @@ locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp"
 banner_alt: "Cifratura omomorfica e quantum"
 keywords: "FHE, cifratura omomorfica, banking, post-quantistica, privacy, calcolo sicuro"
-seo_title: "Cifratura completamente omomorfica (FHE) per dati bancari"
 ---
 
 ---

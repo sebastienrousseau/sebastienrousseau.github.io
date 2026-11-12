@@ -12,7 +12,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [0.0.37] - Unreleased
 
-Release notes that list every merged pull request.
+Back to the v0.0.35 site, rollback in minutes, and release notes that list every merged pull request.
+
+### Reverted
+
+- **v0.0.36 (design v3 and the rest of that release)**: pages rendered incorrectly in production, so this release returns the site, its build scripts, layouts, tests and visual baselines to v0.0.35, the version live since the rollback. Kept from v0.0.36: the `contact@sebastienrousseau.com` address in `security.txt`, `SECURITY.md`, `CODE_OF_CONDUCT.md` and `SUPPORT.md`, and the Dependabot updates to the CodeQL, Scorecard and cosign actions and the dev requirements. Removed with it: `backup.yml`, `docs/runbook-restore.md` and the 30-day build artifacts, except the Pages artifact, which `rollback.yml` needs.
 
 ### Added
 

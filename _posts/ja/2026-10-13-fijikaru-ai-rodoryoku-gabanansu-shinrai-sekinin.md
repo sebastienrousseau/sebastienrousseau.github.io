@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Kier Group と BSI のリーダーが語るフィジカル AI のガバナンス。現場の信頼を保ち、人と機械の引き継ぎを管理し、責任を配分する方法を解説。"
+description: "ロンドンのEconomist Enterprise Physical AI and Robotics Summitで、Kier GroupとBSIのリーダーが自律システムのガバナンスを論じた。現場の信頼、「ダークサイド・オートノミー」、運用上の責任配分を考える。"
 format-detection: "telephone=no"
 hreflang: "ja"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "自律的に動く物理的な機械を人間の労働力と並べて配置すると、純粋なソフトウェアが一度も直面しなかった深刻な心理的・法的リスクが生じる。Economist Enterprise Physical AI and Robotics Summitで、Kier Groupと英国規格協会（BSI）のリーダーたちは、フィジカルAIのためのガバナンスの青写真を示した。"
 last_reviewed: "2026-10-13"
-seo_title: "フィジカル AI と労働力ガバナンス：信頼と責任"
 ---
 
 企業向けソフトウェアが故障すると、データベースが壊れ、ネットワーク接続が切れ、トークンが漏れる。フィジカルAIシステムが故障すると、数百キログラムの多関節の鋼材、高トルクの油圧アクチュエータ、あるいは自律式の土工機械が、物理的なインフラや人の体に衝突する。2026年10月13日にロンドンのConvene 200 Aldersgateで開かれたEconomist Enterprise Physical AI and Robotics Summitでは、ハイレベルなパネルが集まり、産業の自律化がもたらす運用上、倫理上、法律上の切迫した最前線に取り組んだ。知能を持つ機械が現場の最前線に立つなかで、どうやって労働力の信頼を保ち、認知面の引き継ぎの失敗を減らし、法的に弁護できる責任の枠組みを確立するのか、という問題である。

@@ -8,7 +8,6 @@ locale: "es_ES"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp"
 banner_alt: "Un ordenador cuántico moderno y depurado"
 keywords: "computación cuántica, criptografía resistente a lo cuántico, CRYSTALS-Kyber, criptografía, seguridad, banca, finanzas, cifrado, protección de datos, perdurabilidad"
-seo_title: "CRYSTALS-Kyber: encapsulación de claves en la era cuántica"
 ---
 
 ![AI, Artificial Intelligence concept,3d rendering,conceptual image](https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp).class=\"img-fluid clearfix\"

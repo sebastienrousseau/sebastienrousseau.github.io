@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "항공우주와 자동화 업계 리더들이 공장 현장의 휴머노이드 로봇을 의심하는 이유, 완전 무인화가 착각인 이유, 그리고 형태가 기능을 따라야 하는 이유."
+description: "런던의 Economist Enterprise Physical AI and Robotics Summit에서 항공우주와 자동화 리더들이 휴머노이드 열풍에 이의를 제기했다. 완전 무인화가 왜 산업적 착각인지, 사람이 개입하는 10%의 생산성 향상이 왜 곧바로 수익을 내는지 살펴본다."
 format-detection: "telephone=no"
 hreflang: "ko"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "런던의 Economist Enterprise Physical AI and Robotics Summit에서 항공우주와 제조 분야의 리더들은 범용 휴머노이드 로봇에 관한 실리콘밸리식 서사를 해체했다. 벤처 자본이 이족 보행 형태에 수십억 달러를 쏟아붓는 동안, 산업의 현실은 형태가 엄격하게 기능을 따라야 함을 보여 준다."
 last_reviewed: "2026-10-13"
-seo_title: "제조 현장의 휴머노이드 대 기능형 로봇"
 ---
 
 2026년 10월 13일 런던 Convene 200 Aldersgate에서 열린 Economist Enterprise Physical AI and Robotics Summit에 제조 기업 경영진, 항공우주 엔지니어, 로봇 공학자들이 모여 현대 자동화의 근본적인 분열을 다뤘다. 로봇은 인간의 몸을 모방해야 하는가, 아니면 기계의 형태가 산업의 물리를 엄격하게 따라야 하는가? 벤처 자본이 모든 노동을 대체하겠다고 약속하는 이족 보행 휴머노이드에 계속 수십억 달러를 쏟아붓는 가운데, Airbus와 Leonardo, 그리고 학계 연구 현장에서 온 실무자들은 실증에 근거한 냉정한 현실 점검을 내놓았다.

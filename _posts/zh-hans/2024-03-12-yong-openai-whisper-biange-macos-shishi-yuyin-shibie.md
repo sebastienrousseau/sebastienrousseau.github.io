@@ -8,7 +8,6 @@ locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/research-paper.webp"
 banner_alt: "实时自动语音识别（ASR）横幅"
 keywords: "OpenAI Whisper, ASR, 语音识别, Metal Performance Shaders, MPS, macOS, GPU, 实时, 隐私, 设备端"
-seo_title: "macOS 版 OpenAI Whisper：实时语音识别"
 ---
 
 本文概述了一篇[**研究论文**][00]，探讨在 macOS 上将 OpenAI Whisper 与 Metal Performance Shaders（MPS）整合的方法，为实时语音识别提供新路径。OpenAI Whisper 是一种先进的自动语音识别（ASR）模型，在多样化的音频大型数据集上训练，能用多种语言转录语音。Whisper 先进的神经网络架构与 MPS 的 GPU 加速结合，提升了设备端语音处理的速度与准确性，增强用户隐私与便利，同时为应用开发者直接在 macOS 应用中加入实时语音转文本能力开辟新可能。

@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
 banner_alt: "茶色の木製テーブル上の電源オフのラップトップ"
 keywords: "ERC-20, イーサリアム, スマートコントラクト, トークン, ICO, DeFi, ステーブルコイン, トークン化, イーサリアム改善提案"
 last_reviewed: "2026-05-11"
-seo_title: "ERC-20 解説：イーサリアムのトークン標準"
 ---
 
 ![茶色の木製テーブル上の電源オフのラップトップ](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"

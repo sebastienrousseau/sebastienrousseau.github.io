@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Apr 01, 2024"
-description: "Open-source Python and Rust libraries for ISO 20022 payments, post-quantum cryptography and financial data, under Apache-2.0 or MIT licences, free to use."
+description: "Open-source Python and Rust libraries for ISO 20022 payments, post-quantum cryptography and financial data. Apache-2.0 / MIT, free to use."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -96,7 +96,7 @@ site_last_updated: "2024-04-01"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-seo_title: "Open-Source Libraries for ISO 20022, Post-Quantum and Data"
+
 ---
 
 <section class="proof-rail projects-proof" aria-label="Open source by the numbers">

@@ -1,14 +1,13 @@
 ---
 title: "Tendenze IA 2024: prospettive e previsioni per il futuro"
 subtitle: "Le direzioni principali dell'IA per l'anno e oltre"
-description: "Tendenze IA 2024: IA generativa in finanza, modelli multimodali, LLM on-device e i cambiamenti attesi quest'anno per banking e ingegneria di prodotto."
+description: "Una panoramica delle tendenze IA per il 2024: agenti autonomi, modelli multimodali, regolamentazione UE e l'impatto sul banking e i servizi finanziari."
 date: "January 01, 2024"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"
 banner_alt: "Vista aerea con drone di Londra"
 keywords: "IA, 2024, tendenze, agenti, multimodale, regolamentazione, AI Act, banking"
-seo_title: "Tendenze IA 2024: IA generativa, multimodale e LLM on-device"
 ---
 
 ---

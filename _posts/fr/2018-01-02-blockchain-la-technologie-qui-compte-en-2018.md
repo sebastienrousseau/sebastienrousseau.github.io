@@ -1,14 +1,13 @@
 ---
 title: "Blockchain : la technologie qui compte en 2018"
 subtitle: "Cryptographie à clé privée et réseaux pair-à-pair au service de transactions sûres"
-description: "Comment une blockchain enchaîne des blocs de données, comment cryptographie et réseaux pair-à-pair sécurisent les transactions, et ce qu'elle change en finance."
+description: "Le récit du voyage extraordinaire de la sécurisation des transactions numériques par la cryptographie à clé privée et les réseaux pair-à-pair (P2P)."
 date: "January 2, 2018"
 language: "fr"
 locale: "fr_FR"
 banner: "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
 banner_alt: "Ordinateur portable éteint sur une table en bois marron"
 keywords: "blockchain, cryptomonnaie, Bitcoin, P2P, smart contract, registre distribué, finance, supply chain, identité numérique, tokenisation"
-seo_title: "Blockchain expliquée : blocs, cryptographie et réseaux P2P"
 ---
 
 ![Ordinateur portable éteint sur une table en bois marron](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"

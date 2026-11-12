@@ -1,14 +1,13 @@
 ---
 title: "Rendimento nascosto: decifrare i depositi BRSRV/BSTBL di BlackRock e il GENIUS Act"
 subtitle: "Come le stablecoin regolamentate offrono rendimento attraverso fondi monetari tokenizzati adiacenti"
-description: "BlackRock ha registrato BRSRV e BSTBL come fondi monetari che agiscono come dollari fruttiferi. Come aggirano i limiti del GENIUS Act sul rendimento."
+description: "Le stablecoin non possono pagare rendimento ai sensi del GENIUS Act. I depositi BRSRV e BSTBL di BlackRock mostrano l'aggiramento: un fondo monetario tokenizzato in parallelo a una stablecoin regolamentata per offrire rendimento attraverso un rail adiacente e conforme."
 date: "May 15, 2026"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp"
 banner_alt: "Stablecoin e tokenizzazione di fondi monetari"
 keywords: "GENIUS Act, BlackRock, BRSRV, BSTBL, stablecoin, fondo monetario, tokenizzazione, rendimento"
-seo_title: "BlackRock BRSRV e BSTBL: i fondi monetari tokenizzati"
 ---
 
 Le stablecoins non possono pagar prestazioni sotto la GENIUS Act. Il 8 di mayo di 2026, BlackRock presentó ante la SEC dos expedientes di registro per prodotti che sortean questa restricción al essere regulados come fondi monetarios e non come stablecoins, comportándose, in la cartera, come dólares on-chain portadores di prestazioni su una blockchain pública.

@@ -166,8 +166,8 @@
       "<a class=pill href=\"/zh-hant/wenzhang-tw/index.html\">閱讀最新研究</a>"
     ],
     [
-      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"\\1\" href=\"/zh-hant/lianxi-tw/index.html\">聯絡我</a>"
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/zh-hant/lianxi-tw/index.html\">聯絡我</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -356,50 +356,6 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">探索 ISO 20022 函式庫 <span"
-    ],
-    [
-      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
-      ">量子時代值得銀行信賴的支付基礎設施。</h1>"
-    ],
-    [
-      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
-      ">我在滙豐（HSBC）負責批發支付 API 產品，並開發開源的 ISO 20022 與後量子工具，供銀行與金融科技公司審查、測試與重複使用。</p>"
-    ],
-    [
-      ">Read the research</a>",
-      ">閱讀研究</a>"
-    ],
-    [
-      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
-      ">EPAA 白皮書撰稿人 · Institution of Analysts and Programmers 資深會員（Fellow）</p>"
-    ],
-    [
-      ">Payments and digital products, built at:</p>",
-      ">曾於以下機構打造支付與數位產品：</p>"
-    ],
-    [
-      "<p class=\"feat-eyebrow\">Recognition</p>",
-      "<p class=\"feat-eyebrow\">榮譽</p>"
-    ],
-    [
-      ">Recognition and featured work\\.</h2>",
-      ">榮譽與代表作品。</h2>"
-    ],
-    [
-      "aria-label=\"Recognition\"",
-      "aria-label=\"榮譽\""
-    ],
-    [
-      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
-      "<li>Institution of Analysts and Programmers 資深會員 (FIAP)</li>"
-    ],
-    [
-      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
-      ">正在從事支付、抗量子安全或 ISO 20022 相關工作？</h2>"
-    ],
-    [
-      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
-      ">告訴我你正在打造什麼。通常會在 48 小時內首次回覆。</p>"
     ]
   ]
 }

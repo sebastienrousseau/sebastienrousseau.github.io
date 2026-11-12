@@ -1,7 +1,7 @@
 ---
 title: "Express Transaction Credits 플랫폼의 개발"
 subtitle: "블록체인을 활용한 고속 국경 간 송금 플랫폼 설계"
-description: "이더리움 ERC-223 위에 EXTC 플랫폼을 구축한 방식: 토큰 아키텍처, 다중 서명 지급, 시간 잠금 송금, 담보 기반 즉시 대출까지 상세히 다룹니다."
+description: "블록체인과 암호자산을 활용한 고속 국경 간 송금 플랫폼 Express Transaction Credits의 구축."
 date: "February 15, 2018"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "야간 전자 회로 기판의 파란 빛"
 keywords: "국경 간 송금, 블록체인, 암호자산, 토큰, 스마트 컨트랙트, 결제 플랫폼, 핀테크"
 last_reviewed: "2026-05-16"
-seo_title: "EXTC 플랫폼: 이더리움 ERC-223 결제 토큰 구축"
 ---
 
 ![야간 전자 회로 기판의 파란 빛](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

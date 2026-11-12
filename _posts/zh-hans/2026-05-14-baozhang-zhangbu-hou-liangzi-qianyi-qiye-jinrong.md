@@ -1,14 +1,13 @@
 ---
 title: "保障账簿：后量子迁移面向企业金融的董事会级指南"
 subtitle: "G7 路线图与 BIS Project Leap 让后量子迁移从研究兴趣变为监管要求"
-description: "一份面向董事会的企业金融后量子密码迁移指南：涵盖 G7 路线图，欧盟、英国与澳大利亚的迁移时间表，以及 BIS Project Leap 带来的经验。"
+description: "G7 路线图与 BIS Project Leap 让后量子迁移从研究兴趣变为监管要求，董事会必须制定明确时间表。"
 date: "May 14, 2026"
 language: "zh-Hans"
 locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "后量子密码学迁移路线图——企业银行基础设施从 RSA 过渡到 ML-KEM 与 ML-DSA"
 keywords: "后量子密码学, PQC, ML-KEM, ML-DSA, FIPS 203, FIPS 204, G7, BIS Project Leap, HNDL, Mosca 方程"
-seo_title: "后量子密码学：企业金融迁移董事会指南"
 ---
 
 量子风险已从研究好奇心转变为活跃的监管要求。随着 2026 年 1 月发布的 G7 路线图、欧盟、英国和澳大利亚时间表的明确化，以及 BIS Project Leap 在实际支付系统中证明可行性，董事会的问题不再是是否迁移——而是迁移能否在当今数据的密码保质期到期之前完成。

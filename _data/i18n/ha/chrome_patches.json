@@ -91,7 +91,7 @@
     ],
     [
       "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
-      "<li><a href=\"/ha/tuntube-mu/index.html\">Tuntuɓa</a></li>"
+      "<li><a href=\"/ha/tuntube-mu/index.html\">Contact</a></li>"
     ],
     [
       "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
@@ -143,7 +143,7 @@
     ],
     [
       "<a href=\"?/contact/index\\.html\"?>Contact</a>",
-      "<a href=\"/ha/tuntube-mu/index.html\">Tuntuɓa</a>"
+      "<a href=\"/ha/tuntube-mu/index.html\">Contact</a>"
     ],
     [
       "<a href=\"?/articles/index\\.html\"?>Articles</a>",

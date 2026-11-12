@@ -1,7 +1,7 @@
 ---
 title: "멀티모달 LLM으로 AI를 진전시키다: MM1로부터의 통찰"
 subtitle: "Apple의 MM1 논문이 멀티모달 AI 설계를 재구성하다"
-description: "멀티모달 LLM에 관한 Apple의 MM1 논문을 살펴봅니다. 모델의 구축 방식, 그 바탕의 사전 학습 전략, 그리고 응용 AI에 주는 의미를 정리합니다."
+description: "Apple의 멀티모달 대규모 언어 모델에 관한 MM1 논문 — 아키텍처, 사전 학습 전략, 신생 능력 — 의 분석."
 date: "March 18, 2024"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "AI의 진화를 표현하는 비주얼"
 keywords: "MM1, Apple AI, 멀티모달 LLM, 비전 언어, 사전 학습, 스케일링 법칙"
 last_reviewed: "2026-05-16"
-seo_title: "멀티모달 LLM 해설: Apple MM1 논문의 통찰"
 ---
 
 ![AI의 진화를 표현하는 비주얼](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

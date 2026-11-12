@@ -1,14 +1,13 @@
 ---
 title: "LibMake: generátor lešení pro knihovny v Rustu"
 subtitle: "LibMake: generátor kódu v Rustu, který od prvního dne vynucuje osvědčené postupy"
-description: "LibMake je nástroj CLI v Rustu, který z jednoho příkazu nebo konfiguračního souboru vygeneruje lešení knihovny: Cargo.toml, src/lib.rs, testy, benchmarky a CI."
+description: "LibMake je nástroj CLI v Rustu, který z jediného příkazu nebo verzovaného konfiguračního souboru TOML/YAML vygeneruje kompletní lešení knihovny: Cargo.toml, src/lib.rs se šablonami dokumentace, testovací a benchmarkové sady a CI v GitHub Actions."
 date: "October 26, 2023"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
 banner_alt: "Obří bílé sloupy"
 keywords: "LibMake, generátor kódu v Rustu, lešení cargo, šablona knihovny v Rustu, šablonování Tera, GitHub Actions pro Rust, cargo-audit, Rust API Guidelines, generátor standardního kódu, pracovní postup CI v Rustu"
-seo_title: "LibMake: lešení knihovny v Rustu jediným příkazem"
 ---
 
 

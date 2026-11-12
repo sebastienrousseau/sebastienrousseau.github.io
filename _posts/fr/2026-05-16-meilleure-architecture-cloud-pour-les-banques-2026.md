@@ -1,7 +1,7 @@
 ---
 title: "La meilleure architecture d'infrastructure cloud en 2026 : un blueprint AI-native, multi-cloud et préparé au quantique pour les services financiers"
 subtitle: "L'architecture cloud s'est cristallisée autour de six piliers et d'une question stratégique pour les banques : consommer le cloud ou le concevoir — sous pression convergente de l'agentic commerce, des unit economics agentiques, du risque quantique harvest-now-decrypt-later, de la sécurité MCP et de la contagion algorithmique, de l'identité cryptographique des agents, et d'un estate hérité qui consomme encore 70 à 75 % des dépenses IT des services financiers."
-description: "Architecture cloud 2026 en banque : six piliers, de l'infrastructure AI-native et du multi-cloud à l'edge, crypto-agilité et durabilité, et quand la concevoir."
+description: "L'architecture cloud en 2026 s'est cristallisée autour de six piliers : infrastructure AI-native, multi-cloud intelligent, conception serverless-first avec WebAssembly en périphérie, edge computing, sécurité automatisée avec crypto-agilité, et opérations durables à haute densité. Pour les banques, la question est de savoir s'il faut consommer le cloud ou le concevoir — sous pression convergente de l'agentic commerce, des unit economics agentiques, du risque quantique harvest-now-decrypt-later, de la sécurité MCP et de la contagion algorithmique, de l'identité cryptographique des agents, des exigences de continuous treasury, et du Règlement européen sur l'IA."
 date: "May 16, 2026"
 language: "fr"
 locale: "fr_FR"

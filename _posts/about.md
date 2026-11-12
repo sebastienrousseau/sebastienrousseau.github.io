@@ -96,7 +96,7 @@ site_last_updated: "2023-07-05"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-seo_title: "About Sebastien Rousseau: Enterprise AI, Payments and PQC"
+
 ---
 
 <section class="proof-rail" aria-label="Track record at a glance" data-reveal>
@@ -243,14 +243,3 @@ seo_title: "About Sebastien Rousseau: Enterprise AI, Payments and PQC"
 <p>All crawlers are welcome (search engines, social link-preview, SEO, AI retrieval, and AI training) under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-4.0</a>. Operational detail (named crawler categories, machine-readable surfaces, opt-out path) lives at <a href="/editorial/#bot-policy"><code>/editorial/#bot-policy</code></a>; machine-actionable rules at <a href="/robots.txt"><code>/robots.txt</code></a> and <a href="/llms.txt"><code>/llms.txt</code></a>.</p>
 
 </details>
-
-<section class="about-ai" aria-label="Check this profile with an AI assistant">
-<div class="finale-ai-verify">
-<p class="finale-ai-kicker">AI Due Diligence · ChatGPT · Claude · Perplexity</p>
-<div class="finale-ai-pills">
-<a class="finale-ai-pill" href="https://chatgpt.com/?q=Summarise+Sebastien+Rousseau%27s+open-source+ISO+20022+and+post-quantum+cryptography+work+at+sebastienrousseau.com" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"/></svg><span>ChatGPT</span></a>
-<a class="finale-ai-pill" href="https://claude.ai/new?q=Summarise+Sebastien+Rousseau%27s+open-source+ISO+20022+and+post-quantum+cryptography+work+at+sebastienrousseau.com" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg><span>Claude</span></a>
-<a class="finale-ai-pill" href="https://www.perplexity.ai/search/new?q=Summarise+Sebastien+Rousseau%27s+open-source+ISO+20022+and+post-quantum+cryptography+work+at+sebastienrousseau.com" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Perplexity</span></a>
-</div>
-</div>
-</section>

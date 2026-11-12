@@ -1,14 +1,13 @@
 ---
 title: "Ottimizzare l'analisi del rapporto di credito con IBM Qiskit e la trasformata quantistica di Fourier"
 subtitle: "Come la QFT ridisegna l'analisi dei ratio di credito"
-description: "Come applicare IBM Qiskit e la trasformata quantistica di Fourier all'analisi del rapporto di credito in finanza, con i concetti quantistici alla base."
+description: "Come IBM Qiskit e la trasformata quantistica di Fourier ridisegnano l'analisi del rapporto di credito in finanza, offrendo precisione e velocità senza precedenti."
 date: "January 08, 2024"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp"
 banner_alt: "Sala di un computer quantistico"
 keywords: "Qiskit, IBM, quantistico, Fourier, credito, finanza, ratio, ottimizzazione"
-seo_title: "Calcolo quantistico per l'analisi del credito con IBM Qiskit"
 ---
 
 ---

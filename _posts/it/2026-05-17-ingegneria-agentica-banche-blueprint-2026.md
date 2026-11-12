@@ -1,7 +1,7 @@
 ---
 title: "Ingegneria agentica per le banche: blueprint 2026"
 subtitle: "Architetture, pattern e governance per gli agenti IA nei servizi finanziari"
-description: "Ingegneria agentica per le banche: perché l'IA agentica in produzione esige una governance matura, il ruolo dei sistemi COBOL e cosa impone l'AI Act UE."
+description: "Un blueprint per le banche che adottano l'ingegneria agentica nel 2026: architetture composte, governance del rischio, integrazione con sistemi core e roadmap di adozione."
 date: "May 17, 2026"
 language: "it-IT"
 locale: "it_IT"

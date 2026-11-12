@@ -166,8 +166,8 @@
       "<a class=pill href=\"/zh-hans/wenzhang/index.html\">阅读最新研究</a>"
     ],
     [
-      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"\\1\" href=\"/zh-hans/lianxi/index.html\">联系我</a>"
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/zh-hans/lianxi/index.html\">联系我</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -356,50 +356,6 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">探索 ISO 20022 库 <span"
-    ],
-    [
-      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
-      ">量子时代值得银行信赖的支付基础设施。</h1>"
-    ],
-    [
-      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
-      ">我在汇丰（HSBC）负责批发支付 API 产品，并开发开源的 ISO 20022 与后量子工具，供银行和金融科技公司审查、测试和复用。</p>"
-    ],
-    [
-      ">Read the research</a>",
-      ">阅读研究</a>"
-    ],
-    [
-      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
-      ">EPAA 白皮书撰稿人 · Institution of Analysts and Programmers 资深会员（Fellow）</p>"
-    ],
-    [
-      ">Payments and digital products, built at:</p>",
-      ">曾在以下机构打造支付与数字产品：</p>"
-    ],
-    [
-      "<p class=\"feat-eyebrow\">Recognition</p>",
-      "<p class=\"feat-eyebrow\">荣誉</p>"
-    ],
-    [
-      ">Recognition and featured work\\.</h2>",
-      ">荣誉与代表作品。</h2>"
-    ],
-    [
-      "aria-label=\"Recognition\"",
-      "aria-label=\"荣誉\""
-    ],
-    [
-      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
-      "<li>Institution of Analysts and Programmers 资深会员 (FIAP)</li>"
-    ],
-    [
-      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
-      ">正在从事支付、抗量子安全或 ISO 20022 相关工作？</h2>"
-    ],
-    [
-      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
-      ">告诉我你正在构建什么。通常会在 48 小时内首次回复。</p>"
     ]
   ]
 }

@@ -1,7 +1,7 @@
 ---
 title: "Akande 음성 비서: 개인 및 임원 보조의 혁신"
 subtitle: "GPT를 활용한 대화형 음성 비서"
-description: "Àkàndé는 Whisper 음성 인식, GPT-4, 로컬 SQLite 캐시를 결합해 대화 내용을 PDF 요약으로 만들어 주는 오픈소스 Python 음성 비서입니다."
+description: "Akande, 자연스러운 대화, PDF 요약, 효율적인 캐싱을 제공하는 고급 음성 비서."
 date: "February 12, 2024"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "AI 비서와의 디지털 대화"
 keywords: "Akande, 음성 비서, GPT, OpenAI, 임원 지원, PDF, AI"
 last_reviewed: "2026-05-16"
-seo_title: "Àkàndé: GPT-4와 Whisper 오픈소스 음성 비서"
 ---
 
 ![AI 비서와의 디지털 대화](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

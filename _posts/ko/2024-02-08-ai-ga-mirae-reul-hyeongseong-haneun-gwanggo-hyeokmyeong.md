@@ -1,7 +1,7 @@
 ---
 title: "AI가 미래를 형성하다: 광고의 혁신"
 subtitle: "AI 기반 광고의 현황과 윤리"
-description: "광고 분야의 AI가 소비자 참여를 바꾸는 방식을, Amazon의 쇼핑 비서 Rufus와 Meta의 최신 생성 AI 개발 동향을 중심으로 살펴봅니다."
+description: "AI가 광고의 미래를 형성하는 방식과, 업계가 마주한 기회와 윤리적 고려 사항."
 date: "February 8, 2024"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "AI와 광고를 표현한 비주얼"
 keywords: "AI, 광고, 개인화, 생성 AI, 윤리, 프라이버시, 딥페이크"
 last_reviewed: "2026-05-16"
-seo_title: "광고 속 AI: Amazon Rufus, Meta, 생성 AI"
 ---
 
 ![AI와 광고를 표현한 비주얼](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

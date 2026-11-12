@@ -1,14 +1,13 @@
 ---
 title: "AI 提示詞工程的進展"
 subtitle: "探索 2024 年 AI 提示詞工程的進展，揭示正在革新技術與金融領域的創新趨勢與技術"
-description: "一文學會提示詞工程：零樣本與少樣本提示、思維鏈提示、自洽性方法、基於 ReAct 的工具呼叫，以及在金融場景中尤其需要警惕和防範的提示注入風險。"
+description: "2024 年 AI 提示詞工程的創新——自定義指令、多角色、思維鏈與零樣本/小樣本——重塑技術與金融。"
 date: "January 23, 2024"
 language: "zh-Hant"
 locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp"
 banner_alt: "一名男子在螢幕前分析資料"
 keywords: "提示詞工程, AI, 自定義指令, 多角色, 思維鏈, 向量資料庫, 零樣本, 小樣本, 量子計算, AI 倫理"
-seo_title: "思維鏈提示與 AI 提示詞工程指南"
 ---
 
 2024 年，AI 提示詞工程讓聊天機器人等方案能夠進行理解文化暗示的共情對話——這是類人 AI 互動的重大突破。**AI 提示詞工程** 透過自定義指令、多角色與思維鏈等進步，正在改變人機互動。本文探討這些發展及其對技術、金融與教育的影響，同時整合量子計算與 AI 倫理等領域的洞察。

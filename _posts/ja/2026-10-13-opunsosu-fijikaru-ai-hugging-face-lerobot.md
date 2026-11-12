@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Hugging Face LeRobot はオープンソースのモデル、エンドツーエンド模倣学習、200 ドルのハードでロボットを個別プログラミングから学習へ。"
+description: "ロンドンのEconomist Enterprise Physical AI and Robotics Summitで、Hugging Face LeRobotのPepijn Kooijmansが、模倣学習、Gemma視覚言語モデル、フローマッチング、200ドルのハードウェアでロボティクスを変えるオープンソースのアーキテクチャを示した。"
 format-detection: "telephone=no"
 hreflang: "ja"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "ロボット開発はこれまで、6桁の価格のハードウェアと、壊れやすい手作りの運動学に阻まれてきた。Economist Enterprise Physical AI and Robotics Summitで、Hugging Face LeRobotを率いるPepijn Kooijmansは、オープンソースの基盤モデルと200ドルのハードウェアがこの業界を大きく開きつつあることを示した。"
 last_reviewed: "2026-10-13"
-seo_title: "Hugging Face LeRobot とフィジカル AI"
 ---
 
 60年にわたり、産業用ロボティクスは容赦のないパラダイムの下で動いてきた。人間のエンジニアが、独自言語、ティーチングペンダント、硬直した運動学ソルバーを使い、機械の動きを1ミリ単位まで明示的にプログラムする。ワークが5ミリずれたり照明の条件が変わったりすれば、ロボットはエラーで止まる。2026年10月13日にロンドンで開かれたEconomist Enterprise Physical AI and Robotics Summitで、Hugging FaceでLeRobotを率いるPepijn Kooijmansは、この旧来のやり方を解体しつつある別のアーキテクチャを示した。「未来のロボットは、タスクごとにプログラムされるのではない。学ぶのだ」。

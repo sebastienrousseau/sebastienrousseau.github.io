@@ -8,7 +8,6 @@ locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
 banner_alt: "Laptop spento su un tavolo di legno marrone"
 keywords: "ERC-20, Ethereum, token, fungibile, smart contract, DeFi, stablecoin, ICO"
-seo_title: "ERC-20 spiegato: lo standard token di Ethereum"
 ---
 
 ![Laptop spento su un tavolo di legno marrone](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"

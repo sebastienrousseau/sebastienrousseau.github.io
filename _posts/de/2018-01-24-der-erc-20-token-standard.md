@@ -8,7 +8,6 @@ locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
 banner_alt: "Ausgeschalteter Laptop auf einem braunen Holztisch"
 keywords: "ERC-20, Ethereum, Token, Smart Contract, DeFi, EIP, Blockchain, Interoperabilität, DApps, Standard"
-seo_title: "ERC-20 erklärt: der Token-Schnittstellenstandard"
 ---
 
 ![Ausgeschalteter Laptop auf einem braunen Holztisch](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"

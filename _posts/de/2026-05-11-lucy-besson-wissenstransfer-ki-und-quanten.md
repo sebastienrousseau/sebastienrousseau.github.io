@@ -8,7 +8,6 @@ locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "Abstrakte Visualisierung neuronaler Netze und quantenbasierter Atomanordnungen. Ein schwarzer Computer formt sich aus sich neu anordnenden Teilchen."
 keywords: "Lucy, Luc Besson, Wissenstransfer, KI, LLM, Qubits aus neutralen Atomen, Hirnemulation, Neuralink, Eon Systems, Carboncopies, Fromm, Substratunabhängigkeit, Philosophie der KI"
-seo_title: "Lucy (2014) neu betrachtet: KI, Quanten und Wissenstransfer"
 ---
 
 ## Lucys USB-Stick, neu betrachtet: Was Besson über die Wanderung des Wissens in die Maschinen sah

@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Oct 01, 2023"
-description: "Contact Sebastien Rousseau about consulting, advisory, speaking, press and editorial enquiries. Share your context for a more useful reply within 48 hours."
+description: "Contact Sebastien Rousseau for consulting, advisory, speaking, press and product enquiries. Typical first response within 48 hours."
 format-detection: "telephone=no"
 form-id: "mjvqpwyo"
 hreflang: "en"
@@ -98,7 +98,7 @@ site_last_updated: "2023-07-05"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-seo_title: "Contact Sebastien Rousseau: Consulting, Advisory, Speaking"
+
 ---
 
 Consulting, advisory, speaking, and editorial enquiries are welcome. A short note about your context (your organisation, your role, and the question you are trying to answer) gets a more useful reply than a generic introduction. Your details are used only to respond to this enquiry.

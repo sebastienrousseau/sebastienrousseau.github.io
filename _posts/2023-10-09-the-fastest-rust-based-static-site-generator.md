@@ -98,7 +98,6 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "In the ever-evolving digital landscape, speed and quality are of paramount importance. I was determined to find a way to quickly generate static websites that showcase high quality, accessibility,…"
 last_reviewed: "2026-05-11"
-seo_title: "Static Site Generator: A Fast Rust-Based SSG for the Web"
 ---
 
 

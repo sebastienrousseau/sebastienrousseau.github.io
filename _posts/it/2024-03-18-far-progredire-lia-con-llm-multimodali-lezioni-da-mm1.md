@@ -1,14 +1,13 @@
 ---
 title: "Far progredire l'IA con LLM multimodali: lezioni da MM1"
 subtitle: "Che cosa lo studio MM1 di Apple insegna su architettura, dati di pre-training e capacità multimodali"
-description: "Lo studio MM1 di Apple sugli LLM multimodali: come sono costruiti questi modelli, le strategie di pre-training e cosa potrebbero significare per l'IA applicata."
+description: "Analisi dello studio MM1 di Apple sugli LLM multimodali: architettura, strategie di pre-training, risoluzione delle immagini e capacità few-shot."
 date: "March 18, 2024"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/mm1-visual.webp"
 banner_alt: "MM1 di Apple"
 keywords: "MM1, Apple, multimodale, LLM, pre-training, visione, IA, apprendimento multimodale, image encoder"
-seo_title: "LLM multimodali spiegati: lezioni dallo studio MM1 di Apple"
 ---
 
 ![MM1 di Apple](https://cloudcdn.pro/stocks/images/mm1-visual.webp).class=\"img-fluid clearfix\"

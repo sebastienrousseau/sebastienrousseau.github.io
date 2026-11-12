@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Wie Führungskräfte von Kier Group und BSI physische KI steuern: Vertrauen der Belegschaft wahren, Übergaben von Mensch zu Maschine managen, Haftung zuordnen."
+description: "Auf dem Physical AI Summit des Economist in London sprachen Kier Group und BSI über das Vertrauen der Belegschaft, sichere Übergaben und die Verteilung der Haftung."
 format-detection: "telephone=no"
 hreflang: "de"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Autonome physische Maschinen neben menschlichen Belegschaften einzusetzen, schafft akute psychologische und rechtliche Gefahren, die reine Software nie kannte. Auf dem Economist Enterprise Physical AI and Robotics Summit legten Kier Group und die British Standards Institution (BSI) die Grundzüge der Governance für physische KI fest."
 last_reviewed: "2026-10-13"
-seo_title: "Physische KI und Belegschaft: Governance, Vertrauen, Haftung"
 ---
 
 Wenn Unternehmenssoftware versagt, beschädigt sie eine Datenbank, verliert eine Netzwerkverbindung oder legt ein Token offen. Wenn ein physisches KI-System versagt, prallen Hunderte Kilogramm gelenkiger Stahl, hydraulische Antriebe mit hohem Drehmoment oder autonome Erdbaumaschinen auf Infrastruktur oder menschliche Körper. Auf dem Economist Enterprise Physical AI and Robotics Summit, der am 13. Oktober 2026 im Convene 200 Aldersgate in London stattfand, kam ein hochrangiges Podium zusammen, um die drängenden operativen, ethischen und rechtlichen Grenzfragen industrieller Autonomie zu behandeln: wie man das Vertrauen der Belegschaft erhält, Fehler bei der kognitiven Übergabe begrenzt und rechtlich belastbare Haftungsrahmen schafft, während intelligente Maschinen an die vorderste Front rücken.

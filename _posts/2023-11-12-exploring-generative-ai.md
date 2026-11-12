@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Nov 12, 2023"
-description: "Learn how generative AI and the transformer architecture work, where it lands first in financial services, and the ethical and architectural questions to ask."
+description: "Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -98,7 +98,6 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Generative AI crossed from research curiosity to production deployment in 2023. GPT-4, Claude 2, Llama 2, and Mistral demonstrated that large language models could handle legal document review, code generation, and customer dialogue at human-comparable quality — raising immediate governance questions about hallucination, data leakage, and regulatory compliance in financial services."
 last_reviewed: "2026-05-24"
-seo_title: "Generative AI Explained: How It Works and Where It Lands"
 ---
 
 

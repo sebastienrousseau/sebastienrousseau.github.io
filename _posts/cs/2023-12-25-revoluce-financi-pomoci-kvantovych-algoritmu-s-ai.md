@@ -1,14 +1,13 @@
 ---
 title: "Transformace financí pomocí kvantových algoritmů s podporou AI"
 subtitle: "Využití kvantové výpočetní síly pro finanční inovace: AI v jádru algoritmů nové generace"
-description: "Jak AI vylepšuje kvantové algoritmy pro finance, jaká matematika za nimi stojí a kde by mohly najít uplatnění v bankovnictví a finančních službách."
+description: "Transformativní role AI v kvantových algoritmech pro finance se zaměřením na jejich matematické detaily a bankovní aplikace."
 date: "December 25, 2023"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Transformace financí pomocí kvantových algoritmů s podporou AI"
 keywords: "kvantové výpočty, algoritmy AI, finanční matematika, bankovní technologie, řízení rizik, návrh algoritmů, analýza dat, investiční strategie, kvantové finance, strojové učení"
-seo_title: "Kvantové výpočty ve financích: algoritmy s podporou AI"
 ---
 
 

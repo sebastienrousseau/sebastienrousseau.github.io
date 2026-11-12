@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Hugging Face LeRobot이 오픈소스 모델, 엔드투엔드 모방학습, 200달러 하드웨어로 로봇을 작업별 프로그래밍에서 학습으로 옮겨 가는 방식."
+description: "Economist Enterprise Physical AI and Robotics Summit에서 Hugging Face LeRobot 책임자 Pepijn Kooijmans가 모방학습, Gemma 비전 언어 모델, 플로 매칭, 200달러 하드웨어로 로보틱스의 장벽을 허무는 오픈소스 아키텍처를 공개했다."
 format-detection: "telephone=no"
 hreflang: "ko"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "로봇 개발은 오랫동안 여섯 자리 가격의 하드웨어와 깨지기 쉬운 수작업 기구학에 가로막혀 있었다. Economist Enterprise Physical AI and Robotics Summit에서 Hugging Face LeRobot 책임자 Pepijn Kooijmans는 오픈소스 파운데이션 모델과 200달러 하드웨어가 이 산업을 활짝 열고 있음을 보여 주었다."
 last_reviewed: "2026-10-13"
-seo_title: "Hugging Face LeRobot과 오픈소스 피지컬 AI"
 ---
 
 지난 60년 동안 산업용 로보틱스는 가혹한 패러다임 아래에서 움직여 왔다. 인간 엔지니어가 독점 언어, 티치 펜던트, 경직된 기구학 솔버로 기계의 모든 움직임을 밀리미터 단위까지 명시적으로 프로그래밍한다. 작업물이 5밀리미터만 어긋나거나 조명 조건이 바뀌어도 로봇은 오류를 내고 멈춘다. 2026년 10월 13일 런던에서 열린 Economist Enterprise Physical AI and Robotics Summit에서 Hugging Face의 LeRobot 책임자 Pepijn Kooijmans는 이 오래된 방식을 해체하고 있는 대안 아키텍처를 제시했다. “미래의 로봇은 작업마다 프로그래밍되지 않을 것이다. 로봇은 배울 것이다.”

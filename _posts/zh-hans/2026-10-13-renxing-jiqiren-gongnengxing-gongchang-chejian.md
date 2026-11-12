@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "为何航空航天与自动化领域的负责人对人形机器人进入工厂车间持怀疑态度，为何「熄灯」式全自动化是一种谬误，以及为何机器人的外形应当始终服从于功能。"
+description: "在伦敦举行的Economist Enterprise Physical AI and Robotics Summit上，航空航天与自动化领域的负责人对人形机器人热潮提出质疑：为什么100%无人化是工业谬误，而保留人在回路中的10%效率提升能立刻带来回报。"
 format-detection: "telephone=no"
 hreflang: "zh-hans"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "在伦敦举行的Economist Enterprise Physical AI and Robotics Summit上，航空航天与制造业的负责人拆解了硅谷关于通用人形机器人的叙事。风险资本向双足形态投入数十亿美元，而工业现实证明，形式必须严格服从功能。"
 last_reviewed: "2026-10-13"
-seo_title: "人形机器人与制造业中的功能型机器人"
 ---
 
 2026年10月13日，在伦敦Convene 200 Aldersgate举行的Economist Enterprise Physical AI and Robotics Summit上，制造业高管、航空航天工程师和机器人专家齐聚一堂，讨论现代自动化中的一个根本分歧：机器人应当模仿人的身体，还是机械形态应当严格服从工业物理规律？风险资本继续向承诺全面替代劳动力的双足人形机器人投入数十亿美元，而来自Airbus、Leonardo和学术研究界的一线从业者，则给出了一次基于实证的冷静检验。

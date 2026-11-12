@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 24, 2026"
-description: "Proč doktorka Leda Glyptis tvrdí, že modernizace bank nemá konečný stav, proč se hromadí desetiletí výjimek a proč k AI přistupovat opatrně, ale ne pomalu."
+description: "Doktorka Leda Glyptis v Londýně: modernizace nemá konec. Banky musí odstranit desetiletí výjimek a k AI přistupovat bezpečně a uvážlivě, ale ne pomalu."
 format-detection: "telephone=no"
 hreflang: "cs"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Finanční sektor už 20 až 25 let pojímá modernizaci jako projekt s datem ukončení. Při zahájení Oracle Financial Services Summit v Londýně doktorka Leda Glyptis tvrdila, že slabinou odvětví je..."
 last_reviewed: "2026-10-24"
-seo_title: "Leda Glyptis: modernizace v bankovnictví nikdy nekončí"
 ---
 
 # Modernizace nikdy nekončí, hromadí se výjimky

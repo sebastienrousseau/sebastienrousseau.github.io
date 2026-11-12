@@ -183,9 +183,8 @@ _DETAILS_TAG_RE = re.compile(r"<details\b[^>]*>", re.IGNORECASE)
 _CLASS_ATTR_RE = re.compile(r'class\s*=\s*["\']([^"\']*)["\']', re.IGNORECASE)
 
 # Legit non-accordion <details> uses. Anything else must be a qa-item.
-# article-tools is the article "Share · Cite" menu (postbuild_lib/tools_menu.py).
 ALLOWED_DETAILS_CLASSES = frozenset(
-    {"qa-item", "cite-popover", "tag-posts", "cs-dropdown", "about-identifiers", "article-tools"}
+    {"qa-item", "cite-popover", "tag-posts", "cs-dropdown", "about-identifiers"}
 )
 
 

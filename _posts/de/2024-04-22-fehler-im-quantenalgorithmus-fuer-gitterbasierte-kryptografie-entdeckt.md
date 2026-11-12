@@ -8,7 +8,6 @@ locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 banner_alt: "Mit MidJourney generiertes Bild – ein Netzwerk digitaler Knoten in roten und blauen Farbtönen."
 keywords: "Post-Quanten-Kryptografie, NIST, PQC-Standardisierung, Yilei Chen, Quantenalgorithmus, gitterbasierte Kryptografie, LWE-Problem, CRYSTALS-KYBER, CRYSTALS-Dilithium, quantenresistente Kryptografie"
-seo_title: "Post-Quanten-Kryptografie: Fehler in Chens LWE-Algorithmus"
 ---
 
 ## Das Quanten-Rätsel: Neubewertung der NIST-Post-Quanten-Kryptografie-Standardisierung im Lichte von Yilei Chens Algorithmus

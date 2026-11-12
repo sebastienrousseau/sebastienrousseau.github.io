@@ -8,7 +8,6 @@ locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp"
 banner_alt: "HSBC vista dai Docks"
 keywords: "QKD, distribuzione quantistica chiavi, sicurezza bancaria, crittografia quantistica, BB84, BBM92"
-seo_title: "Distribuzione quantistica delle chiavi (QKD) nel banking"
 ---
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Alien Studio: AI 사진으로 예술을 혁신하다"
 subtitle: "확산 모델이 이미지 생성을 바꾸다"
-description: "Rust, AI, 양자 컴퓨팅에서 예술과 사진으로 이어진 개인적 기술 여정. Alien Studio 프로젝트가 기술로 창작 작업을 새롭게 바라보는 방식을 소개합니다."
+description: "Alien Studio가 AI 기반 사진과 예술로 창의적 표현을 어떻게 재구성하고 있는지에 관하여."
 date: "January 15, 2024"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "AI가 생성한 추상적 예술"
 keywords: "Alien Studio, AI 사진, 확산 모델, Stable Diffusion, Midjourney, AI 아트, 크리에이티브 AI"
 last_reviewed: "2026-05-16"
-seo_title: "Alien Studio: AI 사진으로 향한 개인적 기술 여정"
 ---
 
 ![AI가 생성한 추상적 예술](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

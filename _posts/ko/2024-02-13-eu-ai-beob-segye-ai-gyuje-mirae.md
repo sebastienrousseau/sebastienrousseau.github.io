@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "브뤼셀 EU 의회"
 keywords: "EU AI 법, AI 규제, 거버넌스, 위험 분류, 규정 준수, GDPR, AI 감독"
 last_reviewed: "2026-05-16"
-seo_title: "EU AI 법 해설: 위험 등급별 AI 규제"
 ---
 
 ![브뤼셀 EU 의회](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

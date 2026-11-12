@@ -1,14 +1,13 @@
 ---
 title: "Express Transaction Credits 平台的诞生"
 subtitle: "为下一代以太坊 ERC-223 合规代币打造的全面框架"
-description: "EXTC 平台如何基于以太坊 ERC-223 构建：代币架构、多重签名付款、时间锁定转账，以及以抵押品为担保的即时贷款等核心功能的设计与实现。"
+description: "EXTC 平台基于 ERC-223 标准，致力于通过去中心化交易平台实现闪电般的金融交易。"
 date: "February 15, 2018"
 language: "zh-Hans"
 locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp"
 banner_alt: "巨大的白色柱子"
 keywords: "EXTC, ERC-223, 以太坊, 智能合约, 去中心化交易所, 即时贷款, 跨境支付, 金融普惠, 代币, 区块链"
-seo_title: "EXTC 平台：在以太坊 ERC-223 上构建支付代币"
 ---
 
 ![巨大的白色柱子](https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp).class=\"img-fluid clearfix\"

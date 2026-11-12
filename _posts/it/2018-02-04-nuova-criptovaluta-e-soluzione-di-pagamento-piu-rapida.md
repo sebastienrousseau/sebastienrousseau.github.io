@@ -1,14 +1,13 @@
 ---
 title: "Svelare una nuova criptovaluta e offrire una soluzione di pagamento più rapida"
 subtitle: "L'innovazione di pagamento per il futuro dei trasferimenti istantanei"
-description: "Come la piattaforma EXTC ha esplorato nel 2018 pagamenti transfrontalieri più rapidi con smart contract Ethereum ERC-223, primo modello per la DeFi."
+description: "Una panoramica di una proposta di criptovaluta progettata per regolamento rapido e finalità a basso costo, esaminata nel contesto delle dinamiche di pagamento più ampie."
 date: "February 4, 2018"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp"
 banner_alt: "Laptop spento su un tavolo di legno marrone"
 keywords: "criptovaluta, pagamenti istantanei, regolamento, blockchain, scalabilità, transazioni"
-seo_title: "EXTC: pagamenti transfrontalieri rapidi su Ethereum ERC-223"
 ---
 
 ![Laptop spento su un tavolo di legno marrone](https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp).class=\"img-fluid clearfix\"

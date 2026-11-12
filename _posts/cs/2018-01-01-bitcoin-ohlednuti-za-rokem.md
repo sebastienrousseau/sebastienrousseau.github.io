@@ -1,7 +1,7 @@
 ---
 title: "Bitcoin: Ohlédnutí za rokem první kryptoměny"
 subtitle: "Bitcoin, kryptoměny a technologie, která přetváří finanční trhy."
-description: "Jak Bitcoin funguje jako elektronická hotovost typu peer-to-peer, jak distribuovaná účetní kniha řeší dvojí utrácení a proč může změnit online platby."
+description: "Bitcoin: elektronický platební systém typu peer-to-peer (P2P ECS), který může zásadně změnit způsob, jakým lidé provádějí transakce online."
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Hromada zlatých a stříbrných mincí ležící na stole"
 banner_height: "100vh"
@@ -80,7 +80,6 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 excerpt: "Bitcoin, často označovaný za digitální zlato, zásadně proměnil finance zavedením decentralizované elektronické hotovosti a technologie blockchain. Umožnil online platby mezi jednotlivci…"
-seo_title: "Bitcoin vysvětlený: jak funguje první kryptoměna"
 ---
 
 # Bitcoin: Ohlédnutí za rokem první kryptoměny

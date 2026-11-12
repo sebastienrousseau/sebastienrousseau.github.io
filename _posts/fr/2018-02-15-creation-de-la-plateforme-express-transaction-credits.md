@@ -1,14 +1,13 @@
 ---
 title: "La création de la plateforme Express Transaction Credits"
 subtitle: "Un cadre complet pour la prochaine génération de tokens ERC-223"
-description: "La plateforme EXTC sur Ethereum ERC-223 : architecture du jeton, décaissements multisignatures, transferts à verrou temporel et prêts instantanés garantis."
+description: "Développer un cadre complet pour la prochaine génération de tokens conformes Ethereum Request for Comment via la norme ERC-223."
 date: "February 15, 2018"
 language: "fr"
 locale: "fr_FR"
 banner: "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
 banner_alt: "Grandes colonnes blanches"
 keywords: "Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, paiements, tokens, prêts, finance décentralisée"
-seo_title: "Plateforme EXTC : un jeton de paiement sur Ethereum ERC-223"
 ---
 
 ![Grandes colonnes blanches](https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp).class=\"img-fluid clearfix\"

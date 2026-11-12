@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 24, 2026"
-description: "Por qué Leda Glyptis cree que la modernización bancaria no termina, por qué se acumulan las excepciones y por qué adoptar la IA con cautela pero sin lentitud."
+description: "La Dra. Leda Glyptis sostuvo en Londres que la modernización no tiene fin: la banca debe resolver décadas de excepciones y abordar la IA con prudencia, pero sin lentitud."
 format-detection: "telephone=no"
 hreflang: "es"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Durante 20 a 25 años, los servicios financieros han tratado la modernización como un proyecto con fecha de cierre. En la apertura del Oracle Financial Services Summit en Londres, la Dra. Leda Glyptis sostuvo que el punto débil del sector es..."
 last_reviewed: "2026-10-24"
-seo_title: "Leda Glyptis: la modernización bancaria nunca termina"
 ---
 
 # La modernización nunca termina, lo que se acumula son las excepciones

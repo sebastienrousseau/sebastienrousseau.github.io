@@ -166,8 +166,8 @@
       "<a class=pill href=\"/uk/statti/index.html\">Читати останні дослідження</a>"
     ],
     [
-      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"\\1\" href=\"/uk/kontakt/index.html\">Зв’язатися зі мною</a>"
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/uk/kontakt/index.html\">Зв’язатися зі мною</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -356,50 +356,6 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">Дослідити бібліотеки ISO 20022 <span"
-    ],
-    [
-      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
-      ">Платіжна інфраструктура, якій банки можуть довіряти в квантову епоху.</h1>"
-    ],
-    [
-      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
-      ">Я керую API-продуктами для оптових платежів у HSBC і створюю open-source інструменти для ISO 20022 та постквантової криптографії, які банки й фінтех-компанії можуть перевіряти, тестувати та використовувати повторно.</p>"
-    ],
-    [
-      ">Read the research</a>",
-      ">Читати дослідження</a>"
-    ],
-    [
-      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
-      ">Співавтор white paper EPAA · Fellow, Institution of Analysts and Programmers</p>"
-    ],
-    [
-      ">Payments and digital products, built at:</p>",
-      ">Платіжні та цифрові продукти, створені в:</p>"
-    ],
-    [
-      "<p class=\"feat-eyebrow\">Recognition</p>",
-      "<p class=\"feat-eyebrow\">Визнання</p>"
-    ],
-    [
-      ">Recognition and featured work\\.</h2>",
-      ">Визнання та вибрані роботи.</h2>"
-    ],
-    [
-      "aria-label=\"Recognition\"",
-      "aria-label=\"Визнання\""
-    ],
-    [
-      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
-      "<li>Fellow Institution of Analysts and Programmers (FIAP)</li>"
-    ],
-    [
-      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
-      ">Працюєте над платежами, квантовою безпекою чи ISO 20022?</h2>"
-    ],
-    [
-      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
-      ">Розкажіть, що ви створюєте. Першу відповідь зазвичай надсилаю протягом 48 годин.</p>"
     ]
   ]
 }

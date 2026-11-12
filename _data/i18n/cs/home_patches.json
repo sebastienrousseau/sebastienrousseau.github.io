@@ -166,8 +166,8 @@
       "<a class=pill href=\"/cs/clanky/index.html\">Číst nejnovější výzkum</a>"
     ],
     [
-      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"\\1\" href=\"/cs/kontakt/index.html\">Kontaktovat</a>"
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/cs/kontakt/index.html\">Kontaktovat</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -356,50 +356,6 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">Prozkoumat knihovny ISO 20022 <span"
-    ],
-    [
-      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
-      ">Platební infrastruktura, které banky mohou důvěřovat i v kvantové éře.</h1>"
-    ],
-    [
-      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
-      ">V HSBC vedu produkty API pro velkoobchodní platby a vyvíjím open-source nástroje pro ISO 20022 a postkvantovou kryptografii, které mohou banky a fintechy prověřit, otestovat a znovu použít.</p>"
-    ],
-    [
-      ">Read the research</a>",
-      ">Číst výzkum</a>"
-    ],
-    [
-      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
-      ">Spoluautor white paperu EPAA · Fellow, Institution of Analysts and Programmers</p>"
-    ],
-    [
-      ">Payments and digital products, built at:</p>",
-      ">Platební a digitální produkty jsem budoval v:</p>"
-    ],
-    [
-      "<p class=\"feat-eyebrow\">Recognition</p>",
-      "<p class=\"feat-eyebrow\">Ocenění</p>"
-    ],
-    [
-      ">Recognition and featured work\\.</h2>",
-      ">Ocenění a vybraná práce.</h2>"
-    ],
-    [
-      "aria-label=\"Recognition\"",
-      "aria-label=\"Ocenění\""
-    ],
-    [
-      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
-      "<li>Člen (Fellow) Institution of Analysts and Programmers (FIAP)</li>"
-    ],
-    [
-      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
-      ">Pracujete na platbách, kvantové bezpečnosti nebo ISO 20022?</h2>"
-    ],
-    [
-      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
-      ">Napište mi, na čem pracujete. První odpověď obvykle přichází do 48 hodin.</p>"
     ]
   ]
 }

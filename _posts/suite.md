@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jul 16, 2026"
-description: "Explore the enterprise AI banking software suite, led by the ISO 20022 MCP Suite: open tools that let AI agents build, check and explain payment messages."
+description: "The enterprise AI banking and payment software suite from Sebastien Rousseau. Explore the ISO 20022 MCP Suite: validated tools that let AI agents build, check and explain payment messages on your own infrastructure."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -96,7 +96,7 @@ site_last_updated: "2026-10-29"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-seo_title: "Enterprise AI Banking Software Suite for ISO 20022 Payments"
+
 ---
 
 

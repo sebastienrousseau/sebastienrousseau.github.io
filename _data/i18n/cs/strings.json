@@ -92,21 +92,5 @@
   "scorecard.downloaded": "Obrázek hodnoticí karty stažen",
   "scorecard.radarTitle": "Radar připravenosti",
   "scorecard.methodology": "Přečtěte si úplnou metodiku indexu",
-  "scorecard.fallback": "Dimenze vyspělosti jsou uvedeny v tabulce výše. Povolte JavaScript, abyste mohli interaktivně ohodnotit svou instituci a exportovat výsledek.",
-  "footer.title.contact": "Kontakt",
-  "footer.contact.location": "Londýn, Spojené království",
-  "footer.contact.response": "První odpověď obvykle do 48 hodin",
-  "footer.newsletter.link": "Odebírat Banking On Quantum",
-  "nav.workWithMe": "Spolupráce",
-  "nav.research": "Výzkumná spolupráce",
-  "nav.openSourceSupport": "Podpora open source",
-  "nav.aria.toggleWorkWithMe": "Přepnout podnabídku Spolupráce",
-  "contact.privacyLine": "Vaše zpráva jde přes Formspree, který mi ji pošle e-mailem; ochranu proti spamu zajišťuje Google reCAPTCHA.",
-  "contact.privacyLink": "Zásady ochrany soukromí",
-  "footer.changelog": "Přehled změn",
-  "contact.eyebrow": "Kontakt",
-  "footer.mediaKit": "Mediální sada",
-  "contact.appTitle": "Kontakt",
-  "nav.hubPqc": "Postkvantová kryptografie",
-  "nav.hubAi": "Aplikovaná AI"
+  "scorecard.fallback": "Dimenze vyspělosti jsou uvedeny v tabulce výše. Povolte JavaScript, abyste mohli interaktivně ohodnotit svou instituci a exportovat výsledek."
 }

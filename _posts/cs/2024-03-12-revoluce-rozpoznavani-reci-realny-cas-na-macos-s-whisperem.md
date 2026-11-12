@@ -8,7 +8,6 @@ locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/research-paper.webp"
 banner_alt: "Banner pro automatické rozpoznávání řeči v reálném čase (ASR)"
 keywords: "OpenAI Whisper, Metal Performance Shaders, rozpoznávání řeči na macOS, přepis v reálném čase, detekce hlasové aktivity, akcelerace GPU, integrace s jazykem Python, převod řeči na text na macOS, energeticky efektivní detekce řeči, Apple silicon"
-seo_title: "OpenAI Whisper na macOS: rychlé rozpoznávání řeči"
 ---
 
 

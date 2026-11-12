@@ -1,7 +1,7 @@
 ---
 title: "Akande 音声アシスタント:個人と役員支援の革新"
 subtitle: "GPT を活用した会話音声アシスタント"
-description: "Àkàndé は Whisper の音声認識、GPT-4、SQLite キャッシュで会話の PDF 要約を作るオープンソースの Python 音声アシスタント。"
+description: "Akande、自然な対話、PDF 要約、効率的なキャッシュを提供する高度な音声アシスタント。"
 date: "February 12, 2024"
 language: "ja-JP"
 locale: "ja_JP"
@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "AI アシスタントとのデジタル対話"
 keywords: "Akande, 音声アシスタント, GPT, OpenAI, 役員支援, PDF, AI"
 last_reviewed: "2026-05-11"
-seo_title: "Àkàndé：GPT-4 と Whisper の音声 AI"
 ---
 
 ![AI アシスタントとのデジタル対話](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

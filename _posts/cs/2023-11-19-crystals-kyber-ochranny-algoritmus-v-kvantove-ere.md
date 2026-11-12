@@ -8,7 +8,6 @@ locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp"
 banner_alt: "Moderní elegantní kvantový počítač"
 keywords: "kvantové výpočty, kvantově odolná kryptografie, CRYSTALS-Kyber, kryptografie, bezpečnost, bankovnictví, finance, šifrování, ochrana dat, odolnost do budoucna"
-seo_title: "CRYSTALS-Kyber vysvětlený: zapouzdření klíčů v kvantové éře"
 ---
 
 

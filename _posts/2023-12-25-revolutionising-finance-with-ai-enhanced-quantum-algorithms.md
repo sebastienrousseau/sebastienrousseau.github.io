@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: ""
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Dec 25, 2023"
-description: "Explore how AI enhances quantum computing algorithms for finance, the mathematics behind them, and where they could apply in banking and financial services."
+description: "Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -108,7 +108,6 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "The financial landscape is poised for a groundbreaking transformation driven by the convergence of artificial intelligence (AI) and quantum algorithm design.This revolution in finance isn't raw…"
 last_reviewed: "2026-05-11"
-seo_title: "Quantum Computing in Finance: AI-Enhanced Quantum Algorithms"
 ---
 
 

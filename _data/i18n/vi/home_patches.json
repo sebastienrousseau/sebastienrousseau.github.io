@@ -166,8 +166,8 @@
       "<a class=pill href=\"/vi/bai-viet/index.html\">Đọc nghiên cứu mới nhất</a>"
     ],
     [
-      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"\\1\" href=\"/vi/lien-he/index.html\">Liên hệ với tôi</a>"
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/vi/lien-he/index.html\">Liên hệ với tôi</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -356,50 +356,6 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">Khám phá các thư viện ISO 20022 <span"
-    ],
-    [
-      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
-      ">Hạ tầng thanh toán mà các ngân hàng có thể tin cậy trong kỷ nguyên lượng tử.</h1>"
-    ],
-    [
-      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
-      ">Tôi dẫn dắt các sản phẩm API thanh toán bán buôn tại HSBC và xây dựng công cụ mã nguồn mở cho ISO 20022 và mật mã hậu lượng tử mà các ngân hàng và fintech có thể kiểm tra, thử nghiệm và tái sử dụng.</p>"
-    ],
-    [
-      ">Read the research</a>",
-      ">Đọc nghiên cứu</a>"
-    ],
-    [
-      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
-      ">Người đóng góp sách trắng EPAA · Fellow, Institution of Analysts and Programmers</p>"
-    ],
-    [
-      ">Payments and digital products, built at:</p>",
-      ">Các sản phẩm thanh toán và kỹ thuật số, được xây dựng tại:</p>"
-    ],
-    [
-      "<p class=\"feat-eyebrow\">Recognition</p>",
-      "<p class=\"feat-eyebrow\">Ghi nhận</p>"
-    ],
-    [
-      ">Recognition and featured work\\.</h2>",
-      ">Ghi nhận và công trình nổi bật.</h2>"
-    ],
-    [
-      "aria-label=\"Recognition\"",
-      "aria-label=\"Ghi nhận\""
-    ],
-    [
-      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
-      "<li>Fellow của Institution of Analysts and Programmers (FIAP)</li>"
-    ],
-    [
-      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
-      ">Bạn đang làm việc về thanh toán, an toàn lượng tử hay ISO 20022?</h2>"
-    ],
-    [
-      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
-      ">Hãy cho tôi biết bạn đang xây dựng gì. Phản hồi đầu tiên thường đến trong vòng 48 giờ.</p>"
     ]
   ]
 }

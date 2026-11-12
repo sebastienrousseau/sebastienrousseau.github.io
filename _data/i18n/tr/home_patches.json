@@ -166,8 +166,8 @@
       "<a class=pill href=\"/tr/makaleler/index.html\">Güncel araştırmaları oku</a>"
     ],
     [
-      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"\\1\" href=\"/tr/iletisim/index.html\">İletişime geç</a>"
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/tr/iletisim/index.html\">İletişime geç</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -356,50 +356,6 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">ISO 20022 kütüphanelerini keşfet <span"
-    ],
-    [
-      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
-      ">Bankaların kuantum çağında güvenebileceği ödeme altyapısı.</h1>"
-    ],
-    [
-      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
-      ">HSBC'de toptan ödemeler API ürünlerini yönetiyor, bankaların ve fintech'lerin inceleyip test edebileceği ve yeniden kullanabileceği açık kaynaklı ISO 20022 ve kuantum sonrası araçlar geliştiriyorum.</p>"
-    ],
-    [
-      ">Read the research</a>",
-      ">Araştırmaları oku</a>"
-    ],
-    [
-      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
-      ">EPAA beyaz bülten katkıcısı · Fellow, Institution of Analysts and Programmers</p>"
-    ],
-    [
-      ">Payments and digital products, built at:</p>",
-      ">Ödeme ve dijital ürünler geliştirdiğim kurumlar:</p>"
-    ],
-    [
-      "<p class=\"feat-eyebrow\">Recognition</p>",
-      "<p class=\"feat-eyebrow\">Takdir</p>"
-    ],
-    [
-      ">Recognition and featured work\\.</h2>",
-      ">Takdirler ve öne çıkan çalışmalar.</h2>"
-    ],
-    [
-      "aria-label=\"Recognition\"",
-      "aria-label=\"Takdir\""
-    ],
-    [
-      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
-      "<li>Institution of Analysts and Programmers Fellow'u (FIAP)</li>"
-    ],
-    [
-      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
-      ">Ödemeler, kuantum güvenliği veya ISO 20022 üzerinde mi çalışıyorsunuz?</h2>"
-    ],
-    [
-      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
-      ">Ne geliştirdiğinizi anlatın. İlk yanıt genellikle 48 saat içinde gelir.</p>"
     ]
   ]
 }

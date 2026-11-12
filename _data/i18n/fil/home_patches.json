@@ -166,8 +166,8 @@
       "<a class=pill href=\"/fil/mga-artikulo/index.html\">Basahin ang pinakabagong research</a>"
     ],
     [
-      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"\\1\" href=\"/fil/makipag-ugnayan/index.html\">Makipag-ugnayan</a>"
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/fil/makipag-ugnayan/index.html\">Makipag-ugnayan</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -356,50 +356,6 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">Galugarin ang mga ISO 20022 library <span"
-    ],
-    [
-      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
-      ">Imprastraktura ng pagbabayad na mapagkakatiwalaan ng mga bangko sa panahon ng quantum.</h1>"
-    ],
-    [
-      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
-      ">Pinamumunuan ko ang mga wholesale payments API product sa HSBC at gumagawa ako ng open-source na ISO 20022 at post-quantum tooling na masusuri, masusubukan at magagamit muli ng mga bangko at fintech.</p>"
-    ],
-    [
-      ">Read the research</a>",
-      ">Basahin ang research</a>"
-    ],
-    [
-      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
-      ">Kontribyutor sa white paper ng EPAA · Fellow, Institution of Analysts and Programmers</p>"
-    ],
-    [
-      ">Payments and digital products, built at:</p>",
-      ">Mga produktong pambayad at digital, binuo sa:</p>"
-    ],
-    [
-      "<p class=\"feat-eyebrow\">Recognition</p>",
-      "<p class=\"feat-eyebrow\">Pagkilala</p>"
-    ],
-    [
-      ">Recognition and featured work\\.</h2>",
-      ">Pagkilala at mga tampok na gawa.</h2>"
-    ],
-    [
-      "aria-label=\"Recognition\"",
-      "aria-label=\"Pagkilala\""
-    ],
-    [
-      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
-      "<li>Fellow ng Institution of Analysts and Programmers (FIAP)</li>"
-    ],
-    [
-      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
-      ">Nagtatrabaho ka ba sa payments, quantum-safety o ISO 20022?</h2>"
-    ],
-    [
-      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
-      ">Sabihin mo sa akin kung ano ang binubuo mo. Karaniwang dumarating ang unang tugon sa loob ng 48 oras.</p>"
     ]
   ]
 }

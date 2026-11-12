@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: ""
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jan 15, 2024"
-description: "Our website accessibility statement: the standards this site aims to meet, the measures taken to support accessibility, and how to contact us about any issues."
+description: "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility."
 format-detection: "telephone=no"
 form-id: ""
 hreflang: "en"
@@ -97,7 +97,7 @@ site_last_updated: "2024-01-15"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Static Site Generator (SSG), Static Site Generator CLI, Static Site Generator Templates, Static Site Generator Themes, Kaishi SSG, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-seo_title: "Website Accessibility Statement, Standards and Contact"
+
 ---
 
 We are committed to providing digital accessibility for people with disabilities and are consistently enhancing the user experience for everyone, implementing the appropriate accessibility measures.
