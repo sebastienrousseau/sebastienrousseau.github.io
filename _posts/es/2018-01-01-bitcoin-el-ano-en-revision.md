@@ -1,13 +1,14 @@
 ---
 title: "Bitcoin: revisión del año de la primera criptomoneda"
 subtitle: "Un sistema de pago electrónico entre pares que ha redefinido el dinero"
-description: "Bitcoin: un sistema de efectivo electrónico entre pares (P2P ECS) capaz de revolucionar la forma en que las personas transaccionan en línea."
+description: "Cómo funciona Bitcoin como sistema de efectivo electrónico entre pares, cómo su registro distribuido evita el doble gasto y por qué puede cambiar los pagos."
 date: "January 1, 2018"
 language: "es-ES"
 locale: "es_ES"
 banner: "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
 banner_alt: "Un montón de monedas de oro y plata sobre una mesa"
 keywords: "Bitcoin, criptomoneda, blockchain, P2P, doble gasto, minería, proof-of-work, ETF, Satoshi Nakamoto, finanzas descentralizadas"
+seo_title: "Bitcoin explicado: cómo funciona la primera criptomoneda"
 ---
 
 ![Un montón de monedas de oro y plata sobre una mesa](https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp).class=\"img-fluid clearfix\"

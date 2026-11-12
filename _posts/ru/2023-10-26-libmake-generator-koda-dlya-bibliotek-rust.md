@@ -1,13 +1,14 @@
 ---
 title: "libmake: генератор кода для создания качественных Rust-библиотек"
 subtitle: "Меньше повторяющейся работы, больше времени на главное"
-description: "libmake — это open-source генератор кода, сокращающий повторяющиеся задачи и помогающий создавать качественные Rust-библиотеки."
+description: "LibMake: CLI на Rust, который одной командой или из файла конфигурации создаёт каркас библиотеки: Cargo.toml, src/lib.rs, тесты, бенчмарки и CI."
 date: "October 26, 2023"
 language: "ru-RU"
 locale: "ru_RU"
 banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
 banner_alt: "Логотип и баннер libmake"
 keywords: "libmake, генерация кода, Rust, шаблоны, инструменты разработчика, open source, продуктивность, CLI"
+seo_title: "LibMake: каркас Rust-библиотеки одной командой"
 ---
 
 > **TL;DR.** libmake — генератор кода для Rust-библиотек, автоматизирующий создание шаблонной инфраструктуры (Cargo.toml, README, CI, тесты) и обеспечивающий единообразие проектов.

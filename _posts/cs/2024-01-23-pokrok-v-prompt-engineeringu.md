@@ -1,13 +1,14 @@
 ---
 title: "Prompt engineering v roce 2024: techniky, které fungují"
 subtitle: "Zero-shot, chain-of-thought, ReAct a bezpečnost promptů: techniky, na kterých v roce 2024 záleží"
-description: "Prompt engineering řídí chování LLM v čase inference. Tento článek pokrývá zero-shot a few-shot prompting, uvažování chain-of-thought, vzorkování self-consistency, architekturu použití nástrojů ReAct, rizika nepřímého prompt injection a aplikované vzorce z nasazení ve finančních službách."
+description: "Prompt engineering: zero-shot a few-shot prompting, chain-of-thought prompting, self-consistency, použití nástrojů ReAct a rizika prompt injection ve financích."
 date: "January 23, 2024"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp"
 banner_alt: "Muž analyzující data na obrazovkách"
 keywords: "chain-of-thought prompting, few-shot learning, zero-shot prompting, učení v kontextu, prompt injection, ReAct, self-consistency, retrieval-augmented generation, BloombergGPT, systémový prompt, bezpečnost promptů, LLM agent"
+seo_title: "Chain-of-thought prompting a průvodce prompt engineeringem"
 ---
 
 # Prompt engineering v roce 2024: techniky, které fungují

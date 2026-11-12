@@ -166,8 +166,8 @@
       "<a class=pill href=\"/ja/kiji/index.html\">最新のリサーチを読む</a>"
     ],
     [
-      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/ja/otoiawase/index.html\">お問い合わせ</a>"
+      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"\\1\" href=\"/ja/otoiawase/index.html\">お問い合わせ</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -356,6 +356,50 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">ISO 20022 ライブラリを見る <span"
+    ],
+    [
+      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
+      ">量子時代に銀行が信頼できる決済インフラを。</h1>"
+    ],
+    [
+      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
+      ">HSBCでホールセール決済APIプロダクトを統括するとともに、銀行やフィンテック企業が検証・テスト・再利用できるISO 20022およびポスト量子暗号のオープンソースツールを開発しています。</p>"
+    ],
+    [
+      ">Read the research</a>",
+      ">リサーチを読む</a>"
+    ],
+    [
+      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
+      ">EPAAホワイトペーパー寄稿者 · Institution of Analysts and Programmers フェロー</p>"
+    ],
+    [
+      ">Payments and digital products, built at:</p>",
+      ">決済・デジタルプロダクトの開発実績:</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Recognition</p>",
+      "<p class=\"feat-eyebrow\">実績・評価</p>"
+    ],
+    [
+      ">Recognition and featured work\\.</h2>",
+      ">実績と主な活動。</h2>"
+    ],
+    [
+      "aria-label=\"Recognition\"",
+      "aria-label=\"実績・評価\""
+    ],
+    [
+      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
+      "<li>Institution of Analysts and Programmers フェロー (FIAP)</li>"
+    ],
+    [
+      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
+      ">決済、量子耐性、ISO 20022に取り組んでいますか?</h2>"
+    ],
+    [
+      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
+      ">取り組んでいる内容をお聞かせください。通常、48時間以内に最初のご返信をいたします。</p>"
     ]
   ]
 }

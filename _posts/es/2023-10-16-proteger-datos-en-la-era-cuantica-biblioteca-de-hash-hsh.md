@@ -8,6 +8,7 @@ locale: "es_ES"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp"
 banner_alt: "Ilustración creativa sobre el tema de la computación cuántica"
 keywords: "criptografía resistente a lo cuántico, biblioteca Hash, HSH, Rust, postcuántica, PQC, KDF, Argon2i, BScrypt, Scrypt, servicios financieros, seguridad, NIST"
+seo_title: "Biblioteca Hash (HSH): hashing poscuántico en Rust"
 ---
 
 ![Ilustración creativa sobre el tema de la computación cuántica](https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"

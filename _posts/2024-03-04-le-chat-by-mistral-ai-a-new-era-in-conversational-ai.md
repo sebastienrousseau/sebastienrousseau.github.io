@@ -106,6 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Conversational AI is evolving rapidly, and Mistral AI's Le Chat is leading the way in this innovation. This platform improves user experiences and challenges top AI solutions like ChatGPT. It's…"
 last_reviewed: "2026-05-11"
+seo_title: "Le Chat AI by Mistral: A Multilingual Conversational AI"
 ---
 
 

@@ -58,7 +58,7 @@ when an individual is officially representing the community in public spaces.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behaviour may be
-reported to the maintainer at **sebastian.rousseau@gmail.com**. All complaints
+reported to the maintainer at **contact@sebastienrousseau.com**. All complaints
 will be reviewed and investigated promptly and fairly.
 
 The maintainer is obligated to respect the privacy and security of the reporter

@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: ""
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jun 02, 2026"
-description: "Editorial standards for sebastienrousseau.com: sourcing, corrections policy, AI-assistance disclosure, conflict-of-interest disclosure, and accountability. Operative on every article."
+description: "The editorial standards behind every article on sebastienrousseau.com: how sources are chosen, how corrections are made, and how AI use and conflicts are shown."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -92,7 +92,7 @@ author_website: "https://sebastienrousseau.com/about"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-
+seo_title: "Editorial Standards: Sourcing, Corrections and AI Disclosure"
 ---
 
 <script type="application/ld+json">
@@ -170,6 +170,7 @@ Readers who spot an error should email [contact@sebastienrousseau.com](mailto:co
 
 Site-wide corrections, newest first. Article corrections are also noted on the article itself.
 
+- **2026-11-10**: ISO 20022 dates. Two articles gave November 2026 as the date Swift would stop accepting unstructured addresses; Swift delayed that release on 27 August 2026 and no new date is set ([Bank of England](https://www.bankofengland.co.uk/news/2026/august/delay-to-the-november-2026-rtgs-standards-release)). Both articles now carry a dated update. One of them said the Fedwire Funds Service migrated in March 2025; it migrated in July 2025, and the article is corrected.
 - **2026-11-09**: Author facts. Every page's structured data listed three credentials as "recognised by" HSBC, SWIFT and NIST; none of those bodies issued them, and they are removed. Past employers were listed as schools (`alumniOf`); that now lists schools only. Experience was given as three different figures in different places, one of them computed from a wrong start year; it is now "more than 20 years" everywhere. The author's EPAA role was described as "co-author" and "cited in"; he is a member of the Quantum-Safe Cryptography Working Group and a contributor to its white paper. Talks were marked "Delivered" without a venue; they are now "Available to book". All of these facts now come from one file, `_data/profile.yml`.
 - **2026-11-09**: Privacy notice. It said the site used Google Analytics and Microsoft Clarity, which it never loaded, and did not name Formspree or Google reCAPTCHA, which the contact form uses. The [privacy notice](/privacy/index.html) now lists every service the site uses.
 

@@ -8,6 +8,7 @@ locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
 banner_alt: "數字藍色空間中網路節點的橫幅"
 keywords: "量子演算法, LWE, 格密碼學, 陳逸雷, GapSVP, SIVP, 後量子密碼學, 量子傅立葉變換, 高斯函式, 安全"
+seo_title: "量子運算演算法挑戰格基密碼學"
 ---
 
 ## 執行摘要

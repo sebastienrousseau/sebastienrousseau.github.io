@@ -1,7 +1,7 @@
 ---
 title: "libmake: 반복 작업을 줄이고 고품질 Rust 라이브러리를 구축하는 코드 생성기"
 subtitle: "라이브러리 작성의 정형 작업을 없애는 코드 생성기"
-description: "libmake는 고품질 Rust 라이브러리를 신속히 작성하기 위한 코드 생성기로, 정형 코드를 제거하고 모범 사례를 내장합니다."
+description: "LibMake는 명령 하나나 설정 파일로 Cargo.toml, src/lib.rs, 테스트, 벤치마크, CI를 갖춘 라이브러리 골격을 생성하는 Rust CLI입니다."
 date: "October 26, 2023"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "코드 에디터를 사용하는 개발자"
 keywords: "libmake, 코드 생성기, Rust, Cargo, 라이브러리, 템플릿, 개발자 도구, 모범 사례"
 last_reviewed: "2026-05-16"
+seo_title: "LibMake: 명령 하나로 Rust 라이브러리 골격 생성"
 ---
 
 ![코드 에디터를 사용하는 개발자](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

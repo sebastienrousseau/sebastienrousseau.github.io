@@ -169,6 +169,7 @@ _ASSET_STATS = setup_asset_state(PUBLIC)
 # SEO + Schema.org injection — moved to postbuild_lib.seo
 # Article UI furniture — moved to postbuild_lib.article_furniture
 from postbuild_lib.analytics import beacon_token, inject_analytics_beacon
+from postbuild_lib.article_flags import flagged
 from postbuild_lib.article_furniture import (  # noqa: F401 — re-exports
     AUTHOR_AVATAR,
     AUTHOR_NAME,
@@ -191,6 +192,7 @@ from postbuild_lib.asset_dedupe import (
     remove_duplicate_files,
     rewrite_asset_refs,
 )
+from postbuild_lib.breadcrumb_sync import sync_breadcrumbs
 from postbuild_lib.citations import (
     inject_citations,
     inject_cite_popover,
@@ -239,6 +241,7 @@ from postbuild_lib.html_passes import (
     strip_duplicate_body_h1,
 )
 from postbuild_lib.hub_links import inject_pillar_hub_link, repair_stub_links
+from postbuild_lib.image_ratio import correct_stock_image_ratio
 from postbuild_lib.index_scorecard import inject_index_scorecard
 from postbuild_lib.indexability import apply_noindex_utility_pages, prune_sitemaps
 from postbuild_lib.internal_links import (
@@ -272,10 +275,8 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
     write_robots,
     write_security_txt,
 )
-
-# Legacy-URL redirect conversion (/papers -> /research + locale forks)
 from postbuild_lib.profile_person import apply_person_profile
-from postbuild_lib.redirects import apply_article_redirects, apply_redirect_pages
+from postbuild_lib.redirects import apply_article_redirects, apply_redirect_pages  # legacy URLs
 from postbuild_lib.schemas import (
     align_article_identity,
     inject_dataset,
@@ -302,6 +303,7 @@ from postbuild_lib.seo import (  # noqa: F401 — re-exports for back-compat
     normalize_canonical,
     stamp_image_dimensions,
 )
+from postbuild_lib.seo_title import apply_seo_title
 from postbuild_lib.sharing import (
     inject_action_rail,
     inject_byline_strap,
@@ -310,6 +312,7 @@ from postbuild_lib.sharing import (
     inject_share_rail,
     inject_syndication_panel,
 )
+from postbuild_lib.tools_menu import inject_tools_menu
 
 
 class _PostbuildCounters:
@@ -475,7 +478,7 @@ def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     # few content items the translation-time localiser misses (runs before
     # inject_jsonld_hashes so the CSP hash covers the aligned bytes).
     out = align_jsonld_inlanguage(out)
-    out = apply_person_profile(out)  # profile.yml facts; before CSP hashing
+    out = sync_breadcrumbs(apply_seo_title(apply_person_profile(out)))  # before CSP hashing
     out, n_dim = stamp_image_dimensions(out)
     ctr.img_dims_patched += n_dim
     # Wrap CDN images in /api/transform AFTER stamp_image_dimensions so
@@ -543,8 +546,8 @@ def _apply_schema_subtype_passes(
 
 def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     """Article-furniture + body-content injection passes."""
-    out = _bump(inject_eyebrow, html, ctr, "eyebrows_set")
-    out = _bump(inject_deck, out, ctr, "decks_set")
+    out = _bump(flagged("eyebrow", inject_eyebrow), html, ctr, "eyebrows_set")
+    out = _bump(flagged("deck", inject_deck), out, ctr, "decks_set")
     out = _bump(inject_article_furniture, out, ctr, "furniture_patched")
     out = _bump(inject_breadcrumbs, out, ctr, "crumbs_patched")
     out = _bump(inject_table_labels, out, ctr, "tables_carded")
@@ -567,22 +570,20 @@ def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str
     out = _bump(inject_sources_list, out, ctr, "sources_patched")
     out = _bump(inject_mermaid, out, ctr, "mermaid_patched")
     out = _bump(inject_footnotes, out, ctr, "footnotes_set")
-    # Interactive index scorecard — upgrade the authored mount marker into the
-    # inert <index-scorecard> element + data island + module script. Runs after
-    # fix_sri (in _apply_seo_passes), so the module script's SRI is stamped by
-    # the pass itself. Idempotent + a no-op on pages without the marker.
+    # Index scorecard: marker -> <index-scorecard> + data island + module script
+    # (after fix_sri, so the pass stamps its own SRI). Idempotent.
     out = inject_index_scorecard(out)
-    out = _bump(inject_share_rail, out, ctr, "share_rails_set")
-    out = _bump(inject_action_rail, out, ctr, "action_rails_set")
-    # Wrap-foot stack — order matters: each WRAP_CLOSE_RE.sub inserts
-    # BEFORE </div></main>, so the LAST pass ends up closest to it.
-    # We want: syndicate (top) → cite → reuse → byline (bottom).
+    out = flagged("tools_menu", inject_tools_menu)(out)  # C-4: one Share · Cite menu
+    out = _bump(flagged("share_rail", inject_share_rail), out, ctr, "share_rails_set")
+    out = _bump(flagged("action_rail", inject_action_rail), out, ctr, "action_rails_set")
+    # Wrap-foot stack, top to bottom: syndicate, cite, reuse, byline.
     out = _bump(inject_oembed_link, out, ctr, "oembed_links_set")
     out = inject_article_cta(out)
-    out = _bump(inject_syndication_panel, out, ctr, "syndicate_panels_set")
-    out = _bump(inject_cite_popover, out, ctr, "cite_panels_set")
-    out = _bump(inject_reuse_panel, out, ctr, "reuse_panels_set")
-    out = _bump(inject_byline_strap, out, ctr, "byline_straps_set")
+    syndicate = flagged("syndicate_panel", inject_syndication_panel)
+    out = _bump(syndicate, out, ctr, "syndicate_panels_set")
+    out = _bump(flagged("cite_popover", inject_cite_popover), out, ctr, "cite_panels_set")
+    out = _bump(flagged("reuse_panel", inject_reuse_panel), out, ctr, "reuse_panels_set")
+    out = _bump(flagged("byline_strap", inject_byline_strap), out, ctr, "byline_straps_set")
     return out
 
 
@@ -771,9 +772,8 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     # "starts with /api/" guard in _wrap_cdn_path).
     patched_hl, n_cdn_late = wrap_cdn_images_in_transform(patched_hl)
     ctx.counters.cdn_wrapped += n_cdn_late
-    # Responsive WebP srcset on large /stocks/images/ content images (after
-    # the wrap, so src is already a width-matched variant). WebP-only — the
-    # CDN has no AVIF variants.
+    # Stock images get their file's true ratio, then a WebP srcset (after the wrap).
+    patched_hl = correct_stock_image_ratio(patched_hl)
     patched_hl, n_srcset = add_responsive_srcset(patched_hl)
     ctx.counters.srcset_added += n_srcset
     patched_hl = add_cloudcdn_cors(patched_hl)

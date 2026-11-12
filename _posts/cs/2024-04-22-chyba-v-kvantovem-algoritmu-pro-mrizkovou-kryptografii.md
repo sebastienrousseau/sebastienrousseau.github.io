@@ -8,6 +8,7 @@ locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 banner_alt: "Obrázek vygenerovaný pomocí MidJourney - síť digitálních uzlů v červených a modrých odstínech."
 keywords: "postkvantová kryptografie, NIST, standardizace PQC, Yilei Chen, kvantový algoritmus, mřížková kryptografie, problém LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, kvantově odolná kryptografie"
+seo_title: "Postkvantová kryptografie: chyba v Chenově algoritmu LWE"
 ---
 
 

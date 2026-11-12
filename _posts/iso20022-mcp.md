@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jul 14, 2026"
-description: "The open ISO 20022 layer for AI agents. Nine vendor-neutral MCP servers to generate, validate, reconcile and settle bank payments from natural language. Apache-2.0, on PyPI and the MCP registry."
+description: "The ISO 20022 MCP Suite gives AI agents nine open, vendor-neutral servers to generate, validate, reconcile and settle bank payments from plain language."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -96,7 +96,7 @@ site_last_updated: "2026-10-29"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-
+seo_title: "ISO 20022 MCP Suite: Open Servers for AI Agent Bank Payments"
 ---
 
 ## Let your AI agent make real bank payments.

@@ -92,5 +92,21 @@
   "scorecard.downloaded": "תמונת כרטיס הציונים הורדה",
   "scorecard.radarTitle": "מכ״ם מוכנות",
   "scorecard.methodology": "קראו את מתודולוגיית המדד המלאה",
-  "scorecard.fallback": "ממדי הבשלות מוצגים בטבלה שלמעלה. הפעילו JavaScript כדי לדרג את המוסד שלכם באופן אינטראקטיבי ולייצא את התוצאה."
+  "scorecard.fallback": "ממדי הבשלות מוצגים בטבלה שלמעלה. הפעילו JavaScript כדי לדרג את המוסד שלכם באופן אינטראקטיבי ולייצא את התוצאה.",
+  "footer.title.contact": "יצירת קשר",
+  "footer.contact.location": "לונדון, הממלכה המאוחדת",
+  "footer.contact.response": "מענה ראשון בדרך כלל תוך 48 שעות",
+  "footer.newsletter.link": "הרשמה ל-Banking On Quantum",
+  "nav.workWithMe": "עבודה משותפת",
+  "nav.research": "שיתוף פעולה מחקרי",
+  "nav.openSourceSupport": "תמיכה בקוד פתוח",
+  "nav.aria.toggleWorkWithMe": "הצגה או הסתרה של תפריט המשנה עבודה משותפת",
+  "contact.privacyLine": "ההודעה שלך עוברת ל-Formspree, ששולחת אותה אליי בדוא״ל; ההגנה מספאם היא של Google reCAPTCHA.",
+  "contact.privacyLink": "הודעת פרטיות",
+  "footer.changelog": "יומן שינויים",
+  "contact.eyebrow": "יצירת קשר",
+  "footer.mediaKit": "ערכת מדיה",
+  "contact.appTitle": "יצירת קשר",
+  "nav.hubPqc": "קריפטוגרפיה פוסט-קוונטית",
+  "nav.hubAi": "בינה מלאכותית יישומית"
 }

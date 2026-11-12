@@ -30,6 +30,7 @@ from pathlib import Path as _Path
 _sys.path.insert(0, str(_Path(__file__).resolve().parents[1] / "lib"))
 
 import html
+import json
 import re
 import sys
 from pathlib import Path
@@ -759,6 +760,20 @@ def _render_topic_card(topic_slug: str) -> str:
     )
 
 
+def _hub_breadcrumb_jsonld() -> str:
+    """BreadcrumbList for the hub, matching its visible Home · Topics crumb (F-3)."""
+    base = "https://sebastienrousseau.com"
+    data = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{base}/"},
+            {"@type": "ListItem", "position": 2, "name": "Topics", "item": f"{base}/topics/"},
+        ],
+    }
+    return f'<script type="application/ld+json">{json.dumps(data)}</script>'
+
+
 def render_hub(shell: str) -> tuple[str, str]:
     """Topic-hub page: /topics/index.html grouped by pillar."""
     total_topics = sum(len(p["topics"]) for p in PILLARS)  # type: ignore[arg-type]
@@ -804,7 +819,7 @@ def render_hub(shell: str) -> tuple[str, str]:
         f'<div class="kpi-cell"><span class="kpi-cell-value">{len(PILLARS)}</span><span class="kpi-cell-label">Pillars</span></div>'
         f'<div class="kpi-cell"><span class="kpi-cell-value">{total_topics}</span><span class="kpi-cell-label">Topic clusters</span></div>'
         f'<div class="kpi-cell"><span class="kpi-cell-value">{total_articles}</span><span class="kpi-cell-label">Articles indexed</span></div>'
-        "</section>" + "".join(pillar_sections) + "</section>"
+        "</section>" + "".join(pillar_sections) + "</section>" + _hub_breadcrumb_jsonld()
     )
     out = _strip_extra_jsonld(shell)
     out = _strip_shell_hero(out)

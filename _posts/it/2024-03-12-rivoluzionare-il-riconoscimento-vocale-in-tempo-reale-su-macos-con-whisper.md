@@ -8,6 +8,7 @@ locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/research-paper.webp"
 banner_alt: "Riconoscimento vocale in tempo reale con Whisper su macOS"
 keywords: "Whisper, OpenAI, macOS, MPS, Metal, riconoscimento vocale, tempo reale, M1, accelerazione GPU"
+seo_title: "OpenAI Whisper su macOS: riconoscimento vocale real-time"
 ---
 
 ---

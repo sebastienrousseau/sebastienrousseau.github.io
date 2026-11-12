@@ -1,13 +1,14 @@
 ---
 title: "Rivoluzionare la finanza con algoritmi quantistici potenziati dall'IA"
 subtitle: "Il ruolo trasformativo dell'IA all'interno degli algoritmi quantistici per la finanza"
-description: "Il ruolo trasformativo dell'IA all'interno degli algoritmi quantistici in finanza, con un focus sulla loro struttura matematica e sulle applicazioni bancarie."
+description: "Come l'IA potenzia gli algoritmi quantistici per la finanza, la matematica che li sostiene e dove potrebbero servire nel banking e nei servizi finanziari."
 date: "December 25, 2023"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Rivoluzionare la finanza con algoritmi quantistici potenziati dall'IA"
 keywords: "IA, quantistico, finanza, algoritmi, banking, ottimizzazione, machine learning quantistico"
+seo_title: "Calcolo quantistico in finanza: algoritmi potenziati dall'IA"
 ---
 
 ---

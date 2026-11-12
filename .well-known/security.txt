@@ -3,7 +3,7 @@
 # date is one year out from the most recent rotation; refresh before
 # it lapses or scanners will flag this file as stale.
 
-Contact: mailto:sebastian.rousseau@gmail.com
+Contact: mailto:contact@sebastienrousseau.com
 Expires: 2027-06-04T00:00:00.000Z
 Preferred-Languages: en, fr
 Canonical: https://sebastienrousseau.com/.well-known/security.txt

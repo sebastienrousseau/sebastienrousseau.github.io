@@ -1,13 +1,14 @@
 ---
 title: "比特币：首个加密货币的年度回顾"
 subtitle: "重新定义货币的点对点电子支付系统"
-description: "比特币：一种点对点电子现金系统（P2P ECS），有望彻底改变人们在线交易的方式。"
+description: "本文带你了解比特币如何作为一种点对点电子现金系统运作，它的分布式账本如何解决双重支付这一难题，以及它为何有可能彻底改变人们进行在线支付的方式。"
 date: "January 1, 2018"
 language: "zh-Hans"
 locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
 banner_alt: "一堆金币和银币堆放在桌面上"
 keywords: "比特币, 加密货币, 区块链, 点对点, 双重支付, 挖矿, 工作量证明, ETF, 中本聪, 去中心化金融"
+seo_title: "比特币详解：首个加密货币如何运作"
 ---
 
 ![一堆金币和银币堆放在桌面上](https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp).class=\"img-fluid clearfix\"

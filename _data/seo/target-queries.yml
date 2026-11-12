@@ -1,0 +1,36 @@
+# The 30 queries the site should become the reference for (plan G-9), 10
+# per topic hub. scripts/seo_and_audit/target_queries.py reports clicks,
+# impressions and position for each from a Search Console query export.
+iso-20022:
+  - ISO 20022 migration guide
+  - ISO 20022 for banks
+  - ISO 20022 structured address
+  - pacs.008 explained
+  - pain.001 explained
+  - camt.053 explained
+  - CBPR+ structured address
+  - ISO 20022 purpose codes CHAPS
+  - MT to MX migration
+  - ISO 20022 validation tool
+post-quantum-cryptography:
+  - post-quantum cryptography payments
+  - quantum-safe banking
+  - ML-KEM payments
+  - post-quantum cryptography banks timeline
+  - harvest now decrypt later banks
+  - NCSC post-quantum migration timeline
+  - FIPS 203 ML-KEM explained
+  - crypto agility banks
+  - post-quantum migration roadmap financial services
+  - ML-DSA signature size
+applied-ai:
+  - agentic AI banking
+  - AI in payments operations
+  - agentic AI payments operations
+  - AI governance banks
+  - FCA AI regulation
+  - EU AI Act banks
+  - MCP server ISO 20022
+  - AI agents payments
+  - AI model risk management banks
+  - generative AI banking use cases

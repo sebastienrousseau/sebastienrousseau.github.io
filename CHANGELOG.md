@@ -10,6 +10,39 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.0.36] - Unreleased
+
+Design v3, a home page with one idea per section, Work with me pages, and search titles that fit.
+
+### Added
+
+- **Design system v3** (`assets/css/design-system.css` section 0): spacing, section rhythm, three radii, neutral surfaces, hairlines, layered shadows, an accent ramp and motion tokens, all derived from `--ink`, `--paper` and `--accent`. Buttons, cards, the nav, section rhythm and landing headlines (Inter) read them; articles keep Newsreader.
+- **Inter on the first view**: preloaded, `font-display: swap` over the metric-matched fallback, Inter 4.1 variable with its `opsz` axis (latin 51 KB).
+- **Home page in seven sections** (plan C-3): hero (option A copy, one primary action, "Get in touch"), employer logo row, what I build, proof, recognition and featured work, latest writing, and one closing call to action with the newsletter link. The "Read as..." lens leaves the home page, the live clock moves to Contact and the AI due-diligence links to the foot of About. `design-system.mjs` gates the structure (sections, buttons in the first viewport, CTA labels, H1 length) and now sweeps 375px too.
+- **Work with me** (`/work-with-me/`, `/work-with-me/research/`, `/work-with-me/open-source/`) from `_data/services.yml`: an answer paragraph, who it is for, what you get, how it works, proof from `profile.yml` and the metrics, an FAQ, and Service and FAQPage JSON-LD built from the visible text. No advisory page (decision D-4).
+- **`/languages/`**: every published locale by its native name. Indexed pages' language menus list only the 11 indexed locales and end with "More languages" (decision D-3); `test_switcher_indexed_only.py` gates it.
+- **Footer Contact column** (address, London, typical first response within 48 hours, the newsletter) and a Work with me item in the header and footer, translated in every locale.
+- **Three topic hubs** (`/iso-20022/`, `/post-quantum-cryptography/`, `/applied-ai/`, plan G-1) from `_data/hubs.yml`: an answer paragraph, at-a-glance facts each checked on an official page and dated, reading paths for boards, engineers and regulators, a dated roadmap, the latest articles, an FAQ (FAQPage) and the expert block. The build fails when a hub links fewer than 20 articles or a fact is unsourced or older than 120 days. The Insights menu lists them first.
+- **Free tools** (`/tools/`, plan G-4): a structured-address checker, an ISO 20022 message identifier and a PQC sizing calculator (FIPS 203 and 204 sizes), all in the browser with nothing sent anywhere; 36 fixtures at 100% coverage.
+- **Media kit** (`/about/media-kit/`) and one **expert block** on the hubs and service pages, both from `profile.yml` (plan G-6).
+- **One "Share · Cite" menu** on articles in place of the share and action rails, the syndication panel and the byline strap (`_data/article_furniture.yml` switches each, plan C-4).
+- **A more useful 404**: a search box filled from the missing path, six key links and the three newest articles (plan F-8).
+- **Operations** (plans B-3, B-4, F-9, A-3, G-9): a content-audit sheet and a decisions file applied at build time (noindex or merge), a weekly cadence warning, IndexNow pings for changed URLs after each deploy (needs the `INDEXNOW_KEY` secret), a weekly git-bundle backup (needs `BACKUP_TOKEN` and a private repository), 30-day build artefacts, a restore runbook, translation review sheets with a 60-day review gate, target queries and monthly logs for measuring authority, and an image audit.
+- **Gates**: visible breadcrumbs and BreadcrumbList agree on every page (structured names now follow the visible ones), and `llms.txt` lists the services.
+- **Search titles that fit**: a postbuild pass puts the post's `seo_title` in `<title>` when the headline is too long (60 characters; 30 for Chinese and Japanese, 35 for Korean). New `seo_title` and `description` values for 136 English pages and their translations in the 10 indexed locales; `test_title_description_lengths.py` reports what is still out of range.
+
+### Fixed
+
+- **Stock images keep their true aspect ratio**: `_data/stock_image_dims.json` records the real size of the 118 stock originals and a postbuild pass corrects every stock `<img>` height (the story banner shipped as 1200x675, 1600x1000 and 800x800; it is 2584x1597).
+- **Slug maps pointed at the wrong article** for five same-day pairs in most locales (62 pairs), so hreflang and the language menu led to the other article. Swapped back; `test_slug_maps_match_content.py` compares body links to keep it so.
+- **The personal Gmail is off the site**: `security.txt`, `SECURITY.md`, `SUPPORT.md` and `CODE_OF_CONDUCT.md` give `contact@sebastienrousseau.com`, and the profile gate bans the personal address.
+- **One newsletter path, no e-mail in URLs**: the footer and hub forms that put an address in the URL (or posted to a second Formspree form) are links to Banking On Quantum; the contact form pre-fills only the subject, shows who processes the message, and redirects to `/thanks/`.
+- **ISO 20022 dates**: two articles gave November 2026 for the end of unstructured addresses, which Swift delayed on 27 August 2026; both carry a dated update, and the Fedwire migration date is corrected to July 2025 (corrections log).
+- **Translated chrome**: the Contact link and page title in Bengali, Hausa and Yoruba, and the Contact eyebrow and app title in every locale, were English. The leak gate no longer counts a string a locale translates identically ("Contact" in French).
+- **Dependabot #523 and #524** folded in; the dev lock is regenerated (cyclonedx-bom 8 still yields a valid CycloneDX 1.6 SBOM).
+
+---
+
 ## [0.0.35] - 2026-11-09
 
 ssg pinned to an exact release; one source for every fact about the author.
@@ -475,7 +508,8 @@ Two fixes merged to `main` between 0.0.28 and 0.0.30, released under this number
 
 ---
 
-[0.0.35]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.34...HEAD
+[0.0.36]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.35...HEAD
+[0.0.35]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.34...v0.0.35
 [0.0.34]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.33...v0.0.34
 [0.0.33]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.32...v0.0.33
 [0.0.32]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.31...v0.0.32

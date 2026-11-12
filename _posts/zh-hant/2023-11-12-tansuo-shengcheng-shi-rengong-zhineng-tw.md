@@ -1,13 +1,14 @@
 ---
 title: "探索生成式人工智慧"
 subtitle: "2023 年的生成式 AI：工作原理、在金融服務中的首批落地以及值得關注的倫理與架構問題"
-description: "深入瞭解生成式人工智慧的機制、影響、推動力，以及在金融與多行業的應用與倫理考量。"
+description: "了解生成式 AI 與 Transformer 架構如何運作，它會率先在金融服務業的哪些環節落地，以及在推動過程中需要認真思考的倫理與架構問題。"
 date: "November 12, 2023"
 language: "zh-Hant"
 locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp"
 banner_alt: "AI、人工智慧概念、3D 渲染、概念影象"
 keywords: "生成式 AI, 人工智慧, GPT-4, 大型語言模型, Transformer, GAN, 自動編碼器, 擴散模型, 多模態 AI, 可解釋 AI"
+seo_title: "生成式 AI 詳解：原理與落地場景"
 ---
 
 ![AI、人工智慧概念、3D 渲染、概念影象](https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp).class=\"img-fluid clearfix\"

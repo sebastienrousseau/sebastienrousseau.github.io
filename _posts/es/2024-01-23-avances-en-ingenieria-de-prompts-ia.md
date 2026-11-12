@@ -1,13 +1,14 @@
 ---
 title: "AI Prompt Engineering 2024: técnicas que funcionan"
 subtitle: "Rediseñar la interacción humano-máquina mediante avances en las instrucciones personalizadas"
-description: "Explore los avances 2024 del Prompt Engineering: tendencias y técnicas innovadoras que revolucionan la tecnología y las finanzas."
+description: "Ingeniería de prompts: prompting zero-shot y few-shot, chain-of-thought, autoconsistencia, herramientas con ReAct y riesgos de inyección en finanzas."
 date: "January 23, 2024"
 language: "es-ES"
 locale: "es_ES"
 banner: "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp"
 banner_alt: "Un hombre analizando datos en pantallas"
 keywords: "AI Prompt Engineering, instrucciones personalizadas, IA multipersona, chain of thought, computación cuántica, IA ética, adaptive prompting, zero shot, few shot, tendencias tecnológicas IA"
+seo_title: "Prompting chain-of-thought: guía de ingeniería de prompts IA"
 ---
 
 En 2024, el Prompt Engineering permite a soluciones como los chatbots mantener conversaciones empáticas que comprenden las claves culturales: un avance importante en las interacciones IA-humano. El **Prompt Engineering** transforma la interacción humano-máquina mediante avances en las instrucciones personalizadas, multipersona leveraging y enfoques chain-of-thought. Este artículo explora estos desarrollos y su impacto en la tecnología, las finanzas y la educación, integrando también perspectivas sobre la computación cuántica y la ética de la IA.

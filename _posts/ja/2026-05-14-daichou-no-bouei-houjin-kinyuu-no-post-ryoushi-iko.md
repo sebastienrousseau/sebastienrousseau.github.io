@@ -1,7 +1,7 @@
 ---
 title: "台帳の防衛:法人金融のポスト量子移行"
 subtitle: "コーポレートトレジャリーの量子安全アーキテクチャ"
-description: "コーポレート金融サービスのためのポスト量子移行ガイド。台帳、メッセージング、認証システム。"
+description: "企業金融におけるポスト量子暗号移行の取締役会向けガイド。G7 ロードマップ、EU・英国・豪州のタイムライン、BIS Project Leap の教訓を解説。"
 date: "May 14, 2026"
 language: "ja-JP"
 locale: "ja_JP"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "量子安全な暗号化されたデータ"
 keywords: "ポスト量子移行, コーポレート金融, トレジャリー, 台帳, 量子安全, PQC, 暗号アグリティ"
 last_reviewed: "2026-05-14"
+seo_title: "ポスト量子暗号：企業金融の移行の取締役会ガイド"
 ---
 
 ## 台帳の防衛:法人金融のポスト量子移行

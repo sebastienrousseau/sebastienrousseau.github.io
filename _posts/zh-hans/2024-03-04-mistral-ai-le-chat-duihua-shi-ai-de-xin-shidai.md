@@ -8,6 +8,7 @@ locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp"
 banner_alt: "色彩斑斓的猫的抽象数字艺术"
 keywords: "Le Chat, Mistral AI, 对话式 AI, 多语言, 定制化, 离线能力, 生成式 AI, ChatGPT, 企业 AI, NLP"
+seo_title: "Mistral 的 Le Chat：多语言对话式 AI"
 ---
 
 ## 增强定制化与多语言能力的对话式 AI 新挑战者

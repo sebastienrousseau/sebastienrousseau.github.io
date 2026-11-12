@@ -1,13 +1,14 @@
 ---
 title: "革新广告业：AI 如何塑造未来"
 subtitle: "探索 AI 如何变革广告：聚焦亚马逊 Rufus 与 Meta 的最新进展，揭示对消费者参与的影响"
-description: "AI 通过亚马逊 Rufus 与 Meta 的生成式工具重塑广告业，提升消费者参与度与广告投资回报率。"
+description: "本文介绍 AI 如何改变广告业的消费者互动方式，并深入解读亚马逊 Rufus 购物助手以及 Meta 在生成式 AI 领域的最新进展与动向。"
 date: "February 8, 2024"
 language: "zh-Hans"
 locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/advertising-ai.webp"
 banner_alt: "一位戴着蝴蝶和花朵的机器人女性"
 keywords: "AI 广告, 亚马逊 Rufus, Meta, 生成式 AI, 个性化, 对话商业, 创意工具, 投资回报率, 广告策略, 消费者参与"
+seo_title: "广告业 AI：亚马逊 Rufus、Meta 与生成式 AI"
 ---
 
 人工智能（AI）正在深刻变革广告格局，为广告活动带来前所未有的效率与效果。亚马逊推出的 [**Rufus ⧉**][00]——个人购物助手聊天机器人——以及 Meta 跨平台整合 AI 的对话助手与创意工具，体现了这场革命的前沿。这些进展不仅提升消费者体验，也为精准定位与参与开辟新途径，凸显 AI 在广告未来中的关键角色。

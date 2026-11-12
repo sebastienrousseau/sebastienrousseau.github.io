@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "마이크와 음파"
 keywords: "OpenAI Whisper, macOS, Metal Performance Shaders, MPS, 실시간, 음성 인식, Apple Silicon"
 last_reviewed: "2026-05-16"
+seo_title: "macOS의 OpenAI Whisper: 고속 실시간 음성 인식"
 ---
 
 ![마이크와 음파](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

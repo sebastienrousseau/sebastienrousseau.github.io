@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "At the Economist Enterprise Physical AI and Robotics Summit in London, aerospace and automation leaders challenged the humanoid robotics hype. Discover why 100% lights-out automation remains an industrial fallacy, why 10% incremental productivity with humans-in-the-loop delivers immediate returns, and how functional morphology outperforms bipedal mimicry in aerospace and automotive assembly."
+description: "Why aerospace and automation leaders doubt humanoid robotics on the factory floor, why lights-out automation is a fallacy, and why form should follow function."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -100,6 +100,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "At the Economist Enterprise Physical AI and Robotics Summit in London, aerospace and manufacturing leaders dismantled the silicon-valley narrative of the general-purpose humanoid robot. While venture capital pours billions into bipedal forms, industrial reality proves that form must strictly follow function."
 last_reviewed: "2026-10-13"
+seo_title: "Humanoid Robotics vs Functional Robots in Manufacturing"
 ---
 
 At the Economist Enterprise Physical AI and Robotics Summit held at Convene 200 Aldersgate in London on 13 October 2026, manufacturing executives, aerospace engineers, and roboticists gathered to address a fundamental schism in modern automation: should robots mimic the human body, or should mechanical morphology strictly follow industrial physics? While venture capital continues to pour billions into bipedal humanoid forms promising universal labour substitution, shop-floor practitioners from Airbus, Leonardo, and academic research delivered a stark, empirical reality check.

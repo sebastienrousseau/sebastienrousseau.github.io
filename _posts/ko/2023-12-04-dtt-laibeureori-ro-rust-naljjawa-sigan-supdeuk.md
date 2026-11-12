@@ -1,7 +1,7 @@
 ---
 title: "dtt 라이브러리로 Rust의 날짜와 시간을 숙달하다"
 subtitle: "Rust로 작성된 포괄적 날짜·시간 라이브러리"
-description: "dtt는 파싱, 포맷, 시간대 조작을 위한 포괄적 날짜·시간 Rust 라이브러리입니다."
+description: "DateTime(DTT)은 날짜와 시간의 파싱, 검증, 조작, 포맷을 위한 Rust 라이브러리입니다. 주요 기능과 프로젝트에서 활용하는 방법을 알아봅니다."
 date: "December 4, 2023"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "유리 건물 위의 시계"
 keywords: "dtt, 날짜, 시간, Rust, 시간대, RFC 3339, ISO 8601, 라이브러리, 파싱, 포맷"
 last_reviewed: "2026-05-16"
+seo_title: "DateTime(DTT): Rust 날짜·시간 관리 해설"
 ---
 
 ![유리 건물 위의 시계](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

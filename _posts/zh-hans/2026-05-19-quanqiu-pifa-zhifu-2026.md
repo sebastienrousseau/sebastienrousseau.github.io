@@ -1,7 +1,7 @@
 ---
 title: "2026年全球批发支付：ISO 20022、RTGS更新与互操作性的经济学"
 subtitle: "批发支付已成为一种经济政策杠杆：ISO 20022、RTGS（实时全额结算）运行时间、非银行机构准入、互联互通、DLT（分布式账本技术）结算试点以及G20路线图正围绕全球流动性流动的成本而趋同。"
-description: "2026年的全球批发支付正在被ISO 20022协调、RTGS更新、结算窗口延长、非银行机构准入、API治理、DLT试点以及跨境支付碎片化所重塑。其经济议题是互操作性，而不仅仅是消息传递。"
+description: "2026 年批发支付：ISO 20022 协调、RTGS 更新、结算窗口延长、非银行机构准入与 DLT 试点，正在如何改变互操作性的经济学。"
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "2026年全球批发支付架构图——ISO 20022、RTGS更新、跨境通道、流动性窗口与DLT结算试点"
 banner_height: "571"

@@ -1,13 +1,14 @@
 ---
 title: "理解区块链背后的技术"
 subtitle: "在以太坊上构建加密货币：区块链开发、代币化与加密货币实现的全面指南"
-description: "区块链技术已经开启了一个去中心化的新时代。本文以以太坊为平台，带你逐步构建自己的加密货币。"
+description: "区块链技术入门指南：逐一介绍密码学哈希链、默克尔树与分布式共识机制的基本原理，并说明以太坊如何在此基础上进一步构建出一个功能完整的智能合约平台。"
 date: "January 9, 2018"
 language: "zh-Hans"
 locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp"
 banner_alt: "一座具有许多孔洞的高塔建筑"
 keywords: "区块链, 以太坊, 智能合约, Solidity, 加密货币, 代币化, ERC-20, dApps, Geth, 测试网"
+seo_title: "区块链技术：哈希链、默克尔树与共识"
 ---
 
 ![一座具有许多孔洞的高塔建筑](https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp).class=\"img-fluid clearfix\"

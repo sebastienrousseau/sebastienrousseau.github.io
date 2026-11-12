@@ -8,6 +8,7 @@ locale: "fr_FR"
 banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
 banner_alt: "Ordinateur portable éteint sur une table blanche avec un verre d'eau à gauche et un stylo, un bloc-notes et une plante à droite"
 keywords: "Static Site Generator, générateur de sites statiques, SSG, Rust, performance, SEO, accessibilité, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS"
+seo_title: "Static Site Generator : un SSG rapide en Rust pour le Web"
 ---
 
 ![Ordinateur portable éteint sur une table blanche avec un verre d'eau à gauche et un stylo, un bloc-notes et une plante à droite](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"

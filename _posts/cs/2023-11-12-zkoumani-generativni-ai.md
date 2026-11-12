@@ -1,13 +1,14 @@
 ---
 title: "Generativní AI v roce 2023: jak funguje a kde nachází uplatnění"
 subtitle: "Aplikovaná umělá inteligence v bankovnictví a finančních službách."
-description: "Generativní AI v roce 2023: jak funguje, kde se ve finančních službách uplatňuje jako první a jaké etické a architektonické otázky je třeba klást."
+description: "Jak funguje generativní AI a architektura transformer, kde se ve finančních službách uplatní jako první a jaké etické a architektonické otázky je třeba klást."
 date: "November 12, 2023"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
 banner_alt: "Abstraktní vizualizace neuronové sítě v modrých a fialových tónech znázorňující zpracování AI"
 keywords: "generativní AI, velký jazykový model, architektura transformer, GPT-4, AI ve finančních službách, halucinace, generování rozšířené o vyhledávání, governance AI, základový model, doladění"
+seo_title: "Generativní AI vysvětlená: jak funguje a kde se uplatní"
 ---
 
 

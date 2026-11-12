@@ -8,6 +8,7 @@ locale: "es_ES"
 banner: "https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp"
 banner_alt: "Arte digital abstracto colorido de un gato"
 keywords: "Le Chat, Mistral AI, chatbot Mistral, asistente virtual, comprensión multilingüe, servicio al cliente IA, soluciones empresariales Mistral, personalización Le Chat, soporte multilingüe, comunicación IA, IA para empresa"
+seo_title: "Le Chat de Mistral AI: una IA conversacional multilingüe"
 ---
 
 ## Un nuevo retador de la IA conversacional, con personalización y capacidades multilingües mejoradas

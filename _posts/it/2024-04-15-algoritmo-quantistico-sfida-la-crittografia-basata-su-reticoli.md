@@ -8,6 +8,7 @@ locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 banner_alt: "Algoritmo quantistico e reticoli"
 keywords: "quantistico, reticoli, LWE, Yilei Chen, Kyber, PQC, vulnerabilità"
+seo_title: "Un algoritmo quantistico sfida la crittografia su reticoli"
 ---
 
 ---

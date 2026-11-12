@@ -1,13 +1,14 @@
 ---
 title: "另一種名義下的穩定幣收益：貝萊德 BRSRV 與 BSTBL 檔案解碼"
 subtitle: "貝萊德的兩份 SEC 註冊——在 GENIUS 法案下作為貨幣市場基金而非穩定幣運作"
-description: "貝萊德 2026 年 5 月 8 日提交兩份 SEC 註冊——BRSRV 與 BSTBL——透過代幣化貨幣市場基金繞開 GENIUS 法案對穩定幣付息的禁令。"
+description: "貝萊德以貨幣市場基金形式提交了 BRSRV 與 BSTBL，其作用類似可生息的美元。了解它們如何運作，又如何繞開 GENIUS 法案對穩定幣收益的限制。"
 date: "May 15, 2026"
 language: "zh-Hant"
 locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp"
 banner_alt: "貝萊德代幣化貨幣市場基金架構圖——BRSRV OnChain Shares 與 BSTBL ERC-20 份額類別，及 GENIUS 法案儲備流"
 keywords: "貝萊德, BRSRV, BSTBL, GENIUS 法案, 穩定幣, 代幣化, 貨幣市場基金, BUIDL, 以太坊, BNY Mellon"
+seo_title: "貝萊德 BRSRV 與 BSTBL：代幣化貨幣基金解讀"
 ---
 
 GENIUS 法案下穩定幣不能支付收益。2026 年 5 月 8 日，貝萊德為兩個產品提交 SEC 註冊，透過被監管為貨幣市場基金而非穩定幣解決該約束——同時在錢包中表現得像公鏈上的生息美元。

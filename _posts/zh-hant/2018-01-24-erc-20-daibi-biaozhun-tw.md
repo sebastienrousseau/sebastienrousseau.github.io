@@ -8,6 +8,7 @@ locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
 banner_alt: "棕色木桌上一臺關機的膝上型電腦"
 keywords: "ERC-20, 以太坊, 代幣標準, 智慧合約, DeFi, 去中心化金融, 代幣化, Solidity, dApps, 區塊鏈"
+seo_title: "ERC-20 詳解：以太坊代幣介面標準"
 ---
 
 ![棕色木桌上一臺關機的膝上型電腦](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"

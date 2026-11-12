@@ -1,13 +1,14 @@
 ---
 title: "Zabezpečení účetní knihy: příručka na úrovni správní rady k postkvantové migraci pro firemní finance"
 subtitle: "Kvantové riziko přešlo od výzkumné zajímavosti k aktivnímu regulačnímu mandátu. S plánem G7 zveřejněným v lednu 2026 a s projektem BIS Project Leap, který prokázal proveditelnost v provozních platebních systémech, už otázka na úrovni správní rady nezní, zda migrovat. Zní, zda lze migraci dokončit dříve, než vyprší doba životnosti dnešních dat."
-description: "Kvantové riziko přešlo od výzkumné zajímavosti k aktivnímu regulačnímu mandátu. S plánem G7 zveřejněným v lednu 2026, s vyjasněnými časovými plány EU, Spojeného království a ASD a s projektem BIS Project Leap, který prokázal proveditelnost na úrovni centrální banky, už otázka pro správní rady nezní, zda migrovat. Zní, zda lze migraci dokončit dříve, než vyprší kryptografická doba životnosti dnešních dat."
+description: "Průvodce postkvantovou migrací ve firemních financích pro správní rady: plán G7, časové plány EU, Spojeného království a Austrálie a poučení z BIS Project Leap."
 date: "May 14, 2026"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "Diagram plánu migrace postkvantové kryptografie: infrastruktura firemního bankovnictví přecházející z RSA na ML-KEM a ML-DSA"
 keywords: "postkvantová kryptografie, migrace PQC, firemní bankovnictví, finanční služby, plán G7 CEG, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204"
+seo_title: "Postkvantová kryptografie: průvodce migrací pro správní rady"
 ---
 
 Kvantové riziko přešlo od výzkumné zajímavosti k aktivnímu regulačnímu mandátu. S plánem G7 zveřejněným v lednu 2026, s vyjasněnými časovými plány EU, Spojeného království a Austrálie a s projektem BIS Project Leap, který prokázal proveditelnost v provozních platebních systémech, už otázka pro správní rady nezní, zda migrovat. Zní, zda lze migraci dokončit dříve, než vyprší kryptografická doba životnosti dnešních dat.

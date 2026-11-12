@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 24, 2026"
-description: "ロンドンでレダ・グリプティス博士は、モダナイゼーションに終わりはないと論じました。金融機関は数十年分の例外に向き合い、AIには安全かつ慎重に、しかし遅れずに取り組むべきだとしています。"
+description: "Leda Glyptis 博士が、銀行の近代化に終わりはなく、数十年分の例外が積み上がると論じる理由と、AI の導入は慎重であるべきだが遅くてはならない理由。"
 format-detection: "telephone=no"
 hreflang: "ja"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "金融サービス業界は20〜25年にわたり、モダナイゼーションを終了日のあるプロジェクトとして扱ってきました。ロンドンで開かれたOracle Financial Services Summitの冒頭で、レダ・グリプティス博士は、業界の弱点は..."
 last_reviewed: "2026-10-24"
+seo_title: "Leda Glyptis：銀行の近代化に終わりはない"
 ---
 
 # モダナイゼーションに終わりはなく、積み上がるのは例外です

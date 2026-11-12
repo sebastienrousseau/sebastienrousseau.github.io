@@ -1,13 +1,14 @@
 ---
 title: "Eine neue Kryptowährung und eine schnellere Zahlungslösung für die Zukunft"
 subtitle: "EXTC Network: eine Vision für sofortige Zahlungen auf der Blockchain"
-description: "Ein bedeutendes Kapitel in der Entwicklung der globalen Finanzlandschaft, geprägt von technologischer Innovation, geopolitischen Verschiebungen und nachhaltiger Finanzwirtschaft."
+description: "Wie die EXTC-Plattform 2018 schnellere Auslandszahlungen mit ERC-223-Smart-Contracts auf Ethereum erprobte und so eine frühe Blaupause für DeFi bot."
 date: "February 4, 2018"
 language: "de"
 locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp"
 banner_alt: "Ausgeschalteter Laptop auf einem braunen Holztisch"
 keywords: "EXTC Network, Kryptowährung, schnellere Zahlungen, Ethereum, EIP20, Smart Contracts, Blockchain, grenzüberschreitende Zahlungen, finanzielle Inklusion"
+seo_title: "EXTC: Schnellere grenzüberschreitende Zahlungen mit ERC-223"
 ---
 
 ![Ausgeschalteter Laptop auf einem braunen Holztisch](https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp).class=\"img-fluid clearfix\"

@@ -12,14 +12,20 @@
  * and Georgia (serif base). After the WOFF2 lands the layout stays
  * dimensionally identical — no reflow, no CLS spike.
  *
- * Loading model: a first view never waits on these files. The stylesheet's
- * type stacks start at the metric-matched fallbacks below; main.js fetches
- * the latin WOFF2 after the page's load event, and on later views
- * theme-init.js adds .wf to <html>, which puts the webfonts first in the
- * stacks before paint. Every face is font-display: optional: on those
- * later views the files come from the HTTP cache inside the short block
- * period, and if the cache has dropped one, that view keeps the fallback
- * rather than swapping (and reflowing) mid-read.
+ * Loading model: Inter, the face every page sets its body and headings in,
+ * is on the first view: base.html preloads inter-latin.woff2 and its two
+ * faces use font-display: swap, so the metric-matched Inter Fallback paints
+ * first and the swap does not move the layout. Inter is 4.1 variable (OFL,
+ * rsms/inter v4.1), instanced to wght 400-700 with its opsz axis kept, so
+ * headings get the display shapes (font-optical-sizing: auto), subset to the
+ * ranges below with the calt ccmp dnom frac kern locl mark mkmk numr pnum
+ * tnum features. Newsreader and JetBrains Mono stay off the first view:
+ * main.js fetches them after the page's load event, and on later views
+ * theme-init.js adds .wf to <html>, which puts them first in their stacks
+ * before paint. Those faces keep font-display: optional: on later views
+ * the files come from the HTTP cache inside the short block period, and if
+ * the cache has dropped one, that view keeps the fallback rather than
+ * swapping (and reflowing) mid-read.
  */
 
 /* ───────────────────────────── Inter ───────────────────────────── */
@@ -28,7 +34,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400 700;
-  font-display: optional;
+  font-display: swap;
   src: url('inter-latin.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
                  U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F,
@@ -40,7 +46,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400 700;
-  font-display: optional;
+  font-display: swap;
   src: url('inter-latin-ext.woff2') format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
                  U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF,

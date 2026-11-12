@@ -100,6 +100,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Twelve years after its release, Luc Besson's *Lucy* reads less like pseudo-science and more like a thought experiment about what happens when human knowledge migrates from biological to…"
 last_reviewed: "2026-05-11"
+seo_title: "Lucy 2014 Film Revisited: AI, Quantum and Knowledge Transfer"
 ---
 
 ## Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines

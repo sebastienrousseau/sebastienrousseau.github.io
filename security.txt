@@ -2,7 +2,7 @@
 # look in both locations. The canonical RFC 9116 file lives at the
 # /.well-known/ path; this copy is a discoverability convenience.
 
-Contact: mailto:sebastian.rousseau@gmail.com
+Contact: mailto:contact@sebastienrousseau.com
 Expires: 2027-06-04T00:00:00.000Z
 Preferred-Languages: en, fr
 Canonical: https://sebastienrousseau.com/.well-known/security.txt

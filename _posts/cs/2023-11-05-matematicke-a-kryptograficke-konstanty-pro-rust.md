@@ -8,6 +8,7 @@ locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
 banner_alt: "Matematický výpočet"
 keywords: "matematické konstanty, kryptografické konstanty, bezpečnost v Rustu, bezpečná komunikace, šifrování, RSA, kryptografie eliptických křivek, knihovna Common (CMN), aplikace v Rustu, matematické výpočty"
+seo_title: "Matematické konstanty v Rustu: knihovna Common (CMN)"
 ---
 
 

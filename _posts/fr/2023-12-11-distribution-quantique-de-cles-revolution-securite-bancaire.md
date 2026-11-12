@@ -8,6 +8,7 @@ locale: "fr_FR"
 banner: "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp"
 banner_alt: "HSBC depuis les docks"
 keywords: "distribution de clés quantique, QKD, sécurité quantique, banque, industrie financière, finance numérique, cybersécurité, calcul quantique, HSBC, essai de protection quantique, transactions financières"
+seo_title: "Distribution quantique de clés (QKD) : sécuriser la banque"
 ---
 
 ![HSBC From the Docks][00].class=\"img-fluid clearfix fade-in\"

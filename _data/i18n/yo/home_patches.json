@@ -166,8 +166,8 @@
       "<a class=pill href=\"/yo/awon-akole/index.html\">Ka ìwádìí tuntun</a>"
     ],
     [
-      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/yo/kan-si-wa/index.html\">Kàn sí mi</a>"
+      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"\\1\" href=\"/yo/kan-si-wa/index.html\">Kàn sí mi</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -356,6 +356,50 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">Ṣàwárí àwọn ilé-ìkàwé ISO 20022 <span"
+    ],
+    [
+      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
+      ">Ètò amáyédẹrùn ìsanwó tí àwọn ilé ìfowópamọ́ lè gbẹ́kẹ̀lé ní sànmánì quantum.</h1>"
+    ],
+    [
+      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
+      ">Mo ń darí àwọn ọjà API ìsanwó ńlá ní HSBC, mo sì ń kọ́ àwọn irinṣẹ́ orísun ṣíṣí fún ISO 20022 àti post-quantum tí àwọn ilé ìfowópamọ́ àti fintech lè ṣàyẹ̀wò, dánwò, kí wọ́n sì tún lò.</p>"
+    ],
+    [
+      ">Read the research</a>",
+      ">Ka ìwádìí náà</a>"
+    ],
+    [
+      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
+      ">Olùkópa nínú ìwé funfun EPAA · Fellow, Institution of Analysts and Programmers</p>"
+    ],
+    [
+      ">Payments and digital products, built at:</p>",
+      ">Àwọn ọjà ìsanwó àti dígítà tí mo kọ́ ní:</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Recognition</p>",
+      "<p class=\"feat-eyebrow\">Ìdánimọ̀</p>"
+    ],
+    [
+      ">Recognition and featured work\\.</h2>",
+      ">Ìdánimọ̀ àti àwọn iṣẹ́ pàtàkì.</h2>"
+    ],
+    [
+      "aria-label=\"Recognition\"",
+      "aria-label=\"Ìdánimọ̀\""
+    ],
+    [
+      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
+      "<li>Fellow ti Institution of Analysts and Programmers (FIAP)</li>"
+    ],
+    [
+      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
+      ">Ṣé ò ń ṣiṣẹ́ lórí ìsanwó, ààbò quantum tàbí ISO 20022?</h2>"
+    ],
+    [
+      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
+      ">Sọ ohun tí o ń kọ́ fún mi. Ìdáhùn àkọ́kọ́ máa ń dé láàrin wákàtí 48.</p>"
     ]
   ]
 }

@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "런던의 Economist Enterprise Physical AI and Robotics Summit에서 Kier Group과 BSI의 리더들이 자율 시스템의 거버넌스를 논의했다. 현장의 신뢰, ‘다크 사이드 자율성’, 운영 책임의 배분을 살펴본다."
+description: "Kier Group과 BSI의 리더들이 피지컬 AI 거버넌스에 접근하는 방식: 인력의 신뢰 유지, 사람과 기계 사이의 인계 관리, 그리고 책임 배분."
 format-detection: "telephone=no"
 hreflang: "ko"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "자율적으로 움직이는 물리적 기계를 사람과 나란히 배치하면, 순수한 소프트웨어가 한 번도 겪지 않았던 심각한 심리적·법적 위험이 생긴다. Economist Enterprise Physical AI and Robotics Summit에서 Kier Group과 영국표준협회(BSI)의 리더들은 피지컬 AI를 위한 거버넌스 청사진을 제시했다."
 last_reviewed: "2026-10-13"
+seo_title: "피지컬 AI 인력 거버넌스: 신뢰와 책임"
 ---
 
 기업용 소프트웨어가 고장 나면 데이터베이스가 손상되고, 네트워크 연결이 끊기고, 토큰이 유출된다. 피지컬 AI 시스템이 고장 나면 수백 킬로그램의 관절형 강철, 고토크 유압 액추에이터, 또는 자율 토공 장비가 물리적 기반 시설이나 사람의 몸과 충돌한다. 2026년 10월 13일 런던 Convene 200 Aldersgate에서 열린 Economist Enterprise Physical AI and Robotics Summit에서는 고위급 패널이 모여 산업 자율화의 시급한 운영적, 윤리적, 법적 최전선을 다루었다. 지능형 기계가 현장의 최전선에 서는 지금, 어떻게 인력의 신뢰를 유지하고, 인지적 인수인계의 실패를 줄이며, 법적으로 방어 가능한 책임 체계를 세울 것인가 하는 문제다.

@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jan 02, 2018"
-description: "A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks."
+description: "Learn how a blockchain chains blocks of data, how cryptography and peer-to-peer networks secure transactions, and where it is changing finance and banking."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -98,6 +98,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Blockchain, the underlying technology driving the meteoric rise of cryptocurrencies, is disrupting businesses, financial services, and capital markets. This transformative technology is changing…"
 last_reviewed: "2026-05-11"
+seo_title: "Blockchain Explained: Blocks, Cryptography and P2P Networks"
 ---
 
 

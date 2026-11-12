@@ -1,13 +1,14 @@
 ---
 title: "Bitcoin: bilancio dell'anno della prima criptovaluta"
 subtitle: "Un sistema di pagamento elettronico peer-to-peer che ha ridefinito il denaro"
-description: "Bitcoin: un sistema di contante elettronico peer-to-peer (P2P ECS) capace di rivoluzionare il modo in cui le persone effettuano transazioni online."
+description: "Come funziona Bitcoin, contante elettronico peer-to-peer: il libro mastro distribuito che risolve la doppia spesa e perché può cambiare i pagamenti online."
 date: "January 1, 2018"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
 banner_alt: "Un mucchio di monete d'oro e d'argento su un tavolo"
 keywords: "Bitcoin, criptovaluta, blockchain, P2P, doppia spesa, mining, proof-of-work, ETF, Satoshi Nakamoto, finanza decentralizzata"
+seo_title: "Bitcoin spiegato: come funziona la prima criptovaluta"
 ---
 
 ![Un mucchio di monete d'oro e d'argento su un tavolo](https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp).class=\"img-fluid clearfix\"

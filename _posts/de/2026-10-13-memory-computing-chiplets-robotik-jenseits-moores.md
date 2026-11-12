@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Auf dem Physical AI and Robotics Summit von Economist Enterprise zeigte Taner Ozcelik (Mythic AI), wie In-Memory-Computing und Chiplets die Speichermauer durchbrechen."
+description: "Wie Taner Ozcelik von Mythic AI mit In-Memory-Computing und modularen Chiplets die Memory Wall für Edge-Robotik, Verteidigung und Automobil durchbrechen will."
 format-detection: "telephone=no"
 hreflang: "de"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Physische KI lässt sich nicht auf 700-Watt-GPUs aus dem Rechenzentrum skalieren. Auf dem Physical AI and Robotics Summit von Economist Enterprise zeigte Taner Ozcelik, Chairman und CEO von Mythic AI, wie In-Memory-Computing und modulare Chiplets die Von-Neumann-Speichermauer einreißen und an der physischen Edge eine Effizienz nahe der Biologie ermöglichen."
 last_reviewed: "2026-10-13"
+seo_title: "In-Memory-Computing und Chiplets: Edge-Robotik nach Moore"
 ---
 
 Mehr als ein halbes Jahrhundert lang folgte der Fortschritt der Datenverarbeitung dem Mooreschen Gesetz: alle achtzehn bis vierundzwanzig Monate doppelt so viele Transistoren auf das Silizium. Doch im entstehenden Feld der physischen KI und der autonomen Robotik ist das Mooresche Gesetz mit den Gesetzen der Thermodynamik kollidiert. Autonome Drohnen, vierbeinige Roboter, chirurgische Manipulatoren und selbstfahrende Fahrzeuge können keine 700-Watt-GPUs der Serverklasse und keine Kühltürme mitschleppen. Auf dem Physical AI and Robotics Summit von Economist Enterprise am 13. Oktober 2026 in London sprach Taner Ozcelik, Chairman und Chief Executive von Mythic AI, mit Kenneth Cukier in einem Kamingespräch über die architektonische Revolution, die diesen Stillstand aufbrechen soll: über das Mooresche Gesetz hinaus, mit analogem Compute-in-Memory (CIM) und modularen Chiplets.

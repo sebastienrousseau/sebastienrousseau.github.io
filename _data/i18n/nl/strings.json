@@ -92,5 +92,21 @@
   "scorecard.downloaded": "Scorecardafbeelding gedownload",
   "scorecard.radarTitle": "Gereedheidsradar",
   "scorecard.methodology": "Lees de volledige indexmethodologie",
-  "scorecard.fallback": "De volwassenheidsdimensies zijn hierboven in een tabel weergegeven. Schakel JavaScript in om uw instelling interactief te beoordelen en het resultaat te exporteren."
+  "scorecard.fallback": "De volwassenheidsdimensies zijn hierboven in een tabel weergegeven. Schakel JavaScript in om uw instelling interactief te beoordelen en het resultaat te exporteren.",
+  "footer.title.contact": "Contact",
+  "footer.contact.location": "Londen, Verenigd Koninkrijk",
+  "footer.contact.response": "Eerste reactie meestal binnen 48 uur",
+  "footer.newsletter.link": "Abonneer op Banking On Quantum",
+  "nav.workWithMe": "Samenwerken",
+  "nav.research": "Onderzoekssamenwerking",
+  "nav.openSourceSupport": "Open-sourceondersteuning",
+  "nav.aria.toggleWorkWithMe": "Submenu Samenwerken in- of uitklappen",
+  "contact.privacyLine": "Je bericht gaat naar Formspree, dat het naar mij e-mailt; spambescherming door Google reCAPTCHA.",
+  "contact.privacyLink": "Privacyverklaring",
+  "footer.changelog": "Wijzigingslog",
+  "contact.eyebrow": "Contact",
+  "footer.mediaKit": "Perskit",
+  "contact.appTitle": "Contact",
+  "nav.hubPqc": "Post-kwantumcryptografie",
+  "nav.hubAi": "Toegepaste AI"
 }

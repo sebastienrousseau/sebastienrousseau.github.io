@@ -36,7 +36,7 @@ const PATHS = [
   '/iso20022-mcp-docs/',
 ];
 
-const WIDTHS = [390, 768, 1280, 1440, 1920];
+const WIDTHS = [375, 390, 768, 1280, 1440, 1920];
 
 const TOKENS = [
   '--fs-micro',
@@ -283,6 +283,45 @@ async function auditPageAtWidths(browser, base, baseHost, path) {
   return failures;
 }
 
+// Home page structure (plan C-3): at most 7 top-level sections (hero,
+// <main>'s sections, closing), at most 2 buttons in the first viewport
+// besides the header's, at most 6 distinct call-to-action labels, and an
+// H1 of at most 10 words.
+async function auditHome(browser, base) {
+  const failures = [];
+  const page = await browser.newPage();
+  try {
+    for (const [width, height] of [[1440, 900], [375, 812]]) {
+      await page.setViewport({ width, height, deviceScaleFactor: 1 });
+      await page.goto(`${base}/index.html`, { waitUntil: 'networkidle0', timeout: 60000 });
+      const r = await page.evaluate(() => {
+        const sections = document.querySelectorAll(
+          'body > section, body > aside.feat, main > .home-content > section, main > section',
+        ).length;
+        const buttons = [...document.querySelectorAll('.pill, .btn-primary, .btn-ghost')].filter((b) => {
+          if (b.closest('.ap-nav')) return false;
+          const box = b.getBoundingClientRect();
+          return box.width > 0 && box.top < innerHeight && box.bottom > 0;
+        }).length;
+        const labels = new Set(
+          [...document.querySelectorAll('main .pill, .feat-hero .pill, .closing-v3 .pill')].map((b) =>
+            b.textContent.replace(/\s+/g, ' ').replace(/[›>]/g, '').trim(),
+          ),
+        );
+        const h1 = (document.querySelector('h1')?.textContent || '').trim().split(/\s+/).length;
+        return { sections, buttons, labels: [...labels], h1 };
+      });
+      if (r.sections > 7) failures.push(`@${width}: ${r.sections} sections (max 7)`);
+      if (r.buttons > 2) failures.push(`@${width}: ${r.buttons} buttons in the first viewport (max 2)`);
+      if (r.labels.length > 6) failures.push(`@${width}: ${r.labels.length} CTA labels (max 6): ${r.labels.join(' | ')}`);
+      if (r.h1 > 10) failures.push(`@${width}: H1 has ${r.h1} words (max 10)`);
+    }
+  } finally {
+    await page.close().catch(() => {});
+  }
+  return failures;
+}
+
 async function main() {
   const base = arg('base', 'http://127.0.0.1:8080').replace(/\/$/, '');
   const baseHost = new URL(base).host;
@@ -300,6 +339,9 @@ async function main() {
         `${f.length === 0 ? 'ok  ' : 'FAIL'} ${path} (${f.length} issue${f.length === 1 ? '' : 's'})`,
       );
     }
+    const home = await auditHome(browser, base);
+    console.log(`${home.length === 0 ? 'ok  ' : 'FAIL'} home structure (${home.length} issue(s))`);
+    for (const h of home) allFailures.push({ kind: 'home', path: '/', width: '-', selector: 'home', detail: h });
   } finally {
     await browser.close();
   }

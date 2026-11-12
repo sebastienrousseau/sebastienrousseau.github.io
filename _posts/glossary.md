@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: ""
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jun 02, 2026"
-description: "Standards-anchored glossary for sebastienrousseau.com. Every term carries a sameAs link to the canonical standards-body or central-bank source (NIST, ISO, BIS, ECB, Federal Reserve, EUR-Lex)."
+description: "A glossary of payments, AI and post-quantum terms, each linked to its canonical source at a standards body or central bank such as NIST, ISO, BIS or the ECB."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -92,7 +92,7 @@ author_website: "https://sebastienrousseau.com/about"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-
+seo_title: "Glossary of Payments, AI and Post-Quantum Cryptography Terms"
 ---
 
 <script type="application/ld+json">

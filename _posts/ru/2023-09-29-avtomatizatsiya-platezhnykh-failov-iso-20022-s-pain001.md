@@ -1,13 +1,14 @@
 ---
 title: "Автоматизация создания платёжных файлов ISO 20022 с pain001"
 subtitle: "Библиотека Python для миграции на структурированные сообщения"
-description: "pain001 — это open-source Python-библиотека для автоматизации генерации платёжных файлов ISO 20022 pain.001 из CSV или SQLite."
+description: "Как pain001, open-source библиотека на Python, создаёт платёжные файлы ISO 20022 pain.001 из данных CSV или SQLite и как устроена структура сообщения."
 date: "September 29, 2023"
 language: "ru-RU"
 locale: "ru_RU"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-dqHskSJDfe4.webp"
 banner_alt: "Поток платежей ISO 20022 — миграция MT/MX"
 keywords: "ISO 20022, pain.001, SWIFT, SEPA, Python, автоматизация платежей, валидация XML, структурированные сообщения, миграция MT"
+seo_title: "pain001: платёжные файлы ISO 20022 на Python"
 ---
 
 > **TL;DR.** Глобальная миграция платежей с MT/MX на ISO 20022 требует надёжной автоматизации генерации платёжных файлов. Open-source библиотека pain001 решает эту задачу для сообщений pain.001 на базе Python.

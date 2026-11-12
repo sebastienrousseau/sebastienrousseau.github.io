@@ -1,13 +1,14 @@
 ---
 title: "Listopadová lhůta 2026 pro strukturovanou adresu v pacs.008: pohled na zbývajících šest měsíců"
 subtitle: "Od poloviny listopadu 2026 bude SWIFT CBPR+ odmítat nestrukturované poštovní adresy v pacs.008 a souvisejících přeshraničních platebních zprávách. Přibližně 65 % zpráv stále nevyhovuje a okno pro nápravu se rychle uzavírá."
-description: "Od listopadu 2026 vyžaduje SWIFT CBPR+ strukturované poštovní adresy v přeshraničních platebních zprávách. Samostatné nestrukturované řádky adresy (AdrLine) již nebudou u klíčových polí stran v pacs.008 přijímány. Minimálně se vyžadují TwnNm a Ctry, doporučují se StrtNm a BldgNb nebo PstBx. Šest měsíců před lhůtou stále 65 % platebních zpráv obsahuje nestrukturované adresy a 44 % bank zaostává za harmonogramem."
+description: "Od listopadu 2026 vyžaduje SWIFT CBPR+ strukturované adresy ve zprávách ISO 20022 pacs.008. Která pole jsou nutná a jak daleko mají banky stále do cíle."
 date: "May 12, 2026"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "Diagram strukturované adresy ISO 20022 pacs.008: pole přeshraniční platební zprávy se zvýrazněnými TwnNm a Ctry"
 keywords: "ISO 20022, pacs.008, SWIFT CBPR+, strukturovaná adresa, listopad 2026, poštovní adresa, TwnNm, Ctry, StrtNm, BldgNb"
+seo_title: "ISO 20022 pacs.008: lhůta pro strukturovanou adresu 11/2026"
 ---
 
 Od poloviny listopadu 2026 bude SWIFT CBPR+ odmítat nestrukturované poštovní adresy v pacs.008 a souvisejících přeshraničních platebních zprávách. Přibližně 65 % zpráv stále nevyhovuje a 44 % bank zaostává za harmonogramem, takže se okno pro nápravu uzavírá rychleji, než na co je většina programů připravenosti navržena.

@@ -8,6 +8,7 @@ locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp"
 banner_alt: "HSBC：從西印度碼頭海濱眺望"
 keywords: "量子金鑰分發, QKD, 量子糾纏, 量子計算, HSBC, BT, 東芝, AWS, 銀行業網路安全, 後量子密碼學"
+seo_title: "量子金鑰分發（QKD）：保障銀行安全詳解"
 ---
 
 ![HSBC：從西印度碼頭海濱眺望][00].class=\"img-fluid clearfix fade-in\"

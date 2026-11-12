@@ -1,13 +1,14 @@
 ---
 title: "Àkàndé: hlasový asistent poháněný GPT pro vedoucí pracovníky"
 subtitle: "Architektura hlasového asistenta v jazyce Python s otevřeným zdrojovým kódem: Whisper, GPT-4, cache v SQLite a fpdf2"
-description: "Àkàndé je hlasový asistent v jazyce Python s otevřeným zdrojovým kódem, který spojuje rozpoznávání řeči OpenAI Whisper, doplňování konverzace GPT-4 a lokální cache odpovědí v SQLite do hlasově řízeného pracovního postupu. Generuje shrnutí v PDF z historie konverzace a veškerá uložená data ponechává lokálně."
+description: "Àkàndé je open-source hlasový asistent v Pythonu, který spojuje rozpoznávání řeči Whisper, GPT-4 a lokální cache v SQLite a vytváří PDF shrnutí konverzací."
 date: "Feb 12, 2024"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp"
 banner_alt: "Bílé kulové moderní zařízení"
 keywords: "Àkàndé, OpenAI GPT-4, Whisper STT, cache v SQLite, fpdf2, hlasový asistent v jazyce Python, chat completions API, generování shrnutí v PDF, cache SHA-256, převod textu na řeč, AI asistent pro vedoucí pracovníky, otevřený zdrojový kód"
+seo_title: "Àkàndé: open-source hlasový asistent s GPT-4 a Whisper"
 ---
 
 

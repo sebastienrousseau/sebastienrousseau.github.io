@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 24, 2026"
-description: "Доктор Леда Глиптис в Лондоне: модернизация не заканчивается. Банкам нужно разобрать десятилетия исключений и внедрять ИИ взвешенно, но не медленно."
+description: "Почему д-р Леда Глиптис считает модернизацию банков бесконечной, почему копятся десятилетия исключений и почему с ИИ нужна осторожность, но не медлительность."
 format-detection: "telephone=no"
 hreflang: "ru"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Уже 20–25 лет финансовый сектор относится к модернизации как к проекту с датой завершения. Открывая Oracle Financial Services Summit в Лондоне, доктор Леда Глиптис заявила, что слабое место отрасли..."
 last_reviewed: "2026-10-24"
+seo_title: "Леда Глиптис: модернизация в банках никогда не заканчивается"
 ---
 
 # Модернизация никогда не заканчивается, накапливаются исключения

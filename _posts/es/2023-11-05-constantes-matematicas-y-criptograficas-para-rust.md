@@ -8,6 +8,7 @@ locale: "es_ES"
 banner: "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
 banner_alt: "Cálculo matemático"
 keywords: "constantes matemáticas, constantes criptográficas, seguridad Rust, comunicación segura, cifrado, RSA, criptografía de curva elíptica, biblioteca Common (CMN), aplicaciones Rust, cálculos matemáticos"
+seo_title: "Constantes matemáticas en Rust: la biblioteca Common (CMN)"
 ---
 
 ![Giant white pillars](https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp).class=\"img-fluid clearfix\"

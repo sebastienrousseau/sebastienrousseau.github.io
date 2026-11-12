@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Au sommet Physical AI de l'Economist à Londres, des dirigeants de l'aéronautique ont contesté le battage autour des humanoïdes : la forme doit suivre la fonction."
+description: "Pourquoi l'aéronautique et l'automatisation doutent des humanoïdes à l'usine, pourquoi l'usine sans lumière est un mythe, et la forme suit la fonction."
 format-detection: "telephone=no"
 hreflang: "fr"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Au sommet Economist Enterprise Physical AI and Robotics à Londres, des dirigeants de l'aéronautique et de l'industrie ont démonté le récit de la Silicon Valley sur le robot humanoïde polyvalent. Tandis que le capital-risque injecte des milliards dans les formes bipèdes, la réalité industrielle montre que la forme doit suivre strictement la fonction."
 last_reviewed: "2026-10-13"
+seo_title: "Robots humanoïdes ou fonctionnels dans l'industrie"
 ---
 
 Au sommet Economist Enterprise Physical AI and Robotics, tenu au Convene 200 Aldersgate à Londres le 13 octobre 2026, dirigeants industriels, ingénieurs aéronautiques et roboticiens se sont réunis pour trancher un schisme fondamental de l'automatisation moderne : les robots doivent-ils imiter le corps humain, ou leur morphologie mécanique doit-elle suivre strictement la physique industrielle ? Tandis que le capital-risque continue d'injecter des milliards dans des formes humanoïdes bipèdes qui promettent de remplacer universellement la main-d'œuvre, des praticiens de l'atelier venus d'Airbus, de Leonardo et de la recherche universitaire ont livré une remise à plat empirique et sans fard.

@@ -92,5 +92,21 @@
   "scorecard.downloaded": "評分卡圖片已下載",
   "scorecard.radarTitle": "就緒度雷達圖",
   "scorecard.methodology": "閱讀完整的指數方法論",
-  "scorecard.fallback": "成熟度維度已於上表列出。請啟用 JavaScript 以互動方式評估貴機構並匯出結果。"
+  "scorecard.fallback": "成熟度維度已於上表列出。請啟用 JavaScript 以互動方式評估貴機構並匯出結果。",
+  "footer.title.contact": "聯絡方式",
+  "footer.contact.location": "英國倫敦",
+  "footer.contact.response": "通常在 48 小時內首次回覆",
+  "footer.newsletter.link": "訂閱 Banking On Quantum",
+  "nav.workWithMe": "合作",
+  "nav.research": "研究合作",
+  "nav.openSourceSupport": "開源支援",
+  "nav.aria.toggleWorkWithMe": "切換合作子選單",
+  "contact.privacyLine": "您的留言會傳送至 Formspree，再由其以電子郵件轉給我；垃圾訊息防護由 Google reCAPTCHA 提供。",
+  "contact.privacyLink": "隱私聲明",
+  "footer.changelog": "更新日誌",
+  "contact.eyebrow": "聯絡方式",
+  "footer.mediaKit": "媒體資料包",
+  "contact.appTitle": "聯絡方式",
+  "nav.hubPqc": "後量子密碼學",
+  "nav.hubAi": "應用人工智慧"
 }

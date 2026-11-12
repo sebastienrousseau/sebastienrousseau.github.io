@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "May 15, 2026"
-description: "Free PDF: 23-point structured-address migration checklist for the November 2026 pacs.008 deadline. Built from EPAA, SWIFT and CBPR+ guidance. Drop your email; I'll send the link."
+description: "A free ISO 20022 PDF: a 23-point structured-address migration checklist for the November 2026 pacs.008 deadline, built from EPAA, SWIFT and CBPR+ guidance."
 format-detection: "telephone=no"
 form-id: "mjvqpwyo"
 hreflang: "en"
@@ -95,7 +95,7 @@ site_last_updated: "2026-05-15"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-
+seo_title: "ISO 20022 pacs.008 Structured-Address Checklist: Free PDF"
 ---
 
 ## What's in the PDF

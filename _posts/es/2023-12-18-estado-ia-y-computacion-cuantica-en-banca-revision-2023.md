@@ -8,6 +8,7 @@ locale: "es_ES"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
 banner_alt: "Estado de la IA y la computación cuántica en la banca: revisión 2023"
 keywords: "IA en la banca, computación cuántica, tecnología financiera, IA de código abierto, gestión del riesgo, seguridad cuántica, regulación de la IA, ética de la IA, gobernanza de la IA, innovación bancaria"
+seo_title: "IA en la banca: IA y computación cuántica en 2023"
 ---
 
 ## Perspectiva

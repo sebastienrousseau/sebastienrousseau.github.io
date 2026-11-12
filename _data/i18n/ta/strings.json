@@ -91,5 +91,21 @@
   "scorecard.downloaded": "மதிப்பெண் அட்டை படம் பதிவிறக்கப்பட்டது",
   "scorecard.radarTitle": "தயார்நிலை ரேடார்",
   "scorecard.methodology": "முழு குறியீட்டு முறையியலைப் படியுங்கள்",
-  "scorecard.fallback": "முதிர்ச்சிப் பரிமாணங்கள் மேலே அட்டவணைப்படுத்தப்பட்டுள்ளன. உங்கள் நிறுவனத்தை ஊடாடும் வகையில் மதிப்பிட்டு முடிவை ஏற்றுமதி செய்ய JavaScript ஐ இயக்கவும்."
+  "scorecard.fallback": "முதிர்ச்சிப் பரிமாணங்கள் மேலே அட்டவணைப்படுத்தப்பட்டுள்ளன. உங்கள் நிறுவனத்தை ஊடாடும் வகையில் மதிப்பிட்டு முடிவை ஏற்றுமதி செய்ய JavaScript ஐ இயக்கவும்.",
+  "footer.title.contact": "தொடர்பு",
+  "footer.contact.location": "லண்டன், ஐக்கிய இராச்சியம்",
+  "footer.contact.response": "முதல் பதில் பொதுவாக 48 மணி நேரத்திற்குள்",
+  "footer.newsletter.link": "Banking On Quantum-க்கு குழுசேருங்கள்",
+  "nav.workWithMe": "என்னுடன் பணியாற்றுங்கள்",
+  "nav.research": "ஆராய்ச்சி ஒத்துழைப்பு",
+  "nav.openSourceSupport": "திறந்த மூல ஆதரவு",
+  "nav.aria.toggleWorkWithMe": "என்னுடன் பணியாற்றுங்கள் துணை மெனுவை மாற்று",
+  "contact.privacyLine": "உங்கள் செய்தி Formspree-க்குச் செல்கிறது, அது அதை எனக்கு மின்னஞ்சல் செய்கிறது; ஸ்பேம் பாதுகாப்பு Google reCAPTCHA மூலம்.",
+  "contact.privacyLink": "தனியுரிமை அறிவிப்பு",
+  "footer.changelog": "மாற்றப் பதிவு",
+  "contact.eyebrow": "தொடர்பு",
+  "footer.mediaKit": "ஊடகக் கையேடு",
+  "contact.appTitle": "தொடர்பு",
+  "nav.hubPqc": "பிந்தைய-குவாண்டம் குறியாக்கவியல்",
+  "nav.hubAi": "பயன்பாட்டு AI"
 }

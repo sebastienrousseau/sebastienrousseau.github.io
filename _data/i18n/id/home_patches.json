@@ -166,8 +166,8 @@
       "<a class=pill href=\"/id/artikel/index.html\">Baca riset terbaru</a>"
     ],
     [
-      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/id/kontak/index.html\">Hubungi saya</a>"
+      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"\\1\" href=\"/id/kontak/index.html\">Hubungi saya</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -356,6 +356,50 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">Jelajahi pustaka ISO 20022 <span"
+    ],
+    [
+      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
+      ">Infrastruktur pembayaran yang dapat dipercaya bank di era kuantum.</h1>"
+    ],
+    [
+      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
+      ">Saya memimpin produk API pembayaran wholesale di HSBC dan membangun perangkat open-source untuk ISO 20022 dan kriptografi pasca-kuantum yang dapat diperiksa, diuji, dan digunakan kembali oleh bank dan fintech.</p>"
+    ],
+    [
+      ">Read the research</a>",
+      ">Baca riset</a>"
+    ],
+    [
+      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
+      ">Kontributor white paper EPAA · Fellow, Institution of Analysts and Programmers</p>"
+    ],
+    [
+      ">Payments and digital products, built at:</p>",
+      ">Produk pembayaran dan digital, dibangun di:</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Recognition</p>",
+      "<p class=\"feat-eyebrow\">Pengakuan</p>"
+    ],
+    [
+      ">Recognition and featured work\\.</h2>",
+      ">Pengakuan dan karya pilihan.</h2>"
+    ],
+    [
+      "aria-label=\"Recognition\"",
+      "aria-label=\"Pengakuan\""
+    ],
+    [
+      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
+      "<li>Fellow Institution of Analysts and Programmers (FIAP)</li>"
+    ],
+    [
+      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
+      ">Sedang menangani pembayaran, keamanan kuantum, atau ISO 20022?</h2>"
+    ],
+    [
+      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
+      ">Ceritakan apa yang sedang Anda bangun. Tanggapan pertama biasanya dikirim dalam 48 jam.</p>"
     ]
   ]
 }

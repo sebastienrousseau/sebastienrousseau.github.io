@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jan 09, 2018"
-description: "Technický úvod do fungování blockchainu: kryptografické hashovací řetězce, Merkleovy stromy, distribuovaný konsenzus a proč programovatelná vrstva Etherea proměnila platební účetní knihu v platformu pro chytré kontrakty a tokenizovaná aktiva."
+description: "Úvod do technologie blockchainu: kryptografické hashovací řetězce, Merkleovy stromy, distribuovaný konsenzus a jak Ethereum přidalo chytré kontrakty."
 format-detection: "telephone=no"
 hreflang: "cs"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -82,6 +82,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Blockchain je účetní kniha s možností pouze přidávat záznamy, zabezpečená kryptografickými hashovacími řetězci a distribuovaným konsenzem. Jde o návrh, který činí manipulaci výpočetně nákladnou a auditovatelnou kýmkoli. Ethereum tento základ rozšířilo o programovatelnou prováděcí vrstvu a proměnilo jednoduchý platební záznam v platformu pro chytré kontrakty, tokeny a decentralizované finance."
 last_reviewed: "2026-05-24"
+seo_title: "Technologie blockchainu: hashovací řetězce a konsenzus"
 ---
 
 ![Abstraktní bloky digitální účetní knihy propojené světelnými stopami na tmavém pozadí](https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp).class=\"img-fluid clearfix\"

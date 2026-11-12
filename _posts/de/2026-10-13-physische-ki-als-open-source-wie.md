@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Auf dem Physical-AI-Gipfel des Economist in London zeigte Pepijn Kooijmans von Hugging Face, wie LeRobot, offene Modelle und 200-$-Arme die Robotik öffnen."
+description: "Wie Hugging Face LeRobot mit Open-Source-Modellen, End-to-End-Imitationslernen und 200-$-Hardware die Robotik vom Programmieren pro Aufgabe zum Lernen führt."
 format-detection: "telephone=no"
 hreflang: "de"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Robotikentwicklung war lange hinter sechsstelliger Hardware und fragiler, von Hand programmierter Kinematik verschlossen. Auf dem Economist Enterprise Physical AI and Robotics Summit zeigte Pepijn Kooijmans, LeRobot-Leiter bei Hugging Face, wie Open-Source-Foundation-Modelle und Hardware für 200 $ die Branche weit öffnen."
 last_reviewed: "2026-10-13"
+seo_title: "Hugging Face LeRobot und offene Physical AI in der Robotik"
 ---
 
 Sechs Jahrzehnte lang folgte die Industrierobotik einem unnachgiebigen Paradigma: Ein Ingenieur programmiert jeden Millimeter der Bewegung einer Maschine ausdrücklich, mit proprietären Sprachen, Programmierhandgeräten und starren Kinematiklösern. Verschiebt sich ein Werkstück um fünf Millimeter oder ändert sich die Beleuchtung, geht der Roboter in Störung. Auf dem Economist Enterprise Physical AI and Robotics Summit am 13. Oktober 2026 in London stellte Pepijn Kooijmans, LeRobot-Leiter bei Hugging Face, eine alternative Architektur vor, die dieses Erbe auflöst: „Künftige Roboter werden nicht Aufgabe für Aufgabe programmiert. Sie werden lernen.“

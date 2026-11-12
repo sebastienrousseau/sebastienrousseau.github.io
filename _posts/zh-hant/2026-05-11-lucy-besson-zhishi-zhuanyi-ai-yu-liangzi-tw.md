@@ -8,6 +8,7 @@ locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "神經網路與量子原子陣列的抽象視覺化。由重新排列的粒子形成的黑色計算機"
 keywords: "露西, 盧克·貝松, AI, 大型語言模型, 量子計算, 中性原子, 全腦模擬, Neuralink, 知識遷移, 基質獨立"
+seo_title: "重溫 2014 年電影《露西》：AI、量子與知識遷移"
 ---
 
 ## 重溫露西的 U 盤：貝松所看到的知識向機器遷移

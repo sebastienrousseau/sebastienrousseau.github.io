@@ -106,6 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Following my recent article on the [Challenges in Quantum Algorithms for Lattice-Based Cryptography][00], I am compelled to provide an update on the latest developments in [Yilei Chen's research…"
 last_reviewed: "2026-05-11"
+seo_title: "Post-Quantum Cryptography: Bug Found in Chen's LWE Algorithm"
 ---
 
 

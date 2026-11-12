@@ -8,6 +8,7 @@ locale: "ru_RU"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "Постквантовая криптография: визуализация решёток"
 keywords: "CRYSTALS-Kyber, постквантовая криптография, NIST, FIPS 203, ML-KEM, инкапсуляция ключей, решётки, безопасность"
+seo_title: "CRYSTALS-Kyber: инкапсуляция ключей в квантовую эпоху"
 ---
 
 > **TL;DR.** CRYSTALS-Kyber (стандартизованный как ML-KEM в FIPS 203) — выбранный NIST механизм инкапсуляции ключей для постквантовой эпохи. Его внедрение становится приоритетом для критической инфраструктуры.

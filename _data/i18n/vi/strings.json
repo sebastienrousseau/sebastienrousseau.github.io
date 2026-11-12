@@ -92,5 +92,21 @@
   "scorecard.downloaded": "Đã tải xuống hình ảnh thẻ điểm",
   "scorecard.radarTitle": "Radar mức độ sẵn sàng",
   "scorecard.methodology": "Đọc phương pháp luận đầy đủ của chỉ số",
-  "scorecard.fallback": "Các chiều trưởng thành được lập bảng ở trên. Bật JavaScript để đánh giá tổ chức của bạn một cách tương tác và xuất kết quả."
+  "scorecard.fallback": "Các chiều trưởng thành được lập bảng ở trên. Bật JavaScript để đánh giá tổ chức của bạn một cách tương tác và xuất kết quả.",
+  "footer.title.contact": "Liên hệ",
+  "footer.contact.location": "London, Vương quốc Anh",
+  "footer.contact.response": "Phản hồi đầu tiên thường trong vòng 48 giờ",
+  "footer.newsletter.link": "Đăng ký Banking On Quantum",
+  "nav.workWithMe": "Hợp tác",
+  "nav.research": "Hợp tác nghiên cứu",
+  "nav.openSourceSupport": "Hỗ trợ mã nguồn mở",
+  "nav.aria.toggleWorkWithMe": "Bật/tắt menu con Hợp tác",
+  "contact.privacyLine": "Tin nhắn của bạn được gửi tới Formspree, dịch vụ này chuyển tiếp qua email cho tôi; chống thư rác bằng Google reCAPTCHA.",
+  "contact.privacyLink": "Thông báo quyền riêng tư",
+  "footer.changelog": "Nhật ký thay đổi",
+  "contact.eyebrow": "Liên hệ",
+  "footer.mediaKit": "Bộ tài liệu truyền thông",
+  "contact.appTitle": "Liên hệ",
+  "nav.hubPqc": "Mật mã hậu lượng tử",
+  "nav.hubAi": "AI ứng dụng"
 }

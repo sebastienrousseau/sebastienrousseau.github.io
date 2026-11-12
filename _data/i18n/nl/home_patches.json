@@ -166,8 +166,8 @@
       "<a class=pill href=\"/nl/artikelen/index.html\">Lees het laatste onderzoek</a>"
     ],
     [
-      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/nl/contact/index.html\">Neem contact op</a>"
+      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"\\1\" href=\"/nl/contact/index.html\">Neem contact op</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -356,6 +356,50 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">Verken de ISO 20022-bibliotheken <span"
+    ],
+    [
+      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
+      ">Betalingsinfrastructuur waar banken in het kwantumtijdperk op kunnen vertrouwen.</h1>"
+    ],
+    [
+      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
+      ">Bij HSBC leid ik API-producten voor wholesale payments en ik bouw open-source tooling voor ISO 20022 en post-kwantumcryptografie die banken en fintechs kunnen inspecteren, testen en hergebruiken.</p>"
+    ],
+    [
+      ">Read the research</a>",
+      ">Lees het onderzoek</a>"
+    ],
+    [
+      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
+      ">Bijdrager aan EPAA-whitepaper · Fellow, Institution of Analysts and Programmers</p>"
+    ],
+    [
+      ">Payments and digital products, built at:</p>",
+      ">Betaal- en digitale producten, gebouwd bij:</p>"
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Recognition</p>",
+      "<p class=\"feat-eyebrow\">Erkenning</p>"
+    ],
+    [
+      ">Recognition and featured work\\.</h2>",
+      ">Erkenning en uitgelicht werk.</h2>"
+    ],
+    [
+      "aria-label=\"Recognition\"",
+      "aria-label=\"Erkenning\""
+    ],
+    [
+      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
+      "<li>Fellow van de Institution of Analysts and Programmers (FIAP)</li>"
+    ],
+    [
+      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
+      ">Bezig met betalingen, kwantumveiligheid of ISO 20022?</h2>"
+    ],
+    [
+      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
+      ">Vertel me waar u aan werkt. Het eerste antwoord volgt doorgaans binnen 48 uur.</p>"
     ]
   ]
 }

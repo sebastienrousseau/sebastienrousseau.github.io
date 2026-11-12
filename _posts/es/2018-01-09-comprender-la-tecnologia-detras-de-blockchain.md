@@ -1,13 +1,14 @@
 ---
 title: "Comprender la tecnología detrás de blockchain"
 subtitle: "Construir una criptomoneda sobre Ethereum, paso a paso"
-description: "Construir una criptomoneda en la blockchain Ethereum: una guía completa de desarrollo blockchain, tokenización e implementación."
+description: "Introducción a la blockchain: cadenas de hashes criptográficos, árboles de Merkle, consenso distribuido y cómo Ethereum añadió los contratos inteligentes."
 date: "January 9, 2018"
 language: "es-ES"
 locale: "es_ES"
 banner: "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp"
 banner_alt: "Ordenador portátil apagado sobre una mesa de madera marrón"
 keywords: "blockchain, Ethereum, smart contract, criptomoneda, Solidity, Geth, dApps, ERC-20, tokenización, testnet"
+seo_title: "Blockchain: cadenas hash, árboles de Merkle y consenso"
 ---
 
 ![Ordenador portátil apagado sobre una mesa de madera marrón](https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp).class=\"img-fluid clearfix\"

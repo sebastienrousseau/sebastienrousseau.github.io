@@ -1,7 +1,7 @@
 ---
 title: "dtt ライブラリで Rust の日時を習得する"
 subtitle: "Rust 製の包括的な日付・時刻ライブラリ"
-description: "dtt は、解析、フォーマット、タイムゾーン操作のための包括的な日付・時刻 Rust ライブラリです。"
+description: "DateTime（DTT）は日付と時刻の解析、検証、操作、書式設定を行う Rust ライブラリです。その機能と、自分のプロジェクトでの使い方を解説します。"
 date: "December 4, 2023"
 language: "ja-JP"
 locale: "ja_JP"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "ガラスの建物の上の時計"
 keywords: "dtt, 日付, 時刻, Rust, タイムゾーン, RFC 3339, ISO 8601, ライブラリ, 解析, フォーマット"
 last_reviewed: "2026-05-11"
+seo_title: "DateTime（DTT）：Rust の日付と時刻管理を解説"
 ---
 
 ![ガラスの建物の上の時計](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

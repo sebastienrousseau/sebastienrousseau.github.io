@@ -1,13 +1,14 @@
 ---
 title: "Comprendere la tecnologia dietro la blockchain"
 subtitle: "Crittografia, consenso e libri mastri distribuiti spiegati"
-description: "Un'analisi tecnica dei componenti della blockchain: funzioni hash, alberi di Merkle, firme digitali, consenso distribuito e l'architettura che rende possibile il libro mastro condiviso."
+description: "Introduzione alla blockchain: catene di hash crittografiche, alberi di Merkle, consenso distribuito e la piattaforma di smart contract di Ethereum."
 date: "January 9, 2018"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp"
 banner_alt: "Laptop spento su un tavolo di legno marrone"
 keywords: "blockchain, crittografia, hash, Merkle, consenso, Bizantino, P2P, libro mastro distribuito"
+seo_title: "Tecnologia blockchain: catene di hash, Merkle e consenso"
 ---
 
 ![Laptop spento su un tavolo di legno marrone](https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp).class=\"img-fluid clearfix\"

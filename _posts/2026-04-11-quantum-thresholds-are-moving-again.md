@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Apr 11, 2026"
-description: "Shor's algorithm may now run on as few as 10,000 qubits. RSA, ECC and the timeline for post-quantum migration are all moving up. Here's why."
+description: "A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. Learn what this means for quantum computing risk to RSA, ECC and PQC migration."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -96,6 +96,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The threshold for cryptographically relevant quantum computing is dropping faster than most had assumed."
 last_reviewed: "2026-05-11"
+seo_title: "Quantum Computing Thresholds Fall: Shor's With 10,000 Qubits"
 ---
 
 ## Quantum Thresholds Are Moving Again

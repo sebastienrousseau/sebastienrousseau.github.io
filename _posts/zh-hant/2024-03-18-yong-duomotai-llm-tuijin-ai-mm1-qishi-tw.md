@@ -1,13 +1,14 @@
 ---
 title: "用多模態 LLM 推進 AI：MM1 的啟示"
 subtitle: "Apple MM1 多模態大型語言模型的方法分析與洞察"
-description: "Apple MM1 研究為多模態大型語言模型（MLLM）的預訓練揭示關鍵架構與資料組成洞察。"
+description: "本文深入解讀 Apple 關於多模態 LLM 的 MM1 論文：這類模型如何建構、背後採用了哪些預訓練策略，以及它們可能為應用型 AI 帶來什麼樣的影響。"
 date: "March 18, 2024"
 language: "zh-Hant"
 locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/mm1-visual.webp"
 banner_alt: "Apple MM1 橫幅"
 keywords: "MM1, 多模態 AI, MLLM, 大型語言模型, Apple 研究, 視覺語言, 影象編碼器, 少樣本學習, MoE, 跨注意力"
+seo_title: "多模態 LLM 詳解：Apple MM1 論文的啟示"
 ---
 
 ## 引言

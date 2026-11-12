@@ -8,6 +8,7 @@ locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
 banner_alt: "RustLogs, libreria Rust di logging"
 keywords: "RustLogs, Rust, logging, osservabilità, structured logging, performance"
+seo_title: "Libreria di logging Rust: RustLogs (RLG) per log strutturati"
 ---
 
 ---

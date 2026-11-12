@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: ""
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Feb 26, 2024"
-description: "Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use."
+description: "Learn what Google Gemma AI is: an open-source model family from Google built for accessible, ethical AI development in both personal and enterprise settings."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/akande/v1/logos/akande.svg"
@@ -106,6 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Google recently launched [Gemma ⧉][00], an open-source artificial intelligence model designed to provide an accessible and ethical foundation for AI development. As an open-source model, Gemma…"
 last_reviewed: "2026-05-11"
+seo_title: "Google Gemma AI: Open-Source Models for Ethical Development"
 ---
 
 

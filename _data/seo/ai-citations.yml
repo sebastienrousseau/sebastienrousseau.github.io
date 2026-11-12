@@ -1,0 +1,5 @@
+# AI citations, monthly (plan G-9, HUMAN, about 15 minutes): ask the first
+# query of each hub in target-queries.yml in ChatGPT search, Perplexity and
+# Google AI Overviews, and log whether sebastienrousseau.com is cited.
+# - {month: "2026-12", query: "ISO 20022 migration guide", chatgpt: false, perplexity: false, google_ai: false}
+[]

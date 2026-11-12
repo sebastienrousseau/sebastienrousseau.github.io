@@ -98,6 +98,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "In this article, I will examine the uses of quantum-resistant cryptography, specifically addressing the Rust Hash Library (HSH) that I developed. This library is fully optimised for cryptographic…"
 last_reviewed: "2026-05-11"
+seo_title: "Hash Library (HSH): Quantum-Resistant Hashing in Rust"
 ---
 
 

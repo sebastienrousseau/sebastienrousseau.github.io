@@ -1,7 +1,7 @@
 ---
 title: "원장을 지키기: 기업 재무를 위한 포스트 양자 이행"
 subtitle: "기업 재무 시스템은 양자 위협 모델에 따라 재평가되어야 합니다"
-description: "기업 재무 시스템 — ERP, 재무관리, 결제 — 은 양자 위협 모델에 따라 재평가되어야 합니다. 본 분석은 실용적 이행 경로를 제시합니다."
+description: "기업 재무의 포스트 양자 암호 이행을 위한 이사회 가이드: G7 로드맵, EU·영국·호주의 일정, 그리고 BIS Project Leap에서 얻은 교훈을 정리합니다."
 date: "May 14, 2026"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "기업 재무 시스템의 안전한 아키텍처"
 keywords: "포스트 양자 암호, 기업 재무, ERP, 재무관리, PQC 이행, 암호 민첩성, 양자 안전 결제"
 last_reviewed: "2026-05-16"
+seo_title: "포스트 양자 암호: 이사회를 위한 재무 이행 가이드"
 ---
 
 ## 원장을 지키기: 기업 재무를 위한 포스트 양자 이행

@@ -8,6 +8,7 @@ locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp"
 banner_alt: "Farbenfrohe, abstrakte digitale Kunstdarstellung einer Katze"
 keywords: "Le Chat, Mistral AI, Mistral Chatbot, virtueller Assistent, mehrsprachiges Verständnis, KI-Kundenservice, Mistral Unternehmenslösungen, Le Chat Anpassung, mehrsprachige Unterstützung, KI-Kommunikation, KI für Unternehmen"
+seo_title: "Le Chat von Mistral AI: eine mehrsprachige Konversations-KI"
 ---
 
 ## Ein neuer Herausforderer in der Konversations-KI mit verbesserter Anpassung und mehrsprachigen Fähigkeiten

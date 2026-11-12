@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Al vertice Physical AI dell'Economist a Londra, Kier Group e BSI hanno discusso di fiducia dei lavoratori, passaggi di consegne uomo-macchina e responsabilità."
+description: "Come Kier Group e BSI affrontano la governance dell'IA fisica: fiducia dei lavoratori, passaggi uomo-macchina e ripartizione della responsabilità."
 format-detection: "telephone=no"
 hreflang: "it"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Impiegare macchine fisiche autonome accanto ai lavoratori crea rischi psicologici e legali acuti che il software non ha mai conosciuto. All'Economist Enterprise Physical AI and Robotics Summit, Kier Group e la British Standards Institution (BSI) hanno tracciato le basi della governance dell'IA fisica."
 last_reviewed: "2026-10-13"
+seo_title: "IA fisica e governance del lavoro: fiducia e responsabilità"
 ---
 
 Quando un software aziendale si guasta, corrompe un database, interrompe una connessione di rete o espone un token. Quando un sistema di IA fisica si guasta, centinaia di chilogrammi di acciaio articolato, attuatori idraulici ad alta coppia o macchine autonome per il movimento terra urtano infrastrutture o corpi umani. All'Economist Enterprise Physical AI and Robotics Summit, tenutosi al Convene 200 Aldersgate di Londra il 13 ottobre 2026, un panel di alto livello si è riunito per affrontare le frontiere operative, etiche e legali più urgenti dell'autonomia industriale: come mantenere la fiducia dei lavoratori, ridurre i fallimenti nel passaggio di consegne cognitivo e costruire quadri di responsabilità giuridicamente difendibili mentre le macchine intelligenti conquistano la prima linea.

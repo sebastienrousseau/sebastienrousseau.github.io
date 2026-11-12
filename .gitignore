@@ -120,3 +120,7 @@ _data/pa11y-cache.json
 # Deployment config, not a secret but not source: the Cloudflare Web
 # Analytics beacon token (see scripts/postbuild/postbuild_lib/analytics.py).
 _data/analytics.json
+
+# Translation review sheets (scripts/i18n/review_sheet.py export): sent to
+# reviewers and imported back, never committed.
+review/*.csv

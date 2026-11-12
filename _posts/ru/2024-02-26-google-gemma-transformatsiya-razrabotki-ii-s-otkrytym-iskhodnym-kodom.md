@@ -1,13 +1,14 @@
 ---
 title: "Google Gemma: трансформация open-source разработки ИИ"
 subtitle: "Открытая модель от Google для развития сообщества"
-description: "Gemma — это открытая модель Google, предлагающая разработчикам и исследователям мощный фундамент для построения ИИ-приложений."
+description: "Что такое Google Gemma AI: семейство open-source моделей от Google для доступной и этичной разработки ИИ как в личных, так и в корпоративных сценариях."
 date: "February 26, 2024"
 language: "ru-RU"
 locale: "ru_RU"
 banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Google Gemma — баннер открытой модели ИИ"
 keywords: "Google Gemma, open source, LLM, Gemini, локальное развёртывание, банковский ИИ, конфиденциальность, дистилляция знаний"
+seo_title: "Google Gemma AI: открытые модели для этичной разработки"
 ---
 
 > **TL;DR.** Gemma — открытая модель Google, дистиллированная из исследований Gemini. Доступна в вариантах 2B и 7B параметров и пригодна для локального развёртывания, что особенно важно для банковских сценариев.

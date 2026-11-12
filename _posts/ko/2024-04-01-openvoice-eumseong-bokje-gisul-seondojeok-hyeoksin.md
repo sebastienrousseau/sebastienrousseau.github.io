@@ -1,7 +1,7 @@
 ---
 title: "OpenVoice: 음성 복제 기술의 최첨단 혁신"
 subtitle: "오픈소스 음성 복제와 핀테크에 대한 의미"
-description: "OpenVoice, 오픈소스 음성 복제 기술, 은행 업무의 부정·인증·프라이버시에 대한 의미."
+description: "MIT, Tsinghua, MyShell의 OpenVoice는 톤, 억양, 감정을 제어하며 즉시 음성을 복제합니다. 작동 원리와 알아야 할 트레이드오프를 정리합니다."
 date: "April 1, 2024"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "마이크와 음성을 표현한 비주얼"
 keywords: "OpenVoice, 음성 복제, 음성 AI, 딥페이크, 부정, 은행 인증, 음성 생체 인식"
 last_reviewed: "2026-05-16"
+seo_title: "OpenVoice 해설: 오픈소스 음성 복제 기술"
 ---
 
 ![마이크와 음성을 표현한 비주얼](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

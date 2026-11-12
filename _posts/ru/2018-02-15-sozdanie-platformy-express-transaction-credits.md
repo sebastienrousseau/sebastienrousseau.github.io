@@ -1,13 +1,14 @@
 ---
 title: "Создание платформы Express Transaction Credits"
 subtitle: "Архитектура и инженерные решения EXTC Network"
-description: "Как создавалась платформа Express Transaction Credits: технические решения, смарт-контракты и операционная архитектура."
+description: "Как создавалась платформа EXTC на Ethereum ERC-223: архитектура токена, выплаты с мультиподписью, переводы с блокировкой по времени и займы под залог."
 date: "February 15, 2018"
 language: "ru-RU"
 locale: "ru_RU"
 banner: "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp"
 banner_alt: "Платформа EXTC: схема компонентов системы"
 keywords: "EXTC, платформа, архитектура, смарт-контракты, Ethereum, ERC-20, разработка, инфраструктура, инженерия"
+seo_title: "Платформа EXTC: платёжный токен на Ethereum ERC-223"
 ---
 
 > **TL;DR.** Создание платёжной платформы на блокчейне требует продуманной архитектуры: смарт-контракты, шлюзы между фиатом и криптовалютами, KYC/AML, операционные дашборды и масштабируемость.

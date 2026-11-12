@@ -8,6 +8,7 @@ locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
 banner_alt: "Stand von KI und Quantencomputern im Banking: ein Rückblick auf 2023"
 keywords: "KI im Banking, Quantencomputing, Finanztechnologie, Open-Source-KI, Risikomanagement, Quantensicherheit, KI-Regulierung, KI-Ethik, KI-Governance, Banking-Innovation"
+seo_title: "KI im Banking: Stand von KI und Quantencomputing 2023"
 ---
 
 ## Überblick

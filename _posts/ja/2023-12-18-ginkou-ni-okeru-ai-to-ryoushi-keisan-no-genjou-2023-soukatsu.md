@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "ロンドンの金融街の夜景"
 keywords: "AI, 量子計算, 銀行, フィンテック, リスク管理, アルゴリズム取引, 2023, レビュー"
 last_reviewed: "2026-05-11"
+seo_title: "銀行の AI：2023 年の AI と量子計算の現状"
 ---
 
 ![ロンドンの金融街の夜景](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

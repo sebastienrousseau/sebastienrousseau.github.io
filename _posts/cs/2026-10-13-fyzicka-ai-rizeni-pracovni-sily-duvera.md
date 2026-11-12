@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Na summitu Economist o fyzické AI v Londýně řešily Kier Group a BSI důvěru pracovníků, bezpečné předávání řízení a rozdělení odpovědnosti za autonomní stroje."
+description: "Jak lídři z Kier Group a BSI přistupují k řízení fyzické AI: udržení důvěry pracovníků, předávání řízení mezi člověkem a strojem a rozdělení odpovědnosti."
 format-detection: "telephone=no"
 hreflang: "cs"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Nasazení autonomních fyzických strojů vedle lidí přináší akutní psychologická a právní rizika, se kterými se samotný software nikdy nesetkal. Na Economist Enterprise Physical AI and Robotics Summit představili lídři Kier Group a British Standards Institution (BSI) plán řízení fyzické AI."
 last_reviewed: "2026-10-13"
+seo_title: "Fyzická AI a řízení pracovní síly: důvěra a odpovědnost"
 ---
 
 Když selže podnikový software, poškodí databázi, přeruší síťové spojení nebo vyzradí token. Když selže systém fyzické AI, stovky kilogramů kloubové oceli, hydraulické pohony s vysokým točivým momentem nebo autonomní stroje pro zemní práce narazí do fyzické infrastruktury nebo do lidských těl. Na Economist Enterprise Physical AI and Robotics Summit, který se konal v Convene 200 Aldersgate v Londýně 13. října 2026, se sešel panel na vysoké úrovni, aby se zabýval naléhavými provozními, etickými a právními hranicemi průmyslové autonomie: jak udržet důvěru pracovníků, omezit kognitivní selhání při předávání řízení a vytvořit právně obhajitelné rámce odpovědnosti, když inteligentní stroje přebírají práci v první linii.

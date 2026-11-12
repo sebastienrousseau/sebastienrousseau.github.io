@@ -157,7 +157,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
-      THEME_SHA: "15e16468c7ba27004262bbfeaee68217a76457d3"
+      THEME_SHA: "7002bb9d143df4f562b2f16b46c51a5d880c3004"
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
@@ -357,7 +357,8 @@ jobs:
             .pa11yci.dark
             .pa11y-cache-manifest.json
             _data/pa11y-cache.json
-          retention-days: 1
+          # 30 days (plan F-9): any of the last month's builds can be restored.
+          retention-days: 30
           include-hidden-files: true
 
   # =========================================================================
@@ -902,6 +903,23 @@ jobs:
         with:
           subject-path: public/sbom.cdx.json
 
+      - name: Keep the live sitemap for IndexNow
+        # The deploy below replaces it; indexnow_ping.py compares the two to
+        # find the URLs that changed. A fetch failure leaves prev/ empty, and
+        # every URL then counts as changed (capped at 10,000).
+        if: github.ref == 'refs/heads/main'
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: |
+          mkdir -p prev
+          if [ -n "${INDEXNOW_KEY}" ]; then
+            curl -fsS https://sebastienrousseau.com/sitemap.xml -o prev/sitemap.xml || true
+            for loc in $(grep -o '<loc>[^<]*</loc>' prev/sitemap.xml 2>/dev/null | sed 's#</*loc>##g' | grep 'sitemap' || true); do
+              curl -fsS "$loc" -o "prev/${loc##*/}" || true
+            done
+          fi
+          python3 scripts/seo_and_audit/indexnow_ping.py --sitemap public/sitemap.xml --previous prev/sitemap.xml --write-key public
+
       - name: Prepare CNAME and .nojekyll
         if: github.ref == 'refs/heads/main'
         run: |
@@ -926,11 +944,19 @@ jobs:
         with:
           path: public
           include-hidden-files: true
+          retention-days: 30
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
+
+      - name: Ping IndexNow with the changed URLs
+        # Plan B-4. Never fails the deploy; skipped when the secret is unset.
+        if: github.ref == 'refs/heads/main'
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: python3 scripts/seo_and_audit/indexnow_ping.py --sitemap public/sitemap.xml --previous prev/sitemap.xml
 
       - name: Verify the deployed origin
         # Every other gate runs against public/ on the runner. This is the

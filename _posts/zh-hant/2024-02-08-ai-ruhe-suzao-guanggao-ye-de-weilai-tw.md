@@ -1,13 +1,14 @@
 ---
 title: "革新廣告業：AI 如何塑造未來"
 subtitle: "探索 AI 如何變革廣告：聚焦亞馬遜 Rufus 與 Meta 的最新進展，揭示對消費者參與的影響"
-description: "AI 透過亞馬遜 Rufus 與 Meta 的生成式工具重塑廣告業，提升消費者參與度與廣告投資回報率。"
+description: "本文介紹 AI 如何改變廣告業的消費者互動方式，並深入解讀亞馬遜 Rufus 購物助理以及 Meta 在生成式 AI 領域的最新進展與動向。"
 date: "February 8, 2024"
 language: "zh-Hant"
 locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/advertising-ai.webp"
 banner_alt: "一位戴著蝴蝶和花朵的機器人女性"
 keywords: "AI 廣告, 亞馬遜 Rufus, Meta, 生成式 AI, 個性化, 對話商業, 創意工具, 投資回報率, 廣告策略, 消費者參與"
+seo_title: "廣告業 AI：亞馬遜 Rufus、Meta 與生成式 AI"
 ---
 
 人工智慧（AI）正在深刻變革廣告格局，為廣告活動帶來前所未有的效率與效果。亞馬遜推出的 [**Rufus ⧉**][00]——個人購物助手聊天機器人——以及 Meta 跨平臺整合 AI 的對話助手與創意工具，體現了這場革命的前沿。這些進展不僅提升消費者體驗，也為精準定位與參與開闢新途徑，凸顯 AI 在廣告未來中的關鍵角色。

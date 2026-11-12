@@ -8,6 +8,7 @@ locale: "fr_FR"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
 banner_alt: "Bannière représentant des nœuds réseau dans un espace numérique bleu"
 keywords: "calcul quantique, algorithme quantique, cryptographie sur réseaux, LWE, chiffrement, cryptographie post-quantique, cybersécurité, Yilei Chen, recherche cryptographique, menaces de sécurité"
+seo_title: "Un algorithme quantique défie la cryptographie sur réseaux"
 ---
 
 ## Résumé exécutif

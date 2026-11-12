@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp"
 banner_alt: "독에서 바라본 HSBC 타워"
 keywords: "QKD, 양자 키 분배, 양자 암호, BB84, BBM92, 양자 네트워크, 은행 보안, 양자 인터넷"
 last_reviewed: "2026-05-16"
+seo_title: "양자 키 분배(QKD): 은행 보안 해설"
 ---
 
 ![독에서 바라본 HSBC 타워](https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp).class=\"img-fluid clearfix\"

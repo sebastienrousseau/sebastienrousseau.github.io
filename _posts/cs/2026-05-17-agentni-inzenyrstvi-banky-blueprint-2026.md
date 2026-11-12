@@ -1,7 +1,7 @@
 ---
 title: "Agentní inženýrství pro banky: plán 2026 pro vrcholové vedení a inženýry, kteří jej postaví"
 subtitle: "Agentní AI přešla z pilotů do produkce. 70 % bank ji používá; jen jedna z pěti má vyzrálý model řízení. Protivníci pracují strojovou rychlostí, starší systémy vznikly podle předpokladů dávkového zpracování z 60. let a lhůta nařízení EU o AI pro vysoce rizikové systémy je vzdálená dvanáct týdnů."
-description: "Agentní AI přešla z pilotů do produkce napříč světovým bankovnictvím. 70 % institucí ji do určité míry používá; jen jedna z pěti má vyzrálý model řízení. Autonomní protivníci přitom pracují strojovou rychlostí, starší kód v COBOLu, se kterým musí nové systémy spolupracovat, vznikl podle předpokladů dávkového zpracování z 60. let a lhůta nařízení EU o AI pro vysoce rizikové systémy ze srpna 2026 je vzdálená dvanáct týdnů. Toto je inženýrská a řídicí pozice, kterou banka potřebuje zaujmout."
+description: "Agentní inženýrství pro banky: proč agentní AI v produkci potřebuje vyzrálé řízení, kam zapadá starší kód v COBOLu a co vyžaduje lhůta nařízení EU o AI."
 date: "May 17, 2026"
 language: "cs-CZ"
 locale: "cs_CZ"

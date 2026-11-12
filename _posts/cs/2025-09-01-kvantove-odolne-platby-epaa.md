@@ -1,13 +1,14 @@
 ---
 title: "Kvantově odolné platby: proč musí odvětví jednat hned"
 subtitle: "Kvantově odolná připravenost je rozhodnutí o současné infrastruktuře, nikoli o budoucí. Bílá kniha EPAA popisuje strukturální riziko a naléhavou potřebu migrace."
-description: "Kvantové počítače ohrožují kryptografii platebních systémů. Bílá kniha EPAA popisuje strukturální riziko a naléhavé důvody pro migraci na postkvantovou kryptografii."
+description: "Kvantové počítače ohrožují kryptografii, na které stojí platební systémy. Jaké riziko popisuje bílá kniha EPAA a proč volá po kvantově odolných platbách."
 date: "September 01, 2025"
 language: "cs"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 banner_alt: "Deska plošných spojů kvantového počítače v modrém světle"
 keywords: "kvantově odolné platby, postkvantová kryptografie, SEPA, SWIFT gpi, ISO 20022, bezpečnost finančních služeb, EPAA, harvest-now decrypt-later, kryptografická agilita, Sebastien Rousseau"
+seo_title: "Kvantově odolné platby: proč migrovat na PQC hned"
 ---
 
 ## Kvantová hrozba pro platební systémy

@@ -8,6 +8,7 @@ locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp"
 banner_alt: "Banner pro plně homomorfní šifrování"
 keywords: "plně homomorfní šifrování, zabezpečení bankovnictví, kvantové výpočty, šifrování finančních dat, případové studie FHE, regulační rámce FHE, výpočetní režie FHE, výzkum FHE, hardware FHE, zákony o ochraně dat"
+seo_title: "Plně homomorfní šifrování (FHE) pro bankovní data"
 ---
 
 

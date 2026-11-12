@@ -8,6 +8,7 @@ locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp"
 banner_alt: "Barevné abstraktní digitální umění zobrazující kočku"
 keywords: "Le Chat, chatbot Mistral AI, virtuální asistent Le Chat, porozumění jazyku Mistral AI, zákaznický servis Le Chat, podniková řešení Mistral AI, přizpůsobení Le Chat, vícejazyčná podpora Mistral AI, komunikace s podporou AI, obchodní řešení řízená AI"
+seo_title: "Le Chat od Mistral AI: vícejazyčná konverzační AI"
 ---
 
 

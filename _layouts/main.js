@@ -115,10 +115,10 @@ window.serviceWorkerSetup = new ServiceWorkerSetup();
 /**
  * Fetches the webfonts once a page has loaded, for the views after it.
  *
- * A first view paints in the metric-matched system faces, so no font
- * download sits between the visitor and the first paint. After `load`,
- * this asks the browser for the three families (the latin files, the
- * ones every page uses), and once all three are in the HTTP cache it
+ * Inter is preloaded and on the first view (fonts.css). The serif and
+ * mono faces are not: a first view paints them in metric-matched system
+ * faces. After `load`, this asks the browser for those two families (the
+ * latin files), and once both are in the HTTP cache it
  * records "wf"; theme-init.js then adds .wf to <html> before the next
  * page paints, and the stylesheet switches to the webfonts there. The
  * current page is never switched, so nothing reflows under the reader.
@@ -131,7 +131,6 @@ window.serviceWorkerSetup = new ServiceWorkerSetup();
     function warm() {
         Promise.all([
             document.fonts.load('400 1em "Newsreader"'),
-            document.fonts.load('400 1em "Inter"'),
             document.fonts.load('400 1em "JetBrains Mono"')
         ]).then(function (sets) {
             var all = sets.every(function (faces) { return faces.length > 0; });
@@ -653,46 +652,30 @@ function fallbackCopy(text, done) {
 })();
 
 /**
- * Pre-fill the contact form from URL query parameters. The footer
- * newsletter widget submits as GET to /contact/?email=…&subject=newsletter
- * &message=…, so on arrival we pull those values into the matching
- * form fields and focus the Name field (the only one not pre-filled).
- * The contact form's own reCAPTCHA flow then takes over from there —
- * no AJAX shenanigans, no formspree interstitial, no tracker-blocker
- * conflicts. Acts only on the contact page (or any page hosting the
- * full ap-form contact form); silently no-ops elsewhere.
+ * Pre-select the contact form's subject from ?subject=… (the service
+ * pages link to /contact/?subject=speaking and so on). Only the subject
+ * is read: no e-mail address or message ever travels in a URL, where it
+ * would land in browser history, logs and referrers. Acts only on a page
+ * hosting the full ap-form contact form; silently no-ops elsewhere.
  */
 (function contactPrefill() {
     "use strict";
     var form = document.querySelector("form.ap-form");
     if (!form) return;
-    var params = new URLSearchParams(window.location.search);
-    var email = params.get("email");
-    var subject = params.get("subject");
-    var message = params.get("message");
-    if (!email && !subject && !message) return;
-    if (email) {
-        var emailEl = form.querySelector('input[name="email"]');
-        if (emailEl) emailEl.value = email;
-    }
-    if (subject) {
-        var subjectEl = form.querySelector('select[name="subject"]');
-        if (subjectEl) {
-            var match = Array.prototype.find.call(
-                subjectEl.options,
-                function (opt) { return opt.value === subject; }
-            );
-            if (match) subjectEl.value = subject;
-        }
-    }
-    if (message) {
-        var messageEl = form.querySelector('textarea[name="message"]');
-        if (messageEl && !messageEl.value) messageEl.value = message;
+    var subject = new URLSearchParams(window.location.search).get("subject");
+    if (!subject) return;
+    var subjectEl = form.querySelector('select[name="subject"]');
+    if (subjectEl) {
+        var match = Array.prototype.find.call(
+            subjectEl.options,
+            function (opt) { return opt.value === subject; }
+        );
+        if (match) subjectEl.value = subject;
     }
     var nameEl = form.querySelector('input[name="name"]');
     if (nameEl) nameEl.focus();
-    // Strip the query string from the address bar so a refresh doesn't
-    // re-prefill and the URL stays canonical.
+    // Strip the query string so a refresh doesn't re-prefill and the URL
+    // stays canonical.
     if (history && typeof history.replaceState === "function") {
         history.replaceState({}, "", window.location.pathname + window.location.hash);
     }
@@ -1025,7 +1008,7 @@ window.__srEmitTrack = emitTrack;
             }
 
             var featCta = t.closest(
-                ".feat-hero\x20.feat-cta\x20a,\x20.feat-finale\x20.feat-cta\x20a,\x20.ap-cta-mini"
+                ".feat-hero\x20.feat-cta\x20a,\x20.feat-finale\x20.feat-cta\x20a,\x20.closing-v3\x20.feat-cta\x20a,\x20.ap-cta-mini"
             );
             if (featCta) {
                 var href = featCta.getAttribute("href") || "";
@@ -1665,3 +1648,23 @@ document.addEventListener("click", function (event) {
   btn.replaceWith(frame);
   frame.focus();
 });
+
+/**
+ * 404: pre-fill the search box with words from the missing path's last
+ * segment ("/2026-05-12-pacs008-deadline/" -> "pacs008 deadline"), so one
+ * press of Enter searches for what the reader was after.
+ */
+(function notFoundSearch() {
+    "use strict";
+    var input = document.getElementById("q404");
+    if (!input || input.value) return;
+    var parts = window.location.pathname.split("/").filter(function (p) {
+        return p && p !== "index.html" && p !== "404.html";
+    });
+    var last = parts.length ? decodeURIComponent(parts[parts.length - 1]) : "";
+    input.value = last
+        .replace(/\.html?$/, "")
+        .replace(/^\d{4}-\d{2}-\d{2}-/, "")
+        .replace(/[-_]+/g, " ")
+        .trim();
+})();

@@ -22,6 +22,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
 import _lang_registry as _lr
 import _profile
 from _frontmatter import parse_frontmatter as _shared_parse_frontmatter
+from postbuild_lib.llms_services import services_lines as _services_lines
 
 
 def _all_active_non_en_langs() -> list[str]:
@@ -370,7 +371,7 @@ def build_llms_txt() -> str:
     out.append(
         f"- [Contact]({base}/contact/) — professional contact form for consulting, speaking, advisory engagements."
     )
-    out.append("")
+    out.extend(["", *_services_lines(base)])
     out.append("## Feeds")
     out.append("")
     out.append(f"- [RSS feed]({base}/rss.xml)")

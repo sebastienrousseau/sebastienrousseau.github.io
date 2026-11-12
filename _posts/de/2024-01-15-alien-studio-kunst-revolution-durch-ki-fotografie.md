@@ -1,13 +1,14 @@
 ---
 title: "Alien Studio: meine Reise von der Technik zur fotografischen Kunst"
 subtitle: "Die Anfänge einer technologischen Odyssee"
-description: "Begleiten Sie mich auf meinem persönlichen Weg — von Rust, KI und Quantencomputing hin zur Neudefinition von Kunst und Fotografie durch Alien Studio."
+description: "Eine persönliche Reise von Rust, KI und Quantencomputing zu Kunst und Fotografie: wie das Projekt Alien Studio mit Technologie kreative Arbeit neu denkt."
 date: "Jan 15, 2024"
 language: "de"
 locale: "de_DE"
 banner: "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp"
 banner_alt: "Muse des Sonnenuntergangs, ein heiterer Blick; Schönheit in der Stille"
 keywords: "persönliche Tech-Reise, Entdeckung von Rust, KI-Erkundung, Quantencomputing, Verschmelzung von Kunst und Fotografie, Alien Studio, Erstellung digitaler Kunst, Technologie in der Kunst, innovative Fotografie, künstlerische Wiederentdeckung"
+seo_title: "Alien Studio: eine persönliche Reise zur KI-Fotografie"
 ---
 
 ## Künstlerische Innovation durch Spitzentechnologie freisetzen

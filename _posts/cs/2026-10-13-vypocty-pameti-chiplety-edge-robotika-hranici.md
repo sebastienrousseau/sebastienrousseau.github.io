@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Taner Ozcelik, šéf Mythic AI, ukázal na summitu Economist v Londýně, jak výpočty v paměti a modulární chiplety bourají von Neumannovu paměťovou zeď v robotice."
+description: "Jak Taner Ozcelik z Mythic AI vidí výpočty v paměti a modulární chiplety, které prolamují paměťovou zeď pro edge robotiku, obranu a automobilové platformy."
 format-detection: "telephone=no"
 hreflang: "cs"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,6 +84,7 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Fyzická AI se nemůže škálovat na GPU z datových center s příkonem 700 W. Na Economist Enterprise Physical AI and Robotics Summit předseda a generální ředitel Mythic AI Taner Ozcelik ukázal, jak výpočty v paměti a modulární chiplety bourají von Neumannovu paměťovou zeď a přinášejí účinnost srovnatelnou s biologií na fyzickém okraji sítě."
 last_reviewed: "2026-10-13"
+seo_title: "Výpočty v paměti a chiplety: edge robotika po Moorovi"
 ---
 
 Více než půl století se pokrok výpočetní techniky řídil Moorovým zákonem: každých osmnáct až dvacet čtyři měsíců se na křemík vešlo dvakrát více tranzistorů. V nastupující oblasti fyzické AI a autonomní robotiky se však Moorův zákon srazil se zákony termodynamiky. Autonomní drony, čtyřnozí roboti, chirurgické manipulátory a samořídicí vozidla nemohou vozit serverové GPU s příkonem 700 wattů ani chladicí věže. Na Economist Enterprise Physical AI and Robotics Summit v Londýně 13. října 2026 se Taner Ozcelik, předseda a generální ředitel Mythic AI, sešel s Kennethem Cukierem k rozhovoru o architektonické revoluci, kterou prolomení této patové situace vyžaduje: o cestě za hranici Moorova zákona prostřednictvím analogových výpočtů v paměti (compute-in-memory, CIM) a modulárních chipletů.

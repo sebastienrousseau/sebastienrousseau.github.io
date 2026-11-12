@@ -1,7 +1,7 @@
 ---
 title: "I pagamenti wholesale globali nel 2026: ISO 20022, rinnovo degli RTGS e l'economia dell'interoperabilità"
 subtitle: "I pagamenti wholesale sono diventati una leva di politica economica: ISO 20022, orari operativi degli RTGS, accesso dei non-banche, interlinking, pilota di regolamento DLT e roadmap del G20 convergono attorno al costo della circolazione globale della liquidità."
-description: "I pagamenti wholesale globali nel 2026 sono ridisegnati dall'armonizzazione ISO 20022, dal rinnovo degli RTGS, dall'estensione delle finestre di regolamento, dall'accesso dei non-banche, dalla governance delle API, dai pilota DLT e dalla frammentazione dei pagamenti transfrontalieri. La questione economica è l'interoperabilità, non solo la messaggistica."
+description: "Pagamenti wholesale 2026: come ISO 20022, rinnovo degli RTGS, finestre di regolamento più lunghe, accesso non bancario e pilot DLT cambiano l'interoperabilità."
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Mappa dell'architettura dei pagamenti wholesale globali per il 2026 — ISO 20022, rinnovo degli RTGS, corridoi transfrontalieri, finestre di liquidità e pilota di regolamento DLT"
 banner_height: "571"

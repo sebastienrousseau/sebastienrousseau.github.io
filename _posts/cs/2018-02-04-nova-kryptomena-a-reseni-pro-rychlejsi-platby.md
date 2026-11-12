@@ -1,8 +1,8 @@
 ---
 title: "Představení nové kryptoměny a řešení pro rychlejší platby"
-seo_title: "Nová kryptoměna a řešení pro rychlejší platby"
+seo_title: "EXTC: rychlejší přeshraniční platby na Ethereum ERC-223"
 subtitle: "Nová kryptoměna a řešení rychlejších plateb pro finance nové generace."
-description: "Na začátku roku 2018 platforma EXTC zkoumala rychlejší přeshraniční platby prostřednictvím chytrých kontraktů Ethereum ERC-223. Byl to raný nákres toho, co později vybudovaly decentralizované finance."
+description: "Jak platforma EXTC v roce 2018 zkoumala rychlejší přeshraniční platby pomocí chytrých kontraktů Ethereum ERC-223 a proč byla raným nákresem DeFi."
 excerpt: "Platforma Express Transaction Credits (EXTC) byla experimentem z počátku roku 2018 v oblasti programovatelných plateb na Ethereu. Využívala chytré kontrakty ERC-223 k umožnění okamžitých přeshraničních převodů a atomických platebních toků, tedy myšlenek, které decentralizované finance později škálovaly."
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 name: "Sebastien Rousseau"

@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: ""
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Feb 19, 2024"
-description: "Gemini 1.5 from Google scales context windows past 1M tokens. What that unlocks for retrieval-augmented finance and the trade-offs worth knowing."
+description: "Gemini 1.5 from Google scales context windows past one million tokens. Learn what that unlocks for retrieval-augmented finance and the trade-offs to know."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -106,6 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Gemini 1.5 is built on a new version of the Mixture of Experts (MoE) architecture, enhancing its ability to selectively activate the most relevant pathways in its neural network. This advancement…"
 last_reviewed: "2026-05-11"
+seo_title: "Gemini 1.5 Explained: Google's Million-Token Context Window"
 ---
 
 

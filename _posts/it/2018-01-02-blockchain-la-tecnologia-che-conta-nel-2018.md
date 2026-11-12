@@ -1,13 +1,14 @@
 ---
 title: "Blockchain spiegata: la tecnologia che conta di più"
 subtitle: "Cos'è la blockchain, come funziona e perché plasma il futuro della finanza"
-description: "Una panoramica accessibile della tecnologia blockchain: libro mastro distribuito, consenso, smart contract e applicazioni nel settore finanziario."
+description: "Come una blockchain concatena blocchi di dati, come crittografia e reti peer-to-peer proteggono le transazioni e dove sta cambiando finanza e banking."
 date: "January 2, 2018"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
 banner_alt: "Laptop spento su un tavolo di legno marrone"
 keywords: "blockchain, libro mastro distribuito, consenso, smart contract, Bitcoin, Ethereum, finanza decentralizzata, DLT"
+seo_title: "Blockchain spiegata: blocchi, crittografia e reti P2P"
 ---
 
 ![Laptop spento su un tavolo di legno marrone](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"

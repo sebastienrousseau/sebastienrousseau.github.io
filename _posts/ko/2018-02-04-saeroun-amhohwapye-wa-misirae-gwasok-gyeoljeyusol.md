@@ -1,7 +1,7 @@
 ---
 title: "새로운 암호자산을 공개하며 미래의 보다 빠른 결제 솔루션을 제공한다"
 subtitle: "암호자산에서 실세계의 결제 인프라로"
-description: "새로운 암호자산 프로젝트와, 그것이 보다 빠른 결제 솔루션을 어떻게 가능하게 하는지에 관하여."
+description: "EXTC 플랫폼이 2018년 이더리움 ERC-223 스마트 계약으로 더 빠른 국경 간 결제를 모색한 방식과, 그것이 DeFi의 초기 청사진이 된 이유를 다룹니다."
 date: "February 4, 2018"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,6 +9,7 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "도시 가로등의 네온"
 keywords: "암호자산, 결제, 실시간 결제, 토큰, ICO, 블록체인, 핀테크, 국경 간 송금"
 last_reviewed: "2026-05-16"
+seo_title: "EXTC: 이더리움 ERC-223 기반 고속 해외 결제"
 ---
 
 ![도시 가로등의 네온](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

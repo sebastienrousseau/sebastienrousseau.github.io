@@ -1,13 +1,14 @@
 ---
 title: "区块链：2018 年最重要的技术"
 subtitle: "通过私钥密码学和点对点（P2P）网络保障数字交易的非凡历程"
-description: "区块链——驱动加密货币飞速崛起的底层技术——正在颠覆企业、金融服务和资本市场。"
+description: "本文带你了解区块链如何把一个个数据区块串联成链，密码学与点对点网络如何共同保障交易的安全，以及这项技术正在金融与银行业的哪些领域带来深刻变革。"
 date: "January 2, 2018"
 language: "zh-Hans"
 locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
 banner_alt: "一座具有许多孔洞的高塔建筑"
 keywords: "区块链, 加密货币, 分布式账本, 智能合约, 去中心化金融, 供应链, 数字身份, 共识机制, 银行业, 金融科技"
+seo_title: "区块链详解：区块、密码学与 P2P 网络"
 ---
 
 ![一座具有许多孔洞的高塔建筑](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"

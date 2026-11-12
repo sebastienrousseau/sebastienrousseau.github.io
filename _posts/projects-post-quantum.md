@@ -94,7 +94,7 @@ site_last_updated: "2026-06-27"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-
+seo_title: "Post-Quantum Cryptography Libraries for Financial Systems"
 ---
 <p class="story-intro">A large quantum computer breaks RSA and elliptic-curve cryptography. Some financial records stay sensitive for decades, so the data captured today is already at risk. These libraries implement the NIST post-quantum standards, so you can start the migration now, on your own schedule.</p>
 

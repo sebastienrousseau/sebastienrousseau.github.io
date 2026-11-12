@@ -108,6 +108,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "The European Union's Artificial Intelligence Act marks a significant step in the global discourse on AI regulation. As digital technologies increasingly permeate every aspect of our lives, the…"
 last_reviewed: "2026-05-11"
+seo_title: "EU AI Act Explained: Risk-Tiered AI Regulation Worldwide"
 ---
 
 

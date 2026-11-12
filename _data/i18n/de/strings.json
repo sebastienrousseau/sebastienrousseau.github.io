@@ -92,5 +92,21 @@
   "scorecard.downloaded": "Scorecard-Bild heruntergeladen",
   "scorecard.radarTitle": "Reifegrad-Radar",
   "scorecard.methodology": "Vollständige Indexmethodik lesen",
-  "scorecard.fallback": "Die Reifegrad-Dimensionen sind oben tabellarisch aufgeführt. Aktivieren Sie JavaScript, um Ihr Institut interaktiv zu bewerten und das Ergebnis zu exportieren."
+  "scorecard.fallback": "Die Reifegrad-Dimensionen sind oben tabellarisch aufgeführt. Aktivieren Sie JavaScript, um Ihr Institut interaktiv zu bewerten und das Ergebnis zu exportieren.",
+  "footer.title.contact": "Kontakt",
+  "footer.contact.location": "London, Vereinigtes Königreich",
+  "footer.contact.response": "Erste Antwort in der Regel innerhalb von 48 Stunden",
+  "footer.newsletter.link": "Banking On Quantum abonnieren",
+  "nav.workWithMe": "Zusammenarbeit",
+  "nav.research": "Forschungskooperation",
+  "nav.openSourceSupport": "Open-Source-Support",
+  "nav.aria.toggleWorkWithMe": "Untermenü Zusammenarbeit umschalten",
+  "contact.privacyLine": "Ihre Nachricht geht an Formspree, das sie mir per E-Mail schickt; den Spamschutz übernimmt Google reCAPTCHA.",
+  "contact.privacyLink": "Datenschutzhinweis",
+  "footer.changelog": "Änderungsprotokoll",
+  "contact.eyebrow": "Kontakt",
+  "footer.mediaKit": "Pressemappe",
+  "contact.appTitle": "Kontakt",
+  "nav.hubPqc": "Post-Quanten-Kryptografie",
+  "nav.hubAi": "Angewandte KI"
 }

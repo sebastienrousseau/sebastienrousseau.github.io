@@ -106,6 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "In the world of software development, logging plays a crucial role in understanding the behaviour of an application, diagnosing issues, and ensuring smooth operation. Rust, a systems programming…"
 last_reviewed: "2026-05-11"
+seo_title: "Rust Logging Library: RustLogs (RLG) for Structured Logs"
 ---
 
 

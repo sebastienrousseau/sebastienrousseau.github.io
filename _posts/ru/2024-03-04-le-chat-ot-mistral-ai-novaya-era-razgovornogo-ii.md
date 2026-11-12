@@ -8,6 +8,7 @@ locale: "ru_RU"
 banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Le Chat от Mistral AI: разговорный ИИ"
 keywords: "Le Chat, Mistral AI, разговорный ИИ, LLM, Европа, открытые модели, многоязычность, GDPR"
+seo_title: "Le Chat от Mistral AI: многоязычный разговорный ИИ"
 ---
 
 > **TL;DR.** Le Chat — европейское разговорное ИИ-предложение от Mistral AI с акцентом на качество, открытые модели и соответствие европейским регуляторным требованиям.

@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: ""
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Feb 08, 2024"
-description: "Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's latest developments. Discover the impact on consumer engagement"
+description: "Learn how AI in advertising is changing consumer engagement, with insights on Amazon's Rufus shopping assistant and Meta's latest generative AI developments."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/libmake/v1/logos/libmake.svg"
@@ -108,6 +108,7 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Artificial Intelligence (AI) is drastically transforming the advertising landscape, offering unprecedented efficiency and effectiveness in ad campaigns. Amazon's introduction of [Rufus ⧉][00], a…"
 last_reviewed: "2026-05-11"
+seo_title: "AI in Advertising: Amazon Rufus, Meta and Generative AI"
 ---
 
 
