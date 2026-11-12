@@ -135,11 +135,9 @@ def test_build_lists_pull_requests_merged_with_a_merge_commit(
     monkeypatch.setattr(rn, "_git", lambda *a: calls[a])
     body = rn.build("v0.0.36", "HEAD", author_of=lambda n: "me")
     what = body.split("## What's Changed")[1].split("**Full Changelog**")[0]
+    pull = "https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/"
     assert [line for line in what.splitlines() if line] == [
-        "* `Merge pull request #523 from owner/no-body` by @me in "
-        "https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/523",
-        "* `fix: squashed` by @me in "
-        "https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/524",
-        "* `feat: design v3 (v0.0.36)` by @me in "
-        "https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/525",
+        f"* `Merge pull request #523 from owner/no-body` by @me in {pull}523",
+        f"* `fix: squashed` by @me in {pull}524",
+        f"* `feat: design v3 (v0.0.36)` by @me in {pull}525",
     ]
