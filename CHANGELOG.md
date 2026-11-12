@@ -10,7 +10,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-## [0.0.36] - Unreleased
+## [0.0.37] - Unreleased
+
+Release notes that list every merged pull request.
+
+### Fixed
+
+- **Release notes list pull requests merged with a merge commit**: `scripts/release/release_notes.py` read only squash-merge subjects ending `(#N)`, so a release merged as "Merge pull request #N" said "No pull requests merged since the previous release". It now takes the pull request's title from the merge commit's body.
+- **Release highlights keep the space after the bold lead**: a lead followed by plain words ran together ("**Person JSON-LD**on every page"), as in the published v0.0.35 notes.
+
+---
+
+## [0.0.36] - 2026-11-12
 
 Design v3, a home page with one idea per section, Work with me pages, and search titles that fit.
 
@@ -39,6 +50,7 @@ Design v3, a home page with one idea per section, Work with me pages, and search
 - **One newsletter path, no e-mail in URLs**: the footer and hub forms that put an address in the URL (or posted to a second Formspree form) are links to Banking On Quantum; the contact form pre-fills only the subject, shows who processes the message, and redirects to `/thanks/`.
 - **ISO 20022 dates**: two articles gave November 2026 for the end of unstructured addresses, which Swift delayed on 27 August 2026; both carry a dated update, and the Fedwire migration date is corrected to July 2025 (corrections log).
 - **Translated chrome**: the Contact link and page title in Bengali, Hausa and Yoruba, and the Contact eyebrow and app title in every locale, were English. The leak gate no longer counts a string a locale translates identically ("Contact" in French).
+- **Contrast measured on every surface**: neutral `color-mix()` values were mixed in oklch, which Chrome serialises as `oklch(L C none)` for a grey; axe cannot parse that and skipped contrast over the surfaces, nav and hairlines. They are mixed in sRGB (theme `7002bb9`). The measurement it restored found three faults, all fixed: the home hero's credential links (6.71:1 on the gradient, now `--accent-strong`), the Contact clock's glow overflowing a phone viewport and covering the note above it, and the closing newsletter link's target (now 44px).
 - **Dependabot #523 and #524** folded in; the dev lock is regenerated (cyclonedx-bom 8 still yields a valid CycloneDX 1.6 SBOM).
 
 ---
@@ -508,7 +520,8 @@ Two fixes merged to `main` between 0.0.28 and 0.0.30, released under this number
 
 ---
 
-[0.0.36]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.35...HEAD
+[0.0.37]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.36...HEAD
+[0.0.36]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.35...v0.0.36
 [0.0.35]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.34...v0.0.35
 [0.0.34]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.33...v0.0.34
 [0.0.33]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/compare/v0.0.32...v0.0.33
