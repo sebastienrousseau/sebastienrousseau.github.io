@@ -1,0 +1,121 @@
+name: rollback
+
+# Put an earlier deploy back on GitHub Pages in about two minutes, with no
+# commit, no push and no rebuild. It takes the `github-pages` artifact that
+# a successful `build-audit` run on main already uploaded and deployed, and
+# deploys those exact bytes again.
+#
+#   gh workflow run rollback.yml --ref main -f run-id=<build-audit run id>
+#
+# Pick the run with:
+#   gh run list --workflow ci.yml --branch main --event push
+#
+# This only works while that run's artifact exists: ci.yml keeps it for 30
+# days. Older than that, re-run the whole build-audit run instead.
+#
+# A rollback leaves main ahead of what is live. The next push to main
+# deploys main again, so fix or revert main before merging anything.
+# deploy-drift reports the rollback every hour until then.
+# Runbook: docs/operations/rollback.md.
+
+run-name: rollback to build-audit run ${{ inputs.run-id }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      run-id:
+        description: build-audit run id whose deploy to restore
+        type: string
+        required: true
+
+concurrency:
+  group: pages-rollback
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  rollback:
+    name: Redeploy an earlier build
+    # The github-pages environment only accepts main.
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      actions: read     # read the source run and download its artifact
+      pages: write
+      id-token: write
+    environment: github-pages
+    steps:
+      - name: Check the source run
+        id: source
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ inputs.run-id }}
+        run: |
+          set -euo pipefail
+          if ! [[ "$RUN_ID" =~ ^[0-9]+$ ]]; then
+            echo "::error::run-id must be a number, got '$RUN_ID'"
+            exit 1
+          fi
+          run=$(gh api "repos/${REPO}/actions/runs/${RUN_ID}" \
+            --jq '[.path, .event, .head_branch, .conclusion, .head_sha] | @tsv')
+          IFS=$'\t' read -r path event branch conclusion sha <<<"$run"
+          if [ "$path" != ".github/workflows/ci.yml" ] || [ "$event" != "push" ] \
+            || [ "$branch" != "main" ] || [ "$conclusion" != "success" ]; then
+            echo "::error::Run $RUN_ID is $path/$event/$branch/$conclusion;" \
+              "need a successful build-audit push to main."
+            exit 1
+          fi
+          live=$(gh api "repos/${REPO}/actions/runs/${RUN_ID}/artifacts?name=github-pages" \
+            --jq '[.artifacts[] | select(.expired | not)] | length')
+          if [ "$live" = "0" ]; then
+            echo "::error::Run $RUN_ID has no github-pages artifact left." \
+              "Re-run the whole build-audit run instead."
+            exit 1
+          fi
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+          {
+            echo "### Rollback"
+            echo "Restoring the deploy of run ${RUN_ID} (commit \`${sha}\`)."
+            echo "main is now ahead of production until it is fixed or reverted."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Download the deployed site
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
+        with:
+          name: github-pages
+          run-id: ${{ inputs.run-id }}
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/site
+
+      # deploy-pages only deploys an artifact from its own run, so upload the
+      # same tar again, unchanged. Kept 30 days, like ci.yml, so a rollback
+      # can be rolled back too.
+      - name: Re-upload it as this run's Pages artifact
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: github-pages
+          path: ${{ runner.temp }}/site/artifact.tar
+          retention-days: 30
+          if-no-files-found: error
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
+
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+
+      # Same origin check as ci.yml's deploy, for the same reasons: against
+      # the Pages origin (Cloudflare caches HTML) and without CSP (the
+      # headers are Cloudflare Transform Rules).
+      - name: Verify the deployed origin
+        run: |
+          python3 scripts/seo_and_audit/verify_deploy.py \
+            --base "${{ steps.deployment.outputs.page_url }}" \
+            --skip-csp

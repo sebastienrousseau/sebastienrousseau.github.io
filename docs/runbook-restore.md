@@ -17,12 +17,19 @@ deploy (plan F-9). Last restore drill: _not yet done_ (record the date here).
 
 ## Roll back a bad deploy (minutes)
 
-1. Find the last good run: `gh run list --workflow ci.yml --branch main`.
-2. Re-run its `finalise` job: `gh run rerun <run-id> --job <finalise-job-id>`.
-   Pages serves that run's artefact. Purge the Cloudflare cache for HTML.
-3. Or deploy a release: download its `sebastienrousseau.github.io-X.Y.Z.tar.gz`,
-   check it (`sha256sum -c SHA256SUMS`, `cosign verify-blob --bundle ...`),
-   and publish it with the `release.yml` artefacts as the Pages source.
+1. Find the last good deploy: `gh run list --workflow ci.yml --branch main --event push`.
+2. Redeploy its site, unchanged and without a rebuild (about two minutes):
+   `gh workflow run rollback.yml --ref main -f run-id=<run-id>`.
+   It works while that run's `github-pages` artefact exists (30 days).
+   Purge the Cloudflare cache for HTML.
+3. main is still ahead of production: fix or revert it before merging
+   anything, since the next push to main deploys main again. deploy-drift
+   fails every hour until then.
+4. Older than 30 days: re-run the whole run (`gh run rerun <run-id>`),
+   which rebuilds that commit (about 1h40m). Or deploy a release: download
+   its `sebastienrousseau.github.io-X.Y.Z.tar.gz`, check it
+   (`sha256sum -c SHA256SUMS`, `cosign verify-blob --bundle ...`), and
+   publish it with the `release.yml` artefacts as the Pages source.
 
 ## Rebuild from a bundle (the repository is gone)
 

@@ -22,6 +22,7 @@ on:
 permissions:
   contents: read
   deployments: read
+  actions: read   # tell a rollback.yml deploy from a build-audit one
 
 concurrency:
   group: deploy-drift
@@ -84,6 +85,24 @@ jobs:
 
           echo "main HEAD : $head_sha"
           echo "deployed  : $deployed"
+
+          # rollback.yml deploys an older build, but the deployment records
+          # main's HEAD, so the commit comparison below would say "In sync".
+          # Read which workflow made the deployment instead.
+          log_url=$(gh api \
+            "repos/${REPO}/deployments?environment=github-pages&per_page=1" \
+            -q '.[0].statuses_url' | xargs -r gh api -q '.[0].log_url // ""')
+          run_id=$(printf '%s' "$log_url" | sed -nE 's#.*/actions/runs/([0-9]+).*#\1#p')
+          if [ -n "$run_id" ]; then
+            made_by=$(gh api "repos/${REPO}/actions/runs/${run_id}" \
+              -q '.path + " " + .display_title')
+            case "$made_by" in
+              .github/workflows/rollback.yml*)
+                echo "::error::Production is rolled back (${made_by#* })," \
+                  "not main. Fix or revert main; its next deploy ends this."
+                exit 1 ;;
+            esac
+          fi
 
           if [ "$head_sha" = "$deployed" ]; then
             echo "In sync."

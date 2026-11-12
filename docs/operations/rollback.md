@@ -11,6 +11,21 @@ good, then let CI redeploy.
 
 ---
 
+## 0. Put the last good deploy back first (minutes)
+
+`.github/workflows/rollback.yml` redeploys the site a successful `main`
+run already deployed, unchanged, with no commit and no rebuild:
+
+```bash
+gh run list --workflow ci.yml --branch main --event push --limit 10
+gh workflow run rollback.yml --ref main -f run-id=<last-good-run-id>
+```
+
+It takes about two minutes and works while that run's `github-pages`
+artifact exists (30 days). It only buys time: `main` still holds the bad
+change and its next deploy ships it again, and `deploy-drift` fails every
+hour until `main` is fixed. Then carry on below.
+
 ## 1. Decide: revert vs roll-forward
 
 - **Revert** when the bad commit is isolated and recent. Fastest, safest.

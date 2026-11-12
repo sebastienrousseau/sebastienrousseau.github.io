@@ -14,6 +14,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 Release notes that list every merged pull request.
 
+### Added
+
+- **Rollback in minutes**: `.github/workflows/rollback.yml` redeploys the site an earlier successful `main` run deployed, from its kept `github-pages` artifact, with no commit and no rebuild. Rolling back the v0.0.36 design meant re-running the whole v0.0.35 build (about 1h40m), because that run's artifact was kept for only a day. `deploy-drift` now fails while a rollback is live instead of reporting "In sync", since the rollback's deployment records `main`'s commit.
+
 ### Fixed
 
 - **Release notes list pull requests merged with a merge commit**: `scripts/release/release_notes.py` read only squash-merge subjects ending `(#N)`, so a release merged as "Merge pull request #N" said "No pull requests merged since the previous release". It now takes the pull request's title from the merge commit's body.
