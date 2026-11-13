@@ -10,7 +10,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-## [0.0.37] - Unreleased
+## [0.0.38] - Unreleased
+
+Renamed-article redirects that answer in one hop.
+
+### Fixed
+
+- **Rebranded article URLs redirect once**: the Worker's Shokunin rule stripped `shokunin-` from the 2023-10-09 article and answered at once, without consulting `redirects.json`. In 34 locales the stripped slug had been renamed again, so `/<lang>/2023-10-09-shokunin-…/` took two 301s (stripped, then renamed), which `deploy-drift`'s live redirect check flagged for `/ar/`. The rebrand target now resolves through the map, so each answers one 301 to the final URL. A differential run of the old and new Worker over 37,854 requests (every map entry, its `shokunin-` variant and sample paths, five request shapes each) differs only in those 240 responses.
+- **`lang-router.js` within the size ceilings**: `fetch` (82 lines) is split into `tryApiRoutes`, `tryPermanentRedirects` and `routeByLocale` with the same order and responses, and the rebrand helpers move to `edge-routes.js`, keeping the file at 475 lines.
+
+---
+
+## [0.0.37] - 2026-11-13
 
 Back to the v0.0.35 site, rollback in minutes, and release notes that list every merged pull request.
 

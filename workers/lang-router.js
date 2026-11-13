@@ -301,47 +301,6 @@ import { tryClock } from './clock.js';
 // Cookie-free conversion & Core Web Vitals event sink: POST /api/event.
 import { tryEvent } from './events.js';
 
-// Permanent slug redirects shipped with the Shokunin → Static Site
-// Generator rebrand. Returns a 301 Response when the URL matches the
-// rename patterns, or null when it doesn't. Preserves SEO continuity
-// for incoming links that still point at the old slugs.
-//
-// Two pattern families are handled:
-//   * 2023-10-09 article: ``/(<lang>/)?2023-10-09-shokunin-<rest>``
-//     redirects to the same path with the ``shokunin-`` segment
-//     dropped (matches the rename in PR #N).
-//   * ``made-with-ssg`` credit page + its 27 localized slug
-//     variants (each suffixed with ``-shokunin``) redirect to the
-//     ``-static-site-generator`` equivalent.
-export function trySlugRedirects(url) {
-  const path = url.pathname;
-  // 2023-10-09 article rename — strip the literal ``shokunin-`` token
-  // that follows the date in every locale's filename.
-  const ARTICLE_RE = /^(\/(?:[a-z]{2}(?:-[a-z]+)?\/)?)2023-10-09-shokunin-/;
-  if (ARTICLE_RE.test(path)) {
-    const redirected = new URL(url);
-    redirected.pathname = path.replace("2023-10-09-shokunin-", "2023-10-09-");
-    return Response.redirect(redirected.toString(), 301);
-  }
-  // ``made-with-ssg`` (EN) and any localized variant ending in
-  // ``-shokunin`` or ``-shokunin/`` (e.g. ``concu-avec-shokunin``,
-  // ``gemaakt-met-shokunin``, ``hecho-con-shokunin``) redirect to
-  // the ``-static-site-generator`` form.
-  if (path === "/made-with-ssg" || path === "/made-with-ssg/") {
-    const redirected = new URL(url);
-    redirected.pathname = "/made-with-static-site-generator/";
-    return Response.redirect(redirected.toString(), 301);
-  }
-  const LOCALE_CREDIT_RE = /^(\/[a-z]{2}(?:-[a-z]+)?\/)([^/]+)-shokunin\/?$/;
-  const m = path.match(LOCALE_CREDIT_RE);
-  if (m) {
-    const redirected = new URL(url);
-    redirected.pathname = `${m[1]}${m[2]}-static-site-generator/`;
-    return Response.redirect(redirected.toString(), 301);
-  }
-  return null;
-}
-
 // Doubled locale prefix: `/<lang>/<lang>/<rest>` -> 301 `/<lang2>/<rest>`.
 // A former EN-URL rewriter bug (fixed in #464) emitted links such as
 // `/nl/th/<slug>/` and `/zh-hant/zh-hant/<slug>`; Search Console still
@@ -366,6 +325,8 @@ import {
   fetchOrigin,
   getRedirectMap,
   tryRenamedUrlRedirect,
+  trySlugRedirects,
+  resolveRenamed,
 } from './edge-routes.js';
 export {
   isHtmlPagePath,
@@ -376,6 +337,7 @@ export {
   getRedirectMap,
   _resetRedirectMapCache,
   tryRenamedUrlRedirect,
+  trySlugRedirects,
 } from './edge-routes.js';
 
 /** Pass a request through to origin, edge-caching it when it is a page. */
@@ -406,35 +368,94 @@ export function recordRedirect(request, env, ctx, fromLang, toLang) {
   }
 }
 
+// API endpoints that skip locale routing and carry the API security
+// headers. Each try* returns null when the request is not its route.
+async function tryApiRoutes(request, env, ctx) {
+  // ActivityPub handler — fields the four Fediverse endpoints before
+  // the locale + CSP path runs. Returns null when the request isn't
+  // an AP route, in which case we fall through to the existing flow.
+  const apResponse = await tryActivityPub(request);
+  if (apResponse) return withApiSecurityHeaders(apResponse);
+  // MCP handler — fields /mcp/v1/list_resources / read_resource /
+  // search. Locale routing doesn't apply (these are API endpoints).
+  const mcpResponse = await tryMCP(request);
+  if (mcpResponse) return withApiSecurityHeaders(mcpResponse);
+  // Profile clock — /api/clock/hero-<theme>.svg, uncached so it keeps time.
+  const clockResponse = await tryClock(request);
+  if (clockResponse) return withApiSecurityHeaders(clockResponse);
+  // Conversion & CWV event beacon: POST /api/event -> Analytics Engine.
+  const eventResponse = await tryEvent(request, env, ctx);
+  if (eventResponse) return withApiSecurityHeaders(eventResponse);
+  return null;
+}
+
+// Permanent redirects that apply to every method, ahead of locale routing.
+async function tryPermanentRedirects(request, env, url) {
+  // Permanent slug redirects from the Shokunin → Static Site
+  // Generator rebrand. Runs before locale routing so the redirect
+  // target hits the language flow on the new path.
+  const renameRedirect = trySlugRedirects(url);
+  if (renameRedirect) {
+    return withSecurityHeaders(await resolveRenamed(renameRedirect, env), request);
+  }
+  const doubledRedirect = tryDoubledLocaleRedirect(url);
+  if (doubledRedirect) {
+    return withSecurityHeaders(doubledRedirect, request);
+  }
+  return null;
+}
+
+// Locale choice for an English page navigation: the pref-lang cookie,
+// then a one-off ?lang=xx, else the canonical EN page.
+async function routeByLocale(request, env, ctx, url) {
+  // Active-language set — hydrated once per isolate from the ASSETS
+  // binding when present, baked-in otherwise.
+  const activeLangs = await getActiveLangs(env);
+  // Visitor has chosen — respect that choice forever (until cookie expires).
+  const cookieHeader = request.headers.get('Cookie');
+  const prefLang = getCookie(cookieHeader, COOKIE);
+  if (prefLang === 'en') {
+    return passThrough(request, url);
+  }
+  if (prefLang && activeLangs.has(prefLang)) {
+    const redirected = new URL(url);
+    redirected.pathname = `/${prefLang}${url.pathname === '/' ? '/' : url.pathname}`;
+    recordRedirect(request, env, ctx, 'en', prefLang);
+    return withSecurityHeaders(Response.redirect(redirected.toString(), 302), request);
+  }
+  // Honour `?lang=xx` as a one-off override (no cookie set — the user
+  // is just deep-linking) — and respect ?lang=en as an opt-out signal.
+  const overrideLang = url.searchParams.get('lang');
+  if (overrideLang === 'en') {
+    return passThrough(request, url);
+  }
+  if (overrideLang && activeLangs.has(overrideLang.toLowerCase())) {
+    const redirected = new URL(url);
+    redirected.pathname = `/${overrideLang.toLowerCase()}${url.pathname === '/' ? '/' : url.pathname}`;
+    redirected.searchParams.delete('lang');
+    const cookieValue = `${COOKIE}=${overrideLang.toLowerCase()}; Path=/; Max-Age=${COOKIE_MAX_AGE}; SameSite=Lax; Secure`;
+    recordRedirect(request, env, ctx, 'en', overrideLang.toLowerCase());
+    return withSecurityHeaders(
+      Response.redirect(redirected.toString(), 302),
+      request,
+      { 'Set-Cookie': cookieValue },
+    );
+  }
+  // No cookie, no override — serve the canonical EN site. Visitors
+  // can still pick a locale via the in-page switcher (which sets
+  // `pref-lang`) or by deep-linking with `?lang=xx`. Auto-redirect on
+  // Accept-Language alone surprises too many bilingual readers who
+  // expect the English version by default; keeping discovery opt-in.
+  return passThrough(request, url);
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
-    // ActivityPub handler — fields the four Fediverse endpoints before
-    // the locale + CSP path runs. Returns null when the request isn't
-    // an AP route, in which case we fall through to the existing flow.
-    const apResponse = await tryActivityPub(request);
-    if (apResponse) return withApiSecurityHeaders(apResponse);
-    // MCP handler — fields /mcp/v1/list_resources / read_resource /
-    // search. Locale routing doesn't apply (these are API endpoints).
-    const mcpResponse = await tryMCP(request);
-    if (mcpResponse) return withApiSecurityHeaders(mcpResponse);
-    // Profile clock — /api/clock/hero-<theme>.svg, uncached so it keeps time.
-    const clockResponse = await tryClock(request);
-    if (clockResponse) return withApiSecurityHeaders(clockResponse);
-    // Conversion & CWV event beacon: POST /api/event -> Analytics Engine.
-    const eventResponse = await tryEvent(request, env, ctx);
-    if (eventResponse) return withApiSecurityHeaders(eventResponse);
-    // Permanent slug redirects from the Shokunin → Static Site
-    // Generator rebrand. Runs before locale routing so the redirect
-    // target hits the language flow on the new path.
-    const renameRedirect = trySlugRedirects(url);
-    if (renameRedirect) {
-      return withSecurityHeaders(renameRedirect, request);
-    }
-    const doubledRedirect = tryDoubledLocaleRedirect(url);
-    if (doubledRedirect) {
-      return withSecurityHeaders(doubledRedirect, request);
-    }
+    const apiResponse = await tryApiRoutes(request, env, ctx);
+    if (apiResponse) return apiResponse;
+    const permanent = await tryPermanentRedirects(request, env, url);
+    if (permanent) return permanent;
 
     // Only act on GET / HEAD page navigation; everything else still gets
     // security headers via the pass-through wrapper.
@@ -449,44 +470,6 @@ export default {
     if (!isPageNavigation(url.pathname)) {
       return passThrough(request, url);
     }
-    // Active-language set — hydrated once per isolate from the ASSETS
-    // binding when present, baked-in otherwise.
-    const activeLangs = await getActiveLangs(env);
-    // Visitor has chosen — respect that choice forever (until cookie expires).
-    const cookieHeader = request.headers.get('Cookie');
-    const prefLang = getCookie(cookieHeader, COOKIE);
-    if (prefLang === 'en') {
-      return passThrough(request, url);
-    }
-    if (prefLang && activeLangs.has(prefLang)) {
-      const redirected = new URL(url);
-      redirected.pathname = `/${prefLang}${url.pathname === '/' ? '/' : url.pathname}`;
-      recordRedirect(request, env, ctx, 'en', prefLang);
-      return withSecurityHeaders(Response.redirect(redirected.toString(), 302), request);
-    }
-    // Honour `?lang=xx` as a one-off override (no cookie set — the user
-    // is just deep-linking) — and respect ?lang=en as an opt-out signal.
-    const overrideLang = url.searchParams.get('lang');
-    if (overrideLang === 'en') {
-      return passThrough(request, url);
-    }
-    if (overrideLang && activeLangs.has(overrideLang.toLowerCase())) {
-      const redirected = new URL(url);
-      redirected.pathname = `/${overrideLang.toLowerCase()}${url.pathname === '/' ? '/' : url.pathname}`;
-      redirected.searchParams.delete('lang');
-      const cookieValue = `${COOKIE}=${overrideLang.toLowerCase()}; Path=/; Max-Age=${COOKIE_MAX_AGE}; SameSite=Lax; Secure`;
-      recordRedirect(request, env, ctx, 'en', overrideLang.toLowerCase());
-      return withSecurityHeaders(
-        Response.redirect(redirected.toString(), 302),
-        request,
-        { 'Set-Cookie': cookieValue },
-      );
-    }
-    // No cookie, no override — serve the canonical EN site. Visitors
-    // can still pick a locale via the in-page switcher (which sets
-    // `pref-lang`) or by deep-linking with `?lang=xx`. Auto-redirect on
-    // Accept-Language alone surprises too many bilingual readers who
-    // expect the English version by default; keeping discovery opt-in.
-    return passThrough(request, url);
+    return routeByLocale(request, env, ctx, url);
   },
 };
