@@ -44,7 +44,15 @@ _PR_RE = re.compile(r"\s*\(#(\d+)\)\s*$")
 _MERGE_RE = re.compile(r"^Merge pull request #(\d+) from \S+$")
 _BULLET_RE = re.compile(r"^- \*\*(?P<lead>.+?)\*\*(?P<rest>.*)$")
 # CHANGELOG subsections whose bullets are release highlights.
-_HIGHLIGHT_SECTIONS = ("Added", "Changed", "Fixed", "Security", "Removed", "Deprecated")
+_HIGHLIGHT_SECTIONS = (
+    "Reverted",
+    "Added",
+    "Changed",
+    "Fixed",
+    "Security",
+    "Removed",
+    "Deprecated",
+)
 
 
 @dataclass(frozen=True)
@@ -100,7 +108,8 @@ def _tail(rest: str) -> str:
 
 def highlights(section: str) -> list[str]:
     """One '* **Lead**: first sentence' line per bold-led bullet in the
-    Added / Changed / Fixed / Security / Removed / Deprecated subsections."""
+    Reverted / Added / Changed / Fixed / Security / Removed / Deprecated
+    subsections."""
     out: list[str] = []
     current = ""
     for line in section.splitlines():

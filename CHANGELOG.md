@@ -10,13 +10,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-## [0.0.38] - Unreleased
+## [0.0.39] - Unreleased
+
+Release notes that carry reverts, and two `basic-ftp` advisories closed.
+
+### Fixed
+
+- **Release notes include reverts**: `scripts/release/release_notes.py` took highlights only from the Added, Changed, Fixed, Security, Removed and Deprecated sections, so the v0.0.37 notes would have left out the v0.0.36 revert, the main point of that release. A `### Reverted` section now gives highlights too, listed first.
+
+### Security
+
+- **`basic-ftp` 6.2.6 in the Lighthouse CI tools**: the `@lhci/cli` lockfile in `.github/ci-tools/lighthouse/` resolved `basic-ftp` 6.2.1, open to GHSA-r4jh-29pc-gfqr (a CR/LF in a password or resumed-download path crashes the process) and GHSA-5pm8-86m8-9m6r (a `__proto__` fact in an MLSD listing crashes `Client.list()`). The override is now `^6.2.4`, so no affected version can resolve.
+
+---
+
+## [0.0.38] - 2026-11-13
 
 Renamed-article redirects that answer in one hop.
 
 ### Fixed
 
-- **Rebranded article URLs redirect once**: the Worker's Shokunin rule stripped `shokunin-` from the 2023-10-09 article and answered at once, without consulting `redirects.json`. In 34 locales the stripped slug had been renamed again, so `/<lang>/2023-10-09-shokunin-…/` took two 301s (stripped, then renamed), which `deploy-drift`'s live redirect check flagged for `/ar/`. The rebrand target now resolves through the map, so each answers one 301 to the final URL. A differential run of the old and new Worker over 37,854 requests (every map entry, its `shokunin-` variant and sample paths, five request shapes each) differs only in those 240 responses.
+- **Rebranded article URLs redirect once**: an old `shokunin-` URL for the 2023-10-09 article now answers one 301 to its final URL, where 34 locales took two. The Worker's Shokunin rule stripped `shokunin-` from the 2023-10-09 article and answered at once, without consulting `redirects.json`. In 34 locales the stripped slug had been renamed again, so `/<lang>/2023-10-09-shokunin-…/` took two 301s (stripped, then renamed), which `deploy-drift`'s live redirect check flagged for `/ar/`. The rebrand target now resolves through the map, so each answers one 301 to the final URL. A differential run of the old and new Worker over 37,854 requests (every map entry, its `shokunin-` variant and sample paths, five request shapes each) differs only in those 240 responses.
 - **`lang-router.js` within the size ceilings**: `fetch` (82 lines) is split into `tryApiRoutes`, `tryPermanentRedirects` and `routeByLocale` with the same order and responses, and the rebrand helpers move to `edge-routes.js`, keeping the file at 475 lines.
 
 ---
