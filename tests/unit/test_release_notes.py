@@ -19,6 +19,10 @@ CHANGELOG = """# Changelog
 
 Intro paragraph is not a highlight.
 
+### Reverted
+
+- **A bad release**: it broke pages. Everything else is dropped.
+
 ### Added
 
 - **A new thing**: it does X. A second sentence is dropped.
@@ -51,6 +55,7 @@ def test_title_and_version() -> None:
 def test_highlights_take_lead_and_first_sentence_from_release_sections() -> None:
     section = rn.changelog_section(CHANGELOG, "0.0.35")
     assert rn.highlights(section) == [
+        "* **A bad release**: it broke pages.",
         "* **A new thing**: it does X.",
         "* **Broken thing works**: now it works.",
         "* **A check flags a fault**, so the build fails with the reason.",
@@ -71,7 +76,7 @@ def test_changes_are_oldest_first_and_skip_direct_commits() -> None:
 def test_render_matches_the_dotfiles_layout() -> None:
     section = rn.changelog_section(CHANGELOG, "0.0.35")
     body = rn.render("v0.0.35", "v0.0.34", section, [rn.Change("fix: x", 9, "me")])
-    assert body.startswith("## Highlights ⭐️\n\n* **A new thing**")
+    assert body.startswith("## Highlights ⭐️\n\n* **A bad release**")
     assert "\n## What's Changed\n\n* `fix: x` by @me in https://github.com/" in body
     assert body.rstrip().endswith("/compare/v0.0.34...v0.0.35")
 
