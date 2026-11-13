@@ -13,7 +13,7 @@ cdn: "https://cloudcdn.pro/clients"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Apr 01, 2024"
-description: "Open-source ISO 20022 and post-quantum cryptography libraries for banking, plus research for wholesale payments leaders, with SBOM and Sigstore provenance."
+description: "Open-source ISO 20022 and post-quantum cryptography for banks: 179 audited packages, 51M+ downloads, and research for wholesale payments leaders."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -102,21 +102,23 @@ site_last_updated: "2026-10-15"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-seo_title: "Sebastien Rousseau: Banking, ISO 20022 and Post-Quantum Code"
+
 ---
 
-<section class="feat logo-row-band" aria-labelledby="built-at">
-<div class="wrap">
-<p id="built-at" class="feat-eyebrow">Payments and digital products, built at:</p>
-<div class="brands" role="group" aria-label="Organisations across my career">
-<img alt="HSBC logo" src="/_csp/logo-hsbc.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
-<img alt="PayPal logo" src="/_csp/logo-paypal.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
-<img alt="Barclays logo" src="/_csp/logo-barclays.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
-<img alt="Shazam logo" src="/_csp/logo-shazam.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
-<img alt="AKQA logo" src="/_csp/logo-akqa.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
-<img alt="Virgin logo" src="/_csp/logo-virgin.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<section class="read-as" data-announce="Now showing content for" aria-labelledby="read-as-label">
+<div class="read-as-inner">
+<div class="read-as-controls">
+<span class="read-as-label" id="read-as-label">Read as…</span>
+<div class="read-as-group" role="group" aria-label="Choose your reading lens">
+<button type="button" class="read-as-btn" data-read="" aria-pressed="true">Everyone</button>
+<button type="button" class="read-as-btn" data-read="boards" aria-pressed="false">Boards</button>
+<button type="button" class="read-as-btn" data-read="engineers" aria-pressed="false">Engineers</button>
+<button type="button" class="read-as-btn" data-read="regulators" aria-pressed="false">Regulators</button>
 </div>
 </div>
+<p class="read-as-summary" data-read-summary data-summary-default="Tailor the page order and highlights for your role." data-summary-boards="Prioritising board-level proof, fiduciary risk, and post-quantum governance." data-summary-engineers="Prioritising open-source Rust and Python libraries, ISO 20022 schemas, and FIPS 203 ML-KEM." data-summary-regulators="Prioritising the EPAA quantum-safe payments paper, DORA, CRA, and supervisory compliance.">Tailor the page order and highlights for your role.</p>
+</div>
+<p class="visually-hidden" data-read-status role="status" aria-live="polite"></p>
 </section>
 
 <section class="feat offer reveal" aria-labelledby="what-i-build" data-audience="engineers">
@@ -184,7 +186,17 @@ seo_title: "Sebastien Rousseau: Banking, ISO 20022 and Post-Quantum Code"
 </div>
 </section>
 <p class="proof-note">Most downloads come from transitive dependencies in CI/CD pipelines and production services across PyPI, crates.io, and npm &middot; <span class="proof-updated">Updated <time datetime="2026-10-15">15 Oct 2026</time>.</span></p>
-
+<p class="feat-eyebrow">Career</p>
+<h3 id="trusted" class="feat-headline center">Where I've worked.</h3>
+<p class="feat-sub center">More than 20 years in payments, banking and digital technology.</p>
+<div class="brands" role="group" aria-label="Organisations across my career">
+<img alt="HSBC logo" src="/_csp/logo-hsbc.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="PayPal logo" src="/_csp/logo-paypal.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="Barclays logo" src="/_csp/logo-barclays.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="Shazam logo" src="/_csp/logo-shazam.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="AKQA logo" src="/_csp/logo-akqa.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="Virgin logo" src="/_csp/logo-virgin.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+</div>
 <ul class="proof-credibility" aria-label="Institutional credentials and standards">
 <li><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf">EPAA White Paper (Sep 2025, PDF)</a></li>
 <li><a href="/projects-post-quantum/index.html">NIST FIPS 203 ML-KEM</a></li>
@@ -194,31 +206,18 @@ seo_title: "Sebastien Rousseau: Banking, ISO 20022 and Post-Quantum Code"
 </div>
 </section>
 
-<section class="feat reveal" aria-labelledby="recognition">
-<div class="wrap">
-<p class="feat-eyebrow">Recognition</p>
-<h2 id="recognition" class="feat-headline center">Recognition and featured work.</h2>
-<div class="recognition">
+<section class="feat reveal" aria-labelledby="paper" data-audience="regulators">
 <article class="feat-card">
 <div class="feat-card-media">
 <img alt="Isometric render of an illuminated processor, representing the cryptographic foundations of payments." src="https://cloudcdn.pro/stocks/images/a-chosen-soul-IQi4jAlVeOI-unsplash.webp" loading="lazy" decoding="async" width="800" height="800" />
 </div>
 <div class="feat-card-body">
 <p class="feat-eyebrow">EPAA · September 2025</p>
-<h3 id="paper" class="feat-card-title">Why the payments industry must act now.</h3>
+<h2 id="paper" class="feat-card-title">Why the payments industry must act now.</h2>
 <p>Regulators are treating harvest-now-decrypt-later as a credible present risk. This paper, produced for the Emerging Payments Association Asia, sets out the structural threat and the case for coordinated action across wholesale payment rails.</p>
 <p><a class="pill" href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" title="EPAA Quantum-Safe Payments White Paper (PDF)">Read the white paper (PDF)</a></p>
 </div>
 </article>
-<ul class="recognition-list" aria-label="Recognition">
-<li>Fellow of the Institution of Analysts and Programmers (FIAP)</li>
-<li>Mobile Agency of the Year</li>
-<li>Agency of the Year</li>
-<li>Best Branded Social TV Award</li>
-<li>Best 2nd Screen Experience for TV on Mobile or Tablet (Shazam for TV)</li>
-</ul>
-</div>
-</div>
 </section>
 
 <section class="feat reveal" aria-labelledby="latest" data-audience="boards engineers regulators">
@@ -269,6 +268,24 @@ seo_title: "Sebastien Rousseau: Banking, ISO 20022 and Post-Quantum Code"
 
 <div class="feat-cta-row">
 <a class="pill ghost" href="/articles/index.html">See all articles</a>
+<a class="feat-secondary-link" href="/changelog/index.html">Browse the changelog <span aria-hidden="true">&rsaquo;</span></a>
 </div>
+</div>
+</section>
+
+<section class="feat alt reveal newsletter-band" aria-labelledby="newsletter-h">
+<div class="wrap newsletter-band-inner">
+<p class="feat-eyebrow">Newsletter · Banking On Quantum</p>
+<h2 id="newsletter-h" class="feat-headline center">Monthly briefings for senior banking architects.</h2>
+<p class="feat-sub center">Research notes on applied AI, ISO 20022 migration, and post-quantum cryptography across wholesale payment rails. No spam, unsubscribe in one click.</p>
+<form class="ap-newsletter" action="/contact/" method="get" aria-label="Newsletter signup">
+<label for="home-newsletter-email" class="visually-hidden">Work email address</label>
+<div class="ap-newsletter-row">
+<input id="home-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />
+<input type="hidden" name="subject" value="newsletter" />
+<input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+<button type="submit">Subscribe</button>
+</div>
+</form>
 </div>
 </section>

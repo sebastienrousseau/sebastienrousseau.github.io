@@ -1,14 +1,13 @@
 ---
 title: "Достижения в инженерии промптов ИИ"
 subtitle: "Как разговаривать с большими языковыми моделями"
-description: "Prompt-инжиниринг: zero-shot и few-shot промптинг, chain-of-thought, self-consistency, использование инструментов ReAct и риски prompt injection в финансах."
+description: "Современные техники prompt-инжиниринга для LLM: chain-of-thought, few-shot learning, retrieval-augmented generation и структурированные ответы."
 date: "January 23, 2024"
 language: "ru-RU"
 locale: "ru_RU"
 banner: "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp"
 banner_alt: "Инженерия промптов: визуализация техник работы с LLM"
 keywords: "prompt-инжиниринг, LLM, chain-of-thought, few-shot, RAG, retrieval-augmented generation, структурированные ответы, JSON mode"
-seo_title: "Chain-of-thought и prompt-инжиниринг ИИ: руководство"
 ---
 
 > **TL;DR.** Prompt-инжиниринг превратился из «нажать enter» в инженерную дисциплину с воспроизводимыми техниками: chain-of-thought, few-shot, RAG, структурированные выходы.

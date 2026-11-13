@@ -97,7 +97,7 @@ site_last_updated: "2023-07-05"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-seo_title: "Thank You for Getting in Touch: A Reply Is on Its Way Soon"
+
 ---
 
 Your message is in. A reply is on its way, typically within 48 hours, often sooner if you've left enough context. In the meantime, three good places to spend the next five minutes.

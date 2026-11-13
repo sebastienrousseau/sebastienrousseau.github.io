@@ -8,7 +8,6 @@ locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
 banner_alt: "Laptop spento su un tavolo bianco con un bicchiere d'acqua a sinistra e una penna, un taccuino e una pianta a destra"
 keywords: "Static Site Generator, SSG, Rust, generatore di siti statici, prestazioni, SEO, accessibilità, JSON-LD"
-seo_title: "Static Site Generator: un SSG veloce in Rust per il web"
 ---
 
 ![Laptop spento su un tavolo bianco con un bicchiere d'acqua a sinistra e una penna, un taccuino e una pianta a destra](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"

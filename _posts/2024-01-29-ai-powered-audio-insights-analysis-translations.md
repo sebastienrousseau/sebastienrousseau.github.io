@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jan 29, 2024"
-description: "How Audio Analyser uses Azure Cognitive Services speech-to-text and Text Analytics to turn audio into transcripts with sentiment, keywords and translations."
+description: "Audio Analyser uses Azure Cognitive Services speech-to-text neural models, Text Analytics NLP, and CherryPy to convert audio recordings into searchable transcripts with sentiment scores, keyword extraction, and multilingual translations."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -108,7 +108,6 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Audio Analyser is an open-source Python tool that chains Azure Cognitive Services speech-to-text, Text Analytics NLP, and Translator into a single CherryPy web application — turning audio recordings into structured transcripts, sentiment scores, and multilingual translations without cloud lock-in beyond the Azure SDK."
 last_reviewed: "2026-05-24"
-seo_title: "Azure Cognitive Services Audio Analyser: Speech and NLP"
 ---
 
 

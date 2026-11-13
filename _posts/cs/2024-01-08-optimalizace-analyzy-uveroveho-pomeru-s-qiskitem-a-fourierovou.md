@@ -1,14 +1,13 @@
 ---
 title: "Qiskit a kvantová Fourierova transformace pro analýzu úvěrových poměrů"
 subtitle: "Optimalizace analýzy úvěrových poměrů pomocí IBM Qiskit a kvantové Fourierovy transformace"
-description: "Jak lze IBM Qiskit a kvantovou Fourierovu transformaci použít pro analýzu úvěrových poměrů ve financích a jaké koncepty kvantových výpočtů za nimi stojí."
+description: "Jak IBM Qiskit a kvantová Fourierova transformace proměňují analýzu úvěrových poměrů ve financích a přinášejí dosud nevídanou přesnost a rychlost."
 date: "January 08, 2024"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp"
 banner_alt: "Místnost s kvantovým počítačem"
 keywords: "kvantové výpočty, finance, analýza úvěrových poměrů, Qiskit, kvantová Fourierova transformace, IBM, strojové učení, umělá inteligence, hodnocení finančního rizika, úvěruschopnost"
-seo_title: "Kvantové výpočty pro analýzu úvěrových poměrů s IBM Qiskit"
 ---
 
 

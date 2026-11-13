@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Kier Group 与英国标准协会（BSI）的负责人如何推进物理 AI 治理：维护一线员工的信任、管理人机之间的交接，以及合理分配运营责任。"
+description: "在伦敦举行的Economist Enterprise Physical AI and Robotics Summit上，Kier Group与英国标准协会（BSI）的负责人讨论了自主系统的紧迫治理难题：如何赢得一线信任、化解“黑暗面自主”，并在建筑、基础设施和重工业中分配运营责任。"
 format-detection: "telephone=no"
 hreflang: "zh-hans"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "让自主运动的物理机器与人类劳动力并肩工作，会带来纯软件从未遇到过的严重心理与法律风险。在Economist Enterprise Physical AI and Robotics Summit上，Kier Group与英国标准协会（BSI）的负责人提出了物理AI的治理蓝图。"
 last_reviewed: "2026-10-13"
-seo_title: "物理 AI 与劳动力治理：信任与责任"
 ---
 
 企业软件出故障时，会损坏数据库、断开网络连接或泄露令牌。物理AI系统出故障时，数百公斤的多关节钢件、高扭矩液压执行器或自主土方机械会撞上实体基础设施或人的身体。2026年10月13日在伦敦Convene 200 Aldersgate举行的Economist Enterprise Physical AI and Robotics Summit上，一个高规格的小组讨论聚焦工业自主化在运营、伦理和法律上的紧迫前沿：当智能机器走上一线，如何维持劳动力的信任，如何减少认知层面的交接失败，又如何建立在法律上站得住脚的责任框架。

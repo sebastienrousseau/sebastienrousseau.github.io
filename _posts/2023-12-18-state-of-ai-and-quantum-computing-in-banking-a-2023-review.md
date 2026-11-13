@@ -98,7 +98,6 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "In 2023, the intersection of Artificial Intelligence (AI) and Quantum Computing (QC) has profoundly impacted the banking and financial industry. These technologies have revolutionised the way…"
 last_reviewed: "2026-05-11"
-seo_title: "AI in Banking: State of AI and Quantum Computing in 2023"
 ---
 
 

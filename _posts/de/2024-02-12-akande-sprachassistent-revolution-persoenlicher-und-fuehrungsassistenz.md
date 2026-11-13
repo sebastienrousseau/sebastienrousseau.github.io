@@ -1,14 +1,13 @@
 ---
 title: "Àkàndé: GPT-gestützter Sprachassistent für Führungskräfte"
 subtitle: "Nahtlose Interaktionen mit hochmoderner KI-Technologie ermöglichen"
-description: "Àkàndé ist ein quelloffener Python-Sprachassistent mit Whisper-Spracherkennung, GPT-4 und lokalem SQLite-Cache, der Gespräche als PDF zusammenfasst."
+description: "Wie Àkàndé das natürliche Sprachverständnis von OpenAI GPT, PDF-Zusammenfassungen und effizientes Caching nutzt, um persönliche und exekutive Assistenz neu zu definieren."
 date: "February 12, 2024"
 language: "de"
 locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp"
 banner_alt: "Ein weißes, kugelförmiges modernes Gerät"
 keywords: "Àkàndé, Sprachassistent, natürliches Sprachverständnis, PDF-Zusammenfassungen, effizientes Caching, OpenAI GPT, exekutive Assistenz, persönliche Assistenz, digitale Assistenten, Technologieinnovation"
-seo_title: "Àkàndé: Open-Source-Sprachassistent mit GPT-4 und Whisper"
 ---
 
 ## Àkàndé Voice Assistant, ein Wendepunkt in persönlicher und exekutiver Assistenz

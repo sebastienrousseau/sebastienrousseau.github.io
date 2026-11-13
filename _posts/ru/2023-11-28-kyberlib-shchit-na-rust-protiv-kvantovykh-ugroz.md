@@ -8,7 +8,6 @@ locale: "ru_RU"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "kyberlib — квантово-устойчивый щит, баннер библиотеки"
 keywords: "kyberlib, CRYSTALS-Kyber, ML-KEM, Rust, FIPS 203, постквантовая криптография, инкапсуляция ключей, финансовая безопасность"
-seo_title: "KyberLib: CRYSTALS-Kyber на Rust для постквантовой эры"
 ---
 
 > **TL;DR.** kyberlib — Rust-реализация CRYSTALS-Kyber (стандарт NIST FIPS 203 / ML-KEM), пригодная к интеграции в защищённую инфраструктуру финансовых услуг.

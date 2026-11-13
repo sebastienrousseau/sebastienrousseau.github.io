@@ -1,14 +1,13 @@
 ---
 title: "比特幣：首個加密貨幣的年度回顧"
 subtitle: "重新定義貨幣的點對點電子支付系統"
-description: "本文帶你了解比特幣如何作為一種點對點電子現金系統運作，它的分散式帳本如何解決雙重支付這個難題，以及它為何有可能徹底改變人們進行線上支付的方式。"
+description: "比特幣：一種點對點電子現金系統（P2P ECS），有望徹底改變人們線上交易的方式。"
 date: "January 1, 2018"
 language: "zh-Hant"
 locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
 banner_alt: "一堆金幣和銀幣堆放在桌面上"
 keywords: "比特幣, 加密貨幣, 區塊鏈, 點對點, 雙重支付, 挖礦, 工作量證明, ETF, 中本聰, 去中心化金融"
-seo_title: "比特幣詳解：首個加密貨幣如何運作"
 ---
 
 ![一堆金幣和銀幣堆放在桌面上](https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp).class=\"img-fluid clearfix\"

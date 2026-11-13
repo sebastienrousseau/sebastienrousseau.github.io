@@ -1,7 +1,7 @@
 ---
 title: "Google Gemma: 오픈소스 AI 개발의 변혁"
 subtitle: "Google의 Gemini 기반 오픈소스 언어 모델"
-description: "Google Gemma AI란 무엇인가: 개인과 기업 환경 모두에서 접근하기 쉽고 윤리적인 AI 개발을 위해 Google이 만든 오픈소스 모델 제품군입니다."
+description: "Google Gemma, 오픈소스 AI 개발을 변혁하는 Gemini 기반의 경량 언어 모델."
 date: "February 26, 2024"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "오픈소스 코드"
 keywords: "Gemma, Google, 오픈소스 AI, LLM, Llama, 파인튜닝, 온디바이스 AI"
 last_reviewed: "2026-05-16"
-seo_title: "Google Gemma AI: 윤리적 개발을 위한 오픈소스 모델"
 ---
 
 ![오픈소스 코드](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

@@ -165,8 +165,8 @@
       "<a class=pill href=\"/te/articles/index.html\">తాజా పరిశోధనను చదవండి</a>"
     ],
     [
-      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"\\1\" href=\"/te/contact/index.html\">సంప్రదించండి</a>"
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/te/contact/index.html\">సంప్రదించండి</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -355,50 +355,6 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">ISO 20022 లైబ్రరీలను అన్వేషించండి <span"
-    ],
-    [
-      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
-      ">క్వాంటం యుగంలో బ్యాంకులు నమ్మదగిన చెల్లింపుల మౌలిక సదుపాయాలు.</h1>"
-    ],
-    [
-      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
-      ">నేను HSBC లో హోల్‌సేల్ చెల్లింపుల API ఉత్పత్తులకు నాయకత్వం వహిస్తున్నాను, అలాగే బ్యాంకులు మరియు ఫిన్‌టెక్ సంస్థలు పరిశీలించి, పరీక్షించి, తిరిగి ఉపయోగించుకోగల ఓపెన్-సోర్స్ ISO 20022 మరియు పోస్ట్-క్వాంటం టూలింగ్‌ను నిర్మిస్తున్నాను.</p>"
-    ],
-    [
-      ">Read the research</a>",
-      ">పరిశోధనను చదవండి</a>"
-    ],
-    [
-      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
-      ">EPAA శ్వేతపత్ర సహకారి · ఫెలో, Institution of Analysts and Programmers</p>"
-    ],
-    [
-      ">Payments and digital products, built at:</p>",
-      ">చెల్లింపులు మరియు డిజిటల్ ఉత్పత్తులు, నిర్మించిన సంస్థలు:</p>"
-    ],
-    [
-      "<p class=\"feat-eyebrow\">Recognition</p>",
-      "<p class=\"feat-eyebrow\">గుర్తింపు</p>"
-    ],
-    [
-      ">Recognition and featured work\\.</h2>",
-      ">గుర్తింపు మరియు ముఖ్యమైన కృషి.</h2>"
-    ],
-    [
-      "aria-label=\"Recognition\"",
-      "aria-label=\"గుర్తింపు\""
-    ],
-    [
-      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
-      "<li>Institution of Analysts and Programmers ఫెలో (FIAP)</li>"
-    ],
-    [
-      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
-      ">చెల్లింపులు, క్వాంటం భద్రత లేదా ISO 20022 పై పనిచేస్తున్నారా?</h2>"
-    ],
-    [
-      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
-      ">మీరు ఏమి నిర్మిస్తున్నారో నాకు చెప్పండి. సాధారణంగా మొదటి స్పందన 48 గంటల్లోపు వస్తుంది.</p>"
     ]
   ]
 }

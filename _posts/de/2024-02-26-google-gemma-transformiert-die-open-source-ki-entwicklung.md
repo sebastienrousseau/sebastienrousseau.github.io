@@ -1,14 +1,13 @@
 ---
 title: "Google Gemma: die Open-Source-KI-Entwicklung transformieren"
 subtitle: "Ein Blick hinter die Kulissen: Fähigkeiten, Open-Source-Beiträge und was bevorsteht"
-description: "Was Google Gemma ist: eine offene Modellfamilie von Google für zugängliche, ethische KI-Entwicklung, sowohl im persönlichen Umfeld als auch im Unternehmen."
+description: "Entdecken Sie Googles Gemma-Modell: ein Open-Source-Projekt, das ethische KI-Lösungen für den persönlichen wie auch unternehmerischen Einsatz bietet."
 date: "February 26, 2024"
 language: "de"
 locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/ai-ship.webp"
 banner_alt: "Futuristisches blaues Raumschiff mit Neonlichtern"
 keywords: "Google Gemma, Open-Source-KI-Modell, technische Architektur Gemma, Gemma 2B 7B, ethische KI, KI-Integration macOS, KI-Lösungen für Unternehmen, konversationelle KI, KI-Datenanalyse, KI für Edge-Geräte"
-seo_title: "Google Gemma: offene Modelle für ethische KI-Entwicklung"
 ---
 
 ## Das revolutionäre Open-Source-KI-Modell von Google für eine zugängliche und ethische ML-Entwicklung

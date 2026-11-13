@@ -8,7 +8,6 @@ locale: "fr_FR"
 banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-8531.webp"
 banner_alt: "Visualisation abstraite de réseaux neuronaux et de réseaux atomiques quantiques. Un ordinateur noir se forme à partir de particules en réarrangement."
 keywords: "Lucy, Luc Besson, transfert de connaissances, IA, LLM, qubits à atomes neutres, émulation cérébrale, Neuralink, Eon Systems, Carboncopies, Fromm, indépendance du support, philosophie de l'IA"
-seo_title: "Lucy (2014) revisité : IA, quantique et transfert du savoir"
 ---
 
 ## La clé USB de Lucy, revisitée : ce que Besson voyait de la migration du savoir vers les machines

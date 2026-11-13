@@ -8,7 +8,6 @@ locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp"
 banner_alt: "全同态加密横幅"
 keywords: "全同态加密, FHE, 同态加密, 银行业, 金融, 量子计算, 后量子, 格密码, 隐私, Zama"
-seo_title: "全同态加密（FHE）与银行数据安全"
 ---
 
 **全同态加密（FHE）** 有望重新定义银行与金融行业的数据安全。通过支持在加密数据上进行计算，FHE 守护隐私，抵御传统与量子计算威胁。

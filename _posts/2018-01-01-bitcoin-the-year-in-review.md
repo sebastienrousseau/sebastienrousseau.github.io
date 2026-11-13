@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jan 01, 2018"
-description: "Learn how Bitcoin works as a peer-to-peer electronic cash system, how its distributed ledger solves double spending, and why it could change online payments."
+description: "Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -98,7 +98,6 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Bitcoin, often hailed as digital gold, initiated a financial revolution by introducing decentralized electronic cash and blockchain technology. It enabled online payments between individuals…"
 last_reviewed: "2026-05-11"
-seo_title: "Bitcoin Explained: How the First Cryptocurrency Works"
 ---
 
 

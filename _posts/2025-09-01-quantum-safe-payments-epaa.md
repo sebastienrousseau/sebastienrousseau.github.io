@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Sep 01, 2025"
-description: "Quantum computing threatens the cryptography behind payment systems. Learn the risk the EPAA white paper sets out and its case for quantum-safe payments."
+description: "Quantum computing threatens payment system cryptography. The EPAA white paper outlines the structural risk and the urgent case for PQC migration."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -98,7 +98,6 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Modern payment infrastructure relies on public-key cryptography. RSA, ECC, and Diffie-Hellman. To authenticate transactions, protect cardholder data, and secure messaging between financial…"
 last_reviewed: "2026-05-11"
-seo_title: "Quantum-Safe Payments: The Case for PQC Migration Now"
 ---
 
 

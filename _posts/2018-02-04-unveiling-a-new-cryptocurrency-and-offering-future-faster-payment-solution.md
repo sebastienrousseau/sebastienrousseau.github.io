@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Feb 04, 2018"
-description: "How the EXTC platform explored faster cross-border payments with Ethereum ERC-223 smart contracts in 2018, and why it was an early blueprint for DeFi."
+description: "In early 2018, the EXTC platform explored faster cross-border payments via Ethereum ERC-223 smart contracts — an early blueprint for what decentralised finance would later build."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -98,7 +98,6 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "The Express Transaction Credits (EXTC) platform was an early-2018 experiment in programmable payments on Ethereum, using ERC-223 smart contracts to enable instant cross-border transfers and atomic payment flows — ideas that decentralised finance later scaled."
 last_reviewed: "2026-05-11"
-seo_title: "EXTC: Faster Cross-Border Payments on Ethereum ERC-223"
 ---
 
 

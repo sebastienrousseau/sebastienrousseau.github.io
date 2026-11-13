@@ -8,7 +8,6 @@ locale: "es_ES"
 banner: "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp"
 banner_alt: "Persona sentada en un banco negro, leyendo un periódico"
 keywords: "AI Act UE, regulación de la inteligencia artificial, marco ético IA, gestión de riesgos IA, innovación IA, transparencia IA, derechos de los consumidores, gobernanza IA, estándares IA, ética IA"
-seo_title: "El AI Act de la UE: regulación de la IA por riesgo"
 ---
 
 ## El AI Act de la UE: configurar el futuro de la regulación mundial de la IA

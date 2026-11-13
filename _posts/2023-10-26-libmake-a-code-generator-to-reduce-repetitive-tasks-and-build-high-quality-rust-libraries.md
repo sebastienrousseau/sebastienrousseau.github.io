@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Oct 26, 2023"
-description: "LibMake is a Rust CLI that generates a full library scaffold: Cargo.toml, src/lib.rs, tests, benchmarks and GitHub Actions CI from one command or config file."
+description: "LibMake is a Rust CLI tool that generates a complete library scaffold — Cargo.toml, src/lib.rs with doc templates, test and benchmark harnesses, and GitHub Actions CI — from a single command or a versioned TOML/YAML config file."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -108,7 +108,6 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "LibMake is an open-source Rust CLI tool that generates a complete library scaffold from a single command or a TOML/YAML config file — producing Cargo.toml, a doc-commented src/lib.rs, integration test and benchmark harnesses, and a GitHub Actions CI workflow covering stable/beta/nightly Rust, clippy, rustfmt, and cargo-audit."
 last_reviewed: "2026-05-24"
-seo_title: "LibMake: Generate Rust Library Scaffolds from One Command"
 ---
 
 

@@ -1,14 +1,13 @@
 ---
 title: "Progressi nell'ingegneria dei prompt IA"
 subtitle: "Tecniche, pattern e best practice per portare gli LLM in produzione"
-description: "Ingegneria dei prompt: prompting zero-shot e few-shot, chain-of-thought, self-consistency, strumenti con ReAct e rischi di prompt injection in finanza."
+description: "Una rassegna delle tecniche di ingegneria dei prompt: chain-of-thought, few-shot, RAG, agenti, function calling — e il loro impatto sui deployment produttivi."
 date: "January 23, 2024"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp"
 banner_alt: "Un uomo che analizza dati su schermi"
 keywords: "prompt engineering, LLM, chain-of-thought, RAG, agenti, function calling, IA applicata"
-seo_title: "Prompting chain-of-thought: guida all'ingegneria dei prompt"
 ---
 
 ---

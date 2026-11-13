@@ -91,7 +91,7 @@
     ],
     [
       "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
-      "<li><a href=\"/yo/kan-si-wa/index.html\">Ìbánisọ̀rọ̀</a></li>"
+      "<li><a href=\"/yo/kan-si-wa/index.html\">Contact</a></li>"
     ],
     [
       "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
@@ -143,7 +143,7 @@
     ],
     [
       "<a href=\"?/contact/index\\.html\"?>Contact</a>",
-      "<a href=\"/yo/kan-si-wa/index.html\">Ìbánisọ̀rọ̀</a>"
+      "<a href=\"/yo/kan-si-wa/index.html\">Contact</a>"
     ],
     [
       "<a href=\"?/articles/index\\.html\"?>Articles</a>",

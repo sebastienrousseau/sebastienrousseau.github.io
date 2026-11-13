@@ -1,14 +1,13 @@
 ---
 title: "Раскрываем Gemini 1.5: революция ИИ от Google объяснена"
 subtitle: "Погружение в новый прорыв Google в ИИ"
-description: "Gemini 1.5 от Google расширяет контекстное окно за миллион токенов. Что это открывает для финансов с retrieval-augmented подходом и о каких компромиссах знать."
+description: "Gemini 1.5 от Google расширяет контекстное окно за миллион токенов. Что это открывает для финансов с retrieval-augmented моделями и какие компромиссы возникают."
 date: "February 19, 2024"
 language: "ru-RU"
 locale: "ru_RU"
 banner: "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp"
 banner_alt: "Абстрактная визуализация нейронных сетей ИИ Gemini 1.5"
 keywords: "Gemini 1.5, Google AI, Mixture-of-Experts, контекстное окно, миллион токенов, in-context learning, мультимодальность, бенчмарки"
-seo_title: "Gemini 1.5: контекстное окно Google на миллион токенов"
 ---
 
 > **TL;DR.** Gemini 1.5 расширяет контекстное окно за пределы миллиона токенов и переводит архитектуру на Mixture-of-Experts. Это меняет экономику retrieval-augmented приложений и открывает новые сценарии.

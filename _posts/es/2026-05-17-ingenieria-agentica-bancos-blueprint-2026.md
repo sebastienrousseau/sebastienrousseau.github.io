@@ -1,7 +1,7 @@
 ---
 title: "Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán"
 subtitle: "La IA agéntica ha pasado del piloto a la producción. El 70 % de los bancos ya la utiliza; solo uno de cada cinco dispone de un modelo de gobernanza maduro. Los adversarios operan a velocidad de máquina, el estate heredado fue escrito para las hipótesis batch de los años 1960, y el plazo «alto riesgo» del Reglamento europeo de IA llega en doce semanas."
-description: "Ingeniería agéntica para bancos: por qué la IA agéntica en producción exige gobernanza madura, cómo encaja el COBOL heredado y qué impone el EU AI Act."
+description: "La IA agéntica ha pasado del piloto a la producción en la banca mundial. El 70 % de las instituciones la utiliza en mayor o menor grado; solo una de cada cinco tiene un modelo de gobernanza maduro. Los adversarios autónomos operan a velocidad de máquina, el estate heredado COBOL con el que los nuevos sistemas deben interoperar fue escrito para las hipótesis batch de los años 1960, y el plazo «alto riesgo» del Reglamento europeo de IA está a doce semanas. He aquí la posición de ingeniería y gobernanza que un banco debe sostener."
 date: "May 17, 2026"
 language: "es-ES"
 locale: "es_ES"

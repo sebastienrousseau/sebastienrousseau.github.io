@@ -41,6 +41,7 @@ NAME = "sebastienrousseau.github.io"
 ROOT = Path(__file__).resolve().parents[2]
 _TAG_RE = re.compile(r"^v(\d+)\.(\d+)\.(\d+)$")
 _PR_RE = re.compile(r"\s*\(#(\d+)\)\s*$")
+_MERGE_RE = re.compile(r"^Merge pull request #(\d+) from \S+$")
 _BULLET_RE = re.compile(r"^- \*\*(?P<lead>.+?)\*\*(?P<rest>.*)$")
 # CHANGELOG subsections whose bullets are release highlights.
 _HIGHLIGHT_SECTIONS = ("Added", "Changed", "Fixed", "Security", "Removed", "Deprecated")
@@ -90,7 +91,11 @@ def _tail(rest: str) -> str:
     if rest.lstrip().startswith(":"):
         text = _first_sentence(rest.lstrip()[1:])
         return f": {text}" if text else ""
-    return _first_sentence(rest.rstrip()) if rest.strip() else ""
+    if not rest.strip():
+        return ""
+    # Keep the space between the bold lead and the words that follow it.
+    text = _first_sentence(rest)
+    return f" {text}" if rest[0].isspace() else text
 
 
 def highlights(section: str) -> list[str]:
@@ -118,6 +123,22 @@ def changes_from_subjects(subjects: list[str], author_of: Callable[[int], str]) 
             number = int(m.group(1))
             found.append(Change(_PR_RE.sub("", subject), number, author_of(number)))
     return found
+
+
+def pr_subjects(log: str) -> list[str]:
+    """``git log --format=%s%x1f%b%x1e`` output -> one subject per commit.
+    A merge commit's subject only says "Merge pull request #N from ...";
+    GitHub writes the pull request's title as the first line of its body,
+    so the subject becomes "<title> (#N)" like a squash merge's."""
+    subjects = []
+    for record in log.split("\x1e"):
+        subject, _, body = record.strip("\n").partition("\x1f")
+        if not subject:
+            continue
+        m = _MERGE_RE.match(subject)
+        pr_title = next((ln.strip() for ln in body.splitlines() if ln.strip()), "")
+        subjects.append(f"{pr_title or subject} (#{m.group(1)})" if m else subject)
+    return subjects
 
 
 def render(tag: str, prev: str | None, section: str, changes: list[Change]) -> str:
@@ -170,7 +191,7 @@ def build(
     has the section its own tree did not."""
     prev = previous_tag(tag, ref)
     rng = f"{prev}..{ref}" if prev else ref
-    subjects = _git("log", "--first-parent", "--format=%s", rng).splitlines()
+    subjects = pr_subjects(_git("log", "--first-parent", "--format=%s%x1f%b%x1e", rng))
     changelog = _git("show", f"{changelog_ref or ref}:CHANGELOG.md")
     section = changelog_section(changelog, version_of(tag))
     return render(tag, prev, section, changes_from_subjects(subjects, author_of))

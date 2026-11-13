@@ -1,7 +1,7 @@
 ---
 title: "AI 프롬프트 엔지니어링의 발전"
 subtitle: "효과적인 프롬프트 기법과 새로운 AI 워크플로"
-description: "프롬프트 엔지니어링 입문: 제로샷·퓨샷 프롬프팅, chain-of-thought, self-consistency, ReAct 도구 사용, 금융 분야의 프롬프트 인젝션 위험."
+description: "AI 프롬프트 엔지니어링의 최신 발전. Chain-of-thought, 도구 사용, 에이전트 워크플로."
 date: "January 23, 2024"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "코드 에디터를 사용하는 개발자"
 keywords: "프롬프트 엔지니어링, AI, LLM, chain-of-thought, RAG, 도구 사용, 에이전트, 워크플로"
 last_reviewed: "2026-05-16"
-seo_title: "Chain-of-thought와 AI 프롬프트 엔지니어링 가이드"
 ---
 
 ![코드 에디터를 사용하는 개발자](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

@@ -1,14 +1,13 @@
 ---
 title: "Akande: l'assistente vocale che rivoluziona l'assistenza personale ed esecutiva"
 subtitle: "Un assistente vocale avanzato basato su GPT per interazioni naturali e sintesi di documenti"
-description: "Àkàndé è un assistente vocale Python open source che unisce Whisper, GPT-4 e una cache SQLite locale per creare riepiloghi PDF delle conversazioni."
+description: "Akande è un assistente vocale avanzato che utilizza GPT di OpenAI per interazioni naturali, sintesi di PDF e caching efficiente. Pensato sia per uso personale sia esecutivo."
 date: "February 12, 2024"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp"
 banner_alt: "Akande, assistente vocale"
 keywords: "Akande, assistente vocale, GPT, OpenAI, sintesi PDF, assistenza esecutiva"
-seo_title: "Àkàndé: assistente vocale open source con GPT-4 e Whisper"
 ---
 
 ---

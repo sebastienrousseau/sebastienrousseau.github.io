@@ -1,14 +1,13 @@
 ---
 title: "Alien Studio: moje cesta od technologií k fotografickému umění"
 subtitle: "Počátky technologické cesty"
-description: "Osobní cesta od jazyka Rust, AI a kvantových výpočtů k umění a fotografii: jak projekt Alien Studio využívá technologie k novému pojetí tvůrčí práce."
+description: "Provázím vás svou osobní cestou od jazyka Rust, umělé inteligence a kvantových výpočtů až po nové pojetí umění a fotografie prostřednictvím Alien Studia."
 date: "January 15, 2024"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp"
 banner_alt: "Múza při západu slunce, klidný pohled; krása v nehybnosti"
 keywords: "osobní technologická cesta, objevování jazyka Rust, zkoumání umělé inteligence, kvantové výpočty, spojení umění a fotografie, Alien Studio, tvorba digitálního umění, technologie v umění, inovativní fotografie, umělecké znovuobjevení"
-seo_title: "Alien Studio: osobní cesta technologiemi k AI fotografii"
 ---
 
 

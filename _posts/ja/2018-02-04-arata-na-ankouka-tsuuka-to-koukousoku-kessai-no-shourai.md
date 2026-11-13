@@ -1,7 +1,7 @@
 ---
 title: "新たな暗号資産を公開し、将来のより高速な決済ソリューションを提供する"
 subtitle: "暗号資産から実世界の決済インフラへ"
-description: "EXTC が 2018 年にイーサリアム ERC-223 のスマートコントラクトで高速な国際送金をどう探ったか、なぜ DeFi の初期の青写真だったのかを解説。"
+description: "新たな暗号資産プロジェクトと、それがより高速な決済ソリューションをどのように可能にするかについて。"
 date: "February 4, 2018"
 language: "ja-JP"
 locale: "ja_JP"
@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "都市の街灯のネオン"
 keywords: "暗号資産, 決済, リアルタイム決済, トークン, ICO, ブロックチェーン, フィンテック, 国際送金"
 last_reviewed: "2026-05-11"
-seo_title: "EXTC：イーサリアム ERC-223 で高速な国際送金"
 ---
 
 ![都市の街灯のネオン](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

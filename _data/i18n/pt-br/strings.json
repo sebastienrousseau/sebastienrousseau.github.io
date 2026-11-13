@@ -92,21 +92,5 @@
   "scorecard.downloaded": "Imagem do scorecard baixada",
   "scorecard.radarTitle": "Radar de prontidão",
   "scorecard.methodology": "Leia a metodologia completa do índice",
-  "scorecard.fallback": "As dimensões de maturidade estão tabuladas acima. Ative o JavaScript para avaliar sua instituição de forma interativa e exportar o resultado.",
-  "footer.title.contact": "Contato",
-  "footer.contact.location": "Londres, Reino Unido",
-  "footer.contact.response": "Primeira resposta geralmente em até 48 horas",
-  "footer.newsletter.link": "Assine a Banking On Quantum",
-  "nav.workWithMe": "Trabalhe comigo",
-  "nav.research": "Colaboração em pesquisa",
-  "nav.openSourceSupport": "Suporte a código aberto",
-  "nav.aria.toggleWorkWithMe": "Alternar o submenu Trabalhe comigo",
-  "contact.privacyLine": "Sua mensagem vai para o Formspree, que a envia para mim por e-mail; a proteção contra spam é do Google reCAPTCHA.",
-  "contact.privacyLink": "Aviso de privacidade",
-  "footer.changelog": "Registro de alterações",
-  "contact.eyebrow": "Contato",
-  "footer.mediaKit": "Kit de mídia",
-  "contact.appTitle": "Contato",
-  "nav.hubPqc": "Criptografia pós-quântica",
-  "nav.hubAi": "IA aplicada"
+  "scorecard.fallback": "As dimensões de maturidade estão tabuladas acima. Ative o JavaScript para avaliar sua instituição de forma interativa e exportar o resultado."
 }

@@ -8,7 +8,6 @@ locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp"
 banner_alt: "Regolamento europeo sull'IA"
 keywords: "AI Act, UE, regolamentazione, IA, conformità, alto rischio, GDPR"
-seo_title: "AI Act UE spiegato: regolare l'IA per livelli di rischio"
 ---
 
 ---

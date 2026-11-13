@@ -1,7 +1,7 @@
 ---
 title: "Il reset della crittografia quantistica nel 2026: standard PQC, garanzia QKD e il lavoro di migrazione che le banche non possono più rimandare"
 subtitle: "La crittografia quantistica è passata dalla prospettiva alla disciplina di implementazione: gli standard NIST PQC sono pronti, la guida del NCSC britannico ha ristretto le scelte di algoritmo, il lavoro protocollare dell'IETF è ancora in maturazione, e la garanzia QKD passa dalla fiducia di laboratorio al linguaggio della certificazione."
-description: "Crittografia quantistica 2026 per le banche: standard post-quantum, crypto-agility, garanzia QKD, prontezza dei fornitori e rischio harvest-now-decrypt-later."
+description: "La crittografia quantistica nel 2026 non è più un dibattito su quando arriveranno i computer quantistici. È un programma di migrazione che attraversa la crittografia post-quantum, la crypto-agility, la garanzia della distribuzione quantistica di chiavi, gli standard di protocollo, la maturità dei fornitori e i dati finanziari di lunga durata già esposti al rischio «harvest-now-decrypt-later»."
 date: "May 18, 2026"
 language: "it-IT"
 locale: "it_IT"
@@ -13,7 +13,6 @@ item_title: "Il reset della crittografia quantistica nel 2026: standard PQC, gar
 item_description: "Il reset della crittografia quantistica 2026 — standard NIST PQC, raccomandazioni di migrazione del NCSC, maturità protocollare dell'IETF, garanzia QKD, crypto-agility e cosa dovrebbero prioritizzare le banche questa settimana."
 twitter_title: "Crittografia quantistica 2026: standard PQC e migrazione bancaria"
 twitter_description: "Il reset della crittografia quantistica 2026 — standard NIST PQC, raccomandazioni di migrazione del NCSC, maturità protocollare dell'IETF, garanzia QKD, crypto-agility e cosa dovrebbero prioritizzare le banche questa settimana."
-seo_title: "Crittografia quantistica 2026: standard PQC, QKD, migrazione"
 ---
 
 # Il reset della crittografia quantistica nel 2026: standard PQC, garanzia QKD e il lavoro di migrazione che le banche non possono più rimandare

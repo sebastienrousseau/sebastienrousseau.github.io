@@ -1,14 +1,13 @@
 ---
 title: "IA generativa en la publicidad: Amazon Rufus y Meta"
 subtitle: "Cómo la IA transforma las interacciones con los consumidores y la dinámica publicitaria"
-description: "Cómo la IA en publicidad cambia la relación con el consumidor, con claves sobre Rufus, el asistente de compras de Amazon, y la IA generativa de Meta."
+description: "Cómo la IA transforma la publicidad: perspectivas sobre Rufus de Amazon y los últimos desarrollos de Meta. Descubra el impacto en el compromiso del consumidor."
 date: "February 08, 2024"
 language: "es-ES"
 locale: "es_ES"
 banner: "https://cloudcdn.pro/stocks/images/advertising-ai.webp"
 banner_alt: "Una mujer robot con mariposas y flores"
 keywords: "IA en la publicidad, Amazon Rufus, herramientas IA Meta, segmentación del consumidor, tecnología publicitaria, chatbots IA, tendencias de marketing digital, analítica IA, IA creativa, optimización de campañas"
-seo_title: "IA en la publicidad: Amazon Rufus, Meta e IA generativa"
 ---
 
 La inteligencia artificial (IA) transforma radicalmente el panorama publicitario, ofreciendo una eficiencia sin precedentes a las campañas. La introducción por Amazon de [**Rufus ⧉**][00], un chatbot asistente de compras personal, y la integración por Meta de la IA en sus plataformas —asistentes conversacionales y herramientas creativas— ilustran la vanguardia de esta revolución. Estos avances no solo mejoran la experiencia del consumidor, sino que también abren nuevas vías para una segmentación y un compromiso precisos, subrayando el papel pivote de la IA en el futuro de la publicidad.

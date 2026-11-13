@@ -1,14 +1,13 @@
 ---
 title: "Pokrok v AI s multimodálními LLM: poznatky z MM1"
 subtitle: "Budoucnost AI: jak studie MM1 od Apple mění multimodální učení"
-description: "Studie MM1 od Apple o multimodálních LLM: jak se tyto modely stavějí, jaké strategie předtrénování za nimi stojí a co mohou znamenat pro aplikovanou AI."
+description: "Studie MM1 od Apple o multimodálních velkých jazykových modelech (MLLM). Architektura, strategie předtrénování a možnosti AI."
 date: "March 18, 2024"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/mm1-visual.webp"
 banner_alt: "Banner pro MM1 od Apple"
 keywords: "multimodální LLM, studie MM1, pokrok v AI, strategie předtrénování, rozpoznávání obrazu, zpracování přirozeného jazyka, aplikace AI, budoucnost AI, multimodální učení, výzkum AI"
-seo_title: "Multimodální LLM vysvětlené: poznatky ze studie Apple MM1"
 ---
 
 ## Úvod

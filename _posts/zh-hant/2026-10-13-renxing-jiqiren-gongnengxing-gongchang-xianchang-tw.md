@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "為何航太與自動化領域的領導者對人形機器人進入工廠現場抱持懷疑態度，為何「關燈」式全自動化是一種謬誤，以及為何機器人的外形應當始終服從於功能。"
+description: "在倫敦舉行的Economist Enterprise Physical AI and Robotics Summit上，航太與自動化領域的領導者質疑人形機器人熱潮：為什麼100%無人化是產業謬誤，而保留人在迴路中的10%效率提升能立即帶來回報。"
 format-detection: "telephone=no"
 hreflang: "zh-hant"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "在倫敦舉行的Economist Enterprise Physical AI and Robotics Summit上，航太與製造業的領導者拆解了矽谷關於通用人形機器人的敘事。創投資金向雙足形態投入數十億美元，而產業現實證明，形式必須嚴格服從功能。"
 last_reviewed: "2026-10-13"
-seo_title: "人形機器人與製造業中的功能型機器人"
 ---
 
 2026年10月13日，在倫敦Convene 200 Aldersgate舉行的Economist Enterprise Physical AI and Robotics Summit上，製造業高階主管、航太工程師與機器人專家齊聚一堂，探討現代自動化的一個根本分歧：機器人應該模仿人的身體，還是機械形態應該嚴格服從工業物理定律？創投資金持續向承諾全面取代勞動力的雙足人形機器人投入數十億美元，而來自Airbus、Leonardo與學術研究界的第一線實務工作者，則提出了一次以實證為本的冷靜檢驗。

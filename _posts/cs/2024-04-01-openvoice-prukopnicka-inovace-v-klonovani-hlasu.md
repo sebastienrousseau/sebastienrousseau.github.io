@@ -1,14 +1,13 @@
 ---
 title: "OpenVoice: průkopnická inovace v klonování hlasu"
 subtitle: "Nástroj nové generace pro klonování hlasu s otevřeným zdrojovým kódem"
-description: "OpenVoice od MIT, Tsinghua a MyShell nabízí okamžité klonování hlasu s řízením tónu, přízvuku a emocí. Jak funguje a jaké kompromisy je třeba znát."
+description: "OpenVoice od MIT, Tsinghua a MyShell přináší klonování hlasu na produkční úrovni s jemným řízením tónu, přízvuku a emocí, a s kompromisy, které stojí za to znát."
 date: "Apr 01, 2024"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/open-voice.webp"
 banner_alt: "Banner s živým gradientovým překryvem přes opakované profily"
 keywords: "OpenVoice, technologie klonování hlasu, syntéza hlasu s AI, klonování hlasu s otevřeným zdrojovým kódem, mezijazyková syntéza hlasu, okamžité klonování hlasu, řízení hlasového stylu, hlasové technologie pro přístupnost, hlasy v zábavním průmyslu, hlasová AI pro zákaznický servis"
-seo_title: "OpenVoice vysvětlený: open-source klonování hlasu"
 ---
 
 

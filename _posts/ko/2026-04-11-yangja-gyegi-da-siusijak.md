@@ -1,7 +1,7 @@
 ---
 title: "양자 임계점이 다시 움직이고 있다"
 subtitle: "새 논문은 Shor 알고리즘이 단 10,000큐비트로 실행될 수 있다고 시사합니다"
-description: "새 논문은 쇼어 알고리즘이 큐비트 1만 개만으로도 실행될 수 있다고 시사합니다. 이것이 RSA, ECC에 대한 양자 위험과 PQC 이행에 갖는 의미를 살펴봅니다."
+description: "암호학적으로 유의미한 양자 컴퓨팅의 문턱이 빠르게 낮아지고 있습니다. 이행 시간 축이 다시 단축되었습니다."
 date: "April 11, 2026"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.web
 banner_alt: "양자 컴퓨터 회로의 클로즈업"
 keywords: "양자 임계, Shor 알고리즘, 큐비트, 양자 위협, PQC 이행, Y2Q, 암호적으로 유의미한 양자 컴퓨팅"
 last_reviewed: "2026-05-16"
-seo_title: "양자 임계점 하락: 큐비트 1만 개로 쇼어 알고리즘"
 ---
 
 ## 양자 임계점이 다시 움직이고 있다

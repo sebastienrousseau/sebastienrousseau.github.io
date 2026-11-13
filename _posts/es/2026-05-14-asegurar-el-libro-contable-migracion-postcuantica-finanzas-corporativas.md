@@ -1,14 +1,13 @@
 ---
 title: "Asegurar el libro contable: guía para consejos de administración sobre la migración postcuántica en banca corporativa"
 subtitle: "El riesgo cuántico ha pasado de la curiosidad académica a un mandato normativo activo. La hoja de ruta del G7, BIS Project Leap y los calendarios UE/UK/Australia plantean ya la cuestión no del cuándo, sino del cómo."
-description: "Guía para consejos sobre la migración poscuántica en finanzas corporativas: hoja de ruta del G7, plazos de UE, RU y Australia y lecciones del Project Leap."
+description: "El riesgo cuántico ha pasado de la curiosidad académica al mandato normativo. Con la hoja de ruta del G7 de enero de 2026, calendarios UE, UK y australiano ahora aclarados, y BIS Project Leap que ha demostrado la viabilidad en un sistema de pago real, la cuestión para los consejos de administración ya no es la migración, sino los plazos."
 date: "May 14, 2026"
 language: "es-ES"
 locale: "es_ES"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "Puerta de caja fuerte abierta bañada en luz dorada — metáfora visual de la protección criptográfica de los archivos financieros"
 keywords: "criptografía postcuántica, ML-KEM, ML-DSA, FIPS 203, FIPS 204, BIS Project Leap, G7 CEG, NCSC, ANSSI, BSI, ASD, CNSA 2.0, agilidad criptográfica, banca corporativa, pagos wholesale"
-seo_title: "Criptografía poscuántica: guía de migración para consejos"
 ---
 
 El riesgo cuántico ha pasado de la curiosidad académica al mandato normativo activo. Con la hoja de ruta del G7 publicada en enero de 2026, los calendarios de la UE, el Reino Unido y Australia ahora aclarados, y BIS Project Leap que ha demostrado la viabilidad en un sistema de pago real, la cuestión para los consejos de administración ya no es si hay que migrar, sino si la migración puede completarse antes de que la vida útil criptográfica de los datos de hoy expire.

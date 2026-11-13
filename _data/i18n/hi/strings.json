@@ -92,21 +92,5 @@
   "scorecard.downloaded": "स्कोरकार्ड छवि डाउनलोड हो गई",
   "scorecard.radarTitle": "तैयारी रडार",
   "scorecard.methodology": "पूर्ण सूचकांक कार्यप्रणाली पढ़ें",
-  "scorecard.fallback": "परिपक्वता आयाम ऊपर तालिका में दिए गए हैं। अपने संस्थान का इंटरैक्टिव रूप से मूल्यांकन करने और परिणाम निर्यात करने के लिए JavaScript सक्षम करें।",
-  "footer.title.contact": "संपर्क",
-  "footer.contact.location": "लंदन, यूनाइटेड किंगडम",
-  "footer.contact.response": "पहला जवाब आमतौर पर 48 घंटों के भीतर",
-  "footer.newsletter.link": "Banking On Quantum की सदस्यता लें",
-  "nav.workWithMe": "मेरे साथ काम करें",
-  "nav.research": "शोध सहयोग",
-  "nav.openSourceSupport": "ओपन-सोर्स सहायता",
-  "nav.aria.toggleWorkWithMe": "मेरे साथ काम करें उपमेनू टॉगल करें",
-  "contact.privacyLine": "आपका संदेश Formspree को जाता है, जो उसे मुझे ई-मेल करता है; स्पैम से सुरक्षा Google reCAPTCHA देता है।",
-  "contact.privacyLink": "गोपनीयता सूचना",
-  "footer.changelog": "परिवर्तन लॉग",
-  "contact.eyebrow": "संपर्क",
-  "footer.mediaKit": "मीडिया किट",
-  "contact.appTitle": "संपर्क",
-  "nav.hubPqc": "पोस्ट-क्वांटम क्रिप्टोग्राफ़ी",
-  "nav.hubAi": "अनुप्रयुक्त एआई"
+  "scorecard.fallback": "परिपक्वता आयाम ऊपर तालिका में दिए गए हैं। अपने संस्थान का इंटरैक्टिव रूप से मूल्यांकन करने और परिणाम निर्यात करने के लिए JavaScript सक्षम करें।"
 }

@@ -1,14 +1,13 @@
 ---
 title: "Výnos stablecoinů pod jiným jménem: rozbor podání BRSRV a BSTBL od BlackRock"
 subtitle: "Podle GENIUS Act nemohou stablecoiny vyplácet výnos. 8. května 2026 podal BlackRock registraci dvou produktů, které právně nejsou stablecoiny a které dokáží v peněžence na veřejném blockchainu výnos vyplácet."
-description: "BlackRock podal BRSRV a BSTBL jako fondy peněžního trhu, které se chovají jako dolary nesoucí výnos. Jak obcházejí limity GENIUS Act na výnos stablecoinů."
+description: "Podle GENIUS Act nemohou stablecoiny vyplácet výnos. 8. května 2026 podal BlackRock u SEC registraci dvou produktů, které toto omezení řeší tím, že jsou regulovány jako fondy peněžního trhu, nikoli jako stablecoiny, přičemž se v peněžence chovají jako dolary nesoucí výnos. Podrobný rozbor BRSRV, BSTBL a normotvorby OCC, na kterou reagují."
 date: "May 15, 2026"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp"
 banner_alt: "Schéma architektury tokenizovaného fondu peněžního trhu od BlackRock: OnChain Shares BRSRV a třída akcií ERC-20 BSTBL s toky rezerv podle GENIUS Act"
 keywords: "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, tokenizovaný fond peněžního trhu, OnChain Shares, Securitize"
-seo_title: "BlackRock BRSRV a BSTBL: tokenizované peněžní fondy"
 ---
 
 Podle GENIUS Act nemohou stablecoiny vyplácet výnos. 8. května 2026 podal BlackRock u SEC registraci dvou produktů, které toto omezení řeší tím, že jsou regulovány jako fondy peněžního trhu, nikoli jako stablecoiny, a přitom se v peněžence chovají jako dolary nesoucí výnos na veřejném blockchainu.

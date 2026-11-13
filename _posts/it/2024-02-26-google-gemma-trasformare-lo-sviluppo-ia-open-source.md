@@ -1,14 +1,13 @@
 ---
 title: "Google Gemma: trasformare lo sviluppo IA open source"
 subtitle: "Una famiglia di modelli aperti di Google per la ricerca e il deployment"
-description: "Cos'è Google Gemma AI: una famiglia di modelli open source di Google per uno sviluppo dell'IA accessibile ed etico, in ambito sia personale sia aziendale."
+description: "Gemma è la famiglia di modelli IA open source di Google, derivata dalla ricerca su Gemini. Una panoramica delle capacità, dei pesi disponibili e dei casi d'uso target."
 date: "February 26, 2024"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/ai-ship.webp"
 banner_alt: "Google Gemma"
 keywords: "Gemma, Google, IA open source, LLM, pesi aperti, fine-tuning"
-seo_title: "Google Gemma AI: modelli open source per un'IA etica"
 ---
 
 ---

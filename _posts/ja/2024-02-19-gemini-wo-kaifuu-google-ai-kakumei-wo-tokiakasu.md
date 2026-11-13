@@ -1,7 +1,7 @@
 ---
 title: "Gemini を解封:Google AI 革命を解き明かす"
 subtitle: "Google の最先端マルチモーダル AI モデルの分析"
-description: "Google の Gemini 1.5 はコンテキストウィンドウを 100 万トークン超に拡大。金融の検索拡張生成で何が可能になり、何がトレードオフかを解説。"
+description: "Google の Gemini AI モデル、その能力、アーキテクチャ、AI 業界への影響の概観。"
 date: "February 19, 2024"
 language: "ja-JP"
 locale: "ja_JP"
@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "AI の進化を表す抽象的なビジュアル"
 keywords: "Gemini, Google AI, マルチモーダル, LLM, GPT, AI モデル, Bard, Vertex AI"
 last_reviewed: "2026-05-11"
-seo_title: "Gemini 1.5 解説：Google の百万トークン文脈"
 ---
 
 ![AI の進化を表す抽象的なビジュアル](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

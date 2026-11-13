@@ -1,14 +1,13 @@
 ---
 title: "Die Technologie hinter Blockchain verstehen"
 subtitle: "Eine Kryptowährung auf Ethereum aufbauen — Schritt für Schritt"
-description: "Einführung in die Blockchain-Technologie: kryptografische Hash-Ketten, Merkle-Bäume, verteilter Konsens und wie Ethereum eine Smart-Contract-Plattform ergänzte."
+description: "Eine Kryptowährung auf der Ethereum-Blockchain entwickeln: ein umfassender Leitfaden zur Blockchain-Entwicklung, Tokenisierung und Implementierung einer Kryptowährung."
 date: "January 9, 2018"
 language: "de"
 locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp"
 banner_alt: "Ausgeschalteter Laptop auf einem braunen Holztisch"
 keywords: "Blockchain, Ethereum, Smart Contract, Kryptowährung, Solidity, Geth, dApps, ERC-20, Tokenisierung, Testnet"
-seo_title: "Blockchain-Technologie: Hash-Ketten, Merkle-Bäume, Konsens"
 ---
 
 ![Ausgeschalteter Laptop auf einem braunen Holztisch](https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp).class=\"img-fluid clearfix\"

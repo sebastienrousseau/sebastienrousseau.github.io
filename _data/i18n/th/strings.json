@@ -92,21 +92,5 @@
   "scorecard.downloaded": "ดาวน์โหลดรูปภาพสกอร์การ์ดแล้ว",
   "scorecard.radarTitle": "เรดาร์ความพร้อม",
   "scorecard.methodology": "อ่านระเบียบวิธีดัชนีฉบับเต็ม",
-  "scorecard.fallback": "มิติความพร้อมแสดงเป็นตารางด้านบน เปิดใช้งาน JavaScript เพื่อประเมินสถาบันของคุณแบบโต้ตอบและส่งออกผลลัพธ์",
-  "footer.title.contact": "ติดต่อ",
-  "footer.contact.location": "ลอนดอน สหราชอาณาจักร",
-  "footer.contact.response": "ตอบกลับครั้งแรกโดยปกติภายใน 48 ชั่วโมง",
-  "footer.newsletter.link": "สมัครรับ Banking On Quantum",
-  "nav.workWithMe": "ร่วมงานกับผม",
-  "nav.research": "ความร่วมมือด้านการวิจัย",
-  "nav.openSourceSupport": "การสนับสนุนโอเพนซอร์ส",
-  "nav.aria.toggleWorkWithMe": "สลับเมนูย่อยร่วมงานกับผม",
-  "contact.privacyLine": "ข้อความของคุณจะส่งไปที่ Formspree ซึ่งส่งต่อทางอีเมลถึงผม การป้องกันสแปมใช้ Google reCAPTCHA",
-  "contact.privacyLink": "ประกาศความเป็นส่วนตัว",
-  "footer.changelog": "บันทึกการเปลี่ยนแปลง",
-  "contact.eyebrow": "ติดต่อ",
-  "footer.mediaKit": "ชุดข้อมูลสื่อ",
-  "contact.appTitle": "ติดต่อ",
-  "nav.hubPqc": "วิทยาการเข้ารหัสหลังควอนตัม",
-  "nav.hubAi": "AI ประยุกต์"
+  "scorecard.fallback": "มิติความพร้อมแสดงเป็นตารางด้านบน เปิดใช้งาน JavaScript เพื่อประเมินสถาบันของคุณแบบโต้ตอบและส่งออกผลลัพธ์"
 }

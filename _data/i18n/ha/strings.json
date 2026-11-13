@@ -92,21 +92,5 @@
   "scorecard.downloaded": "An sauke hoton katin maki",
   "scorecard.radarTitle": "Radar shirye-shiryen",
   "scorecard.methodology": "Karanta cikakkiyar hanyar ma'aunin",
-  "scorecard.fallback": "An lissafta yankunan balaga a teburin da ke sama. Kunna JavaScript don auna cibiyar ku ta hanyar hulɗa da fitar da sakamakon.",
-  "footer.title.contact": "Tuntuɓa",
-  "footer.contact.location": "London, Birtaniya",
-  "footer.contact.response": "Amsa ta farko yawanci cikin awanni 48",
-  "footer.newsletter.link": "Yi rajista da Banking On Quantum",
-  "nav.workWithMe": "Yi aiki tare da ni",
-  "nav.research": "Haɗin gwiwar bincike",
-  "nav.openSourceSupport": "Tallafin buɗaɗɗen tushe",
-  "nav.aria.toggleWorkWithMe": "Buɗe ko rufe ƙaramin menu na Yi aiki tare da ni",
-  "contact.privacyLine": "Saƙonka yana zuwa Formspree, wanda ke aiko min da shi ta imel; kariya daga saƙonnin banza ta Google reCAPTCHA ce.",
-  "contact.privacyLink": "Sanarwar sirri",
-  "footer.changelog": "Tarihin canje-canje",
-  "contact.eyebrow": "Tuntuɓa",
-  "footer.mediaKit": "Kayan watsa labarai",
-  "contact.appTitle": "Tuntuɓa",
-  "nav.hubPqc": "Ɓoye bayanai bayan kwantum",
-  "nav.hubAi": "AI mai amfani"
+  "scorecard.fallback": "An lissafta yankunan balaga a teburin da ke sama. Kunna JavaScript don auna cibiyar ku ta hanyar hulɗa da fitar da sakamakon."
 }

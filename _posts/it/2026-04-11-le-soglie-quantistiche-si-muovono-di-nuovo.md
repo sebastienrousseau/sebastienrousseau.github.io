@@ -1,14 +1,13 @@
 ---
 title: "Le soglie quantistiche si muovono di nuovo"
 subtitle: "L'algoritmo di Shor potrebbe richiedere appena 10.000 qubit"
-description: "Un nuovo articolo suggerisce che l'algoritmo di Shor potrebbe girare con appena 10.000 qubit. Cosa significa per il rischio su RSA, ECC e la migrazione PQC."
+description: "Un nuovo articolo suggerisce che l'algoritmo di Shor possa essere eseguito con appena 10.000 qubit. La soglia del calcolo quantistico crittograficamente rilevante sta scendendo rapidamente."
 date: "April 11, 2026"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp"
 banner_alt: "Soglie quantistiche"
 keywords: "Shor, qubit, RSA, ECC, PQC, soglia quantistica, harvest now decrypt later"
-seo_title: "Soglie quantistiche in calo: Shor con 10.000 qubit"
 ---
 
 ## I umbrales quantistici tornano a moverse

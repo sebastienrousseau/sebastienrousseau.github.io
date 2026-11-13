@@ -8,7 +8,6 @@ locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/rustlogs.webp"
 banner_alt: "RustLogs（RLG）橫幅"
 keywords: "RustLogs, RLG, Rust, 日誌, 結構化日誌, 非同步, JSON, CEF, Logstash, 效能"
-seo_title: "Rust 日誌庫 RustLogs（RLG）：結構化日誌"
 ---
 
 ## 引言

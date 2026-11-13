@@ -8,7 +8,6 @@ locale: "fr_FR"
 banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
 banner_alt: "Ordinateur portable éteint sur une table en bois marron"
 keywords: "ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, interoperabilité, DApps, standard"
-seo_title: "ERC-20 expliqué : la norme d'interface des jetons Ethereum"
 ---
 
 ![Ordinateur portable éteint sur une table en bois marron](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"

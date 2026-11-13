@@ -165,8 +165,8 @@
       "<a class=pill href=\"/ta/articles/index.html\">சமீபத்திய ஆராய்ச்சியைப் படிக்கவும்</a>"
     ],
     [
-      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"\\1\" href=\"/ta/contact/index.html\">தொடர்பு கொள்ளுங்கள்</a>"
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/ta/contact/index.html\">தொடர்பு கொள்ளுங்கள்</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -355,50 +355,6 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">ISO 20022 நூலகங்களை ஆராயுங்கள் <span"
-    ],
-    [
-      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
-      ">குவாண்டம் யுகத்தில் வங்கிகள் நம்பக்கூடிய பணப்பரிவர்த்தனை உள்கட்டமைப்பு.</h1>"
-    ],
-    [
-      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
-      ">நான் HSBC-யில் மொத்தப் பணப்பரிவர்த்தனை API தயாரிப்புகளை வழிநடத்துகிறேன், மேலும் வங்கிகளும் ஃபின்டெக் நிறுவனங்களும் ஆய்வு செய்ய, சோதிக்க, மீண்டும் பயன்படுத்தக்கூடிய திறந்த மூல ISO 20022 மற்றும் போஸ்ட்-குவாண்டம் கருவிகளை உருவாக்குகிறேன்.</p>"
-    ],
-    [
-      ">Read the research</a>",
-      ">ஆராய்ச்சியைப் படிக்கவும்</a>"
-    ],
-    [
-      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
-      ">EPAA வெள்ளை அறிக்கை பங்களிப்பாளர் · ஃபெல்லோ, Institution of Analysts and Programmers</p>"
-    ],
-    [
-      ">Payments and digital products, built at:</p>",
-      ">பணப்பரிவர்த்தனை மற்றும் டிஜிட்டல் தயாரிப்புகளை உருவாக்கிய நிறுவனங்கள்:</p>"
-    ],
-    [
-      "<p class=\"feat-eyebrow\">Recognition</p>",
-      "<p class=\"feat-eyebrow\">அங்கீகாரம்</p>"
-    ],
-    [
-      ">Recognition and featured work\\.</h2>",
-      ">அங்கீகாரமும் சிறப்புப் பணிகளும்.</h2>"
-    ],
-    [
-      "aria-label=\"Recognition\"",
-      "aria-label=\"அங்கீகாரம்\""
-    ],
-    [
-      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
-      "<li>Institution of Analysts and Programmers ஃபெல்லோ (FIAP)</li>"
-    ],
-    [
-      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
-      ">பணப்பரிவர்த்தனை, குவாண்டம் பாதுகாப்பு அல்லது ISO 20022 தொடர்பாகப் பணியாற்றுகிறீர்களா?</h2>"
-    ],
-    [
-      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
-      ">நீங்கள் எதை உருவாக்குகிறீர்கள் என்று என்னிடம் சொல்லுங்கள். வழக்கமாக முதல் பதில் 48 மணிநேரத்திற்குள் வரும்.</p>"
     ]
   ]
 }

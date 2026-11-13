@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Mar 12, 2024"
-description: "ISO 20022 research, industry white papers and technical analysis from Sebastien Rousseau on AI in banking, payment infrastructure and post-quantum cryptography."
+description: "ISO 20022 research, industry white papers and technical analysis covering AI in banking, payment infrastructure and post-quantum cryptography, from Sebastien Rousseau."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -96,7 +96,7 @@ site_last_updated: "2024-03-08"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-seo_title: "ISO 20022 Research, White Papers and Technical Analysis"
+
 ---
 
 <section class="newsroom papers">

@@ -1,7 +1,7 @@
 ---
 title: "Vznik platformy Express Transaction Credits"
 subtitle: "Návrh platformy Express Transaction Credits s chytrými kontrakty ERC-223."
-description: "Jak vznikla platforma EXTC na Ethereum ERC-223: architektura tokenu, výplaty s vícenásobným podpisem, časově uzamčené převody a okamžité úvěry kryté zástavou."
+description: "Technický rozbor toho, jak byla v roce 2018 platforma EXTC postavena na Ethereum ERC-223: architektura tokenu, výplaty s vícenásobným podpisem, časově uzamčené převody a okamžité úvěry kryté zástavou."
 date: "February 15, 2018"
 language: "cs-CZ"
 locale: "cs_CZ"
@@ -9,7 +9,6 @@ hreflang: "cs"
 banner: "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
 banner_alt: "Obří bílé sloupy"
 keywords: "platforma EXTC, ERC-223, chytré kontrakty Ethereum, architektura tokenu, vícenásobný podpis, časově uzamčený převod, blockchainové platby, úvěry kryté zástavou, decentralizované finance, kryptoměny 2018"
-seo_title: "Platforma EXTC: platební token na Ethereum ERC-223"
 ---
 
 

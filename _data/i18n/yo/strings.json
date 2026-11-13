@@ -92,21 +92,5 @@
   "scorecard.downloaded": "A ti gba àwòrán káàdì àmì sílẹ̀",
   "scorecard.radarTitle": "Rádà ìmúrasílẹ̀",
   "scorecard.methodology": "Ka gbogbo ọ̀nà ìṣirò àtọ́ka",
-  "scorecard.fallback": "A ṣàkójọ àwọn ojúlóye ìdàgbàsókè sí orí tábìlì lókè. Mú JavaScript ṣiṣẹ́ láti ṣàyẹ̀wò ilé-iṣẹ́ rẹ lọ́nà ìbáṣepọ̀ àti láti kó àbájáde jáde.",
-  "footer.title.contact": "Ìbánisọ̀rọ̀",
-  "footer.contact.location": "London, Ìjọba Gẹ̀ẹ́sì",
-  "footer.contact.response": "Ìdáhùn àkọ́kọ́ máa ń wà láàrin wákàtí 48",
-  "footer.newsletter.link": "Forúkọsílẹ̀ fún Banking On Quantum",
-  "nav.workWithMe": "Ṣiṣẹ́ pẹ̀lú mi",
-  "nav.research": "Ìfọwọ́sowọ́pọ̀ ìwádìí",
-  "nav.openSourceSupport": "Àtìlẹ́yìn orísun ṣíṣí",
-  "nav.aria.toggleWorkWithMe": "Ṣí tàbí pa àkójọ-abẹ́ Ṣiṣẹ́ pẹ̀lú mi",
-  "contact.privacyLine": "Ìfiránṣẹ́ rẹ ń lọ sí Formspree, tí ó ń fi í ránṣẹ́ sí mi nípasẹ̀ ímeèlì; Google reCAPTCHA ló ń dáàbò bo lọ́wọ́ spam.",
-  "contact.privacyLink": "Àkíyèsí àṣírí",
-  "footer.changelog": "Àkọsílẹ̀ àyípadà",
-  "contact.eyebrow": "Ìbánisọ̀rọ̀",
-  "footer.mediaKit": "Àkójọ ìwé ìròyìn",
-  "contact.appTitle": "Ìbánisọ̀rọ̀",
-  "nav.hubPqc": "Ìfipamọ́ lẹ́yìn kúántọ̀mù",
-  "nav.hubAi": "AI tí a lò"
+  "scorecard.fallback": "A ṣàkójọ àwọn ojúlóye ìdàgbàsókè sí orí tábìlì lókè. Mú JavaScript ṣiṣẹ́ láti ṣàyẹ̀wò ilé-iṣẹ́ rẹ lọ́nà ìbáṣepọ̀ àti láti kó àbájáde jáde."
 }

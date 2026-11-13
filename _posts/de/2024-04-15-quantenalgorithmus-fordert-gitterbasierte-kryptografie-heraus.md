@@ -8,7 +8,6 @@ locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
 banner_alt: "Banner mit Netzwerkknoten in einem digitalen blauen Raum"
 keywords: "Quantencomputing, Quantenalgorithmus, gitterbasierte Kryptographie, LWE, Verschlüsselung, Post-Quanten-Kryptographie, Cybersicherheit, Yilei Chen, kryptographische Forschung, Sicherheitsbedrohungen"
-seo_title: "Quantenalgorithmus fordert Gitter-Kryptografie heraus"
 ---
 
 ## Executive Summary

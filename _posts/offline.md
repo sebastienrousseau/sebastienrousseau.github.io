@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Oct 01, 2023"
-description: "You appear to be offline. Check your Wi-Fi or mobile data, cables, router and security settings, or clear your browser cache, then reload the page to try again."
+description: "I apologise for the inconvenience. To continue, please connect to a Wi-Fi network or enable cellular data, you can also:"
 format-detection: "telephone=no"
 form-id: ""
 hreflang: "en"
@@ -96,7 +96,7 @@ site_last_updated: "2023-07-05"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Sebastien Rousseau, Sebastien Rousseau Builder, Sebastien Rousseau CLI, Sebastien Rousseau Templates, Sebastien Rousseau Themes"
 site_software: "Static Site Generator, Rust"
-seo_title: "Offline: No Internet Connection Detected, Please Try Again"
+
 ---
 
 Try:

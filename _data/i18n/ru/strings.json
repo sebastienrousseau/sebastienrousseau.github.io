@@ -92,21 +92,5 @@
   "scorecard.downloaded": "Изображение оценочной карты загружено",
   "scorecard.radarTitle": "Радар готовности",
   "scorecard.methodology": "Прочитать полную методологию индекса",
-  "scorecard.fallback": "Измерения зрелости сведены в таблицу выше. Включите JavaScript, чтобы интерактивно оценить ваше учреждение и экспортировать результат.",
-  "footer.title.contact": "Контакты",
-  "footer.contact.location": "Лондон, Великобритания",
-  "footer.contact.response": "Первый ответ обычно в течение 48 часов",
-  "footer.newsletter.link": "Подписаться на Banking On Quantum",
-  "nav.workWithMe": "Сотрудничество",
-  "nav.research": "Исследовательское сотрудничество",
-  "nav.openSourceSupport": "Поддержка open source",
-  "nav.aria.toggleWorkWithMe": "Переключить подменю «Сотрудничество»",
-  "contact.privacyLine": "Ваше сообщение попадает в Formspree, который пересылает его мне по электронной почте; защиту от спама обеспечивает Google reCAPTCHA.",
-  "contact.privacyLink": "Уведомление о конфиденциальности",
-  "footer.changelog": "Журнал изменений",
-  "contact.eyebrow": "Контакты",
-  "footer.mediaKit": "Медиакит",
-  "contact.appTitle": "Контакты",
-  "nav.hubPqc": "Постквантовая криптография",
-  "nav.hubAi": "Прикладной ИИ"
+  "scorecard.fallback": "Измерения зрелости сведены в таблицу выше. Включите JavaScript, чтобы интерактивно оценить ваше учреждение и экспортировать результат."
 }

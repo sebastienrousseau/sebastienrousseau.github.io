@@ -9,7 +9,6 @@ locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp"
 banner_alt: "HSBC od nábřeží"
 keywords: "kvantová distribuce klíčů (QKD), kvantová bezpečnost, bankovnictví, finanční sektor, digitální finance, kybernetická bezpečnost, kvantové výpočty, HSBC, pilotní projekt kvantové ochrany, finanční transakce"
-seo_title: "Kvantová distribuce klíčů (QKD): zabezpečení bankovnictví"
 ---
 
 

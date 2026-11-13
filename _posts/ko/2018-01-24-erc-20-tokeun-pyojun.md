@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
 banner_alt: "갈색 나무 테이블 위 전원이 꺼진 노트북"
 keywords: "ERC-20, 이더리움, 스마트 컨트랙트, 토큰, ICO, DeFi, 스테이블코인, 토큰화, 이더리움 개선 제안"
 last_reviewed: "2026-05-16"
-seo_title: "ERC-20 해설: 이더리움 토큰 인터페이스 표준"
 ---
 
 ![갈색 나무 테이블 위 전원이 꺼진 노트북](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"

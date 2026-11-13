@@ -8,7 +8,6 @@ locale: "es_ES"
 banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 banner_alt: "Imagen generada con MidJourney: una red de nodos digitales en tonos rojos y azules."
 keywords: "criptografía postcuántica, NIST, estandarización PQC, Yilei Chen, algoritmo cuántico, criptografía sobre retículos, problema LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, criptografía resistente a lo cuántico"
-seo_title: "Criptografía poscuántica: un bug en el algoritmo LWE de Chen"
 ---
 
 ## El enigma cuántico: reevaluación de la estandarización NIST de criptografía postcuántica a la luz del algoritmo de Yilei Chen

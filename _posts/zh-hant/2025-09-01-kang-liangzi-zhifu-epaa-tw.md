@@ -1,14 +1,13 @@
 ---
 title: "抗量子支付：行業必須立即行動（EPAA）"
 subtitle: "為何支付行業必須現在採取行動應對量子威脅"
-description: "量子運算正威脅著支付系統所仰賴的密碼學基礎。本文介紹 EPAA 白皮書所闡述的風險，以及它為何主張整個支付產業盡快轉向抗量子安全的支付體系。"
+description: "EPAA 量子安全支付白皮書闡述支付行業為何必須立即採取行動應對量子威脅。"
 date: "September 1, 2025"
 language: "zh-Hant"
 locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 banner_alt: "藍色光線下的量子計算電路板"
 keywords: "EPAA, 抗量子支付, 後量子密碼學, ML-KEM, ML-DSA, SWIFT, SEPA, HNDL, NIST, FIPS 203"
-seo_title: "抗量子支付：為何現在就要啟動 PQC 遷移"
 ---
 
 ## 量子對支付系統的威脅

@@ -1,7 +1,7 @@
 ---
 title: "비트코인: 최초의 암호자산에 관한 연간 총정리"
 subtitle: "통화를 재정의한 P2P 전자 현금 시스템"
-description: "비트코인이 P2P 전자 현금 시스템으로 작동하는 원리, 분산 원장이 이중 지불 문제를 해결하는 방식, 그리고 온라인 결제를 바꿀 수 있는 이유를 알아봅니다."
+description: "비트코인: 온라인 거래의 양상을 혁신할 잠재력을 지닌 P2P 전자 현금 시스템(P2P ECS)."
 date: "January 1, 2018"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
 banner_alt: "테이블에 쌓인 금화와 은화"
 keywords: "비트코인, 암호자산, 블록체인, P2P, 이중 지출, 마이닝, 작업 증명, ETF, 사토시 나카모토, 분산형 금융"
 last_reviewed: "2026-05-16"
-seo_title: "비트코인 해설: 최초의 암호자산은 어떻게 작동하나"
 ---
 
 ![테이블에 쌓인 금화와 은화](https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp).class=\"img-fluid clearfix\"

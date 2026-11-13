@@ -1,7 +1,7 @@
 ---
 title: "Los pagos mayoristas mundiales en 2026: ISO 20022, renovación de los RTGS y la economía de la interoperabilidad"
 subtitle: "Los pagos mayoristas se han convertido en una palanca de política económica: ISO 20022, los horarios operativos de los RTGS, el acceso de no bancos, la interconexión, los pilotos de liquidación DLT y la hoja de ruta del G20 convergen en torno al coste del movimiento mundial de liquidez."
-description: "Pagos mayoristas 2026: armonización ISO 20022, renovación de RTGS, liquidación ampliada, acceso no bancario y pilotos DLT en la economía de interoperabilidad."
+description: "Los pagos mayoristas mundiales en 2026 están siendo reconfigurados por la armonización de ISO 20022, la renovación de los RTGS, la ampliación de las ventanas de liquidación, el acceso de no bancos, la gobernanza de las API, los pilotos DLT y la fragmentación de los pagos transfronterizos. La cuestión económica es la interoperabilidad, no solo la mensajería."
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Mapa de arquitectura de los pagos mayoristas mundiales para 2026: ISO 20022, renovación de los RTGS, corredores transfronterizos, ventanas de liquidez y pilotos de liquidación DLT"
 banner_height: "571"

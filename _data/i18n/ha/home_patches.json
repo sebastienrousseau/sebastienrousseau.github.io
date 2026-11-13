@@ -166,8 +166,8 @@
       "<a class=pill href=\"/ha/labarai/index.html\">Karanta sabbin bincike</a>"
     ],
     [
-      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"\\1\" href=\"/ha/tuntube-mu/index.html\">Tuntube ni</a>"
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/ha/tuntube-mu/index.html\">Tuntube ni</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -356,50 +356,6 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">Bincika ɗakunan karatu na ISO 20022 <span"
-    ],
-    [
-      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
-      ">Tsarin biyan kuɗi da bankuna za su iya amincewa da shi a zamanin kwantum.</h1>"
-    ],
-    [
-      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
-      ">Ina jagorantar kayayyakin API na biyan kuɗi na manyan cibiyoyi a HSBC, kuma ina gina kayan aikin buɗaɗɗen tushe na ISO 20022 da na bayan-kwantum waɗanda bankuna da kamfanonin fintech za su iya dubawa, gwadawa da sake amfani da su.</p>"
-    ],
-    [
-      ">Read the research</a>",
-      ">Karanta binciken</a>"
-    ],
-    [
-      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
-      ">Mai ba da gudummawa ga farar takardar EPAA · Fellow, Institution of Analysts and Programmers</p>"
-    ],
-    [
-      ">Payments and digital products, built at:</p>",
-      ">Kayayyakin biyan kuɗi da na dijital, da na gina a:</p>"
-    ],
-    [
-      "<p class=\"feat-eyebrow\">Recognition</p>",
-      "<p class=\"feat-eyebrow\">Karramawa</p>"
-    ],
-    [
-      ">Recognition and featured work\\.</h2>",
-      ">Karramawa da ayyuka na musamman.</h2>"
-    ],
-    [
-      "aria-label=\"Recognition\"",
-      "aria-label=\"Karramawa\""
-    ],
-    [
-      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
-      "<li>Fellow na Institution of Analysts and Programmers (FIAP)</li>"
-    ],
-    [
-      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
-      ">Kuna aiki kan biyan kuɗi, tsaron kwantum ko ISO 20022?</h2>"
-    ],
-    [
-      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
-      ">Faɗa mini abin da kuke ginawa. Yawanci amsa ta farko tana zuwa cikin awa 48.</p>"
     ]
   ]
 }

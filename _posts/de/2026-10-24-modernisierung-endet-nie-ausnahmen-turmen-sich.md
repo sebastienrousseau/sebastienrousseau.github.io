@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 24, 2026"
-description: "Warum Dr. Leda Glyptis sagt, Bankmodernisierung habe kein Ende, warum sich Ausnahmen über Jahrzehnte häufen und KI vorsichtig, aber nicht langsam kommen soll."
+description: "Dr. Leda Glyptis in London: Modernisierung endet nie. Banken müssen Jahrzehnte an Ausnahmen abbauen und KI sicher und maßvoll angehen, aber nicht langsam."
 format-detection: "telephone=no"
 hreflang: "de"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "Seit 20 bis 25 Jahren behandeln Finanzdienstleister die Modernisierung als Projekt mit Enddatum. Zur Eröffnung des Oracle Financial Services Summit in London argumentierte Dr. Leda Glyptis, dass die eigentliche Schwäche der Branche..."
 last_reviewed: "2026-10-24"
-seo_title: "Leda Glyptis: Modernisierung im Banking endet nie"
 ---
 
 # Modernisierung endet nie, die Ausnahmen türmen sich auf

@@ -1,14 +1,13 @@
 ---
 title: "Bitcoin: Das Jahr im Rückblick der ersten Kryptowährung"
 subtitle: "Ein Peer-to-Peer-Zahlungssystem, das Geld neu definiert hat"
-description: "Wie Bitcoin als Peer-to-Peer-System für elektronisches Bargeld funktioniert, wie sein verteiltes Ledger Double Spending löst und Online-Zahlungen ändern kann."
+description: "Bitcoin: Ein Peer-to-Peer Electronic Cash System (P2P ECS) mit dem Potenzial, die Art und Weise, wie Menschen online Geschäfte abwickeln, zu revolutionieren."
 date: "January 1, 2018"
 language: "de"
 locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
 banner_alt: "Ein Stapel Gold- und Silbermünzen auf einem Tisch"
 keywords: "Bitcoin, Kryptowährung, Blockchain, P2P, Double Spending, Mining, Proof-of-Work, ETF, Satoshi Nakamoto, dezentrale Finanzen"
-seo_title: "Bitcoin erklärt: So funktioniert die erste Kryptowährung"
 ---
 
 ![Ein Stapel Gold- und Silbermünzen auf einem Tisch](https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp).class=\"img-fluid clearfix\"

@@ -8,7 +8,6 @@ locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 banner_alt: "MidJourney 生成图像 - 红蓝色调的数字节点网络"
 keywords: "陈逸雷, LWE, 量子算法, 格密码学, NIST, 后量子密码学, Kyber, Dilithium, BGV, TFHE"
-seo_title: "后量子密码学：陈氏 LWE 算法被发现漏洞"
 ---
 
 ## 量子困局：在陈逸雷算法影响下重新评估 NIST 后量子密码学标准化

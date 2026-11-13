@@ -1,7 +1,7 @@
 ---
 title: "Les paiements de gros mondiaux en 2026 : ISO 20022, renouvellement des RTGS et l'économie de l'interopérabilité"
 subtitle: "Les paiements de gros sont devenus un levier de politique économique : ISO 20022, heures d'ouverture des RTGS, accès des non-banques, interconnexion, pilotes de règlement DLT et feuille de route du G20 convergent autour du coût de la circulation mondiale de la liquidité."
-description: "Paiements de gros 2026 : harmonisation ISO 20022, refonte des RTGS, plages de règlement élargies, accès non bancaire et DLT changent l'interopérabilité."
+description: "Les paiements de gros mondiaux en 2026 sont remodelés par l'harmonisation ISO 20022, le renouvellement des RTGS, l'extension des fenêtres de règlement, l'accès des non-banques, la gouvernance des API, les pilotes DLT et la fragmentation des paiements transfrontaliers. L'enjeu économique est l'interopérabilité, pas seulement la messagerie."
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Carte d'architecture des paiements de gros mondiaux pour 2026 — ISO 20022, renouvellement des RTGS, corridors transfrontaliers, fenêtres de liquidité et pilotes de règlement DLT"
 banner_height: "571"

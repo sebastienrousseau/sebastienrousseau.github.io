@@ -1,14 +1,13 @@
 ---
 title: "AI 趋势 2024：洞察与对未来的预测"
 subtitle: "2024 年的 AI 趋势：金融领域的生成式 AI、多模态模型、设备端 LLM 及将重塑银行业和产品工程的变化"
-description: "2024 年 AI 趋势：金融领域的生成式 AI、多模态模型、端侧 LLM，以及预计将在今年重塑银行业与产品工程的一系列重要转变，一文读懂。"
+description: "AI 在 2024 年从概念走向现实，影响商业、社会、教育、金融、气候、空间技术与零售各个层面。"
 date: "January 1, 2024"
 language: "zh-Hans"
 locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"
 banner_alt: "伦敦无人机视角"
 keywords: "AI 趋势 2024, 生成式 AI, 多模态模型, 客户服务, 网络安全, 教育, 气候变化, 金融, 零售, 伦理"
-seo_title: "2024 AI 趋势：生成式 AI、多模态与端侧 LLM"
 ---
 
 随着我们迈入 2024 年，AI 正在重新定义技术、社会与日常生活。这个时代不仅是技术演进，更是一段变革之旅，AI 已成为战略决策、社会改革与科学创新的关键驱动力。

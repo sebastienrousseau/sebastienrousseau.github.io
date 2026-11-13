@@ -8,7 +8,6 @@ locale: "es_ES"
 banner: "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
 banner_alt: "Ordenador portátil apagado sobre una mesa de madera marrón"
 keywords: "ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, interoperabilidad, DApps, estándar"
-seo_title: "ERC-20 explicado: el estándar de tokens de Ethereum"
 ---
 
 ![Ordenador portátil apagado sobre una mesa de madera marrón](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"

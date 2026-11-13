@@ -1,14 +1,13 @@
 ---
 title: "Efektivní správa data a času s DateTime (DTT)"
 subtitle: "DTT, vysoce přesná knihovna v Rustu pro operace s datem a časem"
-description: "DateTime (DTT) je knihovna v Rustu pro parsování, validaci, manipulaci a formátování data a času. Zjistěte, co umí a jak ji použít ve svých projektech."
+description: "DateTime (DTT) je knihovna v Rustu pro parsování, validaci, manipulaci a formátování data a času. Nabízí vysokou přesnost a širokou funkcionalitu."
 date: "December 04, 2023"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg"
 banner_alt: "DateTime (DTT), váš základní nástroj pro operace s datem a časem."
 keywords: "DateTime, DTT, knihovna v Rustu, parsování, validace, manipulace, formátování, data, časy"
-seo_title: "DateTime (DTT): práce s datem a časem v Rustu"
 ---
 
 

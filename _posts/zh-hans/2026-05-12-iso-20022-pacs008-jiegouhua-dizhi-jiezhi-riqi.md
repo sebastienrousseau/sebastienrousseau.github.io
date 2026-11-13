@@ -1,14 +1,13 @@
 ---
 title: "2026 年 11 月 pacs.008 结构化地址截止日期：六个月视角"
 subtitle: "SWIFT CBPR+ 将拒绝非结构化邮政地址——结构化地址截止日期对跨境支付的影响"
-description: "自 2026 年 11 月起，SWIFT CBPR+ 要求 ISO 20022 pacs.008 报文使用结构化地址。了解需要哪些字段，以及银行还差多远。"
+description: "2026 年 11 月起 SWIFT CBPR+ 拒绝 pacs.008 中的非结构化地址。约 65% 报文仍不合规，44% 银行进度滞后。"
 date: "May 12, 2026"
 language: "zh-Hans"
 locale: "zh_CN"
 banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 banner_alt: "ISO 20022 pacs.008 结构化地址图——突出 TwnNm 和 Ctry 字段的跨境支付报文"
 keywords: "ISO 20022, pacs.008, 结构化地址, SWIFT, CBPR+, SR2026, 跨境支付, 制裁筛查, pain.001, 银行业"
-seo_title: "ISO 20022 pacs.008 结构化地址截止日"
 ---
 
 自 2026 年 11 月中旬起，SWIFT CBPR+ 将拒绝 pacs.008 与相关跨境支付报文中的非结构化邮政地址。约 65% 报文仍不合规，44% 银行进度滞后，整改窗口比多数就绪项目设计的更快关闭。

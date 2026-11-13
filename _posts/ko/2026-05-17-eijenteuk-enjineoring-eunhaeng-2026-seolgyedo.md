@@ -1,7 +1,7 @@
 ---
 title: "에이전트 엔지니어링: 은행을 위한 2026년 설계도"
 subtitle: "에이전트 AI는 이미 은행 운영을 재편하고 있습니다"
-description: "은행을 위한 에이전트 엔지니어링: 운영 환경의 에이전트 AI에 성숙한 거버넌스가 필요한 이유, 레거시 COBOL의 위치, EU AI Act 마감일의 요구 사항."
+description: "에이전트 AI는 이미 은행 운영을 재편하고 있습니다. 본 설계도는 거버넌스, 보안, 운영 모델을 제시합니다."
 date: "May 17, 2026"
 language: "ko-KR"
 locale: "ko_KR"

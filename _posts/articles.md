@@ -96,7 +96,7 @@ site_last_updated: "2024-04-15"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-seo_title: "Articles on Applied AI, ISO 20022 and Post-Quantum Security"
+
 ---
 
 <section class="newsroom">

@@ -1775,19 +1775,19 @@ def _faq(d: dict) -> str:
 
 
 def _hub_finale() -> str:
-    """Human conversion finale + newsletter band at the bottom of the hub (Fix 2.2).
-
-    The band links to the one newsletter sign-up (Banking On Quantum); no
-    form here collects an address (plan F-6: one newsletter path)."""
+    """Human conversion finale + newsletter signup band at the bottom of the hub (Fix 2.2)."""
     return (
         '<aside class="feat newsletter-band" aria-labelledby="hub-newsletter-heading">'
         '<div class="wrap">'
         '<p class="feat-eyebrow">Newsletter</p>'
         '<h2 id="hub-newsletter-heading" class="feat-headline center">Banking On Quantum</h2>'
         '<p class="feat-sub center">Research notes on ISO 20022, agentic payments and post-quantum banking. One email when a new paper or release ships.</p>'
-        '<p class="feat-cta"><a class="pill" href="https://news.bankingonquantum.com" '
-        'rel="external noopener">Subscribe to Banking On Quantum</a></p>'
-        "</div></aside>"
+        '<form class="ap-newsletter" action="https://formspree.io/f/xkgwopbd" method="POST" aria-label="Newsletter signup">'
+        '<label class="visually-hidden" for="ap-newsletter-email">Work email</label>'
+        '<input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />'
+        '<input type="hidden" name="_subject" value="Newsletter signup - sebastienrousseau.com" />'
+        '<button type="submit" class="pill">Subscribe</button>'
+        "</form></div></aside>"
         '<aside class="feat dark feat-finale" aria-labelledby="hub-finale-headline">'
         '<div class="wrap">'
         '<p class="feat-eyebrow">Get in touch</p>'
@@ -2179,12 +2179,23 @@ def _fix_metas(html: str) -> str:
     return _dedupe_exact_tags(html, r'<meta name="theme-color"[^>]*>')
 
 
+def _strip_footer_newsletter(shell: str) -> str:
+    """Remove the footer newsletter form when the hub renders .newsletter-band in <main>."""
+    return re.sub(
+        r'\s*<form class="ap-newsletter"[\s\S]*?</form>',
+        "",
+        shell,
+    )
+
+
 def main() -> int:
     if not SHELL_SRC.is_file():
         print(f"build_iso20022_mcp: shell missing at {SHELL_SRC}", file=sys.stderr)
         return 1
     # Unescape first so every meta is a real tag (no-op on CI).
-    shell = _unescape_head_metas(_nav(SHELL_SRC.read_text(encoding="utf-8")))
+    shell = _strip_footer_newsletter(
+        _unescape_head_metas(_nav(SHELL_SRC.read_text(encoding="utf-8")))
+    )
     body = _render_body(C)
     out = _swap_into_shell(shell, body, C["meta_title"], C["meta_description"], URL)
     out = _fix_metas(out)

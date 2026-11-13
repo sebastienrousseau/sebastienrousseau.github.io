@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jul 14, 2026"
-description: "ISO 20022 MCP recipes for AI agents: migrate a legacy MT103, reconcile a statement, resolve a wrong payment, and turn an AP2 mandate into a bank message."
+description: "End-to-end recipes for the ISO 20022 MCP Suite: migrate a legacy MT103, reconcile a statement, cancel and resolve a wrong payment, and turn an AP2 agent mandate into a wire-valid bank message."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -96,7 +96,7 @@ site_last_updated: "2026-10-29"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-seo_title: "ISO 20022 MCP Recipes: End-to-End Payment Flows for Agents"
+
 ---
 
 <p class="story-intro">Five flows an agent runs end to end, entirely through the published servers. Each is a short chain of tool calls: no glue code, every step validated. New here? Read <a href="/iso20022-mcp-docs/index.html">the quickstart</a> first, or the <a href="/iso20022-mcp-reference/index.html">tool reference</a>.</p>

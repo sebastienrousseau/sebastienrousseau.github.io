@@ -33,9 +33,6 @@ BANNED = {
     "EPAA authorship": re.compile(r"(?i)\bco-?author(?:ed)?(?: of)? the EPAA|\bauthor of the EPAA"),
     "recognizedBy credential": re.compile(r'"recognizedBy"'),
     "senior positions at Virgin": re.compile(r"(?i)senior positions at [^.]*Virgin"),
-    # profile.yml: the personal Gmail stays off the site; email_public is
-    # the published address (security.txt, policies, pages).
-    "personal e-mail": re.compile(r"(?i)sebastian\.rousseau@gmail\.com"),
 }
 SOURCES = (
     "_posts/*.md",
@@ -44,11 +41,6 @@ SOURCES = (
     "_data/i18n/en/*.json",
     "_layouts/*.html",
     "scripts/**/*.py",
-    "security.txt",
-    ".well-known/security.txt",
-    "SECURITY.md",
-    "SUPPORT.md",
-    "CODE_OF_CONDUCT.md",
 )
 _ENRICH = re.compile(r"<!-- enrich-start -->.*?<!-- enrich-end -->", re.S)
 

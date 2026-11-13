@@ -92,21 +92,5 @@
   "scorecard.downloaded": "Na-download ang larawan ng scorecard",
   "scorecard.radarTitle": "Radar ng kahandaan",
   "scorecard.methodology": "Basahin ang buong metodolohiya ng indeks",
-  "scorecard.fallback": "Ang mga dimensyon ng kahandaan ay nakatala sa talahanayan sa itaas. Paganahin ang JavaScript upang suriin ang inyong institusyon nang interaktibo at i-export ang resulta.",
-  "footer.title.contact": "Makipag-ugnayan",
-  "footer.contact.location": "London, United Kingdom",
-  "footer.contact.response": "Karaniwang unang tugon sa loob ng 48 oras",
-  "footer.newsletter.link": "Mag-subscribe sa Banking On Quantum",
-  "nav.workWithMe": "Makipagtulungan sa akin",
-  "nav.research": "Pakikipagtulungan sa pananaliksik",
-  "nav.openSourceSupport": "Suporta sa open source",
-  "nav.aria.toggleWorkWithMe": "I-toggle ang submenu ng Makipagtulungan sa akin",
-  "contact.privacyLine": "Napupunta ang mensahe mo sa Formspree, na nag-e-email nito sa akin; ang proteksyon laban sa spam ay mula sa Google reCAPTCHA.",
-  "contact.privacyLink": "Abiso sa privacy",
-  "footer.changelog": "Talaan ng mga pagbabago",
-  "contact.eyebrow": "Makipag-ugnayan",
-  "footer.mediaKit": "Media kit",
-  "contact.appTitle": "Makipag-ugnayan",
-  "nav.hubPqc": "Post-quantum cryptography",
-  "nav.hubAi": "Inilapat na AI"
+  "scorecard.fallback": "Ang mga dimensyon ng kahandaan ay nakatala sa talahanayan sa itaas. Paganahin ang JavaScript upang suriin ang inyong institusyon nang interaktibo at i-export ang resulta."
 }

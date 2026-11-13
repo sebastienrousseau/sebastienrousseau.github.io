@@ -1,14 +1,13 @@
 ---
 title: "OpenVoice: innovazione di punta nella tecnologia di clonazione vocale"
 subtitle: "Un toolkit open source per la sintesi vocale personalizzata"
-description: "OpenVoice di MIT, Tsinghua e MyShell offre clonazione vocale istantanea con controllo di tono, accento ed emozione. Come funziona e quali compromessi."
+description: "OpenVoice è un toolkit open source per la clonazione e sintesi vocale che permette la replica accurata di voci con pochi secondi di campione audio."
 date: "April 01, 2024"
 language: "it-IT"
 locale: "it_IT"
 banner: "https://cloudcdn.pro/stocks/images/open-voice.webp"
 banner_alt: "OpenVoice, clonazione vocale"
 keywords: "OpenVoice, clonazione vocale, sintesi vocale, TTS, open source, deepfake"
-seo_title: "OpenVoice spiegato: clonazione vocale open source"
 ---
 
 ---

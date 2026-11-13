@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Perché i leader di aerospazio e automazione dubitano dei robot umanoidi in fabbrica, perché il lights-out è un'illusione e perché la forma segue la funzione."
+description: "Al vertice Physical AI dell'Economist a Londra, i vertici di aerospazio e automazione hanno smontato l'entusiasmo per gli umanoidi: la forma deve seguire la funzione."
 format-detection: "telephone=no"
 hreflang: "it"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "All'Economist Enterprise Physical AI and Robotics Summit di Londra, i vertici dell'aerospazio e della manifattura hanno smontato la narrazione della Silicon Valley sul robot umanoide universale. Mentre il capitale di rischio riversa miliardi nelle forme bipedi, la realtà industriale dimostra che la forma deve seguire rigorosamente la funzione."
 last_reviewed: "2026-10-13"
-seo_title: "Robot umanoidi o robot funzionali nella manifattura"
 ---
 
 All'Economist Enterprise Physical AI and Robotics Summit, tenutosi al Convene 200 Aldersgate di Londra il 13 ottobre 2026, dirigenti industriali, ingegneri aerospaziali e robotici si sono riuniti per affrontare una frattura fondamentale dell'automazione moderna: i robot devono imitare il corpo umano, o la loro morfologia meccanica deve seguire rigorosamente la fisica industriale? Mentre il capitale di rischio continua a riversare miliardi in forme umanoidi bipedi che promettono di sostituire universalmente il lavoro umano, i professionisti del reparto provenienti da Airbus, Leonardo e dalla ricerca accademica hanno offerto un confronto con la realtà, netto ed empirico.

@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 24, 2026"
-description: "Leda Glyptis 博士為何認為銀行現代化沒有終點，數十年來的例外為何不斷累積，以及為何銀行對 AI 的採用應當保持審慎，但絕不能遲緩。"
+description: "Leda Glyptis 博士在倫敦指出，現代化沒有終點：金融機構必須清理數十年累積的例外，面對 AI 要安全、審慎、穩健，但不能遲緩。"
 format-detection: "telephone=no"
 hreflang: "zh-hant"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "二十到二十五年來，金融服務業一直把現代化當成有截止日期的專案。在倫敦 Oracle Financial Services Summit 的開場，Leda Glyptis 博士指出，產業的弱點在於..."
 last_reviewed: "2026-10-24"
-seo_title: "Leda Glyptis：銀行現代化永無終點"
 ---
 
 # 現代化永無終點，不斷累積的是例外

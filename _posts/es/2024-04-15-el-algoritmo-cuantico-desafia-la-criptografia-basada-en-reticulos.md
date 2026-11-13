@@ -8,7 +8,6 @@ locale: "es_ES"
 banner: "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
 banner_alt: "Banner que representa nodos de red en un espacio digital azul"
 keywords: "computación cuántica, algoritmo cuántico, criptografía sobre retículos, LWE, cifrado, criptografía postcuántica, ciberseguridad, Yilei Chen, investigación criptográfica, amenazas de seguridad"
-seo_title: "Un algoritmo cuántico desafía la criptografía de retículos"
 ---
 
 ## Resumen ejecutivo

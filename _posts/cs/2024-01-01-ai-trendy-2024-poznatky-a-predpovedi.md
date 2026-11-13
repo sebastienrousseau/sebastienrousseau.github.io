@@ -1,14 +1,13 @@
 ---
 title: "Trendy AI 2024: poznatky a předpovědi pro budoucnost"
 subtitle: "Klíčový rok pro technologie, společnost a etický vývoj"
-description: "Trendy AI pro rok 2024: generativní AI ve financích, multimodální modely, LLM v zařízeních a posuny, které letos promění bankovnictví a produktové inženýrství."
+description: "Trendy AI pro rok 2024: generativní AI ve financích, multimodální modely, LLM v zařízeních a změny, které promění bankovnictví a produktové inženýrství."
 date: "January 01, 2024"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"
 banner_alt: "Pohled na Londýn z dronu"
 keywords: "trendy AI 2024, generativní AI, AI ve vzdělávání, kybernetická bezpečnost s AI, AI ve financích, tvorba obsahu s AI, AI ve zkoumání vesmíru, etická AI, AI v maloobchodu, analytika s AI"
-seo_title: "Trendy AI 2024: generativní AI, multimodalita a LLM"
 ---
 
 S příchodem roku 2024 mění umělá inteligence technologie, společnost i každodenní život. Tato doba není jen o technologickém vývoji; je to zásadní proměna, v níž se AI stává klíčovým motorem strategického rozhodování, společenských reforem a vědeckých inovací.

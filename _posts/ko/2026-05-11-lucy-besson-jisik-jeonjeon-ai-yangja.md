@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/harald-krichel-scarlett-johansson-85
 banner_alt: "신경망과 양자 원자 배열의 추상적 시각화"
 keywords: "Lucy, 뤽 베송, 지식 이전, AI, LLM, 중성 원자 큐비트, 전뇌 에뮬레이션, AI 철학"
 last_reviewed: "2026-05-16"
-seo_title: "영화 「Lucy」 다시 보기: AI, 양자, 지식 이전"
 ---
 
 ## Lucy의 플래시 메모리, 다시 보다

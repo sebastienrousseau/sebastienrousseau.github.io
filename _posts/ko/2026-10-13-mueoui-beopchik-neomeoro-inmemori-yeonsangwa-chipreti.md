@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Mythic AI의 Taner Ozcelik이 본 인메모리 연산과 모듈형 칩렛: 엣지 로봇, 국방, 자동차 플랫폼을 위해 메모리 장벽을 허무는 방식을 살펴봅니다."
+description: "런던의 Economist Enterprise Physical AI and Robotics Summit에서 Mythic AI의 Taner Ozcelik 회장 겸 CEO가 인메모리 연산과 칩렛으로 폰 노이만 메모리 벽을 깨고 엣지 로보틱스에 10배에서 1000배의 에너지 효율을 가져오는 방법을 설명했다."
 format-detection: "telephone=no"
 hreflang: "ko"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "피지컬 AI는 700W짜리 데이터센터 GPU로는 확장할 수 없다. Economist Enterprise Physical AI and Robotics Summit에서 Mythic AI의 Taner Ozcelik 회장 겸 CEO는 인메모리 연산과 칩렛의 모듈성이 폰 노이만 메모리 벽을 무너뜨리고 물리적 엣지에서 생물 수준의 효율을 실현하는 방법을 보여 주었다."
 last_reviewed: "2026-10-13"
-seo_title: "인메모리 연산과 칩렛, 무어 이후의 엣지 로봇"
 ---
 
 반세기 넘게 컴퓨팅의 발전은 무어의 법칙을 따랐다. 18개월에서 24개월마다 실리콘 위에 두 배의 트랜지스터를 집어넣는다는 법칙이다. 그러나 피지컬 AI와 자율 로보틱스라는 새로운 영역에서 무어의 법칙은 열역학 법칙과 충돌했다. 자율 드론, 사족 보행 로봇, 수술용 매니퓰레이터, 자율주행차는 700와트급 서버용 GPU나 냉각탑을 싣고 다닐 수 없다. 2026년 10월 13일 런던에서 열린 Economist Enterprise Physical AI and Robotics Summit에서 Mythic AI의 회장 겸 최고경영자 Taner Ozcelik은 Kenneth Cukier와 대담하며 이 교착 상태를 깨는 데 필요한 아키텍처 혁명, 곧 아날로그 컴퓨트 인 메모리(CIM)와 모듈형 칩렛을 통해 무어의 법칙 너머로 나아가는 길을 살펴보았다.

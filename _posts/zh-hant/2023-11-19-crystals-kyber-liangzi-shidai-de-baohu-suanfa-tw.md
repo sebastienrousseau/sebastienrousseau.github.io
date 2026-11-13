@@ -8,7 +8,6 @@ locale: "zh_TW"
 banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp"
 banner_alt: "AI、人工智慧概念、3D 渲染、概念影象"
 keywords: "CRYSTALS-Kyber, 後量子密碼學, KEM, LWE, 格密碼學, NIST, Kyber512, Kyber768, Kyber1024, 銀行業"
-seo_title: "CRYSTALS-Kyber 詳解：量子時代的金鑰封裝"
 ---
 
 ![AI、人工智慧概念、3D 渲染、概念影象](https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp).class=\"img-fluid clearfix\"

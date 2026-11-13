@@ -1,14 +1,13 @@
 ---
 title: "Google Gemma: transformar el desarrollo de la IA de código abierto"
 subtitle: "Una mirada desde dentro a las capacidades, las contribuciones de código abierto y lo que viene"
-description: "Qué es Google Gemma: una familia de modelos abiertos de Google para un desarrollo de IA accesible y ético, en entornos personales y empresariales."
+description: "Descubra el modelo Gemma de Google: un proyecto de código abierto que propone soluciones de IA ética para uso personal y empresarial."
 date: "February 26, 2024"
 language: "es-ES"
 locale: "es_ES"
 banner: "https://cloudcdn.pro/stocks/images/ai-ship.webp"
 banner_alt: "Nave futurista azul con neones"
 keywords: "Google Gemma, modelo de IA de código abierto, arquitectura técnica Gemma, Gemma 2B 7B, IA ética, integración IA macOS, soluciones IA para empresa, IA conversacional, análisis de datos IA, IA para dispositivos edge"
-seo_title: "Google Gemma: modelos de IA abiertos y un desarrollo ético"
 ---
 
 ## El modelo de IA de código abierto revolucionario de Google para un ML accesible y ético

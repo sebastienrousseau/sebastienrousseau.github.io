@@ -1,7 +1,7 @@
 ---
 title: "블록체인 배후의 기술 이해하기"
 subtitle: "암호, 합의, 네트워크 계층을 기술적으로 분해하다"
-description: "블록체인 기술 입문: 암호학적 해시 체인, 머클 트리, 분산 합의의 원리와 함께, 이더리움이 스마트 계약 플랫폼을 더한 방식까지 차근차근 설명합니다."
+description: "블록체인을 구성하는 암호·네트워크·합의 각 계층을 기술적으로 분해하여 해설합니다."
 date: "January 9, 2018"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "터미널 화면 위의 코드"
 keywords: "블록체인, 암호, 해시, 디지털 서명, 머클 트리, 합의, 작업 증명, P2P 네트워크"
 last_reviewed: "2026-05-16"
-seo_title: "블록체인 기술: 해시 체인, 머클 트리, 합의"
 ---
 
 ![터미널 화면 위의 코드](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp"
 banner_alt: "暗号鍵を表すマトリックスのコード"
 keywords: "CRYSTALS-Kyber, 量子耐性, 鍵カプセル化, KEM, NIST PQC, 格子ベース暗号, ML-KEM, FIPS 203"
 last_reviewed: "2026-05-11"
-seo_title: "CRYSTALS-Kyber 解説：量子時代の鍵カプセル化"
 ---
 
 ![暗号鍵を表すマトリックスのコード](https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo.webp).class=\"img-fluid clearfix\"

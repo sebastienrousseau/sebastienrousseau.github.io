@@ -1,7 +1,7 @@
 ---
 title: "ISO 20022 pacs.008 구조화 주소: 2026년 11월 마감일"
 subtitle: "2026년 11월 22일부터 SWIFT 결제는 구조화 주소를 필수로 합니다"
-description: "2026년 11월부터 SWIFT CBPR+는 ISO 20022 pacs.008 메시지에 구조화 주소를 요구합니다. 필요한 필드와, 은행들이 아직 얼마나 남았는지 정리합니다."
+description: "이행이 지연된 은행은 거부 및 운영상의 마찰에 직면하게 됩니다. 본 분석은 마감일과 시정 우선순위를 제시합니다."
 date: "May 12, 2026"
 language: "ko-KR"
 locale: "ko_KR"
@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "SWIFT 결제 메시지 구조화"
 keywords: "ISO 20022, pacs.008, 구조화 주소, SWIFT CBPR+, 2026년 11월, 결제 이행, 도매 결제"
 last_reviewed: "2026-05-16"
-seo_title: "ISO 20022 pacs.008 주소 마감: 2026년 11월"
 ---
 
 ## ISO 20022 pacs.008 구조화 주소: 2026년 11월 마감일

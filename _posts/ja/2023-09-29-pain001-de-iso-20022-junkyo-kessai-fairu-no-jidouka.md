@@ -1,7 +1,7 @@
 ---
 title: "pain001 による ISO 20022 準拠決済ファイル作成の自動化"
 subtitle: "CSV または SQLite から準拠した pain.001 メッセージを生成する Python ライブラリ"
-description: "Python ライブラリ pain001 が CSV や SQLite から ISO 20022 pain.001 決済ファイルを作る方法とメッセージ構造。"
+description: "pain001 は ISO 20022 pain.001 決済ファイル作成を自動化する Python ライブラリで、MT/MX から構造化メッセージへの世界的な移行のために構築されています。"
 date: "September 29, 2023"
 language: "ja-JP"
 locale: "ja_JP"
@@ -9,7 +9,6 @@ banner: "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.
 banner_alt: "ターミナル上の構造化されたデータの行"
 keywords: "ISO 20022, pain.001, ISO 20022 移行, SWIFT, SEPA, 決済自動化, Python, オープンソース, 国際送金"
 last_reviewed: "2026-05-11"
-seo_title: "pain001：ISO 20022 決済ファイル作成を自動化"
 ---
 
 ![ターミナル上の構造化されたデータの行](https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp).class=\"img-fluid clearfix\"

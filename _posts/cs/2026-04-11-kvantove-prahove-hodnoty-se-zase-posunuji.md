@@ -1,14 +1,13 @@
 ---
 title: "Kvantové prahové hodnoty se zase posunují"
 subtitle: "Nový článek naznačuje, že Shorův algoritmus by mohl běžet na pouhých 10 000 qubitech. Důsledky pro kryptografii je těžké přehlédnout."
-description: "Nová studie naznačuje, že Shorův algoritmus by mohl běžet na pouhých 10 000 qubitech. Co to znamená pro kvantové riziko pro RSA, ECC a migraci na PQC."
+description: "Shorův algoritmus může nyní běžet na pouhých 10 000 qubitech. RSA, ECC i časový plán postkvantové migrace se posouvají dopředu. Zde je proč."
 date: "April 11, 2026"
 language: "cs-CZ"
 locale: "cs_CZ"
 banner: "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp"
 banner_alt: "Diagram prahové hodnoty qubitů pro Shorův algoritmus. Deska plošných spojů kvantového počítače s modrými světelnými vzory"
 keywords: "kvantové počítání, Shorův algoritmus, 10000 qubitů, postkvantová kryptografie, RSA-2048, kryptografie eliptických křivek, qubity z neutrálních atomů, kvantová korekce chyb, kryptografická agilita, časová osa kvantové hrozby"
-seo_title: "Kvantové prahy klesají: Shorův algoritmus s 10 000 qubity"
 ---
 
 ## Kvantové prahové hodnoty se zase posunují

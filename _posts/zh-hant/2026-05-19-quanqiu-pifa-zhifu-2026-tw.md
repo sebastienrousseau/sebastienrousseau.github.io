@@ -1,7 +1,7 @@
 ---
 title: "2026 年全球大額支付：ISO 20022、RTGS 翻新與互通性的經濟學"
 subtitle: "大額支付已成為一項經濟政策槓桿：ISO 20022、RTGS 營運時間、非銀行准入、互聯互通、DLT 結算試點以及 G20 路線圖，正圍繞全球流動性流動的成本而趨於匯流。"
-description: "2026 年大額支付：ISO 20022 協調、RTGS 翻新、結算窗口延長、非銀行機構准入與 DLT 試點，正在如何從根本上改變互通性的經濟學。"
+description: "2026 年全球大額支付正受到 ISO 20022 協調、RTGS 翻新、結算窗口延長、非銀行准入、API 治理、DLT 試點以及跨境支付分裂的重塑。經濟議題在於互通性，而不僅是訊息傳遞。"
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "2026 年全球大額支付架構圖——展示 ISO 20022、RTGS 翻新、跨境走廊、流動性窗口及 DLT 結算試點"
 banner_height: "571"

@@ -1,14 +1,13 @@
 ---
 title: "Sécuriser le registre : guide à l'usage des conseils d'administration sur la migration post-quantique en banque de financement"
 subtitle: "Le risque quantique est passé de la curiosité académique à un mandat réglementaire actif. La feuille de route du G7, BIS Project Leap et les calendriers UE/UK/Australie posent désormais la question non plus du quand, mais du comment."
-description: "Guide pour conseils d'administration sur la migration post-quantique en finance : feuille de route du G7, calendriers UE, UK, Australie et BIS Project Leap."
+description: "Le risque quantique est passé de la curiosité académique au mandat réglementaire. Avec la feuille de route du G7 de janvier 2026, des calendriers UE, UK et australien désormais clarifiés, et BIS Project Leap qui a fait la démonstration de la faisabilité en système de paiement réel, la question pour les conseils d'administration n'est plus celle de la migration, mais celle des délais."
 date: "May 14, 2026"
 language: "fr"
 locale: "fr_FR"
 banner: "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp"
 banner_alt: "Porte de coffre ouverte baignée de lumière dorée — métaphore visuelle de la protection cryptographique des archives financières"
 keywords: "cryptographie post-quantique, ML-KEM, ML-DSA, FIPS 203, FIPS 204, BIS Project Leap, G7 CEG, NCSC, ANSSI, BSI, ASD, CNSA 2.0, agilité cryptographique, banque de financement, paiements wholesale"
-seo_title: "Post-quantique : guide de migration pour le conseil"
 ---
 
 Le risque quantique est passé de la curiosité académique au mandat réglementaire actif. Avec la feuille de route du G7 publiée en janvier 2026, les calendriers de l'UE, du Royaume-Uni et de l'Australie désormais clarifiés, et BIS Project Leap qui a fait la démonstration de la faisabilité en système de paiement réel, la question pour les conseils d'administration n'est plus de savoir s'il faut migrer — c'est de savoir si la migration peut être achevée avant que la durée de conservation cryptographique des données d'aujourd'hui n'expire.

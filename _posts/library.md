@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jul 16, 2026"
-description: "The developer library from Sebastien Rousseau: curated topics, video playlists and open-source projects on AI in banking, ISO 20022 and post-quantum security."
+description: "The developer library from Sebastien Rousseau: curated banking topics, video playlists and open-source projects covering AI in banking, ISO 20022 payments and post-quantum security."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -96,7 +96,7 @@ site_last_updated: "2024-03-08"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-seo_title: "Developer Library: Banking Topics, Playlists and Projects"
+
 ---
 
 

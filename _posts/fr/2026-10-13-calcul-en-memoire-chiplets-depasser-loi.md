@@ -10,7 +10,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "October 13, 2026"
-description: "Comment Taner Ozcelik (Mythic AI) voit le calcul en mémoire et les chiplets briser le mur mémoire pour la robotique edge, la défense et l'automobile."
+description: "Au sommet Physical AI and Robotics d'Economist Enterprise, Taner Ozcelik (Mythic AI) a montré comment le calcul en mémoire et les chiplets brisent le mur de la mémoire."
 format-detection: "telephone=no"
 hreflang: "fr"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -84,7 +84,6 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 excerpt: "L'IA physique ne peut pas passer à l'échelle sur des GPU de centre de données de 700 W. Au sommet Physical AI and Robotics d'Economist Enterprise, Taner Ozcelik, président et PDG de Mythic AI, a montré comment le calcul en mémoire et la modularité des chiplets abattent le mur de la mémoire de Von Neumann pour offrir une efficacité digne du vivant à la périphérie physique."
 last_reviewed: "2026-10-13"
-seo_title: "Calcul en mémoire et chiplets pour la robotique edge"
 ---
 
 Pendant plus d'un demi-siècle, le progrès informatique a obéi à la loi de Moore : doubler le nombre de transistors gravés sur le silicium tous les dix-huit à vingt-quatre mois. Mais dans le domaine émergent de l'IA physique et de la robotique autonome, la loi de Moore s'est heurtée aux lois de la thermodynamique. Drones autonomes, robots quadrupèdes, manipulateurs chirurgicaux et véhicules autonomes ne peuvent pas embarquer des GPU de classe serveur de 700 watts ni des tours de refroidissement. Au sommet Physical AI and Robotics d'Economist Enterprise, à Londres, le 13 octobre 2026, Taner Ozcelik, président-directeur général de Mythic AI, a rejoint Kenneth Cukier pour une conversation au coin du feu consacrée à la révolution architecturale nécessaire pour sortir de cette impasse : dépasser la loi de Moore grâce au calcul analogique en mémoire (CIM) et aux chiplets modulaires.

@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Jan 09, 2018"
-description: "An introduction to blockchain technology: cryptographic hash chains, Merkle trees, distributed consensus, and how Ethereum added a smart contract platform."
+description: "A technical introduction to how blockchain works: cryptographic hash chains, Merkle trees, distributed consensus, and why Ethereum's programmable layer transformed a payments ledger into a platform for smart contracts and tokenised assets."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -98,7 +98,6 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "Blockchain is an append-only ledger secured by cryptographic hash chains and distributed consensus — a design that makes tampering computationally expensive and auditable by anyone. Ethereum extended this foundation with a programmable execution layer, turning a simple payments record into a platform for smart contracts, tokens, and decentralised finance."
 last_reviewed: "2026-05-24"
-seo_title: "Blockchain Technology: Hash Chains, Merkle Trees, Consensus"
 ---
 
 

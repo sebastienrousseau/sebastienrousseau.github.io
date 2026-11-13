@@ -98,7 +98,6 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "V roce 2023 průnik umělé inteligence (AI) a kvantových výpočtů (QC) zásadně ovlivnil bankovní a finanční sektor. Tyto technologie proměnily způsob, jakým…"
 last_reviewed: "2026-05-11"
-seo_title: "AI v bankovnictví: stav AI a kvantových výpočtů v roce 2023"
 ---
 
 

@@ -166,8 +166,8 @@
       "<a class=pill href=\"/ar/articles/index.html\">اقرأ أحدث الأبحاث</a>"
     ],
     [
-      "<a class=\"(pill(?: ghost)?)\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
-      "<a class=\"\\1\" href=\"/ar/contact/index.html\">تواصل معي</a>"
+      "<a class=\"pill(?: ghost)?\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/ar/contact/index.html\">تواصل معي</a>"
     ],
     [
       "href=\"?/papers/index\\.html\"?>Read the paper</a>",
@@ -356,50 +356,6 @@
     [
       ">Explore the ISO 20022 libraries <span",
       ">استكشف مكتبات ISO 20022 <span"
-    ],
-    [
-      ">Payments infrastructure banks can trust in the quantum era\\.</h1>",
-      ">بنية تحتية للمدفوعات تثق بها البنوك في عصر الحوسبة الكمومية.</h1>"
-    ],
-    [
-      ">I lead wholesale payments API products at HSBC and build open-source ISO 20022 and post-quantum tooling that banks and fintechs can inspect, test and reuse\\.</p>",
-      ">أقود منتجات واجهات برمجة التطبيقات لمدفوعات الجملة في HSBC، وأطوّر أدوات مفتوحة المصدر لمعيار ISO 20022 وللتشفير ما بعد الكمومي، يمكن للبنوك وشركات التكنولوجيا المالية فحصها واختبارها وإعادة استخدامها.</p>"
-    ],
-    [
-      ">Read the research</a>",
-      ">اقرأ الأبحاث</a>"
-    ],
-    [
-      ">EPAA white-paper contributor · Fellow, Institution of Analysts and Programmers</p>",
-      ">مساهم في الورقة البيضاء لـ EPAA · زميل في معهد المحللين والمبرمجين (Institution of Analysts and Programmers)</p>"
-    ],
-    [
-      ">Payments and digital products, built at:</p>",
-      ">منتجات المدفوعات والمنتجات الرقمية، طُوّرت في:</p>"
-    ],
-    [
-      "<p class=\"feat-eyebrow\">Recognition</p>",
-      "<p class=\"feat-eyebrow\">التقدير</p>"
-    ],
-    [
-      ">Recognition and featured work\\.</h2>",
-      ">التقدير والأعمال المميزة.</h2>"
-    ],
-    [
-      "aria-label=\"Recognition\"",
-      "aria-label=\"التقدير\""
-    ],
-    [
-      "<li>Fellow of the Institution of Analysts and Programmers \\(FIAP\\)</li>",
-      "<li>زميل في معهد المحللين والمبرمجين (FIAP)</li>"
-    ],
-    [
-      ">Working on payments, quantum-safety or ISO 20022\\?</h2>",
-      ">هل تعمل على المدفوعات أو الأمان الكمومي أو ISO 20022؟</h2>"
-    ],
-    [
-      ">Tell me what you are building\\. The typical first response is within 48 hours\\.</p>",
-      ">أخبرني بما تعمل على بنائه. عادةً ما يصلك الرد الأول خلال 48 ساعة.</p>"
     ]
   ]
 }

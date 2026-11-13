@@ -1,14 +1,13 @@
 ---
 title: "用 DTT 庫掌握 Rust 中的日期與時間"
 subtitle: "DateTime（DTT）是一個用於解析、驗證、操作和格式化日期與時間的 Rust 庫——高精度、廣泛功能"
-description: "DateTime（DTT）是一個用於解析、驗證、操作與格式化日期和時間的 Rust 函式庫。本文介紹它能做什麼，以及如何在你自己的專案中實際使用它。"
+description: "DateTime（DTT）是一個高精度的 Rust 日期與時間庫，簡化時區、解析、驗證與格式化等操作。"
 date: "December 4, 2023"
 language: "zh-Hant"
 locale: "zh_TW"
 banner: "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg"
 banner_alt: "DateTime（DTT），日期與時間操作的必備工具集"
 keywords: "DTT, DateTime, Rust, 日期時間, 時區, 解析, 驗證, 格式化, Cargo, 開源"
-seo_title: "DateTime（DTT）：Rust 日期與時間管理詳解"
 ---
 
 [![DateTime（DTT），日期與時間操作的必備工具集](https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg).class=\"img-fluid clearfix\"][01]

@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: ""
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Apr 01, 2024"
-description: "OpenVoice from MIT, Tsinghua and MyShell offers instant voice cloning with control of tone, accent and emotion. Learn how it works and the trade-offs to know."
+description: "OpenVoice from MIT, Tsinghua and MyShell delivers production-grade voice cloning with fine-grained tone, accent and emotion control — and the trade-offs worth knowing."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -106,7 +106,6 @@ site_software: "Static Site Generator, Rust"
 
 excerpt: "OpenVoice offers significant advantages over existing tools. It allows for flexible voice style control beyond tone and timbre. It also has zero-shot cross-lingual capabilities without extensive…"
 last_reviewed: "2026-05-11"
-seo_title: "OpenVoice Explained: Open-Source Voice Cloning Technology"
 ---
 
 

@@ -96,7 +96,7 @@ site_last_updated: "2026-07-03"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-seo_title: "Search sebastienrousseau.com: Private, In-Browser Search"
+
 ---
 
 Search runs entirely in your browser over a pre-built index — nothing you type leaves the page, and there is no backend to query. Press <kbd>⌘K</kbd> (macOS) or <kbd>Ctrl-K</kbd> (Windows/Linux) anywhere on the site to open the same search as a command palette.
