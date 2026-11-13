@@ -10,7 +10,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-## [0.0.39] - Unreleased
+## [0.0.40] - Unreleased
+
+A drift check that waits for the deploy in flight.
+
+### Fixed
+
+- **`deploy-drift` passes while main's deploy is in flight**: the hourly check failed whenever production was behind main, but a `build-audit` run takes 1.5 hours or more to deploy, so every content merge turned it red at least once (twice on 13 November, after #528) and its advice to re-run the workflow was wrong. It now passes with a notice while main's own `build-audit` run is queued or running, and still fails on a rollback or once that run ends without deploying.
+
+---
+
+## [0.0.39] - 2026-11-13
 
 Release notes that carry reverts, and two `basic-ftp` advisories closed.
 
