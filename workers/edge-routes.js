@@ -4,8 +4,9 @@
 /**
  * Edge routing helpers for the lang-router Worker: which paths are HTML
  * pages, how those pages are fetched from origin (edge-cached), and the
- * renamed-URL 301 map. lang-router.js imports and re-exports everything
- * here; the split only keeps that file under the 500-line ceiling.
+ * renamed-URL 301s, including the Shokunin rebrand slugs. lang-router.js
+ * imports these and re-exports the public ones; the split only keeps that
+ * file under the 500-line ceiling.
  */
 
 /**
@@ -108,6 +109,55 @@ export function tryRenamedUrlRedirect(url, map) {
   const redirected = new URL(url);
   redirected.pathname = target;
   return Response.redirect(redirected.toString(), 301);
+}
+
+// Permanent slug redirects shipped with the Shokunin → Static Site
+// Generator rebrand. Returns a 301 Response when the URL matches the
+// rename patterns, or null when it doesn't. Preserves SEO continuity
+// for incoming links that still point at the old slugs.
+//
+// Two pattern families are handled:
+//   * 2023-10-09 article: ``/(<lang>/)?2023-10-09-shokunin-<rest>``
+//     redirects to the same path with the ``shokunin-`` segment
+//     dropped (matches the rename in PR #N).
+//   * ``made-with-ssg`` credit page + its 27 localized slug
+//     variants (each suffixed with ``-shokunin``) redirect to the
+//     ``-static-site-generator`` equivalent.
+export function trySlugRedirects(url) {
+  const path = url.pathname;
+  // 2023-10-09 article rename — strip the literal ``shokunin-`` token
+  // that follows the date in every locale's filename.
+  const ARTICLE_RE = /^(\/(?:[a-z]{2}(?:-[a-z]+)?\/)?)2023-10-09-shokunin-/;
+  if (ARTICLE_RE.test(path)) {
+    const redirected = new URL(url);
+    redirected.pathname = path.replace("2023-10-09-shokunin-", "2023-10-09-");
+    return Response.redirect(redirected.toString(), 301);
+  }
+  // ``made-with-ssg`` (EN) and any localized variant ending in
+  // ``-shokunin`` or ``-shokunin/`` (e.g. ``concu-avec-shokunin``,
+  // ``gemaakt-met-shokunin``, ``hecho-con-shokunin``) redirect to
+  // the ``-static-site-generator`` form.
+  if (path === "/made-with-ssg" || path === "/made-with-ssg/") {
+    const redirected = new URL(url);
+    redirected.pathname = "/made-with-static-site-generator/";
+    return Response.redirect(redirected.toString(), 301);
+  }
+  const LOCALE_CREDIT_RE = /^(\/[a-z]{2}(?:-[a-z]+)?\/)([^/]+)-shokunin\/?$/;
+  const m = path.match(LOCALE_CREDIT_RE);
+  if (m) {
+    const redirected = new URL(url);
+    redirected.pathname = `${m[1]}${m[2]}-static-site-generator/`;
+    return Response.redirect(redirected.toString(), 301);
+  }
+  return null;
+}
+
+// A rebranded slug whose stripped form was renamed again (the Arabic
+// 2023-10-09 article) is a key in redirects.json. Follow that entry so the
+// client gets one 301 to the final URL, not shokunin -> stripped -> renamed.
+export async function resolveRenamed(redirect, env) {
+  const target = new URL(redirect.headers.get('location'));
+  return tryRenamedUrlRedirect(target, await getRedirectMap(env)) || redirect;
 }
 
 /** Fetch from origin, asking the edge to cache the response if it is a page. */

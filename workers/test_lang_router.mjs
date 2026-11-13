@@ -939,6 +939,52 @@ test('handler: renamed URL is a 301, not a 302, even with a locale preference', 
   _resetRedirectMapCache();
 });
 
+// The Shokunin rebrand strips `shokunin-` from the 2023-10-09 article. Where
+// that article was renamed again (the Arabic slug), the stripped path is
+// itself a key in redirects.json, and answering it alone made two hops:
+// shokunin -> stripped -> renamed. deploy-drift's live check caught it.
+const SHOKUNIN_AR = '/ar/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/';
+const STRIPPED_AR = '/ar/2023-10-09-the-fastest-rust-based-static-site-generator/';
+const RENAMED_AR = '/ar/2023-10-09-asra-muwallid-lilmawaqi-alsakina-rust/';
+
+function shokuninEnv() {
+  return {
+    ASSETS: {
+      fetch: async (req) => (new URL(req.url).pathname === '/redirects.json'
+        ? new Response(JSON.stringify({ version: 1, redirects: { [STRIPPED_AR]: RENAMED_AR } }))
+        : new Response('missing', { status: 404 })),
+    },
+  };
+}
+
+test('handler: rebranded slug that was renamed again is one 301 to the final URL', async () => {
+  for (const method of ['GET', 'HEAD']) {
+    _resetRedirectMapCache();
+    resetLog();
+    const res = await handler.fetch(
+      makeRequest(`https://sebastienrousseau.com${SHOKUNIN_AR}?ref=x`, { method }),
+      shokuninEnv(), {},
+    );
+    assert.equal(res.status, 301, method);
+    assert.equal(res.headers.get('location'),
+      `https://sebastienrousseau.com${RENAMED_AR}?ref=x`, method);
+    assert.equal(passThroughLog.length, 0, 'never reaches origin');
+  }
+  _resetRedirectMapCache();
+});
+
+test('handler: rebranded slug not in the map still strips shokunin-', async () => {
+  _resetRedirectMapCache();
+  const path = '/fr/2023-10-09-shokunin-generateur-de-sites-statiques-rust-le-plus-rapide/';
+  const res = await handler.fetch(
+    makeRequest(`https://sebastienrousseau.com${path}`), shokuninEnv(), {},
+  );
+  assert.equal(res.status, 301);
+  assert.equal(res.headers.get('location'),
+    'https://sebastienrousseau.com/fr/2023-10-09-generateur-de-sites-statiques-rust-le-plus-rapide/');
+  _resetRedirectMapCache();
+});
+
 test('handler: /api/event delegates to events handler with API security headers', async () => {
   resetLog();
   const res = await callHandler(makeRequest('https://sebastienrousseau.com/api/event'));
