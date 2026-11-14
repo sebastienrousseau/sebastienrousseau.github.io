@@ -12,7 +12,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [0.0.40] - Unreleased
 
-A drift check that waits for the deploy in flight.
+A drift check that waits for the deploy in flight, and holiday themes for the GitHub profile clock.
+
+### Added
+
+- **The profile clock serves holiday themes**: `/api/clock/hero-<theme>.svg` now reads `assets/holidays.json` from the profile repository and, on a holiday, serves that holiday's hero (`hero-<key>-<theme>.svg`) with the clock set to London time. Holidays that share a day take turns by the London hour. Any problem with the calendar or the holiday hero falls back to the everyday hero, and the response's `X-Profile-Theme` header names what was served. A key is used only if it matches `[a-z0-9-]{1,40}`, nothing from the request reaches an upstream URL, and a request makes at most three edge-cached fetches.
 
 ### Fixed
 
