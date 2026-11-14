@@ -16,7 +16,7 @@
 import { test, before, after } from 'node:test';
 import { strict as assert } from 'node:assert';
 
-import { isClockRoute, londonSeconds, clockCSS, tryClock } from './clock.js';
+import { isClockRoute, londonSeconds, londonDay, pickKey, loadCalendar, clockCSS, tryClock } from './clock.js';
 
 const BASE = 'https://sebastienrousseau.com';
 const SVG = '<svg><style>.hand{animation-play-state:paused}/*clock*/</style></svg>';
@@ -110,3 +110,110 @@ for (const [name, stub] of [
     );
   });
 }
+
+// --- Holiday themes -------------------------------------------------------
+
+const RAW = 'https://raw.githubusercontent.com/sebastienrousseau/sebastienrousseau/main/assets/';
+const HOLIDAY_SVG = '<svg><title>Christmas</title><style>/*clock*/</style></svg>';
+const calendar = (days, schema = 1) => JSON.stringify({ schema, tz: 'Europe/London', days });
+
+/** An upstream that serves `files` by name under assets/, 404 otherwise, and records every URL. */
+function serve(files) {
+  const asked = [];
+  upstream = (url) => {
+    asked.push(url);
+    const name = url.slice(RAW.length);
+    return name in files ? new Response(files[name]) : new Response('missing', { status: 404 });
+  };
+  return asked;
+}
+
+test('londonDay gives the London date and 24-hour hour across the BST change', () => {
+  // Clocks go forward at 01:00 UTC on 29 March 2026.
+  assert.deepEqual(londonDay(new Date(Date.UTC(2026, 2, 29, 0, 30))), { iso: '2026-03-29', hour: 0 });
+  assert.deepEqual(londonDay(new Date(Date.UTC(2026, 2, 29, 1, 30))), { iso: '2026-03-29', hour: 2 });
+  // In winter 23:30 UTC is still the same day; in summer it is already the next.
+  assert.deepEqual(londonDay(new Date(Date.UTC(2026, 11, 24, 23, 30))), { iso: '2026-12-24', hour: 23 });
+  assert.deepEqual(londonDay(new Date(Date.UTC(2026, 6, 31, 23, 30))), { iso: '2026-08-01', hour: 0 });
+});
+
+test('pickKey takes turns by the hour and refuses anything malformed', () => {
+  const cal = { days: { a: ['christmas'], b: ['boxing-day', 'kwanzaa', 'hanukkah'], e: [], bad: ['../x'], n: [7] } };
+  assert.equal(pickKey(cal, 'none', 3), null);
+  assert.equal(pickKey(cal, 'e', 3), null);
+  assert.equal(pickKey(cal, 'bad', 3), null);
+  assert.equal(pickKey(cal, 'n', 3), null);
+  assert.equal(pickKey({ days: { x: 'christmas' } }, 'x', 0), null);
+  assert.equal(pickKey(null, 'a', 0), null);
+  assert.equal(pickKey(cal, 'a', 17), 'christmas');
+  assert.deepEqual([0, 1, 2, 23].map((h) => pickKey(cal, 'b', h)), ['boxing-day', 'kwanzaa', 'hanukkah', 'hanukkah']);
+});
+
+test('loadCalendar returns null for an error, a non-JSON page or another schema', async () => {
+  upstream = () => new Response('oops', { status: 500 });
+  assert.equal(await loadCalendar(), null);
+  upstream = () => new Response('<html>not json</html>');
+  assert.equal(await loadCalendar(), null);
+  upstream = () => new Response(calendar({}, 2));
+  assert.equal(await loadCalendar(), null);
+  upstream = () => Promise.reject(new Error('down'));
+  assert.equal(await loadCalendar(), null);
+});
+
+// 2026-12-25 10:00 UTC is 10:00 in London (GMT).
+const XMAS = new Date(Date.UTC(2026, 11, 25, 10, 0));
+
+test('tryClock serves the holiday hero with the clock set and says so', async () => {
+  const asked = serve({ 'holidays.json': calendar({ '2026-12-25': ['christmas'] }), 'hero-christmas-dark.svg': HOLIDAY_SVG });
+  const res = await tryClock(get('/api/clock/hero-dark.svg'), () => XMAS);
+  assert.equal(res.status, 200);
+  assert.equal(res.headers.get('X-Profile-Theme'), 'christmas');
+  const body = await res.text();
+  assert.match(body, /<title>Christmas<\/title>/);
+  assert.match(body, /\.hh\{animation-delay:-36000\.000s\}/);
+  assert.deepEqual(asked, [`${RAW}holidays.json`, `${RAW}hero-christmas-dark.svg`]);
+});
+
+test('tryClock alternates overlapping holidays by the London hour', async () => {
+  serve({
+    'holidays.json': calendar({ '2026-12-26': ['boxing-day', 'kwanzaa'] }),
+    'hero-boxing-day-light.svg': HOLIDAY_SVG,
+    'hero-kwanzaa-light.svg': HOLIDAY_SVG,
+  });
+  const at = (h) => () => new Date(Date.UTC(2026, 11, 26, h, 0));
+  const themes = [];
+  for (const h of [9, 10, 11]) themes.push((await tryClock(get('/api/clock/hero-light.svg'), at(h))).headers.get('X-Profile-Theme'));
+  assert.deepEqual(themes, ['kwanzaa', 'boxing-day', 'kwanzaa']);
+});
+
+for (const [name, files] of [
+  ['the holiday hero is missing', { 'holidays.json': calendar({ '2026-12-25': ['christmas'] }), 'hero-dark.svg': SVG }],
+  ['the holiday hero lacks the marker', { 'holidays.json': calendar({ '2026-12-25': ['christmas'] }), 'hero-christmas-dark.svg': '<svg/>', 'hero-dark.svg': SVG }],
+  ['the calendar is not JSON', { 'holidays.json': '<html/>', 'hero-dark.svg': SVG }],
+  ['the calendar is schema 2', { 'holidays.json': calendar({ '2026-12-25': ['christmas'] }, 2), 'hero-dark.svg': SVG }],
+  ['the calendar is missing', { 'hero-dark.svg': SVG }],
+  ['today is not a holiday', { 'holidays.json': calendar({ '2026-12-24': ['christmas'] }), 'hero-dark.svg': SVG }],
+]) {
+  test(`tryClock serves the everyday hero when ${name}`, async () => {
+    serve(files);
+    const res = await tryClock(get('/api/clock/hero-dark.svg'), () => XMAS);
+    assert.equal(res.status, 200);
+    assert.equal(res.headers.get('X-Profile-Theme'), 'everyday');
+    assert.ok((await res.text()).includes('animation-play-state:running'));
+  });
+}
+
+test('tryClock still 302s when the everyday hero fails too', async () => {
+  serve({ 'holidays.json': calendar({ '2026-12-25': ['christmas'] }) });
+  const res = await tryClock(get('/api/clock/hero-light.svg'), () => XMAS);
+  assert.equal(res.status, 302);
+  assert.equal(res.headers.get('Location'), `${RAW}hero-light.svg`);
+});
+
+test('nothing from the request reaches an upstream URL', async () => {
+  const asked = serve({ 'holidays.json': calendar({ '2026-12-25': ['christmas'] }), 'hero-christmas-light.svg': HOLIDAY_SVG });
+  const res = await tryClock(get('/api/clock/hero-light.svg?key=../../evil&x=1#frag'), () => XMAS);
+  assert.equal(res.status, 200);
+  assert.deepEqual(asked, [`${RAW}holidays.json`, `${RAW}hero-christmas-light.svg`]);
+  assert.ok(asked.every((url) => !url.includes('evil') && !url.includes('?')));
+});
