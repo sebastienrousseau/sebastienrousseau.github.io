@@ -1,7 +1,7 @@
 # Alerts when main has commits that never reached production.
 #
 # The deploy lives inside ci.yml's finalise job, which is skipped unless
-# every pa11y shard is green. That is the right gate — but it fails
+# every pa11y shard is green. That is the right gate, but it fails
 # silently: the PR goes green, the merge button works, and nothing says
 # the site did not move. On 2026-07-30 a hung pa11y shard skipped the
 # deploy, and three further articles merged before anyone noticed
@@ -14,8 +14,9 @@ name: deploy-drift
 
 on:
   schedule:
-    # Hourly. Cheap (one API call) and well inside a normal CI cycle, so
-    # a legitimately in-flight deploy is not reported as drift.
+    # Hourly. Cheap (a few API calls). A full build-audit run takes 1.5h
+    # or more, so a deploy is often still in flight here; the comparison
+    # below passes while main's own build is running.
     - cron: "17 * * * *"
   workflow_dispatch:
 
@@ -79,7 +80,7 @@ jobs:
             -q '.[0].sha // ""')
 
           if [ -z "$deployed" ]; then
-            echo "::warning::No github-pages deployment found — nothing to compare."
+            echo "::warning::No github-pages deployment found, nothing to compare."
             exit 0
           fi
 
@@ -118,6 +119,19 @@ jobs:
 
           if [ "$behind" = "0" ]; then
             echo "Ahead only by commits that do not affect published output."
+            exit 0
+          fi
+
+          # A merge starts a build-audit run that deploys main's HEAD about
+          # 1.5h later. While that run is queued or running, the gap is the
+          # deploy in flight, not drift; a failed or skipped deploy shows up
+          # on the first hourly check after it ends.
+          building=$(gh api \
+            "repos/${REPO}/actions/workflows/ci.yml/runs?branch=main&event=push&head_sha=${head_sha}&per_page=5" \
+            -q '[.workflow_runs[] | select(.status != "completed")] | length')
+          if [ "$building" != "0" ]; then
+            echo "::notice::Production is $behind content commit(s) behind main;" \
+              "main's build-audit run is still in flight and deploys it."
             exit 0
           fi
 
