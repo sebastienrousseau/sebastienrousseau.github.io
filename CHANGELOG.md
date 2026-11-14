@@ -10,7 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-## [0.0.40] - Unreleased
+## [0.0.40] - 2026-11-14
 
 A drift check that waits for the deploy in flight, and holiday themes for the GitHub profile clock.
 
