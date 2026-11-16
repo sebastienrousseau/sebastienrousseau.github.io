@@ -40,7 +40,7 @@ env:
   # Bump in a reviewed PR when ssg-version-check.yml opens its issue. Every
   # workflow that installs ssg and mise.toml must carry the same value
   # (tests/unit/test_ssg_pin_single_source.py).
-  SSG_VERSION: "0.0.75"
+  SSG_VERSION: "0.0.76"
 
 jobs:
   # =========================================================================

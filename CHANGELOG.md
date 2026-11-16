@@ -10,6 +10,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [Unreleased]
+
+### Changed
+
+- **ssg is pinned to 0.0.76**: crates.io publishes 0.0.76 while every workflow, `mise.toml` and the README setup line installed 0.0.75. The pin moves in one change so an upstream release never alters build output in the middle of unrelated PRs, and `./build.sh` passes on 0.0.76 locally (#532).
+
+---
+
 ## [0.0.40] - 2026-11-14
 
 A drift check that waits for the deploy in flight, and holiday themes for the GitHub profile clock.

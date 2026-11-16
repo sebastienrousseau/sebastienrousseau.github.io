@@ -20,7 +20,7 @@ env:
   # Same exact pin as ci.yml (tests/unit/test_ssg_pin_single_source.py).
   # build.sh passes --no-tag-pages, which needs >= 0.0.52. The version
   # assertion lives in .github/actions/setup-ssg.
-  SSG_VERSION: "0.0.75"
+  SSG_VERSION: "0.0.76"
 
 jobs:
   diff:
