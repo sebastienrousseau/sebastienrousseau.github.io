@@ -53,6 +53,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "libraries, and migration playbooks for financial-services security teams."
         ),
         "slugs": [
+            "2026-11-16-quantum-safe-readiness-epaa",
             "2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude",
             "2026-09-15-two-nuclear-clocks-vienna-and-beijing-haven-t-beaten-atomic-clocks-yet",
             "2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026",

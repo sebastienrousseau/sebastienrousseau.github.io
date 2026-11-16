@@ -228,6 +228,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-11-16-quantum-safe-readiness-epaa/index.html" title="From Awareness to Action: What Quantum-Safe Readiness Requires Now" aria-label="From Awareness to Action: What Quantum-Safe Readiness Requires Now">
+<img alt="Glowing violet and teal circuit traces running across a dark board, like data moving along a network of connections" src="https://cloudcdn.pro/stocks/images/getty-images-uEGPW7Q6Uhc.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Payments · Post-Quantum Cryptography · EPAA</span>
+<h3><a href="/2026-11-16-quantum-safe-readiness-epaa/index.html">From Awareness to Action: What Quantum-Safe Readiness Requires Now</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-16">November 16, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> Regulators in Singapore and Hong Kong are setting expectations for quantum-safe readiness, and Hong Kong's banking sector scored 2.3 out of 10 on the Quantum Preparedness Index. EPAA's new white paper argues that progress...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html" title="Why the FCA Is Regulating AI Without an AI Rulebook" aria-label="Why the FCA Is Regulating AI Without an AI Rulebook">
 <img alt="City of London financial district architecture representing FCA outcomes-based AI regulation and UK financial services governance." src="https://cloudcdn.pro/stocks/images/brett-sayles-7963572.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -251,17 +263,6 @@ site_software: "Static Site Generator, Rust"
 </div>
 </article>
 
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-10-25-agentic-ai-breaks-the-assumption-behind-every-task-exposure-forecast/index.html" title="Agentic AI breaks the assumption behind every task-exposure forecast" aria-label="Agentic AI breaks the assumption behind every task-exposure forecast">
-<img alt="Modern collaborative workspace illustrating agentic AI workflow automation, task exposure and enterprise labour market shifts." src="https://cloudcdn.pro/stocks/images/alesia-kazantceva-XLm6-fPwK5Q.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">AI · Agentic AI · Generative AI</span>
-<h3><a href="/2026-10-25-agentic-ai-breaks-the-assumption-behind-every-task-exposure-forecast/index.html">Agentic AI breaks the assumption behind every task-exposure forecast</a></h3>
-<p class="newsroom-meta"><time datetime="2026-10-25">October 25, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> Task-exposure frameworks treat an occupation as a shell that survives around whatever humans still do. Agentic systems pursue a goal and deliver a finished work product, so the coordination work...</p>
-</div>
-</article>
 
 
 </div>
