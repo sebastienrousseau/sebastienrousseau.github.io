@@ -20,7 +20,7 @@ env:
   # Same exact pin as ci.yml (tests/unit/test_ssg_pin_single_source.py).
   # build.sh passes --no-tag-pages, which needs >= 0.0.52. The version
   # assertion lives in .github/actions/setup-ssg.
-  SSG_VERSION: "0.0.75"
+  SSG_VERSION: "0.0.76"
 
 jobs:
   diff:
@@ -83,6 +83,15 @@ jobs:
         run: |
           git reset --hard ${{ github.event.pull_request.base.sha }}
           git clean -fd
+          # build.sh refuses any ssg but the one the checked-out ci.yml pins,
+          # so a PR that moves the pin cannot build its base with the new
+          # compiler. Install the base's pin into its own root, never into
+          # ~/.cargo/bin, which the cache saves under the HEAD pin's key.
+          base_ssg="$(sed -n 's/^[[:space:]]*SSG_VERSION:[[:space:]]*"\([^"]*\)".*/\1/p' .github/workflows/ci.yml | head -1)"
+          if [ -n "$base_ssg" ] && [ "$base_ssg" != "latest" ] && [ "$base_ssg" != "$SSG_VERSION" ]; then
+            cargo install ssg --locked --version "$base_ssg" --root /tmp/ssg-base
+            export PATH="/tmp/ssg-base/bin:$PATH"
+          fi
           ./build.sh
           rm -rf /tmp/base-public
           mv public /tmp/base-public

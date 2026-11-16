@@ -39,7 +39,7 @@ pandoc = "3.10"
 # stylesheet in @layer legacy). Bump in a reviewed PR when
 # ssg-version-check.yml opens its issue. Must equal SSG_VERSION in ci.yml
 # (tests/unit/test_ssg_pin_single_source.py).
-"cargo:ssg" = "0.0.75"
+"cargo:ssg" = "0.0.76"
 
 [env]
 # Tells Python tooling to honour the repo's pyproject.toml settings.

@@ -150,7 +150,15 @@
     "للجميع": "liljami",
     "وحوكمة": "wahawkamat",
     "القوى": "alquwa",
-    "العاملة": "alamila"
+    "العاملة": "alamila",
+    "الوعي": "alwaei",
+    "الفعل": "alfiel",
+    "تتطلبه": "tatatallabuhu",
+    "الجاهزية": "aljahiziya",
+    "للأمان": "lilaman",
+    "الكمّي": "alkammi",
+    "الكمي": "alkammi",
+    "الآن": "alan"
   },
   "he": {
     "הבנת": "havanat",
@@ -460,7 +468,16 @@
     "エージェンティックAIがすべてのタスク曝露予測の前提を覆す": "ejentikku ai tasuku bakuro yosoku zentei kutsugaesu",
     "の楕円曲線に隠された謎のシードはハッシュ値ではなく": "daen kyokusen nazo shido hasshu",
     "なぜ英国金融行為規制機構": "naze eikoku kinyu koi kisei kiko",
-    "専用のルールブックなしで": "senyo rurubukku nashi kisei"
+    "専用のルールブックなしで": "senyo rurubukku nashi kisei",
+    "認識": "ninshiki",
+    "行動": "kodo",
+    "量子安全": "ryoshi anzen",
+    "量子": "ryoshi",
+    "安全": "anzen",
+    "備え": "sonae",
+    "今": "ima",
+    "求められる": "motomerareru",
+    "こと": "koto"
   },
   "zh-hans": {
     "读懂": "dudong",
@@ -521,7 +538,16 @@
     "智能体AI打破了每一项任务暴露度预测背后的基本假设": "zhinengti ai dapo renwu baoludu yuce jiben jiashe",
     "椭圆曲线背后的神秘种子从来都不是哈希值": "tuoyuan quxian shenmi zhongzi bushi haxizhi",
     "为什么英国金融行为监管局": "weishenme yingguo jinrong xingwei jianguanju",
-    "在没有专门": "meiyou zhuanmen guize shouce jianguan"
+    "在没有专门": "meiyou zhuanmen guize shouce jianguan",
+    "认知": "renzhi",
+    "行动": "xingdong",
+    "量子安全": "liangzi anquan",
+    "量子": "liangzi",
+    "安全": "anquan",
+    "就绪": "jiuxu",
+    "当下": "dangxia",
+    "需要": "xuyao",
+    "什么": "shenme"
   },
   "zh-hant": {
     "讀懂": "dudong",
@@ -582,6 +608,15 @@
     "代理型 AI 打破了所有任務暴露預測背後的預設前提": "dailixing ai dapo renwu baolu yuce yushe qianti",
     "橢圓曲線背後的神祕種子從來就不是雜湊值": "tuoyuan quxian shenmi zhongzi bushi zacouzhi",
     "為何英國金融行為監理總署": "weihe yingguo jinrong xingwei jianli zongshu",
-    "在不制定專屬": "buzhiding zhuanshu fagui shouce jianguan"
+    "在不制定專屬": "buzhiding zhuanshu fagui shouce jianguan",
+    "認知": "renzhi",
+    "行動": "xingdong",
+    "量子安全": "liangzi anquan",
+    "量子": "liangzi",
+    "安全": "anquan",
+    "準備度": "zhunbeidu",
+    "現在": "xianzai",
+    "需要": "xuyao",
+    "什麼": "shenme"
   }
 }
