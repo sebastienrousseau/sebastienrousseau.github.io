@@ -102,4 +102,4 @@ Thanh toán là một mạng. Một ngân hàng có thể triển khai PQC nội
 
 Mối đe doạ lượng tử không phải là khoa học viễn tưởng — đó là một mệnh lệnh kỹ thuật với một lộ trình rõ ràng. Các ngân hàng và các sơ đồ thanh toán không bắt đầu trong năm 2025 sẽ thấy mình mất an toàn vào năm 2035. Thời gian để hành động là bây giờ.
 
-[Đọc sách trắng đầy đủ ⧉](https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf "Sách trắng EPAA")
+[Đọc sách trắng đầy đủ ⧉](https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf "Sách trắng EPAA")

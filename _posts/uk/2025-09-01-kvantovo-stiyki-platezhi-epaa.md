@@ -167,7 +167,7 @@ last_reviewed: "2026-05-11"
 - [[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): захисний алгоритм у квантову епоху][rel2]
 
 [00]: /about/index.html "Про Себастьяна Руссо"
-[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf "White paper EPAA про квантово-безпечні платежі"
+[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf "White paper EPAA про квантово-безпечні платежі"
 [rel1]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Квантовий розподіл ключів: революція в безпеці банківської сфери"
 [rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: захисний алгоритм у квантову епоху"
 

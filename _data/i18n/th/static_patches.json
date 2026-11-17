@@ -231,7 +231,7 @@
     ],
     [
       "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>เอกสารเชิงนโยบาย <em>Quantum-Safe Payments</em> ของ EPAA เปิดให้ดาวน์โหลดสาธารณะโดยไม่มีค่าใช้จ่ายที่ <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> ส่วนรายงานการวิจัยอิสระเรื่องการรู้จำเสียงพูดแบบเรียลไทม์ด้วย OpenAI Whisper และ Metal Performance Shaders นั้นมีลิขสิทธิ์และซื้อแยกได้ในราคา 49.00 $ (ภาษาอังกฤษ, PDF, ประมาณ 95 KB) หนึ่งสำเนาต่อผู้ซื้อหนึ่งราย ไฟล์ที่ดาวน์โหลดมีไว้เพื่อการใช้งานส่วนบุคคลเท่านั้นและห้ามเผยแพร่ต่อ</p></section>"
+      "\\1<section class=\"qa-a\"><p>เอกสารเชิงนโยบาย <em>Quantum-Safe Payments</em> ของ EPAA เปิดให้ดาวน์โหลดสาธารณะโดยไม่มีค่าใช้จ่ายที่ <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> ส่วนรายงานการวิจัยอิสระเรื่องการรู้จำเสียงพูดแบบเรียลไทม์ด้วย OpenAI Whisper และ Metal Performance Shaders นั้นมีลิขสิทธิ์และซื้อแยกได้ในราคา 49.00 $ (ภาษาอังกฤษ, PDF, ประมาณ 95 KB) หนึ่งสำเนาต่อผู้ซื้อหนึ่งราย ไฟล์ที่ดาวน์โหลดมีไว้เพื่อการใช้งานส่วนบุคคลเท่านั้นและห้ามเผยแพร่ต่อ</p></section>"
     ],
     [
       "(<summary[^>]*>Puis-je citer ces documents \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",

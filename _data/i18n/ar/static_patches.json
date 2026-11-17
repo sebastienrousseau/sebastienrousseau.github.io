@@ -231,7 +231,7 @@
     ],
     [
       "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>الورقة البيضاء <em>Quantum-Safe Payments</em> الصادرة عن EPAA متاحة للتنزيل العام مجانًا على <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. أما تقرير البحث المستقل حول التعرف على الكلام في الوقت الفعلي باستخدام OpenAI Whisper و Metal Performance Shaders فهو مرخص ومتاح للشراء الفردي بسعر 49٫00 $ (الإنجليزية، PDF، نحو 95 كيلوبايت). نسخة واحدة لكل مشتري؛ التنزيلات للاستخدام الشخصي فقط وغير قابلة لإعادة التوزيع.</p></section>"
+      "\\1<section class=\"qa-a\"><p>الورقة البيضاء <em>Quantum-Safe Payments</em> الصادرة عن EPAA متاحة للتنزيل العام مجانًا على <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. أما تقرير البحث المستقل حول التعرف على الكلام في الوقت الفعلي باستخدام OpenAI Whisper و Metal Performance Shaders فهو مرخص ومتاح للشراء الفردي بسعر 49٫00 $ (الإنجليزية، PDF، نحو 95 كيلوبايت). نسخة واحدة لكل مشتري؛ التنزيلات للاستخدام الشخصي فقط وغير قابلة لإعادة التوزيع.</p></section>"
     ],
     [
       "(<summary[^>]*>Puis-je citer ces documents \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",

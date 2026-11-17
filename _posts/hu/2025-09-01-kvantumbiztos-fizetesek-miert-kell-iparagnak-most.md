@@ -67,6 +67,6 @@ Sebastien Rousseau Senior Digital Product Manager a HSBC Bank plc-nél, ahol vá
 - [[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): a védelmet nyújtó algoritmus a kvantumkorszakban][rel2]
 
 [00]: /about/index.html "Sebastien Rousseau névjegye"
-[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf "EPAA Quantum-Safe Payments fehér könyv"
+[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf "EPAA Quantum-Safe Payments fehér könyv"
 [rel1]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution: Revolutionising Security in Banking"
 [rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"

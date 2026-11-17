@@ -231,7 +231,7 @@
     ],
     [
       "(<summary[^>]*>क्या श्वेत-पत्र निःशुल्क पढ़े जा सकते हैं\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>EPAA श्वेत-पत्र <em>Quantum-Safe Payments</em> सार्वजनिक रूप से निःशुल्क डाउनलोड हेतु <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> पर उपलब्ध है। OpenAI Whisper और Metal Performance Shaders के साथ वास्तविक-समय वाणी-पहचान पर स्वतंत्र शोध-रिपोर्ट लाइसेंस-आधारित है और 49.00 $ पर व्यक्तिगत-ख़रीद हेतु उपलब्ध है (English, PDF, ~95 KB)। प्रति ख़रीदार एक प्रति; डाउनलोड केवल व्यक्तिगत-उपयोग हेतु, पुनर्वितरण निषिद्ध।</p></section>"
+      "\\1<section class=\"qa-a\"><p>EPAA श्वेत-पत्र <em>Quantum-Safe Payments</em> सार्वजनिक रूप से निःशुल्क डाउनलोड हेतु <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> पर उपलब्ध है। OpenAI Whisper और Metal Performance Shaders के साथ वास्तविक-समय वाणी-पहचान पर स्वतंत्र शोध-रिपोर्ट लाइसेंस-आधारित है और 49.00 $ पर व्यक्तिगत-ख़रीद हेतु उपलब्ध है (English, PDF, ~95 KB)। प्रति ख़रीदार एक प्रति; डाउनलोड केवल व्यक्तिगत-उपयोग हेतु, पुनर्वितरण निषिद्ध।</p></section>"
     ],
     [
       "(<summary[^>]*>क्या मैं इन प्रकाशनों से उद्धरण ले सकता हूँ\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",

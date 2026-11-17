@@ -231,7 +231,7 @@
     ],
     [
       "(<summary[^>]*>হোয়াইট পেপারগুলো কি বিনামূল্যে পড়া যায়\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>EPAA হোয়াইট পেপার <em>Quantum-Safe Payments</em> <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> থেকে বিনামূল্যে ও উন্মুক্তভাবে ডাউনলোড করা যায়। OpenAI Whisper ও Metal Performance Shaders দিয়ে রিয়েল-টাইম বাক্‌-শনাক্তকরণ নিয়ে স্বাধীন গবেষণা প্রতিবেদনটি লাইসেন্সকৃত এবং ৪৯.০০ ডলারে আলাদাভাবে কেনা যায় (ইংরেজি, PDF, ~৯৫ কেবি)। ক্রেতাপ্রতি একটি কপি; ডাউনলোড কেবল ব্যক্তিগত ব্যবহারের জন্য, পুনর্বিতরণযোগ্য নয়।</p></section>"
+      "\\1<section class=\"qa-a\"><p>EPAA হোয়াইট পেপার <em>Quantum-Safe Payments</em> <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> থেকে বিনামূল্যে ও উন্মুক্তভাবে ডাউনলোড করা যায়। OpenAI Whisper ও Metal Performance Shaders দিয়ে রিয়েল-টাইম বাক্‌-শনাক্তকরণ নিয়ে স্বাধীন গবেষণা প্রতিবেদনটি লাইসেন্সকৃত এবং ৪৯.০০ ডলারে আলাদাভাবে কেনা যায় (ইংরেজি, PDF, ~৯৫ কেবি)। ক্রেতাপ্রতি একটি কপি; ডাউনলোড কেবল ব্যক্তিগত ব্যবহারের জন্য, পুনর্বিতরণযোগ্য নয়।</p></section>"
     ],
     [
       "(<summary[^>]*>আমি কি এই লেখাগুলো থেকে উদ্ধৃত করতে পারি\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",

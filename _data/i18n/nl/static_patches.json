@@ -231,7 +231,7 @@
     ],
     [
       "(<summary[^>]*>Zijn de whitepapers gratis te lezen\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>De EPAA-whitepaper <em>Quantum-Safe Payments</em> is beschikbaar als gratis publieke download op <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Het onafhankelijke onderzoeksrapport over real-time spraakherkenning met OpenAI Whisper en Metal Performance Shaders is gelicentieerd en afzonderlijk verkrijgbaar voor $ 49,00 (Engels, PDF, ~95 KB). Eén exemplaar per koper; downloads uitsluitend voor persoonlijk gebruik, niet voor herverspreiding.</p></section>"
+      "\\1<section class=\"qa-a\"><p>De EPAA-whitepaper <em>Quantum-Safe Payments</em> is beschikbaar als gratis publieke download op <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Het onafhankelijke onderzoeksrapport over real-time spraakherkenning met OpenAI Whisper en Metal Performance Shaders is gelicentieerd en afzonderlijk verkrijgbaar voor $ 49,00 (Engels, PDF, ~95 KB). Eén exemplaar per koper; downloads uitsluitend voor persoonlijk gebruik, niet voor herverspreiding.</p></section>"
     ],
     [
       "(<summary[^>]*>Mag ik uit deze publicaties citeren\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",

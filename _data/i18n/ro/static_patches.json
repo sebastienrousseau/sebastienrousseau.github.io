@@ -231,7 +231,7 @@
     ],
     [
       "(<summary[^>]*>Sunt lucrările albe gratuite la lectură\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Lucrarea albă EPAA <em>Quantum-Safe Payments</em> se poate descărca public și gratuit de pe <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Raportul de cercetare independent despre recunoașterea vocală în timp real cu OpenAI Whisper și Metal Performance Shaders este licențiat și disponibil pentru achiziție individuală la 49,00 $ (engleză, PDF, ~95 KB). Un exemplar per cumpărător; descărcările sunt exclusiv pentru uz personal și nu pot fi redistribuite.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Lucrarea albă EPAA <em>Quantum-Safe Payments</em> se poate descărca public și gratuit de pe <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Raportul de cercetare independent despre recunoașterea vocală în timp real cu OpenAI Whisper și Metal Performance Shaders este licențiat și disponibil pentru achiziție individuală la 49,00 $ (engleză, PDF, ~95 KB). Un exemplar per cumpărător; descărcările sunt exclusiv pentru uz personal și nu pot fi redistribuite.</p></section>"
     ],
     [
       "(<summary[^>]*>Pot cita din aceste lucrări\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",

@@ -231,7 +231,7 @@
     ],
     [
       "(<summary[^>]*>Beyaz kitaplar ücretsiz mi okunabiliyor\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>EPAA beyaz kitabı <em>Quantum-Safe Payments</em>, <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> üzerinden kamuya açık ücretsiz indirme olarak sunulmaktadır. OpenAI Whisper ve Metal Performance Shaders ile gerçek zamanlı konuşma tanıma üzerine bağımsız araştırma raporu lisanslıdır ve 49,00 $ karşılığında bireysel satın alma olarak sunulmaktadır (İngilizce, PDF, ~95 KB). Alıcı başına bir kopya; indirmeler yalnızca kişisel kullanım içindir, yeniden dağıtılamaz.</p></section>"
+      "\\1<section class=\"qa-a\"><p>EPAA beyaz kitabı <em>Quantum-Safe Payments</em>, <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> üzerinden kamuya açık ücretsiz indirme olarak sunulmaktadır. OpenAI Whisper ve Metal Performance Shaders ile gerçek zamanlı konuşma tanıma üzerine bağımsız araştırma raporu lisanslıdır ve 49,00 $ karşılığında bireysel satın alma olarak sunulmaktadır (İngilizce, PDF, ~95 KB). Alıcı başına bir kopya; indirmeler yalnızca kişisel kullanım içindir, yeniden dağıtılamaz.</p></section>"
     ],
     [
       "(<summary[^>]*>Bu belgelerden alıntı yapabilir miyim\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",

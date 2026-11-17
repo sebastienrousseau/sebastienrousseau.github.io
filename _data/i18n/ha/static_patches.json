@@ -231,7 +231,7 @@
     ],
     [
       "(<summary[^>]*>Shin ana iya karanta takardun fararen kyauta\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Ana iya sauke takardar EPAA <em>Quantum-Safe Payments</em> kyauta kuma a bainar jama'a daga <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Rahoton bincike mai zaman kansa kan gane magana a lokaci guda da OpenAI Whisper da Metal Performance Shaders yana da lasisi kuma ana iya sayan sa shi kaɗai kan $49.00 (Turanci, PDF, ~95 KB). Kwafi ɗaya ga kowane mai saya; saukewa don amfanin kai kaɗai, ba a sake rarrabawa.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Ana iya sauke takardar EPAA <em>Quantum-Safe Payments</em> kyauta kuma a bainar jama'a daga <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Rahoton bincike mai zaman kansa kan gane magana a lokaci guda da OpenAI Whisper da Metal Performance Shaders yana da lasisi kuma ana iya sayan sa shi kaɗai kan $49.00 (Turanci, PDF, ~95 KB). Kwafi ɗaya ga kowane mai saya; saukewa don amfanin kai kaɗai, ba a sake rarrabawa.</p></section>"
     ],
     [
       "(<summary[^>]*>Zan iya ambaton waɗannan takardu\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",

@@ -166,7 +166,7 @@ last_reviewed: "2026-05-11"
 - [[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): কোয়ান্টাম যুগে সুরক্ষাকারী অ্যালগরিদম][rel2]
 
 [00]: /about/index.html "সেবাস্টিয়ান রুসো সম্পর্কে"
-[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf "EPAA কোয়ান্টাম-নিরাপদ পেমেন্ট শ্বেতপত্র"
+[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf "EPAA কোয়ান্টাম-নিরাপদ পেমেন্ট শ্বেতপত্র"
 [rel1]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "কোয়ান্টাম কী ডিস্ট্রিবিউশন: ব্যাংকিংয়ে নিরাপত্তায় বিপ্লব আনা"
 [rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: কোয়ান্টাম যুগে সুরক্ষাকারী অ্যালগরিদম"
 

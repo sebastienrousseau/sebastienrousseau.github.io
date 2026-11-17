@@ -30,8 +30,8 @@ ROOT = Path(__file__).resolve().parents[2]
 SRC = ROOT / "_posts" / "research.md"
 
 EPAA_PDF = (
-    "https://emergingpaymentsasia.org/wp-content/uploads/2025/09/"
-    "Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf"
+    "https://emergingpaymentsasia.org/wp-content/uploads/2026/11/"
+    "Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf"
 )
 
 FEATURED = {
@@ -39,7 +39,7 @@ FEATURED = {
     "title": ("Quantum-Safe Payments: Why the Payments Industry Must Act Now"),
     "date_iso": "2025-09-01",
     "date_display": "September 2025",
-    "format": "English · PDF · 18.9 MB · Free download",
+    "format": "English · PDF · 18.7 MB · Free download",
     "publisher": "Emerging Payments Association Asia (EPAA)",
     "publisher_url": "https://emergingpaymentsasia.org/",
     "abstract": (

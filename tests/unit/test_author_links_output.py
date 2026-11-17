@@ -283,7 +283,7 @@ def test_about_links_its_evidence() -> None:
     for href in (
         "https://github.com/sebastienrousseau/kyberlib",
         "https://github.com/sebastienrousseau/pain001",
-        "https://emergingpaymentsasia.org/wp-content/uploads/2025/09/",
+        "https://emergingpaymentsasia.org/wp-content/uploads/2026/11/",
         "/speaking/",
         "/projects/",
     ):

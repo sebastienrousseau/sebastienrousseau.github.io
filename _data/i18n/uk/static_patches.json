@@ -231,7 +231,7 @@
     ],
     [
       "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Le livre blanc EPAA <em>Quantum-Safe Payments</em> est en téléchargement public gratuit sur <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Le rapport de recherche indépendant sur la reconnaissance vocale en temps réel avec OpenAI Whisper et Metal Performance Shaders est sous licence et disponible à l\\'achat individuel à 49,00 $ (anglais, PDF, ~95 Ko). Один примірник на покупця ; téléchargements à usage personnel uniquement, non redistribuables.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Le livre blanc EPAA <em>Quantum-Safe Payments</em> est en téléchargement public gratuit sur <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Le rapport de recherche indépendant sur la reconnaissance vocale en temps réel avec OpenAI Whisper et Metal Performance Shaders est sous licence et disponible à l\\'achat individuel à 49,00 $ (anglais, PDF, ~95 Ko). Один примірник на покупця ; téléchargements à usage personnel uniquement, non redistribuables.</p></section>"
     ],
     [
       "(<summary[^>]*>Puis-je citer ces documents \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
