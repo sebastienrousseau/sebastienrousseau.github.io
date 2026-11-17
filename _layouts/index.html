@@ -2125,6 +2125,8 @@
       @media (max-width:833px){.feat-card-body{padding:36px 28px}}
       .feat-card h3,.feat-card-title{font-size:var(--fs-h2);line-height:var(--lh-heading);font-weight:600;letter-spacing:-.015em;margin:0 0 16px;color:var(--ink)}
       .feat-card p{line-height:1.55;color:var(--ink-soft);margin:0 0 24px}
+      /* Two or more buttons in a card wrap as a row with a gap, instead of touching when they stack on a phone. */
+      .feat-card p:has(>.pill){display:flex;flex-wrap:wrap;gap:12px}
       .feat-card p:not(:where(.feat-eyebrow)){font-size:var(--fs-body)}
       /* Proof caption + credibility row + newsletter band */
       .proof-note{font-size:var(--fs-meta);line-height:1.5;color:var(--ink-soft);margin:18px auto 0;max-width:78ch;text-align:center}
