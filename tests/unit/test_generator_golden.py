@@ -101,19 +101,22 @@ CASES = _render_cases()
 
 @pytest.mark.parametrize("name", sorted(CASES))
 def test_generator_render_matches_golden(name: str) -> None:
-    actual = CASES[name]
+    # A golden ends with one newline, as the end-of-file pre-commit hook
+    # requires; the render may not, so that newline is not part of the
+    # comparison.
+    actual = CASES[name].rstrip("\n")
     golden_path = GOLDEN_DIR / f"{name}.html"
 
     if os.environ.get("UPDATE_GOLDEN"):
         GOLDEN_DIR.mkdir(exist_ok=True)
-        golden_path.write_text(actual, encoding="utf-8")
+        golden_path.write_text(actual + "\n", encoding="utf-8")
         pytest.skip(f"updated golden: {golden_path.name}")
 
     assert golden_path.is_file(), (
         f"missing golden {golden_path.name}; run "
         f"UPDATE_GOLDEN=1 pytest {Path(__file__).name} to create it"
     )
-    expected = golden_path.read_text(encoding="utf-8")
+    expected = golden_path.read_text(encoding="utf-8").rstrip("\n")
     if actual != expected:
         diff = "\n".join(
             difflib.unified_diff(
