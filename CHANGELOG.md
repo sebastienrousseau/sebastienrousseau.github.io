@@ -12,14 +12,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+---
+
+## [0.0.43] - 2026-11-18
+
+The 2026 EPAA paper on the homepage, a deploy that a pa11y timeout can no longer block, and ssg 0.0.76. Versions 0.0.41 and 0.0.42 were merged without being released; their changes ship here.
+
+### Added
+
+- **The homepage's EPAA card carries the November 2026 paper**: it now introduces EPAA's follow-up, From Awareness to Action, beside the September 2025 white paper, with the new sentence and link label in all 34 locales' `home_patches.json` so no English leaks into translated homepages (#535). The card's two PDF buttons wrap as a row with a 12px gap instead of touching, from ssg-themes `22e1ea2`, which `THEME_SHA` pins (#535).
+
 ### Fixed
 
-- **pa11y retries a DevTools protocol timeout instead of failing on it**: main's build-audit run 44256526635 failed when one page hit Puppeteer's `protocolTimeout` (`Runtime.evaluate timed out`). The flake classifier filed it as a real WCAG failure and skipped the retry, so the deploy job never ran and production stayed three content commits behind main. It is now retried like a navigation timeout; a page that times out twice still fails.
-- **README demo shows the current site**: `.github/demo.gif` dated from 29 October; it is re-rendered with `make demo` from the current visual baselines.
+- **pa11y retries a DevTools protocol timeout instead of failing on it**: main's build-audit run 44256526635 failed when one page hit Puppeteer's `protocolTimeout` (`Runtime.evaluate timed out`). The flake classifier filed it as a real WCAG failure and skipped the retry, so the deploy job never ran and production stayed three content commits behind main. It is now retried like a navigation timeout; a page that times out twice still fails (#536).
+- **README demo shows the current site**: `.github/demo.gif` dated from 29 October; it is re-rendered with `make demo` from the current visual baselines (#536).
+- **EPAA paper links resolve again**: EPAA moved its September 2025 white paper, so every link to the old address returned 404, including the homepage's working-group credential. The address changes at its sources (the layouts, `gen_papers.py`, the 2025 post and its translations, the locale data and `recognition.yml`), and the theme pin moves to ssg-themes `b0be921` so `_layouts/` still matches the theme (#535).
+- **The EPAA readiness post reserves its real banner size**: it and its 34 translations declared 1920x1280 while the image is 2839x1597, so the page shifted as it loaded, and its social card showed the site logo. Both now use the banner (#533).
+- **The schema diff builds the PR's base with the base's ssg**: `build.sh` refuses any ssg but the one the checked-out `ci.yml` pins, so the first PR to move the pin between two exact versions failed the base build. The base's pinned ssg now installs to `/tmp/ssg-base` when it differs from HEAD's (#533).
+- **Generator goldens may end with a newline**: the end-of-file hook and the golden test disagreed, so updating any golden failed one of them. The test ignores trailing newlines on both sides; a changed render still fails (#535).
 
 ### Changed
 
-- **ssg is pinned to 0.0.76**: crates.io publishes 0.0.76 while every workflow, `mise.toml` and the README setup line installed 0.0.75. The pin moves in one change so an upstream release never alters build output in the middle of unrelated PRs, and `./build.sh` passes on 0.0.76 locally (#532).
+- **ssg is pinned to 0.0.76**: crates.io publishes 0.0.76 while every workflow, `mise.toml` and the README setup line installed 0.0.75. The pin moves in one change so an upstream release never alters build output in the middle of unrelated PRs, and `./build.sh` passes on 0.0.76 locally (#532, #533).
+- **Python dependencies**: markdown-it-py 4.3.0, ruff 0.17.5, types-pyyaml 6.0.12.20261113 and google-auth 2.62.2, across `requirements.txt`, `requirements-dev.txt` and `requirements.lock` (#535).
 
 ---
 
@@ -700,8 +715,3 @@ Two fixes merged to `main` between 0.0.28 and 0.0.30, released under this number
 [#488]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/488
 [#492]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/492
 [#493]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/493
-[#504]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/504
-[#506]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/506
-[#507]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/507
-[#508]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/508
-[#509]: https://github.com/sebastienrousseau/sebastienrousseau.github.io/pull/509
