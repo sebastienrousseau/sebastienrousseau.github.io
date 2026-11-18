@@ -46,6 +46,11 @@ FLAKE_NEEDLES = (
     # genuinely broken page still fails: the retry below re-audits it
     # and a second timeout propagates its nonzero exit code.
     "Navigation timeout of",
+    # A DevTools protocol call (e.g. Runtime.evaluate) that outlived
+    # Puppeteer's protocolTimeout on a loaded runner. Same reasoning as
+    # the navigation timeout: code "?", transient, and the retry still
+    # fails a page that times out twice.
+    "Increase the 'protocolTimeout' setting",
 )
 
 RETRY_WAIT_MS = 1500
