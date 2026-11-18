@@ -169,6 +169,43 @@ def test_navigation_timeout_is_a_flake(tmp_path: Path) -> None:
     assert urls == ["http://x.example/id/a/"]
 
 
+PROTOCOL_TIMEOUT_MSG = (
+    "Runtime.evaluate timed out. Increase the 'protocolTimeout' setting "
+    "in launch/connect calls for a higher timeout if needed."
+)
+
+
+def _protocol_timeout_report(tmp_path: Path) -> Path:
+    return _write_report(
+        tmp_path,
+        {
+            "results": {
+                "http://x.example/es/a/": [
+                    {"code": "?", "message": PROTOCOL_TIMEOUT_MSG},
+                ],
+            },
+        },
+    )
+
+
+def test_protocol_timeout_is_a_flake(tmp_path: Path) -> None:
+    """A DevTools protocol call that times out on a loaded runner is
+    transient, like a navigation timeout. Seen on main run 44256526635,
+    where it was misfiled as a real failure and blocked the deploy."""
+    report = _protocol_timeout_report(tmp_path)
+    with patch.object(prf, "_retry_urls", return_value=0) as mock_retry:
+        rc = prf.main(["pa11y_retry_flakes.py", str(report)])
+    assert rc == 0
+    (urls,), _ = mock_retry.call_args
+    assert urls == ["http://x.example/es/a/"]
+
+
+def test_protocol_timeout_still_fails_if_retry_fails(tmp_path: Path) -> None:
+    report = _protocol_timeout_report(tmp_path)
+    with patch.object(prf, "_retry_urls", return_value=1):
+        assert prf.main(["pa11y_retry_flakes.py", str(report)]) == 1
+
+
 def test_navigation_timeout_still_fails_if_retry_fails(tmp_path: Path) -> None:
     """A page that times out twice is broken, and must still block."""
     report = _write_report(

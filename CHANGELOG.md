@@ -12,6 +12,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+- **pa11y retries a DevTools protocol timeout instead of failing on it**: main's build-audit run 44256526635 failed when one page hit Puppeteer's `protocolTimeout` (`Runtime.evaluate timed out`). The flake classifier filed it as a real WCAG failure and skipped the retry, so the deploy job never ran and production stayed three content commits behind main. It is now retried like a navigation timeout; a page that times out twice still fails.
+- **README demo shows the current site**: `.github/demo.gif` dated from 29 October; it is re-rendered with `make demo` from the current visual baselines.
+
 ### Changed
 
 - **ssg is pinned to 0.0.76**: crates.io publishes 0.0.76 while every workflow, `mise.toml` and the README setup line installed 0.0.75. The pin moves in one change so an upstream release never alters build output in the middle of unrelated PRs, and `./build.sh` passes on 0.0.76 locally (#532).
