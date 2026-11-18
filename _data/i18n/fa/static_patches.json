@@ -250,7 +250,7 @@
     ],
     [
       "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>وایت‌پیپر EPAA با عنوان <em>Quantum-Safe Payments</em> به‌صورت عمومی و رایگان برای دانلود در <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> در دسترس است. گزارش پژوهش مستقل دربارهٔ تشخیص گفتار در زمان واقعی با OpenAI Whisper و Metal Performance Shaders دارای مجوز است و برای خرید جداگانه به قیمت 49.00 دلار (انگلیسی، PDF، حدود 95 کیلوبایت) در دسترس است. یک نسخه به ازای هر خریدار؛ دانلودها فقط برای استفادهٔ شخصی و غیرقابل بازتوزیع هستند.</p></section>"
+      "\\1<section class=\"qa-a\"><p>وایت‌پیپر EPAA با عنوان <em>Quantum-Safe Payments</em> به‌صورت عمومی و رایگان برای دانلود در <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> در دسترس است. گزارش پژوهش مستقل دربارهٔ تشخیص گفتار در زمان واقعی با OpenAI Whisper و Metal Performance Shaders دارای مجوز است و برای خرید جداگانه به قیمت 49.00 دلار (انگلیسی، PDF، حدود 95 کیلوبایت) در دسترس است. یک نسخه به ازای هر خریدار؛ دانلودها فقط برای استفادهٔ شخصی و غیرقابل بازتوزیع هستند.</p></section>"
     ],
     [
       "(<summary[^>]*>Puis-je citer ces documents \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",

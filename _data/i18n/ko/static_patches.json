@@ -231,7 +231,7 @@
     ],
     [
       "(<summary[^>]*>백서는 무료로 읽을 수 있습니까\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>EPAA 백서 <em>Quantum-Safe Payments</em>는 <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> 에서 무료로 공개 다운로드하실 수 있습니다. OpenAI Whisper와 Metal Performance Shaders를 사용한 실시간 음성 인식에 관한 독립 연구 보고서는 라이선스 발급되며 49.00 달러에 개별 구매하실 수 있습니다 (한국어, PDF, 약 95KB). 구매자 1인당 1부이며, 다운로드는 개인 이용으로 제한되고 재배포는 허용되지 않습니다.</p></section>"
+      "\\1<section class=\"qa-a\"><p>EPAA 백서 <em>Quantum-Safe Payments</em>는 <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> 에서 무료로 공개 다운로드하실 수 있습니다. OpenAI Whisper와 Metal Performance Shaders를 사용한 실시간 음성 인식에 관한 독립 연구 보고서는 라이선스 발급되며 49.00 달러에 개별 구매하실 수 있습니다 (한국어, PDF, 약 95KB). 구매자 1인당 1부이며, 다운로드는 개인 이용으로 제한되고 재배포는 허용되지 않습니다.</p></section>"
     ],
     [
       "(<summary[^>]*>이러한 논문을 인용할 수 있습니까\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",

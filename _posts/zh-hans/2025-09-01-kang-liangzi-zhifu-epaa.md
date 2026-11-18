@@ -66,6 +66,6 @@ Sebastien Rousseau 是 HSBC Bank plc 的高级数字产品经理，在 HSBC 商�
 - [[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)：量子时代的守护算法][rel2]
 
 [00]: /about/index.html "关于 Sebastien Rousseau"
-[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf "EPAA 抗量子支付白皮书"
+[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf "EPAA 抗量子支付白皮书"
 [rel1]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "量子密钥分发：变革银行业安全"
 [rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber：量子时代的守护算法"

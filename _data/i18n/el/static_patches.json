@@ -250,7 +250,7 @@
     ],
     [
       "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Η λευκή βίβλος της EPAA <em>Quantum-Safe Payments</em> διατίθεται για δωρεάν δημόσια λήψη στο <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Η ανεξάρτητη ερευνητική έκθεση για την αναγνώριση φωνής σε πραγματικό χρόνο με OpenAI Whisper και Metal Performance Shaders διατίθεται υπό άδεια και είναι διαθέσιμη για μεμονωμένη αγορά στα 49,00 $ (αγγλικά, PDF, ~95 KB). Ένα αντίτυπο ανά αγοραστή. Οι λήψεις προορίζονται μόνο για προσωπική χρήση και δεν αναδιανέμονται.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Η λευκή βίβλος της EPAA <em>Quantum-Safe Payments</em> διατίθεται για δωρεάν δημόσια λήψη στο <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Η ανεξάρτητη ερευνητική έκθεση για την αναγνώριση φωνής σε πραγματικό χρόνο με OpenAI Whisper και Metal Performance Shaders διατίθεται υπό άδεια και είναι διαθέσιμη για μεμονωμένη αγορά στα 49,00 $ (αγγλικά, PDF, ~95 KB). Ένα αντίτυπο ανά αγοραστή. Οι λήψεις προορίζονται μόνο για προσωπική χρήση και δεν αναδιανέμονται.</p></section>"
     ],
     [
       "(<summary[^>]*>Puis-je citer ces documents \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",

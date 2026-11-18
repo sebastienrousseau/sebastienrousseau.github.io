@@ -198,7 +198,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="Virgin logo" src="/_csp/logo-virgin.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
 </div>
 <ul class="proof-credibility" aria-label="Institutional credentials and standards">
-<li><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf">EPAA White Paper (Sep 2025, PDF)</a></li>
+<li><a href="https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf">EPAA White Paper (Sep 2025, PDF)</a></li>
 <li><a href="/projects-post-quantum/index.html">NIST FIPS 203 ML-KEM</a></li>
 <li><a href="/iso20022-mcp/index.html">SWIFT CBPR+ / ISO 20022</a></li>
 <li><a href="/trust/index.html">Sigstore &amp; CycloneDX SBOM</a></li>
@@ -212,10 +212,11 @@ site_software: "Static Site Generator, Rust"
 <img alt="Isometric render of an illuminated processor, representing the cryptographic foundations of payments." src="https://cloudcdn.pro/stocks/images/a-chosen-soul-IQi4jAlVeOI-unsplash.webp" loading="lazy" decoding="async" width="800" height="800" />
 </div>
 <div class="feat-card-body">
-<p class="feat-eyebrow">EPAA · September 2025</p>
+<p class="feat-eyebrow">EPAA · September 2025 · November 2026</p>
 <h2 id="paper" class="feat-card-title">Why the payments industry must act now.</h2>
 <p>Regulators are treating harvest-now-decrypt-later as a credible present risk. This paper, produced for the Emerging Payments Association Asia, sets out the structural threat and the case for coordinated action across wholesale payment rails.</p>
-<p><a class="pill" href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" title="EPAA Quantum-Safe Payments White Paper (PDF)">Read the white paper (PDF)</a></p>
+<p>Its November 2026 follow-up, <em>From Awareness to Action</em>, sets out what readiness requires now: an accountable executive, a limited first assessment and one payment flow traced end to end.</p>
+<p><a class="pill" href="https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf" title="EPAA Quantum-Safe Payments White Paper (PDF)">Read the white paper (PDF)</a> <a class="pill" href="https://emergingpaymentsasia.org/wp-content/uploads/2026/11/From-Awareness-to-Action-What-Quantum-Safe-Readiness-Requires-Now.pdf" title="EPAA From Awareness to Action White Paper (PDF)">Read From Awareness to Action (PDF)</a></p>
 </div>
 </article>
 </section>

@@ -231,7 +231,7 @@
     ],
     [
       "(<summary[^>]*>Ṣé a lè ka àwọn ìwé funfun náà lọ́fẹ̀ẹ́\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Ìwé funfun EPAA <em>Quantum-Safe Payments</em> wà fún gbígbàsílẹ̀ lọ́fẹ̀ẹ́ ní gbangba lórí <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Ìròyìn ìwádìí olómìnira nípa ìdámọ̀ ọ̀rọ̀ sísọ ní àkókò gidi pẹ̀lú OpenAI Whisper àti Metal Performance Shaders ní ìwé àṣẹ, a sì lè rà á ní ọ̀tọ̀ ní $49.00 (Gẹ̀ẹ́sì, PDF, ~95 KB). Ẹ̀dà kan fún olùrà kọ̀ọ̀kan; gbígbàsílẹ̀ jẹ́ fún ìlò ara ẹni nìkan, kì í ṣe fún ìtànkálẹ̀.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Ìwé funfun EPAA <em>Quantum-Safe Payments</em> wà fún gbígbàsílẹ̀ lọ́fẹ̀ẹ́ ní gbangba lórí <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Ìròyìn ìwádìí olómìnira nípa ìdámọ̀ ọ̀rọ̀ sísọ ní àkókò gidi pẹ̀lú OpenAI Whisper àti Metal Performance Shaders ní ìwé àṣẹ, a sì lè rà á ní ọ̀tọ̀ ní $49.00 (Gẹ̀ẹ́sì, PDF, ~95 KB). Ẹ̀dà kan fún olùrà kọ̀ọ̀kan; gbígbàsílẹ̀ jẹ́ fún ìlò ara ẹni nìkan, kì í ṣe fún ìtànkálẹ̀.</p></section>"
     ],
     [
       "(<summary[^>]*>Ṣé mo lè fa ọ̀rọ̀ yọ látinú àwọn ìwé wọ̀nyí\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",

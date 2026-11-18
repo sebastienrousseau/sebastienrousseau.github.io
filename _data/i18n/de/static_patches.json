@@ -231,7 +231,7 @@
     ],
     [
       "(<summary[^>]*>Sind die Whitepaper frei lesbar\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Das EPAA-Whitepaper <em>Quantum-Safe Payments</em> steht als kostenloser öffentlicher Download auf <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> bereit. Der unabhängige Forschungsbericht zur Echtzeit-Spracherkennung mit OpenAI Whisper und Metal Performance Shaders ist lizenziert und einzeln zum Preis von 49,00 $ erhältlich (Englisch, PDF, ~95 KB). Ein Exemplar pro Käufer; Downloads ausschließlich zum persönlichen Gebrauch, keine Weitergabe.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Das EPAA-Whitepaper <em>Quantum-Safe Payments</em> steht als kostenloser öffentlicher Download auf <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> bereit. Der unabhängige Forschungsbericht zur Echtzeit-Spracherkennung mit OpenAI Whisper und Metal Performance Shaders ist lizenziert und einzeln zum Preis von 49,00 $ erhältlich (Englisch, PDF, ~95 KB). Ein Exemplar pro Käufer; Downloads ausschließlich zum persönlichen Gebrauch, keine Weitergabe.</p></section>"
     ],
     [
       "(<summary[^>]*>Darf ich aus diesen Publikationen zitieren\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",

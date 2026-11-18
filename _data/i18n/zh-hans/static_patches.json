@@ -231,7 +231,7 @@
     ],
     [
       "(<summary[^>]*>白皮书可免费阅读吗？</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>EPAA 白皮书 <em>Quantum-Safe Payments</em> 可在 <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> 公开免费下载。关于在 macOS 上使用 OpenAI Whisper 与 Metal Performance Shaders 进行实时语音识别的独立研究报告则以授权形式提供，单独购买价为 49.00 美元（英文 PDF，约 95 KB）。每位购买者一份；下载仅供个人使用，不得再分发。</p></section>"
+      "\\1<section class=\"qa-a\"><p>EPAA 白皮书 <em>Quantum-Safe Payments</em> 可在 <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> 公开免费下载。关于在 macOS 上使用 OpenAI Whisper 与 Metal Performance Shaders 进行实时语音识别的独立研究报告则以授权形式提供，单独购买价为 49.00 美元（英文 PDF，约 95 KB）。每位购买者一份；下载仅供个人使用，不得再分发。</p></section>"
     ],
     [
       "(<summary[^>]*>我可以引用这些论文吗？</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",

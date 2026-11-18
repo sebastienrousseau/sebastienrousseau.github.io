@@ -167,7 +167,7 @@ Sebastien Rousseau shine Babban Manajan Samfuran Dijital a HSBC Bank plc, wanda 
 - [[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): Algorithm Mai Karewa a Zamanin Quantum][rel2]
 
 [00]: /about/index.html "Game da Sebastien Rousseau"
-[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf "Takardar EPAA akan Quantum-Safe Payments"
+[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf "Takardar EPAA akan Quantum-Safe Payments"
 [rel1]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution: Sauya Tsarin Tsaro a Banki"
 [rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: Algorithm Mai Karewa a Zamanin Quantum"
 

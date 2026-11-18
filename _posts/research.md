@@ -106,11 +106,11 @@ site_software: "Static Site Generator, Rust"
 <article class="book book-no-cover">
 <div class="book-body">
 <p class="book-eyebrow">INDUSTRY WHITE PAPER · EPAA</p>
-<h2 class="book-title"><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" rel="external noopener" title="Quantum-Safe Payments: Why the Payments Industry Must Act Now">Quantum-Safe Payments: Why the Payments Industry Must Act Now</a></h2>
+<h2 class="book-title"><a href="https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf" rel="external noopener" title="Quantum-Safe Payments: Why the Payments Industry Must Act Now">Quantum-Safe Payments: Why the Payments Industry Must Act Now</a></h2>
 <p class="book-meta"><time datetime="2025-09-01">September 2025</time> &middot; <a href="https://emergingpaymentsasia.org/" rel="external noopener">Emerging Payments Association Asia (EPAA)</a></p>
-<p class="book-meta book-meta-faint">English · PDF · 18.9 MB · Free download</p>
+<p class="book-meta book-meta-faint">English · PDF · 18.7 MB · Free download</p>
 <p class="book-excerpt">Quantum computing threatens the cryptographic foundations of financial services. Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete, and regulators are already treating harvest-now-decrypt-later as a credible present risk. This paper, produced for the Emerging Payments Association Asia, outlines the structural threat post-quantum cryptography poses to payment infrastructure across SWIFT, real-time gross settlement (RTGS) rails and instant payment schemes, and argues for coordinated industry action — starting with cryptographic-asset inventories, PQC migration roadmaps aligned to the NIST FIPS 203/204/205 standards, and crypto-agility built into wholesale payment authentication.</p>
-<p class="book-actions"><a class="pill primary no-chev" href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" rel="external noopener" title="Read the white paper (PDF)">Read the white paper</a> <a class="pill ghost no-chev" href="https://emergingpaymentsasia.org/" rel="external noopener" title="Visit the Emerging Payments Association Asia">About EPAA</a></p>
+<p class="book-actions"><a class="pill primary no-chev" href="https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf" rel="external noopener" title="Read the white paper (PDF)">Read the white paper</a> <a class="pill ghost no-chev" href="https://emergingpaymentsasia.org/" rel="external noopener" title="Visit the Emerging Payments Association Asia">About EPAA</a></p>
 </div>
 </article>
 
@@ -256,7 +256,7 @@ site_software: "Static Site Generator, Rust"
 </details>
 <details class="qa-item">
 <summary class="qa-q">Are the white papers free to read?</summary>
-<section class="qa-a"><p>The EPAA <em>Quantum-Safe Payments</em> paper is a free public download from <a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" rel="external noopener">emergingpaymentsasia.org</a>. The independent research paper on real-time speech recognition with OpenAI Whisper and Metal Performance Shaders is licensed and available for individual purchase at $49.00 (English, PDF, ~95 KB). One copy per buyer; downloads are personal-use only and may not be redistributed.</p></section>
+<section class="qa-a"><p>The EPAA <em>Quantum-Safe Payments</em> paper is a free public download from <a href="https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf" rel="external noopener">emergingpaymentsasia.org</a>. The independent research paper on real-time speech recognition with OpenAI Whisper and Metal Performance Shaders is licensed and available for individual purchase at $49.00 (English, PDF, ~95 KB). One copy per buyer; downloads are personal-use only and may not be redistributed.</p></section>
 </details>
 <details class="qa-item">
 <summary class="qa-q">May I cite or quote from these papers?</summary>

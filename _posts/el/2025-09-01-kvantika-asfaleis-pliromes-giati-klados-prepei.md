@@ -67,6 +67,6 @@ keywords: "κβαντικά ασφαλείς πληρωμές, μετακβαν�
 - [[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): Ο αλγόριθμος διαφύλαξης στην κβαντική εποχή][rel2]
 
 [00]: /about/index.html "Σχετικά με τον Sebastien Rousseau"
-[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf "Λευκή βίβλος EPAA για τις κβαντικά ασφαλείς πληρωμές"
+[epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf "Λευκή βίβλος EPAA για τις κβαντικά ασφαλείς πληρωμές"
 [rel1]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Κβαντική διανομή κλειδιών: Επανάσταση στην ασφάλεια των τραπεζικών συναλλαγών"
 [rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: Ο αλγόριθμος διαφύλαξης στην κβαντική εποχή"

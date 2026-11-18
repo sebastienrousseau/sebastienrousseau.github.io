@@ -144,7 +144,7 @@ site_software: "Static Site Generator, Rust"
       <h2 id="about-research" class="narrative-head">Banking research, signed and dated. Every article verifiable.</h2>
       <div class="narrative-body">
         <p>Applied AI, ISO 20022, post-quantum cryptography. Every piece written for senior architects and CTOs who need to make architectural calls, not read press releases.</p>
-        <p>Member of the EPAA Quantum-Safe Cryptography Working Group and contributor to its white paper <em><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" rel="external noopener">Quantum-Safe Payments: Why the Payments Industry Must Act Now</a></em> (September 2025). Editor of <em>Banking On Quantum</em> and <em>Banking On AI</em>.</p>
+        <p>Member of the EPAA Quantum-Safe Cryptography Working Group and contributor to its white paper <em><a href="https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf" rel="external noopener">Quantum-Safe Payments: Why the Payments Industry Must Act Now</a></em> (September 2025). Editor of <em>Banking On Quantum</em> and <em>Banking On AI</em>.</p>
       </div>
       <a class="pill" href="/articles/index.html">Read the research ›</a>
     </div>

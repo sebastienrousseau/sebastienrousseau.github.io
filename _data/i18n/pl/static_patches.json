@@ -231,7 +231,7 @@
     ],
     [
       "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Biała księga EPAA <em>Quantum-Safe Payments</em> jest dostępna do bezpłatnego pobrania na <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Niezależny raport badawczy o rozpoznawaniu mowy w czasie rzeczywistym z OpenAI Whisper i Metal Performance Shaders jest licencjonowany i dostępny do indywidualnego zakupu za 49,00 $ (angielski, PDF, ~95 KB). Jeden egzemplarz na nabywcę; pobrania wyłącznie do użytku osobistego, bez prawa redystrybucji.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Biała księga EPAA <em>Quantum-Safe Payments</em> jest dostępna do bezpłatnego pobrania na <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Niezależny raport badawczy o rozpoznawaniu mowy w czasie rzeczywistym z OpenAI Whisper i Metal Performance Shaders jest licencjonowany i dostępny do indywidualnego zakupu za 49,00 $ (angielski, PDF, ~95 KB). Jeden egzemplarz na nabywcę; pobrania wyłącznie do użytku osobistego, bez prawa redystrybucji.</p></section>"
     ],
     [
       "(<summary[^>]*>Puis-je citer ces documents \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",

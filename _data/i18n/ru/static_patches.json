@@ -251,7 +251,7 @@
     ],
     [
       "(<summary[^>]*>White paper доступны для бесплатного чтения\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>White paper EPAA <em>Quantum-Safe Payments</em> доступен для бесплатной загрузки на <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Независимый исследовательский отчёт о распознавании речи в реальном времени с OpenAI Whisper и Metal Performance Shaders предоставляется по лицензии и доступен к индивидуальной покупке за 49,00 $ (английский язык, PDF, ~95 КБ). Одна копия на покупателя; загрузки только для личного использования, без права перераспространения.</p></section>"
+      "\\1<section class=\"qa-a\"><p>White paper EPAA <em>Quantum-Safe Payments</em> доступен для бесплатной загрузки на <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2026/11/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now-updated.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Независимый исследовательский отчёт о распознавании речи в реальном времени с OpenAI Whisper и Metal Performance Shaders предоставляется по лицензии и доступен к индивидуальной покупке за 49,00 $ (английский язык, PDF, ~95 КБ). Одна копия на покупателя; загрузки только для личного использования, без права перераспространения.</p></section>"
     ],
     [
       "(<summary[^>]*>Могу ли я ссылаться или цитировать эти материалы\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
