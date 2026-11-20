@@ -104,21 +104,69 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html" title="Why the FCA Is Regulating AI Without an AI Rulebook">
-<img alt="City of London financial district architecture representing FCA outcomes-based AI regulation and UK financial services governance." src="https://cloudcdn.pro/stocks/images/brett-sayles-7963572.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-11-19-nist-ir-8547-quantum-vulnerable-signatures/index.html" title="Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says">
+<img alt="A square microchip lit from within on a dark circuit board" src="https://cloudcdn.pro/stocks/images/a-chosen-soul-IQi4jAlVeOI-unsplash.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Ai · Ai-Governance · Compliance</span>
-<h3><a href="/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html" title="Why the FCA Is Regulating AI Without an AI Rulebook">Why the FCA Is Regulating AI Without an AI Rulebook</a></h3>
-<p class="newsroom-meta"><time datetime="2026-10-28">October 28, 2026</time> · Sebastien Rousseau</p>
-<p>The FCA's position is that you don't need a new rulebook to regulate a new technology when your existing rules already ask what the technology does to people and markets, and it is applying that position to AI in UK...</p>
-<p><a class="pill ghost" href="/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html" title="Why the FCA Is Regulating AI Without an AI Rulebook">Read the full story</a></p>
+<span class="newsroom-eyebrow">Post-Quantum Cryptography · Nist · Digital Signatures</span>
+<h3><a href="/2026-11-19-nist-ir-8547-quantum-vulnerable-signatures/index.html" title="Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says">Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-19">November 19, 2026</time> · Sebastien Rousseau</p>
+<p>NIST IR 8547 treats the move to post-quantum cryptography as a long, uneven engineering programme rather than a single switch-over, and its treatment of digital signatures shows why: the old algorithms are all vulnerable to Shor's Algorithm, the new ones come in several different shapes, and the history of cryptographi</p>
+<p><a class="pill ghost" href="/2026-11-19-nist-ir-8547-quantum-vulnerable-signatures/index.html" title="Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-11-18-jevact-verifying-agent-actions/index.html" title="Verifying Agent Actions Before They Run: JevAct's Decision-Model Gate" aria-label="Verifying Agent Actions Before They Run: JevAct's Decision-Model Gate">
+<img alt="Glowing blue hexagonal shapes linked across a dark background" src="https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Ai Agents · Llm Agents · Agent Safety</span>
+<h3><a href="/2026-11-18-jevact-verifying-agent-actions/index.html" title="Verifying Agent Actions Before They Run: JevAct's Decision-Model Gate">Verifying Agent Actions Before They Run: JevAct's Decision-Model Gate</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-18">November 18, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Most agent loops run a tool call the moment the model proposes it, and JevAct's results suggest that a cheap, probability-based checkpoint placed just before execution can make tool-using agents more reliable, though the gains vary sharply by benchmark.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-11-17-treasury-automation-half-done/index.html" title="Liquidity Reimagined: Why Treasury Automation Is Still Only Half Done" aria-label="Liquidity Reimagined: Why Treasury Automation Is Still Only Half Done">
+<img alt="Close-up of red and green digits glowing on a digital display board" src="https://cloudcdn.pro/stocks/images/compagnons-R401qwThw7w-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Treasury · Automation · Liquidity</span>
+<h3><a href="/2026-11-17-treasury-automation-half-done/index.html" title="Liquidity Reimagined: Why Treasury Automation Is Still Only Half Done">Liquidity Reimagined: Why Treasury Automation Is Still Only Half Done</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-17">November 17, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Treasury teams have spent a decade digitising payments, yet only 39% describe their systems as mostly or fully automated, and that gap is where real-time, borderless and resilient liquidity will be won or lost.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-11-16-quantum-safe-readiness-epaa/index.html" title="From Awareness to Action: What Quantum-Safe Readiness Requires Now" aria-label="From Awareness to Action: What Quantum-Safe Readiness Requires Now">
+<img alt="Glowing violet and teal circuit traces running across a dark board, like data moving along a network of connections" src="https://cloudcdn.pro/stocks/images/getty-images-uEGPW7Q6Uhc.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum-Safe Payments · Post-Quantum Cryptography · Payments</span>
+<h3><a href="/2026-11-16-quantum-safe-readiness-epaa/index.html" title="From Awareness to Action: What Quantum-Safe Readiness Requires Now">From Awareness to Action: What Quantum-Safe Readiness Requires Now</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-16">November 16, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">EPAA's new white paper argues that banks get quantum-safe by naming an accountable executive and tracing one payment flow end to end, not by finishing a cryptographic inventory first.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html" title="Why the FCA Is Regulating AI Without an AI Rulebook" aria-label="Why the FCA Is Regulating AI Without an AI Rulebook">
+<img alt="City of London financial district architecture representing FCA outcomes-based AI regulation and UK financial services governance." src="https://cloudcdn.pro/stocks/images/brett-sayles-7963572.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Ai · Ai-Governance · Compliance</span>
+<h3><a href="/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html" title="Why the FCA Is Regulating AI Without an AI Rulebook">Why the FCA Is Regulating AI Without an AI Rulebook</a></h3>
+<p class="newsroom-meta"><time datetime="2026-10-28">October 28, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">The FCA's position is that you don't need a new rulebook to regulate a new technology when your existing rules already ask what the technology does to people and markets, and it is applying that position to AI in UK...</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude/index.html" title="The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour" aria-label="The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour">
@@ -397,24 +445,24 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-07-26-from-evidence-to-truth-certified-blockchains-banking-trust/index.html" title="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust" aria-label="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust">
+<a class="newsroom-card-media" href="/2026-07-26-from-evidence-to-truth-certified-blockchains-banking-trust/index.html" title="Certified Blockchains: The Next Era of Banking Trust" aria-label="Certified Blockchains: The Next Era of Banking Trust">
 <img alt="A constellation of interconnected points of light, representing certified blockchains as the substrate of verifiable banking trust." src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Blockchain · Banking · Dora</span>
-<h3><a href="/2026-07-26-from-evidence-to-truth-certified-blockchains-banking-trust/index.html" title="From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust">From Evidence to Truth: Why Certified Blockchains Will Define the Next Era of Banking Trust</a></h3>
+<h3><a href="/2026-07-26-from-evidence-to-truth-certified-blockchains-banking-trust/index.html" title="Certified Blockchains: The Next Era of Banking Trust">Certified Blockchains: The Next Era of Banking Trust</a></h3>
 <p class="newsroom-meta"><time datetime="2026-07-26">July 26, 2026</time> · Sebastien Rousseau</p>
 <p class="newsroom-excerpt">Immutable is not the same as trusted. As instant settlement and probabilistic AI reshape banking, the uncertified ledger becomes the weak link, and a certifiable blockchain becomes the audit spine.</p>
 </div>
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-07-24-global-payments-outlook-operating-model-risk-revenue/index.html" title="The 2026 Global Payments Outlook: Operating Model, Risk, and Revenue in an Agentic, Invisible, Real-Time World" aria-label="The 2026 Global Payments Outlook: Operating Model, Risk, and Revenue in an Agentic, Invisible, Real-Time World">
+<a class="newsroom-card-media" href="/2026-07-24-global-payments-outlook-operating-model-risk-revenue/index.html" title="2026 Payments: Operating Model, Risk and Revenue" aria-label="2026 Payments: Operating Model, Risk and Revenue">
 <img alt="An aerial view of London's financial district, representing the 2026 global payments operating model of agentic, invisible, real-time flows." src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Transaction Banking · Agentic Commerce · Real-Time Liquidity</span>
-<h3><a href="/2026-07-24-global-payments-outlook-operating-model-risk-revenue/index.html" title="The 2026 Global Payments Outlook: Operating Model, Risk, and Revenue in an Agentic, Invisible, Real-Time World">The 2026 Global Payments Outlook: Operating Model, Risk, and Revenue in an Agentic, Invisible, Real-Time World</a></h3>
+<h3><a href="/2026-07-24-global-payments-outlook-operating-model-risk-revenue/index.html" title="2026 Payments: Operating Model, Risk and Revenue">2026 Payments: Operating Model, Risk and Revenue</a></h3>
 <p class="newsroom-meta"><time datetime="2026-07-24">July 24, 2026</time> · Sebastien Rousseau</p>
 <p class="newsroom-excerpt">Payments are now the core of bank technology strategy. This is the operating model, risk frontier and revenue playbook G-SIBs need to lead the agentic, real-time cycle.</p>
 </div>
@@ -425,7 +473,7 @@ site_software: "Static Site Generator, Rust"
 <img alt="An abstract technical background, representing the architectural roadmap of an enterprise-grade static site generator." src="https://cloudcdn.pro/stocks/images/gemini-background.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Static Site Generator · Rust · Web Security</span>
+<span class="newsroom-eyebrow">Open Source · Static Site Generator · Rust</span>
 <h3><a href="/2026-07-22-ssg-enterprise-strategic-deep-dive-architectural-roadmap/index.html" title="Static Site Generator (SSG): Enterprise-Grade Strategic Deep Dive and Architectural Roadmap">Static Site Generator (SSG): Enterprise-Grade Strategic Deep Dive and Architectural Roadmap</a></h3>
 <p class="newsroom-meta"><time datetime="2026-07-22">July 22, 2026</time> · Sebastien Rousseau</p>
 <p class="newsroom-excerpt">Compile-time WCAG gates, SHA-384 SRI, CSP injection and a local-first LLM pipeline set this Rust engine apart, but incremental builds, native minification and AVIF are still aspirational. Here is the honest gap analysis and the road to 1.0.</p>

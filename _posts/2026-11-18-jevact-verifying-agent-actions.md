@@ -110,21 +110,22 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # Verifying Agent Actions Before They Run: JevAct's Decision-Model Gate
 
-**Most agent loops run a tool call the moment the model proposes it, and JevAct's results suggest that a cheap, probability-based checkpoint placed just before execution can make tool-using agents more reliable, though the gains vary sharply by benchmark.**
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> JevAct is a runtime verification framework that intercepts selected agent actions before execution and returns targeted feedback for bounded revision. It combines executable checks over tool state with a prefill-only decision model called Kev. Against a ReAct harness using the same agent LLM, all eight agents tested on Telecom improved on both at-least-once and three-run success, and all nine on BFCL improved in three-run success, though their at-least-once results were mixed; Airline effects were smaller and varied by agent.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> JevAct checks selected LLM agent actions before they run. Against same-model ReAct baselines, gains were consistent on Telecom and BFCL but mixed on Airline.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>The gap is real.</strong> Proposed actions are often executed without independent verification of policy compliance or task completion.</li>
-  <li><strong>Two kinds of check.</strong> Deterministic code verifies tool-state facts; a decision model assesses conversational context probabilistically.</li>
-  <li><strong>Nothing about the agent changes.</strong> The agent's LLM, base prompt and tools stay as they were.</li>
-  <li><strong>Results are uneven.</strong> Telecom gains are uniform across agents, BFCL at-least-once results are mixed, and Airline varies by agent.</li>
-  <li><strong>The evidence covers the whole harness.</strong> The comparisons evaluate the full system, not the judge in isolation.</li>
+  <li><strong>The problem: execution follows proposal.</strong> An agent that books a flight, cancels an order or changes an account setting is doing something that can't be quietly undone.</li>
+  <li><strong>What JevAct is.</strong> JevAct is a harness that checks selected proposals before execution.</li>
+  <li><strong>Two kinds of evidence, one gate.</strong> The design rests on a split between what can be verified deterministically and what can't.</li>
+  <li><strong>Why a decision model instead of an LLM judge.</strong> The obvious alternative is an LLM judge reading the proposal and writing a verdict.</li>
 </ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026</a>.</p>
 </aside>
 <!-- lead-end -->
+
+**Most agent loops run a tool call the moment the model proposes it, and JevAct's results suggest that a cheap, probability-based checkpoint placed just before execution can make tool-using agents more reliable, though the gains vary sharply by benchmark.**
 
 > **Executive Summary**
 >
@@ -240,3 +241,14 @@ No. Because JevAct adds compiled checks and revision opportunities, the main com
 - Chen, Z., Kang, M. and Li, B., (2025). [ShieldAgent: Shielding Agents via Verifiable Safety Policy Reasoning ⧉](https://arxiv.org/abs/2503.22738 "ShieldAgent"). arXiv.
 - Li, Y., Miao, Y., Krishnan, R. and Padman, R., (2026). [Jev-as-a-Judge: Accept When Confident, Escalate When Unsure ⧉](https://arxiv.org/abs/2609.26550 "Jev-as-a-Judge"). arXiv.
 - Rao, D. and Callison-Burch, C., (2026). [Jev vs. LLMs as Rubric Judges: Cheaper, Faster, and Wrong in the Same Places ⧉](https://arxiv.org/abs/2609.29769 "Jev vs. LLMs as Rubric Judges"). arXiv.
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior payments and financial services leader writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services and the transformation of wholesale payments.</span><span class="author-credentials">More than 20 years in payments, banking and digital technology. Leads wholesale payments API products at HSBC · EPAA Quantum-Safe Working Group member. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-11-20">2026-11-20</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026" class="related-media" aria-label="CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026" tabindex="-1"><img alt="Glowing data-centre rack stack at night — symbolising the inspectable, agent-controllable, open-source edge that CloudCDN is built on" src="https://cloudcdn.pro/stocks/images/alis-po-IdVNRv-5wJo.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026">CloudCDN: An Open-Source Blueprint for the AI-Native Edge in 2026</a></h3><p><time datetime="2026-06-11">2026-06-11</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->
