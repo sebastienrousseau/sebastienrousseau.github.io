@@ -55,7 +55,6 @@ ROOT = Path(__file__).resolve().parents[2]
 POSTS = ROOT / "_posts"
 I18N = ROOT / "_data" / "i18n"
 # Retired article URLs, keyed by locale (see postbuild_lib/redirects.py).
-REDIRECTS = ROOT / "_data" / "redirects" / "articles.json"
 
 # Marker the scaffolder leaves at the top of every stub body. Used by
 # Claude Code to detect which files still need a translation pass, and
@@ -292,8 +291,11 @@ def rederive_slug(en_slug: str, lang_code: str, *, dry_run: bool) -> str:
     ``scaffold_one`` names the stub from the English title; translating
     the title afterwards leaves a slug that no longer derives from it,
     which ``tests/validation/test_slug_derivable.py`` rejects. This moves
-    the file, rewrites its own URL fields and updates ``slugs.json``; if
-    the old URL is live on main, it also redirects it to the new one.
+    the file, rewrites its own URL fields and updates ``slugs.json``.
+
+    ADR-0015 URL freeze: a post already live on main is never renamed, even
+    when its title no longer derives its slug. Changing published URLs is
+    what preceded the 11 Sep 2026 demotion, so the slug stays put.
     """
     map_path, data = _slug_map(lang_code)
     current = data.get("articles", {}).get(en_slug)
@@ -308,6 +310,8 @@ def rederive_slug(en_slug: str, lang_code: str, *, dry_run: bool) -> str:
     target = f"{date}-{body}"
     if target == current:
         return f"  [{lang_code}] keep: {current}"
+    if _is_published(path):
+        return f"  [{lang_code}] frozen: {current} is published (ADR-0015), not renamed"
     if dry_run:
         return f"  [{lang_code}] would rename: {current} -> {target}"
     base = f"https://sebastienrousseau.com/{lang_code}/"
@@ -317,9 +321,6 @@ def rederive_slug(en_slug: str, lang_code: str, *, dry_run: bool) -> str:
     path.unlink()
     data["articles"][en_slug] = target
     map_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    if _is_published(path):
-        _redirect(lang_code, current, target)
-        return f"  [{lang_code}] renamed and redirected: {current} -> {target}"
     return f"  [{lang_code}] renamed: {current} -> {target}"
 
 
@@ -330,19 +331,6 @@ def _is_published(path: Path) -> bool:
         ["git", "cat-file", "-e", f"origin/main:{rel}"], cwd=ROOT, capture_output=True, check=False
     )
     return probe.returncode == 0
-
-
-def _redirect(lang_code: str, old: str, new: str) -> None:
-    """Record ``old -> new`` for a locale, retargeting any redirect that
-    pointed at ``old`` so no chain forms (ADR-0012: renaming a live URL
-    is an individually-redirected change)."""
-    data = json.loads(REDIRECTS.read_text(encoding="utf-8"))
-    locale = data.setdefault(lang_code, {})
-    for source, dest in locale.items():
-        if dest == old:
-            locale[source] = new
-    locale[old] = new
-    REDIRECTS.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def find_stub_locales(en_slug: str) -> list[tuple[str, Path]]:

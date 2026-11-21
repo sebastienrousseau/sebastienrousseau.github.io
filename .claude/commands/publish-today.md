@@ -84,6 +84,8 @@ Update the `banner:` line in `_posts/<slug>.md` with your chosen URL. Also updat
 
 ### 5. Scaffold the 34 locale stubs
 
+> Since ADR-0015 (v0.0.45) only English is indexed: the 34 translations are published for readers with `noindex, follow`. Translate them as before; the i18n gates still require every locale.
+
 ```bash
 python3 scripts/editorial/translate_post.py <slug>          # writes 34 _posts/<lang>/<slug>.md + slug-map entries
 ```
@@ -173,7 +175,7 @@ Step 5 names every stub from the English title. Once step 6 translates the title
 python3 scripts/editorial/translate_post.py <slug> --rederive-slugs   # renames, rewrites url/permalink/id, updates slugs.json
 ```
 
-The same command translates a live article's backlog stubs: when the old locale URL is already on `origin/main`, it also adds an `old -> new` entry to `_data/redirects/articles.json` (ADR-0012), so inbound links keep working.
+It only renames tonight's new stubs. A locale post already on `origin/main` is frozen (ADR-0015): the command prints `frozen` and leaves its slug alone, and CI's URL-freeze check fails any PR that renames or deletes a published page. Never rename a published URL by hand.
 
 A locale that prints `error: title derives no slug` (Japanese and Chinese titles without readings) needs its words added to `_data/i18n/romanisation-lexicon.json`; then run the command again.
 
