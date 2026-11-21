@@ -158,7 +158,7 @@ Autorii explică și de ce domeniul se află acolo unde se află. Deoarece succe
 
 | Dimensiune | Complexitate în timp | Complexitate în spațiu | Complexitate de eșantionare |
 | :--- | :--- | :--- | :--- |
-| **Definiție operațională** | Timpul de execuție asimptotic necesar pentru a produce ipoteza $h$ | Amprenta de memorie necesară în timpul antrenării și al evaluării | Numărul de exemple de antrenare $m$ necesar pentru a învăța o familie de concepte |
+| **Definiție operațională** | Timpul de execuție asimptotic necesar pentru a produce ipoteza *h* | Amprenta de memorie necesară în timpul antrenării și al evaluării | Numărul de exemple de antrenare *m* necesar pentru a învăța o familie de concepte |
 | **Teorie de referință** | Complexitate computațională (P vs NP, dificultatea antrenării) | Constrângerile de memorie ale arhitecturii și localitatea cache-ului | Învățare PAC, complexitate Rademacher și dimensiune VC |
 | **Implicație de cost** | Puterea de calcul a serverelor și bugetul de inferență GPU/CPU | Capacitatea RAM și SRAM pe cip | Costul colectării, adnotării și etichetării datelor |
 | **Rol teoretic** | Măsoară eficiența algoritmului în timp de execuție | Măsoară eficiența resurselor de memorie | Determină eroarea de generalizare și marginile pentru datele nevăzute |

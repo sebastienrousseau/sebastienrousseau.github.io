@@ -16,7 +16,7 @@ description: "CloudCDN trasforma la CDN in un piano di controllo edge sicuro e c
 format-detection: "telephone=no"
 hreflang: "it"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/it/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026"
+id: "https://sebastienrousseau.com/it/2026-06-11-cloudcdn-un-blueprint-open-source-per"
 image_alt: "Ritratto in bianco e nero di Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -32,7 +32,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/it/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026"
+permalink: "https://sebastienrousseau.com/it/2026-06-11-cloudcdn-un-blueprint-open-source-per"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -43,7 +43,7 @@ subtitle: "Spostare la CDN globale dal caching statico dei contenuti a un piano 
 tags: "CloudCDN, open source, CDN, edge, agenti AI, MCP, Cloudflare Workers, Durable Objects, rate limiting, zero trust, WebAuthn, SLSA, DORA, BCBS 239, Basel III, banking cloud-native"
 theme-color: "0, 83, 191"
 title: "CloudCDN: un blueprint open source per l'edge AI-nativo nel 2026"
-url: "https://sebastienrousseau.com/it/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026"
+url: "https://sebastienrousseau.com/it/2026-06-11-cloudcdn-un-blueprint-open-source-per"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
@@ -85,7 +85,7 @@ twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastie
 twitter_image_alt: "Logo di Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "CloudCDN: blueprint open source per l'edge AI-nativo"
-twitter_url: "https://sebastienrousseau.com/it/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026"
+twitter_url: "https://sebastienrousseau.com/it/2026-06-11-cloudcdn-un-blueprint-open-source-per"
 
 excerpt: "CloudCDN è un blueprint open source per l'edge AI-nativo — un gateway MCP zero-trust con 42 strumenti, rate limiting atomico su Durable Objects, passkey WebAuthn, URL firmati, provenance di build SLSA Level 3 e 3.185 test al 100% di copertura, mappati su DORA, BCBS 239 e Basel III."
 

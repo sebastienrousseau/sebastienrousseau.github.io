@@ -13,7 +13,7 @@ description: "25. května 2026 vydal papež Lev XIV. encykliku Magnifica Humanit
 format-detection: "telephone=no"
 hreflang: "cs"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/cs/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+id: "https://sebastienrousseau.com/cs/2026-05-26-magnifica-humanitas-cteni-prvni-papezske-encykliky"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/cs/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+permalink: "https://sebastienrousseau.com/cs/2026-05-26-magnifica-humanitas-cteni-prvni-papezske-encykliky"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -40,7 +40,7 @@ tags: "Magnifica Humanitas, Pope Leo XIV, etika AI, kvantové výpočty, dějiny
 excerpt: "25. května 2026 vydal papež Lev XIV. encykliku Magnifica Humanitas — první papežskou encykliku o umělé inteligenci. Čteno z pohledu technologického průmyslu, nikoli jako doktrína, ale jako etický rámec, odráží každou morální úzkost vlaku, automobilu, jaderné energie i internetu — a dospívá k naději."
 theme-color: "0, 83, 191"
 title: "Magnifica Humanitas: čtení první papežské encykliky o UI"
-url: "https://sebastienrousseau.com/cs/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+url: "https://sebastienrousseau.com/cs/2026-05-26-magnifica-humanitas-cteni-prvni-papezske-encykliky"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/rss.xml"
 category: "Technology"
@@ -161,7 +161,7 @@ To je vzorec, na nějž *Magnifica Humanitas* ukazuje, a proto by dokument nemě
 
 Dvě konkrétní obavy encykliky přímo dopadají na inženýrství finančních systémů a obě si zaslouží spíše odpověď inženýra než věřícího.
 
-První je **koncentrace moci v soukromých, transnacionálních rukou**. Pozorování encykliky, že hlavními hybateli této technologie jsou nyní soukromí aktéři, jejichž kapacita přesahuje kapacitu mnoha států, není teologickým tvrzením; je to přesný popis krajiny UI roku 2026 a přesně to je obava, jež se vine regulatorní architekturou, již se průmysl právě snaží naplnit — povinnosti vysokého rizika podle EU AI Act vymahatelné od 2. srpna 2026, ustanovení DORA o riziku koncentrace třetích stran a hnutí za suverénní cloud a suverénní kontrolní rovinu pokrytá v textech [cloudová architektura](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "The Best Cloud Infrastructure Architecture in 2026") a [agentní inženýrství](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "Agentic Engineering for Banks") na těchto stránkách. Encyklika a EU AI Act se pozoruhodně obávají téhož: že schopnost bez odpovědnosti koncentruje moc způsoby, jež unikají demokratické správě. Jedna to říká jazykem sociální nauky, druhá jazykem posuzování shody. Diagnóza je totožná.
+První je **koncentrace moci v soukromých, transnacionálních rukou**. Pozorování encykliky, že hlavními hybateli této technologie jsou nyní soukromí aktéři, jejichž kapacita přesahuje kapacitu mnoha států, není teologickým tvrzením; je to přesný popis krajiny UI roku 2026 a přesně to je obava, jež se vine regulatorní architekturou, již se průmysl právě snaží naplnit — povinnosti vysokého rizika podle EU AI Act vymahatelné od 2. srpna 2026, ustanovení DORA o riziku koncentrace třetích stran a hnutí za suverénní cloud a suverénní kontrolní rovinu pokrytá v textech [cloudová architektura](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "The Best Cloud Infrastructure Architecture in 2026") a [agentní inženýrství](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "Agentic Engineering for Banks") na těchto stránkách. Encyklika a EU AI Act se pozoruhodně obávají téhož: že schopnost bez odpovědnosti koncentruje moc způsoby, jež unikají demokratické správě. Jedna to říká jazykem sociální nauky, druhá jazykem posuzování shody. Diagnóza je totožná.
 
 Druhou jsou **kvantové výpočty**, jež encyklika nejmenuje, jejichž etickou podobu však přesně předjímá. Premisou postkvantové migrace pokryté v textu [Zabezpečení účetní knihy](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Securing the Ledger") je, že schopnost, jež je nyní v konstrukci — kryptograficky relevantní kvantový počítač — až dorazí, retroaktivně odhalí vše zašifrované za dnešních předpokladů. „Harvest now, decrypt later" je v sekulárním rejstříku přesně tím druhem moci-bez-moudrosti, před nímž encyklika varuje: technologií, jejíž důsledky přicházejí na časové ose, jež předbíhá přípravu, v rukou těch, kdo mají zdroje uplatnit ji první. Trvání encykliky na tom, ptát se „kam směřujeme?" dříve, než posloupnost havarijních stavů určí cestu, je pro bezpečnostního inženýra dobrou praxí převedenou do morální filozofie.
 
@@ -231,8 +231,8 @@ Optimistické, ale ne naivně. Argument zní, že budoucnost UI a kvantových v�
 
 - Sebastien Rousseau, (2026). [Flash disk z Lucy znovu otevřený: přenos znalostí, UI a kvanta](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html "Flash disk z Lucy znovu otevřený").
 - Sebastien Rousseau, (2026). [Zabezpečení účetní knihy: průvodce postkvantovou migrací pro firemní finance na úrovni představenstva](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Zabezpečení účetní knihy").
-- Sebastien Rousseau, (2026). [Agentní inženýrství pro banky: plán pro rok 2026](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "Agentní inženýrství pro banky").
-- Sebastien Rousseau, (2026). [Nejlepší cloudová infrastrukturní architektura roku 2026](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "Nejlepší cloudová infrastrukturní architektura roku 2026").
+- Sebastien Rousseau, (2026). [Agentní inženýrství pro banky: plán pro rok 2026](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "Agentní inženýrství pro banky").
+- Sebastien Rousseau, (2026). [Nejlepší cloudová infrastrukturní architektura roku 2026](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "Nejlepší cloudová infrastrukturní architektura roku 2026").
 - Papež Lev XIV., (2026). [Encyklika *Magnifica Humanitas* o ochraně lidské osoby v době umělé inteligence ⧉](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html "Magnifica Humanitas — úplný text, Vatican.va"). Svatý stolec.
 - Papež Lev XIII., (1891). [Encyklika *Rerum Novarum* o kapitálu a práci ⧉](https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_15051891_rerum-novarum.html "Rerum Novarum — Vatican.va"). Svatý stolec.
 - Vatican News, (2026). [První encyklika papeže Lva XIV. *Magnifica humanitas* vyjde 25. května ⧉](https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html "Vatican News — Magnifica Humanitas"). Vatican News.

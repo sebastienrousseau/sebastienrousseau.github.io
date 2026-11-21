@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "Banner del white paper Architettura Bancaria 2026"
 twitter_site: "@wwdseb"
 twitter_title: "White Paper Architettura Bancaria 2026"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -186,7 +186,7 @@ Il registro di 10 rischi del PDF è calibrato sui delta espliciti che i consigli
 2. **Perdita silenziosa di dati MT verso MX.** Le banche che emettono MT103 con dati di indirizzo o remittance troncati vengono ingerite senza errori nei canali MX — ma i campi strutturati restano vuoti. La conseguenza a valle (screening sanzioni fallito, trigger AML mancati, rotture di riconciliazione) emerge tra 30 e 90 giorni dopo il cut-over, ben oltre il forensics della change window. Il registro quantifica il costo atteso di remediation back-book per ogni €1 mld di flussi di pagamento.
 3. **Attribuzione delle azioni dell'agente.** Quando un agente di tesoreria sostenuto da LLM innesca una catena di pagamento, tre principali possono rivendicarne la titolarità — il proprietario del modello, il fornitore del rail, l'autore della policy. Senza una decisione di attribuzione esplicita cablata nel livello di orchestrazione, la banca eredita tutte e tre le responsabilità. Il registro definisce l'albero di attribuzione e la catena di evidenza `SR 11-7` necessaria a difenderlo.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Scarica il White Paper Architettura Bancaria 2026 (PDF)">Scarica il briefing PDF</a> <a class="pill ghost no-chev" href="/papers" title="Tutti i white paper e le ricerche pubblicate">Tutti i white paper</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Scarica il White Paper Architettura Bancaria 2026 (PDF)">Scarica il briefing PDF</a> <a class="pill ghost no-chev" href="/research" title="Tutti i white paper e le ricerche pubblicate">Tutti i white paper</a></p>
 
 ## Sintesi della revisione interna
 

@@ -127,9 +127,9 @@ Ennek a megközelítésnek a teljesítménye már most is rendkívüli. A legjob
 | :--- | :--- | :--- |
 | **Fizikai mechanizmus** | Átmenetek az elektronhéjban (cézium/stroncium) | Proton-/neutronátmenetek a tórium-229 magjában |
 | **Lekérdező közeg** | Mikrohullám vagy optikai lézer a vegyértékelektronokon | Vákuum-ultraibolya lézer a kristályba ágyazott magokon |
-| **Gazdaanyag** | Gázcellák vagy lézerrel hűtött optikairács-csapdák | Szilárd kalcium-fluorid kristályok ($CaF_2$) |
-| **Jelenlegi teljesítmény** | Évmilliárdok kellenek $\le 1$ másodperc eltéréshez | Atomóra-pontosságot ért el a sötét anyag keresésében |
-| **Célzott stabilitás** | Bevett nemzetközi szabvány ($10^{-18}$) | Egy nagyságrendnyi stabilitásjavulás várható |
+| **Gazdaanyag** | Gázcellák vagy lézerrel hűtött optikairács-csapdák | Szilárd kalcium-fluorid kristályok (CaF₂) |
+| **Jelenlegi teljesítmény** | Évmilliárdok kellenek ≤ 1 másodperc eltéréshez | Atomóra-pontosságot ért el a sötét anyag keresésében |
+| **Célzott stabilitás** | Bevett nemzetközi szabvány (10⁻¹⁸) | Egy nagyságrendnyi stabilitásjavulás várható |
 | **Hardveres kialakítás** | Nagy, sérülékeny laboratóriumi vákuumberendezés | Kompakt, strapabíró, szilárdtest terepi egységek lehetősége |
 
 Az új órák áthelyezik az ugrás helyét. Az elektronhéjban lévő elektronok helyett lézerekkel a protonokat és neutronokat ugratják energiaszintek között egy atom magjában, ebben az esetben a tórium-229-ben. A magórában az időt úgy számítják ki, hogy megfigyelik, hogyan lép kölcsönhatásba egy nagy teljesítményű lézer az atom magjával.
@@ -226,7 +226,7 @@ Ha a szilárd kalcium-fluorid kristályos architektúrák a gyártásban kevésb
 
 ### Alapkutatási fizika és asztrofizika
 
-Mivel a nukleáris energiaszintek közvetlenül függnek az erős kölcsönhatástól és az $\alpha$ elektromágneses csatolási állandótól, a magórák új érzékenységet kínálnak annak vizsgálatára, hogy az alapvető fizikai állandók változnak-e a kozmikus idő során, valamint a sötétanyag-jelöltek kutatására.
+Mivel a nukleáris energiaszintek közvetlenül függnek az erős kölcsönhatástól és az α elektromágneses csatolási állandótól, a magórák új érzékenységet kínálnak annak vizsgálatára, hogy az alapvető fizikai állandók változnak-e a kozmikus idő során, valamint a sötétanyag-jelöltek kutatására.
 
 ## Összegzés
 

@@ -121,7 +121,7 @@ Das strukturelle Argument lautet also: Generative Richter sind pro Kriterium teu
 
 | Architekturdimension | Generative LLM-Richter (z. B. GPT-4 als Richter) | Einzel-Token-Klassifikatoren (z. B. Llama Guard) | Multi-Query-RLCD-Detektor (Jev) |
 | :--- | :--- | :--- | :--- |
-| **Bewertungsmechanismus** | Vollständiger autoregressiver Dekodierdurchlauf pro Kriterium | Softmax-Wahrscheinlichkeit über ein einzelnes Ausgabe-Token | Kalibrierter Wahrscheinlichkeitstensor mit mehreren Köpfen $P(\text{yes})$ |
+| **Bewertungsmechanismus** | Vollständiger autoregressiver Dekodierdurchlauf pro Kriterium | Softmax-Wahrscheinlichkeit über ein einzelnes Ausgabe-Token | Kalibrierter Wahrscheinlichkeitstensor mit mehreren Köpfen P(yes) |
 | **Fragen pro Aufruf** | 1 Bewertungsprompt pro Modellaufruf | 1 Klassifikationslabel pro Modellaufruf | Mehrere binäre/kategoriale/ordinale Fragen in 1 Aufruf |
 | **Inferenzkosten** | Hoch (10 bis 50 $ pro 1.000 Interaktionen) | Mittel (0,50 bis 2,00 $ pro 1.000 Interaktionen) | 63× niedriger (0,30 $ für 19 vollständige Benchmarks) |
 | **AUROC-Leistung** | Benchmarkabhängig; anfällig für Richterdrift | Hoch bei spezifisch trainierten Sicherheitskategorien | Mediane AUROC 0,886 zero-shot über 44 Suiten |

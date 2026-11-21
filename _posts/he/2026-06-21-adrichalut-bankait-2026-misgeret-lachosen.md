@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "באנר הנייר הלבן אדריכלות בנקאית 2026"
 twitter_site: "@wwdseb"
 twitter_title: "נייר לבן: אדריכלות בנקאית 2026"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -186,7 +186,7 @@ site_software: "Static Site Generator, Rust"
 2. **אובדן נתונים שקט במעבר MT-ל-MX.** בנקים המשדרים MT103 עם נתוני כתובת או העברה קטועים מוזרמים בנקיות לערוצי MX — אך השדות המובנים נשארים ריקים. ההשלכה במורד (כשל בסינון סנקציות, החמצת טריגרים של AML, שברי התאמה) צפה 30–90 ימים לאחר המעבר, הרבה אחרי החקירה המשפטית של חלון השינוי. הרישום מכמת את עלות התיקון הצפויה של ספר אחורי לכל 1 מיליארד יורו של זרימת תשלומים.
 3. **ייחוס פעולות הסוכן.** כשסוכן אוצרות מבוסס-LLM מפעיל שרשרת תשלומים, שלושה מנהלים יכולים לטעון לבעלות — בעל המודל, ספק הרכבת, מחבר המדיניות. ללא החלטת ייחוס מפורשת המוטבעת בשכבת התזמור, הבנק יורש את כל שלוש החבויות. הרישום מגדיר את עץ הייחוס ואת שרשרת הראיות לפי SR 11-7 הנדרשת להגנה עליו.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="הורד את הנייר הלבן אדריכלות בנקאית 2026 (PDF)">הורד את תקציר ה-PDF</a> <a class="pill ghost no-chev" href="/papers" title="עיין בכל הניירות הלבנים והמחקרים שפורסמו">כל הניירות הלבנים</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="הורד את הנייר הלבן אדריכלות בנקאית 2026 (PDF)">הורד את תקציר ה-PDF</a> <a class="pill ghost no-chev" href="/research" title="עיין בכל הניירות הלבנים והמחקרים שפורסמו">כל הניירות הלבנים</a></p>
 
 ## תקציר סקירה פנימית
 

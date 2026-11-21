@@ -147,9 +147,9 @@ Eu diria que esse enquadramento é o certo para avaliar o resultado. Uma melhori
 | :--- | :--- | :--- | :--- |
 | **Expoente de empacotamento** | Cota de Kabatianskii–Levenshtein: 0,59905576... | Pelo menos tão forte quanto as cotas de códigos esféricos (Cohn–Zhao) | Provada a taxa assintótica exata conjecturada por Afkhami-Jeddi et al. (2020) |
 | **Caráter definitivo da cota** | Apenas refinamentos de fatores de ordem inferior | Questão aberta sobre a lacuna assintótica em dimensões altas | Cota inferior correspondente exata: nenhuma função auxiliar supera esta taxa |
-| **Incerteza de sinal de Fourier** | Cotas de sinal separadas ($A^+(d) < A^-(d)$) | Ligada a funções-teste antiautoduais de Fourier | Resolvida assintoticamente; incerteza de sinal regida pela reflexão de Mellin |
+| **Incerteza de sinal de Fourier** | Cotas de sinal separadas (A⁺(d) < A⁻(d)) | Ligada a funções-teste antiautoduais de Fourier | Resolvida assintoticamente; incerteza de sinal regida pela reflexão de Mellin |
 | **Códigos corretores de erros** | Cotas clássicas para códigos esféricos e binários | Acopladas assintoticamente às cotas de empacotamento | Melhorias por fatores exponenciais para todos os parâmetros de distância fixa |
-| **Teto metodológico** | Otimização numérica de fatores polinomiais | Otimização aberta das funções-teste auxiliares $f \in \mathcal{A}_d$ | Teto matemático provado: novos ganhos exigem métodos fora de Cohn-Elkies |
+| **Teto metodológico** | Otimização numérica de fatores polinomiais | Otimização aberta das funções-teste auxiliares f ∈ 𝒜\_d | Teto matemático provado: novos ganhos exigem métodos fora de Cohn-Elkies |
 
 ## Por que a cota inferior correspondente muda a pergunta
 
@@ -237,11 +237,11 @@ A determinação exata da taxa de decaimento de Cohn-Elkies em dimensões altas 
 
 ### Matemática pura e geometria discreta
 
-Para quem trabalha com geometria em dimensões altas e análise harmônica, a determinação da taxa exata de Cohn-Elkies muda o panorama da pesquisa. Como a cota inferior correspondente prova que nenhuma função auxiliar em $\mathcal{A}_d$ pode superar o novo expoente, os pesquisadores podem parar de procurar funções-teste radiais melhores dentro do arcabouço clássico de programação linear. O avanço rumo a empacotamentos mais densos ou a cotas universais mais apertadas agora precisa explorar técnicas de programação não linear, hierarquias semidefinidas de ordem superior ou construções geométricas radicalmente diferentes.
+Para quem trabalha com geometria em dimensões altas e análise harmônica, a determinação da taxa exata de Cohn-Elkies muda o panorama da pesquisa. Como a cota inferior correspondente prova que nenhuma função auxiliar em 𝒜\_d pode superar o novo expoente, os pesquisadores podem parar de procurar funções-teste radiais melhores dentro do arcabouço clássico de programação linear. O avanço rumo a empacotamentos mais densos ou a cotas universais mais apertadas agora precisa explorar técnicas de programação não linear, hierarquias semidefinidas de ordem superior ou construções geométricas radicalmente diferentes.
 
 ### Criptografia e segurança baseada em reticulados
 
-A criptografia baseada em reticulados - núcleo de padrões pós-quânticos como ML-KEM e ML-DSA - depende fortemente da dificuldade conjecturada de encontrar vetores mais curtos ou mais próximos em reticulados euclidianos de dimensão alta. A redução direta a partir de 3SAT, que estabelece dificuldade de fator $n^{1/400}$ para o problema euclidiano do vetor mais próximo (CVP), somada a tetos exponenciais mais apertados para empacotamentos de esferas e códigos esféricos, consolida os fundamentos teóricos das reduções de pior caso para caso médio em reticulados, sem enfraquecer parâmetros concretos de segurança.
+A criptografia baseada em reticulados - núcleo de padrões pós-quânticos como ML-KEM e ML-DSA - depende fortemente da dificuldade conjecturada de encontrar vetores mais curtos ou mais próximos em reticulados euclidianos de dimensão alta. A redução direta a partir de 3SAT, que estabelece dificuldade de fator n\^(1/400) para o problema euclidiano do vetor mais próximo (CVP), somada a tetos exponenciais mais apertados para empacotamentos de esferas e códigos esféricos, consolida os fundamentos teóricos das reduções de pior caso para caso médio em reticulados, sem enfraquecer parâmetros concretos de segurança.
 
 ### Prova automática de teoremas e modelos de fundação
 
@@ -267,7 +267,7 @@ Cohn e Gonçalves estabeleceram que o problema complementar de incerteza de sina
 
 **Este resultado compromete a criptografia baseada em reticulados?**
 
-Não. Embora o teorema aperte as cotas superiores sobre a densidade com que esferas podem ser empacotadas em dimensões altas e estabeleça dificuldade de fator $n^{1/400}$ para o problema do vetor mais próximo, ele não fornece algoritmos de redução de reticulados em tempo polinomial. Os criptossistemas práticos baseados em reticulados continuam seguros contra os ataques quânticos e clássicos conhecidos.
+Não. Embora o teorema aperte as cotas superiores sobre a densidade com que esferas podem ser empacotadas em dimensões altas e estabeleça dificuldade de fator n\^(1/400) para o problema do vetor mais próximo, ele não fornece algoritmos de redução de reticulados em tempo polinomial. Os criptossistemas práticos baseados em reticulados continuam seguros contra os ataques quânticos e clássicos conhecidos.
 
 ## Referências
 

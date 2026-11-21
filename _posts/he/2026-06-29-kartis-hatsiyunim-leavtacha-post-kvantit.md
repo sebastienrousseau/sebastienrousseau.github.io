@@ -13,7 +13,7 @@ description: "כרטיס הציונים לאבטחה פוסט-קוונטית 202
 format-detection: "telephone=no"
 hreflang: "he"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/he/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+id: "https://sebastienrousseau.com/he/2026-06-29-kartis-hatsiyunim-leavtacha-post-kvantit"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/he/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+permalink: "https://sebastienrousseau.com/he/2026-06-29-kartis-hatsiyunim-leavtacha-post-kvantit"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -39,7 +39,7 @@ subtitle: "כיצד דירקטוריונים חייבים למדוד ולנהל 
 tags: "פוסט-קוונטית, קריפטוגרפיה, בנקאות, ממשל, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
 theme-color: "0, 83, 191"
 title: "כרטיס הציונים לאבטחה פוסט-קוונטית 2026: מסגרת מדדים ברמת הדירקטוריון"
-url: "https://sebastienrousseau.com/he/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+url: "https://sebastienrousseau.com/he/2026-06-29-kartis-hatsiyunim-leavtacha-post-kvantit"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/rss.xml"
 category: "Technology"
@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>קריאה נוספת:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib וההגירה הבנקאית הפוסט-קוונטית ב-2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: האלגוריתם המגן בעידן הקוונטי</a>.</p>
 </aside>
+
 אבטחה פוסט-קוונטית כבר אינה פרויקט מחקר. "שעון הפיקוח" מתקתק לעבר מועדי האכיפה של סוף שנות ה-2020. הסופיות של [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final "תקן NIST FIPS 203 לכימוס מפתחות") ו-[NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final "תקן NIST FIPS 204 לחתימות דיגיטליות") קודדה את התקנים לכימוס מפתחות וחתימות דיגיטליות.
 
 הגופים הרגולטוריים מצפים כעת מבנקי Tier-1 לעבור מעבר לתוכניות פיילוט. ב-2026, המוקד עבר לתיעוש התקנים הללו. כשל בהוכחת מסלול הגירה ברור גורר עונשים רגולטוריים משמעותיים תחת [חוק החוסן התפעולי הדיגיטלי (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj "Digital Operational Resilience Act") ואחריות אישית פוטנציאלית לדירקטורים המתעלמים מאיום הפענוח הקוונטי הצפוי.

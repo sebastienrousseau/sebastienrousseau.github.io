@@ -13,7 +13,7 @@ description: "AI riskini, bulut yoğunlaşmasını, kuantum güvenli güvenliği
 format-detection: "telephone=no"
 hreflang: "tr"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/tr/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+id: "https://sebastienrousseau.com/tr/2026-06-08-2026-da-bankacilik-dayaniklilik-endeksi"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/tr/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+permalink: "https://sebastienrousseau.com/tr/2026-06-08-2026-da-bankacilik-dayaniklilik-endeksi"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "bankacılık dayanıklılığı, DORA, AI riski, bulut yoğunlaşması, k
 excerpt: "2026 bankacılık dayanıklılık endeksi — AI riskini, bulut yoğunlaşmasını, kuantum güvenli geçişi, ödeme sürekliliğini ve kritik üçüncü taraf bağımlılığını yönetim kurulunun ve denetim otoritesinin birlikte okuyabileceği tek bir operasyonel dayanıklılık panosunda birleştiriyor."
 theme-color: "0, 83, 191"
 title: "2026'da Bankacılık Dayanıklılık Endeksi: AI, Bulut, Kuantum, Ödemeler ve Üçüncü Taraf Yoğunlaşma Riski"
-url: "https://sebastienrousseau.com/tr/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+url: "https://sebastienrousseau.com/tr/2026-06-08-2026-da-bankacilik-dayaniklilik-endeksi"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/rss.xml"
 category: "Risk"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Kuantum güvenli geçiş bir güvenlik metriği değil, bir operasyonel dayanıklılık metriğidir.</strong> Bugün açığa çıkan uzun ömürlü veriler, yarının dayanıklılık testini geçemez.</li>
   <li><strong>Üçüncü taraf yoğunlaşması artık sistemiktir.</strong> Tek hyperscaler, tek PSP, tek LLM sağlayıcısı bağımlılıkları, dayanıklılık panosunda tek arıza noktalarına karşılık gelir.</li>
 </ul>
-<p class="post-lead-related"><strong>İlgili okuma:</strong> <a href="https://sebastienrousseau.com/tr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA, EU AI Yasası ve Veri Egemenliği: Bankalar için 2026 Uyum Yığını</a>, <a href="https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">2026'da Bulut Yerel Bankacılık: Kubernetes, DORA, Egemenlik ve VM-Konteyner Ayrımının Sonu</a>.</p>
+<p class="post-lead-related"><strong>İlgili okuma:</strong> <a href="https://sebastienrousseau.com/tr/2026-05-28-dora-eu-ai-yasasi-ve-veri/index.html">DORA, EU AI Yasası ve Veri Egemenliği: Bankalar için 2026 Uyum Yığını</a>, <a href="https://sebastienrousseau.com/tr/2026-05-20-2026-da-bulut-yerel-bankacilik-kubernetes/index.html">2026'da Bulut Yerel Bankacılık: Kubernetes, DORA, Egemenlik ve VM-Konteyner Ayrımının Sonu</a>.</p>
 </aside>
 <!-- lead-end -->
 

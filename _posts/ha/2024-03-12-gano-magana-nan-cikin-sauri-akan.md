@@ -162,7 +162,7 @@ Haɗin OpenAI Whisper da Metal Performance Shaders akan macOS yana wakiltar babb
 .class=\"card bg-light p-3 me-3 w-100\"
 Don ƙarin koyo game da haɗin OpenAI Whisper da Metal Performance Shaders akan macOS don gane magana na lokaci na gaske, ana ƙarfafa masu karatu da su shiga cikakkiyar takardar binciken. Takardar tana ba da cikakkun bayanai na fasaha, sakamakon gwaji, da ƙarin fahimta game da aikace-aikacen da za a iya yi da kuma hanyoyin gaba na wannan fasaha. Ta hanyar samun damar shiga cikakkiyar takardar binciken, masu karatu za su sami cikakkiyar fahimta game da tsari, aiwatarwa, da tasirin wannan sabuwar hanya ta gane magana na lokaci na gaske akan na'urorin macOS. [**Karanta Cikakken Takardar Yau! ❯**][00]
 
-[00]: /papers/index.html "Buga Bincike & Takardun Fari daga Sebastien Rousseau"
+[00]: /research/index.html "Buga Bincike & Takardun Fari daga Sebastien Rousseau"
 [01]: https://developer.apple.com/documentation/metalperformanceshaders "Metal Performance Shaders - Takardun Masu Haɓakawa na Apple"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Mai Raba Layi"

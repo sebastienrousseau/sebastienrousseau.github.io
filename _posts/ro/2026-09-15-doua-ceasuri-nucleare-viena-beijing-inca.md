@@ -127,9 +127,9 @@ Performanța acestei abordări este deja extraordinară. Cele mai bune ceasuri a
 | :--- | :--- | :--- |
 | **Mecanism fizic** | Tranziții în învelișul electronic (cesiu/stronțiu) | Tranziții ale protonilor/neutronilor în nucleul de toriu-229 |
 | **Mediu de sondare** | Microunde sau lasere optice asupra electronilor de valență | Laser în ultraviolet de vid asupra nucleelor încorporate în cristal |
-| **Substrat gazdă** | Celule de gaz sau capcane de rețea optică răcite cu laser | Cristale solide de fluorură de calciu ($CaF_2$) |
-| **Performanță actuală** | Miliarde de ani pentru a câștiga/pierde $\le 1$ secundă | Precizia unui ceas atomic egalată la căutarea materiei întunecate |
-| **Stabilitate țintă** | Standard internațional consacrat ($10^{-18}$) | Îmbunătățire proiectată a stabilității cu un ordin de mărime |
+| **Substrat gazdă** | Celule de gaz sau capcane de rețea optică răcite cu laser | Cristale solide de fluorură de calciu (CaF₂) |
+| **Performanță actuală** | Miliarde de ani pentru a câștiga/pierde ≤ 1 secundă | Precizia unui ceas atomic egalată la căutarea materiei întunecate |
+| **Stabilitate țintă** | Standard internațional consacrat (10⁻¹⁸) | Îmbunătățire proiectată a stabilității cu un ordin de mărime |
 | **Format hardware** | Aparatură de laborator în vid, mare și delicată | Potențial pentru unități de teren compacte, robuste, în stare solidă |
 
 Noile ceasuri mută locul în care are loc saltul. În loc de electronii din înveliș, folosesc lasere pentru a face protonii și neutronii să sară între niveluri de energie din interiorul nucleului unui atom, în acest caz toriu-229. Timpul într-un ceas nuclear se calculează urmărind cum interacționează un laser de mare putere cu nucleul unui atom.
@@ -226,7 +226,7 @@ Dacă arhitecturile cu cristale solide de fluorură de calciu se dovedesc mai pu
 
 ### Fizică fundamentală și astrofizică
 
-Deoarece nivelurile de energie nucleare depind direct de forța tare și de constanta de cuplaj electromagnetic $\alpha$, ceasurile nucleare oferă o sensibilitate nouă pentru a testa dacă constantele fizice fundamentale variază de-a lungul timpului cosmic și pentru a investiga candidații la materia întunecată.
+Deoarece nivelurile de energie nucleare depind direct de forța tare și de constanta de cuplaj electromagnetic α, ceasurile nucleare oferă o sensibilitate nouă pentru a testa dacă constantele fizice fundamentale variază de-a lungul timpului cosmic și pentru a investiga candidații la materia întunecată.
 
 ## Concluzie
 

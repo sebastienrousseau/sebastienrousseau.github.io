@@ -158,7 +158,7 @@ Ipinaliliwanag din ng mga awtor kung bakit nasa kinalalagyan nito ang larangan. 
 
 | Dimensiyon | Time Complexity | Space Complexity | Sample Complexity |
 | :--- | :--- | :--- | :--- |
-| **Operational na depinisyon** | Asymptotic na running time na kailangan upang mailabas ang hypothesis $h$ | Memoryang kailangan habang nagte-training at nag-e-evaluate | Bilang ng training example $m$ na kailangan upang matutuhan ang pamilya ng konsepto |
+| **Operational na depinisyon** | Asymptotic na running time na kailangan upang mailabas ang hypothesis *h* | Memoryang kailangan habang nagte-training at nag-e-evaluate | Bilang ng training example *m* na kailangan upang matutuhan ang pamilya ng konsepto |
 | **Namamahalang teorya** | Computational complexity (P vs NP, hirap ng training) | Mga limitasyon sa memorya ng arkitektura at cache locality | PAC learning, Rademacher complexity at VC-dimension |
 | **Implikasyon sa gastos** | Badyet sa server compute at GPU/CPU inference | Kapasidad ng RAM at on-chip SRAM | Gastos sa pangongolekta ng datos, anotasyon at paglalagay ng label |
 | **Teoretikal na papel** | Sinusukat ang episyensiya ng runtime ng algorithm | Sinusukat ang episyensiya sa paggamit ng espasyo | Tinutukoy ang generalization error at mga bound sa datos na hindi pa nakikita |

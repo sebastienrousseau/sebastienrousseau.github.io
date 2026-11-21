@@ -129,13 +129,13 @@ Nell'informatica digitale classica, calcolare un prodotto scalare matriciale ric
 
 Le architetture di calcolo in memoria sostituiscono questo trasferimento digitale di dati con la fisica dei circuiti analogici:
 
-**Programmazione dei pesi.** I pesi della rete neurale vengono programmati direttamente in celle di memoria non volatile (come flash modificata o RAM resistiva) sotto forma di conduttanze analogiche ($G$). Una volta programmati, i pesi restano fermi nella matrice di memoria; non vengono mai prelevati né trasferiti durante l'inferenza.
+**Programmazione dei pesi.** I pesi della rete neurale vengono programmati direttamente in celle di memoria non volatile (come flash modificata o RAM resistiva) sotto forma di conduttanze analogiche (*G*). Una volta programmati, i pesi restano fermi nella matrice di memoria; non vengono mai prelevati né trasferiti durante l'inferenza.
 
-**Modulazione della tensione d'ingresso.** Le attivazioni d'ingresso (per esempio i token visivi provenienti dalle telecamere) vengono convertite in livelli di tensione analogici ($V$) e applicate alle linee di parola della matrice.
+**Modulazione della tensione d'ingresso.** Le attivazioni d'ingresso (per esempio i token visivi provenienti dalle telecamere) vengono convertite in livelli di tensione analogici (*V*) e applicate alle linee di parola della matrice.
 
-**Moltiplicazione con la legge di Ohm.** Quando la tensione d'ingresso attraversa ciascuna cella di memoria, la legge di Ohm ($I = V \times G$) esegue una moltiplicazione analogica istantanea e genera una corrente proporzionale al prodotto tra l'ingresso e il peso memorizzato.
+**Moltiplicazione con la legge di Ohm.** Quando la tensione d'ingresso attraversa ciascuna cella di memoria, la legge di Ohm (*I* = *V* × *G*) esegue una moltiplicazione analogica istantanea e genera una corrente proporzionale al prodotto tra l'ingresso e il peso memorizzato.
 
-**Accumulo con la legge di Kirchhoff delle correnti.** Lungo le linee di bit verticali, le correnti di migliaia di celle in parallelo si sommano naturalmente secondo la legge di Kirchhoff delle correnti ($\sum I = 0$).
+**Accumulo con la legge di Kirchhoff delle correnti.** Lungo le linee di bit verticali, le correnti di migliaia di celle in parallelo si sommano naturalmente secondo la legge di Kirchhoff delle correnti (Σ*I* = 0).
 
 Una sola matrice di memoria flash esegue così un'intera moltiplicazione matrice-vettore in un unico ciclo di clock, a livello fisico e senza un solo accesso alla memoria. La corrente analogica accumulata viene poi riconvertita in valori digitali da convertitori analogico-digitali (ADC) veloci posti ai bordi della matrice.
 
@@ -208,7 +208,7 @@ Il passaggio da cluster di data center da 700 W a silicio edge da 15 W rappresen
 Il collo di bottiglia di Von Neumann è il limite di throughput e di energia causato dalla separazione fisica tra l'unità di elaborazione (ALU) e la memoria di sistema (DRAM). Nei carichi di intelligenza artificiale, che comportano miliardi di moltiplicazioni matriciali, i processori spendono oltre l'85 % della loro energia totale e molti cicli di clock solo per spostare dati avanti e indietro sui bus in rame, creando gravi colli di bottiglia termici e di latenza.
 
 **Come funziona il calcolo analogico in memoria (CIM)?**
-Il calcolo in memoria esegue le operazioni matematiche direttamente dentro le celle di memoria, senza spostare i dati. I pesi della rete neurale sono memorizzati come stati di conduttanza analogica in celle di memoria non volatile. Quando si applicano tensioni d'ingresso alla matrice, la corrente attraversa le celle secondo la legge di Ohm ($I = V \times G$) e si somma lungo le linee di bit secondo la legge di Kirchhoff delle correnti. Si ottiene così un'intera moltiplicazione matrice-vettore in un solo passaggio fisico.
+Il calcolo in memoria esegue le operazioni matematiche direttamente dentro le celle di memoria, senza spostare i dati. I pesi della rete neurale sono memorizzati come stati di conduttanza analogica in celle di memoria non volatile. Quando si applicano tensioni d'ingresso alla matrice, la corrente attraversa le celle secondo la legge di Ohm (*I* = *V* × *G*) e si somma lungo le linee di bit secondo la legge di Kirchhoff delle correnti. Si ottiene così un'intera moltiplicazione matrice-vettore in un solo passaggio fisico.
 
 **Perché il calcolo in memoria è così importante per robot e droni?**
 Robot mobili e droni operano sotto stretti vincoli di dimensioni, peso, potenza e costo (SWaP-C). Dipendono da batterie a bordo e non possono sostenere radiatori pesanti né alimentatori ad alta potenza. Il calcolo in memoria offre un'efficienza energetica da 10 a 1.000 volte superiore, che consente ai robot di eseguire localmente modelli complessi visione-linguaggio-azione in un budget di 10-20 W senza sacrificare l'autonomia della batteria.

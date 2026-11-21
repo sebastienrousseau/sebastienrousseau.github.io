@@ -13,7 +13,7 @@ description: "銀行のエージェンティックAI準備態勢を6つの次元
 format-detection: "telephone=no"
 hreflang: "ja"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/ja/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+id: "https://sebastienrousseau.com/ja/2026-07-01-ejentikku-ai-index-jiritsusei-sokutei"
 image_alt: "セバスティアン・ルソーのモノクロ・ポートレート"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/ja/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+permalink: "https://sebastienrousseau.com/ja/2026-07-01-ejentikku-ai-index-jiritsusei-sokutei"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -40,7 +40,7 @@ subtitle: "銀行の52%がエージェンティックAIを稼働させる一方�
 tags: "agentic AI, AIガバナンス, 銀行, 自律性レベル, モデルリスク, SR 11-7, EU AI Act, FSB, IOSCO, MAS, IMDA, コントロールプレーン, 監査ログ, DORA, McKinsey, Stanford AI Index"
 theme-color: "0, 83, 191"
 title: "2026年における銀行向けエージェンティックAIインデックス：自律性を測定する"
-url: "https://sebastienrousseau.com/ja/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+url: "https://sebastienrousseau.com/ja/2026-07-01-ejentikku-ai-index-jiritsusei-sokutei"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026/rss.xml"
 category: "Technology"
@@ -449,7 +449,7 @@ Evident AIインデックスは、公開データを用いて世界の主要銀�
 32. [EU AI Act Compliance for Financial Services: Complete 2026 Guide](https://matproof.com/blog/eu-ai-act-compliance-financial-services)
 33. [MAS and AI in Singapore Financial Services - AIRiskAware](https://www.airiskaware.com/insights/mas-ai-governance-financial-services-singapore)
 34. [MAS Releases AI Governance Framework Version 2 for Singapore Financial Services — AIMenta](https://aimenta.ai/news/singapore-mas-ai-governance-framework-v2-2026)
-35. [De Autonome Treasury-Index in 2026: agentische treasury en programmeerbare liquiditeit — Sebastien Rousseau](https://sebastienrousseau.com/nl/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/)
+35. [De Autonome Treasury-Index in 2026: agentische treasury en programmeerbare liquiditeit — Sebastien Rousseau](https://sebastienrousseau.com/nl/2026-06-07-de-autonome-treasury-index-in-2026/)
 
 
 <!-- enrich-start -->

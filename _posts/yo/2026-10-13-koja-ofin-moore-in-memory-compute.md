@@ -129,13 +129,13 @@ Nínú digital computing àtijọ́, ṣíṣírò matrix dot product nílò mí
 
 Àwọn ètò in-memory compute ń fi físíìsì analog circuit rọ́pò gbígbé data digital yìí:
 
-**Ṣíṣètò weight.** A ń ṣètò àwọn weight neural network tààrà sínú àwọn non-volatile memory cell (bíi flash tí a ti yí padà tàbí resistive RAM) gẹ́gẹ́ bí analog conductance ($G$). Lẹ́yìn tí a ti ṣètò wọn, àwọn weight máa ń dúró sójú kan nínú memory array; a kì í mú wọn tàbí gbé wọn rárá nígbà inference.
+**Ṣíṣètò weight.** A ń ṣètò àwọn weight neural network tààrà sínú àwọn non-volatile memory cell (bíi flash tí a ti yí padà tàbí resistive RAM) gẹ́gẹ́ bí analog conductance (*G*). Lẹ́yìn tí a ti ṣètò wọn, àwọn weight máa ń dúró sójú kan nínú memory array; a kì í mú wọn tàbí gbé wọn rárá nígbà inference.
 
-**Ìṣàtúnṣe voltage input.** A ń yí àwọn input activation (bíi visual token láti kámẹ́rà) padà sí ìpele analog voltage ($V$) a sì ń darí wọn gba àwọn word line array.
+**Ìṣàtúnṣe voltage input.** A ń yí àwọn input activation (bíi visual token láti kámẹ́rà) padà sí ìpele analog voltage (*V*) a sì ń darí wọn gba àwọn word line array.
 
-**Ìsọdipúpọ̀ òfin Ohm.** Bí voltage input ṣe ń kọjá nínú memory cell kọ̀ọ̀kan, òfin Ohm ($I = V \times G$) ń ṣe ìsọdipúpọ̀ analog lójú ẹsẹ̀, ó ń dá iná mànàmáná tí ó bá àbájáde ìsọdipúpọ̀ input àti weight tí a fi pamọ́ mu.
+**Ìsọdipúpọ̀ òfin Ohm.** Bí voltage input ṣe ń kọjá nínú memory cell kọ̀ọ̀kan, òfin Ohm (*I* = *V* × *G*) ń ṣe ìsọdipúpọ̀ analog lójú ẹsẹ̀, ó ń dá iná mànàmáná tí ó bá àbájáde ìsọdipúpọ̀ input àti weight tí a fi pamọ́ mu.
 
-**Ìkójọpọ̀ Kirchhoff's Current Law.** Lórí àwọn bit line inaro, iná láti ẹgbẹẹgbẹ̀rún memory cell tí ó wà ní ìbámu ń dàpọ̀ fúnra wọn gẹ́gẹ́ bí Kirchhoff's Current Law ($\sum I = 0$).
+**Ìkójọpọ̀ Kirchhoff's Current Law.** Lórí àwọn bit line inaro, iná láti ẹgbẹẹgbẹ̀rún memory cell tí ó wà ní ìbámu ń dàpọ̀ fúnra wọn gẹ́gẹ́ bí Kirchhoff's Current Law (Σ*I* = 0).
 
 Nítorí náà, flash memory array kan ṣoṣo ń ṣe gbogbo matrix-vector multiplication nínú clock cycle kan ṣoṣo, ó ń ṣiṣẹ́ ní ìpele físíìsì láìsí mímú ìrántí kankan. Lẹ́yìn náà a ń yí iná analog tí a kó jọ padà sí iye digital nípasẹ̀ àwọn high-speed analog-to-digital converter (ADC) ní etí array.
 
@@ -208,7 +208,7 @@ Níwọ̀n ìgbà tí àwọn ètò kọ̀ǹpútà bá ṣì dì mọ́ ìyapa l
 Von Neumann bottleneck túmọ̀ sí ààlà throughput àti agbára tí ìyapa ti ara láàárín central processing unit (ALU) àti ìrántí ètò (DRAM) ń fà. Nínú iṣẹ́ artificial intelligence, tí ó ní bílíọ̀nù matrix multiplication nínú, àwọn processor ń lo ju ìdá 85% gbogbo agbára wọn àti ọ̀pọ̀ clock cycle kìkì fún gbígbé data síwá-sẹ́yìn gba copper bus, èyí tí ó ń dá ìdènà ooru àti latency tó le sílẹ̀.
 
 **Báwo ni analog Compute-In-Memory (CIM) ṣe ń ṣiṣẹ́?**
-Compute-In-Memory ń ṣe iṣẹ́ ìṣirò tààrà nínú memory cell láìgbé data. A ń fi àwọn weight neural network pamọ́ gẹ́gẹ́ bí ipò analog conductance nínú àwọn non-volatile memory cell. Nígbà tí a bá fi input voltage sí array, iná ń ṣàn gba àwọn cell gẹ́gẹ́ bí òfin Ohm ($I = V \times G$), ó sì ń dàpọ̀ lórí àwọn bit line gẹ́gẹ́ bí Kirchhoff's Current Law. Èyí ń parí gbogbo matrix-vector multiplication ní ìgbésẹ̀ ti ara kan ṣoṣo.
+Compute-In-Memory ń ṣe iṣẹ́ ìṣirò tààrà nínú memory cell láìgbé data. A ń fi àwọn weight neural network pamọ́ gẹ́gẹ́ bí ipò analog conductance nínú àwọn non-volatile memory cell. Nígbà tí a bá fi input voltage sí array, iná ń ṣàn gba àwọn cell gẹ́gẹ́ bí òfin Ohm (*I* = *V* × *G*), ó sì ń dàpọ̀ lórí àwọn bit line gẹ́gẹ́ bí Kirchhoff's Current Law. Èyí ń parí gbogbo matrix-vector multiplication ní ìgbésẹ̀ ti ara kan ṣoṣo.
 
 **Kí nìdí tí in-memory compute fi ṣe pàtàkì gan-an fún robotics àti drone?**
 Àwọn robot alárìnkiri àti drone ń ṣiṣẹ́ lábẹ́ ààlà Size, Weight, Power, and Cost (SWaP-C) tí ó le. Wọ́n gbára lé bátírì inú wọn, wọn kò sì lè gbé àwọn radiator ìtutù wúwo tàbí ẹ̀rọ agbára oníwatt gíga. In-memory compute ń pèsè ìṣiṣẹ́ agbára tí ó ga jù ní ìlọ́po 10x sí 1,000x, èyí tí ó ń jẹ́ kí robot ṣiṣẹ́ àwọn àwòṣe vision-language-action dídíjú níbẹ̀ nínú power envelope ti 10W sí 20W nígbà tí wọ́n ń pa àkókò bátírì mọ́.

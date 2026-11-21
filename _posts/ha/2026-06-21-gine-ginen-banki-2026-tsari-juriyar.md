@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "Bannar takardar fata ta Gine-ginen Banki 2026"
 twitter_site: "@wwdseb"
 twitter_title: "Takardar Fata ta Gine-ginen Banki 2026"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -186,7 +186,7 @@ Rajistar haɗarin shirin mai abubuwa 10 a cikin PDF an daidaita ta zuwa bambance
 2. **Asarar bayanai shiru daga MT zuwa MX.** Bankunan da ke fitar da MT103 tare da adireshi ko bayanan remittance da aka yanke suna shiga MX channels lafiya — amma filayen da aka tsara sun kasance fanko. Sakamako na ƙasa (sanctions screening da ya gaza, AML triggers da aka rasa, raɓen sulhu) yana bayyana kwanaki 30–90 bayan sauyin, da yawa bayan forensics na canjin window. Rajistar ta kiyasta tsadar gyaran back-book da ake tsammani kowane €1 bn na biyan kuɗi.
 3. **Attribution na aikin agent.** Lokacin da treasury agent wanda LLM ke goyan baya ya kawo sarkar biyan kuɗi, principals uku za su iya neman mallaka — mai mallakar model, mai ba da rail, marubucin policy. Ba tare da shawarar attribution ta bayyananniya da aka shiryata cikin orchestration layer ba, banki ya gaji dukkan nauyi uku. Rajistar ta bayyana itacen attribution da sarkar shaida ta SR 11-7 da ake buƙata don kāre shi.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Download the 2026 Banking Architecture Whitepaper (PDF)">Sauke takardar PDF</a> <a class="pill ghost no-chev" href="/papers" title="See all published white papers and research">Duk takardun fata</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Download the 2026 Banking Architecture Whitepaper (PDF)">Sauke takardar PDF</a> <a class="pill ghost no-chev" href="/research" title="See all published white papers and research">Duk takardun fata</a></p>
 
 ## Taƙaitawar bita na ciki
 

@@ -13,7 +13,7 @@ description: "Det postkvanta säkerhetsscorecardet 2026 ger styrelser och högst
 format-detection: "telephone=no"
 hreflang: "sv"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/sv/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+id: "https://sebastienrousseau.com/sv/2026-06-29-postkvanta-sakerhetsscorecard-2026-ett-matramverk-for"
 image_alt: "Svartvitt porträtt av Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/sv/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+permalink: "https://sebastienrousseau.com/sv/2026-06-29-postkvanta-sakerhetsscorecard-2026-ett-matramverk-for"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -39,7 +39,7 @@ subtitle: "Hur styrelser måste mäta och styra migrationen till NIST FIPS 203 o
 tags: "postkvant, kryptografi, bank, styrning, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
 theme-color: "0, 83, 191"
 title: "Postkvanta säkerhetsscorecard 2026: ett mätramverk för styrelsen om fiduciär kryptoagilitet"
-url: "https://sebastienrousseau.com/sv/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+url: "https://sebastienrousseau.com/sv/2026-06-29-postkvanta-sakerhetsscorecard-2026-ett-matramverk-for"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/rss.xml"
 category: "Technology"
@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Vidare läsning:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib och postkvantmigrationen i bank 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: skyddsalgoritmen i kvantåldern</a>.</p>
 </aside>
+
 Postkvantsäkerhet är inte längre ett forskningsprojekt. "Tillsynsklockan" tickar mot de hårda tidsfristerna i slutet av 2020-talet. Färdigställandet av [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) och [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) har kodifierat standarderna för nyckelinkapsling och digitala signaturer.
 
 Tillsynsorganen förväntar sig nu att Tier-1-banker går bortom pilotprogram. Under 2026 har fokus flyttats till industrialiseringen av dessa standarder. Att inte kunna visa en tydlig migrationsväg medför betydande regulatoriska sanktioner enligt [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) och potentiellt personligt ansvar för styrelseledamöter som ignorerar det förutsebara hotet om kvantmöjliggjord dekryptering.

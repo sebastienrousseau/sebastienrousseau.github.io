@@ -13,7 +13,7 @@ description: "Magnifica Humanitas ti Póòpù Leo XIV (25 May 2026) — ìwé p�
 format-detection: "telephone=no"
 hreflang: "yo"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/yo/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+id: "https://sebastienrousseau.com/yo/2026-05-26-magnifica-humanitas-kika-ai-iwe-pepere"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/yo/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+permalink: "https://sebastienrousseau.com/yo/2026-05-26-magnifica-humanitas-kika-ai-iwe-pepere"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -40,7 +40,7 @@ tags: "Magnifica Humanitas, Pope Leo XIV, ìṣe ẹ̀tọ́ AI, quantum computi
 excerpt: "Ní 25 May 2026, Póòpù Leo XIV ṣe àfilọ́lẹ̀ Magnifica Humanitas — ìwé pẹpẹrẹ póòpù àkọ́kọ́ lórí oye ìṣẹ̀dá. Kíkà láti inú ilé-iṣẹ́ ìmọ̀-ẹ̀rọ, kì í ṣe gẹ́gẹ́ bí ẹ̀kọ́ ṣùgbọ́n gẹ́gẹ́ bí ìlànà ìṣe-ìṣètò, ó ń tún gbogbo ìbẹ̀rù àwùjọ tí ó tẹ̀lé ọkọ̀-ojú-irin, ọkọ̀-ayọ́kẹ́lẹ́, agbára iparun, àti ínítánẹ́ẹ̀tì sọ, ó sì parí lórí ìrètí."
 theme-color: "0, 83, 191"
 title: "Magnifica Humanitas: Kíkà AI ti Ìwé Pẹpẹrẹ Póòpù Àkọ́kọ́"
-url: "https://sebastienrousseau.com/yo/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+url: "https://sebastienrousseau.com/yo/2026-05-26-magnifica-humanitas-kika-ai-iwe-pepere"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/rss.xml"
 category: "Technology"
@@ -161,7 +161,7 @@ Nígbà tí **ọkọ̀-ayọ́kẹ́lẹ́** dé, àpẹẹrẹ náà tún ṣ�
 
 Méjì nínú àwọn ìfọkànsí kan pàtó ti ìwé pẹpẹrẹ póòpù bọ́ tààrà sí ara iṣẹ́-ẹ̀rọ àwọn ètò ìnáwó, méjèèjì sì yẹ ìdáhùn onímọ̀-ẹ̀rọ dípò ti olùgbàgbọ́.
 
-Àkọ́kọ́ ni **ìkójọpọ̀ agbára ní ọwọ́ alá-aládàákùn, kọjá orílẹ̀-èdè**. Àkíyèsí ìwé pẹpẹrẹ póòpù pé àwọn olùdarí àkọ́kọ́ ti ìmọ̀-ẹ̀rọ yìí ní báyìí jẹ́ àwọn ẹgbẹ́ alá-aládàákùn àwọn tí agbára wọn ré agbára ọ̀pọ̀ orílẹ̀-èdè kọjá kì í ṣe àfilọ́lẹ̀ ẹ̀kọ́-ọlọ́run; ó jẹ́ àpèjúwe pípé ti àyíká AI 2026, ó sì jẹ́ gan-an ìfọkànsí tí ń sá kọjá architecture ìlànà tí ilé-iṣẹ́ ń gbìyànjú láti pàdé báyìí — àwọn ìwájú-ojúse ewu-gíga ti EU AI Act tí ó wúlò láti 2 August 2026, àwọn ìpèsè ewu ìkójọpọ̀ ẹlẹ́ẹ̀kẹta ti DORA, àti àwọn ìṣíkù cloud aláṣẹ àti ìṣíkù plane ìṣàkóso aláṣẹ tí a dá hàn nínú àwọn àpilẹ̀kọ [cloud architecture](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "Architecture Ìpìlẹ̀ Cloud Tí Ó Dára Jùlọ ní 2026") àti [iṣẹ́-ẹ̀rọ ọlọ́gbọ́n-àárín](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "Iṣẹ́-ẹ̀rọ Ọlọ́gbọ́n-Àárín fún Àwọn Bánkì") lórí ojú-ìwé yìí. Ìwé pẹpẹrẹ póòpù àti EU AI Act, ní ọ̀nà àìjẹ́-bí-ìgbà-gbogbo, ń ní ìfọkànsí nípa ohun kan náà: pé agbára láìní ìdáhùn-pada ń kó agbára jọ ní ọ̀nà tí ó sá fún ìjọba tiwa-n-tiwa. Ọ̀kan ń sọ ọ́ ní èdè ẹ̀kọ́ àwùjọ, ekejì ní èdè ìgbéléwọ̀n ìbámu. Àyẹ̀wò náà jọra.
+Àkọ́kọ́ ni **ìkójọpọ̀ agbára ní ọwọ́ alá-aládàákùn, kọjá orílẹ̀-èdè**. Àkíyèsí ìwé pẹpẹrẹ póòpù pé àwọn olùdarí àkọ́kọ́ ti ìmọ̀-ẹ̀rọ yìí ní báyìí jẹ́ àwọn ẹgbẹ́ alá-aládàákùn àwọn tí agbára wọn ré agbára ọ̀pọ̀ orílẹ̀-èdè kọjá kì í ṣe àfilọ́lẹ̀ ẹ̀kọ́-ọlọ́run; ó jẹ́ àpèjúwe pípé ti àyíká AI 2026, ó sì jẹ́ gan-an ìfọkànsí tí ń sá kọjá architecture ìlànà tí ilé-iṣẹ́ ń gbìyànjú láti pàdé báyìí — àwọn ìwájú-ojúse ewu-gíga ti EU AI Act tí ó wúlò láti 2 August 2026, àwọn ìpèsè ewu ìkójọpọ̀ ẹlẹ́ẹ̀kẹta ti DORA, àti àwọn ìṣíkù cloud aláṣẹ àti ìṣíkù plane ìṣàkóso aláṣẹ tí a dá hàn nínú àwọn àpilẹ̀kọ [cloud architecture](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "Architecture Ìpìlẹ̀ Cloud Tí Ó Dára Jùlọ ní 2026") àti [iṣẹ́-ẹ̀rọ ọlọ́gbọ́n-àárín](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "Iṣẹ́-ẹ̀rọ Ọlọ́gbọ́n-Àárín fún Àwọn Bánkì") lórí ojú-ìwé yìí. Ìwé pẹpẹrẹ póòpù àti EU AI Act, ní ọ̀nà àìjẹ́-bí-ìgbà-gbogbo, ń ní ìfọkànsí nípa ohun kan náà: pé agbára láìní ìdáhùn-pada ń kó agbára jọ ní ọ̀nà tí ó sá fún ìjọba tiwa-n-tiwa. Ọ̀kan ń sọ ọ́ ní èdè ẹ̀kọ́ àwùjọ, ekejì ní èdè ìgbéléwọ̀n ìbámu. Àyẹ̀wò náà jọra.
 
 Èkejì ni **kọ̀mpútà quantum**, tí ìwé pẹpẹrẹ póòpù kò pe orúkọ rẹ̀ ṣùgbọ́n tí àpẹẹrẹ ìṣe-ìṣètò rẹ̀ ti ronú pípé. Ìpìlẹ̀ ti ìṣíkù post-quantum tí a dá hàn nínú [Dídáàbò Ìwé Àkọsílẹ̀](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Dídáàbò Ìwé Àkọsílẹ̀") ni pé agbára kan tí a ń kọ́ báyìí — kọ̀mpútà quantum tí ó ní ìfaramọ́ pẹ̀lú cryptography — yóò, nígbà tí ó dé, fi ohun gbogbo tí a fi ìpìlẹ̀ òní pamọ́ hàn lẹ́yìn ìṣẹ̀lẹ̀. "Harvest now, decrypt later" jẹ́, ní ìpìlẹ̀ aláìní-ẹ̀sìn, gan-an irú agbára-laisi-ọgbọ́n tí ìwé pẹpẹrẹ póòpù ń kìlọ̀ lòdì sí: ìmọ̀-ẹ̀rọ kan tí àwọn àbájáde rẹ̀ dé ní àkókò tí ó ré ìmúrasílẹ̀ kọjá, ní ọwọ́ àwọn tí ó ní ohun-èlò láti lò ó ní àkọ́kọ́. Àfilọ́lẹ̀ ìwé pẹpẹrẹ póòpù láti béèrè "níbo ni a ń lọ?" ṣáájú kí ọ̀ kan-bí-ọ̀kan àwọn àjálù tó dáhùn ọ̀nà ni, fún onímọ̀-ẹ̀rọ ààbò, ìṣe rere tí a hàn gẹ́gẹ́ bí ìmọ̀-ọ̀rọ̀ ìṣe-ìṣètò.
 
@@ -231,8 +231,8 @@ Lórí ìkójọpọ̀ agbára. Àkíyèsí ìwé pẹpẹrẹ póòpù pé "àw
 
 - Sebastien Rousseau, (2026). [Flash Drive ti Lucy, Ìkíyèsí Tuntun: Ìfagbára Ìmọ̀, AI, àti Quantum](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html "Flash Drive ti Lucy, Ìkíyèsí Tuntun").
 - Sebastien Rousseau, (2026). [Dídáàbò Ìwé Àkọsílẹ̀: Ìtọ́nisọ́nà Ipele-Ìgbìmọ̀ fún Ìṣíkù Post-Quantum fún Ìnáwó Ilé-iṣẹ́](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Dídáàbò Ìwé Àkọsílẹ̀").
-- Sebastien Rousseau, (2026). [Iṣẹ́-ẹ̀rọ Ọlọ́gbọ́n-Àárín fún Àwọn Bánkì: Àwòṣe 2026](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "Iṣẹ́-ẹ̀rọ Ọlọ́gbọ́n-Àárín fún Àwọn Bánkì").
-- Sebastien Rousseau, (2026). [Architecture Ìpìlẹ̀ Cloud Tí Ó Dára Jùlọ ní 2026](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "Architecture Ìpìlẹ̀ Cloud Tí Ó Dára Jùlọ ní 2026").
+- Sebastien Rousseau, (2026). [Iṣẹ́-ẹ̀rọ Ọlọ́gbọ́n-Àárín fún Àwọn Bánkì: Àwòṣe 2026](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "Iṣẹ́-ẹ̀rọ Ọlọ́gbọ́n-Àárín fún Àwọn Bánkì").
+- Sebastien Rousseau, (2026). [Architecture Ìpìlẹ̀ Cloud Tí Ó Dára Jùlọ ní 2026](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "Architecture Ìpìlẹ̀ Cloud Tí Ó Dára Jùlọ ní 2026").
 - Pope Leo XIV, (2026). [Ìwé Pẹpẹrẹ Póòpù *Magnifica Humanitas* lórí Dídáàbò Ènìyàn ní Ìgbà Oye Ìṣẹ̀dá ⧉](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html "Magnifica Humanitas — gbogbo ọ̀rọ̀, Vatican.va"). The Holy See.
 - Pope Leo XIII, (1891). [Ìwé Pẹpẹrẹ Póòpù *Rerum Novarum* lórí Olú-owó àti Iṣẹ́ ⧉](https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_15051891_rerum-novarum.html "Rerum Novarum — Vatican.va"). The Holy See.
 - Vatican News, (2026). [Ìwé pẹpẹrẹ póòpù àkọ́kọ́ ti Póòpù Leo XIV *Magnifica humanitas* láti ṣe àfilọ́lẹ̀ ní 25 May ⧉](https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html "Vatican News — Magnifica Humanitas"). Vatican News.

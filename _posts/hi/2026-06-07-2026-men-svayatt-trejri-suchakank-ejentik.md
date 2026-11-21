@@ -13,7 +13,7 @@ description: "स्वायत्त ट्रेज़री तत्पर�
 format-detection: "telephone=no"
 hreflang: "hi"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/hi/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+id: "https://sebastienrousseau.com/hi/2026-06-07-2026-men-svayatt-trejri-suchakank-ejentik"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/hi/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+permalink: "https://sebastienrousseau.com/hi/2026-06-07-2026-men-svayatt-trejri-suchakank-ejentik"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "treasury, एजेंटिक AI, programmable liquidity, टोकन�
 excerpt: "स्वायत्त ट्रेज़री तत्परता का 2026 सूचकांक — एजेंटिक ट्रेज़री कार्यप्रवाह, प्रोग्राम-योग्य तरलता कवरेज, टोकनाइज़्ड जमा एकीकरण, रियल-टाइम भुगतान ऑर्केस्ट्रेशन और स्वचालित नकद नियंत्रण को एक परिचालन-मॉडल ताने-बाने के रूप में मापना।"
 theme-color: "0, 83, 191"
 title: "2026 में स्वायत्त ट्रेज़री सूचकांक: एजेंटिक ट्रेज़री, प्रोग्राम-योग्य तरलता, टोकनाइज़्ड जमा और रियल-टाइम नकद नियंत्रण"
-url: "https://sebastienrousseau.com/hi/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+url: "https://sebastienrousseau.com/hi/2026-06-07-2026-men-svayatt-trejri-suchakank-ejentik"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/rss.xml"
 category: "Finance"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>कंट्रोल प्लेन ही नई ऑडिट सतह है।</strong> मेंडेट, सीमाएँ, मैनुअल ओवरराइड पथ और प्रत्यावर्तन साक्ष्य प्लेटफ़ॉर्म प्रिमिटिव के रूप में चलने चाहिए, प्रति-क्रिया मैनुअल अनुमोदन के रूप में नहीं।</li>
   <li><strong>CFO स्कोरकार्ड प्रति-निर्णय है, प्रति-तिमाही नहीं।</strong> नकद की लागत, इंट्राडे तरलता बफ़र में कमी, FX दक्षता और पूर्वानुमान सटीकता कार्यप्रवाह गति पर मापी जाती हैं।</li>
 </ul>
-<p class="post-lead-related"><strong>संबंधित पठन:</strong> <a href="https://sebastienrousseau.com/hi/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html">2026 में प्रोग्राम-योग्य तरलता: AI, टोकनाइज़्ड जमा और रियल-टाइम ट्रेज़री ऑर्केस्ट्रेशन</a>, <a href="https://sebastienrousseau.com/hi/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">2026 में टोकनाइज़्ड जमा: बैंकिंग सेवाएँ, स्थिर-मुद्रा प्रतिस्पर्धा और प्रोग्राम-योग्य वाणिज्यिक बैंक-मुद्रा की स्थिति</a>।</p>
+<p class="post-lead-related"><strong>संबंधित पठन:</strong> <a href="https://sebastienrousseau.com/hi/2026-05-25-programebal-taralata-2026-ai-tokanikrit-jama/index.html">2026 में प्रोग्राम-योग्य तरलता: AI, टोकनाइज़्ड जमा और रियल-टाइम ट्रेज़री ऑर्केस्ट्रेशन</a>, <a href="https://sebastienrousseau.com/hi/2026-05-21-2026-men-tokanikrit-jama-bainking-sevaen/index.html">2026 में टोकनाइज़्ड जमा: बैंकिंग सेवाएँ, स्थिर-मुद्रा प्रतिस्पर्धा और प्रोग्राम-योग्य वाणिज्यिक बैंक-मुद्रा की स्थिति</a>।</p>
 </aside>
 <!-- lead-end -->
 

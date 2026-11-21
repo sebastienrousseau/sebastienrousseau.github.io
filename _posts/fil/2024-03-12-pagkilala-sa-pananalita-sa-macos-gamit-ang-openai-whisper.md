@@ -55,7 +55,7 @@ Kumakatawan ang pagsasanib ng OpenAI Whisper at ng Metal Performance Shaders sa 
 .class=\"card bg-light p-3 me-3 w-100\"
 Upang matuto pa hinggil sa pagsasanib ng OpenAI Whisper at ng Metal Performance Shaders sa macOS para sa pagkilala sa pananalita sa tunay na oras, hinihikayat ang mga mambabasa na abutin ang buong papel ng pananaliksik. Naghahandog ang papel ng malalim na teknikal na detalye, ng resulta ng eksperimento, at ng karagdagang kabatiran hinggil sa posibleng aplikasyon at sa mga direksiyon sa hinaharap ng teknolohiyang ito. At sa pag-abot sa buong papel ng pananaliksik, makakakuha ang mga mambabasa ng masaklaw na pag-unawa sa pamamaraan, sa pagpapatupad, at sa kahihinatnan ng mapanlikhang paraang ito sa pagkilala sa pananalita sa tunay na oras sa mga aparatong macOS. [**Basahin ang buong papel ngayon! ❯**][00]
 
-[00]: /papers/index.html "Mga publikasyon ng pananaliksik at puting papel mula kay Sebastien Rousseau"
+[00]: /research/index.html "Mga publikasyon ng pananaliksik at puting papel mula kay Sebastien Rousseau"
 [01]: https://developer.apple.com/documentation/metalperformanceshaders "Metal Performance Shaders - Apple Developer Documentation"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"

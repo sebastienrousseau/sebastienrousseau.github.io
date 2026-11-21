@@ -13,7 +13,7 @@ description: "Постквантовый scorecard 2026 года предост�
 format-detection: "telephone=no"
 hreflang: "ru"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/ru/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+id: "https://sebastienrousseau.com/ru/2026-06-29-postkvantovyy-scorecard-2026-metricheskaya-ramka-sovetov"
 image_alt: "Чёрно-белый портрет Себастьяна Руссо"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/ru/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+permalink: "https://sebastienrousseau.com/ru/2026-06-29-postkvantovyy-scorecard-2026-metricheskaya-ramka-sovetov"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -39,7 +39,7 @@ subtitle: "Как советы директоров должны измерят�
 tags: "постквантовая, криптография, банкинг, управление, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
 theme-color: "0, 83, 191"
 title: "Постквантовый scorecard 2026: метрическая рамка для советов директоров"
-url: "https://sebastienrousseau.com/ru/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+url: "https://sebastienrousseau.com/ru/2026-06-29-postkvantovyy-scorecard-2026-metricheskaya-ramka-sovetov"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/rss.xml"
 category: "Technology"
@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Связанное чтение:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib и постквантовая миграция банков в 2026 году</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: защитный алгоритм в квантовую эпоху</a>.</p>
 </aside>
+
 Постквантовая безопасность больше не исследовательский проект. «Надзорный таймер» отсчитывает время до дедлайнов конца 2020-х. Финализация [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final "NIST FIPS 203 — финальный стандарт ML-KEM") и [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final "NIST FIPS 204 — финальный стандарт ML-DSA") закрепила стандарты инкапсуляции ключей и цифровых подписей.
 
 Регуляторы теперь ожидают от банков Tier-1 выхода за рамки пилотных программ. В 2026 году фокус сместился на индустриализацию этих стандартов. Отсутствие чёткого плана миграции влечёт серьёзные регуляторные санкции по [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj "Регламент ЕС 2022/2554 о цифровой операционной устойчивости") и потенциальную персональную ответственность для директоров, игнорирующих предсказуемую угрозу квантового дешифрования.

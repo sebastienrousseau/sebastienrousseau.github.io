@@ -147,9 +147,9 @@ Domnívám se, že to je pro posouzení výsledku správný rámec. Zlepšení n
 | :--- | :--- | :--- | :--- |
 | **Exponent pakování koulí** | Mez Kabatianského–Levenshteina: 0,59905576... | Alespoň tak silný jako meze pro sférické kódy (Cohn–Zhao) | Dokázaná přesná asymptotická rychlost z domněnky Afkhamiho-Jeddiho a kol. (2020) |
 | **Konečnost meze** | Pouze zpřesnění činitelů nižšího řádu | Otevřená otázka asymptotické mezery ve vysokých dimenzích | Přesně odpovídající dolní mez: žádná pomocná funkce tuto rychlost nepřekoná |
-| **Fourierova neurčitost znaménka** | Oddělené meze znaménka ($A^+(d) < A^-(d)$) | Spojená s antisamofourierovskými testovacími funkcemi | Asymptoticky vyřešena; neurčitost znaménka řídí Mellinův odraz |
+| **Fourierova neurčitost znaménka** | Oddělené meze znaménka (A⁺(d) < A⁻(d)) | Spojená s antisamofourierovskými testovacími funkcemi | Asymptoticky vyřešena; neurčitost znaménka řídí Mellinův odraz |
 | **Samoopravné kódy** | Klasické meze pro sférické a binární kódy | Asymptoticky provázané s mezemi pakování | Zlepšení o exponenciální činitele pro všechny parametry s pevnou vzdáleností |
-| **Metodický strop** | Numerická optimalizace polynomiálních činitelů | Otevřená optimalizace testovacích funkcí $f \in \mathcal{A}_d$ | Dokázaný matematický strop: další zisky vyžadují metody mimo Cohna-Elkiese |
+| **Metodický strop** | Numerická optimalizace polynomiálních činitelů | Otevřená optimalizace testovacích funkcí f ∈ 𝒜\_d | Dokázaný matematický strop: další zisky vyžadují metody mimo Cohna-Elkiese |
 
 ## Proč odpovídající dolní mez mění otázku
 
@@ -237,11 +237,11 @@ Přesné určení rychlosti poklesu Cohna-Elkiese ve vysokých dimenzích a dopr
 
 ### Čistá matematika a diskrétní geometrie
 
-Pro matematiky, kteří se zabývají vysokorozměrnou geometrií a harmonickou analýzou, mění určení přesné rychlosti poklesu Cohna-Elkiese výzkumnou krajinu. Protože odpovídající dolní mez dokazuje, že žádná pomocná funkce v $\mathcal{A}_d$ nový exponent nepřekoná, mohou výzkumníci přestat hledat lepší radiální testovací funkce v klasické metodě lineárního programování. Pokrok k hustším pakováním koulí nebo těsnějším univerzálním mezím musí nyní zkoumat techniky nelineárního programování, semidefinitní hierarchie vyššího řádu nebo radikálně odlišné geometrické konstrukce.
+Pro matematiky, kteří se zabývají vysokorozměrnou geometrií a harmonickou analýzou, mění určení přesné rychlosti poklesu Cohna-Elkiese výzkumnou krajinu. Protože odpovídající dolní mez dokazuje, že žádná pomocná funkce v 𝒜\_d nový exponent nepřekoná, mohou výzkumníci přestat hledat lepší radiální testovací funkce v klasické metodě lineárního programování. Pokrok k hustším pakováním koulí nebo těsnějším univerzálním mezím musí nyní zkoumat techniky nelineárního programování, semidefinitní hierarchie vyššího řádu nebo radikálně odlišné geometrické konstrukce.
 
 ### Kryptografie a bezpečnost založená na mřížkách
 
-Kryptografie založená na mřížkách, která tvoří jádro postkvantových standardů jako ML-KEM a ML-DSA, silně spoléhá na předpokládanou obtížnost hledání nejkratších nebo nejbližších vektorů ve vysokorozměrných euklidovských mřížkách. Přímá redukce z 3SAT, která stanoví obtížnost s faktorem $n^{1/400}$ pro euklidovský problém nejbližšího vektoru (CVP), spolu s těsnějšími exponenciálními stropy pro pakování koulí a sférické kódy upevňuje teoretické základy mřížkových redukcí z nejhoršího na průměrný případ, aniž by oslabila konkrétní bezpečnostní parametry.
+Kryptografie založená na mřížkách, která tvoří jádro postkvantových standardů jako ML-KEM a ML-DSA, silně spoléhá na předpokládanou obtížnost hledání nejkratších nebo nejbližších vektorů ve vysokorozměrných euklidovských mřížkách. Přímá redukce z 3SAT, která stanoví obtížnost s faktorem n\^(1/400) pro euklidovský problém nejbližšího vektoru (CVP), spolu s těsnějšími exponenciálními stropy pro pakování koulí a sférické kódy upevňuje teoretické základy mřížkových redukcí z nejhoršího na průměrný případ, aniž by oslabila konkrétní bezpečnostní parametry.
 
 ### Automatické dokazování vět a základní modely
 
@@ -267,7 +267,7 @@ Cohn a Gonçalves ukázali, že doplňkový Fourierův problém neurčitosti zna
 
 **Ohrožuje tento výsledek kryptografii založenou na mřížkách?**
 
-Ne. Věta sice zpřesňuje horní meze toho, jak hustě lze koule zapakovat ve vysokých dimenzích, a stanoví obtížnost s faktorem $n^{1/400}$ pro problém nejbližšího vektoru, ale neposkytuje algoritmy mřížkové redukce v polynomiálním čase. Praktické mřížkové kryptosystémy zůstávají bezpečné vůči známým kvantovým i klasickým útokům.
+Ne. Věta sice zpřesňuje horní meze toho, jak hustě lze koule zapakovat ve vysokých dimenzích, a stanoví obtížnost s faktorem n\^(1/400) pro problém nejbližšího vektoru, ale neposkytuje algoritmy mřížkové redukce v polynomiálním čase. Praktické mřížkové kryptosystémy zůstávají bezpečné vůči známým kvantovým i klasickým útokům.
 
 ## Literatura
 

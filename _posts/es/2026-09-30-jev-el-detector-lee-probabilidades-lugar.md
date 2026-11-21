@@ -121,7 +121,7 @@ El argumento estructural queda así: los jueces generativos son caros por criter
 
 | Dimensión de arquitectura | Jueces LLM generativos (p. ej. GPT-4 como juez) | Clasificadores de un solo token (p. ej. Llama Guard) | Detector RLCD multiconsulta (Jev) |
 | :--- | :--- | :--- | :--- |
-| **Mecanismo de puntuación** | Pasada completa de decodificación autorregresiva por criterio | Probabilidad softmax sobre un único token de salida | Tensor de probabilidades calibradas multicabeza $P(\text{yes})$ |
+| **Mecanismo de puntuación** | Pasada completa de decodificación autorregresiva por criterio | Probabilidad softmax sobre un único token de salida | Tensor de probabilidades calibradas multicabeza P(yes) |
 | **Preguntas por llamada** | 1 prompt de evaluación por invocación del modelo | 1 etiqueta de clasificación por invocación del modelo | Varias preguntas binarias/categóricas/ordinales en 1 llamada |
 | **Coste de inferencia** | Alto (10 a 50 $ por cada 1.000 interacciones) | Moderado (0,50 a 2,00 $ por cada 1.000 interacciones) | 63× menor (0,30 $ en 19 benchmarks completos) |
 | **Rendimiento AUROC** | Depende del benchmark; propenso a la deriva del juez | Alto en categorías de seguridad entrenadas específicamente | AUROC mediano de 0,886 en zero-shot en 44 suites |

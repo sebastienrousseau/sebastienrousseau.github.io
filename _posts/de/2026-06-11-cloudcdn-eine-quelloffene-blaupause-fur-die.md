@@ -16,7 +16,7 @@ description: "CloudCDN macht die Edge zur kryptografisch gesicherten, agentenste
 format-detection: "telephone=no"
 hreflang: "de"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/de/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026"
+id: "https://sebastienrousseau.com/de/2026-06-11-cloudcdn-eine-quelloffene-blaupause-fur-die"
 image_alt: "Schwarz-Weiß-Porträt von Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -32,7 +32,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/de/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026"
+permalink: "https://sebastienrousseau.com/de/2026-06-11-cloudcdn-eine-quelloffene-blaupause-fur-die"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -43,7 +43,7 @@ subtitle: "Das globale CDN wandert vom statischen Content-Caching zur kryptograf
 tags: "CloudCDN, Open Source, CDN, Edge, KI-Agenten, MCP, Cloudflare Workers, Durable Objects, Rate-Limiting, Zero Trust, WebAuthn, SLSA, DORA, BCBS 239, Basel III, Cloud-natives Banking"
 theme-color: "0, 83, 191"
 title: "CloudCDN: Eine quelloffene Blaupause für die KI-native Edge 2026"
-url: "https://sebastienrousseau.com/de/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026"
+url: "https://sebastienrousseau.com/de/2026-06-11-cloudcdn-eine-quelloffene-blaupause-fur-die"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
@@ -85,7 +85,7 @@ twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastie
 twitter_image_alt: "Logo von Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "CloudCDN: Quelloffene Blaupause für die KI-native Edge"
-twitter_url: "https://sebastienrousseau.com/de/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026"
+twitter_url: "https://sebastienrousseau.com/de/2026-06-11-cloudcdn-eine-quelloffene-blaupause-fur-die"
 
 excerpt: "CloudCDN ist eine quelloffene Blaupause für die KI-native Edge — ein Zero-Trust-MCP-Gateway mit 42 Werkzeugen, atomares Durable-Objects-Rate-Limiting, WebAuthn-Passkeys, signierte URLs, SLSA Level 3 Provenance und 3.185 Tests bei 100 % Abdeckung, abgebildet auf DORA, BCBS 239 und Basel III."
 

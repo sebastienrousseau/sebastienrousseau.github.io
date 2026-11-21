@@ -56,7 +56,7 @@ Az OpenAI Whisper és a Metal Performance Shaders integrációja macOS rendszere
 .class=\"card bg-light p-3 me-3 w-100\"
 Ha többet szeretne megtudni az OpenAI Whisper és a Metal Performance Shaders integrációjáról macOS rendszeren a valós idejű beszédfelismeréshez, az olvasóknak javasoljuk, hogy tekintsék meg a teljes kutatási tanulmányt. A tanulmány részletes technikai adatokat, kísérleti eredményeket és további betekintést nyújt e technológia lehetséges alkalmazásaiba és jövőbeli irányaiba. A teljes kutatási tanulmány elérésével az olvasók átfogó képet kapnak e valós idejű beszédfelismeréshez macOS-eszközökön alkalmazott innovatív megközelítés módszertanáról, megvalósításáról és következményeiről. [**Olvassa el a teljes tanulmányt még ma! ❯**][00]
 
-[00]: /papers/index.html "Kutatási publikációk és fehér könyvek Sebastien Rousseau tollából"
+[00]: /research/index.html "Kutatási publikációk és fehér könyvek Sebastien Rousseau tollából"
 [01]: https://developer.apple.com/documentation/metalperformanceshaders "Metal Performance Shaders - Apple Developer Documentation"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"

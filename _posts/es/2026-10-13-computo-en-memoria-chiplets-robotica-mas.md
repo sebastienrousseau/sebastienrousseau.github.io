@@ -129,13 +129,13 @@ En la computación digital clásica, calcular un producto escalar de matrices ex
 
 Las arquitecturas de cómputo en memoria sustituyen esta transferencia digital de datos por la física de los circuitos analógicos:
 
-**Programación de los pesos.** Los pesos de la red neuronal se programan directamente en celdas de memoria no volátil (como flash modificada o RAM resistiva) en forma de conductancias analógicas ($G$). Una vez programados, los pesos permanecen fijos dentro de la matriz de memoria; nunca se leen ni se transfieren durante la inferencia.
+**Programación de los pesos.** Los pesos de la red neuronal se programan directamente en celdas de memoria no volátil (como flash modificada o RAM resistiva) en forma de conductancias analógicas (*G*). Una vez programados, los pesos permanecen fijos dentro de la matriz de memoria; nunca se leen ni se transfieren durante la inferencia.
 
-**Modulación de la tensión de entrada.** Las activaciones de entrada (como los tokens visuales procedentes de las cámaras) se convierten en niveles de tensión analógicos ($V$) y se aplican a las líneas de palabra de la matriz.
+**Modulación de la tensión de entrada.** Las activaciones de entrada (como los tokens visuales procedentes de las cámaras) se convierten en niveles de tensión analógicos (*V*) y se aplican a las líneas de palabra de la matriz.
 
-**Multiplicación por la ley de Ohm.** Cuando la tensión de entrada atraviesa cada celda de memoria, la ley de Ohm ($I = V \times G$) efectúa una multiplicación analógica instantánea y genera una corriente proporcional al producto de la entrada por el peso almacenado.
+**Multiplicación por la ley de Ohm.** Cuando la tensión de entrada atraviesa cada celda de memoria, la ley de Ohm (*I* = *V* × *G*) efectúa una multiplicación analógica instantánea y genera una corriente proporcional al producto de la entrada por el peso almacenado.
 
-**Acumulación por la ley de corrientes de Kirchhoff.** A lo largo de las líneas de bit verticales, las corrientes de miles de celdas en paralelo se suman de forma natural según la ley de corrientes de Kirchhoff ($\sum I = 0$).
+**Acumulación por la ley de corrientes de Kirchhoff.** A lo largo de las líneas de bit verticales, las corrientes de miles de celdas en paralelo se suman de forma natural según la ley de corrientes de Kirchhoff (Σ*I* = 0).
 
 Así, una sola matriz de memoria flash ejecuta una multiplicación matriz-vector completa en un único ciclo de reloj, a nivel físico y sin un solo acceso a memoria. La corriente analógica acumulada se vuelve a convertir en valores digitales mediante convertidores analógico-digitales (ADC) de alta velocidad situados en el borde de la matriz.
 
@@ -208,7 +208,7 @@ El paso de clústeres de centro de datos de 700 W a silicio de borde de 15 W es 
 El cuello de botella de Von Neumann es el límite de rendimiento y de energía causado por la separación física entre la unidad de procesamiento (ALU) y la memoria del sistema (DRAM). En las cargas de inteligencia artificial, que implican miles de millones de multiplicaciones de matrices, los procesadores gastan más del 85 % de su energía total y muchos ciclos de reloj solo en mover datos de un lado a otro por buses de cobre, lo que crea graves cuellos de botella térmicos y de latencia.
 
 **¿Cómo funciona el cómputo analógico en memoria (CIM)?**
-El cómputo en memoria realiza las operaciones matemáticas directamente dentro de las celdas de memoria, sin mover datos. Los pesos de la red neuronal se almacenan como estados de conductancia analógica en celdas de memoria no volátil. Al aplicar tensiones de entrada a la matriz, la corriente atraviesa las celdas según la ley de Ohm ($I = V \times G$) y se suma a lo largo de las líneas de bit según la ley de corrientes de Kirchhoff. Así se completa una multiplicación matriz-vector en un único paso físico.
+El cómputo en memoria realiza las operaciones matemáticas directamente dentro de las celdas de memoria, sin mover datos. Los pesos de la red neuronal se almacenan como estados de conductancia analógica en celdas de memoria no volátil. Al aplicar tensiones de entrada a la matriz, la corriente atraviesa las celdas según la ley de Ohm (*I* = *V* × *G*) y se suma a lo largo de las líneas de bit según la ley de corrientes de Kirchhoff. Así se completa una multiplicación matriz-vector en un único paso físico.
 
 **¿Por qué el cómputo en memoria es especialmente crítico para los robots y los drones?**
 Los robots móviles y los drones operan bajo estrictas limitaciones de tamaño, peso, potencia y coste (SWaP-C). Dependen de baterías a bordo y no pueden soportar radiadores pesados ni fuentes de alimentación de alta potencia. El cómputo en memoria ofrece una eficiencia energética entre 10 y 1000 veces mayor, lo que permite a los robots ejecutar localmente modelos complejos de visión-lenguaje-acción dentro de una envolvente de 10 W a 20 W sin sacrificar la autonomía de la batería.

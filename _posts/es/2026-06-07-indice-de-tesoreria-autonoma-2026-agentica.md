@@ -13,7 +13,7 @@ description: "Un índice 2026 de preparación de tesorería autónoma: workflows
 format-detection: "telephone=no"
 hreflang: "es"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/es/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+id: "https://sebastienrousseau.com/es/2026-06-07-indice-de-tesoreria-autonoma-2026-agentica"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/es/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+permalink: "https://sebastienrousseau.com/es/2026-06-07-indice-de-tesoreria-autonoma-2026-agentica"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "treasury, IA agéntica, liquidez programable, depósitos tokenizados, cas
 excerpt: "Un índice 2026 de preparación de tesorería autónoma: mide workflows de tesorería agéntica, cobertura de liquidez programable, integración de depósitos tokenizados, orquestación de pagos en tiempo real y control de caja automatizado como un único modelo operativo."
 theme-color: "0, 83, 191"
 title: "Índice de Tesorería Autónoma 2026: agéntica, liquidez programable y depósitos tokenizados"
-url: "https://sebastienrousseau.com/es/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+url: "https://sebastienrousseau.com/es/2026-06-07-indice-de-tesoreria-autonoma-2026-agentica"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/rss.xml"
 category: "Finance"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>El plano de control es la nueva superficie de auditoría.</strong> Mandatos, límites, vías de invalidación manual y evidencia de reversión deben funcionar como primitivas de plataforma, no como aprobaciones manuales por acción.</li>
   <li><strong>El cuadro de mando del CFO es por decisión, no por trimestre.</strong> Coste de la caja, reducción del colchón de liquidez intradía, eficiencia FX y precisión de la previsión de tesorería se miden a velocidad de workflow.</li>
 </ul>
-<p class="post-lead-related"><strong>Lecturas relacionadas:</strong> <a href="https://sebastienrousseau.com/es/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html">Liquidez programable en 2026: IA, depósitos tokenizados y orquestación de tesorería en tiempo real</a>, <a href="https://sebastienrousseau.com/es/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Depósitos tokenizados en 2026: servicios bancarios, competencia stablecoin y el estado del dinero bancario programable</a>.</p>
+<p class="post-lead-related"><strong>Lecturas relacionadas:</strong> <a href="https://sebastienrousseau.com/es/2026-05-25-liquidez-programable-2026-ia-depositos-tokenizados/index.html">Liquidez programable en 2026: IA, depósitos tokenizados y orquestación de tesorería en tiempo real</a>, <a href="https://sebastienrousseau.com/es/2026-05-21-depositos-tokenizados-en-2026-servicios-bancarios/index.html">Depósitos tokenizados en 2026: servicios bancarios, competencia stablecoin y el estado del dinero bancario programable</a>.</p>
 </aside>
 <!-- lead-end -->
 

@@ -147,9 +147,9 @@ Je dirais que c'est la bonne manière d'évaluer le résultat. Une amélioration
 | :--- | :--- | :--- | :--- |
 | **Exposant d'empilement** | Borne de Kabatianskii–Levenshtein : 0,59905576... | Au moins aussi fort que les bornes des codes sphériques (Cohn–Zhao) | Taux asymptotique exact conjecturé par Afkhami-Jeddi et al. (2020), démontré |
 | **Caractère définitif de la borne** | Raffinements des seuls facteurs d'ordre inférieur | Question ouverte sur l'écart asymptotique en grande dimension | Borne inférieure correspondante exacte : aucune fonction auxiliaire ne bat ce taux |
-| **Incertitude de signe de Fourier** | Bornes de signe distinctes ($A^+(d) < A^-(d)$) | Liée aux fonctions test anti-auto-duales de Fourier | Résolue asymptotiquement ; incertitude de signe gouvernée par la réflexion de Mellin |
+| **Incertitude de signe de Fourier** | Bornes de signe distinctes (A⁺(d) < A⁻(d)) | Liée aux fonctions test anti-auto-duales de Fourier | Résolue asymptotiquement ; incertitude de signe gouvernée par la réflexion de Mellin |
 | **Codes correcteurs d'erreurs** | Bornes classiques des codes sphériques et binaires | Couplées asymptotiquement aux bornes d'empilement | Améliorations d'un facteur exponentiel pour tous les paramètres à distance fixée |
-| **Plafond méthodologique** | Optimisation numérique de facteurs polynomiaux | Optimisation ouverte des fonctions test auxiliaires $f \in \mathcal{A}_d$ | Plafond mathématique démontré : tout gain supplémentaire exige des méthodes hors Cohn-Elkies |
+| **Plafond méthodologique** | Optimisation numérique de facteurs polynomiaux | Optimisation ouverte des fonctions test auxiliaires f ∈ 𝒜\_d | Plafond mathématique démontré : tout gain supplémentaire exige des méthodes hors Cohn-Elkies |
 
 ## Pourquoi la borne inférieure correspondante change la question
 
@@ -237,11 +237,11 @@ La détermination exacte du taux de décroissance de Cohn-Elkies en grande dimen
 
 ### Mathématiques pures et géométrie discrète
 
-Pour les mathématiciens qui travaillent en géométrie de grande dimension et en analyse harmonique, la détermination du taux exact de Cohn-Elkies déplace le paysage de la recherche. Comme la borne inférieure correspondante prouve qu'aucune fonction auxiliaire de $\mathcal{A}_d$ ne peut battre le nouvel exposant, les chercheurs peuvent cesser de chercher de meilleures fonctions test radiales dans le cadre classique de la programmation linéaire. Les progrès vers des empilements plus denses ou des bornes universelles plus serrées devront désormais explorer des techniques de programmation non linéaire, des hiérarchies semi-définies d'ordre supérieur ou des constructions géométriques radicalement différentes.
+Pour les mathématiciens qui travaillent en géométrie de grande dimension et en analyse harmonique, la détermination du taux exact de Cohn-Elkies déplace le paysage de la recherche. Comme la borne inférieure correspondante prouve qu'aucune fonction auxiliaire de 𝒜\_d ne peut battre le nouvel exposant, les chercheurs peuvent cesser de chercher de meilleures fonctions test radiales dans le cadre classique de la programmation linéaire. Les progrès vers des empilements plus denses ou des bornes universelles plus serrées devront désormais explorer des techniques de programmation non linéaire, des hiérarchies semi-définies d'ordre supérieur ou des constructions géométriques radicalement différentes.
 
 ### Cryptographie et sécurité fondée sur les réseaux
 
-La cryptographie fondée sur les réseaux - au cœur des normes post-quantiques comme ML-KEM et ML-DSA - repose largement sur la difficulté présumée de trouver les vecteurs les plus courts ou les plus proches dans des réseaux euclidiens de grande dimension. La réduction directe depuis 3SAT, qui établit une difficulté d'un facteur $n^{1/400}$ pour le problème euclidien du vecteur le plus proche (CVP), conjuguée à des plafonds exponentiels plus serrés sur les empilements de sphères et les codes sphériques, consolide les fondements théoriques des réductions du pire cas au cas moyen sur les réseaux, sans affaiblir les paramètres de sécurité concrets.
+La cryptographie fondée sur les réseaux - au cœur des normes post-quantiques comme ML-KEM et ML-DSA - repose largement sur la difficulté présumée de trouver les vecteurs les plus courts ou les plus proches dans des réseaux euclidiens de grande dimension. La réduction directe depuis 3SAT, qui établit une difficulté d'un facteur n\^(1/400) pour le problème euclidien du vecteur le plus proche (CVP), conjuguée à des plafonds exponentiels plus serrés sur les empilements de sphères et les codes sphériques, consolide les fondements théoriques des réductions du pire cas au cas moyen sur les réseaux, sans affaiblir les paramètres de sécurité concrets.
 
 ### Démonstration automatique et modèles de fondation
 
@@ -267,7 +267,7 @@ Cohn et Gonçalves ont établi que le problème complémentaire d'incertitude de
 
 **Ce résultat compromet-il la cryptographie fondée sur les réseaux ?**
 
-Non. Le théorème resserre les bornes supérieures sur la densité d'empilement des sphères en grande dimension et établit une difficulté d'un facteur $n^{1/400}$ pour le problème du vecteur le plus proche, mais il ne fournit aucun algorithme de réduction de réseau en temps polynomial. Les cryptosystèmes pratiques fondés sur les réseaux restent sûrs face aux attaques quantiques et classiques connues.
+Non. Le théorème resserre les bornes supérieures sur la densité d'empilement des sphères en grande dimension et établit une difficulté d'un facteur n\^(1/400) pour le problème du vecteur le plus proche, mais il ne fournit aucun algorithme de réduction de réseau en temps polynomial. Les cryptosystèmes pratiques fondés sur les réseaux restent sûrs face aux attaques quantiques et classiques connues.
 
 ## Références
 

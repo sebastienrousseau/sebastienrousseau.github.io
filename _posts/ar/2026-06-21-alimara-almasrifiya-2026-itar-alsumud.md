@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "لافتة الورقة البيضاء للعمارة المصرفية 2026"
 twitter_site: "@wwdseb"
 twitter_title: "ورقة بيضاء: العمارة المصرفية 2026"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "لندن، المملكة المتحدة"
@@ -186,7 +186,7 @@ site_software: "Static Site Generator, Rust"
 2. **فقدان البيانات الصامت من MT إلى MX.** البنوك التي تُصدر MT103 ببيانات عنوان أو تحويلات مقصوصة تدخل قنوات MX بنظافة — لكن الحقول المهيكلة تبقى فارغة. تبعات أدنى السلسلة (فشل فحص العقوبات، وفقدان مُحفِّزات مكافحة غسل الأموال، وانكسارات التسوية) تظهر بعد 30–90 يومًا من الانتقال، أي بعد نافذة الطب الشرعي للتغيير بكثير. يُكمِّم السجل التكلفة المتوقّعة لمعالجة الكتاب الخلفي لكل €1 مليار من تدفّق المدفوعات.
 3. **نسب فعل الوكيل.** حين يُطلِق وكيل خزينة مدعوم بنموذج لغوي سلسلة دفع، يستطيع ثلاثة أطراف ادّعاء الملكية — مالك النموذج، ومزوّد القناة، ومؤلِّف السياسة. بلا قرار نسب صريح مُدمَج في طبقة التنسيق، يرث البنك المسؤوليات الثلاث. يُعرّف السجل شجرة النسب وسلسلة الأدلة وفق SR 11-7 المطلوبة للدفاع عنها.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="تنزيل الورقة البيضاء للعمارة المصرفية 2026 (PDF)">تنزيل ملف PDF التعريفي</a> <a class="pill ghost no-chev" href="/papers" title="عرض جميع الأوراق البيضاء والأبحاث المنشورة">جميع الأوراق البيضاء</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="تنزيل الورقة البيضاء للعمارة المصرفية 2026 (PDF)">تنزيل ملف PDF التعريفي</a> <a class="pill ghost no-chev" href="/research" title="عرض جميع الأوراق البيضاء والأبحاث المنشورة">جميع الأوراق البيضاء</a></p>
 
 ## ملخص المراجعة الداخلية
 

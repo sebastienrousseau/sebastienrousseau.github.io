@@ -129,13 +129,13 @@ A klasszikus digitális számításban egy mátrix skaláris szorzatának kiszá
 
 A memóriában számoló architektúrák ezt a digitális adatátvitelt analóg áramköri fizikával váltják fel:
 
-**A súlyok programozása.** A neurális hálózat súlyait közvetlenül nem felejtő memóriacellákba (például módosított flash- vagy rezisztív RAM-cellákba) programozzák analóg vezetőképességként ($G$). A beprogramozott súlyok helyben maradnak a memóriatömbben; következtetés közben soha nem olvassák ki és nem mozgatják őket.
+**A súlyok programozása.** A neurális hálózat súlyait közvetlenül nem felejtő memóriacellákba (például módosított flash- vagy rezisztív RAM-cellákba) programozzák analóg vezetőképességként (*G*). A beprogramozott súlyok helyben maradnak a memóriatömbben; következtetés közben soha nem olvassák ki és nem mozgatják őket.
 
-**A bemeneti feszültség modulálása.** A bemeneti aktivációkat (például a kamerákból érkező vizuális tokeneket) analóg feszültségszintekké ($V$) alakítják, és a tömb szóvezetékein vezetik végig.
+**A bemeneti feszültség modulálása.** A bemeneti aktivációkat (például a kamerákból érkező vizuális tokeneket) analóg feszültségszintekké (*V*) alakítják, és a tömb szóvezetékein vezetik végig.
 
-**Szorzás Ohm törvényével.** Ahogy a bemeneti feszültség áthalad minden memóriacellán, Ohm törvénye ($I = V \times G$) azonnali analóg szorzást végez, és a bemenet és a tárolt súly szorzatával arányos elektromos áramot hoz létre.
+**Szorzás Ohm törvényével.** Ahogy a bemeneti feszültség áthalad minden memóriacellán, Ohm törvénye (*I* = *V* × *G*) azonnali analóg szorzást végez, és a bemenet és a tárolt súly szorzatával arányos elektromos áramot hoz létre.
 
-**Összegzés Kirchhoff áramtörvényével.** A függőleges bitvezetékek mentén több ezer párhuzamos memóriacella árama természetes módon összeadódik Kirchhoff áramtörvénye szerint ($\sum I = 0$).
+**Összegzés Kirchhoff áramtörvényével.** A függőleges bitvezetékek mentén több ezer párhuzamos memóriacella árama természetes módon összeadódik Kirchhoff áramtörvénye szerint (Σ*I* = 0).
 
 Egyetlen flashmemória-tömb így egyetlen órajelciklus alatt végrehajt egy teljes mátrix-vektor szorzást, fizikai szinten, egyetlen memóriaolvasás nélkül. Az összegzett analóg áramot ezután a tömb szélén nagy sebességű analóg-digitális átalakítók (ADC) alakítják vissza digitális értékekké.
 
@@ -208,7 +208,7 @@ A 700 wattos adatközponti fürtökről a 15 wattos peremszilíciumra való át�
 A Neumann-féle szűk keresztmetszet az átviteli teljesítmény és az energia azon korlátja, amelyet a központi feldolgozóegység (ALU) és a rendszermemória (DRAM) fizikai szétválasztása okoz. A több milliárd mátrixszorzást igénylő mesterségesintelligencia-terhelésekben a processzorok teljes energiájuk több mint 85%-át és jelentős számú órajelciklust töltenek azzal, hogy az adatokat oda-vissza mozgatják a rézbuszokon, ami súlyos hő- és késleltetési szűk keresztmetszeteket okoz.
 
 **Hogyan működik az analóg, memóriában végzett számítás (CIM)?**
-A memóriában végzett számítás a matematikai műveleteket közvetlenül a memóriacellákban végzi, adatmozgatás nélkül. A neurális hálózat súlyait analóg vezetőképességi állapotként tárolják nem felejtő memóriacellákban. Amikor bemeneti feszültséget kapcsolnak a tömbre, az áram Ohm törvénye ($I = V \times G$) szerint folyik át a cellákon, és Kirchhoff áramtörvénye szerint összegződik a bitvezetékek mentén. Így egy teljes mátrix-vektor szorzás egyetlen fizikai lépésben megy végbe.
+A memóriában végzett számítás a matematikai műveleteket közvetlenül a memóriacellákban végzi, adatmozgatás nélkül. A neurális hálózat súlyait analóg vezetőképességi állapotként tárolják nem felejtő memóriacellákban. Amikor bemeneti feszültséget kapcsolnak a tömbre, az áram Ohm törvénye (*I* = *V* × *G*) szerint folyik át a cellákon, és Kirchhoff áramtörvénye szerint összegződik a bitvezetékek mentén. Így egy teljes mátrix-vektor szorzás egyetlen fizikai lépésben megy végbe.
 
 **Miért különösen fontos a memóriában végzett számítás a robotok és drónok számára?**
 A mobil robotok és drónok szigorú SWaP-C-korlátok (méret, tömeg, teljesítmény és költség) között működnek. Fedélzeti akkumulátorokra támaszkodnak, és nem bírják el a nehéz hűtőradiátorokat vagy a nagy teljesítményű tápegységeket. A memóriában végzett számítás 10-szeres–1000-szeres energiahatékonyságot nyújt, így a robotok helyben futtathatnak összetett látás-nyelv-cselekvés modelleket 10–20 wattos teljesítménykereten belül, miközben megőrzik az akkumulátor üzemidejét.

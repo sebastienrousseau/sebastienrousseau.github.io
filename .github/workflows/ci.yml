@@ -86,6 +86,17 @@ jobs:
       - name: Naming conventions check
         run: python3 scripts/dev/check_naming_conventions.py
 
+      - name: URL freeze (ADR-0015)
+        # Fails when the PR deletes or renames a published _posts page or
+        # changes a slugs.json value. Compares the base branch tree with the
+        # PR merge tree, so a shallow fetch of the base is enough.
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          git fetch --no-tags --depth=1 origin "$BASE_REF"
+          python3 scripts/seo_and_audit/check_url_freeze.py --base FETCH_HEAD
+
       - name: Cloudflare KV write audit (Free-tier policy)
         run: bash scripts/dev/check-kv-writes.sh
 
@@ -157,7 +168,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
-      THEME_SHA: "22e1ea261a7d44019b370490a33cdf7047d239b4"
+      THEME_SHA: "877596c81fc45014a2f6afde4412f268203ec866"
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
@@ -778,6 +789,7 @@ jobs:
     timeout-minutes: 45
     permissions:
       contents: read
+      actions: write
       pages: write
       id-token: write
       attestations: write   # SLSA build provenance for the SBOM (ADR-0004)
@@ -911,6 +923,24 @@ jobs:
       - name: Configure Pages
         if: github.ref == 'refs/heads/main'
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
+
+      - name: Drop the Pages artifact of an earlier attempt
+        # Artifacts belong to the run, not the attempt. Re-running this job
+        # uploaded a second "github-pages" artifact next to the first, and
+        # deploy-pages refuses to pick one ("Multiple artifacts named
+        # github-pages", run 44864197675 attempt 2). Deleting the earlier
+        # one keeps "Re-run failed jobs" a working recovery.
+        if: github.ref == 'refs/heads/main' && github.run_attempt != '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          ids=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts?per_page=100" \
+            --jq '.artifacts[] | select(.name == "github-pages") | .id')
+          for id in $ids; do
+            gh api -X DELETE "repos/${GITHUB_REPOSITORY}/actions/artifacts/${id}"
+            echo "deleted github-pages artifact ${id}"
+          done
 
       - name: Upload Pages artifact
         # include-hidden-files is REQUIRED. upload-pages-artifact tars the

@@ -127,9 +127,9 @@ Prestandan hos det angreppssättet är redan enastående. De bästa vanliga atom
 | :--- | :--- | :--- |
 | **Fysikalisk mekanism** | Övergångar i elektronskalet (cesium/strontium) | Proton-/neutronövergångar inne i kärnan hos torium-229 |
 | **Avfrågningsmedium** | Mikrovågor eller optiska lasrar på valenselektroner | Vakuumultraviolett laser på kärnor inbäddade i kristall |
-| **Värdmaterial** | Gasceller eller laserkylda fällor i optiska gitter | Fasta kalciumfluoridkristaller ($CaF_2$) |
-| **Nuvarande prestanda** | Miljarder år för att vinna/tappa $\le 1$ sekund | Atomurets precision uppnådd i sökandet efter mörk materia |
-| **Målstabilitet** | Etablerad internationell standard ($10^{-18}$) | Förväntad stabilitetsförbättring med en storleksordning |
+| **Värdmaterial** | Gasceller eller laserkylda fällor i optiska gitter | Fasta kalciumfluoridkristaller (CaF₂) |
+| **Nuvarande prestanda** | Miljarder år för att vinna/tappa ≤ 1 sekund | Atomurets precision uppnådd i sökandet efter mörk materia |
+| **Målstabilitet** | Etablerad internationell standard (10⁻¹⁸) | Förväntad stabilitetsförbättring med en storleksordning |
 | **Hårdvarans form** | Stor, ömtålig vakuumutrustning i laboratoriet | Möjlighet till kompakta, tåliga fältenheter i fast tillstånd |
 
 De nya klockorna flyttar platsen där hoppet sker. I stället för elektronerna i skalet använder de lasrar för att få protoner och neutroner att hoppa mellan energinivåer inne i kärnan hos en atom, i det här fallet torium-229. Tiden i en kärnklocka beräknas genom att man följer hur en kraftfull laser växelverkar med atomens kärna.
@@ -226,7 +226,7 @@ Om arkitekturer med fasta kalciumfluoridkristaller visar sig mindre skrymmande o
 
 ### Grundläggande fysik och astrofysik
 
-Eftersom energinivåerna i kärnan beror direkt på den starka växelverkan och den elektromagnetiska kopplingskonstanten $\alpha$ erbjuder kärnklockor en ny känslighet för att testa om fundamentala fysikaliska konstanter varierar över kosmisk tid och för att undersöka kandidater till mörk materia.
+Eftersom energinivåerna i kärnan beror direkt på den starka växelverkan och den elektromagnetiska kopplingskonstanten α erbjuder kärnklockor en ny känslighet för att testa om fundamentala fysikaliska konstanter varierar över kosmisk tid och för att undersöka kandidater till mörk materia.
 
 ## Slutsats
 

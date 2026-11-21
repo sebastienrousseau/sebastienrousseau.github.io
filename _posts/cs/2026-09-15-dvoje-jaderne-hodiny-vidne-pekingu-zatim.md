@@ -127,9 +127,9 @@ Výkon tohoto přístupu je už nyní mimořádný. Nejlepší běžné atomové
 | :--- | :--- | :--- |
 | **Fyzikální mechanismus** | Přechody v elektronovém obalu (cesium/stroncium) | Přechody protonů/neutronů uvnitř jádra thoria-229 |
 | **Snímací médium** | Mikrovlny nebo optické lasery na valenční elektrony | Laser ve vakuové ultrafialové oblasti na jádra uložená v krystalu |
-| **Hostitelský substrát** | Plynové cely nebo laserem chlazené pasti optické mřížky | Pevné krystaly fluoridu vápenatého ($CaF_2$) |
-| **Současný výkon** | Miliardy let na zisk/ztrátu $\le 1$ sekundy | Přesnost atomových hodin dosažena při hledání temné hmoty |
-| **Cílová stabilita** | Zavedený mezinárodní standard ($10^{-18}$) | Předpokládané zlepšení stability o řád |
+| **Hostitelský substrát** | Plynové cely nebo laserem chlazené pasti optické mřížky | Pevné krystaly fluoridu vápenatého (CaF₂) |
+| **Současný výkon** | Miliardy let na zisk/ztrátu ≤ 1 sekundy | Přesnost atomových hodin dosažena při hledání temné hmoty |
+| **Cílová stabilita** | Zavedený mezinárodní standard (10⁻¹⁸) | Předpokládané zlepšení stability o řád |
 | **Podoba hardwaru** | Velká, křehká laboratorní vakuová aparatura | Potenciál pro kompaktní, odolné polní jednotky v pevné fázi |
 
 Nové hodiny mění místo, kde k přeskoku dochází. Místo elektronů v obalu používají lasery k tomu, aby protony a neutrony přeskakovaly mezi energetickými hladinami uvnitř jádra atomu, v tomto případě thoria-229. Čas se v jaderných hodinách počítá sledováním toho, jak výkonný laser interaguje s jádrem atomu.
@@ -226,7 +226,7 @@ Pokud se architektury s pevnými krystaly fluoridu vápenatého ve výrobě uká
 
 ### Základní fyzika a astrofyzika
 
-Protože jaderné energetické hladiny závisejí přímo na silné interakci a na elektromagnetické vazebné konstantě $\alpha$, nabízejí jaderné hodiny novou citlivost pro ověřování, zda se základní fyzikální konstanty mění v kosmickém čase, a pro zkoumání kandidátů na temnou hmotu.
+Protože jaderné energetické hladiny závisejí přímo na silné interakci a na elektromagnetické vazebné konstantě α, nabízejí jaderné hodiny novou citlivost pro ověřování, zda se základní fyzikální konstanty mění v kosmickém čase, a pro zkoumání kandidátů na temnou hmotu.
 
 ## Závěr
 

@@ -13,7 +13,7 @@ description: "Op 25 mei 2026 publiceerde Paus Leo XIV Magnifica Humanitas, de ee
 format-detection: "telephone=no"
 hreflang: "nl"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/nl/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+id: "https://sebastienrousseau.com/nl/2026-05-26-magnifica-humanitas-een-industrielezing-van"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/nl/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+permalink: "https://sebastienrousseau.com/nl/2026-05-26-magnifica-humanitas-een-industrielezing-van"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -40,7 +40,7 @@ tags: "Magnifica Humanitas, Pope Leo XIV, AI-ethiek, quantum computing, technolo
 excerpt: "Op 25 mei 2026 publiceerde Paus Leo XIV Magnifica Humanitas — de eerste pauselijke encycliek over kunstmatige intelligentie. Gelezen vanuit de technologiesector, niet als leerstuk maar als ethisch kader, weerklinkt elke morele onrust die de trein, de auto, kernenergie en het internet vergezelde, en landt het op de hoop."
 theme-color: "0, 83, 191"
 title: "Magnifica Humanitas: een industrielezing van de AI-encycliek"
-url: "https://sebastienrousseau.com/nl/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+url: "https://sebastienrousseau.com/nl/2026-05-26-magnifica-humanitas-een-industrielezing-van"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/rss.xml"
 category: "Technology"
@@ -161,7 +161,7 @@ Dat is het patroon waar *Magnifica Humanitas* naar wijst, en daarom moet het doc
 
 Twee specifieke zorgen van de encycliek landen rechtstreeks op de engineering van financiële systemen, en beide verdienen het antwoord van een engineer in plaats van dat van een gelovige.
 
-De eerste is de **concentratie van macht in private, transnationale handen**. De observatie van de encycliek dat de voornaamste drijvende krachten van deze technologie nu private actoren zijn wier capaciteit die van veel staten overstijgt, is geen theologische claim; het is een accurate beschrijving van het AI-landschap in 2026, en het is precies de zorg die door de regulatoire architectuur loopt die de sector momenteel haastig probeert te halen — de hoog-risicoverplichtingen van de EU AI Act, afdwingbaar vanaf 2 augustus 2026, de bepalingen van DORA over concentratierisico bij derden, en de bewegingen rond soevereine cloud en soeverein controlevlak die zijn behandeld in de stukken over [cloudarchitectuur](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "The Best Cloud Infrastructure Architecture in 2026") en [agentic engineering](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "Agentic Engineering for Banks") op deze site. De encycliek en de EU AI Act maken zich opvallend genoeg zorgen over hetzelfde: dat capaciteit zonder verantwoording macht concentreert op manieren die aan democratisch bestuur ontsnappen. De één zegt het in de taal van de sociale leer en de ander in de taal van conformiteitsbeoordelingen. De diagnose is identiek.
+De eerste is de **concentratie van macht in private, transnationale handen**. De observatie van de encycliek dat de voornaamste drijvende krachten van deze technologie nu private actoren zijn wier capaciteit die van veel staten overstijgt, is geen theologische claim; het is een accurate beschrijving van het AI-landschap in 2026, en het is precies de zorg die door de regulatoire architectuur loopt die de sector momenteel haastig probeert te halen — de hoog-risicoverplichtingen van de EU AI Act, afdwingbaar vanaf 2 augustus 2026, de bepalingen van DORA over concentratierisico bij derden, en de bewegingen rond soevereine cloud en soeverein controlevlak die zijn behandeld in de stukken over [cloudarchitectuur](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "The Best Cloud Infrastructure Architecture in 2026") en [agentic engineering](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "Agentic Engineering for Banks") op deze site. De encycliek en de EU AI Act maken zich opvallend genoeg zorgen over hetzelfde: dat capaciteit zonder verantwoording macht concentreert op manieren die aan democratisch bestuur ontsnappen. De één zegt het in de taal van de sociale leer en de ander in de taal van conformiteitsbeoordelingen. De diagnose is identiek.
 
 De tweede is **kwantumcomputing**, die de encycliek niet bij naam noemt maar wier ethische gestalte zij precies anticipeert. De premisse van de post-kwantummigratie die is behandeld in [Het grootboek beveiligen](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Securing the Ledger") is dat een capaciteit die nu in aanbouw is — een cryptografisch relevante kwantumcomputer — alles wat onder de huidige aannames is versleuteld, met terugwerkende kracht zal blootleggen wanneer zij arriveert. "Harvest now, decrypt later" is, in een seculier register, precies het soort macht-zonder-wijsheid waar de encycliek voor waarschuwt: een technologie wier gevolgen arriveren op een tijdlijn die voorbereiding voorbijstreeft, in de handen van wie de middelen heeft om haar als eerste te wielen. Het aandringen van de encycliek om "waar gaan we heen?" te vragen voordat de opeenvolging van noodsituaties het pad bepaalt, is voor een security-engineer goede praktijk weergegeven als morele filosofie.
 
@@ -231,8 +231,8 @@ Optimistisch, maar niet naïef. Het argument is dat de toekomst van AI en kwantu
 
 - Sebastien Rousseau, (2026). [Lucy's flashdrive, opnieuw bekeken: kennisoverdracht, AI en kwantum](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html "Lucy's Flash Drive, Revisited").
 - Sebastien Rousseau, (2026). [Het grootboek beveiligen: een board-level-gids voor post-kwantummigratie in corporate finance](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Securing the Ledger").
-- Sebastien Rousseau, (2026). [Agentic Engineering voor banken: een blauwdruk voor 2026](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "Agentic Engineering for Banks").
-- Sebastien Rousseau, (2026). [De beste cloud-infrastructuurarchitectuur in 2026](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "The Best Cloud Infrastructure Architecture in 2026").
+- Sebastien Rousseau, (2026). [Agentic Engineering voor banken: een blauwdruk voor 2026](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "Agentic Engineering for Banks").
+- Sebastien Rousseau, (2026). [De beste cloud-infrastructuurarchitectuur in 2026](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "The Best Cloud Infrastructure Architecture in 2026").
 - Paus Leo XIV, (2026). [Encycliek *Magnifica Humanitas* over de bescherming van de menselijke persoon in de tijd van de kunstmatige intelligentie ⧉](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html "Magnifica Humanitas — full text, Vatican.va"). De Heilige Stoel.
 - Paus Leo XIII, (1891). [Encycliek *Rerum Novarum* over kapitaal en arbeid ⧉](https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_15051891_rerum-novarum.html "Rerum Novarum — Vatican.va"). De Heilige Stoel.
 - Vatican News, (2026). [De eerste encycliek van Paus Leo XIV *Magnifica humanitas* verschijnt op 25 mei ⧉](https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html "Vatican News — Magnifica Humanitas"). Vatican News.

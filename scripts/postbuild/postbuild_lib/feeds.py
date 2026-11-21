@@ -581,6 +581,7 @@ _STATIC_SLUGS = (
     "made-with-static-site-generator",
     "made-with-static-site-generator",
     "resources-pacs008-checklist",
+    "resources-quantum-safe-readiness-checklist",
 )
 _TOPIC_SLUGS = (
     "post-quantum-cryptography",

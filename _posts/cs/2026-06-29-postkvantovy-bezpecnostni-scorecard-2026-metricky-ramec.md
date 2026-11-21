@@ -13,7 +13,7 @@ description: "Postkvantový bezpečnostní scorecard 2026 dává představenstv�
 format-detection: "telephone=no"
 hreflang: "cs"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/cs/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+id: "https://sebastienrousseau.com/cs/2026-06-29-postkvantovy-bezpecnostni-scorecard-2026-metricky-ramec"
 image_alt: "Černobílý portrét Sebastiena Rousseaua"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/cs/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+permalink: "https://sebastienrousseau.com/cs/2026-06-29-postkvantovy-bezpecnostni-scorecard-2026-metricky-ramec"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -39,7 +39,7 @@ subtitle: "Jak musí představenstva měřit a řídit migraci na NIST FIPS 203 
 tags: "postkvantová, kryptografie, bankovnictví, řízení, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
 theme-color: "0, 83, 191"
 title: "Postkvantový bezpečnostní scorecard 2026: metrický rámec pro představenstvo"
-url: "https://sebastienrousseau.com/cs/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+url: "https://sebastienrousseau.com/cs/2026-06-29-postkvantovy-bezpecnostni-scorecard-2026-metricky-ramec"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/rss.xml"
 category: "Technology"
@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Související čtení:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib a postkvantová migrace v bankovnictví v roce 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: ochranný algoritmus v kvantové éře</a>.</p>
 </aside>
+
 Postkvantová bezpečnost už není výzkumný projekt. „Dohledové hodiny“ tikají směrem k vynucovacím termínům na konci dvacátých let. Finalizace [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) a [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) kodifikovala standardy pro zapouzdření klíčů a digitální podpisy.
 
 Regulátoři dnes očekávají, že banky první třídy postoupí dál než k pilotním programům. V roce 2026 se pozornost přesunula k industrializaci těchto standardů. Neschopnost prokázat jasnou cestu k migraci nese významné regulatorní sankce podle [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) a potenciální osobní odpovědnost ředitelů, kteří ignorují předvídatelnou hrozbu kvantového dešifrování.

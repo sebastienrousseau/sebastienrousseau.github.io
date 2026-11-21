@@ -75,7 +75,7 @@
     ],
     [
       "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
-      "<li><a href=\"/ha/takardun-bincike/index.html\">Papers</a></li>"
+      "<li><a href=\"/ha/bincike/index.html\">Papers</a></li>"
     ],
     [
       "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
@@ -127,7 +127,7 @@
     ],
     [
       "<a href=\"?/papers/index\\.html\"?>Papers</a>",
-      "<a href=\"/ha/takardun-bincike/index.html\">Papers</a>"
+      "<a href=\"/ha/bincike/index.html\">Papers</a>"
     ],
     [
       "<a href=\"?/tags/index\\.html\"?>Tags</a>",

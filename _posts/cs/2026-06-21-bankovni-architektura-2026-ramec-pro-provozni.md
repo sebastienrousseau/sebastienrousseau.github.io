@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "Banner bílé knihy Bankovní architektura 2026"
 twitter_site: "@wwdseb"
 twitter_title: "Bílá kniha Bankovní architektura 2026"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "Londýn, Spojené království"
@@ -186,7 +186,7 @@ Desetipoložkový programový rejstřík rizik v PDF je kalibrován na explicitn
 2. **Tichá ztráta dat při překladu MT na MX.** Banky vysílající `MT103` s oříznutými adresními nebo remitenčními daty se do `MX` kanálů načtou čistě — ale strukturovaná pole zůstanou prázdná. Navazující důsledek (selhaný sankční screening, zmeškané AML triggery, zlomená rekonciliace) se projeví 30–90 dní po přechodu, daleko za forenzním oknem změny. Rejstřík kvantifikuje očekávaný náklad sanace zpětné knihy na 1 mld. EUR platebního toku.
 3. **Atribuce akcí agenta.** Když treasury agent poháněný LLM spustí platební řetězec, mohou si vlastnictví nárokovat tři principové — vlastník modelu, poskytovatel koleje, autor politiky. Bez explicitního atribučního rozhodnutí zapečeného do orchestrační vrstvy banka zdědí všechny tři závazky. Rejstřík definuje atribuční strom a důkazní řetěz podle `SR 11-7` potřebný k jeho obhájení.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Stáhnout bílou knihu Bankovní architektura 2026 (PDF)">Stáhnout PDF briefing</a> <a class="pill ghost no-chev" href="/papers" title="Zobrazit všechny publikované bílé knihy a výzkum">Všechny bílé knihy</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Stáhnout bílou knihu Bankovní architektura 2026 (PDF)">Stáhnout PDF briefing</a> <a class="pill ghost no-chev" href="/research" title="Zobrazit všechny publikované bílé knihy a výzkum">Všechny bílé knihy</a></p>
 
 ## Souhrn interního review
 

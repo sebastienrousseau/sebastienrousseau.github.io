@@ -13,7 +13,7 @@ description: "Pada 25 Mei 2026, Paus Leo XIV merilis Magnifica Humanitas, ensikl
 format-detection: "telephone=no"
 hreflang: "id"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/id/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+id: "https://sebastienrousseau.com/id/2026-05-26-magnifica-humanitas-pembacaan-industri-ai-atas"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/id/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+permalink: "https://sebastienrousseau.com/id/2026-05-26-magnifica-humanitas-pembacaan-industri-ai-atas"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -40,7 +40,7 @@ tags: "Magnifica Humanitas, Pope Leo XIV, etika AI, komputasi kuantum, sejarah t
 excerpt: "Pada 25 Mei 2026, Paus Leo XIV merilis Magnifica Humanitas — ensiklik kepausan pertama tentang kecerdasan buatan. Dibaca dari dalam industri teknologi, bukan sebagai doktrin tetapi sebagai kerangka etika, ia menggemakan setiap kecemasan moral yang menyertai kereta api, mobil, tenaga nuklir, dan internet, dan mendarat pada harapan."
 theme-color: "0, 83, 191"
 title: "Magnifica Humanitas: Pembacaan Industri AI atas Ensiklik Kepausan Pertama tentang AI"
-url: "https://sebastienrousseau.com/id/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+url: "https://sebastienrousseau.com/id/2026-05-26-magnifica-humanitas-pembacaan-industri-ai-atas"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/rss.xml"
 category: "Technology"
@@ -161,7 +161,7 @@ Inilah pola yang ditunjuk *Magnifica Humanitas*, dan inilah sebabnya dokumen ini
 
 Dua kekhawatiran spesifik ensiklik mendarat langsung pada rekayasa sistem keuangan, dan keduanya layak mendapatkan respons seorang insinyur alih-alih seorang penganut iman.
 
-Yang pertama adalah **konsentrasi kekuasaan di tangan pihak swasta, transnasional**. Observasi ensiklik bahwa penggerak utama teknologi ini kini adalah aktor swasta yang kapasitasnya melebihi banyak negara bukanlah klaim teologis; ini adalah deskripsi akurat tentang lanskap AI 2026, dan persis adalah kekhawatiran yang mengalir melalui arsitektur regulasi yang sedang berusaha dipenuhi industri — kewajiban risiko tinggi EU AI Act yang dapat ditegakkan mulai 2 Agustus 2026, ketentuan risiko konsentrasi pihak ketiga DORA, dan gerakan cloud berdaulat serta control plane berdaulat yang dibahas dalam tulisan [arsitektur cloud](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "Arsitektur Infrastruktur Cloud Terbaik pada 2026") dan [rekayasa agentik](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "Rekayasa Agentik untuk Bank") di situs ini. Ensiklik dan EU AI Act, secara luar biasa, mengkhawatirkan hal yang sama: bahwa kapabilitas tanpa akuntabilitas mengonsentrasikan kekuasaan dengan cara yang lolos dari tata kelola demokratis. Yang satu mengatakannya dalam bahasa doktrin sosial dan yang lain dalam bahasa asesmen kesesuaian. Diagnosisnya identik.
+Yang pertama adalah **konsentrasi kekuasaan di tangan pihak swasta, transnasional**. Observasi ensiklik bahwa penggerak utama teknologi ini kini adalah aktor swasta yang kapasitasnya melebihi banyak negara bukanlah klaim teologis; ini adalah deskripsi akurat tentang lanskap AI 2026, dan persis adalah kekhawatiran yang mengalir melalui arsitektur regulasi yang sedang berusaha dipenuhi industri — kewajiban risiko tinggi EU AI Act yang dapat ditegakkan mulai 2 Agustus 2026, ketentuan risiko konsentrasi pihak ketiga DORA, dan gerakan cloud berdaulat serta control plane berdaulat yang dibahas dalam tulisan [arsitektur cloud](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "Arsitektur Infrastruktur Cloud Terbaik pada 2026") dan [rekayasa agentik](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "Rekayasa Agentik untuk Bank") di situs ini. Ensiklik dan EU AI Act, secara luar biasa, mengkhawatirkan hal yang sama: bahwa kapabilitas tanpa akuntabilitas mengonsentrasikan kekuasaan dengan cara yang lolos dari tata kelola demokratis. Yang satu mengatakannya dalam bahasa doktrin sosial dan yang lain dalam bahasa asesmen kesesuaian. Diagnosisnya identik.
 
 Yang kedua adalah **komputasi kuantum**, yang tidak disebut oleh ensiklik tetapi bentuk etisnya tepat diantisipasi. Premis migrasi pasca-kuantum yang dibahas dalam [Securing the Ledger](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Securing the Ledger") adalah bahwa sebuah kapabilitas yang sedang dibangun — komputer kuantum yang relevan secara kriptografi — ketika tiba, akan secara retroaktif mengekspos segala sesuatu yang dienkripsi di bawah asumsi hari ini. "Harvest now, decrypt later" adalah, dalam register sekuler, persis jenis kekuasaan-tanpa-kebijaksanaan yang diperingatkan ensiklik: teknologi yang konsekuensinya tiba pada garis waktu yang melampaui persiapan, di tangan mereka yang memiliki sumber daya untuk memegangnya lebih dulu. Desakan ensiklik untuk bertanya "ke mana kita pergi?" sebelum rangkaian keadaan darurat mendiktekan jalannya adalah, bagi seorang insinyur keamanan, praktik baik yang diterjemahkan sebagai filsafat moral.
 
@@ -231,8 +231,8 @@ Optimistis, tetapi tidak secara naif. Argumennya adalah bahwa masa depan AI dan 
 
 - Sebastien Rousseau, (2026). [Flash Drive Lucy, Ditinjau Kembali: Transfer Pengetahuan, AI, dan Kuantum](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html "Flash Drive Lucy, Ditinjau Kembali").
 - Sebastien Rousseau, (2026). [Securing the Ledger: Panduan Tingkat Dewan untuk Migrasi Pasca-Kuantum bagi Keuangan Korporat](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Securing the Ledger").
-- Sebastien Rousseau, (2026). [Rekayasa Agentik untuk Bank: Cetak Biru 2026](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "Rekayasa Agentik untuk Bank").
-- Sebastien Rousseau, (2026). [Arsitektur Infrastruktur Cloud Terbaik pada 2026](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "Arsitektur Infrastruktur Cloud Terbaik pada 2026").
+- Sebastien Rousseau, (2026). [Rekayasa Agentik untuk Bank: Cetak Biru 2026](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "Rekayasa Agentik untuk Bank").
+- Sebastien Rousseau, (2026). [Arsitektur Infrastruktur Cloud Terbaik pada 2026](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "Arsitektur Infrastruktur Cloud Terbaik pada 2026").
 - Pope Leo XIV, (2026). [Surat Ensiklik *Magnifica Humanitas* tentang Menjaga Pribadi Manusia di Masa Kecerdasan Buatan ⧉](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html "Magnifica Humanitas — teks lengkap, Vatican.va"). Takhta Suci.
 - Pope Leo XIII, (1891). [Surat Ensiklik *Rerum Novarum* tentang Modal dan Pekerjaan ⧉](https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_15051891_rerum-novarum.html "Rerum Novarum — Vatican.va"). Takhta Suci.
 - Vatican News, (2026). [Ensiklik pertama Paus Leo XIV *Magnifica humanitas* akan diterbitkan 25 Mei ⧉](https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html "Vatican News — Magnifica Humanitas"). Vatican News.

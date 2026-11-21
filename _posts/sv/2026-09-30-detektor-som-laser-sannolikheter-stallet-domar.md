@@ -121,7 +121,7 @@ Det strukturella påståendet lyder alltså så här: generativa domare är dyra
 
 | Arkitekturdimension | Generativa LLM-domare (t.ex. GPT-4 som domare) | Entokenklassificerare (t.ex. Llama Guard) | Flerfrågedetektor med RLCD (Jev) |
 | :--- | :--- | :--- | :--- |
-| **Bedömningsmekanism** | Fullt autoregressivt avkodningspass per kriterium | Softmax-sannolikhet över en enda utdatatoken | Kalibrerad sannolikhetstensor med flera huvuden $P(\text{yes})$ |
+| **Bedömningsmekanism** | Fullt autoregressivt avkodningspass per kriterium | Softmax-sannolikhet över en enda utdatatoken | Kalibrerad sannolikhetstensor med flera huvuden P(yes) |
 | **Frågor per anrop** | 1 utvärderingsprompt per modellanrop | 1 klassificeringsetikett per modellanrop | Flera binära, kategoriska och ordinala frågor i 1 anrop |
 | **Inferenskostnad** | Hög (10–50 USD per 1 000 interaktioner) | Måttlig (0,50–2,00 USD per 1 000 interaktioner) | 63× lägre (0,30 USD för 19 fullständiga benchmarks) |
 | **AUROC-prestanda** | Beroende av benchmark; benägen till domardrift | Hög på specifika tränade säkerhetskategorier | Median-AUROC 0,886 zero-shot över 44 sviter |

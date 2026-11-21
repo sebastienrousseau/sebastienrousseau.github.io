@@ -129,13 +129,13 @@ W klasycznych obliczeniach cyfrowych obliczenie iloczynu skalarnego macierzy wym
 
 Architektury obliczeń w pamięci zastępują ten cyfrowy transfer danych fizyką obwodów analogowych:
 
-**Programowanie wag.** Wagi sieci neuronowej programuje się bezpośrednio w nieulotnych komórkach pamięci (takich jak zmodyfikowana pamięć flash lub rezystancyjna pamięć RAM) jako analogowe konduktancje ($G$). Po zaprogramowaniu wagi pozostają nieruchomo w macierzy pamięci; podczas wnioskowania nigdy nie są pobierane ani przenoszone.
+**Programowanie wag.** Wagi sieci neuronowej programuje się bezpośrednio w nieulotnych komórkach pamięci (takich jak zmodyfikowana pamięć flash lub rezystancyjna pamięć RAM) jako analogowe konduktancje (*G*). Po zaprogramowaniu wagi pozostają nieruchomo w macierzy pamięci; podczas wnioskowania nigdy nie są pobierane ani przenoszone.
 
-**Modulacja napięcia wejściowego.** Aktywacje wejściowe (na przykład tokeny wizualne z kamer) zamienia się na analogowe poziomy napięcia ($V$) i podaje wzdłuż linii słów macierzy.
+**Modulacja napięcia wejściowego.** Aktywacje wejściowe (na przykład tokeny wizualne z kamer) zamienia się na analogowe poziomy napięcia (*V*) i podaje wzdłuż linii słów macierzy.
 
-**Mnożenie zgodnie z prawem Ohma.** Gdy napięcie wejściowe przechodzi przez każdą komórkę pamięci, prawo Ohma ($I = V \times G$) wykonuje natychmiastowe mnożenie analogowe, wytwarzając prąd elektryczny proporcjonalny do iloczynu wejścia i zapisanej wagi.
+**Mnożenie zgodnie z prawem Ohma.** Gdy napięcie wejściowe przechodzi przez każdą komórkę pamięci, prawo Ohma (*I* = *V* × *G*) wykonuje natychmiastowe mnożenie analogowe, wytwarzając prąd elektryczny proporcjonalny do iloczynu wejścia i zapisanej wagi.
 
-**Akumulacja zgodnie z prądowym prawem Kirchhoffa.** Wzdłuż pionowych linii bitów prądy z tysięcy równoległych komórek pamięci w naturalny sposób sumują się zgodnie z prądowym prawem Kirchhoffa ($\sum I = 0$).
+**Akumulacja zgodnie z prądowym prawem Kirchhoffa.** Wzdłuż pionowych linii bitów prądy z tysięcy równoległych komórek pamięci w naturalny sposób sumują się zgodnie z prądowym prawem Kirchhoffa (Σ*I* = 0).
 
 Pojedyncza macierz pamięci flash wykonuje więc całe mnożenie macierzy przez wektor w jednym cyklu zegara, na poziomie fizyki i bez ani jednego pobrania z pamięci. Zakumulowany prąd analogowy jest następnie zamieniany z powrotem na wartości cyfrowe przez szybkie przetworniki analogowo-cyfrowe (ADC) na krawędzi macierzy.
 
@@ -208,7 +208,7 @@ Przejście od klastrów centrów danych o mocy 700 W do brzegowego krzemu o mocy
 Wąskie gardło von Neumanna to ograniczenie przepustowości i energii wynikające z fizycznego rozdzielenia jednostki obliczeniowej (ALU) i pamięci systemowej (DRAM). W obciążeniach sztucznej inteligencji, obejmujących miliardy mnożeń macierzy, procesory zużywają ponad 85% całkowitej energii i znaczną liczbę cykli zegara na samo przerzucanie danych tam i z powrotem po miedzianych magistralach, co tworzy poważne wąskie gardła termiczne i opóźnieniowe.
 
 **Jak działają analogowe obliczenia w pamięci (CIM)?**
-Obliczenia w pamięci wykonują operacje matematyczne bezpośrednio w komórkach pamięci, bez przenoszenia danych. Wagi sieci neuronowej są przechowywane jako analogowe stany konduktancji w nieulotnych komórkach pamięci. Gdy do macierzy przykłada się napięcia wejściowe, prąd płynie przez komórki zgodnie z prawem Ohma ($I = V \times G$) i sumuje się wzdłuż linii bitów zgodnie z prądowym prawem Kirchhoffa. W ten sposób pełne mnożenie macierzy przez wektor odbywa się w jednym kroku fizycznym.
+Obliczenia w pamięci wykonują operacje matematyczne bezpośrednio w komórkach pamięci, bez przenoszenia danych. Wagi sieci neuronowej są przechowywane jako analogowe stany konduktancji w nieulotnych komórkach pamięci. Gdy do macierzy przykłada się napięcia wejściowe, prąd płynie przez komórki zgodnie z prawem Ohma (*I* = *V* × *G*) i sumuje się wzdłuż linii bitów zgodnie z prądowym prawem Kirchhoffa. W ten sposób pełne mnożenie macierzy przez wektor odbywa się w jednym kroku fizycznym.
 
 **Dlaczego obliczenia w pamięci są szczególnie ważne dla robotów i dronów?**
 Roboty mobilne i drony działają pod ścisłymi ograniczeniami SWaP-C (rozmiar, waga, moc i koszt). Polegają na bateriach pokładowych i nie mogą przenosić ciężkich chłodnic ani zasilaczy dużej mocy. Obliczenia w pamięci zapewniają od 10x do 1000x wyższą efektywność energetyczną, dzięki czemu roboty mogą lokalnie uruchamiać złożone modele wizja-język-działanie w budżecie mocy 10–20 W, zachowując czas pracy baterii.

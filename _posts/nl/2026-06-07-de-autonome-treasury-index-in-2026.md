@@ -13,7 +13,7 @@ description: "Een index 2026 voor gereedheid van autonome treasury: agentische w
 format-detection: "telephone=no"
 hreflang: "nl"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/nl/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+id: "https://sebastienrousseau.com/nl/2026-06-07-de-autonome-treasury-index-in-2026"
 image_alt: "Zwart-witportret van Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/nl/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+permalink: "https://sebastienrousseau.com/nl/2026-06-07-de-autonome-treasury-index-in-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "treasury, agentic AI, programmable liquidity, getokeniseerde deposito's, 
 excerpt: "Een gereedheidsindex 2026 voor autonome treasury — meting van agentische workflows, dekking van programmeerbare liquiditeit, integratie van getokeniseerde deposito's, orkestratie van realtime betalingen en geautomatiseerde cash control als één operating-model."
 theme-color: "0, 83, 191"
 title: "De Autonome Treasury-Index in 2026: agentische treasury en programmeerbare liquiditeit"
-url: "https://sebastienrousseau.com/nl/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+url: "https://sebastienrousseau.com/nl/2026-06-07-de-autonome-treasury-index-in-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/rss.xml"
 category: "Finance"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>De control plane is het nieuwe auditoppervlak.</strong> Mandaten, limieten, handmatige override-paden en bewijs van terugboeking moeten als platformprimitieven draaien, niet als handmatige goedkeuringen per actie.</li>
   <li><strong>De CFO-scorecard is per besluit, niet per kwartaal.</strong> Kosten van liquiditeit, verlaging van intraday-liquiditeitsbuffers, FX-efficiëntie en prognosenauwkeurigheid worden op workflowsnelheid gemeten.</li>
 </ul>
-<p class="post-lead-related"><strong>Verwante artikelen:</strong> <a href="https://sebastienrousseau.com/nl/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html">Programmeerbare liquiditeit in 2026: AI, getokeniseerde deposito's en realtime treasury-orkestratie</a>, <a href="https://sebastienrousseau.com/nl/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Getokeniseerde deposito's in 2026: bankdiensten, stablecoin-concurrentie en de status van programmeerbaar commercieel bankgeld</a>.</p>
+<p class="post-lead-related"><strong>Verwante artikelen:</strong> <a href="https://sebastienrousseau.com/nl/2026-05-25-programmeerbare-liquiditeit-2026-ai-getokeniseerde-deposito/index.html">Programmeerbare liquiditeit in 2026: AI, getokeniseerde deposito's en realtime treasury-orkestratie</a>, <a href="https://sebastienrousseau.com/nl/2026-05-21-getokeniseerde-deposito-in-2026-bancaire-diensten/index.html">Getokeniseerde deposito's in 2026: bankdiensten, stablecoin-concurrentie en de status van programmeerbaar commercieel bankgeld</a>.</p>
 </aside>
 <!-- lead-end -->
 

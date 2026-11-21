@@ -175,7 +175,7 @@ The authors also explain why the field sits where it does. Since the success of 
 
 | Dimension | Time Complexity | Space Complexity | Sample Complexity |
 | :--- | :--- | :--- | :--- |
-| **Operational Definition** | Asymptotic running time required to output hypothesis $h$ | Memory footprint necessary during training and evaluation | Number of training examples $m$ required to learn concept family |
+| **Operational Definition** | Asymptotic running time required to output hypothesis *h* | Memory footprint necessary during training and evaluation | Number of training examples *m* required to learn concept family |
 | **Governing Theory** | Computational complexity (P vs NP, hardness of training) | Architecture memory constraints and cache locality | PAC learning, Rademacher complexity, and VC-dimension |
 | **Cost Implication** | Server compute and GPU/CPU inference budget | RAM and on-chip SRAM capacity | Data collection, annotation, and labelling cost |
 | **Theoretical Role** | Measures algorithmic runtime efficiency | Measures space resource efficiency | Determines generalization error and bounds over unseen data |

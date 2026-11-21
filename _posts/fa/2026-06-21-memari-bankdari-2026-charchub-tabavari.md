@@ -85,7 +85,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "2026 Banking Architecture whitepaper banner"
 twitter_site: "@wwdseb"
 twitter_title: "نوشتار معماری بانکداری ۲۰۲۶"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 
 # Humans.txt - The Humans.txt front matter (YAML).
 author_website: "https://sebastienrousseau.com"
@@ -128,7 +128,7 @@ site_software: "Static Site Generator, Rust"
 
 **تز.** از FFI مبتنی بر C فراتر بروید به سوی چارچوب‌های رمزنگاری کاملاً Rust با ارسال چندالگوریتمی، peppering قفل‌شده با HSM، و معناشناسی `verify_and_upgrade` که در هر ورود بدون توقف قابل مشاهده برای کاربر چکیده را بازمی‌سازد.
 
-**خواندنی کلیدی.** [ایمن‌سازی مدیریت رمز عبور در بانکداری سازمانی: چکیده‌سازی چندالگوریتمی و ارتقا با hsh](https://sebastienrousseau.com/fa/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026 "ایمن‌سازی مدیریت رمز عبور در بانکداری سازمانی — hsh")
+**خواندنی کلیدی.** [ایمن‌سازی مدیریت رمز عبور در بانکداری سازمانی: چکیده‌سازی چندالگوریتمی و ارتقا با hsh](https://sebastienrousseau.com/fa/2026-06-22-imensazi-modiriyat-gozarvaje-ba-hsh "ایمن‌سازی مدیریت رمز عبور در بانکداری سازمانی — hsh")
 
 ### ستون دوم — ISO 20022 به‌مثابه دستگاه عصبی خودگردان
 
@@ -136,7 +136,7 @@ site_software: "Static Site Generator, Rust"
 
 **تز.** طرحواره‌ای متعارف با اولویت ISO را در هر قرارداد API، دروازه اعتبارسنجی، و مصرف‌کننده پایین‌دستی به کار گیرید. هنگام تجزیه رد کنید، نه هنگام تسویه. ترجمه MX به MT در لبه را متوقف کنید — یک‌بار MT را به MX ترجمه کنید و MT را دور بیندازید.
 
-**خواندنی کلیدی.** [از Pain.001 تا نقدینگی برنامه‌پذیر: ISO 20022 به‌مثابه دستگاه عصبی خودگردان خزانه‌داری در ۲۰۲۶](https://sebastienrousseau.com/fa/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026 "از Pain.001 تا نقدینگی برنامه‌پذیر — ISO 20022 در ۲۰۲۶")
+**خواندنی کلیدی.** [از Pain.001 تا نقدینگی برنامه‌پذیر: ISO 20022 به‌مثابه دستگاه عصبی خودگردان خزانه‌داری در ۲۰۲۶](https://sebastienrousseau.com/fa/2026-06-23-az-pain001-ta-naghdinegi-barnamepazir "از Pain.001 تا نقدینگی برنامه‌پذیر — ISO 20022 در ۲۰۲۶")
 
 ### ستون سوم — ارکستراسیون چندریلی
 
@@ -144,7 +144,7 @@ site_software: "Static Site Generator, Rust"
 
 **تز.** ارکستراسیون را از مدل بیرون بکشید و به موتور سیاست‌به‌مثابه‌کد ببرید که پرداخت‌ها را بر پایه کریدور، اندازه تراکنش، ریسک تسویه، و رابطه با طرف مقابل مسیریابی می‌کند — و عامل تنها در مرزهایی که سیاست تعریف می‌کند عمل می‌کند.
 
-**خواندنی کلیدی.** [فرامرزی ۲۰۲۶: ISO 20022، مالیه باز، و سپرده‌های توکن‌شده در خزانه‌داری شرکتی](https://sebastienrousseau.com/fa/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026 "فرامرزی ۲۰۲۶ — مالیه باز، سپرده‌های توکن‌شده، و خزانه‌داری چندریلی")
+**خواندنی کلیدی.** [فرامرزی ۲۰۲۶: ISO 20022، مالیه باز، و سپرده‌های توکن‌شده در خزانه‌داری شرکتی](https://sebastienrousseau.com/fa/2026-06-24-faramarzi-2026-iso-20022-darayi-baz "فرامرزی ۲۰۲۶ — مالیه باز، سپرده‌های توکن‌شده، و خزانه‌داری چندریلی")
 
 **یک نمونه کارشده.** پرداختی شرکتی به مبلغ ۴٫۲ میلیون یورو از لندن به تأمین‌کننده‌ای اسپانیایی، T+2 پذیرفتنی، طرف مقابل با رتبه سرمایه‌گذاری، بدون سرشاخه ارزی. موتور سیاست‌به‌مثابه‌کد چهار ورودی را در برابر ماتریس ریل می‌سنجد:
 
@@ -201,7 +201,7 @@ site_software: "Static Site Generator, Rust"
 2. **از دست رفتن خاموش داده از MT به MX.** بانک‌هایی که MT103 با نشانی یا حواله بریده می‌فرستند، تمیز وارد کانال‌های MX می‌شوند — اما فیلدهای ساختاریافته خالی می‌مانند. پیامد پایین‌دستی (شکست پالایش تحریم، از دست رفتن ماشه‌های مبارزه با پول‌شویی، شکست تطبیق) ۳۰ تا ۹۰ روز پس از گذار پدیدار می‌شود، بسی پس از بررسی پنجره تغییر. سیاهه، هزینه مورد انتظار ترمیم دفتر گذشته به‌ازای هر یک میلیارد یورو جریان پرداخت را کمّی می‌کند.
 3. **انتساب کنش عامل.** وقتی عامل خزانه‌داری متکی بر مدل زبانی زنجیره پرداختی را برمی‌انگیزد، سه کارفرما می‌توانند مالکیت را ادعا کنند — مالک مدل، فراهم‌کننده ریل، نویسنده سیاست. بدون تصمیم صریح انتساب که در لایه ارکستراسیون پخته شده باشد، بانک هر سه مسئولیت را به ارث می‌برد. سیاهه، درخت انتساب و زنجیره شواهد SR 11-7 لازم برای دفاع از آن را تعریف می‌کند.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="دریافت نوشتار معماری بانکداری ۲۰۲۶ (PDF)">دریافت گزارش PDF</a> <a class="pill ghost no-chev" href="/papers" title="دیدن همه نوشتارها و پژوهش‌های منتشرشده">همه نوشتارها</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="دریافت نوشتار معماری بانکداری ۲۰۲۶ (PDF)">دریافت گزارش PDF</a> <a class="pill ghost no-chev" href="/research" title="دیدن همه نوشتارها و پژوهش‌های منتشرشده">همه نوشتارها</a></p>
 
 ## خلاصه بازبینی درونی
 

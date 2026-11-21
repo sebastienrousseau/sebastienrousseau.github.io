@@ -147,9 +147,9 @@ Aș susține că această încadrare este cea corectă pentru evaluarea rezultat
 | :--- | :--- | :--- | :--- |
 | **Exponentul împachetării sferelor** | Marginea Kabatianskii–Levenshtein: 0,59905576... | Cel puțin la fel de puternic ca marginile pentru coduri sferice (Cohn–Zhao) | Rată asimptotică exactă demonstrată, conjecturată de Afkhami-Jeddi et al. (2020) |
 | **Caracterul definitiv al marginii** | Doar rafinări ale factorilor de ordin inferior | Întrebare deschisă privind decalajul asimptotic în dimensiuni mari | Margine inferioară potrivită exact: nicio funcție auxiliară nu poate depăși această rată |
-| **Incertitudinea semnului Fourier** | Margini de semn separate ($A^+(d) < A^-(d)$) | Legată de funcții de test anti-auto-Fourier | Rezolvată asimptotic; incertitudinea semnului guvernată de reflexia Mellin |
+| **Incertitudinea semnului Fourier** | Margini de semn separate (A⁺(d) < A⁻(d)) | Legată de funcții de test anti-auto-Fourier | Rezolvată asimptotic; incertitudinea semnului guvernată de reflexia Mellin |
 | **Coduri corectoare de erori** | Margini clasice pentru coduri sferice și binare | Cuplate asimptotic cu marginile de împachetare | Îmbunătățiri cu factori exponențiali pentru toți parametrii cu distanță fixă |
-| **Plafonul metodologic** | Optimizare numerică a factorilor polinomiali | Optimizare deschisă a funcțiilor de test $f \in \mathcal{A}_d$ | Plafon matematic demonstrat: alte câștiguri cer metode din afara Cohn-Elkies |
+| **Plafonul metodologic** | Optimizare numerică a factorilor polinomiali | Optimizare deschisă a funcțiilor de test f ∈ 𝒜\_d | Plafon matematic demonstrat: alte câștiguri cer metode din afara Cohn-Elkies |
 
 ## De ce marginea inferioară potrivită schimbă întrebarea
 
@@ -237,11 +237,11 @@ Determinarea exactă a ratei de descreștere Cohn-Elkies în dimensiuni mari și
 
 ### Matematică pură și geometrie discretă
 
-Pentru matematicienii care lucrează în geometria în dimensiuni mari și în analiza armonică, determinarea ratei exacte de descreștere Cohn-Elkies schimbă peisajul cercetării. Deoarece marginea inferioară potrivită demonstrează că nicio funcție auxiliară din $\mathcal{A}_d$ nu poate depăși noul exponent, cercetătorii pot înceta să caute funcții de test radiale mai bune în cadrul metodei clasice de programare liniară. Progresul spre împachetări de sfere mai dense sau margini universale mai strânse trebuie acum să exploreze tehnici de programare neliniară, ierarhii semidefinite de ordin superior sau construcții geometrice radical diferite.
+Pentru matematicienii care lucrează în geometria în dimensiuni mari și în analiza armonică, determinarea ratei exacte de descreștere Cohn-Elkies schimbă peisajul cercetării. Deoarece marginea inferioară potrivită demonstrează că nicio funcție auxiliară din 𝒜\_d nu poate depăși noul exponent, cercetătorii pot înceta să caute funcții de test radiale mai bune în cadrul metodei clasice de programare liniară. Progresul spre împachetări de sfere mai dense sau margini universale mai strânse trebuie acum să exploreze tehnici de programare neliniară, ierarhii semidefinite de ordin superior sau construcții geometrice radical diferite.
 
 ### Criptografie și securitate bazată pe rețele
 
-Criptografia bazată pe rețele, care stă la baza standardelor post-cuantice precum ML-KEM și ML-DSA, se sprijină puternic pe dificultatea presupusă a găsirii celor mai scurți sau celor mai apropiați vectori în rețele euclidiene de dimensiuni mari. Reducerea directă din 3SAT care stabilește o dificultate cu factor $n^{1/400}$ pentru problema euclidiană a celui mai apropiat vector (CVP), împreună cu plafoane exponențiale mai strânse pentru împachetările de sfere și codurile sferice, consolidează fundamentele teoretice ale reducerilor de rețea de la cazul cel mai defavorabil la cazul mediu, fără a slăbi parametrii concreți de securitate.
+Criptografia bazată pe rețele, care stă la baza standardelor post-cuantice precum ML-KEM și ML-DSA, se sprijină puternic pe dificultatea presupusă a găsirii celor mai scurți sau celor mai apropiați vectori în rețele euclidiene de dimensiuni mari. Reducerea directă din 3SAT care stabilește o dificultate cu factor n\^(1/400) pentru problema euclidiană a celui mai apropiat vector (CVP), împreună cu plafoane exponențiale mai strânse pentru împachetările de sfere și codurile sferice, consolidează fundamentele teoretice ale reducerilor de rețea de la cazul cel mai defavorabil la cazul mediu, fără a slăbi parametrii concreți de securitate.
 
 ### Demonstrarea automată a teoremelor și modelele fundamentale
 
@@ -267,7 +267,7 @@ Cohn și Gonçalves au stabilit că problema complementară a incertitudinii sem
 
 **Compromite acest rezultat criptografia bazată pe rețele?**
 
-Nu. Deși teorema strânge marginile superioare privind cât de dens se pot împacheta sferele în dimensiuni mari și stabilește o dificultate cu factor $n^{1/400}$ pentru problema celui mai apropiat vector, ea nu oferă algoritmi de reducere a rețelelor în timp polinomial. Criptosistemele practice bazate pe rețele rămân sigure în fața atacurilor cuantice și clasice cunoscute.
+Nu. Deși teorema strânge marginile superioare privind cât de dens se pot împacheta sferele în dimensiuni mari și stabilește o dificultate cu factor n\^(1/400) pentru problema celui mai apropiat vector, ea nu oferă algoritmi de reducere a rețelelor în timp polinomial. Criptosistemele practice bazate pe rețele rămân sigure în fața atacurilor cuantice și clasice cunoscute.
 
 ## Referințe
 

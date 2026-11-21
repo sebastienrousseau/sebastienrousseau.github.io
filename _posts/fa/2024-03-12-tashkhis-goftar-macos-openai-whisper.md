@@ -54,7 +54,7 @@ keywords: "OpenAI Whisper، Metal Performance Shaders، تشخیص گفتار د
 .class=\"card bg-light p-3 me-3 w-100\"
 برای آشنایی بیشتر با یکپارچه‌سازی OpenAI Whisper و Metal Performance Shaders روی macOS برای تشخیص گفتار زمان واقعی، خوانندگان تشویق می‌شوند به مقالهٔ پژوهشی کامل دسترسی پیدا کنند. این مقاله جزئیات فنی عمیق، نتایج آزمایشی و بینش‌های بیشتری دربارهٔ کاربردهای بالقوه و جهت‌گیری‌های آیندهٔ این فناوری ارائه می‌دهد. با دسترسی به مقالهٔ پژوهشی کامل، خوانندگان درکی جامع از روش‌شناسی، پیاده‌سازی و پیامدهای این رویکرد نوآورانه به تشخیص گفتار زمان واقعی روی دستگاه‌های macOS به دست خواهند آورد. [**همین امروز مقالهٔ کامل را بخوانید! ❯**][00]
 
-[00]: /papers/index.html "Research Publications & White Papers from Sebastien Rousseau"
+[00]: /research/index.html "Research Publications & White Papers from Sebastien Rousseau"
 [01]: https://developer.apple.com/documentation/metalperformanceshaders "Metal Performance Shaders - Apple Developer Documentation"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"

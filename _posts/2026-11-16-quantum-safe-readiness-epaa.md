@@ -241,6 +241,8 @@ The paper picks up where the working group's 2025 workshops left off. In those s
 
 The full paper, with its appendix of government, regulatory, standards and industry guidance on post-quantum migration, is free to download: [From Awareness to Action: What Quantum-Safe Readiness Requires Now][epaa].
 
+To put the paper to work, I've turned its approach into a [20-step first-assessment checklist](/resources-quantum-safe-readiness-checklist/index.html "Quantum-safe readiness checklist, free PDF"): a free PDF a team can work through, from naming an owner to tracing the first payment flow.
+
 ## Frequently Asked Questions
 
 **What does the EPAA paper recommend as the first step towards quantum-safe readiness?**

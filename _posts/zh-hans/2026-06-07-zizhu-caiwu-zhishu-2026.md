@@ -13,7 +13,7 @@ description: "2026 年自主财务就绪度指数，覆盖智能体司库工作�
 format-detection: "telephone=no"
 hreflang: "zh-hans"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/zh-hans/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+id: "https://sebastienrousseau.com/zh-hans/2026-06-07-zizhu-caiwu-zhishu-2026"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/zh-hans/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+permalink: "https://sebastienrousseau.com/zh-hans/2026-06-07-zizhu-caiwu-zhishu-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "treasury, 智能体 AI, programmable liquidity, 代币化存款, cash man
 excerpt: "2026 年自主财务就绪度指数——将智能体司库工作流、可编程流动性覆盖、代币化存款集成、实时支付编排与自动化现金管控作为同一运营模式底盘衡量。"
 theme-color: "0, 83, 191"
 title: "2026 自主财务指数：智能体司库、可编程流动性、代币化存款与实时现金管控"
-url: "https://sebastienrousseau.com/zh-hans/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+url: "https://sebastienrousseau.com/zh-hans/2026-06-07-zizhu-caiwu-zhishu-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/rss.xml"
 category: "Finance"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>控制平面就是新的审计面。</strong>授权指令、限额、人工覆盖路径与冲正凭证必须作为平台原语运行，而不是逐笔人工审批。</li>
   <li><strong>CFO 记分卡按决策计，不按季度计。</strong>资金成本、日内流动性缓冲削减、FX 效率与预测准确度应以工作流速度衡量。</li>
 </ul>
-<p class="post-lead-related"><strong>延伸阅读：</strong><a href="https://sebastienrousseau.com/zh-hans/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html">2026 可编程流动性：AI、代币化存款与实时司库编排</a>、<a href="https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">2026 代币化存款：银行业务、稳定币竞争与可编程商业银行货币的现状</a>。</p>
+<p class="post-lead-related"><strong>延伸阅读：</strong><a href="https://sebastienrousseau.com/zh-hans/2026-05-25-kebiancheng-liudongxing-2026/index.html">2026 可编程流动性：AI、代币化存款与实时司库编排</a>、<a href="https://sebastienrousseau.com/zh-hans/2026-05-21-daibihua-cunkuan-2026/index.html">2026 代币化存款：银行业务、稳定币竞争与可编程商业银行货币的现状</a>。</p>
 </aside>
 <!-- lead-end -->
 

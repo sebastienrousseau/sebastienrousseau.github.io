@@ -13,7 +13,7 @@ description: "Karta Wyników Bezpieczeństwa Post-Kwantowego 2026 dostarcza zarz
 format-detection: "telephone=no"
 hreflang: "pl"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/pl/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+id: "https://sebastienrousseau.com/pl/2026-06-29-karta-wynikow-bezpieczenstwa-post-kwantowego-2026"
 image_alt: "Czarno-biały portret Sebastiena Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/pl/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+permalink: "https://sebastienrousseau.com/pl/2026-06-29-karta-wynikow-bezpieczenstwa-post-kwantowego-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -39,7 +39,7 @@ subtitle: "Jak zarządy muszą mierzyć i nadzorować migrację do NIST FIPS 203
 tags: "post-kwantowe, kryptografia, bankowość, nadzór, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
 theme-color: "0, 83, 191"
 title: "Karta Wyników Bezpieczeństwa Post-Kwantowego 2026: framework metryk dla zarządu"
-url: "https://sebastienrousseau.com/pl/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+url: "https://sebastienrousseau.com/pl/2026-06-29-karta-wynikow-bezpieczenstwa-post-kwantowego-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/rss.xml"
 category: "Technology"
@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Powiązane lektury:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib i migracja bankowości post-kwantowej w 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: algorytm ochrony w erze kwantowej</a>.</p>
 </aside>
+
 Bezpieczeństwo post-kwantowe nie jest już projektem badawczym. „Zegar nadzorczy" tyka w stronę terminów egzekucyjnych pod koniec lat 2020. Finalizacja [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) i [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) skodyfikowała standardy enkapsulacji kluczy i podpisów cyfrowych.
 
 Organy regulacyjne oczekują obecnie, że banki Tier-1 wyjdą poza programy pilotażowe. W 2026 r. fokus przesunął się na industrializację tych standardów. Brak wykazania jasnej ścieżki migracji niesie znaczące sankcje regulacyjne na mocy [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) oraz potencjalną osobistą odpowiedzialność członków zarządu, którzy ignorują przewidywalne zagrożenie deszyfracji wspomaganej kwantowo.

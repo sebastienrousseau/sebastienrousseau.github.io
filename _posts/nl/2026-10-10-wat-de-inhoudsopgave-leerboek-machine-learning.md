@@ -158,7 +158,7 @@ De auteurs leggen ook uit waarom het vakgebied staat waar het staat. Omdat het s
 
 | Dimensie | Tijdcomplexiteit | Ruimtecomplexiteit | Steekproefcomplexiteit |
 | :--- | :--- | :--- | :--- |
-| **Operationele definitie** | Asymptotische looptijd die nodig is om hypothese $h$ op te leveren | Geheugenbeslag tijdens training en evaluatie | Aantal trainingsvoorbeelden $m$ dat nodig is om een conceptfamilie te leren |
+| **Operationele definitie** | Asymptotische looptijd die nodig is om hypothese *h* op te leveren | Geheugenbeslag tijdens training en evaluatie | Aantal trainingsvoorbeelden *m* dat nodig is om een conceptfamilie te leren |
 | **Leidende theorie** | Complexiteitstheorie (P tegenover NP, hardheid van training) | Geheugenbeperkingen van de architectuur en cachelokaliteit | PAC-leren, Rademacher-complexiteit en VC-dimensie |
 | **Kostenimplicatie** | Serverrekenkracht en GPU/CPU-budget voor inferentie | RAM- en on-chip-SRAM-capaciteit | Kosten van dataverzameling, annotatie en labeling |
 | **Theoretische rol** | Meet de efficiëntie van het algoritme in looptijd | Meet de efficiëntie in geheugengebruik | Bepaalt de generalisatiefout en de grenzen voor ongeziene data |

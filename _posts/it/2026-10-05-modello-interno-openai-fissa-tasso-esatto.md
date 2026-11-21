@@ -147,9 +147,9 @@ Direi che questo è l'inquadramento giusto per valutare il risultato. Un miglior
 | :--- | :--- | :--- | :--- |
 | **Esponente di impacchettamento** | Limite di Kabatianskii–Levenshtein: 0,59905576... | Almeno altrettanto forte dei limiti dei codici sferici (Cohn–Zhao) | Dimostrato il tasso asintotico esatto congetturato da Afkhami-Jeddi et al. (2020) |
 | **Carattere definitivo del limite** | Solo affinamenti di fattori di ordine inferiore | Questione aperta sul divario asintotico in dimensione alta | Limite inferiore corrispondente esatto: nessuna funzione ausiliaria batte questo tasso |
-| **Incertezza di segno di Fourier** | Limiti di segno separati ($A^+(d) < A^-(d)$) | Legata a funzioni test anti-autoduali di Fourier | Risolta asintoticamente; incertezza di segno governata dalla riflessione di Mellin |
+| **Incertezza di segno di Fourier** | Limiti di segno separati (A⁺(d) < A⁻(d)) | Legata a funzioni test anti-autoduali di Fourier | Risolta asintoticamente; incertezza di segno governata dalla riflessione di Mellin |
 | **Codici a correzione d'errore** | Limiti classici per codici sferici e binari | Accoppiati asintoticamente ai limiti di impacchettamento | Miglioramenti di fattori esponenziali per tutti i parametri a distanza fissata |
-| **Tetto metodologico** | Ottimizzazione numerica di fattori polinomiali | Ottimizzazione aperta delle funzioni test ausiliarie $f \in \mathcal{A}_d$ | Tetto matematico dimostrato: ulteriori guadagni richiedono metodi estranei a Cohn-Elkies |
+| **Tetto metodologico** | Ottimizzazione numerica di fattori polinomiali | Ottimizzazione aperta delle funzioni test ausiliarie f ∈ 𝒜\_d | Tetto matematico dimostrato: ulteriori guadagni richiedono metodi estranei a Cohn-Elkies |
 
 ## Perché il limite inferiore corrispondente cambia la domanda
 
@@ -237,11 +237,11 @@ La determinazione esatta del tasso di decadimento di Cohn-Elkies in dimensione a
 
 ### Matematica pura e geometria discreta
 
-Per chi lavora in geometria in dimensione alta e in analisi armonica, la determinazione del tasso esatto di Cohn-Elkies sposta il panorama della ricerca. Poiché il limite inferiore corrispondente dimostra che nessuna funzione ausiliaria in $\mathcal{A}_d$ può battere il nuovo esponente, i ricercatori possono smettere di cercare funzioni test radiali migliori all'interno dell'impianto classico di programmazione lineare. I progressi verso impacchettamenti più densi o limiti universali più stretti dovranno ora esplorare tecniche di programmazione non lineare, gerarchie semidefinite di ordine superiore o costruzioni geometriche radicalmente diverse.
+Per chi lavora in geometria in dimensione alta e in analisi armonica, la determinazione del tasso esatto di Cohn-Elkies sposta il panorama della ricerca. Poiché il limite inferiore corrispondente dimostra che nessuna funzione ausiliaria in 𝒜\_d può battere il nuovo esponente, i ricercatori possono smettere di cercare funzioni test radiali migliori all'interno dell'impianto classico di programmazione lineare. I progressi verso impacchettamenti più densi o limiti universali più stretti dovranno ora esplorare tecniche di programmazione non lineare, gerarchie semidefinite di ordine superiore o costruzioni geometriche radicalmente diverse.
 
 ### Crittografia e sicurezza basata sui reticoli
 
-La crittografia basata sui reticoli - nucleo di standard post-quantistici come ML-KEM e ML-DSA - si fonda in larga misura sulla difficoltà congetturata di trovare i vettori più corti o più vicini in reticoli euclidei di dimensione alta. La riduzione diretta da 3SAT, che stabilisce una difficoltà con fattore $n^{1/400}$ per il problema euclideo del vettore più vicino (CVP), unita a tetti esponenziali più stretti sugli impacchettamenti di sfere e sui codici sferici, consolida le basi teoriche delle riduzioni dal caso peggiore al caso medio sui reticoli senza indebolire i parametri di sicurezza concreti.
+La crittografia basata sui reticoli - nucleo di standard post-quantistici come ML-KEM e ML-DSA - si fonda in larga misura sulla difficoltà congetturata di trovare i vettori più corti o più vicini in reticoli euclidei di dimensione alta. La riduzione diretta da 3SAT, che stabilisce una difficoltà con fattore n\^(1/400) per il problema euclideo del vettore più vicino (CVP), unita a tetti esponenziali più stretti sugli impacchettamenti di sfere e sui codici sferici, consolida le basi teoriche delle riduzioni dal caso peggiore al caso medio sui reticoli senza indebolire i parametri di sicurezza concreti.
 
 ### Dimostrazione automatica e modelli di fondazione
 
@@ -267,7 +267,7 @@ Cohn e Gonçalves hanno stabilito che il problema complementare di incertezza di
 
 **Questo risultato compromette la crittografia basata sui reticoli?**
 
-No. Il teorema rende più stretti i limiti superiori sulla densità con cui le sfere possono essere impacchettate in dimensione alta e stabilisce una difficoltà con fattore $n^{1/400}$ per il problema del vettore più vicino, ma non fornisce algoritmi di riduzione dei reticoli in tempo polinomiale. I crittosistemi pratici basati sui reticoli restano sicuri contro gli attacchi quantistici e classici noti.
+No. Il teorema rende più stretti i limiti superiori sulla densità con cui le sfere possono essere impacchettate in dimensione alta e stabilisce una difficoltà con fattore n\^(1/400) per il problema del vettore più vicino, ma non fornisce algoritmi di riduzione dei reticoli in tempo polinomiale. I crittosistemi pratici basati sui reticoli restano sicuri contro gli attacchi quantistici e classici noti.
 
 ## Riferimenti
 

@@ -129,13 +129,13 @@ En informatique numérique classique, calculer un produit scalaire matriciel exi
 
 Les architectures de calcul en mémoire remplacent ce transfert numérique de données par la physique des circuits analogiques :
 
-**Programmation des poids.** Les poids du réseau de neurones sont programmés directement dans des cellules de mémoire non volatile (flash modifiée ou RAM résistive, par exemple) sous forme de conductances analogiques ($G$). Une fois programmés, les poids restent fixes dans la matrice mémoire ; ils ne sont jamais lus ni transférés pendant l'inférence.
+**Programmation des poids.** Les poids du réseau de neurones sont programmés directement dans des cellules de mémoire non volatile (flash modifiée ou RAM résistive, par exemple) sous forme de conductances analogiques (*G*). Une fois programmés, les poids restent fixes dans la matrice mémoire ; ils ne sont jamais lus ni transférés pendant l'inférence.
 
-**Modulation de la tension d'entrée.** Les activations d'entrée (par exemple des jetons visuels issus des caméras) sont converties en niveaux de tension analogiques ($V$) et appliquées sur les lignes de mot de la matrice.
+**Modulation de la tension d'entrée.** Les activations d'entrée (par exemple des jetons visuels issus des caméras) sont converties en niveaux de tension analogiques (*V*) et appliquées sur les lignes de mot de la matrice.
 
-**Multiplication par la loi d'Ohm.** Quand la tension d'entrée traverse chaque cellule mémoire, la loi d'Ohm ($I = V \times G$) réalise une multiplication analogique instantanée et produit un courant proportionnel au produit de l'entrée et du poids stocké.
+**Multiplication par la loi d'Ohm.** Quand la tension d'entrée traverse chaque cellule mémoire, la loi d'Ohm (*I* = *V* × *G*) réalise une multiplication analogique instantanée et produit un courant proportionnel au produit de l'entrée et du poids stocké.
 
-**Accumulation par la loi des nœuds de Kirchhoff.** Le long des lignes de bit verticales, les courants de milliers de cellules en parallèle s'additionnent naturellement selon la loi des nœuds de Kirchhoff ($\sum I = 0$).
+**Accumulation par la loi des nœuds de Kirchhoff.** Le long des lignes de bit verticales, les courants de milliers de cellules en parallèle s'additionnent naturellement selon la loi des nœuds de Kirchhoff (Σ*I* = 0).
 
 Une seule matrice de mémoire flash exécute ainsi une multiplication matrice-vecteur complète en un seul cycle d'horloge, au niveau de la physique, sans un seul accès mémoire. Le courant analogique accumulé est ensuite reconverti en valeurs numériques par des convertisseurs analogique-numérique (CAN) rapides placés en bordure de la matrice.
 
@@ -208,7 +208,7 @@ Passer de grappes de centres de données de 700 W à du silicium de périphérie
 Le goulot d'étranglement de Von Neumann désigne la limite de débit et d'énergie causée par la séparation physique entre l'unité de traitement (ALU) et la mémoire système (DRAM). Dans les charges d'intelligence artificielle, qui impliquent des milliards de multiplications matricielles, les processeurs dépensent plus de 85 % de leur énergie totale et de nombreux cycles d'horloge à faire simplement transiter des données sur des bus en cuivre, ce qui crée de sévères goulots thermiques et de latence.
 
 **Comment fonctionne le calcul analogique en mémoire (CIM) ?**
-Le calcul en mémoire effectue les opérations mathématiques directement dans les cellules mémoire, sans déplacer les données. Les poids du réseau de neurones sont stockés sous forme d'états de conductance analogiques dans des cellules de mémoire non volatile. Lorsque des tensions d'entrée sont appliquées à la matrice, le courant traverse les cellules selon la loi d'Ohm ($I = V \times G$) et s'additionne le long des lignes de bit selon la loi des nœuds de Kirchhoff. On obtient ainsi une multiplication matrice-vecteur complète en une seule étape physique.
+Le calcul en mémoire effectue les opérations mathématiques directement dans les cellules mémoire, sans déplacer les données. Les poids du réseau de neurones sont stockés sous forme d'états de conductance analogiques dans des cellules de mémoire non volatile. Lorsque des tensions d'entrée sont appliquées à la matrice, le courant traverse les cellules selon la loi d'Ohm (*I* = *V* × *G*) et s'additionne le long des lignes de bit selon la loi des nœuds de Kirchhoff. On obtient ainsi une multiplication matrice-vecteur complète en une seule étape physique.
 
 **Pourquoi le calcul en mémoire est-il particulièrement décisif pour les robots et les drones ?**
 Les robots mobiles et les drones fonctionnent sous de strictes contraintes de taille, de poids, de puissance et de coût (SWaP-C). Ils dépendent de batteries embarquées et ne peuvent pas porter de lourds radiateurs ni des alimentations de forte puissance. Le calcul en mémoire offre une efficacité énergétique 10 à 1 000 fois supérieure, ce qui permet aux robots d'exécuter localement des modèles vision-langage-action complexes dans une enveloppe de 10 W à 20 W tout en préservant l'autonomie de la batterie.

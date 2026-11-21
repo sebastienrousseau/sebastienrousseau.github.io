@@ -158,7 +158,7 @@ Autorzy wyjaśniają też, dlaczego dziedzina leży tam, gdzie leży. Ponieważ 
 
 | Wymiar | Złożoność czasowa | Złożoność pamięciowa | Złożoność próbkowa |
 | :--- | :--- | :--- | :--- |
-| **Definicja operacyjna** | Asymptotyczny czas działania potrzebny do wyznaczenia hipotezy $h$ | Zużycie pamięci niezbędne podczas uczenia i ewaluacji | Liczba przykładów uczących $m$ potrzebna do nauczenia się rodziny pojęć |
+| **Definicja operacyjna** | Asymptotyczny czas działania potrzebny do wyznaczenia hipotezy *h* | Zużycie pamięci niezbędne podczas uczenia i ewaluacji | Liczba przykładów uczących *m* potrzebna do nauczenia się rodziny pojęć |
 | **Teoria wiodąca** | Złożoność obliczeniowa (P a NP, trudność uczenia) | Ograniczenia pamięciowe architektury i lokalność pamięci podręcznej | Uczenie PAC, złożoność Rademachera i wymiar VC |
 | **Skutki kosztowe** | Moc obliczeniowa serwerów i budżet wnioskowania GPU/CPU | Pojemność RAM i pamięci SRAM w układzie | Koszt zbierania danych, adnotacji i etykietowania |
 | **Rola teoretyczna** | Mierzy wydajność czasową algorytmu | Mierzy wydajność wykorzystania pamięci | Określa błąd uogólnienia i ograniczenia dla niewidzianych danych |

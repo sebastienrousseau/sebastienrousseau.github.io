@@ -129,13 +129,13 @@ In der klassischen Digitaltechnik verlangt ein Matrix-Skalarprodukt, Tausende 8-
 
 In-Memory-Architekturen ersetzen diesen digitalen Datentransfer durch die Physik analoger Schaltungen:
 
-**Programmierung der Gewichte.** Die Gewichte des neuronalen Netzes werden direkt als analoge Leitwerte ($G$) in nichtflüchtige Speicherzellen programmiert (etwa modifizierten Flash oder resistiven RAM). Einmal programmiert, bleiben die Gewichte fest im Speicherfeld; sie werden während der Inferenz nie geholt oder übertragen.
+**Programmierung der Gewichte.** Die Gewichte des neuronalen Netzes werden direkt als analoge Leitwerte (*G*) in nichtflüchtige Speicherzellen programmiert (etwa modifizierten Flash oder resistiven RAM). Einmal programmiert, bleiben die Gewichte fest im Speicherfeld; sie werden während der Inferenz nie geholt oder übertragen.
 
-**Modulation der Eingangsspannung.** Eingangsaktivierungen (etwa visuelle Tokens aus Kameras) werden in analoge Spannungspegel ($V$) umgewandelt und über die Wortleitungen des Felds geführt.
+**Modulation der Eingangsspannung.** Eingangsaktivierungen (etwa visuelle Tokens aus Kameras) werden in analoge Spannungspegel (*V*) umgewandelt und über die Wortleitungen des Felds geführt.
 
-**Multiplikation nach dem Ohmschen Gesetz.** Wenn die Eingangsspannung jede Speicherzelle durchläuft, führt das Ohmsche Gesetz ($I = V \times G$) eine sofortige analoge Multiplikation aus und erzeugt einen Strom, der proportional zum Produkt aus Eingang und gespeichertem Gewicht ist.
+**Multiplikation nach dem Ohmschen Gesetz.** Wenn die Eingangsspannung jede Speicherzelle durchläuft, führt das Ohmsche Gesetz (*I* = *V* × *G*) eine sofortige analoge Multiplikation aus und erzeugt einen Strom, der proportional zum Produkt aus Eingang und gespeichertem Gewicht ist.
 
-**Akkumulation nach der Kirchhoffschen Knotenregel.** Entlang der senkrechten Bitleitungen summieren sich die Ströme Tausender parallel geschalteter Speicherzellen nach der Kirchhoffschen Knotenregel ($\sum I = 0$) von selbst.
+**Akkumulation nach der Kirchhoffschen Knotenregel.** Entlang der senkrechten Bitleitungen summieren sich die Ströme Tausender parallel geschalteter Speicherzellen nach der Kirchhoffschen Knotenregel (Σ*I* = 0) von selbst.
 
 Ein einziges Flash-Speicherfeld führt so eine komplette Matrix-Vektor-Multiplikation in einem einzigen Taktzyklus aus, auf physikalischer Ebene und ohne einen einzigen Speicherzugriff. Der aufsummierte analoge Strom wird anschließend von schnellen Analog-Digital-Wandlern (ADCs) am Rand des Felds wieder in digitale Werte umgesetzt.
 
@@ -208,7 +208,7 @@ Der Übergang von 700-Watt-Clustern im Rechenzentrum zu 15-Watt-Silizium an der 
 Der Von-Neumann-Flaschenhals bezeichnet die Grenze für Durchsatz und Energie, die aus der physischen Trennung von Recheneinheit (ALU) und Systemspeicher (DRAM) entsteht. Bei KI-Lasten mit Milliarden Matrixmultiplikationen verbrauchen Prozessoren über 85 % ihrer Gesamtenergie und viele Taktzyklen allein dafür, Daten über Kupferbusse hin- und herzuschieben, was zu gravierenden thermischen und zeitlichen Engpässen führt.
 
 **Wie funktioniert analoges Compute-in-Memory (CIM)?**
-Compute-in-Memory führt mathematische Operationen direkt in den Speicherzellen aus, ohne Daten zu bewegen. Die Gewichte des neuronalen Netzes werden als analoge Leitwertzustände in nichtflüchtigen Speicherzellen abgelegt. Liegen Eingangsspannungen am Feld an, fließt Strom nach dem Ohmschen Gesetz ($I = V \times G$) durch die Zellen und summiert sich entlang der Bitleitungen nach der Kirchhoffschen Knotenregel. So entsteht eine vollständige Matrix-Vektor-Multiplikation in einem einzigen physikalischen Schritt.
+Compute-in-Memory führt mathematische Operationen direkt in den Speicherzellen aus, ohne Daten zu bewegen. Die Gewichte des neuronalen Netzes werden als analoge Leitwertzustände in nichtflüchtigen Speicherzellen abgelegt. Liegen Eingangsspannungen am Feld an, fließt Strom nach dem Ohmschen Gesetz (*I* = *V* × *G*) durch die Zellen und summiert sich entlang der Bitleitungen nach der Kirchhoffschen Knotenregel. So entsteht eine vollständige Matrix-Vektor-Multiplikation in einem einzigen physikalischen Schritt.
 
 **Warum ist In-Memory-Computing für Roboter und Drohnen besonders wichtig?**
 Mobile Roboter und Drohnen arbeiten unter strengen SWaP-C-Grenzen (Größe, Gewicht, Leistung und Kosten). Sie sind auf Akkus an Bord angewiesen und können weder schwere Kühler noch leistungsstarke Netzteile tragen. In-Memory-Computing bietet eine 10- bis 1.000-fach höhere Energieeffizienz, sodass Roboter komplexe Vision-Language-Action-Modelle lokal in einem Leistungsbudget von 10 W bis 20 W ausführen können, ohne die Akkulaufzeit zu opfern.

@@ -121,7 +121,7 @@ test('Clock /api/clock/hero-<theme>.svg short-circuits locale routing', async ()
   }
 });
 
-test('Retired /api/pdf/* answers 410 Gone without touching the origin', async () => {
+test('Retired /api/pdf/* never touches the origin: 301 to the article, 410 when malformed', async () => {
   const realF = globalThis.fetch;
   let originHit = false;
   globalThis.fetch = async () => {
@@ -129,11 +129,14 @@ test('Retired /api/pdf/* answers 410 Gone without touching the origin', async ()
     return new Response('', { status: 503 });
   };
   try {
-    const res = await callHandler(new Request('https://sebastienrousseau.com/api/pdf/2026-06-05-index-2026-de-la-banque-cloud.pdf'));
-    assert.equal(res.status, 410);
+    const moved = await callHandler(new Request('https://sebastienrousseau.com/api/pdf/2026-06-05-index-2026-de-la-banque-cloud.pdf?x=1'));
+    assert.equal(moved.status, 301);
+    assert.equal(moved.headers.get('location'), 'https://sebastienrousseau.com/2026-06-05-index-2026-de-la-banque-cloud/');
+    const gone = await callHandler(new Request('https://sebastienrousseau.com/api/pdf/index.html.pdf'));
+    assert.equal(gone.status, 410);
+    assert.match(gone.headers.get('Cache-Control'), /max-age=86400/);
+    assert.match(gone.headers.get('X-Robots-Tag'), /noindex/);
     assert.equal(originHit, false);
-    assert.match(res.headers.get('Cache-Control'), /max-age=86400/);
-    assert.match(res.headers.get('X-Robots-Tag'), /noindex/);
   } finally {
     globalThis.fetch = realF;
   }

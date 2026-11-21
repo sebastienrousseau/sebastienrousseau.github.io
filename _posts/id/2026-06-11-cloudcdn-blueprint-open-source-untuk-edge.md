@@ -16,7 +16,7 @@ description: "CloudCDN mengubah CDN menjadi bidang kontrol edge yang dapat diken
 format-detection: "telephone=no"
 hreflang: "id"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/id/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026"
+id: "https://sebastienrousseau.com/id/2026-06-11-cloudcdn-blueprint-open-source-untuk-edge"
 image_alt: "Potret Hitam Putih Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -32,7 +32,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/id/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026"
+permalink: "https://sebastienrousseau.com/id/2026-06-11-cloudcdn-blueprint-open-source-untuk-edge"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -43,7 +43,7 @@ subtitle: "Memindahkan CDN global dari caching konten statis menuju bidang kontr
 tags: "CloudCDN, open source, CDN, edge, agen AI, MCP, Cloudflare Workers, Durable Objects, pembatasan laju, zero trust, WebAuthn, SLSA, DORA, BCBS 239, Basel III, perbankan cloud native"
 theme-color: "0, 83, 191"
 title: "CloudCDN: Blueprint Open Source untuk Edge AI-Native di 2026"
-url: "https://sebastienrousseau.com/id/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026"
+url: "https://sebastienrousseau.com/id/2026-06-11-cloudcdn-blueprint-open-source-untuk-edge"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
@@ -85,7 +85,7 @@ twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastie
 twitter_image_alt: "Logo Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "CloudCDN: Blueprint Edge AI-Native Open Source"
-twitter_url: "https://sebastienrousseau.com/id/2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026"
+twitter_url: "https://sebastienrousseau.com/id/2026-06-11-cloudcdn-blueprint-open-source-untuk-edge"
 
 excerpt: "CloudCDN: blueprint open source untuk edge AI-native — gateway MCP zero-trust dengan 42 alat, Durable Objects, SLSA Level 3, dan 3.185 uji pada cakupan 100%."
 

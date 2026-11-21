@@ -158,7 +158,7 @@ Bí màá ṣe sọ ọ́ nìyí: time àti space ń sọ fún ọ iye tí algor
 
 | Ìwọ̀n | Time Complexity | Space Complexity | Sample Complexity |
 | :--- | :--- | :--- | :--- |
-| **Àlàyé ìṣiṣẹ́** | Àkókò ìṣiṣẹ́ asymptotic tí a nílò láti mú hypothesis $h$ jáde | Ìrántí tí a nílò nígbà training àti àgbéyẹ̀wò | Iye àpẹẹrẹ training $m$ tí a nílò láti kọ́ ìdílé èrò |
+| **Àlàyé ìṣiṣẹ́** | Àkókò ìṣiṣẹ́ asymptotic tí a nílò láti mú hypothesis *h* jáde | Ìrántí tí a nílò nígbà training àti àgbéyẹ̀wò | Iye àpẹẹrẹ training *m* tí a nílò láti kọ́ ìdílé èrò |
 | **Ìmọ̀-ìjìnlẹ̀ tí ó ń darí** | Computational complexity (P vs NP, ìṣòro training) | Ààlà ìrántí architecture àti cache locality | PAC learning, Rademacher complexity àti VC-dimension |
 | **Ipa lórí ìnáwó** | Ìnáwó compute server àti GPU/CPU inference | Agbára RAM àti SRAM inú chip | Iye owó kíkó dátà jọ, annotation àti fífi label sí i |
 | **Ipa onímọ̀-ìjìnlẹ̀** | Ó ń wọn bí àkókò ìṣiṣẹ́ algorithm ṣe múná dóko | Ó ń wọn bí lílo àyè ṣe múná dóko | Ó ń pinnu generalization error àti ààlà lórí dátà tí a kò rí |

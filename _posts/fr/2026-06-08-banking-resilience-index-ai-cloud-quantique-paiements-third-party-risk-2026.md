@@ -99,7 +99,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>La migration post-quantique est un indicateur de résilience opérationnelle, pas de sécurité.</strong> Les données à durée de vie longue exposées aujourd'hui échouent au test de résilience de demain.</li>
   <li><strong>La concentration des tiers est devenue systémique.</strong> Les dépendances mono-hyperscaler, mono-PSP, mono-fournisseur LLM se traduisent en points de défaillance uniques sur le tableau de bord de résilience.</li>
 </ul>
-<p class="post-lead-related"><strong>Lectures associées :</strong> <a href="https://sebastienrousseau.com/fr/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques</a>, <a href="https://sebastienrousseau.com/fr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">Cloud Native Banking en 2026 : Kubernetes, DORA, souveraineté, et la fin du clivage VM contre conteneur</a>.</p>
+<p class="post-lead-related"><strong>Lectures associées :</strong> <a href="https://sebastienrousseau.com/fr/2026-05-28-dora-eu-ai-act-et-souverainete/index.html">DORA, EU AI Act et souveraineté des données : la pile de conformité 2026 pour les banques</a>, <a href="https://sebastienrousseau.com/fr/2026-05-20-banque-cloud-natif-en-2026-kubernetes/index.html">Cloud Native Banking en 2026 : Kubernetes, DORA, souveraineté, et la fin du clivage VM contre conteneur</a>.</p>
 </aside>
 <!-- lead-end -->
 

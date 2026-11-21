@@ -129,13 +129,13 @@ Sa klasikong digital computing, ang pagkalkula ng matrix dot product ay nanganga
 
 Pinapalitan ng mga in-memory compute architecture ang digital na paglilipat ng data na ito ng pisika ng analog circuit:
 
-**Pag-program ng weight.** Direktang ipino-program ang mga neural network weight sa mga non-volatile memory cell (gaya ng binagong flash o resistive RAM) bilang mga analog conductance ($G$). Kapag na-program na, nananatiling nakapirmi ang mga weight sa loob ng memory array; hindi kailanman kinukuha o inililipat ang mga ito sa panahon ng inference.
+**Pag-program ng weight.** Direktang ipino-program ang mga neural network weight sa mga non-volatile memory cell (gaya ng binagong flash o resistive RAM) bilang mga analog conductance (*G*). Kapag na-program na, nananatiling nakapirmi ang mga weight sa loob ng memory array; hindi kailanman kinukuha o inililipat ang mga ito sa panahon ng inference.
 
-**Modulasyon ng input voltage.** Ang mga input activation (gaya ng mga visual token mula sa camera) ay kino-convert sa mga analog voltage level ($V$) at pinadadaloy sa mga word line ng array.
+**Modulasyon ng input voltage.** Ang mga input activation (gaya ng mga visual token mula sa camera) ay kino-convert sa mga analog voltage level (*V*) at pinadadaloy sa mga word line ng array.
 
-**Multiplication sa batas ni Ohm.** Habang dumaraan ang input voltage sa bawat memory cell, isinasagawa ng batas ni Ohm ($I = V \times G$) ang agarang analog multiplication, na lumilikha ng kuryenteng proporsiyonal sa produkto ng input at ng nakaimbak na weight.
+**Multiplication sa batas ni Ohm.** Habang dumaraan ang input voltage sa bawat memory cell, isinasagawa ng batas ni Ohm (*I* = *V* × *G*) ang agarang analog multiplication, na lumilikha ng kuryenteng proporsiyonal sa produkto ng input at ng nakaimbak na weight.
 
-**Akumulasyon sa Kirchhoff's Current Law.** Sa mga patayong bit line, kusang nagsasama-sama ang mga kuryente mula sa libu-libong magkakaparalelong memory cell ayon sa Kirchhoff's Current Law ($\sum I = 0$).
+**Akumulasyon sa Kirchhoff's Current Law.** Sa mga patayong bit line, kusang nagsasama-sama ang mga kuryente mula sa libu-libong magkakaparalelong memory cell ayon sa Kirchhoff's Current Law (Σ*I* = 0).
 
 Kaya isinasagawa ng iisang flash memory array ang buong matrix-vector multiplication sa iisang clock cycle, gumagana sa antas ng pisika nang walang kahit isang memory fetch. Pagkatapos, ang naipong analog current ay kino-convert pabalik sa digital value sa pamamagitan ng mga high-speed analog-to-digital converter (ADC) sa gilid ng array.
 
@@ -208,7 +208,7 @@ Ang paglipat mula sa 700W na data-centre cluster tungo sa 15W na edge silicon an
 Ang Von Neumann bottleneck ay ang limitasyon sa throughput at enerhiya na dulot ng pisikal na paghihiwalay ng central processing unit (ALU) at ng system memory (DRAM). Sa mga artificial intelligence workload, na may bilyun-bilyong matrix multiplication, ginugugol ng mga processor ang mahigit 85% ng kanilang kabuuang enerhiya at malaking bahagi ng clock cycle sa pabalik-balik na paglilipat lamang ng data sa mga copper bus, na lumilikha ng malubhang thermal at latency bottleneck.
 
 **Paano gumagana ang analog Compute-In-Memory (CIM)?**
-Isinasagawa ng Compute-In-Memory ang mga operasyong pangmatematika nang direkta sa loob ng mga memory cell nang hindi inililipat ang data. Iniimbak ang mga neural network weight bilang mga analog conductance state sa loob ng mga non-volatile memory cell. Kapag inilapat ang mga input voltage sa array, dumadaloy ang kuryente sa mga cell ayon sa batas ni Ohm ($I = V \times G$) at nagsasama-sama sa mga bit line ayon sa Kirchhoff's Current Law. Nagagawa nito ang buong matrix-vector multiplication sa iisang pisikal na hakbang.
+Isinasagawa ng Compute-In-Memory ang mga operasyong pangmatematika nang direkta sa loob ng mga memory cell nang hindi inililipat ang data. Iniimbak ang mga neural network weight bilang mga analog conductance state sa loob ng mga non-volatile memory cell. Kapag inilapat ang mga input voltage sa array, dumadaloy ang kuryente sa mga cell ayon sa batas ni Ohm (*I* = *V* × *G*) at nagsasama-sama sa mga bit line ayon sa Kirchhoff's Current Law. Nagagawa nito ang buong matrix-vector multiplication sa iisang pisikal na hakbang.
 
 **Bakit lalong mahalaga ang in-memory compute para sa robotics at drone?**
 Gumagana ang mga mobile robot at drone sa ilalim ng mahigpit na limitasyon sa Size, Weight, Power, and Cost (SWaP-C). Umaasa sila sa on-board na baterya at hindi kayang suportahan ang mabibigat na cooling radiator o ang mga power supply na mataas ang wattage. Nagbibigay ang in-memory compute ng 10x hanggang 1,000x na mas mataas na kahusayan sa enerhiya, kaya napapatakbo ng mga robot nang lokal ang masalimuot na vision-language-action model sa loob ng 10W hanggang 20W na power envelope habang pinapanatili ang tagal ng baterya.

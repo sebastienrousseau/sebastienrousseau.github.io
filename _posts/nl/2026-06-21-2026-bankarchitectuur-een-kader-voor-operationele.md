@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "Banner van de whitepaper 2026 Bankarchitectuur"
 twitter_site: "@wwdseb"
 twitter_title: "Whitepaper 2026 Bankarchitectuur"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -113,7 +113,7 @@ Wij stellen een drie-pijler-kader voor om de core banking-stack te moderniseren:
 
 **De stelling.** Stap weg van C-gebaseerde FFI en ga naar pure-Rust cryptoframeworks met multi-algoritmedispatch, `HSM`-geïnterlockte peppering en `verify_and_upgrade`-semantiek die bij elke login opnieuw hasht zonder zichtbare downtime voor de gebruiker.
 
-**Kerntekst.** [Wachtwoordbeheer borgen in enterprise banking: multi-algoritme-hashing en upgrades met hsh](https://sebastienrousseau.com/nl/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026 "Wachtwoordbeheer borgen in enterprise banking — hsh")
+**Kerntekst.** [Wachtwoordbeheer borgen in enterprise banking: multi-algoritme-hashing en upgrades met hsh](https://sebastienrousseau.com/nl/2026-06-22-wachtwoordbeheer-beveiligen-in-enterprise-banking-multi "Wachtwoordbeheer borgen in enterprise banking — hsh")
 
 ### Pijler II — ISO 20022 als autonoom zenuwstelsel
 
@@ -121,7 +121,7 @@ Wij stellen een drie-pijler-kader voor om de core banking-stack te moderniseren:
 
 **De stelling.** Voer een ISO-first canoniek schema in over elk API-contract, elke validatiestap en elke downstream-consument. Wijs af op parse, niet bij settlement. Stop met `MX` neerwaarts vertalen naar `MT` aan de rand — vertaal `MT` één keer omhoog naar `MX` en gooi de `MT` weg.
 
-**Kerntekst.** [Van Pain.001 naar programmeerbare liquiditeit: ISO 20022 als autonoom zenuwstelsel van treasury in 2026](https://sebastienrousseau.com/nl/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026 "Van Pain.001 naar programmeerbare liquiditeit — ISO 20022 in 2026")
+**Kerntekst.** [Van Pain.001 naar programmeerbare liquiditeit: ISO 20022 als autonoom zenuwstelsel van treasury in 2026](https://sebastienrousseau.com/nl/2026-06-23-van-pain-001-naar-programmeerbare-liquiditeit "Van Pain.001 naar programmeerbare liquiditeit — ISO 20022 in 2026")
 
 ### Pijler III — Multi-rail orchestratie
 
@@ -129,7 +129,7 @@ Wij stellen een drie-pijler-kader voor om de core banking-stack te moderniseren:
 
 **De stelling.** Haal orchestratie weg uit het model en zet het in een policy-as-code-engine die betalingen routeert op basis van corridor, ticketgrootte, settlementrisico en counterparty-relatie — waarbij de agent alleen handelt binnen de grenzen die het beleid definieert.
 
-**Kerntekst.** [Cross-Border 2026: ISO 20022, Open Finance en getokeniseerde deposito's in corporate treasury](https://sebastienrousseau.com/nl/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026 "Cross-Border 2026 — Open Finance, getokeniseerde deposito's en multi-rail treasury")
+**Kerntekst.** [Cross-Border 2026: ISO 20022, Open Finance en getokeniseerde deposito's in corporate treasury](https://sebastienrousseau.com/nl/2026-06-24-cross-border-2026-iso-20022-open "Cross-Border 2026 — Open Finance, getokeniseerde deposito's en multi-rail treasury")
 
 **Een uitgewerkt voorbeeld.** Een corporate betaling van €4.2 M van Londen naar een Spaanse leverancier, T+2 acceptabel, investment-grade counterparty, geen FX-leg. De policy-as-code-engine evalueert vier inputs tegen een rail-matrix:
 
@@ -186,7 +186,7 @@ Het programmarisicoregister van 10 punten in de PDF is gekalibreerd op de explic
 2. **Stille MT-naar-MX-dataverlies.** Banken die `MT103` versturen met afgekapte adres- of remittance-data, worden schoon ingelezen op `MX`-kanalen — maar de gestructureerde velden blijven leeg. Het downstream-gevolg (mislukte sanctiescreening, gemiste AML-triggers, reconciliatiebreuken) komt 30–90 dagen ná de cut-over boven water, ruim voorbij de change-window-forensiek. Het register kwantificeert de verwachte back-book-remediatiekosten per €1 mrd betalingsstroom.
 3. **Toerekening van agent-handelingen.** Wanneer een LLM-aangedreven treasury-agent een betaalketen triggert, kunnen drie principalen eigenaarschap claimen — de modeleigenaar, de rail-leverancier en de policy-auteur. Zonder een expliciete toerekeningsbeslissing die in de orchestratielaag is ingebakken, erft de bank alle drie de aansprakelijkheden. Het register definieert de toerekeningsboom en de `SR 11-7`-bewijsketen die nodig is om die te verdedigen.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Download de whitepaper 2026 Bankarchitectuur (PDF)">Download de PDF-briefing</a> <a class="pill ghost no-chev" href="/papers" title="Bekijk alle gepubliceerde whitepapers en onderzoeken">Alle whitepapers</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Download de whitepaper 2026 Bankarchitectuur (PDF)">Download de PDF-briefing</a> <a class="pill ghost no-chev" href="/research" title="Bekijk alle gepubliceerde whitepapers en onderzoeken">Alle whitepapers</a></p>
 
 ## Samenvatting interne review
 

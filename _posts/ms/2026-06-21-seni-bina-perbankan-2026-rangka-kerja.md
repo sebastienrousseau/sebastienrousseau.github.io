@@ -85,7 +85,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "2026 Banking Architecture whitepaper banner"
 twitter_site: "@wwdseb"
 twitter_title: "Kertas putih seni bina perbankan 2026"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 
 # Humans.txt - The Humans.txt front matter (YAML).
 author_website: "https://sebastienrousseau.com"
@@ -128,7 +128,7 @@ Kami mencadangkan rangka kerja tiga tonggak untuk memodenkan timbunan perbankan 
 
 **Tesisnya.** Beralih melangkaui FFI berasaskan C kepada rangka kerja kriptografi Rust tulen dengan penghantaran berbilang algoritma, peppering yang dikunci HSM, dan semantik `verify_and_upgrade` yang mencincang semula pada setiap log masuk tanpa gangguan yang dilihat pengguna.
 
-**Bacaan utama.** [Menjamin pengurusan kata laluan dalam perbankan perusahaan: pencincangan berbilang algoritma dan naik taraf dengan hsh](https://sebastienrousseau.com/ms/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026 "Menjamin pengurusan kata laluan dalam perbankan perusahaan — hsh")
+**Bacaan utama.** [Menjamin pengurusan kata laluan dalam perbankan perusahaan: pencincangan berbilang algoritma dan naik taraf dengan hsh](https://sebastienrousseau.com/ms/2026-06-22-menjamin-pengurusan-kata-laluan-dalam-perbankan "Menjamin pengurusan kata laluan dalam perbankan perusahaan — hsh")
 
 ### Tonggak II — ISO 20022 sebagai sistem saraf autonomi
 
@@ -136,7 +136,7 @@ Kami mencadangkan rangka kerja tiga tonggak untuk memodenkan timbunan perbankan 
 
 **Tesisnya.** Guna pakai skema berkanun mengutamakan ISO merentasi setiap kontrak API, pintu pengesahan, dan pengguna hiliran. Tolak semasa menghurai, bukan semasa penyelesaian. Berhenti menterjemah MX turun kepada MT di pinggir — terjemah MT naik kepada MX sekali sahaja dan buang MT itu.
 
-**Bacaan utama.** [Daripada Pain.001 kepada kecairan boleh atur cara: ISO 20022 sebagai sistem saraf autonomi perbendaharaan pada 2026](https://sebastienrousseau.com/ms/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026 "Daripada Pain.001 kepada kecairan boleh atur cara — ISO 20022 pada 2026")
+**Bacaan utama.** [Daripada Pain.001 kepada kecairan boleh atur cara: ISO 20022 sebagai sistem saraf autonomi perbendaharaan pada 2026](https://sebastienrousseau.com/ms/2026-06-23-daripada-pain-001-kepada-kecairan-boleh "Daripada Pain.001 kepada kecairan boleh atur cara — ISO 20022 pada 2026")
 
 ### Tonggak III — Orkestrasi berbilang landasan
 
@@ -144,7 +144,7 @@ Kami mencadangkan rangka kerja tiga tonggak untuk memodenkan timbunan perbankan 
 
 **Tesisnya.** Alihkan orkestrasi keluar daripada model dan masuk ke dalam enjin dasar-sebagai-kod yang menghalakan pembayaran berdasarkan koridor, saiz transaksi, risiko penyelesaian, dan hubungan pihak lawan — dengan ejen bertindak hanya dalam sempadan yang ditakrifkan dasar.
 
-**Bacaan utama.** [Rentas sempadan 2026: ISO 20022, kewangan terbuka dan deposit tertokenisasi dalam perbendaharaan korporat](https://sebastienrousseau.com/ms/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026 "Rentas sempadan 2026 — kewangan terbuka, deposit tertokenisasi, dan perbendaharaan berbilang landasan")
+**Bacaan utama.** [Rentas sempadan 2026: ISO 20022, kewangan terbuka dan deposit tertokenisasi dalam perbendaharaan korporat](https://sebastienrousseau.com/ms/2026-06-24-rentas-sempadan-2026-iso-20022-kewangan "Rentas sempadan 2026 — kewangan terbuka, deposit tertokenisasi, dan perbendaharaan berbilang landasan")
 
 **Satu contoh terkerja.** Pembayaran korporat €4.2 juta dari London kepada pembekal Sepanyol, T+2 boleh diterima, pihak lawan gred pelaburan, tiada kaki pertukaran asing. Enjin dasar-sebagai-kod menilai empat input terhadap matriks landasan:
 
@@ -201,7 +201,7 @@ Daftar risiko program 10 item dalam PDF itu ditentukur kepada delta eksplisit ya
 2. **Kehilangan data MT ke MX secara senyap.** Bank yang mengeluarkan MT103 dengan data alamat atau kiriman wang terpotong masuk dengan bersih ke saluran MX — tetapi medan berstruktur kekal kosong. Akibat hiliran (penyaringan sekatan gagal, pencetus AML terlepas, keretakan penyesuaian) muncul 30–90 hari selepas peralihan, jauh melepasi forensik tetingkap perubahan. Daftar itu mengkuantifikasi kos pemulihan buku lama yang dijangka bagi setiap €1 bilion aliran pembayaran.
 3. **Atribusi tindakan ejen.** Apabila ejen perbendaharaan bersandarkan model bahasa mencetuskan rantaian pembayaran, tiga prinsipal boleh menuntut pemilikan — pemilik model, penyedia landasan, penulis dasar. Tanpa keputusan atribusi eksplisit yang dibakar ke dalam lapisan orkestrasi, bank mewarisi ketiga-tiga liabiliti itu. Daftar itu mentakrifkan pokok atribusi dan rantaian bukti SR 11-7 yang diperlukan untuk mempertahankannya.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Muat turun Kertas Putih Seni Bina Perbankan 2026 (PDF)">Muat turun taklimat PDF</a> <a class="pill ghost no-chev" href="/papers" title="Lihat semua kertas putih dan penyelidikan terbitan">Semua kertas putih</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Muat turun Kertas Putih Seni Bina Perbankan 2026 (PDF)">Muat turun taklimat PDF</a> <a class="pill ghost no-chev" href="/research" title="Lihat semua kertas putih dan penyelidikan terbitan">Semua kertas putih</a></p>
 
 ## Ringkasan semakan dalaman
 

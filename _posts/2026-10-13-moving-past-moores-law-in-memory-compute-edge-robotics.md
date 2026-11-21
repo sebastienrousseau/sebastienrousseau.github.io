@@ -145,13 +145,13 @@ In classical digital computing, calculating a matrix dot product requires fetchi
 
 In-memory compute architectures replace this digital data transfer with analog circuit physics:
 
-**Weight programming.** Neural network weights are programmed directly into non-volatile memory cells (such as modified flash or resistive RAM) as analog conductances ($G$). Once programmed, the weights remain stationary inside the memory array; they are never fetched or transferred during inference.
+**Weight programming.** Neural network weights are programmed directly into non-volatile memory cells (such as modified flash or resistive RAM) as analog conductances (*G*). Once programmed, the weights remain stationary inside the memory array; they are never fetched or transferred during inference.
 
-**Input voltage modulation.** Input activations (such as visual tokens from cameras) are converted into analog voltage levels ($V$) and driven along the array's word lines.
+**Input voltage modulation.** Input activations (such as visual tokens from cameras) are converted into analog voltage levels (*V*) and driven along the array's word lines.
 
-**Ohm's Law multiplication.** As the input voltage passes through each memory cell, Ohm's Law ($I = V \times G$) performs instantaneous analog multiplication, generating an electric current proportional to the product of the input and the stored weight.
+**Ohm's Law multiplication.** As the input voltage passes through each memory cell, Ohm's Law (*I* = *V* × *G*) performs instantaneous analog multiplication, generating an electric current proportional to the product of the input and the stored weight.
 
-**Kirchhoff's Current Law accumulation.** Along the vertical bit lines, currents from thousands of parallel memory cells naturally sum together according to Kirchhoff's Current Law ($\sum I = 0$).
+**Kirchhoff's Current Law accumulation.** Along the vertical bit lines, currents from thousands of parallel memory cells naturally sum together according to Kirchhoff's Current Law (Σ*I* = 0).
 
 A single flash memory array thus executes an entire matrix-vector multiplication in a single clock cycle, operating at the physics level without a single memory fetch. The accumulated analog current is then converted back into digital values via high-speed analog-to-digital converters (ADCs) at the edge of the array.
 
@@ -224,7 +224,7 @@ The transition from 700W data-centre clusters to 15W edge silicon represents the
 The Von Neumann bottleneck refers to the throughput and energy limitation caused by the physical separation between the central processing unit (ALU) and system memory (DRAM). In artificial intelligence workloads, which involve billions of matrix multiplications, processors spend over 85% of their total energy and substantial clock cycles simply shuttling data back and forth across copper buses, creating severe thermal and latency bottlenecks.
 
 **How does analog Compute-In-Memory (CIM) work?**
-Compute-In-Memory performs mathematical operations directly inside memory cells without moving data. Neural network weights are stored as analog conductance states inside non-volatile memory cells. When input voltages are applied across the array, current flows through the cells according to Ohm's Law ($I = V \times G$), and sums along the bit lines according to Kirchhoff's Current Law. This accomplishes complete matrix-vector multiplication in a single physical step.
+Compute-In-Memory performs mathematical operations directly inside memory cells without moving data. Neural network weights are stored as analog conductance states inside non-volatile memory cells. When input voltages are applied across the array, current flows through the cells according to Ohm's Law (*I* = *V* × *G*), and sums along the bit lines according to Kirchhoff's Current Law. This accomplishes complete matrix-vector multiplication in a single physical step.
 
 **Why is in-memory compute particularly critical for robotics and drones?**
 Mobile robots and drones operate under strict Size, Weight, Power, and Cost (SWaP-C) limitations. They rely on on-board batteries and cannot support heavy cooling radiators or high-wattage power supplies. In-memory compute provides 10x to 1,000x greater energy efficiency, enabling robots to run complex vision-language-action models locally within a 10W to 20W power envelope while preserving battery endurance.

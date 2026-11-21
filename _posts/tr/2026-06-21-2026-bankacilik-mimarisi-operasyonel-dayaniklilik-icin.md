@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "2026 Bankacılık Mimarisi beyaz kitap afişi"
 twitter_site: "@wwdseb"
 twitter_title: "2026 Bankacılık Mimarisi Beyaz Kitabı"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "Londra, Birleşik Krallık"
@@ -186,7 +186,7 @@ PDF'in 10 maddelik program risk kaydı, yönetim kurullarının 2024 / 2025 dön
 2. **Sessiz MT'den MX'e veri kaybı.** Kısaltılmış adres veya havale verisiyle MT103 yayan bankalar MX kanallarına temiz şekilde girer — ancak yapılandırılmış alanlar boş kalır. Aşağı akış sonuçları (başarısız yaptırım taraması, kaçırılan AML tetikleri, mutabakat kırılmaları) geçişten 30–90 gün sonra, değişiklik penceresi adli incelemesinin çok ötesinde yüzeye çıkar. Kayıt, ödeme akışının 1 milyar € başına beklenen geri-kayıt iyileştirme maliyetini niceliklendirir.
 3. **Ajan eylemi atfı.** LLM destekli bir hazine ajanı bir ödeme zincirini tetiklediğinde üç aktör sahiplik iddia edebilir — model sahibi, ray sağlayıcısı, politika yazarı. Orkestrasyon katmanına gömülmüş açık bir atıf kararı olmadan banka her üç yükümlülüğü de devralır. Kayıt; atıf ağacını ve onu savunmak için gereken SR 11-7 kanıt zincirini tanımlar.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="2026 Bankacılık Mimarisi Beyaz Kitabını indir (PDF)">PDF brifingini indir</a> <a class="pill ghost no-chev" href="/papers" title="Yayımlanmış tüm beyaz kitapları ve araştırmaları görüntüle">Tüm beyaz kitaplar</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="2026 Bankacılık Mimarisi Beyaz Kitabını indir (PDF)">PDF brifingini indir</a> <a class="pill ghost no-chev" href="/research" title="Yayımlanmış tüm beyaz kitapları ve araştırmaları görüntüle">Tüm beyaz kitaplar</a></p>
 
 ## İç inceleme özeti
 

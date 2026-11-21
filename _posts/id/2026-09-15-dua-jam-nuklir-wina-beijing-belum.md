@@ -127,9 +127,9 @@ Kinerja pendekatan itu sudah luar biasa. Jam atom konvensional terbaik dapat ber
 | :--- | :--- | :--- |
 | **Mekanisme fisika** | Transisi kulit elektron (sesium/stronsium) | Transisi proton/neutron di dalam inti torium-229 |
 | **Media pemindai** | Gelombang mikro atau laser optik pada elektron valensi | Laser ultraungu vakum pada inti yang tertanam dalam kristal |
-| **Substrat inang** | Sel gas atau perangkap kisi optik yang didinginkan laser | Kristal padat kalsium fluorida ($CaF_2$) |
-| **Kinerja saat ini** | Miliaran tahun untuk bertambah/berkurang $\le 1$ detik | Menyamai presisi jam atom dalam pencarian materi gelap |
-| **Stabilitas sasaran** | Standar internasional yang mapan ($10^{-18}$) | Peningkatan stabilitas satu orde besaran yang diproyeksikan |
+| **Substrat inang** | Sel gas atau perangkap kisi optik yang didinginkan laser | Kristal padat kalsium fluorida (CaF₂) |
+| **Kinerja saat ini** | Miliaran tahun untuk bertambah/berkurang ≤ 1 detik | Menyamai presisi jam atom dalam pencarian materi gelap |
+| **Stabilitas sasaran** | Standar internasional yang mapan (10⁻¹⁸) | Peningkatan stabilitas satu orde besaran yang diproyeksikan |
 | **Bentuk perangkat keras** | Peralatan vakum laboratorium yang besar dan rapuh | Potensi unit lapangan yang ringkas, tangguh, dan berbasis zat padat |
 
 Jam-jam baru ini memindahkan tempat terjadinya lompatan. Alih-alih elektron di kulit, jam ini memakai laser untuk membuat proton dan neutron melompat di antara tingkat-tingkat energi di dalam inti sebuah atom, dalam hal ini torium-229. Waktu dalam jam nuklir dihitung dengan memantau bagaimana laser berdaya tinggi berinteraksi dengan inti atom.
@@ -226,7 +226,7 @@ Jika arsitektur kristal padat kalsium fluorida terbukti tidak terlalu besar dan 
 
 ### Fisika dasar dan astrofisika
 
-Karena tingkat energi inti bergantung langsung pada gaya kuat dan konstanta kopling elektromagnetik $\alpha$, jam nuklir menawarkan kepekaan baru untuk menguji apakah konstanta fisika dasar berubah sepanjang waktu kosmik dan untuk menyelidiki kandidat materi gelap.
+Karena tingkat energi inti bergantung langsung pada gaya kuat dan konstanta kopling elektromagnetik α, jam nuklir menawarkan kepekaan baru untuk menguji apakah konstanta fisika dasar berubah sepanjang waktu kosmik dan untuk menyelidiki kandidat materi gelap.
 
 ## Kesimpulan
 

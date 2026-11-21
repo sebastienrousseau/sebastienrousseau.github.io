@@ -13,7 +13,7 @@ description: "O Scorecard de Segurança Pós-Quântica 2026 entrega a conselhos 
 format-detection: "telephone=no"
 hreflang: "pt-br"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/pt-br/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+id: "https://sebastienrousseau.com/pt-br/2026-06-29-scorecard-de-seguranca-pos-quantica-2026"
 image_alt: "Retrato em preto e branco de Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/pt-br/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+permalink: "https://sebastienrousseau.com/pt-br/2026-06-29-scorecard-de-seguranca-pos-quantica-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -39,7 +39,7 @@ subtitle: "Como os conselhos devem medir e governar a migração para NIST FIPS 
 tags: "post-quantum, criptografia, banking, governança, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
 theme-color: "0, 83, 191"
 title: "Scorecard de Segurança Pós-Quântica 2026: framework de métricas para o conselho"
-url: "https://sebastienrousseau.com/pt-br/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+url: "https://sebastienrousseau.com/pt-br/2026-06-29-scorecard-de-seguranca-pos-quantica-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/rss.xml"
 category: "Technology"
@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Leituras relacionadas:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib e a migração bancária pós-quântica em 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: o algoritmo de proteção na era quântica</a>.</p>
 </aside>
+
 A segurança pós-quântica não é mais um projeto de pesquisa. O "relógio supervisório" avança em direção aos prazos de aplicação do final da década. A finalização do [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) e do [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) codificou os padrões para encapsulamento de chaves e assinaturas digitais.
 
 Os órgãos reguladores agora esperam que bancos Tier-1 ultrapassem programas piloto. Em 2026, o foco mudou para a industrialização desses padrões. A incapacidade de demonstrar um caminho claro de migração acarreta penalidades regulatórias significativas sob o [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) e potencial responsabilidade pessoal para diretores que ignorem a ameaça previsível de descriptografia habilitada pelo quântico.

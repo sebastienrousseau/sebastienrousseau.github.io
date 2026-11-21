@@ -53,7 +53,7 @@ OpenAI Whisper 與 macOS 上 Metal Performance Shaders 的整合代表實時語�
 .class=\"card bg-light p-3 me-3 w-100\"
 要進一步瞭解 macOS 上 OpenAI Whisper 與 Metal Performance Shaders 整合用於實時語音識別，鼓勵讀者獲取完整研究論文。該論文提供深入的技術細節、實驗結果，以及對該技術潛在應用與未來方向的進一步洞察。[**立即閱讀完整論文！❯**][00]
 
-[00]: /papers/index.html "Sebastien Rousseau 的研究出版物與白皮書"
+[00]: /research/index.html "Sebastien Rousseau 的研究出版物與白皮書"
 [01]: https://developer.apple.com/documentation/metalperformanceshaders "Metal Performance Shaders - Apple 開發者文件"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "分隔線"

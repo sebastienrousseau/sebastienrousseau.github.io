@@ -13,7 +13,7 @@ description: "Scorecard-ul de Securitate Post-Cuantică 2026 oferă consiliilor 
 format-detection: "telephone=no"
 hreflang: "ro"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/ro/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+id: "https://sebastienrousseau.com/ro/2026-06-29-scorecard-ul-securitate-post-cuantica-2026"
 image_alt: "Portret alb-negru al lui Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/ro/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+permalink: "https://sebastienrousseau.com/ro/2026-06-29-scorecard-ul-securitate-post-cuantica-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -39,7 +39,7 @@ subtitle: "Cum trebuie consiliile să măsoare și să guverneze migrarea către
 tags: "post-cuantic, criptografie, banking, guvernanță, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
 theme-color: "0, 83, 191"
 title: "Scorecard-ul de Securitate Post-Cuantică 2026: cadru de indicatori la nivel de consiliu"
-url: "https://sebastienrousseau.com/ro/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+url: "https://sebastienrousseau.com/ro/2026-06-29-scorecard-ul-securitate-post-cuantica-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/rss.xml"
 category: "Technology"
@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Lecturi conexe:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib și migrarea bancară post-cuantică în 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: algoritmul de protecție într-o eră cuantică</a>.</p>
 </aside>
+
 Securitatea post-cuantică nu mai este un proiect de cercetare. „Ceasul supravegherii” bate către termenele de aplicare de la sfârșitul deceniului 2020. Finalizarea [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) și [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) a codificat standardele pentru încapsularea cheilor și semnăturile digitale.
 
 Organismele de reglementare așteaptă acum ca băncile de prim rang să treacă dincolo de programele-pilot. În 2026, accentul s-a mutat pe industrializarea acestor standarde. Eșecul de a demonstra o cale clară de migrare atrage penalități de reglementare semnificative sub [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) și o posibilă răspundere personală pentru directorii care ignoră amenințarea previzibilă a decriptării asistate cuantic.

@@ -121,7 +121,7 @@ Nítorí náà ìjiyàn nípa ètò lọ báyìí: àwọn adájọ́ onípilẹ
 
 | Ìhà Ètò | Àwọn Adájọ́ LLM Onípilẹ̀ṣẹ̀dá (bí GPT-4 gẹ́gẹ́ bí Adájọ́) | Àwọn Olùpínsọ́wọ́ Token Kan (bí Llama Guard) | Aṣàwárí RLCD Ọlọ́pọ̀ Ìbéèrè (Jev) |
 | :--- | :--- | :--- | :--- |
-| **Ọ̀nà Ìfúnni ní Máàkì** | Ìyípo decoding autoregressive kíkún fún òṣùwọ̀n kọ̀ọ̀kan | Ìṣeéṣe softmax lórí token ìjáde kan | Tensor ìṣeéṣe tí a ṣàtúnṣe ọlọ́pọ̀ orí $P(\text{yes})$ |
+| **Ọ̀nà Ìfúnni ní Máàkì** | Ìyípo decoding autoregressive kíkún fún òṣùwọ̀n kọ̀ọ̀kan | Ìṣeéṣe softmax lórí token ìjáde kan | Tensor ìṣeéṣe tí a ṣàtúnṣe ọlọ́pọ̀ orí P(yes) |
 | **Ìbéèrè ní Ìpè Kọ̀ọ̀kan** | Àṣẹ ìgbéléwọ̀n 1 ní ìpè àwòṣe kọ̀ọ̀kan | Àmì ìpínsọ́wọ́ 1 ní ìpè àwòṣe kọ̀ọ̀kan | Ọ̀pọ̀ ìbéèrè binary/categorical/ordinal nínú ìpè 1 |
 | **Owó Inference** | Ga ($10–$50 fún ìbáṣepọ̀ 1,000) | Àárín ($0.50–$2.00 fún ìbáṣepọ̀ 1,000) | Ìlọ́po 63 kéré ($0.30 lórí ìdánwò àfiwé kíkún 19) |
 | **Iṣẹ́ AUROC** | Dá lórí ìdánwò àfiwé; ó lè ní ìyípadà adájọ́ | Ga lórí àwọn ẹ̀ka ààbò pàtó tí a kọ́ | Àárín AUROC 0.886 láìsí ìdálẹ́kọ̀ọ́ lórí àkójọ 44 |

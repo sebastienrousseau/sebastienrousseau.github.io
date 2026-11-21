@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "Baner białej księgi Architektura bankowości 2026"
 twitter_site: "@wwdseb"
 twitter_title: "Biała księga: Architektura bankowości 2026"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "Londyn, Wielka Brytania"
@@ -186,7 +186,7 @@ Musisz podzielić się tym frameworkiem z wewnętrznymi zespołami bezpieczeńst
 2. **Cicha utrata danych MT → MX.** Banki emitujące `MT103` ze skróconymi danymi adresowymi lub remittance trafiają do kanałów `MX` bez błędu — ale ustrukturyzowane pola pozostają puste. Konsekwencja po stronie downstream (nieudane sanctions screening, pominięte triggery AML, pęknięcia uzgodnień) wypływa 30–90 dni po cut-overze, długo po forensyce okna zmiany. Rejestr kwantyfikuje spodziewany koszt remediacji back-booka na każdy 1 mld EUR przepływu płatniczego.
 3. **Atrybucja działań agenta.** Gdy agent treasury wspierany przez LLM uruchamia łańcuch płatniczy, trzech principalów może rościć sobie własność — właściciel modelu, dostawca szyny, autor polityki. Bez jawnej decyzji atrybucyjnej wpisanej w warstwę orkiestracji bank dziedziczy wszystkie trzy odpowiedzialności. Rejestr definiuje drzewo atrybucji i łańcuch dowodowy `SR 11-7` wymagany do jego obrony.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Pobierz białą księgę Architektura bankowości 2026 (PDF)">Pobierz briefing PDF</a> <a class="pill ghost no-chev" href="/papers" title="Zobacz wszystkie opublikowane białe księgi i badania">Wszystkie białe księgi</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Pobierz białą księgę Architektura bankowości 2026 (PDF)">Pobierz briefing PDF</a> <a class="pill ghost no-chev" href="/research" title="Zobacz wszystkie opublikowane białe księgi i badania">Wszystkie białe księgi</a></p>
 
 ## Podsumowanie przeglądu wewnętrznego
 

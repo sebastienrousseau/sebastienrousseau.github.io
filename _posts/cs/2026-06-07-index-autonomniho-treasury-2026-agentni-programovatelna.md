@@ -13,7 +13,7 @@ description: "Index připravenosti autonomního treasury pro rok 2026: agentní 
 format-detection: "telephone=no"
 hreflang: "cs"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/cs/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+id: "https://sebastienrousseau.com/cs/2026-06-07-index-autonomniho-treasury-2026-agentni-programovatelna"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/cs/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+permalink: "https://sebastienrousseau.com/cs/2026-06-07-index-autonomniho-treasury-2026-agentni-programovatelna"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "treasury, agentní AI, programovatelná likvidita, tokenizované vklady, 
 excerpt: "Index připravenosti autonomního treasury pro rok 2026 — měření agentních treasury workflowů, pokrytí programovatelné likvidity, integrace tokenizovaných vkladů, orchestrace plateb v reálném čase a automatizovaného řízení hotovosti jako jedné vrstvy provozního modelu."
 theme-color: "0, 83, 191"
 title: "Index autonomního treasury 2026: agentní treasury, programovatelná likvidita, tokenizované vklady a řízení hotovosti v reálném čase"
-url: "https://sebastienrousseau.com/cs/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+url: "https://sebastienrousseau.com/cs/2026-06-07-index-autonomniho-treasury-2026-agentni-programovatelna"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/rss.xml"
 category: "Finance"
@@ -99,7 +99,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Control plane je novou auditní plochou.</strong> Mandáty, limity, cesty ručního přepsání a důkazy o reverzi musí běžet jako platformová primitiva, nikoli jako ruční schvalování pro každou akci.</li>
   <li><strong>Skóre CFO je na úrovni rozhodnutí, nikoli kvartálu.</strong> Náklady hotovosti, snižování vnitrodenních likviditních polštářů, FX efektivita a přesnost predikce se měří rychlostí workflowu.</li>
 </ul>
-<p class="post-lead-related"><strong>Související četba:</strong> <a href="https://sebastienrousseau.com/cs/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html">Programovatelná likvidita 2026: AI, tokenizované vklady, real-time treasury</a>, <a href="https://sebastienrousseau.com/cs/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Tokenizované vklady v roce 2026: bankovní služby, konkurence stablecoinů a stav programovatelných peněz komerčních bank</a>.</p>
+<p class="post-lead-related"><strong>Související četba:</strong> <a href="https://sebastienrousseau.com/cs/2026-05-25-programovatelna-likvidita-2026-ai-tokenizovane-vklady/index.html">Programovatelná likvidita 2026: AI, tokenizované vklady, real-time treasury</a>, <a href="https://sebastienrousseau.com/cs/2026-05-21-tokenizovane-vklady-roce-2026-bankovni-sluzby/index.html">Tokenizované vklady v roce 2026: bankovní služby, konkurence stablecoinů a stav programovatelných peněz komerčních bank</a>.</p>
 </aside>
 <!-- lead-end -->
 

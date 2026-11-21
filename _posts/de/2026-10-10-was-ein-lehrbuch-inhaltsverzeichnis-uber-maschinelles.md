@@ -158,7 +158,7 @@ Die Autoren erklären auch, warum das Feld dort steht, wo es steht. Da der Erfol
 
 | Dimension | Zeitkomplexität | Platzkomplexität | Stichprobenkomplexität |
 | :--- | :--- | :--- | :--- |
-| **Operative Definition** | Asymptotische Laufzeit bis zur Ausgabe der Hypothese $h$ | Speicherbedarf während Training und Auswertung | Zahl der Trainingsbeispiele $m$, die nötig sind, um eine Konzeptfamilie zu lernen |
+| **Operative Definition** | Asymptotische Laufzeit bis zur Ausgabe der Hypothese *h* | Speicherbedarf während Training und Auswertung | Zahl der Trainingsbeispiele *m*, die nötig sind, um eine Konzeptfamilie zu lernen |
 | **Maßgebliche Theorie** | Komplexitätstheorie (P gegen NP, Schwere des Trainings) | Speichergrenzen der Architektur und Cache-Lokalität | PAC-Lernen, Rademacher-Komplexität und VC-Dimension |
 | **Kostenfolge** | Server-Rechenleistung und GPU/CPU-Budget für Inferenz | RAM- und On-Chip-SRAM-Kapazität | Kosten für Datenerhebung, Annotation und Labeling |
 | **Theoretische Rolle** | Misst die Laufzeiteffizienz des Algorithmus | Misst die Effizienz beim Speicherverbrauch | Bestimmt Generalisierungsfehler und Schranken für ungesehene Daten |

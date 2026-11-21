@@ -13,7 +13,7 @@ description: "Ìwé-ìdíwọ̀n Ààbò Lẹ́yìn-Quantum 2026 ń fún àwọn
 format-detection: "telephone=no"
 hreflang: "yo"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/yo/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+id: "https://sebastienrousseau.com/yo/2026-06-29-iwe-idiwon-aabo-leyin-quantum-2026"
 image_alt: "Àwòrán Aláwọ̀ Dúdú àti Funfun ti Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/yo/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+permalink: "https://sebastienrousseau.com/yo/2026-06-29-iwe-idiwon-aabo-leyin-quantum-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -39,7 +39,7 @@ subtitle: "Bí àwọn ìgbìmọ̀ olórí ṣe gbọ́dọ̀ wọ̀n kí wọ�
 tags: "lẹ́yìn-quantum, cryptography, báńkì, ìṣàkóso, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
 theme-color: "0, 83, 191"
 title: "Ìwé-Ìdíwọ̀n Ààbò Lẹ́yìn-Quantum 2026: Ìlànà Àmì Ìpele-Ìgbìmọ̀ Olórí"
-url: "https://sebastienrousseau.com/yo/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+url: "https://sebastienrousseau.com/yo/2026-06-29-iwe-idiwon-aabo-leyin-quantum-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/rss.xml"
 category: "Technology"
@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Àwọn ìwé tó jẹmọ́:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib àti Ìṣíkiri Báńkì Lẹ́yìn-Quantum ní 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: Algorithm Olùdáàbò ní Sànmánì Quantum</a>.</p>
 </aside>
+
 Ààbò lẹ́yìn-quantum kì í ṣe iṣẹ́ ìwádìí mọ́. "Aago alábòójútó" ń lu sí àwọn ọjọ́ kẹ́yìn ìmúdájú ìpẹ̀kun-2020. Ìparí [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) àti [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) ti gbé àwọn ìpilẹ̀ṣẹ̀ fún key encapsulation àti àmì-ìdánimọ̀ oníṣirò kalẹ̀ gẹ́gẹ́ bí òfin.
 
 Àwọn ìgbìmọ̀ alábòójútó báyìí ń retí pé kí àwọn báńkì Ìpele-1 lọ ré jù àwọn ètò àdánwò lọ. Ní 2026, ìfojúsùn ti yí padà sí ìṣiṣẹ́-lórí-fífẹ̀ ti àwọn ìpilẹ̀ṣẹ̀ wọ̀nyí. Kíkùnà láti fi ọ̀nà ìṣíkiri tó kedere hàn ń gbé ìjìyà ìlànà tó wúwo lábẹ́ [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) àti ojúṣe ti ara ẹni tó ṣeéṣe fún àwọn olùdarí tí wọ́n bá tan ojú àwọn ewu ti ìpalẹ̀ quantum tí a lè rí síwájú.

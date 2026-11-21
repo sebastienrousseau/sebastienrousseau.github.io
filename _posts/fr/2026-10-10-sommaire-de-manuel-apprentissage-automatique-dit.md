@@ -158,7 +158,7 @@ Les auteurs expliquent aussi pourquoi le domaine se situe là où il se situe. P
 
 | Dimension | Complexité en temps | Complexité en espace | Complexité d'échantillon |
 | :--- | :--- | :--- | :--- |
-| **Définition opérationnelle** | Temps d'exécution asymptotique nécessaire pour produire l'hypothèse $h$ | Empreinte mémoire nécessaire pendant l'entraînement et l'évaluation | Nombre d'exemples d'entraînement $m$ nécessaires pour apprendre une famille de concepts |
+| **Définition opérationnelle** | Temps d'exécution asymptotique nécessaire pour produire l'hypothèse *h* | Empreinte mémoire nécessaire pendant l'entraînement et l'évaluation | Nombre d'exemples d'entraînement *m* nécessaires pour apprendre une famille de concepts |
 | **Théorie de référence** | Complexité computationnelle (P contre NP, difficulté de l'entraînement) | Contraintes mémoire de l'architecture et localité du cache | Apprentissage PAC, complexité de Rademacher et dimension VC |
 | **Conséquence en coût** | Calcul serveur et budget d'inférence GPU/CPU | Capacité de RAM et de SRAM sur puce | Coût de collecte, d'annotation et d'étiquetage des données |
 | **Rôle théorique** | Mesure l'efficacité de l'algorithme en temps d'exécution | Mesure l'efficacité en ressources mémoire | Détermine l'erreur de généralisation et les bornes sur les données non vues |

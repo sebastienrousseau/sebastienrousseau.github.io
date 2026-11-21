@@ -147,9 +147,9 @@ Sonucu değerlendirmek için doğru çerçevenin bu olduğunu savunurum. Düşü
 | :--- | :--- | :--- | :--- |
 | **Küre paketleme üssü** | Kabatianskii-Levenshtein sınırı: 0,59905576... | En az küresel kod sınırları kadar güçlü (Cohn-Zhao) | Afkhami-Jeddi ve diğ. (2020) tarafından öngörülen kesin asimptotik hız kanıtlandı |
 | **Sınırın kesinliği** | Yalnızca düşük mertebeli çarpan iyileştirmeleri | Yüksek boyutlu asimptotik boşluk açık soru | Kesin örtüşen alt sınır: hiçbir yardımcı fonksiyon bu hızı geçemez |
-| **Fourier işaret belirsizliği** | Ayrı işaret sınırları ($A^+(d) < A^-(d)$) | Fourier'ye göre anti-öz-dual test fonksiyonlarına bağlı | Asimptotik olarak çözüldü; işaret belirsizliğini Mellin yansıması belirliyor |
+| **Fourier işaret belirsizliği** | Ayrı işaret sınırları (A⁺(d) < A⁻(d)) | Fourier'ye göre anti-öz-dual test fonksiyonlarına bağlı | Asimptotik olarak çözüldü; işaret belirsizliğini Mellin yansıması belirliyor |
 | **Hata düzelten kodlar** | Klasik küresel ve ikili kod sınırları | Asimptotik olarak paketleme sınırlarına bağlı | Tüm sabit uzaklık parametrelerinde üstel çarpanlarla iyileşme |
-| **Yöntemsel tavan** | Polinom çarpanların sayısal optimizasyonu | Yardımcı test fonksiyonlarının açık optimizasyonu $f \in \mathcal{A}_d$ | Matematiksel tavan kanıtlandı: daha fazla kazanç Cohn-Elkies dışı yöntemler gerektiriyor |
+| **Yöntemsel tavan** | Polinom çarpanların sayısal optimizasyonu | Yardımcı test fonksiyonlarının açık optimizasyonu f ∈ 𝒜\_d | Matematiksel tavan kanıtlandı: daha fazla kazanç Cohn-Elkies dışı yöntemler gerektiriyor |
 
 ## Örtüşen alt sınır soruyu neden değiştiriyor
 
@@ -237,11 +237,11 @@ Yüksek boyutlu Cohn-Elkies azalma hızının kesin olarak belirlenmesi ve berab
 
 ### Saf matematik ve ayrık geometri
 
-Yüksek boyutlu geometri ve harmonik analiz üzerinde çalışan matematikçiler için Cohn-Elkies azalma hızının kesin olarak belirlenmesi araştırma manzarasını değiştiriyor. Örtüşen alt sınır, $\mathcal{A}_d$ içindeki hiçbir yardımcı fonksiyonun yeni üssü geçemeyeceğini kanıtladığı için araştırmacılar klasik doğrusal programlama yaklaşımı içinde daha iyi radyal test fonksiyonları aramayı bırakabilir. Daha yoğun küre paketlemelerine ya da daha sıkı evrensel sınırlara doğru ilerleme artık doğrusal olmayan programlama tekniklerini, daha yüksek mertebeli yarı tanımlı hiyerarşileri ya da kökten farklı geometrik kurulumları keşfetmek zorunda.
+Yüksek boyutlu geometri ve harmonik analiz üzerinde çalışan matematikçiler için Cohn-Elkies azalma hızının kesin olarak belirlenmesi araştırma manzarasını değiştiriyor. Örtüşen alt sınır, 𝒜\_d içindeki hiçbir yardımcı fonksiyonun yeni üssü geçemeyeceğini kanıtladığı için araştırmacılar klasik doğrusal programlama yaklaşımı içinde daha iyi radyal test fonksiyonları aramayı bırakabilir. Daha yoğun küre paketlemelerine ya da daha sıkı evrensel sınırlara doğru ilerleme artık doğrusal olmayan programlama tekniklerini, daha yüksek mertebeli yarı tanımlı hiyerarşileri ya da kökten farklı geometrik kurulumları keşfetmek zorunda.
 
 ### Kriptografi ve kafes tabanlı güvenlik
 
-ML-KEM ve ML-DSA gibi kuantum sonrası standartların çekirdeğini oluşturan kafes tabanlı kriptografi, yüksek boyutlu Öklid kafeslerinde en kısa ya da en yakın vektörleri bulmanın varsayılan zorluğuna büyük ölçüde dayanıyor. Öklid En Yakın Vektör Problemi (CVP) için $n^{1/400}$ çarpanlı zorluğu kuran 3SAT'tan doğrudan indirgeme, küre paketlemeleri ve küresel kodlar üzerindeki daha sıkı üstel tavanlarla birlikte, somut güvenlik parametrelerini zayıflatmadan en kötü durumdan ortalama duruma kafes indirgemelerinin kuramsal temellerini sağlamlaştırıyor.
+ML-KEM ve ML-DSA gibi kuantum sonrası standartların çekirdeğini oluşturan kafes tabanlı kriptografi, yüksek boyutlu Öklid kafeslerinde en kısa ya da en yakın vektörleri bulmanın varsayılan zorluğuna büyük ölçüde dayanıyor. Öklid En Yakın Vektör Problemi (CVP) için n\^(1/400) çarpanlı zorluğu kuran 3SAT'tan doğrudan indirgeme, küre paketlemeleri ve küresel kodlar üzerindeki daha sıkı üstel tavanlarla birlikte, somut güvenlik parametrelerini zayıflatmadan en kötü durumdan ortalama duruma kafes indirgemelerinin kuramsal temellerini sağlamlaştırıyor.
 
 ### Otomatik teorem ispatı ve temel modeller
 
@@ -267,7 +267,7 @@ Cohn ve Gonçalves, tümleyen Fourier işaret belirsizliği probleminin (g_hat =
 
 **Bu sonuç kafes tabanlı kriptografiyi tehlikeye atıyor mu?**
 
-Hayır. Teorem, kürelerin yüksek boyutlarda ne kadar yoğun paketlenebileceğine dair üst sınırları keskinleştiriyor ve En Yakın Vektör Problemi için $n^{1/400}$ çarpanlı zorluk kuruyor, ama polinom zamanlı kafes indirgeme algoritmaları sağlamıyor. Pratik kafes kriptosistemleri bilinen kuantum ve klasik saldırılara karşı güvenli kalıyor.
+Hayır. Teorem, kürelerin yüksek boyutlarda ne kadar yoğun paketlenebileceğine dair üst sınırları keskinleştiriyor ve En Yakın Vektör Problemi için n\^(1/400) çarpanlı zorluk kuruyor, ama polinom zamanlı kafes indirgeme algoritmaları sağlamıyor. Pratik kafes kriptosistemleri bilinen kuantum ve klasik saldırılara karşı güvenli kalıyor.
 
 ## Kaynaklar
 
