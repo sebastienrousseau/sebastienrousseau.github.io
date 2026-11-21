@@ -213,6 +213,7 @@ async function storePage(cache, key, res) {
   const headers = new Headers(res.headers);
   headers.set('Cache-Control', `public, max-age=${EDGE_HTML_STALE}`);
   headers.set(EDGE_STORED_AT, String(Date.now()));
+  // adr: ADR-0015: Cache API (caches.default) page copy, not a KV write
   await cache.put(key, new Response(res.body, { status: 200, headers }));
 }
 

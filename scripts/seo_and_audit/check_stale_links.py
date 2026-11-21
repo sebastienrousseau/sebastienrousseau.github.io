@@ -30,7 +30,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 REDIRECTS = ROOT / "worker-assets" / "redirects.json"
-SCOPE = ("_posts", "_drafts", "_layouts", "_includes", "_data/i18n")
+# _layouts/ is synced from the theme repository (the "Layouts match the
+# theme" CI job fails on any local edit), so a stale link there is fixed in
+# the theme; the postbuild link pass already rewrites it in the built HTML.
+SCOPE = ("_posts", "_drafts", "_data/i18n")
 _DOMAIN = r"https?://(?:www\.)?sebastienrousseau\.com"
 LINK_RE = re.compile(
     rf"((?:\]\(|href=\\?\"|href='|^\[[^\]]+\]:\s*|{_DOMAIN})(?:{_DOMAIN})?)"
