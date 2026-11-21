@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Gerelateerde lectuur:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib en de post-kwantum migratie in banken in 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: het beschermingsalgoritme in een kwantumtijdperk</a>.</p>
 </aside>
+
 Post-kwantum beveiliging is geen onderzoeksproject meer. De "toezichtsklok" tikt richting handhavingsdeadlines aan het einde van de jaren 2020. De afronding van [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) en [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) heeft de standaarden voor sleutelinkapseling en digitale handtekeningen gecodificeerd.
 
 Toezichthouders verwachten nu van Tier-1 banken dat zij verder gaan dan pilotprogramma's. In 2026 ligt de focus op de industrialisatie van deze standaarden. Het niet kunnen aantonen van een helder migratiepad brengt aanzienlijke toezichtssancties met zich mee onder de [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) en potentiële persoonlijke aansprakelijkheid voor bestuurders die de voorzienbare dreiging van kwantum-gestuurde ontsleuteling negeren.

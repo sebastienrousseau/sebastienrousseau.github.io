@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Đọc liên quan:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib và di trú ngân hàng hậu lượng tử trong năm 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: thuật toán bảo vệ trong thời lượng tử</a>.</p>
 </aside>
+
 An ninh hậu lượng tử không còn là một dự án nghiên cứu. "Đồng hồ giám sát" đang đếm ngược tới các hạn chót thực thi cuối thập kỷ 2020. Việc hoàn tất [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) và [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) đã chuẩn hoá các tiêu chuẩn cho đóng gói khoá và chữ ký số. 
 
 Các cơ quan quản lý nay kỳ vọng ngân hàng Tier-1 vượt qua giai đoạn chương trình thí điểm. Trong năm 2026, trọng tâm đã chuyển sang công nghiệp hoá các chuẩn này. Việc không chứng minh được một lộ trình di trú rõ ràng kéo theo các chế tài pháp lý đáng kể theo [Đạo luật Khả năng chống chịu vận hành số (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) và trách nhiệm cá nhân tiềm tàng đối với các thành viên hội đồng làm ngơ trước mối đe doạ giải mã có hỗ trợ lượng tử có thể đoán trước.

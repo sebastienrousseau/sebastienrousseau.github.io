@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Bacaan terkait:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib dan Migrasi Perbankan Pasca-Kuantum pada 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: Algoritma Pengaman di Era Kuantum</a>.</p>
 </aside>
+
 Keamanan pasca-kuantum bukan lagi proyek riset. "Jam supervisi" sedang berdetak menuju tenggat penegakan akhir dekade 2020-an. Finalisasi [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) dan [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) telah mengodifikasi standar untuk enkapsulasi kunci dan tanda tangan digital.
 
 Badan regulasi kini menuntut bank Tier-1 bergerak melampaui program pilot. Pada 2026, fokus telah bergeser ke industrialisasi standar ini. Kegagalan menunjukkan jalur migrasi yang jelas membawa sanksi regulasi yang signifikan di bawah [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) dan potensi liabilitas pribadi bagi direktur yang mengabaikan ancaman dekripsi berkemampuan kuantum yang dapat diprediksi.

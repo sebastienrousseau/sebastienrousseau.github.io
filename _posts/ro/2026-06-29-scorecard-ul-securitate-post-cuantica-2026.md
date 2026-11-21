@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Lecturi conexe:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib și migrarea bancară post-cuantică în 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: algoritmul de protecție într-o eră cuantică</a>.</p>
 </aside>
+
 Securitatea post-cuantică nu mai este un proiect de cercetare. „Ceasul supravegherii” bate către termenele de aplicare de la sfârșitul deceniului 2020. Finalizarea [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) și [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) a codificat standardele pentru încapsularea cheilor și semnăturile digitale.
 
 Organismele de reglementare așteaptă acum ca băncile de prim rang să treacă dincolo de programele-pilot. În 2026, accentul s-a mutat pe industrializarea acestor standarde. Eșecul de a demonstra o cale clară de migrare atrage penalități de reglementare semnificative sub [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) și o posibilă răspundere personală pentru directorii care ignoră amenințarea previzibilă a decriptării asistate cuantic.

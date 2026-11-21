@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>関連記事:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib と 2026 年のポスト量子銀行業移行</a>、<a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber:量子時代の守護アルゴリズム</a>。</p>
 </aside>
+
 ポスト量子セキュリティはもはや研究プロジェクトではありません。「監督上の時計」は 2020 年代後半の執行期限へと刻一刻と進んでいます。[NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) および [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) の確定により、鍵カプセル化およびデジタル署名の標準が成文化されました。
 
 規制当局は今や、Tier-1 銀行がパイロットプログラムの段階を超えて進むことを期待しています。2026 年において焦点はこれらの規格の産業化に移りました。明確な移行経路を提示できない場合、[Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) の下で重大な規制上の罰則を招き、量子による予見可能な復号化の脅威を無視した取締役には個人責任が及ぶ可能性があります。

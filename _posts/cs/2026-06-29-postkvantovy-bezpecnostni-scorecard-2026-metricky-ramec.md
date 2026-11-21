@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Související čtení:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib a postkvantová migrace v bankovnictví v roce 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: ochranný algoritmus v kvantové éře</a>.</p>
 </aside>
+
 Postkvantová bezpečnost už není výzkumný projekt. „Dohledové hodiny“ tikají směrem k vynucovacím termínům na konci dvacátých let. Finalizace [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) a [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) kodifikovala standardy pro zapouzdření klíčů a digitální podpisy.
 
 Regulátoři dnes očekávají, že banky první třídy postoupí dál než k pilotním programům. V roce 2026 se pozornost přesunula k industrializaci těchto standardů. Neschopnost prokázat jasnou cestu k migraci nese významné regulatorní sankce podle [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) a potenciální osobní odpovědnost ředitelů, kteří ignorují předvídatelnou hrozbu kvantového dešifrování.

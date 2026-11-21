@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Vidare läsning:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib och postkvantmigrationen i bank 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: skyddsalgoritmen i kvantåldern</a>.</p>
 </aside>
+
 Postkvantsäkerhet är inte längre ett forskningsprojekt. "Tillsynsklockan" tickar mot de hårda tidsfristerna i slutet av 2020-talet. Färdigställandet av [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) och [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) har kodifierat standarderna för nyckelinkapsling och digitala signaturer.
 
 Tillsynsorganen förväntar sig nu att Tier-1-banker går bortom pilotprogram. Under 2026 har fokus flyttats till industrialiseringen av dessa standarder. Att inte kunna visa en tydlig migrationsväg medför betydande regulatoriska sanktioner enligt [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) och potentiellt personligt ansvar för styrelseledamöter som ignorerar det förutsebara hotet om kvantmöjliggjord dekryptering.

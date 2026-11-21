@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>संबंधित पठन:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib और 2026 में पोस्ट-क्वांटम बैंकिंग माइग्रेशन</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: क्वांटम युग में सुरक्षा एल्गोरिथ्म</a>।</p>
 </aside>
+
 पोस्ट-क्वांटम सुरक्षा अब कोई शोध परियोजना नहीं है। "पर्यवेक्षी घड़ी" 2020 के दशक के अंत की प्रवर्तन समय-सीमाओं की ओर बढ़ रही है। [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) और [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) के अंतिम रूप ने कुंजी एनकैप्सुलेशन और डिजिटल हस्ताक्षरों के मानकों को संहिताबद्ध कर दिया है।
 
 नियामक निकाय अब Tier-1 बैंकों से पायलट कार्यक्रमों से आगे बढ़ने की अपेक्षा करते हैं। 2026 में, ध्यान इन मानकों के औद्योगिकीकरण पर केंद्रित हो गया है। स्पष्ट माइग्रेशन पथ प्रदर्शित करने में विफलता [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) के तहत महत्वपूर्ण नियामक दंड और क्वांटम-सक्षम डिक्रिप्शन के पूर्वानुमेय खतरे की अनदेखी करने वाले निदेशकों के लिए संभावित व्यक्तिगत देयता वहन करती है।

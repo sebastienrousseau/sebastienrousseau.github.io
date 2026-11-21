@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Weiterführende Lektüre:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib und die Post-Quanten-Bankenmigration 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: Der Schutzalgorithmus im Quantenzeitalter</a>.</p>
 </aside>
+
 Post-Quanten-Sicherheit ist kein Forschungsprojekt mehr. Die „Aufsichtsuhr" tickt auf die Durchsetzungsfristen Ende der 2020er Jahre zu. Die Finalisierung von [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) und [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) hat die Standards für Schlüsselkapselung und digitale Signaturen festgeschrieben.
 
 Aufsichtsbehörden erwarten von Tier-1-Banken jetzt mehr als Pilotprogramme. 2026 hat sich der Fokus auf die Industrialisierung dieser Standards verlagert. Wer keinen klaren Migrationspfad nachweisen kann, riskiert erhebliche regulatorische Sanktionen unter dem [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) und mögliche persönliche Haftung für Direktoren, die die absehbare Bedrohung durch quantenfähige Entschlüsselung ignorieren.

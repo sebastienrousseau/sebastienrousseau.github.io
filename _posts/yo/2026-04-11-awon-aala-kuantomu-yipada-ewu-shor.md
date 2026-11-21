@@ -209,8 +209,7 @@ Ní ìbẹ̀rẹ̀ ọdún 2026, àwọn ètò quantum tí ó lágbára jù lọ
 
 - Sebastien Rousseau, (2025). [Ìsanwó Quantum-Safe: Ìdí tí Ilé-iṣẹ́ Ìsanwó Fi Gbọ́dọ̀ Gbégbésẹ̀ Nísinsìnyí](https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/index.html "Ìsanwó Quantum-Safe: Ìdí tí Ilé-iṣẹ́ Ìsanwó Fi Gbọ́dọ̀ Gbégbésẹ̀ Nísinsìnyí").
 - Sebastien Rousseau, (2023). [Quantum Key Distribution: Yíyípadà Àbò nínú Ìpanilówó Banki](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution: Yíyípadà Àbò nínú Ìpanilówó Banki").
-- Sebastien Rousseau, (2023). [[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): Algorithmù fún Àbò nínú Àkókò Quantum](https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "
-[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): Algorithmù fún Àbò nínú Àkókò Quantum").
+- Sebastien Rousseau, (2023). [CRYSTALS-Kyber: Algorithmù fún Àbò nínú Àkókò Quantum](https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: Algorithmù fún Àbò nínú Àkókò Quantum").
 - Anonymous, (2026). [Algorithmù Shor ṣeé ṣe pẹ̀lú qubit átọ̀mù 10,000 péré tí a lè ṣètò padà ⧉](https://arxiv.org/abs/2603.28627 "Algorithmù Shor ṣeé ṣe pẹ̀lú qubit átọ̀mù 10,000 péré tí a lè ṣètò padà"). arXiv preprint arXiv:2603.28627.
 - Castelvecchi, D. (2026). [Àwọn àṣeyọrí quantum-computing jẹ́ ewu fún encryption ⧉](https://www.nature.com/articles/d41586-026-01054-1 "Àwọn àṣeyọrí quantum-computing jẹ́ ewu fún encryption"). Nature.
 - Phys.org, (2026). [Awọn kọmputa quantum ti o wúlò ni a le kọ pẹ̀lú qubit 10,000 péré ⧉](https://phys.org/news/2026-04-quantum-built-qubits-team.html "Awọn kọmputa quantum ti o wúlò ni a le kọ pẹ̀lú qubit 10,000 péré"). Phys.org.

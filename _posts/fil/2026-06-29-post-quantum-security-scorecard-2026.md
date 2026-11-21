@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Karagdagang babasahin:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">Ang KyberLib at ang Post-Quantum Banking Migration sa 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: Ang Safeguarding Algorithm sa Quantum Age</a>.</p>
 </aside>
+
 Hindi na isang research project ang post-quantum security. Tumitiktok na ang "supervisory clock" patungo sa huling bahagi ng 2020s enforcement deadline. Ang pagfa-finalise ng [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) at [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) ay nag-codify sa pamantayan para sa key encapsulation at digital signature.
 
 Inaasahan na ngayon ng mga regulatory body na lumampas sa mga pilot programme ang mga Tier-1 bank. Sa 2026, lumipat ang focus sa industrialisation ng mga pamantayang ito. Ang pagpalya na magpakita ng malinaw na migration path ay nagdadala ng malaking regulatory penalty sa ilalim ng [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) at posibleng personal liability para sa mga director na hindi pinapansin ang nakikinitang banta ng quantum-enabled decryption.

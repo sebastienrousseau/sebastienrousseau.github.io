@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>İlgili okumalar:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib ve 2026'da Post-Kuantum Bankacılık Göçü</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: Kuantum Çağında Koruma Algoritması</a>.</p>
 </aside>
+
 Post-kuantum güvenlik artık bir araştırma projesi değildir. "Denetim saati", 2020'lerin sonundaki uygulama son tarihlerine doğru tıklıyor. [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) ve [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) standartlarının nihai hale getirilmesi, anahtar kapsülleme ve dijital imzalar için standartları kodlamıştır.
 
 Düzenleyici kurumlar artık birinci kademe bankaların pilot programların ötesine geçmesini bekliyor. 2026'da odak bu standartların endüstrileşmesine kaymıştır. Net bir göç yolunu kanıtlayamamak, [Dijital Operasyonel Dayanıklılık Yasası (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) kapsamında ciddi düzenleyici cezalar ve kuantum-destekli şifre çözümünün öngörülebilir tehdidini görmezden gelen yöneticiler için olası kişisel sorumluluk getirir.

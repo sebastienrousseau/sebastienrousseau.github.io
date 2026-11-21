@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>อ่านเพิ่มเติม:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib และการย้ายธนาคารสู่ยุคหลังควอนตัมในปี 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: อัลกอริทึมปกป้องข้อมูลในยุคควอนตัม</a></p>
 </aside>
+
 ความปลอดภัยหลังควอนตัมไม่ใช่โครงการวิจัยอีกต่อไป "นาฬิกาฝ่ายกำกับ" กำลังเดินเข้าใกล้เส้นตายบังคับใช้ในช่วงปลายทศวรรษ 2020 การประกาศใช้ [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) และ [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) ได้กำหนดมาตรฐานสำหรับการห่อหุ้มกุญแจและลายเซ็นดิจิทัลอย่างเป็นทางการ
 
 หน่วยงานกำกับคาดหวังให้ธนาคาร Tier-1 ก้าวพ้นโครงการนำร่อง ในปี 2026 โฟกัสได้เปลี่ยนไปสู่การทำให้มาตรฐานเหล่านี้กลายเป็นกระบวนการอุตสาหกรรม การไม่สามารถแสดงเส้นทางการย้ายที่ชัดเจนนำมาซึ่งบทลงโทษทางการกำกับอย่างมีนัยสำคัญภายใต้ [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) และความรับผิดส่วนบุคคลที่อาจเกิดขึ้นกับกรรมการที่เพิกเฉยต่อภัยคุกคามการถอดรหัสด้วยควอนตัมซึ่งคาดการณ์ได้

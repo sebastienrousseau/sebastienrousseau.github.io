@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Пов'язане читання:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib і постквантова банківська міграція у 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: захисний алгоритм у квантову епоху</a>.</p>
 </aside>
+
 Постквантова безпека більше не є дослідницьким проєктом. «Наглядовий годинник» цокає у бік кінцевих термінів виконання у кінці 2020-х років. Завершення [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) та [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) кодифікувало стандарти для інкапсуляції ключів та цифрових підписів.
 
 Регуляторні органи тепер очікують, що банки Tier-1 вийдуть за межі пілотних програм. У 2026 фокус змістився на індустріалізацію цих стандартів. Невдача у демонстрації чіткого шляху міграції тягне за собою значні регуляторні штрафи згідно з [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) та потенційну особисту відповідальність для директорів, які ігнорують передбачувану загрозу квантово-увімкненої розшифровки.

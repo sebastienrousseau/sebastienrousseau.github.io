@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>قراءات ذات صلة:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib والانتقال المصرفي إلى ما بعد الكم في 2026</a>، <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: الخوارزمية الحارسة في عصر الكم</a>.</p>
 </aside>
+
 أمن ما بعد الكم لم يعد مشروع بحث. "ساعة الإشراف" تدق نحو مواعيد الإنفاذ النهائية في أواخر عقد 2020. واستكمال [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) و[NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) قنّن معايير تغليف المفاتيح والتواقيع الرقمية.
 
 تتوقع الجهات التنظيمية الآن من مصارف Tier-1 تجاوز البرامج التجريبية. في 2026، انتقل التركيز إلى تصنيع هذه المعايير. والإخفاق في إثبات مسار ترحيل واضح يحمل عقوبات تنظيمية كبيرة بموجب [قانون الصمود التشغيلي الرقمي (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) ومسؤولية شخصية محتملة على المديرين الذين يتجاهلون التهديد المتوقع لفك التشفير الكمومي.

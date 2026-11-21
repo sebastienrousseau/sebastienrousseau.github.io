@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>延伸阅读：</strong><a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib 与 2026 年的后量子银行业迁移</a>、<a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber：量子时代的守护算法</a>。</p>
 </aside>
+
 后量子安全不再是研究课题。"监管时钟"正在向 2020 年代后期的强制执行截止时点逼近。[NIST FIPS 203（ML-KEM）](https://csrc.nist.gov/pubs/fips/203/final)与 [NIST FIPS 204（ML-DSA）](https://csrc.nist.gov/pubs/fips/204/final)的定稿已经将密钥封装与数字签名的标准固化下来。
 
 监管机构现已要求一级银行走出试点阶段。2026 年的重点已经转向上述标准的产业化落地。无法出示清晰迁移路径，将在 [《数字运营韧性法案》（DORA）](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) 下招致重大监管处罚，并可能让无视量子解密这一可预见威胁的董事承担个人法律责任。
