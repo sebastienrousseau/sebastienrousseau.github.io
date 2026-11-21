@@ -342,8 +342,8 @@ export {
 } from './edge-routes.js';
 
 /** Pass a request through to origin, edge-caching it when it is a page. */
-async function passThrough(request, url) {
-  return withSecurityHeaders(await fetchOrigin(request, url), request);
+async function passThrough(request, url, ctx) {
+  return withSecurityHeaders(await fetchOrigin(request, url, ctx), request);
 }
 
 /**
@@ -419,7 +419,7 @@ async function routeByLocale(request, env, ctx, url) {
   const cookieHeader = request.headers.get('Cookie');
   const prefLang = getCookie(cookieHeader, COOKIE);
   if (prefLang === 'en') {
-    return passThrough(request, url);
+    return passThrough(request, url, ctx);
   }
   if (prefLang && activeLangs.has(prefLang)) {
     const redirected = new URL(url);
@@ -431,7 +431,7 @@ async function routeByLocale(request, env, ctx, url) {
   // is just deep-linking) — and respect ?lang=en as an opt-out signal.
   const overrideLang = url.searchParams.get('lang');
   if (overrideLang === 'en') {
-    return passThrough(request, url);
+    return passThrough(request, url, ctx);
   }
   if (overrideLang && activeLangs.has(overrideLang.toLowerCase())) {
     const redirected = new URL(url);
@@ -450,7 +450,7 @@ async function routeByLocale(request, env, ctx, url) {
   // `pref-lang`) or by deep-linking with `?lang=xx`. Auto-redirect on
   // Accept-Language alone surprises too many bilingual readers who
   // expect the English version by default; keeping discovery opt-in.
-  return passThrough(request, url);
+  return passThrough(request, url, ctx);
 }
 
 export default {
@@ -472,7 +472,7 @@ export default {
       if (renamed) return withSecurityHeaders(renamed, request);
     }
     if (!isPageNavigation(url.pathname)) {
-      return passThrough(request, url);
+      return passThrough(request, url, ctx);
     }
     return routeByLocale(request, env, ctx, url);
   },

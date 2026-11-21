@@ -9,14 +9,17 @@ Runs in build.sh after ``fix_lang_switcher.py`` (which reads the hreflang
 links this pass strips from the noindex locales) and after every sitemap
 writer, so nothing later re-adds what it removes. Order inside the pass:
 
-1. ``locale_indexing``: noindex + hreflang removal for the locales outside
+1. ``unique_meta``: titles and descriptions, unique among the pages that
+   are indexable before this pass applies the indexing policy. Running it
+   first keeps a noindexed locale's titles in its own language: a title
+   such as French ``Articles`` still gets its locale suffix instead of
+   matching the English page byte for byte.
+2. ``locale_indexing``: noindex + hreflang removal for the locales outside
    ``_data/seo/locale-indexing.json``.
-2. ``thin_listings``: noindex on tag and category term pages and on
+3. ``thin_listings``: noindex on tag and category term pages and on
    page 2+ of every listing.
-3. ``indexability.prune_sitemaps``: drops every ``<loc>`` that is now
+4. ``indexability.prune_sitemaps``: drops every ``<loc>`` that is now
    noindex (the whole of each of those locales, and the thin listings).
-4. ``unique_meta``: titles and descriptions, unique among the pages that
-   are still indexable.
 5. ``sitemap_lastmod``: the real modification date of each remaining URL.
 
 Idempotent: a second run changes nothing.
@@ -58,10 +61,10 @@ def main(public: Path = PUBLIC) -> int:
     if not (public / "index.html").is_file():
         print("finalize_seo: public/ not built", file=sys.stderr)
         return 1
+    rewritten = make_unique(_entries(public))
     noindexed, hreflang_removed = apply_locale_indexing(public)
     thin = apply_thin_noindex(public, frozenset(lang.code for lang in _lr.active()))
     pruned = prune_sitemaps(public)
-    rewritten = make_unique(_entries(public))
     dated, undated = refresh_lastmod(public, build_comprehensive_lastmod_index())
     print(
         f"finalize_seo: {noindexed} page(s) set noindex, {hreflang_removed} hreflang link(s) "

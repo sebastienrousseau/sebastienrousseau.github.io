@@ -28,6 +28,9 @@ import {
   _resetRedirectMapCache,
   tryRenamedUrlRedirect,
   tryRetiredPdf,
+  EDGE_HTML_STALE,
+  EDGE_STORED_AT,
+  fetchOrigin,
 } from './edge-routes.js';
 
 function makeRequest(url, opts = {}) {
@@ -299,5 +302,150 @@ test('tryRetiredPdf: malformed paths answer 410 Gone, noindex', async () => {
     assert.equal(res.status, 410, bad);
     assert.equal(res.headers.get('X-Robots-Tag'), 'noindex');
     assert.equal(res.headers.get('Cache-Control'), 'public, max-age=86400');
+  }
+});
+
+// ---------------------------------------------------------------------------
+// Stale-while-revalidate: with the Workers Cache API, a page is served from
+// the edge copy at once (up to EDGE_HTML_STALE old) and refreshed in the
+// background once it is older than EDGE_HTML_TTL.
+// ---------------------------------------------------------------------------
+
+function fakeCache() {
+  const store = new Map();
+  return {
+    store,
+    async match(req) {
+      const hit = store.get(req.url);
+      return hit ? hit.clone() : undefined;
+    },
+    async put(req, res) {
+      store.set(req.url, res);
+    },
+  };
+}
+
+function fakeCtx() {
+  const pending = [];
+  return { pending, waitUntil: (p) => pending.push(p), settle: () => Promise.all(pending) };
+}
+
+async function withOrigin(responses, fn) {
+  const calls = [];
+  const prev = globalThis.fetch;
+  globalThis.fetch = async (input, init) => {
+    calls.push({ url: typeof input === 'string' ? input : input.url, method: input.method, init });
+    const [status, body] = responses.length > 1 ? responses.shift() : responses[0];
+    return new Response(body, { status, headers: { 'cache-control': 'max-age=600' } });
+  };
+  try {
+    await fn(calls);
+  } finally {
+    globalThis.fetch = prev;
+  }
+}
+
+const PAGE = 'https://sebastienrousseau.com/about/';
+
+test('SWR: a miss fetches origin and stores the 200 for EDGE_HTML_STALE', async () => {
+  const cache = fakeCache();
+  const ctx = fakeCtx();
+  await withOrigin([[200, 'v1']], async (calls) => {
+    const res = await fetchOrigin(new Request(`${PAGE}?utm=x`), new URL(`${PAGE}?utm=x`), ctx, cache);
+    assert.equal(await res.text(), 'v1');
+    await ctx.settle();
+    assert.equal(calls.length, 1);
+    assert.deepEqual(calls[0].init, { cf: EDGE_HTML_CACHE });
+    const stored = cache.store.get(PAGE);
+    assert.equal(stored.headers.get('cache-control'), `public, max-age=${EDGE_HTML_STALE}`);
+    assert.ok(Number(stored.headers.get(EDGE_STORED_AT)) > 0);
+  });
+});
+
+test('SWR: a fresh hit is served without touching origin, timestamp stripped', async () => {
+  const cache = fakeCache();
+  const ctx = fakeCtx();
+  await withOrigin([[200, 'v1']], async (calls) => {
+    await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
+    await ctx.settle();
+    const res = await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
+    assert.equal(await res.text(), 'v1');
+    assert.equal(res.headers.get(EDGE_STORED_AT), null);
+    assert.equal(calls.length, 1);
+    const head = await fetchOrigin(new Request(PAGE, { method: 'HEAD' }), new URL(PAGE), ctx, cache);
+    assert.equal(head.status, 200);
+    assert.equal(await head.text(), '');
+  });
+});
+
+test('SWR: a stale hit is served at once and refreshed in the background', async () => {
+  const cache = fakeCache();
+  const ctx = fakeCtx();
+  await withOrigin([[200, 'v1'], [200, 'v2']], async (calls) => {
+    await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
+    await ctx.settle();
+    const old = cache.store.get(PAGE);
+    const headers = new Headers(old.headers);
+    headers.set(EDGE_STORED_AT, String(Date.now() - (EDGE_HTML_TTL + 1) * 1000));
+    cache.store.set(PAGE, new Response(await old.text(), { status: 200, headers }));
+    const res = await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
+    assert.equal(await res.text(), 'v1');
+    await ctx.settle();
+    assert.equal(calls.length, 2);
+    assert.equal(await cache.store.get(PAGE).clone().text(), 'v2');
+  });
+});
+
+test('SWR: non-200 origin answers and HEAD misses are never stored; failed refresh keeps the copy', async () => {
+  const cache = fakeCache();
+  const ctx = fakeCtx();
+  await withOrigin([[503, 'down']], async () => {
+    const res = await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
+    assert.equal(res.status, 503);
+    await fetchOrigin(new Request(PAGE, { method: 'HEAD' }), new URL(PAGE), ctx, cache);
+    await ctx.settle();
+    assert.equal(cache.store.size, 0);
+  });
+  const headers = new Headers({ [EDGE_STORED_AT]: '0' });
+  cache.store.set(PAGE, new Response('kept', { status: 200, headers }));
+  await withOrigin([[500, 'boom']], async () => {
+    const res = await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
+    assert.equal(await res.text(), 'kept');
+    await ctx.settle();
+    assert.equal(await cache.store.get(PAGE).clone().text(), 'kept');
+  });
+  const prev = globalThis.fetch;
+  globalThis.fetch = async () => { throw new Error('network'); };
+  try {
+    await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
+    await ctx.settle();
+    assert.equal(await cache.store.get(PAGE).clone().text(), 'kept');
+  } finally {
+    globalThis.fetch = prev;
+  }
+});
+
+test('SWR: off without a cache or ctx, and never for assets', async () => {
+  await withOrigin([[200, 'v']], async (calls) => {
+    await fetchOrigin(new Request(PAGE), new URL(PAGE));
+    await fetchOrigin(new Request(PAGE), new URL(PAGE), { waitUntil: 'no' }, fakeCache());
+    await fetchOrigin(new Request('https://sebastienrousseau.com/main.css'), new URL('https://sebastienrousseau.com/main.css'), fakeCtx(), fakeCache());
+    assert.deepEqual(calls.map((c) => c.init), [{ cf: EDGE_HTML_CACHE }, { cf: EDGE_HTML_CACHE }, undefined]);
+  });
+});
+
+test('handler: uses caches.default when the runtime provides it', async () => {
+  const cache = fakeCache();
+  const ctx = fakeCtx();
+  globalThis.caches = { default: cache };
+  try {
+    await withOrigin([[200, 'v1']], async () => {
+      const res = await handler.fetch(makeRequest(PAGE), {}, ctx);
+      assert.equal(res.headers.get('cache-control'), 'public, max-age=0, must-revalidate');
+      await ctx.settle();
+      assert.ok(cache.store.has(PAGE));
+    });
+  } finally {
+    delete globalThis.caches;
   }
 });

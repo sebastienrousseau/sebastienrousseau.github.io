@@ -12,13 +12,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+Search recovery, second attempt. Search Console shows a site-wide demotion from 11 September 2026 (daily impressions from about 1,000 to about 20, English included) that followed the late-August surge of machine-translated pages and URL renames, and v0.0.30 did not reverse it. See [ADR-0015](docs/adr/0015-url-freeze-and-english-only-index.md).
+
 ### Added
 
+- **URL freeze**: `check_url_freeze.py` runs on every pull request and fails when a published `_posts` page is deleted or renamed or a `slugs.json` value changes. Replayed against 26 August to 3 September it reports 5,180 such changes. `translate_post.py --rederive-slugs` now refuses to rename a published locale post.
 - **Quantum-safe readiness checklist (free PDF)**: a 20-step first-assessment checklist built on EPAA's November 2026 paper *From Awareness to Action*, at `/resources/quantum-safe-readiness-checklist.pdf`, with a landing page at `/resources-quantum-safe-readiness-checklist/` (direct download, or the same Formspree form as the pacs.008 checklist, tagged with its own `_resource`). The 16 November article links to it. It is my own reading of the paper, checked claim by claim against the paper's text, not a copy: the EPAA papers carry no reuse grant, so they stay links to EPAA's site.
 
 ### Changed
 
+- **English is the only indexed locale**: `_data/seo/locale-indexing.json` lists `en` only. All 34 locales stay published and in the language switcher with `noindex, follow`, out of the sitemaps and out of hreflang clusters. A locale returns once its translations are reviewed by a person.
+- **Thin listings are noindex**: tag and category term pages and page 2+ of every listing carry `noindex, follow` (`postbuild_lib/thin_listings.py`), which covers most of the 939 "Crawled - currently not indexed" URLs. Hubs, first pages and topics stay indexable.
+- **Unique titles run before the indexing policy**: `finalize_seo.py` disambiguates titles before marking locales noindex, so a noindexed locale keeps its own-language title (French `Articles` keeps its locale suffix instead of matching the English page).
+- **Pages are served stale-while-revalidate at the edge**: the Worker keeps each 200 page in the Cache API for 7 days, serves it at once and refreshes it in the background after 10 minutes, so a crawler no longer waits on GitHub Pages for rarely visited URLs. Live once the Worker is redeployed.
 - **Old PDF links land on their article**: `/api/pdf/<slug>.pdf` and `/api/pdf/<lang>/<slug>.pdf` now answer 301 to `/<slug>/` and `/<lang>/<slug>/`, through the renamed-URL map so a renamed article is still one hop. 0.0.44 answered 410 for the whole prefix, which dropped the value of any inbound link to a PDF and left a reader on an error page. Paths under `/api/pdf/` that were never PDF URLs still answer 410 Gone. The origin is never touched. Live once the lang-router Worker is redeployed.
+
+### Fixed
+
+- **Content links point at final URLs**: 4,651 links in 1,480 source files (mostly translations, plus front-matter `id` and `permalink` values) named retired URLs. `scripts/seo_and_audit/check_stale_links.py --fix` rewrote them to their final targets, and a unit test fails if one is committed again.
 
 ---
 
