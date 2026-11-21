@@ -1451,31 +1451,9 @@ def test_splice_fr_urls_no_op_when_all_candidates_already_present(tmp_path, monk
     monkeypatch.chdir(tmp_path)
     # No _posts → only home + static slugs end up as candidates.
     # Pre-populate the sitemap with every static slug + home so nothing is missing.
-    statics = (
-        "about",
-        "articles",
-        "papers",
-        "projects",
-        "topics",
-        "tags",
-        "playlists",
-        "contact",
-        "accessibility",
-        "privacy",
-        "terms",
-        "made-with-static-site-generator",
-        "made-with-static-site-generator",
-        "resources-pacs008-checklist",
-        # 5-item nav re-architecture statics
-        "suite",
-        "research",
-        "library",
-        "speaking",
-        "case-studies",
-        "404",
-        "offline",
-        "thanks",
-    )
+    # Read the list from feeds.py so a new static page never desynchronises it.
+    from postbuild_lib.feeds import _STATIC_SLUGS as statics
+
     locs = ["<url><loc>https://sebastienrousseau.com/</loc></url>"]
     locs.extend(f"<url><loc>https://sebastienrousseau.com/{s}/</loc></url>" for s in statics)
     topics = (
