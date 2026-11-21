@@ -27,6 +27,7 @@ import {
   getRedirectMap,
   _resetRedirectMapCache,
   tryRenamedUrlRedirect,
+  tryRetiredPdf,
 } from './edge-routes.js';
 
 function makeRequest(url, opts = {}) {
@@ -258,4 +259,45 @@ test('handler: renamed-URL map is skipped for POST and for unmapped paths', asyn
     assert.equal(calls.length, 2);
   });
   _resetRedirectMapCache();
+});
+
+// ---------------------------------------------------------------------------
+// Retired /api/pdf/ route (#515): each old PDF URL 301s to its article so
+// inbound links keep their value; anything that was never a PDF URL is 410.
+// ---------------------------------------------------------------------------
+
+const PDF = 'https://sebastienrousseau.com/api/pdf/';
+
+test('tryRetiredPdf: not a PDF path → null', async () => {
+  assert.equal(await tryRetiredPdf(new URL('https://sebastienrousseau.com/api/event'), {}), null);
+});
+
+test('tryRetiredPdf: EN and locale PDFs 301 to the article, query dropped', async () => {
+  _resetRedirectMapCache();
+  const en = await tryRetiredPdf(new URL(`${PDF}2026-11-17-treasury-automation-half-done.pdf?utm=x`), {});
+  assert.equal(en.status, 301);
+  assert.equal(en.headers.get('location'), 'https://sebastienrousseau.com/2026-11-17-treasury-automation-half-done/');
+  const fr = await tryRetiredPdf(new URL(`${PDF}zh-hans/2026-11-17-caiwu-zidonghua.pdf`), {});
+  assert.equal(fr.headers.get('location'), 'https://sebastienrousseau.com/zh-hans/2026-11-17-caiwu-zidonghua/');
+});
+
+test('tryRetiredPdf: a renamed article resolves to its final URL in one hop', async () => {
+  _resetRedirectMapCache();
+  const res = await tryRetiredPdf(
+    new URL(`${PDF}zh-hant/2026-07-08-global-corporate-standard-iso-20022-swift-2026.pdf`),
+    assetsEnv(REDIRECTS_PAYLOAD),
+  );
+  assert.equal(res.status, 301);
+  assert.equal(res.headers.get('location'),
+    'https://sebastienrousseau.com/zh-hant/2026-07-08-cong-baowen-dao-ditu-iso-20022-swift-tw/');
+  _resetRedirectMapCache();
+});
+
+test('tryRetiredPdf: malformed paths answer 410 Gone, noindex', async () => {
+  for (const bad of ['index.html.pdf', 'a/b/c.pdf', 'UPPER.pdf', 'slug', 'x/slug.pdf', '']) {
+    const res = await tryRetiredPdf(new URL(PDF + bad), {});
+    assert.equal(res.status, 410, bad);
+    assert.equal(res.headers.get('X-Robots-Tag'), 'noindex');
+    assert.equal(res.headers.get('Cache-Control'), 'public, max-age=86400');
+  }
 });

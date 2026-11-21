@@ -160,6 +160,38 @@ export async function resolveRenamed(redirect, env) {
   return tryRenamedUrlRedirect(target, await getRedirectMap(env)) || redirect;
 }
 
+// Retired /api/pdf/ route (#515). It served `/api/pdf/<slug>.pdf` and
+// `/api/pdf/<lang>/<slug>.pdf`, with the same slug and locale as the
+// article page. Each such URL now 301s to that article (through the
+// renamed-URL map, so one hop to the final URL), which keeps the value of
+// any inbound link and lands a reader on the page. Anything else under the
+// prefix was never a PDF URL: 410 Gone, so crawlers drop it.
+const PDF_PREFIX = '/api/pdf/';
+const PDF_RE = /^\/api\/pdf\/(?:([a-z]{2,3}(?:-[a-z]{2,4})?)\/)?([a-z0-9][a-z0-9-]{0,127})\.pdf$/;
+
+function pdfGone() {
+  return new Response('Gone\n', {
+    status: 410,
+    headers: {
+      'Content-Type': 'text/plain; charset=utf-8',
+      'Cache-Control': 'public, max-age=86400',
+      'X-Robots-Tag': 'noindex',
+    },
+  });
+}
+
+/** 301 to the article for an old PDF URL, 410 for other /api/pdf/ paths, else null. */
+export async function tryRetiredPdf(url, env) {
+  if (!url.pathname.startsWith(PDF_PREFIX)) return null;
+  const m = PDF_RE.exec(url.pathname);
+  if (!m) return pdfGone();
+  const target = new URL(url);
+  target.pathname = m[1] ? `/${m[1]}/${m[2]}/` : `/${m[2]}/`;
+  target.search = '';
+  return tryRenamedUrlRedirect(target, await getRedirectMap(env))
+    || Response.redirect(target.toString(), 301);
+}
+
 /** Fetch from origin, asking the edge to cache the response if it is a page. */
 export function fetchOrigin(request, url) {
   return isEdgeCacheable(request, url.pathname)

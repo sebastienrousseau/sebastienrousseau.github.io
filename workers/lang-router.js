@@ -327,6 +327,7 @@ import {
   tryRenamedUrlRedirect,
   trySlugRedirects,
   resolveRenamed,
+  tryRetiredPdf,
 } from './edge-routes.js';
 export {
   isHtmlPagePath,
@@ -368,28 +369,11 @@ export function recordRedirect(request, env, ctx, fromLang, toLang) {
   }
 }
 
-// Routes this site has retired for good. /api/pdf/* proxied a PDF
-// renderer that was removed in #515; Google still holds ~680 of those
-// URLs and kept receiving 5xx from the origin. 410 tells crawlers the
-// resource is gone on purpose, so they drop it instead of retrying.
-const RETIRED_PREFIXES = ['/api/pdf/'];
-
-function tryRetiredRoute(url) {
-  if (!RETIRED_PREFIXES.some((p) => url.pathname.startsWith(p))) return null;
-  return new Response('Gone\n', {
-    status: 410,
-    headers: {
-      'Content-Type': 'text/plain; charset=utf-8',
-      'Cache-Control': 'public, max-age=86400',
-      'X-Robots-Tag': 'noindex',
-    },
-  });
-}
-
 // API endpoints that skip locale routing and carry the API security
 // headers. Each try* returns null when the request is not its route.
 async function tryApiRoutes(request, env, ctx) {
-  const retired = tryRetiredRoute(new URL(request.url));
+  // Retired /api/pdf/ route: 301 to the article, or 410 (edge-routes.js).
+  const retired = await tryRetiredPdf(new URL(request.url), env);
   if (retired) return withApiSecurityHeaders(retired);
   // ActivityPub handler — fields the four Fediverse endpoints before
   // the locale + CSP path runs. Returns null when the request isn't

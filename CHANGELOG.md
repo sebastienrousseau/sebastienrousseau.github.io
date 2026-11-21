@@ -12,6 +12,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- **Old PDF links land on their article**: `/api/pdf/<slug>.pdf` and `/api/pdf/<lang>/<slug>.pdf` now answer 301 to `/<slug>/` and `/<lang>/<slug>/`, through the renamed-URL map so a renamed article is still one hop. 0.0.44 answered 410 for the whole prefix, which dropped the value of any inbound link to a PDF and left a reader on an error page. Paths under `/api/pdf/` that were never PDF URLs still answer 410 Gone. The origin is never touched. Live once the lang-router Worker is redeployed.
+
 ---
 
 ## [0.0.44] - 2026-11-20
