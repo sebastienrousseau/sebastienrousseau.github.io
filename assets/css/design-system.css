@@ -140,7 +140,7 @@ main.content > .wrap:has(> .contact-layout) { max-width: var(--max); }
    only that layout carries. Inline style="" cannot stand in for them: the
    page CSP has no 'unsafe-inline' for styles, so the browser drops it. */
 .ap-form { display: flex; flex-direction: column; gap: 20px; }
-.ap-form-narrow { max-width: 480px; margin-block: 32px; }
+.ap-form-narrow { max-width: var(--measure); margin-block: 32px; }
 .ap-form-row { display: flex; flex-direction: column; gap: 6px; }
 .ap-form-row label { font-size: var(--fs-meta); font-weight: 600; color: var(--ink); letter-spacing: -.005em; }
 .ap-form input[type=text], .ap-form input[type=email], .ap-form select, .ap-form textarea {
