@@ -147,9 +147,9 @@ A forrás az eredményt a történelemhez is viszonyítja. 1978 óta az első ja
 | :--- | :--- | :--- | :--- |
 | **Gömbelhelyezési kitevő** | Kabatianskii–Levenshtein-korlát: 0,59905576... | Legalább olyan erős, mint a gömbi kódok korlátai (Cohn–Zhao) | Bizonyított pontos aszimptotikus ütem, Afkhami-Jeddi és mtsai. (2020) sejtése szerint |
 | **A korlát véglegessége** | Csak alacsonyabb rendű tényezők finomításai | Nyitott kérdés a magas dimenziós aszimptotikus résről | Pontosan illeszkedő alsó korlát: egyetlen segédfüggvény sem verheti meg ezt az ütemet |
-| **Fourier-féle előjel-határozatlanság** | Különálló előjelkorlátok ($A^+(d) < A^-(d)$) | Anti-önfourier tesztfüggvényekhez kötve | Aszimptotikusan megoldva; az előjel-határozatlanságot Mellin-tükrözés irányítja |
+| **Fourier-féle előjel-határozatlanság** | Különálló előjelkorlátok (A⁺(d) < A⁻(d)) | Anti-önfourier tesztfüggvényekhez kötve | Aszimptotikusan megoldva; az előjel-határozatlanságot Mellin-tükrözés irányítja |
 | **Hibajavító kódok** | Klasszikus gömbi és bináris kódkorlátok | Aszimptotikusan csatolva az elhelyezési korlátokhoz | Exponenciális tényezős javulás minden rögzített távolságú paraméterre |
-| **Módszertani plafon** | Polinomiális tényezők numerikus optimalizálása | Az $f \in \mathcal{A}_d$ tesztfüggvények nyitott optimalizálása | Bizonyított matematikai plafon: további nyereséghez a Cohn-Elkies-módszeren kívüli eszközök kellenek |
+| **Módszertani plafon** | Polinomiális tényezők numerikus optimalizálása | Az f ∈ 𝒜\_d tesztfüggvények nyitott optimalizálása | Bizonyított matematikai plafon: további nyereséghez a Cohn-Elkies-módszeren kívüli eszközök kellenek |
 
 ## Miért változtatja meg a kérdést az illeszkedő alsó korlát
 
@@ -237,11 +237,11 @@ A Cohn-Elkies-féle lecsengési ütem magas dimenziós pontos meghatározása é
 
 ### Tiszta matematika és diszkrét geometria
 
-A magas dimenziós geometriával és harmonikus analízissel foglalkozó matematikusok számára a Cohn-Elkies-féle pontos lecsengési ütem meghatározása átrendezi a kutatási terepet. Mivel az illeszkedő alsó korlát bizonyítja, hogy $\mathcal{A}_d$ egyetlen segédfüggvénye sem verheti meg az új kitevőt, a kutatók abbahagyhatják a jobb radiális tesztfüggvények keresését a klasszikus lineáris programozási kereten belül. A sűrűbb gömbelhelyezések vagy szorosabb univerzális korlátok felé tett előrelépésnek mostantól nemlineáris programozási technikákat, magasabb rendű szemidefinit hierarchiákat vagy gyökeresen eltérő geometriai konstrukciókat kell feltárnia.
+A magas dimenziós geometriával és harmonikus analízissel foglalkozó matematikusok számára a Cohn-Elkies-féle pontos lecsengési ütem meghatározása átrendezi a kutatási terepet. Mivel az illeszkedő alsó korlát bizonyítja, hogy 𝒜\_d egyetlen segédfüggvénye sem verheti meg az új kitevőt, a kutatók abbahagyhatják a jobb radiális tesztfüggvények keresését a klasszikus lineáris programozási kereten belül. A sűrűbb gömbelhelyezések vagy szorosabb univerzális korlátok felé tett előrelépésnek mostantól nemlineáris programozási technikákat, magasabb rendű szemidefinit hierarchiákat vagy gyökeresen eltérő geometriai konstrukciókat kell feltárnia.
 
 ### Kriptográfia és rácsalapú biztonság
 
-A rácsalapú kriptográfia, amely az olyan posztkvantum szabványok magját alkotja, mint az ML-KEM és az ML-DSA, nagyban támaszkodik a magas dimenziós euklideszi rácsokban a legrövidebb vagy legközelebbi vektor megtalálásának feltételezett nehézségére. A 3SAT-ból induló közvetlen redukció, amely $n^{1/400}$ tényezős nehézséget állapít meg az euklideszi legközelebbi vektor problémára (CVP), a gömbelhelyezések és gömbi kódok szorosabb exponenciális plafonjaival együtt megszilárdítja a legrosszabb esetről átlagos esetre történő rácsredukciók elméleti alapjait, anélkül hogy gyengítené a konkrét biztonsági paramétereket.
+A rácsalapú kriptográfia, amely az olyan posztkvantum szabványok magját alkotja, mint az ML-KEM és az ML-DSA, nagyban támaszkodik a magas dimenziós euklideszi rácsokban a legrövidebb vagy legközelebbi vektor megtalálásának feltételezett nehézségére. A 3SAT-ból induló közvetlen redukció, amely n\^(1/400) tényezős nehézséget állapít meg az euklideszi legközelebbi vektor problémára (CVP), a gömbelhelyezések és gömbi kódok szorosabb exponenciális plafonjaival együtt megszilárdítja a legrosszabb esetről átlagos esetre történő rácsredukciók elméleti alapjait, anélkül hogy gyengítené a konkrét biztonsági paramétereket.
 
 ### Automatikus tételbizonyítás és alapmodellek
 
@@ -267,7 +267,7 @@ Cohn és Gonçalves kimutatta, hogy a komplementer Fourier-féle előjel-határo
 
 **Veszélyezteti ez az eredmény a rácsalapú kriptográfiát?**
 
-Nem. Bár a tétel élesíti a magas dimenziós gömbelhelyezés sűrűségére vonatkozó felső korlátokat, és $n^{1/400}$ tényezős nehézséget állapít meg a legközelebbi vektor problémára, polinomiális idejű rácsredukciós algoritmusokat nem ad. A gyakorlati rácsalapú kriptorendszerek az ismert kvantum- és klasszikus támadásokkal szemben biztonságosak maradnak.
+Nem. Bár a tétel élesíti a magas dimenziós gömbelhelyezés sűrűségére vonatkozó felső korlátokat, és n\^(1/400) tényezős nehézséget állapít meg a legközelebbi vektor problémára, polinomiális idejű rácsredukciós algoritmusokat nem ad. A gyakorlati rácsalapú kriptorendszerek az ismert kvantum- és klasszikus támadásokkal szemben biztonságosak maradnak.
 
 ## Hivatkozások
 

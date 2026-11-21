@@ -127,9 +127,9 @@ Prestasi pendekatan itu sudah luar biasa. Jam atom konvensional terbaik boleh be
 | :--- | :--- | :--- |
 | **Mekanisme fizikal** | Peralihan petala elektron (sesium/strontium) | Peralihan proton/neutron di dalam nukleus torium-229 |
 | **Medium penduga** | Gelombang mikro atau laser optik pada elektron valens | Laser ultraungu vakum pada nukleus yang tertanam dalam hablur |
-| **Substrat perumah** | Sel gas atau perangkap kekisi optik yang disejukkan laser | Hablur pepejal kalsium fluorida ($CaF_2$) |
-| **Prestasi semasa** | Berbilion tahun untuk bertambah/berkurang $\le 1$ saat | Menyamai kejituan jam atom dalam pencarian jirim gelap |
-| **Kestabilan sasaran** | Piawaian antarabangsa yang mantap ($10^{-18}$) | Peningkatan kestabilan satu tertib magnitud yang diunjurkan |
+| **Substrat perumah** | Sel gas atau perangkap kekisi optik yang disejukkan laser | Hablur pepejal kalsium fluorida (CaF₂) |
+| **Prestasi semasa** | Berbilion tahun untuk bertambah/berkurang ≤ 1 saat | Menyamai kejituan jam atom dalam pencarian jirim gelap |
+| **Kestabilan sasaran** | Piawaian antarabangsa yang mantap (10⁻¹⁸) | Peningkatan kestabilan satu tertib magnitud yang diunjurkan |
 | **Bentuk perkakasan** | Radas vakum makmal yang besar dan halus | Potensi unit lapangan padat, lasak dan berasaskan keadaan pepejal |
 
 Jam baharu ini mengalihkan tempat lompatan berlaku. Sebaliknya daripada elektron dalam petala, ia menggunakan laser untuk menyebabkan proton dan neutron melompat antara aras tenaga di dalam nukleus sesuatu atom, dalam kes ini torium-229. Masa dalam jam nuklear dikira dengan memantau cara laser berkuasa tinggi berinteraksi dengan nukleus atom.
@@ -226,7 +226,7 @@ Jika seni bina hablur pepejal kalsium fluorida terbukti kurang besar dan kurang 
 
 ### Fizik asas dan astrofizik
 
-Oleh sebab aras tenaga nuklear bergantung secara langsung pada daya kuat dan pemalar gandingan elektromagnet $\alpha$, jam nuklear menawarkan kepekaan baharu untuk menguji sama ada pemalar fizik asas berubah sepanjang masa kosmik dan untuk menyiasat calon jirim gelap.
+Oleh sebab aras tenaga nuklear bergantung secara langsung pada daya kuat dan pemalar gandingan elektromagnet α, jam nuklear menawarkan kepekaan baharu untuk menguji sama ada pemalar fizik asas berubah sepanjang masa kosmik dan untuk menyiasat calon jirim gelap.
 
 ## Kesimpulan
 

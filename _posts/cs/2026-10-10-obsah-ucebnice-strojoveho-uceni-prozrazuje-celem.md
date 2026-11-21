@@ -158,7 +158,7 @@ Autoři také vysvětlují, proč obor leží tam, kde leží. Protože úspěch
 
 | Rozměr | Časová složitost | Paměťová složitost | Výběrová složitost |
 | :--- | :--- | :--- | :--- |
-| **Operační definice** | Asymptotická doba běhu potřebná k vydání hypotézy $h$ | Paměťová stopa nezbytná při trénování a vyhodnocování | Počet trénovacích příkladů $m$ potřebných k naučení rodiny konceptů |
+| **Operační definice** | Asymptotická doba běhu potřebná k vydání hypotézy *h* | Paměťová stopa nezbytná při trénování a vyhodnocování | Počet trénovacích příkladů *m* potřebných k naučení rodiny konceptů |
 | **Řídicí teorie** | Výpočetní složitost (P vs NP, obtížnost trénování) | Paměťová omezení architektury a lokalita cache | Učení PAC, Rademacherova složitost a VC dimenze |
 | **Nákladový dopad** | Serverový výpočetní výkon a rozpočet na inferenci GPU/CPU | Kapacita RAM a SRAM na čipu | Náklady na sběr dat, anotaci a štítkování |
 | **Teoretická role** | Měří efektivitu algoritmu z hlediska doby běhu | Měří efektivitu využití paměti | Určuje chybu zobecnění a meze pro neviděná data |

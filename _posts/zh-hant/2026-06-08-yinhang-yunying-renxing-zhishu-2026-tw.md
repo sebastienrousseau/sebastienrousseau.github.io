@@ -13,7 +13,7 @@ description: "2026 年銀行業營運韌性指數:整合 AI 風險、雲端集�
 format-detection: "telephone=no"
 hreflang: "zh-hant"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/zh-hant/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+id: "https://sebastienrousseau.com/zh-hant/2026-06-08-yinhang-yunying-renxing-zhishu-2026-tw"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/zh-hant/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+permalink: "https://sebastienrousseau.com/zh-hant/2026-06-08-yinhang-yunying-renxing-zhishu-2026-tw"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "銀行營運韌性, DORA, AI 風險, 雲端集中, 量子風險, 支付�
 excerpt: "2026 年銀行業營運韌性指數——將 AI 風險、雲端集中、抗量子遷移、支付連續性與關鍵第三方依賴整合為單一營運韌性儀表板,讓董事會與主管機關都能一目了然。"
 theme-color: "0, 83, 191"
 title: "2026 年銀行業營運韌性指數:AI、雲端、量子、支付與第三方集中風險"
-url: "https://sebastienrousseau.com/zh-hant/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+url: "https://sebastienrousseau.com/zh-hant/2026-06-08-yinhang-yunying-renxing-zhishu-2026-tw"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/rss.xml"
 category: "Risk"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>抗量子遷移是營運韌性指標,而非單純安全指標。</strong>今日暴露的長期保存資料,將通不過明日的韌性檢驗。</li>
   <li><strong>第三方集中風險如今已具系統性。</strong>單一超大規模服務商、單一 PSP、單一 LLM 供應商的依賴,在韌性儀表板上等同於單點故障。</li>
 </ul>
-<p class="post-lead-related"><strong>延伸閱讀:</strong><a href="https://sebastienrousseau.com/zh-hant/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA、EU AI 法與資料主權:銀行 2026 年法遵堆疊</a>、<a href="https://sebastienrousseau.com/zh-hant/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">2026 年雲端原生銀行業:Kubernetes、DORA、主權,以及 VM 與容器分界的終結</a>。</p>
+<p class="post-lead-related"><strong>延伸閱讀:</strong><a href="https://sebastienrousseau.com/zh-hant/2026-05-28-dora-eu-ai-fa-an-yu-shuju-zhuquan-tw/index.html">DORA、EU AI 法與資料主權:銀行 2026 年法遵堆疊</a>、<a href="https://sebastienrousseau.com/zh-hant/2026-05-20-yun-yuansheng-yinhang-2026-tw/index.html">2026 年雲端原生銀行業:Kubernetes、DORA、主權,以及 VM 與容器分界的終結</a>。</p>
 </aside>
 <!-- lead-end -->
 

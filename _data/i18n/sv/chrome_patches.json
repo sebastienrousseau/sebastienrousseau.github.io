@@ -75,7 +75,7 @@
     ],
     [
       "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
-      "<li><a href=\"/sv/publikationer/index.html\">Publikationer</a></li>"
+      "<li><a href=\"/sv/forskning/index.html\">Publikationer</a></li>"
     ],
     [
       "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
@@ -127,7 +127,7 @@
     ],
     [
       "<a href=\"?/papers/index\\.html\"?>Papers</a>",
-      "<a href=\"/sv/publikationer/index.html\">Publikationer</a>"
+      "<a href=\"/sv/forskning/index.html\">Publikationer</a>"
     ],
     [
       "<a href=\"?/tags/index\\.html\"?>Tags</a>",

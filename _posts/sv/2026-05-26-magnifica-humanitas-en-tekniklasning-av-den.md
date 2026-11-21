@@ -13,7 +13,7 @@ description: "Den 25 maj 2026 utfärdade Påve Leo XIV Magnifica Humanitas, den 
 format-detection: "telephone=no"
 hreflang: "sv"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/sv/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+id: "https://sebastienrousseau.com/sv/2026-05-26-magnifica-humanitas-en-tekniklasning-av-den"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/sv/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+permalink: "https://sebastienrousseau.com/sv/2026-05-26-magnifica-humanitas-en-tekniklasning-av-den"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -40,7 +40,7 @@ tags: "Magnifica Humanitas, Påve Leo XIV, AI-etik, kvantdatorer, teknikhistoria
 excerpt: "Den 25 maj 2026 utfärdade Påve Leo XIV Magnifica Humanitas — den första påvliga encyklikan om artificiell intelligens. Läst inifrån teknikbranschen, inte som doktrin utan som ett etiskt ramverk, ekar den varje moralisk oro som följde tåget, bilen, kärnkraften och internet, och landar i hopp."
 theme-color: "0, 83, 191"
 title: "Magnifica Humanitas: en teknikläsning av den första AI-encyklikan"
-url: "https://sebastienrousseau.com/sv/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+url: "https://sebastienrousseau.com/sv/2026-05-26-magnifica-humanitas-en-tekniklasning-av-den"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/rss.xml"
 category: "Technology"
@@ -161,7 +161,7 @@ Detta är mönstret som *Magnifica Humanitas* pekar på, och det är därför do
 
 Två av encyklikans specifika bekymmer landar direkt på ingenjörskonsten i finansiella system, och båda förtjänar en ingenjörs svar snarare än en troendes.
 
-Det första är **maktkoncentrationen i privata, transnationella händer**. Encyklikans observation att huvuddrivkrafterna bakom denna teknik nu är privata aktörer vars kapacitet överstiger många staters är inget teologiskt anspråk; det är en korrekt beskrivning av AI-landskapet 2026, och det är precis det bekymmer som löper genom den regulatoriska arkitektur som branschen för närvarande kämpar för att möta — EU AI Act:s skyldigheter för högrisksystem som blir verkställbara från den 2 augusti 2026, DORA:s bestämmelser om koncentrationsrisk hos tredje part, och de rörelser för suverän moln och suveränt styrplan som behandlas i [molnarkitektur](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "Den bästa molninfrastrukturarkitekturen 2026") och [agentisk ingenjörskonst](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "Agentisk ingenjörskonst för banker") på denna sajt. Encyklikan och EU AI Act är, anmärkningsvärt nog, oroliga för samma sak: att förmåga utan ansvarsskyldighet koncentrerar makt på sätt som undgår demokratisk styrning. Den ena säger det på socialdoktrinens språk och den andra på överensstämmelsebedömningarnas. Diagnosen är identisk.
+Det första är **maktkoncentrationen i privata, transnationella händer**. Encyklikans observation att huvuddrivkrafterna bakom denna teknik nu är privata aktörer vars kapacitet överstiger många staters är inget teologiskt anspråk; det är en korrekt beskrivning av AI-landskapet 2026, och det är precis det bekymmer som löper genom den regulatoriska arkitektur som branschen för närvarande kämpar för att möta — EU AI Act:s skyldigheter för högrisksystem som blir verkställbara från den 2 augusti 2026, DORA:s bestämmelser om koncentrationsrisk hos tredje part, och de rörelser för suverän moln och suveränt styrplan som behandlas i [molnarkitektur](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "Den bästa molninfrastrukturarkitekturen 2026") och [agentisk ingenjörskonst](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "Agentisk ingenjörskonst för banker") på denna sajt. Encyklikan och EU AI Act är, anmärkningsvärt nog, oroliga för samma sak: att förmåga utan ansvarsskyldighet koncentrerar makt på sätt som undgår demokratisk styrning. Den ena säger det på socialdoktrinens språk och den andra på överensstämmelsebedömningarnas. Diagnosen är identisk.
 
 Det andra är **kvantberäkning**, som encyklikan inte namnger men vars etiska form den exakt föregriper. Premissen för den postkvant-migration som behandlas i [Att säkra storboken](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Att säkra storboken") är att en förmåga som nu är under konstruktion — en kryptografiskt relevant kvantdator — när den anländer retroaktivt kommer att blottlägga allt som krypterats under dagens antaganden. "Harvest now, decrypt later" är, i ett sekulärt register, precis den typ av makt-utan-visdom som encyklikan varnar för: en teknik vars konsekvenser anländer på en tidslinje som springer ifrån förberedelsen, i händerna på dem med resurser att utöva den först. Encyklikans envetenhet med att ställa frågan "vart är vi på väg?" innan följden av nödsituationer dikterar vägen är, för en säkerhetsingenjör, god praxis återgiven som moralfilosofi.
 
@@ -231,8 +231,8 @@ Optimistiskt, men inte naivt. Argumentet är att AI:s och kvantberäkningens fra
 
 - Sebastien Rousseau, (2026). [Lucys USB-minne, återbesökt: kunskapsöverföring, AI och kvant](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html "Lucys USB-minne, återbesökt").
 - Sebastien Rousseau, (2026). [Att säkra storboken: en styrelseguide till postkvant-migration för företagsfinans](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Att säkra storboken").
-- Sebastien Rousseau, (2026). [Agentisk ingenjörskonst för banker: en ritning för 2026](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "Agentisk ingenjörskonst för banker").
-- Sebastien Rousseau, (2026). [Den bästa molninfrastrukturarkitekturen 2026](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "Den bästa molninfrastrukturarkitekturen 2026").
+- Sebastien Rousseau, (2026). [Agentisk ingenjörskonst för banker: en ritning för 2026](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "Agentisk ingenjörskonst för banker").
+- Sebastien Rousseau, (2026). [Den bästa molninfrastrukturarkitekturen 2026](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "Den bästa molninfrastrukturarkitekturen 2026").
 - Påve Leo XIV, (2026). [Encyklikabrev *Magnifica Humanitas* om skyddet av den mänskliga personen i tiden av artificiell intelligens ⧉](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html "Magnifica Humanitas — fullständig text, Vatican.va"). Heliga stolen.
 - Påve Leo XIII, (1891). [Encyklikabrev *Rerum Novarum* om kapital och arbete ⧉](https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_15051891_rerum-novarum.html "Rerum Novarum — Vatican.va"). Heliga stolen.
 - Vatican News, (2026). [Påve Leo XIV:s första encyklika *Magnifica humanitas* publiceras den 25 maj ⧉](https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html "Vatican News — Magnifica Humanitas"). Vatican News.

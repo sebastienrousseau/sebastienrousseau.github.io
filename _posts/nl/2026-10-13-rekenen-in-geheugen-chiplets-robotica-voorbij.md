@@ -129,13 +129,13 @@ In de klassieke digitale informatica vraagt een matrixinproduct om duizenden gew
 
 In-memoryarchitecturen vervangen deze digitale gegevensoverdracht door de fysica van analoge schakelingen:
 
-**Programmeren van de gewichten.** De gewichten van het neurale netwerk worden rechtstreeks als analoge geleidingswaarden ($G$) in niet-vluchtige geheugencellen geprogrammeerd (zoals aangepaste flash of resistief RAM). Eenmaal geprogrammeerd blijven de gewichten vast in de geheugenmatrix; ze worden tijdens de inferentie nooit opgehaald of verplaatst.
+**Programmeren van de gewichten.** De gewichten van het neurale netwerk worden rechtstreeks als analoge geleidingswaarden (*G*) in niet-vluchtige geheugencellen geprogrammeerd (zoals aangepaste flash of resistief RAM). Eenmaal geprogrammeerd blijven de gewichten vast in de geheugenmatrix; ze worden tijdens de inferentie nooit opgehaald of verplaatst.
 
-**Modulatie van de ingangsspanning.** Ingangsactivaties (zoals visuele tokens van camera's) worden omgezet in analoge spanningsniveaus ($V$) en over de woordlijnen van de matrix gestuurd.
+**Modulatie van de ingangsspanning.** Ingangsactivaties (zoals visuele tokens van camera's) worden omgezet in analoge spanningsniveaus (*V*) en over de woordlijnen van de matrix gestuurd.
 
-**Vermenigvuldiging met de wet van Ohm.** Wanneer de ingangsspanning door elke geheugencel gaat, voert de wet van Ohm ($I = V \times G$) een onmiddellijke analoge vermenigvuldiging uit en ontstaat een stroom die evenredig is met het product van ingang en opgeslagen gewicht.
+**Vermenigvuldiging met de wet van Ohm.** Wanneer de ingangsspanning door elke geheugencel gaat, voert de wet van Ohm (*I* = *V* × *G*) een onmiddellijke analoge vermenigvuldiging uit en ontstaat een stroom die evenredig is met het product van ingang en opgeslagen gewicht.
 
-**Optelling met de stroomwet van Kirchhoff.** Langs de verticale bitlijnen tellen de stromen van duizenden parallelle geheugencellen vanzelf op volgens de stroomwet van Kirchhoff ($\sum I = 0$).
+**Optelling met de stroomwet van Kirchhoff.** Langs de verticale bitlijnen tellen de stromen van duizenden parallelle geheugencellen vanzelf op volgens de stroomwet van Kirchhoff (Σ*I* = 0).
 
 Eén enkele flashgeheugenmatrix voert zo een volledige matrix-vectorvermenigvuldiging uit in één klokcyclus, op natuurkundig niveau en zonder één geheugentoegang. De opgetelde analoge stroom wordt daarna door snelle analoog-digitaalomzetters (ADC's) aan de rand van de matrix weer omgezet in digitale waarden.
 
@@ -208,7 +208,7 @@ De overstap van datacenterclusters van 700 W naar edgesilicium van 15 W is de ec
 De Von Neumann-flessenhals is de grens aan doorvoer en energie die ontstaat door de fysieke scheiding tussen de verwerkingseenheid (ALU) en het systeemgeheugen (DRAM). Bij AI-werklasten, die miljarden matrixvermenigvuldigingen omvatten, besteden processors meer dan 85 procent van hun totale energie en veel klokcycli alleen aan het heen en weer sturen van gegevens over koperen bussen, wat ernstige thermische en latentieknelpunten oplevert.
 
 **Hoe werkt analoog rekenen in het geheugen (CIM)?**
-Rekenen in het geheugen voert wiskundige bewerkingen rechtstreeks in de geheugencellen uit, zonder gegevens te verplaatsen. De gewichten van het neurale netwerk worden als analoge geleidingstoestanden in niet-vluchtige geheugencellen opgeslagen. Wanneer er ingangsspanningen op de matrix staan, loopt er stroom door de cellen volgens de wet van Ohm ($I = V \times G$), die langs de bitlijnen optelt volgens de stroomwet van Kirchhoff. Zo ontstaat een volledige matrix-vectorvermenigvuldiging in één fysieke stap.
+Rekenen in het geheugen voert wiskundige bewerkingen rechtstreeks in de geheugencellen uit, zonder gegevens te verplaatsen. De gewichten van het neurale netwerk worden als analoge geleidingstoestanden in niet-vluchtige geheugencellen opgeslagen. Wanneer er ingangsspanningen op de matrix staan, loopt er stroom door de cellen volgens de wet van Ohm (*I* = *V* × *G*), die langs de bitlijnen optelt volgens de stroomwet van Kirchhoff. Zo ontstaat een volledige matrix-vectorvermenigvuldiging in één fysieke stap.
 
 **Waarom is rekenen in het geheugen zo belangrijk voor robots en drones?**
 Mobiele robots en drones werken onder strikte grenzen aan omvang, gewicht, vermogen en kosten (SWaP-C). Ze zijn afhankelijk van accu's aan boord en kunnen geen zware radiatoren of krachtige voedingen dragen. Rekenen in het geheugen is 10 tot 1.000 keer zo energie-efficiënt, zodat robots complexe vision-language-actionmodellen lokaal kunnen draaien binnen een vermogensbudget van 10 W tot 20 W zonder accuduur in te leveren.

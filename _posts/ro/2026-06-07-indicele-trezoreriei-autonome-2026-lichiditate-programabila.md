@@ -13,7 +13,7 @@ description: "Un indice 2026 pentru pregătirea trezoreriei autonome: fluxuri ag
 format-detection: "telephone=no"
 hreflang: "ro"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/ro/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+id: "https://sebastienrousseau.com/ro/2026-06-07-indicele-trezoreriei-autonome-2026-lichiditate-programabila"
 image_alt: "Portret alb-negru al lui Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/ro/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+permalink: "https://sebastienrousseau.com/ro/2026-06-07-indicele-trezoreriei-autonome-2026-lichiditate-programabila"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "treasury, AI agentic, programmable liquidity, depozite tokenizate, cash m
 excerpt: "Un indice 2026 de pregătire a trezoreriei autonome — măsoară fluxurile de trezorerie agentică, acoperirea lichidității programabile, integrarea depozitelor tokenizate, orchestrarea plăților în timp real și controlul automat al numerarului ca o singură țesătură a modelului operațional."
 theme-color: "0, 83, 191"
 title: "Indicele Trezoreriei Autonome 2026: lichiditate programabilă"
-url: "https://sebastienrousseau.com/ro/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+url: "https://sebastienrousseau.com/ro/2026-06-07-indicele-trezoreriei-autonome-2026-lichiditate-programabila"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/rss.xml"
 category: "Finance"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Planul de control este noua suprafață de audit.</strong> Mandatele, limitele, traseele de suprascriere manuală și dovezile de reversare trebuie să ruleze ca primitive de platformă, nu ca aprobări manuale pe fiecare acțiune.</li>
   <li><strong>Scorecard-ul CFO se măsoară per decizie, nu per trimestru.</strong> Costul numerarului, reducerea tamponului de lichiditate intraday, eficiența FX și acuratețea prognozei se măsoară la viteza fluxului de lucru.</li>
 </ul>
-<p class="post-lead-related"><strong>Lectură conexă:</strong> <a href="https://sebastienrousseau.com/ro/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html">Lichiditate programabilă în 2026: AI, depozite tokenizate și orchestrarea trezoreriei în timp real</a>, <a href="https://sebastienrousseau.com/ro/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Depozite tokenizate în 2026: servicii bancare, concurența stablecoins și statutul banilor comerciali programabili</a>.</p>
+<p class="post-lead-related"><strong>Lectură conexă:</strong> <a href="https://sebastienrousseau.com/ro/2026-05-25-lichiditate-programabila-2026-ai-depozite-tokenizate/index.html">Lichiditate programabilă în 2026: AI, depozite tokenizate și orchestrarea trezoreriei în timp real</a>, <a href="https://sebastienrousseau.com/ro/2026-05-21-depozite-tokenizate-2026-servicii-bancare-concurenta/index.html">Depozite tokenizate în 2026: servicii bancare, concurența stablecoins și statutul banilor comerciali programabili</a>.</p>
 </aside>
 <!-- lead-end -->
 

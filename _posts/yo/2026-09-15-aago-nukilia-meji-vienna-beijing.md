@@ -127,9 +127,9 @@ Iṣẹ́ ọ̀nà yẹn ti jẹ́ ìyanu tẹ́lẹ̀. Àwọn aago átọ́mù
 | :--- | :--- | :--- |
 | **Ètò físíìsì** | Àyípadà nínú ìbòrí electron (cesium/strontium) | Àyípadà proton/neutron nínú núkílíọ̀sì thorium-229 |
 | **Ọ̀nà ìwádìí** | Míkíróweefù tàbí lésà ojú lórí electron òde | Lésà ultraviolet afẹ́fẹ́-òfo lórí núkílíọ̀sì inú kirisítà |
-| **Ohun agbàlejò** | Sẹ́ẹ̀lì gáàsì tàbí pańpẹ́ lattice ojú tí lésà ń mú tutù | Kirisítà calcium fluoride líle ($CaF_2$) |
-| **Iṣẹ́ lọ́wọ́lọ́wọ́** | Bílíọ̀nù ọdún láti jèrè/pàdánù $\le 1$ ìṣẹ́jú-àáyá | Ó dé ìpéye aago átọ́mù nínú wíwá ọ̀rọ̀ òkùnkùn |
-| **Ìdúróṣinṣin àfojúsùn** | Ìlànà àgbáyé tó ti fìdí múlẹ̀ ($10^{-18}$) | A ń retí ìlọsíwájú ìdúróṣinṣin ní ìpele kan |
+| **Ohun agbàlejò** | Sẹ́ẹ̀lì gáàsì tàbí pańpẹ́ lattice ojú tí lésà ń mú tutù | Kirisítà calcium fluoride líle (CaF₂) |
+| **Iṣẹ́ lọ́wọ́lọ́wọ́** | Bílíọ̀nù ọdún láti jèrè/pàdánù ≤ 1 ìṣẹ́jú-àáyá | Ó dé ìpéye aago átọ́mù nínú wíwá ọ̀rọ̀ òkùnkùn |
+| **Ìdúróṣinṣin àfojúsùn** | Ìlànà àgbáyé tó ti fìdí múlẹ̀ (10⁻¹⁸) | A ń retí ìlọsíwájú ìdúróṣinṣin ní ìpele kan |
 | **Ìrísí ẹ̀rọ** | Ẹ̀rọ afẹ́fẹ́-òfo ńlá tó ṣẹlẹgẹ́ ní yàrá ìwádìí | Àǹfààní fún ẹ̀rọ pápá kékeré, alágbára, oníle |
 
 Àwọn aago tuntun náà yí ibi tí fífò náà ti ń ṣẹlẹ̀ padà. Dípò electron nínú ìbòrí, wọ́n ń lo lésà láti mú kí proton àti neutron fò láàrin àwọn ìpele agbára nínú núkílíọ̀sì átọ́mù, níbí thorium-229. A ń ṣírò àkókò nínú aago núkílíà nípa wíwo bí lésà alágbára ṣe ń bá núkílíọ̀sì átọ́mù ṣe.
@@ -226,7 +226,7 @@ Tí àwọn ètò kirisítà calcium fluoride líle bá fi hàn pé wọn kò t�
 
 ### Físíìsì ìpìlẹ̀ àti ìmọ̀ ìràwọ̀
 
-Nítorí àwọn ìpele agbára núkílíọ̀sì gbára lé agbára líle àti ìdúró ìsopọ̀ iná-oofa $\alpha$ tààrà, aago núkílíà ń fúnni ní ìfọwọ́kàn tuntun láti dánwò bóyá àwọn ìdúró físíìsì ìpìlẹ̀ ń yí padà ní àkókò àgbáyé àti láti wádìí àwọn tó lè jẹ́ ọ̀rọ̀ òkùnkùn.
+Nítorí àwọn ìpele agbára núkílíọ̀sì gbára lé agbára líle àti ìdúró ìsopọ̀ iná-oofa α tààrà, aago núkílíà ń fúnni ní ìfọwọ́kàn tuntun láti dánwò bóyá àwọn ìdúró físíìsì ìpìlẹ̀ ń yí padà ní àkókò àgbáyé àti láti wádìí àwọn tó lè jẹ́ ọ̀rọ̀ òkùnkùn.
 
 ## Ìparí
 

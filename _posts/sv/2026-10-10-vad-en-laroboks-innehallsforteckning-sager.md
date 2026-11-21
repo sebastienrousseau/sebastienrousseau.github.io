@@ -158,7 +158,7 @@ Författarna förklarar också varför fältet ligger där det ligger. Eftersom 
 
 | Dimension | Tidskomplexitet | Minneskomplexitet | Urvalskomplexitet |
 | :--- | :--- | :--- | :--- |
-| **Operativ definition** | Asymptotisk körtid som krävs för att ta fram hypotesen $h$ | Minnesavtryck som behövs under träning och utvärdering | Antal träningsexempel $m$ som krävs för att lära sig en begreppsfamilj |
+| **Operativ definition** | Asymptotisk körtid som krävs för att ta fram hypotesen *h* | Minnesavtryck som behövs under träning och utvärdering | Antal träningsexempel *m* som krävs för att lära sig en begreppsfamilj |
 | **Styrande teori** | Beräkningskomplexitet (P mot NP, träningens svårighet) | Arkitekturens minnesbegränsningar och cachelokalitet | PAC-inlärning, Rademacher-komplexitet och VC-dimension |
 | **Kostnadskonsekvens** | Serverberäkning och budget för GPU/CPU-inferens | RAM och kapacitet för SRAM på chipet | Kostnad för datainsamling, annotering och märkning |
 | **Teoretisk roll** | Mäter algoritmens effektivitet i körtid | Mäter effektiviteten i minnesresurser | Avgör generaliseringsfel och gränser för osedd data |

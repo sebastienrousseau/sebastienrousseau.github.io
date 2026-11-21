@@ -121,7 +121,7 @@ Kaya ganito ang argumento tungkol sa istruktura: mahal bawat pamantayan ang mga 
 
 | Dimensyon ng Arkitektura | Mga Generative LLM Judge (hal. GPT-4 bilang Judge) | Mga Single-Token Classifier (hal. Llama Guard) | Multi-Query na RLCD Detector (Jev) |
 | :--- | :--- | :--- | :--- |
-| **Mekanismo ng Pagmamarka** | Buong autoregressive decoding pass bawat pamantayan | Softmax probability sa iisang output token | Multi-head na tensor ng kalibradong probabilidad $P(\text{yes})$ |
+| **Mekanismo ng Pagmamarka** | Buong autoregressive decoding pass bawat pamantayan | Softmax probability sa iisang output token | Multi-head na tensor ng kalibradong probabilidad P(yes) |
 | **Mga Tanong bawat Tawag** | 1 evaluation prompt bawat invocation ng modelo | 1 classification label bawat invocation ng modelo | Maraming binary/categorical/ordinal na tanong sa 1 tawag |
 | **Gastos sa Inference** | Mataas ($10–$50 bawat 1,000 interaksyon) | Katamtaman ($0.50–$2.00 bawat 1,000 interaksyon) | 63× na mas mababa ($0.30 sa 19 buong benchmark) |
 | **Pagganap sa AUROC** | Nakadepende sa benchmark; madaling magka-judge drift | Mataas sa mga partikular na sinanay na kategorya ng kaligtasan | Median AUROC na 0.886 nang zero-shot sa 44 suite |

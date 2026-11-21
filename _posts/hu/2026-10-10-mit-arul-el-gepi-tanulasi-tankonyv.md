@@ -158,7 +158,7 @@ A szerzők azt is elmagyarázzák, miért ott helyezkedik el a szakma, ahol. Miv
 
 | Szempont | Időbonyolultság | Tárbonyolultság | Mintabonyolultság |
 | :--- | :--- | :--- | :--- |
-| **Működési definíció** | A $h$ hipotézis előállításához szükséges aszimptotikus futási idő | A tanítás és a kiértékelés során szükséges memórialenyomat | Egy fogalomcsalád megtanulásához szükséges $m$ tanítópélda száma |
+| **Működési definíció** | A *h* hipotézis előállításához szükséges aszimptotikus futási idő | A tanítás és a kiértékelés során szükséges memórialenyomat | Egy fogalomcsalád megtanulásához szükséges *m* tanítópélda száma |
 | **Irányadó elmélet** | Számítási bonyolultság (P kontra NP, a tanítás nehézsége) | Az architektúra memóriakorlátai és a gyorsítótár-lokalitás | PAC-tanulás, Rademacher-bonyolultság és VC-dimenzió |
 | **Költségvonzat** | Szerveroldali számítás és GPU/CPU-következtetési keret | RAM és lapkán lévő SRAM-kapacitás | Adatgyűjtés, annotálás és címkézés költsége |
 | **Elméleti szerep** | Az algoritmus futásidő-hatékonyságát méri | A tárerőforrás-hatékonyságot méri | Meghatározza az általánosítási hibát és a nem látott adatokra vonatkozó korlátokat |

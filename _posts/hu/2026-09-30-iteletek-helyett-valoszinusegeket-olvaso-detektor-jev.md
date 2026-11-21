@@ -121,7 +121,7 @@ A szerkezeti állítás tehát így szól: a generatív bírák kritériumonkén
 
 | Architektúra szempontja | Generatív LLM-bírák (pl. GPT-4 mint bíró) | Egytokenes osztályozók (pl. Llama Guard) | Többkérdéses RLCD-detektor (Jev) |
 | :--- | :--- | :--- | :--- |
-| **Pontozási mechanizmus** | Teljes autoregresszív dekódolási menet kritériumonként | Softmax-valószínűség egyetlen kimeneti token felett | Többfejes kalibrált valószínűségi tenzor $P(\text{yes})$ |
+| **Pontozási mechanizmus** | Teljes autoregresszív dekódolási menet kritériumonként | Softmax-valószínűség egyetlen kimeneti token felett | Többfejes kalibrált valószínűségi tenzor P(yes) |
 | **Kérdések hívásonként** | 1 értékelő prompt modellhívásonként | 1 osztályozási címke modellhívásonként | Több bináris, kategorikus és ordinális kérdés 1 hívásban |
 | **Inferenciaköltség** | Magas (10–50 USD 1000 interakciónként) | Mérsékelt (0,50–2,00 USD 1000 interakciónként) | 63×-ször alacsonyabb (0,30 USD 19 teljes benchmarkra) |
 | **AUROC-teljesítmény** | Benchmarktól függ; hajlamos a bírói sodródásra | Magas a konkrétan betanított biztonsági kategóriákban | Medián AUROC 0,886 zero-shot 44 csomagon |

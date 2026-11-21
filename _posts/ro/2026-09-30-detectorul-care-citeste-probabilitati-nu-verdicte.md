@@ -121,7 +121,7 @@ Afirmația structurală sună deci așa: judecătorii generativi sunt scumpi per
 
 | Dimensiunea arhitecturii | Judecători LLM generativi (ex. GPT-4 ca judecător) | Clasificatori cu un singur token (ex. Llama Guard) | Detector RLCD cu întrebări multiple (Jev) |
 | :--- | :--- | :--- | :--- |
-| **Mecanismul de notare** | Trecere completă de decodare autoregresivă per criteriu | Probabilitate softmax peste un singur token de ieșire | Tensor de probabilități calibrate cu mai multe capete $P(\text{yes})$ |
+| **Mecanismul de notare** | Trecere completă de decodare autoregresivă per criteriu | Probabilitate softmax peste un singur token de ieșire | Tensor de probabilități calibrate cu mai multe capete P(yes) |
 | **Întrebări per apel** | 1 prompt de evaluare per invocare a modelului | 1 etichetă de clasificare per invocare a modelului | Mai multe întrebări binare, categoriale și ordinale într-un apel |
 | **Costul inferenței** | Ridicat (10–50 USD la 1.000 de interacțiuni) | Moderat (0,50–2,00 USD la 1.000 de interacțiuni) | De 63× mai mic (0,30 USD pentru 19 benchmarkuri complete) |
 | **Performanța AUROC** | Depinde de benchmark; predispus la deriva judecătorului | Ridicată pe categorii de siguranță anume antrenate | Mediană AUROC 0,886 zero-shot în 44 de suite |

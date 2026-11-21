@@ -147,9 +147,9 @@ Ich halte diese Einordnung für die richtige, um das Ergebnis zu bewerten. Eine 
 | :--- | :--- | :--- | :--- |
 | **Kugelpackungsexponent** | Kabatianskii–Levenshtein-Schranke: 0,59905576... | Mindestens so stark wie Schranken sphärischer Codes (Cohn–Zhao) | Bewiesene exakte asymptotische Rate, vermutet von Afkhami-Jeddi et al. (2020) |
 | **Endgültigkeit der Schranke** | Nur Verfeinerungen von Faktoren niedrigerer Ordnung | Offene Frage zur asymptotischen Lücke in hohen Dimensionen | Exakt passende untere Schranke: Keine Hilfsfunktion schlägt diese Rate |
-| **Fourier-Vorzeichenunschärfe** | Getrennte Vorzeichenschranken ($A^+(d) < A^-(d)$) | Verknüpft mit anti-selbstdualen Fourier-Testfunktionen | Asymptotisch gelöst; Vorzeichenunschärfe durch Mellin-Spiegelung bestimmt |
+| **Fourier-Vorzeichenunschärfe** | Getrennte Vorzeichenschranken (A⁺(d) < A⁻(d)) | Verknüpft mit anti-selbstdualen Fourier-Testfunktionen | Asymptotisch gelöst; Vorzeichenunschärfe durch Mellin-Spiegelung bestimmt |
 | **Fehlerkorrigierende Codes** | Klassische Schranken für sphärische und binäre Codes | Asymptotisch an Packungsschranken gekoppelt | Verbesserungen um exponentielle Faktoren für alle Parameter mit festem Abstand |
-| **Methodische Obergrenze** | Numerische Optimierung polynomieller Faktoren | Offene Optimierung der Hilfs-Testfunktionen $f \in \mathcal{A}_d$ | Mathematische Obergrenze bewiesen: Weitere Gewinne erfordern Methoden jenseits von Cohn-Elkies |
+| **Methodische Obergrenze** | Numerische Optimierung polynomieller Faktoren | Offene Optimierung der Hilfs-Testfunktionen f ∈ 𝒜\_d | Mathematische Obergrenze bewiesen: Weitere Gewinne erfordern Methoden jenseits von Cohn-Elkies |
 
 ## Warum die passende untere Schranke die Frage verändert
 
@@ -237,11 +237,11 @@ Die exakte Bestimmung der Cohn-Elkies-Abfallrate in hohen Dimensionen und die be
 
 ### Reine Mathematik und diskrete Geometrie
 
-Für Mathematikerinnen und Mathematiker in hochdimensionaler Geometrie und harmonischer Analysis verschiebt die Bestimmung der exakten Cohn-Elkies-Abfallrate die Forschungslandschaft. Weil die passende untere Schranke beweist, dass keine Hilfsfunktion in $\mathcal{A}_d$ den neuen Exponenten schlagen kann, können Forschende die Suche nach besseren radialen Testfunktionen im klassischen Rahmen der linearen Programmierung einstellen. Fortschritte zu dichteren Kugelpackungen oder schärferen universellen Schranken müssen nun nichtlineare Programmiertechniken, semidefinite Hierarchien höherer Ordnung oder grundlegend andere geometrische Konstruktionen erkunden.
+Für Mathematikerinnen und Mathematiker in hochdimensionaler Geometrie und harmonischer Analysis verschiebt die Bestimmung der exakten Cohn-Elkies-Abfallrate die Forschungslandschaft. Weil die passende untere Schranke beweist, dass keine Hilfsfunktion in 𝒜\_d den neuen Exponenten schlagen kann, können Forschende die Suche nach besseren radialen Testfunktionen im klassischen Rahmen der linearen Programmierung einstellen. Fortschritte zu dichteren Kugelpackungen oder schärferen universellen Schranken müssen nun nichtlineare Programmiertechniken, semidefinite Hierarchien höherer Ordnung oder grundlegend andere geometrische Konstruktionen erkunden.
 
 ### Kryptografie und gitterbasierte Sicherheit
 
-Gitterbasierte Kryptografie - der Kern von Post-Quanten-Standards wie ML-KEM und ML-DSA - stützt sich stark auf die vermutete Schwierigkeit, kürzeste oder nächste Vektoren in hochdimensionalen euklidischen Gittern zu finden. Die direkte Reduktion von 3SAT, die eine Härte mit Faktor $n^{1/400}$ für das euklidische Problem des nächsten Vektors (CVP) begründet, festigt zusammen mit schärferen exponentiellen Obergrenzen für Kugelpackungen und sphärische Codes die theoretischen Grundlagen von Worst-Case-zu-Average-Case-Gitterreduktionen, ohne konkrete Sicherheitsparameter zu schwächen.
+Gitterbasierte Kryptografie - der Kern von Post-Quanten-Standards wie ML-KEM und ML-DSA - stützt sich stark auf die vermutete Schwierigkeit, kürzeste oder nächste Vektoren in hochdimensionalen euklidischen Gittern zu finden. Die direkte Reduktion von 3SAT, die eine Härte mit Faktor n\^(1/400) für das euklidische Problem des nächsten Vektors (CVP) begründet, festigt zusammen mit schärferen exponentiellen Obergrenzen für Kugelpackungen und sphärische Codes die theoretischen Grundlagen von Worst-Case-zu-Average-Case-Gitterreduktionen, ohne konkrete Sicherheitsparameter zu schwächen.
 
 ### Automatisches Beweisen und Foundation Models
 
@@ -267,7 +267,7 @@ Cohn und Gonçalves zeigten, dass das komplementäre Problem der Fourier-Vorzeic
 
 **Gefährdet dieses Ergebnis die gitterbasierte Kryptografie?**
 
-Nein. Der Satz verschärft zwar obere Schranken dafür, wie dicht sich Kugeln in hohen Dimensionen packen lassen, und begründet eine Härte mit Faktor $n^{1/400}$ für das Problem des nächsten Vektors, liefert aber keine Gitterreduktionsalgorithmen in Polynomialzeit. Praktische Gitterkryptosysteme bleiben gegen bekannte Quanten- und klassische Angriffe sicher.
+Nein. Der Satz verschärft zwar obere Schranken dafür, wie dicht sich Kugeln in hohen Dimensionen packen lassen, und begründet eine Härte mit Faktor n\^(1/400) für das Problem des nächsten Vektors, liefert aber keine Gitterreduktionsalgorithmen in Polynomialzeit. Praktische Gitterkryptosysteme bleiben gegen bekannte Quanten- und klassische Angriffe sicher.
 
 ## Quellen
 

@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "Banner del libro blanco Arquitectura Bancaria 2026"
 twitter_site: "@wwdseb"
 twitter_title: "Libro blanco Arquitectura Bancaria 2026"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -186,7 +186,7 @@ El registro de riesgos del programa, con 10 entradas, está calibrado contra las
 2. **Pérdida silenciosa de datos de MT a MX.** Los bancos que emiten MT103 con datos de dirección o remesa truncados se ingestan limpiamente en canales MX — pero los campos estructurados quedan vacíos. La consecuencia aguas abajo (fallos de screening de sanciones, alertas AML perdidas, rupturas de conciliación) aflora entre 30 y 90 días después de la fecha de corte, mucho más allá del análisis forense de la ventana de cambio. El registro cuantifica el coste esperado de remediación de cartera histórica por cada €1 000 M de flujo de pagos.
 3. **Atribución de la acción del agente.** Cuando un agente de tesorería respaldado por un LLM dispara una cadena de pagos, tres principales pueden reclamar la propiedad — el dueño del modelo, el proveedor del rail, el autor de la política. Sin una decisión explícita de atribución integrada en la capa de orquestación, el banco hereda las tres responsabilidades. El registro define el árbol de atribución y la cadena de evidencia `SR 11-7` requerida para defenderlo.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Descargar el libro blanco Arquitectura Bancaria 2026 (PDF)">Descargar el informe PDF</a> <a class="pill ghost no-chev" href="/papers" title="Ver todos los libros blancos y la investigación publicada">Todos los libros blancos</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Descargar el libro blanco Arquitectura Bancaria 2026 (PDF)">Descargar el informe PDF</a> <a class="pill ghost no-chev" href="/research" title="Ver todos los libros blancos y la investigación publicada">Todos los libros blancos</a></p>
 
 ## Resumen de revisión interna
 

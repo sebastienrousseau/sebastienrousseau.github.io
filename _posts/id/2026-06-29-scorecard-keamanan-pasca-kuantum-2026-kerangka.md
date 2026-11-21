@@ -13,7 +13,7 @@ description: "Scorecard Keamanan Pasca-Kuantum 2026 memberi dewan dan manajemen 
 format-detection: "telephone=no"
 hreflang: "id"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/id/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+id: "https://sebastienrousseau.com/id/2026-06-29-scorecard-keamanan-pasca-kuantum-2026-kerangka"
 image_alt: "Potret Hitam Putih Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/id/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+permalink: "https://sebastienrousseau.com/id/2026-06-29-scorecard-keamanan-pasca-kuantum-2026-kerangka"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -39,7 +39,7 @@ subtitle: "Cara dewan harus mengukur dan menata kelola migrasi ke NIST FIPS 203 
 tags: "pasca-kuantum, kriptografi, perbankan, tata kelola, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
 theme-color: "0, 83, 191"
 title: "Scorecard Keamanan Pasca-Kuantum 2026: Kerangka Metrik Tingkat Dewan"
-url: "https://sebastienrousseau.com/id/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+url: "https://sebastienrousseau.com/id/2026-06-29-scorecard-keamanan-pasca-kuantum-2026-kerangka"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/rss.xml"
 category: "Teknologi"
@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Bacaan terkait:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib dan Migrasi Perbankan Pasca-Kuantum pada 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: Algoritma Pengaman di Era Kuantum</a>.</p>
 </aside>
+
 Keamanan pasca-kuantum bukan lagi proyek riset. "Jam supervisi" sedang berdetak menuju tenggat penegakan akhir dekade 2020-an. Finalisasi [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) dan [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) telah mengodifikasi standar untuk enkapsulasi kunci dan tanda tangan digital.
 
 Badan regulasi kini menuntut bank Tier-1 bergerak melampaui program pilot. Pada 2026, fokus telah bergeser ke industrialisasi standar ini. Kegagalan menunjukkan jalur migrasi yang jelas membawa sanksi regulasi yang signifikan di bawah [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) dan potensi liabilitas pribadi bagi direktur yang mengabaikan ancaman dekripsi berkemampuan kuantum yang dapat diprediksi.

@@ -121,7 +121,7 @@ L'argument structurel se résume donc ainsi : les juges génératifs coûtent ch
 
 | Dimension d'architecture | Juges LLM génératifs (p. ex. GPT-4 comme juge) | Classifieurs à jeton unique (p. ex. Llama Guard) | Détecteur RLCD multi-requêtes (Jev) |
 | :--- | :--- | :--- | :--- |
-| **Mécanisme de notation** | Passe complète de décodage autorégressif par critère | Probabilité softmax sur un seul jeton de sortie | Tenseur de probabilités calibrées multi-têtes $P(\text{yes})$ |
+| **Mécanisme de notation** | Passe complète de décodage autorégressif par critère | Probabilité softmax sur un seul jeton de sortie | Tenseur de probabilités calibrées multi-têtes P(yes) |
 | **Questions par appel** | 1 prompt d'évaluation par invocation du modèle | 1 label de classification par invocation du modèle | Plusieurs questions binaires/catégorielles/ordinales en 1 appel |
 | **Coût d'inférence** | Élevé (10 à 50 $ pour 1 000 interactions) | Modéré (0,50 à 2,00 $ pour 1 000 interactions) | 63× plus bas (0,30 $ pour 19 benchmarks complets) |
 | **Performance AUROC** | Dépend du benchmark ; sujette à la dérive du juge | Élevée sur les catégories de sécurité entraînées | AUROC médiane de 0,886 en zero-shot sur 44 suites |

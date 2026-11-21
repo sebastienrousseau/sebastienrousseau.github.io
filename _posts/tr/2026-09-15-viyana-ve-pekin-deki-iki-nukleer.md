@@ -127,9 +127,9 @@ Bu yaklaşımın performansı zaten olağanüstü. En iyi geleneksel atom saatle
 | :--- | :--- | :--- |
 | **Fiziksel mekanizma** | Elektron kabuğu geçişleri (sezyum/stronsiyum) | Toryum-229 çekirdeği içindeki proton/nötron geçişleri |
 | **Sorgulama ortamı** | Değerlik elektronlarına mikrodalga ya da optik lazer | Kristale gömülü çekirdeklere vakum morötesi lazer |
-| **Taşıyıcı malzeme** | Gaz hücreleri ya da lazerle soğutulan optik örgü tuzakları | Katı kalsiyum florür kristalleri ($CaF_2$) |
-| **Mevcut performans** | $\le 1$ saniye kazanmak/kaybetmek için milyarlarca yıl | Karanlık madde aramasında atom saati hassasiyetine ulaştı |
-| **Hedef kararlılık** | Yerleşik uluslararası standart ($10^{-18}$) | Kararlılıkta bir büyüklük mertebesi iyileşme öngörülüyor |
+| **Taşıyıcı malzeme** | Gaz hücreleri ya da lazerle soğutulan optik örgü tuzakları | Katı kalsiyum florür kristalleri (CaF₂) |
+| **Mevcut performans** | ≤ 1 saniye kazanmak/kaybetmek için milyarlarca yıl | Karanlık madde aramasında atom saati hassasiyetine ulaştı |
+| **Hedef kararlılık** | Yerleşik uluslararası standart (10⁻¹⁸) | Kararlılıkta bir büyüklük mertebesi iyileşme öngörülüyor |
 | **Donanım biçimi** | Büyük, hassas laboratuvar vakum düzeneği | Kompakt, dayanıklı, katı hâl saha birimleri olasılığı |
 
 Yeni saatler sıçramanın gerçekleştiği yeri değiştiriyor. Kabuktaki elektronlar yerine, lazerlerle bir atomun çekirdeğindeki, bu durumda toryum-229'un çekirdeğindeki proton ve nötronları enerji düzeyleri arasında sıçratıyorlar. Bir nükleer saatte zaman, yüksek güçlü bir lazerin bir atomun çekirdeğiyle nasıl etkileştiği izlenerek hesaplanıyor.
@@ -226,7 +226,7 @@ Katı kalsiyum florür kristal mimarileri üretimde daha az hantal ve kırılgan
 
 ### Temel fizik ve astrofizik
 
-Nükleer enerji düzeyleri doğrudan güçlü kuvvete ve elektromanyetik bağlaşım sabiti $\alpha$'ya bağlı olduğundan, nükleer saatler temel fizik sabitlerinin kozmik zaman içinde değişip değişmediğini sınamak ve karanlık madde adaylarını araştırmak için yeni bir duyarlılık sunuyor.
+Nükleer enerji düzeyleri doğrudan güçlü kuvvete ve elektromanyetik bağlaşım sabiti α'ya bağlı olduğundan, nükleer saatler temel fizik sabitlerinin kozmik zaman içinde değişip değişmediğini sınamak ve karanlık madde adaylarını araştırmak için yeni bir duyarlılık sunuyor.
 
 ## Sonuç
 

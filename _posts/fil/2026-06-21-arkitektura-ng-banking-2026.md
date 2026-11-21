@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "Banner ng whitepaper sa Arkitektura ng Banking 2026"
 twitter_site: "@wwdseb"
 twitter_title: "Whitepaper sa Arkitektura ng Banking 2026"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -186,7 +186,7 @@ Naka-calibrate ang 10-item programme risk register sa PDF sa mga tahasang delta 
 2. **Tahimik na pagkawala ng datos sa MT-to-MX.** Ang mga bangkong nagpapalabas ng MT103 na may pinutol na address o remittance data ay malinis na pumapasok sa MX channels — ngunit nananatiling walang laman ang mga structured field. Ang downstream na bunga (nabigong sanctions screening, hindi nahuling AML triggers, sira ang reconciliation) ay lumilitaw 30–90 araw matapos ang cut-over, malayo na sa change-window forensics. Sinusukat ng register ang inaasahang back-book remediation cost bawat €1 bn ng payment flow.
 3. **Atribusyon sa aksyon ng agent.** Kapag ang isang LLM-backed treasury agent ay nagbubukas ng payment chain, tatlong principal ang maaaring mag-angkin ng pag-aari — ang model owner, ang rail provider, ang policy author. Kung walang tahasang attribution decision na nakabaon sa orchestration layer, namamana ng bangko ang lahat ng tatlong pananagutan. Tinutukoy ng register ang attribution tree at ang SR 11-7 evidence chain na kailangan upang ipagtanggol ito.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="I-download ang Whitepaper sa Arkitektura ng Banking 2026 (PDF)">I-download ang PDF briefing</a> <a class="pill ghost no-chev" href="/papers" title="Tingnan ang lahat ng nailathalang white papers at pananaliksik">Lahat ng white paper</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="I-download ang Whitepaper sa Arkitektura ng Banking 2026 (PDF)">I-download ang PDF briefing</a> <a class="pill ghost no-chev" href="/research" title="Tingnan ang lahat ng nailathalang white papers at pananaliksik">Lahat ng white paper</a></p>
 
 ## Buod ng internal review
 

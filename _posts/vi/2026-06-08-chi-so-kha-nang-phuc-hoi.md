@@ -13,7 +13,7 @@ description: "Chỉ số khả năng phục hồi ngân hàng 2026 kết hợp r
 format-detection: "telephone=no"
 hreflang: "vi"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/vi/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+id: "https://sebastienrousseau.com/vi/2026-06-08-chi-so-kha-nang-phuc-hoi"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/vi/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+permalink: "https://sebastienrousseau.com/vi/2026-06-08-chi-so-kha-nang-phuc-hoi"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "khả năng phục hồi ngân hàng, DORA, rủi ro AI, tập trung đá
 excerpt: "Chỉ số khả năng phục hồi ngân hàng 2026 — kết hợp rủi ro AI, tập trung đám mây, chuyển đổi an toàn lượng tử, tính liên tục thanh toán và phụ thuộc bên thứ ba trọng yếu vào một bảng điểm khả năng phục hồi vận hành mà hội đồng quản trị và cơ quan giám sát đều đọc được."
 theme-color: "0, 83, 191"
 title: "Chỉ số Khả năng Phục hồi Ngân hàng 2026: AI, Đám mây, Lượng tử, Thanh toán và Rủi ro Tập trung Bên Thứ Ba"
-url: "https://sebastienrousseau.com/vi/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+url: "https://sebastienrousseau.com/vi/2026-06-08-chi-so-kha-nang-phuc-hoi"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/rss.xml"
 category: "Risk"
@@ -99,7 +99,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Chuyển đổi an toàn lượng tử là chỉ số khả năng phục hồi vận hành, không phải chỉ số bảo mật.</strong> Dữ liệu dài hạn bị phơi bày hôm nay sẽ không vượt qua kiểm thử khả năng phục hồi của ngày mai.</li>
   <li><strong>Tập trung bên thứ ba nay mang tính hệ thống.</strong> Phụ thuộc vào một hyperscaler duy nhất, một PSP duy nhất, một nhà cung cấp LLM duy nhất tương ứng với những điểm thất bại đơn lẻ trên bảng điểm khả năng phục hồi.</li>
 </ul>
-<p class="post-lead-related"><strong>Đọc liên quan:</strong> <a href="https://sebastienrousseau.com/vi/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA, EU AI Act và Chủ quyền Dữ liệu: Ngăn xếp Tuân thủ 2026 cho Ngân hàng</a>, <a href="https://sebastienrousseau.com/vi/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">Ngân hàng Cloud Native năm 2026: Kubernetes, DORA, Chủ quyền và Hồi kết của Phân chia VM với Container</a>.</p>
+<p class="post-lead-related"><strong>Đọc liên quan:</strong> <a href="https://sebastienrousseau.com/vi/2026-05-28-dora-ao-luat/index.html">DORA, EU AI Act và Chủ quyền Dữ liệu: Ngăn xếp Tuân thủ 2026 cho Ngân hàng</a>, <a href="https://sebastienrousseau.com/vi/2026-05-20-ngan-hang-cloud-native-nam-2026/index.html">Ngân hàng Cloud Native năm 2026: Kubernetes, DORA, Chủ quyền và Hồi kết của Phân chia VM với Container</a>.</p>
 </aside>
 <!-- lead-end -->
 

@@ -13,7 +13,7 @@ description: "2026년 5월 25일, 교황 레오 14세는 인공지능을 다룬 
 format-detection: "telephone=no"
 hreflang: "ko"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/ko/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+id: "https://sebastienrousseau.com/ko/2026-05-26-magnifica-humanitas-ai-hoechikui-saneopjeok-dokhae"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/ko/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+permalink: "https://sebastienrousseau.com/ko/2026-05-26-magnifica-humanitas-ai-hoechikui-saneopjeok-dokhae"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -40,7 +40,7 @@ tags: "Magnifica Humanitas, Pope Leo XIV, AI 윤리, 양자 컴퓨팅, 기술사
 excerpt: "2026년 5월 25일, 교황 레오 14세는 인공지능을 다룬 최초의 교황 회칙 Magnifica Humanitas를 발표했습니다. 교리가 아닌 윤리 프레임워크로 기술 산업의 시선에서 읽으면 기차, 자동차, 원자력, 인터넷이 동반했던 모든 도덕적 불안을 반영하며 희망에 도달합니다."
 theme-color: "0, 83, 191"
 title: "Magnifica Humanitas: AI 회칙의 산업적 독해"
-url: "https://sebastienrousseau.com/ko/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+url: "https://sebastienrousseau.com/ko/2026-05-26-magnifica-humanitas-ai-hoechikui-saneopjeok-dokhae"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/rss.xml"
 category: "Technology"
@@ -161,7 +161,7 @@ site_software: "Static Site Generator, Rust"
 
 회칙의 두 가지 구체적 우려는 금융 시스템 엔지니어링에 직접 닿으며, 둘 다 신자의 응답이 아니라 엔지니어의 응답을 받을 자격이 있습니다.
 
-첫째는 **사적, 초국적 손에 권력이 집중되는 것**입니다. 이 기술의 주요 동인이 이제 많은 국가의 역량을 능가하는 사적 행위자라는 회칙의 관찰은 신학적 주장이 아닙니다. 2026년 AI 지형의 정확한 묘사이며, 산업이 현재 충족하기 위해 분주히 움직이고 있는 규제 아키텍처 — 2026년 8월 2일부터 시행되는 EU AI Act의 고위험 의무, DORA의 제3자 집중 위험 조항, 그리고 이 사이트의 [클라우드 아키텍처](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "2026년 최선의 클라우드 인프라 아키텍처) 및 [에이전트 엔지니어링](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "은행을 위한 에이전트 엔지니어링") 기고문에서 다룬 주권 클라우드와 주권 컨트롤 플레인 운동 — 를 관통하는 바로 그 우려입니다. 회칙과 EU AI Act는 놀랍게도 같은 것을 우려합니다. 책임 없는 역량이 민주적 거버넌스를 벗어나는 방식으로 권력을 집중시킨다는 것입니다. 한쪽은 사회 교리의 언어로, 다른 쪽은 적합성 평가의 언어로 말합니다. 진단은 동일합니다.
+첫째는 **사적, 초국적 손에 권력이 집중되는 것**입니다. 이 기술의 주요 동인이 이제 많은 국가의 역량을 능가하는 사적 행위자라는 회칙의 관찰은 신학적 주장이 아닙니다. 2026년 AI 지형의 정확한 묘사이며, 산업이 현재 충족하기 위해 분주히 움직이고 있는 규제 아키텍처 — 2026년 8월 2일부터 시행되는 EU AI Act의 고위험 의무, DORA의 제3자 집중 위험 조항, 그리고 이 사이트의 [클라우드 아키텍처](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "2026년 최선의 클라우드 인프라 아키텍처) 및 [에이전트 엔지니어링](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "은행을 위한 에이전트 엔지니어링") 기고문에서 다룬 주권 클라우드와 주권 컨트롤 플레인 운동 — 를 관통하는 바로 그 우려입니다. 회칙과 EU AI Act는 놀랍게도 같은 것을 우려합니다. 책임 없는 역량이 민주적 거버넌스를 벗어나는 방식으로 권력을 집중시킨다는 것입니다. 한쪽은 사회 교리의 언어로, 다른 쪽은 적합성 평가의 언어로 말합니다. 진단은 동일합니다.
 
 둘째는 **양자 컴퓨팅**으로, 회칙은 이를 명명하지 않지만 그 윤리적 형태를 정확히 예견합니다. [Securing the Ledger](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Securing the Ledger")에서 다룬 포스트양자 마이그레이션의 전제는, 현재 구축 중인 역량 — 암호학적으로 관련된 양자 컴퓨터 — 이 도래할 때, 오늘날의 가정 하에 암호화된 모든 것을 소급해 노출시킬 것이라는 점입니다. "Harvest now, decrypt later"는 세속적 언어로 회칙이 경고하는 지혜 없는 권력의 정확한 사례입니다. 결과가 준비를 앞지르는 시간표로 도래하는 기술이며, 먼저 그것을 휘두를 자원을 가진 자들의 손에 들어가는 기술입니다. 위기의 연속이 경로를 결정하기 전에 "우리는 어디로 가고 있는가?"를 묻겠다는 회칙의 고집은 보안 엔지니어에게 도덕 철학으로 표현된 좋은 실천입니다.
 
@@ -231,8 +231,8 @@ site_software: "Static Site Generator, Rust"
 
 - Sebastien Rousseau, (2026). [Lucy의 플래시 드라이브 다시 보기: 지식 이전, AI, 그리고 양자](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html "Lucy의 플래시 드라이브 다시 보기").
 - Sebastien Rousseau, (2026). [원장 보호: 기업 금융을 위한 포스트양자 마이그레이션의 이사회급 가이드](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Securing the Ledger").
-- Sebastien Rousseau, (2026). [은행을 위한 에이전트 엔지니어링: 2026 청사진](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "은행을 위한 에이전트 엔지니어링").
-- Sebastien Rousseau, (2026). [2026년 최선의 클라우드 인프라 아키텍처](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "2026년 최선의 클라우드 인프라 아키텍처").
+- Sebastien Rousseau, (2026). [은행을 위한 에이전트 엔지니어링: 2026 청사진](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "은행을 위한 에이전트 엔지니어링").
+- Sebastien Rousseau, (2026). [2026년 최선의 클라우드 인프라 아키텍처](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "2026년 최선의 클라우드 인프라 아키텍처").
 - Pope Leo XIV, (2026). [회칙 *Magnifica Humanitas* — 인공지능 시대 인격 보호에 관하여 ⧉](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html "Magnifica Humanitas — 전문, Vatican.va"). 교황청.
 - Pope Leo XIII, (1891). [회칙 *Rerum Novarum* — 자본과 노동에 관하여 ⧉](https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_15051891_rerum-novarum.html "Rerum Novarum — Vatican.va"). 교황청.
 - Vatican News, (2026). [교황 레오 14세의 첫 회칙 *Magnifica humanitas*, 5월 25일 발표 ⧉](https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html "Vatican News — Magnifica Humanitas"). Vatican News.

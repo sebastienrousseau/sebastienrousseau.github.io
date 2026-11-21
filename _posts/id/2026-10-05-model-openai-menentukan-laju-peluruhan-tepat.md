@@ -147,9 +147,9 @@ Saya berpendapat bahwa kerangka inilah yang tepat untuk menilai hasilnya. Perbai
 | :--- | :--- | :--- | :--- |
 | **Eksponen Pengepakan Bola** | Batas Kabatianskii-Levenshtein: 0,59905576... | Setidaknya sekuat batas kode sferis (Cohn-Zhao) | Laju asimtotik tepat yang dikonjekturkan Afkhami-Jeddi dkk. (2020) terbukti |
 | **Finalitas Batas** | Hanya penyempurnaan faktor orde rendah | Pertanyaan terbuka tentang celah asimtotik dimensi tinggi | Batas bawah tepat sama: tidak ada fungsi bantu yang dapat mengalahkan laju ini |
-| **Ketidakpastian Tanda Fourier** | Batas tanda terpisah ($A^+(d) < A^-(d)$) | Terkait fungsi uji anti-swa-Fourier | Terselesaikan secara asimtotik; ketidakpastian tanda diatur oleh refleksi Mellin |
+| **Ketidakpastian Tanda Fourier** | Batas tanda terpisah (A⁺(d) < A⁻(d)) | Terkait fungsi uji anti-swa-Fourier | Terselesaikan secara asimtotik; ketidakpastian tanda diatur oleh refleksi Mellin |
 | **Kode Koreksi Galat** | Batas kode sferis dan biner klasik | Secara asimtotik terkait dengan batas pengepakan | Perbaikan faktor eksponensial untuk semua parameter jarak tetap |
-| **Batas Metodologis** | Optimisasi numerik faktor polinomial | Optimisasi terbuka fungsi uji bantu $f \in \mathcal{A}_d$ | Batas matematis terbukti: kemajuan lebih lanjut memerlukan metode di luar Cohn-Elkies |
+| **Batas Metodologis** | Optimisasi numerik faktor polinomial | Optimisasi terbuka fungsi uji bantu f ∈ 𝒜\_d | Batas matematis terbukti: kemajuan lebih lanjut memerlukan metode di luar Cohn-Elkies |
 
 ## Mengapa batas bawah yang sepadan mengubah pertanyaannya
 
@@ -237,11 +237,11 @@ Penentuan tepat laju peluruhan Cohn-Elkies di dimensi tinggi beserta hasil-hasil
 
 ### Matematika murni dan geometri diskret
 
-Bagi matematikawan yang bekerja di geometri dimensi tinggi dan analisis harmonik, penentuan laju peluruhan Cohn-Elkies yang tepat menggeser lanskap riset. Karena batas bawah yang sepadan membuktikan bahwa tidak ada fungsi bantu dalam $\mathcal{A}_d$ yang dapat mengalahkan eksponen baru, para peneliti dapat berhenti mencari fungsi uji radial yang lebih baik di dalam kerangka pemrograman linear klasik. Kemajuan menuju pengepakan bola yang lebih padat atau batas universal yang lebih ketat kini harus menjelajahi teknik pemrograman nonlinear, hierarki semidefinit orde lebih tinggi, atau konstruksi geometris yang sama sekali berbeda.
+Bagi matematikawan yang bekerja di geometri dimensi tinggi dan analisis harmonik, penentuan laju peluruhan Cohn-Elkies yang tepat menggeser lanskap riset. Karena batas bawah yang sepadan membuktikan bahwa tidak ada fungsi bantu dalam 𝒜\_d yang dapat mengalahkan eksponen baru, para peneliti dapat berhenti mencari fungsi uji radial yang lebih baik di dalam kerangka pemrograman linear klasik. Kemajuan menuju pengepakan bola yang lebih padat atau batas universal yang lebih ketat kini harus menjelajahi teknik pemrograman nonlinear, hierarki semidefinit orde lebih tinggi, atau konstruksi geometris yang sama sekali berbeda.
 
 ### Kriptografi dan keamanan berbasis kekisi
 
-Kriptografi berbasis kekisi, yang menjadi inti standar pascakuantum seperti ML-KEM dan ML-DSA, sangat bergantung pada dugaan kekerasan mencari vektor terpendek atau terdekat dalam kekisi Euklides berdimensi tinggi. Reduksi langsung dari 3SAT yang menetapkan kekerasan dengan faktor $n^{1/400}$ untuk Masalah Vektor Terdekat (CVP) Euklides, digabungkan dengan batas atas eksponensial yang lebih ketat pada pengepakan bola dan kode sferis, memperkokoh landasan teoretis di balik reduksi kekisi kasus terburuk ke kasus rata-rata tanpa melemahkan parameter keamanan konkret.
+Kriptografi berbasis kekisi, yang menjadi inti standar pascakuantum seperti ML-KEM dan ML-DSA, sangat bergantung pada dugaan kekerasan mencari vektor terpendek atau terdekat dalam kekisi Euklides berdimensi tinggi. Reduksi langsung dari 3SAT yang menetapkan kekerasan dengan faktor n\^(1/400) untuk Masalah Vektor Terdekat (CVP) Euklides, digabungkan dengan batas atas eksponensial yang lebih ketat pada pengepakan bola dan kode sferis, memperkokoh landasan teoretis di balik reduksi kekisi kasus terburuk ke kasus rata-rata tanpa melemahkan parameter keamanan konkret.
 
 ### Pembuktian teorema otomatis dan model fondasi
 
@@ -267,7 +267,7 @@ Cohn dan Gonçalves menunjukkan bahwa masalah ketidakpastian tanda Fourier kompl
 
 **Apakah hasil ini membahayakan kriptografi berbasis kekisi?**
 
-Tidak. Meskipun teorema ini mempertajam batas atas tentang seberapa padat bola dapat dikemas di dimensi tinggi dan menetapkan kekerasan dengan faktor $n^{1/400}$ untuk Masalah Vektor Terdekat, ia tidak menyediakan algoritme reduksi kekisi berwaktu polinomial. Sistem kripto kekisi praktis tetap aman terhadap serangan kuantum dan klasik yang diketahui.
+Tidak. Meskipun teorema ini mempertajam batas atas tentang seberapa padat bola dapat dikemas di dimensi tinggi dan menetapkan kekerasan dengan faktor n\^(1/400) untuk Masalah Vektor Terdekat, ia tidak menyediakan algoritme reduksi kekisi berwaktu polinomial. Sistem kripto kekisi praktis tetap aman terhadap serangan kuantum dan klasik yang diketahui.
 
 ## Referensi
 

@@ -127,9 +127,9 @@ Pambihira na ang pagganap ng pamamaraang iyon. Ang pinakamahusay na karaniwang a
 | :--- | :--- | :--- |
 | **Pisikal na mekanismo** | Mga transisyon sa balat ng electron (cesium/strontium) | Mga transisyon ng proton/neutron sa loob ng nucleus ng thorium-229 |
 | **Midyum ng pagsisiyasat** | Microwave o optical laser sa mga valence electron | Vacuum ultraviolet laser sa mga nucleus na nakabaon sa kristal |
-| **Substrato** | Mga gas cell o laser-cooled na bitag ng optical lattice | Solidong kristal ng calcium fluoride ($CaF_2$) |
-| **Kasalukuyang pagganap** | Bilyun-bilyong taon upang madagdagan/mabawasan ng $\le 1$ segundo | Napantayan ang katumpakan ng atomic clock sa paghahanap ng dark matter |
-| **Target na katatagan** | Itinatag na internasyonal na pamantayan ($10^{-18}$) | Inaasahang pagbuti ng katatagan nang isang order of magnitude |
+| **Substrato** | Mga gas cell o laser-cooled na bitag ng optical lattice | Solidong kristal ng calcium fluoride (CaF₂) |
+| **Kasalukuyang pagganap** | Bilyun-bilyong taon upang madagdagan/mabawasan ng ≤ 1 segundo | Napantayan ang katumpakan ng atomic clock sa paghahanap ng dark matter |
+| **Target na katatagan** | Itinatag na internasyonal na pamantayan (10⁻¹⁸) | Inaasahang pagbuti ng katatagan nang isang order of magnitude |
 | **Anyo ng hardware** | Malaki at maselang vacuum apparatus sa laboratoryo | Potensiyal para sa siksik at matibay na solid-state na yunit sa field |
 
 Inililipat ng mga bagong orasan ang lugar kung saan nangyayari ang lundag. Sa halip na mga electron sa balat, gumagamit sila ng laser upang palundagin ang mga proton at neutron sa pagitan ng mga antas ng enerhiya sa loob ng nucleus ng isang atom, sa kasong ito ang thorium-229. Kinakalkula ang oras sa isang nuclear clock sa pamamagitan ng pagmamasid kung paano nakikipag-ugnayan ang isang malakas na laser sa nucleus ng isang atom.
@@ -226,7 +226,7 @@ Kung mapatunayang hindi gaanong malaki at maselan sa produksyon ang mga arkitekt
 
 ### Pangunahing pisika at astropisika
 
-Dahil direktang nakasalalay ang mga antas ng enerhiya ng nucleus sa strong force at sa electromagnetic coupling constant na $\alpha$, nag-aalok ang mga nuclear clock ng bagong pagiging sensitibo sa pagsubok kung nagbabago ang mga pangunahing pisikal na constant sa paglipas ng kosmikong panahon at sa pagsisiyasat ng mga kandidato para sa dark matter.
+Dahil direktang nakasalalay ang mga antas ng enerhiya ng nucleus sa strong force at sa electromagnetic coupling constant na α, nag-aalok ang mga nuclear clock ng bagong pagiging sensitibo sa pagsubok kung nagbabago ang mga pangunahing pisikal na constant sa paglipas ng kosmikong panahon at sa pagsisiyasat ng mga kandidato para sa dark matter.
 
 ## Konklusyon
 

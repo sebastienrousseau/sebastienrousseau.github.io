@@ -13,7 +13,7 @@ description: "《2026 年后量子安全记分卡》为董事会与高级管理�
 format-detection: "telephone=no"
 hreflang: "zh-hans"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/zh-hans/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+id: "https://sebastienrousseau.com/zh-hans/2026-06-29-hou-liangzi-anquan-jifenka-2026"
 image_alt: "Sebastien Rousseau 黑白肖像"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/zh-hans/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+permalink: "https://sebastienrousseau.com/zh-hans/2026-06-29-hou-liangzi-anquan-jifenka-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -39,7 +39,7 @@ subtitle: "董事会如何度量并治理向 NIST FIPS 203 与 204 的迁移，�
 tags: "后量子, 密码学, 银行业, 治理, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
 theme-color: "0, 83, 191"
 title: "2026 后量子安全记分卡：面向董事会的度量框架"
-url: "https://sebastienrousseau.com/zh-hans/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+url: "https://sebastienrousseau.com/zh-hans/2026-06-29-hou-liangzi-anquan-jifenka-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/rss.xml"
 category: "Technology"
@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>延伸阅读：</strong><a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib 与 2026 年的后量子银行业迁移</a>、<a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber：量子时代的守护算法</a>。</p>
 </aside>
+
 后量子安全不再是研究课题。"监管时钟"正在向 2020 年代后期的强制执行截止时点逼近。[NIST FIPS 203（ML-KEM）](https://csrc.nist.gov/pubs/fips/203/final)与 [NIST FIPS 204（ML-DSA）](https://csrc.nist.gov/pubs/fips/204/final)的定稿已经将密钥封装与数字签名的标准固化下来。
 
 监管机构现已要求一级银行走出试点阶段。2026 年的重点已经转向上述标准的产业化落地。无法出示清晰迁移路径，将在 [《数字运营韧性法案》（DORA）](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) 下招致重大监管处罚，并可能让无视量子解密这一可预见威胁的董事承担个人法律责任。

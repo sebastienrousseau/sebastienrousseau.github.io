@@ -13,7 +13,7 @@ description: "De Post-Quantum Security Scorecard 2026 biedt besturen en senior m
 format-detection: "telephone=no"
 hreflang: "nl"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/nl/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+id: "https://sebastienrousseau.com/nl/2026-06-29-post-quantum-security-scorecard-2026-een"
 image_alt: "Zwart-witportret van Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/nl/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+permalink: "https://sebastienrousseau.com/nl/2026-06-29-post-quantum-security-scorecard-2026-een"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -39,7 +39,7 @@ subtitle: "Hoe besturen de migratie naar NIST FIPS 203 en 204 moeten meten en be
 tags: "post-kwantum, cryptografie, banken, governance, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
 theme-color: "0, 83, 191"
 title: "Post-Quantum Security Scorecard 2026: een metriekkader op bestuursniveau"
-url: "https://sebastienrousseau.com/nl/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+url: "https://sebastienrousseau.com/nl/2026-06-29-post-quantum-security-scorecard-2026-een"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/rss.xml"
 category: "Technology"
@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Gerelateerde lectuur:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib en de post-kwantum migratie in banken in 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: het beschermingsalgoritme in een kwantumtijdperk</a>.</p>
 </aside>
+
 Post-kwantum beveiliging is geen onderzoeksproject meer. De "toezichtsklok" tikt richting handhavingsdeadlines aan het einde van de jaren 2020. De afronding van [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) en [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) heeft de standaarden voor sleutelinkapseling en digitale handtekeningen gecodificeerd.
 
 Toezichthouders verwachten nu van Tier-1 banken dat zij verder gaan dan pilotprogramma's. In 2026 ligt de focus op de industrialisatie van deze standaarden. Het niet kunnen aantonen van een helder migratiepad brengt aanzienlijke toezichtssancties met zich mee onder de [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) en potentiële persoonlijke aansprakelijkheid voor bestuurders die de voorzienbare dreiging van kwantum-gestuurde ontsleuteling negeren.

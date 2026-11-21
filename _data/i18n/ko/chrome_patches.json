@@ -75,7 +75,7 @@
     ],
     [
       "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
-      "<li><a href=\"/ko/nonmun/index.html\">논문</a></li>"
+      "<li><a href=\"/ko/yeongu/index.html\">논문</a></li>"
     ],
     [
       "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
@@ -127,7 +127,7 @@
     ],
     [
       "<a href=\"?/papers/index\\.html\"?>Papers</a>",
-      "<a href=\"/ko/nonmun/index.html\">논문</a>"
+      "<a href=\"/ko/yeongu/index.html\">논문</a>"
     ],
     [
       "<a href=\"?/tags/index\\.html\"?>Tags</a>",

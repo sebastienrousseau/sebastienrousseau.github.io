@@ -13,7 +13,7 @@ description: "Ìmọ̀ 2026 fún ìmúrasílẹ̀ ìjọba owó adásí — iṣ
 format-detection: "telephone=no"
 hreflang: "yo"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/yo/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+id: "https://sebastienrousseau.com/yo/2026-06-07-imo-ijoba-owo-adasi-2026-agentic"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/yo/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+permalink: "https://sebastienrousseau.com/yo/2026-06-07-imo-ijoba-owo-adasi-2026-agentic"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "treasury, agentic AI, owó tó ń ṣàn nípasẹ̀ ètò, tokenised dep
 excerpt: "Ìmọ̀ ìmúrasílẹ̀ ìjọba owó adásí 2026 — ó ń wọ̀nwọ́n iṣẹ́ ìjọba owó agentic, ìbojúwò ìṣàn-owó tó lè ṣètò, ìparapọ̀ ifowopamọ́ tokens, ìṣètò ìsanwó akóko, àti ìṣàkóso owó akóko aládàáṣe gẹ́gẹ́ bí àwòṣe ìṣiṣẹ́ kan."
 theme-color: "0, 83, 191"
 title: "Ìmọ̀ Ìjọba Owó Adásí 2026: Agentic, Ìṣàn-owó Tó Lè Ṣètò, Ifowopamọ́ Tokens, Ìṣàkóso Owó Akóko"
-url: "https://sebastienrousseau.com/yo/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+url: "https://sebastienrousseau.com/yo/2026-06-07-imo-ijoba-owo-adasi-2026-agentic"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/rss.xml"
 category: "Finance"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Pẹpẹ ìṣàkóso ni ojú ìṣàyẹ̀wò titun.</strong> Àwọn àṣẹ, àwọn ààlà, àwọn ọ̀nà ìparẹ́ ọwọ́, àti ẹ̀rí ìyípadà gbọ́dọ̀ ṣiṣẹ́ gẹ́gẹ́ bí ìpilẹ̀ pèpéle, kì í ṣe ìfàṣẹsí ọwọ́ fún-ìṣe-kọ̀ọ̀kan.</li>
   <li><strong>Tábìlì ìdíwọ̀n CFO jẹ́ fún-ìpinnu-kọ̀ọ̀kan, kì í ṣe fún-ìdámẹ́rin-ọdún.</strong> Ìnáwó owó, ìdín kù ti owó tó ń mú lóòjọ́, ìmúdájú FX, àti ìtọ́ ìfọkànbalẹ̀ ni a ń wọ̀n ní ìyára iṣẹ́.</li>
 </ul>
-<p class="post-lead-related"><strong>Àwọn àpilẹ̀kọ ìbátan:</strong> <a href="https://sebastienrousseau.com/yo/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html">Ìṣàn-owó Tó Lè Ṣètò ní 2026: AI, Ifowopamọ́ Tokens, àti Ìṣètò Ìjọba Owó Akóko</a>, <a href="https://sebastienrousseau.com/yo/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Ifowopamọ́ Tokens ní 2026: Iṣẹ́ Bánkì, Ìdíje Stablecoin, àti Ipò Owó Bánkì Tó Lè Ṣètò</a>.</p>
+<p class="post-lead-related"><strong>Àwọn àpilẹ̀kọ ìbátan:</strong> <a href="https://sebastienrousseau.com/yo/2026-05-25-owo-to-san-nipase-eto-2026/index.html">Ìṣàn-owó Tó Lè Ṣètò ní 2026: AI, Ifowopamọ́ Tokens, àti Ìṣètò Ìjọba Owó Akóko</a>, <a href="https://sebastienrousseau.com/yo/2026-05-21-adeposito-tokenized-2026-ise-banki-idije/index.html">Ifowopamọ́ Tokens ní 2026: Iṣẹ́ Bánkì, Ìdíje Stablecoin, àti Ipò Owó Bánkì Tó Lè Ṣètò</a>.</p>
 </aside>
 <!-- lead-end -->
 

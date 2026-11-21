@@ -127,9 +127,9 @@ Aikin wannan hanya ya riga ya zama abin mamaki. Mafi kyawun agogon atom na yau d
 | :--- | :--- | :--- |
 | **Tsarin kimiyya** | Sauye-sauye a bawon electron (cesium/strontium) | Sauye-sauyen proton/neutron a cikin tsakiyar thorium-229 |
 | **Hanyar bincike** | Microwave ko laser na gani akan electron na waje | Laser na hasken ultraviolet na sarari akan tsakiyoyin da ke cikin lu'ulu'u |
-| **Abin ɗauka** | Ƙwayoyin gas ko tarkon lattice na gani da laser ke sanyayawa | Ƙaƙƙarfan lu'ulu'un calcium fluoride ($CaF_2$) |
-| **Aikin yanzu** | Biliyoyin shekaru don ƙara/rasa $\le 1$ daƙiƙa | Ya kai daidaiton agogon atom a binciken duhun abu |
-| **Kwanciyar da ake nema** | Ma'aunin ƙasa da ƙasa da aka kafa ($10^{-18}$) | Ana hasashen ingantar kwanciya da mataki ɗaya na girma |
+| **Abin ɗauka** | Ƙwayoyin gas ko tarkon lattice na gani da laser ke sanyayawa | Ƙaƙƙarfan lu'ulu'un calcium fluoride (CaF₂) |
+| **Aikin yanzu** | Biliyoyin shekaru don ƙara/rasa ≤ 1 daƙiƙa | Ya kai daidaiton agogon atom a binciken duhun abu |
+| **Kwanciyar da ake nema** | Ma'aunin ƙasa da ƙasa da aka kafa (10⁻¹⁸) | Ana hasashen ingantar kwanciya da mataki ɗaya na girma |
 | **Siffar kayan aiki** | Babbar na'urar sarari mai rauni a ɗakin gwaje-gwaje | Damar samun ƙananan na'urori masu ƙarfi na filin aiki |
 
 Sababbin agogunan suna canza wurin da tsallen ke faruwa. Maimakon electron a cikin bawo, suna amfani da laser don sa proton da neutron su yi tsalle tsakanin matakan makamashi a cikin tsakiyar atom, a nan thorium-229. Ana ƙididdige lokaci a agogon nukiliya ta hanyar lura da yadda laser mai ƙarfi ke mu'amala da tsakiyar atom.
@@ -226,7 +226,7 @@ Idan tsarin ƙaƙƙarfan lu'ulu'un calcium fluoride ya tabbatar da cewa ba shi d
 
 ### Asalin kimiyyar lissafi da ilimin taurari
 
-Domin matakan makamashin tsakiyar atom sun dogara kai tsaye ga ƙarfi mai ƙarfi da ƙididdigar haɗin wutar lantarki da maganaɗisu $\alpha$, agogon nukiliya suna ba da sabuwar hankali don gwada ko ainihin ƙididdigar kimiyyar lissafi na canzawa a tsawon lokacin sararin samaniya da kuma binciken masu yiwuwar zama duhun abu.
+Domin matakan makamashin tsakiyar atom sun dogara kai tsaye ga ƙarfi mai ƙarfi da ƙididdigar haɗin wutar lantarki da maganaɗisu α, agogon nukiliya suna ba da sabuwar hankali don gwada ko ainihin ƙididdigar kimiyyar lissafi na canzawa a tsawon lokacin sararin samaniya da kuma binciken masu yiwuwar zama duhun abu.
 
 ## Kammalawa
 

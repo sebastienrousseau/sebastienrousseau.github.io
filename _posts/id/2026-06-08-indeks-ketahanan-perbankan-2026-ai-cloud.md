@@ -13,7 +13,7 @@ description: "Indeks ketahanan perbankan 2026 menggabungkan risiko AI, konsentra
 format-detection: "telephone=no"
 hreflang: "id"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/id/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+id: "https://sebastienrousseau.com/id/2026-06-08-indeks-ketahanan-perbankan-2026-ai-cloud"
 image_alt: "Potret Hitam Putih Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/id/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+permalink: "https://sebastienrousseau.com/id/2026-06-08-indeks-ketahanan-perbankan-2026-ai-cloud"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "ketahanan perbankan, DORA, risiko AI, konsentrasi cloud, risiko kuantum, 
 excerpt: "Indeks ketahanan perbankan 2026 — menggabungkan risiko AI, konsentrasi cloud, migrasi tahan-kuantum, kontinuitas pembayaran, dan ketergantungan pihak ketiga kritis ke dalam satu papan skor ketahanan operasional yang dapat dibaca dewan direksi dan otoritas pengawas."
 theme-color: "0, 83, 191"
 title: "Indeks Ketahanan Perbankan 2026: AI, Cloud, Kuantum, Pembayaran, dan Risiko Konsentrasi Pihak Ketiga"
-url: "https://sebastienrousseau.com/id/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+url: "https://sebastienrousseau.com/id/2026-06-08-indeks-ketahanan-perbankan-2026-ai-cloud"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/rss.xml"
 category: "Risk"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Migrasi tahan-kuantum adalah metrik ketahanan operasional, bukan metrik keamanan.</strong> Data berumur panjang yang terekspos hari ini akan gagal uji ketahanan di masa depan.</li>
   <li><strong>Konsentrasi pihak ketiga kini bersifat sistemik.</strong> Ketergantungan pada satu hyperscaler, satu PSP, atau satu penyedia LLM memetakan titik kegagalan tunggal pada papan skor ketahanan.</li>
 </ul>
-<p class="post-lead-related"><strong>Bacaan terkait:</strong> <a href="https://sebastienrousseau.com/id/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA, EU AI Act, dan Kedaulatan Data: Tumpukan Kepatuhan 2026 bagi Bank</a>, <a href="https://sebastienrousseau.com/id/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">Perbankan Cloud Native pada 2026: Kubernetes, DORA, Kedaulatan, dan Berakhirnya Pembagian VM vs Kontainer</a>.</p>
+<p class="post-lead-related"><strong>Bacaan terkait:</strong> <a href="https://sebastienrousseau.com/id/2026-05-28-dora-eu-ai-act-dan-kedaulatan/index.html">DORA, EU AI Act, dan Kedaulatan Data: Tumpukan Kepatuhan 2026 bagi Bank</a>, <a href="https://sebastienrousseau.com/id/2026-05-20-perbankan-cloud-native-pada-2026-kubernetes/index.html">Perbankan Cloud Native pada 2026: Kubernetes, DORA, Kedaulatan, dan Berakhirnya Pembagian VM vs Kontainer</a>.</p>
 </aside>
 <!-- lead-end -->
 

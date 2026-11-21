@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "แบนเนอร์เอกสารเชิงนโยบายสถาปัตยกรรมธนาคาร 2026"
 twitter_site: "@wwdseb"
 twitter_title: "เอกสารเชิงนโยบายสถาปัตยกรรมธนาคาร 2026"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -186,7 +186,7 @@ Digital Operational Resilience Act ได้ยกระดับภาระท
 2. **การสูญหายของข้อมูลแบบเงียบจาก MT ไป MX.** ธนาคารที่ส่ง MT103 ที่มีข้อมูลที่อยู่หรือโอนเงินถูกตัดทอน จะถูกรับเข้าช่อง MX อย่างเรียบร้อย — แต่ฟิลด์ที่มีโครงสร้างกลับว่างเปล่า ผลกระทบปลายน้ำ (การกลั่นกรองคว่ำบาตรล้มเหลว, ทริกเกอร์ AML ที่พลาดไป, การกระทบยอดที่แตก) จะปรากฏ 30–90 วันหลังตัดผ่าน เลยช่วงการสืบหาในหน้าต่างการเปลี่ยนแปลงไปไกล ทะเบียนระบุปริมาณต้นทุนการแก้ไข back-book ที่คาดหวังต่อการชำระเงินทุก €1 พันล้าน
 3. **การระบุเจ้าของการกระทำของเอเจนต์.** เมื่อเอเจนต์ทรีเชอรีที่หนุนหลังด้วย LLM ทริกเกอร์ห่วงโซ่การชำระเงิน มี principal สามรายที่อ้างความเป็นเจ้าของได้ — เจ้าของโมเดล, ผู้ให้บริการราง และผู้เขียนนโยบาย หากไม่มีการตัดสินใจระบุเจ้าของที่ฝังไว้ชัดในชั้นการประสาน ธนาคารจะรับความรับผิดทั้งสามไป ทะเบียนกำหนดต้นไม้การระบุเจ้าของ และห่วงโซ่หลักฐานตาม `SR 11-7` ที่จำเป็นเพื่อปกป้องไว้
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="ดาวน์โหลดเอกสารเชิงนโยบายสถาปัตยกรรมธนาคาร 2026 (PDF)">ดาวน์โหลดสรุป PDF</a> <a class="pill ghost no-chev" href="/papers" title="ดูเอกสารเชิงนโยบายและงานวิจัยที่ตีพิมพ์ทั้งหมด">เอกสารเชิงนโยบายทั้งหมด</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="ดาวน์โหลดเอกสารเชิงนโยบายสถาปัตยกรรมธนาคาร 2026 (PDF)">ดาวน์โหลดสรุป PDF</a> <a class="pill ghost no-chev" href="/research" title="ดูเอกสารเชิงนโยบายและงานวิจัยที่ตีพิมพ์ทั้งหมด">เอกสารเชิงนโยบายทั้งหมด</a></p>
 
 ## สรุปการทบทวนภายใน
 

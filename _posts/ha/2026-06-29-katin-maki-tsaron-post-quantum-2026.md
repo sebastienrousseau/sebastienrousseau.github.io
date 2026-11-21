@@ -13,7 +13,7 @@ description: "Katin Maki na Tsaron Post-Quantum na 2026 yana ba hukumomi da many
 format-detection: "telephone=no"
 hreflang: "ha"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/ha/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+id: "https://sebastienrousseau.com/ha/2026-06-29-katin-maki-tsaron-post-quantum-2026"
 image_alt: "Hoton Sebastien Rousseau a baki da fari"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/ha/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+permalink: "https://sebastienrousseau.com/ha/2026-06-29-katin-maki-tsaron-post-quantum-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -39,7 +39,7 @@ subtitle: "Yadda hukumomi dole ne su auna kuma su gudanar da ƙaura zuwa NIST FI
 tags: "post-quantum, cryptography, banki, gudanarwa, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
 theme-color: "0, 83, 191"
 title: "Katin Maki na Tsaron Post-Quantum na 2026: Tsari na Ma'auni na Matakin Hukumar"
-url: "https://sebastienrousseau.com/ha/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+url: "https://sebastienrousseau.com/ha/2026-06-29-katin-maki-tsaron-post-quantum-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/rss.xml"
 category: "Technology"
@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Karatu masu alaƙa:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib da Ƙaurar Banki na Post-Quantum a 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: Algorithm na Tsaro a Zamanin Quantum</a>.</p>
 </aside>
+
 Tsaron post-quantum ba shi ne aikin bincike ba kuma. "Agogon kulawa" yana ƙirgawa zuwa iyakar lokaci na karshen 2020s. Ƙarewar [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) da [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) sun tabbatar da ma'aunin na key encapsulation da sa hannun dijital.
 
 Hukumomin tsari yanzu suna sa ran cewa bankunan Tier-1 za su wuce shirye-shiryen gwaji. A 2026, hankali ya canja zuwa masana'antar waɗannan ma'aunin. Rashin nuna hanyar ƙaura bayyananne yana ɗauke da hukunci mai tsanani na tsari a ƙarƙashin [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) da yiwuwar alhakin mutum na daraktoci waɗanda suka yi watsi da barazana mai yiwuwar na decryption ta quantum.

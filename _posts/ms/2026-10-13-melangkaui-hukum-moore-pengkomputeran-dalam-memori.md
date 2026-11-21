@@ -129,13 +129,13 @@ Dalam pengkomputeran digital klasik, mengira hasil darab titik matriks memerluka
 
 Seni bina pengkomputeran dalam memori menggantikan pemindahan data digital ini dengan fizik litar analog:
 
-**Pengaturcaraan pemberat.** Pemberat rangkaian neural diaturcarakan terus ke dalam sel memori tidak meruap (seperti memori kilat yang diubah suai atau RAM rintangan) sebagai konduktans analog ($G$). Setelah diaturcarakan, pemberat kekal pegun di dalam tatasusunan memori; pemberat tidak pernah diambil atau dipindahkan semasa inferens.
+**Pengaturcaraan pemberat.** Pemberat rangkaian neural diaturcarakan terus ke dalam sel memori tidak meruap (seperti memori kilat yang diubah suai atau RAM rintangan) sebagai konduktans analog (*G*). Setelah diaturcarakan, pemberat kekal pegun di dalam tatasusunan memori; pemberat tidak pernah diambil atau dipindahkan semasa inferens.
 
-**Modulasi voltan input.** Pengaktifan input (seperti token visual daripada kamera) ditukar kepada aras voltan analog ($V$) dan dipacu sepanjang talian perkataan tatasusunan.
+**Modulasi voltan input.** Pengaktifan input (seperti token visual daripada kamera) ditukar kepada aras voltan analog (*V*) dan dipacu sepanjang talian perkataan tatasusunan.
 
-**Pendaraban Hukum Ohm.** Apabila voltan input melalui setiap sel memori, Hukum Ohm ($I = V \times G$) melakukan pendaraban analog serta-merta dan menjana arus elektrik yang berkadar dengan hasil darab input dan pemberat yang disimpan.
+**Pendaraban Hukum Ohm.** Apabila voltan input melalui setiap sel memori, Hukum Ohm (*I* = *V* × *G*) melakukan pendaraban analog serta-merta dan menjana arus elektrik yang berkadar dengan hasil darab input dan pemberat yang disimpan.
 
-**Pengumpulan Hukum Arus Kirchhoff.** Di sepanjang talian bit menegak, arus daripada beribu-ribu sel memori selari bertambah secara semula jadi mengikut Hukum Arus Kirchhoff ($\sum I = 0$).
+**Pengumpulan Hukum Arus Kirchhoff.** Di sepanjang talian bit menegak, arus daripada beribu-ribu sel memori selari bertambah secara semula jadi mengikut Hukum Arus Kirchhoff (Σ*I* = 0).
 
 Oleh itu, satu tatasusunan memori kilat melaksanakan keseluruhan pendaraban matriks-vektor dalam satu kitaran jam, beroperasi pada tahap fizik tanpa sebarang pengambilan memori. Arus analog yang terkumpul kemudian ditukar semula kepada nilai digital oleh penukar analog-ke-digital (ADC) berkelajuan tinggi di pinggir tatasusunan.
 
@@ -208,7 +208,7 @@ Peralihan daripada kelompok pusat data 700 W kepada silikon pinggir 15 W ialah p
 Kesesakan Von Neumann merujuk kepada had daya pemprosesan dan tenaga yang disebabkan oleh pemisahan fizikal antara unit pemprosesan pusat (ALU) dan memori sistem (DRAM). Dalam beban kerja kecerdasan buatan, yang melibatkan berbilion pendaraban matriks, pemproses menghabiskan lebih 85% jumlah tenaganya dan banyak kitaran jam semata-mata untuk mengulang-alik data merentas bas tembaga, sekali gus mewujudkan kesesakan haba dan kependaman yang teruk.
 
 **Bagaimanakah pengkomputeran analog dalam memori (CIM) berfungsi?**
-Pengkomputeran dalam memori melakukan operasi matematik terus di dalam sel memori tanpa memindahkan data. Pemberat rangkaian neural disimpan sebagai keadaan konduktans analog di dalam sel memori tidak meruap. Apabila voltan input dikenakan merentas tatasusunan, arus mengalir melalui sel mengikut Hukum Ohm ($I = V \times G$) dan bertambah di sepanjang talian bit mengikut Hukum Arus Kirchhoff. Ini menyempurnakan pendaraban matriks-vektor lengkap dalam satu langkah fizikal.
+Pengkomputeran dalam memori melakukan operasi matematik terus di dalam sel memori tanpa memindahkan data. Pemberat rangkaian neural disimpan sebagai keadaan konduktans analog di dalam sel memori tidak meruap. Apabila voltan input dikenakan merentas tatasusunan, arus mengalir melalui sel mengikut Hukum Ohm (*I* = *V* × *G*) dan bertambah di sepanjang talian bit mengikut Hukum Arus Kirchhoff. Ini menyempurnakan pendaraban matriks-vektor lengkap dalam satu langkah fizikal.
 
 **Mengapakah pengkomputeran dalam memori amat penting bagi robotik dan dron?**
 Robot mudah alih dan dron beroperasi di bawah kekangan SWaP-C (saiz, berat, kuasa dan kos) yang ketat. Kedua-duanya bergantung pada bateri dalaman dan tidak dapat menampung radiator penyejuk yang berat atau bekalan kuasa berwatt tinggi. Pengkomputeran dalam memori memberikan kecekapan tenaga 10 hingga 1,000 kali lebih tinggi, membolehkan robot menjalankan model penglihatan-bahasa-tindakan yang kompleks secara setempat dalam sampul kuasa 10 W hingga 20 W sambil mengekalkan ketahanan bateri.

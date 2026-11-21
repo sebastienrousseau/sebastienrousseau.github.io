@@ -13,7 +13,7 @@ description: "2026 양자내성 보안 스코어카드는 이사회와 고위 �
 format-detection: "telephone=no"
 hreflang: "ko"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/ko/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+id: "https://sebastienrousseau.com/ko/2026-06-29-2026-yangjanaeseong-boan-seukoeokadeu-isahoe-chawonui"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/ko/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+permalink: "https://sebastienrousseau.com/ko/2026-06-29-2026-yangjanaeseong-boan-seukoeokadeu-isahoe-chawonui"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -39,7 +39,7 @@ subtitle: "이사회가 NIST FIPS 203과 204로의 이전을 어떻게 측정·�
 tags: "양자내성, 암호, 뱅킹, 거버넌스, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
 theme-color: "0, 83, 191"
 title: "2026 양자내성 보안 스코어카드: 이사회 차원의 지표 프레임워크"
-url: "https://sebastienrousseau.com/ko/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+url: "https://sebastienrousseau.com/ko/2026-06-29-2026-yangjanaeseong-boan-seukoeokadeu-isahoe-chawonui"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/rss.xml"
 category: "Technology"
@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>관련 읽을거리:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">2026년 KyberLib과 양자내성 뱅킹 이전</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: 양자 시대의 보호 알고리즘</a>.</p>
 </aside>
+
 양자내성 보안은 더 이상 연구 프로젝트가 아닙니다. "감독의 시계"는 2020년대 후반 강행 기한을 향해 가고 있습니다. [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final)과 [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final)의 확정은 키 캡슐화와 디지털 서명의 표준을 명문화했습니다.
 
 규제 당국은 이제 Tier-1 은행이 파일럿 프로그램을 넘어서기를 기대합니다. 2026년에 초점은 이러한 표준의 산업화로 이동했습니다. 명확한 이전 경로를 입증하지 못하면 [디지털 운영 회복탄력성 법 (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) 아래 상당한 규제 제재를 받게 되며, 양자 기반 복호화의 예측 가능한 위협을 무시한 이사에 대한 개인적 책임이 발생할 수 있습니다.

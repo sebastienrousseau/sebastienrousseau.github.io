@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>Lectures complémentaires :</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib et la migration bancaire post-quantique en 2026</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber : l'algorithme de protection à l'ère quantique</a>.</p>
 </aside>
+
 La sécurité post-quantique n'est plus un projet de recherche. L'« horloge de surveillance » s'écoule vers les échéances de fin de décennie. La finalisation de [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) et de [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) a codifié les standards d'encapsulation de clés et de signatures numériques.
 
 Les autorités de régulation attendent désormais des banques de premier rang qu'elles dépassent le stade des programmes pilotes. En 2026, l'attention s'est déplacée vers l'industrialisation de ces standards. L'incapacité à démontrer une trajectoire de migration claire entraîne de lourdes sanctions réglementaires au titre du [Digital Operational Resilience Act (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) et une responsabilité personnelle potentielle pour les dirigeants qui ignorent la menace prévisible du déchiffrement assisté par calcul quantique.

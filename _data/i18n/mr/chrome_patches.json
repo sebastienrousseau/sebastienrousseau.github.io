@@ -74,7 +74,7 @@
     ],
     [
       "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
-      "<li><a href=\"/mr/papers/index.html\">प्रकाशने</a></li>"
+      "<li><a href=\"/mr/research/index.html\">प्रकाशने</a></li>"
     ],
     [
       "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
@@ -126,7 +126,7 @@
     ],
     [
       "<a href=\"?/papers/index\\.html\"?>Papers</a>",
-      "<a href=\"/mr/papers/index.html\">प्रकाशने</a>"
+      "<a href=\"/mr/research/index.html\">प्रकाशने</a>"
     ],
     [
       "<a href=\"?/tags/index\\.html\"?>Tags</a>",

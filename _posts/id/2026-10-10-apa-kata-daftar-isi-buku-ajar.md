@@ -158,7 +158,7 @@ Para penulis juga menjelaskan mengapa bidang ini berada di tempatnya. Karena keb
 
 | Dimensi | Kompleksitas Waktu | Kompleksitas Ruang | Kompleksitas Sampel |
 | :--- | :--- | :--- | :--- |
-| **Definisi Operasional** | Waktu jalan asimtotik yang diperlukan untuk menghasilkan hipotesis $h$ | Jejak memori yang diperlukan selama pelatihan dan evaluasi | Jumlah contoh pelatihan $m$ yang diperlukan untuk mempelajari keluarga konsep |
+| **Definisi Operasional** | Waktu jalan asimtotik yang diperlukan untuk menghasilkan hipotesis *h* | Jejak memori yang diperlukan selama pelatihan dan evaluasi | Jumlah contoh pelatihan *m* yang diperlukan untuk mempelajari keluarga konsep |
 | **Teori yang Mengatur** | Kompleksitas komputasi (P vs NP, kesulitan pelatihan) | Batasan memori arsitektur dan lokalitas cache | Pembelajaran PAC, kompleksitas Rademacher, dan dimensi VC |
 | **Implikasi Biaya** | Komputasi server dan anggaran inferensi GPU/CPU | Kapasitas RAM dan SRAM dalam cip | Biaya pengumpulan, anotasi, dan pelabelan data |
 | **Peran Teoretis** | Mengukur efisiensi waktu jalan algoritme | Mengukur efisiensi sumber daya ruang | Menentukan galat generalisasi dan batasnya atas data yang belum dilihat |

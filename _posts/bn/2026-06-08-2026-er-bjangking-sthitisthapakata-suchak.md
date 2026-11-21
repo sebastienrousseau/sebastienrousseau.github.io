@@ -13,7 +13,7 @@ description: "2026-এর ব্যাংকিং স্থিতিস্থ�
 format-detection: "telephone=no"
 hreflang: "bn"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/bn/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+id: "https://sebastienrousseau.com/bn/2026-06-08-2026-er-bjangking-sthitisthapakata-suchak"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/bn/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+permalink: "https://sebastienrousseau.com/bn/2026-06-08-2026-er-bjangking-sthitisthapakata-suchak"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "ব্যাংকিং স্থিতিস্থাপকতা, DORA
 excerpt: "2026-এর ব্যাংকিং স্থিতিস্থাপকতা সূচক — AI ঝুঁকি, ক্লাউড কেন্দ্রীভবন, কোয়ান্টাম-নিরাপদ মাইগ্রেশন, পেমেন্ট ধারাবাহিকতা ও সঙ্কটপূর্ণ তৃতীয় পক্ষের নির্ভরতাকে একটিমাত্র পরিচালনগত-স্থিতিস্থাপকতা স্কোরবোর্ডে পরিণত করে — যা পর্ষদ ও তত্ত্বাবধায়ক দু-পক্ষই পড়তে পারেন।"
 theme-color: "0, 83, 191"
 title: "2026-এর ব্যাংকিং স্থিতিস্থাপকতা সূচক: AI, ক্লাউড, কোয়ান্টাম ও পেমেন্ট"
-url: "https://sebastienrousseau.com/bn/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+url: "https://sebastienrousseau.com/bn/2026-06-08-2026-er-bjangking-sthitisthapakata-suchak"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/rss.xml"
 category: "Risk"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>কোয়ান্টাম-নিরাপদ মাইগ্রেশন একটি পরিচালনগত-স্থিতিস্থাপকতা মেট্রিক, সুরক্ষা মেট্রিক নয়।</strong> আজ উন্মোচিত দীর্ঘস্থায়ী ডেটা আগামীকালের স্থিতিস্থাপকতা পরীক্ষায় উত্তীর্ণ হবে না।</li>
   <li><strong>তৃতীয় পক্ষের কেন্দ্রীভবন এখন সিস্টেমিক।</strong> একক-হাইপারস্কেলার, একক-PSP, একক-LLM-প্রদানকারীর নির্ভরতা স্থিতিস্থাপকতা স্কোরবোর্ডে এক-একটি একক-ব্যর্থতা-বিন্দু হিসেবে চিহ্নিত হয়।</li>
 </ul>
-<p class="post-lead-related"><strong>সম্পর্কিত পঠন:</strong> <a href="https://sebastienrousseau.com/bn/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA, EU AI আইন ও ডেটা সার্বভৌমত্ব: ব্যাংকের জন্য 2026-এর কমপ্লায়েন্স স্ট্যাক</a>, <a href="https://sebastienrousseau.com/bn/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">2026-এ ক্লাউড নেটিভ ব্যাংকিং: Kubernetes, DORA, সার্বভৌমত্ব ও VM বনাম কন্টেইনার বিভাজনের অবসান</a>।</p>
+<p class="post-lead-related"><strong>সম্পর্কিত পঠন:</strong> <a href="https://sebastienrousseau.com/bn/2026-05-28-dora-eu-ai-ain-deta-sarbabhoumatb/index.html">DORA, EU AI আইন ও ডেটা সার্বভৌমত্ব: ব্যাংকের জন্য 2026-এর কমপ্লায়েন্স স্ট্যাক</a>, <a href="https://sebastienrousseau.com/bn/2026-05-20-2026-klaud-netibh-bjangking-kubernetes-dora/index.html">2026-এ ক্লাউড নেটিভ ব্যাংকিং: Kubernetes, DORA, সার্বভৌমত্ব ও VM বনাম কন্টেইনার বিভাজনের অবসান</a>।</p>
 </aside>
 <!-- lead-end -->
 

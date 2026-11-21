@@ -85,7 +85,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "2026 Banking Architecture whitepaper banner"
 twitter_site: "@wwdseb"
 twitter_title: "2026-os banki architektúra tanulmány"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 
 # Humans.txt - The Humans.txt front matter (YAML).
 author_website: "https://sebastienrousseau.com"
@@ -128,7 +128,7 @@ Háromszintű keretet javaslunk a banki törzsrendszer korszerűsítésére: **m
 
 **A tézis.** Lépjen túl a C-alapú FFI-n tiszta Rust kriptográfiai keretrendszerek felé, több algoritmust kiszolgáló elosztással, HSM-hez kötött pepperinggel és `verify_and_upgrade` szemantikával, amely minden bejelentkezéskor újralenyomatol, felhasználó által észlelhető leállás nélkül.
 
-**Kulcsolvasmány.** [Jelszókezelés biztonságossá tétele a vállalati bankolásban: több algoritmusú lenyomatolás és frissítések a hsh-val](https://sebastienrousseau.com/hu/2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026 "Jelszókezelés biztonságossá tétele a vállalati bankolásban — hsh")
+**Kulcsolvasmány.** [Jelszókezelés biztonságossá tétele a vállalati bankolásban: több algoritmusú lenyomatolás és frissítések a hsh-val](https://sebastienrousseau.com/hu/2026-06-22-jelszokezeles-biztonsagossa-tetele-vallalati-bankszektorban-tobbalgoritmusos "Jelszókezelés biztonságossá tétele a vállalati bankolásban — hsh")
 
 ### II. pillér — Az ISO 20022 mint autonóm idegrendszer
 
@@ -136,7 +136,7 @@ Háromszintű keretet javaslunk a banki törzsrendszer korszerűsítésére: **m
 
 **A tézis.** Vezessen be ISO-elsődleges kanonikus sémát minden API-szerződésben, validációs kapuban és lefelé irányuló fogyasztóban. Elemzéskor utasítson el, ne kiegyenlítéskor. Ne fordítsa le az MX-et MT-re a peremen — fordítsa fel az MT-t MX-re egyszer, majd dobja el az MT-t.
 
-**Kulcsolvasmány.** [A Pain.001-től a programozható likviditásig: az ISO 20022 mint a treasury autonóm idegrendszere 2026-ban](https://sebastienrousseau.com/hu/2026-06-23-iso-20022-pain001-programmable-liquidity-autonomic-treasury-2026 "A Pain.001-től a programozható likviditásig — ISO 20022 2026-ban")
+**Kulcsolvasmány.** [A Pain.001-től a programozható likviditásig: az ISO 20022 mint a treasury autonóm idegrendszere 2026-ban](https://sebastienrousseau.com/hu/2026-06-23-pain-001-tol-programozhato-likviditasig-iso "A Pain.001-től a programozható likviditásig — ISO 20022 2026-ban")
 
 ### III. pillér — Többsínes orkesztráció
 
@@ -144,7 +144,7 @@ Háromszintű keretet javaslunk a banki törzsrendszer korszerűsítésére: **m
 
 **A tézis.** Vigye ki az orkesztrációt a modellből egy szabályzat-mint-kód motorba, amely folyosó, tranzakcióméret, kiegyenlítési kockázat és partnerkapcsolat alapján irányítja a fizetéseket — az ügynök pedig csak a szabályzat által kijelölt határokon belül cselekszik.
 
-**Kulcsolvasmány.** [Határon átnyúló 2026: ISO 20022, nyílt pénzügyek és tokenizált betétek a vállalati treasuryben](https://sebastienrousseau.com/hu/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026 "Határon átnyúló 2026 — nyílt pénzügyek, tokenizált betétek és többsínes treasury")
+**Kulcsolvasmány.** [Határon átnyúló 2026: ISO 20022, nyílt pénzügyek és tokenizált betétek a vállalati treasuryben](https://sebastienrousseau.com/hu/2026-06-24-hatarokon-atnyulo-2026-iso-20022-nyilt "Határon átnyúló 2026 — nyílt pénzügyek, tokenizált betétek és többsínes treasury")
 
 **Egy kidolgozott példa.** Egy 4,2 millió eurós vállalati fizetés Londonból egy spanyol beszállítónak, T+2 elfogadható, befektetési besorolású partner, deviza-láb nélkül. A szabályzat-mint-kód motor négy bemenetet mér össze egy sínmátrixszal:
 
@@ -201,7 +201,7 @@ A PDF 10 tételes programkockázati nyilvántartása azokhoz a kifejezett eltér
 2. **Néma MT–MX adatvesztés.** Azok a bankok, amelyek csonkolt cím- vagy átutalási adattal bocsátanak ki MT103-at, tisztán bejutnak az MX csatornákba — de a strukturált mezők üresen maradnak. A lefelé irányuló következmény (sikertelen szankciószűrés, elmulasztott pénzmosás-ellenes riasztások, egyeztetési törések) az átállás után 30–90 nappal jelentkezik, jóval a változáskezelési ablak vizsgálatán túl. A nyilvántartás számszerűsíti a várható múltbeli állomány javítási költségét minden 1 milliárd euró fizetési forgalomra vetítve.
 3. **Ügynöki cselekvés hozzárendelése.** Amikor egy nagy nyelvi modellel támogatott treasury-ügynök fizetési láncot indít el, három szereplő is igényt tarthat a tulajdonlásra — a modell tulajdonosa, a sín szolgáltatója, a szabályzat szerzője. Az orkesztrációs rétegbe beépített kifejezett hozzárendelési döntés nélkül a bank mindhárom felelősséget örökli. A nyilvántartás meghatározza a hozzárendelési fát és az annak megvédéséhez szükséges SR 11-7 bizonyítéki láncot.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Töltse le a 2026-os banki architektúra tanulmányt (PDF)">Töltse le a PDF-tájékoztatót</a> <a class="pill ghost no-chev" href="/papers" title="Tekintse meg az összes megjelent tanulmányt és kutatást">Összes tanulmány</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Töltse le a 2026-os banki architektúra tanulmányt (PDF)">Töltse le a PDF-tájékoztatót</a> <a class="pill ghost no-chev" href="/research" title="Tekintse meg az összes megjelent tanulmányt és kutatást">Összes tanulmány</a></p>
 
 ## Belső felülvizsgálati összefoglaló
 

@@ -13,7 +13,7 @@ description: "25 мая 2026 Папа Лев XIV выпустил Magnifica Huma
 format-detection: "telephone=no"
 hreflang: "ru"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/ru/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+id: "https://sebastienrousseau.com/ru/2026-05-26-magnifica-humanitas-prochtenie-pervoy-papskoy-entsikliki"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/ru/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+permalink: "https://sebastienrousseau.com/ru/2026-05-26-magnifica-humanitas-prochtenie-pervoy-papskoy-entsikliki"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -40,7 +40,7 @@ tags: "Magnifica Humanitas, Папа Лев XIV, этика ИИ, квантов
 excerpt: "25 мая 2026 года Папа Лев XIV выпустил Magnifica Humanitas — первую папскую энциклику об искусственном интеллекте. Прочитанная изнутри технологической индустрии не как доктрина, а как этическая рамка, она вторит моральным тревогам, сопровождавшим поезд, автомобиль, ядерную энергию и интернет, и завершается надеждой."
 theme-color: "0, 83, 191"
 title: "Magnifica Humanitas: прочтение первой папской энциклики об ИИ"
-url: "https://sebastienrousseau.com/ru/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+url: "https://sebastienrousseau.com/ru/2026-05-26-magnifica-humanitas-prochtenie-pervoy-papskoy-entsikliki"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/rss.xml"
 category: "Technology"
@@ -161,7 +161,7 @@ site_software: "Static Site Generator, Rust"
 
 Две из специфических озабоченностей энциклики напрямую ложатся на инженерию финансовых систем, и обе заслуживают ответа инженера, а не верующего.
 
-Первая — **концентрация власти в частных, транснациональных руках**. Наблюдение энциклики о том, что главными движущими силами этой технологии теперь являются частные акторы, чьи возможности превосходят возможности многих государств, — это не богословское утверждение; это точное описание ландшафта ИИ 2026 года, и это в точности та озабоченность, которая пронизывает регуляторную архитектуру, которую индустрия сейчас спешно пытается соблюсти, — высокорисковые обязательства EU AI Act, подлежащие исполнению с 2 августа 2026 года, положения DORA о риске концентрации у третьих сторон и движения за суверенное облако и суверенную плоскость управления, рассмотренные в материалах о [облачной архитектуре](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "Лучшая облачная инфраструктурная архитектура в 2026 году") и [агентной инженерии](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "Агентная инженерия для банков") на этом сайте. Энциклика и EU AI Act, что примечательно, обеспокоены одним и тем же: тем, что возможности без подотчётности концентрируют власть способами, ускользающими от демократического управления. Один говорит это на языке социальной доктрины, другой — на языке оценок соответствия. Диагноз идентичен.
+Первая — **концентрация власти в частных, транснациональных руках**. Наблюдение энциклики о том, что главными движущими силами этой технологии теперь являются частные акторы, чьи возможности превосходят возможности многих государств, — это не богословское утверждение; это точное описание ландшафта ИИ 2026 года, и это в точности та озабоченность, которая пронизывает регуляторную архитектуру, которую индустрия сейчас спешно пытается соблюсти, — высокорисковые обязательства EU AI Act, подлежащие исполнению с 2 августа 2026 года, положения DORA о риске концентрации у третьих сторон и движения за суверенное облако и суверенную плоскость управления, рассмотренные в материалах о [облачной архитектуре](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "Лучшая облачная инфраструктурная архитектура в 2026 году") и [агентной инженерии](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "Агентная инженерия для банков") на этом сайте. Энциклика и EU AI Act, что примечательно, обеспокоены одним и тем же: тем, что возможности без подотчётности концентрируют власть способами, ускользающими от демократического управления. Один говорит это на языке социальной доктрины, другой — на языке оценок соответствия. Диагноз идентичен.
 
 Вторая — **квантовые вычисления**, которые энциклика не называет, но чью этическую форму она в точности предвосхищает. Предпосылка постквантовой миграции, рассмотренной в [«Защите реестра»](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Защита реестра"), состоит в том, что возможность, которая сейчас строится, — криптографически релевантный квантовый компьютер, — когда она появится, ретроактивно обнажит всё, зашифрованное при сегодняшних допущениях. «Harvest now, decrypt later» — это, в светском регистре, в точности тот вид власти-без-мудрости, против которого предостерегает энциклика: технология, чьи последствия приходят на временной шкале, опережающей подготовку, в руках тех, у кого есть ресурсы применить её первыми. Настойчивость энциклики на вопросе «куда мы идём?», прежде чем череда чрезвычайных ситуаций продиктует путь, — для инженера по безопасности это хорошая практика, выраженная как моральная философия.
 
@@ -231,8 +231,8 @@ site_software: "Static Site Generator, Rust"
 
 - Sebastien Rousseau, (2026). [Флешка Люси, ещё раз: передача знаний, ИИ и квантовые вычисления](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html "Флешка Люси, ещё раз").
 - Sebastien Rousseau, (2026). [Защита реестра: руководство уровня совета директоров по постквантовой миграции для корпоративных финансов](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Защита реестра").
-- Sebastien Rousseau, (2026). [Агентная инженерия для банков: план на 2026 год](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "Агентная инженерия для банков").
-- Sebastien Rousseau, (2026). [Лучшая облачная инфраструктурная архитектура в 2026 году](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "Лучшая облачная инфраструктурная архитектура в 2026 году").
+- Sebastien Rousseau, (2026). [Агентная инженерия для банков: план на 2026 год](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "Агентная инженерия для банков").
+- Sebastien Rousseau, (2026). [Лучшая облачная инфраструктурная архитектура в 2026 году](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "Лучшая облачная инфраструктурная архитектура в 2026 году").
 - Папа Лев XIV, (2026). [Энциклика *Magnifica Humanitas* о защите человеческой личности во времена искусственного интеллекта ⧉](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html "Magnifica Humanitas — полный текст, Vatican.va"). Святой Престол.
 - Папа Лев XIII, (1891). [Энциклика *Rerum Novarum* о капитале и труде ⧉](https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_15051891_rerum-novarum.html "Rerum Novarum — Vatican.va"). Святой Престол.
 - Vatican News, (2026). [Первая энциклика Папы Льва XIV *Magnifica humanitas* будет опубликована 25 мая ⧉](https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html "Vatican News — Magnifica Humanitas"). Vatican News.

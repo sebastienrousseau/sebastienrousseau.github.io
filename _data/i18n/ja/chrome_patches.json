@@ -75,7 +75,7 @@
     ],
     [
       "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
-      "<li><a href=\"/ja/ronbun/index.html\">論文</a></li>"
+      "<li><a href=\"/ja/kenkyu/index.html\">論文</a></li>"
     ],
     [
       "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
@@ -127,7 +127,7 @@
     ],
     [
       "<a href=\"?/papers/index\\.html\"?>Papers</a>",
-      "<a href=\"/ja/ronbun/index.html\">論文</a>"
+      "<a href=\"/ja/kenkyu/index.html\">論文</a>"
     ],
     [
       "<a href=\"?/tags/index\\.html\"?>Tags</a>",

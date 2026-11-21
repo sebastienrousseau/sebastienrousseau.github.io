@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "《2026 银行架构白皮书》横幅"
 twitter_site: "@wwdseb"
 twitter_title: "2026 银行架构白皮书"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -186,7 +186,7 @@ PDF 中的 10 条项目风险登记册,针对董事会相较 2024 / 2025 周期�
 2. **沉默的 MT 至 MX 数据丢失。** 发出带有截断地址或汇款数据的 `MT103` 的银行,在 `MX` 通道中可以干净落地——但结构化字段是空的。下游后果(制裁筛查失败、漏触发的 AML、对账中断)在切换后 30–90 天才浮现,远在变更窗口取证之后。登记册量化了每 €1 bn 支付流量预期的存量补救成本。
 3. **智能体动作的归因。** 当一个 LLM 支撑的司库智能体触发一条支付链,可能有三个主体声称归属——模型所有者、通道提供方、策略作者。如果编排层中没有烘焙明确的归因决策,银行会同时背负这三份责任。登记册定义了归因树,以及为辩护它所需的 `SR 11-7` 证据链。
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="下载《2026 银行架构白皮书》PDF">下载 PDF 简报</a> <a class="pill ghost no-chev" href="/papers" title="查看所有已发布白皮书与研究">所有白皮书</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="下载《2026 银行架构白皮书》PDF">下载 PDF 简报</a> <a class="pill ghost no-chev" href="/research" title="查看所有已发布白皮书与研究">所有白皮书</a></p>
 
 ## 内部评审摘要
 

@@ -13,7 +13,7 @@ description: "Ìmọ̀ ìfaradà báńkì 2026 tó so ewu AI, ewu ìkójọpọ�
 format-detection: "telephone=no"
 hreflang: "yo"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/yo/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+id: "https://sebastienrousseau.com/yo/2026-06-08-imo-ifarada-banki-2026-ai-cloud"
 image_alt: "Àwòrán Aláwọ̀ Dúdú àti Funfun ti Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/yo/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+permalink: "https://sebastienrousseau.com/yo/2026-06-08-imo-ifarada-banki-2026-ai-cloud"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "ìfaradà báńkì, DORA, ewu AI, ìkójọpọ̀ cloud, ewu quantum, ìf
 excerpt: "Ìmọ̀ ìfaradà báńkì 2026 — tó so ewu AI, ewu ìkójọpọ̀ cloud, ìṣílọ quantum-safe, ìtẹ̀síwájú ìsanwó, àti ìgbẹ́kẹ̀lé ẹgbẹ́ kẹta pàtàkì pọ̀ sí pátákó ìfaradà iṣẹ́ kan tí ìgbìmọ̀ àti alábojútó lè kà pọ̀."
 theme-color: "0, 83, 191"
 title: "Ìmọ̀ Ìfaradà Báńkì ní 2026: AI, Cloud, Quantum, Ìsanwó, àti Ewu Ìkójọpọ̀ Ẹgbẹ́ Kẹta"
-url: "https://sebastienrousseau.com/yo/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+url: "https://sebastienrousseau.com/yo/2026-06-08-imo-ifarada-banki-2026-ai-cloud"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/rss.xml"
 category: "Risk"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Ìṣílọ quantum-safe jẹ́ ìwọ̀n ìfaradà iṣẹ́, kìí ṣe ìwọ̀n ààbò nìkan.</strong> Data tó pẹ́ tí a fi sílẹ̀ lónìí ni yóò kùnà ìdánwò ìfaradà ọ̀la.</li>
   <li><strong>Ìkójọpọ̀ ẹgbẹ́ kẹta ti di ti gbogbo ètò.</strong> Ìgbẹ́kẹ̀lé lórí hyperscaler kan, PSP kan, tàbí olùpèsè LLM kan ń farahàn gẹ́gẹ́ bí ààyè ìkùnà kan lórí pátákó ìfaradà.</li>
 </ul>
-<p class="post-lead-related"><strong>Ìkàwé tó bára mu:</strong> <a href="https://sebastienrousseau.com/yo/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA, EU AI Act, àti Ọba Lori Dátà: Akopọ Ìbámu 2026 fún Báńkì</a>, <a href="https://sebastienrousseau.com/yo/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">Báńkì Cloud Native ní 2026: Kubernetes, DORA, Ọba Lori Dátà, àti Òpin Ìpín VM-ní-Container</a>.</p>
+<p class="post-lead-related"><strong>Ìkàwé tó bára mu:</strong> <a href="https://sebastienrousseau.com/yo/2026-05-28-dora-eu-ai-act-oba-lori/index.html">DORA, EU AI Act, àti Ọba Lori Dátà: Akopọ Ìbámu 2026 fún Báńkì</a>, <a href="https://sebastienrousseau.com/yo/2026-05-20-cloud-native-banking-2026-kubernetes-dora/index.html">Báńkì Cloud Native ní 2026: Kubernetes, DORA, Ọba Lori Dátà, àti Òpin Ìpín VM-ní-Container</a>.</p>
 </aside>
 <!-- lead-end -->
 

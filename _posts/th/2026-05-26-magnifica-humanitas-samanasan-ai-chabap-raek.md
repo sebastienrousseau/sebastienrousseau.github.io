@@ -13,7 +13,7 @@ description: "25 พฤษภาคม 2026 สมเด็จพระสัน
 format-detection: "telephone=no"
 hreflang: "th"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/th/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+id: "https://sebastienrousseau.com/th/2026-05-26-magnifica-humanitas-samanasan-ai-chabap-raek"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/th/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+permalink: "https://sebastienrousseau.com/th/2026-05-26-magnifica-humanitas-samanasan-ai-chabap-raek"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -40,7 +40,7 @@ tags: "Magnifica Humanitas, สมเด็จพระสันตะปาป�
 excerpt: "25 พฤษภาคม 2026 สมเด็จพระสันตะปาปาเลโอที่ 14 ทรงประกาศ Magnifica Humanitas สมณสาส์นฉบับแรกว่าด้วยปัญญาประดิษฐ์ อ่านจากภายในอุตสาหกรรมเทคโนโลยีในฐานะกรอบจริยธรรม ไม่ใช่หลักคำสอน สาส์นนี้สะท้อนความวิตกทางศีลธรรมที่เคยมาพร้อมกับรถไฟ รถยนต์ พลังงานนิวเคลียร์ และอินเทอร์เน็ต และจบลงที่ความหวัง"
 theme-color: "0, 83, 191"
 title: "Magnifica Humanitas: การอ่านสมณสาส์น AI ฉบับแรกในมุมอุตสาหกรรม"
-url: "https://sebastienrousseau.com/th/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+url: "https://sebastienrousseau.com/th/2026-05-26-magnifica-humanitas-samanasan-ai-chabap-raek"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/rss.xml"
 category: "Technology"
@@ -161,7 +161,7 @@ site_software: "Static Site Generator, Rust"
 
 ความกังวลเฉพาะของสมณสาส์นสองประการตกตรงเข้าวิศวกรรมระบบการเงิน และทั้งสองสมควรได้รับการตอบสนองของวิศวกรมากกว่าของผู้ศรัทธา
 
-ประการแรกคือ **การกระจุกตัวของอำนาจในมือเอกชนข้ามชาติ** ข้อสังเกตของสมณสาส์นที่ว่าผู้ขับเคลื่อนหลักของเทคโนโลยีนี้ในปัจจุบันเป็นผู้กระทำเอกชนซึ่งขีดความสามารถเกินกว่ารัฐจำนวนมากนั้น ไม่ใช่ข้อเรียกร้องทางเทววิทยา หากเป็นคำบรรยายที่แม่นยำของภูมิทัศน์ AI ปี 2026 และเป็นความกังวลเดียวกันที่วิ่งผ่านสถาปัตยกรรมกำกับดูแลที่อุตสาหกรรมกำลังเร่งปฏิบัติตามอยู่ ภาระความเสี่ยงสูงของ EU AI Act ที่บังคับใช้ตั้งแต่ 2 สิงหาคม 2026 บทบัญญัติความเสี่ยงจากการกระจุกตัวของผู้ให้บริการรายที่สามภายใต้ DORA และการเคลื่อนไหวเรื่องคลาวด์อธิปไตยและ control plane อธิปไตยที่กล่าวถึงใน [สถาปัตยกรรมคลาวด์](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "สถาปัตยกรรมโครงสร้างพื้นฐานคลาวด์ที่ดีที่สุดในปี 2026") และ [วิศวกรรม agentic](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "วิศวกรรม Agentic สำหรับธนาคาร") บนเว็บไซต์นี้ สมณสาส์นและ EU AI Act ที่น่าทึ่งคือกังวลเรื่องเดียวกัน ว่าขีดความสามารถที่ปราศจากความรับผิดชอบจะกระจุกอำนาจในแบบที่หลุดพ้นจากการกำกับดูแลแบบประชาธิปไตย ฝ่ายหนึ่งพูดในภาษาของหลักคำสอนทางสังคม อีกฝ่ายในภาษาของการประเมินความสอดคล้อง การวินิจฉัยเหมือนกันทุกประการ
+ประการแรกคือ **การกระจุกตัวของอำนาจในมือเอกชนข้ามชาติ** ข้อสังเกตของสมณสาส์นที่ว่าผู้ขับเคลื่อนหลักของเทคโนโลยีนี้ในปัจจุบันเป็นผู้กระทำเอกชนซึ่งขีดความสามารถเกินกว่ารัฐจำนวนมากนั้น ไม่ใช่ข้อเรียกร้องทางเทววิทยา หากเป็นคำบรรยายที่แม่นยำของภูมิทัศน์ AI ปี 2026 และเป็นความกังวลเดียวกันที่วิ่งผ่านสถาปัตยกรรมกำกับดูแลที่อุตสาหกรรมกำลังเร่งปฏิบัติตามอยู่ ภาระความเสี่ยงสูงของ EU AI Act ที่บังคับใช้ตั้งแต่ 2 สิงหาคม 2026 บทบัญญัติความเสี่ยงจากการกระจุกตัวของผู้ให้บริการรายที่สามภายใต้ DORA และการเคลื่อนไหวเรื่องคลาวด์อธิปไตยและ control plane อธิปไตยที่กล่าวถึงใน [สถาปัตยกรรมคลาวด์](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "สถาปัตยกรรมโครงสร้างพื้นฐานคลาวด์ที่ดีที่สุดในปี 2026") และ [วิศวกรรม agentic](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "วิศวกรรม Agentic สำหรับธนาคาร") บนเว็บไซต์นี้ สมณสาส์นและ EU AI Act ที่น่าทึ่งคือกังวลเรื่องเดียวกัน ว่าขีดความสามารถที่ปราศจากความรับผิดชอบจะกระจุกอำนาจในแบบที่หลุดพ้นจากการกำกับดูแลแบบประชาธิปไตย ฝ่ายหนึ่งพูดในภาษาของหลักคำสอนทางสังคม อีกฝ่ายในภาษาของการประเมินความสอดคล้อง การวินิจฉัยเหมือนกันทุกประการ
 
 ประการที่สองคือ **คอมพิวเตอร์ควอนตัม** ซึ่งสมณสาส์นไม่ได้เอ่ยชื่อ แต่คาดการณ์รูปร่างจริยธรรมไว้อย่างแม่นยำ สมมติฐานของการเปลี่ยนผ่านสู่หลังควอนตัมที่กล่าวถึงใน [Securing the Ledger](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Securing the Ledger") คือขีดความสามารถที่กำลังก่อสร้างอยู่ ซึ่งก็คือคอมพิวเตอร์ควอนตัมที่เกี่ยวข้องทางวิทยาการรหัสลับ เมื่อมาถึง จะเปิดเผยทุกอย่างที่เข้ารหัสภายใต้สมมติฐานของวันนี้ย้อนหลัง "harvest now, decrypt later" ในรีจิสเตอร์ฆราวาส คือพอดีกับสิ่งที่สมณสาส์นเตือน คืออำนาจที่ปราศจากปัญญา เทคโนโลยีที่ผลพวงมาในเส้นเวลาที่วิ่งนำการเตรียมความพร้อม ในมือของผู้ที่มีทรัพยากรเพียงพอจะใช้มันก่อน การยืนกรานของสมณสาส์นที่จะถามว่า "เรากำลังจะไปไหน" ก่อนที่ลำดับฉุกเฉินจะกำหนดเส้นทาง สำหรับวิศวกรความปลอดภัยคือแนวปฏิบัติที่ดีถูกแปลเป็นปรัชญาศีลธรรม
 
@@ -231,8 +231,8 @@ site_software: "Static Site Generator, Rust"
 
 - Sebastien Rousseau, (2026). [แฟลชไดรฟ์ของ Lucy ทบทวนใหม่: การถ่ายโอนความรู้ AI และควอนตัม](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html "แฟลชไดรฟ์ของ Lucy ทบทวนใหม่")
 - Sebastien Rousseau, (2026). [Securing the Ledger: คู่มือระดับคณะกรรมการสำหรับการเปลี่ยนผ่านสู่หลังควอนตัมในการเงินองค์กร](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Securing the Ledger")
-- Sebastien Rousseau, (2026). [วิศวกรรม Agentic สำหรับธนาคาร: พิมพ์เขียวปี 2026](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "วิศวกรรม Agentic สำหรับธนาคาร")
-- Sebastien Rousseau, (2026). [สถาปัตยกรรมโครงสร้างพื้นฐานคลาวด์ที่ดีที่สุดในปี 2026](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "สถาปัตยกรรมโครงสร้างพื้นฐานคลาวด์ที่ดีที่สุดในปี 2026")
+- Sebastien Rousseau, (2026). [วิศวกรรม Agentic สำหรับธนาคาร: พิมพ์เขียวปี 2026](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "วิศวกรรม Agentic สำหรับธนาคาร")
+- Sebastien Rousseau, (2026). [สถาปัตยกรรมโครงสร้างพื้นฐานคลาวด์ที่ดีที่สุดในปี 2026](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "สถาปัตยกรรมโครงสร้างพื้นฐานคลาวด์ที่ดีที่สุดในปี 2026")
 - Pope Leo XIV, (2026). [สมณสาส์น *Magnifica Humanitas* ว่าด้วยการพิทักษ์บุคคลในมนุษย์ในยุคปัญญาประดิษฐ์ ⧉](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html "Magnifica Humanitas — ฉบับเต็ม Vatican.va") The Holy See
 - Pope Leo XIII, (1891). [สมณสาส์น *Rerum Novarum* ว่าด้วยทุนและแรงงาน ⧉](https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_15051891_rerum-novarum.html "Rerum Novarum — Vatican.va") The Holy See
 - Vatican News, (2026). [สมณสาส์นฉบับแรก *Magnifica humanitas* ของสมเด็จพระสันตะปาปาเลโอที่ 14 จะเผยแพร่ 25 พฤษภาคม ⧉](https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html "Vatican News — Magnifica Humanitas") Vatican News

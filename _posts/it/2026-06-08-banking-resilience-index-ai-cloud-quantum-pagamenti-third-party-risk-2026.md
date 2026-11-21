@@ -99,7 +99,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>La migrazione quantum-safe è una metrica di resilienza operativa, non di sicurezza.</strong> I dati a lunga vita esposti oggi falliscono il test di resilienza di domani.</li>
   <li><strong>La concentrazione sulle terze parti è ora sistemica.</strong> Dipendenze da un singolo hyperscaler, un singolo PSP o un singolo fornitore di LLM si traducono in singoli punti di guasto sulla scorecard di resilienza.</li>
 </ul>
-<p class="post-lead-related"><strong>Letture correlate:</strong> <a href="https://sebastienrousseau.com/it/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA, EU AI Act e sovranità dei dati: lo stack di conformità 2026 per le banche</a>, <a href="https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</a>.</p>
+<p class="post-lead-related"><strong>Letture correlate:</strong> <a href="https://sebastienrousseau.com/it/2026-05-28-dora-eu-ai-act-sovranita-dei/index.html">DORA, EU AI Act e sovranità dei dati: lo stack di conformità 2026 per le banche</a>, <a href="https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</a>.</p>
 </aside>
 <!-- lead-end -->
 

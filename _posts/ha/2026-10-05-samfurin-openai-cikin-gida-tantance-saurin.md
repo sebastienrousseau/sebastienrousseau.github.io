@@ -147,9 +147,9 @@ Ina ganin wannan tsarin kallo shi ne daidai don tantance sakamakon. Ingantawa a 
 | :--- | :--- | :--- | :--- |
 | **Exponent na Sphere Packing** | Iyakar Kabatianskii–Levenshtein: 0.59905576... | Aƙalla da ƙarfi kamar iyakokin spherical code (Cohn–Zhao) | An tabbatar da ainihin saurin asymptotic da Afkhami-Jeddi et al. (2020) suka yi hasashe |
 | **Ƙarshen Iyaka** | Gyare-gyaren ƙananan mataki kaɗai | Tambaya a buɗe kan gibin asymptotic a manyan girma | Lower bound mai dacewa daidai: babu auxiliary function da zai fi wannan sauri |
-| **Fourier Sign Uncertainty** | Iyakokin alama daban-daban ($A^+(d) < A^-(d)$) | Yana da alaƙa da anti-self-Fourier test functions | An warware ta asymptotic; Mellin reflection ke tafiyar da sign uncertainty |
+| **Fourier Sign Uncertainty** | Iyakokin alama daban-daban (A⁺(d) < A⁻(d)) | Yana da alaƙa da anti-self-Fourier test functions | An warware ta asymptotic; Mellin reflection ke tafiyar da sign uncertainty |
 | **Lambobin Gyaran Kuskure** | Iyakokin gargajiya na spherical da binary codes | Suna haɗe ta asymptotic da iyakokin packing | Ingantawa da abubuwan exponential ga dukan sigogin tazara tabbatacciya |
-| **Rufin Hanya** | Inganta polynomial factors ta lambobi | Buɗaɗɗen inganta auxiliary test functions $f \in \mathcal{A}_d$ | An tabbatar da rufin lissafi: ƙarin riba na bukatar hanyoyin da ba na Cohn-Elkies ba |
+| **Rufin Hanya** | Inganta polynomial factors ta lambobi | Buɗaɗɗen inganta auxiliary test functions f ∈ 𝒜\_d | An tabbatar da rufin lissafi: ƙarin riba na bukatar hanyoyin da ba na Cohn-Elkies ba |
 
 ## Me ya sa lower bound mai dacewa ya canza tambayar
 
@@ -237,11 +237,11 @@ Ainihin tantance saurin raguwar Cohn-Elkies a manyan girma da sakamakon lissafi 
 
 ### Lissafi zalla da discrete geometry
 
-Ga masana lissafi da ke aiki a geometry na manyan girma da harmonic analysis, tantance ainihin saurin raguwar Cohn-Elkies yana canza yanayin bincike. Saboda lower bound mai dacewa ya tabbatar da cewa babu auxiliary function a cikin $\mathcal{A}_d$ da zai iya fin sabon exponent, masu bincike za su iya daina neman radial test functions mafi kyau a cikin tsarin linear programming na gargajiya. Ci gaba zuwa sphere packings masu yawa ko universal bounds masu matsatsi yanzu dole ne ya bincika dabarun non-linear programming, semidefinite hierarchies na mataki mafi girma, ko gine-ginen geometry da suka bambanta gaba ɗaya.
+Ga masana lissafi da ke aiki a geometry na manyan girma da harmonic analysis, tantance ainihin saurin raguwar Cohn-Elkies yana canza yanayin bincike. Saboda lower bound mai dacewa ya tabbatar da cewa babu auxiliary function a cikin 𝒜\_d da zai iya fin sabon exponent, masu bincike za su iya daina neman radial test functions mafi kyau a cikin tsarin linear programming na gargajiya. Ci gaba zuwa sphere packings masu yawa ko universal bounds masu matsatsi yanzu dole ne ya bincika dabarun non-linear programming, semidefinite hierarchies na mataki mafi girma, ko gine-ginen geometry da suka bambanta gaba ɗaya.
 
 ### Cryptography da tsaro na lattice
 
-Lattice-based cryptography, wadda ke zama ginshiƙin ma'aunan post-quantum kamar ML-KEM da ML-DSA, ta dogara sosai a kan wahalar da ake hasashe ta nemo mafi gajeru ko mafi kusa vectors a cikin Euclidean lattices na manyan girma. Ragewa kai tsaye daga 3SAT da ke tabbatar da wahala ta $n^{1/400}$-factor ga Euclidean Closest Vector Problem (CVP), tare da rufin exponential masu matsatsi a kan sphere packings da spherical codes, yana ƙarfafa tushen ka'ida na lattice reductions daga worst-case zuwa average-case ba tare da raunana ainihin security parameters ba.
+Lattice-based cryptography, wadda ke zama ginshiƙin ma'aunan post-quantum kamar ML-KEM da ML-DSA, ta dogara sosai a kan wahalar da ake hasashe ta nemo mafi gajeru ko mafi kusa vectors a cikin Euclidean lattices na manyan girma. Ragewa kai tsaye daga 3SAT da ke tabbatar da wahala ta n\^(1/400)-factor ga Euclidean Closest Vector Problem (CVP), tare da rufin exponential masu matsatsi a kan sphere packings da spherical codes, yana ƙarfafa tushen ka'ida na lattice reductions daga worst-case zuwa average-case ba tare da raunana ainihin security parameters ba.
 
 ### Tabbatar da theorem ta atomatik da foundation models
 
@@ -267,7 +267,7 @@ Cohn da Gonçalves sun tabbatar da cewa matsalar cikawa ta Fourier sign-uncertai
 
 **Shin wannan sakamako yana raunana lattice-based cryptography?**
 
-A'a. Ko da yake theorem ɗin yana ƙara kaifin upper bounds kan yadda ƙwallaye za su iya cunkushewa a manyan girma kuma yana tabbatar da wahala ta $n^{1/400}$-factor ga Closest Vector Problem, ba ya ba da algorithms na lattice reduction a polynomial time. Lattice cryptosystems na aiki suna nan lafiya daga sanannun hare-haren quantum da na gargajiya.
+A'a. Ko da yake theorem ɗin yana ƙara kaifin upper bounds kan yadda ƙwallaye za su iya cunkushewa a manyan girma kuma yana tabbatar da wahala ta n\^(1/400)-factor ga Closest Vector Problem, ba ya ba da algorithms na lattice reduction a polynomial time. Lattice cryptosystems na aiki suna nan lafiya daga sanannun hare-haren quantum da na gargajiya.
 
 ## Manazarta
 

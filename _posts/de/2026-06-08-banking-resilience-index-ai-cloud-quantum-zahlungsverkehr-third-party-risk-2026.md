@@ -99,7 +99,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Quantensichere Migration ist eine Kennzahl der operationellen Resilienz, nicht der Sicherheit.</strong> Heute exponierte langlebige Daten bestehen den Resilienztest von morgen nicht.</li>
   <li><strong>Drittparteien-Konzentration ist heute systemisch.</strong> Abhängigkeiten von einem einzigen Hyperscaler, einem einzigen PSP oder einem einzigen LLM-Anbieter bilden auf dem Resilienz-Scoreboard Single-Points-of-Failure ab.</li>
 </ul>
-<p class="post-lead-related"><strong>Weiterführende Lektüre:</strong> <a href="https://sebastienrousseau.com/de/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA, EU-KI-Verordnung und Datensouveränität: Der Compliance-Stack 2026 für Banken</a>, <a href="https://sebastienrousseau.com/de/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">Cloud-natives Banking 2026: Kubernetes, DORA, Souveränität und das Ende der Trennung von VM und Container</a>.</p>
+<p class="post-lead-related"><strong>Weiterführende Lektüre:</strong> <a href="https://sebastienrousseau.com/de/2026-05-28-dora-eu-ki-verordnung-und-datensouveranitat/index.html">DORA, EU-KI-Verordnung und Datensouveränität: Der Compliance-Stack 2026 für Banken</a>, <a href="https://sebastienrousseau.com/de/2026-05-20-cloud-natives-banking-2026-kubernetes-dora/index.html">Cloud-natives Banking 2026: Kubernetes, DORA, Souveränität und das Ende der Trennung von VM und Container</a>.</p>
 </aside>
 <!-- lead-end -->
 

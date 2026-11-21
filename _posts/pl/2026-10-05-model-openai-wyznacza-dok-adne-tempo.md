@@ -147,9 +147,9 @@ Uważam, że to właściwe ujęcie przy ocenie tego wyniku. Poprawa niższego rz
 | :--- | :--- | :--- | :--- |
 | **Wykładnik upakowania kul** | Ograniczenie Kabatianskiego–Levenshteina: 0,59905576... | Co najmniej tak silny jak ograniczenia dla kodów sferycznych (Cohn–Zhao) | Udowodnione dokładne tempo asymptotyczne z hipotezy Afkhami-Jeddiego i in. (2020) |
 | **Ostateczność ograniczenia** | Wyłącznie udoskonalenia czynników niższego rzędu | Otwarte pytanie o asymptotyczną lukę w wysokich wymiarach | Dokładnie dopasowane ograniczenie dolne: żadna funkcja pomocnicza nie pobije tego tempa |
-| **Niepewność znaku Fouriera** | Oddzielne ograniczenia znaku ($A^+(d) < A^-(d)$) | Powiązana z antysamofourierowskimi funkcjami testowymi | Rozstrzygnięta asymptotycznie; niepewność znaku rządzona odbiciem Mellina |
+| **Niepewność znaku Fouriera** | Oddzielne ograniczenia znaku (A⁺(d) < A⁻(d)) | Powiązana z antysamofourierowskimi funkcjami testowymi | Rozstrzygnięta asymptotycznie; niepewność znaku rządzona odbiciem Mellina |
 | **Kody korekcyjne** | Klasyczne ograniczenia dla kodów sferycznych i binarnych | Asymptotycznie sprzężone z ograniczeniami upakowania | Poprawa o czynniki wykładnicze dla wszystkich parametrów o ustalonej odległości |
-| **Pułap metodologiczny** | Numeryczna optymalizacja czynników wielomianowych | Otwarta optymalizacja funkcji testowych $f \in \mathcal{A}_d$ | Udowodniony pułap matematyczny: dalsze zyski wymagają metod spoza Cohna-Elkiesa |
+| **Pułap metodologiczny** | Numeryczna optymalizacja czynników wielomianowych | Otwarta optymalizacja funkcji testowych f ∈ 𝒜\_d | Udowodniony pułap matematyczny: dalsze zyski wymagają metod spoza Cohna-Elkiesa |
 
 ## Dlaczego dopasowane ograniczenie dolne zmienia pytanie
 
@@ -237,11 +237,11 @@ Dokładne wyznaczenie tempa zaniku Cohna-Elkiesa w wysokich wymiarach i towarzys
 
 ### Matematyka czysta i geometria dyskretna
 
-Dla matematyków zajmujących się geometrią wysokowymiarową i analizą harmoniczną wyznaczenie dokładnego tempa zaniku Cohna-Elkiesa zmienia krajobraz badań. Ponieważ dopasowane ograniczenie dolne dowodzi, że żadna funkcja pomocnicza w $\mathcal{A}_d$ nie pobije nowego wykładnika, badacze mogą przestać szukać lepszych radialnych funkcji testowych w klasycznej metodzie programowania liniowego. Postęp w kierunku gęstszych upakowań kul lub ciaśniejszych ograniczeń uniwersalnych musi teraz sięgać po techniki programowania nieliniowego, hierarchie półokreślone wyższego rzędu albo radykalnie odmienne konstrukcje geometryczne.
+Dla matematyków zajmujących się geometrią wysokowymiarową i analizą harmoniczną wyznaczenie dokładnego tempa zaniku Cohna-Elkiesa zmienia krajobraz badań. Ponieważ dopasowane ograniczenie dolne dowodzi, że żadna funkcja pomocnicza w 𝒜\_d nie pobije nowego wykładnika, badacze mogą przestać szukać lepszych radialnych funkcji testowych w klasycznej metodzie programowania liniowego. Postęp w kierunku gęstszych upakowań kul lub ciaśniejszych ograniczeń uniwersalnych musi teraz sięgać po techniki programowania nieliniowego, hierarchie półokreślone wyższego rzędu albo radykalnie odmienne konstrukcje geometryczne.
 
 ### Kryptografia i bezpieczeństwo oparte na kratach
 
-Kryptografia oparta na kratach, stanowiąca rdzeń standardów postkwantowych takich jak ML-KEM i ML-DSA, w dużej mierze opiera się na zakładanej trudności znajdowania najkrótszych lub najbliższych wektorów w wysokowymiarowych kratach euklidesowych. Bezpośrednia redukcja z 3SAT, która ustala trudność z czynnikiem $n^{1/400}$ dla euklidesowego problemu najbliższego wektora (CVP), w połączeniu z ciaśniejszymi wykładniczymi pułapami dla upakowań kul i kodów sferycznych, umacnia teoretyczne podstawy redukcji kratowych od najgorszego do przeciętnego przypadku, nie osłabiając konkretnych parametrów bezpieczeństwa.
+Kryptografia oparta na kratach, stanowiąca rdzeń standardów postkwantowych takich jak ML-KEM i ML-DSA, w dużej mierze opiera się na zakładanej trudności znajdowania najkrótszych lub najbliższych wektorów w wysokowymiarowych kratach euklidesowych. Bezpośrednia redukcja z 3SAT, która ustala trudność z czynnikiem n\^(1/400) dla euklidesowego problemu najbliższego wektora (CVP), w połączeniu z ciaśniejszymi wykładniczymi pułapami dla upakowań kul i kodów sferycznych, umacnia teoretyczne podstawy redukcji kratowych od najgorszego do przeciętnego przypadku, nie osłabiając konkretnych parametrów bezpieczeństwa.
 
 ### Automatyczne dowodzenie twierdzeń i modele bazowe
 
@@ -267,7 +267,7 @@ Cohn i Gonçalves wykazali, że komplementarny problem niepewności znaku Fourie
 
 **Czy ten wynik zagraża kryptografii opartej na kratach?**
 
-Nie. Twierdzenie zaostrza wprawdzie ograniczenia górne na to, jak gęsto można upakować kule w wysokich wymiarach, i ustala trudność z czynnikiem $n^{1/400}$ dla problemu najbliższego wektora, ale nie daje algorytmów redukcji krat w czasie wielomianowym. Praktyczne kryptosystemy kratowe pozostają bezpieczne wobec znanych ataków kwantowych i klasycznych.
+Nie. Twierdzenie zaostrza wprawdzie ograniczenia górne na to, jak gęsto można upakować kule w wysokich wymiarach, i ustala trudność z czynnikiem n\^(1/400) dla problemu najbliższego wektora, ale nie daje algorytmów redukcji krat w czasie wielomianowym. Praktyczne kryptosystemy kratowe pozostają bezpieczne wobec znanych ataków kwantowych i klasycznych.
 
 ## Bibliografia
 

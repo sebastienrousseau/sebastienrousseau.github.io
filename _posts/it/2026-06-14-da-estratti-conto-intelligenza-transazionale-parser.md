@@ -13,7 +13,7 @@ description: "BankStatementParser trasforma CAMT, PAIN.001, CSV, OFX/QFX, MT940 
 format-detection: "telephone=no"
 hreflang: "it"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/it/2026-06-14-bankstatementparser-transaction-intelligence-treasury-open-source-2026"
+id: "https://sebastienrousseau.com/it/2026-06-14-da-estratti-conto-intelligenza-transazionale-parser"
 image_alt: "Ritratto in bianco e nero di Sebastien Rousseau"
 image_height: "162"
 image_width: "162"

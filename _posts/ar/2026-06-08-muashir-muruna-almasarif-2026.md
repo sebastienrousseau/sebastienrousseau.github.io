@@ -13,7 +13,7 @@ description: "مؤشر مرونة المصارف لعام 2026 — يجمع مخ
 format-detection: "telephone=no"
 hreflang: "ar"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/ar/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+id: "https://sebastienrousseau.com/ar/2026-06-08-muashir-muruna-almasarif-2026"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/ar/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+permalink: "https://sebastienrousseau.com/ar/2026-06-08-muashir-muruna-almasarif-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "مرونة المصارف, DORA, مخاطر الذكاء الاصطناع
 excerpt: "مؤشر مرونة المصارف لعام 2026 — يجمع مخاطر الذكاء الاصطناعي ومخاطر التركز السحابي والهجرة الآمنة كمومياً واستمرارية المدفوعات ومخاطر الأطراف الثالثة الحرجة في لوحة قياس واحدة للمرونة التشغيلية، يقرؤها مجلس الإدارة والجهة الرقابية معاً."
 theme-color: "0, 83, 191"
 title: "مؤشر مرونة المصارف في 2026: الذكاء الاصطناعي والسحابة والكم والمدفوعات ومخاطر التركز"
-url: "https://sebastienrousseau.com/ar/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+url: "https://sebastienrousseau.com/ar/2026-06-08-muashir-muruna-almasarif-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/rss.xml"
 category: "Risk"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>الهجرة الآمنة كمومياً مقياس مرونة تشغيلية، لا مقياس أمان.</strong> البيانات طويلة الأجل المكشوفة اليوم لن تجتاز اختبار مرونة الغد.</li>
   <li><strong>تركز الأطراف الثالثة بات منهجياً.</strong> التبعية لموفر سحابة فائق التوسع واحد، أو مزود خدمات دفع واحد، أو موفر نموذج لغوي ضخم واحد، تُترجَم إلى نقاط فشل وحيدة على لوحة قياس المرونة.</li>
 </ul>
-<p class="post-lead-related"><strong>قراءات ذات صلة:</strong> <a href="https://sebastienrousseau.com/ar/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA وقانون الذكاء الاصطناعي وسيادة البيانات: حزمة امتثال 2026 للمصارف</a>، <a href="https://sebastienrousseau.com/ar/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">الصيرفة السحابية الأصل في 2026: Kubernetes وDORA والسيادة ونهاية الفاصل بين الأجهزة الافتراضية والحاويات</a>.</p>
+<p class="post-lead-related"><strong>قراءات ذات صلة:</strong> <a href="https://sebastienrousseau.com/ar/2026-05-28-dora-qanun-althaka-siyadat-albayanat/index.html">DORA وقانون الذكاء الاصطناعي وسيادة البيانات: حزمة امتثال 2026 للمصارف</a>، <a href="https://sebastienrousseau.com/ar/2026-05-20-almasrifiya-alsahabiya-alasliya-2026/index.html">الصيرفة السحابية الأصل في 2026: Kubernetes وDORA والسيادة ونهاية الفاصل بين الأجهزة الافتراضية والحاويات</a>.</p>
 </aside>
 <!-- lead-end -->
 

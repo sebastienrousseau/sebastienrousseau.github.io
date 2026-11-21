@@ -54,7 +54,7 @@ macOS இல் OpenAI Whisper மற்றும் Metal Performance Shaders �
 .class=\"card bg-light p-3 me-3 w-100\"
 macOS இல் நிகழ்நேர பேச்சு அறிதலுக்காக OpenAI Whisper மற்றும் Metal Performance Shaders இன் ஒருங்கிணைப்பு குறித்து மேலும் அறிய, முழு ஆய்வுக் கட்டுரையையும் அணுகுமாறு வாசகர்கள் ஊக்குவிக்கப்படுகிறார்கள். இந்தக் கட்டுரை ஆழமான தொழில்நுட்ப விவரங்கள், சோதனை முடிவுகள், மற்றும் இந்தத் தொழில்நுட்பத்தின் சாத்தியமான பயன்பாடுகள் மற்றும் எதிர்கால திசைகள் குறித்த மேலதிக நுண்ணறிவுகளை வழங்குகிறது. முழு ஆய்வுக் கட்டுரையையும் அணுகுவதன் மூலம், macOS சாதனங்களில் நிகழ்நேர பேச்சு அறிதலுக்கான இந்தப் புதுமையான அணுகுமுறையின் முறையியல், செயலாக்கம் மற்றும் தாக்கங்கள் குறித்த முழுமையான புரிதலை வாசகர்கள் பெறுவார்கள். [**இன்றே முழுக் கட்டுரையைப் படியுங்கள்! ❯**][00]
 
-[00]: /papers/index.html "Research Publications & White Papers from Sebastien Rousseau"
+[00]: /research/index.html "Research Publications & White Papers from Sebastien Rousseau"
 [01]: https://developer.apple.com/documentation/metalperformanceshaders "Metal Performance Shaders - Apple Developer Documentation"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"

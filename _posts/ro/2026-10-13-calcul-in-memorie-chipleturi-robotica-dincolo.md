@@ -129,13 +129,13 @@ Pentru a rezolva blocajul termodinamic, Mythic AI promovează o filozofie arhite
 
 Arhitecturile de calcul în memorie înlocuiesc acest transfer digital de date cu fizica circuitelor analogice:
 
-**Programarea ponderilor.** Ponderile rețelei neuronale sunt programate direct în celule de memorie nevolatilă (cum ar fi memoria flash modificată sau RAM-ul rezistiv) ca valori analogice de conductanță ($G$). Odată programate, ponderile rămân fixe în matricea de memorie; ele nu sunt niciodată aduse sau transferate în timpul inferenței.
+**Programarea ponderilor.** Ponderile rețelei neuronale sunt programate direct în celule de memorie nevolatilă (cum ar fi memoria flash modificată sau RAM-ul rezistiv) ca valori analogice de conductanță (*G*). Odată programate, ponderile rămân fixe în matricea de memorie; ele nu sunt niciodată aduse sau transferate în timpul inferenței.
 
-**Modularea tensiunii de intrare.** Activările de intrare (cum ar fi tokenii vizuali de la camere) sunt convertite în niveluri analogice de tensiune ($V$) și aplicate de-a lungul liniilor de cuvânt ale matricei.
+**Modularea tensiunii de intrare.** Activările de intrare (cum ar fi tokenii vizuali de la camere) sunt convertite în niveluri analogice de tensiune (*V*) și aplicate de-a lungul liniilor de cuvânt ale matricei.
 
-**Înmulțirea prin legea lui Ohm.** Pe măsură ce tensiunea de intrare trece prin fiecare celulă de memorie, legea lui Ohm ($I = V \times G$) efectuează o înmulțire analogică instantanee, generând un curent electric proporțional cu produsul dintre intrare și ponderea stocată.
+**Înmulțirea prin legea lui Ohm.** Pe măsură ce tensiunea de intrare trece prin fiecare celulă de memorie, legea lui Ohm (*I* = *V* × *G*) efectuează o înmulțire analogică instantanee, generând un curent electric proporțional cu produsul dintre intrare și ponderea stocată.
 
-**Acumularea prin legea curenților a lui Kirchhoff.** De-a lungul liniilor de bit verticale, curenții din mii de celule de memorie paralele se însumează în mod natural conform legii curenților a lui Kirchhoff ($\sum I = 0$).
+**Acumularea prin legea curenților a lui Kirchhoff.** De-a lungul liniilor de bit verticale, curenții din mii de celule de memorie paralele se însumează în mod natural conform legii curenților a lui Kirchhoff (Σ*I* = 0).
 
 O singură matrice de memorie flash execută astfel o înmulțire completă matrice-vector într-un singur ciclu de ceas, la nivel fizic și fără nicio citire din memorie. Curentul analogic acumulat este apoi convertit înapoi în valori digitale de convertoare analog-digitale (ADC) de mare viteză, la marginea matricei.
 
@@ -208,7 +208,7 @@ Trecerea de la clustere de centre de date de 700 W la siliciu de margine de 15 W
 Gâtuirea von Neumann desemnează limitarea de debit și de energie cauzată de separarea fizică dintre unitatea de procesare (ALU) și memoria sistemului (DRAM). În sarcinile de inteligență artificială, care implică miliarde de înmulțiri de matrice, procesoarele cheltuiesc peste 85% din energia totală și un număr considerabil de cicluri de ceas doar mutând date înainte și înapoi pe magistrale de cupru, ceea ce creează blocaje termice și de latență severe.
 
 **Cum funcționează calculul analogic în memorie (CIM)?**
-Calculul în memorie efectuează operații matematice direct în celulele de memorie, fără a muta datele. Ponderile rețelei neuronale sunt stocate ca stări analogice de conductanță în celule de memorie nevolatilă. Când tensiunile de intrare sunt aplicate pe matrice, curentul trece prin celule conform legii lui Ohm ($I = V \times G$) și se însumează de-a lungul liniilor de bit conform legii curenților a lui Kirchhoff. Astfel, o înmulțire completă matrice-vector se realizează într-un singur pas fizic.
+Calculul în memorie efectuează operații matematice direct în celulele de memorie, fără a muta datele. Ponderile rețelei neuronale sunt stocate ca stări analogice de conductanță în celule de memorie nevolatilă. Când tensiunile de intrare sunt aplicate pe matrice, curentul trece prin celule conform legii lui Ohm (*I* = *V* × *G*) și se însumează de-a lungul liniilor de bit conform legii curenților a lui Kirchhoff. Astfel, o înmulțire completă matrice-vector se realizează într-un singur pas fizic.
 
 **De ce este calculul în memorie deosebit de important pentru roboți și drone?**
 Roboții mobili și dronele funcționează sub constrângeri stricte SWaP-C (dimensiune, greutate, putere și cost). Ei depind de bateriile de la bord și nu pot susține radiatoare grele sau surse de alimentare de putere mare. Calculul în memorie oferă o eficiență energetică de 10x până la 1.000x mai mare, permițând roboților să ruleze local modele complexe viziune-limbaj-acțiune într-un buget de putere de 10–20 W, păstrând autonomia bateriei.

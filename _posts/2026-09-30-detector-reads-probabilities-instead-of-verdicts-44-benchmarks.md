@@ -138,7 +138,7 @@ So the structural claim runs like this: generative judges are expensive per crit
 
 | Architecture Dimension | Generative LLM Judges (e.g. GPT-4 as Judge) | Single-Token Classifiers (e.g. Llama Guard) | Multi-Query RLCD Detector (Jev) |
 | :--- | :--- | :--- | :--- |
-| **Scoring Mechanism** | Full autoregressive decoding pass per criteria | Softmax probability over single output token | Multi-head calibrated probability tensor $P(\text{yes})$ |
+| **Scoring Mechanism** | Full autoregressive decoding pass per criteria | Softmax probability over single output token | Multi-head calibrated probability tensor P(yes) |
 | **Questions per Call** | 1 evaluation prompt per model invocation | 1 classification label per model invocation | Multiple binary/categorical/ordinal questions in 1 call |
 | **Inference Cost** | High ($10–$50 per 1,000 interactions) | Moderate ($0.50–$2.00 per 1,000 interactions) | 63× lower ($0.30 across 19 full benchmarks) |
 | **AUROC Performance** | Benchmark dependent; prone to judge drift | High on specific trained safety categories | Median AUROC 0.886 zero-shot across 44 suites |

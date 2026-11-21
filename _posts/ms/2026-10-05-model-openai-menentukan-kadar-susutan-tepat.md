@@ -147,9 +147,9 @@ Saya berpendapat bahawa kerangka inilah yang betul untuk menilai keputusan ini. 
 | :--- | :--- | :--- | :--- |
 | **Eksponen Pembungkusan Sfera** | Batas Kabatianskii-Levenshtein: 0.59905576... | Sekurang-kurangnya sekuat batas kod sfera (Cohn-Zhao) | Kadar asimptot tepat yang dikonjekturkan oleh Afkhami-Jeddi et al. (2020) dibuktikan |
 | **Kemuktamadan Batas** | Hanya penghalusan faktor peringkat rendah | Soalan terbuka tentang jurang asimptot dimensi tinggi | Batas bawah sepadan yang tepat: tiada fungsi bantu boleh mengatasi kadar ini |
-| **Ketidakpastian Tanda Fourier** | Batas tanda berasingan ($A^+(d) < A^-(d)$) | Dikaitkan dengan fungsi ujian anti-swadual Fourier | Diselesaikan secara asimptot; ketidakpastian tanda ditentukan oleh pantulan Mellin |
+| **Ketidakpastian Tanda Fourier** | Batas tanda berasingan (A⁺(d) < A⁻(d)) | Dikaitkan dengan fungsi ujian anti-swadual Fourier | Diselesaikan secara asimptot; ketidakpastian tanda ditentukan oleh pantulan Mellin |
 | **Kod Pembetulan Ralat** | Batas kod sfera dan binari klasik | Secara asimptot berkait dengan batas pembungkusan | Penambahbaikan faktor eksponen bagi semua parameter jarak tetap |
-| **Siling Metodologi** | Pengoptimuman berangka faktor polinomial | Pengoptimuman terbuka fungsi ujian bantu $f \in \mathcal{A}_d$ | Siling matematik dibuktikan: keuntungan selanjutnya memerlukan kaedah bukan Cohn-Elkies |
+| **Siling Metodologi** | Pengoptimuman berangka faktor polinomial | Pengoptimuman terbuka fungsi ujian bantu f ∈ 𝒜\_d | Siling matematik dibuktikan: keuntungan selanjutnya memerlukan kaedah bukan Cohn-Elkies |
 
 ## Mengapa batas bawah yang sepadan mengubah persoalannya
 
@@ -237,11 +237,11 @@ Penentuan tepat kadar susutan Cohn-Elkies dalam dimensi tinggi dan keputusan mat
 
 ### Matematik tulen dan geometri diskret
 
-Bagi ahli matematik yang bekerja dalam geometri dimensi tinggi dan analisis harmonik, penentuan kadar susutan Cohn-Elkies yang tepat mengubah landskap penyelidikan. Oleh sebab batas bawah yang sepadan membuktikan bahawa tiada fungsi bantu dalam $\mathcal{A}_d$ boleh mengatasi eksponen baharu, penyelidik boleh berhenti mencari fungsi ujian jejarian yang lebih baik dalam rangka kerja pengaturcaraan linear klasik. Kemajuan ke arah pembungkusan sfera yang lebih padat atau batas sejagat yang lebih ketat kini mesti meneroka teknik pengaturcaraan tak linear, hierarki separa tentu peringkat lebih tinggi, atau pembinaan geometri yang berbeza sama sekali.
+Bagi ahli matematik yang bekerja dalam geometri dimensi tinggi dan analisis harmonik, penentuan kadar susutan Cohn-Elkies yang tepat mengubah landskap penyelidikan. Oleh sebab batas bawah yang sepadan membuktikan bahawa tiada fungsi bantu dalam 𝒜\_d boleh mengatasi eksponen baharu, penyelidik boleh berhenti mencari fungsi ujian jejarian yang lebih baik dalam rangka kerja pengaturcaraan linear klasik. Kemajuan ke arah pembungkusan sfera yang lebih padat atau batas sejagat yang lebih ketat kini mesti meneroka teknik pengaturcaraan tak linear, hierarki separa tentu peringkat lebih tinggi, atau pembinaan geometri yang berbeza sama sekali.
 
 ### Kriptografi dan keselamatan berasaskan kekisi
 
-Kriptografi berasaskan kekisi, yang menjadi teras piawaian pascakuantum seperti ML-KEM dan ML-DSA, sangat bergantung pada andaian kesukaran mencari vektor terpendek atau terdekat dalam kekisi Euclid berdimensi tinggi. Penurunan langsung daripada 3SAT yang menetapkan kesukaran berfaktor $n^{1/400}$ bagi Masalah Vektor Terdekat (CVP) Euclid, digabungkan dengan siling eksponen yang lebih ketat bagi pembungkusan sfera dan kod sfera, mengukuhkan asas teori di sebalik penurunan kekisi kes terburuk kepada kes purata tanpa melemahkan parameter keselamatan konkrit.
+Kriptografi berasaskan kekisi, yang menjadi teras piawaian pascakuantum seperti ML-KEM dan ML-DSA, sangat bergantung pada andaian kesukaran mencari vektor terpendek atau terdekat dalam kekisi Euclid berdimensi tinggi. Penurunan langsung daripada 3SAT yang menetapkan kesukaran berfaktor n\^(1/400) bagi Masalah Vektor Terdekat (CVP) Euclid, digabungkan dengan siling eksponen yang lebih ketat bagi pembungkusan sfera dan kod sfera, mengukuhkan asas teori di sebalik penurunan kekisi kes terburuk kepada kes purata tanpa melemahkan parameter keselamatan konkrit.
 
 ### Pembuktian teorem automatik dan model asas
 
@@ -267,7 +267,7 @@ Cohn dan Gonçalves menunjukkan bahawa masalah ketidakpastian tanda Fourier pele
 
 **Adakah keputusan ini menjejaskan kriptografi berasaskan kekisi?**
 
-Tidak. Walaupun teorem ini menajamkan batas atas tentang betapa padatnya sfera boleh dibungkus dalam dimensi tinggi dan menetapkan kesukaran berfaktor $n^{1/400}$ bagi Masalah Vektor Terdekat, ia tidak menyediakan algoritma penurunan kekisi masa polinomial. Sistem kripto kekisi praktikal kekal selamat daripada serangan kuantum dan klasik yang diketahui.
+Tidak. Walaupun teorem ini menajamkan batas atas tentang betapa padatnya sfera boleh dibungkus dalam dimensi tinggi dan menetapkan kesukaran berfaktor n\^(1/400) bagi Masalah Vektor Terdekat, ia tidak menyediakan algoritma penurunan kekisi masa polinomial. Sistem kripto kekisi praktikal kekal selamat daripada serangan kuantum dan klasik yang diketahui.
 
 ## Rujukan
 

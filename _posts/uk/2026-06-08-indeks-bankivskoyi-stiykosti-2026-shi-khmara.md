@@ -13,7 +13,7 @@ description: "Індекс банківської стійкості 2026: ри�
 format-detection: "telephone=no"
 hreflang: "uk"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/uk/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+id: "https://sebastienrousseau.com/uk/2026-06-08-indeks-bankivskoyi-stiykosti-2026-shi-khmara"
 image_alt: "Чорно-білий портрет Себастьяна Руссо"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/uk/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+permalink: "https://sebastienrousseau.com/uk/2026-06-08-indeks-bankivskoyi-stiykosti-2026-shi-khmara"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "банківська стійкість, DORA, ризик ШІ, конц�
 excerpt: "Індекс банківської стійкості 2026 — ризик ШІ, ризик концентрації у хмарі, квантово-безпечна міграція, безперервність платежів і критична залежність від третіх сторін у єдиному показнику операційної стійкості, який можуть читати і правління, і наглядовий орган."
 theme-color: "0, 83, 191"
 title: "Індекс банківської стійкості 2026: ШІ, хмара, квант, платежі, треті сторони"
-url: "https://sebastienrousseau.com/uk/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+url: "https://sebastienrousseau.com/uk/2026-06-08-indeks-bankivskoyi-stiykosti-2026-shi-khmara"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/rss.xml"
 category: "Risk"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Квантово-безпечна міграція — метрика операційної стійкості, а не безпеки.</strong> Довгоживучі дані, оголені сьогодні, не пройдуть тест стійкості завтра.</li>
   <li><strong>Концентрація третіх сторін уже системна.</strong> Залежність від єдиного гіперскейлера, єдиного PSP чи єдиного провайдера LLM відображається в індексі стійкості як точка єдиної відмови.</li>
 </ul>
-<p class="post-lead-related"><strong>Дотичне читання:</strong> <a href="https://sebastienrousseau.com/uk/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA, EU AI Act і суверенітет даних: стек банківського комплаєнсу 2026</a>, <a href="https://sebastienrousseau.com/uk/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">Хмарно-нативний банкінг 2026: Kubernetes, DORA, суверенітет і кінець поділу ВМ vs контейнери</a>.</p>
+<p class="post-lead-related"><strong>Дотичне читання:</strong> <a href="https://sebastienrousseau.com/uk/2026-05-28-dora-eu-ai-act-suverenitet-danykh/index.html">DORA, EU AI Act і суверенітет даних: стек банківського комплаєнсу 2026</a>, <a href="https://sebastienrousseau.com/uk/2026-05-20-khmarno-natyvnyy-bankinh-2026-rotsi-kubernetes/index.html">Хмарно-нативний банкінг 2026: Kubernetes, DORA, суверенітет і кінець поділу ВМ vs контейнери</a>.</p>
 </aside>
 <!-- lead-end -->
 

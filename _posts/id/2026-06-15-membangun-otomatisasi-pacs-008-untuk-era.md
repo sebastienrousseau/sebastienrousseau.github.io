@@ -16,7 +16,7 @@ description: "Pacs008 adalah pustaka Python open source yang mengotomatisasi pem
 format-detection: "telephone=no"
 hreflang: "id"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/id/2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026"
+id: "https://sebastienrousseau.com/id/2026-06-15-membangun-otomatisasi-pacs-008-untuk-era"
 image_alt: "Potret Hitam Putih Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -32,7 +32,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/id/2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026"
+permalink: "https://sebastienrousseau.com/id/2026-06-15-membangun-otomatisasi-pacs-008-untuk-era"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -43,7 +43,7 @@ subtitle: "Pesan pacs.008 adalah titik temu data pembayaran antarbank, alamat te
 tags: "pacs008, ISO 20022, pembayaran antarbank, pembayaran wholesale, Python"
 theme-color: "0, 83, 191"
 title: "Membangun Otomatisasi pacs.008 untuk Era Antarbank ISO 20022 pada 2026"
-url: "https://sebastienrousseau.com/id/2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026"
+url: "https://sebastienrousseau.com/id/2026-06-15-membangun-otomatisasi-pacs-008-untuk-era"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
@@ -85,7 +85,7 @@ twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastie
 twitter_image_alt: "Logo Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Otomatisasi pacs.008 untuk Era ISO 20022"
-twitter_url: "https://sebastienrousseau.com/id/2026-06-15-pacs008-automation-iso-20022-interbank-payments-2026"
+twitter_url: "https://sebastienrousseau.com/id/2026-06-15-membangun-otomatisasi-pacs-008-untuk-era"
 
 excerpt: "pacs008 adalah toolkit Python open source yang menjadikan pesan transfer kredit nasabah FI-to-FI ISO 20022 dapat diprogram — alamat terstruktur, validasi, routing, hook kepatuhan, dan tenggat SWIFT November 2026 sebagai default bawaan."
 

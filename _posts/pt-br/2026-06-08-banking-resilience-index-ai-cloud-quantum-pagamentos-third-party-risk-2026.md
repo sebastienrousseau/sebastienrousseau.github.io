@@ -99,7 +99,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>A migração resistente a quântica é uma métrica de resiliência operacional, não de segurança.</strong> Dados de vida longa expostos hoje falham no teste de resiliência de amanhã.</li>
   <li><strong>A concentração de terceiros é agora sistêmica.</strong> Dependências de um único hyperscaler, único PSP ou único provedor de LLM aparecem como pontos únicos de falha no painel de resiliência.</li>
 </ul>
-<p class="post-lead-related"><strong>Leitura relacionada:</strong> <a href="https://sebastienrousseau.com/pt-br/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA, EU AI Act e soberania de dados: a stack de conformidade bancária 2026</a>, <a href="https://sebastienrousseau.com/pt-br/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">Banking cloud-native em 2026: Kubernetes, DORA, soberania e o fim da divisão entre VM e contêiner</a>.</p>
+<p class="post-lead-related"><strong>Leitura relacionada:</strong> <a href="https://sebastienrousseau.com/pt-br/2026-05-28-dora-eu-ai-act-soberania/index.html">DORA, EU AI Act e soberania de dados: a stack de conformidade bancária 2026</a>, <a href="https://sebastienrousseau.com/pt-br/2026-05-20-cloud-native-banking-em-2026-kubernetes/index.html">Banking cloud-native em 2026: Kubernetes, DORA, soberania e o fim da divisão entre VM e contêiner</a>.</p>
 </aside>
 <!-- lead-end -->
 

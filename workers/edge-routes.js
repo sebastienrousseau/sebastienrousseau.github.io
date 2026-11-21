@@ -160,9 +160,92 @@ export async function resolveRenamed(redirect, env) {
   return tryRenamedUrlRedirect(target, await getRedirectMap(env)) || redirect;
 }
 
-/** Fetch from origin, asking the edge to cache the response if it is a page. */
-export function fetchOrigin(request, url) {
-  return isEdgeCacheable(request, url.pathname)
-    ? fetch(request, { cf: EDGE_HTML_CACHE })
-    : fetch(request);
+// Retired /api/pdf/ route (#515). It served `/api/pdf/<slug>.pdf` and
+// `/api/pdf/<lang>/<slug>.pdf`, with the same slug and locale as the
+// article page. Each such URL now 301s to that article (through the
+// renamed-URL map, so one hop to the final URL), which keeps the value of
+// any inbound link and lands a reader on the page. Anything else under the
+// prefix was never a PDF URL: 410 Gone, so crawlers drop it.
+const PDF_PREFIX = '/api/pdf/';
+const PDF_RE = /^\/api\/pdf\/(?:([a-z]{2,3}(?:-[a-z]{2,4})?)\/)?([a-z0-9][a-z0-9-]{0,127})\.pdf$/;
+
+function pdfGone() {
+  return new Response('Gone\n', {
+    status: 410,
+    headers: {
+      'Content-Type': 'text/plain; charset=utf-8',
+      'Cache-Control': 'public, max-age=86400',
+      'X-Robots-Tag': 'noindex',
+    },
+  });
+}
+
+/** 301 to the article for an old PDF URL, 410 for other /api/pdf/ paths, else null. */
+export async function tryRetiredPdf(url, env) {
+  if (!url.pathname.startsWith(PDF_PREFIX)) return null;
+  const m = PDF_RE.exec(url.pathname);
+  if (!m) return pdfGone();
+  const target = new URL(url);
+  target.pathname = m[1] ? `/${m[1]}/${m[2]}/` : `/${m[2]}/`;
+  target.search = '';
+  return tryRenamedUrlRedirect(target, await getRedirectMap(env))
+    || Response.redirect(target.toString(), 301);
+}
+
+// Stale-while-revalidate for pages, when the Workers Cache API is present.
+// The fetch cache above expires a page after EDGE_HTML_TTL, so a crawler
+// that walks thousands of URLs, each rarely, almost always misses it and
+// waits on GitHub Pages (Search Console measured ~1.1 s per request). Here
+// each 200 is also kept in caches.default for EDGE_HTML_STALE, keyed by path
+// alone (a query string never changes a static page). A copy younger than
+// EDGE_HTML_TTL is served as is; an older one is served at once and
+// refreshed in the background, so freshness is the same as before and only
+// the first visitor after a deploy can see the previous version. Only GET
+// 200s are stored; a failed refresh keeps the copy.
+export const EDGE_HTML_STALE = 7 * 24 * 60 * 60;
+export const EDGE_STORED_AT = 'x-edge-stored-at';
+
+function pageKey(url) {
+  return new Request(`${url.origin}${url.pathname}`, { method: 'GET' });
+}
+
+async function storePage(cache, key, res) {
+  const headers = new Headers(res.headers);
+  headers.set('Cache-Control', `public, max-age=${EDGE_HTML_STALE}`);
+  headers.set(EDGE_STORED_AT, String(Date.now()));
+  // adr: ADR-0015: Cache API (caches.default) page copy, not a KV write
+  await cache.put(key, new Response(res.body, { status: 200, headers }));
+}
+
+async function revalidate(cache, key) {
+  const res = await fetch(key, { cf: EDGE_HTML_CACHE });
+  if (res.status === 200) await storePage(cache, key, res);
+}
+
+function servedCopy(hit, method) {
+  const headers = new Headers(hit.headers);
+  headers.delete(EDGE_STORED_AT);
+  return new Response(method === 'HEAD' ? null : hit.body, { status: hit.status, headers });
+}
+
+async function fetchPageSwr(request, url, ctx, cache) {
+  const key = pageKey(url);
+  const hit = await cache.match(key);
+  if (hit) {
+    const age = (Date.now() - Number(hit.headers.get(EDGE_STORED_AT))) / 1000;
+    if (!(age < EDGE_HTML_TTL)) ctx.waitUntil(revalidate(cache, key).catch(() => {}));
+    return servedCopy(hit, request.method);
+  }
+  const res = await fetch(request, { cf: EDGE_HTML_CACHE });
+  if (res.status === 200 && request.method === 'GET') {
+    ctx.waitUntil(storePage(cache, key, res.clone()));
+  }
+  return res;
+}
+
+/** Fetch from origin, serving pages from the edge copy where one exists. */
+export function fetchOrigin(request, url, ctx, cache = globalThis.caches?.default) {
+  if (!isEdgeCacheable(request, url.pathname)) return fetch(request);
+  if (cache && typeof ctx?.waitUntil === 'function') return fetchPageSwr(request, url, ctx, cache);
+  return fetch(request, { cf: EDGE_HTML_CACHE });
 }

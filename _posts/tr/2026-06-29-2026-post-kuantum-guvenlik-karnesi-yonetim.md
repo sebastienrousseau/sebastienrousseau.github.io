@@ -13,7 +13,7 @@ description: "2026 Post-Kuantum Güvenlik Karnesi, yönetim kurullarına ve üst
 format-detection: "telephone=no"
 hreflang: "tr"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/tr/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+id: "https://sebastienrousseau.com/tr/2026-06-29-2026-post-kuantum-guvenlik-karnesi-yonetim"
 image_alt: "Sebastien Rousseau'nun siyah beyaz portresi"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/tr/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+permalink: "https://sebastienrousseau.com/tr/2026-06-29-2026-post-kuantum-guvenlik-karnesi-yonetim"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -39,7 +39,7 @@ subtitle: "Yönetim kurullarının NIST FIPS 203 ve 204'e geçişi nasıl ölçm
 tags: "post-kuantum, kriptografi, bankacılık, yönetişim, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
 theme-color: "0, 83, 191"
 title: "2026 Post-Kuantum Güvenlik Karnesi: Yönetim Kurulu Düzeyinde Bir Metrik Çerçeve"
-url: "https://sebastienrousseau.com/tr/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+url: "https://sebastienrousseau.com/tr/2026-06-29-2026-post-kuantum-guvenlik-karnesi-yonetim"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/rss.xml"
 category: "Technology"
@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>İlgili okumalar:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib ve 2026'da Post-Kuantum Bankacılık Göçü</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: Kuantum Çağında Koruma Algoritması</a>.</p>
 </aside>
+
 Post-kuantum güvenlik artık bir araştırma projesi değildir. "Denetim saati", 2020'lerin sonundaki uygulama son tarihlerine doğru tıklıyor. [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) ve [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) standartlarının nihai hale getirilmesi, anahtar kapsülleme ve dijital imzalar için standartları kodlamıştır.
 
 Düzenleyici kurumlar artık birinci kademe bankaların pilot programların ötesine geçmesini bekliyor. 2026'da odak bu standartların endüstrileşmesine kaymıştır. Net bir göç yolunu kanıtlayamamak, [Dijital Operasyonel Dayanıklılık Yasası (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) kapsamında ciddi düzenleyici cezalar ve kuantum-destekli şifre çözümünün öngörülebilir tehdidini görmezden gelen yöneticiler için olası kişisel sorumluluk getirir.

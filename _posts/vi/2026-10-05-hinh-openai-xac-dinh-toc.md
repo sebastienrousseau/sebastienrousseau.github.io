@@ -147,9 +147,9 @@ Tôi cho rằng đây là cách đặt vấn đề đúng để đánh giá kế
 | :--- | :--- | :--- | :--- |
 | **Số mũ xếp hình cầu** | Cận Kabatianskii-Levenshtein: 0,59905576... | Ít nhất mạnh bằng các cận mã cầu (Cohn-Zhao) | Chứng minh tốc độ tiệm cận chính xác do Afkhami-Jeddi và cộng sự (2020) phỏng đoán |
 | **Tính dứt khoát của cận** | Chỉ tinh chỉnh các thừa số bậc thấp | Câu hỏi mở về khoảng trống tiệm cận ở số chiều cao | Cận dưới khớp chính xác: không hàm phụ trợ nào vượt được tốc độ này |
-| **Bất định dấu Fourier** | Các cận dấu riêng biệt ($A^+(d) < A^-(d)$) | Gắn với các hàm thử phản tự Fourier | Giải quyết tiệm cận; bất định dấu được chi phối bởi phép phản xạ Mellin |
+| **Bất định dấu Fourier** | Các cận dấu riêng biệt (A⁺(d) < A⁻(d)) | Gắn với các hàm thử phản tự Fourier | Giải quyết tiệm cận; bất định dấu được chi phối bởi phép phản xạ Mellin |
 | **Mã sửa lỗi** | Các cận mã cầu và mã nhị phân cổ điển | Gắn tiệm cận với các cận xếp | Cải thiện theo thừa số mũ với mọi tham số khoảng cách cố định |
-| **Trần phương pháp luận** | Tối ưu hóa số các thừa số đa thức | Tối ưu hóa mở các hàm thử phụ trợ $f \in \mathcal{A}_d$ | Chứng minh trần toán học: muốn tiến xa hơn cần phương pháp ngoài Cohn-Elkies |
+| **Trần phương pháp luận** | Tối ưu hóa số các thừa số đa thức | Tối ưu hóa mở các hàm thử phụ trợ f ∈ 𝒜\_d | Chứng minh trần toán học: muốn tiến xa hơn cần phương pháp ngoài Cohn-Elkies |
 
 ## Vì sao cận dưới khớp làm thay đổi câu hỏi
 
@@ -237,11 +237,11 @@ Việc xác định chính xác tốc độ suy giảm Cohn-Elkies ở số chi�
 
 ### Toán học thuần túy và hình học rời rạc
 
-Với các nhà toán học làm việc trong hình học số chiều cao và giải tích điều hòa, việc xác định chính xác tốc độ suy giảm Cohn-Elkies làm thay đổi cục diện nghiên cứu. Vì cận dưới khớp chứng minh rằng không hàm phụ trợ nào trong $\mathcal{A}_d$ có thể vượt qua số mũ mới, các nhà nghiên cứu có thể ngừng tìm kiếm các hàm thử xuyên tâm tốt hơn bên trong khuôn khổ quy hoạch tuyến tính cổ điển. Tiến bộ hướng tới những cách xếp hình cầu dày đặc hơn hoặc những cận phổ quát chặt hơn giờ đây phải khám phá các kỹ thuật quy hoạch phi tuyến, các hệ phân cấp nửa xác định bậc cao hơn, hoặc những cách dựng hình học khác hẳn.
+Với các nhà toán học làm việc trong hình học số chiều cao và giải tích điều hòa, việc xác định chính xác tốc độ suy giảm Cohn-Elkies làm thay đổi cục diện nghiên cứu. Vì cận dưới khớp chứng minh rằng không hàm phụ trợ nào trong 𝒜\_d có thể vượt qua số mũ mới, các nhà nghiên cứu có thể ngừng tìm kiếm các hàm thử xuyên tâm tốt hơn bên trong khuôn khổ quy hoạch tuyến tính cổ điển. Tiến bộ hướng tới những cách xếp hình cầu dày đặc hơn hoặc những cận phổ quát chặt hơn giờ đây phải khám phá các kỹ thuật quy hoạch phi tuyến, các hệ phân cấp nửa xác định bậc cao hơn, hoặc những cách dựng hình học khác hẳn.
 
 ### Mật mã học và bảo mật dựa trên lưới
 
-Mật mã học dựa trên lưới, vốn là cốt lõi của các tiêu chuẩn hậu lượng tử như ML-KEM và ML-DSA, phụ thuộc nhiều vào độ khó được giả định của việc tìm vectơ ngắn nhất hoặc gần nhất trong các lưới Euclid số chiều cao. Phép quy dẫn trực tiếp từ 3SAT xác lập độ khó với thừa số $n^{1/400}$ cho Bài toán Vectơ Gần nhất (CVP) Euclid, kết hợp với các trần mũ chặt hơn đối với việc xếp hình cầu và mã cầu, củng cố nền tảng lý thuyết đằng sau các phép quy dẫn lưới từ trường hợp xấu nhất về trường hợp trung bình mà không làm yếu các tham số bảo mật cụ thể.
+Mật mã học dựa trên lưới, vốn là cốt lõi của các tiêu chuẩn hậu lượng tử như ML-KEM và ML-DSA, phụ thuộc nhiều vào độ khó được giả định của việc tìm vectơ ngắn nhất hoặc gần nhất trong các lưới Euclid số chiều cao. Phép quy dẫn trực tiếp từ 3SAT xác lập độ khó với thừa số n\^(1/400) cho Bài toán Vectơ Gần nhất (CVP) Euclid, kết hợp với các trần mũ chặt hơn đối với việc xếp hình cầu và mã cầu, củng cố nền tảng lý thuyết đằng sau các phép quy dẫn lưới từ trường hợp xấu nhất về trường hợp trung bình mà không làm yếu các tham số bảo mật cụ thể.
 
 ### Chứng minh định lý tự động và mô hình nền tảng
 
@@ -267,7 +267,7 @@ Cohn và Gonçalves đã chứng minh rằng bài toán bất định dấu Four
 
 **Kết quả này có đe dọa mật mã học dựa trên lưới không?**
 
-Không. Dù định lý làm sắc nét các cận trên về việc các quả cầu có thể xếp dày đặc đến đâu ở số chiều cao và xác lập độ khó với thừa số $n^{1/400}$ cho Bài toán Vectơ Gần nhất, nó không cung cấp thuật toán rút gọn lưới thời gian đa thức. Các hệ mật mã lưới thực tế vẫn an toàn trước các tấn công lượng tử và cổ điển đã biết.
+Không. Dù định lý làm sắc nét các cận trên về việc các quả cầu có thể xếp dày đặc đến đâu ở số chiều cao và xác lập độ khó với thừa số n\^(1/400) cho Bài toán Vectơ Gần nhất, nó không cung cấp thuật toán rút gọn lưới thời gian đa thức. Các hệ mật mã lưới thực tế vẫn an toàn trước các tấn công lượng tử và cổ điển đã biết.
 
 ## Tài liệu tham khảo
 

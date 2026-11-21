@@ -115,8 +115,11 @@ def _en(slug: str) -> tuple[str, str]:
     return entry["name"], " ".join(entry["description"].split())
 
 
-def test_there_are_ten_indexed_locales() -> None:
-    assert len(KEPT) == 10
+def test_indexed_locales_follow_the_policy() -> None:
+    # ADR-0015: English is the only indexed locale, so no locale's tag
+    # translations are held to these checks. A reviewed locale that returns
+    # to locale-indexing.json is checked again by the tests below.
+    assert KEPT == []
 
 
 @pytest.mark.parametrize("lang", KEPT)

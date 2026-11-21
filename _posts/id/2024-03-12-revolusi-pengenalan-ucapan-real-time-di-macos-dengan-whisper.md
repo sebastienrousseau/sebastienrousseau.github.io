@@ -64,7 +64,7 @@ Integrasi OpenAI Whisper dan Metal Performance Shaders di macOS merepresentasika
 .class=\"card bg-light p-3 me-3 w-100\"
 Untuk mempelajari lebih lanjut tentang integrasi OpenAI Whisper dan Metal Performance Shaders di macOS untuk pengenalan ucapan real-time, pembaca dianjurkan mengakses makalah riset lengkap. Makalah tersebut menyediakan detail teknis mendalam, hasil eksperimen, dan wawasan lebih lanjut tentang potensi aplikasi serta arah masa depan teknologi ini. Dengan mengakses makalah riset lengkap, pembaca akan memperoleh pemahaman komprehensif tentang metodologi, implementasi, dan implikasi pendekatan inovatif ini untuk pengenalan ucapan real-time di perangkat macOS. [**Baca Makalah Lengkap Hari Ini! ❯**][00]
 
-[00]: /papers/index.html "Research Publications & White Papers from Sebastien Rousseau"
+[00]: /research/index.html "Research Publications & White Papers from Sebastien Rousseau"
 [01]: https://developer.apple.com/documentation/metalperformanceshaders "Metal Performance Shaders - Apple Developer Documentation"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"

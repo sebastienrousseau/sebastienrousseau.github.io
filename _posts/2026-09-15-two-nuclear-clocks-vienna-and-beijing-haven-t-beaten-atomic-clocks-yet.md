@@ -144,9 +144,9 @@ The performance of that approach is already extraordinary. The best conventional
 | :--- | :--- | :--- |
 | **Physical Mechanism** | Electronic shell transitions (cesium/strontium) | Nuclear proton/neutron transitions inside thorium-229 |
 | **Probing Medium** | Microwave or optical lasers on valence electrons | Vacuum ultraviolet laser on crystal-embedded nuclei |
-| **Host Substrate** | Gas cells or laser-cooled optical lattice traps | Solid-state calcium fluoride ($CaF_2$) crystals |
-| **Current Performance** | Billions of years gaining/losing $\le 1$ second | Matched atomic clock precision in dark matter search |
-| **Target Stability** | Established international standard ($10^{-18}$) | Projected order-of-magnitude stability improvement |
+| **Host Substrate** | Gas cells or laser-cooled optical lattice traps | Solid-state calcium fluoride (CaF₂) crystals |
+| **Current Performance** | Billions of years gaining/losing ≤ 1 second | Matched atomic clock precision in dark matter search |
+| **Target Stability** | Established international standard (10⁻¹⁸) | Projected order-of-magnitude stability improvement |
 | **Hardware Form Factor** | Large, delicate laboratory vacuum apparatus | Potential for compact, ruggedised solid-state field units |
 
 The new clocks change where the jump happens. Instead of electrons in the shell, they use lasers to make protons and neutrons jump between energy levels inside the nucleus of an atom, in this case thorium-229. Time in a nuclear clock is calculated by monitoring how a high-powered laser interacts with the nucleus of an atom.
@@ -243,7 +243,7 @@ If solid-state calcium fluoride crystal architectures prove less bulky and delic
 
 ### Fundamental physics and astrophysics
 
-Because nuclear energy levels depend directly on the strong force and electromagnetic coupling constant $\alpha$, nuclear clocks offer novel sensitivity to testing whether fundamental physical constants vary over cosmic time and probing dark matter candidates.
+Because nuclear energy levels depend directly on the strong force and electromagnetic coupling constant α, nuclear clocks offer novel sensitivity to testing whether fundamental physical constants vary over cosmic time and probing dark matter candidates.
 
 ## Conclusion
 

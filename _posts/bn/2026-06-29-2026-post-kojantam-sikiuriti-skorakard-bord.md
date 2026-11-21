@@ -13,7 +13,7 @@ description: "২০২৬ পোস্ট-কোয়ান্টাম সি
 format-detection: "telephone=no"
 hreflang: "bn"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/bn/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+id: "https://sebastienrousseau.com/bn/2026-06-29-2026-post-kojantam-sikiuriti-skorakard-bord"
 image_alt: "সেবাস্তিয়ান রুসোর সাদা-কালো প্রতিকৃতি"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/bn/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+permalink: "https://sebastienrousseau.com/bn/2026-06-29-2026-post-kojantam-sikiuriti-skorakard-bord"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -39,7 +39,7 @@ subtitle: "বোর্ডকে কীভাবে NIST FIPS 203 ও 204-এ �
 tags: "post-quantum, cryptography, banking, governance, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
 theme-color: "0, 83, 191"
 title: "২০২৬ পোস্ট-কোয়ান্টাম সিকিউরিটি স্কোরকার্ড: বোর্ড-স্তরের মেট্রিক ফ্রেমওয়ার্ক"
-url: "https://sebastienrousseau.com/bn/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+url: "https://sebastienrousseau.com/bn/2026-06-29-2026-post-kojantam-sikiuriti-skorakard-bord"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/rss.xml"
 category: "Technology"
@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>সম্পর্কিত পঠন:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib এবং ২০২৬-এ পোস্ট-কোয়ান্টাম ব্যাঙ্কিং স্থানান্তর</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: কোয়ান্টাম যুগে সুরক্ষাকারী অ্যালগরিদম</a>।</p>
 </aside>
+
 পোস্ট-কোয়ান্টাম নিরাপত্তা আর কোনও গবেষণা প্রকল্প নয়। "নিয়ন্ত্রক ঘড়ি" ২০২০-এর দশকের শেষের প্রয়োগযোগ্য সময়সীমার দিকে এগিয়ে চলেছে। [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) ও [NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final)-এর চূড়ান্তকরণ কী এনক্যাপসুলেশন ও ডিজিটাল স্বাক্ষরের জন্য মানদণ্ডকে কোডিফাই করেছে।
 
 নিয়ন্ত্রক সংস্থাগুলি এখন Tier-1 ব্যাঙ্কগুলিকে পাইলট প্রকল্পের বাইরে যেতে আশা করে। ২০২৬ সালে, ফোকাস এই মানদণ্ডগুলির শিল্পায়নে স্থানান্তরিত হয়েছে। একটি স্পষ্ট স্থানান্তর পথ প্রদর্শনে ব্যর্থতা [ডিজিটাল অপারেশনাল রেসিলিয়েন্স অ্যাক্ট (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj)-এর অধীনে গুরুতর নিয়ন্ত্রক জরিমানা বহন করে, এবং পরিচালকেরা যারা কোয়ান্টাম-সক্ষম ডিক্রিপশনের পূর্বাভাসযোগ্য হুমকি উপেক্ষা করেন, তাঁদের জন্য সম্ভাব্য ব্যক্তিগত দায়বদ্ধতাও সৃষ্টি করে।

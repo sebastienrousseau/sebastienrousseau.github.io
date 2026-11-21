@@ -127,9 +127,9 @@ El rendimiento de ese enfoque ya es extraordinario. Los mejores relojes atómico
 | :--- | :--- | :--- |
 | **Mecanismo físico** | Transiciones de la corteza electrónica (cesio/estroncio) | Transiciones de protones/neutrones dentro del núcleo de torio-229 |
 | **Medio de sondeo** | Microondas o láseres ópticos sobre electrones de valencia | Láser ultravioleta de vacío sobre núcleos incrustados en cristal |
-| **Sustrato anfitrión** | Celdas de gas o trampas de red óptica enfriadas por láser | Cristales sólidos de fluoruro de calcio ($CaF_2$) |
-| **Rendimiento actual** | Miles de millones de años para ganar/perder $\le 1$ segundo | Igualó la precisión de un reloj atómico en una búsqueda de materia oscura |
-| **Estabilidad objetivo** | Estándar internacional establecido ($10^{-18}$) | Mejora proyectada de la estabilidad en un orden de magnitud |
+| **Sustrato anfitrión** | Celdas de gas o trampas de red óptica enfriadas por láser | Cristales sólidos de fluoruro de calcio (CaF₂) |
+| **Rendimiento actual** | Miles de millones de años para ganar/perder ≤ 1 segundo | Igualó la precisión de un reloj atómico en una búsqueda de materia oscura |
+| **Estabilidad objetivo** | Estándar internacional establecido (10⁻¹⁸) | Mejora proyectada de la estabilidad en un orden de magnitud |
 | **Formato del hardware** | Aparatos de vacío de laboratorio grandes y delicados | Potencial de unidades de campo compactas, robustas y de estado sólido |
 
 Los nuevos relojes cambian el lugar donde ocurre el salto. En lugar de los electrones de la corteza, usan láseres para hacer saltar protones y neutrones entre niveles de energía dentro del núcleo de un átomo, en este caso el torio-229. El tiempo en un reloj nuclear se calcula observando cómo interactúa un láser de alta potencia con el núcleo de un átomo.
@@ -226,7 +226,7 @@ Si las arquitecturas de cristales sólidos de fluoruro de calcio resultan menos 
 
 ### Física fundamental y astrofísica
 
-Como los niveles de energía nucleares dependen directamente de la fuerza fuerte y de la constante de acoplamiento electromagnético $\alpha$, los relojes nucleares ofrecen una sensibilidad nueva para comprobar si las constantes físicas fundamentales varían a lo largo del tiempo cósmico y para explorar candidatos a materia oscura.
+Como los niveles de energía nucleares dependen directamente de la fuerza fuerte y de la constante de acoplamiento electromagnético α, los relojes nucleares ofrecen una sensibilidad nueva para comprobar si las constantes físicas fundamentales varían a lo largo del tiempo cósmico y para explorar candidatos a materia oscura.
 
 ## Conclusión
 

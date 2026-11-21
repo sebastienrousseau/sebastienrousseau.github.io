@@ -13,7 +13,7 @@ description: "ב-25 במאי 2026 פרסם האפיפיור לאו ה-14 את Ma
 format-detection: "telephone=no"
 hreflang: "he"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/he/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+id: "https://sebastienrousseau.com/he/2026-05-26-magnifica-humanitas-kria-handasit"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/he/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+permalink: "https://sebastienrousseau.com/he/2026-05-26-magnifica-humanitas-kria-handasit"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -40,7 +40,7 @@ tags: "Magnifica Humanitas, Pope Leo XIV, אתיקה של AI, מחשוב קוו�
 excerpt: "ב-25 במאי 2026 פרסם האפיפיור לאו ה-14 את Magnifica Humanitas — האנציקליקה האפיפיורית הראשונה על בינה מלאכותית. בקריאה מתעשיית הטכנולוגיה, לא כדוקטרינה אלא כמסגרת אתית, היא מהדהדת כל חרדה מוסרית שליוותה את הרכבת, המכונית, האנרגיה הגרעינית והאינטרנט, ונוחתת על תקווה."
 theme-color: "0, 83, 191"
 title: "Magnifica Humanitas: קריאה הנדסית באנציקליקה על AI"
-url: "https://sebastienrousseau.com/he/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+url: "https://sebastienrousseau.com/he/2026-05-26-magnifica-humanitas-kria-handasit"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/rss.xml"
 category: "Technology"
@@ -161,7 +161,7 @@ site_software: "Static Site Generator, Rust"
 
 שתיים מהדאגות הספציפיות של האנציקליקה נוחתות ישירות על הנדסת המערכות הפיננסיות, ושתיהן ראויות לתגובה הנדסית ולא לתגובה של מאמין.
 
-הראשונה היא **ריכוז כוח בידיים פרטיות חוצות-לאומיות**. תצפית האנציקליקה שמניעי הפיתוח העיקריים של טכנולוגיה זו הם כעת שחקנים פרטיים שיכולתם עולה על זו של מדינות רבות אינה טענה תיאולוגית; היא תיאור מדויק של נוף ה-AI ב-2026, וזו בדיוק הדאגה העוברת דרך הארכיטקטורה הרגולטורית שהתעשייה מנסה כעת להדביק — חובות הסיכון הגבוה של EU AI Act האכיפות מ-2 באוגוסט 2026, הוראות סיכון הריכוז של צדדים שלישיים ב-DORA, ותנועות הענן הריבוני ומישור הבקרה הריבוני המכוסות במאמרי [ארכיטקטורת ענן](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "ארכיטקטורת תשתית הענן הטובה ביותר ב-2026") ו[הנדסה אגנטית](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "הנדסה אגנטית לבנקים") באתר זה. האנציקליקה ו-EU AI Act, באופן יוצא דופן, מודאגות מאותו הדבר: שיכולת ללא אחריות מרכזת כוח בדרכים החומקות מממשל דמוקרטי. האחת אומרת זאת בלשון הדוקטרינה החברתית והשנייה בלשון הערכות התאמה. האבחנה זהה.
+הראשונה היא **ריכוז כוח בידיים פרטיות חוצות-לאומיות**. תצפית האנציקליקה שמניעי הפיתוח העיקריים של טכנולוגיה זו הם כעת שחקנים פרטיים שיכולתם עולה על זו של מדינות רבות אינה טענה תיאולוגית; היא תיאור מדויק של נוף ה-AI ב-2026, וזו בדיוק הדאגה העוברת דרך הארכיטקטורה הרגולטורית שהתעשייה מנסה כעת להדביק — חובות הסיכון הגבוה של EU AI Act האכיפות מ-2 באוגוסט 2026, הוראות סיכון הריכוז של צדדים שלישיים ב-DORA, ותנועות הענן הריבוני ומישור הבקרה הריבוני המכוסות במאמרי [ארכיטקטורת ענן](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "ארכיטקטורת תשתית הענן הטובה ביותר ב-2026") ו[הנדסה אגנטית](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "הנדסה אגנטית לבנקים") באתר זה. האנציקליקה ו-EU AI Act, באופן יוצא דופן, מודאגות מאותו הדבר: שיכולת ללא אחריות מרכזת כוח בדרכים החומקות מממשל דמוקרטי. האחת אומרת זאת בלשון הדוקטרינה החברתית והשנייה בלשון הערכות התאמה. האבחנה זהה.
 
 השנייה היא **מחשוב קוונטי**, שהאנציקליקה אינה נוקבת בשמו אבל מנבאת את צורתו האתית בדיוק. הנחת היסוד של המעבר הפוסט-קוונטי המכוסה ב-[Securing the Ledger](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Securing the Ledger") היא שיכולת הנמצאת כעת בבנייה — מחשב קוונטי רלוונטי קריפטוגרפית — תחשוף, בהגיעה, רטרואקטיבית את כל מה שהוצפן תחת הנחות היום. "harvest now, decrypt later" היא, ברגיסטר חילוני, בדיוק סוג הכוח-ללא-חוכמה שהאנציקליקה מזהירה מפניו: טכנולוגיה שתוצאותיה מגיעות בלוח זמנים החורג מההכנה, בידי בעלי המשאבים להפעיל אותה ראשונים. ההתעקשות של האנציקליקה לשאול "לאן אנחנו הולכים?" לפני שרצף החירומים מכתיב את הנתיב היא, עבור מהנדס אבטחה, פרקטיקה טובה המנוסחת כפילוסופיה מוסרית.
 
@@ -231,8 +231,8 @@ site_software: "Static Site Generator, Rust"
 
 - Sebastien Rousseau, (2026). [כונן הפלאש של Lucy, ביקור מחדש: העברת ידע, AI וקוונטים](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html "כונן הפלאש של Lucy, ביקור מחדש").
 - Sebastien Rousseau, (2026). [Securing the Ledger: מדריך ברמת דירקטוריון למעבר פוסט-קוונטי בכספי תאגידים](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Securing the Ledger").
-- Sebastien Rousseau, (2026). [הנדסה אגנטית לבנקים: שרטוט 2026](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "הנדסה אגנטית לבנקים").
-- Sebastien Rousseau, (2026). [ארכיטקטורת תשתית הענן הטובה ביותר ב-2026](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "ארכיטקטורת תשתית הענן הטובה ביותר ב-2026").
+- Sebastien Rousseau, (2026). [הנדסה אגנטית לבנקים: שרטוט 2026](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "הנדסה אגנטית לבנקים").
+- Sebastien Rousseau, (2026). [ארכיטקטורת תשתית הענן הטובה ביותר ב-2026](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "ארכיטקטורת תשתית הענן הטובה ביותר ב-2026").
 - Pope Leo XIV, (2026). [איגרת אנציקלית *Magnifica Humanitas* על שמירת האדם בעידן הבינה המלאכותית ⧉](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html "Magnifica Humanitas — טקסט מלא, Vatican.va"). הכס הקדוש.
 - Pope Leo XIII, (1891). [איגרת אנציקלית *Rerum Novarum* על הון ועבודה ⧉](https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_15051891_rerum-novarum.html "Rerum Novarum — Vatican.va"). הכס הקדוש.
 - Vatican News, (2026). [האנציקליקה הראשונה של האפיפיור לאו ה-14 *Magnifica humanitas* תפורסם ב-25 במאי ⧉](https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html "Vatican News — Magnifica Humanitas"). Vatican News.

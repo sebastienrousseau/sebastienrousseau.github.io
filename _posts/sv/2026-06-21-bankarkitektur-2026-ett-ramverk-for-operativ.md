@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "Banner till vitboken Bankarkitektur 2026"
 twitter_site: "@wwdseb"
 twitter_title: "Vitbok om bankarkitektur 2026"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, Storbritannien"
@@ -186,7 +186,7 @@ PDF:ens programrisk-register med 10 poster är kalibrerat mot de explicita delta
 2. **Tyst dataförlust i MT-till-MX.** Banker som sänder `MT103` med trunkerade adress- eller remitteringsdata tas emot rent i MX-kanaler — men de strukturerade fälten förblir tomma. Nedströmskonsekvensen (misslyckad sanktionsscreening, missade AML-utlösare, avstämningsbrott) syns 30–90 dagar efter övergången, långt bortom forensiken i ändringsfönstret. Registret kvantifierar förväntad åtgärdskostnad i back-book per 1 mdr € betalningsflöde.
 3. **Tillskrivning av agenthandling.** När en LLM-baserad treasury-agent utlöser en betalningskedja kan tre huvudmän göra anspråk på ägarskap — modellägaren, rail-leverantören, policyförfattaren. Utan ett explicit tillskrivningsbeslut inbakat i orkestreringsskiktet ärver banken alla tre ansvaren. Registret definierar tillskrivningsträdet och den `SR 11-7`-bevisens kedja som krävs för att försvara det.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Ladda ner vitboken Bankarkitektur 2026 (PDF)">Ladda ner PDF-briefingen</a> <a class="pill ghost no-chev" href="/papers" title="Se alla publicerade vitböcker och rapporter">Alla vitböcker</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Ladda ner vitboken Bankarkitektur 2026 (PDF)">Ladda ner PDF-briefingen</a> <a class="pill ghost no-chev" href="/research" title="Se alla publicerade vitböcker och rapporter">Alla vitböcker</a></p>
 
 ## Sammanfattning av intern granskning
 

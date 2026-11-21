@@ -121,7 +121,7 @@ Teza strukturalna brzmi więc tak: generatywni sędziowie są drodzy w przelicze
 
 | Wymiar architektury | Generatywni sędziowie LLM (np. GPT-4 jako sędzia) | Klasyfikatory jednotokenowe (np. Llama Guard) | Wielopytaniowy detektor RLCD (Jev) |
 | :--- | :--- | :--- | :--- |
-| **Mechanizm oceny** | Pełny autoregresyjny przebieg dekodowania na kryterium | Prawdopodobieństwo softmax nad jednym tokenem wyjściowym | Wielogłowicowy tensor kalibrowanych prawdopodobieństw $P(\text{yes})$ |
+| **Mechanizm oceny** | Pełny autoregresyjny przebieg dekodowania na kryterium | Prawdopodobieństwo softmax nad jednym tokenem wyjściowym | Wielogłowicowy tensor kalibrowanych prawdopodobieństw P(yes) |
 | **Pytania na wywołanie** | 1 prompt oceniający na wywołanie modelu | 1 etykieta klasyfikacji na wywołanie modelu | Wiele pytań binarnych, kategorycznych i porządkowych w 1 wywołaniu |
 | **Koszt inferencji** | Wysoki (10–50 USD na 1000 interakcji) | Umiarkowany (0,50–2,00 USD na 1000 interakcji) | 63× niższy (0,30 USD za 19 pełnych benchmarków) |
 | **Wyniki AUROC** | Zależne od benchmarku; podatne na dryf sędziego | Wysokie w konkretnych wytrenowanych kategoriach bezpieczeństwa | Mediana AUROC 0,886 zero-shot w 44 zestawach |

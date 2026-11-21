@@ -13,7 +13,7 @@ description: "Indeks gotowości autonomicznego skarbu na 2026 rok: agentowe prze
 format-detection: "telephone=no"
 hreflang: "pl"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/pl/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+id: "https://sebastienrousseau.com/pl/2026-06-07-indeks-autonomicznego-skarbu-2026-agentowy-skarb"
 image_alt: "Czarno-biały portret Sebastiena Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/pl/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+permalink: "https://sebastienrousseau.com/pl/2026-06-07-indeks-autonomicznego-skarbu-2026-agentowy-skarb"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "treasury, agentowa AI, plynnosc programowalna, depozyty tokenizowane, cas
 excerpt: "Indeks gotowości autonomicznego skarbu 2026 — pomiar agentowych przepływów skarbowych, pokrycia programowalnej płynności, integracji stokenizowanych depozytów, orkiestracji płatności w czasie rzeczywistym i automatycznej kontroli gotówki jako jednej tkanki modelu operacyjnego."
 theme-color: "0, 83, 191"
 title: "Indeks Autonomicznego Skarbu 2026: agentowy skarb, programowalna płynność i stokenizowane depozyty"
-url: "https://sebastienrousseau.com/pl/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+url: "https://sebastienrousseau.com/pl/2026-06-07-indeks-autonomicznego-skarbu-2026-agentowy-skarb"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/rss.xml"
 category: "Finance"
@@ -99,7 +99,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Control plane to nowa powierzchnia audytu.</strong> Mandaty, limity, ścieżki ręcznego nadpisania i dowody odwrócenia muszą działać jako prymitywy platformy, a nie ręczne zatwierdzenia per akcja.</li>
   <li><strong>Karta wyników CFO jest per decyzja, nie per kwartał.</strong> Koszt gotówki, redukcja bufora płynności śróddziennej, efektywność FX i dokładność prognozy są mierzone w tempie przepływu.</li>
 </ul>
-<p class="post-lead-related"><strong>Powiązane lektury:</strong> <a href="https://sebastienrousseau.com/pl/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html">Programowalna płynność w 2026: AI, stokenizowane depozyty i orkiestracja skarbu w czasie rzeczywistym</a>, <a href="https://sebastienrousseau.com/pl/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">Stokenizowane depozyty w 2026: usługi bankowe, konkurencja stablecoinów i status programowalnego pieniądza banku komercyjnego</a>.</p>
+<p class="post-lead-related"><strong>Powiązane lektury:</strong> <a href="https://sebastienrousseau.com/pl/2026-05-25-plynnosc-programowalna-2026-ai-depozyty-tokenizowane/index.html">Programowalna płynność w 2026: AI, stokenizowane depozyty i orkiestracja skarbu w czasie rzeczywistym</a>, <a href="https://sebastienrousseau.com/pl/2026-05-21-depozyty-tokenizowane-2026-roku-us-ugi/index.html">Stokenizowane depozyty w 2026: usługi bankowe, konkurencja stablecoinów i status programowalnego pieniądza banku komercyjnego</a>.</p>
 </aside>
 <!-- lead-end -->
 

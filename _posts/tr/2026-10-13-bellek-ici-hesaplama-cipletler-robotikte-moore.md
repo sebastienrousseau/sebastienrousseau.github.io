@@ -129,13 +129,13 @@ Klasik dijital hesaplamada bir matris iç çarpımını hesaplamak için binlerc
 
 Bellek içi hesaplama mimarileri bu dijital veri aktarımını analog devre fiziğiyle değiştirir:
 
-**Ağırlık programlama.** Sinir ağı ağırlıkları doğrudan kalıcı bellek hücrelerine (değiştirilmiş flash ya da dirençli RAM gibi) analog iletkenlikler ($G$) olarak programlanır. Programlandıktan sonra ağırlıklar bellek dizisinin içinde sabit kalır; çıkarım sırasında asla getirilmez ya da aktarılmaz.
+**Ağırlık programlama.** Sinir ağı ağırlıkları doğrudan kalıcı bellek hücrelerine (değiştirilmiş flash ya da dirençli RAM gibi) analog iletkenlikler (*G*) olarak programlanır. Programlandıktan sonra ağırlıklar bellek dizisinin içinde sabit kalır; çıkarım sırasında asla getirilmez ya da aktarılmaz.
 
-**Giriş gerilimi modülasyonu.** Giriş aktivasyonları (kameralardan gelen görsel belirteçler gibi) analog gerilim düzeylerine ($V$) dönüştürülür ve dizinin kelime hatları boyunca sürülür.
+**Giriş gerilimi modülasyonu.** Giriş aktivasyonları (kameralardan gelen görsel belirteçler gibi) analog gerilim düzeylerine (*V*) dönüştürülür ve dizinin kelime hatları boyunca sürülür.
 
-**Ohm Yasası ile çarpma.** Giriş gerilimi her bellek hücresinden geçerken Ohm Yasası ($I = V \times G$) anlık bir analog çarpma yapar ve girişle saklanan ağırlığın çarpımıyla orantılı bir elektrik akımı üretir.
+**Ohm Yasası ile çarpma.** Giriş gerilimi her bellek hücresinden geçerken Ohm Yasası (*I* = *V* × *G*) anlık bir analog çarpma yapar ve girişle saklanan ağırlığın çarpımıyla orantılı bir elektrik akımı üretir.
 
-**Kirchhoff'un Akım Yasası ile toplama.** Dikey bit hatları boyunca binlerce paralel bellek hücresinden gelen akımlar, Kirchhoff'un Akım Yasası'na ($\sum I = 0$) göre doğal olarak toplanır.
+**Kirchhoff'un Akım Yasası ile toplama.** Dikey bit hatları boyunca binlerce paralel bellek hücresinden gelen akımlar, Kirchhoff'un Akım Yasası'na (Σ*I* = 0) göre doğal olarak toplanır.
 
 Böylece tek bir flash bellek dizisi, tek bir bellek erişimi bile yapmadan fizik düzeyinde çalışarak bütün bir matris-vektör çarpımını tek bir saat döngüsünde yürütür. Birikmiş analog akım daha sonra dizinin kenarındaki yüksek hızlı analog-dijital dönüştürücüler (ADC) ile yeniden dijital değerlere çevrilir.
 
@@ -208,7 +208,7 @@ Hesaplama mimarileri mantık ile belleğin Von Neumann tarzı ayrımına sarıld
 Von Neumann darboğazı, merkezi işlem birimi (ALU) ile sistem belleği (DRAM) arasındaki fiziksel ayrımın yol açtığı verim ve enerji sınırlamasını ifade eder. Milyarlarca matris çarpımı içeren yapay zekâ iş yüklerinde işlemciler toplam enerjilerinin %85'inden fazlasını ve kayda değer sayıda saat döngüsünü yalnızca verileri bakır veri yolları üzerinden ileri geri taşımaya harcar; bu da ciddi ısıl ve gecikme darboğazları yaratır.
 
 **Analog bellek içi hesaplama (CIM) nasıl çalışır?**
-Bellek içi hesaplama, matematiksel işlemleri verileri taşımadan doğrudan bellek hücrelerinin içinde yapar. Sinir ağı ağırlıkları kalıcı bellek hücrelerinde analog iletkenlik durumları olarak saklanır. Diziye giriş gerilimleri uygulandığında akım Ohm Yasası'na ($I = V \times G$) göre hücrelerden geçer ve Kirchhoff'un Akım Yasası'na göre bit hatları boyunca toplanır. Böylece tam bir matris-vektör çarpımı tek bir fiziksel adımda tamamlanır.
+Bellek içi hesaplama, matematiksel işlemleri verileri taşımadan doğrudan bellek hücrelerinin içinde yapar. Sinir ağı ağırlıkları kalıcı bellek hücrelerinde analog iletkenlik durumları olarak saklanır. Diziye giriş gerilimleri uygulandığında akım Ohm Yasası'na (*I* = *V* × *G*) göre hücrelerden geçer ve Kirchhoff'un Akım Yasası'na göre bit hatları boyunca toplanır. Böylece tam bir matris-vektör çarpımı tek bir fiziksel adımda tamamlanır.
 
 **Bellek içi hesaplama neden özellikle robotlar ve dronlar için kritik?**
 Mobil robotlar ve dronlar katı SWaP-C (boyut, ağırlık, güç ve maliyet) sınırlamaları altında çalışır. Araç üstü bataryalara dayanırlar ve ağır soğutma radyatörlerini ya da yüksek güçlü güç kaynaklarını taşıyamazlar. Bellek içi hesaplama 10 ila 1.000 kat daha yüksek enerji verimliliği sağlayarak robotların karmaşık görme-dil-eylem modellerini 10 W ile 20 W arasındaki bir güç zarfında yerel olarak çalıştırmasını ve batarya dayanıklılığını korumasını mümkün kılar.

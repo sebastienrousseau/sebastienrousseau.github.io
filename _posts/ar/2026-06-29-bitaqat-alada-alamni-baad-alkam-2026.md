@@ -13,7 +13,7 @@ description: "بطاقة الأداء الأمني لما بعد الكم 2026 �
 format-detection: "telephone=no"
 hreflang: "ar"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/ar/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+id: "https://sebastienrousseau.com/ar/2026-06-29-bitaqat-alada-alamni-baad-alkam-2026"
 image_alt: "صورة بالأبيض والأسود لـ Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/ar/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+permalink: "https://sebastienrousseau.com/ar/2026-06-29-bitaqat-alada-alamni-baad-alkam-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -39,7 +39,7 @@ subtitle: "كيف يجب على المجالس قياس وحوكمة الترح�
 tags: "ما بعد الكم, تشفير, مصرفية, حوكمة, DORA, FIPS-203, FIPS-204, CBOM, HNDL, KyberLib, SM&CR"
 theme-color: "0, 83, 191"
 title: "بطاقة الأداء الأمني لما بعد الكم 2026: إطار مقاييس على مستوى المجلس"
-url: "https://sebastienrousseau.com/ar/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026"
+url: "https://sebastienrousseau.com/ar/2026-06-29-bitaqat-alada-alamni-baad-alkam-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026/rss.xml"
 category: "Technology"
@@ -97,6 +97,7 @@ webmaster: "contact@sebastienrousseau.com"
 </ul>
 <p class="post-lead-related"><strong>قراءات ذات صلة:</strong> <a href="https://sebastienrousseau.com/2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026">KyberLib والانتقال المصرفي إلى ما بعد الكم في 2026</a>، <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: الخوارزمية الحارسة في عصر الكم</a>.</p>
 </aside>
+
 أمن ما بعد الكم لم يعد مشروع بحث. "ساعة الإشراف" تدق نحو مواعيد الإنفاذ النهائية في أواخر عقد 2020. واستكمال [NIST FIPS 203 (ML-KEM)](https://csrc.nist.gov/pubs/fips/203/final) و[NIST FIPS 204 (ML-DSA)](https://csrc.nist.gov/pubs/fips/204/final) قنّن معايير تغليف المفاتيح والتواقيع الرقمية.
 
 تتوقع الجهات التنظيمية الآن من مصارف Tier-1 تجاوز البرامج التجريبية. في 2026، انتقل التركيز إلى تصنيع هذه المعايير. والإخفاق في إثبات مسار ترحيل واضح يحمل عقوبات تنظيمية كبيرة بموجب [قانون الصمود التشغيلي الرقمي (DORA)](https://eur-lex.europa.eu/eli/reg/2022/2554/oj) ومسؤولية شخصية محتملة على المديرين الذين يتجاهلون التهديد المتوقع لفك التشفير الكمومي.

@@ -121,7 +121,7 @@ Jadi klaim strukturalnya begini: juri generatif mahal per kriteria, dan pengklas
 
 | Dimensi Arsitektur | Juri LLM Generatif (mis. GPT-4 sebagai Juri) | Pengklasifikasi Token Tunggal (mis. Llama Guard) | Detektor RLCD Multi-Kueri (Jev) |
 | :--- | :--- | :--- | :--- |
-| **Mekanisme Penilaian** | Satu putaran dekode autoregresif penuh per kriteria | Probabilitas softmax atas satu token keluaran | Tensor probabilitas terkalibrasi multi-head $P(\text{yes})$ |
+| **Mekanisme Penilaian** | Satu putaran dekode autoregresif penuh per kriteria | Probabilitas softmax atas satu token keluaran | Tensor probabilitas terkalibrasi multi-head P(yes) |
 | **Pertanyaan per Panggilan** | 1 prompt evaluasi per pemanggilan model | 1 label klasifikasi per pemanggilan model | Banyak pertanyaan biner/kategoris/ordinal dalam 1 panggilan |
 | **Biaya Inferensi** | Tinggi ($10–$50 per 1.000 interaksi) | Sedang ($0,50–$2,00 per 1.000 interaksi) | 63× lebih rendah ($0,30 untuk 19 benchmark penuh) |
 | **Kinerja AUROC** | Bergantung pada benchmark; rentan pergeseran juri | Tinggi pada kategori keamanan tertentu yang dilatih | Median AUROC 0,886 zero-shot di 44 rangkaian |

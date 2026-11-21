@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "Banner zum Whitepaper Banking-Architektur 2026"
 twitter_site: "@wwdseb"
 twitter_title: "Whitepaper Banking-Architektur 2026"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -186,7 +186,7 @@ Das 10 Einträge umfassende Programm-Risikoregister im PDF ist auf die explizite
 2. **Stiller Datenverlust beim MT-zu-MX-Übergang.** Banken, die `MT103` mit gekürzten Adress- oder Remittance-Daten ausgeben, werden sauber in `MX`-Kanäle aufgenommen — aber die strukturierten Felder bleiben leer. Die nachgelagerte Folge (fehlgeschlagene Sanktionsprüfung, verpasste AML-Trigger, Reconciliation-Brüche) tritt 30–90 Tage nach dem Cut-over zutage, deutlich nach der Change-Window-Forensik. Das Register quantifiziert die zu erwartenden Back-Book-Sanierungskosten pro €1 Mrd Zahlungsvolumen.
 3. **Handlungszurechnung des Agenten.** Wenn ein LLM-gestützter Treasury-Agent eine Zahlungskette auslöst, können drei Principals Eigentümerschaft beanspruchen — der Modellbesitzer, der Rail-Anbieter, der Policy-Autor. Ohne explizite Zurechnungsentscheidung, die in der Orchestrierungsschicht verankert ist, erbt die Bank alle drei Haftungen. Das Register definiert den Zurechnungsbaum und die `SR 11-7`-Beweiskette, die zu seiner Verteidigung erforderlich ist.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Whitepaper Banking-Architektur 2026 herunterladen (PDF)">PDF-Briefing herunterladen</a> <a class="pill ghost no-chev" href="/papers" title="Alle veröffentlichten Whitepaper und Forschungsbeiträge ansehen">Alle Whitepaper</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Whitepaper Banking-Architektur 2026 herunterladen (PDF)">PDF-Briefing herunterladen</a> <a class="pill ghost no-chev" href="/research" title="Alle veröffentlichten Whitepaper und Forschungsbeiträge ansehen">Alle Whitepaper</a></p>
 
 ## Interne Review-Zusammenfassung
 

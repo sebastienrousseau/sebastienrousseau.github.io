@@ -13,7 +13,7 @@ description: "Papa XIV. Leon'un yapay zekâ üzerine ilk genelgesi Magnifica Hum
 format-detection: "telephone=no"
 hreflang: "tr"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/tr/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+id: "https://sebastienrousseau.com/tr/2026-05-26-magnifica-humanitas-yapay-zeka-genelgesinin-sektorel"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/tr/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+permalink: "https://sebastienrousseau.com/tr/2026-05-26-magnifica-humanitas-yapay-zeka-genelgesinin-sektorel"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -40,7 +40,7 @@ tags: "Magnifica Humanitas, Pope Leo XIV, yapay zeka etiği, kuantum bilişim, t
 excerpt: "25 Mayıs 2026'da Papa XIV. Leon, yapay zekâ üzerine ilk papalık genelgesi olan Magnifica Humanitas'ı yayımladı. Doktrin değil etik çerçeve olarak okunduğunda; tren, otomobil, nükleer güç ve interneti karşılayan ahlaki kaygıları yankılıyor ve umuda varıyor."
 theme-color: "0, 83, 191"
 title: "Magnifica Humanitas: Yapay Zekâ Genelgesinin Sektörel Okuması"
-url: "https://sebastienrousseau.com/tr/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+url: "https://sebastienrousseau.com/tr/2026-05-26-magnifica-humanitas-yapay-zeka-genelgesinin-sektorel"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/rss.xml"
 category: "Technology"
@@ -161,7 +161,7 @@ Ve **internet** — çoğumuzun yaşadığı. Erken kaygılar (çocukların zihn
 
 Genelgenin belirli iki kaygısı doğrudan finansal sistemlerin mühendisliğine değiyor ve her ikisi de inanan birinin değil, mühendisin yanıtını hak ediyor.
 
-İlki, **gücün özel, ulusötesi ellerde yoğunlaşması**dır. Genelgenin, bu teknolojinin başlıca itici güçlerinin artık kapasitesi pek çok devletinkini aşan özel aktörler olduğu gözlemi teolojik bir iddia değildir; 2026 yapay zekâ manzarasının doğru bir tanımıdır ve sektörün şu anda karşılamaya çalıştığı düzenleyici mimariden geçen kaygının ta kendisidir — EU AI Act'in 2 Ağustos 2026'dan itibaren uygulanabilir yüksek riskli yükümlülükleri, DORA'nın üçüncü taraf yoğunlaşma riski hükümleri ve bu sitedeki [bulut mimarisi](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "2026'da En İyi Bulut Altyapı Mimarisi") ve [ajan tabanlı mühendislik](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "Bankalar için Ajan Tabanlı Mühendislik") yazılarında ele alınan egemen bulut ve egemen kontrol düzlemi hareketleri. Genelge ve EU AI Act, dikkat çekici biçimde, aynı şeyden kaygı duyuyor: hesap verebilirlik olmadan kapasitenin demokratik yönetişimden kaçan biçimlerde güç yoğunlaşmasına yol açmasından. Biri sosyal doktrin diliyle, diğeri uygunluk değerlendirmeleri diliyle söylüyor. Teşhis aynı.
+İlki, **gücün özel, ulusötesi ellerde yoğunlaşması**dır. Genelgenin, bu teknolojinin başlıca itici güçlerinin artık kapasitesi pek çok devletinkini aşan özel aktörler olduğu gözlemi teolojik bir iddia değildir; 2026 yapay zekâ manzarasının doğru bir tanımıdır ve sektörün şu anda karşılamaya çalıştığı düzenleyici mimariden geçen kaygının ta kendisidir — EU AI Act'in 2 Ağustos 2026'dan itibaren uygulanabilir yüksek riskli yükümlülükleri, DORA'nın üçüncü taraf yoğunlaşma riski hükümleri ve bu sitedeki [bulut mimarisi](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "2026'da En İyi Bulut Altyapı Mimarisi") ve [ajan tabanlı mühendislik](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "Bankalar için Ajan Tabanlı Mühendislik") yazılarında ele alınan egemen bulut ve egemen kontrol düzlemi hareketleri. Genelge ve EU AI Act, dikkat çekici biçimde, aynı şeyden kaygı duyuyor: hesap verebilirlik olmadan kapasitenin demokratik yönetişimden kaçan biçimlerde güç yoğunlaşmasına yol açmasından. Biri sosyal doktrin diliyle, diğeri uygunluk değerlendirmeleri diliyle söylüyor. Teşhis aynı.
 
 İkincisi, genelgenin adını anmadığı ama etik biçimini tam olarak öngördüğü **kuantum bilişim**dir. [Defteri Güvene Almak](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Defteri Güvene Almak") yazısında ele alınan post-kuantum geçişin öncülü şudur: şu anda yapım aşamasındaki bir kapasite — kriptografik olarak ilgili kuantum bilgisayar — geldiğinde, bugünkü varsayımlar altında şifrelenmiş her şeyi geriye dönük olarak ifşa edecektir. "Harvest now, decrypt later", seküler bir kayıtta, genelgenin uyardığı bilgelik olmadan iktidarın tam karşılığıdır: sonuçları hazırlığı geride bırakan bir takvimde gelen, ilk önce kullanma kaynaklarına sahip olanların elinde bir teknoloji. Genelgenin, acil durumların ardı ardına yolu belirlemesinden önce "nereye gidiyoruz?" sorusunu sorma konusundaki ısrarı, bir güvenlik mühendisi için, ahlak felsefesi biçiminde dile getirilen iyi bir uygulamadır.
 
@@ -231,8 +231,8 @@ Güç yoğunlaşması konusunda. Genelgenin "bu teknolojinin başlıca itici gü
 
 - Sebastien Rousseau, (2026). [Lucy'nin Flash Belleği, Yeniden: Bilgi Aktarımı, Yapay Zekâ ve Kuantum](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html "Lucy'nin Flash Belleği, Yeniden").
 - Sebastien Rousseau, (2026). [Defteri Güvene Almak: Kurumsal Finans için Post-Kuantum Geçişe Yönelik Yönetim Kurulu Düzeyinde Bir Rehber](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Defteri Güvene Almak").
-- Sebastien Rousseau, (2026). [Bankalar için Ajan Tabanlı Mühendislik: 2026 Planı](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "Bankalar için Ajan Tabanlı Mühendislik").
-- Sebastien Rousseau, (2026). [2026'da En İyi Bulut Altyapı Mimarisi](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "2026'da En İyi Bulut Altyapı Mimarisi").
+- Sebastien Rousseau, (2026). [Bankalar için Ajan Tabanlı Mühendislik: 2026 Planı](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "Bankalar için Ajan Tabanlı Mühendislik").
+- Sebastien Rousseau, (2026). [2026'da En İyi Bulut Altyapı Mimarisi](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "2026'da En İyi Bulut Altyapı Mimarisi").
 - Papa XIV. Leon, (2026). [Genelge Mektubu *Magnifica Humanitas*: Yapay Zekâ Çağında İnsan Şahsının Korunması Üzerine ⧉](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html "Magnifica Humanitas — tam metin, Vatican.va"). Kutsal Makam.
 - Papa XIII. Leon, (1891). [Genelge Mektubu *Rerum Novarum*: Sermaye ve Emek Üzerine ⧉](https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_15051891_rerum-novarum.html "Rerum Novarum — Vatican.va"). Kutsal Makam.
 - Vatican News, (2026). [Papa XIV. Leon'un ilk genelgesi *Magnifica humanitas* 25 Mayıs'ta yayımlanacak ⧉](https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html "Vatican News — Magnifica Humanitas"). Vatican News.

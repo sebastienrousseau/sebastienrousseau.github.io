@@ -13,7 +13,7 @@ description: "2026 银行运营韧性指数：把 AI 风险、云集中风险、
 format-detection: "telephone=no"
 hreflang: "zh-hans"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/zh-hans/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+id: "https://sebastienrousseau.com/zh-hans/2026-06-08-yinhang-yunying-renxing-zhishu-2026"
 image_alt: "Sebastien Rousseau 黑白肖像"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/zh-hans/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+permalink: "https://sebastienrousseau.com/zh-hans/2026-06-08-yinhang-yunying-renxing-zhishu-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "银行运营韧性, DORA, AI 风险, 云集中风险, 量子风险, 支�
 excerpt: "2026 银行运营韧性指数——把 AI 风险、云集中风险、抗量子迁移、支付连续性与关键第三方依赖合并为一张董事会与监管机构都能读懂的运营韧性记分板。"
 theme-color: "0, 83, 191"
 title: "2026 银行运营韧性指数：AI、云、量子、支付与第三方集中风险"
-url: "https://sebastienrousseau.com/zh-hans/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+url: "https://sebastienrousseau.com/zh-hans/2026-06-08-yinhang-yunying-renxing-zhishu-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/rss.xml"
 category: "Risk"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>抗量子迁移是一项运营韧性指标，而非安全指标。</strong>今天暴露的长期数据，明天将通不过韧性测试。</li>
   <li><strong>第三方集中风险已成系统性问题。</strong>单一超大规模服务商、单一 PSP、单一 LLM 提供商的依赖，在韧性记分板上对应单点故障。</li>
 </ul>
-<p class="post-lead-related"><strong>相关阅读：</strong><a href="https://sebastienrousseau.com/zh-hans/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA、EU AI 法案与数据主权：银行 2026 合规栈</a>，<a href="https://sebastienrousseau.com/zh-hans/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">2026 云原生银行：Kubernetes、DORA、主权与 VM 对容器之争的终结</a>。</p>
+<p class="post-lead-related"><strong>相关阅读：</strong><a href="https://sebastienrousseau.com/zh-hans/2026-05-28-dora-eu-ai-fa-an-yu-shuju-zhuquan/index.html">DORA、EU AI 法案与数据主权：银行 2026 合规栈</a>，<a href="https://sebastienrousseau.com/zh-hans/2026-05-20-yun-yuansheng-yinhang-2026/index.html">2026 云原生银行：Kubernetes、DORA、主权与 VM 对容器之争的终结</a>。</p>
 </aside>
 <!-- lead-end -->
 

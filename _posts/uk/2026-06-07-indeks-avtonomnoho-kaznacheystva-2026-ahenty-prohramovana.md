@@ -13,7 +13,7 @@ description: "Індекс готовності до автономного ка
 format-detection: "telephone=no"
 hreflang: "uk"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/uk/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+id: "https://sebastienrousseau.com/uk/2026-06-07-indeks-avtonomnoho-kaznacheystva-2026-ahenty-prohramovana"
 image_alt: "Чорно-білий портрет Себастьяна Руссо"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/uk/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+permalink: "https://sebastienrousseau.com/uk/2026-06-07-indeks-avtonomnoho-kaznacheystva-2026-ahenty-prohramovana"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "treasury, агентний AI, програмована ліквідні�
 excerpt: "Індекс готовності до автономного казначейства 2026 — вимірювання агентних казначейських процесів, покриття програмованої ліквідності, інтеграції токенізованих депозитів, оркестрації платежів у реальному часі та автоматизованого керування грошима як єдиної тканини операційної моделі."
 theme-color: "0, 83, 191"
 title: "Індекс автономного казначейства 2026: агенти, програмована ліквідність і токенізовані депозити"
-url: "https://sebastienrousseau.com/uk/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+url: "https://sebastienrousseau.com/uk/2026-06-07-indeks-avtonomnoho-kaznacheystva-2026-ahenty-prohramovana"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/rss.xml"
 category: "Finance"
@@ -73,7 +73,7 @@ twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastie
 twitter_image_alt: "Логотип Себастьяна Руссо"
 twitter_site: "@wwdseb"
 twitter_title: "Індекс автономного казначейства 2026"
-twitter_url: "https://sebastienrousseau.com/uk/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+twitter_url: "https://sebastienrousseau.com/uk/2026-06-07-indeks-avtonomnoho-kaznacheystva-2026-ahenty-prohramovana"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -99,7 +99,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Площина керування — нова поверхня аудиту.</strong> Мандати, ліміти, шляхи ручного перевизначення та докази реверсу мають працювати як примітиви платформи, а не як ручні погодження для кожної дії.</li>
   <li><strong>Скоркард CFO — на рішення, а не на квартал.</strong> Вартість готівки, скорочення буфера внутрішньоденної ліквідності, ефективність FX та точність прогнозу вимірюються зі швидкістю робочого процесу.</li>
 </ul>
-<p class="post-lead-related"><strong>Пов'язане читання:</strong> <a href="https://sebastienrousseau.com/uk/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html" title="Програмована ліквідність 2026: ШІ, токенізовані депозити та оркестрація казначейства в реальному часі">Програмована ліквідність 2026: ШІ, токенізовані депозити та оркестрація казначейства в реальному часі</a>, <a href="https://sebastienrousseau.com/uk/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html" title="Токенізовані депозити 2026: банківські послуги, конкуренція стейблкоїнів і статус програмованих банківських грошей">Токенізовані депозити 2026: банківські послуги, конкуренція стейблкоїнів і статус програмованих банківських грошей</a>.</p>
+<p class="post-lead-related"><strong>Пов'язане читання:</strong> <a href="https://sebastienrousseau.com/uk/2026-05-25-prohramovana-likvidnist-2026-shi-tokenizovani-depozyty/index.html" title="Програмована ліквідність 2026: ШІ, токенізовані депозити та оркестрація казначейства в реальному часі">Програмована ліквідність 2026: ШІ, токенізовані депозити та оркестрація казначейства в реальному часі</a>, <a href="https://sebastienrousseau.com/uk/2026-05-21-tokenizovani-depozyty-2026-rotsi-bankivski-posluhy/index.html" title="Токенізовані депозити 2026: банківські послуги, конкуренція стейблкоїнів і статус програмованих банківських грошей">Токенізовані депозити 2026: банківські послуги, конкуренція стейблкоїнів і статус програмованих банківських грошей</a>.</p>
 </aside>
 <!-- lead-end -->
 

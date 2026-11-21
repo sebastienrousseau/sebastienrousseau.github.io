@@ -129,13 +129,13 @@ Trong điện toán số cổ điển, tính tích vô hướng của ma trận 
 
 Kiến trúc tính toán trong bộ nhớ thay thế việc truyền dữ liệu số này bằng vật lý mạch tương tự:
 
-**Lập trình trọng số.** Trọng số mạng nơ-ron được lập trình trực tiếp vào các ô nhớ không khả biến (như flash cải tiến hoặc RAM điện trở) dưới dạng độ dẫn điện tương tự ($G$). Sau khi được lập trình, trọng số nằm yên bên trong mảng bộ nhớ; chúng không bao giờ bị lấy ra hay truyền đi trong quá trình suy luận.
+**Lập trình trọng số.** Trọng số mạng nơ-ron được lập trình trực tiếp vào các ô nhớ không khả biến (như flash cải tiến hoặc RAM điện trở) dưới dạng độ dẫn điện tương tự (*G*). Sau khi được lập trình, trọng số nằm yên bên trong mảng bộ nhớ; chúng không bao giờ bị lấy ra hay truyền đi trong quá trình suy luận.
 
-**Điều chế điện áp đầu vào.** Các kích hoạt đầu vào (như token hình ảnh từ camera) được chuyển thành các mức điện áp tương tự ($V$) và đưa dọc theo các đường từ (word line) của mảng.
+**Điều chế điện áp đầu vào.** Các kích hoạt đầu vào (như token hình ảnh từ camera) được chuyển thành các mức điện áp tương tự (*V*) và đưa dọc theo các đường từ (word line) của mảng.
 
-**Phép nhân theo định luật Ohm.** Khi điện áp đầu vào đi qua từng ô nhớ, định luật Ohm ($I = V \times G$) thực hiện phép nhân tương tự tức thời, tạo ra dòng điện tỷ lệ với tích của đầu vào và trọng số được lưu.
+**Phép nhân theo định luật Ohm.** Khi điện áp đầu vào đi qua từng ô nhớ, định luật Ohm (*I* = *V* × *G*) thực hiện phép nhân tương tự tức thời, tạo ra dòng điện tỷ lệ với tích của đầu vào và trọng số được lưu.
 
-**Cộng dồn theo định luật dòng điện Kirchhoff.** Dọc theo các đường bit thẳng đứng, dòng điện từ hàng nghìn ô nhớ song song tự nhiên cộng lại theo định luật dòng điện Kirchhoff ($\sum I = 0$).
+**Cộng dồn theo định luật dòng điện Kirchhoff.** Dọc theo các đường bit thẳng đứng, dòng điện từ hàng nghìn ô nhớ song song tự nhiên cộng lại theo định luật dòng điện Kirchhoff (Σ*I* = 0).
 
 Như vậy, một mảng bộ nhớ flash thực hiện trọn một phép nhân ma trận-vectơ trong một chu kỳ xung nhịp, vận hành ở cấp độ vật lý mà không cần một lần truy xuất bộ nhớ nào. Dòng điện tương tự đã cộng dồn sau đó được chuyển ngược về giá trị số nhờ các bộ chuyển đổi tương tự-số (ADC) tốc độ cao ở rìa mảng.
 
@@ -208,7 +208,7 @@ Bước chuyển từ cụm trung tâm dữ liệu 700 W sang silicon biên 15 W
 Nút thắt Von Neumann là giới hạn về thông lượng và năng lượng do sự tách biệt vật lý giữa bộ xử lý trung tâm (ALU) và bộ nhớ hệ thống (DRAM). Trong các khối lượng công việc trí tuệ nhân tạo, vốn gồm hàng tỷ phép nhân ma trận, bộ xử lý tiêu tốn hơn 85% tổng năng lượng và nhiều chu kỳ xung nhịp chỉ để chuyển dữ liệu qua lại trên các bus đồng, gây ra nút thắt nghiêm trọng về nhiệt và độ trễ.
 
 **Tính toán tương tự trong bộ nhớ (CIM) hoạt động như thế nào?**
-Tính toán trong bộ nhớ thực hiện các phép toán ngay bên trong ô nhớ mà không di chuyển dữ liệu. Trọng số mạng nơ-ron được lưu dưới dạng trạng thái độ dẫn điện tương tự trong các ô nhớ không khả biến. Khi điện áp đầu vào được đặt lên mảng, dòng điện chạy qua các ô theo định luật Ohm ($I = V \times G$) và cộng dồn dọc các đường bit theo định luật dòng điện Kirchhoff. Nhờ đó, một phép nhân ma trận-vectơ hoàn chỉnh được thực hiện trong một bước vật lý duy nhất.
+Tính toán trong bộ nhớ thực hiện các phép toán ngay bên trong ô nhớ mà không di chuyển dữ liệu. Trọng số mạng nơ-ron được lưu dưới dạng trạng thái độ dẫn điện tương tự trong các ô nhớ không khả biến. Khi điện áp đầu vào được đặt lên mảng, dòng điện chạy qua các ô theo định luật Ohm (*I* = *V* × *G*) và cộng dồn dọc các đường bit theo định luật dòng điện Kirchhoff. Nhờ đó, một phép nhân ma trận-vectơ hoàn chỉnh được thực hiện trong một bước vật lý duy nhất.
 
 **Vì sao tính toán trong bộ nhớ đặc biệt quan trọng với robot và drone?**
 Robot di động và drone vận hành dưới các giới hạn SWaP-C (kích thước, trọng lượng, công suất và chi phí) nghiêm ngặt. Chúng dựa vào pin gắn sẵn và không thể mang bộ tản nhiệt nặng hay nguồn điện công suất cao. Tính toán trong bộ nhớ mang lại hiệu quả năng lượng cao hơn 10 đến 1.000 lần, giúp robot chạy cục bộ các mô hình thị giác-ngôn ngữ-hành động phức tạp trong ngưỡng công suất 10 W đến 20 W mà vẫn giữ được thời lượng pin.

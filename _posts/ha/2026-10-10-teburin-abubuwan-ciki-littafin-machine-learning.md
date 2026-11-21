@@ -158,7 +158,7 @@ Marubutan sun kuma bayyana dalilin da ya sa fannin yake inda yake. Tun da nasara
 
 | Fanni | Time Complexity | Space Complexity | Sample Complexity |
 | :--- | :--- | :--- | :--- |
-| **Ma'anar aiki** | Lokacin gudanarwa na asymptotic da ake buƙata don fitar da hypothesis $h$ | Ƙwaƙwalwar da ake buƙata lokacin horo da kimantawa | Yawan misalan horo $m$ da ake buƙata don koyon iyalin ra'ayoyi |
+| **Ma'anar aiki** | Lokacin gudanarwa na asymptotic da ake buƙata don fitar da hypothesis *h* | Ƙwaƙwalwar da ake buƙata lokacin horo da kimantawa | Yawan misalan horo *m* da ake buƙata don koyon iyalin ra'ayoyi |
 | **Ka'idar da ke jagoranta** | Computational complexity (P vs NP, wahalar horo) | Iyakokin ƙwaƙwalwar tsari (architecture) da cache locality | PAC learning, Rademacher complexity da VC-dimension |
 | **Tasirin kuɗi** | Kasafin compute na sabar da GPU/CPU inference | Ƙarfin RAM da SRAM na cikin chip | Kuɗin tattara bayanai, bayani (annotation) da lakabi |
 | **Matsayin ka'ida** | Yana auna ingancin lokacin gudanar algorithm | Yana auna ingancin amfani da sarari | Yana ƙayyade generalization error da iyakoki a kan bayanan da ba a gani ba |

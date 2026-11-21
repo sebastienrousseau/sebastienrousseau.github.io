@@ -74,7 +74,7 @@
     ],
     [
       "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
-      "<li><a href=\"/hu/papers/index.html\">Publikációk</a></li>"
+      "<li><a href=\"/hu/research/index.html\">Publikációk</a></li>"
     ],
     [
       "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
@@ -126,7 +126,7 @@
     ],
     [
       "<a href=\"?/papers/index\\.html\"?>Papers</a>",
-      "<a href=\"/hu/papers/index.html\">Publikációk</a>"
+      "<a href=\"/hu/research/index.html\">Publikációk</a>"
     ],
     [
       "<a href=\"?/tags/index\\.html\"?>Tags</a>",
