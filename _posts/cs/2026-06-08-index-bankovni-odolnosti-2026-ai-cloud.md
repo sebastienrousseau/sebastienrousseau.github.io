@@ -13,7 +13,7 @@ description: "Index bankovní odolnosti 2026 propojující AI riziko, koncentrac
 format-detection: "telephone=no"
 hreflang: "cs"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/cs/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+id: "https://sebastienrousseau.com/cs/2026-06-08-index-bankovni-odolnosti-2026-ai-cloud"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/cs/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+permalink: "https://sebastienrousseau.com/cs/2026-06-08-index-bankovni-odolnosti-2026-ai-cloud"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "bankovní odolnost, DORA, AI riziko, koncentrace v cloudu, kvantové rizi
 excerpt: "Index bankovní odolnosti 2026 — AI riziko, riziko koncentrace v cloudu, migrace na kvantově odolnou kryptografii, kontinuita plateb a kritická závislost na třetích stranách shrnuté do jediného ukazatele operační odolnosti, který představenstvo i dohledový orgán dokážou přečíst najednou."
 theme-color: "0, 83, 191"
 title: "Index bankovní odolnosti 2026: AI, cloud, kvantová bezpečnost, platby a riziko koncentrace třetích stran"
-url: "https://sebastienrousseau.com/cs/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+url: "https://sebastienrousseau.com/cs/2026-06-08-index-bankovni-odolnosti-2026-ai-cloud"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/rss.xml"
 category: "Risk"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Migrace na kvantově odolnou kryptografii je metrikou operační odolnosti, nikoli metrikou bezpečnosti.</strong> Dlouhodobá data vystavená dnes neprojdou testem odolnosti zítřka.</li>
   <li><strong>Koncentrace třetích stran je nyní systémová.</strong> Závislosti na jediném hyperscaleru, jediném PSP nebo jediném poskytovateli LLM se v ukazateli odolnosti mapují jako jednotlivé body selhání.</li>
 </ul>
-<p class="post-lead-related"><strong>Související čtení:</strong> <a href="https://sebastienrousseau.com/cs/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA, EU AI Act a suverenita dat: Compliance stack pro banky v roce 2026</a>, <a href="https://sebastienrousseau.com/cs/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">Cloud-native bankovnictví v roce 2026: Kubernetes, DORA, suverenita a konec dělení VM versus kontejnery</a>.</p>
+<p class="post-lead-related"><strong>Související čtení:</strong> <a href="https://sebastienrousseau.com/cs/2026-05-28-dora-eu-ai-act-suverenita-dat/index.html">DORA, EU AI Act a suverenita dat: Compliance stack pro banky v roce 2026</a>, <a href="https://sebastienrousseau.com/cs/2026-05-20-cloud-native-bankovnictvi-roce-2026-kubernetes/index.html">Cloud-native bankovnictví v roce 2026: Kubernetes, DORA, suverenita a konec dělení VM versus kontejnery</a>.</p>
 </aside>
 <!-- lead-end -->
 

@@ -16,7 +16,7 @@ description: "A three-pillar architectural framework for Tier-1 banks and corpor
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+id: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -32,7 +32,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+permalink: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -43,7 +43,7 @@ subtitle: "A three-pillar framework for Tier-1 CIB and corporate treasury — cr
 tags: "2026 banking architecture, operational resilience, DORA, ISO 20022, programmable liquidity, tokenised deposits, post-quantum cryptography, hsh, multi-rail orchestration, policy-as-code, agentic treasury, CIB, whitepaper"
 theme-color: "0, 83, 191"
 title: "2026 Banking Architecture: A Framework for Operational Resilience"
-url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
@@ -85,7 +85,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "2026 Banking Architecture whitepaper banner"
 twitter_site: "@wwdseb"
 twitter_title: "2026 Banking Architecture Whitepaper"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 
 # Humans.txt - The Humans.txt front matter (YAML).
 author_website: "https://sebastienrousseau.com"
@@ -202,7 +202,7 @@ The PDF's 10-item programme risk register is calibrated to the explicit deltas b
 2. **Silent MT-to-MX data loss.** Banks emitting MT103 with truncated address or remittance data ingest cleanly into MX channels — but the structured fields stay empty. The downstream consequence (failed sanctions screening, missed AML triggers, reconciliation breaks) surfaces 30–90 days post cut-over, well past the change-window forensics. The register quantifies the expected back-book remediation cost per €1 bn of payment flow.
 3. **Agent action attribution.** When an LLM-backed treasury agent triggers a payment chain, three principals can claim ownership — the model owner, the rail provider, the policy author. Without an explicit attribution decision baked into the orchestration layer, the bank inherits all three liabilities. The register defines the attribution tree and the SR 11-7 evidence chain required to defend it.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Download the 2026 Banking Architecture Whitepaper (PDF)">Download the PDF briefing</a> <a class="pill ghost no-chev" href="/papers" title="See all published white papers and research">All white papers</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Download the 2026 Banking Architecture Whitepaper (PDF)">Download the PDF briefing</a> <a class="pill ghost no-chev" href="/research" title="See all published white papers and research">All white papers</a></p>
 
 ## Internal review summary
 

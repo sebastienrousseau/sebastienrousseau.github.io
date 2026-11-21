@@ -13,7 +13,7 @@ description: "التشفير ما بعد الكمي يفرض خيارًا ثنا
 format-detection: "telephone=no"
 hreflang: "ar"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026"
+id: "https://sebastienrousseau.com/ar/2026-05-31-bunyat-almadfuaat-baad-alkamiya-alistibdal"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -30,7 +30,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026"
+permalink: "https://sebastienrousseau.com/ar/2026-05-31-bunyat-almadfuaat-baad-alkamiya-alistibdal"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ subtitle: "ML-KEM وML-DSA لا يتلاءمان نظيفًا داخل القن�
 tags: "التشفير ما بعد الكمي, المرونة التشفيرية, HNDL, ML-KEM, ML-DSA, NIST, بنية المدفوعات التحتية, ISO 20022, SWIFT, HSM, PKI, المرونة التشغيلية, DORA, الحوسبة الكمومية, AI"
 theme-color: "0, 83, 191"
 title: "بنية المدفوعات ما بعد الكمية: لماذا قد تستبدل المصارف قنواتها القديمة بدل تحديثها"
-url: "https://sebastienrousseau.com/ar/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026"
+url: "https://sebastienrousseau.com/ar/2026-05-31-bunyat-almadfuaat-baad-alkamiya-alistibdal"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026/rss.xml"
 category: "Technology"
@@ -98,7 +98,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>المرونة التشفيرية هي خاصية التصميم الدائمة الوحيدة.</strong> اختيار الخوارزمية يجب أن يكون معامل تهيئة، لا افتراضًا حاملًا للبنية.</li>
   <li><strong>انهيار PKI هو نمط الفشل المنظومي.</strong> حين تنكسر خوارزمية توقيع جهة إصدار الشهادات، تتوقف كل شهادة تحتها عن أن تكون دليلًا — وذلك هو الانكشاف المؤسسي الواجب إدارته.</li>
 </ul>
-<p class="post-lead-related"><strong>قراءات ذات صلة:</strong> <a href="/ar/2026-05-18-quantum-cryptography-standards-developments-2026/">إعادة ضبط التشفير الكمي في 2026: معايير PQC وضمان QKD وأعمال الترحيل التي لا تستطيع المصارف تأجيلها</a>، <a href="/ar/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/">تأمين السجل: دليل على مستوى مجلس الإدارة للترحيل ما بعد الكمي في تمويل الشركات</a>، <a href="/ar/2026-05-16-best-cloud-infrastructure-architecture-2026/">أفضل بنية تحتية سحابية في 2026: مخطط أصلي للذكاء الاصطناعي ومتعدد السحب وواعٍ للكم للخدمات المالية</a>.</p>
+<p class="post-lead-related"><strong>قراءات ذات صلة:</strong> <a href="/ar/2026-05-18-idadat-dabt-altashfir-alkamumi-2026/">إعادة ضبط التشفير الكمي في 2026: معايير PQC وضمان QKD وأعمال الترحيل التي لا تستطيع المصارف تأجيلها</a>، <a href="/ar/2026-05-14-tamin-alsijill-alhijra-baad-alkamiya/">تأمين السجل: دليل على مستوى مجلس الإدارة للترحيل ما بعد الكمي في تمويل الشركات</a>، <a href="/ar/2026-05-16-afdal-bunya-tahtiya-sahabiya-2026/">أفضل بنية تحتية سحابية في 2026: مخطط أصلي للذكاء الاصطناعي ومتعدد السحب وواعٍ للكم للخدمات المالية</a>.</p>
 </aside>
 <!-- lead-end -->
 

@@ -13,7 +13,7 @@ description: "מדד מוכנות 2026 לאוצר אוטונומי — תהלי�
 format-detection: "telephone=no"
 hreflang: "he"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/he/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+id: "https://sebastienrousseau.com/he/2026-06-07-madad-haotsar-haotonomi-2026"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/he/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+permalink: "https://sebastienrousseau.com/he/2026-06-07-madad-haotsar-haotonomi-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "treasury, סוכני AI, נזילות הניתנת לתכנות, פיקד
 excerpt: "מדד מוכנות 2026 לאוצר אוטונומי — מדידת תהליכי אוצר סוכניים, כיסוי נזילות ניתנת לתכנות, שילוב פיקדונות מתוקנים, תזמור תשלומים בזמן אמת ושליטת מזומן אוטומטית כמרקם תפעולי אחד."
 theme-color: "0, 83, 191"
 title: "מדד האוצר האוטונומי 2026: אוצר סוכני, נזילות ניתנת לתכנות ופיקדונות מתוקנים"
-url: "https://sebastienrousseau.com/he/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+url: "https://sebastienrousseau.com/he/2026-06-07-madad-haotsar-haotonomi-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/rss.xml"
 category: "Finance"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>מישור הבקרה הוא משטח הביקורת החדש.</strong> מנדטים, מגבלות, נתיבי עקיפה ידנית וראיות היפוך חייבים לפעול כפרימיטיבים בפלטפורמה, לא כאישורים ידניים לכל פעולה.</li>
   <li><strong>כרטיס הניקוד של ה-CFO הוא לכל החלטה, לא לכל רבעון.</strong> עלות מזומן, הפחתת בופר נזילות תוך-יומית, יעילות FX ודיוק תחזית נמדדים במהירות התהליך.</li>
 </ul>
-<p class="post-lead-related"><strong>קריאה קשורה:</strong> <a href="https://sebastienrousseau.com/he/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html">נזילות ניתנת לתכנות ב-2026: AI, פיקדונות מתוקנים ותזמור אוצר בזמן אמת</a>, <a href="https://sebastienrousseau.com/he/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">פיקדונות מתוקנים ב-2026: שירותי בנקאות, תחרות סטייבלקוינים וסטטוס הכסף הבנקאי המסחרי הניתן לתכנות</a>.</p>
+<p class="post-lead-related"><strong>קריאה קשורה:</strong> <a href="https://sebastienrousseau.com/he/2026-05-25-nezilut-hanitenet-letichnut-2026/index.html">נזילות ניתנת לתכנות ב-2026: AI, פיקדונות מתוקנים ותזמור אוצר בזמן אמת</a>, <a href="https://sebastienrousseau.com/he/2026-05-21-pikdonot-metuyagim-2026/index.html">פיקדונות מתוקנים ב-2026: שירותי בנקאות, תחרות סטייבלקוינים וסטטוס הכסף הבנקאי המסחרי הניתן לתכנות</a>.</p>
 </aside>
 <!-- lead-end -->
 

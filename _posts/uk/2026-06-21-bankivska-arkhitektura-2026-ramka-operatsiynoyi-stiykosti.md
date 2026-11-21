@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "Банер білої книги «Банківська архітектура 2026»"
 twitter_site: "@wwdseb"
 twitter_title: "Біла книга «Банківська архітектура 2026»"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -186,7 +186,7 @@ site_software: "Static Site Generator, Rust"
 2. **Безшумна втрата даних MT-у-MX.** Банки, що надсилають `MT103` із обрізаними адресою чи ремітансом, чисто проходять інжест у MX-канали — але структуровані поля залишаються порожніми. Наслідок нижче за течією (провали санкційного скринінгу, пропущені AML-тригери, розриви звірки) спливає через 30–90 днів після переходу, далеко поза вікном форензики змін. Реєстр кількісно оцінює очікувану вартість ремедіації бек-буку на кожен €1 млрд платіжного потоку.
 3. **Атрибуція дій агента.** Коли казначейський агент на базі LLM запускає платіжний ланцюг, три принципали можуть претендувати на власність — власник моделі, провайдер рейку, автор політики. Без явного рішення про атрибуцію, вшитого у шар оркестрації, банк успадковує всі три відповідальності. Реєстр визначає дерево атрибуції та ланцюг доказів `SR 11-7`, потрібний, щоб його захистити.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Завантажити PDF білої книги «Банківська архітектура 2026»">Завантажити PDF-брифінг</a> <a class="pill ghost no-chev" href="/papers" title="Переглянути всі опубліковані білі книги та дослідження">Усі білі книги</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Завантажити PDF білої книги «Банківська архітектура 2026»">Завантажити PDF-брифінг</a> <a class="pill ghost no-chev" href="/research" title="Переглянути всі опубліковані білі книги та дослідження">Усі білі книги</a></p>
 
 ## Резюме внутрішнього ревʼю
 

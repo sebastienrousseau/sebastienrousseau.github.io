@@ -80,7 +80,7 @@ Mọi xử lý xảy ra trên thiết bị. Âm thanh không bao giờ rời kh�
 
 ### Bài báo nghiên cứu
 
-Tôi đã xuất bản một bài báo nghiên cứu chi tiết các tối ưu hoá ở mức thấp ([Papers ›](https://sebastienrousseau.com/papers/)).
+Tôi đã xuất bản một bài báo nghiên cứu chi tiết các tối ưu hoá ở mức thấp ([Papers ›](https://sebastienrousseau.com/research/)).
 
 ## Kết luận
 

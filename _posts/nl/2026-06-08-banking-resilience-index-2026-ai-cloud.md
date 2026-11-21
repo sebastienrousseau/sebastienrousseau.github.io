@@ -13,7 +13,7 @@ description: "Een Banking Resilience Index 2026 die AI-risico, concentratierisic
 format-detection: "telephone=no"
 hreflang: "nl"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/nl/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+id: "https://sebastienrousseau.com/nl/2026-06-08-banking-resilience-index-2026-ai-cloud"
 image_alt: "Zwart-witportret van Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/nl/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+permalink: "https://sebastienrousseau.com/nl/2026-06-08-banking-resilience-index-2026-ai-cloud"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "operationele veerkracht, DORA, AI-risico, concentratierisico cloud, kwant
 excerpt: "Een Banking Resilience Index 2026 — AI-risico, concentratierisico cloud, kwantumveilige migratie, betalingscontinuïteit en kritieke derdenafhankelijkheid samengevoegd tot één scorebord voor operationele veerkracht dat zowel de raad als de toezichthouder kan lezen."
 theme-color: "0, 83, 191"
 title: "Banking Resilience Index 2026: AI, cloud, kwantum, betalingen en derdenrisico"
-url: "https://sebastienrousseau.com/nl/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+url: "https://sebastienrousseau.com/nl/2026-06-08-banking-resilience-index-2026-ai-cloud"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/rss.xml"
 category: "Risk"
@@ -99,7 +99,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>Kwantumveilige migratie is een metriek voor operationele veerkracht, geen beveiligingsmetriek.</strong> Langlevende data die vandaag wordt blootgesteld, valt morgen door de veerkrachttest.</li>
   <li><strong>Concentratie van derde partijen is nu systemisch.</strong> Single-hyperscaler-, single-PSP- en single-LLM-leveranciersafhankelijkheden vertalen zich op het scorebord rechtstreeks naar single points of failure.</li>
 </ul>
-<p class="post-lead-related"><strong>Verwante artikelen:</strong> <a href="https://sebastienrousseau.com/nl/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</a>, <a href="https://sebastienrousseau.com/nl/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">Cloud-native banking in 2026: Kubernetes, DORA, soevereiniteit en het einde van de VM-versus-container-scheiding</a>.</p>
+<p class="post-lead-related"><strong>Verwante artikelen:</strong> <a href="https://sebastienrousseau.com/nl/2026-05-28-dora-eu-ai-act-en-datasoevereiniteit/index.html">DORA, EU AI Act en datasoevereiniteit: de compliance-stack 2026 voor banken</a>, <a href="https://sebastienrousseau.com/nl/2026-05-20-cloud-native-bankieren-in-2026-kubernetes/index.html">Cloud-native banking in 2026: Kubernetes, DORA, soevereiniteit en het einde van de VM-versus-container-scheiding</a>.</p>
 </aside>
 <!-- lead-end -->
 

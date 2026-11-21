@@ -54,7 +54,7 @@ Penyepaduan OpenAI Whisper dan Metal Performance Shaders pada macOS mewakili kem
 .class=\"card bg-light p-3 me-3 w-100\"
 Untuk mengetahui lebih lanjut tentang penyepaduan OpenAI Whisper dan Metal Performance Shaders pada macOS untuk pengecaman pertuturan masa nyata, pembaca digalakkan untuk mengakses kertas penyelidikan penuh. Kertas ini menyediakan butiran teknikal yang mendalam, keputusan eksperimen, dan pandangan lanjut tentang potensi aplikasi dan hala tuju masa depan teknologi ini. Dengan mengakses kertas penyelidikan yang lengkap, pembaca akan memperoleh pemahaman yang menyeluruh tentang metodologi, pelaksanaan, dan implikasi pendekatan inovatif ini terhadap pengecaman pertuturan masa nyata pada peranti macOS. [**Baca Kertas Penuh Hari Ini! ❯**][00]
 
-[00]: /papers/index.html "Research Publications & White Papers from Sebastien Rousseau"
+[00]: /research/index.html "Research Publications & White Papers from Sebastien Rousseau"
 [01]: https://developer.apple.com/documentation/metalperformanceshaders "Metal Performance Shaders - Apple Developer Documentation"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"

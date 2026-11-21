@@ -16,7 +16,7 @@ description: "Ang arkitektura ng cloud sa 2026 ay nag-crystallise sa anim na hal
 format-detection: "telephone=no"
 hreflang: "fil"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/fil/2026-05-16-best-cloud-infrastructure-architecture-2026"
+id: "https://sebastienrousseau.com/fil/2026-05-16-pinakamahusay-na-arkitektura-ng-cloud-sa-2026"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -32,7 +32,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/fil/2026-05-16-best-cloud-infrastructure-architecture-2026"
+permalink: "https://sebastienrousseau.com/fil/2026-05-16-pinakamahusay-na-arkitektura-ng-cloud-sa-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -43,7 +43,7 @@ subtitle: "Ang arkitektura ng cloud ay nag-crystallise sa anim na haligi at isan
 tags: "arkitektura ng cloud, AI-native infrastructure, multi-cloud, sovereign cloud, CLOUD Act, sovereign AI, open-weight models, Llama 4, serverless, WebAssembly, eBPF, Cilium, edge computing, LEO satellite, DevSecOps, liquid cooling, grid-aware computing, SMR, nuclear power, silicon photonics, agentic AI, agentic unit economics, cryptographic agent identity, algorithmic contagion, RAG poisoning, vector database security, synthetic data, data gravity, continuous treasury, CBDC, graph neural networks, HNDL, post-quantum cryptography, crypto-agility, QKD, Basel IV, cloud concentration risk, MCP security, CloudCDN, Cloudflare, ISO 20022, DORA, AI, stablecoins, open source, platform engineering, cloud native banking, cross-border payments, tokenised deposits"
 theme-color: "0, 83, 191"
 title: "Ang Pinakamahusay na Arkitektura ng Cloud Infrastructure sa 2026: Isang AI-Native, Multi-Cloud, Quantum-Aware na Blueprint para sa Financial Services"
-url: "https://sebastienrousseau.com/fil/2026-05-16-best-cloud-infrastructure-architecture-2026"
+url: "https://sebastienrousseau.com/fil/2026-05-16-pinakamahusay-na-arkitektura-ng-cloud-sa-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
@@ -85,7 +85,7 @@ twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastie
 twitter_image_alt: "Logo ni Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Ang Pinakamahusay na Arkitektura ng Cloud para sa mga Bangko sa 2026: Isang Blueprint"
-twitter_url: "https://sebastienrousseau.com/fil/2026-05-16-best-cloud-infrastructure-architecture-2026"
+twitter_url: "https://sebastienrousseau.com/fil/2026-05-16-pinakamahusay-na-arkitektura-ng-cloud-sa-2026"
 
 # Humans.txt - The Humans.txt front matter (YAML).
 author_website: "https://sebastienrousseau.com"

@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "Banner pentru cartea albă a arhitecturii bancare 2026"
 twitter_site: "@wwdseb"
 twitter_title: "Cartea albă a arhitecturii bancare 2026"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "Londra, Marea Britanie"
@@ -186,7 +186,7 @@ Registrul de 10 riscuri de program al PDF-ului este calibrat la deltele explicit
 2. **Pierdere silențioasă de date MT-la-MX.** Băncile care emit `MT103` cu date de adresă sau remitere trunchiate sunt ingerate fără probleme în canalele `MX` — dar câmpurile structurate rămân goale. Consecința în aval (eșecul ecranării sancțiunilor, declanșatoare AML ratate, rupturi de reconciliere) apare la 30–90 de zile după trecere, cu mult dincolo de criminalistica ferestrei de schimbare. Registrul cuantifică costul așteptat de remediere a registrului de back-book per 1 mld. € de flux de plăți.
 3. **Atribuirea acțiunilor agentului.** Când un agent de trezorerie susținut de LLM declanșează un lanț de plată, trei principali pot revendica proprietatea — proprietarul modelului, furnizorul de rail, autorul politicii. Fără o decizie explicită de atribuire integrată în stratul de orchestrare, banca moștenește toate cele trei răspunderi. Registrul definește arborele de atribuire și lanțul de probe `SR 11-7` necesar pentru a-l apăra.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Descarcă cartea albă a arhitecturii bancare 2026 (PDF)">Descarcă briefing-ul PDF</a> <a class="pill ghost no-chev" href="/papers" title="Vezi toate cărțile albe și cercetările publicate">Toate cărțile albe</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Descarcă cartea albă a arhitecturii bancare 2026 (PDF)">Descarcă briefing-ul PDF</a> <a class="pill ghost no-chev" href="/research" title="Vezi toate cărțile albe și cercetările publicate">Toate cărțile albe</a></p>
 
 ## Rezumat de revizuire internă
 

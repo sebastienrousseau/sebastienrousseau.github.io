@@ -16,7 +16,7 @@ description: "Ìkọ́lé ìkùukùu (cloud) ní 2026 ti dí kírísítà yí à
 format-detection: "telephone=no"
 hreflang: "yo"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/yo/2026-05-16-best-cloud-infrastructure-architecture-2026"
+id: "https://sebastienrousseau.com/yo/2026-05-16-ikole-ipile-ikuukuu-to-dara-julo"
 image_alt: "Àwòrán Aláwọ̀-dúdú-àti-funfun ti Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -32,7 +32,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/yo/2026-05-16-best-cloud-infrastructure-architecture-2026"
+permalink: "https://sebastienrousseau.com/yo/2026-05-16-ikole-ipile-ikuukuu-to-dara-julo"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -43,7 +43,7 @@ subtitle: "Ìkọ́lé ìkùukùu ti di kírísítà yí àwọn ọwọ́n mẹ
 tags: "ètò àpẹẹrẹ cloud, AI-native infrastructure, multi-cloud, sovereign cloud, CLOUD Act, sovereign AI, open-weight models, Llama 4, serverless, WebAssembly, eBPF, Cilium, edge computing, LEO satellite, DevSecOps, ìtútù omi, ìṣirò tó mọ gírídì, SMR, agbára ọ̀gbálẹ̀gbáràwé, silicon photonics, agentic AI, ọrọ̀-ajé ẹyọ àgẹntì, ìdánimọ̀ àgẹntì ìsirò ìpamọ́, ìtàn àlùpọ̀rítìmù, majèlé RAG, ààbò àpamọ́ vector, ẹ̀dá data, ìfẹ́lọ́pọ̀ data, ìṣàkóso ìṣúná tí kò dáwọ́, CBDC, àwọn nẹtiwọọki neural ayaworan, HNDL, ìsirò ìpamọ́ lẹ́yìn quantum, ìmọ̀ ìrọ̀lọ́ crypto, QKD, Basel IV, ewu ìdọ́mọ̀ cloud, MCP security, CloudCDN, Cloudflare, ISO 20022, DORA, AI, stablecoins, open source, platform engineering, cloud native banking, ìsanwó kọjá-ààlà, tokenised deposits"
 theme-color: "0, 83, 191"
 title: "Ìkọ́lé Ìpìlẹ̀ Ìkùukùu Tó Dára Jùlọ ní 2026: Ìlànà AI-Native, Multi-Cloud, Olùmọ̀-Quantum fún Àwọn Iṣẹ́-Ìnáwó"
-url: "https://sebastienrousseau.com/yo/2026-05-16-best-cloud-infrastructure-architecture-2026"
+url: "https://sebastienrousseau.com/yo/2026-05-16-ikole-ipile-ikuukuu-to-dara-julo"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
@@ -85,7 +85,7 @@ twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastie
 twitter_image_alt: "Lógò ti Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Ìkọ́lé Ìkùukùu Tó Dára Jùlọ fún Àwọn Báńkì ní 2026: Ìlànà Kan"
-twitter_url: "https://sebastienrousseau.com/yo/2026-05-16-best-cloud-infrastructure-architecture-2026"
+twitter_url: "https://sebastienrousseau.com/yo/2026-05-16-ikole-ipile-ikuukuu-to-dara-julo"
 
 # Humans.txt - The Humans.txt front matter (YAML).
 author_website: "https://sebastienrousseau.com"

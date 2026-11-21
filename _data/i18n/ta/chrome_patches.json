@@ -74,7 +74,7 @@
     ],
     [
       "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
-      "<li><a href=\"/ta/papers/index.html\">வெளியீடுகள்</a></li>"
+      "<li><a href=\"/ta/research/index.html\">வெளியீடுகள்</a></li>"
     ],
     [
       "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
@@ -126,7 +126,7 @@
     ],
     [
       "<a href=\"?/papers/index\\.html\"?>Papers</a>",
-      "<a href=\"/ta/papers/index.html\">வெளியீடுகள்</a>"
+      "<a href=\"/ta/research/index.html\">வெளியீடுகள்</a>"
     ],
     [
       "<a href=\"?/tags/index\\.html\"?>Tags</a>",

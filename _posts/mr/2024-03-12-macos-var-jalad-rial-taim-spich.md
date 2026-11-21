@@ -54,7 +54,7 @@ macOS वर OpenAI Whisper आणि Metal Performance Shaders यांचे 
 .class=\"card bg-light p-3 me-3 w-100\"
 macOS वर रिअल-टाइम स्पीच रिकग्निशनसाठी OpenAI Whisper आणि Metal Performance Shaders यांच्या एकत्रीकरणाबद्दल अधिक जाणून घेण्यासाठी, वाचकांना संपूर्ण संशोधन पेपर मिळवण्यास प्रोत्साहित केले जाते. हा पेपर सखोल तांत्रिक तपशील, प्रायोगिक परिणाम आणि या तंत्रज्ञानाच्या संभाव्य अनुप्रयोग व भविष्यातील दिशांबद्दल अधिक अंतर्दृष्टी पुरवतो. संपूर्ण संशोधन पेपर मिळवून, वाचकांना macOS उपकरणांवरील रिअल-टाइम स्पीच रिकग्निशनच्या या नाविन्यपूर्ण दृष्टिकोनाच्या पद्धती, अंमलबजावणी आणि परिणामांबद्दल सर्वंकष समज प्राप्त होईल. [**आजच संपूर्ण पेपर वाचा! ❯**][00]
 
-[00]: /papers/index.html "Research Publications & White Papers from Sebastien Rousseau"
+[00]: /research/index.html "Research Publications & White Papers from Sebastien Rousseau"
 [01]: https://developer.apple.com/documentation/metalperformanceshaders "Metal Performance Shaders - Apple Developer Documentation"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"

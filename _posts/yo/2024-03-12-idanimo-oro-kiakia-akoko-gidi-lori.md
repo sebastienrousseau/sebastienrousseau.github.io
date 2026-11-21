@@ -162,7 +162,7 @@ last_reviewed: "2026-05-11"
 .class=\"card bg-light p-3 me-3 w-100\"
 Láti kọ́ ẹ̀kọ́ púpọ̀ sí i nípa ìṣọpọ̀ OpenAI Whisper àti Metal Performance Shaders lórí macOS fún speech recognition ní àkókò gidi, a gba àwọn òǹkàwé níyànjú láti wọlé sí gbogbo ìwé ìwádìí náà. Ìwé náà ń pèsè àwọn kúlẹ̀kúlẹ̀ ìmọ̀ ẹ̀rọ tó jinlẹ̀, àwọn àbájáde àyẹ̀wò (experimental results), àti àwọn òye síwájú sí i nípa àwọn ohun-èlò tí ó le wà àti àwọn ìtọ́sọ́nà ọjọ́ iwájú ti ìmọ̀ ẹ̀rọ yìí. Nípa bíbẹ gbogbo ìwé ìwádìí náà wò, àwọn òǹkàwé yóò ní òye kíkún nípa methodology, implementation, àti àwọn àbájáde ti ọ̀nà tuntun yìí sí speech recognition ní àkókò gidi lórí àwọn ẹ̀rọ macOS. [**Ka Gbogbo Ìwé Náà Lónìí! ❯**][00]
 
-[00]: /papers/index.html "Àwọn Ìgbéjáde Ìwádìí & Ìwé Funfun láti ọwọ́ Sebastien Rousseau"
+[00]: /research/index.html "Àwọn Ìgbéjáde Ìwádìí & Ìwé Funfun láti ọwọ́ Sebastien Rousseau"
 [01]: https://developer.apple.com/documentation/metalperformanceshaders "Metal Performance Shaders - Àwọn Àkọsílẹ̀ Olùgbéjáde Apple"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"

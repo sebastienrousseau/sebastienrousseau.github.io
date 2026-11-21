@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "Banner sách trắng Kiến trúc Ngân hàng 2026"
 twitter_site: "@wwdseb"
 twitter_title: "Sách trắng Kiến trúc Ngân hàng 2026"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -186,7 +186,7 @@ Sổ đăng ký rủi ro chương trình 10 mục của PDF được hiệu ch�
 2. **Mất dữ liệu MT-sang-MX âm thầm.** Các ngân hàng phát hành MT103 với dữ liệu địa chỉ hoặc chuyển khoản bị cắt ngắn vẫn được tiếp nhận sạch vào các kênh MX — nhưng các trường có cấu trúc vẫn để trống. Hệ quả hạ nguồn (sàng lọc trừng phạt thất bại, kích hoạt AML bị bỏ sót, ngắt quãng đối soát) xuất hiện 30–90 ngày sau cắt chuyển, qua xa cửa sổ pháp y sau thay đổi. Sổ đăng ký định lượng chi phí khắc phục back-book dự kiến trên mỗi €1 tỷ dòng thanh toán.
 3. **Quy kết hành động của tác nhân.** Khi một tác nhân ngân quỹ được hậu thuẫn bởi LLM kích hoạt một chuỗi thanh toán, ba chủ thể có thể yêu cầu quyền sở hữu — chủ mô hình, nhà cung cấp rail, tác giả chính sách. Không có một quyết định quy kết rõ ràng được nướng vào lớp điều phối, ngân hàng kế thừa cả ba trách nhiệm pháp lý. Sổ đăng ký định nghĩa cây quy kết và chuỗi bằng chứng SR 11-7 cần thiết để bảo vệ.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Tải Sách trắng Kiến trúc Ngân hàng 2026 (PDF)">Tải bản tóm tắt PDF</a> <a class="pill ghost no-chev" href="/papers" title="Xem tất cả sách trắng và nghiên cứu đã xuất bản">Tất cả sách trắng</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Tải Sách trắng Kiến trúc Ngân hàng 2026 (PDF)">Tải bản tóm tắt PDF</a> <a class="pill ghost no-chev" href="/research" title="Xem tất cả sách trắng và nghiên cứu đã xuất bản">Tất cả sách trắng</a></p>
 
 ## Bản tóm lược rà soát nội bộ
 

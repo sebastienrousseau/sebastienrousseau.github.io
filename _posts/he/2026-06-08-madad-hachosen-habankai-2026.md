@@ -13,7 +13,7 @@ description: "מדד חוסן בנקאי 2026 המשלב סיכון AI, ריכו
 format-detection: "telephone=no"
 hreflang: "he"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/he/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+id: "https://sebastienrousseau.com/he/2026-06-08-madad-hachosen-habankai-2026"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/he/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+permalink: "https://sebastienrousseau.com/he/2026-06-08-madad-hachosen-habankai-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "חוסן בנקאי, DORA, סיכון AI, ריכוז ענן, סיכון �
 excerpt: "מדד חוסן בנקאי 2026 — שילוב של סיכון AI, ריכוז ענן, הגירה עמידה לקוונטים, המשכיות תשלומים ותלות צדדים שלישיים קריטיים ללוח מחוונים אחד של חוסן תפעולי שהדירקטוריון והרגולטור מסוגלים לקרוא יחד."
 theme-color: "0, 83, 191"
 title: "מדד החוסן הבנקאי 2026: AI, ענן, קוונטים, תשלומים וסיכון ריכוז צד שלישי"
-url: "https://sebastienrousseau.com/he/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+url: "https://sebastienrousseau.com/he/2026-06-08-madad-hachosen-habankai-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/rss.xml"
 category: "Risk"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>הגירה עמידה לקוונטים היא מדד חוסן תפעולי, לא מדד אבטחה.</strong> נתונים ארוכי-טווח החשופים היום נכשלים במבחן החוסן של מחר.</li>
   <li><strong>ריכוז צד שלישי הוא כיום סיסטמי.</strong> תלות בהיפר-סקיילר יחיד, ב-PSP יחיד או בספק LLM יחיד ממופה כנקודות-כשל-יחידות בלוח המחוונים של החוסן.</li>
 </ul>
-<p class="post-lead-related"><strong>קריאה קשורה:</strong> <a href="https://sebastienrousseau.com/he/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA, חוק הבינה המלאכותית של האיחוד האירופי וריבונות נתונים: ערימת הציות של 2026 לבנקים</a>, <a href="https://sebastienrousseau.com/he/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">בנקאות cloud-native ב-2026: Kubernetes, DORA, ריבונות וסוף הדיכוטומיה בין VM למיכל</a>.</p>
+<p class="post-lead-related"><strong>קריאה קשורה:</strong> <a href="https://sebastienrousseau.com/he/2026-05-28-dora-chok-habina-veribonut-netunim/index.html">DORA, חוק הבינה המלאכותית של האיחוד האירופי וריבונות נתונים: ערימת הציות של 2026 לבנקים</a>, <a href="https://sebastienrousseau.com/he/2026-05-20-bankaut-cloud-native-2026/index.html">בנקאות cloud-native ב-2026: Kubernetes, DORA, ריבונות וסוף הדיכוטומיה בין VM למיכל</a>.</p>
 </aside>
 <!-- lead-end -->
 

@@ -13,7 +13,7 @@ description: "2026年5月25日,教宗良十四世發布《Magnifica Humanitas》
 format-detection: "telephone=no"
 hreflang: "zh-hant"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/zh-hant/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+id: "https://sebastienrousseau.com/zh-hant/2026-05-26-magnifica-humanitas-jiaozong-tongyu-tw"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/zh-hant/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+permalink: "https://sebastienrousseau.com/zh-hant/2026-05-26-magnifica-humanitas-jiaozong-tongyu-tw"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -40,7 +40,7 @@ tags: "Magnifica Humanitas, Pope Leo XIV, AI 倫理, 量子運算, 技術史, tr
 excerpt: "2026年5月25日,教宗良十四世發布《Magnifica Humanitas》——首份專論人工智慧的宗座通諭。從科技產業內部閱讀,不是教義,而是一份倫理框架,其呼應火車、汽車、核能與網路問世時的每一份道德焦慮,最終落腳於希望。"
 theme-color: "0, 83, 191"
 title: "Magnifica Humanitas:首份 AI 宗座通諭的產業解讀"
-url: "https://sebastienrousseau.com/zh-hant/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+url: "https://sebastienrousseau.com/zh-hant/2026-05-26-magnifica-humanitas-jiaozong-tongyu-tw"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/rss.xml"
 category: "Technology"
@@ -161,7 +161,7 @@ site_software: "Static Site Generator, Rust"
 
 通諭中有兩項具體關切直接落到金融系統的工程之上,兩者都值得工程師而非信徒的回應。
 
-第一是**權力集中於私人、跨國機構之手**。通諭觀察到此項科技的主要驅動者如今是私人行為者,其能力超越許多國家,這並非神學主張;這是對 2026 年 AI 局勢的準確描述,也正是當前產業正在倉促因應的監管架構所貫穿的關切——自 2026 年 8 月 2 日起可執行的 EU AI Act 高風險義務、DORA 的第三方集中風險條款,以及本網站[雲端架構](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "2026 年最佳雲端基礎建設架構")與[代理式工程](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "銀行代理式工程")文章所涵蓋的主權雲與主權控制平面運動。值得注意的是,通諭與 EU AI Act 擔心的其實是同一件事:沒有問責的能力會以逃避民主治理的方式集中權力。一方以社會教義的語言陳述,另一方以合規性評估的語言陳述。診斷是一致的。
+第一是**權力集中於私人、跨國機構之手**。通諭觀察到此項科技的主要驅動者如今是私人行為者,其能力超越許多國家,這並非神學主張;這是對 2026 年 AI 局勢的準確描述,也正是當前產業正在倉促因應的監管架構所貫穿的關切——自 2026 年 8 月 2 日起可執行的 EU AI Act 高風險義務、DORA 的第三方集中風險條款,以及本網站[雲端架構](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "2026 年最佳雲端基礎建設架構")與[代理式工程](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "銀行代理式工程")文章所涵蓋的主權雲與主權控制平面運動。值得注意的是,通諭與 EU AI Act 擔心的其實是同一件事:沒有問責的能力會以逃避民主治理的方式集中權力。一方以社會教義的語言陳述,另一方以合規性評估的語言陳述。診斷是一致的。
 
 第二是**量子計算**,通諭並未指名,但其倫理形狀恰好被精準預示。[《保障帳本》](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "保障帳本")所涵蓋的後量子遷移前提是:當前正在建構的一項能力——密碼學相關的量子電腦——一旦問世,將回溯性地暴露今日假設下加密的一切。「harvest now, decrypt later」用世俗語言來說,正是通諭所警告的那種「有力量而無智慧」的科技:其後果到來的時程跑在準備之前,落入有資源最先運用者之手。通諭堅持在連串緊急事件決定路徑之前先問「我們要往何處去?」,對安全工程師而言,就是以道德哲學形式呈現的良好實務。
 
@@ -231,8 +231,8 @@ site_software: "Static Site Generator, Rust"
 
 - Sebastien Rousseau,(2026)。[Lucy 的隨身碟,再訪:知識轉移、AI 與量子](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html "Lucy 的隨身碟,再訪")。
 - Sebastien Rousseau,(2026)。[保障帳本:企業財務後量子遷移的董事會層級指南](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "保障帳本")。
-- Sebastien Rousseau,(2026)。[銀行代理式工程:2026 年藍圖](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "銀行代理式工程")。
-- Sebastien Rousseau,(2026)。[2026 年最佳雲端基礎建設架構](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "2026 年最佳雲端基礎建設架構")。
+- Sebastien Rousseau,(2026)。[銀行代理式工程:2026 年藍圖](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "銀行代理式工程")。
+- Sebastien Rousseau,(2026)。[2026 年最佳雲端基礎建設架構](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "2026 年最佳雲端基礎建設架構")。
 - 教宗良十四世,(2026)。[通諭《Magnifica Humanitas》論在人工智慧時代守護人的位格 ⧉](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html "Magnifica Humanitas——全文,Vatican.va")。聖座。
 - 教宗良十三世,(1891)。[通諭《Rerum Novarum》論資本與勞動 ⧉](https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_15051891_rerum-novarum.html "Rerum Novarum——Vatican.va")。聖座。
 - Vatican News,(2026)。[教宗良十四世首份通諭《Magnifica humanitas》將於 5 月 25 日發布 ⧉](https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html "Vatican News——Magnifica Humanitas")。Vatican News。

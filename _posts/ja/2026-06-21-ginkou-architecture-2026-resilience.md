@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "『2026年の銀行アーキテクチャ』ホワイトペーパーのバナー"
 twitter_site: "@wwdseb"
 twitter_title: "2026年の銀行アーキテクチャ・ホワイトペーパー"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -186,7 +186,7 @@ SWIFT `CBPR+`、A2A / PSD3、トークン化預金を、ポリシー・アズ・
 2. **MTからMXへのサイレントなデータ消失。** 住所やレミッタンスを切り詰めた`MT103`を送る銀行は、MXチャネルにはきれいに取り込まれます——しかし構造化フィールドは空のままです。下流の帰結（制裁スクリーニング失敗、AMLトリガー漏れ、レコンシリエーション破綻）は切替後30〜90日で表面化し、変更ウィンドウのフォレンジクスはとうに過ぎています。本登録簿は、決済フロー`€1 bn`あたりの遡及修復コストを定量化しています。
 3. **エージェント行為の帰属。** LLM搭載のトレジャリー・エージェントが支払いチェーンを起動するとき、三者が所有権を主張しえます——モデル所有者、レール提供者、ポリシー作成者です。明示的な帰属判断をオーケストレーション層に焼き込まない限り、銀行は三者分の負債を引き受けます。本登録簿は帰属ツリーと、それを擁護するために必要な`SR 11-7`の証拠連鎖を定義しています。
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="2026年の銀行アーキテクチャ・ホワイトペーパー（PDF）をダウンロード">PDFブリーフィングをダウンロード</a> <a class="pill ghost no-chev" href="/papers" title="公開されたすべてのホワイトペーパーと調査">すべてのホワイトペーパー</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="2026年の銀行アーキテクチャ・ホワイトペーパー（PDF）をダウンロード">PDFブリーフィングをダウンロード</a> <a class="pill ghost no-chev" href="/research" title="公開されたすべてのホワイトペーパーと調査">すべてのホワイトペーパー</a></p>
 
 ## 内部レビュー・サマリー
 

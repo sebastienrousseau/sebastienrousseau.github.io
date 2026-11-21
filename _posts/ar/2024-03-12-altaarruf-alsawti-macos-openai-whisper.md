@@ -56,7 +56,7 @@ keywords: "OpenAI Whisper, Metal Performance Shaders, التعرّف الصوت�
 .class=\"card bg-light p-3 me-3 w-100\"
 لمعرفة المزيد حول دمج OpenAI Whisper وMetal Performance Shaders على macOS للتعرّف الصوتي في الزمن الفعلي، يُشجَّع القرّاء على الوصول إلى الورقة البحثية كاملةً. تُقدّم الورقة تفاصيل تقنية معمَّقة، ونتائج تجريبية، ورؤى إضافية حول التطبيقات المحتملة والاتّجاهات المستقبلية لهذه التقنية. وبالوصول إلى الورقة البحثية الكاملة، سيكتسب القرّاء فهماً شاملاً للمنهجية والتنفيذ والتبعات لهذا النهج المبتكر في التعرّف الصوتي في الزمن الفعلي على أجهزة macOS. [**اقرأ الورقة الكاملة اليوم! ❯**][00]
 
-[00]: /papers/index.html "منشورات بحثية وأوراق بيضاء من Sebastien Rousseau"
+[00]: /research/index.html "منشورات بحثية وأوراق بيضاء من Sebastien Rousseau"
 [01]: https://developer.apple.com/documentation/metalperformanceshaders "Metal Performance Shaders - Apple Developer Documentation"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"

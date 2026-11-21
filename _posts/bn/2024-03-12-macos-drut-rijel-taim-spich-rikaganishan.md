@@ -162,7 +162,7 @@ macOS-এ OpenAI Whisper এবং Metal Performance Shaders-এর সমন্
 .class=\"card bg-light p-3 me-3 w-100\"
 macOS-এ রিয়েল-টাইম স্পিচ রিকগনিশনের জন্য OpenAI Whisper এবং Metal Performance Shaders-এর সমন্বয় সম্পর্কে আরও জানতে, পাঠকদের সম্পূর্ণ গবেষণাপত্রটি অ্যাক্সেস করতে উৎসাহিত করা হচ্ছে। গবেষণাপত্রটিতে বিস্তারিত প্রযুক্তিগত বিবরণ, পরীক্ষামূলক ফলাফল এবং এই প্রযুক্তির সম্ভাব্য প্রয়োগ ও ভবিষ্যতের দিকনির্দেশনা সম্পর্কে আরও তথ্য দেওয়া হয়েছে। সম্পূর্ণ গবেষণাপত্রটি অ্যাক্সেস করার মাধ্যমে, পাঠকরা macOS ডিভাইসে রিয়েল-টাইম স্পিচ রিকগনিশনের এই উদ্ভাবনী পদ্ধতির কার্যপ্রণালী, বাস্তবায়ন এবং প্রভাব সম্পর্কে একটি ব্যাপক ধারণা লাভ করবেন। [**আজই সম্পূর্ণ গবেষণাপত্রটি পড়ুন! ❯**][00]
 
-[00]: /papers/index.html "Sebastien Rousseau-এর গবেষণা প্রকাশনা ও হোয়াইট পেপারসমূহ"
+[00]: /research/index.html "Sebastien Rousseau-এর গবেষণা প্রকাশনা ও হোয়াইট পেপারসমূহ"
 [01]: https://developer.apple.com/documentation/metalperformanceshaders "Metal Performance Shaders - Apple ডেভেলপার ডকুমেন্টেশন"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "বিভাজক"

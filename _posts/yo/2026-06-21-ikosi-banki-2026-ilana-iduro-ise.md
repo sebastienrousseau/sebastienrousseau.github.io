@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "Banner ìwé funfun Ìkọ́sí Báńkì 2026"
 twitter_site: "@wwdseb"
 twitter_title: "Ìwé Funfun Ìkọ́sí Báńkì 2026"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -186,7 +186,7 @@ Fi control plane tí kò ní àdé sí rail kan ṣiṣẹ́ tí ó ka SWIFT CBP
 2. **Ìpàdánù data MT-sí-MX ní ìdákẹ́jẹ́ẹ́.** Àwọn báńkì tí ó ń ránṣẹ́ MT103 pẹ̀lú àdírẹ́sì tàbí data remittance tí a gé kúrú gba àyè dáadáa sínú ọ̀nà MX — ṣùgbọ́n àwọn pápá tí ó ní ètò dúró ní òfo. Ìyọrísí ní ìsàlẹ̀ (ìṣàyẹ̀wò sanctions tí kò yẹ, àwọn ìtọ́ka AML tí a fò, ìbúsí ìpàdé) ń farahàn ní ọjọ́ 30–90 lẹ́yìn ìyípadà, tí ó kọjá àyẹ̀wò ìpele ìyípadà. Ìforúkọsílẹ̀ náà ṣe ìwọ̀n ìnáwó tí a retí láti mú ìwé-orí pada fún €1 bn ti ìṣàn ìṣanwó.
 3. **Ìfunni iṣẹ́ agent.** Nígbà tí treasury agent tí ó dá lórí LLM bá fa ẹ̀wọ́n ìṣanwó, àwọn alábàákẹ́gbẹ́ mẹ́ta lè jẹ́wọ́ rẹ̀ — onísọ àpẹẹrẹ, alátagbà rail, òǹkọ̀wé ìlànà. Láìsí ìpinnu ìfunni tí ó ṣe kedere tí a kọ́ sínú orchestration layer, báńkì jogún àwọn gbèsè mẹ́tẹ̀ẹ̀ta. Ìforúkọsílẹ̀ náà ṣàlàyé igi ìfunni àti audit trail SR 11-7 tí ó yẹ kí a fi dáàbò bò ó.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Gba Ìwé Funfun Ìkọ́sí Báńkì 2026 (PDF)">Gba PDF ìjíròrò</a> <a class="pill ghost no-chev" href="/papers" title="Wo gbogbo àwọn ìwé funfun àti ìwádìí tí a ti tẹ̀ jáde">Gbogbo àwọn ìwé funfun</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Gba Ìwé Funfun Ìkọ́sí Báńkì 2026 (PDF)">Gba PDF ìjíròrò</a> <a class="pill ghost no-chev" href="/research" title="Wo gbogbo àwọn ìwé funfun àti ìwádìí tí a ti tẹ̀ jáde">Gbogbo àwọn ìwé funfun</a></p>
 
 ## Àkópọ̀ àyẹ̀wò ti inú
 

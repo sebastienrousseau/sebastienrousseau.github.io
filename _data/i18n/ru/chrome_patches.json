@@ -75,7 +75,7 @@
     ],
     [
       "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
-      "<li><a href=\"/ru/publikatsii/index.html\">Публикации</a></li>"
+      "<li><a href=\"/ru/issledovaniya/index.html\">Публикации</a></li>"
     ],
     [
       "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
@@ -127,7 +127,7 @@
     ],
     [
       "<a href=\"?/papers/index\\.html\"?>Papers</a>",
-      "<a href=\"/ru/publikatsii/index.html\">Публикации</a>"
+      "<a href=\"/ru/issledovaniya/index.html\">Публикации</a>"
     ],
     [
       "<a href=\"?/tags/index\\.html\"?>Tags</a>",

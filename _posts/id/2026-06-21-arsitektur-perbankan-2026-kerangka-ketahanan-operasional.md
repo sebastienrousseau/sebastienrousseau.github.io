@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "Banner makalah putih Arsitektur Perbankan 2026"
 twitter_site: "@wwdseb"
 twitter_title: "Makalah Putih Arsitektur Perbankan 2026"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -186,7 +186,7 @@ Register risiko program berisi 10 item dalam PDF dikalibrasi terhadap delta eksp
 2. **Kehilangan data senyap MT-ke-MX.** Bank yang memancarkan `MT103` dengan data alamat atau remitansi terpotong masuk dengan bersih ke kanal MX — tetapi bidang terstrukturnya tetap kosong. Konsekuensi hilirnya (penyaringan sanksi gagal, pemicu AML terlewat, putusnya rekonsiliasi) muncul 30–90 hari pasca transisi, jauh setelah forensik change-window selesai. Register mengkuantifikasi perkiraan biaya remediasi back-book per €1 miliar arus pembayaran.
 3. **Atribusi tindakan agen.** Ketika agen treasury berbasis LLM memicu rantai pembayaran, tiga prinsipal dapat mengklaim kepemilikan — pemilik model, penyedia rel, dan penulis kebijakan. Tanpa keputusan atribusi eksplisit yang tertanam di lapisan orkestrasi, bank mewarisi ketiga liabilitas tersebut. Register mendefinisikan pohon atribusi dan rantai bukti `SR 11-7` yang diperlukan untuk mempertahankannya.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Unduh Makalah Putih Arsitektur Perbankan 2026 (PDF)">Unduh briefing PDF</a> <a class="pill ghost no-chev" href="/papers" title="Lihat semua makalah putih dan riset yang dipublikasikan">Semua makalah putih</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Unduh Makalah Putih Arsitektur Perbankan 2026 (PDF)">Unduh briefing PDF</a> <a class="pill ghost no-chev" href="/research" title="Lihat semua makalah putih dan riset yang dipublikasikan">Semua makalah putih</a></p>
 
 ## Ringkasan tinjauan internal
 

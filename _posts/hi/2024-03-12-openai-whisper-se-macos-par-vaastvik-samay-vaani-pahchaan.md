@@ -64,7 +64,7 @@ La integración का OpenAI Whisper और Metal Performance Shaders में
 .class=\"card bg-light p-3 me-3 w-100\"
 Para saber अधिक sobre वह integración का OpenAI Whisper और Metal Performance Shaders में macOS के लिए वह reconocimiento का voz में tiempo real, se invita को वे lectores को consultar वह artículo का investigación completo. El artículo proporciona detalles técnicos profundos, resultados experimentales और perspectivas adicionales sobre वे अनुप्रयोग potenciales और वे direcciones futuras का यह प्रौद्योगिकी. Accediendo को artículo completo, वे lectores adquirirán एक comprensión exhaustiva का वह metodología, वह implementación और वे implicaciones का यह enfoque नवाचारी के reconocimiento का voz में tiempo real में macOS. [**Leer वह artículo completo ❯**][00]
 
-[00]: /papers/index.html "Publicaciones का investigación और libros blancos का Sebastien Rousseau"
+[00]: /research/index.html "Publicaciones का investigación और libros blancos का Sebastien Rousseau"
 [01]: https://developer.apple.com/documentation/metalperformanceshaders "Metal Performance Shaders - Apple Developer Documentation"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"

@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "2026 年銀行架構白皮書橫幅"
 twitter_site: "@wwdseb"
 twitter_title: "2026 年銀行架構白皮書"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -186,7 +186,7 @@ PDF 中 10 項計畫風險登錄表,是針對董事會相對於 2024 / 2025 週�
 2. **MT 到 MX 的隱性資料流失。**發送帶有截斷地址或匯款資料之 `MT103` 的銀行,訊息可乾淨地被吸收進 `MX` 通道 — 但結構化欄位仍是空的。下游後果(制裁名單篩查失敗、漏觸 AML 警示、對帳斷裂),會在切換後 30–90 天才浮現,遠在變更窗口的鑑識期之後。登錄表已就每 €1 bn 的付款流量,量化預期的存量補救成本。
 3. **智能體行為歸屬。**當以 LLM 支撐的財資智能體觸發付款鏈時,可能有三個主體可主張所有權 — 模型擁有者、通道提供者、策略撰寫者。倘若編排層中未烘焙入明確的歸屬決策,銀行便會同時承擔這三項責任。登錄表已定義出歸屬樹,以及為其辯護所需的 `SR 11-7` 證據鏈。
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="下載 2026 年銀行架構白皮書(PDF)">下載 PDF 簡報</a> <a class="pill ghost no-chev" href="/papers" title="瀏覽所有已發表的白皮書與研究">所有白皮書</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="下載 2026 年銀行架構白皮書(PDF)">下載 PDF 簡報</a> <a class="pill ghost no-chev" href="/research" title="瀏覽所有已發表的白皮書與研究">所有白皮書</a></p>
 
 ## 內部審查摘要
 

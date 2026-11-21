@@ -13,7 +13,7 @@ description: "مؤشر 2026 لجاهزية الخزانة المستقلة، ي�
 format-detection: "telephone=no"
 hreflang: "ar"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/ar/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+id: "https://sebastienrousseau.com/ar/2026-06-07-muashir-alkhazana-almustaqilla-2026"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/ar/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+permalink: "https://sebastienrousseau.com/ar/2026-06-07-muashir-alkhazana-almustaqilla-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "treasury, الذكاء الاصطناعي الوكيل، الذكاء ا�
 excerpt: "مؤشر جاهزية الخزانة المستقلة 2026 — قياس تدفقات الخزانة العميلة، وتغطية السيولة القابلة للبرمجة، وتكامل الودائع المرمَّزة، وتنسيق المدفوعات الفورية، والتحكم النقدي الآلي بوصفها نسيجاً تشغيلياً واحداً."
 theme-color: "0, 83, 191"
 title: "مؤشر الخزانة المستقلة 2026: الخزانة العميلة والسيولة القابلة للبرمجة والودائع المرمَّزة"
-url: "https://sebastienrousseau.com/ar/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026"
+url: "https://sebastienrousseau.com/ar/2026-06-07-muashir-alkhazana-almustaqilla-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/rss.xml"
 category: "Finance"
@@ -97,7 +97,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>مستوى التحكم هو سطح التدقيق الجديد.</strong> يجب أن تعمل التفويضات والحدود ومسارات التجاوز اليدوي وأدلة الإلغاء بوصفها أوليات منصةٍ، لا موافقاتٍ يدويةً لكل إجراء.</li>
   <li><strong>بطاقة قياس CFO صارت لكل قرار، لا لكل ربع.</strong> تكلفة النقد، وتخفيض احتياطي السيولة اليومية، وكفاءة FX، ودقة التنبؤ تُقاس بسرعة سير العمل.</li>
 </ul>
-<p class="post-lead-related"><strong>قراءات ذات صلة:</strong> <a href="https://sebastienrousseau.com/ar/2026-05-25-programmable-liquidity-ai-tokenised-deposits-real-time-treasury-2026/index.html">السيولة القابلة للبرمجة في 2026: الذكاء الاصطناعي، والودائع المرمَّزة، وتنسيق الخزانة الفوري</a>، <a href="https://sebastienrousseau.com/ar/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html">الودائع المرمَّزة في 2026: الخدمات المصرفية، ومنافسة العملات المستقرة، ووضع نقود المصارف التجارية القابلة للبرمجة</a>.</p>
+<p class="post-lead-related"><strong>قراءات ذات صلة:</strong> <a href="https://sebastienrousseau.com/ar/2026-05-25-alsuyula-alqabila-lilbarmaja-2026/index.html">السيولة القابلة للبرمجة في 2026: الذكاء الاصطناعي، والودائع المرمَّزة، وتنسيق الخزانة الفوري</a>، <a href="https://sebastienrousseau.com/ar/2026-05-21-alwadai-almurammaza-2026/index.html">الودائع المرمَّزة في 2026: الخدمات المصرفية، ومنافسة العملات المستقرة، ووضع نقود المصارف التجارية القابلة للبرمجة</a>.</p>
 </aside>
 <!-- lead-end -->
 

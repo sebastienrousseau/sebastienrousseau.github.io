@@ -16,7 +16,7 @@ description: "২০২৬ সালে ক্লাউড আর্কিটে
 format-detection: "telephone=no"
 hreflang: "bn"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/bn/2026-05-16-best-cloud-infrastructure-architecture-2026"
+id: "https://sebastienrousseau.com/bn/2026-05-16-2026-sale-sera-klaud-abakathamo-arkitekachar"
 image_alt: "Sebastien Rousseau-এর সাদা-কালো প্রতিকৃতি"
 image_height: "162"
 image_width: "162"
@@ -32,7 +32,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/bn/2026-05-16-best-cloud-infrastructure-architecture-2026"
+permalink: "https://sebastienrousseau.com/bn/2026-05-16-2026-sale-sera-klaud-abakathamo-arkitekachar"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -43,7 +43,7 @@ subtitle: "ক্লাউড আর্কিটেকচার ছয়টি 
 tags: "ক্লাউড আর্কিটেকচার, AI-নেটিভ অবকাঠামো, মাল্টি-ক্লাউড, সার্বভৌম ক্লাউড, CLOUD Act, সার্বভৌম AI, ওপেন-ওয়েট মডেল, Llama 4, সার্ভারলেস, WebAssembly, eBPF, Cilium, এজ কম্পিউটিং, LEO স্যাটেলাইট, DevSecOps, লিকুইড কুলিং, গ্রিড-সচেতন কম্পিউটিং, SMR, পারমাণবিক শক্তি, সিলিকন ফোটোনিক্স, এজেন্টিক AI, এজেন্টিক ইউনিট অর্থনীতি, ক্রিপ্টোগ্রাফিক এজেন্ট পরিচয়, অ্যালগরিদমিক সংক্রমণ, RAG পয়জনিং, ভেক্টর ডেটাবেস নিরাপত্তা, সিন্থেটিক ডেটা, ডেটা গ্র্যাভিটি, ক্রমাগত ট্রেজারি, CBDC, গ্রাফ নিউরাল নেটওয়ার্ক, HNDL, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, ক্রিপ্টো-চটপটতা, QKD, Basel IV, ক্লাউড কেন্দ্রীকরণ ঝুঁকি, MCP নিরাপত্তা, CloudCDN, Cloudflare, ISO 20022, DORA, AI, stablecoins, open source, প্ল্যাটফর্ম ইঞ্জিনিয়ারিং, ক্লাউড নেটিভ ব্যাংকিং, সীমান্ত-পার পেমেন্ট, টোকেনাইজড আমানত"
 theme-color: "0, 83, 191"
 title: "২০২৬ সালে সেরা ক্লাউড অবকাঠামো আর্কিটেকচার: আর্থিক পরিষেবাগুলির জন্য একটি AI-নেটিভ, মাল্টি-ক্লাউড, কোয়ান্টাম-সচেতন ব্লুপ্রিন্ট"
-url: "https://sebastienrousseau.com/bn/2026-05-16-best-cloud-infrastructure-architecture-2026"
+url: "https://sebastienrousseau.com/bn/2026-05-16-2026-sale-sera-klaud-abakathamo-arkitekachar"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
@@ -85,7 +85,7 @@ twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastie
 twitter_image_alt: "Sebastien Rousseau-এর লোগো"
 twitter_site: "@wwdseb"
 twitter_title: "২০২৬ সালে ব্যাংকগুলির জন্য সেরা ক্লাউড আর্কিটেকচার: একটি ব্লুপ্রিন্ট"
-twitter_url: "https://sebastienrousseau.com/bn/2026-05-16-best-cloud-infrastructure-architecture-2026"
+twitter_url: "https://sebastienrousseau.com/bn/2026-05-16-2026-sale-sera-klaud-abakathamo-arkitekachar"
 
 # Humans.txt - The Humans.txt front matter (YAML).
 author_website: "https://sebastienrousseau.com"

@@ -13,7 +13,7 @@ description: "AI リスク、クラウド集中、量子安全セキュリティ
 format-detection: "telephone=no"
 hreflang: "ja"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/ja/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+id: "https://sebastienrousseau.com/ja/2026-06-08-ginkou-resilience-shisuu-2026"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/ja/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+permalink: "https://sebastienrousseau.com/ja/2026-06-08-ginkou-resilience-shisuu-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -41,7 +41,7 @@ tags: "銀行レジリエンス, DORA, AI リスク, クラウド集中, 量子�
 excerpt: "2026 年の銀行レジリエンス指数 — AI リスク、クラウド集中、量子安全移行、決済の継続性、重要なサードパーティ依存性を、取締役会と監督当局がともに読める 1 つのオペレーショナル・レジリエンスのスコアボードへと統合します。"
 theme-color: "0, 83, 191"
 title: "2026 年銀行レジリエンス指数:AI、クラウド、量子、決済、サードパーティ集中リスク"
-url: "https://sebastienrousseau.com/ja/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026"
+url: "https://sebastienrousseau.com/ja/2026-06-08-ginkou-resilience-shisuu-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-06-08-banking-resilience-index-ai-cloud-quantum-payments-third-party-risk-2026/rss.xml"
 category: "Risk"
@@ -99,7 +99,7 @@ site_software: "Static Site Generator, Rust"
   <li><strong>量子安全移行はセキュリティ指標ではなくオペレーショナル・レジリエンス指標です。</strong>今日露呈する長期保存データは、明日のレジリエンス・テストに不合格となります。</li>
   <li><strong>サードパーティ集中はいまやシステミックです。</strong>単一ハイパースケーラー、単一 PSP、単一 LLM プロバイダーへの依存性は、レジリエンス・スコアボード上の単一障害点に対応します。</li>
 </ul>
-<p class="post-lead-related"><strong>関連記事:</strong> <a href="https://sebastienrousseau.com/ja/2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026/index.html">DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</a>、<a href="https://sebastienrousseau.com/ja/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">2026 年のクラウドネイティブ・バンキング:Kubernetes、DORA、主権、VM 対コンテナの境界の終焉</a>。</p>
+<p class="post-lead-related"><strong>関連記事:</strong> <a href="https://sebastienrousseau.com/ja/2026-05-28-dora-eu-ai-act-data-shuken/index.html">DORA、EU AI Act、データ主権:2026 年銀行向けコンプライアンス・スタック</a>、<a href="https://sebastienrousseau.com/ja/2026-05-20-kuraudo-neitibu-bankingu-2026/index.html">2026 年のクラウドネイティブ・バンキング:Kubernetes、DORA、主権、VM 対コンテナの境界の終焉</a>。</p>
 </aside>
 <!-- lead-end -->
 

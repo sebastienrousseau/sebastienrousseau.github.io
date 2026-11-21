@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "2026 뱅킹 아키텍처 백서 배너"
 twitter_site: "@wwdseb"
 twitter_title: "2026 뱅킹 아키텍처 백서"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -186,7 +186,7 @@ PDF의 10개 항목 프로그램 리스크 레지스터는 이사회가 2024 / 2
 2. **소리 없는 MT-to-MX 데이터 손실입니다.** 주소나 송금 데이터가 잘린 채 MT103을 송출하는 은행은 MX 채널에 깔끔하게 인입됩니다. 그러나 구조화 필드는 빈 채로 남습니다. 다운스트림 결과(제재 대상 스크리닝 실패, AML 트리거 누락, 정합성 단절)는 전환 후 30~90일이 지난 시점에 드러납니다. 변경 창 포렌식 기간이 이미 한참 지난 뒤입니다. 레지스터는 결제 흐름 €1bn당 예상되는 백북 시정 비용을 정량화합니다.
 3. **에이전트 행위 귀속입니다.** LLM 기반 트레저리 에이전트가 결제 사슬을 발동하면, 세 주체가 소유권을 주장할 수 있습니다 — 모델 소유자, 레일 공급자, 정책 작성자. 명시적인 귀속 결정이 오케스트레이션 계층에 반영되어 있지 않으면, 은행은 세 가지 책임을 모두 떠안습니다. 레지스터는 귀속 트리와 그것을 방어하기 위해 필요한 `SR 11-7` 증거 사슬을 정의합니다.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="2026 뱅킹 아키텍처 백서 (PDF) 다운로드">PDF 브리핑 다운로드</a> <a class="pill ghost no-chev" href="/papers" title="공개된 모든 백서와 리서치 보기">모든 백서</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="2026 뱅킹 아키텍처 백서 (PDF) 다운로드">PDF 브리핑 다운로드</a> <a class="pill ghost no-chev" href="/research" title="공개된 모든 백서와 리서치 보기">모든 백서</a></p>
 
 ## 내부 리뷰 요약
 

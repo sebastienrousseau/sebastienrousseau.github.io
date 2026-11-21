@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "Banner do white paper Arquitetura Bancária 2026"
 twitter_site: "@wwdseb"
 twitter_title: "White Paper Arquitetura Bancária 2026"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -186,7 +186,7 @@ O registro de 10 riscos do programa, contido no PDF, é calibrado para os deltas
 2. **Perda silenciosa de dados na transição MT→MX.** Bancos que emitem MT103 com endereço ou remessa truncados ingerem limpos nos canais MX — mas os campos estruturados ficam vazios. A consequência downstream (triagem de sanções malsucedida, gatilhos AML não disparados, quebras de reconciliação) aflora 30–90 dias após o corte, bem depois da forense da janela de mudança. O registro quantifica o custo esperado de remediação do back-book por €1 bi de fluxo de pagamento.
 3. **Atribuição da ação do agente.** Quando um agente de tesouraria baseado em LLM dispara uma cadeia de pagamento, três principais podem reivindicar ownership — o dono do modelo, o provedor do rail e o autor da política. Sem uma decisão explícita de atribuição embarcada na camada de orquestração, o banco herda os três passivos. O registro define a árvore de atribuição e a cadeia de evidência SR 11-7 necessária para defendê-la.
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Baixar o White Paper Arquitetura Bancária 2026 (PDF)">Baixar o briefing em PDF</a> <a class="pill ghost no-chev" href="/papers" title="Ver todos os white papers e pesquisas publicados">Todos os white papers</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Baixar o White Paper Arquitetura Bancária 2026 (PDF)">Baixar o briefing em PDF</a> <a class="pill ghost no-chev" href="/research" title="Ver todos os white papers e pesquisas publicados">Todos os white papers</a></p>
 
 ## Sumário de revisão interna
 

@@ -72,7 +72,7 @@ twitter_image: "https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp"
 twitter_image_alt: "2026 Banking Architecture whitepaper banner"
 twitter_site: "@wwdseb"
 twitter_title: "২০২৬ ব্যাংকিং স্থাপত্য শ্বেতপত্র"
-twitter_url: "https://sebastienrousseau.com/2026-banking-architecture-whitepaper"
+twitter_url: "https://sebastienrousseau.com/2026-06-21-banking-architecture-whitepaper"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -186,7 +186,7 @@ PDF-এর ১০-আইটেম প্রোগ্রাম ঝুঁকি �
 2. **নীরব MT-থেকে-MX ডেটা ক্ষতি।** যে ব্যাংকগুলি কেটে দেওয়া ঠিকানা বা রেমিট্যান্স ডেটা সহ MT103 প্রেরণ করে সেগুলি MX চ্যানেলে পরিষ্কারভাবে প্রবেশ করে — কিন্তু সংগঠিত ক্ষেত্রগুলি খালি থাকে। নিম্নধারার পরিণতি (ব্যর্থ নিষেধাজ্ঞা স্ক্রিনিং, মিস হওয়া AML ট্রিগার, রিকনসিলিয়েশন বিচ্ছেদ) কাট-ওভারের ৩০–৯০ দিন পরে প্রকাশ পায়, পরিবর্তন-উইন্ডো ফরেনসিকস ভালভাবে অতিক্রম করে। নিবন্ধন প্রতি €১ bn পেমেন্ট প্রবাহের প্রত্যাশিত ব্যাক-বুক সংস্কার ব্যয় পরিমাপ করে।
 3. **এজেন্ট ক্রিয়া বরাদ্দকরণ।** যখন একটি LLM-সমর্থিত ট্রেজারি এজেন্ট একটি পেমেন্ট শৃঙ্খল ট্রিগার করে, তখন তিনটি মুখ্য সত্ত্বা মালিকানা দাবি করতে পারে — মডেল মালিক, রেল প্রদানকারী, নীতি লেখক। অর্কেস্ট্রেশন স্তরে একটি সুস্পষ্ট বরাদ্দকরণ সিদ্ধান্ত অন্তর্ভুক্ত না করে, ব্যাংক তিনটি দায় উত্তরাধিকার সূত্রে পায়। নিবন্ধন বরাদ্দকরণ গাছ এবং এটিকে প্রতিরক্ষা করতে প্রয়োজনীয় SR 11-7 প্রমাণ শৃঙ্খল সংজ্ঞায়িত করে।
 
-<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Download the 2026 Banking Architecture Whitepaper (PDF)">PDF ব্রিফিং ডাউনলোড করুন</a> <a class="pill ghost no-chev" href="/papers" title="See all published white papers and research">সমস্ত শ্বেতপত্র</a></p>
+<p class="cta-actions"><a class="pill primary no-chev" href="https://cloudcdn.pro/stocks/documents/2026-banking-architecture-whitepaper.pdf" rel="noopener" title="Download the 2026 Banking Architecture Whitepaper (PDF)">PDF ব্রিফিং ডাউনলোড করুন</a> <a class="pill ghost no-chev" href="/research" title="See all published white papers and research">সমস্ত শ্বেতপত্র</a></p>
 
 ## অভ্যন্তরীণ পর্যালোচনা সারাংশ
 

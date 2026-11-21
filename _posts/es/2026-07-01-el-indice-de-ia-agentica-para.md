@@ -13,7 +13,7 @@ description: "Índice de seis dimensiones que mide la preparación en IA agénti
 format-detection: "telephone=no"
 hreflang: "es"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/es/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+id: "https://sebastienrousseau.com/es/2026-07-01-el-indice-de-ia-agentica-para"
 image_alt: "Retrato en blanco y negro de Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -29,7 +29,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/es/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+permalink: "https://sebastienrousseau.com/es/2026-07-01-el-indice-de-ia-agentica-para"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -40,7 +40,7 @@ subtitle: "El 52 % de los bancos usa IA agéntica; solo el 14 % la considera tra
 tags: "agentic AI, AI governance, banca, niveles de autonomía, riesgo de modelo, SR 11-7, EU AI Act, FSB, IOSCO, MAS, IMDA, plano de control, registro de auditoría, DORA, McKinsey, Stanford AI Index"
 theme-color: "0, 83, 191"
 title: "El Índice de IA Agéntica para la banca en 2026: medir la autonomía"
-url: "https://sebastienrousseau.com/es/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026"
+url: "https://sebastienrousseau.com/es/2026-07-01-el-indice-de-ia-agentica-para"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026/rss.xml"
 category: "Technology"
@@ -449,7 +449,7 @@ No. El FSB afirma explícitamente que las 12 Buenas Prácticas no son estándare
 32. [EU AI Act Compliance for Financial Services: Complete 2026 Guide](https://matproof.com/blog/eu-ai-act-compliance-financial-services)
 33. [MAS and AI in Singapore Financial Services - AIRiskAware](https://www.airiskaware.com/insights/mas-ai-governance-financial-services-singapore)
 34. [MAS Releases AI Governance Framework Version 2 for Singapore Financial Services — AIMenta](https://aimenta.ai/news/singapore-mas-ai-governance-framework-v2-2026)
-35. [De Autonome Treasury-Index in 2026: agentische treasury en programmeerbare liquiditeit — Sebastien Rousseau](https://sebastienrousseau.com/nl/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026/)
+35. [De Autonome Treasury-Index in 2026: agentische treasury en programmeerbare liquiditeit — Sebastien Rousseau](https://sebastienrousseau.com/nl/2026-06-07-de-autonome-treasury-index-in-2026/)
 
 
 <!-- enrich-start -->

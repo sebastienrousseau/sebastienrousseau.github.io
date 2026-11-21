@@ -13,7 +13,7 @@ description: "Pagbasa mula sa industriya ng teknolohiya kay Papa Leo XIV at sa M
 format-detection: "telephone=no"
 hreflang: "fil"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/fil/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+id: "https://sebastienrousseau.com/fil/2026-05-26-magnifica-humanitas-enciklika-ni-leo-xiv"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
@@ -28,7 +28,7 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/fil/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+permalink: "https://sebastienrousseau.com/fil/2026-05-26-magnifica-humanitas-enciklika-ni-leo-xiv"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -40,7 +40,7 @@ tags: "Magnifica Humanitas, Pope Leo XIV, AI ethics, quantum computing, kasaysay
 excerpt: "Noong 25 Mayo 2026, inilabas ni Papa Leo XIV ang Magnifica Humanitas — ang unang papal na enciklika tungkol sa artificial intelligence. Basahin mula sa loob ng industriya bilang balangkas, hindi doktrina; dumadapo ito sa pag-asa."
 theme-color: "0, 83, 191"
 title: "Magnifica Humanitas: Pagbasa ng Industriya sa Enciklika ni Leo XIV"
-url: "https://sebastienrousseau.com/fil/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope"
+url: "https://sebastienrousseau.com/fil/2026-05-26-magnifica-humanitas-enciklika-ni-leo-xiv"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-26-magnifica-humanitas-ai-quantum-message-of-hope/rss.xml"
 category: "Technology"
@@ -161,7 +161,7 @@ Ito ang patern na itinuturo ng *Magnifica Humanitas*, at ito ang dahilan kung ba
 
 Dalawa sa mga tiyak na alalahanin ng enciklika ang direktang dumadapo sa engineering ng mga sistemang pinansyal, at parehong nararapat ng tugon ng isang inhinyero sa halip na ng isang mananampalataya.
 
-Ang una ay ang **konsentrasyon ng kapangyarihan sa pribado, transnational na mga kamay**. Ang obserbasyon ng enciklika na ang mga pangunahing nagpapakilos ng teknolohiyang ito ngayon ay mga pribadong aktor na ang kakayahan ay lumalampas sa marami sa mga estado ay hindi teolohikong claim; ito ay tumpak na paglalarawan ng tanawin ng AI noong 2026, at ito ang tiyak na alalahanin na dumaraan sa regulatory na arkitektura na pinagsisikapang abutin ng industriya ngayon — ang mga obligasyong high-risk ng EU AI Act na ipinapatupad mula 2 Agosto 2026, ang mga probisyon ng DORA sa third-party na panganib ng konsentrasyon, at ang mga kilusan ng soberanong cloud at sovereign-control-plane na tinalakay sa [arkitektura ng cloud](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "The Best Cloud Infrastructure Architecture in 2026") at [agentic engineering](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "Agentic Engineering for Banks") na mga piyesa sa site na ito. Ang enciklika at ang EU AI Act ay, kapansin-pansin, nag-aalala sa parehong bagay: na ang kakayahang walang panagutan ay nagkokonsentra ng kapangyarihan sa mga paraang tumakas mula sa demokratikong gobernansya. Sinasabi ito ng isa sa wika ng social doctrine at ang isa pa sa wika ng mga pagsusuri ng pagsunod. Magkapareho ang diagnosis.
+Ang una ay ang **konsentrasyon ng kapangyarihan sa pribado, transnational na mga kamay**. Ang obserbasyon ng enciklika na ang mga pangunahing nagpapakilos ng teknolohiyang ito ngayon ay mga pribadong aktor na ang kakayahan ay lumalampas sa marami sa mga estado ay hindi teolohikong claim; ito ay tumpak na paglalarawan ng tanawin ng AI noong 2026, at ito ang tiyak na alalahanin na dumaraan sa regulatory na arkitektura na pinagsisikapang abutin ng industriya ngayon — ang mga obligasyong high-risk ng EU AI Act na ipinapatupad mula 2 Agosto 2026, ang mga probisyon ng DORA sa third-party na panganib ng konsentrasyon, at ang mga kilusan ng soberanong cloud at sovereign-control-plane na tinalakay sa [arkitektura ng cloud](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "The Best Cloud Infrastructure Architecture in 2026") at [agentic engineering](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "Agentic Engineering for Banks") na mga piyesa sa site na ito. Ang enciklika at ang EU AI Act ay, kapansin-pansin, nag-aalala sa parehong bagay: na ang kakayahang walang panagutan ay nagkokonsentra ng kapangyarihan sa mga paraang tumakas mula sa demokratikong gobernansya. Sinasabi ito ng isa sa wika ng social doctrine at ang isa pa sa wika ng mga pagsusuri ng pagsunod. Magkapareho ang diagnosis.
 
 Ang ikalawa ay ang **quantum computing**, na hindi pinangalanan ng enciklika ngunit ang etikal na anyo nito ay tumpak na inaasahan. Ang premiso ng post-quantum na migrasyong tinalakay sa [Securing the Ledger](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Securing the Ledger") ay isang kakayahang ngayon ay binubuo — isang cryptographically relevant na quantum computer — na, kapag dumating, ay retroactive na maglalantad sa lahat ng bagay na nakaenkripto sa ilalim ng mga pagpapalagay ngayon. Ang "harvest now, decrypt later" ay, sa sekular na rehistro, eksaktong uri ng power-without-wisdom na binababalaan ng enciklika: isang teknolohiya na ang mga konsekwensya ay dumadating sa isang timeline na lumalampas sa paghahanda, sa mga kamay ng mga may yaman upang gamitin ito muna. Ang pagpupumilit ng enciklika na magtanong ng "saan tayo papunta?" bago diktahan ng sunud-sunod na mga emergency ang landas ay, para sa isang security engineer, mabuting praktika na binigyan ng anyo ng moral na pilosopiya.
 
@@ -231,8 +231,8 @@ Optimistiko, ngunit hindi naïve. Ang argumento ay ang hinaharap ng AI at quantu
 
 - Sebastien Rousseau, (2026). [Lucy's Flash Drive, Revisited: Knowledge Transfer, AI, and Quantum](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html "Lucy's Flash Drive, Revisited").
 - Sebastien Rousseau, (2026). [Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html "Securing the Ledger").
-- Sebastien Rousseau, (2026). [Agentic Engineering for Banks: A 2026 Blueprint](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html "Agentic Engineering for Banks").
-- Sebastien Rousseau, (2026). [The Best Cloud Infrastructure Architecture in 2026](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html "The Best Cloud Infrastructure Architecture in 2026").
+- Sebastien Rousseau, (2026). [Agentic Engineering for Banks: A 2026 Blueprint](https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html "Agentic Engineering for Banks").
+- Sebastien Rousseau, (2026). [The Best Cloud Infrastructure Architecture in 2026](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html "The Best Cloud Infrastructure Architecture in 2026").
 - Pope Leo XIV, (2026). [Sulat-Enciklika *Magnifica Humanitas* sa Pag-iingat ng Tao sa Panahon ng Artificial Intelligence ⧉](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html "Magnifica Humanitas — full text, Vatican.va"). The Holy See.
 - Pope Leo XIII, (1891). [Sulat-Enciklika *Rerum Novarum* sa Kapital at Paggawa ⧉](https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_15051891_rerum-novarum.html "Rerum Novarum — Vatican.va"). The Holy See.
 - Vatican News, (2026). [Ang unang enciklika ni Papa Leo XIV na *Magnifica humanitas* ay ilalabas sa 25 Mayo ⧉](https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html "Vatican News — Magnifica Humanitas"). Vatican News.
