@@ -135,6 +135,26 @@ main.content > .wrap:has(> .contact-layout) { max-width: var(--max); }
   }
 }
 
+/* Forms outside the contact layout (the resources lead-magnet pages).
+   Same values as the contact form's rules in _layouts/contact.html, which
+   only that layout carries. Inline style="" cannot stand in for them: the
+   page CSP has no 'unsafe-inline' for styles, so the browser drops it. */
+.ap-form { display: flex; flex-direction: column; gap: 20px; }
+.ap-form-narrow { max-width: 480px; margin-block: 32px; }
+.ap-form-row { display: flex; flex-direction: column; gap: 6px; }
+.ap-form-row label { font-size: var(--fs-meta); font-weight: 600; color: var(--ink); letter-spacing: -.005em; }
+.ap-form input[type=text], .ap-form input[type=email], .ap-form select, .ap-form textarea {
+  font-family: inherit; font-size: var(--fs-ui); line-height: 1.4; color: var(--ink);
+  background: var(--paper); border: 1px solid var(--border); border-radius: 12px;
+  padding: 14px 16px; width: 100%; min-height: 48px; transition: border-color .15s, box-shadow .15s;
+}
+.ap-form input:focus, .ap-form select:focus, .ap-form textarea:focus {
+  outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px rgba(var(--accent-rgb), .15);
+}
+.ap-form-actions { align-items: flex-start; margin-top: 8px; }
+.ap-form button.pill { font-size: var(--fs-ui); padding: 14px 28px; border-color: transparent; cursor: pointer; }
+.ap-form-note { font-size: var(--fs-meta); color: var(--ink-faint); margin: 0; }
+
 /* Listing grids: 1 / 2 / 3 columns, no stranded last card. */
 section.tag-landing-list { grid-template-columns: 1fr; }
 @media (min-width: 640px) {

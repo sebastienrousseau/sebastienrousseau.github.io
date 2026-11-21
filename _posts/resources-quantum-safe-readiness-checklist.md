@@ -121,13 +121,17 @@ Two ways to grab it:
 1. **[Download the PDF directly](/resources/quantum-safe-readiness-checklist.pdf)**, no email required.
 2. Or drop your work email below and I'll send the link. No newsletter signup, no list rental, no follow-up sales sequence. One email, one link, you're done.
 
-<form class="ap-form" action="https://formspree.io/f/mjvqpwyo" method="POST" style="max-width:480px;margin:32px 0">
+<form class="ap-form ap-form-narrow" action="https://formspree.io/f/mjvqpwyo" method="POST">
   <input type="hidden" name="_subject" value="Lead magnet request: quantum-safe readiness checklist" />
   <input type="hidden" name="_resource" value="quantum-safe-readiness-checklist" />
-  <label for="lm-email" style="display:block;font-size:14px;font-weight:600;margin-bottom:8px">Work email</label>
-  <input id="lm-email" name="email" type="email" required autocomplete="email" placeholder="you@bank.com" style="width:100%;padding:14px 18px;border:1px solid var(--border);border-radius:12px;background:var(--card);color:var(--ink);font-size:16px" />
-  <button type="submit" class="pill" style="margin-top:16px">Send me the checklist</button>
-  <p style="font-size:12px;color:var(--ink-faint);margin-top:12px">Submitting this form sends your email to Formspree (the form-processor) and to me. I'll reply with the PDF link. See the <a href="/privacy/">privacy policy</a> for what happens after.</p>
+  <div class="ap-form-row">
+    <label for="lm-email">Work email</label>
+    <input id="lm-email" name="email" type="email" required autocomplete="email" placeholder="you@bank.com" />
+  </div>
+  <div class="ap-form-row ap-form-actions">
+    <button type="submit" class="pill">Send me the checklist</button>
+  </div>
+  <p class="ap-form-note">Submitting this form sends your email to Formspree (the form-processor) and to me. I'll reply with the PDF link. See the <a href="/privacy/">privacy policy</a> for what happens after.</p>
 </form>
 
 ## Why I wrote it
