@@ -147,9 +147,9 @@ Masasabi kong ito ang tamang balangkas para tasahin ang resulta. Inaayos ng lowe
 | :--- | :--- | :--- | :--- |
 | **Sphere-Packing Exponent** | Kabatianskii–Levenshtein bound: 0.59905576... | Hindi bababa sa lakas ng spherical-code bound (Cohn–Zhao) | Napatunayan ang eksaktong asymptotic rate na iminungkahi nina Afkhami-Jeddi et al. (2020) |
 | **Pagiging Pinal ng Bound** | Pagpipino lamang sa lower-order factor | Bukas na tanong sa asymptotic na puwang sa matataas na dimensiyon | Eksaktong katugmang lower bound: walang auxiliary function na lalampas sa rate na ito |
-| **Fourier Sign Uncertainty** | Magkahiwalay na sign bound ($A^+(d) < A^-(d)$) | Naka-ugnay sa anti-self-Fourier test function | Asymptotic nang nalutas; pinamamahalaan ng Mellin reflection ang sign uncertainty |
+| **Fourier Sign Uncertainty** | Magkahiwalay na sign bound (A⁺(d) < A⁻(d)) | Naka-ugnay sa anti-self-Fourier test function | Asymptotic nang nalutas; pinamamahalaan ng Mellin reflection ang sign uncertainty |
 | **Error-Correcting Code** | Klasikong spherical at binary code bound | Asymptotic na nakakabit sa packing bound | Pagbuting may exponential factor para sa lahat ng parameter ng takdang distansiya |
-| **Hangganan ng Pamamaraan** | Numerikong optimisasyon ng polynomial factor | Bukas na optimisasyon ng auxiliary test function $f \in \mathcal{A}_d$ | Napatunayang hangganang matematikal: kailangan ng mga paraang hindi Cohn-Elkies para sa karagdagang pakinabang |
+| **Hangganan ng Pamamaraan** | Numerikong optimisasyon ng polynomial factor | Bukas na optimisasyon ng auxiliary test function f ∈ 𝒜\_d | Napatunayang hangganang matematikal: kailangan ng mga paraang hindi Cohn-Elkies para sa karagdagang pakinabang |
 
 ## Bakit binabago ng katugmang lower bound ang tanong
 
@@ -237,11 +237,11 @@ Naiimpluwensiyahan ng eksaktong pagtukoy sa high-dimensional decay rate ng Cohn-
 
 ### Purong matematika at discrete geometry
 
-Para sa mga matematikong nagtatrabaho sa high-dimensional geometry at harmonic analysis, binabago ng pagtukoy sa eksaktong decay rate ng Cohn-Elkies ang tanawin ng pananaliksik. Dahil pinatutunayan ng katugmang lower bound na walang auxiliary function sa $\mathcal{A}_d$ ang makalalampas sa bagong exponent, maaari nang ihinto ng mga mananaliksik ang paghahanap ng mas mahuhusay na radial test function sa loob ng klasikong balangkas ng linear programming. Ang pag-unlad tungo sa mas siksik na sphere packing o mas mahigpit na universal bound ay kailangan na ngayong tumuklas ng mga teknika ng non-linear programming, mas mataas na antas ng semidefinite hierarchy, o lubos na naiibang geometric na konstruksiyon.
+Para sa mga matematikong nagtatrabaho sa high-dimensional geometry at harmonic analysis, binabago ng pagtukoy sa eksaktong decay rate ng Cohn-Elkies ang tanawin ng pananaliksik. Dahil pinatutunayan ng katugmang lower bound na walang auxiliary function sa 𝒜\_d ang makalalampas sa bagong exponent, maaari nang ihinto ng mga mananaliksik ang paghahanap ng mas mahuhusay na radial test function sa loob ng klasikong balangkas ng linear programming. Ang pag-unlad tungo sa mas siksik na sphere packing o mas mahigpit na universal bound ay kailangan na ngayong tumuklas ng mga teknika ng non-linear programming, mas mataas na antas ng semidefinite hierarchy, o lubos na naiibang geometric na konstruksiyon.
 
 ### Cryptography at seguridad na nakabatay sa lattice
 
-Ang lattice-based cryptography, na bumubuo sa ubod ng mga post-quantum standard gaya ng ML-KEM at ML-DSA, ay lubos na umaasa sa ipinapalagay na hirap ng paghahanap ng pinakamaikli o pinakamalapit na vector sa mga high-dimensional na Euclidean lattice. Ang direktang reduction mula sa 3SAT na nagtatatag ng $n^{1/400}$-factor hardness para sa Euclidean Closest Vector Problem (CVP), kasama ang mas mahigpit na exponential na hangganan sa sphere packing at spherical code, ay nagpapatibay sa mga teoretikal na pundasyon ng mga lattice reduction mula worst-case tungo average-case nang hindi pinahihina ang mga kongkretong security parameter.
+Ang lattice-based cryptography, na bumubuo sa ubod ng mga post-quantum standard gaya ng ML-KEM at ML-DSA, ay lubos na umaasa sa ipinapalagay na hirap ng paghahanap ng pinakamaikli o pinakamalapit na vector sa mga high-dimensional na Euclidean lattice. Ang direktang reduction mula sa 3SAT na nagtatatag ng n\^(1/400)-factor hardness para sa Euclidean Closest Vector Problem (CVP), kasama ang mas mahigpit na exponential na hangganan sa sphere packing at spherical code, ay nagpapatibay sa mga teoretikal na pundasyon ng mga lattice reduction mula worst-case tungo average-case nang hindi pinahihina ang mga kongkretong security parameter.
 
 ### Automated theorem proving at foundation model
 
@@ -267,7 +267,7 @@ Itinatag nina Cohn at Gonçalves na ang komplementaryong Fourier sign-uncertaint
 
 **Nakokompromiso ba ng resultang ito ang lattice-based cryptography?**
 
-Hindi. Bagaman pinatatalas ng teorema ang mga upper bound sa kung gaano kasiksik maaaring magkasya ang mga bola sa matataas na dimensiyon at itinatatag ang $n^{1/400}$-factor hardness para sa Closest Vector Problem, hindi ito nagbibigay ng mga polynomial-time na lattice reduction algorithm. Nananatiling ligtas ang mga praktikal na lattice cryptosystem laban sa mga kilalang quantum at klasikong pag-atake.
+Hindi. Bagaman pinatatalas ng teorema ang mga upper bound sa kung gaano kasiksik maaaring magkasya ang mga bola sa matataas na dimensiyon at itinatatag ang n\^(1/400)-factor hardness para sa Closest Vector Problem, hindi ito nagbibigay ng mga polynomial-time na lattice reduction algorithm. Nananatiling ligtas ang mga praktikal na lattice cryptosystem laban sa mga kilalang quantum at klasikong pag-atake.
 
 ## Mga Sanggunian
 

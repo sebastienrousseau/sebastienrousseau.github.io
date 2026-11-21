@@ -147,9 +147,9 @@ Ik zou zeggen dat dit de juiste invalshoek is om het resultaat te beoordelen. Ee
 | :--- | :--- | :--- | :--- |
 | **Stapelingsexponent** | Grens van Kabatianskii–Levenshtein: 0,59905576... | Minstens zo sterk als grenzen voor sferische codes (Cohn–Zhao) | Bewezen exacte asymptotische snelheid, vermoed door Afkhami-Jeddi et al. (2020) |
 | **Definitief karakter van de grens** | Alleen verfijningen van factoren van lagere orde | Open vraag over het asymptotische gat in hoge dimensies | Exact bijpassende ondergrens: geen hulpfunctie verslaat deze snelheid |
-| **Fourier-tekenonzekerheid** | Afzonderlijke tekengrenzen ($A^+(d) < A^-(d)$) | Verbonden met anti-zelfduale Fourier-testfuncties | Asymptotisch opgelost; tekenonzekerheid bepaald door Mellin-spiegeling |
+| **Fourier-tekenonzekerheid** | Afzonderlijke tekengrenzen (A⁺(d) < A⁻(d)) | Verbonden met anti-zelfduale Fourier-testfuncties | Asymptotisch opgelost; tekenonzekerheid bepaald door Mellin-spiegeling |
 | **Foutcorrigerende codes** | Klassieke grenzen voor sferische en binaire codes | Asymptotisch gekoppeld aan stapelingsgrenzen | Verbeteringen met exponentiële factoren voor alle parameters met vaste afstand |
-| **Methodologisch plafond** | Numerieke optimalisatie van polynomiale factoren | Open optimalisatie van hulptestfuncties $f \in \mathcal{A}_d$ | Wiskundig plafond bewezen: verdere winst vereist methoden buiten Cohn-Elkies |
+| **Methodologisch plafond** | Numerieke optimalisatie van polynomiale factoren | Open optimalisatie van hulptestfuncties f ∈ 𝒜\_d | Wiskundig plafond bewezen: verdere winst vereist methoden buiten Cohn-Elkies |
 
 ## Waarom de bijpassende ondergrens de vraag verandert
 
@@ -237,11 +237,11 @@ De exacte bepaling van de vervalsnelheid van Cohn-Elkies in hoge dimensies en de
 
 ### Zuivere wiskunde en discrete meetkunde
 
-Voor wiskundigen die werken aan meetkunde in hoge dimensies en harmonische analyse verschuift de bepaling van de exacte vervalsnelheid van Cohn-Elkies het onderzoekslandschap. Omdat de bijpassende ondergrens bewijst dat geen enkele hulpfunctie in $\mathcal{A}_d$ de nieuwe exponent kan verslaan, kunnen onderzoekers stoppen met zoeken naar betere radiale testfuncties binnen het klassieke kader van lineaire programmering. Vooruitgang naar dichtere bolstapelingen of scherpere universele grenzen moet nu niet-lineaire programmeringstechnieken, semidefiniete hiërarchieën van hogere orde of radicaal andere meetkundige constructies verkennen.
+Voor wiskundigen die werken aan meetkunde in hoge dimensies en harmonische analyse verschuift de bepaling van de exacte vervalsnelheid van Cohn-Elkies het onderzoekslandschap. Omdat de bijpassende ondergrens bewijst dat geen enkele hulpfunctie in 𝒜\_d de nieuwe exponent kan verslaan, kunnen onderzoekers stoppen met zoeken naar betere radiale testfuncties binnen het klassieke kader van lineaire programmering. Vooruitgang naar dichtere bolstapelingen of scherpere universele grenzen moet nu niet-lineaire programmeringstechnieken, semidefiniete hiërarchieën van hogere orde of radicaal andere meetkundige constructies verkennen.
 
 ### Cryptografie en roostergebaseerde beveiliging
 
-Roostergebaseerde cryptografie - de kern van post-quantumstandaarden zoals ML-KEM en ML-DSA - leunt sterk op de vermoede moeilijkheid om kortste of dichtstbijzijnde vectoren te vinden in euclidische roosters van hoge dimensie. De directe reductie vanuit 3SAT, die hardheid met factor $n^{1/400}$ vastlegt voor het euclidische dichtstbijzijnde-vectorprobleem (CVP), versterkt samen met scherpere exponentiële plafonds voor bolstapelingen en sferische codes de theoretische fundamenten van roosterreducties van het slechtste naar het gemiddelde geval, zonder concrete beveiligingsparameters te verzwakken.
+Roostergebaseerde cryptografie - de kern van post-quantumstandaarden zoals ML-KEM en ML-DSA - leunt sterk op de vermoede moeilijkheid om kortste of dichtstbijzijnde vectoren te vinden in euclidische roosters van hoge dimensie. De directe reductie vanuit 3SAT, die hardheid met factor n\^(1/400) vastlegt voor het euclidische dichtstbijzijnde-vectorprobleem (CVP), versterkt samen met scherpere exponentiële plafonds voor bolstapelingen en sferische codes de theoretische fundamenten van roosterreducties van het slechtste naar het gemiddelde geval, zonder concrete beveiligingsparameters te verzwakken.
 
 ### Automatisch bewijzen en foundation models
 
@@ -267,7 +267,7 @@ Cohn en Gonçalves toonden aan dat het complementaire probleem van de Fourier-te
 
 **Brengt dit resultaat roostergebaseerde cryptografie in gevaar?**
 
-Nee. De stelling verscherpt wel de bovengrenzen voor hoe dicht bollen in hoge dimensies kunnen worden gestapeld en legt hardheid met factor $n^{1/400}$ vast voor het dichtstbijzijnde-vectorprobleem, maar ze levert geen algoritmen voor roosterreductie in polynomiale tijd. Praktische roostergebaseerde cryptosystemen blijven veilig tegen bekende quantum- en klassieke aanvallen.
+Nee. De stelling verscherpt wel de bovengrenzen voor hoe dicht bollen in hoge dimensies kunnen worden gestapeld en legt hardheid met factor n\^(1/400) vast voor het dichtstbijzijnde-vectorprobleem, maar ze levert geen algoritmen voor roosterreductie in polynomiale tijd. Praktische roostergebaseerde cryptosystemen blijven veilig tegen bekende quantum- en klassieke aanvallen.
 
 ## Bronnen
 

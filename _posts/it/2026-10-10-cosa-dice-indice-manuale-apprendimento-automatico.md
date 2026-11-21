@@ -158,7 +158,7 @@ Gli autori spiegano anche perché il campo si colloca dove si colloca. Poiché i
 
 | Dimensione | Complessità temporale | Complessità spaziale | Complessità campionaria |
 | :--- | :--- | :--- | :--- |
-| **Definizione operativa** | Tempo di esecuzione asintotico necessario per produrre l'ipotesi $h$ | Occupazione di memoria necessaria durante addestramento e valutazione | Numero di esempi di addestramento $m$ necessari per apprendere una famiglia di concetti |
+| **Definizione operativa** | Tempo di esecuzione asintotico necessario per produrre l'ipotesi *h* | Occupazione di memoria necessaria durante addestramento e valutazione | Numero di esempi di addestramento *m* necessari per apprendere una famiglia di concetti |
 | **Teoria di riferimento** | Complessità computazionale (P contro NP, difficoltà dell'addestramento) | Vincoli di memoria dell'architettura e località della cache | Apprendimento PAC, complessità di Rademacher e dimensione VC |
 | **Implicazione di costo** | Calcolo sui server e budget di inferenza GPU/CPU | Capacità di RAM e di SRAM su chip | Costo di raccolta, annotazione ed etichettatura dei dati |
 | **Ruolo teorico** | Misura l'efficienza dell'algoritmo in tempo di esecuzione | Misura l'efficienza nell'uso della memoria | Determina l'errore di generalizzazione e i limiti sui dati non visti |

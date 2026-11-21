@@ -121,7 +121,7 @@ Strukturální tvrzení tedy zní takto: generativní soudci jsou drazí na krit
 
 | Rozměr architektury | Generativní soudci LLM (např. GPT-4 jako soudce) | Jednotokenové klasifikátory (např. Llama Guard) | Víceotázkový detektor RLCD (Jev) |
 | :--- | :--- | :--- | :--- |
-| **Mechanismus hodnocení** | Plný autoregresní průchod dekódování na kritérium | Pravděpodobnost softmax nad jediným výstupním tokenem | Vícehlavý tenzor kalibrovaných pravděpodobností $P(\text{yes})$ |
+| **Mechanismus hodnocení** | Plný autoregresní průchod dekódování na kritérium | Pravděpodobnost softmax nad jediným výstupním tokenem | Vícehlavý tenzor kalibrovaných pravděpodobností P(yes) |
 | **Otázky na volání** | 1 hodnotící prompt na volání modelu | 1 klasifikační štítek na volání modelu | Více binárních, kategoriálních a ordinálních otázek v 1 volání |
 | **Náklady na inferenci** | Vysoké (10–50 USD na 1 000 interakcí) | Střední (0,50–2,00 USD na 1 000 interakcí) | 63× nižší (0,30 USD za 19 úplných benchmarků) |
 | **Výkon AUROC** | Závisí na benchmarku; náchylné k driftu soudce | Vysoký v konkrétních natrénovaných bezpečnostních kategoriích | Medián AUROC 0,886 zero-shot ve 44 sadách |

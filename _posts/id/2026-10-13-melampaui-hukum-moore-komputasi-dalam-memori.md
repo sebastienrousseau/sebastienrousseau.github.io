@@ -129,13 +129,13 @@ Dalam komputasi digital klasik, menghitung perkalian titik matriks memerlukan pe
 
 Arsitektur komputasi dalam memori mengganti transfer data digital ini dengan fisika rangkaian analog:
 
-**Pemrograman bobot.** Bobot jaringan saraf diprogram langsung ke sel memori nonvolatil (seperti flash yang dimodifikasi atau RAM resistif) sebagai konduktansi analog ($G$). Setelah diprogram, bobot tetap diam di dalam larik memori; bobot tidak pernah diambil atau dipindahkan selama inferensi.
+**Pemrograman bobot.** Bobot jaringan saraf diprogram langsung ke sel memori nonvolatil (seperti flash yang dimodifikasi atau RAM resistif) sebagai konduktansi analog (*G*). Setelah diprogram, bobot tetap diam di dalam larik memori; bobot tidak pernah diambil atau dipindahkan selama inferensi.
 
-**Modulasi tegangan masukan.** Aktivasi masukan (seperti token visual dari kamera) diubah menjadi tingkat tegangan analog ($V$) dan dialirkan sepanjang jalur kata (word line) larik.
+**Modulasi tegangan masukan.** Aktivasi masukan (seperti token visual dari kamera) diubah menjadi tingkat tegangan analog (*V*) dan dialirkan sepanjang jalur kata (word line) larik.
 
-**Perkalian dengan Hukum Ohm.** Saat tegangan masukan melewati setiap sel memori, Hukum Ohm ($I = V \times G$) melakukan perkalian analog seketika dan menghasilkan arus listrik yang sebanding dengan hasil kali masukan dan bobot yang tersimpan.
+**Perkalian dengan Hukum Ohm.** Saat tegangan masukan melewati setiap sel memori, Hukum Ohm (*I* = *V* × *G*) melakukan perkalian analog seketika dan menghasilkan arus listrik yang sebanding dengan hasil kali masukan dan bobot yang tersimpan.
 
-**Akumulasi dengan Hukum Arus Kirchhoff.** Di sepanjang jalur bit vertikal, arus dari ribuan sel memori paralel secara alami menjumlah sesuai Hukum Arus Kirchhoff ($\sum I = 0$).
+**Akumulasi dengan Hukum Arus Kirchhoff.** Di sepanjang jalur bit vertikal, arus dari ribuan sel memori paralel secara alami menjumlah sesuai Hukum Arus Kirchhoff (Σ*I* = 0).
 
 Dengan demikian, satu larik memori flash menjalankan seluruh perkalian matriks-vektor dalam satu siklus jam, bekerja di tingkat fisika tanpa satu pun pengambilan memori. Arus analog yang terakumulasi kemudian diubah kembali menjadi nilai digital oleh konverter analog-ke-digital (ADC) berkecepatan tinggi di tepi larik.
 
@@ -208,7 +208,7 @@ Peralihan dari klaster pusat data 700 W ke silikon edge 15 W merupakan gerbang s
 Hambatan Von Neumann adalah keterbatasan throughput dan energi yang timbul karena pemisahan fisik antara unit pemrosesan pusat (ALU) dan memori sistem (DRAM). Dalam beban kerja kecerdasan buatan, yang melibatkan miliaran perkalian matriks, prosesor menghabiskan lebih dari 85% total energinya dan banyak siklus jam hanya untuk mengangkut data bolak-balik melalui bus tembaga, sehingga menimbulkan hambatan termal dan latensi yang parah.
 
 **Bagaimana cara kerja komputasi analog dalam memori (CIM)?**
-Komputasi dalam memori melakukan operasi matematika langsung di dalam sel memori tanpa memindahkan data. Bobot jaringan saraf disimpan sebagai keadaan konduktansi analog di dalam sel memori nonvolatil. Saat tegangan masukan diterapkan ke larik, arus mengalir melalui sel sesuai Hukum Ohm ($I = V \times G$) dan menjumlah di sepanjang jalur bit sesuai Hukum Arus Kirchhoff. Dengan begitu, perkalian matriks-vektor lengkap selesai dalam satu langkah fisik.
+Komputasi dalam memori melakukan operasi matematika langsung di dalam sel memori tanpa memindahkan data. Bobot jaringan saraf disimpan sebagai keadaan konduktansi analog di dalam sel memori nonvolatil. Saat tegangan masukan diterapkan ke larik, arus mengalir melalui sel sesuai Hukum Ohm (*I* = *V* × *G*) dan menjumlah di sepanjang jalur bit sesuai Hukum Arus Kirchhoff. Dengan begitu, perkalian matriks-vektor lengkap selesai dalam satu langkah fisik.
 
 **Mengapa komputasi dalam memori sangat penting bagi robotika dan drone?**
 Robot bergerak dan drone beroperasi di bawah batasan SWaP-C (ukuran, berat, daya, dan biaya) yang ketat. Keduanya bergantung pada baterai bawaan dan tidak dapat menopang radiator pendingin yang berat atau catu daya berdaya tinggi. Komputasi dalam memori memberikan efisiensi energi 10 hingga 1.000 kali lebih tinggi, sehingga robot dapat menjalankan model penglihatan-bahasa-tindakan yang kompleks secara lokal dalam selubung daya 10 W hingga 20 W sambil menjaga daya tahan baterai.

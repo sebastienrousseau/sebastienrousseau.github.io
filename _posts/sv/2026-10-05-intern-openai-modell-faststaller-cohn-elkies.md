@@ -147,9 +147,9 @@ Jag menar att det är rätt sätt att bedöma resultatet. En förbättring av l�
 | :--- | :--- | :--- | :--- |
 | **Klotpackningsexponent** | Kabatianskii–Levenshtein-gränsen: 0,59905576... | Minst lika stark som gränserna för sferiska koder (Cohn–Zhao) | Bevisad exakt asymptotisk takt, förmodad av Afkhami-Jeddi m.fl. (2020) |
 | **Gränsens slutgiltighet** | Endast förfiningar av faktorer av lägre ordning | Öppen fråga om det asymptotiska glappet i höga dimensioner | Exakt matchande undre gräns: ingen hjälpfunktion kan slå denna takt |
-| **Fouriers teckenosäkerhet** | Separata teckengränser ($A^+(d) < A^-(d)$) | Kopplad till anti-självfourierska testfunktioner | Asymptotiskt avgjord; teckenosäkerheten styrs av Mellinspegling |
+| **Fouriers teckenosäkerhet** | Separata teckengränser (A⁺(d) < A⁻(d)) | Kopplad till anti-självfourierska testfunktioner | Asymptotiskt avgjord; teckenosäkerheten styrs av Mellinspegling |
 | **Felkorrigerande koder** | Klassiska gränser för sferiska och binära koder | Asymptotiskt kopplade till packningsgränser | Förbättringar med exponentiella faktorer för alla parametrar med fast avstånd |
-| **Metodens tak** | Numerisk optimering av polynomiella faktorer | Öppen optimering av hjälpfunktioner $f \in \mathcal{A}_d$ | Matematiskt tak bevisat: vidare vinster kräver metoder utanför Cohn-Elkies |
+| **Metodens tak** | Numerisk optimering av polynomiella faktorer | Öppen optimering av hjälpfunktioner f ∈ 𝒜\_d | Matematiskt tak bevisat: vidare vinster kräver metoder utanför Cohn-Elkies |
 
 ## Varför den matchande undre gränsen ändrar frågan
 
@@ -237,11 +237,11 @@ Den exakta bestämningen av Cohn-Elkies avklingningstakt i höga dimensioner och
 
 ### Ren matematik och diskret geometri
 
-För matematiker som arbetar med högdimensionell geometri och harmonisk analys förändrar bestämningen av Cohn-Elkies exakta avklingningstakt forskningslandskapet. Eftersom den matchande undre gränsen bevisar att ingen hjälpfunktion i $\mathcal{A}_d$ kan slå den nya exponenten kan forskare sluta leta efter bättre radiella testfunktioner inom det klassiska ramverket för linjär programmering. Framsteg mot tätare klotpackningar eller snävare universella gränser måste nu pröva icke-linjära programmeringstekniker, semidefinita hierarkier av högre ordning eller radikalt annorlunda geometriska konstruktioner.
+För matematiker som arbetar med högdimensionell geometri och harmonisk analys förändrar bestämningen av Cohn-Elkies exakta avklingningstakt forskningslandskapet. Eftersom den matchande undre gränsen bevisar att ingen hjälpfunktion i 𝒜\_d kan slå den nya exponenten kan forskare sluta leta efter bättre radiella testfunktioner inom det klassiska ramverket för linjär programmering. Framsteg mot tätare klotpackningar eller snävare universella gränser måste nu pröva icke-linjära programmeringstekniker, semidefinita hierarkier av högre ordning eller radikalt annorlunda geometriska konstruktioner.
 
 ### Kryptografi och gitterbaserad säkerhet
 
-Gitterbaserad kryptografi, som utgör kärnan i postkvantstandarder som ML-KEM och ML-DSA, vilar tungt på den förmodade svårigheten att hitta kortaste eller närmaste vektorer i högdimensionella euklidiska gitter. Den direkta reduktionen från 3SAT som etablerar svårighet med faktorn $n^{1/400}$ för det euklidiska problemet om närmaste vektor (CVP), kombinerad med snävare exponentiella tak för klotpackningar och sferiska koder, befäster den teoretiska grunden för gitterreduktioner från värsta fall till genomsnittsfall utan att försvaga konkreta säkerhetsparametrar.
+Gitterbaserad kryptografi, som utgör kärnan i postkvantstandarder som ML-KEM och ML-DSA, vilar tungt på den förmodade svårigheten att hitta kortaste eller närmaste vektorer i högdimensionella euklidiska gitter. Den direkta reduktionen från 3SAT som etablerar svårighet med faktorn n\^(1/400) för det euklidiska problemet om närmaste vektor (CVP), kombinerad med snävare exponentiella tak för klotpackningar och sferiska koder, befäster den teoretiska grunden för gitterreduktioner från värsta fall till genomsnittsfall utan att försvaga konkreta säkerhetsparametrar.
 
 ### Automatiserad satsbevisning och grundmodeller
 
@@ -267,7 +267,7 @@ Cohn och Gonçalves visade att det komplementära Fourierproblemet om teckenosä
 
 **Äventyrar detta resultat gitterbaserad kryptografi?**
 
-Nej. Satsen skärper visserligen de övre gränserna för hur tätt klot kan packas i höga dimensioner och etablerar svårighet med faktorn $n^{1/400}$ för problemet om närmaste vektor, men den ger inga algoritmer för gitterreduktion i polynomisk tid. Praktiska gitterbaserade kryptosystem förblir säkra mot kända kvant- och klassiska attacker.
+Nej. Satsen skärper visserligen de övre gränserna för hur tätt klot kan packas i höga dimensioner och etablerar svårighet med faktorn n\^(1/400) för problemet om närmaste vektor, men den ger inga algoritmer för gitterreduktion i polynomisk tid. Praktiska gitterbaserade kryptosystem förblir säkra mot kända kvant- och klassiska attacker.
 
 ## Källor
 

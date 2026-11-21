@@ -129,13 +129,13 @@ V klasických digitálních výpočtech vyžaduje výpočet skalárního součin
 
 Architektury s výpočty v paměti nahrazují tento digitální přenos dat fyzikou analogových obvodů:
 
-**Programování vah.** Váhy neuronové sítě se programují přímo do nevolatilních paměťových buněk (například upravené paměti flash nebo rezistivní RAM) jako analogové vodivosti ($G$). Po naprogramování zůstávají váhy nehybně v paměťovém poli; během inference se nikdy nenačítají ani nepřenášejí.
+**Programování vah.** Váhy neuronové sítě se programují přímo do nevolatilních paměťových buněk (například upravené paměti flash nebo rezistivní RAM) jako analogové vodivosti (*G*). Po naprogramování zůstávají váhy nehybně v paměťovém poli; během inference se nikdy nenačítají ani nepřenášejí.
 
-**Modulace vstupního napětí.** Vstupní aktivace (například vizuální tokeny z kamer) se převádějí na analogové úrovně napětí ($V$) a vedou se po slovních vodičích pole.
+**Modulace vstupního napětí.** Vstupní aktivace (například vizuální tokeny z kamer) se převádějí na analogové úrovně napětí (*V*) a vedou se po slovních vodičích pole.
 
-**Násobení podle Ohmova zákona.** Když vstupní napětí prochází každou paměťovou buňkou, provede Ohmův zákon ($I = V \times G$) okamžité analogové násobení a vytvoří elektrický proud úměrný součinu vstupu a uložené váhy.
+**Násobení podle Ohmova zákona.** Když vstupní napětí prochází každou paměťovou buňkou, provede Ohmův zákon (*I* = *V* × *G*) okamžité analogové násobení a vytvoří elektrický proud úměrný součinu vstupu a uložené váhy.
 
-**Akumulace podle Kirchhoffova proudového zákona.** Podél svislých bitových vodičů se proudy z tisíců paralelních paměťových buněk přirozeně sčítají podle Kirchhoffova proudového zákona ($\sum I = 0$).
+**Akumulace podle Kirchhoffova proudového zákona.** Podél svislých bitových vodičů se proudy z tisíců paralelních paměťových buněk přirozeně sčítají podle Kirchhoffova proudového zákona (Σ*I* = 0).
 
 Jediné pole paměti flash tak provede celé násobení matice vektorem v jediném hodinovém cyklu, na úrovni fyziky a bez jediného načtení z paměti. Akumulovaný analogový proud se pak na okraji pole převádí zpět na digitální hodnoty rychlými analogově-digitálními převodníky (ADC).
 
@@ -208,7 +208,7 @@ Přechod od clusterů datových center s příkonem 700 W ke křemíku na okraji
 Von Neumannovo úzké hrdlo označuje omezení propustnosti a energie, které vzniká fyzickým oddělením výpočetní jednotky (ALU) a systémové paměti (DRAM). V úlohách umělé inteligence, které zahrnují miliardy násobení matic, spotřebují procesory přes 85 % celkové energie a značný počet hodinových cyklů jen na přesouvání dat tam a zpět po měděných sběrnicích, což vytváří závažná tepelná a latenční úzká hrdla.
 
 **Jak fungují analogové výpočty v paměti (CIM)?**
-Výpočty v paměti provádějí matematické operace přímo v paměťových buňkách, aniž by se data přesouvala. Váhy neuronové sítě jsou uloženy jako analogové stavy vodivosti v nevolatilních paměťových buňkách. Když se na pole přiloží vstupní napětí, teče buňkami proud podle Ohmova zákona ($I = V \times G$) a sčítá se podél bitových vodičů podle Kirchhoffova proudového zákona. Tím se celé násobení matice vektorem provede v jediném fyzickém kroku.
+Výpočty v paměti provádějí matematické operace přímo v paměťových buňkách, aniž by se data přesouvala. Váhy neuronové sítě jsou uloženy jako analogové stavy vodivosti v nevolatilních paměťových buňkách. Když se na pole přiloží vstupní napětí, teče buňkami proud podle Ohmova zákona (*I* = *V* × *G*) a sčítá se podél bitových vodičů podle Kirchhoffova proudového zákona. Tím se celé násobení matice vektorem provede v jediném fyzickém kroku.
 
 **Proč jsou výpočty v paměti obzvlášť důležité pro roboty a drony?**
 Mobilní roboti a drony fungují pod přísnými omezeními SWaP-C (velikost, hmotnost, příkon a cena). Spoléhají na palubní baterie a neunesou těžké chladiče ani napájecí zdroje s vysokým výkonem. Výpočty v paměti přinášejí 10x až 1000x vyšší energetickou účinnost, takže roboti mohou lokálně provozovat složité modely vidění, jazyka a akce v příkonovém rozpočtu 10 až 20 W a zároveň šetřit výdrž baterie.

@@ -121,7 +121,7 @@ Yani yapısal iddia şöyle: üretken yargıçlar ölçüt başına pahalı, ola
 
 | Mimari Boyut | Üretken LLM Yargıçlar (örn. yargıç olarak GPT-4) | Tek Tokenlı Sınıflandırıcılar (örn. Llama Guard) | Çok Sorgulu RLCD Dedektörü (Jev) |
 | :--- | :--- | :--- | :--- |
-| **Puanlama Mekanizması** | Her ölçüt için tam otoregresif kod çözme geçişi | Tek çıktı tokenı üzerinde softmax olasılığı | Çok başlı kalibre olasılık tensörü $P(\text{yes})$ |
+| **Puanlama Mekanizması** | Her ölçüt için tam otoregresif kod çözme geçişi | Tek çıktı tokenı üzerinde softmax olasılığı | Çok başlı kalibre olasılık tensörü P(yes) |
 | **Çağrı Başına Soru** | Model çağrısı başına 1 değerlendirme istemi | Model çağrısı başına 1 sınıflandırma etiketi | 1 çağrıda birden çok ikili/kategorik/sıralı soru |
 | **Çıkarım Maliyeti** | Yüksek (1.000 etkileşim başına $10–$50) | Orta (1.000 etkileşim başına $0,50–$2,00) | 63 kat daha düşük (19 tam kıyaslama için $0,30) |
 | **AUROC Performansı** | Kıyaslamaya bağlı; yargıç kaymasına açık | Eğitilmiş belirli güvenlik kategorilerinde yüksek | 44 sette sıfır atışta medyan AUROC 0,886 |

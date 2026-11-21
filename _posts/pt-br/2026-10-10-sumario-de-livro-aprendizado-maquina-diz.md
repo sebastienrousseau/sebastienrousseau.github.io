@@ -158,7 +158,7 @@ Os autores também explicam por que a área fica onde fica. Como o sucesso de um
 
 | Dimensão | Complexidade de tempo | Complexidade de espaço | Complexidade amostral |
 | :--- | :--- | :--- | :--- |
-| **Definição operacional** | Tempo de execução assintótico necessário para produzir a hipótese $h$ | Uso de memória necessário durante o treinamento e a avaliação | Número de exemplos de treinamento $m$ necessários para aprender uma família de conceitos |
+| **Definição operacional** | Tempo de execução assintótico necessário para produzir a hipótese *h* | Uso de memória necessário durante o treinamento e a avaliação | Número de exemplos de treinamento *m* necessários para aprender uma família de conceitos |
 | **Teoria de referência** | Complexidade computacional (P versus NP, dificuldade do treinamento) | Restrições de memória da arquitetura e localidade de cache | Aprendizado PAC, complexidade de Rademacher e dimensão VC |
 | **Implicação de custo** | Computação em servidor e orçamento de inferência em GPU/CPU | Capacidade de RAM e de SRAM no chip | Custo de coleta, anotação e rotulagem de dados |
 | **Papel teórico** | Mede a eficiência do algoritmo em tempo de execução | Mede a eficiência no uso de memória | Determina o erro de generalização e os limitantes sobre dados não vistos |

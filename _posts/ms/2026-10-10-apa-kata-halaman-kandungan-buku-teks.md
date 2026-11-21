@@ -158,7 +158,7 @@ Penulis juga menerangkan mengapa bidang ini berada di tempatnya. Oleh sebab keja
 
 | Dimensi | Kerumitan Masa | Kerumitan Ruang | Kerumitan Sampel |
 | :--- | :--- | :--- | :--- |
-| **Takrif Operasi** | Masa larian asimptotik yang diperlukan untuk mengeluarkan hipotesis $h$ | Jejak memori yang perlu semasa latihan dan penilaian | Bilangan contoh latihan $m$ yang diperlukan untuk mempelajari keluarga konsep |
+| **Takrif Operasi** | Masa larian asimptotik yang diperlukan untuk mengeluarkan hipotesis *h* | Jejak memori yang perlu semasa latihan dan penilaian | Bilangan contoh latihan *m* yang diperlukan untuk mempelajari keluarga konsep |
 | **Teori yang Menguasai** | Kerumitan pengiraan (P lawan NP, kesukaran latihan) | Kekangan memori seni bina dan lokaliti cache | Pembelajaran PAC, kerumitan Rademacher dan dimensi VC |
 | **Implikasi Kos** | Pengiraan pelayan dan bajet inferens GPU/CPU | Kapasiti RAM dan SRAM dalam cip | Kos pengumpulan, anotasi dan pelabelan data |
 | **Peranan Teori** | Mengukur kecekapan masa larian algoritma | Mengukur kecekapan sumber ruang | Menentukan ralat generalisasi dan batasnya atas data yang belum dilihat |

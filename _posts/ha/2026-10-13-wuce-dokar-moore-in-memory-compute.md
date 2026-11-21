@@ -129,13 +129,13 @@ A digital computing na gargajiya, lissafin matrix dot product yana buƙatar ɗau
 
 Tsarin in-memory compute yana maye gurbin wannan motsin data na digital da kimiyyar lissafi ta analog circuits:
 
-**Shirya weights.** Ana shirya weights na neural network kai tsaye cikin non-volatile memory cells (kamar flash da aka gyara ko resistive RAM) a matsayin analog conductances ($G$). Da zarar an shirya su, weights suna zama a tsaye a cikin memory array; ba a taɓa ɗauko su ko motsa su yayin inference ba.
+**Shirya weights.** Ana shirya weights na neural network kai tsaye cikin non-volatile memory cells (kamar flash da aka gyara ko resistive RAM) a matsayin analog conductances (*G*). Da zarar an shirya su, weights suna zama a tsaye a cikin memory array; ba a taɓa ɗauko su ko motsa su yayin inference ba.
 
-**Daidaita voltage na input.** Ana mayar da input activations (kamar visual tokens daga kyamarori) zuwa matakan analog voltage ($V$) kuma a tura su ta word lines na array.
+**Daidaita voltage na input.** Ana mayar da input activations (kamar visual tokens daga kyamarori) zuwa matakan analog voltage (*V*) kuma a tura su ta word lines na array.
 
-**Multiplication ta dokar Ohm.** Yayin da voltage na input ke wucewa ta kowane memory cell, dokar Ohm ($I = V \times G$) tana yin analog multiplication nan take, tana samar da wutar lantarki daidai da sakamakon ninka input da weight da aka ajiye.
+**Multiplication ta dokar Ohm.** Yayin da voltage na input ke wucewa ta kowane memory cell, dokar Ohm (*I* = *V* × *G*) tana yin analog multiplication nan take, tana samar da wutar lantarki daidai da sakamakon ninka input da weight da aka ajiye.
 
-**Tarawa ta Kirchhoff's Current Law.** A kan bit lines na tsaye, wutar lantarki daga dubban memory cells masu layi ɗaya tana haɗuwa ta halitta bisa Kirchhoff's Current Law ($\sum I = 0$).
+**Tarawa ta Kirchhoff's Current Law.** A kan bit lines na tsaye, wutar lantarki daga dubban memory cells masu layi ɗaya tana haɗuwa ta halitta bisa Kirchhoff's Current Law (Σ*I* = 0).
 
 Don haka flash memory array guda ɗaya yana aiwatar da cikakken matrix-vector multiplication a cikin clock cycle guda ɗaya, yana aiki a matakin kimiyyar lissafi ba tare da ɗauko ƙwaƙwalwa ko sau ɗaya ba. Daga nan ana mayar da wutar analog da aka tara zuwa ƙimar digital ta hanyar high-speed analog-to-digital converters (ADCs) a gefen array.
 
@@ -208,7 +208,7 @@ Sauyi daga gungun data centre masu cin 700W zuwa edge silicon na 15W shi ne aini
 Von Neumann bottleneck yana nufin iyakar throughput da makamashi da rabuwar zahiri tsakanin central processing unit (ALU) da ƙwaƙwalwar tsari (DRAM) ke haifarwa. A ayyukan artificial intelligence, waɗanda suka ƙunshi biliyoyin matrix multiplications, processors suna kashe fiye da kashi 85% na jimillar makamashinsu da clock cycles masu yawa kawai wajen kai-da-kawon data ta copper buses, wanda ke haifar da tsananin matsalolin zafi da latency.
 
 **Ta yaya analog Compute-In-Memory (CIM) ke aiki?**
-Compute-In-Memory yana yin ayyukan lissafi kai tsaye a cikin memory cells ba tare da motsa data ba. Ana ajiye weights na neural network a matsayin analog conductance states a cikin non-volatile memory cells. Idan aka sanya input voltages a kan array, wutar lantarki tana gudana ta cells bisa dokar Ohm ($I = V \times G$), kuma tana haɗuwa a kan bit lines bisa Kirchhoff's Current Law. Wannan yana kammala cikakken matrix-vector multiplication a mataki ɗaya na zahiri.
+Compute-In-Memory yana yin ayyukan lissafi kai tsaye a cikin memory cells ba tare da motsa data ba. Ana ajiye weights na neural network a matsayin analog conductance states a cikin non-volatile memory cells. Idan aka sanya input voltages a kan array, wutar lantarki tana gudana ta cells bisa dokar Ohm (*I* = *V* × *G*), kuma tana haɗuwa a kan bit lines bisa Kirchhoff's Current Law. Wannan yana kammala cikakken matrix-vector multiplication a mataki ɗaya na zahiri.
 
 **Me yasa in-memory compute ke da muhimmanci musamman ga robots da jirage marasa matuƙi?**
 Robots masu motsi da jirage marasa matuƙi suna aiki ƙarƙashin tsauraran iyakokin Size, Weight, Power, and Cost (SWaP-C). Suna dogara ne da batir a cikinsu kuma ba za su iya ɗaukar manyan radiators na sanyaya ko kayan wuta masu yawan watt ba. In-memory compute yana ba da ingancin makamashi mafi girma da 10x zuwa 1,000x, yana ba robots damar gudanar da samfuran vision-language-action masu rikitarwa a cikin su a power envelope na 10W zuwa 20W yayin da suke kiyaye tsawon batir.

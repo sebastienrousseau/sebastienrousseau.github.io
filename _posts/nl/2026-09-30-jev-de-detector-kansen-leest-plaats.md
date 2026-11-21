@@ -121,7 +121,7 @@ Het structurele argument luidt dus: generatieve rechters zijn duur per criterium
 
 | Architectuurdimensie | Generatieve LLM-rechters (bijv. GPT-4 als rechter) | Classificatoren met één token (bijv. Llama Guard) | Multi-query RLCD-detector (Jev) |
 | :--- | :--- | :--- | :--- |
-| **Scoringsmechanisme** | Volledige autoregressieve decodeerdoorloop per criterium | Softmaxkans over één uitvoertoken | Gekalibreerde kanstensor met meerdere koppen $P(\text{yes})$ |
+| **Scoringsmechanisme** | Volledige autoregressieve decodeerdoorloop per criterium | Softmaxkans over één uitvoertoken | Gekalibreerde kanstensor met meerdere koppen P(yes) |
 | **Vragen per aanroep** | 1 evaluatieprompt per modelaanroep | 1 classificatielabel per modelaanroep | Meerdere binaire/categorische/ordinale vragen in 1 aanroep |
 | **Inferentiekosten** | Hoog ($ 10 tot $ 50 per 1.000 interacties) | Gemiddeld ($ 0,50 tot $ 2,00 per 1.000 interacties) | 63× lager ($ 0,30 over 19 volledige benchmarks) |
 | **AUROC-prestatie** | Afhankelijk van de benchmark; gevoelig voor rechterdrift | Hoog in specifiek getrainde veiligheidscategorieën | Mediane AUROC 0,886 zero-shot over 44 suites |

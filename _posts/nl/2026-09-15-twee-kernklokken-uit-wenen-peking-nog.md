@@ -127,9 +127,9 @@ De prestaties van die aanpak zijn al buitengewoon. De beste gewone atoomklokken 
 | :--- | :--- | :--- |
 | **Fysisch mechanisme** | Overgangen in de elektronenschil (cesium/strontium) | Overgangen van protonen/neutronen in de thorium-229-kern |
 | **Aftastmedium** | Microgolven of optische lasers op valentie-elektronen | Vacuüm-ultravioletlaser op in kristal ingebedde kernen |
-| **Dragermateriaal** | Gascellen of lasergekoelde optische roostervallen | Vaste calciumfluoridekristallen ($CaF_2$) |
-| **Huidige prestaties** | Miljarden jaren om $\le 1$ seconde te winnen/verliezen | Precisie van een atoomklok gehaald bij onderzoek naar donkere materie |
-| **Beoogde stabiliteit** | Gevestigde internationale standaard ($10^{-18}$) | Verwachte verbetering van de stabiliteit met een orde van grootte |
+| **Dragermateriaal** | Gascellen of lasergekoelde optische roostervallen | Vaste calciumfluoridekristallen (CaF₂) |
+| **Huidige prestaties** | Miljarden jaren om ≤ 1 seconde te winnen/verliezen | Precisie van een atoomklok gehaald bij onderzoek naar donkere materie |
+| **Beoogde stabiliteit** | Gevestigde internationale standaard (10⁻¹⁸) | Verwachte verbetering van de stabiliteit met een orde van grootte |
 | **Vorm van de hardware** | Grote, kwetsbare vacuümopstelling in het laboratorium | Mogelijkheid tot compacte, robuuste vastestofapparaten voor het veld |
 
 De nieuwe klokken verplaatsen de plek waar de sprong gebeurt. In plaats van elektronen in de schil gebruiken ze lasers om protonen en neutronen tussen energieniveaus in de kern van een atoom te laten springen, in dit geval thorium-229. De tijd in een kernklok wordt berekend door te volgen hoe een krachtige laser met de kern van een atoom wisselwerkt.
@@ -226,7 +226,7 @@ Als architecturen met vaste calciumfluoridekristallen in productie minder omvang
 
 ### Fundamentele natuurkunde en astrofysica
 
-Omdat nucleaire energieniveaus rechtstreeks afhangen van de sterke kernkracht en de elektromagnetische koppelingsconstante $\alpha$, bieden kernklokken een nieuwe gevoeligheid om te testen of fundamentele natuurconstanten over kosmische tijd variëren en om kandidaten voor donkere materie te onderzoeken.
+Omdat nucleaire energieniveaus rechtstreeks afhangen van de sterke kernkracht en de elektromagnetische koppelingsconstante α, bieden kernklokken een nieuwe gevoeligheid om te testen of fundamentele natuurconstanten over kosmische tijd variëren en om kandidaten voor donkere materie te onderzoeken.
 
 ## Conclusie
 

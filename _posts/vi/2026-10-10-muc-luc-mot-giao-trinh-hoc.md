@@ -158,7 +158,7 @@ Các tác giả cũng giải thích vì sao lĩnh vực nằm ở vị trí củ
 
 | Chiều | Độ phức tạp thời gian | Độ phức tạp không gian | Độ phức tạp mẫu |
 | :--- | :--- | :--- | :--- |
-| **Định nghĩa vận hành** | Thời gian chạy tiệm cận cần để xuất ra giả thuyết $h$ | Dung lượng bộ nhớ cần trong huấn luyện và đánh giá | Số ví dụ huấn luyện $m$ cần để học họ khái niệm |
+| **Định nghĩa vận hành** | Thời gian chạy tiệm cận cần để xuất ra giả thuyết *h* | Dung lượng bộ nhớ cần trong huấn luyện và đánh giá | Số ví dụ huấn luyện *m* cần để học họ khái niệm |
 | **Lý thuyết chi phối** | Độ phức tạp tính toán (P và NP, độ khó của huấn luyện) | Ràng buộc bộ nhớ của kiến trúc và tính cục bộ của bộ nhớ đệm | Học PAC, độ phức tạp Rademacher và chiều VC |
 | **Hàm ý chi phí** | Tính toán máy chủ và ngân sách suy luận GPU/CPU | Dung lượng RAM và SRAM trên chip | Chi phí thu thập, chú thích và gán nhãn dữ liệu |
 | **Vai trò lý thuyết** | Đo hiệu quả thời gian chạy của thuật toán | Đo hiệu quả sử dụng tài nguyên không gian | Quyết định sai số tổng quát hóa và các cận trên dữ liệu chưa thấy |

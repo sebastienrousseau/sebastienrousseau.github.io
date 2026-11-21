@@ -147,9 +147,9 @@ Mo rò pé ìlànà ìwòye yìí ló tọ́ fún ṣíṣe àgbéyẹ̀wò àb�
 | :--- | :--- | :--- | :--- |
 | **Exponent Sphere Packing** | Ààlà Kabatianskii–Levenshtein: 0.59905576... | Ó kéré tán ní agbára dọ́gba pẹ̀lú ààlà spherical code (Cohn–Zhao) | A fi ìwọ̀n asymptotic gangan tí Afkhami-Jeddi et al. (2020) dábàá hàn |
 | **Ìparí Ààlà** | Àtúnṣe ohun ìpele kékeré nìkan | Ìbéèrè ṣíṣí lórí àlàfo asymptotic ní àwọn ìwọ̀n gíga | Lower bound tí ó báramu gangan: kò sí auxiliary function tí ó lè borí ìwọ̀n yìí |
-| **Fourier Sign Uncertainty** | Àwọn ààlà àmì ọ̀tọ̀ọ̀tọ̀ ($A^+(d) < A^-(d)$) | Ó so mọ́ àwọn anti-self-Fourier test function | A ti yanjú rẹ̀ ní asymptotic; Mellin reflection ló ń darí sign uncertainty |
+| **Fourier Sign Uncertainty** | Àwọn ààlà àmì ọ̀tọ̀ọ̀tọ̀ (A⁺(d) < A⁻(d)) | Ó so mọ́ àwọn anti-self-Fourier test function | A ti yanjú rẹ̀ ní asymptotic; Mellin reflection ló ń darí sign uncertainty |
 | **Àwọn Kóòdù Àtúnṣe Àṣìṣe** | Àwọn ààlà àtijọ́ ti spherical àti binary code | Wọ́n so pọ̀ ní asymptotic mọ́ àwọn ààlà packing | Ìlọsíwájú pẹ̀lú àwọn ohun exponential fún gbogbo paramita ìjìnnà tí kò yí padà |
-| **Òrùlé Ọ̀nà** | Ìmúdára oníye ti àwọn polynomial factor | Ìmúdára ṣíṣí ti àwọn auxiliary test function $f \in \mathcal{A}_d$ | A fi òrùlé ìṣirò hàn: èrè sí i nílò àwọn ọ̀nà tí kì í ṣe Cohn-Elkies |
+| **Òrùlé Ọ̀nà** | Ìmúdára oníye ti àwọn polynomial factor | Ìmúdára ṣíṣí ti àwọn auxiliary test function f ∈ 𝒜\_d | A fi òrùlé ìṣirò hàn: èrè sí i nílò àwọn ọ̀nà tí kì í ṣe Cohn-Elkies |
 
 ## Ìdí tí lower bound tí ó báramu fi yí ìbéèrè padà
 
@@ -237,11 +237,11 @@ Síbẹ̀ ipò kan wà tí ó yẹ láti dì mú. Àwọn àbájáde náà yàt�
 
 ### Ìṣirò mímọ́ àti discrete geometry
 
-Fún àwọn onímọ̀ ìṣirò tí ń ṣiṣẹ́ nínú geometry ìwọ̀n gíga àti harmonic analysis, ṣíṣàwárí ìwọ̀n ìdínkù Cohn-Elkies gangan yí ilẹ̀ ìwádìí padà. Nítorí pé lower bound tí ó báramu fi hàn pé kò sí auxiliary function nínú $\mathcal{A}_d$ tí ó lè borí exponent tuntun, àwọn olùwádìí lè dẹ́kun wíwá àwọn radial test function tí ó dára jù nínú ìlànà linear programming àtijọ́. Ìlọsíwájú sí àwọn sphere packing tí ó kún jù tàbí àwọn universal bound tí ó há jù gbọ́dọ̀ ṣàwárí àwọn ọgbọ́n non-linear programming báyìí, àwọn semidefinite hierarchy ìpele gíga, tàbí àwọn kíkọ́ geometry tí ó yàtọ̀ pátápátá.
+Fún àwọn onímọ̀ ìṣirò tí ń ṣiṣẹ́ nínú geometry ìwọ̀n gíga àti harmonic analysis, ṣíṣàwárí ìwọ̀n ìdínkù Cohn-Elkies gangan yí ilẹ̀ ìwádìí padà. Nítorí pé lower bound tí ó báramu fi hàn pé kò sí auxiliary function nínú 𝒜\_d tí ó lè borí exponent tuntun, àwọn olùwádìí lè dẹ́kun wíwá àwọn radial test function tí ó dára jù nínú ìlànà linear programming àtijọ́. Ìlọsíwájú sí àwọn sphere packing tí ó kún jù tàbí àwọn universal bound tí ó há jù gbọ́dọ̀ ṣàwárí àwọn ọgbọ́n non-linear programming báyìí, àwọn semidefinite hierarchy ìpele gíga, tàbí àwọn kíkọ́ geometry tí ó yàtọ̀ pátápátá.
 
 ### Cryptography àti ààbò lattice
 
-Lattice-based cryptography, tí ó jẹ́ kókó àwọn ìlànà post-quantum bíi ML-KEM àti ML-DSA, gbára lé ìṣòro tí a rò pé ó wà nínú wíwá àwọn vector tí ó kúrú jùlọ tàbí tí ó súnmọ́ jùlọ nínú àwọn Euclidean lattice ìwọ̀n gíga. Ìdínkù tààrà láti 3SAT tí ó fìdí $n^{1/400}$-factor hardness múlẹ̀ fún Euclidean Closest Vector Problem (CVP), pẹ̀lú àwọn òrùlé exponential tí ó há jù lórí sphere packing àti spherical code, mú àwọn ìpìlẹ̀ onímọ̀-ìjìnlẹ̀ ti àwọn lattice reduction láti worst-case sí average-case lágbára sí i láìsọ àwọn security parameter gidi di aláìlágbára.
+Lattice-based cryptography, tí ó jẹ́ kókó àwọn ìlànà post-quantum bíi ML-KEM àti ML-DSA, gbára lé ìṣòro tí a rò pé ó wà nínú wíwá àwọn vector tí ó kúrú jùlọ tàbí tí ó súnmọ́ jùlọ nínú àwọn Euclidean lattice ìwọ̀n gíga. Ìdínkù tààrà láti 3SAT tí ó fìdí n\^(1/400)-factor hardness múlẹ̀ fún Euclidean Closest Vector Problem (CVP), pẹ̀lú àwọn òrùlé exponential tí ó há jù lórí sphere packing àti spherical code, mú àwọn ìpìlẹ̀ onímọ̀-ìjìnlẹ̀ ti àwọn lattice reduction láti worst-case sí average-case lágbára sí i láìsọ àwọn security parameter gidi di aláìlágbára.
 
 ### Ìfihàn theorem aládàáṣe àti foundation models
 
@@ -267,7 +267,7 @@ Cohn àti Gonçalves fìdí rẹ̀ múlẹ̀ pé ìṣòro àfikún ti Fourier s
 
 **Ṣé àbájáde yìí ba lattice-based cryptography jẹ́?**
 
-Rárá. Bí theorem náà tilẹ̀ mú àwọn upper bound lórí bí àwọn bọ́ọ̀lù ṣe lè kún pọ̀ tó ní àwọn ìwọ̀n gíga mú sí i, tí ó sì fìdí $n^{1/400}$-factor hardness múlẹ̀ fún Closest Vector Problem, kò pèsè àwọn algorithm lattice reduction ní polynomial time. Àwọn lattice cryptosystem tí a ń lò ṣì wà ní ààbò kúrò lọ́wọ́ àwọn ìkọlù quantum àti àtijọ́ tí a mọ̀.
+Rárá. Bí theorem náà tilẹ̀ mú àwọn upper bound lórí bí àwọn bọ́ọ̀lù ṣe lè kún pọ̀ tó ní àwọn ìwọ̀n gíga mú sí i, tí ó sì fìdí n\^(1/400)-factor hardness múlẹ̀ fún Closest Vector Problem, kò pèsè àwọn algorithm lattice reduction ní polynomial time. Àwọn lattice cryptosystem tí a ń lò ṣì wà ní ààbò kúrò lọ́wọ́ àwọn ìkọlù quantum àti àtijọ́ tí a mọ̀.
 
 ## Àwọn Ìtọ́kasí
 

@@ -129,13 +129,13 @@ Na computação digital clássica, calcular um produto escalar de matrizes exige
 
 As arquiteturas de computação em memória substituem essa transferência digital de dados pela física dos circuitos analógicos:
 
-**Programação dos pesos.** Os pesos da rede neural são programados diretamente em células de memória não volátil (como flash modificada ou RAM resistiva) na forma de condutâncias analógicas ($G$). Uma vez programados, os pesos ficam parados dentro da matriz de memória; nunca são buscados nem transferidos durante a inferência.
+**Programação dos pesos.** Os pesos da rede neural são programados diretamente em células de memória não volátil (como flash modificada ou RAM resistiva) na forma de condutâncias analógicas (*G*). Uma vez programados, os pesos ficam parados dentro da matriz de memória; nunca são buscados nem transferidos durante a inferência.
 
-**Modulação da tensão de entrada.** As ativações de entrada (como tokens visuais vindos das câmeras) são convertidas em níveis de tensão analógicos ($V$) e aplicadas às linhas de palavra da matriz.
+**Modulação da tensão de entrada.** As ativações de entrada (como tokens visuais vindos das câmeras) são convertidas em níveis de tensão analógicos (*V*) e aplicadas às linhas de palavra da matriz.
 
-**Multiplicação pela lei de Ohm.** Quando a tensão de entrada passa por cada célula de memória, a lei de Ohm ($I = V \times G$) faz uma multiplicação analógica instantânea e gera uma corrente proporcional ao produto da entrada pelo peso armazenado.
+**Multiplicação pela lei de Ohm.** Quando a tensão de entrada passa por cada célula de memória, a lei de Ohm (*I* = *V* × *G*) faz uma multiplicação analógica instantânea e gera uma corrente proporcional ao produto da entrada pelo peso armazenado.
 
-**Acumulação pela lei das correntes de Kirchhoff.** Ao longo das linhas de bit verticais, as correntes de milhares de células em paralelo se somam naturalmente segundo a lei das correntes de Kirchhoff ($\sum I = 0$).
+**Acumulação pela lei das correntes de Kirchhoff.** Ao longo das linhas de bit verticais, as correntes de milhares de células em paralelo se somam naturalmente segundo a lei das correntes de Kirchhoff (Σ*I* = 0).
 
 Assim, uma única matriz de memória flash executa uma multiplicação matriz-vetor completa em um único ciclo de clock, no nível da física e sem um único acesso à memória. A corrente analógica acumulada é então convertida de volta em valores digitais por conversores analógico-digitais (ADCs) de alta velocidade na borda da matriz.
 
@@ -208,7 +208,7 @@ A transição de clusters de data center de 700 W para silício de borda de 15 W
 O gargalo de Von Neumann é o limite de vazão e de energia causado pela separação física entre a unidade de processamento (ULA) e a memória do sistema (DRAM). Nas cargas de inteligência artificial, que envolvem bilhões de multiplicações de matrizes, os processadores gastam mais de 85% da energia total e muitos ciclos de clock só para levar e trazer dados por barramentos de cobre, o que cria graves gargalos térmicos e de latência.
 
 **Como funciona a computação analógica em memória (CIM)?**
-A computação em memória faz as operações matemáticas diretamente dentro das células de memória, sem mover dados. Os pesos da rede neural ficam armazenados como estados de condutância analógica em células de memória não volátil. Quando tensões de entrada são aplicadas à matriz, a corrente passa pelas células segundo a lei de Ohm ($I = V \times G$) e se soma ao longo das linhas de bit segundo a lei das correntes de Kirchhoff. Isso realiza uma multiplicação matriz-vetor completa em um único passo físico.
+A computação em memória faz as operações matemáticas diretamente dentro das células de memória, sem mover dados. Os pesos da rede neural ficam armazenados como estados de condutância analógica em células de memória não volátil. Quando tensões de entrada são aplicadas à matriz, a corrente passa pelas células segundo a lei de Ohm (*I* = *V* × *G*) e se soma ao longo das linhas de bit segundo a lei das correntes de Kirchhoff. Isso realiza uma multiplicação matriz-vetor completa em um único passo físico.
 
 **Por que a computação em memória é tão importante para robôs e drones?**
 Robôs móveis e drones operam sob limites estritos de tamanho, peso, potência e custo (SWaP-C). Dependem de baterias embarcadas e não comportam radiadores pesados nem fontes de alta potência. A computação em memória oferece eficiência energética de 10 a 1.000 vezes maior, o que permite aos robôs rodar localmente modelos complexos de visão-linguagem-ação dentro de um envelope de 10 W a 20 W, preservando a autonomia da bateria.

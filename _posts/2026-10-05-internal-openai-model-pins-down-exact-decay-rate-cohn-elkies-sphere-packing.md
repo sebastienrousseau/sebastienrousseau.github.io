@@ -164,9 +164,9 @@ I'd argue this framing is the right one for assessing the result. A lower-order 
 | :--- | :--- | :--- | :--- |
 | **Sphere-Packing Exponent** | Kabatianskii–Levenshtein bound: 0.59905576... | At least as strong as spherical-code bounds (Cohn–Zhao) | Proven exact asymptotic rate conjectured by Afkhami-Jeddi et al. (2020) |
 | **Bound Finality** | Lower-order factor refinements only | Open question on asymptotic high-dimensional gap | Exact matching lower bound: no auxiliary function can beat this rate |
-| **Fourier Sign Uncertainty** | Separate sign bounds ($A^+(d) < A^-(d)$) | Linked to anti-self-Fourier test functions | Asymptotically settled; sign uncertainty governed by Mellin reflection |
+| **Fourier Sign Uncertainty** | Separate sign bounds (A⁺(d) < A⁻(d)) | Linked to anti-self-Fourier test functions | Asymptotically settled; sign uncertainty governed by Mellin reflection |
 | **Error-Correcting Codes** | Classical spherical and binary code bounds | Asymptotically coupled to packing bounds | Exponential factor improvements for all fixed-distance parameters |
-| **Methodological Ceiling** | Numerical optimization of polynomial factors | Open optimization of auxiliary test functions $f \in \mathcal{A}_d$ | Mathematical ceiling proved: further gains require non-Cohn-Elkies methods |
+| **Methodological Ceiling** | Numerical optimization of polynomial factors | Open optimization of auxiliary test functions f ∈ 𝒜\_d | Mathematical ceiling proved: further gains require non-Cohn-Elkies methods |
 
 ## Why the matching lower bound changes the question
 
@@ -254,11 +254,11 @@ The exact determination of the high-dimensional Cohn-Elkies decay rate and the a
 
 ### Pure mathematics and discrete geometry
 
-For mathematicians working in high-dimensional geometry and harmonic analysis, the determination of the exact Cohn-Elkies decay rate shifts the research landscape. Because the matching lower bound proves that no auxiliary function in $\mathcal{A}_d$ can beat the new exponent, researchers can cease searching for better radial test functions within the classical linear programming framework. Progress towards denser sphere packings or tighter universal bounds must now explore non-linear programming techniques, higher-order semidefinite hierarchies, or radically different geometric constructions.
+For mathematicians working in high-dimensional geometry and harmonic analysis, the determination of the exact Cohn-Elkies decay rate shifts the research landscape. Because the matching lower bound proves that no auxiliary function in 𝒜\_d can beat the new exponent, researchers can cease searching for better radial test functions within the classical linear programming framework. Progress towards denser sphere packings or tighter universal bounds must now explore non-linear programming techniques, higher-order semidefinite hierarchies, or radically different geometric constructions.
 
 ### Cryptography and lattice-based security
 
-Lattice-based cryptography - forming the core of post-quantum standards such as ML-KEM and ML-DSA - relies heavily on the conjectured hardness of finding shortest or closest vectors in high-dimensional Euclidean lattices. The direct reduction from 3SAT establishing $n^{1/400}$-factor hardness for the Euclidean Closest Vector Problem (CVP), combined with tighter exponential ceilings on sphere packings and spherical codes, solidifies the theoretical foundations underlying worst-case-to-average-case lattice reductions without weakening concrete security parameters.
+Lattice-based cryptography - forming the core of post-quantum standards such as ML-KEM and ML-DSA - relies heavily on the conjectured hardness of finding shortest or closest vectors in high-dimensional Euclidean lattices. The direct reduction from 3SAT establishing n\^(1/400)-factor hardness for the Euclidean Closest Vector Problem (CVP), combined with tighter exponential ceilings on sphere packings and spherical codes, solidifies the theoretical foundations underlying worst-case-to-average-case lattice reductions without weakening concrete security parameters.
 
 ### Automated theorem proving and foundation models
 
@@ -284,7 +284,7 @@ Cohn and Gonçalves established that the complementary Fourier sign-uncertainty 
 
 **Does this result compromise lattice-based cryptography?**
 
-No. While the theorem sharpens upper bounds on how densely spheres can pack in high dimensions and establishes $n^{1/400}$-factor hardness for the Closest Vector Problem, it does not provide polynomial-time lattice reduction algorithms. Practical lattice cryptosystems remain secure against known quantum and classical attacks.
+No. While the theorem sharpens upper bounds on how densely spheres can pack in high dimensions and establishes n\^(1/400)-factor hardness for the Closest Vector Problem, it does not provide polynomial-time lattice reduction algorithms. Practical lattice cryptosystems remain secure against known quantum and classical attacks.
 
 ## References
 

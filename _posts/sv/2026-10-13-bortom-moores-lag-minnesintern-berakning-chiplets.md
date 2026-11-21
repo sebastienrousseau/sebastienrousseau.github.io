@@ -129,13 +129,13 @@ I klassisk digital databehandling kräver en matrisskalärprodukt att tusentals 
 
 Minnesinterna beräkningsarkitekturer ersätter denna digitala dataöverföring med analog kretsfysik:
 
-**Programmering av vikter.** Vikterna i det neurala nätet programmeras direkt in i icke-flyktiga minnesceller (till exempel modifierat flashminne eller resistivt RAM) som analoga konduktanser ($G$). När vikterna väl är programmerade ligger de stilla i minnesmatrisen; de hämtas eller flyttas aldrig under inferens.
+**Programmering av vikter.** Vikterna i det neurala nätet programmeras direkt in i icke-flyktiga minnesceller (till exempel modifierat flashminne eller resistivt RAM) som analoga konduktanser (*G*). När vikterna väl är programmerade ligger de stilla i minnesmatrisen; de hämtas eller flyttas aldrig under inferens.
 
-**Modulering av inspänning.** Indata-aktiveringar (till exempel visuella tokens från kameror) omvandlas till analoga spänningsnivåer ($V$) och drivs längs matrisens ordledningar.
+**Modulering av inspänning.** Indata-aktiveringar (till exempel visuella tokens från kameror) omvandlas till analoga spänningsnivåer (*V*) och drivs längs matrisens ordledningar.
 
-**Multiplikation med Ohms lag.** När inspänningen passerar varje minnescell utför Ohms lag ($I = V \times G$) en omedelbar analog multiplikation och ger en elektrisk ström som är proportionell mot produkten av indata och den lagrade vikten.
+**Multiplikation med Ohms lag.** När inspänningen passerar varje minnescell utför Ohms lag (*I* = *V* × *G*) en omedelbar analog multiplikation och ger en elektrisk ström som är proportionell mot produkten av indata och den lagrade vikten.
 
-**Ackumulering med Kirchhoffs strömlag.** Längs de vertikala bitledningarna summeras strömmarna från tusentals parallella minnesceller naturligt enligt Kirchhoffs strömlag ($\sum I = 0$).
+**Ackumulering med Kirchhoffs strömlag.** Längs de vertikala bitledningarna summeras strömmarna från tusentals parallella minnesceller naturligt enligt Kirchhoffs strömlag (Σ*I* = 0).
 
 En enda flashminnesmatris utför alltså en hel matris-vektor-multiplikation på en enda klockcykel, på fysiknivå och utan en enda minneshämtning. Den ackumulerade analoga strömmen omvandlas sedan tillbaka till digitala värden av snabba analog-till-digital-omvandlare (ADC) vid matrisens kant.
 
@@ -208,7 +208,7 @@ Så länge datorarkitekturer håller fast vid von Neumanns uppdelning mellan log
 Von Neumann-flaskhalsen är den begränsning i genomströmning och energi som uppstår av den fysiska åtskillnaden mellan beräkningsenheten (ALU) och systemminnet (DRAM). I AI-arbetslaster, som omfattar miljarder matrismultiplikationer, lägger processorerna mer än 85 % av sin totala energi och ett stort antal klockcykler på att bara skyffla data fram och tillbaka över kopparbussar, vilket ger allvarliga flaskhalsar för värme och latens.
 
 **Hur fungerar analog minnesintern beräkning (CIM)?**
-Minnesintern beräkning utför matematiska operationer direkt i minnescellerna utan att flytta data. Vikterna i det neurala nätet lagras som analoga konduktanstillstånd i icke-flyktiga minnesceller. När inspänningar läggs över matrisen flyter ström genom cellerna enligt Ohms lag ($I = V \times G$) och summeras längs bitledningarna enligt Kirchhoffs strömlag. På så sätt utförs en komplett matris-vektor-multiplikation i ett enda fysiskt steg.
+Minnesintern beräkning utför matematiska operationer direkt i minnescellerna utan att flytta data. Vikterna i det neurala nätet lagras som analoga konduktanstillstånd i icke-flyktiga minnesceller. När inspänningar läggs över matrisen flyter ström genom cellerna enligt Ohms lag (*I* = *V* × *G*) och summeras längs bitledningarna enligt Kirchhoffs strömlag. På så sätt utförs en komplett matris-vektor-multiplikation i ett enda fysiskt steg.
 
 **Varför är minnesintern beräkning särskilt viktig för robotar och drönare?**
 Mobila robotar och drönare arbetar under strikta SWaP-C-begränsningar (storlek, vikt, effekt och kostnad). De är beroende av batterier ombord och kan inte bära tunga kylare eller kraftaggregat med hög effekt. Minnesintern beräkning ger 10x till 1 000x högre energieffektivitet, så att robotar kan köra komplexa vision-språk-handlingsmodeller lokalt inom en effektbudget på 10 till 20 W och samtidigt bevara batteritiden.

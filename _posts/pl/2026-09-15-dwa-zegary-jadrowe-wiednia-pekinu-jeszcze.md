@@ -127,9 +127,9 @@ Osiągi tego podejścia są już nadzwyczajne. Najlepsze klasyczne zegary atomow
 | :--- | :--- | :--- |
 | **Mechanizm fizyczny** | Przejścia w powłoce elektronowej (cez/stront) | Przejścia protonów/neutronów w jądrze toru-229 |
 | **Medium sondujące** | Mikrofale lub lasery optyczne działające na elektrony walencyjne | Laser próżniowego ultrafioletu działający na jądra osadzone w krysztale |
-| **Podłoże** | Komórki gazowe lub chłodzone laserowo pułapki sieci optycznej | Stałe kryształy fluorku wapnia ($CaF_2$) |
-| **Obecne osiągi** | Miliardy lat na zyskanie/utratę $\le 1$ sekundy | Precyzja zegara atomowego osiągnięta w poszukiwaniu ciemnej materii |
-| **Docelowa stabilność** | Ugruntowany standard międzynarodowy ($10^{-18}$) | Przewidywana poprawa stabilności o rząd wielkości |
+| **Podłoże** | Komórki gazowe lub chłodzone laserowo pułapki sieci optycznej | Stałe kryształy fluorku wapnia (CaF₂) |
+| **Obecne osiągi** | Miliardy lat na zyskanie/utratę ≤ 1 sekundy | Precyzja zegara atomowego osiągnięta w poszukiwaniu ciemnej materii |
+| **Docelowa stabilność** | Ugruntowany standard międzynarodowy (10⁻¹⁸) | Przewidywana poprawa stabilności o rząd wielkości |
 | **Postać sprzętu** | Duża, delikatna aparatura próżniowa w laboratorium | Możliwość budowy kompaktowych, wytrzymałych urządzeń polowych w technologii ciała stałego |
 
 Nowe zegary przenoszą miejsce przeskoku. Zamiast elektronów w powłoce wykorzystują lasery, by protony i neutrony przeskakiwały między poziomami energetycznymi w jądrze atomu, w tym przypadku toru-229. Czas w zegarze jądrowym oblicza się, obserwując, jak laser dużej mocy oddziałuje z jądrem atomu.
@@ -226,7 +226,7 @@ Jeśli architektury oparte na stałych kryształach fluorku wapnia okażą się 
 
 ### Fizyka fundamentalna i astrofizyka
 
-Ponieważ jądrowe poziomy energetyczne zależą bezpośrednio od oddziaływania silnego i elektromagnetycznej stałej sprzężenia $\alpha$, zegary jądrowe oferują nową czułość w sprawdzaniu, czy fundamentalne stałe fizyczne zmieniają się w czasie kosmicznym, oraz w badaniu kandydatów na ciemną materię.
+Ponieważ jądrowe poziomy energetyczne zależą bezpośrednio od oddziaływania silnego i elektromagnetycznej stałej sprzężenia α, zegary jądrowe oferują nową czułość w sprawdzaniu, czy fundamentalne stałe fizyczne zmieniają się w czasie kosmicznym, oraz w badaniu kandydatów na ciemną materię.
 
 ## Podsumowanie
 

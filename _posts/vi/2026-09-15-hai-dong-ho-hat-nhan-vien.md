@@ -127,9 +127,9 @@ Hiệu năng của cách tiếp cận này vốn đã phi thường. Những đ�
 | :--- | :--- | :--- |
 | **Cơ chế vật lý** | Chuyển dời trong lớp vỏ electron (xêsi/stronti) | Chuyển dời proton/neutron bên trong hạt nhân thori-229 |
 | **Môi trường dò** | Vi sóng hoặc laser quang học lên electron hóa trị | Laser tử ngoại chân không lên hạt nhân gắn trong tinh thể |
-| **Chất nền** | Ô khí hoặc bẫy mạng quang học được làm lạnh bằng laser | Tinh thể canxi florua rắn ($CaF_2$) |
-| **Hiệu năng hiện tại** | Hàng tỷ năm để nhanh/chậm $\le 1$ giây | Đạt độ chính xác của đồng hồ nguyên tử khi tìm vật chất tối |
-| **Độ ổn định mục tiêu** | Chuẩn quốc tế đã xác lập ($10^{-18}$) | Dự kiến cải thiện độ ổn định một bậc độ lớn |
+| **Chất nền** | Ô khí hoặc bẫy mạng quang học được làm lạnh bằng laser | Tinh thể canxi florua rắn (CaF₂) |
+| **Hiệu năng hiện tại** | Hàng tỷ năm để nhanh/chậm ≤ 1 giây | Đạt độ chính xác của đồng hồ nguyên tử khi tìm vật chất tối |
+| **Độ ổn định mục tiêu** | Chuẩn quốc tế đã xác lập (10⁻¹⁸) | Dự kiến cải thiện độ ổn định một bậc độ lớn |
 | **Dạng phần cứng** | Thiết bị chân không phòng thí nghiệm lớn, mỏng manh | Tiềm năng cho thiết bị thực địa nhỏ gọn, bền chắc, thể rắn |
 
 Các đồng hồ mới thay đổi nơi bước nhảy diễn ra. Thay vì electron ở lớp vỏ, chúng dùng laser để khiến proton và neutron nhảy giữa các mức năng lượng bên trong hạt nhân của một nguyên tử, ở đây là thori-229. Thời gian trong đồng hồ hạt nhân được tính bằng cách theo dõi cách một chùm laser công suất cao tương tác với hạt nhân nguyên tử.
@@ -226,7 +226,7 @@ Nếu kiến trúc tinh thể canxi florua rắn tỏ ra ít cồng kềnh và �
 
 ### Vật lý cơ bản và vật lý thiên văn
 
-Vì các mức năng lượng hạt nhân phụ thuộc trực tiếp vào lực mạnh và hằng số tương tác điện từ $\alpha$, đồng hồ hạt nhân mang lại độ nhạy mới để kiểm tra xem các hằng số vật lý cơ bản có thay đổi theo thời gian vũ trụ hay không và để thăm dò các ứng viên vật chất tối.
+Vì các mức năng lượng hạt nhân phụ thuộc trực tiếp vào lực mạnh và hằng số tương tác điện từ α, đồng hồ hạt nhân mang lại độ nhạy mới để kiểm tra xem các hằng số vật lý cơ bản có thay đổi theo thời gian vũ trụ hay không và để thăm dò các ứng viên vật chất tối.
 
 ## Kết luận
 

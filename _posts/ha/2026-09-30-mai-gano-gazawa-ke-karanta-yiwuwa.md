@@ -121,7 +121,7 @@ Don haka hujjar tsarin tana tafiya kamar haka: alƙalai masu ƙirƙira suna da t
 
 | Fannin Tsari | Alƙalai LLM Masu Ƙirƙira (misali GPT-4 a matsayin Alƙali) | Masu Rarrabewa na Token Ɗaya (misali Llama Guard) | Na'urar Gano RLCD Mai Tambayoyi da Yawa (Jev) |
 | :--- | :--- | :--- | :--- |
-| **Hanyar Ba da Maki** | Cikakken zagayen decoding na autoregressive a kowane ma'auni | Yiwuwar softmax a kan token ɗaya na fitarwa | Tensor na yiwuwar da aka daidaita mai kai da yawa $P(\text{yes})$ |
+| **Hanyar Ba da Maki** | Cikakken zagayen decoding na autoregressive a kowane ma'auni | Yiwuwar softmax a kan token ɗaya na fitarwa | Tensor na yiwuwar da aka daidaita mai kai da yawa P(yes) |
 | **Tambayoyi a Kowane Kira** | Umarnin tantancewa 1 a kowane kiran samfuri | Lakabin rarrabewa 1 a kowane kiran samfuri | Tambayoyi masu yawa na binary/categorical/ordinal a kira 1 |
 | **Kuɗin Inference** | Mai yawa ($10–$50 a kowace mu'amala 1,000) | Matsakaici ($0.50–$2.00 a kowace mu'amala 1,000) | Ƙasa da sau 63 ($0.30 a cikakkun gwaje-gwaje 19) |
 | **Aikin AUROC** | Ya danganta da gwaji; yana fuskantar sauyin alƙali | Mai yawa a kan takamaiman rukunonin tsaro da aka horar | Tsakiyar AUROC 0.886 ba tare da horo ba a rukunoni 44 |

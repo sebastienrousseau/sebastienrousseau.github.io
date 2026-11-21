@@ -121,7 +121,7 @@ Vậy luận điểm về cấu trúc là thế này: giám khảo sinh văn b�
 
 | Khía cạnh kiến trúc | Giám khảo LLM sinh văn bản (vd. GPT-4 làm giám khảo) | Bộ phân loại một token (vd. Llama Guard) | Bộ phát hiện RLCD đa truy vấn (Jev) |
 | :--- | :--- | :--- | :--- |
-| **Cơ chế chấm điểm** | Một lượt giải mã tự hồi quy đầy đủ cho mỗi tiêu chí | Xác suất softmax trên một token đầu ra | Tensor xác suất đã hiệu chuẩn nhiều đầu $P(\text{yes})$ |
+| **Cơ chế chấm điểm** | Một lượt giải mã tự hồi quy đầy đủ cho mỗi tiêu chí | Xác suất softmax trên một token đầu ra | Tensor xác suất đã hiệu chuẩn nhiều đầu P(yes) |
 | **Số câu hỏi mỗi lần gọi** | 1 prompt đánh giá cho mỗi lần gọi mô hình | 1 nhãn phân loại cho mỗi lần gọi mô hình | Nhiều câu hỏi nhị phân/phân loại/thứ bậc trong 1 lần gọi |
 | **Chi phí suy luận** | Cao ($10–$50 cho 1.000 tương tác) | Trung bình ($0,50–$2,00 cho 1.000 tương tác) | Thấp hơn 63 lần ($0,30 cho 19 benchmark đầy đủ) |
 | **Hiệu năng AUROC** | Phụ thuộc benchmark; dễ bị trôi giám khảo | Cao ở các hạng mục an toàn cụ thể đã huấn luyện | AUROC trung vị 0,886 zero-shot trên 44 bộ |

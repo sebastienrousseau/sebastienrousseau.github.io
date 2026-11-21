@@ -158,7 +158,7 @@ Yazarlar alanın neden olduğu yerde durduğunu da açıklıyor. Bir öğrenme a
 
 | Boyut | Zaman Karmaşıklığı | Bellek Karmaşıklığı | Örneklem Karmaşıklığı |
 | :--- | :--- | :--- | :--- |
-| **İşlevsel Tanım** | $h$ hipotezini üretmek için gereken asimptotik çalışma süresi | Eğitim ve değerlendirme sırasında gereken bellek ayak izi | Kavram ailesini öğrenmek için gereken eğitim örneği sayısı $m$ |
+| **İşlevsel Tanım** | *h* hipotezini üretmek için gereken asimptotik çalışma süresi | Eğitim ve değerlendirme sırasında gereken bellek ayak izi | Kavram ailesini öğrenmek için gereken eğitim örneği sayısı *m* |
 | **Belirleyici Kuram** | Hesaplama karmaşıklığı (P ve NP, eğitimin zorluğu) | Mimarinin bellek kısıtları ve önbellek yerelliği | PAC öğrenme, Rademacher karmaşıklığı ve VC boyutu |
 | **Maliyet Sonucu** | Sunucu hesaplaması ve GPU/CPU çıkarım bütçesi | RAM ve yonga üstü SRAM kapasitesi | Veri toplama, açıklama ve etiketleme maliyeti |
 | **Kuramsal Rol** | Algoritmanın çalışma süresi verimliliğini ölçer | Bellek kaynağı verimliliğini ölçer | Görülmemiş veride genelleme hatasını ve sınırlarını belirler |

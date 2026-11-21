@@ -127,9 +127,9 @@ Die Leistung dieses Ansatzes ist bereits außergewöhnlich. Die besten herkömml
 | :--- | :--- | :--- |
 | **Physikalischer Mechanismus** | Übergänge in der Elektronenhülle (Cäsium/Strontium) | Übergänge von Protonen/Neutronen im Thorium-229-Kern |
 | **Abfragemedium** | Mikrowellen oder optische Laser an Valenzelektronen | Vakuum-Ultraviolett-Laser an in Kristall eingebetteten Kernen |
-| **Trägermaterial** | Gaszellen oder lasergekühlte optische Gitterfallen | Feste Calciumfluorid-Kristalle ($CaF_2$) |
-| **Aktuelle Leistung** | Milliarden Jahre, um $\le 1$ Sekunde zu gewinnen/verlieren | Präzision einer Atomuhr bei der Suche nach Dunkler Materie erreicht |
-| **Angestrebte Stabilität** | Etablierter internationaler Standard ($10^{-18}$) | Prognostizierte Verbesserung der Stabilität um eine Größenordnung |
+| **Trägermaterial** | Gaszellen oder lasergekühlte optische Gitterfallen | Feste Calciumfluorid-Kristalle (CaF₂) |
+| **Aktuelle Leistung** | Milliarden Jahre, um ≤ 1 Sekunde zu gewinnen/verlieren | Präzision einer Atomuhr bei der Suche nach Dunkler Materie erreicht |
+| **Angestrebte Stabilität** | Etablierter internationaler Standard (10⁻¹⁸) | Prognostizierte Verbesserung der Stabilität um eine Größenordnung |
 | **Bauform der Hardware** | Große, empfindliche Vakuumapparatur im Labor | Potenzial für kompakte, robuste Feldgeräte in Festkörperbauweise |
 
 Die neuen Uhren verlagern den Ort des Sprungs. Statt der Elektronen in der Hülle nutzen sie Laser, um Protonen und Neutronen zwischen Energieniveaus im Kern eines Atoms springen zu lassen, in diesem Fall Thorium-229. Die Zeit wird in einer Kernuhr berechnet, indem man beobachtet, wie ein Hochleistungslaser mit dem Kern eines Atoms wechselwirkt.
@@ -226,7 +226,7 @@ Erweisen sich Architekturen mit festen Calciumfluorid-Kristallen in der Produkti
 
 ### Grundlagenphysik und Astrophysik
 
-Weil Kernenergieniveaus direkt von der starken Wechselwirkung und der elektromagnetischen Kopplungskonstante $\alpha$ abhängen, bieten Kernuhren eine neuartige Empfindlichkeit, um zu prüfen, ob sich fundamentale physikalische Konstanten über kosmische Zeiträume ändern, und um Kandidaten für Dunkle Materie zu untersuchen.
+Weil Kernenergieniveaus direkt von der starken Wechselwirkung und der elektromagnetischen Kopplungskonstante α abhängen, bieten Kernuhren eine neuartige Empfindlichkeit, um zu prüfen, ob sich fundamentale physikalische Konstanten über kosmische Zeiträume ändern, und um Kandidaten für Dunkle Materie zu untersuchen.
 
 ## Fazit
 

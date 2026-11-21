@@ -158,7 +158,7 @@ Los autores explican también por qué el campo está donde está. Como el éxit
 
 | Dimensión | Complejidad temporal | Complejidad espacial | Complejidad muestral |
 | :--- | :--- | :--- | :--- |
-| **Definición operativa** | Tiempo de ejecución asintótico necesario para producir la hipótesis $h$ | Huella de memoria necesaria durante el entrenamiento y la evaluación | Número de ejemplos de entrenamiento $m$ necesarios para aprender una familia de conceptos |
+| **Definición operativa** | Tiempo de ejecución asintótico necesario para producir la hipótesis *h* | Huella de memoria necesaria durante el entrenamiento y la evaluación | Número de ejemplos de entrenamiento *m* necesarios para aprender una familia de conceptos |
 | **Teoría de referencia** | Complejidad computacional (P frente a NP, dificultad del entrenamiento) | Restricciones de memoria de la arquitectura y localidad de caché | Aprendizaje PAC, complejidad de Rademacher y dimensión VC |
 | **Implicación de coste** | Cómputo de servidor y presupuesto de inferencia en GPU/CPU | Capacidad de RAM y de SRAM en el chip | Coste de recogida, anotación y etiquetado de datos |
 | **Papel teórico** | Mide la eficiencia del algoritmo en tiempo de ejecución | Mide la eficiencia en recursos de memoria | Determina el error de generalización y las cotas sobre datos no vistos |

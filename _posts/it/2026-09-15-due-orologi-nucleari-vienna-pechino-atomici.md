@@ -127,9 +127,9 @@ Le prestazioni di questo approccio sono già straordinarie. I migliori orologi a
 | :--- | :--- | :--- |
 | **Meccanismo fisico** | Transizioni del guscio elettronico (cesio/stronzio) | Transizioni di protoni/neutroni nel nucleo di torio-229 |
 | **Mezzo di sondaggio** | Microonde o laser ottici sugli elettroni di valenza | Laser ultravioletto da vuoto su nuclei inseriti in un cristallo |
-| **Substrato ospite** | Celle a gas o trappole a reticolo ottico raffreddate a laser | Cristalli solidi di fluoruro di calcio ($CaF_2$) |
-| **Prestazioni attuali** | Miliardi di anni per guadagnare/perdere $\le 1$ secondo | Precisione pari a un orologio atomico nella ricerca della materia oscura |
-| **Stabilità prevista** | Standard internazionale consolidato ($10^{-18}$) | Miglioramento previsto della stabilità di un ordine di grandezza |
+| **Substrato ospite** | Celle a gas o trappole a reticolo ottico raffreddate a laser | Cristalli solidi di fluoruro di calcio (CaF₂) |
+| **Prestazioni attuali** | Miliardi di anni per guadagnare/perdere ≤ 1 secondo | Precisione pari a un orologio atomico nella ricerca della materia oscura |
+| **Stabilità prevista** | Standard internazionale consolidato (10⁻¹⁸) | Miglioramento previsto della stabilità di un ordine di grandezza |
 | **Formato dell'hardware** | Grandi e delicati apparati da laboratorio sotto vuoto | Potenziale per unità da campo compatte, robuste e a stato solido |
 
 I nuovi orologi spostano il luogo del salto. Invece degli elettroni del guscio, usano laser per far saltare protoni e neutroni tra livelli energetici all'interno del nucleo di un atomo, in questo caso il torio-229. Il tempo in un orologio nucleare si calcola osservando come un laser ad alta potenza interagisce con il nucleo di un atomo.
@@ -226,7 +226,7 @@ Se le architetture a cristalli solidi di fluoruro di calcio si dimostreranno men
 
 ### Fisica fondamentale e astrofisica
 
-Poiché i livelli energetici nucleari dipendono direttamente dalla forza forte e dalla costante di accoppiamento elettromagnetico $\alpha$, gli orologi nucleari offrono una sensibilità nuova per verificare se le costanti fisiche fondamentali variano nel tempo cosmico e per sondare i candidati alla materia oscura.
+Poiché i livelli energetici nucleari dipendono direttamente dalla forza forte e dalla costante di accoppiamento elettromagnetico α, gli orologi nucleari offrono una sensibilità nuova per verificare se le costanti fisiche fondamentali variano nel tempo cosmico e per sondare i candidati alla materia oscura.
 
 ## Conclusione
 

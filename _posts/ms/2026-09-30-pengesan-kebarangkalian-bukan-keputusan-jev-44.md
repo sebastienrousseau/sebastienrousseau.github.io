@@ -121,7 +121,7 @@ Jadi dakwaan strukturnya begini: hakim generatif mahal bagi setiap kriteria, dan
 
 | Dimensi Seni Bina | Hakim LLM Generatif (cth. GPT-4 sebagai Hakim) | Pengelas Token Tunggal (cth. Llama Guard) | Pengesan RLCD Berbilang Pertanyaan (Jev) |
 | :--- | :--- | :--- | :--- |
-| **Mekanisme Penilaian** | Satu laluan penyahkodan autoregresif penuh bagi setiap kriteria | Kebarangkalian softmax ke atas satu token output | Tensor kebarangkalian tertentukur berbilang kepala $P(\text{yes})$ |
+| **Mekanisme Penilaian** | Satu laluan penyahkodan autoregresif penuh bagi setiap kriteria | Kebarangkalian softmax ke atas satu token output | Tensor kebarangkalian tertentukur berbilang kepala P(yes) |
 | **Soalan bagi Setiap Panggilan** | 1 prompt penilaian bagi setiap panggilan model | 1 label pengelasan bagi setiap panggilan model | Banyak soalan binari/berkategori/ordinal dalam 1 panggilan |
 | **Kos Inferens** | Tinggi ($10–$50 bagi setiap 1,000 interaksi) | Sederhana ($0.50–$2.00 bagi setiap 1,000 interaksi) | 63× lebih rendah ($0.30 untuk 19 penanda aras penuh) |
 | **Prestasi AUROC** | Bergantung pada penanda aras; terdedah kepada hanyutan hakim | Tinggi pada kategori keselamatan terlatih tertentu | Median AUROC 0.886 zero-shot merentas 44 suite |

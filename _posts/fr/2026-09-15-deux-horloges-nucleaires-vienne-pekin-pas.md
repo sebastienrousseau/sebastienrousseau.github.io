@@ -127,9 +127,9 @@ Les performances de cette approche sont déjà extraordinaires. Les meilleures h
 | :--- | :--- | :--- |
 | **Mécanisme physique** | Transitions du cortège électronique (césium/strontium) | Transitions des protons/neutrons dans le noyau de thorium-229 |
 | **Moyen de sondage** | Micro-ondes ou lasers optiques sur les électrons de valence | Laser ultraviolet du vide sur des noyaux inclus dans un cristal |
-| **Substrat hôte** | Cellules à gaz ou pièges à réseau optique refroidis par laser | Cristaux solides de fluorure de calcium ($CaF_2$) |
-| **Performances actuelles** | Des milliards d'années pour gagner/perdre $\le 1$ seconde | Précision égale à celle des horloges atomiques dans une recherche de matière noire |
-| **Stabilité visée** | Référence internationale établie ($10^{-18}$) | Gain de stabilité d'un ordre de grandeur projeté |
+| **Substrat hôte** | Cellules à gaz ou pièges à réseau optique refroidis par laser | Cristaux solides de fluorure de calcium (CaF₂) |
+| **Performances actuelles** | Des milliards d'années pour gagner/perdre ≤ 1 seconde | Précision égale à celle des horloges atomiques dans une recherche de matière noire |
+| **Stabilité visée** | Référence internationale établie (10⁻¹⁸) | Gain de stabilité d'un ordre de grandeur projeté |
 | **Format matériel** | Grands appareils de laboratoire sous vide, fragiles | Potentiel d'unités de terrain compactes, durcies et à l'état solide |
 
 Les nouvelles horloges déplacent le lieu du saut. Au lieu des électrons du cortège, elles utilisent des lasers pour faire sauter des protons et des neutrons entre des niveaux d'énergie à l'intérieur du noyau d'un atome, ici le thorium-229. Dans une horloge nucléaire, le temps est calculé en observant la manière dont un laser de forte puissance interagit avec le noyau d'un atome.
@@ -226,7 +226,7 @@ Si les architectures à cristaux solides de fluorure de calcium se révèlent mo
 
 ### Physique fondamentale et astrophysique
 
-Parce que les niveaux d'énergie nucléaires dépendent directement de l'interaction forte et de la constante de couplage électromagnétique $\alpha$, les horloges nucléaires offrent une sensibilité nouvelle pour vérifier si les constantes physiques fondamentales varient à l'échelle du temps cosmique et pour sonder des candidats à la matière noire.
+Parce que les niveaux d'énergie nucléaires dépendent directement de l'interaction forte et de la constante de couplage électromagnétique α, les horloges nucléaires offrent une sensibilité nouvelle pour vérifier si les constantes physiques fondamentales varient à l'échelle du temps cosmique et pour sonder des candidats à la matière noire.
 
 ## Conclusion
 
