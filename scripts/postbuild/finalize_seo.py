@@ -11,11 +11,13 @@ writer, so nothing later re-adds what it removes. Order inside the pass:
 
 1. ``locale_indexing``: noindex + hreflang removal for the locales outside
    ``_data/seo/locale-indexing.json``.
-2. ``indexability.prune_sitemaps``: drops every ``<loc>`` that is now
-   noindex (the whole of each of those locales).
-3. ``unique_meta``: titles and descriptions, unique among the pages that
+2. ``thin_listings``: noindex on tag and category term pages and on
+   page 2+ of every listing.
+3. ``indexability.prune_sitemaps``: drops every ``<loc>`` that is now
+   noindex (the whole of each of those locales, and the thin listings).
+4. ``unique_meta``: titles and descriptions, unique among the pages that
    are still indexable.
-4. ``sitemap_lastmod``: the real modification date of each remaining URL.
+5. ``sitemap_lastmod``: the real modification date of each remaining URL.
 
 Idempotent: a second run changes nothing.
 """
@@ -33,6 +35,7 @@ import _lang_registry as _lr
 from postbuild_lib.indexability import is_indexable, prune_sitemaps
 from postbuild_lib.locale_indexing import apply_locale_indexing, page_locale
 from postbuild_lib.sitemap_lastmod import refresh_lastmod
+from postbuild_lib.thin_listings import apply_thin_noindex
 from postbuild_lib.unique_meta import make_unique
 from postbuild_transforms import build_comprehensive_lastmod_index
 
@@ -56,12 +59,13 @@ def main(public: Path = PUBLIC) -> int:
         print("finalize_seo: public/ not built", file=sys.stderr)
         return 1
     noindexed, hreflang_removed = apply_locale_indexing(public)
+    thin = apply_thin_noindex(public, frozenset(lang.code for lang in _lr.active()))
     pruned = prune_sitemaps(public)
     rewritten = make_unique(_entries(public))
     dated, undated = refresh_lastmod(public, build_comprehensive_lastmod_index())
     print(
         f"finalize_seo: {noindexed} page(s) set noindex, {hreflang_removed} hreflang link(s) "
-        f"removed, {pruned} sitemap entrie(s) pruned, {rewritten} page(s) given unique "
+        f"removed, {thin} thin listing page(s) set noindex, {pruned} sitemap entrie(s) pruned, {rewritten} page(s) given unique "
         f"title/description, lastmod on {dated} URL(s) ({undated} without a real date)"
     )
     return 0

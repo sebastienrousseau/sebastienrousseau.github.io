@@ -42,6 +42,7 @@ import _locale_indexing as _li
 import build_worker_assets as bwa
 from postbuild_lib.indexability import UTILITY_KEYS
 from postbuild_lib.sitemap_lastmod import linked_article_dates, source_date, split_locale, url_path
+from postbuild_lib.thin_listings import is_thin_listing
 from postbuild_transforms import build_comprehensive_lastmod_index
 
 pytestmark = pytest.mark.skipif(
@@ -108,13 +109,14 @@ def test_every_noindex_locale_page_is_noindex() -> None:
     assert not missing, f"{len(missing)} noindex-locale page(s) indexable, e.g. {missing[:5]}"
 
 
-def test_no_indexed_locale_page_is_noindex_except_utility_and_stubs() -> None:
+def test_no_indexed_locale_page_is_noindex_except_utility_stubs_and_thin_listings() -> None:
     bad = [
         rel
         for rel, loc, head in _pages()
         if _li.is_indexed(loc)
         and _is_noindex(head)
         and not _is_utility(rel, loc)
+        and not is_thin_listing(rel, CODES)
         and not _REFRESH_RE.search(head)
     ]
     assert not bad, f"{len(bad)} indexed-locale page(s) carry noindex, e.g. {bad[:5]}"
@@ -261,3 +263,10 @@ def test_worker_map_has_no_chain_loop_or_dead_target() -> None:
         assert page.is_file(), f"{source} -> {target}: target does not render"
         head = page.read_text(encoding="utf-8", errors="ignore")[:16384]
         assert not _REFRESH_RE.search(head), f"{source} -> {target}: target is itself a stub"
+
+
+def test_every_thin_listing_is_noindex() -> None:
+    missing = [
+        rel for rel, _loc, head in _pages() if is_thin_listing(rel, CODES) and not _is_noindex(head)
+    ]
+    assert not missing, f"{len(missing)} thin listing page(s) indexable, e.g. {missing[:5]}"
