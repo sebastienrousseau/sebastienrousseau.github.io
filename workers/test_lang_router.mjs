@@ -121,6 +121,24 @@ test('Clock /api/clock/hero-<theme>.svg short-circuits locale routing', async ()
   }
 });
 
+test('Retired /api/pdf/* answers 410 Gone without touching the origin', async () => {
+  const realF = globalThis.fetch;
+  let originHit = false;
+  globalThis.fetch = async () => {
+    originHit = true;
+    return new Response('', { status: 503 });
+  };
+  try {
+    const res = await callHandler(new Request('https://sebastienrousseau.com/api/pdf/2026-06-05-index-2026-de-la-banque-cloud.pdf'));
+    assert.equal(res.status, 410);
+    assert.equal(originHit, false);
+    assert.match(res.headers.get('Cache-Control'), /max-age=86400/);
+    assert.match(res.headers.get('X-Robots-Tag'), /noindex/);
+  } finally {
+    globalThis.fetch = realF;
+  }
+});
+
 // ---------------------------------------------------------------------------
 // isPageNavigation
 // ---------------------------------------------------------------------------

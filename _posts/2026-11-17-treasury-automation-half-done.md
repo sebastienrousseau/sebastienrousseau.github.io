@@ -110,20 +110,22 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # Liquidity Reimagined: Why Treasury Automation Is Still Only Half Done
 
-**Treasury teams have spent a decade digitising payments, yet only 39% describe their systems as mostly or fully automated, and that gap is where real-time, borderless and resilient liquidity will be won or lost.**
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> 87% of organisations report some treasury automation, but only 39% call their systems mostly or fully automated, and manual processing is the biggest payments pain point in a J.P. Morgan and ASUG survey of 107 respondents. The shift towards real-time, borderless and resilient liquidity depends on closing that gap, while faster transactions bring greater risk and AI-driven fraud is rising.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Only 39% of organisations call their treasury systems mostly or fully automated, says J.P. Morgan, and that gap now shapes real-time and resilient liquidity.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>The automation gap is the story.</strong> 87% have some automation; 48% describe theirs as only partial; 39% say mostly or fully automated.</li>
-  <li><strong>Liquidity has three strands.</strong> Real-time, borderless and resilient liquidity each rest on specific tools, from API connectivity to notional pooling.</li>
-  <li><strong>Speed cuts both ways.</strong> With increased transaction speed comes greater risk, and cybercriminals are using AI to power up their fraud attempts.</li>
-  <li><strong>Real-time payment schemes are widening.</strong> UPI processes more than 640 million transactions a day, and SEPA covers 41 countries.</li>
+  <li><strong>A decade of digitisation, and a number that should bother you.</strong> Payments and the wider treasury function have gone through a major period of digital transformation over the past decade.</li>
+  <li><strong>The backdrop: resilient growth, with friction.</strong> J.P.</li>
+  <li><strong>Three kinds of liquidity.</strong> Finance leaders are increasingly focusing on real-time liquidity, borderless liquidity and resilient liquidity, as well as dynamic working capital solutions.</li>
+  <li><strong>Always-on treasury, and what speed costs.</strong> Always-on treasury is a concept where funds can be moved around an organisation 24/7, based on programmable automation and solutions such as blockchain-based smart contracts.</li>
 </ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-07-27-verification-of-payee-production-vop-ipr-banks-2026">Verification of Payee in Production: Nine Months of Close Matches, Bulk Files, and Unpriced Liability</a>, <a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026">The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control</a>, <a href="https://sebastienrousseau.com/2026-11-16-quantum-safe-readiness-epaa">From Awareness to Action: What Quantum-Safe Readiness Requires Now</a>.</p>
 </aside>
 <!-- lead-end -->
+
+**Treasury teams have spent a decade digitising payments, yet only 39% describe their systems as mostly or fully automated, and that gap is where real-time, borderless and resilient liquidity will be won or lost.**
 
 > **Executive Summary**
 >
@@ -243,3 +245,16 @@ India's UPI, described as the world's largest RTP network, processes more than 6
 - CNBC, (2025). [CNBC's Inside India newsletter: UPI's global push ⧉](https://www.cnbc.com/2025/10/16/cnbcs-inside-india-newsletter-upis-global-push-seems-an-economic-strategy.html "UPI's global push"). CNBC.
 - European Payments Council, (2025). [EPC list of Countries in the SEPA Schemes' Geographical Scope ⧉](https://www.europeanpaymentscouncil.eu/sites/default/files/kb/file/2025-12/EPC409-09%20EPC%20List%20of%20SEPA%20Scheme%20Countries%20v8.0.pdf "SEPA scheme countries"). European Payments Council.
 - Finance Magnates, (2025). [Europe's Banks Brace for 24/7 Transfers as EU Instant Payments Rule Takes Effect ⧉](https://www.financemagnates.com/fintech/payments/europes-banks-brace-for-247-transfers-as-eu-instant-payments-rule-takes-effect/ "EU instant payments rule"). Finance Magnates.
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior payments and financial services leader writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services and the transformation of wholesale payments.</span><span class="author-credentials">More than 20 years in payments, banking and digital technology. Leads wholesale payments API products at HSBC · EPAA Quantum-Safe Working Group member. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-11-20">2026-11-20</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-07-27-verification-of-payee-production-vop-ipr-banks-2026" class="related-media" aria-label="Verification of Payee in Production: Nine Months of Close Matches, Bulk Files, and Unpriced Liability" tabindex="-1"><img alt="The underside of a lattice dome, hundreds of structural cells converging on a single bright aperture at the centre." src="https://cloudcdn.pro/stocks/images/luke-ellis-craven-yCsk1q2Eq0o.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-07-27-verification-of-payee-production-vop-ipr-banks-2026">Verification of Payee in Production: Nine Months of Close Matches, Bulk Files, and Unpriced Liability</a></h3><p><time datetime="2026-07-27">2026-07-27</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026" class="related-media" aria-label="The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control" tabindex="-1"><img alt="Abstract architectural photograph used as the visual key for the 2026 Autonomous Treasury Index — measuring agentic treasury workflows, programmable liquidity, tokenised deposits, real-time payments, and automated cash control" src="https://cloudcdn.pro/stocks/images/christopher-burns-Kj2SaNHG-hg.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-06-07-autonomous-treasury-index-programmable-liquidity-tokenised-deposits-2026">The Autonomous Treasury Index in 2026: Agentic Treasury, Programmable Liquidity, Tokenised Deposits, and Real-Time Cash Control</a></h3><p><time datetime="2026-06-07">2026-06-07</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-11-16-quantum-safe-readiness-epaa" class="related-media" aria-label="From Awareness to Action: What Quantum-Safe Readiness Requires Now" tabindex="-1"><img alt="Glowing violet and teal circuit traces running across a dark board, like data moving along a network of connections" src="https://cloudcdn.pro/stocks/images/getty-images-uEGPW7Q6Uhc.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-11-16-quantum-safe-readiness-epaa">From Awareness to Action: What Quantum-Safe Readiness Requires Now</a></h3><p><time datetime="2026-11-16">2026-11-16</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

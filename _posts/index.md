@@ -229,6 +229,42 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-11-19-nist-ir-8547-quantum-vulnerable-signatures/index.html" title="Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says" aria-label="Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says">
+<img alt="A square microchip lit from within on a dark circuit board" src="https://cloudcdn.pro/stocks/images/a-chosen-soul-IQi4jAlVeOI-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum · Post-Quantum Cryptography · NIST</span>
+<h3><a href="/2026-11-19-nist-ir-8547-quantum-vulnerable-signatures/index.html">Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-19">November 19, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> NIST IR 8547 treats the move to post-quantum cryptography as a long, uneven engineering programme rather than a single switch-over, and its treatment of digital signatures shows why: the old...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-11-18-jevact-verifying-agent-actions/index.html" title="Verifying Agent Actions Before They Run: JevAct's Decision-Model Gate" aria-label="Verifying Agent Actions Before They Run: JevAct's Decision-Model Gate">
+<img alt="Glowing blue hexagonal shapes linked across a dark background" src="https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI · AI Agents · Runtime Verification</span>
+<h3><a href="/2026-11-18-jevact-verifying-agent-actions/index.html">Verifying Agent Actions Before They Run: JevAct's Decision-Model Gate</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-18">November 18, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> Most agent loops run a tool call the moment the model proposes it, and JevAct's results suggest that a cheap, probability-based checkpoint placed just before execution can make tool-using agents more...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-11-17-treasury-automation-half-done/index.html" title="Liquidity Reimagined: Why Treasury Automation Is Still Only Half Done" aria-label="Liquidity Reimagined: Why Treasury Automation Is Still Only Half Done">
+<img alt="Close-up of red and green digits glowing on a digital display board" src="https://cloudcdn.pro/stocks/images/compagnons-R401qwThw7w-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Finance · Treasury · Liquidity</span>
+<h3><a href="/2026-11-17-treasury-automation-half-done/index.html">Liquidity Reimagined: Why Treasury Automation Is Still Only Half Done</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-17">November 17, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> Treasury teams have spent a decade digitising payments, yet only 39% describe their systems as mostly or fully automated, and that gap is where real-time, borderless and resilient liquidity will be...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-11-16-quantum-safe-readiness-epaa/index.html" title="From Awareness to Action: What Quantum-Safe Readiness Requires Now" aria-label="From Awareness to Action: What Quantum-Safe Readiness Requires Now">
 <img alt="Glowing violet and teal circuit traces running across a dark board, like data moving along a network of connections" src="https://cloudcdn.pro/stocks/images/getty-images-uEGPW7Q6Uhc.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>

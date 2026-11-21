@@ -14,6 +14,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.0.44] - 2026-11-20
+
+The retired PDF route answers 410 Gone, the 17 to 19 November articles are published, and the article queue is re-dated through 1 December.
+
+### Fixed
+
+- **`/api/pdf/*` answers 410 Gone**: Search Console reported 679 pages as "Server error (5xx)", all under `/api/pdf/`. The route was removed in #515, but requests still fell through to the origin, which answered 503 or 404, and a 503 tells Google to retry. The lang-router Worker now answers the prefix with 410 Gone and `X-Robots-Tag: noindex` before any other routing, so crawlers drop the URLs. A router test covers it. The Worker is published from the Cloudflare dashboard, so the fix is live once that deploy runs.
+
+### Content
+
+- **Published**: 17 November (treasury automation), 18 November (JevAct agent-action verification) and 19 November (NIST IR 8547 signatures), each with 34 locale translations and on the homepage grid.
+- **Queued and re-dated**: five drafts for 27 November to 1 December were added; the three Bank of England and FCA survey posts moved to 20, 21 and 22 November, and the drafts that held those dates moved to 28 November, 30 November and 1 December.
+
+---
+
 ## [0.0.43] - 2026-11-18
 
 The 2026 EPAA paper on the homepage, a deploy that a pa11y timeout can no longer block, and ssg 0.0.76. Versions 0.0.41 and 0.0.42 were merged without being released; their changes ship here.
