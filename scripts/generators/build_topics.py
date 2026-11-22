@@ -123,6 +123,8 @@ TOPICS: dict[str, dict[str, object]] = {
             "at Tier-1 institutions."
         ),
         "slugs": [
+            "2026-11-21-third-party-ai-governance-uk-firms",
+            "2026-11-20-ai-adoption-uk-financial-services-2026",
             "2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook",
             "2026-10-25-agentic-ai-breaks-the-assumption-behind-every-task-exposure-forecast",
             "2026-10-24-modernisation-never-finishes-exceptions-pile-up",
@@ -311,6 +313,8 @@ TOPICS: dict[str, dict[str, object]] = {
             "AI inside Tier-1 banks."
         ),
         "slugs": [
+            "2026-11-21-third-party-ai-governance-uk-firms",
+            "2026-11-20-ai-adoption-uk-financial-services-2026",
             "2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook",
             "2026-10-24-modernisation-never-finishes-exceptions-pile-up",
             "2026-10-13-physical-ai-robotics-workforce-governance-industrial-operations",

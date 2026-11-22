@@ -104,21 +104,45 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-11-19-nist-ir-8547-quantum-vulnerable-signatures/index.html" title="Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says">
-<img alt="A square microchip lit from within on a dark circuit board" src="https://cloudcdn.pro/stocks/images/a-chosen-soul-IQi4jAlVeOI-unsplash.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-11-21-third-party-ai-governance-uk-firms/index.html" title="Third-Party AI Is Now the Governance Problem for UK Financial Firms">
+<img alt="St Paul's Cathedral and the Millennium Bridge over the Thames at night" src="https://cloudcdn.pro/stocks/images/vadim-sherbakov-xS_RzdD5CFE.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Post-Quantum Cryptography · Nist · Digital Signatures</span>
-<h3><a href="/2026-11-19-nist-ir-8547-quantum-vulnerable-signatures/index.html" title="Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says">Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says</a></h3>
-<p class="newsroom-meta"><time datetime="2026-11-19">November 19, 2026</time> · Sebastien Rousseau</p>
-<p>NIST IR 8547 treats the move to post-quantum cryptography as a long, uneven engineering programme rather than a single switch-over, and its treatment of digital signatures shows why: the old algorithms are all vulnerable to Shor's Algorithm, the new ones come in several different shapes, and the history of cryptographi</p>
-<p><a class="pill ghost" href="/2026-11-19-nist-ir-8547-quantum-vulnerable-signatures/index.html" title="Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says">Read the full story</a></p>
+<span class="newsroom-eyebrow">Third-Party Ai Risk · Ai Governance · Bank Of England</span>
+<h3><a href="/2026-11-21-third-party-ai-governance-uk-firms/index.html" title="Third-Party AI Is Now the Governance Problem for UK Financial Firms">Third-Party AI Is Now the Governance Problem for UK Financial Firms</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-21">November 21, 2026</time> · Sebastien Rousseau</p>
+<p>AI use among surveyed UK financial firms has reached 86%, but the numbers that matter most sit beneath the headline: third parties now supply more than half of the high-materiality systems, and overseeing them is the governance challenge firms report most often.</p>
+<p><a class="pill ghost" href="/2026-11-21-third-party-ai-governance-uk-firms/index.html" title="Third-Party AI Is Now the Governance Problem for UK Financial Firms">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-11-20-ai-adoption-uk-financial-services-2026/index.html" title="AI in UK Finance: Broad Use, Cautious Agents, Third-Party Reliance" aria-label="AI in UK Finance: Broad Use, Cautious Agents, Third-Party Reliance">
+<img alt="The Canary Wharf London Underground roundel on a dimly lit platform" src="https://cloudcdn.pro/stocks/images/7eaven-HkA-V2dw9yA.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Ai In Financial Services · Bank Of England · Fca</span>
+<h3><a href="/2026-11-20-ai-adoption-uk-financial-services-2026/index.html" title="AI in UK Finance: Broad Use, Cautious Agents, Third-Party Reliance">AI in UK Finance: Broad Use, Cautious Agents, Third-Party Reliance</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-20">November 20, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Eighty-six per cent of surveyed firms now use AI, but the more telling numbers sit underneath that headline: most deployed agents advise rather than act, outside suppliers provide a growing share of the systems that matter most, and oversight of those suppliers is the governance challenge firms report most often.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-11-19-nist-ir-8547-quantum-vulnerable-signatures/index.html" title="Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says" aria-label="Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says">
+<img alt="A square microchip lit from within on a dark circuit board" src="https://cloudcdn.pro/stocks/images/a-chosen-soul-IQi4jAlVeOI-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Post-Quantum Cryptography · Nist · Digital Signatures</span>
+<h3><a href="/2026-11-19-nist-ir-8547-quantum-vulnerable-signatures/index.html" title="Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says">Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-19">November 19, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">NIST IR 8547 treats the move to post-quantum cryptography as a long, uneven engineering programme rather than a single switch-over, and its treatment of digital signatures shows why: the old algorithms are all vulnerable to Shor's Algorithm, the new ones come in several different shapes, and the history of cryptographi</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-11-18-jevact-verifying-agent-actions/index.html" title="Verifying Agent Actions Before They Run: JevAct's Decision-Model Gate" aria-label="Verifying Agent Actions Before They Run: JevAct's Decision-Model Gate">
