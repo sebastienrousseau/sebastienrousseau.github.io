@@ -449,7 +449,7 @@ Non. Le FSB indique explicitement que les 12 pratiques saines ne sont pas des no
 32. [EU AI Act Compliance for Financial Services: Complete 2026 Guide](https://matproof.com/blog/eu-ai-act-compliance-financial-services)
 33. [MAS and AI in Singapore Financial Services - AIRiskAware](https://www.airiskaware.com/insights/mas-ai-governance-financial-services-singapore)
 34. [MAS Releases AI Governance Framework Version 2 for Singapore Financial Services — AIMenta](https://aimenta.ai/news/singapore-mas-ai-governance-framework-v2-2026)
-35. [De Autonome Treasury-Index in 2026: agentische treasury en programmeerbare liquiditeit — Sebastien Rousseau](https://sebastienrousseau.com/nl/2026-06-07-de-autonome-treasury-index-in-2026/)
+35. [L'Indice de trésorerie autonome 2026 : trésorerie agentique, liquidité programmable, dépôts tokenisés et contrôle en temps réel, Sebastien Rousseau](https://sebastienrousseau.com/fr/2026-06-07-indice-de-tresorerie-autonome-2026-agentique/)
 
 
 <!-- enrich-start -->
