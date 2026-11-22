@@ -288,3 +288,32 @@ def test_emit_redirects_writes_sorted_map_or_skips_unbuilt(
     out = bwa.emit_redirects(public)
     assert out is not None
     assert json.loads(out.read_text()) == {"version": 1, "redirects": {"/a/": "/c/", "/b/": "/c/"}}
+
+
+def test_article_locales_prefers_english_then_first_locale(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    public = tmp_path / "public"
+    for rel in (
+        "2026-01-01-shared",
+        "fr/2026-01-01-shared",
+        "fr/2026-02-02-seulement",
+        "es/2026-02-02-seulement",
+        "zz/2026-03-03-inactive-locale",
+        "fr/a-propos",
+    ):
+        (public / rel).mkdir(parents=True)
+        (public / rel / "index.html").write_text("<html></html>")
+    _stub(public, "ja/2026-04-04-old-ja", "/ja/2026-04-04-new-ja/")
+    assert bwa.article_locales(public) == {
+        "2026-01-01-shared": "en",
+        "2026-02-02-seulement": "es",
+        "2026-04-04-old-ja": "ja",
+    }
+    monkeypatch.setattr(bwa, "OUT_DIR", tmp_path / "assets")
+    (tmp_path / "assets").mkdir()
+    assert bwa.emit_article_locales(public) is None
+    (public / "index.html").write_text("<html></html>")
+    out = bwa.emit_article_locales(public)
+    assert out is not None
+    assert list(json.loads(out.read_text())["articles"]) == sorted(bwa.article_locales(public))

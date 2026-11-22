@@ -19,6 +19,12 @@ Currently emitted:
     postbuild only materialises a stub when its target renders and its
     source does not: the build output is the ground truth. Skipped (the
     committed file is kept) when ``public/`` has not been built.
+  - article-locales.json: every dated article slug, built or a redirect
+    stub, mapped to its locale (``en`` for the root, preferred when a slug
+    exists in several). The retired ``/api/pdf/<slug>.pdf`` URLs carried no
+    locale; the Worker uses this to send a translated article's old PDF
+    URL to its locale, and to answer 410 for a slug that was never an
+    article. Skipped like redirects.json when ``public/`` is unbuilt.
 
 Adding a new asset:
   1. Add a builder function below.
@@ -137,6 +143,37 @@ def emit_redirects(public: Path = PUBLIC) -> Path | None:
     return out
 
 
+_ARTICLE_RE = re.compile(
+    r"^(?:([a-z]{2,3}(?:-[a-z]{2,4})?)/)?(\d{4}-\d{2}-\d{2}-[a-z0-9-]+)/index\.html$"
+)
+
+
+def article_locales(public: Path = PUBLIC) -> dict[str, str]:
+    """``{article slug: locale}`` for every dated article page, stubs included.
+
+    English wins a slug present in several locales; among translations the
+    alphabetically first locale wins, so the output is deterministic.
+    """
+    active = {lang.code for lang in registry.active()}
+    found: dict[str, set[str]] = {}
+    for page in public.rglob("index.html"):
+        m = _ARTICLE_RE.match(page.relative_to(public).as_posix())
+        if not m or (m.group(1) and m.group(1) not in active):
+            continue
+        found.setdefault(m.group(2), set()).add(m.group(1) or "en")
+    return {slug: "en" if "en" in codes else min(codes) for slug, codes in found.items()}
+
+
+def emit_article_locales(public: Path = PUBLIC) -> Path | None:
+    """Write ``article-locales.json``; None when ``public/`` is unbuilt."""
+    if not (public / "index.html").is_file():
+        return None
+    payload = {"version": 1, "articles": dict(sorted(article_locales(public).items()))}
+    out = OUT_DIR / "article-locales.json"
+    out.write_text(json.dumps(payload, separators=(",", ":")) + "\n", encoding="utf-8")
+    return out
+
+
 def main() -> int:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     written = [emit_lang_registry()]
@@ -145,6 +182,9 @@ def main() -> int:
         print("skip worker-assets/redirects.json: public/ not built, committed map kept")
     else:
         written.append(redirects)
+    locales = emit_article_locales()
+    if locales is not None:
+        written.append(locales)
     for path in written:
         rel = path.relative_to(ROOT)
         print(f"wrote {rel} ({path.stat().st_size} B)")

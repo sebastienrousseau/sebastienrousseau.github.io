@@ -1,5 +1,5 @@
 {
-  "_comment": "Article URLs that were published on main and no longer render, mapped to their successor. Keyed by locale; 'en' is the root. Sources: git rename detection over _posts/ on first-parent main, plus each locale's slugs.json history replayed through the builder rule OUT/EN_TO_FR.get(slug, slug). postbuild_lib.redirects materialises each key as a redirect page. Deliberately NOT listed: 2024-04-13-a-quantum-breakthrough-in-lattice-cryptography, removed with no successor — it stays a 404, which is the honest response for deleted content. Also listed: three URLs a translation-pipeline slug mangle or a renamed localised credit-page slug put into published links (undpasanding, gjord-med-statisk-sajtgenerator, dibuat-dengan-generator-situs-statis); Search Console still crawls them as 404s.",
+  "_comment": "Article URLs that were published on main and no longer render, mapped to their successor. Keyed by locale; 'en' is the root. Sources: git rename detection over _posts/ on first-parent main, plus each locale's slugs.json history replayed through the builder rule OUT/EN_TO_FR.get(slug, slug). postbuild_lib.redirects materialises each key as a redirect page. Deliberately NOT listed: 2024-04-13-a-quantum-breakthrough-in-lattice-cryptography, removed with no successor \u2014 it stays a 404, which is the honest response for deleted content. Also listed: three URLs a translation-pipeline slug mangle or a renamed localised credit-page slug put into published links (undpasanding, and every earlier localised slug of the made-with-static-site-generator credit page, from the made-with-shokunin key onward); Search Console still crawls them as 404s.",
   "en": {
     "2023-10-09-shokunin-the-fastest-rust-based-static-site-generator": "2023-10-09-the-fastest-rust-based-static-site-generator",
     "2023-10-16-hsh-the-creation-of-a-quantum-resistant-cryptographic-hash-library-built-with-rust": "2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh",
@@ -140,7 +140,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-rubutat-bashariyya-alshakl-am-wazifiyya-yatba",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-tajawuz-qanun-mur-alhawsaba-dakhil-aldhakira",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-aldhaka-alistinai-almaddi-mftwh-lam-sdr",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-aldhaka-alistinai-almaddi-wahawkamat-alquwa-alamila"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-aldhaka-alistinai-almaddi-wahawkamat-alquwa-alamila",
+    "masnu-bi-shokunin": "masnu-bi-static-site-generator"
   },
   "bn": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-pratham-kriptokarensir-ek-bachharer-parjalochana",
@@ -263,7 +264,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hiumanoyed-banam-fangshanal-robot-karkhanay-rup",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-murer-sutr-periye-ej-robotikser",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-open-sors-fizikal-ai-lerobot-imiteshan",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizikal-ai-karmibahini-gabharnyans-astha-daj"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizikal-ai-karmibahini-gabharnyans-astha-daj",
+    "shokunin-die-toiri": "static-site-generator-die-toiri"
   },
   "cs": {
     "2023-10-09-shokunin-nejrychlejsi-staticky-generator-v-rustu": "2023-10-09-nejrychlejsi-staticky-generator-v-rustu",
@@ -341,7 +343,9 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-humanoidi-nebo-funkcni-roboty-forma-nasleduje",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-vypocty-pameti-chiplety-edge-robotika-hranici",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fyzicka-ai-otevrenym-kodem-jak-lerobot",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fyzicka-ai-rizeni-pracovni-sily-duvera"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fyzicka-ai-rizeni-pracovni-sily-duvera",
+    "vytvoreno-shokunin": "vytvoreno-static-site-generator",
+    "vytvoreno-statickym-generatorem": "vytvoreno-static-site-generator"
   },
   "de": {
     "2023-10-09-shokunin-der-schnellste-rust-basierte-static-site-generator": "2023-10-09-der-schnellste-rust-basierte-static-site-generator",
@@ -411,7 +415,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-manufacturing-automation": "2026-10-13-humanoid-oder-funktional-fabrik-folgt-form",
     "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-memory-computing-chiplets-robotik-jenseits-moores",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-physische-ki-als-open-source-wie",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-physische-ki-belegschaft-vertrauen-haftung-neue"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-physische-ki-belegschaft-vertrauen-haftung-neue",
+    "erstellt-mit-shokunin": "erstellt-mit-static-site-generator"
   },
   "es": {
     "2023-10-09-shokunin-el-generador-de-sitios-estaticos-rust-mas-rapido": "2023-10-09-el-generador-de-sitios-estaticos-rust-mas-rapido",
@@ -483,7 +488,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robot-humanoide-funcional-fabrica-forma-sigue",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-computo-en-memoria-chiplets-robotica-mas",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fisica-de-codigo-abierto-como-lerobot",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fisica-gobernanza-laboral-confianza-responsabilidad-trabajo"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fisica-gobernanza-laboral-confianza-responsabilidad-trabajo",
+    "hecho-con-shokunin": "hecho-con-static-site-generator"
   },
   "fil": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-balik-tanaw-sa-taon",
@@ -613,7 +619,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-humanoid-laban-functional-robotics-anyo-ayon",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-lampas-sa-batas-ni-moore",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-open-source-physical-ai-lerobot-demokratisasyon",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-physical-ai-pamamahala-manggagawa-tiwala-pananagutan"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-physical-ai-pamamahala-manggagawa-tiwala-pananagutan",
+    "ginawa-sa-shokunin": "ginawa-sa-static-site-generator"
   },
   "fr": {
     "2023-10-09-shokunin-generateur-de-sites-statiques-rust-le-plus-rapide": "2023-10-09-generateur-de-sites-statiques-rust-le-plus-rapide",
@@ -668,7 +675,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robot-humanoide-ou-fonctionnel-usine-forme",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-calcul-en-memoire-chiplets-depasser-loi",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-physique-open-source-comment-lerobot-democratise",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-physique-et-gouvernance-travail-confiance-responsabilite"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-physique-et-gouvernance-travail-confiance-responsabilite",
+    "concu-avec-shokunin": "concu-avec-static-site-generator"
   },
   "ha": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-waiwayen-shekara-guda-cryptocurrency-farko",
@@ -790,7 +798,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robot-mai-siffar-mutum-aiki-siffa",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-wuce-dokar-moore-in-memory-compute",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-physical-ai-budadden-tushe-lerobot-bude",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-physical-ai-kula-kwadago-amana-alhaki"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-physical-ai-kula-kwadago-amana-alhaki",
+    "an-yi-da-shokunin": "an-yi-da-static-site-generator"
   },
   "he": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-skirat-shana",
@@ -919,7 +928,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robotim-dmuyei-adam-av-funktsionaliyim-hatsura",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-maavar-lechok-mvr-mihshuv-betokh-hazikaron",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-bynh-malakhutit-fizit-bekod-ptvch-lerobot",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-bynh-malakhutit-fizit-umimshal-ovdim-emun"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-bynh-malakhutit-fizit-umimshal-ovdim-emun",
+    "noseh-im-shokunin": "noseh-im-static-site-generator"
   },
   "hi": {
     "2023-10-09-shokunin-sabse-tez-rust-static-site-generator": "2023-10-09-sabse-tez-rust-static-site-generator",
@@ -997,7 +1007,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hyumanoid-banam-fankshanal-robot-faiktari-rup",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-mur-ke-niyam-age-ej-robotiks",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-opan-sors-fizikal-ai-lerobot-imiteshan",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizikal-ai-karyabal-gavarnens-bharosa-dayitv"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizikal-ai-karyabal-gavarnens-bharosa-dayitv",
+    "shokunin-se-banaya": "static-site-generator-se-banaya"
   },
   "id": {
     "2023-10-09-shokunin-generator-situs-statis-rust-tercepat": "2023-10-09-generator-situs-statis-rust-tercepat",
@@ -1074,7 +1085,8 @@
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-melampaui-hukum-moore-komputasi-dalam-memori",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fisik-sumber-terbuka-lerobot-membuat-robotika",
     "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fisik-dan-tata-kelola-tenaga-kerja",
-    "dibuat-dengan-generator-situs-statis": "dibuat-dengan-static-site-generator"
+    "dibuat-dengan-generator-situs-statis": "dibuat-dengan-static-site-generator",
+    "dibuat-dengan-shokunin": "dibuat-dengan-static-site-generator"
   },
   "it": {
     "2023-10-09-shokunin-il-generatore-di-siti-statici-rust-piu-veloce": "2023-10-09-il-generatore-di-siti-statici-rust-piu-veloce",
@@ -1144,7 +1156,9 @@
     "2026-10-13-humanoid-vs-functional-robotics-manufacturing-automation": "2026-10-13-robot-umanoidi-funzionali-fabbrica-forma-segue",
     "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-calcolo-in-memoria-chiplet-robotica-oltre",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fisica-open-source-come-lerobot-democratizza",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fisica-governance-lavoro-fiducia-responsabilita"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fisica-governance-lavoro-fiducia-responsabilita",
+    "fatto-con-generatore-di-siti-statici": "fatto-con-static-site-generator",
+    "fatto-con-shokunin": "fatto-con-static-site-generator"
   },
   "ja": {
     "2023-10-09-shokunin-saisoku-no-rust-sei-shizen-saito-jenereta": "2023-10-09-saisoku-no-rust-sei-shizen-saito-jenereta",
@@ -1222,7 +1236,9 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hyumanoido-tai-kinogata-robotto-seizo-genba",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-muua-hosoku-saki-inmemori-enzan-chippuretto",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-opunsosu-fijikaru-ai-hugging-face-lerobot",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fijikaru-ai-rodoryoku-gabanansu-shinrai-sekinin"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fijikaru-ai-rodoryoku-gabanansu-shinrai-sekinin",
+    "shokunin-de-sakusei": "static-site-generator-de-sakusei",
+    "sutaitikku-saito-jenereta-de-sakusei": "static-site-generator-de-sakusei"
   },
   "ko": {
     "2023-10-09-shokunin-choegoseok-rust-gibon-jeongjeoksaiteu-saengseonggi": "2023-10-09-choegoseok-rust-gibon-jeongjeoksaiteu-saengseonggi",
@@ -1298,7 +1314,9 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hyumeonoideu-dae-gineunghyeong-robot-jejo-hyeonjangeseoneun",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-mueoui-beopchik-neomeoro-inmemori-yeonsangwa-chipreti",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-opeunsoseu-pijikeol-ai-hugging-face-lerobot",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-pijikeol-ai-inryeok-geobeoneonseu-sinroe-chaekim"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-pijikeol-ai-inryeok-geobeoneonseu-sinroe-chaekim",
+    "jeongjeok-saiteu-saengseonggi-ro-jejak": "static-site-generator-euro-jejak",
+    "shokunin-euro-jejak": "static-site-generator-euro-jejak"
   },
   "nl": {
     "2023-10-09-shokunin-de-snelste-rust-gebaseerde-statische-sitegenerator": "2023-10-09-de-snelste-rust-gebaseerde-statische-sitegenerator",
@@ -1376,7 +1394,9 @@
     "2026-10-13-humanoid-vs-functional-robotics-manufacturing-automation": "2026-10-13-humanoide-of-functionele-robots-fabriek-vorm",
     "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-rekenen-in-geheugen-chiplets-robotica-voorbij",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-opensource-fysieke-ai-hoe-lerobot-robotica",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fysieke-ai-governance-werk-vertrouwen-aansprakelijkheid"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fysieke-ai-governance-werk-vertrouwen-aansprakelijkheid",
+    "gemaakt-met-shokunin": "gemaakt-met-static-site-generator",
+    "gemaakt-met-statische-sitegenerator": "gemaakt-met-static-site-generator"
   },
   "pl": {
     "2023-10-09-shokunin-najszybszy-generator-stron-statycznych-w-rust": "2023-10-09-najszybszy-generator-stron-statycznych-w-rust",
@@ -1453,7 +1473,9 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-humanoidy-czy-roboty-funkcjonalne-forma-podaza",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-obliczenia-pamieci-chiplety-robotyka-brzegowa-poza",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fizyczna-ai-open-source-jak-lerobot",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizyczna-ai-pracownicy-zaufanie-odpowiedzialnosc-nowa"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizyczna-ai-pracownicy-zaufanie-odpowiedzialnosc-nowa",
+    "stworzone-statycznym-generatorem": "stworzone-w-static-site-generator",
+    "stworzone-w-shokunin": "stworzone-w-static-site-generator"
   },
   "pt-br": {
     "2023-10-09-shokunin-o-gerador-de-sites-estaticos-rust-mais-rapido": "2023-10-09-o-gerador-de-sites-estaticos-rust-mais-rapido",
@@ -1523,7 +1545,9 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robos-humanoides-ou-funcionais-na-fabrica",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-computacao-em-memoria-chiplets-robotica-alem",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fisica-de-codigo-aberto-como-lerobot",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fisica-governanca-trabalho-confianca-responsabilidade"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fisica-governanca-trabalho-confianca-responsabilidade",
+    "feito-com-gerador-de-sites-estaticos": "feito-com-static-site-generator",
+    "feito-com-shokunin": "feito-com-static-site-generator"
   },
   "ro": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-retrospectiva-primului-an-primei-criptomonede",
@@ -1645,7 +1669,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-manufacturing-automation": "2026-10-13-roboti-umanoizi-sau-functionali-forma-urmeaza",
     "2026-10-13-moving-past-moore-law-memory-compute": "2026-10-13-calcul-in-memorie-chipleturi-robotica-dincolo",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fizica-open-source-cum-democratizeaza-lerobot",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizica-si-guvernanta-fortei-munca-incredere"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizica-si-guvernanta-fortei-munca-incredere",
+    "facut-cu-shokunin": "facut-cu-static-site-generator"
   },
   "ru": {
     "2023-10-09-shokunin-samyi-bystryi-staticheskii-generator-na-rust": "2023-10-09-samyi-bystryi-staticheskii-generator-na-rust",
@@ -1721,7 +1746,9 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-gumanoidy-ili-funktsionalnye-roboty-zavode-forma",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-vychisleniya-pamyati-chiplety-robototekhnika-predelami-zakona",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-otkrytyy-fizicheskiy-ii-lerobot-delaet-robototekhniku",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizicheskiy-ii-upravlenie-personalom-doverie-otvetstvennost"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizicheskiy-ii-upravlenie-personalom-doverie-otvetstvennost",
+    "sdelano-s-shokunin": "sdelano-s-static-site-generator",
+    "sdelano-so-staticheskim-generatorom": "sdelano-s-static-site-generator"
   },
   "sv": {
     "2023-10-09-shokunin-snabbaste-rust-baserade-statiska-sajtgeneratorn": "2023-10-09-snabbaste-rust-baserade-statiska-sajtgeneratorn",
@@ -1800,7 +1827,8 @@
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-bortom-moores-lag-minnesintern-berakning-chiplets",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-fysisk-ai-oppen-kallkod-sa-demokratiserar",
     "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fysisk-ai-arbetskraftens-styrning-tillit-ansvar",
-    "gjord-med-statisk-sajtgenerator": "gjord-med-static-site-generator"
+    "gjord-med-statisk-sajtgenerator": "gjord-med-static-site-generator",
+    "gjord-med-shokunin": "gjord-med-static-site-generator"
   },
   "th": {
     "2023-10-09-shokunin-static-site-generator-thi-reo-thi-sut-bon-rust": "2023-10-09-static-site-generator-thi-reo-thi-sut-bon-rust",
@@ -1877,7 +1905,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-hiumaenoi-patha-hunyon-choeng-nathi-rongngan",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-kaokham-kot-mua-pramuanphon-nuaikhwamcham-chiplet",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-kaiyaphap-openson-lerobot-poet-witthayakan-hunyon",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-kaiyaphap-kap-thammaphiban-kamlangkhon-khwamwaiwangchai-khwamrabphid"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-kaiyaphap-kap-thammaphiban-kamlangkhon-khwamwaiwangchai-khwamrabphid",
+    "sang-duai-shokunin": "sang-duai-static-site-generator"
   },
   "tr": {
     "2023-10-09-shokunin-rust-tabanli-en-hizli-statik-site-jeneratoru": "2023-10-09-rust-tabanli-en-hizli-statik-site-jeneratoru",
@@ -1954,7 +1983,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-insansi-mi-islevsel-robot-mu-fabrikada",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-bellek-ici-hesaplama-cipletler-robotikte-moore",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-acik-kaynak-fiziksel-yapay-zeka-lerobot",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fiziksel-yapay-zeka-isgucu-yonetisimi-guven"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fiziksel-yapay-zeka-isgucu-yonetisimi-guven",
+    "shokunin-ile-yapildi": "static-site-generator-ile-yapildi"
   },
   "uk": {
     "2023-10-09-shokunin-naishvydshyi-rust-statychnyy-henerator": "2023-10-09-naishvydshyi-rust-statychnyy-henerator",
@@ -2031,7 +2061,9 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-humanoyidy-chy-funktsionalni-roboty-zavodi-forma",
     "2026-10-13-moving-past-moores-law-in-memory": "2026-10-13-poza-zakonom-mura-analohovi-obchyslennya",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-vidkrytyy-fizychnyy-shi-lerobot-robyt-robototekhniku",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizychnyy-shi-ta-upravlinnya-personalom-dovira"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-fizychnyy-shi-ta-upravlinnya-personalom-dovira",
+    "stvoreno-statychnym-generatorom": "stvoreno-z-static-site-generator",
+    "stvoreno-z-shokunin": "stvoreno-z-static-site-generator"
   },
   "vi": {
     "2023-10-09-shokunin-bo-tao-trang-tinh-rust-nhanh-nhat": "2023-10-09-bo-tao-trang-tinh-rust-nhanh-nhat",
@@ -2109,7 +2141,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robot-hinh-nguoi-hay-chuc-nang",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-vuot-dinh-luat-moore-tinh-toan",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-vat-ly-ma-nguon-mo-lerobot",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-vat-ly-quan-tri-luc-luong"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-vat-ly-quan-tri-luc-luong",
+    "tao-bang-shokunin": "tao-bang-static-site-generator"
   },
   "yo": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-atunyewo-odun-kan-cryptocurrency-akoko",
@@ -2232,7 +2265,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-robooti-bi-eniyan-tabi-ise-irisi",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-koja-ofin-moore-in-memory-compute",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-physical-ai-orisun-sisi-lerobot-robotics",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-physical-ai-isakoso-osise-igbekele-ojuse"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-physical-ai-isakoso-osise-igbekele-ojuse",
+    "shokunin-lo-ti-se": "static-site-generator-lo-ti-se"
   },
   "zh-hans": {
     "2023-10-09-shokunin-zuikuai-de-rust-jingtai-zhandian-shengchengqi": "2023-10-09-zuikuai-de-rust-jingtai-zhandian-shengchengqi",
@@ -2308,7 +2342,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing": "2026-10-13-renxing-jiqiren-gongnengxing-gongchang-chejian",
     "2026-10-13-moving-past-moore-law-in-memory": "2026-10-13-chaoyue-moer-dinglu-cunnei-jisuan-xinli",
     "2026-10-13-open-source-physical-ai-how-hugging": "2026-10-13-kaiyuan-wuli-ai-hugging-face-lerobot",
-    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-wuli-ai-laodongli-zhili-xinren-zeren"
+    "2026-10-13-physical-ai-and-workforce-governance-trust": "2026-10-13-wuli-ai-laodongli-zhili-xinren-zeren",
+    "yong-shokunin-zhizuo": "yong-static-site-generator-zhizuo"
   },
   "zh-hant": {
     "2023-10-09-shokunin-zuikuai-de-rust-jingtai-zhandian-shengchengqi-tw": "2023-10-09-zuikuai-de-rust-jingtai-zhandian-shengchengqi-tw",
@@ -2384,7 +2419,8 @@
     "2026-10-13-humanoid-vs-functional-robotics-in-manufacturing-tw": "2026-10-13-renxing-jiqiren-gongnengxing-gongchang-xianchang-tw",
     "2026-10-13-moving-past-moore-law-in-memory-tw": "2026-10-13-chaoyue-moer-dinglu-jiyitinei-yunsuan-xiaojingpian-tw",
     "2026-10-13-open-source-physical-ai-how-hugging-tw": "2026-10-13-kaiyuan-shiti-ai-hugging-face-lerobot-tw",
-    "2026-10-13-physical-ai-and-workforce-governance-trust-tw": "2026-10-13-shiti-ai-laodongli-zhili-xinren-zeren-tw"
+    "2026-10-13-physical-ai-and-workforce-governance-trust-tw": "2026-10-13-shiti-ai-laodongli-zhili-xinren-zeren-tw",
+    "yong-shokunin-zhizuo-tw": "yong-static-site-generator-zhizuo-tw"
   },
   "el": {
     "2018-01-01-bitcoin-the-year-in-review": "2018-01-01-bitcoin-mia-anaskopisi-chronias-protou-kryptonomismatos",

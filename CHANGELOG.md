@@ -29,6 +29,8 @@ Search recovery, second attempt. Search Console shows a site-wide demotion from 
 
 ### Fixed
 
+- **Old PDF links of translated articles 301 to a 404**: the first `/api/pdf/<slug>.pdf` form carried no locale, so a translated slug such as `2025-09-01-pagos-resistentes-al-cuantico-epaa` was sent to the root, where it does not exist. `build_worker_assets.py` now emits `worker-assets/article-locales.json` (every dated article slug, built or a redirect stub, mapped to its locale), and the Worker sends the URL to `/<lang>/<slug>/`; a slug that was never an article answers 410 Gone. Search Console listed these among its 679 `/api/pdf/` URLs.
+- **Earlier slugs of the localised credit page are 404**: each locale's `made-with-static-site-generator` page was renamed twice (from the `made-with-shokunin` key, then to the `static-site-generator` wording), and only two locales kept a redirect. `_data/redirects/articles.json` now maps all 36 earlier slugs to the current page.
 - **Content links point at final URLs**: 4,651 links in 1,480 source files (mostly translations, plus front-matter `id` and `permalink` values) named retired URLs. `scripts/seo_and_audit/check_stale_links.py --fix` rewrote them to their final targets, and a unit test fails if one is committed again.
 
 ---
