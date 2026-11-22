@@ -311,7 +311,7 @@ site_software: "Static Site Generator, Rust"
 </div>
 </section>
 
-<section class="feat alt reveal" aria-labelledby="publications" data-audience="boards engineers regulators">
+<section class="feat reveal" aria-labelledby="publications" data-audience="boards engineers regulators">
 <div class="wrap">
 <p class="feat-eyebrow">On Medium</p>
 <h2 id="publications" class="feat-headline center">Three publications, one desk.</h2>
