@@ -229,6 +229,30 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-11-21-third-party-ai-governance-uk-firms/index.html" title="Third-Party AI Is Now the Governance Problem for UK Financial Firms" aria-label="Third-Party AI Is Now the Governance Problem for UK Financial Firms">
+<img alt="St Paul's Cathedral and the Millennium Bridge over the Thames at night" src="https://cloudcdn.pro/stocks/images/vadim-sherbakov-xS_RzdD5CFE.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI · AI Governance · Third-Party Risk</span>
+<h3><a href="/2026-11-21-third-party-ai-governance-uk-firms/index.html">Third-Party AI Is Now the Governance Problem for UK Financial Firms</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-21">November 21, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> AI use among surveyed UK financial firms has reached 86%, but the numbers that matter most sit beneath the headline: third parties now supply more than half of the high-materiality systems, and...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-11-20-ai-adoption-uk-financial-services-2026/index.html" title="AI in UK Finance: Broad Use, Cautious Agents, Third-Party Reliance" aria-label="AI in UK Finance: Broad Use, Cautious Agents, Third-Party Reliance">
+<img alt="The Canary Wharf London Underground roundel on a dimly lit platform" src="https://cloudcdn.pro/stocks/images/7eaven-HkA-V2dw9yA.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI · Financial Services · Bank of England</span>
+<h3><a href="/2026-11-20-ai-adoption-uk-financial-services-2026/index.html">AI in UK Finance: Broad Use, Cautious Agents, Third-Party Reliance</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-20">November 20, 2026</time></p>
+<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> Eighty-six per cent of surveyed firms now use AI, but the more telling numbers sit underneath that headline: most deployed agents advise rather than act, outside suppliers provide a growing share of...</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-11-19-nist-ir-8547-quantum-vulnerable-signatures/index.html" title="Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says" aria-label="Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says">
 <img alt="A square microchip lit from within on a dark circuit board" src="https://cloudcdn.pro/stocks/images/a-chosen-soul-IQi4jAlVeOI-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -273,30 +297,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-11-16-quantum-safe-readiness-epaa/index.html">From Awareness to Action: What Quantum-Safe Readiness Requires Now</a></h3>
 <p class="newsroom-meta"><time datetime="2026-11-16">November 16, 2026</time></p>
 <p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> Regulators in Singapore and Hong Kong are setting expectations for quantum-safe readiness, and Hong Kong's banking sector scored 2.3 out of 10 on the Quantum Preparedness Index. EPAA's new white paper argues that progress...</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html" title="Why the FCA Is Regulating AI Without an AI Rulebook" aria-label="Why the FCA Is Regulating AI Without an AI Rulebook">
-<img alt="City of London financial district architecture representing FCA outcomes-based AI regulation and UK financial services governance." src="https://cloudcdn.pro/stocks/images/brett-sayles-7963572.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">AI · AI Governance · Compliance</span>
-<h3><a href="/2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook/index.html">Why the FCA Is Regulating AI Without an AI Rulebook</a></h3>
-<p class="newsroom-meta"><time datetime="2026-10-28">October 28, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> The FCA describes itself as a technology-agnostic, principles-based and outcomes-focused regulator, and it applies that stance to AI. Its rules don't usually mandate or prohibit specific...</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude/index.html" title="The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour" aria-label="The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour">
-<img alt="Cryptographic hardware and binary patterns illustrating NIST ECDSA elliptic curve seeds, lrand48 PRNG states and AI cryptanalysis." src="https://cloudcdn.pro/stocks/images/galina-nelyubova-NRWhMzpq8z4.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Cybersecurity · Cryptography · AI</span>
-<h3><a href="/2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude/index.html">The Mystery Seeds Behind NIST's Curves Were Never Hashes, and Claude Found Out in Under Half an Hour</a></h3>
-<p class="newsroom-meta"><time datetime="2026-10-26">October 26, 2026</time></p>
-<p class="newsroom-tldr"><span class="newsroom-tldr-label">TL;DR</span> The seeds published with the NIST P-192, P-224, P-256, P-384 and P-521 curves were never hash outputs. They came from the C library's lrand48 generator, seeded by Unix timestamp. Claude worked...</p>
 </div>
 </article>
 

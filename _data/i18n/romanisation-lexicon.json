@@ -492,7 +492,19 @@
     "ゲート": "gate",
     "脆弱": "zeijaku",
     "署名": "shomei",
-    "移行": "iko"
+    "移行": "iko",
+    "英国": "eikoku",
+    "金融": "kinyu",
+    "広範な": "kohan na",
+    "利用": "riyo",
+    "慎重な": "shincho na",
+    "活用": "katsuyo",
+    "第三者": "daisansha",
+    "依存": "izon",
+    "金融機関": "kinyu kikan",
+    "ガバナンス": "governance",
+    "上の": "jo no",
+    "中心課題": "chushin kadai"
   },
   "zh-hans": {
     "读懂": "dudong",
@@ -579,7 +591,21 @@
     "关卡": "guanka",
     "告别": "gaobie",
     "脆弱": "cuiruo",
-    "签名": "qianming"
+    "签名": "qianming",
+    "英国": "yingguo",
+    "金融业": "jinrongye",
+    "调查": "diaocha",
+    "应用": "yingyong",
+    "广泛": "guangfan",
+    "审慎": "shenshen",
+    "依赖": "yilai",
+    "第三方": "disanfang",
+    "已": "yi",
+    "成为": "chengwei",
+    "金融机构": "jinrong jigou",
+    "核心": "hexin",
+    "治理": "zhili",
+    "难题": "nanti"
   },
   "zh-hant": {
     "讀懂": "dudong",
@@ -666,6 +692,18 @@
     "關卡": "guanka",
     "告別": "gaobie",
     "脆弱": "cuiruo",
-    "簽章": "qianzhang"
+    "簽章": "qianzhang",
+    "英國": "yingguo",
+    "金融業": "jinrongye",
+    "廣泛": "guangfan",
+    "採用": "caiyong",
+    "審慎": "shenshen",
+    "部署": "bushu",
+    "倚重": "yizhong",
+    "第三方": "disanfang",
+    "已成": "yicheng",
+    "金融機構": "jinrong jigou",
+    "治理": "zhili",
+    "難題": "nanti"
   }
 }

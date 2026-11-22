@@ -101,15 +101,15 @@ site_software: "Static Site Generator, Rust"
 
 <section class="proof-rail projects-proof" aria-label="Open source by the numbers">
 <div class="kpi-cell">
-  <span class="kpi-cell-value" data-kpi="downloads_total">52.7M</span>
+  <span class="kpi-cell-value" data-kpi="downloads_total">53.8M</span>
   <span class="kpi-cell-label">Open-source downloads</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value" data-kpi="github_stars">726</span>
+  <span class="kpi-cell-value" data-kpi="github_stars">760</span>
   <span class="kpi-cell-label">GitHub stars</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value" data-kpi="articles_signed">120</span>
+  <span class="kpi-cell-value" data-kpi="articles_signed">126</span>
   <span class="kpi-cell-label">Sigstore-signed articles</span>
 </div>
 <div class="kpi-cell">
