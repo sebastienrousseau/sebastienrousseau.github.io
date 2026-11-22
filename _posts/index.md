@@ -311,6 +311,56 @@ site_software: "Static Site Generator, Rust"
 </div>
 </section>
 
+<section class="feat alt reveal" aria-labelledby="publications" data-audience="boards engineers regulators">
+<div class="wrap">
+<p class="feat-eyebrow">On Medium</p>
+<h2 id="publications" class="feat-headline center">Three publications, one desk.</h2>
+<p class="feat-sub center">Every article here is also published on Medium in the publication for its field, with a link back to the original.</p>
+
+<div class="newsroom-grid feat-latest-grid">
+
+<!-- medium-publications:start -->
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="https://news.bankingonai.co/" title="Banking On AI on Medium" aria-label="Banking On AI on Medium" rel="noopener">
+<img alt="A long dark bench on a vast paved plaza seen from directly above, with a single seated figure at the far right edge and open ground stretching away from them." src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Medium publication</span>
+<h3><a href="https://news.bankingonai.co/" rel="noopener">Banking On AI</a></h3>
+<p class="newsroom-meta">Build the Bank of Tomorrow. Intelligently. · 21 articles on Medium</p>
+<p class="newsroom-excerpt">Agentic AI, model risk and AI governance for banks and payments. Every story there links back to its original here.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="https://news.bankingonquantum.com/" title="Banking On Quantum on Medium" aria-label="Banking On Quantum on Medium" rel="noopener">
+<img alt="Glowing violet and teal circuit traces running across a dark board, like data moving along a network of connections" src="https://cloudcdn.pro/stocks/images/getty-images-uEGPW7Q6Uhc.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Medium publication</span>
+<h3><a href="https://news.bankingonquantum.com/" rel="noopener">Banking On Quantum</a></h3>
+<p class="newsroom-meta">Secure the Bank of Tomorrow. Quantum-Safe. · 26 articles on Medium</p>
+<p class="newsroom-excerpt">Post-quantum cryptography, crypto-agility and quantum-safe payments. Every story there links back to its original here.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="https://medium.com/banking-on-cloud-native" title="Banking On Cloud Native on Medium" aria-label="Banking On Cloud Native on Medium" rel="noopener">
+<img alt="Glass and steel atrium of a corporate-investment-banking trading floor — symbolising the open-source, cloud-native CIB stack now anchored around FINOS, the Linux Foundation and Rust libraries" src="https://cloudcdn.pro/stocks/images/joe-taylor-T3o-XtCfe6U.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Medium publication</span>
+<h3><a href="https://medium.com/banking-on-cloud-native" rel="noopener">Banking On Cloud Native</a></h3>
+<p class="newsroom-meta">Scale the Bank of Tomorrow. Natively. · 5 articles on Medium</p>
+<p class="newsroom-excerpt">Cloud-native platforms, DORA resilience and open-source banking infrastructure. Every story there links back to its original here.</p>
+</div>
+</article>
+<!-- medium-publications:end -->
+
+</div>
+</div>
+</section>
+
 <section class="feat alt reveal newsletter-band" aria-labelledby="newsletter-h">
 <div class="wrap newsletter-band-inner">
 <p class="feat-eyebrow">Newsletter · Banking On Quantum</p>

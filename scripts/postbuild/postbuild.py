@@ -249,6 +249,7 @@ from postbuild_lib.internal_links import (
     load_corpus,
     load_taxonomy,
 )
+from postbuild_lib.medium_xpost import inject_medium_xpost
 from postbuild_lib.navigation import (
     build_post_nav_index,
     inject_anchor_links_and_toc,
@@ -356,6 +357,7 @@ class _PostbuildCounters:
         "link_hoisted",
         "listing_title_localised",
         "localhost_patched",
+        "medium_xposts_set",
         "mermaid_patched",
         "nav_patched",
         "newsarticle_patched",
@@ -583,6 +585,7 @@ def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str
     out = _bump(inject_cite_popover, out, ctr, "cite_panels_set")
     out = _bump(inject_reuse_panel, out, ctr, "reuse_panels_set")
     out = _bump(inject_byline_strap, out, ctr, "byline_straps_set")
+    out = _bump(inject_medium_xpost, out, ctr, "medium_xposts_set")
     return out
 
 
@@ -989,6 +992,7 @@ def main() -> None:
         f"{c.cite_panels_set} got cite popover, "
         f"{c.reuse_panels_set} got reuse panel, "
         f"{c.byline_straps_set} got byline strap, "
+        f"{c.medium_xposts_set} got Medium link, "
         f"{c.langswitch_patched} got inline language rail, "
         f"{c.anchor_patched} got anchor links + ToC, "
         f"{c.body_h1_stripped} got duplicate body H1 stripped, "
