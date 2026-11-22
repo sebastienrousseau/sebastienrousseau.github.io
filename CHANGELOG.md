@@ -21,6 +21,7 @@ Search recovery, second attempt. Search Console shows a site-wide demotion from 
 
 ### Changed
 
+- **French is indexed again**: `_data/seo/locale-indexing.json` lists `en` and `fr`, on the author's decision (ADR-0015 amendment of 22 November 2026). French pages drop `noindex`, return to the sitemap and join English in every hreflang cluster; the other 33 locales stay `noindex, follow`.
 - **English is the only indexed locale**: `_data/seo/locale-indexing.json` lists `en` only. All 34 locales stay published and in the language switcher with `noindex, follow`, out of the sitemaps and out of hreflang clusters. A locale returns once its translations are reviewed by a person.
 - **Thin listings are noindex**: tag and category term pages and page 2+ of every listing carry `noindex, follow` (`postbuild_lib/thin_listings.py`), which covers most of the 939 "Crawled - currently not indexed" URLs. Hubs, first pages and topics stay indexable.
 - **Unique titles run before the indexing policy**: `finalize_seo.py` disambiguates titles before marking locales noindex, so a noindexed locale keeps its own-language title (French `Articles` keeps its locale suffix instead of matching the English page).
