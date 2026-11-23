@@ -22,6 +22,7 @@ Search recovery, second attempt. Search Console shows a site-wide demotion from 
 
 ### Changed
 
+- **Banking On Cloud Native on its own domain**: Medium linked news.bankingoncloudnative.com on 23 November 2026, so the publication's link on the homepage and `/articles/` points there, like the other two.
 - **French is indexed again**: `_data/seo/locale-indexing.json` lists `en` and `fr`, on the author's decision (ADR-0015 amendment of 22 November 2026). French pages drop `noindex`, return to the sitemap and join English in every hreflang cluster; the other 33 locales stay `noindex, follow`.
 - **English is the only indexed locale**: `_data/seo/locale-indexing.json` lists `en` only. All 34 locales stay published and in the language switcher with `noindex, follow`, out of the sitemaps and out of hreflang clusters. A locale returns once its translations are reviewed by a person.
 - **Thin listings are noindex**: tag and category term pages and page 2+ of every listing carry `noindex, follow` (`postbuild_lib/thin_listings.py`), which covers most of the 939 "Crawled - currently not indexed" URLs. Hubs, first pages and topics stay indexable.

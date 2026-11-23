@@ -345,12 +345,12 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="https://medium.com/banking-on-cloud-native" title="Banking On Cloud Native on Medium" aria-label="Banking On Cloud Native on Medium" rel="noopener">
+<a class="newsroom-card-media" href="https://news.bankingoncloudnative.com/" title="Banking On Cloud Native on Medium" aria-label="Banking On Cloud Native on Medium" rel="noopener">
 <img alt="Glass and steel atrium of a corporate-investment-banking trading floor — symbolising the open-source, cloud-native CIB stack now anchored around FINOS, the Linux Foundation and Rust libraries" src="https://cloudcdn.pro/stocks/images/joe-taylor-T3o-XtCfe6U.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Medium publication</span>
-<h3><a href="https://medium.com/banking-on-cloud-native" rel="noopener">Banking On Cloud Native</a></h3>
+<h3><a href="https://news.bankingoncloudnative.com/" rel="noopener">Banking On Cloud Native</a></h3>
 <p class="newsroom-meta">Scale the Bank of Tomorrow. Natively. · 5 articles on Medium</p>
 <p class="newsroom-excerpt">Cloud-native platforms, DORA resilience and open-source banking infrastructure. Every story there links back to its original here.</p>
 </div>
