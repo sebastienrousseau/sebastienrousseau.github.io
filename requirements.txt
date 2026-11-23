@@ -18,4 +18,4 @@ rcssmin==1.3.0
 # Canonical taxonomy (_data/taxonomy.yml) drives build_tags + the per-tag
 # landings, paged listings, RAG corpus, and the editorial check_taxonomy
 # audit. PyYAML is the only YAML parser these generators need.
-PyYAML==6.0.3
+PyYAML==6.0.4
