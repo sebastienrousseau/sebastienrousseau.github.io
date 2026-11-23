@@ -233,8 +233,18 @@ export async function tryRetiredPdf(url, env) {
 // 200s are stored; a failed refresh keeps the copy.
 export const EDGE_HTML_STALE = 7 * 24 * 60 * 60;
 export const EDGE_STORED_AT = 'x-edge-stored-at';
+// The copy lives under its own path, never the page URL: caches.default and
+// fetch(..., { cf: cacheEverything }) read the same zone cache, so a copy
+// keyed by the page URL is what the refresh fetch got back, and it stored
+// that old page again every ten minutes. A busy page (the homepage) then
+// never saw a deploy.
+export const EDGE_COPY_PREFIX = '/__edge-copy';
 
 function pageKey(url) {
+  return new Request(`${url.origin}${EDGE_COPY_PREFIX}${url.pathname}`, { method: 'GET' });
+}
+
+function originKey(url) {
   return new Request(`${url.origin}${url.pathname}`, { method: 'GET' });
 }
 
@@ -246,8 +256,8 @@ async function storePage(cache, key, res) {
   await cache.put(key, new Response(res.body, { status: 200, headers }));
 }
 
-async function revalidate(cache, key) {
-  const res = await fetch(key, { cf: EDGE_HTML_CACHE });
+async function revalidate(cache, key, url) {
+  const res = await fetch(originKey(url), { cf: EDGE_HTML_CACHE });
   if (res.status === 200) await storePage(cache, key, res);
 }
 
@@ -262,7 +272,7 @@ async function fetchPageSwr(request, url, ctx, cache) {
   const hit = await cache.match(key);
   if (hit) {
     const age = (Date.now() - Number(hit.headers.get(EDGE_STORED_AT))) / 1000;
-    if (!(age < EDGE_HTML_TTL)) ctx.waitUntil(revalidate(cache, key).catch(() => {}));
+    if (!(age < EDGE_HTML_TTL)) ctx.waitUntil(revalidate(cache, key, url).catch(() => {}));
     return servedCopy(hit, request.method);
   }
   const res = await fetch(request, { cf: EDGE_HTML_CACHE });
