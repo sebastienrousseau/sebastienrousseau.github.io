@@ -231,6 +231,15 @@ _PILLAR_TAGS = {
 }
 
 
+def _tag_key(tag: str) -> str:
+    """Case and separator-blind form of a tag: "AI governance",
+    "ai-governance" and "AI_Governance" are one tag."""
+    return re.sub(r"[\s_-]+", "-", tag.strip().lower())
+
+
+_PILLAR_KEYS = frozenset(_tag_key(t) for t in _PILLAR_TAGS)
+
+
 def _is_pillar_post(fm: dict[str, str]) -> bool:
     """Return True when a post belongs to the core banking, payments,
     post-quantum cryptography, or financial-regulation pillars and uses
@@ -238,8 +247,8 @@ def _is_pillar_post(fm: dict[str, str]) -> bool:
     banner = fm.get("banner", "").lower()
     if "summit" in banner:
         return False
-    tags = {t.strip().lower() for t in fm.get("tags", "").split(",") if t.strip()}
-    return bool(tags & _PILLAR_TAGS)
+    tags = {_tag_key(t) for t in fm.get("tags", "").split(",") if t.strip()}
+    return bool(tags & _PILLAR_KEYS)
 
 
 def _smart_title(token: str) -> str:

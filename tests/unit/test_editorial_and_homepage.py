@@ -328,3 +328,16 @@ def test_is_pillar_post_matches_banking_and_excludes_summit_banners() -> None:
             "banner": "https://cloudcdn.pro/stocks/images/economist-physical-ai-summit-2026.webp",
         }
     )
+
+
+def test_is_pillar_post_ignores_spacing_and_case_in_tags() -> None:
+    # "AI governance" must match the "ai-governance" pillar tag: the 20 and
+    # 21 November 2026 AI governance articles were kept off the homepage
+    # because the match was exact.
+    banner = "https://cloudcdn.pro/stocks/images/7eaven-HkA-V2dw9yA.webp"
+    assert rh._is_pillar_post({"tags": "Bank of England, FCA, AI governance", "banner": banner})
+    assert rh._is_pillar_post({"tags": "Financial Services", "banner": banner})
+    assert rh._is_pillar_post({"tags": "post_quantum  cryptography", "banner": banner})
+    assert not rh._is_pillar_post(
+        {"tags": "Bank of England, FCA, AI survey 2026", "banner": banner}
+    )
