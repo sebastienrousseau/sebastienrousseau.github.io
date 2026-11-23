@@ -181,6 +181,9 @@ function assetsEnv(payload, status = 200) {
       env.calls += 1;
       const path = new URL(req.url).pathname;
       if (path === '/redirects.json') return new Response(JSON.stringify(payload), { status });
+      if (path === '/article-locales.json' && env.locales) {
+        return new Response(JSON.stringify(env.locales), { status });
+      }
       return new Response('missing', { status: 404 });
     },
   };
@@ -293,6 +296,50 @@ test('tryRetiredPdf: a renamed article resolves to its final URL in one hop', as
   assert.equal(res.status, 301);
   assert.equal(res.headers.get('location'),
     'https://sebastienrousseau.com/zh-hant/2026-07-08-cong-baowen-dao-ditu-iso-20022-swift-tw/');
+  _resetRedirectMapCache();
+});
+
+const LOCALES_PAYLOAD = {
+  version: 1,
+  articles: {
+    '2026-11-17-treasury-automation-half-done': 'en',
+    '2025-09-01-pagos-resistentes-al-cuantico-epaa': 'es',
+    '2026-07-08-global-corporate-standard-iso-20022-swift-2026': 'zh-hant',
+  },
+};
+
+test('tryRetiredPdf: a locale-less PDF of a translated article goes to its locale', async () => {
+  _resetRedirectMapCache();
+  const env = assetsEnv(REDIRECTS_PAYLOAD);
+  env.locales = LOCALES_PAYLOAD;
+  const es = await tryRetiredPdf(new URL(`${PDF}2025-09-01-pagos-resistentes-al-cuantico-epaa.pdf`), env);
+  assert.equal(es.status, 301);
+  assert.equal(es.headers.get('location'),
+    'https://sebastienrousseau.com/es/2025-09-01-pagos-resistentes-al-cuantico-epaa/');
+  const en = await tryRetiredPdf(new URL(`${PDF}2026-11-17-treasury-automation-half-done.pdf`), env);
+  assert.equal(en.headers.get('location'), 'https://sebastienrousseau.com/2026-11-17-treasury-automation-half-done/');
+  // A renamed translated slug still resolves in one hop.
+  const renamed = await tryRetiredPdf(
+    new URL(`${PDF}2026-07-08-global-corporate-standard-iso-20022-swift-2026.pdf`), env);
+  assert.equal(renamed.headers.get('location'),
+    'https://sebastienrousseau.com/zh-hant/2026-07-08-cong-baowen-dao-ditu-iso-20022-swift-tw/');
+  _resetRedirectMapCache();
+});
+
+test('tryRetiredPdf: a slug that was never an article is 410 once the index loads', async () => {
+  _resetRedirectMapCache();
+  const env = assetsEnv(REDIRECTS_PAYLOAD);
+  env.locales = LOCALES_PAYLOAD;
+  const gone = await tryRetiredPdf(new URL(`${PDF}2020-01-01-never-published.pdf`), env);
+  assert.equal(gone.status, 410);
+  assert.equal(gone.headers.get('X-Robots-Tag'), 'noindex');
+  // A locale-prefixed PDF keeps its 301: the index holds one locale per slug.
+  const fr = await tryRetiredPdf(new URL(`${PDF}fr/2020-01-01-jamais.pdf`), env);
+  assert.equal(fr.status, 301);
+  // Without the index the old 301-to-root behaviour stays.
+  _resetRedirectMapCache();
+  const bare = await tryRetiredPdf(new URL(`${PDF}2020-01-01-never-published.pdf`), {});
+  assert.equal(bare.status, 301);
   _resetRedirectMapCache();
 });
 

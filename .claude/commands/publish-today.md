@@ -4,7 +4,7 @@ description: Promote today's _drafts/ article, validate voice/style, pick a bann
 
 You are publishing today's article on `sebastienrousseau.com`. Your job is to ship today's source content end-to-end as a reviewable PR — Sebastien merges it from GitHub the next morning.
 
-**Invocation model**: Sebastien runs this slash command manually each evening so he can review the night's output before merging. There is no LaunchAgent or cloud `/schedule` cron anymore — quality bar is "all CI green on the PR", not "wall-clock latency". Don't return until step 12's CI poll confirms every required check is green (or you've surfaced a specific failure that needs Sebastien's eyes).
+**Invocation model**: Sebastien runs this slash command manually each evening so he can review the night's output before merging. There is no LaunchAgent or cloud `/schedule` cron anymore — quality bar is "all CI green on the PR", not "wall-clock latency". Don't return until step 11's CI poll confirms every required check is green (or you've surfaced a specific failure that needs Sebastien's eyes).
 
 ## Where you're running — read this first
 
@@ -335,7 +335,23 @@ gh pr checks "$pr_number" || true   # print the human-readable table for the log
 
 The slash command does not exit cleanly until either the CI is fully green or you've reported a specific failure that needs human judgement.
 
-### 12. Report back
+### 12. Submit to Medium (always)
+
+Every article published here also goes to Medium, in the publication for its field. This is a standing rule, not an optional extra.
+
+| Field of the article | Publication | Domain | Fixed topics (pick 5) |
+| --- | --- | --- | --- |
+| AI, agents, model risk, AI governance, payments AI | Banking On AI | news.bankingonai.co | Artificial Intelligence, Agentic Ai, Banking, Ai Governance, Fintech, Payments, Risk Management |
+| Post-quantum, cryptography, crypto-agility, quantum computing | Banking On Quantum | news.bankingonquantum.com | Post Quantum Cryptography, Cryptography, Quantum Computing, Cybersecurity, Banking, Payments |
+| Cloud, platform engineering, DORA resilience, open-source infrastructure | Banking On Cloud Native | news.bankingoncloudnative.com | Cloud Native, Cloud Computing, Kubernetes, Banking, Platform Engineering, Open Source |
+
+1. Import the merged English article into Medium (medium.com/p/import with the live URL, or paste the "Copy formatted for Medium" output from the article's syndicate panel). Set the canonical link to the article's final URL, `https://sebastienrousseau.com/<slug>/` (trailing slash, no `index.html`).
+2. Write at least three headline options and keep the clearest benefit-led one. The headline must say which problem the piece solves; Medium's distribution follows the read ratio, and a vague headline costs reads. The first paragraph delivers on the headline in two or three sentences; cut any wind-up.
+3. Keep the article's subheadings and short paragraphs; add the banner as the first image with its alt text and credit.
+4. Submit to the publication, use its five fixed topics, and publish. Medium allows 15 stories per author per rolling 24 hours; the post-submit page may show a 500 even when the story published, so confirm on the Drafts tab that it left.
+5. Record the story in `_data/medium/publications.json` under the article's slug (`{"publication": "<ai|quantum|cloud-native>", "id": "<12-hex story id>"}`) in a follow-up commit. The build then links the article to its Medium copy and counts it on `/articles/` and the homepage.
+
+### 13. Report back
 
 Tell Sebastien:
 - The PR URL

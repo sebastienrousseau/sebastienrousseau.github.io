@@ -1,0 +1,271 @@
+{
+  "_comment": "Medium publications that syndicate sebastienrousseau.com articles, and which article each Medium story copies (canonical link on Medium points back here). Keyed by English article slug; 'id' is the Medium story id, reachable at https://medium.com/p/<id>. 'profile' means the story sits on the author profile outside the three publications; 'generative-ai' is the external Generative AI publication. Read by scripts/lib/_medium.py. Add an entry whenever an article is submitted to Medium.",
+  "publications": {
+    "ai": {
+      "slug": "banking-on-ai",
+      "name": "Banking On AI",
+      "tagline": "Build the Bank of Tomorrow. Intelligently.",
+      "url": "https://news.bankingonai.co/",
+      "medium": "https://medium.com/banking-on-ai",
+      "summary": "Agentic AI, model risk and AI governance for banks and payments."
+    },
+    "quantum": {
+      "slug": "banking-on-quantum",
+      "name": "Banking On Quantum",
+      "tagline": "Secure the Bank of Tomorrow. Quantum-Safe.",
+      "url": "https://news.bankingonquantum.com/",
+      "medium": "https://medium.com/banking-on-quantum",
+      "summary": "Post-quantum cryptography, crypto-agility and quantum-safe payments."
+    },
+    "cloud-native": {
+      "slug": "banking-on-cloud-native",
+      "name": "Banking On Cloud Native",
+      "tagline": "Scale the Bank of Tomorrow. Natively.",
+      "url": "https://medium.com/banking-on-cloud-native",
+      "medium": "https://medium.com/banking-on-cloud-native",
+      "summary": "Cloud-native platforms, DORA resilience and open-source banking infrastructure."
+    }
+  },
+  "stories": {
+    "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001": {
+      "publication": "ai",
+      "id": "5e32f789155a"
+    },
+    "2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh": {
+      "publication": "quantum",
+      "id": "5f38e251eaab"
+    },
+    "2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries": {
+      "publication": "profile",
+      "id": "011b31513219"
+    },
+    "2023-11-05-mathematical-and-cryptographic-constants-for-rust-security": {
+      "publication": "profile",
+      "id": "22d3be47fe28"
+    },
+    "2023-11-12-exploring-generative-ai": {
+      "publication": "ai",
+      "id": "dccac4ce94d8"
+    },
+    "2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age": {
+      "publication": "quantum",
+      "id": "584764bae449"
+    },
+    "2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats": {
+      "publication": "quantum",
+      "id": "2b57b07a117d"
+    },
+    "2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library": {
+      "publication": "profile",
+      "id": "5aaec3e8897f"
+    },
+    "2023-12-11-quantum-key-distribution-revolutionising-security-in-banking": {
+      "publication": "quantum",
+      "id": "8de64ba51cde"
+    },
+    "2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review": {
+      "publication": "quantum",
+      "id": "ee954ae620f8"
+    },
+    "2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms": {
+      "publication": "ai",
+      "id": "9641290991e4"
+    },
+    "2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future": {
+      "publication": "ai",
+      "id": "00d53cc17ec0"
+    },
+    "2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform": {
+      "publication": "quantum",
+      "id": "ca61f41a5d69"
+    },
+    "2024-01-15-alien-studio-revolutionising-art-with-ai-photography": {
+      "publication": "profile",
+      "id": "8b42cb8f3651"
+    },
+    "2024-01-23-advancements-in-ai-prompt-engineering": {
+      "publication": "ai",
+      "id": "b3696da1c8e4"
+    },
+    "2024-01-29-ai-powered-audio-insights-analysis-translations": {
+      "publication": "ai",
+      "id": "e32fc6396ff6"
+    },
+    "2024-02-08-revolutionising-advertising-how-ai-shapes-the-future": {
+      "publication": "ai",
+      "id": "0ca54faeca27"
+    },
+    "2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance": {
+      "publication": "ai",
+      "id": "41e581cae0f6"
+    },
+    "2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation": {
+      "publication": "ai",
+      "id": "309af12b472b"
+    },
+    "2024-02-19-unlocking-gemini-google-ai-revolution-explained": {
+      "publication": "ai",
+      "id": "d2740f696c84"
+    },
+    "2024-02-26-google-gemma-ai-transforming-open-source-ai-development": {
+      "publication": "ai",
+      "id": "984d8309bd42"
+    },
+    "2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai": {
+      "publication": "ai",
+      "id": "591611d77cd5"
+    },
+    "2024-03-08-rustlogs-advanced-logging-library-for-rust-applications": {
+      "publication": "profile",
+      "id": "860430c07ea9"
+    },
+    "2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper": {
+      "publication": "ai",
+      "id": "e3ec26ada531"
+    },
+    "2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1": {
+      "publication": "generative-ai",
+      "id": "1ab42818cabb"
+    },
+    "2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era": {
+      "publication": "quantum",
+      "id": "5a1f5f85ca64"
+    },
+    "2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology": {
+      "publication": "generative-ai",
+      "id": "253478d614bb"
+    },
+    "2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography": {
+      "publication": "quantum",
+      "id": "d04ddbbae6e1"
+    },
+    "2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto": {
+      "publication": "quantum",
+      "id": "64db8627bdb6"
+    },
+    "2025-09-01-quantum-safe-payments-epaa": {
+      "publication": "quantum",
+      "id": "1c74c1d41d61"
+    },
+    "2026-04-11-quantum-thresholds-are-moving-again": {
+      "publication": "quantum",
+      "id": "815a75edb9ad"
+    },
+    "2026-05-11-lucy-besson-knowledge-transfer-ai-quantum": {
+      "publication": "profile",
+      "id": "cdb2e88823ab"
+    },
+    "2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance": {
+      "publication": "quantum",
+      "id": "3b75ce1b6632"
+    },
+    "2026-05-16-best-cloud-infrastructure-architecture-2026": {
+      "publication": "cloud-native",
+      "id": "7eeacfc00973"
+    },
+    "2026-05-17-agentic-engineering-banks-blueprint-2026": {
+      "publication": "ai",
+      "id": "092f459d340c"
+    },
+    "2026-05-18-quantum-cryptography-standards-developments-2026": {
+      "publication": "quantum",
+      "id": "d6aec0de9977"
+    },
+    "2026-05-20-cloud-native-banking-financial-institutions-2026": {
+      "publication": "cloud-native",
+      "id": "6818f79f6bed"
+    },
+    "2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026": {
+      "publication": "ai",
+      "id": "8d6996f9fea4"
+    },
+    "2026-05-27-ai-operating-system-payments-fraud-routing-resilience-compliance-2026": {
+      "publication": "ai",
+      "id": "8d08251dc2ec"
+    },
+    "2026-05-28-dora-ai-act-data-sovereignty-banking-compliance-stack-2026": {
+      "publication": "ai",
+      "id": "82ddd606127d"
+    },
+    "2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026": {
+      "publication": "quantum",
+      "id": "795d5dadfeb3"
+    },
+    "2026-06-04-quantum-safe-banking-index-pqc-qkd-crypto-agility-2026": {
+      "publication": "quantum",
+      "id": "c7581df5c909"
+    },
+    "2026-06-05-cloud-native-banking-index-dora-resilience-platform-engineering-2026": {
+      "publication": "cloud-native",
+      "id": "a4f27bef7836"
+    },
+    "2026-06-11-cloudcdn-open-source-blueprint-ai-native-edge-2026": {
+      "publication": "cloud-native",
+      "id": "70b47175dc50"
+    },
+    "2026-06-12-kyberlib-post-quantum-banking-migration-standards-code-2026": {
+      "publication": "quantum",
+      "id": "e94813963149"
+    },
+    "2026-06-17-economist-commercialising-quantum-summit-2026": {
+      "publication": "quantum",
+      "id": "482e9ccb9d53"
+    },
+    "2026-06-22-hsh-zero-downtime-cryptographic-stewardship-rust-banking-2026": {
+      "publication": "quantum",
+      "id": "4d30b9ac471b"
+    },
+    "2026-06-25-quantum-dawn-cib-kyberlib-quantum-resilient-payments-stack-2026": {
+      "publication": "quantum",
+      "id": "eb4465b03225"
+    },
+    "2026-06-26-always-on-cib-cyber-recovery-fallback-rails-quantum-safe-treasury-2026": {
+      "publication": "quantum",
+      "id": "2b7da54da0ae"
+    },
+    "2026-06-26-post-quantum-banking-resilience-index-eo-14409-fiduciary-crypto-agility-2026": {
+      "publication": "quantum",
+      "id": "4c4d25663a77"
+    },
+    "2026-06-27-agentic-treasury-co-pilots-autonomous-treasury-production-2026": {
+      "publication": "ai",
+      "id": "4d48fac0cb0c"
+    },
+    "2026-06-28-open-source-finos-cloud-native-cib-stack-2026": {
+      "publication": "cloud-native",
+      "id": "98e6e59d21c7"
+    },
+    "2026-06-29-post-quantum-security-scorecard-board-level-fiduciary-agility-2026": {
+      "publication": "quantum",
+      "id": "066aca0638c7"
+    },
+    "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026": {
+      "publication": "ai",
+      "id": "aa9df79969d2"
+    },
+    "2026-07-07-corporate-banking-api-standard-agentic-mcp-2026": {
+      "publication": "ai",
+      "id": "520bde18c10d"
+    },
+    "2026-07-28-cryptographic-bill-of-materials-cbom-discovery-banks-2026": {
+      "publication": "quantum",
+      "id": "78579cc7feca"
+    },
+    "2026-07-30-model-risk-management-generative-ai-out-of-scope-2026": {
+      "publication": "ai",
+      "id": "d2c02ab33cfb"
+    },
+    "2026-09-15-two-nuclear-clocks-vienna-and-beijing-haven-t-beaten-atomic-clocks-yet": {
+      "publication": "quantum",
+      "id": "9a2c12e613fe"
+    },
+    "2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude": {
+      "publication": "quantum",
+      "id": "04214cc6a8d3"
+    },
+    "2026-11-16-quantum-safe-readiness-epaa": {
+      "publication": "quantum",
+      "id": "21937f0879e4"
+    }
+  }
+}

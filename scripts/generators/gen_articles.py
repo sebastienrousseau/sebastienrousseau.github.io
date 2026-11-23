@@ -24,9 +24,14 @@ _sys.path.insert(0, str(_Path(__file__).resolve().parents[1] / "lib"))
 
 import re
 
+import _medium
 from _core import ROOT, display_date, parse_frontmatter
 
 SRC = ROOT / "_posts" / "articles.md"
+HOME = ROOT / "_posts" / "index.md"
+_PUBS_RE = re.compile(
+    r"(<!-- medium-publications:start -->\n).*?(<!-- medium-publications:end -->)", re.DOTALL
+)
 POSTS = ROOT / "_posts"
 
 _DATED_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-")
@@ -505,6 +510,36 @@ def featured_block(art) -> str:
 </article>"""
 
 
+def _banner_for(slug: str) -> tuple[str, str]:
+    """The banner image and alt text of an English article."""
+    fm, _body = parse_frontmatter((POSTS / f"{slug}.md").read_text(encoding="utf-8"))
+    return str(fm.get("banner", "")), str(fm.get("banner_alt", ""))
+
+
+def publications_block() -> str:
+    """One card per Medium publication: what it covers, how many of this
+    site's articles it carries, and a link to it. The image is the banner
+    of the newest article it carries."""
+    by_pub = _medium.slugs_by_publication()
+    cards = []
+    for key, pub in _medium.publications().items():
+        slugs = by_pub[key]
+        image, alt = _banner_for(slugs[0]) if slugs else ("", "")
+        count = f"{len(slugs)} article{'s' if len(slugs) != 1 else ''} on Medium"
+        cards.append(f"""<article class="newsroom-card">
+<a class="newsroom-card-media" href="{pub["url"]}" title="{pub["name"]} on Medium" aria-label="{pub["name"]} on Medium" rel="noopener">
+<img alt="{alt}" src="{image}" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Medium publication</span>
+<h3><a href="{pub["url"]}" rel="noopener">{pub["name"]}</a></h3>
+<p class="newsroom-meta">{pub["tagline"]} · {count}</p>
+<p class="newsroom-excerpt">{pub["summary"]} Every story there links back to its original here.</p>
+</div>
+</article>""")
+    return "\n\n".join(cards)
+
+
 def _eyebrow_from_tags(tags: str) -> str:
     """Take the first three comma-separated tags, Title-Case them, and
     join with ` · `. Mirrors the manual ARTICLES eyebrow convention."""
@@ -631,6 +666,14 @@ def main() -> None:
 
 {featured}
 
+<header class="newsroom-section-head"><p class="newsroom-kicker">ON MEDIUM</p><h2>Read the publications</h2></header>
+
+<div class="newsroom-grid">
+
+{publications_block()}
+
+</div>
+
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
@@ -643,6 +686,12 @@ def main() -> None:
 """
 
     SRC.write_text(head + body)
+    home = HOME.read_text(encoding="utf-8")
+    pubs = publications_block()
+    HOME.write_text(
+        _PUBS_RE.sub(lambda m: m.group(1) + pubs + "\n" + m.group(2), home, count=1),
+        encoding="utf-8",
+    )
     print(f"wrote {SRC}. Featured: 1, grid cards: {len(articles) - 1}")
 
 

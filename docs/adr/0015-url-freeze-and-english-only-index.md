@@ -79,3 +79,17 @@ there is no recovery.
 - Recovery, if it comes, is expected at a later Google core or spam
   update, not within days. Track it in Search Console (Performance,
   comparing against 1 July to 10 September) before adding any locale back.
+
+## Amendment, 22 November 2026: French is indexed
+
+The author decided that French, the site's second language, is indexed
+again. `_data/seo/locale-indexing.json` lists `en` and `fr`: French pages
+drop `noindex`, return to the sitemaps, and join English in every hreflang
+cluster. The other 33 locales are unchanged.
+
+This reverses decision 1 for one locale before the recovery check in the
+Consequences above. It adds about 200 machine-translated French pages,
+126 of them articles, to the index, against the 1,500 that v0.0.30 kept
+indexable without a recovery. Watch French impressions and the English trend in Search
+Console after the change; if English falls further, French is the first
+thing to take back out.

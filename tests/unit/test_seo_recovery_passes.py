@@ -30,9 +30,10 @@ SITE = "https://sebastienrousseau.com"
 # -- Policy -----------------------------------------------------------------
 
 
-def test_policy_keeps_english_and_ten_locales() -> None:
-    assert li.indexed_codes() == frozenset({"en"})
-    assert len(li.noindex_codes()) == 34
+def test_policy_keeps_english_and_french() -> None:
+    assert li.indexed_codes() == frozenset({"en", "fr"})
+    assert len(li.noindex_codes()) == 33
+    assert "fr" not in li.noindex_codes()
     assert {"ar", "pt-br", "yo"} <= set(li.noindex_codes())
     assert {"pt-br", "pt-BR".lower(), "ar-sa"} <= li.noindex_hreflangs()
 
@@ -92,10 +93,11 @@ _ALTS = (
 
 def test_strip_hreflang_on_an_indexed_page_drops_only_noindex_targets() -> None:
     out, removed = lx.strip_hreflang(_ALTS, drop_all=False, dropped=li.noindex_codes())
-    # English is the only indexed locale (v0.0.45): every other alternate goes.
-    assert removed == 3
+    # English and French are indexed (v0.0.47): the other alternates go.
+    assert removed == 2
     assert 'hreflang="en"' in out and 'hreflang="x-default"' in out
-    assert "/fr/" not in out and "/ar/" not in out and "pt-br" not in out
+    assert "/fr/" in out
+    assert "/ar/" not in out and "pt-br" not in out
 
 
 def test_strip_hreflang_on_a_noindex_page_drops_everything() -> None:
@@ -115,11 +117,11 @@ def test_apply_locale_indexing_on_a_tree(tmp_path: Path) -> None:
     for rel in ("a/index.html", "fr/a/index.html", "ar/a/index.html"):
         (tmp_path / rel).parent.mkdir(parents=True, exist_ok=True)
         (tmp_path / rel).write_text(head, encoding="utf-8")
-    # English only (v0.0.45): the en page loses its 3 non-en alternates, and
-    # fr and ar are both noindex with all 5 alternates removed.
-    assert lx.apply_locale_indexing(tmp_path) == (2, 3 + 5 + 5)
+    # English and French (v0.0.47): the en and fr pages each lose their 2
+    # noindex alternates, and ar is noindex with all 5 alternates removed.
+    assert lx.apply_locale_indexing(tmp_path) == (1, 2 + 2 + 5)
     assert "noindex" in (tmp_path / "ar/a/index.html").read_text()
-    assert "noindex" in (tmp_path / "fr/a/index.html").read_text()
+    assert "noindex" not in (tmp_path / "fr/a/index.html").read_text()
     assert "noindex" not in (tmp_path / "a/index.html").read_text()
     assert lx.apply_locale_indexing(tmp_path) == (0, 0)
 
@@ -288,3 +290,32 @@ def test_emit_redirects_writes_sorted_map_or_skips_unbuilt(
     out = bwa.emit_redirects(public)
     assert out is not None
     assert json.loads(out.read_text()) == {"version": 1, "redirects": {"/a/": "/c/", "/b/": "/c/"}}
+
+
+def test_article_locales_prefers_english_then_first_locale(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    public = tmp_path / "public"
+    for rel in (
+        "2026-01-01-shared",
+        "fr/2026-01-01-shared",
+        "fr/2026-02-02-seulement",
+        "es/2026-02-02-seulement",
+        "zz/2026-03-03-inactive-locale",
+        "fr/a-propos",
+    ):
+        (public / rel).mkdir(parents=True)
+        (public / rel / "index.html").write_text("<html></html>")
+    _stub(public, "ja/2026-04-04-old-ja", "/ja/2026-04-04-new-ja/")
+    assert bwa.article_locales(public) == {
+        "2026-01-01-shared": "en",
+        "2026-02-02-seulement": "es",
+        "2026-04-04-old-ja": "ja",
+    }
+    monkeypatch.setattr(bwa, "OUT_DIR", tmp_path / "assets")
+    (tmp_path / "assets").mkdir()
+    assert bwa.emit_article_locales(public) is None
+    (public / "index.html").write_text("<html></html>")
+    out = bwa.emit_article_locales(public)
+    assert out is not None
+    assert list(json.loads(out.read_text())["articles"]) == sorted(bwa.article_locales(public))

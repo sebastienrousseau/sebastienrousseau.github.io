@@ -71,32 +71,47 @@ export function isEdgeCacheable(request, pathname) {
 // from the built stubs and collapses chains), and the Worker answers those
 // paths with one 301 before origin is touched. The stubs stay in the build
 // as a fallback for when the binding is missing.
-const _redirectCache = { map: null };
+const _redirectCache = { map: null, articles: null };
 
 export function _resetRedirectMapCache() {
   _redirectCache.map = null;
+  _redirectCache.articles = null;
 }
 
 /**
- * Old path -> new path Map from the ASSETS binding, loaded once per
- * isolate. A failed load returns an empty Map and is not cached, so the
- * next request retries.
+ * `payload[field]` of an ASSETS JSON file as a Map, cached per isolate under
+ * `_redirectCache[slot]`. A failed load returns an empty Map and is not
+ * cached, so the next request retries.
  */
-export async function getRedirectMap(env) {
-  if (_redirectCache.map) return _redirectCache.map;
+async function loadAssetMap(env, file, field, slot) {
+  if (_redirectCache[slot]) return _redirectCache[slot];
   if (!env || !env.ASSETS || typeof env.ASSETS.fetch !== 'function') return new Map();
   try {
-    const res = await env.ASSETS.fetch(new Request('https://assets/redirects.json'));
+    const res = await env.ASSETS.fetch(new Request(`https://assets/${file}`));
     if (!res || !res.ok) return new Map();
     const payload = await res.json();
-    if (!payload || typeof payload.redirects !== 'object' || payload.redirects === null) {
+    if (!payload || typeof payload[field] !== 'object' || payload[field] === null) {
       return new Map();
     }
-    _redirectCache.map = new Map(Object.entries(payload.redirects));
-    return _redirectCache.map;
+    _redirectCache[slot] = new Map(Object.entries(payload[field]));
+    return _redirectCache[slot];
   } catch {
     return new Map();
   }
+}
+
+/** Old path -> new path Map from the ASSETS binding (redirects.json). */
+export function getRedirectMap(env) {
+  return loadAssetMap(env, 'redirects.json', 'redirects', 'map');
+}
+
+/**
+ * Article slug -> locale code ('en' for the root) for every built article
+ * page (article-locales.json). A slug built in several locales maps to
+ * 'en' when English has it.
+ */
+export function getArticleLocales(env) {
+  return loadAssetMap(env, 'article-locales.json', 'articles', 'articles');
 }
 
 /** 301 Response when `url` is a renamed path in `map`, else null. */
@@ -164,8 +179,11 @@ export async function resolveRenamed(redirect, env) {
 // `/api/pdf/<lang>/<slug>.pdf`, with the same slug and locale as the
 // article page. Each such URL now 301s to that article (through the
 // renamed-URL map, so one hop to the final URL), which keeps the value of
-// any inbound link and lands a reader on the page. Anything else under the
-// prefix was never a PDF URL: 410 Gone, so crawlers drop it.
+// any inbound link and lands a reader on the page. The older form carried
+// no locale, so a translated article's slug is looked up in
+// article-locales.json to find its locale; a slug that is in neither map
+// was never an article and answers 410 Gone, like anything else under the
+// prefix, so crawlers drop it instead of following a 301 to a 404.
 const PDF_PREFIX = '/api/pdf/';
 const PDF_RE = /^\/api\/pdf\/(?:([a-z]{2,3}(?:-[a-z]{2,4})?)\/)?([a-z0-9][a-z0-9-]{0,127})\.pdf$/;
 
@@ -180,16 +198,27 @@ function pdfGone() {
   });
 }
 
+/** Article path for a PDF slug: its own locale, or the root when unknown. */
+function pdfArticlePath(lang, slug, locales) {
+  const code = lang || locales.get(slug);
+  return code && code !== 'en' ? `/${code}/${slug}/` : `/${slug}/`;
+}
+
 /** 301 to the article for an old PDF URL, 410 for other /api/pdf/ paths, else null. */
 export async function tryRetiredPdf(url, env) {
   if (!url.pathname.startsWith(PDF_PREFIX)) return null;
   const m = PDF_RE.exec(url.pathname);
   if (!m) return pdfGone();
+  const locales = await getArticleLocales(env);
   const target = new URL(url);
-  target.pathname = m[1] ? `/${m[1]}/${m[2]}/` : `/${m[2]}/`;
+  target.pathname = pdfArticlePath(m[1], m[2], locales);
   target.search = '';
-  return tryRenamedUrlRedirect(target, await getRedirectMap(env))
-    || Response.redirect(target.toString(), 301);
+  const renamed = tryRenamedUrlRedirect(target, await getRedirectMap(env));
+  if (renamed) return renamed;
+  // Without the index (binding missing), keep the 301; with it, an unknown
+  // slug is not an article.
+  if (!m[1] && locales.size && !locales.has(m[2])) return pdfGone();
+  return Response.redirect(target.toString(), 301);
 }
 
 // Stale-while-revalidate for pages, when the Workers Cache API is present.

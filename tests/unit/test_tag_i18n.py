@@ -116,10 +116,10 @@ def _en(slug: str) -> tuple[str, str]:
 
 
 def test_indexed_locales_follow_the_policy() -> None:
-    # ADR-0015: English is the only indexed locale, so no locale's tag
-    # translations are held to these checks. A reviewed locale that returns
-    # to locale-indexing.json is checked again by the tests below.
-    assert KEPT == []
+    # ADR-0015 as amended on 22 Nov 2026: French is the one translated
+    # locale in the index, so its tag translations are held to the checks
+    # below. Any other locale that returns is checked the same way.
+    assert KEPT == ["fr"]
 
 
 @pytest.mark.parametrize("lang", KEPT)

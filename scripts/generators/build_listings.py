@@ -68,6 +68,7 @@ _BASE_URL = "https://sebastienrousseau.com"
 _BANNER_ALT_FM_RE = re.compile(r'^banner_alt:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "lib"))
 import _lang_registry
+import _medium
 from _core import DATED_SLUG_RE as _DATED_SLUG_RE  # canonical dated-slug matcher
 from _svg_icons import (
     _CARD_SVG_EMAIL,
@@ -755,6 +756,65 @@ def _write_year_archives(
     return len(en_pages), locale_written
 
 
+_PUBS_BASE = "/articles/medium"
+
+
+def _publications_row() -> str:
+    """Links to the per-publication archives, shown on /articles/ page 1."""
+    links = " · ".join(
+        f'<a href="{_PUBS_BASE}/{pub["slug"]}/">{_esc(pub["name"])}</a>'
+        for pub in _medium.publications().values()
+    )
+    return f'<p class="tag-landing-meta listing-publications">On Medium: {links}</p>'
+
+
+def _render_publication_body(
+    pub: dict[str, str], posts_for_pub: list[tuple[str, str, str, str, list[str], str, str]]
+) -> str:
+    cards = "".join(_render_card(*p) for p in posts_for_pub)
+    n = len(posts_for_pub)
+    return (
+        f'<div class="wrap report-wrap">'
+        f'<header class="tag-landing-hero">'
+        f'<p class="eyebrow"><a href="/articles/">&larr; All articles</a></p>'
+        f"<h1>{_esc(pub['name'])}</h1>"
+        f'<p class="tag-landing-meta">{_esc(pub["tagline"])} · {n} article{"s" if n != 1 else ""}'
+        f' · <a href="{pub["url"]}" rel="noopener">Read it on Medium</a></p>'
+        f"</header>"
+        f'<section class="tag-landing-list" aria-label="Articles in {_esc(pub["name"])}">'
+        f"{cards}"
+        f"</section>"
+        f"</div>"
+    )
+
+
+def _write_publication_archives(
+    template: str, posts: list[tuple[str, str, str, str, list[str], str, str]]
+) -> int:
+    """One English archive per Medium publication, listing the articles it
+    carries. English only: the Medium copies are the English text."""
+    by_slug = {p[2]: p for p in posts}
+    written = 0
+    for key, pub in _medium.publications().items():
+        pub_posts = [by_slug[s] for s in _medium.slugs_by_publication()[key] if s in by_slug]
+        canonical = f"{_BASE_URL}{_PUBS_BASE}/{pub['slug']}/"
+        desc = (
+            f"{pub['name']}, Sebastien Rousseau's Medium publication: {pub['summary']} "
+            f"The {len(pub_posts)} articles it carries, each first published here."
+        )
+        out = _swap_head(template, pub["name"], desc, canonical)
+        out = _AP_HERO_BLOCK_RE.sub("", out, count=1)
+        body = _render_publication_body(pub, pub_posts)
+        out = _MAIN_RE.sub(rf"\1{body}\3", out, count=1)
+        title = f"{pub['name']} on Medium · Sebastien Rousseau"
+        out = _TITLE_RE.sub(f"<title>{_esc(title)}</title>", out, count=1)
+        out_path = PUBLIC / "articles" / "medium" / pub["slug"] / "index.html"
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(out, encoding="utf-8")
+        written += 1
+    return written
+
+
 def _write_en_paged(
     template: str,
     pages: list[list[tuple[str, str, str, str, list[str], str, str]]],
@@ -788,6 +848,12 @@ def _write_en_paged(
             else f"Articles, page {idx} of {total_pages} · Sebastien Rousseau"
         )
         en_out = _TITLE_RE.sub(f"<title>{_esc(en_doc_title)}</title>", page_html, count=1)
+        if idx == 1:
+            en_out = en_out.replace(
+                '<section class="tag-landing-list"',
+                _publications_row() + '<section class="tag-landing-list"',
+                1,
+            )
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(en_out, encoding="utf-8")
         out.append((idx, page_html, page_posts))
@@ -804,6 +870,8 @@ def _write_listings() -> tuple[int, int, int, int]:
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
     posts = _walk_posts()
     year_en, year_locale = _write_year_archives(template, posts)
+    pubs_written = _write_publication_archives(template, posts)
+    print(f"build_listings: wrote {pubs_written} Medium publication archive(s)")
     pages = _chunk(posts, PAGE_SIZE)
     all_years = sorted({p[1][:4] for p in posts}, reverse=True)
     en_pages = _write_en_paged(template, pages, all_years)
