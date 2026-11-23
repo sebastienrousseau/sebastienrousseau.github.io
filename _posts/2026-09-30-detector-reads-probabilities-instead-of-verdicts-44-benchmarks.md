@@ -3,7 +3,7 @@
 # Front Matter (YAML)
 
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Matrix of floating-point numerical probabilities: Binoculars token cross-perplexity LLM text detection across 44 benchmarks."
+banner_alt: "Rows of floating-point numbers printed on paper: Jev's calibrated probabilities for alignment-failure detection across 44 benchmarks."
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/mika-baumeister-Wpnoqo2plFA.webp"

@@ -122,12 +122,12 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="https://news.bankingonai.co/" title="Banking On AI on Medium" aria-label="Banking On AI on Medium" rel="noopener">
-<img alt="A long dark bench on a vast paved plaza seen from directly above, with a single seated figure at the far right edge and open ground stretching away from them." src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="St Paul's Cathedral and the Millennium Bridge over the Thames at night" src="https://cloudcdn.pro/stocks/images/vadim-sherbakov-xS_RzdD5CFE.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Medium publication</span>
 <h3><a href="https://news.bankingonai.co/" rel="noopener">Banking On AI</a></h3>
-<p class="newsroom-meta">Build the Bank of Tomorrow. Intelligently. · 21 articles on Medium</p>
+<p class="newsroom-meta">Build the Bank of Tomorrow. Intelligently. · 26 articles on Medium</p>
 <p class="newsroom-excerpt">Agentic AI, model risk and AI governance for banks and payments. Every story there links back to its original here.</p>
 </div>
 </article>
@@ -356,7 +356,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-09-30-detector-reads-probabilities-instead-of-verdicts-44-benchmarks/index.html" title="A Detector That Reads Probabilities Instead of Writing Verdicts: What 44 Benchmarks Say About Jev" aria-label="A Detector That Reads Probabilities Instead of Writing Verdicts: What 44 Benchmarks Say About Jev">
-<img alt="Matrix of floating-point numerical probabilities: Binoculars token cross-perplexity LLM text detection across 44 benchmarks." src="https://cloudcdn.pro/stocks/images/mika-baumeister-Wpnoqo2plFA.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Rows of floating-point numbers printed on paper: Jev's calibrated probabilities for alignment-failure detection across 44 benchmarks." src="https://cloudcdn.pro/stocks/images/mika-baumeister-Wpnoqo2plFA.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Ai · Generative-Ai · Llm</span>

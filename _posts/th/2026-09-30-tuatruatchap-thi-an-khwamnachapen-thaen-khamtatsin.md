@@ -1,6 +1,6 @@
 ---
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "เมทริกซ์ของความน่าจะเป็นเชิงตัวเลขแบบทศนิยมลอยตัว: การตรวจจับข้อความจาก LLM ด้วย Binoculars token cross-perplexity บน 44 เบนช์มาร์ก"
+banner_alt: "แถวตัวเลขทศนิยมลอยตัวที่พิมพ์บนกระดาษ: ความน่าจะเป็นที่ปรับเทียบแล้วของ Jev สำหรับการตรวจจับความล้มเหลวด้านการจัดแนว บน 44 เบนช์มาร์ก"
 banner_height: "1280"
 banner_width: "1920"
 banner: "https://cloudcdn.pro/stocks/images/mika-baumeister-Wpnoqo2plFA.webp"
