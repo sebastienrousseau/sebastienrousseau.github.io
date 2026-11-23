@@ -29,6 +29,7 @@ import {
   tryRenamedUrlRedirect,
   tryRetiredPdf,
   EDGE_HTML_STALE,
+  EDGE_COPY_PREFIX,
   EDGE_STORED_AT,
   fetchOrigin,
 } from './edge-routes.js';
@@ -393,6 +394,7 @@ async function withOrigin(responses, fn) {
 }
 
 const PAGE = 'https://sebastienrousseau.com/about/';
+const COPY = `https://sebastienrousseau.com${EDGE_COPY_PREFIX}/about/`;
 
 test('SWR: a miss fetches origin and stores the 200 for EDGE_HTML_STALE', async () => {
   const cache = fakeCache();
@@ -403,7 +405,7 @@ test('SWR: a miss fetches origin and stores the 200 for EDGE_HTML_STALE', async 
     await ctx.settle();
     assert.equal(calls.length, 1);
     assert.deepEqual(calls[0].init, { cf: EDGE_HTML_CACHE });
-    const stored = cache.store.get(PAGE);
+    const stored = cache.store.get(COPY);
     assert.equal(stored.headers.get('cache-control'), `public, max-age=${EDGE_HTML_STALE}`);
     assert.ok(Number(stored.headers.get(EDGE_STORED_AT)) > 0);
   });
@@ -431,16 +433,49 @@ test('SWR: a stale hit is served at once and refreshed in the background', async
   await withOrigin([[200, 'v1'], [200, 'v2']], async (calls) => {
     await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
     await ctx.settle();
-    const old = cache.store.get(PAGE);
+    const old = cache.store.get(COPY);
     const headers = new Headers(old.headers);
     headers.set(EDGE_STORED_AT, String(Date.now() - (EDGE_HTML_TTL + 1) * 1000));
-    cache.store.set(PAGE, new Response(await old.text(), { status: 200, headers }));
+    cache.store.set(COPY, new Response(await old.text(), { status: 200, headers }));
     const res = await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
     assert.equal(await res.text(), 'v1');
     await ctx.settle();
     assert.equal(calls.length, 2);
-    assert.equal(await cache.store.get(PAGE).clone().text(), 'v2');
+    assert.equal(await cache.store.get(COPY).clone().text(), 'v2');
   });
+});
+
+test('SWR: a refresh reaches origin even though the edge fetch cache shares the copy\'s storage', async () => {
+  // On Cloudflare, caches.default and fetch(..., { cf: cacheEverything })
+  // read one zone cache. A copy stored under the page URL itself is then
+  // what the refresh fetch gets back, so it re-stores the old page for good
+  // (the homepage stayed on a 21 Nov build through two deploys).
+  const cache = fakeCache();
+  const ctx = fakeCtx();
+  const origin = ['v1'];
+  const prev = globalThis.fetch;
+  globalThis.fetch = async (input) => {
+    const url = typeof input === 'string' ? input : input.url;
+    const shared = cache.store.get(url);
+    if (shared) return shared.clone();
+    return new Response(origin[0], { status: 200 });
+  };
+  try {
+    await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
+    await ctx.settle();
+    origin[0] = 'v2';
+    for (const [k, old] of cache.store) {
+      const headers = new Headers(old.headers);
+      headers.set(EDGE_STORED_AT, String(Date.now() - (EDGE_HTML_TTL + 1) * 1000));
+      cache.store.set(k, new Response(await old.clone().text(), { status: 200, headers }));
+    }
+    await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
+    await ctx.settle();
+    const res = await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
+    assert.equal(await res.text(), 'v2');
+  } finally {
+    globalThis.fetch = prev;
+  }
 });
 
 test('SWR: non-200 origin answers and HEAD misses are never stored; failed refresh keeps the copy', async () => {
@@ -454,19 +489,19 @@ test('SWR: non-200 origin answers and HEAD misses are never stored; failed refre
     assert.equal(cache.store.size, 0);
   });
   const headers = new Headers({ [EDGE_STORED_AT]: '0' });
-  cache.store.set(PAGE, new Response('kept', { status: 200, headers }));
+  cache.store.set(COPY, new Response('kept', { status: 200, headers }));
   await withOrigin([[500, 'boom']], async () => {
     const res = await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
     assert.equal(await res.text(), 'kept');
     await ctx.settle();
-    assert.equal(await cache.store.get(PAGE).clone().text(), 'kept');
+    assert.equal(await cache.store.get(COPY).clone().text(), 'kept');
   });
   const prev = globalThis.fetch;
   globalThis.fetch = async () => { throw new Error('network'); };
   try {
     await fetchOrigin(new Request(PAGE), new URL(PAGE), ctx, cache);
     await ctx.settle();
-    assert.equal(await cache.store.get(PAGE).clone().text(), 'kept');
+    assert.equal(await cache.store.get(COPY).clone().text(), 'kept');
   } finally {
     globalThis.fetch = prev;
   }
@@ -490,7 +525,7 @@ test('handler: uses caches.default when the runtime provides it', async () => {
       const res = await handler.fetch(makeRequest(PAGE), {}, ctx);
       assert.equal(res.headers.get('cache-control'), 'public, max-age=0, must-revalidate');
       await ctx.settle();
-      assert.ok(cache.store.has(PAGE));
+      assert.ok(cache.store.has(COPY));
     });
   } finally {
     delete globalThis.caches;

@@ -21,7 +21,7 @@
       "slug": "banking-on-cloud-native",
       "name": "Banking On Cloud Native",
       "tagline": "Scale the Bank of Tomorrow. Natively.",
-      "url": "https://medium.com/banking-on-cloud-native",
+      "url": "https://news.bankingoncloudnative.com/",
       "medium": "https://medium.com/banking-on-cloud-native",
       "summary": "Cloud-native platforms, DORA resilience and open-source banking infrastructure."
     }
@@ -259,6 +259,18 @@
       "publication": "quantum",
       "id": "9a2c12e613fe"
     },
+    "2026-09-25-when-technology-lands-before-institutions-adapt-mit-ai-committee": {
+      "publication": "ai",
+      "id": "d9b260e366c0"
+    },
+    "2026-09-30-detector-reads-probabilities-instead-of-verdicts-44-benchmarks": {
+      "publication": "ai",
+      "id": "870f66cead20"
+    },
+    "2026-10-05-internal-openai-model-pins-down-exact-decay-rate-cohn-elkies-sphere-packing": {
+      "publication": "ai",
+      "id": "cf6b4473fd4b"
+    },
     "2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude": {
       "publication": "quantum",
       "id": "04214cc6a8d3"
@@ -266,6 +278,14 @@
     "2026-11-16-quantum-safe-readiness-epaa": {
       "publication": "quantum",
       "id": "21937f0879e4"
+    },
+    "2026-11-20-ai-adoption-uk-financial-services-2026": {
+      "publication": "ai",
+      "id": "20dce3af17ae"
+    },
+    "2026-11-21-third-party-ai-governance-uk-firms": {
+      "publication": "ai",
+      "id": "6d80ca74be00"
     }
   }
 }
