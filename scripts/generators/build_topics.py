@@ -53,6 +53,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "libraries, and migration playbooks for financial-services security teams."
         ),
         "slugs": [
+            "2026-11-23-composite-ml-dsa-rfc-10073",
             "2026-11-16-quantum-safe-readiness-epaa",
             "2026-10-26-mystery-seeds-behind-nist-curves-were-never-hashes-claude",
             "2026-09-15-two-nuclear-clocks-vienna-and-beijing-haven-t-beaten-atomic-clocks-yet",
@@ -123,6 +124,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "at Tier-1 institutions."
         ),
         "slugs": [
+            "2026-11-22-firms-buy-ai-govern-through-vendor",
             "2026-11-21-third-party-ai-governance-uk-firms",
             "2026-11-20-ai-adoption-uk-financial-services-2026",
             "2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook",
@@ -201,6 +203,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "lens that turns autonomous workflows into supervisory-ready evidence."
         ),
         "slugs": [
+            "2026-11-24-super-agents-one-session-per-task",
             "2026-10-25-agentic-ai-breaks-the-assumption-behind-every-task-exposure-forecast",
             "2026-10-13-humanoid-functional-robotics-manufacturing-automation",
             "2026-07-01-agentic-ai-index-banks-measuring-autonomy-2026",
@@ -313,6 +316,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "AI inside Tier-1 banks."
         ),
         "slugs": [
+            "2026-11-22-firms-buy-ai-govern-through-vendor",
             "2026-11-21-third-party-ai-governance-uk-firms",
             "2026-11-20-ai-adoption-uk-financial-services-2026",
             "2026-10-28-why-the-fca-is-regulating-ai-without-an-ai-rulebook",

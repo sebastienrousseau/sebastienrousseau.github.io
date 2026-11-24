@@ -78,13 +78,64 @@ def test_data_is_consistent() -> None:
 def test_listing_row_and_publication_archive_body() -> None:
     sys.path.insert(0, str(ROOT / "scripts" / "generators"))
     import build_listings as bl
+    import listing_medium as lm
 
-    row = bl._publications_row()
+    kit = bl._medium_kit("<main></main>")
+    select = lm.medium_filter()
+    assert 'data-navigate-base="/articles/medium"' in select
+    # No data-navigate-all: an empty choice goes to the base, the hub at
+    # /articles/medium/, so main.js stays the theme's (ADR-0014).
+    assert "data-navigate-all" not in select
+    assert '<option value="">All publications</option>' in select
     for slug in ("banking-on-ai", "banking-on-quantum", "banking-on-cloud-native"):
-        assert f'href="/articles/medium/{slug}/"' in row
+        assert f'<option value="{slug}">' in select
+    assert '<option value="banking-on-quantum" selected>' in lm.medium_filter("banking-on-quantum")
     pub = _medium.publications()["cloud-native"]
     post = ("A title", "2026-05-16", _SLUG, "An excerpt", ["infra"], "/b.webp", "Alt")
-    body = bl._render_publication_body(pub, [post])
+    body = lm.publication_body(kit, pub, [post])
     assert "<h1>Banking On Cloud Native</h1>" in body
     assert "1 article ·" in body
     assert f'href="/{_SLUG}/"' in body
+    # The archive carries the same filter bar, with its own publication chosen.
+    assert 'data-filter-target="category"' in body
+    assert 'data-filter-target="year"' in body
+    assert '<option value="banking-on-cloud-native" selected>' in body
+
+
+def test_medium_select_joins_the_filter_bar() -> None:
+    """The Medium <select> sits inside the bar, after Category and Year."""
+    sys.path.insert(0, str(ROOT / "scripts" / "generators"))
+    import build_listings as bl
+    import listing_medium as lm
+
+    form = bl._render_filter_form([("ai", "Applied AI")], ["2026"])
+    page = f'<main>{form}<section class="tag-landing-list"></section></main>'
+    out = lm.with_medium_filter(page)
+    bar = out[out.index('<div class="listing-filters"') : out.index("</div>") + 6]
+    assert bar.index('data-filter-target="category"') < bar.index('data-filter-target="year"')
+    assert bar.index('data-filter-target="year"') < bar.index('data-filter-target="publication"')
+    assert "listing-publications" not in out
+    assert lm.with_medium_filter("<main>no bar</main>") == "<main>no bar</main>"
+
+
+def test_medium_hub_lists_every_publication_article() -> None:
+    """/articles/medium/ is where "All publications" lands: every article
+    the three publications carry, with no publication selected."""
+    sys.path.insert(0, str(ROOT / "scripts" / "generators"))
+    import build_listings as bl
+    import listing_medium as lm
+
+    kit = bl._medium_kit("<main></main>")
+    on_medium = ("A title", "2026-05-16", _SLUG, "An excerpt", ["infra"], "/b.webp", "Alt")
+    elsewhere = ("Other", "2099-01-01", "2099-01-01-not-on-medium", "x", ["ai"], "/c.webp", "Alt")
+    hub_posts = lm.hub_posts([elsewhere, on_medium])
+    assert hub_posts == [on_medium]
+    body = lm.hub_body(kit, hub_posts, [elsewhere, on_medium])
+    assert "<h1>All publications</h1>" in body
+    assert f'href="/{_SLUG}/"' in body
+    assert "/2099-01-01-not-on-medium/" not in body
+    for slug in ("banking-on-ai", "banking-on-quantum", "banking-on-cloud-native"):
+        assert f'href="/articles/medium/{slug}/"' in body
+    assert (
+        "selected>" not in body.split('data-filter-target="publication"')[1].split("</select>")[0]
+    )

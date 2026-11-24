@@ -32,6 +32,7 @@ Usage:  python3 scripts/seo_and_audit/verify_deploy.py [--base URL]
 from __future__ import annotations
 
 import argparse
+import http.client
 import json
 import re
 import sys
@@ -108,7 +109,10 @@ def fetch(url: str) -> tuple[int, str, dict[str, str]]:
             return resp.status, body, {k.lower(): v for k, v in resp.headers.items()}
     except urllib.error.HTTPError as exc:
         return exc.code, "", {k.lower(): v for k, v in (exc.headers or {}).items()}
-    except (urllib.error.URLError, TimeoutError) as exc:
+    # OSError covers URLError, timeouts and resets; HTTPException covers a
+    # server that closes the connection before answering. Both are network
+    # problems, so they become a Failure, which main() retries.
+    except (OSError, http.client.HTTPException) as exc:
         raise Failure(f"{url}: unreachable ({exc})") from exc
 
 

@@ -73,3 +73,29 @@ def test_clean_first_attempt_costs_no_delay(monkeypatch):
     assert rc == 0
     assert state["n"] == 1
     assert sleeps == [], "a clean run must not sleep"
+
+
+def test_dropped_connection_is_retried_not_a_crash(monkeypatch):
+    """A connection the server drops mid-request is a retryable problem.
+
+    main's deploy gate (run 45253829184) died with a traceback on
+    ``http.client.RemoteDisconnected`` from ``urlopen``: fetch() caught
+    URLError and TimeoutError only, so the retry loop never ran. The same
+    check passed against the same origin minutes later.
+    """
+    import http.client
+
+    calls = {"n": 0}
+
+    def flaky_urlopen(req, timeout):
+        calls["n"] += 1
+        raise http.client.RemoteDisconnected("Remote end closed connection without response")
+
+    monkeypatch.setattr(vd.urllib.request, "urlopen", flaky_urlopen)
+    try:
+        vd.fetch("https://example.com/robots.txt")
+    except vd.Failure as exc:
+        assert "unreachable" in str(exc)
+    else:
+        raise AssertionError("a dropped connection must raise Failure")
+    assert calls["n"] == 1
