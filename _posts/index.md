@@ -13,7 +13,7 @@ cdn: "https://cloudcdn.pro/clients"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "Apr 01, 2024"
-description: "Open-source ISO 20022 and post-quantum cryptography for banks: 179 audited packages, 51M+ downloads, and research for wholesale payments leaders."
+description: "Open-source ISO 20022 and post-quantum cryptography for banks: 199 audited packages, 54M+ downloads, and research for wholesale payments leaders."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -86,7 +86,7 @@ msapplication-navbutton-color: "0, 67, 165"
 
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "Open-source ISO 20022 and post-quantum cryptography for banks: 179 audited packages, 51M+ downloads, and research for wholesale payments leaders."
+twitter_description: "Open-source ISO 20022 and post-quantum cryptography for banks: 199 audited packages, 54M+ downloads, and research for wholesale payments leaders."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
@@ -169,19 +169,19 @@ site_software: "Static Site Generator, Rust"
 <h2 id="proof" class="feat-headline center">By the numbers.</h2>
 <section class="proof-rail" aria-label="Open source by the numbers">
 <div class="kpi-cell">
-  <span class="kpi-cell-value" data-kpi="downloads_total">51.9M</span>
+  <span class="kpi-cell-value" data-kpi="downloads_total">54.7M</span>
   <span class="kpi-cell-label">All-time downloads</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value" data-kpi="downloads_30d">3.7M</span>
+  <span class="kpi-cell-value" data-kpi="downloads_30d">2.5M</span>
   <span class="kpi-cell-label">Downloads, last 30 days</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value" data-kpi="github_stars">717</span>
+  <span class="kpi-cell-value" data-kpi="github_stars">760</span>
   <span class="kpi-cell-label">GitHub stars</span>
 </div>
 <div class="kpi-cell">
-  <span class="kpi-cell-value" data-kpi="packages_published">179</span>
+  <span class="kpi-cell-value" data-kpi="packages_published">199</span>
   <span class="kpi-cell-label">Packages published</span>
 </div>
 </section>
