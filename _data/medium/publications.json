@@ -286,6 +286,18 @@
     "2026-11-21-third-party-ai-governance-uk-firms": {
       "publication": "ai",
       "id": "6d80ca74be00"
+    },
+    "2026-11-22-firms-buy-ai-govern-through-vendor": {
+      "publication": "ai",
+      "id": "709736d71fc1"
+    },
+    "2026-11-23-composite-ml-dsa-rfc-10073": {
+      "publication": "quantum",
+      "id": "0f76f14b2177"
+    },
+    "2026-11-24-super-agents-one-session-per-task": {
+      "publication": "ai",
+      "id": "b6740c7478d6"
     }
   }
 }
