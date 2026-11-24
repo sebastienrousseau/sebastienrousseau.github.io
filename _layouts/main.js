@@ -248,11 +248,6 @@ document.addEventListener("change", function (event) {
         // safe default listing.
         var base = target.getAttribute("data-navigate-base") || "/articles";
         var v = target.value;
-        // An empty choice ("All publications") may name its own destination
-        // (data-navigate-all); it passes the same base allow-list below.
-        if (!v && target.getAttribute("data-navigate-all")) {
-            base = target.getAttribute("data-navigate-all");
-        }
         // Each DOM value is used only inside the branch where its allow-list
         // test passed, so no unchecked text can reach the URL. The base must
         // be a single-slash site-relative path whose first character is

@@ -68,7 +68,7 @@ _BASE_URL = "https://sebastienrousseau.com"
 _BANNER_ALT_FM_RE = re.compile(r'^banner_alt:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "lib"))
 import _lang_registry
-import _medium
+import listing_medium
 from _core import DATED_SLUG_RE as _DATED_SLUG_RE  # canonical dated-slug matcher
 from _svg_icons import (
     _CARD_SVG_EMAIL,
@@ -720,7 +720,7 @@ def _write_year_archives(
         out_path.parent.mkdir(parents=True, exist_ok=True)
         en_year_title = f"Articles from {year} · Sebastien Rousseau"
         en_year_out = _TITLE_RE.sub(f"<title>{_esc(en_year_title)}</title>", out, count=1)
-        en_year_out = _with_medium_filter(en_year_out)
+        en_year_out = listing_medium.with_medium_filter(en_year_out)
         out_path.write_text(en_year_out, encoding="utf-8")
         en_pages.append((year, out, year_posts))
 
@@ -757,92 +757,25 @@ def _write_year_archives(
     return len(en_pages), locale_written
 
 
-_PUBS_BASE = "/articles/medium"
+def _medium_kit(template: str) -> listing_medium.Kit:
+    """listing_medium's view of this module: cards, filter bar, page shell."""
 
-
-def _medium_filter(current: str = "") -> str:
-    """The Medium <select> beside Category and Year on the English listings.
-
-    Navigate mode, like Year: each publication has its own archive at
-    ``/articles/medium/<slug>/``, and "All publications" goes back to
-    ``/articles/`` (``data-navigate-all``). English only, because the
-    Medium copies are the English text.
-    """
-    opts = '<option value="">All publications</option>' + "".join(
-        f'<option value="{pub["slug"]}"{" selected" if pub["slug"] == current else ""}>'
-        f"{_esc(pub['name'])}</option>"
-        for pub in _medium.publications().values()
-    )
-    return (
-        "<label>Medium"
-        f'<select data-filter-target="publication" data-filter-mode="navigate" '
-        f'data-navigate-base="{_PUBS_BASE}" data-navigate-all="/articles" '
-        f'name="publication">{opts}</select>'
-        "</label>"
-    )
-
-
-def _with_medium_filter(html: str, current: str = "") -> str:
-    """Append the Medium <select> to the page's filter bar, if it has one."""
-    start = html.find('<div class="listing-filters"')
-    if start < 0:
-        return html
-    end = html.find("</div>", start)
-    return html[:end] + _medium_filter(current) + html[end:]
-
-
-def _render_publication_body(
-    pub: dict[str, str],
-    posts_for_pub: list[tuple[str, str, str, str, list[str], str, str]],
-    all_posts: list[tuple[str, str, str, str, list[str], str, str]] | None = None,
-) -> str:
-    cards = "".join(_render_card(*p) for p in posts_for_pub)
-    n = len(posts_for_pub)
-    pillar_options = [(p, PILLAR_LABELS[p]) for p in PILLAR_ORDER]
-    years = sorted(_group_by_year(all_posts or posts_for_pub).keys(), reverse=True)
-    filter_form = _with_medium_filter(_render_filter_form(pillar_options, years), pub["slug"])
-    return (
-        f'<div class="wrap report-wrap">'
-        f'<header class="tag-landing-hero">'
-        f'<p class="eyebrow"><a href="/articles/">&larr; All articles</a></p>'
-        f"<h1>{_esc(pub['name'])}</h1>"
-        f'<p class="tag-landing-meta">{_esc(pub["tagline"])} · {n} article{"s" if n != 1 else ""}'
-        f' · <a href="{pub["url"]}" rel="noopener">Read it on Medium</a></p>'
-        f"</header>"
-        f"{filter_form}"
-        f'<section class="tag-landing-list" aria-label="Articles in {_esc(pub["name"])}">'
-        f"{cards}"
-        f"</section>"
-        f'<p class="listing-empty" role="status">No articles match the current filters.</p>'
-        f"</div>"
-    )
-
-
-def _write_publication_archives(
-    template: str, posts: list[tuple[str, str, str, str, list[str], str, str]]
-) -> int:
-    """One English archive per Medium publication, listing the articles it
-    carries. English only: the Medium copies are the English text."""
-    by_slug = {p[2]: p for p in posts}
-    written = 0
-    for key, pub in _medium.publications().items():
-        pub_posts = [by_slug[s] for s in _medium.slugs_by_publication()[key] if s in by_slug]
-        canonical = f"{_BASE_URL}{_PUBS_BASE}/{pub['slug']}/"
-        desc = (
-            f"{pub['name']}, Sebastien Rousseau's Medium publication: {pub['summary']} "
-            f"The {len(pub_posts)} articles it carries, each first published here."
-        )
-        out = _swap_head(template, pub["name"], desc, canonical)
+    def page(name: str, desc: str, canonical: str, body: str) -> str:
+        out = _swap_head(template, name, desc, canonical)
         out = _AP_HERO_BLOCK_RE.sub("", out, count=1)
-        body = _render_publication_body(pub, pub_posts, posts)
-        out = _MAIN_RE.sub(rf"\1{body}\3", out, count=1)
-        title = f"{pub['name']} on Medium · Sebastien Rousseau"
-        out = _TITLE_RE.sub(f"<title>{_esc(title)}</title>", out, count=1)
-        out_path = PUBLIC / "articles" / "medium" / pub["slug"] / "index.html"
-        out_path.parent.mkdir(parents=True, exist_ok=True)
-        out_path.write_text(out, encoding="utf-8")
-        written += 1
-    return written
+        out = _MAIN_RE.sub(lambda m: m.group(1) + body + m.group(3), out, count=1)
+        title = f"{name} on Medium · Sebastien Rousseau"
+        return _TITLE_RE.sub(f"<title>{_esc(title)}</title>", out, count=1)
+
+    return listing_medium.Kit(
+        card=_render_card,
+        filter_form=lambda years: _render_filter_form(
+            [(p, PILLAR_LABELS[p]) for p in PILLAR_ORDER], years
+        ),
+        page=page,
+        public=PUBLIC,
+        base_url=_BASE_URL,
+    )
 
 
 def _write_en_paged(
@@ -878,7 +811,7 @@ def _write_en_paged(
             else f"Articles, page {idx} of {total_pages} · Sebastien Rousseau"
         )
         en_out = _TITLE_RE.sub(f"<title>{_esc(en_doc_title)}</title>", page_html, count=1)
-        en_out = _with_medium_filter(en_out)
+        en_out = listing_medium.with_medium_filter(en_out)
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(en_out, encoding="utf-8")
         out.append((idx, page_html, page_posts))
@@ -895,7 +828,7 @@ def _write_listings() -> tuple[int, int, int, int]:
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
     posts = _walk_posts()
     year_en, year_locale = _write_year_archives(template, posts)
-    pubs_written = _write_publication_archives(template, posts)
+    pubs_written = listing_medium.write_archives(_medium_kit(template), posts)
     print(f"build_listings: wrote {pubs_written} Medium publication archive(s)")
     pages = _chunk(posts, PAGE_SIZE)
     all_years = sorted({p[1][:4] for p in posts}, reverse=True)
