@@ -568,3 +568,23 @@ def test_robots_does_not_filter_on_emptiness(tmp_path):
     (tmp_path / "news-sitemap.xml").write_text("<urlset></urlset>")  # zero <url>
     lines = output._news_sitemap_lines(tmp_path, origin="https://example.test")
     assert "Sitemap: https://example.test/news-sitemap.xml" in lines
+
+
+def _credentials_line(layout: str) -> str:
+    start = layout.index('<p class="feat-credentials">')
+    return layout[start : layout.index("</p>", start)]
+
+
+def test_homepage_package_count_is_filled_from_metrics(monkeypatch):
+    # The credentials line said "Creator of 179 open-source packages" as
+    # plain text while the KPI rail beside it read the live count (199 on
+    # 24 November 2026). The count is a packages_published KPI span, so
+    # postbuild fills it from metrics.json like the rail.
+    layout = (Path(__file__).resolve().parents[2] / "_layouts" / "index.html").read_text(
+        encoding="utf-8"
+    )
+    line = _credentials_line(layout)
+    assert 'class="kpi-inline" data-kpi="packages_published"' in line
+    monkeypatch.setattr(seo, "_kpi_cache", {"packages_published": "204"})
+    assert "Creator of" in line
+    assert ">204</span> open-source packages" in seo.inject_kpi_metrics(line)
