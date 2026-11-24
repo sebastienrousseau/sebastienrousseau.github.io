@@ -3,9 +3,9 @@
 
 """Unit coverage for fetch_metrics — Phase 1.3.
 
-fetch_metrics.py aggregates public download/star metrics for the project cards
-(with fail-soft fallbacks). Network is mocked; these cover the JSON fetch, the
-per-source parsers/fallbacks, compact formatting, and the date math.
+fetch_metrics.py takes the download, package and star figures from the GitHub
+profile's profile.json, so the homepage and the profile agree, and keeps the
+committed snapshot when that fetch fails. Network is mocked.
 """
 
 from __future__ import annotations
@@ -67,40 +67,87 @@ def test_http_get_json_exception_is_none(monkeypatch) -> None:
 # --- per-source parsers ----------------------------------------------------
 
 
-def test_pypi_downloads(monkeypatch) -> None:
-    monkeypatch.setattr(fm, "_http_get_json", lambda url: {"data": {"last_month": 4200}})
-    assert fm._pypi_downloads("pain001") == 4200
-
-
-def test_pypi_downloads_failure_is_zero(monkeypatch) -> None:
-    monkeypatch.setattr(fm, "_http_get_json", lambda url: None)
-    assert fm._pypi_downloads("pain001") == 0
-
-
-def test_github_repos_sums(monkeypatch) -> None:
-    repos = [{"stargazers_count": 10, "forks_count": 2}, {"stargazers_count": 5, "forks_count": 1}]
+def test_github_forks_sums_owned_repos(monkeypatch) -> None:
+    repos = [{"forks_count": 2}, {"forks_count": 1}, {"forks_count": 9, "fork": True}]
     monkeypatch.setattr(fm, "_http_get_json", lambda url: repos)
-    assert fm._github_repos() == (15, 3)
+    assert fm._github_forks() == 3
 
 
-def test_github_repos_non_list_is_zeros(monkeypatch) -> None:
+def test_github_forks_non_list_is_zero(monkeypatch) -> None:
     monkeypatch.setattr(fm, "_http_get_json", lambda url: {"message": "rate limited"})
-    assert fm._github_repos() == (0, 0)
+    assert fm._github_forks() == 0
 
 
-def test_crates_downloads_sums(monkeypatch) -> None:
-    def fake(url):
-        if "users/" in url:
-            return {"user": {"id": 99}}
-        return {"crates": [{"downloads": 100}, {"downloads": 250}]}
+_NUMBERS = {
+    "all_time_downloads": 54_661_183,
+    "recent_downloads": 2_518_481,
+    "window_days": 30,
+    "github_stars": 760,
+    "packages": 199,
+    "as_of": "2026-11-24",
+}
 
-    monkeypatch.setattr(fm, "_http_get_json", fake)
-    assert fm._crates_downloads_all() == 350
+
+def test_profile_numbers_reads_the_profile_json(monkeypatch) -> None:
+    seen: list[str] = []
+    monkeypatch.setattr(
+        fm, "_http_get_json", lambda url: seen.append(url) or {"numbers": dict(_NUMBERS)}
+    )
+    assert fm._profile_numbers() == _NUMBERS
+    assert seen == [fm.PROFILE_JSON_URL]
 
 
-def test_crates_downloads_no_uid_is_zero(monkeypatch) -> None:
-    monkeypatch.setattr(fm, "_http_get_json", lambda url: {})
-    assert fm._crates_downloads_all() == 0
+def test_profile_numbers_rejects_a_partial_answer(monkeypatch) -> None:
+    for bad in (
+        None,
+        {},
+        {"numbers": {**_NUMBERS, "packages": 0}},
+        {"numbers": {k: v for k, v in _NUMBERS.items() if k != "recent_downloads"}},
+    ):
+        monkeypatch.setattr(fm, "_http_get_json", lambda url, bad=bad: bad)
+        assert fm._profile_numbers() is None
+
+
+def _run_main(tmp_path, monkeypatch, numbers):
+    out = tmp_path / "metrics.json"
+    out.write_text(
+        '{"stats":[{"key":"downloads_30d","value":3700000},'
+        '{"key":"packages_published","value":179},'
+        '{"key":"downloads_total","value":53927032},'
+        '{"key":"github_stars","value":761},{"key":"github_forks","value":114}]}',
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(fm, "OUT_PATH", out)
+    monkeypatch.delenv(fm.SKIP_ENV, raising=False)
+    monkeypatch.setattr(fm, "_profile_numbers", lambda: numbers)
+    monkeypatch.setattr(fm, "_github_forks", lambda: 115)
+    monkeypatch.setattr(fm, "_articles_count", lambda: 132)
+    assert fm.main() == 0
+    import json
+
+    return {s["key"]: s["value"] for s in json.loads(out.read_text())["stats"]}
+
+
+def test_main_takes_the_profile_figures_even_when_lower(tmp_path, monkeypatch) -> None:
+    """The GitHub profile and the homepage show the same four numbers.
+
+    A 30-day window falls as well as rises; the old max() against the
+    committed snapshot froze it at 3.7M while the profile read 2.5M.
+    """
+    got = _run_main(tmp_path, monkeypatch, dict(_NUMBERS))
+    assert got["downloads_total"] == 54_661_183
+    assert got["downloads_30d"] == 2_518_481
+    assert got["packages_published"] == 199
+    assert got["github_stars"] == 760
+    assert got["github_forks"] == 115
+
+
+def test_main_keeps_the_snapshot_when_the_profile_is_unreachable(tmp_path, monkeypatch) -> None:
+    got = _run_main(tmp_path, monkeypatch, None)
+    assert got["downloads_total"] == 53_927_032
+    assert got["downloads_30d"] == 3_700_000
+    assert got["packages_published"] == 179
+    assert got["github_stars"] == 761
 
 
 # --- _years_active ---------------------------------------------------------

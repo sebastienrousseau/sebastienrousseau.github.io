@@ -1,5 +1,5 @@
 {
-  "$generated_at": "2026-11-24T03:15:45+00:00",
+  "$generated_at": "2026-11-24T15:41:25+00:00",
   "stats": [
     {
       "key": "years_payments",
@@ -18,30 +18,30 @@
     {
       "key": "downloads_total",
       "label": "All-time open-source package downloads (crates.io + PyPI + npm)",
-      "value": 53927032,
+      "value": 54661183,
       "format": "compact",
-      "source": "crates.io + clickpy.clickhouse.com + api.npmjs.org"
+      "source": "github.com/sebastienrousseau/sebastienrousseau (profile.json)"
     },
     {
       "key": "downloads_30d",
       "label": "Downloads in the last 30 days (crates.io + PyPI + npm)",
-      "value": 3700000,
+      "value": 2518481,
       "format": "compact",
-      "source": "crates.io + clickpy.clickhouse.com + api.npmjs.org"
+      "source": "github.com/sebastienrousseau/sebastienrousseau (profile.json)"
     },
     {
       "key": "github_stars",
       "label": "GitHub stars across owned repositories",
-      "value": 761,
+      "value": 760,
       "format": "compact",
-      "source": "api.github.com/users/sebastienrousseau/repos"
+      "source": "github.com/sebastienrousseau/sebastienrousseau (profile.json)"
     },
     {
       "key": "packages_published",
       "label": "Packages published across crates.io, PyPI, and npm",
-      "value": 179,
+      "value": 199,
       "format": "compact",
-      "source": "crates.io + pypi.org + npmjs.com"
+      "source": "github.com/sebastienrousseau/sebastienrousseau (profile.json)"
     },
     {
       "key": "github_forks",

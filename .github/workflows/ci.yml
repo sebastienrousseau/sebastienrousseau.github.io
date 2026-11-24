@@ -963,8 +963,24 @@ jobs:
           retention-days: 30
 
       - name: Deploy to GitHub Pages
+        # deploy-pages lists the run's artifacts once. Seconds after the
+        # 290 MB upload above, that listing can still leave github-pages out
+        # ("Found 8 artifact(s)", then "No artifacts named github-pages"),
+        # which failed main's run for #545 and both attempts of the run for
+        # #546. The failure comes before any deployment is created, so a
+        # second attempt after a pause is safe; the next step makes it.
         if: github.ref == 'refs/heads/main'
-        id: deployment
+        id: deployment_first
+        continue-on-error: true
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
+
+      - name: Wait for the artifact listing to catch up
+        if: github.ref == 'refs/heads/main' && steps.deployment_first.outcome == 'failure'
+        run: sleep 60
+
+      - name: Deploy to GitHub Pages (second attempt)
+        if: github.ref == 'refs/heads/main' && steps.deployment_first.outcome == 'failure'
+        id: deployment_retry
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
 
       - name: Verify the deployed origin
@@ -984,5 +1000,5 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: |
           python3 scripts/seo_and_audit/verify_deploy.py \
-            --base "${{ steps.deployment.outputs.page_url }}" \
+            --base "${{ steps.deployment_first.outputs.page_url || steps.deployment_retry.outputs.page_url }}" \
             --skip-csp

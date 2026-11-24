@@ -9,9 +9,10 @@ can render aggregate-not-vanity numbers.
 Authority is conferred, not claimed. Every number this script emits is
 either (a) externally verifiable via the URL recorded next to it, or
 (b) derived from the local archive (article count, years active). We
-never invent adopter counts. If a remote fetch errors, we fall back to
-the last committed `_data/proof/metrics.json` rather than ship zeros —
-better stale than fabricated.
+never invent adopter counts. Downloads, stars and packages come from the
+GitHub profile's profile.json, so both pages agree. If a remote fetch
+errors, we fall back to the last committed `_data/proof/metrics.json`
+rather than ship zeros: better stale than fabricated.
 
 Run from repo root::
 
@@ -32,7 +33,7 @@ sub-fetch succeeded::
           "label": "Package downloads",
           "value": 12345,
           "format": "compact",
-          "source": "pypistats.org + crates.io"
+          "source": "github.com/sebastienrousseau/sebastienrousseau (profile.json)"
         },
         ...
       ]
@@ -55,19 +56,21 @@ import _profile
 
 OUT_PATH = ROOT / "_data" / "proof" / "metrics.json"
 
-# Pinned PyPI package list — pypistats has no per-account rollup, so we
-# enumerate. Adding a package means: add the slug here, ensure it's live.
-PYPI_PACKAGES = (
-    "pain001",
-    "bankstatementparser",
-    "pacs008",
+# The four headline figures (all-time downloads, the last 30 days, GitHub
+# stars, packages published) come from the GitHub profile's profile.json,
+# which tools/metrics.py in sebastienrousseau/sebastienrousseau refreshes
+# every three hours from crates.io, PyPI (clickpy) and npm. One pipeline
+# for both pages, so the homepage and the profile show the same numbers.
+# This script used to count them itself: PyPI last-month downloads for
+# three pinned packages added to crates.io all-time totals for the first
+# 100 crates, no npm, and max() against the snapshot, which froze the
+# 30-day figure at 3.7M and the package count at 179.
+PROFILE_JSON_URL = (
+    "https://raw.githubusercontent.com/sebastienrousseau/sebastienrousseau/"
+    "profile-data/profile.json"
 )
-# crates.io downloads are summed across EVERY crate owned by the account
-# (discovered via the users endpoint), so serde_yml and libyml — which
-# dominate the total at ~18M each — are never missed. No hand-maintained
-# crate list to drift out of date.
+PROFILE_KEYS = ("all_time_downloads", "recent_downloads", "github_stars", "packages")
 GITHUB_USER = "sebastienrousseau"
-CRATES_USER = "sebastienrousseau"
 
 _TIMEOUT = 10
 _HEADERS = {"User-Agent": "sebastienrousseau-site-build/1.0"}
@@ -86,34 +89,21 @@ def _http_get_json(url: str) -> dict | None:
         return None
 
 
-def _pypi_downloads(pkg: str) -> int:
-    """Return last-month downloads from pypistats.org (a free public API
-    backed by Linehan Software with no key). 0 on fetch failure."""
-    data = _http_get_json(f"https://pypistats.org/api/packages/{pkg}/recent")
-    if not data:
-        return 0
-    return int(data.get("data", {}).get("last_month") or 0)
+def _profile_numbers() -> dict | None:
+    """The profile's ``numbers`` block, or None unless every figure is a
+    positive integer, so a half-written file never reaches the page."""
+    numbers = (_http_get_json(PROFILE_JSON_URL) or {}).get("numbers")
+    if not isinstance(numbers, dict):
+        return None
+    for key in PROFILE_KEYS:
+        value = numbers.get(key)
+        if not isinstance(value, int) or isinstance(value, bool) or value <= 0:
+            return None
+    return numbers
 
 
-def _crates_downloads_all() -> int:
-    """Sum all-time downloads across every crate owned by the account.
-
-    Resolves the account's numeric user id, then lists their crates and
-    sums each crate's all-time download count. 0 on any fetch failure so
-    `_max_value` falls back to the last committed total."""
-    user = _http_get_json(f"https://crates.io/api/v1/users/{CRATES_USER}")
-    uid = (user or {}).get("user", {}).get("id")
-    if not uid:
-        return 0
-    data = _http_get_json(f"https://crates.io/api/v1/crates?user_id={uid}&per_page=100")
-    if not data:
-        return 0
-    return sum(int(c.get("downloads") or 0) for c in data.get("crates", []))
-
-
-def _github_repos() -> tuple[int, int]:
-    """Sum stars + forks across the user's owned non-fork repos across all pages."""
-    stars = 0
+def _github_forks() -> int:
+    """Forks across the user's owned non-fork repos, all pages."""
     forks = 0
     for page in range(1, 11):
         data = _http_get_json(
@@ -121,14 +111,10 @@ def _github_repos() -> tuple[int, int]:
         )
         if not isinstance(data, list) or not data:
             break
-        for r in data:
-            if r.get("fork"):
-                continue
-            stars += int(r.get("stargazers_count") or 0)
-            forks += int(r.get("forks_count") or 0)
+        forks += sum(int(r.get("forks_count") or 0) for r in data if not r.get("fork"))
         if len(data) < 100:
             break
-    return stars, forks
+    return forks
 
 
 def _articles_count() -> int:
@@ -167,15 +153,36 @@ def _load_existing() -> dict:
         return {}
 
 
+def _previous(key: str, fallback: dict) -> int:
+    """The committed snapshot's value for ``key``, 0 when it has none."""
+    for stat in fallback.get("stats", []):
+        if stat.get("key") == key:
+            return int(stat.get("value") or 0)
+    return 0
+
+
 def _max_value(key: str, computed: int, fallback: dict) -> int:
     """Return whichever is higher: this run's computed value or the
     previously committed value. Prevents a flaky API regressing a real
-    number to zero on a single bad poll."""
-    for stat in fallback.get("stats", []):
-        if stat.get("key") == key:
-            previous = int(stat.get("value") or 0)
-            return max(computed, previous)
-    return computed
+    number to zero on a single bad poll. Forks only: the profile figures
+    are taken as they are, since a 30-day window falls as well as rises."""
+    return max(computed, _previous(key, fallback))
+
+
+def _headline_figures(fallback: dict) -> dict[str, int]:
+    """The four profile figures, keyed as metrics.json names them; the
+    committed snapshot's values when profile.json cannot be read."""
+    numbers = _profile_numbers()
+    pairs = {
+        "downloads_total": "all_time_downloads",
+        "downloads_30d": "recent_downloads",
+        "github_stars": "github_stars",
+        "packages_published": "packages",
+    }
+    if numbers is None:
+        print("fetch_metrics: profile.json unreadable, keeping the committed figures")
+        return {ours: _previous(ours, fallback) for ours in pairs}
+    return {ours: numbers[theirs] for ours, theirs in pairs.items()}
 
 
 # Opt out of the network fetch and keep the committed snapshot.
@@ -203,15 +210,12 @@ def main() -> int:
 
     fallback = _load_existing()
 
-    pypi_total = sum(_pypi_downloads(p) for p in PYPI_PACKAGES)
-    crates_total = _crates_downloads_all()
-    downloads_total = _max_value("downloads_total", pypi_total + crates_total, fallback)
-    downloads_30d = _max_value("downloads_30d", pypi_total, fallback)
-    packages_published = _max_value("packages_published", len(PYPI_PACKAGES), fallback)
-
-    stars, forks = _github_repos()
-    stars_total = _max_value("github_stars", stars, fallback)
-    forks_total = _max_value("github_forks", forks, fallback)
+    figures = _headline_figures(fallback)
+    downloads_total = figures["downloads_total"]
+    downloads_30d = figures["downloads_30d"]
+    packages_published = figures["packages_published"]
+    stars_total = figures["github_stars"]
+    forks_total = _max_value("github_forks", _github_forks(), fallback)
 
     articles = _articles_count()
     years_payments = _years_active()
@@ -238,28 +242,28 @@ def main() -> int:
                 "label": "All-time open-source package downloads (crates.io + PyPI + npm)",
                 "value": downloads_total,
                 "format": "compact",
-                "source": "crates.io + clickpy.clickhouse.com + api.npmjs.org",
+                "source": "github.com/sebastienrousseau/sebastienrousseau (profile.json)",
             },
             {
                 "key": "downloads_30d",
                 "label": "Downloads in the last 30 days (crates.io + PyPI + npm)",
                 "value": downloads_30d,
                 "format": "compact",
-                "source": "crates.io + clickpy.clickhouse.com + api.npmjs.org",
+                "source": "github.com/sebastienrousseau/sebastienrousseau (profile.json)",
             },
             {
                 "key": "github_stars",
                 "label": "GitHub stars across owned repositories",
                 "value": stars_total,
                 "format": "compact",
-                "source": "api.github.com/users/sebastienrousseau/repos",
+                "source": "github.com/sebastienrousseau/sebastienrousseau (profile.json)",
             },
             {
                 "key": "packages_published",
                 "label": "Packages published across crates.io, PyPI, and npm",
                 "value": packages_published,
                 "format": "compact",
-                "source": "crates.io + pypi.org + npmjs.com",
+                "source": "github.com/sebastienrousseau/sebastienrousseau (profile.json)",
             },
             {
                 "key": "github_forks",
