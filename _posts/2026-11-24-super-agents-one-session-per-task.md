@@ -110,20 +110,22 @@ topic_clusters: "generative-ai-llms"
 
 # Super-agents: why one session per task stops scaling
 
-**A single task is limited by model capability, but multi-tasking is limited by human attention, and the fix is an architecture rather than a better model.**
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Mainstream agents treat one isolated session as the unit of work, so a person ends up as the scheduler for parallel tasks. The authors propose a Super-agent: one continuous entity built on a two-level architecture, with a long-lived Router layer handling all human interaction and a context-isolated Worker layer running tasks concurrently.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> DeepSeek Harness argues that one session per task caps parallel agent work at human attention, and proposes a Router and Worker design it calls a Super-agent.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>The bottleneck has moved.</strong> Models can use tools to solve complex problems with less supervision, yet sessions stay isolated and the user must remember what each one contains.</li>
-  <li><strong>Four characteristics define the target.</strong> The authors believe a Super-agent is continuous, productive, proactive and persistent, and that no single ReAct loop can supply all four.</li>
-  <li><strong>Sessions force a trade-off.</strong> Routing everything to one session gives the most continuous context; a new session per event gives the most throughput. Neither alone works.</li>
-  <li><strong>Two levels resolve it.</strong> A Router layer keeps global continuity while isolated Worker Sessions execute tasks concurrently.</li>
+  <li><strong>The models got better; the workflow didn't.</strong> This piece reads "Exploring Super-agent Design: Towards a More Autonomous Agent System", a post published on X by DeepSeek Harness (@DeepSeekHarness) on 1 November 2026, written by Yujia Qiao on behalf of the…</li>
+  <li><strong>Where the single-session design breaks.</strong> Agents still use a single session as the basic unit of work, and sessions are isolated from one another.</li>
+  <li><strong>Why connectors don't fix it.</strong> The obvious patch is to extend what already exists.</li>
+  <li><strong>Decoupling the agent from the session.</strong> The post states that getting past these limits means decoupling the agent from any single, manually driven session.</li>
 </ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-11-22-firms-buy-ai-govern-through-vendor">Firms Buy Their Most Material AI and Govern It Through the Vendor</a>, <a href="https://sebastienrousseau.com/2026-11-21-third-party-ai-governance-uk-firms">Third-Party AI Is Now the Governance Problem for UK Financial Firms</a>, <a href="https://sebastienrousseau.com/2026-11-20-ai-adoption-uk-financial-services-2026">AI in UK Finance: Broad Use, Cautious Agents, Third-Party Reliance</a>.</p>
 </aside>
 <!-- lead-end -->
+
+**A single task is limited by model capability, but multi-tasking is limited by human attention, and the fix is an architecture rather than a better model.**
 
 > **Executive Summary**
 >
@@ -260,4 +262,17 @@ The post describes an internal Super-agent instance running on DeepSeek Harness 
 
 ## References
 
-- Qiao, Y., (2026). Exploring Super-agent Design: Towards a More Autonomous Agent System. DeepSeek Harness (@DeepSeekHarness) on X.
+- Qiao, Y., (2026). [Exploring Super-agent Design: Towards a More Autonomous Agent System ⧉](https://x.com/DeepSeekHarness/status/2116857257245987236 "Exploring Super-agent Design: Towards a More Autonomous Agent System"). DeepSeek Harness (@DeepSeekHarness) on X.
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior payments and financial services leader writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services and the transformation of wholesale payments.</span><span class="author-credentials">More than 20 years in payments, banking and digital technology. Leads wholesale payments API products at HSBC · EPAA Quantum-Safe Working Group member. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-11-24">2026-11-24</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-11-22-firms-buy-ai-govern-through-vendor" class="related-media" aria-label="Firms Buy Their Most Material AI and Govern It Through the Vendor" tabindex="-1"><img alt="A lit bank entrance in a dark stone facade at night" src="https://cloudcdn.pro/stocks/images/planet-volumes-MT5g52DsGf4-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-11-22-firms-buy-ai-govern-through-vendor">Firms Buy Their Most Material AI and Govern It Through the Vendor</a></h3><p><time datetime="2026-11-22">2026-11-22</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-11-21-third-party-ai-governance-uk-firms" class="related-media" aria-label="Third-Party AI Is Now the Governance Problem for UK Financial Firms" tabindex="-1"><img alt="St Paul's Cathedral and the Millennium Bridge over the Thames at night" src="https://cloudcdn.pro/stocks/images/vadim-sherbakov-xS_RzdD5CFE.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-11-21-third-party-ai-governance-uk-firms">Third-Party AI Is Now the Governance Problem for UK Financial Firms</a></h3><p><time datetime="2026-11-21">2026-11-21</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-11-20-ai-adoption-uk-financial-services-2026" class="related-media" aria-label="AI in UK Finance: Broad Use, Cautious Agents, Third-Party Reliance" tabindex="-1"><img alt="The Canary Wharf London Underground roundel on a dimly lit platform" src="https://cloudcdn.pro/stocks/images/7eaven-HkA-V2dw9yA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-11-20-ai-adoption-uk-financial-services-2026">AI in UK Finance: Broad Use, Cautious Agents, Third-Party Reliance</a></h3><p><time datetime="2026-11-20">2026-11-20</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

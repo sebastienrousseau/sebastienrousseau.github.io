@@ -104,15 +104,15 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-11-21-third-party-ai-governance-uk-firms/index.html" title="Third-Party AI Is Now the Governance Problem for UK Financial Firms">
-<img alt="St Paul's Cathedral and the Millennium Bridge over the Thames at night" src="https://cloudcdn.pro/stocks/images/vadim-sherbakov-xS_RzdD5CFE.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-11-24-super-agents-one-session-per-task/index.html" title="Super-agents: why one session per task stops scaling">
+<img alt="Blue light lines crossing in a network over a dark reflective floor" src="https://cloudcdn.pro/stocks/images/johann-juraver-qyFaXDPecSQ.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Third-Party Ai Risk · Ai Governance · Bank Of England</span>
-<h3><a href="/2026-11-21-third-party-ai-governance-uk-firms/index.html" title="Third-Party AI Is Now the Governance Problem for UK Financial Firms">Third-Party AI Is Now the Governance Problem for UK Financial Firms</a></h3>
-<p class="newsroom-meta"><time datetime="2026-11-21">November 21, 2026</time> · Sebastien Rousseau</p>
-<p>AI use among surveyed UK financial firms has reached 86%, but the numbers that matter most sit beneath the headline: third parties now supply more than half of the high-materiality systems, and overseeing them is the governance challenge firms report most often.</p>
-<p><a class="pill ghost" href="/2026-11-21-third-party-ai-governance-uk-firms/index.html" title="Third-Party AI Is Now the Governance Problem for UK Financial Firms">Read the full story</a></p>
+<span class="newsroom-eyebrow">Super-Agents · Ai Agents · Agent Architecture</span>
+<h3><a href="/2026-11-24-super-agents-one-session-per-task/index.html" title="Super-agents: why one session per task stops scaling">Super-agents: why one session per task stops scaling</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-24">November 24, 2026</time> · Sebastien Rousseau</p>
+<p>A single task is limited by model capability, but multi-tasking is limited by human attention, and the fix is an architecture rather than a better model.</p>
+<p><a class="pill ghost" href="/2026-11-24-super-agents-one-session-per-task/index.html" title="Super-agents: why one session per task stops scaling">Read the full story</a></p>
 </div>
 </article>
 
@@ -161,6 +161,42 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-11-23-composite-ml-dsa-rfc-10073/index.html" title="Composite ML-DSA: A Post-Quantum Hybrid as One Atomic Algorithm" aria-label="Composite ML-DSA: A Post-Quantum Hybrid as One Atomic Algorithm">
+<img alt="Two parallel black and white bands curving together" src="https://cloudcdn.pro/stocks/images/alvaro-pinot-6tWCLnsCFfM.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Post-Quantum Cryptography · Ml-Dsa · Composite Signatures</span>
+<h3><a href="/2026-11-23-composite-ml-dsa-rfc-10073/index.html" title="Composite ML-DSA: A Post-Quantum Hybrid as One Atomic Algorithm">Composite ML-DSA: A Post-Quantum Hybrid as One Atomic Algorithm</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-23">November 23, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">The strongest idea in this Standards Track RFC is that a post-quantum hybrid doesn't have to change your protocol: by presenting one public key and one signature value, Composite ML-DSA lets existing cryptographic agility mechanisms do the work, while a deliberately large menu of combinations serves regulators rather t</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-11-22-firms-buy-ai-govern-through-vendor/index.html" title="Firms Buy Their Most Material AI and Govern It Through the Vendor" aria-label="Firms Buy Their Most Material AI and Govern It Through the Vendor">
+<img alt="A lit bank entrance in a dark stone facade at night" src="https://cloudcdn.pro/stocks/images/planet-volumes-MT5g52DsGf4-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Ai Governance · Third-Party Ai · Vendor Ai</span>
+<h3><a href="/2026-11-22-firms-buy-ai-govern-through-vendor/index.html" title="Firms Buy Their Most Material AI and Govern It Through the Vendor">Firms Buy Their Most Material AI and Govern It Through the Vendor</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-22">November 22, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">The Bank of England and FCA survey shows UK financial firms buying a growing share of their AI, including most of their high-materiality systems, and understanding those bought systems mainly through vendor assurance and contracts rather than the deep knowledge they hold of what they build.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-11-21-third-party-ai-governance-uk-firms/index.html" title="Third-Party AI Is Now the Governance Problem for UK Financial Firms" aria-label="Third-Party AI Is Now the Governance Problem for UK Financial Firms">
+<img alt="St Paul's Cathedral and the Millennium Bridge over the Thames at night" src="https://cloudcdn.pro/stocks/images/vadim-sherbakov-xS_RzdD5CFE.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Third-Party Ai Risk · Ai Governance · Bank Of England</span>
+<h3><a href="/2026-11-21-third-party-ai-governance-uk-firms/index.html" title="Third-Party AI Is Now the Governance Problem for UK Financial Firms">Third-Party AI Is Now the Governance Problem for UK Financial Firms</a></h3>
+<p class="newsroom-meta"><time datetime="2026-11-21">November 21, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">AI use among surveyed UK financial firms has reached 86%, but the numbers that matter most sit beneath the headline: third parties now supply more than half of the high-materiality systems, and overseeing them is the governance challenge firms report most often.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-11-20-ai-adoption-uk-financial-services-2026/index.html" title="AI in UK Finance: Broad Use, Cautious Agents, Third-Party Reliance" aria-label="AI in UK Finance: Broad Use, Cautious Agents, Third-Party Reliance">

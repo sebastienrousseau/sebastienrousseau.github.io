@@ -110,20 +110,22 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # Composite ML-DSA: A Post-Quantum Hybrid as One Atomic Algorithm
 
-**The strongest idea in this Standards Track RFC is that a post-quantum hybrid doesn't have to change your protocol: by presenting one public key and one signature value, Composite ML-DSA lets existing cryptographic agility mechanisms do the work, while a deliberately large menu of combinations serves regulators rather than implementers.**
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> An IETF Standards Track RFC published in November 2026 defines Composite ML-DSA, a scheme that pairs ML-DSA with a traditional signature algorithm and exposes the pair as a single public key and a single signature value. Because protocols see one algorithm, they needn't become "hybrid aware". The long list of combinations exists mainly to support regulatory re-certification, and the document is candid about what it leaves out, including backwards compatibility, mandatory-to-implement algorithms and the stronger SUF-CMA property.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> RFC 10073 defines Composite ML-DSA, which pairs ML-DSA with a traditional signature algorithm and presents the pair as one public key and one signature value.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>One key, one signature.</strong> The composite presents a single public key and signature value, so it can be treated as a single atomic algorithm at the protocol level.</li>
-  <li><strong>Security survives a single break.</strong> Composite algorithms retain some security even if one of their component algorithms is broken.</li>
-  <li><strong>Many combinations, few deployments.</strong> The size of the list is motivated by regulatory re-certification, and organisations are expected to deploy one composite algorithm or a handful.</li>
-  <li><strong>Stated limits.</strong> There are no mandatory-to-implement algorithms, no direct backwards-compatibility coverage, and no SUF-CMA property.</li>
+  <li><strong>Why a hybrid signature at all.</strong> The document is RFC 10073, Composite Module-Lattice-Based Digital Signature Algorithm (ML-DSA) for Use in X.509 Public Key Infrastructure, published by the IETF in November 2026 and written by M.</li>
+  <li><strong>The document and its authors.</strong> Before turning to mechanics, the provenance is worth a paragraph, because founders and engineers weighing a standard should know what kind of standard it is.</li>
+  <li><strong>One public key, one signature value.</strong> The central design decision is easy to state.</li>
+  <li><strong>What goes into the composite.</strong> The post-quantum half is ML-DSA, the Module-Lattice-Based Digital Signature Algorithm defined in FIPS 204.</li>
 </ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-11-19-nist-ir-8547-quantum-vulnerable-signatures">Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says</a>, <a href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026">Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</a>, <a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026">The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer</a>.</p>
 </aside>
 <!-- lead-end -->
+
+**The strongest idea in this Standards Track RFC is that a post-quantum hybrid doesn't have to change your protocol: by presenting one public key and one signature value, Composite ML-DSA lets existing cryptographic agility mechanisms do the work, while a deliberately large menu of combinations serves regulators rather than implementers.**
 
 > **Executive Summary**
 >
@@ -248,3 +250,16 @@ It does not offer Strong Unforgeability under Chosen Message Attack (SUF-CMA), o
 - Moriarty, K., Kaliski, B., Jonsson, J., and Rusch, A., (2016). [PKCS #1: RSA Cryptography Specifications Version 2.2 ⧉](https://www.rfc-editor.org/info/rfc8017 "RFC 8017"). Internet Engineering Task Force.
 - Bradner, S., (1997). [Key words for use in RFCs to Indicate Requirement Levels ⧉](https://www.rfc-editor.org/info/rfc2119 "RFC 2119"). Internet Engineering Task Force.
 - Leiba, B., (2017). [Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words ⧉](https://www.rfc-editor.org/info/rfc8174 "RFC 8174"). Internet Engineering Task Force.
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior payments and financial services leader writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services and the transformation of wholesale payments.</span><span class="author-credentials">More than 20 years in payments, banking and digital technology. Leads wholesale payments API products at HSBC · EPAA Quantum-Safe Working Group member. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-11-24">2026-11-24</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-11-19-nist-ir-8547-quantum-vulnerable-signatures" class="related-media" aria-label="Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says" tabindex="-1"><img alt="A square microchip lit from within on a dark circuit board" src="https://cloudcdn.pro/stocks/images/a-chosen-soul-IQi4jAlVeOI-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-11-19-nist-ir-8547-quantum-vulnerable-signatures">Moving Off Quantum-Vulnerable Signatures: What NIST IR 8547 Says</a></h3><p><time datetime="2026-11-19">2026-11-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026" class="related-media" aria-label="Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails" tabindex="-1"><img alt="Cryptographic key material drifting into deep blue water — symbolising harvest-now-decrypt-later capture of payment messages whose RSA and ECC envelopes will not survive a cryptanalytically relevant quantum computer" src="https://cloudcdn.pro/stocks/images/lan-pham-4qG2qqXi3tY.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-31-post-quantum-payments-infrastructure-replace-rather-than-retrofit-2026">Post-Quantum Payments Infrastructure: Why Banks May Replace Rather Than Retrofit Legacy Rails</a></h3><p><time datetime="2026-05-31">2026-05-31</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026" class="related-media" aria-label="The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer" tabindex="-1"><img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026">The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

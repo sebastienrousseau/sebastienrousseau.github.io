@@ -109,20 +109,22 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 
 # Firms Buy Their Most Material AI and Govern It Through the Vendor
 
-**The Bank of England and FCA survey shows UK financial firms buying a growing share of their AI, including most of their high-materiality systems, and understanding those bought systems mainly through vendor assurance and contracts rather than the deep knowledge they hold of what they build.**
 
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> The fourth Bank of England and Financial Conduct Authority survey of AI and machine learning in UK financial services reports wider use, a shift towards generative AI, widespread but mostly advisory agents, and a growing share of third-party systems. Third-party implementations now account for 53% of high-materiality AI systems, up from 35% in 2024. For those systems, firms rely mainly on vendor assurance and contracts, and oversight of third-party AI was the most commonly reported area of governance uncertainty or implementation challenge.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Third parties now supply 53% of UK firms' high-materiality AI systems, and 81% of respondents rely on vendor assurance and contracts to understand them.</p>
 <p class="post-lead-heading"><strong>Key takeaways</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Third parties carry more of the weight.</strong> Third-party implementations made up 39% of all reported AI systems and 53% of high-materiality ones.</li>
-  <li><strong>Understanding depends on origin.</strong> For high-materiality systems, 77% of respondents rely on deep knowledge of internally developed systems, against 24% for third-party systems, where 81% rely on vendor assurance and contractual arrangements.</li>
-  <li><strong>The frameworks are stretched by bought AI.</strong> Applying model risk management principles to third-party or vendor-supplied models was the most frequently selected governance challenge, at 54%.</li>
-  <li><strong>Agents mostly advise.</strong> 80% of respondents have decision-support agents deployed, and only 2% reported agents with broad autonomy.</li>
+  <li><strong>A survey that describes rather than prescribes.</strong> The Bank of England and the Financial Conduct Authority conducted a fourth survey of artificial intelligence and machine learning in UK financial services, and the publication is explicit about its own limits.</li>
+  <li><strong>Where the systems sit, and who has most of them.</strong> Overall, 86% of respondents reported using AI, up from 75% in 2024, though the authors note the two percentages do not relate to the same population of firms.</li>
+  <li><strong>Agents are widespread, and they mostly advise.</strong> Agents attract the most overheated commentary, so the numbers are worth stating plainly.</li>
+  <li><strong>The third-party shift.</strong> Third-party implementations accounted for 39% of reported AI systems in 2026, compared with 33% in 2024 and 17% in 2022.</li>
 </ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-11-21-third-party-ai-governance-uk-firms">Third-Party AI Is Now the Governance Problem for UK Financial Firms</a>, <a href="https://sebastienrousseau.com/2026-11-20-ai-adoption-uk-financial-services-2026">AI in UK Finance: Broad Use, Cautious Agents, Third-Party Reliance</a>, <a href="https://sebastienrousseau.com/2026-11-24-super-agents-one-session-per-task">Super-agents: why one session per task stops scaling</a>.</p>
 </aside>
 <!-- lead-end -->
+
+**The Bank of England and FCA survey shows UK financial firms buying a growing share of their AI, including most of their high-materiality systems, and understanding those bought systems mainly through vendor assurance and contracts rather than the deep knowledge they hold of what they build.**
 
 > **Executive Summary**
 >
@@ -245,3 +247,16 @@ Oversight of third-party AI systems was the most common area of uncertainty or i
 - HM Treasury, (2026). [Financial Services AI Adoption Plan ⧉](https://www.gov.uk/government/publications/ai-adoption-plan-financial-services/financial-services-ai-adoption-plan "Financial Services AI Adoption Plan"). GOV.UK.
 - OECD.AI, (2024). [What is AI? Can you make a clear distinction between AI and non-AI systems? ⧉](https://oecd.ai/en/wonk/definition "What is AI?"). OECD.
 - OECD.AI, (2026). [Can we create a clear understanding of what agentic AI is and does? ⧉](https://oecd.ai/en/wonk/what-agentic-ai-is-and-does "What agentic AI is and does"). OECD.
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastienrousseau.webp" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior payments and financial services leader writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services and the transformation of wholesale payments.</span><span class="author-credentials">More than 20 years in payments, banking and digital technology. Leads wholesale payments API products at HSBC · EPAA Quantum-Safe Working Group member. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-11-24">2026-11-24</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-11-21-third-party-ai-governance-uk-firms" class="related-media" aria-label="Third-Party AI Is Now the Governance Problem for UK Financial Firms" tabindex="-1"><img alt="St Paul's Cathedral and the Millennium Bridge over the Thames at night" src="https://cloudcdn.pro/stocks/images/vadim-sherbakov-xS_RzdD5CFE.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-11-21-third-party-ai-governance-uk-firms">Third-Party AI Is Now the Governance Problem for UK Financial Firms</a></h3><p><time datetime="2026-11-21">2026-11-21</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-11-20-ai-adoption-uk-financial-services-2026" class="related-media" aria-label="AI in UK Finance: Broad Use, Cautious Agents, Third-Party Reliance" tabindex="-1"><img alt="The Canary Wharf London Underground roundel on a dimly lit platform" src="https://cloudcdn.pro/stocks/images/7eaven-HkA-V2dw9yA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-11-20-ai-adoption-uk-financial-services-2026">AI in UK Finance: Broad Use, Cautious Agents, Third-Party Reliance</a></h3><p><time datetime="2026-11-20">2026-11-20</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-11-24-super-agents-one-session-per-task" class="related-media" aria-label="Super-agents: why one session per task stops scaling" tabindex="-1"><img alt="Blue light lines crossing in a network over a dark reflective floor" src="https://cloudcdn.pro/stocks/images/johann-juraver-qyFaXDPecSQ.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-11-24-super-agents-one-session-per-task">Super-agents: why one session per task stops scaling</a></h3><p><time datetime="2026-11-24">2026-11-24</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->
