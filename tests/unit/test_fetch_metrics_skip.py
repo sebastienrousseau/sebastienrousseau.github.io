@@ -3,8 +3,8 @@
 
 """``fetch_metrics`` must be able to leave the committed snapshot alone.
 
-Every figure in _data/proof/metrics.json is fetched live — pypistats,
-crates.io, the GitHub API. The reproducible-build CI job builds twice and
+Every figure in _data/proof/metrics.json is fetched live — the GitHub
+profile's profile.json and the GitHub API. The reproducible-build CI job builds twice and
 requires byte-identical output, so any counter moving between the two
 builds broke it: github_stars and github_forks render in `plain` format,
 so a single star was enough to rewrite the KPI on /, /about/, /projects/
@@ -55,9 +55,8 @@ def test_skip_leaves_the_snapshot_byte_identical(snapshot, monkeypatch, capsys):
     def _boom(*_a, **_k):  # any network call is a bug in this mode
         raise AssertionError("fetch_metrics hit the network with the skip flag set")
 
-    monkeypatch.setattr(fetch_metrics, "_pypi_downloads", _boom)
-    monkeypatch.setattr(fetch_metrics, "_crates_downloads_all", _boom)
-    monkeypatch.setattr(fetch_metrics, "_github_repos", _boom)
+    monkeypatch.setattr(fetch_metrics, "_profile_numbers", _boom)
+    monkeypatch.setattr(fetch_metrics, "_github_forks", _boom)
 
     assert fetch_metrics.main() == 0
     assert snapshot.read_bytes() == before
@@ -75,12 +74,9 @@ def test_unset_flag_still_fetches(snapshot, monkeypatch):
     """The default path must be untouched — the flag is opt-in only."""
     monkeypatch.delenv(fetch_metrics.SKIP_ENV, raising=False)
     called: list[str] = []
-    monkeypatch.setattr(fetch_metrics, "_pypi_downloads", lambda *_a: called.append("pypi") or 1)
-    monkeypatch.setattr(
-        fetch_metrics, "_crates_downloads_all", lambda: called.append("crates") or 2
-    )
-    monkeypatch.setattr(fetch_metrics, "_github_repos", lambda: called.append("gh") or (3, 4))
+    monkeypatch.setattr(fetch_metrics, "_profile_numbers", lambda: called.append("profile"))
+    monkeypatch.setattr(fetch_metrics, "_github_forks", lambda: called.append("gh") or 4)
     monkeypatch.setattr(fetch_metrics, "_articles_count", lambda: 5)
     monkeypatch.setattr(fetch_metrics, "_years_active", lambda: 6)
     assert fetch_metrics.main() == 0
-    assert {"pypi", "crates", "gh"} <= set(called)
+    assert {"profile", "gh"} <= set(called)
