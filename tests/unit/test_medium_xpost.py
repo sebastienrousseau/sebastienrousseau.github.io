@@ -79,12 +79,35 @@ def test_listing_row_and_publication_archive_body() -> None:
     sys.path.insert(0, str(ROOT / "scripts" / "generators"))
     import build_listings as bl
 
-    row = bl._publications_row()
+    select = bl._medium_filter()
+    assert 'data-navigate-base="/articles/medium"' in select
+    assert 'data-navigate-all="/articles"' in select
+    assert '<option value="">All publications</option>' in select
     for slug in ("banking-on-ai", "banking-on-quantum", "banking-on-cloud-native"):
-        assert f'href="/articles/medium/{slug}/"' in row
+        assert f'<option value="{slug}">' in select
+    assert '<option value="banking-on-quantum" selected>' in bl._medium_filter("banking-on-quantum")
     pub = _medium.publications()["cloud-native"]
     post = ("A title", "2026-05-16", _SLUG, "An excerpt", ["infra"], "/b.webp", "Alt")
     body = bl._render_publication_body(pub, [post])
     assert "<h1>Banking On Cloud Native</h1>" in body
     assert "1 article ·" in body
     assert f'href="/{_SLUG}/"' in body
+    # The archive carries the same filter bar, with its own publication chosen.
+    assert 'data-filter-target="category"' in body
+    assert 'data-filter-target="year"' in body
+    assert '<option value="banking-on-cloud-native" selected>' in body
+
+
+def test_medium_select_joins_the_filter_bar() -> None:
+    """The Medium <select> sits inside the bar, after Category and Year."""
+    sys.path.insert(0, str(ROOT / "scripts" / "generators"))
+    import build_listings as bl
+
+    form = bl._render_filter_form([("ai", "Applied AI")], ["2026"])
+    page = f'<main>{form}<section class="tag-landing-list"></section></main>'
+    out = bl._with_medium_filter(page)
+    bar = out[out.index('<div class="listing-filters"') : out.index("</div>") + 6]
+    assert bar.index('data-filter-target="category"') < bar.index('data-filter-target="year"')
+    assert bar.index('data-filter-target="year"') < bar.index('data-filter-target="publication"')
+    assert "listing-publications" not in out
+    assert bl._with_medium_filter("<main>no bar</main>") == "<main>no bar</main>"
