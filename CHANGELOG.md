@@ -22,6 +22,7 @@ Search recovery, second attempt. Search Console shows a site-wide demotion from 
 
 ### Changed
 
+- **Dependencies (Dependabot #543 and #544)**: CodeQL 4.39.3 to 4.39.4 and Scorecard 2.5.0 to 2.6.0 in the workflows; PyYAML 6.0.4, ruff 0.17.6, google-auth 2.63.0 and cyclonedx-bom 9.0.0 (with cyclonedx-python-lib 11.12.0, the minimum 9.0 needs). #543 bumped the requirement pins but not the hash-pinned locks CI installs, so `test_requirements_locks_agree.py` failed; the locks are regenerated with `scripts/security/lock-deps.sh`. `gen-sbom.sh` still writes a CycloneDX 1.6 SBOM with cyclonedx-bom 9.
 - **Banking On Cloud Native on its own domain**: Medium linked news.bankingoncloudnative.com on 23 November 2026, so the publication's link on the homepage and `/articles/` points there, like the other two.
 - **French is indexed again**: `_data/seo/locale-indexing.json` lists `en` and `fr`, on the author's decision (ADR-0015 amendment of 22 November 2026). French pages drop `noindex`, return to the sitemap and join English in every hreflang cluster; the other 33 locales stay `noindex, follow`.
 - **English is the only indexed locale**: `_data/seo/locale-indexing.json` lists `en` only. All 34 locales stay published and in the language switcher with `noindex, follow`, out of the sitemaps and out of hreflang clusters. A locale returns once its translations are reviewed by a person.
